@@ -62,3 +62,26 @@ trait PrefetchOptions[T] extends js.Object {
   var url: java.lang.String
 }
 
+object PrefetchOptions {
+  @scala.inline
+  def apply[T](
+    url: java.lang.String,
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheKey: java.lang.String = null,
+    prepare: js.Function1[/* settings */ jqueryLib.JQueryAjaxSettings, jqueryLib.JQueryAjaxSettings] = null,
+    thumbprint: java.lang.String = null,
+    transform: js.Function1[/* response */ T, T] = null,
+    ttl: scala.Int | scala.Double = null
+  ): PrefetchOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey)
+    if (prepare != null) __obj.updateDynamic("prepare")(prepare)
+    if (thumbprint != null) __obj.updateDynamic("thumbprint")(thumbprint)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrefetchOptions[T]]
+  }
+}
+

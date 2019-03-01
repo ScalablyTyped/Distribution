@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.DialogSheet")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- activexDashExcelLib.ExcelNs.AddSheetResult because Already inherited */ @JSGlobal("Excel.DialogSheet")
 @js.native
-class DialogSheet protected () extends js.Object {
+class DialogSheet protected () extends Sheet {
   val Application: Application = js.native
   val AutoFilter: AutoFilter = js.native
   val CodeName: java.lang.String = js.native

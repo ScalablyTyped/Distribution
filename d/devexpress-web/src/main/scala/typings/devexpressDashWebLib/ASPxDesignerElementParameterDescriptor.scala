@@ -36,3 +36,21 @@ trait ASPxDesignerElementParameterDescriptor extends js.Object {
   var visible: scala.Boolean
 }
 
+object ASPxDesignerElementParameterDescriptor {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    name: java.lang.String,
+    `type`: java.lang.String,
+    value: js.Object,
+    visible: scala.Boolean
+  ): ASPxDesignerElementParameterDescriptor = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ASPxDesignerElementParameterDescriptor]
+  }
+}
+

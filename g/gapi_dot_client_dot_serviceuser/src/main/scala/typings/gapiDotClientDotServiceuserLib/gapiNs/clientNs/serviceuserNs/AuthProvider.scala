@@ -57,3 +57,22 @@ trait AuthProvider extends js.Object {
   var jwksUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthProvider {
+  @scala.inline
+  def apply(
+    audiences: java.lang.String = null,
+    authorizationUrl: java.lang.String = null,
+    id: java.lang.String = null,
+    issuer: java.lang.String = null,
+    jwksUri: java.lang.String = null
+  ): AuthProvider = {
+    val __obj = js.Dynamic.literal()
+    if (audiences != null) __obj.updateDynamic("audiences")(audiences)
+    if (authorizationUrl != null) __obj.updateDynamic("authorizationUrl")(authorizationUrl)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    if (jwksUri != null) __obj.updateDynamic("jwksUri")(jwksUri)
+    __obj.asInstanceOf[AuthProvider]
+  }
+}
+

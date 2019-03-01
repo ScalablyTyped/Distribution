@@ -16,3 +16,12 @@ trait InstancesStartWithEncryptionKeyRequest extends js.Object {
   var disks: js.UndefOr[js.Array[CustomerEncryptionKeyProtectedDisk]] = js.undefined
 }
 
+object InstancesStartWithEncryptionKeyRequest {
+  @scala.inline
+  def apply(disks: js.Array[CustomerEncryptionKeyProtectedDisk] = null): InstancesStartWithEncryptionKeyRequest = {
+    val __obj = js.Dynamic.literal()
+    if (disks != null) __obj.updateDynamic("disks")(disks)
+    __obj.asInstanceOf[InstancesStartWithEncryptionKeyRequest]
+  }
+}
+

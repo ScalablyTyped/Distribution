@@ -44,3 +44,52 @@ trait DragulaOptions extends js.Object {
   var revertOnSpill: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DragulaOptions {
+  @scala.inline
+  def apply(
+    accepts: js.Function4[
+      /* el */ js.UndefOr[stdLib.Element], 
+      /* target */ js.UndefOr[stdLib.Element], 
+      /* source */ js.UndefOr[stdLib.Element], 
+      /* sibling */ js.UndefOr[stdLib.Element], 
+      scala.Boolean
+    ] = null,
+    containers: js.Array[stdLib.Element] = null,
+    copy: (js.Function2[/* el */ stdLib.Element, /* source */ stdLib.Element, scala.Boolean]) | scala.Boolean = null,
+    delay: scala.Boolean | scala.Double = null,
+    direction: java.lang.String = null,
+    ignoreInputTextSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    invalid: js.Function2[
+      /* el */ js.UndefOr[stdLib.Element], 
+      /* target */ js.UndefOr[stdLib.Element], 
+      scala.Boolean
+    ] = null,
+    isContainer: js.Function1[/* el */ js.UndefOr[stdLib.Element], scala.Boolean] = null,
+    mirrorContainer: stdLib.Element = null,
+    moves: js.Function4[
+      /* el */ js.UndefOr[stdLib.Element], 
+      /* container */ js.UndefOr[stdLib.Element], 
+      /* handle */ js.UndefOr[stdLib.Element], 
+      /* sibling */ js.UndefOr[stdLib.Element], 
+      scala.Boolean
+    ] = null,
+    removeOnSpill: js.UndefOr[scala.Boolean] = js.undefined,
+    revertOnSpill: js.UndefOr[scala.Boolean] = js.undefined
+  ): DragulaOptions = {
+    val __obj = js.Dynamic.literal()
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
+    if (containers != null) __obj.updateDynamic("containers")(containers)
+    if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (!js.isUndefined(ignoreInputTextSelection)) __obj.updateDynamic("ignoreInputTextSelection")(ignoreInputTextSelection)
+    if (invalid != null) __obj.updateDynamic("invalid")(invalid)
+    if (isContainer != null) __obj.updateDynamic("isContainer")(isContainer)
+    if (mirrorContainer != null) __obj.updateDynamic("mirrorContainer")(mirrorContainer)
+    if (moves != null) __obj.updateDynamic("moves")(moves)
+    if (!js.isUndefined(removeOnSpill)) __obj.updateDynamic("removeOnSpill")(removeOnSpill)
+    if (!js.isUndefined(revertOnSpill)) __obj.updateDynamic("revertOnSpill")(revertOnSpill)
+    __obj.asInstanceOf[DragulaOptions]
+  }
+}
+

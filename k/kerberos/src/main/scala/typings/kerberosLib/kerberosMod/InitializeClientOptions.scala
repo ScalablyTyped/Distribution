@@ -20,3 +20,18 @@ trait InitializeClientOptions extends js.Object {
   var principal: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InitializeClientOptions {
+  @scala.inline
+  def apply(
+    gssFlag: scala.Int | scala.Double = null,
+    mechOID: scala.Int | scala.Double = null,
+    principal: java.lang.String = null
+  ): InitializeClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (gssFlag != null) __obj.updateDynamic("gssFlag")(gssFlag.asInstanceOf[js.Any])
+    if (mechOID != null) __obj.updateDynamic("mechOID")(mechOID.asInstanceOf[js.Any])
+    if (principal != null) __obj.updateDynamic("principal")(principal)
+    __obj.asInstanceOf[InitializeClientOptions]
+  }
+}
+

@@ -20,3 +20,18 @@ trait CalloutStatusRow extends js.Object {
   var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
 }
 
+object CalloutStatusRow {
+  @scala.inline
+  def apply(
+    calloutStatusId: scala.Int | scala.Double = null,
+    impressionCount: MetricValue = null,
+    rowDimensions: RowDimensions = null
+  ): CalloutStatusRow = {
+    val __obj = js.Dynamic.literal()
+    if (calloutStatusId != null) __obj.updateDynamic("calloutStatusId")(calloutStatusId.asInstanceOf[js.Any])
+    if (impressionCount != null) __obj.updateDynamic("impressionCount")(impressionCount)
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    __obj.asInstanceOf[CalloutStatusRow]
+  }
+}
+

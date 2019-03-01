@@ -16,3 +16,12 @@ trait WatchCreativeRequest extends js.Object {
   var topic: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WatchCreativeRequest {
+  @scala.inline
+  def apply(topic: java.lang.String = null): WatchCreativeRequest = {
+    val __obj = js.Dynamic.literal()
+    if (topic != null) __obj.updateDynamic("topic")(topic)
+    __obj.asInstanceOf[WatchCreativeRequest]
+  }
+}
+

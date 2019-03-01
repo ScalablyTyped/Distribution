@@ -16,3 +16,22 @@ trait SinonSetMatcher extends SinonMatcher {
   def deepEquals(expected: SimplifiedSet): SinonMatcher
 }
 
+object SinonSetMatcher {
+  @scala.inline
+  def apply(
+    and: js.Function1[SinonMatcher, SinonMatcher],
+    contains: js.Function1[SimplifiedSet, SinonMatcher],
+    deepEquals: js.Function1[SimplifiedSet, SinonMatcher],
+    or: js.Function1[SinonMatcher, SinonMatcher],
+    test: js.Function1[js.Any, scala.Boolean]
+  ): SinonSetMatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("deepEquals")(deepEquals)
+    __obj.updateDynamic("or")(or)
+    __obj.updateDynamic("test")(test)
+    __obj.asInstanceOf[SinonSetMatcher]
+  }
+}
+

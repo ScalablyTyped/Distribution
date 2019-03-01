@@ -10,3 +10,13 @@ trait PopOverPopup extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object PopOverPopup {
+  @scala.inline
+  def apply(height: scala.Double | java.lang.String = null, width: scala.Double | java.lang.String = null): PopOverPopup = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PopOverPopup]
+  }
+}
+

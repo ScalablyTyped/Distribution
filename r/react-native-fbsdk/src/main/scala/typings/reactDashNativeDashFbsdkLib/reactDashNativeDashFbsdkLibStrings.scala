@@ -7,265 +7,354 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashFbsdkLibStrings {
   @js.native
-  sealed trait Closed extends js.Object
+  sealed trait Closed
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AppGroupPrivacy
   
   @js.native
-  sealed trait Open extends js.Object
+  sealed trait Open
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AppGroupPrivacy
   
   @js.native
-  sealed trait ads_management extends js.Object
+  sealed trait ads_management
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait ads_read extends js.Object
+  sealed trait ads_read
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait app_non_users extends js.Object
+  sealed trait app_non_users
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.GameRequestFilters
   
   @js.native
-  sealed trait app_users extends js.Object
+  sealed trait app_users
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.GameRequestFilters
   
   @js.native
-  sealed trait askfor extends js.Object
+  sealed trait askfor
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.GameRequestActionType
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AppEventsFlushBehavior
+       with reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.TooltipBehaviorIOS
   
   @js.native
-  sealed trait automatic extends js.Object
+  sealed trait automatic
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareDialogModeAndroid
+       with reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareDialogModeIOS
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AuxiliaryViewPosition
   
   @js.native
-  sealed trait box_count extends js.Object
+  sealed trait box_count
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LikeViewStyle
   
   @js.native
-  sealed trait browser extends js.Object
+  sealed trait browser
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehaviorIOS
+       with reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareDialogModeIOS
   
   @js.native
-  sealed trait business_management extends js.Object
+  sealed trait business_management
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LikeViewStyle
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.HorizontalAlignment
   
   @js.native
-  sealed trait disable extends js.Object
+  sealed trait disable
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.TooltipBehaviorIOS
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait everyone extends js.Object
+  sealed trait everyone
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.DefaultAudience
   
   @js.native
-  sealed trait `explicitly-only` extends js.Object
+  sealed trait `explicitly-only`
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AppEventsFlushBehavior
   
   @js.native
-  sealed trait feed extends js.Object
+  sealed trait feed
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareDialogModeAndroid
   
   @js.native
-  sealed trait force_display extends js.Object
+  sealed trait force_display
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.TooltipBehaviorIOS
   
   @js.native
-  sealed trait friends extends js.Object
+  sealed trait friends
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.DefaultAudience
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait `inline`
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AuxiliaryViewPosition
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.HorizontalAlignment
   
   @js.native
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait manage_pages extends js.Object
+  sealed trait manage_pages
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait native extends js.Object
+  sealed trait native
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehaviorIOS
+       with reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareDialogModeAndroid
   
   @js.native
-  sealed trait native_only extends js.Object
+  sealed trait native_only
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehaviorAndroid
   
   @js.native
-  sealed trait native_with_fallback extends js.Object
+  sealed trait native_with_fallback
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehaviorAndroid
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.OpenGraphValueType
   
   @js.native
-  sealed trait only_me extends js.Object
+  sealed trait only_me
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.DefaultAudience
   
   @js.native
   sealed trait `open-graph` extends js.Object
   
   @js.native
-  sealed trait `open-graph-object` extends js.Object
+  sealed trait `open-graph-object`
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.OpenGraphValueType
   
   @js.native
-  sealed trait open_graph extends js.Object
+  sealed trait open_graph
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ObjectIdActionType
   
   @js.native
-  sealed trait page extends js.Object
+  sealed trait page
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ObjectIdActionType
   
   @js.native
-  sealed trait pages_manage_cta extends js.Object
+  sealed trait pages_manage_cta
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait pages_manage_instant_articles extends js.Object
+  sealed trait pages_manage_instant_articles
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait pages_messaging extends js.Object
+  sealed trait pages_messaging
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait pages_messaging_payments extends js.Object
+  sealed trait pages_messaging_payments
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait pages_messaging_phone_number extends js.Object
+  sealed trait pages_messaging_phone_number
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait pages_messaging_subscriptions extends js.Object
+  sealed trait pages_messaging_subscriptions
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait pages_show_list extends js.Object
+  sealed trait pages_show_list
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait photo extends js.Object
+  sealed trait photo
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.OpenGraphValueType
   
   @js.native
-  sealed trait public_profile extends js.Object
+  sealed trait public_profile
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait publish_actions extends js.Object
+  sealed trait publish_actions
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait publish_pages extends js.Object
+  sealed trait publish_pages
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait read_audience_network_insights extends js.Object
+  sealed trait read_audience_network_insights
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait read_custom_friendlists extends js.Object
+  sealed trait read_custom_friendlists
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait read_insights extends js.Object
+  sealed trait read_insights
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait read_page_mailboxes extends js.Object
+  sealed trait read_page_mailboxes
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.HorizontalAlignment
   
   @js.native
-  sealed trait rsvp_event extends js.Object
+  sealed trait rsvp_event
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait send extends js.Object
+  sealed trait send
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.GameRequestActionType
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LikeViewStyle
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.OpenGraphValueType
   
   @js.native
-  sealed trait system_account extends js.Object
+  sealed trait system_account
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehaviorIOS
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.AuxiliaryViewPosition
   
   @js.native
-  sealed trait turn extends js.Object
+  sealed trait turn
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.GameRequestActionType
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ObjectIdActionType
   
   @js.native
-  sealed trait user_about_me extends js.Object
+  sealed trait user_about_me
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_actionsDOTbooks extends js.Object
+  sealed trait user_actionsDOTbooks
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_actionsDOTfitness extends js.Object
+  sealed trait user_actionsDOTfitness
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_actionsDOTmusic extends js.Object
+  sealed trait user_actionsDOTmusic
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_actionsDOTnews extends js.Object
+  sealed trait user_actionsDOTnews
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_actionsDOTvideo extends js.Object
+  sealed trait user_actionsDOTvideo
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_birthday extends js.Object
+  sealed trait user_birthday
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_education_history extends js.Object
+  sealed trait user_education_history
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_events extends js.Object
+  sealed trait user_events
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_friends extends js.Object
+  sealed trait user_friends
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_games_activity extends js.Object
+  sealed trait user_games_activity
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_hometown extends js.Object
+  sealed trait user_hometown
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_likes extends js.Object
+  sealed trait user_likes
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_location extends js.Object
+  sealed trait user_location
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_managed_groups extends js.Object
+  sealed trait user_managed_groups
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_photos extends js.Object
+  sealed trait user_photos
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_posts extends js.Object
+  sealed trait user_posts
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_relationship_details extends js.Object
+  sealed trait user_relationship_details
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_relationships extends js.Object
+  sealed trait user_relationships
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_religion_politics extends js.Object
+  sealed trait user_religion_politics
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_tagged_places extends js.Object
+  sealed trait user_tagged_places
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_videos extends js.Object
+  sealed trait user_videos
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_website extends js.Object
+  sealed trait user_website
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
-  sealed trait user_work_history extends js.Object
+  sealed trait user_work_history
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod._Permissions
   
   @js.native
   sealed trait video extends js.Object
   
   @js.native
-  sealed trait web extends js.Object
+  sealed trait web
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehaviorIOS
+       with reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareDialogModeAndroid
   
   @js.native
-  sealed trait web_only extends js.Object
+  sealed trait web_only
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.LoginBehaviorAndroid
   
   @js.native
-  sealed trait webview extends js.Object
+  sealed trait webview
+    extends reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkMod.ShareDialogModeIOS
   
   @scala.inline
   def Closed: Closed = "Closed".asInstanceOf[Closed]

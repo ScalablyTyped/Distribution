@@ -9,3 +9,12 @@ trait Anon_Results extends js.Object {
   var results: js.Array[js.Object]
 }
 
+object Anon_Results {
+  @scala.inline
+  def apply(results: js.Array[js.Object]): Anon_Results = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[Anon_Results]
+  }
+}
+

@@ -7,61 +7,80 @@ import scala.scalajs.js.annotation._
 
 object revalidatorLibStrings {
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any
+    extends revalidatorLib.RevalidatorNs.Types
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends revalidatorLib.RevalidatorNs.Types
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends revalidatorLib.RevalidatorNs.Types
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait color
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait `date-time` extends js.Object
+  sealed trait `date-time`
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait `host-name` extends js.Object
+  sealed trait `host-name`
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait integer extends js.Object
+  sealed trait integer
+    extends revalidatorLib.RevalidatorNs.Types
   
   @js.native
-  sealed trait `ip-address` extends js.Object
+  sealed trait `ip-address`
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait ipv6 extends js.Object
+  sealed trait ipv6
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait `null` extends js.Object
+  sealed trait `null`
+    extends revalidatorLib.RevalidatorNs.Types
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends revalidatorLib.RevalidatorNs.Types
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends revalidatorLib.RevalidatorNs.Types
   
   @js.native
-  sealed trait regex extends js.Object
+  sealed trait regex
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends revalidatorLib.RevalidatorNs.Types
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @js.native
-  sealed trait `utc-millisec` extends js.Object
+  sealed trait `utc-millisec`
+    extends revalidatorLib.RevalidatorNs.Formats
   
   @scala.inline
   def any: any = "any".asInstanceOf[any]

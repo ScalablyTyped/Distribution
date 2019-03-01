@@ -25,3 +25,20 @@ trait PromotedItemId extends js.Object {
   var websiteUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PromotedItemId {
+  @scala.inline
+  def apply(
+    recentlyUploadedBy: java.lang.String = null,
+    `type`: java.lang.String = null,
+    videoId: java.lang.String = null,
+    websiteUrl: java.lang.String = null
+  ): PromotedItemId = {
+    val __obj = js.Dynamic.literal()
+    if (recentlyUploadedBy != null) __obj.updateDynamic("recentlyUploadedBy")(recentlyUploadedBy)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    __obj.asInstanceOf[PromotedItemId]
+  }
+}
+

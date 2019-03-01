@@ -14,3 +14,24 @@ trait Options extends js.Object {
   var test: js.UndefOr[Filter | js.Array[Filter]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    banner: java.lang.String,
+    entryOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    exclude: Filter | js.Array[Filter] = null,
+    include: Filter | js.Array[Filter] = null,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    test: Filter | js.Array[Filter] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("banner")(banner)
+    if (!js.isUndefined(entryOnly)) __obj.updateDynamic("entryOnly")(entryOnly)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -88,3 +88,34 @@ trait PodStatus extends js.Object {
   val startTime: java.lang.String
 }
 
+object PodStatus {
+  @scala.inline
+  def apply(
+    conditions: js.Array[PodCondition],
+    containerStatuses: js.Array[ContainerStatus],
+    hostIP: java.lang.String,
+    initContainerStatuses: js.Array[ContainerStatus],
+    message: java.lang.String,
+    nominatedNodeName: java.lang.String,
+    phase: java.lang.String,
+    podIP: java.lang.String,
+    qosClass: java.lang.String,
+    reason: java.lang.String,
+    startTime: java.lang.String
+  ): PodStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.updateDynamic("containerStatuses")(containerStatuses)
+    __obj.updateDynamic("hostIP")(hostIP)
+    __obj.updateDynamic("initContainerStatuses")(initContainerStatuses)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("nominatedNodeName")(nominatedNodeName)
+    __obj.updateDynamic("phase")(phase)
+    __obj.updateDynamic("podIP")(podIP)
+    __obj.updateDynamic("qosClass")(qosClass)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[PodStatus]
+  }
+}
+

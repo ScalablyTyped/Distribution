@@ -12,3 +12,12 @@ trait CordovaPlugins extends js.Object {
   var CanvasCamera: CanvasCamera
 }
 
+object CordovaPlugins {
+  @scala.inline
+  def apply(CanvasCamera: CanvasCamera): CordovaPlugins = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CanvasCamera")(CanvasCamera)
+    __obj.asInstanceOf[CordovaPlugins]
+  }
+}
+

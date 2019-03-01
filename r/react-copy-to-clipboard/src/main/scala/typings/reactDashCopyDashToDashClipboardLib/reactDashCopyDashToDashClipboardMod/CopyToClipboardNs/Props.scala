@@ -11,3 +11,18 @@ trait Props extends js.Object {
   var text: java.lang.String
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    onCopy: js.Function2[/* a */ java.lang.String, /* b */ scala.Boolean, scala.Unit] = null,
+    options: Options = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (onCopy != null) __obj.updateDynamic("onCopy")(onCopy)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[Props]
+  }
+}
+

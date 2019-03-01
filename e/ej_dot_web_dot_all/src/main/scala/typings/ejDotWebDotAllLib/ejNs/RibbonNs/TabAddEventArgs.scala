@@ -23,3 +23,22 @@ trait TabAddEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabAddEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    tabContent: js.Any = null,
+    tabHeader: js.Any = null,
+    `type`: java.lang.String = null
+  ): TabAddEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (tabContent != null) __obj.updateDynamic("tabContent")(tabContent)
+    if (tabHeader != null) __obj.updateDynamic("tabHeader")(tabHeader)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[TabAddEventArgs]
+  }
+}
+

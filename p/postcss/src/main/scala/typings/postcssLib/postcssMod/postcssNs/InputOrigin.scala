@@ -44,3 +44,20 @@ trait InputOrigin extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InputOrigin {
+  @scala.inline
+  def apply(
+    column: scala.Int | scala.Double = null,
+    file: java.lang.String = null,
+    line: scala.Int | scala.Double = null,
+    source: java.lang.String = null
+  ): InputOrigin = {
+    val __obj = js.Dynamic.literal()
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[InputOrigin]
+  }
+}
+

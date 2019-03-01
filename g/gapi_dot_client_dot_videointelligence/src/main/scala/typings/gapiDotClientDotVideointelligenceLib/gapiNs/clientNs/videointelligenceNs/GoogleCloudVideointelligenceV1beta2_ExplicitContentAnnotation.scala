@@ -10,3 +10,12 @@ trait GoogleCloudVideointelligenceV1beta2_ExplicitContentAnnotation extends js.O
   var frames: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame]] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta2_ExplicitContentAnnotation {
+  @scala.inline
+  def apply(frames: js.Array[GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame] = null): GoogleCloudVideointelligenceV1beta2_ExplicitContentAnnotation = {
+    val __obj = js.Dynamic.literal()
+    if (frames != null) __obj.updateDynamic("frames")(frames)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_ExplicitContentAnnotation]
+  }
+}
+

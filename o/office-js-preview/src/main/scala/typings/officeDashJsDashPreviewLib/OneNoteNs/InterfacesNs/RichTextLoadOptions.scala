@@ -44,3 +44,22 @@ trait RichTextLoadOptions extends js.Object {
   var text: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RichTextLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    languageId: js.UndefOr[scala.Boolean] = js.undefined,
+    paragraph: ParagraphLoadOptions = null,
+    text: js.UndefOr[scala.Boolean] = js.undefined
+  ): RichTextLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(languageId)) __obj.updateDynamic("languageId")(languageId)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[RichTextLoadOptions]
+  }
+}
+

@@ -20,3 +20,20 @@ trait DocumentLoadEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DocumentLoadEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    fileName: java.lang.String = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): DocumentLoadEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DocumentLoadEventArgs]
+  }
+}
+

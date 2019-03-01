@@ -52,3 +52,54 @@ trait ButtonProps extends js.Object {
   val `type`: js.UndefOr[ButtonType] = js.undefined
 }
 
+object ButtonProps {
+  @scala.inline
+  def apply(
+    appearance: ButtonAppearances = null,
+    ariaControls: java.lang.String = null,
+    ariaExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    ariaHaspopup: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    component: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = null,
+    form: java.lang.String = null,
+    href: java.lang.String = null,
+    iconAfter: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    iconBefore: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    id: java.lang.String = null,
+    innerRef: js.Function1[/* instance */ js.Any, scala.Unit] = null,
+    isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLButtonElement] = null,
+    shouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined,
+    spacing: ButtonSpacing = null,
+    tabIndex: scala.Int | scala.Double = null,
+    target: java.lang.String = null,
+    `type`: ButtonType = null
+  ): ButtonProps = {
+    val __obj = js.Dynamic.literal()
+    if (appearance != null) __obj.updateDynamic("appearance")(appearance)
+    if (ariaControls != null) __obj.updateDynamic("ariaControls")(ariaControls)
+    if (!js.isUndefined(ariaExpanded)) __obj.updateDynamic("ariaExpanded")(ariaExpanded)
+    if (!js.isUndefined(ariaHaspopup)) __obj.updateDynamic("ariaHaspopup")(ariaHaspopup)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (form != null) __obj.updateDynamic("form")(form)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (iconAfter != null) __obj.updateDynamic("iconAfter")(iconAfter)
+    if (iconBefore != null) __obj.updateDynamic("iconBefore")(iconBefore)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (!js.isUndefined(shouldFitContainer)) __obj.updateDynamic("shouldFitContainer")(shouldFitContainer)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ButtonProps]
+  }
+}
+

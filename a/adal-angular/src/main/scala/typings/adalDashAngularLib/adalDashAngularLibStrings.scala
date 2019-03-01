@@ -25,13 +25,16 @@ object adalDashAngularLibStrings {
   sealed trait `In Progress` extends js.Object
   
   @js.native
-  sealed trait LOGIN extends js.Object
+  sealed trait LOGIN
+    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.RequestType
   
   @js.native
-  sealed trait RENEW_TOKEN extends js.Object
+  sealed trait RENEW_TOKEN
+    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.RequestType
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.RequestType
   
   @js.native
   sealed trait `VERBOSE:` extends js.Object
@@ -94,7 +97,8 @@ object adalDashAngularLibStrings {
   sealed trait id_token extends js.Object
   
   @js.native
-  sealed trait `id_token token` extends js.Object
+  sealed trait `id_token token`
+    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.ResponseType
   
   @js.native
   sealed trait localStorage extends js.Object
@@ -106,7 +110,8 @@ object adalDashAngularLibStrings {
   sealed trait session_state extends js.Object
   
   @js.native
-  sealed trait token extends js.Object
+  sealed trait token
+    extends adalDashAngularLib.adalDashAngularMod.AuthenticationContextNs.ResponseType
   
   @js.native
   sealed trait `|` extends js.Object

@@ -12,3 +12,20 @@ trait PluginSettings extends js.Object {
   var Mounts: js.Array[PluginMount]
 }
 
+object PluginSettings {
+  @scala.inline
+  def apply(
+    Args: js.Array[java.lang.String],
+    Devices: js.Array[PluginDevice],
+    Env: js.Array[java.lang.String],
+    Mounts: js.Array[PluginMount]
+  ): PluginSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Args")(Args)
+    __obj.updateDynamic("Devices")(Devices)
+    __obj.updateDynamic("Env")(Env)
+    __obj.updateDynamic("Mounts")(Mounts)
+    __obj.asInstanceOf[PluginSettings]
+  }
+}
+

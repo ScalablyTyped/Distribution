@@ -24,3 +24,20 @@ trait IHSLColor extends js.Object {
   var saturation: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IHSLColor {
+  @scala.inline
+  def apply(
+    alpha: scala.Int | scala.Double = null,
+    hue: scala.Int | scala.Double = null,
+    lightness: scala.Int | scala.Double = null,
+    saturation: scala.Int | scala.Double = null
+  ): IHSLColor = {
+    val __obj = js.Dynamic.literal()
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
+    if (lightness != null) __obj.updateDynamic("lightness")(lightness.asInstanceOf[js.Any])
+    if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IHSLColor]
+  }
+}
+

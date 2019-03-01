@@ -10,3 +10,13 @@ trait IDataUsage extends js.Object {
   var bytesSent: scala.Double
 }
 
+object IDataUsage {
+  @scala.inline
+  def apply(bytesReceived: scala.Double, bytesSent: scala.Double): IDataUsage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bytesReceived")(bytesReceived)
+    __obj.updateDynamic("bytesSent")(bytesSent)
+    __obj.asInstanceOf[IDataUsage]
+  }
+}
+

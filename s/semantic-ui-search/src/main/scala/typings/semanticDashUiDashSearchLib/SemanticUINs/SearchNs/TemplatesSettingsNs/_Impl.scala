@@ -12,3 +12,20 @@ trait _Impl extends js.Object {
   def standard(response: js.Any): java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    category: js.Function1[js.Any, java.lang.String],
+    escape: js.Function1[java.lang.String, java.lang.String],
+    message: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    standard: js.Function1[js.Any, java.lang.String]
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("category")(category)
+    __obj.updateDynamic("escape")(escape)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("standard")(standard)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

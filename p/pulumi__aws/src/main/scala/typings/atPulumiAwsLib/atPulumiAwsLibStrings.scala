@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object atPulumiAwsLibStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait `*`
+    extends atPulumiAwsLib.iamDocumentsMod.Principal
   
   @js.native
   sealed trait `1Minute` extends js.Object
@@ -19,28 +20,34 @@ object atPulumiAwsLibStrings {
   sealed trait `2012-10-17` extends js.Object
   
   @js.native
-  sealed trait ALL extends js.Object
+  sealed trait ALL
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait ANY extends js.Object
+  sealed trait ANY
+    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
   
   @js.native
   sealed trait AT_TIMESTAMP extends js.Object
   
   @js.native
-  sealed trait AUDIT_CONTROL extends js.Object
+  sealed trait AUDIT_CONTROL
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait AUDIT_WRITE extends js.Object
+  sealed trait AUDIT_WRITE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
   sealed trait Allow extends js.Object
   
   @js.native
-  sealed trait BLOCK_SUSPEND extends js.Object
+  sealed trait BLOCK_SUSPEND
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait CHOWN extends js.Object
+  sealed trait CHOWN
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
   sealed trait CompleteMultipartUpload extends js.Object
@@ -49,13 +56,16 @@ object atPulumiAwsLibStrings {
   sealed trait Copy extends js.Object
   
   @js.native
-  sealed trait DAC_OVERRIDE extends js.Object
+  sealed trait DAC_OVERRIDE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait DAC_READ_SEARCH extends js.Object
+  sealed trait DAC_READ_SEARCH
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
   
   @js.native
   sealed trait Delete extends js.Object
@@ -67,94 +77,121 @@ object atPulumiAwsLibStrings {
   sealed trait Deny extends js.Object
   
   @js.native
-  sealed trait FOWNER extends js.Object
+  sealed trait FOWNER
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait FSETID extends js.Object
+  sealed trait FSETID
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
   
   @js.native
-  sealed trait GroupDesiredCapacity extends js.Object
+  sealed trait GroupDesiredCapacity
+    extends atPulumiAwsLib.autoscalingMetricsMod.Metric
   
   @js.native
-  sealed trait GroupInServiceInstances extends js.Object
+  sealed trait GroupInServiceInstances
+    extends atPulumiAwsLib.autoscalingMetricsMod.Metric
   
   @js.native
-  sealed trait GroupMaxSize extends js.Object
+  sealed trait GroupMaxSize
+    extends atPulumiAwsLib.autoscalingMetricsMod.Metric
   
   @js.native
-  sealed trait GroupMinSize extends js.Object
+  sealed trait GroupMinSize
+    extends atPulumiAwsLib.autoscalingMetricsMod.Metric
   
   @js.native
-  sealed trait GroupPendingInstances extends js.Object
+  sealed trait GroupPendingInstances
+    extends atPulumiAwsLib.autoscalingMetricsMod.Metric
   
   @js.native
-  sealed trait GroupStandbyInstances extends js.Object
+  sealed trait GroupStandbyInstances
+    extends atPulumiAwsLib.autoscalingMetricsMod.Metric
   
   @js.native
-  sealed trait GroupTerminatingInstances extends js.Object
+  sealed trait GroupTerminatingInstances
+    extends atPulumiAwsLib.autoscalingMetricsMod.Metric
   
   @js.native
-  sealed trait GroupTotalInstances extends js.Object
+  sealed trait GroupTotalInstances
+    extends atPulumiAwsLib.autoscalingMetricsMod.Metric
   
   @js.native
   sealed trait INSERT extends js.Object
   
   @js.native
-  sealed trait IPC_LOCK extends js.Object
+  sealed trait IPC_LOCK
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait IPC_OWNER extends js.Object
+  sealed trait IPC_OWNER
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait KILL extends js.Object
+  sealed trait KILL
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
   sealed trait LATEST extends js.Object
   
   @js.native
-  sealed trait LEASE extends js.Object
+  sealed trait LEASE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait LINUX_IMMUTABLE extends js.Object
+  sealed trait LINUX_IMMUTABLE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait `Linux/UNIX` extends js.Object
+  sealed trait `Linux/UNIX`
+    extends atPulumiAwsLib.ec2InstancePlatformMod.InstancePlatform
   
   @js.native
-  sealed trait MAC_ADMIN extends js.Object
+  sealed trait MAC_ADMIN
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait MAC_OVERRIDE extends js.Object
+  sealed trait MAC_OVERRIDE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait MKNOD extends js.Object
+  sealed trait MKNOD
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
   sealed trait MODIFY extends js.Object
   
   @js.native
-  sealed trait NET_ADMIN extends js.Object
+  sealed trait NET_ADMIN
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait NET_BIND_SERVICE extends js.Object
+  sealed trait NET_BIND_SERVICE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait NET_BROADCAST extends js.Object
+  sealed trait NET_BROADCAST
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait NET_RAW extends js.Object
+  sealed trait NET_RAW
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH
+    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
   
   @js.native
   sealed trait Post extends js.Object
@@ -166,115 +203,171 @@ object atPulumiAwsLibStrings {
   sealed trait REMOVE extends js.Object
   
   @js.native
-  sealed trait `Red Hat Enterprise Linux` extends js.Object
+  sealed trait `Red Hat Enterprise Linux`
+    extends atPulumiAwsLib.ec2InstancePlatformMod.InstancePlatform
   
   @js.native
-  sealed trait SETFCAP extends js.Object
+  sealed trait SETFCAP
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SETGID extends js.Object
+  sealed trait SETGID
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SETPCAP extends js.Object
+  sealed trait SETPCAP
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SETUID extends js.Object
+  sealed trait SETUID
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait `SUSE Linux` extends js.Object
+  sealed trait `SUSE Linux`
+    extends atPulumiAwsLib.ec2InstancePlatformMod.InstancePlatform
   
   @js.native
-  sealed trait SYSLOG extends js.Object
+  sealed trait SYSLOG
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_ADMIN extends js.Object
+  sealed trait SYS_ADMIN
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_BOOT extends js.Object
+  sealed trait SYS_BOOT
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_CHROOT extends js.Object
+  sealed trait SYS_CHROOT
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_MODULE extends js.Object
+  sealed trait SYS_MODULE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_NICE extends js.Object
+  sealed trait SYS_NICE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_PACCT extends js.Object
+  sealed trait SYS_PACCT
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_PTRACE extends js.Object
+  sealed trait SYS_PTRACE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_RAWIO extends js.Object
+  sealed trait SYS_RAWIO
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_RESOURCE extends js.Object
+  sealed trait SYS_RESOURCE
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_TIME extends js.Object
+  sealed trait SYS_TIME
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait SYS_TTY_CONFIG extends js.Object
+  sealed trait SYS_TTY_CONFIG
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
   sealed trait TRIM_HORIZON extends js.Object
   
   @js.native
-  sealed trait WAKE_ALARM extends js.Object
+  sealed trait WAKE_ALARM
+    extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait Windows extends js.Object
+  sealed trait Windows
+    extends atPulumiAwsLib.ec2InstancePlatformMod.InstancePlatform
   
   @js.native
-  sealed trait `Windows with SQL Server` extends js.Object
+  sealed trait `Windows with SQL Server`
+    extends atPulumiAwsLib.ec2InstancePlatformMod.InstancePlatform
   
   @js.native
-  sealed trait `Windows with SQL Server Enterprise` extends js.Object
+  sealed trait `Windows with SQL Server Enterprise`
+    extends atPulumiAwsLib.ec2InstancePlatformMod.InstancePlatform
   
   @js.native
-  sealed trait `Windows with SQL Server Standard` extends js.Object
+  sealed trait `Windows with SQL Server Standard`
+    extends atPulumiAwsLib.ec2InstancePlatformMod.InstancePlatform
   
   @js.native
-  sealed trait `Windows with SQL Server Web` extends js.Object
+  sealed trait `Windows with SQL Server Web`
+    extends atPulumiAwsLib.ec2InstancePlatformMod.InstancePlatform
   
   @js.native
-  sealed trait `ap-northeast-1` extends js.Object
+  sealed trait a1DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `ap-northeast-2` extends js.Object
+  sealed trait a1DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `ap-south-1` extends js.Object
+  sealed trait a1DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `ap-southeast-1` extends js.Object
+  sealed trait a1DOTmedium
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `ap-southeast-2` extends js.Object
+  sealed trait a1DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `authenticated-read` extends js.Object
+  sealed trait `ap-northeast-1`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait `autoscaling:EC2_INSTANCE_LAUNCH` extends js.Object
+  sealed trait `ap-northeast-2`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait `autoscaling:EC2_INSTANCE_LAUNCH_ERROR` extends js.Object
+  sealed trait `ap-south-1`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait `autoscaling:EC2_INSTANCE_TERMINATE` extends js.Object
+  sealed trait `ap-southeast-1`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait `autoscaling:EC2_INSTANCE_TERMINATE_ERROR` extends js.Object
+  sealed trait `ap-southeast-2`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait `autoscaling:TEST_NOTIFICATION` extends js.Object
+  sealed trait `authenticated-read`
+    extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
   
   @js.native
-  sealed trait `aws-exec-read` extends js.Object
+  sealed trait `autoscaling:EC2_INSTANCE_LAUNCH`
+    extends atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType
+  
+  @js.native
+  sealed trait `autoscaling:EC2_INSTANCE_LAUNCH_ERROR`
+    extends atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType
+  
+  @js.native
+  sealed trait `autoscaling:EC2_INSTANCE_TERMINATE`
+    extends atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType
+  
+  @js.native
+  sealed trait `autoscaling:EC2_INSTANCE_TERMINATE_ERROR`
+    extends atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType
+  
+  @js.native
+  sealed trait `autoscaling:TEST_NOTIFICATION`
+    extends atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType
+  
+  @js.native
+  sealed trait `aws-exec-read`
+    extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
   
   @js.native
   sealed trait `aws:kinesis` extends js.Object
@@ -283,172 +376,816 @@ object atPulumiAwsLibStrings {
   sealed trait `aws:kinesis:record` extends js.Object
   
   @js.native
-  sealed trait awslogs extends js.Object
+  sealed trait awslogs
+    extends atPulumiAwsLib.ecsContainerMod.LogDriver
   
   @js.native
-  sealed trait `bucket-owner-full-control` extends js.Object
+  sealed trait `bucket-owner-full-control`
+    extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
   
   @js.native
-  sealed trait `bucket-owner-read` extends js.Object
+  sealed trait `bucket-owner-read`
+    extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
   
   @js.native
-  sealed trait `ca-central-1` extends js.Object
+  sealed trait c3DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait cluster extends js.Object
+  sealed trait c3DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait core extends js.Object
+  sealed trait c3DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait cpu extends js.Object
+  sealed trait c3DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait c3DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dedicated extends js.Object
+  sealed trait c4DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait c4DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dotnetcore1DOT0 extends js.Object
+  sealed trait c4DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dotnetcore2DOT0 extends js.Object
+  sealed trait c4DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dotnetcore2DOT1 extends js.Object
+  sealed trait c4DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `eu-central-1` extends js.Object
+  sealed trait c5DOT18xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `eu-west-1` extends js.Object
+  sealed trait c5DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `eu-west-2` extends js.Object
+  sealed trait c5DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `eu-west-3` extends js.Object
+  sealed trait c5DOT9xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait fluentd extends js.Object
+  sealed trait c5DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait fsize extends js.Object
+  sealed trait c5DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait gelf extends js.Object
+  sealed trait c5dDOT18xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait go1DOTx extends js.Object
+  sealed trait c5dDOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait java8 extends js.Object
+  sealed trait c5dDOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait journald extends js.Object
+  sealed trait c5dDOT9xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `json-file` extends js.Object
+  sealed trait c5dDOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait locks extends js.Object
+  sealed trait c5dDOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `log-delivery-write` extends js.Object
+  sealed trait c5nDOT18xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait memlock extends js.Object
+  sealed trait c5nDOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait msgqueue extends js.Object
+  sealed trait c5nDOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait nice extends js.Object
+  sealed trait c5nDOT9xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait nodejs extends js.Object
+  sealed trait c5nDOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait nodejs4DOT3 extends js.Object
+  sealed trait c5nDOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `nodejs4DOT3-edge` extends js.Object
+  sealed trait `ca-central-1`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait nodejs6DOT10 extends js.Object
+  sealed trait cluster
+    extends atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy
   
   @js.native
-  sealed trait nodejs8DOT10 extends js.Object
+  sealed trait core
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
   
   @js.native
-  sealed trait nofile extends js.Object
+  sealed trait cpu
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
   
   @js.native
-  sealed trait nproc extends js.Object
+  sealed trait d2DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait d2DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `public-read` extends js.Object
+  sealed trait d2DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `public-read-write` extends js.Object
+  sealed trait d2DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait python2DOT7 extends js.Object
+  sealed trait data
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
   
   @js.native
-  sealed trait python3DOT6 extends js.Object
+  sealed trait dedicated
+    extends atPulumiAwsLib.ec2TenancyMod.Tenancy
   
   @js.native
-  sealed trait rss extends js.Object
+  sealed trait default
+    extends atPulumiAwsLib.ec2TenancyMod.Tenancy
   
   @js.native
-  sealed trait rtprio extends js.Object
+  sealed trait dotnetcore1DOT0
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
   @js.native
-  sealed trait rttime extends js.Object
+  sealed trait dotnetcore2DOT0
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
   @js.native
-  sealed trait `sa-east-1` extends js.Object
+  sealed trait dotnetcore2DOT1
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
   
   @js.native
-  sealed trait sigpending extends js.Object
+  sealed trait `eu-central-1`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait splunk extends js.Object
+  sealed trait `eu-west-1`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait spread extends js.Object
+  sealed trait `eu-west-2`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait stack extends js.Object
+  sealed trait `eu-west-3`
+    extends atPulumiAwsLib.regionMod.Region
   
   @js.native
-  sealed trait syslog extends js.Object
+  sealed trait f1DOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait tcp extends js.Object
+  sealed trait f1DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait udp extends js.Object
+  sealed trait fluentd
+    extends atPulumiAwsLib.ecsContainerMod.LogDriver
   
   @js.native
-  sealed trait `us-east-1` extends js.Object
+  sealed trait fsize
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
   
   @js.native
-  sealed trait `us-east-2` extends js.Object
+  sealed trait g2DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `us-west-1` extends js.Object
+  sealed trait g2DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait `us-west-2` extends js.Object
+  sealed trait g3DOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait g3DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait g3DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait g3sDOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait gelf
+    extends atPulumiAwsLib.ecsContainerMod.LogDriver
+  
+  @js.native
+  sealed trait go1DOTx
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait h1DOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait h1DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait h1DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait h1DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait hs1DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait i3DOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait i3DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait i3DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait i3DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait i3DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait i3DOTmetal
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait i3DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait java8
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait journald
+    extends atPulumiAwsLib.ecsContainerMod.LogDriver
+  
+  @js.native
+  sealed trait `json-file`
+    extends atPulumiAwsLib.ecsContainerMod.LogDriver
+  
+  @js.native
+  sealed trait locks
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait `log-delivery-write`
+    extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
+  
+  @js.native
+  sealed trait m3DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m3DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m3DOTmedium
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m3DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m4DOT10xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m4DOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m4DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m4DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m4DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m4DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5DOT12xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5DOT24xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5aDOT12xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5aDOT24xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5aDOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5aDOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5aDOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5aDOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5dDOT12xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5dDOT24xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5dDOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5dDOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5dDOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait m5dDOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait memlock
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait msgqueue
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait nice
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait nodejs
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait nodejs4DOT3
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait `nodejs4DOT3-edge`
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait nodejs6DOT10
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait nodejs8DOT10
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait nofile
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait nproc
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait p2DOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait p2DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait p2DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait p3DOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait p3DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait p3DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait p3dnDOT24xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait `private`
+    extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
+  
+  @js.native
+  sealed trait `public-read`
+    extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
+  
+  @js.native
+  sealed trait `public-read-write`
+    extends atPulumiAwsLib.s3CannedAclMod.CannedAcl
+  
+  @js.native
+  sealed trait python2DOT7
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait python3DOT6
+    extends atPulumiAwsLib.lambdaRuntimesMod.Runtime
+  
+  @js.native
+  sealed trait r3DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r3DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r3DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r3DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r3DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r4DOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r4DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r4DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r4DOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r4DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r4DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5DOT12xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5DOT24xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5DOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5aDOT12xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5aDOT24xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5aDOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5aDOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5aDOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5aDOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5dDOT12xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5dDOT24xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5dDOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5dDOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5dDOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait r5dDOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait rss
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait rtprio
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait rttime
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait `sa-east-1`
+    extends atPulumiAwsLib.regionMod.Region
+  
+  @js.native
+  sealed trait sigpending
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait splunk
+    extends atPulumiAwsLib.ecsContainerMod.LogDriver
+  
+  @js.native
+  sealed trait spread
+    extends atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy
+  
+  @js.native
+  sealed trait stack
+    extends atPulumiAwsLib.ecsContainerMod.UlimitName
+  
+  @js.native
+  sealed trait syslog
+    extends atPulumiAwsLib.ecsContainerMod.LogDriver
+  
+  @js.native
+  sealed trait t2DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t2DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t2DOTmedium
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t2DOTmicro
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t2DOTnano
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t2DOTsmall
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t2DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t3DOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t3DOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t3DOTmedium
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t3DOTmicro
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t3DOTnano
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t3DOTsmall
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait t3DOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait tcp
+    extends atPulumiAwsLib.ecsContainerMod.Protocol
+  
+  @js.native
+  sealed trait `u-12tb1DOTmetal`
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait `u-6tb1DOTmetal`
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait `u-9tb1DOTmetal`
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait udp
+    extends atPulumiAwsLib.ecsContainerMod.Protocol
+  
+  @js.native
+  sealed trait `us-east-1`
+    extends atPulumiAwsLib.regionMod.Region
+  
+  @js.native
+  sealed trait `us-east-2`
+    extends atPulumiAwsLib.regionMod.Region
+  
+  @js.native
+  sealed trait `us-west-1`
+    extends atPulumiAwsLib.regionMod.Region
+  
+  @js.native
+  sealed trait `us-west-2`
+    extends atPulumiAwsLib.regionMod.Region
+  
+  @js.native
+  sealed trait x1DOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait x1DOT32xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait x1eDOT16xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait x1eDOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait x1eDOT32xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait x1eDOT4xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait x1eDOT8xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait x1eDOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait z1dDOT12xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait z1dDOT2xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait z1dDOT3xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait z1dDOT6xlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait z1dDOTlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
+  
+  @js.native
+  sealed trait z1dDOTxlarge
+    extends atPulumiAwsLib.ec2InstanceTypeMod.InstanceType
   
   @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
@@ -607,6 +1344,16 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def `Windows with SQL Server Web`: `Windows with SQL Server Web` = "Windows with SQL Server Web".asInstanceOf[`Windows with SQL Server Web`]
   @scala.inline
+  def a1DOT2xlarge: a1DOT2xlarge = "a1.2xlarge".asInstanceOf[a1DOT2xlarge]
+  @scala.inline
+  def a1DOT4xlarge: a1DOT4xlarge = "a1.4xlarge".asInstanceOf[a1DOT4xlarge]
+  @scala.inline
+  def a1DOTlarge: a1DOTlarge = "a1.large".asInstanceOf[a1DOTlarge]
+  @scala.inline
+  def a1DOTmedium: a1DOTmedium = "a1.medium".asInstanceOf[a1DOTmedium]
+  @scala.inline
+  def a1DOTxlarge: a1DOTxlarge = "a1.xlarge".asInstanceOf[a1DOTxlarge]
+  @scala.inline
   def `ap-northeast-1`: `ap-northeast-1` = "ap-northeast-1".asInstanceOf[`ap-northeast-1`]
   @scala.inline
   def `ap-northeast-2`: `ap-northeast-2` = "ap-northeast-2".asInstanceOf[`ap-northeast-2`]
@@ -641,6 +1388,62 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def `bucket-owner-read`: `bucket-owner-read` = "bucket-owner-read".asInstanceOf[`bucket-owner-read`]
   @scala.inline
+  def c3DOT2xlarge: c3DOT2xlarge = "c3.2xlarge".asInstanceOf[c3DOT2xlarge]
+  @scala.inline
+  def c3DOT4xlarge: c3DOT4xlarge = "c3.4xlarge".asInstanceOf[c3DOT4xlarge]
+  @scala.inline
+  def c3DOT8xlarge: c3DOT8xlarge = "c3.8xlarge".asInstanceOf[c3DOT8xlarge]
+  @scala.inline
+  def c3DOTlarge: c3DOTlarge = "c3.large".asInstanceOf[c3DOTlarge]
+  @scala.inline
+  def c3DOTxlarge: c3DOTxlarge = "c3.xlarge".asInstanceOf[c3DOTxlarge]
+  @scala.inline
+  def c4DOT2xlarge: c4DOT2xlarge = "c4.2xlarge".asInstanceOf[c4DOT2xlarge]
+  @scala.inline
+  def c4DOT4xlarge: c4DOT4xlarge = "c4.4xlarge".asInstanceOf[c4DOT4xlarge]
+  @scala.inline
+  def c4DOT8xlarge: c4DOT8xlarge = "c4.8xlarge".asInstanceOf[c4DOT8xlarge]
+  @scala.inline
+  def c4DOTlarge: c4DOTlarge = "c4.large".asInstanceOf[c4DOTlarge]
+  @scala.inline
+  def c4DOTxlarge: c4DOTxlarge = "c4.xlarge".asInstanceOf[c4DOTxlarge]
+  @scala.inline
+  def c5DOT18xlarge: c5DOT18xlarge = "c5.18xlarge".asInstanceOf[c5DOT18xlarge]
+  @scala.inline
+  def c5DOT2xlarge: c5DOT2xlarge = "c5.2xlarge".asInstanceOf[c5DOT2xlarge]
+  @scala.inline
+  def c5DOT4xlarge: c5DOT4xlarge = "c5.4xlarge".asInstanceOf[c5DOT4xlarge]
+  @scala.inline
+  def c5DOT9xlarge: c5DOT9xlarge = "c5.9xlarge".asInstanceOf[c5DOT9xlarge]
+  @scala.inline
+  def c5DOTlarge: c5DOTlarge = "c5.large".asInstanceOf[c5DOTlarge]
+  @scala.inline
+  def c5DOTxlarge: c5DOTxlarge = "c5.xlarge".asInstanceOf[c5DOTxlarge]
+  @scala.inline
+  def c5dDOT18xlarge: c5dDOT18xlarge = "c5d.18xlarge".asInstanceOf[c5dDOT18xlarge]
+  @scala.inline
+  def c5dDOT2xlarge: c5dDOT2xlarge = "c5d.2xlarge".asInstanceOf[c5dDOT2xlarge]
+  @scala.inline
+  def c5dDOT4xlarge: c5dDOT4xlarge = "c5d.4xlarge".asInstanceOf[c5dDOT4xlarge]
+  @scala.inline
+  def c5dDOT9xlarge: c5dDOT9xlarge = "c5d.9xlarge".asInstanceOf[c5dDOT9xlarge]
+  @scala.inline
+  def c5dDOTlarge: c5dDOTlarge = "c5d.large".asInstanceOf[c5dDOTlarge]
+  @scala.inline
+  def c5dDOTxlarge: c5dDOTxlarge = "c5d.xlarge".asInstanceOf[c5dDOTxlarge]
+  @scala.inline
+  def c5nDOT18xlarge: c5nDOT18xlarge = "c5n.18xlarge".asInstanceOf[c5nDOT18xlarge]
+  @scala.inline
+  def c5nDOT2xlarge: c5nDOT2xlarge = "c5n.2xlarge".asInstanceOf[c5nDOT2xlarge]
+  @scala.inline
+  def c5nDOT4xlarge: c5nDOT4xlarge = "c5n.4xlarge".asInstanceOf[c5nDOT4xlarge]
+  @scala.inline
+  def c5nDOT9xlarge: c5nDOT9xlarge = "c5n.9xlarge".asInstanceOf[c5nDOT9xlarge]
+  @scala.inline
+  def c5nDOTlarge: c5nDOTlarge = "c5n.large".asInstanceOf[c5nDOTlarge]
+  @scala.inline
+  def c5nDOTxlarge: c5nDOTxlarge = "c5n.xlarge".asInstanceOf[c5nDOTxlarge]
+  @scala.inline
   def `ca-central-1`: `ca-central-1` = "ca-central-1".asInstanceOf[`ca-central-1`]
   @scala.inline
   def cluster: cluster = "cluster".asInstanceOf[cluster]
@@ -648,6 +1451,14 @@ object atPulumiAwsLibStrings {
   def core: core = "core".asInstanceOf[core]
   @scala.inline
   def cpu: cpu = "cpu".asInstanceOf[cpu]
+  @scala.inline
+  def d2DOT2xlarge: d2DOT2xlarge = "d2.2xlarge".asInstanceOf[d2DOT2xlarge]
+  @scala.inline
+  def d2DOT4xlarge: d2DOT4xlarge = "d2.4xlarge".asInstanceOf[d2DOT4xlarge]
+  @scala.inline
+  def d2DOT8xlarge: d2DOT8xlarge = "d2.8xlarge".asInstanceOf[d2DOT8xlarge]
+  @scala.inline
+  def d2DOTxlarge: d2DOTxlarge = "d2.xlarge".asInstanceOf[d2DOTxlarge]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
@@ -669,13 +1480,53 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def `eu-west-3`: `eu-west-3` = "eu-west-3".asInstanceOf[`eu-west-3`]
   @scala.inline
+  def f1DOT16xlarge: f1DOT16xlarge = "f1.16xlarge".asInstanceOf[f1DOT16xlarge]
+  @scala.inline
+  def f1DOT2xlarge: f1DOT2xlarge = "f1.2xlarge".asInstanceOf[f1DOT2xlarge]
+  @scala.inline
   def fluentd: fluentd = "fluentd".asInstanceOf[fluentd]
   @scala.inline
   def fsize: fsize = "fsize".asInstanceOf[fsize]
   @scala.inline
+  def g2DOT2xlarge: g2DOT2xlarge = "g2.2xlarge".asInstanceOf[g2DOT2xlarge]
+  @scala.inline
+  def g2DOT8xlarge: g2DOT8xlarge = "g2.8xlarge".asInstanceOf[g2DOT8xlarge]
+  @scala.inline
+  def g3DOT16xlarge: g3DOT16xlarge = "g3.16xlarge".asInstanceOf[g3DOT16xlarge]
+  @scala.inline
+  def g3DOT4xlarge: g3DOT4xlarge = "g3.4xlarge".asInstanceOf[g3DOT4xlarge]
+  @scala.inline
+  def g3DOT8xlarge: g3DOT8xlarge = "g3.8xlarge".asInstanceOf[g3DOT8xlarge]
+  @scala.inline
+  def g3sDOTxlarge: g3sDOTxlarge = "g3s.xlarge".asInstanceOf[g3sDOTxlarge]
+  @scala.inline
   def gelf: gelf = "gelf".asInstanceOf[gelf]
   @scala.inline
   def go1DOTx: go1DOTx = "go1.x".asInstanceOf[go1DOTx]
+  @scala.inline
+  def h1DOT16xlarge: h1DOT16xlarge = "h1.16xlarge".asInstanceOf[h1DOT16xlarge]
+  @scala.inline
+  def h1DOT2xlarge: h1DOT2xlarge = "h1.2xlarge".asInstanceOf[h1DOT2xlarge]
+  @scala.inline
+  def h1DOT4xlarge: h1DOT4xlarge = "h1.4xlarge".asInstanceOf[h1DOT4xlarge]
+  @scala.inline
+  def h1DOT8xlarge: h1DOT8xlarge = "h1.8xlarge".asInstanceOf[h1DOT8xlarge]
+  @scala.inline
+  def hs1DOT8xlarge: hs1DOT8xlarge = "hs1.8xlarge".asInstanceOf[hs1DOT8xlarge]
+  @scala.inline
+  def i3DOT16xlarge: i3DOT16xlarge = "i3.16xlarge".asInstanceOf[i3DOT16xlarge]
+  @scala.inline
+  def i3DOT2xlarge: i3DOT2xlarge = "i3.2xlarge".asInstanceOf[i3DOT2xlarge]
+  @scala.inline
+  def i3DOT4xlarge: i3DOT4xlarge = "i3.4xlarge".asInstanceOf[i3DOT4xlarge]
+  @scala.inline
+  def i3DOT8xlarge: i3DOT8xlarge = "i3.8xlarge".asInstanceOf[i3DOT8xlarge]
+  @scala.inline
+  def i3DOTlarge: i3DOTlarge = "i3.large".asInstanceOf[i3DOTlarge]
+  @scala.inline
+  def i3DOTmetal: i3DOTmetal = "i3.metal".asInstanceOf[i3DOTmetal]
+  @scala.inline
+  def i3DOTxlarge: i3DOTxlarge = "i3.xlarge".asInstanceOf[i3DOTxlarge]
   @scala.inline
   def java8: java8 = "java8".asInstanceOf[java8]
   @scala.inline
@@ -686,6 +1537,62 @@ object atPulumiAwsLibStrings {
   def locks: locks = "locks".asInstanceOf[locks]
   @scala.inline
   def `log-delivery-write`: `log-delivery-write` = "log-delivery-write".asInstanceOf[`log-delivery-write`]
+  @scala.inline
+  def m3DOT2xlarge: m3DOT2xlarge = "m3.2xlarge".asInstanceOf[m3DOT2xlarge]
+  @scala.inline
+  def m3DOTlarge: m3DOTlarge = "m3.large".asInstanceOf[m3DOTlarge]
+  @scala.inline
+  def m3DOTmedium: m3DOTmedium = "m3.medium".asInstanceOf[m3DOTmedium]
+  @scala.inline
+  def m3DOTxlarge: m3DOTxlarge = "m3.xlarge".asInstanceOf[m3DOTxlarge]
+  @scala.inline
+  def m4DOT10xlarge: m4DOT10xlarge = "m4.10xlarge".asInstanceOf[m4DOT10xlarge]
+  @scala.inline
+  def m4DOT16xlarge: m4DOT16xlarge = "m4.16xlarge".asInstanceOf[m4DOT16xlarge]
+  @scala.inline
+  def m4DOT2xlarge: m4DOT2xlarge = "m4.2xlarge".asInstanceOf[m4DOT2xlarge]
+  @scala.inline
+  def m4DOT4xlarge: m4DOT4xlarge = "m4.4xlarge".asInstanceOf[m4DOT4xlarge]
+  @scala.inline
+  def m4DOTlarge: m4DOTlarge = "m4.large".asInstanceOf[m4DOTlarge]
+  @scala.inline
+  def m4DOTxlarge: m4DOTxlarge = "m4.xlarge".asInstanceOf[m4DOTxlarge]
+  @scala.inline
+  def m5DOT12xlarge: m5DOT12xlarge = "m5.12xlarge".asInstanceOf[m5DOT12xlarge]
+  @scala.inline
+  def m5DOT24xlarge: m5DOT24xlarge = "m5.24xlarge".asInstanceOf[m5DOT24xlarge]
+  @scala.inline
+  def m5DOT2xlarge: m5DOT2xlarge = "m5.2xlarge".asInstanceOf[m5DOT2xlarge]
+  @scala.inline
+  def m5DOT4xlarge: m5DOT4xlarge = "m5.4xlarge".asInstanceOf[m5DOT4xlarge]
+  @scala.inline
+  def m5DOTlarge: m5DOTlarge = "m5.large".asInstanceOf[m5DOTlarge]
+  @scala.inline
+  def m5DOTxlarge: m5DOTxlarge = "m5.xlarge".asInstanceOf[m5DOTxlarge]
+  @scala.inline
+  def m5aDOT12xlarge: m5aDOT12xlarge = "m5a.12xlarge".asInstanceOf[m5aDOT12xlarge]
+  @scala.inline
+  def m5aDOT24xlarge: m5aDOT24xlarge = "m5a.24xlarge".asInstanceOf[m5aDOT24xlarge]
+  @scala.inline
+  def m5aDOT2xlarge: m5aDOT2xlarge = "m5a.2xlarge".asInstanceOf[m5aDOT2xlarge]
+  @scala.inline
+  def m5aDOT4xlarge: m5aDOT4xlarge = "m5a.4xlarge".asInstanceOf[m5aDOT4xlarge]
+  @scala.inline
+  def m5aDOTlarge: m5aDOTlarge = "m5a.large".asInstanceOf[m5aDOTlarge]
+  @scala.inline
+  def m5aDOTxlarge: m5aDOTxlarge = "m5a.xlarge".asInstanceOf[m5aDOTxlarge]
+  @scala.inline
+  def m5dDOT12xlarge: m5dDOT12xlarge = "m5d.12xlarge".asInstanceOf[m5dDOT12xlarge]
+  @scala.inline
+  def m5dDOT24xlarge: m5dDOT24xlarge = "m5d.24xlarge".asInstanceOf[m5dDOT24xlarge]
+  @scala.inline
+  def m5dDOT2xlarge: m5dDOT2xlarge = "m5d.2xlarge".asInstanceOf[m5dDOT2xlarge]
+  @scala.inline
+  def m5dDOT4xlarge: m5dDOT4xlarge = "m5d.4xlarge".asInstanceOf[m5dDOT4xlarge]
+  @scala.inline
+  def m5dDOTlarge: m5dDOTlarge = "m5d.large".asInstanceOf[m5dDOTlarge]
+  @scala.inline
+  def m5dDOTxlarge: m5dDOTxlarge = "m5d.xlarge".asInstanceOf[m5dDOTxlarge]
   @scala.inline
   def memlock: memlock = "memlock".asInstanceOf[memlock]
   @scala.inline
@@ -707,6 +1614,20 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def nproc: nproc = "nproc".asInstanceOf[nproc]
   @scala.inline
+  def p2DOT16xlarge: p2DOT16xlarge = "p2.16xlarge".asInstanceOf[p2DOT16xlarge]
+  @scala.inline
+  def p2DOT8xlarge: p2DOT8xlarge = "p2.8xlarge".asInstanceOf[p2DOT8xlarge]
+  @scala.inline
+  def p2DOTxlarge: p2DOTxlarge = "p2.xlarge".asInstanceOf[p2DOTxlarge]
+  @scala.inline
+  def p3DOT16xlarge: p3DOT16xlarge = "p3.16xlarge".asInstanceOf[p3DOT16xlarge]
+  @scala.inline
+  def p3DOT2xlarge: p3DOT2xlarge = "p3.2xlarge".asInstanceOf[p3DOT2xlarge]
+  @scala.inline
+  def p3DOT8xlarge: p3DOT8xlarge = "p3.8xlarge".asInstanceOf[p3DOT8xlarge]
+  @scala.inline
+  def p3dnDOT24xlarge: p3dnDOT24xlarge = "p3dn.24xlarge".asInstanceOf[p3dnDOT24xlarge]
+  @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   @scala.inline
   def `public-read`: `public-read` = "public-read".asInstanceOf[`public-read`]
@@ -716,6 +1637,64 @@ object atPulumiAwsLibStrings {
   def python2DOT7: python2DOT7 = "python2.7".asInstanceOf[python2DOT7]
   @scala.inline
   def python3DOT6: python3DOT6 = "python3.6".asInstanceOf[python3DOT6]
+  @scala.inline
+  def r3DOT2xlarge: r3DOT2xlarge = "r3.2xlarge".asInstanceOf[r3DOT2xlarge]
+  @scala.inline
+  def r3DOT4xlarge: r3DOT4xlarge = "r3.4xlarge".asInstanceOf[r3DOT4xlarge]
+  @scala.inline
+  def r3DOT8xlarge: r3DOT8xlarge = "r3.8xlarge".asInstanceOf[r3DOT8xlarge]
+  @scala.inline
+  def r3DOTlarge: r3DOTlarge = "r3.large".asInstanceOf[r3DOTlarge]
+  @scala.inline
+  def r3DOTxlarge: r3DOTxlarge = "r3.xlarge".asInstanceOf[r3DOTxlarge]
+  @scala.inline
+  def r4DOT16xlarge: r4DOT16xlarge = "r4.16xlarge".asInstanceOf[r4DOT16xlarge]
+  @scala.inline
+  def r4DOT2xlarge: r4DOT2xlarge = "r4.2xlarge".asInstanceOf[r4DOT2xlarge]
+  @scala.inline
+  def r4DOT4xlarge: r4DOT4xlarge = "r4.4xlarge".asInstanceOf[r4DOT4xlarge]
+  @scala.inline
+  def r4DOT8xlarge: r4DOT8xlarge = "r4.8xlarge".asInstanceOf[r4DOT8xlarge]
+  @scala.inline
+  def r4DOTlarge: r4DOTlarge = "r4.large".asInstanceOf[r4DOTlarge]
+  @scala.inline
+  def r4DOTxlarge: r4DOTxlarge = "r4.xlarge".asInstanceOf[r4DOTxlarge]
+  @scala.inline
+  def r5DOT12xlarge: r5DOT12xlarge = "r5.12xlarge".asInstanceOf[r5DOT12xlarge]
+  @scala.inline
+  def r5DOT24xlarge: r5DOT24xlarge = "r5.24xlarge".asInstanceOf[r5DOT24xlarge]
+  @scala.inline
+  def r5DOT2xlarge: r5DOT2xlarge = "r5.2xlarge".asInstanceOf[r5DOT2xlarge]
+  @scala.inline
+  def r5DOT4xlarge: r5DOT4xlarge = "r5.4xlarge".asInstanceOf[r5DOT4xlarge]
+  @scala.inline
+  def r5DOTlarge: r5DOTlarge = "r5.large".asInstanceOf[r5DOTlarge]
+  @scala.inline
+  def r5DOTxlarge: r5DOTxlarge = "r5.xlarge".asInstanceOf[r5DOTxlarge]
+  @scala.inline
+  def r5aDOT12xlarge: r5aDOT12xlarge = "r5a.12xlarge".asInstanceOf[r5aDOT12xlarge]
+  @scala.inline
+  def r5aDOT24xlarge: r5aDOT24xlarge = "r5a.24xlarge".asInstanceOf[r5aDOT24xlarge]
+  @scala.inline
+  def r5aDOT2xlarge: r5aDOT2xlarge = "r5a.2xlarge".asInstanceOf[r5aDOT2xlarge]
+  @scala.inline
+  def r5aDOT4xlarge: r5aDOT4xlarge = "r5a.4xlarge".asInstanceOf[r5aDOT4xlarge]
+  @scala.inline
+  def r5aDOTlarge: r5aDOTlarge = "r5a.large".asInstanceOf[r5aDOTlarge]
+  @scala.inline
+  def r5aDOTxlarge: r5aDOTxlarge = "r5a.xlarge".asInstanceOf[r5aDOTxlarge]
+  @scala.inline
+  def r5dDOT12xlarge: r5dDOT12xlarge = "r5d.12xlarge".asInstanceOf[r5dDOT12xlarge]
+  @scala.inline
+  def r5dDOT24xlarge: r5dDOT24xlarge = "r5d.24xlarge".asInstanceOf[r5dDOT24xlarge]
+  @scala.inline
+  def r5dDOT2xlarge: r5dDOT2xlarge = "r5d.2xlarge".asInstanceOf[r5dDOT2xlarge]
+  @scala.inline
+  def r5dDOT4xlarge: r5dDOT4xlarge = "r5d.4xlarge".asInstanceOf[r5dDOT4xlarge]
+  @scala.inline
+  def r5dDOTlarge: r5dDOTlarge = "r5d.large".asInstanceOf[r5dDOTlarge]
+  @scala.inline
+  def r5dDOTxlarge: r5dDOTxlarge = "r5d.xlarge".asInstanceOf[r5dDOTxlarge]
   @scala.inline
   def rss: rss = "rss".asInstanceOf[rss]
   @scala.inline
@@ -735,7 +1714,41 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def syslog: syslog = "syslog".asInstanceOf[syslog]
   @scala.inline
+  def t2DOT2xlarge: t2DOT2xlarge = "t2.2xlarge".asInstanceOf[t2DOT2xlarge]
+  @scala.inline
+  def t2DOTlarge: t2DOTlarge = "t2.large".asInstanceOf[t2DOTlarge]
+  @scala.inline
+  def t2DOTmedium: t2DOTmedium = "t2.medium".asInstanceOf[t2DOTmedium]
+  @scala.inline
+  def t2DOTmicro: t2DOTmicro = "t2.micro".asInstanceOf[t2DOTmicro]
+  @scala.inline
+  def t2DOTnano: t2DOTnano = "t2.nano".asInstanceOf[t2DOTnano]
+  @scala.inline
+  def t2DOTsmall: t2DOTsmall = "t2.small".asInstanceOf[t2DOTsmall]
+  @scala.inline
+  def t2DOTxlarge: t2DOTxlarge = "t2.xlarge".asInstanceOf[t2DOTxlarge]
+  @scala.inline
+  def t3DOT2xlarge: t3DOT2xlarge = "t3.2xlarge".asInstanceOf[t3DOT2xlarge]
+  @scala.inline
+  def t3DOTlarge: t3DOTlarge = "t3.large".asInstanceOf[t3DOTlarge]
+  @scala.inline
+  def t3DOTmedium: t3DOTmedium = "t3.medium".asInstanceOf[t3DOTmedium]
+  @scala.inline
+  def t3DOTmicro: t3DOTmicro = "t3.micro".asInstanceOf[t3DOTmicro]
+  @scala.inline
+  def t3DOTnano: t3DOTnano = "t3.nano".asInstanceOf[t3DOTnano]
+  @scala.inline
+  def t3DOTsmall: t3DOTsmall = "t3.small".asInstanceOf[t3DOTsmall]
+  @scala.inline
+  def t3DOTxlarge: t3DOTxlarge = "t3.xlarge".asInstanceOf[t3DOTxlarge]
+  @scala.inline
   def tcp: tcp = "tcp".asInstanceOf[tcp]
+  @scala.inline
+  def `u-12tb1DOTmetal`: `u-12tb1DOTmetal` = "u-12tb1.metal".asInstanceOf[`u-12tb1DOTmetal`]
+  @scala.inline
+  def `u-6tb1DOTmetal`: `u-6tb1DOTmetal` = "u-6tb1.metal".asInstanceOf[`u-6tb1DOTmetal`]
+  @scala.inline
+  def `u-9tb1DOTmetal`: `u-9tb1DOTmetal` = "u-9tb1.metal".asInstanceOf[`u-9tb1DOTmetal`]
   @scala.inline
   def udp: udp = "udp".asInstanceOf[udp]
   @scala.inline
@@ -746,5 +1759,33 @@ object atPulumiAwsLibStrings {
   def `us-west-1`: `us-west-1` = "us-west-1".asInstanceOf[`us-west-1`]
   @scala.inline
   def `us-west-2`: `us-west-2` = "us-west-2".asInstanceOf[`us-west-2`]
+  @scala.inline
+  def x1DOT16xlarge: x1DOT16xlarge = "x1.16xlarge".asInstanceOf[x1DOT16xlarge]
+  @scala.inline
+  def x1DOT32xlarge: x1DOT32xlarge = "x1.32xlarge".asInstanceOf[x1DOT32xlarge]
+  @scala.inline
+  def x1eDOT16xlarge: x1eDOT16xlarge = "x1e.16xlarge".asInstanceOf[x1eDOT16xlarge]
+  @scala.inline
+  def x1eDOT2xlarge: x1eDOT2xlarge = "x1e.2xlarge".asInstanceOf[x1eDOT2xlarge]
+  @scala.inline
+  def x1eDOT32xlarge: x1eDOT32xlarge = "x1e.32xlarge".asInstanceOf[x1eDOT32xlarge]
+  @scala.inline
+  def x1eDOT4xlarge: x1eDOT4xlarge = "x1e.4xlarge".asInstanceOf[x1eDOT4xlarge]
+  @scala.inline
+  def x1eDOT8xlarge: x1eDOT8xlarge = "x1e.8xlarge".asInstanceOf[x1eDOT8xlarge]
+  @scala.inline
+  def x1eDOTxlarge: x1eDOTxlarge = "x1e.xlarge".asInstanceOf[x1eDOTxlarge]
+  @scala.inline
+  def z1dDOT12xlarge: z1dDOT12xlarge = "z1d.12xlarge".asInstanceOf[z1dDOT12xlarge]
+  @scala.inline
+  def z1dDOT2xlarge: z1dDOT2xlarge = "z1d.2xlarge".asInstanceOf[z1dDOT2xlarge]
+  @scala.inline
+  def z1dDOT3xlarge: z1dDOT3xlarge = "z1d.3xlarge".asInstanceOf[z1dDOT3xlarge]
+  @scala.inline
+  def z1dDOT6xlarge: z1dDOT6xlarge = "z1d.6xlarge".asInstanceOf[z1dDOT6xlarge]
+  @scala.inline
+  def z1dDOTlarge: z1dDOTlarge = "z1d.large".asInstanceOf[z1dDOTlarge]
+  @scala.inline
+  def z1dDOTxlarge: z1dDOTxlarge = "z1d.xlarge".asInstanceOf[z1dDOTxlarge]
 }
 

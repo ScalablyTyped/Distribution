@@ -14,3 +14,14 @@ trait Address extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Address {
+  @scala.inline
+  def apply(email: java.lang.String, header_to: java.lang.String = null, name: java.lang.String = null): Address = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("email")(email)
+    if (header_to != null) __obj.updateDynamic("header_to")(header_to)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Address]
+  }
+}
+

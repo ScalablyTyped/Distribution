@@ -12,3 +12,20 @@ trait RedirectRequest extends js.Object {
   var url: java.lang.String
 }
 
+object RedirectRequest {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    url: java.lang.String,
+    session: Session = null,
+    uploadData: UploadData = null
+  ): RedirectRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("url")(url)
+    if (session != null) __obj.updateDynamic("session")(session)
+    if (uploadData != null) __obj.updateDynamic("uploadData")(uploadData)
+    __obj.asInstanceOf[RedirectRequest]
+  }
+}
+

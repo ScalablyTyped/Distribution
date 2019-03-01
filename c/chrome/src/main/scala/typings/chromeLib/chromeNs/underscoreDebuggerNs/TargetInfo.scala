@@ -32,3 +32,27 @@ trait TargetInfo extends js.Object {
   var url: java.lang.String
 }
 
+object TargetInfo {
+  @scala.inline
+  def apply(
+    attached: scala.Boolean,
+    id: java.lang.String,
+    title: java.lang.String,
+    `type`: java.lang.String,
+    url: java.lang.String,
+    extensionId: java.lang.String = null,
+    faviconUrl: java.lang.String = null,
+    tabId: scala.Int | scala.Double = null
+  ): TargetInfo = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("attached")(attached)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    if (faviconUrl != null) __obj.updateDynamic("faviconUrl")(faviconUrl)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetInfo]
+  }
+}
+

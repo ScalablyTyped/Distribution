@@ -15,3 +15,20 @@ trait XDumper
   def dump(): java.lang.String
 }
 
+object XDumper {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    dump: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDumper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("dump")(dump)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDumper]
+  }
+}
+

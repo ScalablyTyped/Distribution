@@ -17,3 +17,13 @@ trait ServerRegisterOptions extends js.Object {
   var routes: js.UndefOr[hapiLib.Anon_PrefixVhost] = js.undefined
 }
 
+object ServerRegisterOptions {
+  @scala.inline
+  def apply(once: js.UndefOr[scala.Boolean] = js.undefined, routes: hapiLib.Anon_PrefixVhost = null): ServerRegisterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
+    if (routes != null) __obj.updateDynamic("routes")(routes)
+    __obj.asInstanceOf[ServerRegisterOptions]
+  }
+}
+

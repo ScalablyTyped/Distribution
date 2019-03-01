@@ -20,3 +20,24 @@ trait PagespeedApiImageV2 extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PagespeedApiImageV2 {
+  @scala.inline
+  def apply(
+    data: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    key: java.lang.String = null,
+    mime_type: java.lang.String = null,
+    page_rect: gapiDotClientDotPagespeedonlineLib.Anon_Height = null,
+    width: scala.Int | scala.Double = null
+  ): PagespeedApiImageV2 = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (mime_type != null) __obj.updateDynamic("mime_type")(mime_type)
+    if (page_rect != null) __obj.updateDynamic("page_rect")(page_rect)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PagespeedApiImageV2]
+  }
+}
+

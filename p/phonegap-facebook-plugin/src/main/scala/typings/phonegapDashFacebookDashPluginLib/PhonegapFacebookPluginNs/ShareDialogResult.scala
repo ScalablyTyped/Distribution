@@ -16,3 +16,14 @@ trait ShareDialogResult extends BaseDialogResult {
   var post_id: java.lang.String
 }
 
+object ShareDialogResult {
+  @scala.inline
+  def apply(error_code: java.lang.String, error_message: java.lang.String, post_id: java.lang.String): ShareDialogResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error_code")(error_code)
+    __obj.updateDynamic("error_message")(error_message)
+    __obj.updateDynamic("post_id")(post_id)
+    __obj.asInstanceOf[ShareDialogResult]
+  }
+}
+

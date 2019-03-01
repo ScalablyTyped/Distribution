@@ -9,3 +9,12 @@ trait Anon_Tolerance extends js.Object {
   var tolerance: scala.Double
 }
 
+object Anon_Tolerance {
+  @scala.inline
+  def apply(tolerance: scala.Double): Anon_Tolerance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tolerance")(tolerance)
+    __obj.asInstanceOf[Anon_Tolerance]
+  }
+}
+

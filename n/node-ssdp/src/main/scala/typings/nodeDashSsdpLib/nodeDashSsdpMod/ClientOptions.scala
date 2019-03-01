@@ -17,3 +17,32 @@ trait ClientOptions extends SsdpOptions {
   var reuseAddr: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    customLogger: js.Function2[/* format */ java.lang.String, /* repeated */ js.Any, scala.Unit] = null,
+    description: java.lang.String = null,
+    explicitSocketBind: js.UndefOr[scala.Boolean] = js.undefined,
+    headers: SsdpHeaders = null,
+    interfaces: js.Array[java.lang.String] = null,
+    reuseAddr: js.UndefOr[scala.Boolean] = js.undefined,
+    ssdpIp: java.lang.String = null,
+    ssdpPort: scala.Int | scala.Double = null,
+    ssdpSig: java.lang.String = null,
+    ssdpTtl: scala.Int | scala.Double = null
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customLogger != null) __obj.updateDynamic("customLogger")(customLogger)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(explicitSocketBind)) __obj.updateDynamic("explicitSocketBind")(explicitSocketBind)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces)
+    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr)
+    if (ssdpIp != null) __obj.updateDynamic("ssdpIp")(ssdpIp)
+    if (ssdpPort != null) __obj.updateDynamic("ssdpPort")(ssdpPort.asInstanceOf[js.Any])
+    if (ssdpSig != null) __obj.updateDynamic("ssdpSig")(ssdpSig)
+    if (ssdpTtl != null) __obj.updateDynamic("ssdpTtl")(ssdpTtl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

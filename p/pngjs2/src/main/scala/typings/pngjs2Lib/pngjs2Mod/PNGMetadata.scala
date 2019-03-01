@@ -14,3 +14,24 @@ trait PNGMetadata extends js.Object {
   var width: scala.Double
 }
 
+object PNGMetadata {
+  @scala.inline
+  def apply(
+    alpha: scala.Boolean,
+    color: scala.Boolean,
+    height: scala.Double,
+    interlace: scala.Boolean,
+    palette: scala.Boolean,
+    width: scala.Double
+  ): PNGMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alpha")(alpha)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("interlace")(interlace)
+    __obj.updateDynamic("palette")(palette)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[PNGMetadata]
+  }
+}
+

@@ -23,3 +23,18 @@ trait LightBoxOptions extends js.Object {
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LightBoxOptions {
+  @scala.inline
+  def apply(
+    duration: scala.Int | scala.Double = null,
+    group: java.lang.String = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined
+  ): LightBoxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    __obj.asInstanceOf[LightBoxOptions]
+  }
+}
+

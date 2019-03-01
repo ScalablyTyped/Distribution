@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a library of quality improvement components
   */
-trait Library extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Library extends DomainResource {
   /**
     * Contains extended information for property 'approvalDate'.
     */
@@ -169,5 +170,119 @@ trait Library extends DomainResource {
     * Business version of the library
     */
   var version: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object Library {
+  @scala.inline
+  def apply(
+    status: code,
+    `type`: CodeableConcept,
+    _approvalDate: Element = null,
+    _copyright: Element = null,
+    _date: Element = null,
+    _description: Element = null,
+    _experimental: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _lastReviewDate: Element = null,
+    _name: Element = null,
+    _publisher: Element = null,
+    _purpose: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _title: Element = null,
+    _url: Element = null,
+    _usage: Element = null,
+    _version: Element = null,
+    approvalDate: date = null,
+    contact: js.Array[ContactDetail] = null,
+    contained: js.Array[Resource] = null,
+    content: js.Array[Attachment] = null,
+    contributor: js.Array[Contributor] = null,
+    copyright: markdown = null,
+    dataRequirement: js.Array[DataRequirement] = null,
+    date: dateTime = null,
+    description: markdown = null,
+    effectivePeriod: Period = null,
+    experimental: js.UndefOr[scala.Boolean] = js.undefined,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    jurisdiction: js.Array[CodeableConcept] = null,
+    language: code = null,
+    lastReviewDate: date = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    name: java.lang.String = null,
+    parameter: js.Array[ParameterDefinition] = null,
+    publisher: java.lang.String = null,
+    purpose: markdown = null,
+    relatedArtifact: js.Array[RelatedArtifact] = null,
+    resourceType: code = null,
+    text: Narrative = null,
+    title: java.lang.String = null,
+    topic: js.Array[CodeableConcept] = null,
+    url: uri = null,
+    usage: java.lang.String = null,
+    useContext: js.Array[UsageContext] = null,
+    version: java.lang.String = null
+  ): Library = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("status")(status)
+    if (_approvalDate != null) __obj.updateDynamic("_approvalDate")(_approvalDate)
+    if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_lastReviewDate != null) __obj.updateDynamic("_lastReviewDate")(_lastReviewDate)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher)
+    if (_purpose != null) __obj.updateDynamic("_purpose")(_purpose)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_title != null) __obj.updateDynamic("_title")(_title)
+    if (_url != null) __obj.updateDynamic("_url")(_url)
+    if (_usage != null) __obj.updateDynamic("_usage")(_usage)
+    if (_version != null) __obj.updateDynamic("_version")(_version)
+    if (approvalDate != null) __obj.updateDynamic("approvalDate")(approvalDate)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (contributor != null) __obj.updateDynamic("contributor")(contributor)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (dataRequirement != null) __obj.updateDynamic("dataRequirement")(dataRequirement)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (effectivePeriod != null) __obj.updateDynamic("effectivePeriod")(effectivePeriod)
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (lastReviewDate != null) __obj.updateDynamic("lastReviewDate")(lastReviewDate)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (relatedArtifact != null) __obj.updateDynamic("relatedArtifact")(relatedArtifact)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (topic != null) __obj.updateDynamic("topic")(topic)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (usage != null) __obj.updateDynamic("usage")(usage)
+    if (useContext != null) __obj.updateDynamic("useContext")(useContext)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Library]
+  }
 }
 

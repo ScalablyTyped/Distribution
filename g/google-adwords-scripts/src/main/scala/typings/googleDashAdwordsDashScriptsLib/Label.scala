@@ -21,3 +21,38 @@ trait Label extends AdWordsEntity {
   def setName(name: java.lang.String): scala.Unit
 }
 
+object Label {
+  @scala.inline
+  def apply(
+    adGroups: js.Function0[AdWordsSelector[AdGroup]],
+    ads: js.Function0[AdWordsSelector[Ad]],
+    campaigns: js.Function0[AdWordsSelector[Campaign]],
+    getColor: js.Function0[java.lang.String],
+    getDescription: js.Function0[java.lang.String],
+    getId: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    keywords: js.Function0[AdWordsSelector[Keyword]],
+    remove: js.Function0[scala.Unit],
+    setColor: js.Function1[java.lang.String, scala.Unit],
+    setDescription: js.Function1[java.lang.String, scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    getEntityType: js.Function0[java.lang.String] = null
+  ): Label = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adGroups")(adGroups)
+    __obj.updateDynamic("ads")(ads)
+    __obj.updateDynamic("campaigns")(campaigns)
+    __obj.updateDynamic("getColor")(getColor)
+    __obj.updateDynamic("getDescription")(getDescription)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("keywords")(keywords)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("setColor")(setColor)
+    __obj.updateDynamic("setDescription")(setDescription)
+    __obj.updateDynamic("setName")(setName)
+    if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
+    __obj.asInstanceOf[Label]
+  }
+}
+

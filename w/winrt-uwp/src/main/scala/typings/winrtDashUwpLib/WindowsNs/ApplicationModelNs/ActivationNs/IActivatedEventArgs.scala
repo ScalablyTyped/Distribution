@@ -15,3 +15,18 @@ trait IActivatedEventArgs extends js.Object {
   var splashScreen: SplashScreen
 }
 
+object IActivatedEventArgs {
+  @scala.inline
+  def apply(
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen
+  ): IActivatedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
+    __obj.updateDynamic("splashScreen")(splashScreen)
+    __obj.asInstanceOf[IActivatedEventArgs]
+  }
+}
+

@@ -10,3 +10,16 @@ trait ReducerMapMeta[State, Payload, Meta]
       (ReducerMeta[State, Payload, Meta]) | (ReducerNextThrowMeta[State, Payload, Meta])
     ]
 
+object ReducerMapMeta {
+  @scala.inline
+  def apply[State, Payload, Meta](
+    StringDictionary: /* actionType */ org.scalablytyped.runtime.StringDictionary[
+      (ReducerMeta[State, Payload, Meta]) | (ReducerNextThrowMeta[State, Payload, Meta])
+    ] = null
+  ): ReducerMapMeta[State, Payload, Meta] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ReducerMapMeta[State, Payload, Meta]]
+  }
+}
+

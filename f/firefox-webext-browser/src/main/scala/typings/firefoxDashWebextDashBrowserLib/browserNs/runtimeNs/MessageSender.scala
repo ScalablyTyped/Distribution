@@ -33,3 +33,22 @@ trait MessageSender extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MessageSender {
+  @scala.inline
+  def apply(
+    frameId: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    tab: firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab = null,
+    tlsChannelId: java.lang.String = null,
+    url: java.lang.String = null
+  ): MessageSender = {
+    val __obj = js.Dynamic.literal()
+    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (tab != null) __obj.updateDynamic("tab")(tab)
+    if (tlsChannelId != null) __obj.updateDynamic("tlsChannelId")(tlsChannelId)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[MessageSender]
+  }
+}
+

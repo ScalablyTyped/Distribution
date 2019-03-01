@@ -29,3 +29,42 @@ trait SinksResource extends js.Object {
   def update(request: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp): gapiDotClientLib.gapiNs.clientNs.Request[LogSink]
 }
 
+object SinksResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogSink]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogSink]
+    ],
+    list: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListSinksResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogSink]
+    ],
+    update: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogSink]
+    ]
+  ): SinksResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[SinksResource]
+  }
+}
+

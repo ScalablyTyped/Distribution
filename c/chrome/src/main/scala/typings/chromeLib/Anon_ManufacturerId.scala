@@ -20,3 +20,18 @@ trait Anon_ManufacturerId extends js.Object {
   var yearOfManufacture: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ManufacturerId {
+  @scala.inline
+  def apply(
+    manufacturerId: java.lang.String,
+    productId: java.lang.String,
+    yearOfManufacture: java.lang.String = null
+  ): Anon_ManufacturerId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("manufacturerId")(manufacturerId)
+    __obj.updateDynamic("productId")(productId)
+    if (yearOfManufacture != null) __obj.updateDynamic("yearOfManufacture")(yearOfManufacture)
+    __obj.asInstanceOf[Anon_ManufacturerId]
+  }
+}
+

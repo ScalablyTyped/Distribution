@@ -29,3 +29,26 @@ trait ContextClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContextClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    requestType: java.lang.String = null,
+    selectedOption: java.lang.String = null,
+    selectedValue: java.lang.String = null,
+    targetContent: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ContextClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (selectedOption != null) __obj.updateDynamic("selectedOption")(selectedOption)
+    if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue)
+    if (targetContent != null) __obj.updateDynamic("targetContent")(targetContent)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ContextClickEventArgs]
+  }
+}
+

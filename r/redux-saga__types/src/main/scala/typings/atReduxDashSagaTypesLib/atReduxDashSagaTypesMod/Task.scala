@@ -35,3 +35,26 @@ trait Task extends js.Object {
   def toPromise[T](): js.Promise[T]
 }
 
+object Task {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[scala.Unit],
+    error: js.Function0[js.UndefOr[_]],
+    isCancelled: js.Function0[scala.Boolean],
+    isRunning: js.Function0[scala.Boolean],
+    result: js.Function0[js.UndefOr[js.Any]],
+    setContext: js.Function1[stdLib.Partial[js.Any], scala.Unit],
+    toPromise: js.Function0[js.Promise[js.Any]]
+  ): Task = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("isCancelled")(isCancelled)
+    __obj.updateDynamic("isRunning")(isRunning)
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("setContext")(setContext)
+    __obj.updateDynamic("toPromise")(toPromise)
+    __obj.asInstanceOf[Task]
+  }
+}
+

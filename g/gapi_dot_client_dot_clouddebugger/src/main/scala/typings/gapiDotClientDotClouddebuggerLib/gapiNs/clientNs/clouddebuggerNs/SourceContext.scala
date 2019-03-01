@@ -16,3 +16,20 @@ trait SourceContext extends js.Object {
   var git: js.UndefOr[GitSourceContext] = js.undefined
 }
 
+object SourceContext {
+  @scala.inline
+  def apply(
+    cloudRepo: CloudRepoSourceContext = null,
+    cloudWorkspace: CloudWorkspaceSourceContext = null,
+    gerrit: GerritSourceContext = null,
+    git: GitSourceContext = null
+  ): SourceContext = {
+    val __obj = js.Dynamic.literal()
+    if (cloudRepo != null) __obj.updateDynamic("cloudRepo")(cloudRepo)
+    if (cloudWorkspace != null) __obj.updateDynamic("cloudWorkspace")(cloudWorkspace)
+    if (gerrit != null) __obj.updateDynamic("gerrit")(gerrit)
+    if (git != null) __obj.updateDynamic("git")(git)
+    __obj.asInstanceOf[SourceContext]
+  }
+}
+

@@ -11,3 +11,14 @@ trait Anon_AverageItemLength extends js.Object {
   var index: scala.Double
 }
 
+object Anon_AverageItemLength {
+  @scala.inline
+  def apply(averageItemLength: scala.Double, highestMeasuredFrameIndex: scala.Double, index: scala.Double): Anon_AverageItemLength = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("averageItemLength")(averageItemLength)
+    __obj.updateDynamic("highestMeasuredFrameIndex")(highestMeasuredFrameIndex)
+    __obj.updateDynamic("index")(index)
+    __obj.asInstanceOf[Anon_AverageItemLength]
+  }
+}
+

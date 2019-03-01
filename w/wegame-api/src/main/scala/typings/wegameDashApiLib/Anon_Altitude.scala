@@ -21,3 +21,22 @@ trait Anon_Altitude extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Altitude {
+  @scala.inline
+  def apply(
+    altitude: js.UndefOr[scala.Boolean] = js.undefined,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    success: js.Function1[/* res */ Anon_Accuracy, scala.Unit] = null,
+    `type`: wegameDashApiLib.wegameDashApiLibStrings.wgs84 | wegameDashApiLib.wegameDashApiLibStrings.gcj02 = null
+  ): Anon_Altitude = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Altitude]
+  }
+}
+

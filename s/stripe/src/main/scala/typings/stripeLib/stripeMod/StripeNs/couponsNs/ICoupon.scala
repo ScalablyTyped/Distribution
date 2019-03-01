@@ -58,3 +58,39 @@ trait ICoupon
   var valid: scala.Boolean
 }
 
+object ICoupon {
+  @scala.inline
+  def apply(
+    amount_off: scala.Double,
+    created: scala.Double,
+    currency: java.lang.String,
+    duration: stripeLib.stripeLibStrings.forever | stripeLib.stripeLibStrings.once | stripeLib.stripeLibStrings.repeating,
+    duration_in_months: scala.Double,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    max_redemptions: scala.Double,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.coupon,
+    percent_off: scala.Double,
+    redeem_by: scala.Double,
+    times_redeemed: scala.Double,
+    valid: scala.Boolean
+  ): ICoupon = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("amount_off")(amount_off)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    __obj.updateDynamic("duration_in_months")(duration_in_months)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("max_redemptions")(max_redemptions)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("percent_off")(percent_off)
+    __obj.updateDynamic("redeem_by")(redeem_by)
+    __obj.updateDynamic("times_redeemed")(times_redeemed)
+    __obj.updateDynamic("valid")(valid)
+    __obj.asInstanceOf[ICoupon]
+  }
+}
+

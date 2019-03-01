@@ -12,3 +12,12 @@ trait SetOptions extends js.Object {
   var force: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SetOptions {
+  @scala.inline
+  def apply(force: js.UndefOr[scala.Boolean] = js.undefined): SetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    __obj.asInstanceOf[SetOptions]
+  }
+}
+

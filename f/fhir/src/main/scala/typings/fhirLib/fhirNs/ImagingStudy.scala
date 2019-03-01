@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A set of images produced in single study (one or more series of references images)
   */
-trait ImagingStudy extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ImagingStudy extends DomainResource {
   /**
     * Contains extended information for property 'availability'.
     */
@@ -109,5 +110,90 @@ trait ImagingStudy extends DomainResource {
     * Formal DICOM identifier for the study
     */
   var uid: oid
+}
+
+object ImagingStudy {
+  @scala.inline
+  def apply(
+    patient: Reference,
+    uid: oid,
+    _availability: Element = null,
+    _description: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _numberOfInstances: Element = null,
+    _numberOfSeries: Element = null,
+    _resourceType: Element = null,
+    _started: Element = null,
+    _uid: Element = null,
+    accession: Identifier = null,
+    availability: code = null,
+    basedOn: js.Array[Reference] = null,
+    contained: js.Array[Resource] = null,
+    context: Reference = null,
+    description: java.lang.String = null,
+    endpoint: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    interpreter: js.Array[Reference] = null,
+    language: code = null,
+    meta: Meta = null,
+    modalityList: js.Array[Coding] = null,
+    modifierExtension: js.Array[Extension] = null,
+    numberOfInstances: js.UndefOr[unsignedInt] = js.undefined,
+    numberOfSeries: js.UndefOr[unsignedInt] = js.undefined,
+    procedureCode: js.Array[CodeableConcept] = null,
+    procedureReference: js.Array[Reference] = null,
+    reason: CodeableConcept = null,
+    referrer: Reference = null,
+    resourceType: code = null,
+    series: js.Array[ImagingStudySeries] = null,
+    started: dateTime = null,
+    text: Narrative = null
+  ): ImagingStudy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("patient")(patient)
+    __obj.updateDynamic("uid")(uid)
+    if (_availability != null) __obj.updateDynamic("_availability")(_availability)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_numberOfInstances != null) __obj.updateDynamic("_numberOfInstances")(_numberOfInstances)
+    if (_numberOfSeries != null) __obj.updateDynamic("_numberOfSeries")(_numberOfSeries)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_started != null) __obj.updateDynamic("_started")(_started)
+    if (_uid != null) __obj.updateDynamic("_uid")(_uid)
+    if (accession != null) __obj.updateDynamic("accession")(accession)
+    if (availability != null) __obj.updateDynamic("availability")(availability)
+    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modalityList != null) __obj.updateDynamic("modalityList")(modalityList)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (!js.isUndefined(numberOfInstances)) __obj.updateDynamic("numberOfInstances")(numberOfInstances)
+    if (!js.isUndefined(numberOfSeries)) __obj.updateDynamic("numberOfSeries")(numberOfSeries)
+    if (procedureCode != null) __obj.updateDynamic("procedureCode")(procedureCode)
+    if (procedureReference != null) __obj.updateDynamic("procedureReference")(procedureReference)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (started != null) __obj.updateDynamic("started")(started)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ImagingStudy]
+  }
 }
 

@@ -16,298 +16,672 @@ object validatorLibStrings {
   sealed trait `5` extends js.Object
   
   @js.native
-  sealed trait AT extends js.Object
+  sealed trait AT
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait AU extends js.Object
+  sealed trait AU
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait BE extends js.Object
+  sealed trait BE
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait BG extends js.Object
+  sealed trait BG
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait CA extends js.Object
+  sealed trait CA
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait CH extends js.Object
+  sealed trait CH
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait CZ extends js.Object
+  sealed trait CZ
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait DE extends js.Object
+  sealed trait DE
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait DK extends js.Object
+  sealed trait DK
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait DZ extends js.Object
+  sealed trait DZ
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait ES extends js.Object
+  sealed trait ES
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait FI extends js.Object
+  sealed trait FI
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait FR extends js.Object
+  sealed trait FR
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait GB extends js.Object
+  sealed trait GB
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait GR extends js.Object
+  sealed trait GR
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait IL extends js.Object
+  sealed trait IL
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait IN extends js.Object
+  sealed trait IN
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait IS extends js.Object
+  sealed trait IS
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait IT extends js.Object
+  sealed trait IT
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait JP extends js.Object
+  sealed trait JP
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait KE extends js.Object
+  sealed trait KE
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait LI extends js.Object
+  sealed trait LI
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait MX extends js.Object
+  sealed trait MX
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait NL extends js.Object
+  sealed trait NL
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait NO extends js.Object
+  sealed trait NO
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait PL extends js.Object
+  sealed trait PL
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait PT extends js.Object
+  sealed trait PT
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait RO extends js.Object
+  sealed trait RO
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait RU extends js.Object
+  sealed trait RU
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait SA extends js.Object
+  sealed trait SA
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait SE extends js.Object
+  sealed trait SE
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait TW extends js.Object
+  sealed trait TW
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait US extends js.Object
+  sealed trait US
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait ZA extends js.Object
+  sealed trait ZA
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait ZM extends js.Object
+  sealed trait ZM
+    extends validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
   sealed trait all extends js.Object
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
+       with validatorLib.ValidatorJSNs.PostalCodeLocale
   
   @js.native
-  sealed trait ar extends js.Object
+  sealed trait ar
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-AE` extends js.Object
+  sealed trait `ar-AE`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `ar-BH` extends js.Object
+  sealed trait `ar-BH`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-DZ` extends js.Object
+  sealed trait `ar-DZ`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `ar-EG` extends js.Object
+  sealed trait `ar-EG`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `ar-IQ` extends js.Object
+  sealed trait `ar-IQ`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-JO` extends js.Object
+  sealed trait `ar-JO`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `ar-KW` extends js.Object
+  sealed trait `ar-KW`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-LB` extends js.Object
+  sealed trait `ar-LB`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-LY` extends js.Object
+  sealed trait `ar-LY`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-MA` extends js.Object
+  sealed trait `ar-MA`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-QA` extends js.Object
+  sealed trait `ar-QA`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-QM` extends js.Object
+  sealed trait `ar-QM`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-SA` extends js.Object
+  sealed trait `ar-SA`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `ar-SD` extends js.Object
+  sealed trait `ar-SD`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-SY` extends js.Object
+  sealed trait `ar-SY`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `ar-TN` extends js.Object
+  sealed trait `ar-TN`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `ar-YE` extends js.Object
+  sealed trait `ar-YE`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
   
   @js.native
-  sealed trait `bg-BG` extends js.Object
+  sealed trait `be-BY`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait crc32 extends js.Object
+  sealed trait `bg-BG`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait crc32b extends js.Object
+  sealed trait crc32
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
   
   @js.native
-  sealed trait `cs-CZ` extends js.Object
+  sealed trait crc32b
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
   
   @js.native
-  sealed trait `da-DK` extends js.Object
+  sealed trait `cs-CZ`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `de-DE` extends js.Object
+  sealed trait `da-DK`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `el-GR` extends js.Object
+  sealed trait `de-DE`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-AU` extends js.Object
+  sealed trait `el-GR`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-GB` extends js.Object
+  sealed trait `en-AU`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-HK` extends js.Object
+  sealed trait `en-CA`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-IN` extends js.Object
+  sealed trait `en-GB`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-NZ` extends js.Object
+  sealed trait `en-HK`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-US` extends js.Object
+  sealed trait `en-IN`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-ZA` extends js.Object
+  sealed trait `en-KE`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `en-ZM` extends js.Object
+  sealed trait `en-NG`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `es-ES` extends js.Object
+  sealed trait `en-NZ`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `fr-FR` extends js.Object
+  sealed trait `en-PK`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `hu-HU` extends js.Object
+  sealed trait `en-RW`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `it-IT` extends js.Object
+  sealed trait `en-SG`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait md4 extends js.Object
+  sealed trait `en-TZ`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait md5 extends js.Object
+  sealed trait `en-UG`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `nb-NO` extends js.Object
+  sealed trait `en-US`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `nl-NL` extends js.Object
+  sealed trait `en-ZA`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `nn-NO` extends js.Object
+  sealed trait `en-ZM`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `pl-PL` extends js.Object
+  sealed trait `es-ES`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `pt-BR` extends js.Object
+  sealed trait `fa-IR`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `pt-PT` extends js.Object
+  sealed trait `fi-FI`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait ripemd128 extends js.Object
+  sealed trait `fo-FO`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait ripemd160 extends js.Object
+  sealed trait `fr-FR`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `ru-RU` extends js.Object
+  sealed trait `he-IL`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait `hu-HU`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait `id-ID`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait sha384 extends js.Object
+  sealed trait `it-IT`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait sha512 extends js.Object
+  sealed trait `ja-JP`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `sk-SK` extends js.Object
+  sealed trait `kk-KZ`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `sr-RS` extends js.Object
+  sealed trait `kl-GL`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `sr-RS@latin` extends js.Object
+  sealed trait `ko-KR`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `sv-SE` extends js.Object
+  sealed trait `lt-LT`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait tiger128 extends js.Object
+  sealed trait md4
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
   
   @js.native
-  sealed trait tiger160 extends js.Object
+  sealed trait md5
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
   
   @js.native
-  sealed trait tiger192 extends js.Object
+  sealed trait `ms-MY`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `tr-TR` extends js.Object
+  sealed trait `nb-NO`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @js.native
-  sealed trait `uk-UA` extends js.Object
+  sealed trait `nl-NL`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+  
+  @js.native
+  sealed trait `nn-NO`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `pl-PL`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `pt-BR`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+  
+  @js.native
+  sealed trait `pt-PT`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait ripemd128
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
+  
+  @js.native
+  sealed trait ripemd160
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
+  
+  @js.native
+  sealed trait `ro-RO`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `ru-RU`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait sha1
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
+  
+  @js.native
+  sealed trait sha256
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
+  
+  @js.native
+  sealed trait sha384
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
+  
+  @js.native
+  sealed trait sha512
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
+  
+  @js.native
+  sealed trait `sk-SK`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `sr-RS`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `sr-RS@latin`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+  
+  @js.native
+  sealed trait `sv-SE`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+  
+  @js.native
+  sealed trait `th-TH`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait tiger128
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
+  
+  @js.native
+  sealed trait tiger160
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
+  
+  @js.native
+  sealed trait tiger192
+    extends validatorLib.ValidatorJSNs.HashAlgorithm
+  
+  @js.native
+  sealed trait `tr-TR`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `uk-UA`
+    extends validatorLib.ValidatorJSNs.AlphaLocale
+       with validatorLib.ValidatorJSNs.AlphanumericLocale
+       with validatorLib.ValidatorJSNs.DecimalLocale
+       with validatorLib.ValidatorJSNs.FloatLocale
+       with validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `vi-VN`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `zh-CN`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `zh-HK`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
+  
+  @js.native
+  sealed trait `zh-TW`
+    extends validatorLib.ValidatorJSNs.MobilePhoneLocale
   
   @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
@@ -426,6 +800,8 @@ object validatorLibStrings {
   @scala.inline
   def `ar-YE`: `ar-YE` = "ar-YE".asInstanceOf[`ar-YE`]
   @scala.inline
+  def `be-BY`: `be-BY` = "be-BY".asInstanceOf[`be-BY`]
+  @scala.inline
   def `bg-BG`: `bg-BG` = "bg-BG".asInstanceOf[`bg-BG`]
   @scala.inline
   def crc32: crc32 = "crc32".asInstanceOf[crc32]
@@ -442,13 +818,29 @@ object validatorLibStrings {
   @scala.inline
   def `en-AU`: `en-AU` = "en-AU".asInstanceOf[`en-AU`]
   @scala.inline
+  def `en-CA`: `en-CA` = "en-CA".asInstanceOf[`en-CA`]
+  @scala.inline
   def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
   @scala.inline
   def `en-HK`: `en-HK` = "en-HK".asInstanceOf[`en-HK`]
   @scala.inline
   def `en-IN`: `en-IN` = "en-IN".asInstanceOf[`en-IN`]
   @scala.inline
+  def `en-KE`: `en-KE` = "en-KE".asInstanceOf[`en-KE`]
+  @scala.inline
+  def `en-NG`: `en-NG` = "en-NG".asInstanceOf[`en-NG`]
+  @scala.inline
   def `en-NZ`: `en-NZ` = "en-NZ".asInstanceOf[`en-NZ`]
+  @scala.inline
+  def `en-PK`: `en-PK` = "en-PK".asInstanceOf[`en-PK`]
+  @scala.inline
+  def `en-RW`: `en-RW` = "en-RW".asInstanceOf[`en-RW`]
+  @scala.inline
+  def `en-SG`: `en-SG` = "en-SG".asInstanceOf[`en-SG`]
+  @scala.inline
+  def `en-TZ`: `en-TZ` = "en-TZ".asInstanceOf[`en-TZ`]
+  @scala.inline
+  def `en-UG`: `en-UG` = "en-UG".asInstanceOf[`en-UG`]
   @scala.inline
   def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   @scala.inline
@@ -458,15 +850,37 @@ object validatorLibStrings {
   @scala.inline
   def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
   @scala.inline
+  def `fa-IR`: `fa-IR` = "fa-IR".asInstanceOf[`fa-IR`]
+  @scala.inline
+  def `fi-FI`: `fi-FI` = "fi-FI".asInstanceOf[`fi-FI`]
+  @scala.inline
+  def `fo-FO`: `fo-FO` = "fo-FO".asInstanceOf[`fo-FO`]
+  @scala.inline
   def `fr-FR`: `fr-FR` = "fr-FR".asInstanceOf[`fr-FR`]
+  @scala.inline
+  def `he-IL`: `he-IL` = "he-IL".asInstanceOf[`he-IL`]
   @scala.inline
   def `hu-HU`: `hu-HU` = "hu-HU".asInstanceOf[`hu-HU`]
   @scala.inline
+  def `id-ID`: `id-ID` = "id-ID".asInstanceOf[`id-ID`]
+  @scala.inline
   def `it-IT`: `it-IT` = "it-IT".asInstanceOf[`it-IT`]
+  @scala.inline
+  def `ja-JP`: `ja-JP` = "ja-JP".asInstanceOf[`ja-JP`]
+  @scala.inline
+  def `kk-KZ`: `kk-KZ` = "kk-KZ".asInstanceOf[`kk-KZ`]
+  @scala.inline
+  def `kl-GL`: `kl-GL` = "kl-GL".asInstanceOf[`kl-GL`]
+  @scala.inline
+  def `ko-KR`: `ko-KR` = "ko-KR".asInstanceOf[`ko-KR`]
+  @scala.inline
+  def `lt-LT`: `lt-LT` = "lt-LT".asInstanceOf[`lt-LT`]
   @scala.inline
   def md4: md4 = "md4".asInstanceOf[md4]
   @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
+  @scala.inline
+  def `ms-MY`: `ms-MY` = "ms-MY".asInstanceOf[`ms-MY`]
   @scala.inline
   def `nb-NO`: `nb-NO` = "nb-NO".asInstanceOf[`nb-NO`]
   @scala.inline
@@ -483,6 +897,8 @@ object validatorLibStrings {
   def ripemd128: ripemd128 = "ripemd128".asInstanceOf[ripemd128]
   @scala.inline
   def ripemd160: ripemd160 = "ripemd160".asInstanceOf[ripemd160]
+  @scala.inline
+  def `ro-RO`: `ro-RO` = "ro-RO".asInstanceOf[`ro-RO`]
   @scala.inline
   def `ru-RU`: `ru-RU` = "ru-RU".asInstanceOf[`ru-RU`]
   @scala.inline
@@ -502,6 +918,8 @@ object validatorLibStrings {
   @scala.inline
   def `sv-SE`: `sv-SE` = "sv-SE".asInstanceOf[`sv-SE`]
   @scala.inline
+  def `th-TH`: `th-TH` = "th-TH".asInstanceOf[`th-TH`]
+  @scala.inline
   def tiger128: tiger128 = "tiger128".asInstanceOf[tiger128]
   @scala.inline
   def tiger160: tiger160 = "tiger160".asInstanceOf[tiger160]
@@ -511,5 +929,13 @@ object validatorLibStrings {
   def `tr-TR`: `tr-TR` = "tr-TR".asInstanceOf[`tr-TR`]
   @scala.inline
   def `uk-UA`: `uk-UA` = "uk-UA".asInstanceOf[`uk-UA`]
+  @scala.inline
+  def `vi-VN`: `vi-VN` = "vi-VN".asInstanceOf[`vi-VN`]
+  @scala.inline
+  def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
+  @scala.inline
+  def `zh-HK`: `zh-HK` = "zh-HK".asInstanceOf[`zh-HK`]
+  @scala.inline
+  def `zh-TW`: `zh-TW` = "zh-TW".asInstanceOf[`zh-TW`]
 }
 

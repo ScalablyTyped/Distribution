@@ -18,3 +18,37 @@ trait AccountUserProfilesResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[AccountUserProfile]
 }
 
+object AccountUserProfilesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountUserProfile]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountUserProfile]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_ActiveAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountUserProfilesListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountUserProfile]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountUserProfile]
+    ]
+  ): AccountUserProfilesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[AccountUserProfilesResource]
+  }
+}
+

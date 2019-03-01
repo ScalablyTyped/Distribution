@@ -20,3 +20,14 @@ trait ReviewsResult extends js.Object {
   var totalReviewCount: scala.Double
 }
 
+object ReviewsResult {
+  @scala.inline
+  def apply(hasMoreReviews: scala.Boolean, reviews: js.Array[Review], totalReviewCount: scala.Double): ReviewsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hasMoreReviews")(hasMoreReviews)
+    __obj.updateDynamic("reviews")(reviews)
+    __obj.updateDynamic("totalReviewCount")(totalReviewCount)
+    __obj.asInstanceOf[ReviewsResult]
+  }
+}
+

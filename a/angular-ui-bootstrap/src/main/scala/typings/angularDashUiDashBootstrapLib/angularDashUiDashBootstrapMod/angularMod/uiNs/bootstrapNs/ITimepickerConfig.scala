@@ -74,3 +74,34 @@ trait ITimepickerConfig extends js.Object {
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITimepickerConfig {
+  @scala.inline
+  def apply(
+    arrowkeys: js.UndefOr[scala.Boolean] = js.undefined,
+    hourStep: scala.Int | scala.Double = null,
+    meridians: js.Array[java.lang.String] = null,
+    minuteStep: scala.Int | scala.Double = null,
+    mousewheel: js.UndefOr[scala.Boolean] = js.undefined,
+    readonlyInput: js.UndefOr[scala.Boolean] = js.undefined,
+    secondStep: scala.Int | scala.Double = null,
+    showMeridian: js.UndefOr[scala.Boolean] = js.undefined,
+    showSeconds: js.UndefOr[scala.Boolean] = js.undefined,
+    showSpinners: js.UndefOr[scala.Boolean] = js.undefined,
+    templateUrl: java.lang.String = null
+  ): ITimepickerConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(arrowkeys)) __obj.updateDynamic("arrowkeys")(arrowkeys)
+    if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
+    if (meridians != null) __obj.updateDynamic("meridians")(meridians)
+    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel)
+    if (!js.isUndefined(readonlyInput)) __obj.updateDynamic("readonlyInput")(readonlyInput)
+    if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian)
+    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds)
+    if (!js.isUndefined(showSpinners)) __obj.updateDynamic("showSpinners")(showSpinners)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    __obj.asInstanceOf[ITimepickerConfig]
+  }
+}
+

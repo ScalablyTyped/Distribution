@@ -30,3 +30,14 @@ trait StyleDefinition extends js.Object {
   var html: java.lang.String
 }
 
+object StyleDefinition {
+  @scala.inline
+  def apply(html: java.lang.String, classes: notifyLib.Anon_Base = null, css: java.lang.String = null): StyleDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("html")(html)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (css != null) __obj.updateDynamic("css")(css)
+    __obj.asInstanceOf[StyleDefinition]
+  }
+}
+

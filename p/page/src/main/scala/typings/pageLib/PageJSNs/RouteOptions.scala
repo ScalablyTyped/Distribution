@@ -18,3 +18,16 @@ trait RouteOptions extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RouteOptions {
+  @scala.inline
+  def apply(
+    sensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined
+  ): RouteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[RouteOptions]
+  }
+}
+

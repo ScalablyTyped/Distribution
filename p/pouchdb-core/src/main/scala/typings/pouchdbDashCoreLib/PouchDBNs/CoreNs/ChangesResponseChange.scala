@@ -13,3 +13,22 @@ trait ChangesResponseChange[Content /* <: js.Object */] extends js.Object {
   var seq: scala.Double | java.lang.String
 }
 
+object ChangesResponseChange {
+  @scala.inline
+  def apply[Content /* <: js.Object */](
+    changes: js.Array[pouchdbDashCoreLib.Anon_Rev],
+    id: java.lang.String,
+    seq: scala.Double | java.lang.String,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    doc: ExistingDocument[Content with ChangesMeta] = null
+  ): ChangesResponseChange[Content] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("seq")(seq.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChangesResponseChange[Content]]
+  }
+}
+

@@ -146,3 +146,48 @@ trait ConditionalFormatUpdateData extends js.Object {
   var topBottomOrNullObject: js.UndefOr[TopBottomConditionalFormatUpdateData] = js.undefined
 }
 
+object ConditionalFormatUpdateData {
+  @scala.inline
+  def apply(
+    cellValue: CellValueConditionalFormatUpdateData = null,
+    cellValueOrNullObject: CellValueConditionalFormatUpdateData = null,
+    colorScale: ColorScaleConditionalFormatUpdateData = null,
+    colorScaleOrNullObject: ColorScaleConditionalFormatUpdateData = null,
+    custom: CustomConditionalFormatUpdateData = null,
+    customOrNullObject: CustomConditionalFormatUpdateData = null,
+    dataBar: DataBarConditionalFormatUpdateData = null,
+    dataBarOrNullObject: DataBarConditionalFormatUpdateData = null,
+    iconSet: IconSetConditionalFormatUpdateData = null,
+    iconSetOrNullObject: IconSetConditionalFormatUpdateData = null,
+    preset: PresetCriteriaConditionalFormatUpdateData = null,
+    presetOrNullObject: PresetCriteriaConditionalFormatUpdateData = null,
+    priority: scala.Int | scala.Double = null,
+    stopIfTrue: js.UndefOr[scala.Boolean] = js.undefined,
+    textComparison: TextConditionalFormatUpdateData = null,
+    textComparisonOrNullObject: TextConditionalFormatUpdateData = null,
+    topBottom: TopBottomConditionalFormatUpdateData = null,
+    topBottomOrNullObject: TopBottomConditionalFormatUpdateData = null
+  ): ConditionalFormatUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
+    if (cellValueOrNullObject != null) __obj.updateDynamic("cellValueOrNullObject")(cellValueOrNullObject)
+    if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale)
+    if (colorScaleOrNullObject != null) __obj.updateDynamic("colorScaleOrNullObject")(colorScaleOrNullObject)
+    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (customOrNullObject != null) __obj.updateDynamic("customOrNullObject")(customOrNullObject)
+    if (dataBar != null) __obj.updateDynamic("dataBar")(dataBar)
+    if (dataBarOrNullObject != null) __obj.updateDynamic("dataBarOrNullObject")(dataBarOrNullObject)
+    if (iconSet != null) __obj.updateDynamic("iconSet")(iconSet)
+    if (iconSetOrNullObject != null) __obj.updateDynamic("iconSetOrNullObject")(iconSetOrNullObject)
+    if (preset != null) __obj.updateDynamic("preset")(preset)
+    if (presetOrNullObject != null) __obj.updateDynamic("presetOrNullObject")(presetOrNullObject)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopIfTrue)) __obj.updateDynamic("stopIfTrue")(stopIfTrue)
+    if (textComparison != null) __obj.updateDynamic("textComparison")(textComparison)
+    if (textComparisonOrNullObject != null) __obj.updateDynamic("textComparisonOrNullObject")(textComparisonOrNullObject)
+    if (topBottom != null) __obj.updateDynamic("topBottom")(topBottom)
+    if (topBottomOrNullObject != null) __obj.updateDynamic("topBottomOrNullObject")(topBottomOrNullObject)
+    __obj.asInstanceOf[ConditionalFormatUpdateData]
+  }
+}
+

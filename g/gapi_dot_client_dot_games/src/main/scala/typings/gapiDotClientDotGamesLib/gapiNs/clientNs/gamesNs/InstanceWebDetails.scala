@@ -14,3 +14,18 @@ trait InstanceWebDetails extends js.Object {
   var preferred: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InstanceWebDetails {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    launchUrl: java.lang.String = null,
+    preferred: js.UndefOr[scala.Boolean] = js.undefined
+  ): InstanceWebDetails = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (launchUrl != null) __obj.updateDynamic("launchUrl")(launchUrl)
+    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred)
+    __obj.asInstanceOf[InstanceWebDetails]
+  }
+}
+

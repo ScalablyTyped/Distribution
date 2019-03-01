@@ -908,3 +908,315 @@ trait IgCategoryChart
   var yAxisTitleTopMargin: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgCategoryChart {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igCategoryChart
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    alignsGridLinesToPixels: js.UndefOr[scala.Boolean] = js.undefined,
+    animateSeriesWhenAxisRangeChanges: js.UndefOr[scala.Boolean] = js.undefined,
+    bottomMargin: scala.Int | scala.Double = null,
+    brushes: js.Any = null,
+    calloutStyleUpdating: CalloutStyleUpdatingEvent = null,
+    calloutStyleUpdatingEventEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    calloutsContentMemberPath: java.lang.String = null,
+    calloutsItemsSource: js.Any = null,
+    calloutsLabelMemberPath: java.lang.String = null,
+    calloutsVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    calloutsXMemberPath: java.lang.String = null,
+    calloutsYMemberPath: java.lang.String = null,
+    chartType: java.lang.String = null,
+    createWrappedTooltip: js.Any = null,
+    crosshairsAnnotationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    crosshairsDisplayMode: java.lang.String = null,
+    crosshairsSnapToData: js.UndefOr[scala.Boolean] = js.undefined,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    excludedProperties: js.Any = null,
+    finalValueAnnotationsVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    hideTooltip: HideTooltipEvent = null,
+    includedProperties: js.Any = null,
+    isCategoryHighlightingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isHorizontalZoomEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isItemHighlightingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isSeriesHighlightingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isTransitionInEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isVerticalZoomEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    itemsSource: js.Any = null,
+    leftMargin: scala.Int | scala.Double = null,
+    legend: js.Any = null,
+    markerBrushes: js.Any = null,
+    markerCollisionAvoidance: java.lang.String = null,
+    markerMaxCount: scala.Int | scala.Double = null,
+    markerOutlines: js.Any = null,
+    markerTypes: js.Any = null,
+    maxRecCount: scala.Int | scala.Double = null,
+    negativeBrushes: js.Any = null,
+    negativeOutlines: js.Any = null,
+    outlines: js.Any = null,
+    pixelScalingRatio: scala.Int | scala.Double = null,
+    propertyChanged: PropertyChangedEvent = null,
+    resolution: scala.Int | scala.Double = null,
+    responseDataKey: java.lang.String = null,
+    responseTotalRecCountKey: java.lang.String = null,
+    rightMargin: scala.Int | scala.Double = null,
+    seriesAdded: SeriesAddedEvent = null,
+    seriesPointerDown: SeriesPointerDownEvent = null,
+    seriesPointerEnter: SeriesPointerEnterEvent = null,
+    seriesPointerLeave: SeriesPointerLeaveEvent = null,
+    seriesPointerMove: SeriesPointerMoveEvent = null,
+    seriesPointerUp: SeriesPointerUpEvent = null,
+    seriesRemoved: SeriesRemovedEvent = null,
+    subtitle: java.lang.String = null,
+    subtitleAlignment: java.lang.String = null,
+    subtitleBottomMargin: scala.Int | scala.Double = null,
+    subtitleLeftMargin: scala.Int | scala.Double = null,
+    subtitleRightMargin: scala.Int | scala.Double = null,
+    subtitleTextColor: java.lang.String = null,
+    subtitleTextStyle: java.lang.String = null,
+    subtitleTopMargin: scala.Int | scala.Double = null,
+    thickness: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    titleAlignment: java.lang.String = null,
+    titleBottomMargin: scala.Int | scala.Double = null,
+    titleLeftMargin: scala.Int | scala.Double = null,
+    titleRightMargin: scala.Int | scala.Double = null,
+    titleTextColor: java.lang.String = null,
+    titleTextStyle: java.lang.String = null,
+    titleTopMargin: scala.Int | scala.Double = null,
+    toolTipType: java.lang.String = null,
+    tooltipTemplate: js.Any = null,
+    tooltipTemplates: js.Any = null,
+    topMargin: scala.Int | scala.Double = null,
+    transitionDuration: scala.Int | scala.Double = null,
+    transitionEasingFunction: js.Any = null,
+    transitionInDuration: scala.Int | scala.Double = null,
+    transitionInEasingFunction: js.Any = null,
+    transitionInMode: java.lang.String = null,
+    transitionInSpeedType: java.lang.String = null,
+    trendLineBrushes: js.Any = null,
+    trendLinePeriod: scala.Int | scala.Double = null,
+    trendLineThickness: scala.Int | scala.Double = null,
+    trendLineType: java.lang.String = null,
+    unknownValuePlotting: java.lang.String = null,
+    updateTooltip: UpdateTooltipEvent = null,
+    widget: js.Any = null,
+    width: scala.Int | scala.Double = null,
+    windowRect: js.Any = null,
+    xAxisExtent: scala.Int | scala.Double = null,
+    xAxisFormatLabel: js.Any = null,
+    xAxisGap: scala.Int | scala.Double = null,
+    xAxisInterval: scala.Int | scala.Double = null,
+    xAxisInverted: js.UndefOr[scala.Boolean] = js.undefined,
+    xAxisLabel: js.Any = null,
+    xAxisLabelAngle: scala.Int | scala.Double = null,
+    xAxisLabelBottomMargin: scala.Int | scala.Double = null,
+    xAxisLabelHorizontalAlignment: java.lang.String = null,
+    xAxisLabelLeftMargin: scala.Int | scala.Double = null,
+    xAxisLabelRightMargin: scala.Int | scala.Double = null,
+    xAxisLabelTextColor: java.lang.String = null,
+    xAxisLabelTextStyle: java.lang.String = null,
+    xAxisLabelTopMargin: scala.Int | scala.Double = null,
+    xAxisLabelVerticalAlignment: java.lang.String = null,
+    xAxisLabelVisibility: java.lang.String = null,
+    xAxisMajorStroke: java.lang.String = null,
+    xAxisMajorStrokeThickness: scala.Int | scala.Double = null,
+    xAxisMinorInterval: scala.Int | scala.Double = null,
+    xAxisMinorStroke: java.lang.String = null,
+    xAxisMinorStrokeThickness: scala.Int | scala.Double = null,
+    xAxisOverlap: scala.Int | scala.Double = null,
+    xAxisStrip: java.lang.String = null,
+    xAxisStroke: java.lang.String = null,
+    xAxisStrokeThickness: scala.Int | scala.Double = null,
+    xAxisTickLength: scala.Int | scala.Double = null,
+    xAxisTickStroke: java.lang.String = null,
+    xAxisTickStrokeThickness: scala.Int | scala.Double = null,
+    xAxisTitle: java.lang.String = null,
+    xAxisTitleAlignment: java.lang.String = null,
+    xAxisTitleAngle: scala.Int | scala.Double = null,
+    xAxisTitleBottomMargin: scala.Int | scala.Double = null,
+    xAxisTitleLeftMargin: scala.Int | scala.Double = null,
+    xAxisTitleMargin: scala.Int | scala.Double = null,
+    xAxisTitleRightMargin: scala.Int | scala.Double = null,
+    xAxisTitleTextColor: java.lang.String = null,
+    xAxisTitleTextStyle: java.lang.String = null,
+    xAxisTitleTopMargin: scala.Int | scala.Double = null,
+    yAxisAbbreviateLargeNumbers: js.UndefOr[scala.Boolean] = js.undefined,
+    yAxisExtent: scala.Int | scala.Double = null,
+    yAxisFormatLabel: js.Any = null,
+    yAxisInterval: scala.Int | scala.Double = null,
+    yAxisInverted: js.UndefOr[scala.Boolean] = js.undefined,
+    yAxisIsLogarithmic: js.UndefOr[scala.Boolean] = js.undefined,
+    yAxisLabel: js.Any = null,
+    yAxisLabelAngle: scala.Int | scala.Double = null,
+    yAxisLabelBottomMargin: scala.Int | scala.Double = null,
+    yAxisLabelHorizontalAlignment: java.lang.String = null,
+    yAxisLabelLeftMargin: scala.Int | scala.Double = null,
+    yAxisLabelLocation: java.lang.String = null,
+    yAxisLabelRightMargin: scala.Int | scala.Double = null,
+    yAxisLabelTextColor: java.lang.String = null,
+    yAxisLabelTextStyle: java.lang.String = null,
+    yAxisLabelTopMargin: scala.Int | scala.Double = null,
+    yAxisLabelVerticalAlignment: java.lang.String = null
+  ): IgCategoryChart = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(alignsGridLinesToPixels)) __obj.updateDynamic("alignsGridLinesToPixels")(alignsGridLinesToPixels)
+    if (!js.isUndefined(animateSeriesWhenAxisRangeChanges)) __obj.updateDynamic("animateSeriesWhenAxisRangeChanges")(animateSeriesWhenAxisRangeChanges)
+    if (bottomMargin != null) __obj.updateDynamic("bottomMargin")(bottomMargin.asInstanceOf[js.Any])
+    if (brushes != null) __obj.updateDynamic("brushes")(brushes)
+    if (calloutStyleUpdating != null) __obj.updateDynamic("calloutStyleUpdating")(calloutStyleUpdating)
+    if (!js.isUndefined(calloutStyleUpdatingEventEnabled)) __obj.updateDynamic("calloutStyleUpdatingEventEnabled")(calloutStyleUpdatingEventEnabled)
+    if (calloutsContentMemberPath != null) __obj.updateDynamic("calloutsContentMemberPath")(calloutsContentMemberPath)
+    if (calloutsItemsSource != null) __obj.updateDynamic("calloutsItemsSource")(calloutsItemsSource)
+    if (calloutsLabelMemberPath != null) __obj.updateDynamic("calloutsLabelMemberPath")(calloutsLabelMemberPath)
+    if (!js.isUndefined(calloutsVisible)) __obj.updateDynamic("calloutsVisible")(calloutsVisible)
+    if (calloutsXMemberPath != null) __obj.updateDynamic("calloutsXMemberPath")(calloutsXMemberPath)
+    if (calloutsYMemberPath != null) __obj.updateDynamic("calloutsYMemberPath")(calloutsYMemberPath)
+    if (chartType != null) __obj.updateDynamic("chartType")(chartType)
+    if (createWrappedTooltip != null) __obj.updateDynamic("createWrappedTooltip")(createWrappedTooltip)
+    if (!js.isUndefined(crosshairsAnnotationEnabled)) __obj.updateDynamic("crosshairsAnnotationEnabled")(crosshairsAnnotationEnabled)
+    if (crosshairsDisplayMode != null) __obj.updateDynamic("crosshairsDisplayMode")(crosshairsDisplayMode)
+    if (!js.isUndefined(crosshairsSnapToData)) __obj.updateDynamic("crosshairsSnapToData")(crosshairsSnapToData)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (excludedProperties != null) __obj.updateDynamic("excludedProperties")(excludedProperties)
+    if (!js.isUndefined(finalValueAnnotationsVisible)) __obj.updateDynamic("finalValueAnnotationsVisible")(finalValueAnnotationsVisible)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
+    if (includedProperties != null) __obj.updateDynamic("includedProperties")(includedProperties)
+    if (!js.isUndefined(isCategoryHighlightingEnabled)) __obj.updateDynamic("isCategoryHighlightingEnabled")(isCategoryHighlightingEnabled)
+    if (!js.isUndefined(isHorizontalZoomEnabled)) __obj.updateDynamic("isHorizontalZoomEnabled")(isHorizontalZoomEnabled)
+    if (!js.isUndefined(isItemHighlightingEnabled)) __obj.updateDynamic("isItemHighlightingEnabled")(isItemHighlightingEnabled)
+    if (!js.isUndefined(isSeriesHighlightingEnabled)) __obj.updateDynamic("isSeriesHighlightingEnabled")(isSeriesHighlightingEnabled)
+    if (!js.isUndefined(isTransitionInEnabled)) __obj.updateDynamic("isTransitionInEnabled")(isTransitionInEnabled)
+    if (!js.isUndefined(isVerticalZoomEnabled)) __obj.updateDynamic("isVerticalZoomEnabled")(isVerticalZoomEnabled)
+    if (itemsSource != null) __obj.updateDynamic("itemsSource")(itemsSource)
+    if (leftMargin != null) __obj.updateDynamic("leftMargin")(leftMargin.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (markerBrushes != null) __obj.updateDynamic("markerBrushes")(markerBrushes)
+    if (markerCollisionAvoidance != null) __obj.updateDynamic("markerCollisionAvoidance")(markerCollisionAvoidance)
+    if (markerMaxCount != null) __obj.updateDynamic("markerMaxCount")(markerMaxCount.asInstanceOf[js.Any])
+    if (markerOutlines != null) __obj.updateDynamic("markerOutlines")(markerOutlines)
+    if (markerTypes != null) __obj.updateDynamic("markerTypes")(markerTypes)
+    if (maxRecCount != null) __obj.updateDynamic("maxRecCount")(maxRecCount.asInstanceOf[js.Any])
+    if (negativeBrushes != null) __obj.updateDynamic("negativeBrushes")(negativeBrushes)
+    if (negativeOutlines != null) __obj.updateDynamic("negativeOutlines")(negativeOutlines)
+    if (outlines != null) __obj.updateDynamic("outlines")(outlines)
+    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
+    if (propertyChanged != null) __obj.updateDynamic("propertyChanged")(propertyChanged)
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
+    if (rightMargin != null) __obj.updateDynamic("rightMargin")(rightMargin.asInstanceOf[js.Any])
+    if (seriesAdded != null) __obj.updateDynamic("seriesAdded")(seriesAdded)
+    if (seriesPointerDown != null) __obj.updateDynamic("seriesPointerDown")(seriesPointerDown)
+    if (seriesPointerEnter != null) __obj.updateDynamic("seriesPointerEnter")(seriesPointerEnter)
+    if (seriesPointerLeave != null) __obj.updateDynamic("seriesPointerLeave")(seriesPointerLeave)
+    if (seriesPointerMove != null) __obj.updateDynamic("seriesPointerMove")(seriesPointerMove)
+    if (seriesPointerUp != null) __obj.updateDynamic("seriesPointerUp")(seriesPointerUp)
+    if (seriesRemoved != null) __obj.updateDynamic("seriesRemoved")(seriesRemoved)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    if (subtitleAlignment != null) __obj.updateDynamic("subtitleAlignment")(subtitleAlignment)
+    if (subtitleBottomMargin != null) __obj.updateDynamic("subtitleBottomMargin")(subtitleBottomMargin.asInstanceOf[js.Any])
+    if (subtitleLeftMargin != null) __obj.updateDynamic("subtitleLeftMargin")(subtitleLeftMargin.asInstanceOf[js.Any])
+    if (subtitleRightMargin != null) __obj.updateDynamic("subtitleRightMargin")(subtitleRightMargin.asInstanceOf[js.Any])
+    if (subtitleTextColor != null) __obj.updateDynamic("subtitleTextColor")(subtitleTextColor)
+    if (subtitleTextStyle != null) __obj.updateDynamic("subtitleTextStyle")(subtitleTextStyle)
+    if (subtitleTopMargin != null) __obj.updateDynamic("subtitleTopMargin")(subtitleTopMargin.asInstanceOf[js.Any])
+    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleAlignment != null) __obj.updateDynamic("titleAlignment")(titleAlignment)
+    if (titleBottomMargin != null) __obj.updateDynamic("titleBottomMargin")(titleBottomMargin.asInstanceOf[js.Any])
+    if (titleLeftMargin != null) __obj.updateDynamic("titleLeftMargin")(titleLeftMargin.asInstanceOf[js.Any])
+    if (titleRightMargin != null) __obj.updateDynamic("titleRightMargin")(titleRightMargin.asInstanceOf[js.Any])
+    if (titleTextColor != null) __obj.updateDynamic("titleTextColor")(titleTextColor)
+    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle)
+    if (titleTopMargin != null) __obj.updateDynamic("titleTopMargin")(titleTopMargin.asInstanceOf[js.Any])
+    if (toolTipType != null) __obj.updateDynamic("toolTipType")(toolTipType)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (tooltipTemplates != null) __obj.updateDynamic("tooltipTemplates")(tooltipTemplates)
+    if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (transitionEasingFunction != null) __obj.updateDynamic("transitionEasingFunction")(transitionEasingFunction)
+    if (transitionInDuration != null) __obj.updateDynamic("transitionInDuration")(transitionInDuration.asInstanceOf[js.Any])
+    if (transitionInEasingFunction != null) __obj.updateDynamic("transitionInEasingFunction")(transitionInEasingFunction)
+    if (transitionInMode != null) __obj.updateDynamic("transitionInMode")(transitionInMode)
+    if (transitionInSpeedType != null) __obj.updateDynamic("transitionInSpeedType")(transitionInSpeedType)
+    if (trendLineBrushes != null) __obj.updateDynamic("trendLineBrushes")(trendLineBrushes)
+    if (trendLinePeriod != null) __obj.updateDynamic("trendLinePeriod")(trendLinePeriod.asInstanceOf[js.Any])
+    if (trendLineThickness != null) __obj.updateDynamic("trendLineThickness")(trendLineThickness.asInstanceOf[js.Any])
+    if (trendLineType != null) __obj.updateDynamic("trendLineType")(trendLineType)
+    if (unknownValuePlotting != null) __obj.updateDynamic("unknownValuePlotting")(unknownValuePlotting)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (widget != null) __obj.updateDynamic("widget")(widget)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (windowRect != null) __obj.updateDynamic("windowRect")(windowRect)
+    if (xAxisExtent != null) __obj.updateDynamic("xAxisExtent")(xAxisExtent.asInstanceOf[js.Any])
+    if (xAxisFormatLabel != null) __obj.updateDynamic("xAxisFormatLabel")(xAxisFormatLabel)
+    if (xAxisGap != null) __obj.updateDynamic("xAxisGap")(xAxisGap.asInstanceOf[js.Any])
+    if (xAxisInterval != null) __obj.updateDynamic("xAxisInterval")(xAxisInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(xAxisInverted)) __obj.updateDynamic("xAxisInverted")(xAxisInverted)
+    if (xAxisLabel != null) __obj.updateDynamic("xAxisLabel")(xAxisLabel)
+    if (xAxisLabelAngle != null) __obj.updateDynamic("xAxisLabelAngle")(xAxisLabelAngle.asInstanceOf[js.Any])
+    if (xAxisLabelBottomMargin != null) __obj.updateDynamic("xAxisLabelBottomMargin")(xAxisLabelBottomMargin.asInstanceOf[js.Any])
+    if (xAxisLabelHorizontalAlignment != null) __obj.updateDynamic("xAxisLabelHorizontalAlignment")(xAxisLabelHorizontalAlignment)
+    if (xAxisLabelLeftMargin != null) __obj.updateDynamic("xAxisLabelLeftMargin")(xAxisLabelLeftMargin.asInstanceOf[js.Any])
+    if (xAxisLabelRightMargin != null) __obj.updateDynamic("xAxisLabelRightMargin")(xAxisLabelRightMargin.asInstanceOf[js.Any])
+    if (xAxisLabelTextColor != null) __obj.updateDynamic("xAxisLabelTextColor")(xAxisLabelTextColor)
+    if (xAxisLabelTextStyle != null) __obj.updateDynamic("xAxisLabelTextStyle")(xAxisLabelTextStyle)
+    if (xAxisLabelTopMargin != null) __obj.updateDynamic("xAxisLabelTopMargin")(xAxisLabelTopMargin.asInstanceOf[js.Any])
+    if (xAxisLabelVerticalAlignment != null) __obj.updateDynamic("xAxisLabelVerticalAlignment")(xAxisLabelVerticalAlignment)
+    if (xAxisLabelVisibility != null) __obj.updateDynamic("xAxisLabelVisibility")(xAxisLabelVisibility)
+    if (xAxisMajorStroke != null) __obj.updateDynamic("xAxisMajorStroke")(xAxisMajorStroke)
+    if (xAxisMajorStrokeThickness != null) __obj.updateDynamic("xAxisMajorStrokeThickness")(xAxisMajorStrokeThickness.asInstanceOf[js.Any])
+    if (xAxisMinorInterval != null) __obj.updateDynamic("xAxisMinorInterval")(xAxisMinorInterval.asInstanceOf[js.Any])
+    if (xAxisMinorStroke != null) __obj.updateDynamic("xAxisMinorStroke")(xAxisMinorStroke)
+    if (xAxisMinorStrokeThickness != null) __obj.updateDynamic("xAxisMinorStrokeThickness")(xAxisMinorStrokeThickness.asInstanceOf[js.Any])
+    if (xAxisOverlap != null) __obj.updateDynamic("xAxisOverlap")(xAxisOverlap.asInstanceOf[js.Any])
+    if (xAxisStrip != null) __obj.updateDynamic("xAxisStrip")(xAxisStrip)
+    if (xAxisStroke != null) __obj.updateDynamic("xAxisStroke")(xAxisStroke)
+    if (xAxisStrokeThickness != null) __obj.updateDynamic("xAxisStrokeThickness")(xAxisStrokeThickness.asInstanceOf[js.Any])
+    if (xAxisTickLength != null) __obj.updateDynamic("xAxisTickLength")(xAxisTickLength.asInstanceOf[js.Any])
+    if (xAxisTickStroke != null) __obj.updateDynamic("xAxisTickStroke")(xAxisTickStroke)
+    if (xAxisTickStrokeThickness != null) __obj.updateDynamic("xAxisTickStrokeThickness")(xAxisTickStrokeThickness.asInstanceOf[js.Any])
+    if (xAxisTitle != null) __obj.updateDynamic("xAxisTitle")(xAxisTitle)
+    if (xAxisTitleAlignment != null) __obj.updateDynamic("xAxisTitleAlignment")(xAxisTitleAlignment)
+    if (xAxisTitleAngle != null) __obj.updateDynamic("xAxisTitleAngle")(xAxisTitleAngle.asInstanceOf[js.Any])
+    if (xAxisTitleBottomMargin != null) __obj.updateDynamic("xAxisTitleBottomMargin")(xAxisTitleBottomMargin.asInstanceOf[js.Any])
+    if (xAxisTitleLeftMargin != null) __obj.updateDynamic("xAxisTitleLeftMargin")(xAxisTitleLeftMargin.asInstanceOf[js.Any])
+    if (xAxisTitleMargin != null) __obj.updateDynamic("xAxisTitleMargin")(xAxisTitleMargin.asInstanceOf[js.Any])
+    if (xAxisTitleRightMargin != null) __obj.updateDynamic("xAxisTitleRightMargin")(xAxisTitleRightMargin.asInstanceOf[js.Any])
+    if (xAxisTitleTextColor != null) __obj.updateDynamic("xAxisTitleTextColor")(xAxisTitleTextColor)
+    if (xAxisTitleTextStyle != null) __obj.updateDynamic("xAxisTitleTextStyle")(xAxisTitleTextStyle)
+    if (xAxisTitleTopMargin != null) __obj.updateDynamic("xAxisTitleTopMargin")(xAxisTitleTopMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxisAbbreviateLargeNumbers)) __obj.updateDynamic("yAxisAbbreviateLargeNumbers")(yAxisAbbreviateLargeNumbers)
+    if (yAxisExtent != null) __obj.updateDynamic("yAxisExtent")(yAxisExtent.asInstanceOf[js.Any])
+    if (yAxisFormatLabel != null) __obj.updateDynamic("yAxisFormatLabel")(yAxisFormatLabel)
+    if (yAxisInterval != null) __obj.updateDynamic("yAxisInterval")(yAxisInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxisInverted)) __obj.updateDynamic("yAxisInverted")(yAxisInverted)
+    if (!js.isUndefined(yAxisIsLogarithmic)) __obj.updateDynamic("yAxisIsLogarithmic")(yAxisIsLogarithmic)
+    if (yAxisLabel != null) __obj.updateDynamic("yAxisLabel")(yAxisLabel)
+    if (yAxisLabelAngle != null) __obj.updateDynamic("yAxisLabelAngle")(yAxisLabelAngle.asInstanceOf[js.Any])
+    if (yAxisLabelBottomMargin != null) __obj.updateDynamic("yAxisLabelBottomMargin")(yAxisLabelBottomMargin.asInstanceOf[js.Any])
+    if (yAxisLabelHorizontalAlignment != null) __obj.updateDynamic("yAxisLabelHorizontalAlignment")(yAxisLabelHorizontalAlignment)
+    if (yAxisLabelLeftMargin != null) __obj.updateDynamic("yAxisLabelLeftMargin")(yAxisLabelLeftMargin.asInstanceOf[js.Any])
+    if (yAxisLabelLocation != null) __obj.updateDynamic("yAxisLabelLocation")(yAxisLabelLocation)
+    if (yAxisLabelRightMargin != null) __obj.updateDynamic("yAxisLabelRightMargin")(yAxisLabelRightMargin.asInstanceOf[js.Any])
+    if (yAxisLabelTextColor != null) __obj.updateDynamic("yAxisLabelTextColor")(yAxisLabelTextColor)
+    if (yAxisLabelTextStyle != null) __obj.updateDynamic("yAxisLabelTextStyle")(yAxisLabelTextStyle)
+    if (yAxisLabelTopMargin != null) __obj.updateDynamic("yAxisLabelTopMargin")(yAxisLabelTopMargin.asInstanceOf[js.Any])
+    if (yAxisLabelVerticalAlignment != null) __obj.updateDynamic("yAxisLabelVerticalAlignment")(yAxisLabelVerticalAlignment)
+    __obj.asInstanceOf[IgCategoryChart]
+  }
+}
+

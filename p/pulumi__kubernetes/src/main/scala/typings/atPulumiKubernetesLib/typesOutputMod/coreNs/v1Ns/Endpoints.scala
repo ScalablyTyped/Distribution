@@ -50,3 +50,20 @@ trait Endpoints extends js.Object {
   val subsets: js.Array[EndpointSubset]
 }
 
+object Endpoints {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Endpoints,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    subsets: js.Array[EndpointSubset]
+  ): Endpoints = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("subsets")(subsets)
+    __obj.asInstanceOf[Endpoints]
+  }
+}
+

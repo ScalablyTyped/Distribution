@@ -126,3 +126,68 @@ trait ValueAxesSettings extends js.Object {
   var unitPosition: java.lang.String
 }
 
+object ValueAxesSettings {
+  @scala.inline
+  def apply(
+    autoGridCount: scala.Boolean,
+    axisAlpha: scala.Double,
+    axisColor: java.lang.String,
+    axisThickness: scala.Double,
+    color: java.lang.String,
+    dashLength: scala.Double,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    gridAlpha: scala.Double,
+    gridColor: java.lang.String,
+    gridCount: scala.Double,
+    gridThickness: scala.Double,
+    includeGuidesInMinMax: scala.Boolean,
+    includeHidden: scala.Boolean,
+    inside: scala.Boolean,
+    integersOnly: scala.Boolean,
+    labelFrequency: scala.Double,
+    labelsEnabled: scala.Boolean,
+    logarithmic: scala.Boolean,
+    offset: scala.Double,
+    position: java.lang.String,
+    reversed: scala.Boolean,
+    showFirstLabel: scala.Boolean,
+    showLastLabel: scala.Boolean,
+    stackType: java.lang.String,
+    tickLength: scala.Double,
+    unit: java.lang.String,
+    unitPosition: java.lang.String
+  ): ValueAxesSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoGridCount")(autoGridCount)
+    __obj.updateDynamic("axisAlpha")(axisAlpha)
+    __obj.updateDynamic("axisColor")(axisColor)
+    __obj.updateDynamic("axisThickness")(axisThickness)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("dashLength")(dashLength)
+    __obj.updateDynamic("fillAlpha")(fillAlpha)
+    __obj.updateDynamic("fillColor")(fillColor)
+    __obj.updateDynamic("gridAlpha")(gridAlpha)
+    __obj.updateDynamic("gridColor")(gridColor)
+    __obj.updateDynamic("gridCount")(gridCount)
+    __obj.updateDynamic("gridThickness")(gridThickness)
+    __obj.updateDynamic("includeGuidesInMinMax")(includeGuidesInMinMax)
+    __obj.updateDynamic("includeHidden")(includeHidden)
+    __obj.updateDynamic("inside")(inside)
+    __obj.updateDynamic("integersOnly")(integersOnly)
+    __obj.updateDynamic("labelFrequency")(labelFrequency)
+    __obj.updateDynamic("labelsEnabled")(labelsEnabled)
+    __obj.updateDynamic("logarithmic")(logarithmic)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("reversed")(reversed)
+    __obj.updateDynamic("showFirstLabel")(showFirstLabel)
+    __obj.updateDynamic("showLastLabel")(showLastLabel)
+    __obj.updateDynamic("stackType")(stackType)
+    __obj.updateDynamic("tickLength")(tickLength)
+    __obj.updateDynamic("unit")(unit)
+    __obj.updateDynamic("unitPosition")(unitPosition)
+    __obj.asInstanceOf[ValueAxesSettings]
+  }
+}
+

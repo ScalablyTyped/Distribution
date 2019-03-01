@@ -15,3 +15,26 @@ trait RadialGaugeOptions extends js.Object {
   var transitions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RadialGaugeOptions {
+  @scala.inline
+  def apply(
+    gaugeArea: RadialGaugeGaugeArea = null,
+    name: java.lang.String = null,
+    pointer: js.Array[RadialGaugePointerItem] = null,
+    renderAs: java.lang.String = null,
+    scale: RadialGaugeScale = null,
+    theme: java.lang.String = null,
+    transitions: js.UndefOr[scala.Boolean] = js.undefined
+  ): RadialGaugeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (gaugeArea != null) __obj.updateDynamic("gaugeArea")(gaugeArea)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pointer != null) __obj.updateDynamic("pointer")(pointer)
+    if (renderAs != null) __obj.updateDynamic("renderAs")(renderAs)
+    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions)
+    __obj.asInstanceOf[RadialGaugeOptions]
+  }
+}
+

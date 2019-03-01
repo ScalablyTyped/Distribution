@@ -12,3 +12,20 @@ trait JSZipSupport extends js.Object {
   var uint8array: scala.Boolean
 }
 
+object JSZipSupport {
+  @scala.inline
+  def apply(
+    arraybuffer: scala.Boolean,
+    blob: scala.Boolean,
+    nodebuffer: scala.Boolean,
+    uint8array: scala.Boolean
+  ): JSZipSupport = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arraybuffer")(arraybuffer)
+    __obj.updateDynamic("blob")(blob)
+    __obj.updateDynamic("nodebuffer")(nodebuffer)
+    __obj.updateDynamic("uint8array")(uint8array)
+    __obj.asInstanceOf[JSZipSupport]
+  }
+}
+

@@ -424,3 +424,46 @@ trait DataObject extends js.Object {
   var visualMin: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DataObject {
+  @scala.inline
+  def apply(
+    children: js.Array[DataObject] = null,
+    childrenVisibleMin: scala.Int | scala.Double = null,
+    color: js.Array[_] = null,
+    colorAlpha: js.Array[_] = null,
+    colorMappingBy: java.lang.String = null,
+    colorSaturation: scala.Int | scala.Double = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelUpperLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderColorSaturationBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamilyFontSize = null,
+    name: java.lang.String = null,
+    upperLabel: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamilyFontSizeFontStyle = null,
+    value: js.Array[_] | scala.Double = null,
+    visibleMin: scala.Int | scala.Double = null,
+    visualDimension: scala.Int | scala.Double = null,
+    visualMax: scala.Int | scala.Double = null,
+    visualMin: scala.Int | scala.Double = null
+  ): DataObject = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (childrenVisibleMin != null) __obj.updateDynamic("childrenVisibleMin")(childrenVisibleMin.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colorAlpha != null) __obj.updateDynamic("colorAlpha")(colorAlpha)
+    if (colorMappingBy != null) __obj.updateDynamic("colorMappingBy")(colorMappingBy)
+    if (colorSaturation != null) __obj.updateDynamic("colorSaturation")(colorSaturation.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (visibleMin != null) __obj.updateDynamic("visibleMin")(visibleMin.asInstanceOf[js.Any])
+    if (visualDimension != null) __obj.updateDynamic("visualDimension")(visualDimension.asInstanceOf[js.Any])
+    if (visualMax != null) __obj.updateDynamic("visualMax")(visualMax.asInstanceOf[js.Any])
+    if (visualMin != null) __obj.updateDynamic("visualMin")(visualMin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataObject]
+  }
+}
+

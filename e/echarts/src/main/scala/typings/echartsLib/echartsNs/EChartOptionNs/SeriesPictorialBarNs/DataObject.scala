@@ -711,3 +711,66 @@ trait DataObject extends js.Object {
   var z: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DataObject {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
+    hoverAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
+    name: java.lang.String = null,
+    symbol: java.lang.String = null,
+    symbolBoundingData: scala.Int | scala.Double = null,
+    symbolClip: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolMargin: scala.Double | java.lang.String = null,
+    symbolOffset: js.Array[_] = null,
+    symbolPatternSize: scala.Int | scala.Double = null,
+    symbolPosition: java.lang.String = null,
+    symbolRepeat: scala.Boolean | scala.Double | java.lang.String = null,
+    symbolRepeatDirection: java.lang.String = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | scala.Double = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    value: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null
+  ): DataObject = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (symbolBoundingData != null) __obj.updateDynamic("symbolBoundingData")(symbolBoundingData.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolClip)) __obj.updateDynamic("symbolClip")(symbolClip)
+    if (symbolMargin != null) __obj.updateDynamic("symbolMargin")(symbolMargin.asInstanceOf[js.Any])
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolPatternSize != null) __obj.updateDynamic("symbolPatternSize")(symbolPatternSize.asInstanceOf[js.Any])
+    if (symbolPosition != null) __obj.updateDynamic("symbolPosition")(symbolPosition)
+    if (symbolRepeat != null) __obj.updateDynamic("symbolRepeat")(symbolRepeat.asInstanceOf[js.Any])
+    if (symbolRepeatDirection != null) __obj.updateDynamic("symbolRepeatDirection")(symbolRepeatDirection)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataObject]
+  }
+}
+

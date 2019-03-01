@@ -41,3 +41,24 @@ trait TwitchExtClientQueryParams extends js.Object {
   var state: twitchDashExtLib.twitchDashExtLibStrings.testing | twitchDashExtLib.twitchDashExtLibStrings.hosted_test | twitchDashExtLib.twitchDashExtLibStrings.approved | twitchDashExtLib.twitchDashExtLibStrings.released | twitchDashExtLib.twitchDashExtLibStrings.ready_for_review | twitchDashExtLib.twitchDashExtLibStrings.in_review | twitchDashExtLib.twitchDashExtLibStrings.pending_action | twitchDashExtLib.twitchDashExtLibStrings.uploading
 }
 
+object TwitchExtClientQueryParams {
+  @scala.inline
+  def apply(
+    anchor: twitchDashExtLib.twitchDashExtLibStrings.component | twitchDashExtLib.twitchDashExtLibStrings.panel | twitchDashExtLib.twitchDashExtLibStrings.video_overlay,
+    language: java.lang.String,
+    mode: twitchDashExtLib.twitchDashExtLibStrings.config | twitchDashExtLib.twitchDashExtLibStrings.dashboard | twitchDashExtLib.twitchDashExtLibStrings.viewer,
+    platform: twitchDashExtLib.twitchDashExtLibStrings.mobile | twitchDashExtLib.twitchDashExtLibStrings.web,
+    popout: twitchDashExtLib.twitchDashExtLibStrings.`true` | twitchDashExtLib.twitchDashExtLibStrings.`false`,
+    state: twitchDashExtLib.twitchDashExtLibStrings.testing | twitchDashExtLib.twitchDashExtLibStrings.hosted_test | twitchDashExtLib.twitchDashExtLibStrings.approved | twitchDashExtLib.twitchDashExtLibStrings.released | twitchDashExtLib.twitchDashExtLibStrings.ready_for_review | twitchDashExtLib.twitchDashExtLibStrings.in_review | twitchDashExtLib.twitchDashExtLibStrings.pending_action | twitchDashExtLib.twitchDashExtLibStrings.uploading
+  ): TwitchExtClientQueryParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    __obj.updateDynamic("popout")(popout.asInstanceOf[js.Any])
+    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TwitchExtClientQueryParams]
+  }
+}
+

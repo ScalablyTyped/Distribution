@@ -32,3 +32,30 @@ trait Anon_Content extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Content {
+  @scala.inline
+  def apply(
+    content: java.lang.String = null,
+    displayName: java.lang.String = null,
+    embed: Anon_Type = null,
+    fullImage: Anon_Height = null,
+    id: java.lang.String = null,
+    image: Anon_Height = null,
+    objectType: java.lang.String = null,
+    thumbnails: js.Array[Anon_Description] = null,
+    url: java.lang.String = null
+  ): Anon_Content = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (embed != null) __obj.updateDynamic("embed")(embed)
+    if (fullImage != null) __obj.updateDynamic("fullImage")(fullImage)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_Content]
+  }
+}
+

@@ -26,3 +26,42 @@ trait FirewallsResource extends js.Object {
   def update(request: gapiDotClientDotComputeLib.Anon_AltFieldsFirewall): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object FirewallsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFirewall, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFirewallKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Firewall]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FirewallList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFirewall, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    update: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFirewall, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): FirewallsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[FirewallsResource]
+  }
+}
+

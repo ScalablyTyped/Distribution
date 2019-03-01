@@ -14,3 +14,24 @@ trait LowLevelStylefunctionArguments extends js.Object {
   var transformValue: js.UndefOr[js.Function1[/* n */ java.lang.String | scala.Double, _]] = js.undefined
 }
 
+object LowLevelStylefunctionArguments {
+  @scala.inline
+  def apply(
+    prop: java.lang.String,
+    cssProperty: java.lang.String = null,
+    getter: js.Function0[_] = null,
+    key: java.lang.String = null,
+    scale: js.Array[java.lang.String | scala.Double] = null,
+    transformValue: js.Function1[/* n */ java.lang.String | scala.Double, _] = null
+  ): LowLevelStylefunctionArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("prop")(prop)
+    if (cssProperty != null) __obj.updateDynamic("cssProperty")(cssProperty)
+    if (getter != null) __obj.updateDynamic("getter")(getter)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (transformValue != null) __obj.updateDynamic("transformValue")(transformValue)
+    __obj.asInstanceOf[LowLevelStylefunctionArguments]
+  }
+}
+

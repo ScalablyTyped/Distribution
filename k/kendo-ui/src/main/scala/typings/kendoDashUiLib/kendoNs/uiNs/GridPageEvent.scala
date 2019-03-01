@@ -9,3 +9,20 @@ trait GridPageEvent extends GridEvent {
   var page: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GridPageEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Grid,
+    page: scala.Int | scala.Double = null
+  ): GridPageEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridPageEvent]
+  }
+}
+

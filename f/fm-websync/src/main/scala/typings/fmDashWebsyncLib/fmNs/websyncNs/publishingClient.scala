@@ -16,3 +16,13 @@ trait publishingClient extends js.Object {
   var id: java.lang.String
 }
 
+object publishingClient {
+  @scala.inline
+  def apply(boundRecords: js.Any, id: java.lang.String): publishingClient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boundRecords")(boundRecords)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[publishingClient]
+  }
+}
+

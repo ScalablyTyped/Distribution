@@ -16,3 +16,13 @@ trait ASPxClientVerticalGridBatchEditConfirmShowingEventArgs extends ASPxClientC
   var requestTriggerID: java.lang.String
 }
 
+object ASPxClientVerticalGridBatchEditConfirmShowingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, requestTriggerID: java.lang.String): ASPxClientVerticalGridBatchEditConfirmShowingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("requestTriggerID")(requestTriggerID)
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditConfirmShowingEventArgs]
+  }
+}
+

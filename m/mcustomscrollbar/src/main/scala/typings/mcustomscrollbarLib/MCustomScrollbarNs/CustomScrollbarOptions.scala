@@ -123,3 +123,60 @@ trait CustomScrollbarOptions extends js.Object {
   var theme: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomScrollbarOptions {
+  @scala.inline
+  def apply(
+    advanced: mcustomscrollbarLib.Anon_AutoAutoExpandHorizontalScroll = null,
+    alwaysShowScrollbar: scala.Int | scala.Double = null,
+    autoDraggerLength: js.UndefOr[scala.Boolean] = js.undefined,
+    autoExpandScrollbar: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHideScrollbar: js.UndefOr[scala.Boolean] = js.undefined,
+    axis: mcustomscrollbarLib.mcustomscrollbarLibStrings.x | mcustomscrollbarLib.mcustomscrollbarLibStrings.y | mcustomscrollbarLib.mcustomscrollbarLibStrings.yx = null,
+    callbacks: mcustomscrollbarLib.Anon_AlwaysTriggerOffsets = null,
+    contentTouchScroll: scala.Boolean | scala.Double = null,
+    documentTouchScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboard: mcustomscrollbarLib.Anon_AutoEnable = null,
+    live: java.lang.String | scala.Boolean = null,
+    liveSelector: java.lang.String = null,
+    mouseWheel: mcustomscrollbarLib.Anon_Auto = null,
+    mouseWheelPixels: js.Any = null,
+    scrollButtons: mcustomscrollbarLib.Anon_AutoEnableScrollAmount = null,
+    scrollInertia: scala.Int | scala.Double = null,
+    scrollbarPosition: mcustomscrollbarLib.mcustomscrollbarLibStrings.inside | mcustomscrollbarLib.mcustomscrollbarLibStrings.outside = null,
+    setHeight: scala.Boolean | scala.Double | java.lang.String = null,
+    setLeft: scala.Double | java.lang.String = null,
+    setTop: scala.Double | java.lang.String = null,
+    setWidth: scala.Boolean | scala.Double | java.lang.String = null,
+    snapAmount: scala.Double | (js.Tuple2[scala.Double, scala.Double]) = null,
+    snapOffset: scala.Int | scala.Double = null,
+    theme: java.lang.String = null
+  ): CustomScrollbarOptions = {
+    val __obj = js.Dynamic.literal()
+    if (advanced != null) __obj.updateDynamic("advanced")(advanced)
+    if (alwaysShowScrollbar != null) __obj.updateDynamic("alwaysShowScrollbar")(alwaysShowScrollbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDraggerLength)) __obj.updateDynamic("autoDraggerLength")(autoDraggerLength)
+    if (!js.isUndefined(autoExpandScrollbar)) __obj.updateDynamic("autoExpandScrollbar")(autoExpandScrollbar)
+    if (!js.isUndefined(autoHideScrollbar)) __obj.updateDynamic("autoHideScrollbar")(autoHideScrollbar)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
+    if (contentTouchScroll != null) __obj.updateDynamic("contentTouchScroll")(contentTouchScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(documentTouchScroll)) __obj.updateDynamic("documentTouchScroll")(documentTouchScroll)
+    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard)
+    if (live != null) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
+    if (liveSelector != null) __obj.updateDynamic("liveSelector")(liveSelector)
+    if (mouseWheel != null) __obj.updateDynamic("mouseWheel")(mouseWheel)
+    if (mouseWheelPixels != null) __obj.updateDynamic("mouseWheelPixels")(mouseWheelPixels)
+    if (scrollButtons != null) __obj.updateDynamic("scrollButtons")(scrollButtons)
+    if (scrollInertia != null) __obj.updateDynamic("scrollInertia")(scrollInertia.asInstanceOf[js.Any])
+    if (scrollbarPosition != null) __obj.updateDynamic("scrollbarPosition")(scrollbarPosition.asInstanceOf[js.Any])
+    if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight.asInstanceOf[js.Any])
+    if (setLeft != null) __obj.updateDynamic("setLeft")(setLeft.asInstanceOf[js.Any])
+    if (setTop != null) __obj.updateDynamic("setTop")(setTop.asInstanceOf[js.Any])
+    if (setWidth != null) __obj.updateDynamic("setWidth")(setWidth.asInstanceOf[js.Any])
+    if (snapAmount != null) __obj.updateDynamic("snapAmount")(snapAmount.asInstanceOf[js.Any])
+    if (snapOffset != null) __obj.updateDynamic("snapOffset")(snapOffset.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[CustomScrollbarOptions]
+  }
+}
+

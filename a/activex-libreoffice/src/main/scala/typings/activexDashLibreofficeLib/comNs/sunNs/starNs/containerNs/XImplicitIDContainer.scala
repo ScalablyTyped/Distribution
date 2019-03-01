@@ -16,3 +16,24 @@ trait XImplicitIDContainer extends XImplicitIDReplace {
   def removeByImplicitID(ID: java.lang.String): scala.Unit
 }
 
+object XImplicitIDContainer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addWithImplicitID: js.Function1[js.Any, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeByImplicitID: js.Function1[java.lang.String, scala.Unit],
+    replaceByUniqueID: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XImplicitIDContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addWithImplicitID")(addWithImplicitID)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeByImplicitID")(removeByImplicitID)
+    __obj.updateDynamic("replaceByUniqueID")(replaceByUniqueID)
+    __obj.asInstanceOf[XImplicitIDContainer]
+  }
+}
+

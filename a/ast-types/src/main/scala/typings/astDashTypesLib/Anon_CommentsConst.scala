@@ -14,3 +14,22 @@ trait Anon_CommentsConst extends js.Object {
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
 }
 
+object Anon_CommentsConst {
+  @scala.inline
+  def apply(
+    declarations: js.Array[
+      astDashTypesLib.genKindsMod.VariableDeclaratorKind | astDashTypesLib.genKindsMod.IdentifierKind
+    ],
+    kind: astDashTypesLib.astDashTypesLibStrings.`var` | astDashTypesLib.astDashTypesLibStrings.let | astDashTypesLib.astDashTypesLibStrings.const,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsConst = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("declarations")(declarations)
+    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsConst]
+  }
+}
+

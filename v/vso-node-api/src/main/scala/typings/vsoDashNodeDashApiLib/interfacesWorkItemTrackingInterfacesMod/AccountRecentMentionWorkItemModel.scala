@@ -36,3 +36,26 @@ trait AccountRecentMentionWorkItemModel extends js.Object {
   var workItemType: java.lang.String
 }
 
+object AccountRecentMentionWorkItemModel {
+  @scala.inline
+  def apply(
+    assignedTo: java.lang.String,
+    id: scala.Double,
+    mentionedDateField: stdLib.Date,
+    state: java.lang.String,
+    teamProject: java.lang.String,
+    title: java.lang.String,
+    workItemType: java.lang.String
+  ): AccountRecentMentionWorkItemModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("assignedTo")(assignedTo)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("mentionedDateField")(mentionedDateField)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("teamProject")(teamProject)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("workItemType")(workItemType)
+    __obj.asInstanceOf[AccountRecentMentionWorkItemModel]
+  }
+}
+

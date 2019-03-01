@@ -68,3 +68,42 @@ trait Anon_AllMergeAdjacentRules extends js.Object {
   var skipProperties: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_AllMergeAdjacentRules {
+  @scala.inline
+  def apply(
+    all: js.UndefOr[scala.Boolean] = js.undefined,
+    mergeAdjacentRules: js.UndefOr[scala.Boolean] = js.undefined,
+    mergeIntoShorthands: js.UndefOr[scala.Boolean] = js.undefined,
+    mergeMedia: js.UndefOr[scala.Boolean] = js.undefined,
+    mergeNonAdjacentRules: js.UndefOr[scala.Boolean] = js.undefined,
+    mergeSemantically: js.UndefOr[scala.Boolean] = js.undefined,
+    overrideProperties: js.UndefOr[scala.Boolean] = js.undefined,
+    reduceNonAdjacentRules: js.UndefOr[scala.Boolean] = js.undefined,
+    removeDuplicateFontRules: js.UndefOr[scala.Boolean] = js.undefined,
+    removeDuplicateMediaBlocks: js.UndefOr[scala.Boolean] = js.undefined,
+    removeDuplicateRules: js.UndefOr[scala.Boolean] = js.undefined,
+    removeEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    removeUnusedAtRules: js.UndefOr[scala.Boolean] = js.undefined,
+    restructureRules: js.UndefOr[scala.Boolean] = js.undefined,
+    skipProperties: js.Array[java.lang.String] = null
+  ): Anon_AllMergeAdjacentRules = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
+    if (!js.isUndefined(mergeAdjacentRules)) __obj.updateDynamic("mergeAdjacentRules")(mergeAdjacentRules)
+    if (!js.isUndefined(mergeIntoShorthands)) __obj.updateDynamic("mergeIntoShorthands")(mergeIntoShorthands)
+    if (!js.isUndefined(mergeMedia)) __obj.updateDynamic("mergeMedia")(mergeMedia)
+    if (!js.isUndefined(mergeNonAdjacentRules)) __obj.updateDynamic("mergeNonAdjacentRules")(mergeNonAdjacentRules)
+    if (!js.isUndefined(mergeSemantically)) __obj.updateDynamic("mergeSemantically")(mergeSemantically)
+    if (!js.isUndefined(overrideProperties)) __obj.updateDynamic("overrideProperties")(overrideProperties)
+    if (!js.isUndefined(reduceNonAdjacentRules)) __obj.updateDynamic("reduceNonAdjacentRules")(reduceNonAdjacentRules)
+    if (!js.isUndefined(removeDuplicateFontRules)) __obj.updateDynamic("removeDuplicateFontRules")(removeDuplicateFontRules)
+    if (!js.isUndefined(removeDuplicateMediaBlocks)) __obj.updateDynamic("removeDuplicateMediaBlocks")(removeDuplicateMediaBlocks)
+    if (!js.isUndefined(removeDuplicateRules)) __obj.updateDynamic("removeDuplicateRules")(removeDuplicateRules)
+    if (!js.isUndefined(removeEmpty)) __obj.updateDynamic("removeEmpty")(removeEmpty)
+    if (!js.isUndefined(removeUnusedAtRules)) __obj.updateDynamic("removeUnusedAtRules")(removeUnusedAtRules)
+    if (!js.isUndefined(restructureRules)) __obj.updateDynamic("restructureRules")(restructureRules)
+    if (skipProperties != null) __obj.updateDynamic("skipProperties")(skipProperties)
+    __obj.asInstanceOf[Anon_AllMergeAdjacentRules]
+  }
+}
+

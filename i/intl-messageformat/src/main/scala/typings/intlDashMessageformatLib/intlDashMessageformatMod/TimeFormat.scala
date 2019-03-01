@@ -12,3 +12,20 @@ trait TimeFormat extends js.Object {
   var timeZoneName: java.lang.String
 }
 
+object TimeFormat {
+  @scala.inline
+  def apply(
+    hour: java.lang.String,
+    minute: java.lang.String,
+    second: java.lang.String,
+    timeZoneName: java.lang.String
+  ): TimeFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hour")(hour)
+    __obj.updateDynamic("minute")(minute)
+    __obj.updateDynamic("second")(second)
+    __obj.updateDynamic("timeZoneName")(timeZoneName)
+    __obj.asInstanceOf[TimeFormat]
+  }
+}
+

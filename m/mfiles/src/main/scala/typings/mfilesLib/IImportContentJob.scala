@@ -23,3 +23,42 @@ trait IImportContentJob extends js.Object {
   def Clone(): IImportContentJob
 }
 
+object IImportContentJob {
+  @scala.inline
+  def apply(
+    ActivateAutomaticPermissionsForNewOrChangedDefinitions: scala.Boolean,
+    Clone: js.Function0[IImportContentJob],
+    DisableImportedExternalObjectTypeConnections: scala.Boolean,
+    DisableImportedExternalUserGroups: scala.Boolean,
+    DisableImportedVaultEventHandlers: scala.Boolean,
+    Flags: mfilesLib.MFilesNs.MFImportContentFlag,
+    IgnoreAutomaticPermissionsDefinedByObjects: scala.Boolean,
+    Impersonation: IImpersonation,
+    MetadataStructureSelectors: IMetadataStructureSelectors,
+    Permissions: IAccessControlList,
+    ResetExportTimestamps: scala.Boolean,
+    SourceLocation: java.lang.String,
+    UseDefaultObjectTypePermissions: scala.Boolean,
+    UseNamesAsAliases: scala.Boolean,
+    UsePermissions: scala.Boolean
+  ): IImportContentJob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActivateAutomaticPermissionsForNewOrChangedDefinitions")(ActivateAutomaticPermissionsForNewOrChangedDefinitions)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("DisableImportedExternalObjectTypeConnections")(DisableImportedExternalObjectTypeConnections)
+    __obj.updateDynamic("DisableImportedExternalUserGroups")(DisableImportedExternalUserGroups)
+    __obj.updateDynamic("DisableImportedVaultEventHandlers")(DisableImportedVaultEventHandlers)
+    __obj.updateDynamic("Flags")(Flags)
+    __obj.updateDynamic("IgnoreAutomaticPermissionsDefinedByObjects")(IgnoreAutomaticPermissionsDefinedByObjects)
+    __obj.updateDynamic("Impersonation")(Impersonation)
+    __obj.updateDynamic("MetadataStructureSelectors")(MetadataStructureSelectors)
+    __obj.updateDynamic("Permissions")(Permissions)
+    __obj.updateDynamic("ResetExportTimestamps")(ResetExportTimestamps)
+    __obj.updateDynamic("SourceLocation")(SourceLocation)
+    __obj.updateDynamic("UseDefaultObjectTypePermissions")(UseDefaultObjectTypePermissions)
+    __obj.updateDynamic("UseNamesAsAliases")(UseNamesAsAliases)
+    __obj.updateDynamic("UsePermissions")(UsePermissions)
+    __obj.asInstanceOf[IImportContentJob]
+  }
+}
+

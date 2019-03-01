@@ -27,3 +27,14 @@ trait LabelSelectorRequirement extends js.Object {
   val values: js.Array[java.lang.String]
 }
 
+object LabelSelectorRequirement {
+  @scala.inline
+  def apply(key: java.lang.String, operator: java.lang.String, values: js.Array[java.lang.String]): LabelSelectorRequirement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("operator")(operator)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[LabelSelectorRequirement]
+  }
+}
+

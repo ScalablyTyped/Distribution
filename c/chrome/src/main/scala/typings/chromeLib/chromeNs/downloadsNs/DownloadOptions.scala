@@ -22,3 +22,26 @@ trait DownloadOptions extends js.Object {
   var url: java.lang.String
 }
 
+object DownloadOptions {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    body: java.lang.String = null,
+    conflictAction: java.lang.String = null,
+    filename: java.lang.String = null,
+    headers: js.Array[HeaderNameValuePair] = null,
+    method: java.lang.String = null,
+    saveAs: js.UndefOr[scala.Boolean] = js.undefined
+  ): DownloadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (conflictAction != null) __obj.updateDynamic("conflictAction")(conflictAction)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs)
+    __obj.asInstanceOf[DownloadOptions]
+  }
+}
+

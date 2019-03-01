@@ -23,3 +23,22 @@ trait ActionFailureEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActionFailureEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    errorMessage: java.lang.String = null,
+    model: Model = null,
+    requestType: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ActionFailureEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ActionFailureEventArgs]
+  }
+}
+

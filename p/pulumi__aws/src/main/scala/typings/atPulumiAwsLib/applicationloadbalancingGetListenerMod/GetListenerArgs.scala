@@ -20,3 +20,18 @@ trait GetListenerArgs extends js.Object {
   val port: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GetListenerArgs {
+  @scala.inline
+  def apply(
+    arn: java.lang.String = null,
+    loadBalancerArn: java.lang.String = null,
+    port: scala.Int | scala.Double = null
+  ): GetListenerArgs = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn)
+    if (loadBalancerArn != null) __obj.updateDynamic("loadBalancerArn")(loadBalancerArn)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetListenerArgs]
+  }
+}
+

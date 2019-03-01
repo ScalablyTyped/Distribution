@@ -10,3 +10,12 @@ trait DateNFOption extends js.Object {
   var dateNF: js.UndefOr[NumberFormat] = js.undefined
 }
 
+object DateNFOption {
+  @scala.inline
+  def apply(dateNF: NumberFormat = null): DateNFOption = {
+    val __obj = js.Dynamic.literal()
+    if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DateNFOption]
+  }
+}
+

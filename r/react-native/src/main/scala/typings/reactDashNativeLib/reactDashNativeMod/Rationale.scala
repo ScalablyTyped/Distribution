@@ -13,3 +13,22 @@ trait Rationale extends js.Object {
   var title: java.lang.String
 }
 
+object Rationale {
+  @scala.inline
+  def apply(
+    buttonPositive: java.lang.String,
+    message: java.lang.String,
+    title: java.lang.String,
+    buttonNegative: java.lang.String = null,
+    buttonNeutral: java.lang.String = null
+  ): Rationale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buttonPositive")(buttonPositive)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("title")(title)
+    if (buttonNegative != null) __obj.updateDynamic("buttonNegative")(buttonNegative)
+    if (buttonNeutral != null) __obj.updateDynamic("buttonNeutral")(buttonNeutral)
+    __obj.asInstanceOf[Rationale]
+  }
+}
+

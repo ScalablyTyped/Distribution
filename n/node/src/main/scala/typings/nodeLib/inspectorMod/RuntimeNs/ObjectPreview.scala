@@ -36,3 +36,23 @@ trait ObjectPreview extends js.Object {
   var `type`: java.lang.String
 }
 
+object ObjectPreview {
+  @scala.inline
+  def apply(
+    overflow: scala.Boolean,
+    properties: js.Array[PropertyPreview],
+    `type`: java.lang.String,
+    description: java.lang.String = null,
+    entries: js.Array[EntryPreview] = null,
+    subtype: java.lang.String = null
+  ): ObjectPreview = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("overflow")(overflow)
+    __obj.updateDynamic("properties")(properties)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (entries != null) __obj.updateDynamic("entries")(entries)
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
+    __obj.asInstanceOf[ObjectPreview]
+  }
+}
+

@@ -14,3 +14,24 @@ trait Project extends js.Object {
   var project_token: java.lang.String
 }
 
+object Project {
+  @scala.inline
+  def apply(
+    general_token: java.lang.String,
+    glance: Glance,
+    neutron: Neutron,
+    nova: Nova,
+    octavia: Octavia,
+    project_token: java.lang.String
+  ): Project = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("general_token")(general_token)
+    __obj.updateDynamic("glance")(glance)
+    __obj.updateDynamic("neutron")(neutron)
+    __obj.updateDynamic("nova")(nova)
+    __obj.updateDynamic("octavia")(octavia)
+    __obj.updateDynamic("project_token")(project_token)
+    __obj.asInstanceOf[Project]
+  }
+}
+

@@ -14,3 +14,12 @@ trait OptimizedResize extends js.Object {
   def init(callback: js.Function0[scala.Unit]): scala.Unit
 }
 
+object OptimizedResize {
+  @scala.inline
+  def apply(init: js.Function1[js.Function0[scala.Unit], scala.Unit]): OptimizedResize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("init")(init)
+    __obj.asInstanceOf[OptimizedResize]
+  }
+}
+

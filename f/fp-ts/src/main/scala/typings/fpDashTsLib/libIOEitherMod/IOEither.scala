@@ -16,7 +16,7 @@ class IOEither[L, A] protected () extends js.Object {
   def alt(fy: IOEither[L, A]): IOEither[L, A] = js.native
   def ap[B](fab: IOEither[L, js.Function1[/* a */ A, B]]): IOEither[L, B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     */
   def `ap_`[B, C](`this`: IOEither[L, js.Function1[/* b */ B, C]], fb: IOEither[L, B]): IOEither[L, C] = js.native
   /**

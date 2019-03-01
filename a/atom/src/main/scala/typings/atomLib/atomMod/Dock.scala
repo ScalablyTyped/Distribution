@@ -96,3 +96,69 @@ trait Dock extends js.Object {
   def toggle(): scala.Unit
 }
 
+object Dock {
+  @scala.inline
+  def apply(
+    activate: js.Function0[scala.Unit],
+    activateNextPane: js.Function0[scala.Boolean],
+    activatePreviousPane: js.Function0[scala.Boolean],
+    getActivePane: js.Function0[Pane],
+    getActivePaneItem: js.Function0[js.Object],
+    getPaneItems: js.Function0[js.Array[js.Object]],
+    getPanes: js.Function0[js.Array[Pane]],
+    hide: js.Function0[scala.Unit],
+    isVisible: js.Function0[scala.Boolean],
+    observeActivePane: js.Function1[js.Function1[/* pane */ Pane, scala.Unit], Disposable],
+    observeActivePaneItem: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
+    observePaneItems: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
+    observePanes: js.Function1[js.Function1[/* pane */ Pane, scala.Unit], Disposable],
+    observeVisible: js.Function1[js.Function1[/* visible */ scala.Boolean, scala.Unit], Disposable],
+    onDidAddPane: js.Function1[js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit], Disposable],
+    onDidAddPaneItem: js.Function1[js.Function1[/* event */ PaneItemObservedEvent, scala.Unit], Disposable],
+    onDidChangeActivePane: js.Function1[js.Function1[/* pane */ Pane, scala.Unit], Disposable],
+    onDidChangeActivePaneItem: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
+    onDidChangeHovered: js.Function1[js.Function1[/* hovered */ scala.Boolean, scala.Unit], Disposable],
+    onDidChangeVisible: js.Function1[js.Function1[/* visible */ scala.Boolean, scala.Unit], Disposable],
+    onDidDestroyPane: js.Function1[js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit], Disposable],
+    onDidDestroyPaneItem: js.Function1[js.Function1[/* event */ PaneItemObservedEvent, scala.Unit], Disposable],
+    onDidStopChangingActivePaneItem: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
+    onWillDestroyPane: js.Function1[js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit], Disposable],
+    onWillDestroyPaneItem: js.Function1[
+      js.Function1[/* event */ PaneItemObservedEvent, scala.Unit | js.Promise[scala.Unit]], 
+      Disposable
+    ],
+    show: js.Function0[scala.Unit],
+    toggle: js.Function0[scala.Unit]
+  ): Dock = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activate")(activate)
+    __obj.updateDynamic("activateNextPane")(activateNextPane)
+    __obj.updateDynamic("activatePreviousPane")(activatePreviousPane)
+    __obj.updateDynamic("getActivePane")(getActivePane)
+    __obj.updateDynamic("getActivePaneItem")(getActivePaneItem)
+    __obj.updateDynamic("getPaneItems")(getPaneItems)
+    __obj.updateDynamic("getPanes")(getPanes)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("isVisible")(isVisible)
+    __obj.updateDynamic("observeActivePane")(observeActivePane)
+    __obj.updateDynamic("observeActivePaneItem")(observeActivePaneItem)
+    __obj.updateDynamic("observePaneItems")(observePaneItems)
+    __obj.updateDynamic("observePanes")(observePanes)
+    __obj.updateDynamic("observeVisible")(observeVisible)
+    __obj.updateDynamic("onDidAddPane")(onDidAddPane)
+    __obj.updateDynamic("onDidAddPaneItem")(onDidAddPaneItem)
+    __obj.updateDynamic("onDidChangeActivePane")(onDidChangeActivePane)
+    __obj.updateDynamic("onDidChangeActivePaneItem")(onDidChangeActivePaneItem)
+    __obj.updateDynamic("onDidChangeHovered")(onDidChangeHovered)
+    __obj.updateDynamic("onDidChangeVisible")(onDidChangeVisible)
+    __obj.updateDynamic("onDidDestroyPane")(onDidDestroyPane)
+    __obj.updateDynamic("onDidDestroyPaneItem")(onDidDestroyPaneItem)
+    __obj.updateDynamic("onDidStopChangingActivePaneItem")(onDidStopChangingActivePaneItem)
+    __obj.updateDynamic("onWillDestroyPane")(onWillDestroyPane)
+    __obj.updateDynamic("onWillDestroyPaneItem")(onWillDestroyPaneItem)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("toggle")(toggle)
+    __obj.asInstanceOf[Dock]
+  }
+}
+

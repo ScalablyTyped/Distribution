@@ -88,3 +88,59 @@ trait PhantomCSSOptions extends js.Object {
   var screenshotRoot: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PhantomCSSOptions {
+  @scala.inline
+  def apply(
+    addIteratorToImage: scala.Boolean,
+    addLabelToFailedImage: js.UndefOr[scala.Boolean] = js.undefined,
+    casper: casperjsLib.casperjsMod.Casper = null,
+    cleanupComparisonImages: js.UndefOr[scala.Boolean] = js.undefined,
+    comparisonResultRoot: java.lang.String = null,
+    failedComparisonsRoot: java.lang.String = null,
+    fileNameGetter: js.Function2[
+      /* rootPath */ java.lang.String, 
+      /* fileName */ js.UndefOr[java.lang.String], 
+      java.lang.String
+    ] = null,
+    hideElements: java.lang.String = null,
+    libraryRoot: java.lang.String = null,
+    mismatchTolerance: scala.Int | scala.Double = null,
+    onComplete: js.Function3[
+      /* tests */ js.Array[PhantomCSSTest], 
+      /* noOfFails */ scala.Double, 
+      /* noOfErrors */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onFail: js.Function1[/* test */ PhantomCSSTest, scala.Unit] = null,
+    onNewImage: js.Function1[/* test */ PhantomCSSTest, scala.Unit] = null,
+    onPass: js.Function1[/* test */ PhantomCSSTest, scala.Unit] = null,
+    onTimeout: js.Function1[/* test */ PhantomCSSTest, scala.Unit] = null,
+    outputSettings: resemblejsLib.resemblejsMod.ResembleNs.OutputSettings = null,
+    prefixCount: js.UndefOr[scala.Boolean] = js.undefined,
+    rebase: js.Any = null,
+    screenshotRoot: java.lang.String = null
+  ): PhantomCSSOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addIteratorToImage")(addIteratorToImage)
+    if (!js.isUndefined(addLabelToFailedImage)) __obj.updateDynamic("addLabelToFailedImage")(addLabelToFailedImage)
+    if (casper != null) __obj.updateDynamic("casper")(casper)
+    if (!js.isUndefined(cleanupComparisonImages)) __obj.updateDynamic("cleanupComparisonImages")(cleanupComparisonImages)
+    if (comparisonResultRoot != null) __obj.updateDynamic("comparisonResultRoot")(comparisonResultRoot)
+    if (failedComparisonsRoot != null) __obj.updateDynamic("failedComparisonsRoot")(failedComparisonsRoot)
+    if (fileNameGetter != null) __obj.updateDynamic("fileNameGetter")(fileNameGetter)
+    if (hideElements != null) __obj.updateDynamic("hideElements")(hideElements)
+    if (libraryRoot != null) __obj.updateDynamic("libraryRoot")(libraryRoot)
+    if (mismatchTolerance != null) __obj.updateDynamic("mismatchTolerance")(mismatchTolerance.asInstanceOf[js.Any])
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onFail != null) __obj.updateDynamic("onFail")(onFail)
+    if (onNewImage != null) __obj.updateDynamic("onNewImage")(onNewImage)
+    if (onPass != null) __obj.updateDynamic("onPass")(onPass)
+    if (onTimeout != null) __obj.updateDynamic("onTimeout")(onTimeout)
+    if (outputSettings != null) __obj.updateDynamic("outputSettings")(outputSettings)
+    if (!js.isUndefined(prefixCount)) __obj.updateDynamic("prefixCount")(prefixCount)
+    if (rebase != null) __obj.updateDynamic("rebase")(rebase)
+    if (screenshotRoot != null) __obj.updateDynamic("screenshotRoot")(screenshotRoot)
+    __obj.asInstanceOf[PhantomCSSOptions]
+  }
+}
+

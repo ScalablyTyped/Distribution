@@ -37,3 +37,26 @@ trait PubsubLocation extends js.Object {
   var withAttributes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PubsubLocation {
+  @scala.inline
+  def apply(
+    dropLateData: js.UndefOr[scala.Boolean] = js.undefined,
+    idLabel: java.lang.String = null,
+    subscription: java.lang.String = null,
+    timestampLabel: java.lang.String = null,
+    topic: java.lang.String = null,
+    trackingSubscription: java.lang.String = null,
+    withAttributes: js.UndefOr[scala.Boolean] = js.undefined
+  ): PubsubLocation = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dropLateData)) __obj.updateDynamic("dropLateData")(dropLateData)
+    if (idLabel != null) __obj.updateDynamic("idLabel")(idLabel)
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (timestampLabel != null) __obj.updateDynamic("timestampLabel")(timestampLabel)
+    if (topic != null) __obj.updateDynamic("topic")(topic)
+    if (trackingSubscription != null) __obj.updateDynamic("trackingSubscription")(trackingSubscription)
+    if (!js.isUndefined(withAttributes)) __obj.updateDynamic("withAttributes")(withAttributes)
+    __obj.asInstanceOf[PubsubLocation]
+  }
+}
+

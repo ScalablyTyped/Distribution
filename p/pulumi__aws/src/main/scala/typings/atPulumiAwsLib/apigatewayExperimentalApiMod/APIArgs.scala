@@ -23,3 +23,18 @@ trait APIArgs extends js.Object {
   var swaggerString: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object APIArgs {
+  @scala.inline
+  def apply(
+    routes: js.Array[Route] = null,
+    stageName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    swaggerString: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): APIArgs = {
+    val __obj = js.Dynamic.literal()
+    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    if (swaggerString != null) __obj.updateDynamic("swaggerString")(swaggerString.asInstanceOf[js.Any])
+    __obj.asInstanceOf[APIArgs]
+  }
+}
+

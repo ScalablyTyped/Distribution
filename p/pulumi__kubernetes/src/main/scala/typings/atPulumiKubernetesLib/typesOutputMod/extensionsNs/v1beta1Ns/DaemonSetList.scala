@@ -34,3 +34,20 @@ trait DaemonSetList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object DaemonSetList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`,
+    items: js.Array[DaemonSet],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): DaemonSetList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[DaemonSetList]
+  }
+}
+

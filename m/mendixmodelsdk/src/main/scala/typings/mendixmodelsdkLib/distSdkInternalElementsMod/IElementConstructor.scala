@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IElementConstructor
-  extends org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Element]
+  extends mendixmodelsdkLib.distSdkInternalInstancesMod.InstanceConstructor
+     with org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Element]
 

@@ -24,3 +24,25 @@ trait SinkInfo extends js.Object {
   ]
 }
 
+object SinkInfo {
+  @scala.inline
+  def apply(
+    id: chromeDashAppsLib.chromeNs.integer,
+    name: java.lang.String,
+    state: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_CONNECTED, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTED[keyof chrome-apps.Anon_CONNECTED] */ js.Any
+      ]
+    ]
+  ): SinkInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SinkInfo]
+  }
+}
+

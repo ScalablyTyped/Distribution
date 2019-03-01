@@ -13,3 +13,12 @@ trait NavigationInfo extends js.Object {
   var enableForcedRedirect: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NavigationInfo {
+  @scala.inline
+  def apply(enableForcedRedirect: js.UndefOr[scala.Boolean] = js.undefined): NavigationInfo = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableForcedRedirect)) __obj.updateDynamic("enableForcedRedirect")(enableForcedRedirect)
+    __obj.asInstanceOf[NavigationInfo]
+  }
+}
+

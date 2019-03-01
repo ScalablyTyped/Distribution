@@ -22,3 +22,18 @@ trait UsageRule extends js.Object {
   var skipServiceControl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UsageRule {
+  @scala.inline
+  def apply(
+    allowUnregisteredCalls: js.UndefOr[scala.Boolean] = js.undefined,
+    selector: java.lang.String = null,
+    skipServiceControl: js.UndefOr[scala.Boolean] = js.undefined
+  ): UsageRule = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowUnregisteredCalls)) __obj.updateDynamic("allowUnregisteredCalls")(allowUnregisteredCalls)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (!js.isUndefined(skipServiceControl)) __obj.updateDynamic("skipServiceControl")(skipServiceControl)
+    __obj.asInstanceOf[UsageRule]
+  }
+}
+

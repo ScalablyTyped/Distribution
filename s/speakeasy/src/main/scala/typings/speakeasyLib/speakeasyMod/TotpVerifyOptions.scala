@@ -46,3 +46,32 @@ trait TotpVerifyOptions extends SharedOptions {
   var window: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TotpVerifyOptions {
+  @scala.inline
+  def apply(
+    secret: java.lang.String,
+    token: java.lang.String,
+    algorithm: Algorithm = null,
+    counter: java.lang.String = null,
+    digits: scala.Int | scala.Double = null,
+    encoding: Encoding = null,
+    epoch: scala.Int | scala.Double = null,
+    step: scala.Int | scala.Double = null,
+    time: scala.Int | scala.Double = null,
+    window: scala.Int | scala.Double = null
+  ): TotpVerifyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("secret")(secret)
+    __obj.updateDynamic("token")(token)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (counter != null) __obj.updateDynamic("counter")(counter)
+    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TotpVerifyOptions]
+  }
+}
+

@@ -32,3 +32,20 @@ trait AndroidMatrix extends js.Object {
   var orientations: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AndroidMatrix {
+  @scala.inline
+  def apply(
+    androidModelIds: js.Array[java.lang.String] = null,
+    androidVersionIds: js.Array[java.lang.String] = null,
+    locales: js.Array[java.lang.String] = null,
+    orientations: js.Array[java.lang.String] = null
+  ): AndroidMatrix = {
+    val __obj = js.Dynamic.literal()
+    if (androidModelIds != null) __obj.updateDynamic("androidModelIds")(androidModelIds)
+    if (androidVersionIds != null) __obj.updateDynamic("androidVersionIds")(androidVersionIds)
+    if (locales != null) __obj.updateDynamic("locales")(locales)
+    if (orientations != null) __obj.updateDynamic("orientations")(orientations)
+    __obj.asInstanceOf[AndroidMatrix]
+  }
+}
+

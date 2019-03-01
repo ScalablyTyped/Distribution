@@ -42,3 +42,30 @@ trait WrapperProps[T /* <: reactLib.HTMLElement */]
   ] = js.undefined
 }
 
+object WrapperProps {
+  @scala.inline
+  def apply[T /* <: reactLib.HTMLElement */](
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[T] = null,
+    closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    isOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    onMenuToggle: js.Function1[/* obj */ WrapperState, _] = null,
+    onSelection: js.Function2[
+      /* value */ js.Any, 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[T, reactLib.Event], 
+      _
+    ] = null,
+    tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null
+  ): WrapperProps[T] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur)
+    if (!js.isUndefined(closeOnSelection)) __obj.updateDynamic("closeOnSelection")(closeOnSelection)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (onMenuToggle != null) __obj.updateDynamic("onMenuToggle")(onMenuToggle)
+    if (onSelection != null) __obj.updateDynamic("onSelection")(onSelection)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[WrapperProps[T]]
+  }
+}
+

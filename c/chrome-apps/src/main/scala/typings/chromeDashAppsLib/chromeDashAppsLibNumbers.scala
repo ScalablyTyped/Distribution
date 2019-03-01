@@ -7,16 +7,19 @@ import scala.scalajs.js.annotation._
 
 object chromeDashAppsLibNumbers {
   @js.native
-  sealed trait `-1` extends js.Object
+  sealed trait `-1`
+    extends chromeDashAppsLib.WebViewNs.EventsNs.ConsoleMessageLevel
   
   @js.native
   sealed trait `-2` extends js.Object
   
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends chromeDashAppsLib.WebViewNs.EventsNs.ConsoleMessageLevel
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends chromeDashAppsLib.WebViewNs.EventsNs.ConsoleMessageLevel
   
   @js.native
   sealed trait `102400` extends js.Object
@@ -31,7 +34,8 @@ object chromeDashAppsLibNumbers {
   sealed trait `1800` extends js.Object
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends chromeDashAppsLib.WebViewNs.EventsNs.ConsoleMessageLevel
   
   @js.native
   sealed trait `270` extends js.Object

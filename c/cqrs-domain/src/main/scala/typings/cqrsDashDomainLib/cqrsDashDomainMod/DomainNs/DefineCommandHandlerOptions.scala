@@ -22,3 +22,18 @@ trait DefineCommandHandlerOptions extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DefineCommandHandlerOptions {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    payload: java.lang.String = null,
+    version: scala.Int | scala.Double = null
+  ): DefineCommandHandlerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefineCommandHandlerOptions]
+  }
+}
+

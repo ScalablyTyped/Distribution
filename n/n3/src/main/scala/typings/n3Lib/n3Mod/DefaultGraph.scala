@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("n3", "DefaultGraph")
 @js.native
 class DefaultGraph ()
-  extends rdfDashJsLib.rdfDashJsMod.DefaultGraph {
+  extends rdfDashJsLib.rdfDashJsMod.DefaultGraph
+     with Quad_Graph
+     with Term {
   val id: java.lang.String = js.native
   /**
     * Contains the constant "DefaultGraph".

@@ -17,3 +17,15 @@ trait DatabaseChangesResultItem extends js.Object {
   var seq: js.Any
 }
 
+object DatabaseChangesResultItem {
+  @scala.inline
+  def apply(changes: js.Array[nanoLib.Anon_Rev], deleted: scala.Boolean, id: java.lang.String, seq: js.Any): DatabaseChangesResultItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("deleted")(deleted)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("seq")(seq)
+    __obj.asInstanceOf[DatabaseChangesResultItem]
+  }
+}
+

@@ -31,3 +31,47 @@ trait LiveBroadcastsResource extends js.Object {
   def update(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
 }
 
+object LiveBroadcastsResource {
+  @scala.inline
+  def apply(
+    bind: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenOnBehalfOfContentOwner, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+    ],
+    control: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltDisplaySlate, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenOnBehalfOfContentOwnerOnBehalfOfContentOwnerChannel, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltBroadcastStatus, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcastListResponse]
+    ],
+    transition: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltBroadcastStatusFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+    ],
+    update: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+    ]
+  ): LiveBroadcastsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bind")(bind)
+    __obj.updateDynamic("control")(control)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("transition")(transition)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[LiveBroadcastsResource]
+  }
+}
+

@@ -34,3 +34,26 @@ trait ModelPrototype
   var validate: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
 }
 
+object ModelPrototype {
+  @scala.inline
+  def apply(
+    StringDictionary: /* propertyName */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | js.Object | Validator] = null,
+    dataItem: js.Function0[js.Object] = null,
+    init: js.Function = null,
+    isNew: js.Function0[scala.Boolean] = null,
+    options: Anon_BaseUrl = null,
+    reset: js.Function1[ModelPrototype, ModelPrototype] = null,
+    validate: js.Function0[scala.Boolean] = null
+  ): ModelPrototype = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (isNew != null) __obj.updateDynamic("isNew")(isNew)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[ModelPrototype]
+  }
+}
+

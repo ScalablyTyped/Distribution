@@ -12,3 +12,20 @@ trait IpMessagingGrantOptions extends js.Object {
   var serviceSid: java.lang.String
 }
 
+object IpMessagingGrantOptions {
+  @scala.inline
+  def apply(
+    deploymentRoleSid: java.lang.String,
+    endpointId: java.lang.String,
+    pushCredentialSid: java.lang.String,
+    serviceSid: java.lang.String
+  ): IpMessagingGrantOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deploymentRoleSid")(deploymentRoleSid)
+    __obj.updateDynamic("endpointId")(endpointId)
+    __obj.updateDynamic("pushCredentialSid")(pushCredentialSid)
+    __obj.updateDynamic("serviceSid")(serviceSid)
+    __obj.asInstanceOf[IpMessagingGrantOptions]
+  }
+}
+

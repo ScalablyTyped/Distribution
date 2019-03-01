@@ -7,70 +7,94 @@ import scala.scalajs.js.annotation._
 
 object geodesyLibStrings {
   @js.native
-  sealed trait Airy1830 extends js.Object
+  sealed trait Airy1830
+    extends geodesyLib.geodesyMod.ellipsoid
   
   @js.native
-  sealed trait AiryModified extends js.Object
+  sealed trait AiryModified
+    extends geodesyLib.geodesyMod.ellipsoid
   
   @js.native
-  sealed trait Bessel1841 extends js.Object
+  sealed trait Bessel1841
+    extends geodesyLib.geodesyMod.ellipsoid
   
   @js.native
-  sealed trait Clarke1866 extends js.Object
+  sealed trait Clarke1866
+    extends geodesyLib.geodesyMod.ellipsoid
   
   @js.native
-  sealed trait Clarke1880IGN extends js.Object
+  sealed trait Clarke1880IGN
+    extends geodesyLib.geodesyMod.ellipsoid
   
   @js.native
-  sealed trait ED50 extends js.Object
+  sealed trait ED50
+    extends geodesyLib.geodesyMod.datum
   
   @js.native
-  sealed trait GRS80 extends js.Object
+  sealed trait GRS80
+    extends geodesyLib.geodesyMod.ellipsoid
   
   @js.native
-  sealed trait Intl1924 extends js.Object
+  sealed trait Intl1924
+    extends geodesyLib.geodesyMod.ellipsoid
   
   @js.native
-  sealed trait Irl1975 extends js.Object
+  sealed trait Irl1975
+    extends geodesyLib.geodesyMod.datum
   
   @js.native
-  sealed trait N extends js.Object
+  sealed trait N
+    extends geodesyLib.geodesyMod.hemisphere
   
   @js.native
-  sealed trait NAD27 extends js.Object
+  sealed trait NAD27
+    extends geodesyLib.geodesyMod.datum
   
   @js.native
-  sealed trait NAD83 extends js.Object
+  sealed trait NAD83
+    extends geodesyLib.geodesyMod.datum
   
   @js.native
-  sealed trait NTF extends js.Object
+  sealed trait NTF
+    extends geodesyLib.geodesyMod.datum
   
   @js.native
-  sealed trait OSGB36 extends js.Object
+  sealed trait OSGB36
+    extends geodesyLib.geodesyMod.datum
   
   @js.native
-  sealed trait Potsdam extends js.Object
+  sealed trait Potsdam
+    extends geodesyLib.geodesyMod.datum
   
   @js.native
-  sealed trait S extends js.Object
+  sealed trait S
+    extends geodesyLib.geodesyMod.hemisphere
   
   @js.native
-  sealed trait TokyoJapan extends js.Object
+  sealed trait TokyoJapan
+    extends geodesyLib.geodesyMod.datum
   
   @js.native
-  sealed trait WGS72 extends js.Object
+  sealed trait WGS72
+    extends geodesyLib.geodesyMod.datum
+       with geodesyLib.geodesyMod.ellipsoid
   
   @js.native
-  sealed trait WGS84 extends js.Object
+  sealed trait WGS84
+    extends geodesyLib.geodesyMod.datum
+       with geodesyLib.geodesyMod.ellipsoid
   
   @js.native
-  sealed trait d extends js.Object
+  sealed trait d
+    extends geodesyLib.geodesyMod.format
   
   @js.native
-  sealed trait dm extends js.Object
+  sealed trait dm
+    extends geodesyLib.geodesyMod.format
   
   @js.native
-  sealed trait dms extends js.Object
+  sealed trait dms
+    extends geodesyLib.geodesyMod.format
   
   @scala.inline
   def Airy1830: Airy1830 = "Airy1830".asInstanceOf[Airy1830]

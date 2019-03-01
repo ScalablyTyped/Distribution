@@ -74,3 +74,99 @@ trait ClustersResource extends js.Object {
   def update(request: gapiDotClientDotContainerLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object ClustersResource {
+  @scala.inline
+  def apply(
+    addons: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    completeIpRotation: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    create: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Cluster]
+    ],
+    legacyAbac: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListClustersResponse]
+    ],
+    locations: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    logging: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    master: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    monitoring: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    nodePools: NodePoolsResource,
+    resourceLabels: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMaintenancePolicy: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMasterAuth: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setNetworkPolicy: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    startIpRotation: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    update: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): ClustersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addons")(addons)
+    __obj.updateDynamic("completeIpRotation")(completeIpRotation)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("legacyAbac")(legacyAbac)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("locations")(locations)
+    __obj.updateDynamic("logging")(logging)
+    __obj.updateDynamic("master")(master)
+    __obj.updateDynamic("monitoring")(monitoring)
+    __obj.updateDynamic("nodePools")(nodePools)
+    __obj.updateDynamic("resourceLabels")(resourceLabels)
+    __obj.updateDynamic("setMaintenancePolicy")(setMaintenancePolicy)
+    __obj.updateDynamic("setMasterAuth")(setMasterAuth)
+    __obj.updateDynamic("setNetworkPolicy")(setNetworkPolicy)
+    __obj.updateDynamic("startIpRotation")(startIpRotation)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ClustersResource]
+  }
+}
+

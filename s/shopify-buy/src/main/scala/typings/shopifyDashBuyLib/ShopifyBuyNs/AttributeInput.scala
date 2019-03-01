@@ -13,3 +13,22 @@ trait AttributeInput extends js.Object {
   var variantId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AttributeInput {
+  @scala.inline
+  def apply(
+    id: java.lang.String | scala.Double = null,
+    key: java.lang.String = null,
+    quantity: scala.Int | scala.Double = null,
+    value: java.lang.String = null,
+    variantId: java.lang.String = null
+  ): AttributeInput = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (variantId != null) __obj.updateDynamic("variantId")(variantId)
+    __obj.asInstanceOf[AttributeInput]
+  }
+}
+

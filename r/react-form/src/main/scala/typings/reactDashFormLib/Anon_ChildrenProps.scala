@@ -14,3 +14,17 @@ trait Anon_ChildrenProps extends js.Object {
   ] = js.undefined
 }
 
+object Anon_ChildrenProps {
+  @scala.inline
+  def apply(
+    children: (js.Function1[
+      /* props */ reactDashFormLib.reactDashFormMod.FieldApi, 
+      reactDashFormLib.reactDashFormMod.RenderReturn
+    ]) | reactDashFormLib.reactDashFormMod.RenderReturn = null
+  ): Anon_ChildrenProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ChildrenProps]
+  }
+}
+

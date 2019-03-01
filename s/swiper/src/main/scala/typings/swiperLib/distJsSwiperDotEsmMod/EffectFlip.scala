@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "EffectFlip")
 @js.native
-class EffectFlip () extends js.Object
+class EffectFlip ()
+  extends swiperLib.swiperMod.SwiperModule
 

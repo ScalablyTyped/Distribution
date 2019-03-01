@@ -30,3 +30,24 @@ trait ImportContext extends js.Object {
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImportContext {
+  @scala.inline
+  def apply(
+    csvImportOptions: gapiDotClientDotSqladminLib.Anon_Columns = null,
+    database: java.lang.String = null,
+    fileType: java.lang.String = null,
+    importUser: java.lang.String = null,
+    kind: java.lang.String = null,
+    uri: java.lang.String = null
+  ): ImportContext = {
+    val __obj = js.Dynamic.literal()
+    if (csvImportOptions != null) __obj.updateDynamic("csvImportOptions")(csvImportOptions)
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
+    if (importUser != null) __obj.updateDynamic("importUser")(importUser)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[ImportContext]
+  }
+}
+

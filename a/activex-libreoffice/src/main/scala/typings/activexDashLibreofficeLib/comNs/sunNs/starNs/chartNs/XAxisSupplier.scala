@@ -23,3 +23,22 @@ trait XAxisSupplier
   def getSecondaryAxis(nDimensionIndex: scala.Double): XAxis
 }
 
+object XAxisSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getAxis: js.Function1[scala.Double, XAxis],
+    getSecondaryAxis: js.Function1[scala.Double, XAxis],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAxisSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAxis")(getAxis)
+    __obj.updateDynamic("getSecondaryAxis")(getSecondaryAxis)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAxisSupplier]
+  }
+}
+

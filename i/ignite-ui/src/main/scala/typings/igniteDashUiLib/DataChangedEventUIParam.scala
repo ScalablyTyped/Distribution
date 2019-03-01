@@ -16,3 +16,13 @@ trait DataChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DataChangedEventUIParam {
+  @scala.inline
+  def apply(newData: js.Any = null, owner: js.Any = null): DataChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (newData != null) __obj.updateDynamic("newData")(newData)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DataChangedEventUIParam]
+  }
+}
+

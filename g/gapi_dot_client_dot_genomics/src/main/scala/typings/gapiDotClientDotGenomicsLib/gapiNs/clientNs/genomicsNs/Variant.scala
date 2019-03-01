@@ -60,3 +60,38 @@ trait Variant extends js.Object {
   var variantSetId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Variant {
+  @scala.inline
+  def apply(
+    alternateBases: js.Array[java.lang.String] = null,
+    calls: js.Array[VariantCall] = null,
+    created: java.lang.String = null,
+    end: java.lang.String = null,
+    filter: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    info: stdLib.Record[java.lang.String, js.Array[_]] = null,
+    names: js.Array[java.lang.String] = null,
+    quality: scala.Int | scala.Double = null,
+    referenceBases: java.lang.String = null,
+    referenceName: java.lang.String = null,
+    start: java.lang.String = null,
+    variantSetId: java.lang.String = null
+  ): Variant = {
+    val __obj = js.Dynamic.literal()
+    if (alternateBases != null) __obj.updateDynamic("alternateBases")(alternateBases)
+    if (calls != null) __obj.updateDynamic("calls")(calls)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (referenceBases != null) __obj.updateDynamic("referenceBases")(referenceBases)
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (variantSetId != null) __obj.updateDynamic("variantSetId")(variantSetId)
+    __obj.asInstanceOf[Variant]
+  }
+}
+

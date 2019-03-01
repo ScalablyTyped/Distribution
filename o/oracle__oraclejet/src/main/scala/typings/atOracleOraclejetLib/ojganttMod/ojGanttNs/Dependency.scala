@@ -18,3 +18,26 @@ trait Dependency[K1, K2] extends js.Object {
   ] = js.undefined
 }
 
+object Dependency {
+  @scala.inline
+  def apply[K1, K2](
+    id: K1,
+    predecessorTaskId: K2,
+    successorTaskId: K2,
+    shortDesc: java.lang.String = null,
+    svgClassName: java.lang.String = null,
+    svgStyle: js.Object = null,
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.startStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.startFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishStart = null
+  ): Dependency[K1, K2] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("predecessorTaskId")(predecessorTaskId.asInstanceOf[js.Any])
+    __obj.updateDynamic("successorTaskId")(successorTaskId.asInstanceOf[js.Any])
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Dependency[K1, K2]]
+  }
+}
+

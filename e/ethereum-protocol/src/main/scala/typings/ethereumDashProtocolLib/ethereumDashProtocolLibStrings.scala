@@ -7,61 +7,80 @@ import scala.scalajs.js.annotation._
 
 object ethereumDashProtocolLibStrings {
   @js.native
-  sealed trait ada extends js.Object
+  sealed trait ada
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait babbage extends js.Object
+  sealed trait babbage
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait einstein extends js.Object
+  sealed trait einstein
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait ether extends js.Object
+  sealed trait ether
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait finney extends js.Object
+  sealed trait finney
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait gether extends js.Object
+  sealed trait gether
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait grand extends js.Object
+  sealed trait grand
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait gwei extends js.Object
+  sealed trait gwei
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait kether extends js.Object
+  sealed trait kether
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait kwei extends js.Object
+  sealed trait kwei
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait mether extends js.Object
+  sealed trait mether
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait mwei extends js.Object
+  sealed trait mwei
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait nonpayable extends js.Object
+  sealed trait nonpayable
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.ConstructorStateMutability
   
   @js.native
-  sealed trait payable extends js.Object
+  sealed trait payable
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.ConstructorStateMutability
   
   @js.native
-  sealed trait pure extends js.Object
+  sealed trait pure
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.StateMutability
   
   @js.native
-  sealed trait shannon extends js.Object
+  sealed trait shannon
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait szabo extends js.Object
+  sealed trait szabo
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait tether extends js.Object
+  sealed trait tether
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.Unit
   
   @js.native
-  sealed trait view extends js.Object
+  sealed trait view
+    extends ethereumDashProtocolLib.ethereumDashProtocolMod.StateMutability
   
   @scala.inline
   def ada: ada = "ada".asInstanceOf[ada]

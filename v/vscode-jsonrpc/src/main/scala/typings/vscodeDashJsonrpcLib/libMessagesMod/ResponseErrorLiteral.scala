@@ -21,3 +21,14 @@ trait ResponseErrorLiteral[D] extends js.Object {
   var message: java.lang.String
 }
 
+object ResponseErrorLiteral {
+  @scala.inline
+  def apply[D](code: scala.Double, message: java.lang.String, data: D = null): ResponseErrorLiteral[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("message")(message)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResponseErrorLiteral[D]]
+  }
+}
+

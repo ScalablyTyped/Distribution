@@ -37,3 +37,23 @@ trait PodCondition extends js.Object {
   val `type`: java.lang.String
 }
 
+object PodCondition {
+  @scala.inline
+  def apply(
+    lastProbeTime: java.lang.String,
+    lastTransitionTime: java.lang.String,
+    message: java.lang.String,
+    reason: java.lang.String,
+    status: java.lang.String,
+    `type`: java.lang.String
+  ): PodCondition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("lastProbeTime")(lastProbeTime)
+    __obj.updateDynamic("lastTransitionTime")(lastTransitionTime)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[PodCondition]
+  }
+}
+

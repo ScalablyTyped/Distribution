@@ -10,3 +10,13 @@ trait Element extends js.Object {
   var value: js.Any
 }
 
+object Element {
+  @scala.inline
+  def apply(key: java.lang.String, value: js.Any): Element = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Element]
+  }
+}
+

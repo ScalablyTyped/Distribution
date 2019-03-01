@@ -11,3 +11,18 @@ trait AutoCompleteTokensEditorProps extends js.Object {
   var value: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object AutoCompleteTokensEditorProps {
+  @scala.inline
+  def apply(
+    options: js.Array[java.lang.String | reactDashDataDashGridLib.Anon_Caption],
+    column: reactDashDataDashGridLib.AdazzleReactDataGridNs.ExcelColumn = null,
+    value: js.Array[_] = null
+  ): AutoCompleteTokensEditorProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[AutoCompleteTokensEditorProps]
+  }
+}
+

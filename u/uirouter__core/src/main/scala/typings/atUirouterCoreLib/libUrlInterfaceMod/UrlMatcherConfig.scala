@@ -20,3 +20,27 @@ trait UrlMatcherConfig extends js.Object {
   ]
 }
 
+object UrlMatcherConfig {
+  @scala.inline
+  def apply(
+    caseInsensitive: js.Function1[/* value */ js.UndefOr[scala.Boolean], scala.Boolean],
+    defaultSquashPolicy: js.Function1[
+      /* value */ js.UndefOr[scala.Boolean | java.lang.String], 
+      java.lang.String | scala.Boolean
+    ],
+    strictMode: js.Function1[/* value */ js.UndefOr[scala.Boolean], scala.Boolean],
+    `type`: js.Function3[
+      /* name */ java.lang.String, 
+      /* definition */ js.UndefOr[atUirouterCoreLib.libParamsInterfaceMod.ParamTypeDefinition], 
+      /* definitionFn */ js.UndefOr[js.Function0[atUirouterCoreLib.libParamsInterfaceMod.ParamTypeDefinition]], 
+      _
+    ]
+  ): UrlMatcherConfig = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("caseInsensitive")(caseInsensitive)
+    __obj.updateDynamic("defaultSquashPolicy")(defaultSquashPolicy)
+    __obj.updateDynamic("strictMode")(strictMode)
+    __obj.asInstanceOf[UrlMatcherConfig]
+  }
+}
+

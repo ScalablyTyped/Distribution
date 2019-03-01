@@ -10,3 +10,12 @@ trait SourceGetMetadataRequest extends js.Object {
   var source: js.UndefOr[Source] = js.undefined
 }
 
+object SourceGetMetadataRequest {
+  @scala.inline
+  def apply(source: Source = null): SourceGetMetadataRequest = {
+    val __obj = js.Dynamic.literal()
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[SourceGetMetadataRequest]
+  }
+}
+

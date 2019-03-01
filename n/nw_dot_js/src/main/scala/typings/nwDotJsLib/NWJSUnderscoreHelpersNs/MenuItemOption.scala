@@ -53,3 +53,32 @@ trait MenuItemOption extends js.Object {
   ] = js.undefined
 }
 
+object MenuItemOption {
+  @scala.inline
+  def apply(
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    click: js.Function = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    key: java.lang.String = null,
+    label: java.lang.String = null,
+    modifiers: java.lang.String = null,
+    submenu: nwDotJsLib.nwNs.Menu = null,
+    tooltip: java.lang.String = null,
+    `type`: java.lang.String | nwDotJsLib.nwDotJsLibStrings.normal | nwDotJsLib.nwDotJsLibStrings.checkbox | nwDotJsLib.nwDotJsLibStrings.separator = null
+  ): MenuItemOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
+    if (submenu != null) __obj.updateDynamic("submenu")(submenu)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MenuItemOption]
+  }
+}
+

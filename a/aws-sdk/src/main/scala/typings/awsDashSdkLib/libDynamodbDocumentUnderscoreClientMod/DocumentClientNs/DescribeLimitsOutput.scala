@@ -24,3 +24,20 @@ trait DescribeLimitsOutput extends js.Object {
   var TableMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
 }
 
+object DescribeLimitsOutput {
+  @scala.inline
+  def apply(
+    AccountMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined,
+    AccountMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined,
+    TableMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined,
+    TableMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  ): DescribeLimitsOutput = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(AccountMaxReadCapacityUnits)) __obj.updateDynamic("AccountMaxReadCapacityUnits")(AccountMaxReadCapacityUnits)
+    if (!js.isUndefined(AccountMaxWriteCapacityUnits)) __obj.updateDynamic("AccountMaxWriteCapacityUnits")(AccountMaxWriteCapacityUnits)
+    if (!js.isUndefined(TableMaxReadCapacityUnits)) __obj.updateDynamic("TableMaxReadCapacityUnits")(TableMaxReadCapacityUnits)
+    if (!js.isUndefined(TableMaxWriteCapacityUnits)) __obj.updateDynamic("TableMaxWriteCapacityUnits")(TableMaxWriteCapacityUnits)
+    __obj.asInstanceOf[DescribeLimitsOutput]
+  }
+}
+

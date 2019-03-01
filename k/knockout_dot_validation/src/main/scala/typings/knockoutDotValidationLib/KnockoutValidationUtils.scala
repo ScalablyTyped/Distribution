@@ -21,3 +21,38 @@ trait KnockoutValidationUtils extends js.Object {
   def values(o: js.Any): js.Array[_]
 }
 
+object KnockoutValidationUtils {
+  @scala.inline
+  def apply(
+    contextFor: js.Function1[stdLib.Element, KnockoutValidationConfiguration],
+    getConfigOptions: js.Function1[stdLib.Element, KnockoutValidationConfiguration],
+    getDomData: js.Function1[stdLib.Element, KnockoutValidationConfiguration],
+    getValue: js.Function1[js.Any, js.Any],
+    hasAttribute: js.Function2[stdLib.Element, java.lang.String, scala.Boolean],
+    insertAfter: js.Function2[stdLib.Element, stdLib.Element, scala.Unit],
+    isArray: js.Function1[js.Any, scala.Boolean],
+    isEmptyVal: js.Function1[js.Any, scala.Boolean],
+    isObject: js.Function1[js.Any, scala.Boolean],
+    isValidatable: js.Function1[js.Any, scala.Boolean],
+    newId: js.Function0[scala.Double],
+    setDomData: js.Function2[stdLib.Element, KnockoutValidationConfiguration, scala.Unit],
+    values: js.Function1[js.Any, js.Array[_]]
+  ): KnockoutValidationUtils = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contextFor")(contextFor)
+    __obj.updateDynamic("getConfigOptions")(getConfigOptions)
+    __obj.updateDynamic("getDomData")(getDomData)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("hasAttribute")(hasAttribute)
+    __obj.updateDynamic("insertAfter")(insertAfter)
+    __obj.updateDynamic("isArray")(isArray)
+    __obj.updateDynamic("isEmptyVal")(isEmptyVal)
+    __obj.updateDynamic("isObject")(isObject)
+    __obj.updateDynamic("isValidatable")(isValidatable)
+    __obj.updateDynamic("newId")(newId)
+    __obj.updateDynamic("setDomData")(setDomData)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[KnockoutValidationUtils]
+  }
+}
+

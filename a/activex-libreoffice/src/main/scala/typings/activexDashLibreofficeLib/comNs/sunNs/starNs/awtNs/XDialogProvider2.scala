@@ -30,3 +30,32 @@ trait XDialogProvider2 extends XDialogProvider {
   def createDialogWithHandler(URL: java.lang.String, xHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): XDialog
 }
 
+object XDialogProvider2 {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createDialog: js.Function1[java.lang.String, XDialog],
+    createDialogWithArguments: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      XDialog
+    ],
+    createDialogWithHandler: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      XDialog
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDialogProvider2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createDialog")(createDialog)
+    __obj.updateDynamic("createDialogWithArguments")(createDialogWithArguments)
+    __obj.updateDynamic("createDialogWithHandler")(createDialogWithHandler)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDialogProvider2]
+  }
+}
+

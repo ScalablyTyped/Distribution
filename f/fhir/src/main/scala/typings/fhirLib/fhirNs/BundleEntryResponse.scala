@@ -47,3 +47,42 @@ trait BundleEntryResponse extends BackboneElement {
   var status: java.lang.String
 }
 
+object BundleEntryResponse {
+  @scala.inline
+  def apply(
+    status: java.lang.String,
+    _etag: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _lastModified: Element = null,
+    _location: Element = null,
+    _status: Element = null,
+    etag: java.lang.String = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    lastModified: instant = null,
+    location: uri = null,
+    modifierExtension: js.Array[Extension] = null,
+    outcome: Resource = null
+  ): BundleEntryResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (_etag != null) __obj.updateDynamic("_etag")(_etag)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_lastModified != null) __obj.updateDynamic("_lastModified")(_lastModified)
+    if (_location != null) __obj.updateDynamic("_location")(_location)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    __obj.asInstanceOf[BundleEntryResponse]
+  }
+}
+

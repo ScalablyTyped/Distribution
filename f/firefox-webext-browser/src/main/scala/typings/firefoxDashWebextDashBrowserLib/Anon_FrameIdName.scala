@@ -12,3 +12,13 @@ trait Anon_FrameIdName extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_FrameIdName {
+  @scala.inline
+  def apply(frameId: scala.Int | scala.Double = null, name: java.lang.String = null): Anon_FrameIdName = {
+    val __obj = js.Dynamic.literal()
+    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_FrameIdName]
+  }
+}
+

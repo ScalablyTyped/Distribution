@@ -22,3 +22,21 @@ trait OlapXmlaDataSourceOptionsRequestOptions
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OlapXmlaDataSourceOptionsRequestOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for OlapXmlaDataSourceOptionsRequestOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    beforeSend: js.Function = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): OlapXmlaDataSourceOptionsRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[OlapXmlaDataSourceOptionsRequestOptions]
+  }
+}
+

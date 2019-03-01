@@ -135,3 +135,88 @@ trait Model extends js.Object {
   var yName: js.UndefOr[js.Any] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    Click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    allowNextValue: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSnapping: js.UndefOr[scala.Boolean] = js.undefined,
+    border: Border = null,
+    dataSource: js.Any = null,
+    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
+    enableAutoResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDeferredUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableScrollbar: js.UndefOr[scala.Boolean] = js.undefined,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    labelSettings: LabelSettings = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    loaded: js.Function1[/* e */ LoadedEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    navigatorStyleSettings: NavigatorStyleSettings = null,
+    padding: java.lang.String = null,
+    rangeChanged: js.Function1[/* e */ RangeChangedEventArgs, scala.Unit] = null,
+    rangePadding: RangePadding | java.lang.String = null,
+    rangeSettings: RangeSettings = null,
+    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
+    scrollChanged: js.Function1[/* e */ ScrollChangedEventArgs, scala.Unit] = null,
+    scrollEnd: js.Function1[/* e */ ScrollEndEventArgs, scala.Unit] = null,
+    scrollRangeSettings: ScrollRangeSettings = null,
+    scrollStart: js.Function1[/* e */ ScrollStartEventArgs, scala.Unit] = null,
+    selectedData: js.Any = null,
+    selectedRangeEnd: js.Function1[/* e */ SelectedRangeEndEventArgs, scala.Unit] = null,
+    selectedRangeSettings: SelectedRangeSettings = null,
+    selectedRangeStart: js.Function1[/* e */ SelectedRangeStartEventArgs, scala.Unit] = null,
+    series: js.Array[Series] = null,
+    seriesSettings: js.Array[SeriesSetting] = null,
+    sizeSettings: SizeSettings = null,
+    theme: java.lang.String = null,
+    tooltipSettings: TooltipSettings = null,
+    valueAxisSettings: ValueAxisSettings = null,
+    valueType: ValueType | java.lang.String = null,
+    xName: js.Any = null,
+    yName: js.Any = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (Click != null) __obj.updateDynamic("Click")(Click)
+    if (!js.isUndefined(allowNextValue)) __obj.updateDynamic("allowNextValue")(allowNextValue)
+    if (!js.isUndefined(allowSnapping)) __obj.updateDynamic("allowSnapping")(allowSnapping)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
+    if (!js.isUndefined(enableAutoResizing)) __obj.updateDynamic("enableAutoResizing")(enableAutoResizing)
+    if (!js.isUndefined(enableDeferredUpdate)) __obj.updateDynamic("enableDeferredUpdate")(enableDeferredUpdate)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableScrollbar)) __obj.updateDynamic("enableScrollbar")(enableScrollbar)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (labelSettings != null) __obj.updateDynamic("labelSettings")(labelSettings)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loaded != null) __obj.updateDynamic("loaded")(loaded)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (navigatorStyleSettings != null) __obj.updateDynamic("navigatorStyleSettings")(navigatorStyleSettings)
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (rangeChanged != null) __obj.updateDynamic("rangeChanged")(rangeChanged)
+    if (rangePadding != null) __obj.updateDynamic("rangePadding")(rangePadding.asInstanceOf[js.Any])
+    if (rangeSettings != null) __obj.updateDynamic("rangeSettings")(rangeSettings)
+    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
+    if (scrollChanged != null) __obj.updateDynamic("scrollChanged")(scrollChanged)
+    if (scrollEnd != null) __obj.updateDynamic("scrollEnd")(scrollEnd)
+    if (scrollRangeSettings != null) __obj.updateDynamic("scrollRangeSettings")(scrollRangeSettings)
+    if (scrollStart != null) __obj.updateDynamic("scrollStart")(scrollStart)
+    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
+    if (selectedRangeEnd != null) __obj.updateDynamic("selectedRangeEnd")(selectedRangeEnd)
+    if (selectedRangeSettings != null) __obj.updateDynamic("selectedRangeSettings")(selectedRangeSettings)
+    if (selectedRangeStart != null) __obj.updateDynamic("selectedRangeStart")(selectedRangeStart)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (seriesSettings != null) __obj.updateDynamic("seriesSettings")(seriesSettings)
+    if (sizeSettings != null) __obj.updateDynamic("sizeSettings")(sizeSettings)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tooltipSettings != null) __obj.updateDynamic("tooltipSettings")(tooltipSettings)
+    if (valueAxisSettings != null) __obj.updateDynamic("valueAxisSettings")(valueAxisSettings)
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
+    if (xName != null) __obj.updateDynamic("xName")(xName)
+    if (yName != null) __obj.updateDynamic("yName")(yName)
+    __obj.asInstanceOf[Model]
+  }
+}
+

@@ -12,3 +12,13 @@ trait DatabaseSpec extends js.Object {
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DatabaseSpec {
+  @scala.inline
+  def apply(name: java.lang.String = null, uri: java.lang.String = null): DatabaseSpec = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[DatabaseSpec]
+  }
+}
+

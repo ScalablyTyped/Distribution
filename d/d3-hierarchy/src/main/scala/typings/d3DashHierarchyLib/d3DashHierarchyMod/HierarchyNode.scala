@@ -109,3 +109,53 @@ trait HierarchyNode[Datum] extends js.Object {
   def sum(value: js.Function1[/* d */ Datum, scala.Double]): this.type
 }
 
+object HierarchyNode {
+  @scala.inline
+  def apply[Datum](
+    ancestors: js.Function0[js.Array[HierarchyNode[Datum]]],
+    copy: js.Function0[HierarchyNode[Datum]],
+    count: js.Function0[HierarchyNode[Datum]],
+    data: Datum,
+    depth: scala.Double,
+    descendants: js.Function0[js.Array[HierarchyNode[Datum]]],
+    each: js.Function1[js.Function1[HierarchyNode[Datum], scala.Unit], HierarchyNode[Datum]],
+    eachAfter: js.Function1[js.Function1[HierarchyNode[Datum], scala.Unit], HierarchyNode[Datum]],
+    eachBefore: js.Function1[js.Function1[HierarchyNode[Datum], scala.Unit], HierarchyNode[Datum]],
+    height: scala.Double,
+    leaves: js.Function0[js.Array[HierarchyNode[Datum]]],
+    links: js.Function0[js.Array[HierarchyLink[Datum]]],
+    path: js.Function1[HierarchyNode[Datum], js.Array[HierarchyNode[Datum]]],
+    sort: js.Function1[
+      js.Function2[HierarchyNode[Datum], HierarchyNode[Datum], scala.Double], 
+      HierarchyNode[Datum]
+    ],
+    sum: js.Function1[js.Function1[/* d */ Datum, scala.Double], HierarchyNode[Datum]],
+    children: js.Array[HierarchyNode[Datum]] = null,
+    id: java.lang.String = null,
+    parent: HierarchyNode[Datum] = null,
+    value: scala.Int | scala.Double = null
+  ): HierarchyNode[Datum] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ancestors")(ancestors)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("depth")(depth)
+    __obj.updateDynamic("descendants")(descendants)
+    __obj.updateDynamic("each")(each)
+    __obj.updateDynamic("eachAfter")(eachAfter)
+    __obj.updateDynamic("eachBefore")(eachBefore)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("leaves")(leaves)
+    __obj.updateDynamic("links")(links)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("sort")(sort)
+    __obj.updateDynamic("sum")(sum)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HierarchyNode[Datum]]
+  }
+}
+

@@ -17,3 +17,18 @@ trait GetRegionArgs extends js.Object {
   val name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetRegionArgs {
+  @scala.inline
+  def apply(
+    current: js.UndefOr[scala.Boolean] = js.undefined,
+    endpoint: java.lang.String = null,
+    name: java.lang.String = null
+  ): GetRegionArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[GetRegionArgs]
+  }
+}
+

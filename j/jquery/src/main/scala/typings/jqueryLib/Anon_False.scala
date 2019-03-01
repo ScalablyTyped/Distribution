@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_False[TTarget] extends js.Object {
+trait Anon_False[TTarget]
+  extends jqueryLib.JQueryNs._SpecialEventHook[TTarget, js.Any] {
   /**
     * The teardown hook is called when the final event of a particular type is removed from an element. The `this` keyword will be a reference to the element where the event is being cleaned up. This hook should return `false` if it wants jQuery to remove the event from the browser's event system (via `removeEventListener` or `detachEvent`). In most cases, the setup and teardown hooks should return the same value.
     *
@@ -13,5 +14,14 @@ trait Anon_False[TTarget] extends js.Object {
     * @see \`{@link https://learn.jquery.com/events/event-extensions/#teardown-function }\`
     */
   def teardown(`this`: TTarget): scala.Unit | jqueryLib.jqueryLibNumbers.`false`
+}
+
+object Anon_False {
+  @scala.inline
+  def apply[TTarget](teardown: js.Function1[TTarget, scala.Unit | jqueryLib.jqueryLibNumbers.`false`]): Anon_False[TTarget] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("teardown")(teardown)
+    __obj.asInstanceOf[Anon_False[TTarget]]
+  }
 }
 

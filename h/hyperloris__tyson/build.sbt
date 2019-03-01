@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "hyperloris__tyson"
-version := "1.4.0-da43ee"
+version := "1.4.0-8164eb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "reflect-metadata" % "0.1.13-1f902a",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "reflect-metadata" % "0.1.13-43ca71",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

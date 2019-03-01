@@ -82,3 +82,41 @@ trait DefineAttributeColumnOptions extends ColumnOptions {
   var values: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object DefineAttributeColumnOptions {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String | DataTypeAbstract,
+    allowNull: js.UndefOr[scala.Boolean] = js.undefined,
+    autoIncrement: js.UndefOr[scala.Boolean] = js.undefined,
+    comment: java.lang.String = null,
+    defaultValue: js.Any = null,
+    field: java.lang.String = null,
+    get: js.Function0[_] = null,
+    onDelete: java.lang.String = null,
+    onUpdate: java.lang.String = null,
+    primaryKey: js.UndefOr[scala.Boolean] = js.undefined,
+    references: DefineAttributeColumnReferencesOptions = null,
+    set: js.Function1[/* val */ js.Any, scala.Unit] = null,
+    unique: scala.Boolean | java.lang.String | sequelizeLib.Anon_Msg = null,
+    validate: DefineValidateOptions = null,
+    values: js.Array[java.lang.String] = null
+  ): DefineAttributeColumnOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull)
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (references != null) __obj.updateDynamic("references")(references)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[DefineAttributeColumnOptions]
+  }
+}
+

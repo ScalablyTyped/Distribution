@@ -13,3 +13,12 @@ trait DelegationSetArgs extends js.Object {
   val referenceName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object DelegationSetArgs {
+  @scala.inline
+  def apply(referenceName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null): DelegationSetArgs = {
+    val __obj = js.Dynamic.literal()
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DelegationSetArgs]
+  }
+}
+

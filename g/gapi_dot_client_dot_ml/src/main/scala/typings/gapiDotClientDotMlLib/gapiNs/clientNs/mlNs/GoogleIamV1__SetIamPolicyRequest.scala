@@ -23,3 +23,13 @@ trait GoogleIamV1__SetIamPolicyRequest extends js.Object {
   var updateMask: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleIamV1__SetIamPolicyRequest {
+  @scala.inline
+  def apply(policy: GoogleIamV1__Policy = null, updateMask: java.lang.String = null): GoogleIamV1__SetIamPolicyRequest = {
+    val __obj = js.Dynamic.literal()
+    if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    __obj.asInstanceOf[GoogleIamV1__SetIamPolicyRequest]
+  }
+}
+

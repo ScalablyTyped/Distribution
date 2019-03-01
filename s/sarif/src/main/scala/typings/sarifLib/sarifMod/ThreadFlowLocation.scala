@@ -53,3 +53,32 @@ trait ThreadFlowLocation extends js.Object {
   var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 
+object ThreadFlowLocation {
+  @scala.inline
+  def apply(
+    executionOrder: scala.Int | scala.Double = null,
+    executionTimeUtc: java.lang.String = null,
+    importance: sarifLib.sarifMod.ThreadFlowLocationNs.importance = null,
+    kinds: js.Array[java.lang.String] = null,
+    location: Location = null,
+    module: java.lang.String = null,
+    nestingLevel: scala.Int | scala.Double = null,
+    properties: PropertyBag = null,
+    stack: Stack = null,
+    state: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): ThreadFlowLocation = {
+    val __obj = js.Dynamic.literal()
+    if (executionOrder != null) __obj.updateDynamic("executionOrder")(executionOrder.asInstanceOf[js.Any])
+    if (executionTimeUtc != null) __obj.updateDynamic("executionTimeUtc")(executionTimeUtc)
+    if (importance != null) __obj.updateDynamic("importance")(importance)
+    if (kinds != null) __obj.updateDynamic("kinds")(kinds)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (module != null) __obj.updateDynamic("module")(module)
+    if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ThreadFlowLocation]
+  }
+}
+

@@ -32,3 +32,24 @@ trait TooltipSettingsFont extends js.Object {
   var weight: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TooltipSettingsFont {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    family: java.lang.String = null,
+    fontStyle: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    size: java.lang.String = null,
+    weight: java.lang.String = null
+  ): TooltipSettingsFont = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (family != null) __obj.updateDynamic("family")(family)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[TooltipSettingsFont]
+  }
+}
+

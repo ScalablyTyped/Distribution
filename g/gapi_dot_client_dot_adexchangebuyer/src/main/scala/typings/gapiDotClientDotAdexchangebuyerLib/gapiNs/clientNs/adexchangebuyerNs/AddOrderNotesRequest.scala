@@ -10,3 +10,12 @@ trait AddOrderNotesRequest extends js.Object {
   var notes: js.UndefOr[js.Array[MarketplaceNote]] = js.undefined
 }
 
+object AddOrderNotesRequest {
+  @scala.inline
+  def apply(notes: js.Array[MarketplaceNote] = null): AddOrderNotesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (notes != null) __obj.updateDynamic("notes")(notes)
+    __obj.asInstanceOf[AddOrderNotesRequest]
+  }
+}
+

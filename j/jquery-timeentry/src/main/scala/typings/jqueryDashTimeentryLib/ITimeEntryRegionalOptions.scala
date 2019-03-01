@@ -38,3 +38,22 @@ trait ITimeEntryRegionalOptions extends js.Object {
   var spinnerTexts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ITimeEntryRegionalOptions {
+  @scala.inline
+  def apply(
+    ampmNames: js.Array[java.lang.String] = null,
+    ampmPrefix: java.lang.String = null,
+    separator: java.lang.String = null,
+    show24Hours: js.UndefOr[scala.Boolean] = js.undefined,
+    spinnerTexts: js.Array[java.lang.String] = null
+  ): ITimeEntryRegionalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ampmNames != null) __obj.updateDynamic("ampmNames")(ampmNames)
+    if (ampmPrefix != null) __obj.updateDynamic("ampmPrefix")(ampmPrefix)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(show24Hours)) __obj.updateDynamic("show24Hours")(show24Hours)
+    if (spinnerTexts != null) __obj.updateDynamic("spinnerTexts")(spinnerTexts)
+    __obj.asInstanceOf[ITimeEntryRegionalOptions]
+  }
+}
+

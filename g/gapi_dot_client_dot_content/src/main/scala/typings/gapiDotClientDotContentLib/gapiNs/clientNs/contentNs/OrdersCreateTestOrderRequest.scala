@@ -15,3 +15,13 @@ trait OrdersCreateTestOrderRequest extends js.Object {
   var testOrder: js.UndefOr[TestOrder] = js.undefined
 }
 
+object OrdersCreateTestOrderRequest {
+  @scala.inline
+  def apply(templateName: java.lang.String = null, testOrder: TestOrder = null): OrdersCreateTestOrderRequest = {
+    val __obj = js.Dynamic.literal()
+    if (templateName != null) __obj.updateDynamic("templateName")(templateName)
+    if (testOrder != null) __obj.updateDynamic("testOrder")(testOrder)
+    __obj.asInstanceOf[OrdersCreateTestOrderRequest]
+  }
+}
+

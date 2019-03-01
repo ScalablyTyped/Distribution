@@ -71,3 +71,42 @@ trait EditOptions extends js.Object {
   var vertexMarkerClass: js.UndefOr[js.Object] = js.undefined
 }
 
+object EditOptions {
+  @scala.inline
+  def apply(
+    drawingCSSClass: java.lang.String = null,
+    editLayer: leafletLib.leafletMod.LayerGroup[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILayer */ _
+    ] = null,
+    featuresLayer: leafletLib.leafletMod.LayerGroup[
+      (leafletLib.leafletMod.Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _]) | leafletLib.leafletMod.Polygon[_] | leafletLib.leafletMod.Marker[_]
+    ] = null,
+    lineGuideOptions: js.Object = null,
+    markerClass: js.Object = null,
+    markerEditorClass: js.Object = null,
+    middleMarkerClass: js.Object = null,
+    polygonClass: js.Object = null,
+    polygonEditorClass: js.Object = null,
+    polylineClass: js.Object = null,
+    polylineEditorClass: js.Object = null,
+    skipMiddleMarkers: js.UndefOr[scala.Boolean] = js.undefined,
+    vertexMarkerClass: js.Object = null
+  ): EditOptions = {
+    val __obj = js.Dynamic.literal()
+    if (drawingCSSClass != null) __obj.updateDynamic("drawingCSSClass")(drawingCSSClass)
+    if (editLayer != null) __obj.updateDynamic("editLayer")(editLayer)
+    if (featuresLayer != null) __obj.updateDynamic("featuresLayer")(featuresLayer)
+    if (lineGuideOptions != null) __obj.updateDynamic("lineGuideOptions")(lineGuideOptions)
+    if (markerClass != null) __obj.updateDynamic("markerClass")(markerClass)
+    if (markerEditorClass != null) __obj.updateDynamic("markerEditorClass")(markerEditorClass)
+    if (middleMarkerClass != null) __obj.updateDynamic("middleMarkerClass")(middleMarkerClass)
+    if (polygonClass != null) __obj.updateDynamic("polygonClass")(polygonClass)
+    if (polygonEditorClass != null) __obj.updateDynamic("polygonEditorClass")(polygonEditorClass)
+    if (polylineClass != null) __obj.updateDynamic("polylineClass")(polylineClass)
+    if (polylineEditorClass != null) __obj.updateDynamic("polylineEditorClass")(polylineEditorClass)
+    if (!js.isUndefined(skipMiddleMarkers)) __obj.updateDynamic("skipMiddleMarkers")(skipMiddleMarkers)
+    if (vertexMarkerClass != null) __obj.updateDynamic("vertexMarkerClass")(vertexMarkerClass)
+    __obj.asInstanceOf[EditOptions]
+  }
+}
+

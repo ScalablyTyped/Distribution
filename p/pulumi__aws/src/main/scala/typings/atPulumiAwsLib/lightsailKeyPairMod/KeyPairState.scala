@@ -48,3 +48,30 @@ trait KeyPairState extends js.Object {
   val publicKey: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object KeyPairState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    encryptedFingerprint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    encryptedPrivateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    fingerprint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    pgpKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publicKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): KeyPairState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (encryptedFingerprint != null) __obj.updateDynamic("encryptedFingerprint")(encryptedFingerprint.asInstanceOf[js.Any])
+    if (encryptedPrivateKey != null) __obj.updateDynamic("encryptedPrivateKey")(encryptedPrivateKey.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (pgpKey != null) __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyPairState]
+  }
+}
+

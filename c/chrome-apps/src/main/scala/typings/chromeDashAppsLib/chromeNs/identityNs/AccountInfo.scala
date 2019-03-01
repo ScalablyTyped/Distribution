@@ -14,3 +14,12 @@ trait AccountInfo extends js.Object {
   var id: java.lang.String
 }
 
+object AccountInfo {
+  @scala.inline
+  def apply(id: java.lang.String): AccountInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[AccountInfo]
+  }
+}
+

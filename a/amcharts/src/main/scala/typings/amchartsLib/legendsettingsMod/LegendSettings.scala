@@ -115,3 +115,62 @@ trait LegendSettings extends js.Object {
   var verticalGap: scala.Double
 }
 
+object LegendSettings {
+  @scala.inline
+  def apply(
+    align: java.lang.String,
+    equalWidths: scala.Boolean,
+    horizontalGap: scala.Double,
+    labelText: java.lang.String,
+    marginBottom: scala.Double,
+    marginTop: scala.Double,
+    markerBorderAlpha: scala.Double,
+    markerBorderColor: java.lang.String,
+    markerBorderThickness: scala.Double,
+    markerDisabledColor: java.lang.String,
+    markerLabelGap: scala.Double,
+    markerSize: scala.Double,
+    markerType: java.lang.String,
+    reversedOrder: scala.Boolean,
+    rollOverColor: java.lang.String,
+    rollOverGraphAlpha: scala.Double,
+    switchColor: java.lang.String,
+    switchType: java.lang.String,
+    switchable: scala.Boolean,
+    textClickEnabled: scala.Boolean,
+    useMarkerColorForLabels: scala.Boolean,
+    valueTextComparing: java.lang.String,
+    valueTextRegular: java.lang.String,
+    valueWidth: scala.Double,
+    verticalGap: scala.Double
+  ): LegendSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("align")(align)
+    __obj.updateDynamic("equalWidths")(equalWidths)
+    __obj.updateDynamic("horizontalGap")(horizontalGap)
+    __obj.updateDynamic("labelText")(labelText)
+    __obj.updateDynamic("marginBottom")(marginBottom)
+    __obj.updateDynamic("marginTop")(marginTop)
+    __obj.updateDynamic("markerBorderAlpha")(markerBorderAlpha)
+    __obj.updateDynamic("markerBorderColor")(markerBorderColor)
+    __obj.updateDynamic("markerBorderThickness")(markerBorderThickness)
+    __obj.updateDynamic("markerDisabledColor")(markerDisabledColor)
+    __obj.updateDynamic("markerLabelGap")(markerLabelGap)
+    __obj.updateDynamic("markerSize")(markerSize)
+    __obj.updateDynamic("markerType")(markerType)
+    __obj.updateDynamic("reversedOrder")(reversedOrder)
+    __obj.updateDynamic("rollOverColor")(rollOverColor)
+    __obj.updateDynamic("rollOverGraphAlpha")(rollOverGraphAlpha)
+    __obj.updateDynamic("switchColor")(switchColor)
+    __obj.updateDynamic("switchType")(switchType)
+    __obj.updateDynamic("switchable")(switchable)
+    __obj.updateDynamic("textClickEnabled")(textClickEnabled)
+    __obj.updateDynamic("useMarkerColorForLabels")(useMarkerColorForLabels)
+    __obj.updateDynamic("valueTextComparing")(valueTextComparing)
+    __obj.updateDynamic("valueTextRegular")(valueTextRegular)
+    __obj.updateDynamic("valueWidth")(valueWidth)
+    __obj.updateDynamic("verticalGap")(verticalGap)
+    __obj.asInstanceOf[LegendSettings]
+  }
+}
+

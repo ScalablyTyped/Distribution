@@ -49,3 +49,28 @@ trait XPreparedStatement
   def getConnection(): XConnection
 }
 
+object XPreparedStatement {
+  @scala.inline
+  def apply(
+    Connection: XConnection,
+    acquire: js.Function0[scala.Unit],
+    execute: js.Function0[scala.Boolean],
+    executeQuery: js.Function0[XResultSet],
+    executeUpdate: js.Function0[scala.Double],
+    getConnection: js.Function0[XConnection],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPreparedStatement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Connection")(Connection)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("executeQuery")(executeQuery)
+    __obj.updateDynamic("executeUpdate")(executeUpdate)
+    __obj.updateDynamic("getConnection")(getConnection)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XPreparedStatement]
+  }
+}
+

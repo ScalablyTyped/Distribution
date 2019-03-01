@@ -10,3 +10,16 @@ trait ADCResponse extends js.Object {
   var projectId: java.lang.String | scala.Null
 }
 
+object ADCResponse {
+  @scala.inline
+  def apply(
+    credential: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.OAuth2Client,
+    projectId: java.lang.String = null
+  ): ADCResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("credential")(credential)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    __obj.asInstanceOf[ADCResponse]
+  }
+}
+

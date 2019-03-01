@@ -36,3 +36,26 @@ trait Anon_Container extends js.Object {
   var verticalSpacing: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Container {
+  @scala.inline
+  def apply(
+    container: js.Any = null,
+    duration: scala.Int | scala.Double = null,
+    maximumOpen: scala.Int | scala.Double = null,
+    position: java.lang.String = null,
+    startTop: scala.Int | scala.Double = null,
+    templateUrl: java.lang.String = null,
+    verticalSpacing: scala.Int | scala.Double = null
+  ): Anon_Container = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (maximumOpen != null) __obj.updateDynamic("maximumOpen")(maximumOpen.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (startTop != null) __obj.updateDynamic("startTop")(startTop.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (verticalSpacing != null) __obj.updateDynamic("verticalSpacing")(verticalSpacing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Container]
+  }
+}
+

@@ -28,3 +28,32 @@ trait RouterStatusBgpPeerStatus extends js.Object {
   var uptimeSeconds: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RouterStatusBgpPeerStatus {
+  @scala.inline
+  def apply(
+    advertisedRoutes: js.Array[Route] = null,
+    ipAddress: java.lang.String = null,
+    linkedVpnTunnel: java.lang.String = null,
+    name: java.lang.String = null,
+    numLearnedRoutes: scala.Int | scala.Double = null,
+    peerIpAddress: java.lang.String = null,
+    state: java.lang.String = null,
+    status: java.lang.String = null,
+    uptime: java.lang.String = null,
+    uptimeSeconds: java.lang.String = null
+  ): RouterStatusBgpPeerStatus = {
+    val __obj = js.Dynamic.literal()
+    if (advertisedRoutes != null) __obj.updateDynamic("advertisedRoutes")(advertisedRoutes)
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
+    if (linkedVpnTunnel != null) __obj.updateDynamic("linkedVpnTunnel")(linkedVpnTunnel)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (numLearnedRoutes != null) __obj.updateDynamic("numLearnedRoutes")(numLearnedRoutes.asInstanceOf[js.Any])
+    if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (uptime != null) __obj.updateDynamic("uptime")(uptime)
+    if (uptimeSeconds != null) __obj.updateDynamic("uptimeSeconds")(uptimeSeconds)
+    __obj.asInstanceOf[RouterStatusBgpPeerStatus]
+  }
+}
+

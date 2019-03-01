@@ -42,3 +42,80 @@ trait Anon_SIGABRT extends js.Object {
   var SIGXFSZ: scala.Double
 }
 
+object Anon_SIGABRT {
+  @scala.inline
+  def apply(
+    SIGABRT: scala.Double,
+    SIGALRM: scala.Double,
+    SIGBUS: scala.Double,
+    SIGCHLD: scala.Double,
+    SIGCONT: scala.Double,
+    SIGFPE: scala.Double,
+    SIGHUP: scala.Double,
+    SIGILL: scala.Double,
+    SIGINT: scala.Double,
+    SIGIO: scala.Double,
+    SIGIOT: scala.Double,
+    SIGKILL: scala.Double,
+    SIGPIPE: scala.Double,
+    SIGPOLL: scala.Double,
+    SIGPROF: scala.Double,
+    SIGPWR: scala.Double,
+    SIGQUIT: scala.Double,
+    SIGSEGV: scala.Double,
+    SIGSTKFLT: scala.Double,
+    SIGSTOP: scala.Double,
+    SIGSYS: scala.Double,
+    SIGTERM: scala.Double,
+    SIGTRAP: scala.Double,
+    SIGTSTP: scala.Double,
+    SIGTTIN: scala.Double,
+    SIGTTOU: scala.Double,
+    SIGUNUSED: scala.Double,
+    SIGURG: scala.Double,
+    SIGUSR1: scala.Double,
+    SIGUSR2: scala.Double,
+    SIGVTALRM: scala.Double,
+    SIGWINCH: scala.Double,
+    SIGXCPU: scala.Double,
+    SIGXFSZ: scala.Double
+  ): Anon_SIGABRT = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SIGABRT")(SIGABRT)
+    __obj.updateDynamic("SIGALRM")(SIGALRM)
+    __obj.updateDynamic("SIGBUS")(SIGBUS)
+    __obj.updateDynamic("SIGCHLD")(SIGCHLD)
+    __obj.updateDynamic("SIGCONT")(SIGCONT)
+    __obj.updateDynamic("SIGFPE")(SIGFPE)
+    __obj.updateDynamic("SIGHUP")(SIGHUP)
+    __obj.updateDynamic("SIGILL")(SIGILL)
+    __obj.updateDynamic("SIGINT")(SIGINT)
+    __obj.updateDynamic("SIGIO")(SIGIO)
+    __obj.updateDynamic("SIGIOT")(SIGIOT)
+    __obj.updateDynamic("SIGKILL")(SIGKILL)
+    __obj.updateDynamic("SIGPIPE")(SIGPIPE)
+    __obj.updateDynamic("SIGPOLL")(SIGPOLL)
+    __obj.updateDynamic("SIGPROF")(SIGPROF)
+    __obj.updateDynamic("SIGPWR")(SIGPWR)
+    __obj.updateDynamic("SIGQUIT")(SIGQUIT)
+    __obj.updateDynamic("SIGSEGV")(SIGSEGV)
+    __obj.updateDynamic("SIGSTKFLT")(SIGSTKFLT)
+    __obj.updateDynamic("SIGSTOP")(SIGSTOP)
+    __obj.updateDynamic("SIGSYS")(SIGSYS)
+    __obj.updateDynamic("SIGTERM")(SIGTERM)
+    __obj.updateDynamic("SIGTRAP")(SIGTRAP)
+    __obj.updateDynamic("SIGTSTP")(SIGTSTP)
+    __obj.updateDynamic("SIGTTIN")(SIGTTIN)
+    __obj.updateDynamic("SIGTTOU")(SIGTTOU)
+    __obj.updateDynamic("SIGUNUSED")(SIGUNUSED)
+    __obj.updateDynamic("SIGURG")(SIGURG)
+    __obj.updateDynamic("SIGUSR1")(SIGUSR1)
+    __obj.updateDynamic("SIGUSR2")(SIGUSR2)
+    __obj.updateDynamic("SIGVTALRM")(SIGVTALRM)
+    __obj.updateDynamic("SIGWINCH")(SIGWINCH)
+    __obj.updateDynamic("SIGXCPU")(SIGXCPU)
+    __obj.updateDynamic("SIGXFSZ")(SIGXFSZ)
+    __obj.asInstanceOf[Anon_SIGABRT]
+  }
+}
+

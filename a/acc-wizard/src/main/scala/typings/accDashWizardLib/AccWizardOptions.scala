@@ -89,3 +89,46 @@ trait AccWizardOptions extends js.Object {
   var todoClass: java.lang.String
 }
 
+object AccWizardOptions {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String,
+    addButtons: scala.Boolean,
+    autoScrolling: scala.Boolean,
+    backClasses: java.lang.String,
+    backText: java.lang.String,
+    backType: java.lang.String,
+    completedClass: java.lang.String,
+    nextClasses: java.lang.String,
+    nextText: java.lang.String,
+    nextType: java.lang.String,
+    onBack: js.Function,
+    onDestroy: js.Function,
+    onInit: js.Function,
+    onNext: js.Function,
+    sidebar: java.lang.String,
+    stepClass: java.lang.String,
+    todoClass: java.lang.String
+  ): AccWizardOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activeClass")(activeClass)
+    __obj.updateDynamic("addButtons")(addButtons)
+    __obj.updateDynamic("autoScrolling")(autoScrolling)
+    __obj.updateDynamic("backClasses")(backClasses)
+    __obj.updateDynamic("backText")(backText)
+    __obj.updateDynamic("backType")(backType)
+    __obj.updateDynamic("completedClass")(completedClass)
+    __obj.updateDynamic("nextClasses")(nextClasses)
+    __obj.updateDynamic("nextText")(nextText)
+    __obj.updateDynamic("nextType")(nextType)
+    __obj.updateDynamic("onBack")(onBack)
+    __obj.updateDynamic("onDestroy")(onDestroy)
+    __obj.updateDynamic("onInit")(onInit)
+    __obj.updateDynamic("onNext")(onNext)
+    __obj.updateDynamic("sidebar")(sidebar)
+    __obj.updateDynamic("stepClass")(stepClass)
+    __obj.updateDynamic("todoClass")(todoClass)
+    __obj.asInstanceOf[AccWizardOptions]
+  }
+}
+

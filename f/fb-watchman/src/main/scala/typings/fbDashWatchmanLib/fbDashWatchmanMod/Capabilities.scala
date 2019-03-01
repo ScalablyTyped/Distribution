@@ -10,3 +10,13 @@ trait Capabilities extends js.Object {
   var required: js.Array[_]
 }
 
+object Capabilities {
+  @scala.inline
+  def apply(optional: js.Array[_], required: js.Array[_]): Capabilities = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("optional")(optional)
+    __obj.updateDynamic("required")(required)
+    __obj.asInstanceOf[Capabilities]
+  }
+}
+

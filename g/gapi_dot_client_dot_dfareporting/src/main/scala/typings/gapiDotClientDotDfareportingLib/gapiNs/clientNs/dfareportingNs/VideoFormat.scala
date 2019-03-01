@@ -18,3 +18,22 @@ trait VideoFormat extends js.Object {
   var targetBitRate: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VideoFormat {
+  @scala.inline
+  def apply(
+    fileType: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    resolution: Size = null,
+    targetBitRate: scala.Int | scala.Double = null
+  ): VideoFormat = {
+    val __obj = js.Dynamic.literal()
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution)
+    if (targetBitRate != null) __obj.updateDynamic("targetBitRate")(targetBitRate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoFormat]
+  }
+}
+

@@ -20,3 +20,18 @@ trait DotenvConfigOptions extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DotenvConfigOptions {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    encoding: java.lang.String = null,
+    path: java.lang.String = null
+  ): DotenvConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[DotenvConfigOptions]
+  }
+}
+

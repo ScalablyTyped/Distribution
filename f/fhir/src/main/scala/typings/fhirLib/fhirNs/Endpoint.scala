@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * The technical details of an endpoint that can be used for electronic services
   */
-trait Endpoint extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Endpoint extends DomainResource {
   /**
     * Contains extended information for property 'address'.
     */
@@ -73,5 +74,72 @@ trait Endpoint extends DomainResource {
     * active | suspended | error | off | entered-in-error | test
     */
   var status: code
+}
+
+object Endpoint {
+  @scala.inline
+  def apply(
+    address: uri,
+    connectionType: Coding,
+    payloadType: js.Array[CodeableConcept],
+    status: code,
+    _address: Element = null,
+    _header: js.Array[Element] = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _name: Element = null,
+    _payloadMimeType: js.Array[Element] = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    contact: js.Array[ContactPoint] = null,
+    contained: js.Array[Resource] = null,
+    extension: js.Array[Extension] = null,
+    header: js.Array[java.lang.String] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    managingOrganization: Reference = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    name: java.lang.String = null,
+    payloadMimeType: js.Array[code] = null,
+    period: Period = null,
+    resourceType: code = null,
+    text: Narrative = null
+  ): Endpoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("connectionType")(connectionType)
+    __obj.updateDynamic("payloadType")(payloadType)
+    __obj.updateDynamic("status")(status)
+    if (_address != null) __obj.updateDynamic("_address")(_address)
+    if (_header != null) __obj.updateDynamic("_header")(_header)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_payloadMimeType != null) __obj.updateDynamic("_payloadMimeType")(_payloadMimeType)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (managingOrganization != null) __obj.updateDynamic("managingOrganization")(managingOrganization)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (payloadMimeType != null) __obj.updateDynamic("payloadMimeType")(payloadMimeType)
+    if (period != null) __obj.updateDynamic("period")(period)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Endpoint]
+  }
 }
 

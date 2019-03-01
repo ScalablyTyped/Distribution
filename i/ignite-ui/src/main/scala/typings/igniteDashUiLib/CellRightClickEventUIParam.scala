@@ -36,3 +36,26 @@ trait CellRightClickEventUIParam extends js.Object {
   var rowKey: js.UndefOr[js.Any] = js.undefined
 }
 
+object CellRightClickEventUIParam {
+  @scala.inline
+  def apply(
+    cellElement: stdLib.Element = null,
+    colIndex: scala.Int | scala.Double = null,
+    colKey: java.lang.String = null,
+    owner: js.Any = null,
+    row: stdLib.Element = null,
+    rowIndex: scala.Int | scala.Double = null,
+    rowKey: js.Any = null
+  ): CellRightClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement)
+    if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
+    if (colKey != null) __obj.updateDynamic("colKey")(colKey)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
+    __obj.asInstanceOf[CellRightClickEventUIParam]
+  }
+}
+

@@ -7,52 +7,65 @@ import scala.scalajs.js.annotation._
 
 object keycloakDashJsLibStrings {
   @js.native
-  sealed trait `check-sso` extends js.Object
+  sealed trait `check-sso`
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakOnLoad
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait code
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseType
   
   @js.native
-  sealed trait `code id_token token` extends js.Object
+  sealed trait `code id_token token`
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseType
   
   @js.native
-  sealed trait cordova extends js.Object
+  sealed trait cordova
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs._KeycloakAdapterName
   
   @js.native
-  sealed trait `cordova-native` extends js.Object
+  sealed trait `cordova-native`
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs._KeycloakAdapterName
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs._KeycloakAdapterName
   
   @js.native
-  sealed trait fragment extends js.Object
+  sealed trait fragment
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseMode
   
   @js.native
-  sealed trait hybrid extends js.Object
+  sealed trait hybrid
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakFlow
   
   @js.native
-  sealed trait `id_token token` extends js.Object
+  sealed trait `id_token token`
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseType
   
   @js.native
-  sealed trait `implicit` extends js.Object
+  sealed trait `implicit`
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakFlow
   
   @js.native
   sealed trait login extends js.Object
   
   @js.native
-  sealed trait `login-required` extends js.Object
+  sealed trait `login-required`
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakOnLoad
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait query
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakResponseMode
   
   @js.native
   sealed trait register extends js.Object
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard
+    extends keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakFlow
   
   @scala.inline
   def `check-sso`: `check-sso` = "check-sso".asInstanceOf[`check-sso`]

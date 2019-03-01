@@ -20,3 +20,22 @@ trait StrictFeedLikeProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictFeedLikeProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null
+  ): StrictFeedLikeProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictFeedLikeProps]
+  }
+}
+

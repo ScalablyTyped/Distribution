@@ -7,34 +7,34 @@ import scala.scalajs.js.annotation._
 
 object w3cDashImageDashCaptureLibStrings {
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always extends RedEyeReduction
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends FillLightMode
   
   @js.native
-  sealed trait continuous extends js.Object
+  sealed trait continuous extends MeteringMode
   
   @js.native
-  sealed trait controllable extends js.Object
+  sealed trait controllable extends RedEyeReduction
   
   @js.native
-  sealed trait flash extends js.Object
+  sealed trait flash extends FillLightMode
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual extends MeteringMode
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait never extends RedEyeReduction
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none extends MeteringMode
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off extends FillLightMode
   
   @js.native
-  sealed trait `single-shot` extends js.Object
+  sealed trait `single-shot` extends MeteringMode
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

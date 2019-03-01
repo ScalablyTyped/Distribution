@@ -13,3 +13,22 @@ trait CredstashConfig extends js.Object {
   var table: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CredstashConfig {
+  @scala.inline
+  def apply(
+    awsOpts: awsDashSdkLib.clientsKmsMod.KMSNs.ClientConfiguration = null,
+    dynamoOpts: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ClientConfiguration = null,
+    kmsKey: java.lang.String = null,
+    kmsOpts: awsDashSdkLib.clientsKmsMod.KMSNs.ClientConfiguration = null,
+    table: java.lang.String = null
+  ): CredstashConfig = {
+    val __obj = js.Dynamic.literal()
+    if (awsOpts != null) __obj.updateDynamic("awsOpts")(awsOpts)
+    if (dynamoOpts != null) __obj.updateDynamic("dynamoOpts")(dynamoOpts)
+    if (kmsKey != null) __obj.updateDynamic("kmsKey")(kmsKey)
+    if (kmsOpts != null) __obj.updateDynamic("kmsOpts")(kmsOpts)
+    if (table != null) __obj.updateDynamic("table")(table)
+    __obj.asInstanceOf[CredstashConfig]
+  }
+}
+

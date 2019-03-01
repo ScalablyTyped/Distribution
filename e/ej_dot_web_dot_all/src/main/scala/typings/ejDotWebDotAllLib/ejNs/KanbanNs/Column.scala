@@ -52,3 +52,34 @@ trait Column extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Column {
+  @scala.inline
+  def apply(
+    allowDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    constraints: ColumnsConstraints = null,
+    headerTemplate: java.lang.String = null,
+    headerText: java.lang.String = null,
+    isCollapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String | scala.Double = null,
+    showAddButton: js.UndefOr[scala.Boolean] = js.undefined,
+    totalCount: ColumnsTotalCount = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String | scala.Double = null
+  ): Column = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag)
+    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAddButton)) __obj.updateDynamic("showAddButton")(showAddButton)
+    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Column]
+  }
+}
+

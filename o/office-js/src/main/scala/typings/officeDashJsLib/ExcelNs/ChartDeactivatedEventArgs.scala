@@ -35,3 +35,17 @@ trait ChartDeactivatedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object ChartDeactivatedEventArgs {
+  @scala.inline
+  def apply(
+    chartId: java.lang.String,
+    `type`: officeDashJsLib.officeDashJsLibStrings.ChartDeactivated,
+    worksheetId: java.lang.String
+  ): ChartDeactivatedEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("chartId")(chartId)
+    __obj.updateDynamic("worksheetId")(worksheetId)
+    __obj.asInstanceOf[ChartDeactivatedEventArgs]
+  }
+}
+

@@ -9,3 +9,12 @@ trait LineHandle extends js.Object {
   var text: java.lang.String
 }
 
+object LineHandle {
+  @scala.inline
+  def apply(text: java.lang.String): LineHandle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[LineHandle]
+  }
+}
+

@@ -24,3 +24,20 @@ trait ThumbDragMoveEventUIParam extends js.Object {
   var stepY: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ThumbDragMoveEventUIParam {
+  @scala.inline
+  def apply(
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    owner: js.Any = null,
+    stepX: scala.Int | scala.Double = null,
+    stepY: scala.Int | scala.Double = null
+  ): ThumbDragMoveEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (stepX != null) __obj.updateDynamic("stepX")(stepX.asInstanceOf[js.Any])
+    if (stepY != null) __obj.updateDynamic("stepY")(stepY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThumbDragMoveEventUIParam]
+  }
+}
+

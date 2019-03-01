@@ -10,3 +10,13 @@ trait FormSectionProps[P] extends js.Object {
   var name: java.lang.String
 }
 
+object FormSectionProps {
+  @scala.inline
+  def apply[P](name: java.lang.String, component: reactLib.reactMod.ReactNs.ComponentType[P] = null): FormSectionProps[P] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormSectionProps[P]]
+  }
+}
+

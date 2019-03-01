@@ -23,3 +23,20 @@ trait Repo extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Repo {
+  @scala.inline
+  def apply(
+    mirrorConfig: MirrorConfig = null,
+    name: java.lang.String = null,
+    size: java.lang.String = null,
+    url: java.lang.String = null
+  ): Repo = {
+    val __obj = js.Dynamic.literal()
+    if (mirrorConfig != null) __obj.updateDynamic("mirrorConfig")(mirrorConfig)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Repo]
+  }
+}
+

@@ -7,7 +7,4 @@ import scala.scalajs.js.annotation._
 
 package object uiNotificationNs {
   type Message = java.lang.String | IMessageOptions
-  type MessageType = angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.primary | angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.info | angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.success | angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.warning | angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.error
-  type XPosition = angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.right | angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.left | angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.center
-  type YPosition = angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.top | angularDashUiDashNotificationLib.angularDashUiDashNotificationLibStrings.bottom
 }

@@ -7,5 +7,4 @@ import scala.scalajs.js.annotation._
 
 package object textfieldTextFieldMod {
   type TextFieldClassKey = atMaterialDashUiCoreLib.formcontrolFormControlMod.FormControlClassKey
-  type TextFieldProps = StandardTextFieldProps | FilledTextFieldProps | OutlinedTextFieldProps
 }

@@ -66,7 +66,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap
   */
-trait SeriesTreemap extends js.Object {
+trait SeriesTreemap extends Series {
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -816,5 +816,88 @@ trait SeriesTreemap extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.zoomToNodeRatio
     */
   var zoomToNodeRatio: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesTreemap {
+  @scala.inline
+  def apply(
+    animationDelay: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    bottom: scala.Double | java.lang.String = null,
+    breadcrumb: echartsLib.Anon_Bottom = null,
+    childrenVisibleMin: scala.Int | scala.Double = null,
+    colorAlpha: js.Array[_] = null,
+    colorMappingBy: java.lang.String = null,
+    colorSaturation: scala.Int | scala.Double = null,
+    data: js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesTreemapNs.DataObject] = null,
+    drillDownIcon: java.lang.String = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelUpperLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null,
+    height: scala.Double | java.lang.String = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderColorSaturationBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamilyFontSize = null,
+    leafDepth: scala.Int | scala.Double = null,
+    left: scala.Double | java.lang.String = null,
+    levels: echartsLib.Anon_ChildrenVisibleMin = null,
+    name: java.lang.String = null,
+    nodeClick: scala.Boolean | java.lang.String = null,
+    right: scala.Double | java.lang.String = null,
+    roam: scala.Boolean | java.lang.String = null,
+    silent: echartsLib.Anon_ChildrenLink = null,
+    squareRatio: scala.Int | scala.Double = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    top: scala.Double | java.lang.String = null,
+    `type`: java.lang.String = null,
+    upperLabel: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamilyFontSizeFontStyle = null,
+    visibleMin: scala.Int | scala.Double = null,
+    visualDimension: scala.Int | scala.Double = null,
+    visualMax: scala.Int | scala.Double = null,
+    visualMin: scala.Int | scala.Double = null,
+    width: scala.Double | java.lang.String = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null,
+    zoomToNodeRatio: scala.Int | scala.Double = null
+  ): SeriesTreemap = {
+    val __obj = js.Dynamic.literal()
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb)
+    if (childrenVisibleMin != null) __obj.updateDynamic("childrenVisibleMin")(childrenVisibleMin.asInstanceOf[js.Any])
+    if (colorAlpha != null) __obj.updateDynamic("colorAlpha")(colorAlpha)
+    if (colorMappingBy != null) __obj.updateDynamic("colorMappingBy")(colorMappingBy)
+    if (colorSaturation != null) __obj.updateDynamic("colorSaturation")(colorSaturation.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (drillDownIcon != null) __obj.updateDynamic("drillDownIcon")(drillDownIcon)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (leafDepth != null) __obj.updateDynamic("leafDepth")(leafDepth.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (levels != null) __obj.updateDynamic("levels")(levels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nodeClick != null) __obj.updateDynamic("nodeClick")(nodeClick.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (roam != null) __obj.updateDynamic("roam")(roam.asInstanceOf[js.Any])
+    if (silent != null) __obj.updateDynamic("silent")(silent)
+    if (squareRatio != null) __obj.updateDynamic("squareRatio")(squareRatio.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel)
+    if (visibleMin != null) __obj.updateDynamic("visibleMin")(visibleMin.asInstanceOf[js.Any])
+    if (visualDimension != null) __obj.updateDynamic("visualDimension")(visualDimension.asInstanceOf[js.Any])
+    if (visualMax != null) __obj.updateDynamic("visualMax")(visualMax.asInstanceOf[js.Any])
+    if (visualMin != null) __obj.updateDynamic("visualMin")(visualMin.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (zoomToNodeRatio != null) __obj.updateDynamic("zoomToNodeRatio")(zoomToNodeRatio.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesTreemap]
+  }
 }
 

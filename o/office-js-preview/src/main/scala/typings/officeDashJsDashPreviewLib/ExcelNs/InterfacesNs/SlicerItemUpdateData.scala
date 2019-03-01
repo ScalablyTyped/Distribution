@@ -19,3 +19,12 @@ trait SlicerItemUpdateData extends js.Object {
   var isSelected: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SlicerItemUpdateData {
+  @scala.inline
+  def apply(isSelected: js.UndefOr[scala.Boolean] = js.undefined): SlicerItemUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    __obj.asInstanceOf[SlicerItemUpdateData]
+  }
+}
+

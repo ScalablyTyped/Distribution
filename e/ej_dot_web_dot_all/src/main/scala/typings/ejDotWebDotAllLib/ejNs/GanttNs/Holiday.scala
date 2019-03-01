@@ -17,3 +17,14 @@ trait Holiday extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Holiday {
+  @scala.inline
+  def apply(background: java.lang.String = null, day: java.lang.String = null, label: java.lang.String = null): Holiday = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (day != null) __obj.updateDynamic("day")(day)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[Holiday]
+  }
+}
+

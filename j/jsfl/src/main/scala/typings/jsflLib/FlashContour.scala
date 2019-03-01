@@ -12,3 +12,20 @@ trait FlashContour extends js.Object {
   def getHalfEdge(): FlashHalfEdge
 }
 
+object FlashContour {
+  @scala.inline
+  def apply(
+    fill: FlashFill,
+    getHalfEdge: js.Function0[FlashHalfEdge],
+    interior: scala.Boolean,
+    orientation: scala.Double
+  ): FlashContour = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fill")(fill)
+    __obj.updateDynamic("getHalfEdge")(getHalfEdge)
+    __obj.updateDynamic("interior")(interior)
+    __obj.updateDynamic("orientation")(orientation)
+    __obj.asInstanceOf[FlashContour]
+  }
+}
+

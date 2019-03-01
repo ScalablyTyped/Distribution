@@ -32,3 +32,58 @@ trait FileUpload extends js.Object {
   def setWidth(width: java.lang.String): FileUpload
 }
 
+object FileUpload {
+  @scala.inline
+  def apply(
+    addChangeHandler: js.Function1[Handler, FileUpload],
+    addStyleDependentName: js.Function1[java.lang.String, FileUpload],
+    addStyleName: js.Function1[java.lang.String, FileUpload],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setEnabled: js.Function1[scala.Boolean, FileUpload],
+    setHeight: js.Function1[java.lang.String, FileUpload],
+    setId: js.Function1[java.lang.String, FileUpload],
+    setLayoutData: js.Function1[js.Object, FileUpload],
+    setName: js.Function1[java.lang.String, FileUpload],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      FileUpload
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, FileUpload],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, FileUpload],
+    setStyleAttributes: js.Function1[js.Object, FileUpload],
+    setStyleName: js.Function1[java.lang.String, FileUpload],
+    setStylePrimaryName: js.Function1[java.lang.String, FileUpload],
+    setTag: js.Function1[java.lang.String, FileUpload],
+    setTitle: js.Function1[java.lang.String, FileUpload],
+    setVisible: js.Function1[scala.Boolean, FileUpload],
+    setWidth: js.Function1[java.lang.String, FileUpload]
+  ): FileUpload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addChangeHandler")(addChangeHandler)
+    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
+    __obj.updateDynamic("addStyleName")(addStyleName)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getTag")(getTag)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("setEnabled")(setEnabled)
+    __obj.updateDynamic("setHeight")(setHeight)
+    __obj.updateDynamic("setId")(setId)
+    __obj.updateDynamic("setLayoutData")(setLayoutData)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setPixelSize")(setPixelSize)
+    __obj.updateDynamic("setSize")(setSize)
+    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
+    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
+    __obj.updateDynamic("setStyleName")(setStyleName)
+    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
+    __obj.updateDynamic("setTag")(setTag)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("setVisible")(setVisible)
+    __obj.updateDynamic("setWidth")(setWidth)
+    __obj.asInstanceOf[FileUpload]
+  }
+}
+

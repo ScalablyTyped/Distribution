@@ -44,3 +44,81 @@ trait ConfigShorthands extends js.Object {
   var y: js.Array[_]
 }
 
+object ConfigShorthands {
+  @scala.inline
+  def apply(
+    `?`: js.Array[_],
+    B: js.Array[_],
+    C: js.Array[_],
+    D: js.Array[_],
+    E: js.Array[_],
+    H: js.Array[_],
+    N: js.Array[_],
+    O: js.Array[_],
+    S: js.Array[_],
+    d: js.Array[_],
+    dd: js.Array[_],
+    ddd: js.Array[_],
+    desc: js.Array[_],
+    f: js.Array[_],
+    g: js.Array[_],
+    gangsta: js.Array[_],
+    gangster: js.Array[_],
+    h: js.Array[_],
+    help: js.Array[_],
+    l: js.Array[_],
+    local: js.Array[_],
+    m: js.Array[_],
+    n: js.Array[_],
+    `no-desc`: js.Array[_],
+    `no-reg`: js.Array[_],
+    noreg: js.Array[_],
+    p: js.Array[_],
+    porcelain: js.Array[_],
+    q: js.Array[_],
+    quiet: js.Array[_],
+    reg: js.Array[_],
+    s: js.Array[_],
+    silent: js.Array[_],
+    v: js.Array[_],
+    verbose: js.Array[_],
+    y: js.Array[_]
+  ): ConfigShorthands = {
+    val __obj = js.Dynamic.literal(`?` = `?`, `no-desc` = `no-desc`, `no-reg` = `no-reg`)
+    __obj.updateDynamic("B")(B)
+    __obj.updateDynamic("C")(C)
+    __obj.updateDynamic("D")(D)
+    __obj.updateDynamic("E")(E)
+    __obj.updateDynamic("H")(H)
+    __obj.updateDynamic("N")(N)
+    __obj.updateDynamic("O")(O)
+    __obj.updateDynamic("S")(S)
+    __obj.updateDynamic("d")(d)
+    __obj.updateDynamic("dd")(dd)
+    __obj.updateDynamic("ddd")(ddd)
+    __obj.updateDynamic("desc")(desc)
+    __obj.updateDynamic("f")(f)
+    __obj.updateDynamic("g")(g)
+    __obj.updateDynamic("gangsta")(gangsta)
+    __obj.updateDynamic("gangster")(gangster)
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("help")(help)
+    __obj.updateDynamic("l")(l)
+    __obj.updateDynamic("local")(local)
+    __obj.updateDynamic("m")(m)
+    __obj.updateDynamic("n")(n)
+    __obj.updateDynamic("noreg")(noreg)
+    __obj.updateDynamic("p")(p)
+    __obj.updateDynamic("porcelain")(porcelain)
+    __obj.updateDynamic("q")(q)
+    __obj.updateDynamic("quiet")(quiet)
+    __obj.updateDynamic("reg")(reg)
+    __obj.updateDynamic("s")(s)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("v")(v)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[ConfigShorthands]
+  }
+}
+

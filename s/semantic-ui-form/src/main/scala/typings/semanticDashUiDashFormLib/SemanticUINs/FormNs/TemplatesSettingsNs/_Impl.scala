@@ -10,3 +10,16 @@ trait _Impl extends js.Object {
   def prompt(errors: js.Array[java.lang.String]): semanticDashUiDashFormLib.JQuery
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    error: js.Function1[js.Array[java.lang.String], semanticDashUiDashFormLib.JQuery],
+    prompt: js.Function1[js.Array[java.lang.String], semanticDashUiDashFormLib.JQuery]
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("prompt")(prompt)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

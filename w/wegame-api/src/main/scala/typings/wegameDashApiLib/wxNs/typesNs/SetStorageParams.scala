@@ -13,3 +13,22 @@ trait SetStorageParams extends js.Object {
   var success: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object SetStorageParams {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    key: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    success: js.Function0[scala.Unit] = null
+  ): SetStorageParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("key")(key)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[SetStorageParams]
+  }
+}
+

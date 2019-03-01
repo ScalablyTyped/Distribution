@@ -10,3 +10,12 @@ trait strings
   var SELECTED_EVENT: atMaterialTabsLib.atMaterialTabsLibStrings.`MDCTab:selected`
 }
 
+object strings {
+  @scala.inline
+  def apply(SELECTED_EVENT: atMaterialTabsLib.atMaterialTabsLibStrings.`MDCTab:selected`): strings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SELECTED_EVENT")(SELECTED_EVENT)
+    __obj.asInstanceOf[strings]
+  }
+}
+

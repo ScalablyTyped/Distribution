@@ -9,3 +9,12 @@ trait DeploymentDeploy extends Deployment {
   var message: java.lang.String
 }
 
+object DeploymentDeploy {
+  @scala.inline
+  def apply(message: java.lang.String, `type`: java.lang.String): DeploymentDeploy = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[DeploymentDeploy]
+  }
+}
+

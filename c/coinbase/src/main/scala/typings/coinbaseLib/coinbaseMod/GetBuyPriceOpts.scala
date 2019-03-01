@@ -12,3 +12,12 @@ trait GetBuyPriceOpts extends js.Object {
   var currencyPair: java.lang.String
 }
 
+object GetBuyPriceOpts {
+  @scala.inline
+  def apply(currencyPair: java.lang.String): GetBuyPriceOpts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currencyPair")(currencyPair)
+    __obj.asInstanceOf[GetBuyPriceOpts]
+  }
+}
+

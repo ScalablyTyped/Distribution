@@ -14,3 +14,14 @@ trait Anon_Memory extends js.Object {
   var `type`: webgmeLib.webgmeLibStrings.mongo | webgmeLib.webgmeLibStrings.redis | webgmeLib.webgmeLibStrings.memory
 }
 
+object Anon_Memory {
+  @scala.inline
+  def apply(
+    `type`: webgmeLib.webgmeLibStrings.mongo | webgmeLib.webgmeLibStrings.redis | webgmeLib.webgmeLibStrings.memory
+  ): Anon_Memory = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Memory]
+  }
+}
+

@@ -14,3 +14,12 @@ trait IGridOptions extends js.Object {
   var enableInfiniteScroll: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(enableInfiniteScroll: js.UndefOr[scala.Boolean] = js.undefined): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableInfiniteScroll)) __obj.updateDynamic("enableInfiniteScroll")(enableInfiniteScroll)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

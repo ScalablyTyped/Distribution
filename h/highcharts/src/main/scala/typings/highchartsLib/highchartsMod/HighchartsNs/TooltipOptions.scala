@@ -167,3 +167,77 @@ trait TooltipOptions extends SeriesTooltipOptions {
   var useHTML: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TooltipOptions {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundColor: java.lang.String | Gradient = null,
+    borderColor: java.lang.String | Gradient = null,
+    borderRadius: scala.Int | scala.Double = null,
+    borderWidth: scala.Int | scala.Double = null,
+    crosshairs: scala.Boolean | (js.Tuple2[scala.Boolean, scala.Boolean]) | CrosshairObject | (js.Tuple2[CrosshairObject, CrosshairObject]) = null,
+    dateTimeLabelFormats: DateTimeFormats = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    followPointer: js.UndefOr[scala.Boolean] = js.undefined,
+    followTouchMove: js.UndefOr[scala.Boolean] = js.undefined,
+    footerFormat: java.lang.String = null,
+    formatter: js.Function0[scala.Boolean | java.lang.String] = null,
+    headerFormat: java.lang.String = null,
+    hideDelay: scala.Int | scala.Double = null,
+    outside: js.UndefOr[scala.Boolean] = js.undefined,
+    padding: scala.Int | scala.Double = null,
+    pointFormat: java.lang.String = null,
+    pointFormatter: js.Function0[java.lang.String] = null,
+    positioner: js.Function3[
+      /* labelWidth */ scala.Double, 
+      /* labelHeight */ scala.Double, 
+      /* point */ PlotPoint, 
+      highchartsLib.Anon_X
+    ] = null,
+    shadow: js.UndefOr[scala.Boolean] = js.undefined,
+    shape: java.lang.String = null,
+    shared: js.UndefOr[scala.Boolean] = js.undefined,
+    snap: scala.Int | scala.Double = null,
+    split: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.Object = null,
+    useHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    valueDecimals: scala.Int | scala.Double = null,
+    valuePrefix: java.lang.String = null,
+    valueSuffix: java.lang.String = null,
+    xDateFormat: java.lang.String = null
+  ): TooltipOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (crosshairs != null) __obj.updateDynamic("crosshairs")(crosshairs.asInstanceOf[js.Any])
+    if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer)
+    if (!js.isUndefined(followTouchMove)) __obj.updateDynamic("followTouchMove")(followTouchMove)
+    if (footerFormat != null) __obj.updateDynamic("footerFormat")(footerFormat)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat)
+    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(outside)) __obj.updateDynamic("outside")(outside)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat)
+    if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter)
+    if (positioner != null) __obj.updateDynamic("positioner")(positioner)
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
+    if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
+    if (!js.isUndefined(split)) __obj.updateDynamic("split")(split)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML)
+    if (valueDecimals != null) __obj.updateDynamic("valueDecimals")(valueDecimals.asInstanceOf[js.Any])
+    if (valuePrefix != null) __obj.updateDynamic("valuePrefix")(valuePrefix)
+    if (valueSuffix != null) __obj.updateDynamic("valueSuffix")(valueSuffix)
+    if (xDateFormat != null) __obj.updateDynamic("xDateFormat")(xDateFormat)
+    __obj.asInstanceOf[TooltipOptions]
+  }
+}
+

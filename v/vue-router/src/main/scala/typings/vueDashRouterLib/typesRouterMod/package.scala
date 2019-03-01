@@ -31,9 +31,8 @@ package object typesRouterMod {
     ], 
     js.Any
   ]
-  type PositionResult = Position | vueDashRouterLib.Anon_Offset | scala.Unit
+  type PositionResult = _PositionResult | scala.Unit
   type RawLocation = java.lang.String | Location
   type RedirectOption = RawLocation | (js.Function1[/* to */ Route, RawLocation])
   type RoutePropsFunction = js.Function1[/* route */ Route, js.Object]
-  type RouterMode = vueDashRouterLib.vueDashRouterLibStrings.hash | vueDashRouterLib.vueDashRouterLibStrings.history | vueDashRouterLib.vueDashRouterLibStrings.`abstract`
 }

@@ -16,3 +16,13 @@ trait DiagnosticRelatedInformation extends js.Object {
   var message: java.lang.String
 }
 
+object DiagnosticRelatedInformation {
+  @scala.inline
+  def apply(location: Location, message: java.lang.String): DiagnosticRelatedInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[DiagnosticRelatedInformation]
+  }
+}
+

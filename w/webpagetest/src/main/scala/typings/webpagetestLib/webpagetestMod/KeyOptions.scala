@@ -10,3 +10,12 @@ trait KeyOptions extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeyOptions {
+  @scala.inline
+  def apply(key: java.lang.String = null): KeyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[KeyOptions]
+  }
+}
+

@@ -17,3 +17,20 @@ trait IIndexableContent extends js.Object {
   var streamContentType: java.lang.String
 }
 
+object IIndexableContent {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    properties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMap[java.lang.String, _],
+    stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream,
+    streamContentType: java.lang.String
+  ): IIndexableContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("stream")(stream)
+    __obj.updateDynamic("streamContentType")(streamContentType)
+    __obj.asInstanceOf[IIndexableContent]
+  }
+}
+

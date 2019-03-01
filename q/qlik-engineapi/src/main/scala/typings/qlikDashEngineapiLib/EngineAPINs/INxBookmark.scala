@@ -23,3 +23,18 @@ trait INxBookmark extends js.Object {
   var qVariableItems: js.Array[IBookmarkVariableItem]
 }
 
+object INxBookmark {
+  @scala.inline
+  def apply(
+    qStateData: js.Array[IAlternateStateData],
+    qUtcModifyTime: scala.Double,
+    qVariableItems: js.Array[IBookmarkVariableItem]
+  ): INxBookmark = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qStateData")(qStateData)
+    __obj.updateDynamic("qUtcModifyTime")(qUtcModifyTime)
+    __obj.updateDynamic("qVariableItems")(qVariableItems)
+    __obj.asInstanceOf[INxBookmark]
+  }
+}
+

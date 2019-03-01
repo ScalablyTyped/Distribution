@@ -65,3 +65,38 @@ trait IAudioEngine extends IDisposable {
   def unlock(): scala.Unit
 }
 
+object IAudioEngine {
+  @scala.inline
+  def apply(
+    WarnedWebAudioUnsupported: scala.Boolean,
+    audioContext: Nullable[stdLib.AudioContext],
+    canUseWebAudio: scala.Boolean,
+    dispose: js.Function0[scala.Unit],
+    isMP3supported: scala.Boolean,
+    isOGGsupported: scala.Boolean,
+    lock: js.Function0[scala.Unit],
+    masterGain: stdLib.GainNode,
+    onAudioLockedObservable: Observable[AudioEngine],
+    onAudioUnlockedObservable: Observable[AudioEngine],
+    unlock: js.Function0[scala.Unit],
+    unlocked: scala.Boolean,
+    useCustomUnlockedButton: scala.Boolean
+  ): IAudioEngine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("WarnedWebAudioUnsupported")(WarnedWebAudioUnsupported)
+    __obj.updateDynamic("audioContext")(audioContext.asInstanceOf[js.Any])
+    __obj.updateDynamic("canUseWebAudio")(canUseWebAudio)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("isMP3supported")(isMP3supported)
+    __obj.updateDynamic("isOGGsupported")(isOGGsupported)
+    __obj.updateDynamic("lock")(lock)
+    __obj.updateDynamic("masterGain")(masterGain)
+    __obj.updateDynamic("onAudioLockedObservable")(onAudioLockedObservable)
+    __obj.updateDynamic("onAudioUnlockedObservable")(onAudioUnlockedObservable)
+    __obj.updateDynamic("unlock")(unlock)
+    __obj.updateDynamic("unlocked")(unlocked)
+    __obj.updateDynamic("useCustomUnlockedButton")(useCustomUnlockedButton)
+    __obj.asInstanceOf[IAudioEngine]
+  }
+}
+

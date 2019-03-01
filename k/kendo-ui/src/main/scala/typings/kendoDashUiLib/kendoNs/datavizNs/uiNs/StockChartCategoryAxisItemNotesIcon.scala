@@ -13,3 +13,22 @@ trait StockChartCategoryAxisItemNotesIcon extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StockChartCategoryAxisItemNotesIcon {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: StockChartCategoryAxisItemNotesIconBorder = null,
+    size: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): StockChartCategoryAxisItemNotesIcon = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[StockChartCategoryAxisItemNotesIcon]
+  }
+}
+

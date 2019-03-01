@@ -114,3 +114,46 @@ trait StudentSubmission extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StudentSubmission {
+  @scala.inline
+  def apply(
+    alternateLink: java.lang.String = null,
+    assignedGrade: scala.Int | scala.Double = null,
+    assignmentSubmission: AssignmentSubmission = null,
+    associatedWithDeveloper: js.UndefOr[scala.Boolean] = js.undefined,
+    courseId: java.lang.String = null,
+    courseWorkId: java.lang.String = null,
+    courseWorkType: java.lang.String = null,
+    creationTime: java.lang.String = null,
+    draftGrade: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    late: js.UndefOr[scala.Boolean] = js.undefined,
+    multipleChoiceSubmission: MultipleChoiceSubmission = null,
+    shortAnswerSubmission: ShortAnswerSubmission = null,
+    state: java.lang.String = null,
+    submissionHistory: js.Array[SubmissionHistory] = null,
+    updateTime: java.lang.String = null,
+    userId: java.lang.String = null
+  ): StudentSubmission = {
+    val __obj = js.Dynamic.literal()
+    if (alternateLink != null) __obj.updateDynamic("alternateLink")(alternateLink)
+    if (assignedGrade != null) __obj.updateDynamic("assignedGrade")(assignedGrade.asInstanceOf[js.Any])
+    if (assignmentSubmission != null) __obj.updateDynamic("assignmentSubmission")(assignmentSubmission)
+    if (!js.isUndefined(associatedWithDeveloper)) __obj.updateDynamic("associatedWithDeveloper")(associatedWithDeveloper)
+    if (courseId != null) __obj.updateDynamic("courseId")(courseId)
+    if (courseWorkId != null) __obj.updateDynamic("courseWorkId")(courseWorkId)
+    if (courseWorkType != null) __obj.updateDynamic("courseWorkType")(courseWorkType)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (draftGrade != null) __obj.updateDynamic("draftGrade")(draftGrade.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(late)) __obj.updateDynamic("late")(late)
+    if (multipleChoiceSubmission != null) __obj.updateDynamic("multipleChoiceSubmission")(multipleChoiceSubmission)
+    if (shortAnswerSubmission != null) __obj.updateDynamic("shortAnswerSubmission")(shortAnswerSubmission)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (submissionHistory != null) __obj.updateDynamic("submissionHistory")(submissionHistory)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[StudentSubmission]
+  }
+}
+

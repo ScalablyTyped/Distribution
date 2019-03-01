@@ -36,3 +36,16 @@ trait ICurrentUserResource extends js.Object {
   def getMembershipProviderConfig(): js.Any
 }
 
+object ICurrentUserResource {
+  @scala.inline
+  def apply(
+    changePassword: js.Function1[js.Any, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getMembershipProviderConfig: js.Function0[js.Any]
+  ): ICurrentUserResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changePassword")(changePassword)
+    __obj.updateDynamic("getMembershipProviderConfig")(getMembershipProviderConfig)
+    __obj.asInstanceOf[ICurrentUserResource]
+  }
+}
+

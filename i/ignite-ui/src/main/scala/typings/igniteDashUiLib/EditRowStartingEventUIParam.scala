@@ -20,3 +20,14 @@ trait EditRowStartingEventUIParam extends js.Object {
   var rowID: js.UndefOr[js.Any] = js.undefined
 }
 
+object EditRowStartingEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null, rowAdding: js.UndefOr[scala.Boolean] = js.undefined, rowID: js.Any = null): EditRowStartingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding)
+    if (rowID != null) __obj.updateDynamic("rowID")(rowID)
+    __obj.asInstanceOf[EditRowStartingEventUIParam]
+  }
+}
+

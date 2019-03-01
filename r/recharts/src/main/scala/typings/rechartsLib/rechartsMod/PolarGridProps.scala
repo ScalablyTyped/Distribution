@@ -16,3 +16,26 @@ import scala.scalajs.js.annotation._
   var polarRadius: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object PolarGridProps {
+  @scala.inline
+  def apply(
+    cx: scala.Int | scala.Double = null,
+    cy: scala.Int | scala.Double = null,
+    gridType: rechartsLib.rechartsLibStrings.polygon | rechartsLib.rechartsLibStrings.circle = null,
+    innerRadius: scala.Int | scala.Double = null,
+    outerRadius: scala.Int | scala.Double = null,
+    polarAngles: js.Array[scala.Double] = null,
+    polarRadius: js.Array[scala.Double] = null
+  ): PolarGridProps = {
+    val __obj = js.Dynamic.literal()
+    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
+    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
+    if (gridType != null) __obj.updateDynamic("gridType")(gridType.asInstanceOf[js.Any])
+    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
+    if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
+    if (polarAngles != null) __obj.updateDynamic("polarAngles")(polarAngles)
+    if (polarRadius != null) __obj.updateDynamic("polarRadius")(polarRadius)
+    __obj.asInstanceOf[PolarGridProps]
+  }
+}
+

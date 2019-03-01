@@ -11,3 +11,18 @@ trait Anon_ConverterPriorityModelViewFunction extends js.Object {
   var view: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.MatcherPattern
 }
 
+object Anon_ConverterPriorityModelViewFunction {
+  @scala.inline
+  def apply(
+    model: java.lang.String | js.Function,
+    view: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.MatcherPattern,
+    converterPriority: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.PriorityString = null
+  ): Anon_ConverterPriorityModelViewFunction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (converterPriority != null) __obj.updateDynamic("converterPriority")(converterPriority)
+    __obj.asInstanceOf[Anon_ConverterPriorityModelViewFunction]
+  }
+}
+

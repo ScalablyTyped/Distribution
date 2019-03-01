@@ -22,3 +22,18 @@ trait CreateShortDynamicLinkRequest extends js.Object {
   var suffix: js.UndefOr[Suffix] = js.undefined
 }
 
+object CreateShortDynamicLinkRequest {
+  @scala.inline
+  def apply(
+    dynamicLinkInfo: DynamicLinkInfo = null,
+    longDynamicLink: java.lang.String = null,
+    suffix: Suffix = null
+  ): CreateShortDynamicLinkRequest = {
+    val __obj = js.Dynamic.literal()
+    if (dynamicLinkInfo != null) __obj.updateDynamic("dynamicLinkInfo")(dynamicLinkInfo)
+    if (longDynamicLink != null) __obj.updateDynamic("longDynamicLink")(longDynamicLink)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    __obj.asInstanceOf[CreateShortDynamicLinkRequest]
+  }
+}
+

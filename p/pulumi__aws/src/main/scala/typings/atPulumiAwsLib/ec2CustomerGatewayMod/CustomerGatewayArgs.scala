@@ -25,3 +25,19 @@ trait CustomerGatewayArgs extends js.Object {
   val `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object CustomerGatewayArgs {
+  @scala.inline
+  def apply(
+    bgpAsn: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    ipAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): CustomerGatewayArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
+    __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CustomerGatewayArgs]
+  }
+}
+

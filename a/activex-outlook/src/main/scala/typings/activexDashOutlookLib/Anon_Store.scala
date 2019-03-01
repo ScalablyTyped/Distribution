@@ -9,3 +9,12 @@ trait Anon_Store extends js.Object {
   val Store: activexDashOutlookLib.OutlookNs.Store
 }
 
+object Anon_Store {
+  @scala.inline
+  def apply(Store: activexDashOutlookLib.OutlookNs.Store): Anon_Store = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Store")(Store)
+    __obj.asInstanceOf[Anon_Store]
+  }
+}
+

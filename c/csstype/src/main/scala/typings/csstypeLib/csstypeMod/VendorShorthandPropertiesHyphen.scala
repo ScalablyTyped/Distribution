@@ -57,3 +57,62 @@ trait VendorShorthandPropertiesHyphen[TLength] extends js.Object {
   var `-webkit-transition`: js.UndefOr[TransitionProperty] = js.undefined
 }
 
+object VendorShorthandPropertiesHyphen {
+  @scala.inline
+  def apply[TLength](
+    `-moz-animation`: AnimationProperty = null,
+    `-moz-border-image`: BorderImageProperty = null,
+    `-moz-column-rule`: ColumnRuleProperty[TLength] = null,
+    `-moz-columns`: ColumnsProperty[TLength] = null,
+    `-moz-transition`: TransitionProperty = null,
+    `-ms-content-zoom-limit`: csstypeLib.GlobalsString = null,
+    `-ms-content-zoom-snap`: MsContentZoomSnapProperty = null,
+    `-ms-flex`: FlexProperty[TLength] = null,
+    `-ms-scroll-limit`: csstypeLib.GlobalsString = null,
+    `-ms-scroll-snap-x`: csstypeLib.GlobalsString = null,
+    `-ms-scroll-snap-y`: csstypeLib.GlobalsString = null,
+    `-o-border-image`: BorderImageProperty = null,
+    `-webkit-animation`: AnimationProperty = null,
+    `-webkit-border-before`: WebkitBorderBeforeProperty[TLength] = null,
+    `-webkit-border-image`: BorderImageProperty = null,
+    `-webkit-border-radius`: BorderRadiusProperty[TLength] = null,
+    `-webkit-column-rule`: ColumnRuleProperty[TLength] = null,
+    `-webkit-columns`: ColumnsProperty[TLength] = null,
+    `-webkit-flex`: FlexProperty[TLength] = null,
+    `-webkit-flex-flow`: FlexFlowProperty = null,
+    `-webkit-line-clamp`: WebkitLineClampProperty = null,
+    `-webkit-mask`: WebkitMaskProperty[TLength] = null,
+    `-webkit-text-emphasis`: TextEmphasisProperty = null,
+    `-webkit-text-stroke`: WebkitTextStrokeProperty[TLength] = null,
+    `-webkit-transition`: TransitionProperty = null
+  ): VendorShorthandPropertiesHyphen[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (`-moz-animation` != null) __obj.updateDynamic("-moz-animation")(`-moz-animation`.asInstanceOf[js.Any])
+    if (`-moz-border-image` != null) __obj.updateDynamic("-moz-border-image")(`-moz-border-image`.asInstanceOf[js.Any])
+    if (`-moz-column-rule` != null) __obj.updateDynamic("-moz-column-rule")(`-moz-column-rule`.asInstanceOf[js.Any])
+    if (`-moz-columns` != null) __obj.updateDynamic("-moz-columns")(`-moz-columns`.asInstanceOf[js.Any])
+    if (`-moz-transition` != null) __obj.updateDynamic("-moz-transition")(`-moz-transition`.asInstanceOf[js.Any])
+    if (`-ms-content-zoom-limit` != null) __obj.updateDynamic("-ms-content-zoom-limit")(`-ms-content-zoom-limit`.asInstanceOf[js.Any])
+    if (`-ms-content-zoom-snap` != null) __obj.updateDynamic("-ms-content-zoom-snap")(`-ms-content-zoom-snap`.asInstanceOf[js.Any])
+    if (`-ms-flex` != null) __obj.updateDynamic("-ms-flex")(`-ms-flex`.asInstanceOf[js.Any])
+    if (`-ms-scroll-limit` != null) __obj.updateDynamic("-ms-scroll-limit")(`-ms-scroll-limit`.asInstanceOf[js.Any])
+    if (`-ms-scroll-snap-x` != null) __obj.updateDynamic("-ms-scroll-snap-x")(`-ms-scroll-snap-x`.asInstanceOf[js.Any])
+    if (`-ms-scroll-snap-y` != null) __obj.updateDynamic("-ms-scroll-snap-y")(`-ms-scroll-snap-y`.asInstanceOf[js.Any])
+    if (`-o-border-image` != null) __obj.updateDynamic("-o-border-image")(`-o-border-image`.asInstanceOf[js.Any])
+    if (`-webkit-animation` != null) __obj.updateDynamic("-webkit-animation")(`-webkit-animation`.asInstanceOf[js.Any])
+    if (`-webkit-border-before` != null) __obj.updateDynamic("-webkit-border-before")(`-webkit-border-before`.asInstanceOf[js.Any])
+    if (`-webkit-border-image` != null) __obj.updateDynamic("-webkit-border-image")(`-webkit-border-image`.asInstanceOf[js.Any])
+    if (`-webkit-border-radius` != null) __obj.updateDynamic("-webkit-border-radius")(`-webkit-border-radius`.asInstanceOf[js.Any])
+    if (`-webkit-column-rule` != null) __obj.updateDynamic("-webkit-column-rule")(`-webkit-column-rule`.asInstanceOf[js.Any])
+    if (`-webkit-columns` != null) __obj.updateDynamic("-webkit-columns")(`-webkit-columns`.asInstanceOf[js.Any])
+    if (`-webkit-flex` != null) __obj.updateDynamic("-webkit-flex")(`-webkit-flex`.asInstanceOf[js.Any])
+    if (`-webkit-flex-flow` != null) __obj.updateDynamic("-webkit-flex-flow")(`-webkit-flex-flow`.asInstanceOf[js.Any])
+    if (`-webkit-line-clamp` != null) __obj.updateDynamic("-webkit-line-clamp")(`-webkit-line-clamp`.asInstanceOf[js.Any])
+    if (`-webkit-mask` != null) __obj.updateDynamic("-webkit-mask")(`-webkit-mask`.asInstanceOf[js.Any])
+    if (`-webkit-text-emphasis` != null) __obj.updateDynamic("-webkit-text-emphasis")(`-webkit-text-emphasis`.asInstanceOf[js.Any])
+    if (`-webkit-text-stroke` != null) __obj.updateDynamic("-webkit-text-stroke")(`-webkit-text-stroke`.asInstanceOf[js.Any])
+    if (`-webkit-transition` != null) __obj.updateDynamic("-webkit-transition")(`-webkit-transition`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VendorShorthandPropertiesHyphen[TLength]]
+  }
+}
+

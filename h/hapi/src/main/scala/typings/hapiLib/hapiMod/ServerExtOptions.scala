@@ -25,3 +25,20 @@ trait ServerExtOptions extends js.Object {
   var sandbox: js.UndefOr[hapiLib.hapiLibStrings.server | hapiLib.hapiLibStrings.plugin] = js.undefined
 }
 
+object ServerExtOptions {
+  @scala.inline
+  def apply(
+    after: java.lang.String | js.Array[java.lang.String] = null,
+    before: java.lang.String | js.Array[java.lang.String] = null,
+    bind: js.Object = null,
+    sandbox: hapiLib.hapiLibStrings.server | hapiLib.hapiLibStrings.plugin = null
+  ): ServerExtOptions = {
+    val __obj = js.Dynamic.literal()
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    if (bind != null) __obj.updateDynamic("bind")(bind)
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerExtOptions]
+  }
+}
+

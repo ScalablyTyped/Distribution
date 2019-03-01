@@ -288,3 +288,20 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CalloutProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    color: reactDashFoundationLib.enumsMod.CalloutColors = null,
+    size: reactDashFoundationLib.enumsMod.CalloutSizes = null
+  ): CalloutProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[CalloutProps]
+  }
+}
+

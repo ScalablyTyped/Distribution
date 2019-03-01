@@ -22,3 +22,22 @@ trait Anon_Condition extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Condition {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    condition: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition = null,
+    pref: java.lang.String = null,
+    purpose: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose = null,
+    value: java.lang.String = null
+  ): Anon_Condition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (pref != null) __obj.updateDynamic("pref")(pref)
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Condition]
+  }
+}
+

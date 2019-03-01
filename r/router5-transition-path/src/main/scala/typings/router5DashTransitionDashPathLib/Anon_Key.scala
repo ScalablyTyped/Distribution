@@ -12,3 +12,16 @@ trait Anon_Key extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    options: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    params: org.scalablytyped.runtime.StringDictionary[router5DashTransitionDashPathLib.typesTransitionPathMod.SegementParams] = null
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object ngDashTableLibStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends ngDashTableLib.srcCoreGroupingGroupingFuncMod.GroupSort
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends ngDashTableLib.srcCoreSortingMod.SortDirection
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends ngDashTableLib.srcCoreSortingMod.SortDirection
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends ngDashTableLib.srcCoreFilteringFilterSettingsMod.FilterLayout
   
   @js.native
-  sealed trait stack extends js.Object
+  sealed trait stack
+    extends ngDashTableLib.srcCoreFilteringFilterSettingsMod.FilterLayout
   
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]

@@ -67,3 +67,26 @@ trait HeaderFooterGroupUpdateData extends js.Object {
   var useSheetScale: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HeaderFooterGroupUpdateData {
+  @scala.inline
+  def apply(
+    defaultForAllPages: HeaderFooterUpdateData = null,
+    evenPages: HeaderFooterUpdateData = null,
+    firstPage: HeaderFooterUpdateData = null,
+    oddPages: HeaderFooterUpdateData = null,
+    state: officeDashJsDashPreviewLib.ExcelNs.HeaderFooterState | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Default | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FirstAndDefault | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.OddAndEven | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FirstOddAndEven = null,
+    useSheetMargins: js.UndefOr[scala.Boolean] = js.undefined,
+    useSheetScale: js.UndefOr[scala.Boolean] = js.undefined
+  ): HeaderFooterGroupUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (defaultForAllPages != null) __obj.updateDynamic("defaultForAllPages")(defaultForAllPages)
+    if (evenPages != null) __obj.updateDynamic("evenPages")(evenPages)
+    if (firstPage != null) __obj.updateDynamic("firstPage")(firstPage)
+    if (oddPages != null) __obj.updateDynamic("oddPages")(oddPages)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSheetMargins)) __obj.updateDynamic("useSheetMargins")(useSheetMargins)
+    if (!js.isUndefined(useSheetScale)) __obj.updateDynamic("useSheetScale")(useSheetScale)
+    __obj.asInstanceOf[HeaderFooterGroupUpdateData]
+  }
+}
+

@@ -24,3 +24,20 @@ trait ReplicationSubnetGroupArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object ReplicationSubnetGroupArgs {
+  @scala.inline
+  def apply(
+    replicationSubnetGroupDescription: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    replicationSubnetGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ReplicationSubnetGroupArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("replicationSubnetGroupDescription")(replicationSubnetGroupDescription.asInstanceOf[js.Any])
+    __obj.updateDynamic("replicationSubnetGroupId")(replicationSubnetGroupId.asInstanceOf[js.Any])
+    __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReplicationSubnetGroupArgs]
+  }
+}
+

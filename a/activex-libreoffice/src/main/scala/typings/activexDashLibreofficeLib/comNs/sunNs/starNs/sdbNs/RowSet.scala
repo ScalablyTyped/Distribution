@@ -122,3 +122,62 @@ import scala.scalajs.js.annotation._
   var User: java.lang.String
 }
 
+object RowSet {
+  @scala.inline
+  def apply(
+    ActiveCommand: java.lang.String,
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    ApplyFilter: scala.Boolean,
+    Command: java.lang.String,
+    CommandType: scala.Double,
+    DataSourceName: java.lang.String,
+    Filter: java.lang.String,
+    GroupBy: java.lang.String,
+    HavingClause: java.lang.String,
+    IgnoreResult: scala.Boolean,
+    IsModified: scala.Boolean,
+    IsNew: scala.Boolean,
+    IsRowCountFinal: scala.Boolean,
+    Order: java.lang.String,
+    Privileges: scala.Double,
+    RowCount: scala.Double,
+    RowSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.RowSet = null,
+    UpdateCatalogName: java.lang.String,
+    UpdateSchemaName: java.lang.String,
+    UpdateTableName: java.lang.String,
+    XCompletedExecution: XCompletedExecution = null,
+    XParametersSupplier: XParametersSupplier = null,
+    XResultSetAccess: XResultSetAccess = null,
+    XRowSetApproveBroadcaster: XRowSetApproveBroadcaster = null,
+    ResultSet: ResultSet = null
+  ): RowSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveCommand")(ActiveCommand)
+    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
+    __obj.updateDynamic("ApplyFilter")(ApplyFilter)
+    __obj.updateDynamic("Command")(Command)
+    __obj.updateDynamic("CommandType")(CommandType)
+    __obj.updateDynamic("DataSourceName")(DataSourceName)
+    __obj.updateDynamic("Filter")(Filter)
+    __obj.updateDynamic("GroupBy")(GroupBy)
+    __obj.updateDynamic("HavingClause")(HavingClause)
+    __obj.updateDynamic("IgnoreResult")(IgnoreResult)
+    __obj.updateDynamic("IsModified")(IsModified)
+    __obj.updateDynamic("IsNew")(IsNew)
+    __obj.updateDynamic("IsRowCountFinal")(IsRowCountFinal)
+    __obj.updateDynamic("Order")(Order)
+    __obj.updateDynamic("Privileges")(Privileges)
+    __obj.updateDynamic("RowCount")(RowCount)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, RowSet)
+    __obj.updateDynamic("UpdateCatalogName")(UpdateCatalogName)
+    __obj.updateDynamic("UpdateSchemaName")(UpdateSchemaName)
+    __obj.updateDynamic("UpdateTableName")(UpdateTableName)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCompletedExecution)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XParametersSupplier)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XResultSetAccess)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XRowSetApproveBroadcaster)
+    js.Dynamic.global.Object.assign(__obj, ResultSet)
+    __obj.asInstanceOf[RowSet]
+  }
+}
+

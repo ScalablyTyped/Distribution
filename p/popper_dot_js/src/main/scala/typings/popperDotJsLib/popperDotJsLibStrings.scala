@@ -10,67 +10,92 @@ object popperDotJsLibStrings {
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait `auto-end` extends js.Object
+  sealed trait `auto-end`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait `auto-start` extends js.Object
+  sealed trait `auto-start`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
+       with popperDotJsLib.popperDotJsMod.PopperNs.Position
   
   @js.native
-  sealed trait `bottom-end` extends js.Object
+  sealed trait `bottom-end`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait `bottom-start` extends js.Object
+  sealed trait `bottom-start`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait clockwise extends js.Object
+  sealed trait clockwise
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Behavior
   
   @js.native
-  sealed trait counterclockwise extends js.Object
+  sealed trait counterclockwise
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Behavior
   
   @js.native
-  sealed trait flip extends js.Object
+  sealed trait flip
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Behavior
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
+       with popperDotJsLib.popperDotJsMod.PopperNs.Position
   
   @js.native
-  sealed trait `left-end` extends js.Object
+  sealed trait `left-end`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait `left-start` extends js.Object
+  sealed trait `left-start`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
+       with popperDotJsLib.popperDotJsMod.PopperNs.Position
   
   @js.native
-  sealed trait `right-end` extends js.Object
+  sealed trait `right-end`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait `right-start` extends js.Object
+  sealed trait `right-start`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait scrollParent extends js.Object
+  sealed trait scrollParent
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Boundary
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
+       with popperDotJsLib.popperDotJsMod.PopperNs.Position
   
   @js.native
-  sealed trait `top-end` extends js.Object
+  sealed trait `top-end`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait `top-start` extends js.Object
+  sealed trait `top-start`
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Placement
   
   @js.native
-  sealed trait viewport extends js.Object
+  sealed trait viewport
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Boundary
   
   @js.native
-  sealed trait window extends js.Object
+  sealed trait window
+    extends popperDotJsLib.popperDotJsMod.PopperNs.Boundary
   
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]

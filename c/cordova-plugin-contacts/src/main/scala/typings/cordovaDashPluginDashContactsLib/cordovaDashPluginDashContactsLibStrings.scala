@@ -7,85 +7,85 @@ import scala.scalajs.js.annotation._
 
 object cordovaDashPluginDashContactsLibStrings {
   @js.native
-  sealed trait addresses extends js.Object
+  sealed trait addresses extends ContactFieldType
   
   @js.native
-  sealed trait birthday extends js.Object
+  sealed trait birthday extends ContactFieldType
   
   @js.native
-  sealed trait categories extends js.Object
+  sealed trait categories extends ContactFieldType
   
   @js.native
-  sealed trait country extends js.Object
+  sealed trait country extends ContactFieldType
   
   @js.native
-  sealed trait department extends js.Object
+  sealed trait department extends ContactFieldType
   
   @js.native
-  sealed trait displayName extends js.Object
+  sealed trait displayName extends ContactFieldType
   
   @js.native
-  sealed trait emails extends js.Object
+  sealed trait emails extends ContactFieldType
   
   @js.native
-  sealed trait familyName extends js.Object
+  sealed trait familyName extends ContactFieldType
   
   @js.native
-  sealed trait formatted extends js.Object
+  sealed trait formatted extends ContactFieldType
   
   @js.native
-  sealed trait givenName extends js.Object
+  sealed trait givenName extends ContactFieldType
   
   @js.native
-  sealed trait honorificPrefix extends js.Object
+  sealed trait honorificPrefix extends ContactFieldType
   
   @js.native
-  sealed trait honorificSuffix extends js.Object
+  sealed trait honorificSuffix extends ContactFieldType
   
   @js.native
-  sealed trait id extends js.Object
+  sealed trait id extends ContactFieldType
   
   @js.native
-  sealed trait ims extends js.Object
+  sealed trait ims extends ContactFieldType
   
   @js.native
-  sealed trait locality extends js.Object
+  sealed trait locality extends ContactFieldType
   
   @js.native
-  sealed trait middleName extends js.Object
+  sealed trait middleName extends ContactFieldType
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name extends ContactFieldType
   
   @js.native
-  sealed trait nickname extends js.Object
+  sealed trait nickname extends ContactFieldType
   
   @js.native
-  sealed trait note extends js.Object
+  sealed trait note extends ContactFieldType
   
   @js.native
-  sealed trait organizations extends js.Object
+  sealed trait organizations extends ContactFieldType
   
   @js.native
-  sealed trait phoneNumbers extends js.Object
+  sealed trait phoneNumbers extends ContactFieldType
   
   @js.native
-  sealed trait photos extends js.Object
+  sealed trait photos extends ContactFieldType
   
   @js.native
-  sealed trait postalCode extends js.Object
+  sealed trait postalCode extends ContactFieldType
   
   @js.native
-  sealed trait region extends js.Object
+  sealed trait region extends ContactFieldType
   
   @js.native
-  sealed trait streetAddress extends js.Object
+  sealed trait streetAddress extends ContactFieldType
   
   @js.native
-  sealed trait title extends js.Object
+  sealed trait title extends ContactFieldType
   
   @js.native
-  sealed trait urls extends js.Object
+  sealed trait urls extends ContactFieldType
   
   @scala.inline
   def addresses: addresses = "addresses".asInstanceOf[addresses]

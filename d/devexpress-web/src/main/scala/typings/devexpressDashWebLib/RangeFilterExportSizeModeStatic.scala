@@ -20,3 +20,14 @@ trait RangeFilterExportSizeModeStatic extends js.Object {
   var Zoom: java.lang.String
 }
 
+object RangeFilterExportSizeModeStatic {
+  @scala.inline
+  def apply(None: java.lang.String, Stretch: java.lang.String, Zoom: java.lang.String): RangeFilterExportSizeModeStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("None")(None)
+    __obj.updateDynamic("Stretch")(Stretch)
+    __obj.updateDynamic("Zoom")(Zoom)
+    __obj.asInstanceOf[RangeFilterExportSizeModeStatic]
+  }
+}
+

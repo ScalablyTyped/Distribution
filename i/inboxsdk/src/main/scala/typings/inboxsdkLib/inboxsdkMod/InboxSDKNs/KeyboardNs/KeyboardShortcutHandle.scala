@@ -9,3 +9,12 @@ trait KeyboardShortcutHandle extends js.Object {
   def remove(): scala.Unit
 }
 
+object KeyboardShortcutHandle {
+  @scala.inline
+  def apply(remove: js.Function0[scala.Unit]): KeyboardShortcutHandle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[KeyboardShortcutHandle]
+  }
+}
+

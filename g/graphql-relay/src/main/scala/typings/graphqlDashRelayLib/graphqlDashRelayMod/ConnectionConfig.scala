@@ -26,3 +26,28 @@ trait ConnectionConfig extends js.Object {
   ] = js.undefined
 }
 
+object ConnectionConfig {
+  @scala.inline
+  def apply(
+    nodeType: ConnectionConfigNodeType,
+    connectionFields: graphqlLib.typeDefinitionMod.Thunk[
+      graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+    ] = null,
+    edgeFields: graphqlLib.typeDefinitionMod.Thunk[
+      graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+    ] = null,
+    name: java.lang.String = null,
+    resolveCursor: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = null,
+    resolveNode: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ConnectionConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
+    if (connectionFields != null) __obj.updateDynamic("connectionFields")(connectionFields.asInstanceOf[js.Any])
+    if (edgeFields != null) __obj.updateDynamic("edgeFields")(edgeFields.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (resolveCursor != null) __obj.updateDynamic("resolveCursor")(resolveCursor)
+    if (resolveNode != null) __obj.updateDynamic("resolveNode")(resolveNode)
+    __obj.asInstanceOf[ConnectionConfig]
+  }
+}
+

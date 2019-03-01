@@ -7,67 +7,86 @@ import scala.scalajs.js.annotation._
 
 object stripeDashV2LibStrings {
   @js.native
-  sealed trait `American Express` extends js.Object
+  sealed trait `American Express`
+    extends stripeDashV2Lib.stripeNs.StripeCardDataBrand
   
   @js.native
-  sealed trait `Diners Club` extends js.Object
+  sealed trait `Diners Club`
+    extends stripeDashV2Lib.stripeNs.StripeCardDataBrand
   
   @js.native
-  sealed trait Discover extends js.Object
+  sealed trait Discover
+    extends stripeDashV2Lib.stripeNs.StripeCardDataBrand
   
   @js.native
-  sealed trait JCB extends js.Object
+  sealed trait JCB
+    extends stripeDashV2Lib.stripeNs.StripeCardDataBrand
   
   @js.native
-  sealed trait MasterCard extends js.Object
+  sealed trait MasterCard
+    extends stripeDashV2Lib.stripeNs.StripeCardDataBrand
   
   @js.native
-  sealed trait Unknown extends js.Object
+  sealed trait Unknown
+    extends stripeDashV2Lib.stripeNs.StripeCardDataBrand
   
   @js.native
-  sealed trait Visa extends js.Object
+  sealed trait Visa
+    extends stripeDashV2Lib.stripeNs.StripeCardDataBrand
   
   @js.native
-  sealed trait credit extends js.Object
+  sealed trait credit
+    extends stripeDashV2Lib.stripeNs.StripeCardDataFunding
   
   @js.native
-  sealed trait debit extends js.Object
+  sealed trait debit
+    extends stripeDashV2Lib.stripeNs.StripeCardDataFunding
   
   @js.native
-  sealed trait delivery extends js.Object
+  sealed trait delivery
+    extends stripeDashV2Lib.stripeNs.StripeApplePayShipping
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends stripeDashV2Lib.stripeNs.StripeApplePayShippingContactField
   
   @js.native
   sealed trait `final` extends js.Object
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name
+    extends stripeDashV2Lib.stripeNs.StripeApplePayBillingContactField
   
   @js.native
   sealed trait pending extends js.Object
   
   @js.native
-  sealed trait phone extends js.Object
+  sealed trait phone
+    extends stripeDashV2Lib.stripeNs.StripeApplePayShippingContactField
   
   @js.native
-  sealed trait postalAddress extends js.Object
+  sealed trait postalAddress
+    extends stripeDashV2Lib.stripeNs.StripeApplePayBillingContactField
   
   @js.native
-  sealed trait prepaid extends js.Object
+  sealed trait prepaid
+    extends stripeDashV2Lib.stripeNs.StripeCardDataFunding
   
   @js.native
-  sealed trait servicePickup extends js.Object
+  sealed trait servicePickup
+    extends stripeDashV2Lib.stripeNs.StripeApplePayShipping
   
   @js.native
-  sealed trait shipping extends js.Object
+  sealed trait shipping
+    extends stripeDashV2Lib.stripeNs.StripeApplePayShipping
   
   @js.native
-  sealed trait storePickup extends js.Object
+  sealed trait storePickup
+    extends stripeDashV2Lib.stripeNs.StripeApplePayShipping
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends stripeDashV2Lib.stripeNs.StripeCardDataFunding
   
   @scala.inline
   def `American Express`: `American Express` = "American Express".asInstanceOf[`American Express`]

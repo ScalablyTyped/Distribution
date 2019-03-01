@@ -34,3 +34,20 @@ trait DeviceConfig extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeviceConfig {
+  @scala.inline
+  def apply(
+    binaryData: java.lang.String = null,
+    cloudUpdateTime: java.lang.String = null,
+    deviceAckTime: java.lang.String = null,
+    version: java.lang.String = null
+  ): DeviceConfig = {
+    val __obj = js.Dynamic.literal()
+    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData)
+    if (cloudUpdateTime != null) __obj.updateDynamic("cloudUpdateTime")(cloudUpdateTime)
+    if (deviceAckTime != null) __obj.updateDynamic("deviceAckTime")(deviceAckTime)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[DeviceConfig]
+  }
+}
+

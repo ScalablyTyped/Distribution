@@ -12,3 +12,13 @@ trait Anon_FamilyName extends js.Object {
   var givenName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_FamilyName {
+  @scala.inline
+  def apply(familyName: java.lang.String = null, givenName: java.lang.String = null): Anon_FamilyName = {
+    val __obj = js.Dynamic.literal()
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName)
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName)
+    __obj.asInstanceOf[Anon_FamilyName]
+  }
+}
+

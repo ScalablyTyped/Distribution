@@ -16,3 +16,13 @@ trait SearchPathOptions extends js.Object {
   var transaction: js.UndefOr[Transaction] = js.undefined
 }
 
+object SearchPathOptions {
+  @scala.inline
+  def apply(searchPath: java.lang.String = null, transaction: Transaction = null): SearchPathOptions = {
+    val __obj = js.Dynamic.literal()
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[SearchPathOptions]
+  }
+}
+

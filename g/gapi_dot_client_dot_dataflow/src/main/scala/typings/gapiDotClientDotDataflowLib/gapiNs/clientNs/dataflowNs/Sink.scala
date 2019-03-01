@@ -12,3 +12,13 @@ trait Sink extends js.Object {
   var spec: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object Sink {
+  @scala.inline
+  def apply(codec: stdLib.Record[java.lang.String, _] = null, spec: stdLib.Record[java.lang.String, _] = null): Sink = {
+    val __obj = js.Dynamic.literal()
+    if (codec != null) __obj.updateDynamic("codec")(codec)
+    if (spec != null) __obj.updateDynamic("spec")(spec)
+    __obj.asInstanceOf[Sink]
+  }
+}
+

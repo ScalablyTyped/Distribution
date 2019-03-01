@@ -62,3 +62,33 @@ trait IgSplitButton
   var swapDefaultEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgSplitButton {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igSplitButton
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    click: ClickEvent = null,
+    collapsed: CollapsedEvent = null,
+    collapsing: CollapsingEvent = null,
+    defaultItemName: java.lang.String = null,
+    expanded: ExpandedEvent = null,
+    expanding: ExpandingEvent = null,
+    items: js.Array[IgSplitButtonItem] = null,
+    swapDefaultEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgSplitButton = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
+    if (collapsing != null) __obj.updateDynamic("collapsing")(collapsing)
+    if (defaultItemName != null) __obj.updateDynamic("defaultItemName")(defaultItemName)
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
+    if (expanding != null) __obj.updateDynamic("expanding")(expanding)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (!js.isUndefined(swapDefaultEnabled)) __obj.updateDynamic("swapDefaultEnabled")(swapDefaultEnabled)
+    __obj.asInstanceOf[IgSplitButton]
+  }
+}
+

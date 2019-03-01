@@ -52,3 +52,94 @@ trait Graph2dOptions extends js.Object {
   var zoomable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Graph2dOptions {
+  @scala.inline
+  def apply(
+    autoResize: js.UndefOr[scala.Boolean] = js.undefined,
+    barChart: Graph2dOptionBarChart = null,
+    clickToUse: js.UndefOr[scala.Boolean] = js.undefined,
+    configure: TimelineOptionsConfigureType = null,
+    dataAxis: Graph2dOptionDataAxis = null,
+    defaultGroup: java.lang.String = null,
+    drawPoints: Graph2dOptionDrawPoints = null,
+    end: DateType = null,
+    format: js.Any = null,
+    graphHeight: HeightWidthType = null,
+    height: HeightWidthType = null,
+    hiddenDates: js.Any = null,
+    legend: Graph2dLegendOption = null,
+    locale: java.lang.String = null,
+    locales: js.Any = null,
+    max: DateType = null,
+    maxHeight: HeightWidthType = null,
+    maxMinorChars: scala.Int | scala.Double = null,
+    min: DateType = null,
+    minHeight: HeightWidthType = null,
+    moment: MomentConstructor = null,
+    moveable: js.UndefOr[scala.Boolean] = js.undefined,
+    multiselect: js.UndefOr[scala.Boolean] = js.undefined,
+    orientation: java.lang.String = null,
+    sampling: js.UndefOr[scala.Boolean] = js.undefined,
+    showCurrentTime: js.UndefOr[scala.Boolean] = js.undefined,
+    showMajorLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    showMinorLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.UndefOr[scala.Boolean] = js.undefined,
+    stack: js.UndefOr[scala.Boolean] = js.undefined,
+    start: DateType = null,
+    style: Graph2dStyleType = null,
+    throttleRedraw: scala.Int | scala.Double = null,
+    timeAxis: TimelineTimeAxisOption = null,
+    width: HeightWidthType = null,
+    yAxisOrientation: RightLeftEnumType = null,
+    zIndex: scala.Int | scala.Double = null,
+    zoomKey: java.lang.String = null,
+    zoomMax: scala.Int | scala.Double = null,
+    zoomMin: scala.Int | scala.Double = null,
+    zoomable: js.UndefOr[scala.Boolean] = js.undefined
+  ): Graph2dOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize)
+    if (barChart != null) __obj.updateDynamic("barChart")(barChart.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToUse)) __obj.updateDynamic("clickToUse")(clickToUse)
+    if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
+    if (dataAxis != null) __obj.updateDynamic("dataAxis")(dataAxis.asInstanceOf[js.Any])
+    if (defaultGroup != null) __obj.updateDynamic("defaultGroup")(defaultGroup)
+    if (drawPoints != null) __obj.updateDynamic("drawPoints")(drawPoints.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (graphHeight != null) __obj.updateDynamic("graphHeight")(graphHeight.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hiddenDates != null) __obj.updateDynamic("hiddenDates")(hiddenDates)
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locales != null) __obj.updateDynamic("locales")(locales)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxMinorChars != null) __obj.updateDynamic("maxMinorChars")(maxMinorChars.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (moment != null) __obj.updateDynamic("moment")(moment.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveable)) __obj.updateDynamic("moveable")(moveable)
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (!js.isUndefined(sampling)) __obj.updateDynamic("sampling")(sampling)
+    if (!js.isUndefined(showCurrentTime)) __obj.updateDynamic("showCurrentTime")(showCurrentTime)
+    if (!js.isUndefined(showMajorLabels)) __obj.updateDynamic("showMajorLabels")(showMajorLabels)
+    if (!js.isUndefined(showMinorLabels)) __obj.updateDynamic("showMinorLabels")(showMinorLabels)
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (throttleRedraw != null) __obj.updateDynamic("throttleRedraw")(throttleRedraw.asInstanceOf[js.Any])
+    if (timeAxis != null) __obj.updateDynamic("timeAxis")(timeAxis)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (yAxisOrientation != null) __obj.updateDynamic("yAxisOrientation")(yAxisOrientation)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (zoomKey != null) __obj.updateDynamic("zoomKey")(zoomKey)
+    if (zoomMax != null) __obj.updateDynamic("zoomMax")(zoomMax.asInstanceOf[js.Any])
+    if (zoomMin != null) __obj.updateDynamic("zoomMin")(zoomMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable)
+    __obj.asInstanceOf[Graph2dOptions]
+  }
+}
+

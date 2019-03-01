@@ -6,7 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Statement, 'type'> ]: ast-types.ast-types/gen/nodes.Statement[P]} */ trait EmptyStatement extends js.Object {
+- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.Statement, 'type'> ]: ast-types.ast-types/gen/nodes.Statement[P]} */ trait EmptyStatement
+  extends ASTNode
+     with astDashTypesLib.genKindsMod.NodeKind
+     with astDashTypesLib.genKindsMod.PrintableKind
+     with astDashTypesLib.genKindsMod.StatementKind {
   var `type`: astDashTypesLib.astDashTypesLibStrings.EmptyStatement
+}
+
+object EmptyStatement {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.EmptyStatement): EmptyStatement = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[EmptyStatement]
+  }
 }
 

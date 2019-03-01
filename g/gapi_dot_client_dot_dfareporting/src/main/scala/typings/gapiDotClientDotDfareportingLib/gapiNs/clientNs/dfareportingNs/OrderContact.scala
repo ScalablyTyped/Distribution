@@ -21,3 +21,22 @@ trait OrderContact extends js.Object {
   var signatureUserProfileId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OrderContact {
+  @scala.inline
+  def apply(
+    contactInfo: java.lang.String = null,
+    contactName: java.lang.String = null,
+    contactTitle: java.lang.String = null,
+    contactType: java.lang.String = null,
+    signatureUserProfileId: java.lang.String = null
+  ): OrderContact = {
+    val __obj = js.Dynamic.literal()
+    if (contactInfo != null) __obj.updateDynamic("contactInfo")(contactInfo)
+    if (contactName != null) __obj.updateDynamic("contactName")(contactName)
+    if (contactTitle != null) __obj.updateDynamic("contactTitle")(contactTitle)
+    if (contactType != null) __obj.updateDynamic("contactType")(contactType)
+    if (signatureUserProfileId != null) __obj.updateDynamic("signatureUserProfileId")(signatureUserProfileId)
+    __obj.asInstanceOf[OrderContact]
+  }
+}
+

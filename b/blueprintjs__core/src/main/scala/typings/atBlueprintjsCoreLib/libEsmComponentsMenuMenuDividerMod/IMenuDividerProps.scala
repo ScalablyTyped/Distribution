@@ -13,3 +13,18 @@ trait IMenuDividerProps
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object IMenuDividerProps {
+  @scala.inline
+  def apply(
+    children: js.UndefOr[scala.Nothing] = js.undefined,
+    className: java.lang.String = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null
+  ): IMenuDividerProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IMenuDividerProps]
+  }
+}
+

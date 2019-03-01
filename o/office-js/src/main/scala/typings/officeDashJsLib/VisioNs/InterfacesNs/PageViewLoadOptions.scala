@@ -23,3 +23,13 @@ trait PageViewLoadOptions extends js.Object {
   var zoom: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PageViewLoadOptions {
+  @scala.inline
+  def apply($all: js.UndefOr[scala.Boolean] = js.undefined, zoom: js.UndefOr[scala.Boolean] = js.undefined): PageViewLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[PageViewLoadOptions]
+  }
+}
+

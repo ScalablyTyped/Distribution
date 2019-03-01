@@ -38,3 +38,32 @@ trait QueryCellInfoEventArgs extends js.Object {
   var resource: js.UndefOr[js.Any] = js.undefined
 }
 
+object QueryCellInfoEventArgs {
+  @scala.inline
+  def apply(
+    appointment: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cell: js.Any = null,
+    cellType: java.lang.String = null,
+    currentAppointmentDate: js.Any = null,
+    currentDay: js.Any = null,
+    element: js.Any = null,
+    model: Model = null,
+    requestType: java.lang.String = null,
+    resource: js.Any = null
+  ): QueryCellInfoEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (cellType != null) __obj.updateDynamic("cellType")(cellType)
+    if (currentAppointmentDate != null) __obj.updateDynamic("currentAppointmentDate")(currentAppointmentDate)
+    if (currentDay != null) __obj.updateDynamic("currentDay")(currentDay)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[QueryCellInfoEventArgs]
+  }
+}
+

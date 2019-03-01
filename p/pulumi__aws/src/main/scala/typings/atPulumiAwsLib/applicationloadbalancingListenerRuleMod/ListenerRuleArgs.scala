@@ -28,3 +28,24 @@ trait ListenerRuleArgs extends js.Object {
   val priority: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object ListenerRuleArgs {
+  @scala.inline
+  def apply(
+    actions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+      ]
+    ],
+    conditions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FieldValues]]],
+    listenerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    priority: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): ListenerRuleArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
+    __obj.updateDynamic("listenerArn")(listenerArn.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListenerRuleArgs]
+  }
+}
+

@@ -34,3 +34,62 @@ trait ojGanttSettableProperties[K1, K2, D1, D2]
   var viewportStart: java.lang.String
 }
 
+object ojGanttSettableProperties {
+  @scala.inline
+  def apply[K1, K2, D1, D2](
+    animationOnDataChange: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
+    animationOnDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
+    as: java.lang.String,
+    axisPosition: atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.top,
+    dnd: atOracleOraclejetLib.Anon_Move,
+    end: java.lang.String,
+    gridlines: atOracleOraclejetLib.Anon_AutoHidden,
+    majorAxis: atOracleOraclejetLib.Anon_Converter,
+    minorAxis: atOracleOraclejetLib.Anon_Converter,
+    referenceObjects: js.Array[atOracleOraclejetLib.ojganttMod.ojGanttNs.ReferenceObject],
+    rowAxis: atOracleOraclejetLib.Anon_Label[K2, D2],
+    rowDefaults: atOracleOraclejetLib.Anon_HeightNumber,
+    scrollPosition: atOracleOraclejetLib.Anon_OffsetY,
+    selection: js.Array[K2],
+    selectionMode: atOracleOraclejetLib.atOracleOraclejetLibStrings.single | atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
+    start: java.lang.String,
+    taskDefaults: atOracleOraclejetLib.Anon_AutoBaseline,
+    tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefault[K2, D2],
+    trackResize: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    translations: atOracleOraclejetLib.Anon_AccessibleDependencyInfo,
+    valueFormats: atOracleOraclejetLib.Anon_BaselineDate,
+    viewportEnd: java.lang.String,
+    viewportStart: java.lang.String,
+    dependencyData: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K1, D1] = null,
+    taskData: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K2, D2] = null
+  ): ojGanttSettableProperties[K1, K2, D1, D2] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
+    __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
+    __obj.updateDynamic("as")(as)
+    __obj.updateDynamic("axisPosition")(axisPosition.asInstanceOf[js.Any])
+    __obj.updateDynamic("dnd")(dnd)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("gridlines")(gridlines)
+    __obj.updateDynamic("majorAxis")(majorAxis)
+    __obj.updateDynamic("minorAxis")(minorAxis)
+    __obj.updateDynamic("referenceObjects")(referenceObjects)
+    __obj.updateDynamic("rowAxis")(rowAxis)
+    __obj.updateDynamic("rowDefaults")(rowDefaults)
+    __obj.updateDynamic("scrollPosition")(scrollPosition)
+    __obj.updateDynamic("selection")(selection)
+    __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("taskDefaults")(taskDefaults)
+    __obj.updateDynamic("tooltip")(tooltip)
+    __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
+    __obj.updateDynamic("translations")(translations)
+    __obj.updateDynamic("valueFormats")(valueFormats)
+    __obj.updateDynamic("viewportEnd")(viewportEnd)
+    __obj.updateDynamic("viewportStart")(viewportStart)
+    if (dependencyData != null) __obj.updateDynamic("dependencyData")(dependencyData)
+    if (taskData != null) __obj.updateDynamic("taskData")(taskData)
+    __obj.asInstanceOf[ojGanttSettableProperties[K1, K2, D1, D2]]
+  }
+}
+

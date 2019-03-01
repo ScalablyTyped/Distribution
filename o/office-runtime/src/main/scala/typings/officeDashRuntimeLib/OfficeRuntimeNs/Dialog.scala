@@ -17,3 +17,12 @@ trait Dialog extends js.Object {
   def close(): js.Promise[scala.Unit]
 }
 
+object Dialog {
+  @scala.inline
+  def apply(close: js.Function0[js.Promise[scala.Unit]]): Dialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.asInstanceOf[Dialog]
+  }
+}
+

@@ -18,3 +18,30 @@ trait IFieldInfo extends js.Object {
   var textDirection: js.UndefOr[TextDirection] = js.undefined
 }
 
+object IFieldInfo {
+  @scala.inline
+  def apply(
+    fieldKey: java.lang.String,
+    propertyTypeId: java.lang.String,
+    dateOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultCellStyleId: js.Any = null,
+    editMode: EditMode = null,
+    hasDataValue: js.UndefOr[scala.Boolean] = js.undefined,
+    hasLocalizedValue: js.UndefOr[scala.Boolean] = js.undefined,
+    multiValue: js.UndefOr[scala.Boolean] = js.undefined,
+    textDirection: TextDirection = null
+  ): IFieldInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fieldKey")(fieldKey)
+    __obj.updateDynamic("propertyTypeId")(propertyTypeId)
+    if (!js.isUndefined(dateOnly)) __obj.updateDynamic("dateOnly")(dateOnly)
+    if (defaultCellStyleId != null) __obj.updateDynamic("defaultCellStyleId")(defaultCellStyleId)
+    if (editMode != null) __obj.updateDynamic("editMode")(editMode)
+    if (!js.isUndefined(hasDataValue)) __obj.updateDynamic("hasDataValue")(hasDataValue)
+    if (!js.isUndefined(hasLocalizedValue)) __obj.updateDynamic("hasLocalizedValue")(hasLocalizedValue)
+    if (!js.isUndefined(multiValue)) __obj.updateDynamic("multiValue")(multiValue)
+    if (textDirection != null) __obj.updateDynamic("textDirection")(textDirection)
+    __obj.asInstanceOf[IFieldInfo]
+  }
+}
+

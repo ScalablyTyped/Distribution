@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object antlr4DashAutosuggestLibStrings {
   @js.native
-  sealed trait BOTH extends js.Object
+  sealed trait BOTH
+    extends antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.CasePreference
   
   @js.native
-  sealed trait LOWER extends js.Object
+  sealed trait LOWER
+    extends antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.CasePreference
   
   @js.native
-  sealed trait UPPER extends js.Object
+  sealed trait UPPER
+    extends antlr4DashAutosuggestLib.antlr4DashAutosuggestMod.CasePreference
   
   @scala.inline
   def BOTH: BOTH = "BOTH".asInstanceOf[BOTH]

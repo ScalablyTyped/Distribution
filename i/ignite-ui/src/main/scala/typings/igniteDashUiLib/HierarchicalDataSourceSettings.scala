@@ -41,3 +41,61 @@ trait HierarchicalDataSourceSettings
   var urlParamsEncoding: js.UndefOr[js.Any] = js.undefined
 }
 
+object HierarchicalDataSourceSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for HierarchicalDataSourceSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    autogenerate: js.UndefOr[scala.Boolean] = js.undefined,
+    callback: js.Any = null,
+    callee: js.Any = null,
+    data: js.Array[_] = null,
+    dataBinding: js.Any = null,
+    dataBound: js.Any = null,
+    dataSource: js.Any = null,
+    defaultChildrenDataProperty: java.lang.String = null,
+    filtering: HierarchicalDataSourceSettingsFiltering = null,
+    initialDataBindDepth: scala.Int | scala.Double = null,
+    localSchemaTransform: js.UndefOr[scala.Boolean] = js.undefined,
+    maxDataBindDepth: scala.Int | scala.Double = null,
+    odata: js.UndefOr[scala.Boolean] = js.undefined,
+    paging: HierarchicalDataSourceSettingsPaging = null,
+    requestType: java.lang.String = null,
+    responseContentType: js.Any = null,
+    responseDataType: js.Any = null,
+    schema: HierarchicalDataSourceSettingsSchema = null,
+    sorting: HierarchicalDataSourceSettingsSorting = null,
+    `type`: java.lang.String = null,
+    urlParamsEncoded: js.Any = null,
+    urlParamsEncoding: js.Any = null
+  ): HierarchicalDataSourceSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(autogenerate)) __obj.updateDynamic("autogenerate")(autogenerate)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callee != null) __obj.updateDynamic("callee")(callee)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (defaultChildrenDataProperty != null) __obj.updateDynamic("defaultChildrenDataProperty")(defaultChildrenDataProperty)
+    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (initialDataBindDepth != null) __obj.updateDynamic("initialDataBindDepth")(initialDataBindDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(localSchemaTransform)) __obj.updateDynamic("localSchemaTransform")(localSchemaTransform)
+    if (maxDataBindDepth != null) __obj.updateDynamic("maxDataBindDepth")(maxDataBindDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(odata)) __obj.updateDynamic("odata")(odata)
+    if (paging != null) __obj.updateDynamic("paging")(paging)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
+    if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (sorting != null) __obj.updateDynamic("sorting")(sorting)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (urlParamsEncoded != null) __obj.updateDynamic("urlParamsEncoded")(urlParamsEncoded)
+    if (urlParamsEncoding != null) __obj.updateDynamic("urlParamsEncoding")(urlParamsEncoding)
+    __obj.asInstanceOf[HierarchicalDataSourceSettings]
+  }
+}
+

@@ -12,3 +12,12 @@ trait CardSettings extends js.Object {
   var fields: CardFieldSettings
 }
 
+object CardSettings {
+  @scala.inline
+  def apply(fields: CardFieldSettings): CardSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[CardSettings]
+  }
+}
+

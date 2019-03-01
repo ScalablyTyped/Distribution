@@ -21,3 +21,36 @@ trait IShepherdTourStepOptions extends js.Object {
   var when: js.UndefOr[js.Any] = js.undefined
 }
 
+object IShepherdTourStepOptions {
+  @scala.inline
+  def apply(
+    advanceOn: js.Any = null,
+    attachTo: js.Any = null,
+    beforeShowPromise: js.Any = null,
+    buttons: js.Array[IShepherdTourButton] = null,
+    classes: java.lang.String = null,
+    scrollTo: js.UndefOr[scala.Boolean] = js.undefined,
+    showCancelLink: js.UndefOr[scala.Boolean] = js.undefined,
+    showOn: js.Function0[scala.Boolean] = null,
+    tetherOptions: js.Any = null,
+    text: js.Any = null,
+    title: java.lang.String = null,
+    when: js.Any = null
+  ): IShepherdTourStepOptions = {
+    val __obj = js.Dynamic.literal()
+    if (advanceOn != null) __obj.updateDynamic("advanceOn")(advanceOn)
+    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo)
+    if (beforeShowPromise != null) __obj.updateDynamic("beforeShowPromise")(beforeShowPromise)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (!js.isUndefined(scrollTo)) __obj.updateDynamic("scrollTo")(scrollTo)
+    if (!js.isUndefined(showCancelLink)) __obj.updateDynamic("showCancelLink")(showCancelLink)
+    if (showOn != null) __obj.updateDynamic("showOn")(showOn)
+    if (tetherOptions != null) __obj.updateDynamic("tetherOptions")(tetherOptions)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (when != null) __obj.updateDynamic("when")(when)
+    __obj.asInstanceOf[IShepherdTourStepOptions]
+  }
+}
+

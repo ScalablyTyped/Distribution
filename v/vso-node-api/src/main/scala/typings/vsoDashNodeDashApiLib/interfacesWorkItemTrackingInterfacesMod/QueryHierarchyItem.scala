@@ -108,3 +108,66 @@ trait QueryHierarchyItem extends WorkItemTrackingResource {
   var wiql: java.lang.String
 }
 
+object QueryHierarchyItem {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    children: js.Array[QueryHierarchyItem],
+    clauses: WorkItemQueryClause,
+    columns: js.Array[WorkItemFieldReference],
+    createdBy: IdentityReference,
+    createdDate: stdLib.Date,
+    filterOptions: LinkQueryMode,
+    hasChildren: scala.Boolean,
+    id: java.lang.String,
+    isDeleted: scala.Boolean,
+    isFolder: scala.Boolean,
+    isInvalidSyntax: scala.Boolean,
+    isPublic: scala.Boolean,
+    lastExecutedBy: IdentityReference,
+    lastExecutedDate: stdLib.Date,
+    lastModifiedBy: IdentityReference,
+    lastModifiedDate: stdLib.Date,
+    linkClauses: WorkItemQueryClause,
+    name: java.lang.String,
+    path: java.lang.String,
+    queryRecursionOption: QueryRecursionOption,
+    queryType: QueryType,
+    sortColumns: js.Array[WorkItemQuerySortColumn],
+    sourceClauses: WorkItemQueryClause,
+    targetClauses: WorkItemQueryClause,
+    url: java.lang.String,
+    wiql: java.lang.String
+  ): QueryHierarchyItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("clauses")(clauses)
+    __obj.updateDynamic("columns")(columns)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("filterOptions")(filterOptions)
+    __obj.updateDynamic("hasChildren")(hasChildren)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isDeleted")(isDeleted)
+    __obj.updateDynamic("isFolder")(isFolder)
+    __obj.updateDynamic("isInvalidSyntax")(isInvalidSyntax)
+    __obj.updateDynamic("isPublic")(isPublic)
+    __obj.updateDynamic("lastExecutedBy")(lastExecutedBy)
+    __obj.updateDynamic("lastExecutedDate")(lastExecutedDate)
+    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
+    __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
+    __obj.updateDynamic("linkClauses")(linkClauses)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("queryRecursionOption")(queryRecursionOption)
+    __obj.updateDynamic("queryType")(queryType)
+    __obj.updateDynamic("sortColumns")(sortColumns)
+    __obj.updateDynamic("sourceClauses")(sourceClauses)
+    __obj.updateDynamic("targetClauses")(targetClauses)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("wiql")(wiql)
+    __obj.asInstanceOf[QueryHierarchyItem]
+  }
+}
+

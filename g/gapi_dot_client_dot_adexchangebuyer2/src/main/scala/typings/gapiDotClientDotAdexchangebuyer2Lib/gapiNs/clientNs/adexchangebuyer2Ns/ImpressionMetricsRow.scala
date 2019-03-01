@@ -32,3 +32,24 @@ trait ImpressionMetricsRow extends js.Object {
   var successfulResponses: js.UndefOr[MetricValue] = js.undefined
 }
 
+object ImpressionMetricsRow {
+  @scala.inline
+  def apply(
+    availableImpressions: MetricValue = null,
+    bidRequests: MetricValue = null,
+    inventoryMatches: MetricValue = null,
+    responsesWithBids: MetricValue = null,
+    rowDimensions: RowDimensions = null,
+    successfulResponses: MetricValue = null
+  ): ImpressionMetricsRow = {
+    val __obj = js.Dynamic.literal()
+    if (availableImpressions != null) __obj.updateDynamic("availableImpressions")(availableImpressions)
+    if (bidRequests != null) __obj.updateDynamic("bidRequests")(bidRequests)
+    if (inventoryMatches != null) __obj.updateDynamic("inventoryMatches")(inventoryMatches)
+    if (responsesWithBids != null) __obj.updateDynamic("responsesWithBids")(responsesWithBids)
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    if (successfulResponses != null) __obj.updateDynamic("successfulResponses")(successfulResponses)
+    __obj.asInstanceOf[ImpressionMetricsRow]
+  }
+}
+

@@ -16,3 +16,24 @@ trait Options extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    disableDotRule: connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackLibNumbers.`true` = null,
+    htmlAcceptHeaders: js.Array[java.lang.String] = null,
+    index: java.lang.String = null,
+    logger: connectDashHistoryDashApiDashFallbackLib.Anon_Message = null,
+    rewrites: js.Array[Rewrite] = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (disableDotRule != null) __obj.updateDynamic("disableDotRule")(disableDotRule)
+    if (htmlAcceptHeaders != null) __obj.updateDynamic("htmlAcceptHeaders")(htmlAcceptHeaders)
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (rewrites != null) __obj.updateDynamic("rewrites")(rewrites)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[Options]
+  }
+}
+

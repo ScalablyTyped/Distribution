@@ -30,3 +30,28 @@ trait Options extends js.Object {
   var virtualConsole: js.UndefOr[VirtualConsole] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    beforeParse: js.Function1[/* window */ DOMWindow, scala.Unit] = null,
+    cookieJar: CookieJar = null,
+    includeNodeLocations: js.UndefOr[scala.Boolean] = js.undefined,
+    referrer: java.lang.String = null,
+    resources: jsdomLib.jsdomLibStrings.usable | ResourceLoader = null,
+    runScripts: jsdomLib.jsdomLibStrings.dangerously | jsdomLib.jsdomLibStrings.`outside-only` = null,
+    userAgent: java.lang.String = null,
+    virtualConsole: VirtualConsole = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (beforeParse != null) __obj.updateDynamic("beforeParse")(beforeParse)
+    if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar)
+    if (!js.isUndefined(includeNodeLocations)) __obj.updateDynamic("includeNodeLocations")(includeNodeLocations)
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
+    if (runScripts != null) __obj.updateDynamic("runScripts")(runScripts.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (virtualConsole != null) __obj.updateDynamic("virtualConsole")(virtualConsole)
+    __obj.asInstanceOf[Options]
+  }
+}
+

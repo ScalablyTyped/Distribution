@@ -12,3 +12,12 @@ trait SubscriptionAdminSettings extends js.Object {
   var blockUserOptOut: scala.Boolean
 }
 
+object SubscriptionAdminSettings {
+  @scala.inline
+  def apply(blockUserOptOut: scala.Boolean): SubscriptionAdminSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blockUserOptOut")(blockUserOptOut)
+    __obj.asInstanceOf[SubscriptionAdminSettings]
+  }
+}
+

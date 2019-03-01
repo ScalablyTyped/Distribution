@@ -12,21 +12,17 @@ trait ojCollapsible
   var expandArea: atOracleOraclejetLib.atOracleOraclejetLibStrings.header | atOracleOraclejetLib.atOracleOraclejetLibStrings.disclosureIcon = js.native
   var expanded: scala.Boolean = js.native
   var onDisabledChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['disabled'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
     _
   ]) | scala.Null = js.native
   var onExpandAreaChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['expandArea'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.header | atOracleOraclejetLib.atOracleOraclejetLibStrings.disclosureIcon
     ], 
     _
   ]) | scala.Null = js.native
   var onExpandedChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['expanded'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
     _
   ]) | scala.Null = js.native
   var onOjBeforeCollapse: (js.Function1[
@@ -40,32 +36,11 @@ trait ojCollapsible
   var onOjCollapse: (js.Function1[/* event */ atOracleOraclejetLib.ojcollapsibleMod.ojCollapsibleNs.ojCollapse, _]) | scala.Null = js.native
   var onOjExpand: (js.Function1[/* event */ atOracleOraclejetLib.ojcollapsibleMod.ojCollapsibleNs.ojExpand, _]) | scala.Null = js.native
   def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['disabled'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['disabled'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.expandAreaChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['expandArea'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.header | atOracleOraclejetLib.atOracleOraclejetLibStrings.disclosureIcon
       ], 
       _
     ]
@@ -75,29 +50,46 @@ trait ojCollapsible
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['expandArea'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.header | atOracleOraclejetLib.atOracleOraclejetLibStrings.disclosureIcon
       ], 
       _
     ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.expandedChanged,
+  @JSName("addEventListener")
+  def addEventListener_disabledChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['expanded'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
       _
     ]
   ): scala.Unit = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_disabledChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_expandedChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.expandedChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['expanded'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_expandedChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.expandedChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
       _
     ],
     useCapture: scala.Boolean

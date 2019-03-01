@@ -31,3 +31,26 @@ trait XPropertySetInfo
   def hasPropertyByName(Name: java.lang.String): scala.Boolean
 }
 
+object XPropertySetInfo {
+  @scala.inline
+  def apply(
+    Properties: activexDashInteropLib.SafeArray[Property],
+    acquire: js.Function0[scala.Unit],
+    getProperties: js.Function0[activexDashInteropLib.SafeArray[Property]],
+    getPropertyByName: js.Function1[java.lang.String, Property],
+    hasPropertyByName: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPropertySetInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Properties")(Properties)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getProperties")(getProperties)
+    __obj.updateDynamic("getPropertyByName")(getPropertyByName)
+    __obj.updateDynamic("hasPropertyByName")(hasPropertyByName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XPropertySetInfo]
+  }
+}
+

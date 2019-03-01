@@ -72,3 +72,22 @@ trait ITinyMceService extends js.Object {
   def defaultPrevalues(): IConfiguration
 }
 
+object ITinyMceService {
+  @scala.inline
+  def apply(
+    configuration: js.Function0[js.Array[ITinyMcePlugin]],
+    createInsertEmbeddedMedia: js.Function2[js.Object, angularLib.angularMod.angularNs.IScope, scala.Unit],
+    createInsertMacro: js.Function2[js.Object, angularLib.angularMod.angularNs.IScope, scala.Unit],
+    createMediaPicker: js.Function1[js.Object, scala.Unit],
+    defaultPrevalues: js.Function0[IConfiguration]
+  ): ITinyMceService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configuration")(configuration)
+    __obj.updateDynamic("createInsertEmbeddedMedia")(createInsertEmbeddedMedia)
+    __obj.updateDynamic("createInsertMacro")(createInsertMacro)
+    __obj.updateDynamic("createMediaPicker")(createMediaPicker)
+    __obj.updateDynamic("defaultPrevalues")(defaultPrevalues)
+    __obj.asInstanceOf[ITinyMceService]
+  }
+}
+

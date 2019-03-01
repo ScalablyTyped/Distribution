@@ -12,3 +12,13 @@ trait DeleteOrderDealsResponse extends js.Object {
   var proposalRevisionNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeleteOrderDealsResponse {
+  @scala.inline
+  def apply(deals: js.Array[MarketplaceDeal] = null, proposalRevisionNumber: java.lang.String = null): DeleteOrderDealsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (deals != null) __obj.updateDynamic("deals")(deals)
+    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber)
+    __obj.asInstanceOf[DeleteOrderDealsResponse]
+  }
+}
+

@@ -52,3 +52,28 @@ trait TreeMapLevel extends js.Object {
   var level: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TreeMapLevel {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String | Gradient = null,
+    borderDashStyle: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    color: java.lang.String | Gradient = null,
+    dataLabels: DataLabels = null,
+    layoutAlgorithm: java.lang.String = null,
+    layoutStartingDirection: java.lang.String = null,
+    level: scala.Int | scala.Double = null
+  ): TreeMapLevel = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderDashStyle != null) __obj.updateDynamic("borderDashStyle")(borderDashStyle)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (layoutAlgorithm != null) __obj.updateDynamic("layoutAlgorithm")(layoutAlgorithm)
+    if (layoutStartingDirection != null) __obj.updateDynamic("layoutStartingDirection")(layoutStartingDirection)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TreeMapLevel]
+  }
+}
+

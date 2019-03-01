@@ -40,3 +40,64 @@ trait CollapsibleProp extends js.Object {
   var triggerWhenOpen: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object CollapsibleProp {
+  @scala.inline
+  def apply(
+    accordionPosition: java.lang.String | scala.Double = null,
+    children: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    classParentString: java.lang.String = null,
+    contentInnerClassName: java.lang.String = null,
+    contentOuterClassName: java.lang.String = null,
+    easing: java.lang.String = null,
+    handleTriggerClick: js.Function1[/* accordionPosition */ js.UndefOr[java.lang.String | scala.Double], scala.Unit] = null,
+    lazyRender: js.UndefOr[scala.Boolean] = js.undefined,
+    onClose: js.Function0[scala.Unit] = null,
+    onClosing: js.Function0[scala.Unit] = null,
+    onOpen: js.Function0[scala.Unit] = null,
+    onOpening: js.Function0[scala.Unit] = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    openedClassName: java.lang.String = null,
+    overflowWhenOpen: reactDashCollapsibleLib.reactDashCollapsibleLibStrings.hidden | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.visible | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.auto | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.scroll | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.inherit | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.initial | reactDashCollapsibleLib.reactDashCollapsibleLibStrings.unset = null,
+    tabIndex: scala.Int | scala.Double = null,
+    transitionCloseTime: scala.Int | scala.Double = null,
+    transitionTime: scala.Int | scala.Double = null,
+    trigger: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
+    triggerClassName: java.lang.String = null,
+    triggerDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    triggerOpenedClassName: java.lang.String = null,
+    triggerSibling: reactLib.reactMod.ReactNs.ReactNode | java.lang.String | js.Function0[scala.Unit] = null,
+    triggerStyle: js.Object = null,
+    triggerTagName: java.lang.String = null,
+    triggerWhenOpen: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null
+  ): CollapsibleProp = {
+    val __obj = js.Dynamic.literal()
+    if (accordionPosition != null) __obj.updateDynamic("accordionPosition")(accordionPosition.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (classParentString != null) __obj.updateDynamic("classParentString")(classParentString)
+    if (contentInnerClassName != null) __obj.updateDynamic("contentInnerClassName")(contentInnerClassName)
+    if (contentOuterClassName != null) __obj.updateDynamic("contentOuterClassName")(contentOuterClassName)
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (handleTriggerClick != null) __obj.updateDynamic("handleTriggerClick")(handleTriggerClick)
+    if (!js.isUndefined(lazyRender)) __obj.updateDynamic("lazyRender")(lazyRender)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClosing != null) __obj.updateDynamic("onClosing")(onClosing)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onOpening != null) __obj.updateDynamic("onOpening")(onOpening)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (openedClassName != null) __obj.updateDynamic("openedClassName")(openedClassName)
+    if (overflowWhenOpen != null) __obj.updateDynamic("overflowWhenOpen")(overflowWhenOpen.asInstanceOf[js.Any])
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (transitionCloseTime != null) __obj.updateDynamic("transitionCloseTime")(transitionCloseTime.asInstanceOf[js.Any])
+    if (transitionTime != null) __obj.updateDynamic("transitionTime")(transitionTime.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (triggerClassName != null) __obj.updateDynamic("triggerClassName")(triggerClassName)
+    if (!js.isUndefined(triggerDisabled)) __obj.updateDynamic("triggerDisabled")(triggerDisabled)
+    if (triggerOpenedClassName != null) __obj.updateDynamic("triggerOpenedClassName")(triggerOpenedClassName)
+    if (triggerSibling != null) __obj.updateDynamic("triggerSibling")(triggerSibling.asInstanceOf[js.Any])
+    if (triggerStyle != null) __obj.updateDynamic("triggerStyle")(triggerStyle)
+    if (triggerTagName != null) __obj.updateDynamic("triggerTagName")(triggerTagName)
+    if (triggerWhenOpen != null) __obj.updateDynamic("triggerWhenOpen")(triggerWhenOpen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CollapsibleProp]
+  }
+}
+

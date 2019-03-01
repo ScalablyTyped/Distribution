@@ -21,3 +21,36 @@ import scala.scalajs.js.annotation._
   def onFocus(id: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object WidgetProps {
+  @scala.inline
+  def apply(
+    autofocus: scala.Boolean,
+    disabled: scala.Boolean,
+    formContext: js.Any,
+    id: java.lang.String,
+    onBlur: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    onChange: js.Function1[js.Any, scala.Unit],
+    onFocus: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    options: js.Object,
+    readonly: scala.Boolean,
+    required: scala.Boolean,
+    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
+    value: js.Any
+  ): WidgetProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autofocus")(autofocus)
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("formContext")(formContext)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("onBlur")(onBlur)
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("onFocus")(onFocus)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("readonly")(readonly)
+    __obj.updateDynamic("required")(required)
+    __obj.updateDynamic("schema")(schema)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[WidgetProps]
+  }
+}
+

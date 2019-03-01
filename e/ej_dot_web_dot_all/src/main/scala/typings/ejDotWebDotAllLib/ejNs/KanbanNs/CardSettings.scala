@@ -19,3 +19,18 @@ trait CardSettings extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CardSettings {
+  @scala.inline
+  def apply(
+    colorMapping: js.Any = null,
+    externalDropTarget: java.lang.String = null,
+    template: java.lang.String = null
+  ): CardSettings = {
+    val __obj = js.Dynamic.literal()
+    if (colorMapping != null) __obj.updateDynamic("colorMapping")(colorMapping)
+    if (externalDropTarget != null) __obj.updateDynamic("externalDropTarget")(externalDropTarget)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[CardSettings]
+  }
+}
+

@@ -68,3 +68,34 @@ trait GoogleCloudMlV1__Version extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudMlV1__Version {
+  @scala.inline
+  def apply(
+    autoScaling: GoogleCloudMlV1__AutoScaling = null,
+    createTime: java.lang.String = null,
+    deploymentUri: java.lang.String = null,
+    description: java.lang.String = null,
+    errorMessage: java.lang.String = null,
+    isDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    lastUseTime: java.lang.String = null,
+    manualScaling: GoogleCloudMlV1__ManualScaling = null,
+    name: java.lang.String = null,
+    runtimeVersion: java.lang.String = null,
+    state: java.lang.String = null
+  ): GoogleCloudMlV1__Version = {
+    val __obj = js.Dynamic.literal()
+    if (autoScaling != null) __obj.updateDynamic("autoScaling")(autoScaling)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (deploymentUri != null) __obj.updateDynamic("deploymentUri")(deploymentUri)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault)
+    if (lastUseTime != null) __obj.updateDynamic("lastUseTime")(lastUseTime)
+    if (manualScaling != null) __obj.updateDynamic("manualScaling")(manualScaling)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[GoogleCloudMlV1__Version]
+  }
+}
+

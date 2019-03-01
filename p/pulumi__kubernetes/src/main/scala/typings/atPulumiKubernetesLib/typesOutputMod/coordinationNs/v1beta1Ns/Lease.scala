@@ -34,3 +34,20 @@ trait Lease extends js.Object {
   val spec: LeaseSpec
 }
 
+object Lease {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Lease,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: LeaseSpec
+  ): Lease = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.asInstanceOf[Lease]
+  }
+}
+

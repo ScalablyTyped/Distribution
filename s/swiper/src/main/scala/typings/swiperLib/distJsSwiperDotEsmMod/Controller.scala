@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Controller")
 @js.native
-class Controller () extends js.Object {
+class Controller ()
+  extends swiperLib.swiperMod.SwiperModule {
   /**
     * Pass here another Swiper instance or array with Swiper instances that should be controlled
     * by this Swiper

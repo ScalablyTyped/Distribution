@@ -44,3 +44,30 @@ trait XHeaderFooterContent
   def getRightText(): activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText
 }
 
+object XHeaderFooterContent {
+  @scala.inline
+  def apply(
+    CenterText: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    LeftText: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    RightText: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    acquire: js.Function0[scala.Unit],
+    getCenterText: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText],
+    getLeftText: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText],
+    getRightText: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XHeaderFooterContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CenterText")(CenterText)
+    __obj.updateDynamic("LeftText")(LeftText)
+    __obj.updateDynamic("RightText")(RightText)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCenterText")(getCenterText)
+    __obj.updateDynamic("getLeftText")(getLeftText)
+    __obj.updateDynamic("getRightText")(getRightText)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XHeaderFooterContent]
+  }
+}
+

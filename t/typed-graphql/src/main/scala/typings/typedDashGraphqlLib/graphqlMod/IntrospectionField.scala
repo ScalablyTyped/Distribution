@@ -14,3 +14,23 @@ trait IntrospectionField extends js.Object {
   var `type`: IntrospectionTypeRef
 }
 
+object IntrospectionField {
+  @scala.inline
+  def apply(
+    args: js.Array[IntrospectionInputValue],
+    isDeprecated: scala.Boolean,
+    name: java.lang.String,
+    `type`: IntrospectionTypeRef,
+    deprecationReason: java.lang.String = null,
+    description: java.lang.String = null
+  ): IntrospectionField = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("isDeprecated")(isDeprecated)
+    __obj.updateDynamic("name")(name)
+    if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[IntrospectionField]
+  }
+}
+

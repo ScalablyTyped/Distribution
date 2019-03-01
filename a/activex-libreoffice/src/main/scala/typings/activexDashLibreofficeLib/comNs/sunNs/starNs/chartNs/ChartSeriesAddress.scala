@@ -23,3 +23,18 @@ trait ChartSeriesAddress extends js.Object {
   var LabelAddress: java.lang.String
 }
 
+object ChartSeriesAddress {
+  @scala.inline
+  def apply(
+    DataRangeAddress: java.lang.String,
+    DomainRangeAddresses: activexDashInteropLib.SafeArray[java.lang.String],
+    LabelAddress: java.lang.String
+  ): ChartSeriesAddress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataRangeAddress")(DataRangeAddress)
+    __obj.updateDynamic("DomainRangeAddresses")(DomainRangeAddresses)
+    __obj.updateDynamic("LabelAddress")(LabelAddress)
+    __obj.asInstanceOf[ChartSeriesAddress]
+  }
+}
+

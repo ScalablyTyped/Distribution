@@ -10,3 +10,13 @@ trait SVGTests extends js.Object {
   val systemLanguage: SVGStringList
 }
 
+object SVGTests {
+  @scala.inline
+  def apply(requiredExtensions: SVGStringList, systemLanguage: SVGStringList): SVGTests = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("requiredExtensions")(requiredExtensions)
+    __obj.updateDynamic("systemLanguage")(systemLanguage)
+    __obj.asInstanceOf[SVGTests]
+  }
+}
+

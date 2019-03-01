@@ -30,3 +30,30 @@ trait HighChartsNGConfig extends js.Object {
   var xAxis: js.UndefOr[highchartsDashNgLib.Anon_CurrentMax] = js.undefined
 }
 
+object HighChartsNGConfig {
+  @scala.inline
+  def apply(
+    options: highchartsLib.highchartsMod.HighchartsNs.Options,
+    func: js.Function1[/* chart */ highchartsLib.highchartsMod.HighchartsNs.ChartObject, scala.Unit] = null,
+    loading: scala.Boolean | java.lang.String = null,
+    noData: java.lang.String = null,
+    series: js.Array[highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions] = null,
+    size: highchartsDashNgLib.Anon_Height = null,
+    title: highchartsDashNgLib.Anon_Text = null,
+    useHighStocks: js.UndefOr[scala.Boolean] = js.undefined,
+    xAxis: highchartsDashNgLib.Anon_CurrentMax = null
+  ): HighChartsNGConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    if (func != null) __obj.updateDynamic("func")(func)
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (noData != null) __obj.updateDynamic("noData")(noData)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(useHighStocks)) __obj.updateDynamic("useHighStocks")(useHighStocks)
+    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis)
+    __obj.asInstanceOf[HighChartsNGConfig]
+  }
+}
+

@@ -22,3 +22,18 @@ trait BrowserOptions extends js.Object {
   var slowMo: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BrowserOptions {
+  @scala.inline
+  def apply(
+    defaultViewport: puppeteerLib.Anon_DeviceScaleFactor = null,
+    ignoreHTTPSErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    slowMo: scala.Int | scala.Double = null
+  ): BrowserOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport)
+    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors)
+    if (slowMo != null) __obj.updateDynamic("slowMo")(slowMo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BrowserOptions]
+  }
+}
+

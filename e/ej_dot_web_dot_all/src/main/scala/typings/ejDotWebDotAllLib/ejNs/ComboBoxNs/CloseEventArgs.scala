@@ -11,3 +11,12 @@ trait CloseEventArgs extends js.Object {
   var popup: js.UndefOr[js.Any] = js.undefined
 }
 
+object CloseEventArgs {
+  @scala.inline
+  def apply(popup: js.Any = null): CloseEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (popup != null) __obj.updateDynamic("popup")(popup)
+    __obj.asInstanceOf[CloseEventArgs]
+  }
+}
+

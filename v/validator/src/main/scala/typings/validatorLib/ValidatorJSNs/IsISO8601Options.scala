@@ -10,3 +10,12 @@ trait IsISO8601Options extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IsISO8601Options {
+  @scala.inline
+  def apply(strict: js.UndefOr[scala.Boolean] = js.undefined): IsISO8601Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[IsISO8601Options]
+  }
+}
+

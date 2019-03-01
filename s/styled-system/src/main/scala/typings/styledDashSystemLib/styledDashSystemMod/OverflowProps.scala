@@ -15,3 +15,12 @@ trait OverflowProps extends js.Object {
   var overflow: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.OverflowProperty]] = js.undefined
 }
 
+object OverflowProps {
+  @scala.inline
+  def apply(overflow: ResponsiveValue[csstypeLib.csstypeMod.OverflowProperty] = null): OverflowProps = {
+    val __obj = js.Dynamic.literal()
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OverflowProps]
+  }
+}
+

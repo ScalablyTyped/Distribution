@@ -23,3 +23,42 @@ trait BuildAgent extends js.Object {
   var url: java.lang.String
 }
 
+object BuildAgent {
+  @scala.inline
+  def apply(
+    buildDirectory: java.lang.String,
+    controller: XamlBuildControllerReference,
+    createdDate: stdLib.Date,
+    description: java.lang.String,
+    enabled: scala.Boolean,
+    id: scala.Double,
+    messageQueueUrl: java.lang.String,
+    name: java.lang.String,
+    reservedForBuild: java.lang.String,
+    server: XamlBuildServerReference,
+    status: AgentStatus,
+    statusMessage: java.lang.String,
+    updatedDate: stdLib.Date,
+    uri: java.lang.String,
+    url: java.lang.String
+  ): BuildAgent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildDirectory")(buildDirectory)
+    __obj.updateDynamic("controller")(controller)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("messageQueueUrl")(messageQueueUrl)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("reservedForBuild")(reservedForBuild)
+    __obj.updateDynamic("server")(server)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("statusMessage")(statusMessage)
+    __obj.updateDynamic("updatedDate")(updatedDate)
+    __obj.updateDynamic("uri")(uri)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[BuildAgent]
+  }
+}
+

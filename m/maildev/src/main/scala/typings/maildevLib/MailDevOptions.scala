@@ -95,3 +95,40 @@ trait MailDevOptions extends js.Object {
   var webUser: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MailDevOptions {
+  @scala.inline
+  def apply(
+    disableWeb: js.UndefOr[scala.Boolean] = js.undefined,
+    ip: java.lang.String = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    outgoingHost: java.lang.String = null,
+    outgoingPass: java.lang.String = null,
+    outgoingPort: scala.Int | scala.Double = null,
+    outgoingSecure: js.UndefOr[scala.Boolean] = js.undefined,
+    outgoingUser: java.lang.String = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    smtp: scala.Int | scala.Double = null,
+    web: scala.Int | scala.Double = null,
+    webIp: java.lang.String = null,
+    webPass: java.lang.String = null,
+    webUser: java.lang.String = null
+  ): MailDevOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disableWeb)) __obj.updateDynamic("disableWeb")(disableWeb)
+    if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (outgoingHost != null) __obj.updateDynamic("outgoingHost")(outgoingHost)
+    if (outgoingPass != null) __obj.updateDynamic("outgoingPass")(outgoingPass)
+    if (outgoingPort != null) __obj.updateDynamic("outgoingPort")(outgoingPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(outgoingSecure)) __obj.updateDynamic("outgoingSecure")(outgoingSecure)
+    if (outgoingUser != null) __obj.updateDynamic("outgoingUser")(outgoingUser)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (smtp != null) __obj.updateDynamic("smtp")(smtp.asInstanceOf[js.Any])
+    if (web != null) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
+    if (webIp != null) __obj.updateDynamic("webIp")(webIp)
+    if (webPass != null) __obj.updateDynamic("webPass")(webPass)
+    if (webUser != null) __obj.updateDynamic("webUser")(webUser)
+    __obj.asInstanceOf[MailDevOptions]
+  }
+}
+

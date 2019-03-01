@@ -109,3 +109,51 @@ trait RegExp extends js.Object {
   def test(string: java.lang.String): scala.Boolean
 }
 
+object RegExp {
+  @scala.inline
+  def apply(
+    compile: js.Function0[RegExp],
+    dotAll: scala.Boolean,
+    exec: js.Function1[java.lang.String, RegExpExecArray | scala.Null],
+    flags: java.lang.String,
+    global: scala.Boolean,
+    ignoreCase: scala.Boolean,
+    lastIndex: scala.Double,
+    `match`: js.Function1[/* string */ java.lang.String, RegExpMatchArray | scala.Null],
+    multiline: scala.Boolean,
+    replace: (js.Function2[/* string */ java.lang.String, /* replaceValue */ java.lang.String, java.lang.String]) with (js.Function2[
+      /* string */ java.lang.String, 
+      /* replacer */ js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String], 
+      java.lang.String
+    ]),
+    search: js.Function1[/* string */ java.lang.String, scala.Double],
+    source: java.lang.String,
+    split: js.Function2[
+      /* string */ java.lang.String, 
+      /* limit */ js.UndefOr[scala.Double], 
+      js.Array[java.lang.String]
+    ],
+    sticky: scala.Boolean,
+    test: js.Function1[java.lang.String, scala.Boolean],
+    unicode: scala.Boolean
+  ): RegExp = {
+    val __obj = js.Dynamic.literal(`match` = `match`)
+    __obj.updateDynamic("compile")(compile)
+    __obj.updateDynamic("dotAll")(dotAll)
+    __obj.updateDynamic("exec")(exec)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("global")(global)
+    __obj.updateDynamic("ignoreCase")(ignoreCase)
+    __obj.updateDynamic("lastIndex")(lastIndex)
+    __obj.updateDynamic("multiline")(multiline)
+    __obj.updateDynamic("replace")(replace)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("split")(split)
+    __obj.updateDynamic("sticky")(sticky)
+    __obj.updateDynamic("test")(test)
+    __obj.updateDynamic("unicode")(unicode)
+    __obj.asInstanceOf[RegExp]
+  }
+}
+

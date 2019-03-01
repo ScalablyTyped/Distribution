@@ -17,3 +17,12 @@ trait SpeechContext extends js.Object {
   var phrases: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object SpeechContext {
+  @scala.inline
+  def apply(phrases: js.Array[java.lang.String] = null): SpeechContext = {
+    val __obj = js.Dynamic.literal()
+    if (phrases != null) __obj.updateDynamic("phrases")(phrases)
+    __obj.asInstanceOf[SpeechContext]
+  }
+}
+

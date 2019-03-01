@@ -16,3 +16,13 @@ trait ColumnShowingRefusedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColumnShowingRefusedEventUIParam {
+  @scala.inline
+  def apply(columnKeys: js.Array[_] = null, owner: js.Any = null): ColumnShowingRefusedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnKeys != null) __obj.updateDynamic("columnKeys")(columnKeys)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ColumnShowingRefusedEventUIParam]
+  }
+}
+

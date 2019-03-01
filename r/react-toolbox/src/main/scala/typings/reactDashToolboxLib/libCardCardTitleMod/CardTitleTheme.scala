@@ -28,3 +28,22 @@ trait CardTitleTheme extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CardTitleTheme {
+  @scala.inline
+  def apply(
+    cardTitle: java.lang.String = null,
+    large: java.lang.String = null,
+    small: java.lang.String = null,
+    subtitle: java.lang.String = null,
+    title: java.lang.String = null
+  ): CardTitleTheme = {
+    val __obj = js.Dynamic.literal()
+    if (cardTitle != null) __obj.updateDynamic("cardTitle")(cardTitle)
+    if (large != null) __obj.updateDynamic("large")(large)
+    if (small != null) __obj.updateDynamic("small")(small)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[CardTitleTheme]
+  }
+}
+

@@ -42,3 +42,38 @@ trait LottieProps extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object LottieProps {
+  @scala.inline
+  def apply(
+    options: Options,
+    ariaLabel: java.lang.String | reactDashLottieLib.reactDashLottieLibStrings.animation = null,
+    ariaRole: java.lang.String | reactDashLottieLib.reactDashLottieLibStrings.button = null,
+    direction: scala.Int | scala.Double = null,
+    eventListeners: js.Array[EventListener] = null,
+    height: scala.Double | java.lang.String = null,
+    isClickToPauseDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isPaused: js.UndefOr[scala.Boolean] = js.undefined,
+    isStopped: js.UndefOr[scala.Boolean] = js.undefined,
+    segments: js.Array[scala.Double] = null,
+    speed: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    width: scala.Double | java.lang.String = null
+  ): LottieProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (eventListeners != null) __obj.updateDynamic("eventListeners")(eventListeners)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(isClickToPauseDisabled)) __obj.updateDynamic("isClickToPauseDisabled")(isClickToPauseDisabled)
+    if (!js.isUndefined(isPaused)) __obj.updateDynamic("isPaused")(isPaused)
+    if (!js.isUndefined(isStopped)) __obj.updateDynamic("isStopped")(isStopped)
+    if (segments != null) __obj.updateDynamic("segments")(segments)
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LottieProps]
+  }
+}
+

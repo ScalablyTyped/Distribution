@@ -15,3 +15,12 @@ trait JustifyContentProps extends js.Object {
   var justifyContent: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.JustifyContentProperty]] = js.undefined
 }
 
+object JustifyContentProps {
+  @scala.inline
+  def apply(justifyContent: ResponsiveValue[csstypeLib.csstypeMod.JustifyContentProperty] = null): JustifyContentProps = {
+    val __obj = js.Dynamic.literal()
+    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JustifyContentProps]
+  }
+}
+

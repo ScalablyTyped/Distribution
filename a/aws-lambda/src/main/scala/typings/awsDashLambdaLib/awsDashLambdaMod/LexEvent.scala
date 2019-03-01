@@ -17,3 +17,30 @@ trait LexEvent extends js.Object {
   var userId: java.lang.String
 }
 
+object LexEvent {
+  @scala.inline
+  def apply(
+    bot: awsDashLambdaLib.Anon_Alias,
+    currentIntent: awsDashLambdaLib.Anon_ConfirmationStatus,
+    inputTranscript: java.lang.String,
+    invocationSource: awsDashLambdaLib.awsDashLambdaLibStrings.DialogCodeHook | awsDashLambdaLib.awsDashLambdaLibStrings.FulfillmentCodeHook,
+    messageVersion: awsDashLambdaLib.awsDashLambdaLibStrings.`1DOT0`,
+    outputDialogMode: awsDashLambdaLib.awsDashLambdaLibStrings.Text | awsDashLambdaLib.awsDashLambdaLibStrings.Voice,
+    sessionAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    userId: java.lang.String,
+    requestAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): LexEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bot")(bot)
+    __obj.updateDynamic("currentIntent")(currentIntent)
+    __obj.updateDynamic("inputTranscript")(inputTranscript)
+    __obj.updateDynamic("invocationSource")(invocationSource.asInstanceOf[js.Any])
+    __obj.updateDynamic("messageVersion")(messageVersion)
+    __obj.updateDynamic("outputDialogMode")(outputDialogMode.asInstanceOf[js.Any])
+    __obj.updateDynamic("sessionAttributes")(sessionAttributes)
+    __obj.updateDynamic("userId")(userId)
+    if (requestAttributes != null) __obj.updateDynamic("requestAttributes")(requestAttributes)
+    __obj.asInstanceOf[LexEvent]
+  }
+}
+

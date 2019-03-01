@@ -12,3 +12,12 @@ trait Anon_HeightNumber extends js.Object {
   var height: scala.Double
 }
 
+object Anon_HeightNumber {
+  @scala.inline
+  def apply(height: scala.Double): Anon_HeightNumber = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.asInstanceOf[Anon_HeightNumber]
+  }
+}
+

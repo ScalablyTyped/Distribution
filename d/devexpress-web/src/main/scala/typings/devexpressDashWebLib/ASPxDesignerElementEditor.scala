@@ -31,3 +31,20 @@ trait ASPxDesignerElementEditor extends js.Object {
   var header: java.lang.String
 }
 
+object ASPxDesignerElementEditor {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    editorType: js.Object,
+    extendedOptions: js.Object,
+    header: java.lang.String
+  ): ASPxDesignerElementEditor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("editorType")(editorType)
+    __obj.updateDynamic("extendedOptions")(extendedOptions)
+    __obj.updateDynamic("header")(header)
+    __obj.asInstanceOf[ASPxDesignerElementEditor]
+  }
+}
+

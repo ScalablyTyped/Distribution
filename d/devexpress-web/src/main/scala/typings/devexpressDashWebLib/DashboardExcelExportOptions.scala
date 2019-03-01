@@ -41,3 +41,24 @@ trait DashboardExcelExportOptions extends js.Object {
   var IncludeHiddenParameters: scala.Boolean
 }
 
+object DashboardExcelExportOptions {
+  @scala.inline
+  def apply(
+    CsvValueSeparator: java.lang.String,
+    DashboardStatePosition: java.lang.String,
+    ExportFilters: scala.Boolean,
+    ExportParameters: scala.Boolean,
+    Format: java.lang.String,
+    IncludeHiddenParameters: scala.Boolean
+  ): DashboardExcelExportOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CsvValueSeparator")(CsvValueSeparator)
+    __obj.updateDynamic("DashboardStatePosition")(DashboardStatePosition)
+    __obj.updateDynamic("ExportFilters")(ExportFilters)
+    __obj.updateDynamic("ExportParameters")(ExportParameters)
+    __obj.updateDynamic("Format")(Format)
+    __obj.updateDynamic("IncludeHiddenParameters")(IncludeHiddenParameters)
+    __obj.asInstanceOf[DashboardExcelExportOptions]
+  }
+}
+

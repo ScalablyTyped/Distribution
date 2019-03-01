@@ -28,3 +28,20 @@ trait JobQueueArgs extends js.Object {
   val state: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object JobQueueArgs {
+  @scala.inline
+  def apply(
+    computeEnvironments: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    priority: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    state: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): JobQueueArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("computeEnvironments")(computeEnvironments.asInstanceOf[js.Any])
+    __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JobQueueArgs]
+  }
+}
+

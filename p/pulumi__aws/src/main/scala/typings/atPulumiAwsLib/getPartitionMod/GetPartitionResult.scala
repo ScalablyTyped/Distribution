@@ -13,3 +13,13 @@ trait GetPartitionResult extends js.Object {
   val partition: java.lang.String
 }
 
+object GetPartitionResult {
+  @scala.inline
+  def apply(id: java.lang.String, partition: java.lang.String): GetPartitionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("partition")(partition)
+    __obj.asInstanceOf[GetPartitionResult]
+  }
+}
+

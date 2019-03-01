@@ -10,3 +10,16 @@ trait DragPanOptions extends js.Object {
   var kinetic: js.UndefOr[openlayersLib.openlayersMod.Kinetic] = js.undefined
 }
 
+object DragPanOptions {
+  @scala.inline
+  def apply(
+    condition: openlayersLib.openlayersMod.EventsConditionType = null,
+    kinetic: openlayersLib.openlayersMod.Kinetic = null
+  ): DragPanOptions = {
+    val __obj = js.Dynamic.literal()
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (kinetic != null) __obj.updateDynamic("kinetic")(kinetic)
+    __obj.asInstanceOf[DragPanOptions]
+  }
+}
+

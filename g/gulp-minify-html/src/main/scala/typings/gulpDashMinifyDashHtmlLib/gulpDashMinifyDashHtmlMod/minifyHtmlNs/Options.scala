@@ -23,3 +23,26 @@ trait Options extends js.Object {
   var spare: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    cdata: js.UndefOr[scala.Boolean] = js.undefined,
+    comments: js.UndefOr[scala.Boolean] = js.undefined,
+    conditionals: js.UndefOr[scala.Boolean] = js.undefined,
+    empty: js.UndefOr[scala.Boolean] = js.undefined,
+    loose: js.UndefOr[scala.Boolean] = js.undefined,
+    quotes: js.UndefOr[scala.Boolean] = js.undefined,
+    spare: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cdata)) __obj.updateDynamic("cdata")(cdata)
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments)
+    if (!js.isUndefined(conditionals)) __obj.updateDynamic("conditionals")(conditionals)
+    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
+    if (!js.isUndefined(loose)) __obj.updateDynamic("loose")(loose)
+    if (!js.isUndefined(quotes)) __obj.updateDynamic("quotes")(quotes)
+    if (!js.isUndefined(spare)) __obj.updateDynamic("spare")(spare)
+    __obj.asInstanceOf[Options]
+  }
+}
+

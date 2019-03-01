@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RTCSrtpSdesTransport extends EventTarget {
+trait RTCSrtpSdesTransport
+  extends EventTarget
+     with RTCTransport {
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   val transport: RTCIceTransport = js.native
   @JSName("addEventListener")

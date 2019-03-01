@@ -10,3 +10,13 @@ trait Anon_DataUuid extends js.Object {
   var uuid: java.lang.String
 }
 
+object Anon_DataUuid {
+  @scala.inline
+  def apply(data: js.Array[chromeDashAppsLib.chromeNs.integer], uuid: java.lang.String): Anon_DataUuid = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("uuid")(uuid)
+    __obj.asInstanceOf[Anon_DataUuid]
+  }
+}
+

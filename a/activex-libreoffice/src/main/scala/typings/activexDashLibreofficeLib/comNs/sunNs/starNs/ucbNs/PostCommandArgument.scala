@@ -16,3 +16,16 @@ trait PostCommandArgument extends js.Object {
   var Source: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream
 }
 
+object PostCommandArgument {
+  @scala.inline
+  def apply(
+    Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream
+  ): PostCommandArgument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Sink")(Sink)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[PostCommandArgument]
+  }
+}
+

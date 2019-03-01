@@ -95,3 +95,54 @@ trait TabsGroupsContentGroup extends js.Object {
   var `type`: js.UndefOr[Type | java.lang.String] = js.undefined
 }
 
+object TabsGroupsContentGroup {
+  @scala.inline
+  def apply(
+    buttonSettings: js.Any = null,
+    columns: scala.Int | scala.Double = null,
+    contentID: java.lang.String = null,
+    cssClass: java.lang.String = null,
+    customGalleryItems: js.Array[TabsGroupsContentGroupsCustomGalleryItem] = null,
+    customToolTip: TabsGroupsContentGroupsCustomToolTip = null,
+    dropdownSettings: js.Any = null,
+    enableSeparator: js.UndefOr[scala.Boolean] = js.undefined,
+    expandedColumns: scala.Int | scala.Double = null,
+    galleryItems: js.Array[TabsGroupsContentGroupsGalleryItem] = null,
+    id: java.lang.String = null,
+    isBig: js.UndefOr[scala.Boolean] = js.undefined,
+    isMobileOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    itemHeight: java.lang.String | scala.Double = null,
+    itemWidth: java.lang.String | scala.Double = null,
+    quickAccessMode: QuickAccessMode | java.lang.String = null,
+    splitButtonSettings: js.Any = null,
+    text: java.lang.String = null,
+    toggleButtonSettings: js.Any = null,
+    toolTip: java.lang.String = null,
+    `type`: Type | java.lang.String = null
+  ): TabsGroupsContentGroup = {
+    val __obj = js.Dynamic.literal()
+    if (buttonSettings != null) __obj.updateDynamic("buttonSettings")(buttonSettings)
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (contentID != null) __obj.updateDynamic("contentID")(contentID)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customGalleryItems != null) __obj.updateDynamic("customGalleryItems")(customGalleryItems)
+    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip)
+    if (dropdownSettings != null) __obj.updateDynamic("dropdownSettings")(dropdownSettings)
+    if (!js.isUndefined(enableSeparator)) __obj.updateDynamic("enableSeparator")(enableSeparator)
+    if (expandedColumns != null) __obj.updateDynamic("expandedColumns")(expandedColumns.asInstanceOf[js.Any])
+    if (galleryItems != null) __obj.updateDynamic("galleryItems")(galleryItems)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isBig)) __obj.updateDynamic("isBig")(isBig)
+    if (!js.isUndefined(isMobileOnly)) __obj.updateDynamic("isMobileOnly")(isMobileOnly)
+    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
+    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
+    if (quickAccessMode != null) __obj.updateDynamic("quickAccessMode")(quickAccessMode.asInstanceOf[js.Any])
+    if (splitButtonSettings != null) __obj.updateDynamic("splitButtonSettings")(splitButtonSettings)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (toggleButtonSettings != null) __obj.updateDynamic("toggleButtonSettings")(toggleButtonSettings)
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TabsGroupsContentGroup]
+  }
+}
+

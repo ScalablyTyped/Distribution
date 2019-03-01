@@ -146,3 +146,28 @@ trait Nest[Datum, RollupType] extends js.Object {
   def sortValues(comparator: js.Function2[/* a */ Datum, /* b */ Datum, scala.Double]): this.type
 }
 
+object Nest {
+  @scala.inline
+  def apply[Datum, RollupType](
+    entries: js.Function1[js.Array[Datum], js.Array[d3DashCollectionLib.Anon_KeyValueValuesAny[RollupType]]],
+    key: js.Function1[js.Function1[/* datum */ Datum, java.lang.String], Nest[Datum, RollupType]],
+    map: js.Function1[js.Array[Datum], Map[_]],
+    `object`: js.Function1[js.Array[Datum], org.scalablytyped.runtime.StringDictionary[js.Any]],
+    rollup: js.Function1[js.Function1[/* values */ js.Array[Datum], RollupType], Nest[Datum, RollupType]],
+    sortKeys: js.Function1[
+      js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, scala.Double], 
+      Nest[Datum, RollupType]
+    ],
+    sortValues: js.Function1[js.Function2[/* a */ Datum, /* b */ Datum, scala.Double], Nest[Datum, RollupType]]
+  ): Nest[Datum, RollupType] = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("entries")(entries)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("rollup")(rollup)
+    __obj.updateDynamic("sortKeys")(sortKeys)
+    __obj.updateDynamic("sortValues")(sortValues)
+    __obj.asInstanceOf[Nest[Datum, RollupType]]
+  }
+}
+

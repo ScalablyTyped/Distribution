@@ -9,3 +9,12 @@ trait ASPxClientFloatingActionButtonActionItemClickEventArgs extends ASPxClientE
   var actionName: java.lang.String
 }
 
+object ASPxClientFloatingActionButtonActionItemClickEventArgs {
+  @scala.inline
+  def apply(actionName: java.lang.String): ASPxClientFloatingActionButtonActionItemClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actionName")(actionName)
+    __obj.asInstanceOf[ASPxClientFloatingActionButtonActionItemClickEventArgs]
+  }
+}
+

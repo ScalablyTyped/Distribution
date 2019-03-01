@@ -11,3 +11,18 @@ trait module extends js.Object {
   var options: org.scalablytyped.runtime.StringDictionary[helpOption]
 }
 
+object module {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    mod: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[helpOption]
+  ): module = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("mod")(mod)
+    __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[module]
+  }
+}
+

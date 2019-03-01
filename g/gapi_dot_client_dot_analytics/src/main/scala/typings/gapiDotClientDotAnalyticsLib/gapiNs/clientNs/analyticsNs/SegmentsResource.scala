@@ -10,3 +10,17 @@ trait SegmentsResource extends js.Object {
   def list(request: gapiDotClientDotAnalyticsLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Segments]
 }
 
+object SegmentsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Segments]
+    ]
+  ): SegmentsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[SegmentsResource]
+  }
+}
+

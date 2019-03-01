@@ -20,3 +20,12 @@ trait EnableServiceRequest extends js.Object {
   var consumerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EnableServiceRequest {
+  @scala.inline
+  def apply(consumerId: java.lang.String = null): EnableServiceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId)
+    __obj.asInstanceOf[EnableServiceRequest]
+  }
+}
+

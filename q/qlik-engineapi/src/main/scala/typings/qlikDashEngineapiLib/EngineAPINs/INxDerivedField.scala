@@ -39,3 +39,22 @@ trait INxDerivedField extends js.Object {
   var qTags: js.Array[java.lang.String]
 }
 
+object INxDerivedField {
+  @scala.inline
+  def apply(
+    qExpr: java.lang.String,
+    qId: java.lang.String,
+    qMethod: java.lang.String,
+    qName: java.lang.String,
+    qTags: js.Array[java.lang.String]
+  ): INxDerivedField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qExpr")(qExpr)
+    __obj.updateDynamic("qId")(qId)
+    __obj.updateDynamic("qMethod")(qMethod)
+    __obj.updateDynamic("qName")(qName)
+    __obj.updateDynamic("qTags")(qTags)
+    __obj.asInstanceOf[INxDerivedField]
+  }
+}
+

@@ -41,3 +41,25 @@ trait ExecuteResponse extends js.Object {
   var url: java.lang.String
 }
 
+object ExecuteResponse {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    headers: js.Any,
+    ok: scala.Boolean,
+    status: scala.Double,
+    statusText: java.lang.String,
+    `type`: java.lang.String,
+    url: java.lang.String
+  ): ExecuteResponse = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("ok")(ok)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("statusText")(statusText)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ExecuteResponse]
+  }
+}
+

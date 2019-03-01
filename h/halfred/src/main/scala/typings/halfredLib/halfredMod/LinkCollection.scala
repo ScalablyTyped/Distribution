@@ -9,3 +9,12 @@ import scala.scalajs.js.annotation._
 trait LinkCollection
   extends /* rel */ org.scalablytyped.runtime.StringDictionary[js.Array[Link]]
 
+object LinkCollection {
+  @scala.inline
+  def apply(StringDictionary: /* rel */ org.scalablytyped.runtime.StringDictionary[js.Array[Link]] = null): LinkCollection = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[LinkCollection]
+  }
+}
+

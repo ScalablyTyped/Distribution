@@ -40,3 +40,40 @@ trait IMouseEventArgs extends ILayerMouseEventArgs {
   def getY(): scala.Double
 }
 
+object IMouseEventArgs {
+  @scala.inline
+  def apply(
+    eventName: java.lang.String,
+    getX: js.Function0[scala.Double],
+    getY: js.Function0[scala.Double],
+    isPrimary: scala.Boolean,
+    isSecondary: scala.Boolean,
+    layer: Layer,
+    location: Location,
+    pageX: scala.Double,
+    pageY: scala.Double,
+    point: Point,
+    primitive: IPrimitive,
+    target: Map | IPrimitive,
+    targetType: java.lang.String,
+    wheelDelta: scala.Double
+  ): IMouseEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventName")(eventName)
+    __obj.updateDynamic("getX")(getX)
+    __obj.updateDynamic("getY")(getY)
+    __obj.updateDynamic("isPrimary")(isPrimary)
+    __obj.updateDynamic("isSecondary")(isSecondary)
+    __obj.updateDynamic("layer")(layer)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("pageX")(pageX)
+    __obj.updateDynamic("pageY")(pageY)
+    __obj.updateDynamic("point")(point)
+    __obj.updateDynamic("primitive")(primitive)
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.updateDynamic("targetType")(targetType)
+    __obj.updateDynamic("wheelDelta")(wheelDelta)
+    __obj.asInstanceOf[IMouseEventArgs]
+  }
+}
+

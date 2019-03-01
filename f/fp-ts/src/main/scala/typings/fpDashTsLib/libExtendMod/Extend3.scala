@@ -13,3 +13,26 @@ trait Extend3[F /* <: fpDashTsLib.libHKTMod.URIS3 */]
   ): fpDashTsLib.libHKTMod.Type3[F, U, L, B]
 }
 
+object Extend3 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
+    URI: F,
+    extend: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[/* fa */ fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ]
+  ): Extend3[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("extend")(extend)
+    __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[Extend3[F]]
+  }
+}
+

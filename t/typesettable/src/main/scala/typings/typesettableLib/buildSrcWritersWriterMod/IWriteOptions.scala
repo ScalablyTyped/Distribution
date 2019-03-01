@@ -37,3 +37,20 @@ trait IWriteOptions extends js.Object {
   var yAlign: js.UndefOr[IYAlign] = js.undefined
 }
 
+object IWriteOptions {
+  @scala.inline
+  def apply(
+    textRotation: scala.Int | scala.Double = null,
+    textShear: scala.Int | scala.Double = null,
+    xAlign: IXAlign = null,
+    yAlign: IYAlign = null
+  ): IWriteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (textRotation != null) __obj.updateDynamic("textRotation")(textRotation.asInstanceOf[js.Any])
+    if (textShear != null) __obj.updateDynamic("textShear")(textShear.asInstanceOf[js.Any])
+    if (xAlign != null) __obj.updateDynamic("xAlign")(xAlign)
+    if (yAlign != null) __obj.updateDynamic("yAlign")(yAlign)
+    __obj.asInstanceOf[IWriteOptions]
+  }
+}
+

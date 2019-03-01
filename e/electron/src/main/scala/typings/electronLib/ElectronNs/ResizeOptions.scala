@@ -24,3 +24,18 @@ trait ResizeOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ResizeOptions {
+  @scala.inline
+  def apply(
+    height: scala.Int | scala.Double = null,
+    quality: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ResizeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResizeOptions]
+  }
+}
+

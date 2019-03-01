@@ -13,3 +13,24 @@ trait XSupportedLanguages
   def hasLanguage(nLanguage: scala.Double): scala.Boolean
 }
 
+object XSupportedLanguages {
+  @scala.inline
+  def apply(
+    Languages: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    getLanguages: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    hasLanguage: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSupportedLanguages = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Languages")(Languages)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLanguages")(getLanguages)
+    __obj.updateDynamic("hasLanguage")(hasLanguage)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSupportedLanguages]
+  }
+}
+

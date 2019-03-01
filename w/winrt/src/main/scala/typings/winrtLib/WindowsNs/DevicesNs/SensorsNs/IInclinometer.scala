@@ -12,3 +12,20 @@ trait IInclinometer extends js.Object {
   def getCurrentReading(): InclinometerReading
 }
 
+object IInclinometer {
+  @scala.inline
+  def apply(
+    getCurrentReading: js.Function0[InclinometerReading],
+    minimumReportInterval: scala.Double,
+    onreadingchanged: js.Any,
+    reportInterval: scala.Double
+  ): IInclinometer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCurrentReading")(getCurrentReading)
+    __obj.updateDynamic("minimumReportInterval")(minimumReportInterval)
+    __obj.updateDynamic("onreadingchanged")(onreadingchanged)
+    __obj.updateDynamic("reportInterval")(reportInterval)
+    __obj.asInstanceOf[IInclinometer]
+  }
+}
+

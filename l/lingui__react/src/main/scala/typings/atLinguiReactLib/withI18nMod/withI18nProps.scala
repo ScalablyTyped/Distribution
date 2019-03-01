@@ -9,3 +9,12 @@ trait withI18nProps extends js.Object {
   var i18n: atLinguiCoreLib.atLinguiCoreMod.I18n
 }
 
+object withI18nProps {
+  @scala.inline
+  def apply(i18n: atLinguiCoreLib.atLinguiCoreMod.I18n): withI18nProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("i18n")(i18n)
+    __obj.asInstanceOf[withI18nProps]
+  }
+}
+

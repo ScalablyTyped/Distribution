@@ -482,3 +482,266 @@ trait IStore extends IAbstractStore {
   var trailingBufferZone: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IStore {
+  @scala.inline
+  def apply(
+    IAbstractStore: IAbstractStore = null,
+    add: js.Function1[/* model */ js.UndefOr[js.Any], extjsLib.ExtNs.Array] = null,
+    addFilter: js.Function2[
+      /* filters */ js.UndefOr[js.Any], 
+      /* applyFilters */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    addSorted: js.Function1[/* record */ js.UndefOr[IRecord], scala.Unit] = null,
+    aggregate: js.Function4[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* grouped */ js.UndefOr[scala.Boolean], 
+      /* args */ js.UndefOr[extjsLib.ExtNs.Array], 
+      _
+    ] = null,
+    autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
+    average: js.Function2[/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[scala.Boolean], _] = null,
+    buffered: js.UndefOr[scala.Boolean] = js.undefined,
+    clearFilter: js.Function1[/* suppressEvent */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    clearGrouping: js.Function0[scala.Unit] = null,
+    clearOnPageLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    clearRemovedOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    collect: js.Function3[
+      /* dataIndex */ js.UndefOr[java.lang.String], 
+      /* allowNull */ js.UndefOr[scala.Boolean], 
+      /* bypassFilter */ js.UndefOr[scala.Boolean], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    commitChanges: js.Function0[scala.Unit] = null,
+    count: js.Function1[/* grouped */ js.UndefOr[scala.Boolean], scala.Double] = null,
+    currentPage: scala.Int | scala.Double = null,
+    data: js.Any = null,
+    each: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    filter: js.Function2[
+      /* filters */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ] = null,
+    filterBy: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    find: js.Function6[
+      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* startIndex */ js.UndefOr[scala.Double], 
+      /* anyMatch */ js.UndefOr[scala.Boolean], 
+      /* caseSensitive */ js.UndefOr[scala.Boolean], 
+      /* exactMatch */ js.UndefOr[scala.Boolean], 
+      scala.Double
+    ] = null,
+    findBy: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* startIndex */ js.UndefOr[scala.Double], 
+      scala.Double
+    ] = null,
+    findExact: js.Function3[
+      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* startIndex */ js.UndefOr[scala.Double], 
+      scala.Double
+    ] = null,
+    findRecord: js.Function6[
+      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* startIndex */ js.UndefOr[scala.Double], 
+      /* anyMatch */ js.UndefOr[scala.Boolean], 
+      /* caseSensitive */ js.UndefOr[scala.Boolean], 
+      /* exactMatch */ js.UndefOr[scala.Boolean], 
+      IModel
+    ] = null,
+    first: js.Function1[/* grouped */ js.UndefOr[scala.Boolean], _] = null,
+    getAt: js.Function1[/* index */ js.UndefOr[scala.Double], IModel] = null,
+    getById: js.Function1[/* id */ js.UndefOr[js.Any], IModel] = null,
+    getCount: js.Function0[scala.Double] = null,
+    getGroupString: js.Function1[/* instance */ js.UndefOr[IModel], java.lang.String] = null,
+    getGroups: js.Function1[/* groupName */ js.UndefOr[java.lang.String], _] = null,
+    getNewRecords: js.Function0[extjsLib.ExtNs.Array] = null,
+    getPageFromRecordIndex: js.Function1[/* index */ js.UndefOr[scala.Double], scala.Double] = null,
+    getRange: js.Function3[
+      /* start */ js.UndefOr[scala.Double], 
+      /* end */ js.UndefOr[scala.Double], 
+      /* options */ js.UndefOr[js.Any], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    getTotalCount: js.Function0[scala.Double] = null,
+    getUpdatedRecords: js.Function0[extjsLib.ExtNs.Array] = null,
+    group: js.Function2[
+      /* groupers */ js.UndefOr[js.Any], 
+      /* direction */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ] = null,
+    groupDir: java.lang.String = null,
+    groupField: java.lang.String = null,
+    groupers: extjsLib.ExtNs.utilNs.IMixedCollection = null,
+    guaranteeRange: js.Function5[
+      /* start */ js.UndefOr[js.Any], 
+      /* end */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    indexOf: js.Function1[/* record */ js.UndefOr[IModel], scala.Double] = null,
+    indexOfId: js.Function1[/* id */ js.UndefOr[java.lang.String], scala.Double] = null,
+    indexOfTotal: js.Function1[/* record */ js.UndefOr[IModel], scala.Double] = null,
+    insert: js.Function2[
+      /* index */ js.UndefOr[scala.Double], 
+      /* records */ js.UndefOr[extjsLib.ExtNs.Array], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    isFiltered: js.Function0[scala.Boolean] = null,
+    isGrouped: js.Function0[scala.Boolean] = null,
+    last: js.Function1[/* grouped */ js.UndefOr[scala.Boolean], _] = null,
+    leadingBufferZone: scala.Int | scala.Double = null,
+    load: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    loadData: js.Function2[/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    loadPage: js.Function2[/* page */ js.UndefOr[scala.Double], /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    loadRawData: js.Function2[
+      /* data */ js.UndefOr[extjsLib.ExtNs.Array], 
+      /* append */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    loadRecords: js.Function2[
+      /* records */ js.UndefOr[extjsLib.ExtNs.Array], 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    max: js.Function2[/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[scala.Boolean], _] = null,
+    min: js.Function2[/* field */ js.UndefOr[java.lang.String], /* grouped */ js.UndefOr[scala.Boolean], _] = null,
+    nextPage: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    pageSize: scala.Int | scala.Double = null,
+    prefetch: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    prefetchPage: js.Function2[/* page */ js.UndefOr[scala.Double], /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    prefetchRange: js.Function2[/* start */ js.UndefOr[js.Any], /* end */ js.UndefOr[js.Any], scala.Unit] = null,
+    previousPage: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    proxy: js.Any = null,
+    purgePageCount: scala.Int | scala.Double = null,
+    query: js.Function5[
+      /* property */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* anyMatch */ js.UndefOr[scala.Boolean], 
+      /* caseSensitive */ js.UndefOr[scala.Boolean], 
+      /* exactMatch */ js.UndefOr[scala.Boolean], 
+      extjsLib.ExtNs.utilNs.IMixedCollection
+    ] = null,
+    queryBy: js.Function2[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      extjsLib.ExtNs.utilNs.IMixedCollection
+    ] = null,
+    rejectChanges: js.Function0[scala.Unit] = null,
+    reload: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    remoteFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteGroup: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteSort: js.UndefOr[scala.Boolean] = js.undefined,
+    remove: js.Function1[/* records */ js.UndefOr[js.Any], scala.Unit] = null,
+    removeAll: js.Function1[/* silent */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    removeAt: js.Function2[
+      /* index */ js.UndefOr[scala.Double], 
+      /* count */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    removeFilter: js.Function2[
+      /* toRemove */ js.UndefOr[js.Any], 
+      /* applyFilters */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    snapshot: extjsLib.ExtNs.utilNs.IMixedCollection = null,
+    sort: js.Function0[extjsLib.ExtNs.Array] = null,
+    sortOnFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    sum: js.Function2[
+      /* field */ js.UndefOr[java.lang.String], 
+      /* grouped */ js.UndefOr[scala.Boolean], 
+      scala.Double
+    ] = null,
+    trailingBufferZone: scala.Int | scala.Double = null
+  ): IStore = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IAbstractStore)
+    if (add != null) __obj.updateDynamic("add")(add)
+    if (addFilter != null) __obj.updateDynamic("addFilter")(addFilter)
+    if (addSorted != null) __obj.updateDynamic("addSorted")(addSorted)
+    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate)
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
+    if (average != null) __obj.updateDynamic("average")(average)
+    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered)
+    if (clearFilter != null) __obj.updateDynamic("clearFilter")(clearFilter)
+    if (clearGrouping != null) __obj.updateDynamic("clearGrouping")(clearGrouping)
+    if (!js.isUndefined(clearOnPageLoad)) __obj.updateDynamic("clearOnPageLoad")(clearOnPageLoad)
+    if (!js.isUndefined(clearRemovedOnLoad)) __obj.updateDynamic("clearRemovedOnLoad")(clearRemovedOnLoad)
+    if (collect != null) __obj.updateDynamic("collect")(collect)
+    if (commitChanges != null) __obj.updateDynamic("commitChanges")(commitChanges)
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (each != null) __obj.updateDynamic("each")(each)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy)
+    if (find != null) __obj.updateDynamic("find")(find)
+    if (findBy != null) __obj.updateDynamic("findBy")(findBy)
+    if (findExact != null) __obj.updateDynamic("findExact")(findExact)
+    if (findRecord != null) __obj.updateDynamic("findRecord")(findRecord)
+    if (first != null) __obj.updateDynamic("first")(first)
+    if (getAt != null) __obj.updateDynamic("getAt")(getAt)
+    if (getById != null) __obj.updateDynamic("getById")(getById)
+    if (getCount != null) __obj.updateDynamic("getCount")(getCount)
+    if (getGroupString != null) __obj.updateDynamic("getGroupString")(getGroupString)
+    if (getGroups != null) __obj.updateDynamic("getGroups")(getGroups)
+    if (getNewRecords != null) __obj.updateDynamic("getNewRecords")(getNewRecords)
+    if (getPageFromRecordIndex != null) __obj.updateDynamic("getPageFromRecordIndex")(getPageFromRecordIndex)
+    if (getRange != null) __obj.updateDynamic("getRange")(getRange)
+    if (getTotalCount != null) __obj.updateDynamic("getTotalCount")(getTotalCount)
+    if (getUpdatedRecords != null) __obj.updateDynamic("getUpdatedRecords")(getUpdatedRecords)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (groupDir != null) __obj.updateDynamic("groupDir")(groupDir)
+    if (groupField != null) __obj.updateDynamic("groupField")(groupField)
+    if (groupers != null) __obj.updateDynamic("groupers")(groupers)
+    if (guaranteeRange != null) __obj.updateDynamic("guaranteeRange")(guaranteeRange)
+    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
+    if (indexOfId != null) __obj.updateDynamic("indexOfId")(indexOfId)
+    if (indexOfTotal != null) __obj.updateDynamic("indexOfTotal")(indexOfTotal)
+    if (insert != null) __obj.updateDynamic("insert")(insert)
+    if (isFiltered != null) __obj.updateDynamic("isFiltered")(isFiltered)
+    if (isGrouped != null) __obj.updateDynamic("isGrouped")(isGrouped)
+    if (last != null) __obj.updateDynamic("last")(last)
+    if (leadingBufferZone != null) __obj.updateDynamic("leadingBufferZone")(leadingBufferZone.asInstanceOf[js.Any])
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loadData != null) __obj.updateDynamic("loadData")(loadData)
+    if (loadPage != null) __obj.updateDynamic("loadPage")(loadPage)
+    if (loadRawData != null) __obj.updateDynamic("loadRawData")(loadRawData)
+    if (loadRecords != null) __obj.updateDynamic("loadRecords")(loadRecords)
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (min != null) __obj.updateDynamic("min")(min)
+    if (nextPage != null) __obj.updateDynamic("nextPage")(nextPage)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch)
+    if (prefetchPage != null) __obj.updateDynamic("prefetchPage")(prefetchPage)
+    if (prefetchRange != null) __obj.updateDynamic("prefetchRange")(prefetchRange)
+    if (previousPage != null) __obj.updateDynamic("previousPage")(previousPage)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (purgePageCount != null) __obj.updateDynamic("purgePageCount")(purgePageCount.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (queryBy != null) __obj.updateDynamic("queryBy")(queryBy)
+    if (rejectChanges != null) __obj.updateDynamic("rejectChanges")(rejectChanges)
+    if (reload != null) __obj.updateDynamic("reload")(reload)
+    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter)
+    if (!js.isUndefined(remoteGroup)) __obj.updateDynamic("remoteGroup")(remoteGroup)
+    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (removeAll != null) __obj.updateDynamic("removeAll")(removeAll)
+    if (removeAt != null) __obj.updateDynamic("removeAt")(removeAt)
+    if (removeFilter != null) __obj.updateDynamic("removeFilter")(removeFilter)
+    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(sortOnFilter)) __obj.updateDynamic("sortOnFilter")(sortOnFilter)
+    if (sum != null) __obj.updateDynamic("sum")(sum)
+    if (trailingBufferZone != null) __obj.updateDynamic("trailingBufferZone")(trailingBufferZone.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IStore]
+  }
+}
+

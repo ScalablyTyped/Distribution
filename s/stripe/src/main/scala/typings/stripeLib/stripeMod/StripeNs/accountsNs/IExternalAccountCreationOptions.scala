@@ -22,3 +22,22 @@ trait IExternalAccountCreationOptions
   var external_account: java.lang.String
 }
 
+object IExternalAccountCreationOptions {
+  @scala.inline
+  def apply(
+    external_account: java.lang.String,
+    default_for_currency: js.UndefOr[scala.Boolean] = js.undefined,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null
+  ): IExternalAccountCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("external_account")(external_account)
+    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[IExternalAccountCreationOptions]
+  }
+}
+

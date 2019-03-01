@@ -25,3 +25,16 @@ trait WorkspaceEdit extends js.Object {
   var documentChanges: js.UndefOr[js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]] = js.undefined
 }
 
+object WorkspaceEdit {
+  @scala.inline
+  def apply(
+    changes: org.scalablytyped.runtime.StringDictionary[js.Array[TextEdit]] = null,
+    documentChanges: js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile] = null
+  ): WorkspaceEdit = {
+    val __obj = js.Dynamic.literal()
+    if (changes != null) __obj.updateDynamic("changes")(changes)
+    if (documentChanges != null) __obj.updateDynamic("documentChanges")(documentChanges)
+    __obj.asInstanceOf[WorkspaceEdit]
+  }
+}
+

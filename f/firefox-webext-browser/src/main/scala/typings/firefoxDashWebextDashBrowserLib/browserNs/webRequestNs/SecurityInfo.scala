@@ -45,3 +45,42 @@ trait SecurityInfo extends js.Object {
   var weaknessReasons: js.UndefOr[js.Array[TransportWeaknessReasons]] = js.undefined
 }
 
+object SecurityInfo {
+  @scala.inline
+  def apply(
+    certificates: js.Array[CertificateInfo],
+    state: _SecurityInfoState,
+    certificateTransparencyStatus: CertificateTransparencyStatus = null,
+    cipherSuite: java.lang.String = null,
+    errorMessage: java.lang.String = null,
+    hpkp: java.lang.String = null,
+    hsts: js.UndefOr[scala.Boolean] = js.undefined,
+    isDomainMismatch: js.UndefOr[scala.Boolean] = js.undefined,
+    isExtendedValidation: js.UndefOr[scala.Boolean] = js.undefined,
+    isNotValidAtThisTime: js.UndefOr[scala.Boolean] = js.undefined,
+    isUntrusted: js.UndefOr[scala.Boolean] = js.undefined,
+    keaGroupName: java.lang.String = null,
+    protocolVersion: _SecurityInfoProtocolVersion = null,
+    signatureSchemeName: java.lang.String = null,
+    weaknessReasons: js.Array[TransportWeaknessReasons] = null
+  ): SecurityInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("certificates")(certificates)
+    __obj.updateDynamic("state")(state)
+    if (certificateTransparencyStatus != null) __obj.updateDynamic("certificateTransparencyStatus")(certificateTransparencyStatus)
+    if (cipherSuite != null) __obj.updateDynamic("cipherSuite")(cipherSuite)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (hpkp != null) __obj.updateDynamic("hpkp")(hpkp)
+    if (!js.isUndefined(hsts)) __obj.updateDynamic("hsts")(hsts)
+    if (!js.isUndefined(isDomainMismatch)) __obj.updateDynamic("isDomainMismatch")(isDomainMismatch)
+    if (!js.isUndefined(isExtendedValidation)) __obj.updateDynamic("isExtendedValidation")(isExtendedValidation)
+    if (!js.isUndefined(isNotValidAtThisTime)) __obj.updateDynamic("isNotValidAtThisTime")(isNotValidAtThisTime)
+    if (!js.isUndefined(isUntrusted)) __obj.updateDynamic("isUntrusted")(isUntrusted)
+    if (keaGroupName != null) __obj.updateDynamic("keaGroupName")(keaGroupName)
+    if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion)
+    if (signatureSchemeName != null) __obj.updateDynamic("signatureSchemeName")(signatureSchemeName)
+    if (weaknessReasons != null) __obj.updateDynamic("weaknessReasons")(weaknessReasons)
+    __obj.asInstanceOf[SecurityInfo]
+  }
+}
+

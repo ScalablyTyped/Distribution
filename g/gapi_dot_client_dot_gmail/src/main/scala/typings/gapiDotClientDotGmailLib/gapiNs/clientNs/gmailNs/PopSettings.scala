@@ -12,3 +12,13 @@ trait PopSettings extends js.Object {
   var disposition: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PopSettings {
+  @scala.inline
+  def apply(accessWindow: java.lang.String = null, disposition: java.lang.String = null): PopSettings = {
+    val __obj = js.Dynamic.literal()
+    if (accessWindow != null) __obj.updateDynamic("accessWindow")(accessWindow)
+    if (disposition != null) __obj.updateDynamic("disposition")(disposition)
+    __obj.asInstanceOf[PopSettings]
+  }
+}
+

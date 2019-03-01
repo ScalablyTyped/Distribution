@@ -29,3 +29,50 @@ trait IPopoverOptions extends js.Object {
   var viewport: js.UndefOr[java.lang.String | angularDashStrapLib.Anon_Padding] = js.undefined
 }
 
+object IPopoverOptions {
+  @scala.inline
+  def apply(
+    animation: java.lang.String = null,
+    autoClose: js.UndefOr[scala.Boolean] = js.undefined,
+    container: java.lang.String | scala.Boolean = null,
+    content: java.lang.String = null,
+    contentTemplate: java.lang.String = null,
+    delay: scala.Double | angularDashStrapLib.Anon_Hide = null,
+    html: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    onBeforeHide: js.Function1[/* popover */ IPopover, scala.Unit] = null,
+    onBeforeShow: js.Function1[/* popover */ IPopover, scala.Unit] = null,
+    onHide: js.Function1[/* popover */ IPopover, scala.Unit] = null,
+    onShow: js.Function1[/* popover */ IPopover, scala.Unit] = null,
+    placement: java.lang.String = null,
+    target: java.lang.String | angularLib.angularMod.angularNs.IAugmentedJQuery | scala.Boolean = null,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null,
+    title: java.lang.String = null,
+    trigger: java.lang.String = null,
+    viewport: java.lang.String | angularDashStrapLib.Anon_Padding = null
+  ): IPopoverOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPopoverOptions]
+  }
+}
+

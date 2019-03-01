@@ -12,3 +12,22 @@ trait GrouplicensesResource extends js.Object {
   def list(request: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields): gapiDotClientLib.gapiNs.clientNs.Request[GroupLicensesListResponse]
 }
 
+object GrouplicensesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsGroupLicenseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GroupLicense]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GroupLicensesListResponse]
+    ]
+  ): GrouplicensesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[GrouplicensesResource]
+  }
+}
+

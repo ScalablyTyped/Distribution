@@ -75,3 +75,48 @@ trait Model extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    beforeChange: js.Function1[/* e */ BeforeChangeEventArgs, scala.Unit] = null,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    htmlAttributes: js.Any = null,
+    id: java.lang.String = null,
+    idPrefix: java.lang.String = null,
+    name: java.lang.String = null,
+    size: ejDotWebDotAllLib.ejNs.RadioButtonSize | java.lang.String = null,
+    text: java.lang.String = null,
+    validationMessage: js.Any = null,
+    validationRules: js.Any = null,
+    value: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (beforeChange != null) __obj.updateDynamic("beforeChange")(beforeChange)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Model]
+  }
+}
+

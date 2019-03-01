@@ -21,3 +21,22 @@ trait ISmsBinaryMessage extends ISmsMessage {
   def setData(value: js.Array[scala.Double]): scala.Unit
 }
 
+object ISmsBinaryMessage {
+  @scala.inline
+  def apply(
+    format: SmsDataFormat,
+    getData: js.Function0[js.Array[scala.Double]],
+    id: scala.Double,
+    messageClass: SmsMessageClass,
+    setData: js.Function1[js.Array[scala.Double], scala.Unit]
+  ): ISmsBinaryMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("messageClass")(messageClass)
+    __obj.updateDynamic("setData")(setData)
+    __obj.asInstanceOf[ISmsBinaryMessage]
+  }
+}
+

@@ -31,3 +31,24 @@ trait BootstrapUIWidgetOptionChangedEventArgs extends BootstrapUIWidgetEventArgs
   var value: js.Object
 }
 
+object BootstrapUIWidgetOptionChangedEventArgs {
+  @scala.inline
+  def apply(
+    component: js.Object,
+    element: js.Object,
+    fullName: java.lang.String,
+    name: java.lang.String,
+    previousValue: js.Object,
+    value: js.Object
+  ): BootstrapUIWidgetOptionChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("component")(component)
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("fullName")(fullName)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("previousValue")(previousValue)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[BootstrapUIWidgetOptionChangedEventArgs]
+  }
+}
+

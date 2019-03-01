@@ -11,3 +11,17 @@ trait R3PipeDef extends js.Object {
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Type
 }
 
+object R3PipeDef {
+  @scala.inline
+  def apply(
+    expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Type
+  ): R3PipeDef = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("expression")(expression)
+    __obj.updateDynamic("statements")(statements)
+    __obj.asInstanceOf[R3PipeDef]
+  }
+}
+

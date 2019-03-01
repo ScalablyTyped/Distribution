@@ -12,3 +12,22 @@ trait QuestsResource extends js.Object {
   def list(request: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMaxResults): gapiDotClientLib.gapiNs.clientNs.Request[QuestListResponse]
 }
 
+object QuestsResource {
+  @scala.inline
+  def apply(
+    accept: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Quest]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMaxResults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[QuestListResponse]
+    ]
+  ): QuestsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accept")(accept)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[QuestsResource]
+  }
+}
+

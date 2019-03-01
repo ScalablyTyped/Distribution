@@ -10,3 +10,13 @@ trait X64Static extends js.Object {
   var WordArray: WordArray
 }
 
+object X64Static {
+  @scala.inline
+  def apply(Word: Word, WordArray: WordArray): X64Static = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Word")(Word)
+    __obj.updateDynamic("WordArray")(WordArray)
+    __obj.asInstanceOf[X64Static]
+  }
+}
+

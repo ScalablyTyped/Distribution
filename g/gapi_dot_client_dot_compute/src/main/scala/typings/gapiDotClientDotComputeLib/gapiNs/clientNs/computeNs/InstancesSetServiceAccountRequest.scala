@@ -12,3 +12,13 @@ trait InstancesSetServiceAccountRequest extends js.Object {
   var scopes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object InstancesSetServiceAccountRequest {
+  @scala.inline
+  def apply(email: java.lang.String = null, scopes: js.Array[java.lang.String] = null): InstancesSetServiceAccountRequest = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    __obj.asInstanceOf[InstancesSetServiceAccountRequest]
+  }
+}
+

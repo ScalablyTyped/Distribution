@@ -20,3 +20,18 @@ trait DragTooltip extends js.Object {
   var tooltipTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DragTooltip {
+  @scala.inline
+  def apply(
+    showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltipItems: js.Array[_] = null,
+    tooltipTemplate: java.lang.String = null
+  ): DragTooltip = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
+    if (tooltipItems != null) __obj.updateDynamic("tooltipItems")(tooltipItems)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    __obj.asInstanceOf[DragTooltip]
+  }
+}
+

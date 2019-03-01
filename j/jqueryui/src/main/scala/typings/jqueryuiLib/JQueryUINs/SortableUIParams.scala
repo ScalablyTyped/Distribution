@@ -15,3 +15,26 @@ trait SortableUIParams extends js.Object {
   var sender: jqueryuiLib.JQuery
 }
 
+object SortableUIParams {
+  @scala.inline
+  def apply(
+    helper: jqueryuiLib.JQuery,
+    item: jqueryuiLib.JQuery,
+    offset: js.Any,
+    originalPosition: js.Any,
+    placeholder: jqueryuiLib.JQuery,
+    position: js.Any,
+    sender: jqueryuiLib.JQuery
+  ): SortableUIParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("helper")(helper)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("originalPosition")(originalPosition)
+    __obj.updateDynamic("placeholder")(placeholder)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[SortableUIParams]
+  }
+}
+

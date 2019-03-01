@@ -12,3 +12,22 @@ trait PostalCodesResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[PostalCodesListResponse]
 }
 
+object PostalCodesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCode, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PostalCode]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PostalCodesListResponse]
+    ]
+  ): PostalCodesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[PostalCodesResource]
+  }
+}
+

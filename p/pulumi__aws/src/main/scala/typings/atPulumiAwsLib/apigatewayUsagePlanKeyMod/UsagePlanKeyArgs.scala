@@ -20,3 +20,18 @@ trait UsagePlanKeyArgs extends js.Object {
   val usagePlanId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object UsagePlanKeyArgs {
+  @scala.inline
+  def apply(
+    keyId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    keyType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    usagePlanId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): UsagePlanKeyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
+    __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
+    __obj.updateDynamic("usagePlanId")(usagePlanId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UsagePlanKeyArgs]
+  }
+}
+

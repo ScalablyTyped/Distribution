@@ -76,3 +76,68 @@ trait AudioRecorder
   def stop(): titaniumLib.TitaniumNs.FilesystemNs.File
 }
 
+object AudioRecorder {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    compression: scala.Double,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    format: scala.Double,
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getCompression: js.Function0[scala.Double],
+    getFormat: js.Function0[scala.Double],
+    getPaused: js.Function0[scala.Boolean],
+    getRecording: js.Function0[scala.Boolean],
+    getStopped: js.Function0[scala.Boolean],
+    pause: js.Function0[scala.Unit],
+    paused: scala.Boolean,
+    recording: scala.Boolean,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    resume: js.Function0[scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setCompression: js.Function1[scala.Double, scala.Unit],
+    setFormat: js.Function1[scala.Double, scala.Unit],
+    start: js.Function0[scala.Unit],
+    stop: js.Function0[titaniumLib.TitaniumNs.FilesystemNs.File],
+    stopped: scala.Boolean,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): AudioRecorder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("compression")(compression)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getCompression")(getCompression)
+    __obj.updateDynamic("getFormat")(getFormat)
+    __obj.updateDynamic("getPaused")(getPaused)
+    __obj.updateDynamic("getRecording")(getRecording)
+    __obj.updateDynamic("getStopped")(getStopped)
+    __obj.updateDynamic("pause")(pause)
+    __obj.updateDynamic("paused")(paused)
+    __obj.updateDynamic("recording")(recording)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("resume")(resume)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("setCompression")(setCompression)
+    __obj.updateDynamic("setFormat")(setFormat)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stop")(stop)
+    __obj.updateDynamic("stopped")(stopped)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[AudioRecorder]
+  }
+}
+

@@ -14,3 +14,28 @@ trait IStreamSocketListener
   def bindServiceNameAsync(localServiceName: java.lang.String): winrtLib.WindowsNs.FoundationNs.IAsyncAction
 }
 
+object IStreamSocketListener {
+  @scala.inline
+  def apply(
+    bindEndpointAsync: js.Function2[
+      winrtLib.WindowsNs.NetworkingNs.HostName, 
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncAction
+    ],
+    bindServiceNameAsync: js.Function1[java.lang.String, winrtLib.WindowsNs.FoundationNs.IAsyncAction],
+    close: js.Function0[scala.Unit],
+    control: StreamSocketListenerControl,
+    information: StreamSocketListenerInformation,
+    onconnectionreceived: js.Any
+  ): IStreamSocketListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bindEndpointAsync")(bindEndpointAsync)
+    __obj.updateDynamic("bindServiceNameAsync")(bindServiceNameAsync)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("control")(control)
+    __obj.updateDynamic("information")(information)
+    __obj.updateDynamic("onconnectionreceived")(onconnectionreceived)
+    __obj.asInstanceOf[IStreamSocketListener]
+  }
+}
+

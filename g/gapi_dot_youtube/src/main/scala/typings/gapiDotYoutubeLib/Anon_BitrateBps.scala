@@ -24,3 +24,20 @@ trait Anon_BitrateBps extends js.Object {
   var vendor: java.lang.String
 }
 
+object Anon_BitrateBps {
+  @scala.inline
+  def apply(
+    bitrateBps: scala.Double,
+    channelCount: scala.Double,
+    codec: java.lang.String,
+    vendor: java.lang.String
+  ): Anon_BitrateBps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bitrateBps")(bitrateBps)
+    __obj.updateDynamic("channelCount")(channelCount)
+    __obj.updateDynamic("codec")(codec)
+    __obj.updateDynamic("vendor")(vendor)
+    __obj.asInstanceOf[Anon_BitrateBps]
+  }
+}
+

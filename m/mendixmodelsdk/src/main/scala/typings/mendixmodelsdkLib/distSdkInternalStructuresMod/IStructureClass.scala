@@ -9,3 +9,12 @@ trait IStructureClass extends js.Object {
   var versionInfo: mendixmodelsdkLib.distSdkInternalVersionDashChecksMod.StructureVersionInfo
 }
 
+object IStructureClass {
+  @scala.inline
+  def apply(versionInfo: mendixmodelsdkLib.distSdkInternalVersionDashChecksMod.StructureVersionInfo): IStructureClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("versionInfo")(versionInfo)
+    __obj.asInstanceOf[IStructureClass]
+  }
+}
+

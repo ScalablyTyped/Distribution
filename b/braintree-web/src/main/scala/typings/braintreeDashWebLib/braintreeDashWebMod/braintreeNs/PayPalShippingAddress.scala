@@ -45,3 +45,26 @@ trait PayPalShippingAddress extends js.Object {
   var state: java.lang.String
 }
 
+object PayPalShippingAddress {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    countryCode: java.lang.String,
+    line1: java.lang.String,
+    line2: java.lang.String,
+    postalCode: java.lang.String,
+    recipientName: java.lang.String,
+    state: java.lang.String
+  ): PayPalShippingAddress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("city")(city)
+    __obj.updateDynamic("countryCode")(countryCode)
+    __obj.updateDynamic("line1")(line1)
+    __obj.updateDynamic("line2")(line2)
+    __obj.updateDynamic("postalCode")(postalCode)
+    __obj.updateDynamic("recipientName")(recipientName)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[PayPalShippingAddress]
+  }
+}
+

@@ -12,3 +12,13 @@ trait PointDistributionOverflowBucket extends js.Object {
   var lowerBound: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PointDistributionOverflowBucket {
+  @scala.inline
+  def apply(count: java.lang.String = null, lowerBound: scala.Int | scala.Double = null): PointDistributionOverflowBucket = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointDistributionOverflowBucket]
+  }
+}
+

@@ -7,40 +7,52 @@ import scala.scalajs.js.annotation._
 
 object servicenowLibStrings {
   @js.native
-  sealed trait `!=` extends js.Object
+  sealed trait `!=`
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait `=`
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait CONTAINS extends js.Object
+  sealed trait CONTAINS
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait DOESNOTCONTAIN extends js.Object
+  sealed trait DOESNOTCONTAIN
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait ENDSWITH extends js.Object
+  sealed trait ENDSWITH
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait IN extends js.Object
+  sealed trait IN
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait INSTANCEOF extends js.Object
+  sealed trait INSTANCEOF
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
-  sealed trait STARTSWITH extends js.Object
+  sealed trait STARTSWITH
+    extends servicenowLib.servicenowNs.QueryOperator
   
   @js.native
   sealed trait all extends js.Object
@@ -49,34 +61,44 @@ object servicenowLibStrings {
   sealed trait basic extends js.Object
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends servicenowLib.servicenowNs.GlideRecordOperation
+       with servicenowLib.servicenowNs.RestHTTPMethods
   
   @js.native
   sealed trait elevated extends js.Object
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get
+    extends servicenowLib.servicenowNs.RestHTTPMethods
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait head
+    extends servicenowLib.servicenowNs.RestHTTPMethods
   
   @js.native
-  sealed trait insert extends js.Object
+  sealed trait insert
+    extends servicenowLib.servicenowNs.GlideRecordOperation
   
   @js.native
-  sealed trait options extends js.Object
+  sealed trait options
+    extends servicenowLib.servicenowNs.RestHTTPMethods
   
   @js.native
-  sealed trait patch extends js.Object
+  sealed trait patch
+    extends servicenowLib.servicenowNs.RestHTTPMethods
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post
+    extends servicenowLib.servicenowNs.RestHTTPMethods
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait put
+    extends servicenowLib.servicenowNs.RestHTTPMethods
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update
+    extends servicenowLib.servicenowNs.GlideRecordOperation
   
   @scala.inline
   def `!=`: `!=` = "!=".asInstanceOf[`!=`]

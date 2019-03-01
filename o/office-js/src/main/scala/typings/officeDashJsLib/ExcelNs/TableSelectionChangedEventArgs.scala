@@ -49,3 +49,21 @@ trait TableSelectionChangedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object TableSelectionChangedEventArgs {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    isInsideTable: scala.Boolean,
+    tableId: java.lang.String,
+    `type`: officeDashJsLib.officeDashJsLibStrings.TableSelectionChanged,
+    worksheetId: java.lang.String
+  ): TableSelectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("isInsideTable")(isInsideTable)
+    __obj.updateDynamic("tableId")(tableId)
+    __obj.updateDynamic("worksheetId")(worksheetId)
+    __obj.asInstanceOf[TableSelectionChangedEventArgs]
+  }
+}
+

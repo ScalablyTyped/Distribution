@@ -16,3 +16,20 @@ trait SkippableSetting extends js.Object {
   var skippable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SkippableSetting {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    progressOffset: VideoOffset = null,
+    skipOffset: VideoOffset = null,
+    skippable: js.UndefOr[scala.Boolean] = js.undefined
+  ): SkippableSetting = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (progressOffset != null) __obj.updateDynamic("progressOffset")(progressOffset)
+    if (skipOffset != null) __obj.updateDynamic("skipOffset")(skipOffset)
+    if (!js.isUndefined(skippable)) __obj.updateDynamic("skippable")(skippable)
+    __obj.asInstanceOf[SkippableSetting]
+  }
+}
+

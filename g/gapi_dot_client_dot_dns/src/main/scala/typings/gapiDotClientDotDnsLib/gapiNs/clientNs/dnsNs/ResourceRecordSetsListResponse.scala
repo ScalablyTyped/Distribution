@@ -21,3 +21,18 @@ trait ResourceRecordSetsListResponse extends js.Object {
   var rrsets: js.UndefOr[js.Array[ResourceRecordSet]] = js.undefined
 }
 
+object ResourceRecordSetsListResponse {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    rrsets: js.Array[ResourceRecordSet] = null
+  ): ResourceRecordSetsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (rrsets != null) __obj.updateDynamic("rrsets")(rrsets)
+    __obj.asInstanceOf[ResourceRecordSetsListResponse]
+  }
+}
+

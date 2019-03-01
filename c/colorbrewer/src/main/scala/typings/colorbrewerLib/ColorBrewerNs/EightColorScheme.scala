@@ -38,3 +38,43 @@ trait EightColorScheme extends ColorScheme {
   ]
 }
 
+object EightColorScheme {
+  @scala.inline
+  def apply(
+    `3`: js.Tuple3[java.lang.String, java.lang.String, java.lang.String],
+    `4`: js.Tuple4[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
+    `5`: js.Tuple5[java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String],
+    `6`: js.Tuple6[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    `7`: js.Tuple7[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    `8`: js.Tuple8[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String
+    ]
+  ): EightColorScheme = {
+    val __obj = js.Dynamic.literal(`3` = `3`, `4` = `4`, `5` = `5`, `6` = `6`, `7` = `7`, `8` = `8`)
+  
+    __obj.asInstanceOf[EightColorScheme]
+  }
+}
+

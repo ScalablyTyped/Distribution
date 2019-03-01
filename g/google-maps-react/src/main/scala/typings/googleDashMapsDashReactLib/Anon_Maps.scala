@@ -9,3 +9,12 @@ trait Anon_Maps extends js.Object {
   val mapsNs: Anon_Adsense
 }
 
+object Anon_Maps {
+  @scala.inline
+  def apply(mapsNs: Anon_Adsense): Anon_Maps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mapsNs")(mapsNs)
+    __obj.asInstanceOf[Anon_Maps]
+  }
+}
+

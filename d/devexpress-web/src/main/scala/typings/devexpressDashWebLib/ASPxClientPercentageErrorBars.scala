@@ -16,3 +16,15 @@ trait ASPxClientPercentageErrorBars extends ASPxClientIndicator {
   var percent: scala.Double
 }
 
+object ASPxClientPercentageErrorBars {
+  @scala.inline
+  def apply(chart: ASPxClientWebChart, name: java.lang.String, percent: scala.Double, series: ASPxClientSeries): ASPxClientPercentageErrorBars = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("percent")(percent)
+    __obj.updateDynamic("series")(series)
+    __obj.asInstanceOf[ASPxClientPercentageErrorBars]
+  }
+}
+

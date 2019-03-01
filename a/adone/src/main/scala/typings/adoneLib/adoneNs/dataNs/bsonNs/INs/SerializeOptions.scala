@@ -20,3 +20,18 @@ trait SerializeOptions extends js.Object {
   var serializeFunctions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SerializeOptions {
+  @scala.inline
+  def apply(
+    checkKeys: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreUndefined: js.UndefOr[scala.Boolean] = js.undefined,
+    serializeFunctions: js.UndefOr[scala.Boolean] = js.undefined
+  ): SerializeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checkKeys)) __obj.updateDynamic("checkKeys")(checkKeys)
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
+    __obj.asInstanceOf[SerializeOptions]
+  }
+}
+

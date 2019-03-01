@@ -15,3 +15,13 @@ trait ReferenceBound extends js.Object {
   var upperBound: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReferenceBound {
+  @scala.inline
+  def apply(referenceName: java.lang.String = null, upperBound: java.lang.String = null): ReferenceBound = {
+    val __obj = js.Dynamic.literal()
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
+    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound)
+    __obj.asInstanceOf[ReferenceBound]
+  }
+}
+

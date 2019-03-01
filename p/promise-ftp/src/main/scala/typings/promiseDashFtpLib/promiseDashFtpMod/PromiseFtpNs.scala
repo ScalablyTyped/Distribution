@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object PromiseFtpNs extends js.Object {
   trait ERROR_CODES extends js.Object {
     var `421`: promiseDashFtpLib.promiseDashFtpLibStrings.`Service not available, closing control connection`
-    var `425`: promiseDashFtpLib.promiseDashFtpLibStrings.`Can't open data connection`
+    var `425`: promiseDashFtpLib.promiseDashFtpLibStrings.`Can_quotet open data connection`
     var `426`: promiseDashFtpLib.promiseDashFtpLibStrings.`Connection closed, transfer aborted`
     var `450`: promiseDashFtpLib.promiseDashFtpLibStrings.`Requested file action not taken / File unavailable (eDOTgDOT, file busy)`
     var `451`: promiseDashFtpLib.promiseDashFtpLibStrings.`Requested action aborted: local error in processing`

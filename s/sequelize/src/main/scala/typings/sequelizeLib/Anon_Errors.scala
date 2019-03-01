@@ -11,3 +11,14 @@ trait Anon_Errors extends js.Object {
   var parent: js.UndefOr[nodeLib.Error] = js.undefined
 }
 
+object Anon_Errors {
+  @scala.inline
+  def apply(errors: js.Object = null, message: java.lang.String = null, parent: nodeLib.Error = null): Anon_Errors = {
+    val __obj = js.Dynamic.literal()
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[Anon_Errors]
+  }
+}
+

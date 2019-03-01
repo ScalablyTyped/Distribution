@@ -16,3 +16,13 @@ trait CheckInfo extends js.Object {
   var unusedArguments: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CheckInfo {
+  @scala.inline
+  def apply(consumerInfo: ConsumerInfo = null, unusedArguments: js.Array[java.lang.String] = null): CheckInfo = {
+    val __obj = js.Dynamic.literal()
+    if (consumerInfo != null) __obj.updateDynamic("consumerInfo")(consumerInfo)
+    if (unusedArguments != null) __obj.updateDynamic("unusedArguments")(unusedArguments)
+    __obj.asInstanceOf[CheckInfo]
+  }
+}
+

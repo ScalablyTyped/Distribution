@@ -14,3 +14,24 @@ trait Anon_DataHeaders extends js.Object {
   var url: java.lang.String | js.Promise[java.lang.String]
 }
 
+object Anon_DataHeaders {
+  @scala.inline
+  def apply(
+    url: java.lang.String | js.Promise[java.lang.String],
+    data: java.lang.String = null,
+    headers: js.Any = null,
+    method: java.lang.String = null,
+    overrideMimeType: java.lang.String = null,
+    responseType: java.lang.String = null
+  ): Anon_DataHeaders = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    __obj.asInstanceOf[Anon_DataHeaders]
+  }
+}
+

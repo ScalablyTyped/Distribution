@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Roles/organizations the practitioner is associated with
   */
-trait PractitionerRole extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait PractitionerRole extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */
@@ -73,5 +74,72 @@ trait PractitionerRole extends DomainResource {
     * Contact details that are specific to the role/location/service
     */
   var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
+}
+
+object PractitionerRole {
+  @scala.inline
+  def apply(
+    _active: Element = null,
+    _availabilityExceptions: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _resourceType: Element = null,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    availabilityExceptions: java.lang.String = null,
+    availableTime: js.Array[PractitionerRoleAvailableTime] = null,
+    code: js.Array[CodeableConcept] = null,
+    contained: js.Array[Resource] = null,
+    endpoint: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    healthcareService: js.Array[Reference] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    location: js.Array[Reference] = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    notAvailable: js.Array[PractitionerRoleNotAvailable] = null,
+    organization: Reference = null,
+    period: Period = null,
+    practitioner: Reference = null,
+    resourceType: code = null,
+    specialty: js.Array[CodeableConcept] = null,
+    telecom: js.Array[ContactPoint] = null,
+    text: Narrative = null
+  ): PractitionerRole = {
+    val __obj = js.Dynamic.literal()
+    if (_active != null) __obj.updateDynamic("_active")(_active)
+    if (_availabilityExceptions != null) __obj.updateDynamic("_availabilityExceptions")(_availabilityExceptions)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (availabilityExceptions != null) __obj.updateDynamic("availabilityExceptions")(availabilityExceptions)
+    if (availableTime != null) __obj.updateDynamic("availableTime")(availableTime)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (healthcareService != null) __obj.updateDynamic("healthcareService")(healthcareService)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (notAvailable != null) __obj.updateDynamic("notAvailable")(notAvailable)
+    if (organization != null) __obj.updateDynamic("organization")(organization)
+    if (period != null) __obj.updateDynamic("period")(period)
+    if (practitioner != null) __obj.updateDynamic("practitioner")(practitioner)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (specialty != null) __obj.updateDynamic("specialty")(specialty)
+    if (telecom != null) __obj.updateDynamic("telecom")(telecom)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[PractitionerRole]
+  }
 }
 

@@ -12,3 +12,12 @@ trait DidChangeWatchedFilesParams extends js.Object {
   var changes: js.Array[FileEvent]
 }
 
+object DidChangeWatchedFilesParams {
+  @scala.inline
+  def apply(changes: js.Array[FileEvent]): DidChangeWatchedFilesParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changes")(changes)
+    __obj.asInstanceOf[DidChangeWatchedFilesParams]
+  }
+}
+

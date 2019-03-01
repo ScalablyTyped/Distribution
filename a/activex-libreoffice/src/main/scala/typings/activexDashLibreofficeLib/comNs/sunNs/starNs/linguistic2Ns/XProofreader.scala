@@ -46,3 +46,46 @@ trait XProofreader extends XSupportedLocales {
   def resetIgnoreRules(): scala.Unit
 }
 
+object XProofreader {
+  @scala.inline
+  def apply(
+    Locales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    acquire: js.Function0[scala.Unit],
+    doProofreading: js.Function6[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      ProofreadingResult
+    ],
+    getLocales: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    hasLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean],
+    ignoreRule: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Unit
+    ],
+    isSpellChecker: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    resetIgnoreRules: js.Function0[scala.Unit]
+  ): XProofreader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Locales")(Locales)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("doProofreading")(doProofreading)
+    __obj.updateDynamic("getLocales")(getLocales)
+    __obj.updateDynamic("hasLocale")(hasLocale)
+    __obj.updateDynamic("ignoreRule")(ignoreRule)
+    __obj.updateDynamic("isSpellChecker")(isSpellChecker)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("resetIgnoreRules")(resetIgnoreRules)
+    __obj.asInstanceOf[XProofreader]
+  }
+}
+

@@ -11,3 +11,20 @@ trait UUID extends js.Object {
   def toBuffer(): nodeLib.Buffer
 }
 
+object UUID {
+  @scala.inline
+  def apply(
+    toBuffer: js.Function0[nodeLib.Buffer],
+    toString: js.Function0[java.lang.String],
+    variant: java.lang.String,
+    version: java.lang.String
+  ): UUID = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toBuffer")(toBuffer)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("variant")(variant)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[UUID]
+  }
+}
+

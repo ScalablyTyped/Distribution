@@ -16,3 +16,13 @@ trait Anon_Header extends js.Object {
   var urls: js.Array[Anon_Details]
 }
 
+object Anon_Header {
+  @scala.inline
+  def apply(header: Anon_Args, urls: js.Array[Anon_Details]): Anon_Header = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("header")(header)
+    __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[Anon_Header]
+  }
+}
+

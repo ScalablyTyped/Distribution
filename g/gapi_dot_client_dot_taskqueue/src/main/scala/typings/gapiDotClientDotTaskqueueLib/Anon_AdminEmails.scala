@@ -14,3 +14,18 @@ trait Anon_AdminEmails extends js.Object {
   var producerEmails: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_AdminEmails {
+  @scala.inline
+  def apply(
+    adminEmails: js.Array[java.lang.String] = null,
+    consumerEmails: js.Array[java.lang.String] = null,
+    producerEmails: js.Array[java.lang.String] = null
+  ): Anon_AdminEmails = {
+    val __obj = js.Dynamic.literal()
+    if (adminEmails != null) __obj.updateDynamic("adminEmails")(adminEmails)
+    if (consumerEmails != null) __obj.updateDynamic("consumerEmails")(consumerEmails)
+    if (producerEmails != null) __obj.updateDynamic("producerEmails")(producerEmails)
+    __obj.asInstanceOf[Anon_AdminEmails]
+  }
+}
+

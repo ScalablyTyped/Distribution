@@ -14,3 +14,18 @@ trait Quota extends js.Object {
   var usage: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Quota {
+  @scala.inline
+  def apply(
+    limit: scala.Int | scala.Double = null,
+    metric: java.lang.String = null,
+    usage: scala.Int | scala.Double = null
+  ): Quota = {
+    val __obj = js.Dynamic.literal()
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Quota]
+  }
+}
+

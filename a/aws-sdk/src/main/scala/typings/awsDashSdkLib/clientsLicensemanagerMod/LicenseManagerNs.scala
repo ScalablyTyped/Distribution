@@ -963,6 +963,16 @@ object LicenseManagerNs extends js.Object {
   
   trait UpdateServiceSettingsResponse extends js.Object
   
+  trait _InventoryFilterCondition extends js.Object
+  
+  trait _LicenseConfigurationStatus extends js.Object
+  
+  trait _LicenseCountingType extends js.Object
+  
+  trait _ResourceType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Boolean = scala.Boolean
   type BoxBoolean = scala.Boolean
@@ -975,21 +985,21 @@ object LicenseManagerNs extends js.Object {
   type FilterValue = java.lang.String
   type FilterValues = js.Array[FilterValue]
   type Filters = js.Array[Filter]
-  type InventoryFilterCondition = awsDashSdkLib.awsDashSdkLibStrings.EQUALS | awsDashSdkLib.awsDashSdkLibStrings.NOT_EQUALS | awsDashSdkLib.awsDashSdkLibStrings.BEGINS_WITH | awsDashSdkLib.awsDashSdkLibStrings.CONTAINS | java.lang.String
+  type InventoryFilterCondition = _InventoryFilterCondition | java.lang.String
   type InventoryFilterList = js.Array[InventoryFilter]
   type LicenseConfigurationAssociations = js.Array[LicenseConfigurationAssociation]
-  type LicenseConfigurationStatus = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type LicenseConfigurationStatus = _LicenseConfigurationStatus | java.lang.String
   type LicenseConfigurationUsageList = js.Array[LicenseConfigurationUsage]
   type LicenseConfigurations = js.Array[LicenseConfiguration]
-  type LicenseCountingType = awsDashSdkLib.awsDashSdkLibStrings.vCPU | awsDashSdkLib.awsDashSdkLibStrings.Instance | awsDashSdkLib.awsDashSdkLibStrings.Core | awsDashSdkLib.awsDashSdkLibStrings.Socket | java.lang.String
+  type LicenseCountingType = _LicenseCountingType | java.lang.String
   type LicenseSpecifications = js.Array[LicenseSpecification]
   type ManagedResourceSummaryList = js.Array[ManagedResourceSummary]
   type ResourceInventoryList = js.Array[ResourceInventory]
-  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.EC2_INSTANCE | awsDashSdkLib.awsDashSdkLibStrings.EC2_HOST | awsDashSdkLib.awsDashSdkLibStrings.EC2_AMI | java.lang.String
+  type ResourceType = _ResourceType | java.lang.String
   type String = java.lang.String
   type StringList = js.Array[String]
   type TagKeyList = js.Array[String]
   type TagList = js.Array[Tag]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-08-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

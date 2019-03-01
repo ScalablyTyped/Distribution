@@ -23,3 +23,42 @@ trait ApplicationOptions extends js.Object {
   var useNativeScrolling: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ApplicationOptions {
+  @scala.inline
+  def apply(
+    browserHistory: js.UndefOr[scala.Boolean] = js.undefined,
+    hideAddressBar: js.UndefOr[scala.Boolean] = js.undefined,
+    init: js.Function1[/* e */ ApplicationEvent, scala.Unit] = null,
+    initial: java.lang.String = null,
+    layout: java.lang.String = null,
+    loading: java.lang.String = null,
+    modelScope: js.Object = null,
+    platform: java.lang.String = null,
+    retina: js.UndefOr[scala.Boolean] = js.undefined,
+    serverNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    skin: java.lang.String = null,
+    statusBarStyle: java.lang.String = null,
+    transition: java.lang.String = null,
+    updateDocumentTitle: js.UndefOr[scala.Boolean] = js.undefined,
+    useNativeScrolling: js.UndefOr[scala.Boolean] = js.undefined
+  ): ApplicationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(browserHistory)) __obj.updateDynamic("browserHistory")(browserHistory)
+    if (!js.isUndefined(hideAddressBar)) __obj.updateDynamic("hideAddressBar")(hideAddressBar)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (initial != null) __obj.updateDynamic("initial")(initial)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (loading != null) __obj.updateDynamic("loading")(loading)
+    if (modelScope != null) __obj.updateDynamic("modelScope")(modelScope)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (!js.isUndefined(retina)) __obj.updateDynamic("retina")(retina)
+    if (!js.isUndefined(serverNavigation)) __obj.updateDynamic("serverNavigation")(serverNavigation)
+    if (skin != null) __obj.updateDynamic("skin")(skin)
+    if (statusBarStyle != null) __obj.updateDynamic("statusBarStyle")(statusBarStyle)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (!js.isUndefined(updateDocumentTitle)) __obj.updateDynamic("updateDocumentTitle")(updateDocumentTitle)
+    if (!js.isUndefined(useNativeScrolling)) __obj.updateDynamic("useNativeScrolling")(useNativeScrolling)
+    __obj.asInstanceOf[ApplicationOptions]
+  }
+}
+

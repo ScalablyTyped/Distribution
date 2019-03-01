@@ -18,3 +18,13 @@ trait Options extends js.Object {
   var keepBcc: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(error: js.Any = null, keepBcc: js.UndefOr[scala.Boolean] = js.undefined): Options = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(keepBcc)) __obj.updateDynamic("keepBcc")(keepBcc)
+    __obj.asInstanceOf[Options]
+  }
+}
+

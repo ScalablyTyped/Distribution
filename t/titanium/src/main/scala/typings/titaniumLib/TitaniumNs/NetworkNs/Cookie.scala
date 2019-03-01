@@ -144,3 +144,102 @@ trait Cookie
   def setVersion(version: scala.Double): scala.Unit
 }
 
+object Cookie {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    comment: java.lang.String,
+    domain: java.lang.String,
+    expiryDate: java.lang.String,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getComment: js.Function0[java.lang.String],
+    getDomain: js.Function0[java.lang.String],
+    getExpiryDate: js.Function0[java.lang.String],
+    getHttponly: js.Function0[scala.Boolean],
+    getMaxAge: js.Function0[scala.Double],
+    getName: js.Function0[java.lang.String],
+    getOriginalUrl: js.Function0[java.lang.String],
+    getPath: js.Function0[java.lang.String],
+    getSecure: js.Function0[scala.Boolean],
+    getValue: js.Function0[java.lang.String],
+    getVersion: js.Function0[scala.Double],
+    httponly: scala.Boolean,
+    isValid: js.Function0[scala.Boolean],
+    maxAge: scala.Double,
+    name: java.lang.String,
+    originalUrl: java.lang.String,
+    path: java.lang.String,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    secure: scala.Boolean,
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setComment: js.Function1[java.lang.String, scala.Unit],
+    setDomain: js.Function1[java.lang.String, scala.Unit],
+    setExpiryDate: js.Function1[java.lang.String, scala.Unit],
+    setHttponly: js.Function1[scala.Boolean, scala.Unit],
+    setMaxAge: js.Function1[scala.Double, scala.Unit],
+    setOriginalUrl: js.Function1[java.lang.String, scala.Unit],
+    setPath: js.Function1[java.lang.String, scala.Unit],
+    setSecure: js.Function1[scala.Boolean, scala.Unit],
+    setValue: js.Function1[java.lang.String, scala.Unit],
+    setVersion: js.Function1[scala.Double, scala.Unit],
+    value: java.lang.String,
+    version: scala.Double,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): Cookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("expiryDate")(expiryDate)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getComment")(getComment)
+    __obj.updateDynamic("getDomain")(getDomain)
+    __obj.updateDynamic("getExpiryDate")(getExpiryDate)
+    __obj.updateDynamic("getHttponly")(getHttponly)
+    __obj.updateDynamic("getMaxAge")(getMaxAge)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getOriginalUrl")(getOriginalUrl)
+    __obj.updateDynamic("getPath")(getPath)
+    __obj.updateDynamic("getSecure")(getSecure)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("getVersion")(getVersion)
+    __obj.updateDynamic("httponly")(httponly)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("maxAge")(maxAge)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("originalUrl")(originalUrl)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("secure")(secure)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("setComment")(setComment)
+    __obj.updateDynamic("setDomain")(setDomain)
+    __obj.updateDynamic("setExpiryDate")(setExpiryDate)
+    __obj.updateDynamic("setHttponly")(setHttponly)
+    __obj.updateDynamic("setMaxAge")(setMaxAge)
+    __obj.updateDynamic("setOriginalUrl")(setOriginalUrl)
+    __obj.updateDynamic("setPath")(setPath)
+    __obj.updateDynamic("setSecure")(setSecure)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.updateDynamic("setVersion")(setVersion)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("version")(version)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[Cookie]
+  }
+}
+

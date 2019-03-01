@@ -11,3 +11,18 @@ trait StackTraceOptions extends js.Object {
   var sourceCache: js.UndefOr[SourceCache] = js.undefined
 }
 
+object StackTraceOptions {
+  @scala.inline
+  def apply(
+    filter: js.Function1[/* stackFrame */ StackFrame, scala.Boolean] = null,
+    offline: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceCache: SourceCache = null
+  ): StackTraceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline)
+    if (sourceCache != null) __obj.updateDynamic("sourceCache")(sourceCache)
+    __obj.asInstanceOf[StackTraceOptions]
+  }
+}
+

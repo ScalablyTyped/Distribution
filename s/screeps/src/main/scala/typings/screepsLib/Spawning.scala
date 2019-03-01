@@ -39,3 +39,29 @@ trait Spawning extends js.Object {
   def setDirections(directions: js.Array[DirectionConstant]): ScreepsReturnCode with (OK | ERR_NOT_OWNER | ERR_INVALID_ARGS)
 }
 
+object Spawning {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[ScreepsReturnCode with (OK | ERR_NOT_OWNER)],
+    directions: js.Array[DirectionConstant],
+    name: java.lang.String,
+    needTime: scala.Double,
+    remainingTime: scala.Double,
+    setDirections: js.Function1[
+      js.Array[DirectionConstant], 
+      ScreepsReturnCode with (OK | ERR_NOT_OWNER | ERR_INVALID_ARGS)
+    ],
+    spawn: StructureSpawn
+  ): Spawning = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("directions")(directions)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("needTime")(needTime)
+    __obj.updateDynamic("remainingTime")(remainingTime)
+    __obj.updateDynamic("setDirections")(setDirections)
+    __obj.updateDynamic("spawn")(spawn)
+    __obj.asInstanceOf[Spawning]
+  }
+}
+

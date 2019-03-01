@@ -43,3 +43,30 @@ trait ITreeProps[T]
   var onNodeMouseLeave: js.UndefOr[TreeEventHandler[T]] = js.undefined
 }
 
+object ITreeProps {
+  @scala.inline
+  def apply[T](
+    contents: js.Array[atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNode[T]],
+    className: java.lang.String = null,
+    onNodeClick: TreeEventHandler[T] = null,
+    onNodeCollapse: TreeEventHandler[T] = null,
+    onNodeContextMenu: TreeEventHandler[T] = null,
+    onNodeDoubleClick: TreeEventHandler[T] = null,
+    onNodeExpand: TreeEventHandler[T] = null,
+    onNodeMouseEnter: TreeEventHandler[T] = null,
+    onNodeMouseLeave: TreeEventHandler[T] = null
+  ): ITreeProps[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contents")(contents)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (onNodeClick != null) __obj.updateDynamic("onNodeClick")(onNodeClick)
+    if (onNodeCollapse != null) __obj.updateDynamic("onNodeCollapse")(onNodeCollapse)
+    if (onNodeContextMenu != null) __obj.updateDynamic("onNodeContextMenu")(onNodeContextMenu)
+    if (onNodeDoubleClick != null) __obj.updateDynamic("onNodeDoubleClick")(onNodeDoubleClick)
+    if (onNodeExpand != null) __obj.updateDynamic("onNodeExpand")(onNodeExpand)
+    if (onNodeMouseEnter != null) __obj.updateDynamic("onNodeMouseEnter")(onNodeMouseEnter)
+    if (onNodeMouseLeave != null) __obj.updateDynamic("onNodeMouseLeave")(onNodeMouseLeave)
+    __obj.asInstanceOf[ITreeProps[T]]
+  }
+}
+

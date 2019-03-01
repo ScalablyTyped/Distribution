@@ -123,3 +123,186 @@ import scala.scalajs.js.annotation._
   var VertJustify: scala.Double
 }
 
+object Cell {
+  @scala.inline
+  def apply(
+    AsianVerticalMode: scala.Boolean,
+    BackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BackGraphicFilter: java.lang.String,
+    BackGraphicLocation: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.GraphicLocation,
+    BackGraphicURL: java.lang.String,
+    BackTransparent: scala.Boolean,
+    BottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    BottomBorder2: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    BottomBorderDistance: scala.Double,
+    CellBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CellInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    CellName: java.lang.String,
+    CellProtection: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.CellProtection,
+    CellStyle: java.lang.String,
+    DiagonalBLTR: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    DiagonalBLTR2: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    DiagonalTLBR: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    DiagonalTLBR2: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    End: XTextRange,
+    Error: scala.Double,
+    Formula: java.lang.String,
+    HoriJustify: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellHoriJustify,
+    IsCellBackgroundTransparent: scala.Boolean,
+    IsProtected: scala.Boolean,
+    IsTextWrapped: scala.Boolean,
+    LeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    LeftBorder2: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    LeftBorderDistance: scala.Double,
+    NumberFormat: scala.Double,
+    Orientation: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellOrientation,
+    ParaIndent: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    RightBorder2: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    RightBorderDistance: scala.Double,
+    RotateAngle: scala.Double,
+    RotateReference: scala.Double,
+    ShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    ShrinkToFit: scala.Boolean,
+    Start: XTextRange,
+    String: java.lang.String,
+    TableBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableBorder,
+    TableBorder2: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableBorder2,
+    TextSection: XTextSection,
+    TopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    TopBorder2: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    TopBorderDistance: scala.Double,
+    Type: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellContentType,
+    UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    Value: scala.Double,
+    VertJustify: scala.Double,
+    VertOrient: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    createTextCursor: js.Function0[XTextCursor],
+    createTextCursorByRange: js.Function1[XTextRange, XTextCursor],
+    getEnd: js.Function0[XTextRange],
+    getError: js.Function0[scala.Double],
+    getFormula: js.Function0[java.lang.String],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    getType: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellContentType],
+    getValue: js.Function0[scala.Double],
+    insertControlCharacter: js.Function3[XTextRange, scala.Double, scala.Boolean, scala.Unit],
+    insertString: js.Function3[XTextRange, java.lang.String, scala.Boolean, scala.Unit],
+    insertTextContent: js.Function3[XTextRange, XTextContent, scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeTextContent: js.Function1[XTextContent, scala.Unit],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setFormula: js.Function1[java.lang.String, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit],
+    setValue: js.Function1[scala.Double, scala.Unit]
+  ): Cell = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AsianVerticalMode")(AsianVerticalMode)
+    __obj.updateDynamic("BackColor")(BackColor)
+    __obj.updateDynamic("BackGraphicFilter")(BackGraphicFilter)
+    __obj.updateDynamic("BackGraphicLocation")(BackGraphicLocation)
+    __obj.updateDynamic("BackGraphicURL")(BackGraphicURL)
+    __obj.updateDynamic("BackTransparent")(BackTransparent)
+    __obj.updateDynamic("BottomBorder")(BottomBorder)
+    __obj.updateDynamic("BottomBorder2")(BottomBorder2)
+    __obj.updateDynamic("BottomBorderDistance")(BottomBorderDistance)
+    __obj.updateDynamic("CellBackColor")(CellBackColor)
+    __obj.updateDynamic("CellInteropGrabBag")(CellInteropGrabBag)
+    __obj.updateDynamic("CellName")(CellName)
+    __obj.updateDynamic("CellProtection")(CellProtection)
+    __obj.updateDynamic("CellStyle")(CellStyle)
+    __obj.updateDynamic("DiagonalBLTR")(DiagonalBLTR)
+    __obj.updateDynamic("DiagonalBLTR2")(DiagonalBLTR2)
+    __obj.updateDynamic("DiagonalTLBR")(DiagonalTLBR)
+    __obj.updateDynamic("DiagonalTLBR2")(DiagonalTLBR2)
+    __obj.updateDynamic("End")(End)
+    __obj.updateDynamic("Error")(Error)
+    __obj.updateDynamic("Formula")(Formula)
+    __obj.updateDynamic("HoriJustify")(HoriJustify)
+    __obj.updateDynamic("IsCellBackgroundTransparent")(IsCellBackgroundTransparent)
+    __obj.updateDynamic("IsProtected")(IsProtected)
+    __obj.updateDynamic("IsTextWrapped")(IsTextWrapped)
+    __obj.updateDynamic("LeftBorder")(LeftBorder)
+    __obj.updateDynamic("LeftBorder2")(LeftBorder2)
+    __obj.updateDynamic("LeftBorderDistance")(LeftBorderDistance)
+    __obj.updateDynamic("NumberFormat")(NumberFormat)
+    __obj.updateDynamic("Orientation")(Orientation)
+    __obj.updateDynamic("ParaIndent")(ParaIndent)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RightBorder")(RightBorder)
+    __obj.updateDynamic("RightBorder2")(RightBorder2)
+    __obj.updateDynamic("RightBorderDistance")(RightBorderDistance)
+    __obj.updateDynamic("RotateAngle")(RotateAngle)
+    __obj.updateDynamic("RotateReference")(RotateReference)
+    __obj.updateDynamic("ShadowFormat")(ShadowFormat)
+    __obj.updateDynamic("ShrinkToFit")(ShrinkToFit)
+    __obj.updateDynamic("Start")(Start)
+    __obj.updateDynamic("String")(String)
+    __obj.updateDynamic("TableBorder")(TableBorder)
+    __obj.updateDynamic("TableBorder2")(TableBorder2)
+    __obj.updateDynamic("TextSection")(TextSection)
+    __obj.updateDynamic("TopBorder")(TopBorder)
+    __obj.updateDynamic("TopBorder2")(TopBorder2)
+    __obj.updateDynamic("TopBorderDistance")(TopBorderDistance)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("UserDefinedAttributes")(UserDefinedAttributes)
+    __obj.updateDynamic("Value")(Value)
+    __obj.updateDynamic("VertJustify")(VertJustify)
+    __obj.updateDynamic("VertOrient")(VertOrient)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("createTextCursor")(createTextCursor)
+    __obj.updateDynamic("createTextCursorByRange")(createTextCursorByRange)
+    __obj.updateDynamic("getEnd")(getEnd)
+    __obj.updateDynamic("getError")(getError)
+    __obj.updateDynamic("getFormula")(getFormula)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getStart")(getStart)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("insertControlCharacter")(insertControlCharacter)
+    __obj.updateDynamic("insertString")(insertString)
+    __obj.updateDynamic("insertTextContent")(insertTextContent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeTextContent")(removeTextContent)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setFormula")(setFormula)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setString")(setString)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.asInstanceOf[Cell]
+  }
+}
+

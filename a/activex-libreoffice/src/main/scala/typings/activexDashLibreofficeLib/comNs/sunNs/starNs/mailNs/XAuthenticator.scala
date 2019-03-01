@@ -34,3 +34,26 @@ trait XAuthenticator
   def getUserName(): java.lang.String
 }
 
+object XAuthenticator {
+  @scala.inline
+  def apply(
+    Password: java.lang.String,
+    UserName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getPassword: js.Function0[java.lang.String],
+    getUserName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAuthenticator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Password")(Password)
+    __obj.updateDynamic("UserName")(UserName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getPassword")(getPassword)
+    __obj.updateDynamic("getUserName")(getUserName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAuthenticator]
+  }
+}
+

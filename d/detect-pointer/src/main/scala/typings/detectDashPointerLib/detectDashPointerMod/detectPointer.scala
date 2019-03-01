@@ -15,3 +15,26 @@ trait detectPointer extends js.Object {
   def update(): scala.Unit
 }
 
+object detectPointer {
+  @scala.inline
+  def apply(
+    anyCoarse: scala.Boolean,
+    anyFine: scala.Boolean,
+    anyNone: scala.Boolean,
+    coarse: scala.Boolean,
+    fine: scala.Boolean,
+    none: scala.Boolean,
+    update: js.Function0[scala.Unit]
+  ): detectPointer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("anyCoarse")(anyCoarse)
+    __obj.updateDynamic("anyFine")(anyFine)
+    __obj.updateDynamic("anyNone")(anyNone)
+    __obj.updateDynamic("coarse")(coarse)
+    __obj.updateDynamic("fine")(fine)
+    __obj.updateDynamic("none")(none)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[detectPointer]
+  }
+}
+

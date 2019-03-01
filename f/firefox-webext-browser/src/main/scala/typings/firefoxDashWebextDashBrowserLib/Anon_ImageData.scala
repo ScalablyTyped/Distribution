@@ -19,3 +19,18 @@ trait Anon_ImageData extends js.Object {
   ): js.Promise[scala.Unit]
 }
 
+object Anon_ImageData {
+  @scala.inline
+  def apply(
+    setImageData: js.Function2[
+      firefoxDashWebextDashBrowserLib.browserNs.clipboardNs.ArrayBuffer, 
+      firefoxDashWebextDashBrowserLib.browserNs.clipboardNs._SetImageData, 
+      js.Promise[scala.Unit]
+    ]
+  ): Anon_ImageData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setImageData")(setImageData)
+    __obj.asInstanceOf[Anon_ImageData]
+  }
+}
+

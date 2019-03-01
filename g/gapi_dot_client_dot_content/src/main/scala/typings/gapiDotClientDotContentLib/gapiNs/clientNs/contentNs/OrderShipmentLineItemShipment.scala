@@ -12,3 +12,13 @@ trait OrderShipmentLineItemShipment extends js.Object {
   var quantity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object OrderShipmentLineItemShipment {
+  @scala.inline
+  def apply(lineItemId: java.lang.String = null, quantity: scala.Int | scala.Double = null): OrderShipmentLineItemShipment = {
+    val __obj = js.Dynamic.literal()
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OrderShipmentLineItemShipment]
+  }
+}
+

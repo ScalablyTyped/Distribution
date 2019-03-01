@@ -27,3 +27,22 @@ trait ThreatEntrySet extends js.Object {
   var riceIndices: js.UndefOr[RiceDeltaEncoding] = js.undefined
 }
 
+object ThreatEntrySet {
+  @scala.inline
+  def apply(
+    compressionType: java.lang.String = null,
+    rawHashes: RawHashes = null,
+    rawIndices: RawIndices = null,
+    riceHashes: RiceDeltaEncoding = null,
+    riceIndices: RiceDeltaEncoding = null
+  ): ThreatEntrySet = {
+    val __obj = js.Dynamic.literal()
+    if (compressionType != null) __obj.updateDynamic("compressionType")(compressionType)
+    if (rawHashes != null) __obj.updateDynamic("rawHashes")(rawHashes)
+    if (rawIndices != null) __obj.updateDynamic("rawIndices")(rawIndices)
+    if (riceHashes != null) __obj.updateDynamic("riceHashes")(riceHashes)
+    if (riceIndices != null) __obj.updateDynamic("riceIndices")(riceIndices)
+    __obj.asInstanceOf[ThreatEntrySet]
+  }
+}
+

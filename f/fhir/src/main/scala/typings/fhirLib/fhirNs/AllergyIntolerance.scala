@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Allergy or Intolerance (generally: Risk of adverse reaction to a substance)
   */
-trait AllergyIntolerance extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait AllergyIntolerance extends DomainResource {
   /**
     * Contains extended information for property 'assertedDate'.
     */
@@ -121,5 +122,96 @@ trait AllergyIntolerance extends DomainResource {
     * unconfirmed | confirmed | refuted | entered-in-error
     */
   var verificationStatus: code
+}
+
+object AllergyIntolerance {
+  @scala.inline
+  def apply(
+    patient: Reference,
+    verificationStatus: code,
+    _assertedDate: Element = null,
+    _category: js.Array[Element] = null,
+    _clinicalStatus: Element = null,
+    _criticality: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _lastOccurrence: Element = null,
+    _onsetDateTime: Element = null,
+    _onsetString: Element = null,
+    _resourceType: Element = null,
+    _type: Element = null,
+    _verificationStatus: Element = null,
+    assertedDate: dateTime = null,
+    asserter: Reference = null,
+    category: js.Array[code] = null,
+    clinicalStatus: code = null,
+    code: CodeableConcept = null,
+    contained: js.Array[Resource] = null,
+    criticality: code = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    lastOccurrence: dateTime = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    note: js.Array[Annotation] = null,
+    onsetAge: Age = null,
+    onsetDateTime: dateTime = null,
+    onsetPeriod: Period = null,
+    onsetRange: Range = null,
+    onsetString: java.lang.String = null,
+    reaction: js.Array[AllergyIntoleranceReaction] = null,
+    recorder: Reference = null,
+    resourceType: code = null,
+    text: Narrative = null,
+    `type`: code = null
+  ): AllergyIntolerance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("patient")(patient)
+    __obj.updateDynamic("verificationStatus")(verificationStatus)
+    if (_assertedDate != null) __obj.updateDynamic("_assertedDate")(_assertedDate)
+    if (_category != null) __obj.updateDynamic("_category")(_category)
+    if (_clinicalStatus != null) __obj.updateDynamic("_clinicalStatus")(_clinicalStatus)
+    if (_criticality != null) __obj.updateDynamic("_criticality")(_criticality)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_lastOccurrence != null) __obj.updateDynamic("_lastOccurrence")(_lastOccurrence)
+    if (_onsetDateTime != null) __obj.updateDynamic("_onsetDateTime")(_onsetDateTime)
+    if (_onsetString != null) __obj.updateDynamic("_onsetString")(_onsetString)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (_verificationStatus != null) __obj.updateDynamic("_verificationStatus")(_verificationStatus)
+    if (assertedDate != null) __obj.updateDynamic("assertedDate")(assertedDate)
+    if (asserter != null) __obj.updateDynamic("asserter")(asserter)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (clinicalStatus != null) __obj.updateDynamic("clinicalStatus")(clinicalStatus)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (criticality != null) __obj.updateDynamic("criticality")(criticality)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (lastOccurrence != null) __obj.updateDynamic("lastOccurrence")(lastOccurrence)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (onsetAge != null) __obj.updateDynamic("onsetAge")(onsetAge)
+    if (onsetDateTime != null) __obj.updateDynamic("onsetDateTime")(onsetDateTime)
+    if (onsetPeriod != null) __obj.updateDynamic("onsetPeriod")(onsetPeriod)
+    if (onsetRange != null) __obj.updateDynamic("onsetRange")(onsetRange)
+    if (onsetString != null) __obj.updateDynamic("onsetString")(onsetString)
+    if (reaction != null) __obj.updateDynamic("reaction")(reaction)
+    if (recorder != null) __obj.updateDynamic("recorder")(recorder)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AllergyIntolerance]
+  }
 }
 

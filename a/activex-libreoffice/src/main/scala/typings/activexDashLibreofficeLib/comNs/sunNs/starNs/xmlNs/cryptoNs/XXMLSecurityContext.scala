@@ -32,3 +32,36 @@ trait XXMLSecurityContext
   def setDefaultSecurityEnvironmentIndex(index: scala.Double): scala.Unit
 }
 
+object XXMLSecurityContext {
+  @scala.inline
+  def apply(
+    DefaultSecurityEnvironmentIndex: scala.Double,
+    SecurityEnvironment: XSecurityEnvironment,
+    SecurityEnvironmentNumber: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addSecurityEnvironment: js.Function1[XSecurityEnvironment, scala.Double],
+    getDefaultSecurityEnvironmentIndex: js.Function0[scala.Double],
+    getSecurityEnvironment: js.Function0[XSecurityEnvironment],
+    getSecurityEnvironmentByIndex: js.Function1[scala.Double, XSecurityEnvironment],
+    getSecurityEnvironmentNumber: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDefaultSecurityEnvironmentIndex: js.Function1[scala.Double, scala.Unit]
+  ): XXMLSecurityContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DefaultSecurityEnvironmentIndex")(DefaultSecurityEnvironmentIndex)
+    __obj.updateDynamic("SecurityEnvironment")(SecurityEnvironment)
+    __obj.updateDynamic("SecurityEnvironmentNumber")(SecurityEnvironmentNumber)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addSecurityEnvironment")(addSecurityEnvironment)
+    __obj.updateDynamic("getDefaultSecurityEnvironmentIndex")(getDefaultSecurityEnvironmentIndex)
+    __obj.updateDynamic("getSecurityEnvironment")(getSecurityEnvironment)
+    __obj.updateDynamic("getSecurityEnvironmentByIndex")(getSecurityEnvironmentByIndex)
+    __obj.updateDynamic("getSecurityEnvironmentNumber")(getSecurityEnvironmentNumber)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDefaultSecurityEnvironmentIndex")(setDefaultSecurityEnvironmentIndex)
+    __obj.asInstanceOf[XXMLSecurityContext]
+  }
+}
+

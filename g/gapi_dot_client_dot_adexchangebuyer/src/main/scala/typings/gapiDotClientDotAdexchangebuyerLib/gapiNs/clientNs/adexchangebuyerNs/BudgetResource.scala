@@ -17,3 +17,27 @@ trait BudgetResource extends js.Object {
   def update(request: gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[Budget]
 }
 
+object BudgetResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Budget]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Budget]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Budget]
+    ]
+  ): BudgetResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[BudgetResource]
+  }
+}
+

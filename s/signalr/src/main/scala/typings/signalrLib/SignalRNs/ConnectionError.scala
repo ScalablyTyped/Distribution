@@ -12,3 +12,24 @@ trait ConnectionError
   var transport: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConnectionError {
+  @scala.inline
+  def apply(
+    context: ConnectionErrorContext,
+    message: java.lang.String,
+    name: java.lang.String,
+    source: java.lang.String = null,
+    stack: java.lang.String = null,
+    transport: java.lang.String = null
+  ): ConnectionError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    __obj.asInstanceOf[ConnectionError]
+  }
+}
+

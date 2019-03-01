@@ -11,3 +11,14 @@ trait SourceReferenceObject extends js.Object {
   var line: scala.Double
 }
 
+object SourceReferenceObject {
+  @scala.inline
+  def apply(character: scala.Double, fileName: java.lang.String, line: scala.Double): SourceReferenceObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("character")(character)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("line")(line)
+    __obj.asInstanceOf[SourceReferenceObject]
+  }
+}
+

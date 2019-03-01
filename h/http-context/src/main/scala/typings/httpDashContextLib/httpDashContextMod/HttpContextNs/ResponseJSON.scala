@@ -11,3 +11,14 @@ trait ResponseJSON extends js.Object {
   var status: scala.Double
 }
 
+object ResponseJSON {
+  @scala.inline
+  def apply(header: nodeLib.httpMod.OutgoingHttpHeaders, message: java.lang.String, status: scala.Double): ResponseJSON = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("header")(header)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[ResponseJSON]
+  }
+}
+

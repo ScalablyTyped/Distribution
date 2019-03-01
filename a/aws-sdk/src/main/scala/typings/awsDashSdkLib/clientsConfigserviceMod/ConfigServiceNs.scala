@@ -2901,6 +2901,36 @@ object ConfigServiceNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _AggregatedSourceStatusType extends js.Object
+  
+  trait _AggregatedSourceType extends js.Object
+  
+  trait _ChronologicalOrder extends js.Object
+  
+  trait _ComplianceType extends js.Object
+  
+  trait _ConfigRuleComplianceSummaryGroupKey extends js.Object
+  
+  trait _ConfigRuleState extends js.Object
+  
+  trait _ConfigurationItemStatus extends js.Object
+  
+  trait _DeliveryStatus extends js.Object
+  
+  trait _MaximumExecutionFrequency extends js.Object
+  
+  trait _MessageType extends js.Object
+  
+  trait _Owner extends js.Object
+  
+  trait _RecorderStatus extends js.Object
+  
+  trait _ResourceCountGroupKey extends js.Object
+  
+  trait _ResourceType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ARN = java.lang.String
   type AccountAggregationSourceAccountList = js.Array[AccountId]
@@ -2910,9 +2940,9 @@ object ConfigServiceNs extends js.Object {
   type AggregateComplianceCountList = js.Array[AggregateComplianceCount]
   type AggregateEvaluationResultList = js.Array[AggregateEvaluationResult]
   type AggregatedSourceStatusList = js.Array[AggregatedSourceStatus]
-  type AggregatedSourceStatusType = awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.OUTDATED | java.lang.String
+  type AggregatedSourceStatusType = _AggregatedSourceStatusType | java.lang.String
   type AggregatedSourceStatusTypeList = js.Array[AggregatedSourceStatusType]
-  type AggregatedSourceType = awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT | awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATION | java.lang.String
+  type AggregatedSourceType = _AggregatedSourceType | java.lang.String
   type AggregationAuthorizationList = js.Array[AggregationAuthorization]
   type AggregatorRegionList = js.Array[String]
   type AllSupported = scala.Boolean
@@ -2922,19 +2952,19 @@ object ConfigServiceNs extends js.Object {
   type BaseResourceId = java.lang.String
   type Boolean = scala.Boolean
   type ChannelName = java.lang.String
-  type ChronologicalOrder = awsDashSdkLib.awsDashSdkLibStrings.Reverse | awsDashSdkLib.awsDashSdkLibStrings.Forward | java.lang.String
+  type ChronologicalOrder = _ChronologicalOrder | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ComplianceByConfigRules = js.Array[ComplianceByConfigRule]
   type ComplianceByResources = js.Array[ComplianceByResource]
   type ComplianceResourceTypes = js.Array[StringWithCharLimit256]
   type ComplianceSummariesByResourceType = js.Array[ComplianceSummaryByResourceType]
-  type ComplianceType = awsDashSdkLib.awsDashSdkLibStrings.COMPLIANT | awsDashSdkLib.awsDashSdkLibStrings.NON_COMPLIANT | awsDashSdkLib.awsDashSdkLibStrings.NOT_APPLICABLE | awsDashSdkLib.awsDashSdkLibStrings.INSUFFICIENT_DATA | java.lang.String
+  type ComplianceType = _ComplianceType | java.lang.String
   type ComplianceTypes = js.Array[ComplianceType]
-  type ConfigRuleComplianceSummaryGroupKey = awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT_ID | awsDashSdkLib.awsDashSdkLibStrings.AWS_REGION | java.lang.String
+  type ConfigRuleComplianceSummaryGroupKey = _ConfigRuleComplianceSummaryGroupKey | java.lang.String
   type ConfigRuleEvaluationStatusList = js.Array[ConfigRuleEvaluationStatus]
   type ConfigRuleName = java.lang.String
   type ConfigRuleNames = js.Array[StringWithCharLimit64]
-  type ConfigRuleState = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETING_RESULTS | awsDashSdkLib.awsDashSdkLibStrings.EVALUATING | java.lang.String
+  type ConfigRuleState = _ConfigRuleState | java.lang.String
   type ConfigRules = js.Array[ConfigRule]
   type Configuration = java.lang.String
   type ConfigurationAggregatorArn = java.lang.String
@@ -2944,7 +2974,7 @@ object ConfigServiceNs extends js.Object {
   type ConfigurationItemCaptureTime = stdLib.Date
   type ConfigurationItemList = js.Array[ConfigurationItem]
   type ConfigurationItemMD5Hash = java.lang.String
-  type ConfigurationItemStatus = awsDashSdkLib.awsDashSdkLibStrings.OK | awsDashSdkLib.awsDashSdkLibStrings.ResourceDiscovered | awsDashSdkLib.awsDashSdkLibStrings.ResourceNotRecorded | awsDashSdkLib.awsDashSdkLibStrings.ResourceDeleted | awsDashSdkLib.awsDashSdkLibStrings.ResourceDeletedNotRecorded | java.lang.String
+  type ConfigurationItemStatus = _ConfigurationItemStatus | java.lang.String
   type ConfigurationRecorderList = js.Array[ConfigurationRecorder]
   type ConfigurationRecorderNameList = js.Array[RecorderName]
   type ConfigurationRecorderStatusList = js.Array[ConfigurationRecorderStatus]
@@ -2952,7 +2982,7 @@ object ConfigServiceNs extends js.Object {
   type DeliveryChannelList = js.Array[DeliveryChannel]
   type DeliveryChannelNameList = js.Array[ChannelName]
   type DeliveryChannelStatusList = js.Array[DeliveryChannelStatus]
-  type DeliveryStatus = awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.Failure | awsDashSdkLib.awsDashSdkLibStrings.Not_Applicable | java.lang.String
+  type DeliveryStatus = _DeliveryStatus | java.lang.String
   type DescribePendingAggregationRequestsLimit = scala.Double
   type DiscoveredResourceIdentifierList = js.Array[AggregateResourceIdentifier]
   type EarlierTime = stdLib.Date
@@ -2967,21 +2997,21 @@ object ConfigServiceNs extends js.Object {
   type LaterTime = stdLib.Date
   type Limit = scala.Double
   type Long = scala.Double
-  type MaximumExecutionFrequency = awsDashSdkLib.awsDashSdkLibStrings.One_Hour | awsDashSdkLib.awsDashSdkLibStrings.Three_Hours | awsDashSdkLib.awsDashSdkLibStrings.Six_Hours | awsDashSdkLib.awsDashSdkLibStrings.Twelve_Hours | awsDashSdkLib.awsDashSdkLibStrings.TwentyFour_Hours | java.lang.String
-  type MessageType = awsDashSdkLib.awsDashSdkLibStrings.ConfigurationItemChangeNotification | awsDashSdkLib.awsDashSdkLibStrings.ConfigurationSnapshotDeliveryCompleted | awsDashSdkLib.awsDashSdkLibStrings.ScheduledNotification | awsDashSdkLib.awsDashSdkLibStrings.OversizedConfigurationItemChangeNotification | java.lang.String
+  type MaximumExecutionFrequency = _MaximumExecutionFrequency | java.lang.String
+  type MessageType = _MessageType | java.lang.String
   type Name = java.lang.String
   type NextToken = java.lang.String
   type OrderingTimestamp = stdLib.Date
-  type Owner = awsDashSdkLib.awsDashSdkLibStrings.CUSTOM_LAMBDA | awsDashSdkLib.awsDashSdkLibStrings.AWS | java.lang.String
+  type Owner = _Owner | java.lang.String
   type PendingAggregationRequestList = js.Array[PendingAggregationRequest]
   type RecorderName = java.lang.String
-  type RecorderStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.Failure | java.lang.String
+  type RecorderStatus = _RecorderStatus | java.lang.String
   type ReevaluateConfigRuleNames = js.Array[StringWithCharLimit64]
   type RelatedEvent = java.lang.String
   type RelatedEventList = js.Array[RelatedEvent]
   type RelationshipList = js.Array[Relationship]
   type RelationshipName = java.lang.String
-  type ResourceCountGroupKey = awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT_ID | awsDashSdkLib.awsDashSdkLibStrings.AWS_REGION | java.lang.String
+  type ResourceCountGroupKey = _ResourceCountGroupKey | java.lang.String
   type ResourceCounts = js.Array[ResourceCount]
   type ResourceCreationTime = stdLib.Date
   type ResourceDeletionTime = stdLib.Date
@@ -2991,7 +3021,7 @@ object ConfigServiceNs extends js.Object {
   type ResourceIdentifiersList = js.Array[AggregateResourceIdentifier]
   type ResourceKeys = js.Array[ResourceKey]
   type ResourceName = java.lang.String
-  type ResourceType = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 65 */ js.Any
+  type ResourceType = _ResourceType | java.lang.String
   type ResourceTypeList = js.Array[ResourceType]
   type ResourceTypes = js.Array[StringWithCharLimit256]
   type RetentionConfigurationList = js.Array[RetentionConfiguration]
@@ -3011,6 +3041,6 @@ object ConfigServiceNs extends js.Object {
   type Value = java.lang.String
   type Version = java.lang.String
   type _Date = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2014-11-12` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

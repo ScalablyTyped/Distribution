@@ -23,3 +23,35 @@ trait Anon_ArgsBlock extends js.Object {
   var `type`: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
 }
 
+object Anon_ArgsBlock {
+  @scala.inline
+  def apply(
+    block: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    htmlType: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.button | antdLib.antdLibStrings.reset | antdLib.antdLibStrings.submit
+    ],
+    icon: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    loading: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean | js.Object],
+    onClick: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    shape: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.round | antdLib.antdLibStrings.circle | antdLib.antdLibStrings.`circle-outline`
+    ],
+    size: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
+    ],
+    `type`: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  ): Anon_ArgsBlock = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("block")(block)
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("htmlType")(htmlType)
+    __obj.updateDynamic("icon")(icon)
+    __obj.updateDynamic("loading")(loading)
+    __obj.updateDynamic("onClick")(onClick)
+    __obj.updateDynamic("shape")(shape)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Anon_ArgsBlock]
+  }
+}
+

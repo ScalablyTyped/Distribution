@@ -14,3 +14,18 @@ trait ECKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] extend
   var publicKeyEncoding: nodeLib.Anon_Format[PubF]
 }
 
+object ECKeyPairOptions {
+  @scala.inline
+  def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
+    namedCurve: java.lang.String,
+    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with nodeLib.Anon_Pkcs8Sec1,
+    publicKeyEncoding: nodeLib.Anon_Format[PubF]
+  ): ECKeyPairOptions[PubF, PrivF] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("namedCurve")(namedCurve)
+    __obj.updateDynamic("privateKeyEncoding")(privateKeyEncoding)
+    __obj.updateDynamic("publicKeyEncoding")(publicKeyEncoding)
+    __obj.asInstanceOf[ECKeyPairOptions[PubF, PrivF]]
+  }
+}
+

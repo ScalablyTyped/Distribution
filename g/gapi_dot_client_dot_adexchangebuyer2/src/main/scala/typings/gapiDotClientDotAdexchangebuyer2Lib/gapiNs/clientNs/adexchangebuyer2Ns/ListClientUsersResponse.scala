@@ -20,3 +20,13 @@ trait ListClientUsersResponse extends js.Object {
   var users: js.UndefOr[js.Array[ClientUser]] = js.undefined
 }
 
+object ListClientUsersResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, users: js.Array[ClientUser] = null): ListClientUsersResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (users != null) __obj.updateDynamic("users")(users)
+    __obj.asInstanceOf[ListClientUsersResponse]
+  }
+}
+

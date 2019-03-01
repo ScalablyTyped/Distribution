@@ -23,3 +23,13 @@ trait FunctionResultData[T] extends js.Object {
   var value: js.UndefOr[T] = js.undefined
 }
 
+object FunctionResultData {
+  @scala.inline
+  def apply[T](error: java.lang.String = null, value: T = null): FunctionResultData[T] = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FunctionResultData[T]]
+  }
+}
+

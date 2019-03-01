@@ -17,3 +17,30 @@ trait Task extends js.Object {
   var view: View
 }
 
+object Task {
+  @scala.inline
+  def apply(
+    appEngineHttpRequest: AppEngineHttpRequest,
+    createTime: java.lang.String,
+    dispatchCount: scala.Double,
+    firstAttempt: Attempt,
+    lastAttempt: Attempt,
+    name: java.lang.String,
+    responseCount: scala.Double,
+    scheduleTime: java.lang.String,
+    view: View
+  ): Task = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appEngineHttpRequest")(appEngineHttpRequest)
+    __obj.updateDynamic("createTime")(createTime)
+    __obj.updateDynamic("dispatchCount")(dispatchCount)
+    __obj.updateDynamic("firstAttempt")(firstAttempt)
+    __obj.updateDynamic("lastAttempt")(lastAttempt)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("responseCount")(responseCount)
+    __obj.updateDynamic("scheduleTime")(scheduleTime)
+    __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[Task]
+  }
+}
+

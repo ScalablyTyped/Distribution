@@ -9,3 +9,12 @@ trait RemoveFeatureEvent extends js.Object {
   var feature: Feature
 }
 
+object RemoveFeatureEvent {
+  @scala.inline
+  def apply(feature: Feature): RemoveFeatureEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("feature")(feature)
+    __obj.asInstanceOf[RemoveFeatureEvent]
+  }
+}
+

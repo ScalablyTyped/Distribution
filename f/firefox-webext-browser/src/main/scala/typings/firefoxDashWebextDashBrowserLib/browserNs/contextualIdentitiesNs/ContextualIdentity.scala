@@ -22,3 +22,24 @@ trait ContextualIdentity extends js.Object {
   var name: java.lang.String
 }
 
+object ContextualIdentity {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    colorCode: java.lang.String,
+    cookieStoreId: java.lang.String,
+    icon: java.lang.String,
+    iconUrl: java.lang.String,
+    name: java.lang.String
+  ): ContextualIdentity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("colorCode")(colorCode)
+    __obj.updateDynamic("cookieStoreId")(cookieStoreId)
+    __obj.updateDynamic("icon")(icon)
+    __obj.updateDynamic("iconUrl")(iconUrl)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ContextualIdentity]
+  }
+}
+

@@ -51,3 +51,24 @@ trait ImageData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImageData {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    hyperlink: java.lang.String = null,
+    id: java.lang.String = null,
+    ocrData: officeDashJsLib.OneNoteNs.ImageOcrData = null,
+    width: scala.Int | scala.Double = null
+  ): ImageData = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (ocrData != null) __obj.updateDynamic("ocrData")(ocrData)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageData]
+  }
+}
+

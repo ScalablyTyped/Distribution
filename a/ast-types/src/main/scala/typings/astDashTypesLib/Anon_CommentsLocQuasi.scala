@@ -12,3 +12,20 @@ trait Anon_CommentsLocQuasi extends js.Object {
   var tag: astDashTypesLib.genKindsMod.ExpressionKind
 }
 
+object Anon_CommentsLocQuasi {
+  @scala.inline
+  def apply(
+    quasi: astDashTypesLib.genKindsMod.TemplateLiteralKind,
+    tag: astDashTypesLib.genKindsMod.ExpressionKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsLocQuasi = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("quasi")(quasi)
+    __obj.updateDynamic("tag")(tag)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsLocQuasi]
+  }
+}
+

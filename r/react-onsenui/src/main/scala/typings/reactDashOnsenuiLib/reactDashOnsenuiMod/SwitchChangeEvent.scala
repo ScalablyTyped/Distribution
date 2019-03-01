@@ -12,3 +12,14 @@ trait SwitchChangeEvent
   var value: scala.Boolean
 }
 
+object SwitchChangeEvent {
+  @scala.inline
+  def apply(isInteractive: scala.Boolean, switch: reactLib.HTMLElement, value: scala.Boolean): SwitchChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isInteractive")(isInteractive)
+    __obj.updateDynamic("switch")(switch)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SwitchChangeEvent]
+  }
+}
+

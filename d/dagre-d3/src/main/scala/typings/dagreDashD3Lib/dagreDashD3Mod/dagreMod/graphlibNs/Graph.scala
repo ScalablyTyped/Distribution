@@ -32,3 +32,37 @@ trait Graph extends js.Object {
   def successors(id: java.lang.String): js.Array[java.lang.String]
 }
 
+object Graph {
+  @scala.inline
+  def apply(
+    graph: js.Function0[Graph],
+    height: scala.Double,
+    predecessors: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    successors: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    width: scala.Double,
+    transition: js.Function1[
+      /* selection */ d3DashSelectionLib.d3DashSelectionMod.Selection[
+        _, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+        d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      ], 
+      d3DashTransitionLib.d3DashTransitionMod.Transition[
+        _, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+        d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      ]
+    ] = null
+  ): Graph = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("graph")(graph)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("predecessors")(predecessors)
+    __obj.updateDynamic("successors")(successors)
+    __obj.updateDynamic("width")(width)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    __obj.asInstanceOf[Graph]
+  }
+}
+

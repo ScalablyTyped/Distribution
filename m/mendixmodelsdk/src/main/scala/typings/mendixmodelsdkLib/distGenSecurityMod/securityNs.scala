@@ -154,6 +154,8 @@ object securityNs extends js.Object {
     var adminUserName: java.lang.String = js.native
     var adminUserRoleName: java.lang.String = js.native
     var checkSecurity: scala.Boolean = js.native
+    @JSName("containerAsProject")
+    val containerAsProject_ProjectSecurity: mendixmodelsdkLib.distGenProjectsMod.projectsNs.Project = js.native
     val demoUsers: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[DemoUser] = js.native
     var enableDemoUsers: scala.Boolean = js.native
     var enableGuestAccess: scala.Boolean = js.native

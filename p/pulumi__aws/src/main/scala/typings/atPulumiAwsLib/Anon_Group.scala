@@ -14,3 +14,24 @@ trait Anon_Group extends js.Object {
   var taskDefinitionArn: java.lang.String
 }
 
+object Anon_Group {
+  @scala.inline
+  def apply(
+    taskDefinitionArn: java.lang.String,
+    group: java.lang.String = null,
+    launchType: java.lang.String = null,
+    networkConfiguration: Anon_AssignPublicIp = null,
+    platformVersion: java.lang.String = null,
+    taskCount: scala.Int | scala.Double = null
+  ): Anon_Group = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("taskDefinitionArn")(taskDefinitionArn)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (launchType != null) __obj.updateDynamic("launchType")(launchType)
+    if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration)
+    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion)
+    if (taskCount != null) __obj.updateDynamic("taskCount")(taskCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Group]
+  }
+}
+

@@ -76,3 +76,46 @@ trait EndpointState extends js.Object {
   val username: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object EndpointState {
+  @scala.inline
+  def apply(
+    certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    databaseName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    endpointArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    endpointId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    endpointType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engineName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    extraConnectionAttributes: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    kmsKeyArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    mongodbSettings: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthMechanismAuthSource] = null,
+    password: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    s3Settings: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketFolderBucketName] = null,
+    serverName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    serviceAccessRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sslMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    username: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): EndpointState = {
+    val __obj = js.Dynamic.literal()
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
+    if (endpointArn != null) __obj.updateDynamic("endpointArn")(endpointArn.asInstanceOf[js.Any])
+    if (endpointId != null) __obj.updateDynamic("endpointId")(endpointId.asInstanceOf[js.Any])
+    if (endpointType != null) __obj.updateDynamic("endpointType")(endpointType.asInstanceOf[js.Any])
+    if (engineName != null) __obj.updateDynamic("engineName")(engineName.asInstanceOf[js.Any])
+    if (extraConnectionAttributes != null) __obj.updateDynamic("extraConnectionAttributes")(extraConnectionAttributes.asInstanceOf[js.Any])
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (mongodbSettings != null) __obj.updateDynamic("mongodbSettings")(mongodbSettings.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (s3Settings != null) __obj.updateDynamic("s3Settings")(s3Settings.asInstanceOf[js.Any])
+    if (serverName != null) __obj.updateDynamic("serverName")(serverName.asInstanceOf[js.Any])
+    if (serviceAccessRole != null) __obj.updateDynamic("serviceAccessRole")(serviceAccessRole.asInstanceOf[js.Any])
+    if (sslMode != null) __obj.updateDynamic("sslMode")(sslMode.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EndpointState]
+  }
+}
+

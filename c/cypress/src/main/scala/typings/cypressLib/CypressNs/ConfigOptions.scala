@@ -148,3 +148,68 @@ trait ConfigOptions extends js.Object {
   var watchForFileChanges: scala.Boolean
 }
 
+object ConfigOptions {
+  @scala.inline
+  def apply(
+    animationDistanceThreshold: scala.Double,
+    chromeWebSecurity: scala.Boolean,
+    defaultCommandTimeout: scala.Double,
+    env: org.scalablytyped.runtime.StringDictionary[js.Any],
+    execTimeout: scala.Double,
+    fileServerFolder: java.lang.String,
+    fixturesFolder: java.lang.String,
+    ignoreTestFiles: java.lang.String | js.Array[java.lang.String],
+    integrationFolder: java.lang.String,
+    numTestsKeptInMemory: scala.Double,
+    pageLoadTimeout: scala.Double,
+    pluginsFile: java.lang.String,
+    reporter: java.lang.String,
+    requestTimeout: scala.Double,
+    responseTimeout: scala.Double,
+    screenshotsFolder: java.lang.String,
+    supportFile: java.lang.String,
+    trashAssetsBeforeRuns: scala.Boolean,
+    video: scala.Boolean,
+    videoCompression: scala.Double,
+    videoUploadOnPasses: scala.Boolean,
+    videosFolder: java.lang.String,
+    viewportHeight: scala.Double,
+    viewportWidth: scala.Double,
+    waitForAnimations: scala.Boolean,
+    watchForFileChanges: scala.Boolean,
+    baseUrl: java.lang.String = null,
+    port: scala.Int | scala.Double = null
+  ): ConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animationDistanceThreshold")(animationDistanceThreshold)
+    __obj.updateDynamic("chromeWebSecurity")(chromeWebSecurity)
+    __obj.updateDynamic("defaultCommandTimeout")(defaultCommandTimeout)
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("execTimeout")(execTimeout)
+    __obj.updateDynamic("fileServerFolder")(fileServerFolder)
+    __obj.updateDynamic("fixturesFolder")(fixturesFolder)
+    __obj.updateDynamic("ignoreTestFiles")(ignoreTestFiles.asInstanceOf[js.Any])
+    __obj.updateDynamic("integrationFolder")(integrationFolder)
+    __obj.updateDynamic("numTestsKeptInMemory")(numTestsKeptInMemory)
+    __obj.updateDynamic("pageLoadTimeout")(pageLoadTimeout)
+    __obj.updateDynamic("pluginsFile")(pluginsFile)
+    __obj.updateDynamic("reporter")(reporter)
+    __obj.updateDynamic("requestTimeout")(requestTimeout)
+    __obj.updateDynamic("responseTimeout")(responseTimeout)
+    __obj.updateDynamic("screenshotsFolder")(screenshotsFolder)
+    __obj.updateDynamic("supportFile")(supportFile)
+    __obj.updateDynamic("trashAssetsBeforeRuns")(trashAssetsBeforeRuns)
+    __obj.updateDynamic("video")(video)
+    __obj.updateDynamic("videoCompression")(videoCompression)
+    __obj.updateDynamic("videoUploadOnPasses")(videoUploadOnPasses)
+    __obj.updateDynamic("videosFolder")(videosFolder)
+    __obj.updateDynamic("viewportHeight")(viewportHeight)
+    __obj.updateDynamic("viewportWidth")(viewportWidth)
+    __obj.updateDynamic("waitForAnimations")(waitForAnimations)
+    __obj.updateDynamic("watchForFileChanges")(watchForFileChanges)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConfigOptions]
+  }
+}
+

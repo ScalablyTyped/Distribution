@@ -29,3 +29,21 @@ trait BridgeClients extends js.Object {
   var fingerprint: java.lang.String
 }
 
+object BridgeClients {
+  @scala.inline
+  def apply(
+    fingerprint: java.lang.String,
+    average_clients: stdLib.Partial[
+      stdLib.Record[
+        onionooLib.onionooLibStrings.`6_months` | onionooLib.onionooLibStrings.`1_year` | onionooLib.onionooLibStrings.`5_years`, 
+        Histogram
+      ]
+    ] = null
+  ): BridgeClients = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fingerprint")(fingerprint)
+    if (average_clients != null) __obj.updateDynamic("average_clients")(average_clients)
+    __obj.asInstanceOf[BridgeClients]
+  }
+}
+

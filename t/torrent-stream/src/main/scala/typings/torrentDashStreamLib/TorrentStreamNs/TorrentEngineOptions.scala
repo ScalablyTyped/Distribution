@@ -25,3 +25,30 @@ trait TorrentEngineOptions extends js.Object {
   var verify: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TorrentEngineOptions {
+  @scala.inline
+  def apply(
+    connections: scala.Int | scala.Double = null,
+    dht: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    storage: js.Any = null,
+    tmp: java.lang.String = null,
+    tracker: js.UndefOr[scala.Boolean] = js.undefined,
+    trackers: js.Array[java.lang.String] = null,
+    uploads: scala.Int | scala.Double = null,
+    verify: js.UndefOr[scala.Boolean] = js.undefined
+  ): TorrentEngineOptions = {
+    val __obj = js.Dynamic.literal()
+    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
+    if (!js.isUndefined(dht)) __obj.updateDynamic("dht")(dht)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (tmp != null) __obj.updateDynamic("tmp")(tmp)
+    if (!js.isUndefined(tracker)) __obj.updateDynamic("tracker")(tracker)
+    if (trackers != null) __obj.updateDynamic("trackers")(trackers)
+    if (uploads != null) __obj.updateDynamic("uploads")(uploads.asInstanceOf[js.Any])
+    if (!js.isUndefined(verify)) __obj.updateDynamic("verify")(verify)
+    __obj.asInstanceOf[TorrentEngineOptions]
+  }
+}
+

@@ -16,3 +16,13 @@ trait GetClusterArgs extends js.Object {
   val clusterState: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetClusterArgs {
+  @scala.inline
+  def apply(clusterId: java.lang.String, clusterState: java.lang.String = null): GetClusterArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clusterId")(clusterId)
+    if (clusterState != null) __obj.updateDynamic("clusterState")(clusterState)
+    __obj.asInstanceOf[GetClusterArgs]
+  }
+}
+

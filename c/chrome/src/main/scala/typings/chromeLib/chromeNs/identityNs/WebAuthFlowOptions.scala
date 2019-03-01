@@ -17,3 +17,13 @@ trait WebAuthFlowOptions extends js.Object {
   var url: java.lang.String
 }
 
+object WebAuthFlowOptions {
+  @scala.inline
+  def apply(url: java.lang.String, interactive: js.UndefOr[scala.Boolean] = js.undefined): WebAuthFlowOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    __obj.asInstanceOf[WebAuthFlowOptions]
+  }
+}
+

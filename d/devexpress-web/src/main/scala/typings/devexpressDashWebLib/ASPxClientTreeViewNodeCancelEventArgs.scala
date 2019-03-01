@@ -16,3 +16,14 @@ trait ASPxClientTreeViewNodeCancelEventArgs extends ASPxClientProcessingModeCanc
   var node: ASPxClientTreeViewNode
 }
 
+object ASPxClientTreeViewNodeCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, node: ASPxClientTreeViewNode, processOnServer: scala.Boolean): ASPxClientTreeViewNodeCancelEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("node")(node)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[ASPxClientTreeViewNodeCancelEventArgs]
+  }
+}
+

@@ -31,3 +31,22 @@ trait PodPresetSpec extends js.Object {
   val volumes: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.Volume]
 }
 
+object PodPresetSpec {
+  @scala.inline
+  def apply(
+    env: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.EnvVar],
+    envFrom: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.EnvFromSource],
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    volumeMounts: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.VolumeMount],
+    volumes: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.Volume]
+  ): PodPresetSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("envFrom")(envFrom)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("volumeMounts")(volumeMounts)
+    __obj.updateDynamic("volumes")(volumes)
+    __obj.asInstanceOf[PodPresetSpec]
+  }
+}
+

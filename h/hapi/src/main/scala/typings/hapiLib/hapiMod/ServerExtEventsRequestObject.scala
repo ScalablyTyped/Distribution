@@ -33,3 +33,17 @@ trait ServerExtEventsRequestObject extends js.Object {
   var `type`: ServerRequestExtType
 }
 
+object ServerExtEventsRequestObject {
+  @scala.inline
+  def apply(
+    method: hapiLib.hapiMod.LifecycleNs.Method | js.Array[hapiLib.hapiMod.LifecycleNs.Method],
+    `type`: ServerRequestExtType,
+    options: ServerExtOptions = null
+  ): ServerExtEventsRequestObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[ServerExtEventsRequestObject]
+  }
+}
+

@@ -16,3 +16,24 @@ trait DialogSelectConfig extends js.Object {
   var title: java.lang.String
 }
 
+object DialogSelectConfig {
+  @scala.inline
+  def apply(
+    list: js.Array[DialogSelectConfigItem],
+    title: java.lang.String,
+    buttons: js.Array[_] = null,
+    message: java.lang.String = null,
+    multiselect: js.UndefOr[scala.Boolean] = js.undefined,
+    quickfind: js.UndefOr[scala.Boolean] = js.undefined
+  ): DialogSelectConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("title")(title)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect)
+    if (!js.isUndefined(quickfind)) __obj.updateDynamic("quickfind")(quickfind)
+    __obj.asInstanceOf[DialogSelectConfig]
+  }
+}
+

@@ -58,3 +58,42 @@ trait Model extends js.Object {
   var xDimension: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    barHeight: scala.Int | scala.Double = null,
+    barcodeToTextGapHeight: scala.Int | scala.Double = null,
+    darkBarColor: js.Any = null,
+    displayText: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    encodeStartStopSymbol: scala.Int | scala.Double = null,
+    lightBarColor: js.Any = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    narrowBarWidth: scala.Int | scala.Double = null,
+    quietZone: QuietZone = null,
+    symbologyType: SymbologyType | java.lang.String = null,
+    text: java.lang.String = null,
+    textColor: js.Any = null,
+    wideBarWidth: scala.Int | scala.Double = null,
+    xDimension: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (barHeight != null) __obj.updateDynamic("barHeight")(barHeight.asInstanceOf[js.Any])
+    if (barcodeToTextGapHeight != null) __obj.updateDynamic("barcodeToTextGapHeight")(barcodeToTextGapHeight.asInstanceOf[js.Any])
+    if (darkBarColor != null) __obj.updateDynamic("darkBarColor")(darkBarColor)
+    if (!js.isUndefined(displayText)) __obj.updateDynamic("displayText")(displayText)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (encodeStartStopSymbol != null) __obj.updateDynamic("encodeStartStopSymbol")(encodeStartStopSymbol.asInstanceOf[js.Any])
+    if (lightBarColor != null) __obj.updateDynamic("lightBarColor")(lightBarColor)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (narrowBarWidth != null) __obj.updateDynamic("narrowBarWidth")(narrowBarWidth.asInstanceOf[js.Any])
+    if (quietZone != null) __obj.updateDynamic("quietZone")(quietZone)
+    if (symbologyType != null) __obj.updateDynamic("symbologyType")(symbologyType.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (wideBarWidth != null) __obj.updateDynamic("wideBarWidth")(wideBarWidth.asInstanceOf[js.Any])
+    if (xDimension != null) __obj.updateDynamic("xDimension")(xDimension.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

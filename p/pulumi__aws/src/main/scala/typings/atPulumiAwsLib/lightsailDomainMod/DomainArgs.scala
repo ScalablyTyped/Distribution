@@ -12,3 +12,12 @@ trait DomainArgs extends js.Object {
   val domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object DomainArgs {
+  @scala.inline
+  def apply(domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String]): DomainArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DomainArgs]
+  }
+}
+

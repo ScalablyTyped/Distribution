@@ -19,3 +19,15 @@ trait XLiteral extends XNode {
   var Value: java.lang.String
 }
 
+object XLiteral {
+  @scala.inline
+  def apply(Datatype: XURI, Language: java.lang.String, StringValue: java.lang.String, Value: java.lang.String): XLiteral = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Datatype")(Datatype)
+    __obj.updateDynamic("Language")(Language)
+    __obj.updateDynamic("StringValue")(StringValue)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[XLiteral]
+  }
+}
+

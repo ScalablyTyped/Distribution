@@ -86,3 +86,44 @@ trait ASPxClientCrosshairOptions extends ASPxClientWebChartElement {
   var valueSelectionMode: java.lang.String
 }
 
+object ASPxClientCrosshairOptions {
+  @scala.inline
+  def apply(
+    argumentLineColor: java.lang.String,
+    chart: ASPxClientWebChart,
+    crosshairLabelMode: java.lang.String,
+    groupHeaderPattern: java.lang.String,
+    linesMode: java.lang.String,
+    showArgumentLine: scala.Boolean,
+    showAxisXLabels: scala.Boolean,
+    showAxisYLabels: scala.Boolean,
+    showCrosshairLabels: scala.Boolean,
+    showGroupHeaders: scala.Boolean,
+    showOnlyInFocusedPane: scala.Boolean,
+    showOutOfRangePoints: scala.Boolean,
+    showValueLine: scala.Boolean,
+    snapMode: java.lang.String,
+    valueLineColor: java.lang.String,
+    valueSelectionMode: java.lang.String
+  ): ASPxClientCrosshairOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("argumentLineColor")(argumentLineColor)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("crosshairLabelMode")(crosshairLabelMode)
+    __obj.updateDynamic("groupHeaderPattern")(groupHeaderPattern)
+    __obj.updateDynamic("linesMode")(linesMode)
+    __obj.updateDynamic("showArgumentLine")(showArgumentLine)
+    __obj.updateDynamic("showAxisXLabels")(showAxisXLabels)
+    __obj.updateDynamic("showAxisYLabels")(showAxisYLabels)
+    __obj.updateDynamic("showCrosshairLabels")(showCrosshairLabels)
+    __obj.updateDynamic("showGroupHeaders")(showGroupHeaders)
+    __obj.updateDynamic("showOnlyInFocusedPane")(showOnlyInFocusedPane)
+    __obj.updateDynamic("showOutOfRangePoints")(showOutOfRangePoints)
+    __obj.updateDynamic("showValueLine")(showValueLine)
+    __obj.updateDynamic("snapMode")(snapMode)
+    __obj.updateDynamic("valueLineColor")(valueLineColor)
+    __obj.updateDynamic("valueSelectionMode")(valueSelectionMode)
+    __obj.asInstanceOf[ASPxClientCrosshairOptions]
+  }
+}
+

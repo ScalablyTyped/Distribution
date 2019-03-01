@@ -18,3 +18,20 @@ trait WatchInfo extends js.Object {
   var platform: java.lang.String
 }
 
+object WatchInfo {
+  @scala.inline
+  def apply(
+    firmware: Firmware,
+    language: java.lang.String,
+    model: java.lang.String,
+    platform: java.lang.String
+  ): WatchInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("firmware")(firmware)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("platform")(platform)
+    __obj.asInstanceOf[WatchInfo]
+  }
+}
+

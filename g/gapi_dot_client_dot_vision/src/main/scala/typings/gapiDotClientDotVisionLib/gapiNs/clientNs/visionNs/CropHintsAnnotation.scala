@@ -10,3 +10,12 @@ trait CropHintsAnnotation extends js.Object {
   var cropHints: js.UndefOr[js.Array[CropHint]] = js.undefined
 }
 
+object CropHintsAnnotation {
+  @scala.inline
+  def apply(cropHints: js.Array[CropHint] = null): CropHintsAnnotation = {
+    val __obj = js.Dynamic.literal()
+    if (cropHints != null) __obj.updateDynamic("cropHints")(cropHints)
+    __obj.asInstanceOf[CropHintsAnnotation]
+  }
+}
+

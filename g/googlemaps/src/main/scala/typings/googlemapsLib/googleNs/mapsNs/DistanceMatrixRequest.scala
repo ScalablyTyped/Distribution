@@ -23,3 +23,34 @@ trait DistanceMatrixRequest extends js.Object {
   var unitSystem: js.UndefOr[UnitSystem] = js.undefined
 }
 
+object DistanceMatrixRequest {
+  @scala.inline
+  def apply(
+    avoidFerries: js.UndefOr[scala.Boolean] = js.undefined,
+    avoidHighways: js.UndefOr[scala.Boolean] = js.undefined,
+    avoidTolls: js.UndefOr[scala.Boolean] = js.undefined,
+    destinations: js.Array[java.lang.String] | js.Array[LatLng] | js.Array[LatLngLiteral] | js.Array[Place] = null,
+    drivingOptions: DrivingOptions = null,
+    durationInTraffic: js.UndefOr[scala.Boolean] = js.undefined,
+    origins: js.Array[java.lang.String] | js.Array[LatLng] | js.Array[LatLngLiteral] | js.Array[Place] = null,
+    region: java.lang.String = null,
+    transitOptions: TransitOptions = null,
+    travelMode: TravelMode = null,
+    unitSystem: UnitSystem = null
+  ): DistanceMatrixRequest = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(avoidFerries)) __obj.updateDynamic("avoidFerries")(avoidFerries)
+    if (!js.isUndefined(avoidHighways)) __obj.updateDynamic("avoidHighways")(avoidHighways)
+    if (!js.isUndefined(avoidTolls)) __obj.updateDynamic("avoidTolls")(avoidTolls)
+    if (destinations != null) __obj.updateDynamic("destinations")(destinations.asInstanceOf[js.Any])
+    if (drivingOptions != null) __obj.updateDynamic("drivingOptions")(drivingOptions)
+    if (!js.isUndefined(durationInTraffic)) __obj.updateDynamic("durationInTraffic")(durationInTraffic)
+    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (transitOptions != null) __obj.updateDynamic("transitOptions")(transitOptions)
+    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
+    if (unitSystem != null) __obj.updateDynamic("unitSystem")(unitSystem)
+    __obj.asInstanceOf[DistanceMatrixRequest]
+  }
+}
+

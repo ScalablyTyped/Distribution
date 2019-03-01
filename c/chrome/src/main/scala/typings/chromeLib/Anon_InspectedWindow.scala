@@ -32,3 +32,18 @@ trait Anon_InspectedWindow extends js.Object {
   val panelsNs: Anon_CallbackCreate
 }
 
+object Anon_InspectedWindow {
+  @scala.inline
+  def apply(
+    inspectedWindowNs: Anon_CallbackEval,
+    networkNs: Anon_CallbackGetHAR,
+    panelsNs: Anon_CallbackCreate
+  ): Anon_InspectedWindow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inspectedWindowNs")(inspectedWindowNs)
+    __obj.updateDynamic("networkNs")(networkNs)
+    __obj.updateDynamic("panelsNs")(panelsNs)
+    __obj.asInstanceOf[Anon_InspectedWindow]
+  }
+}
+

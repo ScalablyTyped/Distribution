@@ -21,3 +21,20 @@ trait Anon_ExpandLabel extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ExpandLabel {
+  @scala.inline
+  def apply(
+    expand: js.UndefOr[scala.Boolean] = js.undefined,
+    label: Anon_Format = null,
+    title: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_ExpandLabel = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ExpandLabel]
+  }
+}
+

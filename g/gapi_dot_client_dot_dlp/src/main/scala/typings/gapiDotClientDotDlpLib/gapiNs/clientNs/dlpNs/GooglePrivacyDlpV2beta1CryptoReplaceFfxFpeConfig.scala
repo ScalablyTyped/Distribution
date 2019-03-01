@@ -52,3 +52,22 @@ trait GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig extends js.Object {
   var radix: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig {
+  @scala.inline
+  def apply(
+    commonAlphabet: java.lang.String = null,
+    context: GooglePrivacyDlpV2beta1FieldId = null,
+    cryptoKey: GooglePrivacyDlpV2beta1CryptoKey = null,
+    customAlphabet: java.lang.String = null,
+    radix: scala.Int | scala.Double = null
+  ): GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig = {
+    val __obj = js.Dynamic.literal()
+    if (commonAlphabet != null) __obj.updateDynamic("commonAlphabet")(commonAlphabet)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (cryptoKey != null) __obj.updateDynamic("cryptoKey")(cryptoKey)
+    if (customAlphabet != null) __obj.updateDynamic("customAlphabet")(customAlphabet)
+    if (radix != null) __obj.updateDynamic("radix")(radix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig]
+  }
+}
+

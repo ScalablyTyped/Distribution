@@ -126,3 +126,178 @@ trait Shape
   var WrapInfluenceOnPosition: scala.Double
 }
 
+object Shape {
+  @scala.inline
+  def apply(
+    AnchorFrame: XTextFrame,
+    AnchorPageNo: scala.Double,
+    AnchorType: TextContentAnchorType,
+    BottomMargin: scala.Double,
+    ContourOutside: scala.Boolean,
+    EndPositionInHoriL2R: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    GluePoints: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    HoriOrient: scala.Double,
+    HoriOrientPosition: scala.Double,
+    HoriOrientRelation: scala.Double,
+    Hyperlink: java.lang.String,
+    InteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    LayerID: scala.Double,
+    LayerName: java.lang.String,
+    LeftMargin: scala.Double,
+    MoveProtect: scala.Boolean,
+    Name: java.lang.String,
+    NavigationOrder: scala.Double,
+    Opaque: scala.Boolean,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    PositionLayoutDir: scala.Double,
+    Printable: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RelativeHeight: scala.Double,
+    RelativeHeightRelation: scala.Double,
+    RelativeWidth: scala.Double,
+    RelativeWidthRelation: scala.Double,
+    RightMargin: scala.Double,
+    ShapeType: java.lang.String,
+    ShapeUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    SizeProtect: scala.Boolean,
+    StartPositionInHoriL2R: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    Style: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.XStyle,
+    Surround: WrapTextMode,
+    SurroundAnchorOnly: scala.Boolean,
+    SurroundContour: scala.Boolean,
+    TextRange: XTextRange,
+    TopMargin: scala.Double,
+    Transformation: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.HomogenMatrix3,
+    TransformationInHoriL2R: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.HomogenMatrix3,
+    VertOrient: scala.Double,
+    VertOrientPosition: scala.Double,
+    VertOrientRelation: scala.Double,
+    Visible: scala.Boolean,
+    WrapInfluenceOnPosition: scala.Double,
+    ZOrder: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    dispose: js.Function0[scala.Unit],
+    getDirectPropertyValuesTolerant: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[
+        activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.GetDirectPropertyTolerantResult
+      ]
+    ],
+    getGluePoints: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer],
+    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValuesTolerant: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.GetPropertyTolerantResult]
+    ],
+    getShapeType: js.Function0[java.lang.String],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValuesTolerant: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.SetPropertyTolerantFailed]
+    ],
+    setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
+  ): Shape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AnchorFrame")(AnchorFrame)
+    __obj.updateDynamic("AnchorPageNo")(AnchorPageNo)
+    __obj.updateDynamic("AnchorType")(AnchorType)
+    __obj.updateDynamic("BottomMargin")(BottomMargin)
+    __obj.updateDynamic("ContourOutside")(ContourOutside)
+    __obj.updateDynamic("EndPositionInHoriL2R")(EndPositionInHoriL2R)
+    __obj.updateDynamic("GluePoints")(GluePoints)
+    __obj.updateDynamic("HoriOrient")(HoriOrient)
+    __obj.updateDynamic("HoriOrientPosition")(HoriOrientPosition)
+    __obj.updateDynamic("HoriOrientRelation")(HoriOrientRelation)
+    __obj.updateDynamic("Hyperlink")(Hyperlink)
+    __obj.updateDynamic("InteropGrabBag")(InteropGrabBag)
+    __obj.updateDynamic("LayerID")(LayerID)
+    __obj.updateDynamic("LayerName")(LayerName)
+    __obj.updateDynamic("LeftMargin")(LeftMargin)
+    __obj.updateDynamic("MoveProtect")(MoveProtect)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("NavigationOrder")(NavigationOrder)
+    __obj.updateDynamic("Opaque")(Opaque)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("PositionLayoutDir")(PositionLayoutDir)
+    __obj.updateDynamic("Printable")(Printable)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RelativeHeight")(RelativeHeight)
+    __obj.updateDynamic("RelativeHeightRelation")(RelativeHeightRelation)
+    __obj.updateDynamic("RelativeWidth")(RelativeWidth)
+    __obj.updateDynamic("RelativeWidthRelation")(RelativeWidthRelation)
+    __obj.updateDynamic("RightMargin")(RightMargin)
+    __obj.updateDynamic("ShapeType")(ShapeType)
+    __obj.updateDynamic("ShapeUserDefinedAttributes")(ShapeUserDefinedAttributes)
+    __obj.updateDynamic("Size")(Size)
+    __obj.updateDynamic("SizeProtect")(SizeProtect)
+    __obj.updateDynamic("StartPositionInHoriL2R")(StartPositionInHoriL2R)
+    __obj.updateDynamic("Style")(Style)
+    __obj.updateDynamic("Surround")(Surround)
+    __obj.updateDynamic("SurroundAnchorOnly")(SurroundAnchorOnly)
+    __obj.updateDynamic("SurroundContour")(SurroundContour)
+    __obj.updateDynamic("TextRange")(TextRange)
+    __obj.updateDynamic("TopMargin")(TopMargin)
+    __obj.updateDynamic("Transformation")(Transformation)
+    __obj.updateDynamic("TransformationInHoriL2R")(TransformationInHoriL2R)
+    __obj.updateDynamic("VertOrient")(VertOrient)
+    __obj.updateDynamic("VertOrientPosition")(VertOrientPosition)
+    __obj.updateDynamic("VertOrientRelation")(VertOrientRelation)
+    __obj.updateDynamic("Visible")(Visible)
+    __obj.updateDynamic("WrapInfluenceOnPosition")(WrapInfluenceOnPosition)
+    __obj.updateDynamic("ZOrder")(ZOrder)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getDirectPropertyValuesTolerant")(getDirectPropertyValuesTolerant)
+    __obj.updateDynamic("getGluePoints")(getGluePoints)
+    __obj.updateDynamic("getPosition")(getPosition)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getPropertyValuesTolerant")(getPropertyValuesTolerant)
+    __obj.updateDynamic("getShapeType")(getShapeType)
+    __obj.updateDynamic("getSize")(getSize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPosition")(setPosition)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setPropertyValuesTolerant")(setPropertyValuesTolerant)
+    __obj.updateDynamic("setSize")(setSize)
+    __obj.asInstanceOf[Shape]
+  }
+}
+

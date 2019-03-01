@@ -16,3 +16,20 @@ trait ThreatInfo extends js.Object {
   var threatTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ThreatInfo {
+  @scala.inline
+  def apply(
+    platformTypes: js.Array[java.lang.String] = null,
+    threatEntries: js.Array[ThreatEntry] = null,
+    threatEntryTypes: js.Array[java.lang.String] = null,
+    threatTypes: js.Array[java.lang.String] = null
+  ): ThreatInfo = {
+    val __obj = js.Dynamic.literal()
+    if (platformTypes != null) __obj.updateDynamic("platformTypes")(platformTypes)
+    if (threatEntries != null) __obj.updateDynamic("threatEntries")(threatEntries)
+    if (threatEntryTypes != null) __obj.updateDynamic("threatEntryTypes")(threatEntryTypes)
+    if (threatTypes != null) __obj.updateDynamic("threatTypes")(threatTypes)
+    __obj.asInstanceOf[ThreatInfo]
+  }
+}
+

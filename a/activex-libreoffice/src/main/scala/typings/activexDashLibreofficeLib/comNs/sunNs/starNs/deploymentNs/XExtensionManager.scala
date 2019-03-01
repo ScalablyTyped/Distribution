@@ -188,3 +188,123 @@ trait XExtensionManager
   ): scala.Boolean
 }
 
+object XExtensionManager {
+  @scala.inline
+  def apply(
+    SupportedPackageTypes: activexDashInteropLib.SafeArray[XPackageTypeInfo],
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addExtension: js.Function5[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      XPackage
+    ],
+    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    checkPrerequisitesAndEnable: js.Function3[
+      XPackage, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Double
+    ],
+    createAbortChannel: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel],
+    disableExtension: js.Function3[
+      XPackage, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Unit
+    ],
+    dispose: js.Function0[scala.Unit],
+    enableExtension: js.Function3[
+      XPackage, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Unit
+    ],
+    getAllExtensions: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[XPackage]]
+    ],
+    getDeployedExtension: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      XPackage
+    ],
+    getDeployedExtensions: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      activexDashInteropLib.SafeArray[XPackage]
+    ],
+    getExtensionsWithSameIdentifier: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      activexDashInteropLib.SafeArray[XPackage]
+    ],
+    getExtensionsWithUnacceptedLicenses: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      activexDashInteropLib.SafeArray[XPackage]
+    ],
+    getSupportedPackageTypes: js.Function0[activexDashInteropLib.SafeArray[XPackageTypeInfo]],
+    isReadOnlyRepository: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    reinstallDeployedExtensions: js.Function4[
+      scala.Boolean, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeExtension: js.Function5[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Unit
+    ],
+    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    synchronize: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Boolean
+    ]
+  ): XExtensionManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SupportedPackageTypes")(SupportedPackageTypes)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addExtension")(addExtension)
+    __obj.updateDynamic("addModifyListener")(addModifyListener)
+    __obj.updateDynamic("checkPrerequisitesAndEnable")(checkPrerequisitesAndEnable)
+    __obj.updateDynamic("createAbortChannel")(createAbortChannel)
+    __obj.updateDynamic("disableExtension")(disableExtension)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("enableExtension")(enableExtension)
+    __obj.updateDynamic("getAllExtensions")(getAllExtensions)
+    __obj.updateDynamic("getDeployedExtension")(getDeployedExtension)
+    __obj.updateDynamic("getDeployedExtensions")(getDeployedExtensions)
+    __obj.updateDynamic("getExtensionsWithSameIdentifier")(getExtensionsWithSameIdentifier)
+    __obj.updateDynamic("getExtensionsWithUnacceptedLicenses")(getExtensionsWithUnacceptedLicenses)
+    __obj.updateDynamic("getSupportedPackageTypes")(getSupportedPackageTypes)
+    __obj.updateDynamic("isReadOnlyRepository")(isReadOnlyRepository)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("reinstallDeployedExtensions")(reinstallDeployedExtensions)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removeExtension")(removeExtension)
+    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
+    __obj.updateDynamic("synchronize")(synchronize)
+    __obj.asInstanceOf[XExtensionManager]
+  }
+}
+

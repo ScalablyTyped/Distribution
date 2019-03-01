@@ -28,3 +28,25 @@ trait XInsertObjectDialog
   ): InsertedObjectInfo
 }
 
+object XInsertObjectDialog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createInstanceByDialog: js.Function3[
+      XStorage, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      InsertedObjectInfo
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInsertObjectDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createInstanceByDialog")(createInstanceByDialog)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XInsertObjectDialog]
+  }
+}
+

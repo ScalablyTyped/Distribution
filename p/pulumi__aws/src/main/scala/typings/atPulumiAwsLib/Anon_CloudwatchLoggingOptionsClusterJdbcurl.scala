@@ -22,3 +22,36 @@ trait Anon_CloudwatchLoggingOptionsClusterJdbcurl extends js.Object {
   var username: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_CloudwatchLoggingOptionsClusterJdbcurl {
+  @scala.inline
+  def apply(
+    clusterJdbcurl: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    dataTableName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    password: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    username: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    cloudwatchLoggingOptions: atPulumiPulumiLib.outputMod.Input[Anon_EnabledLogGroupNameLogStreamName] = null,
+    copyOptions: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dataTableColumns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    processingConfiguration: atPulumiPulumiLib.outputMod.Input[Anon_EnabledProcessorsAnonParametersType] = null,
+    retryDuration: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    s3BackupConfiguration: atPulumiPulumiLib.outputMod.Input[Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions] = null,
+    s3BackupMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_CloudwatchLoggingOptionsClusterJdbcurl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clusterJdbcurl")(clusterJdbcurl.asInstanceOf[js.Any])
+    __obj.updateDynamic("dataTableName")(dataTableName.asInstanceOf[js.Any])
+    __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (cloudwatchLoggingOptions != null) __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions.asInstanceOf[js.Any])
+    if (copyOptions != null) __obj.updateDynamic("copyOptions")(copyOptions.asInstanceOf[js.Any])
+    if (dataTableColumns != null) __obj.updateDynamic("dataTableColumns")(dataTableColumns.asInstanceOf[js.Any])
+    if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration.asInstanceOf[js.Any])
+    if (retryDuration != null) __obj.updateDynamic("retryDuration")(retryDuration.asInstanceOf[js.Any])
+    if (s3BackupConfiguration != null) __obj.updateDynamic("s3BackupConfiguration")(s3BackupConfiguration.asInstanceOf[js.Any])
+    if (s3BackupMode != null) __obj.updateDynamic("s3BackupMode")(s3BackupMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CloudwatchLoggingOptionsClusterJdbcurl]
+  }
+}
+

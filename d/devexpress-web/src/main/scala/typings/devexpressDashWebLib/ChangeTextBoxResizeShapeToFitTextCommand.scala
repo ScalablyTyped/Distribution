@@ -20,3 +20,13 @@ trait ChangeTextBoxResizeShapeToFitTextCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeTextBoxResizeShapeToFitTextCommand {
+  @scala.inline
+  def apply(execute: js.Function1[scala.Boolean, scala.Boolean], getState: js.Function0[js.Any]): ChangeTextBoxResizeShapeToFitTextCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeTextBoxResizeShapeToFitTextCommand]
+  }
+}
+

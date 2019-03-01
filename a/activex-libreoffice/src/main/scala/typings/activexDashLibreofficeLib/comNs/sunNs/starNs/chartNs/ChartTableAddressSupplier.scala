@@ -28,3 +28,20 @@ trait ChartTableAddressSupplier extends js.Object {
   var SubTitleAddress: java.lang.String
 }
 
+object ChartTableAddressSupplier {
+  @scala.inline
+  def apply(
+    CategoriesRangeAddress: java.lang.String,
+    MainTitleAddress: java.lang.String,
+    SeriesAddresses: activexDashInteropLib.SafeArray[ChartSeriesAddress],
+    SubTitleAddress: java.lang.String
+  ): ChartTableAddressSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CategoriesRangeAddress")(CategoriesRangeAddress)
+    __obj.updateDynamic("MainTitleAddress")(MainTitleAddress)
+    __obj.updateDynamic("SeriesAddresses")(SeriesAddresses)
+    __obj.updateDynamic("SubTitleAddress")(SubTitleAddress)
+    __obj.asInstanceOf[ChartTableAddressSupplier]
+  }
+}
+

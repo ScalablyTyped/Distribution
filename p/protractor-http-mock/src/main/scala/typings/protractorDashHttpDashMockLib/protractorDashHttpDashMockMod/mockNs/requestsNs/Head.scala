@@ -8,8 +8,22 @@ import scala.scalajs.js.annotation._
 /**
   * HEAD request mock.
   */
-trait Head[TResponse] extends js.Object {
+trait Head[TResponse]
+  extends AllRequests[TResponse, js.Any] {
   var request: protractorDashHttpDashMockLib.Anon_Method
   var response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
+}
+
+object Head {
+  @scala.inline
+  def apply[TResponse](
+    request: protractorDashHttpDashMockLib.Anon_Method,
+    response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
+  ): Head[TResponse] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[Head[TResponse]]
+  }
 }
 

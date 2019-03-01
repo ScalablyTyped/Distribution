@@ -15,3 +15,16 @@ trait GooglePrivacyDlpV2beta1InfoTypeTransformation extends js.Object {
   var primitiveTransformation: js.UndefOr[GooglePrivacyDlpV2beta1PrimitiveTransformation] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1InfoTypeTransformation {
+  @scala.inline
+  def apply(
+    infoTypes: js.Array[GooglePrivacyDlpV2beta1InfoType] = null,
+    primitiveTransformation: GooglePrivacyDlpV2beta1PrimitiveTransformation = null
+  ): GooglePrivacyDlpV2beta1InfoTypeTransformation = {
+    val __obj = js.Dynamic.literal()
+    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes)
+    if (primitiveTransformation != null) __obj.updateDynamic("primitiveTransformation")(primitiveTransformation)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1InfoTypeTransformation]
+  }
+}
+

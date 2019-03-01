@@ -27,3 +27,22 @@ trait XSetSpellAlternatives
   def setFailureType(nFailureType: scala.Double): scala.Unit
 }
 
+object XSetSpellAlternatives {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setAlternatives: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setFailureType: js.Function1[scala.Double, scala.Unit]
+  ): XSetSpellAlternatives = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setAlternatives")(setAlternatives)
+    __obj.updateDynamic("setFailureType")(setFailureType)
+    __obj.asInstanceOf[XSetSpellAlternatives]
+  }
+}
+

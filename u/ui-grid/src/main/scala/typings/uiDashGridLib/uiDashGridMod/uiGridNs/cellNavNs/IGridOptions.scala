@@ -14,3 +14,12 @@ trait IGridOptions extends js.Object {
   var modifierKeysToMultiSelectCells: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(modifierKeysToMultiSelectCells: js.UndefOr[scala.Boolean] = js.undefined): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(modifierKeysToMultiSelectCells)) __obj.updateDynamic("modifierKeysToMultiSelectCells")(modifierKeysToMultiSelectCells)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

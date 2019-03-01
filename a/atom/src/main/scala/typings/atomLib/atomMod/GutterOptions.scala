@@ -46,3 +46,28 @@ trait GutterOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GutterOptions {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `class`: java.lang.String = null,
+    labelFn: js.Function1[/* lineData */ LineDataExtended, java.lang.String] = null,
+    onMouseDown: js.Function1[/* lineData */ LineData, scala.Unit] = null,
+    onMouseMove: js.Function1[/* lineData */ LineData, scala.Unit] = null,
+    priority: scala.Int | scala.Double = null,
+    `type`: atomLib.atomLibStrings.decorated | atomLib.atomLibStrings.`line-number` = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): GutterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (labelFn != null) __obj.updateDynamic("labelFn")(labelFn)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[GutterOptions]
+  }
+}
+

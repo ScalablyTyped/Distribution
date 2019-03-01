@@ -9,3 +9,14 @@ trait ElementObject extends js.Object {
   var element: reactLib.reactMod.ReactNs.ReactElement[js.Object] | reactLib.reactMod.ReactNs.ReactType[_]
 }
 
+object ElementObject {
+  @scala.inline
+  def apply(
+    element: reactLib.reactMod.ReactNs.ReactElement[js.Object] | reactLib.reactMod.ReactNs.ReactType[_]
+  ): ElementObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ElementObject]
+  }
+}
+

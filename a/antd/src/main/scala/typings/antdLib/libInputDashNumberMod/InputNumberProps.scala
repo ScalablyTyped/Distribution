@@ -32,3 +32,50 @@ import scala.scalajs.js.annotation._
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object InputNumberProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    decimalSeparator: java.lang.String = null,
+    defaultValue: scala.Int | scala.Double = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    formatter: js.Function1[/* value */ js.UndefOr[scala.Double | java.lang.String], java.lang.String] = null,
+    id: java.lang.String = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    onChange: js.Function1[/* value */ js.UndefOr[scala.Double], scala.Unit] = null,
+    parser: js.Function1[/* displayValue */ js.UndefOr[java.lang.String], scala.Double] = null,
+    placeholder: java.lang.String = null,
+    precision: scala.Int | scala.Double = null,
+    prefixCls: java.lang.String = null,
+    size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
+    step: scala.Double | java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tabIndex: scala.Int | scala.Double = null,
+    value: scala.Int | scala.Double = null
+  ): InputNumberProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (parser != null) __obj.updateDynamic("parser")(parser)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InputNumberProps]
+  }
+}
+

@@ -15,3 +15,26 @@ trait PluginMount extends js.Object {
   var Type: java.lang.String
 }
 
+object PluginMount {
+  @scala.inline
+  def apply(
+    Description: java.lang.String,
+    Destination: java.lang.String,
+    Name: java.lang.String,
+    Options: js.Array[java.lang.String],
+    Settable: js.Array[java.lang.String],
+    Source: java.lang.String,
+    Type: java.lang.String
+  ): PluginMount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("Destination")(Destination)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Options")(Options)
+    __obj.updateDynamic("Settable")(Settable)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("Type")(Type)
+    __obj.asInstanceOf[PluginMount]
+  }
+}
+

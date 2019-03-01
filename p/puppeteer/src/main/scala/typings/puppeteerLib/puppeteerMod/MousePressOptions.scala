@@ -18,3 +18,13 @@ trait MousePressOptions extends js.Object {
   var clickCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MousePressOptions {
+  @scala.inline
+  def apply(button: MouseButtons = null, clickCount: scala.Int | scala.Double = null): MousePressOptions = {
+    val __obj = js.Dynamic.literal()
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (clickCount != null) __obj.updateDynamic("clickCount")(clickCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MousePressOptions]
+  }
+}
+

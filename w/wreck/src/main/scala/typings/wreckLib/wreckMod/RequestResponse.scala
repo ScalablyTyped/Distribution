@@ -10,3 +10,13 @@ trait RequestResponse extends js.Object {
   var res: nodeLib.httpMod.IncomingMessage
 }
 
+object RequestResponse {
+  @scala.inline
+  def apply(payload: js.Any, res: nodeLib.httpMod.IncomingMessage): RequestResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("payload")(payload)
+    __obj.updateDynamic("res")(res)
+    __obj.asInstanceOf[RequestResponse]
+  }
+}
+

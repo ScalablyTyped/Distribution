@@ -11,3 +11,14 @@ trait OAuthIdentityDetails extends js.Object {
   var username: java.lang.String
 }
 
+object OAuthIdentityDetails {
+  @scala.inline
+  def apply(html_url: java.lang.String, name: java.lang.String, username: java.lang.String): OAuthIdentityDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("html_url")(html_url)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[OAuthIdentityDetails]
+  }
+}
+

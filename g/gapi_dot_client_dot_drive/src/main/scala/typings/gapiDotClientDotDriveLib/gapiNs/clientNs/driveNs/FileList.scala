@@ -23,3 +23,20 @@ trait FileList extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FileList {
+  @scala.inline
+  def apply(
+    files: js.Array[File] = null,
+    incompleteSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null
+  ): FileList = {
+    val __obj = js.Dynamic.literal()
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (!js.isUndefined(incompleteSearch)) __obj.updateDynamic("incompleteSearch")(incompleteSearch)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[FileList]
+  }
+}
+

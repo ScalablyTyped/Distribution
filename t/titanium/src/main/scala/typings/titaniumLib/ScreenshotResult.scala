@@ -15,3 +15,12 @@ trait ScreenshotResult extends js.Object {
   var media: js.UndefOr[titaniumLib.TitaniumNs.Blob] = js.undefined
 }
 
+object ScreenshotResult {
+  @scala.inline
+  def apply(media: titaniumLib.TitaniumNs.Blob = null): ScreenshotResult = {
+    val __obj = js.Dynamic.literal()
+    if (media != null) __obj.updateDynamic("media")(media)
+    __obj.asInstanceOf[ScreenshotResult]
+  }
+}
+

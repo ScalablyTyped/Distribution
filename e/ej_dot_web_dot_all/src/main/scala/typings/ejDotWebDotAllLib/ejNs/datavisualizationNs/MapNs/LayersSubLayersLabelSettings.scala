@@ -28,3 +28,22 @@ trait LayersSubLayersLabelSettings extends js.Object {
   var smartLabelSize: js.UndefOr[LabelSize | java.lang.String] = js.undefined
 }
 
+object LayersSubLayersLabelSettings {
+  @scala.inline
+  def apply(
+    enableSmartLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    labelLength: scala.Int | scala.Double = null,
+    labelPath: java.lang.String = null,
+    showLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    smartLabelSize: LabelSize | java.lang.String = null
+  ): LayersSubLayersLabelSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableSmartLabel)) __obj.updateDynamic("enableSmartLabel")(enableSmartLabel)
+    if (labelLength != null) __obj.updateDynamic("labelLength")(labelLength.asInstanceOf[js.Any])
+    if (labelPath != null) __obj.updateDynamic("labelPath")(labelPath)
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels)
+    if (smartLabelSize != null) __obj.updateDynamic("smartLabelSize")(smartLabelSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LayersSubLayersLabelSettings]
+  }
+}
+

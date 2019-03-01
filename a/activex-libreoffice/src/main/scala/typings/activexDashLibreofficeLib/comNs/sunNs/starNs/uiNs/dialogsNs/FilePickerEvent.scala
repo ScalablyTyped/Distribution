@@ -16,3 +16,13 @@ trait FilePickerEvent
   var ElementId: scala.Double
 }
 
+object FilePickerEvent {
+  @scala.inline
+  def apply(ElementId: scala.Double, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): FilePickerEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementId")(ElementId)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[FilePickerEvent]
+  }
+}
+

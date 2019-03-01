@@ -44,3 +44,28 @@ trait XValueBinding
   def supportsType(aType: activexDashLibreofficeLib.`type`): scala.Boolean
 }
 
+object XValueBinding {
+  @scala.inline
+  def apply(
+    SupportedValueTypes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
+    acquire: js.Function0[scala.Unit],
+    getSupportedValueTypes: js.Function0[activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]],
+    getValue: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setValue: js.Function1[js.Any, scala.Unit],
+    supportsType: js.Function1[activexDashLibreofficeLib.`type`, scala.Boolean]
+  ): XValueBinding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SupportedValueTypes")(SupportedValueTypes)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getSupportedValueTypes")(getSupportedValueTypes)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.updateDynamic("supportsType")(supportsType)
+    __obj.asInstanceOf[XValueBinding]
+  }
+}
+

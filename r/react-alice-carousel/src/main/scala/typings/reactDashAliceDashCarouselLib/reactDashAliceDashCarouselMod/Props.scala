@@ -112,3 +112,48 @@ trait Props extends js.Object {
   var swipeDisabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    autoPlay: js.UndefOr[scala.Boolean] = js.undefined,
+    autoPlayActionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    autoPlayDirection: java.lang.String = null,
+    autoPlayInterval: scala.Int | scala.Double = null,
+    buttonsDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    dotsDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    fadeOutAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    infinite: js.UndefOr[scala.Boolean] = js.undefined,
+    keysControlDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseDragEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    onSlideChange: js.Function1[/* e */ EventObject, scala.Unit] = null,
+    onSlideChanged: js.Function1[/* e */ EventObject, scala.Unit] = null,
+    playButtonEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    responsive: js.Object = null,
+    slideToIndex: scala.Int | scala.Double = null,
+    startIndex: scala.Int | scala.Double = null,
+    swipeDisabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
+    if (!js.isUndefined(autoPlayActionDisabled)) __obj.updateDynamic("autoPlayActionDisabled")(autoPlayActionDisabled)
+    if (autoPlayDirection != null) __obj.updateDynamic("autoPlayDirection")(autoPlayDirection)
+    if (autoPlayInterval != null) __obj.updateDynamic("autoPlayInterval")(autoPlayInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonsDisabled)) __obj.updateDynamic("buttonsDisabled")(buttonsDisabled)
+    if (!js.isUndefined(dotsDisabled)) __obj.updateDynamic("dotsDisabled")(dotsDisabled)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(fadeOutAnimation)) __obj.updateDynamic("fadeOutAnimation")(fadeOutAnimation)
+    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
+    if (!js.isUndefined(keysControlDisabled)) __obj.updateDynamic("keysControlDisabled")(keysControlDisabled)
+    if (!js.isUndefined(mouseDragEnabled)) __obj.updateDynamic("mouseDragEnabled")(mouseDragEnabled)
+    if (onSlideChange != null) __obj.updateDynamic("onSlideChange")(onSlideChange)
+    if (onSlideChanged != null) __obj.updateDynamic("onSlideChanged")(onSlideChanged)
+    if (!js.isUndefined(playButtonEnabled)) __obj.updateDynamic("playButtonEnabled")(playButtonEnabled)
+    if (responsive != null) __obj.updateDynamic("responsive")(responsive)
+    if (slideToIndex != null) __obj.updateDynamic("slideToIndex")(slideToIndex.asInstanceOf[js.Any])
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeDisabled)) __obj.updateDynamic("swipeDisabled")(swipeDisabled)
+    __obj.asInstanceOf[Props]
+  }
+}
+

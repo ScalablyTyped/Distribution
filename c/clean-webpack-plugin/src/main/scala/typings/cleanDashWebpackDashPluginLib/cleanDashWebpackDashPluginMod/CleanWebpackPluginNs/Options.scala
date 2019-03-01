@@ -35,3 +35,24 @@ trait Options extends js.Object {
   var watch: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allowExternal: js.UndefOr[scala.Boolean] = js.undefined,
+    dry: js.UndefOr[scala.Boolean] = js.undefined,
+    exclude: js.Array[java.lang.String] = null,
+    root: java.lang.String = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined,
+    watch: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowExternal)) __obj.updateDynamic("allowExternal")(allowExternal)
+    if (!js.isUndefined(dry)) __obj.updateDynamic("dry")(dry)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[Options]
+  }
+}
+

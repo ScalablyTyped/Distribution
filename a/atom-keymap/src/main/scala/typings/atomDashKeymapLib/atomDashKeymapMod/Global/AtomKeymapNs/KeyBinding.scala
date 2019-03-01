@@ -27,3 +27,32 @@ trait KeyBinding extends js.Object {
   def matches(keystroke: java.lang.String): scala.Boolean
 }
 
+object KeyBinding {
+  @scala.inline
+  def apply(
+    command: java.lang.String,
+    compare: js.Function1[KeyBinding, scala.Double],
+    enabled: scala.Boolean,
+    keystrokeArray: js.Array[java.lang.String],
+    keystrokeCount: scala.Double,
+    keystrokes: java.lang.String,
+    matches: js.Function1[java.lang.String, scala.Boolean],
+    selector: java.lang.String,
+    source: java.lang.String,
+    specificity: scala.Double
+  ): KeyBinding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("compare")(compare)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("keystrokeArray")(keystrokeArray)
+    __obj.updateDynamic("keystrokeCount")(keystrokeCount)
+    __obj.updateDynamic("keystrokes")(keystrokes)
+    __obj.updateDynamic("matches")(matches)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("specificity")(specificity)
+    __obj.asInstanceOf[KeyBinding]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Context extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Context {
+  @scala.inline
+  def apply(
+    facets: js.Array[js.Array[gapiDotClientDotCustomsearchLib.Anon_Anchor]] = null,
+    title: java.lang.String = null
+  ): Context = {
+    val __obj = js.Dynamic.literal()
+    if (facets != null) __obj.updateDynamic("facets")(facets)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Context]
+  }
+}
+

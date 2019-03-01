@@ -19,3 +19,20 @@ trait PricePerBuyer extends js.Object {
   var price: js.UndefOr[Price] = js.undefined
 }
 
+object PricePerBuyer {
+  @scala.inline
+  def apply(
+    auctionTier: java.lang.String = null,
+    billedBuyer: Buyer = null,
+    buyer: Buyer = null,
+    price: Price = null
+  ): PricePerBuyer = {
+    val __obj = js.Dynamic.literal()
+    if (auctionTier != null) __obj.updateDynamic("auctionTier")(auctionTier)
+    if (billedBuyer != null) __obj.updateDynamic("billedBuyer")(billedBuyer)
+    if (buyer != null) __obj.updateDynamic("buyer")(buyer)
+    if (price != null) __obj.updateDynamic("price")(price)
+    __obj.asInstanceOf[PricePerBuyer]
+  }
+}
+

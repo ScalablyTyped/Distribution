@@ -16,3 +16,12 @@ trait PublishXunitXmlFilesRequest extends js.Object {
   var xunitXmlFiles: js.UndefOr[js.Array[FileReference]] = js.undefined
 }
 
+object PublishXunitXmlFilesRequest {
+  @scala.inline
+  def apply(xunitXmlFiles: js.Array[FileReference] = null): PublishXunitXmlFilesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (xunitXmlFiles != null) __obj.updateDynamic("xunitXmlFiles")(xunitXmlFiles)
+    __obj.asInstanceOf[PublishXunitXmlFilesRequest]
+  }
+}
+

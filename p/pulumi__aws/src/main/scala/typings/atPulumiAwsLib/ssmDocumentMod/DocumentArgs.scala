@@ -32,3 +32,24 @@ trait DocumentArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object DocumentArgs {
+  @scala.inline
+  def apply(
+    content: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    documentType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    documentFormat: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    permissions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AccountIdsTypeInput] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): DocumentArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    __obj.updateDynamic("documentType")(documentType.asInstanceOf[js.Any])
+    if (documentFormat != null) __obj.updateDynamic("documentFormat")(documentFormat.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DocumentArgs]
+  }
+}
+

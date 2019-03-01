@@ -9,3 +9,12 @@ trait EventAttributes extends js.Object {
   var onabort: js.Any
 }
 
+object EventAttributes {
+  @scala.inline
+  def apply(onabort: js.Any): EventAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onabort")(onabort)
+    __obj.asInstanceOf[EventAttributes]
+  }
+}
+

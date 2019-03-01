@@ -25,3 +25,28 @@ trait ElementDescriptor extends js.Object {
   var width: js.UndefOr[SizeDescriptor] = js.undefined
 }
 
+object ElementDescriptor {
+  @scala.inline
+  def apply(
+    bottom: PositionDescriptor = null,
+    center: PositionDescriptor = null,
+    height: SizeDescriptor = null,
+    left: PositionDescriptor = null,
+    middle: PositionDescriptor = null,
+    right: PositionDescriptor = null,
+    top: PositionDescriptor = null,
+    width: SizeDescriptor = null
+  ): ElementDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (middle != null) __obj.updateDynamic("middle")(middle)
+    if (right != null) __obj.updateDynamic("right")(right)
+    if (top != null) __obj.updateDynamic("top")(top)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ElementDescriptor]
+  }
+}
+

@@ -10,3 +10,12 @@ trait UploadLineItemsResponse extends js.Object {
   var uploadStatus: js.UndefOr[UploadStatus] = js.undefined
 }
 
+object UploadLineItemsResponse {
+  @scala.inline
+  def apply(uploadStatus: UploadStatus = null): UploadLineItemsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (uploadStatus != null) __obj.updateDynamic("uploadStatus")(uploadStatus)
+    __obj.asInstanceOf[UploadLineItemsResponse]
+  }
+}
+

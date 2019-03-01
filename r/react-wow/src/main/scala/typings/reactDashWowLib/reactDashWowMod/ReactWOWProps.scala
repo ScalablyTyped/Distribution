@@ -15,7 +15,7 @@ trait ReactWOWProps extends js.Object {
     * Animation name.
     * @see https://daneden.github.io/animate.css/
     */
-  var animation: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 76 */ java.lang.String
+  var animation: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 76 */ js.Any
   /**
     * The callback is fired every time an animation is stoped.
     */
@@ -61,5 +61,38 @@ trait ReactWOWProps extends js.Object {
     * @default true
     */
   var scroll: js.UndefOr[scala.Boolean] = js.undefined
+}
+
+object ReactWOWProps {
+  @scala.inline
+  def apply(
+    animation: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 76 */ js.Any,
+    children: reactLib.reactMod.Global.JSXNs.Element,
+    animateClass: java.lang.String = null,
+    callback: js.Function0[scala.Unit] = null,
+    delay: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: java.lang.String = null,
+    iteration: java.lang.String = null,
+    offset: scala.Double | js.Array[scala.Double] = null,
+    overflow: js.UndefOr[scala.Boolean] = js.undefined,
+    resize: js.UndefOr[scala.Boolean] = js.undefined,
+    scroll: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReactWOWProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animation")(animation)
+    __obj.updateDynamic("children")(children)
+    if (animateClass != null) __obj.updateDynamic("animateClass")(animateClass)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (delay != null) __obj.updateDynamic("delay")(delay)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (duration != null) __obj.updateDynamic("duration")(duration)
+    if (iteration != null) __obj.updateDynamic("iteration")(iteration)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(overflow)) __obj.updateDynamic("overflow")(overflow)
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    __obj.asInstanceOf[ReactWOWProps]
+  }
 }
 

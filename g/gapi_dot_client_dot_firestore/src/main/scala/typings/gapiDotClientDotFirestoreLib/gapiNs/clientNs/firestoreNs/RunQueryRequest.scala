@@ -24,3 +24,20 @@ trait RunQueryRequest extends js.Object {
   var transaction: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RunQueryRequest {
+  @scala.inline
+  def apply(
+    newTransaction: TransactionOptions = null,
+    readTime: java.lang.String = null,
+    structuredQuery: StructuredQuery = null,
+    transaction: java.lang.String = null
+  ): RunQueryRequest = {
+    val __obj = js.Dynamic.literal()
+    if (newTransaction != null) __obj.updateDynamic("newTransaction")(newTransaction)
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    if (structuredQuery != null) __obj.updateDynamic("structuredQuery")(structuredQuery)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[RunQueryRequest]
+  }
+}
+

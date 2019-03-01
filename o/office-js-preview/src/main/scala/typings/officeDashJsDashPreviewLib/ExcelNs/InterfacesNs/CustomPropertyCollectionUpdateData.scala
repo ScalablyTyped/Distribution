@@ -10,3 +10,12 @@ trait CustomPropertyCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[CustomPropertyData]] = js.undefined
 }
 
+object CustomPropertyCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[CustomPropertyData] = null): CustomPropertyCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[CustomPropertyCollectionUpdateData]
+  }
+}
+

@@ -40,19 +40,23 @@ object builderDashUtilDashRuntimeLibStrings {
   sealed trait base64 extends js.Object
   
   @js.native
-  sealed trait bintray extends js.Object
+  sealed trait bintray
+    extends builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishProvider
   
   @js.native
-  sealed trait custom extends js.Object
+  sealed trait custom
+    extends builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishProvider
   
   @js.native
   sealed trait draft extends js.Object
   
   @js.native
-  sealed trait generic extends js.Object
+  sealed trait generic
+    extends builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishProvider
   
   @js.native
-  sealed trait github extends js.Object
+  sealed trait github
+    extends builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishProvider
   
   @js.native
   sealed trait hex extends js.Object
@@ -79,10 +83,12 @@ object builderDashUtilDashRuntimeLibStrings {
   sealed trait release extends js.Object
   
   @js.native
-  sealed trait s3 extends js.Object
+  sealed trait s3
+    extends builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishProvider
   
   @js.native
-  sealed trait spaces extends js.Object
+  sealed trait spaces
+    extends builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishProvider
   
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]

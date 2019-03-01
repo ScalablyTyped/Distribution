@@ -10,3 +10,15 @@ trait Anon_Node extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Node {
+  @scala.inline
+  def apply(
+    node: glDashReactLib.glDashReactMod.Node | glDashReactLib.glDashReactMod.Bus,
+    `type`: java.lang.String
+  ): Anon_Node = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Node]
+  }
+}
+

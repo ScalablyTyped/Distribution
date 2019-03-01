@@ -37,3 +37,26 @@ trait ScrollSettings extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object ScrollSettings {
+  @scala.inline
+  def apply(
+    allowScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSheetOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
+    allowVirtualScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Double | java.lang.String = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollMode: scrollMode | java.lang.String = null,
+    width: scala.Double | java.lang.String = null
+  ): ScrollSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowScrolling)) __obj.updateDynamic("allowScrolling")(allowScrolling)
+    if (!js.isUndefined(allowSheetOnDemand)) __obj.updateDynamic("allowSheetOnDemand")(allowSheetOnDemand)
+    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (scrollMode != null) __obj.updateDynamic("scrollMode")(scrollMode.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScrollSettings]
+  }
+}
+

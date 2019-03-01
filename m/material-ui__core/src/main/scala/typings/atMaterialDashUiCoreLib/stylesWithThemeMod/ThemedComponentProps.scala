@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_]] = js.undefined
 }
 
+object ThemedComponentProps {
+  @scala.inline
+  def apply(innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null): ThemedComponentProps = {
+    val __obj = js.Dynamic.literal()
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThemedComponentProps]
+  }
+}
+

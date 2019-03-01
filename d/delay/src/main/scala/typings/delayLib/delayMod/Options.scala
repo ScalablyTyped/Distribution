@@ -13,3 +13,12 @@ trait Options extends js.Object {
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(signal: AbortSignal = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (signal != null) __obj.updateDynamic("signal")(signal)
+    __obj.asInstanceOf[Options]
+  }
+}
+

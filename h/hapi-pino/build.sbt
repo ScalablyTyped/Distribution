@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "hapi-pino"
-version := "5.2-dt-20181212Z-228d28"
+version := "5.2-dt-20181212Z-51dcf5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "boom" % "7.2-dt-20181116Z-344433",
-  "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-804551",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190212Z-139704",
-  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-32d544",
-  "org.scalablytyped" %%% "joi" % "14.3-dt-20190212Z-f16652",
-  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20180214Z-b2cae6",
-  "org.scalablytyped" %%% "mimos" % "3.0-dt-20180214Z-086af5",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190212Z-f8afed",
-  "org.scalablytyped" %%% "podium" % "1.0-dt-20180214Z-7174cc",
-  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-812b09",
-  "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-d4faa4",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "boom" % "7.2-dt-20181116Z-6e71a0",
+  "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-31233f",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190212Z-f90893",
+  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-43358d",
+  "org.scalablytyped" %%% "joi" % "14.3-dt-20190212Z-d23d37",
+  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20180214Z-9ef634",
+  "org.scalablytyped" %%% "mimos" % "3.0-dt-20180214Z-385173",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190212Z-9410dc",
+  "org.scalablytyped" %%% "podium" % "1.0-dt-20180214Z-5dab68",
+  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-036772",
+  "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-92275d",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

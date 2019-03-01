@@ -16,3 +16,20 @@ trait LineWidgetOptions extends js.Object {
   var showIfHidden: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LineWidgetOptions {
+  @scala.inline
+  def apply(
+    above: js.UndefOr[scala.Boolean] = js.undefined,
+    coverGutter: js.UndefOr[scala.Boolean] = js.undefined,
+    noHScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    showIfHidden: js.UndefOr[scala.Boolean] = js.undefined
+  ): LineWidgetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(above)) __obj.updateDynamic("above")(above)
+    if (!js.isUndefined(coverGutter)) __obj.updateDynamic("coverGutter")(coverGutter)
+    if (!js.isUndefined(noHScroll)) __obj.updateDynamic("noHScroll")(noHScroll)
+    if (!js.isUndefined(showIfHidden)) __obj.updateDynamic("showIfHidden")(showIfHidden)
+    __obj.asInstanceOf[LineWidgetOptions]
+  }
+}
+

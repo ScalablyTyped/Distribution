@@ -29,3 +29,26 @@ trait SwimlaneClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SwimlaneClickEventArgs {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    model: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): SwimlaneClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SwimlaneClickEventArgs]
+  }
+}
+

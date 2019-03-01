@@ -9,3 +9,14 @@ trait Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgori
   var rule: atPulumiPulumiLib.outputMod.Input[Anon_ApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm]
 }
 
+object Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm {
+  @scala.inline
+  def apply(
+    rule: atPulumiPulumiLib.outputMod.Input[Anon_ApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm]
+  ): Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm]
+  }
+}
+

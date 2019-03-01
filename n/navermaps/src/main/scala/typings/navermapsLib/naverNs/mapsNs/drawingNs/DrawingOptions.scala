@@ -19,3 +19,34 @@ trait DrawingOptions extends js.Object {
   var rectangleOptions: js.UndefOr[navermapsLib.naverNs.mapsNs.RectangleOptions] = js.undefined
 }
 
+object DrawingOptions {
+  @scala.inline
+  def apply(
+    arrowlineOptions: navermapsLib.naverNs.mapsNs.PolylineOptions = null,
+    controlPointOptions: controlPointOptions = null,
+    drawingControl: js.Array[DrawingMode] = null,
+    drawingControlOptions: drawingControlOptions = null,
+    drawingMode: DrawingMode = null,
+    ellipseOptions: navermapsLib.naverNs.mapsNs.EllipseOptions = null,
+    map: navermapsLib.naverNs.mapsNs.Map = null,
+    markerOptions: navermapsLib.naverNs.mapsNs.MarkerOptions = null,
+    polygonOptions: navermapsLib.naverNs.mapsNs.PolygonOptions = null,
+    polylineOptions: navermapsLib.naverNs.mapsNs.PolylineOptions = null,
+    rectangleOptions: navermapsLib.naverNs.mapsNs.RectangleOptions = null
+  ): DrawingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (arrowlineOptions != null) __obj.updateDynamic("arrowlineOptions")(arrowlineOptions)
+    if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions)
+    if (drawingControl != null) __obj.updateDynamic("drawingControl")(drawingControl)
+    if (drawingControlOptions != null) __obj.updateDynamic("drawingControlOptions")(drawingControlOptions)
+    if (drawingMode != null) __obj.updateDynamic("drawingMode")(drawingMode)
+    if (ellipseOptions != null) __obj.updateDynamic("ellipseOptions")(ellipseOptions)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions)
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
+    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions)
+    if (rectangleOptions != null) __obj.updateDynamic("rectangleOptions")(rectangleOptions)
+    __obj.asInstanceOf[DrawingOptions]
+  }
+}
+

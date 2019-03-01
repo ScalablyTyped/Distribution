@@ -11,3 +11,12 @@ trait Location extends js.Object {
   var query: js.Any
 }
 
+object Location {
+  @scala.inline
+  def apply(query: js.Any): Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[Location]
+  }
+}
+

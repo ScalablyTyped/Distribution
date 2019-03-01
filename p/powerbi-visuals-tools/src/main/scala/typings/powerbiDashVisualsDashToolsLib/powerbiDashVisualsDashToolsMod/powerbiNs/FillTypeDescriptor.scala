@@ -11,3 +11,18 @@ trait FillTypeDescriptor extends js.Object {
   var solid: js.UndefOr[powerbiDashVisualsDashToolsLib.Anon_ColorFillSolidColorTypeDescriptor] = js.undefined
 }
 
+object FillTypeDescriptor {
+  @scala.inline
+  def apply(
+    gradient: powerbiDashVisualsDashToolsLib.Anon_EndColorStartColor = null,
+    pattern: powerbiDashVisualsDashToolsLib.Anon_ColorPatternKindBoolean = null,
+    solid: powerbiDashVisualsDashToolsLib.Anon_ColorFillSolidColorTypeDescriptor = null
+  ): FillTypeDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (solid != null) __obj.updateDynamic("solid")(solid)
+    __obj.asInstanceOf[FillTypeDescriptor]
+  }
+}
+

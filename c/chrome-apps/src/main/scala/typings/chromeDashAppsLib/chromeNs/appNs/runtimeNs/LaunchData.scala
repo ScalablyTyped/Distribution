@@ -66,3 +66,42 @@ trait LaunchData extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LaunchData {
+  @scala.inline
+  def apply(
+    actionData: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_NEWNOTE, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NEWNOTE[keyof chrome-apps.Anon_NEWNOTE] */ js.Any
+      ]
+    ] = null,
+    id: java.lang.String = null,
+    isKioskSession: js.UndefOr[scala.Boolean] = js.undefined,
+    isPublicSession: js.UndefOr[scala.Boolean] = js.undefined,
+    items: js.Array[LaunchDataItem] = null,
+    referrerUrl: java.lang.String = null,
+    source: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_ABOUTPAGE, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABOUTPAGE[keyof chrome-apps.Anon_ABOUTPAGE] */ js.Any
+      ]
+    ] = null,
+    url: java.lang.String = null
+  ): LaunchData = {
+    val __obj = js.Dynamic.literal()
+    if (actionData != null) __obj.updateDynamic("actionData")(actionData.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isKioskSession)) __obj.updateDynamic("isKioskSession")(isKioskSession)
+    if (!js.isUndefined(isPublicSession)) __obj.updateDynamic("isPublicSession")(isPublicSession)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (referrerUrl != null) __obj.updateDynamic("referrerUrl")(referrerUrl)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[LaunchData]
+  }
+}
+

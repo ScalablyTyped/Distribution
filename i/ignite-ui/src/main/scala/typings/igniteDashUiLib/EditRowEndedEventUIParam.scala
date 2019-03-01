@@ -32,3 +32,24 @@ trait EditRowEndedEventUIParam extends js.Object {
   var values: js.UndefOr[js.Any] = js.undefined
 }
 
+object EditRowEndedEventUIParam {
+  @scala.inline
+  def apply(
+    oldValues: js.Any = null,
+    owner: js.Any = null,
+    rowAdding: js.UndefOr[scala.Boolean] = js.undefined,
+    rowID: js.Any = null,
+    update: js.UndefOr[scala.Boolean] = js.undefined,
+    values: js.Any = null
+  ): EditRowEndedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (oldValues != null) __obj.updateDynamic("oldValues")(oldValues)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding)
+    if (rowID != null) __obj.updateDynamic("rowID")(rowID)
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[EditRowEndedEventUIParam]
+  }
+}
+

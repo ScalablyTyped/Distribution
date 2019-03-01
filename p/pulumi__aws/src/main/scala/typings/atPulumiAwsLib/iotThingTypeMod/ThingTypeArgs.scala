@@ -19,3 +19,18 @@ trait ThingTypeArgs extends js.Object {
   ] = js.undefined
 }
 
+object ThingTypeArgs {
+  @scala.inline
+  def apply(
+    deprecated: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    properties: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DescriptionSearchableAttributes] = null
+  ): ThingTypeArgs = {
+    val __obj = js.Dynamic.literal()
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThingTypeArgs]
+  }
+}
+

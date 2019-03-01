@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SourceFile extends Declaration {
+trait SourceFile
+  extends Declaration
+     with BlockLike {
   var amdDependencies: js.Array[AmdDependency] = js.native
   var endOfFileToken: Token[SyntaxKind] = js.native
   var fileName: java.lang.String = js.native

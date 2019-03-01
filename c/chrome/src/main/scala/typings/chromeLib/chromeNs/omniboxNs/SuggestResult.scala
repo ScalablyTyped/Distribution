@@ -12,3 +12,13 @@ trait SuggestResult extends js.Object {
   var description: java.lang.String
 }
 
+object SuggestResult {
+  @scala.inline
+  def apply(content: java.lang.String, description: java.lang.String): SuggestResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[SuggestResult]
+  }
+}
+

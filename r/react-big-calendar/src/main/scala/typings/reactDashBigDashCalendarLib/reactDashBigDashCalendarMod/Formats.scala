@@ -65,3 +65,42 @@ trait Formats extends js.Object {
   var weekdayFormat: js.UndefOr[DateFormat] = js.undefined
 }
 
+object Formats {
+  @scala.inline
+  def apply(
+    agendaDateFormat: DateFormat = null,
+    agendaHeaderFormat: DateRangeFormatFunction = null,
+    agendaTimeFormat: DateFormat = null,
+    agendaTimeRangeFormat: DateRangeFormatFunction = null,
+    dateFormat: DateFormat = null,
+    dayFormat: DateFormat = null,
+    dayHeaderFormat: DateFormat = null,
+    dayRangeHeaderFormat: DateRangeFormatFunction = null,
+    eventTimeRangeEndFormat: DateRangeFormatFunction = null,
+    eventTimeRangeFormat: DateRangeFormatFunction = null,
+    eventTimeRangeStartFormat: DateRangeFormatFunction = null,
+    monthHeaderFormat: DateFormat = null,
+    selectRangeFormat: DateRangeFormatFunction = null,
+    timeGutterFormat: DateFormat = null,
+    weekdayFormat: DateFormat = null
+  ): Formats = {
+    val __obj = js.Dynamic.literal()
+    if (agendaDateFormat != null) __obj.updateDynamic("agendaDateFormat")(agendaDateFormat.asInstanceOf[js.Any])
+    if (agendaHeaderFormat != null) __obj.updateDynamic("agendaHeaderFormat")(agendaHeaderFormat)
+    if (agendaTimeFormat != null) __obj.updateDynamic("agendaTimeFormat")(agendaTimeFormat.asInstanceOf[js.Any])
+    if (agendaTimeRangeFormat != null) __obj.updateDynamic("agendaTimeRangeFormat")(agendaTimeRangeFormat)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
+    if (dayFormat != null) __obj.updateDynamic("dayFormat")(dayFormat.asInstanceOf[js.Any])
+    if (dayHeaderFormat != null) __obj.updateDynamic("dayHeaderFormat")(dayHeaderFormat.asInstanceOf[js.Any])
+    if (dayRangeHeaderFormat != null) __obj.updateDynamic("dayRangeHeaderFormat")(dayRangeHeaderFormat)
+    if (eventTimeRangeEndFormat != null) __obj.updateDynamic("eventTimeRangeEndFormat")(eventTimeRangeEndFormat)
+    if (eventTimeRangeFormat != null) __obj.updateDynamic("eventTimeRangeFormat")(eventTimeRangeFormat)
+    if (eventTimeRangeStartFormat != null) __obj.updateDynamic("eventTimeRangeStartFormat")(eventTimeRangeStartFormat)
+    if (monthHeaderFormat != null) __obj.updateDynamic("monthHeaderFormat")(monthHeaderFormat.asInstanceOf[js.Any])
+    if (selectRangeFormat != null) __obj.updateDynamic("selectRangeFormat")(selectRangeFormat)
+    if (timeGutterFormat != null) __obj.updateDynamic("timeGutterFormat")(timeGutterFormat.asInstanceOf[js.Any])
+    if (weekdayFormat != null) __obj.updateDynamic("weekdayFormat")(weekdayFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Formats]
+  }
+}
+

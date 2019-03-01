@@ -20,3 +20,18 @@ trait StepperSpeed extends js.Object {
   var sps: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StepperSpeed {
+  @scala.inline
+  def apply(
+    pps: scala.Int | scala.Double = null,
+    rpm: scala.Int | scala.Double = null,
+    sps: scala.Int | scala.Double = null
+  ): StepperSpeed = {
+    val __obj = js.Dynamic.literal()
+    if (pps != null) __obj.updateDynamic("pps")(pps.asInstanceOf[js.Any])
+    if (rpm != null) __obj.updateDynamic("rpm")(rpm.asInstanceOf[js.Any])
+    if (sps != null) __obj.updateDynamic("sps")(sps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StepperSpeed]
+  }
+}
+

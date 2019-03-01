@@ -11,3 +11,35 @@ trait SlideRenderer extends XSlideRenderer {
   def create(): scala.Unit
 }
 
+object SlideRenderer {
+  @scala.inline
+  def apply(
+    calculatePreviewSize: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size
+    ],
+    create: js.Function0[scala.Unit],
+    createPreview: js.Function3[
+      XDrawPage, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap
+    ],
+    createPreviewForCanvas: js.Function4[
+      XDrawPage, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
+    ]
+  ): SlideRenderer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calculatePreviewSize")(calculatePreviewSize)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createPreview")(createPreview)
+    __obj.updateDynamic("createPreviewForCanvas")(createPreviewForCanvas)
+    __obj.asInstanceOf[SlideRenderer]
+  }
+}
+

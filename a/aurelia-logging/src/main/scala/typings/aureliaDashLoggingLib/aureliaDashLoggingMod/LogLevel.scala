@@ -32,3 +32,27 @@ trait LogLevel
   var warn: scala.Double
 }
 
+object LogLevel {
+  @scala.inline
+  def apply(
+    debug: scala.Double,
+    error: scala.Double,
+    info: scala.Double,
+    none: scala.Double,
+    warn: scala.Double,
+    StringDictionary: /**
+    * Additional log levels defined at runtime.
+    */
+  /* level */ org.scalablytyped.runtime.StringDictionary[scala.Double] = null
+  ): LogLevel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("none")(none)
+    __obj.updateDynamic("warn")(warn)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[LogLevel]
+  }
+}
+

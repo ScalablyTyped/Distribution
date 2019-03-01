@@ -15,3 +15,18 @@ trait Selector extends js.Object {
   var metadata: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Selector {
+  @scala.inline
+  def apply(
+    data: js.Array[DataRepetitionSelector] = null,
+    id: java.lang.String = null,
+    metadata: java.lang.String = null
+  ): Selector = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[Selector]
+  }
+}
+

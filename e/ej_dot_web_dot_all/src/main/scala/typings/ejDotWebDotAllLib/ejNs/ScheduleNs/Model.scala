@@ -342,3 +342,196 @@ trait Model extends js.Object {
   var workWeek: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
+    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
+    agendaViewSettings: AgendaViewSettings = null,
+    allDayCellsTemplateId: java.lang.String = null,
+    allowDelete: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    allowInline: js.UndefOr[scala.Boolean] = js.undefined,
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    appointmentChanged: js.Function1[/* e */ AppointmentChangedEventArgs, scala.Unit] = null,
+    appointmentClick: js.Function1[/* e */ AppointmentClickEventArgs, scala.Unit] = null,
+    appointmentCreated: js.Function1[/* e */ AppointmentCreatedEventArgs, scala.Unit] = null,
+    appointmentDragArea: java.lang.String = null,
+    appointmentHover: js.Function1[/* e */ AppointmentHoverEventArgs, scala.Unit] = null,
+    appointmentRemoved: js.Function1[/* e */ AppointmentRemovedEventArgs, scala.Unit] = null,
+    appointmentSettings: AppointmentSettings = null,
+    appointmentTemplateId: java.lang.String = null,
+    appointmentWindowOpen: js.Function1[/* e */ AppointmentWindowOpenEventArgs, scala.Unit] = null,
+    beforeAppointmentChange: js.Function1[/* e */ BeforeAppointmentChangeEventArgs, scala.Unit] = null,
+    beforeAppointmentCreate: js.Function1[/* e */ BeforeAppointmentCreateEventArgs, scala.Unit] = null,
+    beforeAppointmentRemove: js.Function1[/* e */ BeforeAppointmentRemoveEventArgs, scala.Unit] = null,
+    beforeContextMenuOpen: js.Function1[/* e */ BeforeContextMenuOpenEventArgs, scala.Unit] = null,
+    blockoutSettings: BlockoutSettings = null,
+    categorizeSettings: CategorizeSettings = null,
+    cellClick: js.Function1[/* e */ CellClickEventArgs, scala.Unit] = null,
+    cellDoubleClick: js.Function1[/* e */ CellDoubleClickEventArgs, scala.Unit] = null,
+    cellHeight: java.lang.String = null,
+    cellHover: js.Function1[/* e */ CellHoverEventArgs, scala.Unit] = null,
+    cellWidth: java.lang.String = null,
+    contextMenuSettings: ContextMenuSettings = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    currentDate: js.Any = null,
+    currentView: java.lang.String | CurrentView = null,
+    dateFormat: java.lang.String = null,
+    dateHeaderTemplateId: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    drag: js.Function1[/* e */ DragEventArgs, scala.Unit] = null,
+    dragStart: js.Function1[/* e */ DragStartEventArgs, scala.Unit] = null,
+    dragStop: js.Function1[/* e */ DragStopEventArgs, scala.Unit] = null,
+    enableAppointmentResize: js.UndefOr[scala.Boolean] = js.undefined,
+    enableLoadOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRecurrenceValidation: js.UndefOr[scala.Boolean] = js.undefined,
+    endHour: scala.Int | scala.Double = null,
+    firstDayOfWeek: java.lang.String = null,
+    group: Group = null,
+    height: java.lang.String = null,
+    isDST: js.UndefOr[scala.Boolean] = js.undefined,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    keyDown: js.Function1[/* e */ KeyDownEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    maxDate: js.Any = null,
+    menuItemClick: js.Function1[/* e */ MenuItemClickEventArgs, scala.Unit] = null,
+    minDate: js.Any = null,
+    navigation: js.Function1[/* e */ NavigationEventArgs, scala.Unit] = null,
+    orientation: java.lang.String | Orientation = null,
+    overflowButtonClick: js.Function1[/* e */ OverflowButtonClickEventArgs, scala.Unit] = null,
+    overflowButtonHover: js.Function1[/* e */ OverflowButtonHoverEventArgs, scala.Unit] = null,
+    prioritySettings: PrioritySettings = null,
+    queryCellInfo: js.Function1[/* e */ QueryCellInfoEventArgs, scala.Unit] = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    reminder: js.Function1[/* e */ ReminderEventArgs, scala.Unit] = null,
+    reminderSettings: ReminderSettings = null,
+    renderDates: RenderDates = null,
+    resize: js.Function1[/* e */ ResizeEventArgs, scala.Unit] = null,
+    resizeStart: js.Function1[/* e */ ResizeStartEventArgs, scala.Unit] = null,
+    resizeStop: js.Function1[/* e */ ResizeStopEventArgs, scala.Unit] = null,
+    resourceHeaderTemplateId: java.lang.String = null,
+    resources: js.Array[Resource] = null,
+    showAllDayRow: js.UndefOr[scala.Boolean] = js.undefined,
+    showAppointmentNavigator: js.UndefOr[scala.Boolean] = js.undefined,
+    showCurrentTimeIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    showDeleteConfirmationDialog: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeaderBar: js.UndefOr[scala.Boolean] = js.undefined,
+    showLocationField: js.UndefOr[scala.Boolean] = js.undefined,
+    showNextPrevMonth: js.UndefOr[scala.Boolean] = js.undefined,
+    showOverflowButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showQuickWindow: js.UndefOr[scala.Boolean] = js.undefined,
+    showTimeZoneFields: js.UndefOr[scala.Boolean] = js.undefined,
+    showWeekend: js.UndefOr[scala.Boolean] = js.undefined,
+    startHour: scala.Int | scala.Double = null,
+    timeMode: java.lang.String | TimeMode = null,
+    timeScale: TimeScale = null,
+    timeZone: java.lang.String = null,
+    timeZoneCollection: TimeZoneCollection = null,
+    tooltipSettings: TooltipSettings = null,
+    views: js.Array[_] = null,
+    width: java.lang.String = null,
+    workCellsTemplateId: java.lang.String = null,
+    workHours: WorkHours = null,
+    workWeek: js.Array[_] = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
+    if (agendaViewSettings != null) __obj.updateDynamic("agendaViewSettings")(agendaViewSettings)
+    if (allDayCellsTemplateId != null) __obj.updateDynamic("allDayCellsTemplateId")(allDayCellsTemplateId)
+    if (!js.isUndefined(allowDelete)) __obj.updateDynamic("allowDelete")(allowDelete)
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
+    if (!js.isUndefined(allowInline)) __obj.updateDynamic("allowInline")(allowInline)
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (appointmentChanged != null) __obj.updateDynamic("appointmentChanged")(appointmentChanged)
+    if (appointmentClick != null) __obj.updateDynamic("appointmentClick")(appointmentClick)
+    if (appointmentCreated != null) __obj.updateDynamic("appointmentCreated")(appointmentCreated)
+    if (appointmentDragArea != null) __obj.updateDynamic("appointmentDragArea")(appointmentDragArea)
+    if (appointmentHover != null) __obj.updateDynamic("appointmentHover")(appointmentHover)
+    if (appointmentRemoved != null) __obj.updateDynamic("appointmentRemoved")(appointmentRemoved)
+    if (appointmentSettings != null) __obj.updateDynamic("appointmentSettings")(appointmentSettings)
+    if (appointmentTemplateId != null) __obj.updateDynamic("appointmentTemplateId")(appointmentTemplateId)
+    if (appointmentWindowOpen != null) __obj.updateDynamic("appointmentWindowOpen")(appointmentWindowOpen)
+    if (beforeAppointmentChange != null) __obj.updateDynamic("beforeAppointmentChange")(beforeAppointmentChange)
+    if (beforeAppointmentCreate != null) __obj.updateDynamic("beforeAppointmentCreate")(beforeAppointmentCreate)
+    if (beforeAppointmentRemove != null) __obj.updateDynamic("beforeAppointmentRemove")(beforeAppointmentRemove)
+    if (beforeContextMenuOpen != null) __obj.updateDynamic("beforeContextMenuOpen")(beforeContextMenuOpen)
+    if (blockoutSettings != null) __obj.updateDynamic("blockoutSettings")(blockoutSettings)
+    if (categorizeSettings != null) __obj.updateDynamic("categorizeSettings")(categorizeSettings)
+    if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
+    if (cellDoubleClick != null) __obj.updateDynamic("cellDoubleClick")(cellDoubleClick)
+    if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight)
+    if (cellHover != null) __obj.updateDynamic("cellHover")(cellHover)
+    if (cellWidth != null) __obj.updateDynamic("cellWidth")(cellWidth)
+    if (contextMenuSettings != null) __obj.updateDynamic("contextMenuSettings")(contextMenuSettings)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate)
+    if (currentView != null) __obj.updateDynamic("currentView")(currentView.asInstanceOf[js.Any])
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (dateHeaderTemplateId != null) __obj.updateDynamic("dateHeaderTemplateId")(dateHeaderTemplateId)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
+    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
+    if (!js.isUndefined(enableAppointmentResize)) __obj.updateDynamic("enableAppointmentResize")(enableAppointmentResize)
+    if (!js.isUndefined(enableLoadOnDemand)) __obj.updateDynamic("enableLoadOnDemand")(enableLoadOnDemand)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableRecurrenceValidation)) __obj.updateDynamic("enableRecurrenceValidation")(enableRecurrenceValidation)
+    if (endHour != null) __obj.updateDynamic("endHour")(endHour.asInstanceOf[js.Any])
+    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(isDST)) __obj.updateDynamic("isDST")(isDST)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (keyDown != null) __obj.updateDynamic("keyDown")(keyDown)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (menuItemClick != null) __obj.updateDynamic("menuItemClick")(menuItemClick)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (overflowButtonClick != null) __obj.updateDynamic("overflowButtonClick")(overflowButtonClick)
+    if (overflowButtonHover != null) __obj.updateDynamic("overflowButtonHover")(overflowButtonHover)
+    if (prioritySettings != null) __obj.updateDynamic("prioritySettings")(prioritySettings)
+    if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(queryCellInfo)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (reminder != null) __obj.updateDynamic("reminder")(reminder)
+    if (reminderSettings != null) __obj.updateDynamic("reminderSettings")(reminderSettings)
+    if (renderDates != null) __obj.updateDynamic("renderDates")(renderDates)
+    if (resize != null) __obj.updateDynamic("resize")(resize)
+    if (resizeStart != null) __obj.updateDynamic("resizeStart")(resizeStart)
+    if (resizeStop != null) __obj.updateDynamic("resizeStop")(resizeStop)
+    if (resourceHeaderTemplateId != null) __obj.updateDynamic("resourceHeaderTemplateId")(resourceHeaderTemplateId)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (!js.isUndefined(showAllDayRow)) __obj.updateDynamic("showAllDayRow")(showAllDayRow)
+    if (!js.isUndefined(showAppointmentNavigator)) __obj.updateDynamic("showAppointmentNavigator")(showAppointmentNavigator)
+    if (!js.isUndefined(showCurrentTimeIndicator)) __obj.updateDynamic("showCurrentTimeIndicator")(showCurrentTimeIndicator)
+    if (!js.isUndefined(showDeleteConfirmationDialog)) __obj.updateDynamic("showDeleteConfirmationDialog")(showDeleteConfirmationDialog)
+    if (!js.isUndefined(showHeaderBar)) __obj.updateDynamic("showHeaderBar")(showHeaderBar)
+    if (!js.isUndefined(showLocationField)) __obj.updateDynamic("showLocationField")(showLocationField)
+    if (!js.isUndefined(showNextPrevMonth)) __obj.updateDynamic("showNextPrevMonth")(showNextPrevMonth)
+    if (!js.isUndefined(showOverflowButton)) __obj.updateDynamic("showOverflowButton")(showOverflowButton)
+    if (!js.isUndefined(showQuickWindow)) __obj.updateDynamic("showQuickWindow")(showQuickWindow)
+    if (!js.isUndefined(showTimeZoneFields)) __obj.updateDynamic("showTimeZoneFields")(showTimeZoneFields)
+    if (!js.isUndefined(showWeekend)) __obj.updateDynamic("showWeekend")(showWeekend)
+    if (startHour != null) __obj.updateDynamic("startHour")(startHour.asInstanceOf[js.Any])
+    if (timeMode != null) __obj.updateDynamic("timeMode")(timeMode.asInstanceOf[js.Any])
+    if (timeScale != null) __obj.updateDynamic("timeScale")(timeScale)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (timeZoneCollection != null) __obj.updateDynamic("timeZoneCollection")(timeZoneCollection)
+    if (tooltipSettings != null) __obj.updateDynamic("tooltipSettings")(tooltipSettings)
+    if (views != null) __obj.updateDynamic("views")(views)
+    if (width != null) __obj.updateDynamic("width")(width)
+    if (workCellsTemplateId != null) __obj.updateDynamic("workCellsTemplateId")(workCellsTemplateId)
+    if (workHours != null) __obj.updateDynamic("workHours")(workHours)
+    if (workWeek != null) __obj.updateDynamic("workWeek")(workWeek)
+    __obj.asInstanceOf[Model]
+  }
+}
+

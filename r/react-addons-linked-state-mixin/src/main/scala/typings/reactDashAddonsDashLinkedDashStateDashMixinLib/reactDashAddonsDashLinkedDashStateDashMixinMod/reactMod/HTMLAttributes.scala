@@ -14,3 +14,16 @@ trait HTMLAttributes[T] extends js.Object {
   ] = js.undefined
 }
 
+object HTMLAttributes {
+  @scala.inline
+  def apply[T](
+    checkedLink: reactDashAddonsDashLinkedDashStateDashMixinLib.reactDashAddonsDashLinkedDashStateDashMixinMod.LinkedStateMixinNs.ReactLink[scala.Boolean] = null,
+    valueLink: reactDashAddonsDashLinkedDashStateDashMixinLib.reactDashAddonsDashLinkedDashStateDashMixinMod.LinkedStateMixinNs.ReactLink[scala.Boolean | java.lang.String | scala.Double] = null
+  ): HTMLAttributes[T] = {
+    val __obj = js.Dynamic.literal()
+    if (checkedLink != null) __obj.updateDynamic("checkedLink")(checkedLink)
+    if (valueLink != null) __obj.updateDynamic("valueLink")(valueLink)
+    __obj.asInstanceOf[HTMLAttributes[T]]
+  }
+}
+

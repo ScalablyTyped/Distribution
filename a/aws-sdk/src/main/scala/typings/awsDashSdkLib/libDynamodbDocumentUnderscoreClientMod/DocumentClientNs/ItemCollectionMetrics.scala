@@ -16,3 +16,16 @@ trait ItemCollectionMetrics extends js.Object {
   var SizeEstimateRangeGB: js.UndefOr[ItemCollectionSizeEstimateRange] = js.undefined
 }
 
+object ItemCollectionMetrics {
+  @scala.inline
+  def apply(
+    ItemCollectionKey: ItemCollectionKeyAttributeMap = null,
+    SizeEstimateRangeGB: ItemCollectionSizeEstimateRange = null
+  ): ItemCollectionMetrics = {
+    val __obj = js.Dynamic.literal()
+    if (ItemCollectionKey != null) __obj.updateDynamic("ItemCollectionKey")(ItemCollectionKey)
+    if (SizeEstimateRangeGB != null) __obj.updateDynamic("SizeEstimateRangeGB")(SizeEstimateRangeGB)
+    __obj.asInstanceOf[ItemCollectionMetrics]
+  }
+}
+

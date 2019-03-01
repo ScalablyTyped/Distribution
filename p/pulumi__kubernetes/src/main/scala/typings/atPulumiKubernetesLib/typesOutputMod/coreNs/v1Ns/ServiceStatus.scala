@@ -15,3 +15,12 @@ trait ServiceStatus extends js.Object {
   val loadBalancer: LoadBalancerStatus
 }
 
+object ServiceStatus {
+  @scala.inline
+  def apply(loadBalancer: LoadBalancerStatus): ServiceStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("loadBalancer")(loadBalancer)
+    __obj.asInstanceOf[ServiceStatus]
+  }
+}
+

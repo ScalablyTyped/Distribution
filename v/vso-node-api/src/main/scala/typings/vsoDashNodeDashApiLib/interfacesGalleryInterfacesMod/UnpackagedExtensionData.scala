@@ -24,3 +24,44 @@ trait UnpackagedExtensionData extends js.Object {
   var vsixId: java.lang.String
 }
 
+object UnpackagedExtensionData {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String],
+    description: java.lang.String,
+    displayName: java.lang.String,
+    draftId: java.lang.String,
+    extensionName: java.lang.String,
+    installationTargets: js.Array[InstallationTarget],
+    isConvertedToMarkdown: scala.Boolean,
+    pricingCategory: java.lang.String,
+    product: java.lang.String,
+    publisherName: java.lang.String,
+    qnAEnabled: scala.Boolean,
+    referralUrl: java.lang.String,
+    repositoryUrl: java.lang.String,
+    tags: js.Array[java.lang.String],
+    version: java.lang.String,
+    vsixId: java.lang.String
+  ): UnpackagedExtensionData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("categories")(categories)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("draftId")(draftId)
+    __obj.updateDynamic("extensionName")(extensionName)
+    __obj.updateDynamic("installationTargets")(installationTargets)
+    __obj.updateDynamic("isConvertedToMarkdown")(isConvertedToMarkdown)
+    __obj.updateDynamic("pricingCategory")(pricingCategory)
+    __obj.updateDynamic("product")(product)
+    __obj.updateDynamic("publisherName")(publisherName)
+    __obj.updateDynamic("qnAEnabled")(qnAEnabled)
+    __obj.updateDynamic("referralUrl")(referralUrl)
+    __obj.updateDynamic("repositoryUrl")(repositoryUrl)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("vsixId")(vsixId)
+    __obj.asInstanceOf[UnpackagedExtensionData]
+  }
+}
+

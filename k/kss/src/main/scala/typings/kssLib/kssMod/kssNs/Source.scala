@@ -14,3 +14,14 @@ trait Source extends js.Object {
   var path: java.lang.String
 }
 
+object Source {
+  @scala.inline
+  def apply(filename: java.lang.String, line: scala.Double, path: java.lang.String): Source = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filename")(filename)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Source]
+  }
+}
+

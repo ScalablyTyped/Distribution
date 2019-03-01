@@ -21,3 +21,27 @@ trait OpenFileRequestedEventOptions
   ]
 }
 
+object OpenFileRequestedEventOptions {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    fileSystemId: java.lang.String,
+    mode: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_READ, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_READ[keyof chrome-apps.Anon_READ] */ js.Any
+      ]
+    ],
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): OpenFileRequestedEventOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.asInstanceOf[OpenFileRequestedEventOptions]
+  }
+}
+

@@ -16,3 +16,16 @@ trait PolicyAttachmentArgs extends js.Object {
   val target: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]
 }
 
+object PolicyAttachmentArgs {
+  @scala.inline
+  def apply(
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iotMod.Policy],
+    target: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]
+  ): PolicyAttachmentArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolicyAttachmentArgs]
+  }
+}
+

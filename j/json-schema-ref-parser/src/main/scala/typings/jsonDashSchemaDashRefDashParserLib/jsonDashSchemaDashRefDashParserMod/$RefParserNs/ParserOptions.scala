@@ -28,3 +28,18 @@ trait ParserOptions extends js.Object {
   var order: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ParserOptions {
+  @scala.inline
+  def apply(
+    allowEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    canParse: scala.Boolean | stdLib.RegExp | java.lang.String | js.Array[java.lang.String] | (js.Function1[/* file */ FileInfo, scala.Boolean]) = null,
+    order: scala.Int | scala.Double = null
+  ): ParserOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
+    if (canParse != null) __obj.updateDynamic("canParse")(canParse.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParserOptions]
+  }
+}
+

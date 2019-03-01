@@ -10,3 +10,16 @@ trait Anon_Name
   var vfs: js.Any
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(
+    vfs: js.Any,
+    StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Name = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("vfs")(vfs)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

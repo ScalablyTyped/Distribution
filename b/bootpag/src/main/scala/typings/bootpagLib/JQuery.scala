@@ -19,3 +19,20 @@ trait JQuery extends js.Object {
   def on_page(eventName: bootpagLib.bootpagLibStrings.page, handler: bootpagLib.JqueryBootpagNs.PageEventHandler): JQuery
 }
 
+object JQuery {
+  @scala.inline
+  def apply(
+    bootpag: js.Function1[bootpagLib.JqueryBootpagNs.Options, JQuery],
+    on_page: js.Function2[
+      bootpagLib.bootpagLibStrings.page, 
+      bootpagLib.JqueryBootpagNs.PageEventHandler, 
+      JQuery
+    ]
+  ): JQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bootpag")(bootpag)
+    __obj.updateDynamic("on")(on_page)
+    __obj.asInstanceOf[JQuery]
+  }
+}
+

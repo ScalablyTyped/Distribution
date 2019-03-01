@@ -12,3 +12,24 @@ trait Functor3C[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L] extends js.Object 
   def map[A, B](fa: fpDashTsLib.libHKTMod.Type3[F, U, L, A], f: js.Function1[/* a */ A, B]): fpDashTsLib.libHKTMod.Type3[F, U, L, B]
 }
 
+object Functor3C {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L](
+    URI: F,
+    _L: L,
+    _U: U,
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, U, L, js.Any]
+    ]
+  ): Functor3C[F, U, L] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
+    __obj.updateDynamic("_U")(_U.asInstanceOf[js.Any])
+    __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[Functor3C[F, U, L]]
+  }
+}
+

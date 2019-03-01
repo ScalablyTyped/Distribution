@@ -54,3 +54,26 @@ trait ExchangeOptions extends js.Object {
   ] = js.undefined
 }
 
+object ExchangeOptions {
+  @scala.inline
+  def apply(
+    arguments: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    autoDelete: js.UndefOr[scala.Boolean] = js.undefined,
+    confirm: js.UndefOr[scala.Boolean] = js.undefined,
+    durable: js.UndefOr[scala.Boolean] = js.undefined,
+    noDeclare: js.UndefOr[scala.Boolean] = js.undefined,
+    passive: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: amqpLib.amqpLibStrings.direct | amqpLib.amqpLibStrings.fanout | amqpLib.amqpLibStrings.topic = null
+  ): ExchangeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete)
+    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm)
+    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable)
+    if (!js.isUndefined(noDeclare)) __obj.updateDynamic("noDeclare")(noDeclare)
+    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExchangeOptions]
+  }
+}
+

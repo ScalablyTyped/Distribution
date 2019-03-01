@@ -21,3 +21,38 @@ trait NgBootboxDialog extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NgBootboxDialog {
+  @scala.inline
+  def apply(
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    backdrop: js.UndefOr[scala.Boolean] = js.undefined,
+    buttons: bootboxLib.BootboxButtonMap = null,
+    callback: js.Function0[_] = null,
+    className: java.lang.String = null,
+    closeButton: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: java.lang.String = null,
+    message: java.lang.String = null,
+    onEscape: js.Function0[_ | scala.Boolean] = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    size: java.lang.String = null,
+    templateUrl: java.lang.String = null,
+    title: java.lang.String = null
+  ): NgBootboxDialog = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[NgBootboxDialog]
+  }
+}
+

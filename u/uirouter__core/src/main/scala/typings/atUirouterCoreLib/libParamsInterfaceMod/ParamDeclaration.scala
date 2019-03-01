@@ -292,3 +292,30 @@ trait ParamDeclaration extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object ParamDeclaration {
+  @scala.inline
+  def apply(
+    array: js.UndefOr[scala.Boolean] = js.undefined,
+    dynamic: js.UndefOr[scala.Boolean] = js.undefined,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    isOptional: js.UndefOr[scala.Boolean] = js.undefined,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    replace: js.Array[Replace] = null,
+    squash: scala.Boolean | java.lang.String = null,
+    `type`: java.lang.String | atUirouterCoreLib.libParamsParamTypeMod.ParamType = null,
+    value: js.Any = null
+  ): ParamDeclaration = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (squash != null) __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ParamDeclaration]
+  }
+}
+

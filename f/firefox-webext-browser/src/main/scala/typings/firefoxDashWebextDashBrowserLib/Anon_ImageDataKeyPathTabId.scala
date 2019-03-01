@@ -30,3 +30,20 @@ trait Anon_ImageDataKeyPathTabId extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ImageDataKeyPathTabId {
+  @scala.inline
+  def apply(
+    imageData: firefoxDashWebextDashBrowserLib.browserNs.sidebarActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.sidebarActionNs.ImageDataType] = null,
+    path: java.lang.String = null,
+    tabId: scala.Int | scala.Double = null,
+    windowId: scala.Int | scala.Double = null
+  ): Anon_ImageDataKeyPathTabId = {
+    val __obj = js.Dynamic.literal()
+    if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ImageDataKeyPathTabId]
+  }
+}
+

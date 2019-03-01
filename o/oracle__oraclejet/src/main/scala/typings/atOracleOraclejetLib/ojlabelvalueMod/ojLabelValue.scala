@@ -12,14 +12,12 @@ trait ojLabelValue
   var labelWidth: java.lang.String = js.native
   var onLabelEdgeChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['labelEdge'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.inherit
     ], 
     _
   ]) | scala.Null = js.native
   var onLabelWidthChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['labelWidth'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
   def addEventListener(
@@ -27,7 +25,7 @@ trait ojLabelValue
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['labelEdge'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.inherit
       ], 
       _
     ]
@@ -37,28 +35,7 @@ trait ojLabelValue
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['labelEdge'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelWidthChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['labelWidth'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelWidthChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['labelWidth'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.inherit
       ], 
       _
     ],
@@ -491,6 +468,25 @@ trait ojLabelValue
   def addEventListener_keyup(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.keyup,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.KeyboardEvent, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_labelWidthChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelWidthChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_labelWidthChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelWidthChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")

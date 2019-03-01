@@ -11,3 +11,18 @@ trait LinkProps
   var to: historyLib.historyMod.LocationDescriptor[historyLib.historyMod.LocationState]
 }
 
+object LinkProps {
+  @scala.inline
+  def apply(
+    to: historyLib.historyMod.LocationDescriptor[historyLib.historyMod.LocationState],
+    AnchorHTMLAttributes: reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement] = null,
+    replace: js.UndefOr[scala.Boolean] = js.undefined
+  ): LinkProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    js.Dynamic.global.Object.assign(__obj, AnchorHTMLAttributes)
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
+    __obj.asInstanceOf[LinkProps]
+  }
+}
+

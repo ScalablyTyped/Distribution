@@ -40,3 +40,38 @@ trait Anon_AccountIdAdClientIdAltCustomChannelId extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccountIdAdClientIdAltCustomChannelId {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String,
+    adClientId: java.lang.String,
+    customChannelId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    includeInactive: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AccountIdAdClientIdAltCustomChannelId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accountId")(accountId)
+    __obj.updateDynamic("adClientId")(adClientId)
+    __obj.updateDynamic("customChannelId")(customChannelId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AccountIdAdClientIdAltCustomChannelId]
+  }
+}
+

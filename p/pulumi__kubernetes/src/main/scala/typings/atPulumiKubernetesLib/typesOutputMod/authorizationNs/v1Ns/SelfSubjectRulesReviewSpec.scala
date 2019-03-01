@@ -12,3 +12,12 @@ trait SelfSubjectRulesReviewSpec extends js.Object {
   val namespace: java.lang.String
 }
 
+object SelfSubjectRulesReviewSpec {
+  @scala.inline
+  def apply(namespace: java.lang.String): SelfSubjectRulesReviewSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.asInstanceOf[SelfSubjectRulesReviewSpec]
+  }
+}
+

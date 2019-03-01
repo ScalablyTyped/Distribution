@@ -51,3 +51,26 @@ trait DatePickerOptions extends js.Object {
   var weekstart: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DatePickerOptions {
+  @scala.inline
+  def apply(
+    format: java.lang.String = null,
+    i18n: js.Object = null,
+    maxDate: java.lang.String | scala.Boolean | scala.Double = null,
+    minDate: java.lang.String | scala.Boolean | scala.Double = null,
+    offsettop: scala.Int | scala.Double = null,
+    pos: java.lang.String = null,
+    weekstart: scala.Int | scala.Double = null
+  ): DatePickerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (offsettop != null) __obj.updateDynamic("offsettop")(offsettop.asInstanceOf[js.Any])
+    if (pos != null) __obj.updateDynamic("pos")(pos)
+    if (weekstart != null) __obj.updateDynamic("weekstart")(weekstart.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatePickerOptions]
+  }
+}
+

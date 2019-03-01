@@ -191,3 +191,64 @@ trait TableCollectionLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    alignment: js.UndefOr[scala.Boolean] = js.undefined,
+    font: FontLoadOptions = null,
+    headerRowCount: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    isUniform: js.UndefOr[scala.Boolean] = js.undefined,
+    nestingLevel: js.UndefOr[scala.Boolean] = js.undefined,
+    parentBody: BodyLoadOptions = null,
+    parentContentControl: ContentControlLoadOptions = null,
+    parentContentControlOrNullObject: ContentControlLoadOptions = null,
+    parentTable: TableLoadOptions = null,
+    parentTableCell: TableCellLoadOptions = null,
+    parentTableCellOrNullObject: TableCellLoadOptions = null,
+    parentTableOrNullObject: TableLoadOptions = null,
+    rowCount: js.UndefOr[scala.Boolean] = js.undefined,
+    shadingColor: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    styleBandedColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    styleBandedRows: js.UndefOr[scala.Boolean] = js.undefined,
+    styleBuiltIn: js.UndefOr[scala.Boolean] = js.undefined,
+    styleFirstColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    styleLastColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    styleTotalRow: js.UndefOr[scala.Boolean] = js.undefined,
+    values: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(alignment)) __obj.updateDynamic("alignment")(alignment)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(headerRowCount)) __obj.updateDynamic("headerRowCount")(headerRowCount)
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (!js.isUndefined(isUniform)) __obj.updateDynamic("isUniform")(isUniform)
+    if (!js.isUndefined(nestingLevel)) __obj.updateDynamic("nestingLevel")(nestingLevel)
+    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
+    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
+    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount)
+    if (!js.isUndefined(shadingColor)) __obj.updateDynamic("shadingColor")(shadingColor)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(styleBandedColumns)) __obj.updateDynamic("styleBandedColumns")(styleBandedColumns)
+    if (!js.isUndefined(styleBandedRows)) __obj.updateDynamic("styleBandedRows")(styleBandedRows)
+    if (!js.isUndefined(styleBuiltIn)) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (!js.isUndefined(styleFirstColumn)) __obj.updateDynamic("styleFirstColumn")(styleFirstColumn)
+    if (!js.isUndefined(styleLastColumn)) __obj.updateDynamic("styleLastColumn")(styleLastColumn)
+    if (!js.isUndefined(styleTotalRow)) __obj.updateDynamic("styleTotalRow")(styleTotalRow)
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values)
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[TableCollectionLoadOptions]
+  }
+}
+

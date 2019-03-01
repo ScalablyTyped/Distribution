@@ -29,3 +29,78 @@ trait NumberingRules
   var NumberingType: scala.Double
 }
 
+object NumberingRules {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    DefaultListId: java.lang.String,
+    ElementType: activexDashLibreofficeLib.`type`,
+    IsAbsoluteMargins: scala.Boolean,
+    IsAutomatic: scala.Boolean,
+    IsContinuousNumbering: scala.Boolean,
+    Name: java.lang.String,
+    NumberingIsOutline: scala.Boolean,
+    NumberingType: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): NumberingRules = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("DefaultListId")(DefaultListId)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("IsAbsoluteMargins")(IsAbsoluteMargins)
+    __obj.updateDynamic("IsAutomatic")(IsAutomatic)
+    __obj.updateDynamic("IsContinuousNumbering")(IsContinuousNumbering)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("NumberingIsOutline")(NumberingIsOutline)
+    __obj.updateDynamic("NumberingType")(NumberingType)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("getByIndex")(getByIndex)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("replaceByIndex")(replaceByIndex)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[NumberingRules]
+  }
+}
+

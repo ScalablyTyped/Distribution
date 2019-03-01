@@ -11,3 +11,18 @@ trait Payee extends js.Object {
   var payee_display_metadata: js.UndefOr[paypalDashRestDashSdkLib.Anon_Brandname] = js.undefined
 }
 
+object Payee {
+  @scala.inline
+  def apply(
+    email: java.lang.String,
+    merchant_id: java.lang.String,
+    payee_display_metadata: paypalDashRestDashSdkLib.Anon_Brandname = null
+  ): Payee = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("merchant_id")(merchant_id)
+    if (payee_display_metadata != null) __obj.updateDynamic("payee_display_metadata")(payee_display_metadata)
+    __obj.asInstanceOf[Payee]
+  }
+}
+

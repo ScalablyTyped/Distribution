@@ -32,3 +32,24 @@ trait InstructionOutput extends js.Object {
   var systemName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstructionOutput {
+  @scala.inline
+  def apply(
+    codec: stdLib.Record[java.lang.String, _] = null,
+    name: java.lang.String = null,
+    onlyCountKeyBytes: js.UndefOr[scala.Boolean] = js.undefined,
+    onlyCountValueBytes: js.UndefOr[scala.Boolean] = js.undefined,
+    originalName: java.lang.String = null,
+    systemName: java.lang.String = null
+  ): InstructionOutput = {
+    val __obj = js.Dynamic.literal()
+    if (codec != null) __obj.updateDynamic("codec")(codec)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(onlyCountKeyBytes)) __obj.updateDynamic("onlyCountKeyBytes")(onlyCountKeyBytes)
+    if (!js.isUndefined(onlyCountValueBytes)) __obj.updateDynamic("onlyCountValueBytes")(onlyCountValueBytes)
+    if (originalName != null) __obj.updateDynamic("originalName")(originalName)
+    if (systemName != null) __obj.updateDynamic("systemName")(systemName)
+    __obj.asInstanceOf[InstructionOutput]
+  }
+}
+

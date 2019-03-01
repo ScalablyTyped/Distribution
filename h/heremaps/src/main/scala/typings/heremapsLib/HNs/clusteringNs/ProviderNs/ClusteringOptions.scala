@@ -20,3 +20,20 @@ trait ClusteringOptions extends js.Object {
   var strategy: js.UndefOr[Strategy] = js.undefined
 }
 
+object ClusteringOptions {
+  @scala.inline
+  def apply(
+    eps: scala.Int | scala.Double = null,
+    minWeight: scala.Int | scala.Double = null,
+    projection: heremapsLib.HNs.geoNs.IProjection = null,
+    strategy: Strategy = null
+  ): ClusteringOptions = {
+    val __obj = js.Dynamic.literal()
+    if (eps != null) __obj.updateDynamic("eps")(eps.asInstanceOf[js.Any])
+    if (minWeight != null) __obj.updateDynamic("minWeight")(minWeight.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    __obj.asInstanceOf[ClusteringOptions]
+  }
+}
+

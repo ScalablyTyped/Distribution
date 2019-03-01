@@ -33,3 +33,20 @@ trait MenuItemProps extends js.Object {
   ] = js.undefined
 }
 
+object MenuItemProps {
+  @scala.inline
+  def apply(
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    children: java.lang.String = null,
+    onClick: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
+    `type`: protonDashNativeLib.protonDashNativeLibStrings.Check | protonDashNativeLib.protonDashNativeLibStrings.Quit | protonDashNativeLib.protonDashNativeLibStrings.About | protonDashNativeLib.protonDashNativeLibStrings.Preferences | protonDashNativeLib.protonDashNativeLibStrings.Separator | protonDashNativeLib.protonDashNativeLibStrings.Item = null
+  ): MenuItemProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MenuItemProps]
+  }
+}
+

@@ -9,3 +9,25 @@ trait TransformationMethod2 extends TransformationMethod {
   def setLengthChangesAllowed(allowLengthChanges: scala.Boolean): scala.Unit
 }
 
+object TransformationMethod2 {
+  @scala.inline
+  def apply(
+    getTransformation: js.Function2[java.lang.String, androiduixLib.androidNs.viewNs.View, java.lang.String],
+    onFocusChanged: js.Function5[
+      androiduixLib.androidNs.viewNs.View, 
+      java.lang.String, 
+      scala.Boolean, 
+      scala.Double, 
+      androiduixLib.androidNs.graphicsNs.Rect, 
+      scala.Unit
+    ],
+    setLengthChangesAllowed: js.Function1[scala.Boolean, scala.Unit]
+  ): TransformationMethod2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getTransformation")(getTransformation)
+    __obj.updateDynamic("onFocusChanged")(onFocusChanged)
+    __obj.updateDynamic("setLengthChangesAllowed")(setLengthChangesAllowed)
+    __obj.asInstanceOf[TransformationMethod2]
+  }
+}
+

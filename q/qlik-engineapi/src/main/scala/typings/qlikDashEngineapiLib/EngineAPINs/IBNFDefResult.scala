@@ -19,3 +19,13 @@ trait IBNFDefResult extends js.Object {
   var qBnfHash: java.lang.String
 }
 
+object IBNFDefResult {
+  @scala.inline
+  def apply(qBnfDefs: js.Array[IBNFDef], qBnfHash: java.lang.String): IBNFDefResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qBnfDefs")(qBnfDefs)
+    __obj.updateDynamic("qBnfHash")(qBnfHash)
+    __obj.asInstanceOf[IBNFDefResult]
+  }
+}
+

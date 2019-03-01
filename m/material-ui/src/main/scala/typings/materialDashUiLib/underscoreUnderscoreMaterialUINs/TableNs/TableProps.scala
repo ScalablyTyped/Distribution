@@ -31,3 +31,51 @@ trait TableProps extends js.Object {
   var wrapperStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object TableProps {
+  @scala.inline
+  def apply(
+    allRowsSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    className: java.lang.String = null,
+    fixedFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    fixedHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    footerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    headerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    height: java.lang.String = null,
+    multiSelectable: js.UndefOr[scala.Boolean] = js.undefined,
+    onCellClick: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
+    onCellHover: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
+    onCellHoverExit: js.Function2[/* row */ scala.Double, /* column */ scala.Double, scala.Unit] = null,
+    onRowHover: js.Function1[/* row */ scala.Double, scala.Unit] = null,
+    onRowHoverExit: js.Function1[/* row */ scala.Double, scala.Unit] = null,
+    onRowSelection: js.Function1[
+      /* selectedRows */ js.Array[scala.Double] | materialDashUiLib.materialDashUiLibStrings.all, 
+      scala.Unit
+    ] = null,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    wrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): TableProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allRowsSelected)) __obj.updateDynamic("allRowsSelected")(allRowsSelected)
+    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(fixedFooter)) __obj.updateDynamic("fixedFooter")(fixedFooter)
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
+    if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle)
+    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable)
+    if (onCellClick != null) __obj.updateDynamic("onCellClick")(onCellClick)
+    if (onCellHover != null) __obj.updateDynamic("onCellHover")(onCellHover)
+    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(onCellHoverExit)
+    if (onRowHover != null) __obj.updateDynamic("onRowHover")(onRowHover)
+    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(onRowHoverExit)
+    if (onRowSelection != null) __obj.updateDynamic("onRowSelection")(onRowSelection)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle)
+    __obj.asInstanceOf[TableProps]
+  }
+}
+

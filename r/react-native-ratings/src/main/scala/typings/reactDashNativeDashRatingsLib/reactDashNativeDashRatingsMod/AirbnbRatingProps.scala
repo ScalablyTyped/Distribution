@@ -38,3 +38,22 @@ trait AirbnbRatingProps extends js.Object {
   var showRating: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AirbnbRatingProps {
+  @scala.inline
+  def apply(
+    count: scala.Int | scala.Double = null,
+    defaultRating: scala.Int | scala.Double = null,
+    onFinishRating: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    reviews: js.Array[java.lang.String] = null,
+    showRating: js.UndefOr[scala.Boolean] = js.undefined
+  ): AirbnbRatingProps = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (defaultRating != null) __obj.updateDynamic("defaultRating")(defaultRating.asInstanceOf[js.Any])
+    if (onFinishRating != null) __obj.updateDynamic("onFinishRating")(onFinishRating)
+    if (reviews != null) __obj.updateDynamic("reviews")(reviews)
+    if (!js.isUndefined(showRating)) __obj.updateDynamic("showRating")(showRating)
+    __obj.asInstanceOf[AirbnbRatingProps]
+  }
+}
+

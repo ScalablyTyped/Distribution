@@ -23,3 +23,16 @@ trait CellValueConditionalFormatData extends js.Object {
   var rule: js.UndefOr[officeDashJsLib.ExcelNs.ConditionalCellValueRule] = js.undefined
 }
 
+object CellValueConditionalFormatData {
+  @scala.inline
+  def apply(
+    format: ConditionalRangeFormatData = null,
+    rule: officeDashJsLib.ExcelNs.ConditionalCellValueRule = null
+  ): CellValueConditionalFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[CellValueConditionalFormatData]
+  }
+}
+

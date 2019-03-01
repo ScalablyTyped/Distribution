@@ -10,3 +10,13 @@ trait BatchRequestResult extends js.Object {
   var statusCode: java.lang.String
 }
 
+object BatchRequestResult {
+  @scala.inline
+  def apply(result: RequestResult, statusCode: java.lang.String): BatchRequestResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.asInstanceOf[BatchRequestResult]
+  }
+}
+

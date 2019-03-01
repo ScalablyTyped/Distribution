@@ -12,7 +12,6 @@ package object nockNs {
     /* interceptorOptions */ js.UndefOr[Options], 
     Interceptor
   ]
-  type NockBackMode = nockLib.nockLibStrings.wild | nockLib.nockLibStrings.dryrun | nockLib.nockLibStrings.record | nockLib.nockLibStrings.lockdown
   type ReplyCallback = js.Function2[/* err */ js.Any, /* result */ ReplyCallbackResult, scala.Unit]
   type ReplyCallbackResult = java.lang.String | (js.Tuple2[scala.Double, java.lang.String | js.Any]) | (js.Tuple3[scala.Double, java.lang.String | js.Any, HttpHeaders]) | js.Any
 }

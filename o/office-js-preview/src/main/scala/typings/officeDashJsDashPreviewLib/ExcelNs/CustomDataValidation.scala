@@ -21,3 +21,12 @@ trait CustomDataValidation extends js.Object {
   var formula: java.lang.String
 }
 
+object CustomDataValidation {
+  @scala.inline
+  def apply(formula: java.lang.String): CustomDataValidation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("formula")(formula)
+    __obj.asInstanceOf[CustomDataValidation]
+  }
+}
+

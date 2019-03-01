@@ -18,3 +18,32 @@ trait Anon_BorderColorBorderRadiusBorderWidthCircle extends js.Object {
   var width: scala.Double
 }
 
+object Anon_BorderColorBorderRadiusBorderWidthCircle {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String,
+    borderRadius: java.lang.String,
+    borderWidth: scala.Double,
+    color: java.lang.String,
+    height: scala.Double,
+    opacity: scala.Double,
+    pattern: atOracleOraclejetLib.atOracleOraclejetLibStrings.smallChecker | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallCrosshatch | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallDiagonalLeft | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallDiagonalRight | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallDiamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallTriangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeChecker | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeCrosshatch | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeDiagonalLeft | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeDiagonalRight | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeDiamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeTriangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
+    shape: atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.ellipse | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.plus | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleUp | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleDown | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.star,
+    source: java.lang.String,
+    width: scala.Double
+  ): Anon_BorderColorBorderRadiusBorderWidthCircle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("borderColor")(borderColor)
+    __obj.updateDynamic("borderRadius")(borderRadius)
+    __obj.updateDynamic("borderWidth")(borderWidth)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("opacity")(opacity)
+    __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Anon_BorderColorBorderRadiusBorderWidthCircle]
+  }
+}
+

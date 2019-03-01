@@ -34,3 +34,20 @@ trait MutatingWebhookConfigurationList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object MutatingWebhookConfigurationList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`,
+    items: js.Array[MutatingWebhookConfiguration],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.MutatingWebhookConfigurationList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): MutatingWebhookConfigurationList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[MutatingWebhookConfigurationList]
+  }
+}
+

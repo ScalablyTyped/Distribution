@@ -28,8 +28,9 @@ object DDPNs extends js.Object {
     var status: Status
   }
   
+  trait Status extends js.Object
+  
   def _allSubscriptionsReady(): scala.Boolean = js.native
   def connect(url: java.lang.String): DDPStatic = js.native
-  type Status = meteorDashTypingsLib.meteorDashTypingsLibStrings.connected | meteorDashTypingsLib.meteorDashTypingsLibStrings.connecting | meteorDashTypingsLib.meteorDashTypingsLibStrings.failed | meteorDashTypingsLib.meteorDashTypingsLibStrings.waiting | meteorDashTypingsLib.meteorDashTypingsLibStrings.offline
 }
 

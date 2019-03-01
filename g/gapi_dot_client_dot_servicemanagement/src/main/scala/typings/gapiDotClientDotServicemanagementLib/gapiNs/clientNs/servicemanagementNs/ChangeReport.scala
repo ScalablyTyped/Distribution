@@ -16,3 +16,12 @@ trait ChangeReport extends js.Object {
   var configChanges: js.UndefOr[js.Array[ConfigChange]] = js.undefined
 }
 
+object ChangeReport {
+  @scala.inline
+  def apply(configChanges: js.Array[ConfigChange] = null): ChangeReport = {
+    val __obj = js.Dynamic.literal()
+    if (configChanges != null) __obj.updateDynamic("configChanges")(configChanges)
+    __obj.asInstanceOf[ChangeReport]
+  }
+}
+

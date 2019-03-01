@@ -16,3 +16,13 @@ trait ListItemTextTheme extends js.Object {
   var primary: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListItemTextTheme {
+  @scala.inline
+  def apply(itemText: java.lang.String = null, primary: java.lang.String = null): ListItemTextTheme = {
+    val __obj = js.Dynamic.literal()
+    if (itemText != null) __obj.updateDynamic("itemText")(itemText)
+    if (primary != null) __obj.updateDynamic("primary")(primary)
+    __obj.asInstanceOf[ListItemTextTheme]
+  }
+}
+

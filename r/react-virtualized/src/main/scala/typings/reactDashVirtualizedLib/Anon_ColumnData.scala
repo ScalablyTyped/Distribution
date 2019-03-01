@@ -11,3 +11,14 @@ trait Anon_ColumnData extends js.Object {
   var index: scala.Double
 }
 
+object Anon_ColumnData {
+  @scala.inline
+  def apply(columnData: js.Object, id: java.lang.String, index: scala.Double): Anon_ColumnData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnData")(columnData)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("index")(index)
+    __obj.asInstanceOf[Anon_ColumnData]
+  }
+}
+

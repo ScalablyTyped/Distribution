@@ -32,3 +32,24 @@ trait ItemsMapping extends js.Object {
   var value: js.UndefOr[ItemsMappingValue] = js.undefined
 }
 
+object ItemsMapping {
+  @scala.inline
+  def apply(
+    column: ItemsMappingColumn = null,
+    columnMapping: js.Array[_] = null,
+    columnStyle: ItemsMappingColumnStyle = null,
+    headerMapping: ItemsMappingHeaderMapping = null,
+    row: ItemsMappingRow = null,
+    value: ItemsMappingValue = null
+  ): ItemsMapping = {
+    val __obj = js.Dynamic.literal()
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (columnMapping != null) __obj.updateDynamic("columnMapping")(columnMapping)
+    if (columnStyle != null) __obj.updateDynamic("columnStyle")(columnStyle)
+    if (headerMapping != null) __obj.updateDynamic("headerMapping")(headerMapping)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ItemsMapping]
+  }
+}
+

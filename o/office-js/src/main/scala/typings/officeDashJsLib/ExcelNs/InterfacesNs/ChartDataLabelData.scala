@@ -157,3 +157,52 @@ trait ChartDataLabelData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartDataLabelData {
+  @scala.inline
+  def apply(
+    autoText: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartDataLabelFormatData = null,
+    formula: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    horizontalAlignment: officeDashJsLib.ExcelNs.ChartTextHorizontalAlignment | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.Distributed = null,
+    left: scala.Int | scala.Double = null,
+    numberFormat: java.lang.String = null,
+    position: officeDashJsLib.ExcelNs.ChartDataLabelPosition | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.InsideEnd | officeDashJsLib.officeDashJsLibStrings.InsideBase | officeDashJsLib.officeDashJsLibStrings.OutsideEnd | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Top | officeDashJsLib.officeDashJsLibStrings.Bottom | officeDashJsLib.officeDashJsLibStrings.BestFit | officeDashJsLib.officeDashJsLibStrings.Callout = null,
+    separator: java.lang.String = null,
+    showBubbleSize: js.UndefOr[scala.Boolean] = js.undefined,
+    showCategoryName: js.UndefOr[scala.Boolean] = js.undefined,
+    showLegendKey: js.UndefOr[scala.Boolean] = js.undefined,
+    showPercentage: js.UndefOr[scala.Boolean] = js.undefined,
+    showSeriesName: js.UndefOr[scala.Boolean] = js.undefined,
+    showValue: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null,
+    textOrientation: scala.Int | scala.Double = null,
+    top: scala.Int | scala.Double = null,
+    verticalAlignment: officeDashJsLib.ExcelNs.ChartTextVerticalAlignment | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Bottom | officeDashJsLib.officeDashJsLibStrings.Top | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.Distributed = null,
+    width: scala.Int | scala.Double = null
+  ): ChartDataLabelData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formula != null) __obj.updateDynamic("formula")(formula)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(showBubbleSize)) __obj.updateDynamic("showBubbleSize")(showBubbleSize)
+    if (!js.isUndefined(showCategoryName)) __obj.updateDynamic("showCategoryName")(showCategoryName)
+    if (!js.isUndefined(showLegendKey)) __obj.updateDynamic("showLegendKey")(showLegendKey)
+    if (!js.isUndefined(showPercentage)) __obj.updateDynamic("showPercentage")(showPercentage)
+    if (!js.isUndefined(showSeriesName)) __obj.updateDynamic("showSeriesName")(showSeriesName)
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartDataLabelData]
+  }
+}
+

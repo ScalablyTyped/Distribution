@@ -9,3 +9,12 @@ trait DefaultLinkState extends js.Object {
   var selected: scala.Boolean
 }
 
+object DefaultLinkState {
+  @scala.inline
+  def apply(selected: scala.Boolean): DefaultLinkState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("selected")(selected)
+    __obj.asInstanceOf[DefaultLinkState]
+  }
+}
+

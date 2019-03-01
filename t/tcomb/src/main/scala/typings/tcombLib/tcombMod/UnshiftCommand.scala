@@ -10,3 +10,12 @@ trait UnshiftCommand extends js.Object {
   var $unshift: js.Array[_]
 }
 
+object UnshiftCommand {
+  @scala.inline
+  def apply($unshift: js.Array[_]): UnshiftCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$unshift")($unshift)
+    __obj.asInstanceOf[UnshiftCommand]
+  }
+}
+

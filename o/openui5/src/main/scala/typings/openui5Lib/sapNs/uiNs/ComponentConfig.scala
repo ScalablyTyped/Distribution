@@ -142,3 +142,22 @@ trait ComponentConfig extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ComponentConfig {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    componentData: js.Any = null,
+    id: java.lang.String = null,
+    settings: js.Any = null,
+    url: java.lang.String = null
+  ): ComponentConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (componentData != null) __obj.updateDynamic("componentData")(componentData)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ComponentConfig]
+  }
+}
+

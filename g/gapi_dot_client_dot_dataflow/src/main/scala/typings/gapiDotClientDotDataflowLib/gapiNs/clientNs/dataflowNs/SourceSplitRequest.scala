@@ -12,3 +12,13 @@ trait SourceSplitRequest extends js.Object {
   var source: js.UndefOr[Source] = js.undefined
 }
 
+object SourceSplitRequest {
+  @scala.inline
+  def apply(options: SourceSplitOptions = null, source: Source = null): SourceSplitRequest = {
+    val __obj = js.Dynamic.literal()
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[SourceSplitRequest]
+  }
+}
+

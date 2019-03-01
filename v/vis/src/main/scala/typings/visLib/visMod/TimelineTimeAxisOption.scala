@@ -10,3 +10,13 @@ trait TimelineTimeAxisOption extends js.Object {
   var step: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TimelineTimeAxisOption {
+  @scala.inline
+  def apply(scale: TimelineTimeAxisScaleType = null, step: scala.Int | scala.Double = null): TimelineTimeAxisOption = {
+    val __obj = js.Dynamic.literal()
+    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimelineTimeAxisOption]
+  }
+}
+

@@ -9,3 +9,12 @@ trait ASPxClientFloatingActionButtonContextChangingEventArgs extends ASPxClientE
   var action: ASPxClientFABAction
 }
 
+object ASPxClientFloatingActionButtonContextChangingEventArgs {
+  @scala.inline
+  def apply(action: ASPxClientFABAction): ASPxClientFloatingActionButtonContextChangingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.asInstanceOf[ASPxClientFloatingActionButtonContextChangingEventArgs]
+  }
+}
+

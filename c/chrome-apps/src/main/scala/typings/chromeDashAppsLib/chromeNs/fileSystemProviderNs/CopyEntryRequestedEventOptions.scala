@@ -13,3 +13,20 @@ trait CopyEntryRequestedEventOptions
   var targetPath: java.lang.String
 }
 
+object CopyEntryRequestedEventOptions {
+  @scala.inline
+  def apply(
+    fileSystemId: java.lang.String,
+    requestId: chromeDashAppsLib.chromeNs.integer,
+    sourcePath: java.lang.String,
+    targetPath: java.lang.String
+  ): CopyEntryRequestedEventOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("sourcePath")(sourcePath)
+    __obj.updateDynamic("targetPath")(targetPath)
+    __obj.asInstanceOf[CopyEntryRequestedEventOptions]
+  }
+}
+

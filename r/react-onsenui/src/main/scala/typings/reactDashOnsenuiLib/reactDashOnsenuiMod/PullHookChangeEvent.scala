@@ -9,3 +9,14 @@ trait PullHookChangeEvent extends js.Object {
   var state: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.initial | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.preaction | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.action
 }
 
+object PullHookChangeEvent {
+  @scala.inline
+  def apply(
+    state: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.initial | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.preaction | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.action
+  ): PullHookChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PullHookChangeEvent]
+  }
+}
+

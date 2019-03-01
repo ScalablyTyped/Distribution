@@ -23,3 +23,23 @@ trait LintStateOptions extends js.Object {
   ] = js.undefined
 }
 
+object LintStateOptions {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    hasGutters: scala.Boolean,
+    onUpdateLinting: js.Function3[
+      /* annotationsNotSorted */ js.Array[Annotation], 
+      /* annotations */ js.Array[Annotation], 
+      /* codeMirror */ Editor, 
+      scala.Unit
+    ] = null
+  ): LintStateOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("async")(async)
+    __obj.updateDynamic("hasGutters")(hasGutters)
+    if (onUpdateLinting != null) __obj.updateDynamic("onUpdateLinting")(onUpdateLinting)
+    __obj.asInstanceOf[LintStateOptions]
+  }
+}
+

@@ -34,3 +34,14 @@ trait ConfigMapProjection extends js.Object {
   val optional: scala.Boolean
 }
 
+object ConfigMapProjection {
+  @scala.inline
+  def apply(items: js.Array[KeyToPath], name: java.lang.String, optional: scala.Boolean): ConfigMapProjection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[ConfigMapProjection]
+  }
+}
+

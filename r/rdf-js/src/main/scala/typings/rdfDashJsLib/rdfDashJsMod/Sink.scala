@@ -19,3 +19,12 @@ trait Sink[Q /* <: BaseQuad */] extends js.Object {
   def `import`(stream: Stream[Q]): nodeLib.eventsMod.EventEmitter
 }
 
+object Sink {
+  @scala.inline
+  def apply[Q /* <: BaseQuad */](`import`: js.Function1[Stream[Q], nodeLib.eventsMod.EventEmitter]): Sink[Q] = {
+    val __obj = js.Dynamic.literal(`import` = `import`)
+  
+    __obj.asInstanceOf[Sink[Q]]
+  }
+}
+

@@ -12,3 +12,22 @@ trait Point extends Geometry {
   var z: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Point {
+  @scala.inline
+  def apply(
+    x: scala.Double,
+    y: scala.Double,
+    m: scala.Int | scala.Double = null,
+    spatialReference: SpatialReference = null,
+    z: scala.Int | scala.Double = null
+  ): Point = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Point]
+  }
+}
+

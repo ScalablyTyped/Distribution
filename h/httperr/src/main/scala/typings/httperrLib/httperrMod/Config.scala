@@ -39,3 +39,26 @@ trait Config extends js.Object {
   var retryAfter: js.UndefOr[js.Any] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    allowed: js.Array[java.lang.String] = null,
+    cause: stdLib.Error = null,
+    details: java.lang.String = null,
+    location: js.Any = null,
+    message: java.lang.String = null,
+    parameters: js.Any = null,
+    retryAfter: js.Any = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (allowed != null) __obj.updateDynamic("allowed")(allowed)
+    if (cause != null) __obj.updateDynamic("cause")(cause)
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (retryAfter != null) __obj.updateDynamic("retryAfter")(retryAfter)
+    __obj.asInstanceOf[Config]
+  }
+}
+

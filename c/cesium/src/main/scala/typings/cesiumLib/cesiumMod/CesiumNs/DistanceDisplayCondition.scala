@@ -12,3 +12,20 @@ trait DistanceDisplayCondition extends Packable {
   def equals(other: DistanceDisplayCondition): scala.Boolean
 }
 
+object DistanceDisplayCondition {
+  @scala.inline
+  def apply(
+    clone: js.Function1[DistanceDisplayCondition, DistanceDisplayCondition],
+    equals: js.Function1[DistanceDisplayCondition, scala.Boolean],
+    far: scala.Double,
+    near: scala.Double
+  ): DistanceDisplayCondition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("far")(far)
+    __obj.updateDynamic("near")(near)
+    __obj.asInstanceOf[DistanceDisplayCondition]
+  }
+}
+

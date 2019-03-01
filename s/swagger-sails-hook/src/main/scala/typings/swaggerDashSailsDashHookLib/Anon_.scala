@@ -13,3 +13,12 @@ trait `Anon_` extends js.Object {
   def `/*`(req: js.Any, res: js.Any, next: js.Function0[_]): js.Any
 }
 
+object `Anon_` {
+  @scala.inline
+  def apply(`/*`: js.Function3[js.Any, js.Any, js.Function0[_], js.Any]): `Anon_` = {
+    val __obj = js.Dynamic.literal(`/*` = `/*`)
+  
+    __obj.asInstanceOf[`Anon_`]
+  }
+}
+

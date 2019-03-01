@@ -15,3 +15,17 @@ trait MenuElement[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
   def render(pm: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S]): prosemirrorDashMenuLib.Anon_Dom[S]
 }
 
+object MenuElement {
+  @scala.inline
+  def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    render: js.Function1[
+      prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], 
+      prosemirrorDashMenuLib.Anon_Dom[S]
+    ]
+  ): MenuElement[S] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[MenuElement[S]]
+  }
+}
+

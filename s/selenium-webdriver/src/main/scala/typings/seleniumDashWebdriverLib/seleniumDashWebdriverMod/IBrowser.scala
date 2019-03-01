@@ -20,3 +20,36 @@ trait IBrowser extends js.Object {
   var SAFARI: java.lang.String
 }
 
+object IBrowser {
+  @scala.inline
+  def apply(
+    ANDROID: java.lang.String,
+    CHROME: java.lang.String,
+    EDGE: java.lang.String,
+    FIREFOX: java.lang.String,
+    HTMLUNIT: java.lang.String,
+    IE: java.lang.String,
+    INTERNET_EXPLORER: java.lang.String,
+    IPAD: java.lang.String,
+    IPHONE: java.lang.String,
+    OPERA: java.lang.String,
+    PHANTOM_JS: java.lang.String,
+    SAFARI: java.lang.String
+  ): IBrowser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ANDROID")(ANDROID)
+    __obj.updateDynamic("CHROME")(CHROME)
+    __obj.updateDynamic("EDGE")(EDGE)
+    __obj.updateDynamic("FIREFOX")(FIREFOX)
+    __obj.updateDynamic("HTMLUNIT")(HTMLUNIT)
+    __obj.updateDynamic("IE")(IE)
+    __obj.updateDynamic("INTERNET_EXPLORER")(INTERNET_EXPLORER)
+    __obj.updateDynamic("IPAD")(IPAD)
+    __obj.updateDynamic("IPHONE")(IPHONE)
+    __obj.updateDynamic("OPERA")(OPERA)
+    __obj.updateDynamic("PHANTOM_JS")(PHANTOM_JS)
+    __obj.updateDynamic("SAFARI")(SAFARI)
+    __obj.asInstanceOf[IBrowser]
+  }
+}
+

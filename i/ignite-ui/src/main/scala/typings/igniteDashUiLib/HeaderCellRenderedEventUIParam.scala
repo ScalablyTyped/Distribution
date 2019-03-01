@@ -20,3 +20,14 @@ trait HeaderCellRenderedEventUIParam extends js.Object {
   var th: js.UndefOr[stdLib.Element] = js.undefined
 }
 
+object HeaderCellRenderedEventUIParam {
+  @scala.inline
+  def apply(columnKey: java.lang.String = null, owner: js.Any = null, th: stdLib.Element = null): HeaderCellRenderedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (th != null) __obj.updateDynamic("th")(th)
+    __obj.asInstanceOf[HeaderCellRenderedEventUIParam]
+  }
+}
+

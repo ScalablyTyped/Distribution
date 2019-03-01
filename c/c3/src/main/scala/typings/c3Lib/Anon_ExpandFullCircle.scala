@@ -35,3 +35,26 @@ trait Anon_ExpandFullCircle extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ExpandFullCircle {
+  @scala.inline
+  def apply(
+    expand: js.UndefOr[scala.Boolean] = js.undefined,
+    fullCircle: js.UndefOr[scala.Boolean] = js.undefined,
+    label: Anon_FormatRatio = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    units: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_ExpandFullCircle = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
+    if (!js.isUndefined(fullCircle)) __obj.updateDynamic("fullCircle")(fullCircle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ExpandFullCircle]
+  }
+}
+

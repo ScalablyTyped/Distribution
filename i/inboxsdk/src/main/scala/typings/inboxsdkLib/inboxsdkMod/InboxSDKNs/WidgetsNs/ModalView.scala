@@ -12,3 +12,18 @@ trait ModalView extends js.Object {
   def on_destroy(name: inboxsdkLib.inboxsdkLibStrings.destroy, cb: js.Function0[scala.Unit]): scala.Unit
 }
 
+object ModalView {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    destroyed: scala.Boolean,
+    on_destroy: js.Function2[inboxsdkLib.inboxsdkLibStrings.destroy, js.Function0[scala.Unit], scala.Unit]
+  ): ModalView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("destroyed")(destroyed)
+    __obj.updateDynamic("on")(on_destroy)
+    __obj.asInstanceOf[ModalView]
+  }
+}
+

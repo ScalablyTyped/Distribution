@@ -17,3 +17,18 @@ trait ItemsSliderSettings extends js.Object {
   var ticks: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object ItemsSliderSettings {
+  @scala.inline
+  def apply(
+    labelSpace: scala.Int | scala.Double = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    ticks: js.Array[_] = null
+  ): ItemsSliderSettings = {
+    val __obj = js.Dynamic.literal()
+    if (labelSpace != null) __obj.updateDynamic("labelSpace")(labelSpace.asInstanceOf[js.Any])
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    __obj.asInstanceOf[ItemsSliderSettings]
+  }
+}
+

@@ -16,3 +16,13 @@ trait WaiterConfiguration extends js.Object {
   var maxAttempts: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WaiterConfiguration {
+  @scala.inline
+  def apply(delay: scala.Int | scala.Double = null, maxAttempts: scala.Int | scala.Double = null): WaiterConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WaiterConfiguration]
+  }
+}
+

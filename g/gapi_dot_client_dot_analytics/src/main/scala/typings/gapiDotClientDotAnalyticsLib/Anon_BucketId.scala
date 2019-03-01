@@ -12,3 +12,13 @@ trait Anon_BucketId extends js.Object {
   var objectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_BucketId {
+  @scala.inline
+  def apply(bucketId: java.lang.String = null, objectId: java.lang.String = null): Anon_BucketId = {
+    val __obj = js.Dynamic.literal()
+    if (bucketId != null) __obj.updateDynamic("bucketId")(bucketId)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    __obj.asInstanceOf[Anon_BucketId]
+  }
+}
+

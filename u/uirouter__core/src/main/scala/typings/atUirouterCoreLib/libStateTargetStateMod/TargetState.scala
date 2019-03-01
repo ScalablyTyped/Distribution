@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@uirouter/core/lib/state/targetState", "TargetState")
 @js.native
-class TargetState protected () extends js.Object {
+class TargetState protected ()
+  extends atUirouterCoreLib.libStateInterfaceMod._RedirectToResult {
   /**
     * The TargetState constructor
     *

@@ -12,3 +12,13 @@ trait ProfileMetadata extends js.Object {
   var userTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ProfileMetadata {
+  @scala.inline
+  def apply(objectType: java.lang.String = null, userTypes: js.Array[java.lang.String] = null): ProfileMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (userTypes != null) __obj.updateDynamic("userTypes")(userTypes)
+    __obj.asInstanceOf[ProfileMetadata]
+  }
+}
+

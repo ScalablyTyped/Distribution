@@ -30,3 +30,30 @@ trait IInvoiceCreationOptions
   var tax_percent: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IInvoiceCreationOptions {
+  @scala.inline
+  def apply(
+    customer: java.lang.String,
+    application_fee: scala.Int | scala.Double = null,
+    description: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    statement_descriptor: java.lang.String = null,
+    subscription: java.lang.String = null,
+    tax_percent: scala.Int | scala.Double = null
+  ): IInvoiceCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customer")(customer)
+    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IInvoiceCreationOptions]
+  }
+}
+

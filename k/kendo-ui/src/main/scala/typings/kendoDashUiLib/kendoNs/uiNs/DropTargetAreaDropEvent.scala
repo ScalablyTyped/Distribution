@@ -11,3 +11,20 @@ trait DropTargetAreaDropEvent extends DropTargetAreaEvent {
   var target: js.UndefOr[stdLib.Element] = js.undefined
 }
 
+object DropTargetAreaDropEvent {
+  @scala.inline
+  def apply(
+    sender: DropTargetArea,
+    draggable: Draggable = null,
+    dropTarget: kendoDashUiLib.JQuery = null,
+    target: stdLib.Element = null
+  ): DropTargetAreaDropEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sender")(sender)
+    if (draggable != null) __obj.updateDynamic("draggable")(draggable)
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[DropTargetAreaDropEvent]
+  }
+}
+

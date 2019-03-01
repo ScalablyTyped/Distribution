@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object spdyLibStrings {
   @js.native
-  sealed trait h2 extends js.Object
+  sealed trait h2
+    extends spdyLib.spdyMod.serverNs.Protocol
   
   @js.native
-  sealed trait `http/1DOT0` extends js.Object
+  sealed trait `http/1DOT0`
+    extends spdyLib.spdyMod.serverNs.Protocol
   
   @js.native
-  sealed trait `http/1DOT1` extends js.Object
+  sealed trait `http/1DOT1`
+    extends spdyLib.spdyMod.serverNs.Protocol
   
   @js.native
-  sealed trait `spdy/2` extends js.Object
+  sealed trait `spdy/2`
+    extends spdyLib.spdyMod.serverNs.Protocol
   
   @js.native
-  sealed trait `spdy/3` extends js.Object
+  sealed trait `spdy/3`
+    extends spdyLib.spdyMod.serverNs.Protocol
   
   @js.native
-  sealed trait `spdy/3DOT1` extends js.Object
+  sealed trait `spdy/3DOT1`
+    extends spdyLib.spdyMod.serverNs.Protocol
   
   @scala.inline
   def h2: h2 = "h2".asInstanceOf[h2]

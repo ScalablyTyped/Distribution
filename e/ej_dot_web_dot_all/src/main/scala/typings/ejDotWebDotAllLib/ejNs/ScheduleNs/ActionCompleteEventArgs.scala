@@ -29,3 +29,26 @@ trait ActionCompleteEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActionCompleteEventArgs {
+  @scala.inline
+  def apply(
+    appointment: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentAction: java.lang.String = null,
+    data: js.Any = null,
+    model: Model = null,
+    requestType: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ActionCompleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentAction != null) __obj.updateDynamic("currentAction")(currentAction)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ActionCompleteEventArgs]
+  }
+}
+

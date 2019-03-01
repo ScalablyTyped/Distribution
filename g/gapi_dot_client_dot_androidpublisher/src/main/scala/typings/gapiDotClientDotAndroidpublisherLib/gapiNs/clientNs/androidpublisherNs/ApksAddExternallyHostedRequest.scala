@@ -10,3 +10,12 @@ trait ApksAddExternallyHostedRequest extends js.Object {
   var externallyHostedApk: js.UndefOr[ExternallyHostedApk] = js.undefined
 }
 
+object ApksAddExternallyHostedRequest {
+  @scala.inline
+  def apply(externallyHostedApk: ExternallyHostedApk = null): ApksAddExternallyHostedRequest = {
+    val __obj = js.Dynamic.literal()
+    if (externallyHostedApk != null) __obj.updateDynamic("externallyHostedApk")(externallyHostedApk)
+    __obj.asInstanceOf[ApksAddExternallyHostedRequest]
+  }
+}
+

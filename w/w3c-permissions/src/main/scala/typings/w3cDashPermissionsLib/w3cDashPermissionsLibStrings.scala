@@ -7,61 +7,61 @@ import scala.scalajs.js.annotation._
 
 object w3cDashPermissionsLibStrings {
   @js.native
-  sealed trait accelerometer extends js.Object
+  sealed trait accelerometer extends PermissionName
   
   @js.native
-  sealed trait `ambient-light-sensor` extends js.Object
+  sealed trait `ambient-light-sensor` extends PermissionName
   
   @js.native
-  sealed trait `background-sync` extends js.Object
+  sealed trait `background-sync` extends PermissionName
   
   @js.native
-  sealed trait bluetooth extends js.Object
+  sealed trait bluetooth extends PermissionName
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera extends PermissionName
   
   @js.native
-  sealed trait clipboard extends js.Object
+  sealed trait clipboard extends PermissionName
   
   @js.native
-  sealed trait denied extends js.Object
+  sealed trait denied extends PermissionState
   
   @js.native
-  sealed trait `device-info` extends js.Object
+  sealed trait `device-info` extends PermissionName
   
   @js.native
-  sealed trait geolocation extends js.Object
+  sealed trait geolocation extends PermissionName
   
   @js.native
-  sealed trait granted extends js.Object
+  sealed trait granted extends PermissionState
   
   @js.native
-  sealed trait gyroscope extends js.Object
+  sealed trait gyroscope extends PermissionName
   
   @js.native
-  sealed trait magnetometer extends js.Object
+  sealed trait magnetometer extends PermissionName
   
   @js.native
-  sealed trait microphone extends js.Object
+  sealed trait microphone extends PermissionName
   
   @js.native
-  sealed trait midi extends js.Object
+  sealed trait midi extends PermissionName
   
   @js.native
-  sealed trait notifications extends js.Object
+  sealed trait notifications extends PermissionName
   
   @js.native
-  sealed trait `persistent-storage` extends js.Object
+  sealed trait `persistent-storage` extends PermissionName
   
   @js.native
-  sealed trait prompt extends js.Object
+  sealed trait prompt extends PermissionState
   
   @js.native
-  sealed trait push extends js.Object
+  sealed trait push extends PermissionName
   
   @js.native
-  sealed trait speaker extends js.Object
+  sealed trait speaker extends PermissionName
   
   @scala.inline
   def accelerometer: accelerometer = "accelerometer".asInstanceOf[accelerometer]

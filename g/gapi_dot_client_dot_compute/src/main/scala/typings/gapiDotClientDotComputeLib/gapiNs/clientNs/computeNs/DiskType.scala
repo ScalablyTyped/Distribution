@@ -28,3 +28,32 @@ trait DiskType extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DiskType {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    defaultDiskSizeGb: java.lang.String = null,
+    deprecated: DeprecationStatus = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    validDiskSize: java.lang.String = null,
+    zone: java.lang.String = null
+  ): DiskType = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (defaultDiskSizeGb != null) __obj.updateDynamic("defaultDiskSizeGb")(defaultDiskSizeGb)
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (validDiskSize != null) __obj.updateDynamic("validDiskSize")(validDiskSize)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[DiskType]
+  }
+}
+

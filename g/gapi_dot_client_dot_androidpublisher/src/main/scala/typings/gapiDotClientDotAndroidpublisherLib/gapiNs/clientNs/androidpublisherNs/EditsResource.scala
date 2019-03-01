@@ -30,3 +30,55 @@ trait EditsResource extends js.Object {
   def validate(request: gapiDotClientDotAndroidpublisherLib.Anon_AltEditId): gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
 }
 
+object EditsResource {
+  @scala.inline
+  def apply(
+    apklistings: ApklistingsResource,
+    apks: ApksResource,
+    commit: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    deobfuscationfiles: DeobfuscationfilesResource,
+    details: DetailsResource,
+    expansionfiles: ExpansionfilesResource,
+    get: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
+    ],
+    images: ImagesResource,
+    insert: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
+    ],
+    listings: ListingsResource,
+    testers: TestersResource,
+    tracks: TracksResource,
+    validate: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppEdit]
+    ]
+  ): EditsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apklistings")(apklistings)
+    __obj.updateDynamic("apks")(apks)
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("deobfuscationfiles")(deobfuscationfiles)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("expansionfiles")(expansionfiles)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("images")(images)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("listings")(listings)
+    __obj.updateDynamic("testers")(testers)
+    __obj.updateDynamic("tracks")(tracks)
+    __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[EditsResource]
+  }
+}
+

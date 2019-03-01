@@ -15,3 +15,21 @@ trait ICachedFileUpdaterStatics extends js.Object {
   ): scala.Unit
 }
 
+object ICachedFileUpdaterStatics {
+  @scala.inline
+  def apply(
+    setUpdateInformation: js.Function5[
+      winrtLib.WindowsNs.StorageNs.IStorageFile, 
+      java.lang.String, 
+      ReadActivationMode, 
+      WriteActivationMode, 
+      CachedFileOptions, 
+      scala.Unit
+    ]
+  ): ICachedFileUpdaterStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setUpdateInformation")(setUpdateInformation)
+    __obj.asInstanceOf[ICachedFileUpdaterStatics]
+  }
+}
+

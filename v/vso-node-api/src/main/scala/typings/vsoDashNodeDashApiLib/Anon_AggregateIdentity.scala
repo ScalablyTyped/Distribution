@@ -12,3 +12,20 @@ trait Anon_AggregateIdentity extends js.Object {
   var serviceIdentity: scala.Double
 }
 
+object Anon_AggregateIdentity {
+  @scala.inline
+  def apply(
+    aggregateIdentity: scala.Double,
+    importedIdentity: scala.Double,
+    none: scala.Double,
+    serviceIdentity: scala.Double
+  ): Anon_AggregateIdentity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregateIdentity")(aggregateIdentity)
+    __obj.updateDynamic("importedIdentity")(importedIdentity)
+    __obj.updateDynamic("none")(none)
+    __obj.updateDynamic("serviceIdentity")(serviceIdentity)
+    __obj.asInstanceOf[Anon_AggregateIdentity]
+  }
+}
+

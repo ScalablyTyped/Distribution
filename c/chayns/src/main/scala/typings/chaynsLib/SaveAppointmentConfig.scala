@@ -20,3 +20,22 @@ trait SaveAppointmentConfig extends js.Object {
   var start: stdLib.Date
 }
 
+object SaveAppointmentConfig {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    end: stdLib.Date,
+    location: java.lang.String,
+    name: java.lang.String,
+    start: stdLib.Date
+  ): SaveAppointmentConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[SaveAppointmentConfig]
+  }
+}
+

@@ -12,3 +12,22 @@ trait XTextListener
   def textChanged(rEvent: TextEvent): scala.Unit
 }
 
+object XTextListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    textChanged: js.Function1[TextEvent, scala.Unit]
+  ): XTextListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("textChanged")(textChanged)
+    __obj.asInstanceOf[XTextListener]
+  }
+}
+

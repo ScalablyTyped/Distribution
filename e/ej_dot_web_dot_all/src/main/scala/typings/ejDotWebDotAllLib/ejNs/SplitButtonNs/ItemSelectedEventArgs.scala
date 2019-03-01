@@ -29,3 +29,26 @@ trait ItemSelectedEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ItemSelectedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    element: js.Any = null,
+    menuId: java.lang.String = null,
+    menuText: java.lang.String = null,
+    model: Model = null,
+    selectedItem: js.Any = null,
+    `type`: java.lang.String = null
+  ): ItemSelectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (menuId != null) __obj.updateDynamic("menuId")(menuId)
+    if (menuText != null) __obj.updateDynamic("menuText")(menuText)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ItemSelectedEventArgs]
+  }
+}
+

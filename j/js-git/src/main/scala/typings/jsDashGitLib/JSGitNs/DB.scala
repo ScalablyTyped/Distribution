@@ -45,3 +45,38 @@ trait DB extends js.Object {
   def set(key: java.lang.String, value: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit
 }
 
+object DB {
+  @scala.inline
+  def apply(
+    clear: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
+    del: js.Function2[java.lang.String, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
+    get: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ js.Any, /* value */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    has: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ js.Any, /* hasKey */ scala.Boolean, scala.Unit], 
+      scala.Unit
+    ],
+    init: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
+    keys: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ js.Any, /* keys */ js.Array[java.lang.String], scala.Unit], 
+      scala.Unit
+    ],
+    set: js.Function3[java.lang.String, js.Any, js.Function1[/* err */ js.Any, scala.Unit], scala.Unit]
+  ): DB = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("del")(del)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("has")(has)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("keys")(keys)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[DB]
+  }
+}
+

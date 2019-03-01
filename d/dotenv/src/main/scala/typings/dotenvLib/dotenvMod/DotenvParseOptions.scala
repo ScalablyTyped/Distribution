@@ -12,3 +12,12 @@ trait DotenvParseOptions extends js.Object {
   var debug: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DotenvParseOptions {
+  @scala.inline
+  def apply(debug: js.UndefOr[scala.Boolean] = js.undefined): DotenvParseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    __obj.asInstanceOf[DotenvParseOptions]
+  }
+}
+

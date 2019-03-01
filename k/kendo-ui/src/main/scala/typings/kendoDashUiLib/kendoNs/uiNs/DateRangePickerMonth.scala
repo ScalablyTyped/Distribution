@@ -11,3 +11,18 @@ trait DateRangePickerMonth extends js.Object {
   var weekNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DateRangePickerMonth {
+  @scala.inline
+  def apply(
+    content: java.lang.String = null,
+    empty: java.lang.String = null,
+    weekNumber: java.lang.String = null
+  ): DateRangePickerMonth = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (empty != null) __obj.updateDynamic("empty")(empty)
+    if (weekNumber != null) __obj.updateDynamic("weekNumber")(weekNumber)
+    __obj.asInstanceOf[DateRangePickerMonth]
+  }
+}
+

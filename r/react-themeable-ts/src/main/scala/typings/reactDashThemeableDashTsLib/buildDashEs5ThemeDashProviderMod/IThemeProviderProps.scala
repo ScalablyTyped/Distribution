@@ -10,3 +10,13 @@ trait IThemeProviderProps extends js.Object {
   var reactThemeable: js.Any
 }
 
+object IThemeProviderProps {
+  @scala.inline
+  def apply(reactThemeable: js.Any, children: js.Any = null): IThemeProviderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reactThemeable")(reactThemeable)
+    if (children != null) __obj.updateDynamic("children")(children)
+    __obj.asInstanceOf[IThemeProviderProps]
+  }
+}
+

@@ -23,3 +23,16 @@ trait ApplicationLoadOptions extends js.Object {
   var calculationMode: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ApplicationLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    calculationMode: js.UndefOr[scala.Boolean] = js.undefined
+  ): ApplicationLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(calculationMode)) __obj.updateDynamic("calculationMode")(calculationMode)
+    __obj.asInstanceOf[ApplicationLoadOptions]
+  }
+}
+

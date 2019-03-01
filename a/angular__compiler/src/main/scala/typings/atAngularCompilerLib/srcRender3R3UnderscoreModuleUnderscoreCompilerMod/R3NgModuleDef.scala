@@ -11,3 +11,17 @@ trait R3NgModuleDef extends js.Object {
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Type
 }
 
+object R3NgModuleDef {
+  @scala.inline
+  def apply(
+    additionalStatements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],
+    expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Type
+  ): R3NgModuleDef = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("additionalStatements")(additionalStatements)
+    __obj.updateDynamic("expression")(expression)
+    __obj.asInstanceOf[R3NgModuleDef]
+  }
+}
+

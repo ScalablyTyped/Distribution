@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * An instance of a medical-related component of a medical device
   */
-trait DeviceComponent extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DeviceComponent extends DomainResource {
   /**
     * Contains extended information for property 'lastSystemChange'.
     */
@@ -57,5 +58,63 @@ trait DeviceComponent extends DomainResource {
     * What kind of component it is
     */
   var `type`: CodeableConcept
+}
+
+object DeviceComponent {
+  @scala.inline
+  def apply(
+    identifier: Identifier,
+    `type`: CodeableConcept,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _lastSystemChange: Element = null,
+    _measurementPrinciple: Element = null,
+    _resourceType: Element = null,
+    contained: js.Array[Resource] = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    implicitRules: uri = null,
+    language: code = null,
+    languageCode: CodeableConcept = null,
+    lastSystemChange: instant = null,
+    measurementPrinciple: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    operationalStatus: js.Array[CodeableConcept] = null,
+    parameterGroup: CodeableConcept = null,
+    parent: Reference = null,
+    productionSpecification: js.Array[DeviceComponentProductionSpecification] = null,
+    resourceType: code = null,
+    source: Reference = null,
+    text: Narrative = null
+  ): DeviceComponent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("identifier")(identifier)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_lastSystemChange != null) __obj.updateDynamic("_lastSystemChange")(_lastSystemChange)
+    if (_measurementPrinciple != null) __obj.updateDynamic("_measurementPrinciple")(_measurementPrinciple)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (lastSystemChange != null) __obj.updateDynamic("lastSystemChange")(lastSystemChange)
+    if (measurementPrinciple != null) __obj.updateDynamic("measurementPrinciple")(measurementPrinciple)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (operationalStatus != null) __obj.updateDynamic("operationalStatus")(operationalStatus)
+    if (parameterGroup != null) __obj.updateDynamic("parameterGroup")(parameterGroup)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (productionSpecification != null) __obj.updateDynamic("productionSpecification")(productionSpecification)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[DeviceComponent]
+  }
 }
 

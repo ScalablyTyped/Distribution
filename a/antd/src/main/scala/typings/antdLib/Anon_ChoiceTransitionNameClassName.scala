@@ -19,3 +19,32 @@ trait Anon_ChoiceTransitionNameClassName extends js.Object {
   var transitionName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
 }
 
+object Anon_ChoiceTransitionNameClassName {
+  @scala.inline
+  def apply(
+    choiceTransitionName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    id: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    notFoundContent: propDashTypesLib.propDashTypesMod.Requireable[_],
+    optionLabelProp: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    showSearch: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
+    size: propDashTypesLib.propDashTypesMod.Requireable[
+      antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large
+    ],
+    transitionName: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  ): Anon_ChoiceTransitionNameClassName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("choiceTransitionName")(choiceTransitionName)
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("notFoundContent")(notFoundContent)
+    __obj.updateDynamic("optionLabelProp")(optionLabelProp)
+    __obj.updateDynamic("prefixCls")(prefixCls)
+    __obj.updateDynamic("showSearch")(showSearch)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("transitionName")(transitionName)
+    __obj.asInstanceOf[Anon_ChoiceTransitionNameClassName]
+  }
+}
+

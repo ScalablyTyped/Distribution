@@ -29,3 +29,42 @@ trait Conversions extends js.Object {
   def xyz(x: scala.Double, y: scala.Double, z: scala.Double): java.lang.String
 }
 
+object Conversions {
+  @scala.inline
+  def apply(
+    ansi: js.Function1[scala.Double, java.lang.String],
+    ansi256: js.Function1[scala.Double, java.lang.String],
+    apple: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
+    cmyk: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, java.lang.String],
+    gray: js.Function1[scala.Double, java.lang.String],
+    hcg: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
+    hex: js.Function1[java.lang.String, java.lang.String],
+    hsl: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
+    hsv: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
+    hwb: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
+    keyword: js.Function1[java.lang.String, java.lang.String],
+    lab: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
+    lch: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
+    rgb: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
+    xyz: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String]
+  ): Conversions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ansi")(ansi)
+    __obj.updateDynamic("ansi256")(ansi256)
+    __obj.updateDynamic("apple")(apple)
+    __obj.updateDynamic("cmyk")(cmyk)
+    __obj.updateDynamic("gray")(gray)
+    __obj.updateDynamic("hcg")(hcg)
+    __obj.updateDynamic("hex")(hex)
+    __obj.updateDynamic("hsl")(hsl)
+    __obj.updateDynamic("hsv")(hsv)
+    __obj.updateDynamic("hwb")(hwb)
+    __obj.updateDynamic("keyword")(keyword)
+    __obj.updateDynamic("lab")(lab)
+    __obj.updateDynamic("lch")(lch)
+    __obj.updateDynamic("rgb")(rgb)
+    __obj.updateDynamic("xyz")(xyz)
+    __obj.asInstanceOf[Conversions]
+  }
+}
+

@@ -80,3 +80,136 @@ trait XDocument extends XNode {
   def importNode(importedNode: XNode, deep: scala.Boolean): XNode
 }
 
+object XDocument {
+  @scala.inline
+  def apply(
+    Attributes: XNamedNodeMap,
+    ChildNodes: XNodeList,
+    Doctype: XDocumentType,
+    DocumentElement: XElement,
+    FirstChild: XNode,
+    Implementation: XDOMImplementation,
+    LastChild: XNode,
+    LocalName: java.lang.String,
+    NamespaceURI: java.lang.String,
+    NextSibling: XNode,
+    NodeName: java.lang.String,
+    NodeType: NodeType,
+    NodeValue: java.lang.String,
+    OwnerDocument: XDocument,
+    ParentNode: XNode,
+    Prefix: java.lang.String,
+    PreviousSibling: XNode,
+    acquire: js.Function0[scala.Unit],
+    appendChild: js.Function1[XNode, XNode],
+    cloneNode: js.Function1[scala.Boolean, XNode],
+    createAttribute: js.Function1[java.lang.String, XAttr],
+    createAttributeNS: js.Function2[java.lang.String, java.lang.String, XAttr],
+    createCDATASection: js.Function1[java.lang.String, XCDATASection],
+    createComment: js.Function1[java.lang.String, XComment],
+    createDocumentFragment: js.Function0[XDocumentFragment],
+    createElement: js.Function1[java.lang.String, XElement],
+    createElementNS: js.Function2[java.lang.String, java.lang.String, XElement],
+    createEntityReference: js.Function1[java.lang.String, XEntityReference],
+    createProcessingInstruction: js.Function2[java.lang.String, java.lang.String, XProcessingInstruction],
+    createTextNode: js.Function1[java.lang.String, XText],
+    getAttributes: js.Function0[XNamedNodeMap],
+    getChildNodes: js.Function0[XNodeList],
+    getDoctype: js.Function0[XDocumentType],
+    getDocumentElement: js.Function0[XElement],
+    getElementById: js.Function1[java.lang.String, XElement],
+    getElementsByTagName: js.Function1[java.lang.String, XNodeList],
+    getElementsByTagNameNS: js.Function2[java.lang.String, java.lang.String, XNodeList],
+    getFirstChild: js.Function0[XNode],
+    getImplementation: js.Function0[XDOMImplementation],
+    getLastChild: js.Function0[XNode],
+    getLocalName: js.Function0[java.lang.String],
+    getNamespaceURI: js.Function0[java.lang.String],
+    getNextSibling: js.Function0[XNode],
+    getNodeName: js.Function0[java.lang.String],
+    getNodeType: js.Function0[NodeType],
+    getNodeValue: js.Function0[java.lang.String],
+    getOwnerDocument: js.Function0[XDocument],
+    getParentNode: js.Function0[XNode],
+    getPrefix: js.Function0[java.lang.String],
+    getPreviousSibling: js.Function0[XNode],
+    hasAttributes: js.Function0[scala.Boolean],
+    hasChildNodes: js.Function0[scala.Boolean],
+    importNode: js.Function2[XNode, scala.Boolean, XNode],
+    insertBefore: js.Function2[XNode, XNode, XNode],
+    isSupported: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    normalize: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChild: js.Function1[XNode, XNode],
+    replaceChild: js.Function2[XNode, XNode, XNode],
+    setNodeValue: js.Function1[java.lang.String, scala.Unit],
+    setPrefix: js.Function1[java.lang.String, scala.Unit]
+  ): XDocument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Attributes")(Attributes)
+    __obj.updateDynamic("ChildNodes")(ChildNodes)
+    __obj.updateDynamic("Doctype")(Doctype)
+    __obj.updateDynamic("DocumentElement")(DocumentElement)
+    __obj.updateDynamic("FirstChild")(FirstChild)
+    __obj.updateDynamic("Implementation")(Implementation)
+    __obj.updateDynamic("LastChild")(LastChild)
+    __obj.updateDynamic("LocalName")(LocalName)
+    __obj.updateDynamic("NamespaceURI")(NamespaceURI)
+    __obj.updateDynamic("NextSibling")(NextSibling)
+    __obj.updateDynamic("NodeName")(NodeName)
+    __obj.updateDynamic("NodeType")(NodeType)
+    __obj.updateDynamic("NodeValue")(NodeValue)
+    __obj.updateDynamic("OwnerDocument")(OwnerDocument)
+    __obj.updateDynamic("ParentNode")(ParentNode)
+    __obj.updateDynamic("Prefix")(Prefix)
+    __obj.updateDynamic("PreviousSibling")(PreviousSibling)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("appendChild")(appendChild)
+    __obj.updateDynamic("cloneNode")(cloneNode)
+    __obj.updateDynamic("createAttribute")(createAttribute)
+    __obj.updateDynamic("createAttributeNS")(createAttributeNS)
+    __obj.updateDynamic("createCDATASection")(createCDATASection)
+    __obj.updateDynamic("createComment")(createComment)
+    __obj.updateDynamic("createDocumentFragment")(createDocumentFragment)
+    __obj.updateDynamic("createElement")(createElement)
+    __obj.updateDynamic("createElementNS")(createElementNS)
+    __obj.updateDynamic("createEntityReference")(createEntityReference)
+    __obj.updateDynamic("createProcessingInstruction")(createProcessingInstruction)
+    __obj.updateDynamic("createTextNode")(createTextNode)
+    __obj.updateDynamic("getAttributes")(getAttributes)
+    __obj.updateDynamic("getChildNodes")(getChildNodes)
+    __obj.updateDynamic("getDoctype")(getDoctype)
+    __obj.updateDynamic("getDocumentElement")(getDocumentElement)
+    __obj.updateDynamic("getElementById")(getElementById)
+    __obj.updateDynamic("getElementsByTagName")(getElementsByTagName)
+    __obj.updateDynamic("getElementsByTagNameNS")(getElementsByTagNameNS)
+    __obj.updateDynamic("getFirstChild")(getFirstChild)
+    __obj.updateDynamic("getImplementation")(getImplementation)
+    __obj.updateDynamic("getLastChild")(getLastChild)
+    __obj.updateDynamic("getLocalName")(getLocalName)
+    __obj.updateDynamic("getNamespaceURI")(getNamespaceURI)
+    __obj.updateDynamic("getNextSibling")(getNextSibling)
+    __obj.updateDynamic("getNodeName")(getNodeName)
+    __obj.updateDynamic("getNodeType")(getNodeType)
+    __obj.updateDynamic("getNodeValue")(getNodeValue)
+    __obj.updateDynamic("getOwnerDocument")(getOwnerDocument)
+    __obj.updateDynamic("getParentNode")(getParentNode)
+    __obj.updateDynamic("getPrefix")(getPrefix)
+    __obj.updateDynamic("getPreviousSibling")(getPreviousSibling)
+    __obj.updateDynamic("hasAttributes")(hasAttributes)
+    __obj.updateDynamic("hasChildNodes")(hasChildNodes)
+    __obj.updateDynamic("importNode")(importNode)
+    __obj.updateDynamic("insertBefore")(insertBefore)
+    __obj.updateDynamic("isSupported")(isSupported)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeChild")(removeChild)
+    __obj.updateDynamic("replaceChild")(replaceChild)
+    __obj.updateDynamic("setNodeValue")(setNodeValue)
+    __obj.updateDynamic("setPrefix")(setPrefix)
+    __obj.asInstanceOf[XDocument]
+  }
+}
+

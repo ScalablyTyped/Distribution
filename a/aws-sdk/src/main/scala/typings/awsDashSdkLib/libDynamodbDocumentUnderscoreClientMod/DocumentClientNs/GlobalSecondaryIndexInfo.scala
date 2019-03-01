@@ -24,3 +24,20 @@ trait GlobalSecondaryIndexInfo extends js.Object {
   var ProvisionedThroughput: js.UndefOr[ProvisionedThroughput] = js.undefined
 }
 
+object GlobalSecondaryIndexInfo {
+  @scala.inline
+  def apply(
+    IndexName: IndexName = null,
+    KeySchema: KeySchema = null,
+    Projection: Projection = null,
+    ProvisionedThroughput: ProvisionedThroughput = null
+  ): GlobalSecondaryIndexInfo = {
+    val __obj = js.Dynamic.literal()
+    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
+    if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema)
+    if (Projection != null) __obj.updateDynamic("Projection")(Projection)
+    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)
+    __obj.asInstanceOf[GlobalSecondaryIndexInfo]
+  }
+}
+

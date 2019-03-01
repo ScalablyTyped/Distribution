@@ -34,3 +34,22 @@ trait Configurations extends js.Object {
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Configurations {
+  @scala.inline
+  def apply(
+    classNames: ClassnamesConfigurations = null,
+    clone: js.UndefOr[scala.Boolean] = js.undefined,
+    openingInterval: scala.Int | scala.Double = null,
+    panelNodetype: java.lang.String = null,
+    transitionDuration: scala.Int | scala.Double = null
+  ): Configurations = {
+    val __obj = js.Dynamic.literal()
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames)
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (openingInterval != null) __obj.updateDynamic("openingInterval")(openingInterval.asInstanceOf[js.Any])
+    if (panelNodetype != null) __obj.updateDynamic("panelNodetype")(panelNodetype)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Configurations]
+  }
+}
+

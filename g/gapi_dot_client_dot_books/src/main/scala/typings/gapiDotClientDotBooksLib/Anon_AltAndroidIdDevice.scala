@@ -39,3 +39,40 @@ trait Anon_AltAndroidIdDevice extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltAndroidIdDevice {
+  @scala.inline
+  def apply(
+    alt: java.lang.String = null,
+    androidId: java.lang.String = null,
+    device: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    manufacturer: java.lang.String = null,
+    model: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    offerId: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    product: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    serial: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltAndroidIdDevice = {
+    val __obj = js.Dynamic.literal()
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (androidId != null) __obj.updateDynamic("androidId")(androidId)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (offerId != null) __obj.updateDynamic("offerId")(offerId)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (product != null) __obj.updateDynamic("product")(product)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (serial != null) __obj.updateDynamic("serial")(serial)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltAndroidIdDevice]
+  }
+}
+

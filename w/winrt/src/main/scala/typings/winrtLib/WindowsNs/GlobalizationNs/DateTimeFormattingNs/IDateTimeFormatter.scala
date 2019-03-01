@@ -25,3 +25,46 @@ trait IDateTimeFormatter extends js.Object {
   def format(value: stdLib.Date): java.lang.String
 }
 
+object IDateTimeFormatter {
+  @scala.inline
+  def apply(
+    calendar: java.lang.String,
+    clock: java.lang.String,
+    format: js.Function1[stdLib.Date, java.lang.String],
+    geographicRegion: java.lang.String,
+    includeDay: DayFormat,
+    includeDayOfWeek: DayOfWeekFormat,
+    includeHour: HourFormat,
+    includeMinute: MinuteFormat,
+    includeMonth: MonthFormat,
+    includeSecond: SecondFormat,
+    includeYear: YearFormat,
+    languages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
+    numeralSystem: java.lang.String,
+    patterns: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
+    resolvedGeographicRegion: java.lang.String,
+    resolvedLanguage: java.lang.String,
+    template: java.lang.String
+  ): IDateTimeFormatter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calendar")(calendar)
+    __obj.updateDynamic("clock")(clock)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("geographicRegion")(geographicRegion)
+    __obj.updateDynamic("includeDay")(includeDay)
+    __obj.updateDynamic("includeDayOfWeek")(includeDayOfWeek)
+    __obj.updateDynamic("includeHour")(includeHour)
+    __obj.updateDynamic("includeMinute")(includeMinute)
+    __obj.updateDynamic("includeMonth")(includeMonth)
+    __obj.updateDynamic("includeSecond")(includeSecond)
+    __obj.updateDynamic("includeYear")(includeYear)
+    __obj.updateDynamic("languages")(languages)
+    __obj.updateDynamic("numeralSystem")(numeralSystem)
+    __obj.updateDynamic("patterns")(patterns)
+    __obj.updateDynamic("resolvedGeographicRegion")(resolvedGeographicRegion)
+    __obj.updateDynamic("resolvedLanguage")(resolvedLanguage)
+    __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[IDateTimeFormatter]
+  }
+}
+

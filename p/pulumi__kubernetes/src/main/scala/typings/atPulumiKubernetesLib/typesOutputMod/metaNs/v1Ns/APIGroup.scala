@@ -48,3 +48,24 @@ trait APIGroup extends js.Object {
   val versions: js.Array[GroupVersionForDiscovery]
 }
 
+object APIGroup {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    kind: java.lang.String,
+    name: java.lang.String,
+    preferredVersion: GroupVersionForDiscovery,
+    serverAddressByClientCIDRs: js.Array[ServerAddressByClientCIDR],
+    versions: js.Array[GroupVersionForDiscovery]
+  ): APIGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("preferredVersion")(preferredVersion)
+    __obj.updateDynamic("serverAddressByClientCIDRs")(serverAddressByClientCIDRs)
+    __obj.updateDynamic("versions")(versions)
+    __obj.asInstanceOf[APIGroup]
+  }
+}
+

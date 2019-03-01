@@ -28,3 +28,22 @@ trait ColumnDragEndEventUIParam extends js.Object {
   var owner: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColumnDragEndEventUIParam {
+  @scala.inline
+  def apply(
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    header: java.lang.String = null,
+    helper: java.lang.String = null,
+    owner: java.lang.String = null
+  ): ColumnDragEndEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (helper != null) __obj.updateDynamic("helper")(helper)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ColumnDragEndEventUIParam]
+  }
+}
+

@@ -22,3 +22,13 @@ trait Anon_Promise extends js.Object {
   var useDeprecatedSynchronousErrorHandling: scala.Boolean
 }
 
+object Anon_Promise {
+  @scala.inline
+  def apply(Promise: stdLib.PromiseConstructorLike, useDeprecatedSynchronousErrorHandling: scala.Boolean): Anon_Promise = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Promise")(Promise)
+    __obj.updateDynamic("useDeprecatedSynchronousErrorHandling")(useDeprecatedSynchronousErrorHandling)
+    __obj.asInstanceOf[Anon_Promise]
+  }
+}
+

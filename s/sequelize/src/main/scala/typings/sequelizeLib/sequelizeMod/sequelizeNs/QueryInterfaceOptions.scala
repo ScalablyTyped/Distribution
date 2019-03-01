@@ -26,3 +26,13 @@ trait QueryInterfaceOptions extends js.Object {
   var transaction: js.UndefOr[Transaction] = js.undefined
 }
 
+object QueryInterfaceOptions {
+  @scala.inline
+  def apply(logging: scala.Boolean | js.Function = null, transaction: Transaction = null): QueryInterfaceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[QueryInterfaceOptions]
+  }
+}
+

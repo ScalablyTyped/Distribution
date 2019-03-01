@@ -37,3 +37,57 @@ trait InstanceGroupsResource extends js.Object {
   def setNamedPorts(request: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object InstanceGroupsResource {
+  @scala.inline
+  def apply(
+    addInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroup]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupList]
+    ],
+    listInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupsListInstances]
+    ],
+    removeInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setNamedPorts: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroup, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): InstanceGroupsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addInstances")(addInstances)
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("listInstances")(listInstances)
+    __obj.updateDynamic("removeInstances")(removeInstances)
+    __obj.updateDynamic("setNamedPorts")(setNamedPorts)
+    __obj.asInstanceOf[InstanceGroupsResource]
+  }
+}
+

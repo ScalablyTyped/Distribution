@@ -27,3 +27,34 @@ trait XScannerManager
   ): scala.Unit
 }
 
+object XScannerManager {
+  @scala.inline
+  def apply(
+    AvailableScanners: activexDashInteropLib.SafeArray[ScannerContext],
+    acquire: js.Function0[scala.Unit],
+    configureScanner: js.Function1[js.Array[ScannerContext], scala.Boolean],
+    getAvailableScanners: js.Function0[activexDashInteropLib.SafeArray[ScannerContext]],
+    getBitmap: js.Function1[ScannerContext, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap],
+    getError: js.Function1[ScannerContext, ScanError],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    startScan: js.Function2[
+      ScannerContext, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, 
+      scala.Unit
+    ]
+  ): XScannerManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AvailableScanners")(AvailableScanners)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("configureScanner")(configureScanner)
+    __obj.updateDynamic("getAvailableScanners")(getAvailableScanners)
+    __obj.updateDynamic("getBitmap")(getBitmap)
+    __obj.updateDynamic("getError")(getError)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("startScan")(startScan)
+    __obj.asInstanceOf[XScannerManager]
+  }
+}
+

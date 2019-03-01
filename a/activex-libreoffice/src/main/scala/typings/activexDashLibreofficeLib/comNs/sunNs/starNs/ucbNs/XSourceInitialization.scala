@@ -21,3 +21,20 @@ trait XSourceInitialization
   def setSource(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): scala.Unit
 }
 
+object XSourceInitialization {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setSource: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+  ): XSourceInitialization = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setSource")(setSource)
+    __obj.asInstanceOf[XSourceInitialization]
+  }
+}
+

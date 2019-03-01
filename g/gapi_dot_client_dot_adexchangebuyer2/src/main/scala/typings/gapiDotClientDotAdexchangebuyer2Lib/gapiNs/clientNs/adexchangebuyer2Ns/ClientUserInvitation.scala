@@ -25,3 +25,18 @@ trait ClientUserInvitation extends js.Object {
   var invitationId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientUserInvitation {
+  @scala.inline
+  def apply(
+    clientAccountId: java.lang.String = null,
+    email: java.lang.String = null,
+    invitationId: java.lang.String = null
+  ): ClientUserInvitation = {
+    val __obj = js.Dynamic.literal()
+    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId)
+    __obj.asInstanceOf[ClientUserInvitation]
+  }
+}
+

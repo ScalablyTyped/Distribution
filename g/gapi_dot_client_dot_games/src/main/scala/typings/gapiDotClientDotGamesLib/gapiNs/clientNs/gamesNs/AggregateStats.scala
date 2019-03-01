@@ -18,3 +18,22 @@ trait AggregateStats extends js.Object {
   var sum: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AggregateStats {
+  @scala.inline
+  def apply(
+    count: java.lang.String = null,
+    kind: java.lang.String = null,
+    max: java.lang.String = null,
+    min: java.lang.String = null,
+    sum: java.lang.String = null
+  ): AggregateStats = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (min != null) __obj.updateDynamic("min")(min)
+    if (sum != null) __obj.updateDynamic("sum")(sum)
+    __obj.asInstanceOf[AggregateStats]
+  }
+}
+

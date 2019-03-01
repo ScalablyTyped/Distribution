@@ -13,3 +13,22 @@ trait FeaturesResultPayload extends EventPayload {
   var success: scala.Boolean
 }
 
+object FeaturesResultPayload {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    scenarioResults: js.Array[_],
+    stepsResults: js.Array[_],
+    strict: scala.Boolean,
+    success: scala.Boolean
+  ): FeaturesResultPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("scenarioResults")(scenarioResults)
+    __obj.updateDynamic("stepsResults")(stepsResults)
+    __obj.updateDynamic("strict")(strict)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[FeaturesResultPayload]
+  }
+}
+

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Duration extends js.Object {
+trait Duration extends _LocaleSpecifier {
   def abs(): Duration = js.native
   /**
     * Mutates the original duration by adding time

@@ -19,3 +19,20 @@ trait Install extends js.Object {
   var versionCode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Install {
+  @scala.inline
+  def apply(
+    installState: java.lang.String = null,
+    kind: java.lang.String = null,
+    productId: java.lang.String = null,
+    versionCode: scala.Int | scala.Double = null
+  ): Install = {
+    val __obj = js.Dynamic.literal()
+    if (installState != null) __obj.updateDynamic("installState")(installState)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Install]
+  }
+}
+

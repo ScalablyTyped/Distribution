@@ -57,3 +57,18 @@ trait XHierarchicalStorageAccess extends js.Object {
   def removeStreamElementByHierarchicalName(sElementPath: java.lang.String): scala.Unit
 }
 
+object XHierarchicalStorageAccess {
+  @scala.inline
+  def apply(
+    openEncryptedStreamElementByHierarchicalName: js.Function3[java.lang.String, scala.Double, java.lang.String, XExtendedStorageStream],
+    openStreamElementByHierarchicalName: js.Function2[java.lang.String, scala.Double, XExtendedStorageStream],
+    removeStreamElementByHierarchicalName: js.Function1[java.lang.String, scala.Unit]
+  ): XHierarchicalStorageAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("openEncryptedStreamElementByHierarchicalName")(openEncryptedStreamElementByHierarchicalName)
+    __obj.updateDynamic("openStreamElementByHierarchicalName")(openStreamElementByHierarchicalName)
+    __obj.updateDynamic("removeStreamElementByHierarchicalName")(removeStreamElementByHierarchicalName)
+    __obj.asInstanceOf[XHierarchicalStorageAccess]
+  }
+}
+

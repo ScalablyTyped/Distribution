@@ -16,3 +16,20 @@ trait Anon_ChangedAttributesSinceTimestamp extends js.Object {
   var startDate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ChangedAttributesSinceTimestamp {
+  @scala.inline
+  def apply(
+    changedAttributesSinceTimestamp: java.lang.String = null,
+    changedMetricsSinceTimestamp: java.lang.String = null,
+    endDate: java.lang.String = null,
+    startDate: java.lang.String = null
+  ): Anon_ChangedAttributesSinceTimestamp = {
+    val __obj = js.Dynamic.literal()
+    if (changedAttributesSinceTimestamp != null) __obj.updateDynamic("changedAttributesSinceTimestamp")(changedAttributesSinceTimestamp)
+    if (changedMetricsSinceTimestamp != null) __obj.updateDynamic("changedMetricsSinceTimestamp")(changedMetricsSinceTimestamp)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    __obj.asInstanceOf[Anon_ChangedAttributesSinceTimestamp]
+  }
+}
+

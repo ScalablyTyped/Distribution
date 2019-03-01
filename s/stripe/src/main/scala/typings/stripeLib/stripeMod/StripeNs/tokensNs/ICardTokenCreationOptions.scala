@@ -15,3 +15,20 @@ trait ICardTokenCreationOptions extends ITokenCreationOptionsBase {
   var card: js.UndefOr[stripeLib.stripeMod.StripeNs.sourcesNs.ISourceCreationOptions] = js.undefined
 }
 
+object ICardTokenCreationOptions {
+  @scala.inline
+  def apply(
+    card: stripeLib.stripeMod.StripeNs.sourcesNs.ISourceCreationOptions = null,
+    customer: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null
+  ): ICardTokenCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    __obj.asInstanceOf[ICardTokenCreationOptions]
+  }
+}
+

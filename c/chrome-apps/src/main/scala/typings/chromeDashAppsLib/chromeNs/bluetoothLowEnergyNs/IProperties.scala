@@ -14,3 +14,12 @@ trait IProperties extends js.Object {
   var persistent: scala.Boolean
 }
 
+object IProperties {
+  @scala.inline
+  def apply(persistent: scala.Boolean): IProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("persistent")(persistent)
+    __obj.asInstanceOf[IProperties]
+  }
+}
+

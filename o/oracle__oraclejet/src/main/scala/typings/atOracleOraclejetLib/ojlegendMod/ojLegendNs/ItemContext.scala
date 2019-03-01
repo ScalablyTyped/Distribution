@@ -10,3 +10,12 @@ trait ItemContext extends js.Object {
   var text: java.lang.String
 }
 
+object ItemContext {
+  @scala.inline
+  def apply(text: java.lang.String): ItemContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ItemContext]
+  }
+}
+

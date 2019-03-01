@@ -12,3 +12,12 @@ trait SaveOptions extends js.Object {
   var includeText: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SaveOptions {
+  @scala.inline
+  def apply(includeText: js.UndefOr[scala.Boolean] = js.undefined): SaveOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeText)) __obj.updateDynamic("includeText")(includeText)
+    __obj.asInstanceOf[SaveOptions]
+  }
+}
+

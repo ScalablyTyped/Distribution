@@ -10,3 +10,13 @@ trait Anon_Connector extends js.Object {
   var properties: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Connector {
+  @scala.inline
+  def apply(connector: js.Any, properties: js.Any = null): Anon_Connector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connector")(connector)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Anon_Connector]
+  }
+}
+

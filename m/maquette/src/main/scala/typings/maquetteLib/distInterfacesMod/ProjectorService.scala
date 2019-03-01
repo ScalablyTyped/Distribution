@@ -22,3 +22,13 @@ trait ProjectorService extends js.Object {
   def scheduleRender(): scala.Unit
 }
 
+object ProjectorService {
+  @scala.inline
+  def apply(renderNow: js.Function0[scala.Unit], scheduleRender: js.Function0[scala.Unit]): ProjectorService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderNow")(renderNow)
+    __obj.updateDynamic("scheduleRender")(scheduleRender)
+    __obj.asInstanceOf[ProjectorService]
+  }
+}
+

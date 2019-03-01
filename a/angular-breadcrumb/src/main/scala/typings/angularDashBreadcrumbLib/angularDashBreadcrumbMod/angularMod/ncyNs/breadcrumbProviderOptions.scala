@@ -24,3 +24,20 @@ trait breadcrumbProviderOptions extends js.Object {
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object breadcrumbProviderOptions {
+  @scala.inline
+  def apply(
+    includeAbstract: js.UndefOr[scala.Boolean] = js.undefined,
+    prefixStateName: java.lang.String = null,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null
+  ): breadcrumbProviderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeAbstract)) __obj.updateDynamic("includeAbstract")(includeAbstract)
+    if (prefixStateName != null) __obj.updateDynamic("prefixStateName")(prefixStateName)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    __obj.asInstanceOf[breadcrumbProviderOptions]
+  }
+}
+

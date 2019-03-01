@@ -11,3 +11,18 @@ trait ListenerDescriptor extends js.Object {
   def un(): scala.Unit
 }
 
+object ListenerDescriptor {
+  @scala.inline
+  def apply(
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    name: java.lang.String,
+    un: js.Function0[scala.Unit]
+  ): ListenerDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("un")(un)
+    __obj.asInstanceOf[ListenerDescriptor]
+  }
+}
+

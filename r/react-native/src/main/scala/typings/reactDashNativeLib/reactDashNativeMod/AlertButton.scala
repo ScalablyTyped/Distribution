@@ -13,3 +13,18 @@ trait AlertButton extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AlertButton {
+  @scala.inline
+  def apply(
+    onPress: js.Function0[scala.Unit] = null,
+    style: reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.cancel | reactDashNativeLib.reactDashNativeLibStrings.destructive = null,
+    text: java.lang.String = null
+  ): AlertButton = {
+    val __obj = js.Dynamic.literal()
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[AlertButton]
+  }
+}
+

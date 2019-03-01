@@ -26,3 +26,36 @@ trait XStringListControl extends XPropertyControl {
   def prependListEntry(NewEntry: java.lang.String): scala.Unit
 }
 
+object XStringListControl {
+  @scala.inline
+  def apply(
+    ControlContext: XPropertyControlContext,
+    ControlType: scala.Double,
+    ControlWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    ListEntries: activexDashInteropLib.SafeArray[java.lang.String],
+    Value: js.Any,
+    ValueType: activexDashLibreofficeLib.`type`,
+    appendListEntry: js.Function1[java.lang.String, scala.Unit],
+    clearList: js.Function0[scala.Unit],
+    getListEntries: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    isModified: js.Function0[scala.Boolean],
+    notifyModifiedValue: js.Function0[scala.Unit],
+    prependListEntry: js.Function1[java.lang.String, scala.Unit]
+  ): XStringListControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ControlContext")(ControlContext)
+    __obj.updateDynamic("ControlType")(ControlType)
+    __obj.updateDynamic("ControlWindow")(ControlWindow)
+    __obj.updateDynamic("ListEntries")(ListEntries)
+    __obj.updateDynamic("Value")(Value)
+    __obj.updateDynamic("ValueType")(ValueType)
+    __obj.updateDynamic("appendListEntry")(appendListEntry)
+    __obj.updateDynamic("clearList")(clearList)
+    __obj.updateDynamic("getListEntries")(getListEntries)
+    __obj.updateDynamic("isModified")(isModified)
+    __obj.updateDynamic("notifyModifiedValue")(notifyModifiedValue)
+    __obj.updateDynamic("prependListEntry")(prependListEntry)
+    __obj.asInstanceOf[XStringListControl]
+  }
+}
+

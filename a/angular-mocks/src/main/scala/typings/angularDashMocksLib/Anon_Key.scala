@@ -11,3 +11,16 @@ trait Anon_Key
   var $scope: js.UndefOr[angularLib.angularMod.angularNs.IScope] = js.undefined
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    $scope: angularLib.angularMod.angularNs.IScope = null,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    if ($scope != null) __obj.updateDynamic("$scope")($scope)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

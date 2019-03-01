@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched if an invitation to chat room was declined by the invitee
 		*/
-trait ChatRoomInviteDeclined extends js.Object {
+trait ChatRoomInviteDeclined
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User id (invitee)
   			*/
@@ -21,5 +22,16 @@ trait ChatRoomInviteDeclined extends js.Object {
   			* Room id
   			*/
   var room: java.lang.String
+}
+
+object ChatRoomInviteDeclined {
+  @scala.inline
+  def apply(invitee: java.lang.String, reason: java.lang.String, room: java.lang.String): ChatRoomInviteDeclined = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("invitee")(invitee)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[ChatRoomInviteDeclined]
+  }
 }
 

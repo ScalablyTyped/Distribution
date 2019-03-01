@@ -14,3 +14,14 @@ trait WorkspaceFoldersServerCapabilities extends js.Object {
   ] = js.undefined
 }
 
+object WorkspaceFoldersServerCapabilities {
+  @scala.inline
+  def apply(
+    workspace: vscodeDashLanguageserverDashProtocolLib.Anon_WorkspaceFoldersAnonChangeNotifications = null
+  ): WorkspaceFoldersServerCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (workspace != null) __obj.updateDynamic("workspace")(workspace)
+    __obj.asInstanceOf[WorkspaceFoldersServerCapabilities]
+  }
+}
+

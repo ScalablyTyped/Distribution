@@ -42,3 +42,30 @@ trait Theme
   var updated_at: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Theme {
+  @scala.inline
+  def apply(
+    admin_graphql_api_id: java.lang.String = null,
+    created_at: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    previewable: js.UndefOr[scala.Boolean] = js.undefined,
+    processing: js.UndefOr[scala.Boolean] = js.undefined,
+    role: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.main | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.unpublished | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.demo = null,
+    theme_store_id: scala.Int | scala.Double = null,
+    updated_at: java.lang.String = null
+  ): Theme = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(previewable)) __obj.updateDynamic("previewable")(previewable)
+    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (theme_store_id != null) __obj.updateDynamic("theme_store_id")(theme_store_id.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[Theme]
+  }
+}
+

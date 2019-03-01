@@ -71,3 +71,30 @@ trait WaitMeOptions extends js.Object {
   var textPos: js.UndefOr[waitmeLib.waitmeLibStrings.vertical | waitmeLib.waitmeLibStrings.horizontal] = js.undefined
 }
 
+object WaitMeOptions {
+  @scala.inline
+  def apply(
+    bg: java.lang.String = null,
+    color: java.lang.String | js.Array[java.lang.String] = null,
+    effect: waitmeLib.waitmeLibStrings.none | waitmeLib.waitmeLibStrings.bounce | waitmeLib.waitmeLibStrings.rotateplane | waitmeLib.waitmeLibStrings.stretch | waitmeLib.waitmeLibStrings.orbit | waitmeLib.waitmeLibStrings.roundBounce | waitmeLib.waitmeLibStrings.win8 | waitmeLib.waitmeLibStrings.win8_linear | waitmeLib.waitmeLibStrings.ios | waitmeLib.waitmeLibStrings.facebook | waitmeLib.waitmeLibStrings.rotation | waitmeLib.waitmeLibStrings.timer | waitmeLib.waitmeLibStrings.pulse | waitmeLib.waitmeLibStrings.progressBar | waitmeLib.waitmeLibStrings.bouncePulse | waitmeLib.waitmeLibStrings.img = null,
+    fontSize: java.lang.String = null,
+    maxSize: scala.Double | java.lang.String = null,
+    onClose: js.Function0[scala.Unit] = null,
+    source: java.lang.String = null,
+    text: java.lang.String = null,
+    textPos: waitmeLib.waitmeLibStrings.vertical | waitmeLib.waitmeLibStrings.horizontal = null
+  ): WaitMeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bg != null) __obj.updateDynamic("bg")(bg)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textPos != null) __obj.updateDynamic("textPos")(textPos.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WaitMeOptions]
+  }
+}
+

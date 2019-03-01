@@ -23,3 +23,14 @@ trait HDRInfo extends js.Object {
   var width: scala.Double
 }
 
+object HDRInfo {
+  @scala.inline
+  def apply(dataPosition: scala.Double, height: scala.Double, width: scala.Double): HDRInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataPosition")(dataPosition)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[HDRInfo]
+  }
+}
+

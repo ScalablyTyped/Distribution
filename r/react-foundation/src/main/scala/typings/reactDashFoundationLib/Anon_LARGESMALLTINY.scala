@@ -11,3 +11,18 @@ trait Anon_LARGESMALLTINY extends js.Object {
   var TINY: reactDashFoundationLib.enumsMod.ButtonSizes
 }
 
+object Anon_LARGESMALLTINY {
+  @scala.inline
+  def apply(
+    LARGE: reactDashFoundationLib.enumsMod.ButtonSizes,
+    SMALL: reactDashFoundationLib.enumsMod.ButtonSizes,
+    TINY: reactDashFoundationLib.enumsMod.ButtonSizes
+  ): Anon_LARGESMALLTINY = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LARGE")(LARGE)
+    __obj.updateDynamic("SMALL")(SMALL)
+    __obj.updateDynamic("TINY")(TINY)
+    __obj.asInstanceOf[Anon_LARGESMALLTINY]
+  }
+}
+

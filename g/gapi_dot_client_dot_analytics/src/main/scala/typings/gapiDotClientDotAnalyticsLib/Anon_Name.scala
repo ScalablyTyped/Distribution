@@ -21,3 +21,22 @@ trait Anon_Name extends js.Object {
   var won: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    status: java.lang.String = null,
+    url: java.lang.String = null,
+    weight: scala.Int | scala.Double = null,
+    won: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Name = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (!js.isUndefined(won)) __obj.updateDynamic("won")(won)
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

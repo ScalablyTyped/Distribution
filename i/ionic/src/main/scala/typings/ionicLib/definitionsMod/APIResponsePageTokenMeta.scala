@@ -10,3 +10,22 @@ trait APIResponsePageTokenMeta extends APIResponseMeta {
   var prev_page_token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object APIResponsePageTokenMeta {
+  @scala.inline
+  def apply(
+    request_id: java.lang.String,
+    status: scala.Double,
+    version: java.lang.String,
+    next_page_token: java.lang.String = null,
+    prev_page_token: java.lang.String = null
+  ): APIResponsePageTokenMeta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("request_id")(request_id)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("version")(version)
+    if (next_page_token != null) __obj.updateDynamic("next_page_token")(next_page_token)
+    if (prev_page_token != null) __obj.updateDynamic("prev_page_token")(prev_page_token)
+    __obj.asInstanceOf[APIResponsePageTokenMeta]
+  }
+}
+

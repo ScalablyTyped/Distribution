@@ -16,3 +16,12 @@ trait Response extends js.Object {
   def jwt(payload: js.Any): jwtDashExpressLib.jwtDashExpressMod.JWT
 }
 
+object Response {
+  @scala.inline
+  def apply(jwt: js.Function1[js.Any, jwtDashExpressLib.jwtDashExpressMod.JWT]): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jwt")(jwt)
+    __obj.asInstanceOf[Response]
+  }
+}
+

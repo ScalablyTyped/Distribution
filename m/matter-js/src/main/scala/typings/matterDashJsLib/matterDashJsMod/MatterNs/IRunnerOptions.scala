@@ -28,3 +28,13 @@ trait IRunnerOptions extends js.Object {
   var isFixed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IRunnerOptions {
+  @scala.inline
+  def apply(delta: scala.Int | scala.Double = null, isFixed: js.UndefOr[scala.Boolean] = js.undefined): IRunnerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed)
+    __obj.asInstanceOf[IRunnerOptions]
+  }
+}
+

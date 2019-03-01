@@ -14,3 +14,24 @@ trait PullTypeSymbolStructureWalker extends js.Object {
   def signatureReturnTypeWalk(returnType: typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol): scala.Boolean
 }
 
+object PullTypeSymbolStructureWalker {
+  @scala.inline
+  def apply(
+    callSignatureWalk: js.Function1[typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol, scala.Boolean],
+    constructSignatureWalk: js.Function1[typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol, scala.Boolean],
+    indexSignatureWalk: js.Function1[typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol, scala.Boolean],
+    memberSymbolWalk: js.Function1[typescriptDashServicesLib.TypeScriptNs.PullSymbol, scala.Boolean],
+    signatureParameterWalk: js.Function1[typescriptDashServicesLib.TypeScriptNs.PullSymbol, scala.Boolean],
+    signatureReturnTypeWalk: js.Function1[typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol, scala.Boolean]
+  ): PullTypeSymbolStructureWalker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callSignatureWalk")(callSignatureWalk)
+    __obj.updateDynamic("constructSignatureWalk")(constructSignatureWalk)
+    __obj.updateDynamic("indexSignatureWalk")(indexSignatureWalk)
+    __obj.updateDynamic("memberSymbolWalk")(memberSymbolWalk)
+    __obj.updateDynamic("signatureParameterWalk")(signatureParameterWalk)
+    __obj.updateDynamic("signatureReturnTypeWalk")(signatureReturnTypeWalk)
+    __obj.asInstanceOf[PullTypeSymbolStructureWalker]
+  }
+}
+

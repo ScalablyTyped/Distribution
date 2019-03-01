@@ -25,3 +25,22 @@ trait Crosshair extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Crosshair {
+  @scala.inline
+  def apply(
+    line: CrosshairLine = null,
+    marker: CrosshairMarker = null,
+    trackballTooltipSettings: CrosshairTrackballTooltipSettings = null,
+    `type`: CrosshairType | java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): Crosshair = {
+    val __obj = js.Dynamic.literal()
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (trackballTooltipSettings != null) __obj.updateDynamic("trackballTooltipSettings")(trackballTooltipSettings)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[Crosshair]
+  }
+}
+

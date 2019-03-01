@@ -10,3 +10,12 @@ trait Token extends js.Object {
   var value: java.lang.String
 }
 
+object Token {
+  @scala.inline
+  def apply(`type`: java.lang.String, value: java.lang.String): Token = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Token]
+  }
+}
+

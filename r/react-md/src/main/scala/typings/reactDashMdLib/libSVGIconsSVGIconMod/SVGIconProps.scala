@@ -28,3 +28,124 @@ trait SVGIconProps
   var xmlns: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SVGIconProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    className: java.lang.String = null,
+    desc: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    error: js.UndefOr[scala.Boolean] = js.undefined,
+    focusable: java.lang.String = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    onBlur: js.Function1[/* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onClick: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onDrag: js.Function1[/* event */ reactLib.reactMod.ReactNs.DragEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onDragEnd: js.Function1[/* event */ reactLib.reactMod.ReactNs.DragEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onDragEnter: js.Function1[/* event */ reactLib.reactMod.ReactNs.DragEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onDragExit: js.Function1[/* event */ reactLib.reactMod.ReactNs.DragEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onDragLeave: js.Function1[/* event */ reactLib.reactMod.ReactNs.DragEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onDragOver: js.Function1[/* event */ reactLib.reactMod.ReactNs.DragEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onDragStart: js.Function1[/* event */ reactLib.reactMod.ReactNs.DragEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onDrop: js.Function1[/* event */ reactLib.reactMod.ReactNs.DragEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onFocus: js.Function1[/* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onKeyDown: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      scala.Unit
+    ] = null,
+    onKeyUp: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
+      scala.Unit
+    ] = null,
+    onMouseDown: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onMouseEnter: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onMouseLeave: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onMouseMove: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onMouseOut: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onMouseOver: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onMouseUp: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onTouchCancel: js.Function1[/* event */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onTouchEnd: js.Function1[/* event */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onTouchMove: js.Function1[/* event */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], scala.Unit] = null,
+    onTouchStart: js.Function1[/* event */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], scala.Unit] = null,
+    primary: js.UndefOr[scala.Boolean] = js.undefined,
+    role: reactDashMdLib.reactDashMdLibStrings.img | reactDashMdLib.reactDashMdLibStrings.presentation = null,
+    secondary: js.UndefOr[scala.Boolean] = js.undefined,
+    size: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    title: java.lang.String = null,
+    titleAttr: java.lang.String = null,
+    use: java.lang.String = null,
+    viewBox: java.lang.String = null,
+    xmlns: java.lang.String = null
+  ): SVGIconProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (focusable != null) __obj.updateDynamic("focusable")(focusable)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
+    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit)
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
+    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondary)) __obj.updateDynamic("secondary")(secondary)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleAttr != null) __obj.updateDynamic("titleAttr")(titleAttr)
+    if (use != null) __obj.updateDynamic("use")(use)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns)
+    __obj.asInstanceOf[SVGIconProps]
+  }
+}
+

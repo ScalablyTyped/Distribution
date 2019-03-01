@@ -20,3 +20,18 @@ trait QuantitativeScaleSettingsMinorTickSettings extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object QuantitativeScaleSettingsMinorTickSettings {
+  @scala.inline
+  def apply(
+    size: scala.Int | scala.Double = null,
+    stroke: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): QuantitativeScaleSettingsMinorTickSettings = {
+    val __obj = js.Dynamic.literal()
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QuantitativeScaleSettingsMinorTickSettings]
+  }
+}
+

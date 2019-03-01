@@ -14,3 +14,20 @@ import scala.scalajs.js.annotation._
   var ulRef: js.UndefOr[js.Function1[/* ref */ reactLib.HTMLUListElement | scala.Null, _]] = js.undefined
 }
 
+object IMenuProps {
+  @scala.inline
+  def apply(
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLUListElement] = null,
+    IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
+    large: js.UndefOr[scala.Boolean] = js.undefined,
+    ulRef: js.Function1[/* ref */ reactLib.HTMLUListElement | scala.Null, _] = null
+  ): IMenuProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, IProps)
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (ulRef != null) __obj.updateDynamic("ulRef")(ulRef)
+    __obj.asInstanceOf[IMenuProps]
+  }
+}
+

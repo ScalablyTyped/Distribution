@@ -14,3 +14,18 @@ trait CacheOptions extends js.Object {
   var memory: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CacheOptions {
+  @scala.inline
+  def apply(
+    files: scala.Int | scala.Double = null,
+    items: scala.Int | scala.Double = null,
+    memory: scala.Int | scala.Double = null
+  ): CacheOptions = {
+    val __obj = js.Dynamic.literal()
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CacheOptions]
+  }
+}
+

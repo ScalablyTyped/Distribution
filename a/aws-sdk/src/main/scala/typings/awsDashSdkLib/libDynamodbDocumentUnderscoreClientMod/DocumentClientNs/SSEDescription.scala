@@ -20,3 +20,14 @@ trait SSEDescription extends js.Object {
   var Status: js.UndefOr[SSEStatus] = js.undefined
 }
 
+object SSEDescription {
+  @scala.inline
+  def apply(KMSMasterKeyArn: KMSMasterKeyArn = null, SSEType: SSEType = null, Status: SSEStatus = null): SSEDescription = {
+    val __obj = js.Dynamic.literal()
+    if (KMSMasterKeyArn != null) __obj.updateDynamic("KMSMasterKeyArn")(KMSMasterKeyArn)
+    if (SSEType != null) __obj.updateDynamic("SSEType")(SSEType.asInstanceOf[js.Any])
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SSEDescription]
+  }
+}
+

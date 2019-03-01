@@ -20,3 +20,18 @@ trait TooltipTheme extends js.Object {
   var tooltipWrapper: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TooltipTheme {
+  @scala.inline
+  def apply(
+    tooltip: java.lang.String = null,
+    tooltipActive: java.lang.String = null,
+    tooltipWrapper: java.lang.String = null
+  ): TooltipTheme = {
+    val __obj = js.Dynamic.literal()
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltipActive != null) __obj.updateDynamic("tooltipActive")(tooltipActive)
+    if (tooltipWrapper != null) __obj.updateDynamic("tooltipWrapper")(tooltipWrapper)
+    __obj.asInstanceOf[TooltipTheme]
+  }
+}
+

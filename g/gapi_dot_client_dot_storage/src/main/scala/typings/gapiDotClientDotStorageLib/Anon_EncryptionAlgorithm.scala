@@ -12,3 +12,13 @@ trait Anon_EncryptionAlgorithm extends js.Object {
   var keySha256: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_EncryptionAlgorithm {
+  @scala.inline
+  def apply(encryptionAlgorithm: java.lang.String = null, keySha256: java.lang.String = null): Anon_EncryptionAlgorithm = {
+    val __obj = js.Dynamic.literal()
+    if (encryptionAlgorithm != null) __obj.updateDynamic("encryptionAlgorithm")(encryptionAlgorithm)
+    if (keySha256 != null) __obj.updateDynamic("keySha256")(keySha256)
+    __obj.asInstanceOf[Anon_EncryptionAlgorithm]
+  }
+}
+

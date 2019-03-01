@@ -27,3 +27,32 @@ trait IValidationMessages extends js.Object {
   ): scala.Unit
 }
 
+object IValidationMessages {
+  @scala.inline
+  def apply(
+    addStringMessage: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    addTemplateOptionValueMessage: js.Function5[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    messages: org.scalablytyped.runtime.StringDictionary[
+      js.Function3[
+        /* $viewValue */ js.Any, 
+        /* $modelValue */ js.Any, 
+        /* scope */ ITemplateScope, 
+        java.lang.String
+      ]
+    ]
+  ): IValidationMessages = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addStringMessage")(addStringMessage)
+    __obj.updateDynamic("addTemplateOptionValueMessage")(addTemplateOptionValueMessage)
+    __obj.updateDynamic("messages")(messages)
+    __obj.asInstanceOf[IValidationMessages]
+  }
+}
+

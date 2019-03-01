@@ -53,3 +53,34 @@ trait XAxisZSupplier
   def getZMainGrid(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object XAxisZSupplier {
+  @scala.inline
+  def apply(
+    ZAxis: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ZAxisTitle: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    ZHelpGrid: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ZMainGrid: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getZAxis: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getZAxisTitle: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
+    getZHelpGrid: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getZMainGrid: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAxisZSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ZAxis")(ZAxis)
+    __obj.updateDynamic("ZAxisTitle")(ZAxisTitle)
+    __obj.updateDynamic("ZHelpGrid")(ZHelpGrid)
+    __obj.updateDynamic("ZMainGrid")(ZMainGrid)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getZAxis")(getZAxis)
+    __obj.updateDynamic("getZAxisTitle")(getZAxisTitle)
+    __obj.updateDynamic("getZHelpGrid")(getZHelpGrid)
+    __obj.updateDynamic("getZMainGrid")(getZMainGrid)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAxisZSupplier]
+  }
+}
+

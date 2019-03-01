@@ -18,3 +18,30 @@ trait ServerInjectResponse
   var result: js.UndefOr[js.Object]
 }
 
+object ServerInjectResponse {
+  @scala.inline
+  def apply(
+    headers: shotLib.shotMod.Headers,
+    payload: java.lang.String,
+    raw: shotLib.Anon_Req,
+    rawPayload: nodeLib.Buffer,
+    request: Request,
+    statusCode: scala.Double,
+    statusMessage: java.lang.String,
+    trailers: org.scalablytyped.runtime.StringDictionary[js.Any],
+    result: js.Object = null
+  ): ServerInjectResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("payload")(payload)
+    __obj.updateDynamic("raw")(raw)
+    __obj.updateDynamic("rawPayload")(rawPayload)
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.updateDynamic("statusMessage")(statusMessage)
+    __obj.updateDynamic("trailers")(trailers)
+    if (result != null) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[ServerInjectResponse]
+  }
+}
+

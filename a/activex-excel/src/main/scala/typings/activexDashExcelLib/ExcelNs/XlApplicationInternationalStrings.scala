@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-sealed trait XlApplicationInternationalStrings extends js.Object
+sealed trait XlApplicationInternationalStrings extends XlApplicationInternational
 
 @JSGlobal("Excel.XlApplicationInternationalStrings")
 @js.native

@@ -16,3 +16,26 @@ trait NumberFormatCode extends js.Object {
   var Usage: scala.Double
 }
 
+object NumberFormatCode {
+  @scala.inline
+  def apply(
+    Code: java.lang.String,
+    Default: scala.Boolean,
+    DefaultName: java.lang.String,
+    Index: scala.Double,
+    NameID: java.lang.String,
+    Type: scala.Double,
+    Usage: scala.Double
+  ): NumberFormatCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Code")(Code)
+    __obj.updateDynamic("Default")(Default)
+    __obj.updateDynamic("DefaultName")(DefaultName)
+    __obj.updateDynamic("Index")(Index)
+    __obj.updateDynamic("NameID")(NameID)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("Usage")(Usage)
+    __obj.asInstanceOf[NumberFormatCode]
+  }
+}
+

@@ -15,3 +15,26 @@ trait Anon_Africa extends js.Object {
   val southAmerica: countryDashDataLib.countryDashDataMod.Continent
 }
 
+object Anon_Africa {
+  @scala.inline
+  def apply(
+    africa: countryDashDataLib.countryDashDataMod.Continent,
+    antarctica: countryDashDataLib.countryDashDataMod.Continent,
+    asia: countryDashDataLib.countryDashDataMod.Continent,
+    europe: countryDashDataLib.countryDashDataMod.Continent,
+    northAmerica: countryDashDataLib.countryDashDataMod.Continent,
+    oceania: countryDashDataLib.countryDashDataMod.Continent,
+    southAmerica: countryDashDataLib.countryDashDataMod.Continent
+  ): Anon_Africa = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("africa")(africa)
+    __obj.updateDynamic("antarctica")(antarctica)
+    __obj.updateDynamic("asia")(asia)
+    __obj.updateDynamic("europe")(europe)
+    __obj.updateDynamic("northAmerica")(northAmerica)
+    __obj.updateDynamic("oceania")(oceania)
+    __obj.updateDynamic("southAmerica")(southAmerica)
+    __obj.asInstanceOf[Anon_Africa]
+  }
+}
+

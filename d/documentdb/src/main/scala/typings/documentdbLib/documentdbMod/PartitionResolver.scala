@@ -23,3 +23,18 @@ trait PartitionResolver extends js.Object {
   def resolveForRead(partitionKey: js.Any): js.Array[java.lang.String]
 }
 
+object PartitionResolver {
+  @scala.inline
+  def apply(
+    getPartitionKey: js.Function1[js.Any, java.lang.String],
+    resolveForCreate: js.Function1[java.lang.String, java.lang.String],
+    resolveForRead: js.Function1[js.Any, js.Array[java.lang.String]]
+  ): PartitionResolver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getPartitionKey")(getPartitionKey)
+    __obj.updateDynamic("resolveForCreate")(resolveForCreate)
+    __obj.updateDynamic("resolveForRead")(resolveForRead)
+    __obj.asInstanceOf[PartitionResolver]
+  }
+}
+

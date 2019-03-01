@@ -28,3 +28,13 @@ trait RulesOptions extends js.Object {
   var condition: js.UndefOr[ConditionOptions] = js.undefined
 }
 
+object RulesOptions {
+  @scala.inline
+  def apply(chartOptions: Options = null, condition: ConditionOptions = null): RulesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chartOptions != null) __obj.updateDynamic("chartOptions")(chartOptions)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    __obj.asInstanceOf[RulesOptions]
+  }
+}
+

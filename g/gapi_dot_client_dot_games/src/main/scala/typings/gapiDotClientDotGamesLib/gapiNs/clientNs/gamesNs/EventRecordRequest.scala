@@ -16,3 +16,20 @@ trait EventRecordRequest extends js.Object {
   var timePeriods: js.UndefOr[js.Array[EventPeriodUpdate]] = js.undefined
 }
 
+object EventRecordRequest {
+  @scala.inline
+  def apply(
+    currentTimeMillis: java.lang.String = null,
+    kind: java.lang.String = null,
+    requestId: java.lang.String = null,
+    timePeriods: js.Array[EventPeriodUpdate] = null
+  ): EventRecordRequest = {
+    val __obj = js.Dynamic.literal()
+    if (currentTimeMillis != null) __obj.updateDynamic("currentTimeMillis")(currentTimeMillis)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (timePeriods != null) __obj.updateDynamic("timePeriods")(timePeriods)
+    __obj.asInstanceOf[EventRecordRequest]
+  }
+}
+

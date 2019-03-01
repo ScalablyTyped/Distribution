@@ -10,3 +10,13 @@ trait AesCBC extends IParams {
   var iv: nodeLib.Buffer
 }
 
+object AesCBC {
+  @scala.inline
+  def apply(iv: nodeLib.Buffer, `type`: scala.Double, data: nodeLib.Buffer = null): AesCBC = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("iv")(iv)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[AesCBC]
+  }
+}
+

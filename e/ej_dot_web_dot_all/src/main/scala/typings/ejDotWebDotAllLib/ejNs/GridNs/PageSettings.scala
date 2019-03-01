@@ -52,3 +52,34 @@ trait PageSettings extends js.Object {
   var totalRecordsCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PageSettings {
+  @scala.inline
+  def apply(
+    currentPage: scala.Int | scala.Double = null,
+    enableQueryString: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTemplates: js.UndefOr[scala.Boolean] = js.undefined,
+    pageCount: scala.Int | scala.Double = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageSizeList: js.Array[_] = null,
+    printMode: PrintMode | java.lang.String = null,
+    showDefaults: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    totalPages: scala.Int | scala.Double = null,
+    totalRecordsCount: scala.Int | scala.Double = null
+  ): PageSettings = {
+    val __obj = js.Dynamic.literal()
+    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableQueryString)) __obj.updateDynamic("enableQueryString")(enableQueryString)
+    if (!js.isUndefined(enableTemplates)) __obj.updateDynamic("enableTemplates")(enableTemplates)
+    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageSizeList != null) __obj.updateDynamic("pageSizeList")(pageSizeList)
+    if (printMode != null) __obj.updateDynamic("printMode")(printMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDefaults)) __obj.updateDynamic("showDefaults")(showDefaults)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (totalPages != null) __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
+    if (totalRecordsCount != null) __obj.updateDynamic("totalRecordsCount")(totalRecordsCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PageSettings]
+  }
+}
+

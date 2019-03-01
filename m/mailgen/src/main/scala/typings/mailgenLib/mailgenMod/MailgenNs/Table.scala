@@ -10,3 +10,13 @@ trait Table extends js.Object {
   var data: js.Array[_]
 }
 
+object Table {
+  @scala.inline
+  def apply(data: js.Array[_], columns: js.Array[ColumnOptions] = null): Table = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    __obj.asInstanceOf[Table]
+  }
+}
+

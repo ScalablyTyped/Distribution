@@ -14,3 +14,18 @@ trait AchievementSetStepsAtLeastResponse extends js.Object {
   var newlyUnlocked: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AchievementSetStepsAtLeastResponse {
+  @scala.inline
+  def apply(
+    currentSteps: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    newlyUnlocked: js.UndefOr[scala.Boolean] = js.undefined
+  ): AchievementSetStepsAtLeastResponse = {
+    val __obj = js.Dynamic.literal()
+    if (currentSteps != null) __obj.updateDynamic("currentSteps")(currentSteps.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked)
+    __obj.asInstanceOf[AchievementSetStepsAtLeastResponse]
+  }
+}
+

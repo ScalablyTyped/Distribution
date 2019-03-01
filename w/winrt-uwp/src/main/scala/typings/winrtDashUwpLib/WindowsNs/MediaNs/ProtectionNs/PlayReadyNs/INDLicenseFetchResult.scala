@@ -11,3 +11,12 @@ trait INDLicenseFetchResult extends js.Object {
   var responseCustomData: INDCustomData
 }
 
+object INDLicenseFetchResult {
+  @scala.inline
+  def apply(responseCustomData: INDCustomData): INDLicenseFetchResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("responseCustomData")(responseCustomData)
+    __obj.asInstanceOf[INDLicenseFetchResult]
+  }
+}
+

@@ -12,3 +12,20 @@ trait IAsyncPropertyValidator extends js.Object {
   def isAcceptable(s: js.Any): qLib.qMod.QNs.Promise[scala.Boolean]
 }
 
+object IAsyncPropertyValidator {
+  @scala.inline
+  def apply(
+    isAcceptable: js.Function1[js.Any, qLib.qMod.QNs.Promise[scala.Boolean]],
+    isAsync: scala.Boolean,
+    customMessage: IErrorCustomMessage = null,
+    tagName: java.lang.String = null
+  ): IAsyncPropertyValidator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isAcceptable")(isAcceptable)
+    __obj.updateDynamic("isAsync")(isAsync)
+    if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    __obj.asInstanceOf[IAsyncPropertyValidator]
+  }
+}
+

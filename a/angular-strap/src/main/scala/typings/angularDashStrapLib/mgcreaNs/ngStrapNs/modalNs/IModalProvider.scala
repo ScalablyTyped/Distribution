@@ -9,3 +9,12 @@ trait IModalProvider extends js.Object {
   var defaults: IModalOptions
 }
 
+object IModalProvider {
+  @scala.inline
+  def apply(defaults: IModalOptions): IModalProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaults")(defaults)
+    __obj.asInstanceOf[IModalProvider]
+  }
+}
+

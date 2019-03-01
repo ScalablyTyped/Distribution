@@ -18,3 +18,28 @@ trait ComposeButtonDescriptor extends js.Object {
   def onClick(event: ComposeButtonClickEvent): scala.Unit
 }
 
+object ComposeButtonDescriptor {
+  @scala.inline
+  def apply(
+    onClick: js.Function1[ComposeButtonClickEvent, scala.Unit],
+    title: java.lang.String,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    hasDropdown: js.UndefOr[scala.Boolean] = js.undefined,
+    iconClass: java.lang.String = null,
+    iconUrl: java.lang.String = null,
+    orderHint: scala.Int | scala.Double = null,
+    `type`: inboxsdkLib.inboxsdkLibStrings.MODIFIER | inboxsdkLib.inboxsdkLibStrings.SEND_ACTION = null
+  ): ComposeButtonDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onClick")(onClick)
+    __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComposeButtonDescriptor]
+  }
+}
+

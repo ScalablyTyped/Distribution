@@ -11,3 +11,13 @@ trait Anon_SourceWords extends js.Object {
   var words: js.UndefOr[js.Array[Anon_Derivatives]] = js.undefined
 }
 
+object Anon_SourceWords {
+  @scala.inline
+  def apply(source: Anon_Attribution = null, words: js.Array[Anon_Derivatives] = null): Anon_SourceWords = {
+    val __obj = js.Dynamic.literal()
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (words != null) __obj.updateDynamic("words")(words)
+    __obj.asInstanceOf[Anon_SourceWords]
+  }
+}
+

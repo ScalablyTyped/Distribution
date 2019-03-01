@@ -10,3 +10,12 @@ trait ITraces extends js.Object {
   var trace: js.UndefOr[js.Array[ITrace] | scala.Null] = js.undefined
 }
 
+object ITraces {
+  @scala.inline
+  def apply(trace: js.Array[ITrace] = null): ITraces = {
+    val __obj = js.Dynamic.literal()
+    if (trace != null) __obj.updateDynamic("trace")(trace)
+    __obj.asInstanceOf[ITraces]
+  }
+}
+

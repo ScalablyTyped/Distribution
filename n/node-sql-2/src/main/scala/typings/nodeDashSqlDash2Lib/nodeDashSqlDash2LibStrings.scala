@@ -19,19 +19,23 @@ object nodeDashSqlDash2LibStrings {
   sealed trait cascade extends js.Object
   
   @js.native
-  sealed trait mssql extends js.Object
+  sealed trait mssql
+    extends nodeDashSqlDash2Lib.sqlMod.SQLDialects
   
   @js.native
-  sealed trait mysql extends js.Object
+  sealed trait mysql
+    extends nodeDashSqlDash2Lib.sqlMod.SQLDialects
   
   @js.native
   sealed trait `no action` extends js.Object
   
   @js.native
-  sealed trait oracle extends js.Object
+  sealed trait oracle
+    extends nodeDashSqlDash2Lib.sqlMod.SQLDialects
   
   @js.native
-  sealed trait postgres extends js.Object
+  sealed trait postgres
+    extends nodeDashSqlDash2Lib.sqlMod.SQLDialects
   
   @js.native
   sealed trait restrict extends js.Object
@@ -43,7 +47,8 @@ object nodeDashSqlDash2LibStrings {
   sealed trait `set null` extends js.Object
   
   @js.native
-  sealed trait sqlite extends js.Object
+  sealed trait sqlite
+    extends nodeDashSqlDash2Lib.sqlMod.SQLDialects
   
   @scala.inline
   def Columns: Columns = "Columns".asInstanceOf[Columns]

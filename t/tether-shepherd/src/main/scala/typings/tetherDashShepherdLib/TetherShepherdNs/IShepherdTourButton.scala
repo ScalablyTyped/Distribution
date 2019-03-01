@@ -12,3 +12,20 @@ trait IShepherdTourButton extends js.Object {
   var text: java.lang.String
 }
 
+object IShepherdTourButton {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    action: js.Function = null,
+    classes: java.lang.String = null,
+    events: IShepherdTourButtonEventHash = null
+  ): IShepherdTourButton = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (events != null) __obj.updateDynamic("events")(events)
+    __obj.asInstanceOf[IShepherdTourButton]
+  }
+}
+

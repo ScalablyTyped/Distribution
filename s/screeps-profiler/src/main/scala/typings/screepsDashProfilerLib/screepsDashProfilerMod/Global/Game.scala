@@ -13,3 +13,12 @@ trait Game extends js.Object {
   var profiler: screepsDashProfilerLib.screepsDashProfilerMod.ScreepsGameProfiler
 }
 
+object Game {
+  @scala.inline
+  def apply(profiler: screepsDashProfilerLib.screepsDashProfilerMod.ScreepsGameProfiler): Game = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("profiler")(profiler)
+    __obj.asInstanceOf[Game]
+  }
+}
+

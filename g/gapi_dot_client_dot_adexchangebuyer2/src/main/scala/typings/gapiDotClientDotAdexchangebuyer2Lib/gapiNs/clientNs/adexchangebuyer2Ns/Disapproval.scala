@@ -12,3 +12,13 @@ trait Disapproval extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Disapproval {
+  @scala.inline
+  def apply(details: js.Array[java.lang.String] = null, reason: java.lang.String = null): Disapproval = {
+    val __obj = js.Dynamic.literal()
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[Disapproval]
+  }
+}
+

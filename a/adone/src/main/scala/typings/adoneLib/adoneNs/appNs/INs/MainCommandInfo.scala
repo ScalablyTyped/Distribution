@@ -15,3 +15,26 @@ trait MainCommandInfo extends js.Object {
   var optionsGroups: js.UndefOr[js.Array[Group]] = js.undefined
 }
 
+object MainCommandInfo {
+  @scala.inline
+  def apply(
+    arguments: js.Array[ArgumentInfo | java.lang.String] = null,
+    blindMode: js.UndefOr[scala.Boolean] = js.undefined,
+    description: java.lang.String = null,
+    handler: js.Function2[/* args */ js.Object, /* opts */ js.Object, scala.Unit] = null,
+    `match`: js.Function1[/* name */ java.lang.String, scala.Boolean] = null,
+    options: js.Array[ArgumentInfo | java.lang.String] = null,
+    optionsGroups: js.Array[Group] = null
+  ): MainCommandInfo = {
+    val __obj = js.Dynamic.literal()
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (!js.isUndefined(blindMode)) __obj.updateDynamic("blindMode")(blindMode)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (optionsGroups != null) __obj.updateDynamic("optionsGroups")(optionsGroups)
+    __obj.asInstanceOf[MainCommandInfo]
+  }
+}
+

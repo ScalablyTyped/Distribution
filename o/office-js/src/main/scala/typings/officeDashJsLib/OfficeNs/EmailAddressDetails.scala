@@ -37,3 +37,20 @@ trait EmailAddressDetails extends js.Object {
   var recipientType: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType
 }
 
+object EmailAddressDetails {
+  @scala.inline
+  def apply(
+    appointmentResponse: officeDashJsLib.OfficeNs.MailboxEnumsNs.ResponseType,
+    displayName: java.lang.String,
+    emailAddress: java.lang.String,
+    recipientType: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType
+  ): EmailAddressDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appointmentResponse")(appointmentResponse)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("emailAddress")(emailAddress)
+    __obj.updateDynamic("recipientType")(recipientType)
+    __obj.asInstanceOf[EmailAddressDetails]
+  }
+}
+

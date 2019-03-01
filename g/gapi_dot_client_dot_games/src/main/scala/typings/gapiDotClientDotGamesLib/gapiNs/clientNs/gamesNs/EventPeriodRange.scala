@@ -14,3 +14,18 @@ trait EventPeriodRange extends js.Object {
   var periodStartMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EventPeriodRange {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    periodEndMillis: java.lang.String = null,
+    periodStartMillis: java.lang.String = null
+  ): EventPeriodRange = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (periodEndMillis != null) __obj.updateDynamic("periodEndMillis")(periodEndMillis)
+    if (periodStartMillis != null) __obj.updateDynamic("periodStartMillis")(periodStartMillis)
+    __obj.asInstanceOf[EventPeriodRange]
+  }
+}
+

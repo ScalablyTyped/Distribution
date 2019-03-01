@@ -41,3 +41,28 @@ trait PushNotification extends js.Object {
   def getSound(): java.lang.String
 }
 
+object PushNotification {
+  @scala.inline
+  def apply(
+    finish: js.Function1[java.lang.String, scala.Unit],
+    getAlert: js.Function0[java.lang.String | js.Object],
+    getBadgeCount: js.Function0[scala.Double],
+    getCategory: js.Function0[java.lang.String],
+    getContentAvailable: js.Function0[scala.Double],
+    getData: js.Function0[js.Object],
+    getMessage: js.Function0[java.lang.String | js.Object],
+    getSound: js.Function0[java.lang.String]
+  ): PushNotification = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("finish")(finish)
+    __obj.updateDynamic("getAlert")(getAlert)
+    __obj.updateDynamic("getBadgeCount")(getBadgeCount)
+    __obj.updateDynamic("getCategory")(getCategory)
+    __obj.updateDynamic("getContentAvailable")(getContentAvailable)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("getMessage")(getMessage)
+    __obj.updateDynamic("getSound")(getSound)
+    __obj.asInstanceOf[PushNotification]
+  }
+}
+

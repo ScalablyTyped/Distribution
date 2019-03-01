@@ -13,10 +13,12 @@ object webpackDashConfigDashUtilsLibStrings {
   sealed trait NonEmptyObject extends js.Object
   
   @js.native
-  sealed trait dev extends js.Object
+  sealed trait dev
+    extends webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars
   
   @js.native
-  sealed trait development extends js.Object
+  sealed trait development
+    extends webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars
   
   @js.native
   sealed trait `false` extends js.Object
@@ -25,16 +27,19 @@ object webpackDashConfigDashUtilsLibStrings {
   sealed trait getIfUtils extends js.Object
   
   @js.native
-  sealed trait prod extends js.Object
+  sealed trait prod
+    extends webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars
   
   @js.native
-  sealed trait production extends js.Object
+  sealed trait production
+    extends webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars
   
   @js.native
   sealed trait removeEmpty extends js.Object
   
   @js.native
-  sealed trait test extends js.Object
+  sealed trait test
+    extends webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars
   
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]

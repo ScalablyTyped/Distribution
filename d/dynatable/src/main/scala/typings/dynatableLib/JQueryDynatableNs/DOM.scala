@@ -14,3 +14,12 @@ trait DOM extends js.Object {
   def update(): scala.Unit
 }
 
+object DOM {
+  @scala.inline
+  def apply(update: js.Function0[scala.Unit]): DOM = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[DOM]
+  }
+}
+

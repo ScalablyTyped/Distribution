@@ -21,3 +21,20 @@ trait ImportSettings extends js.Object {
   var password: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImportSettings {
+  @scala.inline
+  def apply(
+    importMapper: java.lang.String = null,
+    importOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    importUrl: java.lang.String = null,
+    password: java.lang.String = null
+  ): ImportSettings = {
+    val __obj = js.Dynamic.literal()
+    if (importMapper != null) __obj.updateDynamic("importMapper")(importMapper)
+    if (!js.isUndefined(importOnLoad)) __obj.updateDynamic("importOnLoad")(importOnLoad)
+    if (importUrl != null) __obj.updateDynamic("importUrl")(importUrl)
+    if (password != null) __obj.updateDynamic("password")(password)
+    __obj.asInstanceOf[ImportSettings]
+  }
+}
+

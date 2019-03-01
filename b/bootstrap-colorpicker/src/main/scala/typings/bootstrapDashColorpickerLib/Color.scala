@@ -49,3 +49,40 @@ trait Color extends js.Object {
   def toString(format: ColorFormat): java.lang.String
 }
 
+object Color {
+  @scala.inline
+  def apply(
+    fallbackFormat: java.lang.String,
+    fallbackValue: java.lang.String,
+    hexNumberSignPrefix: scala.Boolean,
+    origFormat: java.lang.String,
+    setAlpha: js.Function1[scala.Double, scala.Unit],
+    setBrightness: js.Function1[scala.Double, scala.Unit],
+    setColor: js.Function1[java.lang.String, scala.Unit],
+    setHue: js.Function1[scala.Double, scala.Unit],
+    setSaturation: js.Function1[scala.Double, scala.Unit],
+    toHSL: js.Function0[java.lang.String],
+    toHex: js.Function0[java.lang.String],
+    toRGB: js.Function0[java.lang.String],
+    toString: js.Function1[ColorFormat, java.lang.String],
+    value: Anon_A
+  ): Color = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fallbackFormat")(fallbackFormat)
+    __obj.updateDynamic("fallbackValue")(fallbackValue)
+    __obj.updateDynamic("hexNumberSignPrefix")(hexNumberSignPrefix)
+    __obj.updateDynamic("origFormat")(origFormat)
+    __obj.updateDynamic("setAlpha")(setAlpha)
+    __obj.updateDynamic("setBrightness")(setBrightness)
+    __obj.updateDynamic("setColor")(setColor)
+    __obj.updateDynamic("setHue")(setHue)
+    __obj.updateDynamic("setSaturation")(setSaturation)
+    __obj.updateDynamic("toHSL")(toHSL)
+    __obj.updateDynamic("toHex")(toHex)
+    __obj.updateDynamic("toRGB")(toRGB)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Color]
+  }
+}
+

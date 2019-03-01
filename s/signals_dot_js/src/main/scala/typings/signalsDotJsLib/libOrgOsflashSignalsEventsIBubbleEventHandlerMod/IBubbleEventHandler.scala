@@ -15,3 +15,14 @@ trait IBubbleEventHandler extends js.Object {
   def onEventBubbled(event: signalsDotJsLib.libOrgOsflashSignalsEventsIEventMod.IEvent): scala.Boolean
 }
 
+object IBubbleEventHandler {
+  @scala.inline
+  def apply(
+    onEventBubbled: js.Function1[signalsDotJsLib.libOrgOsflashSignalsEventsIEventMod.IEvent, scala.Boolean]
+  ): IBubbleEventHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onEventBubbled")(onEventBubbled)
+    __obj.asInstanceOf[IBubbleEventHandler]
+  }
+}
+

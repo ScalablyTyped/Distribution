@@ -20,3 +20,28 @@ trait UploadFileOptions
   var url: java.lang.String
 }
 
+object UploadFileOptions {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    name: java.lang.String,
+    url: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    formData: js.Any = null,
+    header: RequestHeader = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): UploadFileOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("url")(url)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (formData != null) __obj.updateDynamic("formData")(formData)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[UploadFileOptions]
+  }
+}
+

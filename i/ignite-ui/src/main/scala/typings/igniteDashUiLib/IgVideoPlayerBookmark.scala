@@ -27,3 +27,23 @@ trait IgVideoPlayerBookmark
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgVideoPlayerBookmark {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgVideoPlayerBookmark
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    time: scala.Int | scala.Double = null,
+    title: java.lang.String = null
+  ): IgVideoPlayerBookmark = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[IgVideoPlayerBookmark]
+  }
+}
+

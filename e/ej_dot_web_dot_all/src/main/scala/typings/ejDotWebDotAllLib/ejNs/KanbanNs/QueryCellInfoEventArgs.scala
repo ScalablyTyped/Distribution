@@ -29,3 +29,26 @@ trait QueryCellInfoEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QueryCellInfoEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    card: js.Any = null,
+    cell: js.Any = null,
+    column: js.Any = null,
+    data: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): QueryCellInfoEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (card != null) __obj.updateDynamic("card")(card)
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[QueryCellInfoEventArgs]
+  }
+}
+

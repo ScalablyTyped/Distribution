@@ -18,3 +18,22 @@ trait ImapMessageAttributes extends js.Object {
   var uid: scala.Double
 }
 
+object ImapMessageAttributes {
+  @scala.inline
+  def apply(
+    date: stdLib.Date,
+    flags: js.Array[java.lang.String],
+    uid: scala.Double,
+    size: scala.Int | scala.Double = null,
+    struct: js.Array[_] = null
+  ): ImapMessageAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("uid")(uid)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (struct != null) __obj.updateDynamic("struct")(struct)
+    __obj.asInstanceOf[ImapMessageAttributes]
+  }
+}
+

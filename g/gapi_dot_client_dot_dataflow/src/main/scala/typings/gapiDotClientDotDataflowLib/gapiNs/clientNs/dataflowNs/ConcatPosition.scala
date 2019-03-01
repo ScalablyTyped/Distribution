@@ -12,3 +12,13 @@ trait ConcatPosition extends js.Object {
   var position: js.UndefOr[Position] = js.undefined
 }
 
+object ConcatPosition {
+  @scala.inline
+  def apply(index: scala.Int | scala.Double = null, position: Position = null): ConcatPosition = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[ConcatPosition]
+  }
+}
+

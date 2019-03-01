@@ -29,3 +29,26 @@ trait RemoveEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RemoveEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    model: Model = null,
+    name: java.lang.String = null,
+    path: java.lang.String = null,
+    selectedItems: js.Any = null,
+    `type`: java.lang.String = null
+  ): RemoveEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RemoveEventArgs]
+  }
+}
+

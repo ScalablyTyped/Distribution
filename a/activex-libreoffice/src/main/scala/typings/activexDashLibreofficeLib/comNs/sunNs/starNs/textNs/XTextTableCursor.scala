@@ -80,3 +80,40 @@ trait XTextTableCursor
   def splitRange(nCount: scala.Double, bHorizontal: scala.Boolean): scala.Boolean
 }
 
+object XTextTableCursor {
+  @scala.inline
+  def apply(
+    RangeName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getRangeName: js.Function0[java.lang.String],
+    goDown: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goLeft: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goRight: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goUp: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    gotoCellByName: js.Function2[java.lang.String, scala.Boolean, scala.Boolean],
+    gotoEnd: js.Function1[scala.Boolean, scala.Unit],
+    gotoStart: js.Function1[scala.Boolean, scala.Unit],
+    mergeRange: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    splitRange: js.Function2[scala.Double, scala.Boolean, scala.Boolean]
+  ): XTextTableCursor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RangeName")(RangeName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getRangeName")(getRangeName)
+    __obj.updateDynamic("goDown")(goDown)
+    __obj.updateDynamic("goLeft")(goLeft)
+    __obj.updateDynamic("goRight")(goRight)
+    __obj.updateDynamic("goUp")(goUp)
+    __obj.updateDynamic("gotoCellByName")(gotoCellByName)
+    __obj.updateDynamic("gotoEnd")(gotoEnd)
+    __obj.updateDynamic("gotoStart")(gotoStart)
+    __obj.updateDynamic("mergeRange")(mergeRange)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("splitRange")(splitRange)
+    __obj.asInstanceOf[XTextTableCursor]
+  }
+}
+

@@ -16,3 +16,20 @@ trait GetResponse extends js.Object {
   var stateKey: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GetResponse {
+  @scala.inline
+  def apply(
+    currentStateVersion: java.lang.String = null,
+    data: java.lang.String = null,
+    kind: java.lang.String = null,
+    stateKey: scala.Int | scala.Double = null
+  ): GetResponse = {
+    val __obj = js.Dynamic.literal()
+    if (currentStateVersion != null) __obj.updateDynamic("currentStateVersion")(currentStateVersion)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (stateKey != null) __obj.updateDynamic("stateKey")(stateKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetResponse]
+  }
+}
+

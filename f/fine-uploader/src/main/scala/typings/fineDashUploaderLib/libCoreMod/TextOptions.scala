@@ -28,3 +28,18 @@ trait TextOptions extends js.Object {
   var sizeSymbols: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TextOptions {
+  @scala.inline
+  def apply(
+    defaultResponseError: java.lang.String = null,
+    fileInputTitle: java.lang.String = null,
+    sizeSymbols: js.Array[java.lang.String] = null
+  ): TextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaultResponseError != null) __obj.updateDynamic("defaultResponseError")(defaultResponseError)
+    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle)
+    if (sizeSymbols != null) __obj.updateDynamic("sizeSymbols")(sizeSymbols)
+    __obj.asInstanceOf[TextOptions]
+  }
+}
+

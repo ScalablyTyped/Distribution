@@ -10,3 +10,13 @@ trait Coordinate extends js.Object {
   var y: scala.Double
 }
 
+object Coordinate {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): Coordinate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Coordinate]
+  }
+}
+

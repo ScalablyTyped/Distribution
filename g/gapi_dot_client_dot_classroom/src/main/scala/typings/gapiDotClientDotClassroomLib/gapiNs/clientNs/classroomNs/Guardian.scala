@@ -19,3 +19,20 @@ trait Guardian extends js.Object {
   var studentId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Guardian {
+  @scala.inline
+  def apply(
+    guardianId: java.lang.String = null,
+    guardianProfile: UserProfile = null,
+    invitedEmailAddress: java.lang.String = null,
+    studentId: java.lang.String = null
+  ): Guardian = {
+    val __obj = js.Dynamic.literal()
+    if (guardianId != null) __obj.updateDynamic("guardianId")(guardianId)
+    if (guardianProfile != null) __obj.updateDynamic("guardianProfile")(guardianProfile)
+    if (invitedEmailAddress != null) __obj.updateDynamic("invitedEmailAddress")(invitedEmailAddress)
+    if (studentId != null) __obj.updateDynamic("studentId")(studentId)
+    __obj.asInstanceOf[Guardian]
+  }
+}
+

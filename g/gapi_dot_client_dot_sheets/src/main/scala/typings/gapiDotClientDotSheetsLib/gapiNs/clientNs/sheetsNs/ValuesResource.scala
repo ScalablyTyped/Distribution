@@ -88,3 +88,62 @@ trait ValuesResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[UpdateValuesResponse]
 }
 
+object ValuesResource {
+  @scala.inline
+  def apply(
+    append: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AppendValuesResponse]
+    ],
+    batchClear: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesResponse]
+    ],
+    batchClearByDataFilter: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchClearValuesByDataFilterResponse]
+    ],
+    batchGet: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOption, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesResponse]
+    ],
+    batchGetByDataFilter: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetValuesByDataFilterResponse]
+    ],
+    batchUpdate: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesResponse]
+    ],
+    batchUpdateByDataFilter: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateValuesByDataFilterResponse]
+    ],
+    clear: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ClearValuesResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOptionFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ValueRange]
+    ],
+    update: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsIncludeValuesInResponse, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UpdateValuesResponse]
+    ]
+  ): ValuesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("append")(append)
+    __obj.updateDynamic("batchClear")(batchClear)
+    __obj.updateDynamic("batchClearByDataFilter")(batchClearByDataFilter)
+    __obj.updateDynamic("batchGet")(batchGet)
+    __obj.updateDynamic("batchGetByDataFilter")(batchGetByDataFilter)
+    __obj.updateDynamic("batchUpdate")(batchUpdate)
+    __obj.updateDynamic("batchUpdateByDataFilter")(batchUpdateByDataFilter)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ValuesResource]
+  }
+}
+

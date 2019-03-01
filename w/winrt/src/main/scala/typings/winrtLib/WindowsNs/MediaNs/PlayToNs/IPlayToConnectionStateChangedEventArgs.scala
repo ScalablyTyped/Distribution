@@ -10,3 +10,13 @@ trait IPlayToConnectionStateChangedEventArgs extends js.Object {
   var previousState: PlayToConnectionState
 }
 
+object IPlayToConnectionStateChangedEventArgs {
+  @scala.inline
+  def apply(currentState: PlayToConnectionState, previousState: PlayToConnectionState): IPlayToConnectionStateChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentState")(currentState)
+    __obj.updateDynamic("previousState")(previousState)
+    __obj.asInstanceOf[IPlayToConnectionStateChangedEventArgs]
+  }
+}
+

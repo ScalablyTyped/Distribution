@@ -36,3 +36,24 @@ trait Diagnostic extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Diagnostic {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    range: Range,
+    code: scala.Double | java.lang.String = null,
+    relatedInformation: js.Array[DiagnosticRelatedInformation] = null,
+    severity: DiagnosticSeverity = null,
+    source: java.lang.String = null
+  ): Diagnostic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("range")(range)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation)
+    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[Diagnostic]
+  }
+}
+

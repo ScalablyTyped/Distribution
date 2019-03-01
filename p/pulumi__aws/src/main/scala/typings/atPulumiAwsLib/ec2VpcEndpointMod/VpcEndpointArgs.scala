@@ -51,3 +51,30 @@ trait VpcEndpointArgs extends js.Object {
   val vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object VpcEndpointArgs {
+  @scala.inline
+  def apply(
+    serviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    autoAccept: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateDnsEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    routeTableIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    securityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    vpcEndpointType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): VpcEndpointArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
+    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    if (autoAccept != null) __obj.updateDynamic("autoAccept")(autoAccept.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (privateDnsEnabled != null) __obj.updateDynamic("privateDnsEnabled")(privateDnsEnabled.asInstanceOf[js.Any])
+    if (routeTableIds != null) __obj.updateDynamic("routeTableIds")(routeTableIds.asInstanceOf[js.Any])
+    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
+    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    if (vpcEndpointType != null) __obj.updateDynamic("vpcEndpointType")(vpcEndpointType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcEndpointArgs]
+  }
+}
+

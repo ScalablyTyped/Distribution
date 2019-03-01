@@ -32,3 +32,36 @@ trait PartOfSpeech extends js.Object {
   var voice: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PartOfSpeech {
+  @scala.inline
+  def apply(
+    aspect: java.lang.String = null,
+    `case`: java.lang.String = null,
+    form: java.lang.String = null,
+    gender: java.lang.String = null,
+    mood: java.lang.String = null,
+    number: java.lang.String = null,
+    person: java.lang.String = null,
+    proper: java.lang.String = null,
+    reciprocity: java.lang.String = null,
+    tag: java.lang.String = null,
+    tense: java.lang.String = null,
+    voice: java.lang.String = null
+  ): PartOfSpeech = {
+    val __obj = js.Dynamic.literal()
+    if (aspect != null) __obj.updateDynamic("aspect")(aspect)
+    if (`case` != null) __obj.updateDynamic("case")(`case`)
+    if (form != null) __obj.updateDynamic("form")(form)
+    if (gender != null) __obj.updateDynamic("gender")(gender)
+    if (mood != null) __obj.updateDynamic("mood")(mood)
+    if (number != null) __obj.updateDynamic("number")(number)
+    if (person != null) __obj.updateDynamic("person")(person)
+    if (proper != null) __obj.updateDynamic("proper")(proper)
+    if (reciprocity != null) __obj.updateDynamic("reciprocity")(reciprocity)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (tense != null) __obj.updateDynamic("tense")(tense)
+    if (voice != null) __obj.updateDynamic("voice")(voice)
+    __obj.asInstanceOf[PartOfSpeech]
+  }
+}
+

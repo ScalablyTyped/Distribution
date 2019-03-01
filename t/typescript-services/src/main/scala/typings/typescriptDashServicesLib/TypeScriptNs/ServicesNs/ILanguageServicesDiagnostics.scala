@@ -9,3 +9,12 @@ trait ILanguageServicesDiagnostics extends js.Object {
   def log(content: java.lang.String): scala.Unit
 }
 
+object ILanguageServicesDiagnostics {
+  @scala.inline
+  def apply(log: js.Function1[java.lang.String, scala.Unit]): ILanguageServicesDiagnostics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("log")(log)
+    __obj.asInstanceOf[ILanguageServicesDiagnostics]
+  }
+}
+

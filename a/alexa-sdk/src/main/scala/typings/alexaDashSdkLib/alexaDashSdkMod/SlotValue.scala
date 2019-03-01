@@ -12,3 +12,20 @@ trait SlotValue extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object SlotValue {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    confirmationStatus: ConfirmationStatuses = null,
+    resolutions: Resolutions = null,
+    value: js.Any = null
+  ): SlotValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (confirmationStatus != null) __obj.updateDynamic("confirmationStatus")(confirmationStatus)
+    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SlotValue]
+  }
+}
+

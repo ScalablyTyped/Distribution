@@ -13,31 +13,40 @@ object vegaDashTypingsLibNumbers {
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `100` extends js.Object
+  sealed trait `100`
+    extends vegaDashTypingsLib.typesSpecEncodeMod.FontWeight
   
   @js.native
-  sealed trait `200` extends js.Object
+  sealed trait `200`
+    extends vegaDashTypingsLib.typesSpecEncodeMod.FontWeight
   
   @js.native
-  sealed trait `300` extends js.Object
+  sealed trait `300`
+    extends vegaDashTypingsLib.typesSpecEncodeMod.FontWeight
   
   @js.native
-  sealed trait `400` extends js.Object
+  sealed trait `400`
+    extends vegaDashTypingsLib.typesSpecEncodeMod.FontWeight
   
   @js.native
-  sealed trait `500` extends js.Object
+  sealed trait `500`
+    extends vegaDashTypingsLib.typesSpecEncodeMod.FontWeight
   
   @js.native
-  sealed trait `600` extends js.Object
+  sealed trait `600`
+    extends vegaDashTypingsLib.typesSpecEncodeMod.FontWeight
   
   @js.native
-  sealed trait `700` extends js.Object
+  sealed trait `700`
+    extends vegaDashTypingsLib.typesSpecEncodeMod.FontWeight
   
   @js.native
-  sealed trait `800` extends js.Object
+  sealed trait `800`
+    extends vegaDashTypingsLib.typesSpecEncodeMod.FontWeight
   
   @js.native
-  sealed trait `900` extends js.Object
+  sealed trait `900`
+    extends vegaDashTypingsLib.typesSpecEncodeMod.FontWeight
   
   @js.native
   sealed trait `false` extends js.Object

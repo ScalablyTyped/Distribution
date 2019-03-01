@@ -11,3 +11,15 @@ trait Price extends js.Object {
   var `type`: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType
 }
 
+object Price {
+  @scala.inline
+  def apply(
+    amount: actionsDashOnDashGoogleLib.Anon_CurrencyCode,
+    `type`: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType
+  ): Price = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.asInstanceOf[Price]
+  }
+}
+

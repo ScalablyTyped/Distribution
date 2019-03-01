@@ -102,3 +102,26 @@ trait Anon_D extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_D {
+  @scala.inline
+  def apply(
+    d: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    layout: java.lang.String = null,
+    pathData: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Anon_D = {
+    val __obj = js.Dynamic.literal()
+    if (d != null) __obj.updateDynamic("d")(d)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (pathData != null) __obj.updateDynamic("pathData")(pathData)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_D]
+  }
+}
+

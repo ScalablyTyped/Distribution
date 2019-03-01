@@ -24,3 +24,18 @@ trait Options extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    autosemicolon: js.UndefOr[scala.Boolean] = js.undefined,
+    indent: java.lang.String = null,
+    openbrace: cssbeautifyLib.cssbeautifyLibStrings.`end-of-line` | cssbeautifyLib.cssbeautifyLibStrings.`separate-line` = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autosemicolon)) __obj.updateDynamic("autosemicolon")(autosemicolon)
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (openbrace != null) __obj.updateDynamic("openbrace")(openbrace.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -16,3 +16,20 @@ trait DownloadResponse extends js.Object {
   var lineItems: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DownloadResponse {
+  @scala.inline
+  def apply(
+    adGroups: java.lang.String = null,
+    ads: java.lang.String = null,
+    insertionOrders: java.lang.String = null,
+    lineItems: java.lang.String = null
+  ): DownloadResponse = {
+    val __obj = js.Dynamic.literal()
+    if (adGroups != null) __obj.updateDynamic("adGroups")(adGroups)
+    if (ads != null) __obj.updateDynamic("ads")(ads)
+    if (insertionOrders != null) __obj.updateDynamic("insertionOrders")(insertionOrders)
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
+    __obj.asInstanceOf[DownloadResponse]
+  }
+}
+

@@ -1312,13 +1312,39 @@ object DataSyncNs extends js.Object {
   
   trait UpdateTaskResponse extends js.Object
   
+  trait _AgentStatus extends js.Object
+  
+  trait _Atime extends js.Object
+  
+  trait _Gid extends js.Object
+  
+  trait _Mtime extends js.Object
+  
+  trait _PhaseStatus extends js.Object
+  
+  trait _PosixPermissions extends js.Object
+  
+  trait _PreserveDeletedFiles extends js.Object
+  
+  trait _PreserveDevices extends js.Object
+  
+  trait _TaskExecutionStatus extends js.Object
+  
+  trait _TaskStatus extends js.Object
+  
+  trait _Uid extends js.Object
+  
+  trait _VerifyMode extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActivationKey = java.lang.String
   type AgentArn = java.lang.String
   type AgentArnList = js.Array[AgentArn]
   type AgentList = js.Array[AgentListEntry]
-  type AgentStatus = awsDashSdkLib.awsDashSdkLibStrings.ONLINE | awsDashSdkLib.awsDashSdkLibStrings.OFFLINE | java.lang.String
-  type Atime = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.BEST_EFFORT | java.lang.String
+  type AgentStatus = _AgentStatus | java.lang.String
+  type Atime = _Atime | java.lang.String
   type BytesPerSecond = scala.Double
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type Duration = scala.Double
@@ -1326,19 +1352,19 @@ object DataSyncNs extends js.Object {
   type Ec2SecurityGroupArnList = js.Array[Ec2SecurityGroupArn]
   type Ec2SubnetArn = java.lang.String
   type EfsFilesystemArn = java.lang.String
-  type Gid = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.INT_VALUE | awsDashSdkLib.awsDashSdkLibStrings.NAME | awsDashSdkLib.awsDashSdkLibStrings.BOTH | java.lang.String
+  type Gid = _Gid | java.lang.String
   type IamRoleArn = java.lang.String
   type LocationArn = java.lang.String
   type LocationList = js.Array[LocationListEntry]
   type LocationUri = java.lang.String
   type LogGroupArn = java.lang.String
   type MaxResults = scala.Double
-  type Mtime = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.PRESERVE | java.lang.String
+  type Mtime = _Mtime | java.lang.String
   type NextToken = java.lang.String
-  type PhaseStatus = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
-  type PosixPermissions = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.BEST_EFFORT | awsDashSdkLib.awsDashSdkLibStrings.PRESERVE | java.lang.String
-  type PreserveDeletedFiles = awsDashSdkLib.awsDashSdkLibStrings.PRESERVE | awsDashSdkLib.awsDashSdkLibStrings.REMOVE | java.lang.String
-  type PreserveDevices = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.PRESERVE | java.lang.String
+  type PhaseStatus = _PhaseStatus | java.lang.String
+  type PosixPermissions = _PosixPermissions | java.lang.String
+  type PreserveDeletedFiles = _PreserveDeletedFiles | java.lang.String
+  type PreserveDevices = _PreserveDevices | java.lang.String
   type S3BucketArn = java.lang.String
   type ServerHostname = java.lang.String
   type Subdirectory = java.lang.String
@@ -1350,13 +1376,13 @@ object DataSyncNs extends js.Object {
   type TaskArn = java.lang.String
   type TaskExecutionArn = java.lang.String
   type TaskExecutionList = js.Array[TaskExecutionListEntry]
-  type TaskExecutionStatus = awsDashSdkLib.awsDashSdkLibStrings.LAUNCHING | awsDashSdkLib.awsDashSdkLibStrings.PREPARING | awsDashSdkLib.awsDashSdkLibStrings.TRANSFERRING | awsDashSdkLib.awsDashSdkLibStrings.VERIFYING | awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
+  type TaskExecutionStatus = _TaskExecutionStatus | java.lang.String
   type TaskList = js.Array[TaskListEntry]
-  type TaskStatus = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.UNAVAILABLE | java.lang.String
+  type TaskStatus = _TaskStatus | java.lang.String
   type Time = stdLib.Date
-  type Uid = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.INT_VALUE | awsDashSdkLib.awsDashSdkLibStrings.NAME | awsDashSdkLib.awsDashSdkLibStrings.BOTH | java.lang.String
-  type VerifyMode = awsDashSdkLib.awsDashSdkLibStrings.POINT_IN_TIME_CONSISTENT | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-11-09` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type Uid = _Uid | java.lang.String
+  type VerifyMode = _VerifyMode | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type long = scala.Double
 }
 

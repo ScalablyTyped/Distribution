@@ -41,3 +41,34 @@ trait DrawIndicatorsEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DrawIndicatorsEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    indicatorElement: js.Any = null,
+    indicatorIndex: scala.Int | scala.Double = null,
+    model: js.Any = null,
+    `object`: js.Any = null,
+    position: js.Any = null,
+    scaleElement: js.Any = null,
+    scaleIndex: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DrawIndicatorsEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (indicatorElement != null) __obj.updateDynamic("indicatorElement")(indicatorElement)
+    if (indicatorIndex != null) __obj.updateDynamic("indicatorIndex")(indicatorIndex.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DrawIndicatorsEventArgs]
+  }
+}
+

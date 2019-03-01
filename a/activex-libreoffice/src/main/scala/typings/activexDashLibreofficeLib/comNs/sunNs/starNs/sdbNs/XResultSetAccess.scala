@@ -15,3 +15,20 @@ trait XResultSetAccess
   def createResultSet(): activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
 }
 
+object XResultSetAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createResultSet: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XResultSetAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createResultSet")(createResultSet)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XResultSetAccess]
+  }
+}
+

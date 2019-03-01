@@ -16,3 +16,28 @@ trait ImageInfo extends js.Object {
   var VirtualSize: scala.Double
 }
 
+object ImageInfo {
+  @scala.inline
+  def apply(
+    Created: scala.Double,
+    Id: java.lang.String,
+    Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    ParentId: java.lang.String,
+    RepoTags: js.Array[java.lang.String],
+    Size: scala.Double,
+    VirtualSize: scala.Double,
+    RepoDigests: js.Array[java.lang.String] = null
+  ): ImageInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Created")(Created)
+    __obj.updateDynamic("Id")(Id)
+    __obj.updateDynamic("Labels")(Labels)
+    __obj.updateDynamic("ParentId")(ParentId)
+    __obj.updateDynamic("RepoTags")(RepoTags)
+    __obj.updateDynamic("Size")(Size)
+    __obj.updateDynamic("VirtualSize")(VirtualSize)
+    if (RepoDigests != null) __obj.updateDynamic("RepoDigests")(RepoDigests)
+    __obj.asInstanceOf[ImageInfo]
+  }
+}
+

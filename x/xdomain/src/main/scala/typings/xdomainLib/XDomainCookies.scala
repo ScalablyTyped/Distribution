@@ -10,3 +10,13 @@ trait XDomainCookies extends js.Object {
   var slave: java.lang.String
 }
 
+object XDomainCookies {
+  @scala.inline
+  def apply(master: java.lang.String, slave: java.lang.String): XDomainCookies = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("master")(master)
+    __obj.updateDynamic("slave")(slave)
+    __obj.asInstanceOf[XDomainCookies]
+  }
+}
+

@@ -24,3 +24,30 @@ trait IEventWorkflowController extends IEventController {
   ] = js.undefined
 }
 
+object IEventWorkflowController {
+  @scala.inline
+  def apply(
+    onAfterEventFiring: js.Function3[
+      /* events */ IEventManager, 
+      /* type */ java.lang.String, 
+      /* event */ js.UndefOr[IEvent], 
+      scala.Unit
+    ] = null,
+    onBeforeEventFiring: js.Function3[
+      /* events */ IEventManager, 
+      /* type */ java.lang.String, 
+      /* event */ js.UndefOr[IEvent], 
+      scala.Unit
+    ] = null,
+    onStartListening: js.Function2[/* events */ IEventManager, /* type */ java.lang.String, scala.Unit] = null,
+    onStopListening: js.Function2[/* events */ IEventManager, /* type */ java.lang.String, scala.Unit] = null
+  ): IEventWorkflowController = {
+    val __obj = js.Dynamic.literal()
+    if (onAfterEventFiring != null) __obj.updateDynamic("onAfterEventFiring")(onAfterEventFiring)
+    if (onBeforeEventFiring != null) __obj.updateDynamic("onBeforeEventFiring")(onBeforeEventFiring)
+    if (onStartListening != null) __obj.updateDynamic("onStartListening")(onStartListening)
+    if (onStopListening != null) __obj.updateDynamic("onStopListening")(onStopListening)
+    __obj.asInstanceOf[IEventWorkflowController]
+  }
+}
+

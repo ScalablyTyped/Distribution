@@ -34,18 +34,11 @@ package object HemeraNs {
     scala.Unit
   ]
   type ExtensionNextHandler = js.Function1[/* error */ stdLib.Error, scala.Unit]
-  type ExtensionType = natsDashHemeraLib.natsDashHemeraLibStrings.onClientPreRequest | natsDashHemeraLib.natsDashHemeraLibStrings.onClientPostRequest | natsDashHemeraLib.natsDashHemeraLibStrings.onServerPreHandler | natsDashHemeraLib.natsDashHemeraLibStrings.onServerPreRequest | natsDashHemeraLib.natsDashHemeraLibStrings.onServerPreResponse
-  type GuidVersions = natsDashHemeraLib.natsDashHemeraLibStrings.uuidv1 | natsDashHemeraLib.natsDashHemeraLibStrings.uuidv2 | natsDashHemeraLib.natsDashHemeraLibStrings.uuidv3 | natsDashHemeraLib.natsDashHemeraLibStrings.uuidv4 | natsDashHemeraLib.natsDashHemeraLibStrings.uuidv5
-  type HemeraEvents = natsDashHemeraLib.natsDashHemeraLibStrings.error | natsDashHemeraLib.natsDashHemeraLibStrings.clientPreRequest | natsDashHemeraLib.natsDashHemeraLibStrings.clientPostRequest | natsDashHemeraLib.natsDashHemeraLibStrings.serverPreHandler | natsDashHemeraLib.natsDashHemeraLibStrings.serverPreRequest | natsDashHemeraLib.natsDashHemeraLibStrings.serverPreResponse
   type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | (org.scalablytyped.runtime.StringDictionary[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias nats-hemera.nats-hemera.Hemera.LanguageOptions */ js.Object
   ])
   type LanguageRootOptions = natsDashHemeraLib.Anon_Key with (stdLib.Partial[stdLib.Record[Types, LanguageOptions]])
-  type LogLevel = natsDashHemeraLib.natsDashHemeraLibStrings.fatal | natsDashHemeraLib.natsDashHemeraLibStrings.error | natsDashHemeraLib.natsDashHemeraLibStrings.warn | natsDashHemeraLib.natsDashHemeraLibStrings.info | natsDashHemeraLib.natsDashHemeraLibStrings.debug | natsDashHemeraLib.natsDashHemeraLibStrings.trace | natsDashHemeraLib.natsDashHemeraLibStrings.silent
-  type RequestType = natsDashHemeraLib.natsDashHemeraLibStrings.pubsub | natsDashHemeraLib.natsDashHemeraLibStrings.request
-  type Schema = AnySchema | ArraySchema | AlternativesSchema | BinarySchema | BooleanSchema | DateSchema | FunctionSchema | NumberSchema | ObjectSchema | StringSchema
-  type SchemaLike = java.lang.String | scala.Double | scala.Boolean | js.Object | scala.Null | Schema | SchemaMap
-  type Types = natsDashHemeraLib.natsDashHemeraLibStrings.any | natsDashHemeraLib.natsDashHemeraLibStrings.alternatives | natsDashHemeraLib.natsDashHemeraLibStrings.array | natsDashHemeraLib.natsDashHemeraLibStrings.boolean | natsDashHemeraLib.natsDashHemeraLibStrings.binary | natsDashHemeraLib.natsDashHemeraLibStrings.date | natsDashHemeraLib.natsDashHemeraLibStrings.function | natsDashHemeraLib.natsDashHemeraLibStrings.`lazy` | natsDashHemeraLib.natsDashHemeraLibStrings.number | natsDashHemeraLib.natsDashHemeraLibStrings.`object` | natsDashHemeraLib.natsDashHemeraLibStrings.string
+  type SchemaLike = _SchemaLike | java.lang.String | scala.Double | scala.Boolean | js.Object | scala.Null
   type ValidationErrorFunction = js.Function1[
     /* errors */ js.Array[ValidationErrorItem], 
     java.lang.String | ValidationErrorItem | js.Array[ValidationErrorItem] | stdLib.Error

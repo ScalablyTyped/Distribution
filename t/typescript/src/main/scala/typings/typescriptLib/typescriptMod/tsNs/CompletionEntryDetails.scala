@@ -16,3 +16,28 @@ trait CompletionEntryDetails extends js.Object {
   var tags: js.UndefOr[js.Array[JSDocTagInfo]] = js.undefined
 }
 
+object CompletionEntryDetails {
+  @scala.inline
+  def apply(
+    displayParts: js.Array[SymbolDisplayPart],
+    kind: ScriptElementKind,
+    kindModifiers: java.lang.String,
+    name: java.lang.String,
+    codeActions: js.Array[CodeAction] = null,
+    documentation: js.Array[SymbolDisplayPart] = null,
+    source: js.Array[SymbolDisplayPart] = null,
+    tags: js.Array[JSDocTagInfo] = null
+  ): CompletionEntryDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayParts")(displayParts)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("kindModifiers")(kindModifiers)
+    __obj.updateDynamic("name")(name)
+    if (codeActions != null) __obj.updateDynamic("codeActions")(codeActions)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[CompletionEntryDetails]
+  }
+}
+

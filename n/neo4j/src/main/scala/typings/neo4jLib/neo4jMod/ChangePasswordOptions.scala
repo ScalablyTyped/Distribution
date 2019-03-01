@@ -9,3 +9,12 @@ trait ChangePasswordOptions extends js.Object {
   var password: java.lang.String
 }
 
+object ChangePasswordOptions {
+  @scala.inline
+  def apply(password: java.lang.String): ChangePasswordOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("password")(password)
+    __obj.asInstanceOf[ChangePasswordOptions]
+  }
+}
+

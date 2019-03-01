@@ -12,3 +12,20 @@ trait Route extends js.Object {
   var namespace: java.lang.String
 }
 
+object Route {
+  @scala.inline
+  def apply(
+    endpoints: js.Array[HTTPEndpoint],
+    methods: js.Array[HTTPMethod],
+    namespace: java.lang.String,
+    _links: wpapiLib.Anon_Self = null
+  ): Route = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endpoints")(endpoints)
+    __obj.updateDynamic("methods")(methods)
+    __obj.updateDynamic("namespace")(namespace)
+    if (_links != null) __obj.updateDynamic("_links")(_links)
+    __obj.asInstanceOf[Route]
+  }
+}
+

@@ -23,3 +23,13 @@ trait TestDetails extends js.Object {
   var progressMessages: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TestDetails {
+  @scala.inline
+  def apply(errorMessage: java.lang.String = null, progressMessages: js.Array[java.lang.String] = null): TestDetails = {
+    val __obj = js.Dynamic.literal()
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (progressMessages != null) __obj.updateDynamic("progressMessages")(progressMessages)
+    __obj.asInstanceOf[TestDetails]
+  }
+}
+

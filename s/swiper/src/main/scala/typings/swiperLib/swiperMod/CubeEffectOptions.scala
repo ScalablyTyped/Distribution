@@ -12,3 +12,20 @@ trait CubeEffectOptions extends js.Object {
   var slideShadows: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CubeEffectOptions {
+  @scala.inline
+  def apply(
+    shadow: js.UndefOr[scala.Boolean] = js.undefined,
+    shadowOffset: scala.Int | scala.Double = null,
+    shadowScale: scala.Int | scala.Double = null,
+    slideShadows: js.UndefOr[scala.Boolean] = js.undefined
+  ): CubeEffectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
+    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
+    if (shadowScale != null) __obj.updateDynamic("shadowScale")(shadowScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(slideShadows)) __obj.updateDynamic("slideShadows")(slideShadows)
+    __obj.asInstanceOf[CubeEffectOptions]
+  }
+}
+

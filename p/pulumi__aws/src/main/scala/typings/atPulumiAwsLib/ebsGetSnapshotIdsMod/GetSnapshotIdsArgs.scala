@@ -22,3 +22,18 @@ trait GetSnapshotIdsArgs extends js.Object {
   val restorableByUserIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object GetSnapshotIdsArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    owners: js.Array[java.lang.String] = null,
+    restorableByUserIds: js.Array[java.lang.String] = null
+  ): GetSnapshotIdsArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (owners != null) __obj.updateDynamic("owners")(owners)
+    if (restorableByUserIds != null) __obj.updateDynamic("restorableByUserIds")(restorableByUserIds)
+    __obj.asInstanceOf[GetSnapshotIdsArgs]
+  }
+}
+

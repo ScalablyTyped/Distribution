@@ -11,3 +11,18 @@ trait LinearGradient2Generic[TColor, TValue, TStrategy] extends js.Object {
   var nullColoringStrategy: js.UndefOr[NullColoringStrategyGeneric[TStrategy, TColor]] = js.undefined
 }
 
+object LinearGradient2Generic {
+  @scala.inline
+  def apply[TColor, TValue, TStrategy](
+    max: RuleColorStopGeneric[TColor, TValue],
+    min: RuleColorStopGeneric[TColor, TValue],
+    nullColoringStrategy: NullColoringStrategyGeneric[TStrategy, TColor] = null
+  ): LinearGradient2Generic[TColor, TValue, TStrategy] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("min")(min)
+    if (nullColoringStrategy != null) __obj.updateDynamic("nullColoringStrategy")(nullColoringStrategy)
+    __obj.asInstanceOf[LinearGradient2Generic[TColor, TValue, TStrategy]]
+  }
+}
+

@@ -16,3 +16,32 @@ trait NotificationsResource extends js.Object {
   def list(request: gapiDotClientDotStorageLib.Anon_AltBucket): gapiDotClientLib.gapiNs.clientNs.Request[Notifications]
 }
 
+object NotificationsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucketFieldsKeyNotification, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucketFieldsKeyNotification, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Notification]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucket, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Notification]
+    ],
+    list: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucket, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Notifications]
+    ]
+  ): NotificationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[NotificationsResource]
+  }
+}
+

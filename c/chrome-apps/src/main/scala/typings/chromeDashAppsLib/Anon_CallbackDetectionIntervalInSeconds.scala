@@ -36,3 +36,24 @@ trait Anon_CallbackDetectionIntervalInSeconds extends js.Object {
   def setDetectionInterval(intervalInSeconds: chromeDashAppsLib.chromeNs.integer): scala.Unit
 }
 
+object Anon_CallbackDetectionIntervalInSeconds {
+  @scala.inline
+  def apply(
+    onStateChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function1[/* newState */ chromeDashAppsLib.chromeNs.idleNs.IdleState, scala.Unit]
+    ],
+    queryState: js.Function2[
+      chromeDashAppsLib.chromeNs.integer, 
+      js.Function1[/* newState */ chromeDashAppsLib.chromeNs.idleNs.IdleState, scala.Unit], 
+      scala.Unit
+    ],
+    setDetectionInterval: js.Function1[chromeDashAppsLib.chromeNs.integer, scala.Unit]
+  ): Anon_CallbackDetectionIntervalInSeconds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onStateChanged")(onStateChanged)
+    __obj.updateDynamic("queryState")(queryState)
+    __obj.updateDynamic("setDetectionInterval")(setDetectionInterval)
+    __obj.asInstanceOf[Anon_CallbackDetectionIntervalInSeconds]
+  }
+}
+

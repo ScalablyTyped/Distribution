@@ -9,3 +9,12 @@ trait PaginatedResult extends js.Object {
   var TotalCount: scala.Double
 }
 
+object PaginatedResult {
+  @scala.inline
+  def apply(TotalCount: scala.Double): PaginatedResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TotalCount")(TotalCount)
+    __obj.asInstanceOf[PaginatedResult]
+  }
+}
+

@@ -13,3 +13,13 @@ trait AutocompleteUIParams extends js.Object {
   var item: js.UndefOr[js.Any] = js.undefined
 }
 
+object AutocompleteUIParams {
+  @scala.inline
+  def apply(content: js.Any = null, item: js.Any = null): AutocompleteUIParams = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (item != null) __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[AutocompleteUIParams]
+  }
+}
+

@@ -20,3 +20,18 @@ trait Anon_Param extends js.Object {
   var spaces: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Param {
+  @scala.inline
+  def apply(
+    param: java.lang.String = null,
+    pretty: js.UndefOr[scala.Boolean] = js.undefined,
+    spaces: scala.Int | scala.Double = null
+  ): Anon_Param = {
+    val __obj = js.Dynamic.literal()
+    if (param != null) __obj.updateDynamic("param")(param)
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Param]
+  }
+}
+

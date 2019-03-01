@@ -10,19 +10,24 @@ object waterlineLibStrings {
   sealed trait alter extends js.Object
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
-  sealed trait datetime extends js.Object
+  sealed trait datetime
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
   sealed trait drop extends js.Object
@@ -31,25 +36,31 @@ object waterlineLibStrings {
   sealed trait email extends js.Object
   
   @js.native
-  sealed trait float extends js.Object
+  sealed trait float
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
-  sealed trait integer extends js.Object
+  sealed trait integer
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
   sealed trait safe extends js.Object
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends waterlineLib.waterlineMod.WaterlineNs.AttributeType
   
   @scala.inline
   def alter: alter = "alter".asInstanceOf[alter]

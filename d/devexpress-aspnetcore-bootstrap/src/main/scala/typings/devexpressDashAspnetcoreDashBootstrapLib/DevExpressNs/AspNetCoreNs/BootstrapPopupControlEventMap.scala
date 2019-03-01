@@ -19,3 +19,36 @@ trait BootstrapPopupControlEventMap extends ControlEventMap {
   var shown: PopupWindowEventArgs
 }
 
+object BootstrapPopupControlEventMap {
+  @scala.inline
+  def apply(
+    afterResizing: PopupWindowEventArgs,
+    beforeResizing: PopupWindowEventArgs,
+    beginCallback: BeginCallbackEventArgs,
+    callbackError: CallbackErrorEventArgs,
+    closeUp: PopupWindowCloseUpEventArgs,
+    closing: PopupWindowCancelEventArgs,
+    endCallback: EndCallbackEventArgs,
+    init: EventArgs,
+    pinnedChanged: PopupWindowPinnedChangedEventArgs,
+    popUp: PopupWindowEventArgs,
+    resize: PopupWindowResizeEventArgs,
+    shown: PopupWindowEventArgs
+  ): BootstrapPopupControlEventMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("afterResizing")(afterResizing)
+    __obj.updateDynamic("beforeResizing")(beforeResizing)
+    __obj.updateDynamic("beginCallback")(beginCallback)
+    __obj.updateDynamic("callbackError")(callbackError)
+    __obj.updateDynamic("closeUp")(closeUp)
+    __obj.updateDynamic("closing")(closing)
+    __obj.updateDynamic("endCallback")(endCallback)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("pinnedChanged")(pinnedChanged)
+    __obj.updateDynamic("popUp")(popUp)
+    __obj.updateDynamic("resize")(resize)
+    __obj.updateDynamic("shown")(shown)
+    __obj.asInstanceOf[BootstrapPopupControlEventMap]
+  }
+}
+

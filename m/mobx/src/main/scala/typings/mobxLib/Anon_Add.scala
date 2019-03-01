@@ -5,10 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Add[K, V] extends js.Object {
+trait Anon_Add[K, V]
+  extends mobxLib.libTypesObservablemapMod.IMapDidChange[K, V] {
   var name: K
   var newValue: V
   var `object`: mobxLib.libTypesObservablemapMod.ObservableMap[K, V]
   var `type`: mobxLib.mobxLibStrings.add
+}
+
+object Anon_Add {
+  @scala.inline
+  def apply[K, V](
+    name: K,
+    newValue: V,
+    `object`: mobxLib.libTypesObservablemapMod.ObservableMap[K, V],
+    `type`: mobxLib.mobxLibStrings.add
+  ): Anon_Add[K, V] = {
+    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
+    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Add[K, V]]
+  }
 }
 

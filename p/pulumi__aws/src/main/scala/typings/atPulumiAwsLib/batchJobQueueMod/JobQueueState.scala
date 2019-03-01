@@ -34,3 +34,22 @@ trait JobQueueState extends js.Object {
   val state: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object JobQueueState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    computeEnvironments: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    priority: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    state: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): JobQueueState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (computeEnvironments != null) __obj.updateDynamic("computeEnvironments")(computeEnvironments.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JobQueueState]
+  }
+}
+

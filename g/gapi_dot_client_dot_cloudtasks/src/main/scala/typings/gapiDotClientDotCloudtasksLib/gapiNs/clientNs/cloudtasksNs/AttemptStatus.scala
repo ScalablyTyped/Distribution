@@ -41,3 +41,20 @@ trait AttemptStatus extends js.Object {
   var scheduleTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AttemptStatus {
+  @scala.inline
+  def apply(
+    dispatchTime: java.lang.String = null,
+    responseStatus: Status = null,
+    responseTime: java.lang.String = null,
+    scheduleTime: java.lang.String = null
+  ): AttemptStatus = {
+    val __obj = js.Dynamic.literal()
+    if (dispatchTime != null) __obj.updateDynamic("dispatchTime")(dispatchTime)
+    if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus)
+    if (responseTime != null) __obj.updateDynamic("responseTime")(responseTime)
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    __obj.asInstanceOf[AttemptStatus]
+  }
+}
+

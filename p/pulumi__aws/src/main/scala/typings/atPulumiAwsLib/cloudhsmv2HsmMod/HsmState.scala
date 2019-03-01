@@ -36,3 +36,26 @@ trait HsmState extends js.Object {
   val subnetId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object HsmState {
+  @scala.inline
+  def apply(
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hsmEniId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hsmId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hsmState: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): HsmState = {
+    val __obj = js.Dynamic.literal()
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
+    if (hsmEniId != null) __obj.updateDynamic("hsmEniId")(hsmEniId.asInstanceOf[js.Any])
+    if (hsmId != null) __obj.updateDynamic("hsmId")(hsmId.asInstanceOf[js.Any])
+    if (hsmState != null) __obj.updateDynamic("hsmState")(hsmState.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HsmState]
+  }
+}
+

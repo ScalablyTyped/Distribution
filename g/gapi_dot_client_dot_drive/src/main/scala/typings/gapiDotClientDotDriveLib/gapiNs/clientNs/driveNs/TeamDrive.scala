@@ -33,3 +33,30 @@ trait TeamDrive extends js.Object {
   var themeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TeamDrive {
+  @scala.inline
+  def apply(
+    backgroundImageFile: gapiDotClientDotDriveLib.Anon_Id = null,
+    backgroundImageLink: java.lang.String = null,
+    capabilities: gapiDotClientDotDriveLib.Anon_CanAddChildrenCanChangeTeamDriveBackground = null,
+    colorRgb: java.lang.String = null,
+    createdTime: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    themeId: java.lang.String = null
+  ): TeamDrive = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundImageFile != null) __obj.updateDynamic("backgroundImageFile")(backgroundImageFile)
+    if (backgroundImageLink != null) __obj.updateDynamic("backgroundImageLink")(backgroundImageLink)
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    if (colorRgb != null) __obj.updateDynamic("colorRgb")(colorRgb)
+    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (themeId != null) __obj.updateDynamic("themeId")(themeId)
+    __obj.asInstanceOf[TeamDrive]
+  }
+}
+

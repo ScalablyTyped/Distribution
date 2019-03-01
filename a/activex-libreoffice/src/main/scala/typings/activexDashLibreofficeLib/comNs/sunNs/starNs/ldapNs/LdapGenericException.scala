@@ -15,3 +15,18 @@ trait LdapGenericException
   var ErrorCode: scala.Double
 }
 
+object LdapGenericException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrorCode: scala.Double,
+    Message: java.lang.String
+  ): LdapGenericException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("ErrorCode")(ErrorCode)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[LdapGenericException]
+  }
+}
+

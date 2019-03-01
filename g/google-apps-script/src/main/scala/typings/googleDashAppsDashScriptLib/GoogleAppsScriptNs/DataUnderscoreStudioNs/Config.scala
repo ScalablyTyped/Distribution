@@ -18,3 +18,32 @@ trait Config extends js.Object {
   def setDateRangeRequired(dateRangeRequired: scala.Boolean): Config
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    build: js.Function0[js.Object],
+    newCheckbox: js.Function0[Checkbox],
+    newInfo: js.Function0[Info],
+    newOptionBuilder: js.Function0[OptionBuilder],
+    newSelectMultiple: js.Function0[SelectMultiple],
+    newSelectSingle: js.Function0[SelectSingle],
+    newTextArea: js.Function0[TextArea],
+    newTextInput: js.Function0[TextInput],
+    printJson: js.Function0[java.lang.String],
+    setDateRangeRequired: js.Function1[scala.Boolean, Config]
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("newCheckbox")(newCheckbox)
+    __obj.updateDynamic("newInfo")(newInfo)
+    __obj.updateDynamic("newOptionBuilder")(newOptionBuilder)
+    __obj.updateDynamic("newSelectMultiple")(newSelectMultiple)
+    __obj.updateDynamic("newSelectSingle")(newSelectSingle)
+    __obj.updateDynamic("newTextArea")(newTextArea)
+    __obj.updateDynamic("newTextInput")(newTextInput)
+    __obj.updateDynamic("printJson")(printJson)
+    __obj.updateDynamic("setDateRangeRequired")(setDateRangeRequired)
+    __obj.asInstanceOf[Config]
+  }
+}
+

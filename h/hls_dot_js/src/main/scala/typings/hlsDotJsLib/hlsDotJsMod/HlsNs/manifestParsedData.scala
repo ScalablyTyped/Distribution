@@ -10,3 +10,13 @@ trait manifestParsedData extends js.Object {
   var levels: js.Array[scala.Double]
 }
 
+object manifestParsedData {
+  @scala.inline
+  def apply(firstLevel: scala.Double, levels: js.Array[scala.Double]): manifestParsedData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("firstLevel")(firstLevel)
+    __obj.updateDynamic("levels")(levels)
+    __obj.asInstanceOf[manifestParsedData]
+  }
+}
+

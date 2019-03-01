@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class LazyLog ()
   extends reactDashLazylogLib.buildLazyLogMod.LazyLog
 
+/* static members */
 @JSImport("react-lazylog", "LazyLog")
 @js.native
 object LazyLog extends js.Object {

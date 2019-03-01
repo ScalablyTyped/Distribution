@@ -38,3 +38,26 @@ trait MetricsAggregationMixin extends Aggregation {
   def toJSON(): js.Any
 }
 
+object MetricsAggregationMixin {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    field: js.Function1[java.lang.String, MetricsAggregationMixin],
+    lang: js.Function1[java.lang.String, MetricsAggregationMixin],
+    params: js.Function1[js.Object, MetricsAggregationMixin],
+    script: js.Function1[java.lang.String, MetricsAggregationMixin],
+    scriptValuesSorted: js.Function1[scala.Boolean, MetricsAggregationMixin],
+    toJSON: js.Function0[js.Any]
+  ): MetricsAggregationMixin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("scriptValuesSorted")(scriptValuesSorted)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[MetricsAggregationMixin]
+  }
+}
+

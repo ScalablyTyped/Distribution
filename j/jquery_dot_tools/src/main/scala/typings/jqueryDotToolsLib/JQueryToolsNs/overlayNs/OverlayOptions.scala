@@ -113,3 +113,46 @@ trait OverlayOptions extends js.Object {
   var top: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object OverlayOptions {
+  @scala.inline
+  def apply(
+    close: jqueryDotToolsLib.JQuery = null,
+    closeOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
+    closeSpeed: scala.Int | scala.Double = null,
+    effect: java.lang.String = null,
+    fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    left: jqueryDotToolsLib.jqueryDotToolsLibStrings.center | scala.Double = null,
+    load: js.UndefOr[scala.Boolean] = js.undefined,
+    mask: java.lang.String | MaskOptions = null,
+    onBeforeClose: js.ThisFunction1[/* this */ Overlay, /* event */ jqueryLib.JQueryEventObject, scala.Unit] = null,
+    onBeforeLoad: js.ThisFunction1[/* this */ Overlay, /* event */ jqueryLib.JQueryEventObject, scala.Unit] = null,
+    onClose: js.ThisFunction1[/* this */ Overlay, /* event */ jqueryLib.JQueryEventObject, scala.Unit] = null,
+    onLoad: js.ThisFunction1[/* this */ Overlay, /* event */ jqueryLib.JQueryEventObject, scala.Unit] = null,
+    oneInstance: js.UndefOr[scala.Boolean] = js.undefined,
+    speed: jqueryDotToolsLib.jqueryDotToolsLibStrings.slow | jqueryDotToolsLib.jqueryDotToolsLibStrings.normal | jqueryDotToolsLib.jqueryDotToolsLibStrings.fast | scala.Double = null,
+    target: stdLib.Element = null,
+    top: java.lang.String | scala.Double = null
+  ): OverlayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
+    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc)
+    if (closeSpeed != null) __obj.updateDynamic("closeSpeed")(closeSpeed.asInstanceOf[js.Any])
+    if (effect != null) __obj.updateDynamic("effect")(effect)
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load)
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (onBeforeClose != null) __obj.updateDynamic("onBeforeClose")(onBeforeClose)
+    if (onBeforeLoad != null) __obj.updateDynamic("onBeforeLoad")(onBeforeLoad)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (!js.isUndefined(oneInstance)) __obj.updateDynamic("oneInstance")(oneInstance)
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OverlayOptions]
+  }
+}
+

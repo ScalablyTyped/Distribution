@@ -108,3 +108,63 @@ trait RedisOptions extends js.Object {
   var tls: js.UndefOr[nodeLib.tlsMod.ConnectionOptions] = js.undefined
 }
 
+object RedisOptions {
+  @scala.inline
+  def apply(
+    autoResendUnfulfilledCommands: js.UndefOr[scala.Boolean] = js.undefined,
+    autoResubscribe: js.UndefOr[scala.Boolean] = js.undefined,
+    connectTimeout: scala.Int | scala.Double = null,
+    connectionName: java.lang.String = null,
+    db: scala.Int | scala.Double = null,
+    dropBufferSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    enableOfflineQueue: js.UndefOr[scala.Boolean] = js.undefined,
+    enableReadyCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    family: scala.Int | scala.Double = null,
+    host: java.lang.String = null,
+    keepAlive: scala.Int | scala.Double = null,
+    keyPrefix: java.lang.String = null,
+    lazyConnect: js.UndefOr[scala.Boolean] = js.undefined,
+    maxRetriesPerRequest: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    password: java.lang.String = null,
+    path: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    reconnectOnError: js.Function1[
+      /* error */ nodeLib.Error, 
+      scala.Boolean | ioredisLib.ioredisLibNumbers.`1` | ioredisLib.ioredisLibNumbers.`2`
+    ] = null,
+    retryStrategy: js.Function1[/* times */ scala.Double, scala.Double | ioredisLib.ioredisLibNumbers.`false`] = null,
+    sentinels: js.Array[ioredisLib.Anon_Host] = null,
+    showFriendlyErrorStack: js.UndefOr[scala.Boolean] = js.undefined,
+    tls: nodeLib.tlsMod.ConnectionOptions = null
+  ): RedisOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoResendUnfulfilledCommands)) __obj.updateDynamic("autoResendUnfulfilledCommands")(autoResendUnfulfilledCommands)
+    if (!js.isUndefined(autoResubscribe)) __obj.updateDynamic("autoResubscribe")(autoResubscribe)
+    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
+    if (db != null) __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropBufferSupport)) __obj.updateDynamic("dropBufferSupport")(dropBufferSupport)
+    if (!js.isUndefined(enableOfflineQueue)) __obj.updateDynamic("enableOfflineQueue")(enableOfflineQueue)
+    if (!js.isUndefined(enableReadyCheck)) __obj.updateDynamic("enableReadyCheck")(enableReadyCheck)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (keepAlive != null) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
+    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix)
+    if (!js.isUndefined(lazyConnect)) __obj.updateDynamic("lazyConnect")(lazyConnect)
+    if (maxRetriesPerRequest != null) __obj.updateDynamic("maxRetriesPerRequest")(maxRetriesPerRequest.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (reconnectOnError != null) __obj.updateDynamic("reconnectOnError")(reconnectOnError)
+    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(retryStrategy)
+    if (sentinels != null) __obj.updateDynamic("sentinels")(sentinels)
+    if (!js.isUndefined(showFriendlyErrorStack)) __obj.updateDynamic("showFriendlyErrorStack")(showFriendlyErrorStack)
+    if (tls != null) __obj.updateDynamic("tls")(tls)
+    __obj.asInstanceOf[RedisOptions]
+  }
+}
+

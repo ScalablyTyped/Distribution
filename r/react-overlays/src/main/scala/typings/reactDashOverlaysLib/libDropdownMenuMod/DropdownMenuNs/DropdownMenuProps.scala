@@ -39,3 +39,26 @@ trait DropdownMenuProps extends js.Object {
   def children(renderProps: DropdownMenuRenderProps): reactLib.reactMod.ReactNs.ReactElement[_]
 }
 
+object DropdownMenuProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[DropdownMenuRenderProps, reactLib.reactMod.ReactNs.ReactElement[_]],
+    alignEnd: js.UndefOr[scala.Boolean] = js.undefined,
+    flip: js.UndefOr[scala.Boolean] = js.undefined,
+    popperConfig: js.Object = null,
+    rootCloseEvent: java.lang.String = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    usePopper: js.UndefOr[scala.Boolean] = js.undefined
+  ): DropdownMenuProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd)
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
+    if (popperConfig != null) __obj.updateDynamic("popperConfig")(popperConfig)
+    if (rootCloseEvent != null) __obj.updateDynamic("rootCloseEvent")(rootCloseEvent)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(usePopper)) __obj.updateDynamic("usePopper")(usePopper)
+    __obj.asInstanceOf[DropdownMenuProps]
+  }
+}
+

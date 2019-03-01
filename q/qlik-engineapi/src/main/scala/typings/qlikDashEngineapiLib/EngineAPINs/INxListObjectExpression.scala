@@ -20,3 +20,13 @@ trait INxListObjectExpression extends js.Object {
   var qExpr: java.lang.String
 }
 
+object INxListObjectExpression {
+  @scala.inline
+  def apply(qExpr: java.lang.String, qError: INxLayoutErrors = null): INxListObjectExpression = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qExpr")(qExpr)
+    if (qError != null) __obj.updateDynamic("qError")(qError)
+    __obj.asInstanceOf[INxListObjectExpression]
+  }
+}
+

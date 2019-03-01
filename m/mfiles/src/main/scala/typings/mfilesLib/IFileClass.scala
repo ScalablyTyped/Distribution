@@ -20,3 +20,28 @@ trait IFileClass extends js.Object {
   ): scala.Unit
 }
 
+object IFileClass {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IFileClass],
+    DisplayName: java.lang.String,
+    DotAndExtension: java.lang.String,
+    Extension: java.lang.String,
+    FileClass: java.lang.String,
+    LoadByExtension: js.Function1[java.lang.String, scala.Unit],
+    LoadByFileClass: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    SetFileClassInfo: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit]
+  ): IFileClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("DisplayName")(DisplayName)
+    __obj.updateDynamic("DotAndExtension")(DotAndExtension)
+    __obj.updateDynamic("Extension")(Extension)
+    __obj.updateDynamic("FileClass")(FileClass)
+    __obj.updateDynamic("LoadByExtension")(LoadByExtension)
+    __obj.updateDynamic("LoadByFileClass")(LoadByFileClass)
+    __obj.updateDynamic("SetFileClassInfo")(SetFileClassInfo)
+    __obj.asInstanceOf[IFileClass]
+  }
+}
+

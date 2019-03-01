@@ -42,3 +42,28 @@ trait InventoryArgs extends js.Object {
   val schedule: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FrequencyInput]
 }
 
+object InventoryArgs {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    destination: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketAnonAccountIdBucketArn],
+    includedObjectVersions: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    schedule: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FrequencyInput],
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    filter: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_PrefixInputString] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    optionalFields: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): InventoryArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    __obj.updateDynamic("includedObjectVersions")(includedObjectVersions.asInstanceOf[js.Any])
+    __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (optionalFields != null) __obj.updateDynamic("optionalFields")(optionalFields.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InventoryArgs]
+  }
+}
+

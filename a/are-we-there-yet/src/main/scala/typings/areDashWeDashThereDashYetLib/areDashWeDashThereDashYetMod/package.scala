@@ -13,5 +13,4 @@ package object areDashWeDashThereDashYetMod {
     /* tracker */ TrackerObject, 
     scala.Unit
   ]
-  type TrackerObject = Tracker | TrackerGroup | TrackerStream
 }

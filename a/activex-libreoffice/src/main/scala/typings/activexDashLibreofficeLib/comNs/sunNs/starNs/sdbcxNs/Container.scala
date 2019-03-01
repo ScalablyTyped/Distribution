@@ -25,3 +25,54 @@ trait Container
      with XAppend
      with XDrop
 
+object Container {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    addRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit],
+    appendByDescriptor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit],
+    createDataDescriptor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    dropByIndex: js.Function1[scala.Double, scala.Unit],
+    dropByName: js.Function1[java.lang.String, scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    refresh: js.Function0[scala.Unit],
+    release: js.Function0[scala.Unit],
+    removeRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit]
+  ): Container = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("ElementNames")(ElementNames)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addRefreshListener")(addRefreshListener)
+    __obj.updateDynamic("appendByDescriptor")(appendByDescriptor)
+    __obj.updateDynamic("createDataDescriptor")(createDataDescriptor)
+    __obj.updateDynamic("createEnumeration")(createEnumeration)
+    __obj.updateDynamic("dropByIndex")(dropByIndex)
+    __obj.updateDynamic("dropByName")(dropByName)
+    __obj.updateDynamic("getByIndex")(getByIndex)
+    __obj.updateDynamic("getByName")(getByName)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getElementNames")(getElementNames)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("hasByName")(hasByName)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("refresh")(refresh)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeRefreshListener")(removeRefreshListener)
+    __obj.asInstanceOf[Container]
+  }
+}
+

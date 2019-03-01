@@ -62,3 +62,34 @@ trait Mode[T] extends js.Object {
   ] = js.undefined
 }
 
+object Mode {
+  @scala.inline
+  def apply[T](
+    blankLine: js.Function1[/* state */ T, scala.Unit] = null,
+    blockCommentEnd: java.lang.String = null,
+    blockCommentLead: java.lang.String = null,
+    blockCommentStart: java.lang.String = null,
+    copyState: js.Function1[/* state */ T, T] = null,
+    electricChars: java.lang.String = null,
+    electricinput: stdLib.RegExp = null,
+    indent: js.Function2[/* state */ T, /* textAfter */ java.lang.String, scala.Double] = null,
+    lineComment: java.lang.String = null,
+    startState: js.Function0[T] = null,
+    token: js.Function2[/* stream */ StringStream, /* state */ T, java.lang.String | scala.Null] = null
+  ): Mode[T] = {
+    val __obj = js.Dynamic.literal()
+    if (blankLine != null) __obj.updateDynamic("blankLine")(blankLine)
+    if (blockCommentEnd != null) __obj.updateDynamic("blockCommentEnd")(blockCommentEnd)
+    if (blockCommentLead != null) __obj.updateDynamic("blockCommentLead")(blockCommentLead)
+    if (blockCommentStart != null) __obj.updateDynamic("blockCommentStart")(blockCommentStart)
+    if (copyState != null) __obj.updateDynamic("copyState")(copyState)
+    if (electricChars != null) __obj.updateDynamic("electricChars")(electricChars)
+    if (electricinput != null) __obj.updateDynamic("electricinput")(electricinput)
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (lineComment != null) __obj.updateDynamic("lineComment")(lineComment)
+    if (startState != null) __obj.updateDynamic("startState")(startState)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[Mode[T]]
+  }
+}
+

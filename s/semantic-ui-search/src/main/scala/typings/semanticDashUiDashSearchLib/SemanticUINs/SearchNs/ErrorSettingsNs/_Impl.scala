@@ -36,3 +36,26 @@ trait _Impl extends js.Object {
   var source: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    logging: java.lang.String,
+    maxResults: java.lang.String,
+    method: java.lang.String,
+    noResults: java.lang.String,
+    noTemplate: java.lang.String,
+    serverError: java.lang.String,
+    source: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("logging")(logging)
+    __obj.updateDynamic("maxResults")(maxResults)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("noResults")(noResults)
+    __obj.updateDynamic("noTemplate")(noTemplate)
+    __obj.updateDynamic("serverError")(serverError)
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

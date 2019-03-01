@@ -40,3 +40,26 @@ trait ServiceAccountKey extends js.Object {
   var validBeforeTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServiceAccountKey {
+  @scala.inline
+  def apply(
+    keyAlgorithm: java.lang.String = null,
+    name: java.lang.String = null,
+    privateKeyData: java.lang.String = null,
+    privateKeyType: java.lang.String = null,
+    publicKeyData: java.lang.String = null,
+    validAfterTime: java.lang.String = null,
+    validBeforeTime: java.lang.String = null
+  ): ServiceAccountKey = {
+    val __obj = js.Dynamic.literal()
+    if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (privateKeyData != null) __obj.updateDynamic("privateKeyData")(privateKeyData)
+    if (privateKeyType != null) __obj.updateDynamic("privateKeyType")(privateKeyType)
+    if (publicKeyData != null) __obj.updateDynamic("publicKeyData")(publicKeyData)
+    if (validAfterTime != null) __obj.updateDynamic("validAfterTime")(validAfterTime)
+    if (validBeforeTime != null) __obj.updateDynamic("validBeforeTime")(validBeforeTime)
+    __obj.asInstanceOf[ServiceAccountKey]
+  }
+}
+

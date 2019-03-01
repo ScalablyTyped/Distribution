@@ -11,3 +11,18 @@ trait Anon_X extends js.Object {
   var z: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object Anon_X {
+  @scala.inline
+  def apply(
+    x: scala.Double | java.lang.String = null,
+    y: scala.Double | java.lang.String = null,
+    z: scala.Double | java.lang.String = null
+  ): Anon_X = {
+    val __obj = js.Dynamic.literal()
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_X]
+  }
+}
+

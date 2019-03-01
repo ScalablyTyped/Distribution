@@ -58,3 +58,40 @@ trait ISvg
   var setHighPrecision: js.UndefOr[js.Function1[/* highPrecision */ js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
 }
 
+object ISvg {
+  @scala.inline
+  def apply(
+    ISurface: senchaUnderscoreTouchLib.ExtNs.drawNs.ISurface = null,
+    clear: js.Function0[scala.Unit] = null,
+    clearTransform: js.Function0[scala.Unit] = null,
+    createSvgNode: js.Function1[/* type */ js.UndefOr[java.lang.String], _] = null,
+    destroy: js.Function3[
+      /* path */ js.UndefOr[js.Any], 
+      /* matrix */ js.UndefOr[js.Any], 
+      /* band */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    getHighPrecision: js.Function0[scala.Boolean] = null,
+    highPrecision: js.UndefOr[scala.Boolean] = js.undefined,
+    remove: js.Function2[/* sprite */ js.UndefOr[js.Any], /* destroySprite */ js.UndefOr[js.Any], scala.Unit] = null,
+    renderSprite: js.Function1[
+      /* sprite */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite], 
+      scala.Boolean
+    ] = null,
+    setHighPrecision: js.Function1[/* highPrecision */ js.UndefOr[scala.Boolean], scala.Unit] = null
+  ): ISvg = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ISurface)
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (clearTransform != null) __obj.updateDynamic("clearTransform")(clearTransform)
+    if (createSvgNode != null) __obj.updateDynamic("createSvgNode")(createSvgNode)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (getHighPrecision != null) __obj.updateDynamic("getHighPrecision")(getHighPrecision)
+    if (!js.isUndefined(highPrecision)) __obj.updateDynamic("highPrecision")(highPrecision)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (renderSprite != null) __obj.updateDynamic("renderSprite")(renderSprite)
+    if (setHighPrecision != null) __obj.updateDynamic("setHighPrecision")(setHighPrecision)
+    __obj.asInstanceOf[ISvg]
+  }
+}
+

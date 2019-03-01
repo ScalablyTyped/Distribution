@@ -31,3 +31,26 @@ trait Report extends js.Object {
   var warnings: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Report {
+  @scala.inline
+  def apply(
+    averages: js.Array[java.lang.String] = null,
+    headers: js.Array[gapiDotClientDotAdexchangesellerLib.Anon_Currency] = null,
+    kind: java.lang.String = null,
+    rows: js.Array[js.Array[java.lang.String]] = null,
+    totalMatchedRows: java.lang.String = null,
+    totals: js.Array[java.lang.String] = null,
+    warnings: js.Array[java.lang.String] = null
+  ): Report = {
+    val __obj = js.Dynamic.literal()
+    if (averages != null) __obj.updateDynamic("averages")(averages)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (totalMatchedRows != null) __obj.updateDynamic("totalMatchedRows")(totalMatchedRows)
+    if (totals != null) __obj.updateDynamic("totals")(totals)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[Report]
+  }
+}
+

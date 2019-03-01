@@ -18,3 +18,22 @@ trait PrintJob extends js.Object {
   var title: java.lang.String
 }
 
+object PrintJob {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String,
+    document: stdLib.Blob,
+    printerId: java.lang.String,
+    ticket: js.Object,
+    title: java.lang.String
+  ): PrintJob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("document")(document)
+    __obj.updateDynamic("printerId")(printerId)
+    __obj.updateDynamic("ticket")(ticket)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[PrintJob]
+  }
+}
+

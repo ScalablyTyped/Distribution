@@ -22,3 +22,39 @@ trait MediaContent extends js.Object {
   var width: scala.Double
 }
 
+object MediaContent {
+  @scala.inline
+  def apply(
+    bitrate: scala.Double,
+    channels: java.lang.String,
+    duration: scala.Double,
+    expression: java.lang.String,
+    fileSize: scala.Double,
+    framerate: scala.Double,
+    height: scala.Double,
+    isDefault: scala.Boolean,
+    lang: java.lang.String,
+    medium: java.lang.String,
+    samplingrate: scala.Double,
+    `type`: java.lang.String,
+    url: java.lang.String,
+    width: scala.Double
+  ): MediaContent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bitrate")(bitrate)
+    __obj.updateDynamic("channels")(channels)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("expression")(expression)
+    __obj.updateDynamic("fileSize")(fileSize)
+    __obj.updateDynamic("framerate")(framerate)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("isDefault")(isDefault)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("medium")(medium)
+    __obj.updateDynamic("samplingrate")(samplingrate)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[MediaContent]
+  }
+}
+

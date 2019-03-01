@@ -24,3 +24,20 @@ trait AxisLineSettings extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AxisLineSettings {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    dashArray: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): AxisLineSettings = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AxisLineSettings]
+  }
+}
+

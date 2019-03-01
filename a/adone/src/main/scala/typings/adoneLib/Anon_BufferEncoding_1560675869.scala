@@ -9,3 +9,12 @@ trait Anon_BufferEncoding_1560675869 extends js.Object {
   var encoding: adoneLib.adoneLibStrings.buffer
 }
 
+object Anon_BufferEncoding_1560675869 {
+  @scala.inline
+  def apply(encoding: adoneLib.adoneLibStrings.buffer): Anon_BufferEncoding_1560675869 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encoding")(encoding)
+    __obj.asInstanceOf[Anon_BufferEncoding_1560675869]
+  }
+}
+

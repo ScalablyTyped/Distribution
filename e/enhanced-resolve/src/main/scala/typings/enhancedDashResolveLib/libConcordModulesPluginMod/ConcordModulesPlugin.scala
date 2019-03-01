@@ -13,3 +13,20 @@ trait ConcordModulesPlugin extends js.Object {
   def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
 }
 
+object ConcordModulesPlugin {
+  @scala.inline
+  def apply(
+    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    options: enhancedDashResolveLib.libConcordMod.Dictionary[_],
+    source: java.lang.String,
+    target: java.lang.String
+  ): ConcordModulesPlugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apply")(apply)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ConcordModulesPlugin]
+  }
+}
+

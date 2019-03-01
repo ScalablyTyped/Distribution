@@ -45,3 +45,26 @@ trait ScriptType extends js.Object {
   var update: js.UndefOr[js.Function1[/* dt */ scala.Double, scala.Unit]] = js.undefined
 }
 
+object ScriptType {
+  @scala.inline
+  def apply(
+    attributes: org.scalablytyped.runtime.StringDictionary[playcanvasLib.pcNs.AttributesArgs] = null,
+    initialize: js.Function0[scala.Unit] = null,
+    name: java.lang.String = null,
+    postInitialize: js.Function0[scala.Unit] = null,
+    postUpdate: js.Function0[scala.Unit] = null,
+    swap: js.Function0[scala.Unit] = null,
+    update: js.Function1[/* dt */ scala.Double, scala.Unit] = null
+  ): ScriptType = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (postInitialize != null) __obj.updateDynamic("postInitialize")(postInitialize)
+    if (postUpdate != null) __obj.updateDynamic("postUpdate")(postUpdate)
+    if (swap != null) __obj.updateDynamic("swap")(swap)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ScriptType]
+  }
+}
+

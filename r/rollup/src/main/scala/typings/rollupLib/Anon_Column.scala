@@ -11,3 +11,14 @@ trait Anon_Column extends js.Object {
   var line: scala.Double
 }
 
+object Anon_Column {
+  @scala.inline
+  def apply(column: scala.Double, line: scala.Double, file: java.lang.String = null): Anon_Column = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("line")(line)
+    if (file != null) __obj.updateDynamic("file")(file)
+    __obj.asInstanceOf[Anon_Column]
+  }
+}
+

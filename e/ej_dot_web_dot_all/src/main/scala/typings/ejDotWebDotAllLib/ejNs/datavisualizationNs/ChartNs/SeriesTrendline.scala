@@ -61,3 +61,40 @@ trait SeriesTrendline extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SeriesTrendline {
+  @scala.inline
+  def apply(
+    backwardForecast: scala.Int | scala.Double = null,
+    dashArray: java.lang.String = null,
+    fill: java.lang.String = null,
+    forwardForecast: scala.Int | scala.Double = null,
+    intercept: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    period: scala.Int | scala.Double = null,
+    polynomialOrder: scala.Int | scala.Double = null,
+    tooltip: SeriesTrendlinesTooltip = null,
+    `type`: java.lang.String = null,
+    visibility: js.UndefOr[scala.Boolean] = js.undefined,
+    visibleOnLegend: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): SeriesTrendline = {
+    val __obj = js.Dynamic.literal()
+    if (backwardForecast != null) __obj.updateDynamic("backwardForecast")(backwardForecast.asInstanceOf[js.Any])
+    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (forwardForecast != null) __obj.updateDynamic("forwardForecast")(forwardForecast.asInstanceOf[js.Any])
+    if (intercept != null) __obj.updateDynamic("intercept")(intercept.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (polynomialOrder != null) __obj.updateDynamic("polynomialOrder")(polynomialOrder.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility)
+    if (visibleOnLegend != null) __obj.updateDynamic("visibleOnLegend")(visibleOnLegend)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesTrendline]
+  }
+}
+

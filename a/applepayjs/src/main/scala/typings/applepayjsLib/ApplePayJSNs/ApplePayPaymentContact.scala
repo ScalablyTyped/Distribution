@@ -67,3 +67,40 @@ trait ApplePayPaymentContact extends js.Object {
   var subLocality: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApplePayPaymentContact {
+  @scala.inline
+  def apply(
+    addressLines: js.Array[java.lang.String] = null,
+    administrativeArea: java.lang.String = null,
+    country: java.lang.String = null,
+    countryCode: java.lang.String = null,
+    emailAddress: java.lang.String = null,
+    familyName: java.lang.String = null,
+    givenName: java.lang.String = null,
+    locality: java.lang.String = null,
+    phoneNumber: java.lang.String = null,
+    phoneticFamilyName: java.lang.String = null,
+    phoneticGivenName: java.lang.String = null,
+    postalCode: java.lang.String = null,
+    subAdministrativeArea: java.lang.String = null,
+    subLocality: java.lang.String = null
+  ): ApplePayPaymentContact = {
+    val __obj = js.Dynamic.literal()
+    if (addressLines != null) __obj.updateDynamic("addressLines")(addressLines)
+    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName)
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName)
+    if (locality != null) __obj.updateDynamic("locality")(locality)
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (phoneticFamilyName != null) __obj.updateDynamic("phoneticFamilyName")(phoneticFamilyName)
+    if (phoneticGivenName != null) __obj.updateDynamic("phoneticGivenName")(phoneticGivenName)
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
+    if (subAdministrativeArea != null) __obj.updateDynamic("subAdministrativeArea")(subAdministrativeArea)
+    if (subLocality != null) __obj.updateDynamic("subLocality")(subLocality)
+    __obj.asInstanceOf[ApplePayPaymentContact]
+  }
+}
+

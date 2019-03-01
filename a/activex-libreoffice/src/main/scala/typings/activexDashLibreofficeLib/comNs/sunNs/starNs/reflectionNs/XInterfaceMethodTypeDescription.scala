@@ -44,3 +44,48 @@ trait XInterfaceMethodTypeDescription extends XInterfaceMemberTypeDescription {
   def isOneway(): scala.Boolean
 }
 
+object XInterfaceMethodTypeDescription {
+  @scala.inline
+  def apply(
+    Exceptions: activexDashInteropLib.SafeArray[XTypeDescription],
+    MemberName: java.lang.String,
+    Name: java.lang.String,
+    Parameters: activexDashInteropLib.SafeArray[XMethodParameter],
+    Position: scala.Double,
+    ReturnType: XTypeDescription,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getExceptions: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
+    getMemberName: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getParameters: js.Function0[activexDashInteropLib.SafeArray[XMethodParameter]],
+    getPosition: js.Function0[scala.Double],
+    getReturnType: js.Function0[XTypeDescription],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    isOneway: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInterfaceMethodTypeDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Exceptions")(Exceptions)
+    __obj.updateDynamic("MemberName")(MemberName)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Parameters")(Parameters)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("ReturnType")(ReturnType)
+    __obj.updateDynamic("TypeClass")(TypeClass)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getExceptions")(getExceptions)
+    __obj.updateDynamic("getMemberName")(getMemberName)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getParameters")(getParameters)
+    __obj.updateDynamic("getPosition")(getPosition)
+    __obj.updateDynamic("getReturnType")(getReturnType)
+    __obj.updateDynamic("getTypeClass")(getTypeClass)
+    __obj.updateDynamic("isOneway")(isOneway)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XInterfaceMethodTypeDescription]
+  }
+}
+

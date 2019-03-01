@@ -17,3 +17,30 @@ trait Anon_Breaks extends js.Object {
   var xhtmlOut: scala.Boolean
 }
 
+object Anon_Breaks {
+  @scala.inline
+  def apply(
+    breaks: scala.Boolean,
+    highlight: js.Any,
+    html: scala.Boolean,
+    langPrefix: java.lang.String,
+    linkify: scala.Boolean,
+    maxNesting: scala.Double,
+    quotes: java.lang.String,
+    typographer: scala.Boolean,
+    xhtmlOut: scala.Boolean
+  ): Anon_Breaks = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("breaks")(breaks)
+    __obj.updateDynamic("highlight")(highlight)
+    __obj.updateDynamic("html")(html)
+    __obj.updateDynamic("langPrefix")(langPrefix)
+    __obj.updateDynamic("linkify")(linkify)
+    __obj.updateDynamic("maxNesting")(maxNesting)
+    __obj.updateDynamic("quotes")(quotes)
+    __obj.updateDynamic("typographer")(typographer)
+    __obj.updateDynamic("xhtmlOut")(xhtmlOut)
+    __obj.asInstanceOf[Anon_Breaks]
+  }
+}
+

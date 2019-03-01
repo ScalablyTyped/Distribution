@@ -13,3 +13,12 @@ trait IValueGradient extends js.Object {
   var gradient: scala.Double
 }
 
+object IValueGradient {
+  @scala.inline
+  def apply(gradient: scala.Double): IValueGradient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gradient")(gradient)
+    __obj.asInstanceOf[IValueGradient]
+  }
+}
+

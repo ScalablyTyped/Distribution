@@ -95,3 +95,78 @@ trait Options extends js.Object {
   var writeToDisk: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    apply: js.Function1[
+      /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
+      scala.Unit
+    ] = null,
+    assets: js.Object = null,
+    customize: js.Function4[
+      /* entry */ Entry, 
+      /* original */ AnyObject, 
+      /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
+      /* asset */ AnyObject, 
+      Entry | webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestLibNumbers.`false`
+    ] = null,
+    done: js.Function2[
+      /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
+      /* stats */ AnyObject, 
+      scala.Unit
+    ] = null,
+    entrypoints: js.UndefOr[scala.Boolean] = js.undefined,
+    entrypointsKey: java.lang.String | webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestLibNumbers.`false` = null,
+    fileExtRegex: stdLib.RegExp | webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestLibNumbers.`false` = null,
+    integrity: js.UndefOr[scala.Boolean] = js.undefined,
+    integrityHashes: js.Array[java.lang.String] = null,
+    integrityPropertyName: java.lang.String = null,
+    merge: scala.Boolean | webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestLibStrings.customize = null,
+    output: java.lang.String = null,
+    publicPath: java.lang.String | scala.Boolean | (js.Function2[
+      /* filename */ java.lang.String, 
+      /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
+      java.lang.String
+    ]) = null,
+    replacer: js.Array[java.lang.String] | (js.Function2[
+      /* key */ java.lang.String, 
+      /* value */ java.lang.String, 
+      js.UndefOr[scala.Double | java.lang.String | scala.Boolean | scala.Null | js.Object]
+    ]) = null,
+    sortManifest: scala.Boolean | (js.ThisFunction2[
+      /* this */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
+      /* a */ java.lang.String, 
+      /* b */ java.lang.String, 
+      scala.Double
+    ]) = null,
+    space: scala.Int | scala.Double = null,
+    transform: js.Function2[
+      /* assets */ AnyObject, 
+      /* manifest */ webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifest, 
+      _
+    ] = null,
+    writeToDisk: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (apply != null) __obj.updateDynamic("apply")(apply)
+    if (assets != null) __obj.updateDynamic("assets")(assets)
+    if (customize != null) __obj.updateDynamic("customize")(customize)
+    if (done != null) __obj.updateDynamic("done")(done)
+    if (!js.isUndefined(entrypoints)) __obj.updateDynamic("entrypoints")(entrypoints)
+    if (entrypointsKey != null) __obj.updateDynamic("entrypointsKey")(entrypointsKey.asInstanceOf[js.Any])
+    if (fileExtRegex != null) __obj.updateDynamic("fileExtRegex")(fileExtRegex.asInstanceOf[js.Any])
+    if (!js.isUndefined(integrity)) __obj.updateDynamic("integrity")(integrity)
+    if (integrityHashes != null) __obj.updateDynamic("integrityHashes")(integrityHashes)
+    if (integrityPropertyName != null) __obj.updateDynamic("integrityPropertyName")(integrityPropertyName)
+    if (merge != null) __obj.updateDynamic("merge")(merge.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
+    if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
+    if (sortManifest != null) __obj.updateDynamic("sortManifest")(sortManifest.asInstanceOf[js.Any])
+    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (!js.isUndefined(writeToDisk)) __obj.updateDynamic("writeToDisk")(writeToDisk)
+    __obj.asInstanceOf[Options]
+  }
+}
+

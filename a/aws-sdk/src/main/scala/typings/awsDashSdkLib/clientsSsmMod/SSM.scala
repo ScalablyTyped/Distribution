@@ -326,7 +326,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a resource data sync configuration to a single bucket in Amazon S3. This is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data to the Amazon S3 bucket. To check the status of the sync, use the ListResourceDataSync. By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy. To view an example of a restrictive Amazon S3 bucket policy for Resource Data Sync, see Create a Resource Data Sync for Inventory in the AWS Systems Manager User Guide.
+    * Creates a resource data sync configuration to a single bucket in Amazon S3. This is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data to the Amazon S3 bucket. To check the status of the sync, use the ListResourceDataSync. By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide.
     */
   def createResourceDataSync(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.CreateResourceDataSyncResult, 
@@ -343,7 +343,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a resource data sync configuration to a single bucket in Amazon S3. This is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data to the Amazon S3 bucket. To check the status of the sync, use the ListResourceDataSync. By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy. To view an example of a restrictive Amazon S3 bucket policy for Resource Data Sync, see Create a Resource Data Sync for Inventory in the AWS Systems Manager User Guide.
+    * Creates a resource data sync configuration to a single bucket in Amazon S3. This is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data to the Amazon S3 bucket. To check the status of the sync, use the ListResourceDataSync. By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide.
     */
   def createResourceDataSync(params: awsDashSdkLib.clientsSsmMod.SSMNs.CreateResourceDataSyncRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.CreateResourceDataSyncResult, 

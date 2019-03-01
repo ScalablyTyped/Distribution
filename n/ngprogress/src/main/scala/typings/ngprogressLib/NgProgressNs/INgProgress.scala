@@ -16,3 +16,28 @@ trait INgProgress extends js.Object {
   def stop(): scala.Unit
 }
 
+object INgProgress {
+  @scala.inline
+  def apply(
+    color: js.Function1[java.lang.String, scala.Unit],
+    complete: js.Function0[scala.Unit],
+    height: js.Function1[java.lang.String, scala.Unit],
+    reset: js.Function0[scala.Unit],
+    set: js.Function1[scala.Double, scala.Unit],
+    start: js.Function0[scala.Unit],
+    status: js.Function0[scala.Double],
+    stop: js.Function0[scala.Unit]
+  ): INgProgress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[INgProgress]
+  }
+}
+

@@ -12,3 +12,12 @@ trait ServiceMethodSettings extends js.Object {
   var initialize: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServiceMethodSettings {
+  @scala.inline
+  def apply(initialize: java.lang.String = null): ServiceMethodSettings = {
+    val __obj = js.Dynamic.literal()
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    __obj.asInstanceOf[ServiceMethodSettings]
+  }
+}
+

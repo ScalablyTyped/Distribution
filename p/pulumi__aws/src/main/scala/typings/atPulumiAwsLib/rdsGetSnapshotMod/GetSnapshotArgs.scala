@@ -38,3 +38,24 @@ trait GetSnapshotArgs extends js.Object {
   val snapshotType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetSnapshotArgs {
+  @scala.inline
+  def apply(
+    dbInstanceIdentifier: java.lang.String = null,
+    dbSnapshotIdentifier: java.lang.String = null,
+    includePublic: js.UndefOr[scala.Boolean] = js.undefined,
+    includeShared: js.UndefOr[scala.Boolean] = js.undefined,
+    mostRecent: js.UndefOr[scala.Boolean] = js.undefined,
+    snapshotType: java.lang.String = null
+  ): GetSnapshotArgs = {
+    val __obj = js.Dynamic.literal()
+    if (dbInstanceIdentifier != null) __obj.updateDynamic("dbInstanceIdentifier")(dbInstanceIdentifier)
+    if (dbSnapshotIdentifier != null) __obj.updateDynamic("dbSnapshotIdentifier")(dbSnapshotIdentifier)
+    if (!js.isUndefined(includePublic)) __obj.updateDynamic("includePublic")(includePublic)
+    if (!js.isUndefined(includeShared)) __obj.updateDynamic("includeShared")(includeShared)
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
+    if (snapshotType != null) __obj.updateDynamic("snapshotType")(snapshotType)
+    __obj.asInstanceOf[GetSnapshotArgs]
+  }
+}
+

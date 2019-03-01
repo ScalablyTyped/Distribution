@@ -19,3 +19,25 @@ trait contextDefinition extends js.Object {
   var widgets: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
 }
 
+object contextDefinition {
+  @scala.inline
+  def apply(
+    cssSelector: java.lang.String = null,
+    priority: scala.Int | scala.Double = null,
+    refresh: js.Function3[
+      /* editor */ ckeditorLib.CKEDITORNs.editor, 
+      /* path */ ckeditorLib.CKEDITORNs.domNs.elementPath, 
+      /* selection */ ckeditorLib.CKEDITORNs.domNs.selection, 
+      ckeditorLib.CKEDITORNs.domNs.element
+    ] = null,
+    widgets: js.Array[java.lang.String] | java.lang.String = null
+  ): contextDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (cssSelector != null) __obj.updateDynamic("cssSelector")(cssSelector)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (refresh != null) __obj.updateDynamic("refresh")(refresh)
+    if (widgets != null) __obj.updateDynamic("widgets")(widgets.asInstanceOf[js.Any])
+    __obj.asInstanceOf[contextDefinition]
+  }
+}
+

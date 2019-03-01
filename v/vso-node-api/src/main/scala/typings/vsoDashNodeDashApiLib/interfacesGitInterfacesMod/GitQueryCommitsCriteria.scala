@@ -74,3 +74,44 @@ trait GitQueryCommitsCriteria extends js.Object {
   var user: java.lang.String
 }
 
+object GitQueryCommitsCriteria {
+  @scala.inline
+  def apply(
+    $skip: scala.Double,
+    $top: scala.Double,
+    author: java.lang.String,
+    compareVersion: GitVersionDescriptor,
+    excludeDeletes: scala.Boolean,
+    fromCommitId: java.lang.String,
+    fromDate: java.lang.String,
+    historyMode: GitHistoryMode,
+    ids: js.Array[java.lang.String],
+    includeLinks: scala.Boolean,
+    includeWorkItems: scala.Boolean,
+    itemPath: java.lang.String,
+    itemVersion: GitVersionDescriptor,
+    toCommitId: java.lang.String,
+    toDate: java.lang.String,
+    user: java.lang.String
+  ): GitQueryCommitsCriteria = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$skip")($skip)
+    __obj.updateDynamic("$top")($top)
+    __obj.updateDynamic("author")(author)
+    __obj.updateDynamic("compareVersion")(compareVersion)
+    __obj.updateDynamic("excludeDeletes")(excludeDeletes)
+    __obj.updateDynamic("fromCommitId")(fromCommitId)
+    __obj.updateDynamic("fromDate")(fromDate)
+    __obj.updateDynamic("historyMode")(historyMode)
+    __obj.updateDynamic("ids")(ids)
+    __obj.updateDynamic("includeLinks")(includeLinks)
+    __obj.updateDynamic("includeWorkItems")(includeWorkItems)
+    __obj.updateDynamic("itemPath")(itemPath)
+    __obj.updateDynamic("itemVersion")(itemVersion)
+    __obj.updateDynamic("toCommitId")(toCommitId)
+    __obj.updateDynamic("toDate")(toDate)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[GitQueryCommitsCriteria]
+  }
+}
+

@@ -11,3 +11,18 @@ trait FormTriggerBuilder extends js.Object {
   def onOpen(): FormTriggerBuilder
 }
 
+object FormTriggerBuilder {
+  @scala.inline
+  def apply(
+    create: js.Function0[Trigger],
+    onFormSubmit: js.Function0[FormTriggerBuilder],
+    onOpen: js.Function0[FormTriggerBuilder]
+  ): FormTriggerBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("onFormSubmit")(onFormSubmit)
+    __obj.updateDynamic("onOpen")(onOpen)
+    __obj.asInstanceOf[FormTriggerBuilder]
+  }
+}
+

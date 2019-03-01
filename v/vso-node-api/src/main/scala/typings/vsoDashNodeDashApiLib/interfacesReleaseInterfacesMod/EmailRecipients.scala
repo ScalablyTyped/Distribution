@@ -10,3 +10,13 @@ trait EmailRecipients extends js.Object {
   var tfsIds: js.Array[java.lang.String]
 }
 
+object EmailRecipients {
+  @scala.inline
+  def apply(emailAddresses: js.Array[java.lang.String], tfsIds: js.Array[java.lang.String]): EmailRecipients = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("emailAddresses")(emailAddresses)
+    __obj.updateDynamic("tfsIds")(tfsIds)
+    __obj.asInstanceOf[EmailRecipients]
+  }
+}
+

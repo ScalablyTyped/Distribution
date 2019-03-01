@@ -41,3 +41,57 @@ trait RoutersResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object RoutersResource {
+  @scala.inline
+  def apply(
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RouterAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRouter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Router]
+    ],
+    getRouterStatus: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRouter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RouterStatusResponse]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RouterList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    preview: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRouter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RoutersPreviewResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): RoutersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getRouterStatus")(getRouterStatus)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("preview")(preview)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[RoutersResource]
+  }
+}
+

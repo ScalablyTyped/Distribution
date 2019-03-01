@@ -14,3 +14,18 @@ trait TurnBasedMatchModification extends js.Object {
   var participantId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TurnBasedMatchModification {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    modifiedTimestampMillis: java.lang.String = null,
+    participantId: java.lang.String = null
+  ): TurnBasedMatchModification = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (modifiedTimestampMillis != null) __obj.updateDynamic("modifiedTimestampMillis")(modifiedTimestampMillis)
+    if (participantId != null) __obj.updateDynamic("participantId")(participantId)
+    __obj.asInstanceOf[TurnBasedMatchModification]
+  }
+}
+

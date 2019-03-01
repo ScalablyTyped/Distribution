@@ -11,3 +11,22 @@ trait WinRTError
   var number: scala.Double
 }
 
+object WinRTError {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    message: java.lang.String,
+    name: java.lang.String,
+    number: scala.Double,
+    stack: java.lang.String = null
+  ): WinRTError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("number")(number)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[WinRTError]
+  }
+}
+

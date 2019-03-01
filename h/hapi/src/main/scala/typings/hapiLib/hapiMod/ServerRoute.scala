@@ -38,3 +38,24 @@ trait ServerRoute extends js.Object {
   var vhost: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object ServerRoute {
+  @scala.inline
+  def apply(
+    method: hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL | js.Array[hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL] | java.lang.String | js.Array[java.lang.String],
+    path: java.lang.String,
+    handler: hapiLib.hapiMod.LifecycleNs.Method | HandlerDecorations = null,
+    options: RouteOptions | (js.Function1[/* server */ Server, RouteOptions]) = null,
+    rules: js.Object = null,
+    vhost: java.lang.String | js.Array[java.lang.String] = null
+  ): ServerRoute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    __obj.updateDynamic("path")(path)
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerRoute]
+  }
+}
+

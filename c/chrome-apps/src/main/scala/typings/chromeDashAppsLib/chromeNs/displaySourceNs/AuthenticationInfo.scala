@@ -26,3 +26,23 @@ trait AuthenticationInfo extends js.Object {
   ] = js.undefined
 }
 
+object AuthenticationInfo {
+  @scala.inline
+  def apply(
+    data: java.lang.String = null,
+    method: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_PBC, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PBC[keyof chrome-apps.Anon_PBC] */ js.Any
+      ]
+    ] = null
+  ): AuthenticationInfo = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthenticationInfo]
+  }
+}
+

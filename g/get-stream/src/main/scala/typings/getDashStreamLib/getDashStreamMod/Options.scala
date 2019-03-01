@@ -19,3 +19,16 @@ trait Options extends js.Object {
   var maxBuffer: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    encoding: nodeLib.BufferEncoding | getDashStreamLib.getDashStreamLibStrings.buffer = null,
+    maxBuffer: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -5,7 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NavigationPopToTopAction extends NavigationPopToTopActionPayload {
+trait NavigationPopToTopAction
+  extends NavigationStackAction
+     with NavigationPopToTopActionPayload {
   var `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/POP_TO_TOP`
+}
+
+object NavigationPopToTopAction {
+  @scala.inline
+  def apply(
+    `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/POP_TO_TOP`,
+    immediate: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null
+  ): NavigationPopToTopAction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[NavigationPopToTopAction]
+  }
 }
 

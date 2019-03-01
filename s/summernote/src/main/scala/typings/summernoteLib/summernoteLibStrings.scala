@@ -10,19 +10,25 @@ object summernoteLibStrings {
   sealed trait backColor extends js.Object
   
   @js.native
-  sealed trait blockquote extends js.Object
+  sealed trait blockquote
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.styleTagsOptions
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait bold
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverAirOptionsFont
+       with summernoteLib.summernoteMod.Global.SummernoteNs.toolbarStyleGroupOptions
   
   @js.native
-  sealed trait clear extends js.Object
+  sealed trait clear
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverAirOptionsFont
+       with summernoteLib.summernoteMod.Global.SummernoteNs.toolbarStyleGroupOptions
   
   @js.native
   sealed trait code extends js.Object
   
   @js.native
-  sealed trait codeview extends js.Object
+  sealed trait codeview
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.toolbarViewGroupOptions
   
   @js.native
   sealed trait color extends js.Object
@@ -127,13 +133,16 @@ object summernoteLibStrings {
   sealed trait float extends js.Object
   
   @js.native
-  sealed trait floatLeft extends js.Object
+  sealed trait floatLeft
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverImageOptionsFloat
   
   @js.native
-  sealed trait floatNone extends js.Object
+  sealed trait floatNone
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverImageOptionsFloat
   
   @js.native
-  sealed trait floatRight extends js.Object
+  sealed trait floatRight
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverImageOptionsFloat
   
   @js.native
   sealed trait focus extends js.Object
@@ -175,25 +184,32 @@ object summernoteLibStrings {
   sealed trait formatPara extends js.Object
   
   @js.native
-  sealed trait fullscreen extends js.Object
+  sealed trait fullscreen
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.toolbarViewGroupOptions
   
   @js.native
-  sealed trait h1 extends js.Object
+  sealed trait h1
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.styleTagsOptions
   
   @js.native
-  sealed trait h2 extends js.Object
+  sealed trait h2
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.styleTagsOptions
   
   @js.native
-  sealed trait h3 extends js.Object
+  sealed trait h3
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.styleTagsOptions
   
   @js.native
-  sealed trait h4 extends js.Object
+  sealed trait h4
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.styleTagsOptions
   
   @js.native
-  sealed trait h5 extends js.Object
+  sealed trait h5
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.styleTagsOptions
   
   @js.native
-  sealed trait h6 extends js.Object
+  sealed trait h6
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.styleTagsOptions
   
   @js.native
   sealed trait height extends js.Object
@@ -202,16 +218,20 @@ object summernoteLibStrings {
   sealed trait help extends js.Object
   
   @js.native
-  sealed trait hr extends js.Object
+  sealed trait hr
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.toolbarInsertGroupOptions
   
   @js.native
-  sealed trait imageSize100 extends js.Object
+  sealed trait imageSize100
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverImageOptionsImagesize
   
   @js.native
-  sealed trait imageSize25 extends js.Object
+  sealed trait imageSize25
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverImageOptionsImagesize
   
   @js.native
-  sealed trait imageSize50 extends js.Object
+  sealed trait imageSize50
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverImageOptionsImagesize
   
   @js.native
   sealed trait imagesize extends js.Object
@@ -244,7 +264,8 @@ object summernoteLibStrings {
   sealed trait isEmpty extends js.Object
   
   @js.native
-  sealed trait italic extends js.Object
+  sealed trait italic
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.toolbarStyleGroupOptions
   
   @js.native
   sealed trait justifyCenter extends js.Object
@@ -259,34 +280,44 @@ object summernoteLibStrings {
   sealed trait justifyRight extends js.Object
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverAirOptionsInsert
+       with summernoteLib.summernoteMod.Global.SummernoteNs.toolbarInsertGroupOptions
   
   @js.native
-  sealed trait linkDialogShow extends js.Object
+  sealed trait linkDialogShow
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverLinkLinkOptions
   
   @js.native
-  sealed trait ol extends js.Object
+  sealed trait ol
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.toolbarParaGroupOptions
   
   @js.native
   sealed trait outdent extends js.Object
   
   @js.native
-  sealed trait p extends js.Object
+  sealed trait p
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.styleTagsOptions
   
   @js.native
   sealed trait para extends js.Object
   
   @js.native
-  sealed trait paragraph extends js.Object
+  sealed trait paragraph
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverAirOptionsPara
+       with summernoteLib.summernoteMod.Global.SummernoteNs.toolbarParaGroupOptions
   
   @js.native
   sealed trait pasteHTML extends js.Object
   
   @js.native
-  sealed trait picture extends js.Object
+  sealed trait picture
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverAirOptionsInsert
+       with summernoteLib.summernoteMod.Global.SummernoteNs.toolbarInsertGroupOptions
   
   @js.native
-  sealed trait pre extends js.Object
+  sealed trait pre
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.styleTagsOptions
   
   @js.native
   sealed trait redo extends js.Object
@@ -310,31 +341,40 @@ object summernoteLibStrings {
   sealed trait saveRange extends js.Object
   
   @js.native
-  sealed trait strikethrough extends js.Object
+  sealed trait strikethrough
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.toolbarFontGroupOptions
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait style
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.toolbarStyleGroupOptions
   
   @js.native
-  sealed trait subscript extends js.Object
+  sealed trait subscript
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.toolbarFontGroupOptions
   
   @js.native
-  sealed trait superscript extends js.Object
+  sealed trait superscript
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.toolbarFontGroupOptions
   
   @js.native
   sealed trait table extends js.Object
   
   @js.native
-  sealed trait ul extends js.Object
+  sealed trait ul
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverAirOptionsPara
+       with summernoteLib.summernoteMod.Global.SummernoteNs.toolbarParaGroupOptions
   
   @js.native
-  sealed trait underline extends js.Object
+  sealed trait underline
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverAirOptionsFont
+       with summernoteLib.summernoteMod.Global.SummernoteNs.toolbarStyleGroupOptions
   
   @js.native
   sealed trait undo extends js.Object
   
   @js.native
-  sealed trait unlink extends js.Object
+  sealed trait unlink
+    extends summernoteLib.summernoteMod.Global.SummernoteNs.popoverLinkLinkOptions
   
   @js.native
   sealed trait view extends js.Object

@@ -44,3 +44,22 @@ trait InkAnalysisWordData extends js.Object {
   var wordAlternates: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object InkAnalysisWordData {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    languageId: java.lang.String = null,
+    line: InkAnalysisLineData = null,
+    strokePointers: js.Array[officeDashJsLib.OneNoteNs.InkStrokePointer] = null,
+    wordAlternates: js.Array[java.lang.String] = null
+  ): InkAnalysisWordData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (languageId != null) __obj.updateDynamic("languageId")(languageId)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (strokePointers != null) __obj.updateDynamic("strokePointers")(strokePointers)
+    if (wordAlternates != null) __obj.updateDynamic("wordAlternates")(wordAlternates)
+    __obj.asInstanceOf[InkAnalysisWordData]
+  }
+}
+

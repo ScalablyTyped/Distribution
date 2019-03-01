@@ -15,3 +15,14 @@ trait TimedTextPoint extends js.Object {
   var y: scala.Double
 }
 
+object TimedTextPoint {
+  @scala.inline
+  def apply(unit: TimedTextUnit, x: scala.Double, y: scala.Double): TimedTextPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("unit")(unit)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[TimedTextPoint]
+  }
+}
+

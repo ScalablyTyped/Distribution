@@ -33,3 +33,24 @@ trait Source extends RoomObject {
   var ticksToRegeneration: scala.Double
 }
 
+object Source {
+  @scala.inline
+  def apply(
+    energy: scala.Double,
+    energyCapacity: scala.Double,
+    id: java.lang.String,
+    pos: RoomPosition,
+    room: Room,
+    ticksToRegeneration: scala.Double
+  ): Source = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("energy")(energy)
+    __obj.updateDynamic("energyCapacity")(energyCapacity)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("pos")(pos)
+    __obj.updateDynamic("room")(room)
+    __obj.updateDynamic("ticksToRegeneration")(ticksToRegeneration)
+    __obj.asInstanceOf[Source]
+  }
+}
+

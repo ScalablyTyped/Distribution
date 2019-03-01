@@ -15,3 +15,22 @@ trait VerifyOptions extends js.Object {
   ] = js.undefined
 }
 
+object VerifyOptions {
+  @scala.inline
+  def apply(
+    message: openpgpLib.openpgpMod.messageNs.Message,
+    publicKeys: openpgpLib.openpgpMod.keyNs.Key | js.Array[openpgpLib.openpgpMod.keyNs.Key],
+    date: stdLib.Date = null,
+    signature: Signature = null,
+    streaming: openpgpLib.openpgpLibStrings.web | openpgpLib.openpgpLibStrings.node | openpgpLib.openpgpLibNumbers.`false` = null
+  ): VerifyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("publicKeys")(publicKeys.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (signature != null) __obj.updateDynamic("signature")(signature)
+    if (streaming != null) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VerifyOptions]
+  }
+}
+

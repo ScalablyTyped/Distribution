@@ -74,3 +74,82 @@ trait PhoneContact
   var workPhoneNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PhoneContact {
+  @scala.inline
+  def apply(
+    firstName: java.lang.String,
+    addressCity: java.lang.String = null,
+    addressCountry: java.lang.String = null,
+    addressPostalCode: java.lang.String = null,
+    addressState: java.lang.String = null,
+    addressStreet: java.lang.String = null,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    email: java.lang.String = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    homeAddressCity: java.lang.String = null,
+    homeAddressCountry: java.lang.String = null,
+    homeAddressPostalCode: java.lang.String = null,
+    homeAddressState: java.lang.String = null,
+    homeAddressStreet: java.lang.String = null,
+    homeFaxNumber: java.lang.String = null,
+    homePhoneNumber: java.lang.String = null,
+    hostNumber: java.lang.String = null,
+    lastName: java.lang.String = null,
+    middleName: java.lang.String = null,
+    mobilePhoneNumber: java.lang.String = null,
+    nickName: java.lang.String = null,
+    organization: java.lang.String = null,
+    photoFilePath: java.lang.String = null,
+    remark: java.lang.String = null,
+    success: js.Function1[js.Any, scala.Unit] = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null,
+    weChatNumber: java.lang.String = null,
+    workAddressCity: java.lang.String = null,
+    workAddressCountry: java.lang.String = null,
+    workAddressPostalCode: java.lang.String = null,
+    workAddressState: java.lang.String = null,
+    workAddressStreet: java.lang.String = null,
+    workFaxNumber: java.lang.String = null,
+    workPhoneNumber: java.lang.String = null
+  ): PhoneContact = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("firstName")(firstName)
+    if (addressCity != null) __obj.updateDynamic("addressCity")(addressCity)
+    if (addressCountry != null) __obj.updateDynamic("addressCountry")(addressCountry)
+    if (addressPostalCode != null) __obj.updateDynamic("addressPostalCode")(addressPostalCode)
+    if (addressState != null) __obj.updateDynamic("addressState")(addressState)
+    if (addressStreet != null) __obj.updateDynamic("addressStreet")(addressStreet)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (homeAddressCity != null) __obj.updateDynamic("homeAddressCity")(homeAddressCity)
+    if (homeAddressCountry != null) __obj.updateDynamic("homeAddressCountry")(homeAddressCountry)
+    if (homeAddressPostalCode != null) __obj.updateDynamic("homeAddressPostalCode")(homeAddressPostalCode)
+    if (homeAddressState != null) __obj.updateDynamic("homeAddressState")(homeAddressState)
+    if (homeAddressStreet != null) __obj.updateDynamic("homeAddressStreet")(homeAddressStreet)
+    if (homeFaxNumber != null) __obj.updateDynamic("homeFaxNumber")(homeFaxNumber)
+    if (homePhoneNumber != null) __obj.updateDynamic("homePhoneNumber")(homePhoneNumber)
+    if (hostNumber != null) __obj.updateDynamic("hostNumber")(hostNumber)
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
+    if (middleName != null) __obj.updateDynamic("middleName")(middleName)
+    if (mobilePhoneNumber != null) __obj.updateDynamic("mobilePhoneNumber")(mobilePhoneNumber)
+    if (nickName != null) __obj.updateDynamic("nickName")(nickName)
+    if (organization != null) __obj.updateDynamic("organization")(organization)
+    if (photoFilePath != null) __obj.updateDynamic("photoFilePath")(photoFilePath)
+    if (remark != null) __obj.updateDynamic("remark")(remark)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (weChatNumber != null) __obj.updateDynamic("weChatNumber")(weChatNumber)
+    if (workAddressCity != null) __obj.updateDynamic("workAddressCity")(workAddressCity)
+    if (workAddressCountry != null) __obj.updateDynamic("workAddressCountry")(workAddressCountry)
+    if (workAddressPostalCode != null) __obj.updateDynamic("workAddressPostalCode")(workAddressPostalCode)
+    if (workAddressState != null) __obj.updateDynamic("workAddressState")(workAddressState)
+    if (workAddressStreet != null) __obj.updateDynamic("workAddressStreet")(workAddressStreet)
+    if (workFaxNumber != null) __obj.updateDynamic("workFaxNumber")(workFaxNumber)
+    if (workPhoneNumber != null) __obj.updateDynamic("workPhoneNumber")(workPhoneNumber)
+    __obj.asInstanceOf[PhoneContact]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Anon_BufferFlushDelay extends js.Object {
   var trackExceptions: scala.Boolean
 }
 
+object Anon_BufferFlushDelay {
+  @scala.inline
+  def apply(
+    bufferFlushDelay: scala.Double,
+    developerMode: scala.Boolean,
+    optOut: scala.Boolean,
+    pageTracking: Anon_AutoBasePath,
+    trackExceptions: scala.Boolean
+  ): Anon_BufferFlushDelay = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bufferFlushDelay")(bufferFlushDelay)
+    __obj.updateDynamic("developerMode")(developerMode)
+    __obj.updateDynamic("optOut")(optOut)
+    __obj.updateDynamic("pageTracking")(pageTracking)
+    __obj.updateDynamic("trackExceptions")(trackExceptions)
+    __obj.asInstanceOf[Anon_BufferFlushDelay]
+  }
+}
+

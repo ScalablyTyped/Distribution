@@ -7,46 +7,46 @@ import scala.scalajs.js.annotation._
 
 object idyllLibStrings {
   @js.native
-  sealed trait APP_PATH extends js.Object
+  sealed trait APP_PATH extends PredefinedFile
   
   @js.native
-  sealed trait COMPONENT_DIRS extends js.Object
+  sealed trait COMPONENT_DIRS extends ComponentFiles
   
   @js.native
-  sealed trait CSS_INPUT_FILE extends js.Object
+  sealed trait CSS_INPUT_FILE extends PredefinedFile
   
   @js.native
-  sealed trait CSS_OUTPUT_FILE extends js.Object
+  sealed trait CSS_OUTPUT_FILE extends PredefinedFile
   
   @js.native
-  sealed trait DATA_DIR extends js.Object
+  sealed trait DATA_DIR extends PredefinedFile
   
   @js.native
-  sealed trait DEFAULT_COMPONENT_DIRS extends js.Object
+  sealed trait DEFAULT_COMPONENT_DIRS extends ComponentFiles
   
   @js.native
-  sealed trait HTML_OUTPUT_FILE extends js.Object
+  sealed trait HTML_OUTPUT_FILE extends PredefinedFile
   
   @js.native
-  sealed trait HTML_TEMPLATE_FILE extends js.Object
+  sealed trait HTML_TEMPLATE_FILE extends PredefinedFile
   
   @js.native
-  sealed trait IDYLL_INPUT_FILE extends js.Object
+  sealed trait IDYLL_INPUT_FILE extends PredefinedFile
   
   @js.native
-  sealed trait INPUT_DIR extends js.Object
+  sealed trait INPUT_DIR extends PredefinedFile
   
   @js.native
-  sealed trait JS_OUTPUT_FILE extends js.Object
+  sealed trait JS_OUTPUT_FILE extends PredefinedFile
   
   @js.native
-  sealed trait OUTPUT_DIR extends js.Object
+  sealed trait OUTPUT_DIR extends PredefinedFile
   
   @js.native
-  sealed trait PACKAGE_FILE extends js.Object
+  sealed trait PACKAGE_FILE extends PredefinedFile
   
   @js.native
-  sealed trait TMP_DIR extends js.Object
+  sealed trait TMP_DIR extends PredefinedFile
   
   @scala.inline
   def APP_PATH: APP_PATH = "APP_PATH".asInstanceOf[APP_PATH]

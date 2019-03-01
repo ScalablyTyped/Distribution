@@ -9,3 +9,13 @@ trait DomainsResult extends PaginatedResult {
   var Domains: js.Array[DomainBase]
 }
 
+object DomainsResult {
+  @scala.inline
+  def apply(Domains: js.Array[DomainBase], TotalCount: scala.Double): DomainsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Domains")(Domains)
+    __obj.updateDynamic("TotalCount")(TotalCount)
+    __obj.asInstanceOf[DomainsResult]
+  }
+}
+

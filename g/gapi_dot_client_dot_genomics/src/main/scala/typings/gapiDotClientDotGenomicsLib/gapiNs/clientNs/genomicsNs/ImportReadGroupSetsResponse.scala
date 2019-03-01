@@ -10,3 +10,12 @@ trait ImportReadGroupSetsResponse extends js.Object {
   var readGroupSetIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ImportReadGroupSetsResponse {
+  @scala.inline
+  def apply(readGroupSetIds: js.Array[java.lang.String] = null): ImportReadGroupSetsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (readGroupSetIds != null) __obj.updateDynamic("readGroupSetIds")(readGroupSetIds)
+    __obj.asInstanceOf[ImportReadGroupSetsResponse]
+  }
+}
+

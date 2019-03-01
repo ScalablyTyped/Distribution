@@ -30,3 +30,24 @@ trait Anon_Domain extends js.Object {
   var view: js.UndefOr[gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.TableReference] = js.undefined
 }
 
+object Anon_Domain {
+  @scala.inline
+  def apply(
+    domain: java.lang.String = null,
+    groupByEmail: java.lang.String = null,
+    role: java.lang.String = null,
+    specialGroup: java.lang.String = null,
+    userByEmail: java.lang.String = null,
+    view: gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.TableReference = null
+  ): Anon_Domain = {
+    val __obj = js.Dynamic.literal()
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (groupByEmail != null) __obj.updateDynamic("groupByEmail")(groupByEmail)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (specialGroup != null) __obj.updateDynamic("specialGroup")(specialGroup)
+    if (userByEmail != null) __obj.updateDynamic("userByEmail")(userByEmail)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[Anon_Domain]
+  }
+}
+

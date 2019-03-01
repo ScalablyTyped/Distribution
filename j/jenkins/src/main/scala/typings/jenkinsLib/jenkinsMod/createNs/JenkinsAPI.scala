@@ -14,3 +14,24 @@ trait JenkinsAPI extends js.Object {
   def info(callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit
 }
 
+object JenkinsAPI {
+  @scala.inline
+  def apply(
+    build: jenkinsLib.Anon_Callback,
+    info: js.Function1[js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit], scala.Unit],
+    job: jenkinsLib.Anon_Build,
+    node: jenkinsLib.Anon_CallbackConfig,
+    queue: jenkinsLib.Anon_CallbackCancel,
+    view: jenkinsLib.Anon_Add
+  ): JenkinsAPI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("job")(job)
+    __obj.updateDynamic("node")(node)
+    __obj.updateDynamic("queue")(queue)
+    __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[JenkinsAPI]
+  }
+}
+

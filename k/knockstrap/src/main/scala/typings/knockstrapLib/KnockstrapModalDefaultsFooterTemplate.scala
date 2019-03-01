@@ -9,3 +9,18 @@ trait KnockstrapModalDefaultsFooterTemplate extends KnockstrapDefaultsTemplateBa
   var data: KnockstrapModalDefaultsFooterData
 }
 
+object KnockstrapModalDefaultsFooterTemplate {
+  @scala.inline
+  def apply(
+    data: KnockstrapModalDefaultsFooterData,
+    name: java.lang.String,
+    templateEngine: KnockstrapStringTemplateEngine
+  ): KnockstrapModalDefaultsFooterTemplate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("templateEngine")(templateEngine)
+    __obj.asInstanceOf[KnockstrapModalDefaultsFooterTemplate]
+  }
+}
+

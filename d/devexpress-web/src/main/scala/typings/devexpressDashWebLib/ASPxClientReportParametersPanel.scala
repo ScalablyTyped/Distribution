@@ -31,3 +31,50 @@ trait ASPxClientReportParametersPanel extends ASPxClientControl {
   def GetParameterNames(): js.Array[java.lang.String]
 }
 
+object ASPxClientReportParametersPanel {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    AssignParameter: js.Function2[java.lang.String, js.Object, scala.Unit],
+    AssignParameters: js.Function1[js.Array[ASPxClientReportParameterInfo], scala.Unit],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetEditorByParameterName: js.Function1[java.lang.String, ASPxClientControl],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetParameterNames: js.Function0[js.Array[java.lang.String]],
+    GetParentControl: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientReportParametersPanel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AdjustControl")(AdjustControl)
+    __obj.updateDynamic("AssignParameter")(AssignParameter)
+    __obj.updateDynamic("AssignParameters")(AssignParameters)
+    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
+    __obj.updateDynamic("GetEditorByParameterName")(GetEditorByParameterName)
+    __obj.updateDynamic("GetHeight")(GetHeight)
+    __obj.updateDynamic("GetMainElement")(GetMainElement)
+    __obj.updateDynamic("GetParameterNames")(GetParameterNames)
+    __obj.updateDynamic("GetParentControl")(GetParentControl)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("GetWidth")(GetWidth)
+    __obj.updateDynamic("InCallback")(InCallback)
+    __obj.updateDynamic("Init")(Init)
+    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
+    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
+    __obj.updateDynamic("SetHeight")(SetHeight)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("SetWidth")(SetWidth)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientReportParametersPanel]
+  }
+}
+

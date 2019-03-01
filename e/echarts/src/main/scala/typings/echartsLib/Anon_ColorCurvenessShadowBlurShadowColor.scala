@@ -69,3 +69,26 @@ trait Anon_ColorCurvenessShadowBlurShadowColor extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ColorCurvenessShadowBlurShadowColor {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    curveness: scala.Int | scala.Double = null,
+    shadowBlur: scala.Int | scala.Double = null,
+    shadowColor: java.lang.String = null,
+    shadowOffsetX: scala.Int | scala.Double = null,
+    shadowOffsetY: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_ColorCurvenessShadowBlurShadowColor = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (curveness != null) __obj.updateDynamic("curveness")(curveness.asInstanceOf[js.Any])
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
+    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ColorCurvenessShadowBlurShadowColor]
+  }
+}
+

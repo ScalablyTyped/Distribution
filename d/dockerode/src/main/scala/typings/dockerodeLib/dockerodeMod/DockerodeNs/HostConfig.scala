@@ -57,3 +57,110 @@ trait HostConfig extends js.Object {
   var VolumesFrom: js.UndefOr[js.Any] = js.undefined
 }
 
+object HostConfig {
+  @scala.inline
+  def apply(
+    AutoRemove: scala.Boolean,
+    Binds: js.Array[java.lang.String],
+    BlkioWeight: scala.Double,
+    CgroupParent: java.lang.String,
+    ConsoleSize: js.Array[scala.Double],
+    ContainerIDFile: java.lang.String,
+    CpuPeriod: scala.Double,
+    CpuQuota: scala.Double,
+    CpuShares: scala.Double,
+    CpusetCpus: java.lang.String,
+    CpusetMems: java.lang.String,
+    DiskQuota: scala.Double,
+    Dns: js.Array[_],
+    DnsOptions: js.Array[_],
+    DnsSearch: js.Array[_],
+    IpcMode: java.lang.String,
+    Isolation: java.lang.String,
+    KernelMemory: scala.Double,
+    LogConfig: dockerodeLib.Anon_Config,
+    Memory: scala.Double,
+    MemoryReservation: scala.Double,
+    MemorySwap: scala.Double,
+    MemorySwappiness: scala.Double,
+    NetworkMode: java.lang.String,
+    OomKillDisable: scala.Boolean,
+    OomScoreAdj: scala.Double,
+    PidMode: java.lang.String,
+    PidsLimit: scala.Double,
+    Privileged: scala.Boolean,
+    PublishAllPorts: scala.Boolean,
+    ReadonlyRootfs: scala.Boolean,
+    RestartPolicy: dockerodeLib.Anon_MaximumRetryCount,
+    ShmSize: scala.Double,
+    UTSMode: java.lang.String,
+    VolumeDriver: java.lang.String,
+    BlkioDeviceReadBps: js.Any = null,
+    BlkioDeviceReadIOps: js.Any = null,
+    BlkioDeviceWriteBps: js.Any = null,
+    BlkioDeviceWriteIOps: js.Any = null,
+    BlkioWeightDevice: js.Any = null,
+    CapAdd: js.Any = null,
+    CapDrop: js.Any = null,
+    Devices: js.Any = null,
+    ExtraHosts: js.Any = null,
+    Links: js.Any = null,
+    PortBindings: js.Any = null,
+    SecurityOpt: js.Any = null,
+    Ulimits: js.Any = null,
+    VolumesFrom: js.Any = null
+  ): HostConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoRemove")(AutoRemove)
+    __obj.updateDynamic("Binds")(Binds)
+    __obj.updateDynamic("BlkioWeight")(BlkioWeight)
+    __obj.updateDynamic("CgroupParent")(CgroupParent)
+    __obj.updateDynamic("ConsoleSize")(ConsoleSize)
+    __obj.updateDynamic("ContainerIDFile")(ContainerIDFile)
+    __obj.updateDynamic("CpuPeriod")(CpuPeriod)
+    __obj.updateDynamic("CpuQuota")(CpuQuota)
+    __obj.updateDynamic("CpuShares")(CpuShares)
+    __obj.updateDynamic("CpusetCpus")(CpusetCpus)
+    __obj.updateDynamic("CpusetMems")(CpusetMems)
+    __obj.updateDynamic("DiskQuota")(DiskQuota)
+    __obj.updateDynamic("Dns")(Dns)
+    __obj.updateDynamic("DnsOptions")(DnsOptions)
+    __obj.updateDynamic("DnsSearch")(DnsSearch)
+    __obj.updateDynamic("IpcMode")(IpcMode)
+    __obj.updateDynamic("Isolation")(Isolation)
+    __obj.updateDynamic("KernelMemory")(KernelMemory)
+    __obj.updateDynamic("LogConfig")(LogConfig)
+    __obj.updateDynamic("Memory")(Memory)
+    __obj.updateDynamic("MemoryReservation")(MemoryReservation)
+    __obj.updateDynamic("MemorySwap")(MemorySwap)
+    __obj.updateDynamic("MemorySwappiness")(MemorySwappiness)
+    __obj.updateDynamic("NetworkMode")(NetworkMode)
+    __obj.updateDynamic("OomKillDisable")(OomKillDisable)
+    __obj.updateDynamic("OomScoreAdj")(OomScoreAdj)
+    __obj.updateDynamic("PidMode")(PidMode)
+    __obj.updateDynamic("PidsLimit")(PidsLimit)
+    __obj.updateDynamic("Privileged")(Privileged)
+    __obj.updateDynamic("PublishAllPorts")(PublishAllPorts)
+    __obj.updateDynamic("ReadonlyRootfs")(ReadonlyRootfs)
+    __obj.updateDynamic("RestartPolicy")(RestartPolicy)
+    __obj.updateDynamic("ShmSize")(ShmSize)
+    __obj.updateDynamic("UTSMode")(UTSMode)
+    __obj.updateDynamic("VolumeDriver")(VolumeDriver)
+    if (BlkioDeviceReadBps != null) __obj.updateDynamic("BlkioDeviceReadBps")(BlkioDeviceReadBps)
+    if (BlkioDeviceReadIOps != null) __obj.updateDynamic("BlkioDeviceReadIOps")(BlkioDeviceReadIOps)
+    if (BlkioDeviceWriteBps != null) __obj.updateDynamic("BlkioDeviceWriteBps")(BlkioDeviceWriteBps)
+    if (BlkioDeviceWriteIOps != null) __obj.updateDynamic("BlkioDeviceWriteIOps")(BlkioDeviceWriteIOps)
+    if (BlkioWeightDevice != null) __obj.updateDynamic("BlkioWeightDevice")(BlkioWeightDevice)
+    if (CapAdd != null) __obj.updateDynamic("CapAdd")(CapAdd)
+    if (CapDrop != null) __obj.updateDynamic("CapDrop")(CapDrop)
+    if (Devices != null) __obj.updateDynamic("Devices")(Devices)
+    if (ExtraHosts != null) __obj.updateDynamic("ExtraHosts")(ExtraHosts)
+    if (Links != null) __obj.updateDynamic("Links")(Links)
+    if (PortBindings != null) __obj.updateDynamic("PortBindings")(PortBindings)
+    if (SecurityOpt != null) __obj.updateDynamic("SecurityOpt")(SecurityOpt)
+    if (Ulimits != null) __obj.updateDynamic("Ulimits")(Ulimits)
+    if (VolumesFrom != null) __obj.updateDynamic("VolumesFrom")(VolumesFrom)
+    __obj.asInstanceOf[HostConfig]
+  }
+}
+

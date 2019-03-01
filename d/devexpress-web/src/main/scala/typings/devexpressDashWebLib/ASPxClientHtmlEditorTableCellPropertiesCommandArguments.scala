@@ -21,3 +21,18 @@ trait ASPxClientHtmlEditorTableCellPropertiesCommandArguments extends ASPxClient
   var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
 }
 
+object ASPxClientHtmlEditorTableCellPropertiesCommandArguments {
+  @scala.inline
+  def apply(
+    applyForAll: scala.Boolean,
+    selectedElement: js.Object,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  ): ASPxClientHtmlEditorTableCellPropertiesCommandArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applyForAll")(applyForAll)
+    __obj.updateDynamic("selectedElement")(selectedElement)
+    __obj.updateDynamic("styleSettings")(styleSettings)
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesCommandArguments]
+  }
+}
+

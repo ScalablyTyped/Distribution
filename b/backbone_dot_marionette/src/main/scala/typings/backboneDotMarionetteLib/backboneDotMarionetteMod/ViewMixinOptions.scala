@@ -48,3 +48,28 @@ trait ViewMixinOptions extends js.Object {
   var ui: js.UndefOr[js.Any] = js.undefined
 }
 
+object ViewMixinOptions {
+  @scala.inline
+  def apply(
+    behaviors: js.Array[Behavior] = null,
+    childViewEventPrefix: java.lang.String | backboneDotMarionetteLib.backboneDotMarionetteLibNumbers.`false` = null,
+    childViewEvents: EventsHash = null,
+    childViewTriggers: EventsHash = null,
+    collectionEvents: EventsHash = null,
+    modelEvents: EventsHash = null,
+    triggers: EventsHash = null,
+    ui: js.Any = null
+  ): ViewMixinOptions = {
+    val __obj = js.Dynamic.literal()
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
+    if (childViewEventPrefix != null) __obj.updateDynamic("childViewEventPrefix")(childViewEventPrefix.asInstanceOf[js.Any])
+    if (childViewEvents != null) __obj.updateDynamic("childViewEvents")(childViewEvents)
+    if (childViewTriggers != null) __obj.updateDynamic("childViewTriggers")(childViewTriggers)
+    if (collectionEvents != null) __obj.updateDynamic("collectionEvents")(collectionEvents)
+    if (modelEvents != null) __obj.updateDynamic("modelEvents")(modelEvents)
+    if (triggers != null) __obj.updateDynamic("triggers")(triggers)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    __obj.asInstanceOf[ViewMixinOptions]
+  }
+}
+

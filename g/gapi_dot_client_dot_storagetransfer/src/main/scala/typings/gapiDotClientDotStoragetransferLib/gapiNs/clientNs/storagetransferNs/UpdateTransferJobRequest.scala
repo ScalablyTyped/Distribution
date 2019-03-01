@@ -30,3 +30,18 @@ trait UpdateTransferJobRequest extends js.Object {
   var updateTransferJobFieldMask: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UpdateTransferJobRequest {
+  @scala.inline
+  def apply(
+    projectId: java.lang.String = null,
+    transferJob: TransferJob = null,
+    updateTransferJobFieldMask: java.lang.String = null
+  ): UpdateTransferJobRequest = {
+    val __obj = js.Dynamic.literal()
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (transferJob != null) __obj.updateDynamic("transferJob")(transferJob)
+    if (updateTransferJobFieldMask != null) __obj.updateDynamic("updateTransferJobFieldMask")(updateTransferJobFieldMask)
+    __obj.asInstanceOf[UpdateTransferJobRequest]
+  }
+}
+

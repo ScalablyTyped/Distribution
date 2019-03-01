@@ -20,3 +20,36 @@ trait ImageMapTypeOptions extends js.Object {
   var vendor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImageMapTypeOptions {
+  @scala.inline
+  def apply(
+    maxZoom: scala.Double,
+    minZoom: scala.Double,
+    name: java.lang.String,
+    projection: Projection,
+    darktheme: js.UndefOr[scala.Boolean] = js.undefined,
+    getTileUrl: js.Function0[_] = null,
+    provider: js.Array[MapDataProvider] = null,
+    repeatX: js.UndefOr[scala.Boolean] = js.undefined,
+    tileSet: java.lang.String | js.Array[java.lang.String] = null,
+    tileSize: Size | SizeLiteral = null,
+    uid: java.lang.String = null,
+    vendor: java.lang.String = null
+  ): ImageMapTypeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxZoom")(maxZoom)
+    __obj.updateDynamic("minZoom")(minZoom)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("projection")(projection)
+    if (!js.isUndefined(darktheme)) __obj.updateDynamic("darktheme")(darktheme)
+    if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(getTileUrl)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (!js.isUndefined(repeatX)) __obj.updateDynamic("repeatX")(repeatX)
+    if (tileSet != null) __obj.updateDynamic("tileSet")(tileSet.asInstanceOf[js.Any])
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (uid != null) __obj.updateDynamic("uid")(uid)
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    __obj.asInstanceOf[ImageMapTypeOptions]
+  }
+}
+

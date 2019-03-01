@@ -16,3 +16,18 @@ trait Options extends js.Object {
   var incidents: heremapsLib.HNs.mapNs.layerNs.Layer
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    incidents: heremapsLib.HNs.mapNs.layerNs.Layer,
+    alignment: heremapsLib.HNs.uiNs.LayoutAlignment = null,
+    entries: js.Array[MapTypeEntry] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("incidents")(incidents)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (entries != null) __obj.updateDynamic("entries")(entries)
+    __obj.asInstanceOf[Options]
+  }
+}
+

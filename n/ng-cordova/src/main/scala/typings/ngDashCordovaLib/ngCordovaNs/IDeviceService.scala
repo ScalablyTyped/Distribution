@@ -54,3 +54,28 @@ trait IDeviceService extends js.Object {
   def getVersion(): java.lang.String
 }
 
+object IDeviceService {
+  @scala.inline
+  def apply(
+    getCordova: js.Function0[java.lang.String],
+    getDevice: js.Function0[IDeviceInfo],
+    getManufacturer: js.Function0[java.lang.String],
+    getModel: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getPlatform: js.Function0[java.lang.String],
+    getUUID: js.Function0[java.lang.String],
+    getVersion: js.Function0[java.lang.String]
+  ): IDeviceService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCordova")(getCordova)
+    __obj.updateDynamic("getDevice")(getDevice)
+    __obj.updateDynamic("getManufacturer")(getManufacturer)
+    __obj.updateDynamic("getModel")(getModel)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getPlatform")(getPlatform)
+    __obj.updateDynamic("getUUID")(getUUID)
+    __obj.updateDynamic("getVersion")(getVersion)
+    __obj.asInstanceOf[IDeviceService]
+  }
+}
+

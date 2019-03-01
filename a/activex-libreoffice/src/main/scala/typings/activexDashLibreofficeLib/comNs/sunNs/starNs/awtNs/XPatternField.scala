@@ -24,3 +24,32 @@ trait XPatternField
   def setString(Str: java.lang.String): scala.Unit
 }
 
+object XPatternField {
+  @scala.inline
+  def apply(
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getMasks: js.Function2[js.Array[java.lang.String], js.Array[java.lang.String], scala.Unit],
+    getString: js.Function0[java.lang.String],
+    isStrictFormat: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setMasks: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): XPatternField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("String")(String)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMasks")(getMasks)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("isStrictFormat")(isStrictFormat)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setMasks")(setMasks)
+    __obj.updateDynamic("setStrictFormat")(setStrictFormat)
+    __obj.updateDynamic("setString")(setString)
+    __obj.asInstanceOf[XPatternField]
+  }
+}
+

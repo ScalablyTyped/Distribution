@@ -124,3 +124,62 @@ trait SocketOptions extends js.Object {
   var upgrade: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SocketOptions {
+  @scala.inline
+  def apply(
+    agent: nodeLib.httpMod.Agent | engineDotIoDashClientLib.engineDotIoDashClientLibNumbers.`false` = null,
+    ca: java.lang.String | js.Array[java.lang.String] = null,
+    cert: java.lang.String = null,
+    ciphers: java.lang.String = null,
+    enablesXDR: js.UndefOr[scala.Boolean] = js.undefined,
+    extraHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    forceBase64: js.UndefOr[scala.Boolean] = js.undefined,
+    forceJSONP: js.UndefOr[scala.Boolean] = js.undefined,
+    forceNode: js.UndefOr[scala.Boolean] = js.undefined,
+    jsonp: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    localAddress: java.lang.String = null,
+    onlyBinaryUpgrades: js.UndefOr[scala.Boolean] = js.undefined,
+    passphrase: java.lang.String = null,
+    path: java.lang.String = null,
+    perMessageDeflate: js.Any = null,
+    pfx: java.lang.String = null,
+    policyPort: scala.Int | scala.Double = null,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    rememberUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    timestampParam: java.lang.String = null,
+    timestampRequests: js.UndefOr[scala.Boolean] = js.undefined,
+    transportOptions: org.scalablytyped.runtime.StringDictionary[SocketOptions] = null,
+    transports: js.Array[Transport] = null,
+    upgrade: js.UndefOr[scala.Boolean] = js.undefined
+  ): SocketOptions = {
+    val __obj = js.Dynamic.literal()
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert)
+    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
+    if (!js.isUndefined(enablesXDR)) __obj.updateDynamic("enablesXDR")(enablesXDR)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+    if (!js.isUndefined(forceBase64)) __obj.updateDynamic("forceBase64")(forceBase64)
+    if (!js.isUndefined(forceJSONP)) __obj.updateDynamic("forceJSONP")(forceJSONP)
+    if (!js.isUndefined(forceNode)) __obj.updateDynamic("forceNode")(forceNode)
+    if (!js.isUndefined(jsonp)) __obj.updateDynamic("jsonp")(jsonp)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (!js.isUndefined(onlyBinaryUpgrades)) __obj.updateDynamic("onlyBinaryUpgrades")(onlyBinaryUpgrades)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate)
+    if (pfx != null) __obj.updateDynamic("pfx")(pfx)
+    if (policyPort != null) __obj.updateDynamic("policyPort")(policyPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (!js.isUndefined(rememberUpgrade)) __obj.updateDynamic("rememberUpgrade")(rememberUpgrade)
+    if (timestampParam != null) __obj.updateDynamic("timestampParam")(timestampParam)
+    if (!js.isUndefined(timestampRequests)) __obj.updateDynamic("timestampRequests")(timestampRequests)
+    if (transportOptions != null) __obj.updateDynamic("transportOptions")(transportOptions)
+    if (transports != null) __obj.updateDynamic("transports")(transports)
+    if (!js.isUndefined(upgrade)) __obj.updateDynamic("upgrade")(upgrade)
+    __obj.asInstanceOf[SocketOptions]
+  }
+}
+

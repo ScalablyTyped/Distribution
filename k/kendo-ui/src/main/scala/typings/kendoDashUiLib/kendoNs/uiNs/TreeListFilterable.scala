@@ -11,3 +11,18 @@ trait TreeListFilterable extends js.Object {
   var operators: js.UndefOr[TreeListFilterableOperators] = js.undefined
 }
 
+object TreeListFilterable {
+  @scala.inline
+  def apply(
+    extra: js.UndefOr[scala.Boolean] = js.undefined,
+    messages: TreeListFilterableMessages = null,
+    operators: TreeListFilterableOperators = null
+  ): TreeListFilterable = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (operators != null) __obj.updateDynamic("operators")(operators)
+    __obj.asInstanceOf[TreeListFilterable]
+  }
+}
+

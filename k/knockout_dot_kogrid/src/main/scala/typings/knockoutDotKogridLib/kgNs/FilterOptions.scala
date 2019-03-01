@@ -14,3 +14,18 @@ trait FilterOptions extends js.Object {
   var useExternalFilter: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FilterOptions {
+  @scala.inline
+  def apply(
+    filterText: knockoutLib.KnockoutObservable[java.lang.String] = null,
+    filterThrottle: scala.Int | scala.Double = null,
+    useExternalFilter: js.UndefOr[scala.Boolean] = js.undefined
+  ): FilterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (filterText != null) __obj.updateDynamic("filterText")(filterText)
+    if (filterThrottle != null) __obj.updateDynamic("filterThrottle")(filterThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalFilter)) __obj.updateDynamic("useExternalFilter")(useExternalFilter)
+    __obj.asInstanceOf[FilterOptions]
+  }
+}
+

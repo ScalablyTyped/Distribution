@@ -79,3 +79,32 @@ trait PageLoadOptions extends js.Object {
   var webUrl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PageLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    classNotebookPageSource: js.UndefOr[scala.Boolean] = js.undefined,
+    clientUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    contents: PageContentCollectionLoadOptions = null,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    inkAnalysisOrNull: InkAnalysisLoadOptions = null,
+    pageLevel: js.UndefOr[scala.Boolean] = js.undefined,
+    parentSection: SectionLoadOptions = null,
+    title: js.UndefOr[scala.Boolean] = js.undefined,
+    webUrl: js.UndefOr[scala.Boolean] = js.undefined
+  ): PageLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(classNotebookPageSource)) __obj.updateDynamic("classNotebookPageSource")(classNotebookPageSource)
+    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl)
+    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (inkAnalysisOrNull != null) __obj.updateDynamic("inkAnalysisOrNull")(inkAnalysisOrNull)
+    if (!js.isUndefined(pageLevel)) __obj.updateDynamic("pageLevel")(pageLevel)
+    if (parentSection != null) __obj.updateDynamic("parentSection")(parentSection)
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(webUrl)) __obj.updateDynamic("webUrl")(webUrl)
+    __obj.asInstanceOf[PageLoadOptions]
+  }
+}
+

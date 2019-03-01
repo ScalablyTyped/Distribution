@@ -9,3 +9,12 @@ trait Anon_Root extends js.Object {
   var `type`: prettierLib.prettierLibStrings.root
 }
 
+object Anon_Root {
+  @scala.inline
+  def apply(`type`: prettierLib.prettierLibStrings.root): Anon_Root = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Root]
+  }
+}
+

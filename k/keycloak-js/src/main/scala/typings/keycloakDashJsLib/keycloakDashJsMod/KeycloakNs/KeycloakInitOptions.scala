@@ -70,3 +70,36 @@ trait KeycloakInitOptions extends js.Object {
   var useNonce: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object KeycloakInitOptions {
+  @scala.inline
+  def apply(
+    adapter: KeycloakAdapterName = null,
+    checkLoginIframe: js.UndefOr[scala.Boolean] = js.undefined,
+    checkLoginIframeInterval: scala.Int | scala.Double = null,
+    flow: KeycloakFlow = null,
+    idToken: java.lang.String = null,
+    onLoad: KeycloakOnLoad = null,
+    redirectUri: java.lang.String = null,
+    refreshToken: java.lang.String = null,
+    responseMode: KeycloakResponseMode = null,
+    timeSkew: scala.Int | scala.Double = null,
+    token: java.lang.String = null,
+    useNonce: js.UndefOr[scala.Boolean] = js.undefined
+  ): KeycloakInitOptions = {
+    val __obj = js.Dynamic.literal()
+    if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkLoginIframe)) __obj.updateDynamic("checkLoginIframe")(checkLoginIframe)
+    if (checkLoginIframeInterval != null) __obj.updateDynamic("checkLoginIframeInterval")(checkLoginIframeInterval.asInstanceOf[js.Any])
+    if (flow != null) __obj.updateDynamic("flow")(flow)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode)
+    if (timeSkew != null) __obj.updateDynamic("timeSkew")(timeSkew.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (!js.isUndefined(useNonce)) __obj.updateDynamic("useNonce")(useNonce)
+    __obj.asInstanceOf[KeycloakInitOptions]
+  }
+}
+

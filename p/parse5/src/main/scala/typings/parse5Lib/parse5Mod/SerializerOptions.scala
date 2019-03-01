@@ -14,3 +14,12 @@ trait SerializerOptions extends js.Object {
   var treeAdapter: js.UndefOr[TreeAdapter] = js.undefined
 }
 
+object SerializerOptions {
+  @scala.inline
+  def apply(treeAdapter: TreeAdapter = null): SerializerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (treeAdapter != null) __obj.updateDynamic("treeAdapter")(treeAdapter)
+    __obj.asInstanceOf[SerializerOptions]
+  }
+}
+

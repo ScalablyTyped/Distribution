@@ -10,3 +10,12 @@ trait RangeCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[RangeData]] = js.undefined
 }
 
+object RangeCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[RangeData] = null): RangeCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[RangeCollectionUpdateData]
+  }
+}
+

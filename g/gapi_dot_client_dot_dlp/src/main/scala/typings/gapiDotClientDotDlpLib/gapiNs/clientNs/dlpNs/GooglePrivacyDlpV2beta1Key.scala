@@ -26,3 +26,16 @@ trait GooglePrivacyDlpV2beta1Key extends js.Object {
   var path: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1PathElement]] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1Key {
+  @scala.inline
+  def apply(
+    partitionId: GooglePrivacyDlpV2beta1PartitionId = null,
+    path: js.Array[GooglePrivacyDlpV2beta1PathElement] = null
+  ): GooglePrivacyDlpV2beta1Key = {
+    val __obj = js.Dynamic.literal()
+    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1Key]
+  }
+}
+

@@ -16,3 +16,13 @@ trait ColorInformation extends js.Object {
   var range: Range
 }
 
+object ColorInformation {
+  @scala.inline
+  def apply(color: Color, range: Range): ColorInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[ColorInformation]
+  }
+}
+

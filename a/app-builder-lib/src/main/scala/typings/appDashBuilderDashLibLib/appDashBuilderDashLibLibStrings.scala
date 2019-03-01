@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object appDashBuilderDashLibLibStrings {
   @js.native
-  sealed trait `7z` extends js.Object
+  sealed trait `7z`
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
   sealed trait Brave extends js.Object
@@ -52,19 +53,23 @@ object appDashBuilderDashLibLibStrings {
   sealed trait always extends js.Object
   
   @js.native
-  sealed trait asInvoker extends js.Object
+  sealed trait asInvoker
+    extends appDashBuilderDashLibLib.outOptionsWinOptionsMod.RequestedExecutionLevel
   
   @js.native
   sealed trait ask extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
-  sealed trait bottomleft extends js.Object
+  sealed trait bottomleft
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
-  sealed trait bottomright extends js.Object
+  sealed trait bottomright
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
   sealed trait brave extends js.Object
@@ -73,16 +78,19 @@ object appDashBuilderDashLibLibStrings {
   sealed trait bzip2 extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
   sealed trait classic extends js.Object
   
   @js.native
-  sealed trait darwin extends js.Object
+  sealed trait darwin
+    extends appDashBuilderDashLibLib.outElectronElectronFrameworkMod.ElectronPlatformName
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
   sealed trait devel extends js.Object
@@ -94,13 +102,15 @@ object appDashBuilderDashLibLibStrings {
   sealed trait devmode extends js.Object
   
   @js.native
-  sealed trait dir extends js.Object
+  sealed trait dir
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
   sealed trait distribution extends js.Object
   
   @js.native
-  sealed trait dmg extends js.Object
+  sealed trait dmg
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
   sealed trait doNotAsk extends js.Object
@@ -118,52 +128,68 @@ object appDashBuilderDashLibLibStrings {
   sealed trait highest extends js.Object
   
   @js.native
-  sealed trait highestAvailable extends js.Object
+  sealed trait highestAvailable
+    extends appDashBuilderDashLibLib.outOptionsWinOptionsMod.RequestedExecutionLevel
   
   @js.native
-  sealed trait icns extends js.Object
+  sealed trait icns
+    extends appDashBuilderDashLibLib.outPlatformPackagerMod.IconFormat
   
   @js.native
-  sealed trait ico extends js.Object
+  sealed trait ico
+    extends appDashBuilderDashLibLib.outPlatformPackagerMod.IconFormat
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait linux extends js.Object
+  sealed trait linux
+    extends appDashBuilderDashLibLib.outElectronElectronFrameworkMod.ElectronPlatformName
   
   @js.native
-  sealed trait mas extends js.Object
+  sealed trait mas
+    extends appDashBuilderDashLibLib.outElectronElectronFrameworkMod.ElectronPlatformName
+       with appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
-  sealed trait `mas-dev` extends js.Object
+  sealed trait `mas-dev`
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
-  sealed trait maximum extends js.Object
+  sealed trait maximum
+    extends appDashBuilderDashLibLib.outCoreMod.CompressionLevel
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundScaling
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends appDashBuilderDashLibLib.outCoreMod.CompressionLevel
   
   @js.native
-  sealed trait pkg extends js.Object
+  sealed trait pkg
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
-  sealed trait proportional extends js.Object
+  sealed trait proportional
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundScaling
   
   @js.native
-  sealed trait requireAdministrator extends js.Object
+  sealed trait requireAdministrator
+    extends appDashBuilderDashLibLib.outOptionsWinOptionsMod.RequestedExecutionLevel
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
-  sealed trait set extends js.Object
+  sealed trait set
+    extends appDashBuilderDashLibLib.outPlatformPackagerMod.IconFormat
   
   @js.native
   sealed trait sha1 extends js.Object
@@ -175,34 +201,43 @@ object appDashBuilderDashLibLibStrings {
   sealed trait stable extends js.Object
   
   @js.native
-  sealed trait store extends js.Object
+  sealed trait store
+    extends appDashBuilderDashLibLib.outCoreMod.CompressionLevel
   
   @js.native
   sealed trait strict extends js.Object
   
   @js.native
-  sealed trait tarDOTbz2 extends js.Object
+  sealed trait tarDOTbz2
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
-  sealed trait tarDOTgz extends js.Object
+  sealed trait tarDOTgz
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
-  sealed trait tarDOTlz extends js.Object
+  sealed trait tarDOTlz
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
-  sealed trait tarDOTxz extends js.Object
+  sealed trait tarDOTxz
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @js.native
-  sealed trait tofit extends js.Object
+  sealed trait tofit
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundScaling
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
-  sealed trait topleft extends js.Object
+  sealed trait topleft
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
-  sealed trait topright extends js.Object
+  sealed trait topright
+    extends appDashBuilderDashLibLib.outOptionsPkgOptionsMod.BackgroundAlignment
   
   @js.native
   sealed trait update extends js.Object
@@ -214,13 +249,15 @@ object appDashBuilderDashLibLibStrings {
   sealed trait user extends js.Object
   
   @js.native
-  sealed trait win32 extends js.Object
+  sealed trait win32
+    extends appDashBuilderDashLibLib.outElectronElectronFrameworkMod.ElectronPlatformName
   
   @js.native
   sealed trait xz extends js.Object
   
   @js.native
-  sealed trait zip extends js.Object
+  sealed trait zip
+    extends appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacOsTargetName
   
   @scala.inline
   def `7z`: `7z` = "7z".asInstanceOf[`7z`]

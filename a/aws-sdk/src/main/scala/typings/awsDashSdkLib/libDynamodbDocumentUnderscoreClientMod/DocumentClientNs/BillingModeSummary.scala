@@ -16,3 +16,13 @@ trait BillingModeSummary extends js.Object {
   var LastUpdateToPayPerRequestDateTime: js.UndefOr[_Date] = js.undefined
 }
 
+object BillingModeSummary {
+  @scala.inline
+  def apply(BillingMode: BillingMode = null, LastUpdateToPayPerRequestDateTime: _Date = null): BillingModeSummary = {
+    val __obj = js.Dynamic.literal()
+    if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
+    if (LastUpdateToPayPerRequestDateTime != null) __obj.updateDynamic("LastUpdateToPayPerRequestDateTime")(LastUpdateToPayPerRequestDateTime)
+    __obj.asInstanceOf[BillingModeSummary]
+  }
+}
+

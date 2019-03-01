@@ -32,3 +32,24 @@ trait Anon_AutoLevels extends js.Object {
   var stabilize: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_AutoLevels {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    RequestBody: java.lang.String = null,
+    autoLevels: js.UndefOr[scala.Boolean] = js.undefined,
+    onBehalfOfContentOwner: java.lang.String = null,
+    onBehalfOfContentOwnerChannel: java.lang.String = null,
+    stabilize: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AutoLevels = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody)
+    if (!js.isUndefined(autoLevels)) __obj.updateDynamic("autoLevels")(autoLevels)
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
+    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel)
+    if (!js.isUndefined(stabilize)) __obj.updateDynamic("stabilize")(stabilize)
+    __obj.asInstanceOf[Anon_AutoLevels]
+  }
+}
+

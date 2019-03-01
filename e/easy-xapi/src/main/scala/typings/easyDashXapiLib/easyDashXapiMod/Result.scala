@@ -13,3 +13,22 @@ trait Result extends js.Object {
   def listen(): scala.Unit
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    app: expressLib.expressMod.eNs.Application,
+    express: js.Any,
+    listen: js.Function0[scala.Unit],
+    log: bunyanLib.bunyanMod.namespaced,
+    server: nodeLib.httpMod.Server
+  ): Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app")(app)
+    __obj.updateDynamic("express")(express)
+    __obj.updateDynamic("listen")(listen)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[Result]
+  }
+}
+

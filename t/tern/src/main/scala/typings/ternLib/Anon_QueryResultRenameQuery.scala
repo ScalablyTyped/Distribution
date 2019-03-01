@@ -10,3 +10,13 @@ trait Anon_QueryResultRenameQuery extends js.Object {
   var result: ternLib.libTernMod.RenameQueryResult
 }
 
+object Anon_QueryResultRenameQuery {
+  @scala.inline
+  def apply(query: ternLib.libTernMod.RenameQuery, result: ternLib.libTernMod.RenameQueryResult): Anon_QueryResultRenameQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[Anon_QueryResultRenameQuery]
+  }
+}
+

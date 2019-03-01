@@ -15,3 +15,22 @@ trait Options extends js.Object {
   var target: stdLib.HTMLElement | stdLib.Range | stdLib.ClientRect | Rect | (js.Function0[stdLib.HTMLElement | stdLib.Range | stdLib.ClientRect | Rect])
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    element: stdLib.HTMLElement,
+    positions: js.Array[js.Function2[/* targetRect */ Rect, /* elementRect */ Rect, Position]],
+    target: stdLib.HTMLElement | stdLib.Range | stdLib.ClientRect | Rect | (js.Function0[stdLib.HTMLElement | stdLib.Range | stdLib.ClientRect | Rect]),
+    fitInViewport: js.UndefOr[scala.Boolean] = js.undefined,
+    limiter: stdLib.HTMLElement | stdLib.Range | stdLib.ClientRect | Rect | (js.Function0[stdLib.HTMLElement | stdLib.Range | stdLib.ClientRect | Rect]) = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("positions")(positions)
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitInViewport)) __obj.updateDynamic("fitInViewport")(fitInViewport)
+    if (limiter != null) __obj.updateDynamic("limiter")(limiter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -20,3 +20,18 @@ trait ListItemLayoutTheme extends js.Object {
   var selectable: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListItemLayoutTheme {
+  @scala.inline
+  def apply(
+    disabled: java.lang.String = null,
+    item: java.lang.String = null,
+    selectable: java.lang.String = null
+  ): ListItemLayoutTheme = {
+    val __obj = js.Dynamic.literal()
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (selectable != null) __obj.updateDynamic("selectable")(selectable)
+    __obj.asInstanceOf[ListItemLayoutTheme]
+  }
+}
+

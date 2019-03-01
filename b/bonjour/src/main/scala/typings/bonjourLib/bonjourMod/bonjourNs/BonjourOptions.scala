@@ -15,3 +15,26 @@ trait BonjourOptions extends js.Object {
   var ttl: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BonjourOptions {
+  @scala.inline
+  def apply(
+    interface: java.lang.String = null,
+    ip: java.lang.String = null,
+    loopback: js.UndefOr[scala.Boolean] = js.undefined,
+    multicast: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Int | scala.Double = null,
+    reuseAddr: js.UndefOr[scala.Boolean] = js.undefined,
+    ttl: scala.Int | scala.Double = null
+  ): BonjourOptions = {
+    val __obj = js.Dynamic.literal()
+    if (interface != null) __obj.updateDynamic("interface")(interface)
+    if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (!js.isUndefined(loopback)) __obj.updateDynamic("loopback")(loopback)
+    if (!js.isUndefined(multicast)) __obj.updateDynamic("multicast")(multicast)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BonjourOptions]
+  }
+}
+

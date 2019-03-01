@@ -36,3 +36,40 @@ trait XFixedHyperlink
   def setURL(URL: java.lang.String): scala.Unit
 }
 
+object XFixedHyperlink {
+  @scala.inline
+  def apply(
+    Alignment: scala.Double,
+    Text: java.lang.String,
+    URL: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addActionListener: js.Function1[XActionListener, scala.Unit],
+    getAlignment: js.Function0[scala.Double],
+    getText: js.Function0[java.lang.String],
+    getURL: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeActionListener: js.Function1[XActionListener, scala.Unit],
+    setAlignment: js.Function1[scala.Double, scala.Unit],
+    setText: js.Function1[java.lang.String, scala.Unit],
+    setURL: js.Function1[java.lang.String, scala.Unit]
+  ): XFixedHyperlink = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Alignment")(Alignment)
+    __obj.updateDynamic("Text")(Text)
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addActionListener")(addActionListener)
+    __obj.updateDynamic("getAlignment")(getAlignment)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("getURL")(getURL)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeActionListener")(removeActionListener)
+    __obj.updateDynamic("setAlignment")(setAlignment)
+    __obj.updateDynamic("setText")(setText)
+    __obj.updateDynamic("setURL")(setURL)
+    __obj.asInstanceOf[XFixedHyperlink]
+  }
+}
+

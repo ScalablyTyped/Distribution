@@ -16,3 +16,13 @@ trait InsertHtmlCommand extends CommandWithSimpleStateBase {
   def execute(html: java.lang.String): scala.Boolean
 }
 
+object InsertHtmlCommand {
+  @scala.inline
+  def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[SimpleCommandState]): InsertHtmlCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[InsertHtmlCommand]
+  }
+}
+

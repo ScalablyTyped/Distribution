@@ -9,3 +9,12 @@ trait IResponse extends js.Object {
   var headers: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object IResponse {
+  @scala.inline
+  def apply(headers: org.scalablytyped.runtime.StringDictionary[js.Any]): IResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("headers")(headers)
+    __obj.asInstanceOf[IResponse]
+  }
+}
+

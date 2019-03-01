@@ -16,3 +16,20 @@ trait ReadableSpecification extends js.Object {
   var schema: java.lang.String
 }
 
+object ReadableSpecification {
+  @scala.inline
+  def apply(
+    db: Database,
+    name: java.lang.String,
+    schema: java.lang.String,
+    is_matview: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReadableSpecification = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("db")(db)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("schema")(schema)
+    if (!js.isUndefined(is_matview)) __obj.updateDynamic("is_matview")(is_matview)
+    __obj.asInstanceOf[ReadableSpecification]
+  }
+}
+

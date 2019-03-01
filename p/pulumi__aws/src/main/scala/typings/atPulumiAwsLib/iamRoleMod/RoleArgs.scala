@@ -45,3 +45,30 @@ trait RoleArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object RoleArgs {
+  @scala.inline
+  def apply(
+    assumeRolePolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument],
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    forceDetachPolicies: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    maxSessionDuration: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    path: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    permissionsBoundary: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): RoleArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("assumeRolePolicy")(assumeRolePolicy.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (forceDetachPolicies != null) __obj.updateDynamic("forceDetachPolicies")(forceDetachPolicies.asInstanceOf[js.Any])
+    if (maxSessionDuration != null) __obj.updateDynamic("maxSessionDuration")(maxSessionDuration.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (permissionsBoundary != null) __obj.updateDynamic("permissionsBoundary")(permissionsBoundary.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoleArgs]
+  }
+}
+

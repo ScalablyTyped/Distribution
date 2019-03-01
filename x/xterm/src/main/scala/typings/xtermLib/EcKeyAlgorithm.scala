@@ -9,3 +9,13 @@ trait EcKeyAlgorithm extends KeyAlgorithm {
   var namedCurve: NamedCurve
 }
 
+object EcKeyAlgorithm {
+  @scala.inline
+  def apply(name: java.lang.String, namedCurve: NamedCurve): EcKeyAlgorithm = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namedCurve")(namedCurve)
+    __obj.asInstanceOf[EcKeyAlgorithm]
+  }
+}
+

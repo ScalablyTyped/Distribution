@@ -17,3 +17,28 @@ trait ResponseInfo extends js.Object {
   var statusText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResponseInfo {
+  @scala.inline
+  def apply(
+    responseAvailable: scala.Boolean,
+    allResponseHeaders: java.lang.String = null,
+    body: java.lang.String | stdLib.Uint8Array = null,
+    contentType: java.lang.String = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    state: js.Any = null,
+    statusCode: scala.Int | scala.Double = null,
+    statusText: java.lang.String = null
+  ): ResponseInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("responseAvailable")(responseAvailable)
+    if (allResponseHeaders != null) __obj.updateDynamic("allResponseHeaders")(allResponseHeaders)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    __obj.asInstanceOf[ResponseInfo]
+  }
+}
+

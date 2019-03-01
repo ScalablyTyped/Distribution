@@ -10,3 +10,13 @@ trait ParsedHttpResponseBody extends js.Object {
   var err: js.UndefOr[nodeLib.Error] = js.undefined
 }
 
+object ParsedHttpResponseBody {
+  @scala.inline
+  def apply(body: ResponseBody, err: nodeLib.Error = null): ParsedHttpResponseBody = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    if (err != null) __obj.updateDynamic("err")(err)
+    __obj.asInstanceOf[ParsedHttpResponseBody]
+  }
+}
+

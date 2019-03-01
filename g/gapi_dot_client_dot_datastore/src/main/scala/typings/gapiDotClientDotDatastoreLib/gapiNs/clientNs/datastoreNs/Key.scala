@@ -33,3 +33,13 @@ trait Key extends js.Object {
   var path: js.UndefOr[js.Array[PathElement]] = js.undefined
 }
 
+object Key {
+  @scala.inline
+  def apply(partitionId: PartitionId = null, path: js.Array[PathElement] = null): Key = {
+    val __obj = js.Dynamic.literal()
+    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Key]
+  }
+}
+

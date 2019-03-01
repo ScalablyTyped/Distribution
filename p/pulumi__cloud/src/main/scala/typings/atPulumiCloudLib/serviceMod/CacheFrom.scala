@@ -13,3 +13,12 @@ trait CacheFrom extends js.Object {
   var stages: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CacheFrom {
+  @scala.inline
+  def apply(stages: js.Array[java.lang.String] = null): CacheFrom = {
+    val __obj = js.Dynamic.literal()
+    if (stages != null) __obj.updateDynamic("stages")(stages)
+    __obj.asInstanceOf[CacheFrom]
+  }
+}
+

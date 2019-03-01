@@ -20,3 +20,20 @@ trait FilteringEventArgs extends js.Object {
   var updateData: js.UndefOr[js.Any] = js.undefined
 }
 
+object FilteringEventArgs {
+  @scala.inline
+  def apply(
+    model: Model = null,
+    text: java.lang.String = null,
+    `type`: java.lang.String = null,
+    updateData: js.Any = null
+  ): FilteringEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (updateData != null) __obj.updateDynamic("updateData")(updateData)
+    __obj.asInstanceOf[FilteringEventArgs]
+  }
+}
+

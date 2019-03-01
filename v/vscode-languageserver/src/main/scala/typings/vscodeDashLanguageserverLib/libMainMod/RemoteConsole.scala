@@ -32,3 +32,34 @@ trait RemoteConsole extends Remote {
   def warn(message: java.lang.String): scala.Unit
 }
 
+object RemoteConsole {
+  @scala.inline
+  def apply(
+    attach: js.Function1[IConnection, scala.Unit],
+    connection: IConnection,
+    error: js.Function1[java.lang.String, scala.Unit],
+    fillServerCapabilities: js.Function1[
+      vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ServerCapabilities, 
+      scala.Unit
+    ],
+    info: js.Function1[java.lang.String, scala.Unit],
+    initialize: js.Function1[
+      vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ClientCapabilities, 
+      scala.Unit
+    ],
+    log: js.Function1[java.lang.String, scala.Unit],
+    warn: js.Function1[java.lang.String, scala.Unit]
+  ): RemoteConsole = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attach")(attach)
+    __obj.updateDynamic("connection")(connection)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("fillServerCapabilities")(fillServerCapabilities)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("warn")(warn)
+    __obj.asInstanceOf[RemoteConsole]
+  }
+}
+

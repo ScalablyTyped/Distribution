@@ -124,3 +124,132 @@ trait NightwatchKeys extends js.Object {
   var UP_ARROW: java.lang.String
 }
 
+object NightwatchKeys {
+  @scala.inline
+  def apply(
+    ADD: java.lang.String,
+    ALT: java.lang.String,
+    ARROW_DOWN: java.lang.String,
+    ARROW_LEFT: java.lang.String,
+    ARROW_RIGHT: java.lang.String,
+    ARROW_UP: java.lang.String,
+    BACK_SPACE: java.lang.String,
+    CANCEL: java.lang.String,
+    CLEAR: java.lang.String,
+    COMMAND: java.lang.String,
+    CONTROL: java.lang.String,
+    DECIMAL: java.lang.String,
+    DELETE: java.lang.String,
+    DIVIDE: java.lang.String,
+    DOWN_ARROW: java.lang.String,
+    END: java.lang.String,
+    ENTER: java.lang.String,
+    EQUALS: java.lang.String,
+    ESCAPE: java.lang.String,
+    F1: java.lang.String,
+    F10: java.lang.String,
+    F11: java.lang.String,
+    F12: java.lang.String,
+    F2: java.lang.String,
+    F3: java.lang.String,
+    F4: java.lang.String,
+    F5: java.lang.String,
+    F6: java.lang.String,
+    F7: java.lang.String,
+    F8: java.lang.String,
+    F9: java.lang.String,
+    HELP: java.lang.String,
+    HOME: java.lang.String,
+    INSERT: java.lang.String,
+    LEFT_ARROW: java.lang.String,
+    META: java.lang.String,
+    MULTIPLY: java.lang.String,
+    NULL: java.lang.String,
+    NUMPAD0: java.lang.String,
+    NUMPAD1: java.lang.String,
+    NUMPAD2: java.lang.String,
+    NUMPAD3: java.lang.String,
+    NUMPAD4: java.lang.String,
+    NUMPAD5: java.lang.String,
+    NUMPAD6: java.lang.String,
+    NUMPAD7: java.lang.String,
+    NUMPAD8: java.lang.String,
+    NUMPAD9: java.lang.String,
+    PAGEDOWN: java.lang.String,
+    PAGEUP: java.lang.String,
+    PAUSE: java.lang.String,
+    RETURN: java.lang.String,
+    RIGHT_ARROW: java.lang.String,
+    SEMICOLON: java.lang.String,
+    SEPARATOR: java.lang.String,
+    SHIFT: java.lang.String,
+    SPACE: java.lang.String,
+    SUBTRACT: java.lang.String,
+    TAB: java.lang.String,
+    UP_ARROW: java.lang.String
+  ): NightwatchKeys = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ADD")(ADD)
+    __obj.updateDynamic("ALT")(ALT)
+    __obj.updateDynamic("ARROW_DOWN")(ARROW_DOWN)
+    __obj.updateDynamic("ARROW_LEFT")(ARROW_LEFT)
+    __obj.updateDynamic("ARROW_RIGHT")(ARROW_RIGHT)
+    __obj.updateDynamic("ARROW_UP")(ARROW_UP)
+    __obj.updateDynamic("BACK_SPACE")(BACK_SPACE)
+    __obj.updateDynamic("CANCEL")(CANCEL)
+    __obj.updateDynamic("CLEAR")(CLEAR)
+    __obj.updateDynamic("COMMAND")(COMMAND)
+    __obj.updateDynamic("CONTROL")(CONTROL)
+    __obj.updateDynamic("DECIMAL")(DECIMAL)
+    __obj.updateDynamic("DELETE")(DELETE)
+    __obj.updateDynamic("DIVIDE")(DIVIDE)
+    __obj.updateDynamic("DOWN_ARROW")(DOWN_ARROW)
+    __obj.updateDynamic("END")(END)
+    __obj.updateDynamic("ENTER")(ENTER)
+    __obj.updateDynamic("EQUALS")(EQUALS)
+    __obj.updateDynamic("ESCAPE")(ESCAPE)
+    __obj.updateDynamic("F1")(F1)
+    __obj.updateDynamic("F10")(F10)
+    __obj.updateDynamic("F11")(F11)
+    __obj.updateDynamic("F12")(F12)
+    __obj.updateDynamic("F2")(F2)
+    __obj.updateDynamic("F3")(F3)
+    __obj.updateDynamic("F4")(F4)
+    __obj.updateDynamic("F5")(F5)
+    __obj.updateDynamic("F6")(F6)
+    __obj.updateDynamic("F7")(F7)
+    __obj.updateDynamic("F8")(F8)
+    __obj.updateDynamic("F9")(F9)
+    __obj.updateDynamic("HELP")(HELP)
+    __obj.updateDynamic("HOME")(HOME)
+    __obj.updateDynamic("INSERT")(INSERT)
+    __obj.updateDynamic("LEFT_ARROW")(LEFT_ARROW)
+    __obj.updateDynamic("META")(META)
+    __obj.updateDynamic("MULTIPLY")(MULTIPLY)
+    __obj.updateDynamic("NULL")(NULL)
+    __obj.updateDynamic("NUMPAD0")(NUMPAD0)
+    __obj.updateDynamic("NUMPAD1")(NUMPAD1)
+    __obj.updateDynamic("NUMPAD2")(NUMPAD2)
+    __obj.updateDynamic("NUMPAD3")(NUMPAD3)
+    __obj.updateDynamic("NUMPAD4")(NUMPAD4)
+    __obj.updateDynamic("NUMPAD5")(NUMPAD5)
+    __obj.updateDynamic("NUMPAD6")(NUMPAD6)
+    __obj.updateDynamic("NUMPAD7")(NUMPAD7)
+    __obj.updateDynamic("NUMPAD8")(NUMPAD8)
+    __obj.updateDynamic("NUMPAD9")(NUMPAD9)
+    __obj.updateDynamic("PAGEDOWN")(PAGEDOWN)
+    __obj.updateDynamic("PAGEUP")(PAGEUP)
+    __obj.updateDynamic("PAUSE")(PAUSE)
+    __obj.updateDynamic("RETURN")(RETURN)
+    __obj.updateDynamic("RIGHT_ARROW")(RIGHT_ARROW)
+    __obj.updateDynamic("SEMICOLON")(SEMICOLON)
+    __obj.updateDynamic("SEPARATOR")(SEPARATOR)
+    __obj.updateDynamic("SHIFT")(SHIFT)
+    __obj.updateDynamic("SPACE")(SPACE)
+    __obj.updateDynamic("SUBTRACT")(SUBTRACT)
+    __obj.updateDynamic("TAB")(TAB)
+    __obj.updateDynamic("UP_ARROW")(UP_ARROW)
+    __obj.asInstanceOf[NightwatchKeys]
+  }
+}
+

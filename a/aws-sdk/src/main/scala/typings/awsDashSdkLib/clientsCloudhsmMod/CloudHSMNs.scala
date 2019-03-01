@@ -998,6 +998,14 @@ object CloudHSMNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[RemoveTagsFromResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _ClientVersion extends js.Object
+  
+  trait _CloudHsmObjectState extends js.Object
+  
+  trait _HsmStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AZ = java.lang.String
   type AZList = js.Array[AZ]
@@ -1008,8 +1016,8 @@ object CloudHSMNs extends js.Object {
   type ClientLabel = java.lang.String
   type ClientList = js.Array[ClientArn]
   type ClientToken = java.lang.String
-  type ClientVersion = awsDashSdkLib.awsDashSdkLibStrings.`5DOT1` | awsDashSdkLib.awsDashSdkLibStrings.`5DOT3` | java.lang.String
-  type CloudHsmObjectState = awsDashSdkLib.awsDashSdkLibStrings.READY | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.DEGRADED | java.lang.String
+  type ClientVersion = _ClientVersion | java.lang.String
+  type CloudHsmObjectState = _CloudHsmObjectState | java.lang.String
   type EniId = java.lang.String
   type ExternalId = java.lang.String
   type HapgArn = java.lang.String
@@ -1017,7 +1025,7 @@ object CloudHSMNs extends js.Object {
   type HsmArn = java.lang.String
   type HsmList = js.Array[HsmArn]
   type HsmSerialNumber = java.lang.String
-  type HsmStatus = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.SUSPENDED | awsDashSdkLib.awsDashSdkLibStrings.TERMINATING | awsDashSdkLib.awsDashSdkLibStrings.TERMINATED | awsDashSdkLib.awsDashSdkLibStrings.DEGRADED | java.lang.String
+  type HsmStatus = _HsmStatus | java.lang.String
   type IamRoleArn = java.lang.String
   type IpAddress = java.lang.String
   type Label = java.lang.String
@@ -1036,6 +1044,6 @@ object CloudHSMNs extends js.Object {
   type TagValue = java.lang.String
   type Timestamp = java.lang.String
   type VpcId = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2014-05-30` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -171,3 +171,50 @@ trait ShapeData extends js.Object {
   var zorderPosition: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ShapeData {
+  @scala.inline
+  def apply(
+    altTextDescription: java.lang.String = null,
+    altTextTitle: java.lang.String = null,
+    connectionSiteCount: scala.Int | scala.Double = null,
+    fill: ShapeFillData = null,
+    geometricShapeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 178 */ js.Any = null,
+    height: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    left: scala.Int | scala.Double = null,
+    level: scala.Int | scala.Double = null,
+    lineFormat: ShapeLineFormatData = null,
+    lockAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    placement: officeDashJsDashPreviewLib.ExcelNs.Placement | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TwoCell | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.OneCell | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Absolute = null,
+    rotation: scala.Int | scala.Double = null,
+    top: scala.Int | scala.Double = null,
+    `type`: officeDashJsDashPreviewLib.ExcelNs.ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Line = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null,
+    zorderPosition: scala.Int | scala.Double = null
+  ): ShapeData = {
+    val __obj = js.Dynamic.literal()
+    if (altTextDescription != null) __obj.updateDynamic("altTextDescription")(altTextDescription)
+    if (altTextTitle != null) __obj.updateDynamic("altTextTitle")(altTextTitle)
+    if (connectionSiteCount != null) __obj.updateDynamic("connectionSiteCount")(connectionSiteCount.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (geometricShapeType != null) __obj.updateDynamic("geometricShapeType")(geometricShapeType)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (lineFormat != null) __obj.updateDynamic("lineFormat")(lineFormat)
+    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zorderPosition != null) __obj.updateDynamic("zorderPosition")(zorderPosition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShapeData]
+  }
+}
+

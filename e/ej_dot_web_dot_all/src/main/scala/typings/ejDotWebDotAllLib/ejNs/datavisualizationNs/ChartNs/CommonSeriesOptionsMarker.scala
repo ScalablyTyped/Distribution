@@ -36,3 +36,28 @@ trait CommonSeriesOptionsMarker extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CommonSeriesOptionsMarker {
+  @scala.inline
+  def apply(
+    border: CommonSeriesOptionsMarkerBorder = null,
+    dataLabel: CommonSeriesOptionsMarkerDataLabel = null,
+    fill: java.lang.String = null,
+    imageUrl: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    shape: Shape | java.lang.String = null,
+    size: CommonSeriesOptionsMarkerSize = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): CommonSeriesOptionsMarker = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[CommonSeriesOptionsMarker]
+  }
+}
+

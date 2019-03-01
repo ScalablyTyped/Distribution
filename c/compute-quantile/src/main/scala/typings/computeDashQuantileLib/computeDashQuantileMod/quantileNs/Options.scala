@@ -15,3 +15,12 @@ trait Options extends js.Object {
   var sorted: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(sorted: js.UndefOr[scala.Boolean] = js.undefined): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -13,3 +13,12 @@ trait LaunchTemplateResponse extends js.Object {
   var job: js.UndefOr[Job] = js.undefined
 }
 
+object LaunchTemplateResponse {
+  @scala.inline
+  def apply(job: Job = null): LaunchTemplateResponse = {
+    val __obj = js.Dynamic.literal()
+    if (job != null) __obj.updateDynamic("job")(job)
+    __obj.asInstanceOf[LaunchTemplateResponse]
+  }
+}
+

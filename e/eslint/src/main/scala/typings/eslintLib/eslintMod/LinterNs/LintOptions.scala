@@ -15,3 +15,22 @@ trait LintOptions extends js.Object {
   var reportUnusedDisableDirectives: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LintOptions {
+  @scala.inline
+  def apply(
+    allowInlineConfig: js.UndefOr[scala.Boolean] = js.undefined,
+    filename: java.lang.String = null,
+    postprocess: js.Function1[/* problemLists */ js.Array[js.Array[LintMessage]], js.Array[LintMessage]] = null,
+    preprocess: js.Function1[/* code */ java.lang.String, js.Array[java.lang.String]] = null,
+    reportUnusedDisableDirectives: js.UndefOr[scala.Boolean] = js.undefined
+  ): LintOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowInlineConfig)) __obj.updateDynamic("allowInlineConfig")(allowInlineConfig)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (postprocess != null) __obj.updateDynamic("postprocess")(postprocess)
+    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
+    if (!js.isUndefined(reportUnusedDisableDirectives)) __obj.updateDynamic("reportUnusedDisableDirectives")(reportUnusedDisableDirectives)
+    __obj.asInstanceOf[LintOptions]
+  }
+}
+

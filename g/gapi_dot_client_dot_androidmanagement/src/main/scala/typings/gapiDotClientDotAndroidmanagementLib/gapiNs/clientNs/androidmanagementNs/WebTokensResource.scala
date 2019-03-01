@@ -10,3 +10,17 @@ trait WebTokensResource extends js.Object {
   def create(request: gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[WebToken]
 }
 
+object WebTokensResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WebToken]
+    ]
+  ): WebTokensResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.asInstanceOf[WebTokensResource]
+  }
+}
+

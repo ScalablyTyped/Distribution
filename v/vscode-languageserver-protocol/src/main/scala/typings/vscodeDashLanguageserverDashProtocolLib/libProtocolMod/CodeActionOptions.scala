@@ -19,3 +19,16 @@ trait CodeActionOptions extends js.Object {
   ] = js.undefined
 }
 
+object CodeActionOptions {
+  @scala.inline
+  def apply(
+    codeActionKinds: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind
+    ] = null
+  ): CodeActionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (codeActionKinds != null) __obj.updateDynamic("codeActionKinds")(codeActionKinds)
+    __obj.asInstanceOf[CodeActionOptions]
+  }
+}
+

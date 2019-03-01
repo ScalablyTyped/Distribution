@@ -38,3 +38,24 @@ trait RequestOptions extends js.Object {
   var render: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    execute: java.lang.String = null,
+    `javax.faces.behavior.event`: js.Any = null,
+    onerror: js.Function1[/* callback */ js.Function1[/* data */ RequestData, scala.Unit], scala.Unit] = null,
+    onevent: js.Function1[/* callback */ js.Function1[/* data */ RequestData, scala.Unit], scala.Unit] = null,
+    params: js.Any = null,
+    render: java.lang.String = null
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (execute != null) __obj.updateDynamic("execute")(execute)
+    if (`javax.faces.behavior.event` != null) __obj.updateDynamic("javax.faces.behavior.event")(`javax.faces.behavior.event`)
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (onevent != null) __obj.updateDynamic("onevent")(onevent)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (render != null) __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

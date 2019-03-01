@@ -12,3 +12,22 @@ trait PlayersResource extends js.Object {
   def unhide(request: gapiDotClientDotGamesmanagementLib.Anon_AltApplicationIdFields): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object PlayersResource {
+  @scala.inline
+  def apply(
+    hide: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_AltApplicationIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    unhide: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_AltApplicationIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): PlayersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("unhide")(unhide)
+    __obj.asInstanceOf[PlayersResource]
+  }
+}
+

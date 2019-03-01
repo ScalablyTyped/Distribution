@@ -13,3 +13,20 @@ trait EncryptedMessage extends js.Object {
   var signature: js.UndefOr[java.lang.String | stdLib.ReadableStream[_] | Signature] = js.undefined
 }
 
+object EncryptedMessage {
+  @scala.inline
+  def apply(
+    data: java.lang.String = null,
+    message: openpgpLib.openpgpMod.messageNs.Message = null,
+    sessionKey: SessionKey = null,
+    signature: java.lang.String | stdLib.ReadableStream[_] | Signature = null
+  ): EncryptedMessage = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EncryptedMessage]
+  }
+}
+

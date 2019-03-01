@@ -5,9 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VariableNode extends js.Object {
+trait VariableNode
+  extends ASTNode
+     with ValueNode {
   val kind: graphqlLib.graphqlLibStrings.Variable
   val loc: js.UndefOr[Location] = js.undefined
   val name: NameNode
+}
+
+object VariableNode {
+  @scala.inline
+  def apply(kind: graphqlLib.graphqlLibStrings.Variable, name: NameNode, loc: Location = null): VariableNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("name")(name)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[VariableNode]
+  }
 }
 

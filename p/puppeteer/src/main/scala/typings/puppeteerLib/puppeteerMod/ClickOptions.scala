@@ -17,3 +17,18 @@ trait ClickOptions extends js.Object {
   var delay: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ClickOptions {
+  @scala.inline
+  def apply(
+    button: MouseButtons = null,
+    clickCount: scala.Int | scala.Double = null,
+    delay: scala.Int | scala.Double = null
+  ): ClickOptions = {
+    val __obj = js.Dynamic.literal()
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (clickCount != null) __obj.updateDynamic("clickCount")(clickCount.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClickOptions]
+  }
+}
+

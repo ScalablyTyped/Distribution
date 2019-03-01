@@ -36,3 +36,28 @@ trait MemoryStore extends js.Object {
   ): scala.Unit
 }
 
+object MemoryStore {
+  @scala.inline
+  def apply(
+    get: js.Function2[
+      java.lang.String, 
+      js.Function2[/* error */ js.Any, /* data */ js.Object, scala.Unit], 
+      scala.Unit
+    ],
+    reset: js.Function2[java.lang.String, js.Function1[/* error */ js.Any, scala.Unit], scala.Unit],
+    set: js.Function4[
+      java.lang.String, 
+      js.Any, 
+      scala.Double, 
+      js.Function1[/* error */ js.Any, scala.Unit], 
+      scala.Unit
+    ]
+  ): MemoryStore = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[MemoryStore]
+  }
+}
+

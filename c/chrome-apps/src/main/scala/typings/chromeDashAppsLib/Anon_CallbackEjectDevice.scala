@@ -65,3 +65,58 @@ trait Anon_CallbackEjectDevice extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackEjectDevice {
+  @scala.inline
+  def apply(
+    EjectDeviceResultCode: Anon_FAILURE,
+    StorageUnitType: Anon_FIXED,
+    ejectDevice: js.Function2[
+      java.lang.String, 
+      js.Function1[
+        /* result */ chromeDashAppsLib.chromeNs.ToStringLiteral[
+          /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode */ js.Any, 
+          java.lang.String, 
+          stdLib.Exclude[
+            java.lang.String, 
+            /* import warning: ImportType.apply Failed type conversion: typeof EjectDeviceResultCode[keyof typeof EjectDeviceResultCode] */ js.Any
+          ]
+        ], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    getAvailableCapacity: js.Function2[
+      java.lang.String, 
+      js.Function1[
+        /* info */ chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageCapacityInfo, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    getInfo: js.Function1[
+      js.Function1[
+        /* info */ js.Array[chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageUnitInfo], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    onAttached: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function1[
+        /* info */ chromeDashAppsLib.chromeNs.systemNs.storageNs.StorageUnitInfo, 
+        scala.Unit
+      ]
+    ],
+    onDetached: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* id */ java.lang.String, scala.Unit]]
+  ): Anon_CallbackEjectDevice = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EjectDeviceResultCode")(EjectDeviceResultCode)
+    __obj.updateDynamic("StorageUnitType")(StorageUnitType)
+    __obj.updateDynamic("ejectDevice")(ejectDevice)
+    __obj.updateDynamic("getAvailableCapacity")(getAvailableCapacity)
+    __obj.updateDynamic("getInfo")(getInfo)
+    __obj.updateDynamic("onAttached")(onAttached)
+    __obj.updateDynamic("onDetached")(onDetached)
+    __obj.asInstanceOf[Anon_CallbackEjectDevice]
+  }
+}
+

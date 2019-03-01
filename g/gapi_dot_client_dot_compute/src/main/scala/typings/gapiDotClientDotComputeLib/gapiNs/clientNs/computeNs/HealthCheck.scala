@@ -44,3 +44,42 @@ trait HealthCheck extends js.Object {
   var unhealthyThreshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HealthCheck {
+  @scala.inline
+  def apply(
+    checkIntervalSec: scala.Int | scala.Double = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    healthyThreshold: scala.Int | scala.Double = null,
+    httpHealthCheck: HTTPHealthCheck = null,
+    httpsHealthCheck: HTTPSHealthCheck = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    sslHealthCheck: SSLHealthCheck = null,
+    tcpHealthCheck: TCPHealthCheck = null,
+    timeoutSec: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    unhealthyThreshold: scala.Int | scala.Double = null
+  ): HealthCheck = {
+    val __obj = js.Dynamic.literal()
+    if (checkIntervalSec != null) __obj.updateDynamic("checkIntervalSec")(checkIntervalSec.asInstanceOf[js.Any])
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (healthyThreshold != null) __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
+    if (httpHealthCheck != null) __obj.updateDynamic("httpHealthCheck")(httpHealthCheck)
+    if (httpsHealthCheck != null) __obj.updateDynamic("httpsHealthCheck")(httpsHealthCheck)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (sslHealthCheck != null) __obj.updateDynamic("sslHealthCheck")(sslHealthCheck)
+    if (tcpHealthCheck != null) __obj.updateDynamic("tcpHealthCheck")(tcpHealthCheck)
+    if (timeoutSec != null) __obj.updateDynamic("timeoutSec")(timeoutSec.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unhealthyThreshold != null) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HealthCheck]
+  }
+}
+

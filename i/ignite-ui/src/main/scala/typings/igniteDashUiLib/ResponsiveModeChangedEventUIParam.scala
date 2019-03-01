@@ -20,3 +20,14 @@ trait ResponsiveModeChangedEventUIParam extends js.Object {
   var previousMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResponsiveModeChangedEventUIParam {
+  @scala.inline
+  def apply(mode: java.lang.String = null, owner: js.Any = null, previousMode: java.lang.String = null): ResponsiveModeChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (previousMode != null) __obj.updateDynamic("previousMode")(previousMode)
+    __obj.asInstanceOf[ResponsiveModeChangedEventUIParam]
+  }
+}
+

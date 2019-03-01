@@ -12,3 +12,17 @@ trait Anon_Length extends js.Object {
   var `type`: firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DescriptionStyleType
 }
 
+object Anon_Length {
+  @scala.inline
+  def apply(
+    offset: scala.Double,
+    `type`: firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DescriptionStyleType,
+    length: scala.Int | scala.Double = null
+  ): Anon_Length = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("offset")(offset)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Length]
+  }
+}
+

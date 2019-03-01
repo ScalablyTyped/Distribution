@@ -7,40 +7,52 @@ import scala.scalajs.js.annotation._
 
 object intlDashTelDashInputLibStrings {
   @js.native
-  sealed trait FIXED_LINE extends js.Object
+  sealed trait FIXED_LINE
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait FIXED_LINE_OR_MOBILE extends js.Object
+  sealed trait FIXED_LINE_OR_MOBILE
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait MOBILE extends js.Object
+  sealed trait MOBILE
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait PAGER extends js.Object
+  sealed trait PAGER
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait PERSONAL_NUMBER extends js.Object
+  sealed trait PERSONAL_NUMBER
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait PREMIUM_RATE extends js.Object
+  sealed trait PREMIUM_RATE
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait SHARED_COST extends js.Object
+  sealed trait SHARED_COST
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait TOLL_FREE extends js.Object
+  sealed trait TOLL_FREE
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait UAN extends js.Object
+  sealed trait UAN
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait VOICEMAIL extends js.Object
+  sealed trait VOICEMAIL
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
-  sealed trait VOIP extends js.Object
+  sealed trait VOIP
+    extends intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType
   
   @js.native
   sealed trait aggressive extends js.Object

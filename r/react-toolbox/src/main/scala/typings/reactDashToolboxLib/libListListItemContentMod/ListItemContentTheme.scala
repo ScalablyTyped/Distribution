@@ -24,3 +24,20 @@ trait ListItemContentTheme extends js.Object {
   var normal: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListItemContentTheme {
+  @scala.inline
+  def apply(
+    auto: java.lang.String = null,
+    itemContentRoot: java.lang.String = null,
+    large: java.lang.String = null,
+    normal: java.lang.String = null
+  ): ListItemContentTheme = {
+    val __obj = js.Dynamic.literal()
+    if (auto != null) __obj.updateDynamic("auto")(auto)
+    if (itemContentRoot != null) __obj.updateDynamic("itemContentRoot")(itemContentRoot)
+    if (large != null) __obj.updateDynamic("large")(large)
+    if (normal != null) __obj.updateDynamic("normal")(normal)
+    __obj.asInstanceOf[ListItemContentTheme]
+  }
+}
+

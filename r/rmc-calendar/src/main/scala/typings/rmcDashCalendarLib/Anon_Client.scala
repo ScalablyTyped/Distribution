@@ -11,3 +11,14 @@ trait Anon_Client extends js.Object {
   var top: scala.Double
 }
 
+object Anon_Client {
+  @scala.inline
+  def apply(client: scala.Double, full: scala.Double, top: scala.Double): Anon_Client = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("full")(full)
+    __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[Anon_Client]
+  }
+}
+

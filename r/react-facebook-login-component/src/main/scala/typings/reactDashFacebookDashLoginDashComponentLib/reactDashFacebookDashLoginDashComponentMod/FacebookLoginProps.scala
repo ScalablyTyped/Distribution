@@ -15,3 +15,26 @@ trait FacebookLoginProps
   def responseHandler(response: FacebookLoginInfo): scala.Unit
 }
 
+object FacebookLoginProps {
+  @scala.inline
+  def apply(
+    responseHandler: js.Function1[FacebookLoginInfo, scala.Unit],
+    socialId: java.lang.String,
+    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] = null,
+    buttonText: java.lang.String = null,
+    fields: java.lang.String = null,
+    version: java.lang.String = null,
+    xfbml: js.UndefOr[scala.Boolean] = js.undefined
+  ): FacebookLoginProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("responseHandler")(responseHandler)
+    __obj.updateDynamic("socialId")(socialId)
+    js.Dynamic.global.Object.assign(__obj, ButtonHTMLAttributes)
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(xfbml)) __obj.updateDynamic("xfbml")(xfbml)
+    __obj.asInstanceOf[FacebookLoginProps]
+  }
+}
+

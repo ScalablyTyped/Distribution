@@ -12,3 +12,12 @@ trait Level extends js.Object {
   var groupMemberPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Level {
+  @scala.inline
+  def apply(groupMemberPath: java.lang.String = null): Level = {
+    val __obj = js.Dynamic.literal()
+    if (groupMemberPath != null) __obj.updateDynamic("groupMemberPath")(groupMemberPath)
+    __obj.asInstanceOf[Level]
+  }
+}
+

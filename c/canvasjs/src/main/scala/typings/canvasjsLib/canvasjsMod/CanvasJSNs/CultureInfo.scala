@@ -83,3 +83,36 @@ trait CultureInfo extends js.Object {
   var zoomText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CultureInfo {
+  @scala.inline
+  def apply(
+    days: js.Array[java.lang.String] = null,
+    decimalSeparator: java.lang.String = null,
+    digitGroupSeparator: java.lang.String = null,
+    menuText: java.lang.String = null,
+    months: js.Array[java.lang.String] = null,
+    panText: java.lang.String = null,
+    resetText: java.lang.String = null,
+    saveJPGText: java.lang.String = null,
+    savePNGText: java.lang.String = null,
+    shortDays: js.Array[java.lang.String] = null,
+    shortMonths: js.Array[java.lang.String] = null,
+    zoomText: java.lang.String = null
+  ): CultureInfo = {
+    val __obj = js.Dynamic.literal()
+    if (days != null) __obj.updateDynamic("days")(days)
+    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator)
+    if (digitGroupSeparator != null) __obj.updateDynamic("digitGroupSeparator")(digitGroupSeparator)
+    if (menuText != null) __obj.updateDynamic("menuText")(menuText)
+    if (months != null) __obj.updateDynamic("months")(months)
+    if (panText != null) __obj.updateDynamic("panText")(panText)
+    if (resetText != null) __obj.updateDynamic("resetText")(resetText)
+    if (saveJPGText != null) __obj.updateDynamic("saveJPGText")(saveJPGText)
+    if (savePNGText != null) __obj.updateDynamic("savePNGText")(savePNGText)
+    if (shortDays != null) __obj.updateDynamic("shortDays")(shortDays)
+    if (shortMonths != null) __obj.updateDynamic("shortMonths")(shortMonths)
+    if (zoomText != null) __obj.updateDynamic("zoomText")(zoomText)
+    __obj.asInstanceOf[CultureInfo]
+  }
+}
+

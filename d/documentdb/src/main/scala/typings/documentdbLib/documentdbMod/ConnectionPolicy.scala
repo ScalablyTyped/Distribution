@@ -28,3 +28,26 @@ trait ConnectionPolicy extends js.Object {
   var RetryOptions: RetryOptions
 }
 
+object ConnectionPolicy {
+  @scala.inline
+  def apply(
+    DisableSSLVerification: scala.Boolean,
+    EnableEndpointDiscovery: scala.Boolean,
+    MediaReadMode: MediaReadMode,
+    MediaRequestTimeout: scala.Double,
+    PreferredLocations: js.Array[_],
+    RequestTimeout: scala.Double,
+    RetryOptions: RetryOptions
+  ): ConnectionPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DisableSSLVerification")(DisableSSLVerification)
+    __obj.updateDynamic("EnableEndpointDiscovery")(EnableEndpointDiscovery)
+    __obj.updateDynamic("MediaReadMode")(MediaReadMode)
+    __obj.updateDynamic("MediaRequestTimeout")(MediaRequestTimeout)
+    __obj.updateDynamic("PreferredLocations")(PreferredLocations)
+    __obj.updateDynamic("RequestTimeout")(RequestTimeout)
+    __obj.updateDynamic("RetryOptions")(RetryOptions)
+    __obj.asInstanceOf[ConnectionPolicy]
+  }
+}
+

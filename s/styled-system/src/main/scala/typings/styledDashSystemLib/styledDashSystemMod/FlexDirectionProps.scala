@@ -15,3 +15,12 @@ trait FlexDirectionProps extends js.Object {
   var flexDirection: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.FlexDirectionProperty]] = js.undefined
 }
 
+object FlexDirectionProps {
+  @scala.inline
+  def apply(flexDirection: ResponsiveValue[csstypeLib.csstypeMod.FlexDirectionProperty] = null): FlexDirectionProps = {
+    val __obj = js.Dynamic.literal()
+    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlexDirectionProps]
+  }
+}
+

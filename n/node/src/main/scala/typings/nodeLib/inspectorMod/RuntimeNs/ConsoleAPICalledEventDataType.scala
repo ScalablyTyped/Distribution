@@ -35,3 +35,23 @@ trait ConsoleAPICalledEventDataType extends js.Object {
   var `type`: java.lang.String
 }
 
+object ConsoleAPICalledEventDataType {
+  @scala.inline
+  def apply(
+    args: js.Array[RemoteObject],
+    executionContextId: ExecutionContextId,
+    timestamp: Timestamp,
+    `type`: java.lang.String,
+    context: java.lang.String = null,
+    stackTrace: StackTrace = null
+  ): ConsoleAPICalledEventDataType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("executionContextId")(executionContextId)
+    __obj.updateDynamic("timestamp")(timestamp)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
+    __obj.asInstanceOf[ConsoleAPICalledEventDataType]
+  }
+}
+

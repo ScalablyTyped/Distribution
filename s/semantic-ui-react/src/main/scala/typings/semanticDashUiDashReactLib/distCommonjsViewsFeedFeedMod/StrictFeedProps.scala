@@ -22,3 +22,22 @@ trait StrictFeedProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictFeedProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    events: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedEventMod.FeedEventProps] = null,
+    size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large = null
+  ): StrictFeedProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictFeedProps]
+  }
+}
+

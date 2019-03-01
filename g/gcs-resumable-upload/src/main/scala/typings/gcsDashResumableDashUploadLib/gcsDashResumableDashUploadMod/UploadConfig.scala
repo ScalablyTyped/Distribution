@@ -79,3 +79,42 @@ trait UploadConfig extends js.Object {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UploadConfig {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String,
+    file: java.lang.String,
+    authClient: googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth = null,
+    authConfig: googleDashAuthDashLibraryLib.buildSrcAuthGoogleauthMod.GoogleAuthOptions = null,
+    generation: scala.Int | scala.Double = null,
+    key: java.lang.String | nodeLib.Buffer = null,
+    kmsKeyName: java.lang.String = null,
+    metadata: ConfigMetadata = null,
+    offset: scala.Int | scala.Double = null,
+    origin: java.lang.String = null,
+    predefinedAcl: gcsDashResumableDashUploadLib.gcsDashResumableDashUploadLibStrings.authenticatedRead | gcsDashResumableDashUploadLib.gcsDashResumableDashUploadLibStrings.bucketOwnerFullControl | gcsDashResumableDashUploadLib.gcsDashResumableDashUploadLibStrings.bucketOwnerRead | gcsDashResumableDashUploadLib.gcsDashResumableDashUploadLibStrings.`private` | gcsDashResumableDashUploadLib.gcsDashResumableDashUploadLibStrings.projectPrivate | gcsDashResumableDashUploadLib.gcsDashResumableDashUploadLibStrings.publicRead = null,
+    `private`: js.UndefOr[scala.Boolean] = js.undefined,
+    public: js.UndefOr[scala.Boolean] = js.undefined,
+    uri: java.lang.String = null,
+    userProject: java.lang.String = null
+  ): UploadConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucket")(bucket)
+    __obj.updateDynamic("file")(file)
+    if (authClient != null) __obj.updateDynamic("authClient")(authClient)
+    if (authConfig != null) __obj.updateDynamic("authConfig")(authConfig)
+    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    __obj.asInstanceOf[UploadConfig]
+  }
+}
+

@@ -10,3 +10,12 @@ trait InstanceGroupManagersDeleteInstancesRequest extends js.Object {
   var instances: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object InstanceGroupManagersDeleteInstancesRequest {
+  @scala.inline
+  def apply(instances: js.Array[java.lang.String] = null): InstanceGroupManagersDeleteInstancesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (instances != null) __obj.updateDynamic("instances")(instances)
+    __obj.asInstanceOf[InstanceGroupManagersDeleteInstancesRequest]
+  }
+}
+

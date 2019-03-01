@@ -63,3 +63,30 @@ trait Connect extends js.Object {
   var vhost: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Connect {
+  @scala.inline
+  def apply(
+    frameMax: scala.Int | scala.Double = null,
+    heartbeat: scala.Int | scala.Double = null,
+    hostname: java.lang.String = null,
+    locale: java.lang.String = null,
+    password: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    protocol: java.lang.String = null,
+    username: java.lang.String = null,
+    vhost: java.lang.String = null
+  ): Connect = {
+    val __obj = js.Dynamic.literal()
+    if (frameMax != null) __obj.updateDynamic("frameMax")(frameMax.asInstanceOf[js.Any])
+    if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (username != null) __obj.updateDynamic("username")(username)
+    if (vhost != null) __obj.updateDynamic("vhost")(vhost)
+    __obj.asInstanceOf[Connect]
+  }
+}
+

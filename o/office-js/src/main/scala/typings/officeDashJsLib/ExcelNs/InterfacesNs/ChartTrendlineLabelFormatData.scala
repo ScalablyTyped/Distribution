@@ -23,3 +23,13 @@ trait ChartTrendlineLabelFormatData extends js.Object {
   var font: js.UndefOr[ChartFontData] = js.undefined
 }
 
+object ChartTrendlineLabelFormatData {
+  @scala.inline
+  def apply(border: ChartBorderData = null, font: ChartFontData = null): ChartTrendlineLabelFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (font != null) __obj.updateDynamic("font")(font)
+    __obj.asInstanceOf[ChartTrendlineLabelFormatData]
+  }
+}
+

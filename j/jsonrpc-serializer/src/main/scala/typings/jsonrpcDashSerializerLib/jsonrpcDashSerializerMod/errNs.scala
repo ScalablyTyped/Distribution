@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("jsonrpc-serializer", "err")
 @js.native
 object errNs extends js.Object {
+  trait ErrorCode extends js.Object
+  
+  trait ErrorName extends js.Object
+  
   @js.native
   class InvalidParamsError protected () extends JsonRpcError {
     def this(args: js.Any*) = this()
@@ -52,14 +56,5 @@ object errNs extends js.Object {
     def this(args: js.Any*) = this()
   }
   
-  // const ErrorName = {
-  //    JsonRpcError: 'JsonRpcError' as ErrorName,
-  //    ParseError: 'ParseError' as ErrorName,
-  //    InvalidRequestError: 'InvalidRequestError' as ErrorName,
-  //    MethodNotFoundError: 'MethodNotFoundError' as ErrorName,
-  //    InvalidParamsError: 'InvalidParamsError' as ErrorName
-  // };
-  type ErrorCode = jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32603` | jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32700` | jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32600` | jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32601` | jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32602`
-  type ErrorName = jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.JsonRpcError | jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.ParseError | jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.InvalidRequestError | jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.MethodNotFoundError | jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.InvalidParamsError
 }
 

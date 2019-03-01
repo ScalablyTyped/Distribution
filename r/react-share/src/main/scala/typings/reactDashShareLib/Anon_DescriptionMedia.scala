@@ -11,3 +11,13 @@ trait Anon_DescriptionMedia extends js.Object {
   var media: java.lang.String
 }
 
+object Anon_DescriptionMedia {
+  @scala.inline
+  def apply(media: java.lang.String, description: java.lang.String = null): Anon_DescriptionMedia = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("media")(media)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[Anon_DescriptionMedia]
+  }
+}
+

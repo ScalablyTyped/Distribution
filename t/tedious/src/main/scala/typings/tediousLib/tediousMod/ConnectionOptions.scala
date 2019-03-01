@@ -191,3 +191,99 @@ trait ConnectionOptions extends js.Object {
   var useUTC: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConnectionOptions {
+  @scala.inline
+  def apply(
+    abortTransactionOnError: js.UndefOr[scala.Boolean] = js.undefined,
+    appName: java.lang.String = null,
+    camelCaseColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelTimeout: scala.Int | scala.Double = null,
+    columnNameReplacer: js.Function3[
+      /* columnName */ java.lang.String, 
+      /* index */ scala.Double, 
+      /* columnMetaData */ ColumnMetaData, 
+      java.lang.String
+    ] = null,
+    connectTimeout: scala.Int | scala.Double = null,
+    connectionIsolationLevel: ISOLATION_LEVEL = null,
+    connectionRetryInterval: scala.Int | scala.Double = null,
+    cryptoCredentialsDetails: js.Object = null,
+    database: java.lang.String = null,
+    dateFormat: java.lang.String = null,
+    datefirst: scala.Int | scala.Double = null,
+    debug: DebugOptions = null,
+    enableAnsiNull: js.UndefOr[scala.Boolean] = js.undefined,
+    enableAnsiNullDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    enableAnsiPadding: js.UndefOr[scala.Boolean] = js.undefined,
+    enableAnsiWarnings: js.UndefOr[scala.Boolean] = js.undefined,
+    enableArithAbort: js.UndefOr[scala.Boolean] = js.undefined,
+    enableConcatNullYieldsNull: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCursorCloseOnCommit: js.UndefOr[scala.Boolean] = js.undefined,
+    enableImplicitTransactions: js.UndefOr[scala.Boolean] = js.undefined,
+    enableNumericRoundabort: js.UndefOr[scala.Boolean] = js.undefined,
+    enableQuotedIdentifier: js.UndefOr[scala.Boolean] = js.undefined,
+    encrypt: js.UndefOr[scala.Boolean] = js.undefined,
+    fallbackToDefaultDb: js.UndefOr[scala.Boolean] = js.undefined,
+    instanceName: java.lang.String = null,
+    isolationLevel: ISOLATION_LEVEL = null,
+    language: java.lang.String = null,
+    localAddress: java.lang.String = null,
+    maxRetriesOnTransientErrors: scala.Int | scala.Double = null,
+    packetSize: scala.Int | scala.Double = null,
+    port: scala.Int | scala.Double = null,
+    readOnlyIntent: js.UndefOr[scala.Boolean] = js.undefined,
+    requestTimeout: scala.Int | scala.Double = null,
+    rowCollectionOnDone: js.UndefOr[scala.Boolean] = js.undefined,
+    rowCollectionOnRequestCompletion: js.UndefOr[scala.Boolean] = js.undefined,
+    tdsVersion: scala.Int | scala.Double = null,
+    textsize: scala.Int | scala.Double = null,
+    trustServerCertificate: js.UndefOr[scala.Boolean] = js.undefined,
+    useColumnNames: js.UndefOr[scala.Boolean] = js.undefined,
+    useUTC: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConnectionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(abortTransactionOnError)) __obj.updateDynamic("abortTransactionOnError")(abortTransactionOnError)
+    if (appName != null) __obj.updateDynamic("appName")(appName)
+    if (!js.isUndefined(camelCaseColumns)) __obj.updateDynamic("camelCaseColumns")(camelCaseColumns)
+    if (cancelTimeout != null) __obj.updateDynamic("cancelTimeout")(cancelTimeout.asInstanceOf[js.Any])
+    if (columnNameReplacer != null) __obj.updateDynamic("columnNameReplacer")(columnNameReplacer)
+    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (connectionIsolationLevel != null) __obj.updateDynamic("connectionIsolationLevel")(connectionIsolationLevel)
+    if (connectionRetryInterval != null) __obj.updateDynamic("connectionRetryInterval")(connectionRetryInterval.asInstanceOf[js.Any])
+    if (cryptoCredentialsDetails != null) __obj.updateDynamic("cryptoCredentialsDetails")(cryptoCredentialsDetails)
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (datefirst != null) __obj.updateDynamic("datefirst")(datefirst.asInstanceOf[js.Any])
+    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(enableAnsiNull)) __obj.updateDynamic("enableAnsiNull")(enableAnsiNull)
+    if (!js.isUndefined(enableAnsiNullDefault)) __obj.updateDynamic("enableAnsiNullDefault")(enableAnsiNullDefault)
+    if (!js.isUndefined(enableAnsiPadding)) __obj.updateDynamic("enableAnsiPadding")(enableAnsiPadding)
+    if (!js.isUndefined(enableAnsiWarnings)) __obj.updateDynamic("enableAnsiWarnings")(enableAnsiWarnings)
+    if (!js.isUndefined(enableArithAbort)) __obj.updateDynamic("enableArithAbort")(enableArithAbort)
+    if (!js.isUndefined(enableConcatNullYieldsNull)) __obj.updateDynamic("enableConcatNullYieldsNull")(enableConcatNullYieldsNull)
+    if (!js.isUndefined(enableCursorCloseOnCommit)) __obj.updateDynamic("enableCursorCloseOnCommit")(enableCursorCloseOnCommit)
+    if (!js.isUndefined(enableImplicitTransactions)) __obj.updateDynamic("enableImplicitTransactions")(enableImplicitTransactions)
+    if (!js.isUndefined(enableNumericRoundabort)) __obj.updateDynamic("enableNumericRoundabort")(enableNumericRoundabort)
+    if (!js.isUndefined(enableQuotedIdentifier)) __obj.updateDynamic("enableQuotedIdentifier")(enableQuotedIdentifier)
+    if (!js.isUndefined(encrypt)) __obj.updateDynamic("encrypt")(encrypt)
+    if (!js.isUndefined(fallbackToDefaultDb)) __obj.updateDynamic("fallbackToDefaultDb")(fallbackToDefaultDb)
+    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName)
+    if (isolationLevel != null) __obj.updateDynamic("isolationLevel")(isolationLevel)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (maxRetriesOnTransientErrors != null) __obj.updateDynamic("maxRetriesOnTransientErrors")(maxRetriesOnTransientErrors.asInstanceOf[js.Any])
+    if (packetSize != null) __obj.updateDynamic("packetSize")(packetSize.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnlyIntent)) __obj.updateDynamic("readOnlyIntent")(readOnlyIntent)
+    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowCollectionOnDone)) __obj.updateDynamic("rowCollectionOnDone")(rowCollectionOnDone)
+    if (!js.isUndefined(rowCollectionOnRequestCompletion)) __obj.updateDynamic("rowCollectionOnRequestCompletion")(rowCollectionOnRequestCompletion)
+    if (tdsVersion != null) __obj.updateDynamic("tdsVersion")(tdsVersion.asInstanceOf[js.Any])
+    if (textsize != null) __obj.updateDynamic("textsize")(textsize.asInstanceOf[js.Any])
+    if (!js.isUndefined(trustServerCertificate)) __obj.updateDynamic("trustServerCertificate")(trustServerCertificate)
+    if (!js.isUndefined(useColumnNames)) __obj.updateDynamic("useColumnNames")(useColumnNames)
+    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC)
+    __obj.asInstanceOf[ConnectionOptions]
+  }
+}
+

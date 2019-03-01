@@ -55,3 +55,30 @@ trait JQueryStickyOptions extends js.Object {
   var zIndex: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JQueryStickyOptions {
+  @scala.inline
+  def apply(
+    bottomSpacing: scala.Int | scala.Double = null,
+    center: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    getWidthFrom: java.lang.String = null,
+    responsiveWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    topSpacing: scala.Int | scala.Double = null,
+    widthFromWrapper: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapperClassName: java.lang.String = null,
+    zIndex: java.lang.String = null
+  ): JQueryStickyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bottomSpacing != null) __obj.updateDynamic("bottomSpacing")(bottomSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (getWidthFrom != null) __obj.updateDynamic("getWidthFrom")(getWidthFrom)
+    if (!js.isUndefined(responsiveWidth)) __obj.updateDynamic("responsiveWidth")(responsiveWidth)
+    if (topSpacing != null) __obj.updateDynamic("topSpacing")(topSpacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(widthFromWrapper)) __obj.updateDynamic("widthFromWrapper")(widthFromWrapper)
+    if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex)
+    __obj.asInstanceOf[JQueryStickyOptions]
+  }
+}
+

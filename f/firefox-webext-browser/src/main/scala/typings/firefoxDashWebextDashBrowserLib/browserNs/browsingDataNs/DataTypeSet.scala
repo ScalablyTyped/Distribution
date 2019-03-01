@@ -34,3 +34,34 @@ trait DataTypeSet extends js.Object {
   var serviceWorkers: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataTypeSet {
+  @scala.inline
+  def apply(
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    cookies: js.UndefOr[scala.Boolean] = js.undefined,
+    downloads: js.UndefOr[scala.Boolean] = js.undefined,
+    formData: js.UndefOr[scala.Boolean] = js.undefined,
+    history: js.UndefOr[scala.Boolean] = js.undefined,
+    indexedDB: js.UndefOr[scala.Boolean] = js.undefined,
+    localStorage: js.UndefOr[scala.Boolean] = js.undefined,
+    passwords: js.UndefOr[scala.Boolean] = js.undefined,
+    pluginData: js.UndefOr[scala.Boolean] = js.undefined,
+    serverBoundCertificates: js.UndefOr[scala.Boolean] = js.undefined,
+    serviceWorkers: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataTypeSet = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies)
+    if (!js.isUndefined(downloads)) __obj.updateDynamic("downloads")(downloads)
+    if (!js.isUndefined(formData)) __obj.updateDynamic("formData")(formData)
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
+    if (!js.isUndefined(indexedDB)) __obj.updateDynamic("indexedDB")(indexedDB)
+    if (!js.isUndefined(localStorage)) __obj.updateDynamic("localStorage")(localStorage)
+    if (!js.isUndefined(passwords)) __obj.updateDynamic("passwords")(passwords)
+    if (!js.isUndefined(pluginData)) __obj.updateDynamic("pluginData")(pluginData)
+    if (!js.isUndefined(serverBoundCertificates)) __obj.updateDynamic("serverBoundCertificates")(serverBoundCertificates)
+    if (!js.isUndefined(serviceWorkers)) __obj.updateDynamic("serviceWorkers")(serviceWorkers)
+    __obj.asInstanceOf[DataTypeSet]
+  }
+}
+

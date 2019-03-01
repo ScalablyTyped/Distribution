@@ -20,3 +20,18 @@ trait Session extends js.Object {
   var window: js.UndefOr[chromeLib.chromeNs.windowsNs.Window] = js.undefined
 }
 
+object Session {
+  @scala.inline
+  def apply(
+    lastModified: scala.Double,
+    tab: chromeLib.chromeNs.tabsNs.Tab = null,
+    window: chromeLib.chromeNs.windowsNs.Window = null
+  ): Session = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lastModified")(lastModified)
+    if (tab != null) __obj.updateDynamic("tab")(tab)
+    if (window != null) __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[Session]
+  }
+}
+

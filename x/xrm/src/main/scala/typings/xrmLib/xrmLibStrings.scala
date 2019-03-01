@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation._
 
 object xrmLibStrings {
   @js.native
-  sealed trait ERROR extends js.Object
+  sealed trait ERROR
+    extends xrmLib.XrmNs.FormNotificationLevel
+       with xrmLib.XrmNs.ControlsNs.NotificationLevel
   
   @js.native
-  sealed trait INFO extends js.Object
+  sealed trait INFO
+    extends xrmLib.XrmNs.FormNotificationLevel
   
   @js.native
   sealed trait MaxChildIncidentNumber extends js.Object
@@ -19,205 +22,276 @@ object xrmLibStrings {
   sealed trait MaxIncidentMergeNumber extends js.Object
   
   @js.native
-  sealed trait Mobile extends js.Object
+  sealed trait Mobile
+    extends xrmLib.XrmNs.Client
   
   @js.native
-  sealed trait Next extends js.Object
+  sealed trait Next
+    extends xrmLib.XrmNs.ProcessFlowNs.StageChangeDirection
   
   @js.native
-  sealed trait Office12Blue extends js.Object
+  sealed trait Office12Blue
+    extends xrmLib.XrmNs.Theme
   
   @js.native
-  sealed trait Office14Silver extends js.Object
+  sealed trait Office14Silver
+    extends xrmLib.XrmNs.Theme
   
   @js.native
-  sealed trait Offline extends js.Object
+  sealed trait Offline
+    extends xrmLib.XrmNs.ClientState
   
   @js.native
-  sealed trait Online extends js.Object
+  sealed trait Online
+    extends xrmLib.XrmNs.ClientState
   
   @js.native
-  sealed trait Outlook extends js.Object
+  sealed trait Outlook
+    extends xrmLib.XrmNs.Client
   
   @js.native
-  sealed trait Previous extends js.Object
+  sealed trait Previous
+    extends xrmLib.XrmNs.ProcessFlowNs.StageChangeDirection
   
   @js.native
-  sealed trait RECOMMENDATION extends js.Object
+  sealed trait RECOMMENDATION
+    extends xrmLib.XrmNs.ControlsNs.NotificationLevel
   
   @js.native
-  sealed trait UnifiedServiceDesk extends js.Object
+  sealed trait UnifiedServiceDesk
+    extends xrmLib.XrmNs.Client
   
   @js.native
-  sealed trait WARNING extends js.Object
+  sealed trait WARNING
+    extends xrmLib.XrmNs.FormNotificationLevel
   
   @js.native
-  sealed trait Web extends js.Object
+  sealed trait Web
+    extends xrmLib.XrmNs.Client
   
   @js.native
-  sealed trait aborted extends js.Object
+  sealed trait aborted
+    extends xrmLib.XrmNs.ProcessFlowNs.ProcessStatus
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends xrmLib.XrmNs.ProcessFlowNs.ProcessStatus
+       with xrmLib.XrmNs.ProcessFlowNs.StageStatus
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends xrmLib.XrmNs.SubmitMode
   
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait audio
+    extends xrmLib.XrmNs.DeviceNs.PickFileTypes
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
   
   @js.native
-  sealed trait collapsed extends js.Object
+  sealed trait collapsed
+    extends xrmLib.XrmNs.DisplayState
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends xrmLib.XrmNs.AttributesNs.DateAttributeFormat
   
   @js.native
-  sealed trait datetime extends js.Object
+  sealed trait datetime
+    extends xrmLib.XrmNs.AttributesNs.DateAttributeFormat
+       with xrmLib.XrmNs.AttributesNs.AttributeType
   
   @js.native
-  sealed trait decimal extends js.Object
+  sealed trait decimal
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends xrmLib.XrmNs.Theme
   
   @js.native
-  sealed trait dirty extends js.Object
+  sealed trait dirty
+    extends xrmLib.XrmNs.SubmitMode
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait double
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
   
   @js.native
-  sealed trait duration extends js.Object
+  sealed trait duration
+    extends xrmLib.XrmNs.AttributesNs.IntegerAttributeFormat
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends xrmLib.XrmNs.AttributesNs.StringAttributeFormat
   
   @js.native
-  sealed trait entity extends js.Object
+  sealed trait entity
+    extends xrmLib.XrmNs.UrlNs.NavBarDisplay
   
   @js.native
-  sealed trait expanded extends js.Object
+  sealed trait expanded
+    extends xrmLib.XrmNs.DisplayState
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends xrmLib.XrmNs.UrlNs.CmdBarDisplay
   
   @js.native
-  sealed trait filter extends js.Object
+  sealed trait filter
+    extends xrmLib.XrmNs.UrlNs.ReportAction
   
   @js.native
-  sealed trait finished extends js.Object
+  sealed trait finished
+    extends xrmLib.XrmNs.ProcessFlowNs.ProcessStatus
   
   @js.native
-  sealed trait iframe extends js.Object
+  sealed trait iframe
+    extends xrmLib.XrmNs.ControlsNs._ControlType
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends xrmLib.XrmNs.DeviceNs.PickFileTypes
   
   @js.native
-  sealed trait inactive extends js.Object
+  sealed trait inactive
+    extends xrmLib.XrmNs.ProcessFlowNs.StageStatus
   
   @js.native
-  sealed trait integer extends js.Object
+  sealed trait integer
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
   
   @js.native
-  sealed trait kbsearch extends js.Object
+  sealed trait kbsearch
+    extends xrmLib.XrmNs.ControlsNs._ControlType
   
   @js.native
-  sealed trait language extends js.Object
+  sealed trait language
+    extends xrmLib.XrmNs.AttributesNs.OptionSetAttributeFormat
   
   @js.native
-  sealed trait lookup extends js.Object
+  sealed trait lookup
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
+       with xrmLib.XrmNs.ControlsNs._ControlType
   
   @js.native
-  sealed trait memo extends js.Object
+  sealed trait memo
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
   
   @js.native
-  sealed trait money extends js.Object
+  sealed trait money
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
   
   @js.native
-  sealed trait multioptionset extends js.Object
+  sealed trait multioptionset
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait never
+    extends xrmLib.XrmNs.SubmitMode
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends xrmLib.XrmNs.AttributesNs.IntegerAttributeFormat
+       with xrmLib.XrmNs.AttributesNs.RequirementLevel
   
   @js.native
-  sealed trait notes extends js.Object
+  sealed trait notes
+    extends xrmLib.XrmNs.ControlsNs._ControlType
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends xrmLib.XrmNs.UrlNs.NavBarDisplay
   
   @js.native
-  sealed trait on extends js.Object
+  sealed trait on
+    extends xrmLib.XrmNs.UrlNs.NavBarDisplay
   
   @js.native
-  sealed trait optionset extends js.Object
+  sealed trait optionset
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
+       with xrmLib.XrmNs.ControlsNs._ControlType
   
   @js.native
-  sealed trait phone extends js.Object
+  sealed trait phone
+    extends xrmLib.XrmNs.AttributesNs.StringAttributeFormat
   
   @js.native
   sealed trait quickform extends js.Object
   
   @js.native
-  sealed trait recommended extends js.Object
+  sealed trait recommended
+    extends xrmLib.XrmNs.AttributesNs.RequirementLevel
   
   @js.native
-  sealed trait required extends js.Object
+  sealed trait required
+    extends xrmLib.XrmNs.AttributesNs.RequirementLevel
   
   @js.native
-  sealed trait run extends js.Object
+  sealed trait run
+    extends xrmLib.XrmNs.UrlNs.ReportAction
   
   @js.native
-  sealed trait saveandclose extends js.Object
+  sealed trait saveandclose
+    extends xrmLib.XrmNs.EntitySaveMode
   
   @js.native
-  sealed trait saveandnew extends js.Object
+  sealed trait saveandnew
+    extends xrmLib.XrmNs.EntitySaveMode
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard
+    extends xrmLib.XrmNs.ControlsNs._ControlType
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends xrmLib.XrmNs.AttributesNs.AttributeType
   
   @js.native
-  sealed trait subgrid extends js.Object
+  sealed trait subgrid
+    extends xrmLib.XrmNs.ControlsNs._ControlType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends xrmLib.XrmNs.AttributesNs.StringAttributeFormat
   
   @js.native
-  sealed trait textarea extends js.Object
+  sealed trait textarea
+    extends xrmLib.XrmNs.AttributesNs.StringAttributeFormat
   
   @js.native
-  sealed trait tickersymbol extends js.Object
+  sealed trait tickersymbol
+    extends xrmLib.XrmNs.AttributesNs.StringAttributeFormat
   
   @js.native
-  sealed trait timelinewall extends js.Object
+  sealed trait timelinewall
+    extends xrmLib.XrmNs.ControlsNs._ControlType
   
   @js.native
-  sealed trait timercontrol extends js.Object
+  sealed trait timercontrol
+    extends xrmLib.XrmNs.ControlsNs._ControlType
   
   @js.native
-  sealed trait timezone extends js.Object
+  sealed trait timezone
+    extends xrmLib.XrmNs.AttributesNs.OptionSetAttributeFormat
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait `true`
+    extends xrmLib.XrmNs.UrlNs.CmdBarDisplay
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends xrmLib.XrmNs.AttributesNs.StringAttributeFormat
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait video
+    extends xrmLib.XrmNs.DeviceNs.PickFileTypes
   
   @js.native
-  sealed trait webresource extends js.Object
+  sealed trait webresource
+    extends xrmLib.XrmNs.ControlsNs._ControlType
   
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]

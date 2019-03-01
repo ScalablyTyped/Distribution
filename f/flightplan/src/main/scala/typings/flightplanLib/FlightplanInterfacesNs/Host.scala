@@ -10,3 +10,13 @@ trait Host extends js.Object {
   var port: scala.Double
 }
 
+object Host {
+  @scala.inline
+  def apply(host: java.lang.String, port: scala.Double): Host = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("port")(port)
+    __obj.asInstanceOf[Host]
+  }
+}
+

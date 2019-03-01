@@ -42,3 +42,34 @@ trait Anon_DetailsGetPopup extends js.Object {
   def show(tabId: scala.Double): js.Promise[scala.Unit]
 }
 
+object Anon_DetailsGetPopup {
+  @scala.inline
+  def apply(
+    getPopup: js.Function1[Anon_TabIdNumber, js.Promise[java.lang.String]],
+    getTitle: js.Function1[Anon_TabIdNumber, js.Promise[java.lang.String]],
+    hide: js.Function1[scala.Double, js.Promise[scala.Unit]],
+    isShown: js.Function1[Anon_TabIdNumber, js.Promise[scala.Boolean]],
+    onClicked: WebExtEvent[
+      js.Function1[/* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab, scala.Unit]
+    ],
+    openPopup: js.Function0[js.Promise[scala.Unit]],
+    setIcon: js.Function1[Anon_ImageDataKeyPath, js.Promise[scala.Unit]],
+    setPopup: js.Function1[Anon_PopupTabId, scala.Unit],
+    setTitle: js.Function1[Anon_TabIdTitleNull, scala.Unit],
+    show: js.Function1[scala.Double, js.Promise[scala.Unit]]
+  ): Anon_DetailsGetPopup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getPopup")(getPopup)
+    __obj.updateDynamic("getTitle")(getTitle)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("isShown")(isShown)
+    __obj.updateDynamic("onClicked")(onClicked)
+    __obj.updateDynamic("openPopup")(openPopup)
+    __obj.updateDynamic("setIcon")(setIcon)
+    __obj.updateDynamic("setPopup")(setPopup)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[Anon_DetailsGetPopup]
+  }
+}
+

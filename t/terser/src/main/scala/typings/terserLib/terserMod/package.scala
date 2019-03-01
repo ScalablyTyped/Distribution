@@ -63,5 +63,4 @@ package object terserMod {
   type AST_Undefined = AST_Atom
   type AST_Var = AST_Definitions
   type AST_While = AST_DWLoop
-  type ECMA = terserLib.terserLibNumbers.`5` | terserLib.terserLibNumbers.`6` | terserLib.terserLibNumbers.`7` | terserLib.terserLibNumbers.`8` | terserLib.terserLibNumbers.`9`
 }

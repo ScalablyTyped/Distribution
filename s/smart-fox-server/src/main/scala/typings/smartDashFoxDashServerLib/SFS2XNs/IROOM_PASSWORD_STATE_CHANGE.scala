@@ -9,3 +9,12 @@ trait IROOM_PASSWORD_STATE_CHANGE extends js.Object {
   var room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom
 }
 
+object IROOM_PASSWORD_STATE_CHANGE {
+  @scala.inline
+  def apply(room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom): IROOM_PASSWORD_STATE_CHANGE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[IROOM_PASSWORD_STATE_CHANGE]
+  }
+}
+

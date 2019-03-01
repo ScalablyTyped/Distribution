@@ -44,3 +44,22 @@ trait InkWordLoadOptions extends js.Object {
   var wordAlternates: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InkWordLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    languageId: js.UndefOr[scala.Boolean] = js.undefined,
+    paragraph: ParagraphLoadOptions = null,
+    wordAlternates: js.UndefOr[scala.Boolean] = js.undefined
+  ): InkWordLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(languageId)) __obj.updateDynamic("languageId")(languageId)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    if (!js.isUndefined(wordAlternates)) __obj.updateDynamic("wordAlternates")(wordAlternates)
+    __obj.asInstanceOf[InkWordLoadOptions]
+  }
+}
+

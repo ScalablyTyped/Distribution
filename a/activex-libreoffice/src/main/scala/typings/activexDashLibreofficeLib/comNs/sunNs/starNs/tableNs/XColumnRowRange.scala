@@ -33,3 +33,26 @@ trait XColumnRowRange
   def getRows(): XTableRows
 }
 
+object XColumnRowRange {
+  @scala.inline
+  def apply(
+    Columns: XTableColumns,
+    Rows: XTableRows,
+    acquire: js.Function0[scala.Unit],
+    getColumns: js.Function0[XTableColumns],
+    getRows: js.Function0[XTableRows],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XColumnRowRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Columns")(Columns)
+    __obj.updateDynamic("Rows")(Rows)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getColumns")(getColumns)
+    __obj.updateDynamic("getRows")(getRows)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XColumnRowRange]
+  }
+}
+

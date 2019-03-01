@@ -11,3 +11,18 @@ trait Anon_Name extends js.Object {
   var updateOn: js.UndefOr[atAngularFormsLib.srcModelMod.FormHooks] = js.undefined
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    updateOn: atAngularFormsLib.srcModelMod.FormHooks = null
+  ): Anon_Name = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (updateOn != null) __obj.updateDynamic("updateOn")(updateOn)
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

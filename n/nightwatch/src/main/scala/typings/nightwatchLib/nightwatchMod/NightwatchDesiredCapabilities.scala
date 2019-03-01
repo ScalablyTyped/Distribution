@@ -85,3 +85,48 @@ trait NightwatchDesiredCapabilities extends js.Object {
   var webStorageEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NightwatchDesiredCapabilities {
+  @scala.inline
+  def apply(
+    handlesAlerts: scala.Boolean,
+    acceptSslCerts: js.UndefOr[scala.Boolean] = js.undefined,
+    applicationCacheEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    browserConnectionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    browserName: java.lang.String = null,
+    cssSelectorsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    databaseEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    elementScrollBehaviour: scala.Int | scala.Double = null,
+    javascriptEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    locationContextEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    loggingPrefs: nightwatchLib.Anon_Browser = null,
+    nativeEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    platform: java.lang.String = null,
+    rotatable: js.UndefOr[scala.Boolean] = js.undefined,
+    takesScreenShot: js.UndefOr[scala.Boolean] = js.undefined,
+    unexpectedAlertBehaviour: java.lang.String = null,
+    version: java.lang.String = null,
+    webStorageEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): NightwatchDesiredCapabilities = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handlesAlerts")(handlesAlerts)
+    if (!js.isUndefined(acceptSslCerts)) __obj.updateDynamic("acceptSslCerts")(acceptSslCerts)
+    if (!js.isUndefined(applicationCacheEnabled)) __obj.updateDynamic("applicationCacheEnabled")(applicationCacheEnabled)
+    if (!js.isUndefined(browserConnectionEnabled)) __obj.updateDynamic("browserConnectionEnabled")(browserConnectionEnabled)
+    if (browserName != null) __obj.updateDynamic("browserName")(browserName)
+    if (!js.isUndefined(cssSelectorsEnabled)) __obj.updateDynamic("cssSelectorsEnabled")(cssSelectorsEnabled)
+    if (!js.isUndefined(databaseEnabled)) __obj.updateDynamic("databaseEnabled")(databaseEnabled)
+    if (elementScrollBehaviour != null) __obj.updateDynamic("elementScrollBehaviour")(elementScrollBehaviour.asInstanceOf[js.Any])
+    if (!js.isUndefined(javascriptEnabled)) __obj.updateDynamic("javascriptEnabled")(javascriptEnabled)
+    if (!js.isUndefined(locationContextEnabled)) __obj.updateDynamic("locationContextEnabled")(locationContextEnabled)
+    if (loggingPrefs != null) __obj.updateDynamic("loggingPrefs")(loggingPrefs)
+    if (!js.isUndefined(nativeEvents)) __obj.updateDynamic("nativeEvents")(nativeEvents)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable)
+    if (!js.isUndefined(takesScreenShot)) __obj.updateDynamic("takesScreenShot")(takesScreenShot)
+    if (unexpectedAlertBehaviour != null) __obj.updateDynamic("unexpectedAlertBehaviour")(unexpectedAlertBehaviour)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(webStorageEnabled)) __obj.updateDynamic("webStorageEnabled")(webStorageEnabled)
+    __obj.asInstanceOf[NightwatchDesiredCapabilities]
+  }
+}
+

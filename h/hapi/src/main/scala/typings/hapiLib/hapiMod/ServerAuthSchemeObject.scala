@@ -64,3 +64,32 @@ trait ServerAuthSchemeObject extends js.Object {
   def authenticate(request: Request, h: ResponseToolkit): hapiLib.hapiMod.LifecycleNs.ReturnValue
 }
 
+object ServerAuthSchemeObject {
+  @scala.inline
+  def apply(
+    authenticate: js.Function2[Request, ResponseToolkit, hapiLib.hapiMod.LifecycleNs.ReturnValue],
+    api: ServerAuthSchemeObjectApi = null,
+    options: hapiLib.Anon_Payload = null,
+    payload: js.Function2[
+      /* request */ Request, 
+      /* h */ ResponseToolkit, 
+      hapiLib.hapiMod.LifecycleNs.ReturnValue
+    ] = null,
+    response: js.Function2[
+      /* request */ Request, 
+      /* h */ ResponseToolkit, 
+      hapiLib.hapiMod.LifecycleNs.ReturnValue
+    ] = null,
+    verify: js.Function1[/* auth */ RequestAuth, js.Promise[scala.Unit]] = null
+  ): ServerAuthSchemeObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authenticate")(authenticate)
+    if (api != null) __obj.updateDynamic("api")(api)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (verify != null) __obj.updateDynamic("verify")(verify)
+    __obj.asInstanceOf[ServerAuthSchemeObject]
+  }
+}
+

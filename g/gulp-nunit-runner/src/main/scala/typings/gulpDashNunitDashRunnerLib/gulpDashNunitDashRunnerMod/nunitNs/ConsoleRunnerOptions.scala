@@ -129,3 +129,90 @@ trait ConsoleRunnerOptions extends js.Object {
   var x86: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConsoleRunnerOptions {
+  @scala.inline
+  def apply(
+    apartment: java.lang.String = null,
+    basepath: java.lang.String = null,
+    cleanup: js.UndefOr[scala.Boolean] = js.undefined,
+    config: java.lang.String = null,
+    `dispose-runners`: js.UndefOr[scala.Boolean] = js.undefined,
+    domain: java.lang.String = null,
+    err: java.lang.String = null,
+    exclude: js.Array[java.lang.String] = null,
+    explore: java.lang.String = null,
+    framework: java.lang.String = null,
+    include: js.Array[java.lang.String] = null,
+    labels: js.UndefOr[scala.Boolean] = js.undefined,
+    nocolor: js.UndefOr[scala.Boolean] = js.undefined,
+    nodots: js.UndefOr[scala.Boolean] = js.undefined,
+    noheader: js.UndefOr[scala.Boolean] = js.undefined,
+    nologo: js.UndefOr[scala.Boolean] = js.undefined,
+    noresult: js.UndefOr[scala.Boolean] = js.undefined,
+    noshadow: js.UndefOr[scala.Boolean] = js.undefined,
+    nothread: js.UndefOr[scala.Boolean] = js.undefined,
+    output: java.lang.String = null,
+    pause: js.UndefOr[scala.Boolean] = js.undefined,
+    privatebinpath: js.Array[java.lang.String] = null,
+    process: java.lang.String = null,
+    result: java.lang.String = null,
+    run: js.Array[java.lang.String] = null,
+    runlist: java.lang.String = null,
+    seed: scala.Int | scala.Double = null,
+    shadowcopy: js.UndefOr[scala.Boolean] = js.undefined,
+    stoponerror: js.UndefOr[scala.Boolean] = js.undefined,
+    teamcity: js.UndefOr[scala.Boolean] = js.undefined,
+    test: js.Array[java.lang.String] = null,
+    testist: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    trace: java.lang.String = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined,
+    wait: js.UndefOr[scala.Boolean] = js.undefined,
+    work: java.lang.String = null,
+    workers: scala.Int | scala.Double = null,
+    x86: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConsoleRunnerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (apartment != null) __obj.updateDynamic("apartment")(apartment)
+    if (basepath != null) __obj.updateDynamic("basepath")(basepath)
+    if (!js.isUndefined(cleanup)) __obj.updateDynamic("cleanup")(cleanup)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(`dispose-runners`)) __obj.updateDynamic("dispose-runners")(`dispose-runners`)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (err != null) __obj.updateDynamic("err")(err)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (explore != null) __obj.updateDynamic("explore")(explore)
+    if (framework != null) __obj.updateDynamic("framework")(framework)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels)
+    if (!js.isUndefined(nocolor)) __obj.updateDynamic("nocolor")(nocolor)
+    if (!js.isUndefined(nodots)) __obj.updateDynamic("nodots")(nodots)
+    if (!js.isUndefined(noheader)) __obj.updateDynamic("noheader")(noheader)
+    if (!js.isUndefined(nologo)) __obj.updateDynamic("nologo")(nologo)
+    if (!js.isUndefined(noresult)) __obj.updateDynamic("noresult")(noresult)
+    if (!js.isUndefined(noshadow)) __obj.updateDynamic("noshadow")(noshadow)
+    if (!js.isUndefined(nothread)) __obj.updateDynamic("nothread")(nothread)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause)
+    if (privatebinpath != null) __obj.updateDynamic("privatebinpath")(privatebinpath)
+    if (process != null) __obj.updateDynamic("process")(process)
+    if (result != null) __obj.updateDynamic("result")(result)
+    if (run != null) __obj.updateDynamic("run")(run)
+    if (runlist != null) __obj.updateDynamic("runlist")(runlist)
+    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (!js.isUndefined(shadowcopy)) __obj.updateDynamic("shadowcopy")(shadowcopy)
+    if (!js.isUndefined(stoponerror)) __obj.updateDynamic("stoponerror")(stoponerror)
+    if (!js.isUndefined(teamcity)) __obj.updateDynamic("teamcity")(teamcity)
+    if (test != null) __obj.updateDynamic("test")(test)
+    if (testist != null) __obj.updateDynamic("testist")(testist)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (trace != null) __obj.updateDynamic("trace")(trace)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    if (work != null) __obj.updateDynamic("work")(work)
+    if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
+    if (!js.isUndefined(x86)) __obj.updateDynamic("x86")(x86)
+    __obj.asInstanceOf[ConsoleRunnerOptions]
+  }
+}
+

@@ -16,3 +16,30 @@ trait MockURL extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MockURL {
+  @scala.inline
+  def apply(
+    toString: js.Function0[java.lang.String],
+    hash: java.lang.String = null,
+    host: java.lang.String = null,
+    password: java.lang.String = null,
+    path: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    protocol: java.lang.String = null,
+    query: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    username: java.lang.String = null
+  ): MockURL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toString")(toString)
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[MockURL]
+  }
+}
+

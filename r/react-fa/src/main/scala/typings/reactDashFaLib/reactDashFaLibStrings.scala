@@ -7,49 +7,65 @@ import scala.scalajs.js.annotation._
 
 object reactDashFaLibStrings {
   @js.native
-  sealed trait `135` extends js.Object
+  sealed trait `135`
+    extends reactDashFaLib.reactDashFaMod.IconRotation
   
   @js.native
-  sealed trait `180` extends js.Object
+  sealed trait `180`
+    extends reactDashFaLib.reactDashFaMod.IconRotation
   
   @js.native
-  sealed trait `1x` extends js.Object
+  sealed trait `1x`
+    extends reactDashFaLib.reactDashFaMod.IconStackSize
   
   @js.native
-  sealed trait `225` extends js.Object
+  sealed trait `225`
+    extends reactDashFaLib.reactDashFaMod.IconRotation
   
   @js.native
-  sealed trait `270` extends js.Object
+  sealed trait `270`
+    extends reactDashFaLib.reactDashFaMod.IconRotation
   
   @js.native
-  sealed trait `2x` extends js.Object
+  sealed trait `2x`
+    extends reactDashFaLib.reactDashFaMod.IconSize
+       with reactDashFaLib.reactDashFaMod.IconStackSize
   
   @js.native
-  sealed trait `315` extends js.Object
+  sealed trait `315`
+    extends reactDashFaLib.reactDashFaMod.IconRotation
   
   @js.native
-  sealed trait `3x` extends js.Object
+  sealed trait `3x`
+    extends reactDashFaLib.reactDashFaMod.IconSize
   
   @js.native
-  sealed trait `45` extends js.Object
+  sealed trait `45`
+    extends reactDashFaLib.reactDashFaMod.IconRotation
   
   @js.native
-  sealed trait `4x` extends js.Object
+  sealed trait `4x`
+    extends reactDashFaLib.reactDashFaMod.IconSize
   
   @js.native
-  sealed trait `5x` extends js.Object
+  sealed trait `5x`
+    extends reactDashFaLib.reactDashFaMod.IconSize
   
   @js.native
-  sealed trait `90` extends js.Object
+  sealed trait `90`
+    extends reactDashFaLib.reactDashFaMod.IconRotation
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends reactDashFaLib.reactDashFaMod.IconFlip
   
   @js.native
-  sealed trait lg extends js.Object
+  sealed trait lg
+    extends reactDashFaLib.reactDashFaMod.IconSize
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends reactDashFaLib.reactDashFaMod.IconFlip
   
   @scala.inline
   def `135`: `135` = "135".asInstanceOf[`135`]

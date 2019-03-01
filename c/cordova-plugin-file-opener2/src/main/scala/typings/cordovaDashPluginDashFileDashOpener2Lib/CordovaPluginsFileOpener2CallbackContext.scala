@@ -10,3 +10,16 @@ trait CordovaPluginsFileOpener2CallbackContext extends js.Object {
   var success: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object CordovaPluginsFileOpener2CallbackContext {
+  @scala.inline
+  def apply(
+    error: js.Function1[/* error */ CordovaPluginsFileOpener2Result, scala.Unit] = null,
+    success: js.Function0[scala.Unit] = null
+  ): CordovaPluginsFileOpener2CallbackContext = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[CordovaPluginsFileOpener2CallbackContext]
+  }
+}
+

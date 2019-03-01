@@ -23,3 +23,24 @@ trait Data extends js.Object {
   var tax: js.UndefOr[js.Array[TaxData]] = js.undefined
 }
 
+object Data {
+  @scala.inline
+  def apply(
+    aircraft: js.Array[AircraftData] = null,
+    airport: js.Array[AirportData] = null,
+    carrier: js.Array[CarrierData] = null,
+    city: js.Array[CityData] = null,
+    kind: java.lang.String = null,
+    tax: js.Array[TaxData] = null
+  ): Data = {
+    val __obj = js.Dynamic.literal()
+    if (aircraft != null) __obj.updateDynamic("aircraft")(aircraft)
+    if (airport != null) __obj.updateDynamic("airport")(airport)
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
+    if (city != null) __obj.updateDynamic("city")(city)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (tax != null) __obj.updateDynamic("tax")(tax)
+    __obj.asInstanceOf[Data]
+  }
+}
+

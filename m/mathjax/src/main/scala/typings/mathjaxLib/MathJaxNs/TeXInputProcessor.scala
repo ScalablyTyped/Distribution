@@ -43,3 +43,28 @@ trait TeXInputProcessor extends js.Object {
   var extensions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TeXInputProcessor {
+  @scala.inline
+  def apply(
+    MAXBUFFER: scala.Int | scala.Double = null,
+    MAXMACROS: scala.Int | scala.Double = null,
+    Macros: js.Any = null,
+    MultLineWidth: java.lang.String = null,
+    TagIndent: java.lang.String = null,
+    TagSide: java.lang.String = null,
+    equationNumbers: EquationNumbers = null,
+    extensions: js.Array[java.lang.String] = null
+  ): TeXInputProcessor = {
+    val __obj = js.Dynamic.literal()
+    if (MAXBUFFER != null) __obj.updateDynamic("MAXBUFFER")(MAXBUFFER.asInstanceOf[js.Any])
+    if (MAXMACROS != null) __obj.updateDynamic("MAXMACROS")(MAXMACROS.asInstanceOf[js.Any])
+    if (Macros != null) __obj.updateDynamic("Macros")(Macros)
+    if (MultLineWidth != null) __obj.updateDynamic("MultLineWidth")(MultLineWidth)
+    if (TagIndent != null) __obj.updateDynamic("TagIndent")(TagIndent)
+    if (TagSide != null) __obj.updateDynamic("TagSide")(TagSide)
+    if (equationNumbers != null) __obj.updateDynamic("equationNumbers")(equationNumbers)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    __obj.asInstanceOf[TeXInputProcessor]
+  }
+}
+

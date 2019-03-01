@@ -26,3 +26,14 @@ trait MetricValueStatus extends js.Object {
   val value: java.lang.String
 }
 
+object MetricValueStatus {
+  @scala.inline
+  def apply(averageUtilization: scala.Double, averageValue: java.lang.String, value: java.lang.String): MetricValueStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("averageUtilization")(averageUtilization)
+    __obj.updateDynamic("averageValue")(averageValue)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[MetricValueStatus]
+  }
+}
+

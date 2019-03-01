@@ -10,3 +10,13 @@ trait ChartGridlines extends js.Object {
   var count: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartGridlines {
+  @scala.inline
+  def apply(color: java.lang.String = null, count: scala.Int | scala.Double = null): ChartGridlines = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartGridlines]
+  }
+}
+

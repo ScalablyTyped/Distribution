@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object cfnDashResponseLibStrings {
   @js.native
-  sealed trait FAILED extends js.Object
+  sealed trait FAILED
+    extends cfnDashResponseLib.cfnDashResponseMod.ResponseStatus
   
   @js.native
-  sealed trait SUCCESS extends js.Object
+  sealed trait SUCCESS
+    extends cfnDashResponseLib.cfnDashResponseMod.ResponseStatus
   
   @scala.inline
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]

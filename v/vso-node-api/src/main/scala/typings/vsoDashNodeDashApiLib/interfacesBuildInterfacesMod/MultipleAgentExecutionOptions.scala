@@ -16,3 +16,13 @@ trait MultipleAgentExecutionOptions extends AgentTargetExecutionOptions {
   var maxConcurrency: scala.Double
 }
 
+object MultipleAgentExecutionOptions {
+  @scala.inline
+  def apply(continueOnError: scala.Boolean, maxConcurrency: scala.Double, `type`: scala.Double): MultipleAgentExecutionOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("continueOnError")(continueOnError)
+    __obj.updateDynamic("maxConcurrency")(maxConcurrency)
+    __obj.asInstanceOf[MultipleAgentExecutionOptions]
+  }
+}
+

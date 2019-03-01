@@ -14,3 +14,24 @@ trait GeneralSubtree extends js.Object {
   def toSchema(): js.Any
 }
 
+object GeneralSubtree {
+  @scala.inline
+  def apply(
+    base: pkijsLib.srcGeneralNameMod.default,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    minimum: scala.Double | asn1jsLib.asn1jsMod.Integer,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    maximum: scala.Double | asn1jsLib.asn1jsMod.Integer = null
+  ): GeneralSubtree = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("base")(base)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeneralSubtree]
+  }
+}
+

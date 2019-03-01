@@ -9,3 +9,12 @@ trait ElementChildrenAttribute extends js.Object {
   var content: js.Array[petitDashDomLib.petitDashDomMod.PetitDomNs.VNode]
 }
 
+object ElementChildrenAttribute {
+  @scala.inline
+  def apply(content: js.Array[petitDashDomLib.petitDashDomMod.PetitDomNs.VNode]): ElementChildrenAttribute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.asInstanceOf[ElementChildrenAttribute]
+  }
+}
+

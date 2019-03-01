@@ -67,3 +67,33 @@ trait IgGridGroupByColumnSettings
   var summaries: js.UndefOr[IgGridGroupByColumnSettingsSummaries] = js.undefined
 }
 
+object IgGridGroupByColumnSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridGroupByColumnSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowGrouping: js.UndefOr[scala.Boolean] = js.undefined,
+    compareFunc: java.lang.String | js.Function = null,
+    dir: js.Any = null,
+    groupComparerFunction: js.Function = null,
+    groupLabelFormatter: java.lang.String | js.Function = null,
+    groupSummaries: js.Any = null,
+    isGroupBy: js.UndefOr[scala.Boolean] = js.undefined,
+    summaries: IgGridGroupByColumnSettingsSummaries = null
+  ): IgGridGroupByColumnSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowGrouping)) __obj.updateDynamic("allowGrouping")(allowGrouping)
+    if (compareFunc != null) __obj.updateDynamic("compareFunc")(compareFunc.asInstanceOf[js.Any])
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (groupComparerFunction != null) __obj.updateDynamic("groupComparerFunction")(groupComparerFunction)
+    if (groupLabelFormatter != null) __obj.updateDynamic("groupLabelFormatter")(groupLabelFormatter.asInstanceOf[js.Any])
+    if (groupSummaries != null) __obj.updateDynamic("groupSummaries")(groupSummaries)
+    if (!js.isUndefined(isGroupBy)) __obj.updateDynamic("isGroupBy")(isGroupBy)
+    if (summaries != null) __obj.updateDynamic("summaries")(summaries)
+    __obj.asInstanceOf[IgGridGroupByColumnSettings]
+  }
+}
+

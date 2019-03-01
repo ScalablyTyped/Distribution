@@ -9,3 +9,12 @@ trait ViewStateChangeInfo extends js.Object {
   var viewState: ViewState
 }
 
+object ViewStateChangeInfo {
+  @scala.inline
+  def apply(viewState: ViewState): ViewStateChangeInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("viewState")(viewState)
+    __obj.asInstanceOf[ViewStateChangeInfo]
+  }
+}
+

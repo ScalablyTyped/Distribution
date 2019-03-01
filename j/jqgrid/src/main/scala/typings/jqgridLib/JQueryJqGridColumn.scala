@@ -102,3 +102,47 @@ trait JQueryJqGridColumn extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object JQueryJqGridColumn {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    align: jqgridLib.jqgridLibStrings.left | jqgridLib.jqgridLibStrings.center | jqgridLib.jqgridLibStrings.right = null,
+    cellattr: js.Function5[
+      /* rowId */ js.Any, 
+      /* val */ js.Any, 
+      /* rowObject */ js.Any, 
+      /* cm */ js.Any, 
+      /* rdata */ js.Any, 
+      java.lang.String
+    ] = null,
+    classes: java.lang.String = null,
+    datefmt: java.lang.String = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    formatter: jqgridLib.jqgridLibStrings.integer | jqgridLib.jqgridLibStrings.number | jqgridLib.jqgridLibStrings.currency | jqgridLib.jqgridLibStrings.date | jqgridLib.jqgridLibStrings.email | jqgridLib.jqgridLibStrings.link | jqgridLib.jqgridLibStrings.showlink | jqgridLib.jqgridLibStrings.checkbox | jqgridLib.jqgridLibStrings.select | jqgridLib.jqgridLibStrings.actions | (js.Function3[/* cellvalue */ js.Any, /* options */ Anon_ColModel, /* rowObject */ js.Any, _]) = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    index: java.lang.String = null,
+    key: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    search: js.UndefOr[scala.Boolean] = js.undefined,
+    sortable: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): JQueryJqGridColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (cellattr != null) __obj.updateDynamic("cellattr")(cellattr)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (datefmt != null) __obj.updateDynamic("datefmt")(datefmt)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryJqGridColumn]
+  }
+}
+

@@ -19,7 +19,6 @@ package object AjaxNs {
     /* errorThrown */ java.lang.String, 
     scala.Unit
   ]
-  type ErrorTextStatus = jqueryLib.jqueryLibStrings.timeout | jqueryLib.jqueryLibStrings.error | jqueryLib.jqueryLibStrings.abort | jqueryLib.jqueryLibStrings.parsererror
   type SuccessCallback[TContext] = js.ThisFunction3[
     /* this */ TContext, 
     /* data */ js.Any, 
@@ -27,6 +26,4 @@ package object AjaxNs {
     /* jqXHR */ jqueryLib.JQueryNs.jqXHR[js.Any], 
     scala.Unit
   ]
-  type SuccessTextStatus = jqueryLib.jqueryLibStrings.success | jqueryLib.jqueryLibStrings.notmodified | jqueryLib.jqueryLibStrings.nocontent
-  type TextStatus = SuccessTextStatus | ErrorTextStatus
 }

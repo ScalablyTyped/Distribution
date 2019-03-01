@@ -10,3 +10,12 @@ trait SubmitJobRequest extends js.Object {
   var job: js.UndefOr[Job] = js.undefined
 }
 
+object SubmitJobRequest {
+  @scala.inline
+  def apply(job: Job = null): SubmitJobRequest = {
+    val __obj = js.Dynamic.literal()
+    if (job != null) __obj.updateDynamic("job")(job)
+    __obj.asInstanceOf[SubmitJobRequest]
+  }
+}
+

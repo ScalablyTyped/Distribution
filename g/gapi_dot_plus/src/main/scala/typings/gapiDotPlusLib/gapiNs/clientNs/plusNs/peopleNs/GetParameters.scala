@@ -9,3 +9,12 @@ trait GetParameters extends js.Object {
   var userId: java.lang.String
 }
 
+object GetParameters {
+  @scala.inline
+  def apply(userId: java.lang.String): GetParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[GetParameters]
+  }
+}
+

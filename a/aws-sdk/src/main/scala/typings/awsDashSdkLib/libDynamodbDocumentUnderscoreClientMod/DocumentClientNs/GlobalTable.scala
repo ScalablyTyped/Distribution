@@ -16,3 +16,13 @@ trait GlobalTable extends js.Object {
   var ReplicationGroup: js.UndefOr[ReplicaList] = js.undefined
 }
 
+object GlobalTable {
+  @scala.inline
+  def apply(GlobalTableName: TableName = null, ReplicationGroup: ReplicaList = null): GlobalTable = {
+    val __obj = js.Dynamic.literal()
+    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName)
+    if (ReplicationGroup != null) __obj.updateDynamic("ReplicationGroup")(ReplicationGroup)
+    __obj.asInstanceOf[GlobalTable]
+  }
+}
+

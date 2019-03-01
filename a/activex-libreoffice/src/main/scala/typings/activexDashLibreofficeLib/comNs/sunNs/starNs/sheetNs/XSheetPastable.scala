@@ -34,3 +34,37 @@ trait XSheetPastable
   ): scala.Unit
 }
 
+object XSheetPastable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    paste: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
+    pasteCellRange: js.Function7[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      PasteOperation, 
+      scala.Double, 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Boolean, 
+      CellInsertMode, 
+      scala.Unit
+    ],
+    pasteFormat: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSheetPastable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("paste")(paste)
+    __obj.updateDynamic("pasteCellRange")(pasteCellRange)
+    __obj.updateDynamic("pasteFormat")(pasteFormat)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSheetPastable]
+  }
+}
+

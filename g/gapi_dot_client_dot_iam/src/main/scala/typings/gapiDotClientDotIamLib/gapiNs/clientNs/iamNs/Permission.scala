@@ -20,3 +20,24 @@ trait Permission extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Permission {
+  @scala.inline
+  def apply(
+    customRolesSupportLevel: java.lang.String = null,
+    description: java.lang.String = null,
+    name: java.lang.String = null,
+    onlyInPredefinedRoles: js.UndefOr[scala.Boolean] = js.undefined,
+    stage: java.lang.String = null,
+    title: java.lang.String = null
+  ): Permission = {
+    val __obj = js.Dynamic.literal()
+    if (customRolesSupportLevel != null) __obj.updateDynamic("customRolesSupportLevel")(customRolesSupportLevel)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(onlyInPredefinedRoles)) __obj.updateDynamic("onlyInPredefinedRoles")(onlyInPredefinedRoles)
+    if (stage != null) __obj.updateDynamic("stage")(stage)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Permission]
+  }
+}
+

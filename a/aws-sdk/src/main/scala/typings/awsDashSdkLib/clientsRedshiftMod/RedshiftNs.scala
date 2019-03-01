@@ -5229,6 +5229,22 @@ object RedshiftNs extends js.Object {
     var VpcSecurityGroupId: js.UndefOr[String] = js.undefined
   }
   
+  trait _ParameterApplyType extends js.Object
+  
+  trait _ReservedNodeOfferingType extends js.Object
+  
+  trait _ScheduleState extends js.Object
+  
+  trait _SnapshotAttributeToSortBy extends js.Object
+  
+  trait _SortByOrder extends js.Object
+  
+  trait _SourceType extends js.Object
+  
+  trait _TableRestoreStatusType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccountsWithRestoreAccessList = js.Array[AccountWithRestoreAccess]
   type AssociatedClusterList = js.Array[ClusterAssociatedToSchedule]
@@ -5276,29 +5292,29 @@ object RedshiftNs extends js.Object {
   type Long = scala.Double
   type LongOptional = scala.Double
   type OrderableClusterOptionsList = js.Array[OrderableClusterOption]
-  type ParameterApplyType = awsDashSdkLib.awsDashSdkLibStrings.static | awsDashSdkLib.awsDashSdkLibStrings.dynamic | java.lang.String
+  type ParameterApplyType = _ParameterApplyType | java.lang.String
   type ParameterGroupList = js.Array[ClusterParameterGroup]
   type ParametersList = js.Array[Parameter]
   type PendingActionsList = js.Array[String]
   type RecurringChargeList = js.Array[RecurringCharge]
   type ReservedNodeList = js.Array[ReservedNode]
   type ReservedNodeOfferingList = js.Array[ReservedNodeOffering]
-  type ReservedNodeOfferingType = awsDashSdkLib.awsDashSdkLibStrings.Regular | awsDashSdkLib.awsDashSdkLibStrings.Upgradable | java.lang.String
+  type ReservedNodeOfferingType = _ReservedNodeOfferingType | java.lang.String
   type RestorableNodeTypeList = js.Array[String]
   type RevisionTargetsList = js.Array[RevisionTarget]
   type ScheduleDefinitionList = js.Array[String]
-  type ScheduleState = awsDashSdkLib.awsDashSdkLibStrings.MODIFYING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type ScheduleState = _ScheduleState | java.lang.String
   type ScheduledSnapshotTimeList = js.Array[TStamp]
   type SensitiveString = java.lang.String
-  type SnapshotAttributeToSortBy = awsDashSdkLib.awsDashSdkLibStrings.SOURCE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.TOTAL_SIZE | awsDashSdkLib.awsDashSdkLibStrings.CREATE_TIME | java.lang.String
+  type SnapshotAttributeToSortBy = _SnapshotAttributeToSortBy | java.lang.String
   type SnapshotCopyGrantList = js.Array[SnapshotCopyGrant]
   type SnapshotIdentifierList = js.Array[String]
   type SnapshotList = js.Array[Snapshot]
   type SnapshotScheduleList = js.Array[SnapshotSchedule]
   type SnapshotSortingEntityList = js.Array[SnapshotSortingEntity]
-  type SortByOrder = awsDashSdkLib.awsDashSdkLibStrings.ASC | awsDashSdkLib.awsDashSdkLibStrings.DESC | java.lang.String
+  type SortByOrder = _SortByOrder | java.lang.String
   type SourceIdsList = js.Array[String]
-  type SourceType = awsDashSdkLib.awsDashSdkLibStrings.cluster | awsDashSdkLib.awsDashSdkLibStrings.`cluster-parameter-group` | awsDashSdkLib.awsDashSdkLibStrings.`cluster-security-group` | awsDashSdkLib.awsDashSdkLibStrings.`cluster-snapshot` | java.lang.String
+  type SourceType = _SourceType | java.lang.String
   type String = java.lang.String
   type SubnetIdentifierList = js.Array[String]
   type SubnetList = js.Array[Subnet]
@@ -5306,7 +5322,7 @@ object RedshiftNs extends js.Object {
   type SupportedPlatformsList = js.Array[SupportedPlatform]
   type TStamp = stdLib.Date
   type TableRestoreStatusList = js.Array[TableRestoreStatus]
-  type TableRestoreStatusType = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.CANCELED | java.lang.String
+  type TableRestoreStatusType = _TableRestoreStatusType | java.lang.String
   type TagKeyList = js.Array[String]
   type TagList = js.Array[Tag]
   type TagValueList = js.Array[String]
@@ -5314,6 +5330,6 @@ object RedshiftNs extends js.Object {
   type TrackList = js.Array[MaintenanceTrack]
   type VpcSecurityGroupIdList = js.Array[String]
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2012-12-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

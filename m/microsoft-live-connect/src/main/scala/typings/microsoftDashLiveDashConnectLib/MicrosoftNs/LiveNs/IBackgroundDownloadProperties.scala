@@ -21,3 +21,13 @@ trait IBackgroundDownloadProperties extends js.Object {
   var path: java.lang.String
 }
 
+object IBackgroundDownloadProperties {
+  @scala.inline
+  def apply(path: java.lang.String, file_output: winrtLib.WindowsNs.StorageNs.StorageFile = null): IBackgroundDownloadProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (file_output != null) __obj.updateDynamic("file_output")(file_output)
+    __obj.asInstanceOf[IBackgroundDownloadProperties]
+  }
+}
+

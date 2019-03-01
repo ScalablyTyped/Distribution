@@ -20,3 +20,18 @@ trait ResolvedReflectiveProvider extends js.Object {
   var resolvedFactories: js.Array[ResolvedReflectiveFactory]
 }
 
+object ResolvedReflectiveProvider {
+  @scala.inline
+  def apply(
+    key: atAngularCoreLib.srcDiReflectiveUnderscoreKeyMod.ReflectiveKey,
+    multiProvider: scala.Boolean,
+    resolvedFactories: js.Array[ResolvedReflectiveFactory]
+  ): ResolvedReflectiveProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("multiProvider")(multiProvider)
+    __obj.updateDynamic("resolvedFactories")(resolvedFactories)
+    __obj.asInstanceOf[ResolvedReflectiveProvider]
+  }
+}
+

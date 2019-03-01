@@ -20,3 +20,71 @@ trait DatabaseAccessDataSource
   var URL: java.lang.String
 }
 
+object DatabaseAccessDataSource {
+  @scala.inline
+  def apply(
+    LoginTimeout: scala.Double,
+    PasswordMode: activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.RememberAuthentication,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    URL: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    connectWithCompletion: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
+    ],
+    getConnection: js.Function2[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
+    ],
+    getLoginTimeout: js.Function0[scala.Double],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setLoginTimeout: js.Function1[scala.Double, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): DatabaseAccessDataSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LoginTimeout")(LoginTimeout)
+    __obj.updateDynamic("PasswordMode")(PasswordMode)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("connectWithCompletion")(connectWithCompletion)
+    __obj.updateDynamic("getConnection")(getConnection)
+    __obj.updateDynamic("getLoginTimeout")(getLoginTimeout)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setLoginTimeout")(setLoginTimeout)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[DatabaseAccessDataSource]
+  }
+}
+

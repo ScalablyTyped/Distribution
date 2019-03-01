@@ -16,3 +16,13 @@ trait SharedOptions extends js.Object {
   var encoding: js.UndefOr[Encoding] = js.undefined
 }
 
+object SharedOptions {
+  @scala.inline
+  def apply(algorithm: Algorithm = null, encoding: Encoding = null): SharedOptions = {
+    val __obj = js.Dynamic.literal()
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    __obj.asInstanceOf[SharedOptions]
+  }
+}
+

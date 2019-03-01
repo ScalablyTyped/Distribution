@@ -20,3 +20,18 @@ trait BezierPoint extends js.Object {
   var Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point
 }
 
+object BezierPoint {
+  @scala.inline
+  def apply(
+    ControlPoint1: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    ControlPoint2: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point
+  ): BezierPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ControlPoint1")(ControlPoint1)
+    __obj.updateDynamic("ControlPoint2")(ControlPoint2)
+    __obj.updateDynamic("Position")(Position)
+    __obj.asInstanceOf[BezierPoint]
+  }
+}
+

@@ -32,3 +32,28 @@ trait WebApiConnectedService extends WebApiConnectedServiceRef {
   var serviceUri: java.lang.String
 }
 
+object WebApiConnectedService {
+  @scala.inline
+  def apply(
+    authenticatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    description: java.lang.String,
+    friendlyName: java.lang.String,
+    id: java.lang.String,
+    kind: java.lang.String,
+    project: TeamProjectReference,
+    serviceUri: java.lang.String,
+    url: java.lang.String
+  ): WebApiConnectedService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authenticatedBy")(authenticatedBy)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("friendlyName")(friendlyName)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("serviceUri")(serviceUri)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WebApiConnectedService]
+  }
+}
+

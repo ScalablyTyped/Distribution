@@ -14,3 +14,14 @@ trait OrdersCustomBatchRequestEntryRefund extends js.Object {
   var reasonText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OrdersCustomBatchRequestEntryRefund {
+  @scala.inline
+  def apply(amount: Price = null, reason: java.lang.String = null, reasonText: java.lang.String = null): OrdersCustomBatchRequestEntryRefund = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText)
+    __obj.asInstanceOf[OrdersCustomBatchRequestEntryRefund]
+  }
+}
+

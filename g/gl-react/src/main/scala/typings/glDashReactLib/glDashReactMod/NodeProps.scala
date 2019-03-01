@@ -20,3 +20,36 @@ trait NodeProps extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NodeProps {
+  @scala.inline
+  def apply(
+    shader: ShaderIdentifier | ShaderDefinition,
+    backbuffering: js.UndefOr[scala.Boolean] = js.undefined,
+    blendFunc: glDashReactLib.Anon_Dst = null,
+    children: js.Any = null,
+    clear: glDashReactLib.Anon_Color = null,
+    height: scala.Int | scala.Double = null,
+    ignoreUnusedUniforms: js.Array[java.lang.String] | scala.Boolean = null,
+    onDraw: js.Function0[scala.Unit] = null,
+    sync: js.UndefOr[scala.Boolean] = js.undefined,
+    uniforms: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    uniformsOptions: js.Any = null,
+    width: scala.Int | scala.Double = null
+  ): NodeProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("shader")(shader.asInstanceOf[js.Any])
+    if (!js.isUndefined(backbuffering)) __obj.updateDynamic("backbuffering")(backbuffering)
+    if (blendFunc != null) __obj.updateDynamic("blendFunc")(blendFunc)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (ignoreUnusedUniforms != null) __obj.updateDynamic("ignoreUnusedUniforms")(ignoreUnusedUniforms.asInstanceOf[js.Any])
+    if (onDraw != null) __obj.updateDynamic("onDraw")(onDraw)
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (uniforms != null) __obj.updateDynamic("uniforms")(uniforms)
+    if (uniformsOptions != null) __obj.updateDynamic("uniformsOptions")(uniformsOptions)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodeProps]
+  }
+}
+

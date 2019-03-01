@@ -19,3 +19,20 @@ trait GooglePrivacyDlpV2beta1KAnonymityHistogramBucket extends js.Object {
   var equivalenceClassSizeUpperBound: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1KAnonymityHistogramBucket {
+  @scala.inline
+  def apply(
+    bucketSize: java.lang.String = null,
+    bucketValues: js.Array[GooglePrivacyDlpV2beta1KAnonymityEquivalenceClass] = null,
+    equivalenceClassSizeLowerBound: java.lang.String = null,
+    equivalenceClassSizeUpperBound: java.lang.String = null
+  ): GooglePrivacyDlpV2beta1KAnonymityHistogramBucket = {
+    val __obj = js.Dynamic.literal()
+    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize)
+    if (bucketValues != null) __obj.updateDynamic("bucketValues")(bucketValues)
+    if (equivalenceClassSizeLowerBound != null) __obj.updateDynamic("equivalenceClassSizeLowerBound")(equivalenceClassSizeLowerBound)
+    if (equivalenceClassSizeUpperBound != null) __obj.updateDynamic("equivalenceClassSizeUpperBound")(equivalenceClassSizeUpperBound)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1KAnonymityHistogramBucket]
+  }
+}
+

@@ -18,3 +18,13 @@ trait PersistOptions extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PersistOptions {
+  @scala.inline
+  def apply(symbol: java.lang.String = null, text: java.lang.String = null): PersistOptions = {
+    val __obj = js.Dynamic.literal()
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[PersistOptions]
+  }
+}
+

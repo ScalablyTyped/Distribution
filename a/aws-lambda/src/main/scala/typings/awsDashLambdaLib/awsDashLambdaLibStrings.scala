@@ -16,13 +16,18 @@ object awsDashLambdaLibStrings {
   sealed trait AWS extends js.Object
   
   @js.native
-  sealed trait Approval extends js.Object
+  sealed trait Approval
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionCategory
   
   @js.native
-  sealed trait Build extends js.Object
+  sealed trait Build
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionCategory
   
   @js.native
-  sealed trait CANCELED extends js.Object
+  sealed trait CANCELED
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionState
+       with awsDashLambdaLib.awsDashLambdaMod.CodePipelineStageState
+       with awsDashLambdaLib.awsDashLambdaMod.CodePipelineState
   
   @js.native
   sealed trait CONFIRMED extends js.Object
@@ -100,13 +105,15 @@ object awsDashLambdaLibStrings {
   sealed trait Denied extends js.Object
   
   @js.native
-  sealed trait Deploy extends js.Object
+  sealed trait Deploy
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionCategory
   
   @js.native
   sealed trait DialogCodeHook extends js.Object
   
   @js.native
-  sealed trait Dropped extends js.Object
+  sealed trait Dropped
+    extends awsDashLambdaLib.awsDashLambdaMod.FirehoseRecordTransformationStatus
   
   @js.native
   sealed trait EMAIL extends js.Object
@@ -118,7 +125,10 @@ object awsDashLambdaLibStrings {
   sealed trait ElicitSlot extends js.Object
   
   @js.native
-  sealed trait FAILED extends js.Object
+  sealed trait FAILED
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionState
+       with awsDashLambdaLib.awsDashLambdaMod.CodePipelineStageState
+       with awsDashLambdaLib.awsDashLambdaMod.CodePipelineState
   
   @js.native
   sealed trait Failed extends js.Object
@@ -133,7 +143,8 @@ object awsDashLambdaLibStrings {
   sealed trait INSERT extends js.Object
   
   @js.native
-  sealed trait Invoke extends js.Object
+  sealed trait Invoke
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionCategory
   
   @js.native
   sealed trait KEYS_ONLY extends js.Object
@@ -157,7 +168,8 @@ object awsDashLambdaLibStrings {
   sealed trait OLD_IMAGE extends js.Object
   
   @js.native
-  sealed trait Ok extends js.Object
+  sealed trait Ok
+    extends awsDashLambdaLib.awsDashLambdaMod.FirehoseRecordTransformationStatus
   
   @js.native
   sealed trait PASSWORD_VERIFIER extends js.Object
@@ -184,7 +196,8 @@ object awsDashLambdaLibStrings {
   sealed trait PreSignUp_SignUp extends js.Object
   
   @js.native
-  sealed trait ProcessingFailed extends js.Object
+  sealed trait ProcessingFailed
+    extends awsDashLambdaLib.awsDashLambdaMod.FirehoseRecordTransformationStatus
   
   @js.native
   sealed trait REMOVE extends js.Object
@@ -193,7 +206,9 @@ object awsDashLambdaLibStrings {
   sealed trait RESET_REQUIRED extends js.Object
   
   @js.native
-  sealed trait RESUMED extends js.Object
+  sealed trait RESUMED
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineStageState
+       with awsDashLambdaLib.awsDashLambdaMod.CodePipelineState
   
   @js.native
   sealed trait S3 extends js.Object
@@ -208,25 +223,34 @@ object awsDashLambdaLibStrings {
   sealed trait SSML extends js.Object
   
   @js.native
-  sealed trait STARTED extends js.Object
+  sealed trait STARTED
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionState
+       with awsDashLambdaLib.awsDashLambdaMod.CodePipelineStageState
+       with awsDashLambdaLib.awsDashLambdaMod.CodePipelineState
   
   @js.native
-  sealed trait SUCCEEDED extends js.Object
+  sealed trait SUCCEEDED
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionState
+       with awsDashLambdaLib.awsDashLambdaMod.CodePipelineStageState
+       with awsDashLambdaLib.awsDashLambdaMod.CodePipelineState
   
   @js.native
   sealed trait SUCCESS extends js.Object
   
   @js.native
-  sealed trait SUPERSEDED extends js.Object
+  sealed trait SUPERSEDED
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineState
   
   @js.native
   sealed trait SUPPRESS extends js.Object
   
   @js.native
-  sealed trait Source extends js.Object
+  sealed trait Source
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionCategory
   
   @js.native
-  sealed trait Test extends js.Object
+  sealed trait Test
+    extends awsDashLambdaLib.awsDashLambdaMod.CodePipelineActionCategory
   
   @js.native
   sealed trait Text extends js.Object

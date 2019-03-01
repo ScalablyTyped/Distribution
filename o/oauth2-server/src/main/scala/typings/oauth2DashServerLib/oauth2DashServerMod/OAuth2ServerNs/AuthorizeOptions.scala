@@ -20,3 +20,18 @@ trait AuthorizeOptions extends js.Object {
   var authorizationCodeLifetime: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AuthorizeOptions {
+  @scala.inline
+  def apply(
+    allowEmptyState: js.UndefOr[scala.Boolean] = js.undefined,
+    authenticateHandler: js.Object = null,
+    authorizationCodeLifetime: scala.Int | scala.Double = null
+  ): AuthorizeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowEmptyState)) __obj.updateDynamic("allowEmptyState")(allowEmptyState)
+    if (authenticateHandler != null) __obj.updateDynamic("authenticateHandler")(authenticateHandler)
+    if (authorizationCodeLifetime != null) __obj.updateDynamic("authorizationCodeLifetime")(authorizationCodeLifetime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthorizeOptions]
+  }
+}
+

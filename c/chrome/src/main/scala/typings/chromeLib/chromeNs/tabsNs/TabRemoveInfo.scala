@@ -15,3 +15,13 @@ trait TabRemoveInfo extends js.Object {
   var windowId: scala.Double
 }
 
+object TabRemoveInfo {
+  @scala.inline
+  def apply(isWindowClosing: scala.Boolean, windowId: scala.Double): TabRemoveInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isWindowClosing")(isWindowClosing)
+    __obj.updateDynamic("windowId")(windowId)
+    __obj.asInstanceOf[TabRemoveInfo]
+  }
+}
+

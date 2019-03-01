@@ -14,3 +14,18 @@ trait IControlledProps extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IControlledProps {
+  @scala.inline
+  def apply(
+    defaultValue: java.lang.String = null,
+    onChange: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLElement] = null,
+    value: java.lang.String = null
+  ): IControlledProps = {
+    val __obj = js.Dynamic.literal()
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IControlledProps]
+  }
+}
+

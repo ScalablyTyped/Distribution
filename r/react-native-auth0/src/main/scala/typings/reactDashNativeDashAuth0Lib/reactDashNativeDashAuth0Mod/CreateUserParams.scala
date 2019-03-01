@@ -13,3 +13,22 @@ trait CreateUserParams[T] extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateUserParams {
+  @scala.inline
+  def apply[T](
+    connection: java.lang.String,
+    email: java.lang.String,
+    password: java.lang.String,
+    metadata: T = null,
+    username: java.lang.String = null
+  ): CreateUserParams[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("password")(password)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[CreateUserParams[T]]
+  }
+}
+

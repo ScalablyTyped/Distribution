@@ -17,3 +17,12 @@ trait Path extends js.Object {
   def getValueFrom(`object`: js.Any, defaultValue: js.Any): js.Any
 }
 
+object Path {
+  @scala.inline
+  def apply(getValueFrom: js.Function2[js.Any, js.Any, js.Any]): Path = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getValueFrom")(getValueFrom)
+    __obj.asInstanceOf[Path]
+  }
+}
+

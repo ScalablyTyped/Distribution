@@ -37,3 +37,22 @@ trait AccessibilityPropsIOS extends js.Object {
   var onMagicTap: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object AccessibilityPropsIOS {
+  @scala.inline
+  def apply(
+    accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityIgnoresInvertColors: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    onAccessibilityTap: js.Function0[scala.Unit] = null,
+    onMagicTap: js.Function0[scala.Unit] = null
+  ): AccessibilityPropsIOS = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
+    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors)
+    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
+    __obj.asInstanceOf[AccessibilityPropsIOS]
+  }
+}
+

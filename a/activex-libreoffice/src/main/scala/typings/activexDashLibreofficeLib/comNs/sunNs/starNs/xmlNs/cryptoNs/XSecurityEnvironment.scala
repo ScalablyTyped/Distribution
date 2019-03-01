@@ -50,3 +50,57 @@ trait XSecurityEnvironment
   ): scala.Double
 }
 
+object XSecurityEnvironment {
+  @scala.inline
+  def apply(
+    PersonalCertificates: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate],
+    SecurityEnvironmentInformation: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    buildCertificatePath: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
+    ],
+    createCertificateFromAscii: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
+    ],
+    createCertificateFromRaw: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
+    ],
+    getCertificate: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate
+    ],
+    getCertificateCharacters: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, scala.Double],
+    getPersonalCertificates: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate]
+    ],
+    getSecurityEnvironmentInformation: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    verifyCertificate: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.securityNs.XCertificate], 
+      scala.Double
+    ]
+  ): XSecurityEnvironment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PersonalCertificates")(PersonalCertificates)
+    __obj.updateDynamic("SecurityEnvironmentInformation")(SecurityEnvironmentInformation)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("buildCertificatePath")(buildCertificatePath)
+    __obj.updateDynamic("createCertificateFromAscii")(createCertificateFromAscii)
+    __obj.updateDynamic("createCertificateFromRaw")(createCertificateFromRaw)
+    __obj.updateDynamic("getCertificate")(getCertificate)
+    __obj.updateDynamic("getCertificateCharacters")(getCertificateCharacters)
+    __obj.updateDynamic("getPersonalCertificates")(getPersonalCertificates)
+    __obj.updateDynamic("getSecurityEnvironmentInformation")(getSecurityEnvironmentInformation)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("verifyCertificate")(verifyCertificate)
+    __obj.asInstanceOf[XSecurityEnvironment]
+  }
+}
+

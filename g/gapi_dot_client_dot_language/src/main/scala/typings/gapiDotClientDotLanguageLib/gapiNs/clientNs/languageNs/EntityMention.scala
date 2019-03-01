@@ -19,3 +19,14 @@ trait EntityMention extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EntityMention {
+  @scala.inline
+  def apply(sentiment: Sentiment = null, text: TextSpan = null, `type`: java.lang.String = null): EntityMention = {
+    val __obj = js.Dynamic.literal()
+    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[EntityMention]
+  }
+}
+

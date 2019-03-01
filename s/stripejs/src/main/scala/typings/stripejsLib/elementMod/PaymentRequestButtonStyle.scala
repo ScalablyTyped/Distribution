@@ -27,3 +27,18 @@ trait PaymentRequestButtonStyle extends js.Object {
   ] = js.undefined
 }
 
+object PaymentRequestButtonStyle {
+  @scala.inline
+  def apply(
+    height: java.lang.String = null,
+    theme: stripejsLib.stripejsLibStrings.dark | stripejsLib.stripejsLibStrings.light | stripejsLib.stripejsLibStrings.`light-outline` = null,
+    `type`: stripejsLib.stripejsLibStrings.default | stripejsLib.stripejsLibStrings.donate | stripejsLib.stripejsLibStrings.buy = null
+  ): PaymentRequestButtonStyle = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PaymentRequestButtonStyle]
+  }
+}
+

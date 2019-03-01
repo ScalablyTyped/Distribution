@@ -9,3 +9,17 @@ trait Anon_ContextRendererAnonInsertAnonPreventDefaultDK[K, D] extends js.Object
   def renderer(context: atOracleOraclejetLib.ojtreemapMod.ojTreemapNs.TooltipContext[K, D]): Anon_Insert | Anon_PreventDefault
 }
 
+object Anon_ContextRendererAnonInsertAnonPreventDefaultDK {
+  @scala.inline
+  def apply[K, D](
+    renderer: js.Function1[
+      atOracleOraclejetLib.ojtreemapMod.ojTreemapNs.TooltipContext[K, D], 
+      Anon_Insert | Anon_PreventDefault
+    ]
+  ): Anon_ContextRendererAnonInsertAnonPreventDefaultDK[K, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderer")(renderer)
+    __obj.asInstanceOf[Anon_ContextRendererAnonInsertAnonPreventDefaultDK[K, D]]
+  }
+}
+

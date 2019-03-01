@@ -7,64 +7,80 @@ import scala.scalajs.js.annotation._
 
 object opentokLibStrings {
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends opentokLib.opentokMod.OpenTokNs.ArchiveMode
   
   @js.native
-  sealed trait available extends js.Object
+  sealed trait available
+    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
   
   @js.native
   sealed trait bestFit extends js.Object
   
   @js.native
-  sealed trait composed extends js.Object
+  sealed trait composed
+    extends opentokLib.opentokMod.OpenTokNs.OutputMode
   
   @js.native
   sealed trait custom extends js.Object
   
   @js.native
-  sealed trait expired extends js.Object
+  sealed trait expired
+    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
   
   @js.native
   sealed trait horizontalPresentation extends js.Object
   
   @js.native
-  sealed trait individual extends js.Object
+  sealed trait individual
+    extends opentokLib.opentokMod.OpenTokNs.OutputMode
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual
+    extends opentokLib.opentokMod.OpenTokNs.ArchiveMode
   
   @js.native
-  sealed trait moderator extends js.Object
+  sealed trait moderator
+    extends opentokLib.opentokMod.OpenTokNs.Role
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait paused
+    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
   
   @js.native
   sealed trait pip extends js.Object
   
   @js.native
-  sealed trait publisher extends js.Object
+  sealed trait publisher
+    extends opentokLib.opentokMod.OpenTokNs.Role
   
   @js.native
-  sealed trait relayed extends js.Object
+  sealed trait relayed
+    extends opentokLib.opentokMod.OpenTokNs.MediaMode
   
   @js.native
-  sealed trait routed extends js.Object
+  sealed trait routed
+    extends opentokLib.opentokMod.OpenTokNs.MediaMode
   
   @js.native
-  sealed trait started extends js.Object
+  sealed trait started
+    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
   
   @js.native
-  sealed trait stopped extends js.Object
+  sealed trait stopped
+    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
   
   @js.native
-  sealed trait subscriber extends js.Object
+  sealed trait subscriber
+    extends opentokLib.opentokMod.OpenTokNs.Role
   
   @js.native
-  sealed trait uploaded extends js.Object
+  sealed trait uploaded
+    extends opentokLib.opentokMod.OpenTokNs.ArchiveStatus
   
   @js.native
   sealed trait verticalPresentation extends js.Object

@@ -23,3 +23,24 @@ trait Options extends js.Object {
   var tileType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    categoryFilter: js.Array[java.lang.String] = null,
+    pixelRatio: scala.Int | scala.Double = null,
+    scheme: java.lang.String = null,
+    tileCacheSize: scala.Int | scala.Double = null,
+    tileSize: scala.Int | scala.Double = null,
+    tileType: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (categoryFilter != null) __obj.updateDynamic("categoryFilter")(categoryFilter)
+    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
+    if (tileCacheSize != null) __obj.updateDynamic("tileCacheSize")(tileCacheSize.asInstanceOf[js.Any])
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (tileType != null) __obj.updateDynamic("tileType")(tileType)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -11,3 +11,18 @@ trait DropDownTreePopup extends js.Object {
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DropDownTreePopup {
+  @scala.inline
+  def apply(
+    appendTo: java.lang.String = null,
+    origin: java.lang.String = null,
+    position: java.lang.String = null
+  ): DropDownTreePopup = {
+    val __obj = js.Dynamic.literal()
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[DropDownTreePopup]
+  }
+}
+

@@ -17,3 +17,12 @@ trait ICommand extends js.Object {
   def execute(): js.Any
 }
 
+object ICommand {
+  @scala.inline
+  def apply(execute: js.Function0[js.Any]): ICommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.asInstanceOf[ICommand]
+  }
+}
+

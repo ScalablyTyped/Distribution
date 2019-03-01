@@ -85,3 +85,42 @@ import scala.scalajs.js.annotation._
   var shake: js.UndefOr[js.Any] = js.undefined
 }
 
+object InputProps {
+  @scala.inline
+  def apply(
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    errorMessage: java.lang.String = null,
+    errorProps: TextProps = null,
+    errorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    inputComponent: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = null,
+    inputContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    inputStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    label: java.lang.String = null,
+    labelProps: TextProps = null,
+    labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    leftIcon: IconNode = null,
+    leftIconContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    rightIcon: IconNode = null,
+    rightIconContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    shake: js.Any = null
+  ): InputProps = {
+    val __obj = js.Dynamic.literal()
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (errorProps != null) __obj.updateDynamic("errorProps")(errorProps)
+    if (errorStyle != null) __obj.updateDynamic("errorStyle")(errorStyle.asInstanceOf[js.Any])
+    if (inputComponent != null) __obj.updateDynamic("inputComponent")(inputComponent)
+    if (inputContainerStyle != null) __obj.updateDynamic("inputContainerStyle")(inputContainerStyle.asInstanceOf[js.Any])
+    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (labelProps != null) __obj.updateDynamic("labelProps")(labelProps)
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
+    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
+    if (leftIconContainerStyle != null) __obj.updateDynamic("leftIconContainerStyle")(leftIconContainerStyle.asInstanceOf[js.Any])
+    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
+    if (rightIconContainerStyle != null) __obj.updateDynamic("rightIconContainerStyle")(rightIconContainerStyle.asInstanceOf[js.Any])
+    if (shake != null) __obj.updateDynamic("shake")(shake)
+    __obj.asInstanceOf[InputProps]
+  }
+}
+

@@ -45,3 +45,42 @@ trait EnhancedCustomShapeHandle extends js.Object {
   var Switched: scala.Boolean
 }
 
+object EnhancedCustomShapeHandle {
+  @scala.inline
+  def apply(
+    MirroredX: scala.Boolean,
+    MirroredY: scala.Boolean,
+    Polar: EnhancedCustomShapeParameterPair,
+    Position: EnhancedCustomShapeParameterPair,
+    RadiusRangeMaximum: EnhancedCustomShapeParameter,
+    RadiusRangeMinimum: EnhancedCustomShapeParameter,
+    RangeXMaximum: EnhancedCustomShapeParameter,
+    RangeXMinimum: EnhancedCustomShapeParameter,
+    RangeYMaximum: EnhancedCustomShapeParameter,
+    RangeYMinimum: EnhancedCustomShapeParameter,
+    RefAngle: scala.Double,
+    RefR: scala.Double,
+    RefX: scala.Double,
+    RefY: scala.Double,
+    Switched: scala.Boolean
+  ): EnhancedCustomShapeHandle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MirroredX")(MirroredX)
+    __obj.updateDynamic("MirroredY")(MirroredY)
+    __obj.updateDynamic("Polar")(Polar)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("RadiusRangeMaximum")(RadiusRangeMaximum)
+    __obj.updateDynamic("RadiusRangeMinimum")(RadiusRangeMinimum)
+    __obj.updateDynamic("RangeXMaximum")(RangeXMaximum)
+    __obj.updateDynamic("RangeXMinimum")(RangeXMinimum)
+    __obj.updateDynamic("RangeYMaximum")(RangeYMaximum)
+    __obj.updateDynamic("RangeYMinimum")(RangeYMinimum)
+    __obj.updateDynamic("RefAngle")(RefAngle)
+    __obj.updateDynamic("RefR")(RefR)
+    __obj.updateDynamic("RefX")(RefX)
+    __obj.updateDynamic("RefY")(RefY)
+    __obj.updateDynamic("Switched")(Switched)
+    __obj.asInstanceOf[EnhancedCustomShapeHandle]
+  }
+}
+

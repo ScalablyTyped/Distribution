@@ -11,3 +11,18 @@ trait InflateOptions extends js.Object {
   var windowBits: js.UndefOr[scala.Double] = js.undefined
 }
 
+object InflateOptions {
+  @scala.inline
+  def apply(
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    to: pakoLib.pakoLibStrings.string = null,
+    windowBits: scala.Int | scala.Double = null
+  ): InflateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (to != null) __obj.updateDynamic("to")(to)
+    if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InflateOptions]
+  }
+}
+

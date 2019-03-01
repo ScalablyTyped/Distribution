@@ -10,3 +10,16 @@ trait FilePondServerConfigProps extends js.Object {
   var server: js.UndefOr[java.lang.String | reactDashFilepondLib.Anon_Fetch] = js.undefined
 }
 
+object FilePondServerConfigProps {
+  @scala.inline
+  def apply(
+    instantUpload: js.UndefOr[scala.Boolean] = js.undefined,
+    server: java.lang.String | reactDashFilepondLib.Anon_Fetch = null
+  ): FilePondServerConfigProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(instantUpload)) __obj.updateDynamic("instantUpload")(instantUpload)
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FilePondServerConfigProps]
+  }
+}
+

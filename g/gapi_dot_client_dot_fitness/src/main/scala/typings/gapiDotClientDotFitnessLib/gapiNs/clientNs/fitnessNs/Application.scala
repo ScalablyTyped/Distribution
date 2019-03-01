@@ -22,3 +22,20 @@ trait Application extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Application {
+  @scala.inline
+  def apply(
+    detailsUrl: java.lang.String = null,
+    name: java.lang.String = null,
+    packageName: java.lang.String = null,
+    version: java.lang.String = null
+  ): Application = {
+    val __obj = js.Dynamic.literal()
+    if (detailsUrl != null) __obj.updateDynamic("detailsUrl")(detailsUrl)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Application]
+  }
+}
+

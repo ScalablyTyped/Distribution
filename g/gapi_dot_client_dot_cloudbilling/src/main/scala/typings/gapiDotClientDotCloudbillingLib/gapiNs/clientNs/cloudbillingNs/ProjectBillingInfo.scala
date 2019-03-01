@@ -33,3 +33,20 @@ trait ProjectBillingInfo extends js.Object {
   var projectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProjectBillingInfo {
+  @scala.inline
+  def apply(
+    billingAccountName: java.lang.String = null,
+    billingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    projectId: java.lang.String = null
+  ): ProjectBillingInfo = {
+    val __obj = js.Dynamic.literal()
+    if (billingAccountName != null) __obj.updateDynamic("billingAccountName")(billingAccountName)
+    if (!js.isUndefined(billingEnabled)) __obj.updateDynamic("billingEnabled")(billingEnabled)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    __obj.asInstanceOf[ProjectBillingInfo]
+  }
+}
+

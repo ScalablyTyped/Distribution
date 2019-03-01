@@ -72,3 +72,40 @@ trait Anon_AnchorPoint extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AnchorPoint {
+  @scala.inline
+  def apply(
+    anchorPoint: googlemapsLib.googleNs.mapsNs.Point = null,
+    animation: googlemapsLib.googleNs.mapsNs.Animation = null,
+    clickable: js.UndefOr[scala.Boolean] = js.undefined,
+    cursor: java.lang.String = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String | googlemapsLib.googleNs.mapsNs.Icon | googlemapsLib.googleNs.mapsNs.Symbol = null,
+    label: java.lang.String = null,
+    map: googlemapsLib.googleNs.mapsNs.Map | googlemapsLib.googleNs.mapsNs.StreetViewPanorama = null,
+    opacity: scala.Int | scala.Double = null,
+    optimized: js.UndefOr[scala.Boolean] = js.undefined,
+    shape: googlemapsLib.googleNs.mapsNs.MarkerShape = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): Anon_AnchorPoint = {
+    val __obj = js.Dynamic.literal()
+    if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimized)) __obj.updateDynamic("optimized")(optimized)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AnchorPoint]
+  }
+}
+

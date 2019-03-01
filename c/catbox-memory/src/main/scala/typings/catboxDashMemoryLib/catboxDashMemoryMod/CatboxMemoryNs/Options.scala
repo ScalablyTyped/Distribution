@@ -34,3 +34,20 @@ trait Options extends js.Object {
   var minCleanupIntervalMsec: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allowMixedContent: js.UndefOr[scala.Boolean] = js.undefined,
+    cloneBuffersOnGet: js.UndefOr[scala.Boolean] = js.undefined,
+    maxByteSize: scala.Int | scala.Double = null,
+    minCleanupIntervalMsec: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMixedContent)) __obj.updateDynamic("allowMixedContent")(allowMixedContent)
+    if (!js.isUndefined(cloneBuffersOnGet)) __obj.updateDynamic("cloneBuffersOnGet")(cloneBuffersOnGet)
+    if (maxByteSize != null) __obj.updateDynamic("maxByteSize")(maxByteSize.asInstanceOf[js.Any])
+    if (minCleanupIntervalMsec != null) __obj.updateDynamic("minCleanupIntervalMsec")(minCleanupIntervalMsec.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

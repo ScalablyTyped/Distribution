@@ -10,3 +10,22 @@ trait StockChartZoomStartEvent extends StockChartEvent {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object StockChartZoomStartEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: StockChart,
+    axisRanges: js.Any = null,
+    originalEvent: js.Any = null
+  ): StockChartZoomStartEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (axisRanges != null) __obj.updateDynamic("axisRanges")(axisRanges)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[StockChartZoomStartEvent]
+  }
+}
+

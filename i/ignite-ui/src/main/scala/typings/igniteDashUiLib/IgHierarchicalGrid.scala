@@ -526,3 +526,207 @@ trait IgHierarchicalGrid
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgHierarchicalGrid {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igHierarchicalGrid
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    adjustVirtualHeights: js.UndefOr[scala.Boolean] = js.undefined,
+    aggregateTransactions: js.UndefOr[scala.Boolean] = js.undefined,
+    alternateRowStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDuration: scala.Int | scala.Double = null,
+    autoAdjustHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCommit: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFormat: java.lang.String | scala.Boolean = null,
+    autoGenerateColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    autoGenerateLayouts: js.UndefOr[scala.Boolean] = js.undefined,
+    autofitLastColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    avgColumnWidth: java.lang.String | scala.Double = null,
+    avgRowHeight: java.lang.String | scala.Double = null,
+    caption: java.lang.String = null,
+    captionRendered: CaptionRenderedEvent = null,
+    captionRendering: CaptionRenderingEvent = null,
+    cellClick: CellClickEvent = null,
+    cellRightClick: CellRightClickEvent = null,
+    childGridCreated: ChildGridCreatedEvent = null,
+    childGridCreating: ChildGridCreatingEvent = null,
+    childGridRendered: ChildGridRenderedEvent = null,
+    childrenPopulated: ChildrenPopulatedEvent = null,
+    childrenPopulating: ChildrenPopulatingEvent = null,
+    collapseTooltip: java.lang.String = null,
+    columnLayouts: js.Array[IgHierarchicalGridColumnLayout] = null,
+    columnVirtualization: js.UndefOr[scala.Boolean] = js.undefined,
+    columns: js.Array[IgHierarchicalGridColumn] = null,
+    columnsCollectionModified: ColumnsCollectionModifiedEvent = null,
+    created: CreatedEvent = null,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataRendered: DataRenderedEvent = null,
+    dataRendering: DataRenderingEvent = null,
+    dataSource: java.lang.String | js.Array[_] | js.Object = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    defaultChildrenDataProperty: java.lang.String = null,
+    defaultColumnWidth: java.lang.String | scala.Double = null,
+    destroyed: DestroyedEvent = null,
+    enableHoverStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    enableResizeContainerCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    enableUTCDates: js.UndefOr[scala.Boolean] = js.undefined,
+    expandColWidth: scala.Int | scala.Double = null,
+    expandCollapseAnimations: js.UndefOr[scala.Boolean] = js.undefined,
+    expandTooltip: java.lang.String = null,
+    featureChooserIconDisplay: java.lang.String = null,
+    features: js.Array[IgHierarchicalGridFeature] = null,
+    fixedFooters: js.UndefOr[scala.Boolean] = js.undefined,
+    fixedHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    footerRendered: FooterRenderedEvent = null,
+    footerRendering: FooterRenderingEvent = null,
+    headerCellRendered: HeaderCellRenderedEvent = null,
+    headerRendered: HeaderRenderedEvent = null,
+    headerRendering: HeaderRenderingEvent = null,
+    height: java.lang.String | scala.Double = null,
+    initialDataBindDepth: scala.Int | scala.Double = null,
+    initialExpandDepth: scala.Int | scala.Double = null,
+    jsonpRequest: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    localSchemaTransform: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: IgHierarchicalGridLocale = null,
+    maxDataBindDepth: scala.Int | scala.Double = null,
+    mergeUnboundColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    odata: js.UndefOr[scala.Boolean] = js.undefined,
+    pathSeparator: java.lang.String = null,
+    primaryKey: java.lang.String = null,
+    regional: java.lang.String | js.Object = null,
+    renderCheckboxes: js.UndefOr[scala.Boolean] = js.undefined,
+    rendered: RenderedEvent = null,
+    rendering: RenderingEvent = null,
+    requestError: RequestErrorEvent = null,
+    requestType: java.lang.String = null,
+    responseContentType: java.lang.String = null,
+    responseDataKey: java.lang.String = null,
+    responseTotalRecCountKey: java.lang.String = null,
+    rest: js.UndefOr[scala.Boolean] = js.undefined,
+    restSettings: IgHierarchicalGridRestSettings = null,
+    rowCollapsed: RowCollapsedEvent = null,
+    rowCollapsing: RowCollapsingEvent = null,
+    rowExpanded: RowExpandedEvent = null,
+    rowExpanding: RowExpandingEvent = null,
+    rowVirtualization: js.UndefOr[scala.Boolean] = js.undefined,
+    rowsRendered: RowsRenderedEvent = null,
+    rowsRendering: RowsRenderingEvent = null,
+    schemaGenerated: SchemaGeneratedEvent = null,
+    scrollSettings: IgHierarchicalGridScrollSettings = null,
+    serializeTransactionLog: js.UndefOr[scala.Boolean] = js.undefined,
+    showFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null,
+    templatingEngine: java.lang.String = null,
+    updateUrl: java.lang.String = null,
+    virtualization: js.UndefOr[scala.Boolean] = js.undefined,
+    virtualizationMode: java.lang.String = null,
+    virtualizationMouseWheelStep: scala.Int | scala.Double = null,
+    width: java.lang.String | scala.Double = null
+  ): IgHierarchicalGrid = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(adjustVirtualHeights)) __obj.updateDynamic("adjustVirtualHeights")(adjustVirtualHeights)
+    if (!js.isUndefined(aggregateTransactions)) __obj.updateDynamic("aggregateTransactions")(aggregateTransactions)
+    if (!js.isUndefined(alternateRowStyles)) __obj.updateDynamic("alternateRowStyles")(alternateRowStyles)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAdjustHeight)) __obj.updateDynamic("autoAdjustHeight")(autoAdjustHeight)
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
+    if (autoFormat != null) __obj.updateDynamic("autoFormat")(autoFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGenerateColumns)) __obj.updateDynamic("autoGenerateColumns")(autoGenerateColumns)
+    if (!js.isUndefined(autoGenerateLayouts)) __obj.updateDynamic("autoGenerateLayouts")(autoGenerateLayouts)
+    if (!js.isUndefined(autofitLastColumn)) __obj.updateDynamic("autofitLastColumn")(autofitLastColumn)
+    if (avgColumnWidth != null) __obj.updateDynamic("avgColumnWidth")(avgColumnWidth.asInstanceOf[js.Any])
+    if (avgRowHeight != null) __obj.updateDynamic("avgRowHeight")(avgRowHeight.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (captionRendered != null) __obj.updateDynamic("captionRendered")(captionRendered)
+    if (captionRendering != null) __obj.updateDynamic("captionRendering")(captionRendering)
+    if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
+    if (cellRightClick != null) __obj.updateDynamic("cellRightClick")(cellRightClick)
+    if (childGridCreated != null) __obj.updateDynamic("childGridCreated")(childGridCreated)
+    if (childGridCreating != null) __obj.updateDynamic("childGridCreating")(childGridCreating)
+    if (childGridRendered != null) __obj.updateDynamic("childGridRendered")(childGridRendered)
+    if (childrenPopulated != null) __obj.updateDynamic("childrenPopulated")(childrenPopulated)
+    if (childrenPopulating != null) __obj.updateDynamic("childrenPopulating")(childrenPopulating)
+    if (collapseTooltip != null) __obj.updateDynamic("collapseTooltip")(collapseTooltip)
+    if (columnLayouts != null) __obj.updateDynamic("columnLayouts")(columnLayouts)
+    if (!js.isUndefined(columnVirtualization)) __obj.updateDynamic("columnVirtualization")(columnVirtualization)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (columnsCollectionModified != null) __obj.updateDynamic("columnsCollectionModified")(columnsCollectionModified)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataRendered != null) __obj.updateDynamic("dataRendered")(dataRendered)
+    if (dataRendering != null) __obj.updateDynamic("dataRendering")(dataRendering)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (defaultChildrenDataProperty != null) __obj.updateDynamic("defaultChildrenDataProperty")(defaultChildrenDataProperty)
+    if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
+    if (destroyed != null) __obj.updateDynamic("destroyed")(destroyed)
+    if (!js.isUndefined(enableHoverStyles)) __obj.updateDynamic("enableHoverStyles")(enableHoverStyles)
+    if (!js.isUndefined(enableResizeContainerCheck)) __obj.updateDynamic("enableResizeContainerCheck")(enableResizeContainerCheck)
+    if (!js.isUndefined(enableUTCDates)) __obj.updateDynamic("enableUTCDates")(enableUTCDates)
+    if (expandColWidth != null) __obj.updateDynamic("expandColWidth")(expandColWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandCollapseAnimations)) __obj.updateDynamic("expandCollapseAnimations")(expandCollapseAnimations)
+    if (expandTooltip != null) __obj.updateDynamic("expandTooltip")(expandTooltip)
+    if (featureChooserIconDisplay != null) __obj.updateDynamic("featureChooserIconDisplay")(featureChooserIconDisplay)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (!js.isUndefined(fixedFooters)) __obj.updateDynamic("fixedFooters")(fixedFooters)
+    if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders)
+    if (footerRendered != null) __obj.updateDynamic("footerRendered")(footerRendered)
+    if (footerRendering != null) __obj.updateDynamic("footerRendering")(footerRendering)
+    if (headerCellRendered != null) __obj.updateDynamic("headerCellRendered")(headerCellRendered)
+    if (headerRendered != null) __obj.updateDynamic("headerRendered")(headerRendered)
+    if (headerRendering != null) __obj.updateDynamic("headerRendering")(headerRendering)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (initialDataBindDepth != null) __obj.updateDynamic("initialDataBindDepth")(initialDataBindDepth.asInstanceOf[js.Any])
+    if (initialExpandDepth != null) __obj.updateDynamic("initialExpandDepth")(initialExpandDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonpRequest)) __obj.updateDynamic("jsonpRequest")(jsonpRequest)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (!js.isUndefined(localSchemaTransform)) __obj.updateDynamic("localSchemaTransform")(localSchemaTransform)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDataBindDepth != null) __obj.updateDynamic("maxDataBindDepth")(maxDataBindDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeUnboundColumns)) __obj.updateDynamic("mergeUnboundColumns")(mergeUnboundColumns)
+    if (!js.isUndefined(odata)) __obj.updateDynamic("odata")(odata)
+    if (pathSeparator != null) __obj.updateDynamic("pathSeparator")(pathSeparator)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderCheckboxes)) __obj.updateDynamic("renderCheckboxes")(renderCheckboxes)
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (requestError != null) __obj.updateDynamic("requestError")(requestError)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
+    if (!js.isUndefined(rest)) __obj.updateDynamic("rest")(rest)
+    if (restSettings != null) __obj.updateDynamic("restSettings")(restSettings)
+    if (rowCollapsed != null) __obj.updateDynamic("rowCollapsed")(rowCollapsed)
+    if (rowCollapsing != null) __obj.updateDynamic("rowCollapsing")(rowCollapsing)
+    if (rowExpanded != null) __obj.updateDynamic("rowExpanded")(rowExpanded)
+    if (rowExpanding != null) __obj.updateDynamic("rowExpanding")(rowExpanding)
+    if (!js.isUndefined(rowVirtualization)) __obj.updateDynamic("rowVirtualization")(rowVirtualization)
+    if (rowsRendered != null) __obj.updateDynamic("rowsRendered")(rowsRendered)
+    if (rowsRendering != null) __obj.updateDynamic("rowsRendering")(rowsRendering)
+    if (schemaGenerated != null) __obj.updateDynamic("schemaGenerated")(schemaGenerated)
+    if (scrollSettings != null) __obj.updateDynamic("scrollSettings")(scrollSettings)
+    if (!js.isUndefined(serializeTransactionLog)) __obj.updateDynamic("serializeTransactionLog")(serializeTransactionLog)
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (templatingEngine != null) __obj.updateDynamic("templatingEngine")(templatingEngine)
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (!js.isUndefined(virtualization)) __obj.updateDynamic("virtualization")(virtualization)
+    if (virtualizationMode != null) __obj.updateDynamic("virtualizationMode")(virtualizationMode)
+    if (virtualizationMouseWheelStep != null) __obj.updateDynamic("virtualizationMouseWheelStep")(virtualizationMouseWheelStep.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgHierarchicalGrid]
+  }
+}
+

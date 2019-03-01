@@ -12,3 +12,20 @@ trait local extends js.Object {
   def remove(name: java.lang.String): scala.Unit
 }
 
+object local {
+  @scala.inline
+  def apply(
+    clear: js.Function0[scala.Unit],
+    get: js.Function1[java.lang.String, js.Any],
+    put: js.Function2[java.lang.String, js.Any, scala.Unit],
+    remove: js.Function1[java.lang.String, scala.Unit]
+  ): local = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("put")(put)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[local]
+  }
+}
+

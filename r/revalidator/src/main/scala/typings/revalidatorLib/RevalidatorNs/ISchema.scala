@@ -52,3 +52,55 @@ trait ISchema[T] extends js.Object {
   var uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ISchema {
+  @scala.inline
+  def apply[T](
+    `type`: Types | js.Array[Types],
+    allowEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    conform: js.Function2[/* value */ js.Any, /* data */ js.UndefOr[T], scala.Boolean] = null,
+    default: js.Any = null,
+    dependencies: java.lang.String = null,
+    description: java.lang.String = null,
+    divisibleBy: scala.Int | scala.Double = null,
+    enum: js.Array[_] = null,
+    exclusiveMaximum: scala.Int | scala.Double = null,
+    exclusiveMinimum: scala.Int | scala.Double = null,
+    format: Formats = null,
+    maxItems: scala.Int | scala.Double = null,
+    maxLength: scala.Int | scala.Double = null,
+    maximum: scala.Int | scala.Double = null,
+    message: java.lang.String = null,
+    messages: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    minItems: scala.Int | scala.Double = null,
+    minLength: scala.Int | scala.Double = null,
+    minimum: scala.Int | scala.Double = null,
+    pattern: stdLib.RegExp | java.lang.String = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
+  ): ISchema[T] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
+    if (conform != null) __obj.updateDynamic("conform")(conform)
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (divisibleBy != null) __obj.updateDynamic("divisibleBy")(divisibleBy.asInstanceOf[js.Any])
+    if (enum != null) __obj.updateDynamic("enum")(enum)
+    if (exclusiveMaximum != null) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.asInstanceOf[js.Any])
+    if (exclusiveMinimum != null) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (minItems != null) __obj.updateDynamic("minItems")(minItems.asInstanceOf[js.Any])
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems)
+    __obj.asInstanceOf[ISchema[T]]
+  }
+}
+

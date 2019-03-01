@@ -37,3 +37,26 @@ trait AddAndroidDownloads extends js.Object {
   var useDownloadManager: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AddAndroidDownloads {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    mediaScannable: js.UndefOr[scala.Boolean] = js.undefined,
+    mime: java.lang.String = null,
+    notification: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    title: java.lang.String = null,
+    useDownloadManager: js.UndefOr[scala.Boolean] = js.undefined
+  ): AddAndroidDownloads = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(mediaScannable)) __obj.updateDynamic("mediaScannable")(mediaScannable)
+    if (mime != null) __obj.updateDynamic("mime")(mime)
+    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(useDownloadManager)) __obj.updateDynamic("useDownloadManager")(useDownloadManager)
+    __obj.asInstanceOf[AddAndroidDownloads]
+  }
+}
+

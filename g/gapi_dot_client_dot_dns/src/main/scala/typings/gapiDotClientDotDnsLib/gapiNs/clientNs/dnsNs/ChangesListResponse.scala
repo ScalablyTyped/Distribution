@@ -21,3 +21,18 @@ trait ChangesListResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChangesListResponse {
+  @scala.inline
+  def apply(
+    changes: js.Array[Change] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null
+  ): ChangesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (changes != null) __obj.updateDynamic("changes")(changes)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ChangesListResponse]
+  }
+}
+

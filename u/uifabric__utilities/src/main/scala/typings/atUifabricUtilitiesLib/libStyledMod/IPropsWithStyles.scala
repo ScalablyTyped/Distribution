@@ -11,3 +11,14 @@ trait IPropsWithStyles[TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib
   ] = js.undefined
 }
 
+object IPropsWithStyles {
+  @scala.inline
+  def apply[TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
+    styles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet] = null
+  ): IPropsWithStyles[TStyleProps, TStyleSet] = {
+    val __obj = js.Dynamic.literal()
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPropsWithStyles[TStyleProps, TStyleSet]]
+  }
+}
+

@@ -23,3 +23,22 @@ trait XDataPilotTablesSupplier
   def getDataPilotTables(): XDataPilotTables
 }
 
+object XDataPilotTablesSupplier {
+  @scala.inline
+  def apply(
+    DataPilotTables: XDataPilotTables,
+    acquire: js.Function0[scala.Unit],
+    getDataPilotTables: js.Function0[XDataPilotTables],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataPilotTablesSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataPilotTables")(DataPilotTables)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDataPilotTables")(getDataPilotTables)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDataPilotTablesSupplier]
+  }
+}
+

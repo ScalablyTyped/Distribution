@@ -21,3 +21,16 @@ trait JobTemplateSpec extends js.Object {
   val spec: atPulumiKubernetesLib.typesOutputMod.batchNs.v1Ns.JobSpec
 }
 
+object JobTemplateSpec {
+  @scala.inline
+  def apply(
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: atPulumiKubernetesLib.typesOutputMod.batchNs.v1Ns.JobSpec
+  ): JobTemplateSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.asInstanceOf[JobTemplateSpec]
+  }
+}
+

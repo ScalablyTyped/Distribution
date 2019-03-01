@@ -41,3 +41,34 @@ trait DrawCustomLabelEventArgs extends js.Object {
   var `type`: js.UndefOr[js.Any] = js.undefined
 }
 
+object DrawCustomLabelEventArgs {
+  @scala.inline
+  def apply(
+    Model: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    customLabelElement: js.Any = null,
+    customLabelIndex: scala.Int | scala.Double = null,
+    `object`: js.Any = null,
+    position: js.Any = null,
+    scaleElement: js.Any = null,
+    scaleIndex: scala.Int | scala.Double = null,
+    style: js.Any = null,
+    `type`: js.Any = null
+  ): DrawCustomLabelEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Model != null) __obj.updateDynamic("Model")(Model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (customLabelElement != null) __obj.updateDynamic("customLabelElement")(customLabelElement)
+    if (customLabelIndex != null) __obj.updateDynamic("customLabelIndex")(customLabelIndex.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DrawCustomLabelEventArgs]
+  }
+}
+

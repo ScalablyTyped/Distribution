@@ -12,3 +12,12 @@ trait PrimaryXAxisCrosshairLabel extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PrimaryXAxisCrosshairLabel {
+  @scala.inline
+  def apply(visible: js.UndefOr[scala.Boolean] = js.undefined): PrimaryXAxisCrosshairLabel = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[PrimaryXAxisCrosshairLabel]
+  }
+}
+

@@ -35,3 +35,17 @@ trait ReadsResource extends js.Object {
   def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchReadsResponse]
 }
 
+object ReadsResource {
+  @scala.inline
+  def apply(
+    search: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchReadsResponse]
+    ]
+  ): ReadsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ReadsResource]
+  }
+}
+

@@ -141,3 +141,43 @@ trait ILabel extends js.Object {
   def setObjectText(objectName: java.lang.String, text: java.lang.String): ILabel
 }
 
+object ILabel {
+  @scala.inline
+  def apply(
+    getAddressBarcodePosition: js.Function1[scala.Double, AddressBarcodePosition],
+    getAddressObjectCount: js.Function0[scala.Double],
+    getAddressText: js.Function1[scala.Double, java.lang.String],
+    getLabelXml: js.Function0[java.lang.String],
+    getObjectNames: js.Function0[js.Array[java.lang.String]],
+    getObjectText: js.Function1[java.lang.String, java.lang.String],
+    print: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    printAndPollStatus: js.Function5[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      js.Function2[/* printJob */ PrintJob, /* printJobStatusInfo */ PrintJobStatusInfo, scala.Boolean], 
+      scala.Double, 
+      PrintJob
+    ],
+    render: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    setAddressBarcodePosition: js.Function2[scala.Double, AddressBarcodePosition, ILabel],
+    setAddressText: js.Function2[scala.Double, java.lang.String, ILabel],
+    setObjectText: js.Function2[java.lang.String, java.lang.String, ILabel]
+  ): ILabel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAddressBarcodePosition")(getAddressBarcodePosition)
+    __obj.updateDynamic("getAddressObjectCount")(getAddressObjectCount)
+    __obj.updateDynamic("getAddressText")(getAddressText)
+    __obj.updateDynamic("getLabelXml")(getLabelXml)
+    __obj.updateDynamic("getObjectNames")(getObjectNames)
+    __obj.updateDynamic("getObjectText")(getObjectText)
+    __obj.updateDynamic("print")(print)
+    __obj.updateDynamic("printAndPollStatus")(printAndPollStatus)
+    __obj.updateDynamic("render")(render)
+    __obj.updateDynamic("setAddressBarcodePosition")(setAddressBarcodePosition)
+    __obj.updateDynamic("setAddressText")(setAddressText)
+    __obj.updateDynamic("setObjectText")(setObjectText)
+    __obj.asInstanceOf[ILabel]
+  }
+}
+

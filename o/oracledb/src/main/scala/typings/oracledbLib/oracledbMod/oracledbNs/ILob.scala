@@ -43,3 +43,34 @@ trait ILob extends js.Object {
   ] = js.undefined
 }
 
+object ILob {
+  @scala.inline
+  def apply(
+    chunkSize: scala.Double,
+    length: scala.Double,
+    pieceSize: scala.Double,
+    `type`: java.lang.String,
+    offset: scala.Int | scala.Double = null,
+    read: js.Function1[
+      /* callback */ js.Function2[/* err */ js.Any, /* chunk */ java.lang.String | nodeLib.Buffer, scala.Unit], 
+      scala.Unit
+    ] = null,
+    release: js.Function0[scala.Unit] = null,
+    write: js.Function2[
+      /* data */ nodeLib.Buffer, 
+      /* callback */ js.Function1[/* err */ js.Any, scala.Unit], 
+      scala.Unit
+    ] = null
+  ): ILob = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("chunkSize")(chunkSize)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("pieceSize")(pieceSize)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (read != null) __obj.updateDynamic("read")(read)
+    if (release != null) __obj.updateDynamic("release")(release)
+    if (write != null) __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[ILob]
+  }
+}
+

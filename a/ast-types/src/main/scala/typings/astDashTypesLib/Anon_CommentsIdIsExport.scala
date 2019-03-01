@@ -13,3 +13,22 @@ trait Anon_CommentsIdIsExport extends js.Object {
   var moduleReference: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind | astDashTypesLib.genKindsMod.TSExternalModuleReferenceKind
 }
 
+object Anon_CommentsIdIsExport {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    moduleReference: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind | astDashTypesLib.genKindsMod.TSExternalModuleReferenceKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    isExport: js.UndefOr[scala.Boolean] = js.undefined,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsIdIsExport = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("moduleReference")(moduleReference.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (!js.isUndefined(isExport)) __obj.updateDynamic("isExport")(isExport)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsIdIsExport]
+  }
+}
+

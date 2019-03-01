@@ -18,3 +18,31 @@ trait fragParsingData extends js.Object {
   var `type`: java.lang.String
 }
 
+object fragParsingData {
+  @scala.inline
+  def apply(
+    endDTS: scala.Double,
+    endPTS: scala.Double,
+    frag: Fragment,
+    id: java.lang.String,
+    mdat: js.Any,
+    moof: js.Any,
+    nb: scala.Double,
+    startDTS: scala.Double,
+    startPTS: scala.Double,
+    `type`: java.lang.String
+  ): fragParsingData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("endDTS")(endDTS)
+    __obj.updateDynamic("endPTS")(endPTS)
+    __obj.updateDynamic("frag")(frag)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("mdat")(mdat)
+    __obj.updateDynamic("moof")(moof)
+    __obj.updateDynamic("nb")(nb)
+    __obj.updateDynamic("startDTS")(startDTS)
+    __obj.updateDynamic("startPTS")(startPTS)
+    __obj.asInstanceOf[fragParsingData]
+  }
+}
+

@@ -36,3 +36,34 @@ trait Options extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    cell_size: scala.Int | scala.Double = null,
+    color_function: js.Function2[/* x */ scala.Double, /* y */ scala.Double, java.lang.String] = null,
+    color_space: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    points: js.Array[scala.Double] = null,
+    seed: scala.Double | java.lang.String = null,
+    stroke_width: scala.Int | scala.Double = null,
+    variance: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    x_colors: trianglifyLib.trianglifyLibNumbers.`false` | java.lang.String | js.Array[java.lang.String] = null,
+    y_colors: trianglifyLib.trianglifyLibNumbers.`false` | java.lang.String | js.Array[java.lang.String] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (cell_size != null) __obj.updateDynamic("cell_size")(cell_size.asInstanceOf[js.Any])
+    if (color_function != null) __obj.updateDynamic("color_function")(color_function)
+    if (color_space != null) __obj.updateDynamic("color_space")(color_space)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    if (stroke_width != null) __obj.updateDynamic("stroke_width")(stroke_width.asInstanceOf[js.Any])
+    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x_colors != null) __obj.updateDynamic("x_colors")(x_colors.asInstanceOf[js.Any])
+    if (y_colors != null) __obj.updateDynamic("y_colors")(y_colors.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

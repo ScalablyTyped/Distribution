@@ -11,3 +11,17 @@ trait Event
   var `type`: java.lang.String
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    StringDictionary: /* attachment */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    target: js.Any = null
+  ): Event = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[Event]
+  }
+}
+

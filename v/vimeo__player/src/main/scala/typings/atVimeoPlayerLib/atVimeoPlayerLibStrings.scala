@@ -34,49 +34,64 @@ object atVimeoPlayerLibStrings {
   sealed trait UnsupportedError extends js.Object
   
   @js.native
-  sealed trait bufferend extends js.Object
+  sealed trait bufferend
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait bufferstart extends js.Object
+  sealed trait bufferstart
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait cuechange extends js.Object
+  sealed trait cuechange
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait cuepoint extends js.Object
+  sealed trait cuepoint
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait ended extends js.Object
+  sealed trait ended
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait loaded extends js.Object
+  sealed trait loaded
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait pause extends js.Object
+  sealed trait pause
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait play extends js.Object
+  sealed trait play
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait playbackratechange extends js.Object
+  sealed trait playbackratechange
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait seeked extends js.Object
+  sealed trait seeked
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait texttrackchange extends js.Object
+  sealed trait texttrackchange
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait timeupdate extends js.Object
+  sealed trait timeupdate
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @js.native
-  sealed trait volumechange extends js.Object
+  sealed trait volumechange
+    extends atVimeoPlayerLib.atVimeoPlayerMod._EventName
   
   @scala.inline
   def ContrastError: ContrastError = "ContrastError".asInstanceOf[ContrastError]

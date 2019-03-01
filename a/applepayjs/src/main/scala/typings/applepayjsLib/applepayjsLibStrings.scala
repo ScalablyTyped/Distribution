@@ -7,118 +7,159 @@ import scala.scalajs.js.annotation._
 
 object applepayjsLibStrings {
   @js.native
-  sealed trait activated extends js.Object
+  sealed trait activated
+    extends applepayjsLib.ApplePayJSNs.ApplePayPaymentPassActivationState
   
   @js.native
-  sealed trait activating extends js.Object
+  sealed trait activating
+    extends applepayjsLib.ApplePayJSNs.ApplePayPaymentPassActivationState
   
   @js.native
-  sealed trait addressLines extends js.Object
+  sealed trait addressLines
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait addressUnserviceable extends js.Object
+  sealed trait addressUnserviceable
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorCode
   
   @js.native
-  sealed trait administrativeArea extends js.Object
+  sealed trait administrativeArea
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait billingContactInvalid extends js.Object
+  sealed trait billingContactInvalid
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorCode
   
   @js.native
-  sealed trait country extends js.Object
+  sealed trait country
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait countryCode extends js.Object
+  sealed trait countryCode
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait credit extends js.Object
+  sealed trait credit
+    extends applepayjsLib.ApplePayJSNs.ApplePayPaymentMethodType
   
   @js.native
-  sealed trait deactivated extends js.Object
+  sealed trait deactivated
+    extends applepayjsLib.ApplePayJSNs.ApplePayPaymentPassActivationState
   
   @js.native
-  sealed trait debit extends js.Object
+  sealed trait debit
+    extends applepayjsLib.ApplePayJSNs.ApplePayPaymentMethodType
   
   @js.native
-  sealed trait delivery extends js.Object
+  sealed trait delivery
+    extends applepayjsLib.ApplePayJSNs.ApplePayShippingType
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends applepayjsLib.ApplePayJSNs.ApplePayContactField
   
   @js.native
-  sealed trait emailAddress extends js.Object
+  sealed trait emailAddress
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait `final` extends js.Object
+  sealed trait `final`
+    extends applepayjsLib.ApplePayJSNs.ApplePayLineItemType
   
   @js.native
-  sealed trait locality extends js.Object
+  sealed trait locality
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name
+    extends applepayjsLib.ApplePayJSNs.ApplePayContactField
+       with applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends applepayjsLib.ApplePayJSNs.ApplePayLineItemType
   
   @js.native
-  sealed trait phone extends js.Object
+  sealed trait phone
+    extends applepayjsLib.ApplePayJSNs.ApplePayContactField
   
   @js.native
-  sealed trait phoneNumber extends js.Object
+  sealed trait phoneNumber
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait phoneticName extends js.Object
+  sealed trait phoneticName
+    extends applepayjsLib.ApplePayJSNs.ApplePayContactField
+       with applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait postalAddress extends js.Object
+  sealed trait postalAddress
+    extends applepayjsLib.ApplePayJSNs.ApplePayContactField
+       with applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait postalCode extends js.Object
+  sealed trait postalCode
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait prepaid extends js.Object
+  sealed trait prepaid
+    extends applepayjsLib.ApplePayJSNs.ApplePayPaymentMethodType
   
   @js.native
-  sealed trait requiresActivation extends js.Object
+  sealed trait requiresActivation
+    extends applepayjsLib.ApplePayJSNs.ApplePayPaymentPassActivationState
   
   @js.native
-  sealed trait servicePickup extends js.Object
+  sealed trait servicePickup
+    extends applepayjsLib.ApplePayJSNs.ApplePayShippingType
   
   @js.native
-  sealed trait shipping extends js.Object
+  sealed trait shipping
+    extends applepayjsLib.ApplePayJSNs.ApplePayShippingType
   
   @js.native
-  sealed trait shippingContactInvalid extends js.Object
+  sealed trait shippingContactInvalid
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorCode
   
   @js.native
-  sealed trait store extends js.Object
+  sealed trait store
+    extends applepayjsLib.ApplePayJSNs.ApplePayPaymentMethodType
   
   @js.native
-  sealed trait storePickup extends js.Object
+  sealed trait storePickup
+    extends applepayjsLib.ApplePayJSNs.ApplePayShippingType
   
   @js.native
-  sealed trait subAdministrativeArea extends js.Object
+  sealed trait subAdministrativeArea
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait subLocality extends js.Object
+  sealed trait subLocality
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorContactField
   
   @js.native
-  sealed trait supports3DS extends js.Object
+  sealed trait supports3DS
+    extends applepayjsLib.ApplePayJSNs.ApplePayMerchantCapability
   
   @js.native
-  sealed trait supportsCredit extends js.Object
+  sealed trait supportsCredit
+    extends applepayjsLib.ApplePayJSNs.ApplePayMerchantCapability
   
   @js.native
-  sealed trait supportsDebit extends js.Object
+  sealed trait supportsDebit
+    extends applepayjsLib.ApplePayJSNs.ApplePayMerchantCapability
   
   @js.native
-  sealed trait supportsEMV extends js.Object
+  sealed trait supportsEMV
+    extends applepayjsLib.ApplePayJSNs.ApplePayMerchantCapability
   
   @js.native
-  sealed trait suspended extends js.Object
+  sealed trait suspended
+    extends applepayjsLib.ApplePayJSNs.ApplePayPaymentPassActivationState
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends applepayjsLib.ApplePayJSNs.ApplePayErrorCode
   
   @scala.inline
   def activated: activated = "activated".asInstanceOf[activated]

@@ -64,3 +64,40 @@ trait ResumableFile extends js.Object {
   def retry(): scala.Unit
 }
 
+object ResumableFile {
+  @scala.inline
+  def apply(
+    abort: js.Function0[scala.Unit],
+    bootstrap: js.Function0[scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    chunks: js.Array[ResumableChunk],
+    file: stdLib.File,
+    fileName: java.lang.String,
+    isComplete: js.Function0[scala.Boolean],
+    isUploading: js.Function0[scala.Boolean],
+    progress: js.Function1[scala.Boolean, scala.Double],
+    relativePath: java.lang.String,
+    resumableObj: Resumable,
+    retry: js.Function0[scala.Unit],
+    size: scala.Double,
+    uniqueIdentifier: java.lang.String
+  ): ResumableFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abort")(abort)
+    __obj.updateDynamic("bootstrap")(bootstrap)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("chunks")(chunks)
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("isComplete")(isComplete)
+    __obj.updateDynamic("isUploading")(isUploading)
+    __obj.updateDynamic("progress")(progress)
+    __obj.updateDynamic("relativePath")(relativePath)
+    __obj.updateDynamic("resumableObj")(resumableObj)
+    __obj.updateDynamic("retry")(retry)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("uniqueIdentifier")(uniqueIdentifier)
+    __obj.asInstanceOf[ResumableFile]
+  }
+}
+

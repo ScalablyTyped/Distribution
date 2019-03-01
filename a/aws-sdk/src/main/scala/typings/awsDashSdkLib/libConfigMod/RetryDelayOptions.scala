@@ -18,3 +18,16 @@ trait RetryDelayOptions extends js.Object {
   var customBackoff: js.UndefOr[js.Function1[/* retryCount */ scala.Double, scala.Double]] = js.undefined
 }
 
+object RetryDelayOptions {
+  @scala.inline
+  def apply(
+    base: scala.Int | scala.Double = null,
+    customBackoff: js.Function1[/* retryCount */ scala.Double, scala.Double] = null
+  ): RetryDelayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (customBackoff != null) __obj.updateDynamic("customBackoff")(customBackoff)
+    __obj.asInstanceOf[RetryDelayOptions]
+  }
+}
+

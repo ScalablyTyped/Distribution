@@ -12,3 +12,26 @@ trait ContextMenuOpenEvent extends ContextMenuEvent {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContextMenuOpenEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: ContextMenu,
+    event: kendoDashUiLib.JQueryEventObject = null,
+    item: stdLib.Element = null,
+    target: stdLib.Element = null,
+    `type`: java.lang.String = null
+  ): ContextMenuOpenEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ContextMenuOpenEvent]
+  }
+}
+

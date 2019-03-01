@@ -13,3 +13,22 @@ trait FindChunks extends js.Object {
   var textToHighlight: java.lang.String
 }
 
+object FindChunks {
+  @scala.inline
+  def apply(
+    searchWords: js.Array[java.lang.String],
+    textToHighlight: java.lang.String,
+    autoEscape: js.UndefOr[scala.Boolean] = js.undefined,
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    sanitize: js.Function1[/* text */ java.lang.String, java.lang.String] = null
+  ): FindChunks = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("searchWords")(searchWords)
+    __obj.updateDynamic("textToHighlight")(textToHighlight)
+    if (!js.isUndefined(autoEscape)) __obj.updateDynamic("autoEscape")(autoEscape)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (sanitize != null) __obj.updateDynamic("sanitize")(sanitize)
+    __obj.asInstanceOf[FindChunks]
+  }
+}
+

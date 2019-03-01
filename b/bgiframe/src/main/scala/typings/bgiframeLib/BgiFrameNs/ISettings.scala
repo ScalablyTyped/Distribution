@@ -15,3 +15,26 @@ trait ISettings extends js.Object {
   var width: java.lang.String
 }
 
+object ISettings {
+  @scala.inline
+  def apply(
+    conditional: scala.Boolean,
+    height: java.lang.String,
+    left: java.lang.String,
+    opacity: scala.Boolean,
+    src: java.lang.String,
+    top: java.lang.String,
+    width: java.lang.String
+  ): ISettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("conditional")(conditional)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("opacity")(opacity)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("top")(top)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ISettings]
+  }
+}
+

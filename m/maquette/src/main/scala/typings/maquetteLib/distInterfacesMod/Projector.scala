@@ -57,3 +57,30 @@ trait Projector extends ProjectorService {
   def stop(): scala.Unit
 }
 
+object Projector {
+  @scala.inline
+  def apply(
+    append: js.Function2[stdLib.Element, js.Function0[VNode], scala.Unit],
+    detach: js.Function1[js.Function0[VNode], Projection],
+    insertBefore: js.Function2[stdLib.Element, js.Function0[VNode], scala.Unit],
+    merge: js.Function2[stdLib.Element, js.Function0[VNode], scala.Unit],
+    renderNow: js.Function0[scala.Unit],
+    replace: js.Function2[stdLib.Element, js.Function0[VNode], scala.Unit],
+    resume: js.Function0[scala.Unit],
+    scheduleRender: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): Projector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("append")(append)
+    __obj.updateDynamic("detach")(detach)
+    __obj.updateDynamic("insertBefore")(insertBefore)
+    __obj.updateDynamic("merge")(merge)
+    __obj.updateDynamic("renderNow")(renderNow)
+    __obj.updateDynamic("replace")(replace)
+    __obj.updateDynamic("resume")(resume)
+    __obj.updateDynamic("scheduleRender")(scheduleRender)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[Projector]
+  }
+}
+

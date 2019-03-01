@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashLeafletDashMarkerclusterMod {
-  type MarkerClusterGroup[P /* <: MarkerClusterGroupProps */] = reactDashLeafletLib.reactDashLeafletMod.MapLayer[P, leafletLib.leafletMod.Class]
+  type MarkerClusterGroup[P /* <: MarkerClusterGroupProps */] = reactDashLeafletLib.reactDashLeafletMod.MapLayer[P, leafletLib.leafletMod.Layer]
   type MarkerClusterGroupProps = reactDashLeafletLib.reactDashLeafletMod.MapLayerProps with leafletDotMarkerclusterLib.leafletMod.MarkerClusterGroupOptions
 }

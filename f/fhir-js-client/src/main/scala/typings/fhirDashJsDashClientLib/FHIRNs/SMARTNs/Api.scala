@@ -142,3 +142,58 @@ trait Api extends js.Object {
   def vread(params: VersionReadParams): js.Promise[Response]
 }
 
+object Api {
+  @scala.inline
+  def apply(
+    conformance: js.Function1[js.Any, js.Promise[Response]],
+    create: js.Function1[Entry, js.Promise[Response]],
+    delete: js.Function1[Entry, js.Promise[Response]],
+    document: js.Function1[Entry, js.Promise[Response]],
+    drain: js.Function4[
+      SearchParams, 
+      js.Function1[/* entries */ js.Array[Entry], _], 
+      js.Function0[_], 
+      js.Function1[/* error */ js.Any, _], 
+      scala.Unit
+    ],
+    fetchAll: js.Function1[SearchParams, js.Promise[js.Array[Entry]]],
+    fetchAllWithReferences: js.Function2[SearchParams, js.Array[java.lang.String], js.Any],
+    history: js.Function1[HistoryParams, js.Promise[Response]],
+    nextPage: js.Function1[Bundle, js.Promise[Response]],
+    prevPage: js.Function1[Bundle, js.Promise[Response]],
+    profile: js.Function1[ResourceType, js.Promise[Response]],
+    read: js.Function1[ReadParams, js.Promise[Response]],
+    resolve: js.Function1[ResolveParams, js.Promise[Response]],
+    resourceHistory: js.Function1[HistoryParams, js.Promise[Response]],
+    search: js.Function1[SearchParams, js.Promise[Response]],
+    transaction: js.Function1[Bundle, js.Promise[Response]],
+    typeHistory: js.Function1[HistoryParams, js.Promise[Response]],
+    update: js.Function1[Entry, js.Promise[Response]],
+    validate: js.Function1[Entry, js.Promise[Response]],
+    vread: js.Function1[VersionReadParams, js.Promise[Response]]
+  ): Api = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("conformance")(conformance)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("document")(document)
+    __obj.updateDynamic("drain")(drain)
+    __obj.updateDynamic("fetchAll")(fetchAll)
+    __obj.updateDynamic("fetchAllWithReferences")(fetchAllWithReferences)
+    __obj.updateDynamic("history")(history)
+    __obj.updateDynamic("nextPage")(nextPage)
+    __obj.updateDynamic("prevPage")(prevPage)
+    __obj.updateDynamic("profile")(profile)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("resolve")(resolve)
+    __obj.updateDynamic("resourceHistory")(resourceHistory)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("transaction")(transaction)
+    __obj.updateDynamic("typeHistory")(typeHistory)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("validate")(validate)
+    __obj.updateDynamic("vread")(vread)
+    __obj.asInstanceOf[Api]
+  }
+}
+

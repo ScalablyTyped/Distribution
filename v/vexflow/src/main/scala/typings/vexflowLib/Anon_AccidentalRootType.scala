@@ -11,3 +11,13 @@ trait Anon_AccidentalRootType extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_AccidentalRootType {
+  @scala.inline
+  def apply(accidental: java.lang.String, root: java.lang.String, `type`: java.lang.String): Anon_AccidentalRootType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("accidental")(accidental)
+    __obj.updateDynamic("root")(root)
+    __obj.asInstanceOf[Anon_AccidentalRootType]
+  }
+}
+

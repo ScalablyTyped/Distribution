@@ -12,6 +12,4 @@ package object buildSrcWritersWriterMod {
     /* container */ js.UndefOr[T], 
     IPen
   ]
-  type IXAlign = typesettableLib.typesettableLibStrings.left | typesettableLib.typesettableLibStrings.center | typesettableLib.typesettableLibStrings.right
-  type IYAlign = typesettableLib.typesettableLibStrings.top | typesettableLib.typesettableLibStrings.center | typesettableLib.typesettableLibStrings.bottom
 }

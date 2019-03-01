@@ -15,3 +15,12 @@ trait EditHandlerOptions extends js.Object {
   var selectedPathOptions: js.UndefOr[leafletLib.leafletMod.PathOptions] = js.undefined
 }
 
+object EditHandlerOptions {
+  @scala.inline
+  def apply(selectedPathOptions: leafletLib.leafletMod.PathOptions = null): EditHandlerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (selectedPathOptions != null) __obj.updateDynamic("selectedPathOptions")(selectedPathOptions)
+    __obj.asInstanceOf[EditHandlerOptions]
+  }
+}
+

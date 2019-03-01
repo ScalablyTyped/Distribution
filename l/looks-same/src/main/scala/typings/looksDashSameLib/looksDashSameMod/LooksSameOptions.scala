@@ -44,3 +44,24 @@ trait LooksSameOptions extends js.Object {
   var tolerance: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LooksSameOptions {
+  @scala.inline
+  def apply(
+    antialiasingTolerance: scala.Int | scala.Double = null,
+    ignoreAntialiasing: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreCaret: js.UndefOr[scala.Boolean] = js.undefined,
+    pixelRatio: scala.Int | scala.Double = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    tolerance: scala.Int | scala.Double = null
+  ): LooksSameOptions = {
+    val __obj = js.Dynamic.literal()
+    if (antialiasingTolerance != null) __obj.updateDynamic("antialiasingTolerance")(antialiasingTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreAntialiasing)) __obj.updateDynamic("ignoreAntialiasing")(ignoreAntialiasing)
+    if (!js.isUndefined(ignoreCaret)) __obj.updateDynamic("ignoreCaret")(ignoreCaret)
+    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LooksSameOptions]
+  }
+}
+

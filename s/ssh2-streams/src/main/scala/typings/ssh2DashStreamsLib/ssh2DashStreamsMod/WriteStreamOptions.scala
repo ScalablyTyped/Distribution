@@ -11,3 +11,18 @@ trait WriteStreamOptions extends js.Object {
   var mode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WriteStreamOptions {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String = null,
+    flags: java.lang.String = null,
+    mode: scala.Int | scala.Double = null
+  ): WriteStreamOptions = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WriteStreamOptions]
+  }
+}
+

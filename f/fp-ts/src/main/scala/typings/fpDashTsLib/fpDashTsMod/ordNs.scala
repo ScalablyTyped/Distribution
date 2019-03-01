@@ -19,6 +19,7 @@ object ordNs extends js.Object {
   def getDualOrd[A](O: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libOrdMod.Ord[A] = js.native
   def getProductOrd[A, B](OA: fpDashTsLib.libOrdMod.Ord[A], OB: fpDashTsLib.libOrdMod.Ord[B]): fpDashTsLib.libOrdMod.Ord[js.Tuple2[A, B]] = js.native
   def getSemigroup[A](): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libOrdMod.Ord[A]] = js.native
+  def getTupleOrd[A, B](OA: fpDashTsLib.libOrdMod.Ord[A], OB: fpDashTsLib.libOrdMod.Ord[B]): fpDashTsLib.libOrdMod.Ord[js.Tuple2[A, B]] = js.native
   def greaterThan[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def greaterThanOrEq[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def lessThan[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native

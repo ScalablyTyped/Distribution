@@ -178,3 +178,88 @@ trait _Impl extends js.Object {
   def onSelect(`this`: semanticDashUiDashSearchLib.JQuery, result: js.Any, response: js.Any): semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    apiSettings: semanticDashUiDashApiLib.SemanticUINs.ApiSettings,
+    cache: scala.Boolean,
+    className: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.ClassNameSettings,
+    debug: scala.Boolean,
+    duration: scala.Double,
+    easing: java.lang.String,
+    error: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.ErrorSettings,
+    fields: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.FieldsSettings,
+    hideDelay: scala.Double,
+    maxResults: scala.Double,
+    metadata: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.MetadataSettings,
+    minCharacters: scala.Double,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onResults: js.Function2[semanticDashUiDashSearchLib.JQuery, js.Any, scala.Unit],
+    onResultsAdd: js.Function2[
+      semanticDashUiDashSearchLib.JQuery, 
+      java.lang.String, 
+      semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit
+    ],
+    onResultsClose: js.Function1[semanticDashUiDashSearchLib.JQuery, scala.Unit],
+    onResultsOpen: js.Function1[semanticDashUiDashSearchLib.JQuery, scala.Unit],
+    onSearchQuery: js.Function2[semanticDashUiDashSearchLib.JQuery, java.lang.String, scala.Unit],
+    onSelect: js.Function3[
+      semanticDashUiDashSearchLib.JQuery, 
+      js.Any, 
+      js.Any, 
+      semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | scala.Unit
+    ],
+    performance: scala.Boolean,
+    regExp: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.RegExpSettings,
+    searchDelay: scala.Double,
+    searchFields: js.Array[java.lang.String],
+    searchFullText: scala.Boolean,
+    selectFirstResult: scala.Boolean,
+    selector: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.SelectorSettings,
+    showNoResults: scala.Boolean,
+    silent: scala.Boolean,
+    source: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibNumbers.`false` | js.Any,
+    templates: semanticDashUiDashSearchLib.SemanticUINs.SearchNs.TemplatesSettings,
+    transition: java.lang.String,
+    `type`: java.lang.String,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("apiSettings")(apiSettings.asInstanceOf[js.Any])
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("easing")(easing)
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("hideDelay")(hideDelay)
+    __obj.updateDynamic("maxResults")(maxResults)
+    __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("minCharacters")(minCharacters)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("onResults")(onResults)
+    __obj.updateDynamic("onResultsAdd")(onResultsAdd)
+    __obj.updateDynamic("onResultsClose")(onResultsClose)
+    __obj.updateDynamic("onResultsOpen")(onResultsOpen)
+    __obj.updateDynamic("onSearchQuery")(onSearchQuery)
+    __obj.updateDynamic("onSelect")(onSelect)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("regExp")(regExp.asInstanceOf[js.Any])
+    __obj.updateDynamic("searchDelay")(searchDelay)
+    __obj.updateDynamic("searchFields")(searchFields)
+    __obj.updateDynamic("searchFullText")(searchFullText)
+    __obj.updateDynamic("selectFirstResult")(selectFirstResult)
+    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    __obj.updateDynamic("showNoResults")(showNoResults)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
+    __obj.updateDynamic("transition")(transition)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

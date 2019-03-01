@@ -13,3 +13,22 @@ trait IWaitForConfig extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IWaitForConfig {
+  @scala.inline
+  def apply(
+    callback: js.Function,
+    method: js.Function,
+    interval: scala.Int | scala.Double = null,
+    scope: js.Any = null,
+    timeout: scala.Int | scala.Double = null
+  ): IWaitForConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("method")(method)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IWaitForConfig]
+  }
+}
+

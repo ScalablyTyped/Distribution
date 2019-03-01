@@ -24,3 +24,20 @@ trait Conversion extends js.Object {
   var tool: Tool
 }
 
+object Conversion {
+  @scala.inline
+  def apply(
+    tool: Tool,
+    analysisToolLogFiles: js.Array[ArtifactLocation] = null,
+    invocation: Invocation = null,
+    properties: PropertyBag = null
+  ): Conversion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tool")(tool)
+    if (analysisToolLogFiles != null) __obj.updateDynamic("analysisToolLogFiles")(analysisToolLogFiles)
+    if (invocation != null) __obj.updateDynamic("invocation")(invocation)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Conversion]
+  }
+}
+

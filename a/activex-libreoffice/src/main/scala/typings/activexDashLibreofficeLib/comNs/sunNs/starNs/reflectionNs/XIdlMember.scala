@@ -30,3 +30,26 @@ trait XIdlMember
   def getName(): java.lang.String
 }
 
+object XIdlMember {
+  @scala.inline
+  def apply(
+    DeclaringClass: XIdlClass[_],
+    Name: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getDeclaringClass: js.Function0[XIdlClass[_]],
+    getName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIdlMember = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DeclaringClass")(DeclaringClass)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDeclaringClass")(getDeclaringClass)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XIdlMember]
+  }
+}
+

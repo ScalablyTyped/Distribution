@@ -14,3 +14,24 @@ trait DeploymentManualInterventionPendingEvent extends js.Object {
   var release: Release
 }
 
+object DeploymentManualInterventionPendingEvent {
+  @scala.inline
+  def apply(
+    deployment: Deployment,
+    emailRecipients: js.Array[java.lang.String],
+    environmentOwner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    manualIntervention: ManualIntervention,
+    project: ProjectReference,
+    release: Release
+  ): DeploymentManualInterventionPendingEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deployment")(deployment)
+    __obj.updateDynamic("emailRecipients")(emailRecipients)
+    __obj.updateDynamic("environmentOwner")(environmentOwner)
+    __obj.updateDynamic("manualIntervention")(manualIntervention)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[DeploymentManualInterventionPendingEvent]
+  }
+}
+

@@ -23,3 +23,13 @@ trait SectionLoadOptions extends js.Object {
   var body: js.UndefOr[BodyLoadOptions] = js.undefined
 }
 
+object SectionLoadOptions {
+  @scala.inline
+  def apply($all: js.UndefOr[scala.Boolean] = js.undefined, body: BodyLoadOptions = null): SectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (body != null) __obj.updateDynamic("body")(body)
+    __obj.asInstanceOf[SectionLoadOptions]
+  }
+}
+

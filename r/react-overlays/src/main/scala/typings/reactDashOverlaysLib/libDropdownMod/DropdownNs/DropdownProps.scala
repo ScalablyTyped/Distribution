@@ -43,3 +43,28 @@ trait DropdownProps extends js.Object {
   def children(renderProps: DropdownRenderProps): reactLib.reactMod.ReactNs.ReactElement[_]
 }
 
+object DropdownProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[DropdownRenderProps, reactLib.reactMod.ReactNs.ReactElement[_]],
+    alignEnd: js.UndefOr[scala.Boolean] = js.undefined,
+    drop: Directions = null,
+    itemSelector: java.lang.String = null,
+    onToggle: js.Function2[
+      /* isOpen */ scala.Boolean, 
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+      scala.Unit
+    ] = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined
+  ): DropdownProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd)
+    if (drop != null) __obj.updateDynamic("drop")(drop)
+    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[DropdownProps]
+  }
+}
+

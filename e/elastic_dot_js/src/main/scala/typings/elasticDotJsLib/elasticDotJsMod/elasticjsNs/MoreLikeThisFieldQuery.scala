@@ -88,3 +88,44 @@ trait MoreLikeThisFieldQuery extends Query {
   def toJSON(): js.Any
 }
 
+object MoreLikeThisFieldQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    analyzer: js.Function1[java.lang.String, MoreLikeThisFieldQuery],
+    boost: js.Function1[scala.Double, MoreLikeThisFieldQuery],
+    boostTerms: js.Function1[scala.Double, MoreLikeThisFieldQuery],
+    failOnUnsupportedField: js.Function1[scala.Boolean, MoreLikeThisFieldQuery],
+    field: js.Function1[java.lang.String, MoreLikeThisFieldQuery],
+    likeText: js.Function1[java.lang.String, MoreLikeThisFieldQuery],
+    maxDocFreq: js.Function1[scala.Double, MoreLikeThisFieldQuery],
+    maxQueryTerms: js.Function1[scala.Double, MoreLikeThisFieldQuery],
+    maxWordLen: js.Function1[scala.Double, MoreLikeThisFieldQuery],
+    minDocFreq: js.Function1[scala.Double, MoreLikeThisFieldQuery],
+    minTermFreq: js.Function1[scala.Double, MoreLikeThisFieldQuery],
+    minWordLen: js.Function1[scala.Double, MoreLikeThisFieldQuery],
+    percentTermsToMatch: js.Function1[scala.Double, MoreLikeThisFieldQuery],
+    stopWords: js.Function1[js.Array[_], MoreLikeThisFieldQuery],
+    toJSON: js.Function0[js.Any]
+  ): MoreLikeThisFieldQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("analyzer")(analyzer)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("boostTerms")(boostTerms)
+    __obj.updateDynamic("failOnUnsupportedField")(failOnUnsupportedField)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("likeText")(likeText)
+    __obj.updateDynamic("maxDocFreq")(maxDocFreq)
+    __obj.updateDynamic("maxQueryTerms")(maxQueryTerms)
+    __obj.updateDynamic("maxWordLen")(maxWordLen)
+    __obj.updateDynamic("minDocFreq")(minDocFreq)
+    __obj.updateDynamic("minTermFreq")(minTermFreq)
+    __obj.updateDynamic("minWordLen")(minWordLen)
+    __obj.updateDynamic("percentTermsToMatch")(percentTermsToMatch)
+    __obj.updateDynamic("stopWords")(stopWords)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[MoreLikeThisFieldQuery]
+  }
+}
+

@@ -29,3 +29,24 @@ trait Anon_EncryptedData extends js.Object {
   var userInfo: wegameDashApiLib.wxNs.typesNs.UserInfo
 }
 
+object Anon_EncryptedData {
+  @scala.inline
+  def apply(
+    encryptedData: java.lang.String,
+    errMsg: java.lang.String,
+    iv: java.lang.String,
+    rawData: java.lang.String,
+    signature: java.lang.String,
+    userInfo: wegameDashApiLib.wxNs.typesNs.UserInfo
+  ): Anon_EncryptedData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encryptedData")(encryptedData)
+    __obj.updateDynamic("errMsg")(errMsg)
+    __obj.updateDynamic("iv")(iv)
+    __obj.updateDynamic("rawData")(rawData)
+    __obj.updateDynamic("signature")(signature)
+    __obj.updateDynamic("userInfo")(userInfo)
+    __obj.asInstanceOf[Anon_EncryptedData]
+  }
+}
+

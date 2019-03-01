@@ -32,3 +32,28 @@ trait NodeUnselectEventArgs extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeUnselectEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentElement: js.Any = null,
+    id: java.lang.String = null,
+    model: Model = null,
+    parentId: java.lang.String = null,
+    selectedNodes: js.Array[_] = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): NodeUnselectEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (selectedNodes != null) __obj.updateDynamic("selectedNodes")(selectedNodes)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[NodeUnselectEventArgs]
+  }
+}
+

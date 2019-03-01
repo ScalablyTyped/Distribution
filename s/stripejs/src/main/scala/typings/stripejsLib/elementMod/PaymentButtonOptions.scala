@@ -15,3 +15,18 @@ trait PaymentButtonOptions extends js.Object {
   var style: js.UndefOr[stripejsLib.Anon_BaseComplete] = js.undefined
 }
 
+object PaymentButtonOptions {
+  @scala.inline
+  def apply(
+    paymentRequest: js.Any,
+    classes: stripejsLib.Anon_Base = null,
+    style: stripejsLib.Anon_BaseComplete = null
+  ): PaymentButtonOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("paymentRequest")(paymentRequest)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[PaymentButtonOptions]
+  }
+}
+

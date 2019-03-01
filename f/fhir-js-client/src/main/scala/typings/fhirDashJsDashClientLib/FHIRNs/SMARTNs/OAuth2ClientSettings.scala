@@ -31,3 +31,22 @@ trait OAuth2ClientSettings extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OAuth2ClientSettings {
+  @scala.inline
+  def apply(
+    client_id: java.lang.String,
+    redirect_uri: java.lang.String = null,
+    scope: java.lang.String = null,
+    secret: java.lang.String = null,
+    state: java.lang.String = null
+  ): OAuth2ClientSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client_id")(client_id)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (secret != null) __obj.updateDynamic("secret")(secret)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[OAuth2ClientSettings]
+  }
+}
+

@@ -10,3 +10,15 @@ trait BasePaymentMethod extends js.Object {
   var `type`: AllowedPaymentMethodType
 }
 
+object BasePaymentMethod {
+  @scala.inline
+  def apply(
+    `type`: AllowedPaymentMethodType,
+    tokenizationSpecification: PaymentMethodTokenizationSpecification = null
+  ): BasePaymentMethod = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (tokenizationSpecification != null) __obj.updateDynamic("tokenizationSpecification")(tokenizationSpecification)
+    __obj.asInstanceOf[BasePaymentMethod]
+  }
+}
+

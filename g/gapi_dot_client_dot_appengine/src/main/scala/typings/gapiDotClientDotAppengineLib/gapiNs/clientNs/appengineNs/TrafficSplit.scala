@@ -20,3 +20,16 @@ trait TrafficSplit extends js.Object {
   var shardBy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TrafficSplit {
+  @scala.inline
+  def apply(
+    allocations: stdLib.Record[java.lang.String, scala.Double] = null,
+    shardBy: java.lang.String = null
+  ): TrafficSplit = {
+    val __obj = js.Dynamic.literal()
+    if (allocations != null) __obj.updateDynamic("allocations")(allocations)
+    if (shardBy != null) __obj.updateDynamic("shardBy")(shardBy)
+    __obj.asInstanceOf[TrafficSplit]
+  }
+}
+

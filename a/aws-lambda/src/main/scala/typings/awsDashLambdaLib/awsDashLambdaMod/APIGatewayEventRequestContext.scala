@@ -9,7 +9,7 @@ trait APIGatewayEventRequestContext extends js.Object {
   var accountId: java.lang.String
   var apiId: java.lang.String
   var authorizer: js.UndefOr[AuthResponseContext | scala.Null] = js.undefined
-  var connectedAt: scala.Double
+  var connectedAt: js.UndefOr[scala.Double] = js.undefined
   var connectionId: js.UndefOr[java.lang.String] = js.undefined
   var domainName: js.UndefOr[java.lang.String] = js.undefined
   var eventType: js.UndefOr[java.lang.String] = js.undefined
@@ -26,5 +26,54 @@ trait APIGatewayEventRequestContext extends js.Object {
   var resourcePath: java.lang.String
   var routeKey: js.UndefOr[java.lang.String] = js.undefined
   var stage: java.lang.String
+}
+
+object APIGatewayEventRequestContext {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String,
+    apiId: java.lang.String,
+    httpMethod: java.lang.String,
+    identity: awsDashLambdaLib.Anon_AccessKey,
+    path: java.lang.String,
+    requestId: java.lang.String,
+    requestTimeEpoch: scala.Double,
+    resourceId: java.lang.String,
+    resourcePath: java.lang.String,
+    stage: java.lang.String,
+    authorizer: AuthResponseContext = null,
+    connectedAt: scala.Int | scala.Double = null,
+    connectionId: java.lang.String = null,
+    domainName: java.lang.String = null,
+    eventType: java.lang.String = null,
+    extendedRequestId: java.lang.String = null,
+    messageDirection: java.lang.String = null,
+    messageId: java.lang.String = null,
+    requestTime: java.lang.String = null,
+    routeKey: java.lang.String = null
+  ): APIGatewayEventRequestContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accountId")(accountId)
+    __obj.updateDynamic("apiId")(apiId)
+    __obj.updateDynamic("httpMethod")(httpMethod)
+    __obj.updateDynamic("identity")(identity)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("requestTimeEpoch")(requestTimeEpoch)
+    __obj.updateDynamic("resourceId")(resourceId)
+    __obj.updateDynamic("resourcePath")(resourcePath)
+    __obj.updateDynamic("stage")(stage)
+    if (authorizer != null) __obj.updateDynamic("authorizer")(authorizer)
+    if (connectedAt != null) __obj.updateDynamic("connectedAt")(connectedAt.asInstanceOf[js.Any])
+    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId)
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName)
+    if (eventType != null) __obj.updateDynamic("eventType")(eventType)
+    if (extendedRequestId != null) __obj.updateDynamic("extendedRequestId")(extendedRequestId)
+    if (messageDirection != null) __obj.updateDynamic("messageDirection")(messageDirection)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (requestTime != null) __obj.updateDynamic("requestTime")(requestTime)
+    if (routeKey != null) __obj.updateDynamic("routeKey")(routeKey)
+    __obj.asInstanceOf[APIGatewayEventRequestContext]
+  }
 }
 

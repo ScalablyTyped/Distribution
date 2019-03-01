@@ -78,3 +78,40 @@ trait IgUploadMethods extends js.Object {
   def widget(): scala.Unit
 }
 
+object IgUploadMethods {
+  @scala.inline
+  def apply(
+    addDataField: js.Function2[js.Object, js.Object, scala.Unit],
+    addDataFields: js.Function2[js.Object, js.Array[_], scala.Unit],
+    cancelAll: js.Function0[scala.Unit],
+    cancelUpload: js.Function1[scala.Double, scala.Unit],
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    clearAll: js.Function0[scala.Unit],
+    container: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getFileInfo: js.Function1[scala.Double, js.Object],
+    getFileInfoData: js.Function0[js.Object],
+    startUpload: js.Function1[scala.Double, scala.Unit],
+    widget: js.Function0[scala.Unit]
+  ): IgUploadMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addDataField")(addDataField)
+    __obj.updateDynamic("addDataFields")(addDataFields)
+    __obj.updateDynamic("cancelAll")(cancelAll)
+    __obj.updateDynamic("cancelUpload")(cancelUpload)
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("clearAll")(clearAll)
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getFileInfo")(getFileInfo)
+    __obj.updateDynamic("getFileInfoData")(getFileInfoData)
+    __obj.updateDynamic("startUpload")(startUpload)
+    __obj.updateDynamic("widget")(widget)
+    __obj.asInstanceOf[IgUploadMethods]
+  }
+}
+

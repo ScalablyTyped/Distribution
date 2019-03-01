@@ -10,3 +10,13 @@ trait SketchMSArtboards extends js.Object {
   var name: java.lang.String
 }
 
+object SketchMSArtboards {
+  @scala.inline
+  def apply(artboards: SketchMSArtboard, name: java.lang.String): SketchMSArtboards = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artboards")(artboards)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[SketchMSArtboards]
+  }
+}
+

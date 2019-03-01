@@ -243,3 +243,172 @@ trait Configuration
   ] = js.undefined
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    afterAllArtifactBuild: (js.Function1[
+      /* context */ appDashBuilderDashLibLib.outPackagerMod.BuildResult, 
+      js.Promise[js.Array[java.lang.String]] | js.Array[java.lang.String]
+    ]) | java.lang.String = null,
+    afterPack: (js.Function1[/* context */ AfterPackContext, js.Promise[_] | _]) | java.lang.String = null,
+    afterSign: (js.Function1[/* context */ AfterPackContext, js.Promise[_] | _]) | java.lang.String = null,
+    apk: appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.LinuxTargetSpecificOptions = null,
+    appId: java.lang.String = null,
+    appImage: appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.AppImageOptions = null,
+    appx: appDashBuilderDashLibLib.outOptionsAppXOptionsMod.AppXOptions = null,
+    artifactBuildCompleted: (js.Function1[
+      /* context */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated, 
+      js.Promise[_] | _
+    ]) | java.lang.String = null,
+    artifactBuildStarted: (js.Function1[
+      /* context */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactBuildStarted, 
+      js.Promise[_] | _
+    ]) | java.lang.String = null,
+    artifactName: java.lang.String = null,
+    asar: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.AsarOptions | scala.Boolean = null,
+    asarUnpack: js.Array[java.lang.String] | java.lang.String = null,
+    beforeBuild: (js.Function1[
+      /* context */ appDashBuilderDashLibLib.outCoreMod.BeforeBuildContext, 
+      js.Promise[_]
+    ]) | java.lang.String = null,
+    buildDependenciesFromSource: js.UndefOr[scala.Boolean] = js.undefined,
+    buildVersion: java.lang.String = null,
+    compression: appDashBuilderDashLibLib.outCoreMod.CompressionLevel = null,
+    copyright: java.lang.String = null,
+    cscKeyPassword: java.lang.String = null,
+    cscLink: java.lang.String = null,
+    deb: appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.DebOptions = null,
+    detectUpdateChannel: js.UndefOr[scala.Boolean] = js.undefined,
+    directories: MetadataDirectories = null,
+    dmg: appDashBuilderDashLibLib.outOptionsMacOptionsMod.DmgOptions = null,
+    electronCompile: js.UndefOr[scala.Boolean] = js.undefined,
+    electronDist: java.lang.String = null,
+    electronDownload: appDashBuilderDashLibLib.outElectronElectronFrameworkMod.ElectronDownloadOptions = null,
+    electronUpdaterCompatibility: java.lang.String = null,
+    electronVersion: java.lang.String = null,
+    `extends`: java.lang.String = null,
+    extraFiles: (js.Array[
+      appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.FileSet | java.lang.String
+    ]) | appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.FileSet | java.lang.String = null,
+    extraMetadata: js.Any = null,
+    extraResources: (js.Array[
+      appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.FileSet | java.lang.String
+    ]) | appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.FileSet | java.lang.String = null,
+    fileAssociations: js.Array[appDashBuilderDashLibLib.outOptionsFileAssociationMod.FileAssociation] | appDashBuilderDashLibLib.outOptionsFileAssociationMod.FileAssociation = null,
+    files: (js.Array[
+      appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.FileSet | java.lang.String
+    ]) | appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.FileSet | java.lang.String = null,
+    forceCodeSigning: js.UndefOr[scala.Boolean] = js.undefined,
+    framework: java.lang.String = null,
+    freebsd: appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.LinuxTargetSpecificOptions = null,
+    generateUpdatesFilesForAllChannels: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    includePdb: js.UndefOr[scala.Boolean] = js.undefined,
+    launchUiVersion: scala.Boolean | java.lang.String = null,
+    linux: appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.LinuxConfiguration = null,
+    mac: appDashBuilderDashLibLib.outOptionsMacOptionsMod.MacConfiguration = null,
+    mas: appDashBuilderDashLibLib.outOptionsMacOptionsMod.MasConfiguration = null,
+    msi: appDashBuilderDashLibLib.outOptionsMsiOptionsMod.MsiOptions = null,
+    muonVersion: java.lang.String = null,
+    nodeGypRebuild: js.UndefOr[scala.Boolean] = js.undefined,
+    nodeVersion: java.lang.String = null,
+    npmArgs: js.Array[java.lang.String] | java.lang.String = null,
+    npmRebuild: js.UndefOr[scala.Boolean] = js.undefined,
+    npmSkipBuildFromSource: js.UndefOr[scala.Boolean] = js.undefined,
+    nsis: appDashBuilderDashLibLib.outTargetsNsisNsisOptionsMod.NsisOptions = null,
+    nsisWeb: appDashBuilderDashLibLib.outTargetsNsisNsisOptionsMod.NsisWebOptions = null,
+    onNodeModuleFile: (js.Function1[/* file */ java.lang.String, scala.Unit]) | java.lang.String = null,
+    p5p: appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.LinuxTargetSpecificOptions = null,
+    pacman: appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.LinuxTargetSpecificOptions = null,
+    pkg: appDashBuilderDashLibLib.outOptionsPkgOptionsMod.PkgOptions = null,
+    portable: appDashBuilderDashLibLib.outTargetsNsisNsisOptionsMod.PortableOptions = null,
+    productName: java.lang.String = null,
+    protocols: js.Array[appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.Protocol] | appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.Protocol = null,
+    protonNodeVersion: java.lang.String = null,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
+    readonly: js.UndefOr[scala.Boolean] = js.undefined,
+    releaseInfo: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.ReleaseInfo = null,
+    remoteBuild: js.UndefOr[scala.Boolean] = js.undefined,
+    removePackageScripts: js.UndefOr[scala.Boolean] = js.undefined,
+    rpm: appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.LinuxTargetSpecificOptions = null,
+    snap: appDashBuilderDashLibLib.outOptionsSnapOptionsMod.SnapOptions = null,
+    squirrelWindows: appDashBuilderDashLibLib.outOptionsSquirrelWindowsOptionsMod.SquirrelWindowsOptions = null,
+    target: (js.Array[java.lang.String | appDashBuilderDashLibLib.outCoreMod.TargetConfiguration]) | java.lang.String | appDashBuilderDashLibLib.outCoreMod.TargetConfiguration = null,
+    win: appDashBuilderDashLibLib.outOptionsWinOptionsMod.WindowsConfiguration = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    if (afterAllArtifactBuild != null) __obj.updateDynamic("afterAllArtifactBuild")(afterAllArtifactBuild.asInstanceOf[js.Any])
+    if (afterPack != null) __obj.updateDynamic("afterPack")(afterPack.asInstanceOf[js.Any])
+    if (afterSign != null) __obj.updateDynamic("afterSign")(afterSign.asInstanceOf[js.Any])
+    if (apk != null) __obj.updateDynamic("apk")(apk)
+    if (appId != null) __obj.updateDynamic("appId")(appId)
+    if (appImage != null) __obj.updateDynamic("appImage")(appImage)
+    if (appx != null) __obj.updateDynamic("appx")(appx)
+    if (artifactBuildCompleted != null) __obj.updateDynamic("artifactBuildCompleted")(artifactBuildCompleted.asInstanceOf[js.Any])
+    if (artifactBuildStarted != null) __obj.updateDynamic("artifactBuildStarted")(artifactBuildStarted.asInstanceOf[js.Any])
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
+    if (asar != null) __obj.updateDynamic("asar")(asar.asInstanceOf[js.Any])
+    if (asarUnpack != null) __obj.updateDynamic("asarUnpack")(asarUnpack.asInstanceOf[js.Any])
+    if (beforeBuild != null) __obj.updateDynamic("beforeBuild")(beforeBuild.asInstanceOf[js.Any])
+    if (!js.isUndefined(buildDependenciesFromSource)) __obj.updateDynamic("buildDependenciesFromSource")(buildDependenciesFromSource)
+    if (buildVersion != null) __obj.updateDynamic("buildVersion")(buildVersion)
+    if (compression != null) __obj.updateDynamic("compression")(compression)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (cscKeyPassword != null) __obj.updateDynamic("cscKeyPassword")(cscKeyPassword)
+    if (cscLink != null) __obj.updateDynamic("cscLink")(cscLink)
+    if (deb != null) __obj.updateDynamic("deb")(deb)
+    if (!js.isUndefined(detectUpdateChannel)) __obj.updateDynamic("detectUpdateChannel")(detectUpdateChannel)
+    if (directories != null) __obj.updateDynamic("directories")(directories)
+    if (dmg != null) __obj.updateDynamic("dmg")(dmg)
+    if (!js.isUndefined(electronCompile)) __obj.updateDynamic("electronCompile")(electronCompile)
+    if (electronDist != null) __obj.updateDynamic("electronDist")(electronDist)
+    if (electronDownload != null) __obj.updateDynamic("electronDownload")(electronDownload)
+    if (electronUpdaterCompatibility != null) __obj.updateDynamic("electronUpdaterCompatibility")(electronUpdaterCompatibility)
+    if (electronVersion != null) __obj.updateDynamic("electronVersion")(electronVersion)
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
+    if (extraFiles != null) __obj.updateDynamic("extraFiles")(extraFiles.asInstanceOf[js.Any])
+    if (extraMetadata != null) __obj.updateDynamic("extraMetadata")(extraMetadata)
+    if (extraResources != null) __obj.updateDynamic("extraResources")(extraResources.asInstanceOf[js.Any])
+    if (fileAssociations != null) __obj.updateDynamic("fileAssociations")(fileAssociations.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceCodeSigning)) __obj.updateDynamic("forceCodeSigning")(forceCodeSigning)
+    if (framework != null) __obj.updateDynamic("framework")(framework)
+    if (freebsd != null) __obj.updateDynamic("freebsd")(freebsd)
+    if (!js.isUndefined(generateUpdatesFilesForAllChannels)) __obj.updateDynamic("generateUpdatesFilesForAllChannels")(generateUpdatesFilesForAllChannels)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (!js.isUndefined(includePdb)) __obj.updateDynamic("includePdb")(includePdb)
+    if (launchUiVersion != null) __obj.updateDynamic("launchUiVersion")(launchUiVersion.asInstanceOf[js.Any])
+    if (linux != null) __obj.updateDynamic("linux")(linux)
+    if (mac != null) __obj.updateDynamic("mac")(mac)
+    if (mas != null) __obj.updateDynamic("mas")(mas)
+    if (msi != null) __obj.updateDynamic("msi")(msi)
+    if (muonVersion != null) __obj.updateDynamic("muonVersion")(muonVersion)
+    if (!js.isUndefined(nodeGypRebuild)) __obj.updateDynamic("nodeGypRebuild")(nodeGypRebuild)
+    if (nodeVersion != null) __obj.updateDynamic("nodeVersion")(nodeVersion)
+    if (npmArgs != null) __obj.updateDynamic("npmArgs")(npmArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(npmRebuild)) __obj.updateDynamic("npmRebuild")(npmRebuild)
+    if (!js.isUndefined(npmSkipBuildFromSource)) __obj.updateDynamic("npmSkipBuildFromSource")(npmSkipBuildFromSource)
+    if (nsis != null) __obj.updateDynamic("nsis")(nsis)
+    if (nsisWeb != null) __obj.updateDynamic("nsisWeb")(nsisWeb)
+    if (onNodeModuleFile != null) __obj.updateDynamic("onNodeModuleFile")(onNodeModuleFile.asInstanceOf[js.Any])
+    if (p5p != null) __obj.updateDynamic("p5p")(p5p)
+    if (pacman != null) __obj.updateDynamic("pacman")(pacman)
+    if (pkg != null) __obj.updateDynamic("pkg")(pkg)
+    if (portable != null) __obj.updateDynamic("portable")(portable)
+    if (productName != null) __obj.updateDynamic("productName")(productName)
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (protonNodeVersion != null) __obj.updateDynamic("protonNodeVersion")(protonNodeVersion)
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (releaseInfo != null) __obj.updateDynamic("releaseInfo")(releaseInfo)
+    if (!js.isUndefined(remoteBuild)) __obj.updateDynamic("remoteBuild")(remoteBuild)
+    if (!js.isUndefined(removePackageScripts)) __obj.updateDynamic("removePackageScripts")(removePackageScripts)
+    if (rpm != null) __obj.updateDynamic("rpm")(rpm)
+    if (snap != null) __obj.updateDynamic("snap")(snap)
+    if (squirrelWindows != null) __obj.updateDynamic("squirrelWindows")(squirrelWindows)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (win != null) __obj.updateDynamic("win")(win)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

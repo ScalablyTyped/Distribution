@@ -10,3 +10,13 @@ trait ColumnFormat[T] extends js.Object {
   var printer: js.UndefOr[easyDashTableLib.CellPrinter[T]] = js.undefined
 }
 
+object ColumnFormat {
+  @scala.inline
+  def apply[T](name: java.lang.String = null, printer: easyDashTableLib.CellPrinter[T] = null): ColumnFormat[T] = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (printer != null) __obj.updateDynamic("printer")(printer)
+    __obj.asInstanceOf[ColumnFormat[T]]
+  }
+}
+

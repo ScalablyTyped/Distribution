@@ -18,3 +18,14 @@ trait ApplicationData extends js.Object {
   ] = js.undefined
 }
 
+object ApplicationData {
+  @scala.inline
+  def apply(
+    calculationMode: officeDashJsLib.ExcelNs.CalculationMode | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.AutomaticExceptTables | officeDashJsLib.officeDashJsLibStrings.Manual = null
+  ): ApplicationData = {
+    val __obj = js.Dynamic.literal()
+    if (calculationMode != null) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationData]
+  }
+}
+

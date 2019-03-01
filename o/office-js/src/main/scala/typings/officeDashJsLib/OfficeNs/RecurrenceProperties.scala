@@ -49,3 +49,26 @@ trait RecurrenceProperties extends js.Object {
   var weekNumber: officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber
 }
 
+object RecurrenceProperties {
+  @scala.inline
+  def apply(
+    dayOfMonth: scala.Double,
+    dayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days,
+    days: js.Array[officeDashJsLib.OfficeNs.MailboxEnumsNs.Days],
+    firstDayOfWeek: officeDashJsLib.OfficeNs.MailboxEnumsNs.Days,
+    interval: scala.Double,
+    month: officeDashJsLib.OfficeNs.MailboxEnumsNs.Month,
+    weekNumber: officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber
+  ): RecurrenceProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dayOfMonth")(dayOfMonth)
+    __obj.updateDynamic("dayOfWeek")(dayOfWeek)
+    __obj.updateDynamic("days")(days)
+    __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("weekNumber")(weekNumber)
+    __obj.asInstanceOf[RecurrenceProperties]
+  }
+}
+

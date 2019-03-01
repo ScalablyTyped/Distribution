@@ -10,3 +10,13 @@ trait BookmarkChangesArg extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BookmarkChangesArg {
+  @scala.inline
+  def apply(title: java.lang.String = null, url: java.lang.String = null): BookmarkChangesArg = {
+    val __obj = js.Dynamic.literal()
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[BookmarkChangesArg]
+  }
+}
+

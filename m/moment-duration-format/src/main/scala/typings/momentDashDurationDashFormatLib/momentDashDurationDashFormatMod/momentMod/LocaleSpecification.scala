@@ -21,3 +21,29 @@ trait LocaleSpecification extends js.Object {
   var durationTimeTemplates: js.UndefOr[DurationTimeDef] = js.undefined
 }
 
+object LocaleSpecification {
+  @scala.inline
+  def apply(
+    durationLabelTypes: js.Array[DurationLabelTypeDef] = null,
+    durationLabelsLong: DurationLabelDef = null,
+    durationLabelsShort: DurationLabelDef = null,
+    durationLabelsStandard: DurationLabelDef = null,
+    durationPluralKey: js.Function3[
+      /* token */ java.lang.String, 
+      /* integerValue */ scala.Double, 
+      /* decimalValue */ scala.Double, 
+      java.lang.String
+    ] = null,
+    durationTimeTemplates: DurationTimeDef = null
+  ): LocaleSpecification = {
+    val __obj = js.Dynamic.literal()
+    if (durationLabelTypes != null) __obj.updateDynamic("durationLabelTypes")(durationLabelTypes)
+    if (durationLabelsLong != null) __obj.updateDynamic("durationLabelsLong")(durationLabelsLong)
+    if (durationLabelsShort != null) __obj.updateDynamic("durationLabelsShort")(durationLabelsShort)
+    if (durationLabelsStandard != null) __obj.updateDynamic("durationLabelsStandard")(durationLabelsStandard)
+    if (durationPluralKey != null) __obj.updateDynamic("durationPluralKey")(durationPluralKey)
+    if (durationTimeTemplates != null) __obj.updateDynamic("durationTimeTemplates")(durationTimeTemplates)
+    __obj.asInstanceOf[LocaleSpecification]
+  }
+}
+

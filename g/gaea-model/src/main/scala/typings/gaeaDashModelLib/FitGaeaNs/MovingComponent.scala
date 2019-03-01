@@ -16,3 +16,20 @@ trait MovingComponent extends js.Object {
   var uniqueKey: java.lang.String
 }
 
+object MovingComponent {
+  @scala.inline
+  def apply(
+    isNew: scala.Boolean,
+    mapUniqueKey: java.lang.String,
+    source: java.lang.String,
+    uniqueKey: java.lang.String
+  ): MovingComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isNew")(isNew)
+    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("uniqueKey")(uniqueKey)
+    __obj.asInstanceOf[MovingComponent]
+  }
+}
+

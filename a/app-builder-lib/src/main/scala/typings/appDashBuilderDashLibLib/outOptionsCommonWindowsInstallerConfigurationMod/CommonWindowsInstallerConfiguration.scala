@@ -38,3 +38,26 @@ trait CommonWindowsInstallerConfiguration extends js.Object {
   val shortcutName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object CommonWindowsInstallerConfiguration {
+  @scala.inline
+  def apply(
+    createDesktopShortcut: scala.Boolean | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.always = null,
+    createStartMenuShortcut: js.UndefOr[scala.Boolean] = js.undefined,
+    menuCategory: scala.Boolean | java.lang.String = null,
+    oneClick: js.UndefOr[scala.Boolean] = js.undefined,
+    perMachine: js.UndefOr[scala.Boolean] = js.undefined,
+    runAfterFinish: js.UndefOr[scala.Boolean] = js.undefined,
+    shortcutName: java.lang.String = null
+  ): CommonWindowsInstallerConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (createDesktopShortcut != null) __obj.updateDynamic("createDesktopShortcut")(createDesktopShortcut.asInstanceOf[js.Any])
+    if (!js.isUndefined(createStartMenuShortcut)) __obj.updateDynamic("createStartMenuShortcut")(createStartMenuShortcut)
+    if (menuCategory != null) __obj.updateDynamic("menuCategory")(menuCategory.asInstanceOf[js.Any])
+    if (!js.isUndefined(oneClick)) __obj.updateDynamic("oneClick")(oneClick)
+    if (!js.isUndefined(perMachine)) __obj.updateDynamic("perMachine")(perMachine)
+    if (!js.isUndefined(runAfterFinish)) __obj.updateDynamic("runAfterFinish")(runAfterFinish)
+    if (shortcutName != null) __obj.updateDynamic("shortcutName")(shortcutName)
+    __obj.asInstanceOf[CommonWindowsInstallerConfiguration]
+  }
+}
+

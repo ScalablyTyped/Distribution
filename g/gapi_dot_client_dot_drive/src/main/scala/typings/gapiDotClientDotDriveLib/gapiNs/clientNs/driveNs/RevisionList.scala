@@ -17,3 +17,18 @@ trait RevisionList extends js.Object {
   var revisions: js.UndefOr[js.Array[Revision]] = js.undefined
 }
 
+object RevisionList {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    revisions: js.Array[Revision] = null
+  ): RevisionList = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (revisions != null) __obj.updateDynamic("revisions")(revisions)
+    __obj.asInstanceOf[RevisionList]
+  }
+}
+

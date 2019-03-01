@@ -29,3 +29,22 @@ trait TextDocumentSyncOptions extends js.Object {
   var willSaveWaitUntil: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TextDocumentSyncOptions {
+  @scala.inline
+  def apply(
+    change: TextDocumentSyncKind = null,
+    openClose: js.UndefOr[scala.Boolean] = js.undefined,
+    save: SaveOptions = null,
+    willSave: js.UndefOr[scala.Boolean] = js.undefined,
+    willSaveWaitUntil: js.UndefOr[scala.Boolean] = js.undefined
+  ): TextDocumentSyncOptions = {
+    val __obj = js.Dynamic.literal()
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (!js.isUndefined(openClose)) __obj.updateDynamic("openClose")(openClose)
+    if (save != null) __obj.updateDynamic("save")(save)
+    if (!js.isUndefined(willSave)) __obj.updateDynamic("willSave")(willSave)
+    if (!js.isUndefined(willSaveWaitUntil)) __obj.updateDynamic("willSaveWaitUntil")(willSaveWaitUntil)
+    __obj.asInstanceOf[TextDocumentSyncOptions]
+  }
+}
+

@@ -26,3 +26,34 @@ trait CssAndViewSpecificModeConfig extends ModeConfig {
   var mixin: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CssAndViewSpecificModeConfig {
+  @scala.inline
+  def apply(
+    bust: js.UndefOr[scala.Boolean] = js.undefined,
+    common: java.lang.String = null,
+    dest: java.lang.String = null,
+    dimensions: java.lang.String | scala.Boolean = null,
+    example: RenderingConfiguration | scala.Boolean = null,
+    layout: java.lang.String = null,
+    mixin: java.lang.String = null,
+    mode: java.lang.String = null,
+    prefix: java.lang.String = null,
+    render: org.scalablytyped.runtime.StringDictionary[RenderingConfiguration | scala.Boolean] = null,
+    sprite: java.lang.String = null
+  ): CssAndViewSpecificModeConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bust)) __obj.updateDynamic("bust")(bust)
+    if (common != null) __obj.updateDynamic("common")(common)
+    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (mixin != null) __obj.updateDynamic("mixin")(mixin)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (sprite != null) __obj.updateDynamic("sprite")(sprite)
+    __obj.asInstanceOf[CssAndViewSpecificModeConfig]
+  }
+}
+

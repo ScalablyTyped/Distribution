@@ -10,3 +10,13 @@ trait LineTouchedEvent extends js.Object {
   var latlng: scala.Double
 }
 
+object LineTouchedEvent {
+  @scala.inline
+  def apply(afterIndex: scala.Double, latlng: scala.Double): LineTouchedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("afterIndex")(afterIndex)
+    __obj.updateDynamic("latlng")(latlng)
+    __obj.asInstanceOf[LineTouchedEvent]
+  }
+}
+

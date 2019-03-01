@@ -315,3 +315,224 @@ trait SwiperOptions extends js.Object {
   var zoom: js.UndefOr[ZoomOptions | scala.Boolean] = js.undefined
 }
 
+object SwiperOptions {
+  @scala.inline
+  def apply(
+    a11y: A11yOptions | scala.Boolean = null,
+    allowSlideNext: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSlidePrev: js.UndefOr[scala.Boolean] = js.undefined,
+    allowTouchMove: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplay: AutoplayOptions | scala.Boolean = null,
+    breakpoints: org.scalablytyped.runtime.NumberDictionary[SwiperOptions] = null,
+    breakpointsInverse: js.UndefOr[scala.Boolean] = js.undefined,
+    centerInsufficientSlides: js.UndefOr[scala.Boolean] = js.undefined,
+    centeredSlides: js.UndefOr[scala.Boolean] = js.undefined,
+    containerModifierClass: java.lang.String = null,
+    coverflowEffect: CoverflowEffectOptions = null,
+    cubeEffect: CubeEffectOptions = null,
+    direction: swiperLib.swiperLibStrings.horizontal | swiperLib.swiperLibStrings.vertical = null,
+    effect: swiperLib.swiperLibStrings.slide | swiperLib.swiperLibStrings.fade | swiperLib.swiperLibStrings.cube | swiperLib.swiperLibStrings.coverflow | swiperLib.swiperLibStrings.flip = null,
+    fadeEffect: FadeEffectOptions = null,
+    flipEffect: FlipEffectOptions = null,
+    followFinger: js.UndefOr[scala.Boolean] = js.undefined,
+    freeMode: js.UndefOr[scala.Boolean] = js.undefined,
+    freeModeMinimumVelocity: scala.Int | scala.Double = null,
+    freeModeMomentum: js.UndefOr[scala.Boolean] = js.undefined,
+    freeModeMomentumBounce: js.UndefOr[scala.Boolean] = js.undefined,
+    freeModeMomentumBounceRatio: scala.Int | scala.Double = null,
+    freeModeMomentumRatio: scala.Int | scala.Double = null,
+    freeModeMomentumVelocityRatio: scala.Int | scala.Double = null,
+    freeModeSticky: js.UndefOr[scala.Boolean] = js.undefined,
+    grabCursor: js.UndefOr[scala.Boolean] = js.undefined,
+    hashNavigation: HashNavigationOptions | scala.Boolean = null,
+    height: scala.Int | scala.Double = null,
+    history: HistoryNavigationOptions | scala.Boolean = null,
+    iOSEdgeSwipeDetection: js.UndefOr[scala.Boolean] = js.undefined,
+    iOSEdgeSwipeThreshold: scala.Int | scala.Double = null,
+    init: js.UndefOr[scala.Boolean] = js.undefined,
+    initialSlide: scala.Int | scala.Double = null,
+    keyboard: KeyboardOptions | scala.Boolean = null,
+    `lazy`: LazyOptions | scala.Boolean = null,
+    longSwipes: js.UndefOr[scala.Boolean] = js.undefined,
+    longSwipesMs: scala.Int | scala.Double = null,
+    longSwipesRatio: scala.Int | scala.Double = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    loopAdditionalSlides: scala.Int | scala.Double = null,
+    loopFillGroupWithBlank: js.UndefOr[scala.Boolean] = js.undefined,
+    loopedSlides: scala.Int | scala.Double = null,
+    mousewheel: MousewheelOptions | scala.Boolean = null,
+    navigation: NavigationOptions = null,
+    nested: js.UndefOr[scala.Boolean] = js.undefined,
+    noSwiping: js.UndefOr[scala.Boolean] = js.undefined,
+    noSwipingClass: java.lang.String = null,
+    noSwipingSelector: java.lang.String = null,
+    normalizeSlideIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    observeParents: js.UndefOr[scala.Boolean] = js.undefined,
+    observer: js.UndefOr[scala.Boolean] = js.undefined,
+    on: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in swiper.swiper.SwiperEvent ]:? (): void}
+    */ swiperLib.swiperLibStrings.SwiperOptions with js.Any = null,
+    pagination: PaginationOptions = null,
+    parallax: js.UndefOr[scala.Boolean] = js.undefined,
+    passiveListeners: js.UndefOr[scala.Boolean] = js.undefined,
+    preloadImages: js.UndefOr[scala.Boolean] = js.undefined,
+    preventClicks: js.UndefOr[scala.Boolean] = js.undefined,
+    preventClicksPropagation: js.UndefOr[scala.Boolean] = js.undefined,
+    preventInteractionOnTransition: js.UndefOr[scala.Boolean] = js.undefined,
+    resistance: js.UndefOr[scala.Boolean] = js.undefined,
+    resistanceRatio: scala.Int | scala.Double = null,
+    roundLengths: js.UndefOr[scala.Boolean] = js.undefined,
+    runCallbacksOnInit: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollbar: ScrollbarOptions = null,
+    setWrapperSize: js.UndefOr[scala.Boolean] = js.undefined,
+    shortSwipes: js.UndefOr[scala.Boolean] = js.undefined,
+    simulateTouch: js.UndefOr[scala.Boolean] = js.undefined,
+    slideActiveClass: java.lang.String = null,
+    slideClass: java.lang.String = null,
+    slideDuplicateClass: java.lang.String = null,
+    slideDuplicatedActiveClass: java.lang.String = null,
+    slideDuplicatedNextClass: java.lang.String = null,
+    slideDuplicatedPrevClass: java.lang.String = null,
+    slideNextClass: java.lang.String = null,
+    slidePrevClass: java.lang.String = null,
+    slideToClickedSlide: js.UndefOr[scala.Boolean] = js.undefined,
+    slideVisibleClass: java.lang.String = null,
+    slidesOffsetAfter: scala.Int | scala.Double = null,
+    slidesOffsetBefore: scala.Int | scala.Double = null,
+    slidesPerColumn: scala.Int | scala.Double = null,
+    slidesPerColumnFill: swiperLib.swiperLibStrings.row | swiperLib.swiperLibStrings.column = null,
+    slidesPerGroup: scala.Int | scala.Double = null,
+    slidesPerView: scala.Double | swiperLib.swiperLibStrings.auto = null,
+    spaceBetween: scala.Int | scala.Double = null,
+    speed: scala.Int | scala.Double = null,
+    swipeHandler: SelectableElement = null,
+    threshold: scala.Int | scala.Double = null,
+    touchAngle: scala.Int | scala.Double = null,
+    touchEventsTarget: swiperLib.swiperLibStrings.container | swiperLib.swiperLibStrings.wrapper = null,
+    touchMoveStopPropagation: js.UndefOr[scala.Boolean] = js.undefined,
+    touchRatio: scala.Int | scala.Double = null,
+    touchReleaseOnEdges: js.UndefOr[scala.Boolean] = js.undefined,
+    touchStartForcePreventDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    touchStartPreventDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    uniqueNavElements: js.UndefOr[scala.Boolean] = js.undefined,
+    updateOnImagesReady: js.UndefOr[scala.Boolean] = js.undefined,
+    virtual: VirtualOptions | scala.Boolean = null,
+    virtualTranslate: js.UndefOr[scala.Boolean] = js.undefined,
+    watchOverflow: js.UndefOr[scala.Boolean] = js.undefined,
+    watchSlidesProgress: js.UndefOr[scala.Boolean] = js.undefined,
+    watchSlidesVisibility: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null,
+    wrapperClass: java.lang.String = null,
+    zoom: ZoomOptions | scala.Boolean = null
+  ): SwiperOptions = {
+    val __obj = js.Dynamic.literal()
+    if (a11y != null) __obj.updateDynamic("a11y")(a11y.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSlideNext)) __obj.updateDynamic("allowSlideNext")(allowSlideNext)
+    if (!js.isUndefined(allowSlidePrev)) __obj.updateDynamic("allowSlidePrev")(allowSlidePrev)
+    if (!js.isUndefined(allowTouchMove)) __obj.updateDynamic("allowTouchMove")(allowTouchMove)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
+    if (!js.isUndefined(breakpointsInverse)) __obj.updateDynamic("breakpointsInverse")(breakpointsInverse)
+    if (!js.isUndefined(centerInsufficientSlides)) __obj.updateDynamic("centerInsufficientSlides")(centerInsufficientSlides)
+    if (!js.isUndefined(centeredSlides)) __obj.updateDynamic("centeredSlides")(centeredSlides)
+    if (containerModifierClass != null) __obj.updateDynamic("containerModifierClass")(containerModifierClass)
+    if (coverflowEffect != null) __obj.updateDynamic("coverflowEffect")(coverflowEffect)
+    if (cubeEffect != null) __obj.updateDynamic("cubeEffect")(cubeEffect)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
+    if (fadeEffect != null) __obj.updateDynamic("fadeEffect")(fadeEffect)
+    if (flipEffect != null) __obj.updateDynamic("flipEffect")(flipEffect)
+    if (!js.isUndefined(followFinger)) __obj.updateDynamic("followFinger")(followFinger)
+    if (!js.isUndefined(freeMode)) __obj.updateDynamic("freeMode")(freeMode)
+    if (freeModeMinimumVelocity != null) __obj.updateDynamic("freeModeMinimumVelocity")(freeModeMinimumVelocity.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeModeMomentum)) __obj.updateDynamic("freeModeMomentum")(freeModeMomentum)
+    if (!js.isUndefined(freeModeMomentumBounce)) __obj.updateDynamic("freeModeMomentumBounce")(freeModeMomentumBounce)
+    if (freeModeMomentumBounceRatio != null) __obj.updateDynamic("freeModeMomentumBounceRatio")(freeModeMomentumBounceRatio.asInstanceOf[js.Any])
+    if (freeModeMomentumRatio != null) __obj.updateDynamic("freeModeMomentumRatio")(freeModeMomentumRatio.asInstanceOf[js.Any])
+    if (freeModeMomentumVelocityRatio != null) __obj.updateDynamic("freeModeMomentumVelocityRatio")(freeModeMomentumVelocityRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(freeModeSticky)) __obj.updateDynamic("freeModeSticky")(freeModeSticky)
+    if (!js.isUndefined(grabCursor)) __obj.updateDynamic("grabCursor")(grabCursor)
+    if (hashNavigation != null) __obj.updateDynamic("hashNavigation")(hashNavigation.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (!js.isUndefined(iOSEdgeSwipeDetection)) __obj.updateDynamic("iOSEdgeSwipeDetection")(iOSEdgeSwipeDetection)
+    if (iOSEdgeSwipeThreshold != null) __obj.updateDynamic("iOSEdgeSwipeThreshold")(iOSEdgeSwipeThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init)
+    if (initialSlide != null) __obj.updateDynamic("initialSlide")(initialSlide.asInstanceOf[js.Any])
+    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
+    if (`lazy` != null) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(longSwipes)) __obj.updateDynamic("longSwipes")(longSwipes)
+    if (longSwipesMs != null) __obj.updateDynamic("longSwipesMs")(longSwipesMs.asInstanceOf[js.Any])
+    if (longSwipesRatio != null) __obj.updateDynamic("longSwipesRatio")(longSwipesRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (loopAdditionalSlides != null) __obj.updateDynamic("loopAdditionalSlides")(loopAdditionalSlides.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopFillGroupWithBlank)) __obj.updateDynamic("loopFillGroupWithBlank")(loopFillGroupWithBlank)
+    if (loopedSlides != null) __obj.updateDynamic("loopedSlides")(loopedSlides.asInstanceOf[js.Any])
+    if (mousewheel != null) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
+    if (!js.isUndefined(nested)) __obj.updateDynamic("nested")(nested)
+    if (!js.isUndefined(noSwiping)) __obj.updateDynamic("noSwiping")(noSwiping)
+    if (noSwipingClass != null) __obj.updateDynamic("noSwipingClass")(noSwipingClass)
+    if (noSwipingSelector != null) __obj.updateDynamic("noSwipingSelector")(noSwipingSelector)
+    if (!js.isUndefined(normalizeSlideIndex)) __obj.updateDynamic("normalizeSlideIndex")(normalizeSlideIndex)
+    if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents)
+    if (!js.isUndefined(observer)) __obj.updateDynamic("observer")(observer)
+    if (on != null) __obj.updateDynamic("on")(on)
+    if (pagination != null) __obj.updateDynamic("pagination")(pagination)
+    if (!js.isUndefined(parallax)) __obj.updateDynamic("parallax")(parallax)
+    if (!js.isUndefined(passiveListeners)) __obj.updateDynamic("passiveListeners")(passiveListeners)
+    if (!js.isUndefined(preloadImages)) __obj.updateDynamic("preloadImages")(preloadImages)
+    if (!js.isUndefined(preventClicks)) __obj.updateDynamic("preventClicks")(preventClicks)
+    if (!js.isUndefined(preventClicksPropagation)) __obj.updateDynamic("preventClicksPropagation")(preventClicksPropagation)
+    if (!js.isUndefined(preventInteractionOnTransition)) __obj.updateDynamic("preventInteractionOnTransition")(preventInteractionOnTransition)
+    if (!js.isUndefined(resistance)) __obj.updateDynamic("resistance")(resistance)
+    if (resistanceRatio != null) __obj.updateDynamic("resistanceRatio")(resistanceRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundLengths)) __obj.updateDynamic("roundLengths")(roundLengths)
+    if (!js.isUndefined(runCallbacksOnInit)) __obj.updateDynamic("runCallbacksOnInit")(runCallbacksOnInit)
+    if (scrollbar != null) __obj.updateDynamic("scrollbar")(scrollbar)
+    if (!js.isUndefined(setWrapperSize)) __obj.updateDynamic("setWrapperSize")(setWrapperSize)
+    if (!js.isUndefined(shortSwipes)) __obj.updateDynamic("shortSwipes")(shortSwipes)
+    if (!js.isUndefined(simulateTouch)) __obj.updateDynamic("simulateTouch")(simulateTouch)
+    if (slideActiveClass != null) __obj.updateDynamic("slideActiveClass")(slideActiveClass)
+    if (slideClass != null) __obj.updateDynamic("slideClass")(slideClass)
+    if (slideDuplicateClass != null) __obj.updateDynamic("slideDuplicateClass")(slideDuplicateClass)
+    if (slideDuplicatedActiveClass != null) __obj.updateDynamic("slideDuplicatedActiveClass")(slideDuplicatedActiveClass)
+    if (slideDuplicatedNextClass != null) __obj.updateDynamic("slideDuplicatedNextClass")(slideDuplicatedNextClass)
+    if (slideDuplicatedPrevClass != null) __obj.updateDynamic("slideDuplicatedPrevClass")(slideDuplicatedPrevClass)
+    if (slideNextClass != null) __obj.updateDynamic("slideNextClass")(slideNextClass)
+    if (slidePrevClass != null) __obj.updateDynamic("slidePrevClass")(slidePrevClass)
+    if (!js.isUndefined(slideToClickedSlide)) __obj.updateDynamic("slideToClickedSlide")(slideToClickedSlide)
+    if (slideVisibleClass != null) __obj.updateDynamic("slideVisibleClass")(slideVisibleClass)
+    if (slidesOffsetAfter != null) __obj.updateDynamic("slidesOffsetAfter")(slidesOffsetAfter.asInstanceOf[js.Any])
+    if (slidesOffsetBefore != null) __obj.updateDynamic("slidesOffsetBefore")(slidesOffsetBefore.asInstanceOf[js.Any])
+    if (slidesPerColumn != null) __obj.updateDynamic("slidesPerColumn")(slidesPerColumn.asInstanceOf[js.Any])
+    if (slidesPerColumnFill != null) __obj.updateDynamic("slidesPerColumnFill")(slidesPerColumnFill.asInstanceOf[js.Any])
+    if (slidesPerGroup != null) __obj.updateDynamic("slidesPerGroup")(slidesPerGroup.asInstanceOf[js.Any])
+    if (slidesPerView != null) __obj.updateDynamic("slidesPerView")(slidesPerView.asInstanceOf[js.Any])
+    if (spaceBetween != null) __obj.updateDynamic("spaceBetween")(spaceBetween.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (swipeHandler != null) __obj.updateDynamic("swipeHandler")(swipeHandler.asInstanceOf[js.Any])
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (touchAngle != null) __obj.updateDynamic("touchAngle")(touchAngle.asInstanceOf[js.Any])
+    if (touchEventsTarget != null) __obj.updateDynamic("touchEventsTarget")(touchEventsTarget.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchMoveStopPropagation)) __obj.updateDynamic("touchMoveStopPropagation")(touchMoveStopPropagation)
+    if (touchRatio != null) __obj.updateDynamic("touchRatio")(touchRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchReleaseOnEdges)) __obj.updateDynamic("touchReleaseOnEdges")(touchReleaseOnEdges)
+    if (!js.isUndefined(touchStartForcePreventDefault)) __obj.updateDynamic("touchStartForcePreventDefault")(touchStartForcePreventDefault)
+    if (!js.isUndefined(touchStartPreventDefault)) __obj.updateDynamic("touchStartPreventDefault")(touchStartPreventDefault)
+    if (!js.isUndefined(uniqueNavElements)) __obj.updateDynamic("uniqueNavElements")(uniqueNavElements)
+    if (!js.isUndefined(updateOnImagesReady)) __obj.updateDynamic("updateOnImagesReady")(updateOnImagesReady)
+    if (virtual != null) __obj.updateDynamic("virtual")(virtual.asInstanceOf[js.Any])
+    if (!js.isUndefined(virtualTranslate)) __obj.updateDynamic("virtualTranslate")(virtualTranslate)
+    if (!js.isUndefined(watchOverflow)) __obj.updateDynamic("watchOverflow")(watchOverflow)
+    if (!js.isUndefined(watchSlidesProgress)) __obj.updateDynamic("watchSlidesProgress")(watchSlidesProgress)
+    if (!js.isUndefined(watchSlidesVisibility)) __obj.updateDynamic("watchSlidesVisibility")(watchSlidesVisibility)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wrapperClass != null) __obj.updateDynamic("wrapperClass")(wrapperClass)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SwiperOptions]
+  }
+}
+

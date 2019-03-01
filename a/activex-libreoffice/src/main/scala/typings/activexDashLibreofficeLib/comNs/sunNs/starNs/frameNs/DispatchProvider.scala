@@ -18,3 +18,34 @@ trait DispatchProvider
   extends XDispatchProvider
      with XDispatchProviderInterception
 
+object DispatchProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryDispatch: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      java.lang.String, 
+      scala.Double, 
+      XDispatch
+    ],
+    queryDispatches: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
+      activexDashInteropLib.SafeArray[XDispatch]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerDispatchProviderInterceptor: js.Function1[XDispatchProviderInterceptor, scala.Unit],
+    release: js.Function0[scala.Unit],
+    releaseDispatchProviderInterceptor: js.Function1[XDispatchProviderInterceptor, scala.Unit]
+  ): DispatchProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryDispatch")(queryDispatch)
+    __obj.updateDynamic("queryDispatches")(queryDispatches)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerDispatchProviderInterceptor")(registerDispatchProviderInterceptor)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("releaseDispatchProviderInterceptor")(releaseDispatchProviderInterceptor)
+    __obj.asInstanceOf[DispatchProvider]
+  }
+}
+

@@ -51,3 +51,24 @@ trait SandboxOptions extends js.Object {
   var sourceTransformersSingleOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SandboxOptions {
+  @scala.inline
+  def apply(
+    globals: js.Object = null,
+    locals: js.Object = null,
+    requires: js.Object = null,
+    singleOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceTransformers: js.Object = null,
+    sourceTransformersSingleOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): SandboxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (globals != null) __obj.updateDynamic("globals")(globals)
+    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (!js.isUndefined(singleOnly)) __obj.updateDynamic("singleOnly")(singleOnly)
+    if (sourceTransformers != null) __obj.updateDynamic("sourceTransformers")(sourceTransformers)
+    if (!js.isUndefined(sourceTransformersSingleOnly)) __obj.updateDynamic("sourceTransformersSingleOnly")(sourceTransformersSingleOnly)
+    __obj.asInstanceOf[SandboxOptions]
+  }
+}
+

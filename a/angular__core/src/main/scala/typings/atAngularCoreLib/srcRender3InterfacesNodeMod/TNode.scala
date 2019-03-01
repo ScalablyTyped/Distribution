@@ -194,3 +194,51 @@ trait TNode extends js.Object {
   var `type`: TNodeType
 }
 
+object TNode {
+  @scala.inline
+  def apply(
+    directiveEnd: scala.Double,
+    directiveStart: scala.Double,
+    flags: TNodeFlags,
+    index: scala.Double,
+    injectorIndex: scala.Double,
+    providerIndexes: TNodeProviderIndexes,
+    `type`: TNodeType,
+    attrs: TAttributes = null,
+    child: TNode = null,
+    detached: js.UndefOr[scala.Boolean] = js.undefined,
+    initialInputs: InitialInputData = null,
+    inputs: PropertyAliases = null,
+    localNames: js.Array[java.lang.String | scala.Double] = null,
+    next: TNode = null,
+    outputs: PropertyAliases = null,
+    parent: TElementNode | TContainerNode = null,
+    projection: (js.Array[TNode | scala.Null]) | scala.Double = null,
+    stylingTemplate: atAngularCoreLib.srcRender3InterfacesStylingMod.StylingContext = null,
+    tViews: atAngularCoreLib.srcRender3InterfacesViewMod.TView | js.Array[atAngularCoreLib.srcRender3InterfacesViewMod.TView] = null,
+    tagName: java.lang.String = null
+  ): TNode = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("directiveEnd")(directiveEnd)
+    __obj.updateDynamic("directiveStart")(directiveStart)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("injectorIndex")(injectorIndex)
+    __obj.updateDynamic("providerIndexes")(providerIndexes)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (child != null) __obj.updateDynamic("child")(child)
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
+    if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs)
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    if (localNames != null) __obj.updateDynamic("localNames")(localNames)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (stylingTemplate != null) __obj.updateDynamic("stylingTemplate")(stylingTemplate)
+    if (tViews != null) __obj.updateDynamic("tViews")(tViews.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    __obj.asInstanceOf[TNode]
+  }
+}
+

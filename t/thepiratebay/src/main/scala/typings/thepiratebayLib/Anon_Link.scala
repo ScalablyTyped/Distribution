@@ -10,3 +10,16 @@ trait Anon_Link
   var link: java.lang.String
 }
 
+object Anon_Link {
+  @scala.inline
+  def apply(
+    link: java.lang.String,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Link = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("link")(link)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Link]
+  }
+}
+

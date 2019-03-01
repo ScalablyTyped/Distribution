@@ -46,3 +46,28 @@ trait XAccessibleRelationSet
   def getRelationCount(): scala.Double
 }
 
+object XAccessibleRelationSet {
+  @scala.inline
+  def apply(
+    RelationCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    containsRelation: js.Function1[scala.Double, scala.Boolean],
+    getRelation: js.Function1[scala.Double, AccessibleRelation],
+    getRelationByType: js.Function1[scala.Double, AccessibleRelation],
+    getRelationCount: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleRelationSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RelationCount")(RelationCount)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("containsRelation")(containsRelation)
+    __obj.updateDynamic("getRelation")(getRelation)
+    __obj.updateDynamic("getRelationByType")(getRelationByType)
+    __obj.updateDynamic("getRelationCount")(getRelationCount)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAccessibleRelationSet]
+  }
+}
+

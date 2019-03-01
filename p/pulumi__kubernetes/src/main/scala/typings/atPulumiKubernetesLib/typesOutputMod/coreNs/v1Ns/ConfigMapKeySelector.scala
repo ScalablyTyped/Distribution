@@ -24,3 +24,14 @@ trait ConfigMapKeySelector extends js.Object {
   val optional: scala.Boolean
 }
 
+object ConfigMapKeySelector {
+  @scala.inline
+  def apply(key: java.lang.String, name: java.lang.String, optional: scala.Boolean): ConfigMapKeySelector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[ConfigMapKeySelector]
+  }
+}
+

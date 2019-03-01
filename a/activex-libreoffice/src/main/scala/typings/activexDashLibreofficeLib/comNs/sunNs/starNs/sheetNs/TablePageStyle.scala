@@ -89,3 +89,54 @@ trait TablePageStyle
   var ScaleToPagesY: scala.Double
 }
 
+object TablePageStyle {
+  @scala.inline
+  def apply(
+    CenterHorizontally: scala.Boolean,
+    CenterVertically: scala.Boolean,
+    FirstPageNumber: scala.Double,
+    LeftPageFooterContent: XHeaderFooterContent,
+    LeftPageHeaderContent: XHeaderFooterContent,
+    PageScale: scala.Double,
+    PrintAnnotations: scala.Boolean,
+    PrintCharts: scala.Boolean,
+    PrintDownFirst: scala.Boolean,
+    PrintDrawing: scala.Boolean,
+    PrintFormulas: scala.Boolean,
+    PrintGrid: scala.Boolean,
+    PrintHeaders: scala.Boolean,
+    PrintObjects: scala.Boolean,
+    PrintZeroValues: scala.Boolean,
+    RightPageFooterContent: XHeaderFooterContent,
+    RightPageHeaderContent: XHeaderFooterContent,
+    ScaleToPages: scala.Double,
+    ScaleToPagesX: scala.Double,
+    ScaleToPagesY: scala.Double,
+    PageStyle: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.PageStyle = null
+  ): TablePageStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CenterHorizontally")(CenterHorizontally)
+    __obj.updateDynamic("CenterVertically")(CenterVertically)
+    __obj.updateDynamic("FirstPageNumber")(FirstPageNumber)
+    __obj.updateDynamic("LeftPageFooterContent")(LeftPageFooterContent)
+    __obj.updateDynamic("LeftPageHeaderContent")(LeftPageHeaderContent)
+    __obj.updateDynamic("PageScale")(PageScale)
+    __obj.updateDynamic("PrintAnnotations")(PrintAnnotations)
+    __obj.updateDynamic("PrintCharts")(PrintCharts)
+    __obj.updateDynamic("PrintDownFirst")(PrintDownFirst)
+    __obj.updateDynamic("PrintDrawing")(PrintDrawing)
+    __obj.updateDynamic("PrintFormulas")(PrintFormulas)
+    __obj.updateDynamic("PrintGrid")(PrintGrid)
+    __obj.updateDynamic("PrintHeaders")(PrintHeaders)
+    __obj.updateDynamic("PrintObjects")(PrintObjects)
+    __obj.updateDynamic("PrintZeroValues")(PrintZeroValues)
+    __obj.updateDynamic("RightPageFooterContent")(RightPageFooterContent)
+    __obj.updateDynamic("RightPageHeaderContent")(RightPageHeaderContent)
+    __obj.updateDynamic("ScaleToPages")(ScaleToPages)
+    __obj.updateDynamic("ScaleToPagesX")(ScaleToPagesX)
+    __obj.updateDynamic("ScaleToPagesY")(ScaleToPagesY)
+    js.Dynamic.global.Object.assign(__obj, PageStyle)
+    __obj.asInstanceOf[TablePageStyle]
+  }
+}
+

@@ -39,3 +39,44 @@ trait FilePondBaseProps extends js.Object {
   var required: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FilePondBaseProps {
+  @scala.inline
+  def apply(
+    acceptedFileTypes: js.Array[java.lang.String] = null,
+    allowBrowse: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    allowMultiple: js.UndefOr[scala.Boolean] = js.undefined,
+    allowPaste: js.UndefOr[scala.Boolean] = js.undefined,
+    allowReplace: js.UndefOr[scala.Boolean] = js.undefined,
+    allowRevert: js.UndefOr[scala.Boolean] = js.undefined,
+    captureMethod: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactElement[File] | js.Array[reactLib.reactMod.ReactNs.ReactElement[File]] = null,
+    className: java.lang.String = null,
+    id: java.lang.String = null,
+    maxFiles: scala.Int | scala.Double = null,
+    maxParallelUploads: scala.Int | scala.Double = null,
+    metadata: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    name: java.lang.String = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined
+  ): FilePondBaseProps = {
+    val __obj = js.Dynamic.literal()
+    if (acceptedFileTypes != null) __obj.updateDynamic("acceptedFileTypes")(acceptedFileTypes)
+    if (!js.isUndefined(allowBrowse)) __obj.updateDynamic("allowBrowse")(allowBrowse)
+    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop)
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
+    if (!js.isUndefined(allowPaste)) __obj.updateDynamic("allowPaste")(allowPaste)
+    if (!js.isUndefined(allowReplace)) __obj.updateDynamic("allowReplace")(allowReplace)
+    if (!js.isUndefined(allowRevert)) __obj.updateDynamic("allowRevert")(allowRevert)
+    if (captureMethod != null) __obj.updateDynamic("captureMethod")(captureMethod)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
+    if (maxParallelUploads != null) __obj.updateDynamic("maxParallelUploads")(maxParallelUploads.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    __obj.asInstanceOf[FilePondBaseProps]
+  }
+}
+

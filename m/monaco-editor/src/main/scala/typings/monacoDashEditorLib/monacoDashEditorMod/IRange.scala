@@ -24,3 +24,20 @@ trait IRange extends js.Object {
   val startLineNumber: scala.Double
 }
 
+object IRange {
+  @scala.inline
+  def apply(
+    endColumn: scala.Double,
+    endLineNumber: scala.Double,
+    startColumn: scala.Double,
+    startLineNumber: scala.Double
+  ): IRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endColumn")(endColumn)
+    __obj.updateDynamic("endLineNumber")(endLineNumber)
+    __obj.updateDynamic("startColumn")(startColumn)
+    __obj.updateDynamic("startLineNumber")(startLineNumber)
+    __obj.asInstanceOf[IRange]
+  }
+}
+

@@ -13,3 +13,12 @@ trait CompositionTransation extends js.Object {
   def complete(callback: js.Function): scala.Unit
 }
 
+object CompositionTransation {
+  @scala.inline
+  def apply(complete: js.Function1[js.Function, scala.Unit]): CompositionTransation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complete")(complete)
+    __obj.asInstanceOf[CompositionTransation]
+  }
+}
+

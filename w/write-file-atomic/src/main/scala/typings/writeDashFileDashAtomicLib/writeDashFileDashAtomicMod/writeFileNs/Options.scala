@@ -12,3 +12,20 @@ trait Options extends js.Object {
   var mode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    chown: writeDashFileDashAtomicLib.Anon_Gid = null,
+    encoding: java.lang.String = null,
+    fsync: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (chown != null) __obj.updateDynamic("chown")(chown)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

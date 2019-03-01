@@ -13,3 +13,17 @@ trait BaseTypeaheadInputProps
   var type_BaseTypeaheadInputProps: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.text
 }
 
+object BaseTypeaheadInputProps {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.text,
+    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[
+      reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.input
+    ] = null
+  ): BaseTypeaheadInputProps = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
+    __obj.asInstanceOf[BaseTypeaheadInputProps]
+  }
+}
+

@@ -13,3 +13,21 @@ trait PhoneNumber extends js.Object {
   var value: java.lang.String
 }
 
+object PhoneNumber {
+  @scala.inline
+  def apply(
+    canonicalForm: java.lang.String,
+    formattedType: java.lang.String,
+    metadata: FieldMetadata,
+    `type`: java.lang.String,
+    value: java.lang.String
+  ): PhoneNumber = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("canonicalForm")(canonicalForm)
+    __obj.updateDynamic("formattedType")(formattedType)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PhoneNumber]
+  }
+}
+

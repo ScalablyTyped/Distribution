@@ -9,3 +9,12 @@ trait TextInputSubmitEditingEventData extends js.Object {
   var text: java.lang.String
 }
 
+object TextInputSubmitEditingEventData {
+  @scala.inline
+  def apply(text: java.lang.String): TextInputSubmitEditingEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextInputSubmitEditingEventData]
+  }
+}
+

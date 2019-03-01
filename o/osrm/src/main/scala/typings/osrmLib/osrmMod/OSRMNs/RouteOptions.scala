@@ -38,3 +38,34 @@ trait RouteOptions extends Options {
   var steps: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RouteOptions {
+  @scala.inline
+  def apply(
+    alternatives: js.UndefOr[scala.Boolean] = js.undefined,
+    annotations: scala.Boolean | js.Array[java.lang.String] = null,
+    bearings: js.Array[Bearing] = null,
+    continue_straight: js.UndefOr[scala.Boolean] = js.undefined,
+    coordinates: js.Array[Coordinate] = null,
+    generate_hints: js.UndefOr[scala.Boolean] = js.undefined,
+    geometries: GeometriesTypes = null,
+    hints: js.Array[Hint] = null,
+    overview: OverviewTypes = null,
+    radiuses: js.Array[Radius] = null,
+    steps: js.UndefOr[scala.Boolean] = js.undefined
+  ): RouteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alternatives)) __obj.updateDynamic("alternatives")(alternatives)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
+    if (!js.isUndefined(continue_straight)) __obj.updateDynamic("continue_straight")(continue_straight)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (hints != null) __obj.updateDynamic("hints")(hints)
+    if (overview != null) __obj.updateDynamic("overview")(overview)
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps)
+    __obj.asInstanceOf[RouteOptions]
+  }
+}
+

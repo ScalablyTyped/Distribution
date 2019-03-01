@@ -16,3 +16,18 @@ trait RunOptions
   var delayForCellEdit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RunOptions {
+  @scala.inline
+  def apply(
+    delayForCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    previousObjects: officeDashJsLib.OfficeExtensionNs.ClientObject | js.Array[officeDashJsLib.OfficeExtensionNs.ClientObject] | officeDashJsLib.OfficeExtensionNs.ClientRequestContext = null,
+    session: officeDashJsLib.OfficeExtensionNs.RequestUrlAndHeaderInfo | Session = null
+  ): RunOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(delayForCellEdit)) __obj.updateDynamic("delayForCellEdit")(delayForCellEdit)
+    if (previousObjects != null) __obj.updateDynamic("previousObjects")(previousObjects.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RunOptions]
+  }
+}
+

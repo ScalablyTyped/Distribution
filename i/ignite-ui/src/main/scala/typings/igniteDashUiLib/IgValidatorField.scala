@@ -21,3 +21,19 @@ trait IgValidatorField
   var selector: js.UndefOr[java.lang.String | js.Object] = js.undefined
 }
 
+object IgValidatorField {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgValidatorField
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    selector: java.lang.String | js.Object = null
+  ): IgValidatorField = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgValidatorField]
+  }
+}
+

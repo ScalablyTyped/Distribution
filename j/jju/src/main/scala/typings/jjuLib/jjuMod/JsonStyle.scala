@@ -24,3 +24,28 @@ trait JsonStyle extends js.Object {
   var quote_keys: scala.Boolean
 }
 
+object JsonStyle {
+  @scala.inline
+  def apply(
+    has_comments: scala.Boolean,
+    has_newlines: scala.Boolean,
+    has_trailing_comma: scala.Boolean,
+    has_whitespace: scala.Boolean,
+    indent: java.lang.String,
+    newline: java.lang.String,
+    quote: java.lang.String,
+    quote_keys: scala.Boolean
+  ): JsonStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("has_comments")(has_comments)
+    __obj.updateDynamic("has_newlines")(has_newlines)
+    __obj.updateDynamic("has_trailing_comma")(has_trailing_comma)
+    __obj.updateDynamic("has_whitespace")(has_whitespace)
+    __obj.updateDynamic("indent")(indent)
+    __obj.updateDynamic("newline")(newline)
+    __obj.updateDynamic("quote")(quote)
+    __obj.updateDynamic("quote_keys")(quote_keys)
+    __obj.asInstanceOf[JsonStyle]
+  }
+}
+

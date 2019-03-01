@@ -12,3 +12,20 @@ trait Anon_CancelDocEndRecord extends js.Object {
   val StartRecord: scala.Double
 }
 
+object Anon_CancelDocEndRecord {
+  @scala.inline
+  def apply(
+    Cancel: scala.Boolean,
+    Doc: activexDashWordLib.WordNs.Document,
+    EndRecord: scala.Double,
+    StartRecord: scala.Double
+  ): Anon_CancelDocEndRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("Doc")(Doc)
+    __obj.updateDynamic("EndRecord")(EndRecord)
+    __obj.updateDynamic("StartRecord")(StartRecord)
+    __obj.asInstanceOf[Anon_CancelDocEndRecord]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Anon_Discriminant extends js.Object {
   var map: js.UndefOr[js.Array[Anon_Ref]] = js.undefined
 }
 
+object Anon_Discriminant {
+  @scala.inline
+  def apply(discriminant: java.lang.String = null, map: js.Array[Anon_Ref] = null): Anon_Discriminant = {
+    val __obj = js.Dynamic.literal()
+    if (discriminant != null) __obj.updateDynamic("discriminant")(discriminant)
+    if (map != null) __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[Anon_Discriminant]
+  }
+}
+

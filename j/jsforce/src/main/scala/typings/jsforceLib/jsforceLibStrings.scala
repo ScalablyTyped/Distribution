@@ -25,166 +25,219 @@ object jsforceLibStrings {
   sealed trait Serial extends js.Object
   
   @js.native
-  sealed trait address extends js.Object
+  sealed trait address
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait anyType extends js.Object
+  sealed trait anyType
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait combobox extends js.Object
+  sealed trait combobox
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait complexvalue extends js.Object
+  sealed trait complexvalue
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait currency extends js.Object
+  sealed trait currency
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait datetime extends js.Object
+  sealed trait datetime
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends jsforceLib.bulkMod.BulkLoadOperation
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait double
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait encryptedstring extends js.Object
+  sealed trait encryptedstring
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait externallookup extends js.Object
+  sealed trait externallookup
+    extends jsforceLib.describeDashResultMod.ExtraTypeInfo
   
   @js.native
-  sealed trait hardDelete extends js.Object
+  sealed trait hardDelete
+    extends jsforceLib.bulkMod.BulkLoadOperation
   
   @js.native
-  sealed trait id extends js.Object
+  sealed trait id
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait imageurl extends js.Object
+  sealed trait imageurl
+    extends jsforceLib.describeDashResultMod.ExtraTypeInfo
   
   @js.native
-  sealed trait indirectlookup extends js.Object
+  sealed trait indirectlookup
+    extends jsforceLib.describeDashResultMod.ExtraTypeInfo
   
   @js.native
-  sealed trait insert extends js.Object
+  sealed trait insert
+    extends jsforceLib.bulkMod.BulkLoadOperation
   
   @js.native
-  sealed trait int extends js.Object
+  sealed trait int
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait location extends js.Object
+  sealed trait location
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait multipicklist extends js.Object
+  sealed trait multipicklist
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait percent extends js.Object
+  sealed trait percent
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait personname extends js.Object
+  sealed trait personname
+    extends jsforceLib.describeDashResultMod.ExtraTypeInfo
   
   @js.native
-  sealed trait phone extends js.Object
+  sealed trait phone
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait picklist extends js.Object
+  sealed trait picklist
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait plaintextarea extends js.Object
+  sealed trait plaintextarea
+    extends jsforceLib.describeDashResultMod.ExtraTypeInfo
   
   @js.native
-  sealed trait reference extends js.Object
+  sealed trait reference
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
   sealed trait refresh extends js.Object
   
   @js.native
-  sealed trait richtextarea extends js.Object
+  sealed trait richtextarea
+    extends jsforceLib.describeDashResultMod.ExtraTypeInfo
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait switchablepersonname extends js.Object
+  sealed trait switchablepersonname
+    extends jsforceLib.describeDashResultMod.ExtraTypeInfo
   
   @js.native
-  sealed trait textarea extends js.Object
+  sealed trait textarea
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait `tns:ID` extends js.Object
+  sealed trait `tns:ID`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update
+    extends jsforceLib.bulkMod.BulkLoadOperation
   
   @js.native
-  sealed trait upsert extends js.Object
+  sealed trait upsert
+    extends jsforceLib.bulkMod.BulkLoadOperation
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends jsforceLib.describeDashResultMod.FieldType
   
   @js.native
-  sealed trait `urn:JunctionIdListNames` extends js.Object
+  sealed trait `urn:JunctionIdListNames`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `urn:RecordTypesSupported` extends js.Object
+  sealed trait `urn:RecordTypesSupported`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `urn:RelationshipReferenceTo` extends js.Object
+  sealed trait `urn:RelationshipReferenceTo`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `urn:SearchLayoutButtonsDisplayed` extends js.Object
+  sealed trait `urn:SearchLayoutButtonsDisplayed`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `urn:SearchLayoutFieldsDisplayed` extends js.Object
+  sealed trait `urn:SearchLayoutFieldsDisplayed`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `urn:address` extends js.Object
+  sealed trait `urn:address`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `urn:location` extends js.Object
+  sealed trait `urn:location`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `xsd:anyType` extends js.Object
+  sealed trait `xsd:anyType`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `xsd:base64Binary` extends js.Object
+  sealed trait `xsd:base64Binary`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `xsd:boolean` extends js.Object
+  sealed trait `xsd:boolean`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `xsd:date` extends js.Object
+  sealed trait `xsd:date`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `xsd:dateTime` extends js.Object
+  sealed trait `xsd:dateTime`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `xsd:double` extends js.Object
+  sealed trait `xsd:double`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `xsd:int` extends js.Object
+  sealed trait `xsd:int`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `xsd:string` extends js.Object
+  sealed trait `xsd:string`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @js.native
-  sealed trait `xsd:time` extends js.Object
+  sealed trait `xsd:time`
+    extends jsforceLib.describeDashResultMod.SOAPType
   
   @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]

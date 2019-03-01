@@ -23,3 +23,37 @@ trait Shape extends js.Object {
   var yref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.y
 }
 
+object Shape {
+  @scala.inline
+  def apply(
+    fillcolor: java.lang.String,
+    layer: plotlyDotJsLib.plotlyDotJsLibStrings.below | plotlyDotJsLib.plotlyDotJsLibStrings.above,
+    line: stdLib.Partial[ShapeLine],
+    opacity: scala.Double,
+    path: java.lang.String,
+    `type`: plotlyDotJsLib.plotlyDotJsLibStrings.rect | plotlyDotJsLib.plotlyDotJsLibStrings.circle | plotlyDotJsLib.plotlyDotJsLibStrings.line | plotlyDotJsLib.plotlyDotJsLibStrings.path,
+    visible: scala.Boolean,
+    x0: Datum,
+    x1: Datum,
+    xref: plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.paper,
+    y0: Datum,
+    y1: Datum,
+    yref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.y
+  ): Shape = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("fillcolor")(fillcolor)
+    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("opacity")(opacity)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("visible")(visible)
+    __obj.updateDynamic("x0")(x0.asInstanceOf[js.Any])
+    __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
+    __obj.updateDynamic("xref")(xref.asInstanceOf[js.Any])
+    __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
+    __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
+    __obj.updateDynamic("yref")(yref.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Shape]
+  }
+}
+

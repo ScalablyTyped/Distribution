@@ -24,3 +24,20 @@ trait Anon_AllowDisplayName extends js.Object {
   var requireTld: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_AllowDisplayName {
+  @scala.inline
+  def apply(
+    allowDisplayName: js.UndefOr[scala.Boolean] = js.undefined,
+    allowUtf8LocalPart: js.UndefOr[scala.Boolean] = js.undefined,
+    requireDisplayName: js.UndefOr[scala.Boolean] = js.undefined,
+    requireTld: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AllowDisplayName = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDisplayName)) __obj.updateDynamic("allowDisplayName")(allowDisplayName)
+    if (!js.isUndefined(allowUtf8LocalPart)) __obj.updateDynamic("allowUtf8LocalPart")(allowUtf8LocalPart)
+    if (!js.isUndefined(requireDisplayName)) __obj.updateDynamic("requireDisplayName")(requireDisplayName)
+    if (!js.isUndefined(requireTld)) __obj.updateDynamic("requireTld")(requireTld)
+    __obj.asInstanceOf[Anon_AllowDisplayName]
+  }
+}
+

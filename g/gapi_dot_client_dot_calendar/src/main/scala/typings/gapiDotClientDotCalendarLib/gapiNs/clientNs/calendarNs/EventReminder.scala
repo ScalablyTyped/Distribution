@@ -18,3 +18,13 @@ trait EventReminder extends js.Object {
   var minutes: js.UndefOr[scala.Double] = js.undefined
 }
 
+object EventReminder {
+  @scala.inline
+  def apply(method: java.lang.String = null, minutes: scala.Int | scala.Double = null): EventReminder = {
+    val __obj = js.Dynamic.literal()
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventReminder]
+  }
+}
+

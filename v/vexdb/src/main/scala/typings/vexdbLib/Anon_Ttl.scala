@@ -9,3 +9,12 @@ trait Anon_Ttl extends js.Object {
   var ttl: scala.Double
 }
 
+object Anon_Ttl {
+  @scala.inline
+  def apply(ttl: scala.Double): Anon_Ttl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ttl")(ttl)
+    __obj.asInstanceOf[Anon_Ttl]
+  }
+}
+

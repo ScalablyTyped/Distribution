@@ -18,3 +18,32 @@ trait TagDefinition extends js.Object {
   def requireExtraParent(currentParent: java.lang.String): scala.Boolean
 }
 
+object TagDefinition {
+  @scala.inline
+  def apply(
+    canSelfClose: scala.Boolean,
+    closedByParent: scala.Boolean,
+    contentType: TagContentType,
+    ignoreFirstLf: scala.Boolean,
+    isClosedByChild: js.Function1[java.lang.String, scala.Boolean],
+    isVoid: scala.Boolean,
+    parentToAdd: java.lang.String,
+    requireExtraParent: js.Function1[java.lang.String, scala.Boolean],
+    requiredParents: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
+    implicitNamespacePrefix: java.lang.String = null
+  ): TagDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canSelfClose")(canSelfClose)
+    __obj.updateDynamic("closedByParent")(closedByParent)
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("ignoreFirstLf")(ignoreFirstLf)
+    __obj.updateDynamic("isClosedByChild")(isClosedByChild)
+    __obj.updateDynamic("isVoid")(isVoid)
+    __obj.updateDynamic("parentToAdd")(parentToAdd)
+    __obj.updateDynamic("requireExtraParent")(requireExtraParent)
+    __obj.updateDynamic("requiredParents")(requiredParents)
+    if (implicitNamespacePrefix != null) __obj.updateDynamic("implicitNamespacePrefix")(implicitNamespacePrefix)
+    __obj.asInstanceOf[TagDefinition]
+  }
+}
+

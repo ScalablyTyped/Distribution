@@ -17,3 +17,26 @@ trait Options extends js.Object {
   var prefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    concurrency: scala.Int | scala.Double = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    env: js.Function1[/* index */ scala.Double, stickyDashClusterLib.Anon_Stickyclusterworkerindex] = null,
+    errorHandler: js.Function1[/* err */ js.Any, scala.Unit] = null,
+    hardShutdownDelay: scala.Int | scala.Double = null,
+    port: scala.Int | scala.Double = null,
+    prefix: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
+    if (hardShutdownDelay != null) __obj.updateDynamic("hardShutdownDelay")(hardShutdownDelay.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[Options]
+  }
+}
+

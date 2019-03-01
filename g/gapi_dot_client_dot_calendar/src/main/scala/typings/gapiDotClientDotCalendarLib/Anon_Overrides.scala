@@ -15,3 +15,16 @@ trait Anon_Overrides extends js.Object {
   var useDefault: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Overrides {
+  @scala.inline
+  def apply(
+    overrides: js.Array[gapiDotClientDotCalendarLib.gapiNs.clientNs.calendarNs.EventReminder] = null,
+    useDefault: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Overrides = {
+    val __obj = js.Dynamic.literal()
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    if (!js.isUndefined(useDefault)) __obj.updateDynamic("useDefault")(useDefault)
+    __obj.asInstanceOf[Anon_Overrides]
+  }
+}
+

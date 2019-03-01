@@ -15,3 +15,13 @@ trait MasterAuthorizedNetworksConfig extends js.Object {
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MasterAuthorizedNetworksConfig {
+  @scala.inline
+  def apply(cidrBlocks: js.Array[CidrBlock] = null, enabled: js.UndefOr[scala.Boolean] = js.undefined): MasterAuthorizedNetworksConfig = {
+    val __obj = js.Dynamic.literal()
+    if (cidrBlocks != null) __obj.updateDynamic("cidrBlocks")(cidrBlocks)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[MasterAuthorizedNetworksConfig]
+  }
+}
+

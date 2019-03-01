@@ -10,3 +10,15 @@ trait Anon_SamlMetadataType extends js.Object {
   var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_SamlMetadataType {
+  @scala.inline
+  def apply(
+    samlMetadata: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): Anon_SamlMetadataType = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("samlMetadata")(samlMetadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_SamlMetadataType]
+  }
+}
+

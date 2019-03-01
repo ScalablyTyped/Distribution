@@ -15,6 +15,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IBinaryType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class BinaryType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_BinaryType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_BinaryType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_BinaryType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_BinaryType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_BinaryType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_BinaryType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_BinaryType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_BinaryType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /**
@@ -24,6 +40,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IBooleanType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class BooleanType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_BooleanType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_BooleanType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_BooleanType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_BooleanType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_BooleanType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_BooleanType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_BooleanType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_BooleanType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /**
@@ -63,6 +95,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDateTimeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class DateTimeType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_DateTimeType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_DateTimeType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_DateTimeType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_DateTimeType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_DateTimeType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_DateTimeType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_DateTimeType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_DateTimeType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /**
@@ -72,6 +120,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDecimalType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class DecimalType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_DecimalType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_DecimalType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_DecimalType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_DecimalType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_DecimalType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_DecimalType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_DecimalType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_DecimalType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /**
@@ -81,6 +145,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IEmptyType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class EmptyType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_EmptyType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_EmptyType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_EmptyType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_EmptyType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_EmptyType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_EmptyType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_EmptyType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_EmptyType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /**
@@ -90,6 +170,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName, asLoaded, load, load, load, load */ @js.native
   abstract class EntityType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_EntityType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_EntityType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_EntityType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_EntityType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_EntityType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_EntityType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_EntityType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_EntityType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
     var entity: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEntity = js.native
     val entityQualifiedName: java.lang.String = js.native
   }
@@ -101,6 +197,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IEnumerationType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName, asLoaded, load, load, load, load */ @js.native
   class EnumerationType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_EnumerationType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_EnumerationType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_EnumerationType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_EnumerationType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_EnumerationType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_EnumerationType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_EnumerationType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_EnumerationType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
     var enumeration: mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration = js.native
     val enumerationQualifiedName: java.lang.String = js.native
   }
@@ -112,6 +224,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IFloatType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class FloatType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_FloatType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_FloatType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_FloatType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_FloatType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_FloatType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_FloatType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_FloatType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_FloatType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /**
@@ -240,6 +368,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IIntegerType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class IntegerType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_IntegerType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_IntegerType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_IntegerType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_IntegerType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_IntegerType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_IntegerType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_IntegerType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_IntegerType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /**
@@ -267,6 +411,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IStringType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class StringType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_StringType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_StringType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_StringType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_StringType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_StringType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_StringType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_StringType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_StringType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /**
@@ -276,6 +436,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IUnknownType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class UnknownType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_UnknownType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_UnknownType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_UnknownType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_UnknownType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_UnknownType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_UnknownType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_UnknownType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_UnknownType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /**
@@ -285,6 +461,22 @@ object datatypesNs extends js.Object {
   - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IVoidType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class VoidType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAppServiceActionParameter")
+    val containerAsAppServiceActionParameter_VoidType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
+    @JSName("containerAsAppServiceAction")
+    val containerAsAppServiceAction_VoidType: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
+    @JSName("containerAsConstant")
+    val containerAsConstant_VoidType: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    @JSName("containerAsDataSetParameter")
+    val containerAsDataSetParameter_VoidType: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
+    @JSName("containerAsDocumentTemplateParameter")
+    val containerAsDocumentTemplateParameter_VoidType: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
+    @JSName("containerAsImportMapping")
+    val containerAsImportMapping_VoidType: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    @JSName("containerAsMicroflowBase")
+    val containerAsMicroflowBase_VoidType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    @JSName("containerAsMicroflowParameterBase")
+    val containerAsMicroflowParameterBase_VoidType: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
   }
   
   /* static members */

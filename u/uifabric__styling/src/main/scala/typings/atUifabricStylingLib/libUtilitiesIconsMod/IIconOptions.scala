@@ -28,3 +28,13 @@ trait IIconOptions extends js.Object {
   var warnOnMissingIcons: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IIconOptions {
+  @scala.inline
+  def apply(disableWarnings: scala.Boolean, warnOnMissingIcons: js.UndefOr[scala.Boolean] = js.undefined): IIconOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disableWarnings")(disableWarnings)
+    if (!js.isUndefined(warnOnMissingIcons)) __obj.updateDynamic("warnOnMissingIcons")(warnOnMissingIcons)
+    __obj.asInstanceOf[IIconOptions]
+  }
+}
+

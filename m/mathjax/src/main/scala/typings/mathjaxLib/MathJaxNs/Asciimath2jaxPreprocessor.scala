@@ -58,3 +58,22 @@ trait Asciimath2jaxPreprocessor extends js.Object {
   var skipTags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Asciimath2jaxPreprocessor {
+  @scala.inline
+  def apply(
+    delimiters: js.Any = null,
+    ignoreClass: java.lang.String = null,
+    preview: js.Any = null,
+    processClass: java.lang.String = null,
+    skipTags: js.Array[java.lang.String] = null
+  ): Asciimath2jaxPreprocessor = {
+    val __obj = js.Dynamic.literal()
+    if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters)
+    if (ignoreClass != null) __obj.updateDynamic("ignoreClass")(ignoreClass)
+    if (preview != null) __obj.updateDynamic("preview")(preview)
+    if (processClass != null) __obj.updateDynamic("processClass")(processClass)
+    if (skipTags != null) __obj.updateDynamic("skipTags")(skipTags)
+    __obj.asInstanceOf[Asciimath2jaxPreprocessor]
+  }
+}
+

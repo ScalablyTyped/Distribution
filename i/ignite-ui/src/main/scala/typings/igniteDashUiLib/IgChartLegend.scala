@@ -92,3 +92,39 @@ trait IgChartLegend
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgChartLegend {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igChartLegend
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    height: java.lang.String | scala.Double = null,
+    language: java.lang.String = null,
+    legendItemMouseEnter: LegendItemMouseEnterEvent = null,
+    legendItemMouseLeave: LegendItemMouseLeaveEvent = null,
+    legendItemMouseLeftButtonDown: LegendItemMouseLeftButtonDownEvent = null,
+    legendItemMouseLeftButtonUp: LegendItemMouseLeftButtonUpEvent = null,
+    locale: js.Any = null,
+    regional: java.lang.String | js.Object = null,
+    theme: java.lang.String = null,
+    `type`: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): IgChartLegend = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (legendItemMouseEnter != null) __obj.updateDynamic("legendItemMouseEnter")(legendItemMouseEnter)
+    if (legendItemMouseLeave != null) __obj.updateDynamic("legendItemMouseLeave")(legendItemMouseLeave)
+    if (legendItemMouseLeftButtonDown != null) __obj.updateDynamic("legendItemMouseLeftButtonDown")(legendItemMouseLeftButtonDown)
+    if (legendItemMouseLeftButtonUp != null) __obj.updateDynamic("legendItemMouseLeftButtonUp")(legendItemMouseLeftButtonUp)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgChartLegend]
+  }
+}
+

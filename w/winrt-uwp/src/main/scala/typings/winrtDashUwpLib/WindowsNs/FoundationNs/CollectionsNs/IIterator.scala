@@ -22,3 +22,20 @@ trait IIterator[T] extends js.Object {
   def moveNext(): scala.Boolean
 }
 
+object IIterator {
+  @scala.inline
+  def apply[T](
+    current: T,
+    getMany: js.Function0[winrtDashUwpLib.Anon_Items[T]],
+    hasCurrent: scala.Boolean,
+    moveNext: js.Function0[scala.Boolean]
+  ): IIterator[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    __obj.updateDynamic("getMany")(getMany)
+    __obj.updateDynamic("hasCurrent")(hasCurrent)
+    __obj.updateDynamic("moveNext")(moveNext)
+    __obj.asInstanceOf[IIterator[T]]
+  }
+}
+

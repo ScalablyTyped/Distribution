@@ -21,3 +21,36 @@ trait TooltipContext[K1, K2, K3, D1, D2, D3] extends js.Object {
   var y: scala.Double
 }
 
+object TooltipContext {
+  @scala.inline
+  def apply[K1, K2, K3, D1, D2, D3](
+    componentElement: stdLib.Element,
+    id: K1 | K2 | K3,
+    itemData: D1 | D2 | D3,
+    parentElement: stdLib.Element,
+    tooltip: java.lang.String,
+    x: scala.Double,
+    y: scala.Double,
+    color: java.lang.String = null,
+    data: js.Object = null,
+    label: java.lang.String = null,
+    location: java.lang.String = null,
+    locationName: java.lang.String = null
+  ): TooltipContext[K1, K2, K3, D1, D2, D3] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("componentElement")(componentElement)
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
+    __obj.updateDynamic("parentElement")(parentElement)
+    __obj.updateDynamic("tooltip")(tooltip)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (locationName != null) __obj.updateDynamic("locationName")(locationName)
+    __obj.asInstanceOf[TooltipContext[K1, K2, K3, D1, D2, D3]]
+  }
+}
+

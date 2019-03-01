@@ -10,3 +10,13 @@ trait OneMapping extends js.Object {
   var src: js.Array[java.lang.String]
 }
 
+object OneMapping {
+  @scala.inline
+  def apply(dest: java.lang.String, src: js.Array[java.lang.String]): OneMapping = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dest")(dest)
+    __obj.updateDynamic("src")(src)
+    __obj.asInstanceOf[OneMapping]
+  }
+}
+

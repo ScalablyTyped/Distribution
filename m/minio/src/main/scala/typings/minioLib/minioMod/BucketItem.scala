@@ -13,3 +13,22 @@ trait BucketItem extends js.Object {
   var size: scala.Double
 }
 
+object BucketItem {
+  @scala.inline
+  def apply(
+    etag: java.lang.String,
+    lastModified: stdLib.Date,
+    name: java.lang.String,
+    prefix: java.lang.String,
+    size: scala.Double
+  ): BucketItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("lastModified")(lastModified)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[BucketItem]
+  }
+}
+

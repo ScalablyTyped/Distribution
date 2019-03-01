@@ -7,169 +7,233 @@ import scala.scalajs.js.annotation._
 
 object openlayersLibStrings {
   @js.native
-  sealed trait Circle extends js.Object
+  sealed trait Circle
+    extends openlayersLib.openlayersMod.geomNs.GeometryType
   
   @js.native
-  sealed trait GeometryCollection extends js.Object
+  sealed trait GeometryCollection
+    extends openlayersLib.openlayersMod.geomNs.GeometryType
   
   @js.native
-  sealed trait KVP extends js.Object
+  sealed trait KVP
+    extends openlayersLib.openlayersMod.sourceNs.WMTSRequestEncoding
   
   @js.native
-  sealed trait LineString extends js.Object
+  sealed trait LineString
+    extends openlayersLib.openlayersMod.geomNs.GeometryType
   
   @js.native
-  sealed trait LinearRing extends js.Object
+  sealed trait LinearRing
+    extends openlayersLib.openlayersMod.geomNs.GeometryType
   
   @js.native
-  sealed trait MultiLineString extends js.Object
+  sealed trait MultiLineString
+    extends openlayersLib.openlayersMod.geomNs.GeometryType
   
   @js.native
-  sealed trait MultiPoint extends js.Object
+  sealed trait MultiPoint
+    extends openlayersLib.openlayersMod.geomNs.GeometryType
   
   @js.native
-  sealed trait MultiPolygon extends js.Object
+  sealed trait MultiPolygon
+    extends openlayersLib.openlayersMod.geomNs.GeometryType
   
   @js.native
-  sealed trait Point extends js.Object
+  sealed trait Point
+    extends openlayersLib.openlayersMod.geomNs.GeometryType
   
   @js.native
-  sealed trait Polygon extends js.Object
+  sealed trait Polygon
+    extends openlayersLib.openlayersMod.geomNs.GeometryType
   
   @js.native
-  sealed trait REST extends js.Object
+  sealed trait REST
+    extends openlayersLib.openlayersMod.sourceNs.WMTSRequestEncoding
   
   @js.native
-  sealed trait XY extends js.Object
+  sealed trait XY
+    extends openlayersLib.openlayersMod.geomNs.GeometryLayout
   
   @js.native
-  sealed trait XYM extends js.Object
+  sealed trait XYM
+    extends openlayersLib.openlayersMod.geomNs.GeometryLayout
   
   @js.native
-  sealed trait XYZ extends js.Object
+  sealed trait XYZ
+    extends openlayersLib.openlayersMod.geomNs.GeometryLayout
   
   @js.native
-  sealed trait XYZM extends js.Object
+  sealed trait XYZM
+    extends openlayersLib.openlayersMod.geomNs.GeometryLayout
   
   @js.native
-  sealed trait barometric extends js.Object
+  sealed trait barometric
+    extends openlayersLib.openlayersMod.formatNs.IGCZ
   
   @js.native
-  sealed trait `bottom-center` extends js.Object
+  sealed trait `bottom-center`
+    extends openlayersLib.openlayersMod.OverlayPositioning
   
   @js.native
-  sealed trait `bottom-left` extends js.Object
+  sealed trait `bottom-left`
+    extends openlayersLib.openlayersMod.styleNs.IconOrigin
+       with openlayersLib.openlayersMod.OverlayPositioning
   
   @js.native
-  sealed trait `bottom-right` extends js.Object
+  sealed trait `bottom-right`
+    extends openlayersLib.openlayersMod.styleNs.IconOrigin
+       with openlayersLib.openlayersMod.OverlayPositioning
   
   @js.native
-  sealed trait canvas extends js.Object
+  sealed trait canvas
+    extends openlayersLib.openlayersMod.RendererType
   
   @js.native
-  sealed trait carmentaserver extends js.Object
+  sealed trait carmentaserver
+    extends openlayersLib.openlayersMod.sourceNs.wmsNs.ServerType
   
   @js.native
-  sealed trait `center-center` extends js.Object
+  sealed trait `center-center`
+    extends openlayersLib.openlayersMod.OverlayPositioning
   
   @js.native
-  sealed trait `center-left` extends js.Object
+  sealed trait `center-left`
+    extends openlayersLib.openlayersMod.OverlayPositioning
   
   @js.native
-  sealed trait `center-right` extends js.Object
+  sealed trait `center-right`
+    extends openlayersLib.openlayersMod.OverlayPositioning
   
   @js.native
-  sealed trait degrees extends js.Object
+  sealed trait degrees
+    extends openlayersLib.openlayersMod.controlNs.ScaleLineNs.Units
+       with openlayersLib.openlayersMod.projNs.Units
   
   @js.native
-  sealed trait dom extends js.Object
+  sealed trait dom
+    extends openlayersLib.openlayersMod.RendererType
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends openlayersLib.openlayersMod.sourceNs.State
   
   @js.native
-  sealed trait fraction extends js.Object
+  sealed trait fraction
+    extends openlayersLib.openlayersMod.styleNs.IconAnchorUnits
   
   @js.native
-  sealed trait ft extends js.Object
+  sealed trait ft
+    extends openlayersLib.openlayersMod.projNs.Units
   
   @js.native
-  sealed trait geoserver extends js.Object
+  sealed trait geoserver
+    extends openlayersLib.openlayersMod.sourceNs.wmsNs.ServerType
   
   @js.native
-  sealed trait gps extends js.Object
+  sealed trait gps
+    extends openlayersLib.openlayersMod.formatNs.IGCZ
   
   @js.native
-  sealed trait hybrid extends js.Object
+  sealed trait hybrid
+    extends openlayersLib.openlayersMod.layerNs.VectorTileRenderType
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends openlayersLib.openlayersMod.RasterOperationType
+       with openlayersLib.openlayersMod.olxNs.layerNs.VectorRenderType
+       with openlayersLib.openlayersMod.layerNs.VectorTileRenderType
   
   @js.native
-  sealed trait imperial extends js.Object
+  sealed trait imperial
+    extends openlayersLib.openlayersMod.controlNs.ScaleLineNs.Units
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait line
+    extends openlayersLib.openlayersMod.olxNs.styleNs.TextPlacement
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait loading
+    extends openlayersLib.openlayersMod.sourceNs.State
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait m
+    extends openlayersLib.openlayersMod.projNs.Units
   
   @js.native
-  sealed trait mapserver extends js.Object
+  sealed trait mapserver
+    extends openlayersLib.openlayersMod.sourceNs.wmsNs.ServerType
   
   @js.native
-  sealed trait metric extends js.Object
+  sealed trait metric
+    extends openlayersLib.openlayersMod.controlNs.ScaleLineNs.Units
   
   @js.native
-  sealed trait nautical extends js.Object
+  sealed trait nautical
+    extends openlayersLib.openlayersMod.controlNs.ScaleLineNs.Units
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends openlayersLib.openlayersMod.formatNs.IGCZ
   
   @js.native
-  sealed trait pixel extends js.Object
+  sealed trait pixel
+    extends openlayersLib.openlayersMod.RasterOperationType
   
   @js.native
-  sealed trait pixels extends js.Object
+  sealed trait pixels
+    extends openlayersLib.openlayersMod.styleNs.IconAnchorUnits
+       with openlayersLib.openlayersMod.projNs.Units
   
   @js.native
-  sealed trait point extends js.Object
+  sealed trait point
+    extends openlayersLib.openlayersMod.olxNs.styleNs.TextPlacement
   
   @js.native
-  sealed trait qgis extends js.Object
+  sealed trait qgis
+    extends openlayersLib.openlayersMod.sourceNs.wmsNs.ServerType
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait ready
+    extends openlayersLib.openlayersMod.sourceNs.State
   
   @js.native
-  sealed trait `tile-pixels` extends js.Object
+  sealed trait `tile-pixels`
+    extends openlayersLib.openlayersMod.projNs.Units
   
   @js.native
-  sealed trait `top-center` extends js.Object
+  sealed trait `top-center`
+    extends openlayersLib.openlayersMod.OverlayPositioning
   
   @js.native
-  sealed trait `top-left` extends js.Object
+  sealed trait `top-left`
+    extends openlayersLib.openlayersMod.styleNs.IconOrigin
+       with openlayersLib.openlayersMod.OverlayPositioning
   
   @js.native
-  sealed trait `top-right` extends js.Object
+  sealed trait `top-right`
+    extends openlayersLib.openlayersMod.styleNs.IconOrigin
+       with openlayersLib.openlayersMod.OverlayPositioning
   
   @js.native
-  sealed trait undefined extends js.Object
+  sealed trait undefined
+    extends openlayersLib.openlayersMod.sourceNs.State
   
   @js.native
-  sealed trait us extends js.Object
+  sealed trait us
+    extends openlayersLib.openlayersMod.controlNs.ScaleLineNs.Units
   
   @js.native
-  sealed trait `us-ft` extends js.Object
+  sealed trait `us-ft`
+    extends openlayersLib.openlayersMod.projNs.Units
   
   @js.native
-  sealed trait vector extends js.Object
+  sealed trait vector
+    extends openlayersLib.openlayersMod.olxNs.layerNs.VectorRenderType
+       with openlayersLib.openlayersMod.layerNs.VectorTileRenderType
   
   @js.native
-  sealed trait webgl extends js.Object
+  sealed trait webgl
+    extends openlayersLib.openlayersMod.RendererType
   
   @scala.inline
   def Circle: Circle = "Circle".asInstanceOf[Circle]

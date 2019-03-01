@@ -130,3 +130,38 @@ trait GoogleCloudMlV1__TrainingInput extends js.Object {
   var workerType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudMlV1__TrainingInput {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    hyperparameters: GoogleCloudMlV1__HyperparameterSpec = null,
+    jobDir: java.lang.String = null,
+    masterType: java.lang.String = null,
+    packageUris: js.Array[java.lang.String] = null,
+    parameterServerCount: java.lang.String = null,
+    parameterServerType: java.lang.String = null,
+    pythonModule: java.lang.String = null,
+    region: java.lang.String = null,
+    runtimeVersion: java.lang.String = null,
+    scaleTier: java.lang.String = null,
+    workerCount: java.lang.String = null,
+    workerType: java.lang.String = null
+  ): GoogleCloudMlV1__TrainingInput = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (hyperparameters != null) __obj.updateDynamic("hyperparameters")(hyperparameters)
+    if (jobDir != null) __obj.updateDynamic("jobDir")(jobDir)
+    if (masterType != null) __obj.updateDynamic("masterType")(masterType)
+    if (packageUris != null) __obj.updateDynamic("packageUris")(packageUris)
+    if (parameterServerCount != null) __obj.updateDynamic("parameterServerCount")(parameterServerCount)
+    if (parameterServerType != null) __obj.updateDynamic("parameterServerType")(parameterServerType)
+    if (pythonModule != null) __obj.updateDynamic("pythonModule")(pythonModule)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion)
+    if (scaleTier != null) __obj.updateDynamic("scaleTier")(scaleTier)
+    if (workerCount != null) __obj.updateDynamic("workerCount")(workerCount)
+    if (workerType != null) __obj.updateDynamic("workerType")(workerType)
+    __obj.asInstanceOf[GoogleCloudMlV1__TrainingInput]
+  }
+}
+

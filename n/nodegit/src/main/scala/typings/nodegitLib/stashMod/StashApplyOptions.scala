@@ -13,3 +13,22 @@ trait StashApplyOptions extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StashApplyOptions {
+  @scala.inline
+  def apply(
+    checkoutOptions: nodegitLib.checkoutDashOptionsMod.CheckoutOptions = null,
+    flags: scala.Int | scala.Double = null,
+    progressCb: js.Function = null,
+    progressPayload: js.Any = null,
+    version: scala.Int | scala.Double = null
+  ): StashApplyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (checkoutOptions != null) __obj.updateDynamic("checkoutOptions")(checkoutOptions)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (progressCb != null) __obj.updateDynamic("progressCb")(progressCb)
+    if (progressPayload != null) __obj.updateDynamic("progressPayload")(progressPayload)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StashApplyOptions]
+  }
+}
+

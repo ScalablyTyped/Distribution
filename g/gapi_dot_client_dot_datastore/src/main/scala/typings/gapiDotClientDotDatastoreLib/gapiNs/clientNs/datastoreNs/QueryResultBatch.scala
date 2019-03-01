@@ -35,3 +35,26 @@ trait QueryResultBatch extends js.Object {
   var snapshotVersion: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QueryResultBatch {
+  @scala.inline
+  def apply(
+    endCursor: java.lang.String = null,
+    entityResultType: java.lang.String = null,
+    entityResults: js.Array[EntityResult] = null,
+    moreResults: java.lang.String = null,
+    skippedCursor: java.lang.String = null,
+    skippedResults: scala.Int | scala.Double = null,
+    snapshotVersion: java.lang.String = null
+  ): QueryResultBatch = {
+    val __obj = js.Dynamic.literal()
+    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor)
+    if (entityResultType != null) __obj.updateDynamic("entityResultType")(entityResultType)
+    if (entityResults != null) __obj.updateDynamic("entityResults")(entityResults)
+    if (moreResults != null) __obj.updateDynamic("moreResults")(moreResults)
+    if (skippedCursor != null) __obj.updateDynamic("skippedCursor")(skippedCursor)
+    if (skippedResults != null) __obj.updateDynamic("skippedResults")(skippedResults.asInstanceOf[js.Any])
+    if (snapshotVersion != null) __obj.updateDynamic("snapshotVersion")(snapshotVersion)
+    __obj.asInstanceOf[QueryResultBatch]
+  }
+}
+

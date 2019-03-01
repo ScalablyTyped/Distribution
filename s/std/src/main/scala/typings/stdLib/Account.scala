@@ -16,3 +16,22 @@ trait Account extends js.Object {
   var rpDisplayName: java.lang.String
 }
 
+object Account {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    id: java.lang.String,
+    rpDisplayName: java.lang.String,
+    imageURL: java.lang.String = null,
+    name: java.lang.String = null
+  ): Account = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("rpDisplayName")(rpDisplayName)
+    if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Account]
+  }
+}
+

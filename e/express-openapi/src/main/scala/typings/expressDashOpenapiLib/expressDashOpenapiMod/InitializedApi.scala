@@ -9,3 +9,12 @@ trait InitializedApi extends js.Object {
   var apiDoc: expressDashOpenapiLib.expressDashOpenapiMod.OpenApiNs.ApiDefinition
 }
 
+object InitializedApi {
+  @scala.inline
+  def apply(apiDoc: expressDashOpenapiLib.expressDashOpenapiMod.OpenApiNs.ApiDefinition): InitializedApi = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiDoc")(apiDoc)
+    __obj.asInstanceOf[InitializedApi]
+  }
+}
+

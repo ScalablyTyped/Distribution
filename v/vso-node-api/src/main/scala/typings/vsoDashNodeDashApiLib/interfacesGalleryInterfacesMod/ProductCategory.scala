@@ -21,3 +21,20 @@ trait ProductCategory extends js.Object {
   var title: java.lang.String
 }
 
+object ProductCategory {
+  @scala.inline
+  def apply(
+    children: js.Array[ProductCategory],
+    hasChildren: scala.Boolean,
+    id: java.lang.String,
+    title: java.lang.String
+  ): ProductCategory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("hasChildren")(hasChildren)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ProductCategory]
+  }
+}
+

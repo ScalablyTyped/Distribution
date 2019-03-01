@@ -65,3 +65,48 @@ trait DbCreateOptions extends CommonOptions {
   var serializeFunctions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DbCreateOptions {
+  @scala.inline
+  def apply(
+    authSource: java.lang.String = null,
+    bufferMaxEntries: scala.Int | scala.Double = null,
+    forceServerObjectId: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreUndefined: js.UndefOr[scala.Boolean] = js.undefined,
+    j: js.UndefOr[scala.Boolean] = js.undefined,
+    native_parser: js.UndefOr[scala.Boolean] = js.undefined,
+    pkFactory: js.Object = null,
+    promiseLibrary: js.Object = null,
+    promoteBuffers: js.UndefOr[scala.Boolean] = js.undefined,
+    promoteLongs: js.UndefOr[scala.Boolean] = js.undefined,
+    promoteValues: js.Object = null,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    readConcern: ReadConcern = null,
+    readPreference: ReadPreference | java.lang.String = null,
+    serializeFunctions: js.UndefOr[scala.Boolean] = js.undefined,
+    session: ClientSession = null,
+    w: scala.Double | mongodbLib.mongodbLibStrings.majority | java.lang.String = null,
+    wtimeout: scala.Int | scala.Double = null
+  ): DbCreateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (authSource != null) __obj.updateDynamic("authSource")(authSource)
+    if (bufferMaxEntries != null) __obj.updateDynamic("bufferMaxEntries")(bufferMaxEntries.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceServerObjectId)) __obj.updateDynamic("forceServerObjectId")(forceServerObjectId)
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
+    if (!js.isUndefined(native_parser)) __obj.updateDynamic("native_parser")(native_parser)
+    if (pkFactory != null) __obj.updateDynamic("pkFactory")(pkFactory)
+    if (promiseLibrary != null) __obj.updateDynamic("promiseLibrary")(promiseLibrary)
+    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers)
+    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
+    if (promoteValues != null) __obj.updateDynamic("promoteValues")(promoteValues)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
+    if (session != null) __obj.updateDynamic("session")(session)
+    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
+    if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DbCreateOptions]
+  }
+}
+

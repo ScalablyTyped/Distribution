@@ -20,3 +20,18 @@ trait Option extends js.Object {
   var stream: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    declaration: scala.Boolean | xmlLib.Anon_Encoding = null,
+    indent: java.lang.String = null,
+    stream: js.UndefOr[scala.Boolean] = js.undefined
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream)
+    __obj.asInstanceOf[Option]
+  }
+}
+

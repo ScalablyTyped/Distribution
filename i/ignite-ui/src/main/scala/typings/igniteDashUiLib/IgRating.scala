@@ -145,3 +145,57 @@ trait IgRating
   var voteWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgRating {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igRating
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    cssVotes: js.Any = null,
+    focusable: js.UndefOr[scala.Boolean] = js.undefined,
+    hoverChange: HoverChangeEvent = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    precision: java.lang.String = null,
+    precisionZeroVote: scala.Int | scala.Double = null,
+    regional: java.lang.String | js.Object = null,
+    roundedDecimalPlaces: scala.Int | scala.Double = null,
+    swapDirection: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: java.lang.String = null,
+    validatorOptions: js.Any = null,
+    value: scala.Double | java.lang.String = null,
+    valueAsPercent: js.UndefOr[scala.Boolean] = js.undefined,
+    valueChange: ValueChangeEvent = null,
+    valueHover: scala.Double | java.lang.String = null,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined,
+    voteCount: scala.Int | scala.Double = null,
+    voteHeight: scala.Int | scala.Double = null,
+    voteWidth: scala.Int | scala.Double = null
+  ): IgRating = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cssVotes != null) __obj.updateDynamic("cssVotes")(cssVotes)
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
+    if (hoverChange != null) __obj.updateDynamic("hoverChange")(hoverChange)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (precision != null) __obj.updateDynamic("precision")(precision)
+    if (precisionZeroVote != null) __obj.updateDynamic("precisionZeroVote")(precisionZeroVote.asInstanceOf[js.Any])
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (roundedDecimalPlaces != null) __obj.updateDynamic("roundedDecimalPlaces")(roundedDecimalPlaces.asInstanceOf[js.Any])
+    if (!js.isUndefined(swapDirection)) __obj.updateDynamic("swapDirection")(swapDirection)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (!js.isUndefined(valueAsPercent)) __obj.updateDynamic("valueAsPercent")(valueAsPercent)
+    if (valueChange != null) __obj.updateDynamic("valueChange")(valueChange)
+    if (valueHover != null) __obj.updateDynamic("valueHover")(valueHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (voteCount != null) __obj.updateDynamic("voteCount")(voteCount.asInstanceOf[js.Any])
+    if (voteHeight != null) __obj.updateDynamic("voteHeight")(voteHeight.asInstanceOf[js.Any])
+    if (voteWidth != null) __obj.updateDynamic("voteWidth")(voteWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgRating]
+  }
+}
+

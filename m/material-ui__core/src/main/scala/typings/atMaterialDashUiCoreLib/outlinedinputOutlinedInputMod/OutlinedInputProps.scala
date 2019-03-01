@@ -15,3 +15,24 @@ import scala.scalajs.js.annotation._
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object OutlinedInputProps {
+  @scala.inline
+  def apply(
+    labelWidth: scala.Double,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[OutlinedInputClassKey]] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    notched: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): OutlinedInputProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("labelWidth")(labelWidth)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(notched)) __obj.updateDynamic("notched")(notched)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[OutlinedInputProps]
+  }
+}
+

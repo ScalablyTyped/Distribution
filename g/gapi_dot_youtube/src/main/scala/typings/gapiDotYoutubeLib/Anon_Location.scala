@@ -20,3 +20,14 @@ trait Anon_Location extends js.Object {
   var recordingDate: java.lang.String
 }
 
+object Anon_Location {
+  @scala.inline
+  def apply(location: Anon_Elevation, locationDescription: java.lang.String, recordingDate: java.lang.String): Anon_Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("locationDescription")(locationDescription)
+    __obj.updateDynamic("recordingDate")(recordingDate)
+    __obj.asInstanceOf[Anon_Location]
+  }
+}
+

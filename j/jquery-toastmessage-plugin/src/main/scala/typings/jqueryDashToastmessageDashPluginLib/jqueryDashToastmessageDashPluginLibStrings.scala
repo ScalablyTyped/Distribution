@@ -7,52 +7,66 @@ import scala.scalajs.js.annotation._
 
 object jqueryDashToastmessageDashPluginLibStrings {
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastType
   
   @js.native
-  sealed trait `middle-center` extends js.Object
+  sealed trait `middle-center`
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastPosition
   
   @js.native
-  sealed trait `middle-left` extends js.Object
+  sealed trait `middle-left`
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastPosition
   
   @js.native
-  sealed trait `middle-right` extends js.Object
+  sealed trait `middle-right`
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastPosition
   
   @js.native
-  sealed trait notice extends js.Object
+  sealed trait notice
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastType
   
   @js.native
   sealed trait removeToast extends js.Object
   
   @js.native
-  sealed trait showErrorToast extends js.Object
+  sealed trait showErrorToast
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ShowToastCommand
   
   @js.native
-  sealed trait showNoticeToast extends js.Object
+  sealed trait showNoticeToast
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ShowToastCommand
   
   @js.native
-  sealed trait showSuccessToast extends js.Object
+  sealed trait showSuccessToast
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ShowToastCommand
   
   @js.native
   sealed trait showToast extends js.Object
   
   @js.native
-  sealed trait showWarningToast extends js.Object
+  sealed trait showWarningToast
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ShowToastCommand
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastType
   
   @js.native
-  sealed trait `top-center` extends js.Object
+  sealed trait `top-center`
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastPosition
   
   @js.native
-  sealed trait `top-left` extends js.Object
+  sealed trait `top-left`
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastPosition
   
   @js.native
-  sealed trait `top-right` extends js.Object
+  sealed trait `top-right`
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastPosition
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends jqueryDashToastmessageDashPluginLib.JQueryToastmessageNs.ToastType
   
   @scala.inline
   def error: error = "error".asInstanceOf[error]

@@ -14,3 +14,12 @@ import scala.scalajs.js.annotation._
 trait IPermissions
   extends /* scope */ org.scalablytyped.runtime.StringDictionary[scala.Double]
 
+object IPermissions {
+  @scala.inline
+  def apply(StringDictionary: /* scope */ org.scalablytyped.runtime.StringDictionary[scala.Double] = null): IPermissions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IPermissions]
+  }
+}
+

@@ -9,3 +9,12 @@ trait ClientCredentialsGrantOptions extends js.Object {
   var audience: java.lang.String
 }
 
+object ClientCredentialsGrantOptions {
+  @scala.inline
+  def apply(audience: java.lang.String): ClientCredentialsGrantOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audience")(audience)
+    __obj.asInstanceOf[ClientCredentialsGrantOptions]
+  }
+}
+

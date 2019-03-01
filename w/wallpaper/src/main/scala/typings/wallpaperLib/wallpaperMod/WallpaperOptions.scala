@@ -11,3 +11,14 @@ trait WallpaperOptions extends js.Object {
   ] = js.undefined
 }
 
+object WallpaperOptions {
+  @scala.inline
+  def apply(
+    scale: wallpaperLib.wallpaperLibStrings.fill | wallpaperLib.wallpaperLibStrings.fit | wallpaperLib.wallpaperLibStrings.stretch | wallpaperLib.wallpaperLibStrings.center = null
+  ): WallpaperOptions = {
+    val __obj = js.Dynamic.literal()
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WallpaperOptions]
+  }
+}
+

@@ -31,3 +31,36 @@ trait Anon_Bytescurrentlyinthecache extends js.Object {
   var `unmodified pages evicted`: scala.Double
 }
 
+object Anon_Bytescurrentlyinthecache {
+  @scala.inline
+  def apply(
+    `bytes currently in the cache`: scala.Double,
+    `bytes read into cache`: scala.Double,
+    `bytes written from cache`: scala.Double,
+    `checkpoint blocked page eviction`: scala.Double,
+    `data source pages selected for eviction unable to be evicted`: scala.Double,
+    `hazard pointer blocked page eviction`: scala.Double,
+    `in-memory page passed criteria to be split`: scala.Double,
+    `in-memory page splits`: scala.Double,
+    `internal pages evicted`: scala.Double,
+    `internal pages split during eviction`: scala.Double,
+    `leaf pages split during eviction`: scala.Double,
+    `modified pages evicted`: scala.Double,
+    `overflow pages read into cache`: scala.Double,
+    `overflow values cached in memory`: scala.Double,
+    `page split during eviction deepened the tree`: scala.Double,
+    `page written requiring lookaside records`: scala.Double,
+    `pages read into cache`: scala.Double,
+    `pages read into cache requiring lookaside entries`: scala.Double,
+    `pages requested from the cache`: scala.Double,
+    `pages written from cache`: scala.Double,
+    `pages written requiring in-memory restoration`: scala.Double,
+    `tracked dirty bytes in the cache`: scala.Double,
+    `unmodified pages evicted`: scala.Double
+  ): Anon_Bytescurrentlyinthecache = {
+    val __obj = js.Dynamic.literal(`bytes currently in the cache` = `bytes currently in the cache`, `bytes read into cache` = `bytes read into cache`, `bytes written from cache` = `bytes written from cache`, `checkpoint blocked page eviction` = `checkpoint blocked page eviction`, `data source pages selected for eviction unable to be evicted` = `data source pages selected for eviction unable to be evicted`, `hazard pointer blocked page eviction` = `hazard pointer blocked page eviction`, `in-memory page passed criteria to be split` = `in-memory page passed criteria to be split`, `in-memory page splits` = `in-memory page splits`, `internal pages evicted` = `internal pages evicted`, `internal pages split during eviction` = `internal pages split during eviction`, `leaf pages split during eviction` = `leaf pages split during eviction`, `modified pages evicted` = `modified pages evicted`, `overflow pages read into cache` = `overflow pages read into cache`, `overflow values cached in memory` = `overflow values cached in memory`, `page split during eviction deepened the tree` = `page split during eviction deepened the tree`, `page written requiring lookaside records` = `page written requiring lookaside records`, `pages read into cache` = `pages read into cache`, `pages read into cache requiring lookaside entries` = `pages read into cache requiring lookaside entries`, `pages requested from the cache` = `pages requested from the cache`, `pages written from cache` = `pages written from cache`, `pages written requiring in-memory restoration` = `pages written requiring in-memory restoration`, `tracked dirty bytes in the cache` = `tracked dirty bytes in the cache`, `unmodified pages evicted` = `unmodified pages evicted`)
+  
+    __obj.asInstanceOf[Anon_Bytescurrentlyinthecache]
+  }
+}
+

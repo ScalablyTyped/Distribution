@@ -14,3 +14,18 @@ trait DownloadAccountResponse extends js.Object {
   var users: js.UndefOr[js.Array[UserInfo]] = js.undefined
 }
 
+object DownloadAccountResponse {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    users: js.Array[UserInfo] = null
+  ): DownloadAccountResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (users != null) __obj.updateDynamic("users")(users)
+    __obj.asInstanceOf[DownloadAccountResponse]
+  }
+}
+

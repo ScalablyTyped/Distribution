@@ -18,3 +18,16 @@ trait IAuth0ServiceProvider extends js.Object {
   def on(event: java.lang.String, handler: js.Function1[/* repeated */ js.Any, _]): scala.Unit
 }
 
+object IAuth0ServiceProvider {
+  @scala.inline
+  def apply(
+    init: js.Function1[IAuth0ClientOptions, scala.Unit],
+    on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, _], scala.Unit]
+  ): IAuth0ServiceProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[IAuth0ServiceProvider]
+  }
+}
+

@@ -74,21 +74,21 @@ class ChartCollection ()
     * @param seriesBy Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
     */
   def add(
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ java.lang.String,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ js.Any,
     sourceData: Range
   ): Chart = js.native
   def add(
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ java.lang.String,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ js.Any,
     sourceData: Range,
     seriesBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Auto
   ): Chart = js.native
   def add(
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ java.lang.String,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ js.Any,
     sourceData: Range,
     seriesBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Columns
   ): Chart = js.native
   def add(
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ java.lang.String,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ js.Any,
     sourceData: Range,
     seriesBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Rows
   ): Chart = js.native

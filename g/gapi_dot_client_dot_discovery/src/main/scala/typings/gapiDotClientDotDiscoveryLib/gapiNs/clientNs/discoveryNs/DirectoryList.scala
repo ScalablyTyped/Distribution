@@ -14,3 +14,18 @@ trait DirectoryList extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DirectoryList {
+  @scala.inline
+  def apply(
+    discoveryVersion: java.lang.String = null,
+    items: js.Array[gapiDotClientDotDiscoveryLib.Anon_Description] = null,
+    kind: java.lang.String = null
+  ): DirectoryList = {
+    val __obj = js.Dynamic.literal()
+    if (discoveryVersion != null) __obj.updateDynamic("discoveryVersion")(discoveryVersion)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[DirectoryList]
+  }
+}
+

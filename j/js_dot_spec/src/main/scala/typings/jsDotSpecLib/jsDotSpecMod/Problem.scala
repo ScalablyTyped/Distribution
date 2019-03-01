@@ -24,3 +24,20 @@ trait Problem extends js.Object {
   def predicate(value: js.Any): scala.Boolean
 }
 
+object Problem {
+  @scala.inline
+  def apply(
+    path: js.Array[java.lang.String],
+    predicate: js.Function1[js.Any, scala.Boolean],
+    value: js.Any,
+    via: js.Array[java.lang.String]
+  ): Problem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("predicate")(predicate)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("via")(via)
+    __obj.asInstanceOf[Problem]
+  }
+}
+

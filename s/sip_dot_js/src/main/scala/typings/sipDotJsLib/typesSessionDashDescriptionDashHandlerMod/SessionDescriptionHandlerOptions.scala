@@ -10,3 +10,13 @@ trait SessionDescriptionHandlerOptions extends js.Object {
   var modifiers: js.UndefOr[SessionDescriptionHandlerModifiers] = js.undefined
 }
 
+object SessionDescriptionHandlerOptions {
+  @scala.inline
+  def apply(constraints: sipDotJsLib.Anon_Audio = null, modifiers: SessionDescriptionHandlerModifiers = null): SessionDescriptionHandlerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
+    __obj.asInstanceOf[SessionDescriptionHandlerOptions]
+  }
+}
+

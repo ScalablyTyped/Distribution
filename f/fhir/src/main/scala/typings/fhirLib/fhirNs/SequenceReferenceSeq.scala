@@ -63,3 +63,50 @@ trait SequenceReferenceSeq extends BackboneElement {
   var windowStart: integer
 }
 
+object SequenceReferenceSeq {
+  @scala.inline
+  def apply(
+    windowEnd: integer,
+    windowStart: integer,
+    _fhir_comments: js.Array[Element] = null,
+    _genomeBuild: Element = null,
+    _id: Element = null,
+    _referenceSeqString: Element = null,
+    _strand: Element = null,
+    _windowEnd: Element = null,
+    _windowStart: Element = null,
+    chromosome: CodeableConcept = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    genomeBuild: java.lang.String = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null,
+    referenceSeqId: CodeableConcept = null,
+    referenceSeqPointer: Reference = null,
+    referenceSeqString: java.lang.String = null,
+    strand: js.UndefOr[integer] = js.undefined
+  ): SequenceReferenceSeq = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("windowEnd")(windowEnd)
+    __obj.updateDynamic("windowStart")(windowStart)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_genomeBuild != null) __obj.updateDynamic("_genomeBuild")(_genomeBuild)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_referenceSeqString != null) __obj.updateDynamic("_referenceSeqString")(_referenceSeqString)
+    if (_strand != null) __obj.updateDynamic("_strand")(_strand)
+    if (_windowEnd != null) __obj.updateDynamic("_windowEnd")(_windowEnd)
+    if (_windowStart != null) __obj.updateDynamic("_windowStart")(_windowStart)
+    if (chromosome != null) __obj.updateDynamic("chromosome")(chromosome)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (genomeBuild != null) __obj.updateDynamic("genomeBuild")(genomeBuild)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (referenceSeqId != null) __obj.updateDynamic("referenceSeqId")(referenceSeqId)
+    if (referenceSeqPointer != null) __obj.updateDynamic("referenceSeqPointer")(referenceSeqPointer)
+    if (referenceSeqString != null) __obj.updateDynamic("referenceSeqString")(referenceSeqString)
+    if (!js.isUndefined(strand)) __obj.updateDynamic("strand")(strand)
+    __obj.asInstanceOf[SequenceReferenceSeq]
+  }
+}
+

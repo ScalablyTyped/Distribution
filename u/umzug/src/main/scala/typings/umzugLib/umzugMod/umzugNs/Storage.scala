@@ -27,3 +27,18 @@ trait Storage extends js.Object {
   def unlogMigration(migrationName: java.lang.String): js.Promise[scala.Unit]
 }
 
+object Storage {
+  @scala.inline
+  def apply(
+    executed: js.Function0[js.Promise[js.Array[nodeLib.String]]],
+    logMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    unlogMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]]
+  ): Storage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("executed")(executed)
+    __obj.updateDynamic("logMigration")(logMigration)
+    __obj.updateDynamic("unlogMigration")(unlogMigration)
+    __obj.asInstanceOf[Storage]
+  }
+}
+

@@ -23,3 +23,18 @@ trait Location extends js.Object {
   var scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    lineNumber: scala.Double,
+    scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId,
+    columnNumber: scala.Int | scala.Double = null
+  ): Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lineNumber")(lineNumber)
+    __obj.updateDynamic("scriptId")(scriptId)
+    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Location]
+  }
+}
+

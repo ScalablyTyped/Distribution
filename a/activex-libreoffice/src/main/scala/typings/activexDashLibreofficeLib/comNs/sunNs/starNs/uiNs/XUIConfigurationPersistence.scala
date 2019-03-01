@@ -44,3 +44,28 @@ trait XUIConfigurationPersistence
   def storeToStorage(Storage: activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage): scala.Unit
 }
 
+object XUIConfigurationPersistence {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    isModified: js.Function0[scala.Boolean],
+    isReadOnly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    reload: js.Function0[scala.Unit],
+    store: js.Function0[scala.Unit],
+    storeToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
+  ): XUIConfigurationPersistence = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("isModified")(isModified)
+    __obj.updateDynamic("isReadOnly")(isReadOnly)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("reload")(reload)
+    __obj.updateDynamic("store")(store)
+    __obj.updateDynamic("storeToStorage")(storeToStorage)
+    __obj.asInstanceOf[XUIConfigurationPersistence]
+  }
+}
+

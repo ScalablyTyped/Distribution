@@ -30,3 +30,28 @@ trait Column extends js.Object {
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Column {
+  @scala.inline
+  def apply(
+    alignRight: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    key: java.lang.String = null,
+    label: java.lang.String = null,
+    render: js.Function2[/* value */ js.Any, /* row */ js.Any, _] = null,
+    sortable: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tooltip: java.lang.String = null
+  ): Column = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alignRight)) __obj.updateDynamic("alignRight")(alignRight)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[Column]
+  }
+}
+

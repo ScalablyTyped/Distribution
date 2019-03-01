@@ -32,3 +32,36 @@ trait BackupRun extends js.Object {
   var windowStartTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BackupRun {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    endTime: java.lang.String = null,
+    enqueuedTime: java.lang.String = null,
+    error: OperationError = null,
+    id: java.lang.String = null,
+    instance: java.lang.String = null,
+    kind: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    startTime: java.lang.String = null,
+    status: java.lang.String = null,
+    `type`: java.lang.String = null,
+    windowStartTime: java.lang.String = null
+  ): BackupRun = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (enqueuedTime != null) __obj.updateDynamic("enqueuedTime")(enqueuedTime)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (windowStartTime != null) __obj.updateDynamic("windowStartTime")(windowStartTime)
+    __obj.asInstanceOf[BackupRun]
+  }
+}
+

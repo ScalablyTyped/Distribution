@@ -9,3 +9,12 @@ trait PluginCleanupListOfValues extends js.Object {
   var cleanupListOfValues: scala.Boolean | js.Object
 }
 
+object PluginCleanupListOfValues {
+  @scala.inline
+  def apply(cleanupListOfValues: scala.Boolean | js.Object): PluginCleanupListOfValues = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cleanupListOfValues")(cleanupListOfValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PluginCleanupListOfValues]
+  }
+}
+

@@ -13,3 +13,22 @@ trait IFileUpdateRequest extends js.Object {
   def updateLocalFile(value: winrtLib.WindowsNs.StorageNs.IStorageFile): scala.Unit
 }
 
+object IFileUpdateRequest {
+  @scala.inline
+  def apply(
+    contentId: java.lang.String,
+    file: winrtLib.WindowsNs.StorageNs.StorageFile,
+    getDeferral: js.Function0[FileUpdateRequestDeferral],
+    status: FileUpdateStatus,
+    updateLocalFile: js.Function1[winrtLib.WindowsNs.StorageNs.IStorageFile, scala.Unit]
+  ): IFileUpdateRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentId")(contentId)
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("getDeferral")(getDeferral)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("updateLocalFile")(updateLocalFile)
+    __obj.asInstanceOf[IFileUpdateRequest]
+  }
+}
+

@@ -22,3 +22,30 @@ trait XBitmap
   def getSize(): Size
 }
 
+object XBitmap {
+  @scala.inline
+  def apply(
+    DIB: activexDashInteropLib.SafeArray[scala.Double],
+    MaskDIB: activexDashInteropLib.SafeArray[scala.Double],
+    Size: Size,
+    acquire: js.Function0[scala.Unit],
+    getDIB: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getMaskDIB: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getSize: js.Function0[Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBitmap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DIB")(DIB)
+    __obj.updateDynamic("MaskDIB")(MaskDIB)
+    __obj.updateDynamic("Size")(Size)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDIB")(getDIB)
+    __obj.updateDynamic("getMaskDIB")(getMaskDIB)
+    __obj.updateDynamic("getSize")(getSize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XBitmap]
+  }
+}
+

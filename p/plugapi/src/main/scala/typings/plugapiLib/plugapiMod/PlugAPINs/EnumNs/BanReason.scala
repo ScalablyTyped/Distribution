@@ -13,3 +13,22 @@ trait BanReason extends js.Object {
   var VERBAL_ABUSE: scala.Double
 }
 
+object BanReason {
+  @scala.inline
+  def apply(
+    INAPPROPRIATE_GENRE: scala.Double,
+    NEGATIVE_ATTITUDE: scala.Double,
+    OFFENSIVE_MEDIA: scala.Double,
+    SPAMMING_TROLLING: scala.Double,
+    VERBAL_ABUSE: scala.Double
+  ): BanReason = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("INAPPROPRIATE_GENRE")(INAPPROPRIATE_GENRE)
+    __obj.updateDynamic("NEGATIVE_ATTITUDE")(NEGATIVE_ATTITUDE)
+    __obj.updateDynamic("OFFENSIVE_MEDIA")(OFFENSIVE_MEDIA)
+    __obj.updateDynamic("SPAMMING_TROLLING")(SPAMMING_TROLLING)
+    __obj.updateDynamic("VERBAL_ABUSE")(VERBAL_ABUSE)
+    __obj.asInstanceOf[BanReason]
+  }
+}
+

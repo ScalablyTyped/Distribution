@@ -10,3 +10,12 @@ trait StyleCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[StyleData]] = js.undefined
 }
 
+object StyleCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[StyleData] = null): StyleCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[StyleCollectionUpdateData]
+  }
+}
+

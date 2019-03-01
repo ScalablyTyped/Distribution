@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   var autoPaginate: atGoogleDashCloudTasksLib.atGoogleDashCloudTasksLibNumbers.`false`
 }
 
+object CallOptionsWithPagination {
+  @scala.inline
+  def apply(autoPaginate: atGoogleDashCloudTasksLib.atGoogleDashCloudTasksLibNumbers.`false`): CallOptionsWithPagination = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoPaginate")(autoPaginate)
+    __obj.asInstanceOf[CallOptionsWithPagination]
+  }
+}
+

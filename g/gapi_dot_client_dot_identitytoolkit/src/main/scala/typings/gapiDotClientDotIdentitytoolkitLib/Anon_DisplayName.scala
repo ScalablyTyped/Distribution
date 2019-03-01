@@ -19,3 +19,20 @@ trait Anon_DisplayName extends js.Object {
   var providerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DisplayName {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    federatedId: java.lang.String = null,
+    photoUrl: java.lang.String = null,
+    providerId: java.lang.String = null
+  ): Anon_DisplayName = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (federatedId != null) __obj.updateDynamic("federatedId")(federatedId)
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
+    if (providerId != null) __obj.updateDynamic("providerId")(providerId)
+    __obj.asInstanceOf[Anon_DisplayName]
+  }
+}
+

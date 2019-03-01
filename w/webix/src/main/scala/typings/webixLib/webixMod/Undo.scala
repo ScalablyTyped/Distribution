@@ -11,3 +11,18 @@ trait Undo extends js.Object {
   def undo(id: java.lang.String): scala.Unit
 }
 
+object Undo {
+  @scala.inline
+  def apply(
+    ignoreUndo: js.Function1[webixLib.WebixCallback, scala.Unit],
+    removeUndo: js.Function1[java.lang.String, scala.Unit],
+    undo: js.Function1[java.lang.String, scala.Unit]
+  ): Undo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ignoreUndo")(ignoreUndo)
+    __obj.updateDynamic("removeUndo")(removeUndo)
+    __obj.updateDynamic("undo")(undo)
+    __obj.asInstanceOf[Undo]
+  }
+}
+

@@ -13,3 +13,22 @@ trait BaseContollerOptions extends js.Object {
   var resource: Resource
 }
 
+object BaseContollerOptions {
+  @scala.inline
+  def apply(
+    app: expressLib.expressMod.eNs.Express,
+    endpoint: java.lang.String,
+    include: js.Array[epilogueLib.Anon_Model | java.lang.String],
+    model: js.Any,
+    resource: Resource
+  ): BaseContollerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app")(app)
+    __obj.updateDynamic("endpoint")(endpoint)
+    __obj.updateDynamic("include")(include)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[BaseContollerOptions]
+  }
+}
+

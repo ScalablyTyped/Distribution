@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object graphqlLibStrings {
   @js.native
-  sealed trait `!` extends js.Object
+  sealed trait `!`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `&` extends js.Object
+  sealed trait `&`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `(` extends js.Object
+  sealed trait `(`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `)` extends js.Object
+  sealed trait `)`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `:` extends js.Object
+  sealed trait `:`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `<EOF>` extends js.Object
+  sealed trait `<EOF>`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `<SOF>` extends js.Object
+  sealed trait `<SOF>`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait `=`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `@` extends js.Object
+  sealed trait `@`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait ARGUMENT_DEFINITION extends js.Object
+  sealed trait ARGUMENT_DEFINITION
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
   sealed trait ARG_CHANGED_KIND extends js.Object
@@ -46,16 +56,20 @@ object graphqlLibStrings {
   sealed trait ARG_REMOVED extends js.Object
   
   @js.native
-  sealed trait Argument extends js.Object
+  sealed trait Argument
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait BlockString extends js.Object
+  sealed trait BlockString
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait BooleanValue extends js.Object
+  sealed trait BooleanValue
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait Comment extends js.Object
+  sealed trait Comment
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
   sealed trait DIRECTIVE_ARG_REMOVED extends js.Object
@@ -67,88 +81,113 @@ object graphqlLibStrings {
   sealed trait DIRECTIVE_REMOVED extends js.Object
   
   @js.native
-  sealed trait DOLLAR extends js.Object
+  sealed trait DOLLAR
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait DOTDOTDOT extends js.Object
+  sealed trait DOTDOTDOT
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait Directive extends js.Object
+  sealed trait Directive
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait DirectiveDefinition extends js.Object
+  sealed trait DirectiveDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait Document extends js.Object
+  sealed trait Document
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait ENUM extends js.Object
+  sealed trait ENUM
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait ENUM_VALUE extends js.Object
+  sealed trait ENUM_VALUE
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
   sealed trait EnterLeaveVisitor extends js.Object
   
   @js.native
-  sealed trait EnumTypeDefinition extends js.Object
+  sealed trait EnumTypeDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait EnumTypeExtension extends js.Object
+  sealed trait EnumTypeExtension
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait EnumValue extends js.Object
+  sealed trait EnumValue
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait EnumValueDefinition extends js.Object
+  sealed trait EnumValueDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait FIELD extends js.Object
+  sealed trait FIELD
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
   sealed trait FIELD_CHANGED_KIND extends js.Object
   
   @js.native
-  sealed trait FIELD_DEFINITION extends js.Object
+  sealed trait FIELD_DEFINITION
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
   sealed trait FIELD_REMOVED extends js.Object
   
   @js.native
-  sealed trait FRAGMENT_DEFINITION extends js.Object
+  sealed trait FRAGMENT_DEFINITION
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait FRAGMENT_SPREAD extends js.Object
+  sealed trait FRAGMENT_SPREAD
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait Field extends js.Object
+  sealed trait Field
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait FieldDefinition extends js.Object
+  sealed trait FieldDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait Float extends js.Object
+  sealed trait Float
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait FloatValue extends js.Object
+  sealed trait FloatValue
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait FragmentDefinition extends js.Object
+  sealed trait FragmentDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait FragmentSpread extends js.Object
+  sealed trait FragmentSpread
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait INLINE_FRAGMENT extends js.Object
+  sealed trait INLINE_FRAGMENT
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait INPUT_FIELD_DEFINITION extends js.Object
+  sealed trait INPUT_FIELD_DEFINITION
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait INPUT_OBJECT extends js.Object
+  sealed trait INPUT_OBJECT
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait INTERFACE extends js.Object
+  sealed trait INTERFACE
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
   sealed trait INTERFACE_ADDED_TO_OBJECT extends js.Object
@@ -157,61 +196,78 @@ object graphqlLibStrings {
   sealed trait INTERFACE_REMOVED_FROM_OBJECT extends js.Object
   
   @js.native
-  sealed trait InlineFragment extends js.Object
+  sealed trait InlineFragment
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait InputObjectTypeDefinition extends js.Object
+  sealed trait InputObjectTypeDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait InputObjectTypeExtension extends js.Object
+  sealed trait InputObjectTypeExtension
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait InputValueDefinition extends js.Object
+  sealed trait InputValueDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait Int extends js.Object
+  sealed trait Int
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait IntValue extends js.Object
+  sealed trait IntValue
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait InterfaceTypeDefinition extends js.Object
+  sealed trait InterfaceTypeDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait InterfaceTypeExtension extends js.Object
+  sealed trait InterfaceTypeExtension
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
   sealed trait LIST extends js.Object
   
   @js.native
-  sealed trait ListType extends js.Object
+  sealed trait ListType
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait ListValue extends js.Object
+  sealed trait ListValue
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait MUTATION extends js.Object
+  sealed trait MUTATION
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
   sealed trait NON_NULL extends js.Object
   
   @js.native
-  sealed trait Name extends js.Object
+  sealed trait Name
+    extends graphqlLib.languageKindsMod.KindEnum
+       with graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait NamedType extends js.Object
+  sealed trait NamedType
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
   sealed trait `No longer supported` extends js.Object
   
   @js.native
-  sealed trait NonNullType extends js.Object
+  sealed trait NonNullType
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait NullValue extends js.Object
+  sealed trait NullValue
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait OBJECT extends js.Object
+  sealed trait OBJECT
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
   sealed trait OPTIONAL_ARG_ADDED extends js.Object
@@ -220,25 +276,32 @@ object graphqlLibStrings {
   sealed trait OPTIONAL_INPUT_FIELD_ADDED extends js.Object
   
   @js.native
-  sealed trait ObjectField extends js.Object
+  sealed trait ObjectField
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait ObjectTypeDefinition extends js.Object
+  sealed trait ObjectTypeDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait ObjectTypeExtension extends js.Object
+  sealed trait ObjectTypeExtension
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait ObjectValue extends js.Object
+  sealed trait ObjectValue
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait OperationDefinition extends js.Object
+  sealed trait OperationDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait OperationTypeDefinition extends js.Object
+  sealed trait OperationTypeDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait QUERY extends js.Object
+  sealed trait QUERY
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
   sealed trait REQUIRED_ARG_ADDED extends js.Object
@@ -250,37 +313,47 @@ object graphqlLibStrings {
   sealed trait REQUIRED_INPUT_FIELD_ADDED extends js.Object
   
   @js.native
-  sealed trait SCALAR extends js.Object
+  sealed trait SCALAR
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait SCHEMA extends js.Object
+  sealed trait SCHEMA
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait SUBSCRIPTION extends js.Object
+  sealed trait SUBSCRIPTION
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait ScalarTypeDefinition extends js.Object
+  sealed trait ScalarTypeDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait ScalarTypeExtension extends js.Object
+  sealed trait ScalarTypeExtension
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait SchemaDefinition extends js.Object
+  sealed trait SchemaDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait SchemaExtension extends js.Object
+  sealed trait SchemaExtension
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait SelectionSet extends js.Object
+  sealed trait SelectionSet
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
   sealed trait ShapeMapVisitor extends js.Object
   
   @js.native
-  sealed trait String extends js.Object
+  sealed trait String
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait StringValue extends js.Object
+  sealed trait StringValue
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
   sealed trait TYPE_ADDED_TO_UNION extends js.Object
@@ -295,13 +368,16 @@ object graphqlLibStrings {
   sealed trait TYPE_REMOVED_FROM_UNION extends js.Object
   
   @js.native
-  sealed trait UNION extends js.Object
+  sealed trait UNION
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait UnionTypeDefinition extends js.Object
+  sealed trait UnionTypeDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait UnionTypeExtension extends js.Object
+  sealed trait UnionTypeExtension
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
   sealed trait VALUE_ADDED_TO_ENUM extends js.Object
@@ -310,40 +386,51 @@ object graphqlLibStrings {
   sealed trait VALUE_REMOVED_FROM_ENUM extends js.Object
   
   @js.native
-  sealed trait VARIABLE_DEFINITION extends js.Object
+  sealed trait VARIABLE_DEFINITION
+    extends graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum
   
   @js.native
-  sealed trait Variable extends js.Object
+  sealed trait Variable
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
-  sealed trait VariableDefinition extends js.Object
+  sealed trait VariableDefinition
+    extends graphqlLib.languageKindsMod.KindEnum
   
   @js.native
   sealed trait VisitorKeyMap extends js.Object
   
   @js.native
-  sealed trait `[` extends js.Object
+  sealed trait `[`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `]` extends js.Object
+  sealed trait `]`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait mutation extends js.Object
+  sealed trait mutation
+    extends graphqlLib.languageAstMod.OperationTypeNode
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait query
+    extends graphqlLib.languageAstMod.OperationTypeNode
   
   @js.native
-  sealed trait subscription extends js.Object
+  sealed trait subscription
+    extends graphqlLib.languageAstMod.OperationTypeNode
   
   @js.native
-  sealed trait `{` extends js.Object
+  sealed trait `{`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `|` extends js.Object
+  sealed trait `|`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @js.native
-  sealed trait `}` extends js.Object
+  sealed trait `}`
+    extends graphqlLib.languageLexerMod.TokenKindEnum
   
   @scala.inline
   def `!`: `!` = "!".asInstanceOf[`!`]

@@ -17,3 +17,26 @@ trait ISignal
   def add(listener: js.Function): signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot
 }
 
+object ISignal {
+  @scala.inline
+  def apply(
+    add: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    addOnce: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    dispatch: js.Function1[/* repeated */ js.Any, scala.Unit],
+    numListeners: scala.Double,
+    remove: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    removeAll: js.Function0[scala.Unit],
+    valueClasses: js.Array[_]
+  ): ISignal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("addOnce")(addOnce)
+    __obj.updateDynamic("dispatch")(dispatch)
+    __obj.updateDynamic("numListeners")(numListeners)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removeAll")(removeAll)
+    __obj.updateDynamic("valueClasses")(valueClasses)
+    __obj.asInstanceOf[ISignal]
+  }
+}
+

@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object decimalDotJsLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Rounding
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Rounding
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Rounding
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Rounding
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Rounding
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Rounding
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Rounding
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Rounding
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Rounding
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends decimalDotJsLib.decimalDotJsMod.DecimalNs.Modulo
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

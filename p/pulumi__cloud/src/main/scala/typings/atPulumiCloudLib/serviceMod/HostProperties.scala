@@ -14,3 +14,12 @@ trait HostProperties extends js.Object {
   var os: js.UndefOr[HostOperatingSystem] = js.undefined
 }
 
+object HostProperties {
+  @scala.inline
+  def apply(os: HostOperatingSystem = null): HostProperties = {
+    val __obj = js.Dynamic.literal()
+    if (os != null) __obj.updateDynamic("os")(os)
+    __obj.asInstanceOf[HostProperties]
+  }
+}
+

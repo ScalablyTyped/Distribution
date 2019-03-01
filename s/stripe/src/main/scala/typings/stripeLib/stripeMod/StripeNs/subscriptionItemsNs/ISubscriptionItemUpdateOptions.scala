@@ -26,3 +26,26 @@ trait ISubscriptionItemUpdateOptions
   var quantity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ISubscriptionItemUpdateOptions {
+  @scala.inline
+  def apply(
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    plan: java.lang.String = null,
+    prorate: js.UndefOr[scala.Boolean] = js.undefined,
+    proration_date: scala.Int | scala.Double = null,
+    quantity: scala.Int | scala.Double = null
+  ): ISubscriptionItemUpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate)
+    if (proration_date != null) __obj.updateDynamic("proration_date")(proration_date.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISubscriptionItemUpdateOptions]
+  }
+}
+

@@ -107,3 +107,55 @@ trait IgVideoPlayerLocale
   var volume: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgVideoPlayerLocale {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgVideoPlayerLocale
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    adMessage: js.UndefOr[scala.Boolean] = js.undefined,
+    adMessageLong: js.UndefOr[scala.Boolean] = js.undefined,
+    adMessageNoDuration: js.UndefOr[scala.Boolean] = js.undefined,
+    adNewWindowTip: js.UndefOr[scala.Boolean] = js.undefined,
+    buffering: js.UndefOr[scala.Boolean] = js.undefined,
+    enterFullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    exitFullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    live: js.UndefOr[scala.Boolean] = js.undefined,
+    liveStream: js.UndefOr[scala.Boolean] = js.undefined,
+    paused: js.UndefOr[scala.Boolean] = js.undefined,
+    play: js.UndefOr[scala.Boolean] = js.undefined,
+    playing: js.UndefOr[scala.Boolean] = js.undefined,
+    progressLabelLongFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    progressLabelShortFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    relatedVideos: js.UndefOr[scala.Boolean] = js.undefined,
+    replayButton: js.UndefOr[scala.Boolean] = js.undefined,
+    replayTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    skipTo: js.UndefOr[scala.Boolean] = js.undefined,
+    volume: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgVideoPlayerLocale = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(adMessage)) __obj.updateDynamic("adMessage")(adMessage)
+    if (!js.isUndefined(adMessageLong)) __obj.updateDynamic("adMessageLong")(adMessageLong)
+    if (!js.isUndefined(adMessageNoDuration)) __obj.updateDynamic("adMessageNoDuration")(adMessageNoDuration)
+    if (!js.isUndefined(adNewWindowTip)) __obj.updateDynamic("adNewWindowTip")(adNewWindowTip)
+    if (!js.isUndefined(buffering)) __obj.updateDynamic("buffering")(buffering)
+    if (!js.isUndefined(enterFullscreen)) __obj.updateDynamic("enterFullscreen")(enterFullscreen)
+    if (!js.isUndefined(exitFullscreen)) __obj.updateDynamic("exitFullscreen")(exitFullscreen)
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live)
+    if (!js.isUndefined(liveStream)) __obj.updateDynamic("liveStream")(liveStream)
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused)
+    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play)
+    if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing)
+    if (!js.isUndefined(progressLabelLongFormat)) __obj.updateDynamic("progressLabelLongFormat")(progressLabelLongFormat)
+    if (!js.isUndefined(progressLabelShortFormat)) __obj.updateDynamic("progressLabelShortFormat")(progressLabelShortFormat)
+    if (!js.isUndefined(relatedVideos)) __obj.updateDynamic("relatedVideos")(relatedVideos)
+    if (!js.isUndefined(replayButton)) __obj.updateDynamic("replayButton")(replayButton)
+    if (!js.isUndefined(replayTooltip)) __obj.updateDynamic("replayTooltip")(replayTooltip)
+    if (!js.isUndefined(skipTo)) __obj.updateDynamic("skipTo")(skipTo)
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume)
+    __obj.asInstanceOf[IgVideoPlayerLocale]
+  }
+}
+

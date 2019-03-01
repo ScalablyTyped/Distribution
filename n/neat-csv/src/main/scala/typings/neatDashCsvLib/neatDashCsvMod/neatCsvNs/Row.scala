@@ -9,3 +9,12 @@ import scala.scalajs.js.annotation._
 trait Row
   extends /* header */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 
+object Row {
+  @scala.inline
+  def apply(StringDictionary: /* header */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null): Row = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Row]
+  }
+}
+

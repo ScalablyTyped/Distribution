@@ -22,3 +22,16 @@ trait ConstructorOptions[T] extends js.Object {
   var priority: js.UndefOr[js.Function2[/* a */ T, /* b */ T, scala.Double]] = js.undefined
 }
 
+object ConstructorOptions {
+  @scala.inline
+  def apply[T](
+    compare: js.Function2[/* a */ T, /* b */ T, scala.Double] = null,
+    priority: js.Function2[/* a */ T, /* b */ T, scala.Double] = null
+  ): ConstructorOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (compare != null) __obj.updateDynamic("compare")(compare)
+    if (priority != null) __obj.updateDynamic("priority")(priority)
+    __obj.asInstanceOf[ConstructorOptions[T]]
+  }
+}
+

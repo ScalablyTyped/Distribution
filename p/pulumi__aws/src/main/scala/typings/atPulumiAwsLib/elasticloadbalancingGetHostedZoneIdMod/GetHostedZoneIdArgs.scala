@@ -13,3 +13,12 @@ trait GetHostedZoneIdArgs extends js.Object {
   val region: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetHostedZoneIdArgs {
+  @scala.inline
+  def apply(region: java.lang.String = null): GetHostedZoneIdArgs = {
+    val __obj = js.Dynamic.literal()
+    if (region != null) __obj.updateDynamic("region")(region)
+    __obj.asInstanceOf[GetHostedZoneIdArgs]
+  }
+}
+

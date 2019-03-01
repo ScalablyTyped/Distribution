@@ -10,3 +10,13 @@ trait EqjsKeyValuePair extends js.Object {
   var value: scala.Double
 }
 
+object EqjsKeyValuePair {
+  @scala.inline
+  def apply(key: java.lang.String, value: scala.Double): EqjsKeyValuePair = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[EqjsKeyValuePair]
+  }
+}
+

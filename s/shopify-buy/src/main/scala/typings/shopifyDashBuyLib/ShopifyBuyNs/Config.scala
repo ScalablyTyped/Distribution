@@ -10,3 +10,13 @@ trait Config extends js.Object {
   var storefrontAccessToken: java.lang.String
 }
 
+object Config {
+  @scala.inline
+  def apply(domain: java.lang.String, storefrontAccessToken: java.lang.String): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("storefrontAccessToken")(storefrontAccessToken)
+    __obj.asInstanceOf[Config]
+  }
+}
+

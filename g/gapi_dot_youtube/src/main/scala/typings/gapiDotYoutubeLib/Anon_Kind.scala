@@ -16,3 +16,13 @@ trait Anon_Kind extends js.Object {
   var videoId: java.lang.String
 }
 
+object Anon_Kind {
+  @scala.inline
+  def apply(kind: java.lang.String, videoId: java.lang.String): Anon_Kind = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("videoId")(videoId)
+    __obj.asInstanceOf[Anon_Kind]
+  }
+}
+

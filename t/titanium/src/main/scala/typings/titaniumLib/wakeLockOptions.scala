@@ -19,3 +19,13 @@ trait wakeLockOptions extends js.Object {
   var time: js.UndefOr[scala.Double] = js.undefined
 }
 
+object wakeLockOptions {
+  @scala.inline
+  def apply(flags: scala.Int | scala.Double = null, time: scala.Int | scala.Double = null): wakeLockOptions = {
+    val __obj = js.Dynamic.literal()
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    __obj.asInstanceOf[wakeLockOptions]
+  }
+}
+

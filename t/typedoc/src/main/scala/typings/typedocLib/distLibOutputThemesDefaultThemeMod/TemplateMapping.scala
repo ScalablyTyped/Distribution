@@ -12,3 +12,20 @@ trait TemplateMapping extends js.Object {
   var template: java.lang.String
 }
 
+object TemplateMapping {
+  @scala.inline
+  def apply(
+    directory: java.lang.String,
+    isLeaf: scala.Boolean,
+    kind: js.Array[typedocLib.distLibModelsReflectionsAbstractMod.ReflectionKind],
+    template: java.lang.String
+  ): TemplateMapping = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("directory")(directory)
+    __obj.updateDynamic("isLeaf")(isLeaf)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[TemplateMapping]
+  }
+}
+

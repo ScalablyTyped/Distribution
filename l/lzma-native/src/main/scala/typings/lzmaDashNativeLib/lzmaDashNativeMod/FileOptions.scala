@@ -15,3 +15,23 @@ trait FileOptions extends js.Object {
   ): scala.Unit
 }
 
+object FileOptions {
+  @scala.inline
+  def apply(
+    fileSize: scala.Double,
+    read: js.Function3[
+      scala.Double, 
+      scala.Double, 
+      js.Function2[/* err */ js.Any, /* buffer */ nodeLib.Buffer, scala.Unit], 
+      scala.Unit
+    ],
+    memlimit: scala.Int | scala.Double = null
+  ): FileOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileSize")(fileSize)
+    __obj.updateDynamic("read")(read)
+    if (memlimit != null) __obj.updateDynamic("memlimit")(memlimit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileOptions]
+  }
+}
+

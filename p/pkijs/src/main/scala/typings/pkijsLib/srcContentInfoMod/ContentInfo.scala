@@ -13,3 +13,22 @@ trait ContentInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object ContentInfo {
+  @scala.inline
+  def apply(
+    content: js.Any,
+    contentType: java.lang.String,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): ContentInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.asInstanceOf[ContentInfo]
+  }
+}
+

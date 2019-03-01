@@ -17,3 +17,13 @@ trait InitOptions extends js.Object {
   var container: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InitOptions {
+  @scala.inline
+  def apply(APIUrl: java.lang.String = null, container: java.lang.String = null): InitOptions = {
+    val __obj = js.Dynamic.literal()
+    if (APIUrl != null) __obj.updateDynamic("APIUrl")(APIUrl)
+    if (container != null) __obj.updateDynamic("container")(container)
+    __obj.asInstanceOf[InitOptions]
+  }
+}
+

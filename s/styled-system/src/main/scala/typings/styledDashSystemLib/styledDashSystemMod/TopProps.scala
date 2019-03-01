@@ -15,3 +15,12 @@ trait TopProps[TLength] extends js.Object {
   var top: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.TopProperty[TLength]]] = js.undefined
 }
 
+object TopProps {
+  @scala.inline
+  def apply[TLength](top: ResponsiveValue[csstypeLib.csstypeMod.TopProperty[TLength]] = null): TopProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TopProps[TLength]]
+  }
+}
+

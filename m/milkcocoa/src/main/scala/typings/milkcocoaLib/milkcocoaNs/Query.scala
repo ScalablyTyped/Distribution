@@ -13,3 +13,20 @@ trait Query extends js.Object {
   def sort(mode: java.lang.String): Query
 }
 
+object Query {
+  @scala.inline
+  def apply(
+    done: js.Function1[js.Function1[/* data */ js.Any, scala.Unit], scala.Unit],
+    limit: js.Function1[scala.Double, Query],
+    skip: js.Function1[scala.Double, Query],
+    sort: js.Function1[java.lang.String, Query]
+  ): Query = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("done")(done)
+    __obj.updateDynamic("limit")(limit)
+    __obj.updateDynamic("skip")(skip)
+    __obj.updateDynamic("sort")(sort)
+    __obj.asInstanceOf[Query]
+  }
+}
+

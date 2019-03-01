@@ -48,3 +48,24 @@ trait TestSuiteOverview extends js.Object {
   var xmlSource: js.UndefOr[FileReference] = js.undefined
 }
 
+object TestSuiteOverview {
+  @scala.inline
+  def apply(
+    errorCount: scala.Int | scala.Double = null,
+    failureCount: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    skippedCount: scala.Int | scala.Double = null,
+    totalCount: scala.Int | scala.Double = null,
+    xmlSource: FileReference = null
+  ): TestSuiteOverview = {
+    val __obj = js.Dynamic.literal()
+    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount.asInstanceOf[js.Any])
+    if (failureCount != null) __obj.updateDynamic("failureCount")(failureCount.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (skippedCount != null) __obj.updateDynamic("skippedCount")(skippedCount.asInstanceOf[js.Any])
+    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount.asInstanceOf[js.Any])
+    if (xmlSource != null) __obj.updateDynamic("xmlSource")(xmlSource)
+    __obj.asInstanceOf[TestSuiteOverview]
+  }
+}
+

@@ -79,3 +79,42 @@ trait VictoryChartProps extends VictoryCommonProps {
   var style: js.UndefOr[stdLib.Pick[VictoryStyleInterface, victoryLib.victoryLibStrings.parent]] = js.undefined
 }
 
+object VictoryChartProps {
+  @scala.inline
+  def apply(
+    animate: AnimatePropTypeInterface = null,
+    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    domain: DomainPropType = null,
+    domainPadding: DomainPaddingPropType = null,
+    eventKey: StringOrNumberOrCallback = null,
+    events: js.Array[EventPropTypeInterface[java.lang.String, StringOrNumberOrCallback]] = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    height: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    style: stdLib.Pick[VictoryStyleInterface, victoryLib.victoryLibStrings.parent] = null,
+    theme: VictoryThemeDefinition = null,
+    width: scala.Int | scala.Double = null
+  ): VictoryChartProps = {
+    val __obj = js.Dynamic.literal()
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (domainPadding != null) __obj.updateDynamic("domainPadding")(domainPadding.asInstanceOf[js.Any])
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryChartProps]
+  }
+}
+

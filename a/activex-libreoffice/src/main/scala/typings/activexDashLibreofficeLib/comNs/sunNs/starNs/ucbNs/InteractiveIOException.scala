@@ -12,3 +12,20 @@ trait InteractiveIOException
   var Code: IOErrorCode
 }
 
+object InteractiveIOException {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Code: IOErrorCode,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): InteractiveIOException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Classification")(Classification)
+    __obj.updateDynamic("Code")(Code)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[InteractiveIOException]
+  }
+}
+

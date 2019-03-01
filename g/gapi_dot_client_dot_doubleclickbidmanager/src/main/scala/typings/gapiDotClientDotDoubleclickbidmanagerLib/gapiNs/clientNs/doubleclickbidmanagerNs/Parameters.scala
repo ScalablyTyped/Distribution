@@ -18,3 +18,22 @@ trait Parameters extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Parameters {
+  @scala.inline
+  def apply(
+    filters: js.Array[FilterPair] = null,
+    groupBys: js.Array[java.lang.String] = null,
+    includeInviteData: js.UndefOr[scala.Boolean] = js.undefined,
+    metrics: js.Array[java.lang.String] = null,
+    `type`: java.lang.String = null
+  ): Parameters = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (groupBys != null) __obj.updateDynamic("groupBys")(groupBys)
+    if (!js.isUndefined(includeInviteData)) __obj.updateDynamic("includeInviteData")(includeInviteData)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Parameters]
+  }
+}
+

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldoc", "XmlCommentNode")
 @js.native
-class XmlCommentNode protected () extends js.Object {
+class XmlCommentNode protected () extends XmlNode {
   def this(comment: java.lang.String) = this()
   var comment: java.lang.String = js.native
   var `type`: xmldocLib.xmldocLibStrings.comment = js.native

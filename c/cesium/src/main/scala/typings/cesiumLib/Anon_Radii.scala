@@ -12,3 +12,20 @@ trait Anon_Radii extends js.Object {
   var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.VertexFormat] = js.undefined
 }
 
+object Anon_Radii {
+  @scala.inline
+  def apply(
+    radii: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = null,
+    slicePartitions: scala.Int | scala.Double = null,
+    stackPartitions: scala.Int | scala.Double = null,
+    vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
+  ): Anon_Radii = {
+    val __obj = js.Dynamic.literal()
+    if (radii != null) __obj.updateDynamic("radii")(radii)
+    if (slicePartitions != null) __obj.updateDynamic("slicePartitions")(slicePartitions.asInstanceOf[js.Any])
+    if (stackPartitions != null) __obj.updateDynamic("stackPartitions")(stackPartitions.asInstanceOf[js.Any])
+    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat)
+    __obj.asInstanceOf[Anon_Radii]
+  }
+}
+

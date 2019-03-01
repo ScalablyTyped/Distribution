@@ -14,3 +14,14 @@ trait VerifyResponseArgs extends js.Object {
   var secret: java.lang.String
 }
 
+object VerifyResponseArgs {
+  @scala.inline
+  def apply(request: nodeLib.Buffer, response: nodeLib.Buffer, secret: java.lang.String): VerifyResponseArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("response")(response)
+    __obj.updateDynamic("secret")(secret)
+    __obj.asInstanceOf[VerifyResponseArgs]
+  }
+}
+

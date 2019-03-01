@@ -35,3 +35,36 @@ trait XCoordinateSystem
   def setAxisByDimension(nDimension: scala.Double, xAxis: XAxis, nIndex: scala.Double): scala.Unit
 }
 
+object XCoordinateSystem {
+  @scala.inline
+  def apply(
+    CoordinateSystemType: java.lang.String,
+    Dimension: scala.Double,
+    ViewServiceName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getAxisByDimension: js.Function2[scala.Double, scala.Double, XAxis],
+    getCoordinateSystemType: js.Function0[java.lang.String],
+    getDimension: js.Function0[scala.Double],
+    getMaximumAxisIndexByDimension: js.Function1[scala.Double, scala.Double],
+    getViewServiceName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setAxisByDimension: js.Function3[scala.Double, XAxis, scala.Double, scala.Unit]
+  ): XCoordinateSystem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CoordinateSystemType")(CoordinateSystemType)
+    __obj.updateDynamic("Dimension")(Dimension)
+    __obj.updateDynamic("ViewServiceName")(ViewServiceName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAxisByDimension")(getAxisByDimension)
+    __obj.updateDynamic("getCoordinateSystemType")(getCoordinateSystemType)
+    __obj.updateDynamic("getDimension")(getDimension)
+    __obj.updateDynamic("getMaximumAxisIndexByDimension")(getMaximumAxisIndexByDimension)
+    __obj.updateDynamic("getViewServiceName")(getViewServiceName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setAxisByDimension")(setAxisByDimension)
+    __obj.asInstanceOf[XCoordinateSystem]
+  }
+}
+

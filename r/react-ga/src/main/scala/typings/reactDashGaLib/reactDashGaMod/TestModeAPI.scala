@@ -11,3 +11,18 @@ trait TestModeAPI extends js.Object {
   def ga(args: js.Any*): js.Any
 }
 
+object TestModeAPI {
+  @scala.inline
+  def apply(
+    calls: js.Array[js.Array[_]],
+    ga: js.Function1[/* repeated */ js.Any, js.Any],
+    resetCalls: js.Function
+  ): TestModeAPI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calls")(calls)
+    __obj.updateDynamic("ga")(ga)
+    __obj.updateDynamic("resetCalls")(resetCalls)
+    __obj.asInstanceOf[TestModeAPI]
+  }
+}
+

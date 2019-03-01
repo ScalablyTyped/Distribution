@@ -10,3 +10,20 @@ trait TransformSourceDescription extends SourceDescription {
   var dependencies: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TransformSourceDescription {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    ast: estreeLib.estreeMod.Program = null,
+    dependencies: js.Array[java.lang.String] = null,
+    map: java.lang.String | RawSourceMap = null
+  ): TransformSourceDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    if (ast != null) __obj.updateDynamic("ast")(ast)
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TransformSourceDescription]
+  }
+}
+

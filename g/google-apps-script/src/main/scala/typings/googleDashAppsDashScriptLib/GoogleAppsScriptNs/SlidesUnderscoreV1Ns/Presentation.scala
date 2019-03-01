@@ -59,3 +59,30 @@ trait Presentation extends js.Object {
   var title: java.lang.String
 }
 
+object Presentation {
+  @scala.inline
+  def apply(
+    layouts: js.Array[Page],
+    locale: java.lang.String,
+    masters: js.Array[Page],
+    notes_master: Page,
+    page_size: Size,
+    presentation_id: java.lang.String,
+    revision_id: java.lang.String,
+    slides: js.Array[Page],
+    title: java.lang.String
+  ): Presentation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("layouts")(layouts)
+    __obj.updateDynamic("locale")(locale)
+    __obj.updateDynamic("masters")(masters)
+    __obj.updateDynamic("notes_master")(notes_master)
+    __obj.updateDynamic("page_size")(page_size)
+    __obj.updateDynamic("presentation_id")(presentation_id)
+    __obj.updateDynamic("revision_id")(revision_id)
+    __obj.updateDynamic("slides")(slides)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Presentation]
+  }
+}
+

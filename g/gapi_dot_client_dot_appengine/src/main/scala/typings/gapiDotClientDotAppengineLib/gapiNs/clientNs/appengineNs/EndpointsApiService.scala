@@ -12,3 +12,13 @@ trait EndpointsApiService extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EndpointsApiService {
+  @scala.inline
+  def apply(configId: java.lang.String = null, name: java.lang.String = null): EndpointsApiService = {
+    val __obj = js.Dynamic.literal()
+    if (configId != null) __obj.updateDynamic("configId")(configId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[EndpointsApiService]
+  }
+}
+

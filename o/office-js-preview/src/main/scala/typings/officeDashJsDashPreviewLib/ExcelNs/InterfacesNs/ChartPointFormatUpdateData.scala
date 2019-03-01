@@ -16,3 +16,12 @@ trait ChartPointFormatUpdateData extends js.Object {
   var border: js.UndefOr[ChartBorderUpdateData] = js.undefined
 }
 
+object ChartPointFormatUpdateData {
+  @scala.inline
+  def apply(border: ChartBorderUpdateData = null): ChartPointFormatUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    __obj.asInstanceOf[ChartPointFormatUpdateData]
+  }
+}
+

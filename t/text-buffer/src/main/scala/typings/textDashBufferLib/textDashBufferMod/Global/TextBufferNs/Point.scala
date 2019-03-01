@@ -63,3 +63,44 @@ trait Point extends js.Object {
   def traverse(other: PointCompatible): Point
 }
 
+object Point {
+  @scala.inline
+  def apply(
+    column: scala.Double,
+    compare: js.Function1[PointCompatible, scala.Double],
+    copy: js.Function0[Point],
+    freeze: js.Function0[stdLib.Readonly[Point]],
+    isEqual: js.Function1[PointCompatible, scala.Boolean],
+    isGreaterThan: js.Function1[PointCompatible, scala.Boolean],
+    isGreaterThanOrEqual: js.Function1[PointCompatible, scala.Boolean],
+    isLessThan: js.Function1[PointCompatible, scala.Boolean],
+    isLessThanOrEqual: js.Function1[PointCompatible, scala.Boolean],
+    negate: js.Function0[Point],
+    row: scala.Double,
+    serialize: js.Function0[js.Tuple2[scala.Double, scala.Double]],
+    toArray: js.Function0[js.Tuple2[scala.Double, scala.Double]],
+    toString: js.Function0[java.lang.String],
+    translate: js.Function1[PointCompatible, Point],
+    traverse: js.Function1[PointCompatible, Point]
+  ): Point = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("compare")(compare)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("freeze")(freeze)
+    __obj.updateDynamic("isEqual")(isEqual)
+    __obj.updateDynamic("isGreaterThan")(isGreaterThan)
+    __obj.updateDynamic("isGreaterThanOrEqual")(isGreaterThanOrEqual)
+    __obj.updateDynamic("isLessThan")(isLessThan)
+    __obj.updateDynamic("isLessThanOrEqual")(isLessThanOrEqual)
+    __obj.updateDynamic("negate")(negate)
+    __obj.updateDynamic("row")(row)
+    __obj.updateDynamic("serialize")(serialize)
+    __obj.updateDynamic("toArray")(toArray)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("translate")(translate)
+    __obj.updateDynamic("traverse")(traverse)
+    __obj.asInstanceOf[Point]
+  }
+}
+

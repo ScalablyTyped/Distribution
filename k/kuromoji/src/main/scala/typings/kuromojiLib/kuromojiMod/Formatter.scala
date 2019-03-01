@@ -20,3 +20,16 @@ trait Formatter[T] extends js.Object {
   ): T
 }
 
+object Formatter {
+  @scala.inline
+  def apply[T](
+    formatEntry: js.Function4[scala.Double, scala.Double, java.lang.String, js.Array[java.lang.String], T],
+    formatUnknownEntry: js.Function4[scala.Double, scala.Double, java.lang.String, js.Array[java.lang.String], T]
+  ): Formatter[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("formatEntry")(formatEntry)
+    __obj.updateDynamic("formatUnknownEntry")(formatUnknownEntry)
+    __obj.asInstanceOf[Formatter[T]]
+  }
+}
+

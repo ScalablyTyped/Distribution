@@ -12,3 +12,13 @@ trait NavigationBackLinkProps extends RefreshLinkProps {
   var distance: scala.Double
 }
 
+object NavigationBackLinkProps {
+  @scala.inline
+  def apply(distance: scala.Double, RefreshLinkProps: RefreshLinkProps = null): NavigationBackLinkProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("distance")(distance)
+    js.Dynamic.global.Object.assign(__obj, RefreshLinkProps)
+    __obj.asInstanceOf[NavigationBackLinkProps]
+  }
+}
+

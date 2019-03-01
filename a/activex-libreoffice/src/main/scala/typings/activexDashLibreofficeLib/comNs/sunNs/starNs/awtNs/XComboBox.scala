@@ -40,3 +40,52 @@ trait XComboBox
   def setDropDownLineCount(nLines: scala.Double): scala.Unit
 }
 
+object XComboBox {
+  @scala.inline
+  def apply(
+    DropDownLineCount: scala.Double,
+    ItemCount: scala.Double,
+    Items: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    addActionListener: js.Function1[XActionListener, scala.Unit],
+    addItem: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    addItemListener: js.Function1[XItemListener, scala.Unit],
+    addItems: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Double, 
+      scala.Unit
+    ],
+    getDropDownLineCount: js.Function0[scala.Double],
+    getItem: js.Function1[scala.Double, java.lang.String],
+    getItemCount: js.Function0[scala.Double],
+    getItems: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeActionListener: js.Function1[XActionListener, scala.Unit],
+    removeItemListener: js.Function1[XItemListener, scala.Unit],
+    removeItems: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setDropDownLineCount: js.Function1[scala.Double, scala.Unit]
+  ): XComboBox = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DropDownLineCount")(DropDownLineCount)
+    __obj.updateDynamic("ItemCount")(ItemCount)
+    __obj.updateDynamic("Items")(Items)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addActionListener")(addActionListener)
+    __obj.updateDynamic("addItem")(addItem)
+    __obj.updateDynamic("addItemListener")(addItemListener)
+    __obj.updateDynamic("addItems")(addItems)
+    __obj.updateDynamic("getDropDownLineCount")(getDropDownLineCount)
+    __obj.updateDynamic("getItem")(getItem)
+    __obj.updateDynamic("getItemCount")(getItemCount)
+    __obj.updateDynamic("getItems")(getItems)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeActionListener")(removeActionListener)
+    __obj.updateDynamic("removeItemListener")(removeItemListener)
+    __obj.updateDynamic("removeItems")(removeItems)
+    __obj.updateDynamic("setDropDownLineCount")(setDropDownLineCount)
+    __obj.asInstanceOf[XComboBox]
+  }
+}
+

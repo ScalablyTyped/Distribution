@@ -28,3 +28,26 @@ trait BidMetricsRow extends js.Object {
   var viewableImpressions: js.UndefOr[MetricValue] = js.undefined
 }
 
+object BidMetricsRow {
+  @scala.inline
+  def apply(
+    bids: MetricValue = null,
+    bidsInAuction: MetricValue = null,
+    billedImpressions: MetricValue = null,
+    impressionsWon: MetricValue = null,
+    measurableImpressions: MetricValue = null,
+    rowDimensions: RowDimensions = null,
+    viewableImpressions: MetricValue = null
+  ): BidMetricsRow = {
+    val __obj = js.Dynamic.literal()
+    if (bids != null) __obj.updateDynamic("bids")(bids)
+    if (bidsInAuction != null) __obj.updateDynamic("bidsInAuction")(bidsInAuction)
+    if (billedImpressions != null) __obj.updateDynamic("billedImpressions")(billedImpressions)
+    if (impressionsWon != null) __obj.updateDynamic("impressionsWon")(impressionsWon)
+    if (measurableImpressions != null) __obj.updateDynamic("measurableImpressions")(measurableImpressions)
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    if (viewableImpressions != null) __obj.updateDynamic("viewableImpressions")(viewableImpressions)
+    __obj.asInstanceOf[BidMetricsRow]
+  }
+}
+

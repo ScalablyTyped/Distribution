@@ -9,3 +9,12 @@ trait Anon_IsBind extends js.Object {
   var isBind: scala.Boolean
 }
 
+object Anon_IsBind {
+  @scala.inline
+  def apply(isBind: scala.Boolean): Anon_IsBind = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isBind")(isBind)
+    __obj.asInstanceOf[Anon_IsBind]
+  }
+}
+

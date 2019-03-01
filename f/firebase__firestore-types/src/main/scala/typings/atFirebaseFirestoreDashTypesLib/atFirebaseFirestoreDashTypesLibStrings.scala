@@ -7,112 +7,142 @@ import scala.scalajs.js.annotation._
 
 object atFirebaseFirestoreDashTypesLibStrings {
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.WhereFilterOp
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.WhereFilterOp
   
   @js.native
-  sealed trait `==` extends js.Object
+  sealed trait `==`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.WhereFilterOp
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.WhereFilterOp
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.WhereFilterOp
   
   @js.native
-  sealed trait aborted extends js.Object
+  sealed trait aborted
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait added extends js.Object
+  sealed trait added
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.DocumentChangeType
   
   @js.native
-  sealed trait `already-exists` extends js.Object
+  sealed trait `already-exists`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait `array-contains` extends js.Object
+  sealed trait `array-contains`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.WhereFilterOp
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.OrderByDirection
   
   @js.native
   sealed trait cache extends js.Object
   
   @js.native
-  sealed trait cancelled extends js.Object
+  sealed trait cancelled
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait `data-loss` extends js.Object
+  sealed trait `data-loss`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait `deadline-exceeded` extends js.Object
+  sealed trait `deadline-exceeded`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.LogLevel
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.OrderByDirection
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.LogLevel
   
   @js.native
   sealed trait estimate extends js.Object
   
   @js.native
-  sealed trait `failed-precondition` extends js.Object
+  sealed trait `failed-precondition`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait internal extends js.Object
+  sealed trait internal
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait `invalid-argument` extends js.Object
+  sealed trait `invalid-argument`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait modified extends js.Object
+  sealed trait modified
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.DocumentChangeType
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait `not-found` extends js.Object
+  sealed trait `not-found`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait `out-of-range` extends js.Object
+  sealed trait `out-of-range`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait `permission-denied` extends js.Object
+  sealed trait `permission-denied`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
   sealed trait previous extends js.Object
   
   @js.native
-  sealed trait removed extends js.Object
+  sealed trait removed
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.DocumentChangeType
   
   @js.native
-  sealed trait `resource-exhausted` extends js.Object
+  sealed trait `resource-exhausted`
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
   sealed trait server extends js.Object
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait silent
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.LogLevel
   
   @js.native
-  sealed trait unauthenticated extends js.Object
+  sealed trait unauthenticated
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait unavailable extends js.Object
+  sealed trait unavailable
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait unimplemented extends js.Object
+  sealed trait unimplemented
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreErrorCode
   
   @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]

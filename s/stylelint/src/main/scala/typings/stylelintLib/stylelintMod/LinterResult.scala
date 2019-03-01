@@ -12,3 +12,20 @@ trait LinterResult extends js.Object {
   var results: js.Array[LintResult]
 }
 
+object LinterResult {
+  @scala.inline
+  def apply(
+    errored: scala.Boolean,
+    output: java.lang.String,
+    postcssResults: js.Array[_],
+    results: js.Array[LintResult]
+  ): LinterResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errored")(errored)
+    __obj.updateDynamic("output")(output)
+    __obj.updateDynamic("postcssResults")(postcssResults)
+    __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[LinterResult]
+  }
+}
+

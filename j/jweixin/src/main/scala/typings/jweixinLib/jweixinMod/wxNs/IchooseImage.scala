@@ -20,3 +20,26 @@ trait IchooseImage extends BaseParams {
   def success_MIchooseImage(res: jweixinLib.Anon_ErrMsgLocalIds): scala.Unit
 }
 
+object IchooseImage {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[scala.Unit],
+    success: js.Function1[jweixinLib.Anon_ErrMsgLocalIds, scala.Unit],
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    count: scala.Int | scala.Double = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    sizeType: js.Array[ImageSizeType] = null,
+    sourceType: js.Array[ImageSourceType] = null
+  ): IchooseImage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType)
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
+    __obj.asInstanceOf[IchooseImage]
+  }
+}
+

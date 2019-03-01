@@ -14,3 +14,18 @@ trait Category extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Category {
+  @scala.inline
+  def apply(
+    category: java.lang.String = null,
+    experiencePoints: java.lang.String = null,
+    kind: java.lang.String = null
+  ): Category = {
+    val __obj = js.Dynamic.literal()
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (experiencePoints != null) __obj.updateDynamic("experiencePoints")(experiencePoints)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[Category]
+  }
+}
+

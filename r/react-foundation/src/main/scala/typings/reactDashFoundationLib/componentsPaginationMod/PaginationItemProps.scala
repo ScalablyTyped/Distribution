@@ -289,3 +289,20 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PaginationItemProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLLIElement] = null,
+    isCurrent: js.UndefOr[scala.Boolean] = js.undefined,
+    isDisabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): PaginationItemProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (!js.isUndefined(isCurrent)) __obj.updateDynamic("isCurrent")(isCurrent)
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
+    __obj.asInstanceOf[PaginationItemProps]
+  }
+}
+

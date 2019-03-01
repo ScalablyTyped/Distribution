@@ -34,3 +34,23 @@ trait R3NgModuleMetadata extends js.Object {
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
 }
 
+object R3NgModuleMetadata {
+  @scala.inline
+  def apply(
+    bootstrap: js.Array[atAngularCompilerLib.srcRender3UtilMod.R3Reference],
+    declarations: js.Array[atAngularCompilerLib.srcRender3UtilMod.R3Reference],
+    emitInline: scala.Boolean,
+    exports: js.Array[atAngularCompilerLib.srcRender3UtilMod.R3Reference],
+    imports: js.Array[atAngularCompilerLib.srcRender3UtilMod.R3Reference],
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
+  ): R3NgModuleMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bootstrap")(bootstrap)
+    __obj.updateDynamic("declarations")(declarations)
+    __obj.updateDynamic("emitInline")(emitInline)
+    __obj.updateDynamic("exports")(exports)
+    __obj.updateDynamic("imports")(imports)
+    __obj.asInstanceOf[R3NgModuleMetadata]
+  }
+}
+

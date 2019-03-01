@@ -280,3 +280,140 @@ trait CharacterProperties extends js.Object {
   var VisitedCharStyleName: java.lang.String
 }
 
+object CharacterProperties {
+  @scala.inline
+  def apply(
+    CharAutoKerning: scala.Boolean,
+    CharBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharBackTransparent: scala.Boolean,
+    CharBorderDistance: scala.Double,
+    CharBottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    CharBottomBorderDistance: scala.Double,
+    CharCaseMap: scala.Double,
+    CharColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharCombineIsOn: scala.Boolean,
+    CharCombinePrefix: java.lang.String,
+    CharCombineSuffix: java.lang.String,
+    CharContoured: scala.Boolean,
+    CharCrossedOut: scala.Boolean,
+    CharEmphasis: scala.Double,
+    CharEscapement: scala.Double,
+    CharEscapementHeight: scala.Double,
+    CharFlash: scala.Boolean,
+    CharFontCharSet: scala.Double,
+    CharFontFamily: scala.Double,
+    CharFontName: java.lang.String,
+    CharFontPitch: scala.Double,
+    CharFontStyleName: java.lang.String,
+    CharFontType: scala.Double,
+    CharHeight: scala.Double,
+    CharHidden: scala.Boolean,
+    CharHighlight: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    CharKeepTogether: scala.Boolean,
+    CharKerning: scala.Double,
+    CharLeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    CharLeftBorderDistance: scala.Double,
+    CharLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    CharNoHyphenation: scala.Boolean,
+    CharNoLineBreak: scala.Boolean,
+    CharPosture: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontSlant,
+    CharRelief: scala.Double,
+    CharRightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    CharRightBorderDistance: scala.Double,
+    CharRotation: scala.Double,
+    CharRotationIsFitToLine: scala.Boolean,
+    CharScaleWidth: scala.Double,
+    CharShadingValue: scala.Double,
+    CharShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    CharShadowed: scala.Boolean,
+    CharStrikeout: scala.Double,
+    CharStyleName: java.lang.String,
+    CharStyleNames: activexDashInteropLib.SafeArray[java.lang.String],
+    CharTopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine2,
+    CharTopBorderDistance: scala.Double,
+    CharUnderline: scala.Double,
+    CharUnderlineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    CharUnderlineHasColor: scala.Boolean,
+    CharWeight: scala.Double,
+    CharWordMode: scala.Boolean,
+    HyperLinkName: java.lang.String,
+    HyperLinkTarget: java.lang.String,
+    HyperLinkURL: java.lang.String,
+    RubyAdjust: scala.Double,
+    RubyCharStyleName: java.lang.String,
+    RubyIsAbove: scala.Boolean,
+    RubyText: java.lang.String,
+    TextUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    UnvisitedCharStyleName: java.lang.String,
+    VisitedCharStyleName: java.lang.String
+  ): CharacterProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CharAutoKerning")(CharAutoKerning)
+    __obj.updateDynamic("CharBackColor")(CharBackColor)
+    __obj.updateDynamic("CharBackTransparent")(CharBackTransparent)
+    __obj.updateDynamic("CharBorderDistance")(CharBorderDistance)
+    __obj.updateDynamic("CharBottomBorder")(CharBottomBorder)
+    __obj.updateDynamic("CharBottomBorderDistance")(CharBottomBorderDistance)
+    __obj.updateDynamic("CharCaseMap")(CharCaseMap)
+    __obj.updateDynamic("CharColor")(CharColor)
+    __obj.updateDynamic("CharCombineIsOn")(CharCombineIsOn)
+    __obj.updateDynamic("CharCombinePrefix")(CharCombinePrefix)
+    __obj.updateDynamic("CharCombineSuffix")(CharCombineSuffix)
+    __obj.updateDynamic("CharContoured")(CharContoured)
+    __obj.updateDynamic("CharCrossedOut")(CharCrossedOut)
+    __obj.updateDynamic("CharEmphasis")(CharEmphasis)
+    __obj.updateDynamic("CharEscapement")(CharEscapement)
+    __obj.updateDynamic("CharEscapementHeight")(CharEscapementHeight)
+    __obj.updateDynamic("CharFlash")(CharFlash)
+    __obj.updateDynamic("CharFontCharSet")(CharFontCharSet)
+    __obj.updateDynamic("CharFontFamily")(CharFontFamily)
+    __obj.updateDynamic("CharFontName")(CharFontName)
+    __obj.updateDynamic("CharFontPitch")(CharFontPitch)
+    __obj.updateDynamic("CharFontStyleName")(CharFontStyleName)
+    __obj.updateDynamic("CharFontType")(CharFontType)
+    __obj.updateDynamic("CharHeight")(CharHeight)
+    __obj.updateDynamic("CharHidden")(CharHidden)
+    __obj.updateDynamic("CharHighlight")(CharHighlight)
+    __obj.updateDynamic("CharInteropGrabBag")(CharInteropGrabBag)
+    __obj.updateDynamic("CharKeepTogether")(CharKeepTogether)
+    __obj.updateDynamic("CharKerning")(CharKerning)
+    __obj.updateDynamic("CharLeftBorder")(CharLeftBorder)
+    __obj.updateDynamic("CharLeftBorderDistance")(CharLeftBorderDistance)
+    __obj.updateDynamic("CharLocale")(CharLocale)
+    __obj.updateDynamic("CharNoHyphenation")(CharNoHyphenation)
+    __obj.updateDynamic("CharNoLineBreak")(CharNoLineBreak)
+    __obj.updateDynamic("CharPosture")(CharPosture)
+    __obj.updateDynamic("CharRelief")(CharRelief)
+    __obj.updateDynamic("CharRightBorder")(CharRightBorder)
+    __obj.updateDynamic("CharRightBorderDistance")(CharRightBorderDistance)
+    __obj.updateDynamic("CharRotation")(CharRotation)
+    __obj.updateDynamic("CharRotationIsFitToLine")(CharRotationIsFitToLine)
+    __obj.updateDynamic("CharScaleWidth")(CharScaleWidth)
+    __obj.updateDynamic("CharShadingValue")(CharShadingValue)
+    __obj.updateDynamic("CharShadowFormat")(CharShadowFormat)
+    __obj.updateDynamic("CharShadowed")(CharShadowed)
+    __obj.updateDynamic("CharStrikeout")(CharStrikeout)
+    __obj.updateDynamic("CharStyleName")(CharStyleName)
+    __obj.updateDynamic("CharStyleNames")(CharStyleNames)
+    __obj.updateDynamic("CharTopBorder")(CharTopBorder)
+    __obj.updateDynamic("CharTopBorderDistance")(CharTopBorderDistance)
+    __obj.updateDynamic("CharUnderline")(CharUnderline)
+    __obj.updateDynamic("CharUnderlineColor")(CharUnderlineColor)
+    __obj.updateDynamic("CharUnderlineHasColor")(CharUnderlineHasColor)
+    __obj.updateDynamic("CharWeight")(CharWeight)
+    __obj.updateDynamic("CharWordMode")(CharWordMode)
+    __obj.updateDynamic("HyperLinkName")(HyperLinkName)
+    __obj.updateDynamic("HyperLinkTarget")(HyperLinkTarget)
+    __obj.updateDynamic("HyperLinkURL")(HyperLinkURL)
+    __obj.updateDynamic("RubyAdjust")(RubyAdjust)
+    __obj.updateDynamic("RubyCharStyleName")(RubyCharStyleName)
+    __obj.updateDynamic("RubyIsAbove")(RubyIsAbove)
+    __obj.updateDynamic("RubyText")(RubyText)
+    __obj.updateDynamic("TextUserDefinedAttributes")(TextUserDefinedAttributes)
+    __obj.updateDynamic("UnvisitedCharStyleName")(UnvisitedCharStyleName)
+    __obj.updateDynamic("VisitedCharStyleName")(VisitedCharStyleName)
+    __obj.asInstanceOf[CharacterProperties]
+  }
+}
+

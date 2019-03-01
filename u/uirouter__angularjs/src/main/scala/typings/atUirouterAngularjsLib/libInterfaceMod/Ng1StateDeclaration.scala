@@ -245,3 +245,86 @@ trait Ng1StateDeclaration
   ] = js.undefined
 }
 
+object Ng1StateDeclaration {
+  @scala.inline
+  def apply(
+    $$state: js.Function0[atUirouterCoreLib.libStateStateObjectMod.StateObject] = null,
+    $context: atUirouterCoreLib.libViewInterfaceMod.ViewContext = null,
+    $name: java.lang.String = null,
+    $type: java.lang.String = null,
+    $uiViewContextAnchor: java.lang.String = null,
+    $uiViewName: java.lang.String = null,
+    `abstract`: js.UndefOr[scala.Boolean] = js.undefined,
+    bindings: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    component: java.lang.String = null,
+    componentProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
+    controller: atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String = null,
+    controllerAs: java.lang.String = null,
+    controllerProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
+    data: js.Any = null,
+    dynamic: js.UndefOr[scala.Boolean] = js.undefined,
+    lazyLoad: js.Function2[
+      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
+      /* state */ atUirouterCoreLib.libStateInterfaceMod.StateDeclaration, 
+      js.Promise[atUirouterCoreLib.libStateInterfaceMod.LazyLoadResult]
+    ] = null,
+    name: java.lang.String = null,
+    onEnter: Ng1StateTransitionHook | atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
+    onExit: Ng1StateTransitionHook | atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
+    onRetain: Ng1StateTransitionHook | atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
+    params: org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libParamsInterfaceMod.ParamDeclaration | js.Any] = null,
+    parent: java.lang.String | atUirouterCoreLib.libStateInterfaceMod.StateDeclaration = null,
+    redirectTo: atUirouterCoreLib.libStateInterfaceMod.RedirectToResult | (js.Function1[
+      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
+      atUirouterCoreLib.libStateInterfaceMod.RedirectToResult
+    ]) | (js.Function1[
+      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
+      js.Promise[atUirouterCoreLib.libStateInterfaceMod.RedirectToResult]
+    ]) = null,
+    reloadOnSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    resolve: js.Array[atUirouterCoreLib.libStateInterfaceMod.ResolveTypes] | org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libCommonCommonMod.IInjectable] = null,
+    resolveAs: java.lang.String = null,
+    resolvePolicy: atUirouterCoreLib.libResolveInterfaceMod.ResolvePolicy = null,
+    template: angularLib.angularMod.Global.Function | java.lang.String = null,
+    templateProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
+    templateUrl: java.lang.String | angularLib.angularMod.Global.Function = null,
+    url: java.lang.String = null,
+    views: org.scalablytyped.runtime.StringDictionary[java.lang.String | Ng1ViewDeclaration] = null
+  ): Ng1StateDeclaration = {
+    val __obj = js.Dynamic.literal()
+    if ($$state != null) __obj.updateDynamic("$$state")($$state)
+    if ($context != null) __obj.updateDynamic("$context")($context)
+    if ($name != null) __obj.updateDynamic("$name")($name)
+    if ($type != null) __obj.updateDynamic("$type")($type)
+    if ($uiViewContextAnchor != null) __obj.updateDynamic("$uiViewContextAnchor")($uiViewContextAnchor)
+    if ($uiViewName != null) __obj.updateDynamic("$uiViewName")($uiViewName)
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (componentProvider != null) __obj.updateDynamic("componentProvider")(componentProvider.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (controllerProvider != null) __obj.updateDynamic("controllerProvider")(controllerProvider.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic)
+    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
+    if (onRetain != null) __obj.updateDynamic("onRetain")(onRetain.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadOnSearch)) __obj.updateDynamic("reloadOnSearch")(reloadOnSearch)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
+    if (resolveAs != null) __obj.updateDynamic("resolveAs")(resolveAs)
+    if (resolvePolicy != null) __obj.updateDynamic("resolvePolicy")(resolvePolicy)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateProvider != null) __obj.updateDynamic("templateProvider")(templateProvider.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (views != null) __obj.updateDynamic("views")(views)
+    __obj.asInstanceOf[Ng1StateDeclaration]
+  }
+}
+

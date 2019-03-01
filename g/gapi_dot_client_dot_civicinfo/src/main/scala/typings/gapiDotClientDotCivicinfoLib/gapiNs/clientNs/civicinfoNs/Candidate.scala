@@ -27,3 +27,28 @@ trait Candidate extends js.Object {
   var photoUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Candidate {
+  @scala.inline
+  def apply(
+    candidateUrl: java.lang.String = null,
+    channels: js.Array[Channel] = null,
+    email: java.lang.String = null,
+    name: java.lang.String = null,
+    orderOnBallot: java.lang.String = null,
+    party: java.lang.String = null,
+    phone: java.lang.String = null,
+    photoUrl: java.lang.String = null
+  ): Candidate = {
+    val __obj = js.Dynamic.literal()
+    if (candidateUrl != null) __obj.updateDynamic("candidateUrl")(candidateUrl)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (orderOnBallot != null) __obj.updateDynamic("orderOnBallot")(orderOnBallot)
+    if (party != null) __obj.updateDynamic("party")(party)
+    if (phone != null) __obj.updateDynamic("phone")(phone)
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
+    __obj.asInstanceOf[Candidate]
+  }
+}
+

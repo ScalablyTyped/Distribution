@@ -31,3 +31,24 @@ trait XPreparedBatchExecution
   def executeBatch(): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XPreparedBatchExecution {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addBatch: js.Function0[scala.Unit],
+    clearBatch: js.Function0[scala.Unit],
+    executeBatch: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPreparedBatchExecution = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addBatch")(addBatch)
+    __obj.updateDynamic("clearBatch")(clearBatch)
+    __obj.updateDynamic("executeBatch")(executeBatch)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XPreparedBatchExecution]
+  }
+}
+

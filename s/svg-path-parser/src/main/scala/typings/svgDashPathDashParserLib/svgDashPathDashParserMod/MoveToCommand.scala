@@ -13,3 +13,22 @@ trait MoveToCommand extends js.Object {
   var y: scala.Double
 }
 
+object MoveToCommand {
+  @scala.inline
+  def apply(
+    code: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.m | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.M,
+    command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.moveto,
+    x: scala.Double,
+    y: scala.Double,
+    relative: js.UndefOr[scala.Boolean] = js.undefined
+  ): MoveToCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
+    __obj.asInstanceOf[MoveToCommand]
+  }
+}
+

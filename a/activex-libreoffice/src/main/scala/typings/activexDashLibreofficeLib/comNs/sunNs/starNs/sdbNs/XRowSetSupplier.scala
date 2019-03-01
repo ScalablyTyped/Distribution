@@ -28,3 +28,24 @@ trait XRowSetSupplier
   def setRowSet(xDataSource: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet): scala.Unit
 }
 
+object XRowSetSupplier {
+  @scala.inline
+  def apply(
+    RowSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet,
+    acquire: js.Function0[scala.Unit],
+    getRowSet: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setRowSet: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet, scala.Unit]
+  ): XRowSetSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RowSet")(RowSet)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getRowSet")(getRowSet)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setRowSet")(setRowSet)
+    __obj.asInstanceOf[XRowSetSupplier]
+  }
+}
+

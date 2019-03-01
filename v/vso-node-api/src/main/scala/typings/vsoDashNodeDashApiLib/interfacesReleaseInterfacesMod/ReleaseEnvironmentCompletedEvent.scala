@@ -21,3 +21,38 @@ trait ReleaseEnvironmentCompletedEvent extends js.Object {
   var webAccessUri: java.lang.String
 }
 
+object ReleaseEnvironmentCompletedEvent {
+  @scala.inline
+  def apply(
+    createdByName: java.lang.String,
+    definitionId: scala.Double,
+    definitionName: java.lang.String,
+    environment: ReleaseEnvironment,
+    environmentId: scala.Double,
+    projectName: java.lang.String,
+    reason: DeploymentReason,
+    releaseCreatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    releaseLogsUri: java.lang.String,
+    releaseName: java.lang.String,
+    status: java.lang.String,
+    title: java.lang.String,
+    webAccessUri: java.lang.String
+  ): ReleaseEnvironmentCompletedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createdByName")(createdByName)
+    __obj.updateDynamic("definitionId")(definitionId)
+    __obj.updateDynamic("definitionName")(definitionName)
+    __obj.updateDynamic("environment")(environment)
+    __obj.updateDynamic("environmentId")(environmentId)
+    __obj.updateDynamic("projectName")(projectName)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("releaseCreatedBy")(releaseCreatedBy)
+    __obj.updateDynamic("releaseLogsUri")(releaseLogsUri)
+    __obj.updateDynamic("releaseName")(releaseName)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("webAccessUri")(webAccessUri)
+    __obj.asInstanceOf[ReleaseEnvironmentCompletedEvent]
+  }
+}
+

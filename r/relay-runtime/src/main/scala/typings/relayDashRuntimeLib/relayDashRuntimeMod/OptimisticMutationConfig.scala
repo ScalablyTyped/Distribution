@@ -13,3 +13,22 @@ trait OptimisticMutationConfig extends js.Object {
   var variables: Variables
 }
 
+object OptimisticMutationConfig {
+  @scala.inline
+  def apply(
+    mutation: GraphQLTaggedNode,
+    variables: Variables,
+    configs: js.Array[RelayMutationConfig] = null,
+    optimisticResponse: js.Object = null,
+    optimisticUpdater: SelectorStoreUpdater[_] = null
+  ): OptimisticMutationConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mutation")(mutation.asInstanceOf[js.Any])
+    __obj.updateDynamic("variables")(variables)
+    if (configs != null) __obj.updateDynamic("configs")(configs)
+    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse)
+    if (optimisticUpdater != null) __obj.updateDynamic("optimisticUpdater")(optimisticUpdater)
+    __obj.asInstanceOf[OptimisticMutationConfig]
+  }
+}
+

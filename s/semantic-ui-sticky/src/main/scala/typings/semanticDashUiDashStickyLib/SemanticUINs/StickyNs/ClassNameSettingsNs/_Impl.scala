@@ -28,3 +28,22 @@ trait _Impl extends js.Object {
   var top: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    bottom: java.lang.String,
+    bound: java.lang.String,
+    fixed: java.lang.String,
+    supported: java.lang.String,
+    top: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottom")(bottom)
+    __obj.updateDynamic("bound")(bound)
+    __obj.updateDynamic("fixed")(fixed)
+    __obj.updateDynamic("supported")(supported)
+    __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

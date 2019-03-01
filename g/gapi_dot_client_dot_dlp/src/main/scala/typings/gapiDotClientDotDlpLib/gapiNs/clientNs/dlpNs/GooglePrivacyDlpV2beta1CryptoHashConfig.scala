@@ -10,3 +10,12 @@ trait GooglePrivacyDlpV2beta1CryptoHashConfig extends js.Object {
   var cryptoKey: js.UndefOr[GooglePrivacyDlpV2beta1CryptoKey] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1CryptoHashConfig {
+  @scala.inline
+  def apply(cryptoKey: GooglePrivacyDlpV2beta1CryptoKey = null): GooglePrivacyDlpV2beta1CryptoHashConfig = {
+    val __obj = js.Dynamic.literal()
+    if (cryptoKey != null) __obj.updateDynamic("cryptoKey")(cryptoKey)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1CryptoHashConfig]
+  }
+}
+

@@ -11,3 +11,13 @@ trait Anon_Language extends js.Object {
   var percentage: scala.Double
 }
 
+object Anon_Language {
+  @scala.inline
+  def apply(language: firefoxDashWebextDashBrowserLib.browserNs.i18nNs.LanguageCode, percentage: scala.Double): Anon_Language = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("percentage")(percentage)
+    __obj.asInstanceOf[Anon_Language]
+  }
+}
+

@@ -59,3 +59,24 @@ trait ShapeFontData extends js.Object {
   ] = js.undefined
 }
 
+object ShapeFontData {
+  @scala.inline
+  def apply(
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    underline: officeDashJsDashPreviewLib.ExcelNs.ShapeFontUnderlineStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Single | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Double | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Heavy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dotted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DottedHeavy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashHeavy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashLong | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashLongHeavy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DotDash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DotDashHeavy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DotDotDash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DotDotDashHeavy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wavy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WavyHeavy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WavyDouble = null
+  ): ShapeFontData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShapeFontData]
+  }
+}
+

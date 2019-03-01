@@ -24,6 +24,10 @@ object PermissionsNs extends js.Object {
     var status: PermissionStatus
   }
   
+  trait PermissionStatus extends js.Object
+  
+  trait PermissionType extends js.Object
+  
   trait SinglePermissionResponse extends js.Object {
     var android: js.UndefOr[PermissionDetailsLocationAndroid] = js.undefined
     var expires: PermissionExpires
@@ -48,7 +52,5 @@ object PermissionsNs extends js.Object {
   def askAsync(permissionTypes: PermissionType*): js.Promise[PermissionResponse] = js.native
   def getAsync(permissionTypes: PermissionType*): js.Promise[PermissionResponse] = js.native
   type PermissionExpires = expoLib.expoLibStrings.never
-  type PermissionStatus = expoLib.expoLibStrings.undetermined | expoLib.expoLibStrings.granted | expoLib.expoLibStrings.denied
-  type PermissionType = expoLib.expoLibStrings.audioRecording | expoLib.expoLibStrings.calendar | expoLib.expoLibStrings.cameraRoll | expoLib.expoLibStrings.camera | expoLib.expoLibStrings.contacts | expoLib.expoLibStrings.location | expoLib.expoLibStrings.reminders | expoLib.expoLibStrings.notifications | expoLib.expoLibStrings.systemBrightness | expoLib.expoLibStrings.userFacingNotifications | expoLib.expoLibStrings.SMS
 }
 

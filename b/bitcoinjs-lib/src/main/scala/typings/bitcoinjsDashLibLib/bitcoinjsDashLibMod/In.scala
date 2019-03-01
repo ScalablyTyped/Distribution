@@ -13,3 +13,22 @@ trait In extends js.Object {
   var witness: js.Array[nodeLib.Buffer]
 }
 
+object In {
+  @scala.inline
+  def apply(
+    hash: nodeLib.Buffer,
+    index: scala.Double,
+    script: nodeLib.Buffer,
+    sequence: scala.Double,
+    witness: js.Array[nodeLib.Buffer]
+  ): In = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("sequence")(sequence)
+    __obj.updateDynamic("witness")(witness)
+    __obj.asInstanceOf[In]
+  }
+}
+

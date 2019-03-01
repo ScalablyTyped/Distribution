@@ -39,3 +39,28 @@ trait PrintOptions extends js.Object {
   var Wait: scala.Boolean
 }
 
+object PrintOptions {
+  @scala.inline
+  def apply(
+    Collate: scala.Boolean,
+    CopyCount: scala.Double,
+    DuplexMode: scala.Double,
+    FileName: java.lang.String,
+    Pages: java.lang.String,
+    PrinterName: java.lang.String,
+    Sort: scala.Boolean,
+    Wait: scala.Boolean
+  ): PrintOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Collate")(Collate)
+    __obj.updateDynamic("CopyCount")(CopyCount)
+    __obj.updateDynamic("DuplexMode")(DuplexMode)
+    __obj.updateDynamic("FileName")(FileName)
+    __obj.updateDynamic("Pages")(Pages)
+    __obj.updateDynamic("PrinterName")(PrinterName)
+    __obj.updateDynamic("Sort")(Sort)
+    __obj.updateDynamic("Wait")(Wait)
+    __obj.asInstanceOf[PrintOptions]
+  }
+}
+

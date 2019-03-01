@@ -33,3 +33,19 @@ trait MessageText extends js.Object {
   var `type`: mailparserLib.mailparserLibStrings.text
 }
 
+object MessageText {
+  @scala.inline
+  def apply(
+    `type`: mailparserLib.mailparserLibStrings.text,
+    html: java.lang.String | scala.Boolean = null,
+    text: java.lang.String = null,
+    textAsHtml: java.lang.String = null
+  ): MessageText = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAsHtml != null) __obj.updateDynamic("textAsHtml")(textAsHtml)
+    __obj.asInstanceOf[MessageText]
+  }
+}
+

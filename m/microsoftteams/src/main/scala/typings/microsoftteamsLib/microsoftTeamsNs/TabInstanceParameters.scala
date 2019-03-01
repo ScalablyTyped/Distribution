@@ -16,3 +16,16 @@ trait TabInstanceParameters extends js.Object {
   var favoriteTeamsOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TabInstanceParameters {
+  @scala.inline
+  def apply(
+    favoriteChannelsOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    favoriteTeamsOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): TabInstanceParameters = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(favoriteChannelsOnly)) __obj.updateDynamic("favoriteChannelsOnly")(favoriteChannelsOnly)
+    if (!js.isUndefined(favoriteTeamsOnly)) __obj.updateDynamic("favoriteTeamsOnly")(favoriteTeamsOnly)
+    __obj.asInstanceOf[TabInstanceParameters]
+  }
+}
+

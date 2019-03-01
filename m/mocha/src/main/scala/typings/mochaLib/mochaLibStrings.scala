@@ -7,46 +7,60 @@ import scala.scalajs.js.annotation._
 
 object mochaLibStrings {
   @js.native
-  sealed trait Base extends js.Object
+  sealed trait Base
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait Dot extends js.Object
+  sealed trait Dot
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait HTML extends js.Object
+  sealed trait HTML
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait JSON extends js.Object
+  sealed trait JSON
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait JSONStream extends js.Object
+  sealed trait JSONStream
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait Landing extends js.Object
+  sealed trait Landing
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait List extends js.Object
+  sealed trait List
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait Markdown extends js.Object
+  sealed trait Markdown
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait Min extends js.Object
+  sealed trait Min
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait Nyan extends js.Object
+  sealed trait Nyan
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait Progress extends js.Object
+  sealed trait Progress
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait Spec extends js.Object
+  sealed trait Spec
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait TAP extends js.Object
+  sealed trait TAP
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait XUnit extends js.Object
+  sealed trait XUnit
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
   sealed trait afterAll extends js.Object
@@ -55,10 +69,12 @@ object mochaLibStrings {
   sealed trait afterEach extends js.Object
   
   @js.native
-  sealed trait base extends js.Object
+  sealed trait base
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait bdd extends js.Object
+  sealed trait bdd
+    extends mochaLib.MochaNs.Interface
   
   @js.native
   sealed trait beforeAll extends js.Object
@@ -67,7 +83,8 @@ object mochaLibStrings {
   sealed trait beforeEach extends js.Object
   
   @js.native
-  sealed trait dot extends js.Object
+  sealed trait dot
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
   sealed trait end extends js.Object
@@ -76,7 +93,8 @@ object mochaLibStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait exports extends js.Object
+  sealed trait exports
+    extends mochaLib.MochaNs.Interface
   
   @js.native
   sealed trait fail extends js.Object
@@ -94,31 +112,39 @@ object mochaLibStrings {
   sealed trait `hook end` extends js.Object
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait html
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait `json-stream` extends js.Object
+  sealed trait `json-stream`
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait landing extends js.Object
+  sealed trait landing
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait list
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait markdown extends js.Object
+  sealed trait markdown
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
   sealed trait medium extends js.Object
   
   @js.native
-  sealed trait min extends js.Object
+  sealed trait min
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait nyan extends js.Object
+  sealed trait nyan
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
   sealed trait pass extends js.Object
@@ -136,10 +162,12 @@ object mochaLibStrings {
   sealed trait `pre-require` extends js.Object
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait qunit extends js.Object
+  sealed trait qunit
+    extends mochaLib.MochaNs.Interface
   
   @js.native
   sealed trait require extends js.Object
@@ -151,7 +179,8 @@ object mochaLibStrings {
   sealed trait slow extends js.Object
   
   @js.native
-  sealed trait spec extends js.Object
+  sealed trait spec
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
   sealed trait start extends js.Object
@@ -163,10 +192,12 @@ object mochaLibStrings {
   sealed trait `suite end` extends js.Object
   
   @js.native
-  sealed trait tap extends js.Object
+  sealed trait tap
+    extends mochaLib.MochaNs.Reporter
   
   @js.native
-  sealed trait tdd extends js.Object
+  sealed trait tdd
+    extends mochaLib.MochaNs.Interface
   
   @js.native
   sealed trait test extends js.Object
@@ -178,7 +209,8 @@ object mochaLibStrings {
   sealed trait waiting extends js.Object
   
   @js.native
-  sealed trait xunit extends js.Object
+  sealed trait xunit
+    extends mochaLib.MochaNs.Reporter
   
   @scala.inline
   def Base: Base = "Base".asInstanceOf[Base]

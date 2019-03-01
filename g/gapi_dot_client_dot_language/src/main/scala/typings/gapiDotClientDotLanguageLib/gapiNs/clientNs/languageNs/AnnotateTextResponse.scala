@@ -36,3 +36,22 @@ trait AnnotateTextResponse extends js.Object {
   var tokens: js.UndefOr[js.Array[Token]] = js.undefined
 }
 
+object AnnotateTextResponse {
+  @scala.inline
+  def apply(
+    documentSentiment: Sentiment = null,
+    entities: js.Array[Entity] = null,
+    language: java.lang.String = null,
+    sentences: js.Array[Sentence] = null,
+    tokens: js.Array[Token] = null
+  ): AnnotateTextResponse = {
+    val __obj = js.Dynamic.literal()
+    if (documentSentiment != null) __obj.updateDynamic("documentSentiment")(documentSentiment)
+    if (entities != null) __obj.updateDynamic("entities")(entities)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (sentences != null) __obj.updateDynamic("sentences")(sentences)
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens)
+    __obj.asInstanceOf[AnnotateTextResponse]
+  }
+}
+

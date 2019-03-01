@@ -19,3 +19,20 @@ trait DomainMapping extends js.Object {
   var sslSettings: js.UndefOr[SslSettings] = js.undefined
 }
 
+object DomainMapping {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    resourceRecords: js.Array[ResourceRecord] = null,
+    sslSettings: SslSettings = null
+  ): DomainMapping = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (resourceRecords != null) __obj.updateDynamic("resourceRecords")(resourceRecords)
+    if (sslSettings != null) __obj.updateDynamic("sslSettings")(sslSettings)
+    __obj.asInstanceOf[DomainMapping]
+  }
+}
+

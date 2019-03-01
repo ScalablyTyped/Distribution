@@ -13,3 +13,22 @@ trait NetInterfacesData extends js.Object {
   var mac: java.lang.String
 }
 
+object NetInterfacesData {
+  @scala.inline
+  def apply(
+    iface: java.lang.String,
+    internal: scala.Boolean,
+    ip4: java.lang.String,
+    ip6: java.lang.String,
+    mac: java.lang.String
+  ): NetInterfacesData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iface")(iface)
+    __obj.updateDynamic("internal")(internal)
+    __obj.updateDynamic("ip4")(ip4)
+    __obj.updateDynamic("ip6")(ip6)
+    __obj.updateDynamic("mac")(mac)
+    __obj.asInstanceOf[NetInterfacesData]
+  }
+}
+

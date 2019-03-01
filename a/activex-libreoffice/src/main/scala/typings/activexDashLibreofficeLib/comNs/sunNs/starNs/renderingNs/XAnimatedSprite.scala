@@ -78,3 +78,56 @@ trait XAnimatedSprite extends XSprite {
   def updateAnimation(): scala.Unit
 }
 
+object XAnimatedSprite {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    clip: js.Function1[XPolyPolygon2D, scala.Unit],
+    hide: js.Function0[scala.Unit],
+    move: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
+      ViewState, 
+      RenderState, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    resetAnimation: js.Function0[scala.Unit],
+    setAll: js.Function5[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
+      ViewState, 
+      RenderState, 
+      scala.Double, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    setAlpha: js.Function1[scala.Double, scala.Unit],
+    setPriority: js.Function1[scala.Double, scala.Unit],
+    setViewState: js.Function1[ViewState, scala.Unit],
+    show: js.Function0[scala.Unit],
+    startAnimation: js.Function1[scala.Double, scala.Unit],
+    stopAnimation: js.Function0[scala.Unit],
+    transform: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D, scala.Unit],
+    updateAnimation: js.Function0[scala.Unit]
+  ): XAnimatedSprite = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("clip")(clip)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("move")(move)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("resetAnimation")(resetAnimation)
+    __obj.updateDynamic("setAll")(setAll)
+    __obj.updateDynamic("setAlpha")(setAlpha)
+    __obj.updateDynamic("setPriority")(setPriority)
+    __obj.updateDynamic("setViewState")(setViewState)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("startAnimation")(startAnimation)
+    __obj.updateDynamic("stopAnimation")(stopAnimation)
+    __obj.updateDynamic("transform")(transform)
+    __obj.updateDynamic("updateAnimation")(updateAnimation)
+    __obj.asInstanceOf[XAnimatedSprite]
+  }
+}
+

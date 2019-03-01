@@ -11,3 +11,18 @@ trait BootboxButton extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BootboxButton {
+  @scala.inline
+  def apply(
+    callback: js.Function0[_] = null,
+    className: java.lang.String = null,
+    label: java.lang.String = null
+  ): BootboxButton = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[BootboxButton]
+  }
+}
+

@@ -20,3 +20,15 @@ trait Event extends js.Object {
   var Trigger: scala.Double
 }
 
+object Event {
+  @scala.inline
+  def apply(Offset: js.Any, Repeat: scala.Double, Source: js.Any, Trigger: scala.Double): Event = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Offset")(Offset)
+    __obj.updateDynamic("Repeat")(Repeat)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("Trigger")(Trigger)
+    __obj.asInstanceOf[Event]
+  }
+}
+

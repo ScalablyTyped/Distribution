@@ -18,3 +18,18 @@ trait TransactionTypes extends js.Object {
   var IMMEDIATE: TransactionTypeImmediate
 }
 
+object TransactionTypes {
+  @scala.inline
+  def apply(
+    DEFERRED: TransactionTypeDeferred,
+    EXCLUSIVE: TransactionTypeExclusive,
+    IMMEDIATE: TransactionTypeImmediate
+  ): TransactionTypes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DEFERRED")(DEFERRED)
+    __obj.updateDynamic("EXCLUSIVE")(EXCLUSIVE)
+    __obj.updateDynamic("IMMEDIATE")(IMMEDIATE)
+    __obj.asInstanceOf[TransactionTypes]
+  }
+}
+

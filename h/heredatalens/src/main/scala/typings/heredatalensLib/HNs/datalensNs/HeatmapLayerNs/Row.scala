@@ -16,3 +16,18 @@ trait Row extends js.Object {
   var ty: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Row {
+  @scala.inline
+  def apply(
+    count: scala.Int | scala.Double = null,
+    tx: scala.Int | scala.Double = null,
+    ty: scala.Int | scala.Double = null
+  ): Row = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (tx != null) __obj.updateDynamic("tx")(tx.asInstanceOf[js.Any])
+    if (ty != null) __obj.updateDynamic("ty")(ty.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Row]
+  }
+}
+

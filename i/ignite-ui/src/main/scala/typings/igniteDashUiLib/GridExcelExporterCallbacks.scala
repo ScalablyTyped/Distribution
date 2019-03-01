@@ -132,3 +132,41 @@ trait GridExcelExporterCallbacks
   var summaryExporting: js.UndefOr[js.Function] = js.undefined
 }
 
+object GridExcelExporterCallbacks {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for GridExcelExporterCallbacks
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    cellExported: js.Function = null,
+    cellExporting: js.Function = null,
+    error: js.Function = null,
+    exportEnding: js.Function = null,
+    exportStarting: js.Function = null,
+    headerCellExported: js.Function = null,
+    headerCellExporting: js.Function = null,
+    rowExported: js.Function = null,
+    rowExporting: js.Function = null,
+    success: js.Function = null,
+    summaryExported: js.Function = null,
+    summaryExporting: js.Function = null
+  ): GridExcelExporterCallbacks = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cellExported != null) __obj.updateDynamic("cellExported")(cellExported)
+    if (cellExporting != null) __obj.updateDynamic("cellExporting")(cellExporting)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (exportEnding != null) __obj.updateDynamic("exportEnding")(exportEnding)
+    if (exportStarting != null) __obj.updateDynamic("exportStarting")(exportStarting)
+    if (headerCellExported != null) __obj.updateDynamic("headerCellExported")(headerCellExported)
+    if (headerCellExporting != null) __obj.updateDynamic("headerCellExporting")(headerCellExporting)
+    if (rowExported != null) __obj.updateDynamic("rowExported")(rowExported)
+    if (rowExporting != null) __obj.updateDynamic("rowExporting")(rowExporting)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (summaryExported != null) __obj.updateDynamic("summaryExported")(summaryExported)
+    if (summaryExporting != null) __obj.updateDynamic("summaryExporting")(summaryExporting)
+    __obj.asInstanceOf[GridExcelExporterCallbacks]
+  }
+}
+

@@ -40,3 +40,22 @@ trait ClusterRole extends js.Object {
   val rules: js.Array[PolicyRule]
 }
 
+object ClusterRole {
+  @scala.inline
+  def apply(
+    aggregationRule: AggregationRule,
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRole,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    rules: js.Array[PolicyRule]
+  ): ClusterRole = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregationRule")(aggregationRule)
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[ClusterRole]
+  }
+}
+

@@ -11,3 +11,14 @@ trait GPXOptions extends js.Object {
   ] = js.undefined
 }
 
+object GPXOptions {
+  @scala.inline
+  def apply(
+    readExtensions: js.Function2[/* feature */ openlayersLib.openlayersMod.Feature, /* node */ stdLib.Node, _] = null
+  ): GPXOptions = {
+    val __obj = js.Dynamic.literal()
+    if (readExtensions != null) __obj.updateDynamic("readExtensions")(readExtensions)
+    __obj.asInstanceOf[GPXOptions]
+  }
+}
+

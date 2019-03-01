@@ -117,3 +117,52 @@ trait RequestOptions extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    accept: java.lang.String = null,
+    agent: nodeLib.httpMod.Agent | scala.Boolean = null,
+    auth: needleLib.needleLibStrings.auto | needleLib.needleLibStrings.digest | needleLib.needleLibStrings.basic = null,
+    compressed: js.UndefOr[scala.Boolean] = js.undefined,
+    connection: java.lang.String = null,
+    content_type: java.lang.String = null,
+    cookies: Cookies = null,
+    follow: scala.Int | scala.Double = null,
+    follow_max: scala.Int | scala.Double = null,
+    headers: js.Object = null,
+    json: js.UndefOr[scala.Boolean] = js.undefined,
+    multipart: js.UndefOr[scala.Boolean] = js.undefined,
+    open_timeout: scala.Int | scala.Double = null,
+    password: java.lang.String = null,
+    proxy: java.lang.String = null,
+    read_timeout: scala.Int | scala.Double = null,
+    stream_length: scala.Int | scala.Double = null,
+    timeout: scala.Int | scala.Double = null,
+    user_agent: java.lang.String = null,
+    username: java.lang.String = null
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
+    if (cookies != null) __obj.updateDynamic("cookies")(cookies)
+    if (follow != null) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
+    if (follow_max != null) __obj.updateDynamic("follow_max")(follow_max.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
+    if (!js.isUndefined(multipart)) __obj.updateDynamic("multipart")(multipart)
+    if (open_timeout != null) __obj.updateDynamic("open_timeout")(open_timeout.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (read_timeout != null) __obj.updateDynamic("read_timeout")(read_timeout.asInstanceOf[js.Any])
+    if (stream_length != null) __obj.updateDynamic("stream_length")(stream_length.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

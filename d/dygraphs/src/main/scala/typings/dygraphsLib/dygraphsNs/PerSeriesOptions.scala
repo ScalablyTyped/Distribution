@@ -84,3 +84,40 @@ trait PerSeriesOptions extends js.Object {
   var strokeWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PerSeriesOptions {
+  @scala.inline
+  def apply(
+    axis: dygraphsLib.dygraphsLibStrings.y1 | dygraphsLib.dygraphsLibStrings.y2 = null,
+    color: java.lang.String = null,
+    drawPoints: js.UndefOr[scala.Boolean] = js.undefined,
+    fillAlpha: scala.Int | scala.Double = null,
+    fillGraph: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightCircleSize: scala.Int | scala.Double = null,
+    plotter: js.Any = null,
+    pointSize: scala.Int | scala.Double = null,
+    showInRangeSelector: js.UndefOr[scala.Boolean] = js.undefined,
+    stepPlot: js.UndefOr[scala.Boolean] = js.undefined,
+    strokeBorderColor: java.lang.String = null,
+    strokeBorderWidth: scala.Int | scala.Double = null,
+    strokePattern: js.Array[scala.Double] = null,
+    strokeWidth: scala.Int | scala.Double = null
+  ): PerSeriesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(drawPoints)) __obj.updateDynamic("drawPoints")(drawPoints)
+    if (fillAlpha != null) __obj.updateDynamic("fillAlpha")(fillAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillGraph)) __obj.updateDynamic("fillGraph")(fillGraph)
+    if (highlightCircleSize != null) __obj.updateDynamic("highlightCircleSize")(highlightCircleSize.asInstanceOf[js.Any])
+    if (plotter != null) __obj.updateDynamic("plotter")(plotter)
+    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInRangeSelector)) __obj.updateDynamic("showInRangeSelector")(showInRangeSelector)
+    if (!js.isUndefined(stepPlot)) __obj.updateDynamic("stepPlot")(stepPlot)
+    if (strokeBorderColor != null) __obj.updateDynamic("strokeBorderColor")(strokeBorderColor)
+    if (strokeBorderWidth != null) __obj.updateDynamic("strokeBorderWidth")(strokeBorderWidth.asInstanceOf[js.Any])
+    if (strokePattern != null) __obj.updateDynamic("strokePattern")(strokePattern)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PerSeriesOptions]
+  }
+}
+

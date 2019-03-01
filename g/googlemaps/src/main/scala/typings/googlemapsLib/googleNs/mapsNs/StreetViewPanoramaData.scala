@@ -13,3 +13,22 @@ trait StreetViewPanoramaData extends js.Object {
   var tiles: js.UndefOr[StreetViewTileData] = js.undefined
 }
 
+object StreetViewPanoramaData {
+  @scala.inline
+  def apply(
+    copyright: java.lang.String = null,
+    imageDate: java.lang.String = null,
+    links: js.Array[StreetViewLink] = null,
+    location: StreetViewLocation = null,
+    tiles: StreetViewTileData = null
+  ): StreetViewPanoramaData = {
+    val __obj = js.Dynamic.literal()
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (imageDate != null) __obj.updateDynamic("imageDate")(imageDate)
+    if (links != null) __obj.updateDynamic("links")(links)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (tiles != null) __obj.updateDynamic("tiles")(tiles)
+    __obj.asInstanceOf[StreetViewPanoramaData]
+  }
+}
+

@@ -25,3 +25,20 @@ trait Log extends js.Object {
   var version: sarifLib.sarifMod.LogNs.version
 }
 
+object Log {
+  @scala.inline
+  def apply(
+    runs: js.Array[Run],
+    version: sarifLib.sarifMod.LogNs.version,
+    $schema: java.lang.String = null,
+    properties: PropertyBag = null
+  ): Log = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("runs")(runs)
+    __obj.updateDynamic("version")(version)
+    if ($schema != null) __obj.updateDynamic("$schema")($schema)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Log]
+  }
+}
+

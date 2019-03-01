@@ -60,3 +60,38 @@ trait SliderTheme extends js.Object {
   var snaps: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SliderTheme {
+  @scala.inline
+  def apply(
+    container: java.lang.String = null,
+    editable: java.lang.String = null,
+    innerknob: java.lang.String = null,
+    innerprogress: java.lang.String = null,
+    input: java.lang.String = null,
+    knob: java.lang.String = null,
+    pinned: java.lang.String = null,
+    pressed: java.lang.String = null,
+    progress: java.lang.String = null,
+    ring: java.lang.String = null,
+    slider: java.lang.String = null,
+    snap: java.lang.String = null,
+    snaps: java.lang.String = null
+  ): SliderTheme = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (editable != null) __obj.updateDynamic("editable")(editable)
+    if (innerknob != null) __obj.updateDynamic("innerknob")(innerknob)
+    if (innerprogress != null) __obj.updateDynamic("innerprogress")(innerprogress)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (knob != null) __obj.updateDynamic("knob")(knob)
+    if (pinned != null) __obj.updateDynamic("pinned")(pinned)
+    if (pressed != null) __obj.updateDynamic("pressed")(pressed)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (ring != null) __obj.updateDynamic("ring")(ring)
+    if (slider != null) __obj.updateDynamic("slider")(slider)
+    if (snap != null) __obj.updateDynamic("snap")(snap)
+    if (snaps != null) __obj.updateDynamic("snaps")(snaps)
+    __obj.asInstanceOf[SliderTheme]
+  }
+}
+

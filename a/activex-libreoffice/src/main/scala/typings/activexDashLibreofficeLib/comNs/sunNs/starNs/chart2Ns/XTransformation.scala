@@ -28,3 +28,31 @@ trait XTransformation
   def transform(aValues: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XTransformation {
+  @scala.inline
+  def apply(
+    SourceDimension: scala.Double,
+    TargetDimension: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getSourceDimension: js.Function0[scala.Double],
+    getTargetDimension: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    transform: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ]
+  ): XTransformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SourceDimension")(SourceDimension)
+    __obj.updateDynamic("TargetDimension")(TargetDimension)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getSourceDimension")(getSourceDimension)
+    __obj.updateDynamic("getTargetDimension")(getTargetDimension)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[XTransformation]
+  }
+}
+

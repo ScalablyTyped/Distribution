@@ -18,3 +18,14 @@ trait PlatformInfo extends js.Object {
   var os: PlatformOs
 }
 
+object PlatformInfo {
+  @scala.inline
+  def apply(arch: PlatformArch, os: PlatformOs, nacl_arch: PlatformNaclArch = null): PlatformInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arch")(arch)
+    __obj.updateDynamic("os")(os)
+    if (nacl_arch != null) __obj.updateDynamic("nacl_arch")(nacl_arch)
+    __obj.asInstanceOf[PlatformInfo]
+  }
+}
+

@@ -14,3 +14,24 @@ trait NaptrRecord extends js.Object {
   var service: java.lang.String
 }
 
+object NaptrRecord {
+  @scala.inline
+  def apply(
+    flags: java.lang.String,
+    order: scala.Double,
+    preference: scala.Double,
+    regexp: java.lang.String,
+    replacement: java.lang.String,
+    service: java.lang.String
+  ): NaptrRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("preference")(preference)
+    __obj.updateDynamic("regexp")(regexp)
+    __obj.updateDynamic("replacement")(replacement)
+    __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[NaptrRecord]
+  }
+}
+

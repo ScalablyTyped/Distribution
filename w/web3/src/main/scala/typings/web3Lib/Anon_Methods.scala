@@ -9,3 +9,12 @@ trait Anon_Methods extends js.Object {
   var methods: js.Object
 }
 
+object Anon_Methods {
+  @scala.inline
+  def apply(methods: js.Object): Anon_Methods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("methods")(methods)
+    __obj.asInstanceOf[Anon_Methods]
+  }
+}
+

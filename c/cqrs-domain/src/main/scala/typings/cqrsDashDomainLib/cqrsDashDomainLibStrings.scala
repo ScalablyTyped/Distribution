@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object cqrsDashDomainLibStrings {
   @js.native
-  sealed trait azuretable extends js.Object
+  sealed trait azuretable
+    extends cqrsDashDomainLib.cqrsDashDomainMod.DomainNs.SupportedDBTypes
   
   @js.native
-  sealed trait inmemory extends js.Object
+  sealed trait inmemory
+    extends cqrsDashDomainLib.cqrsDashDomainMod.DomainNs.SupportedDBTypes
   
   @js.native
-  sealed trait mongodb extends js.Object
+  sealed trait mongodb
+    extends cqrsDashDomainLib.cqrsDashDomainMod.DomainNs.SupportedDBTypes
   
   @js.native
-  sealed trait redis extends js.Object
+  sealed trait redis
+    extends cqrsDashDomainLib.cqrsDashDomainMod.DomainNs.SupportedDBTypes
   
   @js.native
-  sealed trait tingodb extends js.Object
+  sealed trait tingodb
+    extends cqrsDashDomainLib.cqrsDashDomainMod.DomainNs.SupportedDBTypes
   
   @scala.inline
   def azuretable: azuretable = "azuretable".asInstanceOf[azuretable]

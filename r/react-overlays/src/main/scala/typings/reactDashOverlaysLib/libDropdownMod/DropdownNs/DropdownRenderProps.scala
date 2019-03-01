@@ -9,3 +9,12 @@ trait DropdownRenderProps extends js.Object {
   var props: reactDashOverlaysLib.Anon_Event
 }
 
+object DropdownRenderProps {
+  @scala.inline
+  def apply(props: reactDashOverlaysLib.Anon_Event): DropdownRenderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("props")(props)
+    __obj.asInstanceOf[DropdownRenderProps]
+  }
+}
+

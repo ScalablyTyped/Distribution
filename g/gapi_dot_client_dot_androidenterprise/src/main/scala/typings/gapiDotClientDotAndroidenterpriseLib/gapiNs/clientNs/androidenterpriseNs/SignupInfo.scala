@@ -14,3 +14,18 @@ trait SignupInfo extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SignupInfo {
+  @scala.inline
+  def apply(
+    completionToken: java.lang.String = null,
+    kind: java.lang.String = null,
+    url: java.lang.String = null
+  ): SignupInfo = {
+    val __obj = js.Dynamic.literal()
+    if (completionToken != null) __obj.updateDynamic("completionToken")(completionToken)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[SignupInfo]
+  }
+}
+

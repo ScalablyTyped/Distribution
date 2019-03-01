@@ -10,3 +10,12 @@ trait MergeCommand extends js.Object {
   var $merge: js.Object
 }
 
+object MergeCommand {
+  @scala.inline
+  def apply($merge: js.Object): MergeCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$merge")($merge)
+    __obj.asInstanceOf[MergeCommand]
+  }
+}
+

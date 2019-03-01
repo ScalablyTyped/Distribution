@@ -27,3 +27,22 @@ trait XAcceptor
   def stopAccepting(): scala.Unit
 }
 
+object XAcceptor {
+  @scala.inline
+  def apply(
+    accept: js.Function1[java.lang.String, XConnection],
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    stopAccepting: js.Function0[scala.Unit]
+  ): XAcceptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accept")(accept)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("stopAccepting")(stopAccepting)
+    __obj.asInstanceOf[XAcceptor]
+  }
+}
+

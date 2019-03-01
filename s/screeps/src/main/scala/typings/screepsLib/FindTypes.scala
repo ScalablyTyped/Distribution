@@ -56,3 +56,39 @@ trait FindTypes
   var `7`: RoomPosition
 }
 
+object FindTypes {
+  @scala.inline
+  def apply(
+    `1`: RoomPosition,
+    `10`: RoomPosition,
+    `101`: Creep,
+    `102`: Creep,
+    `103`: Creep,
+    `104`: Source,
+    `105`: Source,
+    `106`: Resource[ResourceConstant],
+    `107`: AnyStructure,
+    `108`: AnyOwnedStructure,
+    `109`: AnyOwnedStructure,
+    `110`: Flag,
+    `111`: ConstructionSite[BuildableStructureConstant],
+    `112`: StructureSpawn,
+    `113`: StructureSpawn,
+    `114`: ConstructionSite[BuildableStructureConstant],
+    `115`: ConstructionSite[BuildableStructureConstant],
+    `116`: Mineral[MineralConstant],
+    `117`: Nuke,
+    `118`: Tombstone,
+    `3`: RoomPosition,
+    `5`: RoomPosition,
+    `7`: RoomPosition,
+    NumberDictionary: /* key */ org.scalablytyped.runtime.NumberDictionary[
+      RoomPosition | Creep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
+    ] = null
+  ): FindTypes = {
+    val __obj = js.Dynamic.literal(`1` = `1`, `10` = `10`, `101` = `101`, `102` = `102`, `103` = `103`, `104` = `104`, `105` = `105`, `106` = `106`, `107` = `107`, `108` = `108`, `109` = `109`, `110` = `110`, `111` = `111`, `112` = `112`, `113` = `113`, `114` = `114`, `115` = `115`, `116` = `116`, `117` = `117`, `118` = `118`, `3` = `3`, `5` = `5`, `7` = `7`)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[FindTypes]
+  }
+}
+

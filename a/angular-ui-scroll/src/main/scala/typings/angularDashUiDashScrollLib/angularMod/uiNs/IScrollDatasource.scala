@@ -23,3 +23,14 @@ trait IScrollDatasource[T] extends js.Object {
   def get(index: scala.Double, count: scala.Double, success: js.Function1[/* results */ js.Array[T], _]): scala.Unit
 }
 
+object IScrollDatasource {
+  @scala.inline
+  def apply[T](
+    get: js.Function3[scala.Double, scala.Double, js.Function1[/* results */ js.Array[T], _], scala.Unit]
+  ): IScrollDatasource[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[IScrollDatasource[T]]
+  }
+}
+

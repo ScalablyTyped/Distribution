@@ -149,3 +149,82 @@ trait GridOptions[T /* <: SlickData */] extends js.Object {
   var topPanelHeight: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GridOptions {
+  @scala.inline
+  def apply[T /* <: SlickData */](
+    asyncEditorLoadDelay: scala.Int | scala.Double = null,
+    asyncEditorLoading: js.UndefOr[scala.Boolean] = js.undefined,
+    asyncPostRenderDelay: scala.Int | scala.Double = null,
+    autoEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    cellFlashingCssClass: java.lang.String = null,
+    cellHighlightCssClass: java.lang.String = null,
+    dataItemColumnValueExtractor: js.Any = null,
+    defaultColumnWidth: scala.Int | scala.Double = null,
+    defaultFormatter: Formatter[T] = null,
+    editCommandHandler: js.Any = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    editorFactory: EditorFactory = null,
+    editorLock: EditorLock[T] = null,
+    enableAddRow: js.UndefOr[scala.Boolean] = js.undefined,
+    enableAsyncPostRender: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCellNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCellRangeSelection: js.Any = null,
+    enableColumnReorder: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowReordering: js.Any = null,
+    enableTextSelectionOnCells: js.UndefOr[scala.Boolean] = js.undefined,
+    explicitInitialization: js.UndefOr[scala.Boolean] = js.undefined,
+    forceFitColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    forceSyncScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    formatterFactory: FormatterFactory[T] = null,
+    fullWidthRows: js.UndefOr[scala.Boolean] = js.undefined,
+    headerRowHeight: scala.Int | scala.Double = null,
+    leaveSpaceForNewRows: js.UndefOr[scala.Boolean] = js.undefined,
+    multiColumnSort: js.UndefOr[scala.Boolean] = js.undefined,
+    multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    rowHeight: scala.Int | scala.Double = null,
+    selectedCellCssClass: java.lang.String = null,
+    showHeaderRow: js.UndefOr[scala.Boolean] = js.undefined,
+    syncColumnCellResize: js.UndefOr[scala.Boolean] = js.undefined,
+    topPanelHeight: scala.Int | scala.Double = null
+  ): GridOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (asyncEditorLoadDelay != null) __obj.updateDynamic("asyncEditorLoadDelay")(asyncEditorLoadDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncEditorLoading)) __obj.updateDynamic("asyncEditorLoading")(asyncEditorLoading)
+    if (asyncPostRenderDelay != null) __obj.updateDynamic("asyncPostRenderDelay")(asyncPostRenderDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoEdit)) __obj.updateDynamic("autoEdit")(autoEdit)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (cellFlashingCssClass != null) __obj.updateDynamic("cellFlashingCssClass")(cellFlashingCssClass)
+    if (cellHighlightCssClass != null) __obj.updateDynamic("cellHighlightCssClass")(cellHighlightCssClass)
+    if (dataItemColumnValueExtractor != null) __obj.updateDynamic("dataItemColumnValueExtractor")(dataItemColumnValueExtractor)
+    if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
+    if (defaultFormatter != null) __obj.updateDynamic("defaultFormatter")(defaultFormatter)
+    if (editCommandHandler != null) __obj.updateDynamic("editCommandHandler")(editCommandHandler)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (editorFactory != null) __obj.updateDynamic("editorFactory")(editorFactory)
+    if (editorLock != null) __obj.updateDynamic("editorLock")(editorLock)
+    if (!js.isUndefined(enableAddRow)) __obj.updateDynamic("enableAddRow")(enableAddRow)
+    if (!js.isUndefined(enableAsyncPostRender)) __obj.updateDynamic("enableAsyncPostRender")(enableAsyncPostRender)
+    if (!js.isUndefined(enableCellNavigation)) __obj.updateDynamic("enableCellNavigation")(enableCellNavigation)
+    if (enableCellRangeSelection != null) __obj.updateDynamic("enableCellRangeSelection")(enableCellRangeSelection)
+    if (!js.isUndefined(enableColumnReorder)) __obj.updateDynamic("enableColumnReorder")(enableColumnReorder)
+    if (enableRowReordering != null) __obj.updateDynamic("enableRowReordering")(enableRowReordering)
+    if (!js.isUndefined(enableTextSelectionOnCells)) __obj.updateDynamic("enableTextSelectionOnCells")(enableTextSelectionOnCells)
+    if (!js.isUndefined(explicitInitialization)) __obj.updateDynamic("explicitInitialization")(explicitInitialization)
+    if (!js.isUndefined(forceFitColumns)) __obj.updateDynamic("forceFitColumns")(forceFitColumns)
+    if (!js.isUndefined(forceSyncScrolling)) __obj.updateDynamic("forceSyncScrolling")(forceSyncScrolling)
+    if (formatterFactory != null) __obj.updateDynamic("formatterFactory")(formatterFactory)
+    if (!js.isUndefined(fullWidthRows)) __obj.updateDynamic("fullWidthRows")(fullWidthRows)
+    if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(leaveSpaceForNewRows)) __obj.updateDynamic("leaveSpaceForNewRows")(leaveSpaceForNewRows)
+    if (!js.isUndefined(multiColumnSort)) __obj.updateDynamic("multiColumnSort")(multiColumnSort)
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (selectedCellCssClass != null) __obj.updateDynamic("selectedCellCssClass")(selectedCellCssClass)
+    if (!js.isUndefined(showHeaderRow)) __obj.updateDynamic("showHeaderRow")(showHeaderRow)
+    if (!js.isUndefined(syncColumnCellResize)) __obj.updateDynamic("syncColumnCellResize")(syncColumnCellResize)
+    if (topPanelHeight != null) __obj.updateDynamic("topPanelHeight")(topPanelHeight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridOptions[T]]
+  }
+}
+

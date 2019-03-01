@@ -24,3 +24,22 @@ trait ParametersRequest
   var Parameters: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
 }
 
+object ParametersRequest {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Connection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Parameters: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+  ): ParametersRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Classification")(Classification)
+    __obj.updateDynamic("Connection")(Connection)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("Parameters")(Parameters)
+    __obj.asInstanceOf[ParametersRequest]
+  }
+}
+

@@ -13,3 +13,19 @@ trait FoldableComposition22C[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpD
   ): B
 }
 
+object FoldableComposition22C {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](
+    reduce: js.Function3[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
+      js.Any, 
+      js.Function2[js.Any, js.Any, js.Any], 
+      js.Any
+    ]
+  ): FoldableComposition22C[F, G, LG] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reduce")(reduce)
+    __obj.asInstanceOf[FoldableComposition22C[F, G, LG]]
+  }
+}
+

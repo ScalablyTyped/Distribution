@@ -17,12 +17,14 @@ class QueryList[T] protected ()
     * an unexpected external change to the active item has been made.
     */
   var expectedNextActiveItem: js.Any = js.native
+  var handleItemCreate: js.Any = js.native
   var handleItemSelect: js.Any = js.native
   var handleKeyDown: js.Any = js.native
   var handleKeyUp: js.Any = js.native
   var handleQueryChange: js.Any = js.native
   var itemsParentRef: js.UndefOr[js.Any] = js.native
   var refHandlers: js.Any = js.native
+  var renderCreateItemMenuItem: js.Any = js.native
   /** wrapper around `itemRenderer` to inject props */
   var renderItem: js.Any = js.native
   /** default `itemListRenderer` implementation */
@@ -48,6 +50,7 @@ class QueryList[T] protected ()
     */
   /* private */ def getNextActiveItem(direction: js.Any): js.Any = js.native
   /* private */ def getNextActiveItem(direction: js.Any, startIndex: js.Any): js.Any = js.native
+  /* private */ def isCreateItemRendered(): js.Any = js.native
   def scrollActiveItemIntoView(): scala.Unit = js.native
   /* private */ def setActiveItem(activeItem: js.Any): js.Any = js.native
   def setQuery(query: java.lang.String): scala.Unit = js.native
@@ -62,6 +65,7 @@ class QueryList[T] protected ()
     resetActiveItem: scala.Boolean,
     props: stdLib.Readonly[atBlueprintjsSelectLib.Anon_Children] with stdLib.Readonly[IQueryListProps[T]]
   ): scala.Unit = js.native
+  /* private */ def wouldCreatedItemMatchSomeExistingItem(): js.Any = js.native
 }
 
 /* static members */

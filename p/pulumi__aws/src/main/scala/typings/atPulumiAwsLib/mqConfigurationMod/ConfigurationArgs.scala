@@ -34,3 +34,24 @@ trait ConfigurationArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object ConfigurationArgs {
+  @scala.inline
+  def apply(
+    data: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    engineType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ConfigurationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("engineType")(engineType.asInstanceOf[js.Any])
+    __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConfigurationArgs]
+  }
+}
+

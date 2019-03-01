@@ -63,3 +63,32 @@ trait FlagStrapOptions extends js.Object {
   var scrollableHeight: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FlagStrapOptions {
+  @scala.inline
+  def apply(
+    buttonSize: java.lang.String,
+    buttonType: java.lang.String,
+    inputName: java.lang.String,
+    labelMargin: java.lang.String,
+    placeholder: scala.Boolean | FlagStrapPlaceholderOptions,
+    scrollable: scala.Boolean,
+    countries: js.Object = null,
+    inputId: java.lang.String = null,
+    onSelect: js.Function2[/* value */ js.Any, /* element */ js.Any, scala.Unit] = null,
+    scrollableHeight: java.lang.String = null
+  ): FlagStrapOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buttonSize")(buttonSize)
+    __obj.updateDynamic("buttonType")(buttonType)
+    __obj.updateDynamic("inputName")(inputName)
+    __obj.updateDynamic("labelMargin")(labelMargin)
+    __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    __obj.updateDynamic("scrollable")(scrollable)
+    if (countries != null) __obj.updateDynamic("countries")(countries)
+    if (inputId != null) __obj.updateDynamic("inputId")(inputId)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (scrollableHeight != null) __obj.updateDynamic("scrollableHeight")(scrollableHeight)
+    __obj.asInstanceOf[FlagStrapOptions]
+  }
+}
+

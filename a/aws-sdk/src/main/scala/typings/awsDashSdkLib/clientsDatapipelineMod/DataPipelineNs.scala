@@ -1039,19 +1039,25 @@ object DataPipelineNs extends js.Object {
     var warnings: js.UndefOr[validationMessages] = js.undefined
   }
   
+  trait _OperatorType extends js.Object
+  
+  trait _TaskStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type OperatorType = awsDashSdkLib.awsDashSdkLibStrings.EQ | awsDashSdkLib.awsDashSdkLibStrings.REF_EQ | awsDashSdkLib.awsDashSdkLibStrings.LE | awsDashSdkLib.awsDashSdkLibStrings.GE | awsDashSdkLib.awsDashSdkLibStrings.BETWEEN | java.lang.String
+  type OperatorType = _OperatorType | java.lang.String
   type ParameterAttributeList = js.Array[ParameterAttribute]
   type ParameterObjectList = js.Array[ParameterObject]
   type ParameterValueList = js.Array[ParameterValue]
   type PipelineDescriptionList = js.Array[PipelineDescription]
   type PipelineObjectList = js.Array[PipelineObject]
   type SelectorList = js.Array[Selector]
-  type TaskStatus = awsDashSdkLib.awsDashSdkLibStrings.FINISHED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.FALSE | java.lang.String
+  type TaskStatus = _TaskStatus | java.lang.String
   type ValidationErrors = js.Array[ValidationError]
   type ValidationWarnings = js.Array[ValidationWarning]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2012-10-29` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type attributeNameString = java.lang.String
   type attributeValueString = java.lang.String
   type cancelActive = scala.Boolean

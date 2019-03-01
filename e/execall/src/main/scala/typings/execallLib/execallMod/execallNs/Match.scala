@@ -11,3 +11,13 @@ trait Match extends js.Object {
   var sub: js.Array[java.lang.String]
 }
 
+object Match {
+  @scala.inline
+  def apply(index: scala.Double, `match`: java.lang.String, sub: js.Array[java.lang.String]): Match = {
+    val __obj = js.Dynamic.literal(`match` = `match`)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("sub")(sub)
+    __obj.asInstanceOf[Match]
+  }
+}
+

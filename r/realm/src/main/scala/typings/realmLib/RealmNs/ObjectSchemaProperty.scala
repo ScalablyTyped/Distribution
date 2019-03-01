@@ -18,3 +18,23 @@ trait ObjectSchemaProperty extends js.Object {
   var `type`: PropertyType
 }
 
+object ObjectSchemaProperty {
+  @scala.inline
+  def apply(
+    `type`: PropertyType,
+    default: js.Any = null,
+    indexed: js.UndefOr[scala.Boolean] = js.undefined,
+    objectType: java.lang.String = null,
+    optional: js.UndefOr[scala.Boolean] = js.undefined,
+    property: java.lang.String = null
+  ): ObjectSchemaProperty = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (property != null) __obj.updateDynamic("property")(property)
+    __obj.asInstanceOf[ObjectSchemaProperty]
+  }
+}
+

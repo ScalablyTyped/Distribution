@@ -64,3 +64,78 @@ trait Anon_Elements extends js.Object {
   ]
 }
 
+object Anon_Elements {
+  @scala.inline
+  def apply(
+    Feature: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DataNs.Feature],
+    Geometry: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DataNs.Geometry],
+    GeometryCollection: org.scalablytyped.runtime.Instantiable1[
+      /* elements */ js.Array[
+        js.Array[googlemapsLib.googleNs.mapsNs.DataNs.Geometry] | js.Array[googlemapsLib.googleNs.mapsNs.LatLng] | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+      ], 
+      googlemapsLib.googleNs.mapsNs.DataNs.GeometryCollection
+    ],
+    LineString: org.scalablytyped.runtime.Instantiable1[
+      /* elements */ js.Array[
+        googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+      ], 
+      googlemapsLib.googleNs.mapsNs.DataNs.LineString
+    ],
+    LinearRing: org.scalablytyped.runtime.Instantiable1[
+      /* elements */ js.Array[
+        googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+      ], 
+      googlemapsLib.googleNs.mapsNs.DataNs.LinearRing
+    ],
+    MultiLineString: org.scalablytyped.runtime.Instantiable1[
+      /* elements */ js.Array[
+        googlemapsLib.googleNs.mapsNs.DataNs.LineString | (js.Array[
+          googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+        ])
+      ], 
+      googlemapsLib.googleNs.mapsNs.DataNs.MultiLineString
+    ],
+    MultiPoint: org.scalablytyped.runtime.Instantiable1[
+      /* elements */ js.Array[
+        googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+      ], 
+      googlemapsLib.googleNs.mapsNs.DataNs.MultiPoint
+    ],
+    MultiPolygon: org.scalablytyped.runtime.Instantiable1[
+      /* elements */ js.Array[
+        googlemapsLib.googleNs.mapsNs.DataNs.Polygon | (js.Array[
+          googlemapsLib.googleNs.mapsNs.DataNs.LinearRing | (js.Array[
+            googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+          ])
+        ])
+      ], 
+      googlemapsLib.googleNs.mapsNs.DataNs.MultiPolygon
+    ],
+    Point: org.scalablytyped.runtime.Instantiable1[
+      /* latLng */ googlemapsLib.googleNs.mapsNs.LatLng, 
+      googlemapsLib.googleNs.mapsNs.DataNs.Point
+    ],
+    Polygon: org.scalablytyped.runtime.Instantiable1[
+      /* elements */ js.Array[
+        googlemapsLib.googleNs.mapsNs.DataNs.LinearRing | (js.Array[
+          googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+        ])
+      ], 
+      googlemapsLib.googleNs.mapsNs.DataNs.Polygon
+    ]
+  ): Anon_Elements = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Feature")(Feature)
+    __obj.updateDynamic("Geometry")(Geometry)
+    __obj.updateDynamic("GeometryCollection")(GeometryCollection)
+    __obj.updateDynamic("LineString")(LineString)
+    __obj.updateDynamic("LinearRing")(LinearRing)
+    __obj.updateDynamic("MultiLineString")(MultiLineString)
+    __obj.updateDynamic("MultiPoint")(MultiPoint)
+    __obj.updateDynamic("MultiPolygon")(MultiPolygon)
+    __obj.updateDynamic("Point")(Point)
+    __obj.updateDynamic("Polygon")(Polygon)
+    __obj.asInstanceOf[Anon_Elements]
+  }
+}
+

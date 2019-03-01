@@ -37,3 +37,22 @@ trait ErdmOptions extends js.Object {
   ] = js.undefined
 }
 
+object ErdmOptions {
+  @scala.inline
+  def apply(
+    callOnAdd: js.UndefOr[scala.Boolean] = js.undefined,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    idHandler: IdHandlerProps = null,
+    reporter: ReporterProps = null,
+    strategy: elementDashResizeDashDetectorLib.elementDashResizeDashDetectorLibStrings.scroll | elementDashResizeDashDetectorLib.elementDashResizeDashDetectorLibStrings.`object` = null
+  ): ErdmOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(callOnAdd)) __obj.updateDynamic("callOnAdd")(callOnAdd)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (idHandler != null) __obj.updateDynamic("idHandler")(idHandler)
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ErdmOptions]
+  }
+}
+

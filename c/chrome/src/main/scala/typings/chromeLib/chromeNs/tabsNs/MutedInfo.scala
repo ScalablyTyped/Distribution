@@ -23,3 +23,14 @@ trait MutedInfo extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MutedInfo {
+  @scala.inline
+  def apply(muted: scala.Boolean, extensionId: java.lang.String = null, reason: java.lang.String = null): MutedInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("muted")(muted)
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[MutedInfo]
+  }
+}
+

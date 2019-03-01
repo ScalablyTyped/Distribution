@@ -10,3 +10,13 @@ trait TabAttachInfo extends js.Object {
   var newWindowId: scala.Double
 }
 
+object TabAttachInfo {
+  @scala.inline
+  def apply(newPosition: scala.Double, newWindowId: scala.Double): TabAttachInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newPosition")(newPosition)
+    __obj.updateDynamic("newWindowId")(newWindowId)
+    __obj.asInstanceOf[TabAttachInfo]
+  }
+}
+

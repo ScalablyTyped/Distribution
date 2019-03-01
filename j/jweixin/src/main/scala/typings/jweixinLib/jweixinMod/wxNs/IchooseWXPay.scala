@@ -23,3 +23,27 @@ trait IchooseWXPay extends BaseParams {
   def success_MIchooseWXPay(res: js.Any): scala.Unit
 }
 
+object IchooseWXPay {
+  @scala.inline
+  def apply(
+    nonceStr: java.lang.String,
+    `package`: java.lang.String,
+    paySign: java.lang.String,
+    signType: java.lang.String,
+    success: js.Function1[js.Any, scala.Unit],
+    timestamp: scala.Double,
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): IchooseWXPay = {
+    val __obj = js.Dynamic.literal(`package` = `package`)
+    __obj.updateDynamic("nonceStr")(nonceStr)
+    __obj.updateDynamic("paySign")(paySign)
+    __obj.updateDynamic("signType")(signType)
+    __obj.updateDynamic("success")(success)
+    __obj.updateDynamic("timestamp")(timestamp)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[IchooseWXPay]
+  }
+}
+

@@ -38,3 +38,32 @@ trait RowSelectedEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RowSelectedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    foreignKeyData: js.Any = null,
+    model: js.Any = null,
+    prevRow: js.Any = null,
+    prevRowIndex: scala.Int | scala.Double = null,
+    row: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null,
+    selectedData: js.Any = null,
+    `type`: java.lang.String = null
+  ): RowSelectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (prevRow != null) __obj.updateDynamic("prevRow")(prevRow)
+    if (prevRowIndex != null) __obj.updateDynamic("prevRowIndex")(prevRowIndex.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RowSelectedEventArgs]
+  }
+}
+

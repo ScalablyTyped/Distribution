@@ -19,3 +19,16 @@ trait ListImpressionMetricsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListImpressionMetricsResponse {
+  @scala.inline
+  def apply(
+    impressionMetricsRows: js.Array[ImpressionMetricsRow] = null,
+    nextPageToken: java.lang.String = null
+  ): ListImpressionMetricsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (impressionMetricsRows != null) __obj.updateDynamic("impressionMetricsRows")(impressionMetricsRows)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListImpressionMetricsResponse]
+  }
+}
+

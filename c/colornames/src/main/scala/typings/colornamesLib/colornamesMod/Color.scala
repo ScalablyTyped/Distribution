@@ -24,3 +24,20 @@ trait Color extends js.Object {
   var vga: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Color {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    value: java.lang.String,
+    css: js.UndefOr[scala.Boolean] = js.undefined,
+    vga: js.UndefOr[scala.Boolean] = js.undefined
+  ): Color = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(css)) __obj.updateDynamic("css")(css)
+    if (!js.isUndefined(vga)) __obj.updateDynamic("vga")(vga)
+    __obj.asInstanceOf[Color]
+  }
+}
+

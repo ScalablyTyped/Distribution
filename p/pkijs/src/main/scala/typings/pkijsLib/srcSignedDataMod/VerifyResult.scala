@@ -14,3 +14,24 @@ trait VerifyResult extends js.Object {
   var signerCertificateVerified: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object VerifyResult {
+  @scala.inline
+  def apply(
+    code: scala.Double,
+    date: stdLib.Date,
+    message: java.lang.String,
+    signatureVerified: js.UndefOr[scala.Boolean] = js.undefined,
+    signerCertificate: pkijsLib.srcCertificateMod.default = null,
+    signerCertificateVerified: js.UndefOr[scala.Boolean] = js.undefined
+  ): VerifyResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(signatureVerified)) __obj.updateDynamic("signatureVerified")(signatureVerified)
+    if (signerCertificate != null) __obj.updateDynamic("signerCertificate")(signerCertificate)
+    if (!js.isUndefined(signerCertificateVerified)) __obj.updateDynamic("signerCertificateVerified")(signerCertificateVerified)
+    __obj.asInstanceOf[VerifyResult]
+  }
+}
+

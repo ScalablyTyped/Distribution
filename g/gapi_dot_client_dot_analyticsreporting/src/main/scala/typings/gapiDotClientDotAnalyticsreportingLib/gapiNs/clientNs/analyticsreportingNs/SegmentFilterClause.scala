@@ -14,3 +14,18 @@ trait SegmentFilterClause extends js.Object {
   var not: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SegmentFilterClause {
+  @scala.inline
+  def apply(
+    dimensionFilter: SegmentDimensionFilter = null,
+    metricFilter: SegmentMetricFilter = null,
+    not: js.UndefOr[scala.Boolean] = js.undefined
+  ): SegmentFilterClause = {
+    val __obj = js.Dynamic.literal()
+    if (dimensionFilter != null) __obj.updateDynamic("dimensionFilter")(dimensionFilter)
+    if (metricFilter != null) __obj.updateDynamic("metricFilter")(metricFilter)
+    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not)
+    __obj.asInstanceOf[SegmentFilterClause]
+  }
+}
+

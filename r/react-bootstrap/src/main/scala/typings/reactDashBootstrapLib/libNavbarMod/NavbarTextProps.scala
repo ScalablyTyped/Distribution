@@ -10,3 +10,16 @@ trait NavbarTextProps
   var pullRight: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NavbarTextProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[NavbarText] = null,
+    pullRight: js.UndefOr[scala.Boolean] = js.undefined
+  ): NavbarTextProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
+    __obj.asInstanceOf[NavbarTextProps]
+  }
+}
+

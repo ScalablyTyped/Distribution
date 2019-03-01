@@ -12,3 +12,20 @@ trait CherrypickOptions extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CherrypickOptions {
+  @scala.inline
+  def apply(
+    checkoutOpts: nodegitLib.checkoutDashOptionsMod.CheckoutOptions = null,
+    mainline: scala.Int | scala.Double = null,
+    mergeOpts: nodegitLib.mergeDashOptionsMod.MergeOptions = null,
+    version: scala.Int | scala.Double = null
+  ): CherrypickOptions = {
+    val __obj = js.Dynamic.literal()
+    if (checkoutOpts != null) __obj.updateDynamic("checkoutOpts")(checkoutOpts)
+    if (mainline != null) __obj.updateDynamic("mainline")(mainline.asInstanceOf[js.Any])
+    if (mergeOpts != null) __obj.updateDynamic("mergeOpts")(mergeOpts)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CherrypickOptions]
+  }
+}
+

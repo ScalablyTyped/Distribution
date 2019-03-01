@@ -84,7 +84,6 @@ package object buildSrcFileMod {
     scala.Unit
   ]
   type MoveResponse = js.Array[requestLib.requestMod.requestNs.Response]
-  type PredefinedAcl = atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.authenticatedRead | atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.bucketOwnerFullControl | atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.bucketOwnerRead | atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.`private` | atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.projectPrivate | atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.publicRead
   type RotateEncryptionKeyCallback = CopyCallback
   type RotateEncryptionKeyOptions = java.lang.String | nodeLib.Buffer | EncryptionKeyOptions
   type RotateEncryptionKeyResponse = CopyResponse

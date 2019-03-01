@@ -285,3 +285,102 @@ trait Relay extends js.Object {
   ] = js.undefined
 }
 
+object Relay {
+  @scala.inline
+  def apply(
+    consensus_weight: scala.Double,
+    fingerprint: java.lang.String,
+    first_seen: java.lang.String,
+    last_changed_address_or_port: java.lang.String,
+    last_seen: java.lang.String,
+    nickname: java.lang.String,
+    or_addresses: js.Array[java.lang.String],
+    running: scala.Boolean,
+    advertised_bandwidth: scala.Int | scala.Double = null,
+    alleged_family: js.Array[java.lang.String] = null,
+    as: java.lang.String = null,
+    as_name: java.lang.String = null,
+    bandwidth_burst: scala.Int | scala.Double = null,
+    bandwidth_rate: scala.Int | scala.Double = null,
+    city_name: java.lang.String = null,
+    consensus_weight_fraction: scala.Int | scala.Double = null,
+    contact: java.lang.String = null,
+    country: java.lang.String = null,
+    country_name: java.lang.String = null,
+    dir_address: java.lang.String = null,
+    effective_family: js.Array[java.lang.String] = null,
+    exit_addresses: js.Array[java.lang.String] = null,
+    exit_policy: js.Array[java.lang.String] = null,
+    exit_policy_summary: onionooLib.Anon_Accept = null,
+    exit_policy_v6_summary: onionooLib.Anon_Accept = null,
+    exit_probability: scala.Int | scala.Double = null,
+    flags: js.Array[java.lang.String] = null,
+    guard_probability: scala.Int | scala.Double = null,
+    hibernating: js.UndefOr[scala.Boolean] = js.undefined,
+    host_name: java.lang.String = null,
+    indirect_family: js.Array[java.lang.String] = null,
+    last_restarted: java.lang.String = null,
+    latitude: scala.Int | scala.Double = null,
+    longitude: scala.Int | scala.Double = null,
+    measured: js.UndefOr[scala.Boolean] = js.undefined,
+    middle_probability: scala.Int | scala.Double = null,
+    observed_bandwidth: scala.Int | scala.Double = null,
+    platform: java.lang.String = null,
+    recommended_version: js.UndefOr[scala.Boolean] = js.undefined,
+    region_name: java.lang.String = null,
+    unreachable_or_addresses: js.Array[java.lang.String] = null,
+    unverified_host_names: js.Array[java.lang.String] = null,
+    verified_host_names: js.Array[java.lang.String] = null,
+    version: java.lang.String = null,
+    version_status: onionooLib.onionooLibStrings.recommended | onionooLib.onionooLibStrings.experimental | onionooLib.onionooLibStrings.obsolete | (onionooLib.onionooLibStrings.`new in series`) | onionooLib.onionooLibStrings.unrecommended = null
+  ): Relay = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("consensus_weight")(consensus_weight)
+    __obj.updateDynamic("fingerprint")(fingerprint)
+    __obj.updateDynamic("first_seen")(first_seen)
+    __obj.updateDynamic("last_changed_address_or_port")(last_changed_address_or_port)
+    __obj.updateDynamic("last_seen")(last_seen)
+    __obj.updateDynamic("nickname")(nickname)
+    __obj.updateDynamic("or_addresses")(or_addresses)
+    __obj.updateDynamic("running")(running)
+    if (advertised_bandwidth != null) __obj.updateDynamic("advertised_bandwidth")(advertised_bandwidth.asInstanceOf[js.Any])
+    if (alleged_family != null) __obj.updateDynamic("alleged_family")(alleged_family)
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (as_name != null) __obj.updateDynamic("as_name")(as_name)
+    if (bandwidth_burst != null) __obj.updateDynamic("bandwidth_burst")(bandwidth_burst.asInstanceOf[js.Any])
+    if (bandwidth_rate != null) __obj.updateDynamic("bandwidth_rate")(bandwidth_rate.asInstanceOf[js.Any])
+    if (city_name != null) __obj.updateDynamic("city_name")(city_name)
+    if (consensus_weight_fraction != null) __obj.updateDynamic("consensus_weight_fraction")(consensus_weight_fraction.asInstanceOf[js.Any])
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (country_name != null) __obj.updateDynamic("country_name")(country_name)
+    if (dir_address != null) __obj.updateDynamic("dir_address")(dir_address)
+    if (effective_family != null) __obj.updateDynamic("effective_family")(effective_family)
+    if (exit_addresses != null) __obj.updateDynamic("exit_addresses")(exit_addresses)
+    if (exit_policy != null) __obj.updateDynamic("exit_policy")(exit_policy)
+    if (exit_policy_summary != null) __obj.updateDynamic("exit_policy_summary")(exit_policy_summary)
+    if (exit_policy_v6_summary != null) __obj.updateDynamic("exit_policy_v6_summary")(exit_policy_v6_summary)
+    if (exit_probability != null) __obj.updateDynamic("exit_probability")(exit_probability.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (guard_probability != null) __obj.updateDynamic("guard_probability")(guard_probability.asInstanceOf[js.Any])
+    if (!js.isUndefined(hibernating)) __obj.updateDynamic("hibernating")(hibernating)
+    if (host_name != null) __obj.updateDynamic("host_name")(host_name)
+    if (indirect_family != null) __obj.updateDynamic("indirect_family")(indirect_family)
+    if (last_restarted != null) __obj.updateDynamic("last_restarted")(last_restarted)
+    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    if (!js.isUndefined(measured)) __obj.updateDynamic("measured")(measured)
+    if (middle_probability != null) __obj.updateDynamic("middle_probability")(middle_probability.asInstanceOf[js.Any])
+    if (observed_bandwidth != null) __obj.updateDynamic("observed_bandwidth")(observed_bandwidth.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (!js.isUndefined(recommended_version)) __obj.updateDynamic("recommended_version")(recommended_version)
+    if (region_name != null) __obj.updateDynamic("region_name")(region_name)
+    if (unreachable_or_addresses != null) __obj.updateDynamic("unreachable_or_addresses")(unreachable_or_addresses)
+    if (unverified_host_names != null) __obj.updateDynamic("unverified_host_names")(unverified_host_names)
+    if (verified_host_names != null) __obj.updateDynamic("verified_host_names")(verified_host_names)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (version_status != null) __obj.updateDynamic("version_status")(version_status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Relay]
+  }
+}
+

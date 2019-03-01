@@ -10,3 +10,12 @@ trait CreateOption extends js.Object {
   var autoResize: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CreateOption {
+  @scala.inline
+  def apply(autoResize: js.UndefOr[scala.Boolean] = js.undefined): CreateOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize)
+    __obj.asInstanceOf[CreateOption]
+  }
+}
+

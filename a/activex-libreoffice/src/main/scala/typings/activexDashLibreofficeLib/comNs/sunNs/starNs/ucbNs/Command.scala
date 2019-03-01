@@ -22,3 +22,14 @@ trait Command extends js.Object {
   var Name: java.lang.String
 }
 
+object Command {
+  @scala.inline
+  def apply(Argument: js.Any, Handle: scala.Double, Name: java.lang.String): Command = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Argument")(Argument)
+    __obj.updateDynamic("Handle")(Handle)
+    __obj.updateDynamic("Name")(Name)
+    __obj.asInstanceOf[Command]
+  }
+}
+

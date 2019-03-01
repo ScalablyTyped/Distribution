@@ -22,3 +22,40 @@ trait TeamDto extends js.Object {
   var thirdLastJoinDate: scala.Double
 }
 
+object TeamDto {
+  @scala.inline
+  def apply(
+    createDate: scala.Double,
+    fullId: java.lang.String,
+    lastGameDate: scala.Double,
+    lastJoinDate: scala.Double,
+    lastJoinedRankedTeamQueueDate: scala.Double,
+    matchHistory: js.Array[MatchHistorySummaryDto],
+    modifyDate: scala.Double,
+    name: java.lang.String,
+    roster: RosterDto,
+    secondLastJoinDate: scala.Double,
+    status: java.lang.String,
+    tag: java.lang.String,
+    teamStatDetails: js.Array[TeamStatDetailDto],
+    thirdLastJoinDate: scala.Double
+  ): TeamDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createDate")(createDate)
+    __obj.updateDynamic("fullId")(fullId)
+    __obj.updateDynamic("lastGameDate")(lastGameDate)
+    __obj.updateDynamic("lastJoinDate")(lastJoinDate)
+    __obj.updateDynamic("lastJoinedRankedTeamQueueDate")(lastJoinedRankedTeamQueueDate)
+    __obj.updateDynamic("matchHistory")(matchHistory)
+    __obj.updateDynamic("modifyDate")(modifyDate)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("roster")(roster)
+    __obj.updateDynamic("secondLastJoinDate")(secondLastJoinDate)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("tag")(tag)
+    __obj.updateDynamic("teamStatDetails")(teamStatDetails)
+    __obj.updateDynamic("thirdLastJoinDate")(thirdLastJoinDate)
+    __obj.asInstanceOf[TeamDto]
+  }
+}
+

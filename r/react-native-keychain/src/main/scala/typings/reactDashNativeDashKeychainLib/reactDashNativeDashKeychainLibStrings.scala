@@ -7,52 +7,68 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashKeychainLibStrings {
   @js.native
-  sealed trait AccessibleAfterFirstUnlock extends js.Object
+  sealed trait AccessibleAfterFirstUnlock
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessible
   
   @js.native
-  sealed trait AccessibleAfterFirstUnlockThisDeviceOnly extends js.Object
+  sealed trait AccessibleAfterFirstUnlockThisDeviceOnly
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessible
   
   @js.native
-  sealed trait AccessibleAlways extends js.Object
+  sealed trait AccessibleAlways
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessible
   
   @js.native
-  sealed trait AccessibleAlwaysThisDeviceOnly extends js.Object
+  sealed trait AccessibleAlwaysThisDeviceOnly
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessible
   
   @js.native
-  sealed trait AccessibleWhenPasscodeSetThisDeviceOnly extends js.Object
+  sealed trait AccessibleWhenPasscodeSetThisDeviceOnly
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessible
   
   @js.native
-  sealed trait AccessibleWhenUnlocked extends js.Object
+  sealed trait AccessibleWhenUnlocked
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessible
   
   @js.native
-  sealed trait AccessibleWhenUnlockedThisDeviceOnly extends js.Object
+  sealed trait AccessibleWhenUnlockedThisDeviceOnly
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessible
   
   @js.native
-  sealed trait ApplicationPassword extends js.Object
+  sealed trait ApplicationPassword
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessControl
   
   @js.native
-  sealed trait Authentication extends js.Object
+  sealed trait Authentication
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.LAPolicy
   
   @js.native
-  sealed trait AuthenticationWithBiometrics extends js.Object
+  sealed trait AuthenticationWithBiometrics
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.LAPolicy
   
   @js.native
-  sealed trait BiometryAny extends js.Object
+  sealed trait BiometryAny
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessControl
   
   @js.native
-  sealed trait BiometryAnyOrDevicePasscode extends js.Object
+  sealed trait BiometryAnyOrDevicePasscode
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessControl
   
   @js.native
-  sealed trait BiometryCurrentSet extends js.Object
+  sealed trait BiometryCurrentSet
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessControl
   
   @js.native
-  sealed trait BiometryCurrentSetOrDevicePasscode extends js.Object
+  sealed trait BiometryCurrentSetOrDevicePasscode
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessControl
   
   @js.native
-  sealed trait DevicePasscode extends js.Object
+  sealed trait DevicePasscode
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessControl
   
   @js.native
-  sealed trait UserPresence extends js.Object
+  sealed trait UserPresence
+    extends reactDashNativeDashKeychainLib.reactDashNativeDashKeychainMod.SecAccessControl
   
   @scala.inline
   def AccessibleAfterFirstUnlock: AccessibleAfterFirstUnlock = "AccessibleAfterFirstUnlock".asInstanceOf[AccessibleAfterFirstUnlock]

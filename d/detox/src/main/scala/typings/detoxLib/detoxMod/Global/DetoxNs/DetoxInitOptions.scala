@@ -17,3 +17,16 @@ trait DetoxInitOptions extends js.Object {
   var launchApp: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DetoxInitOptions {
+  @scala.inline
+  def apply(
+    initGlobals: js.UndefOr[scala.Boolean] = js.undefined,
+    launchApp: js.UndefOr[scala.Boolean] = js.undefined
+  ): DetoxInitOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(initGlobals)) __obj.updateDynamic("initGlobals")(initGlobals)
+    if (!js.isUndefined(launchApp)) __obj.updateDynamic("launchApp")(launchApp)
+    __obj.asInstanceOf[DetoxInitOptions]
+  }
+}
+

@@ -47,3 +47,24 @@ trait Features extends js.Object {
   var sort: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Features {
+  @scala.inline
+  def apply(
+    paginate: js.UndefOr[scala.Boolean] = js.undefined,
+    perPageSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    pushState: js.UndefOr[scala.Boolean] = js.undefined,
+    recordCount: js.UndefOr[scala.Boolean] = js.undefined,
+    search: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.UndefOr[scala.Boolean] = js.undefined
+  ): Features = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate)
+    if (!js.isUndefined(perPageSelect)) __obj.updateDynamic("perPageSelect")(perPageSelect)
+    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState)
+    if (!js.isUndefined(recordCount)) __obj.updateDynamic("recordCount")(recordCount)
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    __obj.asInstanceOf[Features]
+  }
+}
+

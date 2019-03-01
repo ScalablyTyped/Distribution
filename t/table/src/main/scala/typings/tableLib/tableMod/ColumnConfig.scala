@@ -15,3 +15,22 @@ trait ColumnConfig extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ColumnConfig {
+  @scala.inline
+  def apply(
+    alignment: tableLib.tableLibStrings.left | tableLib.tableLibStrings.center | tableLib.tableLibStrings.right = null,
+    paddingLeft: scala.Int | scala.Double = null,
+    paddingRight: scala.Int | scala.Double = null,
+    truncate: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): ColumnConfig = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
+    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
+    if (truncate != null) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnConfig]
+  }
+}
+

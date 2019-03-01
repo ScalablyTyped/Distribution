@@ -239,3 +239,68 @@ trait Options extends js.Object {
   var spacing: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allowNoPanText: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowKeys: js.UndefOr[scala.Boolean] = js.undefined,
+    bgOpacity: scala.Int | scala.Double = null,
+    closeOnScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnVerticalDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    errorMsg: java.lang.String = null,
+    escKey: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: js.UndefOr[scala.Boolean] = js.undefined,
+    galleryUID: scala.Int | scala.Double = null,
+    getDoubleTapZoom: js.Function2[/* isMouseClick */ scala.Boolean, /* item */ Item, scala.Double] = null,
+    getNumItemsFn: js.Function0[scala.Double] = null,
+    getThumbBoundsFn: js.Function1[/* index */ scala.Double, photoswipeLib.Anon_W] = null,
+    hideAnimationDuration: scala.Int | scala.Double = null,
+    history: js.UndefOr[scala.Boolean] = js.undefined,
+    index: scala.Int | scala.Double = null,
+    isClickableElement: js.Function1[/* el */ stdLib.HTMLElement, scala.Boolean] = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    mainClass: java.lang.String = null,
+    mainScrollEndFriction: scala.Int | scala.Double = null,
+    maxSpreadZoom: scala.Int | scala.Double = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseUsed: js.UndefOr[scala.Boolean] = js.undefined,
+    panEndFriction: scala.Int | scala.Double = null,
+    pinchToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    preload: js.Array[scala.Double] = null,
+    showAnimationDuration: scala.Int | scala.Double = null,
+    showHideOpacity: js.UndefOr[scala.Boolean] = js.undefined,
+    spacing: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowNoPanText)) __obj.updateDynamic("allowNoPanText")(allowNoPanText)
+    if (!js.isUndefined(arrowKeys)) __obj.updateDynamic("arrowKeys")(arrowKeys)
+    if (bgOpacity != null) __obj.updateDynamic("bgOpacity")(bgOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnScroll)) __obj.updateDynamic("closeOnScroll")(closeOnScroll)
+    if (!js.isUndefined(closeOnVerticalDrag)) __obj.updateDynamic("closeOnVerticalDrag")(closeOnVerticalDrag)
+    if (errorMsg != null) __obj.updateDynamic("errorMsg")(errorMsg)
+    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey)
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
+    if (galleryUID != null) __obj.updateDynamic("galleryUID")(galleryUID.asInstanceOf[js.Any])
+    if (getDoubleTapZoom != null) __obj.updateDynamic("getDoubleTapZoom")(getDoubleTapZoom)
+    if (getNumItemsFn != null) __obj.updateDynamic("getNumItemsFn")(getNumItemsFn)
+    if (getThumbBoundsFn != null) __obj.updateDynamic("getThumbBoundsFn")(getThumbBoundsFn)
+    if (hideAnimationDuration != null) __obj.updateDynamic("hideAnimationDuration")(hideAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (isClickableElement != null) __obj.updateDynamic("isClickableElement")(isClickableElement)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass)
+    if (mainScrollEndFriction != null) __obj.updateDynamic("mainScrollEndFriction")(mainScrollEndFriction.asInstanceOf[js.Any])
+    if (maxSpreadZoom != null) __obj.updateDynamic("maxSpreadZoom")(maxSpreadZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (!js.isUndefined(mouseUsed)) __obj.updateDynamic("mouseUsed")(mouseUsed)
+    if (panEndFriction != null) __obj.updateDynamic("panEndFriction")(panEndFriction.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinchToClose)) __obj.updateDynamic("pinchToClose")(pinchToClose)
+    if (preload != null) __obj.updateDynamic("preload")(preload)
+    if (showAnimationDuration != null) __obj.updateDynamic("showAnimationDuration")(showAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHideOpacity)) __obj.updateDynamic("showHideOpacity")(showHideOpacity)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

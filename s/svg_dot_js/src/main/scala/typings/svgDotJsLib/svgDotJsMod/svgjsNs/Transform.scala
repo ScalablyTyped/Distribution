@@ -27,3 +27,46 @@ trait Transform extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Transform {
+  @scala.inline
+  def apply(
+    a: scala.Int | scala.Double = null,
+    b: scala.Int | scala.Double = null,
+    c: scala.Int | scala.Double = null,
+    cx: scala.Int | scala.Double = null,
+    cy: scala.Int | scala.Double = null,
+    d: scala.Int | scala.Double = null,
+    e: scala.Int | scala.Double = null,
+    f: scala.Int | scala.Double = null,
+    matrix: Matrix = null,
+    rotation: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null,
+    scaleX: scala.Int | scala.Double = null,
+    scaleY: scala.Int | scala.Double = null,
+    skewX: scala.Int | scala.Double = null,
+    skewY: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Transform = {
+    val __obj = js.Dynamic.literal()
+    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
+    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
+    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
+    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
+    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
+    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
+    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
+    if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
+    if (matrix != null) __obj.updateDynamic("matrix")(matrix)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
+    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
+    if (skewX != null) __obj.updateDynamic("skewX")(skewX.asInstanceOf[js.Any])
+    if (skewY != null) __obj.updateDynamic("skewY")(skewY.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Transform]
+  }
+}
+

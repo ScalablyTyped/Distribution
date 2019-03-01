@@ -11,3 +11,18 @@ trait StockChartNavigatorSelect extends js.Object {
   var to: js.UndefOr[stdLib.Date] = js.undefined
 }
 
+object StockChartNavigatorSelect {
+  @scala.inline
+  def apply(
+    from: stdLib.Date = null,
+    mousewheel: scala.Boolean | StockChartNavigatorSelectMousewheel = null,
+    to: stdLib.Date = null
+  ): StockChartNavigatorSelect = {
+    val __obj = js.Dynamic.literal()
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (mousewheel != null) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[StockChartNavigatorSelect]
+  }
+}
+

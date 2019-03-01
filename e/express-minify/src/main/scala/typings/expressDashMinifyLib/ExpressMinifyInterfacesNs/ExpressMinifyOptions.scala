@@ -52,3 +52,34 @@ trait ExpressMinifyOptions extends js.Object {
   var uglifyJS: js.UndefOr[nodeLib.NodeRequire] = js.undefined
 }
 
+object ExpressMinifyOptions {
+  @scala.inline
+  def apply(
+    cache: java.lang.String | scala.Boolean = null,
+    coffee_match: stdLib.RegExp = null,
+    css_match: stdLib.RegExp = null,
+    cssmin: nodeLib.NodeRequire = null,
+    js_match: stdLib.RegExp = null,
+    json_match: stdLib.RegExp = null,
+    less_match: stdLib.RegExp = null,
+    onerror: js.Function = null,
+    sass_match: stdLib.RegExp = null,
+    stylus_match: stdLib.RegExp = null,
+    uglifyJS: nodeLib.NodeRequire = null
+  ): ExpressMinifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (coffee_match != null) __obj.updateDynamic("coffee_match")(coffee_match)
+    if (css_match != null) __obj.updateDynamic("css_match")(css_match)
+    if (cssmin != null) __obj.updateDynamic("cssmin")(cssmin)
+    if (js_match != null) __obj.updateDynamic("js_match")(js_match)
+    if (json_match != null) __obj.updateDynamic("json_match")(json_match)
+    if (less_match != null) __obj.updateDynamic("less_match")(less_match)
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (sass_match != null) __obj.updateDynamic("sass_match")(sass_match)
+    if (stylus_match != null) __obj.updateDynamic("stylus_match")(stylus_match)
+    if (uglifyJS != null) __obj.updateDynamic("uglifyJS")(uglifyJS)
+    __obj.asInstanceOf[ExpressMinifyOptions]
+  }
+}
+

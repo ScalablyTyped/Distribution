@@ -28,3 +28,22 @@ trait ConfirmStrings extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConfirmStrings {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    cancelButtonLabel: java.lang.String = null,
+    confirmButtonLabel: java.lang.String = null,
+    subtitle: java.lang.String = null,
+    title: java.lang.String = null
+  ): ConfirmStrings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (cancelButtonLabel != null) __obj.updateDynamic("cancelButtonLabel")(cancelButtonLabel)
+    if (confirmButtonLabel != null) __obj.updateDynamic("confirmButtonLabel")(confirmButtonLabel)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ConfirmStrings]
+  }
+}
+

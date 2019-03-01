@@ -19,3 +19,35 @@ trait Foldable2vComposition22[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fp
   ): B
 }
 
+object Foldable2vComposition22 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */](
+    foldMap: js.Function1[
+      fpDashTsLib.libMonoidMod.Monoid[js.Any], 
+      js.Function2[
+        /* fa */ fpDashTsLib.libHKTMod.Type2[F, _, fpDashTsLib.libHKTMod.Type2[G, _, _]], 
+        /* f */ js.Function1[/* a */ js.Any, js.Any], 
+        js.Any
+      ]
+    ],
+    foldr: js.Function3[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, js.Any, js.Any]], 
+      js.Any, 
+      js.Function2[js.Any, js.Any, js.Any], 
+      js.Any
+    ],
+    reduce: js.Function3[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, js.Any, js.Any]], 
+      js.Any, 
+      js.Function2[js.Any, js.Any, js.Any], 
+      js.Any
+    ]
+  ): Foldable2vComposition22[F, G] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("foldMap")(foldMap)
+    __obj.updateDynamic("foldr")(foldr)
+    __obj.updateDynamic("reduce")(reduce)
+    __obj.asInstanceOf[Foldable2vComposition22[F, G]]
+  }
+}
+

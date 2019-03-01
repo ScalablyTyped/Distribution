@@ -40,3 +40,42 @@ trait XMultiSelectionSupplier extends XSelectionSupplier {
   def removeSelection(Selection: js.Any): scala.Unit
 }
 
+object XMultiSelectionSupplier {
+  @scala.inline
+  def apply(
+    Selection: js.Any,
+    SelectionCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addSelection: js.Function1[js.Any, scala.Boolean],
+    addSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
+    clearSelection: js.Function0[scala.Unit],
+    createReverseSelectionEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    createSelectionEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    getSelection: js.Function0[js.Any],
+    getSelectionCount: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSelection: js.Function1[js.Any, scala.Unit],
+    removeSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
+    select: js.Function1[js.Any, scala.Boolean]
+  ): XMultiSelectionSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Selection")(Selection)
+    __obj.updateDynamic("SelectionCount")(SelectionCount)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addSelection")(addSelection)
+    __obj.updateDynamic("addSelectionChangeListener")(addSelectionChangeListener)
+    __obj.updateDynamic("clearSelection")(clearSelection)
+    __obj.updateDynamic("createReverseSelectionEnumeration")(createReverseSelectionEnumeration)
+    __obj.updateDynamic("createSelectionEnumeration")(createSelectionEnumeration)
+    __obj.updateDynamic("getSelection")(getSelection)
+    __obj.updateDynamic("getSelectionCount")(getSelectionCount)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeSelection")(removeSelection)
+    __obj.updateDynamic("removeSelectionChangeListener")(removeSelectionChangeListener)
+    __obj.updateDynamic("select")(select)
+    __obj.asInstanceOf[XMultiSelectionSupplier]
+  }
+}
+

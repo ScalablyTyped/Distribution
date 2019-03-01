@@ -26,3 +26,20 @@ trait TabNavigatorProps extends js.Object {
   var tabBarStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
 }
 
+object TabNavigatorProps {
+  @scala.inline
+  def apply(
+    hidesTabTouch: js.UndefOr[scala.Boolean] = js.undefined,
+    sceneStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    tabBarShadowStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    tabBarStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null
+  ): TabNavigatorProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hidesTabTouch)) __obj.updateDynamic("hidesTabTouch")(hidesTabTouch)
+    if (sceneStyle != null) __obj.updateDynamic("sceneStyle")(sceneStyle)
+    if (tabBarShadowStyle != null) __obj.updateDynamic("tabBarShadowStyle")(tabBarShadowStyle)
+    if (tabBarStyle != null) __obj.updateDynamic("tabBarStyle")(tabBarStyle)
+    __obj.asInstanceOf[TabNavigatorProps]
+  }
+}
+

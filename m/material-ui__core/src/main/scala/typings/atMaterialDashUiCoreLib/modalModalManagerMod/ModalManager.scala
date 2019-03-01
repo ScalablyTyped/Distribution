@@ -11,3 +11,18 @@ trait ModalManager extends js.Object {
   def remove(modal: js.Any): scala.Unit
 }
 
+object ModalManager {
+  @scala.inline
+  def apply(
+    add: js.Function2[js.Any, js.Any, scala.Double],
+    isTopModal: js.Function1[js.Any, scala.Boolean],
+    remove: js.Function1[js.Any, scala.Unit]
+  ): ModalManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("isTopModal")(isTopModal)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[ModalManager]
+  }
+}
+

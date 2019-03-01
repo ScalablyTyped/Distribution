@@ -48,3 +48,46 @@ trait Anon_AccountIdAltDimension extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccountIdAltDimension {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String,
+    endDate: java.lang.String,
+    startDate: java.lang.String,
+    alt: java.lang.String = null,
+    dimension: java.lang.String = null,
+    fields: java.lang.String = null,
+    filter: java.lang.String = null,
+    key: java.lang.String = null,
+    locale: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    metric: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    sort: java.lang.String = null,
+    startIndex: scala.Int | scala.Double = null,
+    userIp: java.lang.String = null
+  ): Anon_AccountIdAltDimension = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accountId")(accountId)
+    __obj.updateDynamic("endDate")(endDate)
+    __obj.updateDynamic("startDate")(startDate)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AccountIdAltDimension]
+  }
+}
+

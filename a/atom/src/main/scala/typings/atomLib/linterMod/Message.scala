@@ -31,3 +31,30 @@ trait Message extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Message {
+  @scala.inline
+  def apply(
+    excerpt: java.lang.String,
+    location: atomLib.Anon_File,
+    severity: atomLib.atomLibStrings.error | atomLib.atomLibStrings.warning | atomLib.atomLibStrings.info,
+    description: java.lang.String | (js.Function0[js.Promise[java.lang.String] | java.lang.String]) = null,
+    icon: java.lang.String = null,
+    linterName: java.lang.String = null,
+    reference: atomLib.Anon_FilePosition = null,
+    solutions: js.Array[ReplacementSolution | CallbackSolution] = null,
+    url: java.lang.String = null
+  ): Message = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("excerpt")(excerpt)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (linterName != null) __obj.updateDynamic("linterName")(linterName)
+    if (reference != null) __obj.updateDynamic("reference")(reference)
+    if (solutions != null) __obj.updateDynamic("solutions")(solutions)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Message]
+  }
+}
+

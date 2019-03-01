@@ -40,3 +40,36 @@ trait BrowserInfo extends js.Object {
   def versionAtLeast(version: java.lang.String): scala.Unit
 }
 
+object BrowserInfo {
+  @scala.inline
+  def apply(
+    Select: js.Function1[js.Any, scala.Unit],
+    version: java.lang.String,
+    versionAtLeast: js.Function1[java.lang.String, scala.Unit],
+    isChrome: js.UndefOr[scala.Boolean] = js.undefined,
+    isFirefox: js.UndefOr[scala.Boolean] = js.undefined,
+    isKonqueror: js.UndefOr[scala.Boolean] = js.undefined,
+    isMSIE: js.UndefOr[scala.Boolean] = js.undefined,
+    isMac: js.UndefOr[scala.Boolean] = js.undefined,
+    isMobile: js.UndefOr[scala.Boolean] = js.undefined,
+    isOpera: js.UndefOr[scala.Boolean] = js.undefined,
+    isPC: js.UndefOr[scala.Boolean] = js.undefined,
+    isSafari: js.UndefOr[scala.Boolean] = js.undefined
+  ): BrowserInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Select")(Select)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("versionAtLeast")(versionAtLeast)
+    if (!js.isUndefined(isChrome)) __obj.updateDynamic("isChrome")(isChrome)
+    if (!js.isUndefined(isFirefox)) __obj.updateDynamic("isFirefox")(isFirefox)
+    if (!js.isUndefined(isKonqueror)) __obj.updateDynamic("isKonqueror")(isKonqueror)
+    if (!js.isUndefined(isMSIE)) __obj.updateDynamic("isMSIE")(isMSIE)
+    if (!js.isUndefined(isMac)) __obj.updateDynamic("isMac")(isMac)
+    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile)
+    if (!js.isUndefined(isOpera)) __obj.updateDynamic("isOpera")(isOpera)
+    if (!js.isUndefined(isPC)) __obj.updateDynamic("isPC")(isPC)
+    if (!js.isUndefined(isSafari)) __obj.updateDynamic("isSafari")(isSafari)
+    __obj.asInstanceOf[BrowserInfo]
+  }
+}
+

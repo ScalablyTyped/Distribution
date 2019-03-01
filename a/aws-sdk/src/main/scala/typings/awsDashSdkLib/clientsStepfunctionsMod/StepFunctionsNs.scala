@@ -1490,6 +1490,14 @@ object StepFunctionsNs extends js.Object {
     var updateDate: Timestamp
   }
   
+  trait _ExecutionStatus extends js.Object
+  
+  trait _HistoryEventType extends js.Object
+  
+  trait _StateMachineStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActivityList = js.Array[ActivityListItem]
   type Arn = java.lang.String
@@ -1498,9 +1506,9 @@ object StepFunctionsNs extends js.Object {
   type Definition = java.lang.String
   type EventId = scala.Double
   type ExecutionList = js.Array[ExecutionListItem]
-  type ExecutionStatus = awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | awsDashSdkLib.awsDashSdkLibStrings.ABORTED | java.lang.String
+  type ExecutionStatus = _ExecutionStatus | java.lang.String
   type HistoryEventList = js.Array[HistoryEvent]
-  type HistoryEventType = awsDashSdkLib.awsDashSdkLibStrings.ActivityFailed | awsDashSdkLib.awsDashSdkLibStrings.ActivityScheduleFailed | awsDashSdkLib.awsDashSdkLibStrings.ActivityScheduled | awsDashSdkLib.awsDashSdkLibStrings.ActivityStarted | awsDashSdkLib.awsDashSdkLibStrings.ActivitySucceeded | awsDashSdkLib.awsDashSdkLibStrings.ActivityTimedOut | awsDashSdkLib.awsDashSdkLibStrings.ChoiceStateEntered | awsDashSdkLib.awsDashSdkLibStrings.ChoiceStateExited | awsDashSdkLib.awsDashSdkLibStrings.TaskFailed | awsDashSdkLib.awsDashSdkLibStrings.TaskScheduled | awsDashSdkLib.awsDashSdkLibStrings.TaskStartFailed | awsDashSdkLib.awsDashSdkLibStrings.TaskStarted | awsDashSdkLib.awsDashSdkLibStrings.TaskSubmitFailed | awsDashSdkLib.awsDashSdkLibStrings.TaskSubmitted | awsDashSdkLib.awsDashSdkLibStrings.TaskSucceeded | awsDashSdkLib.awsDashSdkLibStrings.TaskTimedOut | awsDashSdkLib.awsDashSdkLibStrings.ExecutionFailed | awsDashSdkLib.awsDashSdkLibStrings.ExecutionStarted | awsDashSdkLib.awsDashSdkLibStrings.ExecutionSucceeded | awsDashSdkLib.awsDashSdkLibStrings.ExecutionAborted | awsDashSdkLib.awsDashSdkLibStrings.ExecutionTimedOut | awsDashSdkLib.awsDashSdkLibStrings.FailStateEntered | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionScheduleFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionScheduled | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionStartFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionStarted | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionSucceeded | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionTimedOut | awsDashSdkLib.awsDashSdkLibStrings.SucceedStateEntered | awsDashSdkLib.awsDashSdkLibStrings.SucceedStateExited | awsDashSdkLib.awsDashSdkLibStrings.TaskStateAborted | awsDashSdkLib.awsDashSdkLibStrings.TaskStateEntered | awsDashSdkLib.awsDashSdkLibStrings.TaskStateExited | awsDashSdkLib.awsDashSdkLibStrings.PassStateEntered | awsDashSdkLib.awsDashSdkLibStrings.PassStateExited | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateAborted | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateEntered | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateExited | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateFailed | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateStarted | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateSucceeded | awsDashSdkLib.awsDashSdkLibStrings.WaitStateAborted | awsDashSdkLib.awsDashSdkLibStrings.WaitStateEntered | awsDashSdkLib.awsDashSdkLibStrings.WaitStateExited | java.lang.String
+  type HistoryEventType = _HistoryEventType | java.lang.String
   type Identity = java.lang.String
   type Name = java.lang.String
   type PageSize = scala.Double
@@ -1511,7 +1519,7 @@ object StepFunctionsNs extends js.Object {
   type SensitiveDataJobInput = java.lang.String
   type SensitiveError = java.lang.String
   type StateMachineList = js.Array[StateMachineListItem]
-  type StateMachineStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type StateMachineStatus = _StateMachineStatus | java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
@@ -1519,6 +1527,6 @@ object StepFunctionsNs extends js.Object {
   type TaskToken = java.lang.String
   type TimeoutInSeconds = scala.Double
   type Timestamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-11-23` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

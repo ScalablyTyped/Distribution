@@ -18,3 +18,30 @@ trait PathItemObject extends js.Object {
   var put: js.UndefOr[OperationObject] = js.undefined
 }
 
+object PathItemObject {
+  @scala.inline
+  def apply(
+    $ref: java.lang.String = null,
+    delete: OperationObject = null,
+    get: OperationObject = null,
+    head: OperationObject = null,
+    options: OperationObject = null,
+    parameters: Parameters = null,
+    patch: OperationObject = null,
+    post: OperationObject = null,
+    put: OperationObject = null
+  ): PathItemObject = {
+    val __obj = js.Dynamic.literal()
+    if ($ref != null) __obj.updateDynamic("$ref")($ref)
+    if (delete != null) __obj.updateDynamic("delete")(delete)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (head != null) __obj.updateDynamic("head")(head)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (patch != null) __obj.updateDynamic("patch")(patch)
+    if (post != null) __obj.updateDynamic("post")(post)
+    if (put != null) __obj.updateDynamic("put")(put)
+    __obj.asInstanceOf[PathItemObject]
+  }
+}
+

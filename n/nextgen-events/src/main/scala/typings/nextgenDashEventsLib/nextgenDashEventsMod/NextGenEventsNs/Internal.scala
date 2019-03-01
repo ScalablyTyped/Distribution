@@ -17,3 +17,30 @@ trait Internal extends js.Object {
   def desync(fn: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): scala.Unit
 }
 
+object Internal {
+  @scala.inline
+  def apply(
+    contexts: org.scalablytyped.runtime.StringDictionary[Context],
+    depth: scala.Double,
+    desync: js.Function2[js.Function1[/* repeated */ js.Any, scala.Unit], /* repeated */ js.Any, scala.Unit],
+    interruptible: scala.Boolean,
+    listeners: Listeners,
+    maxListeners: scala.Double,
+    nice: scala.Double,
+    stateGroups: org.scalablytyped.runtime.StringDictionary[js.Any],
+    states: States
+  ): Internal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contexts")(contexts)
+    __obj.updateDynamic("depth")(depth)
+    __obj.updateDynamic("desync")(desync)
+    __obj.updateDynamic("interruptible")(interruptible)
+    __obj.updateDynamic("listeners")(listeners)
+    __obj.updateDynamic("maxListeners")(maxListeners)
+    __obj.updateDynamic("nice")(nice)
+    __obj.updateDynamic("stateGroups")(stateGroups)
+    __obj.updateDynamic("states")(states)
+    __obj.asInstanceOf[Internal]
+  }
+}
+

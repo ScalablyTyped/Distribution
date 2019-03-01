@@ -20,3 +20,18 @@ trait MountRendererProps extends js.Object {
   var context: js.UndefOr[js.Object] = js.undefined
 }
 
+object MountRendererProps {
+  @scala.inline
+  def apply(
+    attachTo: reactLib.HTMLElement = null,
+    childContextTypes: js.Object = null,
+    context: js.Object = null
+  ): MountRendererProps = {
+    val __obj = js.Dynamic.literal()
+    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo)
+    if (childContextTypes != null) __obj.updateDynamic("childContextTypes")(childContextTypes)
+    if (context != null) __obj.updateDynamic("context")(context)
+    __obj.asInstanceOf[MountRendererProps]
+  }
+}
+

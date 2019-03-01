@@ -10,3 +10,20 @@ trait GameRequestDialogResponse extends DialogResponse {
   var to: js.Array[java.lang.String]
 }
 
+object GameRequestDialogResponse {
+  @scala.inline
+  def apply(
+    request: java.lang.String,
+    to: js.Array[java.lang.String],
+    error_code: scala.Int | scala.Double = null,
+    error_message: java.lang.String = null
+  ): GameRequestDialogResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("to")(to)
+    if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    __obj.asInstanceOf[GameRequestDialogResponse]
+  }
+}
+

@@ -16,3 +16,38 @@ trait ILookupPropertyType extends IPropertyType {
   def LocalizedToData(localized: java.lang.String): js.Any
 }
 
+object ILookupPropertyType {
+  @scala.inline
+  def apply(
+    BeginValidateNormalizeConvert: js.Function6[
+      scala.Double, 
+      java.lang.String, 
+      js.Any, 
+      scala.Boolean, 
+      js.Function1[/* args */ sharepointLib.Anon_DataValue, scala.Unit], 
+      js.Any, 
+      scala.Unit
+    ],
+    DataToLocalized: js.Function1[js.Any, java.lang.String],
+    GetImageSource: js.Function2[IRecord, js.Any, java.lang.String],
+    GetIsLimitedToList: js.Function0[scala.Boolean],
+    GetItems: js.Function1[js.Any, scala.Unit],
+    GetSerializableLookupPropType: js.Function0[sharepointLib.Anon_BLimitToList],
+    GetStyleId: js.Function1[js.Any, java.lang.String],
+    ID: java.lang.String,
+    LocalizedToData: js.Function1[java.lang.String, js.Any]
+  ): ILookupPropertyType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BeginValidateNormalizeConvert")(BeginValidateNormalizeConvert)
+    __obj.updateDynamic("DataToLocalized")(DataToLocalized)
+    __obj.updateDynamic("GetImageSource")(GetImageSource)
+    __obj.updateDynamic("GetIsLimitedToList")(GetIsLimitedToList)
+    __obj.updateDynamic("GetItems")(GetItems)
+    __obj.updateDynamic("GetSerializableLookupPropType")(GetSerializableLookupPropType)
+    __obj.updateDynamic("GetStyleId")(GetStyleId)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("LocalizedToData")(LocalizedToData)
+    __obj.asInstanceOf[ILookupPropertyType]
+  }
+}
+

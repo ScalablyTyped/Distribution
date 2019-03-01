@@ -17,3 +17,18 @@ trait Anon_DateHeader extends js.Object {
   ] = js.undefined
 }
 
+object Anon_DateHeader {
+  @scala.inline
+  def apply(
+    dateHeader: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
+    event: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
+    header: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null
+  ): Anon_DateHeader = {
+    val __obj = js.Dynamic.literal()
+    if (dateHeader != null) __obj.updateDynamic("dateHeader")(dateHeader.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_DateHeader]
+  }
+}
+

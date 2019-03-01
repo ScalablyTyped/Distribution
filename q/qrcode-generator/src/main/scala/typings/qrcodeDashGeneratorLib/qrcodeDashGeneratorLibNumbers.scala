@@ -7,127 +7,127 @@ import scala.scalajs.js.annotation._
 
 object qrcodeDashGeneratorLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0` extends TypeNumber
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1` extends TypeNumber
   
   @js.native
-  sealed trait `10` extends js.Object
+  sealed trait `10` extends TypeNumber
   
   @js.native
-  sealed trait `11` extends js.Object
+  sealed trait `11` extends TypeNumber
   
   @js.native
-  sealed trait `12` extends js.Object
+  sealed trait `12` extends TypeNumber
   
   @js.native
-  sealed trait `13` extends js.Object
+  sealed trait `13` extends TypeNumber
   
   @js.native
-  sealed trait `14` extends js.Object
+  sealed trait `14` extends TypeNumber
   
   @js.native
-  sealed trait `15` extends js.Object
+  sealed trait `15` extends TypeNumber
   
   @js.native
-  sealed trait `16` extends js.Object
+  sealed trait `16` extends TypeNumber
   
   @js.native
-  sealed trait `17` extends js.Object
+  sealed trait `17` extends TypeNumber
   
   @js.native
-  sealed trait `18` extends js.Object
+  sealed trait `18` extends TypeNumber
   
   @js.native
-  sealed trait `19` extends js.Object
+  sealed trait `19` extends TypeNumber
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2` extends TypeNumber
   
   @js.native
-  sealed trait `20` extends js.Object
+  sealed trait `20` extends TypeNumber
   
   @js.native
-  sealed trait `21` extends js.Object
+  sealed trait `21` extends TypeNumber
   
   @js.native
-  sealed trait `22` extends js.Object
+  sealed trait `22` extends TypeNumber
   
   @js.native
-  sealed trait `23` extends js.Object
+  sealed trait `23` extends TypeNumber
   
   @js.native
-  sealed trait `24` extends js.Object
+  sealed trait `24` extends TypeNumber
   
   @js.native
-  sealed trait `25` extends js.Object
+  sealed trait `25` extends TypeNumber
   
   @js.native
-  sealed trait `26` extends js.Object
+  sealed trait `26` extends TypeNumber
   
   @js.native
-  sealed trait `27` extends js.Object
+  sealed trait `27` extends TypeNumber
   
   @js.native
-  sealed trait `28` extends js.Object
+  sealed trait `28` extends TypeNumber
   
   @js.native
-  sealed trait `29` extends js.Object
+  sealed trait `29` extends TypeNumber
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3` extends TypeNumber
   
   @js.native
-  sealed trait `30` extends js.Object
+  sealed trait `30` extends TypeNumber
   
   @js.native
-  sealed trait `31` extends js.Object
+  sealed trait `31` extends TypeNumber
   
   @js.native
-  sealed trait `32` extends js.Object
+  sealed trait `32` extends TypeNumber
   
   @js.native
-  sealed trait `33` extends js.Object
+  sealed trait `33` extends TypeNumber
   
   @js.native
-  sealed trait `34` extends js.Object
+  sealed trait `34` extends TypeNumber
   
   @js.native
-  sealed trait `35` extends js.Object
+  sealed trait `35` extends TypeNumber
   
   @js.native
-  sealed trait `36` extends js.Object
+  sealed trait `36` extends TypeNumber
   
   @js.native
-  sealed trait `37` extends js.Object
+  sealed trait `37` extends TypeNumber
   
   @js.native
-  sealed trait `38` extends js.Object
+  sealed trait `38` extends TypeNumber
   
   @js.native
-  sealed trait `39` extends js.Object
+  sealed trait `39` extends TypeNumber
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4` extends TypeNumber
   
   @js.native
-  sealed trait `40` extends js.Object
+  sealed trait `40` extends TypeNumber
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5` extends TypeNumber
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6` extends TypeNumber
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7` extends TypeNumber
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8` extends TypeNumber
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9` extends TypeNumber
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

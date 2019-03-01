@@ -14,3 +14,18 @@ trait EventUpdateRequest extends js.Object {
   var updateCount: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EventUpdateRequest {
+  @scala.inline
+  def apply(
+    definitionId: java.lang.String = null,
+    kind: java.lang.String = null,
+    updateCount: java.lang.String = null
+  ): EventUpdateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (updateCount != null) __obj.updateDynamic("updateCount")(updateCount)
+    __obj.asInstanceOf[EventUpdateRequest]
+  }
+}
+

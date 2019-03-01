@@ -34,3 +34,50 @@ trait TextColumns extends XTextColumns {
   var SeparatorLineWidth: scala.Double
 }
 
+object TextColumns {
+  @scala.inline
+  def apply(
+    AutomaticDistance: scala.Double,
+    ColumnCount: scala.Double,
+    Columns: activexDashInteropLib.SafeArray[TextColumn],
+    IsAutomatic: scala.Boolean,
+    ReferenceValue: scala.Double,
+    SeparatorLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    SeparatorLineIsOn: scala.Boolean,
+    SeparatorLineRelativeHeight: scala.Double,
+    SeparatorLineStyle: scala.Double,
+    SeparatorLineVerticalAlignment: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.VerticalAlignment,
+    SeparatorLineWidth: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getColumnCount: js.Function0[scala.Double],
+    getColumns: js.Function0[activexDashInteropLib.SafeArray[TextColumn]],
+    getReferenceValue: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setColumnCount: js.Function1[scala.Double, scala.Unit],
+    setColumns: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextColumn], scala.Unit]
+  ): TextColumns = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutomaticDistance")(AutomaticDistance)
+    __obj.updateDynamic("ColumnCount")(ColumnCount)
+    __obj.updateDynamic("Columns")(Columns)
+    __obj.updateDynamic("IsAutomatic")(IsAutomatic)
+    __obj.updateDynamic("ReferenceValue")(ReferenceValue)
+    __obj.updateDynamic("SeparatorLineColor")(SeparatorLineColor)
+    __obj.updateDynamic("SeparatorLineIsOn")(SeparatorLineIsOn)
+    __obj.updateDynamic("SeparatorLineRelativeHeight")(SeparatorLineRelativeHeight)
+    __obj.updateDynamic("SeparatorLineStyle")(SeparatorLineStyle)
+    __obj.updateDynamic("SeparatorLineVerticalAlignment")(SeparatorLineVerticalAlignment)
+    __obj.updateDynamic("SeparatorLineWidth")(SeparatorLineWidth)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getColumnCount")(getColumnCount)
+    __obj.updateDynamic("getColumns")(getColumns)
+    __obj.updateDynamic("getReferenceValue")(getReferenceValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setColumnCount")(setColumnCount)
+    __obj.updateDynamic("setColumns")(setColumns)
+    __obj.asInstanceOf[TextColumns]
+  }
+}
+

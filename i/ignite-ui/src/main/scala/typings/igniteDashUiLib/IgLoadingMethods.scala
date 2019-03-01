@@ -14,3 +14,24 @@ trait IgLoadingMethods extends js.Object {
   def show(refresh: js.Object): scala.Unit
 }
 
+object IgLoadingMethods {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    hide: js.Function0[scala.Unit],
+    indicator: js.Function0[scala.Unit],
+    indicatorElement: js.Function0[scala.Unit],
+    refreshPos: js.Function0[scala.Unit],
+    show: js.Function1[js.Object, scala.Unit]
+  ): IgLoadingMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("indicator")(indicator)
+    __obj.updateDynamic("indicatorElement")(indicatorElement)
+    __obj.updateDynamic("refreshPos")(refreshPos)
+    __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[IgLoadingMethods]
+  }
+}
+

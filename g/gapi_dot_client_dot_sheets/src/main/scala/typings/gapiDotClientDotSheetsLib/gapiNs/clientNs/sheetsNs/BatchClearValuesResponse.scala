@@ -17,3 +17,13 @@ trait BatchClearValuesResponse extends js.Object {
   var spreadsheetId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BatchClearValuesResponse {
+  @scala.inline
+  def apply(clearedRanges: js.Array[java.lang.String] = null, spreadsheetId: java.lang.String = null): BatchClearValuesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (clearedRanges != null) __obj.updateDynamic("clearedRanges")(clearedRanges)
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    __obj.asInstanceOf[BatchClearValuesResponse]
+  }
+}
+

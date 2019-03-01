@@ -22,3 +22,20 @@ trait IssuerSubjectPattern extends js.Object {
   var OrganizationalUnit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IssuerSubjectPattern {
+  @scala.inline
+  def apply(
+    CommonName: java.lang.String = null,
+    Locality: java.lang.String = null,
+    Organization: java.lang.String = null,
+    OrganizationalUnit: java.lang.String = null
+  ): IssuerSubjectPattern = {
+    val __obj = js.Dynamic.literal()
+    if (CommonName != null) __obj.updateDynamic("CommonName")(CommonName)
+    if (Locality != null) __obj.updateDynamic("Locality")(Locality)
+    if (Organization != null) __obj.updateDynamic("Organization")(Organization)
+    if (OrganizationalUnit != null) __obj.updateDynamic("OrganizationalUnit")(OrganizationalUnit)
+    __obj.asInstanceOf[IssuerSubjectPattern]
+  }
+}
+

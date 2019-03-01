@@ -80,3 +80,48 @@ trait TableDescription extends js.Object {
   var TableStatus: js.UndefOr[TableStatus] = js.undefined
 }
 
+object TableDescription {
+  @scala.inline
+  def apply(
+    AttributeDefinitions: AttributeDefinitions = null,
+    BillingModeSummary: BillingModeSummary = null,
+    CreationDateTime: _Date = null,
+    GlobalSecondaryIndexes: GlobalSecondaryIndexDescriptionList = null,
+    ItemCount: js.UndefOr[Long] = js.undefined,
+    KeySchema: KeySchema = null,
+    LatestStreamArn: StreamArn = null,
+    LatestStreamLabel: String = null,
+    LocalSecondaryIndexes: LocalSecondaryIndexDescriptionList = null,
+    ProvisionedThroughput: ProvisionedThroughputDescription = null,
+    RestoreSummary: RestoreSummary = null,
+    SSEDescription: SSEDescription = null,
+    StreamSpecification: StreamSpecification = null,
+    TableArn: String = null,
+    TableId: TableId = null,
+    TableName: TableName = null,
+    TableSizeBytes: js.UndefOr[Long] = js.undefined,
+    TableStatus: TableStatus = null
+  ): TableDescription = {
+    val __obj = js.Dynamic.literal()
+    if (AttributeDefinitions != null) __obj.updateDynamic("AttributeDefinitions")(AttributeDefinitions)
+    if (BillingModeSummary != null) __obj.updateDynamic("BillingModeSummary")(BillingModeSummary)
+    if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime)
+    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes)
+    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount)
+    if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema)
+    if (LatestStreamArn != null) __obj.updateDynamic("LatestStreamArn")(LatestStreamArn)
+    if (LatestStreamLabel != null) __obj.updateDynamic("LatestStreamLabel")(LatestStreamLabel)
+    if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes)
+    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)
+    if (RestoreSummary != null) __obj.updateDynamic("RestoreSummary")(RestoreSummary)
+    if (SSEDescription != null) __obj.updateDynamic("SSEDescription")(SSEDescription)
+    if (StreamSpecification != null) __obj.updateDynamic("StreamSpecification")(StreamSpecification)
+    if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn)
+    if (TableId != null) __obj.updateDynamic("TableId")(TableId)
+    if (TableName != null) __obj.updateDynamic("TableName")(TableName)
+    if (!js.isUndefined(TableSizeBytes)) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes)
+    if (TableStatus != null) __obj.updateDynamic("TableStatus")(TableStatus.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableDescription]
+  }
+}
+

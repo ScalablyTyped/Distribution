@@ -12,3 +12,13 @@ trait PushData extends js.Object {
   var gcm: js.UndefOr[js.Any] = js.undefined
 }
 
+object PushData {
+  @scala.inline
+  def apply(apns: js.Any = null, gcm: js.Any = null): PushData = {
+    val __obj = js.Dynamic.literal()
+    if (apns != null) __obj.updateDynamic("apns")(apns)
+    if (gcm != null) __obj.updateDynamic("gcm")(gcm)
+    __obj.asInstanceOf[PushData]
+  }
+}
+

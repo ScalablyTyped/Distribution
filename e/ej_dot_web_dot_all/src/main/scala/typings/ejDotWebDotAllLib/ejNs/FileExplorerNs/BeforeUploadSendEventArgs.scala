@@ -23,3 +23,22 @@ trait BeforeUploadSendEventArgs extends js.Object {
   var xhr: js.UndefOr[js.Any] = js.undefined
 }
 
+object BeforeUploadSendEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    files: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null,
+    xhr: js.Any = null
+  ): BeforeUploadSendEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[BeforeUploadSendEventArgs]
+  }
+}
+

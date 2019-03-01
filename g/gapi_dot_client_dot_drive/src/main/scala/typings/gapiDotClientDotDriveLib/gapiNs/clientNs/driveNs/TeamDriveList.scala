@@ -17,3 +17,18 @@ trait TeamDriveList extends js.Object {
   var teamDrives: js.UndefOr[js.Array[TeamDrive]] = js.undefined
 }
 
+object TeamDriveList {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    teamDrives: js.Array[TeamDrive] = null
+  ): TeamDriveList = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (teamDrives != null) __obj.updateDynamic("teamDrives")(teamDrives)
+    __obj.asInstanceOf[TeamDriveList]
+  }
+}
+

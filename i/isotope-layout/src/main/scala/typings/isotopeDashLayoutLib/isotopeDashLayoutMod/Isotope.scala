@@ -95,3 +95,48 @@ trait Isotope extends js.Object {
   def updateSortData(elements: isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements): scala.Unit
 }
 
+object Isotope {
+  @scala.inline
+  def apply(
+    addItems: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
+    appended: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
+    arrange: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.IsotopeOptions, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getFilteredItemElements: js.Function0[js.Array[stdLib.Element]],
+    getItemElements: js.Function0[js.Array[stdLib.Element]],
+    hideItemElements: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
+    insert: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
+    layout: js.Function0[scala.Unit],
+    layoutItems: js.Function2[js.Array[stdLib.HTMLElement], scala.Boolean, scala.Unit],
+    prepended: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
+    reloadItems: js.Function0[scala.Unit],
+    remove: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
+    revealItemElements: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
+    shuffle: js.Function0[scala.Unit],
+    stamp: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
+    unstamp: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit],
+    updateSortData: js.Function1[isotopeDashLayoutLib.isotopeDashLayoutMod.IsotopeNs.Elements, scala.Unit]
+  ): Isotope = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addItems")(addItems)
+    __obj.updateDynamic("appended")(appended)
+    __obj.updateDynamic("arrange")(arrange)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getFilteredItemElements")(getFilteredItemElements)
+    __obj.updateDynamic("getItemElements")(getItemElements)
+    __obj.updateDynamic("hideItemElements")(hideItemElements)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("layout")(layout)
+    __obj.updateDynamic("layoutItems")(layoutItems)
+    __obj.updateDynamic("prepended")(prepended)
+    __obj.updateDynamic("reloadItems")(reloadItems)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("revealItemElements")(revealItemElements)
+    __obj.updateDynamic("shuffle")(shuffle)
+    __obj.updateDynamic("stamp")(stamp)
+    __obj.updateDynamic("unstamp")(unstamp)
+    __obj.updateDynamic("updateSortData")(updateSortData)
+    __obj.asInstanceOf[Isotope]
+  }
+}
+

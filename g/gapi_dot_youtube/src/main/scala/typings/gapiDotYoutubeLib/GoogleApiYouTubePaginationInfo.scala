@@ -32,3 +32,24 @@ trait GoogleApiYouTubePaginationInfo[T] extends js.Object {
   var prevPageToken: java.lang.String
 }
 
+object GoogleApiYouTubePaginationInfo {
+  @scala.inline
+  def apply[T](
+    etag: java.lang.String,
+    items: js.Array[T],
+    kind: java.lang.String,
+    nextPageToken: java.lang.String,
+    pageInfo: Anon_ResultsPerPage,
+    prevPageToken: java.lang.String
+  ): GoogleApiYouTubePaginationInfo[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.updateDynamic("pageInfo")(pageInfo)
+    __obj.updateDynamic("prevPageToken")(prevPageToken)
+    __obj.asInstanceOf[GoogleApiYouTubePaginationInfo[T]]
+  }
+}
+

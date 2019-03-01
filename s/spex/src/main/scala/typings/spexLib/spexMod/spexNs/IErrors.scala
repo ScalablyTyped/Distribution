@@ -11,3 +11,14 @@ trait IErrors extends js.Object {
   var SequenceError: ISequenceError
 }
 
+object IErrors {
+  @scala.inline
+  def apply(BatchError: IBatchError, PageError: IPageError, SequenceError: ISequenceError): IErrors = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BatchError")(BatchError)
+    __obj.updateDynamic("PageError")(PageError)
+    __obj.updateDynamic("SequenceError")(SequenceError)
+    __obj.asInstanceOf[IErrors]
+  }
+}
+

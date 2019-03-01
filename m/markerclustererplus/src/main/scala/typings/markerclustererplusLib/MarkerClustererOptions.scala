@@ -126,3 +126,44 @@ trait MarkerClustererOptions extends js.Object {
   var zoomOnClick: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MarkerClustererOptions {
+  @scala.inline
+  def apply(
+    averageCenter: js.UndefOr[scala.Boolean] = js.undefined,
+    batchSize: scala.Int | scala.Double = null,
+    batchSizeIE: scala.Int | scala.Double = null,
+    calculator: Calculator = null,
+    clusterClass: java.lang.String = null,
+    enableRetinaIcons: js.UndefOr[scala.Boolean] = js.undefined,
+    gridSize: scala.Int | scala.Double = null,
+    ignoreHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    imageExtension: java.lang.String = null,
+    imagePath: java.lang.String = null,
+    imageSizes: js.Array[scala.Double] = null,
+    maxZoom: scala.Int | scala.Double = null,
+    minimumClusterSize: scala.Int | scala.Double = null,
+    styles: js.Array[ClusterIconStyle] = null,
+    title: java.lang.String = null,
+    zoomOnClick: js.UndefOr[scala.Boolean] = js.undefined
+  ): MarkerClustererOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(averageCenter)) __obj.updateDynamic("averageCenter")(averageCenter)
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (batchSizeIE != null) __obj.updateDynamic("batchSizeIE")(batchSizeIE.asInstanceOf[js.Any])
+    if (calculator != null) __obj.updateDynamic("calculator")(calculator)
+    if (clusterClass != null) __obj.updateDynamic("clusterClass")(clusterClass)
+    if (!js.isUndefined(enableRetinaIcons)) __obj.updateDynamic("enableRetinaIcons")(enableRetinaIcons)
+    if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHidden)) __obj.updateDynamic("ignoreHidden")(ignoreHidden)
+    if (imageExtension != null) __obj.updateDynamic("imageExtension")(imageExtension)
+    if (imagePath != null) __obj.updateDynamic("imagePath")(imagePath)
+    if (imageSizes != null) __obj.updateDynamic("imageSizes")(imageSizes)
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (minimumClusterSize != null) __obj.updateDynamic("minimumClusterSize")(minimumClusterSize.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(zoomOnClick)) __obj.updateDynamic("zoomOnClick")(zoomOnClick)
+    __obj.asInstanceOf[MarkerClustererOptions]
+  }
+}
+

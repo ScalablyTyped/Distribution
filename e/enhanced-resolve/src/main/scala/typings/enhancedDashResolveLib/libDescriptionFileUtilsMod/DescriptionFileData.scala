@@ -12,3 +12,16 @@ trait DescriptionFileData extends js.Object {
   var concord: js.UndefOr[enhancedDashResolveLib.libConcordMod.Concord] = js.undefined
 }
 
+object DescriptionFileData {
+  @scala.inline
+  def apply(
+    browser: enhancedDashResolveLib.libConcordMod.Dictionary[java.lang.String | scala.Boolean] = null,
+    concord: enhancedDashResolveLib.libConcordMod.Concord = null
+  ): DescriptionFileData = {
+    val __obj = js.Dynamic.literal()
+    if (browser != null) __obj.updateDynamic("browser")(browser)
+    if (concord != null) __obj.updateDynamic("concord")(concord)
+    __obj.asInstanceOf[DescriptionFileData]
+  }
+}
+

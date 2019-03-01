@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object blockingDashProxyLibStrings {
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.HttpMethod
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.HttpMethod
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.HttpMethod
   
   @js.native
-  sealed trait elementId extends js.Object
+  sealed trait elementId
+    extends blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.paramKey
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name
+    extends blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.paramKey
   
   @js.native
-  sealed trait propertyName extends js.Object
+  sealed trait propertyName
+    extends blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.paramKey
   
   @js.native
-  sealed trait sessionId extends js.Object
+  sealed trait sessionId
+    extends blockingDashProxyLib.builtLibWebdriverUnderscoreCommandsMod.paramKey
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

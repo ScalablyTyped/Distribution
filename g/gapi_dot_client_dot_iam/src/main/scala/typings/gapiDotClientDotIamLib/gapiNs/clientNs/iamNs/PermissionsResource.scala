@@ -13,3 +13,17 @@ trait PermissionsResource extends js.Object {
   def queryTestablePermissions(request: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[QueryTestablePermissionsResponse]
 }
 
+object PermissionsResource {
+  @scala.inline
+  def apply(
+    queryTestablePermissions: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[QueryTestablePermissionsResponse]
+    ]
+  ): PermissionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("queryTestablePermissions")(queryTestablePermissions)
+    __obj.asInstanceOf[PermissionsResource]
+  }
+}
+

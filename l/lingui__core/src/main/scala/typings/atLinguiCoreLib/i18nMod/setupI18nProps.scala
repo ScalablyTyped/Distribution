@@ -15,3 +15,22 @@ trait setupI18nProps extends js.Object {
   ] = js.undefined
 }
 
+object setupI18nProps {
+  @scala.inline
+  def apply(
+    catalogs: Catalogs = null,
+    development: js.Object = null,
+    language: java.lang.String = null,
+    locales: js.Array[java.lang.String] = null,
+    missing: java.lang.String | (js.Function2[/* language */ java.lang.String, /* id */ java.lang.String, java.lang.String]) = null
+  ): setupI18nProps = {
+    val __obj = js.Dynamic.literal()
+    if (catalogs != null) __obj.updateDynamic("catalogs")(catalogs)
+    if (development != null) __obj.updateDynamic("development")(development)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locales != null) __obj.updateDynamic("locales")(locales)
+    if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[setupI18nProps]
+  }
+}
+

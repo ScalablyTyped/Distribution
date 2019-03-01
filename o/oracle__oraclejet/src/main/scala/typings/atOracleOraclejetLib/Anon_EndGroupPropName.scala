@@ -15,3 +15,26 @@ trait Anon_EndGroupPropName
   var yMin: scala.Double
 }
 
+object Anon_EndGroupPropName {
+  @scala.inline
+  def apply(
+    endGroup: java.lang.String,
+    startGroup: java.lang.String,
+    xMax: scala.Double,
+    xMin: scala.Double,
+    yMax: scala.Double,
+    yMin: scala.Double,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_EndGroupPropName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endGroup")(endGroup)
+    __obj.updateDynamic("startGroup")(startGroup)
+    __obj.updateDynamic("xMax")(xMax)
+    __obj.updateDynamic("xMin")(xMin)
+    __obj.updateDynamic("yMax")(yMax)
+    __obj.updateDynamic("yMin")(yMin)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_EndGroupPropName]
+  }
+}
+

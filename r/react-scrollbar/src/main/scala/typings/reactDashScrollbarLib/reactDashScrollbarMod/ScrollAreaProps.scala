@@ -28,3 +28,56 @@ trait ScrollAreaProps
   var verticalScrollbarStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object ScrollAreaProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    contentClassName: java.lang.String = null,
+    contentStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    contentWindow: js.Any = null,
+    focusableTabIndex: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    horizontalScrollbarStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    minScrollSize: scala.Int | scala.Double = null,
+    onScroll: js.Function1[/* value */ reactDashScrollbarLib.Anon_ContainerHeight, scala.Unit] = null,
+    ownerDocument: js.Any = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[ScrollArea] = null,
+    smoothScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    speed: scala.Int | scala.Double = null,
+    stopScrollPropagation: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    swapWheelAxes: js.UndefOr[scala.Boolean] = js.undefined,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    verticalScrollbarStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): ScrollAreaProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName)
+    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle)
+    if (contentWindow != null) __obj.updateDynamic("contentWindow")(contentWindow)
+    if (focusableTabIndex != null) __obj.updateDynamic("focusableTabIndex")(focusableTabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (horizontalContainerStyle != null) __obj.updateDynamic("horizontalContainerStyle")(horizontalContainerStyle)
+    if (horizontalScrollbarStyle != null) __obj.updateDynamic("horizontalScrollbarStyle")(horizontalScrollbarStyle)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (minScrollSize != null) __obj.updateDynamic("minScrollSize")(minScrollSize.asInstanceOf[js.Any])
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (ownerDocument != null) __obj.updateDynamic("ownerDocument")(ownerDocument)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothScrolling)) __obj.updateDynamic("smoothScrolling")(smoothScrolling)
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopScrollPropagation)) __obj.updateDynamic("stopScrollPropagation")(stopScrollPropagation)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(swapWheelAxes)) __obj.updateDynamic("swapWheelAxes")(swapWheelAxes)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (verticalContainerStyle != null) __obj.updateDynamic("verticalContainerStyle")(verticalContainerStyle)
+    if (verticalScrollbarStyle != null) __obj.updateDynamic("verticalScrollbarStyle")(verticalScrollbarStyle)
+    __obj.asInstanceOf[ScrollAreaProps]
+  }
+}
+

@@ -95,3 +95,32 @@ trait SlicerUpdateData extends js.Object {
   var worksheet: js.UndefOr[WorksheetUpdateData] = js.undefined
 }
 
+object SlicerUpdateData {
+  @scala.inline
+  def apply(
+    caption: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    left: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    nameInFormula: java.lang.String = null,
+    sortBy: officeDashJsDashPreviewLib.ExcelNs.SlicerSortType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DataSourceOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending = null,
+    style: java.lang.String = null,
+    top: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    worksheet: WorksheetUpdateData = null
+  ): SlicerUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nameInFormula != null) __obj.updateDynamic("nameInFormula")(nameInFormula)
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
+    __obj.asInstanceOf[SlicerUpdateData]
+  }
+}
+

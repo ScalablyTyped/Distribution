@@ -14,3 +14,18 @@ trait TimeseriesDescriptor extends js.Object {
   var project: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimeseriesDescriptor {
+  @scala.inline
+  def apply(
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    metric: java.lang.String = null,
+    project: java.lang.String = null
+  ): TimeseriesDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (project != null) __obj.updateDynamic("project")(project)
+    __obj.asInstanceOf[TimeseriesDescriptor]
+  }
+}
+

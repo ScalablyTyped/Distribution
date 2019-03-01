@@ -32,8 +32,8 @@ package object ReactNs {
     * or ComponentPropsWithoutRef when refs are not supported.
     */
   type ComponentProps[T /* <: java.lang.String */] = js.Object | (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[T] */ js.Any)
-  type ComponentPropsWithRef[T /* <: ReactType[_] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[_] with RefAttributes[stdLib.InstanceType[T]])
-  type ComponentPropsWithoutRef[T /* <: ReactType[_] */] = PropsWithoutRef[ComponentProps[T]]
+  type ComponentPropsWithRef[T /* <: ElementType[_] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[_] with RefAttributes[stdLib.InstanceType[T]])
+  type ComponentPropsWithoutRef[T /* <: ElementType[_] */] = PropsWithoutRef[ComponentProps[T]]
   type ComponentState = js.Any
   type ComponentType[P] = (ComponentClass[P, ComponentState]) | FunctionComponent[P]
   type CompositionEventHandler[T] = EventHandler[CompositionEvent[T]]
@@ -55,6 +55,10 @@ package object ReactNs {
   // NOTE: callbacks are _only_ allowed to return either void, or a destructor.
   // The destructor is itself only allowed to return void.
   type EffectCallback = js.Function0[scala.Unit | js.Function0[js.UndefOr[scala.Unit]]]
+  //
+  // React Elements
+  // ----------------------------------------------------------------------
+  type ElementType[P] = js.Any | ComponentType[P]
   //
   // Event Handler Types
   // ----------------------------------------------------------------------
@@ -124,10 +128,10 @@ package object ReactNs {
   // http://facebook.github.io/react/docs/glossary.html
   // ----------------------------------------------------------------------
   type ReactText = java.lang.String | scala.Double
-  //
-  // React Elements
-  // ----------------------------------------------------------------------
-  type ReactType[P] = js.Any | ComponentType[P]
+  /**
+    * @deprecated Please use `ElementType`
+    */
+  type ReactType[P] = ElementType[P]
   // Unlike redux, the actions _can_ be anything
   type Reducer[S, A] = js.Function2[/* prevState */ S, /* action */ A, S]
   type ReducerAction[R /* <: Reducer[_, _] */] = js.Any

@@ -13,3 +13,22 @@ trait SelectionInfo[T] extends js.Object {
   var selectWay: TableSelectWay
 }
 
+object SelectionInfo {
+  @scala.inline
+  def apply[T](
+    selectWay: TableSelectWay,
+    changeRowKeys: js.Array[reactLib.reactMod.ReactNs.Key] = null,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    nativeEvent: reactLib.Event = null,
+    record: T = null
+  ): SelectionInfo[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("selectWay")(selectWay)
+    if (changeRowKeys != null) __obj.updateDynamic("changeRowKeys")(changeRowKeys)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent)
+    if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectionInfo[T]]
+  }
+}
+

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fp-ts/lib/Option", "None")
 @js.native
-class None[A] protected () extends js.Object {
+class None[A] protected () extends Option[A] {
   val _A: A = js.native
   val _URI: URI = js.native
   val _tag: fpDashTsLib.fpDashTsLibStrings.None = js.native
@@ -35,7 +35,7 @@ class None[A] protected () extends js.Object {
     */
   def ap[B](fab: Option[js.Function1[/* a */ A, B]]): Option[B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     *
     * @example
     * import { some, none } from 'fp-ts/lib/Option'
@@ -74,7 +74,7 @@ class None[A] protected () extends js.Object {
     * assert.strictEqual(none.fold('none', a => `some: ${a}`), 'none')
     */
   def fold[B](b: B, onSome: js.Function1[/* a */ A, B]): B = js.native
-  /** Lazy version of {@link fold} */
+  /** Lazy version of `fold` */
   def foldL[B](onNone: js.Function0[B], onSome: js.Function1[/* a */ A, B]): B = js.native
   /**
     * Returns the value from this `Some` or the given argument if this is a `None`
@@ -87,7 +87,7 @@ class None[A] protected () extends js.Object {
     * assert.strictEqual(fa.getOrElse(0), 0)
     */
   def getOrElse(a: A): A = js.native
-  /** Lazy version of {@link getOrElse} */
+  /** Lazy version of `getOrElse` */
   def getOrElseL(f: js.Function0[A]): A = js.native
   def inspect(): java.lang.String = js.native
   /** Returns `true` if the option is `None`, `false` otherwise */
@@ -137,7 +137,7 @@ class None[A] protected () extends js.Object {
     */
   def mapNullable[B](f: js.Function1[/* a */ A, js.UndefOr[B | scala.Null]]): Option[B] = js.native
   /**
-    * Lazy version of {@link alt}
+    * Lazy version of `alt`
     *
     * @example
     * import { some } from 'fp-ts/lib/Option'
@@ -149,7 +149,7 @@ class None[A] protected () extends js.Object {
   def orElse(fa: fpDashTsLib.libFunctionMod.Lazy[Option[A]]): Option[A] = js.native
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native
   /**
-    * Use {@link filter} instead.
+    * Use `filter` instead.
     * Returns this option refined as `Option<B>` if it is non empty and the `refinement` returns `true` when applied to
     * this Option's value. Otherwise returns `None`
     * @since 1.3.0

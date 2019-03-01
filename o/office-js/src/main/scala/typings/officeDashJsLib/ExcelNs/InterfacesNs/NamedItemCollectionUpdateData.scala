@@ -10,3 +10,12 @@ trait NamedItemCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[NamedItemData]] = js.undefined
 }
 
+object NamedItemCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[NamedItemData] = null): NamedItemCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[NamedItemCollectionUpdateData]
+  }
+}
+

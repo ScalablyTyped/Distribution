@@ -17,3 +17,30 @@ trait Anon_CenterEllipsoidExtrudedHeightGranularity extends js.Object {
   var semiMinorAxis: scala.Double
 }
 
+object Anon_CenterEllipsoidExtrudedHeightGranularity {
+  @scala.inline
+  def apply(
+    center: cesiumLib.cesiumMod.CesiumNs.Cartesian3,
+    semiMajorAxis: scala.Double,
+    semiMinorAxis: scala.Double,
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    extrudedHeight: scala.Int | scala.Double = null,
+    granularity: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    numberOfVerticalLines: scala.Int | scala.Double = null,
+    rotation: scala.Int | scala.Double = null
+  ): Anon_CenterEllipsoidExtrudedHeightGranularity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("center")(center)
+    __obj.updateDynamic("semiMajorAxis")(semiMajorAxis)
+    __obj.updateDynamic("semiMinorAxis")(semiMinorAxis)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (numberOfVerticalLines != null) __obj.updateDynamic("numberOfVerticalLines")(numberOfVerticalLines.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CenterEllipsoidExtrudedHeightGranularity]
+  }
+}
+

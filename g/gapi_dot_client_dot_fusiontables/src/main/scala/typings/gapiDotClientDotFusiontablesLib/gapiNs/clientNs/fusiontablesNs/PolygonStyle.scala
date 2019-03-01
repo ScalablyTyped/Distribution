@@ -24,3 +24,28 @@ trait PolygonStyle extends js.Object {
   var strokeWeightStyler: js.UndefOr[StyleFunction] = js.undefined
 }
 
+object PolygonStyle {
+  @scala.inline
+  def apply(
+    fillColor: java.lang.String = null,
+    fillColorStyler: StyleFunction = null,
+    fillOpacity: scala.Int | scala.Double = null,
+    strokeColor: java.lang.String = null,
+    strokeColorStyler: StyleFunction = null,
+    strokeOpacity: scala.Int | scala.Double = null,
+    strokeWeight: scala.Int | scala.Double = null,
+    strokeWeightStyler: StyleFunction = null
+  ): PolygonStyle = {
+    val __obj = js.Dynamic.literal()
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillColorStyler != null) __obj.updateDynamic("fillColorStyler")(fillColorStyler)
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeColorStyler != null) __obj.updateDynamic("strokeColorStyler")(strokeColorStyler)
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
+    if (strokeWeightStyler != null) __obj.updateDynamic("strokeWeightStyler")(strokeWeightStyler)
+    __obj.asInstanceOf[PolygonStyle]
+  }
+}
+

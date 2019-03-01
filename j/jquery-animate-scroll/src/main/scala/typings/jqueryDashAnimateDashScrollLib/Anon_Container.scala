@@ -12,3 +12,18 @@ trait Anon_Container extends js.Object {
   var speed: scala.Double
 }
 
+object Anon_Container {
+  @scala.inline
+  def apply(
+    $container: jqueryDashAnimateDashScrollLib.jqueryDashAnimateDashScrollMod.Global.JQuery,
+    offset: scala.Double,
+    speed: scala.Double
+  ): Anon_Container = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$container")($container)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("speed")(speed)
+    __obj.asInstanceOf[Anon_Container]
+  }
+}
+

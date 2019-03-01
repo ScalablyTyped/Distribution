@@ -20,3 +20,20 @@ trait CellSelectionEventArgs extends js.Object {
   var rowheader: js.UndefOr[js.Any] = js.undefined
 }
 
+object CellSelectionEventArgs {
+  @scala.inline
+  def apply(
+    JSONRecords: js.Any = null,
+    columnheader: js.Any = null,
+    measureCount: java.lang.String = null,
+    rowheader: js.Any = null
+  ): CellSelectionEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (JSONRecords != null) __obj.updateDynamic("JSONRecords")(JSONRecords)
+    if (columnheader != null) __obj.updateDynamic("columnheader")(columnheader)
+    if (measureCount != null) __obj.updateDynamic("measureCount")(measureCount)
+    if (rowheader != null) __obj.updateDynamic("rowheader")(rowheader)
+    __obj.asInstanceOf[CellSelectionEventArgs]
+  }
+}
+

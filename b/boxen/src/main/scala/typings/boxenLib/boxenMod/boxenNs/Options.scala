@@ -94,3 +94,28 @@ trait Options extends js.Object {
   var padding: js.UndefOr[scala.Double | PositionOptions] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    align: boxenLib.boxenLibStrings.left | boxenLib.boxenLibStrings.center | boxenLib.boxenLibStrings.right = null,
+    backgroundColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    borderStyle: cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames | cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxDefinition = null,
+    dimBorder: js.UndefOr[scala.Boolean] = js.undefined,
+    float: boxenLib.boxenLibStrings.right | boxenLib.boxenLibStrings.center | boxenLib.boxenLibStrings.left = null,
+    margin: scala.Double | PositionOptions = null,
+    padding: scala.Double | PositionOptions = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(dimBorder)) __obj.updateDynamic("dimBorder")(dimBorder)
+    if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

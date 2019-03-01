@@ -37,3 +37,32 @@ trait Request extends js.Object {
   var url: java.lang.String
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    bodySize: scala.Double,
+    cookies: js.Array[Cookie],
+    headers: js.Array[Header],
+    headersSize: scala.Double,
+    httpVersion: java.lang.String,
+    method: java.lang.String,
+    queryString: js.Array[QueryString],
+    url: java.lang.String,
+    comment: java.lang.String = null,
+    postData: PostData = null
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bodySize")(bodySize)
+    __obj.updateDynamic("cookies")(cookies)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("headersSize")(headersSize)
+    __obj.updateDynamic("httpVersion")(httpVersion)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("queryString")(queryString)
+    __obj.updateDynamic("url")(url)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (postData != null) __obj.updateDynamic("postData")(postData)
+    __obj.asInstanceOf[Request]
+  }
+}
+

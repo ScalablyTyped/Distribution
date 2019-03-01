@@ -12,3 +12,12 @@ trait ModuleConfiguration extends js.Object {
   var pathOpenSSL: java.lang.String
 }
 
+object ModuleConfiguration {
+  @scala.inline
+  def apply(pathOpenSSL: java.lang.String): ModuleConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pathOpenSSL")(pathOpenSSL)
+    __obj.asInstanceOf[ModuleConfiguration]
+  }
+}
+

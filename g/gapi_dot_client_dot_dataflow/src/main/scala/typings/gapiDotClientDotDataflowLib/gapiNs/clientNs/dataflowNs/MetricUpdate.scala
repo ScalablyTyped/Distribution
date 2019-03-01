@@ -65,3 +65,32 @@ trait MetricUpdate extends js.Object {
   var updateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MetricUpdate {
+  @scala.inline
+  def apply(
+    cumulative: js.UndefOr[scala.Boolean] = js.undefined,
+    distribution: js.Any = null,
+    internal: js.Any = null,
+    kind: java.lang.String = null,
+    meanCount: js.Any = null,
+    meanSum: js.Any = null,
+    name: MetricStructuredName = null,
+    scalar: js.Any = null,
+    set: js.Any = null,
+    updateTime: java.lang.String = null
+  ): MetricUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative)
+    if (distribution != null) __obj.updateDynamic("distribution")(distribution)
+    if (internal != null) __obj.updateDynamic("internal")(internal)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (meanCount != null) __obj.updateDynamic("meanCount")(meanCount)
+    if (meanSum != null) __obj.updateDynamic("meanSum")(meanSum)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (scalar != null) __obj.updateDynamic("scalar")(scalar)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    __obj.asInstanceOf[MetricUpdate]
+  }
+}
+

@@ -11,3 +11,18 @@ trait BeginAsyncOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BeginAsyncOptions {
+  @scala.inline
+  def apply(
+    last: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null
+  ): BeginAsyncOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BeginAsyncOptions]
+  }
+}
+

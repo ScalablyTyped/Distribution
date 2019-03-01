@@ -38,3 +38,22 @@ trait RedirectOptions extends js.Object {
   var follow_set_referer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RedirectOptions {
+  @scala.inline
+  def apply(
+    follow_if_same_host: js.UndefOr[scala.Boolean] = js.undefined,
+    follow_if_same_protocol: js.UndefOr[scala.Boolean] = js.undefined,
+    follow_keep_method: js.UndefOr[scala.Boolean] = js.undefined,
+    follow_set_cookie: js.UndefOr[scala.Boolean] = js.undefined,
+    follow_set_referer: js.UndefOr[scala.Boolean] = js.undefined
+  ): RedirectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(follow_if_same_host)) __obj.updateDynamic("follow_if_same_host")(follow_if_same_host)
+    if (!js.isUndefined(follow_if_same_protocol)) __obj.updateDynamic("follow_if_same_protocol")(follow_if_same_protocol)
+    if (!js.isUndefined(follow_keep_method)) __obj.updateDynamic("follow_keep_method")(follow_keep_method)
+    if (!js.isUndefined(follow_set_cookie)) __obj.updateDynamic("follow_set_cookie")(follow_set_cookie)
+    if (!js.isUndefined(follow_set_referer)) __obj.updateDynamic("follow_set_referer")(follow_set_referer)
+    __obj.asInstanceOf[RedirectOptions]
+  }
+}
+

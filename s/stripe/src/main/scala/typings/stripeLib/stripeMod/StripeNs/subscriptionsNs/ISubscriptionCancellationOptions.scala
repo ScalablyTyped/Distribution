@@ -23,3 +23,22 @@ trait ISubscriptionCancellationOptions
   var prorate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ISubscriptionCancellationOptions {
+  @scala.inline
+  def apply(
+    at_period_end: js.UndefOr[scala.Boolean] = js.undefined,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    invoice_now: js.UndefOr[scala.Boolean] = js.undefined,
+    prorate: js.UndefOr[scala.Boolean] = js.undefined
+  ): ISubscriptionCancellationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(at_period_end)) __obj.updateDynamic("at_period_end")(at_period_end)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (!js.isUndefined(invoice_now)) __obj.updateDynamic("invoice_now")(invoice_now)
+    if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate)
+    __obj.asInstanceOf[ISubscriptionCancellationOptions]
+  }
+}
+

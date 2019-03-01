@@ -28,3 +28,22 @@ trait VideoSuggestions extends js.Object {
   var tagSuggestions: js.UndefOr[js.Array[VideoSuggestionsTagSuggestion]] = js.undefined
 }
 
+object VideoSuggestions {
+  @scala.inline
+  def apply(
+    editorSuggestions: js.Array[java.lang.String] = null,
+    processingErrors: js.Array[java.lang.String] = null,
+    processingHints: js.Array[java.lang.String] = null,
+    processingWarnings: js.Array[java.lang.String] = null,
+    tagSuggestions: js.Array[VideoSuggestionsTagSuggestion] = null
+  ): VideoSuggestions = {
+    val __obj = js.Dynamic.literal()
+    if (editorSuggestions != null) __obj.updateDynamic("editorSuggestions")(editorSuggestions)
+    if (processingErrors != null) __obj.updateDynamic("processingErrors")(processingErrors)
+    if (processingHints != null) __obj.updateDynamic("processingHints")(processingHints)
+    if (processingWarnings != null) __obj.updateDynamic("processingWarnings")(processingWarnings)
+    if (tagSuggestions != null) __obj.updateDynamic("tagSuggestions")(tagSuggestions)
+    __obj.asInstanceOf[VideoSuggestions]
+  }
+}
+

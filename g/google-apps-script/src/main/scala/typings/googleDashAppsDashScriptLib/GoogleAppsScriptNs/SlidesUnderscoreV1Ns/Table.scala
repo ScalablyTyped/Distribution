@@ -33,3 +33,24 @@ trait Table extends js.Object {
   var vertical_border_rows: js.Array[TableBorderRow]
 }
 
+object Table {
+  @scala.inline
+  def apply(
+    columns: scala.Double,
+    horizontal_border_rows: js.Array[TableBorderRow],
+    rows: scala.Double,
+    table_columns: js.Array[TableColumnProperties],
+    table_rows: js.Array[TableRow],
+    vertical_border_rows: js.Array[TableBorderRow]
+  ): Table = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columns")(columns)
+    __obj.updateDynamic("horizontal_border_rows")(horizontal_border_rows)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("table_columns")(table_columns)
+    __obj.updateDynamic("table_rows")(table_rows)
+    __obj.updateDynamic("vertical_border_rows")(vertical_border_rows)
+    __obj.asInstanceOf[Table]
+  }
+}
+

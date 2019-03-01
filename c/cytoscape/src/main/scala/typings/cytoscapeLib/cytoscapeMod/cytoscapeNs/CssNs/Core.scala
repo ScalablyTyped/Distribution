@@ -59,3 +59,22 @@ trait Core extends js.Object {
   var `selection-box-opacity`: scala.Double
 }
 
+object Core {
+  @scala.inline
+  def apply(
+    `active-bg-color`: Colour,
+    `active-bg-opacity`: scala.Double,
+    `active-bg-size`: scala.Double,
+    `outside-texture-bg-color`: Colour,
+    `outside-texture-bg-opacity`: scala.Double,
+    `selection-box-border-color`: Colour,
+    `selection-box-border-width`: scala.Double,
+    `selection-box-color`: Colour,
+    `selection-box-opacity`: scala.Double
+  ): Core = {
+    val __obj = js.Dynamic.literal(`active-bg-color` = `active-bg-color`, `active-bg-opacity` = `active-bg-opacity`, `active-bg-size` = `active-bg-size`, `outside-texture-bg-color` = `outside-texture-bg-color`, `outside-texture-bg-opacity` = `outside-texture-bg-opacity`, `selection-box-border-color` = `selection-box-border-color`, `selection-box-border-width` = `selection-box-border-width`, `selection-box-color` = `selection-box-color`, `selection-box-opacity` = `selection-box-opacity`)
+  
+    __obj.asInstanceOf[Core]
+  }
+}
+

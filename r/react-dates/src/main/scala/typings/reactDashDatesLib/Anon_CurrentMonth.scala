@@ -17,3 +17,26 @@ trait Anon_CurrentMonth extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CurrentMonth {
+  @scala.inline
+  def apply(
+    month: reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj,
+    onMonthSelect: js.Function2[
+      reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    onYearSelect: js.Function2[
+      reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj, 
+      java.lang.String, 
+      scala.Unit
+    ]
+  ): Anon_CurrentMonth = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("onMonthSelect")(onMonthSelect)
+    __obj.updateDynamic("onYearSelect")(onYearSelect)
+    __obj.asInstanceOf[Anon_CurrentMonth]
+  }
+}
+

@@ -15,3 +15,12 @@ trait DocumentsTarget extends js.Object {
   var documents: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object DocumentsTarget {
+  @scala.inline
+  def apply(documents: js.Array[java.lang.String] = null): DocumentsTarget = {
+    val __obj = js.Dynamic.literal()
+    if (documents != null) __obj.updateDynamic("documents")(documents)
+    __obj.asInstanceOf[DocumentsTarget]
+  }
+}
+

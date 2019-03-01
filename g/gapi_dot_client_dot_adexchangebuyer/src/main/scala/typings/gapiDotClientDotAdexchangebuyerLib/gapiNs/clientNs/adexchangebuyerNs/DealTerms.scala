@@ -31,3 +31,32 @@ trait DealTerms extends js.Object {
   var sellerTimeZone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DealTerms {
+  @scala.inline
+  def apply(
+    brandingType: java.lang.String = null,
+    crossListedExternalDealIdType: java.lang.String = null,
+    description: java.lang.String = null,
+    estimatedGrossSpend: Price = null,
+    estimatedImpressionsPerDay: java.lang.String = null,
+    guaranteedFixedPriceTerms: DealTermsGuaranteedFixedPriceTerms = null,
+    nonGuaranteedAuctionTerms: DealTermsNonGuaranteedAuctionTerms = null,
+    nonGuaranteedFixedPriceTerms: DealTermsNonGuaranteedFixedPriceTerms = null,
+    rubiconNonGuaranteedTerms: DealTermsRubiconNonGuaranteedTerms = null,
+    sellerTimeZone: java.lang.String = null
+  ): DealTerms = {
+    val __obj = js.Dynamic.literal()
+    if (brandingType != null) __obj.updateDynamic("brandingType")(brandingType)
+    if (crossListedExternalDealIdType != null) __obj.updateDynamic("crossListedExternalDealIdType")(crossListedExternalDealIdType)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (estimatedGrossSpend != null) __obj.updateDynamic("estimatedGrossSpend")(estimatedGrossSpend)
+    if (estimatedImpressionsPerDay != null) __obj.updateDynamic("estimatedImpressionsPerDay")(estimatedImpressionsPerDay)
+    if (guaranteedFixedPriceTerms != null) __obj.updateDynamic("guaranteedFixedPriceTerms")(guaranteedFixedPriceTerms)
+    if (nonGuaranteedAuctionTerms != null) __obj.updateDynamic("nonGuaranteedAuctionTerms")(nonGuaranteedAuctionTerms)
+    if (nonGuaranteedFixedPriceTerms != null) __obj.updateDynamic("nonGuaranteedFixedPriceTerms")(nonGuaranteedFixedPriceTerms)
+    if (rubiconNonGuaranteedTerms != null) __obj.updateDynamic("rubiconNonGuaranteedTerms")(rubiconNonGuaranteedTerms)
+    if (sellerTimeZone != null) __obj.updateDynamic("sellerTimeZone")(sellerTimeZone)
+    __obj.asInstanceOf[DealTerms]
+  }
+}
+

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Keyboard")
 @js.native
-class Keyboard () extends js.Object {
+class Keyboard ()
+  extends swiperLib.swiperMod.SwiperModule {
   /**
     * Whether the keyboard control is enabled
     */

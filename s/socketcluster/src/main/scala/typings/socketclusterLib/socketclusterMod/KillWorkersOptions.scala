@@ -12,3 +12,16 @@ trait KillWorkersOptions extends js.Object {
   var killClusterMaster: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object KillWorkersOptions {
+  @scala.inline
+  def apply(
+    immediate: js.UndefOr[scala.Boolean] = js.undefined,
+    killClusterMaster: js.UndefOr[scala.Boolean] = js.undefined
+  ): KillWorkersOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (!js.isUndefined(killClusterMaster)) __obj.updateDynamic("killClusterMaster")(killClusterMaster)
+    __obj.asInstanceOf[KillWorkersOptions]
+  }
+}
+

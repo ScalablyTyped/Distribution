@@ -47,3 +47,29 @@ trait LevelDetails extends js.Object {
   var version: scala.Double
 }
 
+object LevelDetails {
+  @scala.inline
+  def apply(
+    averagetargetduration: scala.Double,
+    endSN: scala.Double,
+    fragments: js.Array[Fragment],
+    live: scala.Boolean,
+    startSN: scala.Double,
+    targetduration: scala.Double,
+    totalduration: scala.Double,
+    `type`: java.lang.String,
+    version: scala.Double
+  ): LevelDetails = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("averagetargetduration")(averagetargetduration)
+    __obj.updateDynamic("endSN")(endSN)
+    __obj.updateDynamic("fragments")(fragments)
+    __obj.updateDynamic("live")(live)
+    __obj.updateDynamic("startSN")(startSN)
+    __obj.updateDynamic("targetduration")(targetduration)
+    __obj.updateDynamic("totalduration")(totalduration)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[LevelDetails]
+  }
+}
+

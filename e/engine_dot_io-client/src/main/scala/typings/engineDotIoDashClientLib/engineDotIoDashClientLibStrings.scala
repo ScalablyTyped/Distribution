@@ -34,7 +34,8 @@ object engineDotIoDashClientLibStrings {
   sealed trait ping extends js.Object
   
   @js.native
-  sealed trait polling extends js.Object
+  sealed trait polling
+    extends engineDotIoDashClientLib.engineDotIoDashClientMod.clientNs.Transport
   
   @js.native
   sealed trait pong extends js.Object
@@ -46,7 +47,8 @@ object engineDotIoDashClientLibStrings {
   sealed trait upgradeError extends js.Object
   
   @js.native
-  sealed trait websocket extends js.Object
+  sealed trait websocket
+    extends engineDotIoDashClientLib.engineDotIoDashClientMod.clientNs.Transport
   
   @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]

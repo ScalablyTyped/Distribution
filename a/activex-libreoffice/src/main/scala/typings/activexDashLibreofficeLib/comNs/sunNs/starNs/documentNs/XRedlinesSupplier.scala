@@ -14,3 +14,22 @@ trait XRedlinesSupplier
   def getRedlines(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess
 }
 
+object XRedlinesSupplier {
+  @scala.inline
+  def apply(
+    Redlines: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
+    acquire: js.Function0[scala.Unit],
+    getRedlines: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XRedlinesSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Redlines")(Redlines)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getRedlines")(getRedlines)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XRedlinesSupplier]
+  }
+}
+

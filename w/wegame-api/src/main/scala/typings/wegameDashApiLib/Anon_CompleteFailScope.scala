@@ -15,3 +15,20 @@ trait Anon_CompleteFailScope extends js.Object {
   var success: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object Anon_CompleteFailScope {
+  @scala.inline
+  def apply(
+    scope: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    success: js.Function0[scala.Unit] = null
+  ): Anon_CompleteFailScope = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scope")(scope)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_CompleteFailScope]
+  }
+}
+

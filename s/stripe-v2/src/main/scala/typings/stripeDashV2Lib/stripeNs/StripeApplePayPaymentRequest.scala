@@ -18,3 +18,32 @@ trait StripeApplePayPaymentRequest extends js.Object {
   var total: StripeApplePayLineItem
 }
 
+object StripeApplePayPaymentRequest {
+  @scala.inline
+  def apply(
+    billingContact: StripeApplePayPaymentContact,
+    countryCode: java.lang.String,
+    currencyCode: java.lang.String,
+    total: StripeApplePayLineItem,
+    lineItems: js.Array[StripeApplePayLineItem] = null,
+    requiredBillingContactFields: js.Array[StripeApplePayBillingContactField] = null,
+    requiredShippingContactFields: js.Array[StripeApplePayShippingContactField] = null,
+    shippingContact: StripeApplePayPaymentContact = null,
+    shippingMethods: js.Array[StripeApplePayShippingMethod] = null,
+    shippingType: js.Array[StripeApplePayShipping] = null
+  ): StripeApplePayPaymentRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("billingContact")(billingContact)
+    __obj.updateDynamic("countryCode")(countryCode)
+    __obj.updateDynamic("currencyCode")(currencyCode)
+    __obj.updateDynamic("total")(total)
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
+    if (requiredBillingContactFields != null) __obj.updateDynamic("requiredBillingContactFields")(requiredBillingContactFields)
+    if (requiredShippingContactFields != null) __obj.updateDynamic("requiredShippingContactFields")(requiredShippingContactFields)
+    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact)
+    if (shippingMethods != null) __obj.updateDynamic("shippingMethods")(shippingMethods)
+    if (shippingType != null) __obj.updateDynamic("shippingType")(shippingType)
+    __obj.asInstanceOf[StripeApplePayPaymentRequest]
+  }
+}
+

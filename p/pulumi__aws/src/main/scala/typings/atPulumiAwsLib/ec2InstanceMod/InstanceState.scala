@@ -218,3 +218,106 @@ trait InstanceState extends js.Object {
   ] = js.undefined
 }
 
+object InstanceState {
+  @scala.inline
+  def apply(
+    ami: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    associatePublicIpAddress: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cpuCoreCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    cpuThreadsPerCore: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    creditSpecification: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CpuCreditsInput] = null,
+    disableApiTermination: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    ebsBlockDevices: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[
+          atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeIdVolumeSize
+        ]
+      ]
+    ] = null,
+    ebsOptimized: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    ephemeralBlockDevices: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeviceNameNoDeviceVirtualName]
+      ]
+    ] = null,
+    getPasswordData: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    hostId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    iamInstanceProfile: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamMod.InstanceProfile] = null,
+    instanceInitiatedShutdownBehavior: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceState: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceType: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.ec2InstanceTypeMod.InstanceType] = null,
+    ipv6AddressCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    ipv6Addresses: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    keyName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    monitoring: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkInterfaces: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId]
+      ]
+    ] = null,
+    passwordData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    placementGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    primaryNetworkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateDns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publicDns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publicIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rootBlockDevice: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeIdVolumeSize] = null,
+    securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    sourceDestCheck: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    tenancy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    userData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    userDataBase64: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    volumeTags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): InstanceState = {
+    val __obj = js.Dynamic.literal()
+    if (ami != null) __obj.updateDynamic("ami")(ami.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (associatePublicIpAddress != null) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (cpuCoreCount != null) __obj.updateDynamic("cpuCoreCount")(cpuCoreCount.asInstanceOf[js.Any])
+    if (cpuThreadsPerCore != null) __obj.updateDynamic("cpuThreadsPerCore")(cpuThreadsPerCore.asInstanceOf[js.Any])
+    if (creditSpecification != null) __obj.updateDynamic("creditSpecification")(creditSpecification.asInstanceOf[js.Any])
+    if (disableApiTermination != null) __obj.updateDynamic("disableApiTermination")(disableApiTermination.asInstanceOf[js.Any])
+    if (ebsBlockDevices != null) __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices.asInstanceOf[js.Any])
+    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
+    if (ephemeralBlockDevices != null) __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices.asInstanceOf[js.Any])
+    if (getPasswordData != null) __obj.updateDynamic("getPasswordData")(getPasswordData.asInstanceOf[js.Any])
+    if (hostId != null) __obj.updateDynamic("hostId")(hostId.asInstanceOf[js.Any])
+    if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
+    if (instanceInitiatedShutdownBehavior != null) __obj.updateDynamic("instanceInitiatedShutdownBehavior")(instanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
+    if (instanceState != null) __obj.updateDynamic("instanceState")(instanceState.asInstanceOf[js.Any])
+    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    if (ipv6AddressCount != null) __obj.updateDynamic("ipv6AddressCount")(ipv6AddressCount.asInstanceOf[js.Any])
+    if (ipv6Addresses != null) __obj.updateDynamic("ipv6Addresses")(ipv6Addresses.asInstanceOf[js.Any])
+    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
+    if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
+    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
+    if (passwordData != null) __obj.updateDynamic("passwordData")(passwordData.asInstanceOf[js.Any])
+    if (placementGroup != null) __obj.updateDynamic("placementGroup")(placementGroup.asInstanceOf[js.Any])
+    if (primaryNetworkInterfaceId != null) __obj.updateDynamic("primaryNetworkInterfaceId")(primaryNetworkInterfaceId.asInstanceOf[js.Any])
+    if (privateDns != null) __obj.updateDynamic("privateDns")(privateDns.asInstanceOf[js.Any])
+    if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
+    if (publicDns != null) __obj.updateDynamic("publicDns")(publicDns.asInstanceOf[js.Any])
+    if (publicIp != null) __obj.updateDynamic("publicIp")(publicIp.asInstanceOf[js.Any])
+    if (rootBlockDevice != null) __obj.updateDynamic("rootBlockDevice")(rootBlockDevice.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (sourceDestCheck != null) __obj.updateDynamic("sourceDestCheck")(sourceDestCheck.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (tenancy != null) __obj.updateDynamic("tenancy")(tenancy.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    if (userDataBase64 != null) __obj.updateDynamic("userDataBase64")(userDataBase64.asInstanceOf[js.Any])
+    if (volumeTags != null) __obj.updateDynamic("volumeTags")(volumeTags.asInstanceOf[js.Any])
+    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstanceState]
+  }
+}
+

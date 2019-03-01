@@ -33,3 +33,18 @@ trait RemoveDuplicatesResultLoadOptions extends js.Object {
   var uniqueRemaining: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RemoveDuplicatesResultLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    removed: js.UndefOr[scala.Boolean] = js.undefined,
+    uniqueRemaining: js.UndefOr[scala.Boolean] = js.undefined
+  ): RemoveDuplicatesResultLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed)
+    if (!js.isUndefined(uniqueRemaining)) __obj.updateDynamic("uniqueRemaining")(uniqueRemaining)
+    __obj.asInstanceOf[RemoveDuplicatesResultLoadOptions]
+  }
+}
+

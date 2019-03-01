@@ -29,3 +29,22 @@ trait ApplicationTabBackstageSettingsPage extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApplicationTabBackstageSettingsPage {
+  @scala.inline
+  def apply(
+    contentID: java.lang.String = null,
+    enableSeparator: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    itemType: ItemType | java.lang.String = null,
+    text: java.lang.String = null
+  ): ApplicationTabBackstageSettingsPage = {
+    val __obj = js.Dynamic.literal()
+    if (contentID != null) __obj.updateDynamic("contentID")(contentID)
+    if (!js.isUndefined(enableSeparator)) __obj.updateDynamic("enableSeparator")(enableSeparator)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ApplicationTabBackstageSettingsPage]
+  }
+}
+

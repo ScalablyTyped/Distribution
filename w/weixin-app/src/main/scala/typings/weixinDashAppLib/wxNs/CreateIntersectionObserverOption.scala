@@ -14,3 +14,18 @@ trait CreateIntersectionObserverOption extends js.Object {
   var thresholds: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
 }
 
+object CreateIntersectionObserverOption {
+  @scala.inline
+  def apply(
+    initialRatio: scala.Int | scala.Double = null,
+    selectAll: js.UndefOr[scala.Boolean] = js.undefined,
+    thresholds: js.Tuple2[scala.Double, scala.Double] = null
+  ): CreateIntersectionObserverOption = {
+    val __obj = js.Dynamic.literal()
+    if (initialRatio != null) __obj.updateDynamic("initialRatio")(initialRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectAll)) __obj.updateDynamic("selectAll")(selectAll)
+    if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds)
+    __obj.asInstanceOf[CreateIntersectionObserverOption]
+  }
+}
+

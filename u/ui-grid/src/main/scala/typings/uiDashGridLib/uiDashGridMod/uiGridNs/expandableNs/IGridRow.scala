@@ -14,3 +14,12 @@ trait IGridRow extends js.Object {
   var isExpanded: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridRow {
+  @scala.inline
+  def apply(isExpanded: js.UndefOr[scala.Boolean] = js.undefined): IGridRow = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    __obj.asInstanceOf[IGridRow]
+  }
+}
+

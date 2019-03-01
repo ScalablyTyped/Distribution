@@ -28,7 +28,6 @@ package object graspNs {
     /* selector */ java.lang.String, 
     js.Function1[/* input */ java.lang.String, js.Array[estreeLib.estreeMod.Node]]
   ])
-  type QueryEngineType = graspLib.graspLibStrings.squery | graspLib.graspLibStrings.equery
   type Replacement = java.lang.String | (js.Function4[
     /* getRaw */ js.Function1[/* node */ estreeLib.estreeMod.Node, java.lang.String], 
     /* node */ estreeLib.estreeMod.Node, 

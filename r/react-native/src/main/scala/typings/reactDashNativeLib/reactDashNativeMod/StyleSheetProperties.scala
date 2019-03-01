@@ -10,3 +10,13 @@ trait StyleSheetProperties extends js.Object {
   def flatten[T /* <: java.lang.String */](style: T): T
 }
 
+object StyleSheetProperties {
+  @scala.inline
+  def apply(flatten: js.Function1[js.Any, js.Any], hairlineWidth: scala.Double): StyleSheetProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("flatten")(flatten)
+    __obj.updateDynamic("hairlineWidth")(hairlineWidth)
+    __obj.asInstanceOf[StyleSheetProperties]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_Graph extends js.Object {
   var paper: jointjsLib.jointjsMod.diaNs.Paper
 }
 
+object Anon_Graph {
+  @scala.inline
+  def apply(
+    graph: jointjsLib.jointjsMod.diaNs.Graph,
+    model: backboneLib.backboneMod.Collection[jointjsLib.jointjsMod.diaNs.Cell],
+    paper: jointjsLib.jointjsMod.diaNs.Paper
+  ): Anon_Graph = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("graph")(graph)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("paper")(paper)
+    __obj.asInstanceOf[Anon_Graph]
+  }
+}
+

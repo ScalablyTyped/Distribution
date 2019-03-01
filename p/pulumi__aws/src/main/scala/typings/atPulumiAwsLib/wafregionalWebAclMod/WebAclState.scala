@@ -40,3 +40,28 @@ trait WebAclState extends js.Object {
   ] = js.undefined
 }
 
+object WebAclState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput] = null,
+    loggingConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_LogDestinationRedactedFields] = null,
+    metricName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rules: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionOverrideActionPriority]
+      ]
+    ] = null
+  ): WebAclState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (defaultAction != null) __obj.updateDynamic("defaultAction")(defaultAction.asInstanceOf[js.Any])
+    if (loggingConfiguration != null) __obj.updateDynamic("loggingConfiguration")(loggingConfiguration.asInstanceOf[js.Any])
+    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebAclState]
+  }
+}
+

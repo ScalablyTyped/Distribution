@@ -10,3 +10,13 @@ trait SixToFourProperties extends js.Object {
   var prefix: java.lang.String
 }
 
+object SixToFourProperties {
+  @scala.inline
+  def apply(gateway: java.lang.String, prefix: java.lang.String): SixToFourProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gateway")(gateway)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[SixToFourProperties]
+  }
+}
+

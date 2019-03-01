@@ -18,3 +18,22 @@ trait PlayerExperienceInfo extends js.Object {
   var nextLevel: js.UndefOr[PlayerLevel] = js.undefined
 }
 
+object PlayerExperienceInfo {
+  @scala.inline
+  def apply(
+    currentExperiencePoints: java.lang.String = null,
+    currentLevel: PlayerLevel = null,
+    kind: java.lang.String = null,
+    lastLevelUpTimestampMillis: java.lang.String = null,
+    nextLevel: PlayerLevel = null
+  ): PlayerExperienceInfo = {
+    val __obj = js.Dynamic.literal()
+    if (currentExperiencePoints != null) __obj.updateDynamic("currentExperiencePoints")(currentExperiencePoints)
+    if (currentLevel != null) __obj.updateDynamic("currentLevel")(currentLevel)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastLevelUpTimestampMillis != null) __obj.updateDynamic("lastLevelUpTimestampMillis")(lastLevelUpTimestampMillis)
+    if (nextLevel != null) __obj.updateDynamic("nextLevel")(nextLevel)
+    __obj.asInstanceOf[PlayerExperienceInfo]
+  }
+}
+

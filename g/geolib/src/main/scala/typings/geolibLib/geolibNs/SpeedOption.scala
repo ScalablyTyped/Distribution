@@ -9,3 +9,12 @@ trait SpeedOption extends js.Object {
   var unit: java.lang.String
 }
 
+object SpeedOption {
+  @scala.inline
+  def apply(unit: java.lang.String): SpeedOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[SpeedOption]
+  }
+}
+

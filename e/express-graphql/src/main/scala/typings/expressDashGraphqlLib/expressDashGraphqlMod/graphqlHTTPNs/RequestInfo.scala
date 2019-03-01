@@ -24,3 +24,20 @@ trait RequestInfo extends js.Object {
   var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null]
 }
 
+object RequestInfo {
+  @scala.inline
+  def apply(
+    result: js.Any,
+    document: graphqlLib.languageAstMod.DocumentNode = null,
+    operationName: java.lang.String = null,
+    variables: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): RequestInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
+    if (variables != null) __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[RequestInfo]
+  }
+}
+

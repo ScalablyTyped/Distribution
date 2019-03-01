@@ -35,3 +35,28 @@ trait XRoot
   def startRootElement(uid: scala.Double, localName: java.lang.String, xAttributes: XAttributes): XElement
 }
 
+object XRoot {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    endDocument: js.Function0[scala.Unit],
+    processingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDocumentLocator: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XLocator, scala.Unit],
+    startDocument: js.Function1[XNamespaceMapping, scala.Unit],
+    startRootElement: js.Function3[scala.Double, java.lang.String, XAttributes, XElement]
+  ): XRoot = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("endDocument")(endDocument)
+    __obj.updateDynamic("processingInstruction")(processingInstruction)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDocumentLocator")(setDocumentLocator)
+    __obj.updateDynamic("startDocument")(startDocument)
+    __obj.updateDynamic("startRootElement")(startRootElement)
+    __obj.asInstanceOf[XRoot]
+  }
+}
+

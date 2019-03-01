@@ -14,3 +14,24 @@ trait BeforeAfterWrapperProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object BeforeAfterWrapperProps {
+  @scala.inline
+  def apply(
+    afterElementType: java.lang.String = null,
+    afterStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    beforeElementType: java.lang.String = null,
+    beforeStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    elementType: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): BeforeAfterWrapperProps = {
+    val __obj = js.Dynamic.literal()
+    if (afterElementType != null) __obj.updateDynamic("afterElementType")(afterElementType)
+    if (afterStyle != null) __obj.updateDynamic("afterStyle")(afterStyle)
+    if (beforeElementType != null) __obj.updateDynamic("beforeElementType")(beforeElementType)
+    if (beforeStyle != null) __obj.updateDynamic("beforeStyle")(beforeStyle)
+    if (elementType != null) __obj.updateDynamic("elementType")(elementType)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[BeforeAfterWrapperProps]
+  }
+}
+

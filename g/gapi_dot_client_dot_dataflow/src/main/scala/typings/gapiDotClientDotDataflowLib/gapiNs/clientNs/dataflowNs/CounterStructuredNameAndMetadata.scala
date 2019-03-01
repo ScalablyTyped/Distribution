@@ -12,3 +12,13 @@ trait CounterStructuredNameAndMetadata extends js.Object {
   var name: js.UndefOr[CounterStructuredName] = js.undefined
 }
 
+object CounterStructuredNameAndMetadata {
+  @scala.inline
+  def apply(metadata: CounterMetadata = null, name: CounterStructuredName = null): CounterStructuredNameAndMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[CounterStructuredNameAndMetadata]
+  }
+}
+

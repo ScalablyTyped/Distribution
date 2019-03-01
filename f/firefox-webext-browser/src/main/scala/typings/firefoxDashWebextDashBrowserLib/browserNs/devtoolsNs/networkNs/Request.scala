@@ -15,3 +15,12 @@ trait Request extends js.Object {
   def getContent(): js.Promise[js.Object]
 }
 
+object Request {
+  @scala.inline
+  def apply(getContent: js.Function0[js.Promise[js.Object]]): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getContent")(getContent)
+    __obj.asInstanceOf[Request]
+  }
+}
+

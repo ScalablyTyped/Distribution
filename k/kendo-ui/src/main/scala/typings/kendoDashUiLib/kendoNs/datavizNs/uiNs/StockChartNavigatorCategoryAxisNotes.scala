@@ -13,3 +13,22 @@ trait StockChartNavigatorCategoryAxisNotes extends js.Object {
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StockChartNavigatorCategoryAxisNotes {
+  @scala.inline
+  def apply(
+    data: js.Array[StockChartNavigatorCategoryAxisNotesDataItem] = null,
+    icon: StockChartNavigatorCategoryAxisNotesIcon = null,
+    label: StockChartNavigatorCategoryAxisNotesLabel = null,
+    line: StockChartNavigatorCategoryAxisNotesLine = null,
+    position: java.lang.String = null
+  ): StockChartNavigatorCategoryAxisNotes = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[StockChartNavigatorCategoryAxisNotes]
+  }
+}
+

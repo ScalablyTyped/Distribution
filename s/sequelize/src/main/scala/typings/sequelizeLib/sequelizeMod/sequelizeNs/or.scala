@@ -9,3 +9,12 @@ trait or extends js.Object {
   var args: js.Array[_]
 }
 
+object or {
+  @scala.inline
+  def apply(args: js.Array[_]): or = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.asInstanceOf[or]
+  }
+}
+

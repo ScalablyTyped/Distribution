@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashSqliteDashStorageMod {
-  type Location = reactDashNativeDashSqliteDashStorageLib.reactDashNativeDashSqliteDashStorageLibStrings.default | reactDashNativeDashSqliteDashStorageLib.reactDashNativeDashSqliteDashStorageLibStrings.Library | reactDashNativeDashSqliteDashStorageLib.reactDashNativeDashSqliteDashStorageLibStrings.Documents
   type StatementCallback = js.Function2[/* transaction */ Transaction, /* resultSet */ ResultSet, scala.Unit]
   type StatementErrorCallback = js.Function2[/* transaction */ Transaction, /* error */ SQLError, scala.Unit]
   type TransactionCallback = js.Function1[/* transaction */ Transaction, scala.Unit]

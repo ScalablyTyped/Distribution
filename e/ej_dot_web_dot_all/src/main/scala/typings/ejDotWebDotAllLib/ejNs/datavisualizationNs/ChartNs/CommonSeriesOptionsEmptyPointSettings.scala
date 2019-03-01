@@ -19,3 +19,18 @@ trait CommonSeriesOptionsEmptyPointSettings extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CommonSeriesOptionsEmptyPointSettings {
+  @scala.inline
+  def apply(
+    displayMode: EmptyPointMode | java.lang.String = null,
+    style: CommonSeriesOptionsEmptyPointSettingsStyle = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): CommonSeriesOptionsEmptyPointSettings = {
+    val __obj = js.Dynamic.literal()
+    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[CommonSeriesOptionsEmptyPointSettings]
+  }
+}
+

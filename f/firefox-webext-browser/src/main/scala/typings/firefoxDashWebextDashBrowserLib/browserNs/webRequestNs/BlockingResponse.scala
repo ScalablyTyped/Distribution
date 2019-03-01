@@ -46,3 +46,24 @@ trait BlockingResponse extends js.Object {
   var upgradeToSecure: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BlockingResponse {
+  @scala.inline
+  def apply(
+    authCredentials: firefoxDashWebextDashBrowserLib.Anon_Password = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    redirectUrl: java.lang.String = null,
+    requestHeaders: HttpHeaders = null,
+    responseHeaders: HttpHeaders = null,
+    upgradeToSecure: js.UndefOr[scala.Boolean] = js.undefined
+  ): BlockingResponse = {
+    val __obj = js.Dynamic.literal()
+    if (authCredentials != null) __obj.updateDynamic("authCredentials")(authCredentials)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    if (!js.isUndefined(upgradeToSecure)) __obj.updateDynamic("upgradeToSecure")(upgradeToSecure)
+    __obj.asInstanceOf[BlockingResponse]
+  }
+}
+

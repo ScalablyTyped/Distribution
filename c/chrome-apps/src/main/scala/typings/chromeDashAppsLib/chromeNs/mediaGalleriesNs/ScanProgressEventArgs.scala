@@ -20,3 +20,21 @@ trait ScanProgressEventArgs extends js.Object {
   var videoCount: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object ScanProgressEventArgs {
+  @scala.inline
+  def apply(
+    `type`: ScanProgressType,
+    audioCount: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    galleryCount: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    imageCount: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    videoCount: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): ScanProgressEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (!js.isUndefined(audioCount)) __obj.updateDynamic("audioCount")(audioCount)
+    if (!js.isUndefined(galleryCount)) __obj.updateDynamic("galleryCount")(galleryCount)
+    if (!js.isUndefined(imageCount)) __obj.updateDynamic("imageCount")(imageCount)
+    if (!js.isUndefined(videoCount)) __obj.updateDynamic("videoCount")(videoCount)
+    __obj.asInstanceOf[ScanProgressEventArgs]
+  }
+}
+

@@ -11,3 +11,14 @@ trait Service extends js.Object {
   var options: js.Object
 }
 
+object Service {
+  @scala.inline
+  def apply(methods: js.Array[RPCMethod], name: java.lang.String, options: js.Object): Service = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("methods")(methods)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[Service]
+  }
+}
+

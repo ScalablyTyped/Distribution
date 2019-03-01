@@ -32,3 +32,22 @@ trait RootContext extends js.Object {
   def scheduler(workFn: js.Function0[scala.Unit]): scala.Unit
 }
 
+object RootContext {
+  @scala.inline
+  def apply(
+    clean: js.Promise[scala.Null],
+    components: js.Array[js.Object],
+    flags: RootContextFlags,
+    scheduler: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    playerHandler: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerHandler = null
+  ): RootContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clean")(clean)
+    __obj.updateDynamic("components")(components)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("scheduler")(scheduler)
+    if (playerHandler != null) __obj.updateDynamic("playerHandler")(playerHandler)
+    __obj.asInstanceOf[RootContext]
+  }
+}
+

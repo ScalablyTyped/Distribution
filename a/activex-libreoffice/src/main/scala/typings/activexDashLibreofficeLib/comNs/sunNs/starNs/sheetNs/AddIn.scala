@@ -55,3 +55,44 @@ trait AddIn
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XServiceName
      with XCompatibilityNames
 
+object AddIn {
+  @scala.inline
+  def apply(
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    ServiceName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getArgumentDescription: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getCompatibilityNames: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[LocalizedName]],
+    getDisplayArgumentName: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getDisplayCategoryName: js.Function1[java.lang.String, java.lang.String],
+    getDisplayFunctionName: js.Function1[java.lang.String, java.lang.String],
+    getFunctionDescription: js.Function1[java.lang.String, java.lang.String],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getProgrammaticCategoryName: js.Function1[java.lang.String, java.lang.String],
+    getProgrammaticFuntionName: js.Function1[java.lang.String, java.lang.String],
+    getServiceName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
+  ): AddIn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Locale")(Locale)
+    __obj.updateDynamic("ServiceName")(ServiceName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getArgumentDescription")(getArgumentDescription)
+    __obj.updateDynamic("getCompatibilityNames")(getCompatibilityNames)
+    __obj.updateDynamic("getDisplayArgumentName")(getDisplayArgumentName)
+    __obj.updateDynamic("getDisplayCategoryName")(getDisplayCategoryName)
+    __obj.updateDynamic("getDisplayFunctionName")(getDisplayFunctionName)
+    __obj.updateDynamic("getFunctionDescription")(getFunctionDescription)
+    __obj.updateDynamic("getLocale")(getLocale)
+    __obj.updateDynamic("getProgrammaticCategoryName")(getProgrammaticCategoryName)
+    __obj.updateDynamic("getProgrammaticFuntionName")(getProgrammaticFuntionName)
+    __obj.updateDynamic("getServiceName")(getServiceName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setLocale")(setLocale)
+    __obj.asInstanceOf[AddIn]
+  }
+}
+

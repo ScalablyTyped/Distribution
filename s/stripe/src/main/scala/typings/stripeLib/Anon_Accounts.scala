@@ -49,3 +49,82 @@ trait Anon_Accounts extends js.Object {
   var WebHooks: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.WebHooks]
 }
 
+object Anon_Accounts {
+  @scala.inline
+  def apply(
+    Accounts: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Accounts],
+    ApplicationFeeRefunds: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.ApplicationFeeRefunds],
+    ApplicationFees: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.ApplicationFees],
+    Balance: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Balance],
+    BitcoinReceivers: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.BitcoinReceivers],
+    ChargeRefunds: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.ChargeRefunds],
+    Charges: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Charges],
+    CountrySpecs: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.CountrySpecs],
+    Coupons: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Coupons],
+    CustomerCards: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.CustomerCards],
+    CustomerSubscriptions: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.CustomerSubscriptions],
+    Customers: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Customers],
+    Disputes: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Disputes],
+    EphemeralKeys: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.EphemeralKeys],
+    Events: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Events],
+    FileUploads: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.FileUploads],
+    InvoiceItems: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.InvoiceItems],
+    Invoices: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Invoices],
+    Orders: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Orders],
+    Payouts: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Payouts],
+    Plans: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Plans],
+    Products: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Products],
+    RecipientCards: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.RecipientCards],
+    Recipients: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Recipients],
+    Refunds: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Refunds],
+    SKUs: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.SKUs],
+    SubscriptionItems: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.SubscriptionItems],
+    Subscriptions: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Subscriptions],
+    SubscriptionsBase: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.SubscriptionsBase],
+    Tokens: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Tokens],
+    TransferReversals: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.TransferReversals],
+    Transfers: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Transfers],
+    UsageRecordSummaries: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecordSummaries],
+    UsageRecords: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecords],
+    WebHooks: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.WebHooks]
+  ): Anon_Accounts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Accounts")(Accounts)
+    __obj.updateDynamic("ApplicationFeeRefunds")(ApplicationFeeRefunds)
+    __obj.updateDynamic("ApplicationFees")(ApplicationFees)
+    __obj.updateDynamic("Balance")(Balance)
+    __obj.updateDynamic("BitcoinReceivers")(BitcoinReceivers)
+    __obj.updateDynamic("ChargeRefunds")(ChargeRefunds)
+    __obj.updateDynamic("Charges")(Charges)
+    __obj.updateDynamic("CountrySpecs")(CountrySpecs)
+    __obj.updateDynamic("Coupons")(Coupons)
+    __obj.updateDynamic("CustomerCards")(CustomerCards)
+    __obj.updateDynamic("CustomerSubscriptions")(CustomerSubscriptions)
+    __obj.updateDynamic("Customers")(Customers)
+    __obj.updateDynamic("Disputes")(Disputes)
+    __obj.updateDynamic("EphemeralKeys")(EphemeralKeys)
+    __obj.updateDynamic("Events")(Events)
+    __obj.updateDynamic("FileUploads")(FileUploads)
+    __obj.updateDynamic("InvoiceItems")(InvoiceItems)
+    __obj.updateDynamic("Invoices")(Invoices)
+    __obj.updateDynamic("Orders")(Orders)
+    __obj.updateDynamic("Payouts")(Payouts)
+    __obj.updateDynamic("Plans")(Plans)
+    __obj.updateDynamic("Products")(Products)
+    __obj.updateDynamic("RecipientCards")(RecipientCards)
+    __obj.updateDynamic("Recipients")(Recipients)
+    __obj.updateDynamic("Refunds")(Refunds)
+    __obj.updateDynamic("SKUs")(SKUs)
+    __obj.updateDynamic("SubscriptionItems")(SubscriptionItems)
+    __obj.updateDynamic("Subscriptions")(Subscriptions)
+    __obj.updateDynamic("SubscriptionsBase")(SubscriptionsBase)
+    __obj.updateDynamic("Tokens")(Tokens)
+    __obj.updateDynamic("TransferReversals")(TransferReversals)
+    __obj.updateDynamic("Transfers")(Transfers)
+    __obj.updateDynamic("UsageRecordSummaries")(UsageRecordSummaries)
+    __obj.updateDynamic("UsageRecords")(UsageRecords)
+    __obj.updateDynamic("WebHooks")(WebHooks)
+    __obj.asInstanceOf[Anon_Accounts]
+  }
+}
+

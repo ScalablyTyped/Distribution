@@ -12,3 +12,13 @@ trait GooglePrivacyDlpV2beta1ValueFrequency extends js.Object {
   var value: js.UndefOr[GooglePrivacyDlpV2beta1Value] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1ValueFrequency {
+  @scala.inline
+  def apply(count: java.lang.String = null, value: GooglePrivacyDlpV2beta1Value = null): GooglePrivacyDlpV2beta1ValueFrequency = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1ValueFrequency]
+  }
+}
+

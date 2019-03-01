@@ -20,3 +20,13 @@ trait ShowMessageRequestParams extends js.Object {
   var `type`: MessageType
 }
 
+object ShowMessageRequestParams {
+  @scala.inline
+  def apply(message: java.lang.String, `type`: MessageType, actions: js.Array[MessageActionItem] = null): ShowMessageRequestParams = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("message")(message)
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    __obj.asInstanceOf[ShowMessageRequestParams]
+  }
+}
+

@@ -20,3 +20,34 @@ trait XStyle
   def setParentStyle(aParentStyle: java.lang.String): scala.Unit
 }
 
+object XStyle {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    ParentStyle: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getName: js.Function0[java.lang.String],
+    getParentStyle: js.Function0[java.lang.String],
+    isInUse: js.Function0[scala.Boolean],
+    isUserDefined: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setParentStyle: js.Function1[java.lang.String, scala.Unit]
+  ): XStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("ParentStyle")(ParentStyle)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getParentStyle")(getParentStyle)
+    __obj.updateDynamic("isInUse")(isInUse)
+    __obj.updateDynamic("isUserDefined")(isUserDefined)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setParentStyle")(setParentStyle)
+    __obj.asInstanceOf[XStyle]
+  }
+}
+

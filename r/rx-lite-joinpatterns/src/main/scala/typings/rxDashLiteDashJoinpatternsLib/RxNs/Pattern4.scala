@@ -10,3 +10,19 @@ trait Pattern4[T1, T2, T3, T4] extends js.Object {
   def thenDo[TR](selector: js.Function4[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, TR]): Plan[TR]
 }
 
+object Pattern4 {
+  @scala.inline
+  def apply[T1, T2, T3, T4](
+    and: js.Function1[Observable[js.Any], Pattern5[T1, T2, T3, T4, js.Any]],
+    thenDo: js.Function1[
+      js.Function4[/* item1 */ T1, /* item2 */ T2, /* item3 */ T3, /* item4 */ T4, js.Any], 
+      Plan[js.Any]
+    ]
+  ): Pattern4[T1, T2, T3, T4] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("thenDo")(thenDo)
+    __obj.asInstanceOf[Pattern4[T1, T2, T3, T4]]
+  }
+}
+

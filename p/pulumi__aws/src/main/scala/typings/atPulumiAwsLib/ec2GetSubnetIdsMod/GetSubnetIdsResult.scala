@@ -17,3 +17,18 @@ trait GetSubnetIdsResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetSubnetIdsResult {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    ids: js.Array[java.lang.String],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetSubnetIdsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ids")(ids)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetSubnetIdsResult]
+  }
+}
+

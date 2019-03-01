@@ -11,3 +11,13 @@ trait Interchange extends js.Object {
   def replace(path: java.lang.String): scala.Unit
 }
 
+object Interchange {
+  @scala.inline
+  def apply(destroy: js.Function0[scala.Unit], replace: js.Function1[java.lang.String, scala.Unit]): Interchange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("replace")(replace)
+    __obj.asInstanceOf[Interchange]
+  }
+}
+

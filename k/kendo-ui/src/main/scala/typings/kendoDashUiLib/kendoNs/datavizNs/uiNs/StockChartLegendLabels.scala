@@ -11,3 +11,14 @@ trait StockChartLegendLabels extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StockChartLegendLabels {
+  @scala.inline
+  def apply(color: java.lang.String = null, font: java.lang.String = null, template: java.lang.String = null): StockChartLegendLabels = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[StockChartLegendLabels]
+  }
+}
+

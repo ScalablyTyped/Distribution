@@ -147,3 +147,66 @@ trait XColorSpace extends js.Object {
   def getType(): scala.Double
 }
 
+object XColorSpace {
+  @scala.inline
+  def apply(
+    ComponentTags: activexDashInteropLib.SafeArray[scala.Double],
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    RenderingIntent: scala.Double,
+    Type: scala.Double,
+    convertColorSpace: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      XColorSpace, 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromPARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ARGBColor], 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertFromRGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[RGBColor], 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    convertToARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      activexDashInteropLib.SafeArray[ARGBColor]
+    ],
+    convertToPARGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      activexDashInteropLib.SafeArray[ARGBColor]
+    ],
+    convertToRGB: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      activexDashInteropLib.SafeArray[RGBColor]
+    ],
+    getComponentTags: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getProperties: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getRenderingIntent: js.Function0[scala.Double],
+    getType: js.Function0[scala.Double]
+  ): XColorSpace = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ComponentTags")(ComponentTags)
+    __obj.updateDynamic("Properties")(Properties)
+    __obj.updateDynamic("RenderingIntent")(RenderingIntent)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("convertColorSpace")(convertColorSpace)
+    __obj.updateDynamic("convertFromARGB")(convertFromARGB)
+    __obj.updateDynamic("convertFromPARGB")(convertFromPARGB)
+    __obj.updateDynamic("convertFromRGB")(convertFromRGB)
+    __obj.updateDynamic("convertToARGB")(convertToARGB)
+    __obj.updateDynamic("convertToPARGB")(convertToPARGB)
+    __obj.updateDynamic("convertToRGB")(convertToRGB)
+    __obj.updateDynamic("getComponentTags")(getComponentTags)
+    __obj.updateDynamic("getProperties")(getProperties)
+    __obj.updateDynamic("getRenderingIntent")(getRenderingIntent)
+    __obj.updateDynamic("getType")(getType)
+    __obj.asInstanceOf[XColorSpace]
+  }
+}
+

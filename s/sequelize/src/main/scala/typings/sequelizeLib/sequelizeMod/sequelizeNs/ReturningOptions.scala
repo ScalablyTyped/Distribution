@@ -12,3 +12,12 @@ trait ReturningOptions extends js.Object {
   var returning: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReturningOptions {
+  @scala.inline
+  def apply(returning: js.UndefOr[scala.Boolean] = js.undefined): ReturningOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning)
+    __obj.asInstanceOf[ReturningOptions]
+  }
+}
+

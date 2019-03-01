@@ -16,3 +16,16 @@ trait GooglePrivacyDlpV2beta1LDiversityConfig extends js.Object {
   var sensitiveAttribute: js.UndefOr[GooglePrivacyDlpV2beta1FieldId] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1LDiversityConfig {
+  @scala.inline
+  def apply(
+    quasiIds: js.Array[GooglePrivacyDlpV2beta1FieldId] = null,
+    sensitiveAttribute: GooglePrivacyDlpV2beta1FieldId = null
+  ): GooglePrivacyDlpV2beta1LDiversityConfig = {
+    val __obj = js.Dynamic.literal()
+    if (quasiIds != null) __obj.updateDynamic("quasiIds")(quasiIds)
+    if (sensitiveAttribute != null) __obj.updateDynamic("sensitiveAttribute")(sensitiveAttribute)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1LDiversityConfig]
+  }
+}
+

@@ -13,3 +13,22 @@ trait SystemData extends js.Object {
   var version: java.lang.String
 }
 
+object SystemData {
+  @scala.inline
+  def apply(
+    manufacturer: java.lang.String,
+    model: java.lang.String,
+    serial: java.lang.String,
+    uuid: java.lang.String,
+    version: java.lang.String
+  ): SystemData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("manufacturer")(manufacturer)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("serial")(serial)
+    __obj.updateDynamic("uuid")(uuid)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[SystemData]
+  }
+}
+

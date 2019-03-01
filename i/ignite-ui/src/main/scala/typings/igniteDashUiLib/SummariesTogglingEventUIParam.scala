@@ -16,3 +16,13 @@ trait SummariesTogglingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object SummariesTogglingEventUIParam {
+  @scala.inline
+  def apply(isToShow: js.UndefOr[scala.Boolean] = js.undefined, owner: js.Any = null): SummariesTogglingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isToShow)) __obj.updateDynamic("isToShow")(isToShow)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[SummariesTogglingEventUIParam]
+  }
+}
+

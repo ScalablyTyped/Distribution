@@ -28,3 +28,44 @@ trait AsObject extends js.Object {
   var weakDependencyList: js.Array[scala.Double]
 }
 
+object AsObject {
+  @scala.inline
+  def apply(
+    dependencyList: js.Array[java.lang.String],
+    enumTypeList: js.Array[
+      googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.EnumDescriptorProtoNs.AsObject
+    ],
+    extensionList: js.Array[
+      googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProtoNs.AsObject
+    ],
+    messageTypeList: js.Array[
+      googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.DescriptorProtoNs.AsObject
+    ],
+    options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileOptionsNs.AsObject,
+    publicDependencyList: js.Array[scala.Double],
+    serviceList: js.Array[
+      googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.ServiceDescriptorProtoNs.AsObject
+    ],
+    sourceCodeInfo: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfoNs.AsObject,
+    weakDependencyList: js.Array[scala.Double],
+    name: java.lang.String = null,
+    `package`: java.lang.String = null,
+    syntax: java.lang.String = null
+  ): AsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dependencyList")(dependencyList)
+    __obj.updateDynamic("enumTypeList")(enumTypeList)
+    __obj.updateDynamic("extensionList")(extensionList)
+    __obj.updateDynamic("messageTypeList")(messageTypeList)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("publicDependencyList")(publicDependencyList)
+    __obj.updateDynamic("serviceList")(serviceList)
+    __obj.updateDynamic("sourceCodeInfo")(sourceCodeInfo)
+    __obj.updateDynamic("weakDependencyList")(weakDependencyList)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`package` != null) __obj.updateDynamic("package")(`package`)
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

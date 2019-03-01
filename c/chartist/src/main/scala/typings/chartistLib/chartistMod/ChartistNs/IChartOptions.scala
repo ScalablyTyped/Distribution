@@ -13,3 +13,13 @@ trait IChartOptions extends js.Object {
   var reverseData: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IChartOptions {
+  @scala.inline
+  def apply(plugins: js.Array[_] = null, reverseData: js.UndefOr[scala.Boolean] = js.undefined): IChartOptions = {
+    val __obj = js.Dynamic.literal()
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData)
+    __obj.asInstanceOf[IChartOptions]
+  }
+}
+

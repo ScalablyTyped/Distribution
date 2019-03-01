@@ -54,3 +54,35 @@ trait Anon_CallbackCreationTime extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackCreationTime {
+  @scala.inline
+  def apply(
+    deleteID: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    deleteToken: js.Function2[
+      chromeDashAppsLib.chromeNs.instanceIDNs.DeleteTokenParams, 
+      js.Function0[scala.Unit], 
+      scala.Unit
+    ],
+    getCreationTime: js.Function1[
+      js.Function1[/* creationTime */ chromeDashAppsLib.chromeNs.integer, scala.Unit], 
+      scala.Unit
+    ],
+    getID: js.Function1[js.Function1[/* instanceId */ java.lang.String, scala.Unit], scala.Unit],
+    getToken: js.Function2[
+      chromeDashAppsLib.chromeNs.instanceIDNs.TokenParams, 
+      js.Function1[/* token */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    onTokenRefresh: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]
+  ): Anon_CallbackCreationTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deleteID")(deleteID)
+    __obj.updateDynamic("deleteToken")(deleteToken)
+    __obj.updateDynamic("getCreationTime")(getCreationTime)
+    __obj.updateDynamic("getID")(getID)
+    __obj.updateDynamic("getToken")(getToken)
+    __obj.updateDynamic("onTokenRefresh")(onTokenRefresh)
+    __obj.asInstanceOf[Anon_CallbackCreationTime]
+  }
+}
+

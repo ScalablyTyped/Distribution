@@ -16,3 +16,20 @@ trait ProductCustomAttribute extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProductCustomAttribute {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    `type`: java.lang.String = null,
+    unit: java.lang.String = null,
+    value: java.lang.String = null
+  ): ProductCustomAttribute = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ProductCustomAttribute]
+  }
+}
+

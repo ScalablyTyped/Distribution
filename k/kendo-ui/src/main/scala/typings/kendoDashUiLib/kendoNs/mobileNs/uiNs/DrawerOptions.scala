@@ -20,3 +20,36 @@ trait DrawerOptions extends js.Object {
   var views: js.UndefOr[js.Any] = js.undefined
 }
 
+object DrawerOptions {
+  @scala.inline
+  def apply(
+    afterHide: js.Function1[/* e */ DrawerAfterHideEvent, scala.Unit] = null,
+    beforeShow: js.Function1[/* e */ DrawerEvent, scala.Unit] = null,
+    container: kendoDashUiLib.JQuery = null,
+    hide: js.Function1[/* e */ DrawerHideEvent, scala.Unit] = null,
+    init: js.Function1[/* e */ DrawerInitEvent, scala.Unit] = null,
+    name: java.lang.String = null,
+    position: java.lang.String = null,
+    show: js.Function1[/* e */ DrawerShowEvent, scala.Unit] = null,
+    swipeToOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    swipeToOpenViews: js.Any = null,
+    title: java.lang.String = null,
+    views: js.Any = null
+  ): DrawerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterHide != null) __obj.updateDynamic("afterHide")(afterHide)
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (show != null) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(swipeToOpen)) __obj.updateDynamic("swipeToOpen")(swipeToOpen)
+    if (swipeToOpenViews != null) __obj.updateDynamic("swipeToOpenViews")(swipeToOpenViews)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (views != null) __obj.updateDynamic("views")(views)
+    __obj.asInstanceOf[DrawerOptions]
+  }
+}
+

@@ -20,3 +20,14 @@ trait OperationReference extends js.Object {
   var url: java.lang.String
 }
 
+object OperationReference {
+  @scala.inline
+  def apply(id: java.lang.String, status: OperationStatus, url: java.lang.String): OperationReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[OperationReference]
+  }
+}
+

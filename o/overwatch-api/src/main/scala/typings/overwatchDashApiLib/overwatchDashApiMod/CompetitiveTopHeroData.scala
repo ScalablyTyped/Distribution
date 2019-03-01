@@ -9,3 +9,18 @@ trait CompetitiveTopHeroData extends QuickplayTopHeroData {
   var win_rate: js.Array[HeroWinRate]
 }
 
+object CompetitiveTopHeroData {
+  @scala.inline
+  def apply(
+    games_won: js.Array[HeroGamesWon],
+    played: js.Array[HeroTimePlayed],
+    win_rate: js.Array[HeroWinRate]
+  ): CompetitiveTopHeroData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("games_won")(games_won)
+    __obj.updateDynamic("played")(played)
+    __obj.updateDynamic("win_rate")(win_rate)
+    __obj.asInstanceOf[CompetitiveTopHeroData]
+  }
+}
+

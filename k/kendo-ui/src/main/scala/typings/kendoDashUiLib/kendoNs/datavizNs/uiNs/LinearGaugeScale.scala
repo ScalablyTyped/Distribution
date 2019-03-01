@@ -22,3 +22,40 @@ trait LinearGaugeScale extends js.Object {
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LinearGaugeScale {
+  @scala.inline
+  def apply(
+    labels: LinearGaugeScaleLabels = null,
+    line: LinearGaugeScaleLine = null,
+    majorTicks: LinearGaugeScaleMajorTicks = null,
+    majorUnit: scala.Int | scala.Double = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    minorTicks: LinearGaugeScaleMinorTicks = null,
+    minorUnit: scala.Int | scala.Double = null,
+    mirror: js.UndefOr[scala.Boolean] = js.undefined,
+    rangePlaceholderColor: java.lang.String = null,
+    rangeSize: scala.Int | scala.Double = null,
+    ranges: js.Array[LinearGaugeScaleRange] = null,
+    reverse: js.UndefOr[scala.Boolean] = js.undefined,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): LinearGaugeScale = {
+    val __obj = js.Dynamic.literal()
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (majorTicks != null) __obj.updateDynamic("majorTicks")(majorTicks)
+    if (majorUnit != null) __obj.updateDynamic("majorUnit")(majorUnit.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minorTicks != null) __obj.updateDynamic("minorTicks")(minorTicks)
+    if (minorUnit != null) __obj.updateDynamic("minorUnit")(minorUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror)
+    if (rangePlaceholderColor != null) __obj.updateDynamic("rangePlaceholderColor")(rangePlaceholderColor)
+    if (rangeSize != null) __obj.updateDynamic("rangeSize")(rangeSize.asInstanceOf[js.Any])
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[LinearGaugeScale]
+  }
+}
+

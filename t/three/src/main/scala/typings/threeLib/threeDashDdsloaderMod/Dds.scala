@@ -13,3 +13,22 @@ trait Dds extends js.Object {
   var width: scala.Double
 }
 
+object Dds {
+  @scala.inline
+  def apply(
+    format: threeLib.threeDashCoreMod.CompressedPixelFormat,
+    height: scala.Double,
+    mipmapCount: scala.Double,
+    mipmaps: js.Array[stdLib.ImageData],
+    width: scala.Double
+  ): Dds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("mipmapCount")(mipmapCount)
+    __obj.updateDynamic("mipmaps")(mipmaps)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Dds]
+  }
+}
+

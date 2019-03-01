@@ -11,3 +11,14 @@ trait Anon_CustomDerived extends js.Object {
   var system: scala.Double
 }
 
+object Anon_CustomDerived {
+  @scala.inline
+  def apply(custom: scala.Double, derived: scala.Double, system: scala.Double): Anon_CustomDerived = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custom")(custom)
+    __obj.updateDynamic("derived")(derived)
+    __obj.updateDynamic("system")(system)
+    __obj.asInstanceOf[Anon_CustomDerived]
+  }
+}
+

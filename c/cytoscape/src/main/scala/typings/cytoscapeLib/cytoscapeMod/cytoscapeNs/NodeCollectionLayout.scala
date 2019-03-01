@@ -15,3 +15,14 @@ trait NodeCollectionLayout extends js.Object {
   def layoutPositions(layout: java.lang.String, options: LayoutPositionOptions, handler: ElementPositionFunction): scala.Unit
 }
 
+object NodeCollectionLayout {
+  @scala.inline
+  def apply(
+    layoutPositions: js.Function3[java.lang.String, LayoutPositionOptions, ElementPositionFunction, scala.Unit]
+  ): NodeCollectionLayout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("layoutPositions")(layoutPositions)
+    __obj.asInstanceOf[NodeCollectionLayout]
+  }
+}
+

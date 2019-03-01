@@ -11,3 +11,18 @@ trait Anon_AUTO extends js.Object {
   var SHRINK: reactDashFoundationLib.enumsMod.SpaceControls
 }
 
+object Anon_AUTO {
+  @scala.inline
+  def apply(
+    AUTO: reactDashFoundationLib.enumsMod.SpaceControls,
+    GROW: reactDashFoundationLib.enumsMod.SpaceControls,
+    SHRINK: reactDashFoundationLib.enumsMod.SpaceControls
+  ): Anon_AUTO = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AUTO")(AUTO)
+    __obj.updateDynamic("GROW")(GROW)
+    __obj.updateDynamic("SHRINK")(SHRINK)
+    __obj.asInstanceOf[Anon_AUTO]
+  }
+}
+

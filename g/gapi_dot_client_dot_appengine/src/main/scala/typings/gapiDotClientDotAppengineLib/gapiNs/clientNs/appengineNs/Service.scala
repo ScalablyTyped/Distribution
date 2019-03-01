@@ -14,3 +14,14 @@ trait Service extends js.Object {
   var split: js.UndefOr[TrafficSplit] = js.undefined
 }
 
+object Service {
+  @scala.inline
+  def apply(id: java.lang.String = null, name: java.lang.String = null, split: TrafficSplit = null): Service = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (split != null) __obj.updateDynamic("split")(split)
+    __obj.asInstanceOf[Service]
+  }
+}
+

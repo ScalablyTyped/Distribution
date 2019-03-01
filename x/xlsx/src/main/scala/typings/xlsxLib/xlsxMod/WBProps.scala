@@ -16,3 +16,20 @@ trait WBProps extends js.Object {
   var WBProps: js.UndefOr[WorkbookProperties] = js.undefined
 }
 
+object WBProps {
+  @scala.inline
+  def apply(
+    Names: js.Array[DefinedName] = null,
+    Sheets: js.Array[SheetProps] = null,
+    Views: js.Array[WBView] = null,
+    WBProps: WorkbookProperties = null
+  ): WBProps = {
+    val __obj = js.Dynamic.literal()
+    if (Names != null) __obj.updateDynamic("Names")(Names)
+    if (Sheets != null) __obj.updateDynamic("Sheets")(Sheets)
+    if (Views != null) __obj.updateDynamic("Views")(Views)
+    if (WBProps != null) __obj.updateDynamic("WBProps")(WBProps)
+    __obj.asInstanceOf[WBProps]
+  }
+}
+

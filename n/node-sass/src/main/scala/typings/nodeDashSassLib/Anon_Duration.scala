@@ -13,3 +13,22 @@ trait Anon_Duration extends js.Object {
   var start: scala.Double
 }
 
+object Anon_Duration {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    end: scala.Double,
+    entry: java.lang.String,
+    includedFiles: js.Array[java.lang.String],
+    start: scala.Double
+  ): Anon_Duration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("entry")(entry)
+    __obj.updateDynamic("includedFiles")(includedFiles)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Anon_Duration]
+  }
+}
+

@@ -14,3 +14,24 @@ trait Game extends js.Object {
   var title: java.lang.String
 }
 
+object Game {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    photo: js.Array[PhotoSize],
+    title: java.lang.String,
+    animation: Animation = null,
+    text: java.lang.String = null,
+    text_entities: js.Array[MessageEntity] = null
+  ): Game = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("photo")(photo)
+    __obj.updateDynamic("title")(title)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (text_entities != null) __obj.updateDynamic("text_entities")(text_entities)
+    __obj.asInstanceOf[Game]
+  }
+}
+

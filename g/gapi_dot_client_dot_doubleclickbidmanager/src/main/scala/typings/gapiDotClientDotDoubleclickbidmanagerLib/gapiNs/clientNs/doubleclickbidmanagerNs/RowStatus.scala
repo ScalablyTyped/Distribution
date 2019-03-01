@@ -20,3 +20,24 @@ trait RowStatus extends js.Object {
   var rowNumber: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RowStatus {
+  @scala.inline
+  def apply(
+    changed: js.UndefOr[scala.Boolean] = js.undefined,
+    entityId: java.lang.String = null,
+    entityName: java.lang.String = null,
+    errors: js.Array[java.lang.String] = null,
+    persisted: js.UndefOr[scala.Boolean] = js.undefined,
+    rowNumber: scala.Int | scala.Double = null
+  ): RowStatus = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(changed)) __obj.updateDynamic("changed")(changed)
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
+    if (entityName != null) __obj.updateDynamic("entityName")(entityName)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (!js.isUndefined(persisted)) __obj.updateDynamic("persisted")(persisted)
+    if (rowNumber != null) __obj.updateDynamic("rowNumber")(rowNumber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RowStatus]
+  }
+}
+

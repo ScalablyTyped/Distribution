@@ -20,3 +20,24 @@ trait User extends js.Object {
   var photoLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object User {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    emailAddress: java.lang.String = null,
+    kind: java.lang.String = null,
+    me: js.UndefOr[scala.Boolean] = js.undefined,
+    permissionId: java.lang.String = null,
+    photoLink: java.lang.String = null
+  ): User = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(me)) __obj.updateDynamic("me")(me)
+    if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId)
+    if (photoLink != null) __obj.updateDynamic("photoLink")(photoLink)
+    __obj.asInstanceOf[User]
+  }
+}
+

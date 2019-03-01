@@ -10,3 +10,12 @@ trait TypeWithResolvers extends js.Object {
   var `type`: graphqlLib.typeDefinitionMod.GraphQLNamedType
 }
 
+object TypeWithResolvers {
+  @scala.inline
+  def apply(`type`: graphqlLib.typeDefinitionMod.GraphQLNamedType, resolvers: IResolvers[_, _] = null): TypeWithResolvers = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers)
+    __obj.asInstanceOf[TypeWithResolvers]
+  }
+}
+

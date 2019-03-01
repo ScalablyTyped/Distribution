@@ -528,3 +528,168 @@ trait Config
   var webDriverProxy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    SELENIUM_PROMISE_MANAGER: js.UndefOr[scala.Boolean] = js.undefined,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    afterLaunch: js.Function1[/* exitCode */ scala.Double, scala.Unit] = null,
+    allScriptsTimeout: scala.Int | scala.Double = null,
+    baseUrl: java.lang.String = null,
+    beforeLaunch: js.Function0[scala.Unit] = null,
+    blockingProxyUrl: java.lang.String = null,
+    browserstackKey: java.lang.String = null,
+    browserstackProxy: java.lang.String = null,
+    browserstackUser: java.lang.String = null,
+    capabilities: protractorLib.Anon_BrowserName = null,
+    chromeDriver: java.lang.String = null,
+    configDir: java.lang.String = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    debuggerServerPort: scala.Int | scala.Double = null,
+    directConnect: js.UndefOr[scala.Boolean] = js.undefined,
+    disableChecks: js.UndefOr[scala.Boolean] = js.undefined,
+    disableEnvironmentOverrides: js.UndefOr[scala.Boolean] = js.undefined,
+    elementExplorer: js.Any = null,
+    exclude: js.Array[java.lang.String] | java.lang.String = null,
+    firefoxPath: java.lang.String = null,
+    framework: java.lang.String = null,
+    frameworkPath: java.lang.String = null,
+    geckoDriver: java.lang.String = null,
+    getMultiCapabilities: js.Any = null,
+    getPageTimeout: scala.Int | scala.Double = null,
+    highlightDelay: scala.Int | scala.Double = null,
+    ignoreUncaughtExceptions: js.UndefOr[scala.Boolean] = js.undefined,
+    jasmineNodeOpts: protractorLib.Anon_DefaultTimeoutInterval = null,
+    jvmArgs: js.Array[java.lang.String] = null,
+    kobitonKey: java.lang.String = null,
+    kobitonUser: java.lang.String = null,
+    localSeleniumStandaloneOpts: protractorLib.Anon_ArgsJvmArgs = null,
+    logLevel: protractorLib.protractorLibStrings.ERROR | protractorLib.protractorLibStrings.WARN | protractorLib.protractorLibStrings.INFO | protractorLib.protractorLibStrings.DEBUG = null,
+    maxSessions: scala.Int | scala.Double = null,
+    mochaOpts: protractorLib.Anon_Key = null,
+    mockSelenium: js.UndefOr[scala.Boolean] = js.undefined,
+    multiCapabilities: js.Array[_] = null,
+    ng12Hybrid: js.UndefOr[scala.Boolean] = js.undefined,
+    noGlobals: js.UndefOr[scala.Boolean] = js.undefined,
+    nodeDebug: js.UndefOr[scala.Boolean] = js.undefined,
+    onCleanUp: js.Function1[/* exitCode */ scala.Double, scala.Unit] = null,
+    onComplete: js.Function0[scala.Unit] = null,
+    onPrepare: js.Function0[scala.Unit] = null,
+    params: js.Any = null,
+    plugins: js.Array[protractorLib.builtPluginsMod.PluginConfig] = null,
+    restartBrowserBetweenTests: js.UndefOr[scala.Boolean] = js.undefined,
+    resultJsonOutputFile: js.Any = null,
+    rootElement: java.lang.String = null,
+    sauceAgent: js.Any = null,
+    sauceBuild: java.lang.String = null,
+    sauceKey: java.lang.String = null,
+    sauceProxy: java.lang.String = null,
+    sauceRegion: java.lang.String = null,
+    sauceSeleniumAddress: java.lang.String = null,
+    sauceSeleniumUseHttp: js.UndefOr[scala.Boolean] = js.undefined,
+    sauceUser: java.lang.String = null,
+    seleniumAddress: java.lang.String = null,
+    seleniumArgs: js.Array[_] = null,
+    seleniumPort: scala.Int | scala.Double = null,
+    seleniumServerJar: java.lang.String = null,
+    seleniumServerStartTimeout: scala.Int | scala.Double = null,
+    seleniumSessionId: java.lang.String = null,
+    seleniumWebDriver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver = null,
+    skipSourceMapSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    specs: js.Array[java.lang.String] = null,
+    suite: java.lang.String = null,
+    suites: js.Any = null,
+    testobjectKey: java.lang.String = null,
+    testobjectUser: java.lang.String = null,
+    troubleshoot: js.UndefOr[scala.Boolean] = js.undefined,
+    `unknownFlags_`: js.Array[java.lang.String] = null,
+    untrackOutstandingTimeouts: js.UndefOr[scala.Boolean] = js.undefined,
+    useBlockingProxy: js.UndefOr[scala.Boolean] = js.undefined,
+    v8Debug: js.Any = null,
+    verboseMultiSessions: js.UndefOr[scala.Boolean] = js.undefined,
+    webDriverLogDir: java.lang.String = null,
+    webDriverProxy: java.lang.String = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(SELENIUM_PROMISE_MANAGER)) __obj.updateDynamic("SELENIUM_PROMISE_MANAGER")(SELENIUM_PROMISE_MANAGER)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (afterLaunch != null) __obj.updateDynamic("afterLaunch")(afterLaunch)
+    if (allScriptsTimeout != null) __obj.updateDynamic("allScriptsTimeout")(allScriptsTimeout.asInstanceOf[js.Any])
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (beforeLaunch != null) __obj.updateDynamic("beforeLaunch")(beforeLaunch)
+    if (blockingProxyUrl != null) __obj.updateDynamic("blockingProxyUrl")(blockingProxyUrl)
+    if (browserstackKey != null) __obj.updateDynamic("browserstackKey")(browserstackKey)
+    if (browserstackProxy != null) __obj.updateDynamic("browserstackProxy")(browserstackProxy)
+    if (browserstackUser != null) __obj.updateDynamic("browserstackUser")(browserstackUser)
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    if (chromeDriver != null) __obj.updateDynamic("chromeDriver")(chromeDriver)
+    if (configDir != null) __obj.updateDynamic("configDir")(configDir)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (debuggerServerPort != null) __obj.updateDynamic("debuggerServerPort")(debuggerServerPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(directConnect)) __obj.updateDynamic("directConnect")(directConnect)
+    if (!js.isUndefined(disableChecks)) __obj.updateDynamic("disableChecks")(disableChecks)
+    if (!js.isUndefined(disableEnvironmentOverrides)) __obj.updateDynamic("disableEnvironmentOverrides")(disableEnvironmentOverrides)
+    if (elementExplorer != null) __obj.updateDynamic("elementExplorer")(elementExplorer)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (firefoxPath != null) __obj.updateDynamic("firefoxPath")(firefoxPath)
+    if (framework != null) __obj.updateDynamic("framework")(framework)
+    if (frameworkPath != null) __obj.updateDynamic("frameworkPath")(frameworkPath)
+    if (geckoDriver != null) __obj.updateDynamic("geckoDriver")(geckoDriver)
+    if (getMultiCapabilities != null) __obj.updateDynamic("getMultiCapabilities")(getMultiCapabilities)
+    if (getPageTimeout != null) __obj.updateDynamic("getPageTimeout")(getPageTimeout.asInstanceOf[js.Any])
+    if (highlightDelay != null) __obj.updateDynamic("highlightDelay")(highlightDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreUncaughtExceptions)) __obj.updateDynamic("ignoreUncaughtExceptions")(ignoreUncaughtExceptions)
+    if (jasmineNodeOpts != null) __obj.updateDynamic("jasmineNodeOpts")(jasmineNodeOpts)
+    if (jvmArgs != null) __obj.updateDynamic("jvmArgs")(jvmArgs)
+    if (kobitonKey != null) __obj.updateDynamic("kobitonKey")(kobitonKey)
+    if (kobitonUser != null) __obj.updateDynamic("kobitonUser")(kobitonUser)
+    if (localSeleniumStandaloneOpts != null) __obj.updateDynamic("localSeleniumStandaloneOpts")(localSeleniumStandaloneOpts)
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (maxSessions != null) __obj.updateDynamic("maxSessions")(maxSessions.asInstanceOf[js.Any])
+    if (mochaOpts != null) __obj.updateDynamic("mochaOpts")(mochaOpts)
+    if (!js.isUndefined(mockSelenium)) __obj.updateDynamic("mockSelenium")(mockSelenium)
+    if (multiCapabilities != null) __obj.updateDynamic("multiCapabilities")(multiCapabilities)
+    if (!js.isUndefined(ng12Hybrid)) __obj.updateDynamic("ng12Hybrid")(ng12Hybrid)
+    if (!js.isUndefined(noGlobals)) __obj.updateDynamic("noGlobals")(noGlobals)
+    if (!js.isUndefined(nodeDebug)) __obj.updateDynamic("nodeDebug")(nodeDebug)
+    if (onCleanUp != null) __obj.updateDynamic("onCleanUp")(onCleanUp)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onPrepare != null) __obj.updateDynamic("onPrepare")(onPrepare)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(restartBrowserBetweenTests)) __obj.updateDynamic("restartBrowserBetweenTests")(restartBrowserBetweenTests)
+    if (resultJsonOutputFile != null) __obj.updateDynamic("resultJsonOutputFile")(resultJsonOutputFile)
+    if (rootElement != null) __obj.updateDynamic("rootElement")(rootElement)
+    if (sauceAgent != null) __obj.updateDynamic("sauceAgent")(sauceAgent)
+    if (sauceBuild != null) __obj.updateDynamic("sauceBuild")(sauceBuild)
+    if (sauceKey != null) __obj.updateDynamic("sauceKey")(sauceKey)
+    if (sauceProxy != null) __obj.updateDynamic("sauceProxy")(sauceProxy)
+    if (sauceRegion != null) __obj.updateDynamic("sauceRegion")(sauceRegion)
+    if (sauceSeleniumAddress != null) __obj.updateDynamic("sauceSeleniumAddress")(sauceSeleniumAddress)
+    if (!js.isUndefined(sauceSeleniumUseHttp)) __obj.updateDynamic("sauceSeleniumUseHttp")(sauceSeleniumUseHttp)
+    if (sauceUser != null) __obj.updateDynamic("sauceUser")(sauceUser)
+    if (seleniumAddress != null) __obj.updateDynamic("seleniumAddress")(seleniumAddress)
+    if (seleniumArgs != null) __obj.updateDynamic("seleniumArgs")(seleniumArgs)
+    if (seleniumPort != null) __obj.updateDynamic("seleniumPort")(seleniumPort.asInstanceOf[js.Any])
+    if (seleniumServerJar != null) __obj.updateDynamic("seleniumServerJar")(seleniumServerJar)
+    if (seleniumServerStartTimeout != null) __obj.updateDynamic("seleniumServerStartTimeout")(seleniumServerStartTimeout.asInstanceOf[js.Any])
+    if (seleniumSessionId != null) __obj.updateDynamic("seleniumSessionId")(seleniumSessionId)
+    if (seleniumWebDriver != null) __obj.updateDynamic("seleniumWebDriver")(seleniumWebDriver)
+    if (!js.isUndefined(skipSourceMapSupport)) __obj.updateDynamic("skipSourceMapSupport")(skipSourceMapSupport)
+    if (specs != null) __obj.updateDynamic("specs")(specs)
+    if (suite != null) __obj.updateDynamic("suite")(suite)
+    if (suites != null) __obj.updateDynamic("suites")(suites)
+    if (testobjectKey != null) __obj.updateDynamic("testobjectKey")(testobjectKey)
+    if (testobjectUser != null) __obj.updateDynamic("testobjectUser")(testobjectUser)
+    if (!js.isUndefined(troubleshoot)) __obj.updateDynamic("troubleshoot")(troubleshoot)
+    if (`unknownFlags_` != null) __obj.updateDynamic("unknownFlags_")(`unknownFlags_`)
+    if (!js.isUndefined(untrackOutstandingTimeouts)) __obj.updateDynamic("untrackOutstandingTimeouts")(untrackOutstandingTimeouts)
+    if (!js.isUndefined(useBlockingProxy)) __obj.updateDynamic("useBlockingProxy")(useBlockingProxy)
+    if (v8Debug != null) __obj.updateDynamic("v8Debug")(v8Debug)
+    if (!js.isUndefined(verboseMultiSessions)) __obj.updateDynamic("verboseMultiSessions")(verboseMultiSessions)
+    if (webDriverLogDir != null) __obj.updateDynamic("webDriverLogDir")(webDriverLogDir)
+    if (webDriverProxy != null) __obj.updateDynamic("webDriverProxy")(webDriverProxy)
+    __obj.asInstanceOf[Config]
+  }
+}
+

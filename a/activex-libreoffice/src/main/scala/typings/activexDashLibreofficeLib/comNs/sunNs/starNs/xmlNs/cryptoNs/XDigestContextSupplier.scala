@@ -23,3 +23,24 @@ trait XDigestContextSupplier
   ): XDigestContext
 }
 
+object XDigestContextSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDigestContext: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      XDigestContext
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDigestContextSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDigestContext")(getDigestContext)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDigestContextSupplier]
+  }
+}
+

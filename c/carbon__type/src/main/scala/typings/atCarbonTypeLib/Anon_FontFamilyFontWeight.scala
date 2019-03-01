@@ -13,3 +13,20 @@ trait Anon_FontFamilyFontWeight extends js.Object {
   var textRendering: java.lang.String
 }
 
+object Anon_FontFamilyFontWeight {
+  @scala.inline
+  def apply(
+    `-moz-osx-font-smoothing`: java.lang.String,
+    `-webkit-font-smoothing`: java.lang.String,
+    fontFamily: java.lang.String,
+    fontWeight: scala.Double,
+    textRendering: java.lang.String
+  ): Anon_FontFamilyFontWeight = {
+    val __obj = js.Dynamic.literal(`-moz-osx-font-smoothing` = `-moz-osx-font-smoothing`, `-webkit-font-smoothing` = `-webkit-font-smoothing`)
+    __obj.updateDynamic("fontFamily")(fontFamily)
+    __obj.updateDynamic("fontWeight")(fontWeight)
+    __obj.updateDynamic("textRendering")(textRendering)
+    __obj.asInstanceOf[Anon_FontFamilyFontWeight]
+  }
+}
+

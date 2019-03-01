@@ -86,3 +86,34 @@ trait SectionLoadOptions extends js.Object {
   var webUrl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    clientUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    isEncrypted: js.UndefOr[scala.Boolean] = js.undefined,
+    isLocked: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    notebook: NotebookLoadOptions = null,
+    pages: PageCollectionLoadOptions = null,
+    parentSectionGroup: SectionGroupLoadOptions = null,
+    parentSectionGroupOrNull: SectionGroupLoadOptions = null,
+    webUrl: js.UndefOr[scala.Boolean] = js.undefined
+  ): SectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isEncrypted)) __obj.updateDynamic("isEncrypted")(isEncrypted)
+    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (notebook != null) __obj.updateDynamic("notebook")(notebook)
+    if (pages != null) __obj.updateDynamic("pages")(pages)
+    if (parentSectionGroup != null) __obj.updateDynamic("parentSectionGroup")(parentSectionGroup)
+    if (parentSectionGroupOrNull != null) __obj.updateDynamic("parentSectionGroupOrNull")(parentSectionGroupOrNull)
+    if (!js.isUndefined(webUrl)) __obj.updateDynamic("webUrl")(webUrl)
+    __obj.asInstanceOf[SectionLoadOptions]
+  }
+}
+

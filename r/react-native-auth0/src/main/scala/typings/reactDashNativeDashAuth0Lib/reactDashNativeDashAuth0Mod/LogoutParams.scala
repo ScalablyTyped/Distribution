@@ -11,3 +11,14 @@ trait LogoutParams extends js.Object {
   var returnTo: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogoutParams {
+  @scala.inline
+  def apply(federated: scala.Boolean, clientId: java.lang.String = null, returnTo: java.lang.String = null): LogoutParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("federated")(federated)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (returnTo != null) __obj.updateDynamic("returnTo")(returnTo)
+    __obj.asInstanceOf[LogoutParams]
+  }
+}
+

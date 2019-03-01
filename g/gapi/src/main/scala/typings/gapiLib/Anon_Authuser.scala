@@ -28,3 +28,22 @@ trait Anon_Authuser extends js.Object {
   var scope: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Authuser {
+  @scala.inline
+  def apply(
+    authuser: scala.Int | scala.Double = null,
+    client_id: java.lang.String = null,
+    immediate: js.UndefOr[scala.Boolean] = js.undefined,
+    response_type: java.lang.String = null,
+    scope: js.Any = null
+  ): Anon_Authuser = {
+    val __obj = js.Dynamic.literal()
+    if (authuser != null) __obj.updateDynamic("authuser")(authuser.asInstanceOf[js.Any])
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Anon_Authuser]
+  }
+}
+

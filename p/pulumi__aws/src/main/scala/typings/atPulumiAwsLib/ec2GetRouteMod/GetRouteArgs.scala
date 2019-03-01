@@ -48,3 +48,32 @@ trait GetRouteArgs extends js.Object {
   val vpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetRouteArgs {
+  @scala.inline
+  def apply(
+    routeTableId: java.lang.String,
+    destinationCidrBlock: java.lang.String = null,
+    destinationIpv6CidrBlock: java.lang.String = null,
+    egressOnlyGatewayId: java.lang.String = null,
+    gatewayId: java.lang.String = null,
+    instanceId: java.lang.String = null,
+    natGatewayId: java.lang.String = null,
+    networkInterfaceId: java.lang.String = null,
+    transitGatewayId: java.lang.String = null,
+    vpcPeeringConnectionId: java.lang.String = null
+  ): GetRouteArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("routeTableId")(routeTableId)
+    if (destinationCidrBlock != null) __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock)
+    if (destinationIpv6CidrBlock != null) __obj.updateDynamic("destinationIpv6CidrBlock")(destinationIpv6CidrBlock)
+    if (egressOnlyGatewayId != null) __obj.updateDynamic("egressOnlyGatewayId")(egressOnlyGatewayId)
+    if (gatewayId != null) __obj.updateDynamic("gatewayId")(gatewayId)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (natGatewayId != null) __obj.updateDynamic("natGatewayId")(natGatewayId)
+    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
+    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId)
+    if (vpcPeeringConnectionId != null) __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId)
+    __obj.asInstanceOf[GetRouteArgs]
+  }
+}
+

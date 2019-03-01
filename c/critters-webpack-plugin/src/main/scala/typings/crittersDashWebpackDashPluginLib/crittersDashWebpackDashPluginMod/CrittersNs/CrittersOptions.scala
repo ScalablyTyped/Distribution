@@ -80,3 +80,36 @@ trait CrittersOptions extends js.Object {
   var pruneSource: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CrittersOptions {
+  @scala.inline
+  def apply(
+    compress: js.UndefOr[scala.Boolean] = js.undefined,
+    external: js.UndefOr[scala.Boolean] = js.undefined,
+    fonts: js.UndefOr[scala.Boolean] = js.undefined,
+    inlineFonts: js.UndefOr[scala.Boolean] = js.undefined,
+    inlineThreshold: scala.Int | scala.Double = null,
+    keyframes: crittersDashWebpackDashPluginLib.crittersDashWebpackDashPluginLibStrings.critical | crittersDashWebpackDashPluginLib.crittersDashWebpackDashPluginLibStrings.all | crittersDashWebpackDashPluginLib.crittersDashWebpackDashPluginLibStrings.none = null,
+    mergeStylesheets: js.UndefOr[scala.Boolean] = js.undefined,
+    minimumExternalSize: scala.Int | scala.Double = null,
+    noscriptFallback: js.UndefOr[scala.Boolean] = js.undefined,
+    preload: crittersDashWebpackDashPluginLib.crittersDashWebpackDashPluginLibStrings.body | crittersDashWebpackDashPluginLib.crittersDashWebpackDashPluginLibStrings.media | crittersDashWebpackDashPluginLib.crittersDashWebpackDashPluginLibStrings.swap | crittersDashWebpackDashPluginLib.crittersDashWebpackDashPluginLibStrings.JS | crittersDashWebpackDashPluginLib.crittersDashWebpackDashPluginLibStrings.`js-lazy` = null,
+    preloadFonts: js.UndefOr[scala.Boolean] = js.undefined,
+    pruneSource: js.UndefOr[scala.Boolean] = js.undefined
+  ): CrittersOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external)
+    if (!js.isUndefined(fonts)) __obj.updateDynamic("fonts")(fonts)
+    if (!js.isUndefined(inlineFonts)) __obj.updateDynamic("inlineFonts")(inlineFonts)
+    if (inlineThreshold != null) __obj.updateDynamic("inlineThreshold")(inlineThreshold.asInstanceOf[js.Any])
+    if (keyframes != null) __obj.updateDynamic("keyframes")(keyframes.asInstanceOf[js.Any])
+    if (!js.isUndefined(mergeStylesheets)) __obj.updateDynamic("mergeStylesheets")(mergeStylesheets)
+    if (minimumExternalSize != null) __obj.updateDynamic("minimumExternalSize")(minimumExternalSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(noscriptFallback)) __obj.updateDynamic("noscriptFallback")(noscriptFallback)
+    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (!js.isUndefined(preloadFonts)) __obj.updateDynamic("preloadFonts")(preloadFonts)
+    if (!js.isUndefined(pruneSource)) __obj.updateDynamic("pruneSource")(pruneSource)
+    __obj.asInstanceOf[CrittersOptions]
+  }
+}
+

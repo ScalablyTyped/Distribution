@@ -18,3 +18,22 @@ trait Place extends js.Object {
   var position: js.UndefOr[gapiDotClientDotPlusdomainsLib.Anon_Latitude] = js.undefined
 }
 
+object Place {
+  @scala.inline
+  def apply(
+    address: gapiDotClientDotPlusdomainsLib.Anon_Formatted = null,
+    displayName: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    position: gapiDotClientDotPlusdomainsLib.Anon_Latitude = null
+  ): Place = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Place]
+  }
+}
+

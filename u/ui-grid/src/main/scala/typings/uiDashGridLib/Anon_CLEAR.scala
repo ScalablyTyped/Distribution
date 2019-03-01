@@ -11,3 +11,14 @@ trait Anon_CLEAR extends js.Object {
   var KEYDOWN: scala.Double
 }
 
+object Anon_CLEAR {
+  @scala.inline
+  def apply(CLEAR: scala.Double, CLICK: scala.Double, KEYDOWN: scala.Double): Anon_CLEAR = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CLEAR")(CLEAR)
+    __obj.updateDynamic("CLICK")(CLICK)
+    __obj.updateDynamic("KEYDOWN")(KEYDOWN)
+    __obj.asInstanceOf[Anon_CLEAR]
+  }
+}
+

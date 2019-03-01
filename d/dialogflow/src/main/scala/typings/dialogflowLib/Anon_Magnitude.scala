@@ -10,3 +10,13 @@ trait Anon_Magnitude extends js.Object {
   var score: scala.Double
 }
 
+object Anon_Magnitude {
+  @scala.inline
+  def apply(magnitude: scala.Double, score: scala.Double): Anon_Magnitude = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("magnitude")(magnitude)
+    __obj.updateDynamic("score")(score)
+    __obj.asInstanceOf[Anon_Magnitude]
+  }
+}
+

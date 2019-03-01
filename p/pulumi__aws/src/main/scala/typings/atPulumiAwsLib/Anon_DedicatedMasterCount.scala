@@ -14,3 +14,24 @@ trait Anon_DedicatedMasterCount extends js.Object {
   var zoneAwarenessEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_DedicatedMasterCount {
+  @scala.inline
+  def apply(
+    dedicatedMasterCount: scala.Int | scala.Double = null,
+    dedicatedMasterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    dedicatedMasterType: java.lang.String = null,
+    instanceCount: scala.Int | scala.Double = null,
+    instanceType: java.lang.String = null,
+    zoneAwarenessEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_DedicatedMasterCount = {
+    val __obj = js.Dynamic.literal()
+    if (dedicatedMasterCount != null) __obj.updateDynamic("dedicatedMasterCount")(dedicatedMasterCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(dedicatedMasterEnabled)) __obj.updateDynamic("dedicatedMasterEnabled")(dedicatedMasterEnabled)
+    if (dedicatedMasterType != null) __obj.updateDynamic("dedicatedMasterType")(dedicatedMasterType)
+    if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
+    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType)
+    if (!js.isUndefined(zoneAwarenessEnabled)) __obj.updateDynamic("zoneAwarenessEnabled")(zoneAwarenessEnabled)
+    __obj.asInstanceOf[Anon_DedicatedMasterCount]
+  }
+}
+

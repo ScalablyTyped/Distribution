@@ -44,3 +44,22 @@ trait TargetChange extends js.Object {
   var targetIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object TargetChange {
+  @scala.inline
+  def apply(
+    cause: Status = null,
+    readTime: java.lang.String = null,
+    resumeToken: java.lang.String = null,
+    targetChangeType: java.lang.String = null,
+    targetIds: js.Array[scala.Double] = null
+  ): TargetChange = {
+    val __obj = js.Dynamic.literal()
+    if (cause != null) __obj.updateDynamic("cause")(cause)
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken)
+    if (targetChangeType != null) __obj.updateDynamic("targetChangeType")(targetChangeType)
+    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds)
+    __obj.asInstanceOf[TargetChange]
+  }
+}
+

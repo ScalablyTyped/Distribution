@@ -54,3 +54,36 @@ trait GrantState extends js.Object {
   val retiringPrincipal: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object GrantState {
+  @scala.inline
+  def apply(
+    constraints: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionContextEqualsEncryptionContextSubset]
+      ]
+    ] = null,
+    grantCreationTokens: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    grantId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    grantToken: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    granteePrincipal: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    operations: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    retireOnDelete: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    retiringPrincipal: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): GrantState = {
+    val __obj = js.Dynamic.literal()
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (grantCreationTokens != null) __obj.updateDynamic("grantCreationTokens")(grantCreationTokens.asInstanceOf[js.Any])
+    if (grantId != null) __obj.updateDynamic("grantId")(grantId.asInstanceOf[js.Any])
+    if (grantToken != null) __obj.updateDynamic("grantToken")(grantToken.asInstanceOf[js.Any])
+    if (granteePrincipal != null) __obj.updateDynamic("granteePrincipal")(granteePrincipal.asInstanceOf[js.Any])
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (operations != null) __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
+    if (retireOnDelete != null) __obj.updateDynamic("retireOnDelete")(retireOnDelete.asInstanceOf[js.Any])
+    if (retiringPrincipal != null) __obj.updateDynamic("retiringPrincipal")(retiringPrincipal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GrantState]
+  }
+}
+

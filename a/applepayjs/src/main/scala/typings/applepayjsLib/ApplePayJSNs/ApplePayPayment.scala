@@ -23,3 +23,18 @@ trait ApplePayPayment extends js.Object {
   var token: ApplePayPaymentToken
 }
 
+object ApplePayPayment {
+  @scala.inline
+  def apply(
+    token: ApplePayPaymentToken,
+    billingContact: ApplePayPaymentContact = null,
+    shippingContact: ApplePayPaymentContact = null
+  ): ApplePayPayment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("token")(token)
+    if (billingContact != null) __obj.updateDynamic("billingContact")(billingContact)
+    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact)
+    __obj.asInstanceOf[ApplePayPayment]
+  }
+}
+

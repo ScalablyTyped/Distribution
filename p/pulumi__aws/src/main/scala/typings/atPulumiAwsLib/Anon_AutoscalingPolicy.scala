@@ -16,3 +16,28 @@ trait Anon_AutoscalingPolicy extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AutoscalingPolicy {
+  @scala.inline
+  def apply(
+    ebsConfigs: js.Array[Anon_Iops],
+    id: java.lang.String,
+    instanceRole: java.lang.String,
+    instanceType: java.lang.String,
+    autoscalingPolicy: java.lang.String = null,
+    bidPrice: java.lang.String = null,
+    instanceCount: scala.Int | scala.Double = null,
+    name: java.lang.String = null
+  ): Anon_AutoscalingPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ebsConfigs")(ebsConfigs)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("instanceRole")(instanceRole)
+    __obj.updateDynamic("instanceType")(instanceType)
+    if (autoscalingPolicy != null) __obj.updateDynamic("autoscalingPolicy")(autoscalingPolicy)
+    if (bidPrice != null) __obj.updateDynamic("bidPrice")(bidPrice)
+    if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_AutoscalingPolicy]
+  }
+}
+

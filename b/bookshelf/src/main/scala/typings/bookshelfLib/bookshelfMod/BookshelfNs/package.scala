@@ -13,5 +13,4 @@ package object BookshelfNs {
     bluebirdLib.bluebirdMod.namespaced[js.Any] | scala.Unit
   ]
   type FetchAllOptions = FetchOptions
-  type SortOrder = bookshelfLib.bookshelfLibStrings.ASC | bookshelfLib.bookshelfLibStrings.asc | bookshelfLib.bookshelfLibStrings.DESC | bookshelfLib.bookshelfLibStrings.desc
 }

@@ -31,3 +31,22 @@ trait OptionsTopBarBackButton extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OptionsTopBarBackButton {
+  @scala.inline
+  def apply(
+    color: Color = null,
+    icon: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined,
+    showTitle: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): OptionsTopBarBackButton = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
+    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[OptionsTopBarBackButton]
+  }
+}
+

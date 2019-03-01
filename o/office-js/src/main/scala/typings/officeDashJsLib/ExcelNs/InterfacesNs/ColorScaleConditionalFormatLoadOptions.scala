@@ -30,3 +30,18 @@ trait ColorScaleConditionalFormatLoadOptions extends js.Object {
   var threeColorScale: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ColorScaleConditionalFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    criteria: js.UndefOr[scala.Boolean] = js.undefined,
+    threeColorScale: js.UndefOr[scala.Boolean] = js.undefined
+  ): ColorScaleConditionalFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria)
+    if (!js.isUndefined(threeColorScale)) __obj.updateDynamic("threeColorScale")(threeColorScale)
+    __obj.asInstanceOf[ColorScaleConditionalFormatLoadOptions]
+  }
+}
+

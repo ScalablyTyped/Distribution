@@ -16,3 +16,12 @@ trait HasOneGetAssociationMixinOptions extends js.Object {
   var scope: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
 }
 
+object HasOneGetAssociationMixinOptions {
+  @scala.inline
+  def apply(scope: java.lang.String | scala.Boolean = null): HasOneGetAssociationMixinOptions = {
+    val __obj = js.Dynamic.literal()
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HasOneGetAssociationMixinOptions]
+  }
+}
+

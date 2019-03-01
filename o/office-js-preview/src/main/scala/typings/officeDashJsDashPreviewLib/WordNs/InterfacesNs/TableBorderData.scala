@@ -32,3 +32,18 @@ trait TableBorderData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TableBorderData {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    `type`: officeDashJsDashPreviewLib.WordNs.BorderType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Mixed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Single | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Double | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dotted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dashed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DotDashed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dot2Dashed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triple | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThinThickSmall | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThickThinSmall | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThinThickThinSmall | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThinThickMed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThickThinMed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThinThickThinMed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThinThickLarge | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThickThinLarge | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThinThickThinLarge | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wave | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DoubleWave | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashedSmall | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashDotStroked | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThreeDEmboss | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThreeDEngrave = null,
+    width: scala.Int | scala.Double = null
+  ): TableBorderData = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableBorderData]
+  }
+}
+

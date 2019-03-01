@@ -56,3 +56,44 @@ trait TooltipText extends js.Object {
   var webColors: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TooltipText {
+  @scala.inline
+  def apply(
+    addButton: java.lang.String = null,
+    basic: java.lang.String = null,
+    candyCrush: java.lang.String = null,
+    citrus: java.lang.String = null,
+    currentColor: java.lang.String = null,
+    flatColors: java.lang.String = null,
+    misty: java.lang.String = null,
+    monoChrome: java.lang.String = null,
+    moonLight: java.lang.String = null,
+    pinkShades: java.lang.String = null,
+    sandy: java.lang.String = null,
+    seaWolf: java.lang.String = null,
+    selectedColor: java.lang.String = null,
+    switcher: java.lang.String = null,
+    vintage: java.lang.String = null,
+    webColors: java.lang.String = null
+  ): TooltipText = {
+    val __obj = js.Dynamic.literal()
+    if (addButton != null) __obj.updateDynamic("addButton")(addButton)
+    if (basic != null) __obj.updateDynamic("basic")(basic)
+    if (candyCrush != null) __obj.updateDynamic("candyCrush")(candyCrush)
+    if (citrus != null) __obj.updateDynamic("citrus")(citrus)
+    if (currentColor != null) __obj.updateDynamic("currentColor")(currentColor)
+    if (flatColors != null) __obj.updateDynamic("flatColors")(flatColors)
+    if (misty != null) __obj.updateDynamic("misty")(misty)
+    if (monoChrome != null) __obj.updateDynamic("monoChrome")(monoChrome)
+    if (moonLight != null) __obj.updateDynamic("moonLight")(moonLight)
+    if (pinkShades != null) __obj.updateDynamic("pinkShades")(pinkShades)
+    if (sandy != null) __obj.updateDynamic("sandy")(sandy)
+    if (seaWolf != null) __obj.updateDynamic("seaWolf")(seaWolf)
+    if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor)
+    if (switcher != null) __obj.updateDynamic("switcher")(switcher)
+    if (vintage != null) __obj.updateDynamic("vintage")(vintage)
+    if (webColors != null) __obj.updateDynamic("webColors")(webColors)
+    __obj.asInstanceOf[TooltipText]
+  }
+}
+

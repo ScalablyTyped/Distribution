@@ -17,3 +17,13 @@ trait AcceleratorConfig extends js.Object {
   var acceleratorTypeUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AcceleratorConfig {
+  @scala.inline
+  def apply(acceleratorCount: scala.Int | scala.Double = null, acceleratorTypeUri: java.lang.String = null): AcceleratorConfig = {
+    val __obj = js.Dynamic.literal()
+    if (acceleratorCount != null) __obj.updateDynamic("acceleratorCount")(acceleratorCount.asInstanceOf[js.Any])
+    if (acceleratorTypeUri != null) __obj.updateDynamic("acceleratorTypeUri")(acceleratorTypeUri)
+    __obj.asInstanceOf[AcceleratorConfig]
+  }
+}
+

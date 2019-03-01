@@ -16,3 +16,13 @@ trait IgGridAppendRowsOnDemandMethods extends js.Object {
   def nextChunk(): scala.Unit
 }
 
+object IgGridAppendRowsOnDemandMethods {
+  @scala.inline
+  def apply(destroy: js.Function0[scala.Unit], nextChunk: js.Function0[scala.Unit]): IgGridAppendRowsOnDemandMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("nextChunk")(nextChunk)
+    __obj.asInstanceOf[IgGridAppendRowsOnDemandMethods]
+  }
+}
+

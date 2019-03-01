@@ -12,3 +12,20 @@ trait Anon_ContextDelay[E, A] extends js.Object {
   def source(): baconjsLib.BaconNs.Property[E, A]
 }
 
+object Anon_ContextDelay {
+  @scala.inline
+  def apply[E, A](
+    retries: scala.Double,
+    source: js.Function0[baconjsLib.BaconNs.Property[E, A]],
+    delay: js.Function1[/* context */ Anon_Error[E], scala.Double] = null,
+    isRetryable: js.Function1[/* error */ E, scala.Boolean] = null
+  ): Anon_ContextDelay[E, A] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("retries")(retries)
+    __obj.updateDynamic("source")(source)
+    if (delay != null) __obj.updateDynamic("delay")(delay)
+    if (isRetryable != null) __obj.updateDynamic("isRetryable")(isRetryable)
+    __obj.asInstanceOf[Anon_ContextDelay[E, A]]
+  }
+}
+

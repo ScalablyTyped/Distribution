@@ -45,3 +45,28 @@ import scala.scalajs.js.annotation._
   var text: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object IFileInputProps {
+  @scala.inline
+  def apply(
+    IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
+    LabelHTMLAttributes: reactLib.reactMod.ReactNs.LabelHTMLAttributes[reactLib.HTMLLabelElement] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    inputProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement] = null,
+    large: js.UndefOr[scala.Boolean] = js.undefined,
+    onInputChange: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement] = null,
+    text: reactLib.reactMod.ReactNs.ReactNode = null
+  ): IFileInputProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IProps)
+    js.Dynamic.global.Object.assign(__obj, LabelHTMLAttributes)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (onInputChange != null) __obj.updateDynamic("onInputChange")(onInputChange)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IFileInputProps]
+  }
+}
+

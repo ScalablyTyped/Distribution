@@ -27,3 +27,20 @@ trait CommonNsisOptions extends js.Object {
   val warningsAsErrors: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CommonNsisOptions {
+  @scala.inline
+  def apply(
+    guid: java.lang.String = null,
+    unicode: js.UndefOr[scala.Boolean] = js.undefined,
+    useZip: js.UndefOr[scala.Boolean] = js.undefined,
+    warningsAsErrors: js.UndefOr[scala.Boolean] = js.undefined
+  ): CommonNsisOptions = {
+    val __obj = js.Dynamic.literal()
+    if (guid != null) __obj.updateDynamic("guid")(guid)
+    if (!js.isUndefined(unicode)) __obj.updateDynamic("unicode")(unicode)
+    if (!js.isUndefined(useZip)) __obj.updateDynamic("useZip")(useZip)
+    if (!js.isUndefined(warningsAsErrors)) __obj.updateDynamic("warningsAsErrors")(warningsAsErrors)
+    __obj.asInstanceOf[CommonNsisOptions]
+  }
+}
+

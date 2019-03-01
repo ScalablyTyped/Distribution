@@ -18,3 +18,22 @@ trait CellularBase extends js.Object {
   var SignalStrength: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object CellularBase {
+  @scala.inline
+  def apply(
+    ActivationState: ActivationStateType = null,
+    NetworkTechnology: java.lang.String = null,
+    RoamingState: java.lang.String = null,
+    SIMPresent: js.UndefOr[scala.Boolean] = js.undefined,
+    SignalStrength: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): CellularBase = {
+    val __obj = js.Dynamic.literal()
+    if (ActivationState != null) __obj.updateDynamic("ActivationState")(ActivationState)
+    if (NetworkTechnology != null) __obj.updateDynamic("NetworkTechnology")(NetworkTechnology)
+    if (RoamingState != null) __obj.updateDynamic("RoamingState")(RoamingState)
+    if (!js.isUndefined(SIMPresent)) __obj.updateDynamic("SIMPresent")(SIMPresent)
+    if (!js.isUndefined(SignalStrength)) __obj.updateDynamic("SignalStrength")(SignalStrength)
+    __obj.asInstanceOf[CellularBase]
+  }
+}
+

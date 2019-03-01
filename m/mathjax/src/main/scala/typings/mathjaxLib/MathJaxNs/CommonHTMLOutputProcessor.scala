@@ -28,3 +28,20 @@ trait CommonHTMLOutputProcessor extends js.Object {
   var scale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CommonHTMLOutputProcessor {
+  @scala.inline
+  def apply(
+    linebreaks: LineBreaks = null,
+    minScaleAdjust: scala.Int | scala.Double = null,
+    mtextFontInherit: js.UndefOr[scala.Boolean] = js.undefined,
+    scale: scala.Int | scala.Double = null
+  ): CommonHTMLOutputProcessor = {
+    val __obj = js.Dynamic.literal()
+    if (linebreaks != null) __obj.updateDynamic("linebreaks")(linebreaks)
+    if (minScaleAdjust != null) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtextFontInherit)) __obj.updateDynamic("mtextFontInherit")(mtextFontInherit)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommonHTMLOutputProcessor]
+  }
+}
+

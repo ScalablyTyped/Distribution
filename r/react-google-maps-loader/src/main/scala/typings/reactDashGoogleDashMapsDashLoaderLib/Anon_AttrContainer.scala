@@ -22,3 +22,31 @@ trait Anon_AttrContainer extends js.Object {
   ]
 }
 
+object Anon_AttrContainer {
+  @scala.inline
+  def apply(
+    Autocomplete: org.scalablytyped.runtime.Instantiable1[
+      /* inputField */ stdLib.HTMLInputElement, 
+      googlemapsLib.googleNs.mapsNs.placesNs.Autocomplete
+    ],
+    AutocompleteService: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.placesNs.AutocompleteService],
+    AutocompleteSessionToken: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.placesNs.AutocompleteSessionToken],
+    PlacesService: org.scalablytyped.runtime.Instantiable1[
+      /* attrContainer */ stdLib.HTMLDivElement, 
+      googlemapsLib.googleNs.mapsNs.placesNs.PlacesService
+    ],
+    SearchBox: org.scalablytyped.runtime.Instantiable1[
+      /* inputField */ stdLib.HTMLInputElement, 
+      googlemapsLib.googleNs.mapsNs.placesNs.SearchBox
+    ]
+  ): Anon_AttrContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Autocomplete")(Autocomplete)
+    __obj.updateDynamic("AutocompleteService")(AutocompleteService)
+    __obj.updateDynamic("AutocompleteSessionToken")(AutocompleteSessionToken)
+    __obj.updateDynamic("PlacesService")(PlacesService)
+    __obj.updateDynamic("SearchBox")(SearchBox)
+    __obj.asInstanceOf[Anon_AttrContainer]
+  }
+}
+

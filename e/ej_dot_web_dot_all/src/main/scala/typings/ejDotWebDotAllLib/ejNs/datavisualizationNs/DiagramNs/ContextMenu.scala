@@ -16,3 +16,16 @@ trait ContextMenu extends js.Object {
   var showCustomMenuItemsOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ContextMenu {
+  @scala.inline
+  def apply(
+    items: js.Array[ContextMenuItem] = null,
+    showCustomMenuItemsOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): ContextMenu = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (!js.isUndefined(showCustomMenuItemsOnly)) __obj.updateDynamic("showCustomMenuItemsOnly")(showCustomMenuItemsOnly)
+    __obj.asInstanceOf[ContextMenu]
+  }
+}
+

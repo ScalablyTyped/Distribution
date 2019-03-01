@@ -16,13 +16,16 @@ object reactDashNativeDashModalLibStrings {
   sealed trait fullScreen extends js.Object
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape
+    extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Orientation
   
   @js.native
-  sealed trait `landscape-left` extends js.Object
+  sealed trait `landscape-left`
+    extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Orientation
   
   @js.native
-  sealed trait `landscape-right` extends js.Object
+  sealed trait `landscape-right`
+    extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Orientation
   
   @js.native
   sealed trait left extends js.Object
@@ -34,10 +37,12 @@ object reactDashNativeDashModalLibStrings {
   sealed trait pageSheet extends js.Object
   
   @js.native
-  sealed trait portrait extends js.Object
+  sealed trait portrait
+    extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Orientation
   
   @js.native
-  sealed trait `portrait-upside-down` extends js.Object
+  sealed trait `portrait-upside-down`
+    extends reactDashNativeDashModalLib.reactDashNativeDashModalMod.Orientation
   
   @js.native
   sealed trait right extends js.Object

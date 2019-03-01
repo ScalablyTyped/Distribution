@@ -20,3 +20,18 @@ trait SortedEventUIParam extends js.Object {
   var sortDirections: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object SortedEventUIParam {
+  @scala.inline
+  def apply(
+    appliedSortDirections: js.Array[_] = null,
+    owner: js.Any = null,
+    sortDirections: js.Array[_] = null
+  ): SortedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (appliedSortDirections != null) __obj.updateDynamic("appliedSortDirections")(appliedSortDirections)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections)
+    __obj.asInstanceOf[SortedEventUIParam]
+  }
+}
+

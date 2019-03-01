@@ -16,3 +16,13 @@ trait DaySelectedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DaySelectedEventUIParam {
+  @scala.inline
+  def apply(date: js.Any = null, owner: js.Any = null): DaySelectedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DaySelectedEventUIParam]
+  }
+}
+

@@ -18,3 +18,22 @@ trait VerifyCustomTokenResponse extends js.Object {
   var refreshToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VerifyCustomTokenResponse {
+  @scala.inline
+  def apply(
+    expiresIn: java.lang.String = null,
+    idToken: java.lang.String = null,
+    isNewUser: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    refreshToken: java.lang.String = null
+  ): VerifyCustomTokenResponse = {
+    val __obj = js.Dynamic.literal()
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (!js.isUndefined(isNewUser)) __obj.updateDynamic("isNewUser")(isNewUser)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    __obj.asInstanceOf[VerifyCustomTokenResponse]
+  }
+}
+

@@ -175,3 +175,93 @@ trait GridCoreProps
   var width: scala.Double
 }
 
+object GridCoreProps {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    rowCount: scala.Double,
+    rowHeight: scala.Double | (js.Function1[/* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Double]),
+    width: scala.Double,
+    StringDictionary: /**
+    * PLEASE NOTE
+    * The [key: string]: any; line is here on purpose
+    * This is due to the need of force re-render of PureComponent
+    * Check the following link if you want to know more
+    * https://github.com/bvaughn/react-virtualized#pass-thru-props
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    `aria-label`: java.lang.String = null,
+    `aria-readonly`: js.UndefOr[scala.Boolean] = js.undefined,
+    autoContainerWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    cellRangeRenderer: GridCellRangeRenderer = null,
+    className: java.lang.String = null,
+    containerProps: js.Object = null,
+    containerRole: java.lang.String = null,
+    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    deferredMeasurementCache: reactDashVirtualizedLib.distEsCellMeasurerMod.CellMeasurerCache = null,
+    estimatedColumnSize: scala.Int | scala.Double = null,
+    estimatedRowSize: scala.Int | scala.Double = null,
+    getScrollbarSize: js.Function0[scala.Double] = null,
+    id: java.lang.String = null,
+    isScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    noContentRenderer: js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null,
+    onScroll: js.Function1[/* params */ ScrollParams, _] = null,
+    onScrollbarPresenceChange: js.Function1[/* params */ ScrollbarPresenceParams, _] = null,
+    onSectionRendered: js.Function1[/* params */ SectionRenderedParams, _] = null,
+    overscanColumnCount: scala.Int | scala.Double = null,
+    overscanIndicesGetter: OverscanIndicesGetter = null,
+    overscanRowCount: scala.Int | scala.Double = null,
+    role: java.lang.String = null,
+    scrollLeft: scala.Int | scala.Double = null,
+    scrollToAlignment: reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment = null,
+    scrollToColumn: scala.Int | scala.Double = null,
+    scrollToRow: scala.Int | scala.Double = null,
+    scrollTop: scala.Int | scala.Double = null,
+    scrollingResetTimeInterval: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tabIndex: scala.Int | scala.Double = null
+  ): GridCoreProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("rowCount")(rowCount)
+    __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    __obj.updateDynamic("width")(width)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`)
+    if (!js.isUndefined(autoContainerWidth)) __obj.updateDynamic("autoContainerWidth")(autoContainerWidth)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
+    if (cellRangeRenderer != null) __obj.updateDynamic("cellRangeRenderer")(cellRangeRenderer)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (containerProps != null) __obj.updateDynamic("containerProps")(containerProps)
+    if (containerRole != null) __obj.updateDynamic("containerRole")(containerRole)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
+    if (deferredMeasurementCache != null) __obj.updateDynamic("deferredMeasurementCache")(deferredMeasurementCache)
+    if (estimatedColumnSize != null) __obj.updateDynamic("estimatedColumnSize")(estimatedColumnSize.asInstanceOf[js.Any])
+    if (estimatedRowSize != null) __obj.updateDynamic("estimatedRowSize")(estimatedRowSize.asInstanceOf[js.Any])
+    if (getScrollbarSize != null) __obj.updateDynamic("getScrollbarSize")(getScrollbarSize)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling)
+    if (noContentRenderer != null) __obj.updateDynamic("noContentRenderer")(noContentRenderer)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (onScrollbarPresenceChange != null) __obj.updateDynamic("onScrollbarPresenceChange")(onScrollbarPresenceChange)
+    if (onSectionRendered != null) __obj.updateDynamic("onSectionRendered")(onSectionRendered)
+    if (overscanColumnCount != null) __obj.updateDynamic("overscanColumnCount")(overscanColumnCount.asInstanceOf[js.Any])
+    if (overscanIndicesGetter != null) __obj.updateDynamic("overscanIndicesGetter")(overscanIndicesGetter)
+    if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
+    if (scrollToAlignment != null) __obj.updateDynamic("scrollToAlignment")(scrollToAlignment)
+    if (scrollToColumn != null) __obj.updateDynamic("scrollToColumn")(scrollToColumn.asInstanceOf[js.Any])
+    if (scrollToRow != null) __obj.updateDynamic("scrollToRow")(scrollToRow.asInstanceOf[js.Any])
+    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    if (scrollingResetTimeInterval != null) __obj.updateDynamic("scrollingResetTimeInterval")(scrollingResetTimeInterval.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridCoreProps]
+  }
+}
+

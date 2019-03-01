@@ -526,21 +526,31 @@ object EKSNs extends js.Object {
     var vpcId: js.UndefOr[String] = js.undefined
   }
   
+  trait _ClusterStatus extends js.Object
+  
+  trait _ErrorCode extends js.Object
+  
+  trait _UpdateParamType extends js.Object
+  
+  trait _UpdateStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClusterName = java.lang.String
-  type ClusterStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
-  type ErrorCode = awsDashSdkLib.awsDashSdkLibStrings.SubnetNotFound | awsDashSdkLib.awsDashSdkLibStrings.SecurityGroupNotFound | awsDashSdkLib.awsDashSdkLibStrings.EniLimitReached | awsDashSdkLib.awsDashSdkLibStrings.IpNotAvailable | awsDashSdkLib.awsDashSdkLibStrings.AccessDenied | awsDashSdkLib.awsDashSdkLibStrings.OperationNotPermitted | awsDashSdkLib.awsDashSdkLibStrings.VpcIdNotFound | awsDashSdkLib.awsDashSdkLibStrings.Unknown | java.lang.String
+  type ClusterStatus = _ClusterStatus | java.lang.String
+  type ErrorCode = _ErrorCode | java.lang.String
   type ErrorDetails = js.Array[ErrorDetail]
   type ListClustersRequestMaxResults = scala.Double
   type ListUpdatesRequestMaxResults = scala.Double
   type String = java.lang.String
   type StringList = js.Array[String]
   type Timestamp = stdLib.Date
-  type UpdateParamType = awsDashSdkLib.awsDashSdkLibStrings.Version | awsDashSdkLib.awsDashSdkLibStrings.PlatformVersion | java.lang.String
+  type UpdateParamType = _UpdateParamType | java.lang.String
   type UpdateParams = js.Array[UpdateParam]
-  type UpdateStatus = awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Cancelled | awsDashSdkLib.awsDashSdkLibStrings.Successful | java.lang.String
+  type UpdateStatus = _UpdateStatus | java.lang.String
   type UpdateType = awsDashSdkLib.awsDashSdkLibStrings.VersionUpdate | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

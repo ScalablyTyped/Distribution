@@ -23,3 +23,14 @@ trait ASPxClientWebDocumentViewerDocumentReadyEventArgs extends ASPxClientEventA
   var ReportId: java.lang.String
 }
 
+object ASPxClientWebDocumentViewerDocumentReadyEventArgs {
+  @scala.inline
+  def apply(DocumentId: java.lang.String, PageCount: scala.Double, ReportId: java.lang.String): ASPxClientWebDocumentViewerDocumentReadyEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DocumentId")(DocumentId)
+    __obj.updateDynamic("PageCount")(PageCount)
+    __obj.updateDynamic("ReportId")(ReportId)
+    __obj.asInstanceOf[ASPxClientWebDocumentViewerDocumentReadyEventArgs]
+  }
+}
+

@@ -13,3 +13,12 @@ trait PipeworksOptions extends js.Object {
   var affinity: Affinity
 }
 
+object PipeworksOptions {
+  @scala.inline
+  def apply(affinity: Affinity): PipeworksOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("affinity")(affinity)
+    __obj.asInstanceOf[PipeworksOptions]
+  }
+}
+

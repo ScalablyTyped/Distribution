@@ -35,3 +35,30 @@ trait BatchAddEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BatchAddEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cell: js.Any = null,
+    columnIndex: scala.Int | scala.Double = null,
+    columnObject: js.Any = null,
+    defaultData: js.Any = null,
+    model: js.Any = null,
+    primaryKey: js.Any = null,
+    row: js.Any = null,
+    `type`: java.lang.String = null
+  ): BatchAddEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject)
+    if (defaultData != null) __obj.updateDynamic("defaultData")(defaultData)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BatchAddEventArgs]
+  }
+}
+

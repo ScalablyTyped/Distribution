@@ -22,3 +22,13 @@ trait ListFilteredBidRequestsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListFilteredBidRequestsResponse {
+  @scala.inline
+  def apply(calloutStatusRows: js.Array[CalloutStatusRow] = null, nextPageToken: java.lang.String = null): ListFilteredBidRequestsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (calloutStatusRows != null) __obj.updateDynamic("calloutStatusRows")(calloutStatusRows)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListFilteredBidRequestsResponse]
+  }
+}
+

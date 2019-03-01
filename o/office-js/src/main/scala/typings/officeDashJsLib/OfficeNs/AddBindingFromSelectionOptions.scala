@@ -23,3 +23,18 @@ trait AddBindingFromSelectionOptions extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AddBindingFromSelectionOptions {
+  @scala.inline
+  def apply(
+    asyncContext: js.Any = null,
+    columns: js.Array[java.lang.String] = null,
+    id: java.lang.String = null
+  ): AddBindingFromSelectionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[AddBindingFromSelectionOptions]
+  }
+}
+

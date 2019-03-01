@@ -50,3 +50,65 @@ trait CompositionContext extends js.Object {
   def triggerAttach(): scala.Unit
 }
 
+object CompositionContext {
+  @scala.inline
+  def apply(
+    activeView: stdLib.HTMLElement,
+    child: stdLib.HTMLElement,
+    composingNewView: scala.Boolean,
+    mode: java.lang.String,
+    parent: stdLib.HTMLElement,
+    triggerAttach: js.Function0[scala.Unit],
+    activate: js.UndefOr[scala.Boolean] = js.undefined,
+    area: java.lang.String = null,
+    attached: js.Function3[
+      /* child */ stdLib.HTMLElement, 
+      /* parent */ stdLib.HTMLElement, 
+      /* context */ CompositionContext, 
+      scala.Unit
+    ] = null,
+    binding: js.Function3[
+      /* child */ stdLib.HTMLElement, 
+      /* parent */ stdLib.HTMLElement, 
+      /* context */ CompositionContext, 
+      scala.Unit
+    ] = null,
+    bindingContext: knockoutLib.KnockoutBindingContext = null,
+    cacheViews: js.UndefOr[scala.Boolean] = js.undefined,
+    compositionComplete: js.Function3[
+      /* child */ stdLib.HTMLElement, 
+      /* parent */ stdLib.HTMLElement, 
+      /* context */ CompositionContext, 
+      scala.Unit
+    ] = null,
+    model: js.Any = null,
+    preserveContext: js.UndefOr[scala.Boolean] = js.undefined,
+    strategy: js.Function1[/* context */ CompositionContext, durandalLib.DurandalPromise[stdLib.HTMLElement]] = null,
+    transition: java.lang.String = null,
+    view: js.Any = null,
+    viewElements: js.Array[stdLib.HTMLElement] = null
+  ): CompositionContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activeView")(activeView)
+    __obj.updateDynamic("child")(child)
+    __obj.updateDynamic("composingNewView")(composingNewView)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("triggerAttach")(triggerAttach)
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
+    if (area != null) __obj.updateDynamic("area")(area)
+    if (attached != null) __obj.updateDynamic("attached")(attached)
+    if (binding != null) __obj.updateDynamic("binding")(binding)
+    if (bindingContext != null) __obj.updateDynamic("bindingContext")(bindingContext)
+    if (!js.isUndefined(cacheViews)) __obj.updateDynamic("cacheViews")(cacheViews)
+    if (compositionComplete != null) __obj.updateDynamic("compositionComplete")(compositionComplete)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(preserveContext)) __obj.updateDynamic("preserveContext")(preserveContext)
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (viewElements != null) __obj.updateDynamic("viewElements")(viewElements)
+    __obj.asInstanceOf[CompositionContext]
+  }
+}
+

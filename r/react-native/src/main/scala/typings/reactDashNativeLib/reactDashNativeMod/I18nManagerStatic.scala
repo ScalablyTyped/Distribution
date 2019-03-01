@@ -11,3 +11,18 @@ trait I18nManagerStatic extends js.Object {
   def forceRTL(forceRTL: scala.Boolean): js.Object
 }
 
+object I18nManagerStatic {
+  @scala.inline
+  def apply(
+    allowRTL: js.Function1[scala.Boolean, js.Object],
+    forceRTL: js.Function1[scala.Boolean, js.Object],
+    isRTL: scala.Boolean
+  ): I18nManagerStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowRTL")(allowRTL)
+    __obj.updateDynamic("forceRTL")(forceRTL)
+    __obj.updateDynamic("isRTL")(isRTL)
+    __obj.asInstanceOf[I18nManagerStatic]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_Action extends js.Object {
   var text: reactLib.reactMod.ReactNs.ReactNode
 }
 
+object Anon_Action {
+  @scala.inline
+  def apply(
+    text: reactLib.reactMod.ReactNs.ReactNode,
+    action: reactLib.reactMod.ReactNs.ReactNode | Anon_Label = null
+  ): Anon_Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Action]
+  }
+}
+

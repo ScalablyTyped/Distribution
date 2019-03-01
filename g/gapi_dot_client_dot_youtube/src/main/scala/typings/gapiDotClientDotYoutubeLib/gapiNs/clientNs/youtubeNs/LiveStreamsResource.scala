@@ -18,3 +18,32 @@ trait LiveStreamsResource extends js.Object {
   def update(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[LiveStream]
 }
 
+object LiveStreamsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenOnBehalfOfContentOwnerOnBehalfOfContentOwnerChannel, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveStream]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyMaxResultsMine, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveStreamListResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LiveStream]
+    ]
+  ): LiveStreamsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[LiveStreamsResource]
+  }
+}
+

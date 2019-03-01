@@ -16,3 +16,32 @@ trait Built_in_variablesResource extends js.Object {
   def revert(request: gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPath): gapiDotClientLib.gapiNs.clientNs.Request[RevertBuiltInVariableResponse]
 }
 
+object Built_in_variablesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreateBuiltInVariableResponse]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPath, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListEnabledBuiltInVariablesResponse]
+    ],
+    revert: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPath, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RevertBuiltInVariableResponse]
+    ]
+  ): Built_in_variablesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("revert")(revert)
+    __obj.asInstanceOf[Built_in_variablesResource]
+  }
+}
+

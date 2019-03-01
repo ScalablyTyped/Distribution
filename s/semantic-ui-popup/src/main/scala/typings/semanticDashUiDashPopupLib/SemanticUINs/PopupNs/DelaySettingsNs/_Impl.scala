@@ -10,3 +10,13 @@ trait _Impl extends js.Object {
   var show: scala.Double
 }
 
+object _Impl {
+  @scala.inline
+  def apply(hide: scala.Double, show: scala.Double): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

@@ -16,3 +16,13 @@ trait OpenExternalOptions extends js.Object {
   var workingDirectory: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OpenExternalOptions {
+  @scala.inline
+  def apply(activate: js.UndefOr[scala.Boolean] = js.undefined, workingDirectory: java.lang.String = null): OpenExternalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
+    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory)
+    __obj.asInstanceOf[OpenExternalOptions]
+  }
+}
+

@@ -20,3 +20,30 @@ trait ErrorObject extends js.Object {
   var schemaPath: java.lang.String
 }
 
+object ErrorObject {
+  @scala.inline
+  def apply(
+    dataPath: java.lang.String,
+    keyword: java.lang.String,
+    params: ErrorParameters,
+    schemaPath: java.lang.String,
+    data: js.Any = null,
+    message: java.lang.String = null,
+    parentSchema: js.Object = null,
+    propertyName: java.lang.String = null,
+    schema: js.Any = null
+  ): ErrorObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataPath")(dataPath)
+    __obj.updateDynamic("keyword")(keyword)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("schemaPath")(schemaPath)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (parentSchema != null) __obj.updateDynamic("parentSchema")(parentSchema)
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[ErrorObject]
+  }
+}
+

@@ -51,3 +51,28 @@ trait LogSink extends js.Object {
   var writerIdentity: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogSink {
+  @scala.inline
+  def apply(
+    destination: java.lang.String = null,
+    endTime: java.lang.String = null,
+    filter: java.lang.String = null,
+    includeChildren: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    outputVersionFormat: java.lang.String = null,
+    startTime: java.lang.String = null,
+    writerIdentity: java.lang.String = null
+  ): LogSink = {
+    val __obj = js.Dynamic.literal()
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (!js.isUndefined(includeChildren)) __obj.updateDynamic("includeChildren")(includeChildren)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (outputVersionFormat != null) __obj.updateDynamic("outputVersionFormat")(outputVersionFormat)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (writerIdentity != null) __obj.updateDynamic("writerIdentity")(writerIdentity)
+    __obj.asInstanceOf[LogSink]
+  }
+}
+

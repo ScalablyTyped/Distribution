@@ -17,3 +17,20 @@ trait GatedCheckInTrigger extends BuildTrigger {
   var useWorkspaceMappings: scala.Boolean
 }
 
+object GatedCheckInTrigger {
+  @scala.inline
+  def apply(
+    pathFilters: js.Array[java.lang.String],
+    runContinuousIntegration: scala.Boolean,
+    triggerType: DefinitionTriggerType,
+    useWorkspaceMappings: scala.Boolean
+  ): GatedCheckInTrigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pathFilters")(pathFilters)
+    __obj.updateDynamic("runContinuousIntegration")(runContinuousIntegration)
+    __obj.updateDynamic("triggerType")(triggerType)
+    __obj.updateDynamic("useWorkspaceMappings")(useWorkspaceMappings)
+    __obj.asInstanceOf[GatedCheckInTrigger]
+  }
+}
+

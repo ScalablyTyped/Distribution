@@ -29,3 +29,22 @@ trait SetScriptSourceReturnType extends js.Object {
   var stackChanged: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SetScriptSourceReturnType {
+  @scala.inline
+  def apply(
+    asyncStackTrace: nodeLib.inspectorMod.RuntimeNs.StackTrace = null,
+    asyncStackTraceId: nodeLib.inspectorMod.RuntimeNs.StackTraceId = null,
+    callFrames: js.Array[CallFrame] = null,
+    exceptionDetails: nodeLib.inspectorMod.RuntimeNs.ExceptionDetails = null,
+    stackChanged: js.UndefOr[scala.Boolean] = js.undefined
+  ): SetScriptSourceReturnType = {
+    val __obj = js.Dynamic.literal()
+    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace)
+    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId)
+    if (callFrames != null) __obj.updateDynamic("callFrames")(callFrames)
+    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
+    if (!js.isUndefined(stackChanged)) __obj.updateDynamic("stackChanged")(stackChanged)
+    __obj.asInstanceOf[SetScriptSourceReturnType]
+  }
+}
+

@@ -18,3 +18,26 @@ trait Compositor extends js.Object {
   ): scala.Unit
 }
 
+object Compositor {
+  @scala.inline
+  def apply(
+    readImages: js.Function2[
+      js.Array[java.lang.String], 
+      js.Function2[/* error */ nodeLib.Error, /* images */ js.Array[Image], scala.Unit], 
+      scala.Unit
+    ],
+    render: js.Function4[
+      Layout, 
+      java.lang.String, 
+      CompositorOption, 
+      js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      scala.Unit
+    ]
+  ): Compositor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("readImages")(readImages)
+    __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[Compositor]
+  }
+}
+

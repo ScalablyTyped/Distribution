@@ -22,3 +22,20 @@ trait DefaultHelpProvider
   def create(InspectorUI: XObjectInspectorUI): scala.Unit
 }
 
+object DefaultHelpProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    create: js.Function1[XObjectInspectorUI, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): DefaultHelpProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[DefaultHelpProvider]
+  }
+}
+

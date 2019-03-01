@@ -28,3 +28,20 @@ trait OpenIdConnectProviderState extends js.Object {
   val url: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object OpenIdConnectProviderState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clientIdLists: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    thumbprintLists: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    url: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): OpenIdConnectProviderState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (clientIdLists != null) __obj.updateDynamic("clientIdLists")(clientIdLists.asInstanceOf[js.Any])
+    if (thumbprintLists != null) __obj.updateDynamic("thumbprintLists")(thumbprintLists.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OpenIdConnectProviderState]
+  }
+}
+

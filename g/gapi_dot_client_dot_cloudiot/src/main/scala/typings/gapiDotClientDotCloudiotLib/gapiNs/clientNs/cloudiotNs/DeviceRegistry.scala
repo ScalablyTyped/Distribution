@@ -49,3 +49,26 @@ trait DeviceRegistry extends js.Object {
   var stateNotificationConfig: js.UndefOr[StateNotificationConfig] = js.undefined
 }
 
+object DeviceRegistry {
+  @scala.inline
+  def apply(
+    credentials: js.Array[RegistryCredential] = null,
+    eventNotificationConfigs: js.Array[EventNotificationConfig] = null,
+    httpConfig: HttpConfig = null,
+    id: java.lang.String = null,
+    mqttConfig: MqttConfig = null,
+    name: java.lang.String = null,
+    stateNotificationConfig: StateNotificationConfig = null
+  ): DeviceRegistry = {
+    val __obj = js.Dynamic.literal()
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (eventNotificationConfigs != null) __obj.updateDynamic("eventNotificationConfigs")(eventNotificationConfigs)
+    if (httpConfig != null) __obj.updateDynamic("httpConfig")(httpConfig)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (mqttConfig != null) __obj.updateDynamic("mqttConfig")(mqttConfig)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (stateNotificationConfig != null) __obj.updateDynamic("stateNotificationConfig")(stateNotificationConfig)
+    __obj.asInstanceOf[DeviceRegistry]
+  }
+}
+

@@ -15,3 +15,26 @@ trait ScheduleLocalNotificationDetails extends js.Object {
   var userInfo: js.UndefOr[js.Object] = js.undefined
 }
 
+object ScheduleLocalNotificationDetails {
+  @scala.inline
+  def apply(
+    alertAction: java.lang.String,
+    alertBody: java.lang.String,
+    fireDate: stdLib.Date,
+    applicationIconBadgeNumber: scala.Int | scala.Double = null,
+    category: java.lang.String = null,
+    soundName: java.lang.String = null,
+    userInfo: js.Object = null
+  ): ScheduleLocalNotificationDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alertAction")(alertAction)
+    __obj.updateDynamic("alertBody")(alertBody)
+    __obj.updateDynamic("fireDate")(fireDate)
+    if (applicationIconBadgeNumber != null) __obj.updateDynamic("applicationIconBadgeNumber")(applicationIconBadgeNumber.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (soundName != null) __obj.updateDynamic("soundName")(soundName)
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
+    __obj.asInstanceOf[ScheduleLocalNotificationDetails]
+  }
+}
+

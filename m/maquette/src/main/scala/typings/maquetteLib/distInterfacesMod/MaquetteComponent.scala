@@ -12,3 +12,12 @@ trait MaquetteComponent extends js.Object {
   def render(): js.UndefOr[VNode | scala.Null]
 }
 
+object MaquetteComponent {
+  @scala.inline
+  def apply(render: js.Function0[js.UndefOr[VNode | scala.Null]]): MaquetteComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[MaquetteComponent]
+  }
+}
+

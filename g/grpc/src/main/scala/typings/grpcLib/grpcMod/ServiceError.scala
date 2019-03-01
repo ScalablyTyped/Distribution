@@ -21,3 +21,20 @@ trait ServiceError
   var metadata: js.UndefOr[Metadata] = js.undefined
 }
 
+object ServiceError {
+  @scala.inline
+  def apply(
+    code: status = null,
+    details: java.lang.String = null,
+    metadata: Metadata = null,
+    stack: java.lang.String = null
+  ): ServiceError = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ServiceError]
+  }
+}
+

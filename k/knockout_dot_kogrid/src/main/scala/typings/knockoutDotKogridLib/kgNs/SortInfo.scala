@@ -12,3 +12,13 @@ trait SortInfo extends js.Object {
   var direction: Direction
 }
 
+object SortInfo {
+  @scala.inline
+  def apply(column: SortColumn, direction: Direction): SortInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("direction")(direction)
+    __obj.asInstanceOf[SortInfo]
+  }
+}
+

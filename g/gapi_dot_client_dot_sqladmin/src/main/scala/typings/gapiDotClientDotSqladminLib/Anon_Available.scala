@@ -18,3 +18,13 @@ trait Anon_Available extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Available {
+  @scala.inline
+  def apply(available: js.UndefOr[scala.Boolean] = js.undefined, name: java.lang.String = null): Anon_Available = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_Available]
+  }
+}
+

@@ -39,3 +39,30 @@ trait Options extends js.Object {
   var standaloneModule: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    basedir: java.lang.String = null,
+    externalRequireName: java.lang.String = null,
+    hasExports: js.UndefOr[scala.Boolean] = js.undefined,
+    prelude: java.lang.String = null,
+    preludePath: java.lang.String = null,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceMapPrefix: java.lang.String = null,
+    standalone: java.lang.String = null,
+    standaloneModule: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
+    if (externalRequireName != null) __obj.updateDynamic("externalRequireName")(externalRequireName)
+    if (!js.isUndefined(hasExports)) __obj.updateDynamic("hasExports")(hasExports)
+    if (prelude != null) __obj.updateDynamic("prelude")(prelude)
+    if (preludePath != null) __obj.updateDynamic("preludePath")(preludePath)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (sourceMapPrefix != null) __obj.updateDynamic("sourceMapPrefix")(sourceMapPrefix)
+    if (standalone != null) __obj.updateDynamic("standalone")(standalone)
+    if (standaloneModule != null) __obj.updateDynamic("standaloneModule")(standaloneModule)
+    __obj.asInstanceOf[Options]
+  }
+}
+

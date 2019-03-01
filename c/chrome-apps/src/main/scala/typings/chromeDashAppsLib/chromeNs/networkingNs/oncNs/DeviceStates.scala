@@ -32,3 +32,22 @@ trait DeviceStates extends js.Object {
   var Type: NetworkType
 }
 
+object DeviceStates {
+  @scala.inline
+  def apply(
+    State: DeviceState,
+    Type: NetworkType,
+    SIMLockStatus: SIMLockStatus = null,
+    SIMPresent: js.UndefOr[scala.Boolean] = js.undefined,
+    Scanning: js.UndefOr[scala.Boolean] = js.undefined
+  ): DeviceStates = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("State")(State)
+    __obj.updateDynamic("Type")(Type)
+    if (SIMLockStatus != null) __obj.updateDynamic("SIMLockStatus")(SIMLockStatus)
+    if (!js.isUndefined(SIMPresent)) __obj.updateDynamic("SIMPresent")(SIMPresent)
+    if (!js.isUndefined(Scanning)) __obj.updateDynamic("Scanning")(Scanning)
+    __obj.asInstanceOf[DeviceStates]
+  }
+}
+

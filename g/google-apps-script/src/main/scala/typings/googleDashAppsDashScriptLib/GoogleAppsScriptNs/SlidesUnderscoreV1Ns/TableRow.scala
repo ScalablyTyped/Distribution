@@ -18,3 +18,14 @@ trait TableRow extends js.Object {
   var table_row_properties: TableRowProperties
 }
 
+object TableRow {
+  @scala.inline
+  def apply(row_height: Dimension, table_cells: js.Array[TableCell], table_row_properties: TableRowProperties): TableRow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("row_height")(row_height)
+    __obj.updateDynamic("table_cells")(table_cells)
+    __obj.updateDynamic("table_row_properties")(table_row_properties)
+    __obj.asInstanceOf[TableRow]
+  }
+}
+

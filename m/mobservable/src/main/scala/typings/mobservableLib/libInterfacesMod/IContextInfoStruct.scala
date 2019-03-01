@@ -10,3 +10,12 @@ trait IContextInfoStruct extends js.Object {
   var `object`: js.Object
 }
 
+object IContextInfoStruct {
+  @scala.inline
+  def apply(name: java.lang.String, `object`: js.Object): IContextInfoStruct = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[IContextInfoStruct]
+  }
+}
+

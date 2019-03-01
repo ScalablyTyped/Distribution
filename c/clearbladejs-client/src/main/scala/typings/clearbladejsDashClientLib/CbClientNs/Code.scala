@@ -20,3 +20,36 @@ trait Code extends js.Object {
   def update(name: java.lang.String, body: java.lang.String, callback: CbCallback): scala.Unit
 }
 
+object Code {
+  @scala.inline
+  def apply(
+    URI: java.lang.String,
+    callTimeout: scala.Double,
+    create: js.Function3[java.lang.String, java.lang.String, CbCallback, scala.Unit],
+    delete: js.Function2[java.lang.String, CbCallback, scala.Unit],
+    execute: js.Function3[java.lang.String, js.Object, CbCallback, scala.Unit],
+    getAllServices: js.Function1[CbCallback, scala.Unit],
+    getCompletedServices: js.Function1[CbCallback, scala.Unit],
+    getFailedServices: js.Function1[CbCallback, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    update: js.Function3[java.lang.String, java.lang.String, CbCallback, scala.Unit],
+    user: APIUser
+  ): Code = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI)
+    __obj.updateDynamic("callTimeout")(callTimeout)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getAllServices")(getAllServices)
+    __obj.updateDynamic("getCompletedServices")(getCompletedServices)
+    __obj.updateDynamic("getFailedServices")(getFailedServices)
+    __obj.updateDynamic("systemKey")(systemKey)
+    __obj.updateDynamic("systemSecret")(systemSecret)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[Code]
+  }
+}
+

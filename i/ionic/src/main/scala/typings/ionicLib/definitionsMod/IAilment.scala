@@ -14,3 +14,23 @@ trait IAilment extends js.Object {
   def getTreatmentSteps(): js.Promise[js.Array[PatientTreatmentStep]]
 }
 
+object IAilment {
+  @scala.inline
+  def apply(
+    detected: js.Function0[js.Promise[scala.Boolean]],
+    getMessage: js.Function0[js.Promise[java.lang.String]],
+    getTreatmentSteps: js.Function0[js.Promise[js.Array[PatientTreatmentStep]]],
+    id: java.lang.String,
+    `implicit`: scala.Boolean,
+    projects: js.Array[ProjectType] = null
+  ): IAilment = {
+    val __obj = js.Dynamic.literal(`implicit` = `implicit`)
+    __obj.updateDynamic("detected")(detected)
+    __obj.updateDynamic("getMessage")(getMessage)
+    __obj.updateDynamic("getTreatmentSteps")(getTreatmentSteps)
+    __obj.updateDynamic("id")(id)
+    if (projects != null) __obj.updateDynamic("projects")(projects)
+    __obj.asInstanceOf[IAilment]
+  }
+}
+

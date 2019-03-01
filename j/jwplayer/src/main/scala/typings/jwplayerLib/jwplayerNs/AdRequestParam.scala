@@ -12,3 +12,20 @@ trait AdRequestParam extends js.Object {
   var tag: java.lang.String
 }
 
+object AdRequestParam {
+  @scala.inline
+  def apply(
+    adposition: jwplayerLib.jwplayerLibStrings.pre | jwplayerLib.jwplayerLibStrings.mid | jwplayerLib.jwplayerLibStrings.post,
+    client: jwplayerLib.jwplayerLibStrings.vast | jwplayerLib.jwplayerLibStrings.googima,
+    offset: jwplayerLib.jwplayerLibStrings.pre | jwplayerLib.jwplayerLibStrings.mid | jwplayerLib.jwplayerLibStrings.post,
+    tag: java.lang.String
+  ): AdRequestParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adposition")(adposition.asInstanceOf[js.Any])
+    __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[AdRequestParam]
+  }
+}
+

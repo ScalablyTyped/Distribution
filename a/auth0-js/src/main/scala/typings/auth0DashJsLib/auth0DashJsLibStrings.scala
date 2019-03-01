@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object auth0DashJsLibStrings {
   @js.native
-  sealed trait account_selection_required extends js.Object
+  sealed trait account_selection_required
+    extends auth0DashJsLib.auth0DashJsMod._SpecErrorCodes
   
   @js.native
   sealed trait code extends js.Object
@@ -28,13 +29,16 @@ object auth0DashJsLibStrings {
   sealed trait interaction_required extends js.Object
   
   @js.native
-  sealed trait invalid_request_object extends js.Object
+  sealed trait invalid_request_object
+    extends auth0DashJsLib.auth0DashJsMod._SpecErrorCodes
   
   @js.native
-  sealed trait invalid_request_uri extends js.Object
+  sealed trait invalid_request_uri
+    extends auth0DashJsLib.auth0DashJsMod._SpecErrorCodes
   
   @js.native
-  sealed trait invalid_token extends js.Object
+  sealed trait invalid_token
+    extends auth0DashJsLib.auth0DashJsMod.LibErrorCodes
   
   @js.native
   sealed trait login extends js.Object
@@ -46,16 +50,20 @@ object auth0DashJsLibStrings {
   sealed trait query extends js.Object
   
   @js.native
-  sealed trait registration_not_supported extends js.Object
+  sealed trait registration_not_supported
+    extends auth0DashJsLib.auth0DashJsMod._SpecErrorCodes
   
   @js.native
-  sealed trait request_error extends js.Object
+  sealed trait request_error
+    extends auth0DashJsLib.auth0DashJsMod.LibErrorCodes
   
   @js.native
-  sealed trait request_not_supported extends js.Object
+  sealed trait request_not_supported
+    extends auth0DashJsLib.auth0DashJsMod._SpecErrorCodes
   
   @js.native
-  sealed trait request_uri_not_supported extends js.Object
+  sealed trait request_uri_not_supported
+    extends auth0DashJsLib.auth0DashJsMod._SpecErrorCodes
   
   @js.native
   sealed trait signUp extends js.Object
@@ -64,7 +72,8 @@ object auth0DashJsLibStrings {
   sealed trait sms extends js.Object
   
   @js.native
-  sealed trait timeout extends js.Object
+  sealed trait timeout
+    extends auth0DashJsLib.auth0DashJsMod.LibErrorCodes
   
   @js.native
   sealed trait token extends js.Object

@@ -288,3 +288,18 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabItemProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLLIElement] = null,
+    isActive: js.UndefOr[scala.Boolean] = js.undefined
+  ): TabItemProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive)
+    __obj.asInstanceOf[TabItemProps]
+  }
+}
+

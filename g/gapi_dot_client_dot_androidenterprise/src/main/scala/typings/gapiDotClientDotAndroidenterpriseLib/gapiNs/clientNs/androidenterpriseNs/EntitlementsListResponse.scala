@@ -15,3 +15,13 @@ trait EntitlementsListResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EntitlementsListResponse {
+  @scala.inline
+  def apply(entitlement: js.Array[Entitlement] = null, kind: java.lang.String = null): EntitlementsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (entitlement != null) __obj.updateDynamic("entitlement")(entitlement)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[EntitlementsListResponse]
+  }
+}
+

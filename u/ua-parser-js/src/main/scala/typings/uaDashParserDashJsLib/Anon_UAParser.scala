@@ -9,3 +9,12 @@ trait Anon_UAParser extends js.Object {
   var UAParser: Anon_BROWSER
 }
 
+object Anon_UAParser {
+  @scala.inline
+  def apply(UAParser: Anon_BROWSER): Anon_UAParser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("UAParser")(UAParser)
+    __obj.asInstanceOf[Anon_UAParser]
+  }
+}
+

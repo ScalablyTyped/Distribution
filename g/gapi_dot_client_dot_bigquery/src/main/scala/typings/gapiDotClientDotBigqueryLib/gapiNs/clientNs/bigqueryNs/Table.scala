@@ -68,3 +68,56 @@ trait Table extends js.Object {
   var view: js.UndefOr[ViewDefinition] = js.undefined
 }
 
+object Table {
+  @scala.inline
+  def apply(
+    creationTime: java.lang.String = null,
+    description: java.lang.String = null,
+    encryptionConfiguration: EncryptionConfiguration = null,
+    etag: java.lang.String = null,
+    expirationTime: java.lang.String = null,
+    externalDataConfiguration: ExternalDataConfiguration = null,
+    friendlyName: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    lastModifiedTime: java.lang.String = null,
+    location: java.lang.String = null,
+    numBytes: java.lang.String = null,
+    numLongTermBytes: java.lang.String = null,
+    numRows: java.lang.String = null,
+    schema: TableSchema = null,
+    selfLink: java.lang.String = null,
+    streamingBuffer: Streamingbuffer = null,
+    tableReference: TableReference = null,
+    timePartitioning: TimePartitioning = null,
+    `type`: java.lang.String = null,
+    view: ViewDefinition = null
+  ): Table = {
+    val __obj = js.Dynamic.literal()
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (encryptionConfiguration != null) __obj.updateDynamic("encryptionConfiguration")(encryptionConfiguration)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
+    if (externalDataConfiguration != null) __obj.updateDynamic("externalDataConfiguration")(externalDataConfiguration)
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (numBytes != null) __obj.updateDynamic("numBytes")(numBytes)
+    if (numLongTermBytes != null) __obj.updateDynamic("numLongTermBytes")(numLongTermBytes)
+    if (numRows != null) __obj.updateDynamic("numRows")(numRows)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (streamingBuffer != null) __obj.updateDynamic("streamingBuffer")(streamingBuffer)
+    if (tableReference != null) __obj.updateDynamic("tableReference")(tableReference)
+    if (timePartitioning != null) __obj.updateDynamic("timePartitioning")(timePartitioning)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[Table]
+  }
+}
+

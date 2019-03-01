@@ -82,3 +82,55 @@ trait IBitcoinReceiver
   var used_for_payment: scala.Boolean
 }
 
+object IBitcoinReceiver {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    amount: scala.Double,
+    amount_received: scala.Double,
+    bitcoin_amount: scala.Double,
+    bitcoin_amount_received: scala.Double,
+    bitcoin_uri: scala.Double,
+    created: scala.Double,
+    currency: java.lang.String,
+    customer: java.lang.String,
+    description: java.lang.String,
+    email: java.lang.String,
+    filled: scala.Boolean,
+    id: java.lang.String,
+    inbound_address: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.bitcoin_receiver,
+    payment: java.lang.String,
+    refund_address: java.lang.String,
+    transactions: stripeLib.stripeMod.StripeNs.IList[IBitcoinTransaction],
+    uncaptured_funds: scala.Boolean,
+    used_for_payment: scala.Boolean
+  ): IBitcoinReceiver = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("amount_received")(amount_received)
+    __obj.updateDynamic("bitcoin_amount")(bitcoin_amount)
+    __obj.updateDynamic("bitcoin_amount_received")(bitcoin_amount_received)
+    __obj.updateDynamic("bitcoin_uri")(bitcoin_uri)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("customer")(customer)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("filled")(filled)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("inbound_address")(inbound_address)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("payment")(payment)
+    __obj.updateDynamic("refund_address")(refund_address)
+    __obj.updateDynamic("transactions")(transactions)
+    __obj.updateDynamic("uncaptured_funds")(uncaptured_funds)
+    __obj.updateDynamic("used_for_payment")(used_for_payment)
+    __obj.asInstanceOf[IBitcoinReceiver]
+  }
+}
+

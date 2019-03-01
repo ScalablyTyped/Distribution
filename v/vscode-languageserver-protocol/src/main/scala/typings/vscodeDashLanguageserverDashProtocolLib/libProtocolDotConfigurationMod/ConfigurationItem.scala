@@ -16,3 +16,13 @@ trait ConfigurationItem extends js.Object {
   var section: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConfigurationItem {
+  @scala.inline
+  def apply(scopeUri: java.lang.String = null, section: java.lang.String = null): ConfigurationItem = {
+    val __obj = js.Dynamic.literal()
+    if (scopeUri != null) __obj.updateDynamic("scopeUri")(scopeUri)
+    if (section != null) __obj.updateDynamic("section")(section)
+    __obj.asInstanceOf[ConfigurationItem]
+  }
+}
+

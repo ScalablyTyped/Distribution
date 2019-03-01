@@ -52,3 +52,52 @@ trait Anon_Capabilities extends js.Object {
   ]
 }
 
+object Anon_Capabilities {
+  @scala.inline
+  def apply(
+    onGetCapabilityRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function2[
+        /* printerId */ java.lang.String, 
+        /* resultCallback */ js.Function1[
+          /* capabilities */ chromeDashAppsLib.chromeNs.printerProviderNs.PrinterCapabilities, 
+          scala.Unit
+        ], 
+        scala.Unit
+      ]
+    ],
+    onGetPrintersRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function1[
+        /* resultCallback */ js.Function1[
+          /* printerInfo */ js.Array[chromeDashAppsLib.chromeNs.printerProviderNs.PrinterInfo], 
+          scala.Unit
+        ], 
+        scala.Unit
+      ]
+    ],
+    onGetUsbPrinterInfoRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function2[
+        /* device */ _, 
+        /* resultCallback */ js.Function1[
+          /* printerInfo */ js.UndefOr[chromeDashAppsLib.chromeNs.printerProviderNs.PrinterInfo], 
+          scala.Unit
+        ], 
+        scala.Unit
+      ]
+    ],
+    onPrintRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function2[
+        /* printJob */ chromeDashAppsLib.chromeNs.printerProviderNs.PrintJob, 
+        /* resultCallback */ js.Function1[/* result */ java.lang.String, scala.Unit], 
+        scala.Unit
+      ]
+    ]
+  ): Anon_Capabilities = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onGetCapabilityRequested")(onGetCapabilityRequested)
+    __obj.updateDynamic("onGetPrintersRequested")(onGetPrintersRequested)
+    __obj.updateDynamic("onGetUsbPrinterInfoRequested")(onGetUsbPrinterInfoRequested)
+    __obj.updateDynamic("onPrintRequested")(onPrintRequested)
+    __obj.asInstanceOf[Anon_Capabilities]
+  }
+}
+

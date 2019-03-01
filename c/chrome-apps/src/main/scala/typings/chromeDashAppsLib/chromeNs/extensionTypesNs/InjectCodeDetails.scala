@@ -18,3 +18,24 @@ trait InjectCodeDetails
   var code: java.lang.String
 }
 
+object InjectCodeDetails {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    cssOrigin: CSSOrigin,
+    runAt: RunAt,
+    allFrames: js.UndefOr[scala.Boolean] = js.undefined,
+    frameId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    matchAboutBlank: js.UndefOr[scala.Boolean] = js.undefined
+  ): InjectCodeDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("cssOrigin")(cssOrigin)
+    __obj.updateDynamic("runAt")(runAt)
+    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames)
+    if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId)
+    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank)
+    __obj.asInstanceOf[InjectCodeDetails]
+  }
+}
+

@@ -41,3 +41,17 @@ trait PieChartBackground extends js.Object {
   var `pie-size`: java.lang.String
 }
 
+object PieChartBackground {
+  @scala.inline
+  def apply(
+    `pie-i-background-color`: Colour,
+    `pie-i-background-opacity`: scala.Double,
+    `pie-i-background-size`: scala.Double,
+    `pie-size`: java.lang.String
+  ): PieChartBackground = {
+    val __obj = js.Dynamic.literal(`pie-i-background-color` = `pie-i-background-color`, `pie-i-background-opacity` = `pie-i-background-opacity`, `pie-i-background-size` = `pie-i-background-size`, `pie-size` = `pie-size`)
+  
+    __obj.asInstanceOf[PieChartBackground]
+  }
+}
+

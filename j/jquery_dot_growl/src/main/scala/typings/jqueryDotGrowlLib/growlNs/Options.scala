@@ -26,3 +26,30 @@ trait Options extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    delayOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    location: java.lang.String = null,
+    size: java.lang.String = null,
+    style: java.lang.String = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(delayOnHover)) __obj.updateDynamic("delayOnHover")(delayOnHover)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Options]
+  }
+}
+

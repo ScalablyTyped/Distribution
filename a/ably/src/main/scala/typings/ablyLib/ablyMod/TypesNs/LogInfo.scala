@@ -17,3 +17,16 @@ trait LogInfo extends js.Object {
   var level: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LogInfo {
+  @scala.inline
+  def apply(
+    handler: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    level: scala.Int | scala.Double = null
+  ): LogInfo = {
+    val __obj = js.Dynamic.literal()
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogInfo]
+  }
+}
+

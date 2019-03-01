@@ -13,3 +13,12 @@ trait UninstallOptions extends js.Object {
   var showConfirmDialog: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UninstallOptions {
+  @scala.inline
+  def apply(showConfirmDialog: js.UndefOr[scala.Boolean] = js.undefined): UninstallOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showConfirmDialog)) __obj.updateDynamic("showConfirmDialog")(showConfirmDialog)
+    __obj.asInstanceOf[UninstallOptions]
+  }
+}
+

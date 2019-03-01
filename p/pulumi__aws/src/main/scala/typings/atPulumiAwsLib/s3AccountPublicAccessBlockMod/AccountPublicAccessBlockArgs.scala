@@ -33,3 +33,22 @@ trait AccountPublicAccessBlockArgs extends js.Object {
   val restrictPublicBuckets: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 
+object AccountPublicAccessBlockArgs {
+  @scala.inline
+  def apply(
+    accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    blockPublicAcls: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    blockPublicPolicy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    ignorePublicAcls: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    restrictPublicBuckets: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): AccountPublicAccessBlockArgs = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (blockPublicAcls != null) __obj.updateDynamic("blockPublicAcls")(blockPublicAcls.asInstanceOf[js.Any])
+    if (blockPublicPolicy != null) __obj.updateDynamic("blockPublicPolicy")(blockPublicPolicy.asInstanceOf[js.Any])
+    if (ignorePublicAcls != null) __obj.updateDynamic("ignorePublicAcls")(ignorePublicAcls.asInstanceOf[js.Any])
+    if (restrictPublicBuckets != null) __obj.updateDynamic("restrictPublicBuckets")(restrictPublicBuckets.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccountPublicAccessBlockArgs]
+  }
+}
+

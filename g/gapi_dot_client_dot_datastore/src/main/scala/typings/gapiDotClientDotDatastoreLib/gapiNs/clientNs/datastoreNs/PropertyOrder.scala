@@ -12,3 +12,13 @@ trait PropertyOrder extends js.Object {
   var property: js.UndefOr[PropertyReference] = js.undefined
 }
 
+object PropertyOrder {
+  @scala.inline
+  def apply(direction: java.lang.String = null, property: PropertyReference = null): PropertyOrder = {
+    val __obj = js.Dynamic.literal()
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (property != null) __obj.updateDynamic("property")(property)
+    __obj.asInstanceOf[PropertyOrder]
+  }
+}
+

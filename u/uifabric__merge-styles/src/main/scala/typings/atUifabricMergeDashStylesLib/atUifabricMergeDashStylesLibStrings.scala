@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object atUifabricMergeDashStylesLibStrings {
   @js.native
-  sealed trait `100` extends js.Object
+  sealed trait `100`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `200` extends js.Object
+  sealed trait `200`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `300` extends js.Object
+  sealed trait `300`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `400` extends js.Object
+  sealed trait `400`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `500` extends js.Object
+  sealed trait `500`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `600` extends js.Object
+  sealed trait `600`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `700` extends js.Object
+  sealed trait `700`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `800` extends js.Object
+  sealed trait `800`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `900` extends js.Object
+  sealed trait `900`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
   sealed trait Anon_SubComponentStyles extends js.Object
@@ -67,19 +76,24 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait backwards extends js.Object
   
   @js.native
-  sealed trait baseline extends js.Object
+  sealed trait baseline
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSBaselinePositionRule
   
   @js.native
-  sealed trait block extends js.Object
+  sealed trait block
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `block flow` extends js.Object
+  sealed trait `block flow`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait bold
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait bolder extends js.Object
+  sealed trait bolder
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
   sealed trait `border-box` extends js.Object
@@ -94,16 +108,20 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait butt extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait color
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
-  sealed trait `color-burn` extends js.Object
+  sealed trait `color-burn`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
-  sealed trait `color-dodge` extends js.Object
+  sealed trait `color-dodge`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
   sealed trait column extends js.Object
@@ -121,22 +139,27 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait `content-box` extends js.Object
   
   @js.native
-  sealed trait contents extends js.Object
+  sealed trait contents
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
   sealed trait cover extends js.Object
   
   @js.native
-  sealed trait darken extends js.Object
+  sealed trait darken
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
-  sealed trait difference extends js.Object
+  sealed trait difference
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait exclusion extends js.Object
+  sealed trait exclusion
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
   sealed trait expanded extends js.Object
@@ -151,31 +174,39 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait fill extends js.Object
   
   @js.native
-  sealed trait `first baseline` extends js.Object
+  sealed trait `first baseline`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSBaselinePositionRule
   
   @js.native
   sealed trait fixed extends js.Object
   
   @js.native
-  sealed trait flex extends js.Object
+  sealed trait flex
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `flex run-in` extends js.Object
+  sealed trait `flex run-in`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `flex-end` extends js.Object
+  sealed trait `flex-end`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `flex-start` extends js.Object
+  sealed trait `flex-start`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait flow extends js.Object
+  sealed trait flow
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `flow list-item block` extends js.Object
+  sealed trait `flow list-item block`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `flow-root` extends js.Object
+  sealed trait `flow-root`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
   sealed trait forwards extends js.Object
@@ -184,10 +215,12 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait grayscale extends js.Object
   
   @js.native
-  sealed trait grid extends js.Object
+  sealed trait grid
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `hard-light` extends js.Object
+  sealed trait `hard-light`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
   sealed trait hidden extends js.Object
@@ -196,31 +229,40 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait hue extends js.Object
+  sealed trait hue
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait inherit
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSRule
   
   @js.native
-  sealed trait initial extends js.Object
+  sealed trait initial
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSRule
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait `inline`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `inline table` extends js.Object
+  sealed trait `inline table`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `inline-block` extends js.Object
+  sealed trait `inline-block`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `inline-flex` extends js.Object
+  sealed trait `inline-flex`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `inline-grid` extends js.Object
+  sealed trait `inline-grid`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `inline-table` extends js.Object
+  sealed trait `inline-table`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
   sealed trait italic extends js.Object
@@ -232,55 +274,70 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait larger extends js.Object
   
   @js.native
-  sealed trait `last baseline` extends js.Object
+  sealed trait `last baseline`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSBaselinePositionRule
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait lighten extends js.Object
+  sealed trait lighten
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
-  sealed trait lighter extends js.Object
+  sealed trait lighter
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `list-item` extends js.Object
+  sealed trait `list-item`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `list-item block` extends js.Object
+  sealed trait `list-item block`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `list-item block flow` extends js.Object
+  sealed trait `list-item block flow`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `list-item block flow-root` extends js.Object
+  sealed trait `list-item block flow-root`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `list-item flow` extends js.Object
+  sealed trait `list-item flow`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `list-item flow-root` extends js.Object
+  sealed trait `list-item flow-root`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `list-item inline` extends js.Object
+  sealed trait `list-item inline`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
   sealed trait local extends js.Object
   
   @js.native
-  sealed trait luminosity extends js.Object
+  sealed trait luminosity
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
   sealed trait medium extends js.Object
   
   @js.native
-  sealed trait multiply extends js.Object
+  sealed trait multiply
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
+       with atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
   sealed trait nowrap extends js.Object
@@ -289,7 +346,8 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait oblique extends js.Object
   
   @js.native
-  sealed trait overlay extends js.Object
+  sealed trait overlay
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
   sealed trait `padding-box` extends js.Object
@@ -310,34 +368,44 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait `row-reverse` extends js.Object
   
   @js.native
-  sealed trait ruby extends js.Object
+  sealed trait ruby
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `ruby-base` extends js.Object
+  sealed trait `ruby-base`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `ruby-base-container` extends js.Object
+  sealed trait `ruby-base-container`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `ruby-text` extends js.Object
+  sealed trait `ruby-text`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `ruby-text-container` extends js.Object
+  sealed trait `ruby-text-container`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `run-in` extends js.Object
+  sealed trait `run-in`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `safe center` extends js.Object
+  sealed trait `safe center`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `safe end` extends js.Object
+  sealed trait `safe end`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `safe flex-end` extends js.Object
+  sealed trait `safe flex-end`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `safe flex-start` extends js.Object
+  sealed trait `safe flex-start`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
   sealed trait `safe left` extends js.Object
@@ -346,28 +414,35 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait `safe right` extends js.Object
   
   @js.native
-  sealed trait `safe self-end` extends js.Object
+  sealed trait `safe self-end`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `safe self-start` extends js.Object
+  sealed trait `safe self-start`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `safe start` extends js.Object
+  sealed trait `safe start`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait saturation extends js.Object
+  sealed trait saturation
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
-  sealed trait screen extends js.Object
+  sealed trait screen
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
   sealed trait scroll extends js.Object
   
   @js.native
-  sealed trait `self-end` extends js.Object
+  sealed trait `self-end`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `self-start` extends js.Object
+  sealed trait `self-start`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
   sealed trait `semi-condensed` extends js.Object
@@ -382,7 +457,8 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait smaller extends js.Object
   
   @js.native
-  sealed trait `soft-light` extends js.Object
+  sealed trait `soft-light`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IMixBlendModes
   
   @js.native
   sealed trait `space-around` extends js.Object
@@ -397,7 +473,8 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait square extends js.Object
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
   sealed trait static extends js.Object
@@ -412,31 +489,40 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait `subpixel-antialiased` extends js.Object
   
   @js.native
-  sealed trait table extends js.Object
+  sealed trait table
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `table-caption` extends js.Object
+  sealed trait `table-caption`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `table-cell` extends js.Object
+  sealed trait `table-cell`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `table-column` extends js.Object
+  sealed trait `table-column`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `table-column-group` extends js.Object
+  sealed trait `table-column-group`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `table-footer-group` extends js.Object
+  sealed trait `table-footer-group`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `table-header-group` extends js.Object
+  sealed trait `table-header-group`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `table-row` extends js.Object
+  sealed trait `table-row`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
-  sealed trait `table-row-group` extends js.Object
+  sealed trait `table-row-group`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSDisplayRule
   
   @js.native
   sealed trait text extends js.Object
@@ -451,16 +537,20 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait `ultra-expanded` extends js.Object
   
   @js.native
-  sealed trait `unsafe center` extends js.Object
+  sealed trait `unsafe center`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `unsafe end` extends js.Object
+  sealed trait `unsafe end`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `unsafe flex-end` extends js.Object
+  sealed trait `unsafe flex-end`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `unsafe flex-start` extends js.Object
+  sealed trait `unsafe flex-start`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
   sealed trait `unsafe left` extends js.Object
@@ -469,16 +559,20 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait `unsafe right` extends js.Object
   
   @js.native
-  sealed trait `unsafe self-end` extends js.Object
+  sealed trait `unsafe self-end`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `unsafe self-start` extends js.Object
+  sealed trait `unsafe self-start`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait `unsafe start` extends js.Object
+  sealed trait `unsafe start`
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSOverflowAndSelfPositionRule
   
   @js.native
-  sealed trait unset extends js.Object
+  sealed trait unset
+    extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.ICSSRule
   
   @js.native
   sealed trait vertical extends js.Object

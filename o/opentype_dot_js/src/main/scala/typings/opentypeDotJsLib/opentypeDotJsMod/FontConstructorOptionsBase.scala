@@ -13,3 +13,22 @@ trait FontConstructorOptionsBase extends js.Object {
   var unitsPerEm: scala.Double
 }
 
+object FontConstructorOptionsBase {
+  @scala.inline
+  def apply(
+    ascender: scala.Double,
+    descender: scala.Double,
+    familyName: java.lang.String,
+    styleName: java.lang.String,
+    unitsPerEm: scala.Double
+  ): FontConstructorOptionsBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ascender")(ascender)
+    __obj.updateDynamic("descender")(descender)
+    __obj.updateDynamic("familyName")(familyName)
+    __obj.updateDynamic("styleName")(styleName)
+    __obj.updateDynamic("unitsPerEm")(unitsPerEm)
+    __obj.asInstanceOf[FontConstructorOptionsBase]
+  }
+}
+

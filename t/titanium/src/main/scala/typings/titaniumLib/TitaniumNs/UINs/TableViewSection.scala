@@ -88,3 +88,74 @@ trait TableViewSection
   def setHeaderView(headerView: js.Any): scala.Unit
 }
 
+object TableViewSection {
+  @scala.inline
+  def apply(
+    add: js.Function1[TableViewRow, scala.Unit],
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    footerTitle: java.lang.String,
+    footerView: View,
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getFooterTitle: js.Function0[java.lang.String],
+    getFooterView: js.Function0[View],
+    getHeaderTitle: js.Function0[java.lang.String],
+    getHeaderView: js.Function0[View],
+    getRowCount: js.Function0[scala.Double],
+    getRows: js.Function0[js.Array[TableViewRow]],
+    headerTitle: java.lang.String,
+    headerView: View,
+    remove: js.Function1[TableViewRow, scala.Unit],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    rowAtIndex: js.Function1[scala.Double, TableViewRow],
+    rowCount: scala.Double,
+    rows: js.Array[TableViewRow],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setFooterTitle: js.Function1[java.lang.String, scala.Unit],
+    setFooterView: js.Function1[js.Any, scala.Unit],
+    setHeaderTitle: js.Function1[java.lang.String, scala.Unit],
+    setHeaderView: js.Function1[js.Any, scala.Unit],
+    getLifecycleContainer: js.Function0[Window | TabGroup] = null,
+    lifecycleContainer: Window | TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, scala.Unit]) = null
+  ): TableViewSection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("footerTitle")(footerTitle)
+    __obj.updateDynamic("footerView")(footerView)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getFooterTitle")(getFooterTitle)
+    __obj.updateDynamic("getFooterView")(getFooterView)
+    __obj.updateDynamic("getHeaderTitle")(getHeaderTitle)
+    __obj.updateDynamic("getHeaderView")(getHeaderView)
+    __obj.updateDynamic("getRowCount")(getRowCount)
+    __obj.updateDynamic("getRows")(getRows)
+    __obj.updateDynamic("headerTitle")(headerTitle)
+    __obj.updateDynamic("headerView")(headerView)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("rowAtIndex")(rowAtIndex)
+    __obj.updateDynamic("rowCount")(rowCount)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("setFooterTitle")(setFooterTitle)
+    __obj.updateDynamic("setFooterView")(setFooterView)
+    __obj.updateDynamic("setHeaderTitle")(setHeaderTitle)
+    __obj.updateDynamic("setHeaderView")(setHeaderView)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[TableViewSection]
+  }
+}
+

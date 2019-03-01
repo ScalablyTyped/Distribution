@@ -25,3 +25,22 @@ trait GetInstancesResult extends js.Object {
   val publicIps: js.Array[java.lang.String]
 }
 
+object GetInstancesResult {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    ids: js.Array[java.lang.String],
+    instanceTags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    privateIps: js.Array[java.lang.String],
+    publicIps: js.Array[java.lang.String]
+  ): GetInstancesResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ids")(ids)
+    __obj.updateDynamic("instanceTags")(instanceTags)
+    __obj.updateDynamic("privateIps")(privateIps)
+    __obj.updateDynamic("publicIps")(publicIps)
+    __obj.asInstanceOf[GetInstancesResult]
+  }
+}
+

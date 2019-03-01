@@ -14,3 +14,12 @@ trait AsarIntegrityOptions extends js.Object {
   val externalAllowed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AsarIntegrityOptions {
+  @scala.inline
+  def apply(externalAllowed: js.UndefOr[scala.Boolean] = js.undefined): AsarIntegrityOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(externalAllowed)) __obj.updateDynamic("externalAllowed")(externalAllowed)
+    __obj.asInstanceOf[AsarIntegrityOptions]
+  }
+}
+

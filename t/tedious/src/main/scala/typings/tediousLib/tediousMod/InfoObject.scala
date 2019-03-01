@@ -32,3 +32,23 @@ trait InfoObject extends js.Object {
   var state: js.Any
 }
 
+object InfoObject {
+  @scala.inline
+  def apply(
+    `class`: scala.Double,
+    lineNumber: scala.Double,
+    message: java.lang.String,
+    number: scala.Double,
+    procName: java.lang.String,
+    state: js.Any
+  ): InfoObject = {
+    val __obj = js.Dynamic.literal(`class` = `class`)
+    __obj.updateDynamic("lineNumber")(lineNumber)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("number")(number)
+    __obj.updateDynamic("procName")(procName)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[InfoObject]
+  }
+}
+

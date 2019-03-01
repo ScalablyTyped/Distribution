@@ -32,3 +32,22 @@ trait TimeSeries extends js.Object {
   var valueType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimeSeries {
+  @scala.inline
+  def apply(
+    metric: Metric = null,
+    metricKind: java.lang.String = null,
+    points: js.Array[Point] = null,
+    resource: MonitoredResource = null,
+    valueType: java.lang.String = null
+  ): TimeSeries = {
+    val __obj = js.Dynamic.literal()
+    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (metricKind != null) __obj.updateDynamic("metricKind")(metricKind)
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType)
+    __obj.asInstanceOf[TimeSeries]
+  }
+}
+

@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object mitmLibStrings {
   @js.native
-  sealed trait connect extends js.Object
+  sealed trait connect
+    extends mitmLib.mitmMod.Event
   
   @js.native
-  sealed trait connection extends js.Object
+  sealed trait connection
+    extends mitmLib.mitmMod.Event
   
   @js.native
-  sealed trait request extends js.Object
+  sealed trait request
+    extends mitmLib.mitmMod.Event
   
   @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]

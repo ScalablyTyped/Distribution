@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
   var selectedClassName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabPanelProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    forceRender: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedClassName: java.lang.String = null
+  ): TabPanelProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
+    if (selectedClassName != null) __obj.updateDynamic("selectedClassName")(selectedClassName)
+    __obj.asInstanceOf[TabPanelProps]
+  }
+}
+

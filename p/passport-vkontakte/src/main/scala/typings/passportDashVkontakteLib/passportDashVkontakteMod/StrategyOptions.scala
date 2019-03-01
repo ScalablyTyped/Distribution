@@ -14,3 +14,24 @@ trait StrategyOptions extends js.Object {
   var profileFields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object StrategyOptions {
+  @scala.inline
+  def apply(
+    callbackURL: java.lang.String,
+    clientID: java.lang.String,
+    clientSecret: java.lang.String,
+    apiVersion: java.lang.String = null,
+    lang: java.lang.String = null,
+    profileFields: js.Array[java.lang.String] = null
+  ): StrategyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callbackURL")(callbackURL)
+    __obj.updateDynamic("clientID")(clientID)
+    __obj.updateDynamic("clientSecret")(clientSecret)
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (profileFields != null) __obj.updateDynamic("profileFields")(profileFields)
+    __obj.asInstanceOf[StrategyOptions]
+  }
+}
+

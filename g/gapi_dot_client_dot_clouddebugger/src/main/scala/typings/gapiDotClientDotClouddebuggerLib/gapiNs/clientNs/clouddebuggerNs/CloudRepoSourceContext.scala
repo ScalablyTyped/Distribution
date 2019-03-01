@@ -16,3 +16,20 @@ trait CloudRepoSourceContext extends js.Object {
   var revisionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CloudRepoSourceContext {
+  @scala.inline
+  def apply(
+    aliasContext: AliasContext = null,
+    aliasName: java.lang.String = null,
+    repoId: RepoId = null,
+    revisionId: java.lang.String = null
+  ): CloudRepoSourceContext = {
+    val __obj = js.Dynamic.literal()
+    if (aliasContext != null) __obj.updateDynamic("aliasContext")(aliasContext)
+    if (aliasName != null) __obj.updateDynamic("aliasName")(aliasName)
+    if (repoId != null) __obj.updateDynamic("repoId")(repoId)
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
+    __obj.asInstanceOf[CloudRepoSourceContext]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ILightSensorReading extends js.Object {
   var timestamp: stdLib.Date
 }
 
+object ILightSensorReading {
+  @scala.inline
+  def apply(illuminanceInLux: scala.Double, timestamp: stdLib.Date): ILightSensorReading = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("illuminanceInLux")(illuminanceInLux)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[ILightSensorReading]
+  }
+}
+

@@ -35,3 +35,36 @@ trait ExpansionProfileFixedVersion extends BackboneElement {
   var version: java.lang.String
 }
 
+object ExpansionProfileFixedVersion {
+  @scala.inline
+  def apply(
+    mode: code,
+    system: uri,
+    version: java.lang.String,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _mode: Element = null,
+    _system: Element = null,
+    _version: Element = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null
+  ): ExpansionProfileFixedVersion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("system")(system)
+    __obj.updateDynamic("version")(version)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_mode != null) __obj.updateDynamic("_mode")(_mode)
+    if (_system != null) __obj.updateDynamic("_system")(_system)
+    if (_version != null) __obj.updateDynamic("_version")(_version)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    __obj.asInstanceOf[ExpansionProfileFixedVersion]
+  }
+}
+

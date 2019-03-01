@@ -167,3 +167,56 @@ trait XAccessibleContext
   def getLocale(): activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
 }
 
+object XAccessibleContext {
+  @scala.inline
+  def apply(
+    AccessibleChildCount: scala.Double,
+    AccessibleDescription: java.lang.String,
+    AccessibleIndexInParent: scala.Double,
+    AccessibleName: java.lang.String,
+    AccessibleParent: XAccessible,
+    AccessibleRelationSet: XAccessibleRelationSet,
+    AccessibleRole: scala.Double,
+    AccessibleStateSet: XAccessibleStateSet,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    acquire: js.Function0[scala.Unit],
+    getAccessibleChild: js.Function1[scala.Double, XAccessible],
+    getAccessibleChildCount: js.Function0[scala.Double],
+    getAccessibleDescription: js.Function0[java.lang.String],
+    getAccessibleIndexInParent: js.Function0[scala.Double],
+    getAccessibleName: js.Function0[java.lang.String],
+    getAccessibleParent: js.Function0[XAccessible],
+    getAccessibleRelationSet: js.Function0[XAccessibleRelationSet],
+    getAccessibleRole: js.Function0[scala.Double],
+    getAccessibleStateSet: js.Function0[XAccessibleStateSet],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessibleChildCount")(AccessibleChildCount)
+    __obj.updateDynamic("AccessibleDescription")(AccessibleDescription)
+    __obj.updateDynamic("AccessibleIndexInParent")(AccessibleIndexInParent)
+    __obj.updateDynamic("AccessibleName")(AccessibleName)
+    __obj.updateDynamic("AccessibleParent")(AccessibleParent)
+    __obj.updateDynamic("AccessibleRelationSet")(AccessibleRelationSet)
+    __obj.updateDynamic("AccessibleRole")(AccessibleRole)
+    __obj.updateDynamic("AccessibleStateSet")(AccessibleStateSet)
+    __obj.updateDynamic("Locale")(Locale)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAccessibleChild")(getAccessibleChild)
+    __obj.updateDynamic("getAccessibleChildCount")(getAccessibleChildCount)
+    __obj.updateDynamic("getAccessibleDescription")(getAccessibleDescription)
+    __obj.updateDynamic("getAccessibleIndexInParent")(getAccessibleIndexInParent)
+    __obj.updateDynamic("getAccessibleName")(getAccessibleName)
+    __obj.updateDynamic("getAccessibleParent")(getAccessibleParent)
+    __obj.updateDynamic("getAccessibleRelationSet")(getAccessibleRelationSet)
+    __obj.updateDynamic("getAccessibleRole")(getAccessibleRole)
+    __obj.updateDynamic("getAccessibleStateSet")(getAccessibleStateSet)
+    __obj.updateDynamic("getLocale")(getLocale)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAccessibleContext]
+  }
+}
+

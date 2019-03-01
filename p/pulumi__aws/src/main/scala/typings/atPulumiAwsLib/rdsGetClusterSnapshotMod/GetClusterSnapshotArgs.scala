@@ -37,3 +37,24 @@ trait GetClusterSnapshotArgs extends js.Object {
   val snapshotType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetClusterSnapshotArgs {
+  @scala.inline
+  def apply(
+    dbClusterIdentifier: java.lang.String = null,
+    dbClusterSnapshotIdentifier: java.lang.String = null,
+    includePublic: js.UndefOr[scala.Boolean] = js.undefined,
+    includeShared: js.UndefOr[scala.Boolean] = js.undefined,
+    mostRecent: js.UndefOr[scala.Boolean] = js.undefined,
+    snapshotType: java.lang.String = null
+  ): GetClusterSnapshotArgs = {
+    val __obj = js.Dynamic.literal()
+    if (dbClusterIdentifier != null) __obj.updateDynamic("dbClusterIdentifier")(dbClusterIdentifier)
+    if (dbClusterSnapshotIdentifier != null) __obj.updateDynamic("dbClusterSnapshotIdentifier")(dbClusterSnapshotIdentifier)
+    if (!js.isUndefined(includePublic)) __obj.updateDynamic("includePublic")(includePublic)
+    if (!js.isUndefined(includeShared)) __obj.updateDynamic("includeShared")(includeShared)
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
+    if (snapshotType != null) __obj.updateDynamic("snapshotType")(snapshotType)
+    __obj.asInstanceOf[GetClusterSnapshotArgs]
+  }
+}
+

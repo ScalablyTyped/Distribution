@@ -18,3 +18,12 @@ trait Anon_ResultCode extends js.Object {
   var resultCode: java.lang.String
 }
 
+object Anon_ResultCode {
+  @scala.inline
+  def apply(resultCode: java.lang.String): Anon_ResultCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resultCode")(resultCode)
+    __obj.asInstanceOf[Anon_ResultCode]
+  }
+}
+

@@ -9,3 +9,13 @@ trait EditKeyEventArgs extends EventArgs {
   val htmlEvent: js.Any
 }
 
+object EditKeyEventArgs {
+  @scala.inline
+  def apply(htmlEvent: js.Any, sender: Control): EditKeyEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[EditKeyEventArgs]
+  }
+}
+

@@ -16,3 +16,22 @@ trait WrongJavaVersionException
   var LowestSupportedVersion: java.lang.String
 }
 
+object WrongJavaVersionException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    DetectedVersion: java.lang.String,
+    HighestSupportedVersion: java.lang.String,
+    LowestSupportedVersion: java.lang.String,
+    Message: java.lang.String
+  ): WrongJavaVersionException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("DetectedVersion")(DetectedVersion)
+    __obj.updateDynamic("HighestSupportedVersion")(HighestSupportedVersion)
+    __obj.updateDynamic("LowestSupportedVersion")(LowestSupportedVersion)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[WrongJavaVersionException]
+  }
+}
+

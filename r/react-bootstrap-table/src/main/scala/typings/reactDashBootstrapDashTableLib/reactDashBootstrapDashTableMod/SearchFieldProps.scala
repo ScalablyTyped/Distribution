@@ -24,3 +24,20 @@ trait SearchFieldProps extends js.Object {
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchFieldProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    defaultValue: java.lang.String = null,
+    onKeyUp: js.Function1[/* e */ reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit] = null,
+    placeholder: java.lang.String = null
+  ): SearchFieldProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    __obj.asInstanceOf[SearchFieldProps]
+  }
+}
+

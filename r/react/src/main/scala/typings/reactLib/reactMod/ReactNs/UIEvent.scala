@@ -11,3 +11,45 @@ trait UIEvent[T]
   var view: AbstractView
 }
 
+object UIEvent {
+  @scala.inline
+  def apply[T](
+    bubbles: scala.Boolean,
+    cancelable: scala.Boolean,
+    currentTarget: reactLib.EventTarget with T,
+    defaultPrevented: scala.Boolean,
+    detail: scala.Double,
+    eventPhase: scala.Double,
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    isPropagationStopped: js.Function0[scala.Boolean],
+    isTrusted: scala.Boolean,
+    nativeEvent: reactLib.NativeUIEvent,
+    persist: js.Function0[scala.Unit],
+    preventDefault: js.Function0[scala.Unit],
+    stopPropagation: js.Function0[scala.Unit],
+    target: reactLib.EventTarget,
+    timeStamp: scala.Double,
+    `type`: java.lang.String,
+    view: AbstractView
+  ): UIEvent[T] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bubbles")(bubbles)
+    __obj.updateDynamic("cancelable")(cancelable)
+    __obj.updateDynamic("currentTarget")(currentTarget)
+    __obj.updateDynamic("defaultPrevented")(defaultPrevented)
+    __obj.updateDynamic("detail")(detail)
+    __obj.updateDynamic("eventPhase")(eventPhase)
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
+    __obj.updateDynamic("isTrusted")(isTrusted)
+    __obj.updateDynamic("nativeEvent")(nativeEvent)
+    __obj.updateDynamic("persist")(persist)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("stopPropagation")(stopPropagation)
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[UIEvent[T]]
+  }
+}
+

@@ -14,3 +14,24 @@ trait TableHeaderProps extends js.Object {
   var sortDirection: js.UndefOr[SortDirectionType] = js.undefined
 }
 
+object TableHeaderProps {
+  @scala.inline
+  def apply(
+    dataKey: java.lang.String,
+    columnData: js.Any = null,
+    disableSort: js.UndefOr[scala.Boolean] = js.undefined,
+    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    sortBy: java.lang.String = null,
+    sortDirection: SortDirectionType = null
+  ): TableHeaderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataKey")(dataKey)
+    if (columnData != null) __obj.updateDynamic("columnData")(columnData)
+    if (!js.isUndefined(disableSort)) __obj.updateDynamic("disableSort")(disableSort)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
+    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection)
+    __obj.asInstanceOf[TableHeaderProps]
+  }
+}
+

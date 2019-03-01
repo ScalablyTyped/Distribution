@@ -10,3 +10,27 @@ trait PlatformIOSStatic extends PlatformStatic {
   var isTVOS: scala.Boolean
 }
 
+object PlatformIOSStatic {
+  @scala.inline
+  def apply(
+    OS: PlatformOSType,
+    Version: scala.Double | java.lang.String,
+    isPad: scala.Boolean,
+    isTVOS: scala.Boolean,
+    select_default: js.Function1[
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ platform in react-native.react-native.PlatformOSType | 'default' ]:? T}
+    */ reactDashNativeLib.reactDashNativeLibStrings.PlatformStatic with js.Any, 
+      js.Any
+    ]
+  ): PlatformIOSStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("OS")(OS)
+    __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
+    __obj.updateDynamic("isPad")(isPad)
+    __obj.updateDynamic("isTVOS")(isTVOS)
+    __obj.updateDynamic("select")(select_default)
+    __obj.asInstanceOf[PlatformIOSStatic]
+  }
+}
+

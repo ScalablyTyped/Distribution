@@ -12,3 +12,20 @@ trait Animations extends js.Object {
   var startExit: java.lang.String
 }
 
+object Animations {
+  @scala.inline
+  def apply(
+    endEnter: java.lang.String,
+    endExit: java.lang.String,
+    startEnter: java.lang.String,
+    startExit: java.lang.String
+  ): Animations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endEnter")(endEnter)
+    __obj.updateDynamic("endExit")(endExit)
+    __obj.updateDynamic("startEnter")(startEnter)
+    __obj.updateDynamic("startExit")(startExit)
+    __obj.asInstanceOf[Animations]
+  }
+}
+

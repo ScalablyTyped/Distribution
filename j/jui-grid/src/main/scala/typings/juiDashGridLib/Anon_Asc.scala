@@ -107,3 +107,54 @@ trait Anon_Asc extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Asc {
+  @scala.inline
+  def apply(
+    colshow: scala.Boolean | js.Array[_] = null,
+    csv: js.Array[_] = null,
+    csvNames: js.Array[_] = null,
+    csvNumber: js.Array[_] = null,
+    data: js.Array[_] = null,
+    editEvent: js.UndefOr[scala.Boolean] = js.undefined,
+    editRow: scala.Boolean | js.Array[_] = null,
+    event: js.Any = null,
+    expand: js.UndefOr[scala.Boolean] = js.undefined,
+    expandEvent: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: js.Array[_] = null,
+    moveRow: js.UndefOr[scala.Boolean] = js.undefined,
+    resize: js.UndefOr[scala.Boolean] = js.undefined,
+    scroll: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollHeight: scala.Int | scala.Double = null,
+    sort: scala.Boolean | js.Array[_] = null,
+    sortEvent: js.UndefOr[scala.Boolean] = js.undefined,
+    sortIndex: scala.Int | scala.Double = null,
+    sortOrder: juiDashGridLib.juiDashGridLibStrings.asc | juiDashGridLib.juiDashGridLibStrings.desc = null,
+    tpl: js.Any = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_Asc = {
+    val __obj = js.Dynamic.literal()
+    if (colshow != null) __obj.updateDynamic("colshow")(colshow.asInstanceOf[js.Any])
+    if (csv != null) __obj.updateDynamic("csv")(csv)
+    if (csvNames != null) __obj.updateDynamic("csvNames")(csvNames)
+    if (csvNumber != null) __obj.updateDynamic("csvNumber")(csvNumber)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(editEvent)) __obj.updateDynamic("editEvent")(editEvent)
+    if (editRow != null) __obj.updateDynamic("editRow")(editRow.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
+    if (!js.isUndefined(expandEvent)) __obj.updateDynamic("expandEvent")(expandEvent)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(moveRow)) __obj.updateDynamic("moveRow")(moveRow)
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortEvent)) __obj.updateDynamic("sortEvent")(sortEvent)
+    if (sortIndex != null) __obj.updateDynamic("sortIndex")(sortIndex.asInstanceOf[js.Any])
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Asc]
+  }
+}
+

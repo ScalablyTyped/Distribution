@@ -19,3 +19,12 @@ trait FileReference extends js.Object {
   var fileUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FileReference {
+  @scala.inline
+  def apply(fileUri: java.lang.String = null): FileReference = {
+    val __obj = js.Dynamic.literal()
+    if (fileUri != null) __obj.updateDynamic("fileUri")(fileUri)
+    __obj.asInstanceOf[FileReference]
+  }
+}
+

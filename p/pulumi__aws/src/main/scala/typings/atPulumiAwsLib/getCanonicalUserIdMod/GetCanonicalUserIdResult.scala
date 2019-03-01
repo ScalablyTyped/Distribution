@@ -16,3 +16,13 @@ trait GetCanonicalUserIdResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetCanonicalUserIdResult {
+  @scala.inline
+  def apply(displayName: java.lang.String, id: java.lang.String): GetCanonicalUserIdResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[GetCanonicalUserIdResult]
+  }
+}
+

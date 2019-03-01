@@ -23,3 +23,24 @@ trait XChild
   def setParent(Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): scala.Unit
 }
 
+object XChild {
+  @scala.inline
+  def apply(
+    Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    acquire: js.Function0[scala.Unit],
+    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
+  ): XChild = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Parent")(Parent)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getParent")(getParent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setParent")(setParent)
+    __obj.asInstanceOf[XChild]
+  }
+}
+

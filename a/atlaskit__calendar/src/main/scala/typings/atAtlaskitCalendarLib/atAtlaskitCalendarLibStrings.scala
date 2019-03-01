@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object atAtlaskitCalendarLibStrings {
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends atAtlaskitCalendarLib.atAtlaskitCalendarMod.ArrowKeys
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends atAtlaskitCalendarLib.atAtlaskitCalendarMod.ArrowKeys
   
   @js.native
   sealed trait next extends js.Object
@@ -19,10 +21,12 @@ object atAtlaskitCalendarLibStrings {
   sealed trait prev extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends atAtlaskitCalendarLib.atAtlaskitCalendarMod.ArrowKeys
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends atAtlaskitCalendarLib.atAtlaskitCalendarMod.ArrowKeys
   
   @scala.inline
   def down: down = "down".asInstanceOf[down]

@@ -19,3 +19,16 @@ trait CreateStreamArgs extends js.Object {
   var source: js.UndefOr[titaniumLib.TitaniumNs.Blob | titaniumLib.TitaniumNs.Buffer] = js.undefined
 }
 
+object CreateStreamArgs {
+  @scala.inline
+  def apply(
+    mode: scala.Int | scala.Double = null,
+    source: titaniumLib.TitaniumNs.Blob | titaniumLib.TitaniumNs.Buffer = null
+  ): CreateStreamArgs = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateStreamArgs]
+  }
+}
+

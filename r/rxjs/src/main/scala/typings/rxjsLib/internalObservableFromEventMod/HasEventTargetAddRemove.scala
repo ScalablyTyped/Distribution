@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HasEventTargetAddRemove[E] extends js.Object {
+trait HasEventTargetAddRemove[E] extends EventTargetLike[E] {
   def addEventListener(`type`: java.lang.String): scala.Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: js.Function1[/* evt */ E, scala.Unit]): scala.Unit = js.native
   def addEventListener(

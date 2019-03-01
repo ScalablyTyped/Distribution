@@ -49,3 +49,30 @@ trait ISkyDrivePickerProperies extends IUIProperties {
   var theme: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ISkyDrivePickerProperies {
+  @scala.inline
+  def apply(
+    element: java.lang.String,
+    mode: java.lang.String,
+    name: java.lang.String,
+    lightbox: java.lang.String = null,
+    onerror: js.Function = null,
+    onselected: js.Function = null,
+    select: java.lang.String = null,
+    state: java.lang.String = null,
+    theme: java.lang.String = null
+  ): ISkyDrivePickerProperies = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("name")(name)
+    if (lightbox != null) __obj.updateDynamic("lightbox")(lightbox)
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (onselected != null) __obj.updateDynamic("onselected")(onselected)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[ISkyDrivePickerProperies]
+  }
+}
+

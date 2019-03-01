@@ -112,3 +112,64 @@ trait FileItem extends js.Object {
   def upload(): scala.Unit
 }
 
+object FileItem {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    cancel: js.Function0[scala.Unit],
+    file: FileLikeObject,
+    formData: js.Array[stdLib.FormData],
+    headers: stdLib.Headers,
+    index: scala.Double,
+    isCancel: scala.Boolean,
+    isError: scala.Boolean,
+    isReady: scala.Boolean,
+    isSuccess: scala.Boolean,
+    isUploaded: scala.Boolean,
+    isUploading: scala.Boolean,
+    method: java.lang.String,
+    onBeforeUpload: js.Function0[scala.Unit],
+    onCancel: js.Function3[stdLib.Response, scala.Double, stdLib.Headers, scala.Unit],
+    onComplete: js.Function3[stdLib.Response, scala.Double, stdLib.Headers, scala.Unit],
+    onError: js.Function3[stdLib.Response, scala.Double, stdLib.Headers, scala.Unit],
+    onProgress: js.Function1[scala.Double, scala.Unit],
+    onSuccess: js.Function3[stdLib.Response, scala.Double, stdLib.Headers, scala.Unit],
+    progress: scala.Double,
+    remove: js.Function0[scala.Unit],
+    removeAfterUpload: scala.Boolean,
+    upload: js.Function0[scala.Unit],
+    uploader: FileUploader,
+    url: java.lang.String,
+    withCredentials: scala.Boolean
+  ): FileItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alias")(alias)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("formData")(formData)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("isCancel")(isCancel)
+    __obj.updateDynamic("isError")(isError)
+    __obj.updateDynamic("isReady")(isReady)
+    __obj.updateDynamic("isSuccess")(isSuccess)
+    __obj.updateDynamic("isUploaded")(isUploaded)
+    __obj.updateDynamic("isUploading")(isUploading)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("onBeforeUpload")(onBeforeUpload)
+    __obj.updateDynamic("onCancel")(onCancel)
+    __obj.updateDynamic("onComplete")(onComplete)
+    __obj.updateDynamic("onError")(onError)
+    __obj.updateDynamic("onProgress")(onProgress)
+    __obj.updateDynamic("onSuccess")(onSuccess)
+    __obj.updateDynamic("progress")(progress)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removeAfterUpload")(removeAfterUpload)
+    __obj.updateDynamic("upload")(upload)
+    __obj.updateDynamic("uploader")(uploader)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[FileItem]
+  }
+}
+

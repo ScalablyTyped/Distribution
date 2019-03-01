@@ -28,3 +28,31 @@ trait Rules[P /* <: js.Object */] extends js.Object {
   ] = js.undefined
 }
 
+object Rules {
+  @scala.inline
+  def apply[P /* <: js.Object */](
+    name: java.lang.String,
+    description: java.lang.String | (js.Function1[/* params */ P, java.lang.String]) = null,
+    params: ObjectSchema | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof P ]: nats-hemera.nats-hemera.Hemera.SchemaLike}
+    */ natsDashHemeraLib.natsDashHemeraLibStrings.Rules with js.Any) = null,
+    setup: js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ js.Any, js.UndefOr[Schema]] = null,
+    validate: js.ThisFunction4[
+      /* this */ ExtensionBoundSchema, 
+      /* params */ P, 
+      /* value */ js.Any, 
+      /* state */ State, 
+      /* options */ ValidationOptions, 
+      _
+    ] = null
+  ): Rules[P] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[Rules[P]]
+  }
+}
+

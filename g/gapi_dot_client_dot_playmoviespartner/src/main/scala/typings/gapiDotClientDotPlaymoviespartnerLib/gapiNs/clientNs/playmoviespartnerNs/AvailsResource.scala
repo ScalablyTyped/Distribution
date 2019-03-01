@@ -17,3 +17,22 @@ trait AvailsResource extends js.Object {
   def list(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountId): gapiDotClientLib.gapiNs.clientNs.Request[ListAvailsResponse]
 }
 
+object AvailsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotPlaymoviespartnerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Avail]
+    ],
+    list: js.Function1[
+      gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAvailsResponse]
+    ]
+  ): AvailsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AvailsResource]
+  }
+}
+

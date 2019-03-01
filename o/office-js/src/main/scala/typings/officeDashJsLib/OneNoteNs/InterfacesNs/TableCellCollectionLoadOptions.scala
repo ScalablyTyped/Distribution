@@ -58,3 +58,26 @@ trait TableCellCollectionLoadOptions extends js.Object {
   var shadingColor: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableCellCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    cellIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    paragraphs: ParagraphCollectionLoadOptions = null,
+    parentRow: TableRowLoadOptions = null,
+    rowIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    shadingColor: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableCellCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (parentRow != null) __obj.updateDynamic("parentRow")(parentRow)
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex)
+    if (!js.isUndefined(shadingColor)) __obj.updateDynamic("shadingColor")(shadingColor)
+    __obj.asInstanceOf[TableCellCollectionLoadOptions]
+  }
+}
+

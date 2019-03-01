@@ -47,3 +47,31 @@ trait IgVideoPlayerRelatedVideo
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgVideoPlayerRelatedVideo {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgVideoPlayerRelatedVideo
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    css: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    imageUrl: java.lang.String = null,
+    link: java.lang.String = null,
+    sources: js.Array[_] = null,
+    title: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): IgVideoPlayerRelatedVideo = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgVideoPlayerRelatedVideo]
+  }
+}
+

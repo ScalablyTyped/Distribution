@@ -21,3 +21,16 @@ import scala.scalajs.js.annotation._
   var value: js.UndefOr[java.lang.String | js.Array[java.lang.String] | scala.Double] = js.undefined
 }
 
+object CloseButtonProps {
+  @scala.inline
+  def apply(
+    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] = null,
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null
+  ): CloseButtonProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ButtonHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    __obj.asInstanceOf[CloseButtonProps]
+  }
+}
+

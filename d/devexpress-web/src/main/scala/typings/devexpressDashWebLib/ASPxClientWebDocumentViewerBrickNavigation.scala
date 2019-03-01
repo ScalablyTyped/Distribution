@@ -26,3 +26,14 @@ trait ASPxClientWebDocumentViewerBrickNavigation extends js.Object {
   var url: java.lang.String
 }
 
+object ASPxClientWebDocumentViewerBrickNavigation {
+  @scala.inline
+  def apply(drillDownKey: java.lang.String, target: java.lang.String, url: java.lang.String): ASPxClientWebDocumentViewerBrickNavigation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("drillDownKey")(drillDownKey)
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ASPxClientWebDocumentViewerBrickNavigation]
+  }
+}
+

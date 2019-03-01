@@ -19,3 +19,12 @@ trait Anon_CssJs extends js.Object {
   var `js_`: java.lang.String
 }
 
+object Anon_CssJs {
+  @scala.inline
+  def apply(css: java.lang.String, `js_`: java.lang.String): Anon_CssJs = {
+    val __obj = js.Dynamic.literal(`js_` = `js_`)
+    __obj.updateDynamic("css")(css)
+    __obj.asInstanceOf[Anon_CssJs]
+  }
+}
+

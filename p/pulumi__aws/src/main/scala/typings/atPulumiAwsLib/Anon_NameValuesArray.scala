@@ -10,3 +10,16 @@ trait Anon_NameValuesArray extends js.Object {
   var values: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
 }
 
+object Anon_NameValuesArray {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    values: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+  ): Anon_NameValuesArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_NameValuesArray]
+  }
+}
+

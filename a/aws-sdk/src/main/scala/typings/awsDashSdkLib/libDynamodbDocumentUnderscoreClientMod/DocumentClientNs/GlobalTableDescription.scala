@@ -28,3 +28,22 @@ trait GlobalTableDescription extends js.Object {
   var ReplicationGroup: js.UndefOr[ReplicaDescriptionList] = js.undefined
 }
 
+object GlobalTableDescription {
+  @scala.inline
+  def apply(
+    CreationDateTime: _Date = null,
+    GlobalTableArn: GlobalTableArnString = null,
+    GlobalTableName: TableName = null,
+    GlobalTableStatus: GlobalTableStatus = null,
+    ReplicationGroup: ReplicaDescriptionList = null
+  ): GlobalTableDescription = {
+    val __obj = js.Dynamic.literal()
+    if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime)
+    if (GlobalTableArn != null) __obj.updateDynamic("GlobalTableArn")(GlobalTableArn)
+    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName)
+    if (GlobalTableStatus != null) __obj.updateDynamic("GlobalTableStatus")(GlobalTableStatus.asInstanceOf[js.Any])
+    if (ReplicationGroup != null) __obj.updateDynamic("ReplicationGroup")(ReplicationGroup)
+    __obj.asInstanceOf[GlobalTableDescription]
+  }
+}
+

@@ -9,3 +9,12 @@ trait TypingInstallerRequestWithProjectName extends js.Object {
   val projectName: java.lang.String
 }
 
+object TypingInstallerRequestWithProjectName {
+  @scala.inline
+  def apply(projectName: java.lang.String): TypingInstallerRequestWithProjectName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("projectName")(projectName)
+    __obj.asInstanceOf[TypingInstallerRequestWithProjectName]
+  }
+}
+

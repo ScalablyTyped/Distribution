@@ -11,3 +11,18 @@ trait I18nComponentProps extends js.Object {
   def children(hasI18nI18nHash: atLinguiReactLib.Anon_I18n): reactLib.reactMod.ReactNs.ReactNode
 }
 
+object I18nComponentProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[atLinguiReactLib.Anon_I18n, reactLib.reactMod.ReactNs.ReactNode],
+    update: js.UndefOr[scala.Boolean] = js.undefined,
+    withHash: js.UndefOr[scala.Boolean] = js.undefined
+  ): I18nComponentProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
+    if (!js.isUndefined(withHash)) __obj.updateDynamic("withHash")(withHash)
+    __obj.asInstanceOf[I18nComponentProps]
+  }
+}
+

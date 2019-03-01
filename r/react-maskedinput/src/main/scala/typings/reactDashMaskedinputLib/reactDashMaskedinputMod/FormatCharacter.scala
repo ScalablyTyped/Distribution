@@ -10,3 +10,16 @@ trait FormatCharacter extends js.Object {
   def validate(char: java.lang.String): java.lang.String
 }
 
+object FormatCharacter {
+  @scala.inline
+  def apply(
+    validate: js.Function1[java.lang.String, java.lang.String],
+    transform: js.Function1[/* char */ java.lang.String, java.lang.String] = null
+  ): FormatCharacter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("validate")(validate)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[FormatCharacter]
+  }
+}
+

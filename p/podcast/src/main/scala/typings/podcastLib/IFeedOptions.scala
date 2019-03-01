@@ -30,3 +30,56 @@ trait IFeedOptions extends js.Object {
   var webMaster: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IFeedOptions {
+  @scala.inline
+  def apply(
+    author: java.lang.String,
+    feed_url: java.lang.String,
+    site_url: java.lang.String,
+    title: java.lang.String,
+    categories: js.Array[java.lang.String] = null,
+    copyright: java.lang.String = null,
+    description: java.lang.String = null,
+    docs: java.lang.String = null,
+    generator: java.lang.String = null,
+    image_url: java.lang.String = null,
+    itunesAuthor: java.lang.String = null,
+    itunesCategory: IItunesCategory = null,
+    itunesExplicit: js.UndefOr[scala.Boolean] = js.undefined,
+    itunesImage: java.lang.String = null,
+    itunesOwner: IItunesOwner = null,
+    itunesSubtitle: java.lang.String = null,
+    itunesSummary: java.lang.String = null,
+    language: java.lang.String = null,
+    managingEditor: java.lang.String = null,
+    pubDate: stdLib.Date = null,
+    ttl: scala.Int | scala.Double = null,
+    webMaster: java.lang.String = null
+  ): IFeedOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("author")(author)
+    __obj.updateDynamic("feed_url")(feed_url)
+    __obj.updateDynamic("site_url")(site_url)
+    __obj.updateDynamic("title")(title)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (docs != null) __obj.updateDynamic("docs")(docs)
+    if (generator != null) __obj.updateDynamic("generator")(generator)
+    if (image_url != null) __obj.updateDynamic("image_url")(image_url)
+    if (itunesAuthor != null) __obj.updateDynamic("itunesAuthor")(itunesAuthor)
+    if (itunesCategory != null) __obj.updateDynamic("itunesCategory")(itunesCategory)
+    if (!js.isUndefined(itunesExplicit)) __obj.updateDynamic("itunesExplicit")(itunesExplicit)
+    if (itunesImage != null) __obj.updateDynamic("itunesImage")(itunesImage)
+    if (itunesOwner != null) __obj.updateDynamic("itunesOwner")(itunesOwner)
+    if (itunesSubtitle != null) __obj.updateDynamic("itunesSubtitle")(itunesSubtitle)
+    if (itunesSummary != null) __obj.updateDynamic("itunesSummary")(itunesSummary)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (managingEditor != null) __obj.updateDynamic("managingEditor")(managingEditor)
+    if (pubDate != null) __obj.updateDynamic("pubDate")(pubDate)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (webMaster != null) __obj.updateDynamic("webMaster")(webMaster)
+    __obj.asInstanceOf[IFeedOptions]
+  }
+}
+

@@ -13,3 +13,20 @@ trait IModal extends js.Object {
   def toggle(): scala.Unit
 }
 
+object IModal {
+  @scala.inline
+  def apply(
+    $promise: angularLib.angularMod.angularNs.IPromise[scala.Unit],
+    hide: js.Function0[scala.Unit],
+    show: js.Function0[scala.Unit],
+    toggle: js.Function0[scala.Unit]
+  ): IModal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$promise")($promise)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("toggle")(toggle)
+    __obj.asInstanceOf[IModal]
+  }
+}
+

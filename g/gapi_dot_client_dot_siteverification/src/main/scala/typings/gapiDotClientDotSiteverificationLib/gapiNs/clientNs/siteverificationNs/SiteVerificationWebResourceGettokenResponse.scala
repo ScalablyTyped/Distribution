@@ -16,3 +16,13 @@ trait SiteVerificationWebResourceGettokenResponse extends js.Object {
   var token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SiteVerificationWebResourceGettokenResponse {
+  @scala.inline
+  def apply(method: java.lang.String = null, token: java.lang.String = null): SiteVerificationWebResourceGettokenResponse = {
+    val __obj = js.Dynamic.literal()
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[SiteVerificationWebResourceGettokenResponse]
+  }
+}
+

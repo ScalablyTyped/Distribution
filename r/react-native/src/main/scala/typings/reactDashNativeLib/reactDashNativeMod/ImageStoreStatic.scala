@@ -54,3 +54,30 @@ trait ImageStoreStatic extends js.Object {
   def removeImageForTag(uri: java.lang.String): scala.Unit
 }
 
+object ImageStoreStatic {
+  @scala.inline
+  def apply(
+    addImageFromBase64: js.Function3[
+      java.lang.String, 
+      js.Function1[/* uri */ java.lang.String, scala.Unit], 
+      js.Function1[/* error */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    getBase64ForTag: js.Function3[
+      java.lang.String, 
+      js.Function1[/* base64ImageData */ java.lang.String, scala.Unit], 
+      js.Function1[/* error */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    hasImageForTag: js.Function2[java.lang.String, js.Function1[/* hasImage */ scala.Boolean, scala.Unit], scala.Unit],
+    removeImageForTag: js.Function1[java.lang.String, scala.Unit]
+  ): ImageStoreStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addImageFromBase64")(addImageFromBase64)
+    __obj.updateDynamic("getBase64ForTag")(getBase64ForTag)
+    __obj.updateDynamic("hasImageForTag")(hasImageForTag)
+    __obj.updateDynamic("removeImageForTag")(removeImageForTag)
+    __obj.asInstanceOf[ImageStoreStatic]
+  }
+}
+

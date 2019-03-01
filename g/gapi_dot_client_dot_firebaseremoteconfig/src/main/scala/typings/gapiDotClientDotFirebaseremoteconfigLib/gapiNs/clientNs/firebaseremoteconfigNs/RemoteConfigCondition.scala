@@ -28,3 +28,18 @@ trait RemoteConfigCondition extends js.Object {
   var tagColor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RemoteConfigCondition {
+  @scala.inline
+  def apply(
+    expression: java.lang.String = null,
+    name: java.lang.String = null,
+    tagColor: java.lang.String = null
+  ): RemoteConfigCondition = {
+    val __obj = js.Dynamic.literal()
+    if (expression != null) __obj.updateDynamic("expression")(expression)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (tagColor != null) __obj.updateDynamic("tagColor")(tagColor)
+    __obj.asInstanceOf[RemoteConfigCondition]
+  }
+}
+

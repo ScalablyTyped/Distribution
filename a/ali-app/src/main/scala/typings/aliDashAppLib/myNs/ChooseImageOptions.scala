@@ -16,3 +16,22 @@ trait ChooseImageOptions
   def success_MChooseImageOptions(res: aliDashAppLib.Anon_ApFilePaths): scala.Unit
 }
 
+object ChooseImageOptions {
+  @scala.inline
+  def apply(
+    count: scala.Double,
+    sourceType: js.Array[ImageSourceType],
+    success: js.Function1[aliDashAppLib.Anon_ApFilePaths, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): ChooseImageOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("sourceType")(sourceType)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[ChooseImageOptions]
+  }
+}
+

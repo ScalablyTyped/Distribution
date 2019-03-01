@@ -13,3 +13,12 @@ trait FileTaskOptions extends js.Object {
   var async: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FileTaskOptions {
+  @scala.inline
+  def apply(async: js.UndefOr[scala.Boolean] = js.undefined): FileTaskOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    __obj.asInstanceOf[FileTaskOptions]
+  }
+}
+

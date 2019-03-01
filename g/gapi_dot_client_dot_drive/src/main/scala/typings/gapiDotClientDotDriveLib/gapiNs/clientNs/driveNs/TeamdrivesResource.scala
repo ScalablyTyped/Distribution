@@ -18,3 +18,37 @@ trait TeamdrivesResource extends js.Object {
   def update(request: gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive]
 }
 
+object TeamdrivesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtokenPageSize, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TeamDriveList]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TeamDrive]
+    ]
+  ): TeamdrivesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[TeamdrivesResource]
+  }
+}
+

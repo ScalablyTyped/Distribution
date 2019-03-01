@@ -44,3 +44,24 @@ trait Pose extends js.Object {
   var roll: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Pose {
+  @scala.inline
+  def apply(
+    altitude: scala.Int | scala.Double = null,
+    heading: scala.Int | scala.Double = null,
+    latLngPair: LatLng = null,
+    level: Level = null,
+    pitch: scala.Int | scala.Double = null,
+    roll: scala.Int | scala.Double = null
+  ): Pose = {
+    val __obj = js.Dynamic.literal()
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (latLngPair != null) __obj.updateDynamic("latLngPair")(latLngPair)
+    if (level != null) __obj.updateDynamic("level")(level)
+    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (roll != null) __obj.updateDynamic("roll")(roll.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pose]
+  }
+}
+

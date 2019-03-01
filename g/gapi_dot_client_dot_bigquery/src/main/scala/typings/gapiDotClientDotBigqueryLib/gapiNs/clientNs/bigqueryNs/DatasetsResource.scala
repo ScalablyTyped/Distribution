@@ -29,3 +29,42 @@ trait DatasetsResource extends js.Object {
   def update(request: gapiDotClientDotBigqueryLib.Anon_AltDatasetId): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
 }
 
+object DatasetsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AltDatasetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_All, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DatasetList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AltDatasetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ],
+    update: js.Function1[
+      gapiDotClientDotBigqueryLib.Anon_AltDatasetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ]
+  ): DatasetsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[DatasetsResource]
+  }
+}
+

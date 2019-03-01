@@ -22,3 +22,36 @@ trait XDocumentIndex extends XTextContent {
   def update(): scala.Unit
 }
 
+object XDocumentIndex {
+  @scala.inline
+  def apply(
+    Anchor: XTextRange,
+    ServiceName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attach: js.Function1[XTextRange, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getAnchor: js.Function0[XTextRange],
+    getServiceName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    update: js.Function0[scala.Unit]
+  ): XDocumentIndex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Anchor")(Anchor)
+    __obj.updateDynamic("ServiceName")(ServiceName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("attach")(attach)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getAnchor")(getAnchor)
+    __obj.updateDynamic("getServiceName")(getServiceName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[XDocumentIndex]
+  }
+}
+

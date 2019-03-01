@@ -36,3 +36,40 @@ trait Volumeannotation extends js.Object {
   var volumeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Volumeannotation {
+  @scala.inline
+  def apply(
+    annotationDataId: java.lang.String = null,
+    annotationDataLink: java.lang.String = null,
+    annotationType: java.lang.String = null,
+    contentRanges: gapiDotClientDotBooksLib.Anon_CfiRangeContentVersion = null,
+    data: java.lang.String = null,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    layerId: java.lang.String = null,
+    pageIds: js.Array[java.lang.String] = null,
+    selectedText: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    updated: java.lang.String = null,
+    volumeId: java.lang.String = null
+  ): Volumeannotation = {
+    val __obj = js.Dynamic.literal()
+    if (annotationDataId != null) __obj.updateDynamic("annotationDataId")(annotationDataId)
+    if (annotationDataLink != null) __obj.updateDynamic("annotationDataLink")(annotationDataLink)
+    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType)
+    if (contentRanges != null) __obj.updateDynamic("contentRanges")(contentRanges)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId)
+    if (pageIds != null) __obj.updateDynamic("pageIds")(pageIds)
+    if (selectedText != null) __obj.updateDynamic("selectedText")(selectedText)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    __obj.asInstanceOf[Volumeannotation]
+  }
+}
+

@@ -16,3 +16,13 @@ trait TestResultsGroupsForBuild extends js.Object {
   var fields: js.Array[FieldDetailsForTestResults]
 }
 
+object TestResultsGroupsForBuild {
+  @scala.inline
+  def apply(buildId: scala.Double, fields: js.Array[FieldDetailsForTestResults]): TestResultsGroupsForBuild = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildId")(buildId)
+    __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[TestResultsGroupsForBuild]
+  }
+}
+

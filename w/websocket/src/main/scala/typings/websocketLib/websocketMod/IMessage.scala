@@ -11,3 +11,13 @@ trait IMessage extends js.Object {
   var utf8Data: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IMessage {
+  @scala.inline
+  def apply(`type`: java.lang.String, binaryData: nodeLib.Buffer = null, utf8Data: java.lang.String = null): IMessage = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData)
+    if (utf8Data != null) __obj.updateDynamic("utf8Data")(utf8Data)
+    __obj.asInstanceOf[IMessage]
+  }
+}
+

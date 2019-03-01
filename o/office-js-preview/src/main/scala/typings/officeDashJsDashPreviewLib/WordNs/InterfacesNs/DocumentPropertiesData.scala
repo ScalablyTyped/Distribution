@@ -135,3 +135,48 @@ trait DocumentPropertiesData extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DocumentPropertiesData {
+  @scala.inline
+  def apply(
+    applicationName: java.lang.String = null,
+    author: java.lang.String = null,
+    category: java.lang.String = null,
+    comments: java.lang.String = null,
+    company: java.lang.String = null,
+    creationDate: stdLib.Date = null,
+    customProperties: js.Array[CustomPropertyData] = null,
+    format: java.lang.String = null,
+    keywords: java.lang.String = null,
+    lastAuthor: java.lang.String = null,
+    lastPrintDate: stdLib.Date = null,
+    lastSaveTime: stdLib.Date = null,
+    manager: java.lang.String = null,
+    revisionNumber: java.lang.String = null,
+    security: scala.Int | scala.Double = null,
+    subject: java.lang.String = null,
+    template: java.lang.String = null,
+    title: java.lang.String = null
+  ): DocumentPropertiesData = {
+    val __obj = js.Dynamic.literal()
+    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName)
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (company != null) __obj.updateDynamic("company")(company)
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
+    if (customProperties != null) __obj.updateDynamic("customProperties")(customProperties)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
+    if (lastAuthor != null) __obj.updateDynamic("lastAuthor")(lastAuthor)
+    if (lastPrintDate != null) __obj.updateDynamic("lastPrintDate")(lastPrintDate)
+    if (lastSaveTime != null) __obj.updateDynamic("lastSaveTime")(lastSaveTime)
+    if (manager != null) __obj.updateDynamic("manager")(manager)
+    if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber)
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[DocumentPropertiesData]
+  }
+}
+

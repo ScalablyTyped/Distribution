@@ -154,3 +154,134 @@ trait ViewSettings
   var ZoomValue: scala.Double
 }
 
+object ViewSettings {
+  @scala.inline
+  def apply(
+    HideWhitespace: scala.Boolean,
+    HorizontalRulerMetric: scala.Double,
+    IsExecuteHyperlinks: scala.Boolean,
+    IsRasterVisible: scala.Boolean,
+    IsSnapToRaster: scala.Boolean,
+    IsVertRulerRightAligned: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RasterResolutionX: scala.Double,
+    RasterResolutionY: scala.Double,
+    RasterSubdivisionX: scala.Double,
+    RasterSubdivisionY: scala.Double,
+    ShowAnnotations: scala.Boolean,
+    ShowBreaks: scala.Boolean,
+    ShowContentTips: scala.Boolean,
+    ShowDrawings: scala.Boolean,
+    ShowFieldCommands: scala.Boolean,
+    ShowFootnoteBackground: scala.Boolean,
+    ShowGraphics: scala.Boolean,
+    ShowHiddenCharacters: scala.Boolean,
+    ShowHiddenParagraphs: scala.Boolean,
+    ShowHiddenText: scala.Boolean,
+    ShowHoriRuler: scala.Boolean,
+    ShowHoriScrollBar: scala.Boolean,
+    ShowIndexMarkBackground: scala.Boolean,
+    ShowNonprintingCharacters: scala.Boolean,
+    ShowOnlineLayout: scala.Boolean,
+    ShowParaBreaks: scala.Boolean,
+    ShowProtectedSpaces: scala.Boolean,
+    ShowRulers: scala.Boolean,
+    ShowScrollBarTips: scala.Boolean,
+    ShowSoftHyphens: scala.Boolean,
+    ShowSpaces: scala.Boolean,
+    ShowTableBoundaries: scala.Boolean,
+    ShowTables: scala.Boolean,
+    ShowTabstops: scala.Boolean,
+    ShowTextBoundaries: scala.Boolean,
+    ShowTextFieldBackground: scala.Boolean,
+    ShowVertRuler: scala.Boolean,
+    ShowVertScrollBar: scala.Boolean,
+    SmoothScrolling: scala.Boolean,
+    VerticalRulerMetric: scala.Double,
+    ZoomType: scala.Double,
+    ZoomValue: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): ViewSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("HideWhitespace")(HideWhitespace)
+    __obj.updateDynamic("HorizontalRulerMetric")(HorizontalRulerMetric)
+    __obj.updateDynamic("IsExecuteHyperlinks")(IsExecuteHyperlinks)
+    __obj.updateDynamic("IsRasterVisible")(IsRasterVisible)
+    __obj.updateDynamic("IsSnapToRaster")(IsSnapToRaster)
+    __obj.updateDynamic("IsVertRulerRightAligned")(IsVertRulerRightAligned)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RasterResolutionX")(RasterResolutionX)
+    __obj.updateDynamic("RasterResolutionY")(RasterResolutionY)
+    __obj.updateDynamic("RasterSubdivisionX")(RasterSubdivisionX)
+    __obj.updateDynamic("RasterSubdivisionY")(RasterSubdivisionY)
+    __obj.updateDynamic("ShowAnnotations")(ShowAnnotations)
+    __obj.updateDynamic("ShowBreaks")(ShowBreaks)
+    __obj.updateDynamic("ShowContentTips")(ShowContentTips)
+    __obj.updateDynamic("ShowDrawings")(ShowDrawings)
+    __obj.updateDynamic("ShowFieldCommands")(ShowFieldCommands)
+    __obj.updateDynamic("ShowFootnoteBackground")(ShowFootnoteBackground)
+    __obj.updateDynamic("ShowGraphics")(ShowGraphics)
+    __obj.updateDynamic("ShowHiddenCharacters")(ShowHiddenCharacters)
+    __obj.updateDynamic("ShowHiddenParagraphs")(ShowHiddenParagraphs)
+    __obj.updateDynamic("ShowHiddenText")(ShowHiddenText)
+    __obj.updateDynamic("ShowHoriRuler")(ShowHoriRuler)
+    __obj.updateDynamic("ShowHoriScrollBar")(ShowHoriScrollBar)
+    __obj.updateDynamic("ShowIndexMarkBackground")(ShowIndexMarkBackground)
+    __obj.updateDynamic("ShowNonprintingCharacters")(ShowNonprintingCharacters)
+    __obj.updateDynamic("ShowOnlineLayout")(ShowOnlineLayout)
+    __obj.updateDynamic("ShowParaBreaks")(ShowParaBreaks)
+    __obj.updateDynamic("ShowProtectedSpaces")(ShowProtectedSpaces)
+    __obj.updateDynamic("ShowRulers")(ShowRulers)
+    __obj.updateDynamic("ShowScrollBarTips")(ShowScrollBarTips)
+    __obj.updateDynamic("ShowSoftHyphens")(ShowSoftHyphens)
+    __obj.updateDynamic("ShowSpaces")(ShowSpaces)
+    __obj.updateDynamic("ShowTableBoundaries")(ShowTableBoundaries)
+    __obj.updateDynamic("ShowTables")(ShowTables)
+    __obj.updateDynamic("ShowTabstops")(ShowTabstops)
+    __obj.updateDynamic("ShowTextBoundaries")(ShowTextBoundaries)
+    __obj.updateDynamic("ShowTextFieldBackground")(ShowTextFieldBackground)
+    __obj.updateDynamic("ShowVertRuler")(ShowVertRuler)
+    __obj.updateDynamic("ShowVertScrollBar")(ShowVertScrollBar)
+    __obj.updateDynamic("SmoothScrolling")(SmoothScrolling)
+    __obj.updateDynamic("VerticalRulerMetric")(VerticalRulerMetric)
+    __obj.updateDynamic("ZoomType")(ZoomType)
+    __obj.updateDynamic("ZoomValue")(ZoomValue)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[ViewSettings]
+  }
+}
+

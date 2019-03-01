@@ -1,0 +1,106 @@
+package typings
+package arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RenderCamera
+  extends stdLib.Object {
+  /**
+    * The camera target ("look at") position in the internal Cartesian rendering coordinate system.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var center: stdLib.ArrayLike[scala.Double]
+  /**
+    * The position of the camera in the internal Cartesian rendering coordinate system.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var eye: stdLib.ArrayLike[scala.Double]
+  /**
+    * The distance to the far plane.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var far: scala.Double
+  /**
+    * The horizontal field of view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var fovX: scala.Double
+  /**
+    * The vertical field of view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var fovY: scala.Double
+  /**
+    * The distance to the near plane.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var near: scala.Double
+  /**
+    * A 4x4 matrix that defines the perspective projection transformation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var projectionMatrix: stdLib.ArrayLike[scala.Double]
+  /**
+    * The camera up vector.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var up: stdLib.ArrayLike[scala.Double]
+  /**
+    * The inverse transpose of `viewMatrix`, used to transform normals from world space to camera space.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var viewInverseTransposeMatrix: stdLib.ArrayLike[scala.Double]
+  /**
+    * A 4x4 matrix that transforms coordinates from world space to camera space.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#RenderCamera)
+    */
+  var viewMatrix: stdLib.ArrayLike[scala.Double]
+}
+
+object RenderCamera {
+  @scala.inline
+  def apply(
+    center: stdLib.ArrayLike[scala.Double],
+    constructor: js.Function,
+    eye: stdLib.ArrayLike[scala.Double],
+    far: scala.Double,
+    fovX: scala.Double,
+    fovY: scala.Double,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    near: scala.Double,
+    projectionMatrix: stdLib.ArrayLike[scala.Double],
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    up: stdLib.ArrayLike[scala.Double],
+    viewInverseTransposeMatrix: stdLib.ArrayLike[scala.Double],
+    viewMatrix: stdLib.ArrayLike[scala.Double]
+  ): RenderCamera = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("center")(center)
+    __obj.updateDynamic("constructor")(constructor)
+    __obj.updateDynamic("eye")(eye)
+    __obj.updateDynamic("far")(far)
+    __obj.updateDynamic("fovX")(fovX)
+    __obj.updateDynamic("fovY")(fovY)
+    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
+    __obj.updateDynamic("near")(near)
+    __obj.updateDynamic("projectionMatrix")(projectionMatrix)
+    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    __obj.updateDynamic("up")(up)
+    __obj.updateDynamic("viewInverseTransposeMatrix")(viewInverseTransposeMatrix)
+    __obj.updateDynamic("viewMatrix")(viewMatrix)
+    __obj.asInstanceOf[RenderCamera]
+  }
+}
+

@@ -49,3 +49,26 @@ trait Options extends js.Object {
   var sourceMap: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    exclude: java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) = null,
+    extensions: js.Array[java.lang.String] = null,
+    ignore: IgnoreFunction | js.Array[java.lang.String] = null,
+    ignoreGlobal: js.UndefOr[scala.Boolean] = js.undefined,
+    include: java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) = null,
+    namedExports: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null,
+    sourceMap: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreGlobal)) __obj.updateDynamic("ignoreGlobal")(ignoreGlobal)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (namedExports != null) __obj.updateDynamic("namedExports")(namedExports)
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    __obj.asInstanceOf[Options]
+  }
+}
+

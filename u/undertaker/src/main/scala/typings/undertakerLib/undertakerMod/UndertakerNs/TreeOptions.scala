@@ -13,3 +13,12 @@ trait TreeOptions extends js.Object {
   var deep: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TreeOptions {
+  @scala.inline
+  def apply(deep: js.UndefOr[scala.Boolean] = js.undefined): TreeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
+    __obj.asInstanceOf[TreeOptions]
+  }
+}
+

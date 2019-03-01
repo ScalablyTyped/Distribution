@@ -18,3 +18,22 @@ trait IDataBinMetrics extends js.Object {
   var sum: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IDataBinMetrics {
+  @scala.inline
+  def apply(
+    average: scala.Int | scala.Double = null,
+    count: scala.Int | scala.Double = null,
+    countNotBlank: scala.Int | scala.Double = null,
+    countNumbers: scala.Int | scala.Double = null,
+    sum: scala.Int | scala.Double = null
+  ): IDataBinMetrics = {
+    val __obj = js.Dynamic.literal()
+    if (average != null) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (countNotBlank != null) __obj.updateDynamic("countNotBlank")(countNotBlank.asInstanceOf[js.Any])
+    if (countNumbers != null) __obj.updateDynamic("countNumbers")(countNumbers.asInstanceOf[js.Any])
+    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDataBinMetrics]
+  }
+}
+

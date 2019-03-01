@@ -67,3 +67,28 @@ trait ChartPointData extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object ChartPointData {
+  @scala.inline
+  def apply(
+    dataLabel: ChartDataLabelData = null,
+    format: ChartPointFormatData = null,
+    hasDataLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    markerBackgroundColor: java.lang.String = null,
+    markerForegroundColor: java.lang.String = null,
+    markerSize: scala.Int | scala.Double = null,
+    markerStyle: officeDashJsDashPreviewLib.ExcelNs.ChartMarkerStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Square | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.X | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Star | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Circle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Plus | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Picture = null,
+    value: js.Any = null
+  ): ChartPointData = {
+    val __obj = js.Dynamic.literal()
+    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(hasDataLabel)) __obj.updateDynamic("hasDataLabel")(hasDataLabel)
+    if (markerBackgroundColor != null) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor)
+    if (markerForegroundColor != null) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor)
+    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ChartPointData]
+  }
+}
+

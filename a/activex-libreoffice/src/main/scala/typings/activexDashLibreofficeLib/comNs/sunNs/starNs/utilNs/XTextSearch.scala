@@ -19,3 +19,24 @@ trait XTextSearch
   def setOptions(options: SearchOptions): scala.Unit
 }
 
+object XTextSearch {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    searchBackward: js.Function3[java.lang.String, scala.Double, scala.Double, SearchResult],
+    searchForward: js.Function3[java.lang.String, scala.Double, scala.Double, SearchResult],
+    setOptions: js.Function1[SearchOptions, scala.Unit]
+  ): XTextSearch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("searchBackward")(searchBackward)
+    __obj.updateDynamic("searchForward")(searchForward)
+    __obj.updateDynamic("setOptions")(setOptions)
+    __obj.asInstanceOf[XTextSearch]
+  }
+}
+

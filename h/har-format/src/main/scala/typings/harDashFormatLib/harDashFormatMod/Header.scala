@@ -12,3 +12,14 @@ trait Header extends js.Object {
   var value: java.lang.String
 }
 
+object Header {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String, comment: java.lang.String = null): Header = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    __obj.asInstanceOf[Header]
+  }
+}
+

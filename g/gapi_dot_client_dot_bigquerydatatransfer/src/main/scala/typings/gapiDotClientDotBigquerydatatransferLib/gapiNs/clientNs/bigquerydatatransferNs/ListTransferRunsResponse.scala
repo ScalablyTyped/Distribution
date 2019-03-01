@@ -17,3 +17,13 @@ trait ListTransferRunsResponse extends js.Object {
   var transferRuns: js.UndefOr[js.Array[TransferRun]] = js.undefined
 }
 
+object ListTransferRunsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, transferRuns: js.Array[TransferRun] = null): ListTransferRunsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (transferRuns != null) __obj.updateDynamic("transferRuns")(transferRuns)
+    __obj.asInstanceOf[ListTransferRunsResponse]
+  }
+}
+

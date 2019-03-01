@@ -12,3 +12,12 @@ trait GetEventCategoriesArgs extends js.Object {
   val sourceType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetEventCategoriesArgs {
+  @scala.inline
+  def apply(sourceType: java.lang.String = null): GetEventCategoriesArgs = {
+    val __obj = js.Dynamic.literal()
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
+    __obj.asInstanceOf[GetEventCategoriesArgs]
+  }
+}
+

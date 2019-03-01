@@ -12,3 +12,20 @@ trait IBitmapCodecInformation extends js.Object {
   var mimeTypes: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String]
 }
 
+object IBitmapCodecInformation {
+  @scala.inline
+  def apply(
+    codecId: java.lang.String,
+    fileExtensions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
+    friendlyName: java.lang.String,
+    mimeTypes: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String]
+  ): IBitmapCodecInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("codecId")(codecId)
+    __obj.updateDynamic("fileExtensions")(fileExtensions)
+    __obj.updateDynamic("friendlyName")(friendlyName)
+    __obj.updateDynamic("mimeTypes")(mimeTypes)
+    __obj.asInstanceOf[IBitmapCodecInformation]
+  }
+}
+

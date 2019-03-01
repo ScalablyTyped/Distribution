@@ -12,3 +12,13 @@ trait Anon_IsReliable extends js.Object {
   var languages: js.Array[Anon_Language]
 }
 
+object Anon_IsReliable {
+  @scala.inline
+  def apply(isReliable: scala.Boolean, languages: js.Array[Anon_Language]): Anon_IsReliable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isReliable")(isReliable)
+    __obj.updateDynamic("languages")(languages)
+    __obj.asInstanceOf[Anon_IsReliable]
+  }
+}
+

@@ -18,3 +18,22 @@ trait BagDescriptor extends js.Object {
   var subcode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BagDescriptor {
+  @scala.inline
+  def apply(
+    commercialName: java.lang.String = null,
+    count: scala.Int | scala.Double = null,
+    description: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    subcode: java.lang.String = null
+  ): BagDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (commercialName != null) __obj.updateDynamic("commercialName")(commercialName)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (subcode != null) __obj.updateDynamic("subcode")(subcode)
+    __obj.asInstanceOf[BagDescriptor]
+  }
+}
+

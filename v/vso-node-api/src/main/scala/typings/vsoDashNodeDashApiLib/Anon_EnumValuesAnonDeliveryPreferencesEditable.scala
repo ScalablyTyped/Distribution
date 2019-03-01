@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonDeliveryPreferencesEditable extends js.Object {
   var enumValues: Anon_DeliveryPreferencesEditable
 }
 
+object Anon_EnumValuesAnonDeliveryPreferencesEditable {
+  @scala.inline
+  def apply(enumValues: Anon_DeliveryPreferencesEditable): Anon_EnumValuesAnonDeliveryPreferencesEditable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonDeliveryPreferencesEditable]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Anon_BucketNameBucketPrefix extends js.Object {
   var sourceEngineVersion: java.lang.String
 }
 
+object Anon_BucketNameBucketPrefix {
+  @scala.inline
+  def apply(
+    bucketName: java.lang.String,
+    ingestionRole: java.lang.String,
+    sourceEngine: java.lang.String,
+    sourceEngineVersion: java.lang.String,
+    bucketPrefix: java.lang.String = null
+  ): Anon_BucketNameBucketPrefix = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucketName")(bucketName)
+    __obj.updateDynamic("ingestionRole")(ingestionRole)
+    __obj.updateDynamic("sourceEngine")(sourceEngine)
+    __obj.updateDynamic("sourceEngineVersion")(sourceEngineVersion)
+    if (bucketPrefix != null) __obj.updateDynamic("bucketPrefix")(bucketPrefix)
+    __obj.asInstanceOf[Anon_BucketNameBucketPrefix]
+  }
+}
+

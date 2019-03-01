@@ -12,3 +12,12 @@ trait ColumnResizeSettings extends js.Object {
   var columnResizeMode: js.UndefOr[ColumnResizeMode | java.lang.String] = js.undefined
 }
 
+object ColumnResizeSettings {
+  @scala.inline
+  def apply(columnResizeMode: ColumnResizeMode | java.lang.String = null): ColumnResizeSettings = {
+    val __obj = js.Dynamic.literal()
+    if (columnResizeMode != null) __obj.updateDynamic("columnResizeMode")(columnResizeMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnResizeSettings]
+  }
+}
+

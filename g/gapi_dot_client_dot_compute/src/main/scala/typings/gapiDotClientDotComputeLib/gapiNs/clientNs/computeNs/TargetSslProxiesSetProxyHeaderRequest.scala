@@ -10,3 +10,12 @@ trait TargetSslProxiesSetProxyHeaderRequest extends js.Object {
   var proxyHeader: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TargetSslProxiesSetProxyHeaderRequest {
+  @scala.inline
+  def apply(proxyHeader: java.lang.String = null): TargetSslProxiesSetProxyHeaderRequest = {
+    val __obj = js.Dynamic.literal()
+    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader)
+    __obj.asInstanceOf[TargetSslProxiesSetProxyHeaderRequest]
+  }
+}
+

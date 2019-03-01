@@ -32,3 +32,26 @@ trait RestoreOptions extends LoggingOptions {
   var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 
+object RestoreOptions {
+  @scala.inline
+  def apply(
+    benchmark: js.UndefOr[scala.Boolean] = js.undefined,
+    hooks: js.UndefOr[scala.Boolean] = js.undefined,
+    individualHooks: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null,
+    logging: scala.Boolean | js.Function = null,
+    transaction: Transaction = null,
+    where: AnyWhereOptions = null
+  ): RestoreOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
+    if (!js.isUndefined(individualHooks)) __obj.updateDynamic("individualHooks")(individualHooks)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[RestoreOptions]
+  }
+}
+

@@ -12,3 +12,12 @@ trait NativeEventSubscription extends js.Object {
   def remove(): scala.Unit
 }
 
+object NativeEventSubscription {
+  @scala.inline
+  def apply(remove: js.Function0[scala.Unit]): NativeEventSubscription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[NativeEventSubscription]
+  }
+}
+

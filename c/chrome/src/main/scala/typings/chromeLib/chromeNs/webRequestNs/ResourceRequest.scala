@@ -27,3 +27,27 @@ trait ResourceRequest extends js.Object {
   var url: java.lang.String
 }
 
+object ResourceRequest {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    parentFrameId: scala.Double,
+    requestId: java.lang.String,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    `type`: ResourceType,
+    url: java.lang.String,
+    initiator: java.lang.String = null
+  ): ResourceRequest = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("frameId")(frameId)
+    __obj.updateDynamic("parentFrameId")(parentFrameId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("url")(url)
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
+    __obj.asInstanceOf[ResourceRequest]
+  }
+}
+

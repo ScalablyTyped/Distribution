@@ -9,3 +9,12 @@ trait NodeModule extends js.Object {
   var context: arangodbLib.FoxxNs.Context
 }
 
+object NodeModule {
+  @scala.inline
+  def apply(context: arangodbLib.FoxxNs.Context): NodeModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.asInstanceOf[NodeModule]
+  }
+}
+

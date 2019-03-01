@@ -44,11 +44,12 @@ object ErrorNs extends js.Object {
     var moreInfo: java.lang.String
   }
   
+  trait BacklogErrorNameType extends js.Object
+  
   @js.native
   class UnexpectedError protected () extends BacklogError {
     def this(response: stdLib.Response) = this()
   }
   
-  type BacklogErrorNameType = backlogDashJsLib.backlogDashJsLibStrings.BacklogApiError | backlogDashJsLib.backlogDashJsLibStrings.BacklogAuthError | backlogDashJsLib.backlogDashJsLibStrings.UnexpectedError
 }
 

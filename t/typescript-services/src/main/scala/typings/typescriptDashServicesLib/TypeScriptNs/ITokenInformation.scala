@@ -10,3 +10,13 @@ trait ITokenInformation extends js.Object {
   var previousToken: ISyntaxToken
 }
 
+object ITokenInformation {
+  @scala.inline
+  def apply(nextToken: ISyntaxToken, previousToken: ISyntaxToken): ITokenInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nextToken")(nextToken)
+    __obj.updateDynamic("previousToken")(previousToken)
+    __obj.asInstanceOf[ITokenInformation]
+  }
+}
+

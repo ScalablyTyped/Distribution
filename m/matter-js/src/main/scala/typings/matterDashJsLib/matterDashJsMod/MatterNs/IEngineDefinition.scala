@@ -68,3 +68,26 @@ trait IEngineDefinition extends js.Object {
   var world: js.UndefOr[World] = js.undefined
 }
 
+object IEngineDefinition {
+  @scala.inline
+  def apply(
+    constraintIterations: scala.Int | scala.Double = null,
+    enableSleeping: js.UndefOr[scala.Boolean] = js.undefined,
+    grid: Grid = null,
+    positionIterations: scala.Int | scala.Double = null,
+    timing: IEngineTimingOptions = null,
+    velocityIterations: scala.Int | scala.Double = null,
+    world: World = null
+  ): IEngineDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (constraintIterations != null) __obj.updateDynamic("constraintIterations")(constraintIterations.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSleeping)) __obj.updateDynamic("enableSleeping")(enableSleeping)
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (positionIterations != null) __obj.updateDynamic("positionIterations")(positionIterations.asInstanceOf[js.Any])
+    if (timing != null) __obj.updateDynamic("timing")(timing)
+    if (velocityIterations != null) __obj.updateDynamic("velocityIterations")(velocityIterations.asInstanceOf[js.Any])
+    if (world != null) __obj.updateDynamic("world")(world)
+    __obj.asInstanceOf[IEngineDefinition]
+  }
+}
+

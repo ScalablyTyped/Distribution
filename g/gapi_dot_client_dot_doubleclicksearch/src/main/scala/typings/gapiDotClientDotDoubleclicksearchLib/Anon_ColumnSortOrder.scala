@@ -14,3 +14,16 @@ trait Anon_ColumnSortOrder extends js.Object {
   var sortOrder: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ColumnSortOrder {
+  @scala.inline
+  def apply(
+    column: gapiDotClientDotDoubleclicksearchLib.gapiNs.clientNs.doubleclicksearchNs.ReportApiColumnSpec = null,
+    sortOrder: java.lang.String = null
+  ): Anon_ColumnSortOrder = {
+    val __obj = js.Dynamic.literal()
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    __obj.asInstanceOf[Anon_ColumnSortOrder]
+  }
+}
+

@@ -16,3 +16,20 @@ trait BackupConfiguration extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BackupConfiguration {
+  @scala.inline
+  def apply(
+    binaryLogEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    startTime: java.lang.String = null
+  ): BackupConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(binaryLogEnabled)) __obj.updateDynamic("binaryLogEnabled")(binaryLogEnabled)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[BackupConfiguration]
+  }
+}
+

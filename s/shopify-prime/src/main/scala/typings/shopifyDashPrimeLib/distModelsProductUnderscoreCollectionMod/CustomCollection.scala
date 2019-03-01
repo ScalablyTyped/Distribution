@@ -35,3 +35,40 @@ trait CustomCollection extends ProductCollection {
   var published: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CustomCollection {
+  @scala.inline
+  def apply(
+    collects: js.Array[shopifyDashPrimeLib.Anon_Id],
+    admin_graphql_api_id: java.lang.String = null,
+    body_html: java.lang.String = null,
+    handle: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    image: shopifyDashPrimeLib.Anon_Attachment = null,
+    metafield: java.lang.String = null,
+    published: js.UndefOr[scala.Boolean] = js.undefined,
+    published_at: java.lang.String = null,
+    published_scope: java.lang.String = null,
+    sort_order: java.lang.String = null,
+    template_suffix: java.lang.String = null,
+    title: java.lang.String = null,
+    updated_at: java.lang.String = null
+  ): CustomCollection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collects")(collects)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (body_html != null) __obj.updateDynamic("body_html")(body_html)
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (metafield != null) __obj.updateDynamic("metafield")(metafield)
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published)
+    if (published_at != null) __obj.updateDynamic("published_at")(published_at)
+    if (published_scope != null) __obj.updateDynamic("published_scope")(published_scope)
+    if (sort_order != null) __obj.updateDynamic("sort_order")(sort_order)
+    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[CustomCollection]
+  }
+}
+

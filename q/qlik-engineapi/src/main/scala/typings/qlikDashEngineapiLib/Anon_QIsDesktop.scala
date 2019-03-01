@@ -10,3 +10,13 @@ trait Anon_QIsDesktop extends js.Object {
   var qSSOEnabled: scala.Boolean
 }
 
+object Anon_QIsDesktop {
+  @scala.inline
+  def apply(qIsDesktop: scala.Boolean, qSSOEnabled: scala.Boolean): Anon_QIsDesktop = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qIsDesktop")(qIsDesktop)
+    __obj.updateDynamic("qSSOEnabled")(qSSOEnabled)
+    __obj.asInstanceOf[Anon_QIsDesktop]
+  }
+}
+

@@ -13,3 +13,13 @@ trait Anon_ParameterName extends js.Object {
   var parameterName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ParameterName {
+  @scala.inline
+  def apply($ref: java.lang.String = null, parameterName: java.lang.String = null): Anon_ParameterName = {
+    val __obj = js.Dynamic.literal()
+    if ($ref != null) __obj.updateDynamic("$ref")($ref)
+    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName)
+    __obj.asInstanceOf[Anon_ParameterName]
+  }
+}
+

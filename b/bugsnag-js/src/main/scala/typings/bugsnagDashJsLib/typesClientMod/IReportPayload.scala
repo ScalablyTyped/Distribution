@@ -11,3 +11,18 @@ trait IReportPayload extends js.Object {
   var notifier: bugsnagDashJsLib.Anon_Name
 }
 
+object IReportPayload {
+  @scala.inline
+  def apply(
+    apiKey: java.lang.String,
+    events: js.Array[bugsnagDashJsLib.typesReportMod.default],
+    notifier: bugsnagDashJsLib.Anon_Name
+  ): IReportPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiKey")(apiKey)
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("notifier")(notifier)
+    __obj.asInstanceOf[IReportPayload]
+  }
+}
+

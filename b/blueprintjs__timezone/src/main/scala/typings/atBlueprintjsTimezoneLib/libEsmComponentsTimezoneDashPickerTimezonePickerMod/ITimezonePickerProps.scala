@@ -69,3 +69,34 @@ trait ITimezonePickerProps
   def onChange(timezone: java.lang.String): scala.Unit
 }
 
+object ITimezonePickerProps {
+  @scala.inline
+  def apply(
+    onChange: js.Function1[java.lang.String, scala.Unit],
+    buttonProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps] = null,
+    className: java.lang.String = null,
+    date: stdLib.Date = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    inputProps: atBlueprintjsCoreLib.libEsmComponentsFormsInputGroupMod.IInputGroupProps with atBlueprintjsCoreLib.libEsmCommonPropsMod.HTMLInputProps = null,
+    placeholder: java.lang.String = null,
+    popoverProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = null,
+    showLocalTimezone: js.UndefOr[scala.Boolean] = js.undefined,
+    value: java.lang.String = null,
+    valueDisplayFormat: atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat = null
+  ): ITimezonePickerProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onChange")(onChange)
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps)
+    if (!js.isUndefined(showLocalTimezone)) __obj.updateDynamic("showLocalTimezone")(showLocalTimezone)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (valueDisplayFormat != null) __obj.updateDynamic("valueDisplayFormat")(valueDisplayFormat)
+    __obj.asInstanceOf[ITimezonePickerProps]
+  }
+}
+

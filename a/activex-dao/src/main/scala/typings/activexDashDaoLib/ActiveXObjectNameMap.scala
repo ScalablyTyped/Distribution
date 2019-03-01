@@ -17,3 +17,22 @@ trait ActiveXObjectNameMap extends js.Object {
   var `DAO.User`: activexDashDaoLib.DAONs.User
 }
 
+object ActiveXObjectNameMap {
+  @scala.inline
+  def apply(
+    `DAO.DBEngine`: activexDashDaoLib.DAONs.DBEngine,
+    `DAO.Field`: activexDashDaoLib.DAONs.Field,
+    `DAO.Group`: activexDashDaoLib.DAONs.Group,
+    `DAO.Index`: activexDashDaoLib.DAONs.Index,
+    `DAO.PrivateDBEngine`: activexDashDaoLib.DAONs.DBEngine,
+    `DAO.QueryDef`: activexDashDaoLib.DAONs.QueryDef,
+    `DAO.Relation`: activexDashDaoLib.DAONs.Relation,
+    `DAO.TableDef`: activexDashDaoLib.DAONs.TableDef,
+    `DAO.User`: activexDashDaoLib.DAONs.User
+  ): ActiveXObjectNameMap = {
+    val __obj = js.Dynamic.literal(`DAO.DBEngine` = `DAO.DBEngine`, `DAO.Field` = `DAO.Field`, `DAO.Group` = `DAO.Group`, `DAO.Index` = `DAO.Index`, `DAO.PrivateDBEngine` = `DAO.PrivateDBEngine`, `DAO.QueryDef` = `DAO.QueryDef`, `DAO.Relation` = `DAO.Relation`, `DAO.TableDef` = `DAO.TableDef`, `DAO.User` = `DAO.User`)
+  
+    __obj.asInstanceOf[ActiveXObjectNameMap]
+  }
+}
+

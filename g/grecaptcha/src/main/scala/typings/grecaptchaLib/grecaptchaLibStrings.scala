@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object grecaptchaLibStrings {
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait audio
+    extends grecaptchaLib.ReCaptchaV2Ns.Type
   
   @js.native
-  sealed trait bottomleft extends js.Object
+  sealed trait bottomleft
+    extends grecaptchaLib.ReCaptchaV2Ns.Badge
   
   @js.native
-  sealed trait bottomright extends js.Object
+  sealed trait bottomright
+    extends grecaptchaLib.ReCaptchaV2Ns.Badge
   
   @js.native
-  sealed trait compact extends js.Object
+  sealed trait compact
+    extends grecaptchaLib.ReCaptchaV2Ns.Size
   
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait dark
+    extends grecaptchaLib.ReCaptchaV2Ns.Theme
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends grecaptchaLib.ReCaptchaV2Ns.Type
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait `inline`
+    extends grecaptchaLib.ReCaptchaV2Ns.Badge
   
   @js.native
-  sealed trait invisible extends js.Object
+  sealed trait invisible
+    extends grecaptchaLib.ReCaptchaV2Ns.Size
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light
+    extends grecaptchaLib.ReCaptchaV2Ns.Theme
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends grecaptchaLib.ReCaptchaV2Ns.Size
   
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]

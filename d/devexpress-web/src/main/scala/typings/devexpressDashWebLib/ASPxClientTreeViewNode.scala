@@ -121,3 +121,60 @@ trait ASPxClientTreeViewNode extends js.Object {
   def SetVisible(value: scala.Boolean): scala.Unit
 }
 
+object ASPxClientTreeViewNode {
+  @scala.inline
+  def apply(
+    GetCheckState: js.Function0[java.lang.String],
+    GetChecked: js.Function0[scala.Boolean],
+    GetEnabled: js.Function0[scala.Boolean],
+    GetExpanded: js.Function0[scala.Boolean],
+    GetHtmlElement: js.Function0[js.Object],
+    GetImageUrl: js.Function0[java.lang.String],
+    GetNavigateUrl: js.Function0[java.lang.String],
+    GetNode: js.Function1[scala.Double, ASPxClientTreeViewNode],
+    GetNodeByName: js.Function1[java.lang.String, ASPxClientTreeViewNode],
+    GetNodeByText: js.Function1[java.lang.String, ASPxClientTreeViewNode],
+    GetNodeCount: js.Function0[scala.Double],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetChecked: js.Function1[scala.Boolean, scala.Unit],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetExpanded: js.Function1[scala.Boolean, scala.Unit],
+    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    index: scala.Double,
+    name: java.lang.String,
+    parent: ASPxClientTreeViewNode,
+    treeView: ASPxClientTreeView
+  ): ASPxClientTreeViewNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetCheckState")(GetCheckState)
+    __obj.updateDynamic("GetChecked")(GetChecked)
+    __obj.updateDynamic("GetEnabled")(GetEnabled)
+    __obj.updateDynamic("GetExpanded")(GetExpanded)
+    __obj.updateDynamic("GetHtmlElement")(GetHtmlElement)
+    __obj.updateDynamic("GetImageUrl")(GetImageUrl)
+    __obj.updateDynamic("GetNavigateUrl")(GetNavigateUrl)
+    __obj.updateDynamic("GetNode")(GetNode)
+    __obj.updateDynamic("GetNodeByName")(GetNodeByName)
+    __obj.updateDynamic("GetNodeByText")(GetNodeByText)
+    __obj.updateDynamic("GetNodeCount")(GetNodeCount)
+    __obj.updateDynamic("GetText")(GetText)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("SetChecked")(SetChecked)
+    __obj.updateDynamic("SetEnabled")(SetEnabled)
+    __obj.updateDynamic("SetExpanded")(SetExpanded)
+    __obj.updateDynamic("SetImageUrl")(SetImageUrl)
+    __obj.updateDynamic("SetNavigateUrl")(SetNavigateUrl)
+    __obj.updateDynamic("SetText")(SetText)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("treeView")(treeView)
+    __obj.asInstanceOf[ASPxClientTreeViewNode]
+  }
+}
+

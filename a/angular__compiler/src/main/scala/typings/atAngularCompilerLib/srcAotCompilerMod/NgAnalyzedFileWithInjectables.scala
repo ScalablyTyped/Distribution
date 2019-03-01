@@ -13,3 +13,20 @@ trait NgAnalyzedFileWithInjectables extends js.Object {
   ]
 }
 
+object NgAnalyzedFileWithInjectables {
+  @scala.inline
+  def apply(
+    fileName: java.lang.String,
+    injectables: js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileInjectableMetadata],
+    shallowModules: js.Array[
+      atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileShallowModuleMetadata
+    ]
+  ): NgAnalyzedFileWithInjectables = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("injectables")(injectables)
+    __obj.updateDynamic("shallowModules")(shallowModules)
+    __obj.asInstanceOf[NgAnalyzedFileWithInjectables]
+  }
+}
+

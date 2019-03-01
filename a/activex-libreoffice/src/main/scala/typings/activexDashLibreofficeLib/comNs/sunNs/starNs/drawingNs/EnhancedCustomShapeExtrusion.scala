@@ -67,3 +67,58 @@ trait EnhancedCustomShapeExtrusion extends js.Object {
   var ViewPoint: Position3D
 }
 
+object EnhancedCustomShapeExtrusion {
+  @scala.inline
+  def apply(
+    Brightness: scala.Double,
+    Depth: EnhancedCustomShapeParameterPair,
+    Diffusion: scala.Double,
+    Extrusion: scala.Boolean,
+    ExtrusionColor: scala.Boolean,
+    FirstLightDirection: Direction3D,
+    FirstLightHarsh: scala.Boolean,
+    FirstLightLevel: scala.Double,
+    LightFace: scala.Boolean,
+    Metal: scala.Boolean,
+    NumberOfLineSegments: scala.Double,
+    Origin: EnhancedCustomShapeParameterPair,
+    ProjectionMode: ProjectionMode,
+    RotateAngle: EnhancedCustomShapeParameterPair,
+    RotationCenter: Direction3D,
+    SecondLightDirection: Direction3D,
+    SecondLightHarsh: scala.Boolean,
+    SecondLightLevel: scala.Double,
+    ShadeMode: ShadeMode,
+    Shininess: scala.Double,
+    Skew: EnhancedCustomShapeParameterPair,
+    Specularity: scala.Double,
+    ViewPoint: Position3D
+  ): EnhancedCustomShapeExtrusion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Brightness")(Brightness)
+    __obj.updateDynamic("Depth")(Depth)
+    __obj.updateDynamic("Diffusion")(Diffusion)
+    __obj.updateDynamic("Extrusion")(Extrusion)
+    __obj.updateDynamic("ExtrusionColor")(ExtrusionColor)
+    __obj.updateDynamic("FirstLightDirection")(FirstLightDirection)
+    __obj.updateDynamic("FirstLightHarsh")(FirstLightHarsh)
+    __obj.updateDynamic("FirstLightLevel")(FirstLightLevel)
+    __obj.updateDynamic("LightFace")(LightFace)
+    __obj.updateDynamic("Metal")(Metal)
+    __obj.updateDynamic("NumberOfLineSegments")(NumberOfLineSegments)
+    __obj.updateDynamic("Origin")(Origin)
+    __obj.updateDynamic("ProjectionMode")(ProjectionMode)
+    __obj.updateDynamic("RotateAngle")(RotateAngle)
+    __obj.updateDynamic("RotationCenter")(RotationCenter)
+    __obj.updateDynamic("SecondLightDirection")(SecondLightDirection)
+    __obj.updateDynamic("SecondLightHarsh")(SecondLightHarsh)
+    __obj.updateDynamic("SecondLightLevel")(SecondLightLevel)
+    __obj.updateDynamic("ShadeMode")(ShadeMode)
+    __obj.updateDynamic("Shininess")(Shininess)
+    __obj.updateDynamic("Skew")(Skew)
+    __obj.updateDynamic("Specularity")(Specularity)
+    __obj.updateDynamic("ViewPoint")(ViewPoint)
+    __obj.asInstanceOf[EnhancedCustomShapeExtrusion]
+  }
+}
+

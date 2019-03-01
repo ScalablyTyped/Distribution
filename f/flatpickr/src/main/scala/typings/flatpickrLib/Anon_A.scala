@@ -45,11 +45,11 @@ trait Anon_A extends js.Object {
     handler: js.Function1[/* e */ js.UndefOr[js.Any], scala.Unit]
   ): scala.Unit = js.native
   def _createElement[E /* <: stdLib.HTMLElement */](
-    tag: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ java.lang.String,
+    tag: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any,
     className: java.lang.String
   ): E = js.native
   def _createElement[E /* <: stdLib.HTMLElement */](
-    tag: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ java.lang.String,
+    tag: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any,
     className: java.lang.String,
     content: java.lang.String
   ): E = js.native

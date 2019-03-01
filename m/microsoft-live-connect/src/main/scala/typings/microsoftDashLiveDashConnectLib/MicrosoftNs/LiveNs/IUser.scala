@@ -76,3 +76,42 @@ trait IUser extends js.Object {
   var work: js.Array[IWorkInfo]
 }
 
+object IUser {
+  @scala.inline
+  def apply(
+    addresses: microsoftDashLiveDashConnectLib.Anon_BusinessPersonal,
+    birth_day: scala.Double,
+    birth_month: scala.Double,
+    birth_year: scala.Double,
+    emails: microsoftDashLiveDashConnectLib.Anon_Account,
+    first_name: java.lang.String,
+    gender: java.lang.String,
+    id: java.lang.String,
+    last_name: java.lang.String,
+    link: java.lang.String,
+    locale: java.lang.String,
+    name: java.lang.String,
+    phones: microsoftDashLiveDashConnectLib.Anon_BusinessMobile,
+    updated_time: java.lang.String,
+    work: js.Array[IWorkInfo]
+  ): IUser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addresses")(addresses)
+    __obj.updateDynamic("birth_day")(birth_day)
+    __obj.updateDynamic("birth_month")(birth_month)
+    __obj.updateDynamic("birth_year")(birth_year)
+    __obj.updateDynamic("emails")(emails)
+    __obj.updateDynamic("first_name")(first_name)
+    __obj.updateDynamic("gender")(gender)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("last_name")(last_name)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("locale")(locale)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("phones")(phones)
+    __obj.updateDynamic("updated_time")(updated_time)
+    __obj.updateDynamic("work")(work)
+    __obj.asInstanceOf[IUser]
+  }
+}
+

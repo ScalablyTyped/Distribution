@@ -21,3 +21,41 @@ trait StateT[M] extends js.Object {
   def of[S, A](a: A): js.Function1[/* s */ S, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[A, S]]]
 }
 
+object StateT {
+  @scala.inline
+  def apply[M](
+    ap: js.Function2[
+      js.Function1[
+        js.Any, 
+        fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Function1[js.Any, js.Any], js.Any]]
+      ], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Any, js.Any]]], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Any, js.Any]]]
+    ],
+    chain: js.Function2[
+      js.Function1[
+        js.Any, 
+        js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Any, js.Any]]]
+      ], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Any, js.Any]]], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Any, js.Any]]]
+    ],
+    map: js.Function2[
+      js.Function1[js.Any, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Any, js.Any]]], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Any, js.Any]]]
+    ],
+    of: js.Function1[
+      js.Any, 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Any, js.Any]]]
+    ]
+  ): StateT[M] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ap")(ap)
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("of")(of)
+    __obj.asInstanceOf[StateT[M]]
+  }
+}
+

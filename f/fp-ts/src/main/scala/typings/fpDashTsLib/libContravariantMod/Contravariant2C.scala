@@ -11,3 +11,22 @@ trait Contravariant2C[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L] extends js.Obje
   def contramap[A, B](fa: fpDashTsLib.libHKTMod.Type2[F, L, A], f: js.Function1[/* b */ B, A]): fpDashTsLib.libHKTMod.Type2[F, L, B]
 }
 
+object Contravariant2C {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](
+    URI: F,
+    _L: L,
+    contramap: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, L, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
+    ]
+  ): Contravariant2C[F, L] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
+    __obj.updateDynamic("contramap")(contramap)
+    __obj.asInstanceOf[Contravariant2C[F, L]]
+  }
+}
+

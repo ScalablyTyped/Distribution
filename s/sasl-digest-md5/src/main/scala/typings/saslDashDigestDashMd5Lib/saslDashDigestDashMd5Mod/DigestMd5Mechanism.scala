@@ -13,3 +13,23 @@ trait DigestMd5Mechanism
   def response(cred: saslDashDigestDashMd5Lib.saslDashDigestDashMd5Mod.DigestMd5MechanismNs.Credentials): java.lang.String
 }
 
+object DigestMd5Mechanism {
+  @scala.inline
+  def apply(
+    challenge: js.Function1[java.lang.String, DigestMd5Mechanism],
+    clientFirst: saslDashDigestDashMd5Lib.saslDashDigestDashMd5LibNumbers.`false`,
+    name: saslDashDigestDashMd5Lib.saslDashDigestDashMd5LibStrings.`DIGEST-MD5`,
+    response: js.Function1[
+      saslDashDigestDashMd5Lib.saslDashDigestDashMd5Mod.DigestMd5MechanismNs.Credentials, 
+      java.lang.String
+    ]
+  ): DigestMd5Mechanism = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("challenge")(challenge)
+    __obj.updateDynamic("clientFirst")(clientFirst)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[DigestMd5Mechanism]
+  }
+}
+

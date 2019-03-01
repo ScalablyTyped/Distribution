@@ -19,3 +19,28 @@ trait Token
   var user: User
 }
 
+object Token {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    client: Client,
+    user: User,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    accessTokenExpiresAt: stdLib.Date = null,
+    refreshToken: java.lang.String = null,
+    refreshTokenExpiresAt: stdLib.Date = null,
+    scope: java.lang.String | js.Array[java.lang.String] = null
+  ): Token = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessToken")(accessToken)
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("user")(user)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (accessTokenExpiresAt != null) __obj.updateDynamic("accessTokenExpiresAt")(accessTokenExpiresAt)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (refreshTokenExpiresAt != null) __obj.updateDynamic("refreshTokenExpiresAt")(refreshTokenExpiresAt)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Token]
+  }
+}
+

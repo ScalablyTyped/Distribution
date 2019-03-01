@@ -67,3 +67,48 @@ trait DisplayInfo extends js.Object {
   var workArea: Bounds
 }
 
+object DisplayInfo {
+  @scala.inline
+  def apply(
+    availableDisplayZoomFactors: js.Array[scala.Double],
+    bounds: Bounds,
+    displayZoomFactor: scala.Double,
+    dpiX: scala.Double,
+    dpiY: scala.Double,
+    hasTouchSupport: scala.Boolean,
+    id: java.lang.String,
+    isEnabled: scala.Boolean,
+    isInternal: scala.Boolean,
+    isPrimary: scala.Boolean,
+    mirroringDestinationIds: js.Array[java.lang.String],
+    mirroringSourceId: java.lang.String,
+    modes: js.Array[DisplayMode],
+    name: java.lang.String,
+    overscan: Insets,
+    rotation: scala.Double,
+    workArea: Bounds,
+    edid: chromeLib.Anon_ManufacturerId = null
+  ): DisplayInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("availableDisplayZoomFactors")(availableDisplayZoomFactors)
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("displayZoomFactor")(displayZoomFactor)
+    __obj.updateDynamic("dpiX")(dpiX)
+    __obj.updateDynamic("dpiY")(dpiY)
+    __obj.updateDynamic("hasTouchSupport")(hasTouchSupport)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isEnabled")(isEnabled)
+    __obj.updateDynamic("isInternal")(isInternal)
+    __obj.updateDynamic("isPrimary")(isPrimary)
+    __obj.updateDynamic("mirroringDestinationIds")(mirroringDestinationIds)
+    __obj.updateDynamic("mirroringSourceId")(mirroringSourceId)
+    __obj.updateDynamic("modes")(modes)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("overscan")(overscan)
+    __obj.updateDynamic("rotation")(rotation)
+    __obj.updateDynamic("workArea")(workArea)
+    if (edid != null) __obj.updateDynamic("edid")(edid)
+    __obj.asInstanceOf[DisplayInfo]
+  }
+}
+

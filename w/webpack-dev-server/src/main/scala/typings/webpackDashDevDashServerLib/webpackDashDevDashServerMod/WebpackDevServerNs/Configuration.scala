@@ -122,3 +122,86 @@ trait Configuration extends js.Object {
   var writeToDisk: js.UndefOr[scala.Boolean | (js.Function1[/* filePath */ java.lang.String, scala.Boolean])] = js.undefined
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    after: js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit] = null,
+    allowedHosts: js.Array[java.lang.String] = null,
+    before: js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit] = null,
+    bonjour: js.UndefOr[scala.Boolean] = js.undefined,
+    clientLogLevel: webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.none | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.error | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.warning | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.info = null,
+    compress: js.UndefOr[scala.Boolean] = js.undefined,
+    contentBase: scala.Boolean | java.lang.String | js.Array[java.lang.String] = null,
+    disableHostCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    filename: java.lang.String = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    historyApiFallback: scala.Boolean | HistoryApiFallbackConfig = null,
+    host: java.lang.String = null,
+    hot: js.UndefOr[scala.Boolean] = js.undefined,
+    hotOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    https: scala.Boolean | nodeLib.httpsMod.ServerOptions = null,
+    index: java.lang.String = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
+    noInfo: js.UndefOr[scala.Boolean] = js.undefined,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    openPage: java.lang.String = null,
+    overlay: scala.Boolean | webpackDashDevDashServerLib.Anon_Errors = null,
+    pfx: java.lang.String = null,
+    pfxPassphrase: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    proxy: ProxyConfigMap | ProxyConfigArray = null,
+    public: java.lang.String = null,
+    publicPath: java.lang.String = null,
+    quiet: js.UndefOr[scala.Boolean] = js.undefined,
+    setup: js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit] = null,
+    socket: java.lang.String = null,
+    staticOptions: serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions = null,
+    stats: webpackLib.webpackMod.webpackNs.OptionsNs.Stats = null,
+    useLocalIp: js.UndefOr[scala.Boolean] = js.undefined,
+    watchContentBase: js.UndefOr[scala.Boolean] = js.undefined,
+    watchOptions: webpackLib.webpackMod.webpackNs.WatchOptions = null,
+    writeToDisk: scala.Boolean | (js.Function1[/* filePath */ java.lang.String, scala.Boolean]) = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (allowedHosts != null) __obj.updateDynamic("allowedHosts")(allowedHosts)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (!js.isUndefined(bonjour)) __obj.updateDynamic("bonjour")(bonjour)
+    if (clientLogLevel != null) __obj.updateDynamic("clientLogLevel")(clientLogLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (contentBase != null) __obj.updateDynamic("contentBase")(contentBase.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHostCheck)) __obj.updateDynamic("disableHostCheck")(disableHostCheck)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (historyApiFallback != null) __obj.updateDynamic("historyApiFallback")(historyApiFallback.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(hot)) __obj.updateDynamic("hot")(hot)
+    if (!js.isUndefined(hotOnly)) __obj.updateDynamic("hotOnly")(hotOnly)
+    if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (!js.isUndefined(noInfo)) __obj.updateDynamic("noInfo")(noInfo)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (openPage != null) __obj.updateDynamic("openPage")(openPage)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (pfx != null) __obj.updateDynamic("pfx")(pfx)
+    if (pfxPassphrase != null) __obj.updateDynamic("pfxPassphrase")(pfxPassphrase)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
+    if (public != null) __obj.updateDynamic("public")(public)
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (staticOptions != null) __obj.updateDynamic("staticOptions")(staticOptions)
+    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (!js.isUndefined(useLocalIp)) __obj.updateDynamic("useLocalIp")(useLocalIp)
+    if (!js.isUndefined(watchContentBase)) __obj.updateDynamic("watchContentBase")(watchContentBase)
+    if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions)
+    if (writeToDisk != null) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

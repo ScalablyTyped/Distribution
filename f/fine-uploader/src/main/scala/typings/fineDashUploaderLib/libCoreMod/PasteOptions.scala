@@ -20,3 +20,13 @@ trait PasteOptions extends js.Object {
   var targetElement: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
+object PasteOptions {
+  @scala.inline
+  def apply(defaultName: java.lang.String = null, targetElement: stdLib.HTMLElement = null): PasteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaultName != null) __obj.updateDynamic("defaultName")(defaultName)
+    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
+    __obj.asInstanceOf[PasteOptions]
+  }
+}
+

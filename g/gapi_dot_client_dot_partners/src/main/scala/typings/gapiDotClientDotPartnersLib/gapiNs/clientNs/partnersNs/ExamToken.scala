@@ -14,3 +14,14 @@ trait ExamToken extends js.Object {
   var token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExamToken {
+  @scala.inline
+  def apply(examId: java.lang.String = null, examType: java.lang.String = null, token: java.lang.String = null): ExamToken = {
+    val __obj = js.Dynamic.literal()
+    if (examId != null) __obj.updateDynamic("examId")(examId)
+    if (examType != null) __obj.updateDynamic("examType")(examType)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[ExamToken]
+  }
+}
+

@@ -14,3 +14,12 @@ trait NetworkRoutingConfig extends js.Object {
   var routingMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NetworkRoutingConfig {
+  @scala.inline
+  def apply(routingMode: java.lang.String = null): NetworkRoutingConfig = {
+    val __obj = js.Dynamic.literal()
+    if (routingMode != null) __obj.updateDynamic("routingMode")(routingMode)
+    __obj.asInstanceOf[NetworkRoutingConfig]
+  }
+}
+

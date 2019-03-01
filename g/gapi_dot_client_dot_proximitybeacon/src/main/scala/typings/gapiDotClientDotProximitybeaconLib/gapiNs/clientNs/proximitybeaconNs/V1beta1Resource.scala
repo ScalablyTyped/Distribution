@@ -18,3 +18,17 @@ trait V1beta1Resource extends js.Object {
   def getEidparams(request: gapiDotClientDotProximitybeaconLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[EphemeralIdRegistrationParams]
 }
 
+object V1beta1Resource {
+  @scala.inline
+  def apply(
+    getEidparams: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EphemeralIdRegistrationParams]
+    ]
+  ): V1beta1Resource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getEidparams")(getEidparams)
+    __obj.asInstanceOf[V1beta1Resource]
+  }
+}
+

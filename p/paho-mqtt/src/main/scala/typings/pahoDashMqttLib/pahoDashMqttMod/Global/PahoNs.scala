@@ -366,6 +366,8 @@ object PahoNs extends js.Object {
       var grantedQos: Qos
     }
     
+    trait Qos extends js.Object
+    
     /**
       * Used to control a subscription
       */
@@ -450,15 +452,6 @@ object PahoNs extends js.Object {
       *  <li><code>invocationContext</code> as passed in with the corresponding field in the connectOptions.
       */
     type OnSuccessCallback = js.Function1[/* o */ WithInvocationContext, scala.Unit]
-    /**
-      * The Quality of Service used to deliver a message.
-      * <dl>
-      *    <dt>0 Best effort (default).</dt>
-      *    <dt>1 At least once.</dt>
-      *    <dt>2 Exactly once.</dt>
-      * </dl>
-      */
-    type Qos = pahoDashMqttLib.pahoDashMqttLibNumbers.`0` | pahoDashMqttLib.pahoDashMqttLibNumbers.`1` | pahoDashMqttLib.pahoDashMqttLibNumbers.`2`
     type TraceFunction = js.Function1[/* element */ TraceElement, scala.Unit]
     type TypedArray = stdLib.Int8Array | stdLib.Uint8Array | stdLib.Uint8ClampedArray | stdLib.Int16Array | stdLib.Uint16Array | stdLib.Int32Array | stdLib.Uint32Array | stdLib.Float32Array | stdLib.Float64Array
   }

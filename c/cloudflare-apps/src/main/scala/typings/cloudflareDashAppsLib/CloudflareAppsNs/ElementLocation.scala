@@ -10,3 +10,16 @@ trait ElementLocation extends js.Object {
   var selector: java.lang.String
 }
 
+object ElementLocation {
+  @scala.inline
+  def apply(
+    method: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.before | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.prepend | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.append | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.after | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.replace,
+    selector: java.lang.String
+  ): ElementLocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[ElementLocation]
+  }
+}
+

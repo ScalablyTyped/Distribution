@@ -38,3 +38,24 @@ trait Client extends js.Object {
   var sockets: org.scalablytyped.runtime.StringDictionary[Socket]
 }
 
+object Client {
+  @scala.inline
+  def apply(
+    conn: EngineSocket,
+    id: java.lang.String,
+    nsps: org.scalablytyped.runtime.StringDictionary[Socket],
+    request: js.Any,
+    server: Server,
+    sockets: org.scalablytyped.runtime.StringDictionary[Socket]
+  ): Client = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("conn")(conn)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("nsps")(nsps)
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("server")(server)
+    __obj.updateDynamic("sockets")(sockets)
+    __obj.asInstanceOf[Client]
+  }
+}
+

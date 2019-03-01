@@ -14,3 +14,18 @@ trait AppLoadingProps extends js.Object {
   var startAsync: js.UndefOr[js.Function0[js.Promise[scala.Unit]]] = js.undefined
 }
 
+object AppLoadingProps {
+  @scala.inline
+  def apply(
+    onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
+    onFinish: js.Function0[scala.Unit] = null,
+    startAsync: js.Function0[js.Promise[scala.Unit]] = null
+  ): AppLoadingProps = {
+    val __obj = js.Dynamic.literal()
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish)
+    if (startAsync != null) __obj.updateDynamic("startAsync")(startAsync)
+    __obj.asInstanceOf[AppLoadingProps]
+  }
+}
+

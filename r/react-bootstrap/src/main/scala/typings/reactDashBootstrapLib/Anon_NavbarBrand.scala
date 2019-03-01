@@ -9,3 +9,12 @@ trait Anon_NavbarBrand extends js.Object {
   val NavbarBrandNs: js.Any
 }
 
+object Anon_NavbarBrand {
+  @scala.inline
+  def apply(NavbarBrandNs: js.Any): Anon_NavbarBrand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NavbarBrandNs")(NavbarBrandNs)
+    __obj.asInstanceOf[Anon_NavbarBrand]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_Owner extends js.Object {
   var take: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Owner {
+  @scala.inline
+  def apply(
+    owner: java.lang.String = null,
+    resource: monacoDashEditorLib.monacoDashEditorMod.Uri = null,
+    take: scala.Int | scala.Double = null
+  ): Anon_Owner = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Owner]
+  }
+}
+

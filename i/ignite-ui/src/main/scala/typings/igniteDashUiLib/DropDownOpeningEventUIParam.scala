@@ -16,3 +16,13 @@ trait DropDownOpeningEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DropDownOpeningEventUIParam {
+  @scala.inline
+  def apply(list: js.Any = null, owner: js.Any = null): DropDownOpeningEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DropDownOpeningEventUIParam]
+  }
+}
+

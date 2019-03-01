@@ -18,3 +18,12 @@ trait ResponsiveOptions extends js.Object {
   var rules: js.UndefOr[js.Array[RulesOptions]] = js.undefined
 }
 
+object ResponsiveOptions {
+  @scala.inline
+  def apply(rules: js.Array[RulesOptions] = null): ResponsiveOptions = {
+    val __obj = js.Dynamic.literal()
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[ResponsiveOptions]
+  }
+}
+

@@ -10,3 +10,17 @@ trait CustomerUsageReportsResource extends js.Object {
   def get(request: gapiDotClientDotAdminLib.Anon_AltCustomerId): gapiDotClientLib.gapiNs.clientNs.Request[UsageReports]
 }
 
+object CustomerUsageReportsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAdminLib.Anon_AltCustomerId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UsageReports]
+    ]
+  ): CustomerUsageReportsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[CustomerUsageReportsResource]
+  }
+}
+

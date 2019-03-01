@@ -10,3 +10,13 @@ trait ProjectHistory extends js.Object {
   var paths: js.Array[java.lang.String]
 }
 
+object ProjectHistory {
+  @scala.inline
+  def apply(lastOpened: stdLib.Date, paths: js.Array[java.lang.String]): ProjectHistory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lastOpened")(lastOpened)
+    __obj.updateDynamic("paths")(paths)
+    __obj.asInstanceOf[ProjectHistory]
+  }
+}
+

@@ -35,3 +35,48 @@ trait TinderRecommendation extends js.Object {
   var uncommon_interests: js.Array[_]
 }
 
+object TinderRecommendation {
+  @scala.inline
+  def apply(
+    _id: java.lang.String,
+    badges: js.Array[_],
+    bio: java.lang.String,
+    birth_date: java.lang.String,
+    birth_date_info: java.lang.String,
+    common_connections: js.Array[_],
+    common_friends: js.Array[_],
+    common_interests: js.Array[_],
+    common_likes: js.Array[_],
+    distance_mi: stdLib.Number,
+    gender: scala.Double,
+    jobs: js.Array[_],
+    name: java.lang.String,
+    photos: js.Array[TinderPhoto],
+    ping_time: java.lang.String,
+    schools: js.Array[_],
+    teaser: tinderLib.Anon_String,
+    uncommon_interests: js.Array[_]
+  ): TinderRecommendation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_id")(_id)
+    __obj.updateDynamic("badges")(badges)
+    __obj.updateDynamic("bio")(bio)
+    __obj.updateDynamic("birth_date")(birth_date)
+    __obj.updateDynamic("birth_date_info")(birth_date_info)
+    __obj.updateDynamic("common_connections")(common_connections)
+    __obj.updateDynamic("common_friends")(common_friends)
+    __obj.updateDynamic("common_interests")(common_interests)
+    __obj.updateDynamic("common_likes")(common_likes)
+    __obj.updateDynamic("distance_mi")(distance_mi)
+    __obj.updateDynamic("gender")(gender)
+    __obj.updateDynamic("jobs")(jobs)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("photos")(photos)
+    __obj.updateDynamic("ping_time")(ping_time)
+    __obj.updateDynamic("schools")(schools)
+    __obj.updateDynamic("teaser")(teaser)
+    __obj.updateDynamic("uncommon_interests")(uncommon_interests)
+    __obj.asInstanceOf[TinderRecommendation]
+  }
+}
+

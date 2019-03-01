@@ -10,3 +10,13 @@ trait PointModifier extends js.Object {
   var y: scala.Double | scala.Boolean
 }
 
+object PointModifier {
+  @scala.inline
+  def apply(x: scala.Double | scala.Boolean, y: scala.Double | scala.Boolean): PointModifier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointModifier]
+  }
+}
+

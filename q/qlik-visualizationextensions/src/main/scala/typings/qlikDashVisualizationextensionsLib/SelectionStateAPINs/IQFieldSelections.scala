@@ -59,3 +59,36 @@ trait IQFieldSelections extends js.Object {
   var totalCount: scala.Double
 }
 
+object IQFieldSelections {
+  @scala.inline
+  def apply(
+    field: qlikDashVisualizationextensionsLib.FieldAPINs.IQField,
+    fieldName: java.lang.String,
+    isNumeric: scala.Boolean,
+    locked: scala.Boolean,
+    notSelectedValues: js.Array[scala.Double],
+    qSelected: java.lang.String,
+    qSelectionThreshold: scala.Double,
+    qSortIndex: scala.Double,
+    qStateCounts: js.Any,
+    selectedCount: scala.Double,
+    selectedValues: js.Array[scala.Double],
+    totalCount: scala.Double
+  ): IQFieldSelections = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("fieldName")(fieldName)
+    __obj.updateDynamic("isNumeric")(isNumeric)
+    __obj.updateDynamic("locked")(locked)
+    __obj.updateDynamic("notSelectedValues")(notSelectedValues)
+    __obj.updateDynamic("qSelected")(qSelected)
+    __obj.updateDynamic("qSelectionThreshold")(qSelectionThreshold)
+    __obj.updateDynamic("qSortIndex")(qSortIndex)
+    __obj.updateDynamic("qStateCounts")(qStateCounts)
+    __obj.updateDynamic("selectedCount")(selectedCount)
+    __obj.updateDynamic("selectedValues")(selectedValues)
+    __obj.updateDynamic("totalCount")(totalCount)
+    __obj.asInstanceOf[IQFieldSelections]
+  }
+}
+

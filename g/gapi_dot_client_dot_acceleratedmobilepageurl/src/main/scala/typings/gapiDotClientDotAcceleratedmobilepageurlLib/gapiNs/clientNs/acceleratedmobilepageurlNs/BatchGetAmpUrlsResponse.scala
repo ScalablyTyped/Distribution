@@ -17,3 +17,13 @@ trait BatchGetAmpUrlsResponse extends js.Object {
   var urlErrors: js.UndefOr[js.Array[AmpUrlError]] = js.undefined
 }
 
+object BatchGetAmpUrlsResponse {
+  @scala.inline
+  def apply(ampUrls: js.Array[AmpUrl] = null, urlErrors: js.Array[AmpUrlError] = null): BatchGetAmpUrlsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (ampUrls != null) __obj.updateDynamic("ampUrls")(ampUrls)
+    if (urlErrors != null) __obj.updateDynamic("urlErrors")(urlErrors)
+    __obj.asInstanceOf[BatchGetAmpUrlsResponse]
+  }
+}
+

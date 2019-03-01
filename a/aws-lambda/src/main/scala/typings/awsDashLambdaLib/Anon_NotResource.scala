@@ -9,3 +9,12 @@ trait Anon_NotResource extends js.Object {
   var NotResource: java.lang.String | js.Array[java.lang.String]
 }
 
+object Anon_NotResource {
+  @scala.inline
+  def apply(NotResource: java.lang.String | js.Array[java.lang.String]): Anon_NotResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NotResource")(NotResource.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_NotResource]
+  }
+}
+

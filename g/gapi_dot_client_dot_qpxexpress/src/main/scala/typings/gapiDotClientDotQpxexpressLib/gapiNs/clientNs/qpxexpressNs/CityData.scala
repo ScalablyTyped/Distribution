@@ -16,3 +16,20 @@ trait CityData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CityData {
+  @scala.inline
+  def apply(
+    code: java.lang.String = null,
+    country: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null
+  ): CityData = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[CityData]
+  }
+}
+

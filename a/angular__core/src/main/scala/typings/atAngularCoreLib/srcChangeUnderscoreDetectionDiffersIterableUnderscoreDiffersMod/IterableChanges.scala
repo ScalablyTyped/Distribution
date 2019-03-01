@@ -51,3 +51,34 @@ trait IterableChanges[V] extends js.Object {
   def forEachRemovedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], scala.Unit]): scala.Unit
 }
 
+object IterableChanges {
+  @scala.inline
+  def apply[V](
+    forEachAddedItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
+    forEachIdentityChange: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
+    forEachItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
+    forEachMovedItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
+    forEachOperation: js.Function1[
+      js.Function3[
+        /* record */ IterableChangeRecord[V], 
+        /* previousIndex */ scala.Double | scala.Null, 
+        /* currentIndex */ scala.Double | scala.Null, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    forEachPreviousItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
+    forEachRemovedItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit]
+  ): IterableChanges[V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("forEachAddedItem")(forEachAddedItem)
+    __obj.updateDynamic("forEachIdentityChange")(forEachIdentityChange)
+    __obj.updateDynamic("forEachItem")(forEachItem)
+    __obj.updateDynamic("forEachMovedItem")(forEachMovedItem)
+    __obj.updateDynamic("forEachOperation")(forEachOperation)
+    __obj.updateDynamic("forEachPreviousItem")(forEachPreviousItem)
+    __obj.updateDynamic("forEachRemovedItem")(forEachRemovedItem)
+    __obj.asInstanceOf[IterableChanges[V]]
+  }
+}
+

@@ -31,3 +31,20 @@ trait FloatingObjectAlignmentPositionSettings extends js.Object {
   var verticalPositionType: js.Any
 }
 
+object FloatingObjectAlignmentPositionSettings {
+  @scala.inline
+  def apply(
+    horizontalPositionAlignment: js.Any,
+    horizontalPositionType: js.Any,
+    verticalPositionAlignment: js.Any,
+    verticalPositionType: js.Any
+  ): FloatingObjectAlignmentPositionSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("horizontalPositionAlignment")(horizontalPositionAlignment)
+    __obj.updateDynamic("horizontalPositionType")(horizontalPositionType)
+    __obj.updateDynamic("verticalPositionAlignment")(verticalPositionAlignment)
+    __obj.updateDynamic("verticalPositionType")(verticalPositionType)
+    __obj.asInstanceOf[FloatingObjectAlignmentPositionSettings]
+  }
+}
+

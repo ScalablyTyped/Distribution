@@ -23,3 +23,14 @@ trait IContentLibraryListItem extends js.Object {
   var qName: java.lang.String
 }
 
+object IContentLibraryListItem {
+  @scala.inline
+  def apply(qAppSpecific: scala.Boolean, qMeta: INxMeta, qName: java.lang.String): IContentLibraryListItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qAppSpecific")(qAppSpecific)
+    __obj.updateDynamic("qMeta")(qMeta)
+    __obj.updateDynamic("qName")(qName)
+    __obj.asInstanceOf[IContentLibraryListItem]
+  }
+}
+

@@ -67,3 +67,26 @@ trait ChartBinOptionsUpdateData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartBinOptionsUpdateData {
+  @scala.inline
+  def apply(
+    allowOverflow: js.UndefOr[scala.Boolean] = js.undefined,
+    allowUnderflow: js.UndefOr[scala.Boolean] = js.undefined,
+    count: scala.Int | scala.Double = null,
+    overflowValue: scala.Int | scala.Double = null,
+    `type`: officeDashJsDashPreviewLib.ExcelNs.ChartBinType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Category | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Auto | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BinWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BinCount = null,
+    underflowValue: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): ChartBinOptionsUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowOverflow)) __obj.updateDynamic("allowOverflow")(allowOverflow)
+    if (!js.isUndefined(allowUnderflow)) __obj.updateDynamic("allowUnderflow")(allowUnderflow)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (overflowValue != null) __obj.updateDynamic("overflowValue")(overflowValue.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (underflowValue != null) __obj.updateDynamic("underflowValue")(underflowValue.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartBinOptionsUpdateData]
+  }
+}
+

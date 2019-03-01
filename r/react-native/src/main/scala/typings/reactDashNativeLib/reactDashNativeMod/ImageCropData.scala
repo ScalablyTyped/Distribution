@@ -29,3 +29,20 @@ trait ImageCropData extends js.Object {
   var size: reactDashNativeLib.Anon_Height
 }
 
+object ImageCropData {
+  @scala.inline
+  def apply(
+    offset: reactDashNativeLib.Anon_X,
+    size: reactDashNativeLib.Anon_Height,
+    displaySize: reactDashNativeLib.Anon_Height = null,
+    resizeMode: reactDashNativeLib.reactDashNativeLibStrings.contain | reactDashNativeLib.reactDashNativeLibStrings.cover | reactDashNativeLib.reactDashNativeLibStrings.stretch = null
+  ): ImageCropData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("size")(size)
+    if (displaySize != null) __obj.updateDynamic("displaySize")(displaySize)
+    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageCropData]
+  }
+}
+

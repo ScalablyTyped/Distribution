@@ -619,16 +619,16 @@ object ^ extends js.Object {
   def getScreenSelector(min: scala.Double, max: scala.Double): java.lang.String = js.native
   def getTheme(): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def getTheme(depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
-  def getThemedContext(context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
+  def getThemedContext(context: atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext): atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext = js.native
   def getThemedContext(
-    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
+    context: atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext,
     scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames
-  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
+  ): atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext = js.native
   def getThemedContext(
-    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
+    context: atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext,
     scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
     theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
-  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
+  ): atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext = js.native
   def keyframes(timeline: org.scalablytyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme, depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native

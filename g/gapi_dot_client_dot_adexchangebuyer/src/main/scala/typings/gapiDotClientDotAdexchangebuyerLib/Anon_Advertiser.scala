@@ -35,3 +35,40 @@ trait Anon_Advertiser extends js.Object {
   var videoURL: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Advertiser {
+  @scala.inline
+  def apply(
+    advertiser: java.lang.String = null,
+    appIcon: Anon_Height = null,
+    body: java.lang.String = null,
+    callToAction: java.lang.String = null,
+    clickLinkUrl: java.lang.String = null,
+    clickTrackingUrl: java.lang.String = null,
+    headline: java.lang.String = null,
+    image: Anon_Height = null,
+    impressionTrackingUrl: js.Array[java.lang.String] = null,
+    logo: Anon_Height = null,
+    price: java.lang.String = null,
+    starRating: scala.Int | scala.Double = null,
+    store: java.lang.String = null,
+    videoURL: java.lang.String = null
+  ): Anon_Advertiser = {
+    val __obj = js.Dynamic.literal()
+    if (advertiser != null) __obj.updateDynamic("advertiser")(advertiser)
+    if (appIcon != null) __obj.updateDynamic("appIcon")(appIcon)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (callToAction != null) __obj.updateDynamic("callToAction")(callToAction)
+    if (clickLinkUrl != null) __obj.updateDynamic("clickLinkUrl")(clickLinkUrl)
+    if (clickTrackingUrl != null) __obj.updateDynamic("clickTrackingUrl")(clickTrackingUrl)
+    if (headline != null) __obj.updateDynamic("headline")(headline)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (impressionTrackingUrl != null) __obj.updateDynamic("impressionTrackingUrl")(impressionTrackingUrl)
+    if (logo != null) __obj.updateDynamic("logo")(logo)
+    if (price != null) __obj.updateDynamic("price")(price)
+    if (starRating != null) __obj.updateDynamic("starRating")(starRating.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store)
+    if (videoURL != null) __obj.updateDynamic("videoURL")(videoURL)
+    __obj.asInstanceOf[Anon_Advertiser]
+  }
+}
+

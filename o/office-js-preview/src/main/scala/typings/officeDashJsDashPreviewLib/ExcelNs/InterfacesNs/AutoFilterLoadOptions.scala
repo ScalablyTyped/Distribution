@@ -41,3 +41,20 @@ trait AutoFilterLoadOptions extends js.Object {
   var isDataFiltered: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AutoFilterLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    criteria: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isDataFiltered: js.UndefOr[scala.Boolean] = js.undefined
+  ): AutoFilterLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(isDataFiltered)) __obj.updateDynamic("isDataFiltered")(isDataFiltered)
+    __obj.asInstanceOf[AutoFilterLoadOptions]
+  }
+}
+

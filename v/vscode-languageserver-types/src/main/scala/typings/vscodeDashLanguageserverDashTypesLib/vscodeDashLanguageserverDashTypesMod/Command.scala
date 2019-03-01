@@ -21,3 +21,14 @@ trait Command extends js.Object {
   var title: java.lang.String
 }
 
+object Command {
+  @scala.inline
+  def apply(command: java.lang.String, title: java.lang.String, arguments: js.Array[_] = null): Command = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("title")(title)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    __obj.asInstanceOf[Command]
+  }
+}
+

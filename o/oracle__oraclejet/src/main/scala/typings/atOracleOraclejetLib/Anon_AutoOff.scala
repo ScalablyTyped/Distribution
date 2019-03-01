@@ -10,3 +10,16 @@ trait Anon_AutoOff extends js.Object {
   var tooltipLabel: java.lang.String | js.Array[java.lang.String]
 }
 
+object Anon_AutoOff {
+  @scala.inline
+  def apply(
+    tooltipDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    tooltipLabel: java.lang.String | js.Array[java.lang.String]
+  ): Anon_AutoOff = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tooltipDisplay")(tooltipDisplay.asInstanceOf[js.Any])
+    __obj.updateDynamic("tooltipLabel")(tooltipLabel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AutoOff]
+  }
+}
+

@@ -22,3 +22,84 @@ trait FilterableWithIndex1[F /* <: fpDashTsLib.libHKTMod.URIS */, I]
   def partitionWithIndex[A](fa: fpDashTsLib.libHKTMod.Type[F, A], p: js.Function2[/* i */ I, /* a */ A, scala.Boolean]): fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type[F, A], fpDashTsLib.libHKTMod.Type[F, A]]
 }
 
+object FilterableWithIndex1 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS */, I](
+    URI: F,
+    compact: js.Function1[
+      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libOptionMod.Option[js.Any]], 
+      fpDashTsLib.libHKTMod.Type[F, js.Any]
+    ],
+    filter: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      fpDashTsLib.libFunctionMod.Predicate[js.Any], 
+      fpDashTsLib.libHKTMod.Type[F, js.Any]
+    ],
+    filterMap: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
+      fpDashTsLib.libHKTMod.Type[F, js.Any]
+    ],
+    filterMapWithIndex: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      js.Function2[/* i */ I, js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
+      fpDashTsLib.libHKTMod.Type[F, js.Any]
+    ],
+    filterWithIndex: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      js.Function2[/* i */ I, js.Any, scala.Boolean], 
+      fpDashTsLib.libHKTMod.Type[F, js.Any]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type[F, js.Any]
+    ],
+    mapWithIndex: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      js.Function2[I, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type[F, js.Any]
+    ],
+    partition: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      fpDashTsLib.libFunctionMod.Predicate[js.Any], 
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]]
+    ],
+    partitionMap: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]]
+    ],
+    partitionMapWithIndex: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      js.Function2[/* i */ I, js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]]
+    ],
+    partitionWithIndex: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, js.Any], 
+      js.Function2[/* i */ I, js.Any, scala.Boolean], 
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]]
+    ],
+    separate: js.Function1[
+      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]]
+    ]
+  ): FilterableWithIndex1[F, I] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("compact")(compact)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("filterMap")(filterMap)
+    __obj.updateDynamic("filterMapWithIndex")(filterMapWithIndex)
+    __obj.updateDynamic("filterWithIndex")(filterWithIndex)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("mapWithIndex")(mapWithIndex)
+    __obj.updateDynamic("partition")(partition)
+    __obj.updateDynamic("partitionMap")(partitionMap)
+    __obj.updateDynamic("partitionMapWithIndex")(partitionMapWithIndex)
+    __obj.updateDynamic("partitionWithIndex")(partitionWithIndex)
+    __obj.updateDynamic("separate")(separate)
+    __obj.asInstanceOf[FilterableWithIndex1[F, I]]
+  }
+}
+

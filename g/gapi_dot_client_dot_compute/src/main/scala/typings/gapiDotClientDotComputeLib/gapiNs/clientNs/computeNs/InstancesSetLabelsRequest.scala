@@ -14,3 +14,16 @@ trait InstancesSetLabelsRequest extends js.Object {
   var labels: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object InstancesSetLabelsRequest {
+  @scala.inline
+  def apply(
+    labelFingerprint: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): InstancesSetLabelsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    __obj.asInstanceOf[InstancesSetLabelsRequest]
+  }
+}
+

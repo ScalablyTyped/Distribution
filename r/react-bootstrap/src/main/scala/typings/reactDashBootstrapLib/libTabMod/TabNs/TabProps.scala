@@ -18,3 +18,38 @@ import scala.scalajs.js.annotation._
   var unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TabProps {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-labelledby`: java.lang.String = null,
+    bsClass: java.lang.String = null,
+    eventKey: js.Any = null,
+    onEnter: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
+    onEntered: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
+    onEntering: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
+    onExit: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
+    onExited: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
+    onExiting: js.Function1[/* node */ reactLib.HTMLElement, _] = null,
+    tabClassName: java.lang.String = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
+  ): TabProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered)
+    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering)
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
+    if (onExited != null) __obj.updateDynamic("onExited")(onExited)
+    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting)
+    if (tabClassName != null) __obj.updateDynamic("tabClassName")(tabClassName)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit)
+    __obj.asInstanceOf[TabProps]
+  }
+}
+

@@ -24,3 +24,20 @@ trait WakeOptions extends js.Object {
   var port: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WakeOptions {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    interval: scala.Int | scala.Double = null,
+    num_packets: scala.Int | scala.Double = null,
+    port: scala.Int | scala.Double = null
+  ): WakeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (num_packets != null) __obj.updateDynamic("num_packets")(num_packets.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WakeOptions]
+  }
+}
+

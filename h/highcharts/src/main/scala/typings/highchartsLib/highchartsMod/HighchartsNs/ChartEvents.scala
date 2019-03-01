@@ -109,3 +109,34 @@ trait ChartEvents extends js.Object {
   var selection: js.UndefOr[js.Function1[/* event */ ChartSelectionEvent, scala.Unit]] = js.undefined
 }
 
+object ChartEvents {
+  @scala.inline
+  def apply(
+    addSeries: js.Function1[/* event */ AddSeriesEvent, scala.Boolean | scala.Unit] = null,
+    afterPrint: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    beforePrint: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    click: js.Function1[/* event */ ChartClickEvent, scala.Unit] = null,
+    drilldown: js.Function1[/* event */ ChartDrilldownEvent, scala.Unit] = null,
+    drillup: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    drillupall: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    load: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    redraw: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    render: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    selection: js.Function1[/* event */ ChartSelectionEvent, scala.Unit] = null
+  ): ChartEvents = {
+    val __obj = js.Dynamic.literal()
+    if (addSeries != null) __obj.updateDynamic("addSeries")(addSeries)
+    if (afterPrint != null) __obj.updateDynamic("afterPrint")(afterPrint)
+    if (beforePrint != null) __obj.updateDynamic("beforePrint")(beforePrint)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
+    if (drillup != null) __obj.updateDynamic("drillup")(drillup)
+    if (drillupall != null) __obj.updateDynamic("drillupall")(drillupall)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (redraw != null) __obj.updateDynamic("redraw")(redraw)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (selection != null) __obj.updateDynamic("selection")(selection)
+    __obj.asInstanceOf[ChartEvents]
+  }
+}
+

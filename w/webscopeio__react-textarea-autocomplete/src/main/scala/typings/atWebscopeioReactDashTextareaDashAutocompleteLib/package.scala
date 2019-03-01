@@ -1,9 +1,0 @@
-package typings
-
-import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-package object atWebscopeioReactDashTextareaDashAutocompleteLib {
-  type PickedAttributes = atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteLibStrings.onChange | atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteLibStrings.onSelect | atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteLibStrings.onBlur | atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteLibStrings.value
-}

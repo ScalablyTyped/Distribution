@@ -70,3 +70,36 @@ trait Configuration extends js.Object {
   var url: java.lang.String
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    appendMessageTypeToURL: js.UndefOr[scala.Boolean] = js.undefined,
+    autoBatch: js.UndefOr[scala.Boolean] = js.undefined,
+    backoffIncrement: scala.Int | scala.Double = null,
+    connectTimeout: scala.Int | scala.Double = null,
+    logLevel: java.lang.String = null,
+    maxBackoff: scala.Int | scala.Double = null,
+    maxConnections: scala.Int | scala.Double = null,
+    maxNetworkDelay: scala.Int | scala.Double = null,
+    maxURILength: scala.Int | scala.Double = null,
+    requestHeaders: js.Object = null,
+    stickyReconnect: js.UndefOr[scala.Boolean] = js.undefined
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(appendMessageTypeToURL)) __obj.updateDynamic("appendMessageTypeToURL")(appendMessageTypeToURL)
+    if (!js.isUndefined(autoBatch)) __obj.updateDynamic("autoBatch")(autoBatch)
+    if (backoffIncrement != null) __obj.updateDynamic("backoffIncrement")(backoffIncrement.asInstanceOf[js.Any])
+    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
+    if (maxBackoff != null) __obj.updateDynamic("maxBackoff")(maxBackoff.asInstanceOf[js.Any])
+    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
+    if (maxNetworkDelay != null) __obj.updateDynamic("maxNetworkDelay")(maxNetworkDelay.asInstanceOf[js.Any])
+    if (maxURILength != null) __obj.updateDynamic("maxURILength")(maxURILength.asInstanceOf[js.Any])
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
+    if (!js.isUndefined(stickyReconnect)) __obj.updateDynamic("stickyReconnect")(stickyReconnect)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

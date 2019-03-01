@@ -21,3 +21,25 @@ trait XInteractionSupplyParameters
   ): scala.Unit
 }
 
+object XInteractionSupplyParameters {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    select: js.Function0[scala.Unit],
+    setParameters: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XInteractionSupplyParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("select")(select)
+    __obj.updateDynamic("setParameters")(setParameters)
+    __obj.asInstanceOf[XInteractionSupplyParameters]
+  }
+}
+

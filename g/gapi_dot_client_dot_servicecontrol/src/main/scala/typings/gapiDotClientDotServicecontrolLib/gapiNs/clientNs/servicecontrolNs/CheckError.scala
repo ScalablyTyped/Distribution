@@ -12,3 +12,13 @@ trait CheckError extends js.Object {
   var detail: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CheckError {
+  @scala.inline
+  def apply(code: java.lang.String = null, detail: java.lang.String = null): CheckError = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    __obj.asInstanceOf[CheckError]
+  }
+}
+

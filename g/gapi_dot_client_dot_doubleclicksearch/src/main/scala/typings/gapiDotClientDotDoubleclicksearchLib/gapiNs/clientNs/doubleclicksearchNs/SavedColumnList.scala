@@ -12,3 +12,13 @@ trait SavedColumnList extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SavedColumnList {
+  @scala.inline
+  def apply(items: js.Array[SavedColumn] = null, kind: java.lang.String = null): SavedColumnList = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[SavedColumnList]
+  }
+}
+

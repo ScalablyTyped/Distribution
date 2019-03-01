@@ -29,3 +29,26 @@ trait DetailsExpandEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DetailsExpandEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    detailsRow: js.Any = null,
+    foreignKeyData: js.Any = null,
+    masterData: js.Any = null,
+    masterRow: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): DetailsExpandEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (detailsRow != null) __obj.updateDynamic("detailsRow")(detailsRow)
+    if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData)
+    if (masterData != null) __obj.updateDynamic("masterData")(masterData)
+    if (masterRow != null) __obj.updateDynamic("masterRow")(masterRow)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DetailsExpandEventArgs]
+  }
+}
+

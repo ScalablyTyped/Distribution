@@ -11,3 +11,16 @@ import scala.scalajs.js.annotation._
   var style: js.UndefOr[stdLib.Partial[cliDashTable2Lib.Anon_Border]] = js.undefined
 }
 
+object TableConstructorOptions {
+  @scala.inline
+  def apply(
+    chars: stdLib.Partial[stdLib.Record[CharName, java.lang.String]] = null,
+    style: stdLib.Partial[cliDashTable2Lib.Anon_Border] = null
+  ): TableConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chars != null) __obj.updateDynamic("chars")(chars)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[TableConstructorOptions]
+  }
+}
+

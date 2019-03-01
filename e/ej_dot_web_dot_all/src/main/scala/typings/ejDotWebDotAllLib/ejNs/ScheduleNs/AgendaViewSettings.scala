@@ -20,3 +20,18 @@ trait AgendaViewSettings extends js.Object {
   var timeColumnTemplateId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AgendaViewSettings {
+  @scala.inline
+  def apply(
+    dateColumnTemplateId: java.lang.String = null,
+    daysInAgenda: scala.Int | scala.Double = null,
+    timeColumnTemplateId: java.lang.String = null
+  ): AgendaViewSettings = {
+    val __obj = js.Dynamic.literal()
+    if (dateColumnTemplateId != null) __obj.updateDynamic("dateColumnTemplateId")(dateColumnTemplateId)
+    if (daysInAgenda != null) __obj.updateDynamic("daysInAgenda")(daysInAgenda.asInstanceOf[js.Any])
+    if (timeColumnTemplateId != null) __obj.updateDynamic("timeColumnTemplateId")(timeColumnTemplateId)
+    __obj.asInstanceOf[AgendaViewSettings]
+  }
+}
+

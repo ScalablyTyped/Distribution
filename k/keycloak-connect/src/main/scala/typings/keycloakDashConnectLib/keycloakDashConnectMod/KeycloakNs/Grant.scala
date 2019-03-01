@@ -17,3 +17,32 @@ trait Grant extends js.Object {
   def update(grant: Grant): scala.Unit
 }
 
+object Grant {
+  @scala.inline
+  def apply(
+    __raw: java.lang.String,
+    access_token: Token,
+    expires_in: scala.Double,
+    id_token: Token,
+    isExpired: js.Function0[scala.Boolean],
+    refresh_token: Token,
+    store: js.Function2[expressLib.expressMod.eNs.Request, expressLib.expressMod.eNs.Response, scala.Unit],
+    toString: js.Function0[java.lang.String],
+    token_type: java.lang.String,
+    update: js.Function1[Grant, scala.Unit]
+  ): Grant = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("__raw")(__raw)
+    __obj.updateDynamic("access_token")(access_token)
+    __obj.updateDynamic("expires_in")(expires_in)
+    __obj.updateDynamic("id_token")(id_token)
+    __obj.updateDynamic("isExpired")(isExpired)
+    __obj.updateDynamic("refresh_token")(refresh_token)
+    __obj.updateDynamic("store")(store)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("token_type")(token_type)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Grant]
+  }
+}
+

@@ -16,86 +16,56 @@ trait ojGanttTask
   var labelPosition: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerCenter | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerEnd | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.none = js.native
   var labelStyle: js.Object = js.native
   var onBaselineChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['baseline'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_BorderRadiusEnd], 
     _
   ]) | scala.Null = js.native
   var onBorderRadiusChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['borderRadius'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
   var onEndChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['end'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
   var onHeightChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['height'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double | scala.Null], 
     _
   ]) | scala.Null = js.native
   var onLabelChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['label'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
   var onLabelPositionChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['labelPosition'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerCenter | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerEnd | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
     ], 
     _
   ]) | scala.Null = js.native
-  var onLabelStyleChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['labelStyle'] */ js.Any
-    ], 
-    _
-  ]) | scala.Null = js.native
+  var onLabelStyleChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
   var onProgressChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['progress'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_BorderRadiusHeightSvgClassName], 
     _
   ]) | scala.Null = js.native
   var onRowIdChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['rowId'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[_]], 
     _
   ]) | scala.Null = js.native
   var onShortDescChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['shortDesc'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
     _
   ]) | scala.Null = js.native
   var onStartChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['start'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
   var onSvgClassNameChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['svgClassName'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
-  var onSvgStyleChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['svgStyle'] */ js.Any
-    ], 
-    _
-  ]) | scala.Null = js.native
+  var onSvgStyleChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
   var onTypeChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['type'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.normal | atOracleOraclejetLib.atOracleOraclejetLibStrings.milestone | atOracleOraclejetLib.atOracleOraclejetLibStrings.summary | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
     ], 
     _
   ]) | scala.Null = js.native
@@ -107,116 +77,11 @@ trait ojGanttTask
   var svgStyle: js.Object = js.native
   var `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.normal | atOracleOraclejetLib.atOracleOraclejetLibStrings.milestone | atOracleOraclejetLib.atOracleOraclejetLibStrings.summary | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto = js.native
   def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.baselineChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['baseline'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.baselineChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['baseline'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.borderRadiusChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['borderRadius'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.borderRadiusChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['borderRadius'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.endChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['end'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.endChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['end'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.heightChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['height'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.heightChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['height'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['label'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['label'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelPositionChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['labelPosition'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerCenter | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerEnd | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ]
@@ -226,154 +91,7 @@ trait ojGanttTask
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['labelPosition'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['labelStyle'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['labelStyle'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.progressChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['progress'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.progressChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['progress'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rowIdChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['rowId'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rowIdChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['rowId'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.shortDescChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['shortDesc'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.shortDescChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['shortDesc'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.startChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['start'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.startChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['start'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassNameChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['svgClassName'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassNameChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['svgClassName'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['svgStyle'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['svgStyle'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerCenter | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.innerEnd | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ],
@@ -384,7 +102,7 @@ trait ojGanttTask
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['type'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.normal | atOracleOraclejetLib.atOracleOraclejetLibStrings.milestone | atOracleOraclejetLib.atOracleOraclejetLibStrings.summary | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
       ], 
       _
     ]
@@ -394,7 +112,7 @@ trait ojGanttTask
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['type'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.normal | atOracleOraclejetLib.atOracleOraclejetLibStrings.milestone | atOracleOraclejetLib.atOracleOraclejetLibStrings.summary | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
       ], 
       _
     ],
@@ -467,6 +185,25 @@ trait ojGanttTask
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_baselineChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.baselineChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_BorderRadiusEnd], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_baselineChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.baselineChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_BorderRadiusEnd], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_blur(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.blur,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.FocusEvent, _]
@@ -478,6 +215,25 @@ trait ojGanttTask
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_borderRadiusChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.borderRadiusChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_borderRadiusChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.borderRadiusChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_cancel(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.cancel,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
@@ -706,6 +462,25 @@ trait ojGanttTask
   def addEventListener_emptied(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.emptied,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_endChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.endChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_endChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.endChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -775,6 +550,25 @@ trait ojGanttTask
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_heightChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.heightChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double | scala.Null], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_heightChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.heightChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double | scala.Null], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_input(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.input,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
@@ -827,6 +621,44 @@ trait ojGanttTask
   def addEventListener_keyup(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.keyup,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.KeyboardEvent, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_labelChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_labelChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_labelStyleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_labelStyleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      _
+    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1116,6 +948,25 @@ trait ojGanttTask
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_progressChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.progressChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_BorderRadiusHeightSvgClassName], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_progressChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.progressChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_BorderRadiusHeightSvgClassName], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_ratechange(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.ratechange,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
@@ -1146,6 +997,25 @@ trait ojGanttTask
   def addEventListener_resize(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.resize,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_rowIdChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rowIdChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[_]], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_rowIdChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rowIdChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[_]], 
+      _
+    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1204,6 +1074,25 @@ trait ojGanttTask
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_shortDescChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.shortDescChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_shortDescChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.shortDescChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_stalled(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.stalled,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
@@ -1212,6 +1101,25 @@ trait ojGanttTask
   def addEventListener_stalled(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.stalled,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_startChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.startChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_startChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.startChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1234,6 +1142,44 @@ trait ojGanttTask
   def addEventListener_suspend(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.suspend,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_svgClassNameChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassNameChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_svgClassNameChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassNameChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_svgStyleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_svgStyleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      _
+    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")

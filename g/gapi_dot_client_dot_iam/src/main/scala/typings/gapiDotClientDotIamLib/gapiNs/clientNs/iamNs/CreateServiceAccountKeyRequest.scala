@@ -19,3 +19,13 @@ trait CreateServiceAccountKeyRequest extends js.Object {
   var privateKeyType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateServiceAccountKeyRequest {
+  @scala.inline
+  def apply(keyAlgorithm: java.lang.String = null, privateKeyType: java.lang.String = null): CreateServiceAccountKeyRequest = {
+    val __obj = js.Dynamic.literal()
+    if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm)
+    if (privateKeyType != null) __obj.updateDynamic("privateKeyType")(privateKeyType)
+    __obj.asInstanceOf[CreateServiceAccountKeyRequest]
+  }
+}
+

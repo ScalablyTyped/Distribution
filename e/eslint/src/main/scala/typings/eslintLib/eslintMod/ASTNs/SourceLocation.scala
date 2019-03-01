@@ -10,3 +10,13 @@ trait SourceLocation extends js.Object {
   var start: estreeLib.estreeMod.Position
 }
 
+object SourceLocation {
+  @scala.inline
+  def apply(end: estreeLib.estreeMod.Position, start: estreeLib.estreeMod.Position): SourceLocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[SourceLocation]
+  }
+}
+

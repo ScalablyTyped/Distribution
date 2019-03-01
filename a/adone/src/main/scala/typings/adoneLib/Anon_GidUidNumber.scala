@@ -10,3 +10,13 @@ trait Anon_GidUidNumber extends js.Object {
   var uid: scala.Double
 }
 
+object Anon_GidUidNumber {
+  @scala.inline
+  def apply(gid: scala.Double, uid: scala.Double): Anon_GidUidNumber = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gid")(gid)
+    __obj.updateDynamic("uid")(uid)
+    __obj.asInstanceOf[Anon_GidUidNumber]
+  }
+}
+

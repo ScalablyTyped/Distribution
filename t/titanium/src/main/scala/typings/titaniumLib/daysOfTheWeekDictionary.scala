@@ -21,3 +21,13 @@ trait daysOfTheWeekDictionary extends js.Object {
   var week: js.UndefOr[scala.Double] = js.undefined
 }
 
+object daysOfTheWeekDictionary {
+  @scala.inline
+  def apply(daysOfWeek: scala.Int | scala.Double = null, week: scala.Int | scala.Double = null): daysOfTheWeekDictionary = {
+    val __obj = js.Dynamic.literal()
+    if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek.asInstanceOf[js.Any])
+    if (week != null) __obj.updateDynamic("week")(week.asInstanceOf[js.Any])
+    __obj.asInstanceOf[daysOfTheWeekDictionary]
+  }
+}
+

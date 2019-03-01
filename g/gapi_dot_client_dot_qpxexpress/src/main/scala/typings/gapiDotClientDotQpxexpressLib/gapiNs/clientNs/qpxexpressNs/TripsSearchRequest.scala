@@ -10,3 +10,12 @@ trait TripsSearchRequest extends js.Object {
   var request: js.UndefOr[TripOptionsRequest] = js.undefined
 }
 
+object TripsSearchRequest {
+  @scala.inline
+  def apply(request: TripOptionsRequest = null): TripsSearchRequest = {
+    val __obj = js.Dynamic.literal()
+    if (request != null) __obj.updateDynamic("request")(request)
+    __obj.asInstanceOf[TripsSearchRequest]
+  }
+}
+

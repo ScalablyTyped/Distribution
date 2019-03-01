@@ -10,3 +10,16 @@ trait TimelineFormatOption extends js.Object {
   var minorLabels: js.UndefOr[TimelineFormatLabelsOption | TimelineFormatLabelsFunction] = js.undefined
 }
 
+object TimelineFormatOption {
+  @scala.inline
+  def apply(
+    majorLabels: TimelineFormatLabelsOption | TimelineFormatLabelsFunction = null,
+    minorLabels: TimelineFormatLabelsOption | TimelineFormatLabelsFunction = null
+  ): TimelineFormatOption = {
+    val __obj = js.Dynamic.literal()
+    if (majorLabels != null) __obj.updateDynamic("majorLabels")(majorLabels.asInstanceOf[js.Any])
+    if (minorLabels != null) __obj.updateDynamic("minorLabels")(minorLabels.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimelineFormatOption]
+  }
+}
+

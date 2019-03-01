@@ -12,3 +12,13 @@ trait ZoneViewsGetServiceResponse extends js.Object {
   var fingerprint: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ZoneViewsGetServiceResponse {
+  @scala.inline
+  def apply(endpoints: js.Array[ServiceEndpoint] = null, fingerprint: java.lang.String = null): ZoneViewsGetServiceResponse = {
+    val __obj = js.Dynamic.literal()
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    __obj.asInstanceOf[ZoneViewsGetServiceResponse]
+  }
+}
+

@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
   var ownProps: TProps
 }
 
+object OptionProps {
+  @scala.inline
+  def apply[TProps, TData, TGraphQLVariables](ownProps: TProps): OptionProps[TProps, TData, TGraphQLVariables] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ownProps")(ownProps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OptionProps[TProps, TData, TGraphQLVariables]]
+  }
+}
+

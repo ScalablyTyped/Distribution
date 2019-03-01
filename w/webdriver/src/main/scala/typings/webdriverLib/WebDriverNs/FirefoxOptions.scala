@@ -13,3 +13,22 @@ trait FirefoxOptions extends js.Object {
   var profile: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FirefoxOptions {
+  @scala.inline
+  def apply(
+    prefs: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean],
+    args: js.Array[java.lang.String] = null,
+    binary: java.lang.String = null,
+    log: FirefoxLogObject = null,
+    profile: java.lang.String = null
+  ): FirefoxOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("prefs")(prefs)
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (binary != null) __obj.updateDynamic("binary")(binary)
+    if (log != null) __obj.updateDynamic("log")(log)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    __obj.asInstanceOf[FirefoxOptions]
+  }
+}
+

@@ -27,3 +27,22 @@ trait XResultSetMetaDataSupplier
   def getMetaData(): XResultSetMetaData
 }
 
+object XResultSetMetaDataSupplier {
+  @scala.inline
+  def apply(
+    MetaData: XResultSetMetaData,
+    acquire: js.Function0[scala.Unit],
+    getMetaData: js.Function0[XResultSetMetaData],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XResultSetMetaDataSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MetaData")(MetaData)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMetaData")(getMetaData)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XResultSetMetaDataSupplier]
+  }
+}
+

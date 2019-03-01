@@ -23,3 +23,22 @@ trait GroupChangeEventArgs extends js.Object {
   var oldParent: js.UndefOr[js.Any] = js.undefined
 }
 
+object GroupChangeEventArgs {
+  @scala.inline
+  def apply(
+    cause: java.lang.String = null,
+    diagramId: java.lang.String = null,
+    element: js.Any = null,
+    newParent: js.Any = null,
+    oldParent: js.Any = null
+  ): GroupChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (cause != null) __obj.updateDynamic("cause")(cause)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (newParent != null) __obj.updateDynamic("newParent")(newParent)
+    if (oldParent != null) __obj.updateDynamic("oldParent")(oldParent)
+    __obj.asInstanceOf[GroupChangeEventArgs]
+  }
+}
+

@@ -31,3 +31,20 @@ trait ASPxClientRichEditHyperlinkClickEventArgs extends ASPxClientEventArgs {
   var targetUri: java.lang.String
 }
 
+object ASPxClientRichEditHyperlinkClickEventArgs {
+  @scala.inline
+  def apply(
+    handled: scala.Boolean,
+    htmlEvent: js.Object,
+    hyperlinkType: ASPxClientOfficeDocumentLinkType,
+    targetUri: java.lang.String
+  ): ASPxClientRichEditHyperlinkClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handled")(handled)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("hyperlinkType")(hyperlinkType)
+    __obj.updateDynamic("targetUri")(targetUri)
+    __obj.asInstanceOf[ASPxClientRichEditHyperlinkClickEventArgs]
+  }
+}
+

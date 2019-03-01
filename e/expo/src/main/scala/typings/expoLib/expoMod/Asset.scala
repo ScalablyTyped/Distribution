@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("expo", "Asset")
 @js.native
-class Asset protected () extends js.Object {
+class Asset protected () extends _PlaybackSource {
   def this(hasNameTypeHashUriWidthHeight: expoLib.Anon_Hash) = this()
   var downloadCallbacks: js.Array[expoLib.Anon_E] = js.native
   var downloaded: scala.Boolean = js.native

@@ -109,3 +109,36 @@ trait IOtherTotalSpecProp extends js.Object {
   var qTotalMode: TotalModeType
 }
 
+object IOtherTotalSpecProp {
+  @scala.inline
+  def apply(
+    qApplyEvenWhenPossiblyWrongResult: scala.Boolean,
+    qForceBadValueKeeping: scala.Boolean,
+    qGlobalOtherGrouping: scala.Boolean,
+    qOtherCollapseInnerDimensions: scala.Boolean,
+    qOtherCounted: java.lang.String,
+    qOtherLimit: java.lang.String,
+    qOtherLimitMode: OtherLimitModeType,
+    qOtherMode: OtherModeType,
+    qOtherSortMode: OtherSortModeType,
+    qReferencedExpression: java.lang.String,
+    qSuppressOther: scala.Boolean,
+    qTotalMode: TotalModeType
+  ): IOtherTotalSpecProp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qApplyEvenWhenPossiblyWrongResult")(qApplyEvenWhenPossiblyWrongResult)
+    __obj.updateDynamic("qForceBadValueKeeping")(qForceBadValueKeeping)
+    __obj.updateDynamic("qGlobalOtherGrouping")(qGlobalOtherGrouping)
+    __obj.updateDynamic("qOtherCollapseInnerDimensions")(qOtherCollapseInnerDimensions)
+    __obj.updateDynamic("qOtherCounted")(qOtherCounted)
+    __obj.updateDynamic("qOtherLimit")(qOtherLimit)
+    __obj.updateDynamic("qOtherLimitMode")(qOtherLimitMode)
+    __obj.updateDynamic("qOtherMode")(qOtherMode)
+    __obj.updateDynamic("qOtherSortMode")(qOtherSortMode)
+    __obj.updateDynamic("qReferencedExpression")(qReferencedExpression)
+    __obj.updateDynamic("qSuppressOther")(qSuppressOther)
+    __obj.updateDynamic("qTotalMode")(qTotalMode)
+    __obj.asInstanceOf[IOtherTotalSpecProp]
+  }
+}
+

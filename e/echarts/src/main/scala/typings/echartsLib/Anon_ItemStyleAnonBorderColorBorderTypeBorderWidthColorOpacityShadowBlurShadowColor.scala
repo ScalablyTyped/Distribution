@@ -12,3 +12,12 @@ trait Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlurSh
   var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor] = js.undefined
 }
 
+object Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor {
+  @scala.inline
+  def apply(itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor = null): Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor = {
+    val __obj = js.Dynamic.literal()
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    __obj.asInstanceOf[Anon_ItemStyleAnonBorderColorBorderTypeBorderWidthColorOpacityShadowBlurShadowColor]
+  }
+}
+

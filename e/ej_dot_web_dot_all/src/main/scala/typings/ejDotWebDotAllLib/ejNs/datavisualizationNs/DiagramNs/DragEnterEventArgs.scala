@@ -17,3 +17,18 @@ trait DragEnterEventArgs extends js.Object {
   var element: js.UndefOr[js.Any] = js.undefined
 }
 
+object DragEnterEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    diagramId: java.lang.String = null,
+    element: js.Any = null
+  ): DragEnterEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (element != null) __obj.updateDynamic("element")(element)
+    __obj.asInstanceOf[DragEnterEventArgs]
+  }
+}
+

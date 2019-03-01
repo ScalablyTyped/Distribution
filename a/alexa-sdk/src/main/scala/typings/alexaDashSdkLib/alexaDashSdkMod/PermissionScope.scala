@@ -9,3 +9,12 @@ trait PermissionScope extends js.Object {
   var scope: java.lang.String
 }
 
+object PermissionScope {
+  @scala.inline
+  def apply(scope: java.lang.String): PermissionScope = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[PermissionScope]
+  }
+}
+

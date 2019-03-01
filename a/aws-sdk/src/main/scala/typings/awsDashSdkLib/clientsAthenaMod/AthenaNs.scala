@@ -1170,6 +1170,18 @@ object AthenaNs extends js.Object {
     var State: js.UndefOr[WorkGroupState] = js.undefined
   }
   
+  trait _ColumnNullable extends js.Object
+  
+  trait _EncryptionOption extends js.Object
+  
+  trait _QueryExecutionState extends js.Object
+  
+  trait _StatementType extends js.Object
+  
+  trait _WorkGroupState extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AmazonResourceName = java.lang.String
   type Boolean = scala.Boolean
@@ -1177,10 +1189,10 @@ object AthenaNs extends js.Object {
   type BytesScannedCutoffValue = scala.Double
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ColumnInfoList = js.Array[ColumnInfo]
-  type ColumnNullable = awsDashSdkLib.awsDashSdkLibStrings.NOT_NULL | awsDashSdkLib.awsDashSdkLibStrings.NULLABLE | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | java.lang.String
+  type ColumnNullable = _ColumnNullable | java.lang.String
   type DatabaseString = java.lang.String
   type DescriptionString = java.lang.String
-  type EncryptionOption = awsDashSdkLib.awsDashSdkLibStrings.SSE_S3 | awsDashSdkLib.awsDashSdkLibStrings.SSE_KMS | awsDashSdkLib.awsDashSdkLibStrings.CSE_KMS | java.lang.String
+  type EncryptionOption = _EncryptionOption | java.lang.String
   type ErrorCode = java.lang.String
   type ErrorMessage = java.lang.String
   type IdempotencyToken = java.lang.String
@@ -1198,10 +1210,10 @@ object AthenaNs extends js.Object {
   type QueryExecutionId = java.lang.String
   type QueryExecutionIdList = js.Array[QueryExecutionId]
   type QueryExecutionList = js.Array[QueryExecution]
-  type QueryExecutionState = awsDashSdkLib.awsDashSdkLibStrings.QUEUED | awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.CANCELLED | java.lang.String
+  type QueryExecutionState = _QueryExecutionState | java.lang.String
   type QueryString = java.lang.String
   type RowList = js.Array[Row]
-  type StatementType = awsDashSdkLib.awsDashSdkLibStrings.DDL | awsDashSdkLib.awsDashSdkLibStrings.DML | awsDashSdkLib.awsDashSdkLibStrings.UTILITY | java.lang.String
+  type StatementType = _StatementType | java.lang.String
   type String = java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
@@ -1212,10 +1224,10 @@ object AthenaNs extends js.Object {
   type UnprocessedQueryExecutionIdList = js.Array[UnprocessedQueryExecutionId]
   type WorkGroupDescriptionString = java.lang.String
   type WorkGroupName = java.lang.String
-  type WorkGroupState = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type WorkGroupState = _WorkGroupState | java.lang.String
   type WorkGroupsList = js.Array[WorkGroupSummary]
   type _Date = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-05-18` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type datumList = js.Array[Datum]
   type datumString = java.lang.String
 }

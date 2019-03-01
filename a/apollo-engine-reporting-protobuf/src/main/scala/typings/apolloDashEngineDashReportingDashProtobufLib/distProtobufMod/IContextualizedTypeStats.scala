@@ -12,3 +12,16 @@ trait IContextualizedTypeStats extends js.Object {
   var perTypeStat: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ITypeStat] | scala.Null] = js.undefined
 }
 
+object IContextualizedTypeStats {
+  @scala.inline
+  def apply(
+    context: IStatsContext = null,
+    perTypeStat: org.scalablytyped.runtime.StringDictionary[ITypeStat] = null
+  ): IContextualizedTypeStats = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (perTypeStat != null) __obj.updateDynamic("perTypeStat")(perTypeStat)
+    __obj.asInstanceOf[IContextualizedTypeStats]
+  }
+}
+

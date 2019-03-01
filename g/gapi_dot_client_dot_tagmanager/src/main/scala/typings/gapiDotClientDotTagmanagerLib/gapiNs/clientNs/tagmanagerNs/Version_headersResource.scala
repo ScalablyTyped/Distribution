@@ -12,3 +12,22 @@ trait Version_headersResource extends js.Object {
   def list(request: gapiDotClientDotTagmanagerLib.Anon_AltFieldsIncludeDeleted): gapiDotClientLib.gapiNs.clientNs.Request[ListContainerVersionsResponse]
 }
 
+object Version_headersResource {
+  @scala.inline
+  def apply(
+    latest: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersionHeader]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsIncludeDeleted, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListContainerVersionsResponse]
+    ]
+  ): Version_headersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("latest")(latest)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[Version_headersResource]
+  }
+}
+

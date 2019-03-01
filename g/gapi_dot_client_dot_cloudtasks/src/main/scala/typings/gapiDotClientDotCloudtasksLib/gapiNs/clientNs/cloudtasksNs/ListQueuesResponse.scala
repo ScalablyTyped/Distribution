@@ -22,3 +22,13 @@ trait ListQueuesResponse extends js.Object {
   var queues: js.UndefOr[js.Array[Queue]] = js.undefined
 }
 
+object ListQueuesResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, queues: js.Array[Queue] = null): ListQueuesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (queues != null) __obj.updateDynamic("queues")(queues)
+    __obj.asInstanceOf[ListQueuesResponse]
+  }
+}
+

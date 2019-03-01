@@ -13,3 +13,22 @@ trait AjvError extends js.Object {
   var stack: java.lang.String
 }
 
+object AjvError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: java.lang.String,
+    params: js.Any,
+    property: java.lang.String,
+    stack: java.lang.String
+  ): AjvError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("property")(property)
+    __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[AjvError]
+  }
+}
+

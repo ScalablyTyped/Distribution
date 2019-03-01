@@ -18,3 +18,22 @@ trait CustomChannel extends js.Object {
   var targetingInfo: js.UndefOr[gapiDotClientDotAdsenseLib.Anon_AdsAppearOn] = js.undefined
 }
 
+object CustomChannel {
+  @scala.inline
+  def apply(
+    code: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    targetingInfo: gapiDotClientDotAdsenseLib.Anon_AdsAppearOn = null
+  ): CustomChannel = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (targetingInfo != null) __obj.updateDynamic("targetingInfo")(targetingInfo)
+    __obj.asInstanceOf[CustomChannel]
+  }
+}
+

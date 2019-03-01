@@ -73,3 +73,38 @@ trait LaunchNavigatorOptions extends js.Object {
   var transportMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LaunchNavigatorOptions {
+  @scala.inline
+  def apply(
+    app: java.lang.String = null,
+    appSelection: AppSelectionOptions = null,
+    destinationName: java.lang.String = null,
+    enableGeocoding: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGeolocation: js.UndefOr[scala.Boolean] = js.undefined,
+    errorCallback: js.Function1[/* error */ java.lang.String, scala.Unit] = null,
+    extras: js.Any = null,
+    launchModeAppleMaps: java.lang.String = null,
+    launchModeGoogleMaps: java.lang.String = null,
+    start: java.lang.String | js.Array[scala.Double] = null,
+    startName: java.lang.String = null,
+    successCallback: js.Function = null,
+    transportMode: java.lang.String = null
+  ): LaunchNavigatorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (app != null) __obj.updateDynamic("app")(app)
+    if (appSelection != null) __obj.updateDynamic("appSelection")(appSelection)
+    if (destinationName != null) __obj.updateDynamic("destinationName")(destinationName)
+    if (!js.isUndefined(enableGeocoding)) __obj.updateDynamic("enableGeocoding")(enableGeocoding)
+    if (!js.isUndefined(enableGeolocation)) __obj.updateDynamic("enableGeolocation")(enableGeolocation)
+    if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)
+    if (extras != null) __obj.updateDynamic("extras")(extras)
+    if (launchModeAppleMaps != null) __obj.updateDynamic("launchModeAppleMaps")(launchModeAppleMaps)
+    if (launchModeGoogleMaps != null) __obj.updateDynamic("launchModeGoogleMaps")(launchModeGoogleMaps)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (startName != null) __obj.updateDynamic("startName")(startName)
+    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback)
+    if (transportMode != null) __obj.updateDynamic("transportMode")(transportMode)
+    __obj.asInstanceOf[LaunchNavigatorOptions]
+  }
+}
+

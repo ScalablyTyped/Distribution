@@ -11,3 +11,12 @@ trait Nil extends js.Object {
   var Highland_NIL: Nil
 }
 
+object Nil {
+  @scala.inline
+  def apply(Highland_NIL: Nil): Nil = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Highland_NIL")(Highland_NIL)
+    __obj.asInstanceOf[Nil]
+  }
+}
+

@@ -35,3 +35,18 @@ trait DictionaryListEvent
   var nCondensedEvent: scala.Double
 }
 
+object DictionaryListEvent {
+  @scala.inline
+  def apply(
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    aDictionaryEvents: activexDashInteropLib.SafeArray[DictionaryEvent],
+    nCondensedEvent: scala.Double
+  ): DictionaryListEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("aDictionaryEvents")(aDictionaryEvents)
+    __obj.updateDynamic("nCondensedEvent")(nCondensedEvent)
+    __obj.asInstanceOf[DictionaryListEvent]
+  }
+}
+

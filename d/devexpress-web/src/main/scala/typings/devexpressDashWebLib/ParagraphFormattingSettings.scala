@@ -81,3 +81,40 @@ trait ParagraphFormattingSettings extends js.Object {
   var spacingBefore: scala.Double
 }
 
+object ParagraphFormattingSettings {
+  @scala.inline
+  def apply(
+    alignment: js.Any,
+    backColor: java.lang.String,
+    contextualSpacing: scala.Boolean,
+    firstLineIndent: scala.Double,
+    firstLineIndentType: js.Any,
+    keepLinesTogether: scala.Boolean,
+    leftIndent: scala.Double,
+    lineSpacing: scala.Double,
+    lineSpacingType: js.Any,
+    outlineLevel: scala.Double,
+    pageBreakBefore: scala.Boolean,
+    rightIndent: scala.Double,
+    spacingAfter: scala.Double,
+    spacingBefore: scala.Double
+  ): ParagraphFormattingSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alignment")(alignment)
+    __obj.updateDynamic("backColor")(backColor)
+    __obj.updateDynamic("contextualSpacing")(contextualSpacing)
+    __obj.updateDynamic("firstLineIndent")(firstLineIndent)
+    __obj.updateDynamic("firstLineIndentType")(firstLineIndentType)
+    __obj.updateDynamic("keepLinesTogether")(keepLinesTogether)
+    __obj.updateDynamic("leftIndent")(leftIndent)
+    __obj.updateDynamic("lineSpacing")(lineSpacing)
+    __obj.updateDynamic("lineSpacingType")(lineSpacingType)
+    __obj.updateDynamic("outlineLevel")(outlineLevel)
+    __obj.updateDynamic("pageBreakBefore")(pageBreakBefore)
+    __obj.updateDynamic("rightIndent")(rightIndent)
+    __obj.updateDynamic("spacingAfter")(spacingAfter)
+    __obj.updateDynamic("spacingBefore")(spacingBefore)
+    __obj.asInstanceOf[ParagraphFormattingSettings]
+  }
+}
+

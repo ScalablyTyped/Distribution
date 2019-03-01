@@ -9,3 +9,12 @@ trait SplitOptions extends js.Object {
   var maxLength: scala.Double
 }
 
+object SplitOptions {
+  @scala.inline
+  def apply(maxLength: scala.Double): SplitOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxLength")(maxLength)
+    __obj.asInstanceOf[SplitOptions]
+  }
+}
+

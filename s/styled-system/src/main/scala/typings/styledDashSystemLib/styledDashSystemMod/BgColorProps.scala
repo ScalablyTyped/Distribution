@@ -18,3 +18,12 @@ trait BgColorProps[TLength] extends js.Object {
   var bg: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BackgroundProperty[TLength]]] = js.undefined
 }
 
+object BgColorProps {
+  @scala.inline
+  def apply[TLength](bg: ResponsiveValue[csstypeLib.csstypeMod.BackgroundProperty[TLength]] = null): BgColorProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BgColorProps[TLength]]
+  }
+}
+

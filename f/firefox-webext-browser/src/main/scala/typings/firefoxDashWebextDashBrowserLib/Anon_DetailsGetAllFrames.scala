@@ -52,3 +52,34 @@ trait Anon_DetailsGetAllFrames extends js.Object {
   def getFrame(details: Anon_FrameId): js.Promise[Anon_ErrorOccurred]
 }
 
+object Anon_DetailsGetAllFrames {
+  @scala.inline
+  def apply(
+    getAllFrames: js.Function1[Anon_TabIdNumber, js.Promise[js.Array[Anon_ErrorOccurredFrameId]]],
+    getFrame: js.Function1[Anon_FrameId, js.Promise[Anon_ErrorOccurred]],
+    onBeforeNavigate: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnBeforeNavigateEvent[js.Function1[/* details */ Anon_FrameIdParentFrameId, scala.Unit]],
+    onCommitted: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnCommittedEvent[js.Function1[/* details */ Anon_FrameIdProcessId, scala.Unit]],
+    onCompleted: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnCompletedEvent[js.Function1[/* details */ Anon_FrameIdProcessIdTabId, scala.Unit]],
+    onCreatedNavigationTarget: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnCreatedNavigationTargetEvent[js.Function1[/* details */ Anon_SourceFrameId, scala.Unit]],
+    onDOMContentLoaded: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnDOMContentLoadedEvent[js.Function1[/* details */ Anon_FrameIdProcessIdTabId, scala.Unit]],
+    onErrorOccurred: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnErrorOccurredEvent[js.Function1[/* details */ Anon_Error, scala.Unit]],
+    onHistoryStateUpdated: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnHistoryStateUpdatedEvent[js.Function1[/* details */ Anon_FrameIdProcessId, scala.Unit]],
+    onReferenceFragmentUpdated: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnReferenceFragmentUpdatedEvent[js.Function1[/* details */ Anon_FrameIdProcessId, scala.Unit]],
+    onTabReplaced: WebExtEvent[js.Function1[/* details */ Anon_ReplacedTabId, scala.Unit]]
+  ): Anon_DetailsGetAllFrames = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAllFrames")(getAllFrames)
+    __obj.updateDynamic("getFrame")(getFrame)
+    __obj.updateDynamic("onBeforeNavigate")(onBeforeNavigate)
+    __obj.updateDynamic("onCommitted")(onCommitted)
+    __obj.updateDynamic("onCompleted")(onCompleted)
+    __obj.updateDynamic("onCreatedNavigationTarget")(onCreatedNavigationTarget)
+    __obj.updateDynamic("onDOMContentLoaded")(onDOMContentLoaded)
+    __obj.updateDynamic("onErrorOccurred")(onErrorOccurred)
+    __obj.updateDynamic("onHistoryStateUpdated")(onHistoryStateUpdated)
+    __obj.updateDynamic("onReferenceFragmentUpdated")(onReferenceFragmentUpdated)
+    __obj.updateDynamic("onTabReplaced")(onTabReplaced)
+    __obj.asInstanceOf[Anon_DetailsGetAllFrames]
+  }
+}
+

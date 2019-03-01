@@ -26,3 +26,18 @@ trait SVGInjectorOptions extends js.Object {
   var pngFallback: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SVGInjectorOptions {
+  @scala.inline
+  def apply(
+    each: js.Function1[/* svg */ stdLib.SVGElement | java.lang.String, scala.Unit] = null,
+    evalScripts: java.lang.String = null,
+    pngFallback: java.lang.String = null
+  ): SVGInjectorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (each != null) __obj.updateDynamic("each")(each)
+    if (evalScripts != null) __obj.updateDynamic("evalScripts")(evalScripts)
+    if (pngFallback != null) __obj.updateDynamic("pngFallback")(pngFallback)
+    __obj.asInstanceOf[SVGInjectorOptions]
+  }
+}
+

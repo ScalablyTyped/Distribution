@@ -10,3 +10,12 @@ trait Ancestor extends js.Object {
   var resourceId: js.UndefOr[ResourceId] = js.undefined
 }
 
+object Ancestor {
+  @scala.inline
+  def apply(resourceId: ResourceId = null): Ancestor = {
+    val __obj = js.Dynamic.literal()
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
+    __obj.asInstanceOf[Ancestor]
+  }
+}
+

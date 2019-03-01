@@ -18,3 +18,18 @@ trait ValueSortSettings extends js.Object {
   var sortOrder: js.UndefOr[ejDotWebDotAllLib.ejNs.PivotAnalysisNs.SortOrder | java.lang.String] = js.undefined
 }
 
+object ValueSortSettings {
+  @scala.inline
+  def apply(
+    headerDelimiters: java.lang.String = null,
+    headerText: java.lang.String = null,
+    sortOrder: ejDotWebDotAllLib.ejNs.PivotAnalysisNs.SortOrder | java.lang.String = null
+  ): ValueSortSettings = {
+    val __obj = js.Dynamic.literal()
+    if (headerDelimiters != null) __obj.updateDynamic("headerDelimiters")(headerDelimiters)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValueSortSettings]
+  }
+}
+

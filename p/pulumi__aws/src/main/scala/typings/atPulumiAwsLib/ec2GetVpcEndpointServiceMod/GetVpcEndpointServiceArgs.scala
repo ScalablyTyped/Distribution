@@ -16,3 +16,13 @@ trait GetVpcEndpointServiceArgs extends js.Object {
   val serviceName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetVpcEndpointServiceArgs {
+  @scala.inline
+  def apply(service: java.lang.String = null, serviceName: java.lang.String = null): GetVpcEndpointServiceArgs = {
+    val __obj = js.Dynamic.literal()
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    __obj.asInstanceOf[GetVpcEndpointServiceArgs]
+  }
+}
+

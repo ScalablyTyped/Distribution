@@ -11,3 +11,18 @@ trait Anon_DeletedRange extends js.Object {
   val OldXMLNode: activexDashWordLib.WordNs.XMLNode
 }
 
+object Anon_DeletedRange {
+  @scala.inline
+  def apply(
+    DeletedRange: activexDashWordLib.WordNs.Range,
+    InUndoRedo: scala.Boolean,
+    OldXMLNode: activexDashWordLib.WordNs.XMLNode
+  ): Anon_DeletedRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DeletedRange")(DeletedRange)
+    __obj.updateDynamic("InUndoRedo")(InUndoRedo)
+    __obj.updateDynamic("OldXMLNode")(OldXMLNode)
+    __obj.asInstanceOf[Anon_DeletedRange]
+  }
+}
+

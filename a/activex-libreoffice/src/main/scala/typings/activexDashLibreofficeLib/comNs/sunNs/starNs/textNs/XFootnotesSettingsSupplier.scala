@@ -14,3 +14,22 @@ trait XFootnotesSettingsSupplier
   def getFootnotesSettings(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object XFootnotesSettingsSupplier {
+  @scala.inline
+  def apply(
+    FootnotesSettings: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getFootnotesSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFootnotesSettingsSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FootnotesSettings")(FootnotesSettings)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFootnotesSettings")(getFootnotesSettings)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFootnotesSettingsSupplier]
+  }
+}
+

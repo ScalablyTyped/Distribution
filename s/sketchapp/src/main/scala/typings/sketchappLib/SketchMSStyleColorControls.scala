@@ -15,3 +15,26 @@ trait SketchMSStyleColorControls extends js.Object {
   var saturation: scala.Double
 }
 
+object SketchMSStyleColorControls {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.styleColorControls,
+    brightness: scala.Double,
+    contrast: scala.Double,
+    hue: scala.Double,
+    isEnabled: scala.Double,
+    saturation: scala.Double,
+    do_objectID: java.lang.String = null
+  ): SketchMSStyleColorControls = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_class")(_class)
+    __obj.updateDynamic("brightness")(brightness)
+    __obj.updateDynamic("contrast")(contrast)
+    __obj.updateDynamic("hue")(hue)
+    __obj.updateDynamic("isEnabled")(isEnabled)
+    __obj.updateDynamic("saturation")(saturation)
+    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+    __obj.asInstanceOf[SketchMSStyleColorControls]
+  }
+}
+

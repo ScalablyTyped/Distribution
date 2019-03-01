@@ -20,3 +20,30 @@ trait Info extends js.Object {
   var platform: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Info {
+  @scala.inline
+  def apply(
+    buildDate: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    compiler: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    gitCommit: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    gitTreeState: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    gitVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    goVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    major: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    minor: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    platform: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): Info = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildDate")(buildDate.asInstanceOf[js.Any])
+    __obj.updateDynamic("compiler")(compiler.asInstanceOf[js.Any])
+    __obj.updateDynamic("gitCommit")(gitCommit.asInstanceOf[js.Any])
+    __obj.updateDynamic("gitTreeState")(gitTreeState.asInstanceOf[js.Any])
+    __obj.updateDynamic("gitVersion")(gitVersion.asInstanceOf[js.Any])
+    __obj.updateDynamic("goVersion")(goVersion.asInstanceOf[js.Any])
+    __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
+    __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
+    __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Info]
+  }
+}
+

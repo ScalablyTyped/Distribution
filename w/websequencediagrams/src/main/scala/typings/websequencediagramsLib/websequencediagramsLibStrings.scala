@@ -7,49 +7,64 @@ import scala.scalajs.js.annotation._
 
 object websequencediagramsLibStrings {
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait earth extends js.Object
+  sealed trait earth
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait magazine extends js.Object
+  sealed trait magazine
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait `modern-blue` extends js.Object
+  sealed trait `modern-blue`
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait mscgen extends js.Object
+  sealed trait mscgen
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait napkin extends js.Object
+  sealed trait napkin
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait omegapple extends js.Object
+  sealed trait omegapple
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait patent extends js.Object
+  sealed trait patent
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait pdf extends js.Object
+  sealed trait pdf
+    extends websequencediagramsLib.websequencediagramsMod.OutputType
   
   @js.native
-  sealed trait png extends js.Object
+  sealed trait png
+    extends websequencediagramsLib.websequencediagramsMod.OutputType
   
   @js.native
-  sealed trait qsd extends js.Object
+  sealed trait qsd
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait rose extends js.Object
+  sealed trait rose
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait roundgreen extends js.Object
+  sealed trait roundgreen
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @js.native
-  sealed trait svg extends js.Object
+  sealed trait svg
+    extends websequencediagramsLib.websequencediagramsMod.OutputType
   
   @js.native
-  sealed trait vs2010 extends js.Object
+  sealed trait vs2010
+    extends websequencediagramsLib.websequencediagramsMod.Style
   
   @scala.inline
   def default: default = "default".asInstanceOf[default]

@@ -14,3 +14,14 @@ trait Anon_BackupOption extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_BackupOption {
+  @scala.inline
+  def apply(backupOption: Anon_Color = null, size: java.lang.String = null, `type`: java.lang.String = null): Anon_BackupOption = {
+    val __obj = js.Dynamic.literal()
+    if (backupOption != null) __obj.updateDynamic("backupOption")(backupOption)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_BackupOption]
+  }
+}
+

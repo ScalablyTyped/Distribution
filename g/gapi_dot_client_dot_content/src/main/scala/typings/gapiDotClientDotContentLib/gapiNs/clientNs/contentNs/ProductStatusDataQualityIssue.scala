@@ -24,3 +24,28 @@ trait ProductStatusDataQualityIssue extends js.Object {
   var valueProvided: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProductStatusDataQualityIssue {
+  @scala.inline
+  def apply(
+    detail: java.lang.String = null,
+    fetchStatus: java.lang.String = null,
+    id: java.lang.String = null,
+    location: java.lang.String = null,
+    severity: java.lang.String = null,
+    timestamp: java.lang.String = null,
+    valueOnLandingPage: java.lang.String = null,
+    valueProvided: java.lang.String = null
+  ): ProductStatusDataQualityIssue = {
+    val __obj = js.Dynamic.literal()
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (fetchStatus != null) __obj.updateDynamic("fetchStatus")(fetchStatus)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (valueOnLandingPage != null) __obj.updateDynamic("valueOnLandingPage")(valueOnLandingPage)
+    if (valueProvided != null) __obj.updateDynamic("valueProvided")(valueProvided)
+    __obj.asInstanceOf[ProductStatusDataQualityIssue]
+  }
+}
+

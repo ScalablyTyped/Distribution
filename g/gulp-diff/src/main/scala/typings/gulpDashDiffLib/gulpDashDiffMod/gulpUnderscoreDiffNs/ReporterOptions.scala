@@ -16,3 +16,13 @@ trait ReporterOptions extends js.Object {
   var quiet: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReporterOptions {
+  @scala.inline
+  def apply(fail: js.UndefOr[scala.Boolean] = js.undefined, quiet: js.UndefOr[scala.Boolean] = js.undefined): ReporterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(fail)) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    __obj.asInstanceOf[ReporterOptions]
+  }
+}
+

@@ -22,3 +22,12 @@ trait MediaFileSystemsOptions extends js.Object {
   var interactive: js.UndefOr[Interactive] = js.undefined
 }
 
+object MediaFileSystemsOptions {
+  @scala.inline
+  def apply(interactive: Interactive = null): MediaFileSystemsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (interactive != null) __obj.updateDynamic("interactive")(interactive)
+    __obj.asInstanceOf[MediaFileSystemsOptions]
+  }
+}
+

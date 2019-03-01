@@ -40,3 +40,24 @@ trait IOnceSignal extends js.Object {
   def removeAll(): scala.Unit
 }
 
+object IOnceSignal {
+  @scala.inline
+  def apply(
+    addOnce: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    dispatch: js.Function1[/* repeated */ js.Any, scala.Unit],
+    numListeners: scala.Double,
+    remove: js.Function1[js.Function, signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot],
+    removeAll: js.Function0[scala.Unit],
+    valueClasses: js.Array[_]
+  ): IOnceSignal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addOnce")(addOnce)
+    __obj.updateDynamic("dispatch")(dispatch)
+    __obj.updateDynamic("numListeners")(numListeners)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removeAll")(removeAll)
+    __obj.updateDynamic("valueClasses")(valueClasses)
+    __obj.asInstanceOf[IOnceSignal]
+  }
+}
+

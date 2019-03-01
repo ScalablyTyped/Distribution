@@ -96,3 +96,48 @@ trait ASPxClientWebChart extends ASPxClientWebChartElement {
   var toolTipPosition: ASPxClientToolTipPosition
 }
 
+object ASPxClientWebChart {
+  @scala.inline
+  def apply(
+    annotations: js.Array[ASPxClientAnnotation],
+    appearanceName: java.lang.String,
+    chart: ASPxClientWebChart,
+    chartControl: ASPxClientWebChartControl,
+    crosshairOptions: ASPxClientCrosshairOptions,
+    cssPostfix: java.lang.String,
+    diagram: ASPxClientWebChartElement,
+    legend: ASPxClientLegend,
+    legends: js.Array[ASPxClientLegend],
+    paletteName: java.lang.String,
+    selectionMode: java.lang.String,
+    series: js.Array[ASPxClientSeries],
+    showCrosshair: scala.Boolean,
+    showPointToolTip: scala.Boolean,
+    showSeriesToolTip: scala.Boolean,
+    titles: js.Array[ASPxClientChartTitle],
+    toolTipController: ASPxClientToolTipController,
+    toolTipPosition: ASPxClientToolTipPosition
+  ): ASPxClientWebChart = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotations")(annotations)
+    __obj.updateDynamic("appearanceName")(appearanceName)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("chartControl")(chartControl)
+    __obj.updateDynamic("crosshairOptions")(crosshairOptions)
+    __obj.updateDynamic("cssPostfix")(cssPostfix)
+    __obj.updateDynamic("diagram")(diagram)
+    __obj.updateDynamic("legend")(legend)
+    __obj.updateDynamic("legends")(legends)
+    __obj.updateDynamic("paletteName")(paletteName)
+    __obj.updateDynamic("selectionMode")(selectionMode)
+    __obj.updateDynamic("series")(series)
+    __obj.updateDynamic("showCrosshair")(showCrosshair)
+    __obj.updateDynamic("showPointToolTip")(showPointToolTip)
+    __obj.updateDynamic("showSeriesToolTip")(showSeriesToolTip)
+    __obj.updateDynamic("titles")(titles)
+    __obj.updateDynamic("toolTipController")(toolTipController)
+    __obj.updateDynamic("toolTipPosition")(toolTipPosition)
+    __obj.asInstanceOf[ASPxClientWebChart]
+  }
+}
+

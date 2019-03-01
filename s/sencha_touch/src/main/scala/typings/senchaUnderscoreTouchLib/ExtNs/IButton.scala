@@ -141,3 +141,108 @@ trait IButton extends IComponent {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IButton {
+  @scala.inline
+  def apply(
+    IComponent: IComponent = null,
+    autoEvent: java.lang.String = null,
+    badge: java.lang.String = null,
+    badgeCls: java.lang.String = null,
+    badgeText: java.lang.String = null,
+    baseCls: java.lang.String = null,
+    getAutoEvent: js.Function0[java.lang.String] = null,
+    getBadgeCls: js.Function0[java.lang.String] = null,
+    getBadgeText: js.Function0[java.lang.String] = null,
+    getBaseCls: js.Function0[java.lang.String] = null,
+    getHandler: js.Function0[_] = null,
+    getIcon: js.Function0[java.lang.String] = null,
+    getIconAlign: js.Function0[java.lang.String] = null,
+    getIconCls: js.Function0[java.lang.String] = null,
+    getLabelCls: js.Function0[java.lang.String] = null,
+    getPressedCls: js.Function0[java.lang.String] = null,
+    getPressedDelay: js.Function0[_] = null,
+    getScope: js.Function0[_] = null,
+    getText: js.Function0[java.lang.String] = null,
+    getUi: js.Function0[java.lang.String] = null,
+    handler: js.Any = null,
+    html: java.lang.String = null,
+    icon: java.lang.String = null,
+    iconAlign: java.lang.String = null,
+    iconCls: java.lang.String = null,
+    initialize: js.Function0[scala.Unit] = null,
+    labelCls: java.lang.String = null,
+    pressedCls: java.lang.String = null,
+    pressedDelay: js.Any = null,
+    scope: js.Any = null,
+    setAutoEvent: js.Function1[/* autoEvent */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setBadge: js.Function1[/* text */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setBadgeCls: js.Function1[/* badgeCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setBadgeText: js.Function1[/* badgeText */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setHandler: js.Function1[/* handler */ js.UndefOr[js.Any], scala.Unit] = null,
+    setIcon: js.Function1[/* icon */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setIconAlign: js.Function1[/* iconAlign */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setIconClass: js.Function1[/* iconClass */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setIconCls: js.Function1[/* iconCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setLabelCls: js.Function1[/* labelCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setPressedCls: js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setPressedDelay: js.Function1[/* pressedDelay */ js.UndefOr[js.Any], scala.Unit] = null,
+    setScope: js.Function1[/* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    setText: js.Function1[/* text */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setUi: js.Function1[/* ui */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    text: java.lang.String = null,
+    ui: java.lang.String = null
+  ): IButton = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (autoEvent != null) __obj.updateDynamic("autoEvent")(autoEvent)
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (badgeCls != null) __obj.updateDynamic("badgeCls")(badgeCls)
+    if (badgeText != null) __obj.updateDynamic("badgeText")(badgeText)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (getAutoEvent != null) __obj.updateDynamic("getAutoEvent")(getAutoEvent)
+    if (getBadgeCls != null) __obj.updateDynamic("getBadgeCls")(getBadgeCls)
+    if (getBadgeText != null) __obj.updateDynamic("getBadgeText")(getBadgeText)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
+    if (getHandler != null) __obj.updateDynamic("getHandler")(getHandler)
+    if (getIcon != null) __obj.updateDynamic("getIcon")(getIcon)
+    if (getIconAlign != null) __obj.updateDynamic("getIconAlign")(getIconAlign)
+    if (getIconCls != null) __obj.updateDynamic("getIconCls")(getIconCls)
+    if (getLabelCls != null) __obj.updateDynamic("getLabelCls")(getLabelCls)
+    if (getPressedCls != null) __obj.updateDynamic("getPressedCls")(getPressedCls)
+    if (getPressedDelay != null) __obj.updateDynamic("getPressedDelay")(getPressedDelay)
+    if (getScope != null) __obj.updateDynamic("getScope")(getScope)
+    if (getText != null) __obj.updateDynamic("getText")(getText)
+    if (getUi != null) __obj.updateDynamic("getUi")(getUi)
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconAlign != null) __obj.updateDynamic("iconAlign")(iconAlign)
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (labelCls != null) __obj.updateDynamic("labelCls")(labelCls)
+    if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls)
+    if (pressedDelay != null) __obj.updateDynamic("pressedDelay")(pressedDelay)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (setAutoEvent != null) __obj.updateDynamic("setAutoEvent")(setAutoEvent)
+    if (setBadge != null) __obj.updateDynamic("setBadge")(setBadge)
+    if (setBadgeCls != null) __obj.updateDynamic("setBadgeCls")(setBadgeCls)
+    if (setBadgeText != null) __obj.updateDynamic("setBadgeText")(setBadgeText)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
+    if (setHandler != null) __obj.updateDynamic("setHandler")(setHandler)
+    if (setIcon != null) __obj.updateDynamic("setIcon")(setIcon)
+    if (setIconAlign != null) __obj.updateDynamic("setIconAlign")(setIconAlign)
+    if (setIconClass != null) __obj.updateDynamic("setIconClass")(setIconClass)
+    if (setIconCls != null) __obj.updateDynamic("setIconCls")(setIconCls)
+    if (setLabelCls != null) __obj.updateDynamic("setLabelCls")(setLabelCls)
+    if (setPressedCls != null) __obj.updateDynamic("setPressedCls")(setPressedCls)
+    if (setPressedDelay != null) __obj.updateDynamic("setPressedDelay")(setPressedDelay)
+    if (setScope != null) __obj.updateDynamic("setScope")(setScope)
+    if (setText != null) __obj.updateDynamic("setText")(setText)
+    if (setUi != null) __obj.updateDynamic("setUi")(setUi)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    __obj.asInstanceOf[IButton]
+  }
+}
+

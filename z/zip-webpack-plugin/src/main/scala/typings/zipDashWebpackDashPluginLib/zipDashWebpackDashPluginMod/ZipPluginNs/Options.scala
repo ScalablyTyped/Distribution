@@ -51,3 +51,30 @@ trait Options extends js.Object {
   var zipOptions: js.UndefOr[zipOptions] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    exclude: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null,
+    extension: java.lang.String = null,
+    fileOptions: fileOptions = null,
+    filename: java.lang.String = null,
+    include: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null,
+    path: java.lang.String = null,
+    pathMapper: js.Function1[/* assetPath */ java.lang.String, java.lang.String] = null,
+    pathPrefix: java.lang.String = null,
+    zipOptions: zipOptions = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fileOptions != null) __obj.updateDynamic("fileOptions")(fileOptions)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (pathMapper != null) __obj.updateDynamic("pathMapper")(pathMapper)
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
+    if (zipOptions != null) __obj.updateDynamic("zipOptions")(zipOptions)
+    __obj.asInstanceOf[Options]
+  }
+}
+

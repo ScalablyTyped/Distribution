@@ -13,3 +13,13 @@ trait ExternalDocumentation extends js.Object {
   val url: java.lang.String
 }
 
+object ExternalDocumentation {
+  @scala.inline
+  def apply(description: java.lang.String, url: java.lang.String): ExternalDocumentation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ExternalDocumentation]
+  }
+}
+

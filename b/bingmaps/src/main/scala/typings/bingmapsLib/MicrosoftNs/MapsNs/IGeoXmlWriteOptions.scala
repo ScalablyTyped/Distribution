@@ -23,3 +23,24 @@ trait IGeoXmlWriteOptions extends js.Object {
   var xmlFormat: js.UndefOr[GeoXmlFormat] = js.undefined
 }
 
+object IGeoXmlWriteOptions {
+  @scala.inline
+  def apply(
+    indentChars: java.lang.String = null,
+    newLineChars: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    roundLocations: js.UndefOr[scala.Boolean] = js.undefined,
+    validate: js.UndefOr[scala.Boolean] = js.undefined,
+    xmlFormat: GeoXmlFormat = null
+  ): IGeoXmlWriteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (indentChars != null) __obj.updateDynamic("indentChars")(indentChars)
+    if (newLineChars != null) __obj.updateDynamic("newLineChars")(newLineChars)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (!js.isUndefined(roundLocations)) __obj.updateDynamic("roundLocations")(roundLocations)
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (xmlFormat != null) __obj.updateDynamic("xmlFormat")(xmlFormat)
+    __obj.asInstanceOf[IGeoXmlWriteOptions]
+  }
+}
+

@@ -291,3 +291,24 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PaginationProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    isFullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    isLarge: js.UndefOr[scala.Boolean] = js.undefined,
+    isSmall: js.UndefOr[scala.Boolean] = js.undefined,
+    isTiny: js.UndefOr[scala.Boolean] = js.undefined
+  ): PaginationProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (!js.isUndefined(isFullscreen)) __obj.updateDynamic("isFullscreen")(isFullscreen)
+    if (!js.isUndefined(isLarge)) __obj.updateDynamic("isLarge")(isLarge)
+    if (!js.isUndefined(isSmall)) __obj.updateDynamic("isSmall")(isSmall)
+    if (!js.isUndefined(isTiny)) __obj.updateDynamic("isTiny")(isTiny)
+    __obj.asInstanceOf[PaginationProps]
+  }
+}
+

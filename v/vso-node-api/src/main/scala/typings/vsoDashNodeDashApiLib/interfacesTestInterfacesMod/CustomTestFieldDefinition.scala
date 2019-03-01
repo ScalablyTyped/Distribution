@@ -12,3 +12,20 @@ trait CustomTestFieldDefinition extends js.Object {
   var scope: CustomTestFieldScope
 }
 
+object CustomTestFieldDefinition {
+  @scala.inline
+  def apply(
+    fieldId: scala.Double,
+    fieldName: java.lang.String,
+    fieldType: CustomTestFieldType,
+    scope: CustomTestFieldScope
+  ): CustomTestFieldDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fieldId")(fieldId)
+    __obj.updateDynamic("fieldName")(fieldName)
+    __obj.updateDynamic("fieldType")(fieldType)
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[CustomTestFieldDefinition]
+  }
+}
+

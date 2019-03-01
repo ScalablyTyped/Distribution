@@ -14,3 +14,22 @@ trait MenuProps
   var valign: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MenuProps {
+  @scala.inline
+  def apply(
+    target: java.lang.String,
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[js.Any] = null,
+    RippleComponent: RippleComponent = null,
+    align: java.lang.String = null,
+    valign: java.lang.String = null
+  ): MenuProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("target")(target)
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, RippleComponent)
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (valign != null) __obj.updateDynamic("valign")(valign)
+    __obj.asInstanceOf[MenuProps]
+  }
+}
+

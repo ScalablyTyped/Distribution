@@ -11,3 +11,18 @@ trait Anon_C extends js.Object {
   var order: java.lang.String
 }
 
+object Anon_C {
+  @scala.inline
+  def apply(
+    c: cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.ColumnInfo,
+    index: scala.Double,
+    order: java.lang.String
+  ): Anon_C = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("c")(c)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("order")(order)
+    __obj.asInstanceOf[Anon_C]
+  }
+}
+

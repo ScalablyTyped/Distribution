@@ -10,3 +10,26 @@ trait ITimelineDate extends ITimelineEra {
   var classname: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITimelineDate {
+  @scala.inline
+  def apply(
+    endDate: java.lang.String,
+    headline: java.lang.String,
+    startDate: java.lang.String,
+    text: java.lang.String,
+    asset: ITimeLineAsset = null,
+    classname: java.lang.String = null,
+    tag: java.lang.String = null
+  ): ITimelineDate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endDate")(endDate)
+    __obj.updateDynamic("headline")(headline)
+    __obj.updateDynamic("startDate")(startDate)
+    __obj.updateDynamic("text")(text)
+    if (asset != null) __obj.updateDynamic("asset")(asset)
+    if (classname != null) __obj.updateDynamic("classname")(classname)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[ITimelineDate]
+  }
+}
+

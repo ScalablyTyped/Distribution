@@ -20,3 +20,20 @@ trait TimeDrillDown extends js.Object {
   var showMeridian: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TimeDrillDown {
+  @scala.inline
+  def apply(
+    autoClose: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    interval: scala.Int | scala.Double = null,
+    showMeridian: js.UndefOr[scala.Boolean] = js.undefined
+  ): TimeDrillDown = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMeridian)) __obj.updateDynamic("showMeridian")(showMeridian)
+    __obj.asInstanceOf[TimeDrillDown]
+  }
+}
+

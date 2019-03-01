@@ -28,3 +28,20 @@ trait HrefOptions extends js.Object {
   var relative: js.UndefOr[StateOrName] = js.undefined
 }
 
+object HrefOptions {
+  @scala.inline
+  def apply(
+    absolute: js.UndefOr[scala.Boolean] = js.undefined,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    lossy: js.UndefOr[scala.Boolean] = js.undefined,
+    relative: StateOrName = null
+  ): HrefOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (!js.isUndefined(lossy)) __obj.updateDynamic("lossy")(lossy)
+    if (relative != null) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HrefOptions]
+  }
+}
+

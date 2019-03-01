@@ -20,3 +20,13 @@ trait OnAcceptInfoData extends js.Object {
   var socketId: chromeDashAppsLib.chromeNs.integer
 }
 
+object OnAcceptInfoData {
+  @scala.inline
+  def apply(clientSocketId: chromeDashAppsLib.chromeNs.integer, socketId: chromeDashAppsLib.chromeNs.integer): OnAcceptInfoData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientSocketId")(clientSocketId)
+    __obj.updateDynamic("socketId")(socketId)
+    __obj.asInstanceOf[OnAcceptInfoData]
+  }
+}
+

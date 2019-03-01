@@ -24,3 +24,24 @@ trait IosInfo extends js.Object {
   var iosIpadFallbackLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IosInfo {
+  @scala.inline
+  def apply(
+    iosAppStoreId: java.lang.String = null,
+    iosBundleId: java.lang.String = null,
+    iosCustomScheme: java.lang.String = null,
+    iosFallbackLink: java.lang.String = null,
+    iosIpadBundleId: java.lang.String = null,
+    iosIpadFallbackLink: java.lang.String = null
+  ): IosInfo = {
+    val __obj = js.Dynamic.literal()
+    if (iosAppStoreId != null) __obj.updateDynamic("iosAppStoreId")(iosAppStoreId)
+    if (iosBundleId != null) __obj.updateDynamic("iosBundleId")(iosBundleId)
+    if (iosCustomScheme != null) __obj.updateDynamic("iosCustomScheme")(iosCustomScheme)
+    if (iosFallbackLink != null) __obj.updateDynamic("iosFallbackLink")(iosFallbackLink)
+    if (iosIpadBundleId != null) __obj.updateDynamic("iosIpadBundleId")(iosIpadBundleId)
+    if (iosIpadFallbackLink != null) __obj.updateDynamic("iosIpadFallbackLink")(iosIpadFallbackLink)
+    __obj.asInstanceOf[IosInfo]
+  }
+}
+

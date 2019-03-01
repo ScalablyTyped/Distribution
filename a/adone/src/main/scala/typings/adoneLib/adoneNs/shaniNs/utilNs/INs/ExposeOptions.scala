@@ -16,3 +16,13 @@ trait ExposeOptions extends js.Object {
   var prefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExposeOptions {
+  @scala.inline
+  def apply(includeFail: js.UndefOr[scala.Boolean] = js.undefined, prefix: java.lang.String = null): ExposeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeFail)) __obj.updateDynamic("includeFail")(includeFail)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[ExposeOptions]
+  }
+}
+

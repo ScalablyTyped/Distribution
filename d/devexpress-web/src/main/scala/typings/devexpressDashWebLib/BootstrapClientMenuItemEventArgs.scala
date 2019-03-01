@@ -16,3 +16,12 @@ trait BootstrapClientMenuItemEventArgs extends ASPxClientEventArgs {
   var item: BootstrapClientMenuItem
 }
 
+object BootstrapClientMenuItemEventArgs {
+  @scala.inline
+  def apply(item: BootstrapClientMenuItem): BootstrapClientMenuItemEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[BootstrapClientMenuItemEventArgs]
+  }
+}
+

@@ -16,3 +16,13 @@ trait IndicatorsLowerLine extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IndicatorsLowerLine {
+  @scala.inline
+  def apply(fill: java.lang.String = null, width: scala.Int | scala.Double = null): IndicatorsLowerLine = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IndicatorsLowerLine]
+  }
+}
+

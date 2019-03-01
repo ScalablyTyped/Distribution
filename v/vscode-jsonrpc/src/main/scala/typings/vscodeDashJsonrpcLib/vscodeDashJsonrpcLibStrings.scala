@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object vscodeDashJsonrpcLibStrings {
   @js.native
-  sealed trait messages extends js.Object
+  sealed trait messages
+    extends vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.TraceValues
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.TraceValues
   
   @js.native
-  sealed trait `receive-notification` extends js.Object
+  sealed trait `receive-notification`
+    extends vscodeDashJsonrpcLib.libMessagesMod.LSPMessageType
   
   @js.native
-  sealed trait `receive-request` extends js.Object
+  sealed trait `receive-request`
+    extends vscodeDashJsonrpcLib.libMessagesMod.LSPMessageType
   
   @js.native
-  sealed trait `receive-response` extends js.Object
+  sealed trait `receive-response`
+    extends vscodeDashJsonrpcLib.libMessagesMod.LSPMessageType
   
   @js.native
-  sealed trait `send-notification` extends js.Object
+  sealed trait `send-notification`
+    extends vscodeDashJsonrpcLib.libMessagesMod.LSPMessageType
   
   @js.native
-  sealed trait `send-request` extends js.Object
+  sealed trait `send-request`
+    extends vscodeDashJsonrpcLib.libMessagesMod.LSPMessageType
   
   @js.native
-  sealed trait `send-response` extends js.Object
+  sealed trait `send-response`
+    extends vscodeDashJsonrpcLib.libMessagesMod.LSPMessageType
   
   @js.native
-  sealed trait verbose extends js.Object
+  sealed trait verbose
+    extends vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.TraceValues
   
   @scala.inline
   def messages: messages = "messages".asInstanceOf[messages]

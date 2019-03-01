@@ -14,3 +14,18 @@ trait ConversionsBatchUpdateRequest extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConversionsBatchUpdateRequest {
+  @scala.inline
+  def apply(
+    conversions: js.Array[Conversion] = null,
+    encryptionInfo: EncryptionInfo = null,
+    kind: java.lang.String = null
+  ): ConversionsBatchUpdateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (conversions != null) __obj.updateDynamic("conversions")(conversions)
+    if (encryptionInfo != null) __obj.updateDynamic("encryptionInfo")(encryptionInfo)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[ConversionsBatchUpdateRequest]
+  }
+}
+

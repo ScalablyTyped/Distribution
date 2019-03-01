@@ -15,3 +15,12 @@ trait ZIndexProps extends js.Object {
   var zIndex: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.ZIndexProperty]] = js.undefined
 }
 
+object ZIndexProps {
+  @scala.inline
+  def apply(zIndex: ResponsiveValue[csstypeLib.csstypeMod.ZIndexProperty] = null): ZIndexProps = {
+    val __obj = js.Dynamic.literal()
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ZIndexProps]
+  }
+}
+

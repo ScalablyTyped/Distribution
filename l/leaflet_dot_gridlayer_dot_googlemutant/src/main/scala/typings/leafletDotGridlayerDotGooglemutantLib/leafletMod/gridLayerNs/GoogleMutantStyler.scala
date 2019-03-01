@@ -16,3 +16,28 @@ trait GoogleMutantStyler extends js.Object {
   var weight: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GoogleMutantStyler {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    gamma: scala.Int | scala.Double = null,
+    hue: java.lang.String = null,
+    invert_lightness: js.UndefOr[scala.Boolean] = js.undefined,
+    lightness: scala.Int | scala.Double = null,
+    saturation: scala.Int | scala.Double = null,
+    visibility: java.lang.String = null,
+    weight: scala.Int | scala.Double = null
+  ): GoogleMutantStyler = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (gamma != null) __obj.updateDynamic("gamma")(gamma.asInstanceOf[js.Any])
+    if (hue != null) __obj.updateDynamic("hue")(hue)
+    if (!js.isUndefined(invert_lightness)) __obj.updateDynamic("invert_lightness")(invert_lightness)
+    if (lightness != null) __obj.updateDynamic("lightness")(lightness.asInstanceOf[js.Any])
+    if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GoogleMutantStyler]
+  }
+}
+

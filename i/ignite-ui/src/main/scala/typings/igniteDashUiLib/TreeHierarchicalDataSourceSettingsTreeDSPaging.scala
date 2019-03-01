@@ -29,3 +29,21 @@ trait TreeHierarchicalDataSourceSettingsTreeDSPaging
   var mode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TreeHierarchicalDataSourceSettingsTreeDSPaging {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for TreeHierarchicalDataSourceSettingsTreeDSPaging
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    contextRowMode: java.lang.String = null,
+    mode: java.lang.String = null
+  ): TreeHierarchicalDataSourceSettingsTreeDSPaging = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSPaging]
+  }
+}
+

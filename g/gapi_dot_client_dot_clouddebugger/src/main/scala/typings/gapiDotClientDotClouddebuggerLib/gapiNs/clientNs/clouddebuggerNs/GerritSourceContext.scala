@@ -22,3 +22,22 @@ trait GerritSourceContext extends js.Object {
   var revisionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GerritSourceContext {
+  @scala.inline
+  def apply(
+    aliasContext: AliasContext = null,
+    aliasName: java.lang.String = null,
+    gerritProject: java.lang.String = null,
+    hostUri: java.lang.String = null,
+    revisionId: java.lang.String = null
+  ): GerritSourceContext = {
+    val __obj = js.Dynamic.literal()
+    if (aliasContext != null) __obj.updateDynamic("aliasContext")(aliasContext)
+    if (aliasName != null) __obj.updateDynamic("aliasName")(aliasName)
+    if (gerritProject != null) __obj.updateDynamic("gerritProject")(gerritProject)
+    if (hostUri != null) __obj.updateDynamic("hostUri")(hostUri)
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
+    __obj.asInstanceOf[GerritSourceContext]
+  }
+}
+

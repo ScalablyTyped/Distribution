@@ -12,3 +12,16 @@ trait ImageOptions extends js.Object {
   var thumbnail: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ImageOptions {
+  @scala.inline
+  def apply(
+    dataURI: js.UndefOr[scala.Boolean] = js.undefined,
+    thumbnail: js.UndefOr[scala.Boolean] = js.undefined
+  ): ImageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dataURI)) __obj.updateDynamic("dataURI")(dataURI)
+    if (!js.isUndefined(thumbnail)) __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[ImageOptions]
+  }
+}
+

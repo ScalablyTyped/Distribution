@@ -9,3 +9,12 @@ trait GetRootPropsOptions extends js.Object {
   var refKey: java.lang.String
 }
 
+object GetRootPropsOptions {
+  @scala.inline
+  def apply(refKey: java.lang.String): GetRootPropsOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("refKey")(refKey)
+    __obj.asInstanceOf[GetRootPropsOptions]
+  }
+}
+

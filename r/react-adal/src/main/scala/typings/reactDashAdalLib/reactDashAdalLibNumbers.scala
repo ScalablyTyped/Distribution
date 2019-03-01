@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object reactDashAdalLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends reactDashAdalLib.reactDashAdalMod.LoggingLevel
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends reactDashAdalLib.reactDashAdalMod.LoggingLevel
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends reactDashAdalLib.reactDashAdalMod.LoggingLevel
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends reactDashAdalLib.reactDashAdalMod.LoggingLevel
   
   @js.native
   sealed trait `483` extends js.Object

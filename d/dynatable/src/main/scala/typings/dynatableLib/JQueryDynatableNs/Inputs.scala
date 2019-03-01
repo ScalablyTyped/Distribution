@@ -227,3 +227,78 @@ trait Inputs extends js.Object {
   var sorts: js.UndefOr[js.Any] = js.undefined
 }
 
+object Inputs {
+  @scala.inline
+  def apply(
+    multisort: js.Array[java.lang.String] = null,
+    page: js.Any = null,
+    pageText: java.lang.String = null,
+    paginationActiveClass: java.lang.String = null,
+    paginationClass: java.lang.String = null,
+    paginationDisabledClass: java.lang.String = null,
+    paginationGap: js.Array[scala.Double] = null,
+    paginationLinkClass: java.lang.String = null,
+    paginationLinkPlacement: java.lang.String = null,
+    paginationLinkTarget: java.lang.String | stdLib.Element | dynatableLib.JQuery = null,
+    paginationNext: java.lang.String = null,
+    paginationNextClass: java.lang.String = null,
+    paginationPrev: java.lang.String = null,
+    paginationPrevClass: java.lang.String = null,
+    perPagePlacement: java.lang.String = null,
+    perPageTarget: java.lang.String | stdLib.Element | dynatableLib.JQuery = null,
+    perPageText: java.lang.String = null,
+    processingText: java.lang.String = null,
+    queries: dynatableLib.JQuery = null,
+    queryEvent: java.lang.String = null,
+    recordCountFilteredTemplate: java.lang.String = null,
+    recordCountPageBoundTemplate: java.lang.String = null,
+    recordCountPageUnboundedTemplate: java.lang.String = null,
+    recordCountPlacement: java.lang.String = null,
+    recordCountTarget: dynatableLib.JQuery = null,
+    recordCountTemplate: java.lang.String = null,
+    recordCountText: java.lang.String = null,
+    recordCountTextTemplate: java.lang.String = null,
+    recordCountTotalTemplate: java.lang.String = null,
+    searchPlacement: java.lang.String = null,
+    searchTarget: java.lang.String | stdLib.Element | dynatableLib.JQuery = null,
+    searchText: java.lang.String = null,
+    sorts: js.Any = null
+  ): Inputs = {
+    val __obj = js.Dynamic.literal()
+    if (multisort != null) __obj.updateDynamic("multisort")(multisort)
+    if (page != null) __obj.updateDynamic("page")(page)
+    if (pageText != null) __obj.updateDynamic("pageText")(pageText)
+    if (paginationActiveClass != null) __obj.updateDynamic("paginationActiveClass")(paginationActiveClass)
+    if (paginationClass != null) __obj.updateDynamic("paginationClass")(paginationClass)
+    if (paginationDisabledClass != null) __obj.updateDynamic("paginationDisabledClass")(paginationDisabledClass)
+    if (paginationGap != null) __obj.updateDynamic("paginationGap")(paginationGap)
+    if (paginationLinkClass != null) __obj.updateDynamic("paginationLinkClass")(paginationLinkClass)
+    if (paginationLinkPlacement != null) __obj.updateDynamic("paginationLinkPlacement")(paginationLinkPlacement)
+    if (paginationLinkTarget != null) __obj.updateDynamic("paginationLinkTarget")(paginationLinkTarget.asInstanceOf[js.Any])
+    if (paginationNext != null) __obj.updateDynamic("paginationNext")(paginationNext)
+    if (paginationNextClass != null) __obj.updateDynamic("paginationNextClass")(paginationNextClass)
+    if (paginationPrev != null) __obj.updateDynamic("paginationPrev")(paginationPrev)
+    if (paginationPrevClass != null) __obj.updateDynamic("paginationPrevClass")(paginationPrevClass)
+    if (perPagePlacement != null) __obj.updateDynamic("perPagePlacement")(perPagePlacement)
+    if (perPageTarget != null) __obj.updateDynamic("perPageTarget")(perPageTarget.asInstanceOf[js.Any])
+    if (perPageText != null) __obj.updateDynamic("perPageText")(perPageText)
+    if (processingText != null) __obj.updateDynamic("processingText")(processingText)
+    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (queryEvent != null) __obj.updateDynamic("queryEvent")(queryEvent)
+    if (recordCountFilteredTemplate != null) __obj.updateDynamic("recordCountFilteredTemplate")(recordCountFilteredTemplate)
+    if (recordCountPageBoundTemplate != null) __obj.updateDynamic("recordCountPageBoundTemplate")(recordCountPageBoundTemplate)
+    if (recordCountPageUnboundedTemplate != null) __obj.updateDynamic("recordCountPageUnboundedTemplate")(recordCountPageUnboundedTemplate)
+    if (recordCountPlacement != null) __obj.updateDynamic("recordCountPlacement")(recordCountPlacement)
+    if (recordCountTarget != null) __obj.updateDynamic("recordCountTarget")(recordCountTarget)
+    if (recordCountTemplate != null) __obj.updateDynamic("recordCountTemplate")(recordCountTemplate)
+    if (recordCountText != null) __obj.updateDynamic("recordCountText")(recordCountText)
+    if (recordCountTextTemplate != null) __obj.updateDynamic("recordCountTextTemplate")(recordCountTextTemplate)
+    if (recordCountTotalTemplate != null) __obj.updateDynamic("recordCountTotalTemplate")(recordCountTotalTemplate)
+    if (searchPlacement != null) __obj.updateDynamic("searchPlacement")(searchPlacement)
+    if (searchTarget != null) __obj.updateDynamic("searchTarget")(searchTarget.asInstanceOf[js.Any])
+    if (searchText != null) __obj.updateDynamic("searchText")(searchText)
+    if (sorts != null) __obj.updateDynamic("sorts")(sorts)
+    __obj.asInstanceOf[Inputs]
+  }
+}
+

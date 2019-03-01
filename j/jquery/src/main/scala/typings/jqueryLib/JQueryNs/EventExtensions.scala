@@ -17,3 +17,12 @@ trait EventExtensions extends js.Object {
   var special: SpecialEventHooks
 }
 
+object EventExtensions {
+  @scala.inline
+  def apply(special: SpecialEventHooks): EventExtensions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("special")(special)
+    __obj.asInstanceOf[EventExtensions]
+  }
+}
+

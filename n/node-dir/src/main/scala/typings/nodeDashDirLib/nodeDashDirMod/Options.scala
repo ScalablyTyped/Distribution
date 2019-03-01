@@ -28,3 +28,32 @@ trait Options extends js.Object {
   var sort: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    doneOnErr: js.UndefOr[scala.Boolean] = js.undefined,
+    encoding: java.lang.String = null,
+    exclude: stdLib.RegExp | js.Array[java.lang.String] = null,
+    excludeDir: stdLib.RegExp | js.Array[java.lang.String] = null,
+    `match`: stdLib.RegExp | js.Array[java.lang.String] = null,
+    matchDir: stdLib.RegExp | js.Array[java.lang.String] = null,
+    recursive: js.UndefOr[scala.Boolean] = js.undefined,
+    reverse: js.UndefOr[scala.Boolean] = js.undefined,
+    shortName: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(doneOnErr)) __obj.updateDynamic("doneOnErr")(doneOnErr)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (excludeDir != null) __obj.updateDynamic("excludeDir")(excludeDir.asInstanceOf[js.Any])
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (matchDir != null) __obj.updateDynamic("matchDir")(matchDir.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (!js.isUndefined(shortName)) __obj.updateDynamic("shortName")(shortName)
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    __obj.asInstanceOf[Options]
+  }
+}
+

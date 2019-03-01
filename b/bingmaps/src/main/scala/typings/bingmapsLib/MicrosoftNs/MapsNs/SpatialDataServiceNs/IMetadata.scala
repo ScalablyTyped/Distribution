@@ -21,3 +21,22 @@ trait IMetadata extends js.Object {
   var RegionalCulture: java.lang.String
 }
 
+object IMetadata {
+  @scala.inline
+  def apply(
+    AreaSqKm: java.lang.String,
+    BestMapViewBox: java.lang.String,
+    OfficialCulture: java.lang.String,
+    PopulationClass: java.lang.String,
+    RegionalCulture: java.lang.String
+  ): IMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AreaSqKm")(AreaSqKm)
+    __obj.updateDynamic("BestMapViewBox")(BestMapViewBox)
+    __obj.updateDynamic("OfficialCulture")(OfficialCulture)
+    __obj.updateDynamic("PopulationClass")(PopulationClass)
+    __obj.updateDynamic("RegionalCulture")(RegionalCulture)
+    __obj.asInstanceOf[IMetadata]
+  }
+}
+

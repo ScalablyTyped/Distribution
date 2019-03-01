@@ -15,3 +15,13 @@ trait ChartArea extends js.Object {
   var border: js.UndefOr[ChartAreaBorder] = js.undefined
 }
 
+object ChartArea {
+  @scala.inline
+  def apply(background: java.lang.String = null, border: ChartAreaBorder = null): ChartArea = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    __obj.asInstanceOf[ChartArea]
+  }
+}
+

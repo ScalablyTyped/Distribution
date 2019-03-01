@@ -32,3 +32,28 @@ trait AjaxErrorEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AjaxErrorEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    errorThrown: js.Any = null,
+    index: scala.Int | scala.Double = null,
+    item: js.Any = null,
+    model: Model = null,
+    text: java.lang.String = null,
+    textStatus: js.Any = null,
+    `type`: java.lang.String = null
+  ): AjaxErrorEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (errorThrown != null) __obj.updateDynamic("errorThrown")(errorThrown)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textStatus != null) __obj.updateDynamic("textStatus")(textStatus)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AjaxErrorEventArgs]
+  }
+}
+

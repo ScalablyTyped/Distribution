@@ -48,3 +48,28 @@ trait Anon_Auto extends js.Object {
   var scrollAmount: js.UndefOr[mcustomscrollbarLib.mcustomscrollbarLibStrings.auto | scala.Double] = js.undefined
 }
 
+object Anon_Auto {
+  @scala.inline
+  def apply(
+    axis: mcustomscrollbarLib.mcustomscrollbarLibStrings.x | mcustomscrollbarLib.mcustomscrollbarLibStrings.y = null,
+    deltaFactor: scala.Int | scala.Double = null,
+    disableOver: js.Array[java.lang.String] = null,
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    invert: js.UndefOr[scala.Boolean] = js.undefined,
+    normalizeDelta: js.UndefOr[scala.Boolean] = js.undefined,
+    preventDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollAmount: mcustomscrollbarLib.mcustomscrollbarLibStrings.auto | scala.Double = null
+  ): Anon_Auto = {
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (deltaFactor != null) __obj.updateDynamic("deltaFactor")(deltaFactor.asInstanceOf[js.Any])
+    if (disableOver != null) __obj.updateDynamic("disableOver")(disableOver)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)
+    if (!js.isUndefined(normalizeDelta)) __obj.updateDynamic("normalizeDelta")(normalizeDelta)
+    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault)
+    if (scrollAmount != null) __obj.updateDynamic("scrollAmount")(scrollAmount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Auto]
+  }
+}
+

@@ -45,3 +45,32 @@ trait ComputeEnvironmentState extends js.Object {
   val `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ComputeEnvironmentState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    computeEnvironmentName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    computeResources: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BidPercentageDesiredVcpus] = null,
+    eccClusterArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ecsClusterArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    serviceRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    state: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    statusReason: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ComputeEnvironmentState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (computeEnvironmentName != null) __obj.updateDynamic("computeEnvironmentName")(computeEnvironmentName.asInstanceOf[js.Any])
+    if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
+    if (eccClusterArn != null) __obj.updateDynamic("eccClusterArn")(eccClusterArn.asInstanceOf[js.Any])
+    if (ecsClusterArn != null) __obj.updateDynamic("ecsClusterArn")(ecsClusterArn.asInstanceOf[js.Any])
+    if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComputeEnvironmentState]
+  }
+}
+

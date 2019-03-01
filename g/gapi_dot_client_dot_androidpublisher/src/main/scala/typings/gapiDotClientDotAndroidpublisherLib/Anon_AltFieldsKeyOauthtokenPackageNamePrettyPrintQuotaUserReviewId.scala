@@ -29,3 +29,32 @@ trait Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewId extends
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewId {
+  @scala.inline
+  def apply(
+    packageName: java.lang.String,
+    reviewId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    translationLanguage: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("packageName")(packageName)
+    __obj.updateDynamic("reviewId")(reviewId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (translationLanguage != null) __obj.updateDynamic("translationLanguage")(translationLanguage)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewId]
+  }
+}
+

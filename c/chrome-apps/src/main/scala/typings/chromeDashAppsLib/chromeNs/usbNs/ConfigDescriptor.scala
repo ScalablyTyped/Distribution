@@ -28,3 +28,28 @@ trait ConfigDescriptor extends js.Object {
   var selfPowered: scala.Boolean
 }
 
+object ConfigDescriptor {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    configurationValue: chromeDashAppsLib.chromeNs.integer,
+    extra_data: stdLib.ArrayBuffer,
+    interfaces: js.Array[InterfaceDescriptor],
+    maxPower: chromeDashAppsLib.chromeNs.integer,
+    remoteWakeup: scala.Boolean,
+    selfPowered: scala.Boolean,
+    description: java.lang.String = null
+  ): ConfigDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("configurationValue")(configurationValue)
+    __obj.updateDynamic("extra_data")(extra_data)
+    __obj.updateDynamic("interfaces")(interfaces)
+    __obj.updateDynamic("maxPower")(maxPower)
+    __obj.updateDynamic("remoteWakeup")(remoteWakeup)
+    __obj.updateDynamic("selfPowered")(selfPowered)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[ConfigDescriptor]
+  }
+}
+

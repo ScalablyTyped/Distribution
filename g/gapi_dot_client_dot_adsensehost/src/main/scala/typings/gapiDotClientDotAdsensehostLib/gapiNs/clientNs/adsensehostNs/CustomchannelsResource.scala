@@ -20,3 +20,42 @@ trait CustomchannelsResource extends js.Object {
   def update(request: gapiDotClientDotAdsensehostLib.Anon_AdClientId): gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
 }
 
+object CustomchannelsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AdClientId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannels]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AdClientId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
+    ]
+  ): CustomchannelsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[CustomchannelsResource]
+  }
+}
+

@@ -34,3 +34,67 @@ trait ojComboboxOneSettableProperties[K, D]
   var valueOption: atOracleOraclejetLib.Anon_LabelValue
 }
 
+object ojComboboxOneSettableProperties {
+  @scala.inline
+  def apply[K, D](
+    asyncValidators: js.Array[atOracleOraclejetLib.ojvalidationDashBaseMod.AsyncValidator[_]],
+    disabled: scala.Boolean,
+    displayOptions: atOracleOraclejetLib.Anon_ConverterHint,
+    filterOnOpen: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.rawValue,
+    help: atOracleOraclejetLib.Anon_Instruction,
+    helpHints: atOracleOraclejetLib.Anon_Definition,
+    labelHint: java.lang.String,
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    minLength: scala.Double,
+    optionsKeys: atOracleOraclejetLib.Anon_ChildKeysChildren,
+    pickerAttributes: atOracleOraclejetLib.Anon_Class,
+    readOnly: scala.Boolean,
+    required: scala.Boolean,
+    translations: atOracleOraclejetLib.Anon_FilterFurther,
+    valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown,
+    value: js.Any,
+    valueOption: atOracleOraclejetLib.Anon_LabelValue,
+    converter: atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter = null,
+    describedBy: java.lang.String = null,
+    optionRenderer: js.Function1[
+      /* param0 */ atOracleOraclejetLib.ojselectcomboboxMod.ojComboboxNs.OptionContext, 
+      stdLib.Element
+    ] = null,
+    options: (js.Array[
+      atOracleOraclejetLib.ojselectcomboboxMod.ojComboboxNs.Option | atOracleOraclejetLib.ojselectcomboboxMod.ojComboboxNs.Optgroup
+    ]) | (atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D]) = null,
+    placeholder: java.lang.String = null,
+    rawValue: java.lang.String = null,
+    validators: js.Array[
+      atOracleOraclejetLib.ojvalidationDashBaseMod.Validator[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+    ] = null
+  ): ojComboboxOneSettableProperties[K, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("asyncValidators")(asyncValidators)
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("displayOptions")(displayOptions)
+    __obj.updateDynamic("filterOnOpen")(filterOnOpen.asInstanceOf[js.Any])
+    __obj.updateDynamic("help")(help)
+    __obj.updateDynamic("helpHints")(helpHints)
+    __obj.updateDynamic("labelHint")(labelHint)
+    __obj.updateDynamic("messagesCustom")(messagesCustom)
+    __obj.updateDynamic("minLength")(minLength)
+    __obj.updateDynamic("optionsKeys")(optionsKeys)
+    __obj.updateDynamic("pickerAttributes")(pickerAttributes)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.updateDynamic("required")(required)
+    __obj.updateDynamic("translations")(translations)
+    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("valueOption")(valueOption)
+    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
+    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
+    if (optionRenderer != null) __obj.updateDynamic("optionRenderer")(optionRenderer)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue)
+    if (validators != null) __obj.updateDynamic("validators")(validators)
+    __obj.asInstanceOf[ojComboboxOneSettableProperties[K, D]]
+  }
+}
+

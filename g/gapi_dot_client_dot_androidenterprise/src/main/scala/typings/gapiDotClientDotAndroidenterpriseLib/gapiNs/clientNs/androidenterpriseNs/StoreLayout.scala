@@ -21,3 +21,18 @@ trait StoreLayout extends js.Object {
   var storeLayoutType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StoreLayout {
+  @scala.inline
+  def apply(
+    homepageId: java.lang.String = null,
+    kind: java.lang.String = null,
+    storeLayoutType: java.lang.String = null
+  ): StoreLayout = {
+    val __obj = js.Dynamic.literal()
+    if (homepageId != null) __obj.updateDynamic("homepageId")(homepageId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (storeLayoutType != null) __obj.updateDynamic("storeLayoutType")(storeLayoutType)
+    __obj.asInstanceOf[StoreLayout]
+  }
+}
+

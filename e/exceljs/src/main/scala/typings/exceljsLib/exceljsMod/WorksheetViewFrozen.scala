@@ -30,3 +30,22 @@ trait WorksheetViewFrozen extends js.Object {
   var ySplit: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WorksheetViewFrozen {
+  @scala.inline
+  def apply(
+    state: exceljsLib.exceljsLibStrings.frozen,
+    style: exceljsLib.exceljsLibStrings.pageBreakPreview = null,
+    topLeftCell: java.lang.String = null,
+    xSplit: scala.Int | scala.Double = null,
+    ySplit: scala.Int | scala.Double = null
+  ): WorksheetViewFrozen = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("state")(state)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (topLeftCell != null) __obj.updateDynamic("topLeftCell")(topLeftCell)
+    if (xSplit != null) __obj.updateDynamic("xSplit")(xSplit.asInstanceOf[js.Any])
+    if (ySplit != null) __obj.updateDynamic("ySplit")(ySplit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetViewFrozen]
+  }
+}
+

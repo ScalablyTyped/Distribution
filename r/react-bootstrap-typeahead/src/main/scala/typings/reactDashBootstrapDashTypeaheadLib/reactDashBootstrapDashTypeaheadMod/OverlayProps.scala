@@ -14,3 +14,22 @@ import scala.scalajs.js.annotation._
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OverlayProps {
+  @scala.inline
+  def apply(
+    container: reactLib.HTMLElement,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    referenceElement: reactLib.HTMLElement = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined
+  ): OverlayProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[OverlayProps]
+  }
+}
+

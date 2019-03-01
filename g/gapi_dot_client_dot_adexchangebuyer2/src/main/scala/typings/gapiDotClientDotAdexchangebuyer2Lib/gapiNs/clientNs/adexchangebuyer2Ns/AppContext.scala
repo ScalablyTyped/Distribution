@@ -10,3 +10,12 @@ trait AppContext extends js.Object {
   var appTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AppContext {
+  @scala.inline
+  def apply(appTypes: js.Array[java.lang.String] = null): AppContext = {
+    val __obj = js.Dynamic.literal()
+    if (appTypes != null) __obj.updateDynamic("appTypes")(appTypes)
+    __obj.asInstanceOf[AppContext]
+  }
+}
+

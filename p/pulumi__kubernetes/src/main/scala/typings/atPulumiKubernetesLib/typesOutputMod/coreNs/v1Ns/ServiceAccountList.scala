@@ -35,3 +35,20 @@ trait ServiceAccountList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object ServiceAccountList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    items: js.Array[ServiceAccount],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccountList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): ServiceAccountList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[ServiceAccountList]
+  }
+}
+

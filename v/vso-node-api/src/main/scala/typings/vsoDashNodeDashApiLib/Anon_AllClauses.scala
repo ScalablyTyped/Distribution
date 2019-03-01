@@ -13,3 +13,22 @@ trait Anon_AllClauses extends js.Object {
   var wiql: scala.Double
 }
 
+object Anon_AllClauses {
+  @scala.inline
+  def apply(
+    all: scala.Double,
+    clauses: scala.Double,
+    minimal: scala.Double,
+    none: scala.Double,
+    wiql: scala.Double
+  ): Anon_AllClauses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("all")(all)
+    __obj.updateDynamic("clauses")(clauses)
+    __obj.updateDynamic("minimal")(minimal)
+    __obj.updateDynamic("none")(none)
+    __obj.updateDynamic("wiql")(wiql)
+    __obj.asInstanceOf[Anon_AllClauses]
+  }
+}
+

@@ -20,3 +20,20 @@ trait ObjectStyleOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ObjectStyleOptions {
+  @scala.inline
+  def apply(
+    icon: heremapsLib.HNs.mapNs.Icon,
+    arrows: heremapsLib.HNs.mapNs.ArrowStyleNs.Options = null,
+    style: heremapsLib.HNs.mapNs.SpatialStyleNs.Options = null,
+    zIndex: scala.Int | scala.Double = null
+  ): ObjectStyleOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("icon")(icon)
+    if (arrows != null) __obj.updateDynamic("arrows")(arrows)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ObjectStyleOptions]
+  }
+}
+

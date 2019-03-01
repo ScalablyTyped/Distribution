@@ -19,3 +19,12 @@ trait CourseAlias extends js.Object {
   var alias: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CourseAlias {
+  @scala.inline
+  def apply(alias: java.lang.String = null): CourseAlias = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    __obj.asInstanceOf[CourseAlias]
+  }
+}
+

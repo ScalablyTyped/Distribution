@@ -14,3 +14,24 @@ trait ConsulOptions extends js.Object {
   var secure: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConsulOptions {
+  @scala.inline
+  def apply(
+    ca: js.Array[java.lang.String] = null,
+    defaults: CommonOptions = null,
+    host: java.lang.String = null,
+    port: java.lang.String = null,
+    promisify: scala.Boolean | js.Function = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConsulOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ca != null) __obj.updateDynamic("ca")(ca)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (port != null) __obj.updateDynamic("port")(port)
+    if (promisify != null) __obj.updateDynamic("promisify")(promisify.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    __obj.asInstanceOf[ConsulOptions]
+  }
+}
+

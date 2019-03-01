@@ -82,3 +82,70 @@ trait TimeLocaleDefinition extends js.Object {
   var time: java.lang.String
 }
 
+object TimeLocaleDefinition {
+  @scala.inline
+  def apply(
+    date: java.lang.String,
+    dateTime: java.lang.String,
+    days: js.Tuple7[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    months: js.Tuple12[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    periods: js.Tuple2[java.lang.String, java.lang.String],
+    shortDays: js.Tuple7[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    shortMonths: js.Tuple12[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    time: java.lang.String
+  ): TimeLocaleDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("dateTime")(dateTime)
+    __obj.updateDynamic("days")(days)
+    __obj.updateDynamic("months")(months)
+    __obj.updateDynamic("periods")(periods)
+    __obj.updateDynamic("shortDays")(shortDays)
+    __obj.updateDynamic("shortMonths")(shortMonths)
+    __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[TimeLocaleDefinition]
+  }
+}
+

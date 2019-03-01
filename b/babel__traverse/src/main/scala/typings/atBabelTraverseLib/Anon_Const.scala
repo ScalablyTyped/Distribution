@@ -14,3 +14,20 @@ trait Anon_Const extends js.Object {
   var unique: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Const {
+  @scala.inline
+  def apply(
+    id: atBabelTypesLib.atBabelTypesMod.LVal,
+    init: atBabelTypesLib.atBabelTypesMod.Expression = null,
+    kind: atBabelTraverseLib.atBabelTraverseLibStrings.`var` | atBabelTraverseLib.atBabelTraverseLibStrings.let | atBabelTraverseLib.atBabelTraverseLibStrings.const = null,
+    unique: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Const = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    __obj.asInstanceOf[Anon_Const]
+  }
+}
+

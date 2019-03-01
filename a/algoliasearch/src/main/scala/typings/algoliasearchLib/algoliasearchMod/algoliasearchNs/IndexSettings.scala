@@ -289,3 +289,100 @@ trait IndexSettings extends js.Object {
   var unretrievableAttributes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object IndexSettings {
+  @scala.inline
+  def apply(
+    advancedSyntax: js.UndefOr[scala.Boolean] = js.undefined,
+    allowCompressionOfIntegerArray: js.UndefOr[scala.Boolean] = js.undefined,
+    allowTyposOnNumericTokens: js.UndefOr[scala.Boolean] = js.undefined,
+    altCorrections: js.Array[js.Object] = null,
+    alternativesAsExact: js.Array[
+      algoliasearchLib.algoliasearchLibStrings.ignorePlurals | algoliasearchLib.algoliasearchLibStrings.singleWordSynonym | algoliasearchLib.algoliasearchLibStrings.multiWordsSynonym
+    ] = null,
+    attributeForDistinct: java.lang.String = null,
+    attributesForFaceting: js.Array[java.lang.String] = null,
+    attributesToHighlight: js.Array[java.lang.String] = null,
+    attributesToIndex: js.Array[java.lang.String] = null,
+    attributesToRetrieve: js.Array[java.lang.String] = null,
+    attributesToSnippet: js.Array[java.lang.String] = null,
+    camelCaseAttributes: js.Array[java.lang.String] = null,
+    customRanking: js.Array[java.lang.String] = null,
+    decompoundedAttributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in std.Partial<'nl' | 'de' | 'fi'> ]: std.Array<string>}
+    */ algoliasearchLib.algoliasearchLibStrings.IndexSettings with js.Any = null,
+    disableExactOnAttributes: js.Array[java.lang.String] = null,
+    disablePrefixOnAttributes: js.Array[java.lang.String] = null,
+    disableTypoToleranceOnAttributes: java.lang.String = null,
+    distinct: scala.Boolean | scala.Double = null,
+    exactOnSingleWordQuery: java.lang.String = null,
+    highlightPostTag: java.lang.String = null,
+    highlightPreTag: java.lang.String = null,
+    hitsPerPage: scala.Int | scala.Double = null,
+    ignorePlurals: js.UndefOr[scala.Boolean] = js.undefined,
+    maxValuesPerFacet: scala.Int | scala.Double = null,
+    minProximity: scala.Int | scala.Double = null,
+    minWordSizefor1Typo: scala.Int | scala.Double = null,
+    minWordSizefor2Typos: scala.Int | scala.Double = null,
+    numericAttributesToIndex: js.Array[java.lang.String] = null,
+    optionalWords: js.Array[java.lang.String] = null,
+    placeholders: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null,
+    queryType: algoliasearchLib.algoliasearchLibStrings.prefixAll | algoliasearchLib.algoliasearchLibStrings.prefixLast | algoliasearchLib.algoliasearchLibStrings.prefixNone = null,
+    ranking: js.Array[java.lang.String] = null,
+    removeStopWords: scala.Boolean | js.Array[java.lang.String] = null,
+    removeWordsIfNoResults: java.lang.String = null,
+    replicas: js.Array[java.lang.String] = null,
+    restrictHighlightAndSnippetArrays: js.UndefOr[scala.Boolean] = js.undefined,
+    searchableAttributes: js.Array[java.lang.String] = null,
+    separatorsToIndex: java.lang.String = null,
+    snippetEllipsisText: java.lang.String = null,
+    sortFacetValuesBy: algoliasearchLib.algoliasearchLibStrings.count | algoliasearchLib.algoliasearchLibStrings.alpha = null,
+    typoTolerance: scala.Boolean | algoliasearchLib.algoliasearchLibStrings.min | algoliasearchLib.algoliasearchLibStrings.strict = null,
+    unretrievableAttributes: js.Array[java.lang.String] = null
+  ): IndexSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax)
+    if (!js.isUndefined(allowCompressionOfIntegerArray)) __obj.updateDynamic("allowCompressionOfIntegerArray")(allowCompressionOfIntegerArray)
+    if (!js.isUndefined(allowTyposOnNumericTokens)) __obj.updateDynamic("allowTyposOnNumericTokens")(allowTyposOnNumericTokens)
+    if (altCorrections != null) __obj.updateDynamic("altCorrections")(altCorrections)
+    if (alternativesAsExact != null) __obj.updateDynamic("alternativesAsExact")(alternativesAsExact)
+    if (attributeForDistinct != null) __obj.updateDynamic("attributeForDistinct")(attributeForDistinct)
+    if (attributesForFaceting != null) __obj.updateDynamic("attributesForFaceting")(attributesForFaceting)
+    if (attributesToHighlight != null) __obj.updateDynamic("attributesToHighlight")(attributesToHighlight)
+    if (attributesToIndex != null) __obj.updateDynamic("attributesToIndex")(attributesToIndex)
+    if (attributesToRetrieve != null) __obj.updateDynamic("attributesToRetrieve")(attributesToRetrieve)
+    if (attributesToSnippet != null) __obj.updateDynamic("attributesToSnippet")(attributesToSnippet)
+    if (camelCaseAttributes != null) __obj.updateDynamic("camelCaseAttributes")(camelCaseAttributes)
+    if (customRanking != null) __obj.updateDynamic("customRanking")(customRanking)
+    if (decompoundedAttributes != null) __obj.updateDynamic("decompoundedAttributes")(decompoundedAttributes)
+    if (disableExactOnAttributes != null) __obj.updateDynamic("disableExactOnAttributes")(disableExactOnAttributes)
+    if (disablePrefixOnAttributes != null) __obj.updateDynamic("disablePrefixOnAttributes")(disablePrefixOnAttributes)
+    if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes)
+    if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery)
+    if (highlightPostTag != null) __obj.updateDynamic("highlightPostTag")(highlightPostTag)
+    if (highlightPreTag != null) __obj.updateDynamic("highlightPreTag")(highlightPreTag)
+    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignorePlurals)) __obj.updateDynamic("ignorePlurals")(ignorePlurals)
+    if (maxValuesPerFacet != null) __obj.updateDynamic("maxValuesPerFacet")(maxValuesPerFacet.asInstanceOf[js.Any])
+    if (minProximity != null) __obj.updateDynamic("minProximity")(minProximity.asInstanceOf[js.Any])
+    if (minWordSizefor1Typo != null) __obj.updateDynamic("minWordSizefor1Typo")(minWordSizefor1Typo.asInstanceOf[js.Any])
+    if (minWordSizefor2Typos != null) __obj.updateDynamic("minWordSizefor2Typos")(minWordSizefor2Typos.asInstanceOf[js.Any])
+    if (numericAttributesToIndex != null) __obj.updateDynamic("numericAttributesToIndex")(numericAttributesToIndex)
+    if (optionalWords != null) __obj.updateDynamic("optionalWords")(optionalWords)
+    if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders)
+    if (queryType != null) __obj.updateDynamic("queryType")(queryType.asInstanceOf[js.Any])
+    if (ranking != null) __obj.updateDynamic("ranking")(ranking)
+    if (removeStopWords != null) __obj.updateDynamic("removeStopWords")(removeStopWords.asInstanceOf[js.Any])
+    if (removeWordsIfNoResults != null) __obj.updateDynamic("removeWordsIfNoResults")(removeWordsIfNoResults)
+    if (replicas != null) __obj.updateDynamic("replicas")(replicas)
+    if (!js.isUndefined(restrictHighlightAndSnippetArrays)) __obj.updateDynamic("restrictHighlightAndSnippetArrays")(restrictHighlightAndSnippetArrays)
+    if (searchableAttributes != null) __obj.updateDynamic("searchableAttributes")(searchableAttributes)
+    if (separatorsToIndex != null) __obj.updateDynamic("separatorsToIndex")(separatorsToIndex)
+    if (snippetEllipsisText != null) __obj.updateDynamic("snippetEllipsisText")(snippetEllipsisText)
+    if (sortFacetValuesBy != null) __obj.updateDynamic("sortFacetValuesBy")(sortFacetValuesBy.asInstanceOf[js.Any])
+    if (typoTolerance != null) __obj.updateDynamic("typoTolerance")(typoTolerance.asInstanceOf[js.Any])
+    if (unretrievableAttributes != null) __obj.updateDynamic("unretrievableAttributes")(unretrievableAttributes)
+    __obj.asInstanceOf[IndexSettings]
+  }
+}
+

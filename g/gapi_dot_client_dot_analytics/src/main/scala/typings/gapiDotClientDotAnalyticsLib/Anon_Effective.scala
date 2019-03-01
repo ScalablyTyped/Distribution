@@ -13,3 +13,12 @@ trait Anon_Effective extends js.Object {
   var effective: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Effective {
+  @scala.inline
+  def apply(effective: js.Array[java.lang.String] = null): Anon_Effective = {
+    val __obj = js.Dynamic.literal()
+    if (effective != null) __obj.updateDynamic("effective")(effective)
+    __obj.asInstanceOf[Anon_Effective]
+  }
+}
+

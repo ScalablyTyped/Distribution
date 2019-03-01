@@ -76,3 +76,44 @@ trait XElement
   def startChildElement(uid: scala.Double, localName: java.lang.String, xAttributes: XAttributes): XElement
 }
 
+object XElement {
+  @scala.inline
+  def apply(
+    Attributes: XAttributes,
+    LocalName: java.lang.String,
+    Parent: XElement,
+    Uid: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    characters: js.Function1[java.lang.String, scala.Unit],
+    endElement: js.Function0[scala.Unit],
+    getAttributes: js.Function0[XAttributes],
+    getLocalName: js.Function0[java.lang.String],
+    getParent: js.Function0[XElement],
+    getUid: js.Function0[scala.Double],
+    ignorableWhitespace: js.Function1[java.lang.String, scala.Unit],
+    processingInstruction: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    startChildElement: js.Function3[scala.Double, java.lang.String, XAttributes, XElement]
+  ): XElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Attributes")(Attributes)
+    __obj.updateDynamic("LocalName")(LocalName)
+    __obj.updateDynamic("Parent")(Parent)
+    __obj.updateDynamic("Uid")(Uid)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("characters")(characters)
+    __obj.updateDynamic("endElement")(endElement)
+    __obj.updateDynamic("getAttributes")(getAttributes)
+    __obj.updateDynamic("getLocalName")(getLocalName)
+    __obj.updateDynamic("getParent")(getParent)
+    __obj.updateDynamic("getUid")(getUid)
+    __obj.updateDynamic("ignorableWhitespace")(ignorableWhitespace)
+    __obj.updateDynamic("processingInstruction")(processingInstruction)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("startChildElement")(startChildElement)
+    __obj.asInstanceOf[XElement]
+  }
+}
+

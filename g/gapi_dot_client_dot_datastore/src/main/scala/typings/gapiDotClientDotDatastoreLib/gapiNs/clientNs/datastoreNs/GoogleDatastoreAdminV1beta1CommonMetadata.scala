@@ -24,3 +24,22 @@ trait GoogleDatastoreAdminV1beta1CommonMetadata extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleDatastoreAdminV1beta1CommonMetadata {
+  @scala.inline
+  def apply(
+    endTime: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    operationType: java.lang.String = null,
+    startTime: java.lang.String = null,
+    state: java.lang.String = null
+  ): GoogleDatastoreAdminV1beta1CommonMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[GoogleDatastoreAdminV1beta1CommonMetadata]
+  }
+}
+

@@ -10,3 +10,12 @@ trait OrganizationOwner extends js.Object {
   var directoryCustomerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OrganizationOwner {
+  @scala.inline
+  def apply(directoryCustomerId: java.lang.String = null): OrganizationOwner = {
+    val __obj = js.Dynamic.literal()
+    if (directoryCustomerId != null) __obj.updateDynamic("directoryCustomerId")(directoryCustomerId)
+    __obj.asInstanceOf[OrganizationOwner]
+  }
+}
+

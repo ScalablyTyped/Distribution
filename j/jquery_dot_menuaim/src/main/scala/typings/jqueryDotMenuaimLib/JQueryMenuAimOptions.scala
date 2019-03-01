@@ -48,3 +48,28 @@ trait JQueryMenuAimOptions extends js.Object {
   var submenuSelector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JQueryMenuAimOptions {
+  @scala.inline
+  def apply(
+    activate: js.Function0[scala.Unit] = null,
+    deactivate: js.Function0[scala.Unit] = null,
+    enter: js.Function0[scala.Unit] = null,
+    exit: js.Function0[scala.Unit] = null,
+    exitMenu: js.Function0[scala.Unit] = null,
+    rowSelector: java.lang.String = null,
+    submenuDirection: java.lang.String = null,
+    submenuSelector: java.lang.String = null
+  ): JQueryMenuAimOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (deactivate != null) __obj.updateDynamic("deactivate")(deactivate)
+    if (enter != null) __obj.updateDynamic("enter")(enter)
+    if (exit != null) __obj.updateDynamic("exit")(exit)
+    if (exitMenu != null) __obj.updateDynamic("exitMenu")(exitMenu)
+    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector)
+    if (submenuDirection != null) __obj.updateDynamic("submenuDirection")(submenuDirection)
+    if (submenuSelector != null) __obj.updateDynamic("submenuSelector")(submenuSelector)
+    __obj.asInstanceOf[JQueryMenuAimOptions]
+  }
+}
+

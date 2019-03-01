@@ -50,7 +50,7 @@ object AutoScalingPlansNs extends js.Object {
   
   trait CustomizedLoadMetricSpecification extends js.Object {
     /**
-      * The dimensions of the metric.
+      * The dimensions of the metric. Conditional: If you published your metric with dimensions, you must specify the same dimensions in your customized load metric specification.
       */
     var Dimensions: js.UndefOr[MetricDimensions] = js.undefined
     /**
@@ -73,7 +73,7 @@ object AutoScalingPlansNs extends js.Object {
   
   trait CustomizedScalingMetricSpecification extends js.Object {
     /**
-      * The dimensions of the metric.
+      * The dimensions of the metric. Conditional: If you published your metric with dimensions, you must specify the same dimensions in your customized scaling metric specification.
       */
     var Dimensions: js.UndefOr[MetricDimensions] = js.undefined
     /**
@@ -295,7 +295,7 @@ object AutoScalingPlansNs extends js.Object {
       */
     var ResourceId: ResourceIdMaxLen1600
     /**
-      * The scalable dimension associated with the resource.    autoscaling:autoScalingGroup:DesiredCapacity - The desired capacity of an Auto Scaling group.    ecs:service:DesiredCount - The desired task count of an ECS service.    ec2:spot-fleet-request:TargetCapacity - The target capacity of a Spot Fleet request.    dynamodb:table:ReadCapacityUnits - The provisioned read capacity for a DynamoDB table.    dynamodb:table:WriteCapacityUnits - The provisioned write capacity for a DynamoDB table.    dynamodb:index:ReadCapacityUnits - The provisioned read capacity for a DynamoDB global secondary index.    dynamodb:index:WriteCapacityUnits - The provisioned write capacity for a DynamoDB global secondary index.    rds:cluster:ReadReplicaCount - The count of Aurora Replicas in an Aurora DB cluster. Available for Aurora MySQL-compatible edition.  
+      * The scalable dimension associated with the resource.    autoscaling:autoScalingGroup:DesiredCapacity - The desired capacity of an Auto Scaling group.    ecs:service:DesiredCount - The desired task count of an ECS service.    ec2:spot-fleet-request:TargetCapacity - The target capacity of a Spot Fleet request.    dynamodb:table:ReadCapacityUnits - The provisioned read capacity for a DynamoDB table.    dynamodb:table:WriteCapacityUnits - The provisioned write capacity for a DynamoDB table.    dynamodb:index:ReadCapacityUnits - The provisioned read capacity for a DynamoDB global secondary index.    dynamodb:index:WriteCapacityUnits - The provisioned write capacity for a DynamoDB global secondary index.    rds:cluster:ReadReplicaCount - The count of Aurora Replicas in an Aurora DB cluster. Available for Aurora MySQL-compatible edition and Aurora PostgreSQL-compatible edition.  
       */
     var ScalableDimension: ScalableDimension
     /**
@@ -357,7 +357,7 @@ object AutoScalingPlansNs extends js.Object {
       */
     var ResourceId: ResourceIdMaxLen1600
     /**
-      * The scalable dimension for the resource.    autoscaling:autoScalingGroup:DesiredCapacity - The desired capacity of an Auto Scaling group.    ecs:service:DesiredCount - The desired task count of an ECS service.    ec2:spot-fleet-request:TargetCapacity - The target capacity of a Spot Fleet request.    dynamodb:table:ReadCapacityUnits - The provisioned read capacity for a DynamoDB table.    dynamodb:table:WriteCapacityUnits - The provisioned write capacity for a DynamoDB table.    dynamodb:index:ReadCapacityUnits - The provisioned read capacity for a DynamoDB global secondary index.    dynamodb:index:WriteCapacityUnits - The provisioned write capacity for a DynamoDB global secondary index.    rds:cluster:ReadReplicaCount - The count of Aurora Replicas in an Aurora DB cluster. Available for Aurora MySQL-compatible edition.  
+      * The scalable dimension for the resource.    autoscaling:autoScalingGroup:DesiredCapacity - The desired capacity of an Auto Scaling group.    ecs:service:DesiredCount - The desired task count of an ECS service.    ec2:spot-fleet-request:TargetCapacity - The target capacity of a Spot Fleet request.    dynamodb:table:ReadCapacityUnits - The provisioned read capacity for a DynamoDB table.    dynamodb:table:WriteCapacityUnits - The provisioned write capacity for a DynamoDB table.    dynamodb:index:ReadCapacityUnits - The provisioned read capacity for a DynamoDB global secondary index.    dynamodb:index:WriteCapacityUnits - The provisioned write capacity for a DynamoDB global secondary index.    rds:cluster:ReadReplicaCount - The count of Aurora Replicas in an Aurora DB cluster. Available for Aurora MySQL-compatible edition and Aurora PostgreSQL-compatible edition.  
       */
     var ScalableDimension: ScalableDimension
     /**
@@ -396,7 +396,7 @@ object AutoScalingPlansNs extends js.Object {
       */
     var PolicyType: PolicyType
     /**
-      * The target tracking scaling policy. 
+      * The target tracking scaling policy. Includes support for predefined or customized metrics.
       */
     var TargetTrackingConfiguration: js.UndefOr[TargetTrackingConfiguration] = js.undefined
   }
@@ -414,7 +414,7 @@ object AutoScalingPlansNs extends js.Object {
   
   trait TargetTrackingConfiguration extends js.Object {
     /**
-      * A customized metric.
+      * A customized metric. You can specify either a predefined metric or a customized metric. 
       */
     var CustomizedScalingMetricSpecification: js.UndefOr[CustomizedScalingMetricSpecification] = js.undefined
     /**
@@ -426,7 +426,7 @@ object AutoScalingPlansNs extends js.Object {
       */
     var EstimatedInstanceWarmup: js.UndefOr[Cooldown] = js.undefined
     /**
-      * A predefined metric.
+      * A predefined metric. You can specify either a predefined metric or a customized metric.
       */
     var PredefinedScalingMetricSpecification: js.UndefOr[PredefinedScalingMetricSpecification] = js.undefined
     /**
@@ -609,6 +609,30 @@ object AutoScalingPlansNs extends js.Object {
   
   trait UpdateScalingPlanResponse extends js.Object
   
+  trait _ForecastDataType extends js.Object
+  
+  trait _LoadMetricType extends js.Object
+  
+  trait _MetricStatistic extends js.Object
+  
+  trait _PredictiveScalingMaxCapacityBehavior extends js.Object
+  
+  trait _PredictiveScalingMode extends js.Object
+  
+  trait _ScalableDimension extends js.Object
+  
+  trait _ScalingMetricType extends js.Object
+  
+  trait _ScalingPlanStatusCode extends js.Object
+  
+  trait _ScalingPolicyUpdateBehavior extends js.Object
+  
+  trait _ScalingStatusCode extends js.Object
+  
+  trait _ServiceNamespace extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ApplicationSources = js.Array[ApplicationSource]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -616,8 +640,8 @@ object AutoScalingPlansNs extends js.Object {
   type Datapoints = js.Array[Datapoint]
   type DisableDynamicScaling = scala.Boolean
   type DisableScaleIn = scala.Boolean
-  type ForecastDataType = awsDashSdkLib.awsDashSdkLibStrings.CapacityForecast | awsDashSdkLib.awsDashSdkLibStrings.LoadForecast | awsDashSdkLib.awsDashSdkLibStrings.ScheduledActionMinCapacity | awsDashSdkLib.awsDashSdkLibStrings.ScheduledActionMaxCapacity | java.lang.String
-  type LoadMetricType = awsDashSdkLib.awsDashSdkLibStrings.ASGTotalCPUUtilization | awsDashSdkLib.awsDashSdkLibStrings.ASGTotalNetworkIn | awsDashSdkLib.awsDashSdkLibStrings.ASGTotalNetworkOut | awsDashSdkLib.awsDashSdkLibStrings.ALBTargetGroupRequestCount | java.lang.String
+  type ForecastDataType = _ForecastDataType | java.lang.String
+  type LoadMetricType = _LoadMetricType | java.lang.String
   type MaxResults = scala.Double
   type MetricDimensionName = java.lang.String
   type MetricDimensionValue = java.lang.String
@@ -625,30 +649,30 @@ object AutoScalingPlansNs extends js.Object {
   type MetricName = java.lang.String
   type MetricNamespace = java.lang.String
   type MetricScale = scala.Double
-  type MetricStatistic = awsDashSdkLib.awsDashSdkLibStrings.Average | awsDashSdkLib.awsDashSdkLibStrings.Minimum | awsDashSdkLib.awsDashSdkLibStrings.Maximum | awsDashSdkLib.awsDashSdkLibStrings.SampleCount | awsDashSdkLib.awsDashSdkLibStrings.Sum | java.lang.String
+  type MetricStatistic = _MetricStatistic | java.lang.String
   type MetricUnit = java.lang.String
   type NextToken = java.lang.String
   type PolicyName = java.lang.String
   type PolicyType = awsDashSdkLib.awsDashSdkLibStrings.TargetTrackingScaling | java.lang.String
-  type PredictiveScalingMaxCapacityBehavior = awsDashSdkLib.awsDashSdkLibStrings.SetForecastCapacityToMaxCapacity | awsDashSdkLib.awsDashSdkLibStrings.SetMaxCapacityToForecastCapacity | awsDashSdkLib.awsDashSdkLibStrings.SetMaxCapacityAboveForecastCapacity | java.lang.String
-  type PredictiveScalingMode = awsDashSdkLib.awsDashSdkLibStrings.ForecastAndScale | awsDashSdkLib.awsDashSdkLibStrings.ForecastOnly | java.lang.String
+  type PredictiveScalingMaxCapacityBehavior = _PredictiveScalingMaxCapacityBehavior | java.lang.String
+  type PredictiveScalingMode = _PredictiveScalingMode | java.lang.String
   type ResourceCapacity = scala.Double
   type ResourceIdMaxLen1600 = java.lang.String
   type ResourceLabel = java.lang.String
-  type ScalableDimension = awsDashSdkLib.awsDashSdkLibStrings.`autoscaling:autoScalingGroup:DesiredCapacity` | awsDashSdkLib.awsDashSdkLibStrings.`ecs:service:DesiredCount` | awsDashSdkLib.awsDashSdkLibStrings.`ec2:spot-fleet-request:TargetCapacity` | awsDashSdkLib.awsDashSdkLibStrings.`rds:cluster:ReadReplicaCount` | awsDashSdkLib.awsDashSdkLibStrings.`dynamodb:table:ReadCapacityUnits` | awsDashSdkLib.awsDashSdkLibStrings.`dynamodb:table:WriteCapacityUnits` | awsDashSdkLib.awsDashSdkLibStrings.`dynamodb:index:ReadCapacityUnits` | awsDashSdkLib.awsDashSdkLibStrings.`dynamodb:index:WriteCapacityUnits` | java.lang.String
+  type ScalableDimension = _ScalableDimension | java.lang.String
   type ScalingInstructions = js.Array[ScalingInstruction]
-  type ScalingMetricType = awsDashSdkLib.awsDashSdkLibStrings.ASGAverageCPUUtilization | awsDashSdkLib.awsDashSdkLibStrings.ASGAverageNetworkIn | awsDashSdkLib.awsDashSdkLibStrings.ASGAverageNetworkOut | awsDashSdkLib.awsDashSdkLibStrings.DynamoDBReadCapacityUtilization | awsDashSdkLib.awsDashSdkLibStrings.DynamoDBWriteCapacityUtilization | awsDashSdkLib.awsDashSdkLibStrings.ECSServiceAverageCPUUtilization | awsDashSdkLib.awsDashSdkLibStrings.ECSServiceAverageMemoryUtilization | awsDashSdkLib.awsDashSdkLibStrings.ALBRequestCountPerTarget | awsDashSdkLib.awsDashSdkLibStrings.RDSReaderAverageCPUUtilization | awsDashSdkLib.awsDashSdkLibStrings.RDSReaderAverageDatabaseConnections | awsDashSdkLib.awsDashSdkLibStrings.EC2SpotFleetRequestAverageCPUUtilization | awsDashSdkLib.awsDashSdkLibStrings.EC2SpotFleetRequestAverageNetworkIn | awsDashSdkLib.awsDashSdkLibStrings.EC2SpotFleetRequestAverageNetworkOut | java.lang.String
+  type ScalingMetricType = _ScalingMetricType | java.lang.String
   type ScalingPlanName = java.lang.String
   type ScalingPlanNames = js.Array[ScalingPlanName]
   type ScalingPlanResources = js.Array[ScalingPlanResource]
-  type ScalingPlanStatusCode = awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.ActiveWithProblems | awsDashSdkLib.awsDashSdkLibStrings.CreationInProgress | awsDashSdkLib.awsDashSdkLibStrings.CreationFailed | awsDashSdkLib.awsDashSdkLibStrings.DeletionInProgress | awsDashSdkLib.awsDashSdkLibStrings.DeletionFailed | awsDashSdkLib.awsDashSdkLibStrings.UpdateInProgress | awsDashSdkLib.awsDashSdkLibStrings.UpdateFailed | java.lang.String
+  type ScalingPlanStatusCode = _ScalingPlanStatusCode | java.lang.String
   type ScalingPlanVersion = scala.Double
   type ScalingPlans = js.Array[ScalingPlan]
   type ScalingPolicies = js.Array[ScalingPolicy]
-  type ScalingPolicyUpdateBehavior = awsDashSdkLib.awsDashSdkLibStrings.KeepExternalPolicies | awsDashSdkLib.awsDashSdkLibStrings.ReplaceExternalPolicies | java.lang.String
-  type ScalingStatusCode = awsDashSdkLib.awsDashSdkLibStrings.Inactive | awsDashSdkLib.awsDashSdkLibStrings.PartiallyActive | awsDashSdkLib.awsDashSdkLibStrings.Active | java.lang.String
+  type ScalingPolicyUpdateBehavior = _ScalingPolicyUpdateBehavior | java.lang.String
+  type ScalingStatusCode = _ScalingStatusCode | java.lang.String
   type ScheduledActionBufferTime = scala.Double
-  type ServiceNamespace = awsDashSdkLib.awsDashSdkLibStrings.autoscaling | awsDashSdkLib.awsDashSdkLibStrings.ecs | awsDashSdkLib.awsDashSdkLibStrings.ec2 | awsDashSdkLib.awsDashSdkLibStrings.rds | awsDashSdkLib.awsDashSdkLibStrings.dynamodb | java.lang.String
+  type ServiceNamespace = _ServiceNamespace | java.lang.String
   type TagFilters = js.Array[TagFilter]
   type TagValues = js.Array[XmlStringMaxLen256]
   type TargetTrackingConfigurations = js.Array[TargetTrackingConfiguration]
@@ -656,6 +680,6 @@ object AutoScalingPlansNs extends js.Object {
   type XmlString = java.lang.String
   type XmlStringMaxLen128 = java.lang.String
   type XmlStringMaxLen256 = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-01-06` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

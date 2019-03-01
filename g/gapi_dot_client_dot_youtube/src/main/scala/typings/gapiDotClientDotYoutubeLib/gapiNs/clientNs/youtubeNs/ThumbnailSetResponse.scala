@@ -18,3 +18,22 @@ trait ThumbnailSetResponse extends js.Object {
   var visitorId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ThumbnailSetResponse {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    eventId: java.lang.String = null,
+    items: js.Array[ThumbnailDetails] = null,
+    kind: java.lang.String = null,
+    visitorId: java.lang.String = null
+  ): ThumbnailSetResponse = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId)
+    __obj.asInstanceOf[ThumbnailSetResponse]
+  }
+}
+

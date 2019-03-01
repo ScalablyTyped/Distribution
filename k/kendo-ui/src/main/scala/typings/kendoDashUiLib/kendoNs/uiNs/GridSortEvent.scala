@@ -9,3 +9,20 @@ trait GridSortEvent extends GridEvent {
   var sort: js.UndefOr[js.Any] = js.undefined
 }
 
+object GridSortEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Grid,
+    sort: js.Any = null
+  ): GridSortEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    __obj.asInstanceOf[GridSortEvent]
+  }
+}
+

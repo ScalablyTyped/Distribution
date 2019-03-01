@@ -12,3 +12,12 @@ trait SetOptions extends js.Object {
   var TTL: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SetOptions {
+  @scala.inline
+  def apply(TTL: scala.Int | scala.Double = null): SetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (TTL != null) __obj.updateDynamic("TTL")(TTL.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SetOptions]
+  }
+}
+

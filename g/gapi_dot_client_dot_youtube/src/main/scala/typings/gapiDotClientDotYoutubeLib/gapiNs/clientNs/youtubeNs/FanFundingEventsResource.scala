@@ -10,3 +10,17 @@ trait FanFundingEventsResource extends js.Object {
   def list(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsHl): gapiDotClientLib.gapiNs.clientNs.Request[FanFundingEventListResponse]
 }
 
+object FanFundingEventsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsHl, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FanFundingEventListResponse]
+    ]
+  ): FanFundingEventsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[FanFundingEventsResource]
+  }
+}
+

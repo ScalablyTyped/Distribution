@@ -57,3 +57,36 @@ trait GetVpcPeeringConnectionArgs extends js.Object {
   val vpcId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetVpcPeeringConnectionArgs {
+  @scala.inline
+  def apply(
+    cidrBlock: java.lang.String = null,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    id: java.lang.String = null,
+    ownerId: java.lang.String = null,
+    peerCidrBlock: java.lang.String = null,
+    peerOwnerId: java.lang.String = null,
+    peerRegion: java.lang.String = null,
+    peerVpcId: java.lang.String = null,
+    region: java.lang.String = null,
+    status: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    vpcId: java.lang.String = null
+  ): GetVpcPeeringConnectionArgs = {
+    val __obj = js.Dynamic.literal()
+    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId)
+    if (peerCidrBlock != null) __obj.updateDynamic("peerCidrBlock")(peerCidrBlock)
+    if (peerOwnerId != null) __obj.updateDynamic("peerOwnerId")(peerOwnerId)
+    if (peerRegion != null) __obj.updateDynamic("peerRegion")(peerRegion)
+    if (peerVpcId != null) __obj.updateDynamic("peerVpcId")(peerVpcId)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId)
+    __obj.asInstanceOf[GetVpcPeeringConnectionArgs]
+  }
+}
+

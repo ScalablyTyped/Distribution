@@ -29,3 +29,18 @@ trait XmlContentType[T] extends js.Object {
   var required: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object XmlContentType {
+  @scala.inline
+  def apply[T](
+    converter: IConverter[T] = null,
+    defaultValue: T = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined
+  ): XmlContentType[T] = {
+    val __obj = js.Dynamic.literal()
+    if (converter != null) __obj.updateDynamic("converter")(converter)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    __obj.asInstanceOf[XmlContentType[T]]
+  }
+}
+

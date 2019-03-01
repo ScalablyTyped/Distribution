@@ -14,3 +14,24 @@ trait Anon_BSONINT32MAX extends js.Object {
   val JS_INT_MIN: scala.Double
 }
 
+object Anon_BSONINT32MAX {
+  @scala.inline
+  def apply(
+    BSON_INT32_MAX: scala.Double,
+    BSON_INT32_MIN: scala.Double,
+    BSON_INT64_MAX: scala.Double,
+    BSON_INT64_MIN: scala.Double,
+    JS_INT_MAX: scala.Double,
+    JS_INT_MIN: scala.Double
+  ): Anon_BSONINT32MAX = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BSON_INT32_MAX")(BSON_INT32_MAX)
+    __obj.updateDynamic("BSON_INT32_MIN")(BSON_INT32_MIN)
+    __obj.updateDynamic("BSON_INT64_MAX")(BSON_INT64_MAX)
+    __obj.updateDynamic("BSON_INT64_MIN")(BSON_INT64_MIN)
+    __obj.updateDynamic("JS_INT_MAX")(JS_INT_MAX)
+    __obj.updateDynamic("JS_INT_MIN")(JS_INT_MIN)
+    __obj.asInstanceOf[Anon_BSONINT32MAX]
+  }
+}
+

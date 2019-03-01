@@ -10,3 +10,12 @@ trait GetDetails extends js.Object {
   var tabId: scala.Double
 }
 
+object GetDetails {
+  @scala.inline
+  def apply(tabId: scala.Double): GetDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.asInstanceOf[GetDetails]
+  }
+}
+

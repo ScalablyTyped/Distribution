@@ -10,3 +10,16 @@ trait AnyAction
      with // Allows any extra properties to be defined in an action.
 /* extraProps */ org.scalablytyped.runtime.StringDictionary[js.Any]
 
+object AnyAction {
+  @scala.inline
+  def apply(
+    `type`: js.Any,
+    StringDictionary: // Allows any extra properties to be defined in an action.
+  /* extraProps */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): AnyAction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[AnyAction]
+  }
+}
+

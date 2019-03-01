@@ -69,3 +69,40 @@ trait Anon_Autoplay extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Autoplay {
+  @scala.inline
+  def apply(
+    src: java.lang.String,
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    controls: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    initialTime: scala.Int | scala.Double = null,
+    live: scala.Int | scala.Double = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    muted: js.UndefOr[scala.Boolean] = js.undefined,
+    objectFit: wegameDashApiLib.wegameDashApiLibStrings.contain | wegameDashApiLib.wegameDashApiLibStrings.cover | wegameDashApiLib.wegameDashApiLibStrings.fill = null,
+    playbackRate: scala.Int | scala.Double = null,
+    poster: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Anon_Autoplay = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("src")(src)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (initialTime != null) __obj.updateDynamic("initialTime")(initialTime.asInstanceOf[js.Any])
+    if (live != null) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (objectFit != null) __obj.updateDynamic("objectFit")(objectFit.asInstanceOf[js.Any])
+    if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
+    if (poster != null) __obj.updateDynamic("poster")(poster)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Autoplay]
+  }
+}
+

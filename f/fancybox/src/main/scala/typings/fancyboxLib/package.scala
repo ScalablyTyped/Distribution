@@ -10,6 +10,5 @@ package object fancyboxLib {
     /* event */ js.UndefOr[jqueryLib.JQueryNs.Event], 
     FancyBoxInteractionTypes
   ]
-  type FancyBoxInteractionTypes = fancyboxLib.fancyboxLibStrings.close | fancyboxLib.fancyboxLibStrings.next | fancyboxLib.fancyboxLibStrings.nextOrClose | fancyboxLib.fancyboxLibStrings.toggleControls | fancyboxLib.fancyboxLibStrings.zoom | fancyboxLib.fancyboxLibNumbers.`false`
   type FancyBoxInteractions = FancyBoxInteractionTypes | FancyBoxInteractionMethod
 }

@@ -128,3 +128,58 @@ trait CheckBoxProps extends js.Object {
   ] = js.undefined
 }
 
+object CheckBoxProps {
+  @scala.inline
+  def apply(
+    checked: scala.Boolean,
+    Component: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    center: js.UndefOr[scala.Boolean] = js.undefined,
+    checkedColor: java.lang.String = null,
+    checkedIcon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    checkedTitle: java.lang.String = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    fontFamily: java.lang.String = null,
+    iconRight: js.UndefOr[scala.Boolean] = js.undefined,
+    iconType: IconType = null,
+    onIconPress: js.Function0[scala.Unit] = null,
+    onLongIconPress: js.Function0[scala.Unit] = null,
+    onLongPress: js.Function0[scala.Unit] = null,
+    onPress: js.Function0[scala.Unit] = null,
+    right: js.UndefOr[scala.Boolean] = js.undefined,
+    size: scala.Int | scala.Double = null,
+    textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    title: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    titleProps: stdLib.Partial[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ _
+    ] = null,
+    uncheckedColor: java.lang.String = null,
+    uncheckedIcon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    wrapperStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): CheckBoxProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checked")(checked)
+    if (Component != null) __obj.updateDynamic("Component")(Component)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (checkedColor != null) __obj.updateDynamic("checkedColor")(checkedColor)
+    if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon.asInstanceOf[js.Any])
+    if (checkedTitle != null) __obj.updateDynamic("checkedTitle")(checkedTitle)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (!js.isUndefined(iconRight)) __obj.updateDynamic("iconRight")(iconRight)
+    if (iconType != null) __obj.updateDynamic("iconType")(iconType.asInstanceOf[js.Any])
+    if (onIconPress != null) __obj.updateDynamic("onIconPress")(onIconPress)
+    if (onLongIconPress != null) __obj.updateDynamic("onLongIconPress")(onLongIconPress)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps)
+    if (uncheckedColor != null) __obj.updateDynamic("uncheckedColor")(uncheckedColor)
+    if (uncheckedIcon != null) __obj.updateDynamic("uncheckedIcon")(uncheckedIcon.asInstanceOf[js.Any])
+    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CheckBoxProps]
+  }
+}
+

@@ -10,3 +10,16 @@ trait ConnectorHover extends js.Object {
   var stroke: js.UndefOr[java.lang.String | ConnectorHoverStroke] = js.undefined
 }
 
+object ConnectorHover {
+  @scala.inline
+  def apply(
+    fill: java.lang.String | ConnectorHoverFill = null,
+    stroke: java.lang.String | ConnectorHoverStroke = null
+  ): ConnectorHover = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectorHover]
+  }
+}
+

@@ -73,3 +73,38 @@ trait PackeryOptions extends js.Object {
   var transitionDuration: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PackeryOptions {
+  @scala.inline
+  def apply(
+    columnWidth: scala.Int | scala.Double = null,
+    containerStyle: js.Object = null,
+    gutter: scala.Int | scala.Double = null,
+    isHorizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    isInitLayout: js.UndefOr[scala.Boolean] = js.undefined,
+    isOriginLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    isOriginTop: js.UndefOr[scala.Boolean] = js.undefined,
+    isResizeBound: js.UndefOr[scala.Boolean] = js.undefined,
+    itemSelector: java.lang.String = null,
+    percentPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    rowHeight: scala.Int | scala.Double = null,
+    stamp: java.lang.String = null,
+    transitionDuration: java.lang.String = null
+  ): PackeryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
+    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHorizontal)) __obj.updateDynamic("isHorizontal")(isHorizontal)
+    if (!js.isUndefined(isInitLayout)) __obj.updateDynamic("isInitLayout")(isInitLayout)
+    if (!js.isUndefined(isOriginLeft)) __obj.updateDynamic("isOriginLeft")(isOriginLeft)
+    if (!js.isUndefined(isOriginTop)) __obj.updateDynamic("isOriginTop")(isOriginTop)
+    if (!js.isUndefined(isResizeBound)) __obj.updateDynamic("isResizeBound")(isResizeBound)
+    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
+    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition)
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (stamp != null) __obj.updateDynamic("stamp")(stamp)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration)
+    __obj.asInstanceOf[PackeryOptions]
+  }
+}
+

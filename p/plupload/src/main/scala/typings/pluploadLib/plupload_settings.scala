@@ -36,3 +36,50 @@ trait plupload_settings extends js.Object {
   var url: java.lang.String
 }
 
+object plupload_settings {
+  @scala.inline
+  def apply(
+    browse_button: js.Any,
+    url: java.lang.String,
+    chunk_size: scala.Double | java.lang.String = null,
+    container: js.Any = null,
+    drop_element: java.lang.String = null,
+    file_data_name: java.lang.String = null,
+    filters: plupload_filters = null,
+    flash_swf_url: java.lang.String = null,
+    headers: js.Any = null,
+    init: plupload_events = null,
+    max_retries: scala.Int | scala.Double = null,
+    multi_selection: js.UndefOr[scala.Boolean] = js.undefined,
+    multipart: js.UndefOr[scala.Boolean] = js.undefined,
+    multipart_params: js.Any = null,
+    required_features: java.lang.String | js.Any = null,
+    resize: plupload_resize = null,
+    runtimes: java.lang.String = null,
+    silverlight_xap_url: java.lang.String = null,
+    unique_names: js.UndefOr[scala.Boolean] = js.undefined
+  ): plupload_settings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("browse_button")(browse_button)
+    __obj.updateDynamic("url")(url)
+    if (chunk_size != null) __obj.updateDynamic("chunk_size")(chunk_size.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (drop_element != null) __obj.updateDynamic("drop_element")(drop_element)
+    if (file_data_name != null) __obj.updateDynamic("file_data_name")(file_data_name)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (flash_swf_url != null) __obj.updateDynamic("flash_swf_url")(flash_swf_url)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (max_retries != null) __obj.updateDynamic("max_retries")(max_retries.asInstanceOf[js.Any])
+    if (!js.isUndefined(multi_selection)) __obj.updateDynamic("multi_selection")(multi_selection)
+    if (!js.isUndefined(multipart)) __obj.updateDynamic("multipart")(multipart)
+    if (multipart_params != null) __obj.updateDynamic("multipart_params")(multipart_params)
+    if (required_features != null) __obj.updateDynamic("required_features")(required_features.asInstanceOf[js.Any])
+    if (resize != null) __obj.updateDynamic("resize")(resize)
+    if (runtimes != null) __obj.updateDynamic("runtimes")(runtimes)
+    if (silverlight_xap_url != null) __obj.updateDynamic("silverlight_xap_url")(silverlight_xap_url)
+    if (!js.isUndefined(unique_names)) __obj.updateDynamic("unique_names")(unique_names)
+    __obj.asInstanceOf[plupload_settings]
+  }
+}
+

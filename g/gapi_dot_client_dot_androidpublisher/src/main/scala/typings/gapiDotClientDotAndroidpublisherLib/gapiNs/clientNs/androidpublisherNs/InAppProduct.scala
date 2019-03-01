@@ -35,3 +35,34 @@ trait InAppProduct extends js.Object {
   var trialPeriod: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InAppProduct {
+  @scala.inline
+  def apply(
+    defaultLanguage: java.lang.String = null,
+    defaultPrice: Price = null,
+    listings: stdLib.Record[java.lang.String, InAppProductListing] = null,
+    packageName: java.lang.String = null,
+    prices: stdLib.Record[java.lang.String, Price] = null,
+    purchaseType: java.lang.String = null,
+    season: Season = null,
+    sku: java.lang.String = null,
+    status: java.lang.String = null,
+    subscriptionPeriod: java.lang.String = null,
+    trialPeriod: java.lang.String = null
+  ): InAppProduct = {
+    val __obj = js.Dynamic.literal()
+    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage)
+    if (defaultPrice != null) __obj.updateDynamic("defaultPrice")(defaultPrice)
+    if (listings != null) __obj.updateDynamic("listings")(listings)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
+    if (prices != null) __obj.updateDynamic("prices")(prices)
+    if (purchaseType != null) __obj.updateDynamic("purchaseType")(purchaseType)
+    if (season != null) __obj.updateDynamic("season")(season)
+    if (sku != null) __obj.updateDynamic("sku")(sku)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (subscriptionPeriod != null) __obj.updateDynamic("subscriptionPeriod")(subscriptionPeriod)
+    if (trialPeriod != null) __obj.updateDynamic("trialPeriod")(trialPeriod)
+    __obj.asInstanceOf[InAppProduct]
+  }
+}
+

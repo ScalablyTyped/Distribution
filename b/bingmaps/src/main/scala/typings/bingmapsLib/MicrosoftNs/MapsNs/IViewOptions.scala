@@ -29,3 +29,30 @@ trait IViewOptions extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IViewOptions {
+  @scala.inline
+  def apply(
+    bounds: LocationRect = null,
+    center: Location = null,
+    centerOffset: Point = null,
+    heading: scala.Int | scala.Double = null,
+    labelOverlay: LabelOverlay = null,
+    mapTypeId: MapTypeId = null,
+    padding: scala.Int | scala.Double = null,
+    pitch: scala.Int | scala.Double = null,
+    zoom: scala.Int | scala.Double = null
+  ): IViewOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (centerOffset != null) __obj.updateDynamic("centerOffset")(centerOffset)
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (labelOverlay != null) __obj.updateDynamic("labelOverlay")(labelOverlay)
+    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IViewOptions]
+  }
+}
+

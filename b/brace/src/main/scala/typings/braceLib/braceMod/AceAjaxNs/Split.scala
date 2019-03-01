@@ -69,3 +69,38 @@ trait Split extends js.Object {
   def setTheme(theme: java.lang.String): scala.Unit
 }
 
+object Split {
+  @scala.inline
+  def apply(
+    blur: js.Function0[scala.Unit],
+    focus: js.Function0[scala.Unit],
+    forEach: js.Function2[js.Function, java.lang.String, scala.Unit],
+    getCurrentEditor: js.Function0[Editor],
+    getEditor: js.Function1[scala.Double, scala.Unit],
+    getOrientation: js.Function0[scala.Double],
+    getSplits: js.Function0[scala.Double],
+    resize: js.Function0[scala.Unit],
+    setFontSize: js.Function1[scala.Double, scala.Unit],
+    setKeyboardHandler: js.Function1[java.lang.String, scala.Unit],
+    setOrientation: js.Function1[scala.Double, scala.Unit],
+    setSession: js.Function2[IEditSession, scala.Double, scala.Unit],
+    setTheme: js.Function1[java.lang.String, scala.Unit]
+  ): Split = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blur")(blur)
+    __obj.updateDynamic("focus")(focus)
+    __obj.updateDynamic("forEach")(forEach)
+    __obj.updateDynamic("getCurrentEditor")(getCurrentEditor)
+    __obj.updateDynamic("getEditor")(getEditor)
+    __obj.updateDynamic("getOrientation")(getOrientation)
+    __obj.updateDynamic("getSplits")(getSplits)
+    __obj.updateDynamic("resize")(resize)
+    __obj.updateDynamic("setFontSize")(setFontSize)
+    __obj.updateDynamic("setKeyboardHandler")(setKeyboardHandler)
+    __obj.updateDynamic("setOrientation")(setOrientation)
+    __obj.updateDynamic("setSession")(setSession)
+    __obj.updateDynamic("setTheme")(setTheme)
+    __obj.asInstanceOf[Split]
+  }
+}
+

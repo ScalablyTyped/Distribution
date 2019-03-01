@@ -28,3 +28,24 @@ trait XUpdateListener
   def updated(aEvent: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject): scala.Unit
 }
 
+object XUpdateListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    approveUpdate: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Boolean],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updated: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
+  ): XUpdateListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("approveUpdate")(approveUpdate)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("updated")(updated)
+    __obj.asInstanceOf[XUpdateListener]
+  }
+}
+

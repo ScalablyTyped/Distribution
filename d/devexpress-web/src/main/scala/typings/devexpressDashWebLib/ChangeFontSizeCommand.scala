@@ -20,3 +20,13 @@ trait ChangeFontSizeCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeFontSizeCommand {
+  @scala.inline
+  def apply(execute: js.Function1[scala.Double, scala.Boolean], getState: js.Function0[js.Any]): ChangeFontSizeCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeFontSizeCommand]
+  }
+}
+

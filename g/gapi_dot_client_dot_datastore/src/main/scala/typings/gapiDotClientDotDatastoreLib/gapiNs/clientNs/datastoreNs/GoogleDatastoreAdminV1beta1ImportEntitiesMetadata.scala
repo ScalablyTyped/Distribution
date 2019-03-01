@@ -22,3 +22,22 @@ trait GoogleDatastoreAdminV1beta1ImportEntitiesMetadata extends js.Object {
   var progressEntities: js.UndefOr[GoogleDatastoreAdminV1beta1Progress] = js.undefined
 }
 
+object GoogleDatastoreAdminV1beta1ImportEntitiesMetadata {
+  @scala.inline
+  def apply(
+    common: GoogleDatastoreAdminV1beta1CommonMetadata = null,
+    entityFilter: GoogleDatastoreAdminV1beta1EntityFilter = null,
+    inputUrl: java.lang.String = null,
+    progressBytes: GoogleDatastoreAdminV1beta1Progress = null,
+    progressEntities: GoogleDatastoreAdminV1beta1Progress = null
+  ): GoogleDatastoreAdminV1beta1ImportEntitiesMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (common != null) __obj.updateDynamic("common")(common)
+    if (entityFilter != null) __obj.updateDynamic("entityFilter")(entityFilter)
+    if (inputUrl != null) __obj.updateDynamic("inputUrl")(inputUrl)
+    if (progressBytes != null) __obj.updateDynamic("progressBytes")(progressBytes)
+    if (progressEntities != null) __obj.updateDynamic("progressEntities")(progressEntities)
+    __obj.asInstanceOf[GoogleDatastoreAdminV1beta1ImportEntitiesMetadata]
+  }
+}
+

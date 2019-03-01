@@ -10,3 +10,13 @@ trait WidgetsVersionedList extends js.Object {
   var widgets: js.Array[Widget]
 }
 
+object WidgetsVersionedList {
+  @scala.inline
+  def apply(eTag: js.Array[java.lang.String], widgets: js.Array[Widget]): WidgetsVersionedList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eTag")(eTag)
+    __obj.updateDynamic("widgets")(widgets)
+    __obj.asInstanceOf[WidgetsVersionedList]
+  }
+}
+

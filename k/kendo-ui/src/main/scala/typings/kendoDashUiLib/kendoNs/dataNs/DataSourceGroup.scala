@@ -13,3 +13,22 @@ trait DataSourceGroup extends DataSourceItemOrGroup {
   var value: js.Any
 }
 
+object DataSourceGroup {
+  @scala.inline
+  def apply(
+    aggregates: js.Array[_],
+    field: java.lang.String,
+    hasSubgroups: scala.Boolean,
+    items: js.Array[DataSourceItemOrGroup],
+    value: js.Any
+  ): DataSourceGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregates")(aggregates)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("hasSubgroups")(hasSubgroups)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DataSourceGroup]
+  }
+}
+

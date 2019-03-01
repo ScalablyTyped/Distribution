@@ -114,3 +114,56 @@ trait JobConfigurationLoad extends js.Object {
   var writeDisposition: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JobConfigurationLoad {
+  @scala.inline
+  def apply(
+    allowJaggedRows: js.UndefOr[scala.Boolean] = js.undefined,
+    allowQuotedNewlines: js.UndefOr[scala.Boolean] = js.undefined,
+    autodetect: js.UndefOr[scala.Boolean] = js.undefined,
+    createDisposition: java.lang.String = null,
+    destinationEncryptionConfiguration: EncryptionConfiguration = null,
+    destinationTable: TableReference = null,
+    encoding: java.lang.String = null,
+    fieldDelimiter: java.lang.String = null,
+    ignoreUnknownValues: js.UndefOr[scala.Boolean] = js.undefined,
+    maxBadRecords: scala.Int | scala.Double = null,
+    nullMarker: java.lang.String = null,
+    projectionFields: js.Array[java.lang.String] = null,
+    quote: java.lang.String = null,
+    schema: TableSchema = null,
+    schemaInline: java.lang.String = null,
+    schemaInlineFormat: java.lang.String = null,
+    schemaUpdateOptions: js.Array[java.lang.String] = null,
+    skipLeadingRows: scala.Int | scala.Double = null,
+    sourceFormat: java.lang.String = null,
+    sourceUris: js.Array[java.lang.String] = null,
+    timePartitioning: TimePartitioning = null,
+    writeDisposition: java.lang.String = null
+  ): JobConfigurationLoad = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowJaggedRows)) __obj.updateDynamic("allowJaggedRows")(allowJaggedRows)
+    if (!js.isUndefined(allowQuotedNewlines)) __obj.updateDynamic("allowQuotedNewlines")(allowQuotedNewlines)
+    if (!js.isUndefined(autodetect)) __obj.updateDynamic("autodetect")(autodetect)
+    if (createDisposition != null) __obj.updateDynamic("createDisposition")(createDisposition)
+    if (destinationEncryptionConfiguration != null) __obj.updateDynamic("destinationEncryptionConfiguration")(destinationEncryptionConfiguration)
+    if (destinationTable != null) __obj.updateDynamic("destinationTable")(destinationTable)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (fieldDelimiter != null) __obj.updateDynamic("fieldDelimiter")(fieldDelimiter)
+    if (!js.isUndefined(ignoreUnknownValues)) __obj.updateDynamic("ignoreUnknownValues")(ignoreUnknownValues)
+    if (maxBadRecords != null) __obj.updateDynamic("maxBadRecords")(maxBadRecords.asInstanceOf[js.Any])
+    if (nullMarker != null) __obj.updateDynamic("nullMarker")(nullMarker)
+    if (projectionFields != null) __obj.updateDynamic("projectionFields")(projectionFields)
+    if (quote != null) __obj.updateDynamic("quote")(quote)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (schemaInline != null) __obj.updateDynamic("schemaInline")(schemaInline)
+    if (schemaInlineFormat != null) __obj.updateDynamic("schemaInlineFormat")(schemaInlineFormat)
+    if (schemaUpdateOptions != null) __obj.updateDynamic("schemaUpdateOptions")(schemaUpdateOptions)
+    if (skipLeadingRows != null) __obj.updateDynamic("skipLeadingRows")(skipLeadingRows.asInstanceOf[js.Any])
+    if (sourceFormat != null) __obj.updateDynamic("sourceFormat")(sourceFormat)
+    if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris)
+    if (timePartitioning != null) __obj.updateDynamic("timePartitioning")(timePartitioning)
+    if (writeDisposition != null) __obj.updateDynamic("writeDisposition")(writeDisposition)
+    __obj.asInstanceOf[JobConfigurationLoad]
+  }
+}
+

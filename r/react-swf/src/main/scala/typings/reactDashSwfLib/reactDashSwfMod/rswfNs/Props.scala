@@ -104,3 +104,48 @@ trait Props extends js.Object {
   var wmode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    src: java.lang.String,
+    align: java.lang.String = null,
+    allowFullScreen: js.UndefOr[scala.Boolean] = js.undefined,
+    base: java.lang.String = null,
+    bgcolor: java.lang.String = null,
+    flashVars: js.Object | java.lang.String = null,
+    fullScreenAspectRatio: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    menu: js.UndefOr[scala.Boolean] = js.undefined,
+    play: js.UndefOr[scala.Boolean] = js.undefined,
+    pluginspage: java.lang.String = null,
+    quality: java.lang.String = null,
+    salign: java.lang.String = null,
+    scale: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    wmode: java.lang.String = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("src")(src)
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor)
+    if (flashVars != null) __obj.updateDynamic("flashVars")(flashVars.asInstanceOf[js.Any])
+    if (fullScreenAspectRatio != null) __obj.updateDynamic("fullScreenAspectRatio")(fullScreenAspectRatio)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(menu)) __obj.updateDynamic("menu")(menu)
+    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play)
+    if (pluginspage != null) __obj.updateDynamic("pluginspage")(pluginspage)
+    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (salign != null) __obj.updateDynamic("salign")(salign)
+    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wmode != null) __obj.updateDynamic("wmode")(wmode)
+    __obj.asInstanceOf[Props]
+  }
+}
+

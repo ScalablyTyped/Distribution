@@ -14,3 +14,18 @@ trait Property extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Property {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    uint64Value: java.lang.String = null,
+    value: java.lang.String = null
+  ): Property = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (uint64Value != null) __obj.updateDynamic("uint64Value")(uint64Value)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Property]
+  }
+}
+

@@ -44,3 +44,20 @@ trait RemoteHttpOptions extends js.Object {
   var verb: loopbackLib.loopbackLibStrings.get | loopbackLib.loopbackLibStrings.post | loopbackLib.loopbackLibStrings.patch | loopbackLib.loopbackLibStrings.put | loopbackLib.loopbackLibStrings.del | loopbackLib.loopbackLibStrings.all
 }
 
+object RemoteHttpOptions {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    verb: loopbackLib.loopbackLibStrings.get | loopbackLib.loopbackLibStrings.post | loopbackLib.loopbackLibStrings.patch | loopbackLib.loopbackLibStrings.put | loopbackLib.loopbackLibStrings.del | loopbackLib.loopbackLibStrings.all,
+    errorStatus: scala.Int | scala.Double = null,
+    status: scala.Int | scala.Double = null
+  ): RemoteHttpOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
+    if (errorStatus != null) __obj.updateDynamic("errorStatus")(errorStatus.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RemoteHttpOptions]
+  }
+}
+

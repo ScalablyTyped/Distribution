@@ -80,3 +80,67 @@ trait RegionInstanceGroupManagersResource extends js.Object {
   def setTargetPools(request: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object RegionInstanceGroupManagersResource {
+  @scala.inline
+  def apply(
+    abandonInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    deleteInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrintProject, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroupManager]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupManagerList]
+    ],
+    listManagedInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroupManagerKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupManagersListInstancesResponse]
+    ],
+    recreateInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    resize: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrintProjectQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setInstanceTemplate: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setTargetPools: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupManagerKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): RegionInstanceGroupManagersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abandonInstances")(abandonInstances)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("deleteInstances")(deleteInstances)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("listManagedInstances")(listManagedInstances)
+    __obj.updateDynamic("recreateInstances")(recreateInstances)
+    __obj.updateDynamic("resize")(resize)
+    __obj.updateDynamic("setInstanceTemplate")(setInstanceTemplate)
+    __obj.updateDynamic("setTargetPools")(setTargetPools)
+    __obj.asInstanceOf[RegionInstanceGroupManagersResource]
+  }
+}
+

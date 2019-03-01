@@ -11,3 +11,18 @@ trait PolylineStartCap extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PolylineStartCap {
+  @scala.inline
+  def apply(
+    fill: java.lang.String | PolylineStartCapFill = null,
+    stroke: java.lang.String | PolylineStartCapStroke = null,
+    `type`: java.lang.String = null
+  ): PolylineStartCap = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PolylineStartCap]
+  }
+}
+

@@ -21,3 +21,22 @@ trait BootstrapClientAccordionGroupClickEventArgs extends BootstrapClientAccordi
   var htmlEvent: js.Object
 }
 
+object BootstrapClientAccordionGroupClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    group: BootstrapClientAccordionGroup,
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    processOnServer: scala.Boolean
+  ): BootstrapClientAccordionGroupClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("htmlElement")(htmlElement)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[BootstrapClientAccordionGroupClickEventArgs]
+  }
+}
+

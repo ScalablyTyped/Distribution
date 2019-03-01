@@ -28,3 +28,22 @@ trait GoogleApiYouTubeActivityResource extends js.Object {
   var snippet: Anon_ChannelIdChannelTitle
 }
 
+object GoogleApiYouTubeActivityResource {
+  @scala.inline
+  def apply(
+    contentDetails: Anon_Bulletin,
+    etag: java.lang.String,
+    id: java.lang.String,
+    kind: java.lang.String,
+    snippet: Anon_ChannelIdChannelTitle
+  ): GoogleApiYouTubeActivityResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentDetails")(contentDetails)
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("snippet")(snippet)
+    __obj.asInstanceOf[GoogleApiYouTubeActivityResource]
+  }
+}
+

@@ -25,7 +25,7 @@ object socketclusterLibStrings {
   sealed trait fail extends js.Object
   
   @js.native
-  sealed trait green extends js.Object
+  sealed trait green extends ColorCodes
   
   @js.native
   sealed trait masterMessage extends js.Object
@@ -34,7 +34,7 @@ object socketclusterLibStrings {
   sealed trait ready extends js.Object
   
   @js.native
-  sealed trait red extends js.Object
+  sealed trait red extends ColorCodes
   
   @js.native
   sealed trait start extends js.Object
@@ -58,7 +58,7 @@ object socketclusterLibStrings {
   sealed trait workerStart extends js.Object
   
   @js.native
-  sealed trait yellow extends js.Object
+  sealed trait yellow extends ColorCodes
   
   @scala.inline
   def brokerExit: brokerExit = "brokerExit".asInstanceOf[brokerExit]

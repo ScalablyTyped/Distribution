@@ -15,3 +15,29 @@ trait IAnimateProps extends js.Object {
   def children(state: kapellmeisterLib.kapellmeisterMod.HashMap): reactLib.reactMod.ReactNs.ReactElement[_]
 }
 
+object IAnimateProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[
+      kapellmeisterLib.kapellmeisterMod.HashMap, 
+      reactLib.reactMod.ReactNs.ReactElement[_]
+    ],
+    start: js.Any,
+    enter: js.Any = null,
+    interpolation: reactDashMoveLib.reactDashMoveMod.GetInterpolator = null,
+    leave: js.Any = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    update: js.Any = null
+  ): IAnimateProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("start")(start)
+    if (enter != null) __obj.updateDynamic("enter")(enter)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (leave != null) __obj.updateDynamic("leave")(leave)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[IAnimateProps]
+  }
+}
+

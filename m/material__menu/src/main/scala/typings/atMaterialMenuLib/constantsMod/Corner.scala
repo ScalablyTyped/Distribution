@@ -17,3 +17,28 @@ trait Corner
   var TOP_START: atMaterialMenuLib.atMaterialMenuLibNumbers.`8`
 }
 
+object Corner {
+  @scala.inline
+  def apply(
+    BOTTOM_END: atMaterialMenuLib.atMaterialMenuLibNumbers.`13`,
+    BOTTOM_LEFT: atMaterialMenuLib.atMaterialMenuLibNumbers.`1`,
+    BOTTOM_RIGHT: atMaterialMenuLib.atMaterialMenuLibNumbers.`5`,
+    BOTTOM_START: atMaterialMenuLib.atMaterialMenuLibNumbers.`9`,
+    TOP_END: atMaterialMenuLib.atMaterialMenuLibNumbers.`12`,
+    TOP_LEFT: atMaterialMenuLib.atMaterialMenuLibNumbers.`0`,
+    TOP_RIGHT: atMaterialMenuLib.atMaterialMenuLibNumbers.`4`,
+    TOP_START: atMaterialMenuLib.atMaterialMenuLibNumbers.`8`
+  ): Corner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BOTTOM_END")(BOTTOM_END)
+    __obj.updateDynamic("BOTTOM_LEFT")(BOTTOM_LEFT)
+    __obj.updateDynamic("BOTTOM_RIGHT")(BOTTOM_RIGHT)
+    __obj.updateDynamic("BOTTOM_START")(BOTTOM_START)
+    __obj.updateDynamic("TOP_END")(TOP_END)
+    __obj.updateDynamic("TOP_LEFT")(TOP_LEFT)
+    __obj.updateDynamic("TOP_RIGHT")(TOP_RIGHT)
+    __obj.updateDynamic("TOP_START")(TOP_START)
+    __obj.asInstanceOf[Corner]
+  }
+}
+

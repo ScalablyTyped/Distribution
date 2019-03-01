@@ -12,3 +12,20 @@ trait Anon_BottomLeftRight extends js.Object {
   var top: js.UndefOr[grommetLib.grommetLibStrings.top | grommetLib.grommetLibStrings.bottom] = js.undefined
 }
 
+object Anon_BottomLeftRight {
+  @scala.inline
+  def apply(
+    bottom: grommetLib.grommetLibStrings.top | grommetLib.grommetLibStrings.bottom = null,
+    left: grommetLib.grommetLibStrings.right | grommetLib.grommetLibStrings.left = null,
+    right: grommetLib.grommetLibStrings.right | grommetLib.grommetLibStrings.left = null,
+    top: grommetLib.grommetLibStrings.top | grommetLib.grommetLibStrings.bottom = null
+  ): Anon_BottomLeftRight = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BottomLeftRight]
+  }
+}
+

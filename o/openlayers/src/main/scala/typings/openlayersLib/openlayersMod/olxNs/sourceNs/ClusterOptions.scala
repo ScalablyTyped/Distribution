@@ -22,3 +22,33 @@ trait ClusterOptions extends js.Object {
   var wrapX: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClusterOptions {
+  @scala.inline
+  def apply(
+    source: openlayersLib.openlayersMod.sourceNs.Vector,
+    attributions: openlayersLib.openlayersMod.AttributionLike = null,
+    distance: scala.Int | scala.Double = null,
+    extent: openlayersLib.openlayersMod.Extent = null,
+    format: openlayersLib.openlayersMod.formatNs.Feature = null,
+    geometryFunction: js.Function1[
+      /* feature */ openlayersLib.openlayersMod.Feature, 
+      openlayersLib.openlayersMod.geomNs.Point
+    ] = null,
+    logo: java.lang.String = null,
+    projection: openlayersLib.openlayersMod.ProjectionLike = null,
+    wrapX: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClusterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(geometryFunction)
+    if (logo != null) __obj.updateDynamic("logo")(logo)
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    __obj.asInstanceOf[ClusterOptions]
+  }
+}
+

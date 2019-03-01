@@ -24,3 +24,28 @@ trait DomScrollIntoViewConfig extends js.Object {
   var onlyScrollIfNeeded: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DomScrollIntoViewConfig {
+  @scala.inline
+  def apply(
+    alignWithLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    alignWithTop: js.UndefOr[scala.Boolean] = js.undefined,
+    allowHorizontalScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    offsetBottom: scala.Int | scala.Double = null,
+    offsetLeft: scala.Int | scala.Double = null,
+    offsetRight: scala.Int | scala.Double = null,
+    offsetTop: scala.Int | scala.Double = null,
+    onlyScrollIfNeeded: js.UndefOr[scala.Boolean] = js.undefined
+  ): DomScrollIntoViewConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alignWithLeft)) __obj.updateDynamic("alignWithLeft")(alignWithLeft)
+    if (!js.isUndefined(alignWithTop)) __obj.updateDynamic("alignWithTop")(alignWithTop)
+    if (!js.isUndefined(allowHorizontalScroll)) __obj.updateDynamic("allowHorizontalScroll")(allowHorizontalScroll)
+    if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
+    if (offsetLeft != null) __obj.updateDynamic("offsetLeft")(offsetLeft.asInstanceOf[js.Any])
+    if (offsetRight != null) __obj.updateDynamic("offsetRight")(offsetRight.asInstanceOf[js.Any])
+    if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyScrollIfNeeded)) __obj.updateDynamic("onlyScrollIfNeeded")(onlyScrollIfNeeded)
+    __obj.asInstanceOf[DomScrollIntoViewConfig]
+  }
+}
+

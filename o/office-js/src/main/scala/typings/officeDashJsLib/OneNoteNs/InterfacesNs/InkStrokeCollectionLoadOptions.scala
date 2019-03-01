@@ -30,3 +30,18 @@ trait InkStrokeCollectionLoadOptions extends js.Object {
   var id: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InkStrokeCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    floatingInk: FloatingInkLoadOptions = null,
+    id: js.UndefOr[scala.Boolean] = js.undefined
+  ): InkStrokeCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (floatingInk != null) __obj.updateDynamic("floatingInk")(floatingInk)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[InkStrokeCollectionLoadOptions]
+  }
+}
+

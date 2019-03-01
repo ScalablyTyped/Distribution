@@ -32,3 +32,24 @@ trait Options extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    access_token: java.lang.String = null,
+    baseUrl: java.lang.String = null,
+    domainSharding: js.Array[java.lang.String] = null,
+    refresh_token: java.lang.String = null,
+    subDomain: java.lang.String = null,
+    version: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (domainSharding != null) __obj.updateDynamic("domainSharding")(domainSharding)
+    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token)
+    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Options]
+  }
+}
+

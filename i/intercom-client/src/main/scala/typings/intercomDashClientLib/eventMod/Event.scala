@@ -15,3 +15,20 @@ import scala.scalajs.js.annotation._
   var metadata: js.UndefOr[js.Any] = js.undefined
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    created_at: scala.Double,
+    event_name: java.lang.String,
+    id: java.lang.String,
+    metadata: js.Any = null
+  ): Event = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("created_at")(created_at)
+    __obj.updateDynamic("event_name")(event_name)
+    __obj.updateDynamic("id")(id)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[Event]
+  }
+}
+

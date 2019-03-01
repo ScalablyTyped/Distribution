@@ -53,3 +53,43 @@ trait Cell extends Style {
   def removeName(name: java.lang.String): scala.Unit
 }
 
+object Cell {
+  @scala.inline
+  def apply(
+    formula: java.lang.String,
+    formulaType: FormulaType,
+    removeName: js.Function1[java.lang.String, scala.Unit],
+    result: scala.Double | java.lang.String | stdLib.Date,
+    style: Style,
+    `type`: ValueType,
+    value: CellValue,
+    alignment: Alignment = null,
+    border: Borders = null,
+    dataValidation: DataValidation = null,
+    fill: Fill = null,
+    font: Font = null,
+    master: Cell = null,
+    name: java.lang.String = null,
+    names: js.Array[java.lang.String] = null,
+    numFmt: java.lang.String = null
+  ): Cell = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("formula")(formula)
+    __obj.updateDynamic("formulaType")(formulaType)
+    __obj.updateDynamic("removeName")(removeName)
+    __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (master != null) __obj.updateDynamic("master")(master)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (numFmt != null) __obj.updateDynamic("numFmt")(numFmt)
+    __obj.asInstanceOf[Cell]
+  }
+}
+

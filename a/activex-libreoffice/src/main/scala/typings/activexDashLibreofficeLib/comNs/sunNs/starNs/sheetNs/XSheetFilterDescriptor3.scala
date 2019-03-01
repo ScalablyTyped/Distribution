@@ -23,3 +23,24 @@ trait XSheetFilterDescriptor3
   def setFilterFields3(aFilterFields: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField3]): scala.Unit
 }
 
+object XSheetFilterDescriptor3 {
+  @scala.inline
+  def apply(
+    FilterFields3: activexDashInteropLib.SafeArray[TableFilterField3],
+    acquire: js.Function0[scala.Unit],
+    getFilterFields3: js.Function0[activexDashInteropLib.SafeArray[TableFilterField3]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setFilterFields3: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField3], scala.Unit]
+  ): XSheetFilterDescriptor3 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FilterFields3")(FilterFields3)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFilterFields3")(getFilterFields3)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setFilterFields3")(setFilterFields3)
+    __obj.asInstanceOf[XSheetFilterDescriptor3]
+  }
+}
+

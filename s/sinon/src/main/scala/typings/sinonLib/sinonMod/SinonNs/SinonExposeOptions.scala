@@ -10,3 +10,13 @@ trait SinonExposeOptions extends js.Object {
   var prefix: java.lang.String
 }
 
+object SinonExposeOptions {
+  @scala.inline
+  def apply(includeFail: scala.Boolean, prefix: java.lang.String): SinonExposeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("includeFail")(includeFail)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[SinonExposeOptions]
+  }
+}
+

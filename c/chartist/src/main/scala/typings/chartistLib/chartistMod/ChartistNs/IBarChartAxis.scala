@@ -16,3 +16,28 @@ trait IBarChartAxis extends js.Object {
   var showLabel: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IBarChartAxis {
+  @scala.inline
+  def apply(
+    labelInterpolationFnc: js.Function = null,
+    labelOffset: chartistLib.Anon_X = null,
+    offset: scala.Int | scala.Double = null,
+    onlyInteger: js.UndefOr[scala.Boolean] = js.undefined,
+    position: java.lang.String = null,
+    scaleMinSpace: scala.Int | scala.Double = null,
+    showGrid: js.UndefOr[scala.Boolean] = js.undefined,
+    showLabel: js.UndefOr[scala.Boolean] = js.undefined
+  ): IBarChartAxis = {
+    val __obj = js.Dynamic.literal()
+    if (labelInterpolationFnc != null) __obj.updateDynamic("labelInterpolationFnc")(labelInterpolationFnc)
+    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyInteger)) __obj.updateDynamic("onlyInteger")(onlyInteger)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (scaleMinSpace != null) __obj.updateDynamic("scaleMinSpace")(scaleMinSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid)
+    if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel)
+    __obj.asInstanceOf[IBarChartAxis]
+  }
+}
+

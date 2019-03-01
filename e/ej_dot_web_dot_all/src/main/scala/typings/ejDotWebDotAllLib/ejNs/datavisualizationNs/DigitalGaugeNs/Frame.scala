@@ -20,3 +20,18 @@ trait Frame extends js.Object {
   var outerWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Frame {
+  @scala.inline
+  def apply(
+    backgroundImageUrl: java.lang.String = null,
+    innerWidth: scala.Int | scala.Double = null,
+    outerWidth: scala.Int | scala.Double = null
+  ): Frame = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundImageUrl != null) __obj.updateDynamic("backgroundImageUrl")(backgroundImageUrl)
+    if (innerWidth != null) __obj.updateDynamic("innerWidth")(innerWidth.asInstanceOf[js.Any])
+    if (outerWidth != null) __obj.updateDynamic("outerWidth")(outerWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Frame]
+  }
+}
+

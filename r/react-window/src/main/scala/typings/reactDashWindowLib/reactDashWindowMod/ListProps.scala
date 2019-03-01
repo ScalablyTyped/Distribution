@@ -75,3 +75,52 @@ trait ListProps extends CommonProps {
   var width: scala.Double | java.lang.String
 }
 
+object ListProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ComponentType[ListChildComponentProps],
+    height: scala.Double | java.lang.String,
+    itemCount: scala.Double,
+    width: scala.Double | java.lang.String,
+    className: java.lang.String = null,
+    direction: Direction = null,
+    initialScrollOffset: scala.Int | scala.Double = null,
+    innerElementType: ReactElementType = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    innerTagName: java.lang.String = null,
+    itemData: js.Any = null,
+    itemKey: ListItemKeySelector = null,
+    onItemsRendered: js.Function1[/* props */ ListOnItemsRenderedProps, _] = null,
+    onScroll: js.Function1[/* props */ ListOnScrollProps, _] = null,
+    outerElementType: ReactElementType = null,
+    outerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    outerTagName: java.lang.String = null,
+    overscanCount: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
+  ): ListProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    __obj.updateDynamic("itemCount")(itemCount)
+    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (initialScrollOffset != null) __obj.updateDynamic("initialScrollOffset")(initialScrollOffset.asInstanceOf[js.Any])
+    if (innerElementType != null) __obj.updateDynamic("innerElementType")(innerElementType.asInstanceOf[js.Any])
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName)
+    if (itemData != null) __obj.updateDynamic("itemData")(itemData)
+    if (itemKey != null) __obj.updateDynamic("itemKey")(itemKey)
+    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(onItemsRendered)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
+    if (outerRef != null) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
+    if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName)
+    if (overscanCount != null) __obj.updateDynamic("overscanCount")(overscanCount.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(useIsScrolling)) __obj.updateDynamic("useIsScrolling")(useIsScrolling)
+    __obj.asInstanceOf[ListProps]
+  }
+}
+

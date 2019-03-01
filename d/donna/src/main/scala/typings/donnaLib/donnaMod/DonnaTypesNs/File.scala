@@ -10,3 +10,13 @@ trait File extends js.Object {
   var objects: org.scalablytyped.runtime.NumberDictionary[Line]
 }
 
+object File {
+  @scala.inline
+  def apply(exports: js.Any, objects: org.scalablytyped.runtime.NumberDictionary[Line]): File = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exports")(exports)
+    __obj.updateDynamic("objects")(objects)
+    __obj.asInstanceOf[File]
+  }
+}
+

@@ -16,3 +16,28 @@ trait ResultsFilter extends js.Object {
   var trendDays: scala.Double
 }
 
+object ResultsFilter {
+  @scala.inline
+  def apply(
+    automatedTestName: java.lang.String,
+    branch: java.lang.String,
+    groupBy: java.lang.String,
+    maxCompleteDate: stdLib.Date,
+    resultsCount: scala.Double,
+    testCaseReferenceIds: js.Array[scala.Double],
+    testResultsContext: TestResultsContext,
+    trendDays: scala.Double
+  ): ResultsFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("automatedTestName")(automatedTestName)
+    __obj.updateDynamic("branch")(branch)
+    __obj.updateDynamic("groupBy")(groupBy)
+    __obj.updateDynamic("maxCompleteDate")(maxCompleteDate)
+    __obj.updateDynamic("resultsCount")(resultsCount)
+    __obj.updateDynamic("testCaseReferenceIds")(testCaseReferenceIds)
+    __obj.updateDynamic("testResultsContext")(testResultsContext)
+    __obj.updateDynamic("trendDays")(trendDays)
+    __obj.asInstanceOf[ResultsFilter]
+  }
+}
+

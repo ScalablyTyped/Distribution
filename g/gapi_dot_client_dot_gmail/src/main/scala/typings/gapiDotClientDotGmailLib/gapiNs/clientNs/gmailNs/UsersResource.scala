@@ -20,3 +20,39 @@ trait UsersResource extends js.Object {
   def watch(request: gapiDotClientDotGmailLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[WatchResponse]
 }
 
+object UsersResource {
+  @scala.inline
+  def apply(
+    drafts: DraftsResource,
+    getProfile: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Profile]
+    ],
+    history: HistoryResource,
+    labels: LabelsResource,
+    messages: MessagesResource,
+    settings: SettingsResource,
+    stop: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    threads: ThreadsResource,
+    watch: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WatchResponse]
+    ]
+  ): UsersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("drafts")(drafts)
+    __obj.updateDynamic("getProfile")(getProfile)
+    __obj.updateDynamic("history")(history)
+    __obj.updateDynamic("labels")(labels)
+    __obj.updateDynamic("messages")(messages)
+    __obj.updateDynamic("settings")(settings)
+    __obj.updateDynamic("stop")(stop)
+    __obj.updateDynamic("threads")(threads)
+    __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[UsersResource]
+  }
+}
+

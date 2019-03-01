@@ -7,28 +7,38 @@ import scala.scalajs.js.annotation._
 
 object searchDashParamsLibStrings {
   @js.native
-  sealed trait brackets extends js.Object
+  sealed trait brackets
+    extends searchDashParamsLib.typingsEncodeMod.arrayFormat
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends searchDashParamsLib.typingsEncodeMod.nullFormat
   
   @js.native
-  sealed trait `empty-true` extends js.Object
+  sealed trait `empty-true`
+    extends searchDashParamsLib.typingsEncodeMod.booleanFormat
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hidden
+    extends searchDashParamsLib.typingsEncodeMod.nullFormat
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait index
+    extends searchDashParamsLib.typingsEncodeMod.arrayFormat
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends searchDashParamsLib.typingsEncodeMod.arrayFormat
+       with searchDashParamsLib.typingsEncodeMod.booleanFormat
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends searchDashParamsLib.typingsEncodeMod.booleanFormat
+       with searchDashParamsLib.typingsEncodeMod.nullFormat
   
   @js.native
-  sealed trait unicode extends js.Object
+  sealed trait unicode
+    extends searchDashParamsLib.typingsEncodeMod.booleanFormat
   
   @scala.inline
   def brackets: brackets = "brackets".asInstanceOf[brackets]

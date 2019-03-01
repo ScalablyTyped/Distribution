@@ -13,3 +13,22 @@ trait InsertOneWriteOpResult extends js.Object {
   var result: mongodbLib.Anon_NOk
 }
 
+object InsertOneWriteOpResult {
+  @scala.inline
+  def apply(
+    connection: js.Any,
+    insertedCount: scala.Double,
+    insertedId: bsonLib.bsonMod.ObjectID,
+    ops: js.Array[_],
+    result: mongodbLib.Anon_NOk
+  ): InsertOneWriteOpResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.updateDynamic("insertedCount")(insertedCount)
+    __obj.updateDynamic("insertedId")(insertedId)
+    __obj.updateDynamic("ops")(ops)
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[InsertOneWriteOpResult]
+  }
+}
+

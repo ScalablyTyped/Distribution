@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when text message is received
 		*/
-trait MessageReceived extends js.Object {
+trait MessageReceived
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantCallEvent {
   /**
   			*	Call that dispatched the event
   			*/
@@ -17,5 +18,15 @@ trait MessageReceived extends js.Object {
   			*	Content of the message
   			*/
   var text: java.lang.String
+}
+
+object MessageReceived {
+  @scala.inline
+  def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call, text: java.lang.String): MessageReceived = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("call")(call)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[MessageReceived]
+  }
 }
 

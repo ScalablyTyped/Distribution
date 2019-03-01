@@ -16,3 +16,36 @@ trait ImageVariant extends Image {
   def imageForSize(image: Image, options: ImageOptions): java.lang.String
 }
 
+object ImageVariant {
+  @scala.inline
+  def apply(
+    created_at: java.lang.String,
+    dimensions: java.lang.String,
+    id: java.lang.String | scala.Double,
+    imageForSize: js.Function2[Image, ImageOptions, java.lang.String],
+    name: java.lang.String,
+    position: scala.Double,
+    product_id: java.lang.String,
+    src: java.lang.String,
+    updated_at: java.lang.String,
+    variant_ids: js.Array[java.lang.String],
+    attrs: js.Any = null,
+    onlineStoreUrl: java.lang.String = null
+  ): ImageVariant = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("created_at")(created_at)
+    __obj.updateDynamic("dimensions")(dimensions)
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("imageForSize")(imageForSize)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("product_id")(product_id)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("updated_at")(updated_at)
+    __obj.updateDynamic("variant_ids")(variant_ids)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    __obj.asInstanceOf[ImageVariant]
+  }
+}
+

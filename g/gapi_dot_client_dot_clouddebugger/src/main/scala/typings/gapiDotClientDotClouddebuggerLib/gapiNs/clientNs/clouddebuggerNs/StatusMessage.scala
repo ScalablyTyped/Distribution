@@ -14,3 +14,18 @@ trait StatusMessage extends js.Object {
   var refersTo: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StatusMessage {
+  @scala.inline
+  def apply(
+    description: FormatMessage = null,
+    isError: js.UndefOr[scala.Boolean] = js.undefined,
+    refersTo: java.lang.String = null
+  ): StatusMessage = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(isError)) __obj.updateDynamic("isError")(isError)
+    if (refersTo != null) __obj.updateDynamic("refersTo")(refersTo)
+    __obj.asInstanceOf[StatusMessage]
+  }
+}
+

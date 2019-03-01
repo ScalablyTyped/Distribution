@@ -32,3 +32,68 @@ trait ITextDocument extends js.Object {
   def undo(): scala.Unit
 }
 
+object ITextDocument {
+  @scala.inline
+  def apply(
+    applyDisplayUpdates: js.Function0[scala.Double],
+    batchDisplayUpdates: js.Function0[scala.Double],
+    beginUndoGroup: js.Function0[scala.Unit],
+    canCopy: js.Function0[scala.Boolean],
+    canPaste: js.Function0[scala.Boolean],
+    canRedo: js.Function0[scala.Boolean],
+    canUndo: js.Function0[scala.Boolean],
+    caretType: CaretType,
+    defaultTabStop: scala.Double,
+    endUndoGroup: js.Function0[scala.Unit],
+    getDefaultCharacterFormat: js.Function0[ITextCharacterFormat],
+    getDefaultParagraphFormat: js.Function0[ITextParagraphFormat],
+    getRange: js.Function2[scala.Double, scala.Double, ITextRange],
+    getRangeFromPoint: js.Function2[winrtLib.WindowsNs.FoundationNs.Point, PointOptions, ITextRange],
+    getText: js.Function1[TextGetOptions, java.lang.String],
+    loadFromStream: js.Function2[
+      TextSetOptions, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
+      scala.Unit
+    ],
+    redo: js.Function0[scala.Unit],
+    saveToStream: js.Function2[
+      TextGetOptions, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
+      scala.Unit
+    ],
+    selection: ITextSelection,
+    setDefaultCharacterFormat: js.Function1[ITextCharacterFormat, scala.Unit],
+    setDefaultParagraphFormat: js.Function1[ITextParagraphFormat, scala.Unit],
+    setText: js.Function2[TextSetOptions, java.lang.String, scala.Unit],
+    undo: js.Function0[scala.Unit],
+    undoLimit: scala.Double
+  ): ITextDocument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applyDisplayUpdates")(applyDisplayUpdates)
+    __obj.updateDynamic("batchDisplayUpdates")(batchDisplayUpdates)
+    __obj.updateDynamic("beginUndoGroup")(beginUndoGroup)
+    __obj.updateDynamic("canCopy")(canCopy)
+    __obj.updateDynamic("canPaste")(canPaste)
+    __obj.updateDynamic("canRedo")(canRedo)
+    __obj.updateDynamic("canUndo")(canUndo)
+    __obj.updateDynamic("caretType")(caretType)
+    __obj.updateDynamic("defaultTabStop")(defaultTabStop)
+    __obj.updateDynamic("endUndoGroup")(endUndoGroup)
+    __obj.updateDynamic("getDefaultCharacterFormat")(getDefaultCharacterFormat)
+    __obj.updateDynamic("getDefaultParagraphFormat")(getDefaultParagraphFormat)
+    __obj.updateDynamic("getRange")(getRange)
+    __obj.updateDynamic("getRangeFromPoint")(getRangeFromPoint)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("loadFromStream")(loadFromStream)
+    __obj.updateDynamic("redo")(redo)
+    __obj.updateDynamic("saveToStream")(saveToStream)
+    __obj.updateDynamic("selection")(selection)
+    __obj.updateDynamic("setDefaultCharacterFormat")(setDefaultCharacterFormat)
+    __obj.updateDynamic("setDefaultParagraphFormat")(setDefaultParagraphFormat)
+    __obj.updateDynamic("setText")(setText)
+    __obj.updateDynamic("undo")(undo)
+    __obj.updateDynamic("undoLimit")(undoLimit)
+    __obj.asInstanceOf[ITextDocument]
+  }
+}
+

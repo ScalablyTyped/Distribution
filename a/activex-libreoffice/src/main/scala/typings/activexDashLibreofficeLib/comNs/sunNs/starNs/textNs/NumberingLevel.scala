@@ -147,3 +147,66 @@ trait NumberingLevel extends js.Object {
   var VertOrient: scala.Double
 }
 
+object NumberingLevel {
+  @scala.inline
+  def apply(
+    Adjust: scala.Double,
+    BulletChar: java.lang.String,
+    BulletColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BulletFont: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontDescriptor,
+    BulletFontName: java.lang.String,
+    BulletId: scala.Double,
+    BulletRelSize: scala.Double,
+    CharStyleName: java.lang.String,
+    FirstLineIndent: scala.Double,
+    FirstLineOffset: scala.Double,
+    GraphicBitmap: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap,
+    GraphicSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    GraphicURL: java.lang.String,
+    HeadingStyleName: java.lang.String,
+    IndentAt: scala.Double,
+    LabelFollowedBy: scala.Double,
+    LeftMargin: scala.Double,
+    ListtabStopPosition: scala.Double,
+    NumberingType: scala.Double,
+    ParagraphStyleName: java.lang.String,
+    ParentNumbering: scala.Double,
+    PositionAndSpaceMode: scala.Double,
+    Prefix: java.lang.String,
+    StartWith: scala.Double,
+    Suffix: java.lang.String,
+    SymbolTextDistance: scala.Double,
+    VertOrient: scala.Double
+  ): NumberingLevel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Adjust")(Adjust)
+    __obj.updateDynamic("BulletChar")(BulletChar)
+    __obj.updateDynamic("BulletColor")(BulletColor)
+    __obj.updateDynamic("BulletFont")(BulletFont)
+    __obj.updateDynamic("BulletFontName")(BulletFontName)
+    __obj.updateDynamic("BulletId")(BulletId)
+    __obj.updateDynamic("BulletRelSize")(BulletRelSize)
+    __obj.updateDynamic("CharStyleName")(CharStyleName)
+    __obj.updateDynamic("FirstLineIndent")(FirstLineIndent)
+    __obj.updateDynamic("FirstLineOffset")(FirstLineOffset)
+    __obj.updateDynamic("GraphicBitmap")(GraphicBitmap)
+    __obj.updateDynamic("GraphicSize")(GraphicSize)
+    __obj.updateDynamic("GraphicURL")(GraphicURL)
+    __obj.updateDynamic("HeadingStyleName")(HeadingStyleName)
+    __obj.updateDynamic("IndentAt")(IndentAt)
+    __obj.updateDynamic("LabelFollowedBy")(LabelFollowedBy)
+    __obj.updateDynamic("LeftMargin")(LeftMargin)
+    __obj.updateDynamic("ListtabStopPosition")(ListtabStopPosition)
+    __obj.updateDynamic("NumberingType")(NumberingType)
+    __obj.updateDynamic("ParagraphStyleName")(ParagraphStyleName)
+    __obj.updateDynamic("ParentNumbering")(ParentNumbering)
+    __obj.updateDynamic("PositionAndSpaceMode")(PositionAndSpaceMode)
+    __obj.updateDynamic("Prefix")(Prefix)
+    __obj.updateDynamic("StartWith")(StartWith)
+    __obj.updateDynamic("Suffix")(Suffix)
+    __obj.updateDynamic("SymbolTextDistance")(SymbolTextDistance)
+    __obj.updateDynamic("VertOrient")(VertOrient)
+    __obj.asInstanceOf[NumberingLevel]
+  }
+}
+

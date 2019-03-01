@@ -36,3 +36,22 @@ trait options extends js.Object {
   var safeFields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object options {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultType: java.lang.String = null,
+    log: js.UndefOr[scala.Boolean] = js.undefined,
+    negotiateContentType: js.UndefOr[scala.Boolean] = js.undefined,
+    safeFields: js.Array[java.lang.String] = null
+  ): options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)
+    if (!js.isUndefined(negotiateContentType)) __obj.updateDynamic("negotiateContentType")(negotiateContentType)
+    if (safeFields != null) __obj.updateDynamic("safeFields")(safeFields)
+    __obj.asInstanceOf[options]
+  }
+}
+

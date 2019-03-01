@@ -26,3 +26,24 @@ trait CardDragStartEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CardDragStartEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    draggedElement: js.Any = null,
+    dragtarget: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): CardDragStartEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (draggedElement != null) __obj.updateDynamic("draggedElement")(draggedElement)
+    if (dragtarget != null) __obj.updateDynamic("dragtarget")(dragtarget)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CardDragStartEventArgs]
+  }
+}
+

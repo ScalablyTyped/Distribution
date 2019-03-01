@@ -17,3 +17,30 @@ trait PublisherMessage extends js.Object {
   var t: scala.Double
 }
 
+object PublisherMessage {
+  @scala.inline
+  def apply(
+    host: java.lang.String,
+    id: java.lang.String,
+    ip: java.lang.String,
+    name: java.lang.String,
+    nspace: java.lang.String,
+    path: java.lang.String,
+    port: scala.Double,
+    t: scala.Double,
+    commPort: scala.Int | scala.Double = null
+  ): PublisherMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ip")(ip)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("nspace")(nspace)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("t")(t)
+    if (commPort != null) __obj.updateDynamic("commPort")(commPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PublisherMessage]
+  }
+}
+

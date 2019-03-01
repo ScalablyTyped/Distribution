@@ -13,3 +13,22 @@ trait FilterClause extends js.Object {
   var value: java.lang.String
 }
 
+object FilterClause {
+  @scala.inline
+  def apply(
+    fieldName: java.lang.String,
+    index: scala.Double,
+    logicalOperator: java.lang.String,
+    operator: java.lang.String,
+    value: java.lang.String
+  ): FilterClause = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fieldName")(fieldName)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("logicalOperator")(logicalOperator)
+    __obj.updateDynamic("operator")(operator)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[FilterClause]
+  }
+}
+

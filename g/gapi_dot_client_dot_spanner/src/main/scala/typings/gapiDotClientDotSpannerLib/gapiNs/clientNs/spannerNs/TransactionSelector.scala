@@ -22,3 +22,18 @@ trait TransactionSelector extends js.Object {
   var singleUse: js.UndefOr[TransactionOptions] = js.undefined
 }
 
+object TransactionSelector {
+  @scala.inline
+  def apply(
+    begin: TransactionOptions = null,
+    id: java.lang.String = null,
+    singleUse: TransactionOptions = null
+  ): TransactionSelector = {
+    val __obj = js.Dynamic.literal()
+    if (begin != null) __obj.updateDynamic("begin")(begin)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (singleUse != null) __obj.updateDynamic("singleUse")(singleUse)
+    __obj.asInstanceOf[TransactionSelector]
+  }
+}
+

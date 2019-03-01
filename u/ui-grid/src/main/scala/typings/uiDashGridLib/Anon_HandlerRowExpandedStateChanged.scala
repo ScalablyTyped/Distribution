@@ -17,3 +17,18 @@ trait Anon_HandlerRowExpandedStateChanged[TEntity] extends js.Object {
   ): scala.Unit
 }
 
+object Anon_HandlerRowExpandedStateChanged {
+  @scala.inline
+  def apply[TEntity](
+    rowExpandedStateChanged: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.expandableNs.rowExpandedStateChangedHandler[TEntity], 
+      scala.Unit
+    ]
+  ): Anon_HandlerRowExpandedStateChanged[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rowExpandedStateChanged")(rowExpandedStateChanged)
+    __obj.asInstanceOf[Anon_HandlerRowExpandedStateChanged[TEntity]]
+  }
+}
+

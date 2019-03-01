@@ -13,22 +13,28 @@ object tsutilsLibStrings {
   sealed trait BACKSLASHrBACKSLASHn extends js.Object
   
   @js.native
-  sealed trait alwaysStrict extends js.Object
+  sealed trait alwaysStrict
+    extends tsutilsLib.utilUtilMod.StrictCompilerOption
   
   @js.native
-  sealed trait noImplicitAny extends js.Object
+  sealed trait noImplicitAny
+    extends tsutilsLib.utilUtilMod.StrictCompilerOption
   
   @js.native
-  sealed trait noImplicitThis extends js.Object
+  sealed trait noImplicitThis
+    extends tsutilsLib.utilUtilMod.StrictCompilerOption
   
   @js.native
-  sealed trait strictFunctionTypes extends js.Object
+  sealed trait strictFunctionTypes
+    extends tsutilsLib.utilUtilMod.StrictCompilerOption
   
   @js.native
-  sealed trait strictNullChecks extends js.Object
+  sealed trait strictNullChecks
+    extends tsutilsLib.utilUtilMod.StrictCompilerOption
   
   @js.native
-  sealed trait strictPropertyInitialization extends js.Object
+  sealed trait strictPropertyInitialization
+    extends tsutilsLib.utilUtilMod.StrictCompilerOption
   
   @js.native
   sealed trait stripInternal extends js.Object

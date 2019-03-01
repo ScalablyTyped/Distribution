@@ -12,3 +12,20 @@ trait TestResultSummary extends js.Object {
   var testResultsContext: TestResultsContext
 }
 
+object TestResultSummary {
+  @scala.inline
+  def apply(
+    aggregatedResultsAnalysis: AggregatedResultsAnalysis,
+    teamProject: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference,
+    testFailures: TestFailuresAnalysis,
+    testResultsContext: TestResultsContext
+  ): TestResultSummary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregatedResultsAnalysis")(aggregatedResultsAnalysis)
+    __obj.updateDynamic("teamProject")(teamProject)
+    __obj.updateDynamic("testFailures")(testFailures)
+    __obj.updateDynamic("testResultsContext")(testResultsContext)
+    __obj.asInstanceOf[TestResultSummary]
+  }
+}
+

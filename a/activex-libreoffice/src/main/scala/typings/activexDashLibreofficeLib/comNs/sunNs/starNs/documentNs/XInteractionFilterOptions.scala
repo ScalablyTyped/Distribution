@@ -30,3 +30,31 @@ trait XInteractionFilterOptions
   ): scala.Unit
 }
 
+object XInteractionFilterOptions {
+  @scala.inline
+  def apply(
+    FilterOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    acquire: js.Function0[scala.Unit],
+    getFilterOptions: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    select: js.Function0[scala.Unit],
+    setFilterOptions: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XInteractionFilterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FilterOptions")(FilterOptions)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFilterOptions")(getFilterOptions)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("select")(select)
+    __obj.updateDynamic("setFilterOptions")(setFilterOptions)
+    __obj.asInstanceOf[XInteractionFilterOptions]
+  }
+}
+

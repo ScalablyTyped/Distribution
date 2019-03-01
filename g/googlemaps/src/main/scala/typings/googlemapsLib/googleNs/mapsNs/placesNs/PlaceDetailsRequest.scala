@@ -11,3 +11,18 @@ trait PlaceDetailsRequest extends js.Object {
   var sessionToken: js.UndefOr[AutocompleteSessionToken] = js.undefined
 }
 
+object PlaceDetailsRequest {
+  @scala.inline
+  def apply(
+    placeId: java.lang.String,
+    fields: js.Array[java.lang.String] = null,
+    sessionToken: AutocompleteSessionToken = null
+  ): PlaceDetailsRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("placeId")(placeId)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
+    __obj.asInstanceOf[PlaceDetailsRequest]
+  }
+}
+

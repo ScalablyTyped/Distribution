@@ -14,3 +14,26 @@ trait ApplicativeComposition2C1[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: 
   def of[A](a: A): fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, A]]
 }
 
+object ApplicativeComposition2C1 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */, LF](
+    ap: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Function1[js.Any, js.Any]]], 
+      fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]], 
+      fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]]
+    ],
+    of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]]]
+  ): ApplicativeComposition2C1[F, G, LF] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ap")(ap)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("of")(of)
+    __obj.asInstanceOf[ApplicativeComposition2C1[F, G, LF]]
+  }
+}
+

@@ -13,32 +13,26 @@ trait ojMessages
   var messages: js.Array[atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message] | scala.Null | (atOracleOraclejetLib.ojdataproviderMod.DataProvider[_, atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message]) = js.native
   var onDisplayChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['display'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.general | atOracleOraclejetLib.atOracleOraclejetLibStrings.notification
     ], 
     _
   ]) | scala.Null = js.native
   var onDisplayOptionsChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['displayOptions'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojmessageMod.ojMessageNs.DisplayOptions], 
     _
   ]) | scala.Null = js.native
   var onMessagesChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['messages'] */ js.Any
+      js.Array[atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message] | scala.Null | (atOracleOraclejetLib.ojdataproviderMod.DataProvider[_, atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message])
     ], 
     _
   ]) | scala.Null = js.native
   var onPositionChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['position'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojmessagesMod.ojMessagesNs.Position | scala.Null], 
     _
   ]) | scala.Null = js.native
   var onTranslationsChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['translations'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_AriaLiveRegion], 
     _
   ]) | scala.Null = js.native
   var position: atOracleOraclejetLib.ojmessagesMod.ojMessagesNs.Position | scala.Null = js.native
@@ -48,7 +42,7 @@ trait ojMessages
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['display'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.general | atOracleOraclejetLib.atOracleOraclejetLibStrings.notification
       ], 
       _
     ]
@@ -58,91 +52,7 @@ trait ojMessages
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['display'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.displayOptionsChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['displayOptions'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.displayOptionsChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['displayOptions'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.messagesChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['messages'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.messagesChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['messages'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['position'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['position'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.translationsChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['translations'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.translationsChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['translations'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.general | atOracleOraclejetLib.atOracleOraclejetLibStrings.notification
       ], 
       _
     ],
@@ -344,6 +254,25 @@ trait ojMessages
   def addEventListener_dblclick(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.dblclick,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.MouseEvent, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_displayOptionsChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.displayOptionsChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojmessageMod.ojMessageNs.DisplayOptions], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_displayOptionsChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.displayOptionsChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojmessageMod.ojMessageNs.DisplayOptions], 
+      _
+    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -644,6 +573,29 @@ trait ojMessages
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_messagesChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.messagesChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        js.Array[atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message] | scala.Null | (atOracleOraclejetLib.ojdataproviderMod.DataProvider[_, atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message])
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_messagesChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.messagesChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        js.Array[atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message] | scala.Null | (atOracleOraclejetLib.ojdataproviderMod.DataProvider[_, atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message])
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_mousedown(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.mousedown,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.MouseEvent, _]
@@ -850,6 +802,25 @@ trait ojMessages
   def addEventListener_pointerup(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.pointerup,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.PointerEvent, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_positionChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojmessagesMod.ojMessagesNs.Position | scala.Null], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_positionChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojmessagesMod.ojMessagesNs.Position | scala.Null], 
+      _
+    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1092,6 +1063,25 @@ trait ojMessages
   def addEventListener_transitionstart(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.transitionstart,
     listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.TransitionEvent, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_translationsChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.translationsChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_AriaLiveRegion], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_translationsChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.translationsChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_AriaLiveRegion], 
+      _
+    ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")

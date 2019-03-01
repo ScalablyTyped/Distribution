@@ -24,3 +24,22 @@ trait Uik extends js.Object {
   var Data5: scala.Double
 }
 
+object Uik {
+  @scala.inline
+  def apply(
+    Data1: scala.Double,
+    Data2: scala.Double,
+    Data3: scala.Double,
+    Data4: scala.Double,
+    Data5: scala.Double
+  ): Uik = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Data1")(Data1)
+    __obj.updateDynamic("Data2")(Data2)
+    __obj.updateDynamic("Data3")(Data3)
+    __obj.updateDynamic("Data4")(Data4)
+    __obj.updateDynamic("Data5")(Data5)
+    __obj.asInstanceOf[Uik]
+  }
+}
+

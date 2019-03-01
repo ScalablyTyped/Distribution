@@ -10,3 +10,13 @@ trait Anon_Target extends js.Object {
   var viewportOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Target {
+  @scala.inline
+  def apply(target: stdLib.HTMLElement | stdLib.Range, viewportOffset: scala.Int | scala.Double = null): Anon_Target = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (viewportOffset != null) __obj.updateDynamic("viewportOffset")(viewportOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Target]
+  }
+}
+

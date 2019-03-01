@@ -9,3 +9,12 @@ trait OrganizationsResource extends js.Object {
   var roles: RolesResource
 }
 
+object OrganizationsResource {
+  @scala.inline
+  def apply(roles: RolesResource): OrganizationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("roles")(roles)
+    __obj.asInstanceOf[OrganizationsResource]
+  }
+}
+

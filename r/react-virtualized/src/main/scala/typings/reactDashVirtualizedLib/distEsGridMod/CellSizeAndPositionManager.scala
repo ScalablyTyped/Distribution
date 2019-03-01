@@ -45,3 +45,36 @@ trait CellSizeAndPositionManager extends js.Object {
   def resetCell(index: scala.Double): scala.Unit
 }
 
+object CellSizeAndPositionManager {
+  @scala.inline
+  def apply(
+    areOffsetsAdjusted: js.Function0[scala.Boolean],
+    configure: js.Function1[ConfigureParams, scala.Unit],
+    getCellCount: js.Function0[scala.Double],
+    getEstimatedCellSize: js.Function0[scala.Double],
+    getLastMeasuredIndex: js.Function0[scala.Double],
+    getOffsetAdjustment: js.Function1[ContainerSizeAndOffset, scala.Double],
+    getSizeAndPositionOfCell: js.Function1[scala.Double, SizeAndPositionData],
+    getSizeAndPositionOfLastMeasuredCell: js.Function0[SizeAndPositionData],
+    getTotalSize: js.Function0[scala.Double],
+    getUpdatedOffsetForIndex: js.Function1[reactDashVirtualizedLib.Anon_AlignContainerSize, scala.Double],
+    getVisibleCellRange: js.Function1[GetVisibleCellRangeParams, VisibleCellRange],
+    resetCell: js.Function1[scala.Double, scala.Unit]
+  ): CellSizeAndPositionManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("areOffsetsAdjusted")(areOffsetsAdjusted)
+    __obj.updateDynamic("configure")(configure)
+    __obj.updateDynamic("getCellCount")(getCellCount)
+    __obj.updateDynamic("getEstimatedCellSize")(getEstimatedCellSize)
+    __obj.updateDynamic("getLastMeasuredIndex")(getLastMeasuredIndex)
+    __obj.updateDynamic("getOffsetAdjustment")(getOffsetAdjustment)
+    __obj.updateDynamic("getSizeAndPositionOfCell")(getSizeAndPositionOfCell)
+    __obj.updateDynamic("getSizeAndPositionOfLastMeasuredCell")(getSizeAndPositionOfLastMeasuredCell)
+    __obj.updateDynamic("getTotalSize")(getTotalSize)
+    __obj.updateDynamic("getUpdatedOffsetForIndex")(getUpdatedOffsetForIndex)
+    __obj.updateDynamic("getVisibleCellRange")(getVisibleCellRange)
+    __obj.updateDynamic("resetCell")(resetCell)
+    __obj.asInstanceOf[CellSizeAndPositionManager]
+  }
+}
+

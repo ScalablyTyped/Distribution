@@ -10,3 +10,13 @@ trait Watching extends js.Object {
   def invalidate(): scala.Unit
 }
 
+object Watching {
+  @scala.inline
+  def apply(close: js.Function1[js.Function0[scala.Unit], scala.Unit], invalidate: js.Function0[scala.Unit]): Watching = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("invalidate")(invalidate)
+    __obj.asInstanceOf[Watching]
+  }
+}
+

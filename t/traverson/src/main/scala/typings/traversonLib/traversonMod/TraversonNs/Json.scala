@@ -9,3 +9,12 @@ trait Json extends js.Object {
   def parseJson(): js.Any
 }
 
+object Json {
+  @scala.inline
+  def apply(parseJson: js.Function0[js.Any]): Json = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parseJson")(parseJson)
+    __obj.asInstanceOf[Json]
+  }
+}
+

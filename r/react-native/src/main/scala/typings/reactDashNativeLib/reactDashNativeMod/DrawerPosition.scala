@@ -10,3 +10,13 @@ trait DrawerPosition extends js.Object {
   var Right: scala.Double
 }
 
+object DrawerPosition {
+  @scala.inline
+  def apply(Left: scala.Double, Right: scala.Double): DrawerPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Left")(Left)
+    __obj.updateDynamic("Right")(Right)
+    __obj.asInstanceOf[DrawerPosition]
+  }
+}
+

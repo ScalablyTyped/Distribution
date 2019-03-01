@@ -10,103 +10,145 @@ object sarifLibStrings {
   sealed trait `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24` extends js.Object
   
   @js.native
-  sealed trait absent extends js.Object
+  sealed trait absent
+    extends sarifLib.sarifMod.ResultNs.baselineState
   
   @js.native
-  sealed trait addedFile extends js.Object
+  sealed trait addedFile
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait analysisTarget extends js.Object
+  sealed trait analysisTarget
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait attachment extends js.Object
+  sealed trait attachment
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait deletedFile extends js.Object
+  sealed trait deletedFile
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends sarifLib.sarifMod.NotificationNs.level
+       with sarifLib.sarifMod.ReportingConfigurationNs.level
+       with sarifLib.sarifMod.ResultNs.level
   
   @js.native
-  sealed trait essential extends js.Object
+  sealed trait essential
+    extends sarifLib.sarifMod.ThreadFlowLocationNs.importance
   
   @js.native
-  sealed trait fail extends js.Object
+  sealed trait fail
+    extends sarifLib.sarifMod.ResultNs.kind
   
   @js.native
-  sealed trait important extends js.Object
+  sealed trait important
+    extends sarifLib.sarifMod.ThreadFlowLocationNs.importance
   
   @js.native
-  sealed trait modifiedFile extends js.Object
+  sealed trait modifiedFile
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait `new` extends js.Object
+  sealed trait `new`
+    extends sarifLib.sarifMod.ResultNs.baselineState
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends sarifLib.sarifMod.ResultNs.kind
+       with sarifLib.sarifMod.NotificationNs.level
+       with sarifLib.sarifMod.ReportingConfigurationNs.level
+       with sarifLib.sarifMod.ResultNs.level
   
   @js.native
-  sealed trait notApplicable extends js.Object
+  sealed trait notApplicable
+    extends sarifLib.sarifMod.ResultNs.kind
   
   @js.native
-  sealed trait note extends js.Object
+  sealed trait note
+    extends sarifLib.sarifMod.NotificationNs.level
+       with sarifLib.sarifMod.ReportingConfigurationNs.level
+       with sarifLib.sarifMod.ResultNs.level
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open
+    extends sarifLib.sarifMod.ResultNs.kind
   
   @js.native
-  sealed trait pass extends js.Object
+  sealed trait pass
+    extends sarifLib.sarifMod.ResultNs.kind
   
   @js.native
-  sealed trait renamedFile extends js.Object
+  sealed trait renamedFile
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait responseFile extends js.Object
+  sealed trait responseFile
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait resultFile extends js.Object
+  sealed trait resultFile
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait review extends js.Object
+  sealed trait review
+    extends sarifLib.sarifMod.ResultNs.kind
   
   @js.native
-  sealed trait standardStream extends js.Object
+  sealed trait standardStream
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait suppressedExternally extends js.Object
+  sealed trait suppressedExternally
+    extends sarifLib.sarifMod.ResultNs.suppressionStates
   
   @js.native
-  sealed trait suppressedInSource extends js.Object
+  sealed trait suppressedInSource
+    extends sarifLib.sarifMod.ResultNs.suppressionStates
   
   @js.native
-  sealed trait toolComponent extends js.Object
+  sealed trait toolComponent
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait traceFile extends js.Object
+  sealed trait traceFile
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait unchanged extends js.Object
+  sealed trait unchanged
+    extends sarifLib.sarifMod.ResultNs.baselineState
   
   @js.native
-  sealed trait uncontrolledFile extends js.Object
+  sealed trait uncontrolledFile
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait unicodeCodePoints extends js.Object
+  sealed trait unicodeCodePoints
+    extends sarifLib.sarifMod.RunNs.columnKind
   
   @js.native
-  sealed trait unimportant extends js.Object
+  sealed trait unimportant
+    extends sarifLib.sarifMod.ThreadFlowLocationNs.importance
   
   @js.native
-  sealed trait unmodifiedFile extends js.Object
+  sealed trait unmodifiedFile
+    extends sarifLib.sarifMod.ArtifactNs.roles
   
   @js.native
-  sealed trait updated extends js.Object
+  sealed trait updated
+    extends sarifLib.sarifMod.ResultNs.baselineState
   
   @js.native
-  sealed trait utf16CodeUnits extends js.Object
+  sealed trait utf16CodeUnits
+    extends sarifLib.sarifMod.RunNs.columnKind
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends sarifLib.sarifMod.NotificationNs.level
+       with sarifLib.sarifMod.ReportingConfigurationNs.level
+       with sarifLib.sarifMod.ResultNs.level
   
   @scala.inline
   def `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24`: `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24` = "2.0.0-csd.2.beta.2019-01-24".asInstanceOf[`2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24`]

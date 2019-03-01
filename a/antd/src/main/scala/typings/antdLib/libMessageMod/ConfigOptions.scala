@@ -14,3 +14,24 @@ trait ConfigOptions extends js.Object {
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConfigOptions {
+  @scala.inline
+  def apply(
+    duration: scala.Int | scala.Double = null,
+    getContainer: js.Function0[reactLib.HTMLElement] = null,
+    maxCount: scala.Int | scala.Double = null,
+    prefixCls: java.lang.String = null,
+    top: scala.Int | scala.Double = null,
+    transitionName: java.lang.String = null
+  ): ConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
+    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
+    __obj.asInstanceOf[ConfigOptions]
+  }
+}
+

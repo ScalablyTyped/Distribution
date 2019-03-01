@@ -14,3 +14,13 @@ trait ParagraphMarker extends js.Object {
   var style: ParagraphStyle
 }
 
+object ParagraphMarker {
+  @scala.inline
+  def apply(bullet: Bullet, style: ParagraphStyle): ParagraphMarker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bullet")(bullet)
+    __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ParagraphMarker]
+  }
+}
+

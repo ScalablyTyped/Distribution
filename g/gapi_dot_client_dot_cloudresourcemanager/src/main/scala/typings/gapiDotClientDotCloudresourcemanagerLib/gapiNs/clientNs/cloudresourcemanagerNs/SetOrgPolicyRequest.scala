@@ -10,3 +10,12 @@ trait SetOrgPolicyRequest extends js.Object {
   var policy: js.UndefOr[OrgPolicy] = js.undefined
 }
 
+object SetOrgPolicyRequest {
+  @scala.inline
+  def apply(policy: OrgPolicy = null): SetOrgPolicyRequest = {
+    val __obj = js.Dynamic.literal()
+    if (policy != null) __obj.updateDynamic("policy")(policy)
+    __obj.asInstanceOf[SetOrgPolicyRequest]
+  }
+}
+

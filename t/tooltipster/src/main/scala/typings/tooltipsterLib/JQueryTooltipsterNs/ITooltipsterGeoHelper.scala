@@ -11,3 +11,18 @@ trait ITooltipsterGeoHelper extends js.Object {
   var window: tooltipsterLib.Anon_Scroll
 }
 
+object ITooltipsterGeoHelper {
+  @scala.inline
+  def apply(
+    document: tooltipsterLib.Anon_Size,
+    origin: tooltipsterLib.Anon_FixedLineage,
+    window: tooltipsterLib.Anon_Scroll
+  ): ITooltipsterGeoHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("document")(document)
+    __obj.updateDynamic("origin")(origin)
+    __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[ITooltipsterGeoHelper]
+  }
+}
+

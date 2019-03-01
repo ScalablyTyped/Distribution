@@ -36,3 +36,18 @@ trait DispatchDescriptor extends js.Object {
   var SearchFlags: scala.Double
 }
 
+object DispatchDescriptor {
+  @scala.inline
+  def apply(
+    FeatureURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL,
+    FrameName: java.lang.String,
+    SearchFlags: scala.Double
+  ): DispatchDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FeatureURL")(FeatureURL)
+    __obj.updateDynamic("FrameName")(FrameName)
+    __obj.updateDynamic("SearchFlags")(SearchFlags)
+    __obj.asInstanceOf[DispatchDescriptor]
+  }
+}
+

@@ -10,7 +10,6 @@ package object nssmLib {
     /* result */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
-  type Command = nssmLib.nssmLibStrings.install | nssmLib.nssmLibStrings.remove | nssmLib.nssmLibStrings.start | nssmLib.nssmLibStrings.stop | nssmLib.nssmLibStrings.restart | nssmLib.nssmLibStrings.status | nssmLib.nssmLibStrings.pause | nssmLib.nssmLibStrings.continue | nssmLib.nssmLibStrings.rotate | nssmLib.nssmLibStrings.get | nssmLib.nssmLibStrings.set | nssmLib.nssmLibStrings.reset
   type NssmCatch[T] = js.Function1[
     /* onrejected */ js.UndefOr[
       (js.Function2[

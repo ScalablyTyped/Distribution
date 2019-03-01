@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildPdfmakeMod {
-  type Alignment = pdfmakeLib.pdfmakeLibStrings.left | pdfmakeLib.pdfmakeLibStrings.right | pdfmakeLib.pdfmakeLibStrings.justify | pdfmakeLib.pdfmakeLibStrings.center | java.lang.String
+  type Alignment = _Alignment | java.lang.String
   type CreatedPdfParams = js.Function3[
     /* defaultFileName */ js.UndefOr[java.lang.String], 
     /* cb */ js.UndefOr[java.lang.String], 

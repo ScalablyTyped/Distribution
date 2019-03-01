@@ -13,3 +13,22 @@ trait DPlayerSubTitle extends js.Object {
   var url: java.lang.String
 }
 
+object DPlayerSubTitle {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    bottom: java.lang.String = null,
+    color: java.lang.String = null,
+    fontSize: java.lang.String = null,
+    `type`: SubTitleType = null
+  ): DPlayerSubTitle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DPlayerSubTitle]
+  }
+}
+

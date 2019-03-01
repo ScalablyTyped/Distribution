@@ -38,3 +38,28 @@ trait AxesTitle extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AxesTitle {
+  @scala.inline
+  def apply(
+    alignment: TextAlignment | java.lang.String = null,
+    enableTrim: js.UndefOr[scala.Boolean] = js.undefined,
+    font: AxesTitleFont = null,
+    maximumTitleWidth: scala.Int | scala.Double = null,
+    offset: scala.Int | scala.Double = null,
+    position: LabelPosition | java.lang.String = null,
+    text: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): AxesTitle = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (maximumTitleWidth != null) __obj.updateDynamic("maximumTitleWidth")(maximumTitleWidth.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[AxesTitle]
+  }
+}
+

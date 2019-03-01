@@ -18,3 +18,13 @@ trait EnvOptions extends js.Object {
   var env: js.UndefOr[ProcessEnv] = js.undefined
 }
 
+object EnvOptions {
+  @scala.inline
+  def apply(cwd: java.lang.String = null, env: ProcessEnv = null): EnvOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (env != null) __obj.updateDynamic("env")(env)
+    __obj.asInstanceOf[EnvOptions]
+  }
+}
+

@@ -57,3 +57,24 @@ trait ChartBoxwhiskerOptionsLoadOptions extends js.Object {
   var showOutlierPoints: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartBoxwhiskerOptionsLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    quartileCalculation: js.UndefOr[scala.Boolean] = js.undefined,
+    showInnerPoints: js.UndefOr[scala.Boolean] = js.undefined,
+    showMeanLine: js.UndefOr[scala.Boolean] = js.undefined,
+    showMeanMarker: js.UndefOr[scala.Boolean] = js.undefined,
+    showOutlierPoints: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartBoxwhiskerOptionsLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(quartileCalculation)) __obj.updateDynamic("quartileCalculation")(quartileCalculation)
+    if (!js.isUndefined(showInnerPoints)) __obj.updateDynamic("showInnerPoints")(showInnerPoints)
+    if (!js.isUndefined(showMeanLine)) __obj.updateDynamic("showMeanLine")(showMeanLine)
+    if (!js.isUndefined(showMeanMarker)) __obj.updateDynamic("showMeanMarker")(showMeanMarker)
+    if (!js.isUndefined(showOutlierPoints)) __obj.updateDynamic("showOutlierPoints")(showOutlierPoints)
+    __obj.asInstanceOf[ChartBoxwhiskerOptionsLoadOptions]
+  }
+}
+

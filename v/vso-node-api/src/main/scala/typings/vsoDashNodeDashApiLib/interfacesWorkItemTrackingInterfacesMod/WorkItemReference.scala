@@ -16,3 +16,13 @@ trait WorkItemReference extends js.Object {
   var url: java.lang.String
 }
 
+object WorkItemReference {
+  @scala.inline
+  def apply(id: scala.Double, url: java.lang.String): WorkItemReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WorkItemReference]
+  }
+}
+

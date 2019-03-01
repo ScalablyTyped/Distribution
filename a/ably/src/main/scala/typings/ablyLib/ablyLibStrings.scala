@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object ablyLibStrings {
   @js.native
-  sealed trait ACTIVE extends js.Object
+  sealed trait ACTIVE
+    extends ablyLib.ablyMod.TypesNs.DevicePushState
   
   @js.native
-  sealed trait FAILED extends js.Object
+  sealed trait FAILED
+    extends ablyLib.ablyMod.TypesNs.DevicePushState
   
   @js.native
-  sealed trait FAILING extends js.Object
+  sealed trait FAILING
+    extends ablyLib.ablyMod.TypesNs.DevicePushState
   
   @js.native
   sealed trait GET extends js.Object

@@ -12,3 +12,12 @@ trait FileUrlOptions extends js.Object {
   var resolve: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FileUrlOptions {
+  @scala.inline
+  def apply(resolve: js.UndefOr[scala.Boolean] = js.undefined): FileUrlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(resolve)) __obj.updateDynamic("resolve")(resolve)
+    __obj.asInstanceOf[FileUrlOptions]
+  }
+}
+

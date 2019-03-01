@@ -23,3 +23,14 @@ trait IEditorBreakpoint extends js.Object {
   var qlineIx: scala.Double
 }
 
+object IEditorBreakpoint {
+  @scala.inline
+  def apply(qEnabled: scala.Boolean, qbufferName: java.lang.String, qlineIx: scala.Double): IEditorBreakpoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qEnabled")(qEnabled)
+    __obj.updateDynamic("qbufferName")(qbufferName)
+    __obj.updateDynamic("qlineIx")(qlineIx)
+    __obj.asInstanceOf[IEditorBreakpoint]
+  }
+}
+

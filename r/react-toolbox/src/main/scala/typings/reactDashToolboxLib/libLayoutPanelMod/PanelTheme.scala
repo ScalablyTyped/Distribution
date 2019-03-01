@@ -16,3 +16,13 @@ trait PanelTheme extends js.Object {
   var panel: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PanelTheme {
+  @scala.inline
+  def apply(bodyScroll: java.lang.String = null, panel: java.lang.String = null): PanelTheme = {
+    val __obj = js.Dynamic.literal()
+    if (bodyScroll != null) __obj.updateDynamic("bodyScroll")(bodyScroll)
+    if (panel != null) __obj.updateDynamic("panel")(panel)
+    __obj.asInstanceOf[PanelTheme]
+  }
+}
+

@@ -63,3 +63,42 @@ trait ServerStateCookieOptions extends js.Object {
   var ttl: js.UndefOr[scala.Double | scala.Null] = js.undefined
 }
 
+object ServerStateCookieOptions {
+  @scala.inline
+  def apply(
+    autoValue: js.Function1[/* request */ Request, scala.Unit] = null,
+    clearInvalid: js.UndefOr[scala.Boolean] = js.undefined,
+    domain: java.lang.String = null,
+    encoding: hapiLib.hapiLibStrings.none | hapiLib.hapiLibStrings.base64 | hapiLib.hapiLibStrings.base64json | hapiLib.hapiLibStrings.form | hapiLib.hapiLibStrings.iron = null,
+    ignoreErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    iron: ironLib.ironMod.SealOptions = null,
+    isHttpOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    isSameSite: hapiLib.hapiLibNumbers.`false` | hapiLib.hapiLibStrings.Strict | hapiLib.hapiLibStrings.Lax = null,
+    isSecure: js.UndefOr[scala.Boolean] = js.undefined,
+    passThrough: js.Any = null,
+    password: java.lang.String = null,
+    path: java.lang.String = null,
+    sign: hapiLib.Anon_Integrity = null,
+    strictHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    ttl: scala.Int | scala.Double = null
+  ): ServerStateCookieOptions = {
+    val __obj = js.Dynamic.literal()
+    if (autoValue != null) __obj.updateDynamic("autoValue")(autoValue)
+    if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
+    if (iron != null) __obj.updateDynamic("iron")(iron)
+    if (!js.isUndefined(isHttpOnly)) __obj.updateDynamic("isHttpOnly")(isHttpOnly)
+    if (isSameSite != null) __obj.updateDynamic("isSameSite")(isSameSite.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSecure)) __obj.updateDynamic("isSecure")(isSecure)
+    if (passThrough != null) __obj.updateDynamic("passThrough")(passThrough)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (sign != null) __obj.updateDynamic("sign")(sign)
+    if (!js.isUndefined(strictHeader)) __obj.updateDynamic("strictHeader")(strictHeader)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerStateCookieOptions]
+  }
+}
+

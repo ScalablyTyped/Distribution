@@ -10,3 +10,20 @@ trait validExpirationDate extends valid {
   var year: java.lang.String | scala.Null
 }
 
+object validExpirationDate {
+  @scala.inline
+  def apply(
+    isPotentiallyValid: scala.Boolean,
+    isValid: scala.Boolean,
+    month: java.lang.String = null,
+    year: java.lang.String = null
+  ): validExpirationDate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isPotentiallyValid")(isPotentiallyValid)
+    __obj.updateDynamic("isValid")(isValid)
+    if (month != null) __obj.updateDynamic("month")(month)
+    if (year != null) __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[validExpirationDate]
+  }
+}
+

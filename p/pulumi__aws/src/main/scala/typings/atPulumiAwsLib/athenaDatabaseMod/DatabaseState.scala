@@ -24,3 +24,20 @@ trait DatabaseState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object DatabaseState {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    encryptionConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionOptionKmsKey] = null,
+    forceDestroy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): DatabaseState = {
+    val __obj = js.Dynamic.literal()
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (encryptionConfiguration != null) __obj.updateDynamic("encryptionConfiguration")(encryptionConfiguration.asInstanceOf[js.Any])
+    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatabaseState]
+  }
+}
+

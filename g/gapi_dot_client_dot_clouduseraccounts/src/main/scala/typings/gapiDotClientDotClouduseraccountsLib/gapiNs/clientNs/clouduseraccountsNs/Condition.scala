@@ -20,3 +20,24 @@ trait Condition extends js.Object {
   var values: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Condition {
+  @scala.inline
+  def apply(
+    iam: java.lang.String = null,
+    op: java.lang.String = null,
+    svc: java.lang.String = null,
+    sys: java.lang.String = null,
+    value: java.lang.String = null,
+    values: js.Array[java.lang.String] = null
+  ): Condition = {
+    val __obj = js.Dynamic.literal()
+    if (iam != null) __obj.updateDynamic("iam")(iam)
+    if (op != null) __obj.updateDynamic("op")(op)
+    if (svc != null) __obj.updateDynamic("svc")(svc)
+    if (sys != null) __obj.updateDynamic("sys")(sys)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[Condition]
+  }
+}
+

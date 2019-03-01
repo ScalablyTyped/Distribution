@@ -12,3 +12,20 @@ trait KnockoutSecureBindingOptions extends js.Object {
   var noVirtualElements: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object KnockoutSecureBindingOptions {
+  @scala.inline
+  def apply(
+    attribute: java.lang.String = null,
+    bindings: knockoutLib.KnockoutBindingHandlers = null,
+    globals: js.Any = null,
+    noVirtualElements: js.UndefOr[scala.Boolean] = js.undefined
+  ): KnockoutSecureBindingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (globals != null) __obj.updateDynamic("globals")(globals)
+    if (!js.isUndefined(noVirtualElements)) __obj.updateDynamic("noVirtualElements")(noVirtualElements)
+    __obj.asInstanceOf[KnockoutSecureBindingOptions]
+  }
+}
+

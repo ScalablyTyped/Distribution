@@ -15,3 +15,13 @@ trait INxContinuousRangeSelectInfo extends IRangeSelectInfo {
   var qDimIx: scala.Double
 }
 
+object INxContinuousRangeSelectInfo {
+  @scala.inline
+  def apply(qDimIx: scala.Double, qRange: IRange): INxContinuousRangeSelectInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qDimIx")(qDimIx)
+    __obj.updateDynamic("qRange")(qRange)
+    __obj.asInstanceOf[INxContinuousRangeSelectInfo]
+  }
+}
+

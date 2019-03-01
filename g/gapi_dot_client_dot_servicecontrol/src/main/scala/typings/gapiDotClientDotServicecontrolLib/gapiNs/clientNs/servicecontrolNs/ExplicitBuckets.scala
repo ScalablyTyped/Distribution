@@ -26,3 +26,12 @@ trait ExplicitBuckets extends js.Object {
   var bounds: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object ExplicitBuckets {
+  @scala.inline
+  def apply(bounds: js.Array[scala.Double] = null): ExplicitBuckets = {
+    val __obj = js.Dynamic.literal()
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    __obj.asInstanceOf[ExplicitBuckets]
+  }
+}
+

@@ -10,3 +10,13 @@ trait DirectionChangedArgs extends js.Object {
   var isRTL: scala.Double
 }
 
+object DirectionChangedArgs {
+  @scala.inline
+  def apply(dir: java.lang.String, isRTL: scala.Double): DirectionChangedArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dir")(dir)
+    __obj.updateDynamic("isRTL")(isRTL)
+    __obj.asInstanceOf[DirectionChangedArgs]
+  }
+}
+

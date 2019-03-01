@@ -20,3 +20,24 @@ trait WorkspaceProposal extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WorkspaceProposal {
+  @scala.inline
+  def apply(
+    authors: js.Array[WorkspaceProposalUser] = null,
+    fingerprint: java.lang.String = null,
+    history: js.Array[WorkspaceProposalHistory] = null,
+    path: java.lang.String = null,
+    reviewers: js.Array[WorkspaceProposalUser] = null,
+    status: java.lang.String = null
+  ): WorkspaceProposal = {
+    val __obj = js.Dynamic.literal()
+    if (authors != null) __obj.updateDynamic("authors")(authors)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (history != null) __obj.updateDynamic("history")(history)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[WorkspaceProposal]
+  }
+}
+

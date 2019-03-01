@@ -13,10 +13,12 @@ object vscodeDashLanguageserverDashTypesLibStrings {
   sealed trait delete extends js.Object
   
   @js.native
-  sealed trait markdown extends js.Object
+  sealed trait markdown
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.MarkupKind
   
   @js.native
-  sealed trait plaintext extends js.Object
+  sealed trait plaintext
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.MarkupKind
   
   @js.native
   sealed trait rename extends js.Object

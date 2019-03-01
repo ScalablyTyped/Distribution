@@ -31,3 +31,20 @@ trait ASPxClientUploadControlValidationSettings extends js.Object {
   var maxFileSize: js.Any
 }
 
+object ASPxClientUploadControlValidationSettings {
+  @scala.inline
+  def apply(
+    allowedFileExtensions: js.Array[java.lang.String],
+    invalidFileNameCharacters: js.Array[java.lang.String],
+    maxFileCount: scala.Double,
+    maxFileSize: js.Any
+  ): ASPxClientUploadControlValidationSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowedFileExtensions")(allowedFileExtensions)
+    __obj.updateDynamic("invalidFileNameCharacters")(invalidFileNameCharacters)
+    __obj.updateDynamic("maxFileCount")(maxFileCount)
+    __obj.updateDynamic("maxFileSize")(maxFileSize)
+    __obj.asInstanceOf[ASPxClientUploadControlValidationSettings]
+  }
+}
+

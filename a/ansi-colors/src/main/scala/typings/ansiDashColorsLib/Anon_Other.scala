@@ -10,3 +10,16 @@ trait Anon_Other extends js.Object {
   var windows: ansiDashColorsLib.ansiDashColorsMod.colorsNs.WindowsSymbols
 }
 
+object Anon_Other {
+  @scala.inline
+  def apply(
+    other: ansiDashColorsLib.ansiDashColorsMod.colorsNs.OtherPlatformsSymbols,
+    windows: ansiDashColorsLib.ansiDashColorsMod.colorsNs.WindowsSymbols
+  ): Anon_Other = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("other")(other)
+    __obj.updateDynamic("windows")(windows)
+    __obj.asInstanceOf[Anon_Other]
+  }
+}
+

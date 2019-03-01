@@ -11,3 +11,18 @@ trait IConfig extends js.Object {
   def has(setting: java.lang.String): scala.Boolean
 }
 
+object IConfig {
+  @scala.inline
+  def apply(
+    get: js.Function1[java.lang.String, js.Any],
+    has: js.Function1[java.lang.String, scala.Boolean],
+    util: IUtil
+  ): IConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("has")(has)
+    __obj.updateDynamic("util")(util)
+    __obj.asInstanceOf[IConfig]
+  }
+}
+

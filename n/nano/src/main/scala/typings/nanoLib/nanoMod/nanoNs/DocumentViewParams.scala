@@ -70,3 +70,64 @@ trait DocumentViewParams extends js.Object {
   var update_seq: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DocumentViewParams {
+  @scala.inline
+  def apply(
+    att_encoding_info: js.UndefOr[scala.Boolean] = js.undefined,
+    attachments: js.UndefOr[scala.Boolean] = js.undefined,
+    conflicts: js.UndefOr[scala.Boolean] = js.undefined,
+    descending: js.UndefOr[scala.Boolean] = js.undefined,
+    end_key: js.Any = null,
+    end_key_doc_id: java.lang.String = null,
+    endkey: js.Any = null,
+    endkey_docid: java.lang.String = null,
+    group: js.UndefOr[scala.Boolean] = js.undefined,
+    group_level: scala.Int | scala.Double = null,
+    include_docs: js.UndefOr[scala.Boolean] = js.undefined,
+    inclusive_end: js.UndefOr[scala.Boolean] = js.undefined,
+    key: js.Any = null,
+    keys: js.Array[_] = null,
+    limit: scala.Int | scala.Double = null,
+    reduce: js.UndefOr[scala.Boolean] = js.undefined,
+    skip: scala.Int | scala.Double = null,
+    sorted: js.UndefOr[scala.Boolean] = js.undefined,
+    stable: js.UndefOr[scala.Boolean] = js.undefined,
+    stale: java.lang.String = null,
+    start_key: js.Any = null,
+    start_key_doc_id: java.lang.String = null,
+    startkey: js.Any = null,
+    startkey_docid: java.lang.String = null,
+    update: java.lang.String = null,
+    update_seq: js.UndefOr[scala.Boolean] = js.undefined
+  ): DocumentViewParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(att_encoding_info)) __obj.updateDynamic("att_encoding_info")(att_encoding_info)
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
+    if (end_key != null) __obj.updateDynamic("end_key")(end_key)
+    if (end_key_doc_id != null) __obj.updateDynamic("end_key_doc_id")(end_key_doc_id)
+    if (endkey != null) __obj.updateDynamic("endkey")(endkey)
+    if (endkey_docid != null) __obj.updateDynamic("endkey_docid")(endkey_docid)
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
+    if (group_level != null) __obj.updateDynamic("group_level")(group_level.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
+    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(reduce)) __obj.updateDynamic("reduce")(reduce)
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (!js.isUndefined(sorted)) __obj.updateDynamic("sorted")(sorted)
+    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable)
+    if (stale != null) __obj.updateDynamic("stale")(stale)
+    if (start_key != null) __obj.updateDynamic("start_key")(start_key)
+    if (start_key_doc_id != null) __obj.updateDynamic("start_key_doc_id")(start_key_doc_id)
+    if (startkey != null) __obj.updateDynamic("startkey")(startkey)
+    if (startkey_docid != null) __obj.updateDynamic("startkey_docid")(startkey_docid)
+    if (update != null) __obj.updateDynamic("update")(update)
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq)
+    __obj.asInstanceOf[DocumentViewParams]
+  }
+}
+

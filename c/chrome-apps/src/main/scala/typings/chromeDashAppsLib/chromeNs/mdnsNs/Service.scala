@@ -16,3 +16,20 @@ trait Service extends js.Object {
   var serviceName: java.lang.String
 }
 
+object Service {
+  @scala.inline
+  def apply(
+    ipAddress: java.lang.String,
+    serviceData: js.Array[java.lang.String],
+    serviceHostPort: java.lang.String,
+    serviceName: java.lang.String
+  ): Service = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ipAddress")(ipAddress)
+    __obj.updateDynamic("serviceData")(serviceData)
+    __obj.updateDynamic("serviceHostPort")(serviceHostPort)
+    __obj.updateDynamic("serviceName")(serviceName)
+    __obj.asInstanceOf[Service]
+  }
+}
+

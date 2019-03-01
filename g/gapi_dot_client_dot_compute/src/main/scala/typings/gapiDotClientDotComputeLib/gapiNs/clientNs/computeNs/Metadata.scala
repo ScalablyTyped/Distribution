@@ -18,3 +18,18 @@ trait Metadata extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Metadata {
+  @scala.inline
+  def apply(
+    fingerprint: java.lang.String = null,
+    items: js.Array[gapiDotClientDotComputeLib.Anon_Key] = null,
+    kind: java.lang.String = null
+  ): Metadata = {
+    val __obj = js.Dynamic.literal()
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[Metadata]
+  }
+}
+

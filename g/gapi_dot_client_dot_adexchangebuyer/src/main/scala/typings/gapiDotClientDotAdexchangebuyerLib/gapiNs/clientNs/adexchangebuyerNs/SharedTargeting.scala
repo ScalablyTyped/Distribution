@@ -14,3 +14,18 @@ trait SharedTargeting extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SharedTargeting {
+  @scala.inline
+  def apply(
+    exclusions: js.Array[TargetingValue] = null,
+    inclusions: js.Array[TargetingValue] = null,
+    key: java.lang.String = null
+  ): SharedTargeting = {
+    val __obj = js.Dynamic.literal()
+    if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions)
+    if (inclusions != null) __obj.updateDynamic("inclusions")(inclusions)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[SharedTargeting]
+  }
+}
+

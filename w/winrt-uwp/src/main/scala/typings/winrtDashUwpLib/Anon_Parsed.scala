@@ -10,3 +10,16 @@ trait Anon_Parsed extends js.Object {
   /** True, if a UsbConfigurationDescriptor object was found in the specified UsbDescriptor object. Otherwise, false. */ var returnValue: scala.Boolean
 }
 
+object Anon_Parsed {
+  @scala.inline
+  def apply(
+    parsed: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbConfigurationDescriptor,
+    returnValue: scala.Boolean
+  ): Anon_Parsed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parsed")(parsed)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_Parsed]
+  }
+}
+

@@ -51,3 +51,22 @@ trait SlicerItemCollectionLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SlicerItemCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    hasData: js.UndefOr[scala.Boolean] = js.undefined,
+    isSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    key: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined
+  ): SlicerItemCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(hasData)) __obj.updateDynamic("hasData")(hasData)
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[SlicerItemCollectionLoadOptions]
+  }
+}
+

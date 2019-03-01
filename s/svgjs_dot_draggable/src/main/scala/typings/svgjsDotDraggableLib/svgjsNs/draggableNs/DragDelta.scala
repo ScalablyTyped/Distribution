@@ -11,3 +11,14 @@ trait DragDelta extends js.Object {
   var zoom: scala.Double
 }
 
+object DragDelta {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double, zoom: scala.Double): DragDelta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[DragDelta]
+  }
+}
+

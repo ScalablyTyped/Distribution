@@ -9,3 +9,12 @@ trait Anon_PEventDocContextChangeEventObject extends js.Object {
   val pEvent: activexDashInfopathLib.InfoPathNs.DocContextChangeEventObject
 }
 
+object Anon_PEventDocContextChangeEventObject {
+  @scala.inline
+  def apply(pEvent: activexDashInfopathLib.InfoPathNs.DocContextChangeEventObject): Anon_PEventDocContextChangeEventObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pEvent")(pEvent)
+    __obj.asInstanceOf[Anon_PEventDocContextChangeEventObject]
+  }
+}
+

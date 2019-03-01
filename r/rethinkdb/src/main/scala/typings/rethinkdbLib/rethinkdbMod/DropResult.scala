@@ -9,3 +9,12 @@ trait DropResult extends js.Object {
   var dropped: scala.Double
 }
 
+object DropResult {
+  @scala.inline
+  def apply(dropped: scala.Double): DropResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dropped")(dropped)
+    __obj.asInstanceOf[DropResult]
+  }
+}
+

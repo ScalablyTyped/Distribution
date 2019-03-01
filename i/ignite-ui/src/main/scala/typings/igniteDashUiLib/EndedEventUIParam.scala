@@ -16,3 +16,13 @@ trait EndedEventUIParam extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EndedEventUIParam {
+  @scala.inline
+  def apply(duration: scala.Int | scala.Double = null, source: java.lang.String = null): EndedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[EndedEventUIParam]
+  }
+}
+

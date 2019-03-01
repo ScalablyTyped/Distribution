@@ -21,3 +21,25 @@ trait config extends js.Object {
   var referers: js.UndefOr[js.Array[java.lang.String | stdLib.RegExp]] = js.undefined
 }
 
+object config {
+  @scala.inline
+  def apply(
+    fail: js.Function3[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* res */ expressLib.expressMod.eNs.Response, 
+      /* next */ expressLib.expressMod.eNs.NextFunction, 
+      scala.Unit
+    ] = null,
+    hosts: js.Array[java.lang.String | stdLib.RegExp] = null,
+    mode: hostDashValidationLib.hostDashValidationLibStrings.both | hostDashValidationLib.hostDashValidationLibStrings.either = null,
+    referers: js.Array[java.lang.String | stdLib.RegExp] = null
+  ): config = {
+    val __obj = js.Dynamic.literal()
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (hosts != null) __obj.updateDynamic("hosts")(hosts)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (referers != null) __obj.updateDynamic("referers")(referers)
+    __obj.asInstanceOf[config]
+  }
+}
+

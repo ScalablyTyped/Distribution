@@ -125,3 +125,90 @@ trait Ad extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Ad {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    advertiserId: java.lang.String = null,
+    advertiserIdDimensionValue: DimensionValue = null,
+    archived: js.UndefOr[scala.Boolean] = js.undefined,
+    audienceSegmentId: java.lang.String = null,
+    campaignId: java.lang.String = null,
+    campaignIdDimensionValue: DimensionValue = null,
+    clickThroughUrl: ClickThroughUrl = null,
+    clickThroughUrlSuffixProperties: ClickThroughUrlSuffixProperties = null,
+    comments: java.lang.String = null,
+    compatibility: java.lang.String = null,
+    createInfo: LastModifiedInfo = null,
+    creativeGroupAssignments: js.Array[CreativeGroupAssignment] = null,
+    creativeRotation: CreativeRotation = null,
+    dayPartTargeting: DayPartTargeting = null,
+    defaultClickThroughEventTagProperties: DefaultClickThroughEventTagProperties = null,
+    deliverySchedule: DeliverySchedule = null,
+    dynamicClickTracker: js.UndefOr[scala.Boolean] = js.undefined,
+    endTime: java.lang.String = null,
+    eventTagOverrides: js.Array[EventTagOverride] = null,
+    geoTargeting: GeoTargeting = null,
+    id: java.lang.String = null,
+    idDimensionValue: DimensionValue = null,
+    keyValueTargetingExpression: KeyValueTargetingExpression = null,
+    kind: java.lang.String = null,
+    languageTargeting: LanguageTargeting = null,
+    lastModifiedInfo: LastModifiedInfo = null,
+    name: java.lang.String = null,
+    placementAssignments: js.Array[PlacementAssignment] = null,
+    remarketingListExpression: ListTargetingExpression = null,
+    size: Size = null,
+    sslCompliant: js.UndefOr[scala.Boolean] = js.undefined,
+    sslRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    startTime: java.lang.String = null,
+    subaccountId: java.lang.String = null,
+    targetingTemplateId: java.lang.String = null,
+    technologyTargeting: TechnologyTargeting = null,
+    `type`: java.lang.String = null
+  ): Ad = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
+    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue)
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived)
+    if (audienceSegmentId != null) __obj.updateDynamic("audienceSegmentId")(audienceSegmentId)
+    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId)
+    if (campaignIdDimensionValue != null) __obj.updateDynamic("campaignIdDimensionValue")(campaignIdDimensionValue)
+    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl)
+    if (clickThroughUrlSuffixProperties != null) __obj.updateDynamic("clickThroughUrlSuffixProperties")(clickThroughUrlSuffixProperties)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility)
+    if (createInfo != null) __obj.updateDynamic("createInfo")(createInfo)
+    if (creativeGroupAssignments != null) __obj.updateDynamic("creativeGroupAssignments")(creativeGroupAssignments)
+    if (creativeRotation != null) __obj.updateDynamic("creativeRotation")(creativeRotation)
+    if (dayPartTargeting != null) __obj.updateDynamic("dayPartTargeting")(dayPartTargeting)
+    if (defaultClickThroughEventTagProperties != null) __obj.updateDynamic("defaultClickThroughEventTagProperties")(defaultClickThroughEventTagProperties)
+    if (deliverySchedule != null) __obj.updateDynamic("deliverySchedule")(deliverySchedule)
+    if (!js.isUndefined(dynamicClickTracker)) __obj.updateDynamic("dynamicClickTracker")(dynamicClickTracker)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (eventTagOverrides != null) __obj.updateDynamic("eventTagOverrides")(eventTagOverrides)
+    if (geoTargeting != null) __obj.updateDynamic("geoTargeting")(geoTargeting)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue)
+    if (keyValueTargetingExpression != null) __obj.updateDynamic("keyValueTargetingExpression")(keyValueTargetingExpression)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (languageTargeting != null) __obj.updateDynamic("languageTargeting")(languageTargeting)
+    if (lastModifiedInfo != null) __obj.updateDynamic("lastModifiedInfo")(lastModifiedInfo)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (placementAssignments != null) __obj.updateDynamic("placementAssignments")(placementAssignments)
+    if (remarketingListExpression != null) __obj.updateDynamic("remarketingListExpression")(remarketingListExpression)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant)
+    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId)
+    if (targetingTemplateId != null) __obj.updateDynamic("targetingTemplateId")(targetingTemplateId)
+    if (technologyTargeting != null) __obj.updateDynamic("technologyTargeting")(technologyTargeting)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Ad]
+  }
+}
+

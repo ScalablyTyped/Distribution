@@ -10,3 +10,13 @@ trait CanvasImageSmoothing extends js.Object {
   var imageSmoothingQuality: ImageSmoothingQuality
 }
 
+object CanvasImageSmoothing {
+  @scala.inline
+  def apply(imageSmoothingEnabled: scala.Boolean, imageSmoothingQuality: ImageSmoothingQuality): CanvasImageSmoothing = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("imageSmoothingEnabled")(imageSmoothingEnabled)
+    __obj.updateDynamic("imageSmoothingQuality")(imageSmoothingQuality)
+    __obj.asInstanceOf[CanvasImageSmoothing]
+  }
+}
+

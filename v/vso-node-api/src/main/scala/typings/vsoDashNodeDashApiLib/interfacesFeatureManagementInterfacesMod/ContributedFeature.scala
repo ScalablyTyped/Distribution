@@ -44,3 +44,30 @@ trait ContributedFeature extends js.Object {
   var serviceInstanceType: java.lang.String
 }
 
+object ContributedFeature {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    defaultState: scala.Boolean,
+    defaultValueRules: js.Array[ContributedFeatureValueRule],
+    description: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    overrideRules: js.Array[ContributedFeatureValueRule],
+    scopes: js.Array[ContributedFeatureSettingScope],
+    serviceInstanceType: java.lang.String
+  ): ContributedFeature = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("defaultState")(defaultState)
+    __obj.updateDynamic("defaultValueRules")(defaultValueRules)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("overrideRules")(overrideRules)
+    __obj.updateDynamic("scopes")(scopes)
+    __obj.updateDynamic("serviceInstanceType")(serviceInstanceType)
+    __obj.asInstanceOf[ContributedFeature]
+  }
+}
+

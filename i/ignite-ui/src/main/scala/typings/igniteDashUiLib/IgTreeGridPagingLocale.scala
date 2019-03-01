@@ -22,3 +22,21 @@ trait IgTreeGridPagingLocale
   var contextRowRootText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgTreeGridPagingLocale {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgTreeGridPagingLocale
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    contextRowLoadingText: java.lang.String = null,
+    contextRowRootText: java.lang.String = null
+  ): IgTreeGridPagingLocale = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (contextRowLoadingText != null) __obj.updateDynamic("contextRowLoadingText")(contextRowLoadingText)
+    if (contextRowRootText != null) __obj.updateDynamic("contextRowRootText")(contextRowRootText)
+    __obj.asInstanceOf[IgTreeGridPagingLocale]
+  }
+}
+

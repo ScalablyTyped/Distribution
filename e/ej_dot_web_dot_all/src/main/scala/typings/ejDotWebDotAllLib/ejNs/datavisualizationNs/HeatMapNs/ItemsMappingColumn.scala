@@ -14,3 +14,13 @@ trait ItemsMappingColumn extends js.Object {
   var propertyName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ItemsMappingColumn {
+  @scala.inline
+  def apply(displayName: java.lang.String = null, propertyName: java.lang.String = null): ItemsMappingColumn = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
+    __obj.asInstanceOf[ItemsMappingColumn]
+  }
+}
+

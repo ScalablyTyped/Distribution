@@ -11,3 +11,14 @@ trait CameraMediaTypeObject extends js.Object {
   var VIDEO: scala.Double
 }
 
+object CameraMediaTypeObject {
+  @scala.inline
+  def apply(ALLMEDIA: scala.Double, PICTURE: scala.Double, VIDEO: scala.Double): CameraMediaTypeObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ALLMEDIA")(ALLMEDIA)
+    __obj.updateDynamic("PICTURE")(PICTURE)
+    __obj.updateDynamic("VIDEO")(VIDEO)
+    __obj.asInstanceOf[CameraMediaTypeObject]
+  }
+}
+

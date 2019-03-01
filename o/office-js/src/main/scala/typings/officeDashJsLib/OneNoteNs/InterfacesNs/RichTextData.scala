@@ -30,3 +30,14 @@ trait RichTextData extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RichTextData {
+  @scala.inline
+  def apply(id: java.lang.String = null, languageId: java.lang.String = null, text: java.lang.String = null): RichTextData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (languageId != null) __obj.updateDynamic("languageId")(languageId)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[RichTextData]
+  }
+}
+

@@ -13,3 +13,16 @@ trait ZoneOptions extends js.Object {
   var keepLocalTime: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ZoneOptions {
+  @scala.inline
+  def apply(
+    keepCalendarTime: js.UndefOr[scala.Boolean] = js.undefined,
+    keepLocalTime: js.UndefOr[scala.Boolean] = js.undefined
+  ): ZoneOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(keepCalendarTime)) __obj.updateDynamic("keepCalendarTime")(keepCalendarTime)
+    if (!js.isUndefined(keepLocalTime)) __obj.updateDynamic("keepLocalTime")(keepLocalTime)
+    __obj.asInstanceOf[ZoneOptions]
+  }
+}
+

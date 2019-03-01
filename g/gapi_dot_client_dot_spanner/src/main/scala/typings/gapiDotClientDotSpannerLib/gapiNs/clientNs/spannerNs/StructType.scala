@@ -17,3 +17,12 @@ trait StructType extends js.Object {
   var fields: js.UndefOr[js.Array[Field]] = js.undefined
 }
 
+object StructType {
+  @scala.inline
+  def apply(fields: js.Array[Field] = null): StructType = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[StructType]
+  }
+}
+

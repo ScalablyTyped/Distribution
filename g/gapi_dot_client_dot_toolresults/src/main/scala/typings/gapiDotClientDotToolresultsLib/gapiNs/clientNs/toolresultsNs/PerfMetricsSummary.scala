@@ -23,3 +23,28 @@ trait PerfMetricsSummary extends js.Object {
   var stepId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PerfMetricsSummary {
+  @scala.inline
+  def apply(
+    appStartTime: AppStartTime = null,
+    executionId: java.lang.String = null,
+    graphicsStats: GraphicsStats = null,
+    historyId: java.lang.String = null,
+    perfEnvironment: PerfEnvironment = null,
+    perfMetrics: js.Array[java.lang.String] = null,
+    projectId: java.lang.String = null,
+    stepId: java.lang.String = null
+  ): PerfMetricsSummary = {
+    val __obj = js.Dynamic.literal()
+    if (appStartTime != null) __obj.updateDynamic("appStartTime")(appStartTime)
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
+    if (graphicsStats != null) __obj.updateDynamic("graphicsStats")(graphicsStats)
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
+    if (perfEnvironment != null) __obj.updateDynamic("perfEnvironment")(perfEnvironment)
+    if (perfMetrics != null) __obj.updateDynamic("perfMetrics")(perfMetrics)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (stepId != null) __obj.updateDynamic("stepId")(stepId)
+    __obj.asInstanceOf[PerfMetricsSummary]
+  }
+}
+

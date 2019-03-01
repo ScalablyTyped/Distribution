@@ -24,3 +24,18 @@ trait CollectionLayout extends js.Object {
   def makeLayout(options: LayoutOptions): Layouts
 }
 
+object CollectionLayout {
+  @scala.inline
+  def apply(
+    createLayout: js.Function1[LayoutOptions, Layouts],
+    layout: js.Function1[LayoutOptions, Layouts],
+    makeLayout: js.Function1[LayoutOptions, Layouts]
+  ): CollectionLayout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createLayout")(createLayout)
+    __obj.updateDynamic("layout")(layout)
+    __obj.updateDynamic("makeLayout")(makeLayout)
+    __obj.asInstanceOf[CollectionLayout]
+  }
+}
+

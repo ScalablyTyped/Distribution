@@ -18,3 +18,12 @@ trait SaveOptions extends js.Object {
   var UseSchedulingEngine: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SaveOptions {
+  @scala.inline
+  def apply(UseSchedulingEngine: js.UndefOr[scala.Boolean] = js.undefined): SaveOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(UseSchedulingEngine)) __obj.updateDynamic("UseSchedulingEngine")(UseSchedulingEngine)
+    __obj.asInstanceOf[SaveOptions]
+  }
+}
+

@@ -17,3 +17,18 @@ trait Options extends js.Object {
   var invert: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    font: java.lang.String = null,
+    href: java.lang.String = null,
+    invert: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert)
+    __obj.asInstanceOf[Options]
+  }
+}
+

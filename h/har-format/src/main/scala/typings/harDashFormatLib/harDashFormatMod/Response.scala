@@ -45,3 +45,34 @@ trait Response extends js.Object {
   var statusText: java.lang.String
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    bodySize: scala.Double,
+    content: Content,
+    cookies: js.Array[Cookie],
+    headers: js.Array[Header],
+    headersSize: scala.Double,
+    httpVersion: java.lang.String,
+    redirectURL: java.lang.String,
+    status: scala.Double,
+    statusText: java.lang.String,
+    _transferSize: scala.Int | scala.Double = null,
+    comment: java.lang.String = null
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bodySize")(bodySize)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("cookies")(cookies)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("headersSize")(headersSize)
+    __obj.updateDynamic("httpVersion")(httpVersion)
+    __obj.updateDynamic("redirectURL")(redirectURL)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("statusText")(statusText)
+    if (_transferSize != null) __obj.updateDynamic("_transferSize")(_transferSize.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    __obj.asInstanceOf[Response]
+  }
+}
+

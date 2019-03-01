@@ -10,3 +10,16 @@ trait Anon_ReturnValueStreamType extends js.Object {
   /** The type of the media stream. This type can be either Audio or Video. */ var streamType: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDMediaStreamType
 }
 
+object Anon_ReturnValueStreamType {
+  @scala.inline
+  def apply(
+    returnValue: scala.Double,
+    streamType: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.NDMediaStreamType
+  ): Anon_ReturnValueStreamType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.updateDynamic("streamType")(streamType)
+    __obj.asInstanceOf[Anon_ReturnValueStreamType]
+  }
+}
+

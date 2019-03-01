@@ -32,3 +32,20 @@ trait ParallaxOptions extends js.Object {
   var viewport: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ParallaxOptions {
+  @scala.inline
+  def apply(
+    media: scala.Double | java.lang.String = null,
+    target: js.UndefOr[scala.Boolean] = js.undefined,
+    velocity: scala.Int | scala.Double = null,
+    viewport: scala.Int | scala.Double = null
+  ): ParallaxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target)
+    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParallaxOptions]
+  }
+}
+

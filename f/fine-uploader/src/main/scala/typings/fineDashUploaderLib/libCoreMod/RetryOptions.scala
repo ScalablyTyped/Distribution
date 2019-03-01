@@ -32,3 +32,20 @@ trait RetryOptions extends js.Object {
   var preventRetryResponseProperty: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RetryOptions {
+  @scala.inline
+  def apply(
+    autoAttemptDelay: scala.Int | scala.Double = null,
+    enableAuto: js.UndefOr[scala.Boolean] = js.undefined,
+    maxAutoAttempts: scala.Int | scala.Double = null,
+    preventRetryResponseProperty: java.lang.String = null
+  ): RetryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (autoAttemptDelay != null) __obj.updateDynamic("autoAttemptDelay")(autoAttemptDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAuto)) __obj.updateDynamic("enableAuto")(enableAuto)
+    if (maxAutoAttempts != null) __obj.updateDynamic("maxAutoAttempts")(maxAutoAttempts.asInstanceOf[js.Any])
+    if (preventRetryResponseProperty != null) __obj.updateDynamic("preventRetryResponseProperty")(preventRetryResponseProperty)
+    __obj.asInstanceOf[RetryOptions]
+  }
+}
+

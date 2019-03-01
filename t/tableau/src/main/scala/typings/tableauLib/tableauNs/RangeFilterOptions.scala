@@ -14,3 +14,14 @@ trait RangeFilterOptions extends js.Object {
   var nullOption: NullOption
 }
 
+object RangeFilterOptions {
+  @scala.inline
+  def apply(max: scala.Double | stdLib.Date, min: scala.Double | stdLib.Date, nullOption: NullOption): RangeFilterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    __obj.updateDynamic("nullOption")(nullOption)
+    __obj.asInstanceOf[RangeFilterOptions]
+  }
+}
+

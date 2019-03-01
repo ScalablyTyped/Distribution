@@ -16,3 +16,32 @@ trait ReportsResource extends js.Object {
   def request(request: gapiDotClientDotDoubleclicksearchLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Report]
 }
 
+object ReportsResource {
+  @scala.inline
+  def apply(
+    generate: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Report]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Report]
+    ],
+    getFile: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    request: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Report]
+    ]
+  ): ReportsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("generate")(generate)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getFile")(getFile)
+    __obj.updateDynamic("request")(request)
+    __obj.asInstanceOf[ReportsResource]
+  }
+}
+

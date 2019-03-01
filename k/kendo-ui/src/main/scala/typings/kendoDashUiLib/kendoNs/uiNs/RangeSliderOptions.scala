@@ -22,3 +22,40 @@ trait RangeSliderOptions extends js.Object {
   var tooltip: js.UndefOr[RangeSliderTooltip] = js.undefined
 }
 
+object RangeSliderOptions {
+  @scala.inline
+  def apply(
+    change: js.Function1[/* e */ RangeSliderChangeEvent, scala.Unit] = null,
+    largeStep: scala.Int | scala.Double = null,
+    leftDragHandleTitle: java.lang.String = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    orientation: java.lang.String = null,
+    rightDragHandleTitle: java.lang.String = null,
+    selectionEnd: scala.Int | scala.Double = null,
+    selectionStart: scala.Int | scala.Double = null,
+    slide: js.Function1[/* e */ RangeSliderSlideEvent, scala.Unit] = null,
+    smallStep: scala.Int | scala.Double = null,
+    tickPlacement: java.lang.String = null,
+    tooltip: RangeSliderTooltip = null
+  ): RangeSliderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (largeStep != null) __obj.updateDynamic("largeStep")(largeStep.asInstanceOf[js.Any])
+    if (leftDragHandleTitle != null) __obj.updateDynamic("leftDragHandleTitle")(leftDragHandleTitle)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (rightDragHandleTitle != null) __obj.updateDynamic("rightDragHandleTitle")(rightDragHandleTitle)
+    if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
+    if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
+    if (slide != null) __obj.updateDynamic("slide")(slide)
+    if (smallStep != null) __obj.updateDynamic("smallStep")(smallStep.asInstanceOf[js.Any])
+    if (tickPlacement != null) __obj.updateDynamic("tickPlacement")(tickPlacement)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[RangeSliderOptions]
+  }
+}
+

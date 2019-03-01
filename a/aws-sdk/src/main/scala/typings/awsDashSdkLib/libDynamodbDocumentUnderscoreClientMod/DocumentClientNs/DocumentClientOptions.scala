@@ -16,3 +16,20 @@ trait DocumentClientOptions extends ConverterOptions {
   var service: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.namespaced] = js.undefined
 }
 
+object DocumentClientOptions {
+  @scala.inline
+  def apply(
+    convertEmptyValues: js.UndefOr[scala.Boolean] = js.undefined,
+    params: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    service: awsDashSdkLib.clientsDynamodbMod.namespaced = null,
+    wrapNumbers: js.UndefOr[scala.Boolean] = js.undefined
+  ): DocumentClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(convertEmptyValues)) __obj.updateDynamic("convertEmptyValues")(convertEmptyValues)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (!js.isUndefined(wrapNumbers)) __obj.updateDynamic("wrapNumbers")(wrapNumbers)
+    __obj.asInstanceOf[DocumentClientOptions]
+  }
+}
+

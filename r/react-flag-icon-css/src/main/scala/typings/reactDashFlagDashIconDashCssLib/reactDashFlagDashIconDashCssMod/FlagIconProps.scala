@@ -29,3 +29,30 @@ trait FlagIconProps extends js.Object {
   var styleName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FlagIconProps {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    Component: java.lang.String = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    flip: FlagIconFlip = null,
+    rotate: FlagIconRotate = null,
+    size: FlagIconSize = null,
+    squared: js.UndefOr[scala.Boolean] = js.undefined,
+    styleName: java.lang.String = null
+  ): FlagIconProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    if (Component != null) __obj.updateDynamic("Component")(Component)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (flip != null) __obj.updateDynamic("flip")(flip)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(squared)) __obj.updateDynamic("squared")(squared)
+    if (styleName != null) __obj.updateDynamic("styleName")(styleName)
+    __obj.asInstanceOf[FlagIconProps]
+  }
+}
+

@@ -29,3 +29,22 @@ trait XParameterizedContentProvider
   def registerInstance(Template: java.lang.String, Arguments: java.lang.String, ReplaceExisting: scala.Boolean): XContentProvider
 }
 
+object XParameterizedContentProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    deregisterInstance: js.Function2[java.lang.String, java.lang.String, XContentProvider],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerInstance: js.Function3[java.lang.String, java.lang.String, scala.Boolean, XContentProvider],
+    release: js.Function0[scala.Unit]
+  ): XParameterizedContentProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("deregisterInstance")(deregisterInstance)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerInstance")(registerInstance)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XParameterizedContentProvider]
+  }
+}
+

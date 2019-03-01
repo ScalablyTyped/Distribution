@@ -10,3 +10,17 @@ trait WebfontsResource extends js.Object {
   def list(request: gapiDotClientDotWebfontsLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[WebfontList]
 }
 
+object WebfontsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotWebfontsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WebfontList]
+    ]
+  ): WebfontsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[WebfontsResource]
+  }
+}
+

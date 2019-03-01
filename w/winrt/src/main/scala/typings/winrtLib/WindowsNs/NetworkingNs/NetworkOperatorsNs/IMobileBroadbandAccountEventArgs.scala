@@ -9,3 +9,12 @@ trait IMobileBroadbandAccountEventArgs extends js.Object {
   var networkAccountId: java.lang.String
 }
 
+object IMobileBroadbandAccountEventArgs {
+  @scala.inline
+  def apply(networkAccountId: java.lang.String): IMobileBroadbandAccountEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("networkAccountId")(networkAccountId)
+    __obj.asInstanceOf[IMobileBroadbandAccountEventArgs]
+  }
+}
+

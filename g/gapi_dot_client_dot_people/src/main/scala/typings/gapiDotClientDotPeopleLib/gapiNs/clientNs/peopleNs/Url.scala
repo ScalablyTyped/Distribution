@@ -32,3 +32,20 @@ trait Url extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Url {
+  @scala.inline
+  def apply(
+    formattedType: java.lang.String = null,
+    metadata: FieldMetadata = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): Url = {
+    val __obj = js.Dynamic.literal()
+    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Url]
+  }
+}
+

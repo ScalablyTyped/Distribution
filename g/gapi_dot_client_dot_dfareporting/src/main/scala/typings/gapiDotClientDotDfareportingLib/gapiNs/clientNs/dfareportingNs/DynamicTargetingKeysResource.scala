@@ -17,3 +17,27 @@ trait DynamicTargetingKeysResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AdvertiserIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[DynamicTargetingKeysListResponse]
 }
 
+object DynamicTargetingKeysResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DynamicTargetingKey]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AdvertiserIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DynamicTargetingKeysListResponse]
+    ]
+  ): DynamicTargetingKeysResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[DynamicTargetingKeysResource]
+  }
+}
+

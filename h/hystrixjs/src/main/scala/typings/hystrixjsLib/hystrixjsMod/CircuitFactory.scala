@@ -11,3 +11,18 @@ trait CircuitFactory extends js.Object {
   def resetCache(): scala.Unit
 }
 
+object CircuitFactory {
+  @scala.inline
+  def apply(
+    getCache: js.Function0[js.Array[CircuitBreaker]],
+    getOrCreate: js.Function1[CirctuiBreakerConfig, CircuitBreaker],
+    resetCache: js.Function0[scala.Unit]
+  ): CircuitFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCache")(getCache)
+    __obj.updateDynamic("getOrCreate")(getOrCreate)
+    __obj.updateDynamic("resetCache")(resetCache)
+    __obj.asInstanceOf[CircuitFactory]
+  }
+}
+

@@ -370,3 +370,261 @@ trait INodeInterface
   ] = js.undefined
 }
 
+object INodeInterface {
+  @scala.inline
+  def apply(
+    alias: extjsLib.ExtNs.Array = null,
+    allowDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    alternateClassName: js.Any = null,
+    appendChild: js.Function3[
+      /* node */ js.UndefOr[js.Any], 
+      /* suppressEvents */ js.UndefOr[scala.Boolean], 
+      /* commit */ js.UndefOr[scala.Boolean], 
+      INodeInterface
+    ] = null,
+    bubble: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* args */ js.UndefOr[extjsLib.ExtNs.Array], 
+      scala.Unit
+    ] = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    cascadeBy: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* args */ js.UndefOr[extjsLib.ExtNs.Array], 
+      scala.Unit
+    ] = null,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    childNodes: extjsLib.ExtNs.Array = null,
+    children: extjsLib.ExtNs.Array = null,
+    cls: java.lang.String = null,
+    collapse: js.Function3[
+      /* recursive */ js.UndefOr[scala.Boolean], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    collapseChildren: js.Function3[
+      /* recursive */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    config: js.Any = null,
+    contains: js.Function1[/* node */ js.UndefOr[INodeInterface], scala.Boolean] = null,
+    copy: js.Function2[
+      /* id */ js.UndefOr[java.lang.String], 
+      /* deep */ js.UndefOr[scala.Boolean], 
+      INodeInterface
+    ] = null,
+    createNode: js.Function1[/* node */ js.UndefOr[js.Any], INodeInterface] = null,
+    depth: scala.Int | scala.Double = null,
+    destroy: js.Function1[/* silent */ js.UndefOr[js.Any], scala.Unit] = null,
+    eachChild: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* args */ js.UndefOr[extjsLib.ExtNs.Array], 
+      scala.Unit
+    ] = null,
+    expand: js.Function3[
+      /* recursive */ js.UndefOr[scala.Boolean], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    expandChildren: js.Function3[
+      /* recursive */ js.UndefOr[scala.Boolean], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    expandable: js.UndefOr[scala.Boolean] = js.undefined,
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    extend: java.lang.String = null,
+    findChild: js.Function3[
+      /* attribute */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* deep */ js.UndefOr[scala.Boolean], 
+      INodeInterface
+    ] = null,
+    findChildBy: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* deep */ js.UndefOr[scala.Boolean], 
+      INodeInterface
+    ] = null,
+    firstChild: INodeInterface = null,
+    getChildAt: js.Function1[/* index */ js.UndefOr[scala.Double], INodeInterface] = null,
+    getDepth: js.Function0[scala.Double] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getOwnerTree: js.Function0[extjsLib.ExtNs.treeNs.IPanel] = null,
+    getPath: js.Function2[
+      /* field */ js.UndefOr[java.lang.String], 
+      /* separator */ js.UndefOr[java.lang.String], 
+      java.lang.String
+    ] = null,
+    hasChildNodes: js.Function0[scala.Boolean] = null,
+    href: java.lang.String = null,
+    hrefTarget: java.lang.String = null,
+    icon: java.lang.String = null,
+    iconCls: java.lang.String = null,
+    index: scala.Int | scala.Double = null,
+    indexOf: js.Function1[/* node */ js.UndefOr[INodeInterface], scala.Double] = null,
+    indexOfId: js.Function1[/* id */ js.UndefOr[java.lang.String], scala.Double] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], INodeInterface] = null,
+    insertBefore: js.Function2[
+      /* node */ js.UndefOr[INodeInterface], 
+      /* refNode */ js.UndefOr[INodeInterface], 
+      INodeInterface
+    ] = null,
+    insertChild: js.Function2[
+      /* index */ js.UndefOr[scala.Double], 
+      /* node */ js.UndefOr[INodeInterface], 
+      INodeInterface
+    ] = null,
+    isAncestor: js.Function1[/* node */ js.UndefOr[INodeInterface], scala.Boolean] = null,
+    isExpandable: js.Function0[scala.Boolean] = null,
+    isExpanded: js.Function0[scala.Boolean] = null,
+    isFirst: js.UndefOr[scala.Boolean] = js.undefined,
+    isLast: js.UndefOr[scala.Boolean] = js.undefined,
+    isLeaf: js.Function0[scala.Boolean] = null,
+    isLoaded: js.Function0[scala.Boolean] = null,
+    isLoading: js.Function0[scala.Boolean] = null,
+    isNode: js.UndefOr[scala.Boolean] = js.undefined,
+    isRoot: js.Function0[scala.Boolean] = null,
+    isVisible: js.Function0[scala.Boolean] = null,
+    lastChild: INodeInterface = null,
+    leaf: js.UndefOr[scala.Boolean] = js.undefined,
+    loaded: js.UndefOr[scala.Boolean] = js.undefined,
+    loading: js.UndefOr[scala.Boolean] = js.undefined,
+    mixins: js.Any = null,
+    nextSibling: INodeInterface = null,
+    parentId: java.lang.String = null,
+    parentNode: INodeInterface = null,
+    previousSibling: INodeInterface = null,
+    qshowDelay: scala.Int | scala.Double = null,
+    qtip: java.lang.String = null,
+    qtitle: java.lang.String = null,
+    remove: js.Function1[/* destroy */ js.UndefOr[scala.Boolean], INodeInterface] = null,
+    removeAll: js.Function1[/* destroy */ js.UndefOr[scala.Boolean], INodeInterface] = null,
+    removeChild: js.Function2[
+      /* node */ js.UndefOr[INodeInterface], 
+      /* destroy */ js.UndefOr[scala.Boolean], 
+      INodeInterface
+    ] = null,
+    replaceChild: js.Function2[
+      /* newChild */ js.UndefOr[INodeInterface], 
+      /* oldChild */ js.UndefOr[INodeInterface], 
+      INodeInterface
+    ] = null,
+    requires: extjsLib.ExtNs.Array = null,
+    root: js.UndefOr[scala.Boolean] = js.undefined,
+    self: extjsLib.ExtNs.IClass = null,
+    serialize: js.Function0[scala.Unit] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* recursive */ js.UndefOr[scala.Boolean], 
+      /* suppressEvent */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    statics: js.Any = null,
+    text: java.lang.String = null,
+    updateInfo: js.Function2[/* commit */ js.UndefOr[scala.Boolean], /* info */ js.UndefOr[js.Any], scala.Unit] = null,
+    uses: extjsLib.ExtNs.Array = null
+  ): INodeInterface = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag)
+    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (appendChild != null) __obj.updateDynamic("appendChild")(appendChild)
+    if (bubble != null) __obj.updateDynamic("bubble")(bubble)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (cascadeBy != null) __obj.updateDynamic("cascadeBy")(cascadeBy)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (childNodes != null) __obj.updateDynamic("childNodes")(childNodes)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (collapseChildren != null) __obj.updateDynamic("collapseChildren")(collapseChildren)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (contains != null) __obj.updateDynamic("contains")(contains)
+    if (copy != null) __obj.updateDynamic("copy")(copy)
+    if (createNode != null) __obj.updateDynamic("createNode")(createNode)
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (eachChild != null) __obj.updateDynamic("eachChild")(eachChild)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (expandChildren != null) __obj.updateDynamic("expandChildren")(expandChildren)
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (findChild != null) __obj.updateDynamic("findChild")(findChild)
+    if (findChildBy != null) __obj.updateDynamic("findChildBy")(findChildBy)
+    if (firstChild != null) __obj.updateDynamic("firstChild")(firstChild)
+    if (getChildAt != null) __obj.updateDynamic("getChildAt")(getChildAt)
+    if (getDepth != null) __obj.updateDynamic("getDepth")(getDepth)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getOwnerTree != null) __obj.updateDynamic("getOwnerTree")(getOwnerTree)
+    if (getPath != null) __obj.updateDynamic("getPath")(getPath)
+    if (hasChildNodes != null) __obj.updateDynamic("hasChildNodes")(hasChildNodes)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (hrefTarget != null) __obj.updateDynamic("hrefTarget")(hrefTarget)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
+    if (indexOfId != null) __obj.updateDynamic("indexOfId")(indexOfId)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore)
+    if (insertChild != null) __obj.updateDynamic("insertChild")(insertChild)
+    if (isAncestor != null) __obj.updateDynamic("isAncestor")(isAncestor)
+    if (isExpandable != null) __obj.updateDynamic("isExpandable")(isExpandable)
+    if (isExpanded != null) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (!js.isUndefined(isFirst)) __obj.updateDynamic("isFirst")(isFirst)
+    if (!js.isUndefined(isLast)) __obj.updateDynamic("isLast")(isLast)
+    if (isLeaf != null) __obj.updateDynamic("isLeaf")(isLeaf)
+    if (isLoaded != null) __obj.updateDynamic("isLoaded")(isLoaded)
+    if (isLoading != null) __obj.updateDynamic("isLoading")(isLoading)
+    if (!js.isUndefined(isNode)) __obj.updateDynamic("isNode")(isNode)
+    if (isRoot != null) __obj.updateDynamic("isRoot")(isRoot)
+    if (isVisible != null) __obj.updateDynamic("isVisible")(isVisible)
+    if (lastChild != null) __obj.updateDynamic("lastChild")(lastChild)
+    if (!js.isUndefined(leaf)) __obj.updateDynamic("leaf")(leaf)
+    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded)
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (nextSibling != null) __obj.updateDynamic("nextSibling")(nextSibling)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode)
+    if (previousSibling != null) __obj.updateDynamic("previousSibling")(previousSibling)
+    if (qshowDelay != null) __obj.updateDynamic("qshowDelay")(qshowDelay.asInstanceOf[js.Any])
+    if (qtip != null) __obj.updateDynamic("qtip")(qtip)
+    if (qtitle != null) __obj.updateDynamic("qtitle")(qtitle)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (removeAll != null) __obj.updateDynamic("removeAll")(removeAll)
+    if (removeChild != null) __obj.updateDynamic("removeChild")(removeChild)
+    if (replaceChild != null) __obj.updateDynamic("replaceChild")(replaceChild)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (serialize != null) __obj.updateDynamic("serialize")(serialize)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (updateInfo != null) __obj.updateDynamic("updateInfo")(updateInfo)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[INodeInterface]
+  }
+}
+

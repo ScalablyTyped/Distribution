@@ -24,3 +24,20 @@ trait WithdrawOpts extends js.Object {
   var payment_method: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WithdrawOpts {
+  @scala.inline
+  def apply(
+    amount: java.lang.String,
+    currency: java.lang.String,
+    commit: js.UndefOr[scala.Boolean] = js.undefined,
+    payment_method: java.lang.String = null
+  ): WithdrawOpts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
+    __obj.asInstanceOf[WithdrawOpts]
+  }
+}
+

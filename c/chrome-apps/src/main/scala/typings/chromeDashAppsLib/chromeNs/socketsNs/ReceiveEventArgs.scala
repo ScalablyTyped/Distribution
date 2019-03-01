@@ -12,3 +12,13 @@ trait ReceiveEventArgs extends js.Object {
   var socketId: chromeDashAppsLib.chromeNs.integer
 }
 
+object ReceiveEventArgs {
+  @scala.inline
+  def apply(data: stdLib.ArrayBuffer, socketId: chromeDashAppsLib.chromeNs.integer): ReceiveEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("socketId")(socketId)
+    __obj.asInstanceOf[ReceiveEventArgs]
+  }
+}
+

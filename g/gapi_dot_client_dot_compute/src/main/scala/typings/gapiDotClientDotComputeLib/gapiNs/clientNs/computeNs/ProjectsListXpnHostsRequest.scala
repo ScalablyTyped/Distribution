@@ -13,3 +13,12 @@ trait ProjectsListXpnHostsRequest extends js.Object {
   var organization: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProjectsListXpnHostsRequest {
+  @scala.inline
+  def apply(organization: java.lang.String = null): ProjectsListXpnHostsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (organization != null) __obj.updateDynamic("organization")(organization)
+    __obj.asInstanceOf[ProjectsListXpnHostsRequest]
+  }
+}
+

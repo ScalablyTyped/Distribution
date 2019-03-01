@@ -18,3 +18,32 @@ trait Anon_Client extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Client {
+  @scala.inline
+  def apply(
+    client: Anon_Name,
+    environment: Anon_Architecture,
+    error: raygunLib.raygunMod.raygunNs.RaygunErrorObject,
+    machineName: java.lang.String,
+    tags: js.Array[java.lang.String],
+    groupingKey: java.lang.String = null,
+    request: raygunLib.raygunMod.raygunNs.RaygunRequest = null,
+    user: raygunLib.raygunMod.raygunNs.RaygunUser | Anon_Identifier = null,
+    userCustomData: raygunLib.raygunMod.raygunNs.KeyValueObject = null,
+    version: java.lang.String = null
+  ): Anon_Client = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("environment")(environment)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("machineName")(machineName)
+    __obj.updateDynamic("tags")(tags)
+    if (groupingKey != null) __obj.updateDynamic("groupingKey")(groupingKey)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (userCustomData != null) __obj.updateDynamic("userCustomData")(userCustomData)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Client]
+  }
+}
+

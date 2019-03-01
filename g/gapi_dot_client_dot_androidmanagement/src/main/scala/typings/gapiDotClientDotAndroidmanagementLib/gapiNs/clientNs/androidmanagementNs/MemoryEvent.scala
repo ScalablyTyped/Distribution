@@ -14,3 +14,18 @@ trait MemoryEvent extends js.Object {
   var eventType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MemoryEvent {
+  @scala.inline
+  def apply(
+    byteCount: java.lang.String = null,
+    createTime: java.lang.String = null,
+    eventType: java.lang.String = null
+  ): MemoryEvent = {
+    val __obj = js.Dynamic.literal()
+    if (byteCount != null) __obj.updateDynamic("byteCount")(byteCount)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (eventType != null) __obj.updateDynamic("eventType")(eventType)
+    __obj.asInstanceOf[MemoryEvent]
+  }
+}
+

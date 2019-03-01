@@ -12,3 +12,13 @@ trait RunQueryResponse extends js.Object {
   var query: js.UndefOr[Query] = js.undefined
 }
 
+object RunQueryResponse {
+  @scala.inline
+  def apply(batch: QueryResultBatch = null, query: Query = null): RunQueryResponse = {
+    val __obj = js.Dynamic.literal()
+    if (batch != null) __obj.updateDynamic("batch")(batch)
+    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[RunQueryResponse]
+  }
+}
+

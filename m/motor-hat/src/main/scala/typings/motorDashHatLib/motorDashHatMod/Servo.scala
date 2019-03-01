@@ -22,3 +22,16 @@ trait Servo extends js.Object {
   def moveTo(pos: scala.Double): scala.Unit
 }
 
+object Servo {
+  @scala.inline
+  def apply(
+    calibrate: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    moveTo: js.Function1[scala.Double, scala.Unit]
+  ): Servo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calibrate")(calibrate)
+    __obj.updateDynamic("moveTo")(moveTo)
+    __obj.asInstanceOf[Servo]
+  }
+}
+

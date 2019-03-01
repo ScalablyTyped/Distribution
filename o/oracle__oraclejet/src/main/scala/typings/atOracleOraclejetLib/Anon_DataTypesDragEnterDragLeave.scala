@@ -14,3 +14,24 @@ trait Anon_DataTypesDragEnterDragLeave extends js.Object {
   def drop(param0: stdLib.Event, param1: js.Object): scala.Unit
 }
 
+object Anon_DataTypesDragEnterDragLeave {
+  @scala.inline
+  def apply(
+    dataTypes: java.lang.String | js.Array[java.lang.String],
+    dragEnter: js.Function2[stdLib.Event, js.Object, scala.Unit],
+    dragLeave: js.Function2[stdLib.Event, js.Object, scala.Unit],
+    dragOver: js.Function2[stdLib.Event, js.Object, scala.Unit],
+    drop: js.Function2[stdLib.Event, js.Object, scala.Unit],
+    selector: java.lang.String
+  ): Anon_DataTypesDragEnterDragLeave = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataTypes")(dataTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("dragEnter")(dragEnter)
+    __obj.updateDynamic("dragLeave")(dragLeave)
+    __obj.updateDynamic("dragOver")(dragOver)
+    __obj.updateDynamic("drop")(drop)
+    __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[Anon_DataTypesDragEnterDragLeave]
+  }
+}
+

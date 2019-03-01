@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Explanation of Benefit resource
   */
-trait ExplanationOfBenefit extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ExplanationOfBenefit extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */
@@ -181,5 +182,126 @@ trait ExplanationOfBenefit extends DomainResource {
     * Unallocated deductable
     */
   var unallocDeductable: js.UndefOr[Money] = js.undefined
+}
+
+object ExplanationOfBenefit {
+  @scala.inline
+  def apply(
+    _created: Element = null,
+    _disposition: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _precedence: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    accident: ExplanationOfBenefitAccident = null,
+    addItem: js.Array[ExplanationOfBenefitAddItem] = null,
+    benefitBalance: js.Array[ExplanationOfBenefitBenefitBalance] = null,
+    billablePeriod: Period = null,
+    careTeam: js.Array[ExplanationOfBenefitCareTeam] = null,
+    claim: Reference = null,
+    claimResponse: Reference = null,
+    contained: js.Array[Resource] = null,
+    created: dateTime = null,
+    diagnosis: js.Array[ExplanationOfBenefitDiagnosis] = null,
+    disposition: java.lang.String = null,
+    employmentImpacted: Period = null,
+    enterer: Reference = null,
+    extension: js.Array[Extension] = null,
+    facility: Reference = null,
+    form: CodeableConcept = null,
+    hospitalization: Period = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    information: js.Array[ExplanationOfBenefitInformation] = null,
+    insurance: ExplanationOfBenefitInsurance = null,
+    insurer: Reference = null,
+    item: js.Array[ExplanationOfBenefitItem] = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    organization: Reference = null,
+    originalPrescription: Reference = null,
+    outcome: CodeableConcept = null,
+    patient: Reference = null,
+    payee: ExplanationOfBenefitPayee = null,
+    payment: ExplanationOfBenefitPayment = null,
+    precedence: js.UndefOr[positiveInt] = js.undefined,
+    prescription: Reference = null,
+    procedure: js.Array[ExplanationOfBenefitProcedure] = null,
+    processNote: js.Array[ExplanationOfBenefitProcessNote] = null,
+    provider: Reference = null,
+    referral: Reference = null,
+    related: js.Array[ExplanationOfBenefitRelated] = null,
+    resourceType: code = null,
+    status: code = null,
+    subType: js.Array[CodeableConcept] = null,
+    text: Narrative = null,
+    totalBenefit: Money = null,
+    totalCost: Money = null,
+    `type`: CodeableConcept = null,
+    unallocDeductable: Money = null
+  ): ExplanationOfBenefit = {
+    val __obj = js.Dynamic.literal()
+    if (_created != null) __obj.updateDynamic("_created")(_created)
+    if (_disposition != null) __obj.updateDynamic("_disposition")(_disposition)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_precedence != null) __obj.updateDynamic("_precedence")(_precedence)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (accident != null) __obj.updateDynamic("accident")(accident)
+    if (addItem != null) __obj.updateDynamic("addItem")(addItem)
+    if (benefitBalance != null) __obj.updateDynamic("benefitBalance")(benefitBalance)
+    if (billablePeriod != null) __obj.updateDynamic("billablePeriod")(billablePeriod)
+    if (careTeam != null) __obj.updateDynamic("careTeam")(careTeam)
+    if (claim != null) __obj.updateDynamic("claim")(claim)
+    if (claimResponse != null) __obj.updateDynamic("claimResponse")(claimResponse)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (diagnosis != null) __obj.updateDynamic("diagnosis")(diagnosis)
+    if (disposition != null) __obj.updateDynamic("disposition")(disposition)
+    if (employmentImpacted != null) __obj.updateDynamic("employmentImpacted")(employmentImpacted)
+    if (enterer != null) __obj.updateDynamic("enterer")(enterer)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (facility != null) __obj.updateDynamic("facility")(facility)
+    if (form != null) __obj.updateDynamic("form")(form)
+    if (hospitalization != null) __obj.updateDynamic("hospitalization")(hospitalization)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (information != null) __obj.updateDynamic("information")(information)
+    if (insurance != null) __obj.updateDynamic("insurance")(insurance)
+    if (insurer != null) __obj.updateDynamic("insurer")(insurer)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (organization != null) __obj.updateDynamic("organization")(organization)
+    if (originalPrescription != null) __obj.updateDynamic("originalPrescription")(originalPrescription)
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    if (patient != null) __obj.updateDynamic("patient")(patient)
+    if (payee != null) __obj.updateDynamic("payee")(payee)
+    if (payment != null) __obj.updateDynamic("payment")(payment)
+    if (!js.isUndefined(precedence)) __obj.updateDynamic("precedence")(precedence)
+    if (prescription != null) __obj.updateDynamic("prescription")(prescription)
+    if (procedure != null) __obj.updateDynamic("procedure")(procedure)
+    if (processNote != null) __obj.updateDynamic("processNote")(processNote)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (referral != null) __obj.updateDynamic("referral")(referral)
+    if (related != null) __obj.updateDynamic("related")(related)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (subType != null) __obj.updateDynamic("subType")(subType)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (totalBenefit != null) __obj.updateDynamic("totalBenefit")(totalBenefit)
+    if (totalCost != null) __obj.updateDynamic("totalCost")(totalCost)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unallocDeductable != null) __obj.updateDynamic("unallocDeductable")(unallocDeductable)
+    __obj.asInstanceOf[ExplanationOfBenefit]
+  }
 }
 

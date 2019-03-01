@@ -34,3 +34,27 @@ trait RippleProps
   var theme: js.UndefOr[RippleTheme] = js.undefined
 }
 
+object RippleProps {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Additional properties passed to rippled component.
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    onRippleEnded: coreDashJsLib.Function = null,
+    spread: scala.Int | scala.Double = null,
+    theme: RippleTheme = null
+  ): RippleProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (onRippleEnded != null) __obj.updateDynamic("onRippleEnded")(onRippleEnded)
+    if (spread != null) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[RippleProps]
+  }
+}
+

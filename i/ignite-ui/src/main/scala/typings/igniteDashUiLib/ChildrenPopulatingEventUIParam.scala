@@ -20,3 +20,14 @@ trait ChildrenPopulatingEventUIParam extends js.Object {
   var parentrow: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChildrenPopulatingEventUIParam {
+  @scala.inline
+  def apply(id: js.Any = null, owner: js.Any = null, parentrow: java.lang.String = null): ChildrenPopulatingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (parentrow != null) __obj.updateDynamic("parentrow")(parentrow)
+    __obj.asInstanceOf[ChildrenPopulatingEventUIParam]
+  }
+}
+

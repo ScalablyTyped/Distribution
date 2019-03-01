@@ -10,3 +10,20 @@ trait OpenFileRequestedEventOptions extends FilePathRequestedEventOptions {
   var mode: java.lang.String
 }
 
+object OpenFileRequestedEventOptions {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    fileSystemId: java.lang.String,
+    mode: java.lang.String,
+    requestId: scala.Double
+  ): OpenFileRequestedEventOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.asInstanceOf[OpenFileRequestedEventOptions]
+  }
+}
+

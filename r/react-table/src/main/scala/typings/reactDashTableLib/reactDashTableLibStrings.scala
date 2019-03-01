@@ -10,13 +10,15 @@ object reactDashTableLibStrings {
   sealed trait asc extends js.Object
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait checkbox
+    extends reactDashTableLib.libHocSelectTableMod.SelectType
   
   @js.native
   sealed trait desc extends js.Object
   
   @js.native
-  sealed trait radio extends js.Object
+  sealed trait radio
+    extends reactDashTableLib.libHocSelectTableMod.SelectType
   
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]

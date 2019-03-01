@@ -24,3 +24,20 @@ trait KeyPairState extends js.Object {
   val publicKey: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object KeyPairState {
+  @scala.inline
+  def apply(
+    fingerprint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyNamePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publicKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): KeyPairState = {
+    val __obj = js.Dynamic.literal()
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
+    if (keyNamePrefix != null) __obj.updateDynamic("keyNamePrefix")(keyNamePrefix.asInstanceOf[js.Any])
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyPairState]
+  }
+}
+

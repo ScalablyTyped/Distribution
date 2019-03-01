@@ -24,3 +24,20 @@ trait SerialOptions extends js.Object {
   var stopBits: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SerialOptions {
+  @scala.inline
+  def apply(
+    baudRate: scala.Int | scala.Double = null,
+    dataBits: scala.Int | scala.Double = null,
+    parity: scala.Int | scala.Double = null,
+    stopBits: scala.Int | scala.Double = null
+  ): SerialOptions = {
+    val __obj = js.Dynamic.literal()
+    if (baudRate != null) __obj.updateDynamic("baudRate")(baudRate.asInstanceOf[js.Any])
+    if (dataBits != null) __obj.updateDynamic("dataBits")(dataBits.asInstanceOf[js.Any])
+    if (parity != null) __obj.updateDynamic("parity")(parity.asInstanceOf[js.Any])
+    if (stopBits != null) __obj.updateDynamic("stopBits")(stopBits.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SerialOptions]
+  }
+}
+

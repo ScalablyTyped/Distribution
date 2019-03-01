@@ -10,3 +10,13 @@ trait Rpc
   var name: java.lang.String
 }
 
+object Rpc {
+  @scala.inline
+  def apply(annotationType: java.lang.String, name: java.lang.String): Rpc = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotationType")(annotationType)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Rpc]
+  }
+}
+

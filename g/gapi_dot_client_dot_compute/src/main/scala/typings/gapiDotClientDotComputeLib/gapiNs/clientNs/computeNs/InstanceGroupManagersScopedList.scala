@@ -12,3 +12,16 @@ trait InstanceGroupManagersScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object InstanceGroupManagersScopedList {
+  @scala.inline
+  def apply(
+    instanceGroupManagers: js.Array[InstanceGroupManager] = null,
+    warning: gapiDotClientDotComputeLib.Anon_Code = null
+  ): InstanceGroupManagersScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (instanceGroupManagers != null) __obj.updateDynamic("instanceGroupManagers")(instanceGroupManagers)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[InstanceGroupManagersScopedList]
+  }
+}
+

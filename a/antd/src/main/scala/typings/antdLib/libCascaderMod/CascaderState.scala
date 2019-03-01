@@ -14,3 +14,24 @@ trait CascaderState extends js.Object {
   var value: js.Array[java.lang.String]
 }
 
+object CascaderState {
+  @scala.inline
+  def apply(
+    inputFocused: scala.Boolean,
+    inputValue: java.lang.String,
+    prevProps: CascaderProps,
+    value: js.Array[java.lang.String],
+    flattenOptions: js.Array[js.Array[CascaderOptionType]] = null,
+    popupVisible: js.UndefOr[scala.Boolean] = js.undefined
+  ): CascaderState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inputFocused")(inputFocused)
+    __obj.updateDynamic("inputValue")(inputValue)
+    __obj.updateDynamic("prevProps")(prevProps)
+    __obj.updateDynamic("value")(value)
+    if (flattenOptions != null) __obj.updateDynamic("flattenOptions")(flattenOptions)
+    if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible)
+    __obj.asInstanceOf[CascaderState]
+  }
+}
+

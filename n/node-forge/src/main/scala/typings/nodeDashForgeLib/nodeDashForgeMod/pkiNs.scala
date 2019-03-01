@@ -224,6 +224,10 @@ object pkiNs extends js.Object {
       ): scala.Boolean = js.native
     }
     
+    trait _EncryptionScheme extends js.Object
+    
+    trait _SignatureScheme extends js.Object
+    
     def generateKeyPair(): KeyPair = js.native
     def generateKeyPair(bits: scala.Double): KeyPair = js.native
     def generateKeyPair(bits: scala.Double, e: scala.Double): KeyPair = js.native
@@ -238,8 +242,8 @@ object pkiNs extends js.Object {
       callback: js.Function2[/* err */ nodeLib.Error, /* keypair */ KeyPair, scala.Unit]
     ): KeyPair = js.native
     def setPublicKey(n: js.Any, e: js.Any): js.Any = js.native
-    type EncryptionScheme = nodeDashForgeLib.nodeDashForgeLibStrings.`RSAES-PKCS1-V1_5` | nodeDashForgeLib.nodeDashForgeLibStrings.`RSA-OAEP` | nodeDashForgeLib.nodeDashForgeLibStrings.RAW | nodeDashForgeLib.nodeDashForgeLibStrings.NONE | scala.Null
-    type SignatureScheme = nodeDashForgeLib.nodeDashForgeLibStrings.`RSASSA-PKCS1-V1_5` | nodeDashForgeLib.nodeDashForgeMod.pssNs.PSS | nodeDashForgeLib.nodeDashForgeLibStrings.NONE | scala.Null
+    type EncryptionScheme = _EncryptionScheme | scala.Null
+    type SignatureScheme = _SignatureScheme | nodeDashForgeLib.nodeDashForgeMod.pssNs.PSS | scala.Null
   }
   
   type PEM = java.lang.String

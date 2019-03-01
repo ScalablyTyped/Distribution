@@ -12,3 +12,20 @@ trait ViaCity extends js.Object {
   var name: java.lang.String
 }
 
+object ViaCity {
+  @scala.inline
+  def apply(
+    adcode: java.lang.String,
+    citycode: java.lang.String,
+    districts: js.Array[District],
+    name: java.lang.String
+  ): ViaCity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adcode")(adcode)
+    __obj.updateDynamic("citycode")(citycode)
+    __obj.updateDynamic("districts")(districts)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ViaCity]
+  }
+}
+

@@ -14,3 +14,14 @@ trait Anon_Keyword extends js.Object {
   var score: scala.Double
 }
 
+object Anon_Keyword {
+  @scala.inline
+  def apply(keyword: java.lang.String, root: java.lang.String, score: scala.Double): Anon_Keyword = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyword")(keyword)
+    __obj.updateDynamic("root")(root)
+    __obj.updateDynamic("score")(score)
+    __obj.asInstanceOf[Anon_Keyword]
+  }
+}
+

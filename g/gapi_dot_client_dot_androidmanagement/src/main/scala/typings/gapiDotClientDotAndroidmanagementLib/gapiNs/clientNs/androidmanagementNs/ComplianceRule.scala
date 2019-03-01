@@ -18,3 +18,18 @@ trait ComplianceRule extends js.Object {
   var nonComplianceDetailCondition: js.UndefOr[NonComplianceDetailCondition] = js.undefined
 }
 
+object ComplianceRule {
+  @scala.inline
+  def apply(
+    apiLevelCondition: ApiLevelCondition = null,
+    disableApps: js.UndefOr[scala.Boolean] = js.undefined,
+    nonComplianceDetailCondition: NonComplianceDetailCondition = null
+  ): ComplianceRule = {
+    val __obj = js.Dynamic.literal()
+    if (apiLevelCondition != null) __obj.updateDynamic("apiLevelCondition")(apiLevelCondition)
+    if (!js.isUndefined(disableApps)) __obj.updateDynamic("disableApps")(disableApps)
+    if (nonComplianceDetailCondition != null) __obj.updateDynamic("nonComplianceDetailCondition")(nonComplianceDetailCondition)
+    __obj.asInstanceOf[ComplianceRule]
+  }
+}
+

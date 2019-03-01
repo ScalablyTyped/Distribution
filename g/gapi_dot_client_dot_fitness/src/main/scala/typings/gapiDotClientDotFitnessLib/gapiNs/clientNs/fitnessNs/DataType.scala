@@ -12,3 +12,13 @@ trait DataType extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataType {
+  @scala.inline
+  def apply(field: js.Array[DataTypeField] = null, name: java.lang.String = null): DataType = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[DataType]
+  }
+}
+

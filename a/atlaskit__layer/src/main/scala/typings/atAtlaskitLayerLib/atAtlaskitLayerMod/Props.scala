@@ -51,3 +51,35 @@ trait Props extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    autoFlip: scala.Boolean | FlipPositionType | js.Array[FlipPositionType] = null,
+    boundariesElement: BoundariesElementType = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    content: reactLib.reactMod.ReactNs.ReactNode = null,
+    lockScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    offset: java.lang.String = null,
+    onFlippedChange: js.Function3[
+      /* flipped */ scala.Boolean, 
+      /* actualPosition */ CSSPositionType, 
+      /* originalPosition */ CSSPositionType, 
+      scala.Unit
+    ] = null,
+    position: PositionType = null,
+    zIndex: scala.Int | scala.Double = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (autoFlip != null) __obj.updateDynamic("autoFlip")(autoFlip.asInstanceOf[js.Any])
+    if (boundariesElement != null) __obj.updateDynamic("boundariesElement")(boundariesElement)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockScroll)) __obj.updateDynamic("lockScroll")(lockScroll)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (onFlippedChange != null) __obj.updateDynamic("onFlippedChange")(onFlippedChange)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props]
+  }
+}
+

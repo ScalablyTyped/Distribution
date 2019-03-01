@@ -12,3 +12,16 @@ trait LocationMetadata extends js.Object {
   var standardEnvironmentAvailable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LocationMetadata {
+  @scala.inline
+  def apply(
+    flexibleEnvironmentAvailable: js.UndefOr[scala.Boolean] = js.undefined,
+    standardEnvironmentAvailable: js.UndefOr[scala.Boolean] = js.undefined
+  ): LocationMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(flexibleEnvironmentAvailable)) __obj.updateDynamic("flexibleEnvironmentAvailable")(flexibleEnvironmentAvailable)
+    if (!js.isUndefined(standardEnvironmentAvailable)) __obj.updateDynamic("standardEnvironmentAvailable")(standardEnvironmentAvailable)
+    __obj.asInstanceOf[LocationMetadata]
+  }
+}
+

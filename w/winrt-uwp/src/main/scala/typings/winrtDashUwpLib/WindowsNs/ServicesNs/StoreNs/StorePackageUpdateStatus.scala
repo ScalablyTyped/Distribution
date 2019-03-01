@@ -21,3 +21,24 @@ trait StorePackageUpdateStatus extends js.Object {
   var totalDownloadProgress: scala.Double
 }
 
+object StorePackageUpdateStatus {
+  @scala.inline
+  def apply(
+    packageBytesDownloaded: scala.Double,
+    packageDownloadProgress: scala.Double,
+    packageDownloadSizeInBytes: scala.Double,
+    packageFamilyName: java.lang.String,
+    packageUpdateState: StorePackageUpdateState,
+    totalDownloadProgress: scala.Double
+  ): StorePackageUpdateStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("packageBytesDownloaded")(packageBytesDownloaded)
+    __obj.updateDynamic("packageDownloadProgress")(packageDownloadProgress)
+    __obj.updateDynamic("packageDownloadSizeInBytes")(packageDownloadSizeInBytes)
+    __obj.updateDynamic("packageFamilyName")(packageFamilyName)
+    __obj.updateDynamic("packageUpdateState")(packageUpdateState)
+    __obj.updateDynamic("totalDownloadProgress")(totalDownloadProgress)
+    __obj.asInstanceOf[StorePackageUpdateStatus]
+  }
+}
+

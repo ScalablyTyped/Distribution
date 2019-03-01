@@ -28,3 +28,22 @@ trait _Impl extends js.Object {
   var visible: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    container: java.lang.String,
+    elementSize: java.lang.String,
+    invalidContext: java.lang.String,
+    method: java.lang.String,
+    visible: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("elementSize")(elementSize)
+    __obj.updateDynamic("invalidContext")(invalidContext)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

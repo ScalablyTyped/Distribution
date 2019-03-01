@@ -15,3 +15,13 @@ trait RedoCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object RedoCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): RedoCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[RedoCommand]
+  }
+}
+

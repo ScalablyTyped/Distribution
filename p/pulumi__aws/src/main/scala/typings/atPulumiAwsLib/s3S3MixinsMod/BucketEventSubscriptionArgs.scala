@@ -12,3 +12,18 @@ trait BucketEventSubscriptionArgs extends CommonBucketSubscriptionArgs {
   var events: js.Array[java.lang.String]
 }
 
+object BucketEventSubscriptionArgs {
+  @scala.inline
+  def apply(
+    events: js.Array[java.lang.String],
+    filterPrefix: java.lang.String = null,
+    filterSuffix: java.lang.String = null
+  ): BucketEventSubscriptionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("events")(events)
+    if (filterPrefix != null) __obj.updateDynamic("filterPrefix")(filterPrefix)
+    if (filterSuffix != null) __obj.updateDynamic("filterSuffix")(filterSuffix)
+    __obj.asInstanceOf[BucketEventSubscriptionArgs]
+  }
+}
+

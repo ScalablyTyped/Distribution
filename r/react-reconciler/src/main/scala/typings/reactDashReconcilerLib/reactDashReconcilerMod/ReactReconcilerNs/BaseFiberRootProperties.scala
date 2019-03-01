@@ -54,3 +54,52 @@ trait BaseFiberRootProperties extends js.Object {
   var timeoutHandle: js.Any
 }
 
+object BaseFiberRootProperties {
+  @scala.inline
+  def apply(
+    containerInfo: js.Any,
+    current: Fiber,
+    didError: scala.Boolean,
+    earliestPendingTime: ExpirationTime,
+    earliestSuspendedTime: ExpirationTime,
+    expirationTime: ExpirationTime,
+    hydrate: scala.Boolean,
+    latestPendingTime: ExpirationTime,
+    latestPingedTime: ExpirationTime,
+    latestSuspendedTime: ExpirationTime,
+    nextExpirationTimeToWorkOn: ExpirationTime,
+    pendingChildren: js.Any,
+    pendingCommitExpirationTime: ExpirationTime,
+    timeoutHandle: js.Any,
+    context: js.Object = null,
+    finishedWork: Fiber = null,
+    firstBatch: Batch = null,
+    nextScheduledRoot: FiberRoot = null,
+    pendingContext: js.Object = null,
+    pingCache: (stdLib.WeakMap[Thenable, stdLib.Set[ExpirationTime]]) | (stdLib.Map[Thenable, stdLib.Set[ExpirationTime]]) = null
+  ): BaseFiberRootProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("containerInfo")(containerInfo)
+    __obj.updateDynamic("current")(current)
+    __obj.updateDynamic("didError")(didError)
+    __obj.updateDynamic("earliestPendingTime")(earliestPendingTime)
+    __obj.updateDynamic("earliestSuspendedTime")(earliestSuspendedTime)
+    __obj.updateDynamic("expirationTime")(expirationTime)
+    __obj.updateDynamic("hydrate")(hydrate)
+    __obj.updateDynamic("latestPendingTime")(latestPendingTime)
+    __obj.updateDynamic("latestPingedTime")(latestPingedTime)
+    __obj.updateDynamic("latestSuspendedTime")(latestSuspendedTime)
+    __obj.updateDynamic("nextExpirationTimeToWorkOn")(nextExpirationTimeToWorkOn)
+    __obj.updateDynamic("pendingChildren")(pendingChildren)
+    __obj.updateDynamic("pendingCommitExpirationTime")(pendingCommitExpirationTime)
+    __obj.updateDynamic("timeoutHandle")(timeoutHandle)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (finishedWork != null) __obj.updateDynamic("finishedWork")(finishedWork)
+    if (firstBatch != null) __obj.updateDynamic("firstBatch")(firstBatch)
+    if (nextScheduledRoot != null) __obj.updateDynamic("nextScheduledRoot")(nextScheduledRoot)
+    if (pendingContext != null) __obj.updateDynamic("pendingContext")(pendingContext)
+    if (pingCache != null) __obj.updateDynamic("pingCache")(pingCache.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BaseFiberRootProperties]
+  }
+}
+

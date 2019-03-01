@@ -9,3 +9,12 @@ trait UniversalStringParams extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UniversalStringParams {
+  @scala.inline
+  def apply(value: java.lang.String = null): UniversalStringParams = {
+    val __obj = js.Dynamic.literal()
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[UniversalStringParams]
+  }
+}
+

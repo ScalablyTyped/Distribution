@@ -10,3 +10,16 @@ trait Anon_MaximumIndividualPlayerLatencyMillisecondsPolicyDurationSeconds exten
   var policyDurationSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object Anon_MaximumIndividualPlayerLatencyMillisecondsPolicyDurationSeconds {
+  @scala.inline
+  def apply(
+    maximumIndividualPlayerLatencyMilliseconds: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    policyDurationSeconds: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): Anon_MaximumIndividualPlayerLatencyMillisecondsPolicyDurationSeconds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maximumIndividualPlayerLatencyMilliseconds")(maximumIndividualPlayerLatencyMilliseconds.asInstanceOf[js.Any])
+    if (policyDurationSeconds != null) __obj.updateDynamic("policyDurationSeconds")(policyDurationSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_MaximumIndividualPlayerLatencyMillisecondsPolicyDurationSeconds]
+  }
+}
+

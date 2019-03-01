@@ -10,3 +10,13 @@ trait IDisabledInterval extends js.Object {
   var startPosition: scala.Double
 }
 
+object IDisabledInterval {
+  @scala.inline
+  def apply(endPosition: scala.Double, startPosition: scala.Double): IDisabledInterval = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endPosition")(endPosition)
+    __obj.updateDynamic("startPosition")(startPosition)
+    __obj.asInstanceOf[IDisabledInterval]
+  }
+}
+

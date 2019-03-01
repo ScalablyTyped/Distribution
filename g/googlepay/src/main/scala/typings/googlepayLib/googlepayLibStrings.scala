@@ -7,82 +7,107 @@ import scala.scalajs.js.annotation._
 
 object googlepayLibStrings {
   @js.native
-  sealed trait AMEX extends js.Object
+  sealed trait AMEX
+    extends googlepayLib.googleNs.paymentsNs.apiNs.AllowedCardNetwork
   
   @js.native
-  sealed trait BUYER_ACCOUNT_ERROR extends js.Object
+  sealed trait BUYER_ACCOUNT_ERROR
+    extends googlepayLib.googleNs.paymentsNs.apiNs.ErrorStatusCode
   
   @js.native
-  sealed trait CANCELED extends js.Object
+  sealed trait CANCELED
+    extends googlepayLib.googleNs.paymentsNs.apiNs.ErrorStatusCode
   
   @js.native
   sealed trait CARD extends js.Object
   
   @js.native
-  sealed trait CRYPTOGRAM_3DS extends js.Object
+  sealed trait CRYPTOGRAM_3DS
+    extends googlepayLib.googleNs.paymentsNs.apiNs.AllowedAuthMethod
   
   @js.native
-  sealed trait DEVELOPER_ERROR extends js.Object
+  sealed trait DEVELOPER_ERROR
+    extends googlepayLib.googleNs.paymentsNs.apiNs.ErrorStatusCode
   
   @js.native
-  sealed trait DIRECT extends js.Object
+  sealed trait DIRECT
+    extends googlepayLib.googleNs.paymentsNs.apiNs.TokenizationType
   
   @js.native
-  sealed trait DISCOVER extends js.Object
+  sealed trait DISCOVER
+    extends googlepayLib.googleNs.paymentsNs.apiNs.AllowedCardNetwork
   
   @js.native
-  sealed trait ESTIMATED extends js.Object
+  sealed trait ESTIMATED
+    extends googlepayLib.googleNs.paymentsNs.apiNs.TotalPriceStatus
   
   @js.native
-  sealed trait FINAL extends js.Object
+  sealed trait FINAL
+    extends googlepayLib.googleNs.paymentsNs.apiNs.TotalPriceStatus
   
   @js.native
-  sealed trait FULL extends js.Object
+  sealed trait FULL
+    extends googlepayLib.googleNs.paymentsNs.apiNs.BillingAddressFormat
   
   @js.native
-  sealed trait INTERNAL_ERROR extends js.Object
+  sealed trait INTERNAL_ERROR
+    extends googlepayLib.googleNs.paymentsNs.apiNs.ErrorStatusCode
   
   @js.native
-  sealed trait JCB extends js.Object
+  sealed trait JCB
+    extends googlepayLib.googleNs.paymentsNs.apiNs.AllowedCardNetwork
   
   @js.native
-  sealed trait MASTERCARD extends js.Object
+  sealed trait MASTERCARD
+    extends googlepayLib.googleNs.paymentsNs.apiNs.AllowedCardNetwork
   
   @js.native
-  sealed trait MIN extends js.Object
+  sealed trait MIN
+    extends googlepayLib.googleNs.paymentsNs.apiNs.BillingAddressFormat
   
   @js.native
-  sealed trait NOT_CURRENTLY_KNOWN extends js.Object
+  sealed trait NOT_CURRENTLY_KNOWN
+    extends googlepayLib.googleNs.paymentsNs.apiNs.TotalPriceStatus
   
   @js.native
-  sealed trait PAN_ONLY extends js.Object
+  sealed trait PAN_ONLY
+    extends googlepayLib.googleNs.paymentsNs.apiNs.AllowedAuthMethod
   
   @js.native
-  sealed trait PAYMENT_GATEWAY extends js.Object
+  sealed trait PAYMENT_GATEWAY
+    extends googlepayLib.googleNs.paymentsNs.apiNs.TokenizationType
   
   @js.native
-  sealed trait PRODUCTION extends js.Object
+  sealed trait PRODUCTION
+    extends googlepayLib.googleNs.paymentsNs.apiNs.EnvironmentType
   
   @js.native
-  sealed trait TEST extends js.Object
+  sealed trait TEST
+    extends googlepayLib.googleNs.paymentsNs.apiNs.EnvironmentType
   
   @js.native
-  sealed trait VISA extends js.Object
+  sealed trait VISA
+    extends googlepayLib.googleNs.paymentsNs.apiNs.AllowedCardNetwork
   
   @js.native
-  sealed trait black extends js.Object
+  sealed trait black
+    extends googlepayLib.googleNs.paymentsNs.apiNs.ButtonColor
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends googlepayLib.googleNs.paymentsNs.apiNs.ButtonColor
   
   @js.native
-  sealed trait long extends js.Object
+  sealed trait long
+    extends googlepayLib.googleNs.paymentsNs.apiNs.ButtonType
   
   @js.native
-  sealed trait short extends js.Object
+  sealed trait short
+    extends googlepayLib.googleNs.paymentsNs.apiNs.ButtonType
   
   @js.native
-  sealed trait white extends js.Object
+  sealed trait white
+    extends googlepayLib.googleNs.paymentsNs.apiNs.ButtonColor
   
   @scala.inline
   def AMEX: AMEX = "AMEX".asInstanceOf[AMEX]

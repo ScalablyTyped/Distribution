@@ -10,3 +10,13 @@ trait Anon_Html extends js.Object {
   var self: java.lang.String
 }
 
+object Anon_Html {
+  @scala.inline
+  def apply(html: java.lang.String, self: java.lang.String): Anon_Html = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("html")(html)
+    __obj.updateDynamic("self")(self)
+    __obj.asInstanceOf[Anon_Html]
+  }
+}
+

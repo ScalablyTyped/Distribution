@@ -32,3 +32,24 @@ trait ReplicaGlobalSecondaryIndexSettingsDescription extends js.Object {
   var ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
 }
 
+object ReplicaGlobalSecondaryIndexSettingsDescription {
+  @scala.inline
+  def apply(
+    IndexName: IndexName,
+    IndexStatus: IndexStatus = null,
+    ProvisionedReadCapacityAutoScalingSettings: AutoScalingSettingsDescription = null,
+    ProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined,
+    ProvisionedWriteCapacityAutoScalingSettings: AutoScalingSettingsDescription = null,
+    ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  ): ReplicaGlobalSecondaryIndexSettingsDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IndexName")(IndexName)
+    if (IndexStatus != null) __obj.updateDynamic("IndexStatus")(IndexStatus.asInstanceOf[js.Any])
+    if (ProvisionedReadCapacityAutoScalingSettings != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingSettings")(ProvisionedReadCapacityAutoScalingSettings)
+    if (!js.isUndefined(ProvisionedReadCapacityUnits)) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits)
+    if (ProvisionedWriteCapacityAutoScalingSettings != null) __obj.updateDynamic("ProvisionedWriteCapacityAutoScalingSettings")(ProvisionedWriteCapacityAutoScalingSettings)
+    if (!js.isUndefined(ProvisionedWriteCapacityUnits)) __obj.updateDynamic("ProvisionedWriteCapacityUnits")(ProvisionedWriteCapacityUnits)
+    __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsDescription]
+  }
+}
+

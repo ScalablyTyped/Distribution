@@ -11,3 +11,20 @@ trait CLSContext
   def setContext(ctx: zipkinLib.zipkinMod.TraceId): scala.Unit
 }
 
+object CLSContext {
+  @scala.inline
+  def apply(
+    getContext: js.Function0[zipkinLib.zipkinMod.TraceId],
+    letContext: js.Function2[zipkinLib.zipkinMod.TraceId, js.Function0[js.Any], js.Any],
+    scoped: js.Function1[js.Function0[js.Any], js.Any],
+    setContext: js.Function1[zipkinLib.zipkinMod.TraceId, scala.Unit]
+  ): CLSContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getContext")(getContext)
+    __obj.updateDynamic("letContext")(letContext)
+    __obj.updateDynamic("scoped")(scoped)
+    __obj.updateDynamic("setContext")(setContext)
+    __obj.asInstanceOf[CLSContext]
+  }
+}
+

@@ -89,3 +89,42 @@ trait DirectGenerator extends Generator {
   def toJSON(): js.Any
 }
 
+object DirectGenerator {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    accuracy: js.Function1[scala.Double, DirectGenerator],
+    field: js.Function1[java.lang.String, DirectGenerator],
+    maxEdits: js.Function1[scala.Double, DirectGenerator],
+    maxInspections: js.Function1[scala.Double, DirectGenerator],
+    maxTermFreq: js.Function1[scala.Double, DirectGenerator],
+    minDocFreq: js.Function1[scala.Double, DirectGenerator],
+    minWordLen: js.Function1[scala.Double, DirectGenerator],
+    postFilter: js.Function1[java.lang.String, DirectGenerator],
+    preFilter: js.Function1[java.lang.String, DirectGenerator],
+    size: js.Function1[scala.Double, DirectGenerator],
+    sort: js.Function1[java.lang.String, DirectGenerator],
+    stringDistance: js.Function1[java.lang.String, DirectGenerator],
+    suggestMode: js.Function1[java.lang.String, DirectGenerator],
+    toJSON: js.Function0[js.Any]
+  ): DirectGenerator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("accuracy")(accuracy)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("maxEdits")(maxEdits)
+    __obj.updateDynamic("maxInspections")(maxInspections)
+    __obj.updateDynamic("maxTermFreq")(maxTermFreq)
+    __obj.updateDynamic("minDocFreq")(minDocFreq)
+    __obj.updateDynamic("minWordLen")(minWordLen)
+    __obj.updateDynamic("postFilter")(postFilter)
+    __obj.updateDynamic("preFilter")(preFilter)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("sort")(sort)
+    __obj.updateDynamic("stringDistance")(stringDistance)
+    __obj.updateDynamic("suggestMode")(suggestMode)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[DirectGenerator]
+  }
+}
+

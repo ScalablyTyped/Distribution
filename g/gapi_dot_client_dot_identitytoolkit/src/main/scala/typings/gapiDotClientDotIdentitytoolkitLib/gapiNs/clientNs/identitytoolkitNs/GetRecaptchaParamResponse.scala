@@ -14,3 +14,18 @@ trait GetRecaptchaParamResponse extends js.Object {
   var recaptchaStoken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetRecaptchaParamResponse {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    recaptchaSiteKey: java.lang.String = null,
+    recaptchaStoken: java.lang.String = null
+  ): GetRecaptchaParamResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (recaptchaSiteKey != null) __obj.updateDynamic("recaptchaSiteKey")(recaptchaSiteKey)
+    if (recaptchaStoken != null) __obj.updateDynamic("recaptchaStoken")(recaptchaStoken)
+    __obj.asInstanceOf[GetRecaptchaParamResponse]
+  }
+}
+

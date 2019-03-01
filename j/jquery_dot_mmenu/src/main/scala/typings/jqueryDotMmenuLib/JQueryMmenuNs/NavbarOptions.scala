@@ -24,3 +24,18 @@ trait NavbarOptions extends js.Object {
   var titleLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NavbarOptions {
+  @scala.inline
+  def apply(
+    add: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    titleLink: java.lang.String = null
+  ): NavbarOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleLink != null) __obj.updateDynamic("titleLink")(titleLink)
+    __obj.asInstanceOf[NavbarOptions]
+  }
+}
+

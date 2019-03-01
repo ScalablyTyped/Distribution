@@ -24,3 +24,44 @@ trait FastClickObject extends js.Object {
   def needsFocus(target: js.Any): scala.Boolean
 }
 
+object FastClickObject {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    determineEventType: js.Function1[js.Any, java.lang.String],
+    findControl: js.Function1[js.Any, js.Any],
+    focus: js.Function1[js.Any, scala.Unit],
+    getTargetElementFromEventTarget: js.Function1[stdLib.EventTarget, js.Any],
+    lastTouchIdentifier: scala.Double,
+    layer: stdLib.Element,
+    needsClick: js.Function1[js.Any, scala.Boolean],
+    needsFocus: js.Function1[js.Any, scala.Boolean],
+    tapDelay: scala.Double,
+    targetElement: js.Any,
+    touchBoundary: scala.Double,
+    touchStartX: scala.Double,
+    touchStartY: scala.Double,
+    trackingClick: scala.Boolean,
+    trackingClickStart: scala.Double
+  ): FastClickObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("determineEventType")(determineEventType)
+    __obj.updateDynamic("findControl")(findControl)
+    __obj.updateDynamic("focus")(focus)
+    __obj.updateDynamic("getTargetElementFromEventTarget")(getTargetElementFromEventTarget)
+    __obj.updateDynamic("lastTouchIdentifier")(lastTouchIdentifier)
+    __obj.updateDynamic("layer")(layer)
+    __obj.updateDynamic("needsClick")(needsClick)
+    __obj.updateDynamic("needsFocus")(needsFocus)
+    __obj.updateDynamic("tapDelay")(tapDelay)
+    __obj.updateDynamic("targetElement")(targetElement)
+    __obj.updateDynamic("touchBoundary")(touchBoundary)
+    __obj.updateDynamic("touchStartX")(touchStartX)
+    __obj.updateDynamic("touchStartY")(touchStartY)
+    __obj.updateDynamic("trackingClick")(trackingClick)
+    __obj.updateDynamic("trackingClickStart")(trackingClickStart)
+    __obj.asInstanceOf[FastClickObject]
+  }
+}
+

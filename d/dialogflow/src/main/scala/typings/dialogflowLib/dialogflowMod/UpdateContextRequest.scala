@@ -10,3 +10,13 @@ trait UpdateContextRequest extends js.Object {
   var updatemask: js.UndefOr[js.Any] = js.undefined
 }
 
+object UpdateContextRequest {
+  @scala.inline
+  def apply(context: Context[java.lang.String, _], updatemask: js.Any = null): UpdateContextRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    if (updatemask != null) __obj.updateDynamic("updatemask")(updatemask)
+    __obj.asInstanceOf[UpdateContextRequest]
+  }
+}
+

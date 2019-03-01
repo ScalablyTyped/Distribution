@@ -13,3 +13,22 @@ trait Anon_BodyCommentsGuard extends js.Object {
   var param: js.UndefOr[astDashTypesLib.genKindsMod.PatternKind | scala.Null] = js.undefined
 }
 
+object Anon_BodyCommentsGuard {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    guard: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    param: astDashTypesLib.genKindsMod.PatternKind = null
+  ): Anon_BodyCommentsGuard = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (guard != null) __obj.updateDynamic("guard")(guard)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (param != null) __obj.updateDynamic("param")(param)
+    __obj.asInstanceOf[Anon_BodyCommentsGuard]
+  }
+}
+

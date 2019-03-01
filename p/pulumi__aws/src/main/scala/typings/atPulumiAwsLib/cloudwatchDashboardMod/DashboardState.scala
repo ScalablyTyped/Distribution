@@ -20,3 +20,18 @@ trait DashboardState extends js.Object {
   val dashboardName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object DashboardState {
+  @scala.inline
+  def apply(
+    dashboardArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dashboardBody: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dashboardName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): DashboardState = {
+    val __obj = js.Dynamic.literal()
+    if (dashboardArn != null) __obj.updateDynamic("dashboardArn")(dashboardArn.asInstanceOf[js.Any])
+    if (dashboardBody != null) __obj.updateDynamic("dashboardBody")(dashboardBody.asInstanceOf[js.Any])
+    if (dashboardName != null) __obj.updateDynamic("dashboardName")(dashboardName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DashboardState]
+  }
+}
+

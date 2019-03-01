@@ -23,3 +23,22 @@ trait ValueCellHyperlinkClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ValueCellHyperlinkClickEventArgs {
+  @scala.inline
+  def apply(
+    args: js.Any = null,
+    customerObject: js.Any = null,
+    element: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): ValueCellHyperlinkClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (customerObject != null) __obj.updateDynamic("customerObject")(customerObject)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ValueCellHyperlinkClickEventArgs]
+  }
+}
+

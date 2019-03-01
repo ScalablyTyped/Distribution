@@ -20,3 +20,36 @@ trait IDateLocaleProvider extends js.Object {
   def weekNumberFormatter(weekNumber: scala.Double): java.lang.String
 }
 
+object IDateLocaleProvider {
+  @scala.inline
+  def apply(
+    dates: js.Array[java.lang.String],
+    days: js.Array[java.lang.String],
+    firstDayOfWeek: scala.Double,
+    formatDate: js.Function1[stdLib.Date, java.lang.String],
+    monthHeaderFormatter: js.Function1[stdLib.Date, java.lang.String],
+    months: js.Array[java.lang.String],
+    msgCalendar: java.lang.String,
+    msgOpenCalendar: java.lang.String,
+    parseDate: js.Function1[java.lang.String, stdLib.Date],
+    shortDays: js.Array[java.lang.String],
+    shortMonths: js.Array[java.lang.String],
+    weekNumberFormatter: js.Function1[scala.Double, java.lang.String]
+  ): IDateLocaleProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dates")(dates)
+    __obj.updateDynamic("days")(days)
+    __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
+    __obj.updateDynamic("formatDate")(formatDate)
+    __obj.updateDynamic("monthHeaderFormatter")(monthHeaderFormatter)
+    __obj.updateDynamic("months")(months)
+    __obj.updateDynamic("msgCalendar")(msgCalendar)
+    __obj.updateDynamic("msgOpenCalendar")(msgOpenCalendar)
+    __obj.updateDynamic("parseDate")(parseDate)
+    __obj.updateDynamic("shortDays")(shortDays)
+    __obj.updateDynamic("shortMonths")(shortMonths)
+    __obj.updateDynamic("weekNumberFormatter")(weekNumberFormatter)
+    __obj.asInstanceOf[IDateLocaleProvider]
+  }
+}
+

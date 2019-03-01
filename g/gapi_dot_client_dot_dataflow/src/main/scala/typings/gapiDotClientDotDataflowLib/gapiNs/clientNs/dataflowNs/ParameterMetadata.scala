@@ -18,3 +18,22 @@ trait ParameterMetadata extends js.Object {
   var regexes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ParameterMetadata {
+  @scala.inline
+  def apply(
+    helpText: java.lang.String = null,
+    isOptional: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    name: java.lang.String = null,
+    regexes: js.Array[java.lang.String] = null
+  ): ParameterMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (helpText != null) __obj.updateDynamic("helpText")(helpText)
+    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (regexes != null) __obj.updateDynamic("regexes")(regexes)
+    __obj.asInstanceOf[ParameterMetadata]
+  }
+}
+

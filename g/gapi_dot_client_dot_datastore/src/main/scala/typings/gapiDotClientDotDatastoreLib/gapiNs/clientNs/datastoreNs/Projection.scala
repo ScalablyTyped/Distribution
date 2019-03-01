@@ -10,3 +10,12 @@ trait Projection extends js.Object {
   var property: js.UndefOr[PropertyReference] = js.undefined
 }
 
+object Projection {
+  @scala.inline
+  def apply(property: PropertyReference = null): Projection = {
+    val __obj = js.Dynamic.literal()
+    if (property != null) __obj.updateDynamic("property")(property)
+    __obj.asInstanceOf[Projection]
+  }
+}
+

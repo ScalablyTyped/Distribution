@@ -32,7 +32,6 @@ package object yargsNs {
     /* output */ java.lang.String, 
     scala.Unit
   ]
-  type PositionalOptionsType = yargsLib.yargsLibStrings.boolean | yargsLib.yargsLibStrings.number | yargsLib.yargsLibStrings.string
   type RequiredOptionType[O /* <: Options | PositionalOptions */] = js.Any | java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double]) | js.Array[java.lang.String] | js.Array[scala.Double]
   type SyncCompletionFunction = js.Function2[/* current */ java.lang.String, /* argv */ js.Any, js.Array[java.lang.String]]
   /** Convert T to T[] and T | undefined to T[] | undefined */

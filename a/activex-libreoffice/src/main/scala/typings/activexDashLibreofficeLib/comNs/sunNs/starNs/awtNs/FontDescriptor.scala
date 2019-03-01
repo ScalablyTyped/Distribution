@@ -91,3 +91,44 @@ trait FontDescriptor extends js.Object {
   var WordLineMode: scala.Boolean
 }
 
+object FontDescriptor {
+  @scala.inline
+  def apply(
+    CharSet: scala.Double,
+    CharacterWidth: scala.Double,
+    Family: scala.Double,
+    Height: scala.Double,
+    Kerning: scala.Boolean,
+    Name: java.lang.String,
+    Orientation: scala.Double,
+    Pitch: scala.Double,
+    Slant: FontSlant,
+    Strikeout: scala.Double,
+    StyleName: java.lang.String,
+    Type: scala.Double,
+    Underline: scala.Double,
+    Weight: scala.Double,
+    Width: scala.Double,
+    WordLineMode: scala.Boolean
+  ): FontDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CharSet")(CharSet)
+    __obj.updateDynamic("CharacterWidth")(CharacterWidth)
+    __obj.updateDynamic("Family")(Family)
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("Kerning")(Kerning)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Orientation")(Orientation)
+    __obj.updateDynamic("Pitch")(Pitch)
+    __obj.updateDynamic("Slant")(Slant)
+    __obj.updateDynamic("Strikeout")(Strikeout)
+    __obj.updateDynamic("StyleName")(StyleName)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("Underline")(Underline)
+    __obj.updateDynamic("Weight")(Weight)
+    __obj.updateDynamic("Width")(Width)
+    __obj.updateDynamic("WordLineMode")(WordLineMode)
+    __obj.asInstanceOf[FontDescriptor]
+  }
+}
+

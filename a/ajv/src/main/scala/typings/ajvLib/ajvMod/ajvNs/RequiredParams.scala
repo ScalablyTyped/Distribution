@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RequiredParams extends js.Object {
+trait RequiredParams extends ErrorParameters {
   var missingProperty: java.lang.String
+}
+
+object RequiredParams {
+  @scala.inline
+  def apply(missingProperty: java.lang.String): RequiredParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("missingProperty")(missingProperty)
+    __obj.asInstanceOf[RequiredParams]
+  }
 }
 

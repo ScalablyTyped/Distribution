@@ -20,3 +20,14 @@ trait ArtifactContent extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ArtifactContent {
+  @scala.inline
+  def apply(binary: java.lang.String = null, properties: PropertyBag = null, text: java.lang.String = null): ArtifactContent = {
+    val __obj = js.Dynamic.literal()
+    if (binary != null) __obj.updateDynamic("binary")(binary)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ArtifactContent]
+  }
+}
+

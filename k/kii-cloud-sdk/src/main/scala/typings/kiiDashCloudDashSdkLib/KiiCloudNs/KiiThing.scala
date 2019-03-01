@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("KiiCloud.KiiThing")
 @js.native
-class KiiThing () extends js.Object {
+class KiiThing () extends KiiACLSubject {
   /**
     * of this thing.
     * For details refer to {@link KiiThing.register}

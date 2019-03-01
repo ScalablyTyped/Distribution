@@ -10,3 +10,12 @@ trait LinePropertiesLineFill extends js.Object {
   var kind: googleDashAppsDashScriptLib.Anon_SolidfillSolidFill
 }
 
+object LinePropertiesLineFill {
+  @scala.inline
+  def apply(kind: googleDashAppsDashScriptLib.Anon_SolidfillSolidFill): LinePropertiesLineFill = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[LinePropertiesLineFill]
+  }
+}
+

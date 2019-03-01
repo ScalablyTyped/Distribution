@@ -12,3 +12,13 @@ trait StreamingSideInputLocation extends js.Object {
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StreamingSideInputLocation {
+  @scala.inline
+  def apply(stateFamily: java.lang.String = null, tag: java.lang.String = null): StreamingSideInputLocation = {
+    val __obj = js.Dynamic.literal()
+    if (stateFamily != null) __obj.updateDynamic("stateFamily")(stateFamily)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[StreamingSideInputLocation]
+  }
+}
+

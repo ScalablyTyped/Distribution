@@ -67,3 +67,37 @@ trait StockEvent extends js.Object {
   var urlTarget: java.lang.String
 }
 
+object StockEvent {
+  @scala.inline
+  def apply(
+    backgroundAlpha: scala.Double,
+    backgroundColor: java.lang.String,
+    borderAlpha: scala.Double,
+    borderColor: java.lang.String,
+    color: java.lang.String,
+    date: stdLib.Date,
+    graph: amchartsLib.stockgraphMod.default,
+    rollOverColor: java.lang.String,
+    showOnAxis: scala.Boolean,
+    text: java.lang.String,
+    `type`: java.lang.String,
+    url: java.lang.String,
+    urlTarget: java.lang.String
+  ): StockEvent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("backgroundAlpha")(backgroundAlpha)
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("borderAlpha")(borderAlpha)
+    __obj.updateDynamic("borderColor")(borderColor)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("graph")(graph)
+    __obj.updateDynamic("rollOverColor")(rollOverColor)
+    __obj.updateDynamic("showOnAxis")(showOnAxis)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("urlTarget")(urlTarget)
+    __obj.asInstanceOf[StockEvent]
+  }
+}
+

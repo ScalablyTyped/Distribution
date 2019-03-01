@@ -15,7 +15,7 @@ class Tree[A] protected () extends js.Object {
   val value: A = js.native
   def ap[B](fab: Tree[js.Function1[/* a */ A, B]]): Tree[B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     * @since 1.6.0
     */
   def `ap_`[B, C](`this`: Tree[js.Function1[/* b */ B, C]], fb: Tree[B]): Tree[C] = js.native

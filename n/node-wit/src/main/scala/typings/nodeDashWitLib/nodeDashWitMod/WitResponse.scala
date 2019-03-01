@@ -10,3 +10,13 @@ trait WitResponse extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WitResponse {
+  @scala.inline
+  def apply(quickReplies: js.Any = null, text: java.lang.String = null): WitResponse = {
+    val __obj = js.Dynamic.literal()
+    if (quickReplies != null) __obj.updateDynamic("quickReplies")(quickReplies)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[WitResponse]
+  }
+}
+

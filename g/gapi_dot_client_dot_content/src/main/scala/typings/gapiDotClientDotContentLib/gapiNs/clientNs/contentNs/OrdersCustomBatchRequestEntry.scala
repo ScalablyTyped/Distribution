@@ -32,3 +32,36 @@ trait OrdersCustomBatchRequestEntry extends js.Object {
   var updateShipment: js.UndefOr[OrdersCustomBatchRequestEntryUpdateShipment] = js.undefined
 }
 
+object OrdersCustomBatchRequestEntry {
+  @scala.inline
+  def apply(
+    batchId: scala.Int | scala.Double = null,
+    cancel: OrdersCustomBatchRequestEntryCancel = null,
+    cancelLineItem: OrdersCustomBatchRequestEntryCancelLineItem = null,
+    merchantId: java.lang.String = null,
+    merchantOrderId: java.lang.String = null,
+    method: java.lang.String = null,
+    operationId: java.lang.String = null,
+    orderId: java.lang.String = null,
+    refund: OrdersCustomBatchRequestEntryRefund = null,
+    returnLineItem: OrdersCustomBatchRequestEntryReturnLineItem = null,
+    shipLineItems: OrdersCustomBatchRequestEntryShipLineItems = null,
+    updateShipment: OrdersCustomBatchRequestEntryUpdateShipment = null
+  ): OrdersCustomBatchRequestEntry = {
+    val __obj = js.Dynamic.literal()
+    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (cancelLineItem != null) __obj.updateDynamic("cancelLineItem")(cancelLineItem)
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
+    if (merchantOrderId != null) __obj.updateDynamic("merchantOrderId")(merchantOrderId)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (orderId != null) __obj.updateDynamic("orderId")(orderId)
+    if (refund != null) __obj.updateDynamic("refund")(refund)
+    if (returnLineItem != null) __obj.updateDynamic("returnLineItem")(returnLineItem)
+    if (shipLineItems != null) __obj.updateDynamic("shipLineItems")(shipLineItems)
+    if (updateShipment != null) __obj.updateDynamic("updateShipment")(updateShipment)
+    __obj.asInstanceOf[OrdersCustomBatchRequestEntry]
+  }
+}
+

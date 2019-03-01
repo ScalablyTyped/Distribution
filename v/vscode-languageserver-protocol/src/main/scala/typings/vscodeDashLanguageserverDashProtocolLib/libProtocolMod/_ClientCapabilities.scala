@@ -20,3 +20,18 @@ trait _ClientCapabilities extends js.Object {
   var workspace: js.UndefOr[WorkspaceClientCapabilities] = js.undefined
 }
 
+object _ClientCapabilities {
+  @scala.inline
+  def apply(
+    experimental: js.Any = null,
+    textDocument: TextDocumentClientCapabilities = null,
+    workspace: WorkspaceClientCapabilities = null
+  ): _ClientCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (experimental != null) __obj.updateDynamic("experimental")(experimental)
+    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument)
+    if (workspace != null) __obj.updateDynamic("workspace")(workspace)
+    __obj.asInstanceOf[_ClientCapabilities]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_NodeId
   var nodeId: js.Any
 }
 
+object Anon_NodeId {
+  @scala.inline
+  def apply(
+    nodeId: js.Any,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_NodeId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nodeId")(nodeId)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_NodeId]
+  }
+}
+

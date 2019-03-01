@@ -11,3 +11,18 @@ trait MapLayerDefaultsShape extends js.Object {
   var style: js.UndefOr[MapLayerDefaultsShapeStyle] = js.undefined
 }
 
+object MapLayerDefaultsShape {
+  @scala.inline
+  def apply(
+    attribution: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    style: MapLayerDefaultsShapeStyle = null
+  ): MapLayerDefaultsShape = {
+    val __obj = js.Dynamic.literal()
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[MapLayerDefaultsShape]
+  }
+}
+

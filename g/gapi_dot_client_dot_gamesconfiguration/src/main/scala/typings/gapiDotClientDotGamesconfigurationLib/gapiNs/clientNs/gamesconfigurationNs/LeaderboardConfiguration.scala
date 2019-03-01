@@ -29,3 +29,28 @@ trait LeaderboardConfiguration extends js.Object {
   var token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LeaderboardConfiguration {
+  @scala.inline
+  def apply(
+    draft: LeaderboardConfigurationDetail = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    published: LeaderboardConfigurationDetail = null,
+    scoreMax: java.lang.String = null,
+    scoreMin: java.lang.String = null,
+    scoreOrder: java.lang.String = null,
+    token: java.lang.String = null
+  ): LeaderboardConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (draft != null) __obj.updateDynamic("draft")(draft)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (published != null) __obj.updateDynamic("published")(published)
+    if (scoreMax != null) __obj.updateDynamic("scoreMax")(scoreMax)
+    if (scoreMin != null) __obj.updateDynamic("scoreMin")(scoreMin)
+    if (scoreOrder != null) __obj.updateDynamic("scoreOrder")(scoreOrder)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[LeaderboardConfiguration]
+  }
+}
+

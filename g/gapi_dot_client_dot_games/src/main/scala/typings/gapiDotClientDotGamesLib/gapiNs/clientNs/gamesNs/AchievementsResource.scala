@@ -23,3 +23,42 @@ trait AchievementsResource extends js.Object {
   def updateMultiple(request: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields): gapiDotClientLib.gapiNs.clientNs.Request[AchievementUpdateMultipleResponse]
 }
 
+object AchievementsResource {
+  @scala.inline
+  def apply(
+    increment: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AchievementId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AchievementIncrementResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyToken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlayerAchievementListResponse]
+    ],
+    reveal: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AchievementIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AchievementRevealResponse]
+    ],
+    setStepsAtLeast: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AchievementIdAltConsistencyToken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AchievementSetStepsAtLeastResponse]
+    ],
+    unlock: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AchievementIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AchievementUnlockResponse]
+    ],
+    updateMultiple: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AchievementUpdateMultipleResponse]
+    ]
+  ): AchievementsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("increment")(increment)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("reveal")(reveal)
+    __obj.updateDynamic("setStepsAtLeast")(setStepsAtLeast)
+    __obj.updateDynamic("unlock")(unlock)
+    __obj.updateDynamic("updateMultiple")(updateMultiple)
+    __obj.asInstanceOf[AchievementsResource]
+  }
+}
+

@@ -18,3 +18,16 @@ trait ApplyWorkspaceEditParams extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApplyWorkspaceEditParams {
+  @scala.inline
+  def apply(
+    edit: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit,
+    label: java.lang.String = null
+  ): ApplyWorkspaceEditParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("edit")(edit)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[ApplyWorkspaceEditParams]
+  }
+}
+

@@ -10,3 +10,12 @@ trait SourceGetMetadataResponse extends js.Object {
   var metadata: js.UndefOr[SourceMetadata] = js.undefined
 }
 
+object SourceGetMetadataResponse {
+  @scala.inline
+  def apply(metadata: SourceMetadata = null): SourceGetMetadataResponse = {
+    val __obj = js.Dynamic.literal()
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[SourceGetMetadataResponse]
+  }
+}
+

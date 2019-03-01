@@ -11,3 +11,14 @@ trait Anon_BottomCenter extends js.Object {
   ] = js.undefined
 }
 
+object Anon_BottomCenter {
+  @scala.inline
+  def apply(
+    verticalAlign: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.top | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.bottom | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.center = null
+  ): Anon_BottomCenter = {
+    val __obj = js.Dynamic.literal()
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BottomCenter]
+  }
+}
+

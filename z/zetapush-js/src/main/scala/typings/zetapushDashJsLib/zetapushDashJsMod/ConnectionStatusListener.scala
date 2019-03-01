@@ -18,3 +18,32 @@ trait ConnectionStatusListener extends js.Object {
   def onSuccessfulHandshake(authentication: js.Any): scala.Unit
 }
 
+object ConnectionStatusListener {
+  @scala.inline
+  def apply(
+    onConnectionBroken: js.Function0[scala.Unit],
+    onConnectionClosed: js.Function0[scala.Unit],
+    onConnectionEstablished: js.Function0[scala.Unit],
+    onConnectionToServerFail: js.Function1[js.Any, scala.Unit],
+    onConnectionWillClose: js.Function0[scala.Unit],
+    onFailedHandshake: js.Function1[js.Any, scala.Unit],
+    onMessageLost: js.Function0[scala.Unit],
+    onNegotiationFailed: js.Function1[js.Any, scala.Unit],
+    onNoServerUrlAvailable: js.Function0[scala.Unit],
+    onSuccessfulHandshake: js.Function1[js.Any, scala.Unit]
+  ): ConnectionStatusListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onConnectionBroken")(onConnectionBroken)
+    __obj.updateDynamic("onConnectionClosed")(onConnectionClosed)
+    __obj.updateDynamic("onConnectionEstablished")(onConnectionEstablished)
+    __obj.updateDynamic("onConnectionToServerFail")(onConnectionToServerFail)
+    __obj.updateDynamic("onConnectionWillClose")(onConnectionWillClose)
+    __obj.updateDynamic("onFailedHandshake")(onFailedHandshake)
+    __obj.updateDynamic("onMessageLost")(onMessageLost)
+    __obj.updateDynamic("onNegotiationFailed")(onNegotiationFailed)
+    __obj.updateDynamic("onNoServerUrlAvailable")(onNoServerUrlAvailable)
+    __obj.updateDynamic("onSuccessfulHandshake")(onSuccessfulHandshake)
+    __obj.asInstanceOf[ConnectionStatusListener]
+  }
+}
+

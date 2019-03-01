@@ -93,3 +93,36 @@ trait RangeViewData extends js.Object {
   var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
 }
 
+object RangeViewData {
+  @scala.inline
+  def apply(
+    cellAddresses: js.Array[js.Array[_]] = null,
+    columnCount: scala.Int | scala.Double = null,
+    formulas: js.Array[js.Array[_]] = null,
+    formulasLocal: js.Array[js.Array[_]] = null,
+    formulasR1C1: js.Array[js.Array[_]] = null,
+    index: scala.Int | scala.Double = null,
+    numberFormat: js.Array[js.Array[_]] = null,
+    rowCount: scala.Int | scala.Double = null,
+    rows: js.Array[RangeViewData] = null,
+    text: js.Array[js.Array[java.lang.String]] = null,
+    valueTypes: js.Array[js.Array[officeDashJsLib.ExcelNs.RangeValueType]] = null,
+    values: js.Array[js.Array[_]] = null
+  ): RangeViewData = {
+    val __obj = js.Dynamic.literal()
+    if (cellAddresses != null) __obj.updateDynamic("cellAddresses")(cellAddresses)
+    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (formulas != null) __obj.updateDynamic("formulas")(formulas)
+    if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal)
+    if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (valueTypes != null) __obj.updateDynamic("valueTypes")(valueTypes)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[RangeViewData]
+  }
+}
+

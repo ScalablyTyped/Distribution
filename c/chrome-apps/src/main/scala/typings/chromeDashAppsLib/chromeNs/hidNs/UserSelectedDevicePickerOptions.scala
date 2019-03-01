@@ -17,3 +17,13 @@ trait UserSelectedDevicePickerOptions extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UserSelectedDevicePickerOptions {
+  @scala.inline
+  def apply(filters: js.Array[DeviceFilter] = null, multiple: js.UndefOr[scala.Boolean] = js.undefined): UserSelectedDevicePickerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    __obj.asInstanceOf[UserSelectedDevicePickerOptions]
+  }
+}
+

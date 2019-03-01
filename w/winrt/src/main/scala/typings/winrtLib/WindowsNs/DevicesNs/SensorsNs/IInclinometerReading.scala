@@ -12,3 +12,20 @@ trait IInclinometerReading extends js.Object {
   var yawDegrees: scala.Double
 }
 
+object IInclinometerReading {
+  @scala.inline
+  def apply(
+    pitchDegrees: scala.Double,
+    rollDegrees: scala.Double,
+    timestamp: stdLib.Date,
+    yawDegrees: scala.Double
+  ): IInclinometerReading = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pitchDegrees")(pitchDegrees)
+    __obj.updateDynamic("rollDegrees")(rollDegrees)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.updateDynamic("yawDegrees")(yawDegrees)
+    __obj.asInstanceOf[IInclinometerReading]
+  }
+}
+

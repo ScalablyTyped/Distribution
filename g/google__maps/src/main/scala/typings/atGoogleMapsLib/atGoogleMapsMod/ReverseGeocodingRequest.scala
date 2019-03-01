@@ -47,3 +47,22 @@ trait ReverseGeocodingRequest extends js.Object {
   var result_type: js.UndefOr[AddressType] = js.undefined
 }
 
+object ReverseGeocodingRequest {
+  @scala.inline
+  def apply(
+    language: Language = null,
+    latlng: LatLng = null,
+    location_type: ReverseGeocodingLocationType = null,
+    place_id: java.lang.String = null,
+    result_type: AddressType = null
+  ): ReverseGeocodingRequest = {
+    val __obj = js.Dynamic.literal()
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (latlng != null) __obj.updateDynamic("latlng")(latlng.asInstanceOf[js.Any])
+    if (location_type != null) __obj.updateDynamic("location_type")(location_type)
+    if (place_id != null) __obj.updateDynamic("place_id")(place_id)
+    if (result_type != null) __obj.updateDynamic("result_type")(result_type)
+    __obj.asInstanceOf[ReverseGeocodingRequest]
+  }
+}
+

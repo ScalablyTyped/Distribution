@@ -35,3 +35,20 @@ trait RulesetInfo extends js.Object {
   var rulesetIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object RulesetInfo {
+  @scala.inline
+  def apply(
+    authority: java.lang.String = null,
+    maxLocationChange: scala.Int | scala.Double = null,
+    maxPollingSecs: scala.Int | scala.Double = null,
+    rulesetIds: js.Array[java.lang.String] = null
+  ): RulesetInfo = {
+    val __obj = js.Dynamic.literal()
+    if (authority != null) __obj.updateDynamic("authority")(authority)
+    if (maxLocationChange != null) __obj.updateDynamic("maxLocationChange")(maxLocationChange.asInstanceOf[js.Any])
+    if (maxPollingSecs != null) __obj.updateDynamic("maxPollingSecs")(maxPollingSecs.asInstanceOf[js.Any])
+    if (rulesetIds != null) __obj.updateDynamic("rulesetIds")(rulesetIds)
+    __obj.asInstanceOf[RulesetInfo]
+  }
+}
+

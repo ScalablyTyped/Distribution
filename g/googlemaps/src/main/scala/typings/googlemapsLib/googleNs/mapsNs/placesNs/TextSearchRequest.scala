@@ -18,3 +18,24 @@ trait TextSearchRequest extends js.Object {
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TextSearchRequest {
+  @scala.inline
+  def apply(
+    query: java.lang.String,
+    bounds: googlemapsLib.googleNs.mapsNs.LatLngBounds | googlemapsLib.googleNs.mapsNs.LatLngBoundsLiteral = null,
+    location: googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral = null,
+    radius: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    types: js.Array[java.lang.String] = null
+  ): TextSearchRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[TextSearchRequest]
+  }
+}
+

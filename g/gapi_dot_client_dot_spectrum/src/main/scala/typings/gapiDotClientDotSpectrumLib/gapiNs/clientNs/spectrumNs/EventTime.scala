@@ -12,3 +12,13 @@ trait EventTime extends js.Object {
   var stopTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EventTime {
+  @scala.inline
+  def apply(startTime: java.lang.String = null, stopTime: java.lang.String = null): EventTime = {
+    val __obj = js.Dynamic.literal()
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (stopTime != null) __obj.updateDynamic("stopTime")(stopTime)
+    __obj.asInstanceOf[EventTime]
+  }
+}
+

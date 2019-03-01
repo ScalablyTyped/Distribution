@@ -11,3 +11,18 @@ trait Options extends js.Object {
   var whitelist: js.UndefOr[js.Array[francLib.ISO6393]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    blacklist: js.Array[francLib.ISO6393] = null,
+    minLength: scala.Int | scala.Double = null,
+    whitelist: js.Array[francLib.ISO6393] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    __obj.asInstanceOf[Options]
+  }
+}
+

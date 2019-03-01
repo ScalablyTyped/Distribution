@@ -10,3 +10,16 @@ trait Plugin extends js.Object {
   def test(value: js.Any): scala.Boolean
 }
 
+object Plugin {
+  @scala.inline
+  def apply(
+    print: js.Function5[js.Any, Print, Indent, Options, Colors, java.lang.String],
+    test: js.Function1[js.Any, scala.Boolean]
+  ): Plugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("print")(print)
+    __obj.updateDynamic("test")(test)
+    __obj.asInstanceOf[Plugin]
+  }
+}
+

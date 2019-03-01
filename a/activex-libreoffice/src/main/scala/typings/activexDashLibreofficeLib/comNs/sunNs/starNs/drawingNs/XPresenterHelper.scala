@@ -83,3 +83,55 @@ trait XPresenterHelper extends js.Object {
   def toTop(xWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow): scala.Unit
 }
 
+object XPresenterHelper {
+  @scala.inline
+  def apply(
+    captureMouse: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit],
+    createCanvas: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      scala.Double, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas
+    ],
+    createSharedCanvas: js.Function5[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XSpriteCanvas, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas
+    ],
+    createWindow: js.Function5[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow
+    ],
+    getWindowExtentsRelative: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
+    ],
+    loadBitmap: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XCanvas, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
+    ],
+    releaseMouse: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit],
+    toTop: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, scala.Unit]
+  ): XPresenterHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("captureMouse")(captureMouse)
+    __obj.updateDynamic("createCanvas")(createCanvas)
+    __obj.updateDynamic("createSharedCanvas")(createSharedCanvas)
+    __obj.updateDynamic("createWindow")(createWindow)
+    __obj.updateDynamic("getWindowExtentsRelative")(getWindowExtentsRelative)
+    __obj.updateDynamic("loadBitmap")(loadBitmap)
+    __obj.updateDynamic("releaseMouse")(releaseMouse)
+    __obj.updateDynamic("toTop")(toTop)
+    __obj.asInstanceOf[XPresenterHelper]
+  }
+}
+

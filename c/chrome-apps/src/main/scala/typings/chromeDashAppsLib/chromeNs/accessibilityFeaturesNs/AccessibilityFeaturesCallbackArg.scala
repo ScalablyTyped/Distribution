@@ -20,3 +20,18 @@ trait AccessibilityFeaturesCallbackArg extends js.Object {
   var value: js.Any
 }
 
+object AccessibilityFeaturesCallbackArg {
+  @scala.inline
+  def apply(
+    levelOfControl: LevelOfControl,
+    value: js.Any,
+    incognitoSpecific: js.UndefOr[scala.Boolean] = js.undefined
+  ): AccessibilityFeaturesCallbackArg = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("levelOfControl")(levelOfControl)
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(incognitoSpecific)) __obj.updateDynamic("incognitoSpecific")(incognitoSpecific)
+    __obj.asInstanceOf[AccessibilityFeaturesCallbackArg]
+  }
+}
+

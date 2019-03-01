@@ -10,3 +10,13 @@ trait StreamConfiguration extends js.Object {
   var params: js.UndefOr[bunyanDashConfigLib.Anon_Host] = js.undefined
 }
 
+object StreamConfiguration {
+  @scala.inline
+  def apply(name: java.lang.String, params: bunyanDashConfigLib.Anon_Host = null): StreamConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[StreamConfiguration]
+  }
+}
+

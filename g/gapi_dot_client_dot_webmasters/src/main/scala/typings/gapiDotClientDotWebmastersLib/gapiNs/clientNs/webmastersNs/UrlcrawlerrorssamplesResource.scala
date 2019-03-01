@@ -14,3 +14,27 @@ trait UrlcrawlerrorssamplesResource extends js.Object {
   def markAsFixed(request: gapiDotClientDotWebmastersLib.Anon_AltCategoryFields): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object UrlcrawlerrorssamplesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_AltCategoryFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsSample]
+    ],
+    list: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_AltCategoryFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsSamplesListResponse]
+    ],
+    markAsFixed: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_AltCategoryFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): UrlcrawlerrorssamplesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("markAsFixed")(markAsFixed)
+    __obj.asInstanceOf[UrlcrawlerrorssamplesResource]
+  }
+}
+

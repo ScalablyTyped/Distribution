@@ -29,3 +29,21 @@ trait SpanFirstQuery extends Query {
   def toJSON(): js.Any
 }
 
+object SpanFirstQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, SpanFirstQuery],
+    end: js.Function1[stdLib.Number, SpanFirstQuery],
+    `match`: js.Function1[js.Object, SpanFirstQuery],
+    toJSON: js.Function0[js.Any]
+  ): SpanFirstQuery = {
+    val __obj = js.Dynamic.literal(`match` = `match`)
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[SpanFirstQuery]
+  }
+}
+

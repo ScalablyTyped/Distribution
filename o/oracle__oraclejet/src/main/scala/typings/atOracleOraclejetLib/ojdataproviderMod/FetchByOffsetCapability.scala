@@ -9,3 +9,14 @@ trait FetchByOffsetCapability[D] extends js.Object {
   var implementation: atOracleOraclejetLib.atOracleOraclejetLibStrings.iteration | atOracleOraclejetLib.atOracleOraclejetLibStrings.randomAccess
 }
 
+object FetchByOffsetCapability {
+  @scala.inline
+  def apply[D](
+    implementation: atOracleOraclejetLib.atOracleOraclejetLibStrings.iteration | atOracleOraclejetLib.atOracleOraclejetLibStrings.randomAccess
+  ): FetchByOffsetCapability[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("implementation")(implementation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FetchByOffsetCapability[D]]
+  }
+}
+

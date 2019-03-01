@@ -16,3 +16,12 @@ trait TwitchExtBitsProductCost extends js.Object {
   var `type`: twitchDashExtLib.twitchDashExtLibStrings.bits
 }
 
+object TwitchExtBitsProductCost {
+  @scala.inline
+  def apply(amount: java.lang.String, `type`: twitchDashExtLib.twitchDashExtLibStrings.bits): TwitchExtBitsProductCost = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.asInstanceOf[TwitchExtBitsProductCost]
+  }
+}
+

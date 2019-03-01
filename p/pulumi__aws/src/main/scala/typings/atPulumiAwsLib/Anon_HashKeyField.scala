@@ -17,3 +17,30 @@ trait Anon_HashKeyField extends js.Object {
   var tableName: java.lang.String
 }
 
+object Anon_HashKeyField {
+  @scala.inline
+  def apply(
+    hashKeyField: java.lang.String,
+    hashKeyValue: java.lang.String,
+    roleArn: java.lang.String,
+    tableName: java.lang.String,
+    hashKeyType: java.lang.String = null,
+    payloadField: java.lang.String = null,
+    rangeKeyField: java.lang.String = null,
+    rangeKeyType: java.lang.String = null,
+    rangeKeyValue: java.lang.String = null
+  ): Anon_HashKeyField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hashKeyField")(hashKeyField)
+    __obj.updateDynamic("hashKeyValue")(hashKeyValue)
+    __obj.updateDynamic("roleArn")(roleArn)
+    __obj.updateDynamic("tableName")(tableName)
+    if (hashKeyType != null) __obj.updateDynamic("hashKeyType")(hashKeyType)
+    if (payloadField != null) __obj.updateDynamic("payloadField")(payloadField)
+    if (rangeKeyField != null) __obj.updateDynamic("rangeKeyField")(rangeKeyField)
+    if (rangeKeyType != null) __obj.updateDynamic("rangeKeyType")(rangeKeyType)
+    if (rangeKeyValue != null) __obj.updateDynamic("rangeKeyValue")(rangeKeyValue)
+    __obj.asInstanceOf[Anon_HashKeyField]
+  }
+}
+

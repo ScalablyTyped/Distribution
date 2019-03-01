@@ -10,3 +10,12 @@ trait InsertReplaceValue extends js.Object {
   var value: js.Array[_]
 }
 
+object InsertReplaceValue {
+  @scala.inline
+  def apply(`type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.expr_list, value: js.Array[_]): InsertReplaceValue = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[InsertReplaceValue]
+  }
+}
+

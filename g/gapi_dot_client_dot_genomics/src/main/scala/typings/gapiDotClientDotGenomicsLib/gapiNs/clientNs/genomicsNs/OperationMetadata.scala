@@ -40,3 +40,30 @@ trait OperationMetadata extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OperationMetadata {
+  @scala.inline
+  def apply(
+    clientId: java.lang.String = null,
+    createTime: java.lang.String = null,
+    endTime: java.lang.String = null,
+    events: js.Array[OperationEvent] = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    projectId: java.lang.String = null,
+    request: stdLib.Record[java.lang.String, _] = null,
+    runtimeMetadata: stdLib.Record[java.lang.String, _] = null,
+    startTime: java.lang.String = null
+  ): OperationMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (runtimeMetadata != null) __obj.updateDynamic("runtimeMetadata")(runtimeMetadata)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[OperationMetadata]
+  }
+}
+

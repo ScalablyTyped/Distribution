@@ -20,3 +20,20 @@ trait Fields extends js.Object {
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Fields {
+  @scala.inline
+  def apply(
+    cssClass: java.lang.String = null,
+    date: java.lang.String = null,
+    iconClass: java.lang.String = null,
+    tooltip: java.lang.String = null
+  ): Fields = {
+    val __obj = js.Dynamic.literal()
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[Fields]
+  }
+}
+

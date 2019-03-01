@@ -159,3 +159,56 @@ trait ModalProps extends js.Object {
   var useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ModalProps {
+  @scala.inline
+  def apply(
+    animationDuration: scala.Int | scala.Double = null,
+    backButtonClose: js.UndefOr[scala.Boolean] = js.undefined,
+    backdrop: js.UndefOr[scala.Boolean] = js.undefined,
+    backdropColor: java.lang.String = null,
+    backdropContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    backdropOpacity: scala.Int | scala.Double = null,
+    backdropPressToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    coverScreen: js.UndefOr[scala.Boolean] = js.undefined,
+    entry: reactDashNativeDashModalboxLib.reactDashNativeDashModalboxLibStrings.top | reactDashNativeDashModalboxLib.reactDashNativeDashModalboxLibStrings.bottom | java.lang.String = null,
+    isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboardTopOffset: scala.Int | scala.Double = null,
+    onClosed: js.Function0[scala.Unit] = null,
+    onClosingState: js.Function1[/* state */ scala.Boolean, scala.Unit] = null,
+    onOpened: js.Function0[scala.Unit] = null,
+    position: reactDashNativeDashModalboxLib.reactDashNativeDashModalboxLibStrings.top | reactDashNativeDashModalboxLib.reactDashNativeDashModalboxLibStrings.center | reactDashNativeDashModalboxLib.reactDashNativeDashModalboxLibStrings.bottom | java.lang.String = null,
+    startOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    swipeArea: scala.Int | scala.Double = null,
+    swipeThreshold: scala.Int | scala.Double = null,
+    swipeToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
+  ): ModalProps = {
+    val __obj = js.Dynamic.literal()
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(backButtonClose)) __obj.updateDynamic("backButtonClose")(backButtonClose)
+    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop)
+    if (backdropColor != null) __obj.updateDynamic("backdropColor")(backdropColor)
+    if (backdropContent != null) __obj.updateDynamic("backdropContent")(backdropContent.asInstanceOf[js.Any])
+    if (backdropOpacity != null) __obj.updateDynamic("backdropOpacity")(backdropOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(backdropPressToClose)) __obj.updateDynamic("backdropPressToClose")(backdropPressToClose)
+    if (!js.isUndefined(coverScreen)) __obj.updateDynamic("coverScreen")(coverScreen)
+    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (keyboardTopOffset != null) __obj.updateDynamic("keyboardTopOffset")(keyboardTopOffset.asInstanceOf[js.Any])
+    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
+    if (onClosingState != null) __obj.updateDynamic("onClosingState")(onClosingState)
+    if (onOpened != null) __obj.updateDynamic("onOpened")(onOpened)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOpen)) __obj.updateDynamic("startOpen")(startOpen)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (swipeArea != null) __obj.updateDynamic("swipeArea")(swipeArea.asInstanceOf[js.Any])
+    if (swipeThreshold != null) __obj.updateDynamic("swipeThreshold")(swipeThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipeToClose)) __obj.updateDynamic("swipeToClose")(swipeToClose)
+    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver)
+    __obj.asInstanceOf[ModalProps]
+  }
+}
+

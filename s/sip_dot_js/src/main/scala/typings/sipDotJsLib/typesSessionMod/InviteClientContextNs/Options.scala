@@ -18,3 +18,20 @@ trait Options extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    extraHeaders: js.Array[java.lang.String] = null,
+    inviteWithoutSdp: js.UndefOr[scala.Boolean] = js.undefined,
+    params: sipDotJsLib.Anon_ToDisplayName = null,
+    sessionDescriptionHandlerOptions: sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerOptions = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+    if (!js.isUndefined(inviteWithoutSdp)) __obj.updateDynamic("inviteWithoutSdp")(inviteWithoutSdp)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (sessionDescriptionHandlerOptions != null) __obj.updateDynamic("sessionDescriptionHandlerOptions")(sessionDescriptionHandlerOptions)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -23,3 +23,20 @@ trait Options extends js.Object {
   var preferConst: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    exclude: java.lang.String | js.Array[java.lang.String] = null,
+    include: java.lang.String | js.Array[java.lang.String] = null,
+    indent: java.lang.String = null,
+    preferConst: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (!js.isUndefined(preferConst)) __obj.updateDynamic("preferConst")(preferConst)
+    __obj.asInstanceOf[Options]
+  }
+}
+

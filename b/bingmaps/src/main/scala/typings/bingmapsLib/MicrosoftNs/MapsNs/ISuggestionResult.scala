@@ -29,3 +29,30 @@ trait ISuggestionResult extends js.Object {
   var title: java.lang.String
 }
 
+object ISuggestionResult {
+  @scala.inline
+  def apply(
+    address: IAddress,
+    bestView: LocationRect,
+    entityId: java.lang.String,
+    entitySubType: java.lang.String,
+    entityType: java.lang.String,
+    formattedSuggestion: java.lang.String,
+    location: Location,
+    subtitle: java.lang.String,
+    title: java.lang.String
+  ): ISuggestionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("bestView")(bestView)
+    __obj.updateDynamic("entityId")(entityId)
+    __obj.updateDynamic("entitySubType")(entitySubType)
+    __obj.updateDynamic("entityType")(entityType)
+    __obj.updateDynamic("formattedSuggestion")(formattedSuggestion)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("subtitle")(subtitle)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ISuggestionResult]
+  }
+}
+

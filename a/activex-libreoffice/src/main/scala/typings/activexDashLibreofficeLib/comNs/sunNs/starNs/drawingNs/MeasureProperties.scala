@@ -48,3 +48,48 @@ trait MeasureProperties extends js.Object {
   var MeasureTextVerticalPosition: MeasureTextVertPos
 }
 
+object MeasureProperties {
+  @scala.inline
+  def apply(
+    MeasureBelowReferenceEdge: scala.Boolean,
+    MeasureDecimalPlaces: scala.Double,
+    MeasureHelpLine1Length: scala.Double,
+    MeasureHelpLine2Length: scala.Double,
+    MeasureHelpLineDistance: scala.Double,
+    MeasureHelpLineOverhang: scala.Double,
+    MeasureKind: MeasureKind,
+    MeasureLineDistance: scala.Double,
+    MeasureOverhang: scala.Double,
+    MeasureShowUnit: scala.Boolean,
+    MeasureTextAutoAngle: scala.Boolean,
+    MeasureTextAutoAngleView: scala.Double,
+    MeasureTextFixedAngle: scala.Double,
+    MeasureTextHorizontalPosition: MeasureTextHorzPos,
+    MeasureTextIsFixedAngle: scala.Boolean,
+    MeasureTextRotate90: scala.Boolean,
+    MeasureTextUpsideDown: scala.Boolean,
+    MeasureTextVerticalPosition: MeasureTextVertPos
+  ): MeasureProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MeasureBelowReferenceEdge")(MeasureBelowReferenceEdge)
+    __obj.updateDynamic("MeasureDecimalPlaces")(MeasureDecimalPlaces)
+    __obj.updateDynamic("MeasureHelpLine1Length")(MeasureHelpLine1Length)
+    __obj.updateDynamic("MeasureHelpLine2Length")(MeasureHelpLine2Length)
+    __obj.updateDynamic("MeasureHelpLineDistance")(MeasureHelpLineDistance)
+    __obj.updateDynamic("MeasureHelpLineOverhang")(MeasureHelpLineOverhang)
+    __obj.updateDynamic("MeasureKind")(MeasureKind)
+    __obj.updateDynamic("MeasureLineDistance")(MeasureLineDistance)
+    __obj.updateDynamic("MeasureOverhang")(MeasureOverhang)
+    __obj.updateDynamic("MeasureShowUnit")(MeasureShowUnit)
+    __obj.updateDynamic("MeasureTextAutoAngle")(MeasureTextAutoAngle)
+    __obj.updateDynamic("MeasureTextAutoAngleView")(MeasureTextAutoAngleView)
+    __obj.updateDynamic("MeasureTextFixedAngle")(MeasureTextFixedAngle)
+    __obj.updateDynamic("MeasureTextHorizontalPosition")(MeasureTextHorizontalPosition)
+    __obj.updateDynamic("MeasureTextIsFixedAngle")(MeasureTextIsFixedAngle)
+    __obj.updateDynamic("MeasureTextRotate90")(MeasureTextRotate90)
+    __obj.updateDynamic("MeasureTextUpsideDown")(MeasureTextUpsideDown)
+    __obj.updateDynamic("MeasureTextVerticalPosition")(MeasureTextVerticalPosition)
+    __obj.asInstanceOf[MeasureProperties]
+  }
+}
+

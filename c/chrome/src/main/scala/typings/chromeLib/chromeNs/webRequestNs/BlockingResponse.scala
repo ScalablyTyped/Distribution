@@ -27,3 +27,22 @@ trait BlockingResponse extends js.Object {
   var responseHeaders: js.UndefOr[js.Array[HttpHeader]] = js.undefined
 }
 
+object BlockingResponse {
+  @scala.inline
+  def apply(
+    authCredentials: AuthCredentials = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    redirectUrl: java.lang.String = null,
+    requestHeaders: js.Array[HttpHeader] = null,
+    responseHeaders: js.Array[HttpHeader] = null
+  ): BlockingResponse = {
+    val __obj = js.Dynamic.literal()
+    if (authCredentials != null) __obj.updateDynamic("authCredentials")(authCredentials)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    __obj.asInstanceOf[BlockingResponse]
+  }
+}
+

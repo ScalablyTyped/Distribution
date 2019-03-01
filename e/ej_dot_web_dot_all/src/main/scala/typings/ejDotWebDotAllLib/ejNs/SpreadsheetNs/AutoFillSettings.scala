@@ -16,3 +16,16 @@ trait AutoFillSettings extends js.Object {
   var showFillOptions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AutoFillSettings {
+  @scala.inline
+  def apply(
+    fillType: AutoFillOptions | java.lang.String = null,
+    showFillOptions: js.UndefOr[scala.Boolean] = js.undefined
+  ): AutoFillSettings = {
+    val __obj = js.Dynamic.literal()
+    if (fillType != null) __obj.updateDynamic("fillType")(fillType.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFillOptions)) __obj.updateDynamic("showFillOptions")(showFillOptions)
+    __obj.asInstanceOf[AutoFillSettings]
+  }
+}
+

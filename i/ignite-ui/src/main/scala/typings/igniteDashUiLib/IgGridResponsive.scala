@@ -105,3 +105,51 @@ trait IgGridResponsive
   var windowWidthToRenderVertically: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgGridResponsive {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridResponsive
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowedColumnWidthPerType: IgGridResponsiveAllowedColumnWidthPerType = null,
+    columnSettings: js.Array[IgGridResponsiveColumnSetting] = null,
+    enableVerticalRendering: js.UndefOr[scala.Boolean] = js.undefined,
+    forceResponsiveGridWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    propertiesColumnWidth: java.lang.String | scala.Double = null,
+    reactOnContainerWidthChanges: js.UndefOr[scala.Boolean] = js.undefined,
+    responsiveColumnHidden: ResponsiveColumnHiddenEvent = null,
+    responsiveColumnHiding: ResponsiveColumnHidingEvent = null,
+    responsiveColumnShowing: ResponsiveColumnShowingEvent = null,
+    responsiveColumnShown: ResponsiveColumnShownEvent = null,
+    responsiveModeChanged: ResponsiveModeChangedEvent = null,
+    responsiveModes: js.Any = null,
+    responsiveSensitivity: scala.Int | scala.Double = null,
+    singleColumnTemplate: js.Any = null,
+    valuesColumnWidth: java.lang.String | scala.Double = null,
+    windowWidthToRenderVertically: java.lang.String | scala.Double = null
+  ): IgGridResponsive = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (allowedColumnWidthPerType != null) __obj.updateDynamic("allowedColumnWidthPerType")(allowedColumnWidthPerType)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (!js.isUndefined(enableVerticalRendering)) __obj.updateDynamic("enableVerticalRendering")(enableVerticalRendering)
+    if (!js.isUndefined(forceResponsiveGridWidth)) __obj.updateDynamic("forceResponsiveGridWidth")(forceResponsiveGridWidth)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (propertiesColumnWidth != null) __obj.updateDynamic("propertiesColumnWidth")(propertiesColumnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(reactOnContainerWidthChanges)) __obj.updateDynamic("reactOnContainerWidthChanges")(reactOnContainerWidthChanges)
+    if (responsiveColumnHidden != null) __obj.updateDynamic("responsiveColumnHidden")(responsiveColumnHidden)
+    if (responsiveColumnHiding != null) __obj.updateDynamic("responsiveColumnHiding")(responsiveColumnHiding)
+    if (responsiveColumnShowing != null) __obj.updateDynamic("responsiveColumnShowing")(responsiveColumnShowing)
+    if (responsiveColumnShown != null) __obj.updateDynamic("responsiveColumnShown")(responsiveColumnShown)
+    if (responsiveModeChanged != null) __obj.updateDynamic("responsiveModeChanged")(responsiveModeChanged)
+    if (responsiveModes != null) __obj.updateDynamic("responsiveModes")(responsiveModes)
+    if (responsiveSensitivity != null) __obj.updateDynamic("responsiveSensitivity")(responsiveSensitivity.asInstanceOf[js.Any])
+    if (singleColumnTemplate != null) __obj.updateDynamic("singleColumnTemplate")(singleColumnTemplate)
+    if (valuesColumnWidth != null) __obj.updateDynamic("valuesColumnWidth")(valuesColumnWidth.asInstanceOf[js.Any])
+    if (windowWidthToRenderVertically != null) __obj.updateDynamic("windowWidthToRenderVertically")(windowWidthToRenderVertically.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgGridResponsive]
+  }
+}
+

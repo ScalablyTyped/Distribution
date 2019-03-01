@@ -14,3 +14,18 @@ trait Request extends js.Object {
   var value: js.UndefOr[stdLib.ArrayBuffer] = js.undefined
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    device: RequestDevice,
+    requestId: chromeDashAppsLib.chromeNs.integer,
+    value: stdLib.ArrayBuffer = null
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("device")(device)
+    __obj.updateDynamic("requestId")(requestId)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Request]
+  }
+}
+

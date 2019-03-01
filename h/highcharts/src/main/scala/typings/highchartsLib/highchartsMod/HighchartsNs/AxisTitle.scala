@@ -57,3 +57,30 @@ trait AxisTitle extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AxisTitle {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    enabled: java.lang.String = null,
+    margin: scala.Int | scala.Double = null,
+    offset: scala.Int | scala.Double = null,
+    rotation: scala.Int | scala.Double = null,
+    style: CSSObject = null,
+    text: java.lang.String = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): AxisTitle = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AxisTitle]
+  }
+}
+

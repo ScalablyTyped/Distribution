@@ -17,3 +17,22 @@ trait TextMarkupDescriptor extends js.Object {
   var xMarkupInfoContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap
 }
 
+object TextMarkupDescriptor {
+  @scala.inline
+  def apply(
+    aIdentifier: java.lang.String,
+    nLength: scala.Double,
+    nOffset: scala.Double,
+    nType: scala.Double,
+    xMarkupInfoContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap
+  ): TextMarkupDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aIdentifier")(aIdentifier)
+    __obj.updateDynamic("nLength")(nLength)
+    __obj.updateDynamic("nOffset")(nOffset)
+    __obj.updateDynamic("nType")(nType)
+    __obj.updateDynamic("xMarkupInfoContainer")(xMarkupInfoContainer)
+    __obj.asInstanceOf[TextMarkupDescriptor]
+  }
+}
+

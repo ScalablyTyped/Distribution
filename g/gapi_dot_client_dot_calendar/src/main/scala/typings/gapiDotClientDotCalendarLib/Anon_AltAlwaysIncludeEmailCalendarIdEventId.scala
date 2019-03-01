@@ -47,3 +47,38 @@ trait Anon_AltAlwaysIncludeEmailCalendarIdEventId extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltAlwaysIncludeEmailCalendarIdEventId {
+  @scala.inline
+  def apply(
+    calendarId: java.lang.String,
+    eventId: java.lang.String,
+    alt: java.lang.String = null,
+    alwaysIncludeEmail: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    maxAttendees: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    sendNotifications: js.UndefOr[scala.Boolean] = js.undefined,
+    supportsAttachments: js.UndefOr[scala.Boolean] = js.undefined,
+    userIp: java.lang.String = null
+  ): Anon_AltAlwaysIncludeEmailCalendarIdEventId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calendarId")(calendarId)
+    __obj.updateDynamic("eventId")(eventId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(alwaysIncludeEmail)) __obj.updateDynamic("alwaysIncludeEmail")(alwaysIncludeEmail)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxAttendees != null) __obj.updateDynamic("maxAttendees")(maxAttendees.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (!js.isUndefined(sendNotifications)) __obj.updateDynamic("sendNotifications")(sendNotifications)
+    if (!js.isUndefined(supportsAttachments)) __obj.updateDynamic("supportsAttachments")(supportsAttachments)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltAlwaysIncludeEmailCalendarIdEventId]
+  }
+}
+

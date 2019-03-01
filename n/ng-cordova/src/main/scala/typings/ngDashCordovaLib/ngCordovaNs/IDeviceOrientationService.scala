@@ -11,3 +11,18 @@ trait IDeviceOrientationService extends js.Object {
   def watchHeading(options: IDeviceOrientationWatchOptions): IDeviceOrientationWatchPromise
 }
 
+object IDeviceOrientationService {
+  @scala.inline
+  def apply(
+    clearWatch: js.Function1[scala.Double, scala.Unit],
+    getCurrentHeading: js.Function0[angularLib.angularMod.angularNs.IPromise[IDeviceOrientationHeading]],
+    watchHeading: js.Function1[IDeviceOrientationWatchOptions, IDeviceOrientationWatchPromise]
+  ): IDeviceOrientationService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearWatch")(clearWatch)
+    __obj.updateDynamic("getCurrentHeading")(getCurrentHeading)
+    __obj.updateDynamic("watchHeading")(watchHeading)
+    __obj.asInstanceOf[IDeviceOrientationService]
+  }
+}
+

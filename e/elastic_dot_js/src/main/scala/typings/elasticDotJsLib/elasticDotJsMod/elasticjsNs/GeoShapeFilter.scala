@@ -60,3 +60,32 @@ trait GeoShapeFilter extends Filter {
   def toJSON(): GeoShapeFilter
 }
 
+object GeoShapeFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, GeoShapeFilter],
+    cacheKey: js.Function1[java.lang.String, GeoShapeFilter],
+    field: js.Function1[java.lang.String, GeoShapeFilter],
+    indexedShape: js.Function1[java.lang.String, GeoShapeFilter],
+    name: js.Function1[java.lang.String, GeoShapeFilter],
+    relation: js.Function1[java.lang.String, GeoShapeFilter],
+    shape: js.Function1[java.lang.String, GeoShapeFilter],
+    strategy: js.Function1[java.lang.String, GeoShapeFilter],
+    toJSON: js.Function0[GeoShapeFilter]
+  ): GeoShapeFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("indexedShape")(indexedShape)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("relation")(relation)
+    __obj.updateDynamic("shape")(shape)
+    __obj.updateDynamic("strategy")(strategy)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[GeoShapeFilter]
+  }
+}
+

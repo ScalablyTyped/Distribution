@@ -14,3 +14,13 @@ trait SelectionChangeEventArgs extends js.Object {
   var element: js.UndefOr[js.Any] = js.undefined
 }
 
+object SelectionChangeEventArgs {
+  @scala.inline
+  def apply(changeType: java.lang.String = null, element: js.Any = null): SelectionChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
+    if (element != null) __obj.updateDynamic("element")(element)
+    __obj.asInstanceOf[SelectionChangeEventArgs]
+  }
+}
+

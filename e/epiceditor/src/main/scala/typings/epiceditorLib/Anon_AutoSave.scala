@@ -11,3 +11,14 @@ trait Anon_AutoSave extends js.Object {
   var name: java.lang.String
 }
 
+object Anon_AutoSave {
+  @scala.inline
+  def apply(autoSave: js.Any, defaultContent: java.lang.String, name: java.lang.String): Anon_AutoSave = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoSave")(autoSave)
+    __obj.updateDynamic("defaultContent")(defaultContent)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_AutoSave]
+  }
+}
+

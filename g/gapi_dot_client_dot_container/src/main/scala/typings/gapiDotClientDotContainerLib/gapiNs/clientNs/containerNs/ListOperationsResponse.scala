@@ -15,3 +15,13 @@ trait ListOperationsResponse extends js.Object {
   var operations: js.UndefOr[js.Array[Operation]] = js.undefined
 }
 
+object ListOperationsResponse {
+  @scala.inline
+  def apply(missingZones: js.Array[java.lang.String] = null, operations: js.Array[Operation] = null): ListOperationsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (missingZones != null) __obj.updateDynamic("missingZones")(missingZones)
+    if (operations != null) __obj.updateDynamic("operations")(operations)
+    __obj.asInstanceOf[ListOperationsResponse]
+  }
+}
+

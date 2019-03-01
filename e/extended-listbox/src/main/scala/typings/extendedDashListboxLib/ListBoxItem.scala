@@ -24,3 +24,28 @@ trait ListBoxItem extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListBoxItem {
+  @scala.inline
+  def apply(
+    childItems: js.Array[java.lang.String | ListBoxItem] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    groupHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    index: scala.Int | scala.Double = null,
+    parentGroupId: java.lang.String = null,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null
+  ): ListBoxItem = {
+    val __obj = js.Dynamic.literal()
+    if (childItems != null) __obj.updateDynamic("childItems")(childItems)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(groupHeader)) __obj.updateDynamic("groupHeader")(groupHeader)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (parentGroupId != null) __obj.updateDynamic("parentGroupId")(parentGroupId)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ListBoxItem]
+  }
+}
+

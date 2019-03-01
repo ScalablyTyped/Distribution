@@ -20,8 +20,12 @@ object jsPlumbNs extends js.Object {
     var y: scala.Double
   }
   
+  trait AnchorId extends js.Object
+  
   /* -------------------------------------------- ANCHORS -------------------------------------------------------- */
   trait AnchorOptions extends js.Object
+  
+  trait AnchorOrientationHint extends js.Object
   
   trait ArrowOverlayOptions extends OverlayOptions {
      // 0.5
@@ -215,6 +219,8 @@ object jsPlumbNs extends js.Object {
   
   trait Overlay extends js.Object
   
+  trait OverlayId extends js.Object
+  
   /* --------------------------------------- OVERLAYS ------------------------------------------------------------- */
   trait OverlayOptions extends js.Object
   
@@ -223,6 +229,10 @@ object jsPlumbNs extends js.Object {
     var stroke: js.UndefOr[java.lang.String] = js.undefined
     var strokeWidth: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait _ConnectorId extends js.Object
+  
+  trait _EndpointId extends js.Object
   
   @js.native
   trait jsPlumbInstance extends js.Object {
@@ -526,19 +536,16 @@ object jsPlumbNs extends js.Object {
   def on(el: js.Any, event: java.lang.String, handler: js.Function): scala.Unit = js.native
   def removeClass(el: stdLib.NodeListOf[stdLib.Element], clazz: java.lang.String): scala.Unit = js.native
   def revalidate(el: stdLib.Element): scala.Unit = js.native
-  type AnchorId = jsplumbLib.jsplumbLibStrings.Assign | jsplumbLib.jsplumbLibStrings.AutoDefault | jsplumbLib.jsplumbLibStrings.Bottom | jsplumbLib.jsplumbLibStrings.BottomCenter | jsplumbLib.jsplumbLibStrings.BottomLeft | jsplumbLib.jsplumbLibStrings.BottomRight | jsplumbLib.jsplumbLibStrings.Center | jsplumbLib.jsplumbLibStrings.Continuous | jsplumbLib.jsplumbLibStrings.ContinuousBottom | jsplumbLib.jsplumbLibStrings.ContinuousLeft | jsplumbLib.jsplumbLibStrings.ContinuousRight | jsplumbLib.jsplumbLibStrings.ContinuousTop | jsplumbLib.jsplumbLibStrings.Left | jsplumbLib.jsplumbLibStrings.LeftMiddle | jsplumbLib.jsplumbLibStrings.Perimeter | jsplumbLib.jsplumbLibStrings.Right | jsplumbLib.jsplumbLibStrings.RightMiddle | jsplumbLib.jsplumbLibStrings.Top | jsplumbLib.jsplumbLibStrings.TopCenter | jsplumbLib.jsplumbLibStrings.TopLeft | jsplumbLib.jsplumbLibStrings.TopRight
-  type AnchorOrientationHint = jsplumbLib.jsplumbLibNumbers.`-1` | jsplumbLib.jsplumbLibNumbers.`0` | jsplumbLib.jsplumbLibNumbers.`1`
   type AnchorSpec = AnchorId | (js.Tuple2[AnchorId, AnchorOptions])
   type ConnectionId = java.lang.String
-  type ConnectorId = jsplumbLib.jsplumbLibStrings.Bezier | jsplumbLib.jsplumbLibStrings.StateMachine | jsplumbLib.jsplumbLibStrings.Flowchart | jsplumbLib.jsplumbLibStrings.Straight | UserDefinedConnectorId
+  type ConnectorId = _ConnectorId | UserDefinedConnectorId
   type ConnectorSpec = ConnectorId | (js.Tuple2[ConnectorId, ConnectorOptions])
   type ElementGroupRef = ElementId | stdLib.Element | js.Array[ElementId] | js.Array[stdLib.Element]
   type ElementId = java.lang.String
   type ElementRef = ElementId | stdLib.Element
   /* -------------------------------------------- ENDPOINTS ------------------------------------------------------ */
-  type EndpointId = jsplumbLib.jsplumbLibStrings.Rectangle | jsplumbLib.jsplumbLibStrings.Dot | jsplumbLib.jsplumbLibStrings.Blank | UserDefinedEndpointId
+  type EndpointId = _EndpointId | UserDefinedEndpointId
   type EndpointSpec = EndpointId | (js.Tuple2[EndpointId, EndpointOptions])
-  type OverlayId = jsplumbLib.jsplumbLibStrings.Label | jsplumbLib.jsplumbLibStrings.Arrow | jsplumbLib.jsplumbLibStrings.PlainArrow | jsplumbLib.jsplumbLibStrings.Custom
   type OverlaySpec = OverlayId | (js.Tuple2[OverlayId, OverlayOptions])
   type Selector = java.lang.String
   type UUID = java.lang.String

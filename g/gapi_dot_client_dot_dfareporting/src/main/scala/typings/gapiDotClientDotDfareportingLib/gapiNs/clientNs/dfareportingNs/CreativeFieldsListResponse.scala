@@ -14,3 +14,18 @@ trait CreativeFieldsListResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreativeFieldsListResponse {
+  @scala.inline
+  def apply(
+    creativeFields: js.Array[CreativeField] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null
+  ): CreativeFieldsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (creativeFields != null) __obj.updateDynamic("creativeFields")(creativeFields)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[CreativeFieldsListResponse]
+  }
+}
+

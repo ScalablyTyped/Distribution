@@ -16,3 +16,20 @@ trait IndexingPolicy extends js.Object {
   var indexingMode: IndexingMode
 }
 
+object IndexingPolicy {
+  @scala.inline
+  def apply(
+    ExcludedPaths: js.Array[ExcludedPath],
+    IncludedPaths: js.Array[IncludedPath],
+    automatic: scala.Boolean,
+    indexingMode: IndexingMode
+  ): IndexingPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ExcludedPaths")(ExcludedPaths)
+    __obj.updateDynamic("IncludedPaths")(IncludedPaths)
+    __obj.updateDynamic("automatic")(automatic)
+    __obj.updateDynamic("indexingMode")(indexingMode)
+    __obj.asInstanceOf[IndexingPolicy]
+  }
+}
+

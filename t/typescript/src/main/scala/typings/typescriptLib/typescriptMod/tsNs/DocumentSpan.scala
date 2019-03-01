@@ -16,3 +16,20 @@ trait DocumentSpan extends js.Object {
   var textSpan: TextSpan
 }
 
+object DocumentSpan {
+  @scala.inline
+  def apply(
+    fileName: java.lang.String,
+    textSpan: TextSpan,
+    originalFileName: java.lang.String = null,
+    originalTextSpan: TextSpan = null
+  ): DocumentSpan = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("textSpan")(textSpan)
+    if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
+    if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
+    __obj.asInstanceOf[DocumentSpan]
+  }
+}
+

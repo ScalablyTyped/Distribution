@@ -62,3 +62,42 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    backgroundImage: java.lang.String = null,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    height: java.lang.String = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseDown: js.Function1[/* e */ MouseDownEventArgs, scala.Unit] = null,
+    mouseMove: js.Function1[/* e */ MouseMoveEventArgs, scala.Unit] = null,
+    mouseUp: js.Function1[/* e */ MouseUpEventArgs, scala.Unit] = null,
+    saveImageFormat: SaveImageFormat | java.lang.String = null,
+    saveWithBackground: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    strokeColor: java.lang.String = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    width: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown)
+    if (mouseMove != null) __obj.updateDynamic("mouseMove")(mouseMove)
+    if (mouseUp != null) __obj.updateDynamic("mouseUp")(mouseUp)
+    if (saveImageFormat != null) __obj.updateDynamic("saveImageFormat")(saveImageFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveWithBackground)) __obj.updateDynamic("saveWithBackground")(saveWithBackground)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Model]
+  }
+}
+

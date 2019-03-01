@@ -12,3 +12,12 @@ trait GetArnArgs extends js.Object {
   val arn: java.lang.String
 }
 
+object GetArnArgs {
+  @scala.inline
+  def apply(arn: java.lang.String): GetArnArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.asInstanceOf[GetArnArgs]
+  }
+}
+

@@ -19,3 +19,15 @@ trait LocationData extends js.Object {
   var speed: scala.Double
 }
 
+object LocationData {
+  @scala.inline
+  def apply(accuracy: scala.Double, latitude: scala.Double, longitude: scala.Double, speed: scala.Double): LocationData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accuracy")(accuracy)
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    __obj.updateDynamic("speed")(speed)
+    __obj.asInstanceOf[LocationData]
+  }
+}
+

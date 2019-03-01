@@ -75,3 +75,46 @@ trait BitArray extends js.Object {
   def xor(x: BitArray): BitArray
 }
 
+object BitArray {
+  @scala.inline
+  def apply(
+    and: js.Function1[BitArray, BitArray],
+    copy: js.Function0[BitArray],
+    count: js.Function0[scala.Double],
+    equals: js.Function1[BitArray, scala.Boolean],
+    get: js.Function1[scala.Double, scala.Boolean],
+    not: js.Function0[BitArray],
+    or: js.Function1[BitArray, BitArray],
+    reset: js.Function0[BitArray],
+    set: js.Function2[scala.Double, scala.Boolean, BitArray],
+    size: js.Function0[scala.Double],
+    toArray: js.Function0[js.Array[scala.Boolean]],
+    toBinaryString: js.Function0[java.lang.String],
+    toHexString: js.Function0[java.lang.String],
+    toJSON: js.Function0[java.lang.String],
+    toString: js.Function0[java.lang.String],
+    toggle: js.Function1[scala.Double, BitArray],
+    xor: js.Function1[BitArray, BitArray]
+  ): BitArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("not")(not)
+    __obj.updateDynamic("or")(or)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("toArray")(toArray)
+    __obj.updateDynamic("toBinaryString")(toBinaryString)
+    __obj.updateDynamic("toHexString")(toHexString)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("toggle")(toggle)
+    __obj.updateDynamic("xor")(xor)
+    __obj.asInstanceOf[BitArray]
+  }
+}
+

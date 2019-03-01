@@ -78,3 +78,46 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
 }
 
+object InsertModalColumnDescription {
+  @scala.inline
+  def apply[TRow /* <: js.Object */](
+    customInsertEditor: js.Function5[
+      InsertModalColumnDescription[TRow], 
+      EditableAttrs, 
+      java.lang.String, 
+      scala.Boolean, 
+      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ js.Any, 
+      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
+    ],
+    editable: scala.Boolean | (Editable[TRow, java.lang.String]) | (js.Function4[
+      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
+      /* row */ TRow, 
+      /* rowIndex */ scala.Double, 
+      /* columnIndex */ scala.Double, 
+      scala.Boolean | java.lang.String | EditValidatorObject
+    ]),
+    field: java.lang.String,
+    hiddenOnInsert: scala.Boolean,
+    keyValidator: scala.Boolean,
+    name: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_],
+    autoValue: js.UndefOr[scala.Boolean] = js.undefined,
+    format: scala.Boolean | (js.Function1[
+      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
+      java.lang.String
+    ]) = null,
+    isKey: js.UndefOr[scala.Boolean] = js.undefined
+  ): InsertModalColumnDescription[TRow] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customInsertEditor")(customInsertEditor)
+    __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("hiddenOnInsert")(hiddenOnInsert)
+    __obj.updateDynamic("keyValidator")(keyValidator)
+    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoValue)) __obj.updateDynamic("autoValue")(autoValue)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(isKey)) __obj.updateDynamic("isKey")(isKey)
+    __obj.asInstanceOf[InsertModalColumnDescription[TRow]]
+  }
+}
+

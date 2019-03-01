@@ -31,3 +31,22 @@ trait IAnimationKey extends js.Object {
   var value: js.Any
 }
 
+object IAnimationKey {
+  @scala.inline
+  def apply(
+    frame: scala.Double,
+    value: js.Any,
+    inTangent: js.Any = null,
+    interpolation: AnimationKeyInterpolation = null,
+    outTangent: js.Any = null
+  ): IAnimationKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frame")(frame)
+    __obj.updateDynamic("value")(value)
+    if (inTangent != null) __obj.updateDynamic("inTangent")(inTangent)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (outTangent != null) __obj.updateDynamic("outTangent")(outTangent)
+    __obj.asInstanceOf[IAnimationKey]
+  }
+}
+

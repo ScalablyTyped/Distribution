@@ -10,3 +10,16 @@ trait IRouteButtonParameters extends js.Object {
   var state: js.UndefOr[yandexDashMapsLib.Anon_Expanded] = js.undefined
 }
 
+object IRouteButtonParameters {
+  @scala.inline
+  def apply(
+    options: yandexDashMapsLib.Anon_AdjustMapMargin = null,
+    state: yandexDashMapsLib.Anon_Expanded = null
+  ): IRouteButtonParameters = {
+    val __obj = js.Dynamic.literal()
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[IRouteButtonParameters]
+  }
+}
+

@@ -20,3 +20,18 @@ trait Mock extends js.Object {
   def verify(): scala.Unit
 }
 
+object Mock {
+  @scala.inline
+  def apply(
+    expects: js.Function1[java.lang.String, Expectation],
+    restore: js.Function0[scala.Unit],
+    verify: js.Function0[scala.Unit]
+  ): Mock = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expects")(expects)
+    __obj.updateDynamic("restore")(restore)
+    __obj.updateDynamic("verify")(verify)
+    __obj.asInstanceOf[Mock]
+  }
+}
+

@@ -16,3 +16,15 @@ trait GetDirectPropertyTolerantResult extends GetPropertyTolerantResult {
   var Name: java.lang.String
 }
 
+object GetDirectPropertyTolerantResult {
+  @scala.inline
+  def apply(Name: java.lang.String, Result: scala.Double, State: PropertyState, Value: js.Any): GetDirectPropertyTolerantResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Result")(Result)
+    __obj.updateDynamic("State")(State)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[GetDirectPropertyTolerantResult]
+  }
+}
+

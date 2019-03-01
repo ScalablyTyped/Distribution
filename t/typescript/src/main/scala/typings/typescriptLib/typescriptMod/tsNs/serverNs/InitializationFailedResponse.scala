@@ -11,3 +11,13 @@ trait InitializationFailedResponse extends TypingInstallerResponse {
   val message: java.lang.String
 }
 
+object InitializationFailedResponse {
+  @scala.inline
+  def apply(kind: EventInitializationFailed, message: java.lang.String): InitializationFailedResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[InitializationFailedResponse]
+  }
+}
+

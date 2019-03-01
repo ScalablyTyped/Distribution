@@ -9,3 +9,12 @@ trait CommentParams extends js.Object {
   var text: java.lang.String
 }
 
+object CommentParams {
+  @scala.inline
+  def apply(text: java.lang.String): CommentParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[CommentParams]
+  }
+}
+

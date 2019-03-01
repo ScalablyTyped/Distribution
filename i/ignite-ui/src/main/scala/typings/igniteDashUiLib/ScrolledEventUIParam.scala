@@ -24,3 +24,20 @@ trait ScrolledEventUIParam extends js.Object {
   var smallIncrement: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScrolledEventUIParam {
+  @scala.inline
+  def apply(
+    bigIncrement: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    owner: js.Any = null,
+    smallIncrement: scala.Int | scala.Double = null
+  ): ScrolledEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (bigIncrement != null) __obj.updateDynamic("bigIncrement")(bigIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (smallIncrement != null) __obj.updateDynamic("smallIncrement")(smallIncrement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScrolledEventUIParam]
+  }
+}
+

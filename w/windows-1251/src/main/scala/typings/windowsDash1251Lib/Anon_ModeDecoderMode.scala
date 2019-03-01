@@ -9,3 +9,12 @@ trait Anon_ModeDecoderMode extends js.Object {
   var mode: js.UndefOr[windowsDash1251Lib.windowsDash1251Mod.windows1251Ns.DecoderMode] = js.undefined
 }
 
+object Anon_ModeDecoderMode {
+  @scala.inline
+  def apply(mode: windowsDash1251Lib.windowsDash1251Mod.windows1251Ns.DecoderMode = null): Anon_ModeDecoderMode = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[Anon_ModeDecoderMode]
+  }
+}
+

@@ -9,3 +9,12 @@ trait ElementAttributesProperty extends js.Object {
   var props: js.Any
 }
 
+object ElementAttributesProperty {
+  @scala.inline
+  def apply(props: js.Any): ElementAttributesProperty = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("props")(props)
+    __obj.asInstanceOf[ElementAttributesProperty]
+  }
+}
+

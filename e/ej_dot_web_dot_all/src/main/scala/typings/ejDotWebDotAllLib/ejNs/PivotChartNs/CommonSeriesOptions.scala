@@ -12,3 +12,12 @@ trait CommonSeriesOptions extends js.Object {
   var `type`: js.UndefOr[ChartTypes | java.lang.String] = js.undefined
 }
 
+object CommonSeriesOptions {
+  @scala.inline
+  def apply(`type`: ChartTypes | java.lang.String = null): CommonSeriesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommonSeriesOptions]
+  }
+}
+

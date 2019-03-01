@@ -34,3 +34,24 @@ trait ISubscriptionUpdateItem extends js.Object {
   var quantity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ISubscriptionUpdateItem {
+  @scala.inline
+  def apply(
+    clear_usage: js.UndefOr[scala.Boolean] = js.undefined,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    plan: java.lang.String = null,
+    quantity: scala.Int | scala.Double = null
+  ): ISubscriptionUpdateItem = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clear_usage)) __obj.updateDynamic("clear_usage")(clear_usage)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISubscriptionUpdateItem]
+  }
+}
+

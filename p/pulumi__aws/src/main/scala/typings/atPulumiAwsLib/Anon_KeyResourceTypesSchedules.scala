@@ -11,3 +11,18 @@ trait Anon_KeyResourceTypesSchedules extends js.Object {
   var targetTags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
 }
 
+object Anon_KeyResourceTypesSchedules {
+  @scala.inline
+  def apply(
+    resourceTypes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    schedules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_CopyTagsCreateRule]]],
+    targetTags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
+  ): Anon_KeyResourceTypesSchedules = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resourceTypes")(resourceTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("schedules")(schedules.asInstanceOf[js.Any])
+    __obj.updateDynamic("targetTags")(targetTags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_KeyResourceTypesSchedules]
+  }
+}
+

@@ -26,3 +26,14 @@ trait TypedLocalObjectReference extends js.Object {
   val name: java.lang.String
 }
 
+object TypedLocalObjectReference {
+  @scala.inline
+  def apply(apiGroup: java.lang.String, kind: java.lang.String, name: java.lang.String): TypedLocalObjectReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiGroup")(apiGroup)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[TypedLocalObjectReference]
+  }
+}
+

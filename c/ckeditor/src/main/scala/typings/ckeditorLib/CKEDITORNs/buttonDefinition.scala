@@ -13,3 +13,22 @@ trait buttonDefinition extends js.Object {
   var toolbar: java.lang.String
 }
 
+object buttonDefinition {
+  @scala.inline
+  def apply(
+    command: java.lang.String,
+    label: java.lang.String,
+    toolbar: java.lang.String,
+    icon: java.lang.String = null,
+    iconOffset: scala.Int | scala.Double = null
+  ): buttonDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("toolbar")(toolbar)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconOffset != null) __obj.updateDynamic("iconOffset")(iconOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[buttonDefinition]
+  }
+}
+

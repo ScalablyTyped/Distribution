@@ -12,3 +12,12 @@ trait Anon_TypeOfBowerFile extends js.Object {
   var typeOfBowerFile: stdLib.RegExp
 }
 
+object Anon_TypeOfBowerFile {
+  @scala.inline
+  def apply(typeOfBowerFile: stdLib.RegExp): Anon_TypeOfBowerFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("typeOfBowerFile")(typeOfBowerFile)
+    __obj.asInstanceOf[Anon_TypeOfBowerFile]
+  }
+}
+

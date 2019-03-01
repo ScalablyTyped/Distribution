@@ -30,3 +30,24 @@ trait Anon_Drag extends js.Object {
   var tpl: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Drag {
+  @scala.inline
+  def apply(
+    drag: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    index: scala.Int | scala.Double = null,
+    nodes: js.Array[_] = null,
+    target: java.lang.String | js.Any = null,
+    tpl: js.Any = null
+  ): Anon_Drag = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    __obj.asInstanceOf[Anon_Drag]
+  }
+}
+

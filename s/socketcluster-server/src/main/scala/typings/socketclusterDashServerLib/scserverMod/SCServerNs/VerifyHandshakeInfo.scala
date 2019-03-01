@@ -10,3 +10,13 @@ trait VerifyHandshakeInfo extends js.Object {
   var req: nodeLib.httpMod.IncomingMessage
 }
 
+object VerifyHandshakeInfo {
+  @scala.inline
+  def apply(req: nodeLib.httpMod.IncomingMessage, origin: java.lang.String = null): VerifyHandshakeInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("req")(req)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    __obj.asInstanceOf[VerifyHandshakeInfo]
+  }
+}
+

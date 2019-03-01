@@ -14,3 +14,18 @@ trait Pageviews extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Pageviews {
+  @scala.inline
+  def apply(
+    blogId: java.lang.String = null,
+    counts: js.Array[gapiDotClientDotBloggerLib.Anon_Count] = null,
+    kind: java.lang.String = null
+  ): Pageviews = {
+    val __obj = js.Dynamic.literal()
+    if (blogId != null) __obj.updateDynamic("blogId")(blogId)
+    if (counts != null) __obj.updateDynamic("counts")(counts)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[Pageviews]
+  }
+}
+

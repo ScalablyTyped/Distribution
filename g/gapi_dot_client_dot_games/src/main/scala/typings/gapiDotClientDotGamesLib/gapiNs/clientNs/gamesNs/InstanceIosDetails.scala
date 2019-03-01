@@ -22,3 +22,26 @@ trait InstanceIosDetails extends js.Object {
   var supportIphone: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InstanceIosDetails {
+  @scala.inline
+  def apply(
+    bundleIdentifier: java.lang.String = null,
+    itunesAppId: java.lang.String = null,
+    kind: java.lang.String = null,
+    preferredForIpad: js.UndefOr[scala.Boolean] = js.undefined,
+    preferredForIphone: js.UndefOr[scala.Boolean] = js.undefined,
+    supportIpad: js.UndefOr[scala.Boolean] = js.undefined,
+    supportIphone: js.UndefOr[scala.Boolean] = js.undefined
+  ): InstanceIosDetails = {
+    val __obj = js.Dynamic.literal()
+    if (bundleIdentifier != null) __obj.updateDynamic("bundleIdentifier")(bundleIdentifier)
+    if (itunesAppId != null) __obj.updateDynamic("itunesAppId")(itunesAppId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(preferredForIpad)) __obj.updateDynamic("preferredForIpad")(preferredForIpad)
+    if (!js.isUndefined(preferredForIphone)) __obj.updateDynamic("preferredForIphone")(preferredForIphone)
+    if (!js.isUndefined(supportIpad)) __obj.updateDynamic("supportIpad")(supportIpad)
+    if (!js.isUndefined(supportIphone)) __obj.updateDynamic("supportIphone")(supportIphone)
+    __obj.asInstanceOf[InstanceIosDetails]
+  }
+}
+

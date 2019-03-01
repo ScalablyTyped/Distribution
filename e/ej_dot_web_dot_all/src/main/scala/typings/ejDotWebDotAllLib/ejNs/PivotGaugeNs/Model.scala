@@ -105,3 +105,64 @@ trait Model extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    afterServiceInvoke: js.Function1[/* e */ AfterServiceInvokeEventArgs, scala.Unit] = null,
+    analysisMode: ejDotWebDotAllLib.ejNs.PivotNs.AnalysisMode | java.lang.String = null,
+    beforePivotEnginePopulate: js.Function1[/* e */ BeforePivotEnginePopulateEventArgs, scala.Unit] = null,
+    beforeServiceInvoke: js.Function1[/* e */ BeforeServiceInvokeEventArgs, scala.Unit] = null,
+    columnsCount: scala.Int | scala.Double = null,
+    cssClass: java.lang.String = null,
+    customObject: js.Any = null,
+    dataSource: DataSource = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    enableXHRCredentials: js.UndefOr[scala.Boolean] = js.undefined,
+    frame: Frame = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    labelFormatSettings: LabelFormatSettings = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    operationalMode: ejDotWebDotAllLib.ejNs.PivotNs.OperationalMode | java.lang.String = null,
+    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
+    renderFailure: js.Function1[/* e */ RenderFailureEventArgs, scala.Unit] = null,
+    renderSuccess: js.Function1[/* e */ RenderSuccessEventArgs, scala.Unit] = null,
+    rowsCount: scala.Int | scala.Double = null,
+    scales: js.Any = null,
+    serviceMethodSettings: ServiceMethodSettings = null,
+    showHeaderLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(afterServiceInvoke)
+    if (analysisMode != null) __obj.updateDynamic("analysisMode")(analysisMode.asInstanceOf[js.Any])
+    if (beforePivotEnginePopulate != null) __obj.updateDynamic("beforePivotEnginePopulate")(beforePivotEnginePopulate)
+    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(beforeServiceInvoke)
+    if (columnsCount != null) __obj.updateDynamic("columnsCount")(columnsCount.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableTooltip)) __obj.updateDynamic("enableTooltip")(enableTooltip)
+    if (!js.isUndefined(enableXHRCredentials)) __obj.updateDynamic("enableXHRCredentials")(enableXHRCredentials)
+    if (frame != null) __obj.updateDynamic("frame")(frame)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (labelFormatSettings != null) __obj.updateDynamic("labelFormatSettings")(labelFormatSettings)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (operationalMode != null) __obj.updateDynamic("operationalMode")(operationalMode.asInstanceOf[js.Any])
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
+    if (renderFailure != null) __obj.updateDynamic("renderFailure")(renderFailure)
+    if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(renderSuccess)
+    if (rowsCount != null) __obj.updateDynamic("rowsCount")(rowsCount.asInstanceOf[js.Any])
+    if (scales != null) __obj.updateDynamic("scales")(scales)
+    if (serviceMethodSettings != null) __obj.updateDynamic("serviceMethodSettings")(serviceMethodSettings)
+    if (!js.isUndefined(showHeaderLabel)) __obj.updateDynamic("showHeaderLabel")(showHeaderLabel)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Model]
+  }
+}
+

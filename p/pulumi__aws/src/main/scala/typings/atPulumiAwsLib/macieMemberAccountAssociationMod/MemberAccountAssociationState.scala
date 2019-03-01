@@ -12,3 +12,12 @@ trait MemberAccountAssociationState extends js.Object {
   val memberAccountId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object MemberAccountAssociationState {
+  @scala.inline
+  def apply(memberAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null): MemberAccountAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (memberAccountId != null) __obj.updateDynamic("memberAccountId")(memberAccountId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MemberAccountAssociationState]
+  }
+}
+

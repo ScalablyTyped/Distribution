@@ -13,3 +13,22 @@ trait ChartValueAxisItemNotesDataItemIcon extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartValueAxisItemNotesDataItemIcon {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: ChartValueAxisItemNotesDataItemIconBorder = null,
+    size: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartValueAxisItemNotesDataItemIcon = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ChartValueAxisItemNotesDataItemIcon]
+  }
+}
+

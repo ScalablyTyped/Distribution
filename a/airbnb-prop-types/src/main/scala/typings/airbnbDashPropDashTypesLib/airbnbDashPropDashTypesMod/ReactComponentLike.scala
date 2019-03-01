@@ -15,3 +15,26 @@ trait ReactComponentLike extends js.Object {
   def setState(args: js.Any*): js.Any
 }
 
+object ReactComponentLike {
+  @scala.inline
+  def apply(
+    context: js.Any,
+    forceUpdate: js.Function1[/* repeated */ js.Any, js.Any],
+    props: js.Any,
+    refs: js.Any,
+    render: js.Function0[propDashTypesLib.propDashTypesMod.ReactNodeLike],
+    setState: js.Function1[/* repeated */ js.Any, js.Any],
+    state: js.Any
+  ): ReactComponentLike = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("forceUpdate")(forceUpdate)
+    __obj.updateDynamic("props")(props)
+    __obj.updateDynamic("refs")(refs)
+    __obj.updateDynamic("render")(render)
+    __obj.updateDynamic("setState")(setState)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ReactComponentLike]
+  }
+}
+

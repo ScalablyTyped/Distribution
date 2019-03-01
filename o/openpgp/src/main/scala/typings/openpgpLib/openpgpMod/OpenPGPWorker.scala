@@ -13,3 +13,22 @@ trait OpenPGPWorker extends js.Object {
   def seedRandom(buffer: stdLib.ArrayBuffer): scala.Unit
 }
 
+object OpenPGPWorker {
+  @scala.inline
+  def apply(
+    configure: js.Function1[js.Any, scala.Unit],
+    delegate: js.Function3[scala.Double, java.lang.String, js.Any, scala.Unit],
+    randomCallback: js.Function0[scala.Unit],
+    response: js.Function1[js.Any, scala.Unit],
+    seedRandom: js.Function1[stdLib.ArrayBuffer, scala.Unit]
+  ): OpenPGPWorker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configure")(configure)
+    __obj.updateDynamic("delegate")(delegate)
+    __obj.updateDynamic("randomCallback")(randomCallback)
+    __obj.updateDynamic("response")(response)
+    __obj.updateDynamic("seedRandom")(seedRandom)
+    __obj.asInstanceOf[OpenPGPWorker]
+  }
+}
+

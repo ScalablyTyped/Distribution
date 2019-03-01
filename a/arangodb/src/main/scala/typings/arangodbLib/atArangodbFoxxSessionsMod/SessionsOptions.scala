@@ -11,3 +11,18 @@ trait SessionsOptions extends js.Object {
   var transport: arangodbLib.FoxxNs.SessionTransport | js.Array[arangodbLib.FoxxNs.SessionTransport] | arangodbLib.arangodbLibStrings.cookie | arangodbLib.arangodbLibStrings.header
 }
 
+object SessionsOptions {
+  @scala.inline
+  def apply(
+    storage: arangodbLib.FoxxNs.SessionStorage | java.lang.String | arangodbLib.ArangoDBNs.Collection[_],
+    transport: arangodbLib.FoxxNs.SessionTransport | js.Array[arangodbLib.FoxxNs.SessionTransport] | arangodbLib.arangodbLibStrings.cookie | arangodbLib.arangodbLibStrings.header,
+    autoCreate: js.UndefOr[scala.Boolean] = js.undefined
+  ): SessionsOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate)
+    __obj.asInstanceOf[SessionsOptions]
+  }
+}
+

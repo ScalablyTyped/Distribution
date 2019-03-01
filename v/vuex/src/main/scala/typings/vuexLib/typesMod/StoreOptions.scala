@@ -15,3 +15,26 @@ trait StoreOptions[S] extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StoreOptions {
+  @scala.inline
+  def apply[S](
+    actions: ActionTree[S, S] = null,
+    getters: GetterTree[S, S] = null,
+    modules: ModuleTree[S] = null,
+    mutations: MutationTree[S] = null,
+    plugins: js.Array[Plugin[S]] = null,
+    state: S | js.Function0[S] = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined
+  ): StoreOptions[S] = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (getters != null) __obj.updateDynamic("getters")(getters)
+    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[StoreOptions[S]]
+  }
+}
+

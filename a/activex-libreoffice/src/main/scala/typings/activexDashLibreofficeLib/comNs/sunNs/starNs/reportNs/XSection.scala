@@ -70,3 +70,118 @@ trait XSection
   var Visible: scala.Boolean
 }
 
+object XSection {
+  @scala.inline
+  def apply(
+    BackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BackTransparent: scala.Boolean,
+    CanGrow: scala.Boolean,
+    CanShrink: scala.Boolean,
+    ConditionalPrintExpression: java.lang.String,
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    ForceNewPage: scala.Double,
+    Group: XGroup,
+    Height: scala.Double,
+    KeepTogether: scala.Boolean,
+    Name: java.lang.String,
+    NewRowOrCol: scala.Double,
+    Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RepeatSection: scala.Boolean,
+    ReportDefinition: XReportDefinition,
+    Visible: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    add: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit],
+    addContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    dispose: js.Function0[scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit],
+    removeContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XSection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BackColor")(BackColor)
+    __obj.updateDynamic("BackTransparent")(BackTransparent)
+    __obj.updateDynamic("CanGrow")(CanGrow)
+    __obj.updateDynamic("CanShrink")(CanShrink)
+    __obj.updateDynamic("ConditionalPrintExpression")(ConditionalPrintExpression)
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("ForceNewPage")(ForceNewPage)
+    __obj.updateDynamic("Group")(Group)
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("KeepTogether")(KeepTogether)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("NewRowOrCol")(NewRowOrCol)
+    __obj.updateDynamic("Parent")(Parent)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RepeatSection")(RepeatSection)
+    __obj.updateDynamic("ReportDefinition")(ReportDefinition)
+    __obj.updateDynamic("Visible")(Visible)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("addContainerListener")(addContainerListener)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("createEnumeration")(createEnumeration)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getByIndex")(getByIndex)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getParent")(getParent)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setParent")(setParent)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[XSection]
+  }
+}
+

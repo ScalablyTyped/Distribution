@@ -12,3 +12,16 @@ trait Definition extends js.Object {
   var template: js.Array[stdLib.Node]
 }
 
+object Definition {
+  @scala.inline
+  def apply(
+    template: js.Array[stdLib.Node],
+    createViewModel: js.Function2[/* params */ js.Any, /* options */ jqueryDotAjaxfileLib.Anon_ElementNode, _] = null
+  ): Definition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("template")(template)
+    if (createViewModel != null) __obj.updateDynamic("createViewModel")(createViewModel)
+    __obj.asInstanceOf[Definition]
+  }
+}
+

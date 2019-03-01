@@ -374,11 +374,17 @@ object CloudSearchDomainNs extends js.Object {
     var warnings: js.UndefOr[DocumentServiceWarnings] = js.undefined
   }
   
+  trait _ContentType extends js.Object
+  
+  trait _QueryParser extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Adds = scala.Double
   type BucketList = js.Array[Bucket]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ContentType = awsDashSdkLib.awsDashSdkLibStrings.`application/json` | awsDashSdkLib.awsDashSdkLibStrings.`application/xml` | java.lang.String
+  type ContentType = _ContentType | java.lang.String
   type Cursor = java.lang.String
   type Deletes = scala.Double
   type DocumentServiceWarnings = js.Array[DocumentServiceWarning]
@@ -393,7 +399,7 @@ object CloudSearchDomainNs extends js.Object {
   type Partial = scala.Boolean
   type Query = java.lang.String
   type QueryOptions = java.lang.String
-  type QueryParser = awsDashSdkLib.awsDashSdkLibStrings.simple | awsDashSdkLib.awsDashSdkLibStrings.structured | awsDashSdkLib.awsDashSdkLibStrings.lucene | awsDashSdkLib.awsDashSdkLibStrings.dismax | java.lang.String
+  type QueryParser = _QueryParser | java.lang.String
   type Return = java.lang.String
   type Size = scala.Double
   type Sort = java.lang.String
@@ -404,6 +410,6 @@ object CloudSearchDomainNs extends js.Object {
   type Suggestions = js.Array[SuggestionMatch]
   type SuggestionsSize = scala.Double
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsCloudsearchdomainMod.Blob | java.lang.String | nodeLib.streamMod.Readable
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-01-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

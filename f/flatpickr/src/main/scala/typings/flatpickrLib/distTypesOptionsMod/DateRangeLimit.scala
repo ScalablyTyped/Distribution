@@ -10,3 +10,13 @@ trait DateRangeLimit[D] extends js.Object {
   var to: D
 }
 
+object DateRangeLimit {
+  @scala.inline
+  def apply[D](from: D, to: D): DateRangeLimit[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DateRangeLimit[D]]
+  }
+}
+

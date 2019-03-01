@@ -20,3 +20,24 @@ trait SourceMapSpan extends js.Object {
   var sourceLine: scala.Double
 }
 
+object SourceMapSpan {
+  @scala.inline
+  def apply(
+    emittedColumn: scala.Double,
+    emittedLine: scala.Double,
+    sourceColumn: scala.Double,
+    sourceIndex: scala.Double,
+    sourceLine: scala.Double,
+    nameIndex: scala.Int | scala.Double = null
+  ): SourceMapSpan = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("emittedColumn")(emittedColumn)
+    __obj.updateDynamic("emittedLine")(emittedLine)
+    __obj.updateDynamic("sourceColumn")(sourceColumn)
+    __obj.updateDynamic("sourceIndex")(sourceIndex)
+    __obj.updateDynamic("sourceLine")(sourceLine)
+    if (nameIndex != null) __obj.updateDynamic("nameIndex")(nameIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SourceMapSpan]
+  }
+}
+

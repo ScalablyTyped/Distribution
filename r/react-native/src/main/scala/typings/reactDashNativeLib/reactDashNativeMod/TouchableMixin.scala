@@ -57,3 +57,30 @@ trait TouchableMixin extends js.Object {
   def touchableHandlePress(e: GestureResponderEvent): scala.Unit
 }
 
+object TouchableMixin {
+  @scala.inline
+  def apply(
+    touchableGetHighlightDelayMS: js.Function0[scala.Double],
+    touchableGetHitSlop: js.Function0[Insets],
+    touchableGetLongPressDelayMS: js.Function0[scala.Double],
+    touchableGetPressOutDelayMS: js.Function0[scala.Double],
+    touchableGetPressRectOffset: js.Function0[Insets],
+    touchableHandleActivePressIn: js.Function1[GestureResponderEvent, scala.Unit],
+    touchableHandleActivePressOut: js.Function1[GestureResponderEvent, scala.Unit],
+    touchableHandleLongPress: js.Function1[GestureResponderEvent, scala.Unit],
+    touchableHandlePress: js.Function1[GestureResponderEvent, scala.Unit]
+  ): TouchableMixin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("touchableGetHighlightDelayMS")(touchableGetHighlightDelayMS)
+    __obj.updateDynamic("touchableGetHitSlop")(touchableGetHitSlop)
+    __obj.updateDynamic("touchableGetLongPressDelayMS")(touchableGetLongPressDelayMS)
+    __obj.updateDynamic("touchableGetPressOutDelayMS")(touchableGetPressOutDelayMS)
+    __obj.updateDynamic("touchableGetPressRectOffset")(touchableGetPressRectOffset)
+    __obj.updateDynamic("touchableHandleActivePressIn")(touchableHandleActivePressIn)
+    __obj.updateDynamic("touchableHandleActivePressOut")(touchableHandleActivePressOut)
+    __obj.updateDynamic("touchableHandleLongPress")(touchableHandleLongPress)
+    __obj.updateDynamic("touchableHandlePress")(touchableHandlePress)
+    __obj.asInstanceOf[TouchableMixin]
+  }
+}
+

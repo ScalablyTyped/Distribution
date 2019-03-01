@@ -10,3 +10,13 @@ trait Anon_DurationScrollTop extends js.Object {
   var scrollTop: scala.Double
 }
 
+object Anon_DurationScrollTop {
+  @scala.inline
+  def apply(duration: scala.Double, scrollTop: scala.Double): Anon_DurationScrollTop = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("scrollTop")(scrollTop)
+    __obj.asInstanceOf[Anon_DurationScrollTop]
+  }
+}
+

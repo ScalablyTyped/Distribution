@@ -44,3 +44,22 @@ trait ConfigMap extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
 }
 
+object ConfigMap {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    binaryData: js.Object,
+    data: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMap,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
+  ): ConfigMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("binaryData")(binaryData)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[ConfigMap]
+  }
+}
+

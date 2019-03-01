@@ -10,3 +10,12 @@ trait Experimental extends js.Object {
   var authorization: js.UndefOr[AuthorizationConfig] = js.undefined
 }
 
+object Experimental {
+  @scala.inline
+  def apply(authorization: AuthorizationConfig = null): Experimental = {
+    val __obj = js.Dynamic.literal()
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization)
+    __obj.asInstanceOf[Experimental]
+  }
+}
+

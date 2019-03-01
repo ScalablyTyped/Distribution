@@ -14,3 +14,24 @@ trait File extends js.Object {
   var ts: js.UndefOr[typescriptLib.typescriptMod.tsNs.SourceFile] = js.undefined
 }
 
+object File {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    fileNameNormalized: java.lang.String,
+    fileNameOriginal: java.lang.String,
+    kind: FileKind,
+    gulp: gulpDashTypescriptLib.releaseTypesMod.VinylFile = null,
+    ts: typescriptLib.typescriptMod.tsNs.SourceFile = null
+  ): File = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("fileNameNormalized")(fileNameNormalized)
+    __obj.updateDynamic("fileNameOriginal")(fileNameOriginal)
+    __obj.updateDynamic("kind")(kind)
+    if (gulp != null) __obj.updateDynamic("gulp")(gulp)
+    if (ts != null) __obj.updateDynamic("ts")(ts)
+    __obj.asInstanceOf[File]
+  }
+}
+

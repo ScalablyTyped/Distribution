@@ -23,3 +23,13 @@ trait ConfigMapEnvSource extends js.Object {
   val optional: scala.Boolean
 }
 
+object ConfigMapEnvSource {
+  @scala.inline
+  def apply(name: java.lang.String, optional: scala.Boolean): ConfigMapEnvSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[ConfigMapEnvSource]
+  }
+}
+

@@ -154,3 +154,36 @@ trait INotificationsService extends js.Object {
   def warning(headline: java.lang.String, message: java.lang.String): INotification
 }
 
+object INotificationsService {
+  @scala.inline
+  def apply(
+    add: js.Function1[INotificationItem, INotification],
+    addView: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
+    current: js.Array[java.lang.String],
+    error: js.Function2[java.lang.String, java.lang.String, INotification],
+    getCurrent: js.Function0[js.Array[INotification]],
+    hasView: js.Function1[java.lang.String, scala.Boolean],
+    info: js.Function2[java.lang.String, java.lang.String, INotification],
+    remove: js.Function1[scala.Double, scala.Unit],
+    removeAll: js.Function0[scala.Unit],
+    showNotification: js.Function1[INotificationArgs, INotification],
+    success: js.Function2[java.lang.String, java.lang.String, INotification],
+    warning: js.Function2[java.lang.String, java.lang.String, INotification]
+  ): INotificationsService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("addView")(addView)
+    __obj.updateDynamic("current")(current)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("getCurrent")(getCurrent)
+    __obj.updateDynamic("hasView")(hasView)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removeAll")(removeAll)
+    __obj.updateDynamic("showNotification")(showNotification)
+    __obj.updateDynamic("success")(success)
+    __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[INotificationsService]
+  }
+}
+

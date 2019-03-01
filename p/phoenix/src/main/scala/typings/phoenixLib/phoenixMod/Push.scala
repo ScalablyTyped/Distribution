@@ -11,3 +11,18 @@ trait Push extends js.Object {
   def send(): scala.Unit
 }
 
+object Push {
+  @scala.inline
+  def apply(
+    receive: js.Function2[java.lang.String, js.Function1[/* response */ js.UndefOr[js.Any], scala.Unit], Push],
+    resend: js.Function1[scala.Double, scala.Unit],
+    send: js.Function0[scala.Unit]
+  ): Push = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("receive")(receive)
+    __obj.updateDynamic("resend")(resend)
+    __obj.updateDynamic("send")(send)
+    __obj.asInstanceOf[Push]
+  }
+}
+

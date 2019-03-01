@@ -24,3 +24,20 @@ trait TooltipSettings extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TooltipSettings {
+  @scala.inline
+  def apply(
+    captionTemplate: java.lang.String = null,
+    enableCaptionTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): TooltipSettings = {
+    val __obj = js.Dynamic.literal()
+    if (captionTemplate != null) __obj.updateDynamic("captionTemplate")(captionTemplate)
+    if (!js.isUndefined(enableCaptionTooltip)) __obj.updateDynamic("enableCaptionTooltip")(enableCaptionTooltip)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[TooltipSettings]
+  }
+}
+

@@ -45,3 +45,32 @@ trait CopyPattern extends js.Object {
   ] = js.undefined
 }
 
+object CopyPattern {
+  @scala.inline
+  def apply(
+    from: java.lang.String | MiniMatchGlob,
+    cache: scala.Boolean | copyDashWebpackDashPluginLib.Anon_Key = null,
+    context: java.lang.String = null,
+    flatten: js.UndefOr[scala.Boolean] = js.undefined,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    fromArgs: MiniMatchOptions = null,
+    ignore: js.Array[java.lang.String | MiniMatchGlob] = null,
+    to: java.lang.String = null,
+    toType: copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.file | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.dir | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.template = null,
+    transform: js.Function2[/* content */ java.lang.String, /* path */ java.lang.String, java.lang.String] = null
+  ): CopyPattern = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (fromArgs != null) __obj.updateDynamic("fromArgs")(fromArgs)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    if (to != null) __obj.updateDynamic("to")(to)
+    if (toType != null) __obj.updateDynamic("toType")(toType.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[CopyPattern]
+  }
+}
+

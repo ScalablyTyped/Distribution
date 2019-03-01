@@ -51,3 +51,24 @@ trait TableColumnLoadOptions extends js.Object {
   var values: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableColumnLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    filter: FilterLoadOptions = null,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    index: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    values: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableColumnLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[TableColumnLoadOptions]
+  }
+}
+

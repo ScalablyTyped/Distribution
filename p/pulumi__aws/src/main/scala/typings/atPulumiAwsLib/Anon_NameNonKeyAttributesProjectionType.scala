@@ -12,3 +12,20 @@ trait Anon_NameNonKeyAttributesProjectionType extends js.Object {
   var rangeKey: java.lang.String
 }
 
+object Anon_NameNonKeyAttributesProjectionType {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    projectionType: java.lang.String,
+    rangeKey: java.lang.String,
+    nonKeyAttributes: js.Array[java.lang.String] = null
+  ): Anon_NameNonKeyAttributesProjectionType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("projectionType")(projectionType)
+    __obj.updateDynamic("rangeKey")(rangeKey)
+    if (nonKeyAttributes != null) __obj.updateDynamic("nonKeyAttributes")(nonKeyAttributes)
+    __obj.asInstanceOf[Anon_NameNonKeyAttributesProjectionType]
+  }
+}
+

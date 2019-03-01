@@ -53,3 +53,22 @@ trait Source extends js.Object {
   var spec: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object Source {
+  @scala.inline
+  def apply(
+    baseSpecs: js.Array[stdLib.Record[java.lang.String, _]] = null,
+    codec: stdLib.Record[java.lang.String, _] = null,
+    doesNotNeedSplitting: js.UndefOr[scala.Boolean] = js.undefined,
+    metadata: SourceMetadata = null,
+    spec: stdLib.Record[java.lang.String, _] = null
+  ): Source = {
+    val __obj = js.Dynamic.literal()
+    if (baseSpecs != null) __obj.updateDynamic("baseSpecs")(baseSpecs)
+    if (codec != null) __obj.updateDynamic("codec")(codec)
+    if (!js.isUndefined(doesNotNeedSplitting)) __obj.updateDynamic("doesNotNeedSplitting")(doesNotNeedSplitting)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (spec != null) __obj.updateDynamic("spec")(spec)
+    __obj.asInstanceOf[Source]
+  }
+}
+

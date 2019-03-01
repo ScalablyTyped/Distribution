@@ -31,3 +31,22 @@ trait Options extends js.Object {
   var thunk: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    create: js.UndefOr[scala.Boolean] = js.undefined,
+    cwd: java.lang.String = null,
+    files: java.lang.String | js.Array[java.lang.String] = null,
+    thunk: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(create)) __obj.updateDynamic("create")(create)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (!js.isUndefined(thunk)) __obj.updateDynamic("thunk")(thunk)
+    __obj.asInstanceOf[Options]
+  }
+}
+

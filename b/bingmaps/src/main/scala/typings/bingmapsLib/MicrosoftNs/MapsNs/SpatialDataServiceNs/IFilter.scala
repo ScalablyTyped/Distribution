@@ -13,3 +13,13 @@ trait IFilter extends js.Object {
   def execute(`object`: js.Any): scala.Boolean
 }
 
+object IFilter {
+  @scala.inline
+  def apply(execute: js.Function1[js.Any, scala.Boolean], toString: js.Function0[java.lang.String]): IFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[IFilter]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_BaseY extends js.Object {
   var topY: scala.Double
 }
 
+object Anon_BaseY {
+  @scala.inline
+  def apply(baseY: scala.Double, topY: scala.Double): Anon_BaseY = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseY")(baseY)
+    __obj.updateDynamic("topY")(topY)
+    __obj.asInstanceOf[Anon_BaseY]
+  }
+}
+

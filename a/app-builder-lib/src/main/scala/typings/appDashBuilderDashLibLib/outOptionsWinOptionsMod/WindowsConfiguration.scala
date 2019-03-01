@@ -105,3 +105,48 @@ import scala.scalajs.js.annotation._
   val verifyUpdateCodeSignature: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WindowsConfiguration {
+  @scala.inline
+  def apply(
+    additionalCertificateFile: java.lang.String = null,
+    certificateFile: java.lang.String = null,
+    certificatePassword: java.lang.String = null,
+    certificateSha1: java.lang.String = null,
+    certificateSubjectName: java.lang.String = null,
+    icon: java.lang.String = null,
+    legalTrademarks: java.lang.String = null,
+    publisherName: java.lang.String | js.Array[java.lang.String] = null,
+    requestedExecutionLevel: RequestedExecutionLevel = null,
+    rfc3161TimeStampServer: java.lang.String = null,
+    sign: appDashBuilderDashLibLib.outCodeSignWindowsCodeSignMod.CustomWindowsSign | java.lang.String = null,
+    signAndEditExecutable: js.UndefOr[scala.Boolean] = js.undefined,
+    signDlls: js.UndefOr[scala.Boolean] = js.undefined,
+    signingHashAlgorithms: js.Array[
+      appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.sha1 | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.sha256
+    ] = null,
+    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfigType */ js.Any = null,
+    timeStampServer: java.lang.String = null,
+    verifyUpdateCodeSignature: js.UndefOr[scala.Boolean] = js.undefined
+  ): WindowsConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (additionalCertificateFile != null) __obj.updateDynamic("additionalCertificateFile")(additionalCertificateFile)
+    if (certificateFile != null) __obj.updateDynamic("certificateFile")(certificateFile)
+    if (certificatePassword != null) __obj.updateDynamic("certificatePassword")(certificatePassword)
+    if (certificateSha1 != null) __obj.updateDynamic("certificateSha1")(certificateSha1)
+    if (certificateSubjectName != null) __obj.updateDynamic("certificateSubjectName")(certificateSubjectName)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (legalTrademarks != null) __obj.updateDynamic("legalTrademarks")(legalTrademarks)
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
+    if (requestedExecutionLevel != null) __obj.updateDynamic("requestedExecutionLevel")(requestedExecutionLevel)
+    if (rfc3161TimeStampServer != null) __obj.updateDynamic("rfc3161TimeStampServer")(rfc3161TimeStampServer)
+    if (sign != null) __obj.updateDynamic("sign")(sign.asInstanceOf[js.Any])
+    if (!js.isUndefined(signAndEditExecutable)) __obj.updateDynamic("signAndEditExecutable")(signAndEditExecutable)
+    if (!js.isUndefined(signDlls)) __obj.updateDynamic("signDlls")(signDlls)
+    if (signingHashAlgorithms != null) __obj.updateDynamic("signingHashAlgorithms")(signingHashAlgorithms)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (timeStampServer != null) __obj.updateDynamic("timeStampServer")(timeStampServer)
+    if (!js.isUndefined(verifyUpdateCodeSignature)) __obj.updateDynamic("verifyUpdateCodeSignature")(verifyUpdateCodeSignature)
+    __obj.asInstanceOf[WindowsConfiguration]
+  }
+}
+

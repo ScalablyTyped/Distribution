@@ -9,3 +9,12 @@ trait Anon_IsLoading extends js.Object {
   var isLoading: scala.Boolean
 }
 
+object Anon_IsLoading {
+  @scala.inline
+  def apply(isLoading: scala.Boolean): Anon_IsLoading = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isLoading")(isLoading)
+    __obj.asInstanceOf[Anon_IsLoading]
+  }
+}
+

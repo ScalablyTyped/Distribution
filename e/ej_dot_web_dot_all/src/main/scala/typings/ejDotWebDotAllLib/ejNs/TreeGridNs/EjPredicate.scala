@@ -20,3 +20,20 @@ trait EjPredicate extends js.Object {
   var ignoreCase: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EjPredicate {
+  @scala.inline
+  def apply(
+    fieldName: java.lang.String = null,
+    filterOperator: java.lang.String = null,
+    filterValue: java.lang.String = null,
+    ignoreCase: js.UndefOr[scala.Boolean] = js.undefined
+  ): EjPredicate = {
+    val __obj = js.Dynamic.literal()
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (filterOperator != null) __obj.updateDynamic("filterOperator")(filterOperator)
+    if (filterValue != null) __obj.updateDynamic("filterValue")(filterValue)
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    __obj.asInstanceOf[EjPredicate]
+  }
+}
+

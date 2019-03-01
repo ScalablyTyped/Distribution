@@ -16,3 +16,13 @@ trait FilteringEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object FilteringEventUIParam {
+  @scala.inline
+  def apply(expression: js.Any = null, owner: js.Any = null): FilteringEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (expression != null) __obj.updateDynamic("expression")(expression)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[FilteringEventUIParam]
+  }
+}
+

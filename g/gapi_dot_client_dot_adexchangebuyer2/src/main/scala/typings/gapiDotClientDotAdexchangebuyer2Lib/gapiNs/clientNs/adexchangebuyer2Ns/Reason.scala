@@ -19,3 +19,13 @@ trait Reason extends js.Object {
   var status: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Reason {
+  @scala.inline
+  def apply(count: java.lang.String = null, status: scala.Int | scala.Double = null): Reason = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Reason]
+  }
+}
+

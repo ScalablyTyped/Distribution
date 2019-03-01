@@ -19,3 +19,34 @@ trait MockReq extends js.Object {
   var session: js.Object
 }
 
+object MockReq {
+  @scala.inline
+  def apply(
+    accepts: sinonLib.sinonMod.SinonNs.SinonStub,
+    acceptsCharsets: sinonLib.sinonMod.SinonNs.SinonStub,
+    acceptsEncodings: sinonLib.sinonMod.SinonNs.SinonStub,
+    acceptsLanguages: sinonLib.sinonMod.SinonNs.SinonStub,
+    body: js.Object,
+    flash: sinonLib.sinonMod.SinonNs.SinonStub,
+    get: sinonLib.sinonMod.SinonNs.SinonStub,
+    is: sinonLib.sinonMod.SinonNs.SinonStub,
+    params: js.Object,
+    query: js.Object,
+    session: js.Object
+  ): MockReq = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accepts")(accepts)
+    __obj.updateDynamic("acceptsCharsets")(acceptsCharsets)
+    __obj.updateDynamic("acceptsEncodings")(acceptsEncodings)
+    __obj.updateDynamic("acceptsLanguages")(acceptsLanguages)
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("flash")(flash)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("is")(is)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("session")(session)
+    __obj.asInstanceOf[MockReq]
+  }
+}
+

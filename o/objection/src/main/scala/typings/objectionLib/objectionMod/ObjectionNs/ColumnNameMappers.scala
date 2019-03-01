@@ -10,3 +10,13 @@ trait ColumnNameMappers extends js.Object {
   def parse(json: Pojo): Pojo
 }
 
+object ColumnNameMappers {
+  @scala.inline
+  def apply(format: js.Function1[Pojo, Pojo], parse: js.Function1[Pojo, Pojo]): ColumnNameMappers = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("parse")(parse)
+    __obj.asInstanceOf[ColumnNameMappers]
+  }
+}
+

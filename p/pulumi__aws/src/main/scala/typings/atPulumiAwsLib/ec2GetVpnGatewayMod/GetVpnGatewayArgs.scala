@@ -37,3 +37,26 @@ trait GetVpnGatewayArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetVpnGatewayArgs {
+  @scala.inline
+  def apply(
+    amazonSideAsn: java.lang.String = null,
+    attachedVpcId: java.lang.String = null,
+    availabilityZone: java.lang.String = null,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    id: java.lang.String = null,
+    state: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetVpnGatewayArgs = {
+    val __obj = js.Dynamic.literal()
+    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn)
+    if (attachedVpcId != null) __obj.updateDynamic("attachedVpcId")(attachedVpcId)
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetVpnGatewayArgs]
+  }
+}
+

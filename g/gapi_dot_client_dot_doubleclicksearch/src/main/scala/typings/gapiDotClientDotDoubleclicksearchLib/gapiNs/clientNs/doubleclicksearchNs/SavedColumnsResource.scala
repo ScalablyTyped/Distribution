@@ -10,3 +10,17 @@ trait SavedColumnsResource extends js.Object {
   def list(request: gapiDotClientDotDoubleclicksearchLib.Anon_AdvertiserIdAgencyId): gapiDotClientLib.gapiNs.clientNs.Request[SavedColumnList]
 }
 
+object SavedColumnsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotDoubleclicksearchLib.Anon_AdvertiserIdAgencyId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SavedColumnList]
+    ]
+  ): SavedColumnsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[SavedColumnsResource]
+  }
+}
+

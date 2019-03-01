@@ -15,3 +15,26 @@ trait Anon_FR extends js.Object {
   var WE: rruleLib.distEsmSrcWeekdayMod.Weekday
 }
 
+object Anon_FR {
+  @scala.inline
+  def apply(
+    FR: rruleLib.distEsmSrcWeekdayMod.Weekday,
+    MO: rruleLib.distEsmSrcWeekdayMod.Weekday,
+    SA: rruleLib.distEsmSrcWeekdayMod.Weekday,
+    SU: rruleLib.distEsmSrcWeekdayMod.Weekday,
+    TH: rruleLib.distEsmSrcWeekdayMod.Weekday,
+    TU: rruleLib.distEsmSrcWeekdayMod.Weekday,
+    WE: rruleLib.distEsmSrcWeekdayMod.Weekday
+  ): Anon_FR = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FR")(FR)
+    __obj.updateDynamic("MO")(MO)
+    __obj.updateDynamic("SA")(SA)
+    __obj.updateDynamic("SU")(SU)
+    __obj.updateDynamic("TH")(TH)
+    __obj.updateDynamic("TU")(TU)
+    __obj.updateDynamic("WE")(WE)
+    __obj.asInstanceOf[Anon_FR]
+  }
+}
+

@@ -180,3 +180,86 @@ trait CarouselProps extends js.Object {
   var wrapAround: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CarouselProps {
+  @scala.inline
+  def apply(
+    afterSlide: js.Function1[/* prevSlide */ scala.Double, scala.Unit] = null,
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplayInterval: scala.Int | scala.Double = null,
+    beforeSlide: js.Function2[/* currentSlide */ scala.Double, /* endSlide */ scala.Double, scala.Unit] = null,
+    cellAlign: CarouselCellAlignProp = null,
+    cellSpacing: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    dragging: js.UndefOr[scala.Boolean] = js.undefined,
+    easing: java.lang.String = null,
+    edgeEasing: java.lang.String = null,
+    enableKeyboardControls: js.UndefOr[scala.Boolean] = js.undefined,
+    frameOverflow: java.lang.String = null,
+    framePadding: java.lang.String = null,
+    heightMode: CarouselHeightModeProp = null,
+    initialSlideHeight: scala.Int | scala.Double = null,
+    initialSlideWidth: scala.Int | scala.Double = null,
+    onResize: js.Function0[scala.Unit] = null,
+    pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    renderBottomCenterControls: CarouselRenderControl = null,
+    renderBottomLeftControls: CarouselRenderControl = null,
+    renderBottomRightControls: CarouselRenderControl = null,
+    renderCenterCenterControls: CarouselRenderControl = null,
+    renderCenterLeftControls: CarouselRenderControl = null,
+    renderCenterRightControls: CarouselRenderControl = null,
+    renderTopCenterControls: CarouselRenderControl = null,
+    renderTopLeftControls: CarouselRenderControl = null,
+    renderTopRightControls: CarouselRenderControl = null,
+    slideIndex: scala.Int | scala.Double = null,
+    slideWidth: CarouselSlideWidthProp = null,
+    slidesToScroll: CarouselSlidesToScrollProp = null,
+    slidesToShow: scala.Int | scala.Double = null,
+    speed: scala.Int | scala.Double = null,
+    swiping: js.UndefOr[scala.Boolean] = js.undefined,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String = null,
+    withoutControls: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapAround: js.UndefOr[scala.Boolean] = js.undefined
+  ): CarouselProps = {
+    val __obj = js.Dynamic.literal()
+    if (afterSlide != null) __obj.updateDynamic("afterSlide")(afterSlide)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (autoplayInterval != null) __obj.updateDynamic("autoplayInterval")(autoplayInterval.asInstanceOf[js.Any])
+    if (beforeSlide != null) __obj.updateDynamic("beforeSlide")(beforeSlide)
+    if (cellAlign != null) __obj.updateDynamic("cellAlign")(cellAlign)
+    if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging)
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (edgeEasing != null) __obj.updateDynamic("edgeEasing")(edgeEasing)
+    if (!js.isUndefined(enableKeyboardControls)) __obj.updateDynamic("enableKeyboardControls")(enableKeyboardControls)
+    if (frameOverflow != null) __obj.updateDynamic("frameOverflow")(frameOverflow)
+    if (framePadding != null) __obj.updateDynamic("framePadding")(framePadding)
+    if (heightMode != null) __obj.updateDynamic("heightMode")(heightMode)
+    if (initialSlideHeight != null) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.asInstanceOf[js.Any])
+    if (initialSlideWidth != null) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.asInstanceOf[js.Any])
+    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
+    if (renderBottomCenterControls != null) __obj.updateDynamic("renderBottomCenterControls")(renderBottomCenterControls)
+    if (renderBottomLeftControls != null) __obj.updateDynamic("renderBottomLeftControls")(renderBottomLeftControls)
+    if (renderBottomRightControls != null) __obj.updateDynamic("renderBottomRightControls")(renderBottomRightControls)
+    if (renderCenterCenterControls != null) __obj.updateDynamic("renderCenterCenterControls")(renderCenterCenterControls)
+    if (renderCenterLeftControls != null) __obj.updateDynamic("renderCenterLeftControls")(renderCenterLeftControls)
+    if (renderCenterRightControls != null) __obj.updateDynamic("renderCenterRightControls")(renderCenterRightControls)
+    if (renderTopCenterControls != null) __obj.updateDynamic("renderTopCenterControls")(renderTopCenterControls)
+    if (renderTopLeftControls != null) __obj.updateDynamic("renderTopLeftControls")(renderTopLeftControls)
+    if (renderTopRightControls != null) __obj.updateDynamic("renderTopRightControls")(renderTopRightControls)
+    if (slideIndex != null) __obj.updateDynamic("slideIndex")(slideIndex.asInstanceOf[js.Any])
+    if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
+    if (slidesToScroll != null) __obj.updateDynamic("slidesToScroll")(slidesToScroll.asInstanceOf[js.Any])
+    if (slidesToShow != null) __obj.updateDynamic("slidesToShow")(slidesToShow.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(swiping)) __obj.updateDynamic("swiping")(swiping)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (width != null) __obj.updateDynamic("width")(width)
+    if (!js.isUndefined(withoutControls)) __obj.updateDynamic("withoutControls")(withoutControls)
+    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround)
+    __obj.asInstanceOf[CarouselProps]
+  }
+}
+

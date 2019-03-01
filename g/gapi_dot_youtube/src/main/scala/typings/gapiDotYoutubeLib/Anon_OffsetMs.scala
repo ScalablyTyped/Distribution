@@ -16,3 +16,12 @@ trait Anon_OffsetMs extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_OffsetMs {
+  @scala.inline
+  def apply(offsetMs: scala.Double, `type`: java.lang.String): Anon_OffsetMs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("offsetMs")(offsetMs)
+    __obj.asInstanceOf[Anon_OffsetMs]
+  }
+}
+

@@ -14,3 +14,24 @@ trait NvFBU extends js.Object {
   var y: scala.Double
 }
 
+object NvFBU {
+  @scala.inline
+  def apply(
+    encoding: scala.Double,
+    encodingName: java.lang.String,
+    height: scala.Double,
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): NvFBU = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encoding")(encoding)
+    __obj.updateDynamic("encodingName")(encodingName)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[NvFBU]
+  }
+}
+

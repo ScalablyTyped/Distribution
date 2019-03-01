@@ -16,3 +16,13 @@ trait _Impl extends js.Object {
   var url: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(action: java.lang.String, url: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

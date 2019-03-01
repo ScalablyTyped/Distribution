@@ -11,3 +11,18 @@ trait LinuxParameters extends js.Object {
   var initProcessEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LinuxParameters {
+  @scala.inline
+  def apply(
+    capabilities: KernelCapabilities = null,
+    devices: js.Array[Device] = null,
+    initProcessEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): LinuxParameters = {
+    val __obj = js.Dynamic.literal()
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    if (devices != null) __obj.updateDynamic("devices")(devices)
+    if (!js.isUndefined(initProcessEnabled)) __obj.updateDynamic("initProcessEnabled")(initProcessEnabled)
+    __obj.asInstanceOf[LinuxParameters]
+  }
+}
+

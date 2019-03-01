@@ -9,3 +9,12 @@ trait I18nextProviderProps extends js.Object {
   var i18n: i18nextLib.i18nextMod.i18nextNs.i18n
 }
 
+object I18nextProviderProps {
+  @scala.inline
+  def apply(i18n: i18nextLib.i18nextMod.i18nextNs.i18n): I18nextProviderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("i18n")(i18n)
+    __obj.asInstanceOf[I18nextProviderProps]
+  }
+}
+

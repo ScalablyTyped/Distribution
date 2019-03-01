@@ -17,3 +17,23 @@ trait CurrentDragComponentInfo extends js.Object {
   var viewportInfo: js.UndefOr[gaeaDashModelLib.Anon_MapUniqueKey] = js.undefined
 }
 
+object CurrentDragComponentInfo {
+  @scala.inline
+  def apply(
+    dragStartIndex: scala.Double,
+    dragStartParentElement: reactLib.HTMLElement,
+    `type`: gaeaDashModelLib.gaeaDashModelLibStrings.`new` | gaeaDashModelLib.gaeaDashModelLibStrings.combo | gaeaDashModelLib.gaeaDashModelLibStrings.viewport,
+    comboInfo: gaeaDashModelLib.Anon_Source = null,
+    newInfo: gaeaDashModelLib.Anon_UniqueKey = null,
+    viewportInfo: gaeaDashModelLib.Anon_MapUniqueKey = null
+  ): CurrentDragComponentInfo = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("dragStartIndex")(dragStartIndex)
+    __obj.updateDynamic("dragStartParentElement")(dragStartParentElement)
+    if (comboInfo != null) __obj.updateDynamic("comboInfo")(comboInfo)
+    if (newInfo != null) __obj.updateDynamic("newInfo")(newInfo)
+    if (viewportInfo != null) __obj.updateDynamic("viewportInfo")(viewportInfo)
+    __obj.asInstanceOf[CurrentDragComponentInfo]
+  }
+}
+

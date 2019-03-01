@@ -20,3 +20,26 @@ trait UploadFileOptions extends js.Object {
   var toUrl: java.lang.String
 }
 
+object UploadFileOptions {
+  @scala.inline
+  def apply(
+    files: js.Array[UploadFileItem],
+    toUrl: java.lang.String,
+    begin: UploadCallbackBegin = null,
+    fields: Fields = null,
+    headers: Headers = null,
+    method: java.lang.String = null,
+    progress: UploadCallbackProgress = null
+  ): UploadFileOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("files")(files)
+    __obj.updateDynamic("toUrl")(toUrl)
+    if (begin != null) __obj.updateDynamic("begin")(begin)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    __obj.asInstanceOf[UploadFileOptions]
+  }
+}
+

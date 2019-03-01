@@ -23,3 +23,13 @@ trait DocumentUpdateData extends js.Object {
   var view: js.UndefOr[DocumentViewUpdateData] = js.undefined
 }
 
+object DocumentUpdateData {
+  @scala.inline
+  def apply(application: ApplicationUpdateData = null, view: DocumentViewUpdateData = null): DocumentUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (application != null) __obj.updateDynamic("application")(application)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[DocumentUpdateData]
+  }
+}
+

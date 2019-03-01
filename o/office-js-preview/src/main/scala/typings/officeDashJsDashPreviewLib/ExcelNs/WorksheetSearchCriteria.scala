@@ -31,3 +31,16 @@ trait WorksheetSearchCriteria extends js.Object {
   var matchCase: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WorksheetSearchCriteria {
+  @scala.inline
+  def apply(
+    completeMatch: js.UndefOr[scala.Boolean] = js.undefined,
+    matchCase: js.UndefOr[scala.Boolean] = js.undefined
+  ): WorksheetSearchCriteria = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(completeMatch)) __obj.updateDynamic("completeMatch")(completeMatch)
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    __obj.asInstanceOf[WorksheetSearchCriteria]
+  }
+}
+

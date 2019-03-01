@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object webpackDashMergeLibStrings {
   @js.native
-  sealed trait append extends js.Object
+  sealed trait append
+    extends webpackDashMergeLib.webpackDashMergeMod.webpackMergeNs.MergeStrategy
   
   @js.native
-  sealed trait prepend extends js.Object
+  sealed trait prepend
+    extends webpackDashMergeLib.webpackDashMergeMod.webpackMergeNs.MergeStrategy
   
   @js.native
-  sealed trait replace extends js.Object
+  sealed trait replace
+    extends webpackDashMergeLib.webpackDashMergeMod.webpackMergeNs.MergeStrategy
   
   @scala.inline
   def append: append = "append".asInstanceOf[append]

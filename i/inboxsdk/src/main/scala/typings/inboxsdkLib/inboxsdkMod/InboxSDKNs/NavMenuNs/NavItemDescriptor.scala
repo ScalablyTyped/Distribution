@@ -21,3 +21,34 @@ trait NavItemDescriptor extends js.Object {
   var `type`: js.UndefOr[NavItemTypes] = js.undefined
 }
 
+object NavItemDescriptor {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    accessory: CreateAccessoryDescriptor | IconButtonAccessoryDescriptor | DropdownButtonAccessoryDescriptor = null,
+    backgroundColor: java.lang.String = null,
+    expanderForegroundColor: java.lang.String = null,
+    iconClass: java.lang.String = null,
+    iconUrl: java.lang.String = null,
+    onClick: js.Function1[/* event */ inboxsdkLib.Anon_PreventDefault, scala.Unit] = null,
+    orderHint: scala.Int | scala.Double = null,
+    routeID: java.lang.String = null,
+    routeParams: js.Object = null,
+    `type`: NavItemTypes = null
+  ): NavItemDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (accessory != null) __obj.updateDynamic("accessory")(accessory.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (expanderForegroundColor != null) __obj.updateDynamic("expanderForegroundColor")(expanderForegroundColor)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    if (routeID != null) __obj.updateDynamic("routeID")(routeID)
+    if (routeParams != null) __obj.updateDynamic("routeParams")(routeParams)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NavItemDescriptor]
+  }
+}
+

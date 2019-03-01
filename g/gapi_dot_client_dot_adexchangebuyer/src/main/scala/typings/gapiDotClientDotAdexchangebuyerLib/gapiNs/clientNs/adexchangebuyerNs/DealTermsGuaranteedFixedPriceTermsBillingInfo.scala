@@ -22,3 +22,20 @@ trait DealTermsGuaranteedFixedPriceTermsBillingInfo extends js.Object {
   var price: js.UndefOr[Price] = js.undefined
 }
 
+object DealTermsGuaranteedFixedPriceTermsBillingInfo {
+  @scala.inline
+  def apply(
+    currencyConversionTimeMs: java.lang.String = null,
+    dfpLineItemId: java.lang.String = null,
+    originalContractedQuantity: java.lang.String = null,
+    price: Price = null
+  ): DealTermsGuaranteedFixedPriceTermsBillingInfo = {
+    val __obj = js.Dynamic.literal()
+    if (currencyConversionTimeMs != null) __obj.updateDynamic("currencyConversionTimeMs")(currencyConversionTimeMs)
+    if (dfpLineItemId != null) __obj.updateDynamic("dfpLineItemId")(dfpLineItemId)
+    if (originalContractedQuantity != null) __obj.updateDynamic("originalContractedQuantity")(originalContractedQuantity)
+    if (price != null) __obj.updateDynamic("price")(price)
+    __obj.asInstanceOf[DealTermsGuaranteedFixedPriceTermsBillingInfo]
+  }
+}
+

@@ -28,3 +28,22 @@ trait DesaturationColorMapping extends js.Object {
   var to: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DesaturationColorMapping {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    from: scala.Int | scala.Double = null,
+    rangeMaximum: scala.Int | scala.Double = null,
+    rangeMinimum: scala.Int | scala.Double = null,
+    to: scala.Int | scala.Double = null
+  ): DesaturationColorMapping = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (rangeMaximum != null) __obj.updateDynamic("rangeMaximum")(rangeMaximum.asInstanceOf[js.Any])
+    if (rangeMinimum != null) __obj.updateDynamic("rangeMinimum")(rangeMinimum.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DesaturationColorMapping]
+  }
+}
+

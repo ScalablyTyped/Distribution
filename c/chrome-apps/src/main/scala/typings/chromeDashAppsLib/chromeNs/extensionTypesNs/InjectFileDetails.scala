@@ -11,3 +11,24 @@ trait InjectFileDetails
   var file: java.lang.String
 }
 
+object InjectFileDetails {
+  @scala.inline
+  def apply(
+    cssOrigin: CSSOrigin,
+    file: java.lang.String,
+    runAt: RunAt,
+    allFrames: js.UndefOr[scala.Boolean] = js.undefined,
+    frameId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    matchAboutBlank: js.UndefOr[scala.Boolean] = js.undefined
+  ): InjectFileDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cssOrigin")(cssOrigin)
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("runAt")(runAt)
+    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames)
+    if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId)
+    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank)
+    __obj.asInstanceOf[InjectFileDetails]
+  }
+}
+

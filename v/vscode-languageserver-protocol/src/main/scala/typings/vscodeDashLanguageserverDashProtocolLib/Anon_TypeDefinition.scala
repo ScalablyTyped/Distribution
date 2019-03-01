@@ -12,3 +12,12 @@ trait Anon_TypeDefinition extends js.Object {
   var typeDefinition: js.UndefOr[Anon_DynamicRegistrationLinkSupport] = js.undefined
 }
 
+object Anon_TypeDefinition {
+  @scala.inline
+  def apply(typeDefinition: Anon_DynamicRegistrationLinkSupport = null): Anon_TypeDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (typeDefinition != null) __obj.updateDynamic("typeDefinition")(typeDefinition)
+    __obj.asInstanceOf[Anon_TypeDefinition]
+  }
+}
+

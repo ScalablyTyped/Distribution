@@ -9,3 +9,12 @@ trait Anon_Primary extends js.Object {
   var primary: scala.Boolean
 }
 
+object Anon_Primary {
+  @scala.inline
+  def apply(primary: scala.Boolean): Anon_Primary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("primary")(primary)
+    __obj.asInstanceOf[Anon_Primary]
+  }
+}
+

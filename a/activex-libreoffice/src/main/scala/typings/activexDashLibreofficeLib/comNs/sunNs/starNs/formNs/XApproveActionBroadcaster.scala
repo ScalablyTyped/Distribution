@@ -24,3 +24,22 @@ trait XApproveActionBroadcaster
   def removeApproveActionListener(aListener: XApproveActionListener): scala.Unit
 }
 
+object XApproveActionBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addApproveActionListener: js.Function1[XApproveActionListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeApproveActionListener: js.Function1[XApproveActionListener, scala.Unit]
+  ): XApproveActionBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addApproveActionListener")(addApproveActionListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeApproveActionListener")(removeApproveActionListener)
+    __obj.asInstanceOf[XApproveActionBroadcaster]
+  }
+}
+

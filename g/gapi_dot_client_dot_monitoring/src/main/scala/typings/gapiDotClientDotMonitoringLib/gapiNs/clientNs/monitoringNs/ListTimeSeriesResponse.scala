@@ -15,3 +15,13 @@ trait ListTimeSeriesResponse extends js.Object {
   var timeSeries: js.UndefOr[js.Array[TimeSeries]] = js.undefined
 }
 
+object ListTimeSeriesResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, timeSeries: js.Array[TimeSeries] = null): ListTimeSeriesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (timeSeries != null) __obj.updateDynamic("timeSeries")(timeSeries)
+    __obj.asInstanceOf[ListTimeSeriesResponse]
+  }
+}
+

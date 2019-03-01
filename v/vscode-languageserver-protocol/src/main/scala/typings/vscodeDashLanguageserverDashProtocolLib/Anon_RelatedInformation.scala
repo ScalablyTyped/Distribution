@@ -16,3 +16,16 @@ trait Anon_RelatedInformation extends js.Object {
   var tagSupport: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_RelatedInformation {
+  @scala.inline
+  def apply(
+    relatedInformation: js.UndefOr[scala.Boolean] = js.undefined,
+    tagSupport: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_RelatedInformation = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(relatedInformation)) __obj.updateDynamic("relatedInformation")(relatedInformation)
+    if (!js.isUndefined(tagSupport)) __obj.updateDynamic("tagSupport")(tagSupport)
+    __obj.asInstanceOf[Anon_RelatedInformation]
+  }
+}
+

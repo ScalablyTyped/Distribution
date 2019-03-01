@@ -8,13 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Emitter
   extends adoneLib.adoneNs.eventNs.Emitter {
-  def on(
-    event: EndHookEvent | StartHookEvent,
-    listener: js.Function1[
-      (/* event */ adoneLib.Anon_BlockHook) | (/* event */ adoneLib.Anon_BlockHookMeta), 
-      scala.Unit
-    ]
-  ): this.type = js.native
+  def on(event: EndHookEvent, listener: js.Function1[/* event */ adoneLib.Anon_BlockHookMeta, scala.Unit]): this.type = js.native
+  def on(event: StartHookEvent, listener: js.Function1[/* event */ adoneLib.Anon_BlockHook, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_done(event: adoneLib.adoneLibStrings.done, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")

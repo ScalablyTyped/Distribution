@@ -42,3 +42,30 @@ trait ITileLayer extends js.Object {
   ): heremapsLib.HNs.mapNs.layerNs.ITileLayerNs.Response
 }
 
+object ITileLayer {
+  @scala.inline
+  def apply(
+    cancelTile: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    requestTile: js.Function4[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Boolean, 
+      heremapsLib.HNs.mapNs.providerNs.Tile | scala.Unit
+    ],
+    requestTiles: js.Function4[
+      heremapsLib.HNs.geoNs.Rect, 
+      scala.Double, 
+      scala.Boolean, 
+      heremapsLib.HNs.mathNs.Point, 
+      heremapsLib.HNs.mapNs.layerNs.ITileLayerNs.Response
+    ]
+  ): ITileLayer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancelTile")(cancelTile)
+    __obj.updateDynamic("requestTile")(requestTile)
+    __obj.updateDynamic("requestTiles")(requestTiles)
+    __obj.asInstanceOf[ITileLayer]
+  }
+}
+

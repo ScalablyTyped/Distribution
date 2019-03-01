@@ -17,3 +17,12 @@ trait VolumeAttachmentSource extends js.Object {
   val persistentVolumeName: java.lang.String
 }
 
+object VolumeAttachmentSource {
+  @scala.inline
+  def apply(persistentVolumeName: java.lang.String): VolumeAttachmentSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("persistentVolumeName")(persistentVolumeName)
+    __obj.asInstanceOf[VolumeAttachmentSource]
+  }
+}
+

@@ -37,3 +37,34 @@ trait UrlMap extends js.Object {
   var tests: js.UndefOr[js.Array[UrlMapTest]] = js.undefined
 }
 
+object UrlMap {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    defaultService: java.lang.String = null,
+    description: java.lang.String = null,
+    fingerprint: java.lang.String = null,
+    hostRules: js.Array[HostRule] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    pathMatchers: js.Array[PathMatcher] = null,
+    selfLink: java.lang.String = null,
+    tests: js.Array[UrlMapTest] = null
+  ): UrlMap = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (defaultService != null) __obj.updateDynamic("defaultService")(defaultService)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (hostRules != null) __obj.updateDynamic("hostRules")(hostRules)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pathMatchers != null) __obj.updateDynamic("pathMatchers")(pathMatchers)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (tests != null) __obj.updateDynamic("tests")(tests)
+    __obj.asInstanceOf[UrlMap]
+  }
+}
+

@@ -10,3 +10,12 @@ trait MathMLInputProcessor extends js.Object {
   var useMathMLspacing: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MathMLInputProcessor {
+  @scala.inline
+  def apply(useMathMLspacing: js.UndefOr[scala.Boolean] = js.undefined): MathMLInputProcessor = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(useMathMLspacing)) __obj.updateDynamic("useMathMLspacing")(useMathMLspacing)
+    __obj.asInstanceOf[MathMLInputProcessor]
+  }
+}
+

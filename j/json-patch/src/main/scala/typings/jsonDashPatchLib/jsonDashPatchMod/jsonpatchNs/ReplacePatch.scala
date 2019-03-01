@@ -5,8 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReplacePatch extends Patch {
+trait ReplacePatch
+  extends Patch
+     with OpPatch {
   var op: jsonDashPatchLib.jsonDashPatchLibStrings.replace
   var value: js.Any
+}
+
+object ReplacePatch {
+  @scala.inline
+  def apply(op: jsonDashPatchLib.jsonDashPatchLibStrings.replace, path: java.lang.String, value: js.Any): ReplacePatch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("op")(op)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ReplacePatch]
+  }
 }
 

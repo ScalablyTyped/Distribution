@@ -20,3 +20,18 @@ trait FilterDropDownOkEventUIParam extends js.Object {
   var hierarchy: js.UndefOr[js.Any] = js.undefined
 }
 
+object FilterDropDownOkEventUIParam {
+  @scala.inline
+  def apply(
+    dropDownElement: java.lang.String = null,
+    filterMembers: js.Array[_] = null,
+    hierarchy: js.Any = null
+  ): FilterDropDownOkEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (dropDownElement != null) __obj.updateDynamic("dropDownElement")(dropDownElement)
+    if (filterMembers != null) __obj.updateDynamic("filterMembers")(filterMembers)
+    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy)
+    __obj.asInstanceOf[FilterDropDownOkEventUIParam]
+  }
+}
+

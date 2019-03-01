@@ -13,3 +13,13 @@ trait ITreeArgs extends js.Object {
   var section: java.lang.String
 }
 
+object ITreeArgs {
+  @scala.inline
+  def apply(section: java.lang.String, cacheKey: java.lang.String = null): ITreeArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("section")(section)
+    if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.asInstanceOf[ITreeArgs]
+  }
+}
+

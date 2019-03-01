@@ -16,3 +16,28 @@ trait IChangeEvent[T] extends js.Object {
   var uiSchema: UiSchema
 }
 
+object IChangeEvent {
+  @scala.inline
+  def apply[T](
+    edit: scala.Boolean,
+    errorSchema: FormValidation,
+    errors: js.Array[AjvError],
+    formData: T,
+    idSchema: IdSchema,
+    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
+    uiSchema: UiSchema,
+    status: java.lang.String = null
+  ): IChangeEvent[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("edit")(edit)
+    __obj.updateDynamic("errorSchema")(errorSchema)
+    __obj.updateDynamic("errors")(errors)
+    __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
+    __obj.updateDynamic("idSchema")(idSchema)
+    __obj.updateDynamic("schema")(schema)
+    __obj.updateDynamic("uiSchema")(uiSchema)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[IChangeEvent[T]]
+  }
+}
+

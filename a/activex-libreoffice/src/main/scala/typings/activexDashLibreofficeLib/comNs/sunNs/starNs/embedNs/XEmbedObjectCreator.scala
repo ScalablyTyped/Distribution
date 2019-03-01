@@ -72,3 +72,43 @@ trait XEmbedObjectCreator
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XEmbedObjectCreator {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createInstanceInitFromEntry: js.Function4[
+      XStorage, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    createInstanceInitFromMediaDescriptor: js.Function4[
+      XStorage, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    createInstanceInitNew: js.Function5[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      java.lang.String, 
+      XStorage, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XEmbedObjectCreator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createInstanceInitFromEntry")(createInstanceInitFromEntry)
+    __obj.updateDynamic("createInstanceInitFromMediaDescriptor")(createInstanceInitFromMediaDescriptor)
+    __obj.updateDynamic("createInstanceInitNew")(createInstanceInitNew)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XEmbedObjectCreator]
+  }
+}
+

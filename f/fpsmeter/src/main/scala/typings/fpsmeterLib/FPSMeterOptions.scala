@@ -43,3 +43,48 @@ trait FPSMeterOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FPSMeterOptions {
+  @scala.inline
+  def apply(
+    bottom: java.lang.String = null,
+    decimals: scala.Int | scala.Double = null,
+    graph: scala.Int | scala.Double = null,
+    heat: scala.Int | scala.Double = null,
+    history: scala.Int | scala.Double = null,
+    interval: scala.Int | scala.Double = null,
+    left: java.lang.String = null,
+    margin: java.lang.String = null,
+    maxFps: scala.Int | scala.Double = null,
+    position: java.lang.String = null,
+    right: java.lang.String = null,
+    show: java.lang.String = null,
+    smoothing: scala.Int | scala.Double = null,
+    theme: java.lang.String = null,
+    threshold: scala.Int | scala.Double = null,
+    toggleOn: java.lang.String = null,
+    top: java.lang.String = null,
+    zIndex: scala.Int | scala.Double = null
+  ): FPSMeterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
+    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
+    if (heat != null) __obj.updateDynamic("heat")(heat.asInstanceOf[js.Any])
+    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (maxFps != null) __obj.updateDynamic("maxFps")(maxFps.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (right != null) __obj.updateDynamic("right")(right)
+    if (show != null) __obj.updateDynamic("show")(show)
+    if (smoothing != null) __obj.updateDynamic("smoothing")(smoothing.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (toggleOn != null) __obj.updateDynamic("toggleOn")(toggleOn)
+    if (top != null) __obj.updateDynamic("top")(top)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FPSMeterOptions]
+  }
+}
+

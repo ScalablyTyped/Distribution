@@ -11,3 +11,18 @@ trait Anon_PrepareDataFunctionRawData extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_PrepareDataFunctionRawData {
+  @scala.inline
+  def apply(
+    prepareDataFunction: js.Function1[/* rawData */ js.Any, _] = null,
+    slice: flexmonsterLib.flexmonsterMod.FlexmonsterNs.Slice = null,
+    `type`: java.lang.String = null
+  ): Anon_PrepareDataFunctionRawData = {
+    val __obj = js.Dynamic.literal()
+    if (prepareDataFunction != null) __obj.updateDynamic("prepareDataFunction")(prepareDataFunction)
+    if (slice != null) __obj.updateDynamic("slice")(slice)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_PrepareDataFunctionRawData]
+  }
+}
+

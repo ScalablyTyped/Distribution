@@ -58,3 +58,26 @@ trait ChartLegendEntryCollectionLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartLegendEntryCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
+    index: js.UndefOr[scala.Boolean] = js.undefined,
+    left: js.UndefOr[scala.Boolean] = js.undefined,
+    top: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartLegendEntryCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ChartLegendEntryCollectionLoadOptions]
+  }
+}
+

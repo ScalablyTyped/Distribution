@@ -38,3 +38,30 @@ trait Anon_CssImportPaths extends js.Object {
   ] = js.undefined
 }
 
+object Anon_CssImportPaths {
+  @scala.inline
+  def apply(
+    importPaths: js.Function2[
+      /* paths */ js.Array[java.lang.String], 
+      /* req */ expressLib.expressMod.eNs.Request, 
+      js.Array[java.lang.String]
+    ] = null,
+    less: js.Function2[
+      /* css */ java.lang.String, 
+      /* req */ expressLib.expressMod.eNs.Request, 
+      java.lang.String
+    ] = null,
+    path: js.Function2[
+      /* pathname */ java.lang.String, 
+      /* req */ expressLib.expressMod.eNs.Request, 
+      java.lang.String
+    ] = null
+  ): Anon_CssImportPaths = {
+    val __obj = js.Dynamic.literal()
+    if (importPaths != null) __obj.updateDynamic("importPaths")(importPaths)
+    if (less != null) __obj.updateDynamic("less")(less)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Anon_CssImportPaths]
+  }
+}
+

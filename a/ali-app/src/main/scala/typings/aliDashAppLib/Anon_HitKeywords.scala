@@ -20,3 +20,17 @@ trait Anon_HitKeywords extends js.Object {
   var `type`: aliDashAppLib.myNs.TextRiskIdentificationType
 }
 
+object Anon_HitKeywords {
+  @scala.inline
+  def apply(
+    `type`: aliDashAppLib.myNs.TextRiskIdentificationType,
+    hitKeywords: js.Array[java.lang.String] = null,
+    score: java.lang.String = null
+  ): Anon_HitKeywords = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (hitKeywords != null) __obj.updateDynamic("hitKeywords")(hitKeywords)
+    if (score != null) __obj.updateDynamic("score")(score)
+    __obj.asInstanceOf[Anon_HitKeywords]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_TopNumber extends js.Object {
   var top: scala.Double
 }
 
+object Anon_TopNumber {
+  @scala.inline
+  def apply(top: scala.Double): Anon_TopNumber = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[Anon_TopNumber]
+  }
+}
+

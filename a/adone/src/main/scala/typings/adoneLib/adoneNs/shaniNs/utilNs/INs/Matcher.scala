@@ -16,3 +16,13 @@ trait Matcher extends js.Object {
   def or(expr: Matcher): Matcher
 }
 
+object Matcher {
+  @scala.inline
+  def apply(and: js.Function1[Matcher, Matcher], or: js.Function1[Matcher, Matcher]): Matcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("or")(or)
+    __obj.asInstanceOf[Matcher]
+  }
+}
+

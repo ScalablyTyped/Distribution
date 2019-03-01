@@ -7,109 +7,144 @@ import scala.scalajs.js.annotation._
 
 object overwatchDashApiLibStrings {
   @js.native
-  sealed trait Ana extends js.Object
+  sealed trait Ana
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Bastion extends js.Object
+  sealed trait Bastion
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Brigitte extends js.Object
+  sealed trait Brigitte
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait DDOTVa extends js.Object
+  sealed trait DDOTVa
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Doomfist extends js.Object
+  sealed trait Doomfist
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Genji extends js.Object
+  sealed trait Genji
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Hanzo extends js.Object
+  sealed trait Hanzo
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Junkrat extends js.Object
+  sealed trait Junkrat
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait LBACKSLASHu00FAcio extends js.Object
+  sealed trait LBACKSLASHu00FAcio
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait McCree extends js.Object
+  sealed trait McCree
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Mei extends js.Object
+  sealed trait Mei
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Mercy extends js.Object
+  sealed trait Mercy
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Moira extends js.Object
+  sealed trait Moira
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Orisa extends js.Object
+  sealed trait Orisa
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Pharah extends js.Object
+  sealed trait Pharah
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Reaper extends js.Object
+  sealed trait Reaper
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Reinhardt extends js.Object
+  sealed trait Reinhardt
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Roadhog extends js.Object
+  sealed trait Roadhog
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait `Soldier: 76` extends js.Object
+  sealed trait `Soldier: 76`
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Sombra extends js.Object
+  sealed trait Sombra
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Symmetra extends js.Object
+  sealed trait Symmetra
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait TorbjBACKSLASHu00F6rn extends js.Object
+  sealed trait TorbjBACKSLASHu00F6rn
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Tracer extends js.Object
+  sealed trait Tracer
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Widowmaker extends js.Object
+  sealed trait Widowmaker
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Winston extends js.Object
+  sealed trait Winston
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Zarya extends js.Object
+  sealed trait Zarya
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait Zenyatta extends js.Object
+  sealed trait Zenyatta
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchHero
   
   @js.native
-  sealed trait cn extends js.Object
+  sealed trait cn
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchServerRegion
   
   @js.native
-  sealed trait eu extends js.Object
+  sealed trait eu
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchServerRegion
   
   @js.native
-  sealed trait global extends js.Object
+  sealed trait global
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchServerRegion
   
   @js.native
-  sealed trait kr extends js.Object
+  sealed trait kr
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchServerRegion
   
   @js.native
-  sealed trait pc extends js.Object
+  sealed trait pc
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchPlatform
   
   @js.native
-  sealed trait psn extends js.Object
+  sealed trait psn
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchPlatform
   
   @js.native
-  sealed trait us extends js.Object
+  sealed trait us
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchServerRegion
   
   @js.native
-  sealed trait xbl extends js.Object
+  sealed trait xbl
+    extends overwatchDashApiLib.overwatchDashApiMod.OverwatchPlatform
   
   @scala.inline
   def Ana: Ana = "Ana".asInstanceOf[Ana]

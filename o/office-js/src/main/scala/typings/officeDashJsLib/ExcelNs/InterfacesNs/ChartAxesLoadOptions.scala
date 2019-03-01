@@ -37,3 +37,20 @@ trait ChartAxesLoadOptions extends js.Object {
   var valueAxis: js.UndefOr[ChartAxisLoadOptions] = js.undefined
 }
 
+object ChartAxesLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    categoryAxis: ChartAxisLoadOptions = null,
+    seriesAxis: ChartAxisLoadOptions = null,
+    valueAxis: ChartAxisLoadOptions = null
+  ): ChartAxesLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis)
+    if (seriesAxis != null) __obj.updateDynamic("seriesAxis")(seriesAxis)
+    if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis)
+    __obj.asInstanceOf[ChartAxesLoadOptions]
+  }
+}
+

@@ -751,7 +751,7 @@ object atBabelTypesLibStrings {
   sealed trait YieldExpression extends js.Object
   
   @js.native
-  sealed trait `^` extends js.Object
+  sealed trait `_backtick^_backtick` extends js.Object
   
   @js.native
   sealed trait const extends js.Object
@@ -1328,7 +1328,7 @@ object atBabelTypesLibStrings {
   @scala.inline
   def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def const: const = "const".asInstanceOf[const]
   @scala.inline

@@ -12,3 +12,20 @@ trait Anon_Consolidate extends js.Object {
   var useDotNotation: scala.Boolean
 }
 
+object Anon_Consolidate {
+  @scala.inline
+  def apply(
+    consolidate: scala.Boolean,
+    report: scala.Boolean,
+    savePath: java.lang.String,
+    useDotNotation: scala.Boolean
+  ): Anon_Consolidate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("consolidate")(consolidate)
+    __obj.updateDynamic("report")(report)
+    __obj.updateDynamic("savePath")(savePath)
+    __obj.updateDynamic("useDotNotation")(useDotNotation)
+    __obj.asInstanceOf[Anon_Consolidate]
+  }
+}
+

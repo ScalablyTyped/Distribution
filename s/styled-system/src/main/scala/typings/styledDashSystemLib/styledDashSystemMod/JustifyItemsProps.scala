@@ -15,3 +15,12 @@ trait JustifyItemsProps extends js.Object {
   var justifyItems: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.JustifyItemsProperty]] = js.undefined
 }
 
+object JustifyItemsProps {
+  @scala.inline
+  def apply(justifyItems: ResponsiveValue[csstypeLib.csstypeMod.JustifyItemsProperty] = null): JustifyItemsProps = {
+    val __obj = js.Dynamic.literal()
+    if (justifyItems != null) __obj.updateDynamic("justifyItems")(justifyItems.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JustifyItemsProps]
+  }
+}
+

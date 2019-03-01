@@ -58,3 +58,38 @@ trait Annotation extends js.Object {
   var yAxisName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Annotation {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    content: java.lang.String = null,
+    coordinateUnit: CoordinateUnit | java.lang.String = null,
+    horizontalAlignment: HorizontalAlignment | java.lang.String = null,
+    margin: AnnotationsMargin = null,
+    opacity: scala.Int | scala.Double = null,
+    region: Region | java.lang.String = null,
+    verticalAlignment: VerticalAlignment | java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    x: scala.Int | scala.Double = null,
+    xAxisName: java.lang.String = null,
+    y: scala.Int | scala.Double = null,
+    yAxisName: java.lang.String = null
+  ): Annotation = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (coordinateUnit != null) __obj.updateDynamic("coordinateUnit")(coordinateUnit.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (xAxisName != null) __obj.updateDynamic("xAxisName")(xAxisName)
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (yAxisName != null) __obj.updateDynamic("yAxisName")(yAxisName)
+    __obj.asInstanceOf[Annotation]
+  }
+}
+

@@ -18,3 +18,30 @@ trait OS extends js.Object {
   var windows: scala.Boolean
 }
 
+object OS {
+  @scala.inline
+  def apply(
+    android: scala.Boolean,
+    androidNative: scala.Boolean,
+    iOS: scala.Boolean,
+    iPad: scala.Boolean,
+    iPhone: scala.Boolean,
+    mac: scala.Boolean,
+    mobile: scala.Boolean,
+    version: Version,
+    windows: scala.Boolean
+  ): OS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("android")(android)
+    __obj.updateDynamic("androidNative")(androidNative)
+    __obj.updateDynamic("iOS")(iOS)
+    __obj.updateDynamic("iPad")(iPad)
+    __obj.updateDynamic("iPhone")(iPhone)
+    __obj.updateDynamic("mac")(mac)
+    __obj.updateDynamic("mobile")(mobile)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("windows")(windows)
+    __obj.asInstanceOf[OS]
+  }
+}
+

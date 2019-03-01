@@ -11,3 +11,18 @@ trait SpreadsheetExcel extends js.Object {
   var proxyURL: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SpreadsheetExcel {
+  @scala.inline
+  def apply(
+    fileName: java.lang.String = null,
+    forceProxy: js.UndefOr[scala.Boolean] = js.undefined,
+    proxyURL: java.lang.String = null
+  ): SpreadsheetExcel = {
+    val __obj = js.Dynamic.literal()
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy)
+    if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL)
+    __obj.asInstanceOf[SpreadsheetExcel]
+  }
+}
+

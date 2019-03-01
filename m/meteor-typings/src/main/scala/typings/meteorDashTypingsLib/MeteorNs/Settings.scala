@@ -12,3 +12,16 @@ trait Settings
   var public: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    public: org.scalablytyped.runtime.StringDictionary[js.Any],
+    StringDictionary: /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("public")(public)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_Filters extends js.Object {
   var sortOrder: js.UndefOr[antdLib.libTableInterfaceMod.SortOrder] = js.undefined
 }
 
+object Anon_Filters {
+  @scala.inline
+  def apply(
+    filters: antdLib.libTableInterfaceMod.TableStateFilters,
+    sortOrder: antdLib.libTableInterfaceMod.SortOrder = null
+  ): Anon_Filters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filters")(filters)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    __obj.asInstanceOf[Anon_Filters]
+  }
+}
+

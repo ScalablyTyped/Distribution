@@ -18,3 +18,22 @@ trait RepresentativeInfoResponse extends js.Object {
   var officials: js.UndefOr[js.Array[Official]] = js.undefined
 }
 
+object RepresentativeInfoResponse {
+  @scala.inline
+  def apply(
+    divisions: stdLib.Record[java.lang.String, GeographicDivision] = null,
+    kind: java.lang.String = null,
+    normalizedInput: SimpleAddressType = null,
+    offices: js.Array[Office] = null,
+    officials: js.Array[Official] = null
+  ): RepresentativeInfoResponse = {
+    val __obj = js.Dynamic.literal()
+    if (divisions != null) __obj.updateDynamic("divisions")(divisions)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (normalizedInput != null) __obj.updateDynamic("normalizedInput")(normalizedInput)
+    if (offices != null) __obj.updateDynamic("offices")(offices)
+    if (officials != null) __obj.updateDynamic("officials")(officials)
+    __obj.asInstanceOf[RepresentativeInfoResponse]
+  }
+}
+

@@ -16,6 +16,8 @@ object connectorsNs extends js.Object {
     var smooth: SmoothConnectorArguments
   }
   
+  trait ConnectorType extends js.Object
+  
   trait GenericConnectorJSON[K /* <: ConnectorType */] extends js.Object {
     var args: js.UndefOr[GenericConnectorArguments[K]] = js.undefined
     var name: K
@@ -49,7 +51,6 @@ object connectorsNs extends js.Object {
   type Connector = GenericConnector[ConnectorType]
   type ConnectorArguments = GenericConnectorArguments[ConnectorType]
   type ConnectorJSON = GenericConnectorJSON[ConnectorType]
-  type ConnectorType = jointjsLib.jointjsLibStrings.normal | jointjsLib.jointjsLibStrings.rounded | jointjsLib.jointjsLibStrings.smooth | jointjsLib.jointjsLibStrings.jumpover
   type GenericConnector[K /* <: ConnectorType */] = js.Function4[
     /* sourcePoint */ jointjsLib.jointjsMod.diaNs.Point, 
     /* targetPoint */ jointjsLib.jointjsMod.diaNs.Point, 

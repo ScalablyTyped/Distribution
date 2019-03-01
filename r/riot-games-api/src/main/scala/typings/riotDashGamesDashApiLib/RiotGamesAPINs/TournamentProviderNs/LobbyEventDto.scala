@@ -11,3 +11,14 @@ trait LobbyEventDto extends js.Object {
   var timestamp: java.lang.String
 }
 
+object LobbyEventDto {
+  @scala.inline
+  def apply(eventType: java.lang.String, summonerId: java.lang.String, timestamp: java.lang.String): LobbyEventDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventType")(eventType)
+    __obj.updateDynamic("summonerId")(summonerId)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[LobbyEventDto]
+  }
+}
+

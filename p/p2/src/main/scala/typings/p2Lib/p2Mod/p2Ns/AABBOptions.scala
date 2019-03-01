@@ -10,3 +10,16 @@ trait AABBOptions extends js.Object {
   var upperBound: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
 }
 
+object AABBOptions {
+  @scala.inline
+  def apply(
+    lowerBound: js.Tuple2[scala.Double, scala.Double] = null,
+    upperBound: js.Tuple2[scala.Double, scala.Double] = null
+  ): AABBOptions = {
+    val __obj = js.Dynamic.literal()
+    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound)
+    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound)
+    __obj.asInstanceOf[AABBOptions]
+  }
+}
+

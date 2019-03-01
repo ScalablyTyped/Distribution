@@ -59,3 +59,80 @@ trait Anon_DataToRemove extends js.Object {
   def settings(): js.Promise[Anon_DataRemovalPermitted]
 }
 
+object Anon_DataToRemove {
+  @scala.inline
+  def apply(
+    remove: js.Function2[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.DataTypeSet, 
+      js.Promise[scala.Unit]
+    ],
+    removeAppcache: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removeCache: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removeCookies: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removeDownloads: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removeFileSystems: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removeFormData: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removeHistory: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removeIndexedDB: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removeLocalStorage: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removePasswords: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removePluginData: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    removeWebSQL: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions, 
+      js.Promise[scala.Unit]
+    ],
+    settings: js.Function0[js.Promise[Anon_DataRemovalPermitted]]
+  ): Anon_DataToRemove = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removeAppcache")(removeAppcache)
+    __obj.updateDynamic("removeCache")(removeCache)
+    __obj.updateDynamic("removeCookies")(removeCookies)
+    __obj.updateDynamic("removeDownloads")(removeDownloads)
+    __obj.updateDynamic("removeFileSystems")(removeFileSystems)
+    __obj.updateDynamic("removeFormData")(removeFormData)
+    __obj.updateDynamic("removeHistory")(removeHistory)
+    __obj.updateDynamic("removeIndexedDB")(removeIndexedDB)
+    __obj.updateDynamic("removeLocalStorage")(removeLocalStorage)
+    __obj.updateDynamic("removePasswords")(removePasswords)
+    __obj.updateDynamic("removePluginData")(removePluginData)
+    __obj.updateDynamic("removeWebSQL")(removeWebSQL)
+    __obj.updateDynamic("settings")(settings)
+    __obj.asInstanceOf[Anon_DataToRemove]
+  }
+}
+

@@ -12,3 +12,20 @@ trait FormatterOptions extends js.Object {
   var units: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FormatterOptions {
+  @scala.inline
+  def apply(
+    language: java.lang.String = null,
+    roundingSensitivity: scala.Int | scala.Double = null,
+    unitNames: js.Object = null,
+    units: java.lang.String = null
+  ): FormatterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (roundingSensitivity != null) __obj.updateDynamic("roundingSensitivity")(roundingSensitivity.asInstanceOf[js.Any])
+    if (unitNames != null) __obj.updateDynamic("unitNames")(unitNames)
+    if (units != null) __obj.updateDynamic("units")(units)
+    __obj.asInstanceOf[FormatterOptions]
+  }
+}
+

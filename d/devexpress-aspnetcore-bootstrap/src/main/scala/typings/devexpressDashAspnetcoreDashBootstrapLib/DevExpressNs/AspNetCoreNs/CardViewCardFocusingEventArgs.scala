@@ -10,3 +10,15 @@ trait CardViewCardFocusingEventArgs extends CancelEventArgs {
   val visibleIndex: scala.Double
 }
 
+object CardViewCardFocusingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, htmlEvent: js.Any, sender: Control, visibleIndex: scala.Double): CardViewCardFocusingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("sender")(sender)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[CardViewCardFocusingEventArgs]
+  }
+}
+

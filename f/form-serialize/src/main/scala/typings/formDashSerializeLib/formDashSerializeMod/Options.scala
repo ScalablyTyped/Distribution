@@ -21,3 +21,20 @@ trait Options[Result] extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[Result](
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    empty: js.UndefOr[scala.Boolean] = js.undefined,
+    hash: js.UndefOr[scala.Boolean] = js.undefined,
+    serializer: js.Function3[/* result */ Result, /* key */ java.lang.String, /* value */ java.lang.String, Result] = null
+  ): Options[Result] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash)
+    if (serializer != null) __obj.updateDynamic("serializer")(serializer)
+    __obj.asInstanceOf[Options[Result]]
+  }
+}
+

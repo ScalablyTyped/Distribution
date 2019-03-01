@@ -23,3 +23,24 @@ trait NodeRefFieldsOptions extends js.Object {
   var size: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NodeRefFieldsOptions {
+  @scala.inline
+  def apply(
+    dataset: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    properties: js.Array[java.lang.String] = null,
+    rect: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollOffset: js.UndefOr[scala.Boolean] = js.undefined,
+    size: js.UndefOr[scala.Boolean] = js.undefined
+  ): NodeRefFieldsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dataset)) __obj.updateDynamic("dataset")(dataset)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (!js.isUndefined(rect)) __obj.updateDynamic("rect")(rect)
+    if (!js.isUndefined(scrollOffset)) __obj.updateDynamic("scrollOffset")(scrollOffset)
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[NodeRefFieldsOptions]
+  }
+}
+

@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait INone[T] extends Option[T] {
+trait INone[T]
+  extends Option[T]
+     with IOption[T] {
   val present: zipkinLib.zipkinLibNumbers.`false` = js.native
   val `type`: zipkinLib.zipkinLibStrings.None = js.native
 }

@@ -19,3 +19,20 @@ trait DownloadRequest extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DownloadRequest {
+  @scala.inline
+  def apply(
+    fileTypes: js.Array[java.lang.String] = null,
+    filterIds: js.Array[java.lang.String] = null,
+    filterType: java.lang.String = null,
+    version: java.lang.String = null
+  ): DownloadRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes)
+    if (filterIds != null) __obj.updateDynamic("filterIds")(filterIds)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[DownloadRequest]
+  }
+}
+

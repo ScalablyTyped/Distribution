@@ -127,3 +127,50 @@ trait XDictionaryList
   def removeDictionaryListEventListener(xListener: XDictionaryListEventListener): scala.Boolean
 }
 
+object XDictionaryList {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    Dictionaries: activexDashInteropLib.SafeArray[XDictionary],
+    acquire: js.Function0[scala.Unit],
+    addDictionary: js.Function1[XDictionary, scala.Boolean],
+    addDictionaryListEventListener: js.Function2[XDictionaryListEventListener, scala.Boolean, scala.Boolean],
+    beginCollectEvents: js.Function0[scala.Double],
+    createDictionary: js.Function4[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      DictionaryType, 
+      java.lang.String, 
+      XDictionary
+    ],
+    endCollectEvents: js.Function0[scala.Double],
+    flushEvents: js.Function0[scala.Double],
+    getCount: js.Function0[scala.Double],
+    getDictionaries: js.Function0[activexDashInteropLib.SafeArray[XDictionary]],
+    getDictionaryByName: js.Function1[java.lang.String, XDictionary],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeDictionary: js.Function1[XDictionary, scala.Boolean],
+    removeDictionaryListEventListener: js.Function1[XDictionaryListEventListener, scala.Boolean]
+  ): XDictionaryList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("Dictionaries")(Dictionaries)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addDictionary")(addDictionary)
+    __obj.updateDynamic("addDictionaryListEventListener")(addDictionaryListEventListener)
+    __obj.updateDynamic("beginCollectEvents")(beginCollectEvents)
+    __obj.updateDynamic("createDictionary")(createDictionary)
+    __obj.updateDynamic("endCollectEvents")(endCollectEvents)
+    __obj.updateDynamic("flushEvents")(flushEvents)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getDictionaries")(getDictionaries)
+    __obj.updateDynamic("getDictionaryByName")(getDictionaryByName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeDictionary")(removeDictionary)
+    __obj.updateDynamic("removeDictionaryListEventListener")(removeDictionaryListEventListener)
+    __obj.asInstanceOf[XDictionaryList]
+  }
+}
+

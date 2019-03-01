@@ -343,3 +343,147 @@ trait IgDataChartAxes
   var useEnhancedIntervalManagement: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgDataChartAxes {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgDataChartAxes
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    coercionMethods: js.Any = null,
+    crossingAxis: java.lang.String = null,
+    crossingValue: js.Any = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    dateTimeMemberPath: java.lang.String = null,
+    displayType: java.lang.String = null,
+    enhancedIntervalMinimumCharacters: scala.Int | scala.Double = null,
+    formatLabel: js.Any = null,
+    gap: scala.Int | scala.Double = null,
+    innerRadiusExtentScale: scala.Int | scala.Double = null,
+    interval: scala.Int | scala.Double = null,
+    isDataPreSorted: js.UndefOr[scala.Boolean] = js.undefined,
+    isInverted: js.UndefOr[scala.Boolean] = js.undefined,
+    isLogarithmic: js.UndefOr[scala.Boolean] = js.undefined,
+    label: js.Any = null,
+    labelAngle: scala.Int | scala.Double = null,
+    labelBottomMargin: scala.Int | scala.Double = null,
+    labelExtent: scala.Int | scala.Double = null,
+    labelHorizontalAlignment: java.lang.String = null,
+    labelLeftMargin: scala.Int | scala.Double = null,
+    labelLocation: java.lang.String = null,
+    labelMargin: scala.Int | scala.Double = null,
+    labelRightMargin: scala.Int | scala.Double = null,
+    labelTextColor: java.lang.String = null,
+    labelTextStyle: java.lang.String = null,
+    labelTopMargin: scala.Int | scala.Double = null,
+    labelVerticalAlignment: java.lang.String = null,
+    labelVisibility: java.lang.String = null,
+    logarithmBase: scala.Int | scala.Double = null,
+    majorStroke: java.lang.String = null,
+    majorStrokeThickness: scala.Int | scala.Double = null,
+    maximumValue: scala.Double | stdLib.Date = null,
+    minimumValue: scala.Double | stdLib.Date = null,
+    minorStroke: java.lang.String = null,
+    minorStrokeThickness: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    overlap: scala.Int | scala.Double = null,
+    radiusExtentScale: scala.Int | scala.Double = null,
+    referenceValue: scala.Int | scala.Double = null,
+    remove: js.UndefOr[scala.Boolean] = js.undefined,
+    responseDataKey: java.lang.String = null,
+    showFirstLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    startAngleOffset: scala.Int | scala.Double = null,
+    strip: java.lang.String = null,
+    stroke: java.lang.String = null,
+    strokeThickness: scala.Int | scala.Double = null,
+    tickLength: scala.Int | scala.Double = null,
+    tickStroke: js.Any = null,
+    tickStrokeThickness: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    titleAngle: scala.Int | scala.Double = null,
+    titleBottomMargin: scala.Int | scala.Double = null,
+    titleHorizontalAlignment: java.lang.String = null,
+    titleLeftMargin: scala.Int | scala.Double = null,
+    titleMargin: scala.Int | scala.Double = null,
+    titlePosition: java.lang.String = null,
+    titleRightMargin: scala.Int | scala.Double = null,
+    titleTextStyle: java.lang.String = null,
+    titleTopMargin: scala.Int | scala.Double = null,
+    titleVerticalAlignment: java.lang.String = null,
+    `type`: java.lang.String = null,
+    useClusteringMode: js.UndefOr[scala.Boolean] = js.undefined,
+    useEnhancedIntervalManagement: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgDataChartAxes = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (coercionMethods != null) __obj.updateDynamic("coercionMethods")(coercionMethods)
+    if (crossingAxis != null) __obj.updateDynamic("crossingAxis")(crossingAxis)
+    if (crossingValue != null) __obj.updateDynamic("crossingValue")(crossingValue)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (dateTimeMemberPath != null) __obj.updateDynamic("dateTimeMemberPath")(dateTimeMemberPath)
+    if (displayType != null) __obj.updateDynamic("displayType")(displayType)
+    if (enhancedIntervalMinimumCharacters != null) __obj.updateDynamic("enhancedIntervalMinimumCharacters")(enhancedIntervalMinimumCharacters.asInstanceOf[js.Any])
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (innerRadiusExtentScale != null) __obj.updateDynamic("innerRadiusExtentScale")(innerRadiusExtentScale.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDataPreSorted)) __obj.updateDynamic("isDataPreSorted")(isDataPreSorted)
+    if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted)
+    if (!js.isUndefined(isLogarithmic)) __obj.updateDynamic("isLogarithmic")(isLogarithmic)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (labelAngle != null) __obj.updateDynamic("labelAngle")(labelAngle.asInstanceOf[js.Any])
+    if (labelBottomMargin != null) __obj.updateDynamic("labelBottomMargin")(labelBottomMargin.asInstanceOf[js.Any])
+    if (labelExtent != null) __obj.updateDynamic("labelExtent")(labelExtent.asInstanceOf[js.Any])
+    if (labelHorizontalAlignment != null) __obj.updateDynamic("labelHorizontalAlignment")(labelHorizontalAlignment)
+    if (labelLeftMargin != null) __obj.updateDynamic("labelLeftMargin")(labelLeftMargin.asInstanceOf[js.Any])
+    if (labelLocation != null) __obj.updateDynamic("labelLocation")(labelLocation)
+    if (labelMargin != null) __obj.updateDynamic("labelMargin")(labelMargin.asInstanceOf[js.Any])
+    if (labelRightMargin != null) __obj.updateDynamic("labelRightMargin")(labelRightMargin.asInstanceOf[js.Any])
+    if (labelTextColor != null) __obj.updateDynamic("labelTextColor")(labelTextColor)
+    if (labelTextStyle != null) __obj.updateDynamic("labelTextStyle")(labelTextStyle)
+    if (labelTopMargin != null) __obj.updateDynamic("labelTopMargin")(labelTopMargin.asInstanceOf[js.Any])
+    if (labelVerticalAlignment != null) __obj.updateDynamic("labelVerticalAlignment")(labelVerticalAlignment)
+    if (labelVisibility != null) __obj.updateDynamic("labelVisibility")(labelVisibility)
+    if (logarithmBase != null) __obj.updateDynamic("logarithmBase")(logarithmBase.asInstanceOf[js.Any])
+    if (majorStroke != null) __obj.updateDynamic("majorStroke")(majorStroke)
+    if (majorStrokeThickness != null) __obj.updateDynamic("majorStrokeThickness")(majorStrokeThickness.asInstanceOf[js.Any])
+    if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
+    if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])
+    if (minorStroke != null) __obj.updateDynamic("minorStroke")(minorStroke)
+    if (minorStrokeThickness != null) __obj.updateDynamic("minorStrokeThickness")(minorStrokeThickness.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (overlap != null) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
+    if (radiusExtentScale != null) __obj.updateDynamic("radiusExtentScale")(radiusExtentScale.asInstanceOf[js.Any])
+    if (referenceValue != null) __obj.updateDynamic("referenceValue")(referenceValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (!js.isUndefined(showFirstLabel)) __obj.updateDynamic("showFirstLabel")(showFirstLabel)
+    if (startAngleOffset != null) __obj.updateDynamic("startAngleOffset")(startAngleOffset.asInstanceOf[js.Any])
+    if (strip != null) __obj.updateDynamic("strip")(strip)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeThickness != null) __obj.updateDynamic("strokeThickness")(strokeThickness.asInstanceOf[js.Any])
+    if (tickLength != null) __obj.updateDynamic("tickLength")(tickLength.asInstanceOf[js.Any])
+    if (tickStroke != null) __obj.updateDynamic("tickStroke")(tickStroke)
+    if (tickStrokeThickness != null) __obj.updateDynamic("tickStrokeThickness")(tickStrokeThickness.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleAngle != null) __obj.updateDynamic("titleAngle")(titleAngle.asInstanceOf[js.Any])
+    if (titleBottomMargin != null) __obj.updateDynamic("titleBottomMargin")(titleBottomMargin.asInstanceOf[js.Any])
+    if (titleHorizontalAlignment != null) __obj.updateDynamic("titleHorizontalAlignment")(titleHorizontalAlignment)
+    if (titleLeftMargin != null) __obj.updateDynamic("titleLeftMargin")(titleLeftMargin.asInstanceOf[js.Any])
+    if (titleMargin != null) __obj.updateDynamic("titleMargin")(titleMargin.asInstanceOf[js.Any])
+    if (titlePosition != null) __obj.updateDynamic("titlePosition")(titlePosition)
+    if (titleRightMargin != null) __obj.updateDynamic("titleRightMargin")(titleRightMargin.asInstanceOf[js.Any])
+    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle)
+    if (titleTopMargin != null) __obj.updateDynamic("titleTopMargin")(titleTopMargin.asInstanceOf[js.Any])
+    if (titleVerticalAlignment != null) __obj.updateDynamic("titleVerticalAlignment")(titleVerticalAlignment)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(useClusteringMode)) __obj.updateDynamic("useClusteringMode")(useClusteringMode)
+    if (!js.isUndefined(useEnhancedIntervalManagement)) __obj.updateDynamic("useEnhancedIntervalManagement")(useEnhancedIntervalManagement)
+    __obj.asInstanceOf[IgDataChartAxes]
+  }
+}
+

@@ -14,3 +14,17 @@ trait PerfMetricsSummaryResource extends js.Object {
   def create(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields): gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
 }
 
+object PerfMetricsSummaryResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
+    ]
+  ): PerfMetricsSummaryResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.asInstanceOf[PerfMetricsSummaryResource]
+  }
+}
+

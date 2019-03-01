@@ -12,3 +12,16 @@ trait CanvasAction extends js.Object {
   var method: java.lang.String
 }
 
+object CanvasAction {
+  @scala.inline
+  def apply(
+    data: js.Array[CanvasAction] | (js.Array[scala.Double | java.lang.String]),
+    method: java.lang.String
+  ): CanvasAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("method")(method)
+    __obj.asInstanceOf[CanvasAction]
+  }
+}
+

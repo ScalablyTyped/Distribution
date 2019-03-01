@@ -126,3 +126,52 @@ trait ChartStripLinesOptions extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartStripLinesOptions {
+  @scala.inline
+  def apply(
+    labelMaxWidth: scala.Double,
+    labelWrap: scala.Boolean,
+    color: java.lang.String = null,
+    endValue: scala.Int | scala.Double = null,
+    label: java.lang.String = null,
+    labelAlign: java.lang.String = null,
+    labelBackgroundColor: java.lang.String = null,
+    labelFontColor: java.lang.String = null,
+    labelFontFamily: java.lang.String = null,
+    labelFontSize: scala.Int | scala.Double = null,
+    labelFontStyle: java.lang.String = null,
+    labelFontWeight: java.lang.String = null,
+    labelFormatter: js.Function1[/* e */ js.UndefOr[canvasjsLib.Anon_Axis], java.lang.String] = null,
+    labelPlacement: java.lang.String = null,
+    lineDashType: canvasjsLib.DashType = null,
+    opacity: scala.Int | scala.Double = null,
+    showOnTop: js.UndefOr[scala.Boolean] = js.undefined,
+    startValue: scala.Int | scala.Double = null,
+    thickness: scala.Int | scala.Double = null,
+    value: scala.Int | scala.Double = null
+  ): ChartStripLinesOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("labelMaxWidth")(labelMaxWidth)
+    __obj.updateDynamic("labelWrap")(labelWrap)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign)
+    if (labelBackgroundColor != null) __obj.updateDynamic("labelBackgroundColor")(labelBackgroundColor)
+    if (labelFontColor != null) __obj.updateDynamic("labelFontColor")(labelFontColor)
+    if (labelFontFamily != null) __obj.updateDynamic("labelFontFamily")(labelFontFamily)
+    if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
+    if (labelFontStyle != null) __obj.updateDynamic("labelFontStyle")(labelFontStyle)
+    if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight)
+    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter)
+    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement)
+    if (lineDashType != null) __obj.updateDynamic("lineDashType")(lineDashType)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnTop)) __obj.updateDynamic("showOnTop")(showOnTop)
+    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
+    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartStripLinesOptions]
+  }
+}
+

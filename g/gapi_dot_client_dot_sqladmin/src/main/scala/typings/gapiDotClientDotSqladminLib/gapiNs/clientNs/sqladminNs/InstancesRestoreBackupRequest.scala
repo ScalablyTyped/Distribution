@@ -10,3 +10,12 @@ trait InstancesRestoreBackupRequest extends js.Object {
   var restoreBackupContext: js.UndefOr[RestoreBackupContext] = js.undefined
 }
 
+object InstancesRestoreBackupRequest {
+  @scala.inline
+  def apply(restoreBackupContext: RestoreBackupContext = null): InstancesRestoreBackupRequest = {
+    val __obj = js.Dynamic.literal()
+    if (restoreBackupContext != null) __obj.updateDynamic("restoreBackupContext")(restoreBackupContext)
+    __obj.asInstanceOf[InstancesRestoreBackupRequest]
+  }
+}
+

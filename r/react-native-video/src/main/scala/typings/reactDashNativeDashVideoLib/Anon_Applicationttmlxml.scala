@@ -11,3 +11,18 @@ trait Anon_Applicationttmlxml extends js.Object {
   var VTT: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.`text/vtt`
 }
 
+object Anon_Applicationttmlxml {
+  @scala.inline
+  def apply(
+    SRT: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.`application/x-subrip`,
+    TTML: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.`application/ttml+xml`,
+    VTT: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.`text/vtt`
+  ): Anon_Applicationttmlxml = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SRT")(SRT)
+    __obj.updateDynamic("TTML")(TTML)
+    __obj.updateDynamic("VTT")(VTT)
+    __obj.asInstanceOf[Anon_Applicationttmlxml]
+  }
+}
+

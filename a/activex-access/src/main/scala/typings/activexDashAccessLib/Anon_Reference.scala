@@ -9,3 +9,12 @@ trait Anon_Reference extends js.Object {
   val Reference: activexDashAccessLib.AccessNs.Reference
 }
 
+object Anon_Reference {
+  @scala.inline
+  def apply(Reference: activexDashAccessLib.AccessNs.Reference): Anon_Reference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Reference")(Reference)
+    __obj.asInstanceOf[Anon_Reference]
+  }
+}
+

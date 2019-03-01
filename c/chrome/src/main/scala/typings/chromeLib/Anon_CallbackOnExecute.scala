@@ -13,3 +13,20 @@ trait Anon_CallbackOnExecute extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackOnExecute {
+  @scala.inline
+  def apply(
+    onExecute: chromeLib.chromeNs.fileBrowserHandlerNs.FileBrowserHandlerExecuteEvent,
+    selectFile: js.Function2[
+      chromeLib.chromeNs.fileBrowserHandlerNs.SelectionParams, 
+      js.Function1[/* result */ chromeLib.chromeNs.fileBrowserHandlerNs.SelectionResult, scala.Unit], 
+      scala.Unit
+    ]
+  ): Anon_CallbackOnExecute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onExecute")(onExecute)
+    __obj.updateDynamic("selectFile")(selectFile)
+    __obj.asInstanceOf[Anon_CallbackOnExecute]
+  }
+}
+

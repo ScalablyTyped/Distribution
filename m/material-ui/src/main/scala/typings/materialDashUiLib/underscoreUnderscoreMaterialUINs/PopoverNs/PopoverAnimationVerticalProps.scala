@@ -11,3 +11,22 @@ trait PopoverAnimationVerticalProps extends PopoverAnimationProps {
   var zDepth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PopoverAnimationVerticalProps {
+  @scala.inline
+  def apply(
+    open: scala.Boolean,
+    className: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
+    zDepth: scala.Int | scala.Double = null
+  ): PopoverAnimationVerticalProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("open")(open)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin)
+    if (zDepth != null) __obj.updateDynamic("zDepth")(zDepth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PopoverAnimationVerticalProps]
+  }
+}
+

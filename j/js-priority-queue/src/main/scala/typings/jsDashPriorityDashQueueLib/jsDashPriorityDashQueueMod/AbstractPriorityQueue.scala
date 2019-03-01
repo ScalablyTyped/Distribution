@@ -28,3 +28,22 @@ trait AbstractPriorityQueue[T] extends js.Object {
   def queue(value: T): scala.Unit
 }
 
+object AbstractPriorityQueue {
+  @scala.inline
+  def apply[T](
+    clear: js.Function0[scala.Unit],
+    dequeue: js.Function0[T],
+    length: scala.Double,
+    peek: js.Function0[T],
+    queue: js.Function1[T, scala.Unit]
+  ): AbstractPriorityQueue[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("dequeue")(dequeue)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("peek")(peek)
+    __obj.updateDynamic("queue")(queue)
+    __obj.asInstanceOf[AbstractPriorityQueue[T]]
+  }
+}
+

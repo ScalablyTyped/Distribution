@@ -24,3 +24,15 @@ trait GraphicCrop extends js.Object {
   var Top: scala.Double
 }
 
+object GraphicCrop {
+  @scala.inline
+  def apply(Bottom: scala.Double, Left: scala.Double, Right: scala.Double, Top: scala.Double): GraphicCrop = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Bottom")(Bottom)
+    __obj.updateDynamic("Left")(Left)
+    __obj.updateDynamic("Right")(Right)
+    __obj.updateDynamic("Top")(Top)
+    __obj.asInstanceOf[GraphicCrop]
+  }
+}
+

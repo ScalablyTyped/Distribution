@@ -93,3 +93,36 @@ trait ChartTrendlineLoadOptions extends js.Object {
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartTrendlineLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    backwardPeriod: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartTrendlineFormatLoadOptions = null,
+    forwardPeriod: js.UndefOr[scala.Boolean] = js.undefined,
+    intercept: js.UndefOr[scala.Boolean] = js.undefined,
+    label: ChartTrendlineLabelLoadOptions = null,
+    movingAveragePeriod: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    polynomialOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    showEquation: js.UndefOr[scala.Boolean] = js.undefined,
+    showRSquared: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartTrendlineLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(backwardPeriod)) __obj.updateDynamic("backwardPeriod")(backwardPeriod)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(forwardPeriod)) __obj.updateDynamic("forwardPeriod")(forwardPeriod)
+    if (!js.isUndefined(intercept)) __obj.updateDynamic("intercept")(intercept)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(movingAveragePeriod)) __obj.updateDynamic("movingAveragePeriod")(movingAveragePeriod)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(polynomialOrder)) __obj.updateDynamic("polynomialOrder")(polynomialOrder)
+    if (!js.isUndefined(showEquation)) __obj.updateDynamic("showEquation")(showEquation)
+    if (!js.isUndefined(showRSquared)) __obj.updateDynamic("showRSquared")(showRSquared)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ChartTrendlineLoadOptions]
+  }
+}
+

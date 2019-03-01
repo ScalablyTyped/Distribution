@@ -99,3 +99,58 @@ trait Sheet extends js.Object {
   var startCell: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Sheet {
+  @scala.inline
+  def apply(
+    border: js.Array[SheetsBorder] = null,
+    cFormatRule: js.Array[SheetsCFormatRule] = null,
+    cellTypes: js.Array[_] = null,
+    colCount: scala.Int | scala.Double = null,
+    columnWidth: scala.Int | scala.Double = null,
+    dataSource: js.Any = null,
+    fieldAsColumnHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    frozenColumns: scala.Int | scala.Double = null,
+    frozenRows: scala.Int | scala.Double = null,
+    headerStyles: js.Any = null,
+    hideColumns: js.Array[_] = null,
+    hideRows: js.Array[_] = null,
+    mergeCells: js.Array[_] = null,
+    primaryKey: java.lang.String = null,
+    query: js.Any = null,
+    rangeSettings: js.Array[SheetsRangeSetting] = null,
+    rowCount: scala.Int | scala.Double = null,
+    rows: js.Array[SheetsRow] = null,
+    sheetName: java.lang.String = null,
+    showGridlines: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeadings: js.UndefOr[scala.Boolean] = js.undefined,
+    startCell: java.lang.String = null
+  ): Sheet = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (cFormatRule != null) __obj.updateDynamic("cFormatRule")(cFormatRule)
+    if (cellTypes != null) __obj.updateDynamic("cellTypes")(cellTypes)
+    if (colCount != null) __obj.updateDynamic("colCount")(colCount.asInstanceOf[js.Any])
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (!js.isUndefined(fieldAsColumnHeader)) __obj.updateDynamic("fieldAsColumnHeader")(fieldAsColumnHeader)
+    if (frozenColumns != null) __obj.updateDynamic("frozenColumns")(frozenColumns.asInstanceOf[js.Any])
+    if (frozenRows != null) __obj.updateDynamic("frozenRows")(frozenRows.asInstanceOf[js.Any])
+    if (headerStyles != null) __obj.updateDynamic("headerStyles")(headerStyles)
+    if (hideColumns != null) __obj.updateDynamic("hideColumns")(hideColumns)
+    if (hideRows != null) __obj.updateDynamic("hideRows")(hideRows)
+    if (mergeCells != null) __obj.updateDynamic("mergeCells")(mergeCells)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (rangeSettings != null) __obj.updateDynamic("rangeSettings")(rangeSettings)
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (sheetName != null) __obj.updateDynamic("sheetName")(sheetName)
+    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
+    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)
+    if (startCell != null) __obj.updateDynamic("startCell")(startCell)
+    __obj.asInstanceOf[Sheet]
+  }
+}
+

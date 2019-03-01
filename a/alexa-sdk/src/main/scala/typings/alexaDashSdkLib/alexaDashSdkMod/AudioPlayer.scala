@@ -14,3 +14,14 @@ trait AudioPlayer extends js.Object {
   var token: java.lang.String
 }
 
+object AudioPlayer {
+  @scala.inline
+  def apply(offsetInMilliseconds: scala.Double, playerActivity: AudioPlayerActivity, token: java.lang.String): AudioPlayer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offsetInMilliseconds")(offsetInMilliseconds)
+    __obj.updateDynamic("playerActivity")(playerActivity)
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[AudioPlayer]
+  }
+}
+

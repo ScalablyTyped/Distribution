@@ -9,3 +9,12 @@ trait Declaration extends js.Object {
   var attributes: Attributes
 }
 
+object Declaration {
+  @scala.inline
+  def apply(attributes: Attributes): Declaration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attributes")(attributes)
+    __obj.asInstanceOf[Declaration]
+  }
+}
+

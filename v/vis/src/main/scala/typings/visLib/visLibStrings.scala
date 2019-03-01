@@ -13,304 +13,407 @@ object visLibStrings {
   sealed trait Object extends js.Object
   
   @js.native
-  sealed trait afterDrawing extends js.Object
+  sealed trait afterDrawing
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait animationFinished extends js.Object
+  sealed trait animationFinished
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends visLib.visMod.TimelineAlignType
   
   @js.native
-  sealed trait axis extends js.Object
+  sealed trait axis
+    extends visLib.visMod.TimelineEventPropertiesResultWhatType
   
   @js.native
-  sealed trait background extends js.Object
+  sealed trait background
+    extends visLib.visMod.TimelineEventPropertiesResultWhatType
+       with visLib.visMod.TimelineItemType
   
   @js.native
-  sealed trait bar extends js.Object
+  sealed trait bar
+    extends visLib.visMod.Graph2dStyleType
   
   @js.native
-  sealed trait beforeDrawing extends js.Object
+  sealed trait beforeDrawing
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait blurEdge extends js.Object
+  sealed trait blurEdge
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait blurNode extends js.Object
+  sealed trait blurNode
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends visLib.visMod.TopBottomEnumType
   
   @js.native
-  sealed trait `bottom-left` extends js.Object
+  sealed trait `bottom-left`
+    extends visLib.visMod.LegendPositionType
   
   @js.native
-  sealed trait `bottom-right` extends js.Object
+  sealed trait `bottom-right`
+    extends visLib.visMod.LegendPositionType
   
   @js.native
-  sealed trait box extends js.Object
+  sealed trait box
+    extends visLib.visMod.TimelineItemType
   
   @js.native
   sealed trait cap extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends visLib.visMod.Graph2dBarChartAlign
+       with visLib.visMod.TimelineAlignType
   
   @js.native
-  sealed trait centripetal extends js.Object
+  sealed trait centripetal
+    extends visLib.visMod.ParametrizationInterpolationType
   
   @js.native
-  sealed trait changed extends js.Object
+  sealed trait changed
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait chordal extends js.Object
+  sealed trait chordal
+    extends visLib.visMod.ParametrizationInterpolationType
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle
+    extends visLib.visMod.Graph2dDrawPointsStyle
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click
+    extends visLib.visMod.NetworkEvents
+       with visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait configChange extends js.Object
+  sealed trait configChange
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait contextmenu extends js.Object
+  sealed trait contextmenu
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait `current-time` extends js.Object
+  sealed trait `current-time`
+    extends visLib.visMod.TimelineEventPropertiesResultWhatType
   
   @js.native
-  sealed trait currentTimeTick extends js.Object
+  sealed trait currentTimeTick
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait `custom-time` extends js.Object
+  sealed trait `custom-time`
+    extends visLib.visMod.TimelineEventPropertiesResultWhatType
   
   @js.native
   sealed trait daily extends js.Object
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends visLib.visMod.TimelineTimeAxisScaleType
   
   @js.native
-  sealed trait deselectEdge extends js.Object
+  sealed trait deselectEdge
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait deselectNode extends js.Object
+  sealed trait deselectNode
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait disabled
+    extends visLib.visMod.ParametrizationInterpolationType
   
   @js.native
-  sealed trait doubleClick extends js.Object
+  sealed trait doubleClick
+    extends visLib.visMod.NetworkEvents
+       with visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait dragEnd extends js.Object
+  sealed trait dragEnd
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait dragStart extends js.Object
+  sealed trait dragStart
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait dragging extends js.Object
+  sealed trait dragging
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait drop extends js.Object
+  sealed trait drop
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait easeInCubic extends js.Object
+  sealed trait easeInCubic
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeInOutCubic extends js.Object
+  sealed trait easeInOutCubic
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeInOutQuad extends js.Object
+  sealed trait easeInOutQuad
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeInOutQuart extends js.Object
+  sealed trait easeInOutQuart
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeInOutQuint extends js.Object
+  sealed trait easeInOutQuint
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeInQuad extends js.Object
+  sealed trait easeInQuad
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeInQuart extends js.Object
+  sealed trait easeInQuart
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeInQuint extends js.Object
+  sealed trait easeInQuint
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeOutCubic extends js.Object
+  sealed trait easeOutCubic
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeOutQuad extends js.Object
+  sealed trait easeOutQuad
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeOutQuart extends js.Object
+  sealed trait easeOutQuart
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait easeOutQuint extends js.Object
+  sealed trait easeOutQuint
+    extends visLib.visMod.EasingFunction
   
   @js.native
   sealed trait flip extends js.Object
   
   @js.native
-  sealed trait `group-label` extends js.Object
+  sealed trait `group-label`
+    extends visLib.visMod.TimelineEventPropertiesResultWhatType
   
   @js.native
-  sealed trait groupDragged extends js.Object
+  sealed trait groupDragged
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait hidePopup extends js.Object
+  sealed trait hidePopup
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait hold extends js.Object
+  sealed trait hold
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait hour
+    extends visLib.visMod.TimelineTimeAxisScaleType
   
   @js.native
-  sealed trait hoverEdge extends js.Object
+  sealed trait hoverEdge
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait hoverNode extends js.Object
+  sealed trait hoverNode
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait initRedraw extends js.Object
+  sealed trait initRedraw
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait item extends js.Object
+  sealed trait item
+    extends visLib.visMod.TimelineEventPropertiesResultWhatType
   
   @js.native
-  sealed trait itemout extends js.Object
+  sealed trait itemout
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait itemover extends js.Object
+  sealed trait itemover
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends visLib.visMod.Graph2dBarChartAlign
+       with visLib.visMod.RightLeftEnumType
+       with visLib.visMod.TimelineAlignType
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait line
+    extends visLib.visMod.Graph2dStyleType
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends visLib.visMod.EasingFunction
   
   @js.native
-  sealed trait millisecond extends js.Object
+  sealed trait millisecond
+    extends visLib.visMod.TimelineTimeAxisScaleType
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait minute
+    extends visLib.visMod.TimelineTimeAxisScaleType
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends visLib.visMod.TimelineTimeAxisScaleType
   
   @js.native
   sealed trait monthly extends js.Object
   
   @js.native
-  sealed trait mouseDown extends js.Object
+  sealed trait mouseDown
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait mouseMove extends js.Object
+  sealed trait mouseMove
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait mouseOver extends js.Object
+  sealed trait mouseOver
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait mouseUp extends js.Object
+  sealed trait mouseUp
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait oncontext extends js.Object
+  sealed trait oncontext
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait point extends js.Object
+  sealed trait point
+    extends visLib.visMod.TimelineItemType
   
   @js.native
-  sealed trait points extends js.Object
+  sealed trait points
+    extends visLib.visMod.Graph2dStyleType
   
   @js.native
-  sealed trait range extends js.Object
+  sealed trait range
+    extends visLib.visMod.TimelineItemType
   
   @js.native
-  sealed trait rangechange extends js.Object
+  sealed trait rangechange
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait rangechanged extends js.Object
+  sealed trait rangechanged
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait release extends js.Object
+  sealed trait release
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait resize
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends visLib.visMod.Graph2dBarChartAlign
+       with visLib.visMod.RightLeftEnumType
+       with visLib.visMod.TimelineAlignType
   
   @js.native
-  sealed trait second extends js.Object
+  sealed trait second
+    extends visLib.visMod.TimelineTimeAxisScaleType
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait select
+    extends visLib.visMod.NetworkEvents
+       with visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait selectEdge extends js.Object
+  sealed trait selectEdge
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait selectNode extends js.Object
+  sealed trait selectNode
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait showPopup extends js.Object
+  sealed trait showPopup
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends visLib.visMod.Graph2dDrawPointsStyle
   
   @js.native
-  sealed trait stabilizationIterationsDone extends js.Object
+  sealed trait stabilizationIterationsDone
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait stabilizationProgress extends js.Object
+  sealed trait stabilizationProgress
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait stabilized extends js.Object
+  sealed trait stabilized
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait startStabilizing extends js.Object
+  sealed trait startStabilizing
+    extends visLib.visMod.NetworkEvents
   
   @js.native
-  sealed trait timechange extends js.Object
+  sealed trait timechange
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait timechanged extends js.Object
+  sealed trait timechanged
+    extends visLib.visMod.TimelineEvents
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends visLib.visMod.TopBottomEnumType
   
   @js.native
-  sealed trait `top-left` extends js.Object
+  sealed trait `top-left`
+    extends visLib.visMod.LegendPositionType
   
   @js.native
-  sealed trait `top-right` extends js.Object
+  sealed trait `top-right`
+    extends visLib.visMod.LegendPositionType
   
   @js.native
-  sealed trait uniform extends js.Object
+  sealed trait uniform
+    extends visLib.visMod.ParametrizationInterpolationType
   
   @js.native
-  sealed trait weekday extends js.Object
+  sealed trait weekday
+    extends visLib.visMod.TimelineTimeAxisScaleType
   
   @js.native
   sealed trait weekly extends js.Object
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends visLib.visMod.TimelineTimeAxisScaleType
   
   @js.native
   sealed trait yearly extends js.Object
   
   @js.native
-  sealed trait zoom extends js.Object
+  sealed trait zoom
+    extends visLib.visMod.NetworkEvents
   
   @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]

@@ -41,3 +41,34 @@ trait ContextMenuClickEventArgs extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContextMenuClickEventArgs {
+  @scala.inline
+  def apply(
+    canExecute: js.UndefOr[scala.Boolean] = js.undefined,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    diagramId: java.lang.String = null,
+    element: js.Any = null,
+    events: js.Any = null,
+    id: java.lang.String = null,
+    parentId: java.lang.String = null,
+    parentText: java.lang.String = null,
+    selectedItem: js.Any = null,
+    target: js.Any = null,
+    text: java.lang.String = null
+  ): ContextMenuClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canExecute)) __obj.updateDynamic("canExecute")(canExecute)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (parentText != null) __obj.updateDynamic("parentText")(parentText)
+    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ContextMenuClickEventArgs]
+  }
+}
+

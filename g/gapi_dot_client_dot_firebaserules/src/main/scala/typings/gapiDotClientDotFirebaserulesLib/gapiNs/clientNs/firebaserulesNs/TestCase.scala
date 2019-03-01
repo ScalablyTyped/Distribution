@@ -45,3 +45,20 @@ trait TestCase extends js.Object {
   var resource: js.UndefOr[js.Any] = js.undefined
 }
 
+object TestCase {
+  @scala.inline
+  def apply(
+    expectation: java.lang.String = null,
+    functionMocks: js.Array[FunctionMock] = null,
+    request: js.Any = null,
+    resource: js.Any = null
+  ): TestCase = {
+    val __obj = js.Dynamic.literal()
+    if (expectation != null) __obj.updateDynamic("expectation")(expectation)
+    if (functionMocks != null) __obj.updateDynamic("functionMocks")(functionMocks)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[TestCase]
+  }
+}
+

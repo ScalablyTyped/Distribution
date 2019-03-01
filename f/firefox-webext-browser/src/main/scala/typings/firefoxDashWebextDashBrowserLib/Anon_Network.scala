@@ -32,3 +32,18 @@ trait Anon_Network extends js.Object {
   val websitesNs: Anon_CookieConfig
 }
 
+object Anon_Network {
+  @scala.inline
+  def apply(
+    networkNs: Anon_NetworkPredictionEnabled,
+    servicesNs: Anon_PasswordSavingEnabled,
+    websitesNs: Anon_CookieConfig
+  ): Anon_Network = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("networkNs")(networkNs)
+    __obj.updateDynamic("servicesNs")(servicesNs)
+    __obj.updateDynamic("websitesNs")(websitesNs)
+    __obj.asInstanceOf[Anon_Network]
+  }
+}
+

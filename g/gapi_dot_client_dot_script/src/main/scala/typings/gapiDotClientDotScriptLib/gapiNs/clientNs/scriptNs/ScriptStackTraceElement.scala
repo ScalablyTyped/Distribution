@@ -12,3 +12,13 @@ trait ScriptStackTraceElement extends js.Object {
   var lineNumber: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScriptStackTraceElement {
+  @scala.inline
+  def apply(function: java.lang.String = null, lineNumber: scala.Int | scala.Double = null): ScriptStackTraceElement = {
+    val __obj = js.Dynamic.literal()
+    if (function != null) __obj.updateDynamic("function")(function)
+    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScriptStackTraceElement]
+  }
+}
+

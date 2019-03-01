@@ -16,3 +16,13 @@ trait PublicKey extends js.Object {
   var modulus: js.Array[scala.Double]
 }
 
+object PublicKey {
+  @scala.inline
+  def apply(exponent: js.Array[scala.Double], modulus: js.Array[scala.Double]): PublicKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exponent")(exponent)
+    __obj.updateDynamic("modulus")(modulus)
+    __obj.asInstanceOf[PublicKey]
+  }
+}
+

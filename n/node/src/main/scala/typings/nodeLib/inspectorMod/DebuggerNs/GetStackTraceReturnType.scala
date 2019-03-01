@@ -9,3 +9,12 @@ trait GetStackTraceReturnType extends js.Object {
   var stackTrace: nodeLib.inspectorMod.RuntimeNs.StackTrace
 }
 
+object GetStackTraceReturnType {
+  @scala.inline
+  def apply(stackTrace: nodeLib.inspectorMod.RuntimeNs.StackTrace): GetStackTraceReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stackTrace")(stackTrace)
+    __obj.asInstanceOf[GetStackTraceReturnType]
+  }
+}
+

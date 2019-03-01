@@ -28,3 +28,14 @@ trait StringContext extends js.Object {
   var Text: java.lang.String
 }
 
+object StringContext {
+  @scala.inline
+  def apply(Length: scala.Double, StartPosition: scala.Double, Text: java.lang.String): StringContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Length")(Length)
+    __obj.updateDynamic("StartPosition")(StartPosition)
+    __obj.updateDynamic("Text")(Text)
+    __obj.asInstanceOf[StringContext]
+  }
+}
+

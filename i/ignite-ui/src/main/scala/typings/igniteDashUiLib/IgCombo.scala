@@ -483,3 +483,153 @@ trait IgCombo
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgCombo {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igCombo
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowCustomValue: js.UndefOr[scala.Boolean] = js.undefined,
+    animationHideDuration: scala.Int | scala.Double = null,
+    animationShowDuration: scala.Int | scala.Double = null,
+    autoComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    autoSelectFirstMatch: js.UndefOr[scala.Boolean] = js.undefined,
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    clearButtonTitle: java.lang.String = null,
+    closeDropDownOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
+    closeDropDownOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    delayInputChangeProcessing: scala.Int | scala.Double = null,
+    dropDownAttachedToBody: js.UndefOr[scala.Boolean] = js.undefined,
+    dropDownButtonTitle: java.lang.String = null,
+    dropDownClosed: DropDownClosedEvent = null,
+    dropDownClosing: DropDownClosingEvent = null,
+    dropDownOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    dropDownOpened: DropDownOpenedEvent = null,
+    dropDownOpening: DropDownOpeningEvent = null,
+    dropDownOrientation: java.lang.String = null,
+    dropDownWidth: java.lang.String | scala.Double = null,
+    enableClearButton: js.UndefOr[scala.Boolean] = js.undefined,
+    filterExprUrlKey: java.lang.String = null,
+    filtered: FilteredEvent = null,
+    filtering: FilteringEvent = null,
+    filteringCondition: java.lang.String = null,
+    filteringLogic: java.lang.String = null,
+    filteringType: java.lang.String = null,
+    footerTemplate: java.lang.String = null,
+    format: java.lang.String = null,
+    grouping: IgComboGrouping = null,
+    headerTemplate: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    highlightMatchesMode: java.lang.String = null,
+    initialSelectedItems: js.Array[IgComboInitialSelectedItem] = null,
+    inputName: java.lang.String = null,
+    itemTemplate: java.lang.String = null,
+    itemsRendered: ItemsRenderedEvent = null,
+    itemsRendering: ItemsRenderingEvent = null,
+    language: java.lang.String = null,
+    loadOnDemandSettings: IgComboLoadOnDemandSettings = null,
+    locale: IgComboLocale = null,
+    mode: java.lang.String = null,
+    multiSelection: IgComboMultiSelection = null,
+    noMatchFoundText: java.lang.String = null,
+    placeHolder: java.lang.String = null,
+    preventSubmitOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    regional: java.lang.String | js.Object = null,
+    rendered: RenderedEvent = null,
+    requestType: java.lang.String = null,
+    responseContentType: java.lang.String = null,
+    responseDataKey: java.lang.String = null,
+    responseDataType: java.lang.String = null,
+    responseTotalRecCountKey: java.lang.String = null,
+    selectItemBySpaceKey: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionChanged: IgComboSelectionChangedEvent = null,
+    selectionChanging: SelectionChangingEvent = null,
+    suppressKeyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null,
+    textKey: java.lang.String = null,
+    validatorOptions: js.Any = null,
+    valueKey: java.lang.String = null,
+    virtualization: js.UndefOr[scala.Boolean] = js.undefined,
+    visibleItemsCount: scala.Int | scala.Double = null,
+    width: java.lang.String | scala.Double = null
+  ): IgCombo = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowCustomValue)) __obj.updateDynamic("allowCustomValue")(allowCustomValue)
+    if (animationHideDuration != null) __obj.updateDynamic("animationHideDuration")(animationHideDuration.asInstanceOf[js.Any])
+    if (animationShowDuration != null) __obj.updateDynamic("animationShowDuration")(animationShowDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoComplete)) __obj.updateDynamic("autoComplete")(autoComplete)
+    if (!js.isUndefined(autoSelectFirstMatch)) __obj.updateDynamic("autoSelectFirstMatch")(autoSelectFirstMatch)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (clearButtonTitle != null) __obj.updateDynamic("clearButtonTitle")(clearButtonTitle)
+    if (!js.isUndefined(closeDropDownOnBlur)) __obj.updateDynamic("closeDropDownOnBlur")(closeDropDownOnBlur)
+    if (!js.isUndefined(closeDropDownOnSelect)) __obj.updateDynamic("closeDropDownOnSelect")(closeDropDownOnSelect)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (delayInputChangeProcessing != null) __obj.updateDynamic("delayInputChangeProcessing")(delayInputChangeProcessing.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropDownAttachedToBody)) __obj.updateDynamic("dropDownAttachedToBody")(dropDownAttachedToBody)
+    if (dropDownButtonTitle != null) __obj.updateDynamic("dropDownButtonTitle")(dropDownButtonTitle)
+    if (dropDownClosed != null) __obj.updateDynamic("dropDownClosed")(dropDownClosed)
+    if (dropDownClosing != null) __obj.updateDynamic("dropDownClosing")(dropDownClosing)
+    if (!js.isUndefined(dropDownOnFocus)) __obj.updateDynamic("dropDownOnFocus")(dropDownOnFocus)
+    if (dropDownOpened != null) __obj.updateDynamic("dropDownOpened")(dropDownOpened)
+    if (dropDownOpening != null) __obj.updateDynamic("dropDownOpening")(dropDownOpening)
+    if (dropDownOrientation != null) __obj.updateDynamic("dropDownOrientation")(dropDownOrientation)
+    if (dropDownWidth != null) __obj.updateDynamic("dropDownWidth")(dropDownWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableClearButton)) __obj.updateDynamic("enableClearButton")(enableClearButton)
+    if (filterExprUrlKey != null) __obj.updateDynamic("filterExprUrlKey")(filterExprUrlKey)
+    if (filtered != null) __obj.updateDynamic("filtered")(filtered)
+    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (filteringCondition != null) __obj.updateDynamic("filteringCondition")(filteringCondition)
+    if (filteringLogic != null) __obj.updateDynamic("filteringLogic")(filteringLogic)
+    if (filteringType != null) __obj.updateDynamic("filteringType")(filteringType)
+    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (grouping != null) __obj.updateDynamic("grouping")(grouping)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (highlightMatchesMode != null) __obj.updateDynamic("highlightMatchesMode")(highlightMatchesMode)
+    if (initialSelectedItems != null) __obj.updateDynamic("initialSelectedItems")(initialSelectedItems)
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate)
+    if (itemsRendered != null) __obj.updateDynamic("itemsRendered")(itemsRendered)
+    if (itemsRendering != null) __obj.updateDynamic("itemsRendering")(itemsRendering)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (loadOnDemandSettings != null) __obj.updateDynamic("loadOnDemandSettings")(loadOnDemandSettings)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (multiSelection != null) __obj.updateDynamic("multiSelection")(multiSelection)
+    if (noMatchFoundText != null) __obj.updateDynamic("noMatchFoundText")(noMatchFoundText)
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
+    if (!js.isUndefined(preventSubmitOnEnter)) __obj.updateDynamic("preventSubmitOnEnter")(preventSubmitOnEnter)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType)
+    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
+    if (!js.isUndefined(selectItemBySpaceKey)) __obj.updateDynamic("selectItemBySpaceKey")(selectItemBySpaceKey)
+    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(selectionChanged)
+    if (selectionChanging != null) __obj.updateDynamic("selectionChanging")(selectionChanging)
+    if (!js.isUndefined(suppressKeyboard)) __obj.updateDynamic("suppressKeyboard")(suppressKeyboard)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (textKey != null) __obj.updateDynamic("textKey")(textKey)
+    if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions)
+    if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey)
+    if (!js.isUndefined(virtualization)) __obj.updateDynamic("virtualization")(virtualization)
+    if (visibleItemsCount != null) __obj.updateDynamic("visibleItemsCount")(visibleItemsCount.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgCombo]
+  }
+}
+

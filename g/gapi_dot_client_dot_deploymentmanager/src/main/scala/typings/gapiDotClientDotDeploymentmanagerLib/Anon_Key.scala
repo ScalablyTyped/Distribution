@@ -17,3 +17,13 @@ trait Anon_Key extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(key: java.lang.String = null, value: java.lang.String = null): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

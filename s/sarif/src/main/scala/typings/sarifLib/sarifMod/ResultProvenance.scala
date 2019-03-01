@@ -41,3 +41,26 @@ trait ResultProvenance extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object ResultProvenance {
+  @scala.inline
+  def apply(
+    conversionSources: js.Array[PhysicalLocation] = null,
+    firstDetectionRunInstanceGuid: java.lang.String = null,
+    firstDetectionTimeUtc: java.lang.String = null,
+    invocationIndex: scala.Int | scala.Double = null,
+    lastDetectionRunInstanceGuid: java.lang.String = null,
+    lastDetectionTimeUtc: java.lang.String = null,
+    properties: PropertyBag = null
+  ): ResultProvenance = {
+    val __obj = js.Dynamic.literal()
+    if (conversionSources != null) __obj.updateDynamic("conversionSources")(conversionSources)
+    if (firstDetectionRunInstanceGuid != null) __obj.updateDynamic("firstDetectionRunInstanceGuid")(firstDetectionRunInstanceGuid)
+    if (firstDetectionTimeUtc != null) __obj.updateDynamic("firstDetectionTimeUtc")(firstDetectionTimeUtc)
+    if (invocationIndex != null) __obj.updateDynamic("invocationIndex")(invocationIndex.asInstanceOf[js.Any])
+    if (lastDetectionRunInstanceGuid != null) __obj.updateDynamic("lastDetectionRunInstanceGuid")(lastDetectionRunInstanceGuid)
+    if (lastDetectionTimeUtc != null) __obj.updateDynamic("lastDetectionTimeUtc")(lastDetectionTimeUtc)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[ResultProvenance]
+  }
+}
+

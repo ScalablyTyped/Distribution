@@ -68,3 +68,40 @@ trait Spot extends js.Object {
   def setTo(x: scala.Double, y: scala.Double, offx: scala.Double, offy: scala.Double): Spot
 }
 
+object Spot {
+  @scala.inline
+  def apply(
+    copy: js.Function0[Spot],
+    equals: js.Function1[Spot, scala.Boolean],
+    includesSide: js.Function1[Spot, scala.Boolean],
+    isDefault: js.Function0[scala.Boolean],
+    isNoSpot: js.Function0[scala.Boolean],
+    isSide: js.Function0[scala.Boolean],
+    isSpot: js.Function0[scala.Boolean],
+    offsetX: scala.Double,
+    offsetY: scala.Double,
+    opposite: js.Function0[Spot],
+    set: js.Function1[Spot, Spot],
+    setTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Spot],
+    x: scala.Double,
+    y: scala.Double
+  ): Spot = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("includesSide")(includesSide)
+    __obj.updateDynamic("isDefault")(isDefault)
+    __obj.updateDynamic("isNoSpot")(isNoSpot)
+    __obj.updateDynamic("isSide")(isSide)
+    __obj.updateDynamic("isSpot")(isSpot)
+    __obj.updateDynamic("offsetX")(offsetX)
+    __obj.updateDynamic("offsetY")(offsetY)
+    __obj.updateDynamic("opposite")(opposite)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("setTo")(setTo)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Spot]
+  }
+}
+

@@ -21,3 +21,30 @@ import scala.scalajs.js.annotation._
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object PopoverProps {
+  @scala.inline
+  def apply(
+    arrowOffsetLeft: scala.Double | java.lang.String = null,
+    arrowOffsetTop: scala.Double | java.lang.String = null,
+    bsClass: java.lang.String = null,
+    bsSize: reactDashBootstrapLib.reactDashBootstrapMod.Sizes = null,
+    bsStyle: java.lang.String = null,
+    placement: java.lang.String = null,
+    positionLeft: scala.Double | java.lang.String = null,
+    positionTop: scala.Double | java.lang.String = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null
+  ): PopoverProps = {
+    val __obj = js.Dynamic.literal()
+    if (arrowOffsetLeft != null) __obj.updateDynamic("arrowOffsetLeft")(arrowOffsetLeft.asInstanceOf[js.Any])
+    if (arrowOffsetTop != null) __obj.updateDynamic("arrowOffsetTop")(arrowOffsetTop.asInstanceOf[js.Any])
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
+    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (positionLeft != null) __obj.updateDynamic("positionLeft")(positionLeft.asInstanceOf[js.Any])
+    if (positionTop != null) __obj.updateDynamic("positionTop")(positionTop.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PopoverProps]
+  }
+}
+

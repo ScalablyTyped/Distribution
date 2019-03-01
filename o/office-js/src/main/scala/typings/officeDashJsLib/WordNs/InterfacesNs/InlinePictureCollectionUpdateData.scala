@@ -10,3 +10,12 @@ trait InlinePictureCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
 }
 
+object InlinePictureCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[InlinePictureData] = null): InlinePictureCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[InlinePictureCollectionUpdateData]
+  }
+}
+

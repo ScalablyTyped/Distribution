@@ -33,3 +33,22 @@ trait Trunk8Options extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Trunk8Options {
+  @scala.inline
+  def apply(
+    fill: java.lang.String = null,
+    lines: scala.Int | scala.Double = null,
+    side: java.lang.String = null,
+    tooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String = null
+  ): Trunk8Options = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (side != null) __obj.updateDynamic("side")(side)
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Trunk8Options]
+  }
+}
+

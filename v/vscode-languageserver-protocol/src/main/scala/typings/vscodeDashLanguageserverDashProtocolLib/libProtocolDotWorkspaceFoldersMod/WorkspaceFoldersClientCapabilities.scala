@@ -12,3 +12,12 @@ trait WorkspaceFoldersClientCapabilities extends js.Object {
   var workspace: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_WorkspaceFolders] = js.undefined
 }
 
+object WorkspaceFoldersClientCapabilities {
+  @scala.inline
+  def apply(workspace: vscodeDashLanguageserverDashProtocolLib.Anon_WorkspaceFolders = null): WorkspaceFoldersClientCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (workspace != null) __obj.updateDynamic("workspace")(workspace)
+    __obj.asInstanceOf[WorkspaceFoldersClientCapabilities]
+  }
+}
+

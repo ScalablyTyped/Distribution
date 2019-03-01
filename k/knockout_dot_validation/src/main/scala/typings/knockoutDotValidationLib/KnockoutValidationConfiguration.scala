@@ -80,3 +80,46 @@ trait KnockoutValidationConfiguration extends js.Object {
   var writeInputAttributes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object KnockoutValidationConfiguration {
+  @scala.inline
+  def apply(
+    allowHtmlMessages: js.UndefOr[scala.Boolean] = js.undefined,
+    decorateElementOnModified: js.UndefOr[scala.Boolean] = js.undefined,
+    decorateInputElement: js.UndefOr[scala.Boolean] = js.undefined,
+    errorClass: java.lang.String = null,
+    errorElementClass: java.lang.String = null,
+    errorMessageClass: java.lang.String = null,
+    errorsAsTitle: js.UndefOr[scala.Boolean] = js.undefined,
+    errorsAsTitleOnModified: js.UndefOr[scala.Boolean] = js.undefined,
+    grouping: KnockoutValidationGroupingOptions = null,
+    html5InputTypes: js.Array[java.lang.String] = null,
+    insertMessages: js.UndefOr[scala.Boolean] = js.undefined,
+    messageTemplate: java.lang.String = null,
+    messagesOnModified: js.UndefOr[scala.Boolean] = js.undefined,
+    parseInputAttributes: js.UndefOr[scala.Boolean] = js.undefined,
+    registerExtenders: js.UndefOr[scala.Boolean] = js.undefined,
+    validate: KnockoutValidationValidateOptions = null,
+    writeInputAttributes: js.UndefOr[scala.Boolean] = js.undefined
+  ): KnockoutValidationConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowHtmlMessages)) __obj.updateDynamic("allowHtmlMessages")(allowHtmlMessages)
+    if (!js.isUndefined(decorateElementOnModified)) __obj.updateDynamic("decorateElementOnModified")(decorateElementOnModified)
+    if (!js.isUndefined(decorateInputElement)) __obj.updateDynamic("decorateInputElement")(decorateInputElement)
+    if (errorClass != null) __obj.updateDynamic("errorClass")(errorClass)
+    if (errorElementClass != null) __obj.updateDynamic("errorElementClass")(errorElementClass)
+    if (errorMessageClass != null) __obj.updateDynamic("errorMessageClass")(errorMessageClass)
+    if (!js.isUndefined(errorsAsTitle)) __obj.updateDynamic("errorsAsTitle")(errorsAsTitle)
+    if (!js.isUndefined(errorsAsTitleOnModified)) __obj.updateDynamic("errorsAsTitleOnModified")(errorsAsTitleOnModified)
+    if (grouping != null) __obj.updateDynamic("grouping")(grouping)
+    if (html5InputTypes != null) __obj.updateDynamic("html5InputTypes")(html5InputTypes)
+    if (!js.isUndefined(insertMessages)) __obj.updateDynamic("insertMessages")(insertMessages)
+    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate)
+    if (!js.isUndefined(messagesOnModified)) __obj.updateDynamic("messagesOnModified")(messagesOnModified)
+    if (!js.isUndefined(parseInputAttributes)) __obj.updateDynamic("parseInputAttributes")(parseInputAttributes)
+    if (!js.isUndefined(registerExtenders)) __obj.updateDynamic("registerExtenders")(registerExtenders)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (!js.isUndefined(writeInputAttributes)) __obj.updateDynamic("writeInputAttributes")(writeInputAttributes)
+    __obj.asInstanceOf[KnockoutValidationConfiguration]
+  }
+}
+

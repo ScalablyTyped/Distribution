@@ -16,3 +16,16 @@ trait _Impl extends js.Object {
   def placeholder(image: java.lang.String, icon: java.lang.String): java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    iframe: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    placeholder: js.Function2[java.lang.String, java.lang.String, java.lang.String]
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iframe")(iframe)
+    __obj.updateDynamic("placeholder")(placeholder)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

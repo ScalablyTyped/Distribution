@@ -23,3 +23,13 @@ trait Initializers extends js.Object {
   val result: Status
 }
 
+object Initializers {
+  @scala.inline
+  def apply(pending: js.Array[Initializer], result: Status): Initializers = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pending")(pending)
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[Initializers]
+  }
+}
+

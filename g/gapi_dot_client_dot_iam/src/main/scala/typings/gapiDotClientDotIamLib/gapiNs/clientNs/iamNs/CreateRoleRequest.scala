@@ -12,3 +12,13 @@ trait CreateRoleRequest extends js.Object {
   var roleId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateRoleRequest {
+  @scala.inline
+  def apply(role: Role = null, roleId: java.lang.String = null): CreateRoleRequest = {
+    val __obj = js.Dynamic.literal()
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (roleId != null) __obj.updateDynamic("roleId")(roleId)
+    __obj.asInstanceOf[CreateRoleRequest]
+  }
+}
+

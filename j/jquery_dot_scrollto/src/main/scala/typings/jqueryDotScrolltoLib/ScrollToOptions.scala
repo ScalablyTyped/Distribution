@@ -47,3 +47,30 @@ trait ScrollToOptions extends js.Object {
   var queue: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ScrollToOptions {
+  @scala.inline
+  def apply(
+    axis: java.lang.String = null,
+    duration: js.Any = null,
+    easing: java.lang.String = null,
+    margin: js.UndefOr[scala.Boolean] = js.undefined,
+    offset: js.Any = null,
+    onAfter: js.Function0[scala.Unit] = null,
+    onAfterFirst: js.Function0[scala.Unit] = null,
+    over: js.Any = null,
+    queue: js.UndefOr[scala.Boolean] = js.undefined
+  ): ScrollToOptions = {
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (duration != null) __obj.updateDynamic("duration")(duration)
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (onAfter != null) __obj.updateDynamic("onAfter")(onAfter)
+    if (onAfterFirst != null) __obj.updateDynamic("onAfterFirst")(onAfterFirst)
+    if (over != null) __obj.updateDynamic("over")(over)
+    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue)
+    __obj.asInstanceOf[ScrollToOptions]
+  }
+}
+

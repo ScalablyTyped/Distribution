@@ -18,3 +18,22 @@ trait PasteDataRequest extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PasteDataRequest {
+  @scala.inline
+  def apply(
+    coordinate: GridCoordinate = null,
+    data: java.lang.String = null,
+    delimiter: java.lang.String = null,
+    html: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null
+  ): PasteDataRequest = {
+    val __obj = js.Dynamic.literal()
+    if (coordinate != null) __obj.updateDynamic("coordinate")(coordinate)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PasteDataRequest]
+  }
+}
+

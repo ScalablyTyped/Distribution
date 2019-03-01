@@ -23,3 +23,13 @@ trait SettingData extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object SettingData {
+  @scala.inline
+  def apply(key: java.lang.String = null, value: js.Any = null): SettingData = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SettingData]
+  }
+}
+

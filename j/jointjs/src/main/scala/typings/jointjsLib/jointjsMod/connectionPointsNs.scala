@@ -24,6 +24,8 @@ object connectionPointsNs extends js.Object {
     var rectangle: StrokeConnectionPointArguments
   }
   
+  trait ConnectionPointType extends js.Object
+  
   trait DefaultConnectionPointArguments extends js.Object {
     var offset: js.UndefOr[scala.Double] = js.undefined
   }
@@ -46,7 +48,6 @@ object connectionPointsNs extends js.Object {
   type ConnectionPoint = GenericConnectionPoint[ConnectionPointType]
   type ConnectionPointArguments = GenericConnectionPointArguments[ConnectionPointType]
   type ConnectionPointJSON = GenericConnectionPointJSON[ConnectionPointType]
-  type ConnectionPointType = jointjsLib.jointjsLibStrings.anchor | jointjsLib.jointjsLibStrings.bbox | jointjsLib.jointjsLibStrings.rectangle | jointjsLib.jointjsLibStrings.boundary
   type GenericConnectionPoint[K /* <: ConnectionPointType */] = js.Function4[
     /* endPathSegmentLine */ jointjsLib.jointjsMod.gNs.Line, 
     /* endView */ jointjsLib.jointjsMod.diaNs.CellView, 

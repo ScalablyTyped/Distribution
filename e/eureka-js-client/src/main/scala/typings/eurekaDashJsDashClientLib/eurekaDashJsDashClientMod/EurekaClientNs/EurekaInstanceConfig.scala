@@ -32,3 +32,60 @@ trait EurekaInstanceConfig extends js.Object {
   var vipAddress: java.lang.String
 }
 
+object EurekaInstanceConfig {
+  @scala.inline
+  def apply(
+    app: java.lang.String,
+    dataCenterInfo: DataCenterInfo,
+    hostName: java.lang.String,
+    ipAddr: java.lang.String,
+    vipAddress: java.lang.String,
+    actionType: ActionType = null,
+    appGroupName: java.lang.String = null,
+    countryId: scala.Int | scala.Double = null,
+    healthCheckUrl: java.lang.String = null,
+    homePageUrl: java.lang.String = null,
+    instanceId: java.lang.String = null,
+    isCoordinatingDiscoveryServer: js.UndefOr[scala.Boolean] = js.undefined,
+    lastDirtyTimestamp: scala.Int | scala.Double = null,
+    lastUpdatedTimestamp: scala.Int | scala.Double = null,
+    leaseInfo: LeaseInfo = null,
+    metadata: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    overriddenstatus: InstanceStatus = null,
+    port: scala.Double | PortWrapper | LegacyPortWrapper = null,
+    secureHealthCheckUrl: java.lang.String = null,
+    securePort: scala.Double | PortWrapper | LegacyPortWrapper = null,
+    secureVipAddress: java.lang.String = null,
+    sid: java.lang.String = null,
+    status: InstanceStatus = null,
+    statusPageUrl: java.lang.String = null
+  ): EurekaInstanceConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app")(app)
+    __obj.updateDynamic("dataCenterInfo")(dataCenterInfo)
+    __obj.updateDynamic("hostName")(hostName)
+    __obj.updateDynamic("ipAddr")(ipAddr)
+    __obj.updateDynamic("vipAddress")(vipAddress)
+    if (actionType != null) __obj.updateDynamic("actionType")(actionType)
+    if (appGroupName != null) __obj.updateDynamic("appGroupName")(appGroupName)
+    if (countryId != null) __obj.updateDynamic("countryId")(countryId.asInstanceOf[js.Any])
+    if (healthCheckUrl != null) __obj.updateDynamic("healthCheckUrl")(healthCheckUrl)
+    if (homePageUrl != null) __obj.updateDynamic("homePageUrl")(homePageUrl)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (!js.isUndefined(isCoordinatingDiscoveryServer)) __obj.updateDynamic("isCoordinatingDiscoveryServer")(isCoordinatingDiscoveryServer)
+    if (lastDirtyTimestamp != null) __obj.updateDynamic("lastDirtyTimestamp")(lastDirtyTimestamp.asInstanceOf[js.Any])
+    if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp.asInstanceOf[js.Any])
+    if (leaseInfo != null) __obj.updateDynamic("leaseInfo")(leaseInfo)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (overriddenstatus != null) __obj.updateDynamic("overriddenstatus")(overriddenstatus)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (secureHealthCheckUrl != null) __obj.updateDynamic("secureHealthCheckUrl")(secureHealthCheckUrl)
+    if (securePort != null) __obj.updateDynamic("securePort")(securePort.asInstanceOf[js.Any])
+    if (secureVipAddress != null) __obj.updateDynamic("secureVipAddress")(secureVipAddress)
+    if (sid != null) __obj.updateDynamic("sid")(sid)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusPageUrl != null) __obj.updateDynamic("statusPageUrl")(statusPageUrl)
+    __obj.asInstanceOf[EurekaInstanceConfig]
+  }
+}
+

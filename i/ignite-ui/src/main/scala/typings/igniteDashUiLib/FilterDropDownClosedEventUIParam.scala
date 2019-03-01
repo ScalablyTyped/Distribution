@@ -12,3 +12,12 @@ trait FilterDropDownClosedEventUIParam extends js.Object {
   var hierarchy: js.UndefOr[js.Any] = js.undefined
 }
 
+object FilterDropDownClosedEventUIParam {
+  @scala.inline
+  def apply(hierarchy: js.Any = null): FilterDropDownClosedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy)
+    __obj.asInstanceOf[FilterDropDownClosedEventUIParam]
+  }
+}
+

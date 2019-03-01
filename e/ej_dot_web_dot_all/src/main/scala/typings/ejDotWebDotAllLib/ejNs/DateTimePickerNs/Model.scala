@@ -170,3 +170,98 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    allowEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeClose: js.Function1[/* e */ BeforeCloseEventArgs, scala.Unit] = null,
+    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
+    buttonText: ButtonText = null,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    dateTimeFormat: java.lang.String = null,
+    dayHeaderFormat: ejDotWebDotAllLib.ejNs.DatePickerNs.Header | java.lang.String = null,
+    depthLevel: ejDotWebDotAllLib.ejNs.DatePickerNs.Level | java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableStrictMode: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
+    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    headerFormat: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    htmlAttributes: js.Any = null,
+    interval: scala.Int | scala.Double = null,
+    locale: java.lang.String = null,
+    maxDateTime: java.lang.String | stdLib.Date = null,
+    minDateTime: java.lang.String | stdLib.Date = null,
+    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    popupPosition: java.lang.String | ejDotWebDotAllLib.ejNs.popupPosition = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    showOtherMonths: js.UndefOr[scala.Boolean] = js.undefined,
+    showPopupButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    startDay: scala.Int | scala.Double = null,
+    startLevel: ejDotWebDotAllLib.ejNs.DatePickerNs.Level | java.lang.String = null,
+    stepMonths: scala.Int | scala.Double = null,
+    timeDisplayFormat: java.lang.String = null,
+    timeDrillDown: TimeDrillDown = null,
+    timePopupWidth: java.lang.String | scala.Double = null,
+    validationMessage: js.Any = null,
+    validationRules: js.Any = null,
+    value: java.lang.String | stdLib.Date = null,
+    watermarkText: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dateTimeFormat != null) __obj.updateDynamic("dateTimeFormat")(dateTimeFormat)
+    if (dayHeaderFormat != null) __obj.updateDynamic("dayHeaderFormat")(dayHeaderFormat.asInstanceOf[js.Any])
+    if (depthLevel != null) __obj.updateDynamic("depthLevel")(depthLevel.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableStrictMode)) __obj.updateDynamic("enableStrictMode")(enableStrictMode)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
+    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDateTime != null) __obj.updateDynamic("maxDateTime")(maxDateTime.asInstanceOf[js.Any])
+    if (minDateTime != null) __obj.updateDynamic("minDateTime")(minDateTime.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (popupPosition != null) __obj.updateDynamic("popupPosition")(popupPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths)
+    if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (startDay != null) __obj.updateDynamic("startDay")(startDay.asInstanceOf[js.Any])
+    if (startLevel != null) __obj.updateDynamic("startLevel")(startLevel.asInstanceOf[js.Any])
+    if (stepMonths != null) __obj.updateDynamic("stepMonths")(stepMonths.asInstanceOf[js.Any])
+    if (timeDisplayFormat != null) __obj.updateDynamic("timeDisplayFormat")(timeDisplayFormat)
+    if (timeDrillDown != null) __obj.updateDynamic("timeDrillDown")(timeDrillDown)
+    if (timePopupWidth != null) __obj.updateDynamic("timePopupWidth")(timePopupWidth.asInstanceOf[js.Any])
+    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (watermarkText != null) __obj.updateDynamic("watermarkText")(watermarkText)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

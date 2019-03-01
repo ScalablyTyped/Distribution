@@ -109,3 +109,69 @@ trait VictoryBarProps
   var style: js.UndefOr[VictoryStyleInterface] = js.undefined
 }
 
+object VictoryBarProps {
+  @scala.inline
+  def apply(
+    alignment: victoryLib.victoryLibStrings.start | victoryLib.victoryLibStrings.middle | victoryLib.victoryLibStrings.end = null,
+    animate: AnimatePropTypeInterface = null,
+    barRatio: scala.Int | scala.Double = null,
+    barWidth: NumberOrCallback = null,
+    categories: CategoryPropType = null,
+    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    cornerRadius: NumberOrCallback | victoryLib.Anon_Bottom = null,
+    data: js.Array[_] = null,
+    dataComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    domain: DomainPropType = null,
+    eventKey: StringOrNumberOrCallback = null,
+    events: js.Array[
+      EventPropTypeInterface[
+        victoryLib.victoryLibStrings.data | victoryLib.victoryLibStrings.labels | victoryLib.victoryLibStrings.parent, 
+        scala.Double | java.lang.String
+      ]
+    ] = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    height: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
+    name: java.lang.String = null,
+    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    style: VictoryStyleInterface = null,
+    theme: VictoryThemeDefinition = null,
+    width: scala.Int | scala.Double = null,
+    x: DataGetterPropType = null,
+    y: DataGetterPropType = null
+  ): VictoryBarProps = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (barRatio != null) __obj.updateDynamic("barRatio")(barRatio.asInstanceOf[js.Any])
+    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryBarProps]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Color extends js.Object {
   def toRGBAString(): java.lang.String
 }
 
+object Color {
+  @scala.inline
+  def apply(toHexString: js.Function0[java.lang.String], toRGBAString: js.Function0[java.lang.String]): Color = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toHexString")(toHexString)
+    __obj.updateDynamic("toRGBAString")(toRGBAString)
+    __obj.asInstanceOf[Color]
+  }
+}
+

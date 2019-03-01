@@ -292,3 +292,28 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PaginationProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    color: reactDashFoundationLib.enumsMod.ProgressColors = null,
+    max: scala.Int | scala.Double = null,
+    meter: ProgressMeterWithTextProps = null,
+    min: scala.Int | scala.Double = null,
+    value: scala.Int | scala.Double = null,
+    valueText: java.lang.String = null
+  ): PaginationProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (meter != null) __obj.updateDynamic("meter")(meter)
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueText != null) __obj.updateDynamic("valueText")(valueText)
+    __obj.asInstanceOf[PaginationProps]
+  }
+}
+

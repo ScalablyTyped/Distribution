@@ -37,3 +37,32 @@ trait Sheet extends js.Object {
   var protectedRanges: js.UndefOr[js.Array[ProtectedRange]] = js.undefined
 }
 
+object Sheet {
+  @scala.inline
+  def apply(
+    bandedRanges: js.Array[BandedRange] = null,
+    basicFilter: BasicFilter = null,
+    charts: js.Array[EmbeddedChart] = null,
+    conditionalFormats: js.Array[ConditionalFormatRule] = null,
+    data: js.Array[GridData] = null,
+    developerMetadata: js.Array[DeveloperMetadata] = null,
+    filterViews: js.Array[FilterView] = null,
+    merges: js.Array[GridRange] = null,
+    properties: SheetProperties = null,
+    protectedRanges: js.Array[ProtectedRange] = null
+  ): Sheet = {
+    val __obj = js.Dynamic.literal()
+    if (bandedRanges != null) __obj.updateDynamic("bandedRanges")(bandedRanges)
+    if (basicFilter != null) __obj.updateDynamic("basicFilter")(basicFilter)
+    if (charts != null) __obj.updateDynamic("charts")(charts)
+    if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata)
+    if (filterViews != null) __obj.updateDynamic("filterViews")(filterViews)
+    if (merges != null) __obj.updateDynamic("merges")(merges)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (protectedRanges != null) __obj.updateDynamic("protectedRanges")(protectedRanges)
+    __obj.asInstanceOf[Sheet]
+  }
+}
+

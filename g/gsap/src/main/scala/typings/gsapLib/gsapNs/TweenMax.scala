@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gsap.TweenMax")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- gsapLib.gsapNs.Tween because Already inherited */ @JSGlobal("gsap.TweenMax")
 @js.native
 class TweenMax protected () extends TweenLite {
   def this(target: js.Object, duration: scala.Double, vars: js.Object) = this()

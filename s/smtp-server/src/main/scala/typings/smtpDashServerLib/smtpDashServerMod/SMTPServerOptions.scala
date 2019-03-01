@@ -215,3 +215,160 @@ trait SMTPServerOptions
   var useXForward: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SMTPServerOptions {
+  @scala.inline
+  def apply(
+    ALPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
+    NPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
+    SNICallback: js.Function2[
+      /* servername */ java.lang.String, 
+      /* cb */ js.Function2[
+        /* err */ nodeLib.Error | scala.Null, 
+        /* ctx */ nodeLib.tlsMod.SecureContext, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ] = null,
+    allowInsecureAuth: js.UndefOr[scala.Boolean] = js.undefined,
+    authMethods: js.Array[java.lang.String] = null,
+    authOptional: js.UndefOr[scala.Boolean] = js.undefined,
+    banner: java.lang.String = null,
+    ca: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
+    cert: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
+    ciphers: java.lang.String = null,
+    clientCertEngine: java.lang.String = null,
+    closeTimeout: js.UndefOr[ms] = js.undefined,
+    crl: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
+    dhparam: java.lang.String | nodeLib.Buffer = null,
+    disableReverseLookup: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledCommands: js.Array[java.lang.String] = null,
+    ecdhCurve: java.lang.String = null,
+    handshakeTimeout: scala.Int | scala.Double = null,
+    hide8BITMIME: js.UndefOr[scala.Boolean] = js.undefined,
+    hidePIPELINING: js.UndefOr[scala.Boolean] = js.undefined,
+    hideSMTPUTF8: js.UndefOr[scala.Boolean] = js.undefined,
+    hideSTARTTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    honorCipherOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | js.Array[smtpDashServerLib.Anon_Passphrase] = null,
+    lmtp: js.UndefOr[scala.Boolean] = js.undefined,
+    logger: nodemailerLib.libSharedMod.Logger | scala.Boolean = null,
+    maxClients: scala.Int | scala.Double = null,
+    maxVersion: nodeLib.tlsMod.SecureVersion = null,
+    minVersion: nodeLib.tlsMod.SecureVersion = null,
+    name: java.lang.String = null,
+    needsUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    onAuth: js.Function3[
+      /* auth */ SMTPServerAuthentication, 
+      /* session */ SMTPServerSession, 
+      /* callback */ js.Function2[
+        /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
+        /* response */ js.UndefOr[SMTPServerAuthenticationResponse], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ] = null,
+    onClose: js.Function2[
+      /* session */ SMTPServerSession, 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ] = null,
+    onConnect: js.Function2[
+      /* session */ SMTPServerSession, 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ] = null,
+    onData: js.Function3[
+      /* stream */ SMTPServerDataStream, 
+      /* session */ SMTPServerSession, 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ] = null,
+    onMailFrom: js.Function3[
+      /* address */ SMTPServerAddress, 
+      /* session */ SMTPServerSession, 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ] = null,
+    onRcptTo: js.Function3[
+      /* address */ SMTPServerAddress, 
+      /* session */ SMTPServerSession, 
+      /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ] = null,
+    passphrase: java.lang.String = null,
+    pfx: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer | js.Object]) = null,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    requestCert: js.UndefOr[scala.Boolean] = js.undefined,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    secureOptions: scala.Int | scala.Double = null,
+    secureProtocol: java.lang.String = null,
+    secured: js.UndefOr[scala.Boolean] = js.undefined,
+    sessionIdContext: java.lang.String = null,
+    sessionTimeout: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null,
+    sniOptions: org.scalablytyped.runtime.StringDictionary[nodeLib.tlsMod.TlsOptions] | (stdLib.Map[java.lang.String, nodeLib.tlsMod.TlsOptions]) = null,
+    socketTimeout: js.UndefOr[ms] = js.undefined,
+    ticketKeys: nodeLib.Buffer = null,
+    useProxy: js.UndefOr[scala.Boolean] = js.undefined,
+    useXClient: js.UndefOr[scala.Boolean] = js.undefined,
+    useXForward: js.UndefOr[scala.Boolean] = js.undefined
+  ): SMTPServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
+    if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
+    if (SNICallback != null) __obj.updateDynamic("SNICallback")(SNICallback)
+    if (!js.isUndefined(allowInsecureAuth)) __obj.updateDynamic("allowInsecureAuth")(allowInsecureAuth)
+    if (authMethods != null) __obj.updateDynamic("authMethods")(authMethods)
+    if (!js.isUndefined(authOptional)) __obj.updateDynamic("authOptional")(authOptional)
+    if (banner != null) __obj.updateDynamic("banner")(banner)
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
+    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
+    if (!js.isUndefined(closeTimeout)) __obj.updateDynamic("closeTimeout")(closeTimeout)
+    if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
+    if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableReverseLookup)) __obj.updateDynamic("disableReverseLookup")(disableReverseLookup)
+    if (disabledCommands != null) __obj.updateDynamic("disabledCommands")(disabledCommands)
+    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
+    if (handshakeTimeout != null) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide8BITMIME)) __obj.updateDynamic("hide8BITMIME")(hide8BITMIME)
+    if (!js.isUndefined(hidePIPELINING)) __obj.updateDynamic("hidePIPELINING")(hidePIPELINING)
+    if (!js.isUndefined(hideSMTPUTF8)) __obj.updateDynamic("hideSMTPUTF8")(hideSMTPUTF8)
+    if (!js.isUndefined(hideSTARTTLS)) __obj.updateDynamic("hideSTARTTLS")(hideSTARTTLS)
+    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(lmtp)) __obj.updateDynamic("lmtp")(lmtp)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (maxClients != null) __obj.updateDynamic("maxClients")(maxClients.asInstanceOf[js.Any])
+    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion)
+    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(needsUpgrade)) __obj.updateDynamic("needsUpgrade")(needsUpgrade)
+    if (onAuth != null) __obj.updateDynamic("onAuth")(onAuth)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
+    if (onData != null) __obj.updateDynamic("onData")(onData)
+    if (onMailFrom != null) __obj.updateDynamic("onMailFrom")(onMailFrom)
+    if (onRcptTo != null) __obj.updateDynamic("onRcptTo")(onRcptTo)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (secureOptions != null) __obj.updateDynamic("secureOptions")(secureOptions.asInstanceOf[js.Any])
+    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol)
+    if (!js.isUndefined(secured)) __obj.updateDynamic("secured")(secured)
+    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext)
+    if (sessionTimeout != null) __obj.updateDynamic("sessionTimeout")(sessionTimeout.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (sniOptions != null) __obj.updateDynamic("sniOptions")(sniOptions.asInstanceOf[js.Any])
+    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout)
+    if (ticketKeys != null) __obj.updateDynamic("ticketKeys")(ticketKeys)
+    if (!js.isUndefined(useProxy)) __obj.updateDynamic("useProxy")(useProxy)
+    if (!js.isUndefined(useXClient)) __obj.updateDynamic("useXClient")(useXClient)
+    if (!js.isUndefined(useXForward)) __obj.updateDynamic("useXForward")(useXForward)
+    __obj.asInstanceOf[SMTPServerOptions]
+  }
+}
+

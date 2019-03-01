@@ -13,10 +13,12 @@ object typescriptDashCompareLibNumbers {
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends typescriptDashCompareLib.typescriptDashCompareMod.prvNs.Extends[js.Any, js.Any]
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait `true`
+    extends typescriptDashCompareLib.typescriptDashCompareMod.prvNs.Extends[js.Any, js.Any]
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

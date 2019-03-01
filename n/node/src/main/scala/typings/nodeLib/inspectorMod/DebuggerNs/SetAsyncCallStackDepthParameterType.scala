@@ -13,3 +13,12 @@ trait SetAsyncCallStackDepthParameterType extends js.Object {
   var maxDepth: scala.Double
 }
 
+object SetAsyncCallStackDepthParameterType {
+  @scala.inline
+  def apply(maxDepth: scala.Double): SetAsyncCallStackDepthParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxDepth")(maxDepth)
+    __obj.asInstanceOf[SetAsyncCallStackDepthParameterType]
+  }
+}
+

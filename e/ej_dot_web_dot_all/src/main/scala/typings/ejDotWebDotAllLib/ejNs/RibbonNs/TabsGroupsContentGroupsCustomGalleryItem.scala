@@ -36,3 +36,26 @@ trait TabsGroupsContentGroupsCustomGalleryItem extends js.Object {
   var toolTip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabsGroupsContentGroupsCustomGalleryItem {
+  @scala.inline
+  def apply(
+    buttonSettings: js.Any = null,
+    customItemType: CustomItemType | java.lang.String = null,
+    customToolTip: js.Any = null,
+    menuId: java.lang.String = null,
+    menuSettings: js.Any = null,
+    text: java.lang.String = null,
+    toolTip: java.lang.String = null
+  ): TabsGroupsContentGroupsCustomGalleryItem = {
+    val __obj = js.Dynamic.literal()
+    if (buttonSettings != null) __obj.updateDynamic("buttonSettings")(buttonSettings)
+    if (customItemType != null) __obj.updateDynamic("customItemType")(customItemType.asInstanceOf[js.Any])
+    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip)
+    if (menuId != null) __obj.updateDynamic("menuId")(menuId)
+    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    __obj.asInstanceOf[TabsGroupsContentGroupsCustomGalleryItem]
+  }
+}
+

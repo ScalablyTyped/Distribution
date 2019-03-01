@@ -16,3 +16,16 @@ trait Config extends js.Object {
   var vars: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    domains: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]],
+    vars: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]]
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domains")(domains)
+    __obj.updateDynamic("vars")(vars)
+    __obj.asInstanceOf[Config]
+  }
+}
+

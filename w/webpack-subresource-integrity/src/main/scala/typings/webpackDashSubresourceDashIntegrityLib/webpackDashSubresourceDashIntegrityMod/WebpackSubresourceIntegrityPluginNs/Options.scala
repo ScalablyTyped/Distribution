@@ -17,3 +17,13 @@ trait Options extends js.Object {
   var hashFuncNames: js.Array[java.lang.String]
 }
 
+object Options {
+  @scala.inline
+  def apply(hashFuncNames: js.Array[java.lang.String], enabled: js.UndefOr[scala.Boolean] = js.undefined): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hashFuncNames")(hashFuncNames)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[Options]
+  }
+}
+

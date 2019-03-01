@@ -10,3 +10,13 @@ trait EndpointAuthorization extends js.Object {
   var scheme: java.lang.String
 }
 
+object EndpointAuthorization {
+  @scala.inline
+  def apply(parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String], scheme: java.lang.String): EndpointAuthorization = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("scheme")(scheme)
+    __obj.asInstanceOf[EndpointAuthorization]
+  }
+}
+

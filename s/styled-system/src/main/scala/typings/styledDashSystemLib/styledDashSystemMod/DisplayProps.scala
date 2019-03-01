@@ -16,3 +16,12 @@ trait DisplayProps extends js.Object {
   var display: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.DisplayProperty]] = js.undefined
 }
 
+object DisplayProps {
+  @scala.inline
+  def apply(display: ResponsiveValue[csstypeLib.csstypeMod.DisplayProperty] = null): DisplayProps = {
+    val __obj = js.Dynamic.literal()
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DisplayProps]
+  }
+}
+

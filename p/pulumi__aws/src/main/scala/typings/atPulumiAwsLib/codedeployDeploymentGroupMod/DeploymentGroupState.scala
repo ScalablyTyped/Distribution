@@ -92,3 +92,52 @@ trait DeploymentGroupState extends js.Object {
   ] = js.undefined
 }
 
+object DeploymentGroupState {
+  @scala.inline
+  def apply(
+    alarmConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AlarmsEnabled] = null,
+    appName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    autoRollbackConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledEvents] = null,
+    autoscalingGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    blueGreenDeploymentConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeploymentReadyOptionGreenFleetProvisioningOption] = null,
+    deploymentConfigName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    deploymentGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    deploymentStyle: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeploymentOptionDeploymentType] = null,
+    ec2TagFilters: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyTypeValueInput]]
+    ] = null,
+    ec2TagSets: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_Ec2TagFiltersAnonKeyTypeValueInput]
+      ]
+    ] = null,
+    ecsService: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ClusterNameServiceName] = null,
+    loadBalancerInfo: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ElbInfosTargetGroupInfos] = null,
+    onPremisesInstanceTagFilters: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyTypeValueInput]]
+    ] = null,
+    serviceRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    triggerConfigurations: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TriggerEventsTriggerName]]
+    ] = null
+  ): DeploymentGroupState = {
+    val __obj = js.Dynamic.literal()
+    if (alarmConfiguration != null) __obj.updateDynamic("alarmConfiguration")(alarmConfiguration.asInstanceOf[js.Any])
+    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
+    if (autoRollbackConfiguration != null) __obj.updateDynamic("autoRollbackConfiguration")(autoRollbackConfiguration.asInstanceOf[js.Any])
+    if (autoscalingGroups != null) __obj.updateDynamic("autoscalingGroups")(autoscalingGroups.asInstanceOf[js.Any])
+    if (blueGreenDeploymentConfig != null) __obj.updateDynamic("blueGreenDeploymentConfig")(blueGreenDeploymentConfig.asInstanceOf[js.Any])
+    if (deploymentConfigName != null) __obj.updateDynamic("deploymentConfigName")(deploymentConfigName.asInstanceOf[js.Any])
+    if (deploymentGroupName != null) __obj.updateDynamic("deploymentGroupName")(deploymentGroupName.asInstanceOf[js.Any])
+    if (deploymentStyle != null) __obj.updateDynamic("deploymentStyle")(deploymentStyle.asInstanceOf[js.Any])
+    if (ec2TagFilters != null) __obj.updateDynamic("ec2TagFilters")(ec2TagFilters.asInstanceOf[js.Any])
+    if (ec2TagSets != null) __obj.updateDynamic("ec2TagSets")(ec2TagSets.asInstanceOf[js.Any])
+    if (ecsService != null) __obj.updateDynamic("ecsService")(ecsService.asInstanceOf[js.Any])
+    if (loadBalancerInfo != null) __obj.updateDynamic("loadBalancerInfo")(loadBalancerInfo.asInstanceOf[js.Any])
+    if (onPremisesInstanceTagFilters != null) __obj.updateDynamic("onPremisesInstanceTagFilters")(onPremisesInstanceTagFilters.asInstanceOf[js.Any])
+    if (serviceRoleArn != null) __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
+    if (triggerConfigurations != null) __obj.updateDynamic("triggerConfigurations")(triggerConfigurations.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeploymentGroupState]
+  }
+}
+

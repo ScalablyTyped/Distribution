@@ -42,3 +42,28 @@ trait GraphQLApiState extends js.Object {
   val userPoolConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AppIdClientRegexAwsRegion]] = js.undefined
 }
 
+object GraphQLApiState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    authenticationType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    logConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CloudwatchLogsRoleArnFieldLogLevel] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    openidConnectConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthTtlClientId] = null,
+    uris: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null,
+    userPoolConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AppIdClientRegexAwsRegion] = null
+  ): GraphQLApiState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (authenticationType != null) __obj.updateDynamic("authenticationType")(authenticationType.asInstanceOf[js.Any])
+    if (logConfig != null) __obj.updateDynamic("logConfig")(logConfig.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (openidConnectConfig != null) __obj.updateDynamic("openidConnectConfig")(openidConnectConfig.asInstanceOf[js.Any])
+    if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
+    if (userPoolConfig != null) __obj.updateDynamic("userPoolConfig")(userPoolConfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GraphQLApiState]
+  }
+}
+

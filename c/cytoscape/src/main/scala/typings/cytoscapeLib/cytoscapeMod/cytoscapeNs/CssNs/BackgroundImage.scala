@@ -76,3 +76,30 @@ trait BackgroundImage extends js.Object {
   var `background-width`: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object BackgroundImage {
+  @scala.inline
+  def apply(
+    `background-clip`: cytoscapeLib.cytoscapeLibStrings.clipped | cytoscapeLib.cytoscapeLibStrings.none = null,
+    `background-fit`: cytoscapeLib.cytoscapeLibStrings.none | cytoscapeLib.cytoscapeLibStrings.contain | cytoscapeLib.cytoscapeLibStrings.cover = null,
+    `background-height`: scala.Double | java.lang.String = null,
+    `background-image`: java.lang.String = null,
+    `background-image-opacity`: scala.Int | scala.Double = null,
+    `background-position-x`: scala.Double | java.lang.String = null,
+    `background-position-y`: scala.Double | java.lang.String = null,
+    `background-repeat`: cytoscapeLib.cytoscapeLibStrings.`no-repeat` | cytoscapeLib.cytoscapeLibStrings.`repeat-x` | cytoscapeLib.cytoscapeLibStrings.`repeat-y` | cytoscapeLib.cytoscapeLibStrings.repeat = null,
+    `background-width`: scala.Double | java.lang.String = null
+  ): BackgroundImage = {
+    val __obj = js.Dynamic.literal()
+    if (`background-clip` != null) __obj.updateDynamic("background-clip")(`background-clip`.asInstanceOf[js.Any])
+    if (`background-fit` != null) __obj.updateDynamic("background-fit")(`background-fit`.asInstanceOf[js.Any])
+    if (`background-height` != null) __obj.updateDynamic("background-height")(`background-height`.asInstanceOf[js.Any])
+    if (`background-image` != null) __obj.updateDynamic("background-image")(`background-image`)
+    if (`background-image-opacity` != null) __obj.updateDynamic("background-image-opacity")(`background-image-opacity`.asInstanceOf[js.Any])
+    if (`background-position-x` != null) __obj.updateDynamic("background-position-x")(`background-position-x`.asInstanceOf[js.Any])
+    if (`background-position-y` != null) __obj.updateDynamic("background-position-y")(`background-position-y`.asInstanceOf[js.Any])
+    if (`background-repeat` != null) __obj.updateDynamic("background-repeat")(`background-repeat`.asInstanceOf[js.Any])
+    if (`background-width` != null) __obj.updateDynamic("background-width")(`background-width`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundImage]
+  }
+}
+

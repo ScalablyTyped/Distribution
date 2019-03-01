@@ -12,3 +12,22 @@ trait ApisResource extends js.Object {
   def list(request: gapiDotClientDotDiscoveryLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[DirectoryList]
 }
 
+object ApisResource {
+  @scala.inline
+  def apply(
+    getRest: js.Function1[
+      gapiDotClientDotDiscoveryLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RestDescription]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDiscoveryLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DirectoryList]
+    ]
+  ): ApisResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getRest")(getRest)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ApisResource]
+  }
+}
+

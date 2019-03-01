@@ -26,3 +26,14 @@ trait ChartResetZoomButton extends js.Object {
   var theme: js.UndefOr[ButtonStatesTheme] = js.undefined
 }
 
+object ChartResetZoomButton {
+  @scala.inline
+  def apply(position: Position = null, relativeTo: java.lang.String = null, theme: ButtonStatesTheme = null): ChartResetZoomButton = {
+    val __obj = js.Dynamic.literal()
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[ChartResetZoomButton]
+  }
+}
+

@@ -51,3 +51,34 @@ trait ScalesLabel extends js.Object {
   var unitTextPosition: js.UndefOr[UnitTextPlacement | java.lang.String] = js.undefined
 }
 
+object ScalesLabel {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    autoAngle: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    distanceFromScale: scala.Int | scala.Double = null,
+    font: ScalesLabelsFont = null,
+    includeFirstValue: js.UndefOr[scala.Boolean] = js.undefined,
+    opacity: scala.Int | scala.Double = null,
+    placement: Placement | java.lang.String = null,
+    `type`: LabelType | java.lang.String = null,
+    unitText: java.lang.String = null,
+    unitTextPosition: UnitTextPlacement | java.lang.String = null
+  ): ScalesLabel = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAngle)) __obj.updateDynamic("autoAngle")(autoAngle)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(includeFirstValue)) __obj.updateDynamic("includeFirstValue")(includeFirstValue)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (unitText != null) __obj.updateDynamic("unitText")(unitText)
+    if (unitTextPosition != null) __obj.updateDynamic("unitTextPosition")(unitTextPosition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScalesLabel]
+  }
+}
+

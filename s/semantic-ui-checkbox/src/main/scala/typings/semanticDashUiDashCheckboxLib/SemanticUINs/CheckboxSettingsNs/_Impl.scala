@@ -121,3 +121,72 @@ trait _Impl extends js.Object {
   def onUnchecked(`this`: stdLib.HTMLInputElement): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    beforeChecked: js.Function1[
+      stdLib.HTMLInputElement, 
+      scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`
+    ],
+    beforeDeterminate: js.Function1[
+      stdLib.HTMLInputElement, 
+      scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`
+    ],
+    beforeIndeterminate: js.Function1[
+      stdLib.HTMLInputElement, 
+      scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`
+    ],
+    beforeUnchecked: js.Function1[
+      stdLib.HTMLInputElement, 
+      scala.Unit | semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibNumbers.`false`
+    ],
+    className: semanticDashUiDashCheckboxLib.SemanticUINs.CheckboxNs.ClassNameSettings,
+    debug: scala.Boolean,
+    error: semanticDashUiDashCheckboxLib.SemanticUINs.CheckboxNs.ErrorSettings,
+    fireOnInit: scala.Boolean,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onChange: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    onChecked: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    onDeterminate: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    onDisable: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    onDisabled: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    onEnable: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    onEnabled: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    onIndeterminate: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    onUnchecked: js.Function1[stdLib.HTMLInputElement, scala.Unit],
+    performance: scala.Boolean,
+    selector: semanticDashUiDashCheckboxLib.SemanticUINs.CheckboxNs.SelectorSettings,
+    silent: scala.Boolean,
+    uncheckable: semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibStrings.auto | scala.Boolean,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("beforeChecked")(beforeChecked)
+    __obj.updateDynamic("beforeDeterminate")(beforeDeterminate)
+    __obj.updateDynamic("beforeIndeterminate")(beforeIndeterminate)
+    __obj.updateDynamic("beforeUnchecked")(beforeUnchecked)
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("fireOnInit")(fireOnInit)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("onChecked")(onChecked)
+    __obj.updateDynamic("onDeterminate")(onDeterminate)
+    __obj.updateDynamic("onDisable")(onDisable)
+    __obj.updateDynamic("onDisabled")(onDisabled)
+    __obj.updateDynamic("onEnable")(onEnable)
+    __obj.updateDynamic("onEnabled")(onEnabled)
+    __obj.updateDynamic("onIndeterminate")(onIndeterminate)
+    __obj.updateDynamic("onUnchecked")(onUnchecked)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("uncheckable")(uncheckable.asInstanceOf[js.Any])
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

@@ -68,3 +68,30 @@ trait SecurityContext extends js.Object {
   val seLinuxOptions: SELinuxOptions
 }
 
+object SecurityContext {
+  @scala.inline
+  def apply(
+    allowPrivilegeEscalation: scala.Boolean,
+    capabilities: Capabilities,
+    privileged: scala.Boolean,
+    procMount: java.lang.String,
+    readOnlyRootFilesystem: scala.Boolean,
+    runAsGroup: scala.Double,
+    runAsNonRoot: scala.Boolean,
+    runAsUser: scala.Double,
+    seLinuxOptions: SELinuxOptions
+  ): SecurityContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowPrivilegeEscalation")(allowPrivilegeEscalation)
+    __obj.updateDynamic("capabilities")(capabilities)
+    __obj.updateDynamic("privileged")(privileged)
+    __obj.updateDynamic("procMount")(procMount)
+    __obj.updateDynamic("readOnlyRootFilesystem")(readOnlyRootFilesystem)
+    __obj.updateDynamic("runAsGroup")(runAsGroup)
+    __obj.updateDynamic("runAsNonRoot")(runAsNonRoot)
+    __obj.updateDynamic("runAsUser")(runAsUser)
+    __obj.updateDynamic("seLinuxOptions")(seLinuxOptions)
+    __obj.asInstanceOf[SecurityContext]
+  }
+}
+

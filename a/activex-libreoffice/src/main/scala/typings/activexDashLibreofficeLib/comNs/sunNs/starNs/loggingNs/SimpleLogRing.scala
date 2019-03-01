@@ -19,3 +19,22 @@ trait SimpleLogRing extends XSimpleLogRing {
   def createWithSize(nSize: scala.Double): scala.Unit
 }
 
+object SimpleLogRing {
+  @scala.inline
+  def apply(
+    CollectedLog: activexDashInteropLib.SafeArray[java.lang.String],
+    create: js.Function0[scala.Unit],
+    createWithSize: js.Function1[scala.Double, scala.Unit],
+    getCollectedLog: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    logString: js.Function1[java.lang.String, scala.Unit]
+  ): SimpleLogRing = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CollectedLog")(CollectedLog)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createWithSize")(createWithSize)
+    __obj.updateDynamic("getCollectedLog")(getCollectedLog)
+    __obj.updateDynamic("logString")(logString)
+    __obj.asInstanceOf[SimpleLogRing]
+  }
+}
+

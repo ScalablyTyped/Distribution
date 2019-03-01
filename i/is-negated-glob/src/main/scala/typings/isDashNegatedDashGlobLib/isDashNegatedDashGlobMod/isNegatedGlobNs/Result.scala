@@ -11,3 +11,14 @@ trait Result extends js.Object {
   var pattern: java.lang.String
 }
 
+object Result {
+  @scala.inline
+  def apply(negated: scala.Boolean, original: java.lang.String, pattern: java.lang.String): Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("negated")(negated)
+    __obj.updateDynamic("original")(original)
+    __obj.updateDynamic("pattern")(pattern)
+    __obj.asInstanceOf[Result]
+  }
+}
+

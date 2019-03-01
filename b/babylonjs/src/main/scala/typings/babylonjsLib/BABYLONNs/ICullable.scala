@@ -25,3 +25,16 @@ trait ICullable extends js.Object {
   def isInFrustum(frustumPlanes: js.Array[Plane]): scala.Boolean
 }
 
+object ICullable {
+  @scala.inline
+  def apply(
+    isCompletelyInFrustum: js.Function1[js.Array[Plane], scala.Boolean],
+    isInFrustum: js.Function1[js.Array[Plane], scala.Boolean]
+  ): ICullable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isCompletelyInFrustum")(isCompletelyInFrustum)
+    __obj.updateDynamic("isInFrustum")(isInFrustum)
+    __obj.asInstanceOf[ICullable]
+  }
+}
+

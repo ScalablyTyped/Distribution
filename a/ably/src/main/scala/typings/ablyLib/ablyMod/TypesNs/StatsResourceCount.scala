@@ -13,3 +13,22 @@ trait StatsResourceCount extends js.Object {
   var refused: scala.Double
 }
 
+object StatsResourceCount {
+  @scala.inline
+  def apply(
+    mean: scala.Double,
+    min: scala.Double,
+    opened: scala.Double,
+    peak: scala.Double,
+    refused: scala.Double
+  ): StatsResourceCount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mean")(mean)
+    __obj.updateDynamic("min")(min)
+    __obj.updateDynamic("opened")(opened)
+    __obj.updateDynamic("peak")(peak)
+    __obj.updateDynamic("refused")(refused)
+    __obj.asInstanceOf[StatsResourceCount]
+  }
+}
+

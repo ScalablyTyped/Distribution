@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** Declarative event action that cancels a network request. */
 @JSGlobal("chrome.webViewRequest.CancelRequest")
 @js.native
-class CancelRequest () extends js.Object {
+class CancelRequest () extends OnRequestActions {
   val instanceType: java.lang.String = js.native
   val typeGuard: chromeDashAppsLib.chromeDashAppsLibStrings.CancelRequest = js.native
 }

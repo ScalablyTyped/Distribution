@@ -13,3 +13,20 @@ trait HomogenMatrix4 extends js.Object {
   var Line4: HomogenMatrixLine4
 }
 
+object HomogenMatrix4 {
+  @scala.inline
+  def apply(
+    Line1: HomogenMatrixLine4,
+    Line2: HomogenMatrixLine4,
+    Line3: HomogenMatrixLine4,
+    Line4: HomogenMatrixLine4
+  ): HomogenMatrix4 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Line1")(Line1)
+    __obj.updateDynamic("Line2")(Line2)
+    __obj.updateDynamic("Line3")(Line3)
+    __obj.updateDynamic("Line4")(Line4)
+    __obj.asInstanceOf[HomogenMatrix4]
+  }
+}
+

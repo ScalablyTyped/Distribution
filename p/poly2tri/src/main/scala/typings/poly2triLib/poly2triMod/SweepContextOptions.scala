@@ -14,3 +14,12 @@ trait SweepContextOptions extends js.Object {
   var cloneArrays: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SweepContextOptions {
+  @scala.inline
+  def apply(cloneArrays: js.UndefOr[scala.Boolean] = js.undefined): SweepContextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cloneArrays)) __obj.updateDynamic("cloneArrays")(cloneArrays)
+    __obj.asInstanceOf[SweepContextOptions]
+  }
+}
+

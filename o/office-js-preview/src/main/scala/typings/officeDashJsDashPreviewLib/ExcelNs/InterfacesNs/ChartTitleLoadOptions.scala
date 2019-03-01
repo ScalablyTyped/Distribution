@@ -107,3 +107,40 @@ trait ChartTitleLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartTitleLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartTitleFormatLoadOptions = null,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    left: js.UndefOr[scala.Boolean] = js.undefined,
+    overlay: js.UndefOr[scala.Boolean] = js.undefined,
+    position: js.UndefOr[scala.Boolean] = js.undefined,
+    showShadow: js.UndefOr[scala.Boolean] = js.undefined,
+    text: js.UndefOr[scala.Boolean] = js.undefined,
+    textOrientation: js.UndefOr[scala.Boolean] = js.undefined,
+    top: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartTitleLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay)
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation)
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ChartTitleLoadOptions]
+  }
+}
+

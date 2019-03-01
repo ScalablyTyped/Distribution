@@ -10,3 +10,13 @@ trait SyncContext extends Context {
   var callback_SyncContext: js.UndefOr[scala.Nothing]
 }
 
+object SyncContext {
+  @scala.inline
+  def apply(options: Options, callback: js.UndefOr[scala.Nothing] = js.undefined): SyncContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(callback)) __obj.updateDynamic("callback")(callback)
+    __obj.asInstanceOf[SyncContext]
+  }
+}
+

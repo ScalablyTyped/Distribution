@@ -12,3 +12,17 @@ trait Anon_EventHTMLDivElement extends js.Object {
   ]
 }
 
+object Anon_EventHTMLDivElement {
+  @scala.inline
+  def apply(
+    event: reactLib.reactMod.ReactNs.SyntheticEvent[
+      reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      reactLib.Event
+    ]
+  ): Anon_EventHTMLDivElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.asInstanceOf[Anon_EventHTMLDivElement]
+  }
+}
+

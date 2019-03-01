@@ -11,3 +11,18 @@ trait Anon_ChatIdInlineMsgIdMessageId extends js.Object {
   var messageId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ChatIdInlineMsgIdMessageId {
+  @scala.inline
+  def apply(
+    inlineMsgId: scala.Double,
+    chatId: scala.Double | java.lang.String = null,
+    messageId: scala.Int | scala.Double = null
+  ): Anon_ChatIdInlineMsgIdMessageId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inlineMsgId")(inlineMsgId)
+    if (chatId != null) __obj.updateDynamic("chatId")(chatId.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ChatIdInlineMsgIdMessageId]
+  }
+}
+

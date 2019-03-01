@@ -13,3 +13,22 @@ trait Anon_Doc[V] extends js.Object {
   var order: js.Array[scala.Double]
 }
 
+object Anon_Doc {
+  @scala.inline
+  def apply[V](
+    fields: js.Object,
+    id: java.lang.String,
+    key: java.lang.String,
+    order: js.Array[scala.Double],
+    doc: V = null
+  ): Anon_Doc[V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("order")(order)
+    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Doc[V]]
+  }
+}
+

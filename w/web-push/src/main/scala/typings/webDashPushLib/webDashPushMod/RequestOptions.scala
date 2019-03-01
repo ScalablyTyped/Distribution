@@ -17,3 +17,24 @@ trait RequestOptions extends js.Object {
   var vapidDetails: js.UndefOr[webDashPushLib.Anon_PrivateKey] = js.undefined
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    TTL: scala.Int | scala.Double = null,
+    contentEncoding: ContentEncoding = null,
+    gcmAPIKey: java.lang.String = null,
+    headers: Headers = null,
+    proxy: java.lang.String = null,
+    vapidDetails: webDashPushLib.Anon_PrivateKey = null
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (TTL != null) __obj.updateDynamic("TTL")(TTL.asInstanceOf[js.Any])
+    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)
+    if (gcmAPIKey != null) __obj.updateDynamic("gcmAPIKey")(gcmAPIKey)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (vapidDetails != null) __obj.updateDynamic("vapidDetails")(vapidDetails)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

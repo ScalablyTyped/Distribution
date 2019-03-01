@@ -1,9 +1,0 @@
-package typings
-
-import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-package object reactDashNativeDashShareLib {
-  type SupportedSocialApps = reactDashNativeDashShareLib.reactDashNativeDashShareLibStrings.facebook | reactDashNativeDashShareLib.reactDashNativeDashShareLibStrings.pagesmanager | reactDashNativeDashShareLib.reactDashNativeDashShareLibStrings.twitter | reactDashNativeDashShareLib.reactDashNativeDashShareLibStrings.whatsapp | reactDashNativeDashShareLib.reactDashNativeDashShareLibStrings.instagram | reactDashNativeDashShareLib.reactDashNativeDashShareLibStrings.googleplus | reactDashNativeDashShareLib.reactDashNativeDashShareLibStrings.email
-}

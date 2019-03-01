@@ -10,3 +10,12 @@ trait Additions extends js.Object {
   def asMutable(): stdLib.Date
 }
 
+object Additions {
+  @scala.inline
+  def apply(asMutable: js.Function0[stdLib.Date]): Additions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("asMutable")(asMutable)
+    __obj.asInstanceOf[Additions]
+  }
+}
+

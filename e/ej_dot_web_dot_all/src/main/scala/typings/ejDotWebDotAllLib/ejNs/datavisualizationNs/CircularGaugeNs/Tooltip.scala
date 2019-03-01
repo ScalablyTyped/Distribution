@@ -20,3 +20,18 @@ trait Tooltip extends js.Object {
   var templateID: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Tooltip {
+  @scala.inline
+  def apply(
+    showCustomLabelTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    showLabelTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    templateID: java.lang.String = null
+  ): Tooltip = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showCustomLabelTooltip)) __obj.updateDynamic("showCustomLabelTooltip")(showCustomLabelTooltip)
+    if (!js.isUndefined(showLabelTooltip)) __obj.updateDynamic("showLabelTooltip")(showLabelTooltip)
+    if (templateID != null) __obj.updateDynamic("templateID")(templateID)
+    __obj.asInstanceOf[Tooltip]
+  }
+}
+

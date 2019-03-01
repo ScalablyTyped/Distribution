@@ -14,3 +14,24 @@ trait Anon_DefaultKey extends js.Object {
   var srclang: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DefaultKey {
+  @scala.inline
+  def apply(
+    src: java.lang.String,
+    default: js.UndefOr[scala.Boolean] = js.undefined,
+    key: js.Any = null,
+    kind: java.lang.String = null,
+    label: java.lang.String = null,
+    srclang: java.lang.String = null
+  ): Anon_DefaultKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("src")(src)
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (srclang != null) __obj.updateDynamic("srclang")(srclang)
+    __obj.asInstanceOf[Anon_DefaultKey]
+  }
+}
+

@@ -111,3 +111,52 @@ trait Options extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allow_single_deselect: js.UndefOr[scala.Boolean] = js.undefined,
+    case_sensitive_search: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_search: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_search_threshold: scala.Int | scala.Double = null,
+    display_disabled_options: js.UndefOr[scala.Boolean] = js.undefined,
+    display_selected_options: js.UndefOr[scala.Boolean] = js.undefined,
+    enable_split_word_search: js.UndefOr[scala.Boolean] = js.undefined,
+    group_search: js.UndefOr[scala.Boolean] = js.undefined,
+    hide_results_on_select: js.UndefOr[scala.Boolean] = js.undefined,
+    include_group_label_in_selected: js.UndefOr[scala.Boolean] = js.undefined,
+    inherit_select_classes: js.UndefOr[scala.Boolean] = js.undefined,
+    max_selected_options: scala.Int | scala.Double = null,
+    max_shown_results: scala.Int | scala.Double = null,
+    no_results_text: java.lang.String = null,
+    placeholder_text_multiple: java.lang.String = null,
+    placeholder_text_single: java.lang.String = null,
+    rtl: js.UndefOr[scala.Boolean] = js.undefined,
+    search_contains: js.UndefOr[scala.Boolean] = js.undefined,
+    single_backstroke_delete: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allow_single_deselect)) __obj.updateDynamic("allow_single_deselect")(allow_single_deselect)
+    if (!js.isUndefined(case_sensitive_search)) __obj.updateDynamic("case_sensitive_search")(case_sensitive_search)
+    if (!js.isUndefined(disable_search)) __obj.updateDynamic("disable_search")(disable_search)
+    if (disable_search_threshold != null) __obj.updateDynamic("disable_search_threshold")(disable_search_threshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(display_disabled_options)) __obj.updateDynamic("display_disabled_options")(display_disabled_options)
+    if (!js.isUndefined(display_selected_options)) __obj.updateDynamic("display_selected_options")(display_selected_options)
+    if (!js.isUndefined(enable_split_word_search)) __obj.updateDynamic("enable_split_word_search")(enable_split_word_search)
+    if (!js.isUndefined(group_search)) __obj.updateDynamic("group_search")(group_search)
+    if (!js.isUndefined(hide_results_on_select)) __obj.updateDynamic("hide_results_on_select")(hide_results_on_select)
+    if (!js.isUndefined(include_group_label_in_selected)) __obj.updateDynamic("include_group_label_in_selected")(include_group_label_in_selected)
+    if (!js.isUndefined(inherit_select_classes)) __obj.updateDynamic("inherit_select_classes")(inherit_select_classes)
+    if (max_selected_options != null) __obj.updateDynamic("max_selected_options")(max_selected_options.asInstanceOf[js.Any])
+    if (max_shown_results != null) __obj.updateDynamic("max_shown_results")(max_shown_results.asInstanceOf[js.Any])
+    if (no_results_text != null) __obj.updateDynamic("no_results_text")(no_results_text)
+    if (placeholder_text_multiple != null) __obj.updateDynamic("placeholder_text_multiple")(placeholder_text_multiple)
+    if (placeholder_text_single != null) __obj.updateDynamic("placeholder_text_single")(placeholder_text_single)
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
+    if (!js.isUndefined(search_contains)) __obj.updateDynamic("search_contains")(search_contains)
+    if (!js.isUndefined(single_backstroke_delete)) __obj.updateDynamic("single_backstroke_delete")(single_backstroke_delete)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Options]
+  }
+}
+

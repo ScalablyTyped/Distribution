@@ -18,3 +18,22 @@ trait ScoreSubmission extends js.Object {
   var signature: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ScoreSubmission {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    leaderboardId: java.lang.String = null,
+    score: java.lang.String = null,
+    scoreTag: java.lang.String = null,
+    signature: java.lang.String = null
+  ): ScoreSubmission = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (leaderboardId != null) __obj.updateDynamic("leaderboardId")(leaderboardId)
+    if (score != null) __obj.updateDynamic("score")(score)
+    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag)
+    if (signature != null) __obj.updateDynamic("signature")(signature)
+    __obj.asInstanceOf[ScoreSubmission]
+  }
+}
+

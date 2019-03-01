@@ -18,3 +18,16 @@ trait Settings extends js.Object {
   var truncateMessages: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    comparePrototypes: js.UndefOr[scala.Boolean] = js.undefined,
+    truncateMessages: js.UndefOr[scala.Boolean] = js.undefined
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(comparePrototypes)) __obj.updateDynamic("comparePrototypes")(comparePrototypes)
+    if (!js.isUndefined(truncateMessages)) __obj.updateDynamic("truncateMessages")(truncateMessages)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

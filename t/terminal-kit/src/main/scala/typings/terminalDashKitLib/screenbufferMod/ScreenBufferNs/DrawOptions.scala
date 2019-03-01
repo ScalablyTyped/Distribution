@@ -21,3 +21,30 @@ trait DrawOptions extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DrawOptions {
+  @scala.inline
+  def apply(
+    blending: js.UndefOr[scala.Boolean] = js.undefined,
+    delta: js.UndefOr[scala.Boolean] = js.undefined,
+    dst: terminalDashKitLib.terminalMod.Terminal | terminalDashKitLib.screenbufferMod.ScreenBuffer = null,
+    dstClipRect: terminalDashKitLib.rectMod.namespaced = null,
+    srcClipRect: terminalDashKitLib.rectMod.namespaced = null,
+    tile: js.UndefOr[scala.Boolean] = js.undefined,
+    wrap: scala.Boolean | terminalDashKitLib.terminalDashKitLibStrings.x | terminalDashKitLib.terminalDashKitLibStrings.y = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): DrawOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(blending)) __obj.updateDynamic("blending")(blending)
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta)
+    if (dst != null) __obj.updateDynamic("dst")(dst.asInstanceOf[js.Any])
+    if (dstClipRect != null) __obj.updateDynamic("dstClipRect")(dstClipRect)
+    if (srcClipRect != null) __obj.updateDynamic("srcClipRect")(srcClipRect)
+    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile)
+    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DrawOptions]
+  }
+}
+

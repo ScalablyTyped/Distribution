@@ -11,3 +11,18 @@ trait Anon_Items extends js.Object {
   var userquery: js.Any
 }
 
+object Anon_Items {
+  @scala.inline
+  def apply(
+    items: js.Array[navermapsLib.naverNs.mapsNs.ServiceNs.AddressItem],
+    total: scala.Double,
+    userquery: js.Any
+  ): Anon_Items = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("total")(total)
+    __obj.updateDynamic("userquery")(userquery)
+    __obj.asInstanceOf[Anon_Items]
+  }
+}
+

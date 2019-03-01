@@ -93,3 +93,36 @@ trait RangeViewLoadOptions extends js.Object {
   var values: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RangeViewLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    cellAddresses: js.UndefOr[scala.Boolean] = js.undefined,
+    columnCount: js.UndefOr[scala.Boolean] = js.undefined,
+    formulas: js.UndefOr[scala.Boolean] = js.undefined,
+    formulasLocal: js.UndefOr[scala.Boolean] = js.undefined,
+    formulasR1C1: js.UndefOr[scala.Boolean] = js.undefined,
+    index: js.UndefOr[scala.Boolean] = js.undefined,
+    numberFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    rowCount: js.UndefOr[scala.Boolean] = js.undefined,
+    text: js.UndefOr[scala.Boolean] = js.undefined,
+    valueTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    values: js.UndefOr[scala.Boolean] = js.undefined
+  ): RangeViewLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(cellAddresses)) __obj.updateDynamic("cellAddresses")(cellAddresses)
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount)
+    if (!js.isUndefined(formulas)) __obj.updateDynamic("formulas")(formulas)
+    if (!js.isUndefined(formulasLocal)) __obj.updateDynamic("formulasLocal")(formulasLocal)
+    if (!js.isUndefined(formulasR1C1)) __obj.updateDynamic("formulasR1C1")(formulasR1C1)
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(valueTypes)) __obj.updateDynamic("valueTypes")(valueTypes)
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[RangeViewLoadOptions]
+  }
+}
+

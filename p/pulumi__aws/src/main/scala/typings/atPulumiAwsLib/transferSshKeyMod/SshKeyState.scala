@@ -20,3 +20,18 @@ trait SshKeyState extends js.Object {
   val userName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object SshKeyState {
+  @scala.inline
+  def apply(
+    body: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    serverId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    userName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): SshKeyState = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (serverId != null) __obj.updateDynamic("serverId")(serverId.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SshKeyState]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Delay extends js.Object {
   var show: scala.Double
 }
 
+object Delay {
+  @scala.inline
+  def apply(hide: scala.Double, show: scala.Double): Delay = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[Delay]
+  }
+}
+

@@ -23,3 +23,24 @@ trait Stats extends js.Object {
   var trequest: scala.Double
 }
 
+object Stats {
+  @scala.inline
+  def apply(
+    mtime: scala.Double,
+    tfirst: scala.Double,
+    tload: scala.Double,
+    trequest: scala.Double,
+    length: scala.Int | scala.Double = null,
+    tbuffered: scala.Int | scala.Double = null
+  ): Stats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mtime")(mtime)
+    __obj.updateDynamic("tfirst")(tfirst)
+    __obj.updateDynamic("tload")(tload)
+    __obj.updateDynamic("trequest")(trequest)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (tbuffered != null) __obj.updateDynamic("tbuffered")(tbuffered.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Stats]
+  }
+}
+

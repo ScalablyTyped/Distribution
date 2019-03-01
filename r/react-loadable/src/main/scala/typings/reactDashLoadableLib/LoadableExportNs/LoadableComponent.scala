@@ -17,3 +17,12 @@ trait LoadableComponent extends js.Object {
   def preload(): scala.Unit
 }
 
+object LoadableComponent {
+  @scala.inline
+  def apply(preload: js.Function0[scala.Unit]): LoadableComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("preload")(preload)
+    __obj.asInstanceOf[LoadableComponent]
+  }
+}
+

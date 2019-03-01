@@ -13,3 +13,21 @@ trait Location extends js.Object {
   var `type`: java.lang.String
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    pathname: java.lang.String,
+    payload: Payload,
+    `type`: java.lang.String,
+    query: js.Object = null,
+    search: java.lang.String = null
+  ): Location = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("pathname")(pathname)
+    __obj.updateDynamic("payload")(payload)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[Location]
+  }
+}
+

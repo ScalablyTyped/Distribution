@@ -18,3 +18,32 @@ trait PackerOptions extends js.Object {
   var inputHasAlpha: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PackerOptions {
+  @scala.inline
+  def apply(
+    bgColor: pngjsLib.Anon_Blue = null,
+    bitDepth: pngjsLib.pngjsLibNumbers.`8` | pngjsLib.pngjsLibNumbers.`16` = null,
+    colorType: ColorType = null,
+    deflateChunkSize: scala.Int | scala.Double = null,
+    deflateFactory: pngjsLib.Anon_Options = null,
+    deflateLevel: scala.Int | scala.Double = null,
+    deflateStrategy: scala.Int | scala.Double = null,
+    filterType: scala.Double | js.Array[scala.Double] = null,
+    inputColorType: ColorType = null,
+    inputHasAlpha: js.UndefOr[scala.Boolean] = js.undefined
+  ): PackerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
+    if (bitDepth != null) __obj.updateDynamic("bitDepth")(bitDepth.asInstanceOf[js.Any])
+    if (colorType != null) __obj.updateDynamic("colorType")(colorType)
+    if (deflateChunkSize != null) __obj.updateDynamic("deflateChunkSize")(deflateChunkSize.asInstanceOf[js.Any])
+    if (deflateFactory != null) __obj.updateDynamic("deflateFactory")(deflateFactory)
+    if (deflateLevel != null) __obj.updateDynamic("deflateLevel")(deflateLevel.asInstanceOf[js.Any])
+    if (deflateStrategy != null) __obj.updateDynamic("deflateStrategy")(deflateStrategy.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (inputColorType != null) __obj.updateDynamic("inputColorType")(inputColorType)
+    if (!js.isUndefined(inputHasAlpha)) __obj.updateDynamic("inputHasAlpha")(inputHasAlpha)
+    __obj.asInstanceOf[PackerOptions]
+  }
+}
+

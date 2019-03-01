@@ -27,3 +27,20 @@ trait ApplePayShippingMethod extends js.Object {
   var label: java.lang.String
 }
 
+object ApplePayShippingMethod {
+  @scala.inline
+  def apply(
+    amount: java.lang.String,
+    label: java.lang.String,
+    detail: java.lang.String = null,
+    identifier: java.lang.String = null
+  ): ApplePayShippingMethod = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("label")(label)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    __obj.asInstanceOf[ApplePayShippingMethod]
+  }
+}
+

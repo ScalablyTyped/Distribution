@@ -20,3 +20,24 @@ trait VcardAddress extends js.Object {
   var street: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VcardAddress {
+  @scala.inline
+  def apply(
+    code: java.lang.String = null,
+    country: java.lang.String = null,
+    locality: java.lang.String = null,
+    pobox: java.lang.String = null,
+    region: java.lang.String = null,
+    street: java.lang.String = null
+  ): VcardAddress = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (locality != null) __obj.updateDynamic("locality")(locality)
+    if (pobox != null) __obj.updateDynamic("pobox")(pobox)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (street != null) __obj.updateDynamic("street")(street)
+    __obj.asInstanceOf[VcardAddress]
+  }
+}
+

@@ -26,3 +26,40 @@ trait Options extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    autoResize: js.UndefOr[scala.Boolean] = js.undefined,
+    clickToUse: js.UndefOr[scala.Boolean] = js.undefined,
+    configure: js.Any = null,
+    edges: EdgeOptions = null,
+    groups: js.Any = null,
+    height: java.lang.String = null,
+    interaction: js.Any = null,
+    layout: js.Any = null,
+    locale: java.lang.String = null,
+    locales: Locales = null,
+    manipulation: js.Any = null,
+    nodes: NodeOptions = null,
+    physics: js.Any = null,
+    width: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize)
+    if (!js.isUndefined(clickToUse)) __obj.updateDynamic("clickToUse")(clickToUse)
+    if (configure != null) __obj.updateDynamic("configure")(configure)
+    if (edges != null) __obj.updateDynamic("edges")(edges)
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (interaction != null) __obj.updateDynamic("interaction")(interaction)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locales != null) __obj.updateDynamic("locales")(locales)
+    if (manipulation != null) __obj.updateDynamic("manipulation")(manipulation)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (physics != null) __obj.updateDynamic("physics")(physics)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Options]
+  }
+}
+

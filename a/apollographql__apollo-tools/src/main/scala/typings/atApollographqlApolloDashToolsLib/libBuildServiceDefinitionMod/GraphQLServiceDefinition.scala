@@ -12,3 +12,16 @@ trait GraphQLServiceDefinition extends js.Object {
   var schema: js.UndefOr[graphqlLib.graphqlMod.GraphQLSchema] = js.undefined
 }
 
+object GraphQLServiceDefinition {
+  @scala.inline
+  def apply(
+    errors: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[graphqlLib.graphqlMod.GraphQLError] = null,
+    schema: graphqlLib.graphqlMod.GraphQLSchema = null
+  ): GraphQLServiceDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[GraphQLServiceDefinition]
+  }
+}
+

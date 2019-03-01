@@ -680,6 +680,14 @@ object EFSNs extends js.Object {
     var ThroughputMode: js.UndefOr[ThroughputMode] = js.undefined
   }
   
+  trait _LifeCycleState extends js.Object
+  
+  trait _PerformanceMode extends js.Object
+  
+  trait _ThroughputMode extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AwsAccountId = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -691,7 +699,7 @@ object EFSNs extends js.Object {
   type FileSystemSizeValue = scala.Double
   type IpAddress = java.lang.String
   type KmsKeyId = java.lang.String
-  type LifeCycleState = awsDashSdkLib.awsDashSdkLibStrings.creating | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.updating | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type LifeCycleState = _LifeCycleState | java.lang.String
   type LifecyclePolicies = js.Array[LifecyclePolicy]
   type Marker = java.lang.String
   type MaxItems = scala.Double
@@ -699,7 +707,7 @@ object EFSNs extends js.Object {
   type MountTargetDescriptions = js.Array[MountTargetDescription]
   type MountTargetId = java.lang.String
   type NetworkInterfaceId = java.lang.String
-  type PerformanceMode = awsDashSdkLib.awsDashSdkLibStrings.generalPurpose | awsDashSdkLib.awsDashSdkLibStrings.maxIO | java.lang.String
+  type PerformanceMode = _PerformanceMode | java.lang.String
   type ProvisionedThroughputInMibps = scala.Double
   type SecurityGroup = java.lang.String
   type SecurityGroups = js.Array[SecurityGroup]
@@ -708,9 +716,9 @@ object EFSNs extends js.Object {
   type TagKeys = js.Array[TagKey]
   type TagValue = java.lang.String
   type Tags = js.Array[Tag]
-  type ThroughputMode = awsDashSdkLib.awsDashSdkLibStrings.bursting | awsDashSdkLib.awsDashSdkLibStrings.provisioned | java.lang.String
+  type ThroughputMode = _ThroughputMode | java.lang.String
   type Timestamp = stdLib.Date
   type TransitionToIARules = awsDashSdkLib.awsDashSdkLibStrings.AFTER_30_DAYS | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-02-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

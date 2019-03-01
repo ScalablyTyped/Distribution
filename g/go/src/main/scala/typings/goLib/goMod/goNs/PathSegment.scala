@@ -57,3 +57,51 @@ trait PathSegment extends js.Object {
   def equalsApprox(s: PathSegment): scala.Boolean
 }
 
+object PathSegment {
+  @scala.inline
+  def apply(
+    centerX: scala.Double,
+    centerY: scala.Double,
+    close: js.Function0[PathSegment],
+    copy: js.Function0[PathSegment],
+    endX: scala.Double,
+    endY: scala.Double,
+    equalsApprox: js.Function1[PathSegment, scala.Boolean],
+    isClockwiseArc: scala.Boolean,
+    isClosed: scala.Boolean,
+    isLargeArc: scala.Boolean,
+    point1X: scala.Double,
+    point1Y: scala.Double,
+    point2X: scala.Double,
+    point2Y: scala.Double,
+    radiusX: scala.Double,
+    radiusY: scala.Double,
+    startAngle: scala.Double,
+    sweepAngle: scala.Double,
+    `type`: EnumValue,
+    xAxisRotation: scala.Double
+  ): PathSegment = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("centerX")(centerX)
+    __obj.updateDynamic("centerY")(centerY)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("endX")(endX)
+    __obj.updateDynamic("endY")(endY)
+    __obj.updateDynamic("equalsApprox")(equalsApprox)
+    __obj.updateDynamic("isClockwiseArc")(isClockwiseArc)
+    __obj.updateDynamic("isClosed")(isClosed)
+    __obj.updateDynamic("isLargeArc")(isLargeArc)
+    __obj.updateDynamic("point1X")(point1X)
+    __obj.updateDynamic("point1Y")(point1Y)
+    __obj.updateDynamic("point2X")(point2X)
+    __obj.updateDynamic("point2Y")(point2Y)
+    __obj.updateDynamic("radiusX")(radiusX)
+    __obj.updateDynamic("radiusY")(radiusY)
+    __obj.updateDynamic("startAngle")(startAngle)
+    __obj.updateDynamic("sweepAngle")(sweepAngle)
+    __obj.updateDynamic("xAxisRotation")(xAxisRotation)
+    __obj.asInstanceOf[PathSegment]
+  }
+}
+

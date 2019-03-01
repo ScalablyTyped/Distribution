@@ -13,13 +13,15 @@ object mdastLibStrings {
   sealed trait break extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends mdastLib.mdastMod._AlignType
   
   @js.native
   sealed trait code extends js.Object
   
   @js.native
-  sealed trait collapsed extends js.Object
+  sealed trait collapsed
+    extends mdastLib.mdastMod.ReferenceType
   
   @js.native
   sealed trait definition extends js.Object
@@ -40,7 +42,8 @@ object mdastLibStrings {
   sealed trait footnoteReference extends js.Object
   
   @js.native
-  sealed trait full extends js.Object
+  sealed trait full
+    extends mdastLib.mdastMod.ReferenceType
   
   @js.native
   sealed trait heading extends js.Object
@@ -58,7 +61,8 @@ object mdastLibStrings {
   sealed trait inlineCode extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends mdastLib.mdastMod._AlignType
   
   @js.native
   sealed trait link extends js.Object
@@ -76,13 +80,15 @@ object mdastLibStrings {
   sealed trait paragraph extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends mdastLib.mdastMod._AlignType
   
   @js.native
   sealed trait root extends js.Object
   
   @js.native
-  sealed trait shortcut extends js.Object
+  sealed trait shortcut
+    extends mdastLib.mdastMod.ReferenceType
   
   @js.native
   sealed trait strong extends js.Object

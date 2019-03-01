@@ -79,3 +79,46 @@ trait Anon_Aggregator extends js.Object {
   var youngest: java.lang.String
 }
 
+object Anon_Aggregator {
+  @scala.inline
+  def apply(
+    metric: java.lang.String,
+    project: java.lang.String,
+    youngest: java.lang.String,
+    aggregator: java.lang.String = null,
+    alt: java.lang.String = null,
+    count: scala.Int | scala.Double = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    labels: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    oldest: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    timespan: java.lang.String = null,
+    userIp: java.lang.String = null,
+    window: java.lang.String = null
+  ): Anon_Aggregator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metric")(metric)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("youngest")(youngest)
+    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (oldest != null) __obj.updateDynamic("oldest")(oldest)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (timespan != null) __obj.updateDynamic("timespan")(timespan)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (window != null) __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[Anon_Aggregator]
+  }
+}
+

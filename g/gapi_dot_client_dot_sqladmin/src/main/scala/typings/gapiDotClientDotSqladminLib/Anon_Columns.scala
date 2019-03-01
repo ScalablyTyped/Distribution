@@ -12,3 +12,13 @@ trait Anon_Columns extends js.Object {
   var table: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Columns {
+  @scala.inline
+  def apply(columns: js.Array[java.lang.String] = null, table: java.lang.String = null): Anon_Columns = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (table != null) __obj.updateDynamic("table")(table)
+    __obj.asInstanceOf[Anon_Columns]
+  }
+}
+

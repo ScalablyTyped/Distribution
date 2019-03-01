@@ -26,3 +26,40 @@ trait Anon_0expected extends js.Object {
   var `_0_or_1_`: Anon_Code
 }
 
+object Anon_0expected {
+  @scala.inline
+  def apply(
+    Argument_0_cannot_be_specified_multiple_times: Anon_Code,
+    `Cannot_find_name_0_`: Anon_Code,
+    Constant_expected: Anon_Code,
+    Digit_expected: Anon_Code,
+    `Duplicate_identifier_0_`: Anon_Code,
+    `Duplicate_terminal_0_`: Anon_Code,
+    Invalid_character: Anon_Code,
+    Invalid_escape_sequence: Anon_Code,
+    `Obsolete_0_`: Anon_CodeMessage,
+    `Production_0_does_not_have_a_parameter_named_1_`: Anon_Code,
+    Production_0_is_missing_parameter_1_All_definitions_of_production_0_must_specify_the_same_formal_parameters: Anon_Code,
+    Production_expected: Anon_Code,
+    `There_is_no_argument_given_for_parameter_0_`: Anon_Code,
+    `Unexpected_token_0_`: Anon_Code,
+    Unterminated_identifier_literal: Anon_Code,
+    Unterminated_string_literal: Anon_Code,
+    _0_expected: Anon_Code,
+    `_0_or_1_`: Anon_Code
+  ): Anon_0expected = {
+    val __obj = js.Dynamic.literal(`Cannot_find_name_0_` = `Cannot_find_name_0_`, `Duplicate_identifier_0_` = `Duplicate_identifier_0_`, `Duplicate_terminal_0_` = `Duplicate_terminal_0_`, `Obsolete_0_` = `Obsolete_0_`, `Production_0_does_not_have_a_parameter_named_1_` = `Production_0_does_not_have_a_parameter_named_1_`, `There_is_no_argument_given_for_parameter_0_` = `There_is_no_argument_given_for_parameter_0_`, `Unexpected_token_0_` = `Unexpected_token_0_`, `_0_or_1_` = `_0_or_1_`)
+    __obj.updateDynamic("Argument_0_cannot_be_specified_multiple_times")(Argument_0_cannot_be_specified_multiple_times)
+    __obj.updateDynamic("Constant_expected")(Constant_expected)
+    __obj.updateDynamic("Digit_expected")(Digit_expected)
+    __obj.updateDynamic("Invalid_character")(Invalid_character)
+    __obj.updateDynamic("Invalid_escape_sequence")(Invalid_escape_sequence)
+    __obj.updateDynamic("Production_0_is_missing_parameter_1_All_definitions_of_production_0_must_specify_the_same_formal_parameters")(Production_0_is_missing_parameter_1_All_definitions_of_production_0_must_specify_the_same_formal_parameters)
+    __obj.updateDynamic("Production_expected")(Production_expected)
+    __obj.updateDynamic("Unterminated_identifier_literal")(Unterminated_identifier_literal)
+    __obj.updateDynamic("Unterminated_string_literal")(Unterminated_string_literal)
+    __obj.updateDynamic("_0_expected")(_0_expected)
+    __obj.asInstanceOf[Anon_0expected]
+  }
+}
+

@@ -17,3 +17,18 @@ trait GetTransitGatewayArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetTransitGatewayArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    id: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetTransitGatewayArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetTransitGatewayArgs]
+  }
+}
+

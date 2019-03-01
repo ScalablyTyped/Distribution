@@ -32,3 +32,20 @@ trait Block extends js.Object {
   var property: js.UndefOr[TextProperty] = js.undefined
 }
 
+object Block {
+  @scala.inline
+  def apply(
+    blockType: java.lang.String = null,
+    boundingBox: BoundingPoly = null,
+    paragraphs: js.Array[Paragraph] = null,
+    property: TextProperty = null
+  ): Block = {
+    val __obj = js.Dynamic.literal()
+    if (blockType != null) __obj.updateDynamic("blockType")(blockType)
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (property != null) __obj.updateDynamic("property")(property)
+    __obj.asInstanceOf[Block]
+  }
+}
+

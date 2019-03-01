@@ -14,3 +14,18 @@ trait ActionsSdkAppOptions extends js.Object {
   var sessionStarted: js.UndefOr[js.Function0[_]] = js.undefined
 }
 
+object ActionsSdkAppOptions {
+  @scala.inline
+  def apply(
+    request: expressLib.expressMod.eNs.Request,
+    response: expressLib.expressMod.eNs.Response,
+    sessionStarted: js.Function0[_] = null
+  ): ActionsSdkAppOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("response")(response)
+    if (sessionStarted != null) __obj.updateDynamic("sessionStarted")(sessionStarted)
+    __obj.asInstanceOf[ActionsSdkAppOptions]
+  }
+}
+

@@ -22,3 +22,40 @@ trait Anon_Cancel extends js.Object {
   var weekHeader: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Cancel {
+  @scala.inline
+  def apply(
+    cancel: java.lang.String = null,
+    currentText: java.lang.String = null,
+    dateRestriction: Anon_Hint = null,
+    dateTimeRange: Anon_HintMessageDetail = null,
+    done: java.lang.String = null,
+    nextText: java.lang.String = null,
+    prevText: java.lang.String = null,
+    regexp: Anon_MessageDetail = null,
+    required: Anon_Hint = null,
+    tooltipCalendar: java.lang.String = null,
+    tooltipCalendarDisabled: java.lang.String = null,
+    tooltipCalendarTime: java.lang.String = null,
+    tooltipCalendarTimeDisabled: java.lang.String = null,
+    weekHeader: java.lang.String = null
+  ): Anon_Cancel = {
+    val __obj = js.Dynamic.literal()
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (currentText != null) __obj.updateDynamic("currentText")(currentText)
+    if (dateRestriction != null) __obj.updateDynamic("dateRestriction")(dateRestriction)
+    if (dateTimeRange != null) __obj.updateDynamic("dateTimeRange")(dateTimeRange)
+    if (done != null) __obj.updateDynamic("done")(done)
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
+    if (prevText != null) __obj.updateDynamic("prevText")(prevText)
+    if (regexp != null) __obj.updateDynamic("regexp")(regexp)
+    if (required != null) __obj.updateDynamic("required")(required)
+    if (tooltipCalendar != null) __obj.updateDynamic("tooltipCalendar")(tooltipCalendar)
+    if (tooltipCalendarDisabled != null) __obj.updateDynamic("tooltipCalendarDisabled")(tooltipCalendarDisabled)
+    if (tooltipCalendarTime != null) __obj.updateDynamic("tooltipCalendarTime")(tooltipCalendarTime)
+    if (tooltipCalendarTimeDisabled != null) __obj.updateDynamic("tooltipCalendarTimeDisabled")(tooltipCalendarTimeDisabled)
+    if (weekHeader != null) __obj.updateDynamic("weekHeader")(weekHeader)
+    __obj.asInstanceOf[Anon_Cancel]
+  }
+}
+

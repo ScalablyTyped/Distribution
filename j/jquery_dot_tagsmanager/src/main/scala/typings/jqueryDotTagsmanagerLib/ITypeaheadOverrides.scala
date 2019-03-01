@@ -11,3 +11,18 @@ trait ITypeaheadOverrides extends js.Object {
   var selectedClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITypeaheadOverrides {
+  @scala.inline
+  def apply(
+    instanceSelectHandler: js.Function = null,
+    select: js.Function = null,
+    selectedClass: java.lang.String = null
+  ): ITypeaheadOverrides = {
+    val __obj = js.Dynamic.literal()
+    if (instanceSelectHandler != null) __obj.updateDynamic("instanceSelectHandler")(instanceSelectHandler)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass)
+    __obj.asInstanceOf[ITypeaheadOverrides]
+  }
+}
+

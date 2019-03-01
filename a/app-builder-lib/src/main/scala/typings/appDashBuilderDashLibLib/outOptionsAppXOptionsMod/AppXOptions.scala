@@ -53,3 +53,36 @@ trait AppXOptions
   val publisherDisplayName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object AppXOptions {
+  @scala.inline
+  def apply(
+    addAutoLaunchExtension: js.UndefOr[scala.Boolean] = js.undefined,
+    applicationId: java.lang.String = null,
+    artifactName: java.lang.String = null,
+    backgroundColor: java.lang.String = null,
+    displayName: java.lang.String = null,
+    electronUpdaterAware: js.UndefOr[scala.Boolean] = js.undefined,
+    identityName: java.lang.String = null,
+    languages: js.Array[java.lang.String] | java.lang.String = null,
+    makeappxArgs: js.Array[java.lang.String] = null,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
+    publisher: java.lang.String = null,
+    publisherDisplayName: java.lang.String = null
+  ): AppXOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addAutoLaunchExtension)) __obj.updateDynamic("addAutoLaunchExtension")(addAutoLaunchExtension)
+    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (!js.isUndefined(electronUpdaterAware)) __obj.updateDynamic("electronUpdaterAware")(electronUpdaterAware)
+    if (identityName != null) __obj.updateDynamic("identityName")(identityName)
+    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
+    if (makeappxArgs != null) __obj.updateDynamic("makeappxArgs")(makeappxArgs)
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (publisherDisplayName != null) __obj.updateDynamic("publisherDisplayName")(publisherDisplayName)
+    __obj.asInstanceOf[AppXOptions]
+  }
+}
+

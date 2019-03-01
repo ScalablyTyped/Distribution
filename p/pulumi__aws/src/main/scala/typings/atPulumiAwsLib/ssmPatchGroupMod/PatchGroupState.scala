@@ -16,3 +16,16 @@ trait PatchGroupState extends js.Object {
   val patchGroup: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object PatchGroupState {
+  @scala.inline
+  def apply(
+    baselineId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    patchGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): PatchGroupState = {
+    val __obj = js.Dynamic.literal()
+    if (baselineId != null) __obj.updateDynamic("baselineId")(baselineId.asInstanceOf[js.Any])
+    if (patchGroup != null) __obj.updateDynamic("patchGroup")(patchGroup.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PatchGroupState]
+  }
+}
+

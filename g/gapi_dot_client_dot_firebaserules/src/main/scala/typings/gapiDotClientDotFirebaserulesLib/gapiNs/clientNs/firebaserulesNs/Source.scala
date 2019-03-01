@@ -10,3 +10,12 @@ trait Source extends js.Object {
   var files: js.UndefOr[js.Array[File]] = js.undefined
 }
 
+object Source {
+  @scala.inline
+  def apply(files: js.Array[File] = null): Source = {
+    val __obj = js.Dynamic.literal()
+    if (files != null) __obj.updateDynamic("files")(files)
+    __obj.asInstanceOf[Source]
+  }
+}
+

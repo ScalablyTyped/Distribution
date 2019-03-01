@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashRndMod {
-  type Direction = reactDashRndLib.reactDashRndLibStrings.bottom | reactDashRndLib.reactDashRndLibStrings.bottomLeft | reactDashRndLib.reactDashRndLibStrings.bottomRight | reactDashRndLib.reactDashRndLibStrings.left | reactDashRndLib.reactDashRndLibStrings.right | reactDashRndLib.reactDashRndLibStrings.top | reactDashRndLib.reactDashRndLibStrings.topLeft | reactDashRndLib.reactDashRndLibStrings.topRight
   type DraggableEventHandler = js.Function2[
     /* e */ reactLib.MouseEvent | reactLib.TouchEvent, 
     /* data */ DraggableData, 

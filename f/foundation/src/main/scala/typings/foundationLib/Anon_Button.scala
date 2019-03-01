@@ -17,3 +17,30 @@ trait Anon_Button extends js.Object {
   var wrapper: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Button {
+  @scala.inline
+  def apply(
+    button: java.lang.String = null,
+    expose: java.lang.String = null,
+    expose_cover: java.lang.String = null,
+    link: java.lang.String = null,
+    modal: java.lang.String = null,
+    prev_button: java.lang.String = null,
+    timer: java.lang.String = null,
+    tip: java.lang.String = null,
+    wrapper: java.lang.String = null
+  ): Anon_Button = {
+    val __obj = js.Dynamic.literal()
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (expose != null) __obj.updateDynamic("expose")(expose)
+    if (expose_cover != null) __obj.updateDynamic("expose_cover")(expose_cover)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (modal != null) __obj.updateDynamic("modal")(modal)
+    if (prev_button != null) __obj.updateDynamic("prev_button")(prev_button)
+    if (timer != null) __obj.updateDynamic("timer")(timer)
+    if (tip != null) __obj.updateDynamic("tip")(tip)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    __obj.asInstanceOf[Anon_Button]
+  }
+}
+

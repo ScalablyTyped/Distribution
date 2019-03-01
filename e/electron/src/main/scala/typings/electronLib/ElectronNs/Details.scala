@@ -42,3 +42,28 @@ trait Details extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Details {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    domain: java.lang.String = null,
+    expirationDate: scala.Int | scala.Double = null,
+    httpOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    path: java.lang.String = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    value: java.lang.String = null
+  ): Details = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Details]
+  }
+}
+

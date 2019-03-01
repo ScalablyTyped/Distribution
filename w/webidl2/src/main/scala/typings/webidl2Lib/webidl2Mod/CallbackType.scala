@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CallbackType extends js.Object {
+trait CallbackType extends IDLRootType {
   /** A list of arguments, as in function parameters. */
   var arguments: js.Array[Argument]
   /** A list of extended attributes. */
@@ -15,5 +15,23 @@ trait CallbackType extends js.Object {
   /** The name of the callback. */
   var name: java.lang.String
   var `type`: webidl2Lib.webidl2LibStrings.callback
+}
+
+object CallbackType {
+  @scala.inline
+  def apply(
+    arguments: js.Array[Argument],
+    extAttrs: js.Array[ExtendedAttributes],
+    idlType: IDLTypeDescription,
+    name: java.lang.String,
+    `type`: webidl2Lib.webidl2LibStrings.callback
+  ): CallbackType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("arguments")(arguments)
+    __obj.updateDynamic("extAttrs")(extAttrs)
+    __obj.updateDynamic("idlType")(idlType)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[CallbackType]
+  }
 }
 

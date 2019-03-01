@@ -20,3 +20,16 @@ trait ChangeFloatingObjectRelativePositionCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeFloatingObjectRelativePositionCommand {
+  @scala.inline
+  def apply(
+    execute: js.Function1[FloatingObjectRelativePositionSettings, scala.Boolean],
+    getState: js.Function0[js.Any]
+  ): ChangeFloatingObjectRelativePositionCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeFloatingObjectRelativePositionCommand]
+  }
+}
+

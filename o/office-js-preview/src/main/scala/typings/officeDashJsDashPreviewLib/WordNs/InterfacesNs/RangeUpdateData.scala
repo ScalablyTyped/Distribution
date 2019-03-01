@@ -39,3 +39,20 @@ trait RangeUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object RangeUpdateData {
+  @scala.inline
+  def apply(
+    font: FontUpdateData = null,
+    hyperlink: java.lang.String = null,
+    style: java.lang.String = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null
+  ): RangeUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    __obj.asInstanceOf[RangeUpdateData]
+  }
+}
+

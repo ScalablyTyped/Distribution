@@ -9,3 +9,12 @@ trait VolumeParam extends js.Object {
   var volume: scala.Boolean
 }
 
+object VolumeParam {
+  @scala.inline
+  def apply(volume: scala.Boolean): VolumeParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("volume")(volume)
+    __obj.asInstanceOf[VolumeParam]
+  }
+}
+

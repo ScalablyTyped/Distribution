@@ -16,3 +16,24 @@ trait JsonObj extends js.Object {
   var root: webgmeLib.Anon_Guid
 }
 
+object JsonObj {
+  @scala.inline
+  def apply(
+    bases: js.Any,
+    containment: JsonContainment,
+    metaSheets: js.Any,
+    nodes: js.Any,
+    relids: js.Array[webgmeLib.GmeCommonNs.RelId],
+    root: webgmeLib.Anon_Guid
+  ): JsonObj = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bases")(bases)
+    __obj.updateDynamic("containment")(containment)
+    __obj.updateDynamic("metaSheets")(metaSheets)
+    __obj.updateDynamic("nodes")(nodes)
+    __obj.updateDynamic("relids")(relids)
+    __obj.updateDynamic("root")(root)
+    __obj.asInstanceOf[JsonObj]
+  }
+}
+

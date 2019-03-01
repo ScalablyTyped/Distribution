@@ -36,3 +36,26 @@ trait TokenOptions extends js.Object {
   var requireClientAuthentication: js.UndefOr[js.Object] = js.undefined
 }
 
+object TokenOptions {
+  @scala.inline
+  def apply(
+    accessTokenLifetime: scala.Int | scala.Double = null,
+    allowExtendedTokenAttributes: js.UndefOr[scala.Boolean] = js.undefined,
+    alwaysIssueNewRefreshToken: js.UndefOr[scala.Boolean] = js.undefined,
+    extendedGrantTypes: org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.Instantiable1[/* options */ TokenOptions, AbstractGrantType]
+    ] = null,
+    refreshTokenLifetime: scala.Int | scala.Double = null,
+    requireClientAuthentication: js.Object = null
+  ): TokenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (accessTokenLifetime != null) __obj.updateDynamic("accessTokenLifetime")(accessTokenLifetime.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowExtendedTokenAttributes)) __obj.updateDynamic("allowExtendedTokenAttributes")(allowExtendedTokenAttributes)
+    if (!js.isUndefined(alwaysIssueNewRefreshToken)) __obj.updateDynamic("alwaysIssueNewRefreshToken")(alwaysIssueNewRefreshToken)
+    if (extendedGrantTypes != null) __obj.updateDynamic("extendedGrantTypes")(extendedGrantTypes)
+    if (refreshTokenLifetime != null) __obj.updateDynamic("refreshTokenLifetime")(refreshTokenLifetime.asInstanceOf[js.Any])
+    if (requireClientAuthentication != null) __obj.updateDynamic("requireClientAuthentication")(requireClientAuthentication)
+    __obj.asInstanceOf[TokenOptions]
+  }
+}
+

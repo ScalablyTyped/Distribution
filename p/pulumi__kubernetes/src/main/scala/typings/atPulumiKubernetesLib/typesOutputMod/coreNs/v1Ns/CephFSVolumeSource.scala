@@ -42,3 +42,24 @@ trait CephFSVolumeSource extends js.Object {
   val user: java.lang.String
 }
 
+object CephFSVolumeSource {
+  @scala.inline
+  def apply(
+    monitors: js.Array[java.lang.String],
+    path: java.lang.String,
+    readOnly: scala.Boolean,
+    secretFile: java.lang.String,
+    secretRef: LocalObjectReference,
+    user: java.lang.String
+  ): CephFSVolumeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("monitors")(monitors)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.updateDynamic("secretFile")(secretFile)
+    __obj.updateDynamic("secretRef")(secretRef)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[CephFSVolumeSource]
+  }
+}
+

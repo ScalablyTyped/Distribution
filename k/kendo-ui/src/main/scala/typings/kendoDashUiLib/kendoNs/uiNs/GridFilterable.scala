@@ -12,3 +12,20 @@ trait GridFilterable extends js.Object {
   var operators: js.UndefOr[GridFilterableOperators] = js.undefined
 }
 
+object GridFilterable {
+  @scala.inline
+  def apply(
+    extra: js.UndefOr[scala.Boolean] = js.undefined,
+    messages: GridFilterableMessages = null,
+    mode: java.lang.String = null,
+    operators: GridFilterableOperators = null
+  ): GridFilterable = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (operators != null) __obj.updateDynamic("operators")(operators)
+    __obj.asInstanceOf[GridFilterable]
+  }
+}
+

@@ -61,3 +61,28 @@ trait IZoomableView[T] extends js.Object {
   def setCurrentItem(x: scala.Double, y: scala.Double): scala.Unit
 }
 
+object IZoomableView {
+  @scala.inline
+  def apply[T](
+    beginZoom: js.Function0[scala.Unit],
+    configureForZoom: js.Function4[scala.Boolean, scala.Boolean, js.Function, scala.Double, scala.Unit],
+    endZoom: js.Function1[scala.Boolean, scala.Unit],
+    getCurrentItem: js.Function0[winjsLib.WinJSNs.Promise[winjsLib.Anon_Item[T]]],
+    getPanAxis: js.Function0[java.lang.String],
+    handlePointer: js.Function1[java.lang.String, scala.Unit],
+    positionItem: js.Function2[T, winjsLib.WinJSNs.UtilitiesNs.IPosition, scala.Unit],
+    setCurrentItem: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): IZoomableView[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("beginZoom")(beginZoom)
+    __obj.updateDynamic("configureForZoom")(configureForZoom)
+    __obj.updateDynamic("endZoom")(endZoom)
+    __obj.updateDynamic("getCurrentItem")(getCurrentItem)
+    __obj.updateDynamic("getPanAxis")(getPanAxis)
+    __obj.updateDynamic("handlePointer")(handlePointer)
+    __obj.updateDynamic("positionItem")(positionItem)
+    __obj.updateDynamic("setCurrentItem")(setCurrentItem)
+    __obj.asInstanceOf[IZoomableView[T]]
+  }
+}
+

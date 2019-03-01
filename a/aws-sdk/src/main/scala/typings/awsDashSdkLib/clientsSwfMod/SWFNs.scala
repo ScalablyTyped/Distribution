@@ -3288,25 +3288,67 @@ object SWFNs extends js.Object {
     var typeInfos: WorkflowTypeInfoList
   }
   
+  trait _ActivityTaskTimeoutType extends js.Object
+  
+  trait _CancelTimerFailedCause extends js.Object
+  
+  trait _CancelWorkflowExecutionFailedCause extends js.Object
+  
+  trait _ChildPolicy extends js.Object
+  
+  trait _CloseStatus extends js.Object
+  
+  trait _CompleteWorkflowExecutionFailedCause extends js.Object
+  
+  trait _ContinueAsNewWorkflowExecutionFailedCause extends js.Object
+  
+  trait _DecisionType extends js.Object
+  
+  trait _EventType extends js.Object
+  
+  trait _ExecutionStatus extends js.Object
+  
+  trait _FailWorkflowExecutionFailedCause extends js.Object
+  
+  trait _RegistrationStatus extends js.Object
+  
+  trait _RequestCancelActivityTaskFailedCause extends js.Object
+  
+  trait _RequestCancelExternalWorkflowExecutionFailedCause extends js.Object
+  
+  trait _ScheduleActivityTaskFailedCause extends js.Object
+  
+  trait _ScheduleLambdaFunctionFailedCause extends js.Object
+  
+  trait _SignalExternalWorkflowExecutionFailedCause extends js.Object
+  
+  trait _StartChildWorkflowExecutionFailedCause extends js.Object
+  
+  trait _StartTimerFailedCause extends js.Object
+  
+  trait _WorkflowExecutionTerminatedCause extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActivityId = java.lang.String
-  type ActivityTaskTimeoutType = awsDashSdkLib.awsDashSdkLibStrings.START_TO_CLOSE | awsDashSdkLib.awsDashSdkLibStrings.SCHEDULE_TO_START | awsDashSdkLib.awsDashSdkLibStrings.SCHEDULE_TO_CLOSE | awsDashSdkLib.awsDashSdkLibStrings.HEARTBEAT | java.lang.String
+  type ActivityTaskTimeoutType = _ActivityTaskTimeoutType | java.lang.String
   type ActivityTypeInfoList = js.Array[ActivityTypeInfo]
   type Arn = java.lang.String
-  type CancelTimerFailedCause = awsDashSdkLib.awsDashSdkLibStrings.TIMER_ID_UNKNOWN | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
-  type CancelWorkflowExecutionFailedCause = awsDashSdkLib.awsDashSdkLibStrings.UNHANDLED_DECISION | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
+  type CancelTimerFailedCause = _CancelTimerFailedCause | java.lang.String
+  type CancelWorkflowExecutionFailedCause = _CancelWorkflowExecutionFailedCause | java.lang.String
   type Canceled = scala.Boolean
   type CauseMessage = java.lang.String
-  type ChildPolicy = awsDashSdkLib.awsDashSdkLibStrings.TERMINATE | awsDashSdkLib.awsDashSdkLibStrings.REQUEST_CANCEL | awsDashSdkLib.awsDashSdkLibStrings.ABANDON | java.lang.String
+  type ChildPolicy = _ChildPolicy | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type CloseStatus = awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.CANCELED | awsDashSdkLib.awsDashSdkLibStrings.TERMINATED | awsDashSdkLib.awsDashSdkLibStrings.CONTINUED_AS_NEW | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | java.lang.String
-  type CompleteWorkflowExecutionFailedCause = awsDashSdkLib.awsDashSdkLibStrings.UNHANDLED_DECISION | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
-  type ContinueAsNewWorkflowExecutionFailedCause = awsDashSdkLib.awsDashSdkLibStrings.UNHANDLED_DECISION | awsDashSdkLib.awsDashSdkLibStrings.WORKFLOW_TYPE_DEPRECATED | awsDashSdkLib.awsDashSdkLibStrings.WORKFLOW_TYPE_DOES_NOT_EXIST | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_EXECUTION_START_TO_CLOSE_TIMEOUT_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_TASK_START_TO_CLOSE_TIMEOUT_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_TASK_LIST_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_CHILD_POLICY_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.CONTINUE_AS_NEW_WORKFLOW_EXECUTION_RATE_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
+  type CloseStatus = _CloseStatus | java.lang.String
+  type CompleteWorkflowExecutionFailedCause = _CompleteWorkflowExecutionFailedCause | java.lang.String
+  type ContinueAsNewWorkflowExecutionFailedCause = _ContinueAsNewWorkflowExecutionFailedCause | java.lang.String
   type Count = scala.Double
   type Data = java.lang.String
   type DecisionList = js.Array[Decision]
   type DecisionTaskTimeoutType = awsDashSdkLib.awsDashSdkLibStrings.START_TO_CLOSE | java.lang.String
-  type DecisionType = awsDashSdkLib.awsDashSdkLibStrings.ScheduleActivityTask | awsDashSdkLib.awsDashSdkLibStrings.RequestCancelActivityTask | awsDashSdkLib.awsDashSdkLibStrings.CompleteWorkflowExecution | awsDashSdkLib.awsDashSdkLibStrings.FailWorkflowExecution | awsDashSdkLib.awsDashSdkLibStrings.CancelWorkflowExecution | awsDashSdkLib.awsDashSdkLibStrings.ContinueAsNewWorkflowExecution | awsDashSdkLib.awsDashSdkLibStrings.RecordMarker | awsDashSdkLib.awsDashSdkLibStrings.StartTimer | awsDashSdkLib.awsDashSdkLibStrings.CancelTimer | awsDashSdkLib.awsDashSdkLibStrings.SignalExternalWorkflowExecution | awsDashSdkLib.awsDashSdkLibStrings.RequestCancelExternalWorkflowExecution | awsDashSdkLib.awsDashSdkLibStrings.StartChildWorkflowExecution | awsDashSdkLib.awsDashSdkLibStrings.ScheduleLambdaFunction | java.lang.String
+  type DecisionType = _DecisionType | java.lang.String
   type Description = java.lang.String
   type DomainInfoList = js.Array[DomainInfo]
   type DomainName = java.lang.String
@@ -3314,9 +3356,9 @@ object SWFNs extends js.Object {
   type DurationInSeconds = java.lang.String
   type DurationInSecondsOptional = java.lang.String
   type EventId = scala.Double
-  type EventType = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any
-  type ExecutionStatus = awsDashSdkLib.awsDashSdkLibStrings.OPEN | awsDashSdkLib.awsDashSdkLibStrings.CLOSED | java.lang.String
-  type FailWorkflowExecutionFailedCause = awsDashSdkLib.awsDashSdkLibStrings.UNHANDLED_DECISION | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
+  type EventType = _EventType | java.lang.String
+  type ExecutionStatus = _ExecutionStatus | java.lang.String
+  type FailWorkflowExecutionFailedCause = _FailWorkflowExecutionFailedCause | java.lang.String
   type FailureReason = java.lang.String
   type FunctionId = java.lang.String
   type FunctionInput = java.lang.String
@@ -3331,17 +3373,17 @@ object SWFNs extends js.Object {
   type PageSize = scala.Double
   type PageToken = java.lang.String
   type RecordMarkerFailedCause = awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
-  type RegistrationStatus = awsDashSdkLib.awsDashSdkLibStrings.REGISTERED | awsDashSdkLib.awsDashSdkLibStrings.DEPRECATED | java.lang.String
-  type RequestCancelActivityTaskFailedCause = awsDashSdkLib.awsDashSdkLibStrings.ACTIVITY_ID_UNKNOWN | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
-  type RequestCancelExternalWorkflowExecutionFailedCause = awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION | awsDashSdkLib.awsDashSdkLibStrings.REQUEST_CANCEL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
+  type RegistrationStatus = _RegistrationStatus | java.lang.String
+  type RequestCancelActivityTaskFailedCause = _RequestCancelActivityTaskFailedCause | java.lang.String
+  type RequestCancelExternalWorkflowExecutionFailedCause = _RequestCancelExternalWorkflowExecutionFailedCause | java.lang.String
   type ReverseOrder = scala.Boolean
-  type ScheduleActivityTaskFailedCause = awsDashSdkLib.awsDashSdkLibStrings.ACTIVITY_TYPE_DEPRECATED | awsDashSdkLib.awsDashSdkLibStrings.ACTIVITY_TYPE_DOES_NOT_EXIST | awsDashSdkLib.awsDashSdkLibStrings.ACTIVITY_ID_ALREADY_IN_USE | awsDashSdkLib.awsDashSdkLibStrings.OPEN_ACTIVITIES_LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.ACTIVITY_CREATION_RATE_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_SCHEDULE_TO_CLOSE_TIMEOUT_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_TASK_LIST_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_SCHEDULE_TO_START_TIMEOUT_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_START_TO_CLOSE_TIMEOUT_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_HEARTBEAT_TIMEOUT_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
-  type ScheduleLambdaFunctionFailedCause = awsDashSdkLib.awsDashSdkLibStrings.ID_ALREADY_IN_USE | awsDashSdkLib.awsDashSdkLibStrings.OPEN_LAMBDA_FUNCTIONS_LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.LAMBDA_FUNCTION_CREATION_RATE_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.LAMBDA_SERVICE_NOT_AVAILABLE_IN_REGION | java.lang.String
-  type SignalExternalWorkflowExecutionFailedCause = awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION | awsDashSdkLib.awsDashSdkLibStrings.SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
+  type ScheduleActivityTaskFailedCause = _ScheduleActivityTaskFailedCause | java.lang.String
+  type ScheduleLambdaFunctionFailedCause = _ScheduleLambdaFunctionFailedCause | java.lang.String
+  type SignalExternalWorkflowExecutionFailedCause = _SignalExternalWorkflowExecutionFailedCause | java.lang.String
   type SignalName = java.lang.String
-  type StartChildWorkflowExecutionFailedCause = awsDashSdkLib.awsDashSdkLibStrings.WORKFLOW_TYPE_DOES_NOT_EXIST | awsDashSdkLib.awsDashSdkLibStrings.WORKFLOW_TYPE_DEPRECATED | awsDashSdkLib.awsDashSdkLibStrings.OPEN_CHILDREN_LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.OPEN_WORKFLOWS_LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.CHILD_CREATION_RATE_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.WORKFLOW_ALREADY_RUNNING | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_EXECUTION_START_TO_CLOSE_TIMEOUT_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_TASK_LIST_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_TASK_START_TO_CLOSE_TIMEOUT_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT_CHILD_POLICY_UNDEFINED | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
+  type StartChildWorkflowExecutionFailedCause = _StartChildWorkflowExecutionFailedCause | java.lang.String
   type StartLambdaFunctionFailedCause = awsDashSdkLib.awsDashSdkLibStrings.ASSUME_ROLE_FAILED | java.lang.String
-  type StartTimerFailedCause = awsDashSdkLib.awsDashSdkLibStrings.TIMER_ID_ALREADY_IN_USE | awsDashSdkLib.awsDashSdkLibStrings.OPEN_TIMERS_LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.TIMER_CREATION_RATE_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.OPERATION_NOT_PERMITTED | java.lang.String
+  type StartTimerFailedCause = _StartTimerFailedCause | java.lang.String
   type Tag = java.lang.String
   type TagList = js.Array[Tag]
   type TaskPriority = java.lang.String
@@ -3354,12 +3396,12 @@ object SWFNs extends js.Object {
   type VersionOptional = java.lang.String
   type WorkflowExecutionCancelRequestedCause = awsDashSdkLib.awsDashSdkLibStrings.CHILD_POLICY_APPLIED | java.lang.String
   type WorkflowExecutionInfoList = js.Array[WorkflowExecutionInfo]
-  type WorkflowExecutionTerminatedCause = awsDashSdkLib.awsDashSdkLibStrings.CHILD_POLICY_APPLIED | awsDashSdkLib.awsDashSdkLibStrings.EVENT_LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.OPERATOR_INITIATED | java.lang.String
+  type WorkflowExecutionTerminatedCause = _WorkflowExecutionTerminatedCause | java.lang.String
   type WorkflowExecutionTimeoutType = awsDashSdkLib.awsDashSdkLibStrings.START_TO_CLOSE | java.lang.String
   type WorkflowId = java.lang.String
   type WorkflowRunId = java.lang.String
   type WorkflowRunIdOptional = java.lang.String
   type WorkflowTypeInfoList = js.Array[WorkflowTypeInfo]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2012-01-25` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

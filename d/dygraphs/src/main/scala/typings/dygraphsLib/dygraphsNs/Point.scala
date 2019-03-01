@@ -29,3 +29,38 @@ trait Point extends js.Object {
   var yval_stacked: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Point {
+  @scala.inline
+  def apply(
+    idx: scala.Double,
+    name: java.lang.String,
+    annotation: Annotation = null,
+    x: scala.Int | scala.Double = null,
+    xval: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null,
+    y_bottom: scala.Int | scala.Double = null,
+    y_stacked: scala.Int | scala.Double = null,
+    y_top: scala.Int | scala.Double = null,
+    yval: scala.Int | scala.Double = null,
+    yval_minus: scala.Int | scala.Double = null,
+    yval_plus: scala.Int | scala.Double = null,
+    yval_stacked: scala.Int | scala.Double = null
+  ): Point = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("idx")(idx)
+    __obj.updateDynamic("name")(name)
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (xval != null) __obj.updateDynamic("xval")(xval.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (y_bottom != null) __obj.updateDynamic("y_bottom")(y_bottom.asInstanceOf[js.Any])
+    if (y_stacked != null) __obj.updateDynamic("y_stacked")(y_stacked.asInstanceOf[js.Any])
+    if (y_top != null) __obj.updateDynamic("y_top")(y_top.asInstanceOf[js.Any])
+    if (yval != null) __obj.updateDynamic("yval")(yval.asInstanceOf[js.Any])
+    if (yval_minus != null) __obj.updateDynamic("yval_minus")(yval_minus.asInstanceOf[js.Any])
+    if (yval_plus != null) __obj.updateDynamic("yval_plus")(yval_plus.asInstanceOf[js.Any])
+    if (yval_stacked != null) __obj.updateDynamic("yval_stacked")(yval_stacked.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Point]
+  }
+}
+

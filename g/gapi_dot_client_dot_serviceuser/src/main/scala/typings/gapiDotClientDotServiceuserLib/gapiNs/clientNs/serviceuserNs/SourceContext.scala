@@ -13,3 +13,12 @@ trait SourceContext extends js.Object {
   var fileName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SourceContext {
+  @scala.inline
+  def apply(fileName: java.lang.String = null): SourceContext = {
+    val __obj = js.Dynamic.literal()
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    __obj.asInstanceOf[SourceContext]
+  }
+}
+

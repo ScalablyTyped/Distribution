@@ -223,3 +223,72 @@ trait ParagraphData extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ParagraphData {
+  @scala.inline
+  def apply(
+    alignment: officeDashJsDashPreviewLib.WordNs.Alignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Mixed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Centered | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justified = null,
+    contentControls: js.Array[ContentControlData] = null,
+    firstLineIndent: scala.Int | scala.Double = null,
+    font: FontData = null,
+    inlinePictures: js.Array[InlinePictureData] = null,
+    isLastParagraph: js.UndefOr[scala.Boolean] = js.undefined,
+    isListItem: js.UndefOr[scala.Boolean] = js.undefined,
+    leftIndent: scala.Int | scala.Double = null,
+    lineSpacing: scala.Int | scala.Double = null,
+    lineUnitAfter: scala.Int | scala.Double = null,
+    lineUnitBefore: scala.Int | scala.Double = null,
+    list: ListData = null,
+    listItem: ListItemData = null,
+    listItemOrNullObject: ListItemData = null,
+    listOrNullObject: ListData = null,
+    outlineLevel: scala.Int | scala.Double = null,
+    parentBody: BodyData = null,
+    parentContentControl: ContentControlData = null,
+    parentContentControlOrNullObject: ContentControlData = null,
+    parentTable: TableData = null,
+    parentTableCell: TableCellData = null,
+    parentTableCellOrNullObject: TableCellData = null,
+    parentTableOrNullObject: TableData = null,
+    rightIndent: scala.Int | scala.Double = null,
+    spaceAfter: scala.Int | scala.Double = null,
+    spaceBefore: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    tableNestingLevel: scala.Int | scala.Double = null,
+    text: java.lang.String = null
+  ): ParagraphData = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls)
+    if (firstLineIndent != null) __obj.updateDynamic("firstLineIndent")(firstLineIndent.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures)
+    if (!js.isUndefined(isLastParagraph)) __obj.updateDynamic("isLastParagraph")(isLastParagraph)
+    if (!js.isUndefined(isListItem)) __obj.updateDynamic("isListItem")(isListItem)
+    if (leftIndent != null) __obj.updateDynamic("leftIndent")(leftIndent.asInstanceOf[js.Any])
+    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
+    if (lineUnitAfter != null) __obj.updateDynamic("lineUnitAfter")(lineUnitAfter.asInstanceOf[js.Any])
+    if (lineUnitBefore != null) __obj.updateDynamic("lineUnitBefore")(lineUnitBefore.asInstanceOf[js.Any])
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (listItem != null) __obj.updateDynamic("listItem")(listItem)
+    if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject)
+    if (listOrNullObject != null) __obj.updateDynamic("listOrNullObject")(listOrNullObject)
+    if (outlineLevel != null) __obj.updateDynamic("outlineLevel")(outlineLevel.asInstanceOf[js.Any])
+    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
+    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
+    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
+    if (rightIndent != null) __obj.updateDynamic("rightIndent")(rightIndent.asInstanceOf[js.Any])
+    if (spaceAfter != null) __obj.updateDynamic("spaceAfter")(spaceAfter.asInstanceOf[js.Any])
+    if (spaceBefore != null) __obj.updateDynamic("spaceBefore")(spaceBefore.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (tableNestingLevel != null) __obj.updateDynamic("tableNestingLevel")(tableNestingLevel.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ParagraphData]
+  }
+}
+

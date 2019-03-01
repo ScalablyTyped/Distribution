@@ -16,3 +16,18 @@ trait Anon_Column extends js.Object {
   var values: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object Anon_Column {
+  @scala.inline
+  def apply(
+    column: gapiDotClientDotDoubleclicksearchLib.gapiNs.clientNs.doubleclicksearchNs.ReportApiColumnSpec = null,
+    operator: java.lang.String = null,
+    values: js.Array[_] = null
+  ): Anon_Column = {
+    val __obj = js.Dynamic.literal()
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (operator != null) __obj.updateDynamic("operator")(operator)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[Anon_Column]
+  }
+}
+

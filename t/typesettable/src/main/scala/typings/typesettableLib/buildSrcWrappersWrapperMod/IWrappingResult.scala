@@ -13,3 +13,22 @@ trait IWrappingResult extends js.Object {
   var wrappedText: java.lang.String
 }
 
+object IWrappingResult {
+  @scala.inline
+  def apply(
+    noBrokeWords: scala.Double,
+    noLines: scala.Double,
+    originalText: java.lang.String,
+    truncatedText: java.lang.String,
+    wrappedText: java.lang.String
+  ): IWrappingResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("noBrokeWords")(noBrokeWords)
+    __obj.updateDynamic("noLines")(noLines)
+    __obj.updateDynamic("originalText")(originalText)
+    __obj.updateDynamic("truncatedText")(truncatedText)
+    __obj.updateDynamic("wrappedText")(wrappedText)
+    __obj.asInstanceOf[IWrappingResult]
+  }
+}
+

@@ -24,3 +24,18 @@ trait ZoomSettings extends js.Object {
   ] = js.undefined
 }
 
+object ZoomSettings {
+  @scala.inline
+  def apply(
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    toolbarHorizontalAlignment: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstHorizontalAlignment | java.lang.String = null,
+    toolbarVerticalAlignment: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstVerticalAlignment | java.lang.String = null
+  ): ZoomSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (toolbarHorizontalAlignment != null) __obj.updateDynamic("toolbarHorizontalAlignment")(toolbarHorizontalAlignment.asInstanceOf[js.Any])
+    if (toolbarVerticalAlignment != null) __obj.updateDynamic("toolbarVerticalAlignment")(toolbarVerticalAlignment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ZoomSettings]
+  }
+}
+

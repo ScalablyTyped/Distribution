@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("KiiCloud.KiiGroup")
 @js.native
-class KiiGroup () extends js.Object {
+class KiiGroup () extends KiiACLSubject {
   /**
     * Adds a user to the given group
     *

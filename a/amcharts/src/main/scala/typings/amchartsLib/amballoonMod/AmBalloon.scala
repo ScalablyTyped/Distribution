@@ -96,3 +96,50 @@ trait AmBalloon extends js.Object {
   def show(value: java.lang.String): scala.Unit
 }
 
+object AmBalloon {
+  @scala.inline
+  def apply(
+    adjustBorderColor: scala.Boolean,
+    borderAlpha: scala.Double,
+    borderColor: java.lang.String,
+    borderThickness: scala.Double,
+    color: java.lang.String,
+    cornerRadius: scala.Double,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    fontSize: java.lang.String,
+    hide: js.Function0[scala.Unit],
+    horizontalPadding: scala.Double,
+    pointerWidth: scala.Double,
+    setBounds: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    setPosition: js.Function2[scala.Double, scala.Double, scala.Unit],
+    show: js.Function1[java.lang.String, scala.Unit],
+    showBullet: scala.Boolean,
+    textAlign: java.lang.String,
+    textShadowColor: java.lang.String,
+    verticalPadding: scala.Double
+  ): AmBalloon = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adjustBorderColor")(adjustBorderColor)
+    __obj.updateDynamic("borderAlpha")(borderAlpha)
+    __obj.updateDynamic("borderColor")(borderColor)
+    __obj.updateDynamic("borderThickness")(borderThickness)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("cornerRadius")(cornerRadius)
+    __obj.updateDynamic("fillAlpha")(fillAlpha)
+    __obj.updateDynamic("fillColor")(fillColor)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("horizontalPadding")(horizontalPadding)
+    __obj.updateDynamic("pointerWidth")(pointerWidth)
+    __obj.updateDynamic("setBounds")(setBounds)
+    __obj.updateDynamic("setPosition")(setPosition)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("showBullet")(showBullet)
+    __obj.updateDynamic("textAlign")(textAlign)
+    __obj.updateDynamic("textShadowColor")(textShadowColor)
+    __obj.updateDynamic("verticalPadding")(verticalPadding)
+    __obj.asInstanceOf[AmBalloon]
+  }
+}
+

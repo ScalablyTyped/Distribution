@@ -16,3 +16,13 @@ trait InstanceGroupsSetNamedPortsRequest extends js.Object {
   var namedPorts: js.UndefOr[js.Array[NamedPort]] = js.undefined
 }
 
+object InstanceGroupsSetNamedPortsRequest {
+  @scala.inline
+  def apply(fingerprint: java.lang.String = null, namedPorts: js.Array[NamedPort] = null): InstanceGroupsSetNamedPortsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (namedPorts != null) __obj.updateDynamic("namedPorts")(namedPorts)
+    __obj.asInstanceOf[InstanceGroupsSetNamedPortsRequest]
+  }
+}
+

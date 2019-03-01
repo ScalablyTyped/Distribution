@@ -12,3 +12,18 @@ trait SetStateParameters extends js.Object {
   var state: js.UndefOr[js.Any] = js.undefined
 }
 
+object SetStateParameters {
+  @scala.inline
+  def apply(
+    channelGroups: js.Array[java.lang.String] = null,
+    channels: js.Array[java.lang.String] = null,
+    state: js.Any = null
+  ): SetStateParameters = {
+    val __obj = js.Dynamic.literal()
+    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[SetStateParameters]
+  }
+}
+

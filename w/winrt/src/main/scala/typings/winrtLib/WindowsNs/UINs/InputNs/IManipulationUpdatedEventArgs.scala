@@ -13,3 +13,22 @@ trait IManipulationUpdatedEventArgs extends js.Object {
   var velocities: ManipulationVelocities
 }
 
+object IManipulationUpdatedEventArgs {
+  @scala.inline
+  def apply(
+    cumulative: ManipulationDelta,
+    delta: ManipulationDelta,
+    pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
+    position: winrtLib.WindowsNs.FoundationNs.Point,
+    velocities: ManipulationVelocities
+  ): IManipulationUpdatedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cumulative")(cumulative)
+    __obj.updateDynamic("delta")(delta)
+    __obj.updateDynamic("pointerDeviceType")(pointerDeviceType)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("velocities")(velocities)
+    __obj.asInstanceOf[IManipulationUpdatedEventArgs]
+  }
+}
+

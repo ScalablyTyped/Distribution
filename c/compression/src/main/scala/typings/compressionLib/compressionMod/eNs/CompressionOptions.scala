@@ -44,3 +44,30 @@ trait CompressionOptions extends js.Object {
   var windowBits: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CompressionOptions {
+  @scala.inline
+  def apply(
+    chunkSize: scala.Int | scala.Double = null,
+    filter: CompressionFilter = null,
+    finishFlush: scala.Int | scala.Double = null,
+    flush: scala.Int | scala.Double = null,
+    level: scala.Int | scala.Double = null,
+    memLevel: scala.Int | scala.Double = null,
+    strategy: scala.Int | scala.Double = null,
+    threshold: scala.Double | java.lang.String = null,
+    windowBits: scala.Int | scala.Double = null
+  ): CompressionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (finishFlush != null) __obj.updateDynamic("finishFlush")(finishFlush.asInstanceOf[js.Any])
+    if (flush != null) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (memLevel != null) __obj.updateDynamic("memLevel")(memLevel.asInstanceOf[js.Any])
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompressionOptions]
+  }
+}
+

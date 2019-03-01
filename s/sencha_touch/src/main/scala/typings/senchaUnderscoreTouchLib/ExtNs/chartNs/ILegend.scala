@@ -69,3 +69,66 @@ trait ILegend
   var toggleable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ILegend {
+  @scala.inline
+  def apply(
+    IDataView: senchaUnderscoreTouchLib.ExtNs.dataviewNs.IDataView = null,
+    baseCls: java.lang.String = null,
+    disableSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    docked: java.lang.String = null,
+    getBaseCls: js.Function0[java.lang.String] = null,
+    getDisableSelection: js.Function0[scala.Boolean] = null,
+    getDocked: js.Function0[java.lang.String] = null,
+    getHorizontalHeight: js.Function0[scala.Double] = null,
+    getInline: js.Function0[scala.Boolean] = null,
+    getItemTpl: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getPadding: js.Function0[scala.Double] = null,
+    getToggleable: js.Function0[scala.Boolean] = null,
+    getVerticalWidth: js.Function0[scala.Double] = null,
+    `inline`: js.Any = null,
+    itemTpl: js.Any = null,
+    padding: js.Any = null,
+    position: java.lang.String = null,
+    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setDisableSelection: js.Function1[/* disableSelection */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setDocked: js.Function1[/* docked */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setHorizontalHeight: js.Function1[/* horizontalHeight */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setInline: js.Function1[/* inline */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setItemTpl: js.Function1[/* itemTpl */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    setPadding: js.Function1[/* padding */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setToggleable: js.Function1[/* toggleable */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setVerticalWidth: js.Function1[/* verticalWidth */ js.UndefOr[scala.Double], scala.Unit] = null,
+    toggleable: js.UndefOr[scala.Boolean] = js.undefined
+  ): ILegend = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IDataView)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (!js.isUndefined(disableSelection)) __obj.updateDynamic("disableSelection")(disableSelection)
+    if (docked != null) __obj.updateDynamic("docked")(docked)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
+    if (getDisableSelection != null) __obj.updateDynamic("getDisableSelection")(getDisableSelection)
+    if (getDocked != null) __obj.updateDynamic("getDocked")(getDocked)
+    if (getHorizontalHeight != null) __obj.updateDynamic("getHorizontalHeight")(getHorizontalHeight)
+    if (getInline != null) __obj.updateDynamic("getInline")(getInline)
+    if (getItemTpl != null) __obj.updateDynamic("getItemTpl")(getItemTpl)
+    if (getPadding != null) __obj.updateDynamic("getPadding")(getPadding)
+    if (getToggleable != null) __obj.updateDynamic("getToggleable")(getToggleable)
+    if (getVerticalWidth != null) __obj.updateDynamic("getVerticalWidth")(getVerticalWidth)
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`)
+    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl)
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
+    if (setDisableSelection != null) __obj.updateDynamic("setDisableSelection")(setDisableSelection)
+    if (setDocked != null) __obj.updateDynamic("setDocked")(setDocked)
+    if (setHorizontalHeight != null) __obj.updateDynamic("setHorizontalHeight")(setHorizontalHeight)
+    if (setInline != null) __obj.updateDynamic("setInline")(setInline)
+    if (setItemTpl != null) __obj.updateDynamic("setItemTpl")(setItemTpl)
+    if (setPadding != null) __obj.updateDynamic("setPadding")(setPadding)
+    if (setToggleable != null) __obj.updateDynamic("setToggleable")(setToggleable)
+    if (setVerticalWidth != null) __obj.updateDynamic("setVerticalWidth")(setVerticalWidth)
+    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable)
+    __obj.asInstanceOf[ILegend]
+  }
+}
+

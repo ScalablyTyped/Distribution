@@ -22,3 +22,20 @@ trait PipelineArgs extends js.Object {
   val stages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionsName]]]
 }
 
+object PipelineArgs {
+  @scala.inline
+  def apply(
+    artifactStore: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionKeyLocation],
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    stages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionsName]]],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): PipelineArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifactStore")(artifactStore.asInstanceOf[js.Any])
+    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("stages")(stages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PipelineArgs]
+  }
+}
+

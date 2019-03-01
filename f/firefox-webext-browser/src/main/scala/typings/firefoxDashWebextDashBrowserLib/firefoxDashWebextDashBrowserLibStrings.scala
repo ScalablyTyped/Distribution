@@ -10,1075 +10,1502 @@ object firefoxDashWebextDashBrowserLibStrings {
   sealed trait `<all_urls>` extends js.Object
   
   @js.native
-  sealed trait Alt extends js.Object
+  sealed trait Alt
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs._OnClickDataModifiers
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs._OnClickDataModifiers
   
   @js.native
-  sealed trait Application extends js.Object
+  sealed trait Application
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs._QueryScreen
   
   @js.native
-  sealed trait CRASH extends js.Object
+  sealed trait CRASH
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait Command extends js.Object
+  sealed trait Command
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs._OnClickDataModifiers
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs._OnClickDataModifiers
   
   @js.native
-  sealed trait Ctrl extends js.Object
+  sealed trait Ctrl
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs._OnClickDataModifiers
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs._OnClickDataModifiers
   
   @js.native
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait FILE_ACCESS_DENIED extends js.Object
+  sealed trait FILE_ACCESS_DENIED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait FILE_BLOCKED extends js.Object
+  sealed trait FILE_BLOCKED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait FILE_FAILED extends js.Object
+  sealed trait FILE_FAILED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait FILE_NAME_TOO_LONG extends js.Object
+  sealed trait FILE_NAME_TOO_LONG
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait FILE_NO_SPACE extends js.Object
+  sealed trait FILE_NO_SPACE
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait FILE_SECURITY_CHECK_FAILED extends js.Object
+  sealed trait FILE_SECURITY_CHECK_FAILED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait FILE_TOO_LARGE extends js.Object
+  sealed trait FILE_TOO_LARGE
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait FILE_TOO_SHORT extends js.Object
+  sealed trait FILE_TOO_SHORT
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait FILE_TRANSIENT_ERROR extends js.Object
+  sealed trait FILE_TRANSIENT_ERROR
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait FILE_VIRUS_INFECTED extends js.Object
+  sealed trait FILE_VIRUS_INFECTED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs._DownloadMethod
   
   @js.native
-  sealed trait JS extends js.Object
+  sealed trait JS
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait MacCtrl extends js.Object
+  sealed trait MacCtrl
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs._OnClickDataModifiers
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs._OnClickDataModifiers
   
   @js.native
-  sealed trait NETWORK_DISCONNECTED extends js.Object
+  sealed trait NETWORK_DISCONNECTED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait NETWORK_FAILED extends js.Object
+  sealed trait NETWORK_FAILED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait NETWORK_INVALID_REQUEST extends js.Object
+  sealed trait NETWORK_INVALID_REQUEST
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait NETWORK_SERVER_DOWN extends js.Object
+  sealed trait NETWORK_SERVER_DOWN
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait NETWORK_TIMEOUT extends js.Object
+  sealed trait NETWORK_TIMEOUT
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs._DownloadMethod
   
   @js.native
-  sealed trait SERVER_BAD_CONTENT extends js.Object
+  sealed trait SERVER_BAD_CONTENT
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait SERVER_CERT_PROBLEM extends js.Object
+  sealed trait SERVER_CERT_PROBLEM
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait SERVER_FAILED extends js.Object
+  sealed trait SERVER_FAILED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait SERVER_FORBIDDEN extends js.Object
+  sealed trait SERVER_FORBIDDEN
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait SERVER_NO_RANGE extends js.Object
+  sealed trait SERVER_NO_RANGE
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait SERVER_UNAUTHORIZED extends js.Object
+  sealed trait SERVER_UNAUTHORIZED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait Screen extends js.Object
+  sealed trait Screen
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs._QueryScreen
   
   @js.native
-  sealed trait Shift extends js.Object
+  sealed trait Shift
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs._OnClickDataModifiers
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs._OnClickDataModifiers
   
   @js.native
-  sealed trait TLSv1 extends js.Object
+  sealed trait TLSv1
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._SecurityInfoProtocolVersion
   
   @js.native
-  sealed trait TLSv1DOT1 extends js.Object
+  sealed trait TLSv1DOT1
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._SecurityInfoProtocolVersion
   
   @js.native
-  sealed trait TLSv1DOT2 extends js.Object
+  sealed trait TLSv1DOT2
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._SecurityInfoProtocolVersion
   
   @js.native
-  sealed trait TLSv1DOT3 extends js.Object
+  sealed trait TLSv1DOT3
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._SecurityInfoProtocolVersion
   
   @js.native
-  sealed trait USER_CANCELED extends js.Object
+  sealed trait USER_CANCELED
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait USER_SHUTDOWN extends js.Object
+  sealed trait USER_SHUTDOWN
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.InterruptReason
   
   @js.native
-  sealed trait Window extends js.Object
+  sealed trait Window
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs._QueryScreen
   
   @js.native
-  sealed trait accepted extends js.Object
+  sealed trait accepted
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DangerType
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends firefoxDashWebextDashBrowserLib.browserNs.idleNs.IdleState
   
   @js.native
-  sealed trait activeTab extends js.Object
+  sealed trait activeTab
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait addon_child extends js.Object
+  sealed trait addon_child
+    extends firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.APIChildScope
   
   @js.native
-  sealed trait addon_parent extends js.Object
+  sealed trait addon_parent
+    extends firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.APIParentScope
   
   @js.native
-  sealed trait alarms extends js.Object
+  sealed trait alarms
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait allow_all extends js.Object
+  sealed trait allow_all
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.websitesNs._CookieConfigBehavior
   
   @js.native
-  sealed trait allow_name_collisions extends js.Object
+  sealed trait allow_name_collisions
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait allow_visited extends js.Object
+  sealed trait allow_visited
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.websitesNs._CookieConfigBehavior
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.websitesNs.TrackingProtectionModeOption
   
   @js.native
-  sealed trait android extends js.Object
+  sealed trait android
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformOs
   
   @js.native
-  sealed trait app extends js.Object
+  sealed trait app
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.WindowType
+       with firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowType
   
   @js.native
-  sealed trait app_update extends js.Object
+  sealed trait app_update
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.OnRestartRequiredReason
   
   @js.native
-  sealed trait arm extends js.Object
+  sealed trait arm
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformArch
   
   @js.native
-  sealed trait asyncBlocking extends js.Object
+  sealed trait asyncBlocking
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.OnAuthRequiredOptions
   
   @js.native
-  sealed trait attention extends js.Object
+  sealed trait attention
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait audible extends js.Object
+  sealed trait audible
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait audio
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait author extends js.Object
+  sealed trait author
+    extends firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.CSSOrigin
   
   @js.native
-  sealed trait autoConfig extends js.Object
+  sealed trait autoConfig
+    extends firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyConfigProxyType
   
   @js.native
-  sealed trait autoDetect extends js.Object
+  sealed trait autoDetect
+    extends firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyConfigProxyType
   
   @js.native
-  sealed trait auto_bookmark extends js.Object
+  sealed trait auto_bookmark
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait auto_subframe extends js.Object
+  sealed trait auto_subframe
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait auto_toplevel extends js.Object
+  sealed trait auto_toplevel
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait automatic extends js.Object
+  sealed trait automatic
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettingsMode
   
   @js.native
-  sealed trait basic extends js.Object
+  sealed trait basic
+    extends firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.TemplateType
   
   @js.native
-  sealed trait beacon extends js.Object
+  sealed trait beacon
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait bitcoin extends js.Object
+  sealed trait bitcoin
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait blocking extends js.Object
+  sealed trait blocking
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.OnAuthRequiredOptions
+       with firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.OnBeforeRequestOptions
+       with firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.OnBeforeSendHeadersOptions
+       with firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.OnHeadersReceivedOptions
   
   @js.native
-  sealed trait bookmark extends js.Object
+  sealed trait bookmark
+    extends firefoxDashWebextDashBrowserLib.browserNs.bookmarksNs.BookmarkTreeNodeType
+       with firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs._OverrideContextContext
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs._OverrideContextContext
   
   @js.native
-  sealed trait bookmarks extends js.Object
+  sealed trait bookmarks
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends firefoxDashWebextDashBrowserLib.browserNs.telemetryNs.ScalarType
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait broken extends js.Object
+  sealed trait broken
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._SecurityInfoState
   
   @js.native
-  sealed trait browserSettings extends js.Object
+  sealed trait browserSettings
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait browser_action extends js.Object
+  sealed trait browser_action
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait browser_update extends js.Object
+  sealed trait browser_update
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.OnInstalledReason
   
   @js.native
-  sealed trait browsingData extends js.Object
+  sealed trait browsingData
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait bypass_cache extends js.Object
+  sealed trait bypass_cache
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait canonical_name extends js.Object
+  sealed trait canonical_name
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait capture extends js.Object
+  sealed trait capture
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.MutedInfoReason
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait `center bottom` extends js.Object
+  sealed trait `center bottom`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait `center center` extends js.Object
+  sealed trait `center center`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait `center top` extends js.Object
+  sealed trait `center top`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait checkbox
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ItemType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ItemType
   
   @js.native
   sealed trait cipher extends js.Object
   
   @js.native
-  sealed trait client_redirect extends js.Object
+  sealed trait client_redirect
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionQualifier
   
   @js.native
-  sealed trait clipboardRead extends js.Object
+  sealed trait clipboardRead
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait clipboardWrite extends js.Object
+  sealed trait clipboardWrite
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait complete extends js.Object
+  sealed trait complete
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.State
+       with firefoxDashWebextDashBrowserLib.browserNs.tabsNs.TabStatus
   
   @js.native
-  sealed trait content extends js.Object
+  sealed trait content
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DangerType
   
   @js.native
-  sealed trait content_child extends js.Object
+  sealed trait content_child
+    extends firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.APIChildScope
   
   @js.native
-  sealed trait content_parent extends js.Object
+  sealed trait content_parent
+    extends firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.APIParentScope
   
   @js.native
-  sealed trait contextMenus extends js.Object
+  sealed trait contextMenus
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait contextmenu extends js.Object
+  sealed trait contextmenu
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
   
   @js.native
-  sealed trait contextualIdentities extends js.Object
+  sealed trait contextualIdentities
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait controllable_by_this_extension extends js.Object
+  sealed trait controllable_by_this_extension
+    extends firefoxDashWebextDashBrowserLib.browserNs.typesNs.LevelOfControl
   
   @js.native
-  sealed trait controlled_by_other_extensions extends js.Object
+  sealed trait controlled_by_other_extensions
+    extends firefoxDashWebextDashBrowserLib.browserNs.typesNs.LevelOfControl
   
   @js.native
-  sealed trait controlled_by_this_extension extends js.Object
+  sealed trait controlled_by_this_extension
+    extends firefoxDashWebextDashBrowserLib.browserNs.typesNs.LevelOfControl
   
   @js.native
-  sealed trait cookies extends js.Object
+  sealed trait cookies
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait count extends js.Object
+  sealed trait count
+    extends firefoxDashWebextDashBrowserLib.browserNs.telemetryNs.ScalarType
   
   @js.native
-  sealed trait cros extends js.Object
+  sealed trait cros
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformOs
   
   @js.native
-  sealed trait csp_report extends js.Object
+  sealed trait csp_report
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait currentTab extends js.Object
+  sealed trait currentTab
+    extends firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.OnInputEnteredDisposition
   
   @js.native
-  sealed trait dat extends js.Object
+  sealed trait dat
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.networkNs.IPHandlingPolicy
   
   @js.native
-  sealed trait default_public_and_private_interfaces extends js.Object
+  sealed trait default_public_and_private_interfaces
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.networkNs.IPHandlingPolicy
   
   @js.native
-  sealed trait default_public_interface_only extends js.Object
+  sealed trait default_public_interface_only
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.networkNs.IPHandlingPolicy
   
   @js.native
-  sealed trait denied extends js.Object
+  sealed trait denied
+    extends firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.PermissionLevel
   
   @js.native
-  sealed trait detached_panel extends js.Object
+  sealed trait detached_panel
+    extends firefoxDashWebextDashBrowserLib.browserNs.windowsNs.CreateType
   
   @js.native
-  sealed trait development extends js.Object
+  sealed trait development
+    extends firefoxDashWebextDashBrowserLib.browserNs.managementNs.ExtensionInstallType
   
   @js.native
-  sealed trait devtools extends js.Object
+  sealed trait devtools
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.WindowType
+       with firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowType
+       with firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait devtools_child extends js.Object
+  sealed trait devtools_child
+    extends firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.APIChildScope
   
   @js.native
-  sealed trait devtools_parent extends js.Object
+  sealed trait devtools_parent
+    extends firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.APIParentScope
   
   @js.native
-  sealed trait dim extends js.Object
+  sealed trait dim
+    extends firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DescriptionStyleType
   
   @js.native
-  sealed trait disable_ipv4 extends js.Object
+  sealed trait disable_ipv4
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait disable_ipv6 extends js.Object
+  sealed trait disable_ipv6
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait disable_non_proxied_udp extends js.Object
+  sealed trait disable_non_proxied_udp
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.networkNs.IPHandlingPolicy
   
   @js.native
-  sealed trait disable_trr extends js.Object
+  sealed trait disable_trr
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait disabled
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettingsMode
   
   @js.native
-  sealed trait discarded extends js.Object
+  sealed trait discarded
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait dns extends js.Object
+  sealed trait dns
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait docked extends js.Object
+  sealed trait docked
+    extends firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowState
   
   @js.native
-  sealed trait document_end extends js.Object
+  sealed trait document_end
+    extends firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.RunAt
   
   @js.native
-  sealed trait document_idle extends js.Object
+  sealed trait document_idle
+    extends firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.RunAt
   
   @js.native
-  sealed trait document_start extends js.Object
+  sealed trait document_start
+    extends firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.RunAt
   
   @js.native
-  sealed trait downloads extends js.Object
+  sealed trait downloads
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait downloadsDOTopen extends js.Object
+  sealed trait downloadsDOTopen
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait dweb extends js.Object
+  sealed trait dweb
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait editable extends js.Object
+  sealed trait editable
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait evicted extends js.Object
+  sealed trait evicted
+    extends firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.OnChangedCause
   
   @js.native
-  sealed trait expired extends js.Object
+  sealed trait expired
+    extends firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.OnChangedCause
   
   @js.native
-  sealed trait expired_overwrite extends js.Object
+  sealed trait expired_overwrite
+    extends firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.OnChangedCause
   
   @js.native
-  sealed trait explicit extends js.Object
+  sealed trait explicit
+    extends firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.OnChangedCause
   
   @js.native
-  sealed trait extension extends js.Object
+  sealed trait extension
+    extends firefoxDashWebextDashBrowserLib.browserNs.managementNs.ExtensionType
+       with firefoxDashWebextDashBrowserLib.browserNs.tabsNs.MutedInfoReason
   
   @js.native
-  sealed trait favIconUrl extends js.Object
+  sealed trait favIconUrl
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DangerType
   
   @js.native
-  sealed trait find extends js.Object
+  sealed trait find
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait folder extends js.Object
+  sealed trait folder
+    extends firefoxDashWebextDashBrowserLib.browserNs.bookmarksNs.BookmarkTreeNodeType
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait font
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait form_submit extends js.Object
+  sealed trait form_submit
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait forward_back extends js.Object
+  sealed trait forward_back
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionQualifier
   
   @js.native
-  sealed trait frame extends js.Object
+  sealed trait frame
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait from_address_bar extends js.Object
+  sealed trait from_address_bar
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionQualifier
   
   @js.native
-  sealed trait fullscreen extends js.Object
+  sealed trait fullscreen
+    extends firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowState
   
   @js.native
-  sealed trait geckoProfiler extends js.Object
+  sealed trait geckoProfiler
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait generated extends js.Object
+  sealed trait generated
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait geo extends js.Object
+  sealed trait geo
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait geolocation extends js.Object
+  sealed trait geolocation
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait gopher extends js.Object
+  sealed trait gopher
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait granted extends js.Object
+  sealed trait granted
+    extends firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.PermissionLevel
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hidden
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait history extends js.Object
+  sealed trait history
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait homepage extends js.Object
+  sealed trait homepage
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
   
   @js.native
-  sealed trait host extends js.Object
+  sealed trait host
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DangerType
   
   @js.native
-  sealed trait identity extends js.Object
+  sealed trait identity
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait idle extends js.Object
+  sealed trait idle
+    extends firefoxDashWebextDashBrowserLib.browserNs.idleNs.IdleState
+       with firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait im extends js.Object
+  sealed trait im
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
+       with firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.TemplateType
   
   @js.native
-  sealed trait imageset extends js.Object
+  sealed trait imageset
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait in_progress extends js.Object
+  sealed trait in_progress
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.State
   
   @js.native
-  sealed trait incognito_persistent extends js.Object
+  sealed trait incognito_persistent
+    extends firefoxDashWebextDashBrowserLib.browserNs.typesNs.SettingScope
   
   @js.native
-  sealed trait incognito_session_only extends js.Object
+  sealed trait incognito_session_only
+    extends firefoxDashWebextDashBrowserLib.browserNs.typesNs.SettingScope
   
   @js.native
-  sealed trait insecure extends js.Object
+  sealed trait insecure
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._SecurityInfoState
   
   @js.native
-  sealed trait install extends js.Object
+  sealed trait install
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.OnInstalledReason
   
   @js.native
-  sealed trait interrupted extends js.Object
+  sealed trait interrupted
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.State
   
   @js.native
-  sealed trait ipfs extends js.Object
+  sealed trait ipfs
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait ipns extends js.Object
+  sealed trait ipns
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait irc extends js.Object
+  sealed trait irc
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait ircs extends js.Object
+  sealed trait ircs
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait isArticle extends js.Object
+  sealed trait isArticle
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait isarticle extends js.Object
+  sealed trait isarticle
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait java extends js.Object
+  sealed trait java
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait jpeg extends js.Object
+  sealed trait jpeg
+    extends firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.ImageFormat
+       with firefoxDashWebextDashBrowserLib.browserNs.clipboardNs._SetImageData
   
   @js.native
-  sealed trait jstracer extends js.Object
+  sealed trait jstracer
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait keyword extends js.Object
+  sealed trait keyword
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
   
   @js.native
-  sealed trait keyword_generated extends js.Object
+  sealed trait keyword_generated
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait launcher extends js.Object
+  sealed trait launcher
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait lax extends js.Object
+  sealed trait lax
+    extends firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.SameSiteStatus
   
   @js.native
-  sealed trait leaf extends js.Object
+  sealed trait leaf
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait `left bottom` extends js.Object
+  sealed trait `left bottom`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait `left center` extends js.Object
+  sealed trait `left center`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait `left top` extends js.Object
+  sealed trait `left top`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait linux extends js.Object
+  sealed trait linux
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformOs
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait list
+    extends firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.TemplateType
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait loading
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.TabStatus
   
   @js.native
-  sealed trait mac extends js.Object
+  sealed trait mac
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformOs
   
   @js.native
-  sealed trait magnet extends js.Object
+  sealed trait magnet
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait mailto extends js.Object
+  sealed trait mailto
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait main_frame extends js.Object
+  sealed trait main_frame
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait mainthreadio extends js.Object
+  sealed trait mainthreadio
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
   sealed trait managed extends js.Object
   
   @js.native
-  sealed trait management extends js.Object
+  sealed trait management
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettingsMode
+       with firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyConfigProxyType
   
   @js.native
-  sealed trait manual_subframe extends js.Object
+  sealed trait manual_subframe
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait `match` extends js.Object
+  sealed trait `match`
+    extends firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DescriptionStyleType
   
   @js.native
-  sealed trait maximized extends js.Object
+  sealed trait maximized
+    extends firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowState
   
   @js.native
-  sealed trait media extends js.Object
+  sealed trait media
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait memory extends js.Object
+  sealed trait memory
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait menupanel extends js.Object
+  sealed trait menupanel
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestBrowserActionDefaultArea
   
   @js.native
-  sealed trait menus extends js.Object
+  sealed trait menus
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait menusDOToverrideContext extends js.Object
+  sealed trait menusDOToverrideContext
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait minimized extends js.Object
+  sealed trait minimized
+    extends firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowState
   
   @js.native
-  sealed trait mms extends js.Object
+  sealed trait mms
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait mousedown extends js.Object
+  sealed trait mousedown
+    extends firefoxDashWebextDashBrowserLib.browserNs.browserSettingsNs.ContextMenuMouseEvent
   
   @js.native
-  sealed trait mouseup extends js.Object
+  sealed trait mouseup
+    extends firefoxDashWebextDashBrowserLib.browserNs.browserSettingsNs.ContextMenuMouseEvent
   
   @js.native
-  sealed trait mozillaAddons extends js.Object
+  sealed trait mozillaAddons
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait mutedInfo extends js.Object
+  sealed trait mutedInfo
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait nativeMessaging extends js.Object
+  sealed trait nativeMessaging
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait navbar extends js.Object
+  sealed trait navbar
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestBrowserActionDefaultArea
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait never
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.websitesNs.TrackingProtectionModeOption
   
   @js.native
-  sealed trait newBackgroundTab extends js.Object
+  sealed trait newBackgroundTab
+    extends firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.OnInputEnteredDisposition
   
   @js.native
-  sealed trait newForegroundTab extends js.Object
+  sealed trait newForegroundTab
+    extends firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.OnInputEnteredDisposition
   
   @js.native
-  sealed trait news extends js.Object
+  sealed trait news
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait newtab extends js.Object
+  sealed trait newtab
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
   
   @js.native
-  sealed trait nntp extends js.Object
+  sealed trait nntp
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait `no-repeat` extends js.Object
+  sealed trait `no-repeat`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsTiling
   
   @js.native
-  sealed trait no_restriction extends js.Object
+  sealed trait no_restriction
+    extends firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.SameSiteStatus
   
   @js.native
-  sealed trait no_update extends js.Object
+  sealed trait no_update
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.RequestUpdateCheckStatus
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends firefoxDashWebextDashBrowserLib.browserNs.browserSettingsNs.ImageAnimationBehavior
+       with firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyConfigProxyType
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends firefoxDashWebextDashBrowserLib.browserNs.windowsNs.CreateType
+       with firefoxDashWebextDashBrowserLib.browserNs.managementNs.ExtensionInstallType
+       with firefoxDashWebextDashBrowserLib.browserNs.browserSettingsNs.ImageAnimationBehavior
+       with firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ItemType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ItemType
+       with firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowState
+       with firefoxDashWebextDashBrowserLib.browserNs.tabsNs.WindowType
+       with firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowType
   
   @js.native
-  sealed trait not_applicable extends js.Object
+  sealed trait not_applicable
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.CertificateTransparencyStatus
   
   @js.native
-  sealed trait not_controllable extends js.Object
+  sealed trait not_controllable
+    extends firefoxDashWebextDashBrowserLib.browserNs.typesNs.LevelOfControl
   
   @js.native
-  sealed trait notifications extends js.Object
+  sealed trait notifications
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait object_subrequest extends js.Object
+  sealed trait object_subrequest
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait offline extends js.Object
+  sealed trait offline
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait once extends js.Object
+  sealed trait once
+    extends firefoxDashWebextDashBrowserLib.browserNs.browserSettingsNs.ImageAnimationBehavior
   
   @js.native
-  sealed trait openbsd extends js.Object
+  sealed trait openbsd
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformOs
   
   @js.native
-  sealed trait os_update extends js.Object
+  sealed trait os_update
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.OnRestartRequiredReason
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait other
+    extends firefoxDashWebextDashBrowserLib.browserNs.managementNs.ExtensionInstallType
+       with firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait overwrite extends js.Object
+  sealed trait overwrite
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.FilenameConflictAction
+       with firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.OnChangedCause
   
   @js.native
-  sealed trait page extends js.Object
+  sealed trait page
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait page_action extends js.Object
+  sealed trait page_action
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait panel extends js.Object
+  sealed trait panel
+    extends firefoxDashWebextDashBrowserLib.browserNs.windowsNs.CreateType
+       with firefoxDashWebextDashBrowserLib.browserNs.tabsNs.WindowType
+       with firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowType
   
   @js.native
-  sealed trait password extends js.Object
+  sealed trait password
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait `per-origin` extends js.Object
+  sealed trait `per-origin`
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettingsScope
   
   @js.native
-  sealed trait `per-tab` extends js.Object
+  sealed trait `per-tab`
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettingsScope
   
   @js.native
-  sealed trait periodic extends js.Object
+  sealed trait periodic
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.OnRestartRequiredReason
   
   @js.native
-  sealed trait permissions_increase extends js.Object
+  sealed trait permissions_increase
+    extends firefoxDashWebextDashBrowserLib.browserNs.managementNs.ExtensionDisabledReason
   
   @js.native
-  sealed trait personaltoolbar extends js.Object
+  sealed trait personaltoolbar
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestBrowserActionDefaultArea
   
   @js.native
-  sealed trait ping extends js.Object
+  sealed trait ping
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait pinned extends js.Object
+  sealed trait pinned
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait pkcs11 extends js.Object
+  sealed trait pkcs11
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait png extends js.Object
+  sealed trait png
+    extends firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.ImageFormat
+       with firefoxDashWebextDashBrowserLib.browserNs.clipboardNs._SetImageData
   
   @js.native
-  sealed trait policy_compliant extends js.Object
+  sealed trait policy_compliant
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.CertificateTransparencyStatus
   
   @js.native
-  sealed trait policy_not_diverse_scts extends js.Object
+  sealed trait policy_not_diverse_scts
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.CertificateTransparencyStatus
   
   @js.native
-  sealed trait policy_not_enough_scts extends js.Object
+  sealed trait policy_not_enough_scts
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.CertificateTransparencyStatus
   
   @js.native
-  sealed trait popup extends js.Object
+  sealed trait popup
+    extends firefoxDashWebextDashBrowserLib.browserNs.windowsNs.CreateType
+       with firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType
+       with firefoxDashWebextDashBrowserLib.browserNs.tabsNs.WindowType
+       with firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowType
   
   @js.native
-  sealed trait pref extends js.Object
+  sealed trait pref
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
   
   @js.native
-  sealed trait priority_low extends js.Object
+  sealed trait priority_low
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait priority_medium extends js.Object
+  sealed trait priority_medium
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait privacy extends js.Object
+  sealed trait privacy
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
+       with firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait private_browsing extends js.Object
+  sealed trait private_browsing
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.websitesNs.TrackingProtectionModeOption
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress
+    extends firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.TemplateType
   
   @js.native
-  sealed trait prompt extends js.Object
+  sealed trait prompt
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.FilenameConflictAction
   
   @js.native
-  sealed trait proxy extends js.Object
+  sealed trait proxy
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait purpose extends js.Object
+  sealed trait purpose
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
   
   @js.native
-  sealed trait radio extends js.Object
+  sealed trait radio
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ItemType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ItemType
   
   @js.native
-  sealed trait regular extends js.Object
+  sealed trait regular
+    extends firefoxDashWebextDashBrowserLib.browserNs.typesNs.SettingScope
   
   @js.native
-  sealed trait regular_only extends js.Object
+  sealed trait regular_only
+    extends firefoxDashWebextDashBrowserLib.browserNs.typesNs.SettingScope
   
   @js.native
-  sealed trait reject_all extends js.Object
+  sealed trait reject_all
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.websitesNs._CookieConfigBehavior
   
   @js.native
-  sealed trait reject_third_party extends js.Object
+  sealed trait reject_third_party
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.websitesNs._CookieConfigBehavior
   
   @js.native
-  sealed trait reject_trackers extends js.Object
+  sealed trait reject_trackers
+    extends firefoxDashWebextDashBrowserLib.browserNs.privacyNs.websitesNs._CookieConfigBehavior
   
   @js.native
-  sealed trait reload extends js.Object
+  sealed trait reload
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait repeat extends js.Object
+  sealed trait repeat
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsTiling
   
   @js.native
-  sealed trait `repeat-x` extends js.Object
+  sealed trait `repeat-x`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsTiling
   
   @js.native
-  sealed trait `repeat-y` extends js.Object
+  sealed trait `repeat-y`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsTiling
   
   @js.native
-  sealed trait requestBody extends js.Object
+  sealed trait requestBody
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.OnBeforeRequestOptions
   
   @js.native
-  sealed trait requestHeaders extends js.Object
+  sealed trait requestHeaders
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.OnBeforeSendHeadersOptions
   
   @js.native
-  sealed trait responseHeaders extends js.Object
+  sealed trait responseHeaders
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.OnAuthRequiredOptions
+       with firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.OnHeadersReceivedOptions
   
   @js.native
-  sealed trait responsiveness extends js.Object
+  sealed trait responsiveness
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait `right bottom` extends js.Object
+  sealed trait `right bottom`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait `right center` extends js.Object
+  sealed trait `right center`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait `right top` extends js.Object
+  sealed trait `right top`
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait safe extends js.Object
+  sealed trait safe
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DangerType
   
   @js.native
-  sealed trait screenshots extends js.Object
+  sealed trait screenshots
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait script
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait search extends js.Object
+  sealed trait search
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait searchbar extends js.Object
+  sealed trait searchbar
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
   
   @js.native
-  sealed trait secure extends js.Object
+  sealed trait secure
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._SecurityInfoState
   
   @js.native
-  sealed trait selection extends js.Object
+  sealed trait selection
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait separator extends js.Object
+  sealed trait separator
+    extends firefoxDashWebextDashBrowserLib.browserNs.bookmarksNs.BookmarkTreeNodeType
+       with firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ItemType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ItemType
   
   @js.native
-  sealed trait seqstyle extends js.Object
+  sealed trait seqstyle
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait server_redirect extends js.Object
+  sealed trait server_redirect
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionQualifier
   
   @js.native
-  sealed trait sessions extends js.Object
+  sealed trait sessions
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait sharingState extends js.Object
+  sealed trait sharingState
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait sidebar extends js.Object
+  sealed trait sidebar
+    extends firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType
   
   @js.native
-  sealed trait sideload extends js.Object
+  sealed trait sideload
+    extends firefoxDashWebextDashBrowserLib.browserNs.managementNs.ExtensionInstallType
   
   @js.native
-  sealed trait sip extends js.Object
+  sealed trait sip
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait sms extends js.Object
+  sealed trait sms
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait smsto extends js.Object
+  sealed trait smsto
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
   sealed trait spanning extends js.Object
   
   @js.native
-  sealed trait speculate extends js.Object
+  sealed trait speculate
+    extends firefoxDashWebextDashBrowserLib.browserNs.dnsNs._ResolveFlags
   
   @js.native
-  sealed trait speculative extends js.Object
+  sealed trait speculative
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait ssb extends js.Object
+  sealed trait ssb
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait ssh extends js.Object
+  sealed trait ssh
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait stackwalk extends js.Object
+  sealed trait stackwalk
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait start_page extends js.Object
+  sealed trait start_page
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait startup extends js.Object
   
   @js.native
-  sealed trait status extends js.Object
+  sealed trait status
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
   sealed trait stdio extends js.Object
   
   @js.native
-  sealed trait storage extends js.Object
+  sealed trait storage
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait strict
+    extends firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.SameSiteStatus
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends firefoxDashWebextDashBrowserLib.browserNs.telemetryNs.ScalarType
   
   @js.native
-  sealed trait stylesheet extends js.Object
+  sealed trait stylesheet
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait sub_frame extends js.Object
+  sealed trait sub_frame
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait system extends js.Object
+  sealed trait system
+    extends firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyConfigProxyType
   
   @js.native
-  sealed trait tab extends js.Object
+  sealed trait tab
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType
+       with firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs._OverrideContextContext
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs._OverrideContextContext
   
   @js.native
-  sealed trait tabHide extends js.Object
+  sealed trait tabHide
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait tabs extends js.Object
+  sealed trait tabs
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait tabstrip extends js.Object
+  sealed trait tabstrip
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestBrowserActionDefaultArea
   
   @js.native
-  sealed trait tasktracer extends js.Object
+  sealed trait tasktracer
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait tel extends js.Object
+  sealed trait tel
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait telemetry extends js.Object
+  sealed trait telemetry
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait theme extends js.Object
+  sealed trait theme
+    extends firefoxDashWebextDashBrowserLib.browserNs.managementNs.ExtensionType
+       with firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait threads extends js.Object
+  sealed trait threads
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait throttled extends js.Object
+  sealed trait throttled
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.RequestUpdateCheckStatus
   
   @js.native
-  sealed trait title extends js.Object
+  sealed trait title
+    extends firefoxDashWebextDashBrowserLib.browserNs.tabsNs.UpdatePropertyName
   
   @js.native
-  sealed trait tools_menu extends js.Object
+  sealed trait tools_menu
+    extends firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ThemeTypeAdditionalBackgroundsAlignment
   
   @js.native
-  sealed trait topSites extends js.Object
+  sealed trait topSites
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait trackopts extends js.Object
+  sealed trait trackopts
+    extends firefoxDashWebextDashBrowserLib.browserNs.geckoProfilerNs.ProfilerFeature
   
   @js.native
-  sealed trait typed extends js.Object
+  sealed trait typed
+    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
   
   @js.native
-  sealed trait uncommon extends js.Object
+  sealed trait uncommon
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DangerType
   
   @js.native
-  sealed trait uniquify extends js.Object
+  sealed trait uniquify
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.FilenameConflictAction
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends firefoxDashWebextDashBrowserLib.browserNs.managementNs.ExtensionDisabledReason
+       with firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._SecurityInfoProtocolVersion
   
   @js.native
-  sealed trait unlimitedStorage extends js.Object
+  sealed trait unlimitedStorage
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._Permission
   
   @js.native
-  sealed trait unwanted extends js.Object
+  sealed trait unwanted
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DangerType
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.OnInstalledReason
   
   @js.native
-  sealed trait update_available extends js.Object
+  sealed trait update_available
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.RequestUpdateCheckStatus
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DangerType
+       with firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DescriptionStyleType
   
   @js.native
-  sealed trait urn extends js.Object
+  sealed trait urn
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user
+    extends firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.CSSOrigin
+       with firefoxDashWebextDashBrowserLib.browserNs.tabsNs.MutedInfoReason
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait video
+    extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
+       with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
   
   @js.native
-  sealed trait weak extends js.Object
+  sealed trait weak
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs._SecurityInfoState
   
   @js.native
-  sealed trait webNavigation extends js.Object
+  sealed trait webNavigation
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait webRequest extends js.Object
+  sealed trait webRequest
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait webRequestBlocking extends js.Object
+  sealed trait webRequestBlocking
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._OptionalPermission
   
   @js.native
-  sealed trait web_manifest extends js.Object
+  sealed trait web_manifest
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait webcal extends js.Object
+  sealed trait webcal
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait websocket extends js.Object
+  sealed trait websocket
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait win extends js.Object
+  sealed trait win
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformOs
   
   @js.native
   sealed trait windowLength extends js.Object
   
   @js.native
-  sealed trait wtai extends js.Object
+  sealed trait wtai
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait `x86-32` extends js.Object
+  sealed trait `x86-32`
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformArch
   
   @js.native
-  sealed trait `x86-64` extends js.Object
+  sealed trait `x86-64`
+    extends firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.PlatformArch
   
   @js.native
-  sealed trait xbl extends js.Object
+  sealed trait xbl
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait xml_dtd extends js.Object
+  sealed trait xml_dtd
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait xmlhttprequest extends js.Object
+  sealed trait xmlhttprequest
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait xmpp extends js.Object
+  sealed trait xmpp
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait xslt extends js.Object
+  sealed trait xslt
+    extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType
   
   @scala.inline
   def `<all_urls>`: `<all_urls>` = "<all_urls>".asInstanceOf[`<all_urls>`]

@@ -10,3 +10,13 @@ trait PhononPopoverItem extends js.Object {
   var value: java.lang.String
 }
 
+object PhononPopoverItem {
+  @scala.inline
+  def apply(text: java.lang.String, value: java.lang.String): PhononPopoverItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PhononPopoverItem]
+  }
+}
+

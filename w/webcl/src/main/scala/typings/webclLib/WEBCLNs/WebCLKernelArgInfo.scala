@@ -15,3 +15,20 @@ trait WebCLKernelArgInfo extends js.Object {
   var typeName: java.lang.String
 }
 
+object WebCLKernelArgInfo {
+  @scala.inline
+  def apply(
+    accessQualifier: java.lang.String,
+    addressQualifier: java.lang.String,
+    name: java.lang.String,
+    typeName: java.lang.String
+  ): WebCLKernelArgInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessQualifier")(accessQualifier)
+    __obj.updateDynamic("addressQualifier")(addressQualifier)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("typeName")(typeName)
+    __obj.asInstanceOf[WebCLKernelArgInfo]
+  }
+}
+

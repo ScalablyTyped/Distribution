@@ -23,3 +23,13 @@ trait ChartAxisFormatData extends js.Object {
   var line: js.UndefOr[ChartLineFormatData] = js.undefined
 }
 
+object ChartAxisFormatData {
+  @scala.inline
+  def apply(font: ChartFontData = null, line: ChartLineFormatData = null): ChartAxisFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (line != null) __obj.updateDynamic("line")(line)
+    __obj.asInstanceOf[ChartAxisFormatData]
+  }
+}
+

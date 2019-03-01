@@ -16,3 +16,20 @@ trait RoomJoinRequest extends js.Object {
   var networkDiagnostics: js.UndefOr[NetworkDiagnostics] = js.undefined
 }
 
+object RoomJoinRequest {
+  @scala.inline
+  def apply(
+    capabilities: js.Array[java.lang.String] = null,
+    clientAddress: RoomClientAddress = null,
+    kind: java.lang.String = null,
+    networkDiagnostics: NetworkDiagnostics = null
+  ): RoomJoinRequest = {
+    val __obj = js.Dynamic.literal()
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (networkDiagnostics != null) __obj.updateDynamic("networkDiagnostics")(networkDiagnostics)
+    __obj.asInstanceOf[RoomJoinRequest]
+  }
+}
+

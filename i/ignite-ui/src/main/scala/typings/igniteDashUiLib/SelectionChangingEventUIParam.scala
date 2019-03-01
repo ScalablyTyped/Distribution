@@ -20,3 +20,14 @@ trait SelectionChangingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object SelectionChangingEventUIParam {
+  @scala.inline
+  def apply(currentItems: js.Any = null, items: js.Any = null, owner: js.Any = null): SelectionChangingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (currentItems != null) __obj.updateDynamic("currentItems")(currentItems)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[SelectionChangingEventUIParam]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ASTNode extends js.Object {
   var tag: java.lang.String
 }
 
+object ASTNode {
+  @scala.inline
+  def apply(attrs: js.Array[Attr], tag: java.lang.String): ASTNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attrs")(attrs)
+    __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[ASTNode]
+  }
+}
+

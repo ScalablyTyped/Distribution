@@ -9,3 +9,12 @@ trait PatientTreatmentStep extends js.Object {
   var message: java.lang.String
 }
 
+object PatientTreatmentStep {
+  @scala.inline
+  def apply(message: java.lang.String): PatientTreatmentStep = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[PatientTreatmentStep]
+  }
+}
+

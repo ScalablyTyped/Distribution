@@ -24,3 +24,20 @@ trait ColumnUnfixingRefusedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColumnUnfixingRefusedEventUIParam {
+  @scala.inline
+  def apply(
+    columnIdentifier: js.Any = null,
+    errorMessage: java.lang.String = null,
+    isGroupHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    owner: js.Any = null
+  ): ColumnUnfixingRefusedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnIdentifier != null) __obj.updateDynamic("columnIdentifier")(columnIdentifier)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (!js.isUndefined(isGroupHeader)) __obj.updateDynamic("isGroupHeader")(isGroupHeader)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ColumnUnfixingRefusedEventUIParam]
+  }
+}
+

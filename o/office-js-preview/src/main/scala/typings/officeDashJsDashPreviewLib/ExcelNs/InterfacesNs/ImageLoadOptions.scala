@@ -41,3 +41,20 @@ trait ImageLoadOptions extends js.Object {
   var shape: js.UndefOr[ShapeLoadOptions] = js.undefined
 }
 
+object ImageLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    format: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    shape: ShapeLoadOptions = null
+  ): ImageLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    __obj.asInstanceOf[ImageLoadOptions]
+  }
+}
+

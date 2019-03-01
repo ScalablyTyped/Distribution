@@ -18,3 +18,13 @@ trait ITaskOptions extends js.Object {
   var options: js.UndefOr[js.Any] = js.undefined
 }
 
+object ITaskOptions {
+  @scala.inline
+  def apply(files: js.Any = null, options: js.Any = null): ITaskOptions = {
+    val __obj = js.Dynamic.literal()
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[ITaskOptions]
+  }
+}
+

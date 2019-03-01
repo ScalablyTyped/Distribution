@@ -16,3 +16,31 @@ trait AccountsResource extends js.Object {
   def update(request: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint): gapiDotClientLib.gapiNs.clientNs.Request[Account]
 }
 
+object AccountsResource {
+  @scala.inline
+  def apply(
+    containers: ContainersResource,
+    get: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPageTokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAccountsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ],
+    user_permissions: User_permissionsResource
+  ): AccountsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("containers")(containers)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("user_permissions")(user_permissions)
+    __obj.asInstanceOf[AccountsResource]
+  }
+}
+

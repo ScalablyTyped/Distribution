@@ -26,3 +26,48 @@ trait JsonWebKey extends js.Object {
   var y: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JsonWebKey {
+  @scala.inline
+  def apply(
+    alg: java.lang.String = null,
+    crv: java.lang.String = null,
+    d: java.lang.String = null,
+    dp: java.lang.String = null,
+    dq: java.lang.String = null,
+    e: java.lang.String = null,
+    ext: js.UndefOr[scala.Boolean] = js.undefined,
+    k: java.lang.String = null,
+    key_ops: js.Array[java.lang.String] = null,
+    kty: java.lang.String = null,
+    n: java.lang.String = null,
+    oth: js.Array[RsaOtherPrimesInfo] = null,
+    p: java.lang.String = null,
+    q: java.lang.String = null,
+    qi: java.lang.String = null,
+    use: java.lang.String = null,
+    x: java.lang.String = null,
+    y: java.lang.String = null
+  ): JsonWebKey = {
+    val __obj = js.Dynamic.literal()
+    if (alg != null) __obj.updateDynamic("alg")(alg)
+    if (crv != null) __obj.updateDynamic("crv")(crv)
+    if (d != null) __obj.updateDynamic("d")(d)
+    if (dp != null) __obj.updateDynamic("dp")(dp)
+    if (dq != null) __obj.updateDynamic("dq")(dq)
+    if (e != null) __obj.updateDynamic("e")(e)
+    if (!js.isUndefined(ext)) __obj.updateDynamic("ext")(ext)
+    if (k != null) __obj.updateDynamic("k")(k)
+    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops)
+    if (kty != null) __obj.updateDynamic("kty")(kty)
+    if (n != null) __obj.updateDynamic("n")(n)
+    if (oth != null) __obj.updateDynamic("oth")(oth)
+    if (p != null) __obj.updateDynamic("p")(p)
+    if (q != null) __obj.updateDynamic("q")(q)
+    if (qi != null) __obj.updateDynamic("qi")(qi)
+    if (use != null) __obj.updateDynamic("use")(use)
+    if (x != null) __obj.updateDynamic("x")(x)
+    if (y != null) __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[JsonWebKey]
+  }
+}
+

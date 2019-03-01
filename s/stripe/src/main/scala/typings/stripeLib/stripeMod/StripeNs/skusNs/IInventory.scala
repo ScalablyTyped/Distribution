@@ -28,3 +28,17 @@ trait IInventory extends js.Object {
   ] = js.undefined
 }
 
+object IInventory {
+  @scala.inline
+  def apply(
+    `type`: stripeLib.stripeLibStrings.finite | stripeLib.stripeLibStrings.bucket | stripeLib.stripeLibStrings.infinite,
+    quantity: scala.Int | scala.Double = null,
+    value: stripeLib.stripeLibStrings.in_stock | stripeLib.stripeLibStrings.limited | stripeLib.stripeLibStrings.out_of_stock = null
+  ): IInventory = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IInventory]
+  }
+}
+

@@ -15,3 +15,20 @@ trait AnimateOptions extends js.Object {
   var step: js.UndefOr[js.Function2[/* t */ scala.Double, /* value */ scala.Double, scala.Unit]] = js.undefined
 }
 
+object AnimateOptions {
+  @scala.inline
+  def apply(
+    complate: js.Function2[/* t */ scala.Double, /* value */ scala.Double, scala.Unit] = null,
+    duration: scala.Int | scala.Double = null,
+    easing: java.lang.String | js.Function = null,
+    step: js.Function2[/* t */ scala.Double, /* value */ scala.Double, scala.Unit] = null
+  ): AnimateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (complate != null) __obj.updateDynamic("complate")(complate)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step)
+    __obj.asInstanceOf[AnimateOptions]
+  }
+}
+

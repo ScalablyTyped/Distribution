@@ -38,3 +38,20 @@ trait IColumnDef extends js.Object {
   var groupingShowGroupingMenu: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IColumnDef {
+  @scala.inline
+  def apply(
+    enableGrouping: js.UndefOr[scala.Boolean] = js.undefined,
+    grouping: uiDashGridLib.Anon_GroupPriority = null,
+    groupingShowAggregationMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    groupingShowGroupingMenu: js.UndefOr[scala.Boolean] = js.undefined
+  ): IColumnDef = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping)
+    if (grouping != null) __obj.updateDynamic("grouping")(grouping)
+    if (!js.isUndefined(groupingShowAggregationMenu)) __obj.updateDynamic("groupingShowAggregationMenu")(groupingShowAggregationMenu)
+    if (!js.isUndefined(groupingShowGroupingMenu)) __obj.updateDynamic("groupingShowGroupingMenu")(groupingShowGroupingMenu)
+    __obj.asInstanceOf[IColumnDef]
+  }
+}
+

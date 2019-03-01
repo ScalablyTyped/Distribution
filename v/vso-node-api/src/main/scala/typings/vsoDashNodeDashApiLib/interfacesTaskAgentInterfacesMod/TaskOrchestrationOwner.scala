@@ -11,3 +11,14 @@ trait TaskOrchestrationOwner extends js.Object {
   var name: java.lang.String
 }
 
+object TaskOrchestrationOwner {
+  @scala.inline
+  def apply(_links: js.Any, id: scala.Double, name: java.lang.String): TaskOrchestrationOwner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[TaskOrchestrationOwner]
+  }
+}
+

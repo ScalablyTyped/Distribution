@@ -61,3 +61,24 @@ trait OntimeSchedule extends js.Object {
   var utc: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OntimeSchedule {
+  @scala.inline
+  def apply(
+    cycle: java.lang.String | js.Array[java.lang.String],
+    keepLast: js.UndefOr[scala.Boolean] = js.undefined,
+    log: js.UndefOr[scala.Boolean] = js.undefined,
+    single: js.UndefOr[scala.Boolean] = js.undefined,
+    step: scala.Int | scala.Double = null,
+    utc: js.UndefOr[scala.Boolean] = js.undefined
+  ): OntimeSchedule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepLast)) __obj.updateDynamic("keepLast")(keepLast)
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(utc)) __obj.updateDynamic("utc")(utc)
+    __obj.asInstanceOf[OntimeSchedule]
+  }
+}
+

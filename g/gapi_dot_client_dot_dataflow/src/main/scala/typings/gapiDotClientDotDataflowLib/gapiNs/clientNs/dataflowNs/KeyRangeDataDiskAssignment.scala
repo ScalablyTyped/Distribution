@@ -19,3 +19,14 @@ trait KeyRangeDataDiskAssignment extends js.Object {
   var start: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeyRangeDataDiskAssignment {
+  @scala.inline
+  def apply(dataDisk: java.lang.String = null, end: java.lang.String = null, start: java.lang.String = null): KeyRangeDataDiskAssignment = {
+    val __obj = js.Dynamic.literal()
+    if (dataDisk != null) __obj.updateDynamic("dataDisk")(dataDisk)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[KeyRangeDataDiskAssignment]
+  }
+}
+

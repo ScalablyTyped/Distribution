@@ -20,3 +20,18 @@ trait SSESpecification extends js.Object {
   var SSEType: js.UndefOr[SSEType] = js.undefined
 }
 
+object SSESpecification {
+  @scala.inline
+  def apply(
+    Enabled: js.UndefOr[SSEEnabled] = js.undefined,
+    KMSMasterKeyId: KMSMasterKeyId = null,
+    SSEType: SSEType = null
+  ): SSESpecification = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
+    if (KMSMasterKeyId != null) __obj.updateDynamic("KMSMasterKeyId")(KMSMasterKeyId)
+    if (SSEType != null) __obj.updateDynamic("SSEType")(SSEType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SSESpecification]
+  }
+}
+

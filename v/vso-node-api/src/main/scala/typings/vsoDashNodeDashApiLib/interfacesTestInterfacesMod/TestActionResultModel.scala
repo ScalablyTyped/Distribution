@@ -16,3 +16,34 @@ trait TestActionResultModel extends TestResultModelBase {
   var url: java.lang.String
 }
 
+object TestActionResultModel {
+  @scala.inline
+  def apply(
+    actionPath: java.lang.String,
+    comment: java.lang.String,
+    completedDate: stdLib.Date,
+    durationInMs: scala.Double,
+    errorMessage: java.lang.String,
+    iterationId: scala.Double,
+    outcome: java.lang.String,
+    sharedStepModel: SharedStepModel,
+    startedDate: stdLib.Date,
+    stepIdentifier: java.lang.String,
+    url: java.lang.String
+  ): TestActionResultModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actionPath")(actionPath)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("completedDate")(completedDate)
+    __obj.updateDynamic("durationInMs")(durationInMs)
+    __obj.updateDynamic("errorMessage")(errorMessage)
+    __obj.updateDynamic("iterationId")(iterationId)
+    __obj.updateDynamic("outcome")(outcome)
+    __obj.updateDynamic("sharedStepModel")(sharedStepModel)
+    __obj.updateDynamic("startedDate")(startedDate)
+    __obj.updateDynamic("stepIdentifier")(stepIdentifier)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TestActionResultModel]
+  }
+}
+

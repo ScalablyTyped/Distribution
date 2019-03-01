@@ -21,3 +21,14 @@ trait ASPxClientCardViewCustomButtonEventArgs extends ASPxClientProcessingModeEv
   var visibleIndex: scala.Double
 }
 
+object ASPxClientCardViewCustomButtonEventArgs {
+  @scala.inline
+  def apply(buttonID: java.lang.String, processOnServer: scala.Boolean, visibleIndex: scala.Double): ASPxClientCardViewCustomButtonEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buttonID")(buttonID)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[ASPxClientCardViewCustomButtonEventArgs]
+  }
+}
+

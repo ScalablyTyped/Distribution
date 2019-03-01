@@ -23,3 +23,22 @@ trait DragStopEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DragStopEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    model: Model = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): DragStopEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DragStopEventArgs]
+  }
+}
+

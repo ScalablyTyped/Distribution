@@ -17,3 +17,18 @@ trait ListMetricDescriptorsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListMetricDescriptorsResponse {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    metrics: js.Array[MetricDescriptor] = null,
+    nextPageToken: java.lang.String = null
+  ): ListMetricDescriptorsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListMetricDescriptorsResponse]
+  }
+}
+

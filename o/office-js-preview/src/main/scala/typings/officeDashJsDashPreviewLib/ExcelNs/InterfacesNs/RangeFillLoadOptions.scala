@@ -59,3 +59,24 @@ trait RangeFillLoadOptions extends js.Object {
   var tintAndShade: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RangeFillLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    color: js.UndefOr[scala.Boolean] = js.undefined,
+    pattern: js.UndefOr[scala.Boolean] = js.undefined,
+    patternColor: js.UndefOr[scala.Boolean] = js.undefined,
+    patternTintAndShade: js.UndefOr[scala.Boolean] = js.undefined,
+    tintAndShade: js.UndefOr[scala.Boolean] = js.undefined
+  ): RangeFillLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(pattern)) __obj.updateDynamic("pattern")(pattern)
+    if (!js.isUndefined(patternColor)) __obj.updateDynamic("patternColor")(patternColor)
+    if (!js.isUndefined(patternTintAndShade)) __obj.updateDynamic("patternTintAndShade")(patternTintAndShade)
+    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade)
+    __obj.asInstanceOf[RangeFillLoadOptions]
+  }
+}
+

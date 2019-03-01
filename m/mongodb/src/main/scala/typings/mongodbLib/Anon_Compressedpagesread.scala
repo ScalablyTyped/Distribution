@@ -15,3 +15,20 @@ trait Anon_Compressedpagesread extends js.Object {
   var `raw compression call succeeded`: scala.Double
 }
 
+object Anon_Compressedpagesread {
+  @scala.inline
+  def apply(
+    `compressed pages read`: scala.Double,
+    `compressed pages written`: scala.Double,
+    `page written failed to compress`: scala.Double,
+    `page written was too small to compress`: scala.Double,
+    `raw compression call failed, additional data available`: scala.Double,
+    `raw compression call failed, no additional data available`: scala.Double,
+    `raw compression call succeeded`: scala.Double
+  ): Anon_Compressedpagesread = {
+    val __obj = js.Dynamic.literal(`compressed pages read` = `compressed pages read`, `compressed pages written` = `compressed pages written`, `page written failed to compress` = `page written failed to compress`, `page written was too small to compress` = `page written was too small to compress`, `raw compression call failed, additional data available` = `raw compression call failed, additional data available`, `raw compression call failed, no additional data available` = `raw compression call failed, no additional data available`, `raw compression call succeeded` = `raw compression call succeeded`)
+  
+    __obj.asInstanceOf[Anon_Compressedpagesread]
+  }
+}
+

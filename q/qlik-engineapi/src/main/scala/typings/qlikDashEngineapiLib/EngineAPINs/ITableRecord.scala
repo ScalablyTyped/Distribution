@@ -44,3 +44,28 @@ trait ITableRecord extends js.Object {
   var qPos: IPoint
 }
 
+object ITableRecord {
+  @scala.inline
+  def apply(
+    qComment: java.lang.String,
+    qFields: js.Array[IFieldInTableData],
+    qIsDirectDiscovery: scala.Boolean,
+    qIsSynthetic: scala.Boolean,
+    qLoose: scala.Boolean,
+    qName: java.lang.String,
+    qNoOfRows: scala.Double,
+    qPos: IPoint
+  ): ITableRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qComment")(qComment)
+    __obj.updateDynamic("qFields")(qFields)
+    __obj.updateDynamic("qIsDirectDiscovery")(qIsDirectDiscovery)
+    __obj.updateDynamic("qIsSynthetic")(qIsSynthetic)
+    __obj.updateDynamic("qLoose")(qLoose)
+    __obj.updateDynamic("qName")(qName)
+    __obj.updateDynamic("qNoOfRows")(qNoOfRows)
+    __obj.updateDynamic("qPos")(qPos)
+    __obj.asInstanceOf[ITableRecord]
+  }
+}
+

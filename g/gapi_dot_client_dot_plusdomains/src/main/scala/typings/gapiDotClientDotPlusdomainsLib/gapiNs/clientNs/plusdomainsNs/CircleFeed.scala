@@ -24,3 +24,28 @@ trait CircleFeed extends js.Object {
   var totalItems: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CircleFeed {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    items: js.Array[Circle] = null,
+    kind: java.lang.String = null,
+    nextLink: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    title: java.lang.String = null,
+    totalItems: scala.Int | scala.Double = null
+  ): CircleFeed = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextLink != null) __obj.updateDynamic("nextLink")(nextLink)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CircleFeed]
+  }
+}
+

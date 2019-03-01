@@ -39,3 +39,42 @@ trait Config extends js.Object {
   var typekit: js.UndefOr[Typekit] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    active: js.Function0[scala.Unit] = null,
+    classes: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Array[java.lang.String] = null,
+    custom: Custom = null,
+    events: js.UndefOr[scala.Boolean] = js.undefined,
+    fontactive: js.Function2[/* familyName */ java.lang.String, /* fvd */ java.lang.String, scala.Unit] = null,
+    fontdeck: Fontdeck = null,
+    fontinactive: js.Function2[/* familyName */ java.lang.String, /* fvd */ java.lang.String, scala.Unit] = null,
+    fontloading: js.Function2[/* familyName */ java.lang.String, /* fvd */ java.lang.String, scala.Unit] = null,
+    google: Google = null,
+    inactive: js.Function0[scala.Unit] = null,
+    loading: js.Function0[scala.Unit] = null,
+    monotype: Monotype = null,
+    timeout: scala.Int | scala.Double = null,
+    typekit: Typekit = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(classes)) __obj.updateDynamic("classes")(classes)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events)
+    if (fontactive != null) __obj.updateDynamic("fontactive")(fontactive)
+    if (fontdeck != null) __obj.updateDynamic("fontdeck")(fontdeck)
+    if (fontinactive != null) __obj.updateDynamic("fontinactive")(fontinactive)
+    if (fontloading != null) __obj.updateDynamic("fontloading")(fontloading)
+    if (google != null) __obj.updateDynamic("google")(google)
+    if (inactive != null) __obj.updateDynamic("inactive")(inactive)
+    if (loading != null) __obj.updateDynamic("loading")(loading)
+    if (monotype != null) __obj.updateDynamic("monotype")(monotype)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (typekit != null) __obj.updateDynamic("typekit")(typekit)
+    __obj.asInstanceOf[Config]
+  }
+}
+

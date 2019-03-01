@@ -10,3 +10,16 @@ trait KnuddelsJson
       js.UndefOr[knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.KnuddelsJsonData]
     ]
 
+object KnuddelsJson {
+  @scala.inline
+  def apply(
+    StringDictionary: /* x */ org.scalablytyped.runtime.StringDictionary[
+      js.UndefOr[knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.KnuddelsJsonData]
+    ] = null
+  ): KnuddelsJson = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[KnuddelsJson]
+  }
+}
+

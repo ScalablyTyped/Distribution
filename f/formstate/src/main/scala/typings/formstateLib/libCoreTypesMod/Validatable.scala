@@ -15,3 +15,24 @@ trait Validatable[TValue] extends js.Object {
   def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]]
 }
 
+object Validatable {
+  @scala.inline
+  def apply[TValue](
+    $: TValue,
+    enableAutoValidation: js.Function0[scala.Unit],
+    hasError: scala.Boolean,
+    validate: js.Function0[js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]]],
+    validating: scala.Boolean,
+    error: java.lang.String = null
+  ): Validatable[TValue] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$")($.asInstanceOf[js.Any])
+    __obj.updateDynamic("enableAutoValidation")(enableAutoValidation)
+    __obj.updateDynamic("hasError")(hasError)
+    __obj.updateDynamic("validate")(validate)
+    __obj.updateDynamic("validating")(validating)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[Validatable[TValue]]
+  }
+}
+

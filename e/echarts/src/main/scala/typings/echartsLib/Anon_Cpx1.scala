@@ -83,3 +83,30 @@ trait Anon_Cpx1 extends js.Object {
   var y2: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Cpx1 {
+  @scala.inline
+  def apply(
+    cpx1: scala.Int | scala.Double = null,
+    cpx2: scala.Int | scala.Double = null,
+    cpy1: scala.Int | scala.Double = null,
+    cpy2: scala.Int | scala.Double = null,
+    percent: scala.Int | scala.Double = null,
+    x1: scala.Int | scala.Double = null,
+    x2: scala.Int | scala.Double = null,
+    y1: scala.Int | scala.Double = null,
+    y2: scala.Int | scala.Double = null
+  ): Anon_Cpx1 = {
+    val __obj = js.Dynamic.literal()
+    if (cpx1 != null) __obj.updateDynamic("cpx1")(cpx1.asInstanceOf[js.Any])
+    if (cpx2 != null) __obj.updateDynamic("cpx2")(cpx2.asInstanceOf[js.Any])
+    if (cpy1 != null) __obj.updateDynamic("cpy1")(cpy1.asInstanceOf[js.Any])
+    if (cpy2 != null) __obj.updateDynamic("cpy2")(cpy2.asInstanceOf[js.Any])
+    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
+    if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
+    if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
+    if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Cpx1]
+  }
+}
+

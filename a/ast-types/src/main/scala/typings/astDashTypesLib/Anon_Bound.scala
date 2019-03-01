@@ -15,3 +15,22 @@ trait Anon_Bound extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Bound {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    bound: astDashTypesLib.genKindsMod.TypeAnnotationKind = null,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
+  ): Anon_Bound = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (bound != null) __obj.updateDynamic("bound")(bound)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Bound]
+  }
+}
+

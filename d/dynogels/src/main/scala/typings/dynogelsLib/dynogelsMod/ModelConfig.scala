@@ -11,3 +11,18 @@ trait ModelConfig extends js.Object {
   var tableName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ModelConfig {
+  @scala.inline
+  def apply(
+    docClient: js.Any = null,
+    dynamodb: dynogelsLib.dynogelsMod.AWSNs.DynamoDB = null,
+    tableName: java.lang.String = null
+  ): ModelConfig = {
+    val __obj = js.Dynamic.literal()
+    if (docClient != null) __obj.updateDynamic("docClient")(docClient)
+    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb)
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    __obj.asInstanceOf[ModelConfig]
+  }
+}
+

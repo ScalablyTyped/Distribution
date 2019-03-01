@@ -24,3 +24,28 @@ trait CommentFeed extends js.Object {
   var updated: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommentFeed {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    id: java.lang.String = null,
+    items: js.Array[Comment] = null,
+    kind: java.lang.String = null,
+    nextLink: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    title: java.lang.String = null,
+    updated: java.lang.String = null
+  ): CommentFeed = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextLink != null) __obj.updateDynamic("nextLink")(nextLink)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    __obj.asInstanceOf[CommentFeed]
+  }
+}
+

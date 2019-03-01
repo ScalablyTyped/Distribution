@@ -42,3 +42,29 @@ trait IgDialogLocale
   var unpinButtonTitle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgDialogLocale {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgDialogLocale
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    closeButtonTitle: java.lang.String = null,
+    maximizeButtonTitle: java.lang.String = null,
+    minimizeButtonTitle: java.lang.String = null,
+    pinButtonTitle: java.lang.String = null,
+    restoreButtonTitle: java.lang.String = null,
+    unpinButtonTitle: java.lang.String = null
+  ): IgDialogLocale = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (closeButtonTitle != null) __obj.updateDynamic("closeButtonTitle")(closeButtonTitle)
+    if (maximizeButtonTitle != null) __obj.updateDynamic("maximizeButtonTitle")(maximizeButtonTitle)
+    if (minimizeButtonTitle != null) __obj.updateDynamic("minimizeButtonTitle")(minimizeButtonTitle)
+    if (pinButtonTitle != null) __obj.updateDynamic("pinButtonTitle")(pinButtonTitle)
+    if (restoreButtonTitle != null) __obj.updateDynamic("restoreButtonTitle")(restoreButtonTitle)
+    if (unpinButtonTitle != null) __obj.updateDynamic("unpinButtonTitle")(unpinButtonTitle)
+    __obj.asInstanceOf[IgDialogLocale]
+  }
+}
+

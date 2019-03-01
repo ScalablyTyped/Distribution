@@ -117,8 +117,8 @@ org.scalablytyped.runtime.Instantiable0[
   ): VueConstructor[V] = js.native
   def mixin(mixin: VueConstructor[Vue]): VueConstructor[V] = js.native
   def nextTick(): js.Promise[scala.Unit] = js.native
-  def nextTick(callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def nextTick(callback: js.Function0[scala.Unit], context: js.Array[_]): scala.Unit = js.native
+  def nextTick[T](callback: js.ThisFunction0[/* this */ T, scala.Unit]): scala.Unit = js.native
+  def nextTick[T](callback: js.ThisFunction0[/* this */ T, scala.Unit], context: T): scala.Unit = js.native
   def observable[T](obj: T): T = js.native
   def set[T](array: js.Array[T], key: scala.Double, value: T): T = js.native
   def set[T](`object`: js.Object, key: java.lang.String, value: T): T = js.native

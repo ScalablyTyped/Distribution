@@ -12,3 +12,20 @@ trait ThreeSymbols2Set
   var yellowExclamation: Icon
 }
 
+object ThreeSymbols2Set {
+  @scala.inline
+  def apply(
+    greenCheck: Icon,
+    redCross: Icon,
+    yellowExclamation: Icon,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
+  ): ThreeSymbols2Set = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("greenCheck")(greenCheck)
+    __obj.updateDynamic("redCross")(redCross)
+    __obj.updateDynamic("yellowExclamation")(yellowExclamation)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[ThreeSymbols2Set]
+  }
+}
+

@@ -33,3 +33,26 @@ trait XTasksSupplier
   def getTasks(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess
 }
 
+object XTasksSupplier {
+  @scala.inline
+  def apply(
+    ActiveTask: XTask,
+    Tasks: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
+    acquire: js.Function0[scala.Unit],
+    getActiveTask: js.Function0[XTask],
+    getTasks: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTasksSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveTask")(ActiveTask)
+    __obj.updateDynamic("Tasks")(Tasks)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getActiveTask")(getActiveTask)
+    __obj.updateDynamic("getTasks")(getTasks)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTasksSupplier]
+  }
+}
+

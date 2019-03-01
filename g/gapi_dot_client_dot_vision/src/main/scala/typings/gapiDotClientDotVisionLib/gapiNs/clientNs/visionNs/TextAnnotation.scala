@@ -12,3 +12,13 @@ trait TextAnnotation extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TextAnnotation {
+  @scala.inline
+  def apply(pages: js.Array[Page] = null, text: java.lang.String = null): TextAnnotation = {
+    val __obj = js.Dynamic.literal()
+    if (pages != null) __obj.updateDynamic("pages")(pages)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextAnnotation]
+  }
+}
+

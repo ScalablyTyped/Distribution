@@ -18,3 +18,13 @@ trait BaseProps extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object BaseProps {
+  @scala.inline
+  def apply(defaultValue: js.Any = null, value: js.Any = null): BaseProps = {
+    val __obj = js.Dynamic.literal()
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[BaseProps]
+  }
+}
+

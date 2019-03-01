@@ -28,3 +28,22 @@ trait ValidateOptions extends js.Object {
   var stripUnknown: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ValidateOptions {
+  @scala.inline
+  def apply(
+    abortEarly: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Object = null,
+    recursive: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    stripUnknown: js.UndefOr[scala.Boolean] = js.undefined
+  ): ValidateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(stripUnknown)) __obj.updateDynamic("stripUnknown")(stripUnknown)
+    __obj.asInstanceOf[ValidateOptions]
+  }
+}
+

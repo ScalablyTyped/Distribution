@@ -31,3 +31,22 @@ trait IListViewItem extends js.Object {
   var `type`: js.UndefOr[ObjectType] = js.undefined
 }
 
+object IListViewItem {
+  @scala.inline
+  def apply(
+    hasFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    index: scala.Int | scala.Double = null,
+    key: java.lang.String = null,
+    showFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: ObjectType = null
+  ): IListViewItem = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hasFocus)) __obj.updateDynamic("hasFocus")(hasFocus)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(showFocus)) __obj.updateDynamic("showFocus")(showFocus)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IListViewItem]
+  }
+}
+

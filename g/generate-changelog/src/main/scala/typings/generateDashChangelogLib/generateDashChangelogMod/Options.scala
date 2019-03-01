@@ -20,3 +20,24 @@ trait Options extends js.Object {
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    exclude: js.Array[java.lang.String] = null,
+    major: js.UndefOr[scala.Boolean] = js.undefined,
+    minor: js.UndefOr[scala.Boolean] = js.undefined,
+    patch: js.UndefOr[scala.Boolean] = js.undefined,
+    repoUrl: java.lang.String = null,
+    tag: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (!js.isUndefined(major)) __obj.updateDynamic("major")(major)
+    if (!js.isUndefined(minor)) __obj.updateDynamic("minor")(minor)
+    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch)
+    if (repoUrl != null) __obj.updateDynamic("repoUrl")(repoUrl)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[Options]
+  }
+}
+

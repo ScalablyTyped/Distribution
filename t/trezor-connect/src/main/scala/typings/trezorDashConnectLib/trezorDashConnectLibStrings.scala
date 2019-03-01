@@ -10,31 +10,39 @@ object trezorDashConnectLibStrings {
   sealed trait acquired extends js.Object
   
   @js.native
-  sealed trait available extends js.Object
+  sealed trait available
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceStatus
   
   @js.native
-  sealed trait bootloader extends js.Object
+  sealed trait bootloader
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceMode
   
   @js.native
-  sealed trait initialize extends js.Object
+  sealed trait initialize
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceMode
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceMode
   
   @js.native
-  sealed trait occupied extends js.Object
+  sealed trait occupied
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceStatus
   
   @js.native
   sealed trait opreturn extends js.Object
   
   @js.native
-  sealed trait outdated extends js.Object
+  sealed trait outdated
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceFirmwareStatus
   
   @js.native
-  sealed trait required extends js.Object
+  sealed trait required
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceFirmwareStatus
   
   @js.native
-  sealed trait seedless extends js.Object
+  sealed trait seedless
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceMode
   
   @js.native
   sealed trait `send-max` extends js.Object
@@ -46,10 +54,12 @@ object trezorDashConnectLibStrings {
   sealed trait unreadable extends js.Object
   
   @js.native
-  sealed trait used extends js.Object
+  sealed trait used
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceStatus
   
   @js.native
-  sealed trait valid extends js.Object
+  sealed trait valid
+    extends trezorDashConnectLib.trezorDashConnectMod.DeviceFirmwareStatus
   
   @scala.inline
   def acquired: acquired = "acquired".asInstanceOf[acquired]

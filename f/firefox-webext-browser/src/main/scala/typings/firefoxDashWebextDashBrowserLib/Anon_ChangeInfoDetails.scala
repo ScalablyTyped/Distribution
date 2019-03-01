@@ -43,3 +43,35 @@ trait Anon_ChangeInfoDetails extends js.Object {
   def set(details: Anon_DomainExpirationDate): js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]]
 }
 
+object Anon_ChangeInfoDetails {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      Anon_FirstPartyDomain, 
+      js.Promise[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]
+    ],
+    getAll: js.Function1[
+      Anon_Domain, 
+      js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]]
+    ],
+    getAllCookieStores: js.Function0[
+      js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.CookieStore]]
+    ],
+    onChanged: WebExtEvent[js.Function1[/* changeInfo */ Anon_Cause, scala.Unit]],
+    remove: js.Function1[Anon_FirstPartyDomain, js.Promise[js.UndefOr[Anon_FirstPartyDomainName]]],
+    set: js.Function1[
+      Anon_DomainExpirationDate, 
+      js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie]]
+    ]
+  ): Anon_ChangeInfoDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getAll")(getAll)
+    __obj.updateDynamic("getAllCookieStores")(getAllCookieStores)
+    __obj.updateDynamic("onChanged")(onChanged)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[Anon_ChangeInfoDetails]
+  }
+}
+

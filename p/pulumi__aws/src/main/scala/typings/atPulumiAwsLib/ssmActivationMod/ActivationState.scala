@@ -40,3 +40,28 @@ trait ActivationState extends js.Object {
   val registrationLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object ActivationState {
+  @scala.inline
+  def apply(
+    activationCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    expirationDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    expired: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    iamRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    registrationCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    registrationLimit: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): ActivationState = {
+    val __obj = js.Dynamic.literal()
+    if (activationCode != null) __obj.updateDynamic("activationCode")(activationCode.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (expired != null) __obj.updateDynamic("expired")(expired.asInstanceOf[js.Any])
+    if (iamRole != null) __obj.updateDynamic("iamRole")(iamRole.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (registrationCount != null) __obj.updateDynamic("registrationCount")(registrationCount.asInstanceOf[js.Any])
+    if (registrationLimit != null) __obj.updateDynamic("registrationLimit")(registrationLimit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActivationState]
+  }
+}
+

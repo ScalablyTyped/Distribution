@@ -9,3 +9,12 @@ trait Display extends js.Object {
   var token: java.lang.String
 }
 
+object Display {
+  @scala.inline
+  def apply(token: java.lang.String): Display = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[Display]
+  }
+}
+

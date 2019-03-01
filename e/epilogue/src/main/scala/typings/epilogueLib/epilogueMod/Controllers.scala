@@ -14,3 +14,24 @@ trait Controllers extends js.Object {
   var update: UpdateController
 }
 
+object Controllers {
+  @scala.inline
+  def apply(
+    base: BaseController,
+    create: CreateController,
+    delete: DeleteController,
+    list: ListController,
+    read: ReadController,
+    update: UpdateController
+  ): Controllers = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("base")(base)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Controllers]
+  }
+}
+

@@ -47,3 +47,20 @@ trait LoadOption extends js.Object {
   var top: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LoadOption {
+  @scala.inline
+  def apply(
+    expand: java.lang.String | js.Array[java.lang.String] = null,
+    select: java.lang.String | js.Array[java.lang.String] = null,
+    skip: scala.Int | scala.Double = null,
+    top: scala.Int | scala.Double = null
+  ): LoadOption = {
+    val __obj = js.Dynamic.literal()
+    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadOption]
+  }
+}
+

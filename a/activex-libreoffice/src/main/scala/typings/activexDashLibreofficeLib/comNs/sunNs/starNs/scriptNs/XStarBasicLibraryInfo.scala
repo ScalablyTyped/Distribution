@@ -75,3 +75,42 @@ trait XStarBasicLibraryInfo
   def getPassword(): java.lang.String
 }
 
+object XStarBasicLibraryInfo {
+  @scala.inline
+  def apply(
+    DialogContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    ExternalSourceURL: java.lang.String,
+    LinkTargetURL: java.lang.String,
+    ModuleContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    Name: java.lang.String,
+    Password: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getDialogContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
+    getExternalSourceURL: js.Function0[java.lang.String],
+    getLinkTargetURL: js.Function0[java.lang.String],
+    getModuleContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
+    getName: js.Function0[java.lang.String],
+    getPassword: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStarBasicLibraryInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DialogContainer")(DialogContainer)
+    __obj.updateDynamic("ExternalSourceURL")(ExternalSourceURL)
+    __obj.updateDynamic("LinkTargetURL")(LinkTargetURL)
+    __obj.updateDynamic("ModuleContainer")(ModuleContainer)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Password")(Password)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDialogContainer")(getDialogContainer)
+    __obj.updateDynamic("getExternalSourceURL")(getExternalSourceURL)
+    __obj.updateDynamic("getLinkTargetURL")(getLinkTargetURL)
+    __obj.updateDynamic("getModuleContainer")(getModuleContainer)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getPassword")(getPassword)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStarBasicLibraryInfo]
+  }
+}
+

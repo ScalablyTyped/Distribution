@@ -20,3 +20,20 @@ trait Anon_AddListener extends js.Object {
   ): scala.Unit
 }
 
+object Anon_AddListener {
+  @scala.inline
+  def apply(
+    addListener: js.Function1[
+      js.Function1[
+        /* changeInfo */ nwDotJsLib.NWJSUnderscoreHelpersNs.CookiesOnChangedCallbackChangeInfo, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): Anon_AddListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addListener")(addListener)
+    __obj.asInstanceOf[Anon_AddListener]
+  }
+}
+

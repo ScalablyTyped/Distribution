@@ -14,3 +14,12 @@ trait ICPU extends js.Object {
   var architecture: js.UndefOr[java.lang.String]
 }
 
+object ICPU {
+  @scala.inline
+  def apply(architecture: java.lang.String = null): ICPU = {
+    val __obj = js.Dynamic.literal()
+    if (architecture != null) __obj.updateDynamic("architecture")(architecture)
+    __obj.asInstanceOf[ICPU]
+  }
+}
+

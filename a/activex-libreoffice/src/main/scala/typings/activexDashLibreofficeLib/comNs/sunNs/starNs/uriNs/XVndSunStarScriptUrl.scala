@@ -60,3 +60,30 @@ trait XVndSunStarScriptUrl
   def setParameter(key: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object XVndSunStarScriptUrl {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getName: js.Function0[java.lang.String],
+    getParameter: js.Function1[java.lang.String, java.lang.String],
+    hasParameter: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setParameter: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): XVndSunStarScriptUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getParameter")(getParameter)
+    __obj.updateDynamic("hasParameter")(hasParameter)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setParameter")(setParameter)
+    __obj.asInstanceOf[XVndSunStarScriptUrl]
+  }
+}
+

@@ -31,3 +31,20 @@ trait IDeclarationOptions extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IDeclarationOptions {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String = null,
+    include: js.UndefOr[scala.Boolean] = js.undefined,
+    standalone: java.lang.String = null,
+    version: java.lang.String = null
+  ): IDeclarationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include)
+    if (standalone != null) __obj.updateDynamic("standalone")(standalone)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[IDeclarationOptions]
+  }
+}
+

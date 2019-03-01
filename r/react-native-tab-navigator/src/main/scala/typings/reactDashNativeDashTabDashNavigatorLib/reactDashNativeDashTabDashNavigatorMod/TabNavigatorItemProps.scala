@@ -52,3 +52,34 @@ trait TabNavigatorItemProps extends js.Object {
   var titleStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.TextStyle] = js.undefined
 }
 
+object TabNavigatorItemProps {
+  @scala.inline
+  def apply(
+    allowFontScaling: js.UndefOr[scala.Boolean] = js.undefined,
+    badgeText: java.lang.String | scala.Double = null,
+    onPress: js.Function0[scala.Unit] = null,
+    renderBadge: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
+    renderIcon: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
+    renderSelectedIcon: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedTitleStyle: reactDashNativeLib.reactDashNativeMod.TextStyle = null,
+    tabStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    title: java.lang.String = null,
+    titleStyle: reactDashNativeLib.reactDashNativeMod.TextStyle = null
+  ): TabNavigatorItemProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling)
+    if (badgeText != null) __obj.updateDynamic("badgeText")(badgeText.asInstanceOf[js.Any])
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (renderBadge != null) __obj.updateDynamic("renderBadge")(renderBadge)
+    if (renderIcon != null) __obj.updateDynamic("renderIcon")(renderIcon)
+    if (renderSelectedIcon != null) __obj.updateDynamic("renderSelectedIcon")(renderSelectedIcon)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (selectedTitleStyle != null) __obj.updateDynamic("selectedTitleStyle")(selectedTitleStyle)
+    if (tabStyle != null) __obj.updateDynamic("tabStyle")(tabStyle)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle)
+    __obj.asInstanceOf[TabNavigatorItemProps]
+  }
+}
+

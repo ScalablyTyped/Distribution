@@ -10,3 +10,12 @@ trait BucketBySession extends js.Object {
   var minDurationMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BucketBySession {
+  @scala.inline
+  def apply(minDurationMillis: java.lang.String = null): BucketBySession = {
+    val __obj = js.Dynamic.literal()
+    if (minDurationMillis != null) __obj.updateDynamic("minDurationMillis")(minDurationMillis)
+    __obj.asInstanceOf[BucketBySession]
+  }
+}
+

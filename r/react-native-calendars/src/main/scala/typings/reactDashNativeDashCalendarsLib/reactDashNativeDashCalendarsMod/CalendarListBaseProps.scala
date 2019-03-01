@@ -48,3 +48,79 @@ trait CalendarListBaseProps extends CalendarBaseProps {
   var showScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CalendarListBaseProps {
+  @scala.inline
+  def apply(
+    calendarHeight: scala.Int | scala.Double = null,
+    calendarWidth: scala.Int | scala.Double = null,
+    current: TCalendarDate = null,
+    dayComponent: (reactLib.reactMod.Component[DayComponentProps, js.Object, _]) | reactLib.reactMod.ReactNs.SFC[DayComponentProps] = null,
+    disableMonthChange: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledByDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    displayLoadingIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    firstDay: scala.Int | scala.Double = null,
+    futureScrollRange: scala.Int | scala.Double = null,
+    hideArrows: js.UndefOr[scala.Boolean] = js.undefined,
+    hideDayNames: js.UndefOr[scala.Boolean] = js.undefined,
+    hideExtraDays: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    maxDate: TCalendarDate = null,
+    minDate: TCalendarDate = null,
+    monthFormat: java.lang.String = null,
+    onDayLongPress: DateCallbackHandler = null,
+    onDayPress: DateCallbackHandler = null,
+    onMonthChange: DateCallbackHandler = null,
+    onPressArrowLeft: js.Function1[/* substractMonth */ js.Function0[scala.Unit], scala.Unit] = null,
+    onPressArrowRight: js.Function1[/* addMonth */ js.Function0[scala.Unit], scala.Unit] = null,
+    onVisibleMonthsChange: js.Function1[/* months */ js.Array[DateObject], scala.Unit] = null,
+    pagingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    pastScrollRange: scala.Int | scala.Double = null,
+    renderArrow: js.Function1[
+      /* direction */ reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.left | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.right, 
+      reactLib.reactMod.ReactNs.ReactNode
+    ] = null,
+    scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollsToTop: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: java.lang.String = null,
+    showScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    showWeekNumbers: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    theme: CalendarTheme = null
+  ): CalendarListBaseProps = {
+    val __obj = js.Dynamic.literal()
+    if (calendarHeight != null) __obj.updateDynamic("calendarHeight")(calendarHeight.asInstanceOf[js.Any])
+    if (calendarWidth != null) __obj.updateDynamic("calendarWidth")(calendarWidth.asInstanceOf[js.Any])
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (dayComponent != null) __obj.updateDynamic("dayComponent")(dayComponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMonthChange)) __obj.updateDynamic("disableMonthChange")(disableMonthChange)
+    if (!js.isUndefined(disabledByDefault)) __obj.updateDynamic("disabledByDefault")(disabledByDefault)
+    if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator)
+    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
+    if (futureScrollRange != null) __obj.updateDynamic("futureScrollRange")(futureScrollRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideArrows)) __obj.updateDynamic("hideArrows")(hideArrows)
+    if (!js.isUndefined(hideDayNames)) __obj.updateDynamic("hideDayNames")(hideDayNames)
+    if (!js.isUndefined(hideExtraDays)) __obj.updateDynamic("hideExtraDays")(hideExtraDays)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat)
+    if (onDayLongPress != null) __obj.updateDynamic("onDayLongPress")(onDayLongPress)
+    if (onDayPress != null) __obj.updateDynamic("onDayPress")(onDayPress)
+    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(onMonthChange)
+    if (onPressArrowLeft != null) __obj.updateDynamic("onPressArrowLeft")(onPressArrowLeft)
+    if (onPressArrowRight != null) __obj.updateDynamic("onPressArrowRight")(onPressArrowRight)
+    if (onVisibleMonthsChange != null) __obj.updateDynamic("onVisibleMonthsChange")(onVisibleMonthsChange)
+    if (!js.isUndefined(pagingEnabled)) __obj.updateDynamic("pagingEnabled")(pagingEnabled)
+    if (pastScrollRange != null) __obj.updateDynamic("pastScrollRange")(pastScrollRange.asInstanceOf[js.Any])
+    if (renderArrow != null) __obj.updateDynamic("renderArrow")(renderArrow)
+    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled)
+    if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop)
+    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(showScrollIndicator)) __obj.updateDynamic("showScrollIndicator")(showScrollIndicator)
+    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[CalendarListBaseProps]
+  }
+}
+

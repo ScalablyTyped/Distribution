@@ -31,3 +31,15 @@ trait MailMergeSettings extends js.Object {
   var range: js.Any
 }
 
+object MailMergeSettings {
+  @scala.inline
+  def apply(exportFrom: scala.Double, exportRecordsCount: scala.Double, mergeMode: js.Any, range: js.Any): MailMergeSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exportFrom")(exportFrom)
+    __obj.updateDynamic("exportRecordsCount")(exportRecordsCount)
+    __obj.updateDynamic("mergeMode")(mergeMode)
+    __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[MailMergeSettings]
+  }
+}
+

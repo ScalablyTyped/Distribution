@@ -28,3 +28,13 @@ trait NetworkPolicyIngressRule extends js.Object {
   val ports: js.Array[NetworkPolicyPort]
 }
 
+object NetworkPolicyIngressRule {
+  @scala.inline
+  def apply(from: js.Array[NetworkPolicyPeer], ports: js.Array[NetworkPolicyPort]): NetworkPolicyIngressRule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("ports")(ports)
+    __obj.asInstanceOf[NetworkPolicyIngressRule]
+  }
+}
+

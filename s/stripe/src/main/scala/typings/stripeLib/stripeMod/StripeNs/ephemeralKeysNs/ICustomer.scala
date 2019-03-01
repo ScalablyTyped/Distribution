@@ -12,3 +12,12 @@ trait ICustomer extends js.Object {
   var customer: java.lang.String
 }
 
+object ICustomer {
+  @scala.inline
+  def apply(customer: java.lang.String): ICustomer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customer")(customer)
+    __obj.asInstanceOf[ICustomer]
+  }
+}
+

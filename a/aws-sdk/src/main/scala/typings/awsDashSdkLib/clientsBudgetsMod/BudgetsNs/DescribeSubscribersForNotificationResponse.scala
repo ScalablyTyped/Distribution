@@ -16,3 +16,13 @@ trait DescribeSubscribersForNotificationResponse extends js.Object {
   var Subscribers: js.UndefOr[Subscribers] = js.undefined
 }
 
+object DescribeSubscribersForNotificationResponse {
+  @scala.inline
+  def apply(NextToken: GenericString = null, Subscribers: Subscribers = null): DescribeSubscribersForNotificationResponse = {
+    val __obj = js.Dynamic.literal()
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (Subscribers != null) __obj.updateDynamic("Subscribers")(Subscribers)
+    __obj.asInstanceOf[DescribeSubscribersForNotificationResponse]
+  }
+}
+

@@ -14,3 +14,12 @@ trait removeFromCollectionOptions extends js.Object {
   var query: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object removeFromCollectionOptions {
+  @scala.inline
+  def apply(query: js.Function0[scala.Unit] = null): removeFromCollectionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[removeFromCollectionOptions]
+  }
+}
+

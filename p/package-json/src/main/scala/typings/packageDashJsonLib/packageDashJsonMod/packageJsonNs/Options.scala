@@ -32,3 +32,18 @@ trait Options extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allVersions: js.UndefOr[scala.Boolean] = js.undefined,
+    fullMetadata: js.UndefOr[scala.Boolean] = js.undefined,
+    version: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allVersions)) __obj.updateDynamic("allVersions")(allVersions)
+    if (!js.isUndefined(fullMetadata)) __obj.updateDynamic("fullMetadata")(fullMetadata)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Options]
+  }
+}
+

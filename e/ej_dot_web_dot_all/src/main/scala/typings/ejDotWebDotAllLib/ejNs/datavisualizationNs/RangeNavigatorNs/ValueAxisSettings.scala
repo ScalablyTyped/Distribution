@@ -31,3 +31,26 @@ trait ValueAxisSettings extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ValueAxisSettings {
+  @scala.inline
+  def apply(
+    axisLine: ValueAxisSettingsAxisLine = null,
+    font: ValueAxisSettingsFont = null,
+    majorGridLines: ValueAxisSettingsMajorGridLines = null,
+    majorTickLines: ValueAxisSettingsMajorTickLines = null,
+    range: ValueAxisSettingsRange = null,
+    rangePadding: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ValueAxisSettings = {
+    val __obj = js.Dynamic.literal()
+    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (majorGridLines != null) __obj.updateDynamic("majorGridLines")(majorGridLines)
+    if (majorTickLines != null) __obj.updateDynamic("majorTickLines")(majorTickLines)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (rangePadding != null) __obj.updateDynamic("rangePadding")(rangePadding)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ValueAxisSettings]
+  }
+}
+

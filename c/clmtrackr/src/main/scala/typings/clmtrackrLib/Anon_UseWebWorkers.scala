@@ -10,3 +10,12 @@ trait Anon_UseWebWorkers extends js.Object {
   var useWebWorkers: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_UseWebWorkers {
+  @scala.inline
+  def apply(useWebWorkers: js.UndefOr[scala.Boolean] = js.undefined): Anon_UseWebWorkers = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(useWebWorkers)) __obj.updateDynamic("useWebWorkers")(useWebWorkers)
+    __obj.asInstanceOf[Anon_UseWebWorkers]
+  }
+}
+

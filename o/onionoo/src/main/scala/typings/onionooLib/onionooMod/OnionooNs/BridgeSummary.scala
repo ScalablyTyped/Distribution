@@ -20,3 +20,14 @@ trait BridgeSummary extends js.Object {
   var r: scala.Boolean
 }
 
+object BridgeSummary {
+  @scala.inline
+  def apply(h: java.lang.String, n: java.lang.String, r: scala.Boolean): BridgeSummary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("n")(n)
+    __obj.updateDynamic("r")(r)
+    __obj.asInstanceOf[BridgeSummary]
+  }
+}
+

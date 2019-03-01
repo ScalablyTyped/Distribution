@@ -36,3 +36,26 @@ trait Anon_1 extends js.Object {
   var sampleRate: wegameDashApiLib.wegameDashApiLibNumbers.`8000` | wegameDashApiLib.wegameDashApiLibNumbers.`11025` | wegameDashApiLib.wegameDashApiLibNumbers.`12000` | wegameDashApiLib.wegameDashApiLibNumbers.`16000` | wegameDashApiLib.wegameDashApiLibNumbers.`22050` | wegameDashApiLib.wegameDashApiLibNumbers.`24000` | wegameDashApiLib.wegameDashApiLibNumbers.`32000` | wegameDashApiLib.wegameDashApiLibNumbers.`44100` | wegameDashApiLib.wegameDashApiLibNumbers.`48000`
 }
 
+object Anon_1 {
+  @scala.inline
+  def apply(
+    encodeBitRate: scala.Double,
+    format: wegameDashApiLib.wegameDashApiLibStrings.mp3 | wegameDashApiLib.wegameDashApiLibStrings.aac,
+    frameSize: scala.Double,
+    numberOfChannels: wegameDashApiLib.wegameDashApiLibNumbers.`1` | wegameDashApiLib.wegameDashApiLibNumbers.`2`,
+    sampleRate: wegameDashApiLib.wegameDashApiLibNumbers.`8000` | wegameDashApiLib.wegameDashApiLibNumbers.`11025` | wegameDashApiLib.wegameDashApiLibNumbers.`12000` | wegameDashApiLib.wegameDashApiLibNumbers.`16000` | wegameDashApiLib.wegameDashApiLibNumbers.`22050` | wegameDashApiLib.wegameDashApiLibNumbers.`24000` | wegameDashApiLib.wegameDashApiLibNumbers.`32000` | wegameDashApiLib.wegameDashApiLibNumbers.`44100` | wegameDashApiLib.wegameDashApiLibNumbers.`48000`,
+    audioSource: wegameDashApiLib.wxNs.typesNs.AudioSourceType = null,
+    duration: scala.Int | scala.Double = null
+  ): Anon_1 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encodeBitRate")(encodeBitRate)
+    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    __obj.updateDynamic("frameSize")(frameSize)
+    __obj.updateDynamic("numberOfChannels")(numberOfChannels.asInstanceOf[js.Any])
+    __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (audioSource != null) __obj.updateDynamic("audioSource")(audioSource)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_1]
+  }
+}
+

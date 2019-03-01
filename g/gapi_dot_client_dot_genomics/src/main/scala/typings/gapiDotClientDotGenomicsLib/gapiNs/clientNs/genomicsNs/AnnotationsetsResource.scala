@@ -45,3 +45,37 @@ trait AnnotationsetsResource extends js.Object {
   def update(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetIdBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet]
 }
 
+object AnnotationsetsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet]
+    ],
+    search: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchAnnotationSetsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationSetIdBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AnnotationSet]
+    ]
+  ): AnnotationsetsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[AnnotationsetsResource]
+  }
+}
+

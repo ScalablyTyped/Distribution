@@ -22,3 +22,30 @@ trait IHotspotAuthenticationContext extends js.Object {
   def triggerAttentionRequired(packageRelativeApplicationId: java.lang.String, applicationParameters: java.lang.String): scala.Unit
 }
 
+object IHotspotAuthenticationContext {
+  @scala.inline
+  def apply(
+    abortAuthentication: js.Function1[scala.Boolean, scala.Unit],
+    authenticationUrl: winrtLib.WindowsNs.FoundationNs.Uri,
+    issueCredentials: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Boolean, scala.Unit],
+    networkAdapter: winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkAdapter,
+    redirectMessageUrl: winrtLib.WindowsNs.FoundationNs.Uri,
+    redirectMessageXml: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument,
+    skipAuthentication: js.Function0[scala.Unit],
+    triggerAttentionRequired: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    wirelessNetworkId: stdLib.Uint8Array
+  ): IHotspotAuthenticationContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abortAuthentication")(abortAuthentication)
+    __obj.updateDynamic("authenticationUrl")(authenticationUrl)
+    __obj.updateDynamic("issueCredentials")(issueCredentials)
+    __obj.updateDynamic("networkAdapter")(networkAdapter)
+    __obj.updateDynamic("redirectMessageUrl")(redirectMessageUrl)
+    __obj.updateDynamic("redirectMessageXml")(redirectMessageXml)
+    __obj.updateDynamic("skipAuthentication")(skipAuthentication)
+    __obj.updateDynamic("triggerAttentionRequired")(triggerAttentionRequired)
+    __obj.updateDynamic("wirelessNetworkId")(wirelessNetworkId)
+    __obj.asInstanceOf[IHotspotAuthenticationContext]
+  }
+}
+

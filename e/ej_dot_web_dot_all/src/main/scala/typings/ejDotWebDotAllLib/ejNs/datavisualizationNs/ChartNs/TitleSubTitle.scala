@@ -41,3 +41,30 @@ trait TitleSubTitle extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TitleSubTitle {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: TitleSubTitleBorder = null,
+    enableTrim: js.UndefOr[scala.Boolean] = js.undefined,
+    font: TitleSubTitleFont = null,
+    maximumWidth: java.lang.String = null,
+    text: java.lang.String = null,
+    textAlignment: Alignment | java.lang.String = null,
+    textOverflow: TextOverflow | java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): TitleSubTitle = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (!js.isUndefined(enableTrim)) __obj.updateDynamic("enableTrim")(enableTrim)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (maximumWidth != null) __obj.updateDynamic("maximumWidth")(maximumWidth)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
+    if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[TitleSubTitle]
+  }
+}
+

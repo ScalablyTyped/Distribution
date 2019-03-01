@@ -19,3 +19,13 @@ trait TableRow extends js.Object {
   var tableCells: js.UndefOr[js.Array[TableCell]] = js.undefined
 }
 
+object TableRow {
+  @scala.inline
+  def apply(rowHeight: Dimension = null, tableCells: js.Array[TableCell] = null): TableRow = {
+    val __obj = js.Dynamic.literal()
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight)
+    if (tableCells != null) __obj.updateDynamic("tableCells")(tableCells)
+    __obj.asInstanceOf[TableRow]
+  }
+}
+

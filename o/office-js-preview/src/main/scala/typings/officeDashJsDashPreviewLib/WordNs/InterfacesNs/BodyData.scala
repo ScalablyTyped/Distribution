@@ -125,3 +125,44 @@ trait BodyData extends js.Object {
   ] = js.undefined
 }
 
+object BodyData {
+  @scala.inline
+  def apply(
+    contentControls: js.Array[ContentControlData] = null,
+    font: FontData = null,
+    inlinePictures: js.Array[InlinePictureData] = null,
+    lists: js.Array[ListData] = null,
+    paragraphs: js.Array[ParagraphData] = null,
+    parentBody: BodyData = null,
+    parentBodyOrNullObject: BodyData = null,
+    parentContentControl: ContentControlData = null,
+    parentContentControlOrNullObject: ContentControlData = null,
+    parentSection: SectionData = null,
+    parentSectionOrNullObject: SectionData = null,
+    style: java.lang.String = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    tables: js.Array[TableData] = null,
+    text: java.lang.String = null,
+    `type`: officeDashJsDashPreviewLib.WordNs.BodyType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MainDoc | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Section | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Header | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Footer | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableCell = null
+  ): BodyData = {
+    val __obj = js.Dynamic.literal()
+    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures)
+    if (lists != null) __obj.updateDynamic("lists")(lists)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
+    if (parentBodyOrNullObject != null) __obj.updateDynamic("parentBodyOrNullObject")(parentBodyOrNullObject)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentSection != null) __obj.updateDynamic("parentSection")(parentSection)
+    if (parentSectionOrNullObject != null) __obj.updateDynamic("parentSectionOrNullObject")(parentSectionOrNullObject)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BodyData]
+  }
+}
+

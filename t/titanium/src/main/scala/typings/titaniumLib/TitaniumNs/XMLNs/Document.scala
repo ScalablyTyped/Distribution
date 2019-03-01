@@ -260,3 +260,152 @@ trait Document
   def replaceChild(newChild: Node, oldChild: Node): Node
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    ATTRIBUTE_NODE: scala.Double,
+    CDATA_SECTION_NODE: scala.Double,
+    COMMENT_NODE: scala.Double,
+    DOCUMENT_FRAGMENT_NODE: scala.Double,
+    DOCUMENT_NODE: scala.Double,
+    DOCUMENT_TYPE_NODE: scala.Double,
+    ELEMENT_NODE: scala.Double,
+    ENTITY_NODE: scala.Double,
+    ENTITY_REFERENCE_NODE: scala.Double,
+    NOTATION_NODE: scala.Double,
+    PROCESSING_INSTRUCTION_NODE: scala.Double,
+    TEXT_NODE: scala.Double,
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    appendChild: js.Function1[Node, Node],
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    attributes: NamedNodeMap,
+    bubbleParent: scala.Boolean,
+    childNodes: NodeList,
+    cloneNode: js.Function1[scala.Boolean, Node],
+    createAttribute: js.Function1[java.lang.String, Attr],
+    createAttributeNS: js.Function2[java.lang.String, java.lang.String, Attr],
+    createCDATASection: js.Function1[java.lang.String, CDATASection],
+    createComment: js.Function1[java.lang.String, Comment],
+    createDocumentFragment: js.Function0[DocumentFragment],
+    createElement: js.Function1[java.lang.String, Element],
+    createElementNS: js.Function2[java.lang.String, java.lang.String, Element],
+    createEntityReference: js.Function1[java.lang.String, EntityReference],
+    createProcessingInstruction: js.Function2[java.lang.String, java.lang.String, ProcessingInstruction],
+    createTextNode: js.Function1[java.lang.String, Text],
+    doctype: DocumentType,
+    documentElement: Element,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    firstChild: Node,
+    getApiName: js.Function0[java.lang.String],
+    getAttributes: js.Function0[NamedNodeMap],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getDoctype: js.Function0[DocumentType],
+    getDocumentElement: js.Function0[Element],
+    getElementById: js.Function1[java.lang.String, Element],
+    getElementsByTagName: js.Function1[java.lang.String, NodeList],
+    getElementsByTagNameNS: js.Function2[java.lang.String, java.lang.String, NodeList],
+    getImplementation: js.Function0[DOMImplementation],
+    hasAttributes: js.Function0[scala.Boolean],
+    hasChildNodes: js.Function0[scala.Boolean],
+    implementation: DOMImplementation,
+    importNode: js.Function2[Node, scala.Boolean, Node],
+    insertBefore: js.Function2[Node, Node, Node],
+    isSupported: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    lastChild: Node,
+    localName: java.lang.String,
+    namespaceURI: java.lang.String,
+    nextSibling: Node,
+    nodeName: java.lang.String,
+    nodeType: scala.Double,
+    nodeValue: java.lang.String,
+    normalize: js.Function0[scala.Unit],
+    ownerDocument: Document,
+    parentNode: Node,
+    prefix: java.lang.String,
+    previousSibling: Node,
+    removeChild: js.Function1[Node, Node],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    replaceChild: js.Function2[Node, Node, Node],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    text: java.lang.String,
+    textContent: java.lang.String,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): Document = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ATTRIBUTE_NODE")(ATTRIBUTE_NODE)
+    __obj.updateDynamic("CDATA_SECTION_NODE")(CDATA_SECTION_NODE)
+    __obj.updateDynamic("COMMENT_NODE")(COMMENT_NODE)
+    __obj.updateDynamic("DOCUMENT_FRAGMENT_NODE")(DOCUMENT_FRAGMENT_NODE)
+    __obj.updateDynamic("DOCUMENT_NODE")(DOCUMENT_NODE)
+    __obj.updateDynamic("DOCUMENT_TYPE_NODE")(DOCUMENT_TYPE_NODE)
+    __obj.updateDynamic("ELEMENT_NODE")(ELEMENT_NODE)
+    __obj.updateDynamic("ENTITY_NODE")(ENTITY_NODE)
+    __obj.updateDynamic("ENTITY_REFERENCE_NODE")(ENTITY_REFERENCE_NODE)
+    __obj.updateDynamic("NOTATION_NODE")(NOTATION_NODE)
+    __obj.updateDynamic("PROCESSING_INSTRUCTION_NODE")(PROCESSING_INSTRUCTION_NODE)
+    __obj.updateDynamic("TEXT_NODE")(TEXT_NODE)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("appendChild")(appendChild)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("attributes")(attributes)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("childNodes")(childNodes)
+    __obj.updateDynamic("cloneNode")(cloneNode)
+    __obj.updateDynamic("createAttribute")(createAttribute)
+    __obj.updateDynamic("createAttributeNS")(createAttributeNS)
+    __obj.updateDynamic("createCDATASection")(createCDATASection)
+    __obj.updateDynamic("createComment")(createComment)
+    __obj.updateDynamic("createDocumentFragment")(createDocumentFragment)
+    __obj.updateDynamic("createElement")(createElement)
+    __obj.updateDynamic("createElementNS")(createElementNS)
+    __obj.updateDynamic("createEntityReference")(createEntityReference)
+    __obj.updateDynamic("createProcessingInstruction")(createProcessingInstruction)
+    __obj.updateDynamic("createTextNode")(createTextNode)
+    __obj.updateDynamic("doctype")(doctype)
+    __obj.updateDynamic("documentElement")(documentElement)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("firstChild")(firstChild)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getAttributes")(getAttributes)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getDoctype")(getDoctype)
+    __obj.updateDynamic("getDocumentElement")(getDocumentElement)
+    __obj.updateDynamic("getElementById")(getElementById)
+    __obj.updateDynamic("getElementsByTagName")(getElementsByTagName)
+    __obj.updateDynamic("getElementsByTagNameNS")(getElementsByTagNameNS)
+    __obj.updateDynamic("getImplementation")(getImplementation)
+    __obj.updateDynamic("hasAttributes")(hasAttributes)
+    __obj.updateDynamic("hasChildNodes")(hasChildNodes)
+    __obj.updateDynamic("implementation")(implementation)
+    __obj.updateDynamic("importNode")(importNode)
+    __obj.updateDynamic("insertBefore")(insertBefore)
+    __obj.updateDynamic("isSupported")(isSupported)
+    __obj.updateDynamic("lastChild")(lastChild)
+    __obj.updateDynamic("localName")(localName)
+    __obj.updateDynamic("namespaceURI")(namespaceURI)
+    __obj.updateDynamic("nextSibling")(nextSibling)
+    __obj.updateDynamic("nodeName")(nodeName)
+    __obj.updateDynamic("nodeType")(nodeType)
+    __obj.updateDynamic("nodeValue")(nodeValue)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("ownerDocument")(ownerDocument)
+    __obj.updateDynamic("parentNode")(parentNode)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("previousSibling")(previousSibling)
+    __obj.updateDynamic("removeChild")(removeChild)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("replaceChild")(replaceChild)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("textContent")(textContent)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[Document]
+  }
+}
+

@@ -19,3 +19,13 @@ trait AuditSinkSpec extends js.Object {
   val webhook: Webhook
 }
 
+object AuditSinkSpec {
+  @scala.inline
+  def apply(policy: Policy, webhook: Webhook): AuditSinkSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("policy")(policy)
+    __obj.updateDynamic("webhook")(webhook)
+    __obj.asInstanceOf[AuditSinkSpec]
+  }
+}
+

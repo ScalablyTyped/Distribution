@@ -11,3 +11,12 @@ trait ClickEventArgs extends js.Object {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object ClickEventArgs {
+  @scala.inline
+  def apply(originalEvent: js.Any = null): ClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[ClickEventArgs]
+  }
+}
+

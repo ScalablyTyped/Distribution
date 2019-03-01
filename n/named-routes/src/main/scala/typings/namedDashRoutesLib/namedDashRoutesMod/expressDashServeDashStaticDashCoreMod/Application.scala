@@ -9,3 +9,12 @@ trait Application extends js.Object {
   var namedRoutes: namedDashRoutesLib.namedDashRoutesMod.NamedRouter
 }
 
+object Application {
+  @scala.inline
+  def apply(namedRoutes: namedDashRoutesLib.namedDashRoutesMod.NamedRouter): Application = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("namedRoutes")(namedRoutes)
+    __obj.asInstanceOf[Application]
+  }
+}
+

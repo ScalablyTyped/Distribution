@@ -21,3 +21,16 @@ trait Histogram extends js.Object {
   var firstBucketOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Histogram {
+  @scala.inline
+  def apply(
+    bucketCounts: js.Array[java.lang.String] = null,
+    firstBucketOffset: scala.Int | scala.Double = null
+  ): Histogram = {
+    val __obj = js.Dynamic.literal()
+    if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts)
+    if (firstBucketOffset != null) __obj.updateDynamic("firstBucketOffset")(firstBucketOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Histogram]
+  }
+}
+

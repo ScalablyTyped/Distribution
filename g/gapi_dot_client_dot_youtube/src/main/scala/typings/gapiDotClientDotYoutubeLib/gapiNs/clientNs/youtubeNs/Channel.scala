@@ -36,3 +36,40 @@ trait Channel extends js.Object {
   var topicDetails: js.UndefOr[ChannelTopicDetails] = js.undefined
 }
 
+object Channel {
+  @scala.inline
+  def apply(
+    auditDetails: ChannelAuditDetails = null,
+    brandingSettings: ChannelBrandingSettings = null,
+    contentDetails: ChannelContentDetails = null,
+    contentOwnerDetails: ChannelContentOwnerDetails = null,
+    conversionPings: ChannelConversionPings = null,
+    etag: java.lang.String = null,
+    id: java.lang.String = null,
+    invideoPromotion: InvideoPromotion = null,
+    kind: java.lang.String = null,
+    localizations: stdLib.Record[java.lang.String, ChannelLocalization] = null,
+    snippet: ChannelSnippet = null,
+    statistics: ChannelStatistics = null,
+    status: ChannelStatus = null,
+    topicDetails: ChannelTopicDetails = null
+  ): Channel = {
+    val __obj = js.Dynamic.literal()
+    if (auditDetails != null) __obj.updateDynamic("auditDetails")(auditDetails)
+    if (brandingSettings != null) __obj.updateDynamic("brandingSettings")(brandingSettings)
+    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails)
+    if (contentOwnerDetails != null) __obj.updateDynamic("contentOwnerDetails")(contentOwnerDetails)
+    if (conversionPings != null) __obj.updateDynamic("conversionPings")(conversionPings)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (invideoPromotion != null) __obj.updateDynamic("invideoPromotion")(invideoPromotion)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (localizations != null) __obj.updateDynamic("localizations")(localizations)
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (topicDetails != null) __obj.updateDynamic("topicDetails")(topicDetails)
+    __obj.asInstanceOf[Channel]
+  }
+}
+

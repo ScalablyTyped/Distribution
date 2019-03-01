@@ -26,3 +26,31 @@ trait PackageRegistryBackend extends XPackageRegistry {
   def createTransient(context: java.lang.String): scala.Unit
 }
 
+object PackageRegistryBackend {
+  @scala.inline
+  def apply(
+    SupportedPackageTypes: activexDashInteropLib.SafeArray[XPackageTypeInfo],
+    bindPackage: js.Function5[
+      java.lang.String, 
+      java.lang.String, 
+      scala.Boolean, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      XPackage
+    ],
+    createPersistent: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Unit],
+    createTransient: js.Function1[java.lang.String, scala.Unit],
+    getSupportedPackageTypes: js.Function0[activexDashInteropLib.SafeArray[XPackageTypeInfo]],
+    packageRemoved: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): PackageRegistryBackend = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SupportedPackageTypes")(SupportedPackageTypes)
+    __obj.updateDynamic("bindPackage")(bindPackage)
+    __obj.updateDynamic("createPersistent")(createPersistent)
+    __obj.updateDynamic("createTransient")(createTransient)
+    __obj.updateDynamic("getSupportedPackageTypes")(getSupportedPackageTypes)
+    __obj.updateDynamic("packageRemoved")(packageRemoved)
+    __obj.asInstanceOf[PackageRegistryBackend]
+  }
+}
+

@@ -43,3 +43,32 @@ trait XClipboard
   ): scala.Unit
 }
 
+object XClipboard {
+  @scala.inline
+  def apply(
+    Contents: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
+    Name: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getContents: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable],
+    getName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setContents: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
+      XClipboardOwner, 
+      scala.Unit
+    ]
+  ): XClipboard = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Contents")(Contents)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getContents")(getContents)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setContents")(setContents)
+    __obj.asInstanceOf[XClipboard]
+  }
+}
+

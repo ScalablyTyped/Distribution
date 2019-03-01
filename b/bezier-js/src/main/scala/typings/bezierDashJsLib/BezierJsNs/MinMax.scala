@@ -12,3 +12,20 @@ trait MinMax extends js.Object {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MinMax {
+  @scala.inline
+  def apply(
+    max: scala.Double,
+    min: scala.Double,
+    mid: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null
+  ): MinMax = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("min")(min)
+    if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MinMax]
+  }
+}
+

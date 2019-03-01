@@ -23,3 +23,33 @@ trait InstallOpts extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstallOpts {
+  @scala.inline
+  def apply(
+    basePath: java.lang.String = null,
+    baseURL: java.lang.String = null,
+    cb: js.Function1[/* error */ nodeLib.Error, scala.Unit] = null,
+    drivers: org.scalablytyped.runtime.StringDictionary[seleniumDashStandaloneLib.Anon_Arch] = null,
+    logger: js.Function1[/* message */ java.lang.String, scala.Unit] = null,
+    progressCb: js.Function3[
+      /* totalLength */ scala.Double, 
+      /* progressLength */ scala.Double, 
+      /* chunkLength */ scala.Double, 
+      scala.Unit
+    ] = null,
+    requestOpts: nodeLib.httpMod.RequestOptions | java.lang.String | nodeLib.urlMod.URL = null,
+    version: java.lang.String = null
+  ): InstallOpts = {
+    val __obj = js.Dynamic.literal()
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
+    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
+    if (cb != null) __obj.updateDynamic("cb")(cb)
+    if (drivers != null) __obj.updateDynamic("drivers")(drivers)
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (progressCb != null) __obj.updateDynamic("progressCb")(progressCb)
+    if (requestOpts != null) __obj.updateDynamic("requestOpts")(requestOpts.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[InstallOpts]
+  }
+}
+

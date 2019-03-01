@@ -7,55 +7,72 @@ import scala.scalajs.js.annotation._
 
 object cleaveDotJsLibStrings {
   @js.native
-  sealed trait amex extends js.Object
+  sealed trait amex
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait dankort extends js.Object
+  sealed trait dankort
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait diners extends js.Object
+  sealed trait diners
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait discover extends js.Object
+  sealed trait discover
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait instapayment extends js.Object
+  sealed trait instapayment
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait jcb extends js.Object
+  sealed trait jcb
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait lakh extends js.Object
+  sealed trait lakh
+    extends cleaveDotJsLib.optionsMod.NumeralThousandsGroupStyleType
   
   @js.native
-  sealed trait maestro extends js.Object
+  sealed trait maestro
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait mastercard extends js.Object
+  sealed trait mastercard
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait mir extends js.Object
+  sealed trait mir
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends cleaveDotJsLib.optionsMod.NumeralThousandsGroupStyleType
   
   @js.native
-  sealed trait thousand extends js.Object
+  sealed trait thousand
+    extends cleaveDotJsLib.optionsMod.NumeralThousandsGroupStyleType
   
   @js.native
-  sealed trait uatp extends js.Object
+  sealed trait uatp
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait unionPay extends js.Object
+  sealed trait unionPay
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait visa extends js.Object
+  sealed trait visa
+    extends cleaveDotJsLib.optionsCreditCardMod.CreditCardType
   
   @js.native
-  sealed trait wan extends js.Object
+  sealed trait wan
+    extends cleaveDotJsLib.optionsMod.NumeralThousandsGroupStyleType
   
   @scala.inline
   def amex: amex = "amex".asInstanceOf[amex]

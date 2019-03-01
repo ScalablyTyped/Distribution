@@ -18,3 +18,37 @@ trait EntitlementsResource extends js.Object {
   def update(request: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdEntitlementIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Entitlement]
 }
 
+object EntitlementsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdEntitlementId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdEntitlementId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Entitlement]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EntitlementsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdEntitlementIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Entitlement]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdEntitlementIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Entitlement]
+    ]
+  ): EntitlementsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[EntitlementsResource]
+  }
+}
+

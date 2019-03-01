@@ -59,3 +59,40 @@ trait XFastAttributeList
   def hasAttribute(Token: scala.Double): scala.Boolean
 }
 
+object XFastAttributeList {
+  @scala.inline
+  def apply(
+    FastAttributes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute],
+    UnknownAttributes: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute],
+    acquire: js.Function0[scala.Unit],
+    getFastAttributes: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.FastAttribute]
+    ],
+    getOptionalValue: js.Function1[scala.Double, java.lang.String],
+    getOptionalValueToken: js.Function2[scala.Double, scala.Double, scala.Double],
+    getUnknownAttributes: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.Attribute]
+    ],
+    getValue: js.Function1[scala.Double, java.lang.String],
+    getValueToken: js.Function1[scala.Double, scala.Double],
+    hasAttribute: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFastAttributeList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FastAttributes")(FastAttributes)
+    __obj.updateDynamic("UnknownAttributes")(UnknownAttributes)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFastAttributes")(getFastAttributes)
+    __obj.updateDynamic("getOptionalValue")(getOptionalValue)
+    __obj.updateDynamic("getOptionalValueToken")(getOptionalValueToken)
+    __obj.updateDynamic("getUnknownAttributes")(getUnknownAttributes)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("getValueToken")(getValueToken)
+    __obj.updateDynamic("hasAttribute")(hasAttribute)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFastAttributeList]
+  }
+}
+

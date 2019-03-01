@@ -16,3 +16,22 @@ trait WebIDLParseError extends js.Object {
   var tokens: js.Array[ValueDescription]
 }
 
+object WebIDLParseError {
+  @scala.inline
+  def apply(
+    input: java.lang.String,
+    line: scala.Double,
+    message: java.lang.String,
+    toString: js.Function0[java.lang.String],
+    tokens: js.Array[ValueDescription]
+  ): WebIDLParseError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("tokens")(tokens)
+    __obj.asInstanceOf[WebIDLParseError]
+  }
+}
+

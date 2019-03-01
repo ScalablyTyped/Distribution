@@ -19,3 +19,34 @@ trait StyleOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StyleOptions {
+  @scala.inline
+  def apply(
+    clickable: js.UndefOr[scala.Boolean] = js.undefined,
+    fillColor: java.lang.String = null,
+    fillOpacity: scala.Int | scala.Double = null,
+    icon: java.lang.String | ImageIcon | SymbolIcon | HtmlIcon = null,
+    shape: MarkerShape = null,
+    strokeColor: java.lang.String = null,
+    strokeOpacity: scala.Int | scala.Double = null,
+    strokeWeight: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): StyleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StyleOptions]
+  }
+}
+

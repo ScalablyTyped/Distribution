@@ -9,3 +9,12 @@ trait Anon_Theme[T] extends js.Object {
   var theme: js.UndefOr[T] = js.undefined
 }
 
+object Anon_Theme {
+  @scala.inline
+  def apply[T](theme: T = null): Anon_Theme[T] = {
+    val __obj = js.Dynamic.literal()
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Theme[T]]
+  }
+}
+

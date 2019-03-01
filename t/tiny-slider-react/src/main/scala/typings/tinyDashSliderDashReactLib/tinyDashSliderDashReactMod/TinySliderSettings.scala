@@ -135,3 +135,94 @@ trait TinySliderSettings extends CommonOptions {
   var swipeAngle: js.UndefOr[scala.Double | scala.Boolean] = js.undefined
 }
 
+object TinySliderSettings {
+  @scala.inline
+  def apply(
+    animateDelay: scala.Double | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    animateIn: java.lang.String = null,
+    animateNormal: java.lang.String = null,
+    animateOut: java.lang.String = null,
+    arrowKeys: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplayButton: reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    autoplayButtonOutput: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplayDirection: tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.forward | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.backward = null,
+    autoplayHoverPause: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplayResetOnVisibility: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplayText: js.Array[java.lang.String] = null,
+    autoplayTimeout: scala.Int | scala.Double = null,
+    axis: tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.horizontal | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.vertical = null,
+    controls: js.UndefOr[scala.Boolean] = js.undefined,
+    controlsContainer: reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    controlsText: js.Array[java.lang.String] = null,
+    disable: js.UndefOr[scala.Boolean] = js.undefined,
+    edgePadding: scala.Int | scala.Double = null,
+    fixedWidth: scala.Double | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    freezable: js.UndefOr[scala.Boolean] = js.undefined,
+    gutter: scala.Int | scala.Double = null,
+    items: scala.Int | scala.Double = null,
+    lazyload: js.UndefOr[scala.Boolean] = js.undefined,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.carousel | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.gallery = null,
+    mouseDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    nav: js.UndefOr[scala.Boolean] = js.undefined,
+    navAsThumbnails: js.UndefOr[scala.Boolean] = js.undefined,
+    navContainer: reactLib.HTMLElement | java.lang.String | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    nested: tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.inner | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.outer | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    onInit: js.Function0[
+      scala.Unit | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false`
+    ] = null,
+    responsive: ResponsiveOptions | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibNumbers.`false` = null,
+    rewind: js.UndefOr[scala.Boolean] = js.undefined,
+    slideBy: scala.Double | tinyDashSliderDashReactLib.tinyDashSliderDashReactLibStrings.page = null,
+    speed: scala.Int | scala.Double = null,
+    startIndex: scala.Int | scala.Double = null,
+    swipeAngle: scala.Double | scala.Boolean = null,
+    touch: js.UndefOr[scala.Boolean] = js.undefined
+  ): TinySliderSettings = {
+    val __obj = js.Dynamic.literal()
+    if (animateDelay != null) __obj.updateDynamic("animateDelay")(animateDelay.asInstanceOf[js.Any])
+    if (animateIn != null) __obj.updateDynamic("animateIn")(animateIn)
+    if (animateNormal != null) __obj.updateDynamic("animateNormal")(animateNormal)
+    if (animateOut != null) __obj.updateDynamic("animateOut")(animateOut)
+    if (!js.isUndefined(arrowKeys)) __obj.updateDynamic("arrowKeys")(arrowKeys)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (autoplayButton != null) __obj.updateDynamic("autoplayButton")(autoplayButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplayButtonOutput)) __obj.updateDynamic("autoplayButtonOutput")(autoplayButtonOutput)
+    if (autoplayDirection != null) __obj.updateDynamic("autoplayDirection")(autoplayDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplayHoverPause)) __obj.updateDynamic("autoplayHoverPause")(autoplayHoverPause)
+    if (!js.isUndefined(autoplayResetOnVisibility)) __obj.updateDynamic("autoplayResetOnVisibility")(autoplayResetOnVisibility)
+    if (autoplayText != null) __obj.updateDynamic("autoplayText")(autoplayText)
+    if (autoplayTimeout != null) __obj.updateDynamic("autoplayTimeout")(autoplayTimeout.asInstanceOf[js.Any])
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
+    if (controlsContainer != null) __obj.updateDynamic("controlsContainer")(controlsContainer.asInstanceOf[js.Any])
+    if (controlsText != null) __obj.updateDynamic("controlsText")(controlsText)
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (edgePadding != null) __obj.updateDynamic("edgePadding")(edgePadding.asInstanceOf[js.Any])
+    if (fixedWidth != null) __obj.updateDynamic("fixedWidth")(fixedWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(freezable)) __obj.updateDynamic("freezable")(freezable)
+    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyload)) __obj.updateDynamic("lazyload")(lazyload)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseDrag)) __obj.updateDynamic("mouseDrag")(mouseDrag)
+    if (!js.isUndefined(nav)) __obj.updateDynamic("nav")(nav)
+    if (!js.isUndefined(navAsThumbnails)) __obj.updateDynamic("navAsThumbnails")(navAsThumbnails)
+    if (navContainer != null) __obj.updateDynamic("navContainer")(navContainer.asInstanceOf[js.Any])
+    if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
+    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind)
+    if (slideBy != null) __obj.updateDynamic("slideBy")(slideBy.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (swipeAngle != null) __obj.updateDynamic("swipeAngle")(swipeAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch)
+    __obj.asInstanceOf[TinySliderSettings]
+  }
+}
+

@@ -27,3 +27,20 @@ trait GoogleApiOAuth2TokenObject extends js.Object {
   var state: java.lang.String
 }
 
+object GoogleApiOAuth2TokenObject {
+  @scala.inline
+  def apply(
+    access_token: java.lang.String,
+    error: java.lang.String,
+    expires_in: java.lang.String,
+    state: java.lang.String
+  ): GoogleApiOAuth2TokenObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("access_token")(access_token)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("expires_in")(expires_in)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[GoogleApiOAuth2TokenObject]
+  }
+}
+

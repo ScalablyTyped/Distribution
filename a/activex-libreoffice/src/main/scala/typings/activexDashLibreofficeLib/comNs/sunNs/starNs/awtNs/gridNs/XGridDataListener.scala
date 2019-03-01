@@ -25,3 +25,28 @@ trait XGridDataListener
   def rowsRemoved(Event: GridDataEvent): scala.Unit
 }
 
+object XGridDataListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    dataChanged: js.Function1[GridDataEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    rowHeadingChanged: js.Function1[GridDataEvent, scala.Unit],
+    rowsInserted: js.Function1[GridDataEvent, scala.Unit],
+    rowsRemoved: js.Function1[GridDataEvent, scala.Unit]
+  ): XGridDataListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("dataChanged")(dataChanged)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("rowHeadingChanged")(rowHeadingChanged)
+    __obj.updateDynamic("rowsInserted")(rowsInserted)
+    __obj.updateDynamic("rowsRemoved")(rowsRemoved)
+    __obj.asInstanceOf[XGridDataListener]
+  }
+}
+

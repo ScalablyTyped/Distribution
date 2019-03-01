@@ -20,3 +20,13 @@ trait CommonDatabaseConfiguration extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommonDatabaseConfiguration {
+  @scala.inline
+  def apply(adapter: java.lang.String = null, name: java.lang.String = null): CommonDatabaseConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (adapter != null) __obj.updateDynamic("adapter")(adapter)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[CommonDatabaseConfiguration]
+  }
+}
+

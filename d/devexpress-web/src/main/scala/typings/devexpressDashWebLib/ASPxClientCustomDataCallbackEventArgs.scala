@@ -16,3 +16,12 @@ trait ASPxClientCustomDataCallbackEventArgs extends ASPxClientEventArgs {
   var result: java.lang.String
 }
 
+object ASPxClientCustomDataCallbackEventArgs {
+  @scala.inline
+  def apply(result: java.lang.String): ASPxClientCustomDataCallbackEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[ASPxClientCustomDataCallbackEventArgs]
+  }
+}
+

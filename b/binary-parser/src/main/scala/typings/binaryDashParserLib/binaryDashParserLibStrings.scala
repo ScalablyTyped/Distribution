@@ -10,10 +10,12 @@ object binaryDashParserLibStrings {
   sealed trait Next extends js.Object
   
   @js.native
-  sealed trait big extends js.Object
+  sealed trait big
+    extends binaryDashParserLib.binaryDashParserMod.ParserNs.Endianness
   
   @js.native
-  sealed trait little extends js.Object
+  sealed trait little
+    extends binaryDashParserLib.binaryDashParserMod.ParserNs.Endianness
   
   @scala.inline
   def Next: Next = "Next".asInstanceOf[Next]

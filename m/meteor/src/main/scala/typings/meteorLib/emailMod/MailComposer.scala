@@ -12,3 +12,20 @@ trait MailComposer extends js.Object {
   def streamMessage(): scala.Unit
 }
 
+object MailComposer {
+  @scala.inline
+  def apply(
+    addHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    pipe: js.Function1[js.Any, scala.Unit],
+    setMessageOption: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    streamMessage: js.Function0[scala.Unit]
+  ): MailComposer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addHeader")(addHeader)
+    __obj.updateDynamic("pipe")(pipe)
+    __obj.updateDynamic("setMessageOption")(setMessageOption)
+    __obj.updateDynamic("streamMessage")(streamMessage)
+    __obj.asInstanceOf[MailComposer]
+  }
+}
+

@@ -26,3 +26,22 @@ trait UpdateConnection extends js.Object {
   var realms: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object UpdateConnection {
+  @scala.inline
+  def apply(
+    enabled_clients: js.Array[java.lang.String] = null,
+    is_domain_connection: js.UndefOr[scala.Boolean] = js.undefined,
+    metadata: js.Any = null,
+    options: js.Any = null,
+    realms: js.Array[java.lang.String] = null
+  ): UpdateConnection = {
+    val __obj = js.Dynamic.literal()
+    if (enabled_clients != null) __obj.updateDynamic("enabled_clients")(enabled_clients)
+    if (!js.isUndefined(is_domain_connection)) __obj.updateDynamic("is_domain_connection")(is_domain_connection)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (realms != null) __obj.updateDynamic("realms")(realms)
+    __obj.asInstanceOf[UpdateConnection]
+  }
+}
+

@@ -20,3 +20,14 @@ trait RowSelectionChangedEventUIParam extends js.Object {
   var selectedRows: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object RowSelectionChangedEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null, row: js.Any = null, selectedRows: js.Array[_] = null): RowSelectionChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows)
+    __obj.asInstanceOf[RowSelectionChangedEventUIParam]
+  }
+}
+

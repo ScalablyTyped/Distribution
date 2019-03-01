@@ -9,3 +9,12 @@ trait WithMobileDialogOptions extends js.Object {
   var breakpoint: atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
 }
 
+object WithMobileDialogOptions {
+  @scala.inline
+  def apply(breakpoint: atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint): WithMobileDialogOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("breakpoint")(breakpoint)
+    __obj.asInstanceOf[WithMobileDialogOptions]
+  }
+}
+

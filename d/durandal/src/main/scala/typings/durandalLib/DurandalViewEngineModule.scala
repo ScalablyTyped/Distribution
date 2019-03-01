@@ -85,3 +85,38 @@ trait DurandalViewEngineModule extends js.Object {
   def tryGetViewFromCache(id: java.lang.String): stdLib.HTMLElement
 }
 
+object DurandalViewEngineModule {
+  @scala.inline
+  def apply(
+    convertViewIdToRequirePath: js.Function1[java.lang.String, java.lang.String],
+    convertViewUrlToViewId: js.Function1[java.lang.String, java.lang.String],
+    createFallbackView: js.Function3[java.lang.String, java.lang.String, stdLib.Error, DurandalPromise[stdLib.HTMLElement]],
+    createView: js.Function1[java.lang.String, DurandalPromise[stdLib.HTMLElement]],
+    ensureSingleElement: js.Function1[js.Array[stdLib.Node], stdLib.HTMLElement],
+    isViewUrl: js.Function1[java.lang.String, scala.Boolean],
+    parseMarkup: js.Function1[java.lang.String, js.Array[stdLib.Node]],
+    processMarkup: js.Function1[java.lang.String, stdLib.HTMLElement],
+    putViewInCache: js.Function2[java.lang.String, stdLib.HTMLElement, scala.Unit],
+    tryGetViewFromCache: js.Function1[java.lang.String, stdLib.HTMLElement],
+    viewExtension: java.lang.String,
+    viewPlugin: java.lang.String,
+    viewPluginParameters: java.lang.String
+  ): DurandalViewEngineModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("convertViewIdToRequirePath")(convertViewIdToRequirePath)
+    __obj.updateDynamic("convertViewUrlToViewId")(convertViewUrlToViewId)
+    __obj.updateDynamic("createFallbackView")(createFallbackView)
+    __obj.updateDynamic("createView")(createView)
+    __obj.updateDynamic("ensureSingleElement")(ensureSingleElement)
+    __obj.updateDynamic("isViewUrl")(isViewUrl)
+    __obj.updateDynamic("parseMarkup")(parseMarkup)
+    __obj.updateDynamic("processMarkup")(processMarkup)
+    __obj.updateDynamic("putViewInCache")(putViewInCache)
+    __obj.updateDynamic("tryGetViewFromCache")(tryGetViewFromCache)
+    __obj.updateDynamic("viewExtension")(viewExtension)
+    __obj.updateDynamic("viewPlugin")(viewPlugin)
+    __obj.updateDynamic("viewPluginParameters")(viewPluginParameters)
+    __obj.asInstanceOf[DurandalViewEngineModule]
+  }
+}
+

@@ -9,3 +9,18 @@ trait RefFindNodeProps
   extends StrictRefFindNodeProps
      with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 
+object RefFindNodeProps {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    children: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null
+  ): RefFindNodeProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RefFindNodeProps]
+  }
+}
+

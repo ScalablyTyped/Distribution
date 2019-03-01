@@ -13,3 +13,26 @@ trait XAccessibleTableSelection
   def unselectRow(row: scala.Double): scala.Boolean
 }
 
+object XAccessibleTableSelection {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    selectColumn: js.Function1[scala.Double, scala.Boolean],
+    selectRow: js.Function1[scala.Double, scala.Boolean],
+    unselectColumn: js.Function1[scala.Double, scala.Boolean],
+    unselectRow: js.Function1[scala.Double, scala.Boolean]
+  ): XAccessibleTableSelection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("selectColumn")(selectColumn)
+    __obj.updateDynamic("selectRow")(selectRow)
+    __obj.updateDynamic("unselectColumn")(unselectColumn)
+    __obj.updateDynamic("unselectRow")(unselectRow)
+    __obj.asInstanceOf[XAccessibleTableSelection]
+  }
+}
+

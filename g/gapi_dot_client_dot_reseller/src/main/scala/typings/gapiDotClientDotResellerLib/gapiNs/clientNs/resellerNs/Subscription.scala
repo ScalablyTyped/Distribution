@@ -79,3 +79,48 @@ trait Subscription extends js.Object {
   var trialSettings: js.UndefOr[gapiDotClientDotResellerLib.Anon_IsInTrial] = js.undefined
 }
 
+object Subscription {
+  @scala.inline
+  def apply(
+    billingMethod: java.lang.String = null,
+    creationTime: java.lang.String = null,
+    customerDomain: java.lang.String = null,
+    customerId: java.lang.String = null,
+    dealCode: java.lang.String = null,
+    kind: java.lang.String = null,
+    plan: gapiDotClientDotResellerLib.Anon_CommitmentInterval = null,
+    purchaseOrderId: java.lang.String = null,
+    renewalSettings: RenewalSettings = null,
+    resourceUiUrl: java.lang.String = null,
+    seats: Seats = null,
+    skuId: java.lang.String = null,
+    skuName: java.lang.String = null,
+    status: java.lang.String = null,
+    subscriptionId: java.lang.String = null,
+    suspensionReasons: js.Array[java.lang.String] = null,
+    transferInfo: gapiDotClientDotResellerLib.Anon_MinimumTransferableSeats = null,
+    trialSettings: gapiDotClientDotResellerLib.Anon_IsInTrial = null
+  ): Subscription = {
+    val __obj = js.Dynamic.literal()
+    if (billingMethod != null) __obj.updateDynamic("billingMethod")(billingMethod)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (customerDomain != null) __obj.updateDynamic("customerDomain")(customerDomain)
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
+    if (dealCode != null) __obj.updateDynamic("dealCode")(dealCode)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (purchaseOrderId != null) __obj.updateDynamic("purchaseOrderId")(purchaseOrderId)
+    if (renewalSettings != null) __obj.updateDynamic("renewalSettings")(renewalSettings)
+    if (resourceUiUrl != null) __obj.updateDynamic("resourceUiUrl")(resourceUiUrl)
+    if (seats != null) __obj.updateDynamic("seats")(seats)
+    if (skuId != null) __obj.updateDynamic("skuId")(skuId)
+    if (skuName != null) __obj.updateDynamic("skuName")(skuName)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (subscriptionId != null) __obj.updateDynamic("subscriptionId")(subscriptionId)
+    if (suspensionReasons != null) __obj.updateDynamic("suspensionReasons")(suspensionReasons)
+    if (transferInfo != null) __obj.updateDynamic("transferInfo")(transferInfo)
+    if (trialSettings != null) __obj.updateDynamic("trialSettings")(trialSettings)
+    __obj.asInstanceOf[Subscription]
+  }
+}
+

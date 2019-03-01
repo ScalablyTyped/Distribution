@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Matrix extends js.Object {
+trait Matrix extends _MathType {
   var `type`: java.lang.String = js.native
   def create(data: MathArray): scala.Unit = js.native
   def create(data: MathArray, datatype: java.lang.String): scala.Unit = js.native

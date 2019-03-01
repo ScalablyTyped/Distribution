@@ -12,3 +12,13 @@ trait JQueryStatic extends js.Object {
   var unblockUI: js.UndefOr[JQBlockUIStatic] = js.undefined
 }
 
+object JQueryStatic {
+  @scala.inline
+  def apply(blockUI: JQBlockUIStatic = null, unblockUI: JQBlockUIStatic = null): JQueryStatic = {
+    val __obj = js.Dynamic.literal()
+    if (blockUI != null) __obj.updateDynamic("blockUI")(blockUI)
+    if (unblockUI != null) __obj.updateDynamic("unblockUI")(unblockUI)
+    __obj.asInstanceOf[JQueryStatic]
+  }
+}
+

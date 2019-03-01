@@ -16,3 +16,16 @@ trait VpcEndpointSubnetAssociationState extends js.Object {
   val vpcEndpointId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object VpcEndpointSubnetAssociationState {
+  @scala.inline
+  def apply(
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcEndpointId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): VpcEndpointSubnetAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (vpcEndpointId != null) __obj.updateDynamic("vpcEndpointId")(vpcEndpointId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcEndpointSubnetAssociationState]
+  }
+}
+

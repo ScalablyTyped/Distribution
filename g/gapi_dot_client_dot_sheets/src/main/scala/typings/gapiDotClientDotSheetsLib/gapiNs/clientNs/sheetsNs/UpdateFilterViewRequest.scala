@@ -16,3 +16,13 @@ trait UpdateFilterViewRequest extends js.Object {
   var filter: js.UndefOr[FilterView] = js.undefined
 }
 
+object UpdateFilterViewRequest {
+  @scala.inline
+  def apply(fields: java.lang.String = null, filter: FilterView = null): UpdateFilterViewRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    __obj.asInstanceOf[UpdateFilterViewRequest]
+  }
+}
+

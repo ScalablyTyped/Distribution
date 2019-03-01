@@ -10,3 +10,13 @@ trait FieldValidation extends js.Object {
   def addError(message: java.lang.String): scala.Unit
 }
 
+object FieldValidation {
+  @scala.inline
+  def apply(__errors: js.Array[FieldError], addError: js.Function1[java.lang.String, scala.Unit]): FieldValidation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("__errors")(__errors)
+    __obj.updateDynamic("addError")(addError)
+    __obj.asInstanceOf[FieldValidation]
+  }
+}
+

@@ -72,3 +72,42 @@ trait XAccessibleHyperlink extends XAccessibleAction {
   def isValid(): scala.Boolean
 }
 
+object XAccessibleHyperlink {
+  @scala.inline
+  def apply(
+    AccessibleActionCount: scala.Double,
+    EndIndex: scala.Double,
+    StartIndex: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    doAccessibleAction: js.Function1[scala.Double, scala.Boolean],
+    getAccessibleActionAnchor: js.Function1[scala.Double, js.Any],
+    getAccessibleActionCount: js.Function0[scala.Double],
+    getAccessibleActionDescription: js.Function1[scala.Double, java.lang.String],
+    getAccessibleActionKeyBinding: js.Function1[scala.Double, XAccessibleKeyBinding],
+    getAccessibleActionObject: js.Function1[scala.Double, js.Any],
+    getEndIndex: js.Function0[scala.Double],
+    getStartIndex: js.Function0[scala.Double],
+    isValid: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleHyperlink = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessibleActionCount")(AccessibleActionCount)
+    __obj.updateDynamic("EndIndex")(EndIndex)
+    __obj.updateDynamic("StartIndex")(StartIndex)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("doAccessibleAction")(doAccessibleAction)
+    __obj.updateDynamic("getAccessibleActionAnchor")(getAccessibleActionAnchor)
+    __obj.updateDynamic("getAccessibleActionCount")(getAccessibleActionCount)
+    __obj.updateDynamic("getAccessibleActionDescription")(getAccessibleActionDescription)
+    __obj.updateDynamic("getAccessibleActionKeyBinding")(getAccessibleActionKeyBinding)
+    __obj.updateDynamic("getAccessibleActionObject")(getAccessibleActionObject)
+    __obj.updateDynamic("getEndIndex")(getEndIndex)
+    __obj.updateDynamic("getStartIndex")(getStartIndex)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAccessibleHyperlink]
+  }
+}
+

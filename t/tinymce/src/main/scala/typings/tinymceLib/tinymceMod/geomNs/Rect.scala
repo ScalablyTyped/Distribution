@@ -15,3 +15,26 @@ trait Rect extends js.Object {
   def relativePosition(rect: Rect, targetRect: Rect, rel: java.lang.String): scala.Unit
 }
 
+object Rect {
+  @scala.inline
+  def apply(
+    clamp: js.Function3[Rect, Rect, scala.Boolean, Rect],
+    create: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Rect],
+    findBestRelativePosition: js.Function4[Rect, Rect, Rect, js.Array[_], scala.Unit],
+    fromClientRect: js.Function1[stdLib.ClientRect, Rect],
+    inflate: js.Function3[Rect, scala.Double, scala.Double, Rect],
+    intersect: js.Function2[Rect, Rect, Rect],
+    relativePosition: js.Function3[Rect, Rect, java.lang.String, scala.Unit]
+  ): Rect = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clamp")(clamp)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("findBestRelativePosition")(findBestRelativePosition)
+    __obj.updateDynamic("fromClientRect")(fromClientRect)
+    __obj.updateDynamic("inflate")(inflate)
+    __obj.updateDynamic("intersect")(intersect)
+    __obj.updateDynamic("relativePosition")(relativePosition)
+    __obj.asInstanceOf[Rect]
+  }
+}
+

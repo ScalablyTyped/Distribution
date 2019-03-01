@@ -58,3 +58,26 @@ trait XLibraryContainerPassword
   def verifyLibraryPassword(Name: java.lang.String, Password: java.lang.String): scala.Boolean
 }
 
+object XLibraryContainerPassword {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    changeLibraryPassword: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    isLibraryPasswordProtected: js.Function1[java.lang.String, scala.Boolean],
+    isLibraryPasswordVerified: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    verifyLibraryPassword: js.Function2[java.lang.String, java.lang.String, scala.Boolean]
+  ): XLibraryContainerPassword = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("changeLibraryPassword")(changeLibraryPassword)
+    __obj.updateDynamic("isLibraryPasswordProtected")(isLibraryPasswordProtected)
+    __obj.updateDynamic("isLibraryPasswordVerified")(isLibraryPasswordVerified)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("verifyLibraryPassword")(verifyLibraryPassword)
+    __obj.asInstanceOf[XLibraryContainerPassword]
+  }
+}
+

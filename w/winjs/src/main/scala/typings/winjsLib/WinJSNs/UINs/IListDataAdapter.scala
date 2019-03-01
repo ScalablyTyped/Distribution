@@ -155,3 +155,72 @@ trait IListDataAdapter[T] extends js.Object {
   def setNotificationHandler(notificationHandler: IListDataNotificationHandler[T]): scala.Unit
 }
 
+object IListDataAdapter {
+  @scala.inline
+  def apply[T](
+    change: js.Function3[java.lang.String, T, scala.Double, winjsLib.WinJSNs.Promise[scala.Unit]],
+    compareByIdentity: scala.Boolean,
+    getCount: js.Function0[winjsLib.WinJSNs.Promise[scala.Double]],
+    insertAfter: js.Function4[java.lang.String, T, java.lang.String, scala.Double, winjsLib.WinJSNs.Promise[IItem[T]]],
+    insertAtEnd: js.Function2[java.lang.String, T, winjsLib.WinJSNs.Promise[IItem[T]]],
+    insertAtStart: js.Function2[java.lang.String, T, winjsLib.WinJSNs.Promise[IItem[T]]],
+    insertBefore: js.Function4[java.lang.String, T, java.lang.String, scala.Double, winjsLib.WinJSNs.Promise[IItem[T]]],
+    itemSignature: js.Function1[IItem[T], java.lang.String],
+    itemsFromDescription: js.Function3[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      winjsLib.WinJSNs.Promise[IFetchResult[T]]
+    ],
+    itemsFromEnd: js.Function1[scala.Double, winjsLib.WinJSNs.Promise[IFetchResult[T]]],
+    itemsFromIndex: js.Function3[scala.Double, scala.Double, scala.Double, winjsLib.WinJSNs.Promise[IFetchResult[T]]],
+    itemsFromKey: js.Function3[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      winjsLib.WinJSNs.Promise[IFetchResult[T]]
+    ],
+    itemsFromStart: js.Function1[scala.Double, winjsLib.WinJSNs.Promise[IFetchResult[T]]],
+    moveAfter: js.Function4[
+      java.lang.String, 
+      js.Any, 
+      java.lang.String, 
+      scala.Double, 
+      winjsLib.WinJSNs.Promise[IItem[T]]
+    ],
+    moveBefore: js.Function4[
+      java.lang.String, 
+      js.Any, 
+      java.lang.String, 
+      scala.Double, 
+      winjsLib.WinJSNs.Promise[IItem[T]]
+    ],
+    moveToEnd: js.Function2[java.lang.String, scala.Double, winjsLib.WinJSNs.Promise[IItem[T]]],
+    moveToStart: js.Function2[java.lang.String, scala.Double, winjsLib.WinJSNs.Promise[IItem[T]]],
+    remove: js.Function3[java.lang.String, T, scala.Double, winjsLib.WinJSNs.Promise[scala.Unit]],
+    setNotificationHandler: js.Function1[IListDataNotificationHandler[T], scala.Unit]
+  ): IListDataAdapter[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("change")(change)
+    __obj.updateDynamic("compareByIdentity")(compareByIdentity)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("insertAfter")(insertAfter)
+    __obj.updateDynamic("insertAtEnd")(insertAtEnd)
+    __obj.updateDynamic("insertAtStart")(insertAtStart)
+    __obj.updateDynamic("insertBefore")(insertBefore)
+    __obj.updateDynamic("itemSignature")(itemSignature)
+    __obj.updateDynamic("itemsFromDescription")(itemsFromDescription)
+    __obj.updateDynamic("itemsFromEnd")(itemsFromEnd)
+    __obj.updateDynamic("itemsFromIndex")(itemsFromIndex)
+    __obj.updateDynamic("itemsFromKey")(itemsFromKey)
+    __obj.updateDynamic("itemsFromStart")(itemsFromStart)
+    __obj.updateDynamic("moveAfter")(moveAfter)
+    __obj.updateDynamic("moveBefore")(moveBefore)
+    __obj.updateDynamic("moveToEnd")(moveToEnd)
+    __obj.updateDynamic("moveToStart")(moveToStart)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("setNotificationHandler")(setNotificationHandler)
+    __obj.asInstanceOf[IListDataAdapter[T]]
+  }
+}
+

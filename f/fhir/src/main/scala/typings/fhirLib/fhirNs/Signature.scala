@@ -63,3 +63,47 @@ trait Signature extends Element {
   var whoUri: js.UndefOr[uri] = js.undefined
 }
 
+object Signature {
+  @scala.inline
+  def apply(
+    `type`: js.Array[Coding],
+    when: instant,
+    _blob: Element = null,
+    _contentType: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _onBehalfOfUri: Element = null,
+    _when: Element = null,
+    _whoUri: Element = null,
+    blob: base64Binary = null,
+    contentType: code = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    onBehalfOfReference: Reference = null,
+    onBehalfOfUri: uri = null,
+    whoReference: Reference = null,
+    whoUri: uri = null
+  ): Signature = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("when")(when)
+    if (_blob != null) __obj.updateDynamic("_blob")(_blob)
+    if (_contentType != null) __obj.updateDynamic("_contentType")(_contentType)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_onBehalfOfUri != null) __obj.updateDynamic("_onBehalfOfUri")(_onBehalfOfUri)
+    if (_when != null) __obj.updateDynamic("_when")(_when)
+    if (_whoUri != null) __obj.updateDynamic("_whoUri")(_whoUri)
+    if (blob != null) __obj.updateDynamic("blob")(blob)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (onBehalfOfReference != null) __obj.updateDynamic("onBehalfOfReference")(onBehalfOfReference)
+    if (onBehalfOfUri != null) __obj.updateDynamic("onBehalfOfUri")(onBehalfOfUri)
+    if (whoReference != null) __obj.updateDynamic("whoReference")(whoReference)
+    if (whoUri != null) __obj.updateDynamic("whoUri")(whoUri)
+    __obj.asInstanceOf[Signature]
+  }
+}
+

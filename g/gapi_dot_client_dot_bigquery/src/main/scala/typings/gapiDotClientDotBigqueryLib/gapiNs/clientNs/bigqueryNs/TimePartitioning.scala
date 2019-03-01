@@ -17,3 +17,18 @@ trait TimePartitioning extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimePartitioning {
+  @scala.inline
+  def apply(
+    expirationMs: java.lang.String = null,
+    field: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): TimePartitioning = {
+    val __obj = js.Dynamic.literal()
+    if (expirationMs != null) __obj.updateDynamic("expirationMs")(expirationMs)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[TimePartitioning]
+  }
+}
+

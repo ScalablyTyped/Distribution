@@ -94,3 +94,50 @@ trait TourProps
   var style_TourProps: js.UndefOr[js.Any] = js.undefined
 }
 
+object TourProps {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    onBack: js.Function,
+    onCancel: js.Function,
+    onNext: js.Function,
+    step: scala.Double,
+    steps: js.Array[TourStep],
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[js.Any] = null,
+    arrow: js.Any = null,
+    arrowColor: java.lang.String = null,
+    arrowSize: scala.Int | scala.Double = null,
+    backButtonText: java.lang.String = null,
+    buttonContainerStyle: js.Any = null,
+    buttonStyle: js.Any = null,
+    closeButtonText: java.lang.String = null,
+    doneButtonText: java.lang.String = null,
+    hideButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    hideClose: js.UndefOr[scala.Boolean] = js.undefined,
+    nextButtonText: java.lang.String = null,
+    style: js.Any = null
+  ): TourProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("onBack")(onBack)
+    __obj.updateDynamic("onCancel")(onCancel)
+    __obj.updateDynamic("onNext")(onNext)
+    __obj.updateDynamic("step")(step)
+    __obj.updateDynamic("steps")(steps)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (arrow != null) __obj.updateDynamic("arrow")(arrow)
+    if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor)
+    if (arrowSize != null) __obj.updateDynamic("arrowSize")(arrowSize.asInstanceOf[js.Any])
+    if (backButtonText != null) __obj.updateDynamic("backButtonText")(backButtonText)
+    if (buttonContainerStyle != null) __obj.updateDynamic("buttonContainerStyle")(buttonContainerStyle)
+    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle)
+    if (closeButtonText != null) __obj.updateDynamic("closeButtonText")(closeButtonText)
+    if (doneButtonText != null) __obj.updateDynamic("doneButtonText")(doneButtonText)
+    if (!js.isUndefined(hideButtons)) __obj.updateDynamic("hideButtons")(hideButtons)
+    if (!js.isUndefined(hideClose)) __obj.updateDynamic("hideClose")(hideClose)
+    if (nextButtonText != null) __obj.updateDynamic("nextButtonText")(nextButtonText)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[TourProps]
+  }
+}
+

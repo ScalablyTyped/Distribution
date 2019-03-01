@@ -92,3 +92,34 @@ trait ChartTitleUpdateData extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartTitleUpdateData {
+  @scala.inline
+  def apply(
+    format: ChartTitleFormatUpdateData = null,
+    horizontalAlignment: officeDashJsDashPreviewLib.ExcelNs.ChartTextHorizontalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed = null,
+    left: scala.Int | scala.Double = null,
+    overlay: js.UndefOr[scala.Boolean] = js.undefined,
+    position: officeDashJsDashPreviewLib.ExcelNs.ChartTitlePosition | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Top | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right = null,
+    showShadow: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null,
+    textOrientation: scala.Int | scala.Double = null,
+    top: scala.Int | scala.Double = null,
+    verticalAlignment: officeDashJsDashPreviewLib.ExcelNs.ChartTextVerticalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Top | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartTitleUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ChartTitleUpdateData]
+  }
+}
+

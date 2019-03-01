@@ -15,3 +15,26 @@ trait ISearchDef extends js.Object {
   def IsIndirectionUsed(): scala.Boolean
 }
 
+object ISearchDef {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[ISearchDef],
+    Conditions: ISearchConditions,
+    IsIndirectionUsed: js.Function0[scala.Boolean],
+    Levels: IExpressionExs,
+    LookInAllVersions: scala.Boolean,
+    ReturnLatestVisibleVersion: scala.Boolean,
+    SearchFlags: mfilesLib.MFilesNs.MFSearchFlags
+  ): ISearchDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Conditions")(Conditions)
+    __obj.updateDynamic("IsIndirectionUsed")(IsIndirectionUsed)
+    __obj.updateDynamic("Levels")(Levels)
+    __obj.updateDynamic("LookInAllVersions")(LookInAllVersions)
+    __obj.updateDynamic("ReturnLatestVisibleVersion")(ReturnLatestVisibleVersion)
+    __obj.updateDynamic("SearchFlags")(SearchFlags)
+    __obj.asInstanceOf[ISearchDef]
+  }
+}
+

@@ -22,3 +22,12 @@ trait VictoryLabableProps extends js.Object {
   var labelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
 }
 
+object VictoryLabableProps {
+  @scala.inline
+  def apply(labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null): VictoryLabableProps = {
+    val __obj = js.Dynamic.literal()
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    __obj.asInstanceOf[VictoryLabableProps]
+  }
+}
+

@@ -12,3 +12,13 @@ trait ServiceAccount extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServiceAccount {
+  @scala.inline
+  def apply(email_address: java.lang.String = null, kind: java.lang.String = null): ServiceAccount = {
+    val __obj = js.Dynamic.literal()
+    if (email_address != null) __obj.updateDynamic("email_address")(email_address)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[ServiceAccount]
+  }
+}
+

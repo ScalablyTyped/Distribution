@@ -36,3 +36,26 @@ trait ScalesBarPointer extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScalesBarPointer {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    border: ScalesBarPointersBorder = null,
+    distanceFromScale: scala.Int | scala.Double = null,
+    gradients: js.Any = null,
+    opacity: scala.Int | scala.Double = null,
+    value: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): ScalesBarPointer = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
+    if (gradients != null) __obj.updateDynamic("gradients")(gradients)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScalesBarPointer]
+  }
+}
+

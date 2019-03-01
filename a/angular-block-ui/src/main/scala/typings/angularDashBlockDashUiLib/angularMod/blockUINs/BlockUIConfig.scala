@@ -111,3 +111,35 @@ trait BlockUIConfig extends js.Object {
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BlockUIConfig {
+  @scala.inline
+  def apply(
+    autoBlock: js.UndefOr[scala.Boolean] = js.undefined,
+    autoInjectBodyBlock: js.UndefOr[scala.Boolean] = js.undefined,
+    blockBrowserNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    cssClass: java.lang.String = null,
+    delay: scala.Int | scala.Double = null,
+    message: java.lang.String = null,
+    requestFilter: js.Function1[
+      /* config */ angularLib.angularMod.angularNs.IRequestConfig, 
+      java.lang.String | scala.Boolean
+    ] = null,
+    resetOnException: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null
+  ): BlockUIConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoBlock)) __obj.updateDynamic("autoBlock")(autoBlock)
+    if (!js.isUndefined(autoInjectBodyBlock)) __obj.updateDynamic("autoInjectBodyBlock")(autoInjectBodyBlock)
+    if (!js.isUndefined(blockBrowserNavigation)) __obj.updateDynamic("blockBrowserNavigation")(blockBrowserNavigation)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (requestFilter != null) __obj.updateDynamic("requestFilter")(requestFilter)
+    if (!js.isUndefined(resetOnException)) __obj.updateDynamic("resetOnException")(resetOnException)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    __obj.asInstanceOf[BlockUIConfig]
+  }
+}
+

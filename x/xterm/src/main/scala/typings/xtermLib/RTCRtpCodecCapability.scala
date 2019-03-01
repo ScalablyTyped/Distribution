@@ -12,3 +12,20 @@ trait RTCRtpCodecCapability extends js.Object {
   var sdpFmtpLine: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RTCRtpCodecCapability {
+  @scala.inline
+  def apply(
+    clockRate: scala.Double,
+    mimeType: java.lang.String,
+    channels: scala.Int | scala.Double = null,
+    sdpFmtpLine: java.lang.String = null
+  ): RTCRtpCodecCapability = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clockRate")(clockRate)
+    __obj.updateDynamic("mimeType")(mimeType)
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (sdpFmtpLine != null) __obj.updateDynamic("sdpFmtpLine")(sdpFmtpLine)
+    __obj.asInstanceOf[RTCRtpCodecCapability]
+  }
+}
+

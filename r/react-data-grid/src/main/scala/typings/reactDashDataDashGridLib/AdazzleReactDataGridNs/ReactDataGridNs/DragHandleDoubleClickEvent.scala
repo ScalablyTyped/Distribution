@@ -28,3 +28,20 @@ trait DragHandleDoubleClickEvent[T] extends js.Object {
   var rowIdx: scala.Double
 }
 
+object DragHandleDoubleClickEvent {
+  @scala.inline
+  def apply[T](
+    e: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event],
+    idx: scala.Double,
+    rowData: T,
+    rowIdx: scala.Double
+  ): DragHandleDoubleClickEvent[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("e")(e)
+    __obj.updateDynamic("idx")(idx)
+    __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
+    __obj.updateDynamic("rowIdx")(rowIdx)
+    __obj.asInstanceOf[DragHandleDoubleClickEvent[T]]
+  }
+}
+

@@ -13,3 +13,22 @@ trait ResponseError
   var text: java.lang.String
 }
 
+object ResponseError {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    path: java.lang.String,
+    status: scala.Double,
+    text: java.lang.String,
+    stack: java.lang.String = null
+  ): ResponseError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("text")(text)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ResponseError]
+  }
+}
+

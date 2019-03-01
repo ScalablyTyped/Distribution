@@ -12,3 +12,20 @@ trait BeforeCopyExtraFilesOptions extends js.Object {
   var platformName: java.lang.String
 }
 
+object BeforeCopyExtraFilesOptions {
+  @scala.inline
+  def apply(
+    appOutDir: java.lang.String,
+    packager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformPackager<any> */ js.Any,
+    platformName: java.lang.String,
+    asarIntegrity: appDashBuilderDashLibLib.outAsarIntegrityMod.AsarIntegrity = null
+  ): BeforeCopyExtraFilesOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appOutDir")(appOutDir)
+    __obj.updateDynamic("packager")(packager)
+    __obj.updateDynamic("platformName")(platformName)
+    if (asarIntegrity != null) __obj.updateDynamic("asarIntegrity")(asarIntegrity)
+    __obj.asInstanceOf[BeforeCopyExtraFilesOptions]
+  }
+}
+

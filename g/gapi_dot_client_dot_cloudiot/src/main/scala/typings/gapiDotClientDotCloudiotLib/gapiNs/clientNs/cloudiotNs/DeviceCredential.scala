@@ -28,3 +28,13 @@ trait DeviceCredential extends js.Object {
   var publicKey: js.UndefOr[PublicKeyCredential] = js.undefined
 }
 
+object DeviceCredential {
+  @scala.inline
+  def apply(expirationTime: java.lang.String = null, publicKey: PublicKeyCredential = null): DeviceCredential = {
+    val __obj = js.Dynamic.literal()
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
+    __obj.asInstanceOf[DeviceCredential]
+  }
+}
+

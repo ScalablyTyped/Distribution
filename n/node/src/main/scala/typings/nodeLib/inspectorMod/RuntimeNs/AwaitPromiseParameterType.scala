@@ -20,3 +20,18 @@ trait AwaitPromiseParameterType extends js.Object {
   var returnByValue: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AwaitPromiseParameterType {
+  @scala.inline
+  def apply(
+    promiseObjectId: RemoteObjectId,
+    generatePreview: js.UndefOr[scala.Boolean] = js.undefined,
+    returnByValue: js.UndefOr[scala.Boolean] = js.undefined
+  ): AwaitPromiseParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("promiseObjectId")(promiseObjectId)
+    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
+    if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue)
+    __obj.asInstanceOf[AwaitPromiseParameterType]
+  }
+}
+

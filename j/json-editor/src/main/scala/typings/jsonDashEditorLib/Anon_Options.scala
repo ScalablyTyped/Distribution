@@ -9,3 +9,12 @@ trait Anon_Options extends js.Object {
   var options: JSONEditorObjectOptions
 }
 
+object Anon_Options {
+  @scala.inline
+  def apply(options: JSONEditorObjectOptions): Anon_Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[Anon_Options]
+  }
+}
+

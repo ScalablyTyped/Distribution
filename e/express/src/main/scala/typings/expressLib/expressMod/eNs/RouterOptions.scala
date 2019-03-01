@@ -24,3 +24,18 @@ trait RouterOptions extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RouterOptions {
+  @scala.inline
+  def apply(
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    mergeParams: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined
+  ): RouterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (!js.isUndefined(mergeParams)) __obj.updateDynamic("mergeParams")(mergeParams)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[RouterOptions]
+  }
+}
+

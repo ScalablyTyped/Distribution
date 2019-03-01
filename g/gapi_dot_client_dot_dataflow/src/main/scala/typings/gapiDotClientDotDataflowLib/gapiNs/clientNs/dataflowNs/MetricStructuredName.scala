@@ -24,3 +24,18 @@ trait MetricStructuredName extends js.Object {
   var origin: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MetricStructuredName {
+  @scala.inline
+  def apply(
+    context: stdLib.Record[java.lang.String, java.lang.String] = null,
+    name: java.lang.String = null,
+    origin: java.lang.String = null
+  ): MetricStructuredName = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    __obj.asInstanceOf[MetricStructuredName]
+  }
+}
+

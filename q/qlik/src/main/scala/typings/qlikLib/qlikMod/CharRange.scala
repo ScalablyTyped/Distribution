@@ -10,3 +10,13 @@ trait CharRange extends js.Object {
   var qCharPos: scala.Double
 }
 
+object CharRange {
+  @scala.inline
+  def apply(qCharCount: scala.Double, qCharPos: scala.Double): CharRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qCharCount")(qCharCount)
+    __obj.updateDynamic("qCharPos")(qCharPos)
+    __obj.asInstanceOf[CharRange]
+  }
+}
+

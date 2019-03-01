@@ -13,3 +13,21 @@ trait helpOption extends js.Object {
   var `type`: java.lang.String
 }
 
+object helpOption {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: java.lang.String,
+    description: java.lang.String = null,
+    example: java.lang.String = null,
+    short: java.lang.String = null
+  ): helpOption = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (example != null) __obj.updateDynamic("example")(example)
+    if (short != null) __obj.updateDynamic("short")(short)
+    __obj.asInstanceOf[helpOption]
+  }
+}
+

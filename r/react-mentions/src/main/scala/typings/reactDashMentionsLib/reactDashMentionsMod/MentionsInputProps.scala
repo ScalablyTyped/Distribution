@@ -46,3 +46,51 @@ trait MentionsInputProps extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MentionsInputProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[MentionProps]],
+    allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    displayTransform: DisplayTransformFunc = null,
+    inputRef: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLInputElement] = null,
+    markup: java.lang.String = null,
+    onBlur: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement] | reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLTextAreaElement], 
+      /* clickedSuggestion */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    onChange: OnChangeHandlerFunc = null,
+    onKeyDown: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement], 
+      scala.Unit
+    ] = null,
+    onSelect: js.Function1[/* event */ reactLib.reactMod.ReactNs.UIEvent[reactLib.Element], scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    regex: stdLib.RegExp = null,
+    singleLine: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.Any = null,
+    suggestionsPortalHost: reactLib.Element = null,
+    value: java.lang.String = null
+  ): MentionsInputProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowSpaceInQuery)) __obj.updateDynamic("allowSpaceInQuery")(allowSpaceInQuery)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (displayTransform != null) __obj.updateDynamic("displayTransform")(displayTransform)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (markup != null) __obj.updateDynamic("markup")(markup)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (suggestionsPortalHost != null) __obj.updateDynamic("suggestionsPortalHost")(suggestionsPortalHost)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[MentionsInputProps]
+  }
+}
+

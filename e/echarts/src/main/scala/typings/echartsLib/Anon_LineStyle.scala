@@ -20,3 +20,13 @@ trait Anon_LineStyle extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_LineStyle {
+  @scala.inline
+  def apply(lineStyle: Anon_ColorOpacityShadowBlur = null, show: js.UndefOr[scala.Boolean] = js.undefined): Anon_LineStyle = {
+    val __obj = js.Dynamic.literal()
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[Anon_LineStyle]
+  }
+}
+

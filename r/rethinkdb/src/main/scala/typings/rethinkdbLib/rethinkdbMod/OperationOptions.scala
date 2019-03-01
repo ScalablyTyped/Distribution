@@ -68,3 +68,40 @@ trait OperationOptions extends js.Object {
   var timeFormat: rethinkdbLib.rethinkdbLibStrings.native | rethinkdbLib.rethinkdbLibStrings.raw
 }
 
+object OperationOptions {
+  @scala.inline
+  def apply(
+    arrayLimit: scala.Double,
+    binaryFormat: rethinkdbLib.rethinkdbLibStrings.native | rethinkdbLib.rethinkdbLibStrings.raw,
+    db: java.lang.String,
+    durability: rethinkdbLib.rethinkdbLibStrings.hard | rethinkdbLib.rethinkdbLibStrings.soft,
+    firstBatchScaledownFactor: scala.Double,
+    groupFormat: rethinkdbLib.rethinkdbLibStrings.native | rethinkdbLib.rethinkdbLibStrings.raw,
+    maxBatchBytes: scala.Double,
+    maxBatchRows: scala.Double,
+    maxBatchSeconds: scala.Double,
+    minBatchRows: scala.Double,
+    noreply: scala.Boolean,
+    profile: scala.Boolean,
+    readMode: rethinkdbLib.rethinkdbLibStrings.single | rethinkdbLib.rethinkdbLibStrings.majority | rethinkdbLib.rethinkdbLibStrings.outdated,
+    timeFormat: rethinkdbLib.rethinkdbLibStrings.native | rethinkdbLib.rethinkdbLibStrings.raw
+  ): OperationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arrayLimit")(arrayLimit)
+    __obj.updateDynamic("binaryFormat")(binaryFormat.asInstanceOf[js.Any])
+    __obj.updateDynamic("db")(db)
+    __obj.updateDynamic("durability")(durability.asInstanceOf[js.Any])
+    __obj.updateDynamic("firstBatchScaledownFactor")(firstBatchScaledownFactor)
+    __obj.updateDynamic("groupFormat")(groupFormat.asInstanceOf[js.Any])
+    __obj.updateDynamic("maxBatchBytes")(maxBatchBytes)
+    __obj.updateDynamic("maxBatchRows")(maxBatchRows)
+    __obj.updateDynamic("maxBatchSeconds")(maxBatchSeconds)
+    __obj.updateDynamic("minBatchRows")(minBatchRows)
+    __obj.updateDynamic("noreply")(noreply)
+    __obj.updateDynamic("profile")(profile)
+    __obj.updateDynamic("readMode")(readMode.asInstanceOf[js.Any])
+    __obj.updateDynamic("timeFormat")(timeFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OperationOptions]
+  }
+}
+

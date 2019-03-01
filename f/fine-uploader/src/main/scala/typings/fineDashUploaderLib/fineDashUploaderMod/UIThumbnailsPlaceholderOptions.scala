@@ -29,3 +29,18 @@ trait UIThumbnailsPlaceholderOptions extends js.Object {
   var waitingPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UIThumbnailsPlaceholderOptions {
+  @scala.inline
+  def apply(
+    notAvailablePath: java.lang.String = null,
+    waitUntilResponse: js.UndefOr[scala.Boolean] = js.undefined,
+    waitingPath: java.lang.String = null
+  ): UIThumbnailsPlaceholderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (notAvailablePath != null) __obj.updateDynamic("notAvailablePath")(notAvailablePath)
+    if (!js.isUndefined(waitUntilResponse)) __obj.updateDynamic("waitUntilResponse")(waitUntilResponse)
+    if (waitingPath != null) __obj.updateDynamic("waitingPath")(waitingPath)
+    __obj.asInstanceOf[UIThumbnailsPlaceholderOptions]
+  }
+}
+

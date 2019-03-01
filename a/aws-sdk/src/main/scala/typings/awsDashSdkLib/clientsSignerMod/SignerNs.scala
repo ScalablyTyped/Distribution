@@ -760,6 +760,16 @@ object SignerNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[DescribeSigningJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _EncryptionAlgorithm extends js.Object
+  
+  trait _HashAlgorithm extends js.Object
+  
+  trait _SigningProfileStatus extends js.Object
+  
+  trait _SigningStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type BucketName = java.lang.String
   type Category = awsDashSdkLib.awsDashSdkLibStrings.AWSIoT | java.lang.String
@@ -769,9 +779,9 @@ object SignerNs extends js.Object {
   type CompletedAt = stdLib.Date
   type CreatedAt = stdLib.Date
   type DisplayName = java.lang.String
-  type EncryptionAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.RSA | awsDashSdkLib.awsDashSdkLibStrings.ECDSA | java.lang.String
+  type EncryptionAlgorithm = _EncryptionAlgorithm | java.lang.String
   type EncryptionAlgorithms = js.Array[EncryptionAlgorithm]
-  type HashAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.SHA1 | awsDashSdkLib.awsDashSdkLibStrings.SHA256 | java.lang.String
+  type HashAlgorithm = _HashAlgorithm | java.lang.String
   type HashAlgorithms = js.Array[HashAlgorithm]
   type ImageFormat = awsDashSdkLib.awsDashSdkLibStrings.JSON | java.lang.String
   type ImageFormats = js.Array[ImageFormat]
@@ -788,13 +798,13 @@ object SignerNs extends js.Object {
   type SigningParameterKey = java.lang.String
   type SigningParameterValue = java.lang.String
   type SigningPlatforms = js.Array[SigningPlatform]
-  type SigningProfileStatus = awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Canceled | java.lang.String
+  type SigningProfileStatus = _SigningProfileStatus | java.lang.String
   type SigningProfiles = js.Array[SigningProfile]
-  type SigningStatus = awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Succeeded | java.lang.String
+  type SigningStatus = _SigningStatus | java.lang.String
   type StatusReason = java.lang.String
   type String = java.lang.String
   type Version = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-08-25` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type bool = scala.Boolean
   type key = java.lang.String
 }

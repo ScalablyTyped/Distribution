@@ -56,3 +56,44 @@ trait Fields extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Fields {
+  @scala.inline
+  def apply(
+    child: js.Any = null,
+    dataSource: js.Any = null,
+    expanded: java.lang.String = null,
+    hasChild: java.lang.String = null,
+    htmlAttribute: js.Any = null,
+    id: java.lang.String = null,
+    imageAttribute: js.Any = null,
+    imageUrl: java.lang.String = null,
+    isChecked: java.lang.String = null,
+    linkAttribute: js.Any = null,
+    parentId: java.lang.String = null,
+    query: js.Any = null,
+    selected: java.lang.String = null,
+    spriteCssClass: java.lang.String = null,
+    tableName: java.lang.String = null,
+    text: java.lang.String = null
+  ): Fields = {
+    val __obj = js.Dynamic.literal()
+    if (child != null) __obj.updateDynamic("child")(child)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
+    if (hasChild != null) __obj.updateDynamic("hasChild")(hasChild)
+    if (htmlAttribute != null) __obj.updateDynamic("htmlAttribute")(htmlAttribute)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imageAttribute != null) __obj.updateDynamic("imageAttribute")(imageAttribute)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (isChecked != null) __obj.updateDynamic("isChecked")(isChecked)
+    if (linkAttribute != null) __obj.updateDynamic("linkAttribute")(linkAttribute)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass)
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Fields]
+  }
+}
+

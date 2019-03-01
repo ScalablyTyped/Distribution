@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object reactDashGeosuggestLibStrings {
   @js.native
-  sealed trait `(cities)` extends js.Object
+  sealed trait `(cities)`
+    extends reactDashGeosuggestLib.reactDashGeosuggestMod.QueryType
   
   @js.native
-  sealed trait `(regions)` extends js.Object
+  sealed trait `(regions)`
+    extends reactDashGeosuggestLib.reactDashGeosuggestMod.QueryType
   
   @js.native
-  sealed trait address extends js.Object
+  sealed trait address
+    extends reactDashGeosuggestLib.reactDashGeosuggestMod.QueryType
   
   @js.native
-  sealed trait establishment extends js.Object
+  sealed trait establishment
+    extends reactDashGeosuggestLib.reactDashGeosuggestMod.QueryType
   
   @js.native
-  sealed trait geocode extends js.Object
+  sealed trait geocode
+    extends reactDashGeosuggestLib.reactDashGeosuggestMod.QueryType
   
   @scala.inline
   def `(cities)`: `(cities)` = "(cities)".asInstanceOf[`(cities)`]

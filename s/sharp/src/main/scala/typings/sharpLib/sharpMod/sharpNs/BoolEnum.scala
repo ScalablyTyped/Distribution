@@ -11,3 +11,18 @@ trait BoolEnum extends js.Object {
   var or: sharpLib.sharpLibStrings.or
 }
 
+object BoolEnum {
+  @scala.inline
+  def apply(
+    and: sharpLib.sharpLibStrings.and,
+    eor: sharpLib.sharpLibStrings.eor,
+    or: sharpLib.sharpLibStrings.or
+  ): BoolEnum = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("eor")(eor)
+    __obj.updateDynamic("or")(or)
+    __obj.asInstanceOf[BoolEnum]
+  }
+}
+

@@ -35,3 +35,22 @@ trait TokenReview extends js.Object {
   val status: TokenReviewStatus
 }
 
+object TokenReview {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.TokenReview,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: TokenReviewSpec,
+    status: TokenReviewStatus
+  ): TokenReview = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[TokenReview]
+  }
+}
+

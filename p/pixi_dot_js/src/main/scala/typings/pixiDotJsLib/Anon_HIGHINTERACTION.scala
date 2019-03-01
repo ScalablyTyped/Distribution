@@ -13,3 +13,22 @@ trait Anon_HIGHINTERACTION extends js.Object {
   var UTILITY: scala.Double
 }
 
+object Anon_HIGHINTERACTION {
+  @scala.inline
+  def apply(
+    HIGH: scala.Double,
+    INTERACTION: scala.Double,
+    LOW: scala.Double,
+    NORMAL: scala.Double,
+    UTILITY: scala.Double
+  ): Anon_HIGHINTERACTION = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("HIGH")(HIGH)
+    __obj.updateDynamic("INTERACTION")(INTERACTION)
+    __obj.updateDynamic("LOW")(LOW)
+    __obj.updateDynamic("NORMAL")(NORMAL)
+    __obj.updateDynamic("UTILITY")(UTILITY)
+    __obj.asInstanceOf[Anon_HIGHINTERACTION]
+  }
+}
+

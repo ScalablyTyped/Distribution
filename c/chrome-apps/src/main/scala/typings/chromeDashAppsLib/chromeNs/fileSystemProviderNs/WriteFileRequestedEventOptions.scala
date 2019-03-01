@@ -15,3 +15,22 @@ trait WriteFileRequestedEventOptions
   var openRequestId: chromeDashAppsLib.chromeNs.integer
 }
 
+object WriteFileRequestedEventOptions {
+  @scala.inline
+  def apply(
+    data: stdLib.ArrayBuffer,
+    fileSystemId: java.lang.String,
+    offset: chromeDashAppsLib.chromeNs.integer,
+    openRequestId: chromeDashAppsLib.chromeNs.integer,
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): WriteFileRequestedEventOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("openRequestId")(openRequestId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.asInstanceOf[WriteFileRequestedEventOptions]
+  }
+}
+

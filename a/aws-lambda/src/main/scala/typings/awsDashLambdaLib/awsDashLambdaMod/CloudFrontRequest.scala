@@ -14,3 +14,24 @@ trait CloudFrontRequest extends js.Object {
   var uri: java.lang.String
 }
 
+object CloudFrontRequest {
+  @scala.inline
+  def apply(
+    clientIp: java.lang.String,
+    headers: CloudFrontHeaders,
+    method: java.lang.String,
+    querystring: java.lang.String,
+    uri: java.lang.String,
+    origin: CloudFrontOrigin = null
+  ): CloudFrontRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientIp")(clientIp)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("querystring")(querystring)
+    __obj.updateDynamic("uri")(uri)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    __obj.asInstanceOf[CloudFrontRequest]
+  }
+}
+

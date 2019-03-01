@@ -21,3 +21,14 @@ trait GiftCardOptions extends js.Object {
   var status: java.lang.String
 }
 
+object GiftCardOptions {
+  @scala.inline
+  def apply(order: java.lang.String, query: java.lang.String, status: java.lang.String): GiftCardOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[GiftCardOptions]
+  }
+}
+

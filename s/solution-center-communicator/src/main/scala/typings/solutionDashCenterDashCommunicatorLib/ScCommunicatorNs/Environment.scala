@@ -48,3 +48,32 @@ trait Environment extends js.Object {
   var USER_SERVICE_NEW: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Environment {
+  @scala.inline
+  def apply(
+    DOMAIN: java.lang.String,
+    NAME: java.lang.String,
+    URL: java.lang.String,
+    GOODDATA_SERVICE: java.lang.String = null,
+    MERCHANT_SERVICE: java.lang.String = null,
+    MODULE_SERVICE: java.lang.String = null,
+    PORT: java.lang.String = null,
+    TOKEN_SERVICE: java.lang.String = null,
+    USER_SERVICE: java.lang.String = null,
+    USER_SERVICE_NEW: java.lang.String = null
+  ): Environment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DOMAIN")(DOMAIN)
+    __obj.updateDynamic("NAME")(NAME)
+    __obj.updateDynamic("URL")(URL)
+    if (GOODDATA_SERVICE != null) __obj.updateDynamic("GOODDATA_SERVICE")(GOODDATA_SERVICE)
+    if (MERCHANT_SERVICE != null) __obj.updateDynamic("MERCHANT_SERVICE")(MERCHANT_SERVICE)
+    if (MODULE_SERVICE != null) __obj.updateDynamic("MODULE_SERVICE")(MODULE_SERVICE)
+    if (PORT != null) __obj.updateDynamic("PORT")(PORT)
+    if (TOKEN_SERVICE != null) __obj.updateDynamic("TOKEN_SERVICE")(TOKEN_SERVICE)
+    if (USER_SERVICE != null) __obj.updateDynamic("USER_SERVICE")(USER_SERVICE)
+    if (USER_SERVICE_NEW != null) __obj.updateDynamic("USER_SERVICE_NEW")(USER_SERVICE_NEW)
+    __obj.asInstanceOf[Environment]
+  }
+}
+

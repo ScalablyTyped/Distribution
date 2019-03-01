@@ -9,3 +9,12 @@ trait Anon_ModalDialog extends js.Object {
   val ModalDialogNs: js.Any
 }
 
+object Anon_ModalDialog {
+  @scala.inline
+  def apply(ModalDialogNs: js.Any): Anon_ModalDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ModalDialogNs")(ModalDialogNs)
+    __obj.asInstanceOf[Anon_ModalDialog]
+  }
+}
+

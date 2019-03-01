@@ -28,3 +28,32 @@ trait Region extends js.Object {
   var zones: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Region {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    deprecated: DeprecationStatus = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    quotas: js.Array[Quota] = null,
+    selfLink: java.lang.String = null,
+    status: java.lang.String = null,
+    zones: js.Array[java.lang.String] = null
+  ): Region = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (quotas != null) __obj.updateDynamic("quotas")(quotas)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (zones != null) __obj.updateDynamic("zones")(zones)
+    __obj.asInstanceOf[Region]
+  }
+}
+

@@ -12,3 +12,13 @@ trait AccountPermissionGroupsListResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccountPermissionGroupsListResponse {
+  @scala.inline
+  def apply(accountPermissionGroups: js.Array[AccountPermissionGroup] = null, kind: java.lang.String = null): AccountPermissionGroupsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (accountPermissionGroups != null) __obj.updateDynamic("accountPermissionGroups")(accountPermissionGroups)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[AccountPermissionGroupsListResponse]
+  }
+}
+

@@ -391,3 +391,140 @@ trait SchedulerTemplates extends js.Object {
   def year_tooltip(start: stdLib.Date, end: stdLib.Date, event: js.Any): java.lang.String
 }
 
+object SchedulerTemplates {
+  @scala.inline
+  def apply(
+    agenda_date: js.Function2[stdLib.Date, stdLib.Date, java.lang.String],
+    agenda_text: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    agenda_time: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    api_date: js.Function1[stdLib.Date, java.lang.String],
+    calendar_date: js.Function1[stdLib.Date, java.lang.String],
+    calendar_month: js.Function1[stdLib.Date, java.lang.String],
+    calendar_scale_date: js.Function1[stdLib.Date, java.lang.String],
+    calendar_time: js.Function1[stdLib.Date, java.lang.String],
+    day_date: js.Function1[stdLib.Date, java.lang.String],
+    day_scale_date: js.Function1[stdLib.Date, java.lang.String],
+    drag_marker_class: js.Function3[stdLib.Date, stdLib.Date, js.Any, scala.Unit],
+    drag_marker_content: js.Function3[stdLib.Date, stdLib.Date, js.Any, scala.Unit],
+    event_bar_date: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    event_bar_text: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    event_class: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    event_date: js.Function1[stdLib.Date, java.lang.String],
+    event_header: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    event_text: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    grid_date: js.Function2[stdLib.Date, stdLib.Date, java.lang.String],
+    grid_field: js.Function2[java.lang.String, js.Any, java.lang.String],
+    grid_full_date: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    grid_single_date: js.Function1[stdLib.Date, java.lang.String],
+    hour_scale: js.Function1[stdLib.Date, java.lang.String],
+    lightbox_header: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    load_format: js.Function1[stdLib.Date, java.lang.String],
+    map_date: js.Function2[stdLib.Date, stdLib.Date, java.lang.String],
+    map_text: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    map_time: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    marker_date: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    marker_text: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    month_date: js.Function1[stdLib.Date, java.lang.String],
+    month_date_class: js.Function1[stdLib.Date, java.lang.String],
+    month_day: js.Function1[stdLib.Date, java.lang.String],
+    month_events_link: js.Function2[stdLib.Date, scala.Double, java.lang.String],
+    month_scale_date: js.Function1[stdLib.Date, java.lang.String],
+    quick_info_content: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    quick_info_date: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    quick_info_title: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    time_picker: js.Function0[java.lang.String],
+    timeline_cell_class: js.Function3[js.Array[_], stdLib.Date, js.Any, java.lang.String],
+    timeline_cell_value: js.Function2[js.Array[_], stdLib.Date, java.lang.String],
+    timeline_date: js.Function2[stdLib.Date, stdLib.Date, java.lang.String],
+    timeline_scale_date: js.Function1[stdLib.Date, java.lang.String],
+    timeline_scale_label: js.Function3[java.lang.String, java.lang.String, js.Any, java.lang.String],
+    timeline_scalex_class: js.Function1[stdLib.Date, java.lang.String],
+    timeline_scaley_class: js.Function3[java.lang.String, java.lang.String, js.Any, java.lang.String],
+    timeline_second_scale_date: js.Function1[stdLib.Date, java.lang.String],
+    timeline_second_scalex_class: js.Function1[stdLib.Date, java.lang.String],
+    timeline_tooltip: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    tooltip_date_format: js.Function1[stdLib.Date, java.lang.String],
+    tooltip_text: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    units_date: js.Function1[stdLib.Date, java.lang.String],
+    units_scale_text: js.Function3[java.lang.String, java.lang.String, js.Any, java.lang.String],
+    week_agenda_event_text: js.Function5[stdLib.Date, stdLib.Date, js.Any, stdLib.Date, java.lang.String, java.lang.String],
+    week_agenda_scale_date: js.Function1[stdLib.Date, java.lang.String],
+    week_date: js.Function2[stdLib.Date, stdLib.Date, java.lang.String],
+    week_date_class: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String],
+    week_scale_date: js.Function1[stdLib.Date, java.lang.String],
+    xml_date: js.Function1[stdLib.Date, stdLib.Date],
+    xml_format: js.Function1[stdLib.Date, java.lang.String],
+    year_date: js.Function1[stdLib.Date, java.lang.String],
+    year_month: js.Function1[stdLib.Date, java.lang.String],
+    year_scale_date: js.Function1[stdLib.Date, java.lang.String],
+    year_tooltip: js.Function3[stdLib.Date, stdLib.Date, js.Any, java.lang.String]
+  ): SchedulerTemplates = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("agenda_date")(agenda_date)
+    __obj.updateDynamic("agenda_text")(agenda_text)
+    __obj.updateDynamic("agenda_time")(agenda_time)
+    __obj.updateDynamic("api_date")(api_date)
+    __obj.updateDynamic("calendar_date")(calendar_date)
+    __obj.updateDynamic("calendar_month")(calendar_month)
+    __obj.updateDynamic("calendar_scale_date")(calendar_scale_date)
+    __obj.updateDynamic("calendar_time")(calendar_time)
+    __obj.updateDynamic("day_date")(day_date)
+    __obj.updateDynamic("day_scale_date")(day_scale_date)
+    __obj.updateDynamic("drag_marker_class")(drag_marker_class)
+    __obj.updateDynamic("drag_marker_content")(drag_marker_content)
+    __obj.updateDynamic("event_bar_date")(event_bar_date)
+    __obj.updateDynamic("event_bar_text")(event_bar_text)
+    __obj.updateDynamic("event_class")(event_class)
+    __obj.updateDynamic("event_date")(event_date)
+    __obj.updateDynamic("event_header")(event_header)
+    __obj.updateDynamic("event_text")(event_text)
+    __obj.updateDynamic("grid_date")(grid_date)
+    __obj.updateDynamic("grid_field")(grid_field)
+    __obj.updateDynamic("grid_full_date")(grid_full_date)
+    __obj.updateDynamic("grid_single_date")(grid_single_date)
+    __obj.updateDynamic("hour_scale")(hour_scale)
+    __obj.updateDynamic("lightbox_header")(lightbox_header)
+    __obj.updateDynamic("load_format")(load_format)
+    __obj.updateDynamic("map_date")(map_date)
+    __obj.updateDynamic("map_text")(map_text)
+    __obj.updateDynamic("map_time")(map_time)
+    __obj.updateDynamic("marker_date")(marker_date)
+    __obj.updateDynamic("marker_text")(marker_text)
+    __obj.updateDynamic("month_date")(month_date)
+    __obj.updateDynamic("month_date_class")(month_date_class)
+    __obj.updateDynamic("month_day")(month_day)
+    __obj.updateDynamic("month_events_link")(month_events_link)
+    __obj.updateDynamic("month_scale_date")(month_scale_date)
+    __obj.updateDynamic("quick_info_content")(quick_info_content)
+    __obj.updateDynamic("quick_info_date")(quick_info_date)
+    __obj.updateDynamic("quick_info_title")(quick_info_title)
+    __obj.updateDynamic("time_picker")(time_picker)
+    __obj.updateDynamic("timeline_cell_class")(timeline_cell_class)
+    __obj.updateDynamic("timeline_cell_value")(timeline_cell_value)
+    __obj.updateDynamic("timeline_date")(timeline_date)
+    __obj.updateDynamic("timeline_scale_date")(timeline_scale_date)
+    __obj.updateDynamic("timeline_scale_label")(timeline_scale_label)
+    __obj.updateDynamic("timeline_scalex_class")(timeline_scalex_class)
+    __obj.updateDynamic("timeline_scaley_class")(timeline_scaley_class)
+    __obj.updateDynamic("timeline_second_scale_date")(timeline_second_scale_date)
+    __obj.updateDynamic("timeline_second_scalex_class")(timeline_second_scalex_class)
+    __obj.updateDynamic("timeline_tooltip")(timeline_tooltip)
+    __obj.updateDynamic("tooltip_date_format")(tooltip_date_format)
+    __obj.updateDynamic("tooltip_text")(tooltip_text)
+    __obj.updateDynamic("units_date")(units_date)
+    __obj.updateDynamic("units_scale_text")(units_scale_text)
+    __obj.updateDynamic("week_agenda_event_text")(week_agenda_event_text)
+    __obj.updateDynamic("week_agenda_scale_date")(week_agenda_scale_date)
+    __obj.updateDynamic("week_date")(week_date)
+    __obj.updateDynamic("week_date_class")(week_date_class)
+    __obj.updateDynamic("week_scale_date")(week_scale_date)
+    __obj.updateDynamic("xml_date")(xml_date)
+    __obj.updateDynamic("xml_format")(xml_format)
+    __obj.updateDynamic("year_date")(year_date)
+    __obj.updateDynamic("year_month")(year_month)
+    __obj.updateDynamic("year_scale_date")(year_scale_date)
+    __obj.updateDynamic("year_tooltip")(year_tooltip)
+    __obj.asInstanceOf[SchedulerTemplates]
+  }
+}
+

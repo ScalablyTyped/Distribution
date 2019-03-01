@@ -10,3 +10,13 @@ trait IObserverTree extends js.Object {
   var observers: js.UndefOr[js.Array[IObserverTree]] = js.undefined
 }
 
+object IObserverTree {
+  @scala.inline
+  def apply(name: java.lang.String, observers: js.Array[IObserverTree] = null): IObserverTree = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (observers != null) __obj.updateDynamic("observers")(observers)
+    __obj.asInstanceOf[IObserverTree]
+  }
+}
+

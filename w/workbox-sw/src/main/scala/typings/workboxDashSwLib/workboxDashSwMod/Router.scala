@@ -46,3 +46,25 @@ trait Router extends js.Object {
   def unregisterRoute(route: Route): scala.Unit
 }
 
+object Router {
+  @scala.inline
+  def apply(
+    handleRequest: js.Function1[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any, 
+      js.UndefOr[js.Promise[stdLib.Response]]
+    ],
+    registerRoute: js.Function1[Route, scala.Unit],
+    setCatchHandler: js.Function1[workboxDashSwLib.HandlerCallback, scala.Unit],
+    setDefaultHandler: js.Function1[workboxDashSwLib.HandlerCallback, scala.Unit],
+    unregisterRoute: js.Function1[Route, scala.Unit]
+  ): Router = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handleRequest")(handleRequest)
+    __obj.updateDynamic("registerRoute")(registerRoute)
+    __obj.updateDynamic("setCatchHandler")(setCatchHandler)
+    __obj.updateDynamic("setDefaultHandler")(setDefaultHandler)
+    __obj.updateDynamic("unregisterRoute")(unregisterRoute)
+    __obj.asInstanceOf[Router]
+  }
+}
+

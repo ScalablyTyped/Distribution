@@ -12,3 +12,12 @@ trait MovingDialogDraggedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object MovingDialogDraggedEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null): MovingDialogDraggedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[MovingDialogDraggedEventUIParam]
+  }
+}
+

@@ -27,3 +27,20 @@ trait UserLoginProfileArgs extends js.Object {
   val user: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object UserLoginProfileArgs {
+  @scala.inline
+  def apply(
+    pgpKey: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    user: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    passwordLength: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    passwordResetRequired: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): UserLoginProfileArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
+    __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (passwordLength != null) __obj.updateDynamic("passwordLength")(passwordLength.asInstanceOf[js.Any])
+    if (passwordResetRequired != null) __obj.updateDynamic("passwordResetRequired")(passwordResetRequired.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserLoginProfileArgs]
+  }
+}
+

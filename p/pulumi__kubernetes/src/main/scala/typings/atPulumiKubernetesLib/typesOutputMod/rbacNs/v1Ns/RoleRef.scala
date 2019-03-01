@@ -23,3 +23,14 @@ trait RoleRef extends js.Object {
   val name: java.lang.String
 }
 
+object RoleRef {
+  @scala.inline
+  def apply(apiGroup: java.lang.String, kind: java.lang.String, name: java.lang.String): RoleRef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiGroup")(apiGroup)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[RoleRef]
+  }
+}
+

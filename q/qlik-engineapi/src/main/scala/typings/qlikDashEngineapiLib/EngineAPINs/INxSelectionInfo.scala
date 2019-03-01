@@ -21,3 +21,13 @@ trait INxSelectionInfo extends js.Object {
   var qMadeSelections: scala.Boolean
 }
 
+object INxSelectionInfo {
+  @scala.inline
+  def apply(qInSelections: scala.Boolean, qMadeSelections: scala.Boolean): INxSelectionInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qInSelections")(qInSelections)
+    __obj.updateDynamic("qMadeSelections")(qMadeSelections)
+    __obj.asInstanceOf[INxSelectionInfo]
+  }
+}
+

@@ -18,3 +18,24 @@ trait Sheet2JSONOpts extends DateNFOption {
   var raw: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Sheet2JSONOpts {
+  @scala.inline
+  def apply(
+    blankrows: js.UndefOr[scala.Boolean] = js.undefined,
+    dateNF: NumberFormat = null,
+    defval: js.Any = null,
+    header: xlsxLib.xlsxLibStrings.A | scala.Double | js.Array[java.lang.String] = null,
+    range: js.Any = null,
+    raw: js.UndefOr[scala.Boolean] = js.undefined
+  ): Sheet2JSONOpts = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(blankrows)) __obj.updateDynamic("blankrows")(blankrows)
+    if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF.asInstanceOf[js.Any])
+    if (defval != null) __obj.updateDynamic("defval")(defval)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[Sheet2JSONOpts]
+  }
+}
+

@@ -26,3 +26,40 @@ trait Service extends js.Object {
   var unpack: buildInConverter
 }
 
+object Service {
+  @scala.inline
+  def apply(
+    balance: nodeDashRalLib.nodeDashRalLibStrings.random | nodeDashRalLib.nodeDashRalLibStrings.roundrobin | nodeDashRalLib.nodeDashRalLibStrings.hashring,
+    pack: buildInConverter,
+    protocol: nodeDashRalLib.nodeDashRalLibStrings.http | nodeDashRalLib.nodeDashRalLibStrings.https | nodeDashRalLib.nodeDashRalLibStrings.soap | nodeDashRalLib.nodeDashRalLibStrings.redis,
+    server: js.Array[Server],
+    unpack: buildInConverter,
+    data: js.Any = null,
+    encoding: nodeDashRalLib.nodeDashRalLibStrings.`utf-8` | nodeDashRalLib.nodeDashRalLibStrings.GBK = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double] = null,
+    hybird: js.UndefOr[scala.Boolean] = js.undefined,
+    method: nodeDashRalLib.nodeDashRalLibStrings.GET | nodeDashRalLib.nodeDashRalLibStrings.POST = null,
+    path: java.lang.String = null,
+    query: js.Any = null,
+    retry: scala.Int | scala.Double = null,
+    timeout: scala.Int | scala.Double = null
+  ): Service = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
+    __obj.updateDynamic("pack")(pack)
+    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    __obj.updateDynamic("server")(server)
+    __obj.updateDynamic("unpack")(unpack)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(hybird)) __obj.updateDynamic("hybird")(hybird)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Service]
+  }
+}
+

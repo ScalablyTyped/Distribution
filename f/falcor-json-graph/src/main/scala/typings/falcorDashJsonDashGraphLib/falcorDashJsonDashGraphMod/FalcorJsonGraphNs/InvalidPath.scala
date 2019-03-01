@@ -10,3 +10,13 @@ trait InvalidPath extends js.Object {
   var path: PathSet
 }
 
+object InvalidPath {
+  @scala.inline
+  def apply(invalidate: scala.Boolean, path: PathSet): InvalidPath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("invalidate")(invalidate)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[InvalidPath]
+  }
+}
+

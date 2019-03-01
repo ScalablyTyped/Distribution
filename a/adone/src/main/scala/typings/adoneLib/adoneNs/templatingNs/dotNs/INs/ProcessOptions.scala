@@ -12,3 +12,20 @@ trait ProcessOptions extends js.Object {
   var templateSettings: js.UndefOr[stdLib.Partial[TemplateSettings]] = js.undefined
 }
 
+object ProcessOptions {
+  @scala.inline
+  def apply(
+    destination: java.lang.String = null,
+    global: java.lang.String = null,
+    path: java.lang.String = null,
+    templateSettings: stdLib.Partial[TemplateSettings] = null
+  ): ProcessOptions = {
+    val __obj = js.Dynamic.literal()
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (global != null) __obj.updateDynamic("global")(global)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (templateSettings != null) __obj.updateDynamic("templateSettings")(templateSettings)
+    __obj.asInstanceOf[ProcessOptions]
+  }
+}
+

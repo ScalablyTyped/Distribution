@@ -17,3 +17,30 @@ trait Anon_BaselineDate extends js.Object {
   var start: js.UndefOr[Anon_AutoConverter] = js.undefined
 }
 
+object Anon_BaselineDate {
+  @scala.inline
+  def apply(
+    baselineDate: Anon_AutoConverter = null,
+    baselineEnd: Anon_AutoConverter = null,
+    baselineStart: Anon_AutoConverter = null,
+    date: Anon_AutoConverter = null,
+    end: Anon_AutoConverter = null,
+    label: Anon_AutoOffTooltipDisplayTooltipLabel = null,
+    progress: Anon_AutoConverterOff = null,
+    row: Anon_AutoOffTooltipDisplayTooltipLabel = null,
+    start: Anon_AutoConverter = null
+  ): Anon_BaselineDate = {
+    val __obj = js.Dynamic.literal()
+    if (baselineDate != null) __obj.updateDynamic("baselineDate")(baselineDate)
+    if (baselineEnd != null) __obj.updateDynamic("baselineEnd")(baselineEnd)
+    if (baselineStart != null) __obj.updateDynamic("baselineStart")(baselineStart)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Anon_BaselineDate]
+  }
+}
+

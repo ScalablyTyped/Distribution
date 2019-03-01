@@ -128,3 +128,94 @@ trait ListItem
   def setSelectedSubtitleColor(selectedSubtitleColor: java.lang.String): scala.Unit
 }
 
+object ListItem {
+  @scala.inline
+  def apply(
+    accessoryType: scala.Double,
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    backgroundColor: java.lang.String,
+    backgroundGradient: titaniumLib.Gradient,
+    backgroundImage: java.lang.String,
+    bubbleParent: scala.Boolean,
+    canEdit: scala.Boolean,
+    canInsert: scala.Boolean,
+    canMove: scala.Boolean,
+    color: java.lang.String,
+    editActions: js.Array[titaniumLib.RowActionType],
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    font: titaniumLib.Font,
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getEditActions: js.Function0[js.Array[titaniumLib.RowActionType]],
+    getSelectedColor: js.Function0[java.lang.String],
+    getSelectedSubtitleColor: js.Function0[java.lang.String],
+    height: scala.Double | java.lang.String,
+    image: java.lang.String,
+    itemId: java.lang.String,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    searchableText: java.lang.String,
+    selectedBackgroundColor: java.lang.String,
+    selectedBackgroundGradient: titaniumLib.Gradient,
+    selectedBackgroundImage: java.lang.String,
+    selectedColor: java.lang.String,
+    selectedSubtitleColor: java.lang.String,
+    selectionStyle: scala.Double,
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setEditActions: js.Function1[js.Array[titaniumLib.RowActionType], scala.Unit],
+    setSelectedColor: js.Function1[java.lang.String, scala.Unit],
+    setSelectedSubtitleColor: js.Function1[java.lang.String, scala.Unit],
+    subtitle: java.lang.String,
+    subtitleColor: java.lang.String,
+    title: java.lang.String,
+    getLifecycleContainer: js.Function0[Window | TabGroup] = null,
+    lifecycleContainer: Window | TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ TabGroup, scala.Unit]) = null
+  ): ListItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessoryType")(accessoryType)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("backgroundGradient")(backgroundGradient)
+    __obj.updateDynamic("backgroundImage")(backgroundImage)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("canEdit")(canEdit)
+    __obj.updateDynamic("canInsert")(canInsert)
+    __obj.updateDynamic("canMove")(canMove)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("editActions")(editActions)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("font")(font)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getEditActions")(getEditActions)
+    __obj.updateDynamic("getSelectedColor")(getSelectedColor)
+    __obj.updateDynamic("getSelectedSubtitleColor")(getSelectedSubtitleColor)
+    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("itemId")(itemId)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("searchableText")(searchableText)
+    __obj.updateDynamic("selectedBackgroundColor")(selectedBackgroundColor)
+    __obj.updateDynamic("selectedBackgroundGradient")(selectedBackgroundGradient)
+    __obj.updateDynamic("selectedBackgroundImage")(selectedBackgroundImage)
+    __obj.updateDynamic("selectedColor")(selectedColor)
+    __obj.updateDynamic("selectedSubtitleColor")(selectedSubtitleColor)
+    __obj.updateDynamic("selectionStyle")(selectionStyle)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("setEditActions")(setEditActions)
+    __obj.updateDynamic("setSelectedColor")(setSelectedColor)
+    __obj.updateDynamic("setSelectedSubtitleColor")(setSelectedSubtitleColor)
+    __obj.updateDynamic("subtitle")(subtitle)
+    __obj.updateDynamic("subtitleColor")(subtitleColor)
+    __obj.updateDynamic("title")(title)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[ListItem]
+  }
+}
+

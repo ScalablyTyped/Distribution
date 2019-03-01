@@ -21,3 +21,36 @@ trait DateFormatMasks extends js.Object {
   var shortTime: java.lang.String
 }
 
+object DateFormatMasks {
+  @scala.inline
+  def apply(
+    default: java.lang.String,
+    fullDate: java.lang.String,
+    isoDate: java.lang.String,
+    isoDateTime: java.lang.String,
+    isoTime: java.lang.String,
+    isoUtcDateTime: java.lang.String,
+    longDate: java.lang.String,
+    longTime: java.lang.String,
+    mediumDate: java.lang.String,
+    mediumTime: java.lang.String,
+    shortDate: java.lang.String,
+    shortTime: java.lang.String
+  ): DateFormatMasks = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("default")(default)
+    __obj.updateDynamic("fullDate")(fullDate)
+    __obj.updateDynamic("isoDate")(isoDate)
+    __obj.updateDynamic("isoDateTime")(isoDateTime)
+    __obj.updateDynamic("isoTime")(isoTime)
+    __obj.updateDynamic("isoUtcDateTime")(isoUtcDateTime)
+    __obj.updateDynamic("longDate")(longDate)
+    __obj.updateDynamic("longTime")(longTime)
+    __obj.updateDynamic("mediumDate")(mediumDate)
+    __obj.updateDynamic("mediumTime")(mediumTime)
+    __obj.updateDynamic("shortDate")(shortDate)
+    __obj.updateDynamic("shortTime")(shortTime)
+    __obj.asInstanceOf[DateFormatMasks]
+  }
+}
+

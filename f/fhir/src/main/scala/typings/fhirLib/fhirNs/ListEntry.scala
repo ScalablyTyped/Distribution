@@ -35,3 +35,36 @@ trait ListEntry extends BackboneElement {
   var item: Reference
 }
 
+object ListEntry {
+  @scala.inline
+  def apply(
+    item: Reference,
+    _date: Element = null,
+    _deleted: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    date: dateTime = null,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    flag: CodeableConcept = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null
+  ): ListEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("item")(item)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_deleted != null) __obj.updateDynamic("_deleted")(_deleted)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (flag != null) __obj.updateDynamic("flag")(flag)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    __obj.asInstanceOf[ListEntry]
+  }
+}
+

@@ -53,3 +53,54 @@ trait Anon_AltDownload extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltDownload {
+  @scala.inline
+  def apply(
+    q: java.lang.String,
+    alt: java.lang.String = null,
+    download: java.lang.String = null,
+    fields: java.lang.String = null,
+    filter: java.lang.String = null,
+    key: java.lang.String = null,
+    langRestrict: java.lang.String = null,
+    libraryRestrict: java.lang.String = null,
+    maxAllowedMaturityRating: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    orderBy: java.lang.String = null,
+    partner: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    printType: java.lang.String = null,
+    projection: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    showPreorders: js.UndefOr[scala.Boolean] = js.undefined,
+    source: java.lang.String = null,
+    startIndex: scala.Int | scala.Double = null,
+    userIp: java.lang.String = null
+  ): Anon_AltDownload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("q")(q)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (download != null) __obj.updateDynamic("download")(download)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (langRestrict != null) __obj.updateDynamic("langRestrict")(langRestrict)
+    if (libraryRestrict != null) __obj.updateDynamic("libraryRestrict")(libraryRestrict)
+    if (maxAllowedMaturityRating != null) __obj.updateDynamic("maxAllowedMaturityRating")(maxAllowedMaturityRating)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (partner != null) __obj.updateDynamic("partner")(partner)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (printType != null) __obj.updateDynamic("printType")(printType)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (!js.isUndefined(showPreorders)) __obj.updateDynamic("showPreorders")(showPreorders)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltDownload]
+  }
+}
+

@@ -23,3 +23,18 @@ trait Blob extends js.Object {
   def toUint8Array(): stdLib.Uint8Array
 }
 
+object Blob {
+  @scala.inline
+  def apply(
+    isEqual: js.Function1[Blob, scala.Boolean],
+    toBase64: js.Function0[java.lang.String],
+    toUint8Array: js.Function0[stdLib.Uint8Array]
+  ): Blob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isEqual")(isEqual)
+    __obj.updateDynamic("toBase64")(toBase64)
+    __obj.updateDynamic("toUint8Array")(toUint8Array)
+    __obj.asInstanceOf[Blob]
+  }
+}
+

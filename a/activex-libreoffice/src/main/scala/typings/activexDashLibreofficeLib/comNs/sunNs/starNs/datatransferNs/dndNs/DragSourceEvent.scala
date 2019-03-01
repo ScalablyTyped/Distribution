@@ -24,3 +24,18 @@ trait DragSourceEvent
   var DragSourceContext: XDragSourceContext
 }
 
+object DragSourceEvent {
+  @scala.inline
+  def apply(
+    DragSource: XDragSource,
+    DragSourceContext: XDragSourceContext,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): DragSourceEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DragSource")(DragSource)
+    __obj.updateDynamic("DragSourceContext")(DragSourceContext)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[DragSourceEvent]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when participant left the chat room
 		*/
-trait ChatRoomParticipantExit extends js.Object {
+trait ChatRoomParticipantExit
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User id
   			*/
@@ -17,5 +18,15 @@ trait ChatRoomParticipantExit extends js.Object {
   			* Room id
   			*/
   var room: java.lang.String
+}
+
+object ChatRoomParticipantExit {
+  @scala.inline
+  def apply(participant: java.lang.String, room: java.lang.String): ChatRoomParticipantExit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("participant")(participant)
+    __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[ChatRoomParticipantExit]
+  }
 }
 

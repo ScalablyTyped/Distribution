@@ -124,3 +124,48 @@ trait Settings extends js.Object {
   ] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    disable: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledColumns: js.Array[scala.Double] = null,
+    dragCursor: java.lang.String = null,
+    draggingClass: java.lang.String = null,
+    fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    flush: js.UndefOr[scala.Boolean] = js.undefined,
+    gripInnerHtml: java.lang.String = null,
+    headerOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    hoverCursor: java.lang.String = null,
+    liveDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    marginLeft: java.lang.String = null,
+    marginRight: java.lang.String = null,
+    minWidth: scala.Int | scala.Double = null,
+    onDrag: FunctionCallback = null,
+    onResize: FunctionCallback = null,
+    partialRefresh: js.UndefOr[scala.Boolean] = js.undefined,
+    postbackSafe: js.UndefOr[scala.Boolean] = js.undefined,
+    resizeMode: colresizableLib.colresizableLibStrings.fit | colresizableLib.colresizableLibStrings.flex | colresizableLib.colresizableLibStrings.overflow = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (disabledColumns != null) __obj.updateDynamic("disabledColumns")(disabledColumns)
+    if (dragCursor != null) __obj.updateDynamic("dragCursor")(dragCursor)
+    if (draggingClass != null) __obj.updateDynamic("draggingClass")(draggingClass)
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (!js.isUndefined(flush)) __obj.updateDynamic("flush")(flush)
+    if (gripInnerHtml != null) __obj.updateDynamic("gripInnerHtml")(gripInnerHtml)
+    if (!js.isUndefined(headerOnly)) __obj.updateDynamic("headerOnly")(headerOnly)
+    if (hoverCursor != null) __obj.updateDynamic("hoverCursor")(hoverCursor)
+    if (!js.isUndefined(liveDrag)) __obj.updateDynamic("liveDrag")(liveDrag)
+    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft)
+    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight)
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
+    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
+    if (!js.isUndefined(partialRefresh)) __obj.updateDynamic("partialRefresh")(partialRefresh)
+    if (!js.isUndefined(postbackSafe)) __obj.updateDynamic("postbackSafe")(postbackSafe)
+    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Settings]
+  }
+}
+

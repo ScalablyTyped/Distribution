@@ -26,3 +26,20 @@ trait ASPxClientTreeListBatchEditStartEditingEventArgs extends ASPxClientCancelE
   var nodeValues: js.Object
 }
 
+object ASPxClientTreeListBatchEditStartEditingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    focusedColumn: ASPxClientTreeListColumn,
+    nodeKey: java.lang.String,
+    nodeValues: js.Object
+  ): ASPxClientTreeListBatchEditStartEditingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("focusedColumn")(focusedColumn)
+    __obj.updateDynamic("nodeKey")(nodeKey)
+    __obj.updateDynamic("nodeValues")(nodeValues)
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditStartEditingEventArgs]
+  }
+}
+

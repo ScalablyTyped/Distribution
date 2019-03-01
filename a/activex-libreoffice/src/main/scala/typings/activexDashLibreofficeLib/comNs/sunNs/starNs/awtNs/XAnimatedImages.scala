@@ -70,3 +70,54 @@ trait XAnimatedImages
   ): scala.Unit
 }
 
+object XAnimatedImages {
+  @scala.inline
+  def apply(
+    AutoRepeat: scala.Boolean,
+    ImageSetCount: scala.Double,
+    ScaleMode: scala.Double,
+    StepTime: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    getImageSet: js.Function1[scala.Double, activexDashInteropLib.SafeArray[java.lang.String]],
+    getImageSetCount: js.Function0[scala.Double],
+    insertImageSet: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    removeImageSet: js.Function1[scala.Double, scala.Unit],
+    replaceImageSet: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      scala.Unit
+    ]
+  ): XAnimatedImages = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoRepeat")(AutoRepeat)
+    __obj.updateDynamic("ImageSetCount")(ImageSetCount)
+    __obj.updateDynamic("ScaleMode")(ScaleMode)
+    __obj.updateDynamic("StepTime")(StepTime)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addContainerListener")(addContainerListener)
+    __obj.updateDynamic("getImageSet")(getImageSet)
+    __obj.updateDynamic("getImageSetCount")(getImageSetCount)
+    __obj.updateDynamic("insertImageSet")(insertImageSet)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
+    __obj.updateDynamic("removeImageSet")(removeImageSet)
+    __obj.updateDynamic("replaceImageSet")(replaceImageSet)
+    __obj.asInstanceOf[XAnimatedImages]
+  }
+}
+

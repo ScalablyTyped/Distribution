@@ -10,3 +10,16 @@ trait Options extends js.Object {
   var output: js.UndefOr[powerDashAssertDashFormatterLib.powerAssertFormatterNs.Options] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    assertion: empowerLib.empowerMod.empowerNs.Options = null,
+    output: powerDashAssertDashFormatterLib.powerAssertFormatterNs.Options = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (assertion != null) __obj.updateDynamic("assertion")(assertion)
+    if (output != null) __obj.updateDynamic("output")(output)
+    __obj.asInstanceOf[Options]
+  }
+}
+

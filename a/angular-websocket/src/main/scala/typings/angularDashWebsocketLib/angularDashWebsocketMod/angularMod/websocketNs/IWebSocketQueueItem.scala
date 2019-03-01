@@ -11,3 +11,13 @@ trait IWebSocketQueueItem extends js.Object {
   var message: js.Any
 }
 
+object IWebSocketQueueItem {
+  @scala.inline
+  def apply(defered: angularLib.angularMod.angularNs.IPromise[scala.Unit], message: js.Any): IWebSocketQueueItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defered")(defered)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[IWebSocketQueueItem]
+  }
+}
+

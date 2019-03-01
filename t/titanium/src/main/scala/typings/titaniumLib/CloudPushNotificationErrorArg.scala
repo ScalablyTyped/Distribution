@@ -15,3 +15,12 @@ trait CloudPushNotificationErrorArg extends js.Object {
   var error: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CloudPushNotificationErrorArg {
+  @scala.inline
+  def apply(error: java.lang.String = null): CloudPushNotificationErrorArg = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[CloudPushNotificationErrorArg]
+  }
+}
+

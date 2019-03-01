@@ -11,3 +11,18 @@ trait OptGroupProps extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OptGroupProps {
+  @scala.inline
+  def apply(
+    key: java.lang.String = null,
+    label: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    value: java.lang.String = null
+  ): OptGroupProps = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[OptGroupProps]
+  }
+}
+

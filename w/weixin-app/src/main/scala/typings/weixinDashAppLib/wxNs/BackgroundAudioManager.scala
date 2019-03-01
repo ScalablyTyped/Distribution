@@ -58,3 +58,62 @@ trait BackgroundAudioManager extends js.Object {
   def stop(): scala.Unit
 }
 
+object BackgroundAudioManager {
+  @scala.inline
+  def apply(
+    buffered: scala.Double,
+    coverImgUrl: java.lang.String,
+    currentTime: scala.Double,
+    duration: scala.Double,
+    epname: java.lang.String,
+    onCanplay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onEnded: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onError: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onNext: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPause: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPlay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPrev: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onStop: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onTimeUpdate: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onWaiting: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    pause: js.Function0[scala.Unit],
+    paused: scala.Boolean,
+    play: js.Function0[scala.Unit],
+    seek: js.Function1[scala.Double, scala.Unit],
+    singer: java.lang.String,
+    src: java.lang.String,
+    startTime: scala.Double,
+    stop: js.Function0[scala.Unit],
+    title: java.lang.String,
+    webUrl: java.lang.String
+  ): BackgroundAudioManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buffered")(buffered)
+    __obj.updateDynamic("coverImgUrl")(coverImgUrl)
+    __obj.updateDynamic("currentTime")(currentTime)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("epname")(epname)
+    __obj.updateDynamic("onCanplay")(onCanplay)
+    __obj.updateDynamic("onEnded")(onEnded)
+    __obj.updateDynamic("onError")(onError)
+    __obj.updateDynamic("onNext")(onNext)
+    __obj.updateDynamic("onPause")(onPause)
+    __obj.updateDynamic("onPlay")(onPlay)
+    __obj.updateDynamic("onPrev")(onPrev)
+    __obj.updateDynamic("onStop")(onStop)
+    __obj.updateDynamic("onTimeUpdate")(onTimeUpdate)
+    __obj.updateDynamic("onWaiting")(onWaiting)
+    __obj.updateDynamic("pause")(pause)
+    __obj.updateDynamic("paused")(paused)
+    __obj.updateDynamic("play")(play)
+    __obj.updateDynamic("seek")(seek)
+    __obj.updateDynamic("singer")(singer)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("stop")(stop)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("webUrl")(webUrl)
+    __obj.asInstanceOf[BackgroundAudioManager]
+  }
+}
+

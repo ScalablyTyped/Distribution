@@ -16,3 +16,28 @@ trait ClientOptions extends js.Object {
   var useSSL: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    accessKey: java.lang.String,
+    endPoint: java.lang.String,
+    secretKey: java.lang.String,
+    port: scala.Int | scala.Double = null,
+    region: Region = null,
+    sessionToken: java.lang.String = null,
+    transport: js.Any = null,
+    useSSL: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessKey")(accessKey)
+    __obj.updateDynamic("endPoint")(endPoint)
+    __obj.updateDynamic("secretKey")(secretKey)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL)
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

@@ -13,3 +13,13 @@ trait INDCustomData extends js.Object {
   var customDataTypeID: scala.Double
 }
 
+object INDCustomData {
+  @scala.inline
+  def apply(customData: scala.Double, customDataTypeID: scala.Double): INDCustomData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customData")(customData)
+    __obj.updateDynamic("customDataTypeID")(customDataTypeID)
+    __obj.asInstanceOf[INDCustomData]
+  }
+}
+

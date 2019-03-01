@@ -89,3 +89,45 @@ trait IgGridRowSelectors
   var showCheckBoxesOnFocus: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgGridRowSelectors {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridRowSelectors
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    checkBoxStateChanged: CheckBoxStateChangedEvent = null,
+    checkBoxStateChanging: CheckBoxStateChangingEvent = null,
+    deselectAllForPagingTemplate: java.lang.String = null,
+    enableCheckBoxes: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowNumbering: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSelectAllForPaging: js.UndefOr[scala.Boolean] = js.undefined,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: IgGridRowSelectorsLocale = null,
+    requireSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    rowNumberingSeed: scala.Int | scala.Double = null,
+    rowSelectorClicked: RowSelectorClickedEvent = null,
+    rowSelectorColumnWidth: java.lang.String | scala.Double = null,
+    selectAllForPagingTemplate: java.lang.String = null,
+    showCheckBoxesOnFocus: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgGridRowSelectors = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (checkBoxStateChanged != null) __obj.updateDynamic("checkBoxStateChanged")(checkBoxStateChanged)
+    if (checkBoxStateChanging != null) __obj.updateDynamic("checkBoxStateChanging")(checkBoxStateChanging)
+    if (deselectAllForPagingTemplate != null) __obj.updateDynamic("deselectAllForPagingTemplate")(deselectAllForPagingTemplate)
+    if (!js.isUndefined(enableCheckBoxes)) __obj.updateDynamic("enableCheckBoxes")(enableCheckBoxes)
+    if (!js.isUndefined(enableRowNumbering)) __obj.updateDynamic("enableRowNumbering")(enableRowNumbering)
+    if (!js.isUndefined(enableSelectAllForPaging)) __obj.updateDynamic("enableSelectAllForPaging")(enableSelectAllForPaging)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (!js.isUndefined(requireSelection)) __obj.updateDynamic("requireSelection")(requireSelection)
+    if (rowNumberingSeed != null) __obj.updateDynamic("rowNumberingSeed")(rowNumberingSeed.asInstanceOf[js.Any])
+    if (rowSelectorClicked != null) __obj.updateDynamic("rowSelectorClicked")(rowSelectorClicked)
+    if (rowSelectorColumnWidth != null) __obj.updateDynamic("rowSelectorColumnWidth")(rowSelectorColumnWidth.asInstanceOf[js.Any])
+    if (selectAllForPagingTemplate != null) __obj.updateDynamic("selectAllForPagingTemplate")(selectAllForPagingTemplate)
+    if (!js.isUndefined(showCheckBoxesOnFocus)) __obj.updateDynamic("showCheckBoxesOnFocus")(showCheckBoxesOnFocus)
+    __obj.asInstanceOf[IgGridRowSelectors]
+  }
+}
+

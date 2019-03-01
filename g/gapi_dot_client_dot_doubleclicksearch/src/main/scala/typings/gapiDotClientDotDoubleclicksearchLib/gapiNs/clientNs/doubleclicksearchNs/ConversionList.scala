@@ -12,3 +12,13 @@ trait ConversionList extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConversionList {
+  @scala.inline
+  def apply(conversion: js.Array[Conversion] = null, kind: java.lang.String = null): ConversionList = {
+    val __obj = js.Dynamic.literal()
+    if (conversion != null) __obj.updateDynamic("conversion")(conversion)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[ConversionList]
+  }
+}
+

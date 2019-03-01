@@ -14,3 +14,24 @@ trait WebServerRequest extends js.Object {
   var url: java.lang.String
 }
 
+object WebServerRequest {
+  @scala.inline
+  def apply(
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    httpVersion: scala.Double,
+    method: java.lang.String,
+    post: java.lang.String,
+    postRaw: java.lang.String,
+    url: java.lang.String
+  ): WebServerRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("httpVersion")(httpVersion)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("post")(post)
+    __obj.updateDynamic("postRaw")(postRaw)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WebServerRequest]
+  }
+}
+

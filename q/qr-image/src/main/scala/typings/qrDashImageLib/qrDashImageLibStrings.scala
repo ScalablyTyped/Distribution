@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object qrDashImageLibStrings {
   @js.native
-  sealed trait H extends js.Object
+  sealed trait H
+    extends qrDashImageLib.qrDashImageMod.ec_level
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait L
+    extends qrDashImageLib.qrDashImageMod.ec_level
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait M
+    extends qrDashImageLib.qrDashImageMod.ec_level
   
   @js.native
-  sealed trait Q extends js.Object
+  sealed trait Q
+    extends qrDashImageLib.qrDashImageMod.ec_level
   
   @js.native
-  sealed trait eps extends js.Object
+  sealed trait eps
+    extends qrDashImageLib.qrDashImageMod.image_type
   
   @js.native
-  sealed trait pdf extends js.Object
+  sealed trait pdf
+    extends qrDashImageLib.qrDashImageMod.image_type
   
   @js.native
-  sealed trait png extends js.Object
+  sealed trait png
+    extends qrDashImageLib.qrDashImageMod.image_type
   
   @js.native
-  sealed trait svg extends js.Object
+  sealed trait svg
+    extends qrDashImageLib.qrDashImageMod.image_type
   
   @scala.inline
   def H: H = "H".asInstanceOf[H]

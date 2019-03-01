@@ -120,3 +120,67 @@ trait IgToolbar
   var windowResized: js.UndefOr[WindowResizedEvent] = js.undefined
 }
 
+object IgToolbar {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igToolbar
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowCollapsing: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseButtonIcon: java.lang.String = null,
+    collapsed: CollapsedEvent = null,
+    collapsing: CollapsingEvent = null,
+    displayName: java.lang.String = null,
+    expandButtonIcon: java.lang.String = null,
+    expanded: ExpandedEvent = null,
+    expanding: ExpandingEvent = null,
+    height: js.Any = null,
+    isExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    itemAdded: ItemAddedEvent = null,
+    itemDisable: ItemDisableEvent = null,
+    itemEnabled: ItemEnabledEvent = null,
+    itemRemoved: ItemRemovedEvent = null,
+    items: js.Array[_] = null,
+    language: java.lang.String = null,
+    locale: IgToolbarLocale = null,
+    name: java.lang.String = null,
+    regional: java.lang.String | js.Object = null,
+    toolbarButtonClick: ToolbarButtonClickEvent = null,
+    toolbarComboOpening: ToolbarComboOpeningEvent = null,
+    toolbarComboSelected: ToolbarComboSelectedEvent = null,
+    toolbarCustomItemClick: ToolbarCustomItemClickEvent = null,
+    width: js.Any = null,
+    windowResized: WindowResizedEvent = null
+  ): IgToolbar = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowCollapsing)) __obj.updateDynamic("allowCollapsing")(allowCollapsing)
+    if (collapseButtonIcon != null) __obj.updateDynamic("collapseButtonIcon")(collapseButtonIcon)
+    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
+    if (collapsing != null) __obj.updateDynamic("collapsing")(collapsing)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (expandButtonIcon != null) __obj.updateDynamic("expandButtonIcon")(expandButtonIcon)
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
+    if (expanding != null) __obj.updateDynamic("expanding")(expanding)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (itemAdded != null) __obj.updateDynamic("itemAdded")(itemAdded)
+    if (itemDisable != null) __obj.updateDynamic("itemDisable")(itemDisable)
+    if (itemEnabled != null) __obj.updateDynamic("itemEnabled")(itemEnabled)
+    if (itemRemoved != null) __obj.updateDynamic("itemRemoved")(itemRemoved)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (toolbarButtonClick != null) __obj.updateDynamic("toolbarButtonClick")(toolbarButtonClick)
+    if (toolbarComboOpening != null) __obj.updateDynamic("toolbarComboOpening")(toolbarComboOpening)
+    if (toolbarComboSelected != null) __obj.updateDynamic("toolbarComboSelected")(toolbarComboSelected)
+    if (toolbarCustomItemClick != null) __obj.updateDynamic("toolbarCustomItemClick")(toolbarCustomItemClick)
+    if (width != null) __obj.updateDynamic("width")(width)
+    if (windowResized != null) __obj.updateDynamic("windowResized")(windowResized)
+    __obj.asInstanceOf[IgToolbar]
+  }
+}
+

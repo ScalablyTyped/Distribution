@@ -13,3 +13,22 @@ trait IHashAlgorithmNamesStatics extends js.Object {
   var sha512: java.lang.String
 }
 
+object IHashAlgorithmNamesStatics {
+  @scala.inline
+  def apply(
+    md5: java.lang.String,
+    sha1: java.lang.String,
+    sha256: java.lang.String,
+    sha384: java.lang.String,
+    sha512: java.lang.String
+  ): IHashAlgorithmNamesStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("md5")(md5)
+    __obj.updateDynamic("sha1")(sha1)
+    __obj.updateDynamic("sha256")(sha256)
+    __obj.updateDynamic("sha384")(sha384)
+    __obj.updateDynamic("sha512")(sha512)
+    __obj.asInstanceOf[IHashAlgorithmNamesStatics]
+  }
+}
+

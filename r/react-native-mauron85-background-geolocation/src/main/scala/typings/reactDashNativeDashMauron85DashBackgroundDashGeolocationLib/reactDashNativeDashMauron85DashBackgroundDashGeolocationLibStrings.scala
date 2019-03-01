@@ -7,97 +7,131 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashMauron85DashBackgroundDashGeolocationLibStrings {
   @js.native
-  sealed trait AutomotiveNavigation extends js.Object
+  sealed trait AutomotiveNavigation
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.iOSActivityType
   
   @js.native
-  sealed trait DEBUG extends js.Object
+  sealed trait DEBUG
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.LogLevel
   
   @js.native
-  sealed trait ERROR extends js.Object
+  sealed trait ERROR
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.LogLevel
   
   @js.native
-  sealed trait Fitness extends js.Object
+  sealed trait Fitness
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.iOSActivityType
   
   @js.native
-  sealed trait INFO extends js.Object
+  sealed trait INFO
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.LogLevel
   
   @js.native
-  sealed trait IN_VEHICLE extends js.Object
+  sealed trait IN_VEHICLE
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.ActivityType
   
   @js.native
-  sealed trait ON_BICYCLE extends js.Object
+  sealed trait ON_BICYCLE
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.ActivityType
   
   @js.native
-  sealed trait ON_FOOT extends js.Object
+  sealed trait ON_FOOT
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.ActivityType
   
   @js.native
-  sealed trait Other extends js.Object
+  sealed trait Other
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.iOSActivityType
   
   @js.native
-  sealed trait OtherNavigation extends js.Object
+  sealed trait OtherNavigation
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.iOSActivityType
   
   @js.native
-  sealed trait RUNNING extends js.Object
+  sealed trait RUNNING
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.ActivityType
   
   @js.native
-  sealed trait STILL extends js.Object
+  sealed trait STILL
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.ActivityType
   
   @js.native
-  sealed trait TILTING extends js.Object
+  sealed trait TILTING
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.ActivityType
   
   @js.native
-  sealed trait TRACE extends js.Object
+  sealed trait TRACE
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.LogLevel
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.ActivityType
   
   @js.native
-  sealed trait WALKING extends js.Object
+  sealed trait WALKING
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.ActivityType
   
   @js.native
-  sealed trait WARN extends js.Object
+  sealed trait WARN
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.LogLevel
   
   @js.native
-  sealed trait abort_requested extends js.Object
+  sealed trait abort_requested
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
   
   @js.native
-  sealed trait activity extends js.Object
+  sealed trait activity
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
+       with reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.HeadlessTaskEventName
   
   @js.native
-  sealed trait authorization extends js.Object
+  sealed trait authorization
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
   
   @js.native
-  sealed trait background extends js.Object
+  sealed trait background
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
   
   @js.native
-  sealed trait foreground extends js.Object
+  sealed trait foreground
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
   
   @js.native
-  sealed trait fused extends js.Object
+  sealed trait fused
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Provider
   
   @js.native
-  sealed trait gps extends js.Object
+  sealed trait gps
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Provider
   
   @js.native
-  sealed trait location extends js.Object
+  sealed trait location
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
+       with reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.HeadlessTaskEventName
   
   @js.native
-  sealed trait network extends js.Object
+  sealed trait network
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Provider
   
   @js.native
-  sealed trait passive extends js.Object
+  sealed trait passive
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Provider
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
   
   @js.native
-  sealed trait stationary extends js.Object
+  sealed trait stationary
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
+       with reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.HeadlessTaskEventName
   
   @js.native
-  sealed trait stop extends js.Object
+  sealed trait stop
+    extends reactDashNativeDashMauron85DashBackgroundDashGeolocationLib.reactDashNativeDashMauron85DashBackgroundDashGeolocationMod.Event
   
   @scala.inline
   def AutomotiveNavigation: AutomotiveNavigation = "AutomotiveNavigation".asInstanceOf[AutomotiveNavigation]

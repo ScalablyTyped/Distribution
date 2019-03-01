@@ -10,3 +10,12 @@ trait ViolatingSitesResponse extends js.Object {
   var violatingSites: js.UndefOr[js.Array[SiteSummaryResponse]] = js.undefined
 }
 
+object ViolatingSitesResponse {
+  @scala.inline
+  def apply(violatingSites: js.Array[SiteSummaryResponse] = null): ViolatingSitesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (violatingSites != null) __obj.updateDynamic("violatingSites")(violatingSites)
+    __obj.asInstanceOf[ViolatingSitesResponse]
+  }
+}
+

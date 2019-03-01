@@ -14,3 +14,18 @@ trait ListDraftsResponse extends js.Object {
   var resultSizeEstimate: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListDraftsResponse {
+  @scala.inline
+  def apply(
+    drafts: js.Array[Draft] = null,
+    nextPageToken: java.lang.String = null,
+    resultSizeEstimate: scala.Int | scala.Double = null
+  ): ListDraftsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (drafts != null) __obj.updateDynamic("drafts")(drafts)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (resultSizeEstimate != null) __obj.updateDynamic("resultSizeEstimate")(resultSizeEstimate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListDraftsResponse]
+  }
+}
+

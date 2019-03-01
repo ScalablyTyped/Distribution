@@ -18,3 +18,32 @@ trait ReaderT1[M /* <: fpDashTsLib.libHKTMod.URIS */] extends js.Object {
   def of[E, A](a: A): js.Function1[/* e */ E, fpDashTsLib.libHKTMod.Type[M, A]]
 }
 
+object ReaderT1 {
+  @scala.inline
+  def apply[M /* <: fpDashTsLib.libHKTMod.URIS */](
+    ap: js.Function2[
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Function1[js.Any, js.Any]]], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Any]], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Any]]
+    ],
+    chain: js.Function2[
+      js.Function1[js.Any, js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Any]]], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Any]], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Any]]
+    ],
+    map: js.Function2[
+      js.Function1[js.Any, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Any]], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Any]]
+    ],
+    of: js.Function1[js.Any, js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Any]]]
+  ): ReaderT1[M] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ap")(ap)
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("of")(of)
+    __obj.asInstanceOf[ReaderT1[M]]
+  }
+}
+

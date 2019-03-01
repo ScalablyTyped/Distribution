@@ -12,3 +12,20 @@ trait Anon_Provider extends js.Object {
   var updaterCacheDirName: java.lang.String
 }
 
+object Anon_Provider {
+  @scala.inline
+  def apply(
+    provider: builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishProvider,
+    updaterCacheDirName: java.lang.String,
+    publishAutoUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    publisherName: js.Array[java.lang.String] = null
+  ): Anon_Provider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("provider")(provider)
+    __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName)
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)
+    __obj.asInstanceOf[Anon_Provider]
+  }
+}
+

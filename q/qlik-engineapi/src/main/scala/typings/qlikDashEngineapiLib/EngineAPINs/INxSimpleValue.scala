@@ -22,3 +22,13 @@ trait INxSimpleValue extends js.Object {
   var qText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object INxSimpleValue {
+  @scala.inline
+  def apply(qNum: scala.Double, qText: java.lang.String = null): INxSimpleValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qNum")(qNum)
+    if (qText != null) __obj.updateDynamic("qText")(qText)
+    __obj.asInstanceOf[INxSimpleValue]
+  }
+}
+

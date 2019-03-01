@@ -35,3 +35,30 @@ trait RowSelectingEventArgs extends js.Object {
   var targetGridRow: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowSelectingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    previousChartRow: js.Any = null,
+    previousData: js.Any = null,
+    previousGridRow: js.Any = null,
+    previousIndex: java.lang.String = null,
+    recordIndex: java.lang.String = null,
+    targetChartRow: js.Any = null,
+    targetGridRow: js.Any = null
+  ): RowSelectingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (previousChartRow != null) __obj.updateDynamic("previousChartRow")(previousChartRow)
+    if (previousData != null) __obj.updateDynamic("previousData")(previousData)
+    if (previousGridRow != null) __obj.updateDynamic("previousGridRow")(previousGridRow)
+    if (previousIndex != null) __obj.updateDynamic("previousIndex")(previousIndex)
+    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex)
+    if (targetChartRow != null) __obj.updateDynamic("targetChartRow")(targetChartRow)
+    if (targetGridRow != null) __obj.updateDynamic("targetGridRow")(targetGridRow)
+    __obj.asInstanceOf[RowSelectingEventArgs]
+  }
+}
+

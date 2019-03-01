@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fp-ts/lib/Validation", "Success")
 @js.native
-class Success[L, A] protected () extends js.Object {
+class Success[L, A] protected () extends Validation[L, A] {
   def this(value: A) = this()
   val _A: A = js.native
   val _L: L = js.native

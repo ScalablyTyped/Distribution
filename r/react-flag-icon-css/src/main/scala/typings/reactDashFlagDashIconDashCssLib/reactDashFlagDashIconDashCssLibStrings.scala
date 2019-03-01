@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object reactDashFlagDashIconDashCssLibStrings {
   @js.native
-  sealed trait `2x` extends js.Object
+  sealed trait `2x`
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconSize
   
   @js.native
-  sealed trait `3x` extends js.Object
+  sealed trait `3x`
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconSize
   
   @js.native
-  sealed trait `4x` extends js.Object
+  sealed trait `4x`
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconSize
   
   @js.native
-  sealed trait `5x` extends js.Object
+  sealed trait `5x`
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconSize
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconFlip
   
   @js.native
-  sealed trait lg extends js.Object
+  sealed trait lg
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconSize
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconFlip
   
   @scala.inline
   def `2x`: `2x` = "2x".asInstanceOf[`2x`]

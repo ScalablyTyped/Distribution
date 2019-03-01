@@ -12,3 +12,18 @@ trait Anon_Pipes extends js.Object {
   ]
 }
 
+object Anon_Pipes {
+  @scala.inline
+  def apply(
+    pipes: js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompilePipeSummary],
+    template: js.Array[
+      atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst
+    ]
+  ): Anon_Pipes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pipes")(pipes)
+    __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[Anon_Pipes]
+  }
+}
+

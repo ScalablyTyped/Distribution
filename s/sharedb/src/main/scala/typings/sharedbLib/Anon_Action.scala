@@ -15,3 +15,26 @@ trait Anon_Action extends js.Object {
   var req: js.Any
 }
 
+object Anon_Action {
+  @scala.inline
+  def apply(
+    action: sharedbLib.sharedbMod.sharedbNs.UseAction,
+    agent: js.Any,
+    collection: java.lang.String,
+    id: java.lang.String,
+    op: sharedbLib.libSharedbMod.RawOp,
+    query: js.Any,
+    req: js.Any
+  ): Anon_Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("agent")(agent)
+    __obj.updateDynamic("collection")(collection)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("op")(op)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("req")(req)
+    __obj.asInstanceOf[Anon_Action]
+  }
+}
+

@@ -12,3 +12,20 @@ trait ListOnItemsRenderedProps extends js.Object {
   var visibleStopIndex: scala.Double
 }
 
+object ListOnItemsRenderedProps {
+  @scala.inline
+  def apply(
+    overscanStartIndex: scala.Double,
+    overscanStopIndex: scala.Double,
+    visibleStartIndex: scala.Double,
+    visibleStopIndex: scala.Double
+  ): ListOnItemsRenderedProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("overscanStartIndex")(overscanStartIndex)
+    __obj.updateDynamic("overscanStopIndex")(overscanStopIndex)
+    __obj.updateDynamic("visibleStartIndex")(visibleStartIndex)
+    __obj.updateDynamic("visibleStopIndex")(visibleStopIndex)
+    __obj.asInstanceOf[ListOnItemsRenderedProps]
+  }
+}
+

@@ -10,3 +10,12 @@ trait RemoveRequestHeaderParams extends js.Object {
   var name: java.lang.String
 }
 
+object RemoveRequestHeaderParams {
+  @scala.inline
+  def apply(name: java.lang.String): RemoveRequestHeaderParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[RemoveRequestHeaderParams]
+  }
+}
+

@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object markdownDashPdfLibStrings {
   @js.native
-  sealed trait A3 extends js.Object
+  sealed trait A3
+    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
   
   @js.native
-  sealed trait A4 extends js.Object
+  sealed trait A4
+    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
   
   @js.native
-  sealed trait A5 extends js.Object
+  sealed trait A5
+    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
   
   @js.native
-  sealed trait Legal extends js.Object
+  sealed trait Legal
+    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
   
   @js.native
-  sealed trait Letter extends js.Object
+  sealed trait Letter
+    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
   
   @js.native
-  sealed trait Tabloid extends js.Object
+  sealed trait Tabloid
+    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperFormat
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape
+    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperOrientation
   
   @js.native
-  sealed trait portait extends js.Object
+  sealed trait portait
+    extends markdownDashPdfLib.markdownDashPdfMod.MarkdownPDFNs.PaperOrientation
   
   @scala.inline
   def A3: A3 = "A3".asInstanceOf[A3]

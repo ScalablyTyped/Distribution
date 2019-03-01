@@ -18,3 +18,28 @@ trait Anon_BgClass extends js.Object {
   var wrapClass: java.lang.String
 }
 
+object Anon_BgClass {
+  @scala.inline
+  def apply(
+    bgClass: java.lang.String,
+    gutterMarkers: js.Any,
+    handle: js.Any,
+    line: js.Any,
+    text: java.lang.String,
+    textClass: java.lang.String,
+    widgets: js.Any,
+    wrapClass: java.lang.String
+  ): Anon_BgClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bgClass")(bgClass)
+    __obj.updateDynamic("gutterMarkers")(gutterMarkers)
+    __obj.updateDynamic("handle")(handle)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("textClass")(textClass)
+    __obj.updateDynamic("widgets")(widgets)
+    __obj.updateDynamic("wrapClass")(wrapClass)
+    __obj.asInstanceOf[Anon_BgClass]
+  }
+}
+

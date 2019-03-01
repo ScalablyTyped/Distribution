@@ -17,3 +17,18 @@ trait IpConfiguration extends js.Object {
   var requireSsl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IpConfiguration {
+  @scala.inline
+  def apply(
+    authorizedNetworks: js.Array[AclEntry] = null,
+    ipv4Enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    requireSsl: js.UndefOr[scala.Boolean] = js.undefined
+  ): IpConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (authorizedNetworks != null) __obj.updateDynamic("authorizedNetworks")(authorizedNetworks)
+    if (!js.isUndefined(ipv4Enabled)) __obj.updateDynamic("ipv4Enabled")(ipv4Enabled)
+    if (!js.isUndefined(requireSsl)) __obj.updateDynamic("requireSsl")(requireSsl)
+    __obj.asInstanceOf[IpConfiguration]
+  }
+}
+

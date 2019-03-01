@@ -25,3 +25,24 @@ trait navigateToSmartProgramOptions
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object navigateToSmartProgramOptions {
+  @scala.inline
+  def apply(
+    appKey: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    extraData: js.Any = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    path: java.lang.String = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): navigateToSmartProgramOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appKey")(appKey)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (extraData != null) __obj.updateDynamic("extraData")(extraData)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[navigateToSmartProgramOptions]
+  }
+}
+

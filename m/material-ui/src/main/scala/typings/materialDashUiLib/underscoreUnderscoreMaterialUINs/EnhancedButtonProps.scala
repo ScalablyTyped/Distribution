@@ -32,3 +32,20 @@ import scala.scalajs.js.annotation._
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EnhancedButtonProps {
+  @scala.inline
+  def apply(
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] = null,
+    SharedEnhancedButtonProps: SharedEnhancedButtonProps[EnhancedButton] = null,
+    containerElement: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): EnhancedButtonProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, SharedEnhancedButtonProps)
+    if (containerElement != null) __obj.updateDynamic("containerElement")(containerElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    __obj.asInstanceOf[EnhancedButtonProps]
+  }
+}
+

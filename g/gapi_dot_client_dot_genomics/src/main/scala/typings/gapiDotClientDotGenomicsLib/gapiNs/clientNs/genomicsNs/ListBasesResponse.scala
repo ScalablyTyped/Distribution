@@ -22,3 +22,18 @@ trait ListBasesResponse extends js.Object {
   var sequence: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListBasesResponse {
+  @scala.inline
+  def apply(
+    nextPageToken: java.lang.String = null,
+    offset: java.lang.String = null,
+    sequence: java.lang.String = null
+  ): ListBasesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (sequence != null) __obj.updateDynamic("sequence")(sequence)
+    __obj.asInstanceOf[ListBasesResponse]
+  }
+}
+

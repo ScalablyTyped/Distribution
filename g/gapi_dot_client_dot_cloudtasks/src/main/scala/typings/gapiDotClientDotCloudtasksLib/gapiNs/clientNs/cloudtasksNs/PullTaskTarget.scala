@@ -12,3 +12,13 @@ trait PullTaskTarget extends js.Object {
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PullTaskTarget {
+  @scala.inline
+  def apply(payload: java.lang.String = null, tag: java.lang.String = null): PullTaskTarget = {
+    val __obj = js.Dynamic.literal()
+    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[PullTaskTarget]
+  }
+}
+

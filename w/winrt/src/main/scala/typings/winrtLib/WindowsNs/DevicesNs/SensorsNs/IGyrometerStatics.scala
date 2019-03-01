@@ -9,3 +9,12 @@ trait IGyrometerStatics extends js.Object {
   def getDefault(): Gyrometer
 }
 
+object IGyrometerStatics {
+  @scala.inline
+  def apply(getDefault: js.Function0[Gyrometer]): IGyrometerStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getDefault")(getDefault)
+    __obj.asInstanceOf[IGyrometerStatics]
+  }
+}
+

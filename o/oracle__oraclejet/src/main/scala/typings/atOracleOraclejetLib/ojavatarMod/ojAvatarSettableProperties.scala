@@ -12,3 +12,18 @@ trait ojAvatarSettableProperties
   var src: java.lang.String
 }
 
+object ojAvatarSettableProperties {
+  @scala.inline
+  def apply(
+    initials: java.lang.String,
+    size: atOracleOraclejetLib.atOracleOraclejetLibStrings.xxs | atOracleOraclejetLib.atOracleOraclejetLibStrings.xs | atOracleOraclejetLib.atOracleOraclejetLibStrings.sm | atOracleOraclejetLib.atOracleOraclejetLibStrings.md | atOracleOraclejetLib.atOracleOraclejetLibStrings.lg | atOracleOraclejetLib.atOracleOraclejetLibStrings.xl | atOracleOraclejetLib.atOracleOraclejetLibStrings.xxl,
+    src: java.lang.String
+  ): ojAvatarSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("initials")(initials)
+    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.updateDynamic("src")(src)
+    __obj.asInstanceOf[ojAvatarSettableProperties]
+  }
+}
+

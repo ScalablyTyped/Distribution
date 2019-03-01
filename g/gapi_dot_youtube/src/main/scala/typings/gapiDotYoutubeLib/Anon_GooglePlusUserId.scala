@@ -16,3 +16,13 @@ trait Anon_GooglePlusUserId extends js.Object {
   var relatedPlaylists: Anon_Favorites
 }
 
+object Anon_GooglePlusUserId {
+  @scala.inline
+  def apply(googlePlusUserId: java.lang.String, relatedPlaylists: Anon_Favorites): Anon_GooglePlusUserId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("googlePlusUserId")(googlePlusUserId)
+    __obj.updateDynamic("relatedPlaylists")(relatedPlaylists)
+    __obj.asInstanceOf[Anon_GooglePlusUserId]
+  }
+}
+

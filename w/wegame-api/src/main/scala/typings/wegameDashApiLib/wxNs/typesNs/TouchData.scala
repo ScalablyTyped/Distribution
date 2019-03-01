@@ -20,3 +20,14 @@ trait TouchData extends js.Object {
   var touches: js.Array[Touch]
 }
 
+object TouchData {
+  @scala.inline
+  def apply(changedTouches: js.Array[Touch], timeStamp: scala.Double, touches: js.Array[Touch]): TouchData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changedTouches")(changedTouches)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("touches")(touches)
+    __obj.asInstanceOf[TouchData]
+  }
+}
+

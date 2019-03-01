@@ -22,3 +22,18 @@ trait RunContextSettings extends js.Object {
   var tmpdir: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RunContextSettings {
+  @scala.inline
+  def apply(
+    namespace: java.lang.String = null,
+    resolved: java.lang.String = null,
+    tmpdir: js.UndefOr[scala.Boolean] = js.undefined
+  ): RunContextSettings = {
+    val __obj = js.Dynamic.literal()
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (resolved != null) __obj.updateDynamic("resolved")(resolved)
+    if (!js.isUndefined(tmpdir)) __obj.updateDynamic("tmpdir")(tmpdir)
+    __obj.asInstanceOf[RunContextSettings]
+  }
+}
+

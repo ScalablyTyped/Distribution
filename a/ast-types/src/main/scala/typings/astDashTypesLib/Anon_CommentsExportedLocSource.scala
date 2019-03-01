@@ -12,3 +12,20 @@ trait Anon_CommentsExportedLocSource extends js.Object {
   var source: astDashTypesLib.genKindsMod.LiteralKind
 }
 
+object Anon_CommentsExportedLocSource {
+  @scala.inline
+  def apply(
+    source: astDashTypesLib.genKindsMod.LiteralKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    exported: astDashTypesLib.genKindsMod.IdentifierKind = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsExportedLocSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (exported != null) __obj.updateDynamic("exported")(exported)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsExportedLocSource]
+  }
+}
+

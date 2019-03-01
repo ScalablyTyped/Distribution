@@ -30,3 +30,18 @@ trait InkAnalysisLoadOptions extends js.Object {
   var page: js.UndefOr[PageLoadOptions] = js.undefined
 }
 
+object InkAnalysisLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    page: PageLoadOptions = null
+  ): InkAnalysisLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (page != null) __obj.updateDynamic("page")(page)
+    __obj.asInstanceOf[InkAnalysisLoadOptions]
+  }
+}
+

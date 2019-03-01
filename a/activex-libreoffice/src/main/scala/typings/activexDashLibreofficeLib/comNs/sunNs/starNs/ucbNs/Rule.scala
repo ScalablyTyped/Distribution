@@ -28,3 +28,18 @@ trait Rule extends js.Object {
   var Terms: activexDashInteropLib.SafeArray[RuleTerm]
 }
 
+object Rule {
+  @scala.inline
+  def apply(
+    Action: scala.Double,
+    Parameter: java.lang.String,
+    Terms: activexDashInteropLib.SafeArray[RuleTerm]
+  ): Rule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Action")(Action)
+    __obj.updateDynamic("Parameter")(Parameter)
+    __obj.updateDynamic("Terms")(Terms)
+    __obj.asInstanceOf[Rule]
+  }
+}
+

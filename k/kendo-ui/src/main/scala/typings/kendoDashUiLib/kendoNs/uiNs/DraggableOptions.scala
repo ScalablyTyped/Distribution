@@ -23,3 +23,42 @@ trait DraggableOptions extends js.Object {
   var ignore: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DraggableOptions {
+  @scala.inline
+  def apply(
+    autoScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    axis: java.lang.String = null,
+    container: kendoDashUiLib.JQuery = null,
+    cursorOffset: js.Any = null,
+    distance: scala.Int | scala.Double = null,
+    drag: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
+    dragcancel: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
+    dragend: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
+    dragstart: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
+    filter: java.lang.String = null,
+    group: java.lang.String = null,
+    hint: js.Function | kendoDashUiLib.JQuery = null,
+    hold: js.Function1[/* e */ DraggableEvent, scala.Unit] = null,
+    holdToDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    ignore: java.lang.String = null
+  ): DraggableOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll)
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (cursorOffset != null) __obj.updateDynamic("cursorOffset")(cursorOffset)
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (dragcancel != null) __obj.updateDynamic("dragcancel")(dragcancel)
+    if (dragend != null) __obj.updateDynamic("dragend")(dragend)
+    if (dragstart != null) __obj.updateDynamic("dragstart")(dragstart)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    if (hold != null) __obj.updateDynamic("hold")(hold)
+    if (!js.isUndefined(holdToDrag)) __obj.updateDynamic("holdToDrag")(holdToDrag)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    __obj.asInstanceOf[DraggableOptions]
+  }
+}
+

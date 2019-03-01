@@ -16,3 +16,20 @@ trait ReportStatus extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReportStatus {
+  @scala.inline
+  def apply(
+    failure: ReportFailure = null,
+    finishTimeMs: java.lang.String = null,
+    format: java.lang.String = null,
+    state: java.lang.String = null
+  ): ReportStatus = {
+    val __obj = js.Dynamic.literal()
+    if (failure != null) __obj.updateDynamic("failure")(failure)
+    if (finishTimeMs != null) __obj.updateDynamic("finishTimeMs")(finishTimeMs)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ReportStatus]
+  }
+}
+

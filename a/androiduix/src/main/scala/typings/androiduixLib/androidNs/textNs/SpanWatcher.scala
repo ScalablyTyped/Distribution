@@ -18,3 +18,18 @@ trait SpanWatcher extends js.Object {
   def onSpanRemoved(text: Spannable, what: js.Any, start: scala.Double, end: scala.Double): scala.Unit
 }
 
+object SpanWatcher {
+  @scala.inline
+  def apply(
+    onSpanAdded: js.Function4[Spannable, js.Any, scala.Double, scala.Double, scala.Unit],
+    onSpanChanged: js.Function6[Spannable, js.Any, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    onSpanRemoved: js.Function4[Spannable, js.Any, scala.Double, scala.Double, scala.Unit]
+  ): SpanWatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onSpanAdded")(onSpanAdded)
+    __obj.updateDynamic("onSpanChanged")(onSpanChanged)
+    __obj.updateDynamic("onSpanRemoved")(onSpanRemoved)
+    __obj.asInstanceOf[SpanWatcher]
+  }
+}
+

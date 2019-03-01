@@ -43,3 +43,30 @@ trait GatewayArgs extends js.Object {
   val tapeDriveType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object GatewayArgs {
+  @scala.inline
+  def apply(
+    gatewayName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    gatewayTimezone: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    activationKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    gatewayIpAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    gatewayType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    mediumChangerType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    smbActiveDirectorySettings: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DomainNamePasswordUsername] = null,
+    smbGuestPassword: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tapeDriveType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): GatewayArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gatewayName")(gatewayName.asInstanceOf[js.Any])
+    __obj.updateDynamic("gatewayTimezone")(gatewayTimezone.asInstanceOf[js.Any])
+    if (activationKey != null) __obj.updateDynamic("activationKey")(activationKey.asInstanceOf[js.Any])
+    if (gatewayIpAddress != null) __obj.updateDynamic("gatewayIpAddress")(gatewayIpAddress.asInstanceOf[js.Any])
+    if (gatewayType != null) __obj.updateDynamic("gatewayType")(gatewayType.asInstanceOf[js.Any])
+    if (mediumChangerType != null) __obj.updateDynamic("mediumChangerType")(mediumChangerType.asInstanceOf[js.Any])
+    if (smbActiveDirectorySettings != null) __obj.updateDynamic("smbActiveDirectorySettings")(smbActiveDirectorySettings.asInstanceOf[js.Any])
+    if (smbGuestPassword != null) __obj.updateDynamic("smbGuestPassword")(smbGuestPassword.asInstanceOf[js.Any])
+    if (tapeDriveType != null) __obj.updateDynamic("tapeDriveType")(tapeDriveType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GatewayArgs]
+  }
+}
+

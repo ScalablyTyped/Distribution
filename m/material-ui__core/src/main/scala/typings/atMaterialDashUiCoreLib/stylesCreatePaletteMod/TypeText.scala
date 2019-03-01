@@ -12,3 +12,20 @@ trait TypeText extends js.Object {
   var secondary: java.lang.String
 }
 
+object TypeText {
+  @scala.inline
+  def apply(
+    disabled: java.lang.String,
+    hint: java.lang.String,
+    primary: java.lang.String,
+    secondary: java.lang.String
+  ): TypeText = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("hint")(hint)
+    __obj.updateDynamic("primary")(primary)
+    __obj.updateDynamic("secondary")(secondary)
+    __obj.asInstanceOf[TypeText]
+  }
+}
+

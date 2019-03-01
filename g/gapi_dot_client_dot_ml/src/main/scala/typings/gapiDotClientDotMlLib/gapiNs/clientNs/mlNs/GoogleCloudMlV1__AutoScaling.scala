@@ -29,3 +29,12 @@ trait GoogleCloudMlV1__AutoScaling extends js.Object {
   var minNodes: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GoogleCloudMlV1__AutoScaling {
+  @scala.inline
+  def apply(minNodes: scala.Int | scala.Double = null): GoogleCloudMlV1__AutoScaling = {
+    val __obj = js.Dynamic.literal()
+    if (minNodes != null) __obj.updateDynamic("minNodes")(minNodes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GoogleCloudMlV1__AutoScaling]
+  }
+}
+

@@ -10,3 +10,17 @@ trait RegionsResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[RegionsListResponse]
 }
 
+object RegionsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RegionsListResponse]
+    ]
+  ): RegionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[RegionsResource]
+  }
+}
+

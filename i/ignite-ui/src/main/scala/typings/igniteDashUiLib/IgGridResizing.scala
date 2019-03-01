@@ -63,3 +63,39 @@ trait IgGridResizing
   var regional: js.UndefOr[java.lang.String | js.Object] = js.undefined
 }
 
+object IgGridResizing {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridResizing
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowDoubleClickToResize: js.UndefOr[scala.Boolean] = js.undefined,
+    columnResized: ColumnResizedEvent = null,
+    columnResizing: ColumnResizingEvent = null,
+    columnResizingRefused: ColumnResizingRefusedEvent = null,
+    columnSettings: js.Array[IgGridResizingColumnSetting] = null,
+    deferredResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    handleThreshold: scala.Int | scala.Double = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    regional: java.lang.String | js.Object = null
+  ): IgGridResizing = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowDoubleClickToResize)) __obj.updateDynamic("allowDoubleClickToResize")(allowDoubleClickToResize)
+    if (columnResized != null) __obj.updateDynamic("columnResized")(columnResized)
+    if (columnResizing != null) __obj.updateDynamic("columnResizing")(columnResizing)
+    if (columnResizingRefused != null) __obj.updateDynamic("columnResizingRefused")(columnResizingRefused)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (!js.isUndefined(deferredResizing)) __obj.updateDynamic("deferredResizing")(deferredResizing)
+    if (handleThreshold != null) __obj.updateDynamic("handleThreshold")(handleThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgGridResizing]
+  }
+}
+

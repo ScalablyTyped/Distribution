@@ -53,3 +53,34 @@ trait Margin extends js.Object {
   def setTo(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double): Margin
 }
 
+object Margin {
+  @scala.inline
+  def apply(
+    bottom: scala.Double,
+    copy: js.Function0[Margin],
+    equalTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Boolean],
+    equals: js.Function1[Margin, scala.Boolean],
+    equalsApprox: js.Function1[Margin, scala.Boolean],
+    isReal: js.Function0[scala.Boolean],
+    left: scala.Double,
+    right: scala.Double,
+    set: js.Function1[Margin, Margin],
+    setTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Margin],
+    top: scala.Double
+  ): Margin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottom")(bottom)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("equalTo")(equalTo)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("equalsApprox")(equalsApprox)
+    __obj.updateDynamic("isReal")(isReal)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("right")(right)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("setTo")(setTo)
+    __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[Margin]
+  }
+}
+

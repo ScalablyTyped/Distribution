@@ -12,3 +12,16 @@ trait GooglePrivacyDlpV2beta1AnalyzeDataSourceRiskRequest extends js.Object {
   var sourceTable: js.UndefOr[GooglePrivacyDlpV2beta1BigQueryTable] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1AnalyzeDataSourceRiskRequest {
+  @scala.inline
+  def apply(
+    privacyMetric: GooglePrivacyDlpV2beta1PrivacyMetric = null,
+    sourceTable: GooglePrivacyDlpV2beta1BigQueryTable = null
+  ): GooglePrivacyDlpV2beta1AnalyzeDataSourceRiskRequest = {
+    val __obj = js.Dynamic.literal()
+    if (privacyMetric != null) __obj.updateDynamic("privacyMetric")(privacyMetric)
+    if (sourceTable != null) __obj.updateDynamic("sourceTable")(sourceTable)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1AnalyzeDataSourceRiskRequest]
+  }
+}
+

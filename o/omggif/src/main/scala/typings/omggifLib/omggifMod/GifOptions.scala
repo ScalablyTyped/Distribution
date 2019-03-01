@@ -11,3 +11,18 @@ trait GifOptions extends js.Object {
   var palette: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object GifOptions {
+  @scala.inline
+  def apply(
+    background: scala.Int | scala.Double = null,
+    loop: scala.Int | scala.Double = null,
+    palette: js.Array[scala.Double] = null
+  ): GifOptions = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (palette != null) __obj.updateDynamic("palette")(palette)
+    __obj.asInstanceOf[GifOptions]
+  }
+}
+

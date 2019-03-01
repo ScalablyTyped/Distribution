@@ -26,3 +26,22 @@ trait ASPxClientConstantLine extends ASPxClientWebChartElementNamed {
   var value: js.Object
 }
 
+object ASPxClientConstantLine {
+  @scala.inline
+  def apply(
+    axis: ASPxClientAxis,
+    chart: ASPxClientWebChart,
+    name: java.lang.String,
+    title: java.lang.String,
+    value: js.Object
+  ): ASPxClientConstantLine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axis")(axis)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ASPxClientConstantLine]
+  }
+}
+

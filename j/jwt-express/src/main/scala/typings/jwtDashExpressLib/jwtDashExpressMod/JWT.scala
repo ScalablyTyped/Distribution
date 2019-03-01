@@ -76,3 +76,38 @@ trait JWT extends js.Object {
   def verify(token: java.lang.String): JWT
 }
 
+object JWT {
+  @scala.inline
+  def apply(
+    expired: scala.Boolean,
+    options: JWTExpressOptions,
+    payload: js.Any,
+    resign: js.Function0[JWT],
+    revoke: js.Function0[JWT],
+    secret: java.lang.String,
+    sign: js.Function1[js.Any, JWT],
+    stale: scala.Boolean,
+    store: js.Function1[expressLib.expressMod.eNs.Response, JWT],
+    toJSON: js.Function0[js.Any],
+    token: java.lang.String,
+    valid: scala.Boolean,
+    verify: js.Function1[java.lang.String, JWT]
+  ): JWT = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expired")(expired)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("payload")(payload)
+    __obj.updateDynamic("resign")(resign)
+    __obj.updateDynamic("revoke")(revoke)
+    __obj.updateDynamic("secret")(secret)
+    __obj.updateDynamic("sign")(sign)
+    __obj.updateDynamic("stale")(stale)
+    __obj.updateDynamic("store")(store)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("token")(token)
+    __obj.updateDynamic("valid")(valid)
+    __obj.updateDynamic("verify")(verify)
+    __obj.asInstanceOf[JWT]
+  }
+}
+

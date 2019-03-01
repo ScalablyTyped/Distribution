@@ -106,3 +106,62 @@ trait MarkupSet extends js.Object {
   var textarea: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
+object MarkupSet {
+  @scala.inline
+  def apply(
+    afterInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
+    afterMultiInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
+    altKey: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
+    beforeMultiInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
+    caretPosition: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    closeBlockWith: java.lang.String | (js.Function1[MarkupSet, java.lang.String]) = null,
+    closeWith: java.lang.String | (js.Function1[MarkupSet, java.lang.String]) = null,
+    ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
+    dropMenu: js.Array[MarkupSet] = null,
+    keepDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    line: scala.Int | scala.Double = null,
+    multiline: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    openBlockWith: java.lang.String | (js.Function1[MarkupSet, java.lang.String]) = null,
+    openWith: java.lang.String | (js.Function1[MarkupSet, java.lang.String]) = null,
+    placeHolder: java.lang.String | (js.Function1[MarkupSet, java.lang.String]) = null,
+    replaceWith: java.lang.String | (js.Function1[MarkupSet, java.lang.String]) = null,
+    scrollPosition: scala.Int | scala.Double = null,
+    selection: java.lang.String = null,
+    separator: java.lang.String = null,
+    shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
+    textarea: stdLib.HTMLElement = null
+  ): MarkupSet = {
+    val __obj = js.Dynamic.literal()
+    if (afterInsert != null) __obj.updateDynamic("afterInsert")(afterInsert)
+    if (afterMultiInsert != null) __obj.updateDynamic("afterMultiInsert")(afterMultiInsert)
+    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
+    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(beforeInsert)
+    if (beforeMultiInsert != null) __obj.updateDynamic("beforeMultiInsert")(beforeMultiInsert)
+    if (caretPosition != null) __obj.updateDynamic("caretPosition")(caretPosition.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (closeBlockWith != null) __obj.updateDynamic("closeBlockWith")(closeBlockWith.asInstanceOf[js.Any])
+    if (closeWith != null) __obj.updateDynamic("closeWith")(closeWith.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey)
+    if (dropMenu != null) __obj.updateDynamic("dropMenu")(dropMenu)
+    if (!js.isUndefined(keepDefault)) __obj.updateDynamic("keepDefault")(keepDefault)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (openBlockWith != null) __obj.updateDynamic("openBlockWith")(openBlockWith.asInstanceOf[js.Any])
+    if (openWith != null) __obj.updateDynamic("openWith")(openWith.asInstanceOf[js.Any])
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
+    if (replaceWith != null) __obj.updateDynamic("replaceWith")(replaceWith.asInstanceOf[js.Any])
+    if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
+    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey)
+    if (textarea != null) __obj.updateDynamic("textarea")(textarea)
+    __obj.asInstanceOf[MarkupSet]
+  }
+}
+

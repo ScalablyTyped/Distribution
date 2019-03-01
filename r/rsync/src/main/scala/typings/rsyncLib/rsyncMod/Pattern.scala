@@ -10,3 +10,13 @@ trait Pattern extends js.Object {
   var pattern: java.lang.String
 }
 
+object Pattern {
+  @scala.inline
+  def apply(action: java.lang.String, pattern: java.lang.String): Pattern = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("pattern")(pattern)
+    __obj.asInstanceOf[Pattern]
+  }
+}
+

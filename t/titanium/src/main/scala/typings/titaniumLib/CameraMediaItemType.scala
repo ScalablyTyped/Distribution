@@ -44,3 +44,28 @@ trait CameraMediaItemType extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CameraMediaItemType {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    cropRect: CropRectType = null,
+    error: java.lang.String = null,
+    livePhoto: titaniumLib.TitaniumNs.UINs.iOSNs.LivePhoto = null,
+    media: titaniumLib.TitaniumNs.Blob = null,
+    mediaType: java.lang.String = null,
+    previewRect: PreviewRectType = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): CameraMediaItemType = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (cropRect != null) __obj.updateDynamic("cropRect")(cropRect)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (livePhoto != null) __obj.updateDynamic("livePhoto")(livePhoto)
+    if (media != null) __obj.updateDynamic("media")(media)
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    if (previewRect != null) __obj.updateDynamic("previewRect")(previewRect)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[CameraMediaItemType]
+  }
+}
+

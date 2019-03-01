@@ -79,3 +79,40 @@ trait _Impl extends js.Object {
   def onChange(`this`: semanticDashUiDashShapeLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    beforeChange: js.Function1[semanticDashUiDashShapeLib.JQuery, scala.Unit],
+    className: semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.ClassNameSettings,
+    debug: scala.Boolean,
+    duration: scala.Double,
+    error: semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.ErrorSettings,
+    height: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.next | semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.initial | scala.Double,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onChange: js.Function1[semanticDashUiDashShapeLib.JQuery, scala.Unit],
+    performance: scala.Boolean,
+    selector: semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.SelectorSettings,
+    silent: scala.Boolean,
+    verbose: scala.Boolean,
+    width: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.next | semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.initial | scala.Double
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("beforeChange")(beforeChange)
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

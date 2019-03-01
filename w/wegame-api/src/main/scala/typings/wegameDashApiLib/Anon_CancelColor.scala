@@ -39,3 +39,32 @@ trait Anon_CancelColor extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_CancelColor {
+  @scala.inline
+  def apply(
+    cancelColor: java.lang.String = null,
+    cancelText: java.lang.String = null,
+    complete: js.Function0[scala.Unit] = null,
+    confirmColor: java.lang.String = null,
+    confirmText: java.lang.String = null,
+    content: java.lang.String = null,
+    fail: js.Function0[scala.Unit] = null,
+    showCancel: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function1[/* res */ Anon_Cancel, scala.Unit] = null,
+    title: java.lang.String = null
+  ): Anon_CancelColor = {
+    val __obj = js.Dynamic.literal()
+    if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (confirmColor != null) __obj.updateDynamic("confirmColor")(confirmColor)
+    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_CancelColor]
+  }
+}
+

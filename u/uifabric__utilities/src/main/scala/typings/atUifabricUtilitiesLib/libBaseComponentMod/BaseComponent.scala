@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent")
 @js.native
-class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
+class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentDotTypesMod.IBaseProps[_] */, TState] protected ()
   extends reactLib.reactMod.Component[TProps, TState, js.Any] {
   /**
     * BaseComponent constructor
@@ -60,8 +60,11 @@ class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
   /**
     * Updates the componentRef (by calling it with "this" when necessary.)
     */
-  /* protected */ def _updateComponentRef(currentProps: IBaseProps[_]): scala.Unit = js.native
-  /* protected */ def _updateComponentRef(currentProps: IBaseProps[_], newProps: IBaseProps[_]): scala.Unit = js.native
+  /* protected */ def _updateComponentRef(currentProps: atUifabricUtilitiesLib.libBaseComponentDotTypesMod.IBaseProps[_]): scala.Unit = js.native
+  /* protected */ def _updateComponentRef(
+    currentProps: atUifabricUtilitiesLib.libBaseComponentDotTypesMod.IBaseProps[_],
+    newProps: atUifabricUtilitiesLib.libBaseComponentDotTypesMod.IBaseProps[_]
+  ): scala.Unit = js.native
   /**
     * Warns when props are required if a condition is met.
     *
@@ -80,13 +83,13 @@ class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
     * @param deprecationMap - The map of deprecations, where key is the prop name and the value is
     * either null or a replacement prop name.
     */
-  /* protected */ def _warnDeprecations(deprecationMap: atUifabricUtilitiesLib.libWarnMod.ISettingsMap[TProps]): scala.Unit = js.native
+  /* protected */ def _warnDeprecations(deprecationMap: atUifabricUtilitiesLib.libWarnWarnMod.ISettingsMap[TProps]): scala.Unit = js.native
   /**
     * Warns when props which are mutually exclusive with each other are both used.
     *
     * @param mutuallyExclusiveMap - The map of mutually exclusive props.
     */
-  /* protected */ def _warnMutuallyExclusive(mutuallyExclusiveMap: atUifabricUtilitiesLib.libWarnMod.ISettingsMap[TProps]): scala.Unit = js.native
+  /* protected */ def _warnMutuallyExclusive(mutuallyExclusiveMap: atUifabricUtilitiesLib.libWarnWarnMod.ISettingsMap[TProps]): scala.Unit = js.native
   /**
     * When the component has mounted, update the componentRef.
     */

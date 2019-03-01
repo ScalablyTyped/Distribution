@@ -12,3 +12,13 @@ trait ListLocationsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListLocationsResponse {
+  @scala.inline
+  def apply(locations: js.Array[Location] = null, nextPageToken: java.lang.String = null): ListLocationsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListLocationsResponse]
+  }
+}
+

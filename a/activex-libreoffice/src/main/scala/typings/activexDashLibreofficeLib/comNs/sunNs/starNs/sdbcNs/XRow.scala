@@ -165,3 +165,62 @@ trait XRow
   def wasNull(): scala.Boolean
 }
 
+object XRow {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getArray: js.Function1[scala.Double, XArray],
+    getBinaryStream: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getBlob: js.Function1[scala.Double, XBlob],
+    getBoolean: js.Function1[scala.Double, scala.Boolean],
+    getByte: js.Function1[scala.Double, scala.Double],
+    getBytes: js.Function1[scala.Double, activexDashInteropLib.SafeArray[scala.Double]],
+    getCharacterStream: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getClob: js.Function1[scala.Double, XClob],
+    getDate: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getDouble: js.Function1[scala.Double, scala.Double],
+    getFloat: js.Function1[scala.Double, scala.Double],
+    getInt: js.Function1[scala.Double, scala.Double],
+    getLong: js.Function1[scala.Double, scala.Double],
+    getObject: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, 
+      js.Any
+    ],
+    getRef: js.Function1[scala.Double, XRef],
+    getShort: js.Function1[scala.Double, scala.Double],
+    getString: js.Function1[scala.Double, java.lang.String],
+    getTime: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
+    getTimestamp: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    wasNull: js.Function0[scala.Boolean]
+  ): XRow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getArray")(getArray)
+    __obj.updateDynamic("getBinaryStream")(getBinaryStream)
+    __obj.updateDynamic("getBlob")(getBlob)
+    __obj.updateDynamic("getBoolean")(getBoolean)
+    __obj.updateDynamic("getByte")(getByte)
+    __obj.updateDynamic("getBytes")(getBytes)
+    __obj.updateDynamic("getCharacterStream")(getCharacterStream)
+    __obj.updateDynamic("getClob")(getClob)
+    __obj.updateDynamic("getDate")(getDate)
+    __obj.updateDynamic("getDouble")(getDouble)
+    __obj.updateDynamic("getFloat")(getFloat)
+    __obj.updateDynamic("getInt")(getInt)
+    __obj.updateDynamic("getLong")(getLong)
+    __obj.updateDynamic("getObject")(getObject)
+    __obj.updateDynamic("getRef")(getRef)
+    __obj.updateDynamic("getShort")(getShort)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("getTime")(getTime)
+    __obj.updateDynamic("getTimestamp")(getTimestamp)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("wasNull")(wasNull)
+    __obj.asInstanceOf[XRow]
+  }
+}
+

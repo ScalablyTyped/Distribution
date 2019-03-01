@@ -22,3 +22,26 @@ trait AnimateOptions extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AnimateOptions {
+  @scala.inline
+  def apply(
+    anchor: openlayersLib.openlayersMod.Coordinate = null,
+    center: openlayersLib.openlayersMod.Coordinate = null,
+    duration: scala.Int | scala.Double = null,
+    easing: js.Function1[/* t */ scala.Double, scala.Double] = null,
+    resolution: scala.Int | scala.Double = null,
+    rotation: scala.Int | scala.Double = null,
+    zoom: scala.Int | scala.Double = null
+  ): AnimateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnimateOptions]
+  }
+}
+

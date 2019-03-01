@@ -18,3 +18,13 @@ trait IHotkeysProps
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IHotkeysProps {
+  @scala.inline
+  def apply(className: java.lang.String = null, tabIndex: scala.Int | scala.Double = null): IHotkeysProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IHotkeysProps]
+  }
+}
+

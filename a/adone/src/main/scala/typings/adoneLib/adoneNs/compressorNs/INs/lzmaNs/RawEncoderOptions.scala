@@ -12,3 +12,12 @@ trait RawEncoderOptions extends js.Object {
   var filters: js.UndefOr[Filters] = js.undefined
 }
 
+object RawEncoderOptions {
+  @scala.inline
+  def apply(filters: Filters = null): RawEncoderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    __obj.asInstanceOf[RawEncoderOptions]
+  }
+}
+

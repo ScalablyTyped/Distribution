@@ -47,3 +47,30 @@ trait DeploymentState extends js.Object {
   ] = js.undefined
 }
 
+object DeploymentState {
+  @scala.inline
+  def apply(
+    createdDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    executionArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    invokeUrl: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null,
+    stageDescription: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    stageName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    variables: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null
+  ): DeploymentState = {
+    val __obj = js.Dynamic.literal()
+    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (executionArn != null) __obj.updateDynamic("executionArn")(executionArn.asInstanceOf[js.Any])
+    if (invokeUrl != null) __obj.updateDynamic("invokeUrl")(invokeUrl.asInstanceOf[js.Any])
+    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    if (stageDescription != null) __obj.updateDynamic("stageDescription")(stageDescription.asInstanceOf[js.Any])
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeploymentState]
+  }
+}
+

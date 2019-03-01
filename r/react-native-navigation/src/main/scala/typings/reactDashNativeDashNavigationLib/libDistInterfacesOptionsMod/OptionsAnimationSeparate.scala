@@ -39,3 +39,20 @@ trait OptionsAnimationSeparate extends js.Object {
   var waitForRender: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OptionsAnimationSeparate {
+  @scala.inline
+  def apply(
+    bottomTabs: OptionsAnimationPropertiesId = null,
+    content: OptionsAnimationPropertiesId = null,
+    topBar: OptionsAnimationPropertiesId = null,
+    waitForRender: js.UndefOr[scala.Boolean] = js.undefined
+  ): OptionsAnimationSeparate = {
+    val __obj = js.Dynamic.literal()
+    if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (topBar != null) __obj.updateDynamic("topBar")(topBar)
+    if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender)
+    __obj.asInstanceOf[OptionsAnimationSeparate]
+  }
+}
+

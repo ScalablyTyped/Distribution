@@ -35,3 +35,14 @@ trait Page extends js.Object {
   var subpages: js.UndefOr[js.Array[Page]] = js.undefined
 }
 
+object Page {
+  @scala.inline
+  def apply(content: java.lang.String = null, name: java.lang.String = null, subpages: js.Array[Page] = null): Page = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (subpages != null) __obj.updateDynamic("subpages")(subpages)
+    __obj.asInstanceOf[Page]
+  }
+}
+

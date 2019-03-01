@@ -13,3 +13,22 @@ trait InvideoBranding extends js.Object {
   var timing: js.UndefOr[InvideoTiming] = js.undefined
 }
 
+object InvideoBranding {
+  @scala.inline
+  def apply(
+    imageBytes: java.lang.String = null,
+    imageUrl: java.lang.String = null,
+    position: InvideoPosition = null,
+    targetChannelId: java.lang.String = null,
+    timing: InvideoTiming = null
+  ): InvideoBranding = {
+    val __obj = js.Dynamic.literal()
+    if (imageBytes != null) __obj.updateDynamic("imageBytes")(imageBytes)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (targetChannelId != null) __obj.updateDynamic("targetChannelId")(targetChannelId)
+    if (timing != null) __obj.updateDynamic("timing")(timing)
+    __obj.asInstanceOf[InvideoBranding]
+  }
+}
+

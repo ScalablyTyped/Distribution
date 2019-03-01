@@ -14,3 +14,17 @@ trait EntitiesResource extends js.Object {
   def search(request: gapiDotClientDotKgsearchLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchResponse]
 }
 
+object EntitiesResource {
+  @scala.inline
+  def apply(
+    search: js.Function1[
+      gapiDotClientDotKgsearchLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchResponse]
+    ]
+  ): EntitiesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[EntitiesResource]
+  }
+}
+

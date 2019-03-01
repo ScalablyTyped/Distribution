@@ -15,3 +15,26 @@ trait TokenOptions extends js.Object {
   var sub: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TokenOptions {
+  @scala.inline
+  def apply(
+    additionalClaims: js.Object = null,
+    email: java.lang.String = null,
+    iss: java.lang.String = null,
+    key: java.lang.String = null,
+    keyFile: java.lang.String = null,
+    scope: java.lang.String | js.Array[java.lang.String] = null,
+    sub: java.lang.String = null
+  ): TokenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (additionalClaims != null) __obj.updateDynamic("additionalClaims")(additionalClaims)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (iss != null) __obj.updateDynamic("iss")(iss)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (sub != null) __obj.updateDynamic("sub")(sub)
+    __obj.asInstanceOf[TokenOptions]
+  }
+}
+

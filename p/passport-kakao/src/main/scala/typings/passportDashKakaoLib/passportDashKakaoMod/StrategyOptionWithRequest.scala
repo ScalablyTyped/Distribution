@@ -9,3 +9,24 @@ trait StrategyOptionWithRequest extends StrategyOption {
   var passReqToCallback: scala.Boolean
 }
 
+object StrategyOptionWithRequest {
+  @scala.inline
+  def apply(
+    callbackURL: java.lang.String,
+    clientID: java.lang.String,
+    clientSecret: java.lang.String,
+    passReqToCallback: scala.Boolean,
+    customHeaders: java.lang.String = null,
+    scopeSeparator: java.lang.String = null
+  ): StrategyOptionWithRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callbackURL")(callbackURL)
+    __obj.updateDynamic("clientID")(clientID)
+    __obj.updateDynamic("clientSecret")(clientSecret)
+    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
+    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator)
+    __obj.asInstanceOf[StrategyOptionWithRequest]
+  }
+}
+

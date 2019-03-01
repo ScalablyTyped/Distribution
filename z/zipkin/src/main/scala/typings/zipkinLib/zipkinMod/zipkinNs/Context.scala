@@ -12,3 +12,20 @@ trait Context[T] extends js.Object {
   def setContext(ctx: T): scala.Unit
 }
 
+object Context {
+  @scala.inline
+  def apply[T](
+    getContext: js.Function0[T],
+    letContext: js.Function2[T, js.Function0[js.Any], js.Any],
+    scoped: js.Function1[js.Function0[js.Any], js.Any],
+    setContext: js.Function1[T, scala.Unit]
+  ): Context[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getContext")(getContext)
+    __obj.updateDynamic("letContext")(letContext)
+    __obj.updateDynamic("scoped")(scoped)
+    __obj.updateDynamic("setContext")(setContext)
+    __obj.asInstanceOf[Context[T]]
+  }
+}
+

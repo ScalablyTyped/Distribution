@@ -12,3 +12,20 @@ trait Anon_CardEnrollmentId extends js.Object {
   var smsCode: java.lang.String
 }
 
+object Anon_CardEnrollmentId {
+  @scala.inline
+  def apply(
+    card: js.Any,
+    enrollmentId: java.lang.String,
+    hostedFields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFields,
+    smsCode: java.lang.String
+  ): Anon_CardEnrollmentId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("card")(card)
+    __obj.updateDynamic("enrollmentId")(enrollmentId)
+    __obj.updateDynamic("hostedFields")(hostedFields)
+    __obj.updateDynamic("smsCode")(smsCode)
+    __obj.asInstanceOf[Anon_CardEnrollmentId]
+  }
+}
+

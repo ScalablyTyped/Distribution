@@ -31,3 +31,18 @@ trait SourceProvenance extends js.Object {
   var resolvedStorageSource: js.UndefOr[StorageSource] = js.undefined
 }
 
+object SourceProvenance {
+  @scala.inline
+  def apply(
+    fileHashes: stdLib.Record[java.lang.String, FileHashes] = null,
+    resolvedRepoSource: RepoSource = null,
+    resolvedStorageSource: StorageSource = null
+  ): SourceProvenance = {
+    val __obj = js.Dynamic.literal()
+    if (fileHashes != null) __obj.updateDynamic("fileHashes")(fileHashes)
+    if (resolvedRepoSource != null) __obj.updateDynamic("resolvedRepoSource")(resolvedRepoSource)
+    if (resolvedStorageSource != null) __obj.updateDynamic("resolvedStorageSource")(resolvedStorageSource)
+    __obj.asInstanceOf[SourceProvenance]
+  }
+}
+

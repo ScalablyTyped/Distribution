@@ -17,3 +17,13 @@ trait Image extends js.Object {
   var imageProperties: js.UndefOr[ImageProperties] = js.undefined
 }
 
+object Image {
+  @scala.inline
+  def apply(contentUrl: java.lang.String = null, imageProperties: ImageProperties = null): Image = {
+    val __obj = js.Dynamic.literal()
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    if (imageProperties != null) __obj.updateDynamic("imageProperties")(imageProperties)
+    __obj.asInstanceOf[Image]
+  }
+}
+

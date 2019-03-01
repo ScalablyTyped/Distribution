@@ -55,3 +55,24 @@ trait TableRowUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object TableRowUpdateData {
+  @scala.inline
+  def apply(
+    font: FontUpdateData = null,
+    horizontalAlignment: officeDashJsDashPreviewLib.WordNs.Alignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Mixed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Centered | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justified = null,
+    preferredHeight: scala.Int | scala.Double = null,
+    shadingColor: java.lang.String = null,
+    values: js.Array[js.Array[java.lang.String]] = null,
+    verticalAlignment: officeDashJsDashPreviewLib.WordNs.VerticalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Mixed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Top | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bottom = null
+  ): TableRowUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (preferredHeight != null) __obj.updateDynamic("preferredHeight")(preferredHeight.asInstanceOf[js.Any])
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
+    if (values != null) __obj.updateDynamic("values")(values)
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableRowUpdateData]
+  }
+}
+

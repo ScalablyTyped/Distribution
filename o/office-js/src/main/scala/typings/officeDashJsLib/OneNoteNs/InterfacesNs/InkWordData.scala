@@ -30,3 +30,18 @@ trait InkWordData extends js.Object {
   var wordAlternates: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object InkWordData {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    languageId: java.lang.String = null,
+    wordAlternates: js.Array[java.lang.String] = null
+  ): InkWordData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (languageId != null) __obj.updateDynamic("languageId")(languageId)
+    if (wordAlternates != null) __obj.updateDynamic("wordAlternates")(wordAlternates)
+    __obj.asInstanceOf[InkWordData]
+  }
+}
+

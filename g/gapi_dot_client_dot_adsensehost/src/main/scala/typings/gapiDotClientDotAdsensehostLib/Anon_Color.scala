@@ -14,3 +14,14 @@ trait Anon_Color extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Color {
+  @scala.inline
+  def apply(color: java.lang.String = null, `type`: java.lang.String = null, url: java.lang.String = null): Anon_Color = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_Color]
+  }
+}
+

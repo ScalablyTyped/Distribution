@@ -9,3 +9,12 @@ trait ElmComponent[P] extends js.Object {
   var ports: P
 }
 
+object ElmComponent {
+  @scala.inline
+  def apply[P](ports: P): ElmComponent[P] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ElmComponent[P]]
+  }
+}
+

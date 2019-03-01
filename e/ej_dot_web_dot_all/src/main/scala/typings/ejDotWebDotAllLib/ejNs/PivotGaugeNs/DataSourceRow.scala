@@ -15,3 +15,13 @@ trait DataSourceRow extends js.Object {
   var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.undefined
 }
 
+object DataSourceRow {
+  @scala.inline
+  def apply(fieldName: java.lang.String = null, filterItems: DataSourceRowsFilterItems = null): DataSourceRow = {
+    val __obj = js.Dynamic.literal()
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems)
+    __obj.asInstanceOf[DataSourceRow]
+  }
+}
+

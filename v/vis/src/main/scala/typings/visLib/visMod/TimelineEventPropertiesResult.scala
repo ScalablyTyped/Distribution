@@ -48,3 +48,32 @@ trait TimelineEventPropertiesResult extends js.Object {
   var y: scala.Double
 }
 
+object TimelineEventPropertiesResult {
+  @scala.inline
+  def apply(
+    event: stdLib.Event,
+    pageX: scala.Double,
+    pageY: scala.Double,
+    snappedTime: stdLib.Date,
+    time: stdLib.Date,
+    x: scala.Double,
+    y: scala.Double,
+    group: scala.Int | scala.Double = null,
+    item: IdType = null,
+    what: TimelineEventPropertiesResultWhatType = null
+  ): TimelineEventPropertiesResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("pageX")(pageX)
+    __obj.updateDynamic("pageY")(pageY)
+    __obj.updateDynamic("snappedTime")(snappedTime)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (what != null) __obj.updateDynamic("what")(what)
+    __obj.asInstanceOf[TimelineEventPropertiesResult]
+  }
+}
+

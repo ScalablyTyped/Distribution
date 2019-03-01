@@ -13,3 +13,22 @@ trait WrapStoryProps extends js.Object {
   var storyFn: js.UndefOr[atStorybookReactLib.atStorybookReactMod.RenderFunction] = js.undefined
 }
 
+object WrapStoryProps {
+  @scala.inline
+  def apply(
+    channel: js.Object = null,
+    context: js.Object = null,
+    initialContent: js.Object = null,
+    knobStore: js.Object = null,
+    storyFn: atStorybookReactLib.atStorybookReactMod.RenderFunction = null
+  ): WrapStoryProps = {
+    val __obj = js.Dynamic.literal()
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (initialContent != null) __obj.updateDynamic("initialContent")(initialContent)
+    if (knobStore != null) __obj.updateDynamic("knobStore")(knobStore)
+    if (storyFn != null) __obj.updateDynamic("storyFn")(storyFn)
+    __obj.asInstanceOf[WrapStoryProps]
+  }
+}
+

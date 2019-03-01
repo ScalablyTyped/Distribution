@@ -21,3 +21,22 @@ trait CalendarList extends js.Object {
   var nextSyncToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CalendarList {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    items: js.Array[CalendarListEntry] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    nextSyncToken: java.lang.String = null
+  ): CalendarList = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken)
+    __obj.asInstanceOf[CalendarList]
+  }
+}
+

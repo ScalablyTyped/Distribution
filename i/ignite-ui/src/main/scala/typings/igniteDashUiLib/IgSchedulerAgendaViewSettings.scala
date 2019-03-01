@@ -17,3 +17,19 @@ trait IgSchedulerAgendaViewSettings
   var dateRangeInterval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgSchedulerAgendaViewSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgSchedulerAgendaViewSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    dateRangeInterval: scala.Int | scala.Double = null
+  ): IgSchedulerAgendaViewSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dateRangeInterval != null) __obj.updateDynamic("dateRangeInterval")(dateRangeInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgSchedulerAgendaViewSettings]
+  }
+}
+

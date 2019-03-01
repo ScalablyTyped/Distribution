@@ -34,3 +34,26 @@ trait Anon_CustomRichMediaEvents extends js.Object {
   var reportProperties: js.UndefOr[Anon_IncludeAttributedIPConversions] = js.undefined
 }
 
+object Anon_CustomRichMediaEvents {
+  @scala.inline
+  def apply(
+    customRichMediaEvents: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue] = null,
+    dateRange: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DateRange = null,
+    dimensionFilters: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue] = null,
+    dimensions: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.SortedDimension] = null,
+    floodlightConfigId: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue = null,
+    metricNames: js.Array[java.lang.String] = null,
+    reportProperties: Anon_IncludeAttributedIPConversions = null
+  ): Anon_CustomRichMediaEvents = {
+    val __obj = js.Dynamic.literal()
+    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents)
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (floodlightConfigId != null) __obj.updateDynamic("floodlightConfigId")(floodlightConfigId)
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
+    if (reportProperties != null) __obj.updateDynamic("reportProperties")(reportProperties)
+    __obj.asInstanceOf[Anon_CustomRichMediaEvents]
+  }
+}
+

@@ -20,3 +20,24 @@ trait LogEvent extends js.Object {
   var timestamp: java.lang.String
 }
 
+object LogEvent {
+  @scala.inline
+  def apply(
+    channel: hapiLib.hapiLibStrings.internal | hapiLib.hapiLibStrings.app,
+    data: js.Object,
+    error: js.Object,
+    request: java.lang.String,
+    tags: js.Array[java.lang.String],
+    timestamp: java.lang.String
+  ): LogEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[LogEvent]
+  }
+}
+

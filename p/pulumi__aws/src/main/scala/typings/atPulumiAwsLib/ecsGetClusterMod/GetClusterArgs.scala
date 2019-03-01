@@ -12,3 +12,12 @@ trait GetClusterArgs extends js.Object {
   val clusterName: java.lang.String
 }
 
+object GetClusterArgs {
+  @scala.inline
+  def apply(clusterName: java.lang.String): GetClusterArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clusterName")(clusterName)
+    __obj.asInstanceOf[GetClusterArgs]
+  }
+}
+

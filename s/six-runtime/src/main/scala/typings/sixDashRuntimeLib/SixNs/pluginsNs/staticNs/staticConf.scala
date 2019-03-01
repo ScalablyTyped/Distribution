@@ -10,3 +10,13 @@ trait staticConf extends js.Object {
   var rootPath: java.lang.String
 }
 
+object staticConf {
+  @scala.inline
+  def apply(cacheConf: cacheConf, rootPath: java.lang.String): staticConf = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cacheConf")(cacheConf)
+    __obj.updateDynamic("rootPath")(rootPath)
+    __obj.asInstanceOf[staticConf]
+  }
+}
+

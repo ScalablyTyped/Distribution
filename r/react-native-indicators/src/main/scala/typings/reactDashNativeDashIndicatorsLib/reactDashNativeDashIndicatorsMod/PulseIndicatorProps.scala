@@ -18,3 +18,20 @@ trait PulseIndicatorProps extends BaseIndicatorProps {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PulseIndicatorProps {
+  @scala.inline
+  def apply(
+    animationDuration: scala.Int | scala.Double = null,
+    animationEasing: reactDashNativeLib.reactDashNativeMod.EasingFunction = null,
+    color: java.lang.String = null,
+    size: scala.Int | scala.Double = null
+  ): PulseIndicatorProps = {
+    val __obj = js.Dynamic.literal()
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PulseIndicatorProps]
+  }
+}
+

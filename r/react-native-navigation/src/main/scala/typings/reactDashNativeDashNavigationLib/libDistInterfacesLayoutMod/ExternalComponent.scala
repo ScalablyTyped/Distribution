@@ -24,3 +24,20 @@ trait ExternalComponent extends js.Object {
   var passProps: js.UndefOr[js.Object] = js.undefined
 }
 
+object ExternalComponent {
+  @scala.inline
+  def apply(
+    name: java.lang.String | scala.Double,
+    id: java.lang.String = null,
+    options: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options = null,
+    passProps: js.Object = null
+  ): ExternalComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (passProps != null) __obj.updateDynamic("passProps")(passProps)
+    __obj.asInstanceOf[ExternalComponent]
+  }
+}
+

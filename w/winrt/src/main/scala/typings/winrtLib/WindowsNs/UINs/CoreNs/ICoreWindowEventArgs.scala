@@ -9,3 +9,12 @@ trait ICoreWindowEventArgs extends js.Object {
   var handled: scala.Boolean
 }
 
+object ICoreWindowEventArgs {
+  @scala.inline
+  def apply(handled: scala.Boolean): ICoreWindowEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handled")(handled)
+    __obj.asInstanceOf[ICoreWindowEventArgs]
+  }
+}
+

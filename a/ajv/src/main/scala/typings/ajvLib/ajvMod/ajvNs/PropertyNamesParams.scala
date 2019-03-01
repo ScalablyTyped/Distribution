@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PropertyNamesParams extends js.Object {
+trait PropertyNamesParams extends ErrorParameters {
   var propertyName: java.lang.String
+}
+
+object PropertyNamesParams {
+  @scala.inline
+  def apply(propertyName: java.lang.String): PropertyNamesParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("propertyName")(propertyName)
+    __obj.asInstanceOf[PropertyNamesParams]
+  }
 }
 

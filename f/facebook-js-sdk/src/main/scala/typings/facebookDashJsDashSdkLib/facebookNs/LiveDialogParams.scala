@@ -13,3 +13,24 @@ trait LiveDialogParams extends DialogParams {
   var phase: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.create | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.publish
 }
 
+object LiveDialogParams {
+  @scala.inline
+  def apply(
+    display: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.popup | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.iframe,
+    method: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.live_broadcast,
+    phase: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.create | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.publish,
+    app_id: java.lang.String = null,
+    broadcast_data: LiveDialogResponse = null,
+    redirect_uri: java.lang.String = null
+  ): LiveDialogParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("phase")(phase.asInstanceOf[js.Any])
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
+    if (broadcast_data != null) __obj.updateDynamic("broadcast_data")(broadcast_data)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    __obj.asInstanceOf[LiveDialogParams]
+  }
+}
+

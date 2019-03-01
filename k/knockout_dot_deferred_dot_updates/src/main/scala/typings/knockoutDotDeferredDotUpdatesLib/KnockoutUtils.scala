@@ -11,3 +11,16 @@ trait KnockoutUtils extends js.Object {
   def objectMap(source: js.Any, mapping: js.Function): js.Any
 }
 
+object KnockoutUtils {
+  @scala.inline
+  def apply(
+    objectForEach: js.Function2[js.Any, js.Function, scala.Unit],
+    objectMap: js.Function2[js.Any, js.Function, js.Any]
+  ): KnockoutUtils = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("objectForEach")(objectForEach)
+    __obj.updateDynamic("objectMap")(objectMap)
+    __obj.asInstanceOf[KnockoutUtils]
+  }
+}
+

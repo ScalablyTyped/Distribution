@@ -18,3 +18,32 @@ trait RowDescriptor extends js.Object {
   var title: java.lang.String
 }
 
+object RowDescriptor {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    isRead: java.lang.String,
+    labels: js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.ListsNs.LabelDescriptor],
+    shortDetailText: java.lang.String,
+    title: java.lang.String,
+    iconClass: java.lang.String = null,
+    iconUrl: java.lang.String = null,
+    onClick: js.Function0[scala.Unit] = null,
+    routeID: java.lang.String = null,
+    routeParams: js.Array[java.lang.String] = null
+  ): RowDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("isRead")(isRead)
+    __obj.updateDynamic("labels")(labels)
+    __obj.updateDynamic("shortDetailText")(shortDetailText)
+    __obj.updateDynamic("title")(title)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (routeID != null) __obj.updateDynamic("routeID")(routeID)
+    if (routeParams != null) __obj.updateDynamic("routeParams")(routeParams)
+    __obj.asInstanceOf[RowDescriptor]
+  }
+}
+

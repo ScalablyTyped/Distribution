@@ -21,3 +21,37 @@ trait ExclusionsResource extends js.Object {
   def patch(request: gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion]
 }
 
+object ExclusionsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion]
+    ],
+    list: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListExclusionsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogExclusion]
+    ]
+  ): ExclusionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.asInstanceOf[ExclusionsResource]
+  }
+}
+

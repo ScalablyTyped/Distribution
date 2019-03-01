@@ -28,3 +28,22 @@ trait NetworkInterfaceAttachmentState extends js.Object {
   val status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object NetworkInterfaceAttachmentState {
+  @scala.inline
+  def apply(
+    attachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    deviceIndex: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    instanceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): NetworkInterfaceAttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
+    if (deviceIndex != null) __obj.updateDynamic("deviceIndex")(deviceIndex.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkInterfaceAttachmentState]
+  }
+}
+

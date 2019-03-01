@@ -13,3 +13,22 @@ trait RmdirParams extends js.Object {
   var success: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object RmdirParams {
+  @scala.inline
+  def apply(
+    dirPath: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
+    recursive: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function0[scala.Unit] = null
+  ): RmdirParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dirPath")(dirPath)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[RmdirParams]
+  }
+}
+

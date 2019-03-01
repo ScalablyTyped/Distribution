@@ -22,3 +22,22 @@ trait DashboardGroup extends js.Object {
   var url: java.lang.String
 }
 
+object DashboardGroup {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    dashboardEntries: js.Array[DashboardGroupEntry],
+    permission: GroupMemberPermission,
+    teamDashboardPermission: TeamDashboardPermission,
+    url: java.lang.String
+  ): DashboardGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("dashboardEntries")(dashboardEntries)
+    __obj.updateDynamic("permission")(permission)
+    __obj.updateDynamic("teamDashboardPermission")(teamDashboardPermission)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[DashboardGroup]
+  }
+}
+

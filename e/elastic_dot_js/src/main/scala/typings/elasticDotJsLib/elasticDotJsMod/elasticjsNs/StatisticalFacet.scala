@@ -66,3 +66,38 @@ trait StatisticalFacet extends Facet {
   def toJSON(): js.Any
 }
 
+object StatisticalFacet {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cacheFilter: js.Function1[scala.Boolean, StatisticalFacet],
+    facetFilter: js.Function1[js.Object, StatisticalFacet],
+    field: js.Function1[java.lang.String, StatisticalFacet],
+    fields: js.Function1[js.Array[_], StatisticalFacet],
+    global: js.Function1[scala.Boolean, StatisticalFacet],
+    lang: js.Function1[java.lang.String, StatisticalFacet],
+    mode: js.Function1[java.lang.String, StatisticalFacet],
+    nested: js.Function1[java.lang.String, StatisticalFacet],
+    params: js.Function1[js.Object, StatisticalFacet],
+    scope: js.Function1[java.lang.String, StatisticalFacet],
+    script: js.Function1[java.lang.String, StatisticalFacet],
+    toJSON: js.Function0[js.Any]
+  ): StatisticalFacet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cacheFilter")(cacheFilter)
+    __obj.updateDynamic("facetFilter")(facetFilter)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("global")(global)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("nested")(nested)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[StatisticalFacet]
+  }
+}
+

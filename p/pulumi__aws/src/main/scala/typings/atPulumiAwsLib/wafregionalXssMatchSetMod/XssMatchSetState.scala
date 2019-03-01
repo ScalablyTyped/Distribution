@@ -22,3 +22,20 @@ trait XssMatchSetState extends js.Object {
   ] = js.undefined
 }
 
+object XssMatchSetState {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    xssMatchTuples: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FieldToMatchTextTransformationAnonDataTypeInput]
+      ]
+    ] = null
+  ): XssMatchSetState = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (xssMatchTuples != null) __obj.updateDynamic("xssMatchTuples")(xssMatchTuples.asInstanceOf[js.Any])
+    __obj.asInstanceOf[XssMatchSetState]
+  }
+}
+

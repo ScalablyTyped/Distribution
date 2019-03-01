@@ -10,3 +10,17 @@ trait CseResource extends js.Object {
   def list(request: gapiDotClientDotCustomsearchLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Search]
 }
 
+object CseResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotCustomsearchLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Search]
+    ]
+  ): CseResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[CseResource]
+  }
+}
+

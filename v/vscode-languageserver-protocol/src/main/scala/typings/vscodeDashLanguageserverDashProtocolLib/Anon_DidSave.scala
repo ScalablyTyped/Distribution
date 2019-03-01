@@ -26,3 +26,20 @@ trait Anon_DidSave extends js.Object {
   var willSaveWaitUntil: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_DidSave {
+  @scala.inline
+  def apply(
+    didSave: js.UndefOr[scala.Boolean] = js.undefined,
+    dynamicRegistration: js.UndefOr[scala.Boolean] = js.undefined,
+    willSave: js.UndefOr[scala.Boolean] = js.undefined,
+    willSaveWaitUntil: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_DidSave = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(didSave)) __obj.updateDynamic("didSave")(didSave)
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
+    if (!js.isUndefined(willSave)) __obj.updateDynamic("willSave")(willSave)
+    if (!js.isUndefined(willSaveWaitUntil)) __obj.updateDynamic("willSaveWaitUntil")(willSaveWaitUntil)
+    __obj.asInstanceOf[Anon_DidSave]
+  }
+}
+

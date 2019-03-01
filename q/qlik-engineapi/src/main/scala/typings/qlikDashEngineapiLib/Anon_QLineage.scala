@@ -9,3 +9,12 @@ trait Anon_QLineage extends js.Object {
   var qLineage: js.Array[Anon_QDiscriminator]
 }
 
+object Anon_QLineage {
+  @scala.inline
+  def apply(qLineage: js.Array[Anon_QDiscriminator]): Anon_QLineage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qLineage")(qLineage)
+    __obj.asInstanceOf[Anon_QLineage]
+  }
+}
+

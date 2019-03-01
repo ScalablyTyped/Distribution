@@ -5,7 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Space extends js.Object {
+trait Space
+  extends markedLib.markedMod.markedNs.Token {
   var `type`: markedLib.markedLibStrings.space
+}
+
+object Space {
+  @scala.inline
+  def apply(`type`: markedLib.markedLibStrings.space): Space = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Space]
+  }
 }
 

@@ -34,3 +34,24 @@ trait GoogleAuthOptions extends js.Object {
   var scopes: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object GoogleAuthOptions {
+  @scala.inline
+  def apply(
+    clientOptions: googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWTOptions | googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.OAuth2ClientOptions | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClientOptions = null,
+    credentials: googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody = null,
+    keyFile: java.lang.String = null,
+    keyFilename: java.lang.String = null,
+    projectId: java.lang.String = null,
+    scopes: java.lang.String | js.Array[java.lang.String] = null
+  ): GoogleAuthOptions = {
+    val __obj = js.Dynamic.literal()
+    if (clientOptions != null) __obj.updateDynamic("clientOptions")(clientOptions.asInstanceOf[js.Any])
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)
+    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GoogleAuthOptions]
+  }
+}
+

@@ -24,3 +24,20 @@ trait XDataSink
   def setData(aData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XLabeledDataSequence]): scala.Unit
 }
 
+object XDataSink {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setData: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XLabeledDataSequence], scala.Unit]
+  ): XDataSink = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setData")(setData)
+    __obj.asInstanceOf[XDataSink]
+  }
+}
+

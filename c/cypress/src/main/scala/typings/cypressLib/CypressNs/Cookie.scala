@@ -15,3 +15,26 @@ trait Cookie extends js.Object {
   var value: java.lang.String
 }
 
+object Cookie {
+  @scala.inline
+  def apply(
+    domain: java.lang.String,
+    httpOnly: scala.Boolean,
+    name: java.lang.String,
+    path: java.lang.String,
+    secure: scala.Boolean,
+    value: java.lang.String,
+    expiry: java.lang.String = null
+  ): Cookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("httpOnly")(httpOnly)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("secure")(secure)
+    __obj.updateDynamic("value")(value)
+    if (expiry != null) __obj.updateDynamic("expiry")(expiry)
+    __obj.asInstanceOf[Cookie]
+  }
+}
+

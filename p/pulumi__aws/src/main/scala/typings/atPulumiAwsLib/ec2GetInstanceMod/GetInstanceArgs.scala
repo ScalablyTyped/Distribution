@@ -28,3 +28,22 @@ trait GetInstanceArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetInstanceArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    getPasswordData: js.UndefOr[scala.Boolean] = js.undefined,
+    instanceId: java.lang.String = null,
+    instanceTags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetInstanceArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(getPasswordData)) __obj.updateDynamic("getPasswordData")(getPasswordData)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (instanceTags != null) __obj.updateDynamic("instanceTags")(instanceTags)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetInstanceArgs]
+  }
+}
+

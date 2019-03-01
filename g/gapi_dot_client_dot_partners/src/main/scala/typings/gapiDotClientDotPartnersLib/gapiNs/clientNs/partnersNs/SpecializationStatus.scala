@@ -12,3 +12,13 @@ trait SpecializationStatus extends js.Object {
   var badgeSpecializationState: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SpecializationStatus {
+  @scala.inline
+  def apply(badgeSpecialization: java.lang.String = null, badgeSpecializationState: java.lang.String = null): SpecializationStatus = {
+    val __obj = js.Dynamic.literal()
+    if (badgeSpecialization != null) __obj.updateDynamic("badgeSpecialization")(badgeSpecialization)
+    if (badgeSpecializationState != null) __obj.updateDynamic("badgeSpecializationState")(badgeSpecializationState)
+    __obj.asInstanceOf[SpecializationStatus]
+  }
+}
+

@@ -23,3 +23,46 @@ trait HierarchyDataReadAccess
      with activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XChangesNotifier
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
 
+object HierarchyDataReadAccess {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    addChangesListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XChangesListener, scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChangesListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XChangesListener, scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): HierarchyDataReadAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementNames")(ElementNames)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addChangesListener")(addChangesListener)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
+    __obj.updateDynamic("getByName")(getByName)
+    __obj.updateDynamic("getElementNames")(getElementNames)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
+    __obj.updateDynamic("hasByName")(hasByName)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeChangesListener")(removeChangesListener)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[HierarchyDataReadAccess]
+  }
+}
+

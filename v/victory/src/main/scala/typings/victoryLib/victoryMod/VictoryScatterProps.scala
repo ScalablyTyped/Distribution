@@ -96,3 +96,69 @@ trait VictoryScatterProps
   var symbol: js.UndefOr[ScatterSymbolType | victoryLib.Anon_DataAny] = js.undefined
 }
 
+object VictoryScatterProps {
+  @scala.inline
+  def apply(
+    animate: AnimatePropTypeInterface = null,
+    bubbleProperty: java.lang.String = null,
+    categories: CategoryPropType = null,
+    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    data: js.Array[_] = null,
+    dataComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    domain: DomainPropType = null,
+    eventKey: StringOrNumberOrCallback = null,
+    events: js.Array[
+      EventPropTypeInterface[
+        victoryLib.victoryLibStrings.data | victoryLib.victoryLibStrings.labels | victoryLib.victoryLibStrings.parent, 
+        StringOrNumberOrCallback
+      ]
+    ] = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    height: scala.Int | scala.Double = null,
+    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
+    maxBubbleSize: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    samples: scala.Int | scala.Double = null,
+    scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
+    size: scala.Double | victoryLib.Anon_Data = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    style: VictoryStyleInterface = null,
+    symbol: ScatterSymbolType | victoryLib.Anon_DataAny = null,
+    theme: VictoryThemeDefinition = null,
+    width: scala.Int | scala.Double = null,
+    x: DataGetterPropType = null,
+    y: DataGetterPropType = null
+  ): VictoryScatterProps = {
+    val __obj = js.Dynamic.literal()
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (bubbleProperty != null) __obj.updateDynamic("bubbleProperty")(bubbleProperty)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (maxBubbleSize != null) __obj.updateDynamic("maxBubbleSize")(maxBubbleSize.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryScatterProps]
+  }
+}
+

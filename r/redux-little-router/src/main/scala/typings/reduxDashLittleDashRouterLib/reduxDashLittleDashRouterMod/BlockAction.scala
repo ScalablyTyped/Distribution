@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait BlockAction extends js.Object {
+trait BlockAction extends RouterActions {
   @JSName("payload")
   var payload_Original: reduxDashLittleDashRouterLib.BlockCallback = js.native
   var `type`: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.ROUTER_BLOCK = js.native

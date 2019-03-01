@@ -34,3 +34,36 @@ trait ConnectFailoverOptions extends js.Object {
   var useExponentialBackOff: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConnectFailoverOptions {
+  @scala.inline
+  def apply(
+    connectFunction: js.Function2[
+      /* options */ stompitLib.libConnectMod.connectNs.ConnectOptions, 
+      /* connectionListener */ js.UndefOr[
+        js.Function2[
+          /* err */ nodeLib.Error | scala.Null, 
+          /* client */ stompitLib.libClientMod.namespaced, 
+          scala.Unit
+        ]
+      ], 
+      stompitLib.libClientMod.namespaced
+    ] = null,
+    initialReconnectDelay: scala.Int | scala.Double = null,
+    maxReconnectDelay: scala.Int | scala.Double = null,
+    maxReconnects: scala.Int | scala.Double = null,
+    randomize: js.UndefOr[scala.Boolean] = js.undefined,
+    reconnectDelayExponent: scala.Int | scala.Double = null,
+    useExponentialBackOff: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConnectFailoverOptions = {
+    val __obj = js.Dynamic.literal()
+    if (connectFunction != null) __obj.updateDynamic("connectFunction")(connectFunction)
+    if (initialReconnectDelay != null) __obj.updateDynamic("initialReconnectDelay")(initialReconnectDelay.asInstanceOf[js.Any])
+    if (maxReconnectDelay != null) __obj.updateDynamic("maxReconnectDelay")(maxReconnectDelay.asInstanceOf[js.Any])
+    if (maxReconnects != null) __obj.updateDynamic("maxReconnects")(maxReconnects.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize)
+    if (reconnectDelayExponent != null) __obj.updateDynamic("reconnectDelayExponent")(reconnectDelayExponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExponentialBackOff)) __obj.updateDynamic("useExponentialBackOff")(useExponentialBackOff)
+    __obj.asInstanceOf[ConnectFailoverOptions]
+  }
+}
+

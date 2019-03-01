@@ -24,3 +24,20 @@ trait Outline extends js.Object {
   var weight: js.UndefOr[Dimension] = js.undefined
 }
 
+object Outline {
+  @scala.inline
+  def apply(
+    dashStyle: java.lang.String = null,
+    outlineFill: OutlineFill = null,
+    propertyState: java.lang.String = null,
+    weight: Dimension = null
+  ): Outline = {
+    val __obj = js.Dynamic.literal()
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
+    if (outlineFill != null) __obj.updateDynamic("outlineFill")(outlineFill)
+    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[Outline]
+  }
+}
+

@@ -9,3 +9,12 @@ trait MenuState extends js.Object {
   var openKeys: js.Array[java.lang.String]
 }
 
+object MenuState {
+  @scala.inline
+  def apply(openKeys: js.Array[java.lang.String]): MenuState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("openKeys")(openKeys)
+    __obj.asInstanceOf[MenuState]
+  }
+}
+

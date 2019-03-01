@@ -32,3 +32,22 @@ trait ExportVariantSetRequest extends js.Object {
   var projectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExportVariantSetRequest {
+  @scala.inline
+  def apply(
+    bigqueryDataset: java.lang.String = null,
+    bigqueryTable: java.lang.String = null,
+    callSetIds: js.Array[java.lang.String] = null,
+    format: java.lang.String = null,
+    projectId: java.lang.String = null
+  ): ExportVariantSetRequest = {
+    val __obj = js.Dynamic.literal()
+    if (bigqueryDataset != null) __obj.updateDynamic("bigqueryDataset")(bigqueryDataset)
+    if (bigqueryTable != null) __obj.updateDynamic("bigqueryTable")(bigqueryTable)
+    if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    __obj.asInstanceOf[ExportVariantSetRequest]
+  }
+}
+

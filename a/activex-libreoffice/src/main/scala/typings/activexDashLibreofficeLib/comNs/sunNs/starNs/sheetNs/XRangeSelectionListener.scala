@@ -17,3 +17,24 @@ trait XRangeSelectionListener
   def done(aEvent: RangeSelectionEvent): scala.Unit
 }
 
+object XRangeSelectionListener {
+  @scala.inline
+  def apply(
+    aborted: js.Function1[RangeSelectionEvent, scala.Unit],
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    done: js.Function1[RangeSelectionEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XRangeSelectionListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aborted")(aborted)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("done")(done)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XRangeSelectionListener]
+  }
+}
+

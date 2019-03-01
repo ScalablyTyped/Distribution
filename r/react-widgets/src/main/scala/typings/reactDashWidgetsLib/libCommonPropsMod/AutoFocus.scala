@@ -12,3 +12,12 @@ trait AutoFocus extends js.Object {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AutoFocus {
+  @scala.inline
+  def apply(autoFocus: js.UndefOr[scala.Boolean] = js.undefined): AutoFocus = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    __obj.asInstanceOf[AutoFocus]
+  }
+}
+

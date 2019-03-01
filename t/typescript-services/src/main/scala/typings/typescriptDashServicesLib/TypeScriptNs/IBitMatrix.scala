@@ -11,3 +11,18 @@ trait IBitMatrix extends js.Object {
   def valueAt(x: scala.Double, y: scala.Double): scala.Boolean
 }
 
+object IBitMatrix {
+  @scala.inline
+  def apply(
+    release: js.Function0[scala.Unit],
+    setValueAt: js.Function3[scala.Double, scala.Double, scala.Boolean, scala.Unit],
+    valueAt: js.Function2[scala.Double, scala.Double, scala.Boolean]
+  ): IBitMatrix = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setValueAt")(setValueAt)
+    __obj.updateDynamic("valueAt")(valueAt)
+    __obj.asInstanceOf[IBitMatrix]
+  }
+}
+

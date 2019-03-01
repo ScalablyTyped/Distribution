@@ -120,3 +120,66 @@ trait BucketArgs extends js.Object {
   val websiteEndpoint: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object BucketArgs {
+  @scala.inline
+  def apply(
+    accelerationStatus: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    acl: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.s3CannedAclMod.CannedAcl] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bucketPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    corsRules: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedHeadersAllowedMethods]
+      ]
+    ] = null,
+    forceDestroy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    hostedZoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    lifecycleRules: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AbortIncompleteMultipartUploadDaysEnabled]
+      ]
+    ] = null,
+    loggings: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TargetBucketTargetPrefix]]
+    ] = null,
+    objectLockConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ObjectLockEnabledRule] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    region: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_RoleRules] = null,
+    requestPayer: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    serverSideEncryptionConfiguration: atPulumiPulumiLib.outputMod.Input[
+      atPulumiAwsLib.Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm
+    ] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    versioning: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledMfaDeleteBoolean] = null,
+    website: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ErrorDocumentIndexDocument] = null,
+    websiteDomain: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    websiteEndpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): BucketArgs = {
+    val __obj = js.Dynamic.literal()
+    if (accelerationStatus != null) __obj.updateDynamic("accelerationStatus")(accelerationStatus.asInstanceOf[js.Any])
+    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (bucketPrefix != null) __obj.updateDynamic("bucketPrefix")(bucketPrefix.asInstanceOf[js.Any])
+    if (corsRules != null) __obj.updateDynamic("corsRules")(corsRules.asInstanceOf[js.Any])
+    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
+    if (hostedZoneId != null) __obj.updateDynamic("hostedZoneId")(hostedZoneId.asInstanceOf[js.Any])
+    if (lifecycleRules != null) __obj.updateDynamic("lifecycleRules")(lifecycleRules.asInstanceOf[js.Any])
+    if (loggings != null) __obj.updateDynamic("loggings")(loggings.asInstanceOf[js.Any])
+    if (objectLockConfiguration != null) __obj.updateDynamic("objectLockConfiguration")(objectLockConfiguration.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (replicationConfiguration != null) __obj.updateDynamic("replicationConfiguration")(replicationConfiguration.asInstanceOf[js.Any])
+    if (requestPayer != null) __obj.updateDynamic("requestPayer")(requestPayer.asInstanceOf[js.Any])
+    if (serverSideEncryptionConfiguration != null) __obj.updateDynamic("serverSideEncryptionConfiguration")(serverSideEncryptionConfiguration.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (versioning != null) __obj.updateDynamic("versioning")(versioning.asInstanceOf[js.Any])
+    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
+    if (websiteDomain != null) __obj.updateDynamic("websiteDomain")(websiteDomain.asInstanceOf[js.Any])
+    if (websiteEndpoint != null) __obj.updateDynamic("websiteEndpoint")(websiteEndpoint.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BucketArgs]
+  }
+}
+

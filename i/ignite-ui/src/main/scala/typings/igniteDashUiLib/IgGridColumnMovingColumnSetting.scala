@@ -27,3 +27,23 @@ trait IgGridColumnMovingColumnSetting
   var columnKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridColumnMovingColumnSetting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridColumnMovingColumnSetting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowMoving: js.UndefOr[scala.Boolean] = js.undefined,
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null
+  ): IgGridColumnMovingColumnSetting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowMoving)) __obj.updateDynamic("allowMoving")(allowMoving)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    __obj.asInstanceOf[IgGridColumnMovingColumnSetting]
+  }
+}
+

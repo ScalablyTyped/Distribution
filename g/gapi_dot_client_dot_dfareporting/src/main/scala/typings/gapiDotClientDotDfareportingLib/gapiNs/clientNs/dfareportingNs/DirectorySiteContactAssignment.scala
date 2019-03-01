@@ -15,3 +15,13 @@ trait DirectorySiteContactAssignment extends js.Object {
   var visibility: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DirectorySiteContactAssignment {
+  @scala.inline
+  def apply(contactId: java.lang.String = null, visibility: java.lang.String = null): DirectorySiteContactAssignment = {
+    val __obj = js.Dynamic.literal()
+    if (contactId != null) __obj.updateDynamic("contactId")(contactId)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    __obj.asInstanceOf[DirectorySiteContactAssignment]
+  }
+}
+

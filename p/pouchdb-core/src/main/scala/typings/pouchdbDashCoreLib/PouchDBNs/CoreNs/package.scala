@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object CoreNs {
-  type Attachment = StubAttachment | FullAttachment
-  type AttachmentData = java.lang.String | pouchdbDashCoreLib.Blob | pouchdbDashCoreLib.Buffer
+  type AttachmentData = _AttachmentData | java.lang.String
   type AttachmentId = java.lang.String
-  type Availability = pouchdbDashCoreLib.pouchdbDashCoreLibStrings.available | pouchdbDashCoreLib.pouchdbDashCoreLibStrings.compacted | (pouchdbDashCoreLib.pouchdbDashCoreLibStrings.`not compacted`) | pouchdbDashCoreLib.pouchdbDashCoreLibStrings.missing
   type Callback[R] = js.Function2[/* error */ Error | scala.Null, /* result */ R | scala.Null, scala.Unit]
   type Document[Content /* <: js.Object */] = Content with IdMeta
   type DocumentId = java.lang.String

@@ -25,6 +25,25 @@ trait CalendarList extends js.Object {
 @js.native
 class calendarList () extends js.Object
 
+object CalendarList {
+  @scala.inline
+  def apply(
+    etag: etag,
+    items: js.Array[CalendarListEntry],
+    kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#calendarList`,
+    nextPageToken: java.lang.String = null,
+    nextSyncToken: java.lang.String = null
+  ): CalendarList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken)
+    __obj.asInstanceOf[CalendarList]
+  }
+}
+
 /* static members */
 @JSGlobal("gapi.client.calendar.calendarList")
 @js.native

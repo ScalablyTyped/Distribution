@@ -112,3 +112,64 @@ trait AXNode extends js.Object {
   var valuetext: java.lang.String
 }
 
+object AXNode {
+  @scala.inline
+  def apply(
+    autocomplete: java.lang.String,
+    checked: scala.Boolean | puppeteerLib.puppeteerLibStrings.mixed,
+    children: js.Array[AXNode],
+    description: java.lang.String,
+    disabled: scala.Boolean,
+    expanded: scala.Boolean,
+    focused: scala.Boolean,
+    haspopup: java.lang.String,
+    invalid: java.lang.String,
+    keyshortcuts: java.lang.String,
+    level: scala.Double,
+    modal: scala.Boolean,
+    multiline: scala.Boolean,
+    multiselectable: scala.Boolean,
+    name: java.lang.String,
+    orientation: java.lang.String,
+    pressed: scala.Boolean | puppeteerLib.puppeteerLibStrings.mixed,
+    readonly: scala.Boolean,
+    required: scala.Boolean,
+    role: java.lang.String,
+    roledescription: java.lang.String,
+    selected: scala.Boolean,
+    value: java.lang.String | scala.Double,
+    valuemax: scala.Double,
+    valuemin: scala.Double,
+    valuetext: java.lang.String
+  ): AXNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autocomplete")(autocomplete)
+    __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("expanded")(expanded)
+    __obj.updateDynamic("focused")(focused)
+    __obj.updateDynamic("haspopup")(haspopup)
+    __obj.updateDynamic("invalid")(invalid)
+    __obj.updateDynamic("keyshortcuts")(keyshortcuts)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("modal")(modal)
+    __obj.updateDynamic("multiline")(multiline)
+    __obj.updateDynamic("multiselectable")(multiselectable)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("orientation")(orientation)
+    __obj.updateDynamic("pressed")(pressed.asInstanceOf[js.Any])
+    __obj.updateDynamic("readonly")(readonly)
+    __obj.updateDynamic("required")(required)
+    __obj.updateDynamic("role")(role)
+    __obj.updateDynamic("roledescription")(roledescription)
+    __obj.updateDynamic("selected")(selected)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.updateDynamic("valuemax")(valuemax)
+    __obj.updateDynamic("valuemin")(valuemin)
+    __obj.updateDynamic("valuetext")(valuetext)
+    __obj.asInstanceOf[AXNode]
+  }
+}
+

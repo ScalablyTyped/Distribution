@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("gsap.TweenLite")
 @js.native
-class TweenLite protected () extends Animation {
+class TweenLite protected ()
+  extends Animation
+     with Tween {
   def this(target: js.Any, duration: scala.Double, vars: js.Any) = this()
   /** Target object (or array of objects) whose properties the tween affects. */
   val target: js.Any = js.native

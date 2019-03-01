@@ -12,3 +12,20 @@ trait Anon_EnabledInputFormatConfigurationOutputFormatConfiguration extends js.O
   var schemaConfiguration: atPulumiPulumiLib.outputMod.Input[Anon_CatalogIdDatabaseName]
 }
 
+object Anon_EnabledInputFormatConfigurationOutputFormatConfiguration {
+  @scala.inline
+  def apply(
+    inputFormatConfiguration: atPulumiPulumiLib.outputMod.Input[Anon_DeserializerAnonHiveJsonSerDeOpenXJsonSerDe],
+    outputFormatConfiguration: atPulumiPulumiLib.outputMod.Input[Anon_SerializerAnonOrcSerDeParquetSerDe],
+    schemaConfiguration: atPulumiPulumiLib.outputMod.Input[Anon_CatalogIdDatabaseName],
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): Anon_EnabledInputFormatConfigurationOutputFormatConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inputFormatConfiguration")(inputFormatConfiguration.asInstanceOf[js.Any])
+    __obj.updateDynamic("outputFormatConfiguration")(outputFormatConfiguration.asInstanceOf[js.Any])
+    __obj.updateDynamic("schemaConfiguration")(schemaConfiguration.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_EnabledInputFormatConfigurationOutputFormatConfiguration]
+  }
+}
+

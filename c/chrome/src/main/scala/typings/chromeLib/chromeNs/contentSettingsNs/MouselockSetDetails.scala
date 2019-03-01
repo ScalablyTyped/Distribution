@@ -10,3 +10,22 @@ trait MouselockSetDetails extends SetDetails {
   var setting_MouselockSetDetails: chromeLib.chromeLibStrings.allow
 }
 
+object MouselockSetDetails {
+  @scala.inline
+  def apply(
+    primaryPattern: java.lang.String,
+    setting: chromeLib.chromeLibStrings.allow,
+    resourceIdentifier: ResourceIdentifier = null,
+    scope: ScopeEnum = null,
+    secondaryPattern: java.lang.String = null
+  ): MouselockSetDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("primaryPattern")(primaryPattern)
+    __obj.updateDynamic("setting")(setting)
+    if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (secondaryPattern != null) __obj.updateDynamic("secondaryPattern")(secondaryPattern)
+    __obj.asInstanceOf[MouselockSetDetails]
+  }
+}
+

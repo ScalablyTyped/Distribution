@@ -7,43 +7,56 @@ import scala.scalajs.js.annotation._
 
 object smoothDashScrollLibStrings {
   @js.native
-  sealed trait Linear extends js.Object
+  sealed trait Linear
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeInCubic extends js.Object
+  sealed trait easeInCubic
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeInOutCubic extends js.Object
+  sealed trait easeInOutCubic
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeInOutQuad extends js.Object
+  sealed trait easeInOutQuad
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeInOutQuart extends js.Object
+  sealed trait easeInOutQuart
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeInOutQuint extends js.Object
+  sealed trait easeInOutQuint
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeInQuad extends js.Object
+  sealed trait easeInQuad
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeInQuart extends js.Object
+  sealed trait easeInQuart
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeInQuint extends js.Object
+  sealed trait easeInQuint
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeOutCubic extends js.Object
+  sealed trait easeOutCubic
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeOutQuad extends js.Object
+  sealed trait easeOutQuad
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeOutQuart extends js.Object
+  sealed trait easeOutQuart
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @js.native
-  sealed trait easeOutQuint extends js.Object
+  sealed trait easeOutQuint
+    extends smoothDashScrollLib.smoothDashScrollMod.SmoothScrollNs.Easing
   
   @scala.inline
   def Linear: Linear = "Linear".asInstanceOf[Linear]

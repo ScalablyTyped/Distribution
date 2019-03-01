@@ -14,3 +14,24 @@ trait Errors extends js.Object {
   def has(attribute: java.lang.String): scala.Boolean
 }
 
+object Errors {
+  @scala.inline
+  def apply(
+    add: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    all: js.Function0[ValidationErrors],
+    errors: ValidationErrors,
+    first: js.Function1[java.lang.String, java.lang.String | validatorjsLib.validatorjsLibNumbers.`false`],
+    get: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    has: js.Function1[java.lang.String, scala.Boolean]
+  ): Errors = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("all")(all)
+    __obj.updateDynamic("errors")(errors)
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("has")(has)
+    __obj.asInstanceOf[Errors]
+  }
+}
+

@@ -44,3 +44,32 @@ trait TextStreamReader extends TextStreamBase {
   def SkipLine(): scala.Unit
 }
 
+object TextStreamReader {
+  @scala.inline
+  def apply(
+    AtEndOfLine: scala.Boolean,
+    AtEndOfStream: scala.Boolean,
+    Close: js.Function0[scala.Unit],
+    Column: scala.Double,
+    Line: scala.Double,
+    Read: js.Function1[scala.Double, java.lang.String],
+    ReadAll: js.Function0[java.lang.String],
+    ReadLine: js.Function0[java.lang.String],
+    Skip: js.Function1[scala.Double, scala.Unit],
+    SkipLine: js.Function0[scala.Unit]
+  ): TextStreamReader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AtEndOfLine")(AtEndOfLine)
+    __obj.updateDynamic("AtEndOfStream")(AtEndOfStream)
+    __obj.updateDynamic("Close")(Close)
+    __obj.updateDynamic("Column")(Column)
+    __obj.updateDynamic("Line")(Line)
+    __obj.updateDynamic("Read")(Read)
+    __obj.updateDynamic("ReadAll")(ReadAll)
+    __obj.updateDynamic("ReadLine")(ReadLine)
+    __obj.updateDynamic("Skip")(Skip)
+    __obj.updateDynamic("SkipLine")(SkipLine)
+    __obj.asInstanceOf[TextStreamReader]
+  }
+}
+

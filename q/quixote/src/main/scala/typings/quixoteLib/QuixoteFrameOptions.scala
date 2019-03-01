@@ -16,3 +16,20 @@ trait QuixoteFrameOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object QuixoteFrameOptions {
+  @scala.inline
+  def apply(
+    height: scala.Int | scala.Double = null,
+    src: java.lang.String = null,
+    stylesheet: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): QuixoteFrameOptions = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src)
+    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QuixoteFrameOptions]
+  }
+}
+

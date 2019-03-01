@@ -16,3 +16,13 @@ trait CommentIterationContext extends js.Object {
   var secondComparingIteration: scala.Double
 }
 
+object CommentIterationContext {
+  @scala.inline
+  def apply(firstComparingIteration: scala.Double, secondComparingIteration: scala.Double): CommentIterationContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("firstComparingIteration")(firstComparingIteration)
+    __obj.updateDynamic("secondComparingIteration")(secondComparingIteration)
+    __obj.asInstanceOf[CommentIterationContext]
+  }
+}
+

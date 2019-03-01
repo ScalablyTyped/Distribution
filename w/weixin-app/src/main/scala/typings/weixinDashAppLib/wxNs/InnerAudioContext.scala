@@ -56,3 +56,60 @@ trait InnerAudioContext extends js.Object {
   def stop(): scala.Unit
 }
 
+object InnerAudioContext {
+  @scala.inline
+  def apply(
+    autoplay: scala.Boolean,
+    buffered: scala.Double,
+    currentTime: scala.Double,
+    destroy: js.Function0[scala.Unit],
+    duration: scala.Double,
+    loop: scala.Boolean,
+    obeyMuteSwitch: scala.Boolean,
+    onCanplay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onEnded: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onError: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPause: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onPlay: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onSeeked: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onSeeking: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onStop: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onTimeUpdate: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    onWaiting: js.Function1[js.Function1[/* res */ ErrCodeResponse, scala.Unit], scala.Unit],
+    pause: js.Function0[scala.Unit],
+    paused: scala.Boolean,
+    play: js.Function0[scala.Unit],
+    seek: js.Function1[scala.Double, scala.Unit],
+    src: java.lang.String,
+    startTime: scala.Double,
+    stop: js.Function0[scala.Unit]
+  ): InnerAudioContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoplay")(autoplay)
+    __obj.updateDynamic("buffered")(buffered)
+    __obj.updateDynamic("currentTime")(currentTime)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("loop")(loop)
+    __obj.updateDynamic("obeyMuteSwitch")(obeyMuteSwitch)
+    __obj.updateDynamic("onCanplay")(onCanplay)
+    __obj.updateDynamic("onEnded")(onEnded)
+    __obj.updateDynamic("onError")(onError)
+    __obj.updateDynamic("onPause")(onPause)
+    __obj.updateDynamic("onPlay")(onPlay)
+    __obj.updateDynamic("onSeeked")(onSeeked)
+    __obj.updateDynamic("onSeeking")(onSeeking)
+    __obj.updateDynamic("onStop")(onStop)
+    __obj.updateDynamic("onTimeUpdate")(onTimeUpdate)
+    __obj.updateDynamic("onWaiting")(onWaiting)
+    __obj.updateDynamic("pause")(pause)
+    __obj.updateDynamic("paused")(paused)
+    __obj.updateDynamic("play")(play)
+    __obj.updateDynamic("seek")(seek)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[InnerAudioContext]
+  }
+}
+

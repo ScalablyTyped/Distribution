@@ -26,3 +26,18 @@ trait ActivityResult extends js.Object {
   var resultCode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ActivityResult {
+  @scala.inline
+  def apply(
+    intent: titaniumLib.TitaniumNs.AndroidNs.Intent = null,
+    requestCode: scala.Int | scala.Double = null,
+    resultCode: scala.Int | scala.Double = null
+  ): ActivityResult = {
+    val __obj = js.Dynamic.literal()
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (requestCode != null) __obj.updateDynamic("requestCode")(requestCode.asInstanceOf[js.Any])
+    if (resultCode != null) __obj.updateDynamic("resultCode")(resultCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActivityResult]
+  }
+}
+

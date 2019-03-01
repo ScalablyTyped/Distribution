@@ -30,3 +30,18 @@ trait CustomConditionalFormatLoadOptions extends js.Object {
   var rule: js.UndefOr[ConditionalFormatRuleLoadOptions] = js.undefined
 }
 
+object CustomConditionalFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ConditionalRangeFormatLoadOptions = null,
+    rule: ConditionalFormatRuleLoadOptions = null
+  ): CustomConditionalFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[CustomConditionalFormatLoadOptions]
+  }
+}
+

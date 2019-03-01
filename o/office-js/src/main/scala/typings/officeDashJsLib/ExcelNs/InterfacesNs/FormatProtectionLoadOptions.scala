@@ -30,3 +30,18 @@ trait FormatProtectionLoadOptions extends js.Object {
   var locked: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FormatProtectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    formulaHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    locked: js.UndefOr[scala.Boolean] = js.undefined
+  ): FormatProtectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden)
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    __obj.asInstanceOf[FormatProtectionLoadOptions]
+  }
+}
+

@@ -49,3 +49,40 @@ trait Options extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    _with: js.UndefOr[scala.Boolean] = js.undefined,
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    client: js.UndefOr[scala.Boolean] = js.undefined,
+    compileDebug: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    delimiter: java.lang.String = null,
+    escape: js.Function1[/* str */ java.lang.String, java.lang.String] = null,
+    filename: java.lang.String = null,
+    localsName: java.lang.String = null,
+    rmWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
+    root: java.lang.String = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(_with)) __obj.updateDynamic("_with")(_with)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client)
+    if (!js.isUndefined(compileDebug)) __obj.updateDynamic("compileDebug")(compileDebug)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (localsName != null) __obj.updateDynamic("localsName")(localsName)
+    if (!js.isUndefined(rmWhitespace)) __obj.updateDynamic("rmWhitespace")(rmWhitespace)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[Options]
+  }
+}
+

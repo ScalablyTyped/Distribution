@@ -14,3 +14,24 @@ trait LintResult extends js.Object {
   var warnings: js.Array[java.lang.String]
 }
 
+object LintResult {
+  @scala.inline
+  def apply(
+    deprecations: js.Array[java.lang.String],
+    invalidOptionWarnings: js.Array[_],
+    source: java.lang.String,
+    warnings: js.Array[java.lang.String],
+    errored: js.UndefOr[scala.Boolean] = js.undefined,
+    ignored: js.UndefOr[scala.Boolean] = js.undefined
+  ): LintResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deprecations")(deprecations)
+    __obj.updateDynamic("invalidOptionWarnings")(invalidOptionWarnings)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("warnings")(warnings)
+    if (!js.isUndefined(errored)) __obj.updateDynamic("errored")(errored)
+    if (!js.isUndefined(ignored)) __obj.updateDynamic("ignored")(ignored)
+    __obj.asInstanceOf[LintResult]
+  }
+}
+

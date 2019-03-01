@@ -16,3 +16,22 @@ trait NavigationState extends js.Object {
   var routes: js.Array[NavigationRoute[NavigationParams]]
 }
 
+object NavigationState {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    isTransitioning: scala.Boolean,
+    key: java.lang.String,
+    params: NavigationParams,
+    routes: js.Array[NavigationRoute[NavigationParams]]
+  ): NavigationState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("isTransitioning")(isTransitioning)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("routes")(routes)
+    __obj.asInstanceOf[NavigationState]
+  }
+}
+

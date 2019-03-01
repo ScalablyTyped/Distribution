@@ -69,3 +69,30 @@ trait Backend extends js.Object {
   var maxUtilization: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Backend {
+  @scala.inline
+  def apply(
+    balancingMode: java.lang.String = null,
+    capacityScaler: scala.Int | scala.Double = null,
+    description: java.lang.String = null,
+    group: java.lang.String = null,
+    maxConnections: scala.Int | scala.Double = null,
+    maxConnectionsPerInstance: scala.Int | scala.Double = null,
+    maxRate: scala.Int | scala.Double = null,
+    maxRatePerInstance: scala.Int | scala.Double = null,
+    maxUtilization: scala.Int | scala.Double = null
+  ): Backend = {
+    val __obj = js.Dynamic.literal()
+    if (balancingMode != null) __obj.updateDynamic("balancingMode")(balancingMode)
+    if (capacityScaler != null) __obj.updateDynamic("capacityScaler")(capacityScaler.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
+    if (maxConnectionsPerInstance != null) __obj.updateDynamic("maxConnectionsPerInstance")(maxConnectionsPerInstance.asInstanceOf[js.Any])
+    if (maxRate != null) __obj.updateDynamic("maxRate")(maxRate.asInstanceOf[js.Any])
+    if (maxRatePerInstance != null) __obj.updateDynamic("maxRatePerInstance")(maxRatePerInstance.asInstanceOf[js.Any])
+    if (maxUtilization != null) __obj.updateDynamic("maxUtilization")(maxUtilization.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Backend]
+  }
+}
+

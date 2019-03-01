@@ -15,3 +15,13 @@ trait OpenInsertTableDialogCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object OpenInsertTableDialogCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): OpenInsertTableDialogCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[OpenInsertTableDialogCommand]
+  }
+}
+

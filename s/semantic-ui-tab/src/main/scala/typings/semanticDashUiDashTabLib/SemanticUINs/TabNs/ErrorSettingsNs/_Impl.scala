@@ -36,3 +36,26 @@ trait _Impl extends js.Object {
   var state: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    api: java.lang.String,
+    method: java.lang.String,
+    missingTab: java.lang.String,
+    noContent: java.lang.String,
+    path: java.lang.String,
+    recursion: java.lang.String,
+    state: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("api")(api)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("missingTab")(missingTab)
+    __obj.updateDynamic("noContent")(noContent)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("recursion")(recursion)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

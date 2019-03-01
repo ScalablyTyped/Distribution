@@ -12,3 +12,20 @@ trait Anon_ClaimMatchType extends js.Object {
   var value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_ClaimMatchType {
+  @scala.inline
+  def apply(
+    claim: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    matchType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): Anon_ClaimMatchType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("claim")(claim.asInstanceOf[js.Any])
+    __obj.updateDynamic("matchType")(matchType.asInstanceOf[js.Any])
+    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ClaimMatchType]
+  }
+}
+

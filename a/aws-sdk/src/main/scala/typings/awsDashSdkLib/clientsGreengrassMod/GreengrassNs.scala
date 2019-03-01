@@ -4954,29 +4954,55 @@ object GreengrassNs extends js.Object {
     var Version: js.UndefOr[__string] = js.undefined
   }
   
+  trait _BulkDeploymentStatus extends js.Object
+  
+  trait _DeploymentType extends js.Object
+  
+  trait _EncodingType extends js.Object
+  
+  trait _FunctionIsolationMode extends js.Object
+  
+  trait _LoggerComponent extends js.Object
+  
+  trait _LoggerLevel extends js.Object
+  
+  trait _LoggerType extends js.Object
+  
+  trait _Permission extends js.Object
+  
+  trait _SoftwareToUpdate extends js.Object
+  
+  trait _UpdateAgentLogLevel extends js.Object
+  
+  trait _UpdateTargetsArchitecture extends js.Object
+  
+  trait _UpdateTargetsOperatingSystem extends js.Object
+  
   trait __mapOf__string
     extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type BulkDeploymentResults = js.Array[BulkDeploymentResult]
-  type BulkDeploymentStatus = awsDashSdkLib.awsDashSdkLibStrings.Initializing | awsDashSdkLib.awsDashSdkLibStrings.Running | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Stopped | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type BulkDeploymentStatus = _BulkDeploymentStatus | java.lang.String
   type BulkDeployments = js.Array[BulkDeployment]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type DeploymentType = awsDashSdkLib.awsDashSdkLibStrings.NewDeployment | awsDashSdkLib.awsDashSdkLibStrings.Redeployment | awsDashSdkLib.awsDashSdkLibStrings.ResetDeployment | awsDashSdkLib.awsDashSdkLibStrings.ForceResetDeployment | java.lang.String
+  type DeploymentType = _DeploymentType | java.lang.String
   type Deployments = js.Array[Deployment]
-  type EncodingType = awsDashSdkLib.awsDashSdkLibStrings.binary | awsDashSdkLib.awsDashSdkLibStrings.json | java.lang.String
+  type EncodingType = _EncodingType | java.lang.String
   type ErrorDetails = js.Array[ErrorDetail]
-  type FunctionIsolationMode = awsDashSdkLib.awsDashSdkLibStrings.GreengrassContainer | awsDashSdkLib.awsDashSdkLibStrings.NoContainer | java.lang.String
-  type LoggerComponent = awsDashSdkLib.awsDashSdkLibStrings.GreengrassSystem | awsDashSdkLib.awsDashSdkLibStrings.Lambda | java.lang.String
-  type LoggerLevel = awsDashSdkLib.awsDashSdkLibStrings.DEBUG | awsDashSdkLib.awsDashSdkLibStrings.INFO | awsDashSdkLib.awsDashSdkLibStrings.WARN | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.FATAL | java.lang.String
-  type LoggerType = awsDashSdkLib.awsDashSdkLibStrings.FileSystem | awsDashSdkLib.awsDashSdkLibStrings.AWSCloudWatch | java.lang.String
-  type Permission = awsDashSdkLib.awsDashSdkLibStrings.ro | awsDashSdkLib.awsDashSdkLibStrings.rw | java.lang.String
+  type FunctionIsolationMode = _FunctionIsolationMode | java.lang.String
+  type LoggerComponent = _LoggerComponent | java.lang.String
+  type LoggerLevel = _LoggerLevel | java.lang.String
+  type LoggerType = _LoggerType | java.lang.String
+  type Permission = _Permission | java.lang.String
   type S3UrlSignerRole = java.lang.String
-  type SoftwareToUpdate = awsDashSdkLib.awsDashSdkLibStrings.core | awsDashSdkLib.awsDashSdkLibStrings.ota_agent | java.lang.String
-  type UpdateAgentLogLevel = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.TRACE | awsDashSdkLib.awsDashSdkLibStrings.DEBUG | awsDashSdkLib.awsDashSdkLibStrings.VERBOSE | awsDashSdkLib.awsDashSdkLibStrings.INFO | awsDashSdkLib.awsDashSdkLibStrings.WARN | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.FATAL | java.lang.String
+  type SoftwareToUpdate = _SoftwareToUpdate | java.lang.String
+  type UpdateAgentLogLevel = _UpdateAgentLogLevel | java.lang.String
   type UpdateTargets = js.Array[__string]
-  type UpdateTargetsArchitecture = awsDashSdkLib.awsDashSdkLibStrings.armv7l | awsDashSdkLib.awsDashSdkLibStrings.x86_64 | awsDashSdkLib.awsDashSdkLibStrings.aarch64 | java.lang.String
-  type UpdateTargetsOperatingSystem = awsDashSdkLib.awsDashSdkLibStrings.ubuntu | awsDashSdkLib.awsDashSdkLibStrings.raspbian | awsDashSdkLib.awsDashSdkLibStrings.amazon_linux | java.lang.String
+  type UpdateTargetsArchitecture = _UpdateTargetsArchitecture | java.lang.String
+  type UpdateTargetsOperatingSystem = _UpdateTargetsOperatingSystem | java.lang.String
   type __boolean = scala.Boolean
   type __integer = scala.Double
   type __listOfConnectivityInfo = js.Array[ConnectivityInfo]
@@ -4994,6 +5020,6 @@ object GreengrassNs extends js.Object {
   type __listOfVersionInformation = js.Array[VersionInformation]
   type __listOf__string = js.Array[__string]
   type __string = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-06-07` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

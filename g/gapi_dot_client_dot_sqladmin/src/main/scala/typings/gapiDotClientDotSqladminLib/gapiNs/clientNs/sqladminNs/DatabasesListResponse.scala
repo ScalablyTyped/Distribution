@@ -12,3 +12,13 @@ trait DatabasesListResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DatabasesListResponse {
+  @scala.inline
+  def apply(items: js.Array[Database] = null, kind: java.lang.String = null): DatabasesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[DatabasesListResponse]
+  }
+}
+

@@ -12,3 +12,19 @@ trait GraphQLArgument extends js.Object {
   var `type`: GraphQLInputType
 }
 
+object GraphQLArgument {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: GraphQLInputType,
+    defaultValue: js.Any = null,
+    description: java.lang.String = null
+  ): GraphQLArgument = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[GraphQLArgument]
+  }
+}
+

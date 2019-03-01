@@ -33,3 +33,22 @@ trait EChartsLoadingOption extends js.Object {
   var zlevel: js.UndefOr[echartsLib.echartsLibNumbers.`0`] = js.undefined
 }
 
+object EChartsLoadingOption {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    maskColor: java.lang.String = null,
+    text: java.lang.String = null,
+    textColor: java.lang.String = null,
+    zlevel: echartsLib.echartsLibNumbers.`0` = null
+  ): EChartsLoadingOption = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel)
+    __obj.asInstanceOf[EChartsLoadingOption]
+  }
+}
+

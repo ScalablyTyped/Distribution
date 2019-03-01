@@ -23,3 +23,38 @@ trait ojNavigationListSettableProperties[K, D]
   var translations_ojNavigationListSettableProperties: atOracleOraclejetLib.Anon_DefaultRootLabel
 }
 
+object ojNavigationListSettableProperties {
+  @scala.inline
+  def apply[K, D](
+    as: java.lang.String,
+    currentItem: K,
+    display: atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.atOracleOraclejetLibStrings.icons,
+    drillMode: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.collapsible | atOracleOraclejetLib.atOracleOraclejetLibStrings.sliding,
+    edge: atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.start,
+    expanded: atOracleOraclejetLib.ojkeysetMod.KeySet[K],
+    hierarchyMenuThreshold: scala.Double,
+    item: atOracleOraclejetLib.Anon_ContextRendererSelectable[K, D],
+    overflow: atOracleOraclejetLib.atOracleOraclejetLibStrings.popup | atOracleOraclejetLib.atOracleOraclejetLibStrings.hidden,
+    selection: K,
+    translations: atOracleOraclejetLib.Anon_DefaultRootLabel,
+    data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null,
+    rootLabel: java.lang.String = null
+  ): ojNavigationListSettableProperties[K, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("as")(as)
+    __obj.updateDynamic("currentItem")(currentItem.asInstanceOf[js.Any])
+    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    __obj.updateDynamic("drillMode")(drillMode.asInstanceOf[js.Any])
+    __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
+    __obj.updateDynamic("expanded")(expanded)
+    __obj.updateDynamic("hierarchyMenuThreshold")(hierarchyMenuThreshold)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
+    __obj.updateDynamic("translations")(translations)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (rootLabel != null) __obj.updateDynamic("rootLabel")(rootLabel)
+    __obj.asInstanceOf[ojNavigationListSettableProperties[K, D]]
+  }
+}
+

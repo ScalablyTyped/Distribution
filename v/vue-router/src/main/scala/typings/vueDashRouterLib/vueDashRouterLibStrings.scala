@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object vueDashRouterLibStrings {
   @js.native
-  sealed trait `abstract` extends js.Object
+  sealed trait `abstract`
+    extends vueDashRouterLib.typesRouterMod.RouterMode
   
   @js.native
-  sealed trait hash extends js.Object
+  sealed trait hash
+    extends vueDashRouterLib.typesRouterMod.RouterMode
   
   @js.native
-  sealed trait history extends js.Object
+  sealed trait history
+    extends vueDashRouterLib.typesRouterMod.RouterMode
   
   @scala.inline
   def `abstract`: `abstract` = "abstract".asInstanceOf[`abstract`]

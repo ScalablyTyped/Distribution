@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AttributeMemberType extends js.Object {
+trait AttributeMemberType
+  extends IDLInterfaceMemberType
+     with IDLNamespaceMemberType {
   /** A list of extended attributes. */
   var extAttrs: js.Array[ExtendedAttributes]
   /** An IDL Type for the attribute. */
@@ -21,5 +23,29 @@ trait AttributeMemberType extends js.Object {
   /** True if it's a stringifier attribute. */
   var stringifier: scala.Boolean
   var `type`: webidl2Lib.webidl2LibStrings.attribute
+}
+
+object AttributeMemberType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    idlType: IDLTypeDescription,
+    inherit: scala.Boolean,
+    name: java.lang.String,
+    readonly: scala.Boolean,
+    static: scala.Boolean,
+    stringifier: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.attribute
+  ): AttributeMemberType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("extAttrs")(extAttrs)
+    __obj.updateDynamic("idlType")(idlType)
+    __obj.updateDynamic("inherit")(inherit)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("readonly")(readonly)
+    __obj.updateDynamic("static")(static)
+    __obj.updateDynamic("stringifier")(stringifier)
+    __obj.asInstanceOf[AttributeMemberType]
+  }
 }
 

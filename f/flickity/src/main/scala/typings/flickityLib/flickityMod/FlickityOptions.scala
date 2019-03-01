@@ -175,3 +175,66 @@ trait FlickityOptions extends js.Object {
   var wrapAround: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FlickityOptions {
+  @scala.inline
+  def apply(
+    accessibility: js.UndefOr[scala.Boolean] = js.undefined,
+    adaptiveHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowShape: java.lang.String | flickityLib.Anon_X0 = null,
+    asNavFor: java.lang.String | stdLib.HTMLElement = null,
+    autoPlay: scala.Boolean | scala.Double = null,
+    bgLazyLoad: scala.Boolean | scala.Double = null,
+    cellAlign: java.lang.String = null,
+    cellSelector: java.lang.String = null,
+    contain: js.UndefOr[scala.Boolean] = js.undefined,
+    dragThreshold: scala.Int | scala.Double = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    freeScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    freeScrollFriction: scala.Int | scala.Double = null,
+    friction: scala.Int | scala.Double = null,
+    groupCells: scala.Boolean | scala.Double | java.lang.String = null,
+    imagesLoaded: js.UndefOr[scala.Boolean] = js.undefined,
+    initialIndex: scala.Int | scala.Double = null,
+    lazyLoad: scala.Boolean | scala.Double = null,
+    pageDots: js.UndefOr[scala.Boolean] = js.undefined,
+    percentPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    prevNextButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    resize: js.UndefOr[scala.Boolean] = js.undefined,
+    rightToLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedAttraction: scala.Int | scala.Double = null,
+    setGallerySize: js.UndefOr[scala.Boolean] = js.undefined,
+    watchCSS: scala.Boolean | java.lang.String = null,
+    wrapAround: js.UndefOr[scala.Boolean] = js.undefined
+  ): FlickityOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(accessibility)) __obj.updateDynamic("accessibility")(accessibility)
+    if (!js.isUndefined(adaptiveHeight)) __obj.updateDynamic("adaptiveHeight")(adaptiveHeight)
+    if (arrowShape != null) __obj.updateDynamic("arrowShape")(arrowShape.asInstanceOf[js.Any])
+    if (asNavFor != null) __obj.updateDynamic("asNavFor")(asNavFor.asInstanceOf[js.Any])
+    if (autoPlay != null) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
+    if (bgLazyLoad != null) __obj.updateDynamic("bgLazyLoad")(bgLazyLoad.asInstanceOf[js.Any])
+    if (cellAlign != null) __obj.updateDynamic("cellAlign")(cellAlign)
+    if (cellSelector != null) __obj.updateDynamic("cellSelector")(cellSelector)
+    if (!js.isUndefined(contain)) __obj.updateDynamic("contain")(contain)
+    if (dragThreshold != null) __obj.updateDynamic("dragThreshold")(dragThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(freeScroll)) __obj.updateDynamic("freeScroll")(freeScroll)
+    if (freeScrollFriction != null) __obj.updateDynamic("freeScrollFriction")(freeScrollFriction.asInstanceOf[js.Any])
+    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
+    if (groupCells != null) __obj.updateDynamic("groupCells")(groupCells.asInstanceOf[js.Any])
+    if (!js.isUndefined(imagesLoaded)) __obj.updateDynamic("imagesLoaded")(imagesLoaded)
+    if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
+    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])
+    if (!js.isUndefined(pageDots)) __obj.updateDynamic("pageDots")(pageDots)
+    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition)
+    if (!js.isUndefined(prevNextButtons)) __obj.updateDynamic("prevNextButtons")(prevNextButtons)
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft)
+    if (selectedAttraction != null) __obj.updateDynamic("selectedAttraction")(selectedAttraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(setGallerySize)) __obj.updateDynamic("setGallerySize")(setGallerySize)
+    if (watchCSS != null) __obj.updateDynamic("watchCSS")(watchCSS.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround)
+    __obj.asInstanceOf[FlickityOptions]
+  }
+}
+

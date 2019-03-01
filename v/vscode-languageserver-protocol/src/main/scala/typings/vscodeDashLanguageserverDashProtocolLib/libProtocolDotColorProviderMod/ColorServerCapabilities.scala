@@ -14,3 +14,14 @@ trait ColorServerCapabilities extends js.Object {
   ] = js.undefined
 }
 
+object ColorServerCapabilities {
+  @scala.inline
+  def apply(
+    colorProvider: scala.Boolean | ColorProviderOptions | (ColorProviderOptions with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentRegistrationOptions with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.StaticRegistrationOptions) = null
+  ): ColorServerCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (colorProvider != null) __obj.updateDynamic("colorProvider")(colorProvider.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColorServerCapabilities]
+  }
+}
+

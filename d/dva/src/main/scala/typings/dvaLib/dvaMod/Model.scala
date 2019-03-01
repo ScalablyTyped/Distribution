@@ -15,3 +15,22 @@ trait Model extends js.Object {
   var subscriptions: js.UndefOr[SubscriptionsMapObject] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    namespace: java.lang.String,
+    effects: EffectsMapObject = null,
+    reducers: (reduxLib.reduxMod.ReducersMapObject[_, reduxLib.reduxMod.Action[_]]) | ReducersMapObjectWithEnhancer = null,
+    state: js.Any = null,
+    subscriptions: SubscriptionsMapObject = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("namespace")(namespace)
+    if (effects != null) __obj.updateDynamic("effects")(effects)
+    if (reducers != null) __obj.updateDynamic("reducers")(reducers.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions)
+    __obj.asInstanceOf[Model]
+  }
+}
+

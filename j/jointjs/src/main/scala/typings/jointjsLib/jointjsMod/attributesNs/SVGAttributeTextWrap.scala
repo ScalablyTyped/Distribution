@@ -13,3 +13,22 @@ trait SVGAttributeTextWrap
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object SVGAttributeTextWrap {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    ellipsis: scala.Boolean | java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    text: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): SVGAttributeTextWrap = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SVGAttributeTextWrap]
+  }
+}
+

@@ -37,3 +37,33 @@ trait Anon_ConnectionsGates extends js.Object {
   ]
 }
 
+object Anon_ConnectionsGates {
+  @scala.inline
+  def apply(
+    Hopfield: org.scalablytyped.runtime.Instantiable1[/* patternSize */ scala.Double, synapticLib.synapticMod.ArchitectNs.Hopfield],
+    LSTM: org.scalablytyped.runtime.Instantiable1[
+      /* numberOfNeurons (repeated) */ scala.Double, 
+      synapticLib.synapticMod.ArchitectNs.LSTM
+    ],
+    Liquid: org.scalablytyped.runtime.Instantiable5[
+      /* input */ scala.Double, 
+      /* pool */ scala.Double, 
+      /* output */ scala.Double, 
+      /* connections */ scala.Double, 
+      /* gates */ scala.Double, 
+      synapticLib.synapticMod.ArchitectNs.Liquid
+    ],
+    Perceptron: org.scalablytyped.runtime.Instantiable1[
+      /* numberOfNeurons (repeated) */ scala.Double, 
+      synapticLib.synapticMod.ArchitectNs.Perceptron
+    ]
+  ): Anon_ConnectionsGates = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Hopfield")(Hopfield)
+    __obj.updateDynamic("LSTM")(LSTM)
+    __obj.updateDynamic("Liquid")(Liquid)
+    __obj.updateDynamic("Perceptron")(Perceptron)
+    __obj.asInstanceOf[Anon_ConnectionsGates]
+  }
+}
+

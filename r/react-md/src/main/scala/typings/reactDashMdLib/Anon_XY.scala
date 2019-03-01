@@ -10,3 +10,16 @@ trait Anon_XY extends js.Object {
   var y: reactDashMdLib.libHelpersLayoverMod.VerticalAnchors
 }
 
+object Anon_XY {
+  @scala.inline
+  def apply(
+    x: reactDashMdLib.libHelpersLayoverMod.HorizontalAnchors,
+    y: reactDashMdLib.libHelpersLayoverMod.VerticalAnchors
+  ): Anon_XY = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Anon_XY]
+  }
+}
+

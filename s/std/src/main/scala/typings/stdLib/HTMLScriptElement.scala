@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HTMLScriptElement extends HTMLElement {
+trait HTMLScriptElement
+  extends HTMLElement
+     with HTMLOrSVGScriptElement {
   var async: scala.Boolean = js.native
   /**
     * Sets or retrieves the character set used to encode the object.
@@ -43,6 +45,26 @@ trait HTMLScriptElement extends HTMLElement {
     * Sets or retrieves the MIME type for the associated scripting engine.
     */
   var `type`: java.lang.String = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): scala.Unit = js.native
 }
 
 @JSGlobal("HTMLScriptElement")

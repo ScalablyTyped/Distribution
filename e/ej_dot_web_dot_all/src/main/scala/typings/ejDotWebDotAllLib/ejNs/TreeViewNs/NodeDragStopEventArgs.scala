@@ -41,3 +41,34 @@ trait NodeDragStopEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeDragStopEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    draggedElement: js.Any = null,
+    draggedElementData: js.Any = null,
+    dropTarget: js.Any = null,
+    event: js.Any = null,
+    model: Model = null,
+    position: java.lang.String = null,
+    preventTargetExpand: js.UndefOr[scala.Boolean] = js.undefined,
+    target: js.Any = null,
+    targetElementData: js.Any = null,
+    `type`: java.lang.String = null
+  ): NodeDragStopEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (draggedElement != null) __obj.updateDynamic("draggedElement")(draggedElement)
+    if (draggedElementData != null) __obj.updateDynamic("draggedElementData")(draggedElementData)
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(preventTargetExpand)) __obj.updateDynamic("preventTargetExpand")(preventTargetExpand)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (targetElementData != null) __obj.updateDynamic("targetElementData")(targetElementData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodeDragStopEventArgs]
+  }
+}
+

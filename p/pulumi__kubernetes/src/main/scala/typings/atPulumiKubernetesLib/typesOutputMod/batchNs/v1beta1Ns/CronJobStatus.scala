@@ -19,3 +19,16 @@ trait CronJobStatus extends js.Object {
   val lastScheduleTime: java.lang.String
 }
 
+object CronJobStatus {
+  @scala.inline
+  def apply(
+    active: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference],
+    lastScheduleTime: java.lang.String
+  ): CronJobStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("lastScheduleTime")(lastScheduleTime)
+    __obj.asInstanceOf[CronJobStatus]
+  }
+}
+

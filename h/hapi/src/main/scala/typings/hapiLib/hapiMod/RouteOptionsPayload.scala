@@ -102,3 +102,34 @@ trait RouteOptionsPayload extends js.Object {
   var uploads: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RouteOptionsPayload {
+  @scala.inline
+  def apply(
+    allow: java.lang.String | js.Array[java.lang.String] = null,
+    compression: hapiLib.hapiMod.UtilNs.Dictionary[PayloadCompressionDecoderSettings] = null,
+    defaultContentType: java.lang.String = null,
+    failAction: hapiLib.hapiMod.LifecycleNs.FailAction = null,
+    maxBytes: scala.Int | scala.Double = null,
+    multipart: hapiLib.hapiLibNumbers.`false` | hapiLib.Anon_Annotated = null,
+    output: PayloadOutput = null,
+    `override`: java.lang.String = null,
+    parse: scala.Boolean | hapiLib.hapiLibStrings.gunzip = null,
+    timeout: hapiLib.hapiLibNumbers.`false` | scala.Double = null,
+    uploads: java.lang.String = null
+  ): RouteOptionsPayload = {
+    val __obj = js.Dynamic.literal()
+    if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression)
+    if (defaultContentType != null) __obj.updateDynamic("defaultContentType")(defaultContentType)
+    if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
+    if (maxBytes != null) __obj.updateDynamic("maxBytes")(maxBytes.asInstanceOf[js.Any])
+    if (multipart != null) __obj.updateDynamic("multipart")(multipart.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (`override` != null) __obj.updateDynamic("override")(`override`)
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (uploads != null) __obj.updateDynamic("uploads")(uploads)
+    __obj.asInstanceOf[RouteOptionsPayload]
+  }
+}
+

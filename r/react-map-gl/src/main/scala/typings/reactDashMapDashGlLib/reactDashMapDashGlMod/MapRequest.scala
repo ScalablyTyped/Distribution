@@ -11,3 +11,18 @@ trait MapRequest extends js.Object {
   var url: java.lang.String
 }
 
+object MapRequest {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    credentials: java.lang.String = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): MapRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    __obj.asInstanceOf[MapRequest]
+  }
+}
+

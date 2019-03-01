@@ -20,3 +20,18 @@ trait AttachmentState extends js.Object {
   val elb: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object AttachmentState {
+  @scala.inline
+  def apply(
+    albTargetGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    autoscalingGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    elb: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (albTargetGroupArn != null) __obj.updateDynamic("albTargetGroupArn")(albTargetGroupArn.asInstanceOf[js.Any])
+    if (autoscalingGroupName != null) __obj.updateDynamic("autoscalingGroupName")(autoscalingGroupName.asInstanceOf[js.Any])
+    if (elb != null) __obj.updateDynamic("elb")(elb.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AttachmentState]
+  }
+}
+

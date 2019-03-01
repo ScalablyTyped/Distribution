@@ -16,3 +16,20 @@ trait FindDevicesByOwnerRequest extends js.Object {
   var sectionType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FindDevicesByOwnerRequest {
+  @scala.inline
+  def apply(
+    customerId: js.Array[java.lang.String] = null,
+    limit: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    sectionType: java.lang.String = null
+  ): FindDevicesByOwnerRequest = {
+    val __obj = js.Dynamic.literal()
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
+    if (limit != null) __obj.updateDynamic("limit")(limit)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType)
+    __obj.asInstanceOf[FindDevicesByOwnerRequest]
+  }
+}
+

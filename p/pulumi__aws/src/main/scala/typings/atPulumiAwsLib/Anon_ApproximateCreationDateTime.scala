@@ -15,3 +15,26 @@ trait Anon_ApproximateCreationDateTime extends js.Object {
   var StreamViewType: java.lang.String
 }
 
+object Anon_ApproximateCreationDateTime {
+  @scala.inline
+  def apply(
+    ApproximateCreationDateTime: scala.Double,
+    Keys: stdLib.Record[java.lang.String, _],
+    SequenceNumber: java.lang.String,
+    SizeBytes: scala.Double,
+    StreamViewType: java.lang.String,
+    NewImage: stdLib.Record[java.lang.String, _] = null,
+    OldImage: stdLib.Record[java.lang.String, _] = null
+  ): Anon_ApproximateCreationDateTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ApproximateCreationDateTime")(ApproximateCreationDateTime)
+    __obj.updateDynamic("Keys")(Keys)
+    __obj.updateDynamic("SequenceNumber")(SequenceNumber)
+    __obj.updateDynamic("SizeBytes")(SizeBytes)
+    __obj.updateDynamic("StreamViewType")(StreamViewType)
+    if (NewImage != null) __obj.updateDynamic("NewImage")(NewImage)
+    if (OldImage != null) __obj.updateDynamic("OldImage")(OldImage)
+    __obj.asInstanceOf[Anon_ApproximateCreationDateTime]
+  }
+}
+

@@ -25,3 +25,16 @@ trait IPen extends js.Object {
   ): scala.Unit
 }
 
+object IPen {
+  @scala.inline
+  def apply(
+    write: js.Function5[java.lang.String, scala.Double, IXAlign, scala.Double, scala.Double, scala.Unit],
+    destroy: js.Function0[scala.Unit] = null
+  ): IPen = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("write")(write)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    __obj.asInstanceOf[IPen]
+  }
+}
+

@@ -39,3 +39,26 @@ trait FileAssociation extends js.Object {
   val role: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FileAssociation {
+  @scala.inline
+  def apply(
+    ext: java.lang.String | js.Array[java.lang.String],
+    description: java.lang.String = null,
+    icon: java.lang.String = null,
+    isPackage: js.UndefOr[scala.Boolean] = js.undefined,
+    mimeType: java.lang.String = null,
+    name: java.lang.String = null,
+    role: java.lang.String = null
+  ): FileAssociation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (!js.isUndefined(isPackage)) __obj.updateDynamic("isPackage")(isPackage)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (role != null) __obj.updateDynamic("role")(role)
+    __obj.asInstanceOf[FileAssociation]
+  }
+}
+

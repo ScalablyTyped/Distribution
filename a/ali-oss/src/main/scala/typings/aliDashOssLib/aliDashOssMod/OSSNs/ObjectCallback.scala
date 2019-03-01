@@ -18,3 +18,24 @@ trait ObjectCallback extends js.Object {
   var url: java.lang.String
 }
 
+object ObjectCallback {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    url: java.lang.String,
+    contentType: java.lang.String = null,
+    customValue: js.Object = null,
+    headers: js.Object = null,
+    host: java.lang.String = null
+  ): ObjectCallback = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("url")(url)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (customValue != null) __obj.updateDynamic("customValue")(customValue)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (host != null) __obj.updateDynamic("host")(host)
+    __obj.asInstanceOf[ObjectCallback]
+  }
+}
+

@@ -17,3 +17,30 @@ trait PageletOption extends js.Object {
   var skipAnalysis: scala.Boolean
 }
 
+object PageletOption {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    reqID: java.lang.String,
+    skipAnalysis: scala.Boolean,
+    compiled: js.UndefOr[scala.Boolean] = js.undefined,
+    container: java.lang.String = null,
+    `for`: java.lang.String = null,
+    `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
+    locals: js.Object = null,
+    mode: yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode = null
+  ): PageletOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("reqID")(reqID)
+    __obj.updateDynamic("skipAnalysis")(skipAnalysis)
+    if (!js.isUndefined(compiled)) __obj.updateDynamic("compiled")(compiled)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (`for` != null) __obj.updateDynamic("for")(`for`)
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[PageletOption]
+  }
+}
+

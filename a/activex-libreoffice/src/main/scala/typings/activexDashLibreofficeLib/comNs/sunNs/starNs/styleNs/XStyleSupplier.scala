@@ -21,3 +21,24 @@ trait XStyleSupplier
   def setStyle(xStyle: XStyle): scala.Unit
 }
 
+object XStyleSupplier {
+  @scala.inline
+  def apply(
+    Style: XStyle,
+    acquire: js.Function0[scala.Unit],
+    getStyle: js.Function0[XStyle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setStyle: js.Function1[XStyle, scala.Unit]
+  ): XStyleSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Style")(Style)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getStyle")(getStyle)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setStyle")(setStyle)
+    __obj.asInstanceOf[XStyleSupplier]
+  }
+}
+

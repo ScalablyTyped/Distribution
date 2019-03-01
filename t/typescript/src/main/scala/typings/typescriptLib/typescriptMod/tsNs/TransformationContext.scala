@@ -60,3 +60,47 @@ trait TransformationContext extends js.Object {
   def suspendLexicalEnvironment(): scala.Unit
 }
 
+object TransformationContext {
+  @scala.inline
+  def apply(
+    enableEmitNotification: js.Function1[SyntaxKind, scala.Unit],
+    enableSubstitution: js.Function1[SyntaxKind, scala.Unit],
+    endLexicalEnvironment: js.Function0[js.UndefOr[js.Array[Statement]]],
+    getCompilerOptions: js.Function0[CompilerOptions],
+    hoistFunctionDeclaration: js.Function1[FunctionDeclaration, scala.Unit],
+    hoistVariableDeclaration: js.Function1[Identifier, scala.Unit],
+    isEmitNotificationEnabled: js.Function1[Node, scala.Boolean],
+    isSubstitutionEnabled: js.Function1[Node, scala.Boolean],
+    onEmitNode: js.Function3[
+      EmitHint, 
+      Node, 
+      js.Function2[/* hint */ EmitHint, /* node */ Node, scala.Unit], 
+      scala.Unit
+    ],
+    onSubstituteNode: js.Function2[EmitHint, Node, Node],
+    readEmitHelpers: js.Function0[js.UndefOr[js.Array[EmitHelper]]],
+    requestEmitHelper: js.Function1[EmitHelper, scala.Unit],
+    resumeLexicalEnvironment: js.Function0[scala.Unit],
+    startLexicalEnvironment: js.Function0[scala.Unit],
+    suspendLexicalEnvironment: js.Function0[scala.Unit]
+  ): TransformationContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enableEmitNotification")(enableEmitNotification)
+    __obj.updateDynamic("enableSubstitution")(enableSubstitution)
+    __obj.updateDynamic("endLexicalEnvironment")(endLexicalEnvironment)
+    __obj.updateDynamic("getCompilerOptions")(getCompilerOptions)
+    __obj.updateDynamic("hoistFunctionDeclaration")(hoistFunctionDeclaration)
+    __obj.updateDynamic("hoistVariableDeclaration")(hoistVariableDeclaration)
+    __obj.updateDynamic("isEmitNotificationEnabled")(isEmitNotificationEnabled)
+    __obj.updateDynamic("isSubstitutionEnabled")(isSubstitutionEnabled)
+    __obj.updateDynamic("onEmitNode")(onEmitNode)
+    __obj.updateDynamic("onSubstituteNode")(onSubstituteNode)
+    __obj.updateDynamic("readEmitHelpers")(readEmitHelpers)
+    __obj.updateDynamic("requestEmitHelper")(requestEmitHelper)
+    __obj.updateDynamic("resumeLexicalEnvironment")(resumeLexicalEnvironment)
+    __obj.updateDynamic("startLexicalEnvironment")(startLexicalEnvironment)
+    __obj.updateDynamic("suspendLexicalEnvironment")(suspendLexicalEnvironment)
+    __obj.asInstanceOf[TransformationContext]
+  }
+}
+

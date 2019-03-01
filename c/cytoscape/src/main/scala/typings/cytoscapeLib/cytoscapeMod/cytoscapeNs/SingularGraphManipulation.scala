@@ -25,3 +25,14 @@ trait SingularGraphManipulation extends js.Object {
   def removed(): scala.Boolean
 }
 
+object SingularGraphManipulation {
+  @scala.inline
+  def apply(cy: js.Function0[Core], inside: js.Function0[scala.Boolean], removed: js.Function0[scala.Boolean]): SingularGraphManipulation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cy")(cy)
+    __obj.updateDynamic("inside")(inside)
+    __obj.updateDynamic("removed")(removed)
+    __obj.asInstanceOf[SingularGraphManipulation]
+  }
+}
+

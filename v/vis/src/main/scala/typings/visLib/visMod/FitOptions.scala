@@ -17,3 +17,13 @@ trait FitOptions extends js.Object {
   var nodes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object FitOptions {
+  @scala.inline
+  def apply(animation: TimelineAnimationType, nodes: js.Array[java.lang.String] = null): FitOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    __obj.asInstanceOf[FitOptions]
+  }
+}
+

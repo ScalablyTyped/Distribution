@@ -23,3 +23,22 @@ trait AppointmentHoverEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppointmentHoverEventArgs {
+  @scala.inline
+  def apply(
+    appointment: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    `object`: js.Any = null,
+    `type`: java.lang.String = null
+  ): AppointmentHoverEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AppointmentHoverEventArgs]
+  }
+}
+

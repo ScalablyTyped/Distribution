@@ -41,3 +41,58 @@ trait TimeOptions extends Options {
   var min: js.UndefOr[MinOrMaxTimeOption] = js.undefined
 }
 
+object TimeOptions {
+  @scala.inline
+  def apply(
+    clear: java.lang.String = null,
+    closeOnClear: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    container: java.lang.String | pickadateLib.JQuery = null,
+    containerHidden: java.lang.String = null,
+    disable: js.Array[_] = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    formatLabel: java.lang.String | (js.Function1[/* time */ TimeItem, java.lang.String]) = null,
+    formatSubmit: java.lang.String = null,
+    hiddenName: js.UndefOr[scala.Boolean] = js.undefined,
+    hiddenPrefix: java.lang.String = null,
+    hiddenSuffix: java.lang.String = null,
+    interval: scala.Int | scala.Double = null,
+    klass: TimeKlassOptions = null,
+    max: MinOrMaxTimeOption = null,
+    min: MinOrMaxTimeOption = null,
+    onClose: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onOpen: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onRender: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onSet: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onStart: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onStop: js.Function1[/* event */ js.Any, scala.Unit] = null
+  ): TimeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (!js.isUndefined(closeOnClear)) __obj.updateDynamic("closeOnClear")(closeOnClear)
+    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (containerHidden != null) __obj.updateDynamic("containerHidden")(containerHidden)
+    if (disable != null) __obj.updateDynamic("disable")(disable)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel.asInstanceOf[js.Any])
+    if (formatSubmit != null) __obj.updateDynamic("formatSubmit")(formatSubmit)
+    if (!js.isUndefined(hiddenName)) __obj.updateDynamic("hiddenName")(hiddenName)
+    if (hiddenPrefix != null) __obj.updateDynamic("hiddenPrefix")(hiddenPrefix)
+    if (hiddenSuffix != null) __obj.updateDynamic("hiddenSuffix")(hiddenSuffix)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (klass != null) __obj.updateDynamic("klass")(klass)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (onSet != null) __obj.updateDynamic("onSet")(onSet)
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onStop != null) __obj.updateDynamic("onStop")(onStop)
+    __obj.asInstanceOf[TimeOptions]
+  }
+}
+

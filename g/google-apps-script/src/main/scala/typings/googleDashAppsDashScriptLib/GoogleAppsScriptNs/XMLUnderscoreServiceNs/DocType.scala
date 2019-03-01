@@ -19,3 +19,34 @@ trait DocType extends js.Object {
   def setSystemId(id: java.lang.String): DocType
 }
 
+object DocType {
+  @scala.inline
+  def apply(
+    detach: js.Function0[Content],
+    getElementName: js.Function0[java.lang.String],
+    getInternalSubset: js.Function0[java.lang.String],
+    getParentElement: js.Function0[Element],
+    getPublicId: js.Function0[java.lang.String],
+    getSystemId: js.Function0[java.lang.String],
+    getValue: js.Function0[java.lang.String],
+    setElementName: js.Function1[java.lang.String, DocType],
+    setInternalSubset: js.Function1[java.lang.String, DocType],
+    setPublicId: js.Function1[java.lang.String, DocType],
+    setSystemId: js.Function1[java.lang.String, DocType]
+  ): DocType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("detach")(detach)
+    __obj.updateDynamic("getElementName")(getElementName)
+    __obj.updateDynamic("getInternalSubset")(getInternalSubset)
+    __obj.updateDynamic("getParentElement")(getParentElement)
+    __obj.updateDynamic("getPublicId")(getPublicId)
+    __obj.updateDynamic("getSystemId")(getSystemId)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("setElementName")(setElementName)
+    __obj.updateDynamic("setInternalSubset")(setInternalSubset)
+    __obj.updateDynamic("setPublicId")(setPublicId)
+    __obj.updateDynamic("setSystemId")(setSystemId)
+    __obj.asInstanceOf[DocType]
+  }
+}
+

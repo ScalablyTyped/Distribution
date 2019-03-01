@@ -24,3 +24,15 @@ trait ItemRenderedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ItemRenderedEventUIParam {
+  @scala.inline
+  def apply(index: js.Any = null, item: js.Any = null, itemData: js.Any = null, owner: js.Any = null): ItemRenderedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (itemData != null) __obj.updateDynamic("itemData")(itemData)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ItemRenderedEventUIParam]
+  }
+}
+

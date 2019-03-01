@@ -20,3 +20,13 @@ trait CertificateInfo extends js.Object {
   var supportedHashes: js.UndefOr[js.Array[Hash]] = js.undefined
 }
 
+object CertificateInfo {
+  @scala.inline
+  def apply(certificate: stdLib.ArrayBuffer = null, supportedHashes: js.Array[Hash] = null): CertificateInfo = {
+    val __obj = js.Dynamic.literal()
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate)
+    if (supportedHashes != null) __obj.updateDynamic("supportedHashes")(supportedHashes)
+    __obj.asInstanceOf[CertificateInfo]
+  }
+}
+

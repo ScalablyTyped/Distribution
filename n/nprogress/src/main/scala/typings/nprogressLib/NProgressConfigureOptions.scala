@@ -40,3 +40,28 @@ trait NProgressConfigureOptions extends js.Object {
   var trickleSpeed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NProgressConfigureOptions {
+  @scala.inline
+  def apply(
+    easing: java.lang.String = null,
+    minimum: scala.Int | scala.Double = null,
+    parent: java.lang.String = null,
+    showSpinner: js.UndefOr[scala.Boolean] = js.undefined,
+    speed: scala.Int | scala.Double = null,
+    template: java.lang.String = null,
+    trickle: js.UndefOr[scala.Boolean] = js.undefined,
+    trickleSpeed: scala.Int | scala.Double = null
+  ): NProgressConfigureOptions = {
+    val __obj = js.Dynamic.literal()
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (!js.isUndefined(showSpinner)) __obj.updateDynamic("showSpinner")(showSpinner)
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(trickle)) __obj.updateDynamic("trickle")(trickle)
+    if (trickleSpeed != null) __obj.updateDynamic("trickleSpeed")(trickleSpeed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NProgressConfigureOptions]
+  }
+}
+

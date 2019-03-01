@@ -49,3 +49,24 @@ trait XStringKeyMap extends js.Object {
   def insertValue(aKey: java.lang.String, aValue: js.Any): scala.Unit
 }
 
+object XStringKeyMap {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    getKeyByIndex: js.Function1[scala.Double, java.lang.String],
+    getValue: js.Function1[java.lang.String, js.Any],
+    getValueByIndex: js.Function1[scala.Double, js.Any],
+    hasValue: js.Function1[java.lang.String, scala.Boolean],
+    insertValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XStringKeyMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("getKeyByIndex")(getKeyByIndex)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("getValueByIndex")(getValueByIndex)
+    __obj.updateDynamic("hasValue")(hasValue)
+    __obj.updateDynamic("insertValue")(insertValue)
+    __obj.asInstanceOf[XStringKeyMap]
+  }
+}
+

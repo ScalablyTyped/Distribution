@@ -12,3 +12,12 @@ trait GetDomainsReturnType extends js.Object {
   var domains: js.Array[Domain]
 }
 
+object GetDomainsReturnType {
+  @scala.inline
+  def apply(domains: js.Array[Domain]): GetDomainsReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domains")(domains)
+    __obj.asInstanceOf[GetDomainsReturnType]
+  }
+}
+

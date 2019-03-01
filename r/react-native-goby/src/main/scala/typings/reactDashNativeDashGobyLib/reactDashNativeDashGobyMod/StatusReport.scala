@@ -28,3 +28,22 @@ trait StatusReport extends js.Object {
   var status: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus
 }
 
+object StatusReport {
+  @scala.inline
+  def apply(
+    status: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus,
+    appVersion: java.lang.String = null,
+    `package`: Package = null,
+    previousDeploymentKey: java.lang.String = null,
+    previousLabelOrAppVersion: java.lang.String = null
+  ): StatusReport = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
+    if (`package` != null) __obj.updateDynamic("package")(`package`)
+    if (previousDeploymentKey != null) __obj.updateDynamic("previousDeploymentKey")(previousDeploymentKey)
+    if (previousLabelOrAppVersion != null) __obj.updateDynamic("previousLabelOrAppVersion")(previousLabelOrAppVersion)
+    __obj.asInstanceOf[StatusReport]
+  }
+}
+

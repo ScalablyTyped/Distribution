@@ -11,3 +11,18 @@ trait HttpResponse extends js.Object {
   var statusCode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HttpResponse {
+  @scala.inline
+  def apply(
+    body: js.Object | java.lang.String = null,
+    headers: js.Object = null,
+    statusCode: scala.Int | scala.Double = null
+  ): HttpResponse = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HttpResponse]
+  }
+}
+

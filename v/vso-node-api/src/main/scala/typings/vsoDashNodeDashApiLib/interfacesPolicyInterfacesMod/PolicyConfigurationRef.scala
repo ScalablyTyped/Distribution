@@ -20,3 +20,13 @@ trait PolicyConfigurationRef extends js.Object {
   var url: java.lang.String
 }
 
+object PolicyConfigurationRef {
+  @scala.inline
+  def apply(id: scala.Double, `type`: PolicyTypeRef, url: java.lang.String): PolicyConfigurationRef = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[PolicyConfigurationRef]
+  }
+}
+

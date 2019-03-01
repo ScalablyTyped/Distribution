@@ -18,3 +18,22 @@ trait IQueryStats extends js.Object {
   var typeStatsWithContext: js.UndefOr[js.Array[IContextualizedTypeStats] | scala.Null] = js.undefined
 }
 
+object IQueryStats {
+  @scala.inline
+  def apply(
+    perClientName: org.scalablytyped.runtime.StringDictionary[IClientNameStats] = null,
+    perType: js.Array[ITypeStat] = null,
+    perTypeStat: org.scalablytyped.runtime.StringDictionary[ITypeStat] = null,
+    queryStatsWithContext: js.Array[IContextualizedQueryLatencyStats] = null,
+    typeStatsWithContext: js.Array[IContextualizedTypeStats] = null
+  ): IQueryStats = {
+    val __obj = js.Dynamic.literal()
+    if (perClientName != null) __obj.updateDynamic("perClientName")(perClientName)
+    if (perType != null) __obj.updateDynamic("perType")(perType)
+    if (perTypeStat != null) __obj.updateDynamic("perTypeStat")(perTypeStat)
+    if (queryStatsWithContext != null) __obj.updateDynamic("queryStatsWithContext")(queryStatsWithContext)
+    if (typeStatsWithContext != null) __obj.updateDynamic("typeStatsWithContext")(typeStatsWithContext)
+    __obj.asInstanceOf[IQueryStats]
+  }
+}
+

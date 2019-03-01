@@ -10,3 +10,16 @@ trait IStaticViewStrategyConfig extends js.Object {
   var template: java.lang.String | stdLib.HTMLTemplateElement
 }
 
+object IStaticViewStrategyConfig {
+  @scala.inline
+  def apply(
+    template: java.lang.String | stdLib.HTMLTemplateElement,
+    dependencies: js.Array[js.Function] | js.Object = null
+  ): IStaticViewStrategyConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IStaticViewStrategyConfig]
+  }
+}
+

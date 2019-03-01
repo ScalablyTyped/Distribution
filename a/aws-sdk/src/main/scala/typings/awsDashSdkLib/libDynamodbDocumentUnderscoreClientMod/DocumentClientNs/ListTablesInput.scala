@@ -16,3 +16,13 @@ trait ListTablesInput extends js.Object {
   var Limit: js.UndefOr[ListTablesInputLimit] = js.undefined
 }
 
+object ListTablesInput {
+  @scala.inline
+  def apply(ExclusiveStartTableName: TableName = null, Limit: js.UndefOr[ListTablesInputLimit] = js.undefined): ListTablesInput = {
+    val __obj = js.Dynamic.literal()
+    if (ExclusiveStartTableName != null) __obj.updateDynamic("ExclusiveStartTableName")(ExclusiveStartTableName)
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    __obj.asInstanceOf[ListTablesInput]
+  }
+}
+

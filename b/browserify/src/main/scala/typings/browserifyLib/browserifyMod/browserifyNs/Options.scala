@@ -49,3 +49,42 @@ trait Options extends CustomOptions {
   var standalone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    basedir: java.lang.String = null,
+    builtins: js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Boolean = null,
+    bundleExternal: js.UndefOr[scala.Boolean] = js.undefined,
+    commondir: js.UndefOr[scala.Boolean] = js.undefined,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    detectGlobals: js.UndefOr[scala.Boolean] = js.undefined,
+    entries: InputFile | js.Array[InputFile] = null,
+    extensions: js.Array[java.lang.String] = null,
+    externalRequireName: java.lang.String = null,
+    fullPaths: js.UndefOr[scala.Boolean] = js.undefined,
+    insertGlobalVars: insertDashModuleDashGlobalsLib.insertDashModuleDashGlobalsMod.InsertModuleGlobalsNs.VarsOption = null,
+    insertGlobals: js.UndefOr[scala.Boolean] = js.undefined,
+    noParse: js.Array[java.lang.String] = null,
+    paths: js.Array[java.lang.String] = null,
+    standalone: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
+    if (builtins != null) __obj.updateDynamic("builtins")(builtins.asInstanceOf[js.Any])
+    if (!js.isUndefined(bundleExternal)) __obj.updateDynamic("bundleExternal")(bundleExternal)
+    if (!js.isUndefined(commondir)) __obj.updateDynamic("commondir")(commondir)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(detectGlobals)) __obj.updateDynamic("detectGlobals")(detectGlobals)
+    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (externalRequireName != null) __obj.updateDynamic("externalRequireName")(externalRequireName)
+    if (!js.isUndefined(fullPaths)) __obj.updateDynamic("fullPaths")(fullPaths)
+    if (insertGlobalVars != null) __obj.updateDynamic("insertGlobalVars")(insertGlobalVars)
+    if (!js.isUndefined(insertGlobals)) __obj.updateDynamic("insertGlobals")(insertGlobals)
+    if (noParse != null) __obj.updateDynamic("noParse")(noParse)
+    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (standalone != null) __obj.updateDynamic("standalone")(standalone)
+    __obj.asInstanceOf[Options]
+  }
+}
+

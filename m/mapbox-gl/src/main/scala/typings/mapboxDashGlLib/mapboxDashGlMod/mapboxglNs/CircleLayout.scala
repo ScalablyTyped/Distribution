@@ -11,3 +11,14 @@ trait CircleLayout extends js.Object {
   ] = js.undefined
 }
 
+object CircleLayout {
+  @scala.inline
+  def apply(
+    visibility: mapboxDashGlLib.mapboxDashGlLibStrings.visible | mapboxDashGlLib.mapboxDashGlLibStrings.none = null
+  ): CircleLayout = {
+    val __obj = js.Dynamic.literal()
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CircleLayout]
+  }
+}
+

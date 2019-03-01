@@ -37,3 +37,33 @@ trait Opts extends js.Object {
   var preserveSymlinks: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Opts {
+  @scala.inline
+  def apply(
+    basedir: java.lang.String = null,
+    extensions: java.lang.String | js.Array[java.lang.String] = null,
+    moduleDirectory: java.lang.String | js.Array[java.lang.String] = null,
+    `package`: js.Any = null,
+    packageFilter: js.Function2[/* pkg */ js.Any, /* pkgfile */ java.lang.String, _] = null,
+    pathFilter: js.Function3[
+      /* pkg */ js.Any, 
+      /* path */ java.lang.String, 
+      /* relativePath */ java.lang.String, 
+      java.lang.String
+    ] = null,
+    paths: java.lang.String | js.Array[java.lang.String] = null,
+    preserveSymlinks: js.UndefOr[scala.Boolean] = js.undefined
+  ): Opts = {
+    val __obj = js.Dynamic.literal()
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (moduleDirectory != null) __obj.updateDynamic("moduleDirectory")(moduleDirectory.asInstanceOf[js.Any])
+    if (`package` != null) __obj.updateDynamic("package")(`package`)
+    if (packageFilter != null) __obj.updateDynamic("packageFilter")(packageFilter)
+    if (pathFilter != null) __obj.updateDynamic("pathFilter")(pathFilter)
+    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveSymlinks)) __obj.updateDynamic("preserveSymlinks")(preserveSymlinks)
+    __obj.asInstanceOf[Opts]
+  }
+}
+

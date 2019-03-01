@@ -12,3 +12,12 @@ trait Anon_Payload extends js.Object {
   var payload: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Payload {
+  @scala.inline
+  def apply(payload: js.UndefOr[scala.Boolean] = js.undefined): Anon_Payload = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload)
+    __obj.asInstanceOf[Anon_Payload]
+  }
+}
+

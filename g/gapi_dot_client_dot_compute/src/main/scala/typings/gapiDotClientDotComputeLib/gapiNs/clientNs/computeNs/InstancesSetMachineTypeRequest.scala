@@ -13,3 +13,12 @@ trait InstancesSetMachineTypeRequest extends js.Object {
   var machineType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstancesSetMachineTypeRequest {
+  @scala.inline
+  def apply(machineType: java.lang.String = null): InstancesSetMachineTypeRequest = {
+    val __obj = js.Dynamic.literal()
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
+    __obj.asInstanceOf[InstancesSetMachineTypeRequest]
+  }
+}
+

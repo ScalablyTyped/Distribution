@@ -11,3 +11,14 @@ trait LabColor extends js.Object {
   var b: scala.Double
 }
 
+object LabColor {
+  @scala.inline
+  def apply(L: scala.Double, a: scala.Double, b: scala.Double): LabColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("L")(L)
+    __obj.updateDynamic("a")(a)
+    __obj.updateDynamic("b")(b)
+    __obj.asInstanceOf[LabColor]
+  }
+}
+

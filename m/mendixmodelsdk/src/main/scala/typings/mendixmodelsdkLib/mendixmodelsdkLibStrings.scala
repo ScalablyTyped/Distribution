@@ -10,13 +10,15 @@ object mendixmodelsdkLibStrings {
   sealed trait ADD extends js.Object
   
   @js.native
-  sealed trait APP_NOT_FOUND extends js.Object
+  sealed trait APP_NOT_FOUND
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
   
   @js.native
   sealed trait ATTACH_ELEMENT extends js.Object
   
   @js.native
-  sealed trait BUSY_PROVISIONING extends js.Object
+  sealed trait BUSY_PROVISIONING
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
   
   @js.native
   sealed trait CHANGE extends js.Object
@@ -37,100 +39,126 @@ object mendixmodelsdkLibStrings {
   sealed trait DETACH_ELEMENT extends js.Object
   
   @js.native
-  sealed trait FAILED extends js.Object
+  sealed trait FAILED
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
   
   @js.native
-  sealed trait FAILED_STAGING extends js.Object
+  sealed trait FAILED_STAGING
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
   
   @js.native
-  sealed trait INVALID_OPENID extends js.Object
+  sealed trait INVALID_OPENID
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
   
   @js.native
-  sealed trait INVALID_PROJECTID extends js.Object
+  sealed trait INVALID_PROJECTID
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
   
   @js.native
   sealed trait Licensed extends js.Object
   
   @js.native
-  sealed trait MXBUILD_STARTED extends js.Object
+  sealed trait MXBUILD_STARTED
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
   
   @js.native
-  sealed trait NO_WEBMODELER_TARGET_SELECTED extends js.Object
+  sealed trait NO_WEBMODELER_TARGET_SELECTED
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
   
   @js.native
   sealed trait REMOVE extends js.Object
   
   @js.native
-  sealed trait STAGING extends js.Object
+  sealed trait STAGING
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
   
   @js.native
-  sealed trait STARTED extends js.Object
+  sealed trait STARTED
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
   
   @js.native
-  sealed trait STARTING extends js.Object
+  sealed trait STARTING
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
   
   @js.native
-  sealed trait STOPPED extends js.Object
+  sealed trait STOPPED
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
   
   @js.native
   sealed trait Sandbox extends js.Object
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
   
   @js.native
-  sealed trait UNKNOWN_ACCOUNT extends js.Object
+  sealed trait UNKNOWN_ACCOUNT
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
   
   @js.native
-  sealed trait UNKNOWN_DEPLOYER extends js.Object
+  sealed trait UNKNOWN_DEPLOYER
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
   
   @js.native
-  sealed trait UNKNOWN_PROJECT extends js.Object
+  sealed trait UNKNOWN_PROJECT
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
   
   @js.native
-  sealed trait UNLINKED extends js.Object
+  sealed trait UNLINKED
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.CannotFixAppState
   
   @js.native
   sealed trait UPDATE_PROPERTY_VALUE extends js.Object
   
   @js.native
-  sealed trait UPDATING extends js.Object
+  sealed trait UPDATING
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
   
   @js.native
   sealed trait Unlicensed extends js.Object
   
   @js.native
-  sealed trait attached extends js.Object
+  sealed trait attached
+    extends mendixmodelsdkLib.distSdkInternalStructuresMod.StructureState
   
   @js.native
-  sealed trait bidi extends js.Object
+  sealed trait bidi
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType
   
   @js.native
-  sealed trait commit extends js.Object
+  sealed trait commit
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType
   
   @js.native
-  sealed trait consistencyerrors extends js.Object
+  sealed trait consistencyerrors
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IUpdateAppJobStatus
   
   @js.native
-  sealed trait conversion extends js.Object
+  sealed trait conversion
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends mendixmodelsdkLib.distSdkInternalTransportationMod.RequestMethod
   
   @js.native
-  sealed trait deleted extends js.Object
+  sealed trait deleted
+    extends mendixmodelsdkLib.distSdkInternalStructuresMod.StructureState
   
   @js.native
-  sealed trait detached extends js.Object
+  sealed trait detached
+    extends mendixmodelsdkLib.distSdkInternalStructuresMod.StructureState
   
   @js.native
-  sealed trait edit extends js.Object
+  sealed trait edit
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType
   
   @js.native
   sealed trait fail extends js.Object
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IUpdateAppJobStatus
   
   @js.native
   sealed trait fast extends js.Object
@@ -139,40 +167,50 @@ object mendixmodelsdkLibStrings {
   sealed trait full extends js.Object
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get
+    extends mendixmodelsdkLib.distSdkInternalTransportationMod.RequestMethod
   
   @js.native
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait `new` extends js.Object
+  sealed trait `new`
+    extends mendixmodelsdkLib.distSdkInternalStructuresMod.StructureState
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post
+    extends mendixmodelsdkLib.distSdkInternalTransportationMod.RequestMethod
   
   @js.native
-  sealed trait provisioning extends js.Object
+  sealed trait provisioning
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IUpdateAppJobStatus
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait put
+    extends mendixmodelsdkLib.distSdkInternalTransportationMod.RequestMethod
   
   @js.native
-  sealed trait resuming extends js.Object
+  sealed trait resuming
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IUpdateAppJobStatus
   
   @js.native
-  sealed trait started extends js.Object
+  sealed trait started
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IUpdateAppJobStatus
   
   @js.native
   sealed trait success extends js.Object
   
   @js.native
-  sealed trait switch extends js.Object
+  sealed trait switch
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType
   
   @js.native
-  sealed trait updating extends js.Object
+  sealed trait updating
+    extends mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IUpdateAppJobStatus
   
   @js.native
   sealed trait zip extends js.Object

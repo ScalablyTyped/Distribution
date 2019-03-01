@@ -202,3 +202,108 @@ trait DateTimePickerProps
   var value: js.UndefOr[stdLib.Date] = js.undefined
 }
 
+object DateTimePickerProps {
+  @scala.inline
+  def apply(
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    calendar: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    containerClassName: java.lang.String = null,
+    culture: java.lang.String = null,
+    currentDate: stdLib.Date = null,
+    date: js.UndefOr[scala.Boolean] = js.undefined,
+    dateIcon: reactLib.reactMod.Global.JSXNs.Element = null,
+    defaultCurrentDate: stdLib.Date = null,
+    defaultOpen: reactDashWidgetsLib.reactDashWidgetsLibNumbers.`false` | reactDashWidgetsLib.reactDashWidgetsLibStrings.calendar | reactDashWidgetsLib.reactDashWidgetsLibStrings.time = null,
+    defaultValue: stdLib.Date = null,
+    disabled: scala.Boolean | js.Array[_] = null,
+    dropUp: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    editFormat: java.lang.String = null,
+    finalView: reactDashWidgetsLib.reactDashWidgetsLibStrings.month | reactDashWidgetsLib.reactDashWidgetsLibStrings.year | reactDashWidgetsLib.reactDashWidgetsLibStrings.decade | reactDashWidgetsLib.reactDashWidgetsLibStrings.century = null,
+    format: java.lang.String = null,
+    id: java.lang.String = null,
+    initialView: reactDashWidgetsLib.reactDashWidgetsLibStrings.month | reactDashWidgetsLib.reactDashWidgetsLibStrings.year | reactDashWidgetsLib.reactDashWidgetsLibStrings.decade | reactDashWidgetsLib.reactDashWidgetsLibStrings.century = null,
+    inputProps: js.Object = null,
+    isRtl: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    max: stdLib.Date = null,
+    messages: DateTimePickerMessages = null,
+    min: stdLib.Date = null,
+    name: java.lang.String = null,
+    onBlur: js.Function0[scala.Unit] = null,
+    onChange: js.Function2[
+      /* date */ js.UndefOr[stdLib.Date], 
+      /* dateStr */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ] = null,
+    onCurrentDateChange: js.Function1[/* date */ js.UndefOr[stdLib.Date], scala.Unit] = null,
+    onFocus: js.Function0[scala.Unit] = null,
+    onKeyDown: js.Function1[/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit] = null,
+    onKeyPress: js.Function1[/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[_], scala.Unit] = null,
+    onSelect: js.Function1[/* date */ js.UndefOr[stdLib.Date], scala.Unit] = null,
+    onToggle: js.Function1[/* isOpen */ scala.Boolean, scala.Unit] = null,
+    open: reactDashWidgetsLib.reactDashWidgetsLibNumbers.`false` | reactDashWidgetsLib.reactDashWidgetsLibStrings.date | reactDashWidgetsLib.reactDashWidgetsLibStrings.time = null,
+    parse: (js.Function1[/* str */ java.lang.String, stdLib.Date]) | js.Array[java.lang.String] | java.lang.String = null,
+    placeholder: java.lang.String = null,
+    popupTransition: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    readOnly: scala.Boolean | js.Array[_] = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[DateTimePickerClass] = null,
+    step: scala.Double | scala.Boolean = null,
+    time: js.UndefOr[scala.Boolean] = js.undefined,
+    timeComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    timeFormat: java.lang.String = null,
+    timeIcon: reactLib.reactMod.Global.JSXNs.Element = null,
+    value: stdLib.Date = null
+  ): DateTimePickerProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(calendar)) __obj.updateDynamic("calendar")(calendar)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName)
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate)
+    if (!js.isUndefined(date)) __obj.updateDynamic("date")(date)
+    if (dateIcon != null) __obj.updateDynamic("dateIcon")(dateIcon)
+    if (defaultCurrentDate != null) __obj.updateDynamic("defaultCurrentDate")(defaultCurrentDate)
+    if (defaultOpen != null) __obj.updateDynamic("defaultOpen")(defaultOpen.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropUp)) __obj.updateDynamic("dropUp")(dropUp)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (editFormat != null) __obj.updateDynamic("editFormat")(editFormat)
+    if (finalView != null) __obj.updateDynamic("finalView")(finalView.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (initialView != null) __obj.updateDynamic("initialView")(initialView.asInstanceOf[js.Any])
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (min != null) __obj.updateDynamic("min")(min)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onCurrentDateChange != null) __obj.updateDynamic("onCurrentDateChange")(onCurrentDateChange)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (popupTransition != null) __obj.updateDynamic("popupTransition")(popupTransition.asInstanceOf[js.Any])
+    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time)
+    if (timeComponent != null) __obj.updateDynamic("timeComponent")(timeComponent.asInstanceOf[js.Any])
+    if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat)
+    if (timeIcon != null) __obj.updateDynamic("timeIcon")(timeIcon)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DateTimePickerProps]
+  }
+}
+

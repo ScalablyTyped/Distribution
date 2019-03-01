@@ -3627,6 +3627,12 @@ object StorageGatewayNs extends js.Object {
     var TargetARN: js.UndefOr[TargetARN] = js.undefined
   }
   
+  trait _FileShareType extends js.Object
+  
+  trait _ObjectACL extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActivationKey = java.lang.String
   type Authentication = java.lang.String
@@ -3659,7 +3665,7 @@ object StorageGatewayNs extends js.Object {
   type FileShareId = java.lang.String
   type FileShareInfoList = js.Array[FileShareInfo]
   type FileShareStatus = java.lang.String
-  type FileShareType = awsDashSdkLib.awsDashSdkLibStrings.NFS | awsDashSdkLib.awsDashSdkLibStrings.SMB | java.lang.String
+  type FileShareType = _FileShareType | java.lang.String
   type FileShareUser = java.lang.String
   type FileShareUserList = js.Array[FileShareUser]
   type Folder = java.lang.String
@@ -3692,7 +3698,7 @@ object StorageGatewayNs extends js.Object {
   type NextUpdateAvailabilityDate = java.lang.String
   type NotificationId = java.lang.String
   type NumTapesToCreate = scala.Double
-  type ObjectACL = awsDashSdkLib.awsDashSdkLibStrings.`private` | awsDashSdkLib.awsDashSdkLibStrings.`public-read` | awsDashSdkLib.awsDashSdkLibStrings.`public-read-write` | awsDashSdkLib.awsDashSdkLibStrings.`authenticated-read` | awsDashSdkLib.awsDashSdkLibStrings.`bucket-owner-read` | awsDashSdkLib.awsDashSdkLibStrings.`bucket-owner-full-control` | awsDashSdkLib.awsDashSdkLibStrings.`aws-exec-read` | java.lang.String
+  type ObjectACL = _ObjectACL | java.lang.String
   type OrganizationalUnit = java.lang.String
   type Path = java.lang.String
   type PermissionId = scala.Double
@@ -3745,7 +3751,7 @@ object StorageGatewayNs extends js.Object {
   type VolumeStatus = java.lang.String
   type VolumeType = java.lang.String
   type VolumeUsedInBytes = scala.Double
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-06-30` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type double = scala.Double
   type integer = scala.Double
   type long = scala.Double

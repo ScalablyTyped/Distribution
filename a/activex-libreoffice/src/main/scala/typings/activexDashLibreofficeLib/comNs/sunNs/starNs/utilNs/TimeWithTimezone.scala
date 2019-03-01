@@ -21,3 +21,13 @@ trait TimeWithTimezone extends js.Object {
   var Timezone: scala.Double
 }
 
+object TimeWithTimezone {
+  @scala.inline
+  def apply(TimeInTZ: Time, Timezone: scala.Double): TimeWithTimezone = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TimeInTZ")(TimeInTZ)
+    __obj.updateDynamic("Timezone")(Timezone)
+    __obj.asInstanceOf[TimeWithTimezone]
+  }
+}
+

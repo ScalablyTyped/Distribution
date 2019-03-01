@@ -35,3 +35,18 @@ trait NetworkPolicyPeer extends js.Object {
   val podSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
 }
 
+object NetworkPolicyPeer {
+  @scala.inline
+  def apply(
+    ipBlock: IPBlock,
+    namespaceSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    podSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
+  ): NetworkPolicyPeer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ipBlock")(ipBlock)
+    __obj.updateDynamic("namespaceSelector")(namespaceSelector)
+    __obj.updateDynamic("podSelector")(podSelector)
+    __obj.asInstanceOf[NetworkPolicyPeer]
+  }
+}
+

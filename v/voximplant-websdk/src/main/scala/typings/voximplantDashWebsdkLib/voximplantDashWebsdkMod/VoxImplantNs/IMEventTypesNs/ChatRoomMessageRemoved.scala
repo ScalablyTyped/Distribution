@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when chat room message removed
 		*/
-trait ChatRoomMessageRemoved extends js.Object {
+trait ChatRoomMessageRemoved
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User id
   			*/
@@ -33,5 +34,26 @@ trait ChatRoomMessageRemoved extends js.Object {
   			* Message timestamp
   			*/
   var timestamp: java.lang.String
+}
+
+object ChatRoomMessageRemoved {
+  @scala.inline
+  def apply(
+    from: java.lang.String,
+    message_id: java.lang.String,
+    private_message: java.lang.String,
+    resource: java.lang.String,
+    room: java.lang.String,
+    timestamp: java.lang.String
+  ): ChatRoomMessageRemoved = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("message_id")(message_id)
+    __obj.updateDynamic("private_message")(private_message)
+    __obj.updateDynamic("resource")(resource)
+    __obj.updateDynamic("room")(room)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[ChatRoomMessageRemoved]
+  }
 }
 

@@ -20,3 +20,27 @@ trait url extends js.Object {
   def list(`object`: gapiDotUrlshortenerLib.Anon_FieldsProjection): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
 }
 
+object url {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotUrlshortenerLib.Anon_Fields, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
+    ],
+    insert: js.Function1[
+      gapiDotUrlshortenerLib.Anon_FieldsRequestBody, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
+    ],
+    list: js.Function1[
+      gapiDotUrlshortenerLib.Anon_FieldsProjection, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
+    ]
+  ): url = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[url]
+  }
+}
+

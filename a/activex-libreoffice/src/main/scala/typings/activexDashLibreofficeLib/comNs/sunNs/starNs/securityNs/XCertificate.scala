@@ -58,3 +58,57 @@ trait XCertificate
   def getCertificateUsage(): scala.Double
 }
 
+object XCertificate {
+  @scala.inline
+  def apply(
+    CertificateUsage: scala.Double,
+    Encoded: activexDashInteropLib.SafeArray[scala.Double],
+    Extensions: activexDashInteropLib.SafeArray[XCertificateExtension],
+    IssuerName: java.lang.String,
+    IssuerUniqueID: activexDashInteropLib.SafeArray[scala.Double],
+    MD5Thumbprint: activexDashInteropLib.SafeArray[scala.Double],
+    NotValidAfter: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    NotValidBefore: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    SHA1Thumbprint: activexDashInteropLib.SafeArray[scala.Double],
+    SerialNumber: activexDashInteropLib.SafeArray[scala.Double],
+    SignatureAlgorithm: java.lang.String,
+    SubjectName: java.lang.String,
+    SubjectPublicKeyAlgorithm: java.lang.String,
+    SubjectPublicKeyValue: activexDashInteropLib.SafeArray[scala.Double],
+    SubjectUniqueID: activexDashInteropLib.SafeArray[scala.Double],
+    Version: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    findCertificateExtension: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      XCertificateExtension
+    ],
+    getCertificateUsage: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCertificate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CertificateUsage")(CertificateUsage)
+    __obj.updateDynamic("Encoded")(Encoded)
+    __obj.updateDynamic("Extensions")(Extensions)
+    __obj.updateDynamic("IssuerName")(IssuerName)
+    __obj.updateDynamic("IssuerUniqueID")(IssuerUniqueID)
+    __obj.updateDynamic("MD5Thumbprint")(MD5Thumbprint)
+    __obj.updateDynamic("NotValidAfter")(NotValidAfter)
+    __obj.updateDynamic("NotValidBefore")(NotValidBefore)
+    __obj.updateDynamic("SHA1Thumbprint")(SHA1Thumbprint)
+    __obj.updateDynamic("SerialNumber")(SerialNumber)
+    __obj.updateDynamic("SignatureAlgorithm")(SignatureAlgorithm)
+    __obj.updateDynamic("SubjectName")(SubjectName)
+    __obj.updateDynamic("SubjectPublicKeyAlgorithm")(SubjectPublicKeyAlgorithm)
+    __obj.updateDynamic("SubjectPublicKeyValue")(SubjectPublicKeyValue)
+    __obj.updateDynamic("SubjectUniqueID")(SubjectUniqueID)
+    __obj.updateDynamic("Version")(Version)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("findCertificateExtension")(findCertificateExtension)
+    __obj.updateDynamic("getCertificateUsage")(getCertificateUsage)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCertificate]
+  }
+}
+

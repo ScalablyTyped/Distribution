@@ -23,3 +23,14 @@ trait Anon_Address extends js.Object {
   var options: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Address {
+  @scala.inline
+  def apply(address: java.lang.String = null, collection: java.lang.String = null, options: js.Any = null): Anon_Address = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (collection != null) __obj.updateDynamic("collection")(collection)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[Anon_Address]
+  }
+}
+

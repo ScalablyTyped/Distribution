@@ -23,3 +23,24 @@ trait ThreatMatch extends js.Object {
   var threatType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ThreatMatch {
+  @scala.inline
+  def apply(
+    cacheDuration: java.lang.String = null,
+    platformType: java.lang.String = null,
+    threat: ThreatEntry = null,
+    threatEntryMetadata: ThreatEntryMetadata = null,
+    threatEntryType: java.lang.String = null,
+    threatType: java.lang.String = null
+  ): ThreatMatch = {
+    val __obj = js.Dynamic.literal()
+    if (cacheDuration != null) __obj.updateDynamic("cacheDuration")(cacheDuration)
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
+    if (threat != null) __obj.updateDynamic("threat")(threat)
+    if (threatEntryMetadata != null) __obj.updateDynamic("threatEntryMetadata")(threatEntryMetadata)
+    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType)
+    if (threatType != null) __obj.updateDynamic("threatType")(threatType)
+    __obj.asInstanceOf[ThreatMatch]
+  }
+}
+

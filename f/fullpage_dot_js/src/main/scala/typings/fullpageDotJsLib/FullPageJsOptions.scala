@@ -308,3 +308,150 @@ trait FullPageJsOptions extends js.Object {
   var verticalCentered: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FullPageJsOptions {
+  @scala.inline
+  def apply(
+    afterLoad: js.Function2[/* anchorLink */ java.lang.String, /* index */ scala.Double, scala.Unit] = null,
+    afterRender: js.Function0[scala.Unit] = null,
+    afterResize: js.Function0[scala.Unit] = null,
+    afterResponsive: js.Function1[/* isResponsive */ scala.Boolean, scala.Unit] = null,
+    afterSlideLoad: js.Function4[
+      /* anchorLink */ java.lang.String, 
+      /* index */ scala.Double, 
+      /* slideAnchor */ java.lang.String, 
+      /* slideIndex */ scala.Double, 
+      scala.Unit
+    ] = null,
+    anchors: js.Array[java.lang.String] = null,
+    animateAnchor: js.UndefOr[scala.Boolean] = js.undefined,
+    autoScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    bigSectionsDestination: fullpageDotJsLib.fullpageDotJsLibStrings.top | fullpageDotJsLib.fullpageDotJsLibStrings.bottom = null,
+    continuousHorizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    continuousVertical: js.UndefOr[scala.Boolean] = js.undefined,
+    controlArrows: js.UndefOr[scala.Boolean] = js.undefined,
+    css3: js.UndefOr[scala.Boolean] = js.undefined,
+    dragAndMove: scala.Boolean | fullpageDotJsLib.fullpageDotJsLibStrings.vertical | fullpageDotJsLib.fullpageDotJsLibStrings.horizontal | fullpageDotJsLib.fullpageDotJsLibStrings.fingersonly | fullpageDotJsLib.fullpageDotJsLibStrings.mouseonly = null,
+    easing: java.lang.String = null,
+    easingcss3: java.lang.String = null,
+    fadingEffect: scala.Boolean | fullpageDotJsLib.fullpageDotJsLibStrings.sections | fullpageDotJsLib.fullpageDotJsLibStrings.slides = null,
+    fitToSection: js.UndefOr[scala.Boolean] = js.undefined,
+    fitToSectionDelay: scala.Int | scala.Double = null,
+    fixedElements: java.lang.String = null,
+    interlockedSlides: scala.Boolean | js.Array[scala.Double] = null,
+    keyboardScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    lazyLoading: js.UndefOr[scala.Boolean] = js.undefined,
+    lockAnchors: js.UndefOr[scala.Boolean] = js.undefined,
+    loopBottom: js.UndefOr[scala.Boolean] = js.undefined,
+    loopHorizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    loopTop: js.UndefOr[scala.Boolean] = js.undefined,
+    menu: java.lang.String = null,
+    navigation: js.UndefOr[scala.Boolean] = js.undefined,
+    navigationPosition: java.lang.String = null,
+    navigationTooltips: js.Array[java.lang.String] = null,
+    normalScrollElementTouchThreshold: scala.Int | scala.Double = null,
+    normalScrollElements: java.lang.String = null,
+    offsetSections: js.UndefOr[scala.Boolean] = js.undefined,
+    onLeave: js.Function3[
+      /* index */ scala.Double, 
+      /* nextIndex */ scala.Double, 
+      /* direction */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    onSlideLeave: js.Function5[
+      /* anchorLink */ java.lang.String, 
+      /* index */ scala.Double, 
+      /* slideIndex */ scala.Double, 
+      /* direction */ java.lang.String, 
+      /* nextSlideIndex */ scala.Double, 
+      scala.Unit
+    ] = null,
+    paddingBottom: java.lang.String = null,
+    paddingTop: java.lang.String = null,
+    parallax: js.UndefOr[scala.Boolean] = js.undefined,
+    parallaxOptions: Anon_Cover = null,
+    recordHistory: js.UndefOr[scala.Boolean] = js.undefined,
+    resetSliders: js.UndefOr[scala.Boolean] = js.undefined,
+    resize: js.UndefOr[scala.Boolean] = js.undefined,
+    responsiveHeight: scala.Int | scala.Double = null,
+    responsiveSlides: js.UndefOr[scala.Boolean] = js.undefined,
+    responsiveWidth: scala.Int | scala.Double = null,
+    scrollBar: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollHorizontally: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollOverflow: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollOverflowOptions: js.Any = null,
+    scrollOverflowReset: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollingSpeed: scala.Int | scala.Double = null,
+    sectionSelector: java.lang.String = null,
+    sectionsColor: js.Array[java.lang.String] = null,
+    showActiveTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    slideSelector: java.lang.String = null,
+    slidesNavPosition: java.lang.String = null,
+    slidesNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    touchSensitivity: scala.Int | scala.Double = null,
+    verticalCentered: js.UndefOr[scala.Boolean] = js.undefined
+  ): FullPageJsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterLoad != null) __obj.updateDynamic("afterLoad")(afterLoad)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (afterResize != null) __obj.updateDynamic("afterResize")(afterResize)
+    if (afterResponsive != null) __obj.updateDynamic("afterResponsive")(afterResponsive)
+    if (afterSlideLoad != null) __obj.updateDynamic("afterSlideLoad")(afterSlideLoad)
+    if (anchors != null) __obj.updateDynamic("anchors")(anchors)
+    if (!js.isUndefined(animateAnchor)) __obj.updateDynamic("animateAnchor")(animateAnchor)
+    if (!js.isUndefined(autoScrolling)) __obj.updateDynamic("autoScrolling")(autoScrolling)
+    if (bigSectionsDestination != null) __obj.updateDynamic("bigSectionsDestination")(bigSectionsDestination.asInstanceOf[js.Any])
+    if (!js.isUndefined(continuousHorizontal)) __obj.updateDynamic("continuousHorizontal")(continuousHorizontal)
+    if (!js.isUndefined(continuousVertical)) __obj.updateDynamic("continuousVertical")(continuousVertical)
+    if (!js.isUndefined(controlArrows)) __obj.updateDynamic("controlArrows")(controlArrows)
+    if (!js.isUndefined(css3)) __obj.updateDynamic("css3")(css3)
+    if (dragAndMove != null) __obj.updateDynamic("dragAndMove")(dragAndMove.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (easingcss3 != null) __obj.updateDynamic("easingcss3")(easingcss3)
+    if (fadingEffect != null) __obj.updateDynamic("fadingEffect")(fadingEffect.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitToSection)) __obj.updateDynamic("fitToSection")(fitToSection)
+    if (fitToSectionDelay != null) __obj.updateDynamic("fitToSectionDelay")(fitToSectionDelay.asInstanceOf[js.Any])
+    if (fixedElements != null) __obj.updateDynamic("fixedElements")(fixedElements)
+    if (interlockedSlides != null) __obj.updateDynamic("interlockedSlides")(interlockedSlides.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardScrolling)) __obj.updateDynamic("keyboardScrolling")(keyboardScrolling)
+    if (!js.isUndefined(lazyLoading)) __obj.updateDynamic("lazyLoading")(lazyLoading)
+    if (!js.isUndefined(lockAnchors)) __obj.updateDynamic("lockAnchors")(lockAnchors)
+    if (!js.isUndefined(loopBottom)) __obj.updateDynamic("loopBottom")(loopBottom)
+    if (!js.isUndefined(loopHorizontal)) __obj.updateDynamic("loopHorizontal")(loopHorizontal)
+    if (!js.isUndefined(loopTop)) __obj.updateDynamic("loopTop")(loopTop)
+    if (menu != null) __obj.updateDynamic("menu")(menu)
+    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation)
+    if (navigationPosition != null) __obj.updateDynamic("navigationPosition")(navigationPosition)
+    if (navigationTooltips != null) __obj.updateDynamic("navigationTooltips")(navigationTooltips)
+    if (normalScrollElementTouchThreshold != null) __obj.updateDynamic("normalScrollElementTouchThreshold")(normalScrollElementTouchThreshold.asInstanceOf[js.Any])
+    if (normalScrollElements != null) __obj.updateDynamic("normalScrollElements")(normalScrollElements)
+    if (!js.isUndefined(offsetSections)) __obj.updateDynamic("offsetSections")(offsetSections)
+    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave)
+    if (onSlideLeave != null) __obj.updateDynamic("onSlideLeave")(onSlideLeave)
+    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom)
+    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop)
+    if (!js.isUndefined(parallax)) __obj.updateDynamic("parallax")(parallax)
+    if (parallaxOptions != null) __obj.updateDynamic("parallaxOptions")(parallaxOptions)
+    if (!js.isUndefined(recordHistory)) __obj.updateDynamic("recordHistory")(recordHistory)
+    if (!js.isUndefined(resetSliders)) __obj.updateDynamic("resetSliders")(resetSliders)
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    if (responsiveHeight != null) __obj.updateDynamic("responsiveHeight")(responsiveHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsiveSlides)) __obj.updateDynamic("responsiveSlides")(responsiveSlides)
+    if (responsiveWidth != null) __obj.updateDynamic("responsiveWidth")(responsiveWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollBar)) __obj.updateDynamic("scrollBar")(scrollBar)
+    if (!js.isUndefined(scrollHorizontally)) __obj.updateDynamic("scrollHorizontally")(scrollHorizontally)
+    if (!js.isUndefined(scrollOverflow)) __obj.updateDynamic("scrollOverflow")(scrollOverflow)
+    if (scrollOverflowOptions != null) __obj.updateDynamic("scrollOverflowOptions")(scrollOverflowOptions)
+    if (!js.isUndefined(scrollOverflowReset)) __obj.updateDynamic("scrollOverflowReset")(scrollOverflowReset)
+    if (scrollingSpeed != null) __obj.updateDynamic("scrollingSpeed")(scrollingSpeed.asInstanceOf[js.Any])
+    if (sectionSelector != null) __obj.updateDynamic("sectionSelector")(sectionSelector)
+    if (sectionsColor != null) __obj.updateDynamic("sectionsColor")(sectionsColor)
+    if (!js.isUndefined(showActiveTooltip)) __obj.updateDynamic("showActiveTooltip")(showActiveTooltip)
+    if (slideSelector != null) __obj.updateDynamic("slideSelector")(slideSelector)
+    if (slidesNavPosition != null) __obj.updateDynamic("slidesNavPosition")(slidesNavPosition)
+    if (!js.isUndefined(slidesNavigation)) __obj.updateDynamic("slidesNavigation")(slidesNavigation)
+    if (touchSensitivity != null) __obj.updateDynamic("touchSensitivity")(touchSensitivity.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalCentered)) __obj.updateDynamic("verticalCentered")(verticalCentered)
+    __obj.asInstanceOf[FullPageJsOptions]
+  }
+}
+

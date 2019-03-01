@@ -18,3 +18,22 @@ trait DeviceFilterStrict extends js.Object {
   var vendorId: chromeDashAppsLib.chromeNs.integer
 }
 
+object DeviceFilterStrict {
+  @scala.inline
+  def apply(
+    vendorId: chromeDashAppsLib.chromeNs.integer,
+    interfaceClass: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    interfaceProtocol: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    interfaceSubclass: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    productId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): DeviceFilterStrict = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("vendorId")(vendorId)
+    if (!js.isUndefined(interfaceClass)) __obj.updateDynamic("interfaceClass")(interfaceClass)
+    if (!js.isUndefined(interfaceProtocol)) __obj.updateDynamic("interfaceProtocol")(interfaceProtocol)
+    if (!js.isUndefined(interfaceSubclass)) __obj.updateDynamic("interfaceSubclass")(interfaceSubclass)
+    if (!js.isUndefined(productId)) __obj.updateDynamic("productId")(productId)
+    __obj.asInstanceOf[DeviceFilterStrict]
+  }
+}
+

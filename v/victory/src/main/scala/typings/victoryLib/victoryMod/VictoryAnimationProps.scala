@@ -42,3 +42,24 @@ trait VictoryAnimationProps extends js.Object {
   var onEnd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object VictoryAnimationProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[/* style */ AnimationStyle, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    data: AnimationData = null,
+    delay: scala.Int | scala.Double = null,
+    duration: scala.Int | scala.Double = null,
+    easing: AnimationEasing = null,
+    onEnd: js.Function0[scala.Unit] = null
+  ): VictoryAnimationProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
+    __obj.asInstanceOf[VictoryAnimationProps]
+  }
+}
+

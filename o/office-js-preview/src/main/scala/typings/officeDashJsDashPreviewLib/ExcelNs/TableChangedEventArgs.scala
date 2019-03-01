@@ -77,3 +77,29 @@ trait TableChangedEventArgs extends js.Object {
   def getRangeOrNullObject(ctx: RequestContext): Range
 }
 
+object TableChangedEventArgs {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    changeType: DataChangeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RangeEdited | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RowInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RowDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColumnInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColumnDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellDeleted,
+    details: ChangedEventDetail,
+    getRange: js.Function1[RequestContext, Range],
+    getRangeOrNullObject: js.Function1[RequestContext, Range],
+    source: EventSource | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Local | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Remote,
+    tableId: java.lang.String,
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableChanged,
+    worksheetId: java.lang.String
+  ): TableChangedEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("getRange")(getRange)
+    __obj.updateDynamic("getRangeOrNullObject")(getRangeOrNullObject)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("tableId")(tableId)
+    __obj.updateDynamic("worksheetId")(worksheetId)
+    __obj.asInstanceOf[TableChangedEventArgs]
+  }
+}
+

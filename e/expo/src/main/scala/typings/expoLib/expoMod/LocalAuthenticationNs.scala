@@ -13,6 +13,8 @@ object LocalAuthenticationNs extends js.Object {
     var FINGERPRINT: scala.Double
   }
   
+  trait LocalAuthenticationResult extends js.Object
+  
   /**
     * Attempts to authenticate via Fingerprint. Android: When using the fingerprint module on Android, you need to provide a UI component to prompt the user to scan their fingerprint, as the OS has no default alert for it.
     *
@@ -28,6 +30,5 @@ object LocalAuthenticationNs extends js.Object {
   def isEnrolledAsync(): js.Promise[scala.Boolean] = js.native
   /** Determine the auhentication types supported on the device. */
   def supportedAuthenticationTypesAsync(): js.Promise[js.Array[AuthenticationTypeType]] = js.native
-  type LocalAuthenticationResult = expoLib.Anon_Success | expoLib.Anon_ErrorFalse
 }
 

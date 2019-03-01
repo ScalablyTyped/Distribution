@@ -41,3 +41,22 @@ trait GoogleCloudMlV1__Model extends js.Object {
   var regions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object GoogleCloudMlV1__Model {
+  @scala.inline
+  def apply(
+    defaultVersion: GoogleCloudMlV1__Version = null,
+    description: java.lang.String = null,
+    name: java.lang.String = null,
+    onlinePredictionLogging: js.UndefOr[scala.Boolean] = js.undefined,
+    regions: js.Array[java.lang.String] = null
+  ): GoogleCloudMlV1__Model = {
+    val __obj = js.Dynamic.literal()
+    if (defaultVersion != null) __obj.updateDynamic("defaultVersion")(defaultVersion)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(onlinePredictionLogging)) __obj.updateDynamic("onlinePredictionLogging")(onlinePredictionLogging)
+    if (regions != null) __obj.updateDynamic("regions")(regions)
+    __obj.asInstanceOf[GoogleCloudMlV1__Model]
+  }
+}
+

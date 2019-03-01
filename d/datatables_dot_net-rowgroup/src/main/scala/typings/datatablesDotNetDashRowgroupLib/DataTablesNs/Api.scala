@@ -9,3 +9,12 @@ trait Api extends js.Object {
   def rowGroup(): RowGroupApi
 }
 
+object Api {
+  @scala.inline
+  def apply(rowGroup: js.Function0[RowGroupApi]): Api = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rowGroup")(rowGroup)
+    __obj.asInstanceOf[Api]
+  }
+}
+

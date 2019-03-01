@@ -11,3 +11,19 @@ trait ServicesResource extends js.Object {
   def list(request: gapiDotClientDotCloudbillingLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListServicesResponse]
 }
 
+object ServicesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotCloudbillingLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListServicesResponse]
+    ],
+    skus: SkusResource
+  ): ServicesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("skus")(skus)
+    __obj.asInstanceOf[ServicesResource]
+  }
+}
+

@@ -12,3 +12,12 @@ trait SignerOptionsWithPolicy extends js.Object {
   var policy: java.lang.String
 }
 
+object SignerOptionsWithPolicy {
+  @scala.inline
+  def apply(policy: java.lang.String): SignerOptionsWithPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("policy")(policy)
+    __obj.asInstanceOf[SignerOptionsWithPolicy]
+  }
+}
+

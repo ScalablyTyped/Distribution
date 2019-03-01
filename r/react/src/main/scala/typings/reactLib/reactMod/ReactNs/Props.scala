@@ -28,3 +28,14 @@ trait Props[T] extends js.Object {
   var ref: js.UndefOr[LegacyRef[T]] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply[T](children: ReactNode = null, key: Key = null, ref: LegacyRef[T] = null): Props[T] = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props[T]]
+  }
+}
+

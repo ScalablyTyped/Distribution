@@ -12,3 +12,12 @@ trait ImplementationClientCapabilities extends js.Object {
   var textDocument: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_Implementation] = js.undefined
 }
 
+object ImplementationClientCapabilities {
+  @scala.inline
+  def apply(textDocument: vscodeDashLanguageserverDashProtocolLib.Anon_Implementation = null): ImplementationClientCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument)
+    __obj.asInstanceOf[ImplementationClientCapabilities]
+  }
+}
+

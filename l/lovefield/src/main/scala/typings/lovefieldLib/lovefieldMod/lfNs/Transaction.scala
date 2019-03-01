@@ -14,3 +14,27 @@ trait Transaction extends js.Object {
   def stats(): TransactionStats
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    attach: js.Function1[lovefieldLib.lovefieldMod.lfNs.queryNs.Builder, js.Promise[js.Array[js.Object]]],
+    begin: js.Function1[js.Array[lovefieldLib.lovefieldMod.lfNs.schemaNs.Table], js.Promise[scala.Unit]],
+    commit: js.Function0[js.Promise[scala.Unit]],
+    exec: js.Function1[
+      js.Array[lovefieldLib.lovefieldMod.lfNs.queryNs.Builder], 
+      js.Promise[js.Array[js.Array[js.Object]]]
+    ],
+    rollback: js.Function0[js.Promise[scala.Unit]],
+    stats: js.Function0[TransactionStats]
+  ): Transaction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attach")(attach)
+    __obj.updateDynamic("begin")(begin)
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("exec")(exec)
+    __obj.updateDynamic("rollback")(rollback)
+    __obj.updateDynamic("stats")(stats)
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

@@ -16,3 +16,13 @@ trait InsertPictureCommand extends CommandWithSimpleStateBase {
   def execute(imageUrl: java.lang.String): scala.Boolean
 }
 
+object InsertPictureCommand {
+  @scala.inline
+  def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[SimpleCommandState]): InsertPictureCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[InsertPictureCommand]
+  }
+}
+

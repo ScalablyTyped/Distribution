@@ -87,3 +87,52 @@ trait Options extends js.Object {
   var top: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    ecLevel: java.lang.String = null,
+    fill: java.lang.String = null,
+    fontcolor: java.lang.String = null,
+    fontname: java.lang.String = null,
+    image: java.lang.String = null,
+    label: java.lang.String = null,
+    left: scala.Int | scala.Double = null,
+    mPosX: scala.Int | scala.Double = null,
+    mPosY: scala.Int | scala.Double = null,
+    mSize: scala.Int | scala.Double = null,
+    maxVersion: scala.Int | scala.Double = null,
+    minVersion: scala.Int | scala.Double = null,
+    mode: Mode = null,
+    quiet: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null,
+    render: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    top: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (ecLevel != null) __obj.updateDynamic("ecLevel")(ecLevel)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fontcolor != null) __obj.updateDynamic("fontcolor")(fontcolor)
+    if (fontname != null) __obj.updateDynamic("fontname")(fontname)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (mPosX != null) __obj.updateDynamic("mPosX")(mPosX.asInstanceOf[js.Any])
+    if (mPosY != null) __obj.updateDynamic("mPosY")(mPosY.asInstanceOf[js.Any])
+    if (mSize != null) __obj.updateDynamic("mSize")(mSize.asInstanceOf[js.Any])
+    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
+    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (quiet != null) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

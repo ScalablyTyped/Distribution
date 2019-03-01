@@ -59,3 +59,27 @@ trait XDocumentRecovery extends js.Object {
   def wasModifiedSinceLastSave(): scala.Boolean
 }
 
+object XDocumentRecovery {
+  @scala.inline
+  def apply(
+    recoverFromFile: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    storeToRecoveryFile: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    wasModifiedSinceLastSave: js.Function0[scala.Boolean]
+  ): XDocumentRecovery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("recoverFromFile")(recoverFromFile)
+    __obj.updateDynamic("storeToRecoveryFile")(storeToRecoveryFile)
+    __obj.updateDynamic("wasModifiedSinceLastSave")(wasModifiedSinceLastSave)
+    __obj.asInstanceOf[XDocumentRecovery]
+  }
+}
+

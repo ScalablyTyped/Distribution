@@ -59,3 +59,48 @@ trait Optimization extends js.Object {
   var usedExports: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Optimization {
+  @scala.inline
+  def apply(
+    concatenateModules: js.UndefOr[scala.Boolean] = js.undefined,
+    flagIncludedChunks: js.UndefOr[scala.Boolean] = js.undefined,
+    mergeDuplicateChunks: js.UndefOr[scala.Boolean] = js.undefined,
+    minimize: js.UndefOr[scala.Boolean] = js.undefined,
+    minimizer: js.Array[webpackLib.webpackMod.webpackNs.Plugin | tapableLib.tapableMod.TapableNs.Plugin] = null,
+    namedChunks: js.UndefOr[scala.Boolean] = js.undefined,
+    namedModules: js.UndefOr[scala.Boolean] = js.undefined,
+    noEmitOnErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    nodeEnv: java.lang.String | webpackLib.webpackLibNumbers.`false` = null,
+    occurrenceOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    portableRecords: js.UndefOr[scala.Boolean] = js.undefined,
+    providedExports: js.UndefOr[scala.Boolean] = js.undefined,
+    removeAvailableModules: js.UndefOr[scala.Boolean] = js.undefined,
+    removeEmptyChunks: js.UndefOr[scala.Boolean] = js.undefined,
+    runtimeChunk: scala.Boolean | webpackLib.webpackLibStrings.single | webpackLib.webpackLibStrings.multiple | RuntimeChunkOptions = null,
+    sideEffects: js.UndefOr[scala.Boolean] = js.undefined,
+    splitChunks: SplitChunksOptions | webpackLib.webpackLibNumbers.`false` = null,
+    usedExports: js.UndefOr[scala.Boolean] = js.undefined
+  ): Optimization = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(concatenateModules)) __obj.updateDynamic("concatenateModules")(concatenateModules)
+    if (!js.isUndefined(flagIncludedChunks)) __obj.updateDynamic("flagIncludedChunks")(flagIncludedChunks)
+    if (!js.isUndefined(mergeDuplicateChunks)) __obj.updateDynamic("mergeDuplicateChunks")(mergeDuplicateChunks)
+    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize)
+    if (minimizer != null) __obj.updateDynamic("minimizer")(minimizer)
+    if (!js.isUndefined(namedChunks)) __obj.updateDynamic("namedChunks")(namedChunks)
+    if (!js.isUndefined(namedModules)) __obj.updateDynamic("namedModules")(namedModules)
+    if (!js.isUndefined(noEmitOnErrors)) __obj.updateDynamic("noEmitOnErrors")(noEmitOnErrors)
+    if (nodeEnv != null) __obj.updateDynamic("nodeEnv")(nodeEnv.asInstanceOf[js.Any])
+    if (!js.isUndefined(occurrenceOrder)) __obj.updateDynamic("occurrenceOrder")(occurrenceOrder)
+    if (!js.isUndefined(portableRecords)) __obj.updateDynamic("portableRecords")(portableRecords)
+    if (!js.isUndefined(providedExports)) __obj.updateDynamic("providedExports")(providedExports)
+    if (!js.isUndefined(removeAvailableModules)) __obj.updateDynamic("removeAvailableModules")(removeAvailableModules)
+    if (!js.isUndefined(removeEmptyChunks)) __obj.updateDynamic("removeEmptyChunks")(removeEmptyChunks)
+    if (runtimeChunk != null) __obj.updateDynamic("runtimeChunk")(runtimeChunk.asInstanceOf[js.Any])
+    if (!js.isUndefined(sideEffects)) __obj.updateDynamic("sideEffects")(sideEffects)
+    if (splitChunks != null) __obj.updateDynamic("splitChunks")(splitChunks.asInstanceOf[js.Any])
+    if (!js.isUndefined(usedExports)) __obj.updateDynamic("usedExports")(usedExports)
+    __obj.asInstanceOf[Optimization]
+  }
+}
+

@@ -12,13 +12,11 @@ package object TwoNs {
     scala.Double
   ]
   type Circle = Path
-  type Color = java.lang.String | LinearGradient | RadialGradient
+  type Color = _Color | java.lang.String
   type Ellipse = Path
   type Line = Path
-  type Object = Path | Group
   type Polygon = Path
   type Rectangle = Path
-  type Renderer = SVGRenderer | WebGLRenderer | CanvasRenderer
   type RoundedRectangle = Path
   type Star = Path
 }

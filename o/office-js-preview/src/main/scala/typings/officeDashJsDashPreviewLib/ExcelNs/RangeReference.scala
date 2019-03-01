@@ -21,3 +21,12 @@ trait RangeReference extends js.Object {
   var address: java.lang.String
 }
 
+object RangeReference {
+  @scala.inline
+  def apply(address: java.lang.String): RangeReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.asInstanceOf[RangeReference]
+  }
+}
+

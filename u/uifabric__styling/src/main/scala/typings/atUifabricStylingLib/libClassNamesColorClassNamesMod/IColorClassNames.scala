@@ -296,3 +296,312 @@ trait IColorClassNames extends js.Object {
   var yellowLightHover: java.lang.String
 }
 
+object IColorClassNames {
+  @scala.inline
+  def apply(
+    black: java.lang.String,
+    blackBackground: java.lang.String,
+    blackBackgroundHover: java.lang.String,
+    blackBorder: java.lang.String,
+    blackBorderHover: java.lang.String,
+    blackHover: java.lang.String,
+    blackTranslucent40: java.lang.String,
+    blackTranslucent40Background: java.lang.String,
+    blackTranslucent40BackgroundHover: java.lang.String,
+    blackTranslucent40Border: java.lang.String,
+    blackTranslucent40BorderHover: java.lang.String,
+    blackTranslucent40Hover: java.lang.String,
+    blue: java.lang.String,
+    blueBackground: java.lang.String,
+    blueBackgroundHover: java.lang.String,
+    blueBorder: java.lang.String,
+    blueBorderHover: java.lang.String,
+    blueDark: java.lang.String,
+    blueDarkBackground: java.lang.String,
+    blueDarkBackgroundHover: java.lang.String,
+    blueDarkBorder: java.lang.String,
+    blueDarkBorderHover: java.lang.String,
+    blueDarkHover: java.lang.String,
+    blueHover: java.lang.String,
+    blueLight: java.lang.String,
+    blueLightBackground: java.lang.String,
+    blueLightBackgroundHover: java.lang.String,
+    blueLightBorder: java.lang.String,
+    blueLightBorderHover: java.lang.String,
+    blueLightHover: java.lang.String,
+    blueMid: java.lang.String,
+    blueMidBackground: java.lang.String,
+    blueMidBackgroundHover: java.lang.String,
+    blueMidBorder: java.lang.String,
+    blueMidBorderHover: java.lang.String,
+    blueMidHover: java.lang.String,
+    green: java.lang.String,
+    greenBackground: java.lang.String,
+    greenBackgroundHover: java.lang.String,
+    greenBorder: java.lang.String,
+    greenBorderHover: java.lang.String,
+    greenDark: java.lang.String,
+    greenDarkBackground: java.lang.String,
+    greenDarkBackgroundHover: java.lang.String,
+    greenDarkBorder: java.lang.String,
+    greenDarkBorderHover: java.lang.String,
+    greenDarkHover: java.lang.String,
+    greenHover: java.lang.String,
+    greenLight: java.lang.String,
+    greenLightBackground: java.lang.String,
+    greenLightBackgroundHover: java.lang.String,
+    greenLightBorder: java.lang.String,
+    greenLightBorderHover: java.lang.String,
+    greenLightHover: java.lang.String,
+    magenta: java.lang.String,
+    magentaBackground: java.lang.String,
+    magentaBackgroundHover: java.lang.String,
+    magentaBorder: java.lang.String,
+    magentaBorderHover: java.lang.String,
+    magentaDark: java.lang.String,
+    magentaDarkBackground: java.lang.String,
+    magentaDarkBackgroundHover: java.lang.String,
+    magentaDarkBorder: java.lang.String,
+    magentaDarkBorderHover: java.lang.String,
+    magentaDarkHover: java.lang.String,
+    magentaHover: java.lang.String,
+    magentaLight: java.lang.String,
+    magentaLightBackground: java.lang.String,
+    magentaLightBackgroundHover: java.lang.String,
+    magentaLightBorder: java.lang.String,
+    magentaLightBorderHover: java.lang.String,
+    magentaLightHover: java.lang.String,
+    neutralDark: java.lang.String,
+    neutralDarkBackground: java.lang.String,
+    neutralDarkBackgroundHover: java.lang.String,
+    neutralDarkBorder: java.lang.String,
+    neutralDarkBorderHover: java.lang.String,
+    neutralDarkHover: java.lang.String,
+    neutralLight: java.lang.String,
+    neutralLightBackground: java.lang.String,
+    neutralLightBackgroundHover: java.lang.String,
+    neutralLightBorder: java.lang.String,
+    neutralLightBorderHover: java.lang.String,
+    neutralLightHover: java.lang.String,
+    neutralLighter: java.lang.String,
+    neutralLighterAlt: java.lang.String,
+    neutralLighterAltBackground: java.lang.String,
+    neutralLighterAltBackgroundHover: java.lang.String,
+    neutralLighterAltBorder: java.lang.String,
+    neutralLighterAltBorderHover: java.lang.String,
+    neutralLighterAltHover: java.lang.String,
+    neutralLighterBackground: java.lang.String,
+    neutralLighterBackgroundHover: java.lang.String,
+    neutralLighterBorder: java.lang.String,
+    neutralLighterBorderHover: java.lang.String,
+    neutralLighterHover: java.lang.String,
+    neutralPrimary: java.lang.String,
+    neutralPrimaryAlt: java.lang.String,
+    neutralPrimaryAltBackground: java.lang.String,
+    neutralPrimaryAltBackgroundHover: java.lang.String,
+    neutralPrimaryAltBorder: java.lang.String,
+    neutralPrimaryAltBorderHover: java.lang.String,
+    neutralPrimaryAltHover: java.lang.String,
+    neutralPrimaryBackground: java.lang.String,
+    neutralPrimaryBackgroundHover: java.lang.String,
+    neutralPrimaryBorder: java.lang.String,
+    neutralPrimaryBorderHover: java.lang.String,
+    neutralPrimaryHover: java.lang.String,
+    neutralQuaternary: java.lang.String,
+    neutralQuaternaryAlt: java.lang.String,
+    neutralQuaternaryAltBackground: java.lang.String,
+    neutralQuaternaryAltBackgroundHover: java.lang.String,
+    neutralQuaternaryAltBorder: java.lang.String,
+    neutralQuaternaryAltBorderHover: java.lang.String,
+    neutralQuaternaryAltHover: java.lang.String,
+    neutralQuaternaryBackground: java.lang.String,
+    neutralQuaternaryBackgroundHover: java.lang.String,
+    neutralQuaternaryBorder: java.lang.String,
+    neutralQuaternaryBorderHover: java.lang.String,
+    neutralQuaternaryHover: java.lang.String,
+    neutralSecondary: java.lang.String,
+    neutralSecondaryAlt: java.lang.String,
+    neutralSecondaryAltBackground: java.lang.String,
+    neutralSecondaryAltBackgroundHover: java.lang.String,
+    neutralSecondaryAltBorder: java.lang.String,
+    neutralSecondaryAltBorderHover: java.lang.String,
+    neutralSecondaryAltHover: java.lang.String,
+    neutralSecondaryBackground: java.lang.String,
+    neutralSecondaryBackgroundHover: java.lang.String,
+    neutralSecondaryBorder: java.lang.String,
+    neutralSecondaryBorderHover: java.lang.String,
+    neutralSecondaryHover: java.lang.String,
+    neutralTertiary: java.lang.String,
+    neutralTertiaryAlt: java.lang.String,
+    neutralTertiaryAltBackground: java.lang.String,
+    neutralTertiaryAltBackgroundHover: java.lang.String,
+    neutralTertiaryAltBorder: java.lang.String,
+    neutralTertiaryAltBorderHover: java.lang.String,
+    neutralTertiaryAltHover: java.lang.String,
+    neutralTertiaryBackground: java.lang.String,
+    neutralTertiaryBackgroundHover: java.lang.String,
+    neutralTertiaryBorder: java.lang.String,
+    neutralTertiaryBorderHover: java.lang.String,
+    neutralTertiaryHover: java.lang.String,
+    orange: java.lang.String,
+    orangeBackground: java.lang.String,
+    orangeBackgroundHover: java.lang.String,
+    orangeBorder: java.lang.String,
+    orangeBorderHover: java.lang.String,
+    orangeHover: java.lang.String
+  ): IColorClassNames = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("black")(black)
+    __obj.updateDynamic("blackBackground")(blackBackground)
+    __obj.updateDynamic("blackBackgroundHover")(blackBackgroundHover)
+    __obj.updateDynamic("blackBorder")(blackBorder)
+    __obj.updateDynamic("blackBorderHover")(blackBorderHover)
+    __obj.updateDynamic("blackHover")(blackHover)
+    __obj.updateDynamic("blackTranslucent40")(blackTranslucent40)
+    __obj.updateDynamic("blackTranslucent40Background")(blackTranslucent40Background)
+    __obj.updateDynamic("blackTranslucent40BackgroundHover")(blackTranslucent40BackgroundHover)
+    __obj.updateDynamic("blackTranslucent40Border")(blackTranslucent40Border)
+    __obj.updateDynamic("blackTranslucent40BorderHover")(blackTranslucent40BorderHover)
+    __obj.updateDynamic("blackTranslucent40Hover")(blackTranslucent40Hover)
+    __obj.updateDynamic("blue")(blue)
+    __obj.updateDynamic("blueBackground")(blueBackground)
+    __obj.updateDynamic("blueBackgroundHover")(blueBackgroundHover)
+    __obj.updateDynamic("blueBorder")(blueBorder)
+    __obj.updateDynamic("blueBorderHover")(blueBorderHover)
+    __obj.updateDynamic("blueDark")(blueDark)
+    __obj.updateDynamic("blueDarkBackground")(blueDarkBackground)
+    __obj.updateDynamic("blueDarkBackgroundHover")(blueDarkBackgroundHover)
+    __obj.updateDynamic("blueDarkBorder")(blueDarkBorder)
+    __obj.updateDynamic("blueDarkBorderHover")(blueDarkBorderHover)
+    __obj.updateDynamic("blueDarkHover")(blueDarkHover)
+    __obj.updateDynamic("blueHover")(blueHover)
+    __obj.updateDynamic("blueLight")(blueLight)
+    __obj.updateDynamic("blueLightBackground")(blueLightBackground)
+    __obj.updateDynamic("blueLightBackgroundHover")(blueLightBackgroundHover)
+    __obj.updateDynamic("blueLightBorder")(blueLightBorder)
+    __obj.updateDynamic("blueLightBorderHover")(blueLightBorderHover)
+    __obj.updateDynamic("blueLightHover")(blueLightHover)
+    __obj.updateDynamic("blueMid")(blueMid)
+    __obj.updateDynamic("blueMidBackground")(blueMidBackground)
+    __obj.updateDynamic("blueMidBackgroundHover")(blueMidBackgroundHover)
+    __obj.updateDynamic("blueMidBorder")(blueMidBorder)
+    __obj.updateDynamic("blueMidBorderHover")(blueMidBorderHover)
+    __obj.updateDynamic("blueMidHover")(blueMidHover)
+    __obj.updateDynamic("green")(green)
+    __obj.updateDynamic("greenBackground")(greenBackground)
+    __obj.updateDynamic("greenBackgroundHover")(greenBackgroundHover)
+    __obj.updateDynamic("greenBorder")(greenBorder)
+    __obj.updateDynamic("greenBorderHover")(greenBorderHover)
+    __obj.updateDynamic("greenDark")(greenDark)
+    __obj.updateDynamic("greenDarkBackground")(greenDarkBackground)
+    __obj.updateDynamic("greenDarkBackgroundHover")(greenDarkBackgroundHover)
+    __obj.updateDynamic("greenDarkBorder")(greenDarkBorder)
+    __obj.updateDynamic("greenDarkBorderHover")(greenDarkBorderHover)
+    __obj.updateDynamic("greenDarkHover")(greenDarkHover)
+    __obj.updateDynamic("greenHover")(greenHover)
+    __obj.updateDynamic("greenLight")(greenLight)
+    __obj.updateDynamic("greenLightBackground")(greenLightBackground)
+    __obj.updateDynamic("greenLightBackgroundHover")(greenLightBackgroundHover)
+    __obj.updateDynamic("greenLightBorder")(greenLightBorder)
+    __obj.updateDynamic("greenLightBorderHover")(greenLightBorderHover)
+    __obj.updateDynamic("greenLightHover")(greenLightHover)
+    __obj.updateDynamic("magenta")(magenta)
+    __obj.updateDynamic("magentaBackground")(magentaBackground)
+    __obj.updateDynamic("magentaBackgroundHover")(magentaBackgroundHover)
+    __obj.updateDynamic("magentaBorder")(magentaBorder)
+    __obj.updateDynamic("magentaBorderHover")(magentaBorderHover)
+    __obj.updateDynamic("magentaDark")(magentaDark)
+    __obj.updateDynamic("magentaDarkBackground")(magentaDarkBackground)
+    __obj.updateDynamic("magentaDarkBackgroundHover")(magentaDarkBackgroundHover)
+    __obj.updateDynamic("magentaDarkBorder")(magentaDarkBorder)
+    __obj.updateDynamic("magentaDarkBorderHover")(magentaDarkBorderHover)
+    __obj.updateDynamic("magentaDarkHover")(magentaDarkHover)
+    __obj.updateDynamic("magentaHover")(magentaHover)
+    __obj.updateDynamic("magentaLight")(magentaLight)
+    __obj.updateDynamic("magentaLightBackground")(magentaLightBackground)
+    __obj.updateDynamic("magentaLightBackgroundHover")(magentaLightBackgroundHover)
+    __obj.updateDynamic("magentaLightBorder")(magentaLightBorder)
+    __obj.updateDynamic("magentaLightBorderHover")(magentaLightBorderHover)
+    __obj.updateDynamic("magentaLightHover")(magentaLightHover)
+    __obj.updateDynamic("neutralDark")(neutralDark)
+    __obj.updateDynamic("neutralDarkBackground")(neutralDarkBackground)
+    __obj.updateDynamic("neutralDarkBackgroundHover")(neutralDarkBackgroundHover)
+    __obj.updateDynamic("neutralDarkBorder")(neutralDarkBorder)
+    __obj.updateDynamic("neutralDarkBorderHover")(neutralDarkBorderHover)
+    __obj.updateDynamic("neutralDarkHover")(neutralDarkHover)
+    __obj.updateDynamic("neutralLight")(neutralLight)
+    __obj.updateDynamic("neutralLightBackground")(neutralLightBackground)
+    __obj.updateDynamic("neutralLightBackgroundHover")(neutralLightBackgroundHover)
+    __obj.updateDynamic("neutralLightBorder")(neutralLightBorder)
+    __obj.updateDynamic("neutralLightBorderHover")(neutralLightBorderHover)
+    __obj.updateDynamic("neutralLightHover")(neutralLightHover)
+    __obj.updateDynamic("neutralLighter")(neutralLighter)
+    __obj.updateDynamic("neutralLighterAlt")(neutralLighterAlt)
+    __obj.updateDynamic("neutralLighterAltBackground")(neutralLighterAltBackground)
+    __obj.updateDynamic("neutralLighterAltBackgroundHover")(neutralLighterAltBackgroundHover)
+    __obj.updateDynamic("neutralLighterAltBorder")(neutralLighterAltBorder)
+    __obj.updateDynamic("neutralLighterAltBorderHover")(neutralLighterAltBorderHover)
+    __obj.updateDynamic("neutralLighterAltHover")(neutralLighterAltHover)
+    __obj.updateDynamic("neutralLighterBackground")(neutralLighterBackground)
+    __obj.updateDynamic("neutralLighterBackgroundHover")(neutralLighterBackgroundHover)
+    __obj.updateDynamic("neutralLighterBorder")(neutralLighterBorder)
+    __obj.updateDynamic("neutralLighterBorderHover")(neutralLighterBorderHover)
+    __obj.updateDynamic("neutralLighterHover")(neutralLighterHover)
+    __obj.updateDynamic("neutralPrimary")(neutralPrimary)
+    __obj.updateDynamic("neutralPrimaryAlt")(neutralPrimaryAlt)
+    __obj.updateDynamic("neutralPrimaryAltBackground")(neutralPrimaryAltBackground)
+    __obj.updateDynamic("neutralPrimaryAltBackgroundHover")(neutralPrimaryAltBackgroundHover)
+    __obj.updateDynamic("neutralPrimaryAltBorder")(neutralPrimaryAltBorder)
+    __obj.updateDynamic("neutralPrimaryAltBorderHover")(neutralPrimaryAltBorderHover)
+    __obj.updateDynamic("neutralPrimaryAltHover")(neutralPrimaryAltHover)
+    __obj.updateDynamic("neutralPrimaryBackground")(neutralPrimaryBackground)
+    __obj.updateDynamic("neutralPrimaryBackgroundHover")(neutralPrimaryBackgroundHover)
+    __obj.updateDynamic("neutralPrimaryBorder")(neutralPrimaryBorder)
+    __obj.updateDynamic("neutralPrimaryBorderHover")(neutralPrimaryBorderHover)
+    __obj.updateDynamic("neutralPrimaryHover")(neutralPrimaryHover)
+    __obj.updateDynamic("neutralQuaternary")(neutralQuaternary)
+    __obj.updateDynamic("neutralQuaternaryAlt")(neutralQuaternaryAlt)
+    __obj.updateDynamic("neutralQuaternaryAltBackground")(neutralQuaternaryAltBackground)
+    __obj.updateDynamic("neutralQuaternaryAltBackgroundHover")(neutralQuaternaryAltBackgroundHover)
+    __obj.updateDynamic("neutralQuaternaryAltBorder")(neutralQuaternaryAltBorder)
+    __obj.updateDynamic("neutralQuaternaryAltBorderHover")(neutralQuaternaryAltBorderHover)
+    __obj.updateDynamic("neutralQuaternaryAltHover")(neutralQuaternaryAltHover)
+    __obj.updateDynamic("neutralQuaternaryBackground")(neutralQuaternaryBackground)
+    __obj.updateDynamic("neutralQuaternaryBackgroundHover")(neutralQuaternaryBackgroundHover)
+    __obj.updateDynamic("neutralQuaternaryBorder")(neutralQuaternaryBorder)
+    __obj.updateDynamic("neutralQuaternaryBorderHover")(neutralQuaternaryBorderHover)
+    __obj.updateDynamic("neutralQuaternaryHover")(neutralQuaternaryHover)
+    __obj.updateDynamic("neutralSecondary")(neutralSecondary)
+    __obj.updateDynamic("neutralSecondaryAlt")(neutralSecondaryAlt)
+    __obj.updateDynamic("neutralSecondaryAltBackground")(neutralSecondaryAltBackground)
+    __obj.updateDynamic("neutralSecondaryAltBackgroundHover")(neutralSecondaryAltBackgroundHover)
+    __obj.updateDynamic("neutralSecondaryAltBorder")(neutralSecondaryAltBorder)
+    __obj.updateDynamic("neutralSecondaryAltBorderHover")(neutralSecondaryAltBorderHover)
+    __obj.updateDynamic("neutralSecondaryAltHover")(neutralSecondaryAltHover)
+    __obj.updateDynamic("neutralSecondaryBackground")(neutralSecondaryBackground)
+    __obj.updateDynamic("neutralSecondaryBackgroundHover")(neutralSecondaryBackgroundHover)
+    __obj.updateDynamic("neutralSecondaryBorder")(neutralSecondaryBorder)
+    __obj.updateDynamic("neutralSecondaryBorderHover")(neutralSecondaryBorderHover)
+    __obj.updateDynamic("neutralSecondaryHover")(neutralSecondaryHover)
+    __obj.updateDynamic("neutralTertiary")(neutralTertiary)
+    __obj.updateDynamic("neutralTertiaryAlt")(neutralTertiaryAlt)
+    __obj.updateDynamic("neutralTertiaryAltBackground")(neutralTertiaryAltBackground)
+    __obj.updateDynamic("neutralTertiaryAltBackgroundHover")(neutralTertiaryAltBackgroundHover)
+    __obj.updateDynamic("neutralTertiaryAltBorder")(neutralTertiaryAltBorder)
+    __obj.updateDynamic("neutralTertiaryAltBorderHover")(neutralTertiaryAltBorderHover)
+    __obj.updateDynamic("neutralTertiaryAltHover")(neutralTertiaryAltHover)
+    __obj.updateDynamic("neutralTertiaryBackground")(neutralTertiaryBackground)
+    __obj.updateDynamic("neutralTertiaryBackgroundHover")(neutralTertiaryBackgroundHover)
+    __obj.updateDynamic("neutralTertiaryBorder")(neutralTertiaryBorder)
+    __obj.updateDynamic("neutralTertiaryBorderHover")(neutralTertiaryBorderHover)
+    __obj.updateDynamic("neutralTertiaryHover")(neutralTertiaryHover)
+    __obj.updateDynamic("orange")(orange)
+    __obj.updateDynamic("orangeBackground")(orangeBackground)
+    __obj.updateDynamic("orangeBackgroundHover")(orangeBackgroundHover)
+    __obj.updateDynamic("orangeBorder")(orangeBorder)
+    __obj.updateDynamic("orangeBorderHover")(orangeBorderHover)
+    __obj.updateDynamic("orangeHover")(orangeHover)
+    __obj.asInstanceOf[IColorClassNames]
+  }
+}
+

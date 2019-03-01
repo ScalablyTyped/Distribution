@@ -60,3 +60,30 @@ trait XAccessibleImage
   def getAccessibleImageWidth(): scala.Double
 }
 
+object XAccessibleImage {
+  @scala.inline
+  def apply(
+    AccessibleImageDescription: java.lang.String,
+    AccessibleImageHeight: scala.Double,
+    AccessibleImageWidth: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getAccessibleImageDescription: js.Function0[java.lang.String],
+    getAccessibleImageHeight: js.Function0[scala.Double],
+    getAccessibleImageWidth: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleImage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessibleImageDescription")(AccessibleImageDescription)
+    __obj.updateDynamic("AccessibleImageHeight")(AccessibleImageHeight)
+    __obj.updateDynamic("AccessibleImageWidth")(AccessibleImageWidth)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAccessibleImageDescription")(getAccessibleImageDescription)
+    __obj.updateDynamic("getAccessibleImageHeight")(getAccessibleImageHeight)
+    __obj.updateDynamic("getAccessibleImageWidth")(getAccessibleImageWidth)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAccessibleImage]
+  }
+}
+

@@ -28,3 +28,22 @@ trait PipelineState extends js.Object {
   ] = js.undefined
 }
 
+object PipelineState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    artifactStore: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionKeyLocation] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    stages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionsName]]] = null
+  ): PipelineState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (artifactStore != null) __obj.updateDynamic("artifactStore")(artifactStore.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (stages != null) __obj.updateDynamic("stages")(stages.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PipelineState]
+  }
+}
+

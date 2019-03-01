@@ -30,3 +30,14 @@ trait CommentData extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommentData {
+  @scala.inline
+  def apply(author: java.lang.String = null, date: java.lang.String = null, text: java.lang.String = null): CommentData = {
+    val __obj = js.Dynamic.literal()
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[CommentData]
+  }
+}
+

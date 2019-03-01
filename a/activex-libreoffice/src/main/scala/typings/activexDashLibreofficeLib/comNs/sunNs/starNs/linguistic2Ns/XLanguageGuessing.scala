@@ -72,3 +72,47 @@ trait XLanguageGuessing extends js.Object {
   def guessPrimaryLanguage(aText: java.lang.String, nStartPos: scala.Double, nLen: scala.Double): activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
 }
 
+object XLanguageGuessing {
+  @scala.inline
+  def apply(
+    AvailableLanguages: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    DisabledLanguages: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    EnabledLanguages: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    disableLanguages: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale], 
+      scala.Unit
+    ],
+    enableLanguages: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale], 
+      scala.Unit
+    ],
+    getAvailableLanguages: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    getDisabledLanguages: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    getEnabledLanguages: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    guessPrimaryLanguage: js.Function3[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
+    ]
+  ): XLanguageGuessing = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AvailableLanguages")(AvailableLanguages)
+    __obj.updateDynamic("DisabledLanguages")(DisabledLanguages)
+    __obj.updateDynamic("EnabledLanguages")(EnabledLanguages)
+    __obj.updateDynamic("disableLanguages")(disableLanguages)
+    __obj.updateDynamic("enableLanguages")(enableLanguages)
+    __obj.updateDynamic("getAvailableLanguages")(getAvailableLanguages)
+    __obj.updateDynamic("getDisabledLanguages")(getDisabledLanguages)
+    __obj.updateDynamic("getEnabledLanguages")(getEnabledLanguages)
+    __obj.updateDynamic("guessPrimaryLanguage")(guessPrimaryLanguage)
+    __obj.asInstanceOf[XLanguageGuessing]
+  }
+}
+

@@ -27,3 +27,20 @@ trait IScriptSnapshot extends js.Object {
   def getText(start: scala.Double, end: scala.Double): java.lang.String
 }
 
+object IScriptSnapshot {
+  @scala.inline
+  def apply(
+    getChangeRange: js.Function1[IScriptSnapshot, js.UndefOr[TextChangeRange]],
+    getLength: js.Function0[scala.Double],
+    getText: js.Function2[scala.Double, scala.Double, java.lang.String],
+    dispose: js.Function0[scala.Unit] = null
+  ): IScriptSnapshot = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getChangeRange")(getChangeRange)
+    __obj.updateDynamic("getLength")(getLength)
+    __obj.updateDynamic("getText")(getText)
+    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
+    __obj.asInstanceOf[IScriptSnapshot]
+  }
+}
+

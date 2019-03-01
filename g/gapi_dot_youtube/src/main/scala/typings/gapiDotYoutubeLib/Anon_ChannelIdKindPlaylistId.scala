@@ -24,3 +24,20 @@ trait Anon_ChannelIdKindPlaylistId extends js.Object {
   var videoId: java.lang.String
 }
 
+object Anon_ChannelIdKindPlaylistId {
+  @scala.inline
+  def apply(
+    channelId: java.lang.String,
+    kind: java.lang.String,
+    playlistId: java.lang.String,
+    videoId: java.lang.String
+  ): Anon_ChannelIdKindPlaylistId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channelId")(channelId)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("playlistId")(playlistId)
+    __obj.updateDynamic("videoId")(videoId)
+    __obj.asInstanceOf[Anon_ChannelIdKindPlaylistId]
+  }
+}
+

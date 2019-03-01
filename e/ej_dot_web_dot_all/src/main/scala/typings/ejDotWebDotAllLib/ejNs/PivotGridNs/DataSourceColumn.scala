@@ -50,3 +50,36 @@ trait DataSourceColumn extends js.Object {
   var sortOrder: js.UndefOr[ejDotWebDotAllLib.ejNs.PivotAnalysisNs.SortOrder | java.lang.String] = js.undefined
 }
 
+object DataSourceColumn {
+  @scala.inline
+  def apply(
+    advancedFilter: js.Array[DataSourceColumnsAdvancedFilter] = null,
+    cssClass: java.lang.String = null,
+    delimiter: java.lang.String = null,
+    drilledItems: js.Array[_] = null,
+    fieldCaption: java.lang.String = null,
+    fieldName: java.lang.String = null,
+    filterItems: DataSourceColumnsFilterItems = null,
+    format: java.lang.String = null,
+    formatString: java.lang.String = null,
+    isNamedSets: js.UndefOr[scala.Boolean] = js.undefined,
+    showSubTotal: js.UndefOr[scala.Boolean] = js.undefined,
+    sortOrder: ejDotWebDotAllLib.ejNs.PivotAnalysisNs.SortOrder | java.lang.String = null
+  ): DataSourceColumn = {
+    val __obj = js.Dynamic.literal()
+    if (advancedFilter != null) __obj.updateDynamic("advancedFilter")(advancedFilter)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (drilledItems != null) __obj.updateDynamic("drilledItems")(drilledItems)
+    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formatString != null) __obj.updateDynamic("formatString")(formatString)
+    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets)
+    if (!js.isUndefined(showSubTotal)) __obj.updateDynamic("showSubTotal")(showSubTotal)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataSourceColumn]
+  }
+}
+

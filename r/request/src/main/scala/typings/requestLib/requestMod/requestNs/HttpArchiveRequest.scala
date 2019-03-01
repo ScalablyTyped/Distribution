@@ -12,3 +12,20 @@ trait HttpArchiveRequest extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HttpArchiveRequest {
+  @scala.inline
+  def apply(
+    headers: js.Array[NameValuePair] = null,
+    method: java.lang.String = null,
+    postData: requestLib.Anon_MimeType = null,
+    url: java.lang.String = null
+  ): HttpArchiveRequest = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (postData != null) __obj.updateDynamic("postData")(postData)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[HttpArchiveRequest]
+  }
+}
+

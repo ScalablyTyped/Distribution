@@ -27,3 +27,20 @@ trait PodDisruptionBudgetList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object PodDisruptionBudgetList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`,
+    items: js.Array[PodDisruptionBudget],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodDisruptionBudgetList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): PodDisruptionBudgetList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[PodDisruptionBudgetList]
+  }
+}
+

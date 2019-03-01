@@ -73,3 +73,30 @@ trait DataBarConditionalFormatLoadOptions extends js.Object {
   var upperBoundRule: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataBarConditionalFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    axisColor: js.UndefOr[scala.Boolean] = js.undefined,
+    axisFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    barDirection: js.UndefOr[scala.Boolean] = js.undefined,
+    lowerBoundRule: js.UndefOr[scala.Boolean] = js.undefined,
+    negativeFormat: ConditionalDataBarNegativeFormatLoadOptions = null,
+    positiveFormat: ConditionalDataBarPositiveFormatLoadOptions = null,
+    showDataBarOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    upperBoundRule: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataBarConditionalFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(axisColor)) __obj.updateDynamic("axisColor")(axisColor)
+    if (!js.isUndefined(axisFormat)) __obj.updateDynamic("axisFormat")(axisFormat)
+    if (!js.isUndefined(barDirection)) __obj.updateDynamic("barDirection")(barDirection)
+    if (!js.isUndefined(lowerBoundRule)) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule)
+    if (negativeFormat != null) __obj.updateDynamic("negativeFormat")(negativeFormat)
+    if (positiveFormat != null) __obj.updateDynamic("positiveFormat")(positiveFormat)
+    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly)
+    if (!js.isUndefined(upperBoundRule)) __obj.updateDynamic("upperBoundRule")(upperBoundRule)
+    __obj.asInstanceOf[DataBarConditionalFormatLoadOptions]
+  }
+}
+

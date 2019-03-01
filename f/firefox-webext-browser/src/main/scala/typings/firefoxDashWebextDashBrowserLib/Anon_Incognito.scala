@@ -10,3 +10,12 @@ trait Anon_Incognito extends js.Object {
   var incognito: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Incognito {
+  @scala.inline
+  def apply(incognito: js.UndefOr[scala.Boolean] = js.undefined): Anon_Incognito = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
+    __obj.asInstanceOf[Anon_Incognito]
+  }
+}
+

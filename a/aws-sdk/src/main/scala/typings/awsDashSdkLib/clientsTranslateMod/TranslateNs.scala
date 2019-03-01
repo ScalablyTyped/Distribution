@@ -346,6 +346,10 @@ object TranslateNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[TranslateTextResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _TerminologyDataFormat extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AppliedTerminologyList = js.Array[AppliedTerminology]
   type BoundedLengthString = java.lang.String
@@ -364,10 +368,10 @@ object TranslateNs extends js.Object {
   type String = java.lang.String
   type TermList = js.Array[Term]
   type TerminologyArn = java.lang.String
-  type TerminologyDataFormat = awsDashSdkLib.awsDashSdkLibStrings.CSV | awsDashSdkLib.awsDashSdkLibStrings.TMX | java.lang.String
+  type TerminologyDataFormat = _TerminologyDataFormat | java.lang.String
   type TerminologyFile = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsTranslateMod.Blob | java.lang.String
   type TerminologyPropertiesList = js.Array[TerminologyProperties]
   type Timestamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-07-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

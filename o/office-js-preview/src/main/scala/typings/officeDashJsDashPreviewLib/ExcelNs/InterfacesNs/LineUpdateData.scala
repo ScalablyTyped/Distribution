@@ -79,3 +79,26 @@ trait LineUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object LineUpdateData {
+  @scala.inline
+  def apply(
+    beginArrowHeadLength: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadLength | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Short | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Long = null,
+    beginArrowHeadStyle: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Stealth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Oval | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Open = null,
+    beginArrowHeadWidth: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Narrow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wide = null,
+    connectorType: officeDashJsDashPreviewLib.ExcelNs.ConnectorType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Straight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Elbow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Curve = null,
+    endArrowHeadLength: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadLength | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Short | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Long = null,
+    endArrowHeadStyle: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Stealth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Oval | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Open = null,
+    endArrowHeadWidth: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Narrow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wide = null
+  ): LineUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (beginArrowHeadLength != null) __obj.updateDynamic("beginArrowHeadLength")(beginArrowHeadLength.asInstanceOf[js.Any])
+    if (beginArrowHeadStyle != null) __obj.updateDynamic("beginArrowHeadStyle")(beginArrowHeadStyle.asInstanceOf[js.Any])
+    if (beginArrowHeadWidth != null) __obj.updateDynamic("beginArrowHeadWidth")(beginArrowHeadWidth.asInstanceOf[js.Any])
+    if (connectorType != null) __obj.updateDynamic("connectorType")(connectorType.asInstanceOf[js.Any])
+    if (endArrowHeadLength != null) __obj.updateDynamic("endArrowHeadLength")(endArrowHeadLength.asInstanceOf[js.Any])
+    if (endArrowHeadStyle != null) __obj.updateDynamic("endArrowHeadStyle")(endArrowHeadStyle.asInstanceOf[js.Any])
+    if (endArrowHeadWidth != null) __obj.updateDynamic("endArrowHeadWidth")(endArrowHeadWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LineUpdateData]
+  }
+}
+

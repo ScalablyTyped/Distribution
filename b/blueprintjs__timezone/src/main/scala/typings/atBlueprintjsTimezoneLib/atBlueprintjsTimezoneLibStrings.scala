@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object atBlueprintjsTimezoneLibStrings {
   @js.native
-  sealed trait abbreviation extends js.Object
+  sealed trait abbreviation
+    extends atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat
   
   @js.native
-  sealed trait composite extends js.Object
+  sealed trait composite
+    extends atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name
+    extends atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat
   
   @js.native
-  sealed trait offset extends js.Object
+  sealed trait offset
+    extends atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat
   
   @scala.inline
   def abbreviation: abbreviation = "abbreviation".asInstanceOf[abbreviation]

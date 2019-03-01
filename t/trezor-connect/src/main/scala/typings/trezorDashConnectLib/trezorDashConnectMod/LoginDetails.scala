@@ -11,3 +11,14 @@ trait LoginDetails extends js.Object {
   var signature: java.lang.String
 }
 
+object LoginDetails {
+  @scala.inline
+  def apply(address: java.lang.String, publicKey: java.lang.String, signature: java.lang.String): LoginDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("publicKey")(publicKey)
+    __obj.updateDynamic("signature")(signature)
+    __obj.asInstanceOf[LoginDetails]
+  }
+}
+

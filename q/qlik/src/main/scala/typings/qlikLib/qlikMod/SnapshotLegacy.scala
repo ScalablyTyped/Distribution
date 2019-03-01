@@ -9,3 +9,12 @@ trait SnapshotLegacy extends js.Object {
   var canTakeSnapshot: scala.Boolean
 }
 
+object SnapshotLegacy {
+  @scala.inline
+  def apply(canTakeSnapshot: scala.Boolean): SnapshotLegacy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canTakeSnapshot")(canTakeSnapshot)
+    __obj.asInstanceOf[SnapshotLegacy]
+  }
+}
+

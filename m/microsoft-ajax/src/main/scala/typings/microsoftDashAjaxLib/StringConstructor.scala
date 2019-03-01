@@ -23,3 +23,16 @@ trait StringConstructor extends js.Object {
   def localeFormat(format: java.lang.String, args: js.Any*): java.lang.String
 }
 
+object StringConstructor {
+  @scala.inline
+  def apply(
+    format: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String],
+    localeFormat: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String]
+  ): StringConstructor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("localeFormat")(localeFormat)
+    __obj.asInstanceOf[StringConstructor]
+  }
+}
+

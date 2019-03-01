@@ -41,3 +41,28 @@ trait WorkItemServiceState extends js.Object {
   var suggestedStopPosition: js.UndefOr[Position] = js.undefined
 }
 
+object WorkItemServiceState {
+  @scala.inline
+  def apply(
+    harnessData: stdLib.Record[java.lang.String, _] = null,
+    leaseExpireTime: java.lang.String = null,
+    metricShortId: js.Array[MetricShortId] = null,
+    nextReportIndex: java.lang.String = null,
+    reportStatusInterval: java.lang.String = null,
+    splitRequest: ApproximateSplitRequest = null,
+    suggestedStopPoint: ApproximateProgress = null,
+    suggestedStopPosition: Position = null
+  ): WorkItemServiceState = {
+    val __obj = js.Dynamic.literal()
+    if (harnessData != null) __obj.updateDynamic("harnessData")(harnessData)
+    if (leaseExpireTime != null) __obj.updateDynamic("leaseExpireTime")(leaseExpireTime)
+    if (metricShortId != null) __obj.updateDynamic("metricShortId")(metricShortId)
+    if (nextReportIndex != null) __obj.updateDynamic("nextReportIndex")(nextReportIndex)
+    if (reportStatusInterval != null) __obj.updateDynamic("reportStatusInterval")(reportStatusInterval)
+    if (splitRequest != null) __obj.updateDynamic("splitRequest")(splitRequest)
+    if (suggestedStopPoint != null) __obj.updateDynamic("suggestedStopPoint")(suggestedStopPoint)
+    if (suggestedStopPosition != null) __obj.updateDynamic("suggestedStopPosition")(suggestedStopPosition)
+    __obj.asInstanceOf[WorkItemServiceState]
+  }
+}
+

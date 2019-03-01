@@ -10,3 +10,16 @@ trait ApolloProviderProps[TCache] extends js.Object {
   var client: apolloDashClientLib.apolloDashClientMod.default[TCache]
 }
 
+object ApolloProviderProps {
+  @scala.inline
+  def apply[TCache](
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    client: apolloDashClientLib.apolloDashClientMod.default[TCache]
+  ): ApolloProviderProps[TCache] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.updateDynamic("client")(client)
+    __obj.asInstanceOf[ApolloProviderProps[TCache]]
+  }
+}
+

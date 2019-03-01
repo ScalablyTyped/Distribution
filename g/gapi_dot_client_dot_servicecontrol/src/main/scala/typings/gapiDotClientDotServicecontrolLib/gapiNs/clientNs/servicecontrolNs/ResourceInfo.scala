@@ -18,3 +18,13 @@ trait ResourceInfo extends js.Object {
   var resourceName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResourceInfo {
+  @scala.inline
+  def apply(resourceContainer: java.lang.String = null, resourceName: java.lang.String = null): ResourceInfo = {
+    val __obj = js.Dynamic.literal()
+    if (resourceContainer != null) __obj.updateDynamic("resourceContainer")(resourceContainer)
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
+    __obj.asInstanceOf[ResourceInfo]
+  }
+}
+

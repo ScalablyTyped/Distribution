@@ -12,3 +12,12 @@ trait GetConfig extends js.Object {
   var autoCreate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GetConfig {
+  @scala.inline
+  def apply(autoCreate: js.UndefOr[scala.Boolean] = js.undefined): GetConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate)
+    __obj.asInstanceOf[GetConfig]
+  }
+}
+

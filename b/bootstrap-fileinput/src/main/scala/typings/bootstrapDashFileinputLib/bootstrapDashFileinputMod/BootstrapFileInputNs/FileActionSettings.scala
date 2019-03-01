@@ -64,3 +64,40 @@ trait FileActionSettings extends js.Object {
   var uploadTitle: java.lang.String
 }
 
+object FileActionSettings {
+  @scala.inline
+  def apply(
+    indicatorError: java.lang.String,
+    indicatorErrorTitle: java.lang.String,
+    indicatorLoading: java.lang.String,
+    indicatorLoadingTitle: java.lang.String,
+    indicatorNew: java.lang.String,
+    indicatorNewTitle: java.lang.String,
+    indicatorSuccess: java.lang.String,
+    indicatorSuccessTitle: java.lang.String,
+    removeClass: java.lang.String,
+    removeIcon: java.lang.String,
+    removeTitle: java.lang.String,
+    uploadClass: java.lang.String,
+    uploadIcon: java.lang.String,
+    uploadTitle: java.lang.String
+  ): FileActionSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("indicatorError")(indicatorError)
+    __obj.updateDynamic("indicatorErrorTitle")(indicatorErrorTitle)
+    __obj.updateDynamic("indicatorLoading")(indicatorLoading)
+    __obj.updateDynamic("indicatorLoadingTitle")(indicatorLoadingTitle)
+    __obj.updateDynamic("indicatorNew")(indicatorNew)
+    __obj.updateDynamic("indicatorNewTitle")(indicatorNewTitle)
+    __obj.updateDynamic("indicatorSuccess")(indicatorSuccess)
+    __obj.updateDynamic("indicatorSuccessTitle")(indicatorSuccessTitle)
+    __obj.updateDynamic("removeClass")(removeClass)
+    __obj.updateDynamic("removeIcon")(removeIcon)
+    __obj.updateDynamic("removeTitle")(removeTitle)
+    __obj.updateDynamic("uploadClass")(uploadClass)
+    __obj.updateDynamic("uploadIcon")(uploadIcon)
+    __obj.updateDynamic("uploadTitle")(uploadTitle)
+    __obj.asInstanceOf[FileActionSettings]
+  }
+}
+

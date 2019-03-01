@@ -15,3 +15,24 @@ trait TdHTMLAttributes[T] extends HTMLAttributes[T] {
   var scope: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TdHTMLAttributes {
+  @scala.inline
+  def apply[T](
+    HTMLAttributes: HTMLAttributes[T] = null,
+    align: reactLib.reactLibStrings.left | reactLib.reactLibStrings.center | reactLib.reactLibStrings.right | reactLib.reactLibStrings.justify | reactLib.reactLibStrings.char = null,
+    colSpan: scala.Int | scala.Double = null,
+    headers: java.lang.String = null,
+    rowSpan: scala.Int | scala.Double = null,
+    scope: java.lang.String = null
+  ): TdHTMLAttributes[T] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[TdHTMLAttributes[T]]
+  }
+}
+

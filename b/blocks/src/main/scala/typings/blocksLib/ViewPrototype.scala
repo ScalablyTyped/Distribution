@@ -38,3 +38,30 @@ trait ViewPrototype
   var routed: js.UndefOr[js.Function] = js.undefined
 }
 
+object ViewPrototype {
+  @scala.inline
+  def apply(
+    StringDictionary: /* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    init: js.Function = null,
+    isActive: js.Function0[scala.Boolean] = null,
+    navigateTo: js.Function = null,
+    options: Anon_Route = null,
+    parentView: js.Any = null,
+    ready: js.Function = null,
+    route: js.Function1[/* name */ java.lang.String, ViewPrototype] = null,
+    routed: js.Function = null
+  ): ViewPrototype = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (isActive != null) __obj.updateDynamic("isActive")(isActive)
+    if (navigateTo != null) __obj.updateDynamic("navigateTo")(navigateTo)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (parentView != null) __obj.updateDynamic("parentView")(parentView)
+    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (route != null) __obj.updateDynamic("route")(route)
+    if (routed != null) __obj.updateDynamic("routed")(routed)
+    __obj.asInstanceOf[ViewPrototype]
+  }
+}
+

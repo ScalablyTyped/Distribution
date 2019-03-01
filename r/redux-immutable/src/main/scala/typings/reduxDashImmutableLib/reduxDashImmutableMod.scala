@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-immutable", JSImport.Namespace)
 @js.native
 object reduxDashImmutableMod extends js.Object {
-  def combineReducers[S](reducers: reduxLib.reduxMod.ReducersMapObject[S, reduxLib.reduxMod.Action[_]]): reduxLib.reduxMod.Reducer[S, reduxLib.reduxMod.AnyAction] = js.native
+  def combineReducers[S](reducers: reduxLib.reduxMod.ReducersMapObject[S, _]): reduxLib.reduxMod.Reducer[S, reduxLib.reduxMod.AnyAction] = js.native
   def combineReducers[S](
-    reducers: reduxLib.reduxMod.ReducersMapObject[S, reduxLib.reduxMod.Action[_]],
+    reducers: reduxLib.reduxMod.ReducersMapObject[S, _],
     getDefaultState: js.Function0[immutableLib.immutableMod.CollectionNs.Indexed[S]]
   ): reduxLib.reduxMod.Reducer[S, reduxLib.reduxMod.AnyAction] = js.native
   @JSName("combineReducers")

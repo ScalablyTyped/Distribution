@@ -50,3 +50,49 @@ trait SendAsResource extends js.Object {
   def verify(request: gapiDotClientDotGmailLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object SendAsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SendAs]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SendAs]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListSendAsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SendAs]
+    ],
+    smimeInfo: SmimeInfoResource,
+    update: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SendAs]
+    ],
+    verify: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): SendAsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("smimeInfo")(smimeInfo)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("verify")(verify)
+    __obj.asInstanceOf[SendAsResource]
+  }
+}
+

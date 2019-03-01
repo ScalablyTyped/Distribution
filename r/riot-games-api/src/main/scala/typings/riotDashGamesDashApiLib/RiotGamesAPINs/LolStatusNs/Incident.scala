@@ -12,3 +12,15 @@ trait Incident extends js.Object {
   var updates: js.Array[Message]
 }
 
+object Incident {
+  @scala.inline
+  def apply(active: scala.Boolean, created_at: java.lang.String, id: scala.Double, updates: js.Array[Message]): Incident = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("created_at")(created_at)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("updates")(updates)
+    __obj.asInstanceOf[Incident]
+  }
+}
+

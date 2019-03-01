@@ -10,3 +10,17 @@ trait MybooksResource extends js.Object {
   def list(request: gapiDotClientDotBooksLib.Anon_AcquireMethod): gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
 }
 
+object MybooksResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AcquireMethod, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
+    ]
+  ): MybooksResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[MybooksResource]
+  }
+}
+

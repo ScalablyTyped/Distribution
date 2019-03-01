@@ -14,3 +14,20 @@ trait StorableRequest extends js.Object {
   def toRequest(): stdLib.Request
 }
 
+object StorableRequest {
+  @scala.inline
+  def apply(
+    clone: js.Function0[StorableRequest],
+    timestamp: scala.Double,
+    toObject: js.Function0[IStorableRequestOptions],
+    toRequest: js.Function0[stdLib.Request]
+  ): StorableRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.updateDynamic("toObject")(toObject)
+    __obj.updateDynamic("toRequest")(toRequest)
+    __obj.asInstanceOf[StorableRequest]
+  }
+}
+

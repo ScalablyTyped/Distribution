@@ -20,3 +20,18 @@ trait JSONErrorOptions extends js.Object {
   var preFormat: js.UndefOr[js.Function1[/* err */ nodeLib.Error, _]] = js.undefined
 }
 
+object JSONErrorOptions {
+  @scala.inline
+  def apply(
+    format: js.Function2[/* err */ nodeLib.Error, /* obj */ js.Any, _] = null,
+    postFormat: js.Function2[/* err */ nodeLib.Error, /* obj */ js.Any, _] = null,
+    preFormat: js.Function1[/* err */ nodeLib.Error, _] = null
+  ): JSONErrorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (postFormat != null) __obj.updateDynamic("postFormat")(postFormat)
+    if (preFormat != null) __obj.updateDynamic("preFormat")(preFormat)
+    __obj.asInstanceOf[JSONErrorOptions]
+  }
+}
+

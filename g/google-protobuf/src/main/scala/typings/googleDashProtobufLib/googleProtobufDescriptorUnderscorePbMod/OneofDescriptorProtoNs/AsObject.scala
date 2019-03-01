@@ -10,3 +10,16 @@ trait AsObject extends js.Object {
   var options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.OneofOptionsNs.AsObject
 }
 
+object AsObject {
+  @scala.inline
+  def apply(
+    options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.OneofOptionsNs.AsObject,
+    name: java.lang.String = null
+  ): AsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

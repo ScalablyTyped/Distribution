@@ -11,3 +11,18 @@ trait ServerOptions extends js.Object {
   var port: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    host: java.lang.String = null,
+    path: java.lang.String = null,
+    port: scala.Int | scala.Double = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

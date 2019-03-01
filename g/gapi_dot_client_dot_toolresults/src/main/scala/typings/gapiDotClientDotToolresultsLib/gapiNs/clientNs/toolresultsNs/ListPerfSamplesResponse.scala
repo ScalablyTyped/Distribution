@@ -14,3 +14,13 @@ trait ListPerfSamplesResponse extends js.Object {
   var perfSamples: js.UndefOr[js.Array[PerfSample]] = js.undefined
 }
 
+object ListPerfSamplesResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, perfSamples: js.Array[PerfSample] = null): ListPerfSamplesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (perfSamples != null) __obj.updateDynamic("perfSamples")(perfSamples)
+    __obj.asInstanceOf[ListPerfSamplesResponse]
+  }
+}
+

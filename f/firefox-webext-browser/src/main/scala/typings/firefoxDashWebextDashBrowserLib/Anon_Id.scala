@@ -9,3 +9,12 @@ trait Anon_Id extends js.Object {
   var id: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionID
 }
 
+object Anon_Id {
+  @scala.inline
+  def apply(id: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionID): Anon_Id = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[Anon_Id]
+  }
+}
+

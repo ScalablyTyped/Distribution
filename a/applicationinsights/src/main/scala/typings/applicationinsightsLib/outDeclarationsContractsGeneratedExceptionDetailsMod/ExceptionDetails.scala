@@ -39,3 +39,26 @@ trait ExceptionDetails extends js.Object {
   var typeName: java.lang.String
 }
 
+object ExceptionDetails {
+  @scala.inline
+  def apply(
+    hasFullStack: scala.Boolean,
+    id: scala.Double,
+    message: java.lang.String,
+    outerId: scala.Double,
+    parsedStack: js.Array[applicationinsightsLib.outDeclarationsContractsGeneratedStackFrameMod.namespaced],
+    stack: java.lang.String,
+    typeName: java.lang.String
+  ): ExceptionDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hasFullStack")(hasFullStack)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("outerId")(outerId)
+    __obj.updateDynamic("parsedStack")(parsedStack)
+    __obj.updateDynamic("stack")(stack)
+    __obj.updateDynamic("typeName")(typeName)
+    __obj.asInstanceOf[ExceptionDetails]
+  }
+}
+

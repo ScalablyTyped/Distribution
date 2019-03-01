@@ -26,3 +26,24 @@ trait CompleteEventArgs extends js.Object {
   var xhr: js.UndefOr[js.Any] = js.undefined
 }
 
+object CompleteEventArgs {
+  @scala.inline
+  def apply(
+    e: js.Any = null,
+    files: js.Any = null,
+    model: js.Any = null,
+    responseText: java.lang.String = null,
+    `type`: java.lang.String = null,
+    xhr: js.Any = null
+  ): CompleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (e != null) __obj.updateDynamic("e")(e)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (responseText != null) __obj.updateDynamic("responseText")(responseText)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[CompleteEventArgs]
+  }
+}
+

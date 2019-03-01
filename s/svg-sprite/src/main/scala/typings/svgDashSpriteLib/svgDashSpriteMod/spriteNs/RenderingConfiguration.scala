@@ -18,3 +18,13 @@ trait RenderingConfiguration extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RenderingConfiguration {
+  @scala.inline
+  def apply(dest: java.lang.String = null, template: java.lang.String = null): RenderingConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[RenderingConfiguration]
+  }
+}
+

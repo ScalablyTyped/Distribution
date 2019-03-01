@@ -269,3 +269,103 @@ trait IgFunnelChart
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgFunnelChart {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igFunnelChart
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowSliceSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    bezierPoints: java.lang.String = null,
+    bottomEdgeWidth: scala.Int | scala.Double = null,
+    brushes: js.Any = null,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    formatInnerLabel: js.Any = null,
+    formatOuterLabel: js.Any = null,
+    funnelSliceDisplay: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    hideTooltip: HideTooltipEvent = null,
+    innerLabelMemberPath: java.lang.String = null,
+    innerLabelVisibility: java.lang.String = null,
+    isInverted: js.UndefOr[scala.Boolean] = js.undefined,
+    legend: js.Any = null,
+    legendItemBadgeTemplate: js.Any = null,
+    maxRecCount: scala.Int | scala.Double = null,
+    outerLabelAlignment: java.lang.String = null,
+    outerLabelMemberPath: java.lang.String = null,
+    outerLabelTextColor: java.lang.String = null,
+    outerLabelTextStyle: java.lang.String = null,
+    outerLabelVisibility: java.lang.String = null,
+    outlineThickness: scala.Int | scala.Double = null,
+    outlines: js.Any = null,
+    pixelScalingRatio: scala.Int | scala.Double = null,
+    responseDataKey: java.lang.String = null,
+    responseTotalRecCountKey: java.lang.String = null,
+    selectedSliceStyle: js.Any = null,
+    sliceClicked: SliceClickedEvent = null,
+    textColor: java.lang.String = null,
+    textStyle: java.lang.String = null,
+    tooltipTemplate: java.lang.String = null,
+    transitionDuration: scala.Int | scala.Double = null,
+    unselectedSliceStyle: js.Any = null,
+    updateTooltip: UpdateTooltipEvent = null,
+    useBezierCurve: js.UndefOr[scala.Boolean] = js.undefined,
+    useOuterLabelsForLegend: js.UndefOr[scala.Boolean] = js.undefined,
+    useUnselectedStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    valueMemberPath: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): IgFunnelChart = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowSliceSelection)) __obj.updateDynamic("allowSliceSelection")(allowSliceSelection)
+    if (bezierPoints != null) __obj.updateDynamic("bezierPoints")(bezierPoints)
+    if (bottomEdgeWidth != null) __obj.updateDynamic("bottomEdgeWidth")(bottomEdgeWidth.asInstanceOf[js.Any])
+    if (brushes != null) __obj.updateDynamic("brushes")(brushes)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (formatInnerLabel != null) __obj.updateDynamic("formatInnerLabel")(formatInnerLabel)
+    if (formatOuterLabel != null) __obj.updateDynamic("formatOuterLabel")(formatOuterLabel)
+    if (funnelSliceDisplay != null) __obj.updateDynamic("funnelSliceDisplay")(funnelSliceDisplay)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
+    if (innerLabelMemberPath != null) __obj.updateDynamic("innerLabelMemberPath")(innerLabelMemberPath)
+    if (innerLabelVisibility != null) __obj.updateDynamic("innerLabelVisibility")(innerLabelVisibility)
+    if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (legendItemBadgeTemplate != null) __obj.updateDynamic("legendItemBadgeTemplate")(legendItemBadgeTemplate)
+    if (maxRecCount != null) __obj.updateDynamic("maxRecCount")(maxRecCount.asInstanceOf[js.Any])
+    if (outerLabelAlignment != null) __obj.updateDynamic("outerLabelAlignment")(outerLabelAlignment)
+    if (outerLabelMemberPath != null) __obj.updateDynamic("outerLabelMemberPath")(outerLabelMemberPath)
+    if (outerLabelTextColor != null) __obj.updateDynamic("outerLabelTextColor")(outerLabelTextColor)
+    if (outerLabelTextStyle != null) __obj.updateDynamic("outerLabelTextStyle")(outerLabelTextStyle)
+    if (outerLabelVisibility != null) __obj.updateDynamic("outerLabelVisibility")(outerLabelVisibility)
+    if (outlineThickness != null) __obj.updateDynamic("outlineThickness")(outlineThickness.asInstanceOf[js.Any])
+    if (outlines != null) __obj.updateDynamic("outlines")(outlines)
+    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
+    if (selectedSliceStyle != null) __obj.updateDynamic("selectedSliceStyle")(selectedSliceStyle)
+    if (sliceClicked != null) __obj.updateDynamic("sliceClicked")(sliceClicked)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (unselectedSliceStyle != null) __obj.updateDynamic("unselectedSliceStyle")(unselectedSliceStyle)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (!js.isUndefined(useBezierCurve)) __obj.updateDynamic("useBezierCurve")(useBezierCurve)
+    if (!js.isUndefined(useOuterLabelsForLegend)) __obj.updateDynamic("useOuterLabelsForLegend")(useOuterLabelsForLegend)
+    if (!js.isUndefined(useUnselectedStyle)) __obj.updateDynamic("useUnselectedStyle")(useUnselectedStyle)
+    if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgFunnelChart]
+  }
+}
+

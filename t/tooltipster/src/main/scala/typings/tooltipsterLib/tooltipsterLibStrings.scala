@@ -7,25 +7,30 @@ import scala.scalajs.js.annotation._
 
 object tooltipsterLibStrings {
   @js.native
-  sealed trait after extends js.Object
+  sealed trait after
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait appearing extends js.Object
   
   @js.native
-  sealed trait before extends js.Object
+  sealed trait before
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipPositioningSide
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait close
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait closed extends js.Object
   
   @js.native
-  sealed trait closing extends js.Object
+  sealed trait closing
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait constrained extends js.Object
@@ -34,16 +39,19 @@ object tooltipsterLibStrings {
   sealed trait content extends js.Object
   
   @js.native
-  sealed trait created extends js.Object
+  sealed trait created
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait current extends js.Object
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait destroy
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait destroyed extends js.Object
+  sealed trait destroyed
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait disable extends js.Object
@@ -52,7 +60,8 @@ object tooltipsterLibStrings {
   sealed trait disappearing extends js.Object
   
   @js.native
-  sealed trait dismissable extends js.Object
+  sealed trait dismissable
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait elementOrigin extends js.Object
@@ -70,22 +79,26 @@ object tooltipsterLibStrings {
   sealed trait fall extends js.Object
   
   @js.native
-  sealed trait format extends js.Object
+  sealed trait format
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait geometry extends js.Object
+  sealed trait geometry
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait grow extends js.Object
   
   @js.native
-  sealed trait init extends js.Object
+  sealed trait init
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait instance extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipPositioningSide
   
   @js.native
   sealed trait natural extends js.Object
@@ -109,28 +122,35 @@ object tooltipsterLibStrings {
   sealed trait option extends js.Object
   
   @js.native
-  sealed trait position extends js.Object
+  sealed trait position
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait positionTest extends js.Object
+  sealed trait positionTest
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait positionTested extends js.Object
+  sealed trait positionTested
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait previous extends js.Object
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait ready
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait reposition extends js.Object
+  sealed trait reposition
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait repositioned extends js.Object
+  sealed trait repositioned
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipPositioningSide
   
   @js.native
   sealed trait rotate extends js.Object
@@ -139,7 +159,8 @@ object tooltipsterLibStrings {
   sealed trait scale extends js.Object
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scroll
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait slide extends js.Object
@@ -148,16 +169,20 @@ object tooltipsterLibStrings {
   sealed trait stable extends js.Object
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait startcancel extends js.Object
+  sealed trait startcancel
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait startend extends js.Object
+  sealed trait startend
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
-  sealed trait state extends js.Object
+  sealed trait state
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @js.native
   sealed trait status extends js.Object
@@ -166,13 +191,15 @@ object tooltipsterLibStrings {
   sealed trait swing extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipPositioningSide
   
   @js.native
   sealed trait triggerHandler extends js.Object
   
   @js.native
-  sealed trait updated extends js.Object
+  sealed trait updated
+    extends tooltipsterLib.JQueryTooltipsterNs.TooltipEventName
   
   @scala.inline
   def after: after = "after".asInstanceOf[after]

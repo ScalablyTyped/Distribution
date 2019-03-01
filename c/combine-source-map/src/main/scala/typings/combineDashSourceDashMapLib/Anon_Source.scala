@@ -10,3 +10,13 @@ trait Anon_Source extends js.Object {
   var sourceFile: java.lang.String
 }
 
+object Anon_Source {
+  @scala.inline
+  def apply(source: java.lang.String, sourceFile: java.lang.String): Anon_Source = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("sourceFile")(sourceFile)
+    __obj.asInstanceOf[Anon_Source]
+  }
+}
+

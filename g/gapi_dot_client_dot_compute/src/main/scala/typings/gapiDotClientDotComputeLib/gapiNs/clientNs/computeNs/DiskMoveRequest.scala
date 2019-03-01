@@ -22,3 +22,13 @@ trait DiskMoveRequest extends js.Object {
   var targetDisk: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DiskMoveRequest {
+  @scala.inline
+  def apply(destinationZone: java.lang.String = null, targetDisk: java.lang.String = null): DiskMoveRequest = {
+    val __obj = js.Dynamic.literal()
+    if (destinationZone != null) __obj.updateDynamic("destinationZone")(destinationZone)
+    if (targetDisk != null) __obj.updateDynamic("targetDisk")(targetDisk)
+    __obj.asInstanceOf[DiskMoveRequest]
+  }
+}
+

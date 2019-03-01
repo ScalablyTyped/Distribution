@@ -54,3 +54,28 @@ trait XLayerImporter
   def setTargetBackend(aBackend: XBackend): scala.Unit
 }
 
+object XLayerImporter {
+  @scala.inline
+  def apply(
+    TargetBackend: XBackend,
+    acquire: js.Function0[scala.Unit],
+    getTargetBackend: js.Function0[XBackend],
+    importLayer: js.Function1[XLayer, scala.Unit],
+    importLayerForEntity: js.Function2[XLayer, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTargetBackend: js.Function1[XBackend, scala.Unit]
+  ): XLayerImporter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TargetBackend")(TargetBackend)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getTargetBackend")(getTargetBackend)
+    __obj.updateDynamic("importLayer")(importLayer)
+    __obj.updateDynamic("importLayerForEntity")(importLayerForEntity)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setTargetBackend")(setTargetBackend)
+    __obj.asInstanceOf[XLayerImporter]
+  }
+}
+

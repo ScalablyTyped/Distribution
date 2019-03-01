@@ -52,3 +52,30 @@ trait ReCAPTCHAProps extends js.Object {
   var `type`: js.UndefOr[reactDashGoogleDashRecaptchaLib.Type] = js.undefined
 }
 
+object ReCAPTCHAProps {
+  @scala.inline
+  def apply(
+    sitekey: java.lang.String,
+    badge: reactDashGoogleDashRecaptchaLib.Badge = null,
+    onChange: js.Function1[/* token */ java.lang.String | scala.Null, scala.Unit] = null,
+    onExpired: js.Function0[scala.Unit] = null,
+    size: reactDashGoogleDashRecaptchaLib.Size = null,
+    stoken: java.lang.String = null,
+    tabindex: scala.Int | scala.Double = null,
+    theme: reactDashGoogleDashRecaptchaLib.Theme = null,
+    `type`: reactDashGoogleDashRecaptchaLib.Type = null
+  ): ReCAPTCHAProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sitekey")(sitekey)
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onExpired != null) __obj.updateDynamic("onExpired")(onExpired)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (stoken != null) __obj.updateDynamic("stoken")(stoken)
+    if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ReCAPTCHAProps]
+  }
+}
+

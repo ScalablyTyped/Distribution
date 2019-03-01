@@ -10,3 +10,16 @@ trait Anon_ConsoleFormattedStream extends js.Object {
   var ConsoleRawStream: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BrowserBunyan.ConsoleRawStream */ js.Any
 }
 
+object Anon_ConsoleFormattedStream {
+  @scala.inline
+  def apply(
+    ConsoleFormattedStream: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BrowserBunyan.ConsoleFormattedStream */ js.Any,
+    ConsoleRawStream: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BrowserBunyan.ConsoleRawStream */ js.Any
+  ): Anon_ConsoleFormattedStream = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ConsoleFormattedStream")(ConsoleFormattedStream)
+    __obj.updateDynamic("ConsoleRawStream")(ConsoleRawStream)
+    __obj.asInstanceOf[Anon_ConsoleFormattedStream]
+  }
+}
+

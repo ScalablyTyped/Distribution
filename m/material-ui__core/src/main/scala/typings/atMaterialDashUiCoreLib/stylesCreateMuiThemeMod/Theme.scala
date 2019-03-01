@@ -20,3 +20,36 @@ trait Theme extends js.Object {
   var zIndex: atMaterialDashUiCoreLib.stylesZIndexMod.ZIndex
 }
 
+object Theme {
+  @scala.inline
+  def apply(
+    breakpoints: atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoints,
+    direction: Direction,
+    mixins: atMaterialDashUiCoreLib.stylesCreateMixinsMod.Mixins,
+    palette: atMaterialDashUiCoreLib.stylesCreatePaletteMod.Palette,
+    shadows: atMaterialDashUiCoreLib.stylesShadowsMod.Shadows,
+    shape: atMaterialDashUiCoreLib.stylesShapeMod.Shape,
+    spacing: atMaterialDashUiCoreLib.stylesSpacingMod.Spacing,
+    transitions: atMaterialDashUiCoreLib.stylesTransitionsMod.Transitions,
+    typography: atMaterialDashUiCoreLib.stylesCreateTypographyMod.Typography,
+    zIndex: atMaterialDashUiCoreLib.stylesZIndexMod.ZIndex,
+    overrides: atMaterialDashUiCoreLib.stylesOverridesMod.Overrides = null,
+    props: atMaterialDashUiCoreLib.stylesPropsMod.ComponentsProps = null
+  ): Theme = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("breakpoints")(breakpoints)
+    __obj.updateDynamic("direction")(direction)
+    __obj.updateDynamic("mixins")(mixins)
+    __obj.updateDynamic("palette")(palette)
+    __obj.updateDynamic("shadows")(shadows)
+    __obj.updateDynamic("shape")(shape)
+    __obj.updateDynamic("spacing")(spacing)
+    __obj.updateDynamic("transitions")(transitions)
+    __obj.updateDynamic("typography")(typography)
+    __obj.updateDynamic("zIndex")(zIndex)
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    if (props != null) __obj.updateDynamic("props")(props)
+    __obj.asInstanceOf[Theme]
+  }
+}
+

@@ -10,3 +10,13 @@ trait MojisyuRegExp extends js.Object {
   var regexp: stdLib.RegExp
 }
 
+object MojisyuRegExp {
+  @scala.inline
+  def apply(list: js.Array[java.lang.String], regexp: stdLib.RegExp): MojisyuRegExp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("regexp")(regexp)
+    __obj.asInstanceOf[MojisyuRegExp]
+  }
+}
+

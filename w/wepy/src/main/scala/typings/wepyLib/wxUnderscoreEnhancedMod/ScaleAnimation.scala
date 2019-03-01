@@ -13,3 +13,22 @@ trait ScaleAnimation extends js.Object {
   def scaleZ(sz: scala.Double): Animation
 }
 
+object ScaleAnimation {
+  @scala.inline
+  def apply(
+    scale: js.Function1[scala.Double, Animation],
+    scale3d: js.Function0[Animation],
+    scaleX: js.Function1[scala.Double, Animation],
+    scaleY: js.Function1[scala.Double, Animation],
+    scaleZ: js.Function1[scala.Double, Animation]
+  ): ScaleAnimation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scale")(scale)
+    __obj.updateDynamic("scale3d")(scale3d)
+    __obj.updateDynamic("scaleX")(scaleX)
+    __obj.updateDynamic("scaleY")(scaleY)
+    __obj.updateDynamic("scaleZ")(scaleZ)
+    __obj.asInstanceOf[ScaleAnimation]
+  }
+}
+

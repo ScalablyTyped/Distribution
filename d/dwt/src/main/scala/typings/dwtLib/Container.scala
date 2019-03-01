@@ -14,3 +14,18 @@ trait Container extends js.Object {
   var Width: java.lang.String | scala.Double
 }
 
+object Container {
+  @scala.inline
+  def apply(
+    ContainerId: java.lang.String,
+    Height: java.lang.String | scala.Double,
+    Width: java.lang.String | scala.Double
+  ): Container = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ContainerId")(ContainerId)
+    __obj.updateDynamic("Height")(Height.asInstanceOf[js.Any])
+    __obj.updateDynamic("Width")(Width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Container]
+  }
+}
+

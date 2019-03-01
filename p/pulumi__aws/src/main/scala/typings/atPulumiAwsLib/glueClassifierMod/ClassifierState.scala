@@ -26,3 +26,20 @@ trait ClassifierState extends js.Object {
   val xmlClassifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ClassificationRowTagInput]] = js.undefined
 }
 
+object ClassifierState {
+  @scala.inline
+  def apply(
+    grokClassifier: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ClassificationCustomPatterns] = null,
+    jsonClassifier: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_JsonPathInput] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    xmlClassifier: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ClassificationRowTagInput] = null
+  ): ClassifierState = {
+    val __obj = js.Dynamic.literal()
+    if (grokClassifier != null) __obj.updateDynamic("grokClassifier")(grokClassifier.asInstanceOf[js.Any])
+    if (jsonClassifier != null) __obj.updateDynamic("jsonClassifier")(jsonClassifier.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (xmlClassifier != null) __obj.updateDynamic("xmlClassifier")(xmlClassifier.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClassifierState]
+  }
+}
+

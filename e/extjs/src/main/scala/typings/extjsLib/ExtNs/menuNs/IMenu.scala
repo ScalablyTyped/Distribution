@@ -60,3 +60,57 @@ trait IMenu
   var showSeparator: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IMenu {
+  @scala.inline
+  def apply(
+    IPanel: extjsLib.ExtNs.panelNs.IPanel = null,
+    afterShow: js.Function0[scala.Unit] = null,
+    allowOtherMenus: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeShow: js.Function0[scala.Unit] = null,
+    canActivateItem: js.Function1[/* item */ js.UndefOr[js.Any], scala.Boolean] = null,
+    deactivateActiveItem: js.Function1[/* andBlurFocusedItem */ js.UndefOr[js.Any], scala.Unit] = null,
+    enableKeyNav: js.UndefOr[scala.Boolean] = js.undefined,
+    floating: js.UndefOr[scala.Boolean] = js.undefined,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    hide: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    hideMode: java.lang.String = null,
+    ignoreParentClicks: js.UndefOr[scala.Boolean] = js.undefined,
+    isMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    isVisible: js.Function0[scala.Boolean] = null,
+    minWidth: scala.Int | scala.Double = null,
+    onDestroy: js.Function0[scala.Unit] = null,
+    parentMenu: IMenu = null,
+    plain: js.UndefOr[scala.Boolean] = js.undefined,
+    showBy: js.Function3[
+      /* cmp */ js.UndefOr[js.Any], 
+      /* pos */ js.UndefOr[js.Any], 
+      /* off */ js.UndefOr[js.Any], 
+      extjsLib.ExtNs.IComponent
+    ] = null,
+    showSeparator: js.UndefOr[scala.Boolean] = js.undefined
+  ): IMenu = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IPanel)
+    if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow)
+    if (!js.isUndefined(allowOtherMenus)) __obj.updateDynamic("allowOtherMenus")(allowOtherMenus)
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (canActivateItem != null) __obj.updateDynamic("canActivateItem")(canActivateItem)
+    if (deactivateActiveItem != null) __obj.updateDynamic("deactivateActiveItem")(deactivateActiveItem)
+    if (!js.isUndefined(enableKeyNav)) __obj.updateDynamic("enableKeyNav")(enableKeyNav)
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (hideMode != null) __obj.updateDynamic("hideMode")(hideMode)
+    if (!js.isUndefined(ignoreParentClicks)) __obj.updateDynamic("ignoreParentClicks")(ignoreParentClicks)
+    if (!js.isUndefined(isMenu)) __obj.updateDynamic("isMenu")(isMenu)
+    if (isVisible != null) __obj.updateDynamic("isVisible")(isVisible)
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu)
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (showBy != null) __obj.updateDynamic("showBy")(showBy)
+    if (!js.isUndefined(showSeparator)) __obj.updateDynamic("showSeparator")(showSeparator)
+    __obj.asInstanceOf[IMenu]
+  }
+}
+

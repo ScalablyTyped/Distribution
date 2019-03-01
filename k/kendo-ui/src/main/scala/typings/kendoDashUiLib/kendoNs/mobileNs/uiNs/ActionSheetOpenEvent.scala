@@ -10,3 +10,22 @@ trait ActionSheetOpenEvent extends ActionSheetEvent {
   var target: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
 }
 
+object ActionSheetOpenEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: ActionSheet,
+    context: kendoDashUiLib.JQuery = null,
+    target: kendoDashUiLib.JQuery = null
+  ): ActionSheetOpenEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ActionSheetOpenEvent]
+  }
+}
+

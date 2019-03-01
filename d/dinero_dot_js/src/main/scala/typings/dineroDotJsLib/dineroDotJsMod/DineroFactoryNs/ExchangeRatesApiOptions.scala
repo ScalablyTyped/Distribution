@@ -12,3 +12,20 @@ trait ExchangeRatesApiOptions extends js.Object {
   var roundingMode: js.UndefOr[RoundingMode] = js.undefined
 }
 
+object ExchangeRatesApiOptions {
+  @scala.inline
+  def apply(
+    endpoint: java.lang.String,
+    propertyPath: java.lang.String,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    roundingMode: RoundingMode = null
+  ): ExchangeRatesApiOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endpoint")(endpoint)
+    __obj.updateDynamic("propertyPath")(propertyPath)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (roundingMode != null) __obj.updateDynamic("roundingMode")(roundingMode)
+    __obj.asInstanceOf[ExchangeRatesApiOptions]
+  }
+}
+

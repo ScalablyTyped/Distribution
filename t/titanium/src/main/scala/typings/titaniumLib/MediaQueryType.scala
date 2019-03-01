@@ -90,3 +90,50 @@ trait MediaQueryType extends js.Object {
   var title: js.UndefOr[MediaQueryInfoType | java.lang.String] = js.undefined
 }
 
+object MediaQueryType {
+  @scala.inline
+  def apply(
+    albumArtist: MediaQueryInfoType | java.lang.String = null,
+    albumArtistPersistentID: MediaQueryInfoType | scala.Double = null,
+    albumPersistentID: MediaQueryInfoType | scala.Double = null,
+    albumTitle: MediaQueryInfoType | java.lang.String = null,
+    artist: MediaQueryInfoType | java.lang.String = null,
+    composer: MediaQueryInfoType | java.lang.String = null,
+    composerPersistentID: MediaQueryInfoType | scala.Double = null,
+    genre: MediaQueryInfoType | java.lang.String = null,
+    genrePersistentID: MediaQueryInfoType | scala.Double = null,
+    grouping: scala.Int | scala.Double = null,
+    hasProtectedAsset: MediaQueryInfoType | scala.Boolean = null,
+    isCloudItem: MediaQueryInfoType | scala.Boolean = null,
+    isCompilation: MediaQueryInfoType | scala.Boolean = null,
+    mediaType: MediaQueryInfoType | scala.Double = null,
+    persistentID: MediaQueryInfoType | scala.Double = null,
+    playCount: MediaQueryInfoType | scala.Double = null,
+    podcastPersistentID: MediaQueryInfoType | scala.Double = null,
+    podcastTitle: MediaQueryInfoType | java.lang.String = null,
+    title: MediaQueryInfoType | java.lang.String = null
+  ): MediaQueryType = {
+    val __obj = js.Dynamic.literal()
+    if (albumArtist != null) __obj.updateDynamic("albumArtist")(albumArtist.asInstanceOf[js.Any])
+    if (albumArtistPersistentID != null) __obj.updateDynamic("albumArtistPersistentID")(albumArtistPersistentID.asInstanceOf[js.Any])
+    if (albumPersistentID != null) __obj.updateDynamic("albumPersistentID")(albumPersistentID.asInstanceOf[js.Any])
+    if (albumTitle != null) __obj.updateDynamic("albumTitle")(albumTitle.asInstanceOf[js.Any])
+    if (artist != null) __obj.updateDynamic("artist")(artist.asInstanceOf[js.Any])
+    if (composer != null) __obj.updateDynamic("composer")(composer.asInstanceOf[js.Any])
+    if (composerPersistentID != null) __obj.updateDynamic("composerPersistentID")(composerPersistentID.asInstanceOf[js.Any])
+    if (genre != null) __obj.updateDynamic("genre")(genre.asInstanceOf[js.Any])
+    if (genrePersistentID != null) __obj.updateDynamic("genrePersistentID")(genrePersistentID.asInstanceOf[js.Any])
+    if (grouping != null) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
+    if (hasProtectedAsset != null) __obj.updateDynamic("hasProtectedAsset")(hasProtectedAsset.asInstanceOf[js.Any])
+    if (isCloudItem != null) __obj.updateDynamic("isCloudItem")(isCloudItem.asInstanceOf[js.Any])
+    if (isCompilation != null) __obj.updateDynamic("isCompilation")(isCompilation.asInstanceOf[js.Any])
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    if (persistentID != null) __obj.updateDynamic("persistentID")(persistentID.asInstanceOf[js.Any])
+    if (playCount != null) __obj.updateDynamic("playCount")(playCount.asInstanceOf[js.Any])
+    if (podcastPersistentID != null) __obj.updateDynamic("podcastPersistentID")(podcastPersistentID.asInstanceOf[js.Any])
+    if (podcastTitle != null) __obj.updateDynamic("podcastTitle")(podcastTitle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaQueryType]
+  }
+}
+

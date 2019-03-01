@@ -12,3 +12,12 @@ trait DidChangeConfigurationParams extends js.Object {
   var settings: js.Any
 }
 
+object DidChangeConfigurationParams {
+  @scala.inline
+  def apply(settings: js.Any): DidChangeConfigurationParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("settings")(settings)
+    __obj.asInstanceOf[DidChangeConfigurationParams]
+  }
+}
+

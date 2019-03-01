@@ -14,3 +14,16 @@ trait ServerOptions extends js.Object {
   ] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    IncomingMessage: org.scalablytyped.runtime.Instantiable1[/* socket */ nodeLib.netMod.Socket, IncomingMessage] = null,
+    ServerResponse: org.scalablytyped.runtime.Instantiable1[/* req */ IncomingMessage, ServerResponse] = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (IncomingMessage != null) __obj.updateDynamic("IncomingMessage")(IncomingMessage)
+    if (ServerResponse != null) __obj.updateDynamic("ServerResponse")(ServerResponse)
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

@@ -49,3 +49,50 @@ trait UnsampledReport extends js.Object {
   var webPropertyId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UnsampledReport {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    cloudStorageDownloadDetails: gapiDotClientDotAnalyticsLib.Anon_BucketId = null,
+    created: java.lang.String = null,
+    dimensions: java.lang.String = null,
+    downloadType: java.lang.String = null,
+    driveDownloadDetails: gapiDotClientDotAnalyticsLib.Anon_DocumentId = null,
+    `end-date`: java.lang.String = null,
+    filters: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    metrics: java.lang.String = null,
+    profileId: java.lang.String = null,
+    segment: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    `start-date`: java.lang.String = null,
+    status: java.lang.String = null,
+    title: java.lang.String = null,
+    updated: java.lang.String = null,
+    webPropertyId: java.lang.String = null
+  ): UnsampledReport = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (cloudStorageDownloadDetails != null) __obj.updateDynamic("cloudStorageDownloadDetails")(cloudStorageDownloadDetails)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (downloadType != null) __obj.updateDynamic("downloadType")(downloadType)
+    if (driveDownloadDetails != null) __obj.updateDynamic("driveDownloadDetails")(driveDownloadDetails)
+    if (`end-date` != null) __obj.updateDynamic("end-date")(`end-date`)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (profileId != null) __obj.updateDynamic("profileId")(profileId)
+    if (segment != null) __obj.updateDynamic("segment")(segment)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (`start-date` != null) __obj.updateDynamic("start-date")(`start-date`)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId)
+    __obj.asInstanceOf[UnsampledReport]
+  }
+}
+

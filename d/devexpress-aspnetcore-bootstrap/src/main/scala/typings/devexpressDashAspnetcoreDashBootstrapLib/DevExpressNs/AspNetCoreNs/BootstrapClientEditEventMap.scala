@@ -12,3 +12,22 @@ trait BootstrapClientEditEventMap extends ControlEventMap {
   var valueChanged: ProcessingModeEventArgs
 }
 
+object BootstrapClientEditEventMap {
+  @scala.inline
+  def apply(
+    gotFocus: EventArgs,
+    init: EventArgs,
+    lostFocus: EventArgs,
+    validation: EditValidationEventArgs,
+    valueChanged: ProcessingModeEventArgs
+  ): BootstrapClientEditEventMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gotFocus")(gotFocus)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("lostFocus")(lostFocus)
+    __obj.updateDynamic("validation")(validation)
+    __obj.updateDynamic("valueChanged")(valueChanged)
+    __obj.asInstanceOf[BootstrapClientEditEventMap]
+  }
+}
+

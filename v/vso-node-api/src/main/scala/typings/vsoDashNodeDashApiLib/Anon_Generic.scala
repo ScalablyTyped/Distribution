@@ -11,3 +11,14 @@ trait Anon_Generic extends js.Object {
   var teamProject: scala.Double
 }
 
+object Anon_Generic {
+  @scala.inline
+  def apply(generic: scala.Double, serviceHost: scala.Double, teamProject: scala.Double): Anon_Generic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("generic")(generic)
+    __obj.updateDynamic("serviceHost")(serviceHost)
+    __obj.updateDynamic("teamProject")(teamProject)
+    __obj.asInstanceOf[Anon_Generic]
+  }
+}
+

@@ -60,3 +60,28 @@ trait FloatingPointBitmapLayout extends js.Object {
   var ScanLines: scala.Double
 }
 
+object FloatingPointBitmapLayout {
+  @scala.inline
+  def apply(
+    ColorSpace: XColorSpace,
+    Endianness: scala.Double,
+    Format: scala.Double,
+    NumComponents: scala.Double,
+    PlaneStride: scala.Double,
+    ScanLineBytes: scala.Double,
+    ScanLineStride: scala.Double,
+    ScanLines: scala.Double
+  ): FloatingPointBitmapLayout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColorSpace")(ColorSpace)
+    __obj.updateDynamic("Endianness")(Endianness)
+    __obj.updateDynamic("Format")(Format)
+    __obj.updateDynamic("NumComponents")(NumComponents)
+    __obj.updateDynamic("PlaneStride")(PlaneStride)
+    __obj.updateDynamic("ScanLineBytes")(ScanLineBytes)
+    __obj.updateDynamic("ScanLineStride")(ScanLineStride)
+    __obj.updateDynamic("ScanLines")(ScanLines)
+    __obj.asInstanceOf[FloatingPointBitmapLayout]
+  }
+}
+

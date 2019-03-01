@@ -17,3 +17,18 @@ trait NotificationSet extends js.Object {
   var notificationSetId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NotificationSet {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    notification: js.Array[Notification] = null,
+    notificationSetId: java.lang.String = null
+  ): NotificationSet = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (notification != null) __obj.updateDynamic("notification")(notification)
+    if (notificationSetId != null) __obj.updateDynamic("notificationSetId")(notificationSetId)
+    __obj.asInstanceOf[NotificationSet]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Anon_Description extends js.Object {
   val Wb: activexDashExcelLib.ExcelNs.Workbook
 }
 
+object Anon_Description {
+  @scala.inline
+  def apply(
+    Description: java.lang.String,
+    Sheet: java.lang.String,
+    Success: scala.Boolean,
+    Wb: activexDashExcelLib.ExcelNs.Workbook
+  ): Anon_Description = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("Sheet")(Sheet)
+    __obj.updateDynamic("Success")(Success)
+    __obj.updateDynamic("Wb")(Wb)
+    __obj.asInstanceOf[Anon_Description]
+  }
+}
+

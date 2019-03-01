@@ -322,3 +322,24 @@ import scala.scalajs.js.annotation._
   override def getPropertySetInfo(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo
 }
 
+object TableCellStyle {
+  @scala.inline
+  def apply(
+    CellProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellProperties = null,
+    CharacterProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterProperties = null,
+    CharacterPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesAsian = null,
+    CharacterPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesComplex = null,
+    ParagraphProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphProperties = null,
+    Style: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.Style = null
+  ): TableCellStyle = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CellProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Style)
+    __obj.asInstanceOf[TableCellStyle]
+  }
+}
+

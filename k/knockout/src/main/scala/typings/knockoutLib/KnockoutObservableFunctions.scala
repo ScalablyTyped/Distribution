@@ -15,3 +15,12 @@ trait KnockoutObservableFunctions[T] extends js.Object {
   def equalityComparer(a: T, b: T): scala.Boolean
 }
 
+object KnockoutObservableFunctions {
+  @scala.inline
+  def apply[T](equalityComparer: js.Function2[T, T, scala.Boolean]): KnockoutObservableFunctions[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("equalityComparer")(equalityComparer)
+    __obj.asInstanceOf[KnockoutObservableFunctions[T]]
+  }
+}
+

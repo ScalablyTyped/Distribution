@@ -114,3 +114,20 @@ trait AppEngineRouting extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppEngineRouting {
+  @scala.inline
+  def apply(
+    host: java.lang.String = null,
+    instance: java.lang.String = null,
+    service: java.lang.String = null,
+    version: java.lang.String = null
+  ): AppEngineRouting = {
+    val __obj = js.Dynamic.literal()
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[AppEngineRouting]
+  }
+}
+

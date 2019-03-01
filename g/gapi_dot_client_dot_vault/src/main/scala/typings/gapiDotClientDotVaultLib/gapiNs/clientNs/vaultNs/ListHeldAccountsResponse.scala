@@ -10,3 +10,12 @@ trait ListHeldAccountsResponse extends js.Object {
   var accounts: js.UndefOr[js.Array[HeldAccount]] = js.undefined
 }
 
+object ListHeldAccountsResponse {
+  @scala.inline
+  def apply(accounts: js.Array[HeldAccount] = null): ListHeldAccountsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (accounts != null) __obj.updateDynamic("accounts")(accounts)
+    __obj.asInstanceOf[ListHeldAccountsResponse]
+  }
+}
+

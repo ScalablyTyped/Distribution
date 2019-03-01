@@ -19,3 +19,26 @@ trait ActionButtonProps extends js.Object {
   ] = js.undefined
 }
 
+object ActionButtonProps {
+  @scala.inline
+  def apply(
+    actions: js.Array[java.lang.String] | js.Array[reactLib.reactMod.Global.JSXNs.Element] | js.Array[reactDashNativeDashMaterialDashUiLib.Anon_Icon] = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    onLongPress: js.Function0[scala.Unit] = null,
+    onPress: js.Function0[scala.Unit] = null,
+    style: reactDashNativeDashMaterialDashUiLib.Anon_Container = null,
+    transition: reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.toolbar | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.speedDial = null
+  ): ActionButtonProps = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActionButtonProps]
+  }
+}
+

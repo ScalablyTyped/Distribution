@@ -10,3 +10,13 @@ trait Anon_Index extends js.Object {
   var stack: js.Array[pixiDotJsLib.PIXINs.FilterDataStackItem]
 }
 
+object Anon_Index {
+  @scala.inline
+  def apply(index: scala.Double, stack: js.Array[pixiDotJsLib.PIXINs.FilterDataStackItem]): Anon_Index = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[Anon_Index]
+  }
+}
+

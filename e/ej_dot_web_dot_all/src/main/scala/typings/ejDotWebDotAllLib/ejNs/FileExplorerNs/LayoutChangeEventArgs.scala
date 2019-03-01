@@ -23,3 +23,22 @@ trait LayoutChangeEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LayoutChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    isInteraction: js.UndefOr[scala.Boolean] = js.undefined,
+    layoutType: java.lang.String = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): LayoutChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction)
+    if (layoutType != null) __obj.updateDynamic("layoutType")(layoutType)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[LayoutChangeEventArgs]
+  }
+}
+

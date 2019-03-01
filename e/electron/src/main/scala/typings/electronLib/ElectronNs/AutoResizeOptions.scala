@@ -18,3 +18,13 @@ trait AutoResizeOptions extends js.Object {
   var width: scala.Boolean
 }
 
+object AutoResizeOptions {
+  @scala.inline
+  def apply(height: scala.Boolean, width: scala.Boolean): AutoResizeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[AutoResizeOptions]
+  }
+}
+

@@ -31,3 +31,18 @@ trait TokenDetails extends js.Object {
   var scopes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TokenDetails {
+  @scala.inline
+  def apply(
+    account: AccountInfo = null,
+    interactive: js.UndefOr[scala.Boolean] = js.undefined,
+    scopes: js.Array[java.lang.String] = null
+  ): TokenDetails = {
+    val __obj = js.Dynamic.literal()
+    if (account != null) __obj.updateDynamic("account")(account)
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    __obj.asInstanceOf[TokenDetails]
+  }
+}
+

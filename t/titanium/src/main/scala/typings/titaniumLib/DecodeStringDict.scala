@@ -27,3 +27,20 @@ trait DecodeStringDict extends js.Object {
   var source: titaniumLib.TitaniumNs.Buffer
 }
 
+object DecodeStringDict {
+  @scala.inline
+  def apply(
+    source: titaniumLib.TitaniumNs.Buffer,
+    charset: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    position: scala.Int | scala.Double = null
+  ): DecodeStringDict = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    if (charset != null) __obj.updateDynamic("charset")(charset)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DecodeStringDict]
+  }
+}
+

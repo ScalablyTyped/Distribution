@@ -40,3 +40,42 @@ trait Options extends js.Object {
   var use: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    append: js.Array[_] = null,
+    camelCase: js.UndefOr[scala.Boolean] = js.undefined,
+    createImportedName: js.Function = null,
+    devMode: js.UndefOr[scala.Boolean] = js.undefined,
+    extensions: java.lang.String | js.Array[java.lang.String] = null,
+    generateScopedName: java.lang.String | js.Function = null,
+    hashPrefix: java.lang.String = null,
+    ignore: java.lang.String | stdLib.RegExp | (js.Function1[/* filepath */ java.lang.String, scala.Boolean]) = null,
+    mode: java.lang.String = null,
+    prepend: js.Array[_] = null,
+    preprocessCss: js.Function = null,
+    processCss: js.Function = null,
+    processorOpts: js.Object = null,
+    rootDir: java.lang.String = null,
+    use: js.Array[_] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (append != null) __obj.updateDynamic("append")(append)
+    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase)
+    if (createImportedName != null) __obj.updateDynamic("createImportedName")(createImportedName)
+    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (generateScopedName != null) __obj.updateDynamic("generateScopedName")(generateScopedName.asInstanceOf[js.Any])
+    if (hashPrefix != null) __obj.updateDynamic("hashPrefix")(hashPrefix)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (prepend != null) __obj.updateDynamic("prepend")(prepend)
+    if (preprocessCss != null) __obj.updateDynamic("preprocessCss")(preprocessCss)
+    if (processCss != null) __obj.updateDynamic("processCss")(processCss)
+    if (processorOpts != null) __obj.updateDynamic("processorOpts")(processorOpts)
+    if (rootDir != null) __obj.updateDynamic("rootDir")(rootDir)
+    if (use != null) __obj.updateDynamic("use")(use)
+    __obj.asInstanceOf[Options]
+  }
+}
+

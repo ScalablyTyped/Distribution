@@ -18,3 +18,23 @@ import scala.scalajs.js.annotation._
   var style: reactLib.reactMod.ReactNs.CSSProperties
 }
 
+object AutosizeInputProps {
+  @scala.inline
+  def apply(
+    style: reactLib.reactMod.ReactNs.CSSProperties,
+    inputClassName: java.lang.String = null,
+    inputRef: reactLib.reactMod.ReactNs.LegacyRef[reactLib.HTMLInputElement] = null,
+    inputStyle: stdLib.Pick[
+      reactLib.reactMod.ReactNs.CSSProperties, 
+      reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.boxSizing | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.width
+    ] = null
+  ): AutosizeInputProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("style")(style)
+    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle)
+    __obj.asInstanceOf[AutosizeInputProps]
+  }
+}
+

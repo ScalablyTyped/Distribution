@@ -52,3 +52,30 @@ trait LocationCoordinates extends js.Object {
   var timestamp: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LocationCoordinates {
+  @scala.inline
+  def apply(
+    accuracy: scala.Int | scala.Double = null,
+    altitude: scala.Int | scala.Double = null,
+    altitudeAccuracy: scala.Int | scala.Double = null,
+    floor: LocationCoordinatesFloor = null,
+    heading: scala.Int | scala.Double = null,
+    latitude: scala.Int | scala.Double = null,
+    longitude: scala.Int | scala.Double = null,
+    speed: scala.Int | scala.Double = null,
+    timestamp: scala.Int | scala.Double = null
+  ): LocationCoordinates = {
+    val __obj = js.Dynamic.literal()
+    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (altitudeAccuracy != null) __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy.asInstanceOf[js.Any])
+    if (floor != null) __obj.updateDynamic("floor")(floor)
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocationCoordinates]
+  }
+}
+

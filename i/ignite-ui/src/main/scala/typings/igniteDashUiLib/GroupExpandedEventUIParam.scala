@@ -16,3 +16,13 @@ trait GroupExpandedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object GroupExpandedEventUIParam {
+  @scala.inline
+  def apply(element: java.lang.String = null, owner: js.Any = null): GroupExpandedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[GroupExpandedEventUIParam]
+  }
+}
+

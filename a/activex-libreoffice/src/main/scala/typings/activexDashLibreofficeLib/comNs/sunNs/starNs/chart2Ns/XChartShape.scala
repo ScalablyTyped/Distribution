@@ -30,3 +30,38 @@ trait XChartShape
   def setSize(aSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size): scala.Unit
 }
 
+object XChartShape {
+  @scala.inline
+  def apply(
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    ShapeType: java.lang.String,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    acquire: js.Function0[scala.Unit],
+    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getShapeType: js.Function0[java.lang.String],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
+  ): XChartShape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("ShapeType")(ShapeType)
+    __obj.updateDynamic("Size")(Size)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getPosition")(getPosition)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getShapeType")(getShapeType)
+    __obj.updateDynamic("getSize")(getSize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setPosition")(setPosition)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setSize")(setSize)
+    __obj.asInstanceOf[XChartShape]
+  }
+}
+

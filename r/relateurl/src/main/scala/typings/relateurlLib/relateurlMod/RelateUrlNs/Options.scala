@@ -97,3 +97,36 @@ trait Options extends js.Object {
   var slashesDenoteHost: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    defaultPorts: js.Object = null,
+    directoryIndexes: js.Array[java.lang.String] = null,
+    ignore_www: js.UndefOr[scala.Boolean] = js.undefined,
+    output: java.lang.String = null,
+    rejectedSchemes: js.Array[java.lang.String] = null,
+    removeAuth: js.UndefOr[scala.Boolean] = js.undefined,
+    removeDirectoryIndexes: js.UndefOr[scala.Boolean] = js.undefined,
+    removeEmptyQueries: js.UndefOr[scala.Boolean] = js.undefined,
+    removeRootTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined,
+    schemeRelative: js.UndefOr[scala.Boolean] = js.undefined,
+    site: java.lang.String = null,
+    slashesDenoteHost: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (defaultPorts != null) __obj.updateDynamic("defaultPorts")(defaultPorts)
+    if (directoryIndexes != null) __obj.updateDynamic("directoryIndexes")(directoryIndexes)
+    if (!js.isUndefined(ignore_www)) __obj.updateDynamic("ignore_www")(ignore_www)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (rejectedSchemes != null) __obj.updateDynamic("rejectedSchemes")(rejectedSchemes)
+    if (!js.isUndefined(removeAuth)) __obj.updateDynamic("removeAuth")(removeAuth)
+    if (!js.isUndefined(removeDirectoryIndexes)) __obj.updateDynamic("removeDirectoryIndexes")(removeDirectoryIndexes)
+    if (!js.isUndefined(removeEmptyQueries)) __obj.updateDynamic("removeEmptyQueries")(removeEmptyQueries)
+    if (!js.isUndefined(removeRootTrailingSlash)) __obj.updateDynamic("removeRootTrailingSlash")(removeRootTrailingSlash)
+    if (!js.isUndefined(schemeRelative)) __obj.updateDynamic("schemeRelative")(schemeRelative)
+    if (site != null) __obj.updateDynamic("site")(site)
+    if (!js.isUndefined(slashesDenoteHost)) __obj.updateDynamic("slashesDenoteHost")(slashesDenoteHost)
+    __obj.asInstanceOf[Options]
+  }
+}
+

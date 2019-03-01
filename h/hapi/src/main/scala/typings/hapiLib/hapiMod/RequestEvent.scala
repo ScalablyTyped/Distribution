@@ -18,3 +18,22 @@ trait RequestEvent extends js.Object {
   var timestamp: java.lang.String
 }
 
+object RequestEvent {
+  @scala.inline
+  def apply(
+    channel: hapiLib.hapiLibStrings.internal | hapiLib.hapiLibStrings.app | hapiLib.hapiLibStrings.error,
+    data: js.Object,
+    error: js.Object,
+    tags: js.Array[java.lang.String],
+    timestamp: java.lang.String
+  ): RequestEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[RequestEvent]
+  }
+}
+

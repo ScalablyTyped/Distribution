@@ -30,3 +30,28 @@ trait IAddress extends js.Object {
   var postalCode: java.lang.String
 }
 
+object IAddress {
+  @scala.inline
+  def apply(
+    addressLine: java.lang.String,
+    adminDistrict: java.lang.String,
+    countryRegion: java.lang.String,
+    countryRegionISO2: java.lang.String,
+    district: java.lang.String,
+    formattedAddress: java.lang.String,
+    locality: java.lang.String,
+    postalCode: java.lang.String
+  ): IAddress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addressLine")(addressLine)
+    __obj.updateDynamic("adminDistrict")(adminDistrict)
+    __obj.updateDynamic("countryRegion")(countryRegion)
+    __obj.updateDynamic("countryRegionISO2")(countryRegionISO2)
+    __obj.updateDynamic("district")(district)
+    __obj.updateDynamic("formattedAddress")(formattedAddress)
+    __obj.updateDynamic("locality")(locality)
+    __obj.updateDynamic("postalCode")(postalCode)
+    __obj.asInstanceOf[IAddress]
+  }
+}
+

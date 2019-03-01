@@ -15,3 +15,26 @@ trait FieldAttributes extends js.Object {
   var qnDec: qlikLib.qlikLibNumbers.`0` | qlikLib.qlikLibNumbers.`1` | qlikLib.qlikLibNumbers.`2` | qlikLib.qlikLibNumbers.`3` | qlikLib.qlikLibNumbers.`4` | qlikLib.qlikLibNumbers.`5` | qlikLib.qlikLibNumbers.`6` | qlikLib.qlikLibNumbers.`7` | qlikLib.qlikLibNumbers.`8` | qlikLib.qlikLibNumbers.`9` | qlikLib.qlikLibNumbers.`10` | qlikLib.qlikLibNumbers.`11` | qlikLib.qlikLibNumbers.`12` | qlikLib.qlikLibNumbers.`13` | qlikLib.qlikLibNumbers.`14` | qlikLib.qlikLibNumbers.`15`
 }
 
+object FieldAttributes {
+  @scala.inline
+  def apply(
+    qDec: java.lang.String,
+    qFmt: java.lang.String,
+    qSAFEARRAY: js.Array[_],
+    qThou: java.lang.String,
+    qType: qlikLib.qlikLibStrings.U | qlikLib.qlikLibStrings.A | qlikLib.qlikLibStrings.I | qlikLib.qlikLibStrings.R | qlikLib.qlikLibStrings.F | qlikLib.qlikLibStrings.M | qlikLib.qlikLibStrings.D | qlikLib.qlikLibStrings.T | qlikLib.qlikLibStrings.TS | qlikLib.qlikLibStrings.IV,
+    qUseThou: qlikLib.qlikLibNumbers.`0` | qlikLib.qlikLibNumbers.`1`,
+    qnDec: qlikLib.qlikLibNumbers.`0` | qlikLib.qlikLibNumbers.`1` | qlikLib.qlikLibNumbers.`2` | qlikLib.qlikLibNumbers.`3` | qlikLib.qlikLibNumbers.`4` | qlikLib.qlikLibNumbers.`5` | qlikLib.qlikLibNumbers.`6` | qlikLib.qlikLibNumbers.`7` | qlikLib.qlikLibNumbers.`8` | qlikLib.qlikLibNumbers.`9` | qlikLib.qlikLibNumbers.`10` | qlikLib.qlikLibNumbers.`11` | qlikLib.qlikLibNumbers.`12` | qlikLib.qlikLibNumbers.`13` | qlikLib.qlikLibNumbers.`14` | qlikLib.qlikLibNumbers.`15`
+  ): FieldAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qDec")(qDec)
+    __obj.updateDynamic("qFmt")(qFmt)
+    __obj.updateDynamic("qSAFEARRAY")(qSAFEARRAY)
+    __obj.updateDynamic("qThou")(qThou)
+    __obj.updateDynamic("qType")(qType.asInstanceOf[js.Any])
+    __obj.updateDynamic("qUseThou")(qUseThou.asInstanceOf[js.Any])
+    __obj.updateDynamic("qnDec")(qnDec.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FieldAttributes]
+  }
+}
+

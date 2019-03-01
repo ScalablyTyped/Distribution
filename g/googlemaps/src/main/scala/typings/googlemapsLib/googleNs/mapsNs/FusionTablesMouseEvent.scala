@@ -12,3 +12,20 @@ trait FusionTablesMouseEvent extends js.Object {
   var row: js.UndefOr[js.Object] = js.undefined
 }
 
+object FusionTablesMouseEvent {
+  @scala.inline
+  def apply(
+    infoWindowHtml: java.lang.String = null,
+    latLng: LatLng = null,
+    pixelOffset: Size = null,
+    row: js.Object = null
+  ): FusionTablesMouseEvent = {
+    val __obj = js.Dynamic.literal()
+    if (infoWindowHtml != null) __obj.updateDynamic("infoWindowHtml")(infoWindowHtml)
+    if (latLng != null) __obj.updateDynamic("latLng")(latLng)
+    if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset)
+    if (row != null) __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[FusionTablesMouseEvent]
+  }
+}
+

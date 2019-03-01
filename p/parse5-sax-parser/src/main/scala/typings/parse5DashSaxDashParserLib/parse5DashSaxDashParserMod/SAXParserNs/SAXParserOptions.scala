@@ -14,3 +14,12 @@ trait SAXParserOptions extends js.Object {
   var sourceCodeLocationInfo: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SAXParserOptions {
+  @scala.inline
+  def apply(sourceCodeLocationInfo: js.UndefOr[scala.Boolean] = js.undefined): SAXParserOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(sourceCodeLocationInfo)) __obj.updateDynamic("sourceCodeLocationInfo")(sourceCodeLocationInfo)
+    __obj.asInstanceOf[SAXParserOptions]
+  }
+}
+

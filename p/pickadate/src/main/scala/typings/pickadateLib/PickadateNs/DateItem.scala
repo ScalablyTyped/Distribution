@@ -28,3 +28,24 @@ trait DateItem extends Item {
   var year: scala.Double
 }
 
+object DateItem {
+  @scala.inline
+  def apply(
+    date: scala.Double,
+    day: scala.Double,
+    month: scala.Double,
+    obj: stdLib.Date,
+    pick: scala.Double,
+    year: scala.Double
+  ): DateItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("day")(day)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("obj")(obj)
+    __obj.updateDynamic("pick")(pick)
+    __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[DateItem]
+  }
+}
+

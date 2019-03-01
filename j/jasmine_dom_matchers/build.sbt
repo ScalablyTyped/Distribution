@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jasmine_dom_matchers"
-version := "1.4-dt-20190212Z-1b60be"
+version := "1.4-dt-20190212Z-bf706e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190212Z-6c7283",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190212Z-ae174c",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -50,3 +50,20 @@ trait Release extends js.Object {
   var updateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Release {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    name: java.lang.String = null,
+    rulesetName: java.lang.String = null,
+    updateTime: java.lang.String = null
+  ): Release = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (rulesetName != null) __obj.updateDynamic("rulesetName")(rulesetName)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    __obj.asInstanceOf[Release]
+  }
+}
+

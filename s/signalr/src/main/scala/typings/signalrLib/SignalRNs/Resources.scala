@@ -33,3 +33,62 @@ trait Resources extends js.Object {
   var webSocketsInvalidState: java.lang.String
 }
 
+object Resources {
+  @scala.inline
+  def apply(
+    errorDuringStartRequest: java.lang.String,
+    errorOnNegotiate: java.lang.String,
+    errorParsingNegotiateResponse: java.lang.String,
+    errorParsingStartResponse: java.lang.String,
+    eventSourceError: java.lang.String,
+    eventSourceFailedToConnect: java.lang.String,
+    invalidStartResponse: java.lang.String,
+    longPollFailed: java.lang.String,
+    noConnectionTransport: java.lang.String,
+    noTransportOnInit: java.lang.String,
+    nojQuery: java.lang.String,
+    parseFailed: java.lang.String,
+    pingServerFailed: java.lang.String,
+    pingServerFailedInvalidResponse: java.lang.String,
+    pingServerFailedParse: java.lang.String,
+    pingServerFailedStatusCode: java.lang.String,
+    protocolIncompatible: java.lang.String,
+    reconnectTimeout: java.lang.String,
+    reconnectWindowTimeout: java.lang.String,
+    sendFailed: java.lang.String,
+    stoppedDuringStartRequest: java.lang.String,
+    stoppedWhileLoading: java.lang.String,
+    stoppedWhileNegotiating: java.lang.String,
+    webSocketClosed: java.lang.String,
+    webSocketsInvalidState: java.lang.String
+  ): Resources = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorDuringStartRequest")(errorDuringStartRequest)
+    __obj.updateDynamic("errorOnNegotiate")(errorOnNegotiate)
+    __obj.updateDynamic("errorParsingNegotiateResponse")(errorParsingNegotiateResponse)
+    __obj.updateDynamic("errorParsingStartResponse")(errorParsingStartResponse)
+    __obj.updateDynamic("eventSourceError")(eventSourceError)
+    __obj.updateDynamic("eventSourceFailedToConnect")(eventSourceFailedToConnect)
+    __obj.updateDynamic("invalidStartResponse")(invalidStartResponse)
+    __obj.updateDynamic("longPollFailed")(longPollFailed)
+    __obj.updateDynamic("noConnectionTransport")(noConnectionTransport)
+    __obj.updateDynamic("noTransportOnInit")(noTransportOnInit)
+    __obj.updateDynamic("nojQuery")(nojQuery)
+    __obj.updateDynamic("parseFailed")(parseFailed)
+    __obj.updateDynamic("pingServerFailed")(pingServerFailed)
+    __obj.updateDynamic("pingServerFailedInvalidResponse")(pingServerFailedInvalidResponse)
+    __obj.updateDynamic("pingServerFailedParse")(pingServerFailedParse)
+    __obj.updateDynamic("pingServerFailedStatusCode")(pingServerFailedStatusCode)
+    __obj.updateDynamic("protocolIncompatible")(protocolIncompatible)
+    __obj.updateDynamic("reconnectTimeout")(reconnectTimeout)
+    __obj.updateDynamic("reconnectWindowTimeout")(reconnectWindowTimeout)
+    __obj.updateDynamic("sendFailed")(sendFailed)
+    __obj.updateDynamic("stoppedDuringStartRequest")(stoppedDuringStartRequest)
+    __obj.updateDynamic("stoppedWhileLoading")(stoppedWhileLoading)
+    __obj.updateDynamic("stoppedWhileNegotiating")(stoppedWhileNegotiating)
+    __obj.updateDynamic("webSocketClosed")(webSocketClosed)
+    __obj.updateDynamic("webSocketsInvalidState")(webSocketsInvalidState)
+    __obj.asInstanceOf[Resources]
+  }
+}
+

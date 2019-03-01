@@ -21,3 +21,20 @@ trait SheetsCFormatRule extends js.Object {
   var range: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SheetsCFormatRule {
+  @scala.inline
+  def apply(
+    action: CFormatRule | java.lang.String = null,
+    color: CFormatHighlightColor | java.lang.String = null,
+    inputs: js.Array[_] = null,
+    range: java.lang.String = null
+  ): SheetsCFormatRule = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[SheetsCFormatRule]
+  }
+}
+

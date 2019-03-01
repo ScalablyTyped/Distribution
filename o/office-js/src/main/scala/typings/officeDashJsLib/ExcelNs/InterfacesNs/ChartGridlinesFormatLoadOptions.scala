@@ -23,3 +23,13 @@ trait ChartGridlinesFormatLoadOptions extends js.Object {
   var line: js.UndefOr[ChartLineFormatLoadOptions] = js.undefined
 }
 
+object ChartGridlinesFormatLoadOptions {
+  @scala.inline
+  def apply($all: js.UndefOr[scala.Boolean] = js.undefined, line: ChartLineFormatLoadOptions = null): ChartGridlinesFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (line != null) __obj.updateDynamic("line")(line)
+    __obj.asInstanceOf[ChartGridlinesFormatLoadOptions]
+  }
+}
+

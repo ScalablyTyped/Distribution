@@ -24,3 +24,18 @@ trait Options extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    format: haversineLib.haversineLibStrings.`[lat,lon]` | haversineLib.haversineLibStrings.`[lon,lat]` | haversineLib.haversineLibStrings.`{lon,lat}` | haversineLib.haversineLibStrings.geojson = null,
+    threshold: scala.Int | scala.Double = null,
+    unit: haversineLib.haversineLibStrings.km | haversineLib.haversineLibStrings.mile | haversineLib.haversineLibStrings.meter | haversineLib.haversineLibStrings.nmi = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

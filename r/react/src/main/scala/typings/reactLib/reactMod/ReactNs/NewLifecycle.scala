@@ -37,3 +37,25 @@ trait NewLifecycle[P, S, SS] extends js.Object {
   ] = js.undefined
 }
 
+object NewLifecycle {
+  @scala.inline
+  def apply[P, S, SS](
+    componentDidUpdate: js.Function3[
+      /* prevProps */ stdLib.Readonly[P], 
+      /* prevState */ stdLib.Readonly[S], 
+      /* snapshot */ js.UndefOr[SS], 
+      scala.Unit
+    ] = null,
+    getSnapshotBeforeUpdate: js.Function2[
+      /* prevProps */ stdLib.Readonly[P], 
+      /* prevState */ stdLib.Readonly[S], 
+      SS | scala.Null
+    ] = null
+  ): NewLifecycle[P, S, SS] = {
+    val __obj = js.Dynamic.literal()
+    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(componentDidUpdate)
+    if (getSnapshotBeforeUpdate != null) __obj.updateDynamic("getSnapshotBeforeUpdate")(getSnapshotBeforeUpdate)
+    __obj.asInstanceOf[NewLifecycle[P, S, SS]]
+  }
+}
+

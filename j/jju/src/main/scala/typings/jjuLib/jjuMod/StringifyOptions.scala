@@ -39,7 +39,7 @@ trait StringifyOptions extends js.Object {
     * - If `mode` is 'json', default is "
     * - Otherwise, default is '
     */
-  var quote: js.UndefOr[jjuLib.jjuLibStrings.BACKSLASH | jjuLib.jjuLibStrings.`'`] = js.undefined
+  var quote: js.UndefOr[jjuLib.jjuLibStrings.BACKSLASH | jjuLib.jjuLibStrings._quote] = js.undefined
   /**
     * Whether keys quoting in objects is required or not.
     * If you want `{"q": 1}` instead of `{q: 1}`, set it to true.
@@ -63,5 +63,30 @@ trait StringifyOptions extends js.Object {
     * @default false
     */
   var sort_keys: js.UndefOr[scala.Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double])] = js.undefined
+}
+
+object StringifyOptions {
+  @scala.inline
+  def apply(
+    ascii: js.UndefOr[scala.Boolean] = js.undefined,
+    indent: java.lang.String | scala.Double | scala.Boolean = null,
+    mode: jjuLib.jjuLibStrings.json | jjuLib.jjuLibStrings.json5 | jjuLib.jjuLibStrings.cjson = null,
+    no_trailing_comma: js.UndefOr[scala.Boolean] = js.undefined,
+    quote: jjuLib.jjuLibStrings.BACKSLASH | jjuLib.jjuLibStrings._quote = null,
+    quote_keys: js.UndefOr[scala.Boolean] = js.undefined,
+    replacer: (js.Function2[/* key */ java.lang.String, /* value */ js.Any, _]) | (js.Array[scala.Double | java.lang.String]) = null,
+    sort_keys: scala.Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double]) = null
+  ): StringifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ascii)) __obj.updateDynamic("ascii")(ascii)
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(no_trailing_comma)) __obj.updateDynamic("no_trailing_comma")(no_trailing_comma)
+    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
+    if (!js.isUndefined(quote_keys)) __obj.updateDynamic("quote_keys")(quote_keys)
+    if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
+    if (sort_keys != null) __obj.updateDynamic("sort_keys")(sort_keys.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StringifyOptions]
+  }
 }
 

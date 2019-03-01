@@ -17,3 +17,18 @@ trait AmpUrl extends js.Object {
   var originalUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AmpUrl {
+  @scala.inline
+  def apply(
+    ampUrl: java.lang.String = null,
+    cdnAmpUrl: java.lang.String = null,
+    originalUrl: java.lang.String = null
+  ): AmpUrl = {
+    val __obj = js.Dynamic.literal()
+    if (ampUrl != null) __obj.updateDynamic("ampUrl")(ampUrl)
+    if (cdnAmpUrl != null) __obj.updateDynamic("cdnAmpUrl")(cdnAmpUrl)
+    if (originalUrl != null) __obj.updateDynamic("originalUrl")(originalUrl)
+    __obj.asInstanceOf[AmpUrl]
+  }
+}
+

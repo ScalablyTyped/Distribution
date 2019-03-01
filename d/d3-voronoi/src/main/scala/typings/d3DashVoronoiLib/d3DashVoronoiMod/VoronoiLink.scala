@@ -16,3 +16,13 @@ trait VoronoiLink[T] extends js.Object {
   var target: T
 }
 
+object VoronoiLink {
+  @scala.inline
+  def apply[T](source: T, target: T): VoronoiLink[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VoronoiLink[T]]
+  }
+}
+

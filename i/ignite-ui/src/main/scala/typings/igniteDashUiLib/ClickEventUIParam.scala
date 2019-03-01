@@ -12,3 +12,12 @@ trait ClickEventUIParam extends js.Object {
   var item: js.UndefOr[js.Any] = js.undefined
 }
 
+object ClickEventUIParam {
+  @scala.inline
+  def apply(item: js.Any = null): ClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (item != null) __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[ClickEventUIParam]
+  }
+}
+

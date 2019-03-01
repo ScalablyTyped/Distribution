@@ -10,3 +10,12 @@ trait SetFontSizeDetails extends js.Object {
   var pixelSize: scala.Double
 }
 
+object SetFontSizeDetails {
+  @scala.inline
+  def apply(pixelSize: scala.Double): SetFontSizeDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pixelSize")(pixelSize)
+    __obj.asInstanceOf[SetFontSizeDetails]
+  }
+}
+

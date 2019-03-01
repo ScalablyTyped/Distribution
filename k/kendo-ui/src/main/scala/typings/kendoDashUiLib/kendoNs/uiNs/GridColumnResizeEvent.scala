@@ -11,3 +11,24 @@ trait GridColumnResizeEvent extends GridEvent {
   var oldWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GridColumnResizeEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Grid,
+    column: js.Any = null,
+    newWidth: scala.Int | scala.Double = null,
+    oldWidth: scala.Int | scala.Double = null
+  ): GridColumnResizeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
+    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridColumnResizeEvent]
+  }
+}
+

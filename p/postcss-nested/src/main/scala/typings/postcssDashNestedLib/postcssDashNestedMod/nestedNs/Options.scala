@@ -23,3 +23,18 @@ trait Options extends js.Object {
   var unwrap: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    bubble: js.Array[java.lang.String] = null,
+    preserveEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    unwrap: js.Array[java.lang.String] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (bubble != null) __obj.updateDynamic("bubble")(bubble)
+    if (!js.isUndefined(preserveEmpty)) __obj.updateDynamic("preserveEmpty")(preserveEmpty)
+    if (unwrap != null) __obj.updateDynamic("unwrap")(unwrap)
+    __obj.asInstanceOf[Options]
+  }
+}
+

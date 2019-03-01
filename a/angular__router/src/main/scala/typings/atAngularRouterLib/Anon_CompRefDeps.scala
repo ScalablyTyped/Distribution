@@ -19,3 +19,28 @@ trait Anon_CompRefDeps extends js.Object {
   var useFactory: js.UndefOr[scala.Nothing] = js.undefined
 }
 
+object Anon_CompRefDeps {
+  @scala.inline
+  def apply(
+    multi: scala.Boolean,
+    provide: atAngularCoreLib.atAngularCoreMod.InjectionToken[
+      js.Array[
+        js.Function1[/* compRef */ atAngularCoreLib.atAngularCoreMod.ComponentRef[_], scala.Unit]
+      ]
+    ],
+    useExisting: atAngularCoreLib.atAngularCoreMod.InjectionToken[
+      js.Function1[/* compRef */ atAngularCoreLib.atAngularCoreMod.ComponentRef[_], scala.Unit]
+    ],
+    deps: js.UndefOr[scala.Nothing] = js.undefined,
+    useFactory: js.UndefOr[scala.Nothing] = js.undefined
+  ): Anon_CompRefDeps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("multi")(multi)
+    __obj.updateDynamic("provide")(provide)
+    __obj.updateDynamic("useExisting")(useExisting)
+    if (!js.isUndefined(deps)) __obj.updateDynamic("deps")(deps)
+    if (!js.isUndefined(useFactory)) __obj.updateDynamic("useFactory")(useFactory)
+    __obj.asInstanceOf[Anon_CompRefDeps]
+  }
+}
+

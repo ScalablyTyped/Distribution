@@ -40,3 +40,38 @@ trait Anon_AltFieldsGroupByTag extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltFieldsGroupByTag {
+  @scala.inline
+  def apply(
+    leaseSecs: scala.Double,
+    numTasks: scala.Double,
+    project: java.lang.String,
+    taskqueue: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    groupByTag: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    tag: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltFieldsGroupByTag = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("leaseSecs")(leaseSecs)
+    __obj.updateDynamic("numTasks")(numTasks)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("taskqueue")(taskqueue)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(groupByTag)) __obj.updateDynamic("groupByTag")(groupByTag)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltFieldsGroupByTag]
+  }
+}
+

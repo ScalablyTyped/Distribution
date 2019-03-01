@@ -51,3 +51,44 @@ trait TextMarkerOptions extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TextMarkerOptions {
+  @scala.inline
+  def apply(
+    addToHistory: js.UndefOr[scala.Boolean] = js.undefined,
+    atomic: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    clearOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    clearWhenEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    css: java.lang.String = null,
+    endStyle: java.lang.String = null,
+    handleMouseEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    inclusiveLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    inclusiveRight: js.UndefOr[scala.Boolean] = js.undefined,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    replacedWith: stdLib.HTMLElement = null,
+    shared: js.UndefOr[scala.Boolean] = js.undefined,
+    startStyle: java.lang.String = null,
+    title: java.lang.String = null
+  ): TextMarkerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addToHistory)) __obj.updateDynamic("addToHistory")(addToHistory)
+    if (!js.isUndefined(atomic)) __obj.updateDynamic("atomic")(atomic)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(clearOnEnter)) __obj.updateDynamic("clearOnEnter")(clearOnEnter)
+    if (!js.isUndefined(clearWhenEmpty)) __obj.updateDynamic("clearWhenEmpty")(clearWhenEmpty)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (endStyle != null) __obj.updateDynamic("endStyle")(endStyle)
+    if (!js.isUndefined(handleMouseEvents)) __obj.updateDynamic("handleMouseEvents")(handleMouseEvents)
+    if (!js.isUndefined(inclusiveLeft)) __obj.updateDynamic("inclusiveLeft")(inclusiveLeft)
+    if (!js.isUndefined(inclusiveRight)) __obj.updateDynamic("inclusiveRight")(inclusiveRight)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (replacedWith != null) __obj.updateDynamic("replacedWith")(replacedWith)
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
+    if (startStyle != null) __obj.updateDynamic("startStyle")(startStyle)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[TextMarkerOptions]
+  }
+}
+

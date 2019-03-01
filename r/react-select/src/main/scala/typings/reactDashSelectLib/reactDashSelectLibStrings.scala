@@ -7,40 +7,51 @@ import scala.scalajs.js.annotation._
 
 object reactDashSelectLibStrings {
   @js.native
-  sealed trait absolute extends js.Object
+  sealed trait absolute
+    extends reactDashSelectLib.libTypesMod.MenuPosition
   
   @js.native
   sealed trait any extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends reactDashSelectLib.libTypesMod.MenuPlacement
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashSelectLib.libTypesMod.MenuPlacement
   
   @js.native
-  sealed trait clear extends js.Object
+  sealed trait clear
+    extends reactDashSelectLib.libTypesMod.ActionTypes
   
   @js.native
-  sealed trait `create-option` extends js.Object
+  sealed trait `create-option`
+    extends reactDashSelectLib.libTypesMod.ActionTypes
   
   @js.native
-  sealed trait `deselect-option` extends js.Object
+  sealed trait `deselect-option`
+    extends reactDashSelectLib.libTypesMod.ActionTypes
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends reactDashSelectLib.libTypesMod.FocusDirection
   
   @js.native
-  sealed trait exited extends js.Object
+  sealed trait exited
+    extends reactDashSelectLib.libAnimatedTransitionsMod.TransitionState
   
   @js.native
-  sealed trait exiting extends js.Object
+  sealed trait exiting
+    extends reactDashSelectLib.libAnimatedTransitionsMod.TransitionState
   
   @js.native
-  sealed trait first extends js.Object
+  sealed trait first
+    extends reactDashSelectLib.libTypesMod.FocusDirection
   
   @js.native
-  sealed trait fixed extends js.Object
+  sealed trait fixed
+    extends reactDashSelectLib.libTypesMod.MenuPosition
   
   @js.native
   sealed trait group extends js.Object
@@ -49,22 +60,27 @@ object reactDashSelectLibStrings {
   sealed trait input extends js.Object
   
   @js.native
-  sealed trait `input-blur` extends js.Object
+  sealed trait `input-blur`
+    extends reactDashSelectLib.libTypesMod.InputActionTypes
   
   @js.native
-  sealed trait `input-change` extends js.Object
+  sealed trait `input-change`
+    extends reactDashSelectLib.libTypesMod.InputActionTypes
   
   @js.native
-  sealed trait last extends js.Object
+  sealed trait last
+    extends reactDashSelectLib.libTypesMod.FocusDirection
   
   @js.native
   sealed trait listbox extends js.Object
   
   @js.native
-  sealed trait menu extends js.Object
+  sealed trait menu
+    extends reactDashSelectLib.libSelectMod.FormatOptionLabelContext
   
   @js.native
-  sealed trait `menu-close` extends js.Object
+  sealed trait `menu-close`
+    extends reactDashSelectLib.libTypesMod.InputActionTypes
   
   @js.native
   sealed trait next extends js.Object
@@ -73,37 +89,47 @@ object reactDashSelectLibStrings {
   sealed trait option extends js.Object
   
   @js.native
-  sealed trait pagedown extends js.Object
+  sealed trait pagedown
+    extends reactDashSelectLib.libTypesMod.FocusDirection
   
   @js.native
-  sealed trait pageup extends js.Object
+  sealed trait pageup
+    extends reactDashSelectLib.libTypesMod.FocusDirection
   
   @js.native
-  sealed trait `pop-value` extends js.Object
+  sealed trait `pop-value`
+    extends reactDashSelectLib.libTypesMod.ActionTypes
   
   @js.native
   sealed trait previous extends js.Object
   
   @js.native
-  sealed trait `remove-value` extends js.Object
+  sealed trait `remove-value`
+    extends reactDashSelectLib.libTypesMod.ActionTypes
   
   @js.native
-  sealed trait `select-option` extends js.Object
+  sealed trait `select-option`
+    extends reactDashSelectLib.libTypesMod.ActionTypes
   
   @js.native
-  sealed trait `set-value` extends js.Object
+  sealed trait `set-value`
+    extends reactDashSelectLib.libTypesMod.ActionTypes
+       with reactDashSelectLib.libTypesMod.InputActionTypes
   
   @js.native
   sealed trait start extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashSelectLib.libTypesMod.MenuPlacement
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends reactDashSelectLib.libTypesMod.FocusDirection
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait value
+    extends reactDashSelectLib.libSelectMod.FormatOptionLabelContext
   
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]

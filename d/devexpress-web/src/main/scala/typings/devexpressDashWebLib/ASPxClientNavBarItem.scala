@@ -76,3 +76,40 @@ trait ASPxClientNavBarItem extends js.Object {
   def SetVisible(value: scala.Boolean): scala.Unit
 }
 
+object ASPxClientNavBarItem {
+  @scala.inline
+  def apply(
+    GetEnabled: js.Function0[scala.Boolean],
+    GetImageUrl: js.Function0[java.lang.String],
+    GetNavigateUrl: js.Function0[java.lang.String],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    group: ASPxClientNavBarGroup,
+    index: scala.Double,
+    name: java.lang.String,
+    navBar: ASPxClientNavBar
+  ): ASPxClientNavBarItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetEnabled")(GetEnabled)
+    __obj.updateDynamic("GetImageUrl")(GetImageUrl)
+    __obj.updateDynamic("GetNavigateUrl")(GetNavigateUrl)
+    __obj.updateDynamic("GetText")(GetText)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("SetEnabled")(SetEnabled)
+    __obj.updateDynamic("SetImageUrl")(SetImageUrl)
+    __obj.updateDynamic("SetNavigateUrl")(SetNavigateUrl)
+    __obj.updateDynamic("SetText")(SetText)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("navBar")(navBar)
+    __obj.asInstanceOf[ASPxClientNavBarItem]
+  }
+}
+

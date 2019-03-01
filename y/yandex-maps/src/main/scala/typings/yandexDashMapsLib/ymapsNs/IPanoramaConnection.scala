@@ -9,3 +9,12 @@ trait IPanoramaConnection extends js.Object {
   def getConnectedPanorama(): js.Promise[IPanorama]
 }
 
+object IPanoramaConnection {
+  @scala.inline
+  def apply(getConnectedPanorama: js.Function0[js.Promise[IPanorama]]): IPanoramaConnection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getConnectedPanorama")(getConnectedPanorama)
+    __obj.asInstanceOf[IPanoramaConnection]
+  }
+}
+

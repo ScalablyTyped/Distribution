@@ -55,3 +55,31 @@ trait TopChildrenQuery extends Query {
   def `type`(t: java.lang.String): TopChildrenQuery
 }
 
+object TopChildrenQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, TopChildrenQuery],
+    factor: js.Function1[scala.Double, TopChildrenQuery],
+    incrementalFactor: js.Function1[scala.Double, TopChildrenQuery],
+    query: js.Function1[js.Object, TopChildrenQuery],
+    scope: js.Function1[java.lang.String, TopChildrenQuery],
+    score: js.Function1[java.lang.String, TopChildrenQuery],
+    scoreMode: js.Function1[java.lang.String, TopChildrenQuery],
+    toJSON: js.Function0[js.Any],
+    `type`: js.Function1[java.lang.String, TopChildrenQuery]
+  ): TopChildrenQuery = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("factor")(factor)
+    __obj.updateDynamic("incrementalFactor")(incrementalFactor)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("score")(score)
+    __obj.updateDynamic("scoreMode")(scoreMode)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[TopChildrenQuery]
+  }
+}
+

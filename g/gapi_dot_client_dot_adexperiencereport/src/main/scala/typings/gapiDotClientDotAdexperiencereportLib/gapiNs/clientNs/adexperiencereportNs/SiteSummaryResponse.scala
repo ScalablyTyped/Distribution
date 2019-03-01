@@ -14,3 +14,18 @@ trait SiteSummaryResponse extends js.Object {
   var reviewedSite: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SiteSummaryResponse {
+  @scala.inline
+  def apply(
+    desktopSummary: PlatformSummary = null,
+    mobileSummary: PlatformSummary = null,
+    reviewedSite: java.lang.String = null
+  ): SiteSummaryResponse = {
+    val __obj = js.Dynamic.literal()
+    if (desktopSummary != null) __obj.updateDynamic("desktopSummary")(desktopSummary)
+    if (mobileSummary != null) __obj.updateDynamic("mobileSummary")(mobileSummary)
+    if (reviewedSite != null) __obj.updateDynamic("reviewedSite")(reviewedSite)
+    __obj.asInstanceOf[SiteSummaryResponse]
+  }
+}
+

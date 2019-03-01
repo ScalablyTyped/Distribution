@@ -3416,18 +3416,40 @@ object DMSNs extends js.Object {
     var VpcSecurityGroupId: js.UndefOr[String] = js.undefined
   }
   
+  trait _AuthMechanismValue extends js.Object
+  
+  trait _AuthTypeValue extends js.Object
+  
+  trait _CompressionTypeValue extends js.Object
+  
+  trait _DmsSslModeValue extends js.Object
+  
+  trait _MigrationTypeValue extends js.Object
+  
+  trait _NestingLevelValue extends js.Object
+  
+  trait _RefreshSchemasStatusTypeValue extends js.Object
+  
+  trait _ReloadOptionValue extends js.Object
+  
+  trait _ReplicationEndpointTypeValue extends js.Object
+  
+  trait _StartReplicationTaskTypeValue extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccountQuotaList = js.Array[AccountQuota]
-  type AuthMechanismValue = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.mongodb_cr | awsDashSdkLib.awsDashSdkLibStrings.scram_sha_1 | java.lang.String
-  type AuthTypeValue = awsDashSdkLib.awsDashSdkLibStrings.no | awsDashSdkLib.awsDashSdkLibStrings.password | java.lang.String
+  type AuthMechanismValue = _AuthMechanismValue | java.lang.String
+  type AuthTypeValue = _AuthTypeValue | java.lang.String
   type Boolean = scala.Boolean
   type BooleanOptional = scala.Boolean
   type CertificateList = js.Array[Certificate]
   type CertificateWallet = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsDmsMod.Blob | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type CompressionTypeValue = awsDashSdkLib.awsDashSdkLibStrings.none | awsDashSdkLib.awsDashSdkLibStrings.gzip | java.lang.String
+  type CompressionTypeValue = _CompressionTypeValue | java.lang.String
   type ConnectionList = js.Array[Connection]
-  type DmsSslModeValue = awsDashSdkLib.awsDashSdkLibStrings.none | awsDashSdkLib.awsDashSdkLibStrings.require | awsDashSdkLib.awsDashSdkLibStrings.`verify-ca` | awsDashSdkLib.awsDashSdkLibStrings.`verify-full` | java.lang.String
+  type DmsSslModeValue = _DmsSslModeValue | java.lang.String
   type EndpointList = js.Array[Endpoint]
   type EventCategoriesList = js.Array[String]
   type EventCategoryGroupList = js.Array[EventCategoryGroup]
@@ -3440,12 +3462,12 @@ object DMSNs extends js.Object {
   type KeyList = js.Array[String]
   type Long = scala.Double
   type MessageFormatValue = awsDashSdkLib.awsDashSdkLibStrings.json | java.lang.String
-  type MigrationTypeValue = awsDashSdkLib.awsDashSdkLibStrings.`full-load` | awsDashSdkLib.awsDashSdkLibStrings.cdc | awsDashSdkLib.awsDashSdkLibStrings.`full-load-and-cdc` | java.lang.String
-  type NestingLevelValue = awsDashSdkLib.awsDashSdkLibStrings.none | awsDashSdkLib.awsDashSdkLibStrings.one | java.lang.String
+  type MigrationTypeValue = _MigrationTypeValue | java.lang.String
+  type NestingLevelValue = _NestingLevelValue | java.lang.String
   type OrderableReplicationInstanceList = js.Array[OrderableReplicationInstance]
-  type RefreshSchemasStatusTypeValue = awsDashSdkLib.awsDashSdkLibStrings.successful | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.refreshing | java.lang.String
-  type ReloadOptionValue = awsDashSdkLib.awsDashSdkLibStrings.`data-reload` | awsDashSdkLib.awsDashSdkLibStrings.`validate-only` | java.lang.String
-  type ReplicationEndpointTypeValue = awsDashSdkLib.awsDashSdkLibStrings.source | awsDashSdkLib.awsDashSdkLibStrings.target | java.lang.String
+  type RefreshSchemasStatusTypeValue = _RefreshSchemasStatusTypeValue | java.lang.String
+  type ReloadOptionValue = _ReloadOptionValue | java.lang.String
+  type ReplicationEndpointTypeValue = _ReplicationEndpointTypeValue | java.lang.String
   type ReplicationInstanceList = js.Array[ReplicationInstance]
   type ReplicationInstancePrivateIpAddressList = js.Array[String]
   type ReplicationInstancePublicIpAddressList = js.Array[String]
@@ -3457,7 +3479,7 @@ object DMSNs extends js.Object {
   type SecretString = java.lang.String
   type SourceIdsList = js.Array[String]
   type SourceType = awsDashSdkLib.awsDashSdkLibStrings.`replication-instance` | java.lang.String
-  type StartReplicationTaskTypeValue = awsDashSdkLib.awsDashSdkLibStrings.`start-replication` | awsDashSdkLib.awsDashSdkLibStrings.`resume-processing` | awsDashSdkLib.awsDashSdkLibStrings.`reload-target` | java.lang.String
+  type StartReplicationTaskTypeValue = _StartReplicationTaskTypeValue | java.lang.String
   type String = java.lang.String
   type SubnetIdentifierList = js.Array[String]
   type SubnetList = js.Array[Subnet]
@@ -3468,6 +3490,6 @@ object DMSNs extends js.Object {
   type TagList = js.Array[Tag]
   type VpcSecurityGroupIdList = js.Array[String]
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-01-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

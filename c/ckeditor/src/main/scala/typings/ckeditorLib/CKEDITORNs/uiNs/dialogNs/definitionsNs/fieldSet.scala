@@ -10,3 +10,13 @@ trait fieldSet extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object fieldSet {
+  @scala.inline
+  def apply(children: js.Array[_], label: java.lang.String = null): fieldSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[fieldSet]
+  }
+}
+

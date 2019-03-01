@@ -12,3 +12,16 @@ trait CriteriaFilterOptionsObject extends js.Object {
   var tags: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object CriteriaFilterOptionsObject {
+  @scala.inline
+  def apply(
+    all: js.UndefOr[scala.Boolean] = js.undefined,
+    tags: java.lang.String | js.Array[java.lang.String] = null
+  ): CriteriaFilterOptionsObject = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CriteriaFilterOptionsObject]
+  }
+}
+

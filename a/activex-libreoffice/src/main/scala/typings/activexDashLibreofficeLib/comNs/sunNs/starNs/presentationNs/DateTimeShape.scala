@@ -15,3 +15,16 @@ trait DateTimeShape
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.TextShape
      with Shape
 
+object DateTimeShape {
+  @scala.inline
+  def apply(
+    Shape: Shape = null,
+    TextShape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.TextShape = null
+  ): DateTimeShape = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, TextShape)
+    __obj.asInstanceOf[DateTimeShape]
+  }
+}
+

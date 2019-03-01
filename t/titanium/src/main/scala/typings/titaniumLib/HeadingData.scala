@@ -39,3 +39,26 @@ trait HeadingData extends js.Object {
   var z: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HeadingData {
+  @scala.inline
+  def apply(
+    accuracy: scala.Int | scala.Double = null,
+    magneticHeading: scala.Int | scala.Double = null,
+    timestamp: scala.Int | scala.Double = null,
+    trueHeading: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null
+  ): HeadingData = {
+    val __obj = js.Dynamic.literal()
+    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
+    if (magneticHeading != null) __obj.updateDynamic("magneticHeading")(magneticHeading.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (trueHeading != null) __obj.updateDynamic("trueHeading")(trueHeading.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeadingData]
+  }
+}
+

@@ -14,3 +14,12 @@ trait PublishResponse extends js.Object {
   var messageIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object PublishResponse {
+  @scala.inline
+  def apply(messageIds: js.Array[java.lang.String] = null): PublishResponse = {
+    val __obj = js.Dynamic.literal()
+    if (messageIds != null) __obj.updateDynamic("messageIds")(messageIds)
+    __obj.asInstanceOf[PublishResponse]
+  }
+}
+

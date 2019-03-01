@@ -35,3 +35,36 @@ trait AutomaticScaling extends js.Object {
   var requestUtilization: js.UndefOr[RequestUtilization] = js.undefined
 }
 
+object AutomaticScaling {
+  @scala.inline
+  def apply(
+    coolDownPeriod: java.lang.String = null,
+    cpuUtilization: CpuUtilization = null,
+    diskUtilization: DiskUtilization = null,
+    maxConcurrentRequests: scala.Int | scala.Double = null,
+    maxIdleInstances: scala.Int | scala.Double = null,
+    maxPendingLatency: java.lang.String = null,
+    maxTotalInstances: scala.Int | scala.Double = null,
+    minIdleInstances: scala.Int | scala.Double = null,
+    minPendingLatency: java.lang.String = null,
+    minTotalInstances: scala.Int | scala.Double = null,
+    networkUtilization: NetworkUtilization = null,
+    requestUtilization: RequestUtilization = null
+  ): AutomaticScaling = {
+    val __obj = js.Dynamic.literal()
+    if (coolDownPeriod != null) __obj.updateDynamic("coolDownPeriod")(coolDownPeriod)
+    if (cpuUtilization != null) __obj.updateDynamic("cpuUtilization")(cpuUtilization)
+    if (diskUtilization != null) __obj.updateDynamic("diskUtilization")(diskUtilization)
+    if (maxConcurrentRequests != null) __obj.updateDynamic("maxConcurrentRequests")(maxConcurrentRequests.asInstanceOf[js.Any])
+    if (maxIdleInstances != null) __obj.updateDynamic("maxIdleInstances")(maxIdleInstances.asInstanceOf[js.Any])
+    if (maxPendingLatency != null) __obj.updateDynamic("maxPendingLatency")(maxPendingLatency)
+    if (maxTotalInstances != null) __obj.updateDynamic("maxTotalInstances")(maxTotalInstances.asInstanceOf[js.Any])
+    if (minIdleInstances != null) __obj.updateDynamic("minIdleInstances")(minIdleInstances.asInstanceOf[js.Any])
+    if (minPendingLatency != null) __obj.updateDynamic("minPendingLatency")(minPendingLatency)
+    if (minTotalInstances != null) __obj.updateDynamic("minTotalInstances")(minTotalInstances.asInstanceOf[js.Any])
+    if (networkUtilization != null) __obj.updateDynamic("networkUtilization")(networkUtilization)
+    if (requestUtilization != null) __obj.updateDynamic("requestUtilization")(requestUtilization)
+    __obj.asInstanceOf[AutomaticScaling]
+  }
+}
+

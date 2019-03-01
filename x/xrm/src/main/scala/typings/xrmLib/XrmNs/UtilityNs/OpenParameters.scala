@@ -17,3 +17,20 @@ trait OpenParameters
   */
 /* index */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
 
+object OpenParameters {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Additional parameters can be provided to the request, by overloading
+    * this object with additional key and value pairs. This can only be used
+    * to provide default field values for the form, or pass data to custom
+    * parameters that have been customized for the form.
+    */
+  /* index */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = null
+  ): OpenParameters = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[OpenParameters]
+  }
+}
+

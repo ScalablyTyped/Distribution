@@ -54,3 +54,39 @@ trait IApplicationFee
   var refunds: IApplicationFeeRefunds
 }
 
+object IApplicationFee {
+  @scala.inline
+  def apply(
+    account: java.lang.String | stripeLib.stripeMod.StripeNs.accountsNs.IAccount,
+    amount: scala.Double,
+    amount_refunded: scala.Double,
+    application: java.lang.String | stripeLib.stripeMod.StripeNs.applicationsNs.IApplication,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    charge: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    created: scala.Double,
+    currency: java.lang.String,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    `object`: java.lang.String,
+    originating_transaction: java.lang.String,
+    refunded: scala.Boolean,
+    refunds: IApplicationFeeRefunds
+  ): IApplicationFee = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("amount_refunded")(amount_refunded)
+    __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
+    __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("originating_transaction")(originating_transaction)
+    __obj.updateDynamic("refunded")(refunded)
+    __obj.updateDynamic("refunds")(refunds)
+    __obj.asInstanceOf[IApplicationFee]
+  }
+}
+

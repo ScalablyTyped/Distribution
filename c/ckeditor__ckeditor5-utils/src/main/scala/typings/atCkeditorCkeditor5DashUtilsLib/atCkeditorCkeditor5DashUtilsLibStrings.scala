@@ -7,37 +7,48 @@ import scala.scalajs.js.annotation._
 
 object atCkeditorCkeditor5DashUtilsLibStrings {
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Change
   
   @js.native
-  sealed trait equal extends js.Object
+  sealed trait equal
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Change
   
   @js.native
-  sealed trait extension extends js.Object
+  sealed trait extension
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.ArrayRelation
   
   @js.native
-  sealed trait high extends js.Object
+  sealed trait high
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.PriorityString
   
   @js.native
-  sealed trait highest extends js.Object
+  sealed trait highest
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.PriorityString
   
   @js.native
-  sealed trait insert extends js.Object
+  sealed trait insert
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Change
   
   @js.native
-  sealed trait low extends js.Object
+  sealed trait low
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.PriorityString
   
   @js.native
-  sealed trait lowest extends js.Object
+  sealed trait lowest
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.PriorityString
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.PriorityString
   
   @js.native
-  sealed trait prefix extends js.Object
+  sealed trait prefix
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.ArrayRelation
   
   @js.native
-  sealed trait same extends js.Object
+  sealed trait same
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.ArrayRelation
   
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]

@@ -49,3 +49,22 @@ trait DropdownOption extends js.Object {
   ] = js.undefined
 }
 
+object DropdownOption {
+  @scala.inline
+  def apply(
+    boundary: popperDotJsLib.popperDotJsMod.Boundary | stdLib.HTMLElement = null,
+    display: bootstrapLib.bootstrapLibStrings.dynamic | bootstrapLib.bootstrapLibStrings.static = null,
+    flip: js.UndefOr[scala.Boolean] = js.undefined,
+    offset: scala.Double | java.lang.String | (js.ThisFunction1[DropdownOption, /* offset */ OffsetsExtend, OffsetsExtend]) = null,
+    reference: bootstrapLib.bootstrapLibStrings.toggle | bootstrapLib.bootstrapLibStrings.parent | stdLib.HTMLElement = null
+  ): DropdownOption = {
+    val __obj = js.Dynamic.literal()
+    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DropdownOption]
+  }
+}
+

@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object dLibStrings {
   @js.native
-  sealed trait c extends js.Object
+  sealed trait c
+    extends dLib.dMod.dNs.GetSetFlags
   
   @js.native
-  sealed trait ce extends js.Object
+  sealed trait ce
+    extends dLib.dMod.dNs.GetSetFlags
   
   @js.native
-  sealed trait cew extends js.Object
+  sealed trait cew
+    extends dLib.dMod.dNs.Flags
   
   @js.native
-  sealed trait cw extends js.Object
+  sealed trait cw
+    extends dLib.dMod.dNs.Flags
   
   @js.native
-  sealed trait e extends js.Object
+  sealed trait e
+    extends dLib.dMod.dNs.GetSetFlags
   
   @js.native
-  sealed trait ew extends js.Object
+  sealed trait ew
+    extends dLib.dMod.dNs.Flags
   
   @js.native
-  sealed trait w extends js.Object
+  sealed trait w
+    extends dLib.dMod.dNs.Flags
   
   @scala.inline
   def c: c = "c".asInstanceOf[c]

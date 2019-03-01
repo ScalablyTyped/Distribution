@@ -20,3 +20,13 @@ trait ISmartArrayLike[T] extends js.Object {
   var length: scala.Double
 }
 
+object ISmartArrayLike {
+  @scala.inline
+  def apply[T](data: js.Array[T], length: scala.Double): ISmartArrayLike[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("length")(length)
+    __obj.asInstanceOf[ISmartArrayLike[T]]
+  }
+}
+

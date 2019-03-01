@@ -13,3 +13,13 @@ trait IUpsertOptions extends js.Object {
   var indexAction: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IUpsertOptions {
+  @scala.inline
+  def apply(disableAutomaticIdGeneration: java.lang.String = null, indexAction: java.lang.String = null): IUpsertOptions = {
+    val __obj = js.Dynamic.literal()
+    if (disableAutomaticIdGeneration != null) __obj.updateDynamic("disableAutomaticIdGeneration")(disableAutomaticIdGeneration)
+    if (indexAction != null) __obj.updateDynamic("indexAction")(indexAction)
+    __obj.asInstanceOf[IUpsertOptions]
+  }
+}
+

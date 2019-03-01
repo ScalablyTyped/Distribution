@@ -22,3 +22,40 @@ trait Filter extends js.Object {
   def toObject(): bloomDashFilterLib.bloomDashFilterMod.FilterNs.FilterOptions
 }
 
+object Filter {
+  @scala.inline
+  def apply(
+    BLOOM_UPDATE_ALL: scala.Double,
+    BLOOM_UPDATE_NONE: scala.Double,
+    BLOOM_UPDATE_P2PUBKEY_ONLY: scala.Double,
+    LN2: scala.Double,
+    LN2SQUARED: scala.Double,
+    MAX_BLOOM_FILTER_SIZE: scala.Double,
+    MAX_HASH_FUNCS: scala.Double,
+    MIN_HASH_FUNCS: scala.Double,
+    clear: js.Function0[scala.Unit],
+    contains: js.Function1[nodeLib.Buffer, scala.Boolean],
+    hash: js.Function2[scala.Double, nodeLib.Buffer, scala.Double],
+    insert: js.Function1[nodeLib.Buffer, scala.Unit],
+    inspect: js.Function0[java.lang.String],
+    toObject: js.Function0[bloomDashFilterLib.bloomDashFilterMod.FilterNs.FilterOptions]
+  ): Filter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BLOOM_UPDATE_ALL")(BLOOM_UPDATE_ALL)
+    __obj.updateDynamic("BLOOM_UPDATE_NONE")(BLOOM_UPDATE_NONE)
+    __obj.updateDynamic("BLOOM_UPDATE_P2PUBKEY_ONLY")(BLOOM_UPDATE_P2PUBKEY_ONLY)
+    __obj.updateDynamic("LN2")(LN2)
+    __obj.updateDynamic("LN2SQUARED")(LN2SQUARED)
+    __obj.updateDynamic("MAX_BLOOM_FILTER_SIZE")(MAX_BLOOM_FILTER_SIZE)
+    __obj.updateDynamic("MAX_HASH_FUNCS")(MAX_HASH_FUNCS)
+    __obj.updateDynamic("MIN_HASH_FUNCS")(MIN_HASH_FUNCS)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("inspect")(inspect)
+    __obj.updateDynamic("toObject")(toObject)
+    __obj.asInstanceOf[Filter]
+  }
+}
+

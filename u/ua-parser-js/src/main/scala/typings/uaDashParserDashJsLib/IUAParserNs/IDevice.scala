@@ -25,3 +25,14 @@ trait IDevice extends js.Object {
   var vendor: js.UndefOr[java.lang.String]
 }
 
+object IDevice {
+  @scala.inline
+  def apply(model: java.lang.String = null, `type`: java.lang.String = null, vendor: java.lang.String = null): IDevice = {
+    val __obj = js.Dynamic.literal()
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    __obj.asInstanceOf[IDevice]
+  }
+}
+

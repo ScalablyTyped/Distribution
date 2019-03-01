@@ -16,3 +16,13 @@ trait SearchCallSetsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchCallSetsResponse {
+  @scala.inline
+  def apply(callSets: js.Array[CallSet] = null, nextPageToken: java.lang.String = null): SearchCallSetsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (callSets != null) __obj.updateDynamic("callSets")(callSets)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[SearchCallSetsResponse]
+  }
+}
+

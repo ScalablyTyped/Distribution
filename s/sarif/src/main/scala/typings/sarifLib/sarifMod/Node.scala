@@ -28,3 +28,22 @@ trait Node extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object Node {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    children: js.Array[Node] = null,
+    label: Message = null,
+    location: Location = null,
+    properties: PropertyBag = null
+  ): Node = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Node]
+  }
+}
+

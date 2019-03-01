@@ -10,3 +10,13 @@ trait Anon_CheckTypes extends js.Object {
   var env: js.Array[_]
 }
 
+object Anon_CheckTypes {
+  @scala.inline
+  def apply(checkTypes: scala.Boolean, env: js.Array[_]): Anon_CheckTypes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkTypes")(checkTypes)
+    __obj.updateDynamic("env")(env)
+    __obj.asInstanceOf[Anon_CheckTypes]
+  }
+}
+

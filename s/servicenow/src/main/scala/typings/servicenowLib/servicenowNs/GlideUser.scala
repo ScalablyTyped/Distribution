@@ -16,3 +16,28 @@ trait GlideUser extends js.Object {
   def savePreference(name: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object GlideUser {
+  @scala.inline
+  def apply(
+    getCompanyID: js.Function0[java.lang.String],
+    getDisplayName: js.Function0[java.lang.String],
+    getID: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getPreference: js.Function1[java.lang.String, java.lang.String],
+    hasRole: js.Function1[java.lang.String, scala.Boolean],
+    isMemberOf: js.Function1[java.lang.String, scala.Boolean],
+    savePreference: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): GlideUser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCompanyID")(getCompanyID)
+    __obj.updateDynamic("getDisplayName")(getDisplayName)
+    __obj.updateDynamic("getID")(getID)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getPreference")(getPreference)
+    __obj.updateDynamic("hasRole")(hasRole)
+    __obj.updateDynamic("isMemberOf")(isMemberOf)
+    __obj.updateDynamic("savePreference")(savePreference)
+    __obj.asInstanceOf[GlideUser]
+  }
+}
+

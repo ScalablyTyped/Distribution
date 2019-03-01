@@ -23,3 +23,18 @@ trait PaintEvent
   var UpdateRect: Rectangle
 }
 
+object PaintEvent {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    UpdateRect: Rectangle
+  ): PaintEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("UpdateRect")(UpdateRect)
+    __obj.asInstanceOf[PaintEvent]
+  }
+}
+

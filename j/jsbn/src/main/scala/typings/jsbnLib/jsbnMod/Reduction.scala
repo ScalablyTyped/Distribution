@@ -13,3 +13,22 @@ trait Reduction extends js.Object {
   def sqrTo(x: BigInteger, r: BigInteger): scala.Unit
 }
 
+object Reduction {
+  @scala.inline
+  def apply(
+    convert: js.Function1[BigInteger, BigInteger],
+    mulTo: js.Function3[BigInteger, BigInteger, BigInteger, scala.Unit],
+    reduce: js.Function1[BigInteger, scala.Unit],
+    revert: js.Function1[BigInteger, BigInteger],
+    sqrTo: js.Function2[BigInteger, BigInteger, scala.Unit]
+  ): Reduction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("convert")(convert)
+    __obj.updateDynamic("mulTo")(mulTo)
+    __obj.updateDynamic("reduce")(reduce)
+    __obj.updateDynamic("revert")(revert)
+    __obj.updateDynamic("sqrTo")(sqrTo)
+    __obj.asInstanceOf[Reduction]
+  }
+}
+

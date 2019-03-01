@@ -10,10 +10,12 @@ object chromeDashAppsLibStrings {
   sealed trait `*` extends js.Object
   
   @js.native
-  sealed trait `8021X` extends js.Object
+  sealed trait `8021X`
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.EthernetAuthenticationType
   
   @js.native
-  sealed trait `<all_urls>` extends js.Object
+  sealed trait `<all_urls>`
+    extends chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches
   
   @js.native
   sealed trait ABORT extends js.Object
@@ -22,10 +24,12 @@ object chromeDashAppsLibStrings {
   sealed trait ACCESS_DENIED extends js.Object
   
   @js.native
-  sealed trait Activated extends js.Object
+  sealed trait Activated
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ActivationStateType
   
   @js.native
-  sealed trait Activating extends js.Object
+  sealed trait Activating
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ActivationStateType
   
   @js.native
   sealed trait AddRequestCookie extends js.Object
@@ -37,19 +41,23 @@ object chromeDashAppsLibStrings {
   sealed trait AddResponseHeader extends js.Object
   
   @js.native
-  sealed trait All extends js.Object
+  sealed trait All
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType
   
   @js.native
-  sealed trait BLUETOOTH extends js.Object
+  sealed trait BLUETOOTH
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
   sealed trait CDMA extends js.Object
   
   @js.native
-  sealed trait CENTER extends js.Object
+  sealed trait CENTER
+    extends chromeDashAppsLib.chromeNs.wallpaperNs.WallpaperLayoutType
   
   @js.native
-  sealed trait CENTER_CROPPED extends js.Object
+  sealed trait CENTER_CROPPED
+    extends chromeDashAppsLib.chromeNs.wallpaperNs.WallpaperLayoutType
   
   @js.native
   sealed trait CHANGED extends js.Object
@@ -58,19 +66,23 @@ object chromeDashAppsLibStrings {
   sealed trait CancelRequest extends js.Object
   
   @js.native
-  sealed trait Cellular extends js.Object
+  sealed trait Cellular
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType
   
   @js.native
-  sealed trait Connected extends js.Object
+  sealed trait Connected
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ConnectionStateType
   
   @js.native
-  sealed trait Connecting extends js.Object
+  sealed trait Connecting
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ConnectionStateType
   
   @js.native
   sealed trait DELETED extends js.Object
   
   @js.native
-  sealed trait DHCP extends js.Object
+  sealed trait DHCP
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.IPConfigType
   
   @js.native
   sealed trait Device extends js.Object
@@ -79,37 +91,47 @@ object chromeDashAppsLibStrings {
   sealed trait DevicePolicy extends js.Object
   
   @js.native
-  sealed trait Direct extends js.Object
+  sealed trait Direct
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ProxySettingsType
   
   @js.native
-  sealed trait Disabled extends js.Object
+  sealed trait Disabled
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.DeviceState
   
   @js.native
   sealed trait Disconnected extends js.Object
   
   @js.native
-  sealed trait ERR_ABORTED extends js.Object
+  sealed trait ERR_ABORTED
+    extends chromeDashAppsLib.WebViewNs.EventsNs.LoadAbortReason
   
   @js.native
-  sealed trait ERR_ADDRESS_UNREACHABLE extends js.Object
+  sealed trait ERR_ADDRESS_UNREACHABLE
+    extends chromeDashAppsLib.WebViewNs.EventsNs.LoadAbortReason
   
   @js.native
-  sealed trait ERR_BLOCKED_BY_CLIENT extends js.Object
+  sealed trait ERR_BLOCKED_BY_CLIENT
+    extends chromeDashAppsLib.WebViewNs.EventsNs.LoadAbortReason
   
   @js.native
-  sealed trait ERR_DISALLOWED_URL_SCHEME extends js.Object
+  sealed trait ERR_DISALLOWED_URL_SCHEME
+    extends chromeDashAppsLib.WebViewNs.EventsNs.LoadAbortReason
   
   @js.native
-  sealed trait ERR_EMPTY_RESPONSE extends js.Object
+  sealed trait ERR_EMPTY_RESPONSE
+    extends chromeDashAppsLib.WebViewNs.EventsNs.LoadAbortReason
   
   @js.native
-  sealed trait ERR_FILE_NOT_FOUND extends js.Object
+  sealed trait ERR_FILE_NOT_FOUND
+    extends chromeDashAppsLib.WebViewNs.EventsNs.LoadAbortReason
   
   @js.native
-  sealed trait ERR_INVALID_URL extends js.Object
+  sealed trait ERR_INVALID_URL
+    extends chromeDashAppsLib.WebViewNs.EventsNs.LoadAbortReason
   
   @js.native
-  sealed trait ERR_UNKNOWN_URL_SCHEME extends js.Object
+  sealed trait ERR_UNKNOWN_URL_SCHEME
+    extends chromeDashAppsLib.WebViewNs.EventsNs.LoadAbortReason
   
   @js.native
   sealed trait EXISTS extends js.Object
@@ -124,49 +146,62 @@ object chromeDashAppsLibStrings {
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait Enabled extends js.Object
+  sealed trait Enabled
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.DeviceState
   
   @js.native
-  sealed trait Enabling extends js.Object
+  sealed trait Enabling
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.DeviceState
   
   @js.native
-  sealed trait Ethernet extends js.Object
+  sealed trait Ethernet
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType
   
   @js.native
   sealed trait FAILED extends js.Object
   
   @js.native
-  sealed trait FRONT_MIC extends js.Object
+  sealed trait FRONT_MIC
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait GOOG extends js.Object
+  sealed trait GOOG
+    extends chromeDashAppsLib.chromeNs.gcmNs.DisallowedKeys
   
   @js.native
-  sealed trait GOOGDOT extends js.Object
+  sealed trait GOOGDOT
+    extends chromeDashAppsLib.chromeNs.gcmNs.DisallowedKeys
   
   @js.native
-  sealed trait GOOGLE extends js.Object
+  sealed trait GOOGLE
+    extends chromeDashAppsLib.chromeNs.gcmNs.DisallowedKeys
   
   @js.native
   sealed trait GSM extends js.Object
   
   @js.native
-  sealed trait HDMI extends js.Object
+  sealed trait HDMI
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait HEADPHONE extends js.Object
+  sealed trait HEADPHONE
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait HOTWORD extends js.Object
+  sealed trait HOTWORD
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait INPUT extends js.Object
+  sealed trait INPUT
+    extends chromeDashAppsLib.chromeNs.audioNs.StreamType
   
   @js.native
-  sealed trait INTERNAL_MIC extends js.Object
+  sealed trait INTERNAL_MIC
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait INTERNAL_SPEAKER extends js.Object
+  sealed trait INTERNAL_SPEAKER
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
   sealed trait INVALID_OPERATION extends js.Object
@@ -187,31 +222,38 @@ object chromeDashAppsLibStrings {
   sealed trait IO extends js.Object
   
   @js.native
-  sealed trait IPv4 extends js.Object
+  sealed trait IPv4
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.IPConfigurationType
   
   @js.native
-  sealed trait IPv6 extends js.Object
+  sealed trait IPv6
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.IPConfigurationType
   
   @js.native
   sealed trait IgnoreRules extends js.Object
   
   @js.native
-  sealed trait KEYBOARD_MIC extends js.Object
+  sealed trait KEYBOARD_MIC
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait LINEOUT extends js.Object
+  sealed trait LINEOUT
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
   sealed trait MAX_ATTEMPTS_EXCEEDED extends js.Object
   
   @js.native
-  sealed trait MD5_SHA1 extends js.Object
+  sealed trait MD5_SHA1
+    extends chromeDashAppsLib.chromeNs.certificateProviderNs.Hash
   
   @js.native
-  sealed trait MIC extends js.Object
+  sealed trait MIC
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait Manual extends js.Object
+  sealed trait Manual
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ProxySettingsType
   
   @js.native
   sealed trait NOT_A_DIRECTORY extends js.Object
@@ -232,13 +274,16 @@ object chromeDashAppsLibStrings {
   sealed trait NO_SPACE extends js.Object
   
   @js.native
-  sealed trait None extends js.Object
+  sealed trait None
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.EthernetAuthenticationType
   
   @js.native
-  sealed trait NotActivated extends js.Object
+  sealed trait NotActivated
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ActivationStateType
   
   @js.native
-  sealed trait NotConnected extends js.Object
+  sealed trait NotConnected
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ConnectionStateType
   
   @js.native
   sealed trait OFFLINE_NOT_NECESSARY extends js.Object
@@ -259,19 +304,24 @@ object chromeDashAppsLibStrings {
   sealed trait OPEN_FULL_SCREEN extends js.Object
   
   @js.native
-  sealed trait OTHER extends js.Object
+  sealed trait OTHER
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait OUTPUT extends js.Object
+  sealed trait OUTPUT
+    extends chromeDashAppsLib.chromeNs.audioNs.StreamType
   
   @js.native
-  sealed trait Offline extends js.Object
+  sealed trait Offline
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.CaptivePortalStatus
   
   @js.native
-  sealed trait Online extends js.Object
+  sealed trait Online
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.CaptivePortalStatus
   
   @js.native
-  sealed trait PAC extends js.Object
+  sealed trait PAC
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ProxySettingsType
   
   @js.native
   sealed trait PBC extends js.Object
@@ -283,40 +333,50 @@ object chromeDashAppsLibStrings {
   sealed trait POST extends js.Object
   
   @js.native
-  sealed trait POST_DSP_LOOPBACK extends js.Object
+  sealed trait POST_DSP_LOOPBACK
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait POST_MIX_LOOPBACK extends js.Object
+  sealed trait POST_MIX_LOOPBACK
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
   sealed trait PUK extends js.Object
   
   @js.native
-  sealed trait PartiallyActivated extends js.Object
+  sealed trait PartiallyActivated
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ActivationStateType
   
   @js.native
-  sealed trait Pattern extends js.Object
+  sealed trait Pattern
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ClientCertType
   
   @js.native
-  sealed trait Portal extends js.Object
+  sealed trait Portal
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.CaptivePortalStatus
   
   @js.native
-  sealed trait Prohibited extends js.Object
+  sealed trait Prohibited
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.DeviceState
   
   @js.native
-  sealed trait ProxyAuthRequired extends js.Object
+  sealed trait ProxyAuthRequired
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.CaptivePortalStatus
   
   @js.native
   sealed trait READ extends js.Object
   
   @js.native
-  sealed trait REAR_MIC extends js.Object
+  sealed trait REAR_MIC
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait ReadOnly extends js.Object
+  sealed trait ReadOnly
+    extends chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.FileBrowserHandleExecuteId
   
   @js.native
-  sealed trait ReadWrite extends js.Object
+  sealed trait ReadWrite
+    extends chromeDashAppsLib.chromeNs.fileBrowserHandlerNs.FileBrowserHandleExecuteId
   
   @js.native
   sealed trait RedirectByRegEx extends js.Object
@@ -331,7 +391,8 @@ object chromeDashAppsLibStrings {
   sealed trait RedirectToTransparentImage extends js.Object
   
   @js.native
-  sealed trait Ref extends js.Object
+  sealed trait Ref
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ClientCertType
   
   @js.native
   sealed trait RemoveRequestCookie extends js.Object
@@ -355,22 +416,27 @@ object chromeDashAppsLibStrings {
   sealed trait SECURITY extends js.Object
   
   @js.native
-  sealed trait SHA1 extends js.Object
+  sealed trait SHA1
+    extends chromeDashAppsLib.chromeNs.certificateProviderNs.Hash
   
   @js.native
-  sealed trait SHA256 extends js.Object
+  sealed trait SHA256
+    extends chromeDashAppsLib.chromeNs.certificateProviderNs.Hash
   
   @js.native
-  sealed trait SHA384 extends js.Object
+  sealed trait SHA384
+    extends chromeDashAppsLib.chromeNs.certificateProviderNs.Hash
   
   @js.native
-  sealed trait SHA512 extends js.Object
+  sealed trait SHA512
+    extends chromeDashAppsLib.chromeNs.certificateProviderNs.Hash
   
   @js.native
   sealed trait SHARE extends js.Object
   
   @js.native
-  sealed trait STRETCH extends js.Object
+  sealed trait STRETCH
+    extends chromeDashAppsLib.chromeNs.wallpaperNs.WallpaperLayoutType
   
   @js.native
   sealed trait SendMessageToExtension extends js.Object
@@ -379,7 +445,8 @@ object chromeDashAppsLibStrings {
   sealed trait SetRequestHeader extends js.Object
   
   @js.native
-  sealed trait Static extends js.Object
+  sealed trait Static
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.IPConfigType
   
   @js.native
   sealed trait TOO_MANY_OPENED extends js.Object
@@ -388,13 +455,16 @@ object chromeDashAppsLibStrings {
   sealed trait UNKNOWN_ERROR extends js.Object
   
   @js.native
-  sealed trait USB extends js.Object
+  sealed trait USB
+    extends chromeDashAppsLib.chromeNs.audioNs.DeviceType
   
   @js.native
-  sealed trait Uninitialized extends js.Object
+  sealed trait Uninitialized
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.DeviceState
   
   @js.native
-  sealed trait Unknown extends js.Object
+  sealed trait Unknown
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.CaptivePortalStatus
   
   @js.native
   sealed trait User extends js.Object
@@ -403,7 +473,8 @@ object chromeDashAppsLibStrings {
   sealed trait UserPolicy extends js.Object
   
   @js.native
-  sealed trait VPN extends js.Object
+  sealed trait VPN
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType
   
   @js.native
   sealed trait `WEP-PSK` extends js.Object
@@ -415,22 +486,27 @@ object chromeDashAppsLibStrings {
   sealed trait `WPA-PSK` extends js.Object
   
   @js.native
-  sealed trait WPAD extends js.Object
+  sealed trait WPAD
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ProxySettingsType
   
   @js.native
   sealed trait WRITE extends js.Object
   
   @js.native
-  sealed trait WiFi extends js.Object
+  sealed trait WiFi
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType
   
   @js.native
-  sealed trait WiMAX extends js.Object
+  sealed trait WiMAX
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType
   
   @js.native
-  sealed trait Wireless extends js.Object
+  sealed trait Wireless
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkType
   
   @js.native
-  sealed trait abnormal extends js.Object
+  sealed trait abnormal
+    extends chromeDashAppsLib.WebViewNs.EventsNs.ExitEventReason
   
   @js.native
   sealed trait abort extends js.Object
@@ -442,7 +518,8 @@ object chromeDashAppsLibStrings {
   sealed trait activate extends js.Object
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends chromeDashAppsLib.chromeNs.idleNs.IdleState
   
   @js.native
   sealed trait adaptive extends js.Object
@@ -454,22 +531,41 @@ object chromeDashAppsLibStrings {
   sealed trait admin extends js.Object
   
   @js.native
-  sealed trait alarms extends js.Object
+  sealed trait af
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait alert extends js.Object
+  sealed trait alarms
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait alert
+    extends chromeDashAppsLib.WebViewNs.EventsNs.DialogMessageType
+  
+  @js.native
+  sealed trait all
+    extends chromeDashAppsLib.WebViewNs.ContextType
+       with chromeDashAppsLib.chromeNs.bluetoothNs.DeviceFilterType
+       with chromeDashAppsLib.chromeNs.mediaGalleriesNs.MetadataOptionsType
   
   @js.native
   sealed trait allAutoDetected extends js.Object
   
   @js.native
-  sealed trait alwaysOnTopWindows extends js.Object
+  sealed trait alwaysOnTopWindows
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait android extends js.Object
+  sealed trait am
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait an
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait android
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.OS
   
   @js.native
   sealed trait animationcancel extends js.Object
@@ -484,22 +580,28 @@ object chromeDashAppsLibStrings {
   sealed trait animationstart extends js.Object
   
   @js.native
-  sealed trait appDOTwindowDOTalpha extends js.Object
+  sealed trait appDOTwindowDOTalpha
+    extends chromeDashAppsLib.chromeNs.runtimeNs.DevOnly
   
   @js.native
-  sealed trait appDOTwindowDOTalwaysOnTop extends js.Object
+  sealed trait appDOTwindowDOTalwaysOnTop
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait appDOTwindowDOTfullscreen extends js.Object
+  sealed trait appDOTwindowDOTfullscreen
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait appDOTwindowDOTfullscreenDOToverrideEsc extends js.Object
+  sealed trait appDOTwindowDOTfullscreenDOToverrideEsc
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait appDOTwindowDOTime extends js.Object
+  sealed trait appDOTwindowDOTime
+    extends chromeDashAppsLib.chromeNs.runtimeNs.UndocumentedPermissions
   
   @js.native
-  sealed trait appDOTwindowDOTshape extends js.Object
+  sealed trait appDOTwindowDOTshape
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait app_launcher extends js.Object
@@ -508,7 +610,16 @@ object chromeDashAppsLibStrings {
   sealed trait app_update extends js.Object
   
   @js.native
-  sealed trait appview extends js.Object
+  sealed trait appview
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
+  
+  @js.native
+  sealed trait ar
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ar_001
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait arm extends js.Object
@@ -517,22 +628,34 @@ object chromeDashAppsLibStrings {
   sealed trait array extends js.Object
   
   @js.native
+  sealed trait ast
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait asynchronous extends js.Object
   
-  @js.native
-  sealed trait audio extends js.Object
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - chromeDashAppsLib.chromeNs.runtimeNs.Permission because Already inherited */ @js.native
+  sealed trait audio
+    extends chromeDashAppsLib.chromeNs.runtimeNs.KioskOnlyPermissions
+       with chromeDashAppsLib.WebViewNs.ContextType
+       with chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
+       with chromeDashAppsLib.chromeNs.contextMenusNs.MediaType
   
   @js.native
-  sealed trait audioCapture extends js.Object
+  sealed trait audioCapture
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait authenticatedSignedWrites extends js.Object
+  sealed trait authenticatedSignedWrites
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
   sealed trait authentication_required extends js.Object
   
   @js.native
-  sealed trait author extends js.Object
+  sealed trait author
+    extends chromeDashAppsLib.chromeNs.extensionTypesNs.CSSOrigin
   
   @js.native
   sealed trait auxclick extends js.Object
@@ -544,34 +667,72 @@ object chromeDashAppsLibStrings {
   sealed trait avx extends js.Object
   
   @js.native
-  sealed trait background extends js.Object
+  sealed trait az
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait background
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait basic extends js.Object
   
   @js.native
-  sealed trait bluetooth extends js.Object
+  sealed trait be
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait bg
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait bh
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait bluetooth
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceVendorIdSource
   
   @js.native
   sealed trait blur extends js.Object
   
   @js.native
+  sealed trait bn
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait broadcast extends js.Object
+  sealed trait br
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait browser extends js.Object
+  sealed trait broadcast
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.AdvertisementType
+       with chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
+  
+  @js.native
+  sealed trait browser
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait browser_action extends js.Object
   
   @js.native
+  sealed trait bs
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait bulk extends js.Object
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait ca
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait cancel
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.ScanProgressType
   
   @js.native
   sealed trait canplay extends js.Object
@@ -583,10 +744,16 @@ object chromeDashAppsLibStrings {
   sealed trait capabilities_negotiation_error extends js.Object
   
   @js.native
-  sealed trait carAudio extends js.Object
+  sealed trait carAudio
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
   
   @js.native
-  sealed trait certificateProvider extends js.Object
+  sealed trait ceb
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait certificateProvider
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
   
   @js.native
   sealed trait change extends js.Object
@@ -601,16 +768,22 @@ object chromeDashAppsLibStrings {
   sealed trait chrome extends js.Object
   
   @js.native
-  sealed trait `chrome://favicon/` extends js.Object
+  sealed trait `chrome://favicon/`
+    extends chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches
   
   @js.native
   sealed trait chrome_internal extends js.Object
   
   @js.native
-  sealed trait chrome_os extends js.Object
+  sealed trait chrome_os
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.OS
   
   @js.native
   sealed trait chrome_update extends js.Object
+  
+  @js.native
+  sealed trait ckb
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait `class` extends js.Object
@@ -622,28 +795,38 @@ object chromeDashAppsLibStrings {
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait clipboard extends js.Object
+  sealed trait clipboard
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait clipboardRead extends js.Object
+  sealed trait clipboardRead
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait clipboardWrite extends js.Object
+  sealed trait clipboardWrite
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait close extends js.Object
   
   @js.native
-  sealed trait collapse_key extends js.Object
+  sealed trait co
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait collapse_key
+    extends chromeDashAppsLib.chromeNs.gcmNs.DisallowedKeys
   
   @js.native
   sealed trait command_line extends js.Object
   
   @js.native
-  sealed trait computer extends js.Object
+  sealed trait computer
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
   
   @js.native
-  sealed trait confirm extends js.Object
+  sealed trait confirm
+    extends chromeDashAppsLib.WebViewNs.EventsNs.DialogMessageType
   
   @js.native
   sealed trait conflicting extends js.Object
@@ -661,10 +844,12 @@ object chromeDashAppsLibStrings {
   sealed trait contentload extends js.Object
   
   @js.native
-  sealed trait contents_changed extends js.Object
+  sealed trait contents_changed
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.GalleryChangedType
   
   @js.native
-  sealed trait contextMenus extends js.Object
+  sealed trait contextMenus
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait context_menu extends js.Object
@@ -676,19 +861,26 @@ object chromeDashAppsLibStrings {
   sealed trait control extends js.Object
   
   @js.native
-  sealed trait controllable_by_this_extension extends js.Object
+  sealed trait controllable_by_this_extension
+    extends chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.LevelOfControl
+       with chromeDashAppsLib.chromeNs.typesNs.LevelOfControl
   
   @js.native
-  sealed trait controlled_by_other_extensions extends js.Object
+  sealed trait controlled_by_other_extensions
+    extends chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.LevelOfControl
+       with chromeDashAppsLib.chromeNs.typesNs.LevelOfControl
   
   @js.native
-  sealed trait controlled_by_this_extension extends js.Object
+  sealed trait controlled_by_this_extension
+    extends chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.LevelOfControl
+       with chromeDashAppsLib.chromeNs.typesNs.LevelOfControl
   
   @js.native
   sealed trait copy extends js.Object
   
   @js.native
-  sealed trait crash extends js.Object
+  sealed trait crash
+    extends chromeDashAppsLib.WebViewNs.EventsNs.ExitEventReason
   
   @js.native
   sealed trait created extends js.Object
@@ -697,16 +889,30 @@ object chromeDashAppsLibStrings {
   sealed trait cros extends js.Object
   
   @js.native
-  sealed trait csp_report extends js.Object
+  sealed trait cs
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait csp_report
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait cuechange extends js.Object
   
   @js.native
-  sealed trait current_tab extends js.Object
+  sealed trait current_tab
+    extends chromeDashAppsLib.WebViewNs.EventsNs.WindowOpenDisposition
   
   @js.native
   sealed trait cut extends js.Object
+  
+  @js.native
+  sealed trait cy
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait da
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait data extends js.Object
@@ -715,94 +921,143 @@ object chromeDashAppsLibStrings {
   sealed trait dblclick extends js.Object
   
   @js.native
-  sealed trait debugger extends js.Object
+  sealed trait de
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `de-AT`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `de-CH`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `de-DE`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `de-LI`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait debugger
+    extends chromeDashAppsLib.chromeNs.runtimeNs.NotAllowedAsOptionalPermissions
   
   @js.native
   sealed trait declarativeContentDOTPageStateMatcher extends js.Object
   
   @js.native
-  sealed trait declarativeContentDOTonAuthRequired extends js.Object
+  sealed trait declarativeContentDOTonAuthRequired
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonBeforeRedirect extends js.Object
+  sealed trait declarativeContentDOTonBeforeRedirect
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonBeforeRequest extends js.Object
+  sealed trait declarativeContentDOTonBeforeRequest
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonBeforeSendHeaders extends js.Object
+  sealed trait declarativeContentDOTonBeforeSendHeaders
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonCompleted extends js.Object
+  sealed trait declarativeContentDOTonCompleted
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonErrorOccured extends js.Object
+  sealed trait declarativeContentDOTonErrorOccured
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonHeadersReceived extends js.Object
+  sealed trait declarativeContentDOTonHeadersReceived
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonMessage extends js.Object
+  sealed trait declarativeContentDOTonMessage
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonRequest extends js.Object
+  sealed trait declarativeContentDOTonRequest
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonResponseStarted extends js.Object
+  sealed trait declarativeContentDOTonResponseStarted
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeContentDOTonSendHeaders extends js.Object
+  sealed trait declarativeContentDOTonSendHeaders
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestEventList
   
   @js.native
-  sealed trait declarativeWebRequestDOTAddRequestCookie extends js.Object
+  sealed trait declarativeWebRequestDOTAddRequestCookie
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTAddResponseCookie extends js.Object
+  sealed trait declarativeWebRequestDOTAddResponseCookie
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTAddResponseHeader extends js.Object
+  sealed trait declarativeWebRequestDOTAddResponseHeader
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTCancelRequest extends js.Object
+  sealed trait declarativeWebRequestDOTCancelRequest
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTEditRequestCookie extends js.Object
+  sealed trait declarativeWebRequestDOTEditRequestCookie
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTEditResponseCookie extends js.Object
+  sealed trait declarativeWebRequestDOTEditResponseCookie
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTIgnoreRules extends js.Object
+  sealed trait declarativeWebRequestDOTIgnoreRules
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRedirectByRegEx extends js.Object
+  sealed trait declarativeWebRequestDOTRedirectByRegEx
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRedirectRequest extends js.Object
+  sealed trait declarativeWebRequestDOTRedirectRequest
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRedirectToEmptyDocument extends js.Object
+  sealed trait declarativeWebRequestDOTRedirectToEmptyDocument
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRedirectToTransparentImage extends js.Object
+  sealed trait declarativeWebRequestDOTRedirectToTransparentImage
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRemoveRequestCookie extends js.Object
+  sealed trait declarativeWebRequestDOTRemoveRequestCookie
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRemoveRequestHeader extends js.Object
+  sealed trait declarativeWebRequestDOTRemoveRequestHeader
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRemoveResponseCookie extends js.Object
+  sealed trait declarativeWebRequestDOTRemoveResponseCookie
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTRemoveResponseHeader extends js.Object
+  sealed trait declarativeWebRequestDOTRemoveResponseHeader
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTSendMessageToExtension extends js.Object
+  sealed trait declarativeWebRequestDOTSendMessageToExtension
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
-  sealed trait declarativeWebRequestDOTSetRequestHeader extends js.Object
+  sealed trait declarativeWebRequestDOTSetRequestHeader
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
   
   @js.native
   sealed trait deleted extends js.Object
@@ -811,10 +1066,12 @@ object chromeDashAppsLibStrings {
   sealed trait denied extends js.Object
   
   @js.native
-  sealed trait desktopCapture extends js.Object
+  sealed trait desktopCapture
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait desktop_or_laptop extends js.Object
+  sealed trait desktop_or_laptop
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceType
   
   @js.native
   sealed trait development extends js.Object
@@ -823,7 +1080,8 @@ object chromeDashAppsLibStrings {
   sealed trait device extends js.Object
   
   @js.native
-  sealed trait diagnostics extends js.Object
+  sealed trait diagnostics
+    extends chromeDashAppsLib.chromeNs.runtimeNs.DevOnly
   
   @js.native
   sealed trait dialog extends js.Object
@@ -832,34 +1090,43 @@ object chromeDashAppsLibStrings {
   sealed trait directory extends js.Object
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait disabled
+    extends chromeDashAppsLib.WebViewNs.ZoomMode
   
   @js.native
-  sealed trait disconnected extends js.Object
+  sealed trait disconnected
+    extends chromeDashAppsLib.chromeNs.bluetoothSocketNs.OnReceiveErrorCode
   
   @js.native
   sealed trait display extends js.Object
   
   @js.native
-  sealed trait displaySource extends js.Object
+  sealed trait displaySource
+    extends chromeDashAppsLib.chromeNs.runtimeNs.DevOnly
   
   @js.native
-  sealed trait dns extends js.Object
+  sealed trait dns
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait documentScan extends js.Object
+  sealed trait documentScan
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait document_end extends js.Object
+  sealed trait document_end
+    extends chromeDashAppsLib.chromeNs.extensionTypesNs.RunAt
   
   @js.native
-  sealed trait document_idle extends js.Object
+  sealed trait document_idle
+    extends chromeDashAppsLib.chromeNs.extensionTypesNs.RunAt
   
   @js.native
-  sealed trait document_start extends js.Object
+  sealed trait document_start
+    extends chromeDashAppsLib.chromeNs.extensionTypesNs.RunAt
   
   @js.native
-  sealed trait download extends js.Object
+  sealed trait download
+    extends chromeDashAppsLib.WebViewNs.EventsNs.RequestedPermission
   
   @js.native
   sealed trait drag extends js.Object
@@ -892,37 +1159,90 @@ object chromeDashAppsLibStrings {
   sealed trait ecdsaSign extends js.Object
   
   @js.native
-  sealed trait editable extends js.Object
+  sealed trait editable
+    extends chromeDashAppsLib.WebViewNs.ContextType
+  
+  @js.native
+  sealed trait el
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait emptied extends js.Object
   
   @js.native
+  sealed trait en
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `en-AU`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `en-CA`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `en-GB`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `en-IN`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `en-NZ`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `en-US`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `en-ZA`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait en_001
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait en_150
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait enabled extends js.Object
   
   @js.native
-  sealed trait encryptAuthenticatedRead extends js.Object
+  sealed trait encryptAuthenticatedRead
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
-  sealed trait encryptAuthenticatedWrite extends js.Object
+  sealed trait encryptAuthenticatedWrite
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
-  sealed trait encryptRead extends js.Object
+  sealed trait encryptRead
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
-  sealed trait encryptWrite extends js.Object
+  sealed trait encryptWrite
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
-  sealed trait encryptedAuthenticatedRead extends js.Object
+  sealed trait encryptedAuthenticatedRead
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.DescriptorPermissions
   
   @js.native
-  sealed trait encryptedAuthenticatedWrite extends js.Object
+  sealed trait encryptedAuthenticatedWrite
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.DescriptorPermissions
   
   @js.native
-  sealed trait encryptedRead extends js.Object
+  sealed trait encryptedRead
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.DescriptorPermissions
   
   @js.native
-  sealed trait encryptedWrite extends js.Object
+  sealed trait encryptedWrite
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.DescriptorPermissions
   
   @js.native
   sealed trait ended extends js.Object
@@ -931,34 +1251,108 @@ object chromeDashAppsLibStrings {
   sealed trait endpoint extends js.Object
   
   @js.native
-  sealed trait enterpriseDOTdeviceAttributes extends js.Object
+  sealed trait enterpriseDOTdeviceAttributes
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait enterpriseDOTplatformKeys extends js.Object
+  sealed trait enterpriseDOTplatformKeys
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
+  
+  @js.native
+  sealed trait eo
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait ephemeral_app extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.ScanProgressType
+  
+  @js.native
+  sealed trait es
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-419`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-AR`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-CL`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-CO`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-CR`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-ES`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-HN`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-MX`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-PE`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-US`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-UY`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `es-VE`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait et
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait eu
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait exit extends js.Object
   
   @js.native
-  sealed trait experimental extends js.Object
+  sealed trait experimental
+    extends chromeDashAppsLib.chromeNs.runtimeNs.NotAllowedAsOptionalPermissions
+       with chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait explicitFeedback extends js.Object
   
   @js.native
-  sealed trait extendedProperties extends js.Object
+  sealed trait extendedProperties
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
   sealed trait extension extends js.Object
   
   @js.native
   sealed trait extensions_page extends js.Object
+  
+  @js.native
+  sealed trait fa
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait failed extends js.Object
@@ -973,46 +1367,85 @@ object chromeDashAppsLibStrings {
   sealed trait female extends js.Object
   
   @js.native
-  sealed trait `file:///*/*` extends js.Object
+  sealed trait fi
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait fileBrowserHandler extends js.Object
+  sealed trait fil
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait fileSystem extends js.Object
+  sealed trait `file:///*/*`
+    extends chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches
   
   @js.native
-  sealed trait fileSystemProvider extends js.Object
+  sealed trait fileBrowserHandler
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
+  
+  @js.native
+  sealed trait fileSystem
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
+  
+  @js.native
+  sealed trait fileSystemProvider
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
   
   @js.native
   sealed trait file_handler extends js.Object
   
   @js.native
-  sealed trait filesystem extends js.Object
+  sealed trait filesystem
+    extends chromeDashAppsLib.WebViewNs.EventsNs.RequestedPermission
   
   @js.native
   sealed trait findupdate extends js.Object
   
   @js.native
-  sealed trait finish extends js.Object
+  sealed trait finish
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.ScanProgressType
   
   @js.native
   sealed trait fixed extends js.Object
   
   @js.native
+  sealed trait fo
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait focus extends js.Object
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait font
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait frame extends js.Object
+  sealed trait fr
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait full extends js.Object
+  sealed trait `fr-CA`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait fullscreen extends js.Object
+  sealed trait `fr-CH`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `fr-FR`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait frame
+    extends chromeDashAppsLib.WebViewNs.ContextType
+  
+  @js.native
+  sealed trait full
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.InterfaceType
+  
+  @js.native
+  sealed trait fullscreen
+    extends chromeDashAppsLib.WebViewNs.EventsNs.RequestedPermission
+       with chromeDashAppsLib.chromeNs.runtimeNs.UndocumentedPermissions
   
   @js.native
   sealed trait fullscreenchange extends js.Object
@@ -1021,25 +1454,54 @@ object chromeDashAppsLibStrings {
   sealed trait fullscreenerror extends js.Object
   
   @js.native
-  sealed trait gamepad extends js.Object
+  sealed trait fy
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait gcm extends js.Object
+  sealed trait ga
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait geolocation extends js.Object
+  sealed trait gamepad
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
   
   @js.native
-  sealed trait getter extends js.Object
+  sealed trait gcm
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait goog extends js.Object
+  sealed trait gd
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait googDOT extends js.Object
+  sealed trait geolocation
+    extends chromeDashAppsLib.chromeNs.runtimeNs.NotAllowedAsOptionalPermissions
+       with chromeDashAppsLib.chromeNs.runtimeNs.Permission
+       with chromeDashAppsLib.WebViewNs.EventsNs.RequestedPermission
   
   @js.native
-  sealed trait google extends js.Object
+  sealed trait getter
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.underscoreInternalUnderscoreNs.ObjectFunction
+  
+  @js.native
+  sealed trait gl
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait gn
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait goog
+    extends chromeDashAppsLib.chromeNs.gcmNs.DisallowedKeys
+  
+  @js.native
+  sealed trait googDOT
+    extends chromeDashAppsLib.chromeNs.gcmNs.DisallowedKeys
+  
+  @js.native
+  sealed trait google
+    extends chromeDashAppsLib.chromeNs.gcmNs.DisallowedKeys
   
   @js.native
   sealed trait gotpointercapture extends js.Object
@@ -1048,37 +1510,102 @@ object chromeDashAppsLibStrings {
   sealed trait granted extends js.Object
   
   @js.native
-  sealed trait hid extends js.Object
+  sealed trait gu
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ha
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait haw
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait he
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait hi
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait hid
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
+  
+  @js.native
+  sealed trait hmn
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait hosted_app extends js.Object
   
   @js.native
-  sealed trait `http://*/*` extends js.Object
+  sealed trait hr
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait `https://*/*` extends js.Object
+  sealed trait ht
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait `https://wwwDOTgoogle-analyticsDOTcom/*` extends js.Object
+  sealed trait `http://*/*`
+    extends chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches
   
   @js.native
-  sealed trait `https://wwwDOTgoogleapisDOTcom/*` extends js.Object
+  sealed trait `https://*/*`
+    extends chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches
   
   @js.native
-  sealed trait identity extends js.Object
+  sealed trait `https://wwwDOTgoogle-analyticsDOTcom/*`
+    extends chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches
   
   @js.native
-  sealed trait idle extends js.Object
+  sealed trait `https://wwwDOTgoogleapisDOTcom/*`
+    extends chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches
   
   @js.native
-  sealed trait if_needed extends js.Object
+  sealed trait hu
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait hy
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait ia
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait id
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait identity
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
+  
+  @js.native
+  sealed trait idle
+    extends chromeDashAppsLib.chromeNs.idleNs.IdleState
+       with chromeDashAppsLib.chromeNs.runtimeNs.Permission
+  
+  @js.native
+  sealed trait if_needed
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.Interactive
+  
+  @js.native
+  sealed trait ig
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ignore
+    extends chromeDashAppsLib.WebViewNs.EventsNs.WindowOpenDisposition
+  
+  @js.native
+  sealed trait image
+    extends chromeDashAppsLib.WebViewNs.ContextType
+       with chromeDashAppsLib.chromeNs.contextMenusNs.MediaType
+       with chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait in extends js.Object
@@ -1087,13 +1614,18 @@ object chromeDashAppsLibStrings {
   sealed trait in_use extends js.Object
   
   @js.native
-  sealed trait incognito_persistent extends js.Object
+  sealed trait incognito_persistent
+    extends chromeDashAppsLib.chromeNs.typesNs.ChromeSettingScope
+       with chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.Scope
   
   @js.native
-  sealed trait incognito_session_only extends js.Object
+  sealed trait incognito_session_only
+    extends chromeDashAppsLib.chromeNs.typesNs.ChromeSettingScope
+       with chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.Scope
   
   @js.native
-  sealed trait indicate extends js.Object
+  sealed trait indicate
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
   sealed trait initializing extends js.Object
@@ -1108,7 +1640,8 @@ object chromeDashAppsLibStrings {
   sealed trait installed_notification extends js.Object
   
   @js.native
-  sealed trait integer extends js.Object
+  sealed trait integer
+    extends chromeDashAppsLib.chromeNs.runtimeNs.JSONBasicTypes
   
   @js.native
   sealed trait interface extends js.Object
@@ -1120,25 +1653,58 @@ object chromeDashAppsLibStrings {
   sealed trait invalid extends js.Object
   
   @js.native
-  sealed trait ios extends js.Object
+  sealed trait ios
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.OS
+  
+  @js.native
+  sealed trait is
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait isochronous extends js.Object
   
   @js.native
-  sealed trait joystick extends js.Object
+  sealed trait it
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait jpeg extends js.Object
+  sealed trait `it-CH`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `it-IT`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ja
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait joystick
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
+  
+  @js.native
+  sealed trait jpeg
+    extends chromeDashAppsLib.chromeNs.clipboardNs.ImageType
+  
+  @js.native
+  sealed trait jv
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ka
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait keep extends js.Object
   
   @js.native
-  sealed trait keyboard extends js.Object
+  sealed trait keyboard
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
   
   @js.native
-  sealed trait keyboardMouseCombo extends js.Object
+  sealed trait keyboardMouseCombo
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
   
   @js.native
   sealed trait keydown extends js.Object
@@ -1150,13 +1716,43 @@ object chromeDashAppsLibStrings {
   sealed trait keyup extends js.Object
   
   @js.native
-  sealed trait kill extends js.Object
+  sealed trait kill
+    extends chromeDashAppsLib.WebViewNs.EventsNs.ExitEventReason
   
   @js.native
   sealed trait kiosk extends js.Object
   
   @js.native
-  sealed trait known extends js.Object
+  sealed trait kk
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait km
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait kn
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait known
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceFilterType
+  
+  @js.native
+  sealed trait ko
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ku
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ky
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait la
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait last_write_win extends js.Object
@@ -1165,13 +1761,18 @@ object chromeDashAppsLibStrings {
   sealed trait launcher extends js.Object
   
   @js.native
+  sealed trait lb
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
   sealed trait legacy_packaged_app extends js.Object
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link
+    extends chromeDashAppsLib.WebViewNs.ContextType
   
   @js.native
   sealed trait linkChanged extends js.Object
@@ -1183,10 +1784,19 @@ object chromeDashAppsLibStrings {
   sealed trait linkUp extends js.Object
   
   @js.native
-  sealed trait linux extends js.Object
+  sealed trait linux
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.OS
   
   @js.native
   sealed trait list extends js.Object
+  
+  @js.native
+  sealed trait ln
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait lo
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait load extends js.Object
@@ -1210,7 +1820,8 @@ object chromeDashAppsLibStrings {
   sealed trait loadend extends js.Object
   
   @js.native
-  sealed trait loadplugin extends js.Object
+  sealed trait loadplugin
+    extends chromeDashAppsLib.WebViewNs.EventsNs.RequestedPermission
   
   @js.native
   sealed trait loadredirect extends js.Object
@@ -1222,28 +1833,42 @@ object chromeDashAppsLibStrings {
   sealed trait loadstop extends js.Object
   
   @js.native
-  sealed trait local extends js.Object
+  sealed trait local
+    extends chromeDashAppsLib.chromeNs.storageNs.StorageAreas
   
   @js.native
   sealed trait local_to_remote extends js.Object
   
   @js.native
-  sealed trait locked extends js.Object
+  sealed trait locked
+    extends chromeDashAppsLib.chromeNs.idleNs.IdleState
   
   @js.native
   sealed trait lostpointercapture extends js.Object
   
   @js.native
-  sealed trait mac extends js.Object
+  sealed trait lt
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait main_frame extends js.Object
+  sealed trait lv
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait mac
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.OS
+  
+  @js.native
+  sealed trait main_frame
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait male extends js.Object
   
   @js.native
-  sealed trait managed extends js.Object
+  sealed trait managed
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ManagedObject
+       with chromeDashAppsLib.chromeNs.storageNs.StorageAreas
   
   @js.native
   sealed trait management_api extends js.Object
@@ -1255,22 +1880,37 @@ object chromeDashAppsLibStrings {
   sealed trait maximized extends js.Object
   
   @js.native
-  sealed trait mdns extends js.Object
+  sealed trait mdns
+    extends chromeDashAppsLib.chromeNs.runtimeNs.NotAllowedAsOptionalPermissions
+       with chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait media extends js.Object
+  sealed trait media
+    extends chromeDashAppsLib.WebViewNs.EventsNs.RequestedPermission
+       with chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait mediaGalleries extends js.Object
+  sealed trait mediaGalleries
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait media_pipeline_error extends js.Object
   
   @js.native
-  sealed trait mimeTypeAndTags extends js.Object
+  sealed trait mg
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait mimeTypeOnly extends js.Object
+  sealed trait mi
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait mimeTypeAndTags
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.MetadataOptionsType
+  
+  @js.native
+  sealed trait mimeTypeOnly
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.MetadataOptionsType
   
   @js.native
   sealed trait minimized extends js.Object
@@ -1285,13 +1925,31 @@ object chromeDashAppsLibStrings {
   sealed trait mixed extends js.Object
   
   @js.native
+  sealed trait mk
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ml
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait mmx extends js.Object
   
   @js.native
-  sealed trait modem extends js.Object
+  sealed trait mn
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait mouse extends js.Object
+  sealed trait mo
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait modem
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
+  
+  @js.native
+  sealed trait mouse
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
   
   @js.native
   sealed trait mousedown extends js.Object
@@ -1315,40 +1973,81 @@ object chromeDashAppsLibStrings {
   sealed trait mouseup extends js.Object
   
   @js.native
-  sealed trait nativeMessaging extends js.Object
+  sealed trait mr
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ms
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait mt
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait my
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait nativeMessaging
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
+  
+  @js.native
+  sealed trait nb
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ne
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait network extends js.Object
   
   @js.native
-  sealed trait networkingDOTconfig extends js.Object
+  sealed trait networkingDOTconfig
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
   
   @js.native
-  sealed trait networkingDOTonc extends js.Object
+  sealed trait networkingDOTonc
+    extends chromeDashAppsLib.chromeNs.runtimeNs.KioskOnlyPermissions
   
   @js.native
-  sealed trait new_background_tab extends js.Object
+  sealed trait new_background_tab
+    extends chromeDashAppsLib.WebViewNs.EventsNs.WindowOpenDisposition
   
   @js.native
-  sealed trait new_foreground_tab extends js.Object
+  sealed trait new_foreground_tab
+    extends chromeDashAppsLib.WebViewNs.EventsNs.WindowOpenDisposition
   
   @js.native
   sealed trait new_note extends js.Object
   
   @js.native
-  sealed trait new_popup extends js.Object
+  sealed trait new_popup
+    extends chromeDashAppsLib.WebViewNs.EventsNs.WindowOpenDisposition
   
   @js.native
   sealed trait new_tab_page extends js.Object
   
   @js.native
-  sealed trait new_window extends js.Object
+  sealed trait new_window
+    extends chromeDashAppsLib.WebViewNs.EventsNs.WindowOpenDisposition
   
   @js.native
   sealed trait newwindow extends js.Object
   
   @js.native
-  sealed trait no extends js.Object
+  sealed trait nl
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait nn
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait no
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+       with chromeDashAppsLib.chromeNs.mediaGalleriesNs.Interactive
   
   @js.native
   sealed trait no_such_device extends js.Object
@@ -1360,49 +2059,74 @@ object chromeDashAppsLibStrings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends chromeDashAppsLib.WebViewNs.EventsNs.ExitEventReason
   
   @js.native
-  sealed trait not_connected extends js.Object
+  sealed trait not_connected
+    extends chromeDashAppsLib.chromeNs.bluetoothSocketNs.OnReceiveErrorCode
   
   @js.native
-  sealed trait not_controllable extends js.Object
+  sealed trait not_controllable
+    extends chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.LevelOfControl
+       with chromeDashAppsLib.chromeNs.typesNs.LevelOfControl
   
   @js.native
-  sealed trait not_listening extends js.Object
+  sealed trait not_listening
+    extends chromeDashAppsLib.chromeNs.bluetoothSocketNs.OnAcceptErrorCode
   
   @js.native
   sealed trait notification extends js.Object
   
   @js.native
-  sealed trait notifications extends js.Object
+  sealed trait notifications
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait notify extends js.Object
+  sealed trait notify
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends chromeDashAppsLib.chromeNs.runtimeNs.JSONBasicTypes
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait ny
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `object`
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
+  
+  @js.native
+  sealed trait oc
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait off extends js.Object
   
   @js.native
+  sealed trait om
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait on extends js.Object
   
   @js.native
-  sealed trait onAuthRequired extends js.Object
+  sealed trait onAuthRequired
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.Stage
   
   @js.native
-  sealed trait onBeforeRequest extends js.Object
+  sealed trait onBeforeRequest
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.Stage
   
   @js.native
-  sealed trait onBeforeSendHeaders extends js.Object
+  sealed trait onBeforeSendHeaders
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.Stage
   
   @js.native
-  sealed trait onHeadersReceived extends js.Object
+  sealed trait onHeadersReceived
+    extends chromeDashAppsLib.chromeNs.webViewRequestNs.Stage
   
   @js.native
   sealed trait openDirectory extends js.Object
@@ -1417,22 +2141,33 @@ object chromeDashAppsLibStrings {
   sealed trait openbsd extends js.Object
   
   @js.native
+  sealed trait or
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait os_update extends js.Object
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait other
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait out extends js.Object
   
   @js.native
-  sealed trait overrideEscFullscreen extends js.Object
+  sealed trait overrideEscFullscreen
+    extends chromeDashAppsLib.chromeNs.runtimeNs.UndocumentedPermissions
+  
+  @js.native
+  sealed trait pa
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait packaged_app extends js.Object
   
   @js.native
-  sealed trait page extends js.Object
+  sealed trait page
+    extends chromeDashAppsLib.WebViewNs.ContextType
   
   @js.native
   sealed trait page_action extends js.Object
@@ -1441,7 +2176,8 @@ object chromeDashAppsLibStrings {
   sealed trait panel extends js.Object
   
   @js.native
-  sealed trait partial extends js.Object
+  sealed trait partial
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.InterfaceType
   
   @js.native
   sealed trait paste extends js.Object
@@ -1453,16 +2189,20 @@ object chromeDashAppsLibStrings {
   sealed trait pending extends js.Object
   
   @js.native
-  sealed trait `per-origin` extends js.Object
+  sealed trait `per-origin`
+    extends chromeDashAppsLib.WebViewNs.ZoomMode
   
   @js.native
-  sealed trait `per-view` extends js.Object
+  sealed trait `per-view`
+    extends chromeDashAppsLib.WebViewNs.ZoomMode
   
   @js.native
   sealed trait periodic extends js.Object
   
   @js.native
-  sealed trait peripheral extends js.Object
+  sealed trait peripheral
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.AdvertisementType
+       with chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
   
   @js.native
   sealed trait permissionrequest extends js.Object
@@ -1471,13 +2211,21 @@ object chromeDashAppsLibStrings {
   sealed trait permissions_increase extends js.Object
   
   @js.native
-  sealed trait phone extends js.Object
+  sealed trait phone
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
+       with chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceType
   
   @js.native
-  sealed trait ping extends js.Object
+  sealed trait ping
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait platformKeys extends js.Object
+  sealed trait pl
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait platformKeys
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
   
   @js.native
   sealed trait play extends js.Object
@@ -1486,10 +2234,13 @@ object chromeDashAppsLibStrings {
   sealed trait playing extends js.Object
   
   @js.native
-  sealed trait png extends js.Object
+  sealed trait png
+    extends chromeDashAppsLib.chromeNs.clipboardNs.ImageType
   
   @js.native
-  sealed trait pointerLock extends js.Object
+  sealed trait pointerLock
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
+       with chromeDashAppsLib.WebViewNs.EventsNs.RequestedPermission
   
   @js.native
   sealed trait pointercancel extends js.Object
@@ -1516,19 +2267,43 @@ object chromeDashAppsLibStrings {
   sealed trait pointerup extends js.Object
   
   @js.native
-  sealed trait power extends js.Object
+  sealed trait power
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait printerProvider extends js.Object
+  sealed trait printerProvider
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait progress extends js.Object
   
   @js.native
-  sealed trait prompt extends js.Object
+  sealed trait prompt
+    extends chromeDashAppsLib.WebViewNs.EventsNs.DialogMessageType
   
   @js.native
-  sealed trait proxy extends js.Object
+  sealed trait proxy
+    extends chromeDashAppsLib.chromeNs.runtimeNs.NotAllowedAsOptionalPermissions
+  
+  @js.native
+  sealed trait ps
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait pt
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `pt-BR`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `pt-PT`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait qu
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait radio extends js.Object
@@ -1537,19 +2312,26 @@ object chromeDashAppsLibStrings {
   sealed trait ratechange extends js.Object
   
   @js.native
-  sealed trait read extends js.Object
+  sealed trait read
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
+       with chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.DescriptorPermissions
   
   @js.native
-  sealed trait regular extends js.Object
+  sealed trait regular
+    extends chromeDashAppsLib.chromeNs.typesNs.ChromeSettingScope
+       with chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.Scope
   
   @js.native
-  sealed trait regular_only extends js.Object
+  sealed trait regular_only
+    extends chromeDashAppsLib.chromeNs.typesNs.ChromeSettingScope
+       with chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.Scope
   
   @js.native
   sealed trait rejected extends js.Object
   
   @js.native
-  sealed trait reliableWrite extends js.Object
+  sealed trait reliableWrite
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
   sealed trait reload extends js.Object
@@ -1591,28 +2373,47 @@ object chromeDashAppsLibStrings {
   sealed trait right extends js.Object
   
   @js.native
+  sealed trait rm
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ro
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait rsaSign extends js.Object
+  
+  @js.native
+  sealed trait ru
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait running extends js.Object
   
   @js.native
-  sealed trait runtime extends js.Object
+  sealed trait runtime
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait saveFile extends js.Object
   
   @js.native
-  sealed trait save_to_disk extends js.Object
+  sealed trait save_to_disk
+    extends chromeDashAppsLib.WebViewNs.EventsNs.WindowOpenDisposition
   
   @js.native
   sealed trait screen extends js.Object
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait script
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait scroll extends js.Object
+  
+  @js.native
+  sealed trait sd
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait securitypolicyviolation extends js.Object
@@ -1627,19 +2428,26 @@ object chromeDashAppsLibStrings {
   sealed trait select extends js.Object
   
   @js.native
-  sealed trait selection extends js.Object
+  sealed trait selection
+    extends chromeDashAppsLib.WebViewNs.ContextType
   
   @js.native
   sealed trait separator extends js.Object
   
   @js.native
-  sealed trait serial extends js.Object
+  sealed trait serial
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait serviceType extends js.Object
   
   @js.native
-  sealed trait setter extends js.Object
+  sealed trait setter
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.underscoreInternalUnderscoreNs.ObjectFunction
+  
+  @js.native
+  sealed trait sh
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait shared_module_update extends js.Object
@@ -1654,10 +2462,15 @@ object chromeDashAppsLibStrings {
   sealed trait showConfigureDialog extends js.Object
   
   @js.native
+  sealed trait si
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait sideload extends js.Object
   
   @js.native
-  sealed trait signedInDevices extends js.Object
+  sealed trait signedInDevices
+    extends chromeDashAppsLib.chromeNs.runtimeNs.DevOnly
   
   @js.native
   sealed trait `sim-pin` extends js.Object
@@ -1667,6 +2480,34 @@ object chromeDashAppsLibStrings {
   
   @js.native
   sealed trait sizechanged extends js.Object
+  
+  @js.native
+  sealed trait sk
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait sl
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait sm
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait sn
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait so
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait sq
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait sr
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait sse extends js.Object
@@ -1687,25 +2528,38 @@ object chromeDashAppsLibStrings {
   sealed trait ssse3 extends js.Object
   
   @js.native
+  sealed trait st
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait stalled extends js.Object
   
   @js.native
   sealed trait standard extends js.Object
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.ScanProgressType
   
   @js.native
-  sealed trait storage extends js.Object
+  sealed trait storage
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends chromeDashAppsLib.chromeNs.runtimeNs.JSONBasicTypes
   
   @js.native
-  sealed trait stylesheet extends js.Object
+  sealed trait stylesheet
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait sub_frame extends js.Object
+  sealed trait su
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait sub_frame
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait submit extends js.Object
@@ -1720,10 +2574,20 @@ object chromeDashAppsLibStrings {
   sealed trait suspend extends js.Object
   
   @js.native
-  sealed trait sync extends js.Object
+  sealed trait sv
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait syncFileSystem extends js.Object
+  sealed trait sw
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait sync
+    extends chromeDashAppsLib.chromeNs.storageNs.StorageAreas
+  
+  @js.native
+  sealed trait syncFileSystem
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait synced extends js.Object
@@ -1735,34 +2599,52 @@ object chromeDashAppsLibStrings {
   sealed trait system extends js.Object
   
   @js.native
-  sealed trait systemDOTcpu extends js.Object
+  sealed trait systemDOTcpu
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait systemDOTdisplay extends js.Object
+  sealed trait systemDOTdisplay
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait systemDOTmemory extends js.Object
+  sealed trait systemDOTmemory
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait systemDOTnetwork extends js.Object
+  sealed trait systemDOTnetwork
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait systemDOTpowerSource extends js.Object
+  sealed trait systemDOTpowerSource
+    extends chromeDashAppsLib.chromeNs.runtimeNs.KioskOnlyPermissions
   
   @js.native
-  sealed trait systemDOTstorage extends js.Object
+  sealed trait systemDOTstorage
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait system_error extends js.Object
+  sealed trait system_error
+    extends chromeDashAppsLib.chromeNs.bluetoothSocketNs.OnAcceptErrorCode
+       with chromeDashAppsLib.chromeNs.bluetoothSocketNs.OnReceiveErrorCode
   
   @js.native
   sealed trait system_tray extends js.Object
   
   @js.native
+  sealed trait ta
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait tab extends js.Object
   
   @js.native
-  sealed trait tablet extends js.Object
+  sealed trait tablet
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
+       with chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceType
+  
+  @js.native
+  sealed trait te
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait temporary_unavailable extends js.Object
@@ -1777,16 +2659,32 @@ object chromeDashAppsLibStrings {
   sealed trait textPlain extends js.Object
   
   @js.native
+  sealed trait tg
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait th
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait theme extends js.Object
   
   @js.native
   sealed trait throttled extends js.Object
   
   @js.native
+  sealed trait ti
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait timeout_error extends js.Object
   
   @js.native
   sealed trait timeupdate extends js.Object
+  
+  @js.native
+  sealed trait tk
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait tls1 extends js.Object
@@ -1799,6 +2697,10 @@ object chromeDashAppsLibStrings {
   
   @js.native
   sealed trait tls1DOT3 extends js.Object
+  
+  @js.native
+  sealed trait to
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait toggle extends js.Object
@@ -1819,6 +2721,10 @@ object chromeDashAppsLibStrings {
   sealed trait touchstart extends js.Object
   
   @js.native
+  sealed trait tr
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait transitioncancel extends js.Object
   
   @js.native
@@ -1831,25 +2737,49 @@ object chromeDashAppsLibStrings {
   sealed trait transitionstart extends js.Object
   
   @js.native
-  sealed trait tts extends js.Object
+  sealed trait tt
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait und extends js.Object
+  sealed trait tts
+    extends chromeDashAppsLib.chromeNs.runtimeNs.NotAllowedAsOptionalPermissions
+       with chromeDashAppsLib.chromeNs.runtimeNs.Permission
+  
+  @js.native
+  sealed trait tw
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait ug
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait uk
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait und
+    extends chromeDashAppsLib.chromeNs.i18nNs.LanguageCode
   
   @js.native
   sealed trait unhandled extends js.Object
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceType
+       with chromeDashAppsLib.chromeNs.signedInDevicesNs.OS
+       with chromeDashAppsLib.chromeNs.networkingNs.oncNs.underscoreInternalUnderscoreNs.ObjectFunction
   
   @js.native
   sealed trait unknown_error extends js.Object
   
   @js.native
-  sealed trait unlimitedStorage extends js.Object
+  sealed trait unlimitedStorage
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait unmanaged extends js.Object
+  sealed trait unmanaged
+    extends chromeDashAppsLib.chromeNs.networkingNs.oncNs.ManagedObject
   
   @js.native
   sealed trait unresponsive extends js.Object
@@ -1867,70 +2797,106 @@ object chromeDashAppsLibStrings {
   sealed trait updated extends js.Object
   
   @js.native
+  sealed trait ur
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
   sealed trait url_handler extends js.Object
   
   @js.native
-  sealed trait usb extends js.Object
+  sealed trait usb
+    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceVendorIdSource
+       with chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait usbDevices extends js.Object
+  sealed trait usbDevices
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user
+    extends chromeDashAppsLib.chromeNs.extensionTypesNs.CSSOrigin
+  
+  @js.native
+  sealed trait uz
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait vendor extends js.Object
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait vi
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait videoCapture extends js.Object
+  sealed trait video
+    extends chromeDashAppsLib.WebViewNs.ContextType
+       with chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
+       with chromeDashAppsLib.chromeNs.contextMenusNs.MediaType
   
   @js.native
-  sealed trait virtualKeyboard extends js.Object
+  sealed trait videoCapture
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
+  
+  @js.native
+  sealed trait virtualKeyboard
+    extends chromeDashAppsLib.chromeNs.runtimeNs.KioskOnlyPermissions
   
   @js.native
   sealed trait volumechange extends js.Object
   
   @js.native
-  sealed trait vpnProvider extends js.Object
+  sealed trait vpnProvider
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
+  
+  @js.native
+  sealed trait wa
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait waiting extends js.Object
   
   @js.native
-  sealed trait wallpaper extends js.Object
+  sealed trait wallpaper
+    extends chromeDashAppsLib.chromeNs.runtimeNs.ChromeOSOnlyPermissions
+       with chromeDashAppsLib.chromeNs.runtimeNs.NotAllowedAsOptionalPermissions
   
   @js.native
-  sealed trait watch_dropped extends js.Object
+  sealed trait watch_dropped
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.GalleryChangedType
   
   @js.native
   sealed trait webgl extends js.Object
   
   @js.native
-  sealed trait websocket extends js.Object
+  sealed trait websocket
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait webview extends js.Object
+  sealed trait webview
+    extends chromeDashAppsLib.chromeNs.runtimeNs.Permission
   
   @js.native
   sealed trait wheel extends js.Object
   
   @js.native
-  sealed trait win extends js.Object
+  sealed trait win
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.OS
   
   @js.native
   sealed trait window extends js.Object
   
   @js.native
-  sealed trait writableAuxiliaries extends js.Object
+  sealed trait writableAuxiliaries
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
-  sealed trait write extends js.Object
+  sealed trait write
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
+       with chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.DescriptorPermissions
   
   @js.native
-  sealed trait writeWithoutResponse extends js.Object
+  sealed trait writeWithoutResponse
+    extends chromeDashAppsLib.chromeNs.bluetoothLowEnergyNs.CharacteristicProperties
   
   @js.native
   sealed trait `x86-32` extends js.Object
@@ -1939,13 +2905,67 @@ object chromeDashAppsLibStrings {
   sealed trait `x86-64` extends js.Object
   
   @js.native
-  sealed trait xmlhttprequest extends js.Object
+  sealed trait xh
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
-  sealed trait yes extends js.Object
+  sealed trait xmlhttprequest
+    extends chromeDashAppsLib.chromeNs.webRequestNs.ResourceType
+  
+  @js.native
+  sealed trait yes
+    extends chromeDashAppsLib.chromeNs.mediaGalleriesNs.Interactive
+  
+  @js.native
+  sealed trait yi
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait yo
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait zh
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `zh-CN`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `zh-HK`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait `zh-TW`
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait zh_hans_cn
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait zh_hans_sg
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait zh_hant_hk
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait zh_hant_mo
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
+  
+  @js.native
+  sealed trait zh_hant_tw
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @js.native
   sealed trait zoomchange extends js.Object
+  
+  @js.native
+  sealed trait zu
+    extends chromeDashAppsLib.chromeNs.i18nNs.kLanguageInfoTable
   
   @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
@@ -2246,6 +3266,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def admin: admin = "admin".asInstanceOf[admin]
   @scala.inline
+  def af: af = "af".asInstanceOf[af]
+  @scala.inline
   def alarms: alarms = "alarms".asInstanceOf[alarms]
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
@@ -2255,6 +3277,10 @@ object chromeDashAppsLibStrings {
   def allAutoDetected: allAutoDetected = "allAutoDetected".asInstanceOf[allAutoDetected]
   @scala.inline
   def alwaysOnTopWindows: alwaysOnTopWindows = "alwaysOnTopWindows".asInstanceOf[alwaysOnTopWindows]
+  @scala.inline
+  def am: am = "am".asInstanceOf[am]
+  @scala.inline
+  def an: an = "an".asInstanceOf[an]
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   @scala.inline
@@ -2284,9 +3310,15 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def appview: appview = "appview".asInstanceOf[appview]
   @scala.inline
+  def ar: ar = "ar".asInstanceOf[ar]
+  @scala.inline
+  def ar_001: ar_001 = "ar_001".asInstanceOf[ar_001]
+  @scala.inline
   def arm: arm = "arm".asInstanceOf[arm]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
+  def ast: ast = "ast".asInstanceOf[ast]
   @scala.inline
   def asynchronous: asynchronous = "asynchronous".asInstanceOf[asynchronous]
   @scala.inline
@@ -2306,15 +3338,27 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def avx: avx = "avx".asInstanceOf[avx]
   @scala.inline
+  def az: az = "az".asInstanceOf[az]
+  @scala.inline
   def background: background = "background".asInstanceOf[background]
   @scala.inline
   def basic: basic = "basic".asInstanceOf[basic]
+  @scala.inline
+  def be: be = "be".asInstanceOf[be]
+  @scala.inline
+  def bg: bg = "bg".asInstanceOf[bg]
+  @scala.inline
+  def bh: bh = "bh".asInstanceOf[bh]
   @scala.inline
   def bluetooth: bluetooth = "bluetooth".asInstanceOf[bluetooth]
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   @scala.inline
+  def bn: bn = "bn".asInstanceOf[bn]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
+  def br: br = "br".asInstanceOf[br]
   @scala.inline
   def broadcast: broadcast = "broadcast".asInstanceOf[broadcast]
   @scala.inline
@@ -2322,7 +3366,11 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def browser_action: browser_action = "browser_action".asInstanceOf[browser_action]
   @scala.inline
+  def bs: bs = "bs".asInstanceOf[bs]
+  @scala.inline
   def bulk: bulk = "bulk".asInstanceOf[bulk]
+  @scala.inline
+  def ca: ca = "ca".asInstanceOf[ca]
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
@@ -2333,6 +3381,8 @@ object chromeDashAppsLibStrings {
   def capabilities_negotiation_error: capabilities_negotiation_error = "capabilities_negotiation_error".asInstanceOf[capabilities_negotiation_error]
   @scala.inline
   def carAudio: carAudio = "carAudio".asInstanceOf[carAudio]
+  @scala.inline
+  def ceb: ceb = "ceb".asInstanceOf[ceb]
   @scala.inline
   def certificateProvider: certificateProvider = "certificateProvider".asInstanceOf[certificateProvider]
   @scala.inline
@@ -2352,6 +3402,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def chrome_update: chrome_update = "chrome_update".asInstanceOf[chrome_update]
   @scala.inline
+  def ckb: ckb = "ckb".asInstanceOf[ckb]
+  @scala.inline
   def `class`: `class` = "class".asInstanceOf[`class`]
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
@@ -2365,6 +3417,8 @@ object chromeDashAppsLibStrings {
   def clipboardWrite: clipboardWrite = "clipboardWrite".asInstanceOf[clipboardWrite]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
+  def co: co = "co".asInstanceOf[co]
   @scala.inline
   def collapse_key: collapse_key = "collapse_key".asInstanceOf[collapse_key]
   @scala.inline
@@ -2408,6 +3462,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def cros: cros = "cros".asInstanceOf[cros]
   @scala.inline
+  def cs: cs = "cs".asInstanceOf[cs]
+  @scala.inline
   def csp_report: csp_report = "csp_report".asInstanceOf[csp_report]
   @scala.inline
   def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
@@ -2416,9 +3472,23 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def cut: cut = "cut".asInstanceOf[cut]
   @scala.inline
+  def cy: cy = "cy".asInstanceOf[cy]
+  @scala.inline
+  def da: da = "da".asInstanceOf[da]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
+  @scala.inline
+  def de: de = "de".asInstanceOf[de]
+  @scala.inline
+  def `de-AT`: `de-AT` = "de-AT".asInstanceOf[`de-AT`]
+  @scala.inline
+  def `de-CH`: `de-CH` = "de-CH".asInstanceOf[`de-CH`]
+  @scala.inline
+  def `de-DE`: `de-DE` = "de-DE".asInstanceOf[`de-DE`]
+  @scala.inline
+  def `de-LI`: `de-LI` = "de-LI".asInstanceOf[`de-LI`]
   @scala.inline
   def debugger: debugger = "debugger".asInstanceOf[debugger]
   @scala.inline
@@ -2540,7 +3610,29 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def editable: editable = "editable".asInstanceOf[editable]
   @scala.inline
+  def el: el = "el".asInstanceOf[el]
+  @scala.inline
   def emptied: emptied = "emptied".asInstanceOf[emptied]
+  @scala.inline
+  def en: en = "en".asInstanceOf[en]
+  @scala.inline
+  def `en-AU`: `en-AU` = "en-AU".asInstanceOf[`en-AU`]
+  @scala.inline
+  def `en-CA`: `en-CA` = "en-CA".asInstanceOf[`en-CA`]
+  @scala.inline
+  def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
+  @scala.inline
+  def `en-IN`: `en-IN` = "en-IN".asInstanceOf[`en-IN`]
+  @scala.inline
+  def `en-NZ`: `en-NZ` = "en-NZ".asInstanceOf[`en-NZ`]
+  @scala.inline
+  def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
+  @scala.inline
+  def `en-ZA`: `en-ZA` = "en-ZA".asInstanceOf[`en-ZA`]
+  @scala.inline
+  def en_001: en_001 = "en_001".asInstanceOf[en_001]
+  @scala.inline
+  def en_150: en_150 = "en_150".asInstanceOf[en_150]
   @scala.inline
   def enabled: enabled = "enabled".asInstanceOf[enabled]
   @scala.inline
@@ -2568,9 +3660,41 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def enterpriseDOTplatformKeys: enterpriseDOTplatformKeys = "enterprise.platformKeys".asInstanceOf[enterpriseDOTplatformKeys]
   @scala.inline
+  def eo: eo = "eo".asInstanceOf[eo]
+  @scala.inline
   def ephemeral_app: ephemeral_app = "ephemeral_app".asInstanceOf[ephemeral_app]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def es: es = "es".asInstanceOf[es]
+  @scala.inline
+  def `es-419`: `es-419` = "es-419".asInstanceOf[`es-419`]
+  @scala.inline
+  def `es-AR`: `es-AR` = "es-AR".asInstanceOf[`es-AR`]
+  @scala.inline
+  def `es-CL`: `es-CL` = "es-CL".asInstanceOf[`es-CL`]
+  @scala.inline
+  def `es-CO`: `es-CO` = "es-CO".asInstanceOf[`es-CO`]
+  @scala.inline
+  def `es-CR`: `es-CR` = "es-CR".asInstanceOf[`es-CR`]
+  @scala.inline
+  def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
+  @scala.inline
+  def `es-HN`: `es-HN` = "es-HN".asInstanceOf[`es-HN`]
+  @scala.inline
+  def `es-MX`: `es-MX` = "es-MX".asInstanceOf[`es-MX`]
+  @scala.inline
+  def `es-PE`: `es-PE` = "es-PE".asInstanceOf[`es-PE`]
+  @scala.inline
+  def `es-US`: `es-US` = "es-US".asInstanceOf[`es-US`]
+  @scala.inline
+  def `es-UY`: `es-UY` = "es-UY".asInstanceOf[`es-UY`]
+  @scala.inline
+  def `es-VE`: `es-VE` = "es-VE".asInstanceOf[`es-VE`]
+  @scala.inline
+  def et: et = "et".asInstanceOf[et]
+  @scala.inline
+  def eu: eu = "eu".asInstanceOf[eu]
   @scala.inline
   def exit: exit = "exit".asInstanceOf[exit]
   @scala.inline
@@ -2584,6 +3708,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def extensions_page: extensions_page = "extensions_page".asInstanceOf[extensions_page]
   @scala.inline
+  def fa: fa = "fa".asInstanceOf[fa]
+  @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
@@ -2591,6 +3717,10 @@ object chromeDashAppsLibStrings {
   def feedback: feedback = "feedback".asInstanceOf[feedback]
   @scala.inline
   def female: female = "female".asInstanceOf[female]
+  @scala.inline
+  def fi: fi = "fi".asInstanceOf[fi]
+  @scala.inline
+  def fil: fil = "fil".asInstanceOf[fil]
   @scala.inline
   def `file:///*/*`: `file:///*/*` = "file:///*/*".asInstanceOf[`file:///*/*`]
   @scala.inline
@@ -2610,9 +3740,19 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   @scala.inline
+  def fo: fo = "fo".asInstanceOf[fo]
+  @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def font: font = "font".asInstanceOf[font]
+  @scala.inline
+  def fr: fr = "fr".asInstanceOf[fr]
+  @scala.inline
+  def `fr-CA`: `fr-CA` = "fr-CA".asInstanceOf[`fr-CA`]
+  @scala.inline
+  def `fr-CH`: `fr-CH` = "fr-CH".asInstanceOf[`fr-CH`]
+  @scala.inline
+  def `fr-FR`: `fr-FR` = "fr-FR".asInstanceOf[`fr-FR`]
   @scala.inline
   def frame: frame = "frame".asInstanceOf[frame]
   @scala.inline
@@ -2624,13 +3764,23 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
   @scala.inline
+  def fy: fy = "fy".asInstanceOf[fy]
+  @scala.inline
+  def ga: ga = "ga".asInstanceOf[ga]
+  @scala.inline
   def gamepad: gamepad = "gamepad".asInstanceOf[gamepad]
   @scala.inline
   def gcm: gcm = "gcm".asInstanceOf[gcm]
   @scala.inline
+  def gd: gd = "gd".asInstanceOf[gd]
+  @scala.inline
   def geolocation: geolocation = "geolocation".asInstanceOf[geolocation]
   @scala.inline
   def getter: getter = "getter".asInstanceOf[getter]
+  @scala.inline
+  def gl: gl = "gl".asInstanceOf[gl]
+  @scala.inline
+  def gn: gn = "gn".asInstanceOf[gn]
   @scala.inline
   def goog: goog = "goog".asInstanceOf[goog]
   @scala.inline
@@ -2642,9 +3792,25 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def granted: granted = "granted".asInstanceOf[granted]
   @scala.inline
+  def gu: gu = "gu".asInstanceOf[gu]
+  @scala.inline
+  def ha: ha = "ha".asInstanceOf[ha]
+  @scala.inline
+  def haw: haw = "haw".asInstanceOf[haw]
+  @scala.inline
+  def he: he = "he".asInstanceOf[he]
+  @scala.inline
+  def hi: hi = "hi".asInstanceOf[hi]
+  @scala.inline
   def hid: hid = "hid".asInstanceOf[hid]
   @scala.inline
+  def hmn: hmn = "hmn".asInstanceOf[hmn]
+  @scala.inline
   def hosted_app: hosted_app = "hosted_app".asInstanceOf[hosted_app]
+  @scala.inline
+  def hr: hr = "hr".asInstanceOf[hr]
+  @scala.inline
+  def ht: ht = "ht".asInstanceOf[ht]
   @scala.inline
   def `http://*/*`: `http://*/*` = "http://*/*".asInstanceOf[`http://*/*`]
   @scala.inline
@@ -2654,11 +3820,21 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def `https://wwwDOTgoogleapisDOTcom/*`: `https://wwwDOTgoogleapisDOTcom/*` = "https://www.googleapis.com/*".asInstanceOf[`https://wwwDOTgoogleapisDOTcom/*`]
   @scala.inline
+  def hu: hu = "hu".asInstanceOf[hu]
+  @scala.inline
+  def hy: hy = "hy".asInstanceOf[hy]
+  @scala.inline
+  def ia: ia = "ia".asInstanceOf[ia]
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
+  @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   @scala.inline
   def idle: idle = "idle".asInstanceOf[idle]
   @scala.inline
   def if_needed: if_needed = "if_needed".asInstanceOf[if_needed]
+  @scala.inline
+  def ig: ig = "ig".asInstanceOf[ig]
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   @scala.inline
@@ -2692,11 +3868,25 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   @scala.inline
+  def is: is = "is".asInstanceOf[is]
+  @scala.inline
   def isochronous: isochronous = "isochronous".asInstanceOf[isochronous]
+  @scala.inline
+  def it: it = "it".asInstanceOf[it]
+  @scala.inline
+  def `it-CH`: `it-CH` = "it-CH".asInstanceOf[`it-CH`]
+  @scala.inline
+  def `it-IT`: `it-IT` = "it-IT".asInstanceOf[`it-IT`]
+  @scala.inline
+  def ja: ja = "ja".asInstanceOf[ja]
   @scala.inline
   def joystick: joystick = "joystick".asInstanceOf[joystick]
   @scala.inline
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  @scala.inline
+  def jv: jv = "jv".asInstanceOf[jv]
+  @scala.inline
+  def ka: ka = "ka".asInstanceOf[ka]
   @scala.inline
   def keep: keep = "keep".asInstanceOf[keep]
   @scala.inline
@@ -2714,11 +3904,27 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def kiosk: kiosk = "kiosk".asInstanceOf[kiosk]
   @scala.inline
+  def kk: kk = "kk".asInstanceOf[kk]
+  @scala.inline
+  def km: km = "km".asInstanceOf[km]
+  @scala.inline
+  def kn: kn = "kn".asInstanceOf[kn]
+  @scala.inline
   def known: known = "known".asInstanceOf[known]
+  @scala.inline
+  def ko: ko = "ko".asInstanceOf[ko]
+  @scala.inline
+  def ku: ku = "ku".asInstanceOf[ku]
+  @scala.inline
+  def ky: ky = "ky".asInstanceOf[ky]
+  @scala.inline
+  def la: la = "la".asInstanceOf[la]
   @scala.inline
   def last_write_win: last_write_win = "last_write_win".asInstanceOf[last_write_win]
   @scala.inline
   def launcher: launcher = "launcher".asInstanceOf[launcher]
+  @scala.inline
+  def lb: lb = "lb".asInstanceOf[lb]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -2735,6 +3941,10 @@ object chromeDashAppsLibStrings {
   def linux: linux = "linux".asInstanceOf[linux]
   @scala.inline
   def list: list = "list".asInstanceOf[list]
+  @scala.inline
+  def ln: ln = "ln".asInstanceOf[ln]
+  @scala.inline
+  def lo: lo = "lo".asInstanceOf[lo]
   @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
@@ -2766,6 +3976,10 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   @scala.inline
+  def lt: lt = "lt".asInstanceOf[lt]
+  @scala.inline
+  def lv: lv = "lv".asInstanceOf[lv]
+  @scala.inline
   def mac: mac = "mac".asInstanceOf[mac]
   @scala.inline
   def main_frame: main_frame = "main_frame".asInstanceOf[main_frame]
@@ -2788,6 +4002,10 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def media_pipeline_error: media_pipeline_error = "media_pipeline_error".asInstanceOf[media_pipeline_error]
   @scala.inline
+  def mg: mg = "mg".asInstanceOf[mg]
+  @scala.inline
+  def mi: mi = "mi".asInstanceOf[mi]
+  @scala.inline
   def mimeTypeAndTags: mimeTypeAndTags = "mimeTypeAndTags".asInstanceOf[mimeTypeAndTags]
   @scala.inline
   def mimeTypeOnly: mimeTypeOnly = "mimeTypeOnly".asInstanceOf[mimeTypeOnly]
@@ -2800,7 +4018,15 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
+  def mk: mk = "mk".asInstanceOf[mk]
+  @scala.inline
+  def ml: ml = "ml".asInstanceOf[ml]
+  @scala.inline
   def mmx: mmx = "mmx".asInstanceOf[mmx]
+  @scala.inline
+  def mn: mn = "mn".asInstanceOf[mn]
+  @scala.inline
+  def mo: mo = "mo".asInstanceOf[mo]
   @scala.inline
   def modem: modem = "modem".asInstanceOf[modem]
   @scala.inline
@@ -2820,7 +4046,19 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   @scala.inline
+  def mr: mr = "mr".asInstanceOf[mr]
+  @scala.inline
+  def ms: ms = "ms".asInstanceOf[ms]
+  @scala.inline
+  def mt: mt = "mt".asInstanceOf[mt]
+  @scala.inline
+  def my: my = "my".asInstanceOf[my]
+  @scala.inline
   def nativeMessaging: nativeMessaging = "nativeMessaging".asInstanceOf[nativeMessaging]
+  @scala.inline
+  def nb: nb = "nb".asInstanceOf[nb]
+  @scala.inline
+  def ne: ne = "ne".asInstanceOf[ne]
   @scala.inline
   def network: network = "network".asInstanceOf[network]
   @scala.inline
@@ -2841,6 +4079,10 @@ object chromeDashAppsLibStrings {
   def new_window: new_window = "new_window".asInstanceOf[new_window]
   @scala.inline
   def newwindow: newwindow = "newwindow".asInstanceOf[newwindow]
+  @scala.inline
+  def nl: nl = "nl".asInstanceOf[nl]
+  @scala.inline
+  def nn: nn = "nn".asInstanceOf[nn]
   @scala.inline
   def no: no = "no".asInstanceOf[no]
   @scala.inline
@@ -2864,9 +4106,15 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
+  def ny: ny = "ny".asInstanceOf[ny]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
+  def oc: oc = "oc".asInstanceOf[oc]
+  @scala.inline
   def off: off = "off".asInstanceOf[off]
+  @scala.inline
+  def om: om = "om".asInstanceOf[om]
   @scala.inline
   def on: on = "on".asInstanceOf[on]
   @scala.inline
@@ -2886,6 +4134,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def openbsd: openbsd = "openbsd".asInstanceOf[openbsd]
   @scala.inline
+  def or: or = "or".asInstanceOf[or]
+  @scala.inline
   def os_update: os_update = "os_update".asInstanceOf[os_update]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
@@ -2893,6 +4143,8 @@ object chromeDashAppsLibStrings {
   def out: out = "out".asInstanceOf[out]
   @scala.inline
   def overrideEscFullscreen: overrideEscFullscreen = "overrideEscFullscreen".asInstanceOf[overrideEscFullscreen]
+  @scala.inline
+  def pa: pa = "pa".asInstanceOf[pa]
   @scala.inline
   def packaged_app: packaged_app = "packaged_app".asInstanceOf[packaged_app]
   @scala.inline
@@ -2925,6 +4177,8 @@ object chromeDashAppsLibStrings {
   def phone: phone = "phone".asInstanceOf[phone]
   @scala.inline
   def ping: ping = "ping".asInstanceOf[ping]
+  @scala.inline
+  def pl: pl = "pl".asInstanceOf[pl]
   @scala.inline
   def platformKeys: platformKeys = "platformKeys".asInstanceOf[platformKeys]
   @scala.inline
@@ -2961,6 +4215,16 @@ object chromeDashAppsLibStrings {
   def prompt: prompt = "prompt".asInstanceOf[prompt]
   @scala.inline
   def proxy: proxy = "proxy".asInstanceOf[proxy]
+  @scala.inline
+  def ps: ps = "ps".asInstanceOf[ps]
+  @scala.inline
+  def pt: pt = "pt".asInstanceOf[pt]
+  @scala.inline
+  def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
+  @scala.inline
+  def `pt-PT`: `pt-PT` = "pt-PT".asInstanceOf[`pt-PT`]
+  @scala.inline
+  def qu: qu = "qu".asInstanceOf[qu]
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
   @scala.inline
@@ -3002,7 +4266,13 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
+  def rm: rm = "rm".asInstanceOf[rm]
+  @scala.inline
+  def ro: ro = "ro".asInstanceOf[ro]
+  @scala.inline
   def rsaSign: rsaSign = "rsaSign".asInstanceOf[rsaSign]
+  @scala.inline
+  def ru: ru = "ru".asInstanceOf[ru]
   @scala.inline
   def running: running = "running".asInstanceOf[running]
   @scala.inline
@@ -3017,6 +4287,8 @@ object chromeDashAppsLibStrings {
   def script: script = "script".asInstanceOf[script]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
+  def sd: sd = "sd".asInstanceOf[sd]
   @scala.inline
   def securitypolicyviolation: securitypolicyviolation = "securitypolicyviolation".asInstanceOf[securitypolicyviolation]
   @scala.inline
@@ -3036,6 +4308,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def setter: setter = "setter".asInstanceOf[setter]
   @scala.inline
+  def sh: sh = "sh".asInstanceOf[sh]
+  @scala.inline
   def shared_module_update: shared_module_update = "shared_module_update".asInstanceOf[shared_module_update]
   @scala.inline
   def shell: shell = "shell".asInstanceOf[shell]
@@ -3043,6 +4317,8 @@ object chromeDashAppsLibStrings {
   def showAddDialog: showAddDialog = "showAddDialog".asInstanceOf[showAddDialog]
   @scala.inline
   def showConfigureDialog: showConfigureDialog = "showConfigureDialog".asInstanceOf[showConfigureDialog]
+  @scala.inline
+  def si: si = "si".asInstanceOf[si]
   @scala.inline
   def sideload: sideload = "sideload".asInstanceOf[sideload]
   @scala.inline
@@ -3053,6 +4329,20 @@ object chromeDashAppsLibStrings {
   def `sim-puk`: `sim-puk` = "sim-puk".asInstanceOf[`sim-puk`]
   @scala.inline
   def sizechanged: sizechanged = "sizechanged".asInstanceOf[sizechanged]
+  @scala.inline
+  def sk: sk = "sk".asInstanceOf[sk]
+  @scala.inline
+  def sl: sl = "sl".asInstanceOf[sl]
+  @scala.inline
+  def sm: sm = "sm".asInstanceOf[sm]
+  @scala.inline
+  def sn: sn = "sn".asInstanceOf[sn]
+  @scala.inline
+  def so: so = "so".asInstanceOf[so]
+  @scala.inline
+  def sq: sq = "sq".asInstanceOf[sq]
+  @scala.inline
+  def sr: sr = "sr".asInstanceOf[sr]
   @scala.inline
   def sse: sse = "sse".asInstanceOf[sse]
   @scala.inline
@@ -3066,6 +4356,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def ssse3: ssse3 = "ssse3".asInstanceOf[ssse3]
   @scala.inline
+  def st: st = "st".asInstanceOf[st]
+  @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
@@ -3078,6 +4370,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
   @scala.inline
+  def su: su = "su".asInstanceOf[su]
+  @scala.inline
   def sub_frame: sub_frame = "sub_frame".asInstanceOf[sub_frame]
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
@@ -3087,6 +4381,10 @@ object chromeDashAppsLibStrings {
   def success: success = "success".asInstanceOf[success]
   @scala.inline
   def suspend: suspend = "suspend".asInstanceOf[suspend]
+  @scala.inline
+  def sv: sv = "sv".asInstanceOf[sv]
+  @scala.inline
+  def sw: sw = "sw".asInstanceOf[sw]
   @scala.inline
   def sync: sync = "sync".asInstanceOf[sync]
   @scala.inline
@@ -3114,9 +4412,13 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def system_tray: system_tray = "system_tray".asInstanceOf[system_tray]
   @scala.inline
+  def ta: ta = "ta".asInstanceOf[ta]
+  @scala.inline
   def tab: tab = "tab".asInstanceOf[tab]
   @scala.inline
   def tablet: tablet = "tablet".asInstanceOf[tablet]
+  @scala.inline
+  def te: te = "te".asInstanceOf[te]
   @scala.inline
   def temporary_unavailable: temporary_unavailable = "temporary_unavailable".asInstanceOf[temporary_unavailable]
   @scala.inline
@@ -3126,13 +4428,21 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def textPlain: textPlain = "textPlain".asInstanceOf[textPlain]
   @scala.inline
+  def tg: tg = "tg".asInstanceOf[tg]
+  @scala.inline
+  def th: th = "th".asInstanceOf[th]
+  @scala.inline
   def theme: theme = "theme".asInstanceOf[theme]
   @scala.inline
   def throttled: throttled = "throttled".asInstanceOf[throttled]
   @scala.inline
+  def ti: ti = "ti".asInstanceOf[ti]
+  @scala.inline
   def timeout_error: timeout_error = "timeout_error".asInstanceOf[timeout_error]
   @scala.inline
   def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
+  @scala.inline
+  def tk: tk = "tk".asInstanceOf[tk]
   @scala.inline
   def tls1: tls1 = "tls1".asInstanceOf[tls1]
   @scala.inline
@@ -3141,6 +4451,8 @@ object chromeDashAppsLibStrings {
   def tls1DOT2: tls1DOT2 = "tls1.2".asInstanceOf[tls1DOT2]
   @scala.inline
   def tls1DOT3: tls1DOT3 = "tls1.3".asInstanceOf[tls1DOT3]
+  @scala.inline
+  def to: to = "to".asInstanceOf[to]
   @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
   @scala.inline
@@ -3154,6 +4466,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   @scala.inline
+  def tr: tr = "tr".asInstanceOf[tr]
+  @scala.inline
   def transitioncancel: transitioncancel = "transitioncancel".asInstanceOf[transitioncancel]
   @scala.inline
   def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
@@ -3162,7 +4476,15 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   @scala.inline
+  def tt: tt = "tt".asInstanceOf[tt]
+  @scala.inline
   def tts: tts = "tts".asInstanceOf[tts]
+  @scala.inline
+  def tw: tw = "tw".asInstanceOf[tw]
+  @scala.inline
+  def ug: ug = "ug".asInstanceOf[ug]
+  @scala.inline
+  def uk: uk = "uk".asInstanceOf[uk]
   @scala.inline
   def und: und = "und".asInstanceOf[und]
   @scala.inline
@@ -3186,6 +4508,8 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def updated: updated = "updated".asInstanceOf[updated]
   @scala.inline
+  def ur: ur = "ur".asInstanceOf[ur]
+  @scala.inline
   def url_handler: url_handler = "url_handler".asInstanceOf[url_handler]
   @scala.inline
   def usb: usb = "usb".asInstanceOf[usb]
@@ -3194,7 +4518,11 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def user: user = "user".asInstanceOf[user]
   @scala.inline
+  def uz: uz = "uz".asInstanceOf[uz]
+  @scala.inline
   def vendor: vendor = "vendor".asInstanceOf[vendor]
+  @scala.inline
+  def vi: vi = "vi".asInstanceOf[vi]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline
@@ -3205,6 +4533,8 @@ object chromeDashAppsLibStrings {
   def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
   @scala.inline
   def vpnProvider: vpnProvider = "vpnProvider".asInstanceOf[vpnProvider]
+  @scala.inline
+  def wa: wa = "wa".asInstanceOf[wa]
   @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
   @scala.inline
@@ -3234,10 +4564,36 @@ object chromeDashAppsLibStrings {
   @scala.inline
   def `x86-64`: `x86-64` = "x86-64".asInstanceOf[`x86-64`]
   @scala.inline
+  def xh: xh = "xh".asInstanceOf[xh]
+  @scala.inline
   def xmlhttprequest: xmlhttprequest = "xmlhttprequest".asInstanceOf[xmlhttprequest]
   @scala.inline
   def yes: yes = "yes".asInstanceOf[yes]
   @scala.inline
+  def yi: yi = "yi".asInstanceOf[yi]
+  @scala.inline
+  def yo: yo = "yo".asInstanceOf[yo]
+  @scala.inline
+  def zh: zh = "zh".asInstanceOf[zh]
+  @scala.inline
+  def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
+  @scala.inline
+  def `zh-HK`: `zh-HK` = "zh-HK".asInstanceOf[`zh-HK`]
+  @scala.inline
+  def `zh-TW`: `zh-TW` = "zh-TW".asInstanceOf[`zh-TW`]
+  @scala.inline
+  def zh_hans_cn: zh_hans_cn = "zh_hans_cn".asInstanceOf[zh_hans_cn]
+  @scala.inline
+  def zh_hans_sg: zh_hans_sg = "zh_hans_sg".asInstanceOf[zh_hans_sg]
+  @scala.inline
+  def zh_hant_hk: zh_hant_hk = "zh_hant_hk".asInstanceOf[zh_hant_hk]
+  @scala.inline
+  def zh_hant_mo: zh_hant_mo = "zh_hant_mo".asInstanceOf[zh_hant_mo]
+  @scala.inline
+  def zh_hant_tw: zh_hant_tw = "zh_hant_tw".asInstanceOf[zh_hant_tw]
+  @scala.inline
   def zoomchange: zoomchange = "zoomchange".asInstanceOf[zoomchange]
+  @scala.inline
+  def zu: zu = "zu".asInstanceOf[zu]
 }
 

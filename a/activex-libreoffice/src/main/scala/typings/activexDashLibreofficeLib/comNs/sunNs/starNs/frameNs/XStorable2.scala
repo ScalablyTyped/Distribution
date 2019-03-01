@@ -23,3 +23,45 @@ trait XStorable2 extends XStorable {
   ): scala.Unit
 }
 
+object XStorable2 {
+  @scala.inline
+  def apply(
+    Location: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getLocation: js.Function0[java.lang.String],
+    hasLocation: js.Function0[scala.Boolean],
+    isReadonly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    store: js.Function0[scala.Unit],
+    storeAsURL: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    storeSelf: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    storeToURL: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XStorable2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Location")(Location)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLocation")(getLocation)
+    __obj.updateDynamic("hasLocation")(hasLocation)
+    __obj.updateDynamic("isReadonly")(isReadonly)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("store")(store)
+    __obj.updateDynamic("storeAsURL")(storeAsURL)
+    __obj.updateDynamic("storeSelf")(storeSelf)
+    __obj.updateDynamic("storeToURL")(storeToURL)
+    __obj.asInstanceOf[XStorable2]
+  }
+}
+

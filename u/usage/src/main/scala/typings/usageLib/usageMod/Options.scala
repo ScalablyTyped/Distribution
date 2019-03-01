@@ -9,3 +9,12 @@ trait Options extends js.Object {
   var keepHistory: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(keepHistory: scala.Boolean): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keepHistory")(keepHistory)
+    __obj.asInstanceOf[Options]
+  }
+}
+

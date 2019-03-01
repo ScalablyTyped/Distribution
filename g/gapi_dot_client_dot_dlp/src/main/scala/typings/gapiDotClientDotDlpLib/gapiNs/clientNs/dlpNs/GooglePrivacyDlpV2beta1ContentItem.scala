@@ -20,3 +20,20 @@ trait GooglePrivacyDlpV2beta1ContentItem extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1ContentItem {
+  @scala.inline
+  def apply(
+    data: java.lang.String = null,
+    table: GooglePrivacyDlpV2beta1Table = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): GooglePrivacyDlpV2beta1ContentItem = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (table != null) __obj.updateDynamic("table")(table)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1ContentItem]
+  }
+}
+

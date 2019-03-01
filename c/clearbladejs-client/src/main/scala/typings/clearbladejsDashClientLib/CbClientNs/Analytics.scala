@@ -17,3 +17,30 @@ trait Analytics extends js.Object {
   def getUserEvents(filter: QueryFilter, callback: CbCallback): scala.Unit
 }
 
+object Analytics {
+  @scala.inline
+  def apply(
+    URI: java.lang.String,
+    getCount: js.Function2[QueryFilter, CbCallback, scala.Unit],
+    getEventList: js.Function2[QueryFilter, CbCallback, scala.Unit],
+    getEventTotals: js.Function2[QueryFilter, CbCallback, scala.Unit],
+    getStorage: js.Function2[QueryFilter, CbCallback, scala.Unit],
+    getUserEvents: js.Function2[QueryFilter, CbCallback, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    user: APIUser
+  ): Analytics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getEventList")(getEventList)
+    __obj.updateDynamic("getEventTotals")(getEventTotals)
+    __obj.updateDynamic("getStorage")(getStorage)
+    __obj.updateDynamic("getUserEvents")(getUserEvents)
+    __obj.updateDynamic("systemKey")(systemKey)
+    __obj.updateDynamic("systemSecret")(systemSecret)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[Analytics]
+  }
+}
+

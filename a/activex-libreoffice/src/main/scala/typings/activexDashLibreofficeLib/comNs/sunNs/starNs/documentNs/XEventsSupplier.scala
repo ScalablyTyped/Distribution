@@ -20,3 +20,22 @@ trait XEventsSupplier
   def getEvents(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameReplace
 }
 
+object XEventsSupplier {
+  @scala.inline
+  def apply(
+    Events: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameReplace,
+    acquire: js.Function0[scala.Unit],
+    getEvents: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameReplace],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XEventsSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Events")(Events)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getEvents")(getEvents)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XEventsSupplier]
+  }
+}
+

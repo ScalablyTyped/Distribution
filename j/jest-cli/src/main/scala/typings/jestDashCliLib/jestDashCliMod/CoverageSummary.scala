@@ -13,3 +13,22 @@ trait CoverageSummary extends js.Object {
   def merge(other: CoverageSummary): scala.Unit
 }
 
+object CoverageSummary {
+  @scala.inline
+  def apply(
+    branches: FileCoverageTotal,
+    functions: FileCoverageTotal,
+    lines: FileCoverageTotal,
+    merge: js.Function1[CoverageSummary, scala.Unit],
+    statements: FileCoverageTotal
+  ): CoverageSummary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("branches")(branches)
+    __obj.updateDynamic("functions")(functions)
+    __obj.updateDynamic("lines")(lines)
+    __obj.updateDynamic("merge")(merge)
+    __obj.updateDynamic("statements")(statements)
+    __obj.asInstanceOf[CoverageSummary]
+  }
+}
+

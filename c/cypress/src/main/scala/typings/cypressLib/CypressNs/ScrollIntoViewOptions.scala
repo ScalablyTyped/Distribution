@@ -14,3 +14,22 @@ trait ScrollIntoViewOptions extends ScrollToOptions {
   var offset: Offset
 }
 
+object ScrollIntoViewOptions {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    easing: cypressLib.cypressLibStrings.swing | cypressLib.cypressLibStrings.linear,
+    log: scala.Boolean,
+    offset: Offset,
+    timeout: scala.Double
+  ): ScrollIntoViewOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[ScrollIntoViewOptions]
+  }
+}
+

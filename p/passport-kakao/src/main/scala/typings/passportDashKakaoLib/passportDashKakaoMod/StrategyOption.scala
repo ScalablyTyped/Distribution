@@ -13,3 +13,22 @@ trait StrategyOption extends js.Object {
   var scopeSeparator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StrategyOption {
+  @scala.inline
+  def apply(
+    callbackURL: java.lang.String,
+    clientID: java.lang.String,
+    clientSecret: java.lang.String,
+    customHeaders: java.lang.String = null,
+    scopeSeparator: java.lang.String = null
+  ): StrategyOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callbackURL")(callbackURL)
+    __obj.updateDynamic("clientID")(clientID)
+    __obj.updateDynamic("clientSecret")(clientSecret)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
+    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator)
+    __obj.asInstanceOf[StrategyOption]
+  }
+}
+

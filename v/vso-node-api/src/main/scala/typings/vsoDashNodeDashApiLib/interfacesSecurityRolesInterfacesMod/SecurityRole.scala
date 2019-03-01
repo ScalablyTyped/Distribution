@@ -36,3 +36,26 @@ trait SecurityRole extends js.Object {
   var scope: java.lang.String
 }
 
+object SecurityRole {
+  @scala.inline
+  def apply(
+    allowPermissions: scala.Double,
+    denyPermissions: scala.Double,
+    description: java.lang.String,
+    displayName: java.lang.String,
+    identifier: java.lang.String,
+    name: java.lang.String,
+    scope: java.lang.String
+  ): SecurityRole = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowPermissions")(allowPermissions)
+    __obj.updateDynamic("denyPermissions")(denyPermissions)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("identifier")(identifier)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[SecurityRole]
+  }
+}
+

@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PhonegapPluginPushNs {
-  type EventResponse = RegistrationEventResponse | NotificationEventResponse | stdLib.Error
+  type EventResponse = _EventResponse | stdLib.Error
 }

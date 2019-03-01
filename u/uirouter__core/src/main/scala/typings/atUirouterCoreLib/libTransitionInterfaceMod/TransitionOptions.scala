@@ -79,3 +79,32 @@ trait TransitionOptions extends js.Object {
   ] = js.undefined
 }
 
+object TransitionOptions {
+  @scala.inline
+  def apply(
+    current: js.Function0[atUirouterCoreLib.libTransitionTransitionMod.Transition] = null,
+    custom: js.Any = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    location: scala.Boolean | java.lang.String = null,
+    notify: js.UndefOr[scala.Boolean] = js.undefined,
+    redirectedFrom: atUirouterCoreLib.libTransitionTransitionMod.Transition = null,
+    relative: java.lang.String | atUirouterCoreLib.libStateInterfaceMod.StateDeclaration | atUirouterCoreLib.libStateStateObjectMod.StateObject = null,
+    reload: scala.Boolean | java.lang.String | atUirouterCoreLib.libStateInterfaceMod.StateDeclaration | atUirouterCoreLib.libStateStateObjectMod.StateObject = null,
+    reloadState: atUirouterCoreLib.libStateStateObjectMod.StateObject = null,
+    source: atUirouterCoreLib.atUirouterCoreLibStrings.sref | atUirouterCoreLib.atUirouterCoreLibStrings.url | atUirouterCoreLib.atUirouterCoreLibStrings.redirect | atUirouterCoreLib.atUirouterCoreLibStrings.otherwise | atUirouterCoreLib.atUirouterCoreLibStrings.unknown = null
+  ): TransitionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (current != null) __obj.updateDynamic("current")(current)
+    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify)
+    if (redirectedFrom != null) __obj.updateDynamic("redirectedFrom")(redirectedFrom)
+    if (relative != null) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
+    if (reload != null) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
+    if (reloadState != null) __obj.updateDynamic("reloadState")(reloadState)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TransitionOptions]
+  }
+}
+

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object tapableLibStrings {
   @js.native
-  sealed trait async extends js.Object
+  sealed trait async extends TapType
   
   @js.native
-  sealed trait promise extends js.Object
+  sealed trait promise extends TapType
   
   @js.native
-  sealed trait sync extends js.Object
+  sealed trait sync extends TapType
   
   @scala.inline
   def async: async = "async".asInstanceOf[async]

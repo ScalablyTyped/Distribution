@@ -10,3 +10,13 @@ trait DialogOptions extends js.Object {
   var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
 }
 
+object DialogOptions {
+  @scala.inline
+  def apply(animation: java.lang.String = null, callback: coreDashJsLib.Function = null): DialogOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    __obj.asInstanceOf[DialogOptions]
+  }
+}
+

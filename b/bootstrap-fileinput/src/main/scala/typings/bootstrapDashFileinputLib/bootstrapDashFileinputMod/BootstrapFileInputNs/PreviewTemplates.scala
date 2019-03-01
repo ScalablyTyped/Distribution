@@ -95,3 +95,28 @@ trait PreviewTemplates extends js.Object {
   var video: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PreviewTemplates {
+  @scala.inline
+  def apply(
+    audio: java.lang.String = null,
+    flash: java.lang.String = null,
+    generic: java.lang.String = null,
+    html: java.lang.String = null,
+    image: java.lang.String = null,
+    `object`: java.lang.String = null,
+    text: java.lang.String = null,
+    video: java.lang.String = null
+  ): PreviewTemplates = {
+    val __obj = js.Dynamic.literal()
+    if (audio != null) __obj.updateDynamic("audio")(audio)
+    if (flash != null) __obj.updateDynamic("flash")(flash)
+    if (generic != null) __obj.updateDynamic("generic")(generic)
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (video != null) __obj.updateDynamic("video")(video)
+    __obj.asInstanceOf[PreviewTemplates]
+  }
+}
+

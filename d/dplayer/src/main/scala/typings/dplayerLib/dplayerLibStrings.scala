@@ -7,58 +7,77 @@ import scala.scalajs.js.annotation._
 
 object dplayerLibStrings {
   @js.native
-  sealed trait ass extends js.Object
+  sealed trait ass
+    extends dplayerLib.dplayerMod.SubTitleType
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends dplayerLib.dplayerMod.Preload
+       with dplayerLib.dplayerMod.VideoType
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends dplayerLib.dplayerMod.DirectionType
   
   @js.native
-  sealed trait browser extends js.Object
+  sealed trait browser
+    extends dplayerLib.dplayerMod.FullScreenType
   
   @js.native
-  sealed trait dash extends js.Object
+  sealed trait dash
+    extends dplayerLib.dplayerMod.VideoType
   
   @js.native
-  sealed trait en extends js.Object
+  sealed trait en
+    extends dplayerLib.dplayerMod.Lang
   
   @js.native
-  sealed trait flv extends js.Object
+  sealed trait flv
+    extends dplayerLib.dplayerMod.VideoType
   
   @js.native
-  sealed trait hls extends js.Object
+  sealed trait hls
+    extends dplayerLib.dplayerMod.VideoType
   
   @js.native
-  sealed trait metadata extends js.Object
+  sealed trait metadata
+    extends dplayerLib.dplayerMod.Preload
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends dplayerLib.dplayerMod.Preload
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends dplayerLib.dplayerMod.VideoType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends dplayerLib.dplayerMod.DirectionType
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends dplayerLib.dplayerMod.DirectionType
   
   @js.native
-  sealed trait web extends js.Object
+  sealed trait web
+    extends dplayerLib.dplayerMod.FullScreenType
   
   @js.native
-  sealed trait webtorrent extends js.Object
+  sealed trait webtorrent
+    extends dplayerLib.dplayerMod.VideoType
   
   @js.native
-  sealed trait webvtt extends js.Object
+  sealed trait webvtt
+    extends dplayerLib.dplayerMod.SubTitleType
   
   @js.native
-  sealed trait `zh-cn` extends js.Object
+  sealed trait `zh-cn`
+    extends dplayerLib.dplayerMod.Lang
   
   @js.native
-  sealed trait `zh-tw` extends js.Object
+  sealed trait `zh-tw`
+    extends dplayerLib.dplayerMod.Lang
   
   @scala.inline
   def ass: ass = "ass".asInstanceOf[ass]

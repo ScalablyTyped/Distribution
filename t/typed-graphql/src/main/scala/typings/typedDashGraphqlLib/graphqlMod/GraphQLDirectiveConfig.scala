@@ -14,3 +14,24 @@ trait GraphQLDirectiveConfig extends js.Object {
   var onOperation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GraphQLDirectiveConfig {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    args: js.Array[GraphQLArgument] = null,
+    description: java.lang.String = null,
+    onField: js.UndefOr[scala.Boolean] = js.undefined,
+    onFragment: js.UndefOr[scala.Boolean] = js.undefined,
+    onOperation: js.UndefOr[scala.Boolean] = js.undefined
+  ): GraphQLDirectiveConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(onField)) __obj.updateDynamic("onField")(onField)
+    if (!js.isUndefined(onFragment)) __obj.updateDynamic("onFragment")(onFragment)
+    if (!js.isUndefined(onOperation)) __obj.updateDynamic("onOperation")(onOperation)
+    __obj.asInstanceOf[GraphQLDirectiveConfig]
+  }
+}
+

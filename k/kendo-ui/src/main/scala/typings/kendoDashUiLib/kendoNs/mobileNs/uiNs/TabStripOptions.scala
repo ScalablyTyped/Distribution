@@ -11,3 +11,18 @@ trait TabStripOptions extends js.Object {
   var selectedIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TabStripOptions {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    select: js.Function1[/* e */ TabStripSelectEvent, scala.Unit] = null,
+    selectedIndex: scala.Int | scala.Double = null
+  ): TabStripOptions = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TabStripOptions]
+  }
+}
+

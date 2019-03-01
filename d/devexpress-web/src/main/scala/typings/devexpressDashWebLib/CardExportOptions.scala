@@ -16,3 +16,12 @@ trait CardExportOptions extends js.Object {
   var AutoArrangeContent: scala.Boolean
 }
 
+object CardExportOptions {
+  @scala.inline
+  def apply(AutoArrangeContent: scala.Boolean): CardExportOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoArrangeContent")(AutoArrangeContent)
+    __obj.asInstanceOf[CardExportOptions]
+  }
+}
+

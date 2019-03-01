@@ -58,3 +58,38 @@ trait Anon_AutoReconnect extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AutoReconnect {
+  @scala.inline
+  def apply(
+    autoReconnect: js.UndefOr[scala.Boolean] = js.undefined,
+    changePassword: js.Function2[
+      /* message */ java.lang.String, 
+      /* language */ java.lang.String, 
+      bluebirdLib.bluebirdMod.namespaced[java.lang.String]
+    ] = null,
+    connTimeout: scala.Int | scala.Double = null,
+    keepalive: scala.Int | scala.Double = null,
+    pasvTimeout: scala.Int | scala.Double = null,
+    privateKeyFile: java.lang.String = null,
+    tryKeyboard: js.Function4[
+      /* name */ java.lang.String, 
+      /* instructions */ java.lang.String, 
+      /* instructionsLang */ java.lang.String, 
+      /* prompts */ js.Array[Anon_Echo], 
+      (js.Array[java.lang.String | bluebirdLib.bluebirdMod.namespaced[java.lang.String]]) | bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]]
+    ] = null,
+    user: java.lang.String = null
+  ): Anon_AutoReconnect = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect)
+    if (changePassword != null) __obj.updateDynamic("changePassword")(changePassword)
+    if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])
+    if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
+    if (pasvTimeout != null) __obj.updateDynamic("pasvTimeout")(pasvTimeout.asInstanceOf[js.Any])
+    if (privateKeyFile != null) __obj.updateDynamic("privateKeyFile")(privateKeyFile)
+    if (tryKeyboard != null) __obj.updateDynamic("tryKeyboard")(tryKeyboard)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[Anon_AutoReconnect]
+  }
+}
+

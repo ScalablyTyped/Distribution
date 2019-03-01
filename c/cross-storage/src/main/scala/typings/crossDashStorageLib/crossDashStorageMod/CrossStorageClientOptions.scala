@@ -11,3 +11,14 @@ trait CrossStorageClientOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CrossStorageClientOptions {
+  @scala.inline
+  def apply(frameId: java.lang.String = null, promise: js.Any = null, timeout: scala.Int | scala.Double = null): CrossStorageClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (frameId != null) __obj.updateDynamic("frameId")(frameId)
+    if (promise != null) __obj.updateDynamic("promise")(promise)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CrossStorageClientOptions]
+  }
+}
+

@@ -36,3 +36,26 @@ trait EditCellStartedEventUIParam extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object EditCellStartedEventUIParam {
+  @scala.inline
+  def apply(
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    editor: js.Any = null,
+    owner: js.Any = null,
+    rowAdding: js.UndefOr[scala.Boolean] = js.undefined,
+    rowID: js.Any = null,
+    value: js.Any = null
+  ): EditCellStartedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (editor != null) __obj.updateDynamic("editor")(editor)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(rowAdding)) __obj.updateDynamic("rowAdding")(rowAdding)
+    if (rowID != null) __obj.updateDynamic("rowID")(rowID)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[EditCellStartedEventUIParam]
+  }
+}
+

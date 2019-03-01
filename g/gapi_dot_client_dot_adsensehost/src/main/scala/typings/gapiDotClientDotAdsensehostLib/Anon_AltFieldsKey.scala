@@ -33,3 +33,34 @@ trait Anon_AltFieldsKey extends js.Object {
   var websiteUrl: java.lang.String
 }
 
+object Anon_AltFieldsKey {
+  @scala.inline
+  def apply(
+    productCode: java.lang.String,
+    websiteUrl: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null,
+    userLocale: java.lang.String = null,
+    websiteLocale: java.lang.String = null
+  ): Anon_AltFieldsKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("productCode")(productCode)
+    __obj.updateDynamic("websiteUrl")(websiteUrl)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (userLocale != null) __obj.updateDynamic("userLocale")(userLocale)
+    if (websiteLocale != null) __obj.updateDynamic("websiteLocale")(websiteLocale)
+    __obj.asInstanceOf[Anon_AltFieldsKey]
+  }
+}
+

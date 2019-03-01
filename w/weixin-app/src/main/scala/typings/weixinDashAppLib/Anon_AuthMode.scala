@@ -17,3 +17,22 @@ trait Anon_AuthMode extends js.Object {
   var resultJSONSignature: java.lang.String
 }
 
+object Anon_AuthMode {
+  @scala.inline
+  def apply(
+    authMode: java.lang.String,
+    errCode: scala.Double,
+    errMsg: java.lang.String,
+    resultJSON: java.lang.String,
+    resultJSONSignature: java.lang.String
+  ): Anon_AuthMode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authMode")(authMode)
+    __obj.updateDynamic("errCode")(errCode)
+    __obj.updateDynamic("errMsg")(errMsg)
+    __obj.updateDynamic("resultJSON")(resultJSON)
+    __obj.updateDynamic("resultJSONSignature")(resultJSONSignature)
+    __obj.asInstanceOf[Anon_AuthMode]
+  }
+}
+

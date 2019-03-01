@@ -39,3 +39,34 @@ trait WritingOptions extends CommonOptions {
   ] = js.undefined
 }
 
+object WritingOptions {
+  @scala.inline
+  def apply(
+    Props: Properties = null,
+    WTF: js.UndefOr[scala.Boolean] = js.undefined,
+    bookSST: js.UndefOr[scala.Boolean] = js.undefined,
+    bookType: BookType = null,
+    bookVBA: js.UndefOr[scala.Boolean] = js.undefined,
+    cellDates: js.UndefOr[scala.Boolean] = js.undefined,
+    cellStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    compression: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreEC: js.UndefOr[scala.Boolean] = js.undefined,
+    sheet: java.lang.String = null,
+    `type`: xlsxLib.xlsxLibStrings.base64 | xlsxLib.xlsxLibStrings.binary | xlsxLib.xlsxLibStrings.buffer | xlsxLib.xlsxLibStrings.file | xlsxLib.xlsxLibStrings.array | xlsxLib.xlsxLibStrings.string = null
+  ): WritingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (Props != null) __obj.updateDynamic("Props")(Props)
+    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF)
+    if (!js.isUndefined(bookSST)) __obj.updateDynamic("bookSST")(bookSST)
+    if (bookType != null) __obj.updateDynamic("bookType")(bookType)
+    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA)
+    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates)
+    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles)
+    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression)
+    if (!js.isUndefined(ignoreEC)) __obj.updateDynamic("ignoreEC")(ignoreEC)
+    if (sheet != null) __obj.updateDynamic("sheet")(sheet)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WritingOptions]
+  }
+}
+

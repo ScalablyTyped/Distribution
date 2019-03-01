@@ -18,3 +18,12 @@ trait Timeoutable extends js.Object {
   var timeout: scala.Double
 }
 
+object Timeoutable {
+  @scala.inline
+  def apply(timeout: scala.Double): Timeoutable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[Timeoutable]
+  }
+}
+

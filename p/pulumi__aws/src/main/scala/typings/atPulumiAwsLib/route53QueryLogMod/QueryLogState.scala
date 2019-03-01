@@ -16,3 +16,16 @@ trait QueryLogState extends js.Object {
   val zoneId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object QueryLogState {
+  @scala.inline
+  def apply(
+    cloudwatchLogGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): QueryLogState = {
+    val __obj = js.Dynamic.literal()
+    if (cloudwatchLogGroupArn != null) __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueryLogState]
+  }
+}
+

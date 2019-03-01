@@ -13,3 +13,12 @@ trait HttpConfig extends js.Object {
   var httpEnabledState: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HttpConfig {
+  @scala.inline
+  def apply(httpEnabledState: java.lang.String = null): HttpConfig = {
+    val __obj = js.Dynamic.literal()
+    if (httpEnabledState != null) __obj.updateDynamic("httpEnabledState")(httpEnabledState)
+    __obj.asInstanceOf[HttpConfig]
+  }
+}
+

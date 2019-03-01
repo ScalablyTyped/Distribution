@@ -12,3 +12,13 @@ trait LatLongRect extends js.Object {
   var minLatLng: js.UndefOr[LatLng] = js.undefined
 }
 
+object LatLongRect {
+  @scala.inline
+  def apply(maxLatLng: LatLng = null, minLatLng: LatLng = null): LatLongRect = {
+    val __obj = js.Dynamic.literal()
+    if (maxLatLng != null) __obj.updateDynamic("maxLatLng")(maxLatLng)
+    if (minLatLng != null) __obj.updateDynamic("minLatLng")(minLatLng)
+    __obj.asInstanceOf[LatLongRect]
+  }
+}
+

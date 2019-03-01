@@ -3002,6 +3002,16 @@ object AutoScalingNs extends js.Object {
     var VPCZoneIdentifier: js.UndefOr[XmlStringMaxLen2047] = js.undefined
   }
   
+  trait _LifecycleState extends js.Object
+  
+  trait _MetricStatistic extends js.Object
+  
+  trait _MetricType extends js.Object
+  
+  trait _ScalingActivityStatusCode extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Activities = js.Array[Activity]
   type ActivityIds = js.Array[XmlString]
@@ -3048,7 +3058,7 @@ object AutoScalingNs extends js.Object {
   type LifecycleHookNames = js.Array[AsciiStringMaxLen255]
   type LifecycleHookSpecifications = js.Array[LifecycleHookSpecification]
   type LifecycleHooks = js.Array[LifecycleHook]
-  type LifecycleState = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.`Pending:Wait` | awsDashSdkLib.awsDashSdkLibStrings.`Pending:Proceed` | awsDashSdkLib.awsDashSdkLibStrings.Quarantined | awsDashSdkLib.awsDashSdkLibStrings.InService | awsDashSdkLib.awsDashSdkLibStrings.Terminating | awsDashSdkLib.awsDashSdkLibStrings.`Terminating:Wait` | awsDashSdkLib.awsDashSdkLibStrings.`Terminating:Proceed` | awsDashSdkLib.awsDashSdkLibStrings.Terminated | awsDashSdkLib.awsDashSdkLibStrings.Detaching | awsDashSdkLib.awsDashSdkLibStrings.Detached | awsDashSdkLib.awsDashSdkLibStrings.EnteringStandby | awsDashSdkLib.awsDashSdkLibStrings.Standby | java.lang.String
+  type LifecycleState = _LifecycleState | java.lang.String
   type LifecycleTransition = java.lang.String
   type LoadBalancerNames = js.Array[XmlStringMaxLen255]
   type LoadBalancerStates = js.Array[LoadBalancerState]
@@ -3064,8 +3074,8 @@ object AutoScalingNs extends js.Object {
   type MetricName = java.lang.String
   type MetricNamespace = java.lang.String
   type MetricScale = scala.Double
-  type MetricStatistic = awsDashSdkLib.awsDashSdkLibStrings.Average | awsDashSdkLib.awsDashSdkLibStrings.Minimum | awsDashSdkLib.awsDashSdkLibStrings.Maximum | awsDashSdkLib.awsDashSdkLibStrings.SampleCount | awsDashSdkLib.awsDashSdkLibStrings.Sum | java.lang.String
-  type MetricType = awsDashSdkLib.awsDashSdkLibStrings.ASGAverageCPUUtilization | awsDashSdkLib.awsDashSdkLibStrings.ASGAverageNetworkIn | awsDashSdkLib.awsDashSdkLibStrings.ASGAverageNetworkOut | awsDashSdkLib.awsDashSdkLibStrings.ALBRequestCountPerTarget | java.lang.String
+  type MetricStatistic = _MetricStatistic | java.lang.String
+  type MetricType = _MetricType | java.lang.String
   type MetricUnit = java.lang.String
   type Metrics = js.Array[XmlStringMaxLen255]
   type MinAdjustmentMagnitude = scala.Double
@@ -3089,7 +3099,7 @@ object AutoScalingNs extends js.Object {
   type PropagateAtLaunch = scala.Boolean
   type ProtectedFromScaleIn = scala.Boolean
   type ResourceName = java.lang.String
-  type ScalingActivityStatusCode = awsDashSdkLib.awsDashSdkLibStrings.PendingSpotBidPlacement | awsDashSdkLib.awsDashSdkLibStrings.WaitingForSpotInstanceRequestId | awsDashSdkLib.awsDashSdkLibStrings.WaitingForSpotInstanceId | awsDashSdkLib.awsDashSdkLibStrings.WaitingForInstanceId | awsDashSdkLib.awsDashSdkLibStrings.PreInService | awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.WaitingForELBConnectionDraining | awsDashSdkLib.awsDashSdkLibStrings.MidLifecycleAction | awsDashSdkLib.awsDashSdkLibStrings.WaitingForInstanceWarmup | awsDashSdkLib.awsDashSdkLibStrings.Successful | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Cancelled | java.lang.String
+  type ScalingActivityStatusCode = _ScalingActivityStatusCode | java.lang.String
   type ScalingPolicies = js.Array[ScalingPolicy]
   type ScheduledActionNames = js.Array[ResourceName]
   type ScheduledUpdateGroupActionRequests = js.Array[ScheduledUpdateGroupActionRequest]
@@ -3119,6 +3129,6 @@ object AutoScalingNs extends js.Object {
   type XmlStringMaxLen511 = java.lang.String
   type XmlStringMaxLen64 = java.lang.String
   type XmlStringUserData = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2011-01-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

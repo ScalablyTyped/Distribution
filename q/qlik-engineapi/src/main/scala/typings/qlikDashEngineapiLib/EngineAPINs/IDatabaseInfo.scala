@@ -67,3 +67,34 @@ trait IDatabaseInfo extends js.Object {
   var qSpecialChars: java.lang.String
 }
 
+object IDatabaseInfo {
+  @scala.inline
+  def apply(
+    qDBFirst: scala.Boolean,
+    qDBMSName: java.lang.String,
+    qDBSeparator: java.lang.String,
+    qDBUsage: scala.Boolean,
+    qDefaultDatabase: java.lang.String,
+    qKeywords: js.Array[java.lang.String],
+    qOwnerSeparator: java.lang.String,
+    qOwnerUsage: scala.Boolean,
+    qQuotePreffix: java.lang.String,
+    qQuoteSuffix: java.lang.String,
+    qSpecialChars: java.lang.String
+  ): IDatabaseInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qDBFirst")(qDBFirst)
+    __obj.updateDynamic("qDBMSName")(qDBMSName)
+    __obj.updateDynamic("qDBSeparator")(qDBSeparator)
+    __obj.updateDynamic("qDBUsage")(qDBUsage)
+    __obj.updateDynamic("qDefaultDatabase")(qDefaultDatabase)
+    __obj.updateDynamic("qKeywords")(qKeywords)
+    __obj.updateDynamic("qOwnerSeparator")(qOwnerSeparator)
+    __obj.updateDynamic("qOwnerUsage")(qOwnerUsage)
+    __obj.updateDynamic("qQuotePreffix")(qQuotePreffix)
+    __obj.updateDynamic("qQuoteSuffix")(qQuoteSuffix)
+    __obj.updateDynamic("qSpecialChars")(qSpecialChars)
+    __obj.asInstanceOf[IDatabaseInfo]
+  }
+}
+

@@ -22,3 +22,38 @@ trait Console extends Transform {
   var minilog: Transform
 }
 
+object Console {
+  @scala.inline
+  def apply(
+    color: Transform,
+    formatClean: Transform,
+    formatColor: Transform,
+    formatLearnboost: Transform,
+    formatMinilog: Transform,
+    formatNpm: Transform,
+    formatWithStack: Transform,
+    formatters: js.Array[java.lang.String],
+    minilog: Transform,
+    mixin: js.Function1[js.Any, scala.Unit],
+    pipe: js.Function1[js.Any, js.Any],
+    unpipe: js.Function1[js.Any, Transform],
+    write: js.Function3[js.Any, js.Any, js.Any, scala.Unit]
+  ): Console = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("formatClean")(formatClean)
+    __obj.updateDynamic("formatColor")(formatColor)
+    __obj.updateDynamic("formatLearnboost")(formatLearnboost)
+    __obj.updateDynamic("formatMinilog")(formatMinilog)
+    __obj.updateDynamic("formatNpm")(formatNpm)
+    __obj.updateDynamic("formatWithStack")(formatWithStack)
+    __obj.updateDynamic("formatters")(formatters)
+    __obj.updateDynamic("minilog")(minilog)
+    __obj.updateDynamic("mixin")(mixin)
+    __obj.updateDynamic("pipe")(pipe)
+    __obj.updateDynamic("unpipe")(unpipe)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[Console]
+  }
+}
+

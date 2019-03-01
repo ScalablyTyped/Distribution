@@ -16,3 +16,24 @@ trait XFlushable
   def removeFlushListener(l: XFlushListener): scala.Unit
 }
 
+object XFlushable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addFlushListener: js.Function1[XFlushListener, scala.Unit],
+    flush: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeFlushListener: js.Function1[XFlushListener, scala.Unit]
+  ): XFlushable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addFlushListener")(addFlushListener)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeFlushListener")(removeFlushListener)
+    __obj.asInstanceOf[XFlushable]
+  }
+}
+

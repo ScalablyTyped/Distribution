@@ -11,3 +11,14 @@ trait Response[R] extends js.Object {
   var statusText: java.lang.String
 }
 
+object Response {
+  @scala.inline
+  def apply[R](data: R, statusCode: scala.Double, statusText: java.lang.String): Response[R] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.updateDynamic("statusText")(statusText)
+    __obj.asInstanceOf[Response[R]]
+  }
+}
+

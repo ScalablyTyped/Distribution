@@ -9,3 +9,13 @@ trait Variable extends js.Object {
   var variable: java.lang.String
 }
 
+object Variable {
+  @scala.inline
+  def apply(toString: js.Function0[java.lang.String], variable: java.lang.String): Variable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("variable")(variable)
+    __obj.asInstanceOf[Variable]
+  }
+}
+

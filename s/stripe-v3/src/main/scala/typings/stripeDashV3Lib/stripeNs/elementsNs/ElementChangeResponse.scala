@@ -16,3 +16,28 @@ trait ElementChangeResponse extends js.Object {
   var value: js.UndefOr[stripeDashV3Lib.Anon_PostalCode] = js.undefined
 }
 
+object ElementChangeResponse {
+  @scala.inline
+  def apply(
+    brand: java.lang.String,
+    complete: scala.Boolean,
+    elementType: java.lang.String,
+    empty: scala.Boolean,
+    bankName: java.lang.String = null,
+    country: java.lang.String = null,
+    error: stripeDashV3Lib.stripeNs.Error = null,
+    value: stripeDashV3Lib.Anon_PostalCode = null
+  ): ElementChangeResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("brand")(brand)
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("elementType")(elementType)
+    __obj.updateDynamic("empty")(empty)
+    if (bankName != null) __obj.updateDynamic("bankName")(bankName)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ElementChangeResponse]
+  }
+}
+

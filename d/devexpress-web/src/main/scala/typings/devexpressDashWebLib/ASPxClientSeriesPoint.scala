@@ -46,3 +46,28 @@ trait ASPxClientSeriesPoint extends ASPxClientWebChartElement {
   var values: js.Array[js.Object]
 }
 
+object ASPxClientSeriesPoint {
+  @scala.inline
+  def apply(
+    argument: js.Object,
+    chart: ASPxClientWebChart,
+    color: java.lang.String,
+    percentValue: scala.Double,
+    series: ASPxClientSeries,
+    toolTipHint: java.lang.String,
+    toolTipText: java.lang.String,
+    values: js.Array[js.Object]
+  ): ASPxClientSeriesPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("argument")(argument)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("percentValue")(percentValue)
+    __obj.updateDynamic("series")(series)
+    __obj.updateDynamic("toolTipHint")(toolTipHint)
+    __obj.updateDynamic("toolTipText")(toolTipText)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[ASPxClientSeriesPoint]
+  }
+}
+

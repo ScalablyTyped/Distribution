@@ -12,3 +12,12 @@ trait FoldingRangeClientCapabilities extends js.Object {
   var textDocument: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_FoldingRange] = js.undefined
 }
 
+object FoldingRangeClientCapabilities {
+  @scala.inline
+  def apply(textDocument: vscodeDashLanguageserverDashProtocolLib.Anon_FoldingRange = null): FoldingRangeClientCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument)
+    __obj.asInstanceOf[FoldingRangeClientCapabilities]
+  }
+}
+

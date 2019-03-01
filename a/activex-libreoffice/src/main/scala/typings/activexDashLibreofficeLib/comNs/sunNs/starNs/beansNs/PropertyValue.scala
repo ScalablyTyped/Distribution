@@ -25,3 +25,15 @@ trait PropertyValue extends js.Object {
   var Value: js.Any
 }
 
+object PropertyValue {
+  @scala.inline
+  def apply(Handle: scala.Double, Name: java.lang.String, State: PropertyState, Value: js.Any): PropertyValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Handle")(Handle)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("State")(State)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[PropertyValue]
+  }
+}
+

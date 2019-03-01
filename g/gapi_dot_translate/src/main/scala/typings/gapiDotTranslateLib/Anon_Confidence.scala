@@ -10,3 +10,13 @@ trait Anon_Confidence extends js.Object {
   var language: java.lang.String
 }
 
+object Anon_Confidence {
+  @scala.inline
+  def apply(confidence: scala.Double, language: java.lang.String): Anon_Confidence = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("confidence")(confidence)
+    __obj.updateDynamic("language")(language)
+    __obj.asInstanceOf[Anon_Confidence]
+  }
+}
+

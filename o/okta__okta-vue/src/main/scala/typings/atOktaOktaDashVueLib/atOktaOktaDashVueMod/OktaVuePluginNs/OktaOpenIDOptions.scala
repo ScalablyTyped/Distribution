@@ -14,3 +14,24 @@ trait OktaOpenIDOptions extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OktaOpenIDOptions {
+  @scala.inline
+  def apply(
+    nonce: java.lang.String = null,
+    responseMode: java.lang.String = null,
+    responseType: java.lang.String | js.Array[java.lang.String] = null,
+    scopes: js.Array[java.lang.String] = null,
+    sessionToken: java.lang.String = null,
+    state: java.lang.String = null
+  ): OktaOpenIDOptions = {
+    val __obj = js.Dynamic.literal()
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[OktaOpenIDOptions]
+  }
+}
+

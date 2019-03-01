@@ -36,3 +36,40 @@ trait ContactProperties extends js.Object {
   var urls: js.UndefOr[js.Array[ContactField]] = js.undefined
 }
 
+object ContactProperties {
+  @scala.inline
+  def apply(
+    addresses: js.Array[ContactAddress] = null,
+    birthday: stdLib.Date = null,
+    categories: js.Array[ContactField] = null,
+    displayName: java.lang.String = null,
+    emails: js.Array[ContactField] = null,
+    id: java.lang.String = null,
+    ims: js.Array[ContactField] = null,
+    name: ContactName = null,
+    nickname: java.lang.String = null,
+    note: java.lang.String = null,
+    organizations: js.Array[ContactOrganization] = null,
+    phoneNumbers: js.Array[ContactField] = null,
+    photos: js.Array[ContactField] = null,
+    urls: js.Array[ContactField] = null
+  ): ContactProperties = {
+    val __obj = js.Dynamic.literal()
+    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
+    if (birthday != null) __obj.updateDynamic("birthday")(birthday)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (emails != null) __obj.updateDynamic("emails")(emails)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (ims != null) __obj.updateDynamic("ims")(ims)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (organizations != null) __obj.updateDynamic("organizations")(organizations)
+    if (phoneNumbers != null) __obj.updateDynamic("phoneNumbers")(phoneNumbers)
+    if (photos != null) __obj.updateDynamic("photos")(photos)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[ContactProperties]
+  }
+}
+

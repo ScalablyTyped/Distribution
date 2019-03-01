@@ -31,3 +31,58 @@ trait SettingsResource extends js.Object {
   def updateVacation(request: gapiDotClientDotGmailLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[VacationSettings]
 }
 
+object SettingsResource {
+  @scala.inline
+  def apply(
+    filters: FiltersResource,
+    forwardingAddresses: ForwardingAddressesResource,
+    getAutoForwarding: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AutoForwarding]
+    ],
+    getImap: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ImapSettings]
+    ],
+    getPop: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PopSettings]
+    ],
+    getVacation: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VacationSettings]
+    ],
+    sendAs: SendAsResource,
+    updateAutoForwarding: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AutoForwarding]
+    ],
+    updateImap: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ImapSettings]
+    ],
+    updatePop: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PopSettings]
+    ],
+    updateVacation: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VacationSettings]
+    ]
+  ): SettingsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filters")(filters)
+    __obj.updateDynamic("forwardingAddresses")(forwardingAddresses)
+    __obj.updateDynamic("getAutoForwarding")(getAutoForwarding)
+    __obj.updateDynamic("getImap")(getImap)
+    __obj.updateDynamic("getPop")(getPop)
+    __obj.updateDynamic("getVacation")(getVacation)
+    __obj.updateDynamic("sendAs")(sendAs)
+    __obj.updateDynamic("updateAutoForwarding")(updateAutoForwarding)
+    __obj.updateDynamic("updateImap")(updateImap)
+    __obj.updateDynamic("updatePop")(updatePop)
+    __obj.updateDynamic("updateVacation")(updateVacation)
+    __obj.asInstanceOf[SettingsResource]
+  }
+}
+

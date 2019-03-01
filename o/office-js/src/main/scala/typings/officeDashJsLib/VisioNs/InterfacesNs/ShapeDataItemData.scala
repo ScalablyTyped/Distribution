@@ -37,3 +37,20 @@ trait ShapeDataItemData extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ShapeDataItemData {
+  @scala.inline
+  def apply(
+    format: java.lang.String = null,
+    formattedValue: java.lang.String = null,
+    label: java.lang.String = null,
+    value: java.lang.String = null
+  ): ShapeDataItemData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ShapeDataItemData]
+  }
+}
+

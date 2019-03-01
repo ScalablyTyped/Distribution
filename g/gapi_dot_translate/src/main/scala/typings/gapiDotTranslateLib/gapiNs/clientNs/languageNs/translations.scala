@@ -12,3 +12,17 @@ trait translations extends js.Object {
   def list(`object`: gapiDotTranslateLib.Anon_Cid): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateTranslationListResponse]
 }
 
+object translations {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotTranslateLib.Anon_Cid, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateTranslationListResponse]
+    ]
+  ): translations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[translations]
+  }
+}
+

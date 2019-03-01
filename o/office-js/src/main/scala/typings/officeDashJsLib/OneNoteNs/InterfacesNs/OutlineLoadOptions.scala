@@ -37,3 +37,20 @@ trait OutlineLoadOptions extends js.Object {
   var paragraphs: js.UndefOr[ParagraphCollectionLoadOptions] = js.undefined
 }
 
+object OutlineLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    pageContent: PageContentLoadOptions = null,
+    paragraphs: ParagraphCollectionLoadOptions = null
+  ): OutlineLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    __obj.asInstanceOf[OutlineLoadOptions]
+  }
+}
+

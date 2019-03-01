@@ -16,6 +16,4 @@ package object ReactTimeagoNs {
     ], 
     reactLib.reactMod.ReactNs.ReactNode
   ]
-  type Suffix = reactDashTimeagoLib.reactDashTimeagoLibStrings.ago | (reactDashTimeagoLib.reactDashTimeagoLibStrings.`from now`)
-  type Unit = reactDashTimeagoLib.reactDashTimeagoLibStrings.second | reactDashTimeagoLib.reactDashTimeagoLibStrings.minute | reactDashTimeagoLib.reactDashTimeagoLibStrings.hour | reactDashTimeagoLib.reactDashTimeagoLibStrings.day | reactDashTimeagoLib.reactDashTimeagoLibStrings.week | reactDashTimeagoLib.reactDashTimeagoLibStrings.month | reactDashTimeagoLib.reactDashTimeagoLibStrings.year
 }

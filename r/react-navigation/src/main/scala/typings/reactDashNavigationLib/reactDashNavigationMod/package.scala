@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNavigationMod {
   type AnimatedValue = js.Any
-  type DrawerLockMode = reactDashNavigationLib.reactDashNavigationLibStrings.unlocked | reactDashNavigationLib.reactDashNavigationLibStrings.`locked-closed` | reactDashNavigationLib.reactDashNavigationLibStrings.`locked-open`
-  type EventType = reactDashNavigationLib.reactDashNavigationLibStrings.willFocus | reactDashNavigationLib.reactDashNavigationLibStrings.didFocus | reactDashNavigationLib.reactDashNavigationLibStrings.willBlur | reactDashNavigationLib.reactDashNavigationLibStrings.didBlur | reactDashNavigationLib.reactDashNavigationLibStrings.action
-  type HeaderMode = reactDashNavigationLib.reactDashNavigationLibStrings.float | reactDashNavigationLib.reactDashNavigationLibStrings.screen | reactDashNavigationLib.reactDashNavigationLibStrings.none
   type InferProps[T /* <: reactLib.reactMod.ReactNs.ComponentType[_] */] = js.Any
-  type NavigationAction = NavigationInitAction | NavigationStackAction | NavigationTabAction | NavigationDrawerAction
   type NavigationAnimationSetter = js.Function3[
     /* position */ AnimatedValue, 
     /* newState */ NavigationState, 
@@ -20,9 +16,7 @@ package object reactDashNavigationMod {
   ]
   type NavigationComponent = (NavigationScreenComponent[NavigationParams, js.Any, js.Any]) | (NavigationNavigator[js.Any, js.Any, js.Any]) | js.Any
   type NavigationDispatch = js.Function1[/* action */ NavigationAction, scala.Boolean]
-  type NavigationDrawerAction = NavigationOpenDrawerAction | NavigationCloseDrawerAction | NavigationToggleDrawerAction
   type NavigationEventCallback = js.Function1[/* payload */ NavigationEventPayload, scala.Unit]
-  type NavigationGestureDirection = reactDashNavigationLib.reactDashNavigationLibStrings.horizontal | reactDashNavigationLib.reactDashNavigationLibStrings.vertical
   type NavigationNavigator[State, Options, Props] = (reactLib.reactMod.ReactNs.ComponentType[(NavigationNavigatorProps[Options, State]) with Props]) with (reactDashNavigationLib.Anon_NavigationOptionsRouter[State, Options])
   type NavigationRoute[Params] = NavigationLeafRoute[Params] | NavigationStateRoute[Params]
   type NavigationRouteConfig = NavigationComponent | (reactDashNavigationLib.Anon_NavigationOptionsPath with NavigationScreenRouteConfig)
@@ -44,20 +38,16 @@ package object reactDashNavigationMod {
     /* screenProps */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
     Options
   ]
-  type NavigationScreenRouteConfig = NavigationComponent | reactDashNavigationLib.Anon_Screen | reactDashNavigationLib.Anon_GetScreen
-  type NavigationStackAction = NavigationInitAction | NavigationNavigateAction | NavigationBackAction | NavigationSetParamsAction | NavigationResetAction | NavigationReplaceAction | NavigationPopAction | NavigationPushAction | NavigationPopToTopAction | NavigationCompleteTransitionAction
+  type NavigationScreenRouteConfig = _NavigationScreenRouteConfig | NavigationComponent
   type NavigationStateRoute[NavigationLeafRouteParams] = NavigationLeafRoute[NavigationLeafRouteParams] with NavigationState
   type NavigationStyleInterpolator = js.Function1[
     /* props */ NavigationSceneRendererProps, 
     reactDashNativeLib.reactDashNativeMod.ViewStyle
   ]
-  type NavigationTabAction = NavigationInitAction | NavigationNavigateAction | NavigationBackAction
   type NavigationView[O, S] = reactLib.reactMod.ReactNs.ComponentType[
     reactDashNavigationLib.Anon_Descriptors[O] with NavigationInjectedProps[NavigationParams]
   ]
-  type NavigatorType = reactDashNavigationLib.reactDashNavigationLibStrings.`react-navigation/STACK` | reactDashNavigationLib.reactDashNavigationLibStrings.`react-navigation/TABS` | reactDashNavigationLib.reactDashNavigationLibStrings.`react-navigation/DRAWER`
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
-  type SafeAreaViewForceInsetValue = reactDashNavigationLib.reactDashNavigationLibStrings.always | reactDashNavigationLib.reactDashNavigationLibStrings.never
   type TransitionConfigurer = js.Function3[
     /* transitionProps */ NavigationTransitionProps, 
     /* prevTransitionProps */ NavigationTransitionProps, 

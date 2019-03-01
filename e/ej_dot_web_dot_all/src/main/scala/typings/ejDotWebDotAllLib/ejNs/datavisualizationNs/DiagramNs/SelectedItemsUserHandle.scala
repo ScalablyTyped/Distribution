@@ -61,3 +61,40 @@ trait SelectedItemsUserHandle extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SelectedItemsUserHandle {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    enableMultiSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalAlignment: HorizontalAlignment | java.lang.String = null,
+    margin: js.Any = null,
+    name: java.lang.String = null,
+    offset: js.Any = null,
+    pathColor: java.lang.String = null,
+    pathData: java.lang.String = null,
+    position: UserHandlePositions | java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    tool: js.Any = null,
+    verticalAlignment: VerticalAlignment | java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): SelectedItemsUserHandle = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (!js.isUndefined(enableMultiSelection)) __obj.updateDynamic("enableMultiSelection")(enableMultiSelection)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (pathColor != null) __obj.updateDynamic("pathColor")(pathColor)
+    if (pathData != null) __obj.updateDynamic("pathData")(pathData)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (tool != null) __obj.updateDynamic("tool")(tool)
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[SelectedItemsUserHandle]
+  }
+}
+

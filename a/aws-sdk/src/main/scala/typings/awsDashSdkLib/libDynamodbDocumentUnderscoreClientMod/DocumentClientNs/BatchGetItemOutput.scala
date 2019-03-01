@@ -20,3 +20,18 @@ trait BatchGetItemOutput extends js.Object {
   var UnprocessedKeys: js.UndefOr[BatchGetRequestMap] = js.undefined
 }
 
+object BatchGetItemOutput {
+  @scala.inline
+  def apply(
+    ConsumedCapacity: ConsumedCapacityMultiple = null,
+    Responses: BatchGetResponseMap = null,
+    UnprocessedKeys: BatchGetRequestMap = null
+  ): BatchGetItemOutput = {
+    val __obj = js.Dynamic.literal()
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
+    if (Responses != null) __obj.updateDynamic("Responses")(Responses)
+    if (UnprocessedKeys != null) __obj.updateDynamic("UnprocessedKeys")(UnprocessedKeys)
+    __obj.asInstanceOf[BatchGetItemOutput]
+  }
+}
+

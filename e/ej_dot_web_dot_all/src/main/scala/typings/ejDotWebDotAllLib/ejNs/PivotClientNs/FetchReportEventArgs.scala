@@ -14,3 +14,13 @@ trait FetchReportEventArgs extends js.Object {
   var targetControl: js.UndefOr[js.Any] = js.undefined
 }
 
+object FetchReportEventArgs {
+  @scala.inline
+  def apply(fetchReportSetting: js.Any = null, targetControl: js.Any = null): FetchReportEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (fetchReportSetting != null) __obj.updateDynamic("fetchReportSetting")(fetchReportSetting)
+    if (targetControl != null) __obj.updateDynamic("targetControl")(targetControl)
+    __obj.asInstanceOf[FetchReportEventArgs]
+  }
+}
+

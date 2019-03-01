@@ -10,3 +10,13 @@ trait ItemContent extends js.Object {
   var contentType: ItemContentType
 }
 
+object ItemContent {
+  @scala.inline
+  def apply(content: java.lang.String, contentType: ItemContentType): ItemContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.asInstanceOf[ItemContent]
+  }
+}
+

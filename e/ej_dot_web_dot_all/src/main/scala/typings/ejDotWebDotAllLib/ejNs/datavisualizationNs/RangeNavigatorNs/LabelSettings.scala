@@ -17,3 +17,18 @@ trait LabelSettings extends js.Object {
   var style: js.UndefOr[LabelSettingsStyle] = js.undefined
 }
 
+object LabelSettings {
+  @scala.inline
+  def apply(
+    higherLevel: LabelSettingsHigherLevel = null,
+    lowerLevel: LabelSettingsLowerLevel = null,
+    style: LabelSettingsStyle = null
+  ): LabelSettings = {
+    val __obj = js.Dynamic.literal()
+    if (higherLevel != null) __obj.updateDynamic("higherLevel")(higherLevel)
+    if (lowerLevel != null) __obj.updateDynamic("lowerLevel")(lowerLevel)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[LabelSettings]
+  }
+}
+

@@ -37,19 +37,19 @@ object realpathNs extends js.Object {
   ): scala.Unit = js.native
   def native(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
+    options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
+      /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def native(
     path: nodeLib.fsMod.PathLike,
-    options: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -77,6 +77,15 @@ object realpathNs extends js.Object {
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def native(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.BufferEncoding,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* resolvedPath */ java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native

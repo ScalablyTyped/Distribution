@@ -58,3 +58,24 @@ trait DrilldownOptions extends js.Object {
   var series: js.UndefOr[js.Array[IndividualSeriesOptions]] = js.undefined
 }
 
+object DrilldownOptions {
+  @scala.inline
+  def apply(
+    activeAxisLabelStyle: js.Object = null,
+    activeDataLabelStyle: js.Object = null,
+    allowPointDrilldown: js.UndefOr[scala.Boolean] = js.undefined,
+    animation: scala.Boolean | Animation = null,
+    drillUpButton: highchartsLib.Anon_Position = null,
+    series: js.Array[IndividualSeriesOptions] = null
+  ): DrilldownOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activeAxisLabelStyle != null) __obj.updateDynamic("activeAxisLabelStyle")(activeAxisLabelStyle)
+    if (activeDataLabelStyle != null) __obj.updateDynamic("activeDataLabelStyle")(activeDataLabelStyle)
+    if (!js.isUndefined(allowPointDrilldown)) __obj.updateDynamic("allowPointDrilldown")(allowPointDrilldown)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (drillUpButton != null) __obj.updateDynamic("drillUpButton")(drillUpButton)
+    if (series != null) __obj.updateDynamic("series")(series)
+    __obj.asInstanceOf[DrilldownOptions]
+  }
+}
+

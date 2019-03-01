@@ -21,3 +21,18 @@ trait ClearStorageDataOptions extends js.Object {
   var storages: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ClearStorageDataOptions {
+  @scala.inline
+  def apply(
+    origin: java.lang.String = null,
+    quotas: js.Array[java.lang.String] = null,
+    storages: js.Array[java.lang.String] = null
+  ): ClearStorageDataOptions = {
+    val __obj = js.Dynamic.literal()
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (quotas != null) __obj.updateDynamic("quotas")(quotas)
+    if (storages != null) __obj.updateDynamic("storages")(storages)
+    __obj.asInstanceOf[ClearStorageDataOptions]
+  }
+}
+

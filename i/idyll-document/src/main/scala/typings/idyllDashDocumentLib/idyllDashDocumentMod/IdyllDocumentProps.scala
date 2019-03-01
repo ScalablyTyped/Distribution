@@ -50,3 +50,34 @@ trait IdyllDocumentProps extends js.Object {
   var theme: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdyllDocumentProps {
+  @scala.inline
+  def apply(
+    components: js.Any,
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST = null,
+    compilerOptions: idyllDashCompilerLib.idyllDashCompilerMod.Options = null,
+    context: js.Function1[/* context */ js.Any, scala.Unit] = null,
+    datasets: js.Object = null,
+    errorComponent: reactLib.reactMod.ReactNs.ReactType[idyllDashDocumentLib.Anon_Children] = null,
+    initialState: js.Any = null,
+    layout: java.lang.String = null,
+    markup: java.lang.String = null,
+    onError: js.Function1[/* err */ stdLib.Error, scala.Unit] = null,
+    theme: java.lang.String = null
+  ): IdyllDocumentProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("components")(components)
+    if (ast != null) __obj.updateDynamic("ast")(ast)
+    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (datasets != null) __obj.updateDynamic("datasets")(datasets)
+    if (errorComponent != null) __obj.updateDynamic("errorComponent")(errorComponent.asInstanceOf[js.Any])
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (markup != null) __obj.updateDynamic("markup")(markup)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[IdyllDocumentProps]
+  }
+}
+

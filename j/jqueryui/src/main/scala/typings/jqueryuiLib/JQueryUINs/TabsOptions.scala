@@ -20,3 +20,38 @@ trait TabsOptions extends TabsEvents {
   var show: js.UndefOr[js.Any] = js.undefined
 }
 
+object TabsOptions {
+  @scala.inline
+  def apply(
+    activate: TabsEvent[TabsActivationUIParams] = null,
+    active: js.Any = null,
+    beforeActivate: TabsEvent[TabsActivationUIParams] = null,
+    beforeLoad: TabsEvent[TabsBeforeLoadUIParams] = null,
+    classes: TabClasses = null,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    create: TabsEvent[TabsCreateOrLoadUIParams] = null,
+    disabled: js.Any = null,
+    event: java.lang.String = null,
+    heightStyle: java.lang.String = null,
+    hide: js.Any = null,
+    load: TabsEvent[TabsCreateOrLoadUIParams] = null,
+    show: js.Any = null
+  ): TabsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(beforeActivate)
+    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(beforeLoad)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (heightStyle != null) __obj.updateDynamic("heightStyle")(heightStyle)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (show != null) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[TabsOptions]
+  }
+}
+

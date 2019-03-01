@@ -28,3 +28,22 @@ trait NotificationEventField extends js.Object {
   var supportedScopes: js.Array[java.lang.String]
 }
 
+object NotificationEventField {
+  @scala.inline
+  def apply(
+    fieldType: NotificationEventFieldType,
+    id: java.lang.String,
+    name: java.lang.String,
+    path: java.lang.String,
+    supportedScopes: js.Array[java.lang.String]
+  ): NotificationEventField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fieldType")(fieldType)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("supportedScopes")(supportedScopes)
+    __obj.asInstanceOf[NotificationEventField]
+  }
+}
+

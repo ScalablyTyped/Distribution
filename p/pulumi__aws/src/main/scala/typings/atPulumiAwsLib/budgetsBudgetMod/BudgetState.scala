@@ -54,3 +54,34 @@ trait BudgetState extends js.Object {
   val timeUnit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object BudgetState {
+  @scala.inline
+  def apply(
+    accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    budgetType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    costFilters: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    costTypes: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IncludeCreditIncludeDiscount] = null,
+    limitAmount: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    limitUnit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    timePeriodEnd: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    timePeriodStart: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    timeUnit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): BudgetState = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (budgetType != null) __obj.updateDynamic("budgetType")(budgetType.asInstanceOf[js.Any])
+    if (costFilters != null) __obj.updateDynamic("costFilters")(costFilters.asInstanceOf[js.Any])
+    if (costTypes != null) __obj.updateDynamic("costTypes")(costTypes.asInstanceOf[js.Any])
+    if (limitAmount != null) __obj.updateDynamic("limitAmount")(limitAmount.asInstanceOf[js.Any])
+    if (limitUnit != null) __obj.updateDynamic("limitUnit")(limitUnit.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (timePeriodEnd != null) __obj.updateDynamic("timePeriodEnd")(timePeriodEnd.asInstanceOf[js.Any])
+    if (timePeriodStart != null) __obj.updateDynamic("timePeriodStart")(timePeriodStart.asInstanceOf[js.Any])
+    if (timeUnit != null) __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BudgetState]
+  }
+}
+

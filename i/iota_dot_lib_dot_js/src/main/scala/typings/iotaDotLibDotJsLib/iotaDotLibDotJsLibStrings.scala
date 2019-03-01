@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 object iotaDotLibDotJsLibStrings {
   @js.native
-  sealed trait Gi extends js.Object
+  sealed trait Gi extends IOTAUnit
   
   @js.native
-  sealed trait Ki extends js.Object
+  sealed trait Ki extends IOTAUnit
   
   @js.native
-  sealed trait Mi extends js.Object
+  sealed trait Mi extends IOTAUnit
   
   @js.native
-  sealed trait Pi extends js.Object
+  sealed trait Pi extends IOTAUnit
   
   @js.native
-  sealed trait Ti extends js.Object
+  sealed trait Ti extends IOTAUnit
   
   @js.native
-  sealed trait i extends js.Object
+  sealed trait i extends IOTAUnit
   
   @js.native
   sealed trait tcp extends js.Object

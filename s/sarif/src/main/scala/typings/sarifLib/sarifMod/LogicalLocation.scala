@@ -37,3 +37,24 @@ trait LogicalLocation extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object LogicalLocation {
+  @scala.inline
+  def apply(
+    decoratedName: java.lang.String = null,
+    fullyQualifiedName: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    parentIndex: scala.Int | scala.Double = null,
+    properties: PropertyBag = null
+  ): LogicalLocation = {
+    val __obj = js.Dynamic.literal()
+    if (decoratedName != null) __obj.updateDynamic("decoratedName")(decoratedName)
+    if (fullyQualifiedName != null) __obj.updateDynamic("fullyQualifiedName")(fullyQualifiedName)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parentIndex != null) __obj.updateDynamic("parentIndex")(parentIndex.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[LogicalLocation]
+  }
+}
+

@@ -9,3 +9,12 @@ trait GetFileMetadataOptions extends js.Object {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetFileMetadataOptions {
+  @scala.inline
+  def apply(userProject: java.lang.String = null): GetFileMetadataOptions = {
+    val __obj = js.Dynamic.literal()
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    __obj.asInstanceOf[GetFileMetadataOptions]
+  }
+}
+

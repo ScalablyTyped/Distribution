@@ -16,3 +16,22 @@ trait XAccessibleEventListener
   def notifyEvent(aEvent: AccessibleEventObject): scala.Unit
 }
 
+object XAccessibleEventListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    notifyEvent: js.Function1[AccessibleEventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleEventListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("notifyEvent")(notifyEvent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAccessibleEventListener]
+  }
+}
+

@@ -75,3 +75,66 @@ trait JQBlockUIOptions extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JQBlockUIOptions {
+  @scala.inline
+  def apply(
+    allowBodyStretch: js.UndefOr[scala.Boolean] = js.undefined,
+    baseZ: scala.Int | scala.Double = null,
+    bindEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    blockMsgClass: java.lang.String = null,
+    centerX: js.UndefOr[scala.Boolean] = js.undefined,
+    centerY: js.UndefOr[scala.Boolean] = js.undefined,
+    constrainTabKey: js.UndefOr[scala.Boolean] = js.undefined,
+    css: js.Any = null,
+    cursorReset: java.lang.String = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    fadeIn: scala.Int | scala.Double = null,
+    fadeOut: scala.Int | scala.Double = null,
+    focusInput: js.UndefOr[scala.Boolean] = js.undefined,
+    forceIframe: js.UndefOr[scala.Boolean] = js.undefined,
+    growlCSS: js.Any = null,
+    iframeSrc: java.lang.String = null,
+    ignoreIfBlocked: js.UndefOr[scala.Boolean] = js.undefined,
+    message: js.Any = null,
+    onBlock: js.Function0[scala.Unit] = null,
+    onUnblock: js.Function2[/* element */ js.Any, /* options */ js.Any, scala.Unit] = null,
+    overlayCSS: js.Any = null,
+    quirksmodeOffsetHack: scala.Int | scala.Double = null,
+    showOverlay: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: js.UndefOr[scala.Boolean] = js.undefined,
+    themedCSS: js.Any = null,
+    timeout: scala.Int | scala.Double = null,
+    title: java.lang.String = null
+  ): JQBlockUIOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowBodyStretch)) __obj.updateDynamic("allowBodyStretch")(allowBodyStretch)
+    if (baseZ != null) __obj.updateDynamic("baseZ")(baseZ.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindEvents)) __obj.updateDynamic("bindEvents")(bindEvents)
+    if (blockMsgClass != null) __obj.updateDynamic("blockMsgClass")(blockMsgClass)
+    if (!js.isUndefined(centerX)) __obj.updateDynamic("centerX")(centerX)
+    if (!js.isUndefined(centerY)) __obj.updateDynamic("centerY")(centerY)
+    if (!js.isUndefined(constrainTabKey)) __obj.updateDynamic("constrainTabKey")(constrainTabKey)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (cursorReset != null) __obj.updateDynamic("cursorReset")(cursorReset)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (fadeIn != null) __obj.updateDynamic("fadeIn")(fadeIn.asInstanceOf[js.Any])
+    if (fadeOut != null) __obj.updateDynamic("fadeOut")(fadeOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusInput)) __obj.updateDynamic("focusInput")(focusInput)
+    if (!js.isUndefined(forceIframe)) __obj.updateDynamic("forceIframe")(forceIframe)
+    if (growlCSS != null) __obj.updateDynamic("growlCSS")(growlCSS)
+    if (iframeSrc != null) __obj.updateDynamic("iframeSrc")(iframeSrc)
+    if (!js.isUndefined(ignoreIfBlocked)) __obj.updateDynamic("ignoreIfBlocked")(ignoreIfBlocked)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (onBlock != null) __obj.updateDynamic("onBlock")(onBlock)
+    if (onUnblock != null) __obj.updateDynamic("onUnblock")(onUnblock)
+    if (overlayCSS != null) __obj.updateDynamic("overlayCSS")(overlayCSS)
+    if (quirksmodeOffsetHack != null) __obj.updateDynamic("quirksmodeOffsetHack")(quirksmodeOffsetHack.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay)
+    if (!js.isUndefined(theme)) __obj.updateDynamic("theme")(theme)
+    if (themedCSS != null) __obj.updateDynamic("themedCSS")(themedCSS)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[JQBlockUIOptions]
+  }
+}
+

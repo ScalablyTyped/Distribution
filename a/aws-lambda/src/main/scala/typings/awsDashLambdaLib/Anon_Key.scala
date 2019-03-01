@@ -10,3 +10,16 @@ trait Anon_Key
   var ServiceToken: java.lang.String
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    ServiceToken: java.lang.String,
+    StringDictionary: /* Key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ServiceToken")(ServiceToken)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

@@ -24,7 +24,6 @@ package object webpackMergeNs {
     js.UndefOr[js.Object | scala.Null]
   ]
   type MergeFunction = ConfigurationMergeFunction | ConfigurationMergeConfigFunction
-  type MergeStrategy = webpackDashMergeLib.webpackDashMergeLibStrings.prepend | webpackDashMergeLib.webpackDashMergeLibStrings.append | webpackDashMergeLib.webpackDashMergeLibStrings.replace
   type UniqueFunction = js.Function3[
     /* field */ java.lang.String, 
     /* fields */ js.Array[java.lang.String], 

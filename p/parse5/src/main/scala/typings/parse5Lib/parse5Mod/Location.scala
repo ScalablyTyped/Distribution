@@ -32,3 +32,24 @@ trait Location extends js.Object {
   var startOffset: scala.Double
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    endCol: scala.Double,
+    endLine: scala.Double,
+    endOffset: scala.Double,
+    startCol: scala.Double,
+    startLine: scala.Double,
+    startOffset: scala.Double
+  ): Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endCol")(endCol)
+    __obj.updateDynamic("endLine")(endLine)
+    __obj.updateDynamic("endOffset")(endOffset)
+    __obj.updateDynamic("startCol")(startCol)
+    __obj.updateDynamic("startLine")(startLine)
+    __obj.updateDynamic("startOffset")(startOffset)
+    __obj.asInstanceOf[Location]
+  }
+}
+

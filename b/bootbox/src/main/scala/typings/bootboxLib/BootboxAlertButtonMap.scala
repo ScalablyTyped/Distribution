@@ -10,3 +10,12 @@ trait BootboxAlertButtonMap extends BootboxButtonMap {
   var ok: BootboxButton | js.Function
 }
 
+object BootboxAlertButtonMap {
+  @scala.inline
+  def apply(ok: BootboxButton | js.Function): BootboxAlertButtonMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootboxAlertButtonMap]
+  }
+}
+

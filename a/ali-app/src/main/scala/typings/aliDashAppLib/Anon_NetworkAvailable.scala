@@ -12,3 +12,13 @@ trait Anon_NetworkAvailable extends js.Object {
   var networkType: aliDashAppLib.myNs.NetworkType
 }
 
+object Anon_NetworkAvailable {
+  @scala.inline
+  def apply(networkAvailable: scala.Boolean, networkType: aliDashAppLib.myNs.NetworkType): Anon_NetworkAvailable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("networkAvailable")(networkAvailable)
+    __obj.updateDynamic("networkType")(networkType)
+    __obj.asInstanceOf[Anon_NetworkAvailable]
+  }
+}
+

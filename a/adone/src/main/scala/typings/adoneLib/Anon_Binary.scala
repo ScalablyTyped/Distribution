@@ -28,3 +28,48 @@ trait Anon_Binary extends js.Object {
   val jsNs: Anon_ArgsFunction
 }
 
+object Anon_Binary {
+  @scala.inline
+  def apply(
+    Binary: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[nodeLib.Buffer],
+    Bool: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[scala.Boolean],
+    Float: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[scala.Double],
+    INs: js.Any,
+    Int: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[scala.Double],
+    Map: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Mapping,
+    Merge: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[_],
+    Null: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[scala.Null],
+    Omap: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Sequence[js.Object],
+    Pairs: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Sequence[js.Tuple2[java.lang.String, _]],
+    Seq: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Sequence[_],
+    Set: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Mapping,
+    Str: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[java.lang.String],
+    Timestamp: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[stdLib.Date],
+    Type: org.scalablytyped.runtime.Instantiable2[
+      /* tag */ java.lang.String, 
+      /* options */ adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.TypeOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+      adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[js.Object]
+    ],
+    jsNs: Anon_ArgsFunction
+  ): Anon_Binary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Binary")(Binary)
+    __obj.updateDynamic("Bool")(Bool)
+    __obj.updateDynamic("Float")(Float)
+    __obj.updateDynamic("INs")(INs)
+    __obj.updateDynamic("Int")(Int)
+    __obj.updateDynamic("Map")(Map)
+    __obj.updateDynamic("Merge")(Merge)
+    __obj.updateDynamic("Null")(Null)
+    __obj.updateDynamic("Omap")(Omap)
+    __obj.updateDynamic("Pairs")(Pairs)
+    __obj.updateDynamic("Seq")(Seq)
+    __obj.updateDynamic("Set")(Set)
+    __obj.updateDynamic("Str")(Str)
+    __obj.updateDynamic("Timestamp")(Timestamp)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("jsNs")(jsNs)
+    __obj.asInstanceOf[Anon_Binary]
+  }
+}
+

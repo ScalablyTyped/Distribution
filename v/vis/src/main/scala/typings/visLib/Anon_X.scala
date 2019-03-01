@@ -10,3 +10,13 @@ trait Anon_X extends js.Object {
   var y: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_X {
+  @scala.inline
+  def apply(x: js.UndefOr[scala.Boolean] = js.undefined, y: js.UndefOr[scala.Boolean] = js.undefined): Anon_X = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x)
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Anon_X]
+  }
+}
+

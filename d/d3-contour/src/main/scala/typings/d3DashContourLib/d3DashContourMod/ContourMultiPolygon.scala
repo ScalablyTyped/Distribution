@@ -13,3 +13,21 @@ trait ContourMultiPolygon
   var value: scala.Double
 }
 
+object ContourMultiPolygon {
+  @scala.inline
+  def apply(
+    coordinates: js.Array[js.Array[js.Array[geojsonLib.geojsonMod.Position]]],
+    `type`: geojsonLib.geojsonMod.GeoJsonTypes,
+    type_MultiPolygon: geojsonLib.geojsonLibStrings.MultiPolygon,
+    value: scala.Double,
+    bbox: geojsonLib.geojsonMod.BBox = null
+  ): ContourMultiPolygon = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("coordinates")(coordinates)
+    __obj.updateDynamic("type")(type_MultiPolygon)
+    __obj.updateDynamic("value")(value)
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContourMultiPolygon]
+  }
+}
+

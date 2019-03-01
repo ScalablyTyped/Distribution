@@ -33,3 +33,26 @@ trait GetItemInput extends js.Object {
   var TableName: TableName
 }
 
+object GetItemInput {
+  @scala.inline
+  def apply(
+    Key: Key,
+    TableName: TableName,
+    AttributesToGet: AttributeNameList = null,
+    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ProjectionExpression: ProjectionExpression = null,
+    ReturnConsumedCapacity: ReturnConsumedCapacity = null
+  ): GetItemInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Key")(Key)
+    __obj.updateDynamic("TableName")(TableName)
+    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet)
+    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression)
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetItemInput]
+  }
+}
+

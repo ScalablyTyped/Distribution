@@ -16,3 +16,20 @@ trait SheetCellCursor
      with XSheetCellCursor
      with XUsedAreaCursor
 
+object SheetCellCursor {
+  @scala.inline
+  def apply(
+    SheetCellRange: SheetCellRange = null,
+    XCellCursor: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellCursor = null,
+    XSheetCellCursor: XSheetCellCursor = null,
+    XUsedAreaCursor: XUsedAreaCursor = null
+  ): SheetCellCursor = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, SheetCellRange)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellCursor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetCellCursor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XUsedAreaCursor)
+    __obj.asInstanceOf[SheetCellCursor]
+  }
+}
+

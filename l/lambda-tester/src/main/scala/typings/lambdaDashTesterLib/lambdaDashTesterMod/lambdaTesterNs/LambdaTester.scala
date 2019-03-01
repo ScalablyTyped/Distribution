@@ -20,3 +20,36 @@ trait LambdaTester extends js.Object {
   def xray(): this.type
 }
 
+object LambdaTester {
+  @scala.inline
+  def apply(
+    clientContext: js.Function1[awsDashLambdaLib.awsDashLambdaMod.ClientContext, LambdaTester],
+    context: js.Function1[awsDashLambdaLib.awsDashLambdaMod.Context, LambdaTester],
+    event: js.Function1[js.Any, LambdaTester],
+    expectError: js.Function1[Verifier, js.Promise[_]],
+    expectFail: js.Function1[Verifier, js.Promise[_]],
+    expectReject: js.Function1[Verifier, js.Promise[_]],
+    expectResolve: js.Function1[Verifier, js.Promise[_]],
+    expectResult: js.Function1[Verifier, js.Promise[_]],
+    expectSucceed: js.Function1[Verifier, js.Promise[_]],
+    identity: js.Function2[java.lang.String, java.lang.String, LambdaTester],
+    timeout: js.Function1[scala.Double, LambdaTester],
+    xray: js.Function0[LambdaTester]
+  ): LambdaTester = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientContext")(clientContext)
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("expectError")(expectError)
+    __obj.updateDynamic("expectFail")(expectFail)
+    __obj.updateDynamic("expectReject")(expectReject)
+    __obj.updateDynamic("expectResolve")(expectResolve)
+    __obj.updateDynamic("expectResult")(expectResult)
+    __obj.updateDynamic("expectSucceed")(expectSucceed)
+    __obj.updateDynamic("identity")(identity)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.updateDynamic("xray")(xray)
+    __obj.asInstanceOf[LambdaTester]
+  }
+}
+

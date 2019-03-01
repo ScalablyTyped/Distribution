@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-effectScatter
   */
-trait SeriesEffectScatter extends js.Object {
+trait SeriesEffectScatter extends Series {
   /**
     * Whether to enable animation.
     *
@@ -715,5 +715,102 @@ trait SeriesEffectScatter extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-effectScatter.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesEffectScatter {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    calendarIndex: scala.Int | scala.Double = null,
+    coordinateSystem: java.lang.String = null,
+    cursor: java.lang.String = null,
+    data: (js.Array[
+      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesEffectScatterNs.DataObject
+    ]) | (js.Array[
+      js.Array[
+        scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesEffectScatterNs.DataObject
+      ]
+    ]) = null,
+    datasetIndex: scala.Int | scala.Double = null,
+    dimensions: js.Array[_] = null,
+    effectType: java.lang.String = null,
+    emphasis: echartsLib.Anon_ItemStyleLabel = null,
+    encode: js.Object = null,
+    geoIndex: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidthColor = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
+    legendHoverLink: js.UndefOr[scala.Boolean] = js.undefined,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelay = null,
+    markPoint: echartsLib.Anon_Animation = null,
+    name: java.lang.String = null,
+    polarIndex: scala.Int | scala.Double = null,
+    rippleEffect: echartsLib.Anon_BrushType = null,
+    seriesLayoutBy: java.lang.String = null,
+    showEffectOn: java.lang.String = null,
+    symbol: java.lang.String = null,
+    symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolOffset: js.Array[_] = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | scala.Double = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    `type`: java.lang.String = null,
+    xAxisIndex: scala.Int | scala.Double = null,
+    yAxisIndex: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesEffectScatter = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (calendarIndex != null) __obj.updateDynamic("calendarIndex")(calendarIndex.asInstanceOf[js.Any])
+    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (effectType != null) __obj.updateDynamic("effectType")(effectType)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (geoIndex != null) __obj.updateDynamic("geoIndex")(geoIndex.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink)
+    if (markArea != null) __obj.updateDynamic("markArea")(markArea)
+    if (markLine != null) __obj.updateDynamic("markLine")(markLine)
+    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (polarIndex != null) __obj.updateDynamic("polarIndex")(polarIndex.asInstanceOf[js.Any])
+    if (rippleEffect != null) __obj.updateDynamic("rippleEffect")(rippleEffect)
+    if (seriesLayoutBy != null) __obj.updateDynamic("seriesLayoutBy")(seriesLayoutBy)
+    if (showEffectOn != null) __obj.updateDynamic("showEffectOn")(showEffectOn)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
+    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesEffectScatter]
+  }
 }
 

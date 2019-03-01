@@ -50,3 +50,28 @@ trait ZXCVBNResult extends js.Object {
   var sequence: js.Array[ZXCVBNSequence]
 }
 
+object ZXCVBNResult {
+  @scala.inline
+  def apply(
+    calc_time: scala.Double,
+    crack_times_display: ZXCVBNAttackTime,
+    crack_times_seconds: ZXCVBNAttackTime,
+    feedback: ZXCVBNFeedback,
+    guesses: scala.Double,
+    guesses_log10: scala.Double,
+    score: ZXCVBNScore,
+    sequence: js.Array[ZXCVBNSequence]
+  ): ZXCVBNResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calc_time")(calc_time)
+    __obj.updateDynamic("crack_times_display")(crack_times_display)
+    __obj.updateDynamic("crack_times_seconds")(crack_times_seconds)
+    __obj.updateDynamic("feedback")(feedback)
+    __obj.updateDynamic("guesses")(guesses)
+    __obj.updateDynamic("guesses_log10")(guesses_log10)
+    __obj.updateDynamic("score")(score)
+    __obj.updateDynamic("sequence")(sequence)
+    __obj.asInstanceOf[ZXCVBNResult]
+  }
+}
+

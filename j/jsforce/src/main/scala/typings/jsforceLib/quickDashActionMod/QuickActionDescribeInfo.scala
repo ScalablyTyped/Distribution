@@ -18,3 +18,22 @@ trait QuickActionDescribeInfo extends js.Object {
   var targetSobjectType: java.lang.String
 }
 
+object QuickActionDescribeInfo {
+  @scala.inline
+  def apply(
+    contextSobjectType: java.lang.String,
+    layout: js.Object,
+    targetParentField: java.lang.String,
+    targetRecordTypeId: java.lang.String,
+    targetSobjectType: java.lang.String
+  ): QuickActionDescribeInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contextSobjectType")(contextSobjectType)
+    __obj.updateDynamic("layout")(layout)
+    __obj.updateDynamic("targetParentField")(targetParentField)
+    __obj.updateDynamic("targetRecordTypeId")(targetRecordTypeId)
+    __obj.updateDynamic("targetSobjectType")(targetSobjectType)
+    __obj.asInstanceOf[QuickActionDescribeInfo]
+  }
+}
+

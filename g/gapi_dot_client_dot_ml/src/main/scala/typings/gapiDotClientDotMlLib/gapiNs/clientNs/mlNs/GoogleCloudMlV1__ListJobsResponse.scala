@@ -15,3 +15,13 @@ trait GoogleCloudMlV1__ListJobsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudMlV1__ListJobsResponse {
+  @scala.inline
+  def apply(jobs: js.Array[GoogleCloudMlV1__Job] = null, nextPageToken: java.lang.String = null): GoogleCloudMlV1__ListJobsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (jobs != null) __obj.updateDynamic("jobs")(jobs)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[GoogleCloudMlV1__ListJobsResponse]
+  }
+}
+

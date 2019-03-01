@@ -14,3 +14,22 @@ trait WebCLImageDescriptor extends js.Object {
   var width: scala.Double
 }
 
+object WebCLImageDescriptor {
+  @scala.inline
+  def apply(
+    channelOrder: ChannelOrder,
+    channelType: ChannelType,
+    height: scala.Double,
+    rowPitch: scala.Double,
+    width: scala.Double
+  ): WebCLImageDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channelOrder")(channelOrder)
+    __obj.updateDynamic("channelType")(channelType)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("rowPitch")(rowPitch)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[WebCLImageDescriptor]
+  }
+}
+

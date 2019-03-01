@@ -11,3 +11,18 @@ trait Anon_Bias extends js.Object {
   var scroll: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Bias {
+  @scala.inline
+  def apply(
+    bias: scala.Int | scala.Double = null,
+    origin: java.lang.String = null,
+    scroll: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Bias = {
+    val __obj = js.Dynamic.literal()
+    if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    __obj.asInstanceOf[Anon_Bias]
+  }
+}
+

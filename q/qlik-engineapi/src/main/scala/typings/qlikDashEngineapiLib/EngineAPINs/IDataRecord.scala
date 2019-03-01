@@ -17,3 +17,12 @@ trait IDataRecord extends js.Object {
   var qValues: js.Array[java.lang.String]
 }
 
+object IDataRecord {
+  @scala.inline
+  def apply(qValues: js.Array[java.lang.String]): IDataRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qValues")(qValues)
+    __obj.asInstanceOf[IDataRecord]
+  }
+}
+

@@ -14,3 +14,24 @@ trait CommandManager extends js.Object {
   def exec(name: java.lang.String, editor: Editor, args: js.Any): scala.Unit
 }
 
+object CommandManager {
+  @scala.inline
+  def apply(
+    addCommand: js.Function1[EditorCommand, scala.Unit],
+    addCommands: js.Function1[js.Array[EditorCommand], scala.Unit],
+    byName: js.Any,
+    commands: js.Any,
+    exec: js.Function3[java.lang.String, Editor, js.Any, scala.Unit],
+    platform: java.lang.String
+  ): CommandManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addCommand")(addCommand)
+    __obj.updateDynamic("addCommands")(addCommands)
+    __obj.updateDynamic("byName")(byName)
+    __obj.updateDynamic("commands")(commands)
+    __obj.updateDynamic("exec")(exec)
+    __obj.updateDynamic("platform")(platform)
+    __obj.asInstanceOf[CommandManager]
+  }
+}
+

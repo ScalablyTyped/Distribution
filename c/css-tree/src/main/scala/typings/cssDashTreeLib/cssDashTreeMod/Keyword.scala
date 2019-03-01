@@ -13,3 +13,22 @@ trait Keyword extends js.Object {
   val vendor: java.lang.String
 }
 
+object Keyword {
+  @scala.inline
+  def apply(
+    basename: java.lang.String,
+    custom: scala.Boolean,
+    name: java.lang.String,
+    prefix: java.lang.String,
+    vendor: java.lang.String
+  ): Keyword = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("basename")(basename)
+    __obj.updateDynamic("custom")(custom)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("vendor")(vendor)
+    __obj.asInstanceOf[Keyword]
+  }
+}
+

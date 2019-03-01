@@ -10,3 +10,12 @@ trait ReviewsReplyRequest extends js.Object {
   var replyText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReviewsReplyRequest {
+  @scala.inline
+  def apply(replyText: java.lang.String = null): ReviewsReplyRequest = {
+    val __obj = js.Dynamic.literal()
+    if (replyText != null) __obj.updateDynamic("replyText")(replyText)
+    __obj.asInstanceOf[ReviewsReplyRequest]
+  }
+}
+

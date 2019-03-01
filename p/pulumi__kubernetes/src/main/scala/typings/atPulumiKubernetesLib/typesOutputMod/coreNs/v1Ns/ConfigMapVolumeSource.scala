@@ -41,3 +41,20 @@ trait ConfigMapVolumeSource extends js.Object {
   val optional: scala.Boolean
 }
 
+object ConfigMapVolumeSource {
+  @scala.inline
+  def apply(
+    defaultMode: scala.Double,
+    items: js.Array[KeyToPath],
+    name: java.lang.String,
+    optional: scala.Boolean
+  ): ConfigMapVolumeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultMode")(defaultMode)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[ConfigMapVolumeSource]
+  }
+}
+

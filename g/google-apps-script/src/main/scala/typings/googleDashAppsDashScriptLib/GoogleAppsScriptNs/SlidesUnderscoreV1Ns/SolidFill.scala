@@ -18,3 +18,13 @@ trait SolidFill extends js.Object {
   var color: OpaqueColor
 }
 
+object SolidFill {
+  @scala.inline
+  def apply(alpha: scala.Double, color: OpaqueColor): SolidFill = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alpha")(alpha)
+    __obj.updateDynamic("color")(color)
+    __obj.asInstanceOf[SolidFill]
+  }
+}
+

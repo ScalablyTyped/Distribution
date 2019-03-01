@@ -20,3 +20,20 @@ trait DrillSuccessEventArgs extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
 }
 
+object DrillSuccessEventArgs {
+  @scala.inline
+  def apply(
+    chartObj: js.Any = null,
+    drillAction: java.lang.String = null,
+    drilledMember: java.lang.String = null,
+    event: js.Any = null
+  ): DrillSuccessEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (chartObj != null) __obj.updateDynamic("chartObj")(chartObj)
+    if (drillAction != null) __obj.updateDynamic("drillAction")(drillAction)
+    if (drilledMember != null) __obj.updateDynamic("drilledMember")(drilledMember)
+    if (event != null) __obj.updateDynamic("event")(event)
+    __obj.asInstanceOf[DrillSuccessEventArgs]
+  }
+}
+

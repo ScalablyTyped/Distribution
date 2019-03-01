@@ -38,3 +38,22 @@ trait Options extends js.Object {
   var strictTtl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    automaticFailover: js.UndefOr[scala.Boolean] = js.undefined,
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    forceRefresh: js.UndefOr[scala.Boolean] = js.undefined,
+    maxTtl: scala.Int | scala.Double = null,
+    strictTtl: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(automaticFailover)) __obj.updateDynamic("automaticFailover")(automaticFailover)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh)
+    if (maxTtl != null) __obj.updateDynamic("maxTtl")(maxTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictTtl)) __obj.updateDynamic("strictTtl")(strictTtl)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -10,3 +10,13 @@ trait PreviewClickEvent extends js.Object {
   def preventDefault(): scala.Unit
 }
 
+object PreviewClickEvent {
+  @scala.inline
+  def apply(attachmentCardView: AttachmentCardView, preventDefault: js.Function0[scala.Unit]): PreviewClickEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attachmentCardView")(attachmentCardView)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.asInstanceOf[PreviewClickEvent]
+  }
+}
+

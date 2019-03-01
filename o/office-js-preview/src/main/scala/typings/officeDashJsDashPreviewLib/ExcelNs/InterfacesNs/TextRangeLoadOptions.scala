@@ -30,3 +30,18 @@ trait TextRangeLoadOptions extends js.Object {
   var text: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TextRangeLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    font: ShapeFontLoadOptions = null,
+    text: js.UndefOr[scala.Boolean] = js.undefined
+  ): TextRangeLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextRangeLoadOptions]
+  }
+}
+

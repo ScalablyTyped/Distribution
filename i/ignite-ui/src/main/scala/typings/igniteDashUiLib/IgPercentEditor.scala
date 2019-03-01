@@ -371,3 +371,123 @@ trait IgPercentEditor
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgPercentEditor {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igPercentEditor
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowNullValue: js.UndefOr[scala.Boolean] = js.undefined,
+    buttonType: java.lang.String = null,
+    dataMode: java.lang.String = null,
+    decimalSeparator: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    displayFactor: scala.Int | scala.Double = null,
+    dropDownAnimationDuration: scala.Int | scala.Double = null,
+    dropDownAttachedToBody: js.UndefOr[scala.Boolean] = js.undefined,
+    dropDownOnReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    dropDownOrientation: java.lang.String = null,
+    excludeKeys: js.Any = null,
+    groupSeparator: java.lang.String = null,
+    groups: js.Array[_] = null,
+    height: java.lang.String | scala.Double = null,
+    includeKeys: js.Any = null,
+    inputName: java.lang.String = null,
+    isLimitedToListValues: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    listItemHoverDuration: scala.Int | scala.Double = null,
+    listItems: js.Array[_] = null,
+    listWidth: scala.Int | scala.Double = null,
+    locale: js.Any = null,
+    maxDecimals: scala.Int | scala.Double = null,
+    maxLength: js.Any = null,
+    maxValue: scala.Int | scala.Double = null,
+    minDecimals: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    negativePattern: java.lang.String = null,
+    negativeSign: java.lang.String = null,
+    nullValue: java.lang.String | scala.Double = null,
+    percentSymbol: java.lang.String = null,
+    placeHolder: java.lang.String = null,
+    positivePattern: java.lang.String = null,
+    preventSubmitOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    regional: java.lang.String | js.Object = null,
+    revertIfNotValid: js.UndefOr[scala.Boolean] = js.undefined,
+    roundDecimals: js.UndefOr[scala.Boolean] = js.undefined,
+    scientificFormat: java.lang.String = null,
+    selectionOnFocus: java.lang.String = null,
+    spinDelta: scala.Int | scala.Double = null,
+    spinWrapAround: js.UndefOr[scala.Boolean] = js.undefined,
+    suppressKeyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    suppressNotifications: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null,
+    textAlign: java.lang.String = null,
+    textMode: js.Any = null,
+    toLower: js.Any = null,
+    toUpper: js.Any = null,
+    validatorOptions: js.Any = null,
+    value: js.Any = null,
+    visibleItemsCount: scala.Int | scala.Double = null,
+    width: java.lang.String | scala.Double = null
+  ): IgPercentEditor = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowNullValue)) __obj.updateDynamic("allowNullValue")(allowNullValue)
+    if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType)
+    if (dataMode != null) __obj.updateDynamic("dataMode")(dataMode)
+    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (displayFactor != null) __obj.updateDynamic("displayFactor")(displayFactor.asInstanceOf[js.Any])
+    if (dropDownAnimationDuration != null) __obj.updateDynamic("dropDownAnimationDuration")(dropDownAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropDownAttachedToBody)) __obj.updateDynamic("dropDownAttachedToBody")(dropDownAttachedToBody)
+    if (!js.isUndefined(dropDownOnReadOnly)) __obj.updateDynamic("dropDownOnReadOnly")(dropDownOnReadOnly)
+    if (dropDownOrientation != null) __obj.updateDynamic("dropDownOrientation")(dropDownOrientation)
+    if (excludeKeys != null) __obj.updateDynamic("excludeKeys")(excludeKeys)
+    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator)
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (includeKeys != null) __obj.updateDynamic("includeKeys")(includeKeys)
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (!js.isUndefined(isLimitedToListValues)) __obj.updateDynamic("isLimitedToListValues")(isLimitedToListValues)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (listItemHoverDuration != null) __obj.updateDynamic("listItemHoverDuration")(listItemHoverDuration.asInstanceOf[js.Any])
+    if (listItems != null) __obj.updateDynamic("listItems")(listItems)
+    if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDecimals != null) __obj.updateDynamic("maxDecimals")(maxDecimals.asInstanceOf[js.Any])
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minDecimals != null) __obj.updateDynamic("minDecimals")(minDecimals.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (negativePattern != null) __obj.updateDynamic("negativePattern")(negativePattern)
+    if (negativeSign != null) __obj.updateDynamic("negativeSign")(negativeSign)
+    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
+    if (percentSymbol != null) __obj.updateDynamic("percentSymbol")(percentSymbol)
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
+    if (positivePattern != null) __obj.updateDynamic("positivePattern")(positivePattern)
+    if (!js.isUndefined(preventSubmitOnEnter)) __obj.updateDynamic("preventSubmitOnEnter")(preventSubmitOnEnter)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (!js.isUndefined(revertIfNotValid)) __obj.updateDynamic("revertIfNotValid")(revertIfNotValid)
+    if (!js.isUndefined(roundDecimals)) __obj.updateDynamic("roundDecimals")(roundDecimals)
+    if (scientificFormat != null) __obj.updateDynamic("scientificFormat")(scientificFormat)
+    if (selectionOnFocus != null) __obj.updateDynamic("selectionOnFocus")(selectionOnFocus)
+    if (spinDelta != null) __obj.updateDynamic("spinDelta")(spinDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(spinWrapAround)) __obj.updateDynamic("spinWrapAround")(spinWrapAround)
+    if (!js.isUndefined(suppressKeyboard)) __obj.updateDynamic("suppressKeyboard")(suppressKeyboard)
+    if (!js.isUndefined(suppressNotifications)) __obj.updateDynamic("suppressNotifications")(suppressNotifications)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (textMode != null) __obj.updateDynamic("textMode")(textMode)
+    if (toLower != null) __obj.updateDynamic("toLower")(toLower)
+    if (toUpper != null) __obj.updateDynamic("toUpper")(toUpper)
+    if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (visibleItemsCount != null) __obj.updateDynamic("visibleItemsCount")(visibleItemsCount.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgPercentEditor]
+  }
+}
+

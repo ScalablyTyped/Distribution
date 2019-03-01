@@ -15,3 +15,13 @@ trait TextSpan extends js.Object {
   var content: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TextSpan {
+  @scala.inline
+  def apply(beginOffset: scala.Int | scala.Double = null, content: java.lang.String = null): TextSpan = {
+    val __obj = js.Dynamic.literal()
+    if (beginOffset != null) __obj.updateDynamic("beginOffset")(beginOffset.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content)
+    __obj.asInstanceOf[TextSpan]
+  }
+}
+

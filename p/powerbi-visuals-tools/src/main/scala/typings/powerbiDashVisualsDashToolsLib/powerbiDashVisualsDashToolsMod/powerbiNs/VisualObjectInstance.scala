@@ -24,3 +24,26 @@ trait VisualObjectInstance extends js.Object {
   ] = js.undefined
 }
 
+object VisualObjectInstance {
+  @scala.inline
+  def apply(
+    objectName: java.lang.String,
+    properties: org.scalablytyped.runtime.StringDictionary[DataViewPropertyValue],
+    selector: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.Selector,
+    containerIdx: scala.Int | scala.Double = null,
+    displayName: java.lang.String = null,
+    propertyTypes: org.scalablytyped.runtime.StringDictionary[ValueTypeDescriptor] = null,
+    validValues: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String] | ValidationOptions] = null
+  ): VisualObjectInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("objectName")(objectName)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("selector")(selector)
+    if (containerIdx != null) __obj.updateDynamic("containerIdx")(containerIdx.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (propertyTypes != null) __obj.updateDynamic("propertyTypes")(propertyTypes)
+    if (validValues != null) __obj.updateDynamic("validValues")(validValues)
+    __obj.asInstanceOf[VisualObjectInstance]
+  }
+}
+

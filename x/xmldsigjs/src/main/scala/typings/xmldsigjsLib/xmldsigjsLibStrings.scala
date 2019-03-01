@@ -7,43 +7,56 @@ import scala.scalajs.js.annotation._
 
 object xmldsigjsLibStrings {
   @js.native
-  sealed trait `P-256` extends js.Object
+  sealed trait `P-256`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs._NamedCurveType
   
   @js.native
-  sealed trait `P-384` extends js.Object
+  sealed trait `P-384`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs._NamedCurveType
   
   @js.native
-  sealed trait `P-521` extends js.Object
+  sealed trait `P-521`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs._NamedCurveType
   
   @js.native
-  sealed trait `SHA-1` extends js.Object
+  sealed trait `SHA-1`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DigestAlgorithm
   
   @js.native
-  sealed trait `SHA-256` extends js.Object
+  sealed trait `SHA-256`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DigestAlgorithm
   
   @js.native
-  sealed trait `SHA-384` extends js.Object
+  sealed trait `SHA-384`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DigestAlgorithm
   
   @js.native
-  sealed trait `SHA-512` extends js.Object
+  sealed trait `SHA-512`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.DigestAlgorithm
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.OptionsSignTransform
   
   @js.native
-  sealed trait c14n extends js.Object
+  sealed trait c14n
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.OptionsSignTransform
   
   @js.native
-  sealed trait `c14n-com` extends js.Object
+  sealed trait `c14n-com`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.OptionsSignTransform
   
   @js.native
-  sealed trait enveloped extends js.Object
+  sealed trait enveloped
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.OptionsSignTransform
   
   @js.native
-  sealed trait `exc-c14n` extends js.Object
+  sealed trait `exc-c14n`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.OptionsSignTransform
   
   @js.native
-  sealed trait `exc-c14n-com` extends js.Object
+  sealed trait `exc-c14n-com`
+    extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.OptionsSignTransform
   
   @scala.inline
   def `P-256`: `P-256` = "P-256".asInstanceOf[`P-256`]

@@ -36,3 +36,28 @@ trait SaveDialogOptions extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SaveDialogOptions {
+  @scala.inline
+  def apply(
+    buttonLabel: java.lang.String = null,
+    defaultPath: java.lang.String = null,
+    filters: js.Array[FileFilter] = null,
+    message: java.lang.String = null,
+    nameFieldLabel: java.lang.String = null,
+    securityScopedBookmarks: js.UndefOr[scala.Boolean] = js.undefined,
+    showsTagField: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null
+  ): SaveDialogOptions = {
+    val __obj = js.Dynamic.literal()
+    if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel)
+    if (defaultPath != null) __obj.updateDynamic("defaultPath")(defaultPath)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (nameFieldLabel != null) __obj.updateDynamic("nameFieldLabel")(nameFieldLabel)
+    if (!js.isUndefined(securityScopedBookmarks)) __obj.updateDynamic("securityScopedBookmarks")(securityScopedBookmarks)
+    if (!js.isUndefined(showsTagField)) __obj.updateDynamic("showsTagField")(showsTagField)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[SaveDialogOptions]
+  }
+}
+

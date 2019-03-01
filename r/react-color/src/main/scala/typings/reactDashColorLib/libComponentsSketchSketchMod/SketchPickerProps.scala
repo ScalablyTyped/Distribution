@@ -19,3 +19,34 @@ trait SketchPickerProps
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SketchPickerProps {
+  @scala.inline
+  def apply(
+    color: reactDashColorLib.reactDashColorMod.Color = null,
+    disableAlpha: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
+    onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
+    onSwatchHover: js.Function2[
+      /* color */ reactDashColorLib.reactDashColorMod.Color, 
+      /* event */ reactLib.MouseEvent, 
+      scala.Unit
+    ] = null,
+    presetColors: js.Array[java.lang.String] = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[SketchPicker] = null,
+    width: java.lang.String = null
+  ): SketchPickerProps = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAlpha)) __obj.updateDynamic("disableAlpha")(disableAlpha)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(onChangeComplete)
+    if (onSwatchHover != null) __obj.updateDynamic("onSwatchHover")(onSwatchHover)
+    if (presetColors != null) __obj.updateDynamic("presetColors")(presetColors)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[SketchPickerProps]
+  }
+}
+

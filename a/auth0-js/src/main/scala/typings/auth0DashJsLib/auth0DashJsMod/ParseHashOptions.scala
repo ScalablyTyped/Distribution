@@ -12,3 +12,20 @@ trait ParseHashOptions extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ParseHashOptions {
+  @scala.inline
+  def apply(
+    _idTokenVerification: js.UndefOr[scala.Boolean] = js.undefined,
+    hash: java.lang.String = null,
+    nonce: java.lang.String = null,
+    state: java.lang.String = null
+  ): ParseHashOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(_idTokenVerification)) __obj.updateDynamic("_idTokenVerification")(_idTokenVerification)
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ParseHashOptions]
+  }
+}
+

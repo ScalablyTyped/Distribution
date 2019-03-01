@@ -10,3 +10,13 @@ trait Anon_DataErr extends js.Object {
   var Response: scala.Double
 }
 
+object Anon_DataErr {
+  @scala.inline
+  def apply(DataErr: scala.Double, Response: scala.Double): Anon_DataErr = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataErr")(DataErr)
+    __obj.updateDynamic("Response")(Response)
+    __obj.asInstanceOf[Anon_DataErr]
+  }
+}
+

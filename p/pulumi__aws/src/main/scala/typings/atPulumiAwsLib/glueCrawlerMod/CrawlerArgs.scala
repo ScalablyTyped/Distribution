@@ -72,3 +72,40 @@ trait CrawlerArgs extends js.Object {
   val tablePrefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object CrawlerArgs {
+  @scala.inline
+  def apply(
+    databaseName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    role: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    classifiers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    configuration: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dynamodbTargets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_PathInput]]] = null,
+    jdbcTargets: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ConnectionNameExclusions]]
+    ] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3Targets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ExclusionsPath]]] = null,
+    schedule: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    schemaChangePolicy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeleteBehaviorUpdateBehavior] = null,
+    securityConfiguration: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tablePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): CrawlerArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
+    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (classifiers != null) __obj.updateDynamic("classifiers")(classifiers.asInstanceOf[js.Any])
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dynamodbTargets != null) __obj.updateDynamic("dynamodbTargets")(dynamodbTargets.asInstanceOf[js.Any])
+    if (jdbcTargets != null) __obj.updateDynamic("jdbcTargets")(jdbcTargets.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (s3Targets != null) __obj.updateDynamic("s3Targets")(s3Targets.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (schemaChangePolicy != null) __obj.updateDynamic("schemaChangePolicy")(schemaChangePolicy.asInstanceOf[js.Any])
+    if (securityConfiguration != null) __obj.updateDynamic("securityConfiguration")(securityConfiguration.asInstanceOf[js.Any])
+    if (tablePrefix != null) __obj.updateDynamic("tablePrefix")(tablePrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CrawlerArgs]
+  }
+}
+

@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object imagemapsterLibStrings {
   @js.native
-  sealed trait `area-click` extends js.Object
+  sealed trait `area-click`
+    extends imagemapsterLib.imagemapsterMod.Global.ImageMapsterNs.ToolTipCloseEvent
   
   @js.native
-  sealed trait `area-mouseout` extends js.Object
+  sealed trait `area-mouseout`
+    extends imagemapsterLib.imagemapsterMod.Global.ImageMapsterNs.ToolTipCloseEvent
   
   @js.native
   sealed trait asc extends js.Object
@@ -28,10 +30,12 @@ object imagemapsterLibStrings {
   sealed trait get_options extends js.Object
   
   @js.native
-  sealed trait highlight extends js.Object
+  sealed trait highlight
+    extends imagemapsterLib.imagemapsterMod.Global.ImageMapsterNs.State
   
   @js.native
-  sealed trait `image-mouseout` extends js.Object
+  sealed trait `image-mouseout`
+    extends imagemapsterLib.imagemapsterMod.Global.ImageMapsterNs.ToolTipCloseEvent
   
   @js.native
   sealed trait keys extends js.Object
@@ -43,7 +47,8 @@ object imagemapsterLibStrings {
   sealed trait resize extends js.Object
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait select
+    extends imagemapsterLib.imagemapsterMod.Global.ImageMapsterNs.State
   
   @js.native
   sealed trait set extends js.Object
@@ -58,7 +63,8 @@ object imagemapsterLibStrings {
   sealed trait tooltip extends js.Object
   
   @js.native
-  sealed trait `tooltip-click` extends js.Object
+  sealed trait `tooltip-click`
+    extends imagemapsterLib.imagemapsterMod.Global.ImageMapsterNs.ToolTipCloseEvent
   
   @js.native
   sealed trait unbind extends js.Object

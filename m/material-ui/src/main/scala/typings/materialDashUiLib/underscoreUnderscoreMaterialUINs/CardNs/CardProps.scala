@@ -17,3 +17,30 @@ trait CardProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object CardProps {
+  @scala.inline
+  def apply(
+    actAsExpander: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    expandable: js.UndefOr[scala.Boolean] = js.undefined,
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    initiallyExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    onExpandChange: js.Function1[/* isExpanded */ scala.Boolean, scala.Unit] = null,
+    showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): CardProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (!js.isUndefined(initiallyExpanded)) __obj.updateDynamic("initiallyExpanded")(initiallyExpanded)
+    if (onExpandChange != null) __obj.updateDynamic("onExpandChange")(onExpandChange)
+    if (!js.isUndefined(showExpandableButton)) __obj.updateDynamic("showExpandableButton")(showExpandableButton)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[CardProps]
+  }
+}
+

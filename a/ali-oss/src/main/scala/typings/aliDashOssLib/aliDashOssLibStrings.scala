@@ -7,40 +7,52 @@ import scala.scalajs.js.annotation._
 
 object aliDashOssLibStrings {
   @js.native
-  sealed trait Archive extends js.Object
+  sealed trait Archive
+    extends aliDashOssLib.aliDashOssMod.OSSNs.StorageType
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends aliDashOssLib.aliDashOssMod.OSSNs.HTTPMethods
   
   @js.native
-  sealed trait Disabled extends js.Object
+  sealed trait Disabled
+    extends aliDashOssLib.aliDashOssMod.OSSNs.RuleStatusType
   
   @js.native
-  sealed trait Enabled extends js.Object
+  sealed trait Enabled
+    extends aliDashOssLib.aliDashOssMod.OSSNs.RuleStatusType
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends aliDashOssLib.aliDashOssMod.OSSNs.HTTPMethods
   
   @js.native
-  sealed trait IA extends js.Object
+  sealed trait IA
+    extends aliDashOssLib.aliDashOssMod.OSSNs.StorageType
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends aliDashOssLib.aliDashOssMod.OSSNs.HTTPMethods
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends aliDashOssLib.aliDashOssMod.OSSNs.HTTPMethods
   
   @js.native
-  sealed trait Standard extends js.Object
+  sealed trait Standard
+    extends aliDashOssLib.aliDashOssMod.OSSNs.StorageType
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait `private`
+    extends aliDashOssLib.aliDashOssMod.OSSNs.ACLType
   
   @js.native
-  sealed trait `public-read` extends js.Object
+  sealed trait `public-read`
+    extends aliDashOssLib.aliDashOssMod.OSSNs.ACLType
   
   @js.native
-  sealed trait `public-read-write` extends js.Object
+  sealed trait `public-read-write`
+    extends aliDashOssLib.aliDashOssMod.OSSNs.ACLType
   
   @scala.inline
   def Archive: Archive = "Archive".asInstanceOf[Archive]

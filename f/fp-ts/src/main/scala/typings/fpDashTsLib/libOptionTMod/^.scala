@@ -43,32 +43,32 @@ object ^ extends js.Object {
     fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libOptionMod.Option[_]]
   ] = js.native
   def fold[F](F: fpDashTsLib.libFunctorMod.Functor[F]): js.Function3[
-    /* r */ js.Any, 
-    /* some */ js.Function1[/* a */ js.Any, _], 
+    /* onNone */ js.Any, 
+    /* onSome */ js.Function1[/* a */ js.Any, _], 
     /* fa */ fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libOptionMod.Option[_]], 
     fpDashTsLib.libHKTMod.HKT[F, _]
   ] = js.native
   def fold[F /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libFunctorMod.Functor1[F]): js.Function3[
-    /* r */ js.Any, 
-    /* some */ js.Function1[/* a */ js.Any, _], 
+    /* onNone */ js.Any, 
+    /* onSome */ js.Function1[/* a */ js.Any, _], 
     /* fa */ fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libOptionMod.Option[_]], 
     fpDashTsLib.libHKTMod.Type[F, _]
   ] = js.native
   def fold[F /* <: fpDashTsLib.libHKTMod.URIS2 */](F: fpDashTsLib.libFunctorMod.Functor2[F]): js.Function3[
-    /* r */ js.Any, 
-    /* some */ js.Function1[/* a */ js.Any, _], 
+    /* onNone */ js.Any, 
+    /* onSome */ js.Function1[/* a */ js.Any, _], 
     /* fa */ fpDashTsLib.libHKTMod.Type2[F, _, fpDashTsLib.libOptionMod.Option[_]], 
     fpDashTsLib.libHKTMod.Type2[F, _, _]
   ] = js.native
   def fold[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](F: fpDashTsLib.libFunctorMod.Functor2C[F, L]): js.Function3[
-    /* r */ js.Any, 
-    /* some */ js.Function1[/* a */ js.Any, _], 
+    /* onNone */ js.Any, 
+    /* onSome */ js.Function1[/* a */ js.Any, _], 
     /* fa */ fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libOptionMod.Option[_]], 
     fpDashTsLib.libHKTMod.Type2[F, L, _]
   ] = js.native
   def fold[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L](F: fpDashTsLib.libFunctorMod.Functor3C[F, U, L]): js.Function3[
-    /* r */ js.Any, 
-    /* some */ js.Function1[/* a */ js.Any, _], 
+    /* onNone */ js.Any, 
+    /* onSome */ js.Function1[/* a */ js.Any, _], 
     /* fa */ fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libOptionMod.Option[_]], 
     fpDashTsLib.libHKTMod.Type3[F, U, L, _]
   ] = js.native
@@ -97,6 +97,11 @@ object ^ extends js.Object {
   def getOptionT[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): fpDashTsLib.libOptionTMod.OptionT2[M] = js.native
   def getOptionT[M /* <: fpDashTsLib.libHKTMod.URIS2 */, L](M: fpDashTsLib.libMonadMod.Monad2C[M, L]): fpDashTsLib.libOptionTMod.OptionT2C[M, L] = js.native
   def getOptionT[M /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L](M: fpDashTsLib.libMonadMod.Monad3C[M, U, L]): fpDashTsLib.libOptionTMod.OptionT3C[M, U, L] = js.native
+  def getOptionT2v[M](M: fpDashTsLib.libMonadMod.Monad[M]): fpDashTsLib.libOptionTMod.OptionT2v[M] = js.native
+  def getOptionT2v[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): fpDashTsLib.libOptionTMod.OptionT2v1[M] = js.native
+  def getOptionT2v[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): fpDashTsLib.libOptionTMod.OptionT2v2[M] = js.native
+  def getOptionT2v[M /* <: fpDashTsLib.libHKTMod.URIS2 */, L](M: fpDashTsLib.libMonadMod.Monad2C[M, L]): fpDashTsLib.libOptionTMod.OptionT2v2C[M, L] = js.native
+  def getOptionT2v[M /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L](M: fpDashTsLib.libMonadMod.Monad3C[M, U, L]): fpDashTsLib.libOptionTMod.OptionT2v3C[M, U, L] = js.native
   def getOrElse[F](F: fpDashTsLib.libFunctorMod.Functor[F]): js.Function1[
     /* a */ js.Any, 
     js.Function1[

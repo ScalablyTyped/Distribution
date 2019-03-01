@@ -50,3 +50,24 @@ trait TooltipOptions extends js.Object {
   var pos: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TooltipOptions {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String = null,
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    cls: java.lang.String = null,
+    delay: scala.Int | scala.Double = null,
+    offset: scala.Int | scala.Double = null,
+    pos: java.lang.String = null
+  ): TooltipOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (pos != null) __obj.updateDynamic("pos")(pos)
+    __obj.asInstanceOf[TooltipOptions]
+  }
+}
+

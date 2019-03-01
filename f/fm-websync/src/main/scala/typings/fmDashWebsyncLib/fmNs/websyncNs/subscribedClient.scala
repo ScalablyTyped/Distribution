@@ -16,3 +16,13 @@ trait subscribedClient extends js.Object {
   var id: java.lang.String
 }
 
+object subscribedClient {
+  @scala.inline
+  def apply(boundRecords: js.Any, id: java.lang.String): subscribedClient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boundRecords")(boundRecords)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[subscribedClient]
+  }
+}
+

@@ -16,3 +16,21 @@ trait Anon_Eot extends js.Object {
   var `.woff`: java.lang.String
 }
 
+object Anon_Eot {
+  @scala.inline
+  def apply(
+    `.eot`: java.lang.String,
+    `.gif`: java.lang.String,
+    `.jpeg`: java.lang.String,
+    `.jpg`: java.lang.String,
+    `.png`: java.lang.String,
+    `.svg`: java.lang.String,
+    `.ttf`: java.lang.String,
+    `.woff`: java.lang.String
+  ): Anon_Eot = {
+    val __obj = js.Dynamic.literal(`.eot` = `.eot`, `.gif` = `.gif`, `.jpeg` = `.jpeg`, `.jpg` = `.jpg`, `.png` = `.png`, `.svg` = `.svg`, `.ttf` = `.ttf`, `.woff` = `.woff`)
+  
+    __obj.asInstanceOf[Anon_Eot]
+  }
+}
+

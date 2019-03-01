@@ -13,3 +13,22 @@ trait GeocoderResult extends js.Object {
   var surroundingPoi: js.Array[LocalResultPoi]
 }
 
+object GeocoderResult {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    addressComponents: AddressComponent,
+    business: java.lang.String,
+    point: Point,
+    surroundingPoi: js.Array[LocalResultPoi]
+  ): GeocoderResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("addressComponents")(addressComponents)
+    __obj.updateDynamic("business")(business)
+    __obj.updateDynamic("point")(point)
+    __obj.updateDynamic("surroundingPoi")(surroundingPoi)
+    __obj.asInstanceOf[GeocoderResult]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Language extends js.Object {
   var script: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object Language {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    quality: scala.Double,
+    region: java.lang.String = null,
+    script: java.lang.String = null
+  ): Language = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("quality")(quality)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (script != null) __obj.updateDynamic("script")(script)
+    __obj.asInstanceOf[Language]
+  }
+}
+

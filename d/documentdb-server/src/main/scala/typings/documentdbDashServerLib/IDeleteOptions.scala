@@ -14,3 +14,12 @@ trait IDeleteOptions extends js.Object {
   var etag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IDeleteOptions {
+  @scala.inline
+  def apply(etag: java.lang.String = null): IDeleteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    __obj.asInstanceOf[IDeleteOptions]
+  }
+}
+

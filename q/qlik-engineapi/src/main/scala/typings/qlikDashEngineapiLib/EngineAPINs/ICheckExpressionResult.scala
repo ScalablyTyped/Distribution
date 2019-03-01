@@ -13,3 +13,18 @@ trait ICheckExpressionResult extends IExpressionResult {
   var qErrorMsg: java.lang.String
 }
 
+object ICheckExpressionResult {
+  @scala.inline
+  def apply(
+    qBadFieldNames: js.Array[INxRange],
+    qDangerousFieldNames: js.Array[INxRange],
+    qErrorMsg: java.lang.String
+  ): ICheckExpressionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qBadFieldNames")(qBadFieldNames)
+    __obj.updateDynamic("qDangerousFieldNames")(qDangerousFieldNames)
+    __obj.updateDynamic("qErrorMsg")(qErrorMsg)
+    __obj.asInstanceOf[ICheckExpressionResult]
+  }
+}
+

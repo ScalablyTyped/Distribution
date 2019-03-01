@@ -44,3 +44,24 @@ trait IFilterSettings[T] extends js.Object {
   var filterLayout: js.UndefOr[FilterLayout] = js.undefined
 }
 
+object IFilterSettings {
+  @scala.inline
+  def apply[T](
+    filterComparator: ngDashTableLib.srcCoreFilteringFilterComparatorMod.FilterComparator[T] = null,
+    filterDelay: scala.Int | scala.Double = null,
+    filterDelayThreshold: scala.Int | scala.Double = null,
+    filterFilterName: java.lang.String = null,
+    filterFn: ngDashTableLib.srcCoreFilteringFilterFuncMod.IFilterFunc[T] = null,
+    filterLayout: FilterLayout = null
+  ): IFilterSettings[T] = {
+    val __obj = js.Dynamic.literal()
+    if (filterComparator != null) __obj.updateDynamic("filterComparator")(filterComparator.asInstanceOf[js.Any])
+    if (filterDelay != null) __obj.updateDynamic("filterDelay")(filterDelay.asInstanceOf[js.Any])
+    if (filterDelayThreshold != null) __obj.updateDynamic("filterDelayThreshold")(filterDelayThreshold.asInstanceOf[js.Any])
+    if (filterFilterName != null) __obj.updateDynamic("filterFilterName")(filterFilterName)
+    if (filterFn != null) __obj.updateDynamic("filterFn")(filterFn)
+    if (filterLayout != null) __obj.updateDynamic("filterLayout")(filterLayout)
+    __obj.asInstanceOf[IFilterSettings[T]]
+  }
+}
+

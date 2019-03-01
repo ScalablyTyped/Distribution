@@ -162,3 +162,98 @@ trait Model extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    animationSpeed: scala.Int | scala.Double = null,
+    backgroundColor: java.lang.String = null,
+    distanceFromCorner: scala.Int | scala.Double = null,
+    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
+    drawCustomLabel: js.Function1[/* e */ DrawCustomLabelEventArgs, scala.Unit] = null,
+    drawIndicators: js.Function1[/* e */ DrawIndicatorsEventArgs, scala.Unit] = null,
+    drawLabels: js.Function1[/* e */ DrawLabelsEventArgs, scala.Unit] = null,
+    drawPointerCap: js.Function1[/* e */ DrawPointerCapEventArgs, scala.Unit] = null,
+    drawPointers: js.Function1[/* e */ DrawPointersEventArgs, scala.Unit] = null,
+    drawRange: js.Function1[/* e */ DrawRangeEventArgs, scala.Unit] = null,
+    drawTicks: js.Function1[/* e */ DrawTicksEventArgs, scala.Unit] = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGroupSeparator: js.UndefOr[scala.Boolean] = js.undefined,
+    enableResize: js.UndefOr[scala.Boolean] = js.undefined,
+    exportSettings: ExportSettings = null,
+    frame: Frame = null,
+    gaugePosition: gaugePosition | java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    interiorGradient: js.Any = null,
+    isRadialGradient: js.UndefOr[scala.Boolean] = js.undefined,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    legend: Legend = null,
+    legendItemClick: js.Function1[/* e */ LegendItemClickEventArgs, scala.Unit] = null,
+    legendItemRender: js.Function1[/* e */ LegendItemRenderEventArgs, scala.Unit] = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    maximum: scala.Int | scala.Double = null,
+    minimum: scala.Int | scala.Double = null,
+    mouseClick: js.Function1[/* e */ MouseClickEventArgs, scala.Unit] = null,
+    mouseClickMove: js.Function1[/* e */ MouseClickMoveEventArgs, scala.Unit] = null,
+    mouseClickUp: js.Function1[/* e */ MouseClickUpEventArgs, scala.Unit] = null,
+    outerCustomLabelPosition: OuterCustomLabelPosition | java.lang.String = null,
+    radius: scala.Int | scala.Double = null,
+    rangeMouseMove: js.Function1[/* e */ RangeMouseMoveEventArgs, scala.Unit] = null,
+    rangeZOrder: RangeZOrderPlacement | java.lang.String = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
+    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
+    scales: js.Array[Scale] = null,
+    theme: java.lang.String = null,
+    tooltip: Tooltip = null,
+    value: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (distanceFromCorner != null) __obj.updateDynamic("distanceFromCorner")(distanceFromCorner.asInstanceOf[js.Any])
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
+    if (drawCustomLabel != null) __obj.updateDynamic("drawCustomLabel")(drawCustomLabel)
+    if (drawIndicators != null) __obj.updateDynamic("drawIndicators")(drawIndicators)
+    if (drawLabels != null) __obj.updateDynamic("drawLabels")(drawLabels)
+    if (drawPointerCap != null) __obj.updateDynamic("drawPointerCap")(drawPointerCap)
+    if (drawPointers != null) __obj.updateDynamic("drawPointers")(drawPointers)
+    if (drawRange != null) __obj.updateDynamic("drawRange")(drawRange)
+    if (drawTicks != null) __obj.updateDynamic("drawTicks")(drawTicks)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator)
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize)
+    if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings)
+    if (frame != null) __obj.updateDynamic("frame")(frame)
+    if (gaugePosition != null) __obj.updateDynamic("gaugePosition")(gaugePosition.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (interiorGradient != null) __obj.updateDynamic("interiorGradient")(interiorGradient)
+    if (!js.isUndefined(isRadialGradient)) __obj.updateDynamic("isRadialGradient")(isRadialGradient)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick)
+    if (legendItemRender != null) __obj.updateDynamic("legendItemRender")(legendItemRender)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (mouseClick != null) __obj.updateDynamic("mouseClick")(mouseClick)
+    if (mouseClickMove != null) __obj.updateDynamic("mouseClickMove")(mouseClickMove)
+    if (mouseClickUp != null) __obj.updateDynamic("mouseClickUp")(mouseClickUp)
+    if (outerCustomLabelPosition != null) __obj.updateDynamic("outerCustomLabelPosition")(outerCustomLabelPosition.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (rangeMouseMove != null) __obj.updateDynamic("rangeMouseMove")(rangeMouseMove)
+    if (rangeZOrder != null) __obj.updateDynamic("rangeZOrder")(rangeZOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
+    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
+    if (scales != null) __obj.updateDynamic("scales")(scales)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

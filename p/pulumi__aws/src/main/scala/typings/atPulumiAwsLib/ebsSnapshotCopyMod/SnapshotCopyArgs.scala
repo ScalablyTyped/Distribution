@@ -28,3 +28,24 @@ trait SnapshotCopyArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object SnapshotCopyArgs {
+  @scala.inline
+  def apply(
+    sourceRegion: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    sourceSnapshotId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    encrypted: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): SnapshotCopyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sourceRegion")(sourceRegion.asInstanceOf[js.Any])
+    __obj.updateDynamic("sourceSnapshotId")(sourceSnapshotId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotCopyArgs]
+  }
+}
+

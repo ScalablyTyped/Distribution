@@ -40,3 +40,28 @@ trait XUIElement
   def getRealInterface(): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XUIElement {
+  @scala.inline
+  def apply(
+    Frame: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
+    RealInterface: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ResourceURL: java.lang.String,
+    Type: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getRealInterface: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XUIElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Frame")(Frame)
+    __obj.updateDynamic("RealInterface")(RealInterface)
+    __obj.updateDynamic("ResourceURL")(ResourceURL)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getRealInterface")(getRealInterface)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XUIElement]
+  }
+}
+

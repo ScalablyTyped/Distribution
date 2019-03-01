@@ -53,3 +53,31 @@ trait GeoBboxFilter extends Filter {
   def `type`(`type`: java.lang.String): GeoBboxFilter
 }
 
+object GeoBboxFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    bottomRight: js.Function1[GeoPoint, GeoBboxFilter],
+    cache: js.Function1[scala.Boolean, GeoBboxFilter],
+    cacheKey: js.Function1[java.lang.String, GeoBboxFilter],
+    field: js.Function1[java.lang.String, GeoBboxFilter],
+    name: js.Function1[java.lang.String, GeoBboxFilter],
+    normalize: js.Function1[java.lang.String, GeoBboxFilter],
+    toJSON: js.Function0[GeoBboxFilter],
+    topLeft: js.Function1[GeoPoint, GeoBboxFilter],
+    `type`: js.Function1[java.lang.String, GeoBboxFilter]
+  ): GeoBboxFilter = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("bottomRight")(bottomRight)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("topLeft")(topLeft)
+    __obj.asInstanceOf[GeoBboxFilter]
+  }
+}
+

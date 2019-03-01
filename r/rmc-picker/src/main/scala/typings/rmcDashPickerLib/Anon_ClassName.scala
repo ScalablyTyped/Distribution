@@ -10,3 +10,13 @@ trait Anon_ClassName extends js.Object {
   var value: js.Any
 }
 
+object Anon_ClassName {
+  @scala.inline
+  def apply(value: js.Any, className: java.lang.String = null): Anon_ClassName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (className != null) __obj.updateDynamic("className")(className)
+    __obj.asInstanceOf[Anon_ClassName]
+  }
+}
+

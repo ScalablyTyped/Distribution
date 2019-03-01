@@ -32,3 +32,24 @@ trait PreviewConfig extends js.Object {
   var width: java.lang.String
 }
 
+object PreviewConfig {
+  @scala.inline
+  def apply(
+    caption: java.lang.String,
+    extra: js.Object | js.Function,
+    frameClass: java.lang.String,
+    key: java.lang.String | js.Object,
+    url: java.lang.String,
+    width: java.lang.String
+  ): PreviewConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("caption")(caption)
+    __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
+    __obj.updateDynamic("frameClass")(frameClass)
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[PreviewConfig]
+  }
+}
+

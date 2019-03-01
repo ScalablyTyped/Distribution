@@ -16,3 +16,28 @@ trait PageMethodeModelInfoReturn extends js.Object {
   var start: scala.Double
 }
 
+object PageMethodeModelInfoReturn {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    length: scala.Double,
+    page: scala.Double,
+    pages: scala.Double,
+    recordsDisplay: scala.Double,
+    recordsTotal: scala.Double,
+    serverSide: scala.Boolean,
+    start: scala.Double
+  ): PageMethodeModelInfoReturn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("page")(page)
+    __obj.updateDynamic("pages")(pages)
+    __obj.updateDynamic("recordsDisplay")(recordsDisplay)
+    __obj.updateDynamic("recordsTotal")(recordsTotal)
+    __obj.updateDynamic("serverSide")(serverSide)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[PageMethodeModelInfoReturn]
+  }
+}
+

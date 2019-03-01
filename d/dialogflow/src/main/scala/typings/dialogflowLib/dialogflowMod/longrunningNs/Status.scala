@@ -11,3 +11,14 @@ trait Status extends js.Object {
   var message: java.lang.String
 }
 
+object Status {
+  @scala.inline
+  def apply(code: scala.Double, details: js.Array[_], message: java.lang.String): Status = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Status]
+  }
+}
+

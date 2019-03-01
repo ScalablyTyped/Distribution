@@ -10,3 +10,16 @@ trait Certificates
       java.lang.String | googleDashAuthDashLibraryLib.buildSrcCryptoCryptoMod.JwkCertificate
     ]
 
+object Certificates {
+  @scala.inline
+  def apply(
+    StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | googleDashAuthDashLibraryLib.buildSrcCryptoCryptoMod.JwkCertificate
+    ] = null
+  ): Certificates = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Certificates]
+  }
+}
+

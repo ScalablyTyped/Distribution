@@ -16,3 +16,12 @@ trait ExecutionResponse extends js.Object {
   var result: js.UndefOr[js.Any] = js.undefined
 }
 
+object ExecutionResponse {
+  @scala.inline
+  def apply(result: js.Any = null): ExecutionResponse = {
+    val __obj = js.Dynamic.literal()
+    if (result != null) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[ExecutionResponse]
+  }
+}
+

@@ -28,3 +28,22 @@ trait DisplaySettings extends js.Object {
   var mode: js.UndefOr[DisplayMode | java.lang.String] = js.undefined
 }
 
+object DisplaySettings {
+  @scala.inline
+  def apply(
+    controlPlacement: ControlPlacement | java.lang.String = null,
+    defaultView: DefaultView | java.lang.String = null,
+    enableFullScreen: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTogglePanel: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: DisplayMode | java.lang.String = null
+  ): DisplaySettings = {
+    val __obj = js.Dynamic.literal()
+    if (controlPlacement != null) __obj.updateDynamic("controlPlacement")(controlPlacement.asInstanceOf[js.Any])
+    if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableFullScreen)) __obj.updateDynamic("enableFullScreen")(enableFullScreen)
+    if (!js.isUndefined(enableTogglePanel)) __obj.updateDynamic("enableTogglePanel")(enableTogglePanel)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DisplaySettings]
+  }
+}
+

@@ -12,3 +12,19 @@ trait FileSpec extends js.Object {
   var `type`: java.lang.String
 }
 
+object FileSpec {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    path: java.lang.String,
+    physicalSize: scala.Double,
+    `type`: java.lang.String
+  ): FileSpec = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("physicalSize")(physicalSize)
+    __obj.asInstanceOf[FileSpec]
+  }
+}
+

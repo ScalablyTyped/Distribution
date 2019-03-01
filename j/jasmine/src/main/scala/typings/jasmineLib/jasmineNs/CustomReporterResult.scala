@@ -15,3 +15,26 @@ trait CustomReporterResult extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomReporterResult {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    fullName: java.lang.String,
+    id: java.lang.String,
+    failedExpectations: js.Array[FailedExpectation] = null,
+    passedExpectations: js.Array[PassedExpectation] = null,
+    pendingReason: java.lang.String = null,
+    status: java.lang.String = null
+  ): CustomReporterResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("fullName")(fullName)
+    __obj.updateDynamic("id")(id)
+    if (failedExpectations != null) __obj.updateDynamic("failedExpectations")(failedExpectations)
+    if (passedExpectations != null) __obj.updateDynamic("passedExpectations")(passedExpectations)
+    if (pendingReason != null) __obj.updateDynamic("pendingReason")(pendingReason)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[CustomReporterResult]
+  }
+}
+

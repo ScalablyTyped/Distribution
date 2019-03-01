@@ -23,3 +23,22 @@ trait FilterSettingsFilteredColumn extends js.Object {
   var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object FilterSettingsFilteredColumn {
+  @scala.inline
+  def apply(
+    field: java.lang.String = null,
+    matchCase: js.UndefOr[scala.Boolean] = js.undefined,
+    operator: ejDotWebDotAllLib.ejNs.FilterOperators | java.lang.String = null,
+    predicate: java.lang.String = null,
+    value: java.lang.String | scala.Double = null
+  ): FilterSettingsFilteredColumn = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (predicate != null) __obj.updateDynamic("predicate")(predicate)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FilterSettingsFilteredColumn]
+  }
+}
+

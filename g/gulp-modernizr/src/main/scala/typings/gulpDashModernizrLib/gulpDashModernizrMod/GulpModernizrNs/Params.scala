@@ -55,3 +55,34 @@ trait Params extends js.Object {
   var useBuffers: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Params {
+  @scala.inline
+  def apply(
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    crawl: js.UndefOr[scala.Boolean] = js.undefined,
+    customTests: js.Array[java.lang.String] = null,
+    dest: java.lang.String | gulpDashModernizrLib.gulpDashModernizrLibNumbers.`false` = null,
+    devFile: java.lang.String | gulpDashModernizrLib.gulpDashModernizrLibNumbers.`false` = null,
+    excludeTests: js.Array[java.lang.String] = null,
+    files: gulpDashModernizrLib.Anon_Src = null,
+    options: gulpDashModernizrLib.Anon_ClassPrefix = null,
+    tests: js.Array[java.lang.String] = null,
+    uglify: js.UndefOr[scala.Boolean] = js.undefined,
+    useBuffers: js.UndefOr[scala.Boolean] = js.undefined
+  ): Params = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(crawl)) __obj.updateDynamic("crawl")(crawl)
+    if (customTests != null) __obj.updateDynamic("customTests")(customTests)
+    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
+    if (devFile != null) __obj.updateDynamic("devFile")(devFile.asInstanceOf[js.Any])
+    if (excludeTests != null) __obj.updateDynamic("excludeTests")(excludeTests)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (tests != null) __obj.updateDynamic("tests")(tests)
+    if (!js.isUndefined(uglify)) __obj.updateDynamic("uglify")(uglify)
+    if (!js.isUndefined(useBuffers)) __obj.updateDynamic("useBuffers")(useBuffers)
+    __obj.asInstanceOf[Params]
+  }
+}
+

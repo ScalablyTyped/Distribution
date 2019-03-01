@@ -14,3 +14,12 @@ trait AccountArgs extends js.Object {
   val cloudwatchRoleArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object AccountArgs {
+  @scala.inline
+  def apply(cloudwatchRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null): AccountArgs = {
+    val __obj = js.Dynamic.literal()
+    if (cloudwatchRoleArn != null) __obj.updateDynamic("cloudwatchRoleArn")(cloudwatchRoleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccountArgs]
+  }
+}
+

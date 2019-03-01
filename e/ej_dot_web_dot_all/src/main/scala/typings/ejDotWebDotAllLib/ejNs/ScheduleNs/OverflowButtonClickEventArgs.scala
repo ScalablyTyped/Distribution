@@ -23,3 +23,22 @@ trait OverflowButtonClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OverflowButtonClickEventArgs {
+  @scala.inline
+  def apply(
+    Datas: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    events: js.Any = null,
+    model: Model = null,
+    `type`: java.lang.String = null
+  ): OverflowButtonClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Datas != null) __obj.updateDynamic("Datas")(Datas)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[OverflowButtonClickEventArgs]
+  }
+}
+

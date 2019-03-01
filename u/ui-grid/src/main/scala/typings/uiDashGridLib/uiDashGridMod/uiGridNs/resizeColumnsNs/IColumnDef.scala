@@ -13,3 +13,12 @@ trait IColumnDef extends js.Object {
   var enableColumnResizing: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IColumnDef {
+  @scala.inline
+  def apply(enableColumnResizing: js.UndefOr[scala.Boolean] = js.undefined): IColumnDef = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing)
+    __obj.asInstanceOf[IColumnDef]
+  }
+}
+

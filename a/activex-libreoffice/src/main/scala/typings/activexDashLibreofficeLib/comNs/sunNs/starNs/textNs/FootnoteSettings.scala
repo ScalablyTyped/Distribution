@@ -53,3 +53,36 @@ trait FootnoteSettings extends js.Object {
   var Suffix: java.lang.String
 }
 
+object FootnoteSettings {
+  @scala.inline
+  def apply(
+    AnchorCharStyleName: java.lang.String,
+    BeginNotice: java.lang.String,
+    CharStyleName: java.lang.String,
+    EndNotice: java.lang.String,
+    FootnoteCounting: scala.Double,
+    NumberingType: scala.Double,
+    PageStyleName: java.lang.String,
+    ParaStyleName: java.lang.String,
+    PositionEndOfDoc: scala.Boolean,
+    Prefix: java.lang.String,
+    StartAt: scala.Double,
+    Suffix: java.lang.String
+  ): FootnoteSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AnchorCharStyleName")(AnchorCharStyleName)
+    __obj.updateDynamic("BeginNotice")(BeginNotice)
+    __obj.updateDynamic("CharStyleName")(CharStyleName)
+    __obj.updateDynamic("EndNotice")(EndNotice)
+    __obj.updateDynamic("FootnoteCounting")(FootnoteCounting)
+    __obj.updateDynamic("NumberingType")(NumberingType)
+    __obj.updateDynamic("PageStyleName")(PageStyleName)
+    __obj.updateDynamic("ParaStyleName")(ParaStyleName)
+    __obj.updateDynamic("PositionEndOfDoc")(PositionEndOfDoc)
+    __obj.updateDynamic("Prefix")(Prefix)
+    __obj.updateDynamic("StartAt")(StartAt)
+    __obj.updateDynamic("Suffix")(Suffix)
+    __obj.asInstanceOf[FootnoteSettings]
+  }
+}
+

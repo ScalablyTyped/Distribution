@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HCLColor extends Color {
+trait HCLColor
+  extends Color
+     with ColorSpaceObject {
   /**
     * Chroma channel value typically in [0, 230].
     */

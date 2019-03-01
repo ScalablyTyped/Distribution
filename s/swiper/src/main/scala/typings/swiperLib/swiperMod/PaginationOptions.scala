@@ -117,3 +117,56 @@ trait PaginationOptions extends js.Object {
   ] = js.undefined
 }
 
+object PaginationOptions {
+  @scala.inline
+  def apply(
+    el: SelectableElement,
+    bulletActiveClass: java.lang.String = null,
+    bulletClass: java.lang.String = null,
+    bulletElement: java.lang.String = null,
+    clickable: js.UndefOr[scala.Boolean] = js.undefined,
+    clickableClass: java.lang.String = null,
+    currentClass: java.lang.String = null,
+    dynamicBullets: js.UndefOr[scala.Boolean] = js.undefined,
+    dynamicMainBullets: scala.Int | scala.Double = null,
+    formatFractionCurrent: js.Function1[/* number */ scala.Double, scala.Double] = null,
+    formatFractionTotal: js.Function1[/* number */ scala.Double, scala.Double] = null,
+    hiddenClass: java.lang.String = null,
+    hideOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    modifierClass: java.lang.String = null,
+    progressbarFillClass: java.lang.String = null,
+    progressbarOpposite: js.UndefOr[scala.Boolean] = js.undefined,
+    renderBullet: js.Function2[/* index */ scala.Double, /* className */ java.lang.String, scala.Unit] = null,
+    renderCustom: js.Function3[/* swiper */ Swiper, /* current */ scala.Double, /* total */ scala.Double, scala.Unit] = null,
+    renderFraction: js.Function2[/* currentClass */ java.lang.String, /* totalClass */ java.lang.String, scala.Unit] = null,
+    renderProgressbar: js.Function1[/* progressbarFillClass */ java.lang.String, scala.Unit] = null,
+    totalClass: java.lang.String = null,
+    `type`: swiperLib.swiperLibStrings.bullets | swiperLib.swiperLibStrings.fraction | swiperLib.swiperLibStrings.progressbar | swiperLib.swiperLibStrings.custom = null
+  ): PaginationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    if (bulletActiveClass != null) __obj.updateDynamic("bulletActiveClass")(bulletActiveClass)
+    if (bulletClass != null) __obj.updateDynamic("bulletClass")(bulletClass)
+    if (bulletElement != null) __obj.updateDynamic("bulletElement")(bulletElement)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (clickableClass != null) __obj.updateDynamic("clickableClass")(clickableClass)
+    if (currentClass != null) __obj.updateDynamic("currentClass")(currentClass)
+    if (!js.isUndefined(dynamicBullets)) __obj.updateDynamic("dynamicBullets")(dynamicBullets)
+    if (dynamicMainBullets != null) __obj.updateDynamic("dynamicMainBullets")(dynamicMainBullets.asInstanceOf[js.Any])
+    if (formatFractionCurrent != null) __obj.updateDynamic("formatFractionCurrent")(formatFractionCurrent)
+    if (formatFractionTotal != null) __obj.updateDynamic("formatFractionTotal")(formatFractionTotal)
+    if (hiddenClass != null) __obj.updateDynamic("hiddenClass")(hiddenClass)
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
+    if (modifierClass != null) __obj.updateDynamic("modifierClass")(modifierClass)
+    if (progressbarFillClass != null) __obj.updateDynamic("progressbarFillClass")(progressbarFillClass)
+    if (!js.isUndefined(progressbarOpposite)) __obj.updateDynamic("progressbarOpposite")(progressbarOpposite)
+    if (renderBullet != null) __obj.updateDynamic("renderBullet")(renderBullet)
+    if (renderCustom != null) __obj.updateDynamic("renderCustom")(renderCustom)
+    if (renderFraction != null) __obj.updateDynamic("renderFraction")(renderFraction)
+    if (renderProgressbar != null) __obj.updateDynamic("renderProgressbar")(renderProgressbar)
+    if (totalClass != null) __obj.updateDynamic("totalClass")(totalClass)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PaginationOptions]
+  }
+}
+

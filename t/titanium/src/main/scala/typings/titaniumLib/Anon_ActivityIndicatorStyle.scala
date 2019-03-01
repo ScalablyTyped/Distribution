@@ -171,3 +171,86 @@ trait Anon_ActivityIndicatorStyle extends js.Object {
   def setBubbleParent(bubbleParent: scala.Boolean): scala.Unit
 }
 
+object Anon_ActivityIndicatorStyle {
+  @scala.inline
+  def apply(
+    ActivityIndicatorStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBIG,
+    AlertDialogStyleNs: Anon_AddEventListenerApiNameApplyProperties,
+    AnimationStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCURLDOWN,
+    ListViewSeparatorStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEvent,
+    MODAL_PRESENTATION_CURRENT_CONTEXT: scala.Double,
+    MODAL_PRESENTATION_FORMSHEET: scala.Double,
+    MODAL_PRESENTATION_FULLSCREEN: scala.Double,
+    MODAL_PRESENTATION_PAGESHEET: scala.Double,
+    MODAL_TRANSITION_STYLE_COVER_VERTICAL: scala.Double,
+    MODAL_TRANSITION_STYLE_CROSS_DISSOLVE: scala.Double,
+    MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL: scala.Double,
+    MODAL_TRANSITION_STYLE_PARTIAL_CURL: scala.Double,
+    ProgressBarStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBAR,
+    RowAnimationStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBOTTOM,
+    ScrollIndicatorStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBLACK,
+    SystemButtonNs: Anon_ACTION,
+    SystemButtonStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBARBORDERED,
+    SystemIconNs: Anon_AddEventListenerApiNameApplyPropertiesBOOKMARKS,
+    TableViewCellSelectionStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBLUE,
+    TableViewScrollPositionNs: Anon_AddEventListenerApiNameApplyPropertiesBOTTOMBubbleParent,
+    TableViewSeparatorStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEvent,
+    TableViewStyleNs: Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallback,
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    appBadge: scala.Double,
+    appSupportsShakeToEdit: scala.Boolean,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getAppBadge: js.Function0[scala.Double],
+    getAppSupportsShakeToEdit: js.Function0[scala.Boolean],
+    getBubbleParent: js.Function0[scala.Boolean],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setAppBadge: js.Function1[scala.Double, scala.Unit],
+    setAppSupportsShakeToEdit: js.Function1[scala.Boolean, scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+  ): Anon_ActivityIndicatorStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActivityIndicatorStyleNs")(ActivityIndicatorStyleNs)
+    __obj.updateDynamic("AlertDialogStyleNs")(AlertDialogStyleNs)
+    __obj.updateDynamic("AnimationStyleNs")(AnimationStyleNs)
+    __obj.updateDynamic("ListViewSeparatorStyleNs")(ListViewSeparatorStyleNs)
+    __obj.updateDynamic("MODAL_PRESENTATION_CURRENT_CONTEXT")(MODAL_PRESENTATION_CURRENT_CONTEXT)
+    __obj.updateDynamic("MODAL_PRESENTATION_FORMSHEET")(MODAL_PRESENTATION_FORMSHEET)
+    __obj.updateDynamic("MODAL_PRESENTATION_FULLSCREEN")(MODAL_PRESENTATION_FULLSCREEN)
+    __obj.updateDynamic("MODAL_PRESENTATION_PAGESHEET")(MODAL_PRESENTATION_PAGESHEET)
+    __obj.updateDynamic("MODAL_TRANSITION_STYLE_COVER_VERTICAL")(MODAL_TRANSITION_STYLE_COVER_VERTICAL)
+    __obj.updateDynamic("MODAL_TRANSITION_STYLE_CROSS_DISSOLVE")(MODAL_TRANSITION_STYLE_CROSS_DISSOLVE)
+    __obj.updateDynamic("MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL")(MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL)
+    __obj.updateDynamic("MODAL_TRANSITION_STYLE_PARTIAL_CURL")(MODAL_TRANSITION_STYLE_PARTIAL_CURL)
+    __obj.updateDynamic("ProgressBarStyleNs")(ProgressBarStyleNs)
+    __obj.updateDynamic("RowAnimationStyleNs")(RowAnimationStyleNs)
+    __obj.updateDynamic("ScrollIndicatorStyleNs")(ScrollIndicatorStyleNs)
+    __obj.updateDynamic("SystemButtonNs")(SystemButtonNs)
+    __obj.updateDynamic("SystemButtonStyleNs")(SystemButtonStyleNs)
+    __obj.updateDynamic("SystemIconNs")(SystemIconNs)
+    __obj.updateDynamic("TableViewCellSelectionStyleNs")(TableViewCellSelectionStyleNs)
+    __obj.updateDynamic("TableViewScrollPositionNs")(TableViewScrollPositionNs)
+    __obj.updateDynamic("TableViewSeparatorStyleNs")(TableViewSeparatorStyleNs)
+    __obj.updateDynamic("TableViewStyleNs")(TableViewStyleNs)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("appBadge")(appBadge)
+    __obj.updateDynamic("appSupportsShakeToEdit")(appSupportsShakeToEdit)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getAppBadge")(getAppBadge)
+    __obj.updateDynamic("getAppSupportsShakeToEdit")(getAppSupportsShakeToEdit)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setAppBadge")(setAppBadge)
+    __obj.updateDynamic("setAppSupportsShakeToEdit")(setAppSupportsShakeToEdit)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.asInstanceOf[Anon_ActivityIndicatorStyle]
+  }
+}
+

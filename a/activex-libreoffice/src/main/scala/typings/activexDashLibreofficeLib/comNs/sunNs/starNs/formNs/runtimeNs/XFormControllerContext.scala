@@ -17,3 +17,12 @@ trait XFormControllerContext extends js.Object {
   def makeVisible(Control: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl): scala.Unit
 }
 
+object XFormControllerContext {
+  @scala.inline
+  def apply(makeVisible: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl, scala.Unit]): XFormControllerContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("makeVisible")(makeVisible)
+    __obj.asInstanceOf[XFormControllerContext]
+  }
+}
+

@@ -16,5 +16,4 @@ package object engineNs {
     scala.Unit
   ]
   type Message = java.lang.String | nodeLib.Buffer | stdLib.ArrayBuffer | stdLib.ArrayBufferView
-  type Transport = engineDotIoLib.engineDotIoLibStrings.polling | engineDotIoLib.engineDotIoLibStrings.websocket
 }

@@ -77,3 +77,44 @@ trait OptionsBottomTab extends js.Object {
   var textColor: js.UndefOr[Color] = js.undefined
 }
 
+object OptionsBottomTab {
+  @scala.inline
+  def apply(
+    badge: java.lang.String = null,
+    badgeColor: java.lang.String = null,
+    disableIconTint: js.UndefOr[scala.Boolean] = js.undefined,
+    disableSelectedIconTint: js.UndefOr[scala.Boolean] = js.undefined,
+    fontFamily: FontFamily = null,
+    fontSize: scala.Int | scala.Double = null,
+    icon: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined,
+    iconColor: Color = null,
+    iconInsets: reactDashNativeLib.reactDashNativeMod.Insets = null,
+    selectedFontSize: scala.Int | scala.Double = null,
+    selectedIcon: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined,
+    selectedIconColor: Color = null,
+    selectedTextColor: Color = null,
+    testID: java.lang.String = null,
+    text: java.lang.String = null,
+    textColor: Color = null
+  ): OptionsBottomTab = {
+    val __obj = js.Dynamic.literal()
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor)
+    if (!js.isUndefined(disableIconTint)) __obj.updateDynamic("disableIconTint")(disableIconTint)
+    if (!js.isUndefined(disableSelectedIconTint)) __obj.updateDynamic("disableSelectedIconTint")(disableSelectedIconTint)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
+    if (iconInsets != null) __obj.updateDynamic("iconInsets")(iconInsets)
+    if (selectedFontSize != null) __obj.updateDynamic("selectedFontSize")(selectedFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectedIcon)) __obj.updateDynamic("selectedIcon")(selectedIcon)
+    if (selectedIconColor != null) __obj.updateDynamic("selectedIconColor")(selectedIconColor)
+    if (selectedTextColor != null) __obj.updateDynamic("selectedTextColor")(selectedTextColor)
+    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    __obj.asInstanceOf[OptionsBottomTab]
+  }
+}
+

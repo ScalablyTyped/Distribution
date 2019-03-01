@@ -31,3 +31,26 @@ trait ScriptTag
   var updated_at: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ScriptTag {
+  @scala.inline
+  def apply(
+    src: java.lang.String,
+    admin_graphql_api_id: java.lang.String = null,
+    created_at: java.lang.String = null,
+    display_scope: shopifyDashPrimeLib.distEnumsScriptUnderscoreTagUnderscoreDisplayUnderscoreScopeMod.ScriptTagDisplayScope = null,
+    event: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.onload = null,
+    id: scala.Int | scala.Double = null,
+    updated_at: java.lang.String = null
+  ): ScriptTag = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("src")(src)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (display_scope != null) __obj.updateDynamic("display_scope")(display_scope.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[ScriptTag]
+  }
+}
+

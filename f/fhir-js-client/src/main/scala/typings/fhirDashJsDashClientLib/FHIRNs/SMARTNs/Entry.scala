@@ -27,3 +27,23 @@ trait Entry
   var versionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Entry {
+  @scala.inline
+  def apply(
+    resource: Resource,
+    StringDictionary: /**
+    * Making this interface extendable since this is not a complete type definition of FHIR Entry
+    */
+  /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    `type`: java.lang.String = null,
+    versionId: java.lang.String = null
+  ): Entry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resource")(resource)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId)
+    __obj.asInstanceOf[Entry]
+  }
+}
+

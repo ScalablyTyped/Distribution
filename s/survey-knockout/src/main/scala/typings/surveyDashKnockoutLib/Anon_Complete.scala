@@ -12,3 +12,20 @@ trait Anon_Complete extends js.Object {
   var start: java.lang.String
 }
 
+object Anon_Complete {
+  @scala.inline
+  def apply(
+    complete: java.lang.String,
+    next: java.lang.String,
+    prev: java.lang.String,
+    start: java.lang.String
+  ): Anon_Complete = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("prev")(prev)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Anon_Complete]
+  }
+}
+

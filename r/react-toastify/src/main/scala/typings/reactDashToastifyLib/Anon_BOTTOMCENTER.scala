@@ -14,3 +14,24 @@ trait Anon_BOTTOMCENTER extends js.Object {
   var TOP_RIGHT: reactDashToastifyLib.reactDashToastifyLibStrings.`top-right`
 }
 
+object Anon_BOTTOMCENTER {
+  @scala.inline
+  def apply(
+    BOTTOM_CENTER: reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-center`,
+    BOTTOM_LEFT: reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-left`,
+    BOTTOM_RIGHT: reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-right`,
+    TOP_CENTER: reactDashToastifyLib.reactDashToastifyLibStrings.`top-center`,
+    TOP_LEFT: reactDashToastifyLib.reactDashToastifyLibStrings.`top-left`,
+    TOP_RIGHT: reactDashToastifyLib.reactDashToastifyLibStrings.`top-right`
+  ): Anon_BOTTOMCENTER = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BOTTOM_CENTER")(BOTTOM_CENTER)
+    __obj.updateDynamic("BOTTOM_LEFT")(BOTTOM_LEFT)
+    __obj.updateDynamic("BOTTOM_RIGHT")(BOTTOM_RIGHT)
+    __obj.updateDynamic("TOP_CENTER")(TOP_CENTER)
+    __obj.updateDynamic("TOP_LEFT")(TOP_LEFT)
+    __obj.updateDynamic("TOP_RIGHT")(TOP_RIGHT)
+    __obj.asInstanceOf[Anon_BOTTOMCENTER]
+  }
+}
+

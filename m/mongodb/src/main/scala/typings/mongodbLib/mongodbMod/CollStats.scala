@@ -71,3 +71,48 @@ trait CollStats extends js.Object {
   var wiredTiger: js.UndefOr[WiredTigerData] = js.undefined
 }
 
+object CollStats {
+  @scala.inline
+  def apply(
+    avgObjSize: scala.Double,
+    capped: scala.Boolean,
+    count: scala.Double,
+    indexSizes: mongodbLib.Anon_Id,
+    lastExtentSize: scala.Double,
+    max: scala.Double,
+    maxSize: scala.Double,
+    nindexes: scala.Double,
+    ns: java.lang.String,
+    numExtents: scala.Double,
+    ok: scala.Double,
+    paddingFactor: scala.Double,
+    size: scala.Double,
+    storageSize: scala.Double,
+    totalIndexSize: scala.Double,
+    indexDetails: js.Any = null,
+    userFlags: scala.Int | scala.Double = null,
+    wiredTiger: WiredTigerData = null
+  ): CollStats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("avgObjSize")(avgObjSize)
+    __obj.updateDynamic("capped")(capped)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("indexSizes")(indexSizes)
+    __obj.updateDynamic("lastExtentSize")(lastExtentSize)
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("maxSize")(maxSize)
+    __obj.updateDynamic("nindexes")(nindexes)
+    __obj.updateDynamic("ns")(ns)
+    __obj.updateDynamic("numExtents")(numExtents)
+    __obj.updateDynamic("ok")(ok)
+    __obj.updateDynamic("paddingFactor")(paddingFactor)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("storageSize")(storageSize)
+    __obj.updateDynamic("totalIndexSize")(totalIndexSize)
+    if (indexDetails != null) __obj.updateDynamic("indexDetails")(indexDetails)
+    if (userFlags != null) __obj.updateDynamic("userFlags")(userFlags.asInstanceOf[js.Any])
+    if (wiredTiger != null) __obj.updateDynamic("wiredTiger")(wiredTiger)
+    __obj.asInstanceOf[CollStats]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Choice extends js.Object {
   def isCorrectAnswer(): scala.Boolean
 }
 
+object Choice {
+  @scala.inline
+  def apply(
+    getGotoPage: js.Function0[PageBreakItem],
+    getPageNavigationType: js.Function0[PageNavigationType],
+    getValue: js.Function0[java.lang.String],
+    isCorrectAnswer: js.Function0[scala.Boolean]
+  ): Choice = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getGotoPage")(getGotoPage)
+    __obj.updateDynamic("getPageNavigationType")(getPageNavigationType)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("isCorrectAnswer")(isCorrectAnswer)
+    __obj.asInstanceOf[Choice]
+  }
+}
+

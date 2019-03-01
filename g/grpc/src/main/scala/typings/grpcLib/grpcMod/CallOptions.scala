@@ -37,3 +37,28 @@ trait CallOptions
   var propagate_flags: scala.Double
 }
 
+object CallOptions {
+  @scala.inline
+  def apply(
+    credentials: CallCredentials,
+    propagate_flags: scala.Double,
+    StringDictionary: /**
+    * Additional custom call options. These can be used to pass additional
+    * data per-call to client interceptors
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    deadline: Deadline = null,
+    host: java.lang.String = null,
+    parent: Call = null
+  ): CallOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("credentials")(credentials)
+    __obj.updateDynamic("propagate_flags")(propagate_flags)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (deadline != null) __obj.updateDynamic("deadline")(deadline.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CallOptions]
+  }
+}
+

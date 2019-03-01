@@ -15,3 +15,26 @@ trait QuadraticCurveToCommand extends js.Object {
   var y1: scala.Double
 }
 
+object QuadraticCurveToCommand {
+  @scala.inline
+  def apply(
+    code: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.q | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.Q,
+    command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`quadratic curveto`,
+    x: scala.Double,
+    x1: scala.Double,
+    y: scala.Double,
+    y1: scala.Double,
+    relative: js.UndefOr[scala.Boolean] = js.undefined
+  ): QuadraticCurveToCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("x1")(x1)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("y1")(y1)
+    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
+    __obj.asInstanceOf[QuadraticCurveToCommand]
+  }
+}
+

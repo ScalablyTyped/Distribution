@@ -27,3 +27,29 @@ trait XHatchWindowController
   def requestPositioning(aRect: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle): scala.Unit
 }
 
+object XHatchWindowController {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    activated: js.Function0[scala.Unit],
+    calcAdjustedRectangle: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
+    ],
+    deactivated: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    requestPositioning: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit]
+  ): XHatchWindowController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("activated")(activated)
+    __obj.updateDynamic("calcAdjustedRectangle")(calcAdjustedRectangle)
+    __obj.updateDynamic("deactivated")(deactivated)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("requestPositioning")(requestPositioning)
+    __obj.asInstanceOf[XHatchWindowController]
+  }
+}
+

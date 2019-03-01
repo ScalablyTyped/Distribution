@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when instant message was modified by user
 		*/
-trait MessageModified extends js.Object {
+trait MessageModified
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	Message new content
   			*/
@@ -25,5 +26,22 @@ trait MessageModified extends js.Object {
   			*	User id (of the user to whom the message was sent)
   			*/
   var to: java.lang.String
+}
+
+object MessageModified {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    id: java.lang.String,
+    message_id: java.lang.String,
+    to: java.lang.String
+  ): MessageModified = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("message_id")(message_id)
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[MessageModified]
+  }
 }
 

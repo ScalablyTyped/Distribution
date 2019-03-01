@@ -83,3 +83,43 @@ trait IgGridTooltips
   var visibility: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridTooltips {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridTooltips
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columnSettings: IgGridTooltipsColumnSettings = null,
+    cursorLeftOffset: scala.Int | scala.Double = null,
+    cursorTopOffset: scala.Int | scala.Double = null,
+    fadeTimespan: scala.Int | scala.Double = null,
+    hideDelay: scala.Int | scala.Double = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    showDelay: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    tooltipHidden: TooltipHiddenEvent = null,
+    tooltipHiding: TooltipHidingEvent = null,
+    tooltipShowing: TooltipShowingEvent = null,
+    tooltipShown: TooltipShownEvent = null,
+    visibility: java.lang.String = null
+  ): IgGridTooltips = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (cursorLeftOffset != null) __obj.updateDynamic("cursorLeftOffset")(cursorLeftOffset.asInstanceOf[js.Any])
+    if (cursorTopOffset != null) __obj.updateDynamic("cursorTopOffset")(cursorTopOffset.asInstanceOf[js.Any])
+    if (fadeTimespan != null) __obj.updateDynamic("fadeTimespan")(fadeTimespan.asInstanceOf[js.Any])
+    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(tooltipHidden)
+    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(tooltipHiding)
+    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(tooltipShowing)
+    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(tooltipShown)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    __obj.asInstanceOf[IgGridTooltips]
+  }
+}
+

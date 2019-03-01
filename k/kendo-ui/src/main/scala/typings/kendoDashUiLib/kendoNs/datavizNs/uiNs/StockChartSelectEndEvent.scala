@@ -11,3 +11,24 @@ trait StockChartSelectEndEvent extends StockChartEvent {
   var to: js.UndefOr[stdLib.Date] = js.undefined
 }
 
+object StockChartSelectEndEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: StockChart,
+    axis: js.Any = null,
+    from: stdLib.Date = null,
+    to: stdLib.Date = null
+  ): StockChartSelectEndEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[StockChartSelectEndEvent]
+  }
+}
+

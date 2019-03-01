@@ -16,3 +16,12 @@ trait ASPxClientBeginCallbackEventArgs extends ASPxClientEventArgs {
   var command: java.lang.String
 }
 
+object ASPxClientBeginCallbackEventArgs {
+  @scala.inline
+  def apply(command: java.lang.String): ASPxClientBeginCallbackEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("command")(command)
+    __obj.asInstanceOf[ASPxClientBeginCallbackEventArgs]
+  }
+}
+

@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object reactDashFileDashReaderDashInputLibStrings {
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.FileInputNs.Format
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait buffer
+    extends reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.FileInputNs.Format
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.FileInputNs.Format
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends reactDashFileDashReaderDashInputLib.reactDashFileDashReaderDashInputMod.FileInputNs.Format
   
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]

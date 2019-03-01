@@ -20,3 +20,22 @@ trait LocalBaseBlock extends js.Object {
   def toJSON(): JsonLocalBaseBlock
 }
 
+object LocalBaseBlock {
+  @scala.inline
+  def apply(
+    blockLength: scala.Double,
+    error: java.lang.String,
+    toJSON: js.Function0[JsonLocalBaseBlock],
+    valueBeforeDecode: stdLib.ArrayBuffer,
+    warnings: js.Array[java.lang.String]
+  ): LocalBaseBlock = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blockLength")(blockLength)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode)
+    __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[LocalBaseBlock]
+  }
+}
+

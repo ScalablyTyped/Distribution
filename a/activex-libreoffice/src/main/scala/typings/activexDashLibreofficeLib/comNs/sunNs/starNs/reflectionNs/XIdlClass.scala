@@ -158,3 +158,70 @@ trait XIdlClass[T]
   def isAssignableFrom(xType: XIdlClass[_]): scala.Boolean
 }
 
+object XIdlClass {
+  @scala.inline
+  def apply[T](
+    Array: XIdlArray,
+    Classes: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    ComponentType: XIdlClass[_],
+    Fields: activexDashInteropLib.SafeArray[XIdlField],
+    Interfaces: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    Methods: activexDashInteropLib.SafeArray[XIdlMethod],
+    Name: java.lang.String,
+    Superclasses: activexDashInteropLib.SafeArray[XIdlClass[_]],
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    Uik: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik,
+    acquire: js.Function0[scala.Unit],
+    createObject: js.Function1[js.Array[T], scala.Unit],
+    equals: js.Function1[XIdlClass[_], scala.Boolean],
+    getArray: js.Function0[XIdlArray],
+    getClass: js.Function1[java.lang.String, XIdlClass[_]],
+    getClasses: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
+    getComponentType: js.Function0[XIdlClass[_]],
+    getField: js.Function1[java.lang.String, XIdlField],
+    getFields: js.Function0[activexDashInteropLib.SafeArray[XIdlField]],
+    getInterfaces: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
+    getMethod: js.Function1[java.lang.String, XIdlMethod],
+    getMethods: js.Function0[activexDashInteropLib.SafeArray[XIdlMethod]],
+    getName: js.Function0[java.lang.String],
+    getSuperclasses: js.Function0[activexDashInteropLib.SafeArray[XIdlClass[_]]],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    getUik: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik],
+    isAssignableFrom: js.Function1[XIdlClass[_], scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIdlClass[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Array")(Array)
+    __obj.updateDynamic("Classes")(Classes)
+    __obj.updateDynamic("ComponentType")(ComponentType)
+    __obj.updateDynamic("Fields")(Fields)
+    __obj.updateDynamic("Interfaces")(Interfaces)
+    __obj.updateDynamic("Methods")(Methods)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Superclasses")(Superclasses)
+    __obj.updateDynamic("TypeClass")(TypeClass)
+    __obj.updateDynamic("Uik")(Uik)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createObject")(createObject)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("getArray")(getArray)
+    __obj.updateDynamic("getClass")(getClass)
+    __obj.updateDynamic("getClasses")(getClasses)
+    __obj.updateDynamic("getComponentType")(getComponentType)
+    __obj.updateDynamic("getField")(getField)
+    __obj.updateDynamic("getFields")(getFields)
+    __obj.updateDynamic("getInterfaces")(getInterfaces)
+    __obj.updateDynamic("getMethod")(getMethod)
+    __obj.updateDynamic("getMethods")(getMethods)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getSuperclasses")(getSuperclasses)
+    __obj.updateDynamic("getTypeClass")(getTypeClass)
+    __obj.updateDynamic("getUik")(getUik)
+    __obj.updateDynamic("isAssignableFrom")(isAssignableFrom)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XIdlClass[T]]
+  }
+}
+

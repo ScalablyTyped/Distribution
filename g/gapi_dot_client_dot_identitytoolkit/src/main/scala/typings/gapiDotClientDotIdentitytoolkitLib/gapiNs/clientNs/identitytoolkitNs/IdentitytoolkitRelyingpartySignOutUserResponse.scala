@@ -10,3 +10,12 @@ trait IdentitytoolkitRelyingpartySignOutUserResponse extends js.Object {
   var localId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartySignOutUserResponse {
+  @scala.inline
+  def apply(localId: java.lang.String = null): IdentitytoolkitRelyingpartySignOutUserResponse = {
+    val __obj = js.Dynamic.literal()
+    if (localId != null) __obj.updateDynamic("localId")(localId)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartySignOutUserResponse]
+  }
+}
+

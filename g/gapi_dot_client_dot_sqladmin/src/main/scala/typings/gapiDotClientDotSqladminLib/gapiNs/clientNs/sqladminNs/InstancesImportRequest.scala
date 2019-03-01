@@ -10,3 +10,12 @@ trait InstancesImportRequest extends js.Object {
   var importContext: js.UndefOr[ImportContext] = js.undefined
 }
 
+object InstancesImportRequest {
+  @scala.inline
+  def apply(importContext: ImportContext = null): InstancesImportRequest = {
+    val __obj = js.Dynamic.literal()
+    if (importContext != null) __obj.updateDynamic("importContext")(importContext)
+    __obj.asInstanceOf[InstancesImportRequest]
+  }
+}
+

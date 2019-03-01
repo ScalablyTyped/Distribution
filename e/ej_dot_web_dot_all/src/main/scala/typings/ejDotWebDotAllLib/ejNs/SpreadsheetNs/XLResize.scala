@@ -40,3 +40,24 @@ trait XLResize extends js.Object {
   def setRowHeight(rowIdx: scala.Double, size: scala.Double): scala.Unit
 }
 
+object XLResize {
+  @scala.inline
+  def apply(
+    fitHeight: js.Function1[js.Array[_], scala.Unit],
+    fitWidth: js.Function1[js.Array[_], scala.Unit],
+    getColWidth: js.Function1[scala.Double, scala.Double],
+    getRowHeight: js.Function1[scala.Double, scala.Double],
+    setColWidth: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setRowHeight: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): XLResize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fitHeight")(fitHeight)
+    __obj.updateDynamic("fitWidth")(fitWidth)
+    __obj.updateDynamic("getColWidth")(getColWidth)
+    __obj.updateDynamic("getRowHeight")(getRowHeight)
+    __obj.updateDynamic("setColWidth")(setColWidth)
+    __obj.updateDynamic("setRowHeight")(setRowHeight)
+    __obj.asInstanceOf[XLResize]
+  }
+}
+

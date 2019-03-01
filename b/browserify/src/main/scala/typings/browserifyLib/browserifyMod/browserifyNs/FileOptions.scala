@@ -26,3 +26,26 @@ trait FileOptions extends js.Object {
   var transform: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FileOptions {
+  @scala.inline
+  def apply(
+    basedir: java.lang.String = null,
+    entry: js.UndefOr[scala.Boolean] = js.undefined,
+    expose: java.lang.String = null,
+    external: js.UndefOr[scala.Boolean] = js.undefined,
+    file: java.lang.String = null,
+    id: java.lang.String = null,
+    transform: js.UndefOr[scala.Boolean] = js.undefined
+  ): FileOptions = {
+    val __obj = js.Dynamic.literal()
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
+    if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry)
+    if (expose != null) __obj.updateDynamic("expose")(expose)
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external)
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(transform)) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[FileOptions]
+  }
+}
+

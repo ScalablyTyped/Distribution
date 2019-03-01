@@ -29,3 +29,26 @@ trait CellFormattingEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellFormattingEventArgs {
+  @scala.inline
+  def apply(
+    Cell: scala.Int | scala.Double = null,
+    Format: js.Any = null,
+    SheetIdx: scala.Int | scala.Double = null,
+    cssClass: java.lang.String = null,
+    model: Model = null,
+    target: stdLib.HTMLElement = null,
+    `type`: java.lang.String = null
+  ): CellFormattingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Cell != null) __obj.updateDynamic("Cell")(Cell.asInstanceOf[js.Any])
+    if (Format != null) __obj.updateDynamic("Format")(Format)
+    if (SheetIdx != null) __obj.updateDynamic("SheetIdx")(SheetIdx.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CellFormattingEventArgs]
+  }
+}
+

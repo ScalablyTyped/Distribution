@@ -157,3 +157,71 @@ trait VictoryPieProps
   var y: js.UndefOr[DataGetterPropType] = js.undefined
 }
 
+object VictoryPieProps {
+  @scala.inline
+  def apply(
+    animate: AnimatePropTypeInterface = null,
+    colorScale: ColorScalePropType = null,
+    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    cornerRadius: scala.Int | scala.Double = null,
+    data: js.Array[_] = null,
+    dataComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    endAngle: scala.Int | scala.Double = null,
+    eventKey: StringOrNumberOrCallback = null,
+    events: js.Array[
+      EventPropTypeInterface[
+        victoryLib.victoryLibStrings.data | victoryLib.victoryLibStrings.labels | victoryLib.victoryLibStrings.parent, 
+        StringOrNumberOrCallback | js.Array[java.lang.String] | js.Array[scala.Double]
+      ]
+    ] = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    height: scala.Int | scala.Double = null,
+    innerRadius: scala.Int | scala.Double = null,
+    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labelRadius: scala.Int | scala.Double = null,
+    labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
+    name: java.lang.String = null,
+    padAngle: scala.Int | scala.Double = null,
+    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    radius: scala.Int | scala.Double = null,
+    scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    startAngle: scala.Int | scala.Double = null,
+    style: VictoryStyleInterface = null,
+    theme: VictoryThemeDefinition = null,
+    width: scala.Int | scala.Double = null,
+    x: DataGetterPropType = null,
+    y: DataGetterPropType = null
+  ): VictoryPieProps = {
+    val __obj = js.Dynamic.literal()
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale.asInstanceOf[js.Any])
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
+    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (labelRadius != null) __obj.updateDynamic("labelRadius")(labelRadius.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (padAngle != null) __obj.updateDynamic("padAngle")(padAngle.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryPieProps]
+  }
+}
+

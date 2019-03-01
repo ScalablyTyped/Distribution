@@ -44,3 +44,28 @@ trait PrettyOptions extends js.Object {
   var translateTime: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object PrettyOptions {
+  @scala.inline
+  def apply(
+    colorize: js.UndefOr[scala.Boolean] = js.undefined,
+    crlf: js.UndefOr[scala.Boolean] = js.undefined,
+    errorLikeObjectKeys: js.Array[java.lang.String] = null,
+    errorProps: java.lang.String = null,
+    levelFirst: js.UndefOr[scala.Boolean] = js.undefined,
+    messageKey: java.lang.String = null,
+    search: java.lang.String = null,
+    translateTime: scala.Boolean | java.lang.String = null
+  ): PrettyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize)
+    if (!js.isUndefined(crlf)) __obj.updateDynamic("crlf")(crlf)
+    if (errorLikeObjectKeys != null) __obj.updateDynamic("errorLikeObjectKeys")(errorLikeObjectKeys)
+    if (errorProps != null) __obj.updateDynamic("errorProps")(errorProps)
+    if (!js.isUndefined(levelFirst)) __obj.updateDynamic("levelFirst")(levelFirst)
+    if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey)
+    if (search != null) __obj.updateDynamic("search")(search)
+    if (translateTime != null) __obj.updateDynamic("translateTime")(translateTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrettyOptions]
+  }
+}
+

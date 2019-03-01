@@ -16,3 +16,18 @@ trait VoiceRecognizerStart extends js.Object {
   var mode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VoiceRecognizerStart {
+  @scala.inline
+  def apply(
+    context: java.lang.String = null,
+    longSpeech: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: java.lang.String = null
+  ): VoiceRecognizerStart = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(longSpeech)) __obj.updateDynamic("longSpeech")(longSpeech)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[VoiceRecognizerStart]
+  }
+}
+

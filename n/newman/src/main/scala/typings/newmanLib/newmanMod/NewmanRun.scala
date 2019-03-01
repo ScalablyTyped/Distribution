@@ -11,3 +11,18 @@ trait NewmanRun extends js.Object {
   var stats: newmanLib.Anon_Assertions
 }
 
+object NewmanRun {
+  @scala.inline
+  def apply(
+    executions: js.Array[NewmanRunExecution],
+    failures: js.Array[NewmanRunFailure],
+    stats: newmanLib.Anon_Assertions
+  ): NewmanRun = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("executions")(executions)
+    __obj.updateDynamic("failures")(failures)
+    __obj.updateDynamic("stats")(stats)
+    __obj.asInstanceOf[NewmanRun]
+  }
+}
+

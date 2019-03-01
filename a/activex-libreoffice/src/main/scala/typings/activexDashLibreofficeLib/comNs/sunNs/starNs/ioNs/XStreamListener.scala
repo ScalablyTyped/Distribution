@@ -26,3 +26,28 @@ trait XStreamListener
   def terminated(): scala.Unit
 }
 
+object XStreamListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    closed: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    error: js.Function1[js.Any, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    started: js.Function0[scala.Unit],
+    terminated: js.Function0[scala.Unit]
+  ): XStreamListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("closed")(closed)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("started")(started)
+    __obj.updateDynamic("terminated")(terminated)
+    __obj.asInstanceOf[XStreamListener]
+  }
+}
+

@@ -16,3 +16,12 @@ trait ColorScaleConditionalFormatUpdateData extends js.Object {
   var criteria: js.UndefOr[officeDashJsDashPreviewLib.ExcelNs.ConditionalColorScaleCriteria] = js.undefined
 }
 
+object ColorScaleConditionalFormatUpdateData {
+  @scala.inline
+  def apply(criteria: officeDashJsDashPreviewLib.ExcelNs.ConditionalColorScaleCriteria = null): ColorScaleConditionalFormatUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
+    __obj.asInstanceOf[ColorScaleConditionalFormatUpdateData]
+  }
+}
+

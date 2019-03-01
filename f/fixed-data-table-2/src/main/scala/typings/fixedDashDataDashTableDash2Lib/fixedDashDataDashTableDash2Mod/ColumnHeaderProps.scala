@@ -13,3 +13,14 @@ trait ColumnHeaderProps extends js.Object {
   var width: scala.Double
 }
 
+object ColumnHeaderProps {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double, columnKey: java.lang.String = null): ColumnHeaderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    __obj.asInstanceOf[ColumnHeaderProps]
+  }
+}
+

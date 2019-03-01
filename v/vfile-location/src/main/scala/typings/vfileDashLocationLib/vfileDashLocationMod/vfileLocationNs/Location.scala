@@ -17,3 +17,16 @@ trait Location extends js.Object {
   def toPosition(offset: scala.Double): vfileDashLocationLib.Anon_ColumnLine
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    toOffset: js.Function1[vfileDashLocationLib.Anon_Column, scala.Double],
+    toPosition: js.Function1[scala.Double, vfileDashLocationLib.Anon_ColumnLine]
+  ): Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toOffset")(toOffset)
+    __obj.updateDynamic("toPosition")(toPosition)
+    __obj.asInstanceOf[Location]
+  }
+}
+

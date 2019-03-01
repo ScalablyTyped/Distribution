@@ -15,3 +15,26 @@ trait FullScreenOptions extends js.Object {
   var tipLabel: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FullScreenOptions {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    keys: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String | stdLib.Node = null,
+    labelActive: java.lang.String | stdLib.Node = null,
+    source: stdLib.Element | java.lang.String = null,
+    target: stdLib.Element = null,
+    tipLabel: java.lang.String = null
+  ): FullScreenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelActive != null) __obj.updateDynamic("labelActive")(labelActive.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (tipLabel != null) __obj.updateDynamic("tipLabel")(tipLabel)
+    __obj.asInstanceOf[FullScreenOptions]
+  }
+}
+

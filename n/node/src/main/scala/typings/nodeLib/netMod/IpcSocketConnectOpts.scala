@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IpcSocketConnectOpts extends js.Object {
+trait IpcSocketConnectOpts extends SocketConnectOpts {
   var path: java.lang.String
+}
+
+object IpcSocketConnectOpts {
+  @scala.inline
+  def apply(path: java.lang.String): IpcSocketConnectOpts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[IpcSocketConnectOpts]
+  }
 }
 

@@ -40,3 +40,20 @@ trait ExecutionRequest extends js.Object {
   var sessionState: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExecutionRequest {
+  @scala.inline
+  def apply(
+    devMode: js.UndefOr[scala.Boolean] = js.undefined,
+    function: java.lang.String = null,
+    parameters: js.Array[_] = null,
+    sessionState: java.lang.String = null
+  ): ExecutionRequest = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode)
+    if (function != null) __obj.updateDynamic("function")(function)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (sessionState != null) __obj.updateDynamic("sessionState")(sessionState)
+    __obj.asInstanceOf[ExecutionRequest]
+  }
+}
+

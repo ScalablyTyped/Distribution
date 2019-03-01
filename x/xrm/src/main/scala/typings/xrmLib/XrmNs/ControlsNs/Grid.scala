@@ -29,3 +29,18 @@ trait Grid extends js.Object {
   def getTotalRecordCount(): scala.Double
 }
 
+object Grid {
+  @scala.inline
+  def apply(
+    getRows: js.Function0[xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.GridNs.GridRow]],
+    getSelectedRows: js.Function0[xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.GridNs.GridRow]],
+    getTotalRecordCount: js.Function0[scala.Double]
+  ): Grid = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getRows")(getRows)
+    __obj.updateDynamic("getSelectedRows")(getSelectedRows)
+    __obj.updateDynamic("getTotalRecordCount")(getTotalRecordCount)
+    __obj.asInstanceOf[Grid]
+  }
+}
+

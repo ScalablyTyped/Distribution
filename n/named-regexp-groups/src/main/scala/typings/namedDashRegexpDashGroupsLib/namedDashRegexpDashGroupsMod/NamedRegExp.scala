@@ -30,3 +30,29 @@ trait NamedRegExp extends js.Object {
   def test(string: java.lang.String): scala.Boolean
 }
 
+object NamedRegExp {
+  @scala.inline
+  def apply(
+    exec: js.Function1[java.lang.String, NamedRegExpExecArray | scala.Null],
+    `match`: js.Function1[/* str */ java.lang.String, NamedRegExpExecArray],
+    replace: js.Function2[
+      /* str */ java.lang.String, 
+      /* replacement */ java.lang.String | (js.Function2[/* match */ java.lang.String, /* repeated */ java.lang.String, java.lang.String]), 
+      java.lang.String
+    ],
+    search: js.Function1[/* str */ java.lang.String, scala.Double],
+    split: js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]],
+    test: js.Function1[java.lang.String, scala.Boolean],
+    toString: js.Function0[java.lang.String]
+  ): NamedRegExp = {
+    val __obj = js.Dynamic.literal(`match` = `match`)
+    __obj.updateDynamic("exec")(exec)
+    __obj.updateDynamic("replace")(replace)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("split")(split)
+    __obj.updateDynamic("test")(test)
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[NamedRegExp]
+  }
+}
+

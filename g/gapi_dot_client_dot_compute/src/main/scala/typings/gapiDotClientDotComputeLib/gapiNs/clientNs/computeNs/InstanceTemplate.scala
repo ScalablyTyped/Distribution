@@ -26,3 +26,26 @@ trait InstanceTemplate extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstanceTemplate {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    properties: InstanceProperties = null,
+    selfLink: java.lang.String = null
+  ): InstanceTemplate = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[InstanceTemplate]
+  }
+}
+

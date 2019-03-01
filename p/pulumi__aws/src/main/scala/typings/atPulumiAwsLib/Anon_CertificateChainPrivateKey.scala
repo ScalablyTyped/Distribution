@@ -11,3 +11,18 @@ trait Anon_CertificateChainPrivateKey extends js.Object {
   var privateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_CertificateChainPrivateKey {
+  @scala.inline
+  def apply(
+    certificate: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    privateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    chain: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_CertificateChainPrivateKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (chain != null) __obj.updateDynamic("chain")(chain.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CertificateChainPrivateKey]
+  }
+}
+

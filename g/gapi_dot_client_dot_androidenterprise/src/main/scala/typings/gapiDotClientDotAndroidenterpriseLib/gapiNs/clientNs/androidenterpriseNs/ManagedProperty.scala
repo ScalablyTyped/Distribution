@@ -22,3 +22,26 @@ trait ManagedProperty extends js.Object {
   var valueStringArray: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ManagedProperty {
+  @scala.inline
+  def apply(
+    key: java.lang.String = null,
+    valueBool: js.UndefOr[scala.Boolean] = js.undefined,
+    valueBundle: ManagedPropertyBundle = null,
+    valueBundleArray: js.Array[ManagedPropertyBundle] = null,
+    valueInteger: scala.Int | scala.Double = null,
+    valueString: java.lang.String = null,
+    valueStringArray: js.Array[java.lang.String] = null
+  ): ManagedProperty = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(valueBool)) __obj.updateDynamic("valueBool")(valueBool)
+    if (valueBundle != null) __obj.updateDynamic("valueBundle")(valueBundle)
+    if (valueBundleArray != null) __obj.updateDynamic("valueBundleArray")(valueBundleArray)
+    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (valueString != null) __obj.updateDynamic("valueString")(valueString)
+    if (valueStringArray != null) __obj.updateDynamic("valueStringArray")(valueStringArray)
+    __obj.asInstanceOf[ManagedProperty]
+  }
+}
+

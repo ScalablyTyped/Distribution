@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ResolvableLiteral extends js.Object {
+trait ResolvableLiteral
+  extends atUirouterCoreLib.libStateInterfaceMod.ResolveTypes {
   /** Pre-resolved data. */
   var data: js.UndefOr[js.Any] = js.undefined
   /**
@@ -44,5 +45,24 @@ trait ResolvableLiteral extends js.Object {
     * The Resolvable will be injectable elsewhere using the token.
     */
   var token: js.Any
+}
+
+object ResolvableLiteral {
+  @scala.inline
+  def apply(
+    resolveFn: js.Function,
+    token: js.Any,
+    data: js.Any = null,
+    deps: js.Array[_] = null,
+    policy: ResolvePolicy = null
+  ): ResolvableLiteral = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resolveFn")(resolveFn)
+    __obj.updateDynamic("token")(token)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (policy != null) __obj.updateDynamic("policy")(policy)
+    __obj.asInstanceOf[ResolvableLiteral]
+  }
 }
 

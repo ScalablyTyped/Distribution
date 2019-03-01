@@ -12,3 +12,12 @@ trait GetPolicyArgs extends js.Object {
   val arn: java.lang.String
 }
 
+object GetPolicyArgs {
+  @scala.inline
+  def apply(arn: java.lang.String): GetPolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.asInstanceOf[GetPolicyArgs]
+  }
+}
+

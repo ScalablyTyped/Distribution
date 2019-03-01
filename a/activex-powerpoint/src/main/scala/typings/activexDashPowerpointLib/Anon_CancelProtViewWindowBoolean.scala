@@ -10,3 +10,13 @@ trait Anon_CancelProtViewWindowBoolean extends js.Object {
   val ProtViewWindow: activexDashPowerpointLib.PowerPointNs.ProtectedViewWindow
 }
 
+object Anon_CancelProtViewWindowBoolean {
+  @scala.inline
+  def apply(Cancel: scala.Boolean, ProtViewWindow: activexDashPowerpointLib.PowerPointNs.ProtectedViewWindow): Anon_CancelProtViewWindowBoolean = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("ProtViewWindow")(ProtViewWindow)
+    __obj.asInstanceOf[Anon_CancelProtViewWindowBoolean]
+  }
+}
+

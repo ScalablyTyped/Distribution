@@ -48,3 +48,33 @@ trait IgTreeGridResizing
   var inherit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgTreeGridResizing {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTreeGridResizing
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowDoubleClickToResize: js.UndefOr[scala.Boolean] = js.undefined,
+    columnResized: ColumnResizedEvent = null,
+    columnResizing: ColumnResizingEvent = null,
+    columnResizingRefused: ColumnResizingRefusedEvent = null,
+    columnSettings: js.Array[IgGridResizingColumnSetting] = null,
+    deferredResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    handleThreshold: scala.Int | scala.Double = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgTreeGridResizing = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowDoubleClickToResize)) __obj.updateDynamic("allowDoubleClickToResize")(allowDoubleClickToResize)
+    if (columnResized != null) __obj.updateDynamic("columnResized")(columnResized)
+    if (columnResizing != null) __obj.updateDynamic("columnResizing")(columnResizing)
+    if (columnResizingRefused != null) __obj.updateDynamic("columnResizingRefused")(columnResizingRefused)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (!js.isUndefined(deferredResizing)) __obj.updateDynamic("deferredResizing")(deferredResizing)
+    if (handleThreshold != null) __obj.updateDynamic("handleThreshold")(handleThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    __obj.asInstanceOf[IgTreeGridResizing]
+  }
+}
+

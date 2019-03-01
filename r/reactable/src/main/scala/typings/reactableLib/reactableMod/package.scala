@@ -8,5 +8,4 @@ import scala.scalajs.js.annotation._
 package object reactableMod {
   type ColumnsType = java.lang.String | KeyLabelObject
   type FilterMethodType = js.Function1[/* text */ java.lang.String, scala.Unit]
-  type SortDirection = reactableLib.reactableLibStrings.asc | reactableLib.reactableLibStrings.desc
 }

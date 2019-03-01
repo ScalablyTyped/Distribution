@@ -20,3 +20,14 @@ trait ModalDialogUngroupingColumnEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ModalDialogUngroupingColumnEventUIParam {
+  @scala.inline
+  def apply(key: java.lang.String = null, layout: java.lang.String = null, owner: js.Any = null): ModalDialogUngroupingColumnEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ModalDialogUngroupingColumnEventUIParam]
+  }
+}
+

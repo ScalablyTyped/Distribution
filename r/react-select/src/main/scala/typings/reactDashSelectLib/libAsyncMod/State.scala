@@ -14,3 +14,24 @@ trait State[OptionType] extends js.Object {
   var passEmptyOptions: scala.Boolean
 }
 
+object State {
+  @scala.inline
+  def apply[OptionType](
+    inputValue: java.lang.String,
+    isLoading: scala.Boolean,
+    loadedOptions: reactDashSelectLib.libTypesMod.OptionsType[OptionType],
+    passEmptyOptions: scala.Boolean,
+    defaultOptions: reactDashSelectLib.libTypesMod.OptionsType[OptionType] = null,
+    loadedInputValue: java.lang.String = null
+  ): State[OptionType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inputValue")(inputValue)
+    __obj.updateDynamic("isLoading")(isLoading)
+    __obj.updateDynamic("loadedOptions")(loadedOptions)
+    __obj.updateDynamic("passEmptyOptions")(passEmptyOptions)
+    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
+    if (loadedInputValue != null) __obj.updateDynamic("loadedInputValue")(loadedInputValue)
+    __obj.asInstanceOf[State[OptionType]]
+  }
+}
+

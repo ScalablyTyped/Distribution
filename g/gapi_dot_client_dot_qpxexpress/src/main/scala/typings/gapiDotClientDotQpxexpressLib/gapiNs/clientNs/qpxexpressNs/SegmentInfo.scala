@@ -39,3 +39,34 @@ trait SegmentInfo extends js.Object {
   var subjectToGovernmentApproval: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SegmentInfo {
+  @scala.inline
+  def apply(
+    bookingCode: java.lang.String = null,
+    bookingCodeCount: scala.Int | scala.Double = null,
+    cabin: java.lang.String = null,
+    connectionDuration: scala.Int | scala.Double = null,
+    duration: scala.Int | scala.Double = null,
+    flight: FlightInfo = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    leg: js.Array[LegInfo] = null,
+    marriedSegmentGroup: java.lang.String = null,
+    subjectToGovernmentApproval: js.UndefOr[scala.Boolean] = js.undefined
+  ): SegmentInfo = {
+    val __obj = js.Dynamic.literal()
+    if (bookingCode != null) __obj.updateDynamic("bookingCode")(bookingCode)
+    if (bookingCodeCount != null) __obj.updateDynamic("bookingCodeCount")(bookingCodeCount.asInstanceOf[js.Any])
+    if (cabin != null) __obj.updateDynamic("cabin")(cabin)
+    if (connectionDuration != null) __obj.updateDynamic("connectionDuration")(connectionDuration.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (flight != null) __obj.updateDynamic("flight")(flight)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (leg != null) __obj.updateDynamic("leg")(leg)
+    if (marriedSegmentGroup != null) __obj.updateDynamic("marriedSegmentGroup")(marriedSegmentGroup)
+    if (!js.isUndefined(subjectToGovernmentApproval)) __obj.updateDynamic("subjectToGovernmentApproval")(subjectToGovernmentApproval)
+    __obj.asInstanceOf[SegmentInfo]
+  }
+}
+

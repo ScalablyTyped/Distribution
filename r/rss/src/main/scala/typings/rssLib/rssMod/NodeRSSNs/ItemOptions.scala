@@ -65,3 +65,34 @@ trait ItemOptions extends js.Object {
   var url: java.lang.String
 }
 
+object ItemOptions {
+  @scala.inline
+  def apply(
+    date: stdLib.Date | java.lang.String,
+    description: java.lang.String,
+    title: java.lang.String,
+    url: java.lang.String,
+    author: java.lang.String = null,
+    categories: js.Array[java.lang.String] = null,
+    custom_elements: js.Array[_] = null,
+    enclosure: EnclosureObject = null,
+    guid: java.lang.String = null,
+    lat: scala.Int | scala.Double = null,
+    long: scala.Int | scala.Double = null
+  ): ItemOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (custom_elements != null) __obj.updateDynamic("custom_elements")(custom_elements)
+    if (enclosure != null) __obj.updateDynamic("enclosure")(enclosure)
+    if (guid != null) __obj.updateDynamic("guid")(guid)
+    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
+    if (long != null) __obj.updateDynamic("long")(long.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ItemOptions]
+  }
+}
+

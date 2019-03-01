@@ -10,3 +10,16 @@ trait Anon_StateWhenStartedWalkingTypes1 extends js.Object {
   var stateWhenStartedWalkingTypes2: typescriptDashServicesLib.TypeScriptNs.EnclosingTypeWalkerState
 }
 
+object Anon_StateWhenStartedWalkingTypes1 {
+  @scala.inline
+  def apply(
+    stateWhenStartedWalkingTypes1: typescriptDashServicesLib.TypeScriptNs.EnclosingTypeWalkerState,
+    stateWhenStartedWalkingTypes2: typescriptDashServicesLib.TypeScriptNs.EnclosingTypeWalkerState
+  ): Anon_StateWhenStartedWalkingTypes1 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stateWhenStartedWalkingTypes1")(stateWhenStartedWalkingTypes1)
+    __obj.updateDynamic("stateWhenStartedWalkingTypes2")(stateWhenStartedWalkingTypes2)
+    __obj.asInstanceOf[Anon_StateWhenStartedWalkingTypes1]
+  }
+}
+

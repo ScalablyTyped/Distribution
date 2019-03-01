@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashPermissionsLibStrings {
   @js.native
-  sealed trait authorized extends js.Object
+  sealed trait authorized
+    extends reactDashNativeDashPermissionsLib.reactDashNativeDashPermissionsMod.Status
   
   @js.native
-  sealed trait denied extends js.Object
+  sealed trait denied
+    extends reactDashNativeDashPermissionsLib.reactDashNativeDashPermissionsMod.Status
   
   @js.native
-  sealed trait restricted extends js.Object
+  sealed trait restricted
+    extends reactDashNativeDashPermissionsLib.reactDashNativeDashPermissionsMod.Status
   
   @js.native
-  sealed trait undetermined extends js.Object
+  sealed trait undetermined
+    extends reactDashNativeDashPermissionsLib.reactDashNativeDashPermissionsMod.Status
   
   @scala.inline
   def authorized: authorized = "authorized".asInstanceOf[authorized]

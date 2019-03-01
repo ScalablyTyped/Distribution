@@ -13,3 +13,12 @@ trait DetectLanguageRequest extends js.Object {
   var q: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object DetectLanguageRequest {
+  @scala.inline
+  def apply(q: js.Array[java.lang.String] = null): DetectLanguageRequest = {
+    val __obj = js.Dynamic.literal()
+    if (q != null) __obj.updateDynamic("q")(q)
+    __obj.asInstanceOf[DetectLanguageRequest]
+  }
+}
+

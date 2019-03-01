@@ -45,3 +45,24 @@ trait DurandalActivatorSettings extends js.Object {
   def interpretResponse(value: js.Any): scala.Boolean
 }
 
+object DurandalActivatorSettings {
+  @scala.inline
+  def apply(
+    affirmations: js.Array[java.lang.String],
+    afterDeactivate: js.Function3[js.Any, scala.Boolean, js.Function, scala.Unit],
+    areSameItem: js.Function4[js.Any, js.Any, js.Any, js.Any, scala.Boolean],
+    beforeActivate: js.Function1[js.Any, js.Any],
+    closeOnDeactivate: scala.Boolean,
+    interpretResponse: js.Function1[js.Any, scala.Boolean]
+  ): DurandalActivatorSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("affirmations")(affirmations)
+    __obj.updateDynamic("afterDeactivate")(afterDeactivate)
+    __obj.updateDynamic("areSameItem")(areSameItem)
+    __obj.updateDynamic("beforeActivate")(beforeActivate)
+    __obj.updateDynamic("closeOnDeactivate")(closeOnDeactivate)
+    __obj.updateDynamic("interpretResponse")(interpretResponse)
+    __obj.asInstanceOf[DurandalActivatorSettings]
+  }
+}
+

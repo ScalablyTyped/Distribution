@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object hopscotchLibStrings {
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom extends placementTypes
   
   @js.native
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left extends placementTypes
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right extends placementTypes
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top extends placementTypes
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

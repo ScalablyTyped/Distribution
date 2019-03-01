@@ -23,3 +23,18 @@ trait ExecutionError extends js.Object {
   var scriptStackTraceElements: js.UndefOr[js.Array[ScriptStackTraceElement]] = js.undefined
 }
 
+object ExecutionError {
+  @scala.inline
+  def apply(
+    errorMessage: java.lang.String = null,
+    errorType: java.lang.String = null,
+    scriptStackTraceElements: js.Array[ScriptStackTraceElement] = null
+  ): ExecutionError = {
+    val __obj = js.Dynamic.literal()
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (errorType != null) __obj.updateDynamic("errorType")(errorType)
+    if (scriptStackTraceElements != null) __obj.updateDynamic("scriptStackTraceElements")(scriptStackTraceElements)
+    __obj.asInstanceOf[ExecutionError]
+  }
+}
+

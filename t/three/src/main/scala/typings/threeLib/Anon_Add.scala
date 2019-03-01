@@ -14,3 +14,24 @@ trait Anon_Add extends js.Object {
   def remove(key: java.lang.String): scala.Unit
 }
 
+object Anon_Add {
+  @scala.inline
+  def apply(
+    add: js.Function2[java.lang.String, js.Any, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    enabled: scala.Boolean,
+    files: js.Any,
+    get: js.Function1[java.lang.String, js.Any],
+    remove: js.Function1[java.lang.String, scala.Unit]
+  ): Anon_Add = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("files")(files)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[Anon_Add]
+  }
+}
+

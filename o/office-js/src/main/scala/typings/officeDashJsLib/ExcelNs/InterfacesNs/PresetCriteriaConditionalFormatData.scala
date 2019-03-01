@@ -23,3 +23,16 @@ trait PresetCriteriaConditionalFormatData extends js.Object {
   var rule: js.UndefOr[officeDashJsLib.ExcelNs.ConditionalPresetCriteriaRule] = js.undefined
 }
 
+object PresetCriteriaConditionalFormatData {
+  @scala.inline
+  def apply(
+    format: ConditionalRangeFormatData = null,
+    rule: officeDashJsLib.ExcelNs.ConditionalPresetCriteriaRule = null
+  ): PresetCriteriaConditionalFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[PresetCriteriaConditionalFormatData]
+  }
+}
+

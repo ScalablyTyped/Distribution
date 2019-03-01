@@ -22,3 +22,13 @@ trait ClipboardItemsType extends js.Object {
   var options: js.UndefOr[js.Any] = js.undefined
 }
 
+object ClipboardItemsType {
+  @scala.inline
+  def apply(items: js.Array[_] = null, options: js.Any = null): ClipboardItemsType = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[ClipboardItemsType]
+  }
+}
+

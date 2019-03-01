@@ -10,3 +10,16 @@ trait InstalledExtensionQuery extends js.Object {
   var monikers: js.Array[vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionIdentifier]
 }
 
+object InstalledExtensionQuery {
+  @scala.inline
+  def apply(
+    assetTypes: js.Array[java.lang.String],
+    monikers: js.Array[vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionIdentifier]
+  ): InstalledExtensionQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("assetTypes")(assetTypes)
+    __obj.updateDynamic("monikers")(monikers)
+    __obj.asInstanceOf[InstalledExtensionQuery]
+  }
+}
+

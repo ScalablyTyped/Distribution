@@ -10,3 +10,16 @@ trait ThreadRowButtonClickEvent extends js.Object {
   var threadRowView: ThreadRowView
 }
 
+object ThreadRowButtonClickEvent {
+  @scala.inline
+  def apply(
+    threadRowView: ThreadRowView,
+    dropdown: inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.DropdownView = null
+  ): ThreadRowButtonClickEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("threadRowView")(threadRowView)
+    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown)
+    __obj.asInstanceOf[ThreadRowButtonClickEvent]
+  }
+}
+

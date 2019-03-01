@@ -15,3 +15,12 @@ trait ListDebuggeesResponse extends js.Object {
   var debuggees: js.UndefOr[js.Array[Debuggee]] = js.undefined
 }
 
+object ListDebuggeesResponse {
+  @scala.inline
+  def apply(debuggees: js.Array[Debuggee] = null): ListDebuggeesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (debuggees != null) __obj.updateDynamic("debuggees")(debuggees)
+    __obj.asInstanceOf[ListDebuggeesResponse]
+  }
+}
+

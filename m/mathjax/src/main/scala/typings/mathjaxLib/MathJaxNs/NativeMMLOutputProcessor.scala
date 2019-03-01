@@ -27,3 +27,20 @@ trait NativeMMLOutputProcessor extends js.Object {
   var styles: js.UndefOr[js.Any] = js.undefined
 }
 
+object NativeMMLOutputProcessor {
+  @scala.inline
+  def apply(
+    matchFontHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    minScaleAdjust: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null,
+    styles: js.Any = null
+  ): NativeMMLOutputProcessor = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(matchFontHeight)) __obj.updateDynamic("matchFontHeight")(matchFontHeight)
+    if (minScaleAdjust != null) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[NativeMMLOutputProcessor]
+  }
+}
+

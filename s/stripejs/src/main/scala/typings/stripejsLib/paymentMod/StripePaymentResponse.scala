@@ -47,3 +47,30 @@ trait StripePaymentResponse extends js.Object {
   def complete(status: completeStatus): scala.Unit
 }
 
+object StripePaymentResponse {
+  @scala.inline
+  def apply(
+    complete: js.Function1[completeStatus, scala.Unit],
+    methodName: java.lang.String,
+    shippingAddress: stripejsLib.shippingMod.ShippingAddress,
+    shippingOption: stripejsLib.shippingMod.ShippingOption,
+    payerEmail: java.lang.String = null,
+    payerName: java.lang.String = null,
+    payerPhone: java.lang.String = null,
+    source: js.Any = null,
+    token: js.Any = null
+  ): StripePaymentResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("methodName")(methodName)
+    __obj.updateDynamic("shippingAddress")(shippingAddress)
+    __obj.updateDynamic("shippingOption")(shippingOption)
+    if (payerEmail != null) __obj.updateDynamic("payerEmail")(payerEmail)
+    if (payerName != null) __obj.updateDynamic("payerName")(payerName)
+    if (payerPhone != null) __obj.updateDynamic("payerPhone")(payerPhone)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[StripePaymentResponse]
+  }
+}
+

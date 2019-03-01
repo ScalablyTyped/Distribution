@@ -45,3 +45,22 @@ trait ControllerRevision extends js.Object {
   val revision: scala.Double
 }
 
+object ControllerRevision {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`,
+    data: atPulumiKubernetesLib.typesOutputMod.pkgNs.runtimeNs.RawExtension,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    revision: scala.Double
+  ): ControllerRevision = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("revision")(revision)
+    __obj.asInstanceOf[ControllerRevision]
+  }
+}
+

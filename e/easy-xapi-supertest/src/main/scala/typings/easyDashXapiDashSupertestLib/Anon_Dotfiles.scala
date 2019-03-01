@@ -60,3 +60,33 @@ trait Anon_Dotfiles extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Dotfiles {
+  @scala.inline
+  def apply(
+    dotfiles: java.lang.String = null,
+    etag: js.UndefOr[scala.Boolean] = js.undefined,
+    extensions: js.Array[java.lang.String] = null,
+    index: js.UndefOr[scala.Boolean] = js.undefined,
+    lastModified: js.UndefOr[scala.Boolean] = js.undefined,
+    maxAge: scala.Int | scala.Double = null,
+    redirect: js.UndefOr[scala.Boolean] = js.undefined,
+    setHeaders: js.Function3[
+      /* res */ easyDashXapiDashSupertestLib.expressMod.eNs.Response, 
+      /* path */ java.lang.String, 
+      /* stat */ js.Any, 
+      _
+    ] = null
+  ): Anon_Dotfiles = {
+    val __obj = js.Dynamic.literal()
+    if (dotfiles != null) __obj.updateDynamic("dotfiles")(dotfiles)
+    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
+    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect)
+    if (setHeaders != null) __obj.updateDynamic("setHeaders")(setHeaders)
+    __obj.asInstanceOf[Anon_Dotfiles]
+  }
+}
+

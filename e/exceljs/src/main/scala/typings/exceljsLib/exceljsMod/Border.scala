@@ -10,3 +10,13 @@ trait Border extends js.Object {
   var style: js.UndefOr[BorderStyle] = js.undefined
 }
 
+object Border {
+  @scala.inline
+  def apply(color: Color = null, style: BorderStyle = null): Border = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[Border]
+  }
+}
+

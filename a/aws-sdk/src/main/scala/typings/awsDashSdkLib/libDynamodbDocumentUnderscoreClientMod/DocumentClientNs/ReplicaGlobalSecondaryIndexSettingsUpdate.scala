@@ -20,3 +20,18 @@ trait ReplicaGlobalSecondaryIndexSettingsUpdate extends js.Object {
   var ProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
 }
 
+object ReplicaGlobalSecondaryIndexSettingsUpdate {
+  @scala.inline
+  def apply(
+    IndexName: IndexName,
+    ProvisionedReadCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
+    ProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  ): ReplicaGlobalSecondaryIndexSettingsUpdate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IndexName")(IndexName)
+    if (ProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingSettingsUpdate")(ProvisionedReadCapacityAutoScalingSettingsUpdate)
+    if (!js.isUndefined(ProvisionedReadCapacityUnits)) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits)
+    __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsUpdate]
+  }
+}
+

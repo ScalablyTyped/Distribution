@@ -13,3 +13,12 @@ trait ICacheOptions extends js.Object {
   var cacheDirName: java.lang.String
 }
 
+object ICacheOptions {
+  @scala.inline
+  def apply(cacheDirName: java.lang.String): ICacheOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cacheDirName")(cacheDirName)
+    __obj.asInstanceOf[ICacheOptions]
+  }
+}
+

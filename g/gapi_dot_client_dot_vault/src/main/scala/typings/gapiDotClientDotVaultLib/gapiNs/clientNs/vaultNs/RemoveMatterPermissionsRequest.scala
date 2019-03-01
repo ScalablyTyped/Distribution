@@ -10,3 +10,12 @@ trait RemoveMatterPermissionsRequest extends js.Object {
   var accountId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RemoveMatterPermissionsRequest {
+  @scala.inline
+  def apply(accountId: java.lang.String = null): RemoveMatterPermissionsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    __obj.asInstanceOf[RemoveMatterPermissionsRequest]
+  }
+}
+

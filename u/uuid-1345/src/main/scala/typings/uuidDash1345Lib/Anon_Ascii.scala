@@ -10,3 +10,16 @@ trait Anon_Ascii extends js.Object {
   var mac: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Ascii {
+  @scala.inline
+  def apply(
+    encoding: uuidDash1345Lib.uuidDash1345LibStrings.ascii,
+    mac: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Ascii = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(mac)) __obj.updateDynamic("mac")(mac)
+    __obj.asInstanceOf[Anon_Ascii]
+  }
+}
+

@@ -10,3 +10,12 @@ trait CreateDatabaseMetadata extends js.Object {
   var database: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateDatabaseMetadata {
+  @scala.inline
+  def apply(database: java.lang.String = null): CreateDatabaseMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (database != null) __obj.updateDynamic("database")(database)
+    __obj.asInstanceOf[CreateDatabaseMetadata]
+  }
+}
+

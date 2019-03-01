@@ -30,3 +30,18 @@ trait NamedItemArrayValuesLoadOptions extends js.Object {
   var values: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NamedItemArrayValuesLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    types: js.UndefOr[scala.Boolean] = js.undefined,
+    values: js.UndefOr[scala.Boolean] = js.undefined
+  ): NamedItemArrayValuesLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(types)) __obj.updateDynamic("types")(types)
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[NamedItemArrayValuesLoadOptions]
+  }
+}
+

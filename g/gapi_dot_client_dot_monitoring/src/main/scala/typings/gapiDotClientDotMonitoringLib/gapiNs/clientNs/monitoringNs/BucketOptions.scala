@@ -14,3 +14,18 @@ trait BucketOptions extends js.Object {
   var linearBuckets: js.UndefOr[Linear] = js.undefined
 }
 
+object BucketOptions {
+  @scala.inline
+  def apply(
+    explicitBuckets: Explicit = null,
+    exponentialBuckets: Exponential = null,
+    linearBuckets: Linear = null
+  ): BucketOptions = {
+    val __obj = js.Dynamic.literal()
+    if (explicitBuckets != null) __obj.updateDynamic("explicitBuckets")(explicitBuckets)
+    if (exponentialBuckets != null) __obj.updateDynamic("exponentialBuckets")(exponentialBuckets)
+    if (linearBuckets != null) __obj.updateDynamic("linearBuckets")(linearBuckets)
+    __obj.asInstanceOf[BucketOptions]
+  }
+}
+

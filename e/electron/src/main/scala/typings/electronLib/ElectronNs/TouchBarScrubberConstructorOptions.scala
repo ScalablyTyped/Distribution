@@ -40,3 +40,28 @@ trait TouchBarScrubberConstructorOptions extends js.Object {
   def select(selectedIndex: scala.Double): scala.Unit
 }
 
+object TouchBarScrubberConstructorOptions {
+  @scala.inline
+  def apply(
+    continuous: scala.Boolean,
+    highlight: js.Function1[scala.Double, scala.Unit],
+    items: js.Array[ScrubberItem],
+    mode: java.lang.String,
+    overlayStyle: java.lang.String,
+    select: js.Function1[scala.Double, scala.Unit],
+    selectedStyle: java.lang.String,
+    showArrowButtons: scala.Boolean
+  ): TouchBarScrubberConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("continuous")(continuous)
+    __obj.updateDynamic("highlight")(highlight)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("overlayStyle")(overlayStyle)
+    __obj.updateDynamic("select")(select)
+    __obj.updateDynamic("selectedStyle")(selectedStyle)
+    __obj.updateDynamic("showArrowButtons")(showArrowButtons)
+    __obj.asInstanceOf[TouchBarScrubberConstructorOptions]
+  }
+}
+

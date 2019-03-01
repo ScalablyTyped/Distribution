@@ -12,3 +12,18 @@ trait ClientDataProviderQuery extends DataProviderQuery {
   var queryServiceInstanceType: java.lang.String
 }
 
+object ClientDataProviderQuery {
+  @scala.inline
+  def apply(
+    context: DataProviderContext,
+    contributionIds: js.Array[java.lang.String],
+    queryServiceInstanceType: java.lang.String
+  ): ClientDataProviderQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("contributionIds")(contributionIds)
+    __obj.updateDynamic("queryServiceInstanceType")(queryServiceInstanceType)
+    __obj.asInstanceOf[ClientDataProviderQuery]
+  }
+}
+

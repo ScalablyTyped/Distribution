@@ -29,3 +29,24 @@ trait PlayerScoreResponse extends js.Object {
   var unbeatenScores: js.UndefOr[js.Array[PlayerScore]] = js.undefined
 }
 
+object PlayerScoreResponse {
+  @scala.inline
+  def apply(
+    beatenScoreTimeSpans: js.Array[java.lang.String] = null,
+    formattedScore: java.lang.String = null,
+    kind: java.lang.String = null,
+    leaderboardId: java.lang.String = null,
+    scoreTag: java.lang.String = null,
+    unbeatenScores: js.Array[PlayerScore] = null
+  ): PlayerScoreResponse = {
+    val __obj = js.Dynamic.literal()
+    if (beatenScoreTimeSpans != null) __obj.updateDynamic("beatenScoreTimeSpans")(beatenScoreTimeSpans)
+    if (formattedScore != null) __obj.updateDynamic("formattedScore")(formattedScore)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (leaderboardId != null) __obj.updateDynamic("leaderboardId")(leaderboardId)
+    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag)
+    if (unbeatenScores != null) __obj.updateDynamic("unbeatenScores")(unbeatenScores)
+    __obj.asInstanceOf[PlayerScoreResponse]
+  }
+}
+

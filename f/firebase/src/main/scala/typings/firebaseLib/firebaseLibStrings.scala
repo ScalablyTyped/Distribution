@@ -7,130 +7,229 @@ import scala.scalajs.js.annotation._
 
 object firebaseLibStrings {
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends firebaseLib.firebaseMod.firestoreNs.WhereFilterOp
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.WhereFilterOp
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends firebaseLib.firebaseMod.firestoreNs.WhereFilterOp
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.WhereFilterOp
   
   @js.native
-  sealed trait `==` extends js.Object
+  sealed trait `==`
+    extends firebaseLib.firebaseMod.firestoreNs.WhereFilterOp
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.WhereFilterOp
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends firebaseLib.firebaseMod.firestoreNs.WhereFilterOp
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.WhereFilterOp
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends firebaseLib.firebaseMod.firestoreNs.WhereFilterOp
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.WhereFilterOp
   
   @js.native
-  sealed trait aborted extends js.Object
+  sealed trait aborted
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait added extends js.Object
+  sealed trait added
+    extends firebaseLib.firebaseMod.firestoreNs.DocumentChangeType
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChangeType
   
   @js.native
-  sealed trait `already-exists` extends js.Object
+  sealed trait `already-exists`
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait `array-contains` extends js.Object
+  sealed trait `array-contains`
+    extends firebaseLib.firebaseMod.firestoreNs.WhereFilterOp
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.WhereFilterOp
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends firebaseLib.firebaseMod.firestoreNs.OrderByDirection
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.OrderByDirection
   
   @js.native
   sealed trait cache extends js.Object
   
   @js.native
-  sealed trait cancelled extends js.Object
+  sealed trait cancelled
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait child_added extends js.Object
+  sealed trait child_added
+    extends firebaseLib.firebaseMod.firebaseNs.databaseNs.EventType
   
   @js.native
-  sealed trait child_changed extends js.Object
+  sealed trait child_changed
+    extends firebaseLib.firebaseMod.firebaseNs.databaseNs.EventType
   
   @js.native
-  sealed trait child_moved extends js.Object
+  sealed trait child_moved
+    extends firebaseLib.firebaseMod.firebaseNs.databaseNs.EventType
   
   @js.native
-  sealed trait child_removed extends js.Object
+  sealed trait child_removed
+    extends firebaseLib.firebaseMod.firebaseNs.databaseNs.EventType
   
   @js.native
-  sealed trait `data-loss` extends js.Object
+  sealed trait `data-loss`
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait `deadline-exceeded` extends js.Object
+  sealed trait `deadline-exceeded`
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends firebaseLib.firebaseMod.firestoreNs.LogLevel
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.LogLevel
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends firebaseLib.firebaseMod.firestoreNs.OrderByDirection
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.OrderByDirection
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends firebaseLib.firebaseMod.firestoreNs.LogLevel
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.LogLevel
   
   @js.native
   sealed trait estimate extends js.Object
   
   @js.native
-  sealed trait `failed-precondition` extends js.Object
+  sealed trait `failed-precondition`
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait internal extends js.Object
+  sealed trait internal
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait `invalid-argument` extends js.Object
+  sealed trait `invalid-argument`
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait modified extends js.Object
+  sealed trait modified
+    extends firebaseLib.firebaseMod.firestoreNs.DocumentChangeType
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChangeType
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait `not-found` extends js.Object
+  sealed trait `not-found`
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait ok extends js.Object
+  sealed trait ok
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
   
   @js.native
-  sealed trait `out-of-range` extends js.Object
+  sealed trait `out-of-range`
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait `permission-denied` extends js.Object
+  sealed trait `permission-denied`
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
   sealed trait previous extends js.Object
   
   @js.native
-  sealed trait removed extends js.Object
+  sealed trait removed
+    extends firebaseLib.firebaseMod.firestoreNs.DocumentChangeType
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChangeType
   
   @js.native
-  sealed trait `resource-exhausted` extends js.Object
+  sealed trait `resource-exhausted`
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
   sealed trait server extends js.Object
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait silent
+    extends firebaseLib.firebaseMod.firestoreNs.LogLevel
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.LogLevel
   
   @js.native
-  sealed trait unauthenticated extends js.Object
+  sealed trait unauthenticated
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait unavailable extends js.Object
+  sealed trait unavailable
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait unimplemented extends js.Object
+  sealed trait unimplemented
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends firebaseLib.firebaseMod.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firebaseNs.functionsNs.ErrorStatus
+       with firebaseLib.firebaseMod.firestoreNs.FirestoreErrorCode
+       with firebaseLib.firebaseMod.firebaseNs.firestoreNs.FirestoreErrorCode
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait value
+    extends firebaseLib.firebaseMod.firebaseNs.databaseNs.EventType
   
   @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]

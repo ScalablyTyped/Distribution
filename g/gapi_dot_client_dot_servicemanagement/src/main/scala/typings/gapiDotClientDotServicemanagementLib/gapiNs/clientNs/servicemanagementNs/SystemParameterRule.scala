@@ -23,3 +23,13 @@ trait SystemParameterRule extends js.Object {
   var selector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SystemParameterRule {
+  @scala.inline
+  def apply(parameters: js.Array[SystemParameter] = null, selector: java.lang.String = null): SystemParameterRule = {
+    val __obj = js.Dynamic.literal()
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[SystemParameterRule]
+  }
+}
+

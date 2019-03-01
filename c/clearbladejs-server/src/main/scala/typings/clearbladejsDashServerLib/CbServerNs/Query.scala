@@ -13,3 +13,22 @@ trait Query extends js.Object {
   var SORT: js.UndefOr[QuerySortDirections] = js.undefined
 }
 
+object Query {
+  @scala.inline
+  def apply(
+    FILTERS: js.Array[QueryFilter] = null,
+    PAGENUM: scala.Int | scala.Double = null,
+    PAGESIZE: scala.Int | scala.Double = null,
+    SELECTCOLUMNS: js.Array[java.lang.String] = null,
+    SORT: QuerySortDirections = null
+  ): Query = {
+    val __obj = js.Dynamic.literal()
+    if (FILTERS != null) __obj.updateDynamic("FILTERS")(FILTERS)
+    if (PAGENUM != null) __obj.updateDynamic("PAGENUM")(PAGENUM.asInstanceOf[js.Any])
+    if (PAGESIZE != null) __obj.updateDynamic("PAGESIZE")(PAGESIZE.asInstanceOf[js.Any])
+    if (SELECTCOLUMNS != null) __obj.updateDynamic("SELECTCOLUMNS")(SELECTCOLUMNS)
+    if (SORT != null) __obj.updateDynamic("SORT")(SORT)
+    __obj.asInstanceOf[Query]
+  }
+}
+

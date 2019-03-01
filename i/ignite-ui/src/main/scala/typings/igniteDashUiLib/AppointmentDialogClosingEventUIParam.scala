@@ -20,3 +20,18 @@ trait AppointmentDialogClosingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object AppointmentDialogClosingEventUIParam {
+  @scala.inline
+  def apply(
+    element: js.Any = null,
+    isAppointmentNew: js.UndefOr[scala.Boolean] = js.undefined,
+    owner: js.Any = null
+  ): AppointmentDialogClosingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (!js.isUndefined(isAppointmentNew)) __obj.updateDynamic("isAppointmentNew")(isAppointmentNew)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[AppointmentDialogClosingEventUIParam]
+  }
+}
+

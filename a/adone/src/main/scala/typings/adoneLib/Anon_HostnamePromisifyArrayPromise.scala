@@ -9,3 +9,12 @@ trait Anon_HostnamePromisifyArrayPromise extends js.Object {
   def `__promisify__`(hostname: java.lang.String): js.Promise[js.Array[nodeLib.dnsMod.SrvRecord]]
 }
 
+object Anon_HostnamePromisifyArrayPromise {
+  @scala.inline
+  def apply(`__promisify__`: js.Function1[java.lang.String, js.Promise[js.Array[nodeLib.dnsMod.SrvRecord]]]): Anon_HostnamePromisifyArrayPromise = {
+    val __obj = js.Dynamic.literal(`__promisify__` = `__promisify__`)
+  
+    __obj.asInstanceOf[Anon_HostnamePromisifyArrayPromise]
+  }
+}
+

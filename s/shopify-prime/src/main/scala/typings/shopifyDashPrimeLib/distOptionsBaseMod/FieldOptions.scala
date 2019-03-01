@@ -12,3 +12,12 @@ trait FieldOptions extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FieldOptions {
+  @scala.inline
+  def apply(fields: java.lang.String = null): FieldOptions = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[FieldOptions]
+  }
+}
+

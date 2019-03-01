@@ -33,3 +33,34 @@ trait Comment extends js.Object {
   var verb: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Comment {
+  @scala.inline
+  def apply(
+    actor: gapiDotClientDotPlusdomainsLib.Anon_ClientSpecificActorInfoDisplayName = null,
+    etag: java.lang.String = null,
+    id: java.lang.String = null,
+    inReplyTo: js.Array[gapiDotClientDotPlusdomainsLib.Anon_Id] = null,
+    kind: java.lang.String = null,
+    `object`: gapiDotClientDotPlusdomainsLib.Anon_ContentObjectType = null,
+    plusoners: gapiDotClientDotPlusdomainsLib.Anon_TotalItems = null,
+    published: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    updated: java.lang.String = null,
+    verb: java.lang.String = null
+  ): Comment = {
+    val __obj = js.Dynamic.literal()
+    if (actor != null) __obj.updateDynamic("actor")(actor)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (plusoners != null) __obj.updateDynamic("plusoners")(plusoners)
+    if (published != null) __obj.updateDynamic("published")(published)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (verb != null) __obj.updateDynamic("verb")(verb)
+    __obj.asInstanceOf[Comment]
+  }
+}
+

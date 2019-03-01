@@ -10,3 +10,13 @@ trait RTCDtlsParameters extends js.Object {
   var role: js.UndefOr[RTCDtlsRole] = js.undefined
 }
 
+object RTCDtlsParameters {
+  @scala.inline
+  def apply(fingerprints: js.Array[RTCDtlsFingerprint] = null, role: RTCDtlsRole = null): RTCDtlsParameters = {
+    val __obj = js.Dynamic.literal()
+    if (fingerprints != null) __obj.updateDynamic("fingerprints")(fingerprints)
+    if (role != null) __obj.updateDynamic("role")(role)
+    __obj.asInstanceOf[RTCDtlsParameters]
+  }
+}
+

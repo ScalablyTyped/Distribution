@@ -30,3 +30,28 @@ trait Query extends js.Object {
   var timezoneCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Query {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    metadata: QueryMetadata = null,
+    params: Parameters = null,
+    queryId: java.lang.String = null,
+    reportDataEndTimeMs: java.lang.String = null,
+    reportDataStartTimeMs: java.lang.String = null,
+    schedule: QuerySchedule = null,
+    timezoneCode: java.lang.String = null
+  ): Query = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (queryId != null) __obj.updateDynamic("queryId")(queryId)
+    if (reportDataEndTimeMs != null) __obj.updateDynamic("reportDataEndTimeMs")(reportDataEndTimeMs)
+    if (reportDataStartTimeMs != null) __obj.updateDynamic("reportDataStartTimeMs")(reportDataStartTimeMs)
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
+    if (timezoneCode != null) __obj.updateDynamic("timezoneCode")(timezoneCode)
+    __obj.asInstanceOf[Query]
+  }
+}
+

@@ -39,3 +39,22 @@ trait ImportVariantsRequest extends js.Object {
   var variantSetId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImportVariantsRequest {
+  @scala.inline
+  def apply(
+    format: java.lang.String = null,
+    infoMergeConfig: stdLib.Record[java.lang.String, java.lang.String] = null,
+    normalizeReferenceNames: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceUris: js.Array[java.lang.String] = null,
+    variantSetId: java.lang.String = null
+  ): ImportVariantsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (infoMergeConfig != null) __obj.updateDynamic("infoMergeConfig")(infoMergeConfig)
+    if (!js.isUndefined(normalizeReferenceNames)) __obj.updateDynamic("normalizeReferenceNames")(normalizeReferenceNames)
+    if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris)
+    if (variantSetId != null) __obj.updateDynamic("variantSetId")(variantSetId)
+    __obj.asInstanceOf[ImportVariantsRequest]
+  }
+}
+

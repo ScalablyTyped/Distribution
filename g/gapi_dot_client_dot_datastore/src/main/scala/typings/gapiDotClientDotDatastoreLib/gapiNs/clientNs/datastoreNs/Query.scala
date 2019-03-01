@@ -49,3 +49,30 @@ trait Query extends js.Object {
   var startCursor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Query {
+  @scala.inline
+  def apply(
+    distinctOn: js.Array[PropertyReference] = null,
+    endCursor: java.lang.String = null,
+    filter: Filter = null,
+    kind: js.Array[KindExpression] = null,
+    limit: scala.Int | scala.Double = null,
+    offset: scala.Int | scala.Double = null,
+    order: js.Array[PropertyOrder] = null,
+    projection: js.Array[Projection] = null,
+    startCursor: java.lang.String = null
+  ): Query = {
+    val __obj = js.Dynamic.literal()
+    if (distinctOn != null) __obj.updateDynamic("distinctOn")(distinctOn)
+    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor)
+    __obj.asInstanceOf[Query]
+  }
+}
+

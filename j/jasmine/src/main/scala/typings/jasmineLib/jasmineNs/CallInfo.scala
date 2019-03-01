@@ -14,3 +14,13 @@ trait CallInfo extends js.Object {
   var returnValue: js.Any
 }
 
+object CallInfo {
+  @scala.inline
+  def apply(args: js.Array[_], `object`: js.Any, returnValue: js.Any): CallInfo = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[CallInfo]
+  }
+}
+

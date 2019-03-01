@@ -16,3 +16,12 @@ trait SetMonitoringServiceRequest extends js.Object {
   var monitoringService: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SetMonitoringServiceRequest {
+  @scala.inline
+  def apply(monitoringService: java.lang.String = null): SetMonitoringServiceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (monitoringService != null) __obj.updateDynamic("monitoringService")(monitoringService)
+    __obj.asInstanceOf[SetMonitoringServiceRequest]
+  }
+}
+

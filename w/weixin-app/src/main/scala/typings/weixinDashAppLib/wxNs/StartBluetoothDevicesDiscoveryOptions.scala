@@ -22,3 +22,24 @@ trait StartBluetoothDevicesDiscoveryOptions
   var services: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object StartBluetoothDevicesDiscoveryOptions {
+  @scala.inline
+  def apply(
+    allowDuplicatesKey: js.UndefOr[scala.Boolean] = js.undefined,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    interval: scala.Int | scala.Double = null,
+    services: js.Array[java.lang.String] = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): StartBluetoothDevicesDiscoveryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDuplicatesKey)) __obj.updateDynamic("allowDuplicatesKey")(allowDuplicatesKey)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (services != null) __obj.updateDynamic("services")(services)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[StartBluetoothDevicesDiscoveryOptions]
+  }
+}
+

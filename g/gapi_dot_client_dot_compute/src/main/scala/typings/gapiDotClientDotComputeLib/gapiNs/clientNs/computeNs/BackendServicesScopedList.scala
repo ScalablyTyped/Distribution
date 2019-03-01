@@ -12,3 +12,16 @@ trait BackendServicesScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object BackendServicesScopedList {
+  @scala.inline
+  def apply(
+    backendServices: js.Array[BackendService] = null,
+    warning: gapiDotClientDotComputeLib.Anon_Code = null
+  ): BackendServicesScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (backendServices != null) __obj.updateDynamic("backendServices")(backendServices)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[BackendServicesScopedList]
+  }
+}
+

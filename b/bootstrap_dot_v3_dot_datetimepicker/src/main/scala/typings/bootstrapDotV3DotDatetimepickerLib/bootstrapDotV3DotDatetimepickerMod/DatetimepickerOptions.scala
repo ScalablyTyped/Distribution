@@ -246,3 +246,95 @@ trait DatetimepickerOptions extends js.Object {
   var widgetPositioning: js.UndefOr[WidgetPositioningOptions] = js.undefined
 }
 
+object DatetimepickerOptions {
+  @scala.inline
+  def apply(
+    allowInputToggle: js.UndefOr[scala.Boolean] = js.undefined,
+    calendarWeeks: js.UndefOr[scala.Boolean] = js.undefined,
+    collapse: js.UndefOr[scala.Boolean] = js.undefined,
+    dayViewHeaderFormat: java.lang.String = null,
+    daysOfWeekDisabled: js.Array[scala.Double] | scala.Boolean = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultDate: scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String = null,
+    disabledDates: scala.Boolean | (js.Array[momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String]) | js.Any = null,
+    disabledHours: scala.Boolean | js.Array[scala.Double] | js.Any = null,
+    disabledTimeIntervals: scala.Boolean | js.Array[js.Array[momentLib.momentMod.momentNs.Moment]] = null,
+    enabledDates: scala.Boolean | (js.Array[momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String]) | js.Any = null,
+    enabledHours: scala.Boolean | js.Array[scala.Double] = null,
+    extraFormats: scala.Boolean | (js.Array[java.lang.String | momentLib.momentMod.momentNs.MomentBuiltinFormat]) = null,
+    focusOnShow: js.UndefOr[scala.Boolean] = js.undefined,
+    format: scala.Boolean | java.lang.String | momentLib.momentMod.momentNs.MomentBuiltinFormat = null,
+    icons: Icons = null,
+    ignoreReadonly: js.UndefOr[scala.Boolean] = js.undefined,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    keepInvalid: js.UndefOr[scala.Boolean] = js.undefined,
+    keepOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    keyBinds: org.scalablytyped.runtime.StringDictionary[
+      js.Function1[
+        /* widget */ scala.Boolean | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.Global.JQuery, 
+        scala.Unit
+      ]
+    ] = null,
+    locale: java.lang.String = null,
+    maxDate: scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String = null,
+    minDate: scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String = null,
+    parseInputDate: InputParser = null,
+    showClear: js.UndefOr[scala.Boolean] = js.undefined,
+    showClose: js.UndefOr[scala.Boolean] = js.undefined,
+    showTodayButton: js.UndefOr[scala.Boolean] = js.undefined,
+    sideBySide: js.UndefOr[scala.Boolean] = js.undefined,
+    stepping: scala.Int | scala.Double = null,
+    timeZone: java.lang.String = null,
+    toolbarPlacement: bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.default | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.top | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.bottom = null,
+    tooltips: Tooltips = null,
+    useCurrent: js.UndefOr[scala.Boolean] = js.undefined,
+    useStrict: js.UndefOr[scala.Boolean] = js.undefined,
+    viewDate: scala.Boolean | momentLib.momentMod.momentNs.Moment | stdLib.Date | java.lang.String = null,
+    viewMode: bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.decades | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.years | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.months | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.days = null,
+    widgetParent: java.lang.String | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.Global.JQuery = null,
+    widgetPositioning: WidgetPositioningOptions = null
+  ): DatetimepickerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowInputToggle)) __obj.updateDynamic("allowInputToggle")(allowInputToggle)
+    if (!js.isUndefined(calendarWeeks)) __obj.updateDynamic("calendarWeeks")(calendarWeeks)
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse)
+    if (dayViewHeaderFormat != null) __obj.updateDynamic("dayViewHeaderFormat")(dayViewHeaderFormat)
+    if (daysOfWeekDisabled != null) __obj.updateDynamic("daysOfWeekDisabled")(daysOfWeekDisabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
+    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
+    if (disabledHours != null) __obj.updateDynamic("disabledHours")(disabledHours.asInstanceOf[js.Any])
+    if (disabledTimeIntervals != null) __obj.updateDynamic("disabledTimeIntervals")(disabledTimeIntervals.asInstanceOf[js.Any])
+    if (enabledDates != null) __obj.updateDynamic("enabledDates")(enabledDates.asInstanceOf[js.Any])
+    if (enabledHours != null) __obj.updateDynamic("enabledHours")(enabledHours.asInstanceOf[js.Any])
+    if (extraFormats != null) __obj.updateDynamic("extraFormats")(extraFormats.asInstanceOf[js.Any])
+    if (!js.isUndefined(focusOnShow)) __obj.updateDynamic("focusOnShow")(focusOnShow)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (!js.isUndefined(ignoreReadonly)) __obj.updateDynamic("ignoreReadonly")(ignoreReadonly)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (!js.isUndefined(keepInvalid)) __obj.updateDynamic("keepInvalid")(keepInvalid)
+    if (!js.isUndefined(keepOpen)) __obj.updateDynamic("keepOpen")(keepOpen)
+    if (keyBinds != null) __obj.updateDynamic("keyBinds")(keyBinds)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (parseInputDate != null) __obj.updateDynamic("parseInputDate")(parseInputDate)
+    if (!js.isUndefined(showClear)) __obj.updateDynamic("showClear")(showClear)
+    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose)
+    if (!js.isUndefined(showTodayButton)) __obj.updateDynamic("showTodayButton")(showTodayButton)
+    if (!js.isUndefined(sideBySide)) __obj.updateDynamic("sideBySide")(sideBySide)
+    if (stepping != null) __obj.updateDynamic("stepping")(stepping.asInstanceOf[js.Any])
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (toolbarPlacement != null) __obj.updateDynamic("toolbarPlacement")(toolbarPlacement.asInstanceOf[js.Any])
+    if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips)
+    if (!js.isUndefined(useCurrent)) __obj.updateDynamic("useCurrent")(useCurrent)
+    if (!js.isUndefined(useStrict)) __obj.updateDynamic("useStrict")(useStrict)
+    if (viewDate != null) __obj.updateDynamic("viewDate")(viewDate.asInstanceOf[js.Any])
+    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
+    if (widgetParent != null) __obj.updateDynamic("widgetParent")(widgetParent.asInstanceOf[js.Any])
+    if (widgetPositioning != null) __obj.updateDynamic("widgetPositioning")(widgetPositioning)
+    __obj.asInstanceOf[DatetimepickerOptions]
+  }
+}
+

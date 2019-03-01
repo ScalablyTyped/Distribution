@@ -10,3 +10,13 @@ trait BranchRef extends js.Object {
   var name: java.lang.String
 }
 
+object BranchRef {
+  @scala.inline
+  def apply(commit: typedDashGithubDashApiLib.distApiDashInterfacesCommitMod.GitRef, name: java.lang.String): BranchRef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[BranchRef]
+  }
+}
+

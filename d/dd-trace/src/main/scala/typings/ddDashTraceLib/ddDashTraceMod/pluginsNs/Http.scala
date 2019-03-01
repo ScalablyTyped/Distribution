@@ -68,3 +68,57 @@ trait Http extends Integration {
   var server: js.UndefOr[HttpServer] = js.undefined
 }
 
+object Http {
+  @scala.inline
+  def apply(
+    blacklist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
+      java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
+    ]) = null,
+    headers: js.Array[java.lang.String] = null,
+    service: java.lang.String = null,
+    validateStatus: js.Function1[/* code */ scala.Double, scala.Boolean] = null,
+    whitelist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
+      java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
+    ]) = null
+  ): Http = {
+    val __obj = js.Dynamic.literal()
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (validateStatus != null) __obj.updateDynamic("validateStatus")(validateStatus)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Http]
+  }
+}
+
+object http {
+  @scala.inline
+  def apply(
+    blacklist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
+      java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
+    ]) = null,
+    client: HttpClient = null,
+    headers: js.Array[java.lang.String] = null,
+    hooks: ddDashTraceLib.Anon_Req = null,
+    server: HttpServer = null,
+    service: java.lang.String = null,
+    splitByDomain: js.UndefOr[scala.Boolean] = js.undefined,
+    validateStatus: js.Function1[/* code */ scala.Double, scala.Boolean] = null,
+    whitelist: java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean]) | (js.Array[
+      java.lang.String | stdLib.RegExp | (js.Function1[/* url */ java.lang.String, scala.Boolean])
+    ]) = null
+  ): http = {
+    val __obj = js.Dynamic.literal()
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
+    if (server != null) __obj.updateDynamic("server")(server)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (!js.isUndefined(splitByDomain)) __obj.updateDynamic("splitByDomain")(splitByDomain)
+    if (validateStatus != null) __obj.updateDynamic("validateStatus")(validateStatus)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
+    __obj.asInstanceOf[http]
+  }
+}
+

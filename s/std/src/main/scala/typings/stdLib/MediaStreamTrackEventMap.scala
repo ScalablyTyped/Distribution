@@ -13,3 +13,22 @@ trait MediaStreamTrackEventMap extends js.Object {
   var unmute: Event
 }
 
+object MediaStreamTrackEventMap {
+  @scala.inline
+  def apply(
+    ended: MediaStreamErrorEvent,
+    isolationchange: Event,
+    mute: Event,
+    overconstrained: MediaStreamErrorEvent,
+    unmute: Event
+  ): MediaStreamTrackEventMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ended")(ended)
+    __obj.updateDynamic("isolationchange")(isolationchange)
+    __obj.updateDynamic("mute")(mute)
+    __obj.updateDynamic("overconstrained")(overconstrained)
+    __obj.updateDynamic("unmute")(unmute)
+    __obj.asInstanceOf[MediaStreamTrackEventMap]
+  }
+}
+

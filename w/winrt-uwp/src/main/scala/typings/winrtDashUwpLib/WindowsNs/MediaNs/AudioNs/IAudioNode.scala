@@ -34,3 +34,32 @@ trait IAudioNode
   def stop(): scala.Unit
 }
 
+object IAudioNode {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    consumeInput: scala.Boolean,
+    disableEffectsByDefinition: js.Function1[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition, scala.Unit],
+    effectDefinitions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition],
+    enableEffectsByDefinition: js.Function1[winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition, scala.Unit],
+    encodingProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingProperties,
+    outgoingGain: scala.Double,
+    reset: js.Function0[scala.Unit],
+    start: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): IAudioNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("consumeInput")(consumeInput)
+    __obj.updateDynamic("disableEffectsByDefinition")(disableEffectsByDefinition)
+    __obj.updateDynamic("effectDefinitions")(effectDefinitions)
+    __obj.updateDynamic("enableEffectsByDefinition")(enableEffectsByDefinition)
+    __obj.updateDynamic("encodingProperties")(encodingProperties)
+    __obj.updateDynamic("outgoingGain")(outgoingGain)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[IAudioNode]
+  }
+}
+

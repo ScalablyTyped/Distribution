@@ -15,3 +15,13 @@ trait SheetsRowsCellsComment extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SheetsRowsCellsComment {
+  @scala.inline
+  def apply(isVisible: js.UndefOr[scala.Boolean] = js.undefined, value: java.lang.String = null): SheetsRowsCellsComment = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SheetsRowsCellsComment]
+  }
+}
+

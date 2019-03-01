@@ -31,3 +31,26 @@ trait PriceRuleDiscountCode
   var usage_count: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PriceRuleDiscountCode {
+  @scala.inline
+  def apply(
+    admin_graphql_api_id: java.lang.String = null,
+    code: java.lang.String = null,
+    created_at: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    price_rule_id: scala.Int | scala.Double = null,
+    updated_at: java.lang.String = null,
+    usage_count: scala.Int | scala.Double = null
+  ): PriceRuleDiscountCode = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (price_rule_id != null) __obj.updateDynamic("price_rule_id")(price_rule_id.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (usage_count != null) __obj.updateDynamic("usage_count")(usage_count.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PriceRuleDiscountCode]
+  }
+}
+

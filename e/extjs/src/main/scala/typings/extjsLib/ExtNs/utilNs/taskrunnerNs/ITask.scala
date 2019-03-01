@@ -22,3 +22,22 @@ trait ITask extends js.Object {
   var stop: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object ITask {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit] = null,
+    fireOnStart: js.UndefOr[scala.Boolean] = js.undefined,
+    restart: js.Function1[/* interval */ js.UndefOr[scala.Double], scala.Unit] = null,
+    start: js.Function1[/* interval */ js.UndefOr[scala.Double], scala.Unit] = null,
+    stop: js.Function0[scala.Unit] = null
+  ): ITask = {
+    val __obj = js.Dynamic.literal()
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(fireOnStart)) __obj.updateDynamic("fireOnStart")(fireOnStart)
+    if (restart != null) __obj.updateDynamic("restart")(restart)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[ITask]
+  }
+}
+

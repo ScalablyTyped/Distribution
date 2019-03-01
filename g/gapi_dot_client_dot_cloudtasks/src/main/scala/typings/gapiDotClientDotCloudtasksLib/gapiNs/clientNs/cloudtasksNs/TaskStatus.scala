@@ -45,3 +45,20 @@ trait TaskStatus extends js.Object {
   var lastAttemptStatus: js.UndefOr[AttemptStatus] = js.undefined
 }
 
+object TaskStatus {
+  @scala.inline
+  def apply(
+    attemptDispatchCount: java.lang.String = null,
+    attemptResponseCount: java.lang.String = null,
+    firstAttemptStatus: AttemptStatus = null,
+    lastAttemptStatus: AttemptStatus = null
+  ): TaskStatus = {
+    val __obj = js.Dynamic.literal()
+    if (attemptDispatchCount != null) __obj.updateDynamic("attemptDispatchCount")(attemptDispatchCount)
+    if (attemptResponseCount != null) __obj.updateDynamic("attemptResponseCount")(attemptResponseCount)
+    if (firstAttemptStatus != null) __obj.updateDynamic("firstAttemptStatus")(firstAttemptStatus)
+    if (lastAttemptStatus != null) __obj.updateDynamic("lastAttemptStatus")(lastAttemptStatus)
+    __obj.asInstanceOf[TaskStatus]
+  }
+}
+

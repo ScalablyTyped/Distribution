@@ -13,3 +13,12 @@ trait WhereGeometryOptions extends js.Object {
   var `type`: java.lang.String
 }
 
+object WhereGeometryOptions {
+  @scala.inline
+  def apply(coordinates: js.Array[js.Array[scala.Double] | scala.Double], `type`: java.lang.String): WhereGeometryOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("coordinates")(coordinates)
+    __obj.asInstanceOf[WhereGeometryOptions]
+  }
+}
+

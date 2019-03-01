@@ -37,3 +37,13 @@ trait NodeInsertedEventArgs extends js.Object {
   var newNode: CustomXmlNode
 }
 
+object NodeInsertedEventArgs {
+  @scala.inline
+  def apply(isUndoRedo: scala.Boolean, newNode: CustomXmlNode): NodeInsertedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isUndoRedo")(isUndoRedo)
+    __obj.updateDynamic("newNode")(newNode)
+    __obj.asInstanceOf[NodeInsertedEventArgs]
+  }
+}
+

@@ -42,3 +42,24 @@ trait _InitializeParams extends js.Object {
   ] = js.undefined
 }
 
+object _InitializeParams {
+  @scala.inline
+  def apply(
+    capabilities: ClientCapabilities,
+    initializationOptions: js.Any = null,
+    processId: scala.Int | scala.Double = null,
+    rootPath: java.lang.String = null,
+    rootUri: java.lang.String = null,
+    trace: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibStrings.off | vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibStrings.messages | vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolLibStrings.verbose = null
+  ): _InitializeParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("capabilities")(capabilities)
+    if (initializationOptions != null) __obj.updateDynamic("initializationOptions")(initializationOptions)
+    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath)
+    if (rootUri != null) __obj.updateDynamic("rootUri")(rootUri)
+    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_InitializeParams]
+  }
+}
+

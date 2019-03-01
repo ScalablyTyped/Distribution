@@ -11,3 +11,12 @@ trait Options extends js.Object {
   var inPlace: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(inPlace: js.UndefOr[scala.Boolean] = js.undefined): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(inPlace)) __obj.updateDynamic("inPlace")(inPlace)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Anon_USERDATAPATH extends js.Object {
   var USER_DATA_PATH: java.lang.String
 }
 
+object Anon_USERDATAPATH {
+  @scala.inline
+  def apply(USER_DATA_PATH: java.lang.String): Anon_USERDATAPATH = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("USER_DATA_PATH")(USER_DATA_PATH)
+    __obj.asInstanceOf[Anon_USERDATAPATH]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Request extends js.Object {
   var params: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object Request {
+  @scala.inline
+  def apply(params: org.scalablytyped.runtime.StringDictionary[java.lang.String], body: js.Any = null): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("params")(params)
+    if (body != null) __obj.updateDynamic("body")(body)
+    __obj.asInstanceOf[Request]
+  }
+}
+

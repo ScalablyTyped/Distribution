@@ -21,3 +21,18 @@ trait AddMatterPermissionsRequest extends js.Object {
   var sendEmails: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AddMatterPermissionsRequest {
+  @scala.inline
+  def apply(
+    ccMe: js.UndefOr[scala.Boolean] = js.undefined,
+    matterPermission: MatterPermission = null,
+    sendEmails: js.UndefOr[scala.Boolean] = js.undefined
+  ): AddMatterPermissionsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ccMe)) __obj.updateDynamic("ccMe")(ccMe)
+    if (matterPermission != null) __obj.updateDynamic("matterPermission")(matterPermission)
+    if (!js.isUndefined(sendEmails)) __obj.updateDynamic("sendEmails")(sendEmails)
+    __obj.asInstanceOf[AddMatterPermissionsRequest]
+  }
+}
+

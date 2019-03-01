@@ -224,6 +224,8 @@ object RDSDataServiceNs extends js.Object {
     var structValue: js.UndefOr[StructValue] = js.undefined
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Arn = java.lang.String
   type ArrayValues = js.Array[Value]
@@ -241,6 +243,6 @@ object RDSDataServiceNs extends js.Object {
   type SqlStatementResults = js.Array[SqlStatementResult]
   type String = java.lang.String
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsRdsdataserviceMod.Blob | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-08-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

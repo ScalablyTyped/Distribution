@@ -13,3 +13,13 @@ trait DescribeBudgetPerformanceHistoryResponse extends js.Object {
   var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 
+object DescribeBudgetPerformanceHistoryResponse {
+  @scala.inline
+  def apply(BudgetPerformanceHistory: BudgetPerformanceHistory = null, NextToken: GenericString = null): DescribeBudgetPerformanceHistoryResponse = {
+    val __obj = js.Dynamic.literal()
+    if (BudgetPerformanceHistory != null) __obj.updateDynamic("BudgetPerformanceHistory")(BudgetPerformanceHistory)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    __obj.asInstanceOf[DescribeBudgetPerformanceHistoryResponse]
+  }
+}
+

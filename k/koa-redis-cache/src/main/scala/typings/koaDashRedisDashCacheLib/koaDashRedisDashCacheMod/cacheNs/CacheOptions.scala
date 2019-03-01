@@ -45,3 +45,28 @@ trait CacheOptions extends js.Object {
   var routes: js.UndefOr[js.Array[RouteOptions] | js.Array[java.lang.String]] = js.undefined
 }
 
+object CacheOptions {
+  @scala.inline
+  def apply(
+    exclude: js.Array[java.lang.String] = null,
+    expire: scala.Int | scala.Double = null,
+    maxLength: scala.Int | scala.Double = null,
+    onerror: koaDashRedisDashCacheLib.onErrorCallback = null,
+    passParam: java.lang.String = null,
+    prefix: java.lang.String | koaDashRedisDashCacheLib.getPrefixCallback = null,
+    redis: RedisOptions = null,
+    routes: js.Array[RouteOptions] | js.Array[java.lang.String] = null
+  ): CacheOptions = {
+    val __obj = js.Dynamic.literal()
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (passParam != null) __obj.updateDynamic("passParam")(passParam)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (redis != null) __obj.updateDynamic("redis")(redis)
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CacheOptions]
+  }
+}
+

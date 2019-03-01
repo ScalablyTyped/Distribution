@@ -20,3 +20,24 @@ trait ProxyRules extends js.Object {
   var singleProxy: js.UndefOr[ProxyServer] = js.undefined
 }
 
+object ProxyRules {
+  @scala.inline
+  def apply(
+    bypassList: js.Array[java.lang.String] = null,
+    fallbackProxy: ProxyServer = null,
+    proxyForFtp: ProxyServer = null,
+    proxyForHttp: ProxyServer = null,
+    proxyForHttps: ProxyServer = null,
+    singleProxy: ProxyServer = null
+  ): ProxyRules = {
+    val __obj = js.Dynamic.literal()
+    if (bypassList != null) __obj.updateDynamic("bypassList")(bypassList)
+    if (fallbackProxy != null) __obj.updateDynamic("fallbackProxy")(fallbackProxy)
+    if (proxyForFtp != null) __obj.updateDynamic("proxyForFtp")(proxyForFtp)
+    if (proxyForHttp != null) __obj.updateDynamic("proxyForHttp")(proxyForHttp)
+    if (proxyForHttps != null) __obj.updateDynamic("proxyForHttps")(proxyForHttps)
+    if (singleProxy != null) __obj.updateDynamic("singleProxy")(singleProxy)
+    __obj.asInstanceOf[ProxyRules]
+  }
+}
+

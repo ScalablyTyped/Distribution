@@ -112,3 +112,89 @@ trait ICompositeElementLite extends IBase {
   ] = js.undefined
 }
 
+object ICompositeElementLite {
+  @scala.inline
+  def apply(
+    add: js.Function1[/* els */ js.UndefOr[js.Any], extjsLib.ExtNs.domNs.ICompositeElement] = null,
+    alias: Array = null,
+    alternateClassName: js.Any = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    clear: js.Function1[/* removeDom */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    config: js.Any = null,
+    contains: js.Function1[/* el */ js.UndefOr[js.Any], scala.Boolean] = null,
+    each: js.Function2[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      extjsLib.ExtNs.domNs.ICompositeElement
+    ] = null,
+    elements: Array = null,
+    extend: java.lang.String = null,
+    fill: js.Function1[/* els */ js.UndefOr[js.Any], extjsLib.ExtNs.domNs.ICompositeElement] = null,
+    filter: js.Function1[/* selector */ js.UndefOr[js.Any], extjsLib.ExtNs.domNs.ICompositeElement] = null,
+    first: js.Function0[extjsLib.ExtNs.domNs.IElement] = null,
+    getCount: js.Function0[scala.Double] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    indexOf: js.Function1[/* el */ js.UndefOr[js.Any], scala.Double] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], ICompositeElementLite] = null,
+    isComposite: js.UndefOr[scala.Boolean] = js.undefined,
+    item: js.Function1[/* index */ js.UndefOr[scala.Double], extjsLib.ExtNs.domNs.IElement] = null,
+    last: js.Function0[extjsLib.ExtNs.domNs.IElement] = null,
+    mixins: js.Any = null,
+    removeElement: js.Function2[
+      /* el */ js.UndefOr[js.Any], 
+      /* removeDom */ js.UndefOr[scala.Boolean], 
+      extjsLib.ExtNs.domNs.ICompositeElement
+    ] = null,
+    replaceElement: js.Function3[
+      /* el */ js.UndefOr[js.Any], 
+      /* replacement */ js.UndefOr[js.Any], 
+      /* domReplace */ js.UndefOr[scala.Boolean], 
+      extjsLib.ExtNs.domNs.ICompositeElement
+    ] = null,
+    requires: Array = null,
+    self: IClass = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    slice: js.Function2[/* start */ js.UndefOr[scala.Double], /* end */ js.UndefOr[scala.Double], Array] = null,
+    statics: js.Any = null,
+    uses: Array = null
+  ): ICompositeElementLite = {
+    val __obj = js.Dynamic.literal()
+    if (add != null) __obj.updateDynamic("add")(add)
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (contains != null) __obj.updateDynamic("contains")(contains)
+    if (each != null) __obj.updateDynamic("each")(each)
+    if (elements != null) __obj.updateDynamic("elements")(elements)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (first != null) __obj.updateDynamic("first")(first)
+    if (getCount != null) __obj.updateDynamic("getCount")(getCount)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (!js.isUndefined(isComposite)) __obj.updateDynamic("isComposite")(isComposite)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (last != null) __obj.updateDynamic("last")(last)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (removeElement != null) __obj.updateDynamic("removeElement")(removeElement)
+    if (replaceElement != null) __obj.updateDynamic("replaceElement")(replaceElement)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (slice != null) __obj.updateDynamic("slice")(slice)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[ICompositeElementLite]
+  }
+}
+

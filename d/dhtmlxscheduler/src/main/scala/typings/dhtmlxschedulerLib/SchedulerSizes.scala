@@ -64,3 +64,40 @@ trait SchedulerSizes extends js.Object {
   var scroll_width: scala.Double
 }
 
+object SchedulerSizes {
+  @scala.inline
+  def apply(
+    bar_height: scala.Double,
+    editor_width: scala.Double,
+    lightbox_additional_height: scala.Double,
+    map_date_width: scala.Double,
+    map_description_width: scala.Double,
+    margin_left: scala.Double,
+    margin_top: scala.Double,
+    menu_width: scala.Double,
+    min_event_height: scala.Double,
+    month_scale_height: scala.Double,
+    nav_height: scala.Double,
+    scale_height: scala.Double,
+    scale_width: scala.Double,
+    scroll_width: scala.Double
+  ): SchedulerSizes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bar_height")(bar_height)
+    __obj.updateDynamic("editor_width")(editor_width)
+    __obj.updateDynamic("lightbox_additional_height")(lightbox_additional_height)
+    __obj.updateDynamic("map_date_width")(map_date_width)
+    __obj.updateDynamic("map_description_width")(map_description_width)
+    __obj.updateDynamic("margin_left")(margin_left)
+    __obj.updateDynamic("margin_top")(margin_top)
+    __obj.updateDynamic("menu_width")(menu_width)
+    __obj.updateDynamic("min_event_height")(min_event_height)
+    __obj.updateDynamic("month_scale_height")(month_scale_height)
+    __obj.updateDynamic("nav_height")(nav_height)
+    __obj.updateDynamic("scale_height")(scale_height)
+    __obj.updateDynamic("scale_width")(scale_width)
+    __obj.updateDynamic("scroll_width")(scroll_width)
+    __obj.asInstanceOf[SchedulerSizes]
+  }
+}
+

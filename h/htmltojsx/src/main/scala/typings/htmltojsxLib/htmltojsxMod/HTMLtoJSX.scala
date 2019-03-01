@@ -9,3 +9,12 @@ trait HTMLtoJSX extends js.Object {
   def convert(html: java.lang.String): java.lang.String
 }
 
+object HTMLtoJSX {
+  @scala.inline
+  def apply(convert: js.Function1[java.lang.String, java.lang.String]): HTMLtoJSX = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("convert")(convert)
+    __obj.asInstanceOf[HTMLtoJSX]
+  }
+}
+

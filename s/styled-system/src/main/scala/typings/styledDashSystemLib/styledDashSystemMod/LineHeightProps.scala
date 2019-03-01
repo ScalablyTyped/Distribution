@@ -17,3 +17,12 @@ trait LineHeightProps[TLength] extends js.Object {
   var lineHeight: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.LineHeightProperty[TLength]]] = js.undefined
 }
 
+object LineHeightProps {
+  @scala.inline
+  def apply[TLength](lineHeight: ResponsiveValue[csstypeLib.csstypeMod.LineHeightProperty[TLength]] = null): LineHeightProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LineHeightProps[TLength]]
+  }
+}
+

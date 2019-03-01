@@ -74,3 +74,53 @@ trait IOrder
   var updated: scala.Double
 }
 
+object IOrder {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    amount_returned: scala.Double,
+    application: java.lang.String,
+    application_fee: scala.Double,
+    charge: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    created: scala.Double,
+    currency: java.lang.String,
+    customer: java.lang.String | stripeLib.stripeMod.StripeNs.customersNs.ICustomer,
+    email: java.lang.String,
+    external_coupon_code: java.lang.String,
+    id: java.lang.String,
+    items: js.Array[IOrderItem],
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.order,
+    selected_shipping_method: java.lang.String,
+    shipping: stripeLib.stripeMod.StripeNs.IShippingInformation,
+    shipping_methods: js.Array[IShippingMethod],
+    status: OrderStatus,
+    status_transitions: stripeLib.Anon_Canceled,
+    updated: scala.Double
+  ): IOrder = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("amount_returned")(amount_returned)
+    __obj.updateDynamic("application")(application)
+    __obj.updateDynamic("application_fee")(application_fee)
+    __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("external_coupon_code")(external_coupon_code)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("selected_shipping_method")(selected_shipping_method)
+    __obj.updateDynamic("shipping")(shipping)
+    __obj.updateDynamic("shipping_methods")(shipping_methods)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("status_transitions")(status_transitions)
+    __obj.updateDynamic("updated")(updated)
+    __obj.asInstanceOf[IOrder]
+  }
+}
+

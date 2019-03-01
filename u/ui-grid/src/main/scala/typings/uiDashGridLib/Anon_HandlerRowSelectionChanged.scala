@@ -28,3 +28,24 @@ trait Anon_HandlerRowSelectionChanged[TEntity] extends js.Object {
   ): scala.Unit
 }
 
+object Anon_HandlerRowSelectionChanged {
+  @scala.inline
+  def apply[TEntity](
+    rowSelectionChanged: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.selectionNs.rowSelectionChangedHandler[TEntity], 
+      scala.Unit
+    ],
+    rowSelectionChangedBatch: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.selectionNs.rowSelectionChangedBatchHandler[TEntity], 
+      scala.Unit
+    ]
+  ): Anon_HandlerRowSelectionChanged[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rowSelectionChanged")(rowSelectionChanged)
+    __obj.updateDynamic("rowSelectionChangedBatch")(rowSelectionChangedBatch)
+    __obj.asInstanceOf[Anon_HandlerRowSelectionChanged[TEntity]]
+  }
+}
+

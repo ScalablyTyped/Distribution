@@ -17,3 +17,30 @@ trait FileCoverage extends js.Object {
   def toSummary(): CoverageSummary
 }
 
+object FileCoverage {
+  @scala.inline
+  def apply(
+    computeBranchTotals: js.Function0[FileCoverageTotal],
+    computeSimpleTotals: js.Function1[java.lang.String, FileCoverageTotal],
+    getBranchCoverageByLine: js.Function0[js.Object],
+    getLineCoverage: js.Function0[js.Object],
+    getUncoveredLines: js.Function0[js.Array[scala.Double]],
+    merge: js.Function1[js.Object, scala.Unit],
+    resetHits: js.Function0[scala.Unit],
+    toJSON: js.Function0[js.Object],
+    toSummary: js.Function0[CoverageSummary]
+  ): FileCoverage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("computeBranchTotals")(computeBranchTotals)
+    __obj.updateDynamic("computeSimpleTotals")(computeSimpleTotals)
+    __obj.updateDynamic("getBranchCoverageByLine")(getBranchCoverageByLine)
+    __obj.updateDynamic("getLineCoverage")(getLineCoverage)
+    __obj.updateDynamic("getUncoveredLines")(getUncoveredLines)
+    __obj.updateDynamic("merge")(merge)
+    __obj.updateDynamic("resetHits")(resetHits)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSummary")(toSummary)
+    __obj.asInstanceOf[FileCoverage]
+  }
+}
+

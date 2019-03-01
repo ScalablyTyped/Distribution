@@ -28,3 +28,46 @@ trait Color extends js.Object {
   var yellowBright: CodePair
 }
 
+object Color {
+  @scala.inline
+  def apply(
+    black: CodePair,
+    blue: CodePair,
+    blueBright: CodePair,
+    cyan: CodePair,
+    cyanBright: CodePair,
+    gray: CodePair,
+    green: CodePair,
+    greenBright: CodePair,
+    grey: CodePair,
+    magenta: CodePair,
+    magentaBright: CodePair,
+    red: CodePair,
+    redBright: CodePair,
+    white: CodePair,
+    whiteBright: CodePair,
+    yellow: CodePair,
+    yellowBright: CodePair
+  ): Color = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("black")(black)
+    __obj.updateDynamic("blue")(blue)
+    __obj.updateDynamic("blueBright")(blueBright)
+    __obj.updateDynamic("cyan")(cyan)
+    __obj.updateDynamic("cyanBright")(cyanBright)
+    __obj.updateDynamic("gray")(gray)
+    __obj.updateDynamic("green")(green)
+    __obj.updateDynamic("greenBright")(greenBright)
+    __obj.updateDynamic("grey")(grey)
+    __obj.updateDynamic("magenta")(magenta)
+    __obj.updateDynamic("magentaBright")(magentaBright)
+    __obj.updateDynamic("red")(red)
+    __obj.updateDynamic("redBright")(redBright)
+    __obj.updateDynamic("white")(white)
+    __obj.updateDynamic("whiteBright")(whiteBright)
+    __obj.updateDynamic("yellow")(yellow)
+    __obj.updateDynamic("yellowBright")(yellowBright)
+    __obj.asInstanceOf[Color]
+  }
+}
+

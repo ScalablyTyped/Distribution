@@ -13,3 +13,22 @@ trait Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY extends js.Ob
   var rectangleSouthwestInMeters: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Cartesian2] = js.undefined
 }
 
+object Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY {
+  @scala.inline
+  def apply(
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    numberOfLevelZeroTilesX: scala.Int | scala.Double = null,
+    numberOfLevelZeroTilesY: scala.Int | scala.Double = null,
+    rectangleNortheastInMeters: cesiumLib.cesiumMod.CesiumNs.Cartesian2 = null,
+    rectangleSouthwestInMeters: cesiumLib.cesiumMod.CesiumNs.Cartesian2 = null
+  ): Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY = {
+    val __obj = js.Dynamic.literal()
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (numberOfLevelZeroTilesX != null) __obj.updateDynamic("numberOfLevelZeroTilesX")(numberOfLevelZeroTilesX.asInstanceOf[js.Any])
+    if (numberOfLevelZeroTilesY != null) __obj.updateDynamic("numberOfLevelZeroTilesY")(numberOfLevelZeroTilesY.asInstanceOf[js.Any])
+    if (rectangleNortheastInMeters != null) __obj.updateDynamic("rectangleNortheastInMeters")(rectangleNortheastInMeters)
+    if (rectangleSouthwestInMeters != null) __obj.updateDynamic("rectangleSouthwestInMeters")(rectangleSouthwestInMeters)
+    __obj.asInstanceOf[Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY]
+  }
+}
+

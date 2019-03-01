@@ -10,3 +10,13 @@ trait RequestMessage extends js.Object {
   var properties: rabbitDotJsLib.Anon_CorrelationId
 }
 
+object RequestMessage {
+  @scala.inline
+  def apply(content: js.Any, properties: rabbitDotJsLib.Anon_CorrelationId): RequestMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[RequestMessage]
+  }
+}
+

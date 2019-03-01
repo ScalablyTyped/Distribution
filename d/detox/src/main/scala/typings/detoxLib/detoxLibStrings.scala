@@ -10,37 +10,47 @@ object detoxLibStrings {
   sealed trait android extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends detoxLib.detoxMod.Global.DetoxNs.Direction
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends detoxLib.detoxMod.Global.DetoxNs.Direction
   
   @js.native
-  sealed trait fast extends js.Object
+  sealed trait fast
+    extends detoxLib.detoxMod.Global.DetoxNs.Speed
   
   @js.native
   sealed trait ios extends js.Object
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape
+    extends detoxLib.detoxMod.Global.DetoxNs.Orientation
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends detoxLib.detoxMod.Global.DetoxNs.Direction
   
   @js.native
-  sealed trait portrait extends js.Object
+  sealed trait portrait
+    extends detoxLib.detoxMod.Global.DetoxNs.Orientation
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends detoxLib.detoxMod.Global.DetoxNs.Direction
   
   @js.native
-  sealed trait slow extends js.Object
+  sealed trait slow
+    extends detoxLib.detoxMod.Global.DetoxNs.Speed
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends detoxLib.detoxMod.Global.DetoxNs.Direction
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends detoxLib.detoxMod.Global.DetoxNs.Direction
   
   @scala.inline
   def android: android = "android".asInstanceOf[android]

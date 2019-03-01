@@ -18,3 +18,20 @@ trait UpdateFilter extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object UpdateFilter {
+  @scala.inline
+  def apply(
+    properties: js.Array[UpdatePropertyName] = null,
+    tabId: scala.Int | scala.Double = null,
+    urls: js.Array[java.lang.String] = null,
+    windowId: scala.Int | scala.Double = null
+  ): UpdateFilter = {
+    val __obj = js.Dynamic.literal()
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UpdateFilter]
+  }
+}
+

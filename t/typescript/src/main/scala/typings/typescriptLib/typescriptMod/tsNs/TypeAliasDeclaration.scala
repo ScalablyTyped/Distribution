@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TypeAliasDeclaration
   extends DeclarationStatement
-     with JSDocContainer {
+     with JSDocContainer
+     with DeclarationWithTypeParameterChildren
+     with HasType
+     with _HasJSDoc {
   @JSName("name")
   var name_TypeAliasDeclaration: Identifier = js.native
   var `type`: TypeNode = js.native

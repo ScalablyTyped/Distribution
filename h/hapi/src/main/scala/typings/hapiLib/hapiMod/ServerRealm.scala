@@ -20,3 +20,24 @@ trait ServerRealm extends js.Object {
   var settings: hapiLib.Anon_Bind
 }
 
+object ServerRealm {
+  @scala.inline
+  def apply(
+    modifiers: hapiLib.Anon_Route,
+    plugin: java.lang.String,
+    pluginOptions: js.Object,
+    plugins: PluginsStates,
+    settings: hapiLib.Anon_Bind,
+    parent: ServerRealm = null
+  ): ServerRealm = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("modifiers")(modifiers)
+    __obj.updateDynamic("plugin")(plugin)
+    __obj.updateDynamic("pluginOptions")(pluginOptions)
+    __obj.updateDynamic("plugins")(plugins)
+    __obj.updateDynamic("settings")(settings)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[ServerRealm]
+  }
+}
+

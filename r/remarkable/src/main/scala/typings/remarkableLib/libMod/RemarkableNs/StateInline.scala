@@ -34,3 +34,42 @@ trait StateInline extends js.Object {
   def pushPending(): scala.Unit
 }
 
+object StateInline {
+  @scala.inline
+  def apply(
+    env: Env,
+    isInLabel: scala.Boolean,
+    labelUnmatchedScopes: scala.Double,
+    level: scala.Double,
+    linkContent: java.lang.String,
+    linkLevel: scala.Double,
+    parser: remarkableLib.libMod.ParserInline,
+    pending: java.lang.String,
+    pendingLevel: scala.Double,
+    pos: scala.Double,
+    posMax: scala.Double,
+    push: js.Function1[ContentToken, scala.Unit],
+    pushPending: js.Function0[scala.Unit],
+    src: java.lang.String,
+    tokens: js.Array[ContentToken]
+  ): StateInline = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("isInLabel")(isInLabel)
+    __obj.updateDynamic("labelUnmatchedScopes")(labelUnmatchedScopes)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("linkContent")(linkContent)
+    __obj.updateDynamic("linkLevel")(linkLevel)
+    __obj.updateDynamic("parser")(parser)
+    __obj.updateDynamic("pending")(pending)
+    __obj.updateDynamic("pendingLevel")(pendingLevel)
+    __obj.updateDynamic("pos")(pos)
+    __obj.updateDynamic("posMax")(posMax)
+    __obj.updateDynamic("push")(push)
+    __obj.updateDynamic("pushPending")(pushPending)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("tokens")(tokens)
+    __obj.asInstanceOf[StateInline]
+  }
+}
+

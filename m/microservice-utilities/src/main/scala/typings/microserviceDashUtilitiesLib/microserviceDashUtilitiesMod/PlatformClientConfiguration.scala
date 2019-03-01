@@ -9,3 +9,12 @@ trait PlatformClientConfiguration extends js.Object {
   var client: js.Object
 }
 
+object PlatformClientConfiguration {
+  @scala.inline
+  def apply(client: js.Object): PlatformClientConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.asInstanceOf[PlatformClientConfiguration]
+  }
+}
+

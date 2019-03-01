@@ -11,13 +11,13 @@ package object svgjsNs {
   // line.js
   type ArrayPoint = js.Array[scala.Double]
   type ColorAlias = java.lang.String | ColorLike
-  type MatrixAlias = MatrixLike | js.Array[scala.Double] | Element | java.lang.String
+  type MatrixAlias = _MatrixAlias | js.Array[scala.Double] | java.lang.String
   type NumberAlias = _Number | scala.Double | java.lang.String
-  type ParentTypeAlias = java.lang.String | Doc | Nested | G
+  type ParentTypeAlias = _ParentTypeAlias | java.lang.String
   type PathArrayAlias = PathArray | (js.Array[java.lang.String | scala.Double]) | js.Array[PathArrayPoint] | java.lang.String
   // path.js
   type PathArrayPoint = js.Array[scala.Double | java.lang.String]
   type PointArrayAlias = js.Array[ArrayPoint] | js.Array[scala.Double] | PointArray | java.lang.String
   // viewbox.js
-  type ViewBoxAlias = ViewBoxLike | js.Array[scala.Double] | java.lang.String | Element
+  type ViewBoxAlias = _ViewBoxAlias | js.Array[scala.Double] | java.lang.String
 }

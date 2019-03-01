@@ -81,3 +81,41 @@ trait Options extends js.Object {
   def validate(decoded: js.Object, request: hapiLib.hapiMod.Request, tk: hapiLib.hapiMod.ResponseToolkit): ValidationResult | js.Promise[ValidationResult]
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    validate: js.Function3[
+      js.Object, 
+      hapiLib.hapiMod.Request, 
+      hapiLib.hapiMod.ResponseToolkit, 
+      ValidationResult | js.Promise[ValidationResult]
+    ],
+    complete: js.UndefOr[scala.Boolean] = js.undefined,
+    cookieKey: java.lang.String | scala.Boolean = null,
+    errorFunc: js.Function1[/* ctx */ ErrorContext, ErrorContext] = null,
+    headerKey: java.lang.String | scala.Boolean = null,
+    key: java.lang.String | js.Array[java.lang.String] | js.Promise[hapiDashAuthDashJwt2Lib.Anon_ExtraInfo] = null,
+    responseFunc: js.Function2[
+      /* request */ hapiLib.hapiMod.Request, 
+      /* reply */ js.Function2[/* err */ js.Any, /* response */ hapiLib.hapiMod.ResponseObject, scala.Unit], 
+      scala.Unit
+    ] = null,
+    tokenType: java.lang.String = null,
+    urlKey: java.lang.String | scala.Boolean = null,
+    verifyOptions: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("validate")(validate)
+    if (!js.isUndefined(complete)) __obj.updateDynamic("complete")(complete)
+    if (cookieKey != null) __obj.updateDynamic("cookieKey")(cookieKey.asInstanceOf[js.Any])
+    if (errorFunc != null) __obj.updateDynamic("errorFunc")(errorFunc)
+    if (headerKey != null) __obj.updateDynamic("headerKey")(headerKey.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (responseFunc != null) __obj.updateDynamic("responseFunc")(responseFunc)
+    if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType)
+    if (urlKey != null) __obj.updateDynamic("urlKey")(urlKey.asInstanceOf[js.Any])
+    if (verifyOptions != null) __obj.updateDynamic("verifyOptions")(verifyOptions)
+    __obj.asInstanceOf[Options]
+  }
+}
+

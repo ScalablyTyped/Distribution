@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched if error happened during instant message modification
 		*/
-trait MessageNotModified extends js.Object {
+trait MessageNotModified
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	Message new content
   			*/
@@ -21,5 +22,16 @@ trait MessageNotModified extends js.Object {
   			*	User id (of the user to whom the message was sent)
   			*/
   var to: java.lang.String
+}
+
+object MessageNotModified {
+  @scala.inline
+  def apply(code: scala.Double, message_id: java.lang.String, to: java.lang.String): MessageNotModified = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("message_id")(message_id)
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[MessageNotModified]
+  }
 }
 

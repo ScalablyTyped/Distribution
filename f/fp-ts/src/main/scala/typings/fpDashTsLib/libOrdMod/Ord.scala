@@ -10,3 +10,16 @@ trait Ord[A]
   def compare(x: A, y: A): fpDashTsLib.libOrderingMod.Ordering
 }
 
+object Ord {
+  @scala.inline
+  def apply[A](
+    compare: js.Function2[A, A, fpDashTsLib.libOrderingMod.Ordering],
+    equals: js.Function2[A, A, scala.Boolean]
+  ): Ord[A] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compare")(compare)
+    __obj.updateDynamic("equals")(equals)
+    __obj.asInstanceOf[Ord[A]]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_Command extends js.Object {
   val Enabled: js.Any
 }
 
+object Anon_Command {
+  @scala.inline
+  def apply(Command: js.Any, Enabled: js.Any): Anon_Command = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Command")(Command)
+    __obj.updateDynamic("Enabled")(Enabled)
+    __obj.asInstanceOf[Anon_Command]
+  }
+}
+

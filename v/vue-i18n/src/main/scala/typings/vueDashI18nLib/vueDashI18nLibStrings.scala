@@ -7,16 +7,21 @@ import scala.scalajs.js.annotation._
 
 object vueDashI18nLibStrings {
   @js.native
-  sealed trait `2-digit` extends js.Object
+  sealed trait `2-digit`
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeDigital
   
   @js.native
-  sealed trait basic extends js.Object
+  sealed trait basic
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormatMatcher
   
   @js.native
-  sealed trait `best-fit` extends js.Object
+  sealed trait `best-fit`
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormatMatcher
+       with vueDashI18nLib.vueDashI18nMod.VueI18nNs.LocaleMatcher
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait code
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.CurrencyDisplay
   
   @js.native
   sealed trait currency extends js.Object
@@ -25,28 +30,35 @@ object vueDashI18nLibStrings {
   sealed trait decimal extends js.Object
   
   @js.native
-  sealed trait long extends js.Object
+  sealed trait long
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeHumanReadable
   
   @js.native
-  sealed trait lookup extends js.Object
+  sealed trait lookup
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.LocaleMatcher
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.CurrencyDisplay
   
   @js.native
-  sealed trait narrow extends js.Object
+  sealed trait narrow
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeHumanReadable
   
   @js.native
-  sealed trait numeric extends js.Object
+  sealed trait numeric
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeDigital
   
   @js.native
   sealed trait percent extends js.Object
   
   @js.native
-  sealed trait short extends js.Object
+  sealed trait short
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeHumanReadable
   
   @js.native
-  sealed trait symbol extends js.Object
+  sealed trait symbol
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.CurrencyDisplay
   
   @scala.inline
   def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]

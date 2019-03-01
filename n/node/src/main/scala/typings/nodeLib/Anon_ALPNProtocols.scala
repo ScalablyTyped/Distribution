@@ -76,3 +76,36 @@ trait Anon_ALPNProtocols extends js.Object {
   var session: js.UndefOr[Buffer] = js.undefined
 }
 
+object Anon_ALPNProtocols {
+  @scala.inline
+  def apply(
+    ALPNProtocols: js.Array[java.lang.String] | js.Array[Buffer] | js.Array[stdLib.Uint8Array] | Buffer | stdLib.Uint8Array = null,
+    NPNProtocols: js.Array[java.lang.String] | js.Array[Buffer] | js.Array[stdLib.Uint8Array] | Buffer | stdLib.Uint8Array = null,
+    SNICallback: js.Function2[
+      /* servername */ java.lang.String, 
+      /* cb */ js.Function2[/* err */ Error | scala.Null, /* ctx */ nodeLib.tlsMod.SecureContext, scala.Unit], 
+      scala.Unit
+    ] = null,
+    isServer: js.UndefOr[scala.Boolean] = js.undefined,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    requestCert: js.UndefOr[scala.Boolean] = js.undefined,
+    requestOCSP: js.UndefOr[scala.Boolean] = js.undefined,
+    secureContext: nodeLib.tlsMod.SecureContext = null,
+    server: nodeLib.netMod.Server = null,
+    session: Buffer = null
+  ): Anon_ALPNProtocols = {
+    val __obj = js.Dynamic.literal()
+    if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
+    if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
+    if (SNICallback != null) __obj.updateDynamic("SNICallback")(SNICallback)
+    if (!js.isUndefined(isServer)) __obj.updateDynamic("isServer")(isServer)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert)
+    if (!js.isUndefined(requestOCSP)) __obj.updateDynamic("requestOCSP")(requestOCSP)
+    if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext)
+    if (server != null) __obj.updateDynamic("server")(server)
+    if (session != null) __obj.updateDynamic("session")(session)
+    __obj.asInstanceOf[Anon_ALPNProtocols]
+  }
+}
+

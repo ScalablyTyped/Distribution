@@ -17,3 +17,16 @@ trait ModuleController extends XModuleController {
   def create(xController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController): scala.Unit
 }
 
+object ModuleController {
+  @scala.inline
+  def apply(
+    create: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
+    requestResource: js.Function1[java.lang.String, scala.Unit]
+  ): ModuleController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("requestResource")(requestResource)
+    __obj.asInstanceOf[ModuleController]
+  }
+}
+

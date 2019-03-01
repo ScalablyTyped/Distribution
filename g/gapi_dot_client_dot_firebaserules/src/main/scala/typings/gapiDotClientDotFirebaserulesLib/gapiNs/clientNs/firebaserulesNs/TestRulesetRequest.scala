@@ -16,3 +16,13 @@ trait TestRulesetRequest extends js.Object {
   var testSuite: js.UndefOr[TestSuite] = js.undefined
 }
 
+object TestRulesetRequest {
+  @scala.inline
+  def apply(source: Source = null, testSuite: TestSuite = null): TestRulesetRequest = {
+    val __obj = js.Dynamic.literal()
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (testSuite != null) __obj.updateDynamic("testSuite")(testSuite)
+    __obj.asInstanceOf[TestRulesetRequest]
+  }
+}
+

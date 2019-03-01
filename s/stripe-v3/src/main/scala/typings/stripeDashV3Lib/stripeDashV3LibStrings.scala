@@ -7,37 +7,47 @@ import scala.scalajs.js.annotation._
 
 object stripeDashV3LibStrings {
   @js.native
-  sealed trait `American Express` extends js.Object
+  sealed trait `American Express`
+    extends stripeDashV3Lib.stripeNs.brandType
   
   @js.native
-  sealed trait `Diners Club` extends js.Object
+  sealed trait `Diners Club`
+    extends stripeDashV3Lib.stripeNs.brandType
   
   @js.native
-  sealed trait Discover extends js.Object
+  sealed trait Discover
+    extends stripeDashV3Lib.stripeNs.brandType
   
   @js.native
-  sealed trait JCB extends js.Object
+  sealed trait JCB
+    extends stripeDashV3Lib.stripeNs.brandType
   
   @js.native
-  sealed trait MasterCard extends js.Object
+  sealed trait MasterCard
+    extends stripeDashV3Lib.stripeNs.brandType
   
   @js.native
-  sealed trait Unknown extends js.Object
+  sealed trait Unknown
+    extends stripeDashV3Lib.stripeNs.brandType
   
   @js.native
-  sealed trait Visa extends js.Object
+  sealed trait Visa
+    extends stripeDashV3Lib.stripeNs.brandType
   
   @js.native
-  sealed trait android_pay extends js.Object
+  sealed trait android_pay
+    extends stripeDashV3Lib.stripeNs.tokenizationType
   
   @js.native
-  sealed trait apple_pay extends js.Object
+  sealed trait apple_pay
+    extends stripeDashV3Lib.stripeNs.tokenizationType
   
   @js.native
   sealed trait bank_account extends js.Object
   
   @js.native
-  sealed trait blur extends js.Object
+  sealed trait blur
+    extends stripeDashV3Lib.stripeNs.elementsNs.eventTypes
   
   @js.native
   sealed trait buy extends js.Object
@@ -46,19 +56,24 @@ object stripeDashV3LibStrings {
   sealed trait cancel extends js.Object
   
   @js.native
-  sealed trait card extends js.Object
+  sealed trait card
+    extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
   
   @js.native
-  sealed trait cardCvc extends js.Object
+  sealed trait cardCvc
+    extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
   
   @js.native
-  sealed trait cardExpiry extends js.Object
+  sealed trait cardExpiry
+    extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
   
   @js.native
-  sealed trait cardNumber extends js.Object
+  sealed trait cardNumber
+    extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change
+    extends stripeDashV3Lib.stripeNs.elementsNs.eventTypes
   
   @js.native
   sealed trait click extends js.Object
@@ -67,13 +82,15 @@ object stripeDashV3LibStrings {
   sealed trait code_verification extends js.Object
   
   @js.native
-  sealed trait credit extends js.Object
+  sealed trait credit
+    extends stripeDashV3Lib.stripeNs.fundingType
   
   @js.native
   sealed trait dark extends js.Object
   
   @js.native
-  sealed trait debit extends js.Object
+  sealed trait debit
+    extends stripeDashV3Lib.stripeNs.fundingType
   
   @js.native
   sealed trait default extends js.Object
@@ -82,16 +99,20 @@ object stripeDashV3LibStrings {
   sealed trait donate extends js.Object
   
   @js.native
-  sealed trait errored extends js.Object
+  sealed trait errored
+    extends stripeDashV3Lib.stripeNs.statusType
   
   @js.native
-  sealed trait fail extends js.Object
+  sealed trait fail
+    extends stripeDashV3Lib.stripeNs.checkType
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait focus
+    extends stripeDashV3Lib.stripeNs.elementsNs.eventTypes
   
   @js.native
-  sealed trait iban extends js.Object
+  sealed trait iban
+    extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
   
   @js.native
   sealed trait invalid_shipping_address extends js.Object
@@ -103,7 +124,8 @@ object stripeDashV3LibStrings {
   sealed trait `light-outline` extends js.Object
   
   @js.native
-  sealed trait `new` extends js.Object
+  sealed trait `new`
+    extends stripeDashV3Lib.stripeNs.statusType
   
   @js.native
   sealed trait none extends js.Object
@@ -115,22 +137,27 @@ object stripeDashV3LibStrings {
   sealed trait optional extends js.Object
   
   @js.native
-  sealed trait pass extends js.Object
+  sealed trait pass
+    extends stripeDashV3Lib.stripeNs.checkType
   
   @js.native
-  sealed trait paymentRequestButton extends js.Object
+  sealed trait paymentRequestButton
+    extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
   
   @js.native
   sealed trait pii extends js.Object
   
   @js.native
-  sealed trait postalCode extends js.Object
+  sealed trait postalCode
+    extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
   
   @js.native
-  sealed trait prepaid extends js.Object
+  sealed trait prepaid
+    extends stripeDashV3Lib.stripeNs.fundingType
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait ready
+    extends stripeDashV3Lib.stripeNs.elementsNs.eventTypes
   
   @js.native
   sealed trait receiver extends js.Object
@@ -169,22 +196,28 @@ object stripeDashV3LibStrings {
   sealed trait token extends js.Object
   
   @js.native
-  sealed trait unavailable extends js.Object
+  sealed trait unavailable
+    extends stripeDashV3Lib.stripeNs.checkType
   
   @js.native
-  sealed trait unchecked extends js.Object
+  sealed trait unchecked
+    extends stripeDashV3Lib.stripeNs.checkType
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends stripeDashV3Lib.stripeNs.fundingType
   
   @js.native
-  sealed trait validated extends js.Object
+  sealed trait validated
+    extends stripeDashV3Lib.stripeNs.statusType
   
   @js.native
-  sealed trait verification_failed extends js.Object
+  sealed trait verification_failed
+    extends stripeDashV3Lib.stripeNs.statusType
   
   @js.native
-  sealed trait verified extends js.Object
+  sealed trait verified
+    extends stripeDashV3Lib.stripeNs.statusType
   
   @scala.inline
   def `American Express`: `American Express` = "American Express".asInstanceOf[`American Express`]

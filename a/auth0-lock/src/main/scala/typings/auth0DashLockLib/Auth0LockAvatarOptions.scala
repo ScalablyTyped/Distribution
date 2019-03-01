@@ -10,3 +10,16 @@ trait Auth0LockAvatarOptions extends js.Object {
   def url(email: java.lang.String, callback: Auth0LockAvatarUrlCallback): scala.Unit
 }
 
+object Auth0LockAvatarOptions {
+  @scala.inline
+  def apply(
+    displayName: js.Function2[java.lang.String, Auth0LockAvatarDisplayNameCallback, scala.Unit],
+    url: js.Function2[java.lang.String, Auth0LockAvatarUrlCallback, scala.Unit]
+  ): Auth0LockAvatarOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Auth0LockAvatarOptions]
+  }
+}
+

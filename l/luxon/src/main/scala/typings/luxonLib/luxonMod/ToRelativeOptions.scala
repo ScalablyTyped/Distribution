@@ -26,3 +26,26 @@ trait ToRelativeOptions extends js.Object {
   var unit: js.UndefOr[ToRelativeUnit] = js.undefined
 }
 
+object ToRelativeOptions {
+  @scala.inline
+  def apply(
+    base: DateTime = null,
+    locale: java.lang.String = null,
+    numberingSystem: java.lang.String = null,
+    padding: scala.Int | scala.Double = null,
+    round: js.UndefOr[scala.Boolean] = js.undefined,
+    style: luxonLib.luxonLibStrings.long | luxonLib.luxonLibStrings.short | luxonLib.luxonLibStrings.narrow = null,
+    unit: ToRelativeUnit = null
+  ): ToRelativeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[ToRelativeOptions]
+  }
+}
+

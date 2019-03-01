@@ -27,3 +27,20 @@ trait windowToolbarParam extends js.Object {
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object windowToolbarParam {
+  @scala.inline
+  def apply(
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    barColor: java.lang.String = null,
+    tintColor: java.lang.String = null,
+    translucent: js.UndefOr[scala.Boolean] = js.undefined
+  ): windowToolbarParam = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (barColor != null) __obj.updateDynamic("barColor")(barColor)
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
+    __obj.asInstanceOf[windowToolbarParam]
+  }
+}
+

@@ -11,3 +11,19 @@ trait SeriesResource extends js.Object {
   def get(request: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserSeriesid): gapiDotClientLib.gapiNs.clientNs.Request[Series]
 }
 
+object SeriesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserSeriesid, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Series]
+    ],
+    membership: MembershipResource
+  ): SeriesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("membership")(membership)
+    __obj.asInstanceOf[SeriesResource]
+  }
+}
+

@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 object dateDashArithmeticLibStrings {
   @js.native
-  sealed trait century extends js.Object
+  sealed trait century extends Unit
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day extends Unit
   
   @js.native
-  sealed trait decade extends js.Object
+  sealed trait decade extends Unit
   
   @js.native
-  sealed trait hours extends js.Object
+  sealed trait hours extends Unit
   
   @js.native
-  sealed trait minutes extends js.Object
+  sealed trait minutes extends Unit
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month extends Unit
   
   @js.native
-  sealed trait second extends js.Object
+  sealed trait second extends Unit
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week extends Unit
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year extends Unit
   
   @scala.inline
   def century: century = "century".asInstanceOf[century]

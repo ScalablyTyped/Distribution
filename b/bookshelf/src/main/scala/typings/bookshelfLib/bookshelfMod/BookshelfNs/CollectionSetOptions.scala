@@ -11,3 +11,20 @@ trait CollectionSetOptions extends EventOptions {
   var remove: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CollectionSetOptions {
+  @scala.inline
+  def apply(
+    add: js.UndefOr[scala.Boolean] = js.undefined,
+    merge: js.UndefOr[scala.Boolean] = js.undefined,
+    remove: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined
+  ): CollectionSetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add)
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    __obj.asInstanceOf[CollectionSetOptions]
+  }
+}
+

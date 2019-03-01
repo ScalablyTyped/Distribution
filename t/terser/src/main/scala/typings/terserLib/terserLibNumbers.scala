@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object terserLibNumbers {
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends terserLib.terserMod.ECMA
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends terserLib.terserMod.ECMA
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends terserLib.terserMod.ECMA
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends terserLib.terserMod.ECMA
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends terserLib.terserMod.ECMA
   
   @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]

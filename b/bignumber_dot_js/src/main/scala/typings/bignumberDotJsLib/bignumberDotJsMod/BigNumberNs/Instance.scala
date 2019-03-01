@@ -15,3 +15,20 @@ trait Instance
   val s: scala.Double | scala.Null
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    c: js.Array[scala.Double] = null,
+    e: scala.Int | scala.Double = null,
+    s: scala.Int | scala.Double = null
+  ): Instance = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (c != null) __obj.updateDynamic("c")(c)
+    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
+    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Instance]
+  }
+}
+

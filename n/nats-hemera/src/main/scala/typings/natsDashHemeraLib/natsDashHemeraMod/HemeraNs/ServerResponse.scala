@@ -10,3 +10,13 @@ trait ServerResponse extends js.Object {
   var payload: js.Any
 }
 
+object ServerResponse {
+  @scala.inline
+  def apply(error: js.Any, payload: js.Any): ServerResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("payload")(payload)
+    __obj.asInstanceOf[ServerResponse]
+  }
+}
+

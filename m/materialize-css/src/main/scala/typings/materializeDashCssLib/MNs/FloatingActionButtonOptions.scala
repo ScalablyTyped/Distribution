@@ -23,3 +23,18 @@ trait FloatingActionButtonOptions extends js.Object {
   var toolbarEnabled: scala.Boolean
 }
 
+object FloatingActionButtonOptions {
+  @scala.inline
+  def apply(
+    direction: materializeDashCssLib.materializeDashCssLibStrings.top | materializeDashCssLib.materializeDashCssLibStrings.right | materializeDashCssLib.materializeDashCssLibStrings.buttom | materializeDashCssLib.materializeDashCssLibStrings.left,
+    hoverEnabled: scala.Boolean,
+    toolbarEnabled: scala.Boolean
+  ): FloatingActionButtonOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    __obj.updateDynamic("hoverEnabled")(hoverEnabled)
+    __obj.updateDynamic("toolbarEnabled")(toolbarEnabled)
+    __obj.asInstanceOf[FloatingActionButtonOptions]
+  }
+}
+

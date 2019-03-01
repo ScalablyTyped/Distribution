@@ -22,3 +22,22 @@ trait MapContext extends js.Object {
   def translateMarker(options: TranslateMarkerOptions): scala.Unit
 }
 
+object MapContext {
+  @scala.inline
+  def apply(
+    getCenterLocation: js.Function1[GetCenterLocationOptions, OpenLocationOptions],
+    getRegion: js.Function1[GetRegionOptions, scala.Unit],
+    includePoints: js.Function1[baiduDashAppLib.Anon_Padding, scala.Unit],
+    moveToLocation: js.Function0[scala.Unit],
+    translateMarker: js.Function1[TranslateMarkerOptions, scala.Unit]
+  ): MapContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCenterLocation")(getCenterLocation)
+    __obj.updateDynamic("getRegion")(getRegion)
+    __obj.updateDynamic("includePoints")(includePoints)
+    __obj.updateDynamic("moveToLocation")(moveToLocation)
+    __obj.updateDynamic("translateMarker")(translateMarker)
+    __obj.asInstanceOf[MapContext]
+  }
+}
+

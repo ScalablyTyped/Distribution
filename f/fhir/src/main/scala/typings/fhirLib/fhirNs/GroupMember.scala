@@ -27,3 +27,32 @@ trait GroupMember extends BackboneElement {
   var period: js.UndefOr[Period] = js.undefined
 }
 
+object GroupMember {
+  @scala.inline
+  def apply(
+    entity: Reference,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _inactive: Element = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    inactive: js.UndefOr[scala.Boolean] = js.undefined,
+    modifierExtension: js.Array[Extension] = null,
+    period: Period = null
+  ): GroupMember = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entity")(entity)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_inactive != null) __obj.updateDynamic("_inactive")(_inactive)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(inactive)) __obj.updateDynamic("inactive")(inactive)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (period != null) __obj.updateDynamic("period")(period)
+    __obj.asInstanceOf[GroupMember]
+  }
+}
+

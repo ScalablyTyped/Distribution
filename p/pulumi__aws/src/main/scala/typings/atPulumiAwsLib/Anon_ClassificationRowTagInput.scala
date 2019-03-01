@@ -10,3 +10,16 @@ trait Anon_ClassificationRowTagInput extends js.Object {
   var rowTag: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_ClassificationRowTagInput {
+  @scala.inline
+  def apply(
+    classification: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    rowTag: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): Anon_ClassificationRowTagInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("classification")(classification.asInstanceOf[js.Any])
+    __obj.updateDynamic("rowTag")(rowTag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ClassificationRowTagInput]
+  }
+}
+

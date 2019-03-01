@@ -26,7 +26,7 @@ trait ISpinnerProps
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
   ] = js.undefined
   /**
     * A value between 0 and 1 (inclusive) representing how far along the operation is.
@@ -34,5 +34,24 @@ trait ISpinnerProps
     * Omitting this prop will result in an "indeterminate" spinner where the head spins indefinitely.
     */
   var value: js.UndefOr[scala.Double] = js.undefined
+}
+
+object ISpinnerProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    size: scala.Int | scala.Double = null,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
+    value: scala.Int | scala.Double = null
+  ): ISpinnerProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISpinnerProps]
+  }
 }
 

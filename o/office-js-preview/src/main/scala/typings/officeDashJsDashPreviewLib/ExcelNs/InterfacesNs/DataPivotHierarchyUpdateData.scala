@@ -53,3 +53,24 @@ trait DataPivotHierarchyUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object DataPivotHierarchyUpdateData {
+  @scala.inline
+  def apply(
+    field: PivotFieldUpdateData = null,
+    name: java.lang.String = null,
+    numberFormat: java.lang.String = null,
+    position: scala.Int | scala.Double = null,
+    showAs: officeDashJsDashPreviewLib.ExcelNs.ShowAsRule = null,
+    summarizeBy: officeDashJsDashPreviewLib.ExcelNs.AggregationFunction | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Sum | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Count | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Average | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Max | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Min | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Product | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CountNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StandardDeviation | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StandardDeviationP | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Variance | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.VarianceP = null
+  ): DataPivotHierarchyUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (showAs != null) __obj.updateDynamic("showAs")(showAs)
+    if (summarizeBy != null) __obj.updateDynamic("summarizeBy")(summarizeBy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataPivotHierarchyUpdateData]
+  }
+}
+

@@ -16,3 +16,12 @@ trait IError extends js.Object {
   var error: microsoftDashLiveDashConnectLib.Anon_Code
 }
 
+object IError {
+  @scala.inline
+  def apply(error: microsoftDashLiveDashConnectLib.Anon_Code): IError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[IError]
+  }
+}
+

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xmldoc", "XmlElement")
 @js.native
-class XmlElement protected () extends js.Object {
+class XmlElement protected () extends XmlNode {
   def this(tag: XmlTag) = this()
   var attr: XmlAttributes = js.native
   var children: js.Array[XmlNode] = js.native

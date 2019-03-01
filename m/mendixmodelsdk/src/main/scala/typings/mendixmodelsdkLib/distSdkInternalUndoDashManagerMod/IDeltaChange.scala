@@ -10,3 +10,16 @@ trait IDeltaChange extends js.Object {
   var reversedDelta: mendixmodelsdkLib.distSdkInternalDeltasDeltasMod.Delta
 }
 
+object IDeltaChange {
+  @scala.inline
+  def apply(
+    delta: mendixmodelsdkLib.distSdkInternalDeltasDeltasMod.Delta,
+    reversedDelta: mendixmodelsdkLib.distSdkInternalDeltasDeltasMod.Delta
+  ): IDeltaChange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delta")(delta)
+    __obj.updateDynamic("reversedDelta")(reversedDelta)
+    __obj.asInstanceOf[IDeltaChange]
+  }
+}
+

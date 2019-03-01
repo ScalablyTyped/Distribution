@@ -41,3 +41,28 @@ trait InstanceGroupManagerActionsSummary extends js.Object {
   var restarting: js.UndefOr[scala.Double] = js.undefined
 }
 
+object InstanceGroupManagerActionsSummary {
+  @scala.inline
+  def apply(
+    abandoning: scala.Int | scala.Double = null,
+    creating: scala.Int | scala.Double = null,
+    creatingWithoutRetries: scala.Int | scala.Double = null,
+    deleting: scala.Int | scala.Double = null,
+    none: scala.Int | scala.Double = null,
+    recreating: scala.Int | scala.Double = null,
+    refreshing: scala.Int | scala.Double = null,
+    restarting: scala.Int | scala.Double = null
+  ): InstanceGroupManagerActionsSummary = {
+    val __obj = js.Dynamic.literal()
+    if (abandoning != null) __obj.updateDynamic("abandoning")(abandoning.asInstanceOf[js.Any])
+    if (creating != null) __obj.updateDynamic("creating")(creating.asInstanceOf[js.Any])
+    if (creatingWithoutRetries != null) __obj.updateDynamic("creatingWithoutRetries")(creatingWithoutRetries.asInstanceOf[js.Any])
+    if (deleting != null) __obj.updateDynamic("deleting")(deleting.asInstanceOf[js.Any])
+    if (none != null) __obj.updateDynamic("none")(none.asInstanceOf[js.Any])
+    if (recreating != null) __obj.updateDynamic("recreating")(recreating.asInstanceOf[js.Any])
+    if (refreshing != null) __obj.updateDynamic("refreshing")(refreshing.asInstanceOf[js.Any])
+    if (restarting != null) __obj.updateDynamic("restarting")(restarting.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstanceGroupManagerActionsSummary]
+  }
+}
+

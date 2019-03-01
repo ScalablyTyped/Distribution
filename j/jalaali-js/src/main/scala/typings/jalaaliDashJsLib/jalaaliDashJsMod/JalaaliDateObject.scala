@@ -14,3 +14,14 @@ trait JalaaliDateObject extends js.Object {
   var jy: scala.Double
 }
 
+object JalaaliDateObject {
+  @scala.inline
+  def apply(jd: scala.Double, jm: scala.Double, jy: scala.Double): JalaaliDateObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jd")(jd)
+    __obj.updateDynamic("jm")(jm)
+    __obj.updateDynamic("jy")(jy)
+    __obj.asInstanceOf[JalaaliDateObject]
+  }
+}
+

@@ -16,3 +16,13 @@ trait Anon_EnabledR extends js.Object {
   var r: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_EnabledR {
+  @scala.inline
+  def apply(enabled: js.UndefOr[scala.Boolean] = js.undefined, r: scala.Int | scala.Double = null): Anon_EnabledR = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_EnabledR]
+  }
+}
+

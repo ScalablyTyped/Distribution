@@ -24,3 +24,13 @@ trait ResultSetMetadata extends js.Object {
   var transaction: js.UndefOr[Transaction] = js.undefined
 }
 
+object ResultSetMetadata {
+  @scala.inline
+  def apply(rowType: StructType = null, transaction: Transaction = null): ResultSetMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (rowType != null) __obj.updateDynamic("rowType")(rowType)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[ResultSetMetadata]
+  }
+}
+

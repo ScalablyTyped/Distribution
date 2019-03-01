@@ -15,3 +15,18 @@ trait withDragAndDropProps[TEvent] extends js.Object {
   var resizable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object withDragAndDropProps {
+  @scala.inline
+  def apply[TEvent](
+    onEventDrop: js.Function1[/* args */ reactDashBigDashCalendarLib.Anon_AllDay[TEvent], scala.Unit] = null,
+    onEventResize: js.Function1[/* args */ reactDashBigDashCalendarLib.Anon_AllDay[TEvent], scala.Unit] = null,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined
+  ): withDragAndDropProps[TEvent] = {
+    val __obj = js.Dynamic.literal()
+    if (onEventDrop != null) __obj.updateDynamic("onEventDrop")(onEventDrop)
+    if (onEventResize != null) __obj.updateDynamic("onEventResize")(onEventResize)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    __obj.asInstanceOf[withDragAndDropProps[TEvent]]
+  }
+}
+

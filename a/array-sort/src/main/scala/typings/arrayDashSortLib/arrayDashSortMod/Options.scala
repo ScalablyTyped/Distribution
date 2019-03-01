@@ -9,3 +9,12 @@ trait Options extends js.Object {
   val reverse: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(reverse: scala.Boolean): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reverse")(reverse)
+    __obj.asInstanceOf[Options]
+  }
+}
+

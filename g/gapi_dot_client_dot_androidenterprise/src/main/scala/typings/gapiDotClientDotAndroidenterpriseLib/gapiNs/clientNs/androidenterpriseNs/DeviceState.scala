@@ -15,3 +15,13 @@ trait DeviceState extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeviceState {
+  @scala.inline
+  def apply(accountState: java.lang.String = null, kind: java.lang.String = null): DeviceState = {
+    val __obj = js.Dynamic.literal()
+    if (accountState != null) __obj.updateDynamic("accountState")(accountState)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[DeviceState]
+  }
+}
+

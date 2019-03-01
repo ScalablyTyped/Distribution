@@ -16,3 +16,12 @@ trait RegisterDebuggeeResponse extends js.Object {
   var debuggee: js.UndefOr[Debuggee] = js.undefined
 }
 
+object RegisterDebuggeeResponse {
+  @scala.inline
+  def apply(debuggee: Debuggee = null): RegisterDebuggeeResponse = {
+    val __obj = js.Dynamic.literal()
+    if (debuggee != null) __obj.updateDynamic("debuggee")(debuggee)
+    __obj.asInstanceOf[RegisterDebuggeeResponse]
+  }
+}
+

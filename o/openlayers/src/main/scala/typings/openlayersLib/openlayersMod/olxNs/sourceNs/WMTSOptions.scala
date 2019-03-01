@@ -38,3 +38,60 @@ trait WMTSOptions extends js.Object {
   var wrapX: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WMTSOptions {
+  @scala.inline
+  def apply(
+    layer: java.lang.String,
+    matrixSet: java.lang.String,
+    projection: openlayersLib.openlayersMod.ProjectionLike,
+    style: java.lang.String,
+    tileGrid: openlayersLib.openlayersMod.tilegridNs.WMTS,
+    attributions: openlayersLib.openlayersMod.AttributionLike = null,
+    cacheSize: scala.Int | scala.Double = null,
+    crossOrigin: java.lang.String = null,
+    dimensions: openlayersLib.openlayersMod.GlobalObject = null,
+    format: java.lang.String = null,
+    logo: java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions = null,
+    reprojectionErrorThreshold: scala.Int | scala.Double = null,
+    requestEncoding: openlayersLib.openlayersMod.sourceNs.WMTSRequestEncoding | java.lang.String = null,
+    tileClass: js.Function6[
+      /* n */ openlayersLib.openlayersMod.ImageTile, 
+      /* coords */ openlayersLib.openlayersMod.TileCoord, 
+      /* state */ openlayersLib.openlayersMod.TileNs.State, 
+      /* s1 */ java.lang.String, 
+      /* s2 */ java.lang.String, 
+      /* type */ openlayersLib.openlayersMod.TileLoadFunctionType, 
+      _
+    ] = null,
+    tileLoadFunction: openlayersLib.openlayersMod.TileLoadFunctionType = null,
+    tilePixelRatio: scala.Int | scala.Double = null,
+    url: java.lang.String = null,
+    urls: js.Array[java.lang.String] = null,
+    version: java.lang.String = null,
+    wrapX: js.UndefOr[scala.Boolean] = js.undefined
+  ): WMTSOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("layer")(layer)
+    __obj.updateDynamic("matrixSet")(matrixSet)
+    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("tileGrid")(tileGrid)
+    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
+    if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
+    if (requestEncoding != null) __obj.updateDynamic("requestEncoding")(requestEncoding.asInstanceOf[js.Any])
+    if (tileClass != null) __obj.updateDynamic("tileClass")(tileClass)
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    __obj.asInstanceOf[WMTSOptions]
+  }
+}
+

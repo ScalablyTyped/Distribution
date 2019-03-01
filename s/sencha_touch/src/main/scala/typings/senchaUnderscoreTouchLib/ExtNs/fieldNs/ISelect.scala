@@ -113,3 +113,94 @@ trait ISelect extends IText {
   var valueField: js.UndefOr[js.Any] = js.undefined
 }
 
+object ISelect {
+  @scala.inline
+  def apply(
+    IText: IText = null,
+    autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultPhonePickerConfig: js.Any = null,
+    defaultTabletPickerConfig: js.Any = null,
+    destroy: js.Function0[scala.Unit] = null,
+    displayField: js.Any = null,
+    getAutoSelect: js.Function0[scala.Boolean] = null,
+    getDefaultPhonePickerConfig: js.Function0[_] = null,
+    getDefaultTabletPickerConfig: js.Function0[_] = null,
+    getDisplayField: js.Function0[_] = null,
+    getHiddenName: js.Function0[java.lang.String] = null,
+    getName: js.Function0[java.lang.String] = null,
+    getOptions: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getRecord: js.Function0[senchaUnderscoreTouchLib.ExtNs.dataNs.IModel] = null,
+    getStore: js.Function0[_] = null,
+    getUi: js.Function0[java.lang.String] = null,
+    getUsePicker: js.Function0[_] = null,
+    getValue: js.Function0[_] = null,
+    getValueField: js.Function0[_] = null,
+    hiddenName: java.lang.String = null,
+    name: java.lang.String = null,
+    onStoreDataChanged: js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit] = null,
+    options: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    reset: js.Function0[ISelect] = null,
+    setAutoSelect: js.Function1[/* autoSelect */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setDefaultPhonePickerConfig: js.Function1[/* defaultPhonePickerConfig */ js.UndefOr[js.Any], scala.Unit] = null,
+    setDefaultTabletPickerConfig: js.Function1[/* defaultTabletPickerConfig */ js.UndefOr[js.Any], scala.Unit] = null,
+    setDisplayField: js.Function1[/* displayField */ js.UndefOr[js.Any], scala.Unit] = null,
+    setHiddenName: js.Function1[/* hiddenName */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setName: js.Function1[/* name */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setOptions: js.Function1[/* options */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    setStore: js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit] = null,
+    setUi: js.Function1[/* ui */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setUsePicker: js.Function1[/* usePicker */ js.UndefOr[js.Any], scala.Unit] = null,
+    setValueField: js.Function1[/* valueField */ js.UndefOr[js.Any], scala.Unit] = null,
+    showPicker: js.Function0[scala.Unit] = null,
+    store: js.Any = null,
+    ui: java.lang.String = null,
+    updateOptions: js.Function1[/* newOptions */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], ISelect] = null,
+    usePicker: js.Any = null,
+    valueField: js.Any = null
+  ): ISelect = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IText)
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
+    if (defaultPhonePickerConfig != null) __obj.updateDynamic("defaultPhonePickerConfig")(defaultPhonePickerConfig)
+    if (defaultTabletPickerConfig != null) __obj.updateDynamic("defaultTabletPickerConfig")(defaultTabletPickerConfig)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (displayField != null) __obj.updateDynamic("displayField")(displayField)
+    if (getAutoSelect != null) __obj.updateDynamic("getAutoSelect")(getAutoSelect)
+    if (getDefaultPhonePickerConfig != null) __obj.updateDynamic("getDefaultPhonePickerConfig")(getDefaultPhonePickerConfig)
+    if (getDefaultTabletPickerConfig != null) __obj.updateDynamic("getDefaultTabletPickerConfig")(getDefaultTabletPickerConfig)
+    if (getDisplayField != null) __obj.updateDynamic("getDisplayField")(getDisplayField)
+    if (getHiddenName != null) __obj.updateDynamic("getHiddenName")(getHiddenName)
+    if (getName != null) __obj.updateDynamic("getName")(getName)
+    if (getOptions != null) __obj.updateDynamic("getOptions")(getOptions)
+    if (getRecord != null) __obj.updateDynamic("getRecord")(getRecord)
+    if (getStore != null) __obj.updateDynamic("getStore")(getStore)
+    if (getUi != null) __obj.updateDynamic("getUi")(getUi)
+    if (getUsePicker != null) __obj.updateDynamic("getUsePicker")(getUsePicker)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (getValueField != null) __obj.updateDynamic("getValueField")(getValueField)
+    if (hiddenName != null) __obj.updateDynamic("hiddenName")(hiddenName)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onStoreDataChanged != null) __obj.updateDynamic("onStoreDataChanged")(onStoreDataChanged)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (setAutoSelect != null) __obj.updateDynamic("setAutoSelect")(setAutoSelect)
+    if (setDefaultPhonePickerConfig != null) __obj.updateDynamic("setDefaultPhonePickerConfig")(setDefaultPhonePickerConfig)
+    if (setDefaultTabletPickerConfig != null) __obj.updateDynamic("setDefaultTabletPickerConfig")(setDefaultTabletPickerConfig)
+    if (setDisplayField != null) __obj.updateDynamic("setDisplayField")(setDisplayField)
+    if (setHiddenName != null) __obj.updateDynamic("setHiddenName")(setHiddenName)
+    if (setName != null) __obj.updateDynamic("setName")(setName)
+    if (setOptions != null) __obj.updateDynamic("setOptions")(setOptions)
+    if (setStore != null) __obj.updateDynamic("setStore")(setStore)
+    if (setUi != null) __obj.updateDynamic("setUi")(setUi)
+    if (setUsePicker != null) __obj.updateDynamic("setUsePicker")(setUsePicker)
+    if (setValueField != null) __obj.updateDynamic("setValueField")(setValueField)
+    if (showPicker != null) __obj.updateDynamic("showPicker")(showPicker)
+    if (store != null) __obj.updateDynamic("store")(store)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (updateOptions != null) __obj.updateDynamic("updateOptions")(updateOptions)
+    if (usePicker != null) __obj.updateDynamic("usePicker")(usePicker)
+    if (valueField != null) __obj.updateDynamic("valueField")(valueField)
+    __obj.asInstanceOf[ISelect]
+  }
+}
+

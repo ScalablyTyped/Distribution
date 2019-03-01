@@ -22,3 +22,40 @@ trait ArcGaugeScale extends js.Object {
   var startAngle: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ArcGaugeScale {
+  @scala.inline
+  def apply(
+    endAngle: scala.Int | scala.Double = null,
+    labels: ArcGaugeScaleLabels = null,
+    majorTicks: ArcGaugeScaleMajorTicks = null,
+    majorUnit: scala.Int | scala.Double = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    minorTicks: ArcGaugeScaleMinorTicks = null,
+    minorUnit: scala.Int | scala.Double = null,
+    rangeDistance: scala.Int | scala.Double = null,
+    rangeLineCap: java.lang.String = null,
+    rangePlaceholderColor: java.lang.String = null,
+    rangeSize: scala.Int | scala.Double = null,
+    reverse: js.UndefOr[scala.Boolean] = js.undefined,
+    startAngle: scala.Int | scala.Double = null
+  ): ArcGaugeScale = {
+    val __obj = js.Dynamic.literal()
+    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (majorTicks != null) __obj.updateDynamic("majorTicks")(majorTicks)
+    if (majorUnit != null) __obj.updateDynamic("majorUnit")(majorUnit.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minorTicks != null) __obj.updateDynamic("minorTicks")(minorTicks)
+    if (minorUnit != null) __obj.updateDynamic("minorUnit")(minorUnit.asInstanceOf[js.Any])
+    if (rangeDistance != null) __obj.updateDynamic("rangeDistance")(rangeDistance.asInstanceOf[js.Any])
+    if (rangeLineCap != null) __obj.updateDynamic("rangeLineCap")(rangeLineCap)
+    if (rangePlaceholderColor != null) __obj.updateDynamic("rangePlaceholderColor")(rangePlaceholderColor)
+    if (rangeSize != null) __obj.updateDynamic("rangeSize")(rangeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ArcGaugeScale]
+  }
+}
+

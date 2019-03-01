@@ -15,3 +15,15 @@ trait Anon_Accuracy extends js.Object {
   var speed: scala.Double
 }
 
+object Anon_Accuracy {
+  @scala.inline
+  def apply(accuracy: scala.Double, latitude: scala.Double, longitude: scala.Double, speed: scala.Double): Anon_Accuracy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accuracy")(accuracy)
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    __obj.updateDynamic("speed")(speed)
+    __obj.asInstanceOf[Anon_Accuracy]
+  }
+}
+

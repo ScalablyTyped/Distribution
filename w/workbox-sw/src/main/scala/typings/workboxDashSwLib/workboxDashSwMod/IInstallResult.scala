@@ -16,3 +16,16 @@ trait IInstallResult extends js.Object {
   var updatedEntries: js.Array[java.lang.String | IPrecacheEntry]
 }
 
+object IInstallResult {
+  @scala.inline
+  def apply(
+    notUpdatedEntries: js.Array[java.lang.String | IPrecacheEntry],
+    updatedEntries: js.Array[java.lang.String | IPrecacheEntry]
+  ): IInstallResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("notUpdatedEntries")(notUpdatedEntries)
+    __obj.updateDynamic("updatedEntries")(updatedEntries)
+    __obj.asInstanceOf[IInstallResult]
+  }
+}
+

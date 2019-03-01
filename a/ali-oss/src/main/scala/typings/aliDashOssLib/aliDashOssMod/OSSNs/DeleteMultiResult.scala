@@ -11,3 +11,13 @@ trait DeleteMultiResult extends js.Object {
   var res: NormalSuccessResponse
 }
 
+object DeleteMultiResult {
+  @scala.inline
+  def apply(res: NormalSuccessResponse, deleted: js.Array[java.lang.String] = null): DeleteMultiResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("res")(res)
+    if (deleted != null) __obj.updateDynamic("deleted")(deleted)
+    __obj.asInstanceOf[DeleteMultiResult]
+  }
+}
+

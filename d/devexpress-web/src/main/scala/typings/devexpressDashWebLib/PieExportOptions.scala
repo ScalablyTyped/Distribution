@@ -16,3 +16,12 @@ trait PieExportOptions extends js.Object {
   var AutoArrangeContent: scala.Boolean
 }
 
+object PieExportOptions {
+  @scala.inline
+  def apply(AutoArrangeContent: scala.Boolean): PieExportOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoArrangeContent")(AutoArrangeContent)
+    __obj.asInstanceOf[PieExportOptions]
+  }
+}
+

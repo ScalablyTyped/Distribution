@@ -15,3 +15,24 @@ trait XVBAModuleInfo extends js.Object {
   def removeModuleInfo(ModuleName: java.lang.String): scala.Unit
 }
 
+object XVBAModuleInfo {
+  @scala.inline
+  def apply(
+    getModuleInfo: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ModuleInfo],
+    hasModuleInfo: js.Function1[java.lang.String, scala.Boolean],
+    insertModuleInfo: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.ModuleInfo, 
+      scala.Unit
+    ],
+    removeModuleInfo: js.Function1[java.lang.String, scala.Unit]
+  ): XVBAModuleInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getModuleInfo")(getModuleInfo)
+    __obj.updateDynamic("hasModuleInfo")(hasModuleInfo)
+    __obj.updateDynamic("insertModuleInfo")(insertModuleInfo)
+    __obj.updateDynamic("removeModuleInfo")(removeModuleInfo)
+    __obj.asInstanceOf[XVBAModuleInfo]
+  }
+}
+

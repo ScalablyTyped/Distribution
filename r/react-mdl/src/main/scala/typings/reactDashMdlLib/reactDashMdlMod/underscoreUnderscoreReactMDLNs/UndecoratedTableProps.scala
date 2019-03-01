@@ -16,3 +16,28 @@ trait UndecoratedTableProps
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UndecoratedTableProps {
+  @scala.inline
+  def apply(
+    rows: js.Array[_],
+    ClassAttributes: reactLib.reactMod.ReactNs.ClassAttributes[js.Any] = null,
+    DOMAttributes: reactLib.reactMod.ReactNs.DOMAttributes[UndecoratedTable] = null,
+    MDLHTMLAttributes: MDLHTMLAttributes = null,
+    ShadowedComponent: ShadowedComponent = null,
+    name: java.lang.String = null,
+    rowKeyColumn: java.lang.String = null,
+    title: java.lang.String = null
+  ): UndecoratedTableProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rows")(rows)
+    js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    js.Dynamic.global.Object.assign(__obj, DOMAttributes)
+    js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ShadowedComponent)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (rowKeyColumn != null) __obj.updateDynamic("rowKeyColumn")(rowKeyColumn)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[UndecoratedTableProps]
+  }
+}
+

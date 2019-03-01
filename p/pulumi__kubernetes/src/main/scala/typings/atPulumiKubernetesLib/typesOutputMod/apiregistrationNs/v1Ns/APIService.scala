@@ -34,3 +34,22 @@ trait APIService extends js.Object {
   val status: APIServiceStatus
 }
 
+object APIService {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: APIServiceSpec,
+    status: APIServiceStatus
+  ): APIService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[APIService]
+  }
+}
+

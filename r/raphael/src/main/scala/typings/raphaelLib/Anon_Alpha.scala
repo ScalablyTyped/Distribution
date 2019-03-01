@@ -11,3 +11,14 @@ trait Anon_Alpha extends js.Object {
   var y: scala.Double
 }
 
+object Anon_Alpha {
+  @scala.inline
+  def apply(alpha: scala.Double, x: scala.Double, y: scala.Double): Anon_Alpha = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alpha")(alpha)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Anon_Alpha]
+  }
+}
+

@@ -9,3 +9,12 @@ trait CommentContainer[TComment] extends js.Object {
   var comment: TComment
 }
 
+object CommentContainer {
+  @scala.inline
+  def apply[TComment](comment: TComment): CommentContainer[TComment] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommentContainer[TComment]]
+  }
+}
+

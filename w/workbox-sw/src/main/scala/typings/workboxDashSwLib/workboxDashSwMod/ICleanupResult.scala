@@ -19,3 +19,16 @@ trait ICleanupResult extends js.Object {
   var deletedRevisionDetails: js.Array[java.lang.String]
 }
 
+object ICleanupResult {
+  @scala.inline
+  def apply(
+    deletedCacheRequests: js.Array[java.lang.String],
+    deletedRevisionDetails: js.Array[java.lang.String]
+  ): ICleanupResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deletedCacheRequests")(deletedCacheRequests)
+    __obj.updateDynamic("deletedRevisionDetails")(deletedRevisionDetails)
+    __obj.asInstanceOf[ICleanupResult]
+  }
+}
+

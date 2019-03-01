@@ -10,3 +10,15 @@ trait Attributes extends js.Object {
   var `x-placement`: Placement
 }
 
+object Attributes {
+  @scala.inline
+  def apply(
+    `x-out-of-boundaries`: popperDotJsLib.popperDotJsLibStrings.Empty | popperDotJsLib.popperDotJsLibNumbers.`false`,
+    `x-placement`: Placement
+  ): Attributes = {
+    val __obj = js.Dynamic.literal(`x-out-of-boundaries` = `x-out-of-boundaries`.asInstanceOf[js.Any], `x-placement` = `x-placement`)
+  
+    __obj.asInstanceOf[Attributes]
+  }
+}
+

@@ -11,59 +11,61 @@ object docNs extends js.Object {
   @JSName("builders")
   @js.native
   object buildersNs extends js.Object {
-    trait Align extends js.Object {
+    trait Align extends _Doc {
       var contents: Doc
       var n: scala.Double | java.lang.String | prettierLib.Anon_Root
       var `type`: prettierLib.prettierLibStrings.align
     }
     
-    trait BreakParent extends js.Object {
+    trait BreakParent extends _Doc {
       var `type`: prettierLib.prettierLibStrings.`break-parent`
     }
     
-    trait Concat extends js.Object {
+    trait Concat extends _Doc {
       var parts: js.Array[Doc]
       var `type`: prettierLib.prettierLibStrings.concat
     }
     
-    trait Fill extends js.Object {
+    trait Fill extends _Doc {
       var parts: js.Array[Doc]
       var `type`: prettierLib.prettierLibStrings.fill
     }
     
-    trait Group extends js.Object {
+    trait Group extends _Doc {
       var break: scala.Boolean
       var contents: Doc
       var expandedStates: js.Array[Doc]
       var `type`: prettierLib.prettierLibStrings.group
     }
     
-    trait IfBreak extends js.Object {
+    trait IfBreak extends _Doc {
       var breakContents: Doc
       var flatContents: Doc
       var `type`: prettierLib.prettierLibStrings.`if-break`
     }
     
-    trait Indent extends js.Object {
+    trait Indent extends _Doc {
       var contents: Doc
       var `type`: prettierLib.prettierLibStrings.indent
     }
     
-    trait Line extends js.Object {
+    trait Line extends _Doc {
       var hard: js.UndefOr[scala.Boolean] = js.undefined
       var literal: js.UndefOr[scala.Boolean] = js.undefined
       var soft: js.UndefOr[scala.Boolean] = js.undefined
       var `type`: prettierLib.prettierLibStrings.line
     }
     
-    trait LineSuffix extends js.Object {
+    trait LineSuffix extends _Doc {
       var contents: Doc
       var `type`: prettierLib.prettierLibStrings.`line-suffix`
     }
     
-    trait LineSuffixBoundary extends js.Object {
+    trait LineSuffixBoundary extends _Doc {
       var `type`: prettierLib.prettierLibStrings.`line-suffix-boundary`
     }
+    
+    trait _Doc extends js.Object
     
     val breakParent: BreakParent = js.native
     val hardline: Concat = js.native
@@ -88,7 +90,7 @@ object docNs extends js.Object {
     def join(separator: Doc, parts: js.Array[Doc]): Concat = js.native
     def lineSuffix(contents: Doc): LineSuffix = js.native
     def markAsRoot(contents: Doc): Align = js.native
-    type Doc = java.lang.String | Align | BreakParent | Concat | Fill | Group | IfBreak | Indent | Line | LineSuffix | LineSuffixBoundary
+    type Doc = _Doc | java.lang.String
   }
   
   @JSName("debug")

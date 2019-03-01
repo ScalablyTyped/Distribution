@@ -18,3 +18,14 @@ trait LogEntrySourceLocation extends js.Object {
   var line: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogEntrySourceLocation {
+  @scala.inline
+  def apply(file: java.lang.String = null, function: java.lang.String = null, line: java.lang.String = null): LogEntrySourceLocation = {
+    val __obj = js.Dynamic.literal()
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (function != null) __obj.updateDynamic("function")(function)
+    if (line != null) __obj.updateDynamic("line")(line)
+    __obj.asInstanceOf[LogEntrySourceLocation]
+  }
+}
+

@@ -144,3 +144,56 @@ trait ScrollViewPropsIOS extends js.Object {
   var zoomScale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScrollViewPropsIOS {
+  @scala.inline
+  def apply(
+    alwaysBounceHorizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    alwaysBounceVertical: js.UndefOr[scala.Boolean] = js.undefined,
+    automaticallyAdjustContentInsets: js.UndefOr[scala.Boolean] = js.undefined,
+    bounces: js.UndefOr[scala.Boolean] = js.undefined,
+    bouncesZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    canCancelContentTouches: js.UndefOr[scala.Boolean] = js.undefined,
+    centerContent: js.UndefOr[scala.Boolean] = js.undefined,
+    contentInset: Insets = null,
+    contentInsetAdjustmentBehavior: reactDashNativeLib.reactDashNativeLibStrings.automatic | reactDashNativeLib.reactDashNativeLibStrings.scrollableAxes | reactDashNativeLib.reactDashNativeLibStrings.never | reactDashNativeLib.reactDashNativeLibStrings.always = null,
+    contentOffset: PointPropType = null,
+    decelerationRate: reactDashNativeLib.reactDashNativeLibStrings.fast | reactDashNativeLib.reactDashNativeLibStrings.normal | scala.Double = null,
+    directionalLockEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    indicatorStyle: reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.black | reactDashNativeLib.reactDashNativeLibStrings.white = null,
+    maximumZoomScale: scala.Int | scala.Double = null,
+    minimumZoomScale: scala.Int | scala.Double = null,
+    onScrollAnimationEnd: js.Function0[scala.Unit] = null,
+    pinchGestureEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollEventThrottle: scala.Int | scala.Double = null,
+    scrollIndicatorInsets: Insets = null,
+    scrollsToTop: js.UndefOr[scala.Boolean] = js.undefined,
+    stickyHeaderIndices: js.Array[scala.Double] = null,
+    zoomScale: scala.Int | scala.Double = null
+  ): ScrollViewPropsIOS = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alwaysBounceHorizontal)) __obj.updateDynamic("alwaysBounceHorizontal")(alwaysBounceHorizontal)
+    if (!js.isUndefined(alwaysBounceVertical)) __obj.updateDynamic("alwaysBounceVertical")(alwaysBounceVertical)
+    if (!js.isUndefined(automaticallyAdjustContentInsets)) __obj.updateDynamic("automaticallyAdjustContentInsets")(automaticallyAdjustContentInsets)
+    if (!js.isUndefined(bounces)) __obj.updateDynamic("bounces")(bounces)
+    if (!js.isUndefined(bouncesZoom)) __obj.updateDynamic("bouncesZoom")(bouncesZoom)
+    if (!js.isUndefined(canCancelContentTouches)) __obj.updateDynamic("canCancelContentTouches")(canCancelContentTouches)
+    if (!js.isUndefined(centerContent)) __obj.updateDynamic("centerContent")(centerContent)
+    if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)
+    if (contentInsetAdjustmentBehavior != null) __obj.updateDynamic("contentInsetAdjustmentBehavior")(contentInsetAdjustmentBehavior.asInstanceOf[js.Any])
+    if (contentOffset != null) __obj.updateDynamic("contentOffset")(contentOffset)
+    if (decelerationRate != null) __obj.updateDynamic("decelerationRate")(decelerationRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(directionalLockEnabled)) __obj.updateDynamic("directionalLockEnabled")(directionalLockEnabled)
+    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
+    if (maximumZoomScale != null) __obj.updateDynamic("maximumZoomScale")(maximumZoomScale.asInstanceOf[js.Any])
+    if (minimumZoomScale != null) __obj.updateDynamic("minimumZoomScale")(minimumZoomScale.asInstanceOf[js.Any])
+    if (onScrollAnimationEnd != null) __obj.updateDynamic("onScrollAnimationEnd")(onScrollAnimationEnd)
+    if (!js.isUndefined(pinchGestureEnabled)) __obj.updateDynamic("pinchGestureEnabled")(pinchGestureEnabled)
+    if (scrollEventThrottle != null) __obj.updateDynamic("scrollEventThrottle")(scrollEventThrottle.asInstanceOf[js.Any])
+    if (scrollIndicatorInsets != null) __obj.updateDynamic("scrollIndicatorInsets")(scrollIndicatorInsets)
+    if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop)
+    if (stickyHeaderIndices != null) __obj.updateDynamic("stickyHeaderIndices")(stickyHeaderIndices)
+    if (zoomScale != null) __obj.updateDynamic("zoomScale")(zoomScale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScrollViewPropsIOS]
+  }
+}
+

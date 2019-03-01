@@ -10,3 +10,12 @@ trait SimpleSchemaError extends js.Object {
   var `type`: java.lang.String
 }
 
+object SimpleSchemaError {
+  @scala.inline
+  def apply(name: java.lang.String, `type`: java.lang.String): SimpleSchemaError = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[SimpleSchemaError]
+  }
+}
+

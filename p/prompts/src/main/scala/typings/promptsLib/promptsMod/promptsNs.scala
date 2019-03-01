@@ -58,6 +58,8 @@ object promptsNs extends js.Object {
     var validate: js.UndefOr[PrevCaller[T, scala.Unit]] = js.undefined
   }
   
+  trait PromptType extends js.Object
+  
   def autocomplete(args: PromptObject[java.lang.String]): js.Any = js.native
   def confirm(args: PromptObject[java.lang.String]): scala.Unit = js.native
   def invisible(args: PromptObject[java.lang.String]): js.Any = js.native
@@ -78,7 +80,6 @@ object promptsNs extends js.Object {
     /* prompt */ PromptObject[java.lang.String], 
     R
   ]
-  type PromptType = promptsLib.promptsLibStrings.text | promptsLib.promptsLibStrings.password | promptsLib.promptsLibStrings.invisible | promptsLib.promptsLibStrings.number | promptsLib.promptsLibStrings.confirm | promptsLib.promptsLibStrings.list | promptsLib.promptsLibStrings.toggle | promptsLib.promptsLibStrings.select | promptsLib.promptsLibStrings.multiselect | promptsLib.promptsLibStrings.autocomplete
   type ValueOrFunc[T /* <: java.lang.String */] = T | (PrevCaller[T, T])
 }
 

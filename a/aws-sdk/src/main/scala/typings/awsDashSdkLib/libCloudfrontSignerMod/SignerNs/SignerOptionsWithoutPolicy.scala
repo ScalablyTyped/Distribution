@@ -16,3 +16,13 @@ trait SignerOptionsWithoutPolicy extends js.Object {
   var url: java.lang.String
 }
 
+object SignerOptionsWithoutPolicy {
+  @scala.inline
+  def apply(expires: scala.Double, url: java.lang.String): SignerOptionsWithoutPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expires")(expires)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[SignerOptionsWithoutPolicy]
+  }
+}
+

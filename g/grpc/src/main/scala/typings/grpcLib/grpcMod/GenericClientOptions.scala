@@ -15,3 +15,12 @@ trait GenericClientOptions extends js.Object {
   var deprecatedArgumentOrder: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GenericClientOptions {
+  @scala.inline
+  def apply(deprecatedArgumentOrder: js.UndefOr[scala.Boolean] = js.undefined): GenericClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder)
+    __obj.asInstanceOf[GenericClientOptions]
+  }
+}
+

@@ -26,3 +26,24 @@ trait InProgressEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InProgressEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    e: js.Any = null,
+    files: js.Any = null,
+    model: js.Any = null,
+    percentage: js.Any = null,
+    `type`: java.lang.String = null
+  ): InProgressEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (e != null) __obj.updateDynamic("e")(e)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (percentage != null) __obj.updateDynamic("percentage")(percentage)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[InProgressEventArgs]
+  }
+}
+

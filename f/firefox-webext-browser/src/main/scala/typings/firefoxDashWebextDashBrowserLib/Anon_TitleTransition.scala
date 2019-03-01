@@ -16,3 +16,20 @@ trait Anon_TitleTransition extends js.Object {
   var visitTime: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date] = js.undefined
 }
 
+object Anon_TitleTransition {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    title: java.lang.String = null,
+    transition: firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType = null,
+    visitTime: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date = null
+  ): Anon_TitleTransition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (visitTime != null) __obj.updateDynamic("visitTime")(visitTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_TitleTransition]
+  }
+}
+

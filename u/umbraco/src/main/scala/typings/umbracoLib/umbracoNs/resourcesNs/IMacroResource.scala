@@ -40,3 +40,16 @@ trait IMacroResource extends js.Object {
   def getMacroResultAsHtmlForEditor(macroId: scala.Double, pageId: scala.Double, macroParamDictionary: js.Array[_]): js.Any
 }
 
+object IMacroResource {
+  @scala.inline
+  def apply(
+    getMacroParameters: js.Function1[scala.Double, js.Any],
+    getMacroResultAsHtmlForEditor: js.Function3[scala.Double, scala.Double, js.Array[_], js.Any]
+  ): IMacroResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getMacroParameters")(getMacroParameters)
+    __obj.updateDynamic("getMacroResultAsHtmlForEditor")(getMacroResultAsHtmlForEditor)
+    __obj.asInstanceOf[IMacroResource]
+  }
+}
+

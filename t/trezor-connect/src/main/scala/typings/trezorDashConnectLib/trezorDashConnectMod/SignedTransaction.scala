@@ -11,3 +11,18 @@ trait SignedTransaction extends js.Object {
   var txId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SignedTransaction {
+  @scala.inline
+  def apply(
+    serializedTx: java.lang.String,
+    signatures: js.Array[java.lang.String],
+    txId: java.lang.String = null
+  ): SignedTransaction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("serializedTx")(serializedTx)
+    __obj.updateDynamic("signatures")(signatures)
+    if (txId != null) __obj.updateDynamic("txId")(txId)
+    __obj.asInstanceOf[SignedTransaction]
+  }
+}
+

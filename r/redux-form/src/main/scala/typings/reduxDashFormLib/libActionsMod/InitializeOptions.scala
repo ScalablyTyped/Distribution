@@ -12,3 +12,20 @@ trait InitializeOptions extends js.Object {
   var updateUnregisteredFields: scala.Boolean
 }
 
+object InitializeOptions {
+  @scala.inline
+  def apply(
+    keepDirty: scala.Boolean,
+    keepSubmitSucceeded: scala.Boolean,
+    keepValues: scala.Boolean,
+    updateUnregisteredFields: scala.Boolean
+  ): InitializeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keepDirty")(keepDirty)
+    __obj.updateDynamic("keepSubmitSucceeded")(keepSubmitSucceeded)
+    __obj.updateDynamic("keepValues")(keepValues)
+    __obj.updateDynamic("updateUnregisteredFields")(updateUnregisteredFields)
+    __obj.asInstanceOf[InitializeOptions]
+  }
+}
+

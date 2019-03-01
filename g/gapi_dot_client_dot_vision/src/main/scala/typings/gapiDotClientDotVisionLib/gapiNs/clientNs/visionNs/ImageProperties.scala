@@ -10,3 +10,12 @@ trait ImageProperties extends js.Object {
   var dominantColors: js.UndefOr[DominantColorsAnnotation] = js.undefined
 }
 
+object ImageProperties {
+  @scala.inline
+  def apply(dominantColors: DominantColorsAnnotation = null): ImageProperties = {
+    val __obj = js.Dynamic.literal()
+    if (dominantColors != null) __obj.updateDynamic("dominantColors")(dominantColors)
+    __obj.asInstanceOf[ImageProperties]
+  }
+}
+

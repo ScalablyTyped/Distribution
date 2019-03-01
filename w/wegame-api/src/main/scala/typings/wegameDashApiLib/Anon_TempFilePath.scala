@@ -9,3 +9,12 @@ trait Anon_TempFilePath extends js.Object {
   var tempFilePath: java.lang.String
 }
 
+object Anon_TempFilePath {
+  @scala.inline
+  def apply(tempFilePath: java.lang.String): Anon_TempFilePath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tempFilePath")(tempFilePath)
+    __obj.asInstanceOf[Anon_TempFilePath]
+  }
+}
+

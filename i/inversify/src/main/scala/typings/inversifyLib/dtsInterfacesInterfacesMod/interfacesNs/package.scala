@@ -14,8 +14,6 @@ package object interfacesNs {
     js.Promise[scala.Unit]
   ]
   type Bind = js.Function1[/* serviceIdentifier */ ServiceIdentifier[js.Any], BindingToSyntax[js.Any]]
-  type BindingScope = inversifyLib.inversifyLibStrings.Singleton | inversifyLib.inversifyLibStrings.Transient | inversifyLib.inversifyLibStrings.Request
-  type BindingType = inversifyLib.inversifyLibStrings.ConstantValue | inversifyLib.inversifyLibStrings.Constructor | inversifyLib.inversifyLibStrings.DynamicValue | inversifyLib.inversifyLibStrings.Factory | inversifyLib.inversifyLibStrings.Function | inversifyLib.inversifyLibStrings.Instance | inversifyLib.inversifyLibStrings.Invalid | inversifyLib.inversifyLibStrings.Provider
   type ContainerModuleCallBack = js.Function4[
     /* bind */ Bind, 
     /* unbind */ Unbind, 
@@ -37,7 +35,6 @@ package object interfacesNs {
   type Rebind = js.Function1[/* serviceIdentifier */ ServiceIdentifier[js.Any], BindingToSyntax[js.Any]]
   type RequestScope = (stdLib.Map[js.Any, js.Any]) | scala.Null
   type ResolveRequestHandler = js.Function1[/* request */ Request, js.Any]
-  type ServiceIdentifier[T] = java.lang.String | js.Symbol | Newable[T] | Abstract[T]
-  type TargetType = inversifyLib.inversifyLibStrings.ConstructorArgument | inversifyLib.inversifyLibStrings.ClassProperty | inversifyLib.inversifyLibStrings.Variable
+  type ServiceIdentifier[T] = _ServiceIdentifier[T] | java.lang.String | js.Symbol
   type Unbind = js.Function1[/* serviceIdentifier */ ServiceIdentifier[js.Any], scala.Unit]
 }

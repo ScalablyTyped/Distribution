@@ -13,3 +13,22 @@ trait V4Config extends js.Object {
   var whitelist: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object V4Config {
+  @scala.inline
+  def apply(
+    blacklist: js.Array[java.lang.String] = null,
+    keyPrefix: java.lang.String = null,
+    storage: js.Any = null,
+    transforms: js.Array[reduxDashPersistLib.esCreateTransformMod.Transform[_, _]] = null,
+    whitelist: js.Array[java.lang.String] = null
+  ): V4Config = {
+    val __obj = js.Dynamic.literal()
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
+    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix)
+    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    __obj.asInstanceOf[V4Config]
+  }
+}
+

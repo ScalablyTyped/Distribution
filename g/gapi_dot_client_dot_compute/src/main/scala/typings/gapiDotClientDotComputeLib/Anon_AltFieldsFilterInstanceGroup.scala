@@ -65,3 +65,40 @@ trait Anon_AltFieldsFilterInstanceGroup extends js.Object {
   var zone: java.lang.String
 }
 
+object Anon_AltFieldsFilterInstanceGroup {
+  @scala.inline
+  def apply(
+    instanceGroup: java.lang.String,
+    project: java.lang.String,
+    zone: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    filter: java.lang.String = null,
+    key: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    orderBy: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltFieldsFilterInstanceGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("instanceGroup")(instanceGroup)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("zone")(zone)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltFieldsFilterInstanceGroup]
+  }
+}
+

@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation._
 
 object bnDotJsLibStrings {
   @js.native
-  sealed trait be extends js.Object
+  sealed trait be extends Endianness
   
   @js.native
   sealed trait hex extends js.Object
   
   @js.native
-  sealed trait k256 extends js.Object
+  sealed trait k256 extends IPrimeName
   
   @js.native
-  sealed trait le extends js.Object
+  sealed trait le extends Endianness
   
   @js.native
-  sealed trait p192 extends js.Object
+  sealed trait p192 extends IPrimeName
   
   @js.native
-  sealed trait p224 extends js.Object
+  sealed trait p224 extends IPrimeName
   
   @js.native
-  sealed trait p25519 extends js.Object
+  sealed trait p25519 extends IPrimeName
   
   @scala.inline
   def be: be = "be".asInstanceOf[be]

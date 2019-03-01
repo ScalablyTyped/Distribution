@@ -23,3 +23,18 @@ trait JumpListCategory extends js.Object {
   ] = js.undefined
 }
 
+object JumpListCategory {
+  @scala.inline
+  def apply(
+    items: js.Array[JumpListItem] = null,
+    name: java.lang.String = null,
+    `type`: electronLib.electronLibStrings.tasks | electronLib.electronLibStrings.frequent | electronLib.electronLibStrings.recent | electronLib.electronLibStrings.custom = null
+  ): JumpListCategory = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JumpListCategory]
+  }
+}
+

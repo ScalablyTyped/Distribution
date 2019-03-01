@@ -10,3 +10,16 @@ trait Anon_AdStatusPConnectionConnection extends js.Object {
   val pConnection: activexDashAdodbLib.ADODBNs.Connection
 }
 
+object Anon_AdStatusPConnectionConnection {
+  @scala.inline
+  def apply(
+    adStatus: activexDashAdodbLib.ADODBNs.EventStatusEnum,
+    pConnection: activexDashAdodbLib.ADODBNs.Connection
+  ): Anon_AdStatusPConnectionConnection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adStatus")(adStatus)
+    __obj.updateDynamic("pConnection")(pConnection)
+    __obj.asInstanceOf[Anon_AdStatusPConnectionConnection]
+  }
+}
+

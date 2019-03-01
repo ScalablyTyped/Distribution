@@ -23,3 +23,18 @@ trait MirrorConfig extends js.Object {
   var webhookId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MirrorConfig {
+  @scala.inline
+  def apply(
+    deployKeyId: java.lang.String = null,
+    url: java.lang.String = null,
+    webhookId: java.lang.String = null
+  ): MirrorConfig = {
+    val __obj = js.Dynamic.literal()
+    if (deployKeyId != null) __obj.updateDynamic("deployKeyId")(deployKeyId)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (webhookId != null) __obj.updateDynamic("webhookId")(webhookId)
+    __obj.asInstanceOf[MirrorConfig]
+  }
+}
+

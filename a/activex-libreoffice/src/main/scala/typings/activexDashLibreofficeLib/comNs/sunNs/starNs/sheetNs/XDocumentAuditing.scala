@@ -16,3 +16,20 @@ trait XDocumentAuditing
   def refreshArrows(): scala.Unit
 }
 
+object XDocumentAuditing {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    refreshArrows: js.Function0[scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XDocumentAuditing = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("refreshArrows")(refreshArrows)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDocumentAuditing]
+  }
+}
+

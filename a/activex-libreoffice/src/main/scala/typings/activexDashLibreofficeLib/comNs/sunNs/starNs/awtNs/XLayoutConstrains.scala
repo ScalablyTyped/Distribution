@@ -20,3 +20,28 @@ trait XLayoutConstrains
   def getPreferredSize(): Size
 }
 
+object XLayoutConstrains {
+  @scala.inline
+  def apply(
+    MinimumSize: Size,
+    PreferredSize: Size,
+    acquire: js.Function0[scala.Unit],
+    calcAdjustedSize: js.Function1[Size, Size],
+    getMinimumSize: js.Function0[Size],
+    getPreferredSize: js.Function0[Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLayoutConstrains = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MinimumSize")(MinimumSize)
+    __obj.updateDynamic("PreferredSize")(PreferredSize)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("calcAdjustedSize")(calcAdjustedSize)
+    __obj.updateDynamic("getMinimumSize")(getMinimumSize)
+    __obj.updateDynamic("getPreferredSize")(getPreferredSize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XLayoutConstrains]
+  }
+}
+

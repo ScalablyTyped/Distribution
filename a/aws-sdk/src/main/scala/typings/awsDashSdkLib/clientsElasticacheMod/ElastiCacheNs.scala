@@ -3153,10 +3153,22 @@ object ElastiCacheNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[ReplicationGroupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _AZMode extends js.Object
+  
+  trait _AutomaticFailoverStatus extends js.Object
+  
+  trait _ChangeType extends js.Object
+  
+  trait _PendingAutomaticFailoverStatus extends js.Object
+  
+  trait _SourceType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
-  type AZMode = awsDashSdkLib.awsDashSdkLibStrings.`single-az` | awsDashSdkLib.awsDashSdkLibStrings.`cross-az` | java.lang.String
+  type AZMode = _AZMode | java.lang.String
   type AllowedNodeGroupId = java.lang.String
-  type AutomaticFailoverStatus = awsDashSdkLib.awsDashSdkLibStrings.enabled | awsDashSdkLib.awsDashSdkLibStrings.disabled | awsDashSdkLib.awsDashSdkLibStrings.enabling | awsDashSdkLib.awsDashSdkLibStrings.disabling | java.lang.String
+  type AutomaticFailoverStatus = _AutomaticFailoverStatus | java.lang.String
   type AvailabilityZonesList = js.Array[String]
   type Boolean = scala.Boolean
   type BooleanOptional = scala.Boolean
@@ -3171,7 +3183,7 @@ object ElastiCacheNs extends js.Object {
   type CacheSecurityGroupNameList = js.Array[String]
   type CacheSecurityGroups = js.Array[CacheSecurityGroup]
   type CacheSubnetGroups = js.Array[CacheSubnetGroup]
-  type ChangeType = awsDashSdkLib.awsDashSdkLibStrings.immediate | awsDashSdkLib.awsDashSdkLibStrings.`requires-reboot` | java.lang.String
+  type ChangeType = _ChangeType | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClusterIdList = js.Array[String]
   type Double = scala.Double
@@ -3189,7 +3201,7 @@ object ElastiCacheNs extends js.Object {
   type NodeTypeList = js.Array[String]
   type ParameterNameValueList = js.Array[ParameterNameValue]
   type ParametersList = js.Array[Parameter]
-  type PendingAutomaticFailoverStatus = awsDashSdkLib.awsDashSdkLibStrings.enabled | awsDashSdkLib.awsDashSdkLibStrings.disabled | java.lang.String
+  type PendingAutomaticFailoverStatus = _PendingAutomaticFailoverStatus | java.lang.String
   type PreferredAvailabilityZoneList = js.Array[String]
   type RecurringChargeList = js.Array[RecurringCharge]
   type RemoveReplicasList = js.Array[String]
@@ -3202,12 +3214,12 @@ object ElastiCacheNs extends js.Object {
   type SecurityGroupMembershipList = js.Array[SecurityGroupMembership]
   type SnapshotArnsList = js.Array[String]
   type SnapshotList = js.Array[Snapshot]
-  type SourceType = awsDashSdkLib.awsDashSdkLibStrings.`cache-cluster` | awsDashSdkLib.awsDashSdkLibStrings.`cache-parameter-group` | awsDashSdkLib.awsDashSdkLibStrings.`cache-security-group` | awsDashSdkLib.awsDashSdkLibStrings.`cache-subnet-group` | awsDashSdkLib.awsDashSdkLibStrings.`replication-group` | java.lang.String
+  type SourceType = _SourceType | java.lang.String
   type String = java.lang.String
   type SubnetIdentifierList = js.Array[String]
   type SubnetList = js.Array[Subnet]
   type TStamp = stdLib.Date
   type TagList = js.Array[Tag]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2012-11-15` | awsDashSdkLib.awsDashSdkLibStrings.`2014-03-24` | awsDashSdkLib.awsDashSdkLibStrings.`2014-07-15` | awsDashSdkLib.awsDashSdkLibStrings.`2014-09-30` | awsDashSdkLib.awsDashSdkLibStrings.`2015-02-02` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

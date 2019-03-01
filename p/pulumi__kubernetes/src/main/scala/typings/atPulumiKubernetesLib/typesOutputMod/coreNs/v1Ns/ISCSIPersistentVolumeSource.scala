@@ -63,3 +63,34 @@ trait ISCSIPersistentVolumeSource extends js.Object {
   val targetPortal: java.lang.String
 }
 
+object ISCSIPersistentVolumeSource {
+  @scala.inline
+  def apply(
+    chapAuthDiscovery: scala.Boolean,
+    chapAuthSession: scala.Boolean,
+    fsType: java.lang.String,
+    initiatorName: java.lang.String,
+    iqn: java.lang.String,
+    iscsiInterface: java.lang.String,
+    lun: scala.Double,
+    portals: js.Array[java.lang.String],
+    readOnly: scala.Boolean,
+    secretRef: SecretReference,
+    targetPortal: java.lang.String
+  ): ISCSIPersistentVolumeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chapAuthDiscovery")(chapAuthDiscovery)
+    __obj.updateDynamic("chapAuthSession")(chapAuthSession)
+    __obj.updateDynamic("fsType")(fsType)
+    __obj.updateDynamic("initiatorName")(initiatorName)
+    __obj.updateDynamic("iqn")(iqn)
+    __obj.updateDynamic("iscsiInterface")(iscsiInterface)
+    __obj.updateDynamic("lun")(lun)
+    __obj.updateDynamic("portals")(portals)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.updateDynamic("secretRef")(secretRef)
+    __obj.updateDynamic("targetPortal")(targetPortal)
+    __obj.asInstanceOf[ISCSIPersistentVolumeSource]
+  }
+}
+

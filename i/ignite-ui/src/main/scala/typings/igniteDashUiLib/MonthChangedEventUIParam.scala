@@ -16,3 +16,13 @@ trait MonthChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object MonthChangedEventUIParam {
+  @scala.inline
+  def apply(newSelectedDate: js.Any = null, owner: js.Any = null): MonthChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (newSelectedDate != null) __obj.updateDynamic("newSelectedDate")(newSelectedDate)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[MonthChangedEventUIParam]
+  }
+}
+

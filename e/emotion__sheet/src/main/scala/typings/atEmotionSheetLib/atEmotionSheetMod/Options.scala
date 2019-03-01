@@ -12,3 +12,20 @@ trait Options extends js.Object {
   var speedy: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    container: stdLib.HTMLElement,
+    key: java.lang.String,
+    nonce: java.lang.String = null,
+    speedy: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("key")(key)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy)
+    __obj.asInstanceOf[Options]
+  }
+}
+

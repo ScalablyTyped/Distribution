@@ -37,3 +37,22 @@ trait ConfigChange extends js.Object {
   var oldValue: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConfigChange {
+  @scala.inline
+  def apply(
+    advices: js.Array[Advice] = null,
+    changeType: java.lang.String = null,
+    element: java.lang.String = null,
+    newValue: java.lang.String = null,
+    oldValue: java.lang.String = null
+  ): ConfigChange = {
+    val __obj = js.Dynamic.literal()
+    if (advices != null) __obj.updateDynamic("advices")(advices)
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    __obj.asInstanceOf[ConfigChange]
+  }
+}
+

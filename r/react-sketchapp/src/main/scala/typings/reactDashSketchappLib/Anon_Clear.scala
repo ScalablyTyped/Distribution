@@ -32,3 +32,29 @@ trait Anon_Clear extends js.Object {
   def resolve(style: reactDashSketchappLib.reactDashSketchappMod.TextStyle): js.Any
 }
 
+object Anon_Clear {
+  @scala.inline
+  def apply(
+    clear: js.Function0[scala.Unit],
+    create: js.Function2[
+      Anon_ClearExistingStyles, 
+      org.scalablytyped.runtime.StringDictionary[reactDashSketchappLib.reactDashSketchappMod.TextStyle], 
+      js.Any
+    ],
+    get: js.Function1[
+      java.lang.String, 
+      js.UndefOr[reactDashSketchappLib.reactDashSketchappMod.TextStyle]
+    ],
+    resolve: js.Function1[reactDashSketchappLib.reactDashSketchappMod.TextStyle, js.Any],
+    styles: org.scalablytyped.runtime.StringDictionary[js.UndefOr[reactDashSketchappLib.reactDashSketchappMod.TextStyle]]
+  ): Anon_Clear = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("resolve")(resolve)
+    __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[Anon_Clear]
+  }
+}
+

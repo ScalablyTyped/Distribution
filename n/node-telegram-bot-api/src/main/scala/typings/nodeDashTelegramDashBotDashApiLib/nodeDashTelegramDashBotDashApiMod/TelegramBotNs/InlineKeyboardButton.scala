@@ -15,3 +15,26 @@ trait InlineKeyboardButton extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InlineKeyboardButton {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    callback_data: java.lang.String = null,
+    callback_game: CallbackGame = null,
+    pay: js.UndefOr[scala.Boolean] = js.undefined,
+    switch_inline_query: java.lang.String = null,
+    switch_inline_query_current_chat: java.lang.String = null,
+    url: java.lang.String = null
+  ): InlineKeyboardButton = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (callback_data != null) __obj.updateDynamic("callback_data")(callback_data)
+    if (callback_game != null) __obj.updateDynamic("callback_game")(callback_game)
+    if (!js.isUndefined(pay)) __obj.updateDynamic("pay")(pay)
+    if (switch_inline_query != null) __obj.updateDynamic("switch_inline_query")(switch_inline_query)
+    if (switch_inline_query_current_chat != null) __obj.updateDynamic("switch_inline_query_current_chat")(switch_inline_query_current_chat)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[InlineKeyboardButton]
+  }
+}
+

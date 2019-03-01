@@ -91,3 +91,42 @@ trait AnnouncementsResource extends js.Object {
   def patch(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
 }
 
+object AnnouncementsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltAnnouncementStates, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAnnouncementsResponse]
+    ],
+    modifyAssignees: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
+    ]
+  ): AnnouncementsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("modifyAssignees")(modifyAssignees)
+    __obj.updateDynamic("patch")(patch)
+    __obj.asInstanceOf[AnnouncementsResource]
+  }
+}
+

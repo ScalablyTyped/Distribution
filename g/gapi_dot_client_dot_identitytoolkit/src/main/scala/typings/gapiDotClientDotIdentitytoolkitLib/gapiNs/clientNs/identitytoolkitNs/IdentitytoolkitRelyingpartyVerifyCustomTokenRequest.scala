@@ -16,3 +16,20 @@ trait IdentitytoolkitRelyingpartyVerifyCustomTokenRequest extends js.Object {
   var token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartyVerifyCustomTokenRequest {
+  @scala.inline
+  def apply(
+    delegatedProjectNumber: java.lang.String = null,
+    instanceId: java.lang.String = null,
+    returnSecureToken: js.UndefOr[scala.Boolean] = js.undefined,
+    token: java.lang.String = null
+  ): IdentitytoolkitRelyingpartyVerifyCustomTokenRequest = {
+    val __obj = js.Dynamic.literal()
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyCustomTokenRequest]
+  }
+}
+

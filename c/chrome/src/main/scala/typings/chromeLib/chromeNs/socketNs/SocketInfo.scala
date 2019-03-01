@@ -14,3 +14,24 @@ trait SocketInfo extends js.Object {
   var socketType: java.lang.String
 }
 
+object SocketInfo {
+  @scala.inline
+  def apply(
+    connected: scala.Boolean,
+    socketType: java.lang.String,
+    localAddress: java.lang.String = null,
+    localPort: scala.Int | scala.Double = null,
+    peerAddress: java.lang.String = null,
+    peerPort: scala.Int | scala.Double = null
+  ): SocketInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connected")(connected)
+    __obj.updateDynamic("socketType")(socketType)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
+    if (peerAddress != null) __obj.updateDynamic("peerAddress")(peerAddress)
+    if (peerPort != null) __obj.updateDynamic("peerPort")(peerPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SocketInfo]
+  }
+}
+

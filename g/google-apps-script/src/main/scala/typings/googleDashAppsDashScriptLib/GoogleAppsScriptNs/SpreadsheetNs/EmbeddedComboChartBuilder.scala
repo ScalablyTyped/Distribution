@@ -51,3 +51,124 @@ trait EmbeddedComboChartBuilder extends js.Object {
   def useLogScale(): EmbeddedComboChartBuilder
 }
 
+object EmbeddedComboChartBuilder {
+  @scala.inline
+  def apply(
+    addRange: js.Function1[Range, EmbeddedChartBuilder],
+    asAreaChart: js.Function0[EmbeddedAreaChartBuilder],
+    asBarChart: js.Function0[EmbeddedBarChartBuilder],
+    asColumnChart: js.Function0[EmbeddedColumnChartBuilder],
+    asComboChart: js.Function0[EmbeddedComboChartBuilder],
+    asHistogramChart: js.Function0[EmbeddedHistogramChartBuilder],
+    asLineChart: js.Function0[EmbeddedLineChartBuilder],
+    asPieChart: js.Function0[EmbeddedPieChartBuilder],
+    asScatterChart: js.Function0[EmbeddedScatterChartBuilder],
+    asTableChart: js.Function0[EmbeddedTableChartBuilder],
+    build: js.Function0[EmbeddedChart],
+    getChartType: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType],
+    getContainer: js.Function0[ContainerInfo],
+    getRanges: js.Function0[js.Array[Range]],
+    removeRange: js.Function1[Range, EmbeddedChartBuilder],
+    reverseCategories: js.Function0[EmbeddedComboChartBuilder],
+    setBackgroundColor: js.Function1[java.lang.String, EmbeddedComboChartBuilder],
+    setChartType: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartType, 
+      EmbeddedChartBuilder
+    ],
+    setColors: js.Function1[js.Array[java.lang.String], EmbeddedComboChartBuilder],
+    setHiddenDimensionStrategy: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy, 
+      EmbeddedChartBuilder
+    ],
+    setLegendPosition: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Position, 
+      EmbeddedComboChartBuilder
+    ],
+    setLegendTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedComboChartBuilder
+    ],
+    setMergeStrategy: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy, 
+      EmbeddedChartBuilder
+    ],
+    setNumHeaders: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, EmbeddedChartBuilder],
+    setOption: js.Function2[java.lang.String, js.Object, EmbeddedChartBuilder],
+    setPosition: js.Function4[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      EmbeddedChartBuilder
+    ],
+    setRange: js.Function2[stdLib.Number, stdLib.Number, EmbeddedComboChartBuilder],
+    setStacked: js.Function0[EmbeddedComboChartBuilder],
+    setTitle: js.Function1[java.lang.String, EmbeddedComboChartBuilder],
+    setTitleTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedComboChartBuilder
+    ],
+    setTransposeRowsAndColumns: js.Function1[scala.Boolean, EmbeddedChartBuilder],
+    setXAxisTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedComboChartBuilder
+    ],
+    setXAxisTitle: js.Function1[java.lang.String, EmbeddedComboChartBuilder],
+    setXAxisTitleTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedComboChartBuilder
+    ],
+    setYAxisTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedComboChartBuilder
+    ],
+    setYAxisTitle: js.Function1[java.lang.String, EmbeddedComboChartBuilder],
+    setYAxisTitleTextStyle: js.Function1[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle, 
+      EmbeddedComboChartBuilder
+    ],
+    useLogScale: js.Function0[EmbeddedComboChartBuilder]
+  ): EmbeddedComboChartBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addRange")(addRange)
+    __obj.updateDynamic("asAreaChart")(asAreaChart)
+    __obj.updateDynamic("asBarChart")(asBarChart)
+    __obj.updateDynamic("asColumnChart")(asColumnChart)
+    __obj.updateDynamic("asComboChart")(asComboChart)
+    __obj.updateDynamic("asHistogramChart")(asHistogramChart)
+    __obj.updateDynamic("asLineChart")(asLineChart)
+    __obj.updateDynamic("asPieChart")(asPieChart)
+    __obj.updateDynamic("asScatterChart")(asScatterChart)
+    __obj.updateDynamic("asTableChart")(asTableChart)
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("getChartType")(getChartType)
+    __obj.updateDynamic("getContainer")(getContainer)
+    __obj.updateDynamic("getRanges")(getRanges)
+    __obj.updateDynamic("removeRange")(removeRange)
+    __obj.updateDynamic("reverseCategories")(reverseCategories)
+    __obj.updateDynamic("setBackgroundColor")(setBackgroundColor)
+    __obj.updateDynamic("setChartType")(setChartType)
+    __obj.updateDynamic("setColors")(setColors)
+    __obj.updateDynamic("setHiddenDimensionStrategy")(setHiddenDimensionStrategy)
+    __obj.updateDynamic("setLegendPosition")(setLegendPosition)
+    __obj.updateDynamic("setLegendTextStyle")(setLegendTextStyle)
+    __obj.updateDynamic("setMergeStrategy")(setMergeStrategy)
+    __obj.updateDynamic("setNumHeaders")(setNumHeaders)
+    __obj.updateDynamic("setOption")(setOption)
+    __obj.updateDynamic("setPosition")(setPosition)
+    __obj.updateDynamic("setRange")(setRange)
+    __obj.updateDynamic("setStacked")(setStacked)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("setTitleTextStyle")(setTitleTextStyle)
+    __obj.updateDynamic("setTransposeRowsAndColumns")(setTransposeRowsAndColumns)
+    __obj.updateDynamic("setXAxisTextStyle")(setXAxisTextStyle)
+    __obj.updateDynamic("setXAxisTitle")(setXAxisTitle)
+    __obj.updateDynamic("setXAxisTitleTextStyle")(setXAxisTitleTextStyle)
+    __obj.updateDynamic("setYAxisTextStyle")(setYAxisTextStyle)
+    __obj.updateDynamic("setYAxisTitle")(setYAxisTitle)
+    __obj.updateDynamic("setYAxisTitleTextStyle")(setYAxisTitleTextStyle)
+    __obj.updateDynamic("useLogScale")(useLogScale)
+    __obj.asInstanceOf[EmbeddedComboChartBuilder]
+  }
+}
+

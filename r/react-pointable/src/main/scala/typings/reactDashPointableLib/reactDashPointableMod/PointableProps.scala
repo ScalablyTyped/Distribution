@@ -275,3 +275,22 @@ import scala.scalajs.js.annotation._
   var zoomAndPan: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PointableProps {
+  @scala.inline
+  def apply(
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.Element] = null,
+    SVGAttributes: reactLib.reactMod.ReactNs.SVGAttributes[reactLib.Element] = null,
+    elementRef: js.Function1[/* el */ reactLib.HTMLElement | reactLib.SVGElement, scala.Unit] = null,
+    tagName: java.lang.String = null,
+    touchAction: TouchAction = null
+  ): PointableProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, SVGAttributes)
+    if (elementRef != null) __obj.updateDynamic("elementRef")(elementRef)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (touchAction != null) __obj.updateDynamic("touchAction")(touchAction)
+    __obj.asInstanceOf[PointableProps]
+  }
+}
+

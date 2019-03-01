@@ -11,3 +11,22 @@ trait AntTreeNodeSelectedEvent extends AntTreeNodeBaseEvent {
   var selectedNodes: js.UndefOr[js.Array[AntTreeNode]] = js.undefined
 }
 
+object AntTreeNodeSelectedEvent {
+  @scala.inline
+  def apply(
+    event: antdLib.antdLibStrings.select,
+    nativeEvent: reactLib.MouseEvent,
+    node: AntTreeNode,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedNodes: js.Array[AntTreeNode] = null
+  ): AntTreeNodeSelectedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("nativeEvent")(nativeEvent)
+    __obj.updateDynamic("node")(node)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (selectedNodes != null) __obj.updateDynamic("selectedNodes")(selectedNodes)
+    __obj.asInstanceOf[AntTreeNodeSelectedEvent]
+  }
+}
+

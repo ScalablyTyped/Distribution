@@ -18,3 +18,22 @@ trait PublicProfile extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PublicProfile {
+  @scala.inline
+  def apply(
+    displayImageUrl: java.lang.String = null,
+    displayName: java.lang.String = null,
+    id: java.lang.String = null,
+    profileImage: java.lang.String = null,
+    url: java.lang.String = null
+  ): PublicProfile = {
+    val __obj = js.Dynamic.literal()
+    if (displayImageUrl != null) __obj.updateDynamic("displayImageUrl")(displayImageUrl)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (profileImage != null) __obj.updateDynamic("profileImage")(profileImage)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[PublicProfile]
+  }
+}
+

@@ -24,3 +24,20 @@ trait SearchInContentParameterType extends js.Object {
   var scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId
 }
 
+object SearchInContentParameterType {
+  @scala.inline
+  def apply(
+    query: java.lang.String,
+    scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId,
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    isRegex: js.UndefOr[scala.Boolean] = js.undefined
+  ): SearchInContentParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("scriptId")(scriptId)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (!js.isUndefined(isRegex)) __obj.updateDynamic("isRegex")(isRegex)
+    __obj.asInstanceOf[SearchInContentParameterType]
+  }
+}
+

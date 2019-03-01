@@ -11,3 +11,16 @@ trait Utils extends js.Object {
   def toHex(msg: js.Any): java.lang.String
 }
 
+object Utils {
+  @scala.inline
+  def apply(
+    toArray_hex: js.Function2[js.Any, hashDotJsLib.hashDotJsLibStrings.hex, js.Array[scala.Double]],
+    toHex: js.Function1[js.Any, java.lang.String]
+  ): Utils = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toArray")(toArray_hex)
+    __obj.updateDynamic("toHex")(toHex)
+    __obj.asInstanceOf[Utils]
+  }
+}
+

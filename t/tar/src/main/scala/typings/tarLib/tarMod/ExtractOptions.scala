@@ -111,3 +111,56 @@ trait ExtractOptions extends js.Object {
   var unlink: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ExtractOptions {
+  @scala.inline
+  def apply(
+    C: java.lang.String = null,
+    Directory: js.UndefOr[scala.Boolean] = js.undefined,
+    cwd: java.lang.String = null,
+    filter: js.Function2[/* path */ java.lang.String, /* stat */ FileStat, scala.Boolean] = null,
+    gui: scala.Int | scala.Double = null,
+    k: js.UndefOr[scala.Boolean] = js.undefined,
+    keep: js.UndefOr[scala.Boolean] = js.undefined,
+    `keep-existing`: js.UndefOr[scala.Boolean] = js.undefined,
+    `keep-newer`: js.UndefOr[scala.Boolean] = js.undefined,
+    `keep-newer-files`: js.UndefOr[scala.Boolean] = js.undefined,
+    newer: js.UndefOr[scala.Boolean] = js.undefined,
+    onwarn: js.Function2[/* message */ java.lang.String, /* data */ nodeLib.Buffer, scala.Unit] = null,
+    p: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    preserveOwner: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    strip: scala.Int | scala.Double = null,
+    `strip-components`: scala.Int | scala.Double = null,
+    stripComponents: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    uid: scala.Int | scala.Double = null,
+    unlink: js.UndefOr[scala.Boolean] = js.undefined
+  ): ExtractOptions = {
+    val __obj = js.Dynamic.literal()
+    if (C != null) __obj.updateDynamic("C")(C)
+    if (!js.isUndefined(Directory)) __obj.updateDynamic("Directory")(Directory)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (gui != null) __obj.updateDynamic("gui")(gui.asInstanceOf[js.Any])
+    if (!js.isUndefined(k)) __obj.updateDynamic("k")(k)
+    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep)
+    if (!js.isUndefined(`keep-existing`)) __obj.updateDynamic("keep-existing")(`keep-existing`)
+    if (!js.isUndefined(`keep-newer`)) __obj.updateDynamic("keep-newer")(`keep-newer`)
+    if (!js.isUndefined(`keep-newer-files`)) __obj.updateDynamic("keep-newer-files")(`keep-newer-files`)
+    if (!js.isUndefined(newer)) __obj.updateDynamic("newer")(newer)
+    if (onwarn != null) __obj.updateDynamic("onwarn")(onwarn)
+    if (!js.isUndefined(p)) __obj.updateDynamic("p")(p)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(preserveOwner)) __obj.updateDynamic("preserveOwner")(preserveOwner)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (strip != null) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
+    if (`strip-components` != null) __obj.updateDynamic("strip-components")(`strip-components`.asInstanceOf[js.Any])
+    if (stripComponents != null) __obj.updateDynamic("stripComponents")(stripComponents.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    if (!js.isUndefined(unlink)) __obj.updateDynamic("unlink")(unlink)
+    __obj.asInstanceOf[ExtractOptions]
+  }
+}
+

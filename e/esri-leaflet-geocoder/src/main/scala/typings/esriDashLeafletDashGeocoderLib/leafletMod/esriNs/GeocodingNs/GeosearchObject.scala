@@ -18,3 +18,32 @@ trait GeosearchObject extends js.Object {
   var zoomToResult: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GeosearchObject {
+  @scala.inline
+  def apply(
+    allowMultipleResults: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseAfterResult: js.UndefOr[scala.Boolean] = js.undefined,
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    placeholder: java.lang.String = null,
+    position: leafletLib.leafletMod.ControlPosition = null,
+    providers: js.Array[GeosearchProvider] = null,
+    searchBounds: leafletLib.leafletMod.LatLngBoundsExpression = null,
+    title: java.lang.String = null,
+    useMapBounds: scala.Boolean | scala.Double = null,
+    zoomToResult: js.UndefOr[scala.Boolean] = js.undefined
+  ): GeosearchObject = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMultipleResults)) __obj.updateDynamic("allowMultipleResults")(allowMultipleResults)
+    if (!js.isUndefined(collapseAfterResult)) __obj.updateDynamic("collapseAfterResult")(collapseAfterResult)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (searchBounds != null) __obj.updateDynamic("searchBounds")(searchBounds.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (useMapBounds != null) __obj.updateDynamic("useMapBounds")(useMapBounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomToResult)) __obj.updateDynamic("zoomToResult")(zoomToResult)
+    __obj.asInstanceOf[GeosearchObject]
+  }
+}
+

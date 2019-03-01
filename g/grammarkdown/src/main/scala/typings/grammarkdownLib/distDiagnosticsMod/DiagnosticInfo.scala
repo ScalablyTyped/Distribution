@@ -18,3 +18,32 @@ trait DiagnosticInfo extends js.Object {
   var warning: scala.Boolean
 }
 
+object DiagnosticInfo {
+  @scala.inline
+  def apply(
+    code: scala.Double,
+    diagnosticIndex: scala.Double,
+    message: java.lang.String,
+    pos: scala.Double,
+    warning: scala.Boolean,
+    formattedMessage: java.lang.String = null,
+    messageArguments: js.Array[_] = null,
+    node: grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind] = null,
+    range: grammarkdownLib.distCoreMod.Range = null,
+    sourceFile: grammarkdownLib.distNodesMod.SourceFile = null
+  ): DiagnosticInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("diagnosticIndex")(diagnosticIndex)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("pos")(pos)
+    __obj.updateDynamic("warning")(warning)
+    if (formattedMessage != null) __obj.updateDynamic("formattedMessage")(formattedMessage)
+    if (messageArguments != null) __obj.updateDynamic("messageArguments")(messageArguments)
+    if (node != null) __obj.updateDynamic("node")(node)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile)
+    __obj.asInstanceOf[DiagnosticInfo]
+  }
+}
+

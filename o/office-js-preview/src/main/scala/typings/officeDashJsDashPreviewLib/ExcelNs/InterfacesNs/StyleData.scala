@@ -176,3 +176,58 @@ trait StyleData extends js.Object {
   var wrapText: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StyleData {
+  @scala.inline
+  def apply(
+    autoIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    borders: js.Array[RangeBorderData] = null,
+    builtIn: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: RangeFillData = null,
+    font: RangeFontData = null,
+    formulaHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalAlignment: officeDashJsDashPreviewLib.ExcelNs.HorizontalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.General | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Fill | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CenterAcrossSelection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed = null,
+    includeAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    includeBorder: js.UndefOr[scala.Boolean] = js.undefined,
+    includeFont: js.UndefOr[scala.Boolean] = js.undefined,
+    includeNumber: js.UndefOr[scala.Boolean] = js.undefined,
+    includePatterns: js.UndefOr[scala.Boolean] = js.undefined,
+    includeProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    indentLevel: scala.Int | scala.Double = null,
+    locked: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    numberFormat: java.lang.String = null,
+    numberFormatLocal: java.lang.String = null,
+    readingOrder: officeDashJsDashPreviewLib.ExcelNs.ReadingOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Context | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LeftToRight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RightToLeft = null,
+    shrinkToFit: js.UndefOr[scala.Boolean] = js.undefined,
+    textOrientation: scala.Int | scala.Double = null,
+    verticalAlignment: officeDashJsDashPreviewLib.ExcelNs.VerticalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Top | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed = null,
+    wrapText: js.UndefOr[scala.Boolean] = js.undefined
+  ): StyleData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent)
+    if (borders != null) __obj.updateDynamic("borders")(borders)
+    if (!js.isUndefined(builtIn)) __obj.updateDynamic("builtIn")(builtIn)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAlignment)) __obj.updateDynamic("includeAlignment")(includeAlignment)
+    if (!js.isUndefined(includeBorder)) __obj.updateDynamic("includeBorder")(includeBorder)
+    if (!js.isUndefined(includeFont)) __obj.updateDynamic("includeFont")(includeFont)
+    if (!js.isUndefined(includeNumber)) __obj.updateDynamic("includeNumber")(includeNumber)
+    if (!js.isUndefined(includePatterns)) __obj.updateDynamic("includePatterns")(includePatterns)
+    if (!js.isUndefined(includeProtection)) __obj.updateDynamic("includeProtection")(includeProtection)
+    if (indentLevel != null) __obj.updateDynamic("indentLevel")(indentLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (numberFormatLocal != null) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal)
+    if (readingOrder != null) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit)
+    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText)
+    __obj.asInstanceOf[StyleData]
+  }
+}
+

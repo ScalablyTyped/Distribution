@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object bagpipesLibStrings {
   @js.native
-  sealed trait hoist extends js.Object
+  sealed trait hoist
+    extends bagpipesLib.bagpipesMod.Affinity
   
   @js.native
-  sealed trait sink extends js.Object
+  sealed trait sink
+    extends bagpipesLib.bagpipesMod.Affinity
   
   @js.native
-  sealed trait system extends js.Object
+  sealed trait system
+    extends bagpipesLib.bagpipesMod._FittingType
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user
+    extends bagpipesLib.bagpipesMod._FittingType
   
   @scala.inline
   def hoist: hoist = "hoist".asInstanceOf[hoist]

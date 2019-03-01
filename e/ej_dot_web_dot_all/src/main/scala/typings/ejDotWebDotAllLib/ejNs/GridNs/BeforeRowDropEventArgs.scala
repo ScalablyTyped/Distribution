@@ -23,3 +23,22 @@ trait BeforeRowDropEventArgs extends js.Object {
   var targetIndex: js.UndefOr[js.Any] = js.undefined
 }
 
+object BeforeRowDropEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    draggedRecords: js.Any = null,
+    dropDetails: js.Any = null,
+    target: js.Any = null,
+    targetIndex: js.Any = null
+  ): BeforeRowDropEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (draggedRecords != null) __obj.updateDynamic("draggedRecords")(draggedRecords)
+    if (dropDetails != null) __obj.updateDynamic("dropDetails")(dropDetails)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (targetIndex != null) __obj.updateDynamic("targetIndex")(targetIndex)
+    __obj.asInstanceOf[BeforeRowDropEventArgs]
+  }
+}
+

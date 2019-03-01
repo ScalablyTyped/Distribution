@@ -10,3 +10,13 @@ trait Anon_Source extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Source {
+  @scala.inline
+  def apply(source: Anon_Attribution = null, text: java.lang.String = null): Anon_Source = {
+    val __obj = js.Dynamic.literal()
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Anon_Source]
+  }
+}
+

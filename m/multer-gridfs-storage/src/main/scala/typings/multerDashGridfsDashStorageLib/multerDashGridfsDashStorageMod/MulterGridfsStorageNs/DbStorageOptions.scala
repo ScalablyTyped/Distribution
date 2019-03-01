@@ -12,3 +12,22 @@ trait DbStorageOptions
   ])
 }
 
+object DbStorageOptions {
+  @scala.inline
+  def apply(
+    db: mongooseLib.mongooseMod.Mongoose | mongooseLib.mongooseMod.Connection | mongodbLib.mongodbMod.Db | mongodbLib.mongodbMod.MongoClient | (js.Promise[
+      mongooseLib.mongooseMod.Mongoose | mongooseLib.mongooseMod.Connection | mongodbLib.mongodbMod.Db | mongodbLib.mongodbMod.MongoClient
+    ]),
+    file: js.Function2[
+      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
+      /* file */ multerDashGridfsDashStorageLib.multerDashGridfsDashStorageMod.Global.ExpressNs.MulterNs.File, 
+      _
+    ] = null
+  ): DbStorageOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("db")(db.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file)
+    __obj.asInstanceOf[DbStorageOptions]
+  }
+}
+

@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object ravenDashJsLibStrings {
   @js.native
-  sealed trait critical extends js.Object
+  sealed trait critical
+    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
   
   @js.native
-  sealed trait http extends js.Object
+  sealed trait http
+    extends ravenDashJsLib.ravenDashJsMod.RavenNs.BreadcrumbType
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log
+    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
   
   @js.native
-  sealed trait navigation extends js.Object
+  sealed trait navigation
+    extends ravenDashJsLib.ravenDashJsMod.RavenNs.BreadcrumbType
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends ravenDashJsLib.ravenDashJsMod.RavenNs.LogLevel
   
   @scala.inline
   def critical: critical = "critical".asInstanceOf[critical]

@@ -7,112 +7,148 @@ import scala.scalajs.js.annotation._
 
 object backlogDashJsLibStrings {
   @js.native
-  sealed trait `#007e9a` extends js.Object
+  sealed trait `#007e9a`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait `#2779ca` extends js.Object
+  sealed trait `#2779ca`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait `#666665` extends js.Object
+  sealed trait `#666665`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait `#7ea800` extends js.Object
+  sealed trait `#7ea800`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait `#814fbc` extends js.Object
+  sealed trait `#814fbc`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait `#934981` extends js.Object
+  sealed trait `#934981`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait `#990000` extends js.Object
+  sealed trait `#990000`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait `#e30000` extends js.Object
+  sealed trait `#e30000`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait `#ff3265` extends js.Object
+  sealed trait `#ff3265`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait `#ff9200` extends js.Object
+  sealed trait `#ff9200`
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.IssueTypeColor
   
   @js.native
-  sealed trait BacklogApiError extends js.Object
+  sealed trait BacklogApiError
+    extends backlogDashJsLib.backlogDashJsMod.ErrorNs.BacklogErrorNameType
   
   @js.native
-  sealed trait BacklogAuthError extends js.Object
+  sealed trait BacklogAuthError
+    extends backlogDashJsLib.backlogDashJsMod.ErrorNs.BacklogErrorNameType
   
   @js.native
-  sealed trait UnexpectedError extends js.Object
+  sealed trait UnexpectedError
+    extends backlogDashJsLib.backlogDashJsMod.ErrorNs.BacklogErrorNameType
   
   @js.native
-  sealed trait actualHours extends js.Object
+  sealed trait actualHours
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.Order
   
   @js.native
-  sealed trait assignee extends js.Object
+  sealed trait assignee
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait attachment extends js.Object
+  sealed trait attachment
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait backlog extends js.Object
+  sealed trait backlog
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.TextFormattingRule
   
   @js.native
-  sealed trait category extends js.Object
+  sealed trait category
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait childIssue extends js.Object
+  sealed trait childIssue
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait created extends js.Object
+  sealed trait created
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait createdUser extends js.Object
+  sealed trait createdUser
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.Order
   
   @js.native
-  sealed trait dueDate extends js.Object
+  sealed trait dueDate
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait estimatedHours extends js.Object
+  sealed trait estimatedHours
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait issueType extends js.Object
+  sealed trait issueType
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait markdown extends js.Object
+  sealed trait markdown
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.TextFormattingRule
   
   @js.native
-  sealed trait milestone extends js.Object
+  sealed trait milestone
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait priority extends js.Object
+  sealed trait priority
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait sharedFile extends js.Object
+  sealed trait sharedFile
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait startDate extends js.Object
+  sealed trait startDate
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait status extends js.Object
+  sealed trait status
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait summary extends js.Object
+  sealed trait summary
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait updated extends js.Object
+  sealed trait updated
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait updatedUser extends js.Object
+  sealed trait updatedUser
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @js.native
-  sealed trait version extends js.Object
+  sealed trait version
+    extends backlogDashJsLib.backlogDashJsMod.OptionNs.IssueNs.SortKey
   
   @scala.inline
   def `#007e9a`: `#007e9a` = "#007e9a".asInstanceOf[`#007e9a`]

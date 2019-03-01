@@ -10,3 +10,13 @@ trait LabeledPrice extends js.Object {
   var label: java.lang.String
 }
 
+object LabeledPrice {
+  @scala.inline
+  def apply(amount: scala.Double, label: java.lang.String): LabeledPrice = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[LabeledPrice]
+  }
+}
+

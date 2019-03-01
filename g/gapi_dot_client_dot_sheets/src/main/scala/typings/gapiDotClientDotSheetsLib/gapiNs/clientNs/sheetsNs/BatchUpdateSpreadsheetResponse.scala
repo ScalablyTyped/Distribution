@@ -20,3 +20,18 @@ trait BatchUpdateSpreadsheetResponse extends js.Object {
   var updatedSpreadsheet: js.UndefOr[Spreadsheet] = js.undefined
 }
 
+object BatchUpdateSpreadsheetResponse {
+  @scala.inline
+  def apply(
+    replies: js.Array[Response] = null,
+    spreadsheetId: java.lang.String = null,
+    updatedSpreadsheet: Spreadsheet = null
+  ): BatchUpdateSpreadsheetResponse = {
+    val __obj = js.Dynamic.literal()
+    if (replies != null) __obj.updateDynamic("replies")(replies)
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    if (updatedSpreadsheet != null) __obj.updateDynamic("updatedSpreadsheet")(updatedSpreadsheet)
+    __obj.asInstanceOf[BatchUpdateSpreadsheetResponse]
+  }
+}
+

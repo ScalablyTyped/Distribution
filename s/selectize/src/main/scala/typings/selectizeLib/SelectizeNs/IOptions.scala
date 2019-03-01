@@ -331,3 +331,120 @@ trait IOptions[T, U] extends js.Object {
   var valueField: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IOptions {
+  @scala.inline
+  def apply[T, U](
+    addPrecedence: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEmptyOption: js.UndefOr[scala.Boolean] = js.undefined,
+    closeAfterSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    copyClassesToDropdown: js.UndefOr[scala.Boolean] = js.undefined,
+    create: js.Any = null,
+    createFilter: js.Any = null,
+    createOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
+    dataAttr: java.lang.String = null,
+    delimiter: java.lang.String = null,
+    diacritics: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledField: java.lang.String = null,
+    dropdownParent: java.lang.String = null,
+    hideSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    highlight: js.UndefOr[scala.Boolean] = js.undefined,
+    items: js.Array[T] = null,
+    labelField: java.lang.String = null,
+    load: js.Function2[/* query */ java.lang.String, /* callback */ js.Function, _] = null,
+    loadThrottle: scala.Int | scala.Double = null,
+    lockOptgroupOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    maxItems: scala.Int | scala.Double = null,
+    maxOptions: scala.Int | scala.Double = null,
+    onBlur: js.Function0[_] = null,
+    onChange: js.Function1[/* value */ js.Any, _] = null,
+    onClear: js.Function0[_] = null,
+    onDelete: js.Function1[/* values */ js.Array[T], _] = null,
+    onDropdownClose: js.Function1[/* dropdown */ selectizeLib.JQuery, _] = null,
+    onDropdownOpen: js.Function1[/* dropdown */ selectizeLib.JQuery, _] = null,
+    onFocus: js.Function0[_] = null,
+    onInitialize: js.Function0[_] = null,
+    onItemAdd: js.Function2[/* value */ T, /* item */ selectizeLib.JQuery, _] = null,
+    onItemRemove: js.Function1[/* value */ T, _] = null,
+    onLoad: js.Function1[/* data */ js.Array[U], _] = null,
+    onOptionAdd: js.Function2[/* value */ T, /* data */ U, _] = null,
+    onOptionRemove: js.Function1[/* value */ T, _] = null,
+    onType: js.Function1[/* srt */ java.lang.String, _] = null,
+    openOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    optgroupField: java.lang.String = null,
+    optgroupLabelField: java.lang.String = null,
+    optgroupOrder: js.Array[java.lang.String] = null,
+    optgroupValueField: java.lang.String = null,
+    optgroups: js.Array[U] = null,
+    options: js.Array[U] = null,
+    persist: js.UndefOr[scala.Boolean] = js.undefined,
+    placeholder: java.lang.String = null,
+    plugins: js.Array[java.lang.String] | js.Array[IPluginOption] | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    preload: scala.Boolean | selectizeLib.selectizeLibStrings.focus = null,
+    render: ICustomRenderers[U] = null,
+    score: js.Function1[/* search */ ISearch, js.Function1[/* item */ _, scala.Double]] = null,
+    scrollDuration: scala.Int | scala.Double = null,
+    searchConjunction: java.lang.String = null,
+    searchField: java.lang.String | js.Array[java.lang.String] = null,
+    selectOnTab: js.UndefOr[scala.Boolean] = js.undefined,
+    sortField: java.lang.String | js.Array[selectizeLib.Anon_Asc] = null,
+    valueField: java.lang.String = null
+  ): IOptions[T, U] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addPrecedence)) __obj.updateDynamic("addPrecedence")(addPrecedence)
+    if (!js.isUndefined(allowEmptyOption)) __obj.updateDynamic("allowEmptyOption")(allowEmptyOption)
+    if (!js.isUndefined(closeAfterSelect)) __obj.updateDynamic("closeAfterSelect")(closeAfterSelect)
+    if (!js.isUndefined(copyClassesToDropdown)) __obj.updateDynamic("copyClassesToDropdown")(copyClassesToDropdown)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (createFilter != null) __obj.updateDynamic("createFilter")(createFilter)
+    if (!js.isUndefined(createOnBlur)) __obj.updateDynamic("createOnBlur")(createOnBlur)
+    if (dataAttr != null) __obj.updateDynamic("dataAttr")(dataAttr)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (!js.isUndefined(diacritics)) __obj.updateDynamic("diacritics")(diacritics)
+    if (disabledField != null) __obj.updateDynamic("disabledField")(disabledField)
+    if (dropdownParent != null) __obj.updateDynamic("dropdownParent")(dropdownParent)
+    if (!js.isUndefined(hideSelected)) __obj.updateDynamic("hideSelected")(hideSelected)
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (labelField != null) __obj.updateDynamic("labelField")(labelField)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loadThrottle != null) __obj.updateDynamic("loadThrottle")(loadThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(lockOptgroupOrder)) __obj.updateDynamic("lockOptgroupOrder")(lockOptgroupOrder)
+    if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
+    if (maxOptions != null) __obj.updateDynamic("maxOptions")(maxOptions.asInstanceOf[js.Any])
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onClear != null) __obj.updateDynamic("onClear")(onClear)
+    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
+    if (onDropdownClose != null) __obj.updateDynamic("onDropdownClose")(onDropdownClose)
+    if (onDropdownOpen != null) __obj.updateDynamic("onDropdownOpen")(onDropdownOpen)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onInitialize != null) __obj.updateDynamic("onInitialize")(onInitialize)
+    if (onItemAdd != null) __obj.updateDynamic("onItemAdd")(onItemAdd)
+    if (onItemRemove != null) __obj.updateDynamic("onItemRemove")(onItemRemove)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onOptionAdd != null) __obj.updateDynamic("onOptionAdd")(onOptionAdd)
+    if (onOptionRemove != null) __obj.updateDynamic("onOptionRemove")(onOptionRemove)
+    if (onType != null) __obj.updateDynamic("onType")(onType)
+    if (!js.isUndefined(openOnFocus)) __obj.updateDynamic("openOnFocus")(openOnFocus)
+    if (optgroupField != null) __obj.updateDynamic("optgroupField")(optgroupField)
+    if (optgroupLabelField != null) __obj.updateDynamic("optgroupLabelField")(optgroupLabelField)
+    if (optgroupOrder != null) __obj.updateDynamic("optgroupOrder")(optgroupOrder)
+    if (optgroupValueField != null) __obj.updateDynamic("optgroupValueField")(optgroupValueField)
+    if (optgroups != null) __obj.updateDynamic("optgroups")(optgroups)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (score != null) __obj.updateDynamic("score")(score)
+    if (scrollDuration != null) __obj.updateDynamic("scrollDuration")(scrollDuration.asInstanceOf[js.Any])
+    if (searchConjunction != null) __obj.updateDynamic("searchConjunction")(searchConjunction)
+    if (searchField != null) __obj.updateDynamic("searchField")(searchField.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectOnTab)) __obj.updateDynamic("selectOnTab")(selectOnTab)
+    if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
+    if (valueField != null) __obj.updateDynamic("valueField")(valueField)
+    __obj.asInstanceOf[IOptions[T, U]]
+  }
+}
+

@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "webdriver"
-version := "5.6.3-b78a0c"
+version := "5.6.4-02edb4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-bde245",
-  "org.scalablytyped" %%% "deepmerge" % "3.2.0-30afb2",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-28155d",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
-  "org.scalablytyped" %%% "lodash_dot_merge" % "4.6-dt-20190212Z-649a6d",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-c8dda0",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261")
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-708eba",
+  "org.scalablytyped" %%% "deepmerge" % "3.2.0-2ccfe4",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-41ab3d",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-f3a537",
+  "org.scalablytyped" %%% "lodash_dot_merge" % "4.6-dt-20190212Z-638a38",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-c50522",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-62e3dd")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

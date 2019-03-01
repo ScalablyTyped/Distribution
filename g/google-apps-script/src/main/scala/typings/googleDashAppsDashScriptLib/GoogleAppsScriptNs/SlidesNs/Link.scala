@@ -14,3 +14,24 @@ trait Link extends js.Object {
   def getUrl(): java.lang.String
 }
 
+object Link {
+  @scala.inline
+  def apply(
+    getLinkType: js.Function0[LinkType],
+    getLinkedSlide: js.Function0[Slide],
+    getSlideId: js.Function0[java.lang.String],
+    getSlideIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getSlidePosition: js.Function0[SlidePosition],
+    getUrl: js.Function0[java.lang.String]
+  ): Link = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getLinkType")(getLinkType)
+    __obj.updateDynamic("getLinkedSlide")(getLinkedSlide)
+    __obj.updateDynamic("getSlideId")(getSlideId)
+    __obj.updateDynamic("getSlideIndex")(getSlideIndex)
+    __obj.updateDynamic("getSlidePosition")(getSlidePosition)
+    __obj.updateDynamic("getUrl")(getUrl)
+    __obj.asInstanceOf[Link]
+  }
+}
+

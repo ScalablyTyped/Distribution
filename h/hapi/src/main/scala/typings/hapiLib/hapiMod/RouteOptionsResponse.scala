@@ -77,3 +77,30 @@ trait RouteOptionsResponse extends js.Object {
   var status: js.UndefOr[hapiLib.hapiMod.UtilNs.Dictionary[RouteOptionsResponseSchema]] = js.undefined
 }
 
+object RouteOptionsResponse {
+  @scala.inline
+  def apply(
+    disconnectStatusCode: scala.Int | scala.Double = null,
+    emptyStatusCode: hapiLib.hapiLibNumbers.`200` | hapiLib.hapiLibNumbers.`204` = null,
+    failAction: hapiLib.hapiMod.LifecycleNs.FailAction = null,
+    modify: js.UndefOr[scala.Boolean] = js.undefined,
+    options: joiLib.joiMod.ValidationOptions = null,
+    ranges: js.UndefOr[scala.Boolean] = js.undefined,
+    sample: scala.Int | scala.Double = null,
+    schema: RouteOptionsResponseSchema = null,
+    status: hapiLib.hapiMod.UtilNs.Dictionary[RouteOptionsResponseSchema] = null
+  ): RouteOptionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (disconnectStatusCode != null) __obj.updateDynamic("disconnectStatusCode")(disconnectStatusCode.asInstanceOf[js.Any])
+    if (emptyStatusCode != null) __obj.updateDynamic("emptyStatusCode")(emptyStatusCode.asInstanceOf[js.Any])
+    if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
+    if (!js.isUndefined(modify)) __obj.updateDynamic("modify")(modify)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(ranges)) __obj.updateDynamic("ranges")(ranges)
+    if (sample != null) __obj.updateDynamic("sample")(sample.asInstanceOf[js.Any])
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[RouteOptionsResponse]
+  }
+}
+

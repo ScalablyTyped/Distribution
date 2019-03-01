@@ -1306,6 +1306,8 @@ object microflowsNs extends js.Object {
   - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class MicroflowParameter protected () extends MicroflowParameterBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsMicroflow")
+    val containerAsMicroflow_MicroflowParameter: Microflow = js.native
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
@@ -1645,6 +1647,8 @@ object microflowsNs extends js.Object {
   - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IRuleParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class RuleParameter protected () extends MicroflowParameterBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsRule")
+    val containerAsRule_RuleParameter: Rule = js.native
   }
   
   @js.native

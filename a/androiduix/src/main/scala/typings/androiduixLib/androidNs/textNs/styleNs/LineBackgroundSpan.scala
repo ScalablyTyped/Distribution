@@ -21,3 +21,27 @@ trait LineBackgroundSpan extends ParagraphStyle {
   ): scala.Unit
 }
 
+object LineBackgroundSpan {
+  @scala.inline
+  def apply(
+    drawBackground: js.Function11[
+      androiduixLib.androidNs.graphicsNs.Canvas, 
+      androiduixLib.androidNs.graphicsNs.Paint, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ]
+  ): LineBackgroundSpan = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("drawBackground")(drawBackground)
+    __obj.asInstanceOf[LineBackgroundSpan]
+  }
+}
+

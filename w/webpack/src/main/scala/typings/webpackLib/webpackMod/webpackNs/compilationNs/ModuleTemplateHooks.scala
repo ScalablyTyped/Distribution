@@ -13,3 +13,21 @@ trait ModuleTemplateHooks extends js.Object {
   var render: tapableLib.tapableMod.SyncWaterfallHook[_, _, _]
 }
 
+object ModuleTemplateHooks {
+  @scala.inline
+  def apply(
+    content: tapableLib.tapableMod.SyncWaterfallHook[_, _, _],
+    hash: tapableLib.tapableMod.SyncHook[_, _, _],
+    module: tapableLib.tapableMod.SyncWaterfallHook[_, _, _],
+    `package`: tapableLib.tapableMod.SyncWaterfallHook[_, _, _],
+    render: tapableLib.tapableMod.SyncWaterfallHook[_, _, _]
+  ): ModuleTemplateHooks = {
+    val __obj = js.Dynamic.literal(`package` = `package`)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("module")(module)
+    __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[ModuleTemplateHooks]
+  }
+}
+

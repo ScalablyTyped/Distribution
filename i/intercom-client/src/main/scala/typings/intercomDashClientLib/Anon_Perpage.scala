@@ -10,3 +10,15 @@ trait Anon_Perpage extends js.Object {
   var `type`: intercomDashClientLib.intercomDashClientLibStrings.user
 }
 
+object Anon_Perpage {
+  @scala.inline
+  def apply(
+    `type`: intercomDashClientLib.intercomDashClientLibStrings.user,
+    per_page: scala.Int | scala.Double = null
+  ): Anon_Perpage = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Perpage]
+  }
+}
+

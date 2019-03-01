@@ -48,3 +48,58 @@ trait InstalledExtension extends ExtensionManifest {
   var version: java.lang.String
 }
 
+object InstalledExtension {
+  @scala.inline
+  def apply(
+    baseUri: java.lang.String,
+    constraints: js.Array[ContributionConstraint],
+    contributionTypes: js.Array[ContributionType],
+    contributions: js.Array[Contribution],
+    demands: js.Array[java.lang.String],
+    eventCallbacks: ExtensionEventCallbackCollection,
+    extensionId: java.lang.String,
+    extensionName: java.lang.String,
+    fallbackBaseUri: java.lang.String,
+    files: js.Array[vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionFile],
+    flags: ExtensionFlags,
+    installState: InstalledExtensionState,
+    language: java.lang.String,
+    lastPublished: stdLib.Date,
+    licensing: ExtensionLicensing,
+    manifestVersion: scala.Double,
+    publisherId: java.lang.String,
+    publisherName: java.lang.String,
+    registrationId: java.lang.String,
+    restrictedTo: js.Array[java.lang.String],
+    scopes: js.Array[java.lang.String],
+    serviceInstanceType: java.lang.String,
+    version: java.lang.String
+  ): InstalledExtension = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseUri")(baseUri)
+    __obj.updateDynamic("constraints")(constraints)
+    __obj.updateDynamic("contributionTypes")(contributionTypes)
+    __obj.updateDynamic("contributions")(contributions)
+    __obj.updateDynamic("demands")(demands)
+    __obj.updateDynamic("eventCallbacks")(eventCallbacks)
+    __obj.updateDynamic("extensionId")(extensionId)
+    __obj.updateDynamic("extensionName")(extensionName)
+    __obj.updateDynamic("fallbackBaseUri")(fallbackBaseUri)
+    __obj.updateDynamic("files")(files)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("installState")(installState)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("lastPublished")(lastPublished)
+    __obj.updateDynamic("licensing")(licensing)
+    __obj.updateDynamic("manifestVersion")(manifestVersion)
+    __obj.updateDynamic("publisherId")(publisherId)
+    __obj.updateDynamic("publisherName")(publisherName)
+    __obj.updateDynamic("registrationId")(registrationId)
+    __obj.updateDynamic("restrictedTo")(restrictedTo)
+    __obj.updateDynamic("scopes")(scopes)
+    __obj.updateDynamic("serviceInstanceType")(serviceInstanceType)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[InstalledExtension]
+  }
+}
+

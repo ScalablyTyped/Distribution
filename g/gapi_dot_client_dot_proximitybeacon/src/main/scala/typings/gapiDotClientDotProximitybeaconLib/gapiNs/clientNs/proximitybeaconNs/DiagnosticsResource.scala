@@ -18,3 +18,17 @@ trait DiagnosticsResource extends js.Object {
   def list(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlertFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListDiagnosticsResponse]
 }
 
+object DiagnosticsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlertFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDiagnosticsResponse]
+    ]
+  ): DiagnosticsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[DiagnosticsResource]
+  }
+}
+

@@ -26,3 +26,20 @@ trait Anon_Alignment extends js.Object {
   var passProps: js.UndefOr[js.Object] = js.undefined
 }
 
+object Anon_Alignment {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    alignment: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.center | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.fill = null,
+    id: java.lang.String = null,
+    passProps: js.Object = null
+  ): Anon_Alignment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (passProps != null) __obj.updateDynamic("passProps")(passProps)
+    __obj.asInstanceOf[Anon_Alignment]
+  }
+}
+

@@ -52,3 +52,28 @@ trait ClientConfig extends js.Object {
   ] = js.undefined
 }
 
+object ClientConfig {
+  @scala.inline
+  def apply(
+    client_id: java.lang.String = null,
+    cookie_policy: java.lang.String = null,
+    fetch_basic_profile: js.UndefOr[scala.Boolean] = js.undefined,
+    hosted_domain: java.lang.String = null,
+    openid_realm: java.lang.String = null,
+    redirect_uri: java.lang.String = null,
+    scope: java.lang.String = null,
+    ux_mode: gapiDotAuth2Lib.gapiDotAuth2LibStrings.popup | gapiDotAuth2Lib.gapiDotAuth2LibStrings.redirect = null
+  ): ClientConfig = {
+    val __obj = js.Dynamic.literal()
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
+    if (cookie_policy != null) __obj.updateDynamic("cookie_policy")(cookie_policy)
+    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile)
+    if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain)
+    if (openid_realm != null) __obj.updateDynamic("openid_realm")(openid_realm)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (ux_mode != null) __obj.updateDynamic("ux_mode")(ux_mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientConfig]
+  }
+}
+

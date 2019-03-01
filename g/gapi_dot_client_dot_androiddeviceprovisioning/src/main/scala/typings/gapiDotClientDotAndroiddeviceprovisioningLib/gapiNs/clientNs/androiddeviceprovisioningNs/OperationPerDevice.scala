@@ -16,3 +16,20 @@ trait OperationPerDevice extends js.Object {
   var updateMetadata: js.UndefOr[UpdateMetadataArguments] = js.undefined
 }
 
+object OperationPerDevice {
+  @scala.inline
+  def apply(
+    claim: PartnerClaim = null,
+    result: PerDeviceStatusInBatch = null,
+    unclaim: PartnerUnclaim = null,
+    updateMetadata: UpdateMetadataArguments = null
+  ): OperationPerDevice = {
+    val __obj = js.Dynamic.literal()
+    if (claim != null) __obj.updateDynamic("claim")(claim)
+    if (result != null) __obj.updateDynamic("result")(result)
+    if (unclaim != null) __obj.updateDynamic("unclaim")(unclaim)
+    if (updateMetadata != null) __obj.updateDynamic("updateMetadata")(updateMetadata)
+    __obj.asInstanceOf[OperationPerDevice]
+  }
+}
+

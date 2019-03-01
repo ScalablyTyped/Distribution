@@ -20,3 +20,42 @@ trait EventTagsResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[EventTag]
 }
 
+object EventTagsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EventTag]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EventTag]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AdId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EventTagsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EventTag]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EventTag]
+    ]
+  ): EventTagsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[EventTagsResource]
+  }
+}
+

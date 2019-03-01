@@ -240,3 +240,30 @@ trait Config extends js.Object {
   var ROUNDING_MODE: js.UndefOr[RoundingMode] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    ALPHABET: java.lang.String = null,
+    CRYPTO: js.UndefOr[scala.Boolean] = js.undefined,
+    DECIMAL_PLACES: scala.Int | scala.Double = null,
+    EXPONENTIAL_AT: scala.Double | (js.Tuple2[scala.Double, scala.Double]) = null,
+    FORMAT: Format = null,
+    MODULO_MODE: ModuloMode = null,
+    POW_PRECISION: scala.Int | scala.Double = null,
+    RANGE: scala.Double | (js.Tuple2[scala.Double, scala.Double]) = null,
+    ROUNDING_MODE: RoundingMode = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (ALPHABET != null) __obj.updateDynamic("ALPHABET")(ALPHABET)
+    if (!js.isUndefined(CRYPTO)) __obj.updateDynamic("CRYPTO")(CRYPTO)
+    if (DECIMAL_PLACES != null) __obj.updateDynamic("DECIMAL_PLACES")(DECIMAL_PLACES.asInstanceOf[js.Any])
+    if (EXPONENTIAL_AT != null) __obj.updateDynamic("EXPONENTIAL_AT")(EXPONENTIAL_AT.asInstanceOf[js.Any])
+    if (FORMAT != null) __obj.updateDynamic("FORMAT")(FORMAT)
+    if (MODULO_MODE != null) __obj.updateDynamic("MODULO_MODE")(MODULO_MODE)
+    if (POW_PRECISION != null) __obj.updateDynamic("POW_PRECISION")(POW_PRECISION.asInstanceOf[js.Any])
+    if (RANGE != null) __obj.updateDynamic("RANGE")(RANGE.asInstanceOf[js.Any])
+    if (ROUNDING_MODE != null) __obj.updateDynamic("ROUNDING_MODE")(ROUNDING_MODE)
+    __obj.asInstanceOf[Config]
+  }
+}
+

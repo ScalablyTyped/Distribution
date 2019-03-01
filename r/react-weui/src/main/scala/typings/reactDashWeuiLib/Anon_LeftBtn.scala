@@ -10,3 +10,13 @@ trait Anon_LeftBtn extends js.Object {
   var rightBtn: java.lang.String
 }
 
+object Anon_LeftBtn {
+  @scala.inline
+  def apply(leftBtn: java.lang.String, rightBtn: java.lang.String): Anon_LeftBtn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("leftBtn")(leftBtn)
+    __obj.updateDynamic("rightBtn")(rightBtn)
+    __obj.asInstanceOf[Anon_LeftBtn]
+  }
+}
+

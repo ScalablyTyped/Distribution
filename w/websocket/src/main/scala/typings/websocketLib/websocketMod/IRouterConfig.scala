@@ -12,3 +12,12 @@ trait IRouterConfig extends js.Object {
   var server: server
 }
 
+object IRouterConfig {
+  @scala.inline
+  def apply(server: server): IRouterConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[IRouterConfig]
+  }
+}
+

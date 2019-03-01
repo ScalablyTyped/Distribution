@@ -28,3 +28,25 @@ trait AnimationTransitionMetadata extends AnimationMetadata {
   var options: AnimationOptions | scala.Null
 }
 
+object AnimationTransitionMetadata {
+  @scala.inline
+  def apply(
+    animation: AnimationMetadata | js.Array[AnimationMetadata],
+    expr: java.lang.String | (js.Function4[
+      /* fromState */ java.lang.String, 
+      /* toState */ java.lang.String, 
+      /* element */ js.UndefOr[js.Any], 
+      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
+      scala.Boolean
+    ]),
+    `type`: AnimationMetadataType,
+    options: AnimationOptions = null
+  ): AnimationTransitionMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    __obj.updateDynamic("expr")(expr.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[AnimationTransitionMetadata]
+  }
+}
+

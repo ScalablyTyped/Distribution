@@ -10,3 +10,16 @@ trait Anon_Quotient extends js.Object {
   var remainder: bigDashIntegerLib.bigDashIntegerMod.bigIntNs.BigInteger
 }
 
+object Anon_Quotient {
+  @scala.inline
+  def apply(
+    quotient: bigDashIntegerLib.bigDashIntegerMod.bigIntNs.BigInteger,
+    remainder: bigDashIntegerLib.bigDashIntegerMod.bigIntNs.BigInteger
+  ): Anon_Quotient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("quotient")(quotient)
+    __obj.updateDynamic("remainder")(remainder)
+    __obj.asInstanceOf[Anon_Quotient]
+  }
+}
+

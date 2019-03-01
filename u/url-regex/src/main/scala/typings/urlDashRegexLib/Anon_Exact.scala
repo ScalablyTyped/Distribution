@@ -12,3 +12,13 @@ trait Anon_Exact extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Exact {
+  @scala.inline
+  def apply(exact: js.UndefOr[scala.Boolean] = js.undefined, strict: js.UndefOr[scala.Boolean] = js.undefined): Anon_Exact = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[Anon_Exact]
+  }
+}
+

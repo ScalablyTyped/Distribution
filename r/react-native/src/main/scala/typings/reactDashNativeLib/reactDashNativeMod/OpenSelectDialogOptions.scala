@@ -12,3 +12,16 @@ trait OpenSelectDialogOptions extends js.Object {
   var showVideos: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OpenSelectDialogOptions {
+  @scala.inline
+  def apply(
+    showImages: js.UndefOr[scala.Boolean] = js.undefined,
+    showVideos: js.UndefOr[scala.Boolean] = js.undefined
+  ): OpenSelectDialogOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showImages)) __obj.updateDynamic("showImages")(showImages)
+    if (!js.isUndefined(showVideos)) __obj.updateDynamic("showVideos")(showVideos)
+    __obj.asInstanceOf[OpenSelectDialogOptions]
+  }
+}
+

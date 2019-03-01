@@ -16,3 +16,13 @@ trait AttributeValueUpdate extends js.Object {
   var Value: js.UndefOr[AttributeValue] = js.undefined
 }
 
+object AttributeValueUpdate {
+  @scala.inline
+  def apply(Action: AttributeAction = null, Value: AttributeValue = null): AttributeValueUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
+    if (Value != null) __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[AttributeValueUpdate]
+  }
+}
+

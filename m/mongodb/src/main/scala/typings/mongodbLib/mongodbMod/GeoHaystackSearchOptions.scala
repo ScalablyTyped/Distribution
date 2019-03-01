@@ -13,3 +13,22 @@ trait GeoHaystackSearchOptions extends js.Object {
   var session: js.UndefOr[ClientSession] = js.undefined
 }
 
+object GeoHaystackSearchOptions {
+  @scala.inline
+  def apply(
+    limit: scala.Int | scala.Double = null,
+    maxDistance: scala.Int | scala.Double = null,
+    readPreference: ReadPreference | java.lang.String = null,
+    search: js.Object = null,
+    session: ClientSession = null
+  ): GeoHaystackSearchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (maxDistance != null) __obj.updateDynamic("maxDistance")(maxDistance.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (search != null) __obj.updateDynamic("search")(search)
+    if (session != null) __obj.updateDynamic("session")(session)
+    __obj.asInstanceOf[GeoHaystackSearchOptions]
+  }
+}
+

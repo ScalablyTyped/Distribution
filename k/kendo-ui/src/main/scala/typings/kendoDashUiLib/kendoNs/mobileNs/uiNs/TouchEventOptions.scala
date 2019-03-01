@@ -11,3 +11,14 @@ trait TouchEventOptions extends js.Object {
   var y: js.UndefOr[TouchAxis] = js.undefined
 }
 
+object TouchEventOptions {
+  @scala.inline
+  def apply(target: kendoDashUiLib.JQuery = null, x: TouchAxis = null, y: TouchAxis = null): TouchEventOptions = {
+    val __obj = js.Dynamic.literal()
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (x != null) __obj.updateDynamic("x")(x)
+    if (y != null) __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[TouchEventOptions]
+  }
+}
+

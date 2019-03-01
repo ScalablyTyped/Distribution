@@ -23,3 +23,22 @@ trait CloseEventArgs extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CloseEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    prevDateTime: java.lang.String = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): CloseEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (prevDateTime != null) __obj.updateDynamic("prevDateTime")(prevDateTime)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CloseEventArgs]
+  }
+}
+

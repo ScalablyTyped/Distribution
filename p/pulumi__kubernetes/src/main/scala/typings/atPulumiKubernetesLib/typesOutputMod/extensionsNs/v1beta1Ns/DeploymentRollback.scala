@@ -37,3 +37,22 @@ trait DeploymentRollback extends js.Object {
   val updatedAnnotations: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object DeploymentRollback {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    kind: java.lang.String,
+    name: java.lang.String,
+    rollbackTo: RollbackConfig,
+    updatedAnnotations: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): DeploymentRollback = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("rollbackTo")(rollbackTo)
+    __obj.updateDynamic("updatedAnnotations")(updatedAnnotations)
+    __obj.asInstanceOf[DeploymentRollback]
+  }
+}
+

@@ -17,3 +17,16 @@ trait VictoryMultiLabeableProps extends VictoryLabableProps {
   var labels: js.UndefOr[js.Array[java.lang.String] | victoryLib.Anon_DataAnyString] = js.undefined
 }
 
+object VictoryMultiLabeableProps {
+  @scala.inline
+  def apply(
+    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null
+  ): VictoryMultiLabeableProps = {
+    val __obj = js.Dynamic.literal()
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryMultiLabeableProps]
+  }
+}
+

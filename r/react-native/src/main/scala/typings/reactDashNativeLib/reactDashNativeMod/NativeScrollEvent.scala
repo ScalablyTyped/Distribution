@@ -14,3 +14,24 @@ trait NativeScrollEvent extends js.Object {
   var zoomScale: scala.Double
 }
 
+object NativeScrollEvent {
+  @scala.inline
+  def apply(
+    contentInset: NativeScrollRectangle,
+    contentOffset: NativeScrollPoint,
+    contentSize: NativeScrollSize,
+    layoutMeasurement: NativeScrollSize,
+    zoomScale: scala.Double,
+    velocity: NativeScrollVelocity = null
+  ): NativeScrollEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentInset")(contentInset)
+    __obj.updateDynamic("contentOffset")(contentOffset)
+    __obj.updateDynamic("contentSize")(contentSize)
+    __obj.updateDynamic("layoutMeasurement")(layoutMeasurement)
+    __obj.updateDynamic("zoomScale")(zoomScale)
+    if (velocity != null) __obj.updateDynamic("velocity")(velocity)
+    __obj.asInstanceOf[NativeScrollEvent]
+  }
+}
+

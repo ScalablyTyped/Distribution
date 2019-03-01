@@ -13,3 +13,22 @@ trait Anon_BlockDurationMinutes extends js.Object {
   var validUntil: java.lang.String
 }
 
+object Anon_BlockDurationMinutes {
+  @scala.inline
+  def apply(
+    blockDurationMinutes: scala.Double,
+    instanceInterruptionBehavior: java.lang.String,
+    maxPrice: java.lang.String,
+    spotInstanceType: java.lang.String,
+    validUntil: java.lang.String
+  ): Anon_BlockDurationMinutes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blockDurationMinutes")(blockDurationMinutes)
+    __obj.updateDynamic("instanceInterruptionBehavior")(instanceInterruptionBehavior)
+    __obj.updateDynamic("maxPrice")(maxPrice)
+    __obj.updateDynamic("spotInstanceType")(spotInstanceType)
+    __obj.updateDynamic("validUntil")(validUntil)
+    __obj.asInstanceOf[Anon_BlockDurationMinutes]
+  }
+}
+

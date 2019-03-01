@@ -25,3 +25,18 @@ trait ChannelCredentials extends js.Object {
   def getSecureContext(): nodeLib.tlsMod.SecureContext | scala.Null
 }
 
+object ChannelCredentials {
+  @scala.inline
+  def apply(
+    compose: js.Function1[CallCredentials, ChannelCredentials],
+    getCallCredentials: js.Function0[CallCredentials],
+    getSecureContext: js.Function0[nodeLib.tlsMod.SecureContext | scala.Null]
+  ): ChannelCredentials = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compose")(compose)
+    __obj.updateDynamic("getCallCredentials")(getCallCredentials)
+    __obj.updateDynamic("getSecureContext")(getSecureContext)
+    __obj.asInstanceOf[ChannelCredentials]
+  }
+}
+

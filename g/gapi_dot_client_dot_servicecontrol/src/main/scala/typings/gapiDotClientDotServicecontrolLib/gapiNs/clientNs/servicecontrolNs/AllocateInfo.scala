@@ -15,3 +15,12 @@ trait AllocateInfo extends js.Object {
   var unusedArguments: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AllocateInfo {
+  @scala.inline
+  def apply(unusedArguments: js.Array[java.lang.String] = null): AllocateInfo = {
+    val __obj = js.Dynamic.literal()
+    if (unusedArguments != null) __obj.updateDynamic("unusedArguments")(unusedArguments)
+    __obj.asInstanceOf[AllocateInfo]
+  }
+}
+

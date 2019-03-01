@@ -28,3 +28,20 @@ trait ShadowPropTypesIOSStatic extends js.Object {
   var shadowRadius: scala.Double
 }
 
+object ShadowPropTypesIOSStatic {
+  @scala.inline
+  def apply(
+    shadowColor: java.lang.String,
+    shadowOffset: reactDashNativeLib.Anon_Height,
+    shadowOpacity: scala.Double,
+    shadowRadius: scala.Double
+  ): ShadowPropTypesIOSStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("shadowColor")(shadowColor)
+    __obj.updateDynamic("shadowOffset")(shadowOffset)
+    __obj.updateDynamic("shadowOpacity")(shadowOpacity)
+    __obj.updateDynamic("shadowRadius")(shadowRadius)
+    __obj.asInstanceOf[ShadowPropTypesIOSStatic]
+  }
+}
+

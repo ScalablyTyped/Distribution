@@ -12,3 +12,20 @@ trait ComponentFiles extends js.Object {
   var styles: js.Array[java.lang.String]
 }
 
+object ComponentFiles {
+  @scala.inline
+  def apply(
+    styles: js.Array[java.lang.String],
+    browserFile: java.lang.String = null,
+    file: java.lang.String = null,
+    `package`: java.lang.String = null
+  ): ComponentFiles = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("styles")(styles)
+    if (browserFile != null) __obj.updateDynamic("browserFile")(browserFile)
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (`package` != null) __obj.updateDynamic("package")(`package`)
+    __obj.asInstanceOf[ComponentFiles]
+  }
+}
+

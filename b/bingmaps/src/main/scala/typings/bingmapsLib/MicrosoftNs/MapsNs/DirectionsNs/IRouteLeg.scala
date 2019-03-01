@@ -24,3 +24,28 @@ trait IRouteLeg extends js.Object {
   var summary: IRouteSummary
 }
 
+object IRouteLeg {
+  @scala.inline
+  def apply(
+    endTime: stdLib.Date,
+    endWaypointLocation: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    itineraryItems: js.Array[IDirectionsStep],
+    originalRouteIndex: scala.Double,
+    startTime: stdLib.Date,
+    startWaypointLocation: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    subLegs: js.Array[IRouteSubLeg],
+    summary: IRouteSummary
+  ): IRouteLeg = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endTime")(endTime)
+    __obj.updateDynamic("endWaypointLocation")(endWaypointLocation)
+    __obj.updateDynamic("itineraryItems")(itineraryItems)
+    __obj.updateDynamic("originalRouteIndex")(originalRouteIndex)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("startWaypointLocation")(startWaypointLocation)
+    __obj.updateDynamic("subLegs")(subLegs)
+    __obj.updateDynamic("summary")(summary)
+    __obj.asInstanceOf[IRouteLeg]
+  }
+}
+

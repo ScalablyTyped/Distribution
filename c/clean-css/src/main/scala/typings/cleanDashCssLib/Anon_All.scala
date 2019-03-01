@@ -114,3 +114,65 @@ trait Anon_All extends js.Object {
   ] = js.undefined
 }
 
+object Anon_All {
+  @scala.inline
+  def apply(
+    all: js.UndefOr[scala.Boolean] = js.undefined,
+    cleanupCharsets: js.UndefOr[scala.Boolean] = js.undefined,
+    normalizeUrls: js.UndefOr[scala.Boolean] = js.undefined,
+    optimizeBackground: js.UndefOr[scala.Boolean] = js.undefined,
+    optimizeBorderRadius: js.UndefOr[scala.Boolean] = js.undefined,
+    optimizeFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    optimizeFont: js.UndefOr[scala.Boolean] = js.undefined,
+    optimizeFontWeight: js.UndefOr[scala.Boolean] = js.undefined,
+    optimizeOutline: js.UndefOr[scala.Boolean] = js.undefined,
+    removeEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    removeNegativePaddings: js.UndefOr[scala.Boolean] = js.undefined,
+    removeQuotes: js.UndefOr[scala.Boolean] = js.undefined,
+    removeWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
+    replaceMultipleZeros: js.UndefOr[scala.Boolean] = js.undefined,
+    replaceTimeUnits: js.UndefOr[scala.Boolean] = js.undefined,
+    replaceZeroUnits: js.UndefOr[scala.Boolean] = js.undefined,
+    roundingPrecision: js.UndefOr[scala.Boolean] = js.undefined,
+    selectorsSortingMethod: cleanDashCssLib.cleanDashCssLibStrings.standard | cleanDashCssLib.cleanDashCssLibStrings.natural | cleanDashCssLib.cleanDashCssLibStrings.none = null,
+    semicolonAfterLastProperty: js.UndefOr[scala.Boolean] = js.undefined,
+    specialComments: java.lang.String = null,
+    tidyAtRules: js.UndefOr[scala.Boolean] = js.undefined,
+    tidyBlockScopes: js.UndefOr[scala.Boolean] = js.undefined,
+    tidySelectors: js.UndefOr[scala.Boolean] = js.undefined,
+    transform: js.Function3[
+      /* propertyName */ java.lang.String, 
+      /* propertyValue */ java.lang.String, 
+      /* selector */ js.UndefOr[java.lang.String], 
+      java.lang.String
+    ] = null
+  ): Anon_All = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
+    if (!js.isUndefined(cleanupCharsets)) __obj.updateDynamic("cleanupCharsets")(cleanupCharsets)
+    if (!js.isUndefined(normalizeUrls)) __obj.updateDynamic("normalizeUrls")(normalizeUrls)
+    if (!js.isUndefined(optimizeBackground)) __obj.updateDynamic("optimizeBackground")(optimizeBackground)
+    if (!js.isUndefined(optimizeBorderRadius)) __obj.updateDynamic("optimizeBorderRadius")(optimizeBorderRadius)
+    if (!js.isUndefined(optimizeFilter)) __obj.updateDynamic("optimizeFilter")(optimizeFilter)
+    if (!js.isUndefined(optimizeFont)) __obj.updateDynamic("optimizeFont")(optimizeFont)
+    if (!js.isUndefined(optimizeFontWeight)) __obj.updateDynamic("optimizeFontWeight")(optimizeFontWeight)
+    if (!js.isUndefined(optimizeOutline)) __obj.updateDynamic("optimizeOutline")(optimizeOutline)
+    if (!js.isUndefined(removeEmpty)) __obj.updateDynamic("removeEmpty")(removeEmpty)
+    if (!js.isUndefined(removeNegativePaddings)) __obj.updateDynamic("removeNegativePaddings")(removeNegativePaddings)
+    if (!js.isUndefined(removeQuotes)) __obj.updateDynamic("removeQuotes")(removeQuotes)
+    if (!js.isUndefined(removeWhitespace)) __obj.updateDynamic("removeWhitespace")(removeWhitespace)
+    if (!js.isUndefined(replaceMultipleZeros)) __obj.updateDynamic("replaceMultipleZeros")(replaceMultipleZeros)
+    if (!js.isUndefined(replaceTimeUnits)) __obj.updateDynamic("replaceTimeUnits")(replaceTimeUnits)
+    if (!js.isUndefined(replaceZeroUnits)) __obj.updateDynamic("replaceZeroUnits")(replaceZeroUnits)
+    if (!js.isUndefined(roundingPrecision)) __obj.updateDynamic("roundingPrecision")(roundingPrecision)
+    if (selectorsSortingMethod != null) __obj.updateDynamic("selectorsSortingMethod")(selectorsSortingMethod.asInstanceOf[js.Any])
+    if (!js.isUndefined(semicolonAfterLastProperty)) __obj.updateDynamic("semicolonAfterLastProperty")(semicolonAfterLastProperty)
+    if (specialComments != null) __obj.updateDynamic("specialComments")(specialComments)
+    if (!js.isUndefined(tidyAtRules)) __obj.updateDynamic("tidyAtRules")(tidyAtRules)
+    if (!js.isUndefined(tidyBlockScopes)) __obj.updateDynamic("tidyBlockScopes")(tidyBlockScopes)
+    if (!js.isUndefined(tidySelectors)) __obj.updateDynamic("tidySelectors")(tidySelectors)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[Anon_All]
+  }
+}
+

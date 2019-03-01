@@ -46,3 +46,24 @@ trait INxMeasure extends js.Object {
   var qSortBy: js.UndefOr[ISortCriteria] = js.undefined
 }
 
+object INxMeasure {
+  @scala.inline
+  def apply(
+    qDef: INxInlineMeasureDef,
+    qAttributeDimensions: js.Array[INxAttrDimDef] = null,
+    qAttributeExpressions: js.Array[INxAttrExprDef] = null,
+    qCalcCond: IValueExpr = null,
+    qLibraryId: java.lang.String = null,
+    qSortBy: ISortCriteria = null
+  ): INxMeasure = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qDef")(qDef)
+    if (qAttributeDimensions != null) __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions)
+    if (qAttributeExpressions != null) __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions)
+    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond)
+    if (qLibraryId != null) __obj.updateDynamic("qLibraryId")(qLibraryId)
+    if (qSortBy != null) __obj.updateDynamic("qSortBy")(qSortBy)
+    __obj.asInstanceOf[INxMeasure]
+  }
+}
+

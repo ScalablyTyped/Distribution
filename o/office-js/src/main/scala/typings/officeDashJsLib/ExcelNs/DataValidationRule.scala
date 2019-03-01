@@ -63,3 +63,26 @@ trait DataValidationRule extends js.Object {
   var wholeNumber: js.UndefOr[BasicDataValidation] = js.undefined
 }
 
+object DataValidationRule {
+  @scala.inline
+  def apply(
+    custom: CustomDataValidation = null,
+    date: DateTimeDataValidation = null,
+    decimal: BasicDataValidation = null,
+    list: ListDataValidation = null,
+    textLength: BasicDataValidation = null,
+    time: DateTimeDataValidation = null,
+    wholeNumber: BasicDataValidation = null
+  ): DataValidationRule = {
+    val __obj = js.Dynamic.literal()
+    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (textLength != null) __obj.updateDynamic("textLength")(textLength)
+    if (time != null) __obj.updateDynamic("time")(time)
+    if (wholeNumber != null) __obj.updateDynamic("wholeNumber")(wholeNumber)
+    __obj.asInstanceOf[DataValidationRule]
+  }
+}
+

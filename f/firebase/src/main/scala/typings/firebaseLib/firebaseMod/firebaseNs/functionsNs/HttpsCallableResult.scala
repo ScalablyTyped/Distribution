@@ -9,3 +9,12 @@ trait HttpsCallableResult extends js.Object {
   val data: js.Any
 }
 
+object HttpsCallableResult {
+  @scala.inline
+  def apply(data: js.Any): HttpsCallableResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[HttpsCallableResult]
+  }
+}
+

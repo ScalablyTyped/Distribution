@@ -21,3 +21,50 @@ trait inputBaseSettableProperties[V, SV, RV]
   ]) | scala.Null
 }
 
+object inputBaseSettableProperties {
+  @scala.inline
+  def apply[V, SV, RV](
+    asyncValidators: js.Array[atOracleOraclejetLib.ojvalidationDashBaseMod.AsyncValidator[V]],
+    autocomplete: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | java.lang.String,
+    autofocus: scala.Boolean,
+    disabled: scala.Boolean,
+    displayOptions: atOracleOraclejetLib.Anon_ConverterHint,
+    help: atOracleOraclejetLib.Anon_Instruction,
+    helpHints: atOracleOraclejetLib.Anon_Definition,
+    labelHint: java.lang.String,
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    placeholder: java.lang.String,
+    rawValue: RV,
+    readonly: scala.Boolean,
+    required: scala.Boolean,
+    translations: atOracleOraclejetLib.Anon_Regexp,
+    valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown,
+    value: SV,
+    describedBy: java.lang.String = null,
+    validators: js.Array[
+      atOracleOraclejetLib.ojvalidationDashBaseMod.Validator[V] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+    ] = null
+  ): inputBaseSettableProperties[V, SV, RV] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("asyncValidators")(asyncValidators)
+    __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
+    __obj.updateDynamic("autofocus")(autofocus)
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("displayOptions")(displayOptions)
+    __obj.updateDynamic("help")(help)
+    __obj.updateDynamic("helpHints")(helpHints)
+    __obj.updateDynamic("labelHint")(labelHint)
+    __obj.updateDynamic("messagesCustom")(messagesCustom)
+    __obj.updateDynamic("placeholder")(placeholder)
+    __obj.updateDynamic("rawValue")(rawValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("readonly")(readonly)
+    __obj.updateDynamic("required")(required)
+    __obj.updateDynamic("translations")(translations)
+    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
+    if (validators != null) __obj.updateDynamic("validators")(validators)
+    __obj.asInstanceOf[inputBaseSettableProperties[V, SV, RV]]
+  }
+}
+

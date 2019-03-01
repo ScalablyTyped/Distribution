@@ -12,3 +12,20 @@ trait InteractiveWrongMediumException
   var Medium: js.Any
 }
 
+object InteractiveWrongMediumException {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Medium: js.Any,
+    Message: java.lang.String
+  ): InteractiveWrongMediumException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Classification")(Classification)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Medium")(Medium)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[InteractiveWrongMediumException]
+  }
+}
+

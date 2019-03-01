@@ -31,3 +31,18 @@ trait SearchResult extends js.Object {
   var subRegExpressions: scala.Double
 }
 
+object SearchResult {
+  @scala.inline
+  def apply(
+    endOffset: activexDashInteropLib.SafeArray[scala.Double],
+    startOffset: activexDashInteropLib.SafeArray[scala.Double],
+    subRegExpressions: scala.Double
+  ): SearchResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endOffset")(endOffset)
+    __obj.updateDynamic("startOffset")(startOffset)
+    __obj.updateDynamic("subRegExpressions")(subRegExpressions)
+    __obj.asInstanceOf[SearchResult]
+  }
+}
+

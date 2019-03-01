@@ -31,3 +31,26 @@ trait Anon_AreaName extends js.Object {
   val sync: firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageArea
 }
 
+object Anon_AreaName {
+  @scala.inline
+  def apply(
+    local: firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageArea,
+    managed: firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageArea,
+    onChanged: WebExtEvent[
+      js.Function2[
+        /* changes */ org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageChange], 
+        /* areaName */ java.lang.String, 
+        scala.Unit
+      ]
+    ],
+    sync: firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageArea
+  ): Anon_AreaName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("local")(local)
+    __obj.updateDynamic("managed")(managed)
+    __obj.updateDynamic("onChanged")(onChanged)
+    __obj.updateDynamic("sync")(sync)
+    __obj.asInstanceOf[Anon_AreaName]
+  }
+}
+

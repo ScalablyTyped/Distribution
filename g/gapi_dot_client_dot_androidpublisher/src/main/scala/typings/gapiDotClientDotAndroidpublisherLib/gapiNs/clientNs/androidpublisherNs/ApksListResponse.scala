@@ -11,3 +11,13 @@ trait ApksListResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApksListResponse {
+  @scala.inline
+  def apply(apks: js.Array[Apk] = null, kind: java.lang.String = null): ApksListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (apks != null) __obj.updateDynamic("apks")(apks)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[ApksListResponse]
+  }
+}
+

@@ -58,3 +58,42 @@ trait ComponentProps
   var gaeaVariables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[VariableData]] = js.undefined
 }
 
+object ComponentProps {
+  @scala.inline
+  def apply(
+    gaeaName: java.lang.String,
+    gaeaUniqueKey: java.lang.String,
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[js.Any] = null,
+    StringDictionary: /**
+    * 渲染编辑回调
+    */
+  // renderEditer?:(React.ComponentClass<FitGaea.ComponentProps>,{})=>void
+  /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    canDragIn: js.UndefOr[scala.Boolean] = js.undefined,
+    gaeaData: js.Any = null,
+    gaeaEdit: js.Array[ComponentPropsGaeaEdit] = null,
+    gaeaEvent: GaeaEvent = null,
+    gaeaEventData: js.Array[EventData] = null,
+    gaeaIcon: java.lang.String = null,
+    gaeaNativeEventData: js.Array[EventData] = null,
+    gaeaPreview: js.UndefOr[scala.Boolean] = js.undefined,
+    gaeaVariables: org.scalablytyped.runtime.StringDictionary[VariableData] = null
+  ): ComponentProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gaeaName")(gaeaName)
+    __obj.updateDynamic("gaeaUniqueKey")(gaeaUniqueKey)
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(canDragIn)) __obj.updateDynamic("canDragIn")(canDragIn)
+    if (gaeaData != null) __obj.updateDynamic("gaeaData")(gaeaData)
+    if (gaeaEdit != null) __obj.updateDynamic("gaeaEdit")(gaeaEdit)
+    if (gaeaEvent != null) __obj.updateDynamic("gaeaEvent")(gaeaEvent)
+    if (gaeaEventData != null) __obj.updateDynamic("gaeaEventData")(gaeaEventData)
+    if (gaeaIcon != null) __obj.updateDynamic("gaeaIcon")(gaeaIcon)
+    if (gaeaNativeEventData != null) __obj.updateDynamic("gaeaNativeEventData")(gaeaNativeEventData)
+    if (!js.isUndefined(gaeaPreview)) __obj.updateDynamic("gaeaPreview")(gaeaPreview)
+    if (gaeaVariables != null) __obj.updateDynamic("gaeaVariables")(gaeaVariables)
+    __obj.asInstanceOf[ComponentProps]
+  }
+}
+

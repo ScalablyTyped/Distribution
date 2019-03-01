@@ -58,3 +58,28 @@ trait Dial extends js.Object {
   var topWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Dial {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String | Gradient = null,
+    baseLength: java.lang.String = null,
+    baseWidth: scala.Int | scala.Double = null,
+    borderColor: java.lang.String | Gradient = null,
+    borderWidth: scala.Int | scala.Double = null,
+    radius: java.lang.String = null,
+    rearLength: java.lang.String = null,
+    topWidth: scala.Int | scala.Double = null
+  ): Dial = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (baseLength != null) __obj.updateDynamic("baseLength")(baseLength)
+    if (baseWidth != null) __obj.updateDynamic("baseWidth")(baseWidth.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius)
+    if (rearLength != null) __obj.updateDynamic("rearLength")(rearLength)
+    if (topWidth != null) __obj.updateDynamic("topWidth")(topWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Dial]
+  }
+}
+

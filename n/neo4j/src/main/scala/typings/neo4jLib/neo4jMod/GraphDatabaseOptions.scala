@@ -33,3 +33,22 @@ trait GraphDatabaseOptions extends js.Object {
   var url: java.lang.String
 }
 
+object GraphDatabaseOptions {
+  @scala.inline
+  def apply(
+    auth: java.lang.String | Authentication,
+    url: java.lang.String,
+    agent: js.Any = null,
+    headers: js.Object = null,
+    proxy: java.lang.String = null
+  ): GraphDatabaseOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    __obj.updateDynamic("url")(url)
+    if (agent != null) __obj.updateDynamic("agent")(agent)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    __obj.asInstanceOf[GraphDatabaseOptions]
+  }
+}
+

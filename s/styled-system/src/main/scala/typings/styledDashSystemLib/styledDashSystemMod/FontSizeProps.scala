@@ -18,3 +18,12 @@ trait FontSizeProps[TLength] extends js.Object {
   var fontSize: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.FontSizeProperty[TLength]]] = js.undefined
 }
 
+object FontSizeProps {
+  @scala.inline
+  def apply[TLength](fontSize: ResponsiveValue[csstypeLib.csstypeMod.FontSizeProperty[TLength]] = null): FontSizeProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FontSizeProps[TLength]]
+  }
+}
+

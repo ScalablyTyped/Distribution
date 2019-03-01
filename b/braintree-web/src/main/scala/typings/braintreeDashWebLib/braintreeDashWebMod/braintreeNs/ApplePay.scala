@@ -118,3 +118,22 @@ trait ApplePay extends js.Object {
   def tokenize(options: braintreeDashWebLib.Anon_Token, callback: callback): scala.Unit
 }
 
+object ApplePay {
+  @scala.inline
+  def apply(
+    VERSION: java.lang.String,
+    create: js.Function2[braintreeDashWebLib.Anon_Client, callback, scala.Unit],
+    createPaymentRequest: js.Function1[ApplePayPaymentRequest, ApplePayPaymentRequest],
+    performValidation: js.Function2[braintreeDashWebLib.Anon_DisplayName, callback, scala.Unit],
+    tokenize: js.Function2[braintreeDashWebLib.Anon_Token, callback, scala.Unit]
+  ): ApplePay = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("VERSION")(VERSION)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createPaymentRequest")(createPaymentRequest)
+    __obj.updateDynamic("performValidation")(performValidation)
+    __obj.updateDynamic("tokenize")(tokenize)
+    __obj.asInstanceOf[ApplePay]
+  }
+}
+

@@ -13,3 +13,12 @@ trait SnapshotListenOptions extends js.Object {
   val includeMetadataChanges: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SnapshotListenOptions {
+  @scala.inline
+  def apply(includeMetadataChanges: js.UndefOr[scala.Boolean] = js.undefined): SnapshotListenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeMetadataChanges)) __obj.updateDynamic("includeMetadataChanges")(includeMetadataChanges)
+    __obj.asInstanceOf[SnapshotListenOptions]
+  }
+}
+

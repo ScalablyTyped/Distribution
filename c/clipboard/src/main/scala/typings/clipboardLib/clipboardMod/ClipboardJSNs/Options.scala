@@ -37,3 +37,23 @@ trait Options extends js.Object {
   var text: js.UndefOr[js.Function1[/* elem */ stdLib.Element, java.lang.String]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    action: js.Function1[
+      /* elem */ stdLib.Element, 
+      clipboardLib.clipboardLibStrings.cut | clipboardLib.clipboardLibStrings.copy
+    ] = null,
+    container: stdLib.Element = null,
+    target: js.Function1[/* elem */ stdLib.Element, stdLib.Element] = null,
+    text: js.Function1[/* elem */ stdLib.Element, java.lang.String] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Options]
+  }
+}
+

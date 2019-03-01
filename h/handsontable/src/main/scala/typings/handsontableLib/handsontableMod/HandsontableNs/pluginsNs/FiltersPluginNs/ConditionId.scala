@@ -11,3 +11,14 @@ trait ConditionId extends js.Object {
   var name: js.UndefOr[ConditionName] = js.undefined
 }
 
+object ConditionId {
+  @scala.inline
+  def apply(args: js.Array[_], command: handsontableLib.Anon_Key = null, name: ConditionName = null): ConditionId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    if (command != null) __obj.updateDynamic("command")(command)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ConditionId]
+  }
+}
+

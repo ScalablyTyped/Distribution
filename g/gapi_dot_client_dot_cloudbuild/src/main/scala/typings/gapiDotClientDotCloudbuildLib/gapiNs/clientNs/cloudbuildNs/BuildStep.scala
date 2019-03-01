@@ -82,3 +82,30 @@ trait BuildStep extends js.Object {
   var waitFor: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object BuildStep {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    dir: java.lang.String = null,
+    entrypoint: java.lang.String = null,
+    env: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    secretEnv: js.Array[java.lang.String] = null,
+    volumes: js.Array[Volume] = null,
+    waitFor: js.Array[java.lang.String] = null
+  ): BuildStep = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (entrypoint != null) __obj.updateDynamic("entrypoint")(entrypoint)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (secretEnv != null) __obj.updateDynamic("secretEnv")(secretEnv)
+    if (volumes != null) __obj.updateDynamic("volumes")(volumes)
+    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor)
+    __obj.asInstanceOf[BuildStep]
+  }
+}
+

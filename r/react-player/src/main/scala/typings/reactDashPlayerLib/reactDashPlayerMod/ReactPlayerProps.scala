@@ -44,3 +44,84 @@ trait ReactPlayerProps
   var youtubeConfig: js.UndefOr[YouTubeConfig] = js.undefined
 }
 
+object ReactPlayerProps {
+  @scala.inline
+  def apply(
+    StringDictionary: /* otherProps */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    config: Config = null,
+    controls: js.UndefOr[scala.Boolean] = js.undefined,
+    dailymotionConfig: DailyMotionConfig = null,
+    facebookConfig: FacebookConfig = null,
+    fileConfig: FileConfig = null,
+    height: java.lang.String | scala.Double = null,
+    light: scala.Boolean | java.lang.String = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    muted: js.UndefOr[scala.Boolean] = js.undefined,
+    onBuffer: js.Function0[scala.Unit] = null,
+    onDisablePIP: js.Function0[scala.Unit] = null,
+    onDuration: js.Function1[/* duration */ scala.Double, scala.Unit] = null,
+    onEnablePIP: js.Function0[scala.Unit] = null,
+    onEnded: js.Function0[scala.Unit] = null,
+    onError: js.Function1[/* error */ js.Any, scala.Unit] = null,
+    onPause: js.Function0[scala.Unit] = null,
+    onPlay: js.Function0[scala.Unit] = null,
+    onProgress: js.Function1[/* state */ reactDashPlayerLib.Anon_Loaded, scala.Unit] = null,
+    onReady: js.Function0[scala.Unit] = null,
+    onSeek: js.Function1[/* seconds */ scala.Double, scala.Unit] = null,
+    onStart: js.Function0[scala.Unit] = null,
+    pip: js.UndefOr[scala.Boolean] = js.undefined,
+    playbackRate: scala.Int | scala.Double = null,
+    playing: js.UndefOr[scala.Boolean] = js.undefined,
+    playsinline: js.UndefOr[scala.Boolean] = js.undefined,
+    progressInterval: scala.Int | scala.Double = null,
+    soundcloudConfig: SoundCloudConfig = null,
+    style: js.Object = null,
+    url: java.lang.String | js.Array[java.lang.String] | js.Array[SourceProps] = null,
+    vimeoConfig: VimeoConfig = null,
+    volume: scala.Int | scala.Double = null,
+    width: java.lang.String | scala.Double = null,
+    wistiaConfig: WistiaConfig = null,
+    wrapper: js.Any = null,
+    youtubeConfig: YouTubeConfig = null
+  ): ReactPlayerProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
+    if (dailymotionConfig != null) __obj.updateDynamic("dailymotionConfig")(dailymotionConfig)
+    if (facebookConfig != null) __obj.updateDynamic("facebookConfig")(facebookConfig)
+    if (fileConfig != null) __obj.updateDynamic("fileConfig")(fileConfig)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (onBuffer != null) __obj.updateDynamic("onBuffer")(onBuffer)
+    if (onDisablePIP != null) __obj.updateDynamic("onDisablePIP")(onDisablePIP)
+    if (onDuration != null) __obj.updateDynamic("onDuration")(onDuration)
+    if (onEnablePIP != null) __obj.updateDynamic("onEnablePIP")(onEnablePIP)
+    if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
+    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
+    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
+    if (onSeek != null) __obj.updateDynamic("onSeek")(onSeek)
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (!js.isUndefined(pip)) __obj.updateDynamic("pip")(pip)
+    if (playbackRate != null) __obj.updateDynamic("playbackRate")(playbackRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing)
+    if (!js.isUndefined(playsinline)) __obj.updateDynamic("playsinline")(playsinline)
+    if (progressInterval != null) __obj.updateDynamic("progressInterval")(progressInterval.asInstanceOf[js.Any])
+    if (soundcloudConfig != null) __obj.updateDynamic("soundcloudConfig")(soundcloudConfig)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (vimeoConfig != null) __obj.updateDynamic("vimeoConfig")(vimeoConfig)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wistiaConfig != null) __obj.updateDynamic("wistiaConfig")(wistiaConfig)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    if (youtubeConfig != null) __obj.updateDynamic("youtubeConfig")(youtubeConfig)
+    __obj.asInstanceOf[ReactPlayerProps]
+  }
+}
+

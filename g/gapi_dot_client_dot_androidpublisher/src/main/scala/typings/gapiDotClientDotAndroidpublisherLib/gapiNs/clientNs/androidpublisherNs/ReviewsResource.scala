@@ -18,3 +18,27 @@ trait ReviewsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ReviewsReplyResponse]
 }
 
+object ReviewsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Review]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyMaxResultsOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ReviewsListResponse]
+    ],
+    reply: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrintQuotaUserReviewIdUserIp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ReviewsReplyResponse]
+    ]
+  ): ReviewsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("reply")(reply)
+    __obj.asInstanceOf[ReviewsResource]
+  }
+}
+

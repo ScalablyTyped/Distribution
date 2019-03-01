@@ -21,3 +21,13 @@ trait ASPxClientCallbackErrorEventArgs extends ASPxClientEventArgs {
   var message: java.lang.String
 }
 
+object ASPxClientCallbackErrorEventArgs {
+  @scala.inline
+  def apply(handled: scala.Boolean, message: java.lang.String): ASPxClientCallbackErrorEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handled")(handled)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[ASPxClientCallbackErrorEventArgs]
+  }
+}
+

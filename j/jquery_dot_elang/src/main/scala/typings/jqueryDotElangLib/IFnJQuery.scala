@@ -15,3 +15,21 @@ trait IFnJQuery extends js.Object {
   ): jqueryLib.JQuery[stdLib.HTMLElement]
 }
 
+object IFnJQuery {
+  @scala.inline
+  def apply(
+    fnPlugin: js.Function5[
+      jqueryLib.JQuery[stdLib.HTMLElement], 
+      js.Any, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      jqueryLib.JQuery[stdLib.HTMLElement]
+    ]
+  ): IFnJQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fnPlugin")(fnPlugin)
+    __obj.asInstanceOf[IFnJQuery]
+  }
+}
+

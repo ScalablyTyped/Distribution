@@ -10,3 +10,13 @@ trait Anon_Conflicts extends js.Object {
   var params: js.Any
 }
 
+object Anon_Conflicts {
+  @scala.inline
+  def apply(conflicts: js.Array[loopbackLib.loopbackMod.lNs.Conflict], params: js.Any): Anon_Conflicts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("conflicts")(conflicts)
+    __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[Anon_Conflicts]
+  }
+}
+

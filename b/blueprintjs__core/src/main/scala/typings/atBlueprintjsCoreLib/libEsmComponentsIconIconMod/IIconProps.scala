@@ -52,7 +52,7 @@ trait IIconProps
     * @default "span"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
   ] = js.undefined
   /**
     * Description string. This string does not appear in normal browsers, but
@@ -63,5 +63,34 @@ trait IIconProps
   var title: js.UndefOr[
     java.lang.String | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`false` | scala.Null
   ] = js.undefined
+}
+
+object IIconProps {
+  @scala.inline
+  def apply(
+    icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement,
+    children: js.UndefOr[scala.Nothing] = js.undefined,
+    className: java.lang.String = null,
+    color: java.lang.String = null,
+    htmlTitle: java.lang.String = null,
+    iconSize: scala.Int | scala.Double = null,
+    intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
+    title: java.lang.String | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`false` = null
+  ): IIconProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(children)) __obj.updateDynamic("children")(children)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (htmlTitle != null) __obj.updateDynamic("htmlTitle")(htmlTitle)
+    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IIconProps]
+  }
 }
 

@@ -15,10 +15,6 @@ package object CleanCSSNs {
     scala.Unit
   ]
   /**
-    * Union type for both types of minifier functions
-    */
-  type Minifier = MinifierOutput | MinifierPromise
-  /**
     * Discriminant union of both sets of options types.  If you initialize without setting `returnPromise: true`
     *  and want to return a promise, you will need to cast to the correct options type so that TypeScript
     *  knows what the expected return type will be:

@@ -10,3 +10,13 @@ trait EncodedTransaction extends js.Object {
   var tx: web3Lib.Anon_Gas
 }
 
+object EncodedTransaction {
+  @scala.inline
+  def apply(raw: java.lang.String, tx: web3Lib.Anon_Gas): EncodedTransaction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("raw")(raw)
+    __obj.updateDynamic("tx")(tx)
+    __obj.asInstanceOf[EncodedTransaction]
+  }
+}
+

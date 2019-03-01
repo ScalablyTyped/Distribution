@@ -12,3 +12,20 @@ trait PendingMacrotask extends js.Object {
   var source: java.lang.String
 }
 
+object PendingMacrotask {
+  @scala.inline
+  def apply(
+    creationLocation: nodeLib.Error,
+    data: TaskData,
+    source: java.lang.String,
+    runCount: scala.Int | scala.Double = null
+  ): PendingMacrotask = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("creationLocation")(creationLocation)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("source")(source)
+    if (runCount != null) __obj.updateDynamic("runCount")(runCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PendingMacrotask]
+  }
+}
+

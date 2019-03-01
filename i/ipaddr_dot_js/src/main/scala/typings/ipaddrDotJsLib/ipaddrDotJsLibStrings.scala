@@ -7,55 +7,76 @@ import scala.scalajs.js.annotation._
 
 object ipaddrDotJsLibStrings {
   @js.native
-  sealed trait `6to4` extends js.Object
+  sealed trait `6to4`
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait broadcast extends js.Object
+  sealed trait broadcast
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
   
   @js.native
-  sealed trait carrierGradeNat extends js.Object
+  sealed trait carrierGradeNat
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
   
   @js.native
   sealed trait ipv4 extends js.Object
   
   @js.native
-  sealed trait ipv4Mapped extends js.Object
+  sealed trait ipv4Mapped
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
   sealed trait ipv6 extends js.Object
   
   @js.native
-  sealed trait linkLocal extends js.Object
+  sealed trait linkLocal
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
+       with ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait loopback extends js.Object
+  sealed trait loopback
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
+       with ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait multicast extends js.Object
+  sealed trait multicast
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
+       with ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait `private`
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
   
   @js.native
-  sealed trait reserved extends js.Object
+  sealed trait reserved
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
+       with ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait rfc6052 extends js.Object
+  sealed trait rfc6052
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait rfc6145 extends js.Object
+  sealed trait rfc6145
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait teredo extends js.Object
+  sealed trait teredo
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait unicast extends js.Object
+  sealed trait unicast
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
+       with ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait uniqueLocal extends js.Object
+  sealed trait uniqueLocal
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @js.native
-  sealed trait unspecified extends js.Object
+  sealed trait unspecified
+    extends ipaddrDotJsLib.ipaddrDotJsMod.IPv4Range
+       with ipaddrDotJsLib.ipaddrDotJsMod.IPv6Range
   
   @scala.inline
   def `6to4`: `6to4` = "6to4".asInstanceOf[`6to4`]

@@ -11,3 +11,18 @@ trait Options extends js.Object {
   var timeoutCallback: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    scope: js.Any = null,
+    timeout: scala.Int | scala.Double = null,
+    timeoutCallback: js.Function0[scala.Unit] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (timeoutCallback != null) __obj.updateDynamic("timeoutCallback")(timeoutCallback)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -12,3 +12,16 @@ trait UrlSampleDetails extends js.Object {
   var linkedFromUrls: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object UrlSampleDetails {
+  @scala.inline
+  def apply(
+    containingSitemaps: js.Array[java.lang.String] = null,
+    linkedFromUrls: js.Array[java.lang.String] = null
+  ): UrlSampleDetails = {
+    val __obj = js.Dynamic.literal()
+    if (containingSitemaps != null) __obj.updateDynamic("containingSitemaps")(containingSitemaps)
+    if (linkedFromUrls != null) __obj.updateDynamic("linkedFromUrls")(linkedFromUrls)
+    __obj.asInstanceOf[UrlSampleDetails]
+  }
+}
+

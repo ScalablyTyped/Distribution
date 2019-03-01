@@ -15,3 +15,18 @@ trait PathWatcher extends DisposableLike {
   def onDidError(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): Disposable
 }
 
+object PathWatcher {
+  @scala.inline
+  def apply(
+    dispose: js.Function0[scala.Unit],
+    getStartPromise: js.Function0[js.Promise[scala.Unit]],
+    onDidError: js.Function1[js.Function1[/* error */ nodeLib.Error, scala.Unit], Disposable]
+  ): PathWatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getStartPromise")(getStartPromise)
+    __obj.updateDynamic("onDidError")(onDidError)
+    __obj.asInstanceOf[PathWatcher]
+  }
+}
+

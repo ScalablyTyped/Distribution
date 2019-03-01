@@ -19,3 +19,32 @@ trait UsersResource extends js.Object {
   def updateProfile(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[UserProfile]
 }
 
+object UsersResource {
+  @scala.inline
+  def apply(
+    createCompanyRelation: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CompanyRelation]
+    ],
+    deleteCompanyRelation: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[User]
+    ],
+    updateProfile: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UserProfile]
+    ]
+  ): UsersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createCompanyRelation")(createCompanyRelation)
+    __obj.updateDynamic("deleteCompanyRelation")(deleteCompanyRelation)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("updateProfile")(updateProfile)
+    __obj.asInstanceOf[UsersResource]
+  }
+}
+

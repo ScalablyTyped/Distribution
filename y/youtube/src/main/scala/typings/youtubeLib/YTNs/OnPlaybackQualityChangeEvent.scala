@@ -12,3 +12,13 @@ trait OnPlaybackQualityChangeEvent extends PlayerEvent {
   var data: java.lang.String
 }
 
+object OnPlaybackQualityChangeEvent {
+  @scala.inline
+  def apply(data: java.lang.String, target: Player): OnPlaybackQualityChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[OnPlaybackQualityChangeEvent]
+  }
+}
+

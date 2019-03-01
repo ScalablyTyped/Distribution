@@ -47,3 +47,39 @@ trait IStatusProxy
   var update_IStatusProxy: js.UndefOr[js.Function1[/* html */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
 }
 
+object IStatusProxy {
+  @scala.inline
+  def apply(
+    IComponent: extjsLib.ExtNs.IComponent = null,
+    dropAllowed: java.lang.String = null,
+    dropNotAllowed: java.lang.String = null,
+    getGhost: js.Function0[extjsLib.ExtNs.IElement] = null,
+    renderTpl: js.Any = null,
+    repair: js.Function3[
+      /* xy */ js.UndefOr[extjsLib.ExtNs.Array], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    reset: js.Function1[/* clearGhost */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setStatus: js.Function1[/* cssClass */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    stop: js.Function0[scala.Unit] = null,
+    sync: js.Function0[scala.Unit] = null,
+    update: js.Function1[/* html */ js.UndefOr[js.Any], scala.Unit] = null
+  ): IStatusProxy = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (dropAllowed != null) __obj.updateDynamic("dropAllowed")(dropAllowed)
+    if (dropNotAllowed != null) __obj.updateDynamic("dropNotAllowed")(dropNotAllowed)
+    if (getGhost != null) __obj.updateDynamic("getGhost")(getGhost)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (repair != null) __obj.updateDynamic("repair")(repair)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (setStatus != null) __obj.updateDynamic("setStatus")(setStatus)
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (sync != null) __obj.updateDynamic("sync")(sync)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[IStatusProxy]
+  }
+}
+

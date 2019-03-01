@@ -10,3 +10,13 @@ trait ISystemTrigger extends IBackgroundTrigger {
   var triggerType: SystemTriggerType
 }
 
+object ISystemTrigger {
+  @scala.inline
+  def apply(oneShot: scala.Boolean, triggerType: SystemTriggerType): ISystemTrigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("oneShot")(oneShot)
+    __obj.updateDynamic("triggerType")(triggerType)
+    __obj.asInstanceOf[ISystemTrigger]
+  }
+}
+

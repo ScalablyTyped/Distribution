@@ -12,3 +12,13 @@ trait ListUserStatesResponse extends js.Object {
   var userStates: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ListUserStatesResponse {
+  @scala.inline
+  def apply(responseMetadata: ResponseMetadata = null, userStates: js.Array[java.lang.String] = null): ListUserStatesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    if (userStates != null) __obj.updateDynamic("userStates")(userStates)
+    __obj.asInstanceOf[ListUserStatesResponse]
+  }
+}
+

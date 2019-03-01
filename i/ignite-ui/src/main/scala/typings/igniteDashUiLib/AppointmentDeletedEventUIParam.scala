@@ -16,3 +16,13 @@ trait AppointmentDeletedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object AppointmentDeletedEventUIParam {
+  @scala.inline
+  def apply(appointmentId: js.Any = null, owner: js.Any = null): AppointmentDeletedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (appointmentId != null) __obj.updateDynamic("appointmentId")(appointmentId)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[AppointmentDeletedEventUIParam]
+  }
+}
+

@@ -29,3 +29,26 @@ trait IChargeUpdateOptions
   var shipping: js.UndefOr[stripeLib.stripeMod.StripeNs.IShippingInformation] = js.undefined
 }
 
+object IChargeUpdateOptions {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    fraud_details: stripeLib.Anon_FraudulentSafe = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    receipt_email: java.lang.String = null,
+    shipping: stripeLib.stripeMod.StripeNs.IShippingInformation = null
+  ): IChargeUpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (fraud_details != null) __obj.updateDynamic("fraud_details")(fraud_details)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    __obj.asInstanceOf[IChargeUpdateOptions]
+  }
+}
+

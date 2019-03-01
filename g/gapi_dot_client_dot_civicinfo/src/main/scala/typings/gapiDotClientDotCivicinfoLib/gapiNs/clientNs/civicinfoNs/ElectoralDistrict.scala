@@ -18,3 +18,20 @@ trait ElectoralDistrict extends js.Object {
   var scope: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ElectoralDistrict {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    kgForeignKey: java.lang.String = null,
+    name: java.lang.String = null,
+    scope: java.lang.String = null
+  ): ElectoralDistrict = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kgForeignKey != null) __obj.updateDynamic("kgForeignKey")(kgForeignKey)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[ElectoralDistrict]
+  }
+}
+

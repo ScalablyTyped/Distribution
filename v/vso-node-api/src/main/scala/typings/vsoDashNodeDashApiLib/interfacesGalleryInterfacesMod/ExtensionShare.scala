@@ -11,3 +11,13 @@ trait ExtensionShare extends js.Object {
   var `type`: java.lang.String
 }
 
+object ExtensionShare {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, `type`: java.lang.String): ExtensionShare = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ExtensionShare]
+  }
+}
+

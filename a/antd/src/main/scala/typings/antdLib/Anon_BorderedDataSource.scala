@@ -15,3 +15,22 @@ trait Anon_BorderedDataSource extends js.Object {
   var split: scala.Boolean
 }
 
+object Anon_BorderedDataSource {
+  @scala.inline
+  def apply(
+    bordered: scala.Boolean,
+    dataSource: js.Array[scala.Nothing],
+    loading: scala.Boolean,
+    split: scala.Boolean,
+    pagination: antdLib.antdLibNumbers.`false` | antdLib.libPaginationPaginationMod.PaginationConfig = null
+  ): Anon_BorderedDataSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bordered")(bordered)
+    __obj.updateDynamic("dataSource")(dataSource)
+    __obj.updateDynamic("loading")(loading)
+    __obj.updateDynamic("split")(split)
+    if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BorderedDataSource]
+  }
+}
+

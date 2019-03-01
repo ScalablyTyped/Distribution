@@ -12,3 +12,20 @@ trait CustomAuthorizerResult extends js.Object {
   var usageIdentifierKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomAuthorizerResult {
+  @scala.inline
+  def apply(
+    policyDocument: PolicyDocument,
+    principalId: java.lang.String,
+    context: AuthResponseContext = null,
+    usageIdentifierKey: java.lang.String = null
+  ): CustomAuthorizerResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("policyDocument")(policyDocument)
+    __obj.updateDynamic("principalId")(principalId)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (usageIdentifierKey != null) __obj.updateDynamic("usageIdentifierKey")(usageIdentifierKey)
+    __obj.asInstanceOf[CustomAuthorizerResult]
+  }
+}
+

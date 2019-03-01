@@ -81,3 +81,32 @@ trait ChartPlotAreaUpdateData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartPlotAreaUpdateData {
+  @scala.inline
+  def apply(
+    format: ChartPlotAreaFormatUpdateData = null,
+    height: scala.Int | scala.Double = null,
+    insideHeight: scala.Int | scala.Double = null,
+    insideLeft: scala.Int | scala.Double = null,
+    insideTop: scala.Int | scala.Double = null,
+    insideWidth: scala.Int | scala.Double = null,
+    left: scala.Int | scala.Double = null,
+    position: officeDashJsLib.ExcelNs.ChartPlotAreaPosition | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.Custom = null,
+    top: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): ChartPlotAreaUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (insideHeight != null) __obj.updateDynamic("insideHeight")(insideHeight.asInstanceOf[js.Any])
+    if (insideLeft != null) __obj.updateDynamic("insideLeft")(insideLeft.asInstanceOf[js.Any])
+    if (insideTop != null) __obj.updateDynamic("insideTop")(insideTop.asInstanceOf[js.Any])
+    if (insideWidth != null) __obj.updateDynamic("insideWidth")(insideWidth.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartPlotAreaUpdateData]
+  }
+}
+

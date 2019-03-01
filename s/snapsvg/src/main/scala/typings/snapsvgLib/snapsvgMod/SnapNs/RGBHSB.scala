@@ -17,3 +17,30 @@ trait RGBHSB extends js.Object {
   var v: scala.Double
 }
 
+object RGBHSB {
+  @scala.inline
+  def apply(
+    b: scala.Double,
+    error: scala.Boolean,
+    g: scala.Double,
+    h: scala.Double,
+    hex: java.lang.String,
+    l: scala.Double,
+    r: scala.Double,
+    s: scala.Double,
+    v: scala.Double
+  ): RGBHSB = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("b")(b)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("g")(g)
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("hex")(hex)
+    __obj.updateDynamic("l")(l)
+    __obj.updateDynamic("r")(r)
+    __obj.updateDynamic("s")(s)
+    __obj.updateDynamic("v")(v)
+    __obj.asInstanceOf[RGBHSB]
+  }
+}
+

@@ -13,3 +13,13 @@ trait StandardDiagramCreationParameters extends js.Object {
   var UseCategoriesAsX: scala.Boolean
 }
 
+object StandardDiagramCreationParameters {
+  @scala.inline
+  def apply(HasCategories: scala.Boolean, UseCategoriesAsX: scala.Boolean): StandardDiagramCreationParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("HasCategories")(HasCategories)
+    __obj.updateDynamic("UseCategoriesAsX")(UseCategoriesAsX)
+    __obj.asInstanceOf[StandardDiagramCreationParameters]
+  }
+}
+

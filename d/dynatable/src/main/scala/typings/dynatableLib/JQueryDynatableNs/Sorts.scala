@@ -44,3 +44,26 @@ trait Sorts extends js.Object {
   def remove(attr: java.lang.String): Dynatable
 }
 
+object Sorts {
+  @scala.inline
+  def apply(
+    add: js.Function2[java.lang.String, scala.Double, Dynatable],
+    clear: js.Function0[scala.Unit],
+    functions: SortsFunctions,
+    guessType: js.Function3[js.Any, js.Any, java.lang.String, java.lang.String],
+    init: js.Function0[scala.Unit],
+    initOnLoad: js.Function0[scala.Boolean],
+    remove: js.Function1[java.lang.String, Dynatable]
+  ): Sorts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("functions")(functions)
+    __obj.updateDynamic("guessType")(guessType)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("initOnLoad")(initOnLoad)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[Sorts]
+  }
+}
+

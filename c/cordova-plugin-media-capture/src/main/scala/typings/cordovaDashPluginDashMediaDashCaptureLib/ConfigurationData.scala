@@ -15,3 +15,13 @@ trait ConfigurationData extends js.Object {
   var width: scala.Double
 }
 
+object ConfigurationData {
+  @scala.inline
+  def apply(height: scala.Double, `type`: java.lang.String, width: scala.Double): ConfigurationData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ConfigurationData]
+  }
+}
+

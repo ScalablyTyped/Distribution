@@ -15,3 +15,13 @@ trait ParagraphMarker extends js.Object {
   var style: js.UndefOr[ParagraphStyle] = js.undefined
 }
 
+object ParagraphMarker {
+  @scala.inline
+  def apply(bullet: Bullet = null, style: ParagraphStyle = null): ParagraphMarker = {
+    val __obj = js.Dynamic.literal()
+    if (bullet != null) __obj.updateDynamic("bullet")(bullet)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ParagraphMarker]
+  }
+}
+

@@ -32,3 +32,22 @@ trait AllocateQuotaResponse extends js.Object {
   var serviceConfigId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AllocateQuotaResponse {
+  @scala.inline
+  def apply(
+    allocateErrors: js.Array[QuotaError] = null,
+    allocateInfo: AllocateInfo = null,
+    operationId: java.lang.String = null,
+    quotaMetrics: js.Array[MetricValueSet] = null,
+    serviceConfigId: java.lang.String = null
+  ): AllocateQuotaResponse = {
+    val __obj = js.Dynamic.literal()
+    if (allocateErrors != null) __obj.updateDynamic("allocateErrors")(allocateErrors)
+    if (allocateInfo != null) __obj.updateDynamic("allocateInfo")(allocateInfo)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics)
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    __obj.asInstanceOf[AllocateQuotaResponse]
+  }
+}
+

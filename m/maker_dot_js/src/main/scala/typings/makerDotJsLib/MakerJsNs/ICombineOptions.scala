@@ -27,3 +27,22 @@ trait ICombineOptions extends IPointMatchOptions {
   var trimDeadEnds: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ICombineOptions {
+  @scala.inline
+  def apply(
+    farPoint: IPoint = null,
+    measureA: makerDotJsLib.MakerJsNs.measureNs.Atlas = null,
+    measureB: makerDotJsLib.MakerJsNs.measureNs.Atlas = null,
+    pointMatchingDistance: scala.Int | scala.Double = null,
+    trimDeadEnds: js.UndefOr[scala.Boolean] = js.undefined
+  ): ICombineOptions = {
+    val __obj = js.Dynamic.literal()
+    if (farPoint != null) __obj.updateDynamic("farPoint")(farPoint)
+    if (measureA != null) __obj.updateDynamic("measureA")(measureA)
+    if (measureB != null) __obj.updateDynamic("measureB")(measureB)
+    if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(trimDeadEnds)) __obj.updateDynamic("trimDeadEnds")(trimDeadEnds)
+    __obj.asInstanceOf[ICombineOptions]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Anon_ComparisonOperator extends js.Object {
   var textTransformation: java.lang.String
 }
 
+object Anon_ComparisonOperator {
+  @scala.inline
+  def apply(
+    comparisonOperator: java.lang.String,
+    fieldToMatch: Anon_DataType,
+    size: scala.Double,
+    textTransformation: java.lang.String
+  ): Anon_ComparisonOperator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("comparisonOperator")(comparisonOperator)
+    __obj.updateDynamic("fieldToMatch")(fieldToMatch)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("textTransformation")(textTransformation)
+    __obj.asInstanceOf[Anon_ComparisonOperator]
+  }
+}
+

@@ -35,3 +35,36 @@ trait Anon_AltExecutionIdFieldsHistoryId extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltExecutionIdFieldsHistoryId {
+  @scala.inline
+  def apply(
+    executionId: java.lang.String,
+    historyId: java.lang.String,
+    projectId: java.lang.String,
+    sampleSeriesId: java.lang.String,
+    stepId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltExecutionIdFieldsHistoryId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("executionId")(executionId)
+    __obj.updateDynamic("historyId")(historyId)
+    __obj.updateDynamic("projectId")(projectId)
+    __obj.updateDynamic("sampleSeriesId")(sampleSeriesId)
+    __obj.updateDynamic("stepId")(stepId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltExecutionIdFieldsHistoryId]
+  }
+}
+

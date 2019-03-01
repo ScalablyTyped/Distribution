@@ -15,3 +15,18 @@ trait AsarOptions
   var smartUnpack: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AsarOptions {
+  @scala.inline
+  def apply(
+    externalAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    ordering: java.lang.String = null,
+    smartUnpack: js.UndefOr[scala.Boolean] = js.undefined
+  ): AsarOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(externalAllowed)) __obj.updateDynamic("externalAllowed")(externalAllowed)
+    if (ordering != null) __obj.updateDynamic("ordering")(ordering)
+    if (!js.isUndefined(smartUnpack)) __obj.updateDynamic("smartUnpack")(smartUnpack)
+    __obj.asInstanceOf[AsarOptions]
+  }
+}
+

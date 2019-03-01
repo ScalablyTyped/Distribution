@@ -33,3 +33,20 @@ trait DownwardAPIVolumeFile extends js.Object {
   val resourceFieldRef: ResourceFieldSelector
 }
 
+object DownwardAPIVolumeFile {
+  @scala.inline
+  def apply(
+    fieldRef: ObjectFieldSelector,
+    mode: scala.Double,
+    path: java.lang.String,
+    resourceFieldRef: ResourceFieldSelector
+  ): DownwardAPIVolumeFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fieldRef")(fieldRef)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("resourceFieldRef")(resourceFieldRef)
+    __obj.asInstanceOf[DownwardAPIVolumeFile]
+  }
+}
+

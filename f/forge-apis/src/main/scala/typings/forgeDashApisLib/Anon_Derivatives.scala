@@ -13,3 +13,22 @@ trait Anon_Derivatives extends js.Object {
   var thumbnail: js.Any
 }
 
+object Anon_Derivatives {
+  @scala.inline
+  def apply(
+    derivatives: Anon_Data,
+    item: js.Any,
+    refs: js.Any,
+    storage: Anon_DataAnonIdType,
+    thumbnail: js.Any
+  ): Anon_Derivatives = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("derivatives")(derivatives)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("refs")(refs)
+    __obj.updateDynamic("storage")(storage)
+    __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[Anon_Derivatives]
+  }
+}
+

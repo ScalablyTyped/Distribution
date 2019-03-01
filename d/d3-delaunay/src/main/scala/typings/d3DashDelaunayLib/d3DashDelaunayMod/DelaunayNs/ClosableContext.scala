@@ -15,3 +15,12 @@ trait ClosableContext extends js.Object {
   def closePath(): scala.Unit
 }
 
+object ClosableContext {
+  @scala.inline
+  def apply(closePath: js.Function0[scala.Unit]): ClosableContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("closePath")(closePath)
+    __obj.asInstanceOf[ClosableContext]
+  }
+}
+

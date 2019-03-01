@@ -10,3 +10,13 @@ trait TileIndex extends js.Object {
   var yIndex: scala.Double
 }
 
+object TileIndex {
+  @scala.inline
+  def apply(xIndex: scala.Double, yIndex: scala.Double): TileIndex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("xIndex")(xIndex)
+    __obj.updateDynamic("yIndex")(yIndex)
+    __obj.asInstanceOf[TileIndex]
+  }
+}
+

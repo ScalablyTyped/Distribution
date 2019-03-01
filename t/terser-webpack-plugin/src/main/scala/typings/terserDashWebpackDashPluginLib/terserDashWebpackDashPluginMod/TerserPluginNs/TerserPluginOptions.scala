@@ -24,3 +24,36 @@ trait TerserPluginOptions extends js.Object {
   var warningsFilter: js.UndefOr[js.Function2[/* warning */ js.Any, /* source */ js.Any, scala.Boolean]] = js.undefined
 }
 
+object TerserPluginOptions {
+  @scala.inline
+  def apply(
+    cache: scala.Boolean | java.lang.String = null,
+    cacheKeys: js.Function2[/* defaultCacheKeys */ js.Any, /* file */ js.Any, js.Object] = null,
+    chunkFilter: js.Function1[/* chunk */ webpackLib.webpackMod.compilationNs.Chunk, scala.Boolean] = null,
+    exclude: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null,
+    extractComments: scala.Boolean | java.lang.String | stdLib.RegExp | ExtractCommentFn | ExtractCommentOptions = null,
+    include: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null,
+    minify: js.Function2[/* file */ js.Any, /* sourceMap */ js.Any, MinifyResult] = null,
+    parallel: scala.Boolean | scala.Double = null,
+    sourceMap: js.UndefOr[scala.Boolean] = js.undefined,
+    terserOptions: terserLib.terserMod.MinifyOptions = null,
+    test: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null,
+    warningsFilter: js.Function2[/* warning */ js.Any, /* source */ js.Any, scala.Boolean] = null
+  ): TerserPluginOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (cacheKeys != null) __obj.updateDynamic("cacheKeys")(cacheKeys)
+    if (chunkFilter != null) __obj.updateDynamic("chunkFilter")(chunkFilter)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (extractComments != null) __obj.updateDynamic("extractComments")(extractComments.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (minify != null) __obj.updateDynamic("minify")(minify)
+    if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (terserOptions != null) __obj.updateDynamic("terserOptions")(terserOptions)
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (warningsFilter != null) __obj.updateDynamic("warningsFilter")(warningsFilter)
+    __obj.asInstanceOf[TerserPluginOptions]
+  }
+}
+

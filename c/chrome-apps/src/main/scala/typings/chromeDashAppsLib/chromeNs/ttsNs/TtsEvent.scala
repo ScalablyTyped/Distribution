@@ -18,3 +18,17 @@ trait TtsEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object TtsEvent {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    charIndex: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    errorMessage: java.lang.String = null
+  ): TtsEvent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (!js.isUndefined(charIndex)) __obj.updateDynamic("charIndex")(charIndex)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    __obj.asInstanceOf[TtsEvent]
+  }
+}
+

@@ -33,3 +33,60 @@ trait Hidden extends js.Object {
   def setWidth(width: java.lang.String): Hidden
 }
 
+object Hidden {
+  @scala.inline
+  def apply(
+    addStyleDependentName: js.Function1[java.lang.String, Hidden],
+    addStyleName: js.Function1[java.lang.String, Hidden],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setDefaultValue: js.Function1[java.lang.String, Hidden],
+    setHeight: js.Function1[java.lang.String, Hidden],
+    setID: js.Function1[java.lang.String, Hidden],
+    setId: js.Function1[java.lang.String, Hidden],
+    setLayoutData: js.Function1[js.Object, Hidden],
+    setName: js.Function1[java.lang.String, Hidden],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      Hidden
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, Hidden],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, Hidden],
+    setStyleAttributes: js.Function1[js.Object, Hidden],
+    setStyleName: js.Function1[java.lang.String, Hidden],
+    setStylePrimaryName: js.Function1[java.lang.String, Hidden],
+    setTag: js.Function1[java.lang.String, Hidden],
+    setTitle: js.Function1[java.lang.String, Hidden],
+    setValue: js.Function1[java.lang.String, Hidden],
+    setVisible: js.Function1[scala.Boolean, Hidden],
+    setWidth: js.Function1[java.lang.String, Hidden]
+  ): Hidden = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
+    __obj.updateDynamic("addStyleName")(addStyleName)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getTag")(getTag)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("setDefaultValue")(setDefaultValue)
+    __obj.updateDynamic("setHeight")(setHeight)
+    __obj.updateDynamic("setID")(setID)
+    __obj.updateDynamic("setId")(setId)
+    __obj.updateDynamic("setLayoutData")(setLayoutData)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setPixelSize")(setPixelSize)
+    __obj.updateDynamic("setSize")(setSize)
+    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
+    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
+    __obj.updateDynamic("setStyleName")(setStyleName)
+    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
+    __obj.updateDynamic("setTag")(setTag)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.updateDynamic("setVisible")(setVisible)
+    __obj.updateDynamic("setWidth")(setWidth)
+    __obj.asInstanceOf[Hidden]
+  }
+}
+

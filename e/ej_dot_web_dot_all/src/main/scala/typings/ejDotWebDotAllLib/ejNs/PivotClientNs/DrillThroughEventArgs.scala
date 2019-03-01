@@ -14,3 +14,13 @@ trait DrillThroughEventArgs extends js.Object {
   var element: js.UndefOr[js.Any] = js.undefined
 }
 
+object DrillThroughEventArgs {
+  @scala.inline
+  def apply(data: js.Any = null, element: js.Any = null): DrillThroughEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (element != null) __obj.updateDynamic("element")(element)
+    __obj.asInstanceOf[DrillThroughEventArgs]
+  }
+}
+

@@ -32,3 +32,24 @@ trait PivotTable extends js.Object {
   var values: js.UndefOr[js.Array[PivotValue]] = js.undefined
 }
 
+object PivotTable {
+  @scala.inline
+  def apply(
+    columns: js.Array[PivotGroup] = null,
+    criteria: stdLib.Record[java.lang.String, PivotFilterCriteria] = null,
+    rows: js.Array[PivotGroup] = null,
+    source: GridRange = null,
+    valueLayout: java.lang.String = null,
+    values: js.Array[PivotValue] = null
+  ): PivotTable = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (valueLayout != null) __obj.updateDynamic("valueLayout")(valueLayout)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[PivotTable]
+  }
+}
+

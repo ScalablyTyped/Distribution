@@ -12,3 +12,13 @@ trait DeploymentsListResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeploymentsListResponse {
+  @scala.inline
+  def apply(deployments: js.Array[Deployment] = null, nextPageToken: java.lang.String = null): DeploymentsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (deployments != null) __obj.updateDynamic("deployments")(deployments)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[DeploymentsListResponse]
+  }
+}
+

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ForceGraphNs {
-  type DagMode = forceDashGraphLib.forceDashGraphLibStrings.td | forceDashGraphLib.forceDashGraphLibStrings.bu | forceDashGraphLib.forceDashGraphLibStrings.lr | forceDashGraphLib.forceDashGraphLibStrings.rl | forceDashGraphLib.forceDashGraphLibStrings.radialout | forceDashGraphLib.forceDashGraphLibStrings.radialin
   type ForceFn = js.Function1[/* node */ forceDashGraphLib.Anon_X, scala.Double]
   type LinkAccessorFn[T] = js.Function1[/* link */ GraphLinkObject, T]
   type LinkCanvasCallbackFn = js.Function3[

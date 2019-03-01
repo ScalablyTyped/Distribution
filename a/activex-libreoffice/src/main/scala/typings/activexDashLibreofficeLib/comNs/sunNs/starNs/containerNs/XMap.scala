@@ -82,3 +82,40 @@ trait XMap extends XElementAccess {
   def remove(Key: js.Any): js.Any
 }
 
+object XMap {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    KeyType: activexDashLibreofficeLib.`type`,
+    ValueType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    clear: js.Function0[scala.Unit],
+    containsKey: js.Function1[js.Any, scala.Boolean],
+    containsValue: js.Function1[js.Any, scala.Boolean],
+    get: js.Function1[js.Any, js.Any],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    put: js.Function2[js.Any, js.Any, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[js.Any, js.Any]
+  ): XMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("KeyType")(KeyType)
+    __obj.updateDynamic("ValueType")(ValueType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("containsKey")(containsKey)
+    __obj.updateDynamic("containsValue")(containsValue)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("put")(put)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[XMap]
+  }
+}
+

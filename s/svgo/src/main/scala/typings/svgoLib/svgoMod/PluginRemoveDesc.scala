@@ -9,3 +9,12 @@ trait PluginRemoveDesc extends js.Object {
   var removeDesc: scala.Boolean | js.Object
 }
 
+object PluginRemoveDesc {
+  @scala.inline
+  def apply(removeDesc: scala.Boolean | js.Object): PluginRemoveDesc = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("removeDesc")(removeDesc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PluginRemoveDesc]
+  }
+}
+

@@ -28,3 +28,20 @@ trait PageProps extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PageProps {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    fluid: js.UndefOr[scala.Boolean] = js.undefined,
+    tagName: java.lang.String = null,
+    width: java.lang.String = null
+  ): PageProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[PageProps]
+  }
+}
+

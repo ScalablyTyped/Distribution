@@ -14,3 +14,14 @@ trait FieldFilter extends js.Object {
   var value: js.UndefOr[Value] = js.undefined
 }
 
+object FieldFilter {
+  @scala.inline
+  def apply(field: FieldReference = null, op: java.lang.String = null, value: Value = null): FieldFilter = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (op != null) __obj.updateDynamic("op")(op)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[FieldFilter]
+  }
+}
+

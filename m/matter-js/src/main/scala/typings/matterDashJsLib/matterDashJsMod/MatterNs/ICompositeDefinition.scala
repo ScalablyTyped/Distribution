@@ -79,3 +79,28 @@ trait ICompositeDefinition extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ICompositeDefinition {
+  @scala.inline
+  def apply(
+    bodies: js.Array[Body] = null,
+    composites: js.Array[Composite] = null,
+    constraints: js.Array[Constraint] = null,
+    id: scala.Int | scala.Double = null,
+    isModified: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    parent: Composite = null,
+    `type`: java.lang.String = null
+  ): ICompositeDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (bodies != null) __obj.updateDynamic("bodies")(bodies)
+    if (composites != null) __obj.updateDynamic("composites")(composites)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isModified)) __obj.updateDynamic("isModified")(isModified)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ICompositeDefinition]
+  }
+}
+

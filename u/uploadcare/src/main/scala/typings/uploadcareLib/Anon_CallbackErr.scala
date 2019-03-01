@@ -24,3 +24,32 @@ trait Anon_CallbackErr extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackErr {
+  @scala.inline
+  def apply(
+    remove: js.Function2[
+      java.lang.String, 
+      js.Function2[
+        /* err */ nodeLib.Error, 
+        /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    store: js.Function2[
+      java.lang.String, 
+      js.Function2[
+        /* err */ nodeLib.Error, 
+        /* res */ uploadcareLib.uploadcareMod.UploadcareNs.File, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): Anon_CallbackErr = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("store")(store)
+    __obj.asInstanceOf[Anon_CallbackErr]
+  }
+}
+

@@ -23,3 +23,13 @@ trait SetIamPolicyRequest extends js.Object {
   var updateMask: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SetIamPolicyRequest {
+  @scala.inline
+  def apply(policy: Policy = null, updateMask: java.lang.String = null): SetIamPolicyRequest = {
+    val __obj = js.Dynamic.literal()
+    if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    __obj.asInstanceOf[SetIamPolicyRequest]
+  }
+}
+

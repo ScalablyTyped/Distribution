@@ -35,3 +35,30 @@ trait NodeDragStartEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeDragStartEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    dragTarget: js.Any = null,
+    event: js.Any = null,
+    model: Model = null,
+    parentElement: js.Any = null,
+    parentElementData: js.Any = null,
+    target: js.Any = null,
+    targetElementData: js.Any = null,
+    `type`: java.lang.String = null
+  ): NodeDragStartEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (dragTarget != null) __obj.updateDynamic("dragTarget")(dragTarget)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (parentElement != null) __obj.updateDynamic("parentElement")(parentElement)
+    if (parentElementData != null) __obj.updateDynamic("parentElementData")(parentElementData)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (targetElementData != null) __obj.updateDynamic("targetElementData")(targetElementData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodeDragStartEventArgs]
+  }
+}
+

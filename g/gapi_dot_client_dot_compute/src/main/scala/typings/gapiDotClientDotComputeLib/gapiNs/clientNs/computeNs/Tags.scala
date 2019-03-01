@@ -18,3 +18,13 @@ trait Tags extends js.Object {
   var items: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Tags {
+  @scala.inline
+  def apply(fingerprint: java.lang.String = null, items: js.Array[java.lang.String] = null): Tags = {
+    val __obj = js.Dynamic.literal()
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[Tags]
+  }
+}
+

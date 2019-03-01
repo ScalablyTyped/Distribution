@@ -9,3 +9,12 @@ trait Anon_CarouselCaption extends js.Object {
   val CarouselCaptionNs: js.Any
 }
 
+object Anon_CarouselCaption {
+  @scala.inline
+  def apply(CarouselCaptionNs: js.Any): Anon_CarouselCaption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CarouselCaptionNs")(CarouselCaptionNs)
+    __obj.asInstanceOf[Anon_CarouselCaption]
+  }
+}
+

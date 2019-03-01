@@ -15,3 +15,13 @@ trait SetPageSizeDialogCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object SetPageSizeDialogCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): SetPageSizeDialogCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[SetPageSizeDialogCommand]
+  }
+}
+

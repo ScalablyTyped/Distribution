@@ -16,3 +16,16 @@ trait Anon_IncludeTlsChannelIdToProxyScript extends js.Object {
   var toProxyScript: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_IncludeTlsChannelIdToProxyScript {
+  @scala.inline
+  def apply(
+    includeTlsChannelId: js.UndefOr[scala.Boolean] = js.undefined,
+    toProxyScript: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_IncludeTlsChannelIdToProxyScript = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeTlsChannelId)) __obj.updateDynamic("includeTlsChannelId")(includeTlsChannelId)
+    if (!js.isUndefined(toProxyScript)) __obj.updateDynamic("toProxyScript")(toProxyScript)
+    __obj.asInstanceOf[Anon_IncludeTlsChannelIdToProxyScript]
+  }
+}
+

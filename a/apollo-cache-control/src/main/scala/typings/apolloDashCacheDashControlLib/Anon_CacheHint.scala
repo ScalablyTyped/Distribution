@@ -10,3 +10,16 @@ trait Anon_CacheHint extends js.Object {
   def setCacheHint(hint: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheHint): scala.Unit
 }
 
+object Anon_CacheHint {
+  @scala.inline
+  def apply(
+    cacheHint: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheHint,
+    setCacheHint: js.Function1[apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheHint, scala.Unit]
+  ): Anon_CacheHint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cacheHint")(cacheHint)
+    __obj.updateDynamic("setCacheHint")(setCacheHint)
+    __obj.asInstanceOf[Anon_CacheHint]
+  }
+}
+

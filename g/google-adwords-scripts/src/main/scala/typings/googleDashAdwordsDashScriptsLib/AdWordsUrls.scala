@@ -10,3 +10,13 @@ trait AdWordsUrls extends js.Object {
   def getTrackingTemplate(): java.lang.String
 }
 
+object AdWordsUrls {
+  @scala.inline
+  def apply(getCustomParameters: js.Function0[js.Object], getTrackingTemplate: js.Function0[java.lang.String]): AdWordsUrls = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCustomParameters")(getCustomParameters)
+    __obj.updateDynamic("getTrackingTemplate")(getTrackingTemplate)
+    __obj.asInstanceOf[AdWordsUrls]
+  }
+}
+

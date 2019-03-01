@@ -37,3 +37,24 @@ trait ManagedUploadOptions extends js.Object {
   var tags: js.UndefOr[js.Array[awsDashSdkLib.clientsS3Mod.S3Ns.Tag]] = js.undefined
 }
 
+object ManagedUploadOptions {
+  @scala.inline
+  def apply(
+    leavePartsOnError: js.UndefOr[scala.Boolean] = js.undefined,
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRequest = null,
+    partSize: scala.Int | scala.Double = null,
+    queueSize: scala.Int | scala.Double = null,
+    service: awsDashSdkLib.clientsS3Mod.namespaced = null,
+    tags: js.Array[awsDashSdkLib.clientsS3Mod.S3Ns.Tag] = null
+  ): ManagedUploadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(leavePartsOnError)) __obj.updateDynamic("leavePartsOnError")(leavePartsOnError)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
+    if (queueSize != null) __obj.updateDynamic("queueSize")(queueSize.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[ManagedUploadOptions]
+  }
+}
+

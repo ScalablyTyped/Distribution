@@ -28,3 +28,20 @@ trait BatchGetDocumentsResponse extends js.Object {
   var transaction: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BatchGetDocumentsResponse {
+  @scala.inline
+  def apply(
+    found: Document = null,
+    missing: java.lang.String = null,
+    readTime: java.lang.String = null,
+    transaction: java.lang.String = null
+  ): BatchGetDocumentsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (found != null) __obj.updateDynamic("found")(found)
+    if (missing != null) __obj.updateDynamic("missing")(missing)
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[BatchGetDocumentsResponse]
+  }
+}
+

@@ -28,3 +28,30 @@ trait MixinViolation extends js.Object {
   ] = js.undefined
 }
 
+object MixinViolation {
+  @scala.inline
+  def apply(
+    collisionNodes: js.Array[Node] = null,
+    collisionPaths: js.Array[java.lang.String] = null,
+    hint: java.lang.String = null,
+    message: java.lang.String = null,
+    ruleName: java.lang.String = null,
+    severity: webgmeLib.webgmeLibStrings.error | webgmeLib.webgmeLibStrings.warning = null,
+    targetInfo: java.lang.String = null,
+    targetNode: Node = null,
+    `type`: webgmeLib.webgmeLibStrings.missing | (webgmeLib.webgmeLibStrings.`attribute collision`) | (webgmeLib.webgmeLibStrings.`set collision`) | (webgmeLib.webgmeLibStrings.`pointer collision`) | (webgmeLib.webgmeLibStrings.`containment collision`) | (webgmeLib.webgmeLibStrings.`aspect collision`) | (webgmeLib.webgmeLibStrings.`constraint collision`) = null
+  ): MixinViolation = {
+    val __obj = js.Dynamic.literal()
+    if (collisionNodes != null) __obj.updateDynamic("collisionNodes")(collisionNodes)
+    if (collisionPaths != null) __obj.updateDynamic("collisionPaths")(collisionPaths)
+    if (hint != null) __obj.updateDynamic("hint")(hint)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName)
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (targetInfo != null) __obj.updateDynamic("targetInfo")(targetInfo)
+    if (targetNode != null) __obj.updateDynamic("targetNode")(targetNode)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MixinViolation]
+  }
+}
+

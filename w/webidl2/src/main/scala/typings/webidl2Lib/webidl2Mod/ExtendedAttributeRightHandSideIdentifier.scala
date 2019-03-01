@@ -10,3 +10,12 @@ trait ExtendedAttributeRightHandSideIdentifier extends js.Object {
   var value: java.lang.String
 }
 
+object ExtendedAttributeRightHandSideIdentifier {
+  @scala.inline
+  def apply(`type`: webidl2Lib.webidl2LibStrings.identifier, value: java.lang.String): ExtendedAttributeRightHandSideIdentifier = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ExtendedAttributeRightHandSideIdentifier]
+  }
+}
+

@@ -31,3 +31,22 @@ trait YQLResponse extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object YQLResponse {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    data: js.Any = null,
+    error: java.lang.String = null,
+    message: java.lang.String = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): YQLResponse = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[YQLResponse]
+  }
+}
+

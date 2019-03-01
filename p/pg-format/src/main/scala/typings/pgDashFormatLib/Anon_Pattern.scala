@@ -9,3 +9,12 @@ trait Anon_Pattern extends js.Object {
   var pattern: Anon_Ident
 }
 
+object Anon_Pattern {
+  @scala.inline
+  def apply(pattern: Anon_Ident): Anon_Pattern = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pattern")(pattern)
+    __obj.asInstanceOf[Anon_Pattern]
+  }
+}
+

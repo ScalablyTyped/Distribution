@@ -12,7 +12,7 @@ package object jasmineNs {
     /* customEqualityTesters */ js.Array[CustomEqualityTester], 
     CustomMatcher
   ]
-  type Expected[T] = T | ObjectContaining[T] | Any | Spy
+  type Expected[T] = _Expected[T] | T
   type PassedExpectation = CustomReportExpectation
   type SpecFunction = js.Function1[/* spec */ js.UndefOr[Spec], scala.Unit]
   type SpyObj[T] = T with jasmineLib.jasmineLibStrings.SpyObj with js.Any

@@ -20,3 +20,25 @@ trait DragComponentProps extends js.Object {
   def children(arg: State with reactDashDragtasticLib.Anon_IsOverAccepted): reactLib.reactMod.ReactNs.ReactNode
 }
 
+object DragComponentProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[
+      State with reactDashDragtasticLib.Anon_IsOverAccepted, 
+      reactLib.reactMod.ReactNs.ReactNode
+    ],
+    alwaysRender: js.UndefOr[scala.Boolean] = js.undefined,
+    `for`: Id = null,
+    onDrag: js.Function0[scala.Unit] = null,
+    subscribeTo: js.Array[java.lang.String] = null
+  ): DragComponentProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender)
+    if (`for` != null) __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
+    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
+    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
+    __obj.asInstanceOf[DragComponentProps]
+  }
+}
+

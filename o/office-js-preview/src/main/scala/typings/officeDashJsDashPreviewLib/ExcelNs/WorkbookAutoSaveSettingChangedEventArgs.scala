@@ -23,3 +23,14 @@ trait WorkbookAutoSaveSettingChangedEventArgs extends js.Object {
   var `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorkbookAutoSaveSettingChanged
 }
 
+object WorkbookAutoSaveSettingChangedEventArgs {
+  @scala.inline
+  def apply(
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorkbookAutoSaveSettingChanged
+  ): WorkbookAutoSaveSettingChangedEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[WorkbookAutoSaveSettingChangedEventArgs]
+  }
+}
+

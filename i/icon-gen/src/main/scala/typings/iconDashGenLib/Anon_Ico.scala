@@ -11,3 +11,14 @@ trait Anon_Ico extends js.Object {
   var sizes: js.Array[scala.Double]
 }
 
+object Anon_Ico {
+  @scala.inline
+  def apply(ico: js.Array[scala.Double], name: java.lang.String, sizes: js.Array[scala.Double]): Anon_Ico = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ico")(ico)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("sizes")(sizes)
+    __obj.asInstanceOf[Anon_Ico]
+  }
+}
+

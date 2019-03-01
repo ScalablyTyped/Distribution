@@ -21,3 +21,38 @@ trait ITetherOptions extends js.Object {
   var targetOffset: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITetherOptions {
+  @scala.inline
+  def apply(
+    attachment: java.lang.String,
+    bodyElement: stdLib.HTMLElement = null,
+    classPrefix: java.lang.String = null,
+    classes: org.scalablytyped.runtime.StringDictionary[scala.Boolean | java.lang.String] = null,
+    constraints: js.Array[ITetherConstraint] = null,
+    element: stdLib.HTMLElement | java.lang.String | js.Any = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    offset: java.lang.String = null,
+    optimizations: js.Any = null,
+    target: stdLib.HTMLElement | java.lang.String | js.Any = null,
+    targetAttachment: java.lang.String = null,
+    targetModifier: java.lang.String = null,
+    targetOffset: java.lang.String = null
+  ): ITetherOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attachment")(attachment)
+    if (bodyElement != null) __obj.updateDynamic("bodyElement")(bodyElement)
+    if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (optimizations != null) __obj.updateDynamic("optimizations")(optimizations)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (targetAttachment != null) __obj.updateDynamic("targetAttachment")(targetAttachment)
+    if (targetModifier != null) __obj.updateDynamic("targetModifier")(targetModifier)
+    if (targetOffset != null) __obj.updateDynamic("targetOffset")(targetOffset)
+    __obj.asInstanceOf[ITetherOptions]
+  }
+}
+

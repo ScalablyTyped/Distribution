@@ -24,3 +24,24 @@ trait HostedFieldFieldOptions extends js.Object {
   var postalCode: js.UndefOr[HostedFieldsField] = js.undefined
 }
 
+object HostedFieldFieldOptions {
+  @scala.inline
+  def apply(
+    cvv: HostedFieldsField,
+    number: HostedFieldsField,
+    expirationDate: HostedFieldsField = null,
+    expirationMonth: HostedFieldsField = null,
+    expirationYear: HostedFieldsField = null,
+    postalCode: HostedFieldsField = null
+  ): HostedFieldFieldOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cvv")(cvv)
+    __obj.updateDynamic("number")(number)
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
+    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth)
+    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear)
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
+    __obj.asInstanceOf[HostedFieldFieldOptions]
+  }
+}
+

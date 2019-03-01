@@ -9,3 +9,12 @@ trait ILanguageFactory extends js.Object {
   def createLanguage(languageTag: java.lang.String): Language
 }
 
+object ILanguageFactory {
+  @scala.inline
+  def apply(createLanguage: js.Function1[java.lang.String, Language]): ILanguageFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createLanguage")(createLanguage)
+    __obj.asInstanceOf[ILanguageFactory]
+  }
+}
+

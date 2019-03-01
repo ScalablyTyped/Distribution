@@ -16,3 +16,20 @@ trait VisualObjectInstancesToPersist extends js.Object {
   var replace: js.UndefOr[js.Array[VisualObjectInstance]] = js.undefined
 }
 
+object VisualObjectInstancesToPersist {
+  @scala.inline
+  def apply(
+    merge: js.Array[VisualObjectInstance] = null,
+    remove: js.Array[VisualObjectInstance] = null,
+    removeObject: js.Array[VisualObjectInstance] = null,
+    replace: js.Array[VisualObjectInstance] = null
+  ): VisualObjectInstancesToPersist = {
+    val __obj = js.Dynamic.literal()
+    if (merge != null) __obj.updateDynamic("merge")(merge)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (removeObject != null) __obj.updateDynamic("removeObject")(removeObject)
+    if (replace != null) __obj.updateDynamic("replace")(replace)
+    __obj.asInstanceOf[VisualObjectInstancesToPersist]
+  }
+}
+

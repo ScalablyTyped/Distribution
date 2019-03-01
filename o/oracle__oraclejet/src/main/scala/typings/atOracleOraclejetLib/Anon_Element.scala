@@ -11,3 +11,14 @@ trait Anon_Element extends js.Object {
   var width: scala.Double
 }
 
+object Anon_Element {
+  @scala.inline
+  def apply(element: stdLib.Element, height: scala.Double, width: scala.Double): Anon_Element = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Anon_Element]
+  }
+}
+

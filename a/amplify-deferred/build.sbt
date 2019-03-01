@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "amplify-deferred"
-version := "1.1-dt-20190212Z-77ab68"
+version := "1.1-dt-20190212Z-941dfc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "amplify" % "1.1-dt-20180214Z-86bc08",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-7adbea",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b13b7f",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "amplify" % "1.1-dt-20180214Z-04b627",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-af4dd0",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-e769d0",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

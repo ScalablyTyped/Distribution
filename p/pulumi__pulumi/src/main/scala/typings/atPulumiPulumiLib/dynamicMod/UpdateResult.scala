@@ -12,3 +12,12 @@ trait UpdateResult extends js.Object {
   val outs: js.UndefOr[js.Any] = js.undefined
 }
 
+object UpdateResult {
+  @scala.inline
+  def apply(outs: js.Any = null): UpdateResult = {
+    val __obj = js.Dynamic.literal()
+    if (outs != null) __obj.updateDynamic("outs")(outs)
+    __obj.asInstanceOf[UpdateResult]
+  }
+}
+

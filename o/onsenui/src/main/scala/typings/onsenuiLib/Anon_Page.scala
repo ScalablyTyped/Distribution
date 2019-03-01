@@ -11,3 +11,14 @@ trait Anon_Page extends js.Object {
   var parent: stdLib.Element
 }
 
+object Anon_Page {
+  @scala.inline
+  def apply(page: js.Any, parent: stdLib.Element, params: coreDashJsLib.Object = null): Anon_Page = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("page")(page)
+    __obj.updateDynamic("parent")(parent)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[Anon_Page]
+  }
+}
+

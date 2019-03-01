@@ -24,3 +24,36 @@ trait MutationOpts[TData, TGraphQLVariables] extends js.Object {
   var variables: js.UndefOr[TGraphQLVariables] = js.undefined
 }
 
+object MutationOpts {
+  @scala.inline
+  def apply[TData, TGraphQLVariables](
+    awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined,
+    client: apolloDashClientLib.apolloDashClientMod.default[_] = null,
+    context: stdLib.Record[java.lang.String, _] = null,
+    errorPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy = null,
+    fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy = null,
+    notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined,
+    onCompleted: js.Function1[/* data */ TData, scala.Unit] = null,
+    onError: js.Function1[/* error */ apolloDashClientLib.apolloDashClientMod.ApolloError, scala.Unit] = null,
+    optimisticResponse: TData = null,
+    refetchQueries: (js.Array[java.lang.String | apolloDashClientLib.coreTypesMod.PureQueryOptions]) | RefetchQueriesProviderFn = null,
+    update: apolloDashClientLib.coreWatchQueryOptionsMod.MutationUpdaterFn[TData] = null,
+    variables: TGraphQLVariables = null
+  ): MutationOpts[TData, TGraphQLVariables] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries)
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
+    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)
+    if (!js.isUndefined(notifyOnNetworkStatusChange)) __obj.updateDynamic("notifyOnNetworkStatusChange")(notifyOnNetworkStatusChange)
+    if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
+    if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update)
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MutationOpts[TData, TGraphQLVariables]]
+  }
+}
+

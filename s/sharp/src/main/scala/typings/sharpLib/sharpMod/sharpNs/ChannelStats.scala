@@ -28,3 +28,32 @@ trait ChannelStats extends js.Object {
   var sum: scala.Double
 }
 
+object ChannelStats {
+  @scala.inline
+  def apply(
+    max: scala.Double,
+    maxX: scala.Double,
+    maxY: scala.Double,
+    mean: scala.Double,
+    min: scala.Double,
+    minX: scala.Double,
+    minY: scala.Double,
+    squaresSum: scala.Double,
+    stdev: scala.Double,
+    sum: scala.Double
+  ): ChannelStats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("maxX")(maxX)
+    __obj.updateDynamic("maxY")(maxY)
+    __obj.updateDynamic("mean")(mean)
+    __obj.updateDynamic("min")(min)
+    __obj.updateDynamic("minX")(minX)
+    __obj.updateDynamic("minY")(minY)
+    __obj.updateDynamic("squaresSum")(squaresSum)
+    __obj.updateDynamic("stdev")(stdev)
+    __obj.updateDynamic("sum")(sum)
+    __obj.asInstanceOf[ChannelStats]
+  }
+}
+

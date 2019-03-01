@@ -10,3 +10,13 @@ trait Anon_KeystrokeSequence extends js.Object {
   var windows: java.lang.String
 }
 
+object Anon_KeystrokeSequence {
+  @scala.inline
+  def apply(keystrokeSequence: java.lang.String, windows: java.lang.String): Anon_KeystrokeSequence = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keystrokeSequence")(keystrokeSequence)
+    __obj.updateDynamic("windows")(windows)
+    __obj.asInstanceOf[Anon_KeystrokeSequence]
+  }
+}
+

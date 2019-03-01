@@ -27,3 +27,25 @@ trait Codec extends js.Object {
   def addExtUnpacker[T](etype: scala.Double, unpacker: js.Function1[/* data */ nodeLib.Buffer | stdLib.Uint8Array, T]): scala.Unit
 }
 
+object Codec {
+  @scala.inline
+  def apply(
+    addExtPacker: js.Function3[
+      scala.Double, 
+      org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any], 
+      js.Function1[js.Any, nodeLib.Buffer | stdLib.Uint8Array], 
+      scala.Unit
+    ],
+    addExtUnpacker: js.Function2[
+      scala.Double, 
+      js.Function1[/* data */ nodeLib.Buffer | stdLib.Uint8Array, js.Any], 
+      scala.Unit
+    ]
+  ): Codec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addExtPacker")(addExtPacker)
+    __obj.updateDynamic("addExtUnpacker")(addExtUnpacker)
+    __obj.asInstanceOf[Codec]
+  }
+}
+

@@ -26,3 +26,24 @@ trait OverflowOpenEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OverflowOpenEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    clientX: scala.Int | scala.Double = null,
+    clientY: scala.Int | scala.Double = null,
+    currentTarget: js.Any = null,
+    model: Model = null,
+    `type`: java.lang.String = null
+  ): OverflowOpenEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (clientX != null) __obj.updateDynamic("clientX")(clientX.asInstanceOf[js.Any])
+    if (clientY != null) __obj.updateDynamic("clientY")(clientY.asInstanceOf[js.Any])
+    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[OverflowOpenEventArgs]
+  }
+}
+

@@ -20,3 +20,21 @@ trait OlapResultAxisOptions
   var tuples: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object OlapResultAxisOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for OlapResultAxisOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    tupleSize: scala.Int | scala.Double = null,
+    tuples: js.Array[_] = null
+  ): OlapResultAxisOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (tupleSize != null) __obj.updateDynamic("tupleSize")(tupleSize.asInstanceOf[js.Any])
+    if (tuples != null) __obj.updateDynamic("tuples")(tuples)
+    __obj.asInstanceOf[OlapResultAxisOptions]
+  }
+}
+

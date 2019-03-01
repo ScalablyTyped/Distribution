@@ -22,3 +22,40 @@ trait IconProps extends js.Object {
   var viewBox: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IconProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    component: reactLib.reactMod.ReactNs.ComponentType[CustomIconComponentProps] = null,
+    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement] = null,
+    prefixCls: java.lang.String = null,
+    role: java.lang.String = null,
+    rotate: scala.Int | scala.Double = null,
+    spin: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tabIndex: scala.Int | scala.Double = null,
+    theme: ThemeType = null,
+    title: java.lang.String = null,
+    twoToneColor: java.lang.String = null,
+    `type`: java.lang.String = null,
+    viewBox: java.lang.String = null
+  ): IconProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (twoToneColor != null) __obj.updateDynamic("twoToneColor")(twoToneColor)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    __obj.asInstanceOf[IconProps]
+  }
+}
+

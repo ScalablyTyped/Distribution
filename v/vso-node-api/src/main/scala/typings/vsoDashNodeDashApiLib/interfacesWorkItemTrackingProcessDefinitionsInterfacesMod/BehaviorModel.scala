@@ -44,3 +44,29 @@ trait BehaviorModel extends js.Object {
   var url: java.lang.String
 }
 
+object BehaviorModel {
+  @scala.inline
+  def apply(
+    `abstract`: scala.Boolean,
+    color: java.lang.String,
+    description: java.lang.String,
+    id: java.lang.String,
+    inherits: WorkItemBehaviorReference,
+    name: java.lang.String,
+    overridden: scala.Boolean,
+    rank: scala.Double,
+    url: java.lang.String
+  ): BehaviorModel = {
+    val __obj = js.Dynamic.literal(`abstract` = `abstract`)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("inherits")(inherits)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("overridden")(overridden)
+    __obj.updateDynamic("rank")(rank)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[BehaviorModel]
+  }
+}
+

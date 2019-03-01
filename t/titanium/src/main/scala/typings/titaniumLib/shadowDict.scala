@@ -24,3 +24,14 @@ trait shadowDict extends js.Object {
   var offset: js.UndefOr[js.Any] = js.undefined
 }
 
+object shadowDict {
+  @scala.inline
+  def apply(blurRadius: scala.Int | scala.Double = null, color: java.lang.String = null, offset: js.Any = null): shadowDict = {
+    val __obj = js.Dynamic.literal()
+    if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    __obj.asInstanceOf[shadowDict]
+  }
+}
+

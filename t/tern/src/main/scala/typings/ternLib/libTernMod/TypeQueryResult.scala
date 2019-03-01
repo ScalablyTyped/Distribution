@@ -22,3 +22,25 @@ trait TypeQueryResult extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TypeQueryResult {
+  @scala.inline
+  def apply(
+    guess: scala.Boolean,
+    `type`: java.lang.String,
+    doc: java.lang.String = null,
+    exprName: java.lang.String = null,
+    name: java.lang.String = null,
+    origin: java.lang.String = null,
+    url: java.lang.String = null
+  ): TypeQueryResult = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("guess")(guess)
+    if (doc != null) __obj.updateDynamic("doc")(doc)
+    if (exprName != null) __obj.updateDynamic("exprName")(exprName)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TypeQueryResult]
+  }
+}
+

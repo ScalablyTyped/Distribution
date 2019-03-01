@@ -11,3 +11,18 @@ trait IntercomError extends js.Object {
   var statusCode: scala.Double
 }
 
+object IntercomError {
+  @scala.inline
+  def apply(
+    body: intercomDashClientLib.Anon_Errorlist,
+    headers: intercomDashClientLib.Anon_K,
+    statusCode: scala.Double
+  ): IntercomError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.asInstanceOf[IntercomError]
+  }
+}
+

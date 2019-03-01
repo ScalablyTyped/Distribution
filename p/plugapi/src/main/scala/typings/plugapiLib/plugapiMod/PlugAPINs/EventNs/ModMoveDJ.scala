@@ -12,3 +12,15 @@ trait ModMoveDJ extends js.Object {
   var userID: java.lang.String
 }
 
+object ModMoveDJ {
+  @scala.inline
+  def apply(index: scala.Double, moderator: java.lang.String, old: scala.Double, userID: java.lang.String): ModMoveDJ = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("moderator")(moderator)
+    __obj.updateDynamic("old")(old)
+    __obj.updateDynamic("userID")(userID)
+    __obj.asInstanceOf[ModMoveDJ]
+  }
+}
+

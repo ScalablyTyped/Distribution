@@ -30,3 +30,20 @@ trait CustomResourceDefinitionList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object CustomResourceDefinitionList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1`,
+    items: js.Array[CustomResourceDefinition],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinitionList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): CustomResourceDefinitionList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[CustomResourceDefinitionList]
+  }
+}
+

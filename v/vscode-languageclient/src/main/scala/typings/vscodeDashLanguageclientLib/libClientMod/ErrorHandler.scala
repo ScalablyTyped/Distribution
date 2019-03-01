@@ -21,3 +21,16 @@ trait ErrorHandler extends js.Object {
   def error(error: nodeLib.Error, message: vscodeDashJsonrpcLib.libMessagesMod.Message, count: scala.Double): ErrorAction
 }
 
+object ErrorHandler {
+  @scala.inline
+  def apply(
+    closed: js.Function0[CloseAction],
+    error: js.Function3[nodeLib.Error, vscodeDashJsonrpcLib.libMessagesMod.Message, scala.Double, ErrorAction]
+  ): ErrorHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("closed")(closed)
+    __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[ErrorHandler]
+  }
+}
+

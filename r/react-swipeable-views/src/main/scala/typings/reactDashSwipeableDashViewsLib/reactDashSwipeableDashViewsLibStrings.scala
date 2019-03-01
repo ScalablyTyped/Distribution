@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object reactDashSwipeableDashViewsLibStrings {
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.OnSwitchingCallbackTypeDescriptor
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait move
+    extends reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.OnSwitchingCallbackTypeDescriptor
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait x
+    extends reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.AxisType
   
   @js.native
-  sealed trait `x-reverse` extends js.Object
+  sealed trait `x-reverse`
+    extends reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.AxisType
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.AxisType
   
   @js.native
-  sealed trait `y-reverse` extends js.Object
+  sealed trait `y-reverse`
+    extends reactDashSwipeableDashViewsLib.reactDashSwipeableDashViewsMod.AxisType
   
   @scala.inline
   def end: end = "end".asInstanceOf[end]

@@ -14,3 +14,24 @@ trait BeginDragPayload extends js.Object {
   var sourceId: Identifier
 }
 
+object BeginDragPayload {
+  @scala.inline
+  def apply(
+    isSourcePublic: scala.Boolean,
+    item: js.Any,
+    itemType: Identifier,
+    sourceId: Identifier,
+    clientOffset: XYCoord = null,
+    sourceClientOffset: XYCoord = null
+  ): BeginDragPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isSourcePublic")(isSourcePublic)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
+    __obj.updateDynamic("sourceId")(sourceId.asInstanceOf[js.Any])
+    if (clientOffset != null) __obj.updateDynamic("clientOffset")(clientOffset)
+    if (sourceClientOffset != null) __obj.updateDynamic("sourceClientOffset")(sourceClientOffset)
+    __obj.asInstanceOf[BeginDragPayload]
+  }
+}
+

@@ -32,3 +32,24 @@ trait UserPromptDisplayingEventUIParam extends js.Object {
   var trigger: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UserPromptDisplayingEventUIParam {
+  @scala.inline
+  def apply(
+    canCancel: js.UndefOr[scala.Boolean] = js.undefined,
+    displayMessage: js.UndefOr[scala.Boolean] = js.undefined,
+    exception: js.Any = null,
+    message: java.lang.String = null,
+    owner: js.Any = null,
+    trigger: java.lang.String = null
+  ): UserPromptDisplayingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canCancel)) __obj.updateDynamic("canCancel")(canCancel)
+    if (!js.isUndefined(displayMessage)) __obj.updateDynamic("displayMessage")(displayMessage)
+    if (exception != null) __obj.updateDynamic("exception")(exception)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    __obj.asInstanceOf[UserPromptDisplayingEventUIParam]
+  }
+}
+

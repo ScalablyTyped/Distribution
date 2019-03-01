@@ -28,3 +28,24 @@ trait XRemoteContentProviderConnectionControl
   ): scala.Unit
 }
 
+object XRemoteContentProviderConnectionControl {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    enableConnectionControl: js.Function2[
+      XRemoteContentProviderAcceptor, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XRemoteContentProviderConnectionControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("enableConnectionControl")(enableConnectionControl)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XRemoteContentProviderConnectionControl]
+  }
+}
+

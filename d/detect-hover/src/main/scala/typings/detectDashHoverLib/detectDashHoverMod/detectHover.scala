@@ -13,3 +13,22 @@ trait detectHover extends js.Object {
   def update(): scala.Unit
 }
 
+object detectHover {
+  @scala.inline
+  def apply(
+    anyHover: scala.Boolean,
+    anyNone: scala.Boolean,
+    hover: scala.Boolean,
+    none: scala.Boolean,
+    update: js.Function0[scala.Unit]
+  ): detectHover = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("anyHover")(anyHover)
+    __obj.updateDynamic("anyNone")(anyNone)
+    __obj.updateDynamic("hover")(hover)
+    __obj.updateDynamic("none")(none)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[detectHover]
+  }
+}
+

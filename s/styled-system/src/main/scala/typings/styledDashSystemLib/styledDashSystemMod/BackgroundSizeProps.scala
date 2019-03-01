@@ -15,3 +15,12 @@ trait BackgroundSizeProps[TLength] extends js.Object {
   var backgroundSize: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BackgroundSizeProperty[TLength]]] = js.undefined
 }
 
+object BackgroundSizeProps {
+  @scala.inline
+  def apply[TLength](backgroundSize: ResponsiveValue[csstypeLib.csstypeMod.BackgroundSizeProperty[TLength]] = null): BackgroundSizeProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundSize != null) __obj.updateDynamic("backgroundSize")(backgroundSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundSizeProps[TLength]]
+  }
+}
+

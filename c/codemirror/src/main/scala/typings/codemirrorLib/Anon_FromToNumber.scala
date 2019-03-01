@@ -10,3 +10,16 @@ trait Anon_FromToNumber extends js.Object {
   var to: codemirrorLib.codemirrorMod.CodeMirrorNs.Position | scala.Double
 }
 
+object Anon_FromToNumber {
+  @scala.inline
+  def apply(
+    from: codemirrorLib.codemirrorMod.CodeMirrorNs.Position | scala.Double,
+    to: codemirrorLib.codemirrorMod.CodeMirrorNs.Position | scala.Double
+  ): Anon_FromToNumber = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FromToNumber]
+  }
+}
+

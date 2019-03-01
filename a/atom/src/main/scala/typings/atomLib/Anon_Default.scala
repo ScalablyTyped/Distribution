@@ -10,3 +10,16 @@ trait Anon_Default extends js.Object {
   var oldValue: js.UndefOr[atomLib.atomLibStrings.default | atomLib.atomLibStrings.srgb] = js.undefined
 }
 
+object Anon_Default {
+  @scala.inline
+  def apply(
+    newValue: atomLib.atomLibStrings.default | atomLib.atomLibStrings.srgb,
+    oldValue: atomLib.atomLibStrings.default | atomLib.atomLibStrings.srgb = null
+  ): Anon_Default = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Default]
+  }
+}
+

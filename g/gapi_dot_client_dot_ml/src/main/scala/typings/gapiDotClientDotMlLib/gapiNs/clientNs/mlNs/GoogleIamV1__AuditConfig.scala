@@ -20,3 +20,18 @@ trait GoogleIamV1__AuditConfig extends js.Object {
   var service: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleIamV1__AuditConfig {
+  @scala.inline
+  def apply(
+    auditLogConfigs: js.Array[GoogleIamV1__AuditLogConfig] = null,
+    exemptedMembers: js.Array[java.lang.String] = null,
+    service: java.lang.String = null
+  ): GoogleIamV1__AuditConfig = {
+    val __obj = js.Dynamic.literal()
+    if (auditLogConfigs != null) __obj.updateDynamic("auditLogConfigs")(auditLogConfigs)
+    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers)
+    if (service != null) __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[GoogleIamV1__AuditConfig]
+  }
+}
+

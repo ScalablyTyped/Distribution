@@ -33,3 +33,34 @@ trait OCSPResponse extends js.Object {
   def toSchema(): js.Any
 }
 
+object OCSPResponse {
+  @scala.inline
+  def apply(
+    createForCertificate: js.Function2[
+      pkijsLib.srcCertificateMod.default, 
+      pkijsLib.srcCertIDMod.CreateFroCertificateParams, 
+      js.Thenable[scala.Unit]
+    ],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    getCertificateStatus: js.Function2[
+      pkijsLib.srcCertificateMod.default, 
+      pkijsLib.srcCertificateMod.default, 
+      js.Thenable[pkijsLib.srcBasicOCSPResponseMod.GetCertificateStatusResult]
+    ],
+    responseStatus: asn1jsLib.asn1jsMod.Enumerated,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    responseBytes: pkijsLib.srcResponseBytesMod.default = null
+  ): OCSPResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createForCertificate")(createForCertificate)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("getCertificateStatus")(getCertificateStatus)
+    __obj.updateDynamic("responseStatus")(responseStatus)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    if (responseBytes != null) __obj.updateDynamic("responseBytes")(responseBytes)
+    __obj.asInstanceOf[OCSPResponse]
+  }
+}
+

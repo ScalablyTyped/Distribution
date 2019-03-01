@@ -11,3 +11,20 @@ trait Anon_Anim extends js.Object {
   var styles: java.lang.String
 }
 
+object Anon_Anim {
+  @scala.inline
+  def apply(
+    anim: scala.Double,
+    name: java.lang.String,
+    styles: java.lang.String,
+    toString: js.Function0[java.lang.String]
+  ): Anon_Anim = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("anim")(anim)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("styles")(styles)
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[Anon_Anim]
+  }
+}
+

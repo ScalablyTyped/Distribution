@@ -27,3 +27,20 @@ trait Receiver extends js.Object {
   var amount_returned: scala.Double
 }
 
+object Receiver {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    amount_charged: scala.Double,
+    amount_received: scala.Double,
+    amount_returned: scala.Double
+  ): Receiver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("amount_charged")(amount_charged)
+    __obj.updateDynamic("amount_received")(amount_received)
+    __obj.updateDynamic("amount_returned")(amount_returned)
+    __obj.asInstanceOf[Receiver]
+  }
+}
+

@@ -11,3 +11,14 @@ trait AccountsResource extends js.Object {
   var filterSets: FilterSetsResource
 }
 
+object AccountsResource {
+  @scala.inline
+  def apply(clients: ClientsResource, creatives: CreativesResource, filterSets: FilterSetsResource): AccountsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clients")(clients)
+    __obj.updateDynamic("creatives")(creatives)
+    __obj.updateDynamic("filterSets")(filterSets)
+    __obj.asInstanceOf[AccountsResource]
+  }
+}
+

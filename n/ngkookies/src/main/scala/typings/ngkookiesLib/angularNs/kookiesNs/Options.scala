@@ -12,3 +12,20 @@ trait Options extends js.Object {
   var secure: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    domain: java.lang.String = null,
+    expires: scala.Double | stdLib.Date = null,
+    path: java.lang.String = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    __obj.asInstanceOf[Options]
+  }
+}
+

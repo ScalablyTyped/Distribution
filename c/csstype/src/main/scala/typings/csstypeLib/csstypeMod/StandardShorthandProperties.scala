@@ -475,3 +475,96 @@ trait StandardShorthandProperties[TLength] extends js.Object {
   var transition: js.UndefOr[TransitionProperty] = js.undefined
 }
 
+object StandardShorthandProperties {
+  @scala.inline
+  def apply[TLength](
+    all: Globals = null,
+    animation: AnimationProperty = null,
+    background: BackgroundProperty[TLength] = null,
+    border: BorderProperty[TLength] = null,
+    borderBlockEnd: BorderBlockEndProperty[TLength] = null,
+    borderBlockStart: BorderBlockStartProperty[TLength] = null,
+    borderBottom: BorderBottomProperty[TLength] = null,
+    borderColor: BorderColorProperty = null,
+    borderImage: BorderImageProperty = null,
+    borderInlineEnd: BorderInlineEndProperty[TLength] = null,
+    borderInlineStart: BorderInlineStartProperty[TLength] = null,
+    borderLeft: BorderLeftProperty[TLength] = null,
+    borderRadius: BorderRadiusProperty[TLength] = null,
+    borderRight: BorderRightProperty[TLength] = null,
+    borderStyle: BorderStyleProperty = null,
+    borderTop: BorderTopProperty[TLength] = null,
+    borderWidth: BorderWidthProperty[TLength] = null,
+    columnRule: ColumnRuleProperty[TLength] = null,
+    columns: ColumnsProperty[TLength] = null,
+    flex: FlexProperty[TLength] = null,
+    flexFlow: FlexFlowProperty = null,
+    font: FontProperty = null,
+    gap: GapProperty[TLength] = null,
+    grid: GridProperty = null,
+    gridArea: GridAreaProperty = null,
+    gridColumn: GridColumnProperty = null,
+    gridRow: GridRowProperty = null,
+    gridTemplate: GridTemplateProperty = null,
+    lineClamp: LineClampProperty = null,
+    listStyle: ListStyleProperty = null,
+    margin: MarginProperty[TLength] = null,
+    mask: MaskProperty[TLength] = null,
+    maskBorder: MaskBorderProperty = null,
+    motion: OffsetProperty[TLength] = null,
+    offset: OffsetProperty[TLength] = null,
+    outline: OutlineProperty[TLength] = null,
+    padding: PaddingProperty[TLength] = null,
+    placeItems: PlaceItemsProperty = null,
+    placeSelf: PlaceSelfProperty = null,
+    textDecoration: TextDecorationProperty = null,
+    textEmphasis: TextEmphasisProperty = null,
+    transition: TransitionProperty = null
+  ): StandardShorthandProperties[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (all != null) __obj.updateDynamic("all")(all)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (borderBlockEnd != null) __obj.updateDynamic("borderBlockEnd")(borderBlockEnd.asInstanceOf[js.Any])
+    if (borderBlockStart != null) __obj.updateDynamic("borderBlockStart")(borderBlockStart.asInstanceOf[js.Any])
+    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderImage != null) __obj.updateDynamic("borderImage")(borderImage.asInstanceOf[js.Any])
+    if (borderInlineEnd != null) __obj.updateDynamic("borderInlineEnd")(borderInlineEnd.asInstanceOf[js.Any])
+    if (borderInlineStart != null) __obj.updateDynamic("borderInlineStart")(borderInlineStart.asInstanceOf[js.Any])
+    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
+    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
+    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (columnRule != null) __obj.updateDynamic("columnRule")(columnRule.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (flexFlow != null) __obj.updateDynamic("flexFlow")(flexFlow.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
+    if (gridColumn != null) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
+    if (gridRow != null) __obj.updateDynamic("gridRow")(gridRow.asInstanceOf[js.Any])
+    if (gridTemplate != null) __obj.updateDynamic("gridTemplate")(gridTemplate.asInstanceOf[js.Any])
+    if (lineClamp != null) __obj.updateDynamic("lineClamp")(lineClamp.asInstanceOf[js.Any])
+    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (maskBorder != null) __obj.updateDynamic("maskBorder")(maskBorder.asInstanceOf[js.Any])
+    if (motion != null) __obj.updateDynamic("motion")(motion.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (placeItems != null) __obj.updateDynamic("placeItems")(placeItems.asInstanceOf[js.Any])
+    if (placeSelf != null) __obj.updateDynamic("placeSelf")(placeSelf.asInstanceOf[js.Any])
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
+    if (textEmphasis != null) __obj.updateDynamic("textEmphasis")(textEmphasis.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StandardShorthandProperties[TLength]]
+  }
+}
+

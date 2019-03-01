@@ -20,3 +20,42 @@ trait DatabasesResource extends js.Object {
   def update(request: gapiDotClientDotSqladminLib.Anon_AltDatabase): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object DatabasesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Database]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DatabasesListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    update: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): DatabasesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[DatabasesResource]
+  }
+}
+

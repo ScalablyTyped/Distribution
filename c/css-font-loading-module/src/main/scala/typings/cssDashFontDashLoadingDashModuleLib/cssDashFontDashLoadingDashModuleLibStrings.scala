@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation._
 
 object cssDashFontDashLoadingDashModuleLibStrings {
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.FontFaceLoadStatus
   
   @js.native
-  sealed trait loaded extends js.Object
+  sealed trait loaded
+    extends cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.FontFaceLoadStatus
+       with cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.FontFaceSetLoadStatus
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait loading
+    extends cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.FontFaceLoadStatus
+       with cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.FontFaceSetLoadStatus
   
   @js.native
-  sealed trait unloaded extends js.Object
+  sealed trait unloaded
+    extends cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.FontFaceLoadStatus
   
   @scala.inline
   def error: error = "error".asInstanceOf[error]

@@ -31,3 +31,18 @@ trait ConditionalDataBarPositiveFormatData extends js.Object {
   var gradientFill: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConditionalDataBarPositiveFormatData {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String = null,
+    fillColor: java.lang.String = null,
+    gradientFill: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConditionalDataBarPositiveFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (!js.isUndefined(gradientFill)) __obj.updateDynamic("gradientFill")(gradientFill)
+    __obj.asInstanceOf[ConditionalDataBarPositiveFormatData]
+  }
+}
+

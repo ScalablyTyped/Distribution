@@ -24,3 +24,22 @@ trait XHierarchiesSupplier
   def getHierarchies(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XHierarchiesSupplier {
+  @scala.inline
+  def apply(
+    Hierarchies: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getHierarchies: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XHierarchiesSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Hierarchies")(Hierarchies)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getHierarchies")(getHierarchies)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XHierarchiesSupplier]
+  }
+}
+

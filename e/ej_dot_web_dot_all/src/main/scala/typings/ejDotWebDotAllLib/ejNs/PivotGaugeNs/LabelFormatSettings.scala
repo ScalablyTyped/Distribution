@@ -22,3 +22,20 @@ trait LabelFormatSettings extends js.Object {
   var suffixText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LabelFormatSettings {
+  @scala.inline
+  def apply(
+    decimalPlaces: scala.Int | scala.Double = null,
+    numberFormat: NumberFormat | java.lang.String = null,
+    prefixText: java.lang.String = null,
+    suffixText: java.lang.String = null
+  ): LabelFormatSettings = {
+    val __obj = js.Dynamic.literal()
+    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
+    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText)
+    if (suffixText != null) __obj.updateDynamic("suffixText")(suffixText)
+    __obj.asInstanceOf[LabelFormatSettings]
+  }
+}
+

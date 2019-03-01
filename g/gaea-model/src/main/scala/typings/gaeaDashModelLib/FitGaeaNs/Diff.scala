@@ -30,3 +30,33 @@ trait Diff extends js.Object {
   var update: js.UndefOr[gaeaDashModelLib.Anon_NewValue] = js.undefined
 }
 
+object Diff {
+  @scala.inline
+  def apply(
+    mapUniqueKey: java.lang.String,
+    `type`: gaeaDashModelLib.gaeaDashModelLibStrings.add | gaeaDashModelLib.gaeaDashModelLibStrings.move | gaeaDashModelLib.gaeaDashModelLibStrings.remove | gaeaDashModelLib.gaeaDashModelLibStrings.exchange | gaeaDashModelLib.gaeaDashModelLibStrings.update | gaeaDashModelLib.gaeaDashModelLibStrings.paste | gaeaDashModelLib.gaeaDashModelLibStrings.reset | gaeaDashModelLib.gaeaDashModelLibStrings.addCombo | gaeaDashModelLib.gaeaDashModelLibStrings.addSource,
+    add: gaeaDashModelLib.Anon_Index = null,
+    addCombo: gaeaDashModelLib.Anon_ComponentInfo = null,
+    addSource: gaeaDashModelLib.Anon_ComponentInfo = null,
+    exchange: gaeaDashModelLib.Anon_NewIndex = null,
+    move: gaeaDashModelLib.Anon_SourceIndex = null,
+    paste: DiffRemove = null,
+    remove: DiffRemove = null,
+    reset: gaeaDashModelLib.Anon_BeforeName = null,
+    update: gaeaDashModelLib.Anon_NewValue = null
+  ): Diff = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
+    if (add != null) __obj.updateDynamic("add")(add)
+    if (addCombo != null) __obj.updateDynamic("addCombo")(addCombo)
+    if (addSource != null) __obj.updateDynamic("addSource")(addSource)
+    if (exchange != null) __obj.updateDynamic("exchange")(exchange)
+    if (move != null) __obj.updateDynamic("move")(move)
+    if (paste != null) __obj.updateDynamic("paste")(paste)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Diff]
+  }
+}
+

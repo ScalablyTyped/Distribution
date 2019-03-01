@@ -16,3 +16,16 @@ trait AutoScalingPolicyDescription extends js.Object {
   var TargetTrackingScalingPolicyConfiguration: js.UndefOr[AutoScalingTargetTrackingScalingPolicyConfigurationDescription] = js.undefined
 }
 
+object AutoScalingPolicyDescription {
+  @scala.inline
+  def apply(
+    PolicyName: AutoScalingPolicyName = null,
+    TargetTrackingScalingPolicyConfiguration: AutoScalingTargetTrackingScalingPolicyConfigurationDescription = null
+  ): AutoScalingPolicyDescription = {
+    val __obj = js.Dynamic.literal()
+    if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName)
+    if (TargetTrackingScalingPolicyConfiguration != null) __obj.updateDynamic("TargetTrackingScalingPolicyConfiguration")(TargetTrackingScalingPolicyConfiguration)
+    __obj.asInstanceOf[AutoScalingPolicyDescription]
+  }
+}
+

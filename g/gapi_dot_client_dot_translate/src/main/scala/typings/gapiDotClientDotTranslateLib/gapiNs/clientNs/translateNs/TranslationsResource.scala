@@ -27,3 +27,28 @@ trait TranslationsResource extends js.Object {
   def translate(request: gapiDotClientDotTranslateLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[TranslationsListResponse]
 }
 
+object TranslationsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotTranslateLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TranslationsListResponse]
+    ],
+    translate: js.Function1[
+      gapiDotClientDotTranslateLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TranslationsListResponse]
+    ],
+    detectedSourceLanguage: java.lang.String = null,
+    model: java.lang.String = null,
+    translatedText: java.lang.String = null
+  ): TranslationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("translate")(translate)
+    if (detectedSourceLanguage != null) __obj.updateDynamic("detectedSourceLanguage")(detectedSourceLanguage)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (translatedText != null) __obj.updateDynamic("translatedText")(translatedText)
+    __obj.asInstanceOf[TranslationsResource]
+  }
+}
+

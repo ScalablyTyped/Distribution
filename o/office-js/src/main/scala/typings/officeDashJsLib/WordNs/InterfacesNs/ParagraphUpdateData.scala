@@ -118,3 +118,42 @@ trait ParagraphUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object ParagraphUpdateData {
+  @scala.inline
+  def apply(
+    alignment: officeDashJsLib.WordNs.Alignment | officeDashJsLib.officeDashJsLibStrings.Mixed | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Centered | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justified = null,
+    firstLineIndent: scala.Int | scala.Double = null,
+    font: FontUpdateData = null,
+    leftIndent: scala.Int | scala.Double = null,
+    lineSpacing: scala.Int | scala.Double = null,
+    lineUnitAfter: scala.Int | scala.Double = null,
+    lineUnitBefore: scala.Int | scala.Double = null,
+    listItem: ListItemUpdateData = null,
+    listItemOrNullObject: ListItemUpdateData = null,
+    outlineLevel: scala.Int | scala.Double = null,
+    rightIndent: scala.Int | scala.Double = null,
+    spaceAfter: scala.Int | scala.Double = null,
+    spaceBefore: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null
+  ): ParagraphUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (firstLineIndent != null) __obj.updateDynamic("firstLineIndent")(firstLineIndent.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (leftIndent != null) __obj.updateDynamic("leftIndent")(leftIndent.asInstanceOf[js.Any])
+    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
+    if (lineUnitAfter != null) __obj.updateDynamic("lineUnitAfter")(lineUnitAfter.asInstanceOf[js.Any])
+    if (lineUnitBefore != null) __obj.updateDynamic("lineUnitBefore")(lineUnitBefore.asInstanceOf[js.Any])
+    if (listItem != null) __obj.updateDynamic("listItem")(listItem)
+    if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject)
+    if (outlineLevel != null) __obj.updateDynamic("outlineLevel")(outlineLevel.asInstanceOf[js.Any])
+    if (rightIndent != null) __obj.updateDynamic("rightIndent")(rightIndent.asInstanceOf[js.Any])
+    if (spaceAfter != null) __obj.updateDynamic("spaceAfter")(spaceAfter.asInstanceOf[js.Any])
+    if (spaceBefore != null) __obj.updateDynamic("spaceBefore")(spaceBefore.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    __obj.asInstanceOf[ParagraphUpdateData]
+  }
+}
+

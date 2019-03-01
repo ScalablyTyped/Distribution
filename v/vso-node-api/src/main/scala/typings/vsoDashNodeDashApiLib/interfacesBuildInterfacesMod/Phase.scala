@@ -35,3 +35,30 @@ trait Phase extends js.Object {
   var variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
 }
 
+object Phase {
+  @scala.inline
+  def apply(
+    condition: java.lang.String,
+    dependencies: js.Array[Dependency],
+    jobAuthorizationScope: BuildAuthorizationScope,
+    jobCancelTimeoutInMinutes: scala.Double,
+    jobTimeoutInMinutes: scala.Double,
+    name: java.lang.String,
+    steps: js.Array[BuildDefinitionStep],
+    target: PhaseTarget,
+    variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
+  ): Phase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("condition")(condition)
+    __obj.updateDynamic("dependencies")(dependencies)
+    __obj.updateDynamic("jobAuthorizationScope")(jobAuthorizationScope)
+    __obj.updateDynamic("jobCancelTimeoutInMinutes")(jobCancelTimeoutInMinutes)
+    __obj.updateDynamic("jobTimeoutInMinutes")(jobTimeoutInMinutes)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("steps")(steps)
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[Phase]
+  }
+}
+

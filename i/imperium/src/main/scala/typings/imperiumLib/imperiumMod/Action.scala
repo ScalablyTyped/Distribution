@@ -10,3 +10,16 @@ trait Action
   var action: java.lang.String
 }
 
+object Action {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Action]
+  }
+}
+

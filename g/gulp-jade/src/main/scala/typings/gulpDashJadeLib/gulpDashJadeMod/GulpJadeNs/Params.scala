@@ -68,3 +68,32 @@ trait Params extends js.Object {
   var self: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Params {
+  @scala.inline
+  def apply(
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    client: js.UndefOr[scala.Boolean] = js.undefined,
+    compileDebug: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    doctype: java.lang.String = null,
+    jade: js.Any = null,
+    locals: js.Any = null,
+    pretty: scala.Boolean | java.lang.String = null,
+    self: js.UndefOr[scala.Boolean] = js.undefined
+  ): Params = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(client)) __obj.updateDynamic("client")(client)
+    if (!js.isUndefined(compileDebug)) __obj.updateDynamic("compileDebug")(compileDebug)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (doctype != null) __obj.updateDynamic("doctype")(doctype)
+    if (jade != null) __obj.updateDynamic("jade")(jade)
+    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (pretty != null) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
+    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self)
+    __obj.asInstanceOf[Params]
+  }
+}
+

@@ -24,3 +24,32 @@ trait Anon_CallbackData extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackData {
+  @scala.inline
+  def apply(
+    form: js.Function6[
+      js.Any, 
+      js.Any, 
+      java.lang.String, 
+      apostropheLib.apostropheMod.apostropheNs.AposObject, 
+      js.Any, 
+      js.Function0[_], 
+      scala.Unit
+    ],
+    string: js.Function6[
+      js.Any, 
+      js.Any, 
+      java.lang.String, 
+      apostropheLib.apostropheMod.apostropheNs.AposObject, 
+      js.Any, 
+      js.Function0[_], 
+      scala.Unit
+    ]
+  ): Anon_CallbackData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("form")(form)
+    __obj.updateDynamic("string")(string)
+    __obj.asInstanceOf[Anon_CallbackData]
+  }
+}
+

@@ -17,3 +17,17 @@ trait ParsedArgs
   var `_`: js.Array[java.lang.String]
 }
 
+object ParsedArgs {
+  @scala.inline
+  def apply(
+    `_`: js.Array[java.lang.String],
+    `--`: js.Array[java.lang.String] = null,
+    StringDictionary: /* arg */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): ParsedArgs = {
+    val __obj = js.Dynamic.literal(`_` = `_`)
+    if (`--` != null) __obj.updateDynamic("--")(`--`)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ParsedArgs]
+  }
+}
+

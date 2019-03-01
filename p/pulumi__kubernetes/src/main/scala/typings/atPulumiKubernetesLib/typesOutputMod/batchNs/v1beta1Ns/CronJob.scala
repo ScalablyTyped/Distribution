@@ -40,3 +40,22 @@ trait CronJob extends js.Object {
   val status: CronJobStatus
 }
 
+object CronJob {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJob,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: CronJobSpec,
+    status: CronJobStatus
+  ): CronJob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[CronJob]
+  }
+}
+

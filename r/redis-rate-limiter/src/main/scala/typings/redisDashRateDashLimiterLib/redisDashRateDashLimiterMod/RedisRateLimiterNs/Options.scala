@@ -15,3 +15,26 @@ trait Options extends js.Object {
   var window: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    key: redisDashRateDashLimiterLib.redisDashRateDashLimiterLibStrings.ip | (js.Function1[/* req */ expressLib.expressMod.eNs.Request, java.lang.String]),
+    redis: redisLib.redisMod.RedisClient,
+    deleteImmediatelyIfRaceCondition: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null,
+    onPossibleRaceCondition: js.Function1[/* key */ java.lang.String, scala.Unit] = null,
+    rate: java.lang.String = null,
+    window: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("redis")(redis)
+    if (!js.isUndefined(deleteImmediatelyIfRaceCondition)) __obj.updateDynamic("deleteImmediatelyIfRaceCondition")(deleteImmediatelyIfRaceCondition)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (onPossibleRaceCondition != null) __obj.updateDynamic("onPossibleRaceCondition")(onPossibleRaceCondition)
+    if (rate != null) __obj.updateDynamic("rate")(rate)
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

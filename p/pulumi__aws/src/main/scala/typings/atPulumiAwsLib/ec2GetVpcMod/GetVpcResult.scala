@@ -54,3 +54,42 @@ trait GetVpcResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetVpcResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    cidrBlock: java.lang.String,
+    cidrBlockAssociations: js.Array[atPulumiAwsLib.Anon_AssociationId],
+    default: scala.Boolean,
+    dhcpOptionsId: java.lang.String,
+    enableDnsHostnames: scala.Boolean,
+    enableDnsSupport: scala.Boolean,
+    id: java.lang.String,
+    instanceTenancy: java.lang.String,
+    ipv6AssociationId: java.lang.String,
+    ipv6CidrBlock: java.lang.String,
+    mainRouteTableId: java.lang.String,
+    ownerId: java.lang.String,
+    state: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetVpcResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("cidrBlock")(cidrBlock)
+    __obj.updateDynamic("cidrBlockAssociations")(cidrBlockAssociations)
+    __obj.updateDynamic("default")(default)
+    __obj.updateDynamic("dhcpOptionsId")(dhcpOptionsId)
+    __obj.updateDynamic("enableDnsHostnames")(enableDnsHostnames)
+    __obj.updateDynamic("enableDnsSupport")(enableDnsSupport)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("instanceTenancy")(instanceTenancy)
+    __obj.updateDynamic("ipv6AssociationId")(ipv6AssociationId)
+    __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock)
+    __obj.updateDynamic("mainRouteTableId")(mainRouteTableId)
+    __obj.updateDynamic("ownerId")(ownerId)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetVpcResult]
+  }
+}
+

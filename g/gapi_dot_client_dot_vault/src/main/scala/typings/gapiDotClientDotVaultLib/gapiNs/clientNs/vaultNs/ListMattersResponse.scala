@@ -12,3 +12,13 @@ trait ListMattersResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListMattersResponse {
+  @scala.inline
+  def apply(matters: js.Array[Matter] = null, nextPageToken: java.lang.String = null): ListMattersResponse = {
+    val __obj = js.Dynamic.literal()
+    if (matters != null) __obj.updateDynamic("matters")(matters)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListMattersResponse]
+  }
+}
+

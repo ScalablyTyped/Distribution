@@ -25,7 +25,8 @@ object twilioDashVideoLibStrings {
   sealed trait `Client sent an invalid signaling message` extends js.Object
   
   @js.native
-  sealed trait H264 extends js.Object
+  sealed trait H264
+    extends twilioDashVideoLib.twilioDashVideoMod.VideoCodec
   
   @js.native
   sealed trait `Invalid Access Token grants` extends js.Object
@@ -52,10 +53,12 @@ object twilioDashVideoLibStrings {
   sealed trait `No supported codec` extends js.Object
   
   @js.native
-  sealed trait PCMA extends js.Object
+  sealed trait PCMA
+    extends twilioDashVideoLib.twilioDashVideoMod.AudioCodec
   
   @js.native
-  sealed trait PCMU extends js.Object
+  sealed trait PCMU
+    extends twilioDashVideoLib.twilioDashVideoMod.AudioCodec
   
   @js.native
   sealed trait `Participant disconnected because of duplicate identity` extends js.Object
@@ -166,40 +169,52 @@ object twilioDashVideoLibStrings {
   sealed trait `Unable to create Room` extends js.Object
   
   @js.native
-  sealed trait VP8 extends js.Object
+  sealed trait VP8
+    extends twilioDashVideoLib.twilioDashVideoMod.VideoCodec
   
   @js.native
-  sealed trait VP9 extends js.Object
+  sealed trait VP9
+    extends twilioDashVideoLib.twilioDashVideoMod.VideoCodec
   
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait audio
+    extends twilioDashVideoLib.twilioDashVideoMod.TrackNs.Kind
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait data
+    extends twilioDashVideoLib.twilioDashVideoMod.TrackNs.Kind
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends twilioDashVideoLib.twilioDashVideoMod.LogLevel
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends twilioDashVideoLib.twilioDashVideoMod.LogLevel
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends twilioDashVideoLib.twilioDashVideoMod.LogLevel
   
   @js.native
-  sealed trait isac extends js.Object
+  sealed trait isac
+    extends twilioDashVideoLib.twilioDashVideoMod.AudioCodec
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends twilioDashVideoLib.twilioDashVideoMod.LogLevel
   
   @js.native
-  sealed trait opus extends js.Object
+  sealed trait opus
+    extends twilioDashVideoLib.twilioDashVideoMod.AudioCodec
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait video
+    extends twilioDashVideoLib.twilioDashVideoMod.TrackNs.Kind
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends twilioDashVideoLib.twilioDashVideoMod.LogLevel
   
   @scala.inline
   def `Access Token expired or expiration date invalid`: `Access Token expired or expiration date invalid` = "Access Token expired or expiration date invalid".asInstanceOf[`Access Token expired or expiration date invalid`]

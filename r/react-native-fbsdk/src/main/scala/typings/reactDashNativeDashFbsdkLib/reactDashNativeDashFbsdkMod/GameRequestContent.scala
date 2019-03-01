@@ -43,3 +43,28 @@ trait GameRequestContent extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GameRequestContent {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    actionType: GameRequestActionType = null,
+    data: java.lang.String = null,
+    filters: GameRequestFilters = null,
+    objectId: java.lang.String = null,
+    recipients: js.Array[java.lang.String] = null,
+    suggestions: js.Array[java.lang.String] = null,
+    title: java.lang.String = null
+  ): GameRequestContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    if (actionType != null) __obj.updateDynamic("actionType")(actionType)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (recipients != null) __obj.updateDynamic("recipients")(recipients)
+    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[GameRequestContent]
+  }
+}
+

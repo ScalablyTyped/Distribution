@@ -33,3 +33,14 @@ trait TextSegment extends js.Object {
   var SegmentText: java.lang.String
 }
 
+object TextSegment {
+  @scala.inline
+  def apply(SegmentEnd: scala.Double, SegmentStart: scala.Double, SegmentText: java.lang.String): TextSegment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SegmentEnd")(SegmentEnd)
+    __obj.updateDynamic("SegmentStart")(SegmentStart)
+    __obj.updateDynamic("SegmentText")(SegmentText)
+    __obj.asInstanceOf[TextSegment]
+  }
+}
+

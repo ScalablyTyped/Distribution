@@ -52,3 +52,34 @@ trait Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEvent exten
   def setBubbleParent(bubbleParent: scala.Boolean): scala.Unit
 }
 
+object Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEvent {
+  @scala.inline
+  def apply(
+    NONE: scala.Double,
+    SINGLE_LINE: scala.Double,
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+  ): Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NONE")(NONE)
+    __obj.updateDynamic("SINGLE_LINE")(SINGLE_LINE)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEvent]
+  }
+}
+

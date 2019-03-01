@@ -5,9 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SourceUnit extends BaseASTNode {
+trait SourceUnit
+  extends BaseASTNode
+     with ASTNode {
   var children: js.Array[ASTNode]
   @JSName("type")
   var type_SourceUnit: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.SourceUnit
+}
+
+object SourceUnit {
+  @scala.inline
+  def apply(
+    children: js.Array[ASTNode],
+    `type`: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.SourceUnit,
+    loc: Location = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null
+  ): SourceUnit = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("children")(children)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[SourceUnit]
+  }
 }
 

@@ -10,3 +10,20 @@ trait ExtendedError
   var framesToPop: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ExtendedError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: java.lang.String,
+    framesToPop: scala.Int | scala.Double = null,
+    stack: java.lang.String = null
+  ): ExtendedError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    if (framesToPop != null) __obj.updateDynamic("framesToPop")(framesToPop.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ExtendedError]
+  }
+}
+

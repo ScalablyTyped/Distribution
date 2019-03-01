@@ -14,3 +14,24 @@ trait WebhookResponse extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WebhookResponse {
+  @scala.inline
+  def apply(
+    followupEventInput: EventInput = null,
+    fulfillmentMessages: js.Array[Message] = null,
+    fulfillmentText: java.lang.String = null,
+    outputContexts: js.Array[Context[java.lang.String, _]] = null,
+    payload: js.Any = null,
+    source: java.lang.String = null
+  ): WebhookResponse = {
+    val __obj = js.Dynamic.literal()
+    if (followupEventInput != null) __obj.updateDynamic("followupEventInput")(followupEventInput)
+    if (fulfillmentMessages != null) __obj.updateDynamic("fulfillmentMessages")(fulfillmentMessages)
+    if (fulfillmentText != null) __obj.updateDynamic("fulfillmentText")(fulfillmentText)
+    if (outputContexts != null) __obj.updateDynamic("outputContexts")(outputContexts)
+    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[WebhookResponse]
+  }
+}
+

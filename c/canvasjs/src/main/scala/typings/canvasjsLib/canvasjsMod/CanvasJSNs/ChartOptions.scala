@@ -135,3 +135,56 @@ trait ChartOptions extends js.Object {
   var zoomEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartOptions {
+  @scala.inline
+  def apply(
+    data: js.Array[ChartDataSeriesOptions],
+    title: ChartTitleOptions,
+    animationDuration: scala.Int | scala.Double = null,
+    animationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    axisX: ChartAxisXOptions | js.Array[ChartAxisXOptions] = null,
+    axisX2: ChartAxisXOptions | js.Array[ChartAxisXOptions] = null,
+    axisY: ChartAxisYOptions | js.Array[ChartAxisYOptions] = null,
+    axisY2: ChartAxisYOptions | js.Array[ChartAxisYOptions] = null,
+    backgroundColor: java.lang.String = null,
+    colorSet: java.lang.String = null,
+    culture: java.lang.String = null,
+    dataPointMaxWidth: scala.Int | scala.Double = null,
+    exportEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    exportFileName: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    interactivityEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    legend: ChartLegendOptions = null,
+    subtitles: js.Array[ChartTitleOptions] = null,
+    theme: java.lang.String = null,
+    toolTip: ChartToolTipOptions = null,
+    width: scala.Int | scala.Double = null,
+    zoomEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("title")(title)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled)
+    if (axisX != null) __obj.updateDynamic("axisX")(axisX.asInstanceOf[js.Any])
+    if (axisX2 != null) __obj.updateDynamic("axisX2")(axisX2.asInstanceOf[js.Any])
+    if (axisY != null) __obj.updateDynamic("axisY")(axisY.asInstanceOf[js.Any])
+    if (axisY2 != null) __obj.updateDynamic("axisY2")(axisY2.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (colorSet != null) __obj.updateDynamic("colorSet")(colorSet)
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (dataPointMaxWidth != null) __obj.updateDynamic("dataPointMaxWidth")(dataPointMaxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(exportEnabled)) __obj.updateDynamic("exportEnabled")(exportEnabled)
+    if (exportFileName != null) __obj.updateDynamic("exportFileName")(exportFileName)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactivityEnabled)) __obj.updateDynamic("interactivityEnabled")(interactivityEnabled)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (subtitles != null) __obj.updateDynamic("subtitles")(subtitles)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled)
+    __obj.asInstanceOf[ChartOptions]
+  }
+}
+

@@ -64,3 +64,32 @@ trait HelloSignStatic extends js.Object {
   def open(params: OpenParameters): scala.Unit
 }
 
+object HelloSignStatic {
+  @scala.inline
+  def apply(
+    CULTURES: ClientCultures,
+    EVENT_CANCELED: java.lang.String,
+    EVENT_DECLINED: java.lang.String,
+    EVENT_ERROR: java.lang.String,
+    EVENT_SENT: java.lang.String,
+    EVENT_SIGNED: java.lang.String,
+    EVENT_TEMPLATE_CREATED: java.lang.String,
+    close: js.Function0[scala.Unit],
+    init: js.Function1[java.lang.String, scala.Unit],
+    open: js.Function1[OpenParameters, scala.Unit]
+  ): HelloSignStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CULTURES")(CULTURES)
+    __obj.updateDynamic("EVENT_CANCELED")(EVENT_CANCELED)
+    __obj.updateDynamic("EVENT_DECLINED")(EVENT_DECLINED)
+    __obj.updateDynamic("EVENT_ERROR")(EVENT_ERROR)
+    __obj.updateDynamic("EVENT_SENT")(EVENT_SENT)
+    __obj.updateDynamic("EVENT_SIGNED")(EVENT_SIGNED)
+    __obj.updateDynamic("EVENT_TEMPLATE_CREATED")(EVENT_TEMPLATE_CREATED)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("open")(open)
+    __obj.asInstanceOf[HelloSignStatic]
+  }
+}
+

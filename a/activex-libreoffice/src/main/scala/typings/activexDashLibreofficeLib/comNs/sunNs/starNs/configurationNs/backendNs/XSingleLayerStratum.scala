@@ -39,3 +39,22 @@ trait XSingleLayerStratum
   def getUpdatableLayer(aComponent: java.lang.String): XUpdatableLayer
 }
 
+object XSingleLayerStratum {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getLayer: js.Function2[java.lang.String, java.lang.String, XLayer],
+    getUpdatableLayer: js.Function1[java.lang.String, XUpdatableLayer],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSingleLayerStratum = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLayer")(getLayer)
+    __obj.updateDynamic("getUpdatableLayer")(getUpdatableLayer)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSingleLayerStratum]
+  }
+}
+

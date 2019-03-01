@@ -17,3 +17,20 @@ trait XAlterQuery
   def alterCommand(command: java.lang.String, useEscapeProcessing: scala.Boolean): scala.Unit
 }
 
+object XAlterQuery {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    alterCommand: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAlterQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("alterCommand")(alterCommand)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAlterQuery]
+  }
+}
+

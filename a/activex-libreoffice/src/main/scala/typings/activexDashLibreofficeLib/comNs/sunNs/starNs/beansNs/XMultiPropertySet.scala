@@ -72,3 +72,47 @@ trait XMultiPropertySet
   ): scala.Unit
 }
 
+object XMultiPropertySet {
+  @scala.inline
+  def apply(
+    PropertySetInfo: XPropertySetInfo,
+    acquire: js.Function0[scala.Unit],
+    addPropertiesChangeListener: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    firePropertiesChangeEvent: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[XPropertySetInfo],
+    getPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertiesChangeListener: js.Function1[XPropertiesChangeListener, scala.Unit],
+    setPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ]
+  ): XMultiPropertySet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
+    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
+    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    __obj.asInstanceOf[XMultiPropertySet]
+  }
+}
+

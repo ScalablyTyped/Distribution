@@ -45,3 +45,34 @@ trait MetaField
   var value_type: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.string | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.integer
 }
 
+object MetaField {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    key: java.lang.String,
+    namespace: java.lang.String,
+    owner_resource: java.lang.String,
+    value: java.lang.String | scala.Double,
+    value_type: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.string | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.integer,
+    admin_graphql_api_id: java.lang.String = null,
+    created_at: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    owner_id: scala.Int | scala.Double = null,
+    updated_at: java.lang.String = null
+  ): MetaField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("owner_resource")(owner_resource)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.updateDynamic("value_type")(value_type.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (owner_id != null) __obj.updateDynamic("owner_id")(owner_id.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[MetaField]
+  }
+}
+

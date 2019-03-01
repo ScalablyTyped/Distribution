@@ -16,3 +16,20 @@ trait GooglePrivacyDlpV2beta1CreateInspectOperationRequest extends js.Object {
   var storageConfig: js.UndefOr[GooglePrivacyDlpV2beta1StorageConfig] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1CreateInspectOperationRequest {
+  @scala.inline
+  def apply(
+    inspectConfig: GooglePrivacyDlpV2beta1InspectConfig = null,
+    operationConfig: GooglePrivacyDlpV2beta1OperationConfig = null,
+    outputConfig: GooglePrivacyDlpV2beta1OutputStorageConfig = null,
+    storageConfig: GooglePrivacyDlpV2beta1StorageConfig = null
+  ): GooglePrivacyDlpV2beta1CreateInspectOperationRequest = {
+    val __obj = js.Dynamic.literal()
+    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig)
+    if (operationConfig != null) __obj.updateDynamic("operationConfig")(operationConfig)
+    if (outputConfig != null) __obj.updateDynamic("outputConfig")(outputConfig)
+    if (storageConfig != null) __obj.updateDynamic("storageConfig")(storageConfig)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1CreateInspectOperationRequest]
+  }
+}
+

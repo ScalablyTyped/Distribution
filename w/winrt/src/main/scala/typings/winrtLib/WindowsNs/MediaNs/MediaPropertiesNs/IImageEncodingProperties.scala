@@ -10,3 +10,21 @@ trait IImageEncodingProperties extends IMediaEncodingProperties {
   var width: scala.Double
 }
 
+object IImageEncodingProperties {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    properties: MediaPropertySet,
+    subtype: java.lang.String,
+    `type`: java.lang.String,
+    width: scala.Double
+  ): IImageEncodingProperties = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("subtype")(subtype)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[IImageEncodingProperties]
+  }
+}
+

@@ -214,3 +214,64 @@ trait RouteOptions extends js.Object {
   var validate: js.UndefOr[RouteOptionsValidate] = js.undefined
 }
 
+object RouteOptions {
+  @scala.inline
+  def apply(
+    app: RouteOptionsApp = null,
+    auth: hapiLib.hapiLibNumbers.`false` | java.lang.String | RouteOptionsAccess = null,
+    bind: js.Object = null,
+    cache: hapiLib.hapiLibNumbers.`false` | RouteOptionsCache = null,
+    compression: hapiLib.hapiMod.UtilNs.Dictionary[RouteCompressionEncoderSettings] = null,
+    cors: scala.Boolean | RouteOptionsCors = null,
+    description: java.lang.String = null,
+    ext: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in hapi.hapi.RouteRequestExtType ]:? hapi.hapi.RouteExtObject | std.Array<hapi.hapi.RouteExtObject>}
+    */ hapiLib.hapiLibStrings.RouteOptions with js.Any = null,
+    files: hapiLib.Anon_RelativeTo = null,
+    handler: hapiLib.hapiMod.LifecycleNs.Method | js.Object = null,
+    id: java.lang.String = null,
+    isInternal: js.UndefOr[scala.Boolean] = js.undefined,
+    json: hapiLib.hapiMod.JsonNs.StringifyArguments = null,
+    jsonp: java.lang.String = null,
+    log: hapiLib.Anon_Collect = null,
+    notes: java.lang.String | js.Array[java.lang.String] = null,
+    payload: RouteOptionsPayload = null,
+    plugins: PluginSpecificConfiguration = null,
+    pre: RouteOptionsPreArray = null,
+    response: RouteOptionsResponse = null,
+    security: RouteOptionsSecure = null,
+    state: hapiLib.Anon_FailAction = null,
+    tags: js.Array[java.lang.String] = null,
+    timeout: hapiLib.Anon_Server = null,
+    validate: RouteOptionsValidate = null
+  ): RouteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (app != null) __obj.updateDynamic("app")(app)
+    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
+    if (bind != null) __obj.updateDynamic("bind")(bind)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression)
+    if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (ext != null) __obj.updateDynamic("ext")(ext)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal)
+    if (json != null) __obj.updateDynamic("json")(json)
+    if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp)
+    if (log != null) __obj.updateDynamic("log")(log)
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (pre != null) __obj.updateDynamic("pre")(pre)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[RouteOptions]
+  }
+}
+

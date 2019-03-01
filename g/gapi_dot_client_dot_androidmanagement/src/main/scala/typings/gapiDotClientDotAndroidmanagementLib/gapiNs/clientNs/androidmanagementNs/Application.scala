@@ -16,3 +16,20 @@ trait Application extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Application {
+  @scala.inline
+  def apply(
+    managedProperties: js.Array[ManagedProperty] = null,
+    name: java.lang.String = null,
+    permissions: js.Array[ApplicationPermission] = null,
+    title: java.lang.String = null
+  ): Application = {
+    val __obj = js.Dynamic.literal()
+    if (managedProperties != null) __obj.updateDynamic("managedProperties")(managedProperties)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Application]
+  }
+}
+

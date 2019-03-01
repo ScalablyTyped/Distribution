@@ -20,3 +20,18 @@ trait ToolbarSettings extends js.Object {
   var toolbarItems: js.UndefOr[js.Array[ToolBarItems | java.lang.String]] = js.undefined
 }
 
+object ToolbarSettings {
+  @scala.inline
+  def apply(
+    customToolbarItems: js.Array[ToolbarSettingsCustomToolbarItem] = null,
+    showToolbar: js.UndefOr[scala.Boolean] = js.undefined,
+    toolbarItems: js.Array[ToolBarItems | java.lang.String] = null
+  ): ToolbarSettings = {
+    val __obj = js.Dynamic.literal()
+    if (customToolbarItems != null) __obj.updateDynamic("customToolbarItems")(customToolbarItems)
+    if (!js.isUndefined(showToolbar)) __obj.updateDynamic("showToolbar")(showToolbar)
+    if (toolbarItems != null) __obj.updateDynamic("toolbarItems")(toolbarItems)
+    __obj.asInstanceOf[ToolbarSettings]
+  }
+}
+

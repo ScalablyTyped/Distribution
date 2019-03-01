@@ -10,3 +10,13 @@ trait Anon_H extends js.Object {
   var v: scala.Boolean
 }
 
+object Anon_H {
+  @scala.inline
+  def apply(h: scala.Boolean, v: scala.Boolean): Anon_H = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("v")(v)
+    __obj.asInstanceOf[Anon_H]
+  }
+}
+

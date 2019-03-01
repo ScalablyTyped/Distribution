@@ -14,3 +14,18 @@ trait Anon_BackgroundImageLink extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_BackgroundImageLink {
+  @scala.inline
+  def apply(
+    backgroundImageLink: java.lang.String = null,
+    colorRgb: java.lang.String = null,
+    id: java.lang.String = null
+  ): Anon_BackgroundImageLink = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundImageLink != null) __obj.updateDynamic("backgroundImageLink")(backgroundImageLink)
+    if (colorRgb != null) __obj.updateDynamic("colorRgb")(colorRgb)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[Anon_BackgroundImageLink]
+  }
+}
+

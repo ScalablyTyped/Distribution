@@ -59,3 +59,46 @@ trait XFilePickerControlAccess extends XFilePicker {
   def setValue(ControlId: scala.Double, aControlAction: scala.Double, aValue: js.Any): scala.Unit
 }
 
+object XFilePickerControlAccess {
+  @scala.inline
+  def apply(
+    DisplayDirectory: java.lang.String,
+    Files: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    enableControl: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    execute: js.Function0[scala.Double],
+    getDisplayDirectory: js.Function0[java.lang.String],
+    getFiles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getLabel: js.Function1[scala.Double, java.lang.String],
+    getValue: js.Function2[scala.Double, scala.Double, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDefaultName: js.Function1[java.lang.String, scala.Unit],
+    setDisplayDirectory: js.Function1[java.lang.String, scala.Unit],
+    setLabel: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setMultiSelectionMode: js.Function1[scala.Boolean, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit],
+    setValue: js.Function3[scala.Double, scala.Double, js.Any, scala.Unit]
+  ): XFilePickerControlAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DisplayDirectory")(DisplayDirectory)
+    __obj.updateDynamic("Files")(Files)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("enableControl")(enableControl)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getDisplayDirectory")(getDisplayDirectory)
+    __obj.updateDynamic("getFiles")(getFiles)
+    __obj.updateDynamic("getLabel")(getLabel)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDefaultName")(setDefaultName)
+    __obj.updateDynamic("setDisplayDirectory")(setDisplayDirectory)
+    __obj.updateDynamic("setLabel")(setLabel)
+    __obj.updateDynamic("setMultiSelectionMode")(setMultiSelectionMode)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.asInstanceOf[XFilePickerControlAccess]
+  }
+}
+

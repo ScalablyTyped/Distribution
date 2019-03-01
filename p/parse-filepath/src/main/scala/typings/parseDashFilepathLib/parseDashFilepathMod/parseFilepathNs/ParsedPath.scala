@@ -56,3 +56,36 @@ trait ParsedPath extends js.Object {
   var stem: java.lang.String
 }
 
+object ParsedPath {
+  @scala.inline
+  def apply(
+    absolute: java.lang.String,
+    base: java.lang.String,
+    basename: java.lang.String,
+    dir: java.lang.String,
+    dirname: java.lang.String,
+    ext: java.lang.String,
+    extname: java.lang.String,
+    isAbsolute: scala.Boolean,
+    name: java.lang.String,
+    path: java.lang.String,
+    root: java.lang.String,
+    stem: java.lang.String
+  ): ParsedPath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("absolute")(absolute)
+    __obj.updateDynamic("base")(base)
+    __obj.updateDynamic("basename")(basename)
+    __obj.updateDynamic("dir")(dir)
+    __obj.updateDynamic("dirname")(dirname)
+    __obj.updateDynamic("ext")(ext)
+    __obj.updateDynamic("extname")(extname)
+    __obj.updateDynamic("isAbsolute")(isAbsolute)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("root")(root)
+    __obj.updateDynamic("stem")(stem)
+    __obj.asInstanceOf[ParsedPath]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Attribute extends js.Object {
   var value: js.UndefOr[scala.Double | scala.Boolean | java.lang.String | nodeLib.Buffer] = js.undefined
 }
 
+object Attribute {
+  @scala.inline
+  def apply(
+    `type`: scala.Double,
+    value: scala.Double | scala.Boolean | java.lang.String | nodeLib.Buffer = null
+  ): Attribute = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Attribute]
+  }
+}
+

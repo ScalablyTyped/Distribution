@@ -10,3 +10,16 @@ trait ChartZoomable extends js.Object {
   var selection: js.UndefOr[scala.Boolean | ChartZoomableSelection] = js.undefined
 }
 
+object ChartZoomable {
+  @scala.inline
+  def apply(
+    mousewheel: scala.Boolean | ChartZoomableMousewheel = null,
+    selection: scala.Boolean | ChartZoomableSelection = null
+  ): ChartZoomable = {
+    val __obj = js.Dynamic.literal()
+    if (mousewheel != null) __obj.updateDynamic("mousewheel")(mousewheel.asInstanceOf[js.Any])
+    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartZoomable]
+  }
+}
+

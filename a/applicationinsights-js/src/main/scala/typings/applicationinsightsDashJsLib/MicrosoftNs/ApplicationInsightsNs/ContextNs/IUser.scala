@@ -36,3 +36,26 @@ trait IUser extends js.Object {
   var storeRegion: java.lang.String
 }
 
+object IUser {
+  @scala.inline
+  def apply(
+    accountAcquisitionDate: java.lang.String,
+    accountId: java.lang.String,
+    agent: java.lang.String,
+    authenticatedId: java.lang.String,
+    config: js.Any,
+    id: java.lang.String,
+    storeRegion: java.lang.String
+  ): IUser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accountAcquisitionDate")(accountAcquisitionDate)
+    __obj.updateDynamic("accountId")(accountId)
+    __obj.updateDynamic("agent")(agent)
+    __obj.updateDynamic("authenticatedId")(authenticatedId)
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("storeRegion")(storeRegion)
+    __obj.asInstanceOf[IUser]
+  }
+}
+

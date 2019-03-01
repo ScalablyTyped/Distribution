@@ -9,3 +9,12 @@ trait Anon_Gutter extends js.Object {
   var gutter: scala.Double
 }
 
+object Anon_Gutter {
+  @scala.inline
+  def apply(gutter: scala.Double): Anon_Gutter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gutter")(gutter)
+    __obj.asInstanceOf[Anon_Gutter]
+  }
+}
+

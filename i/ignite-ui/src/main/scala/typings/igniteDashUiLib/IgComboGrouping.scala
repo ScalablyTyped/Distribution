@@ -26,3 +26,21 @@ trait IgComboGrouping
   var key: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgComboGrouping {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgComboGrouping
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    dir: java.lang.String = null,
+    key: java.lang.String = null
+  ): IgComboGrouping = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[IgComboGrouping]
+  }
+}
+

@@ -249,3 +249,74 @@ trait ChartAxisUpdateData extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartAxisUpdateData {
+  @scala.inline
+  def apply(
+    alignment: officeDashJsDashPreviewLib.ExcelNs.ChartTickLabelAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right = null,
+    baseTimeUnit: officeDashJsDashPreviewLib.ExcelNs.ChartAxisTimeUnit | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Days | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Months | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Years = null,
+    categoryType: officeDashJsDashPreviewLib.ExcelNs.ChartAxisCategoryType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TextAxis | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DateAxis = null,
+    displayUnit: officeDashJsDashPreviewLib.ExcelNs.ChartAxisDisplayUnit | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Hundreds | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Thousands | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TenThousands | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.HundredThousands | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Millions | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TenMillions | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.HundredMillions | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Billions | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Trillions | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Custom = null,
+    format: ChartAxisFormatUpdateData = null,
+    isBetweenCategories: js.UndefOr[scala.Boolean] = js.undefined,
+    linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    logBase: scala.Int | scala.Double = null,
+    majorGridlines: ChartGridlinesUpdateData = null,
+    majorTickMark: officeDashJsDashPreviewLib.ExcelNs.ChartAxisTickMark | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Cross | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Inside | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Outside = null,
+    majorTimeUnitScale: officeDashJsDashPreviewLib.ExcelNs.ChartAxisTimeUnit | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Days | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Months | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Years = null,
+    majorUnit: js.Any = null,
+    maximum: js.Any = null,
+    minimum: js.Any = null,
+    minorGridlines: ChartGridlinesUpdateData = null,
+    minorTickMark: officeDashJsDashPreviewLib.ExcelNs.ChartAxisTickMark | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Cross | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Inside | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Outside = null,
+    minorTimeUnitScale: officeDashJsDashPreviewLib.ExcelNs.ChartAxisTimeUnit | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Days | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Months | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Years = null,
+    minorUnit: js.Any = null,
+    multiLevel: js.UndefOr[scala.Boolean] = js.undefined,
+    numberFormat: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
+    position: officeDashJsDashPreviewLib.ExcelNs.ChartAxisPosition | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Maximum | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Minimum | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Custom = null,
+    reversePlotOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    scaleType: officeDashJsDashPreviewLib.ExcelNs.ChartAxisScaleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Linear | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Logarithmic = null,
+    showDisplayUnitLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    textOrientation: js.Any = null,
+    tickLabelPosition: officeDashJsDashPreviewLib.ExcelNs.ChartAxisTickLabelPosition | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NextToAxis | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.High | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Low | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None = null,
+    tickLabelSpacing: js.Any = null,
+    tickMarkSpacing: scala.Int | scala.Double = null,
+    title: ChartAxisTitleUpdateData = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartAxisUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (baseTimeUnit != null) __obj.updateDynamic("baseTimeUnit")(baseTimeUnit.asInstanceOf[js.Any])
+    if (categoryType != null) __obj.updateDynamic("categoryType")(categoryType.asInstanceOf[js.Any])
+    if (displayUnit != null) __obj.updateDynamic("displayUnit")(displayUnit.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(isBetweenCategories)) __obj.updateDynamic("isBetweenCategories")(isBetweenCategories)
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat)
+    if (logBase != null) __obj.updateDynamic("logBase")(logBase.asInstanceOf[js.Any])
+    if (majorGridlines != null) __obj.updateDynamic("majorGridlines")(majorGridlines)
+    if (majorTickMark != null) __obj.updateDynamic("majorTickMark")(majorTickMark.asInstanceOf[js.Any])
+    if (majorTimeUnitScale != null) __obj.updateDynamic("majorTimeUnitScale")(majorTimeUnitScale.asInstanceOf[js.Any])
+    if (majorUnit != null) __obj.updateDynamic("majorUnit")(majorUnit)
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum)
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum)
+    if (minorGridlines != null) __obj.updateDynamic("minorGridlines")(minorGridlines)
+    if (minorTickMark != null) __obj.updateDynamic("minorTickMark")(minorTickMark.asInstanceOf[js.Any])
+    if (minorTimeUnitScale != null) __obj.updateDynamic("minorTimeUnitScale")(minorTimeUnitScale.asInstanceOf[js.Any])
+    if (minorUnit != null) __obj.updateDynamic("minorUnit")(minorUnit)
+    if (!js.isUndefined(multiLevel)) __obj.updateDynamic("multiLevel")(multiLevel)
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversePlotOrder)) __obj.updateDynamic("reversePlotOrder")(reversePlotOrder)
+    if (scaleType != null) __obj.updateDynamic("scaleType")(scaleType.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDisplayUnitLabel)) __obj.updateDynamic("showDisplayUnitLabel")(showDisplayUnitLabel)
+    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation)
+    if (tickLabelPosition != null) __obj.updateDynamic("tickLabelPosition")(tickLabelPosition.asInstanceOf[js.Any])
+    if (tickLabelSpacing != null) __obj.updateDynamic("tickLabelSpacing")(tickLabelSpacing)
+    if (tickMarkSpacing != null) __obj.updateDynamic("tickMarkSpacing")(tickMarkSpacing.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ChartAxisUpdateData]
+  }
+}
+

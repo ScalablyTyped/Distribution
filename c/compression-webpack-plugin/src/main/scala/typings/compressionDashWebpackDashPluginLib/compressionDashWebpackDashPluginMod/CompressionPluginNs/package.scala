@@ -13,8 +13,5 @@ package object CompressionPluginNs {
     scala.Unit
   ]
   type AlgorithmCallback = js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  type Options[O] = ZlibOptions | CustomOptions[O]
   type Pattern = java.lang.String | stdLib.RegExp | js.Array[stdLib.RegExp] | js.Array[java.lang.String]
-  // NOTE: These are the async compression algorithms on the zlib object.
-  type ZlibAlgorithm = compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginLibStrings.deflate | compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginLibStrings.deflateRaw | compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginLibStrings.gzip
 }

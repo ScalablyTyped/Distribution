@@ -52,3 +52,30 @@ trait ASPxClientDashboardItemVisualInteractivityEventArgs extends ASPxClientEven
   def SetTargetAxes(targetAxes: js.Array[java.lang.String]): scala.Unit
 }
 
+object ASPxClientDashboardItemVisualInteractivityEventArgs {
+  @scala.inline
+  def apply(
+    EnableHighlighting: js.Function1[scala.Boolean, scala.Unit],
+    GetDefaultSelection: js.Function0[js.Array[ASPxClientDashboardItemDataAxisPointTuple]],
+    GetSelectionMode: js.Function0[java.lang.String],
+    GetTargetAxes: js.Function0[js.Array[java.lang.String]],
+    IsHighlightingEnabled: js.Function0[scala.Boolean],
+    ItemName: java.lang.String,
+    SetDefaultSelection: js.Function1[js.Array[ASPxClientDashboardItemDataAxisPointTuple], scala.Unit],
+    SetSelectionMode: js.Function1[java.lang.String, scala.Unit],
+    SetTargetAxes: js.Function1[js.Array[java.lang.String], scala.Unit]
+  ): ASPxClientDashboardItemVisualInteractivityEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EnableHighlighting")(EnableHighlighting)
+    __obj.updateDynamic("GetDefaultSelection")(GetDefaultSelection)
+    __obj.updateDynamic("GetSelectionMode")(GetSelectionMode)
+    __obj.updateDynamic("GetTargetAxes")(GetTargetAxes)
+    __obj.updateDynamic("IsHighlightingEnabled")(IsHighlightingEnabled)
+    __obj.updateDynamic("ItemName")(ItemName)
+    __obj.updateDynamic("SetDefaultSelection")(SetDefaultSelection)
+    __obj.updateDynamic("SetSelectionMode")(SetSelectionMode)
+    __obj.updateDynamic("SetTargetAxes")(SetTargetAxes)
+    __obj.asInstanceOf[ASPxClientDashboardItemVisualInteractivityEventArgs]
+  }
+}
+

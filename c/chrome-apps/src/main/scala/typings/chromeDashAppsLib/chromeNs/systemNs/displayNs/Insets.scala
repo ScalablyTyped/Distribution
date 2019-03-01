@@ -16,3 +16,20 @@ trait Insets extends js.Object {
   var top: chromeDashAppsLib.chromeNs.integer
 }
 
+object Insets {
+  @scala.inline
+  def apply(
+    bottom: chromeDashAppsLib.chromeNs.integer,
+    left: chromeDashAppsLib.chromeNs.integer,
+    right: chromeDashAppsLib.chromeNs.integer,
+    top: chromeDashAppsLib.chromeNs.integer
+  ): Insets = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottom")(bottom)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("right")(right)
+    __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[Insets]
+  }
+}
+

@@ -24,3 +24,20 @@ trait ButtonGroupProps extends js.Object {
   var showSelectedOnlyBtn: reactLib.reactMod.ReactNs.ReactElement[_]
 }
 
+object ButtonGroupProps {
+  @scala.inline
+  def apply(
+    deleteBtn: reactLib.reactMod.ReactNs.ReactElement[_],
+    exportCSVBtn: reactLib.reactMod.ReactNs.ReactElement[_],
+    insertBtn: reactLib.reactMod.ReactNs.ReactElement[_],
+    showSelectedOnlyBtn: reactLib.reactMod.ReactNs.ReactElement[_]
+  ): ButtonGroupProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deleteBtn")(deleteBtn)
+    __obj.updateDynamic("exportCSVBtn")(exportCSVBtn)
+    __obj.updateDynamic("insertBtn")(insertBtn)
+    __obj.updateDynamic("showSelectedOnlyBtn")(showSelectedOnlyBtn)
+    __obj.asInstanceOf[ButtonGroupProps]
+  }
+}
+

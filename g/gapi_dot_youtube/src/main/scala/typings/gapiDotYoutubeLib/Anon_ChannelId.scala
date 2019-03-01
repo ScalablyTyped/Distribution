@@ -44,3 +44,30 @@ trait Anon_ChannelId extends js.Object {
   var regionCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ChannelId {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    channelId: java.lang.String = null,
+    home: js.UndefOr[scala.Boolean] = js.undefined,
+    maxResults: scala.Int | scala.Double = null,
+    mine: js.UndefOr[scala.Boolean] = js.undefined,
+    pageToken: java.lang.String = null,
+    publishedAfter: java.lang.String = null,
+    publishedBefore: java.lang.String = null,
+    regionCode: java.lang.String = null
+  ): Anon_ChannelId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (!js.isUndefined(home)) __obj.updateDynamic("home")(home)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (publishedAfter != null) __obj.updateDynamic("publishedAfter")(publishedAfter)
+    if (publishedBefore != null) __obj.updateDynamic("publishedBefore")(publishedBefore)
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
+    __obj.asInstanceOf[Anon_ChannelId]
+  }
+}
+

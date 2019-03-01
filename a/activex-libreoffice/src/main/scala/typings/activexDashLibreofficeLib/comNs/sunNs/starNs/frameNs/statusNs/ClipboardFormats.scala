@@ -16,3 +16,16 @@ trait ClipboardFormats extends js.Object {
   var Names: activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object ClipboardFormats {
+  @scala.inline
+  def apply(
+    Identifiers: activexDashInteropLib.SafeArray[scala.Double],
+    Names: activexDashInteropLib.SafeArray[java.lang.String]
+  ): ClipboardFormats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Identifiers")(Identifiers)
+    __obj.updateDynamic("Names")(Names)
+    __obj.asInstanceOf[ClipboardFormats]
+  }
+}
+

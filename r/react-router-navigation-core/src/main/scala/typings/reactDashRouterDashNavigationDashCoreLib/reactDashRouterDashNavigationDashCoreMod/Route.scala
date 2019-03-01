@@ -11,3 +11,18 @@ trait Route[T] extends js.Object {
   var routeName: java.lang.String
 }
 
+object Route {
+  @scala.inline
+  def apply[T](
+    key: java.lang.String,
+    routeName: java.lang.String,
+    `match`: reactDashRouterLib.reactDashRouterMod.`match`[T] = null
+  ): Route[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("routeName")(routeName)
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    __obj.asInstanceOf[Route[T]]
+  }
+}
+

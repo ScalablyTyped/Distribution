@@ -11,7 +11,7 @@ trait ojTextArea
   var converter: atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter | scala.Null = js.native
   var onConverterChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['converter'] */ js.Any
+      atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter | scala.Null
     ], 
     _
   ]) | scala.Null = js.native
@@ -20,50 +20,48 @@ trait ojTextArea
   @JSName("onOjAnimateStart")
   var onOjAnimateStart_ojTextArea: (js.Function1[/* event */ atOracleOraclejetLib.ojinputtextMod.ojTextAreaNs.ojAnimateStart, _]) | scala.Null = js.native
   var onRowsChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['rows'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double], 
     _
   ]) | scala.Null = js.native
   var rows: scala.Double = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_converterChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.converterChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['converter'] */ js.Any
+        atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter | scala.Null
       ], 
       _
     ]
   ): scala.Unit = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_converterChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.converterChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['converter'] */ js.Any
+        atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter | scala.Null
       ], 
       _
     ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_rowsChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rowsChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['rows'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double], 
       _
     ]
   ): scala.Unit = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_rowsChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rowsChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['rows'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double], 
       _
     ],
     useCapture: scala.Boolean

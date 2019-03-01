@@ -28,3 +28,20 @@ trait MountTargetArgs extends js.Object {
   val subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object MountTargetArgs {
+  @scala.inline
+  def apply(
+    fileSystemId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    ipAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): MountTargetArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileSystemId")(fileSystemId.asInstanceOf[js.Any])
+    __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MountTargetArgs]
+  }
+}
+

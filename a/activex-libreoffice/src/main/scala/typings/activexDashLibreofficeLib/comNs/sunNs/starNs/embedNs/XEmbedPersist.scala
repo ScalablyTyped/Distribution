@@ -102,3 +102,61 @@ trait XEmbedPersist extends XCommonEmbedPersist {
   ): scala.Unit
 }
 
+object XEmbedPersist {
+  @scala.inline
+  def apply(
+    EntryName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getEntryName: js.Function0[java.lang.String],
+    hasEntry: js.Function0[scala.Boolean],
+    isReadonly: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    reload: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    saveCompleted: js.Function1[scala.Boolean, scala.Unit],
+    setPersistentEntry: js.Function5[
+      XStorage, 
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    storeAsEntry: js.Function4[
+      XStorage, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    storeOwn: js.Function0[scala.Unit],
+    storeToEntry: js.Function4[
+      XStorage, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XEmbedPersist = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EntryName")(EntryName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getEntryName")(getEntryName)
+    __obj.updateDynamic("hasEntry")(hasEntry)
+    __obj.updateDynamic("isReadonly")(isReadonly)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("reload")(reload)
+    __obj.updateDynamic("saveCompleted")(saveCompleted)
+    __obj.updateDynamic("setPersistentEntry")(setPersistentEntry)
+    __obj.updateDynamic("storeAsEntry")(storeAsEntry)
+    __obj.updateDynamic("storeOwn")(storeOwn)
+    __obj.updateDynamic("storeToEntry")(storeToEntry)
+    __obj.asInstanceOf[XEmbedPersist]
+  }
+}
+

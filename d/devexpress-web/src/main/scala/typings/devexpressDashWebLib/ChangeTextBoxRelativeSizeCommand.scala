@@ -20,3 +20,13 @@ trait ChangeTextBoxRelativeSizeCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeTextBoxRelativeSizeCommand {
+  @scala.inline
+  def apply(execute: js.Function1[TextBoxRelativeSizeSettings, scala.Boolean], getState: js.Function0[js.Any]): ChangeTextBoxRelativeSizeCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeTextBoxRelativeSizeCommand]
+  }
+}
+

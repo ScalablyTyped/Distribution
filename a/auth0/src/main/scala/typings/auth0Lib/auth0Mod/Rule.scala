@@ -32,3 +32,24 @@ trait Rule extends js.Object {
   var stage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Rule {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    order: scala.Int | scala.Double = null,
+    script: java.lang.String = null,
+    stage: java.lang.String = null
+  ): Rule = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (script != null) __obj.updateDynamic("script")(script)
+    if (stage != null) __obj.updateDynamic("stage")(stage)
+    __obj.asInstanceOf[Rule]
+  }
+}
+

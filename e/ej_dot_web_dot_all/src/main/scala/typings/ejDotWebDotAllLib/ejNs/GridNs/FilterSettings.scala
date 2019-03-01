@@ -44,3 +44,30 @@ trait FilterSettings extends js.Object {
   var showPredicate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FilterSettings {
+  @scala.inline
+  def apply(
+    enableCaseSensitivity: js.UndefOr[scala.Boolean] = js.undefined,
+    enableInterDeterminateState: js.UndefOr[scala.Boolean] = js.undefined,
+    filterBarMode: FilterBarMode | java.lang.String = null,
+    filterType: FilterType | java.lang.String = null,
+    filteredColumns: js.Array[FilterSettingsFilteredColumn] = null,
+    immediateModeDelay: scala.Int | scala.Double = null,
+    maxFilterChoices: scala.Int | scala.Double = null,
+    showFilterBarStatus: js.UndefOr[scala.Boolean] = js.undefined,
+    showPredicate: js.UndefOr[scala.Boolean] = js.undefined
+  ): FilterSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableCaseSensitivity)) __obj.updateDynamic("enableCaseSensitivity")(enableCaseSensitivity)
+    if (!js.isUndefined(enableInterDeterminateState)) __obj.updateDynamic("enableInterDeterminateState")(enableInterDeterminateState)
+    if (filterBarMode != null) __obj.updateDynamic("filterBarMode")(filterBarMode.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (filteredColumns != null) __obj.updateDynamic("filteredColumns")(filteredColumns)
+    if (immediateModeDelay != null) __obj.updateDynamic("immediateModeDelay")(immediateModeDelay.asInstanceOf[js.Any])
+    if (maxFilterChoices != null) __obj.updateDynamic("maxFilterChoices")(maxFilterChoices.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFilterBarStatus)) __obj.updateDynamic("showFilterBarStatus")(showFilterBarStatus)
+    if (!js.isUndefined(showPredicate)) __obj.updateDynamic("showPredicate")(showPredicate)
+    __obj.asInstanceOf[FilterSettings]
+  }
+}
+

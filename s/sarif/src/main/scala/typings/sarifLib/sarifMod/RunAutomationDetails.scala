@@ -30,3 +30,22 @@ trait RunAutomationDetails extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object RunAutomationDetails {
+  @scala.inline
+  def apply(
+    correlationGuid: java.lang.String = null,
+    description: Message = null,
+    instanceGuid: java.lang.String = null,
+    instanceId: java.lang.String = null,
+    properties: PropertyBag = null
+  ): RunAutomationDetails = {
+    val __obj = js.Dynamic.literal()
+    if (correlationGuid != null) __obj.updateDynamic("correlationGuid")(correlationGuid)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (instanceGuid != null) __obj.updateDynamic("instanceGuid")(instanceGuid)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[RunAutomationDetails]
+  }
+}
+

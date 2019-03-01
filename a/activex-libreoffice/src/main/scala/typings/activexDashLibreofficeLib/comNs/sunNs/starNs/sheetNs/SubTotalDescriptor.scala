@@ -41,3 +41,88 @@ trait SubTotalDescriptor
   var UserSortListIndex: scala.Double
 }
 
+object SubTotalDescriptor {
+  @scala.inline
+  def apply(
+    BindFormatsToContent: scala.Boolean,
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    EnableSort: scala.Boolean,
+    EnableUserSortList: scala.Boolean,
+    InsertPageBreaks: scala.Boolean,
+    IsCaseSensitive: scala.Boolean,
+    MaxFieldCount: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    SortAscending: scala.Boolean,
+    UserSortListIndex: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addNew: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[SubTotalColumn], 
+      scala.Double, 
+      scala.Unit
+    ],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    clear: js.Function0[scala.Unit],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): SubTotalDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BindFormatsToContent")(BindFormatsToContent)
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("EnableSort")(EnableSort)
+    __obj.updateDynamic("EnableUserSortList")(EnableUserSortList)
+    __obj.updateDynamic("InsertPageBreaks")(InsertPageBreaks)
+    __obj.updateDynamic("IsCaseSensitive")(IsCaseSensitive)
+    __obj.updateDynamic("MaxFieldCount")(MaxFieldCount)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("SortAscending")(SortAscending)
+    __obj.updateDynamic("UserSortListIndex")(UserSortListIndex)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addNew")(addNew)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("createEnumeration")(createEnumeration)
+    __obj.updateDynamic("getByIndex")(getByIndex)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[SubTotalDescriptor]
+  }
+}
+

@@ -17,3 +17,30 @@ trait GradientCondition extends js.Object {
   def getMinValue(): java.lang.String
 }
 
+object GradientCondition {
+  @scala.inline
+  def apply(
+    getMaxColor: js.Function0[java.lang.String],
+    getMaxType: js.Function0[InterpolationType],
+    getMaxValue: js.Function0[java.lang.String],
+    getMidColor: js.Function0[java.lang.String],
+    getMidType: js.Function0[InterpolationType],
+    getMidValue: js.Function0[java.lang.String],
+    getMinColor: js.Function0[java.lang.String],
+    getMinType: js.Function0[InterpolationType],
+    getMinValue: js.Function0[java.lang.String]
+  ): GradientCondition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getMaxColor")(getMaxColor)
+    __obj.updateDynamic("getMaxType")(getMaxType)
+    __obj.updateDynamic("getMaxValue")(getMaxValue)
+    __obj.updateDynamic("getMidColor")(getMidColor)
+    __obj.updateDynamic("getMidType")(getMidType)
+    __obj.updateDynamic("getMidValue")(getMidValue)
+    __obj.updateDynamic("getMinColor")(getMinColor)
+    __obj.updateDynamic("getMinType")(getMinType)
+    __obj.updateDynamic("getMinValue")(getMinValue)
+    __obj.asInstanceOf[GradientCondition]
+  }
+}
+

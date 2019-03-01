@@ -9,3 +9,12 @@ trait IEdgeGestureStatics extends js.Object {
   def getForCurrentView(): EdgeGesture
 }
 
+object IEdgeGestureStatics {
+  @scala.inline
+  def apply(getForCurrentView: js.Function0[EdgeGesture]): IEdgeGestureStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getForCurrentView")(getForCurrentView)
+    __obj.asInstanceOf[IEdgeGestureStatics]
+  }
+}
+

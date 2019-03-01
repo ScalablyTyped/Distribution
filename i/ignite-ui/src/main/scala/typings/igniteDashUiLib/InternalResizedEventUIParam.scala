@@ -12,3 +12,12 @@ trait InternalResizedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object InternalResizedEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null): InternalResizedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[InternalResizedEventUIParam]
+  }
+}
+

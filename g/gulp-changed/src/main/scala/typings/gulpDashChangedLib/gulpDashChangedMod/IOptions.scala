@@ -22,3 +22,14 @@ trait IOptions extends js.Object {
   var hasChanged: js.UndefOr[IComparator] = js.undefined
 }
 
+object IOptions {
+  @scala.inline
+  def apply(cwd: java.lang.String = null, extension: java.lang.String = null, hasChanged: IComparator = null): IOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (hasChanged != null) __obj.updateDynamic("hasChanged")(hasChanged)
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

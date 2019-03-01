@@ -10,3 +10,13 @@ trait Anon_First extends js.Object {
   var id: scala.Double
 }
 
+object Anon_First {
+  @scala.inline
+  def apply(first: java.lang.String, id: scala.Double): Anon_First = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[Anon_First]
+  }
+}
+

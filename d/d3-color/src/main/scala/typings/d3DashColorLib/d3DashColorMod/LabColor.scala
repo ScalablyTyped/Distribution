@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LabColor extends Color {
+trait LabColor
+  extends Color
+     with ColorSpaceObject {
   /**
     * Position between red/magenta and green typically in [-160, +160].
     */

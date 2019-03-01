@@ -27,3 +27,20 @@ trait INxLibraryDimensionDef extends js.Object {
   var qLabelExpression: java.lang.String
 }
 
+object INxLibraryDimensionDef {
+  @scala.inline
+  def apply(
+    qFieldDefs: js.Array[java.lang.String],
+    qFieldLabels: js.Array[java.lang.String],
+    qGrouping: NxGrpType,
+    qLabelExpression: java.lang.String
+  ): INxLibraryDimensionDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFieldDefs")(qFieldDefs)
+    __obj.updateDynamic("qFieldLabels")(qFieldLabels)
+    __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
+    __obj.updateDynamic("qLabelExpression")(qLabelExpression)
+    __obj.asInstanceOf[INxLibraryDimensionDef]
+  }
+}
+

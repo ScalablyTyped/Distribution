@@ -22,3 +22,14 @@ trait RequiredProviderOptions extends js.Object {
   var password: java.lang.String
 }
 
+object RequiredProviderOptions {
+  @scala.inline
+  def apply(clientId: java.lang.String, clientSecret: java.lang.String, password: java.lang.String): RequiredProviderOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("clientSecret")(clientSecret)
+    __obj.updateDynamic("password")(password)
+    __obj.asInstanceOf[RequiredProviderOptions]
+  }
+}
+

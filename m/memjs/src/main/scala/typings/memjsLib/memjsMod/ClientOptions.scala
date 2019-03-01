@@ -34,3 +34,22 @@ trait ClientOptions extends js.Object {
   var retry_delay: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    expires: scala.Int | scala.Double = null,
+    failoverTime: scala.Int | scala.Double = null,
+    logger: memjsLib.Anon_Args = null,
+    retries: scala.Int | scala.Double = null,
+    retry_delay: scala.Int | scala.Double = null
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (failoverTime != null) __obj.updateDynamic("failoverTime")(failoverTime.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (retry_delay != null) __obj.updateDynamic("retry_delay")(retry_delay.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

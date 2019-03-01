@@ -13,3 +13,22 @@ trait StockChartNavigatorCategoryAxisCrosshair extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StockChartNavigatorCategoryAxisCrosshair {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    tooltip: StockChartNavigatorCategoryAxisCrosshairTooltip = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): StockChartNavigatorCategoryAxisCrosshair = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StockChartNavigatorCategoryAxisCrosshair]
+  }
+}
+

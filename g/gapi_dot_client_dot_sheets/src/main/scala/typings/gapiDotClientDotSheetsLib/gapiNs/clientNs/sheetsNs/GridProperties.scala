@@ -18,3 +18,22 @@ trait GridProperties extends js.Object {
   var rowCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GridProperties {
+  @scala.inline
+  def apply(
+    columnCount: scala.Int | scala.Double = null,
+    frozenColumnCount: scala.Int | scala.Double = null,
+    frozenRowCount: scala.Int | scala.Double = null,
+    hideGridlines: js.UndefOr[scala.Boolean] = js.undefined,
+    rowCount: scala.Int | scala.Double = null
+  ): GridProperties = {
+    val __obj = js.Dynamic.literal()
+    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (frozenColumnCount != null) __obj.updateDynamic("frozenColumnCount")(frozenColumnCount.asInstanceOf[js.Any])
+    if (frozenRowCount != null) __obj.updateDynamic("frozenRowCount")(frozenRowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideGridlines)) __obj.updateDynamic("hideGridlines")(hideGridlines)
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridProperties]
+  }
+}
+

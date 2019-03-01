@@ -18,3 +18,18 @@ trait AnalyzeSentimentResponse extends js.Object {
   var sentences: js.UndefOr[js.Array[Sentence]] = js.undefined
 }
 
+object AnalyzeSentimentResponse {
+  @scala.inline
+  def apply(
+    documentSentiment: Sentiment = null,
+    language: java.lang.String = null,
+    sentences: js.Array[Sentence] = null
+  ): AnalyzeSentimentResponse = {
+    val __obj = js.Dynamic.literal()
+    if (documentSentiment != null) __obj.updateDynamic("documentSentiment")(documentSentiment)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (sentences != null) __obj.updateDynamic("sentences")(sentences)
+    __obj.asInstanceOf[AnalyzeSentimentResponse]
+  }
+}
+

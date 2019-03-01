@@ -11,3 +11,14 @@ trait DPlayerVideoQuality extends js.Object {
   var url: java.lang.String
 }
 
+object DPlayerVideoQuality {
+  @scala.inline
+  def apply(name: java.lang.String, url: java.lang.String, `type`: java.lang.String = null): DPlayerVideoQuality = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("url")(url)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DPlayerVideoQuality]
+  }
+}
+

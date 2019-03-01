@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object nodeDashZopfliLibStrings {
   @js.native
-  sealed trait deflate extends js.Object
+  sealed trait deflate
+    extends nodeDashZopfliLib.nodeDashZopfliMod.ZopfliNs.Format
   
   @js.native
-  sealed trait gzip extends js.Object
+  sealed trait gzip
+    extends nodeDashZopfliLib.nodeDashZopfliMod.ZopfliNs.Format
   
   @js.native
-  sealed trait zlib extends js.Object
+  sealed trait zlib
+    extends nodeDashZopfliLib.nodeDashZopfliMod.ZopfliNs.Format
   
   @scala.inline
   def deflate: deflate = "deflate".asInstanceOf[deflate]

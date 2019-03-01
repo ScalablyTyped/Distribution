@@ -21,3 +21,15 @@ trait OnGetListData extends js.Object {
   var value: java.lang.String
 }
 
+object OnGetListData {
+  @scala.inline
+  def apply(area: js.Array[_], key: java.lang.String, options: AreaRenderingOptions, value: java.lang.String): OnGetListData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("area")(area)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[OnGetListData]
+  }
+}
+

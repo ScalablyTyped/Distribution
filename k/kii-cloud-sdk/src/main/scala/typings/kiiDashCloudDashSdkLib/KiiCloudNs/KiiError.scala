@@ -11,3 +11,14 @@ trait KiiError extends js.Object {
   var status: scala.Double
 }
 
+object KiiError {
+  @scala.inline
+  def apply(code: java.lang.String, message: java.lang.String, status: scala.Double): KiiError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[KiiError]
+  }
+}
+

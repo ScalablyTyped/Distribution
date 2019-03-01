@@ -44,3 +44,63 @@ trait XSheetCellRangeContainer extends XSheetCellRanges {
   ): scala.Unit
 }
 
+object XSheetCellRangeContainer {
+  @scala.inline
+  def apply(
+    Cells: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    RangeAddresses: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    RangeAddressesAsString: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addRangeAddress: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    addRangeAddresses: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress], 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCells: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getRangeAddresses: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+    ],
+    getRangeAddressesAsString: js.Function0[java.lang.String],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeRangeAddress: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
+    removeRangeAddresses: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress], 
+      scala.Unit
+    ]
+  ): XSheetCellRangeContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cells")(Cells)
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("RangeAddresses")(RangeAddresses)
+    __obj.updateDynamic("RangeAddressesAsString")(RangeAddressesAsString)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addRangeAddress")(addRangeAddress)
+    __obj.updateDynamic("addRangeAddresses")(addRangeAddresses)
+    __obj.updateDynamic("getByIndex")(getByIndex)
+    __obj.updateDynamic("getCells")(getCells)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getRangeAddresses")(getRangeAddresses)
+    __obj.updateDynamic("getRangeAddressesAsString")(getRangeAddressesAsString)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeRangeAddress")(removeRangeAddress)
+    __obj.updateDynamic("removeRangeAddresses")(removeRangeAddresses)
+    __obj.asInstanceOf[XSheetCellRangeContainer]
+  }
+}
+

@@ -30,3 +30,18 @@ trait ChartLegendFormatLoadOptions extends js.Object {
   var font: js.UndefOr[ChartFontLoadOptions] = js.undefined
 }
 
+object ChartLegendFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    border: ChartBorderLoadOptions = null,
+    font: ChartFontLoadOptions = null
+  ): ChartLegendFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (font != null) __obj.updateDynamic("font")(font)
+    __obj.asInstanceOf[ChartLegendFormatLoadOptions]
+  }
+}
+

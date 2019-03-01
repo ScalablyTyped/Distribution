@@ -44,3 +44,36 @@ trait CellSelectedEventArgs extends js.Object {
   var targetRow: js.UndefOr[js.Any] = js.undefined
 }
 
+object CellSelectedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cellIndex: scala.Int | scala.Double = null,
+    data: js.Any = null,
+    model: js.Any = null,
+    previousCellIndex: js.Any = null,
+    previousData: js.Any = null,
+    previousRowIndex: js.Any = null,
+    previousTargetCell: js.Any = null,
+    previousTargetRow: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null,
+    targetCell: js.Any = null,
+    targetRow: js.Any = null
+  ): CellSelectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (previousCellIndex != null) __obj.updateDynamic("previousCellIndex")(previousCellIndex)
+    if (previousData != null) __obj.updateDynamic("previousData")(previousData)
+    if (previousRowIndex != null) __obj.updateDynamic("previousRowIndex")(previousRowIndex)
+    if (previousTargetCell != null) __obj.updateDynamic("previousTargetCell")(previousTargetCell)
+    if (previousTargetRow != null) __obj.updateDynamic("previousTargetRow")(previousTargetRow)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (targetCell != null) __obj.updateDynamic("targetCell")(targetCell)
+    if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow)
+    __obj.asInstanceOf[CellSelectedEventArgs]
+  }
+}
+

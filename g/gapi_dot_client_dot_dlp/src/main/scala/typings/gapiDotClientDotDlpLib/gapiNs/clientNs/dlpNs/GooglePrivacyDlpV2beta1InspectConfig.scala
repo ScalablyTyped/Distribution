@@ -27,3 +27,24 @@ trait GooglePrivacyDlpV2beta1InspectConfig extends js.Object {
   var minLikelihood: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1InspectConfig {
+  @scala.inline
+  def apply(
+    excludeTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    includeQuote: js.UndefOr[scala.Boolean] = js.undefined,
+    infoTypeLimits: js.Array[GooglePrivacyDlpV2beta1InfoTypeLimit] = null,
+    infoTypes: js.Array[GooglePrivacyDlpV2beta1InfoType] = null,
+    maxFindings: scala.Int | scala.Double = null,
+    minLikelihood: java.lang.String = null
+  ): GooglePrivacyDlpV2beta1InspectConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(excludeTypes)) __obj.updateDynamic("excludeTypes")(excludeTypes)
+    if (!js.isUndefined(includeQuote)) __obj.updateDynamic("includeQuote")(includeQuote)
+    if (infoTypeLimits != null) __obj.updateDynamic("infoTypeLimits")(infoTypeLimits)
+    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes)
+    if (maxFindings != null) __obj.updateDynamic("maxFindings")(maxFindings.asInstanceOf[js.Any])
+    if (minLikelihood != null) __obj.updateDynamic("minLikelihood")(minLikelihood)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectConfig]
+  }
+}
+

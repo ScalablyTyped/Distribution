@@ -13,3 +13,22 @@ trait ValidateCallback[FormData, P, ErrorType] extends js.Object {
   var values: FormData
 }
 
+object ValidateCallback {
+  @scala.inline
+  def apply[FormData, P, ErrorType](
+    initialRender: scala.Boolean,
+    nextProps: P with (InjectedFormProps[FormData, P, ErrorType]),
+    props: P with (InjectedFormProps[FormData, P, ErrorType]),
+    structure: js.Any,
+    values: FormData
+  ): ValidateCallback[FormData, P, ErrorType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("initialRender")(initialRender)
+    __obj.updateDynamic("nextProps")(nextProps.asInstanceOf[js.Any])
+    __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    __obj.updateDynamic("structure")(structure)
+    __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValidateCallback[FormData, P, ErrorType]]
+  }
+}
+

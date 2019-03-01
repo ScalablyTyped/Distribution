@@ -10,3 +10,13 @@ trait EditResponseCookie extends js.Object {
   var modification: ResponseCookie
 }
 
+object EditResponseCookie {
+  @scala.inline
+  def apply(filter: ResponseCookie, modification: ResponseCookie): EditResponseCookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("modification")(modification)
+    __obj.asInstanceOf[EditResponseCookie]
+  }
+}
+

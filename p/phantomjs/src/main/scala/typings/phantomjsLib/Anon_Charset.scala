@@ -10,3 +10,13 @@ trait Anon_Charset extends js.Object {
   var mode: java.lang.String
 }
 
+object Anon_Charset {
+  @scala.inline
+  def apply(mode: java.lang.String, charset: java.lang.String = null): Anon_Charset = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mode")(mode)
+    if (charset != null) __obj.updateDynamic("charset")(charset)
+    __obj.asInstanceOf[Anon_Charset]
+  }
+}
+

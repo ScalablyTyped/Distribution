@@ -25,3 +25,18 @@ trait ResultSet extends js.Object {
   var stats: js.UndefOr[ResultSetStats] = js.undefined
 }
 
+object ResultSet {
+  @scala.inline
+  def apply(
+    metadata: ResultSetMetadata = null,
+    rows: js.Array[js.Array[_]] = null,
+    stats: ResultSetStats = null
+  ): ResultSet = {
+    val __obj = js.Dynamic.literal()
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (stats != null) __obj.updateDynamic("stats")(stats)
+    __obj.asInstanceOf[ResultSet]
+  }
+}
+

@@ -19,3 +19,18 @@ trait IndicatorsHistogram extends js.Object {
   var opacity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IndicatorsHistogram {
+  @scala.inline
+  def apply(
+    border: IndicatorsHistogramBorder = null,
+    fill: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null
+  ): IndicatorsHistogram = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IndicatorsHistogram]
+  }
+}
+

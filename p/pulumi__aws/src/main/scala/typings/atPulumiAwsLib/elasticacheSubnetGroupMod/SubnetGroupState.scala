@@ -22,3 +22,18 @@ trait SubnetGroupState extends js.Object {
   ] = js.undefined
 }
 
+object SubnetGroupState {
+  @scala.inline
+  def apply(
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): SubnetGroupState = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SubnetGroupState]
+  }
+}
+

@@ -20,3 +20,18 @@ trait KeyPairArgs extends js.Object {
   val publicKey: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object KeyPairArgs {
+  @scala.inline
+  def apply(
+    publicKey: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    keyName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyNamePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): KeyPairArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
+    if (keyNamePrefix != null) __obj.updateDynamic("keyNamePrefix")(keyNamePrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyPairArgs]
+  }
+}
+

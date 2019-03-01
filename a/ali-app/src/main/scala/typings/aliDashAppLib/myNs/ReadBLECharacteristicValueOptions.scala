@@ -23,3 +23,24 @@ trait ReadBLECharacteristicValueOptions
   def success_MReadBLECharacteristicValueOptions(res: aliDashAppLib.Anon_Characteristic with ErrMsgResponse): scala.Unit
 }
 
+object ReadBLECharacteristicValueOptions {
+  @scala.inline
+  def apply(
+    characteristicId: java.lang.String,
+    deviceId: java.lang.String,
+    serviceId: java.lang.String,
+    success: js.Function1[aliDashAppLib.Anon_Characteristic with ErrMsgResponse, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): ReadBLECharacteristicValueOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("characteristicId")(characteristicId)
+    __obj.updateDynamic("deviceId")(deviceId)
+    __obj.updateDynamic("serviceId")(serviceId)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[ReadBLECharacteristicValueOptions]
+  }
+}
+

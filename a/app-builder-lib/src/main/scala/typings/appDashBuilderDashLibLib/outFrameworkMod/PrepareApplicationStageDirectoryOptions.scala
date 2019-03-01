@@ -16,3 +16,22 @@ trait PrepareApplicationStageDirectoryOptions extends js.Object {
   val version: java.lang.String
 }
 
+object PrepareApplicationStageDirectoryOptions {
+  @scala.inline
+  def apply(
+    appOutDir: java.lang.String,
+    arch: java.lang.String,
+    packager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformPackager<any> */ js.Any,
+    platformName: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ElectronPlatformName */ js.Any,
+    version: java.lang.String
+  ): PrepareApplicationStageDirectoryOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appOutDir")(appOutDir)
+    __obj.updateDynamic("arch")(arch)
+    __obj.updateDynamic("packager")(packager)
+    __obj.updateDynamic("platformName")(platformName)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PrepareApplicationStageDirectoryOptions]
+  }
+}
+

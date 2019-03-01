@@ -22,3 +22,30 @@ trait HttpConnector extends js.Object {
   ): scala.Unit
 }
 
+object HttpConnector {
+  @scala.inline
+  def apply(
+    createAgent: js.Function1[js.Any, js.Any],
+    makeAgentConfig: js.Function1[js.Any, js.Any],
+    makeReqParams: js.Function1[js.Any, js.Any],
+    request: js.Function2[
+      js.Any, 
+      js.Function4[
+        /* error */ js.Any, 
+        /* response */ js.Any, 
+        /* status */ js.Any, 
+        /* headers */ js.Any, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): HttpConnector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createAgent")(createAgent)
+    __obj.updateDynamic("makeAgentConfig")(makeAgentConfig)
+    __obj.updateDynamic("makeReqParams")(makeReqParams)
+    __obj.updateDynamic("request")(request)
+    __obj.asInstanceOf[HttpConnector]
+  }
+}
+

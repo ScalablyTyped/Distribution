@@ -21,3 +21,22 @@ trait OpenCommandArgument2 extends OpenCommandArgument {
   var SortingInfo: activexDashInteropLib.SafeArray[NumberedSortingInfo]
 }
 
+object OpenCommandArgument2 {
+  @scala.inline
+  def apply(
+    Mode: scala.Double,
+    Priority: scala.Double,
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    SortingInfo: activexDashInteropLib.SafeArray[NumberedSortingInfo]
+  ): OpenCommandArgument2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Mode")(Mode)
+    __obj.updateDynamic("Priority")(Priority)
+    __obj.updateDynamic("Properties")(Properties)
+    __obj.updateDynamic("Sink")(Sink)
+    __obj.updateDynamic("SortingInfo")(SortingInfo)
+    __obj.asInstanceOf[OpenCommandArgument2]
+  }
+}
+

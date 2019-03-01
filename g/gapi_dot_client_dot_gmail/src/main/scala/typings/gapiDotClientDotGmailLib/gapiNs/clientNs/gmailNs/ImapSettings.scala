@@ -22,3 +22,20 @@ trait ImapSettings extends js.Object {
   var maxFolderSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImapSettings {
+  @scala.inline
+  def apply(
+    autoExpunge: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    expungeBehavior: java.lang.String = null,
+    maxFolderSize: scala.Int | scala.Double = null
+  ): ImapSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoExpunge)) __obj.updateDynamic("autoExpunge")(autoExpunge)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (expungeBehavior != null) __obj.updateDynamic("expungeBehavior")(expungeBehavior)
+    if (maxFolderSize != null) __obj.updateDynamic("maxFolderSize")(maxFolderSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImapSettings]
+  }
+}
+

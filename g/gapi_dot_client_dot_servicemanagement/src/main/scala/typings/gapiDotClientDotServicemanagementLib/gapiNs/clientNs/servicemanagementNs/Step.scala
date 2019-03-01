@@ -12,3 +12,13 @@ trait Step extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Step {
+  @scala.inline
+  def apply(description: java.lang.String = null, status: java.lang.String = null): Step = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Step]
+  }
+}
+

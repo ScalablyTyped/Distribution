@@ -24,3 +24,20 @@ trait AccountArgs extends js.Object {
   val roleName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object AccountArgs {
+  @scala.inline
+  def apply(
+    email: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    iamUserAccessToBilling: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    roleName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AccountArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (iamUserAccessToBilling != null) __obj.updateDynamic("iamUserAccessToBilling")(iamUserAccessToBilling.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccountArgs]
+  }
+}
+

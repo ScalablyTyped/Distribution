@@ -16,3 +16,16 @@ trait LogResourcePolicyState extends js.Object {
   val policyName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object LogResourcePolicyState {
+  @scala.inline
+  def apply(
+    policyDocument: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policyName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): LogResourcePolicyState = {
+    val __obj = js.Dynamic.literal()
+    if (policyDocument != null) __obj.updateDynamic("policyDocument")(policyDocument.asInstanceOf[js.Any])
+    if (policyName != null) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogResourcePolicyState]
+  }
+}
+

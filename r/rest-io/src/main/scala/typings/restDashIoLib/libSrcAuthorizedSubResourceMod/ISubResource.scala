@@ -12,3 +12,20 @@ trait ISubResource extends js.Object {
   var populate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ISubResource {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    parentResource: restDashIoLib.libSrcResourceMod.Resource,
+    plural: java.lang.String = null,
+    populate: java.lang.String = null
+  ): ISubResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parentResource")(parentResource)
+    if (plural != null) __obj.updateDynamic("plural")(plural)
+    if (populate != null) __obj.updateDynamic("populate")(populate)
+    __obj.asInstanceOf[ISubResource]
+  }
+}
+

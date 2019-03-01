@@ -19,3 +19,18 @@ trait IMenuButton
   ] = js.undefined
 }
 
+object IMenuButton {
+  @scala.inline
+  def apply(
+    IButton: senchaUnderscoreTouchLib.ExtNs.IButton = null,
+    getMenuItems: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    setMenuItems: js.Function1[/* menuItems */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null
+  ): IMenuButton = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IButton)
+    if (getMenuItems != null) __obj.updateDynamic("getMenuItems")(getMenuItems)
+    if (setMenuItems != null) __obj.updateDynamic("setMenuItems")(setMenuItems)
+    __obj.asInstanceOf[IMenuButton]
+  }
+}
+

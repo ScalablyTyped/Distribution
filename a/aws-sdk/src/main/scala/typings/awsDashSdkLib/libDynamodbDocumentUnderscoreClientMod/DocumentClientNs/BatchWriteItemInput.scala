@@ -17,3 +17,18 @@ trait BatchWriteItemInput extends js.Object {
   var ReturnItemCollectionMetrics: js.UndefOr[ReturnItemCollectionMetrics] = js.undefined
 }
 
+object BatchWriteItemInput {
+  @scala.inline
+  def apply(
+    RequestItems: BatchWriteItemRequestMap,
+    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = null
+  ): BatchWriteItemInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RequestItems")(RequestItems)
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
+    if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BatchWriteItemInput]
+  }
+}
+

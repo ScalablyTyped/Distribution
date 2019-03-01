@@ -17,3 +17,22 @@ trait AuthenticationFallbackRequest
   var url: java.lang.String
 }
 
+object AuthenticationFallbackRequest {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    instructions: java.lang.String,
+    url: java.lang.String
+  ): AuthenticationFallbackRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Classification")(Classification)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("instructions")(instructions)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[AuthenticationFallbackRequest]
+  }
+}
+

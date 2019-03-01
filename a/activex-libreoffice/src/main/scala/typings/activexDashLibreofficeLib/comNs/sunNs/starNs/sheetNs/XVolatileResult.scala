@@ -18,3 +18,22 @@ trait XVolatileResult
   def removeResultListener(aListener: XResultListener): scala.Unit
 }
 
+object XVolatileResult {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addResultListener: js.Function1[XResultListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeResultListener: js.Function1[XResultListener, scala.Unit]
+  ): XVolatileResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addResultListener")(addResultListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeResultListener")(removeResultListener)
+    __obj.asInstanceOf[XVolatileResult]
+  }
+}
+

@@ -36,3 +36,20 @@ trait SubjectRulesReviewStatus extends js.Object {
   val resourceRules: js.Array[ResourceRule]
 }
 
+object SubjectRulesReviewStatus {
+  @scala.inline
+  def apply(
+    evaluationError: java.lang.String,
+    incomplete: scala.Boolean,
+    nonResourceRules: js.Array[NonResourceRule],
+    resourceRules: js.Array[ResourceRule]
+  ): SubjectRulesReviewStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("evaluationError")(evaluationError)
+    __obj.updateDynamic("incomplete")(incomplete)
+    __obj.updateDynamic("nonResourceRules")(nonResourceRules)
+    __obj.updateDynamic("resourceRules")(resourceRules)
+    __obj.asInstanceOf[SubjectRulesReviewStatus]
+  }
+}
+

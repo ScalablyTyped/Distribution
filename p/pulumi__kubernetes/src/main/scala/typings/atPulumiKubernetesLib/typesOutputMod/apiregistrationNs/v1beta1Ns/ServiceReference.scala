@@ -19,3 +19,13 @@ trait ServiceReference extends js.Object {
   val namespace: java.lang.String
 }
 
+object ServiceReference {
+  @scala.inline
+  def apply(name: java.lang.String, namespace: java.lang.String): ServiceReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.asInstanceOf[ServiceReference]
+  }
+}
+

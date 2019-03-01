@@ -34,3 +34,16 @@ trait XLSearch extends js.Object {
   ): scala.Unit
 }
 
+object XLSearch {
+  @scala.inline
+  def apply(
+    replaceAllByBook: js.Function4[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean, scala.Unit],
+    replaceAllBySheet: js.Function4[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean, scala.Unit]
+  ): XLSearch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("replaceAllByBook")(replaceAllByBook)
+    __obj.updateDynamic("replaceAllBySheet")(replaceAllBySheet)
+    __obj.asInstanceOf[XLSearch]
+  }
+}
+

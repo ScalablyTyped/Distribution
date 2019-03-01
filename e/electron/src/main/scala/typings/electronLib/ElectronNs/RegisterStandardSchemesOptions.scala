@@ -12,3 +12,12 @@ trait RegisterStandardSchemesOptions extends js.Object {
   var secure: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RegisterStandardSchemesOptions {
+  @scala.inline
+  def apply(secure: js.UndefOr[scala.Boolean] = js.undefined): RegisterStandardSchemesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    __obj.asInstanceOf[RegisterStandardSchemesOptions]
+  }
+}
+

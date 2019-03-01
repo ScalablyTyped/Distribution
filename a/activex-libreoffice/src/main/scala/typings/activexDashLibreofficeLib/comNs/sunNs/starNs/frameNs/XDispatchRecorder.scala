@@ -65,3 +65,38 @@ trait XDispatchRecorder
   def startRecording(Frame: XFrame): scala.Unit
 }
 
+object XDispatchRecorder {
+  @scala.inline
+  def apply(
+    RecordedMacro: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    endRecording: js.Function0[scala.Unit],
+    getRecordedMacro: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    recordDispatch: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    recordDispatchAsComment: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    startRecording: js.Function1[XFrame, scala.Unit]
+  ): XDispatchRecorder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RecordedMacro")(RecordedMacro)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("endRecording")(endRecording)
+    __obj.updateDynamic("getRecordedMacro")(getRecordedMacro)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("recordDispatch")(recordDispatch)
+    __obj.updateDynamic("recordDispatchAsComment")(recordDispatchAsComment)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("startRecording")(startRecording)
+    __obj.asInstanceOf[XDispatchRecorder]
+  }
+}
+

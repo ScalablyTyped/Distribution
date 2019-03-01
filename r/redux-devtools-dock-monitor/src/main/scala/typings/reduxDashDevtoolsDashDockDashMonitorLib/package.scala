@@ -1,9 +1,0 @@
-package typings
-
-import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-package object reduxDashDevtoolsDashDockDashMonitorLib {
-  type DockPosition = reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorLibStrings.left | reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorLibStrings.top | reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorLibStrings.right | reduxDashDevtoolsDashDockDashMonitorLib.reduxDashDevtoolsDashDockDashMonitorLibStrings.bottom
-}

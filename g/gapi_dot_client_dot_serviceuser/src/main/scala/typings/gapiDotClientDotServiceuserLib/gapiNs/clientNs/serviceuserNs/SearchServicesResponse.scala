@@ -15,3 +15,13 @@ trait SearchServicesResponse extends js.Object {
   var services: js.UndefOr[js.Array[PublishedService]] = js.undefined
 }
 
+object SearchServicesResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, services: js.Array[PublishedService] = null): SearchServicesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (services != null) __obj.updateDynamic("services")(services)
+    __obj.asInstanceOf[SearchServicesResponse]
+  }
+}
+

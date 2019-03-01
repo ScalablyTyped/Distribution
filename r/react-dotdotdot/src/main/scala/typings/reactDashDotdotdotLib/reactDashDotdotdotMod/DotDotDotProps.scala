@@ -15,3 +15,26 @@ trait DotDotDotProps extends js.Object {
   var useNativeClamp: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DotDotDotProps {
+  @scala.inline
+  def apply(
+    clamp: scala.Double | java.lang.String | scala.Boolean,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    splitOnChars: js.Array[java.lang.String] = null,
+    tagName: java.lang.String = null,
+    truncationChar: java.lang.String = null,
+    truncationHTML: java.lang.String = null,
+    useNativeClamp: js.UndefOr[scala.Boolean] = js.undefined
+  ): DotDotDotProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (splitOnChars != null) __obj.updateDynamic("splitOnChars")(splitOnChars)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (truncationChar != null) __obj.updateDynamic("truncationChar")(truncationChar)
+    if (truncationHTML != null) __obj.updateDynamic("truncationHTML")(truncationHTML)
+    if (!js.isUndefined(useNativeClamp)) __obj.updateDynamic("useNativeClamp")(useNativeClamp)
+    __obj.asInstanceOf[DotDotDotProps]
+  }
+}
+

@@ -53,3 +53,31 @@ trait KeyboardEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object KeyboardEvent {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    key: java.lang.String,
+    requestId: java.lang.String,
+    `type`: java.lang.String,
+    altKey: js.UndefOr[scala.Boolean] = js.undefined,
+    capsLock: js.UndefOr[scala.Boolean] = js.undefined,
+    ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
+    extensionId: java.lang.String = null,
+    keyCode: scala.Int | scala.Double = null,
+    shiftKey: js.UndefOr[scala.Boolean] = js.undefined
+  ): KeyboardEvent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("requestId")(requestId)
+    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
+    if (!js.isUndefined(capsLock)) __obj.updateDynamic("capsLock")(capsLock)
+    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey)
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey)
+    __obj.asInstanceOf[KeyboardEvent]
+  }
+}
+

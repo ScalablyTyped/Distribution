@@ -12,3 +12,14 @@ trait Anon_Base extends js.Object {
   var `type`: scala.Double
 }
 
+object Anon_Base {
+  @scala.inline
+  def apply(base: scala.Double, count: scala.Double, indexed: scala.Boolean, `type`: scala.Double): Anon_Base = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("base")(base)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("indexed")(indexed)
+    __obj.asInstanceOf[Anon_Base]
+  }
+}
+

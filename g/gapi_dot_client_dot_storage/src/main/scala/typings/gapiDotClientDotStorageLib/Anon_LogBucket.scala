@@ -12,3 +12,13 @@ trait Anon_LogBucket extends js.Object {
   var logObjectPrefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_LogBucket {
+  @scala.inline
+  def apply(logBucket: java.lang.String = null, logObjectPrefix: java.lang.String = null): Anon_LogBucket = {
+    val __obj = js.Dynamic.literal()
+    if (logBucket != null) __obj.updateDynamic("logBucket")(logBucket)
+    if (logObjectPrefix != null) __obj.updateDynamic("logObjectPrefix")(logObjectPrefix)
+    __obj.asInstanceOf[Anon_LogBucket]
+  }
+}
+

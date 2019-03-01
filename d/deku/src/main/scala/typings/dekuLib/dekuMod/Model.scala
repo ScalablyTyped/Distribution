@@ -13,3 +13,22 @@ trait Model extends js.Object {
   var props: js.UndefOr[js.Any] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    children: js.Array[_] = null,
+    context: js.Any = null,
+    dispatch: dekuLib.Dispatch = null,
+    path: java.lang.String = null,
+    props: js.Any = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (dispatch != null) __obj.updateDynamic("dispatch")(dispatch)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (props != null) __obj.updateDynamic("props")(props)
+    __obj.asInstanceOf[Model]
+  }
+}
+

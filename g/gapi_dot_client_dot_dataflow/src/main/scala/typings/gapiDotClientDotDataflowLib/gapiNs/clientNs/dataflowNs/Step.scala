@@ -21,3 +21,18 @@ trait Step extends js.Object {
   var properties: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object Step {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    properties: stdLib.Record[java.lang.String, _] = null
+  ): Step = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Step]
+  }
+}
+

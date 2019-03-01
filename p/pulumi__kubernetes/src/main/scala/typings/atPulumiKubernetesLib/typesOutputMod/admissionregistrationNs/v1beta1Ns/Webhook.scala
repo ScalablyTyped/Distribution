@@ -85,3 +85,24 @@ trait Webhook extends js.Object {
   val sideEffects: java.lang.String
 }
 
+object Webhook {
+  @scala.inline
+  def apply(
+    clientConfig: WebhookClientConfig,
+    failurePolicy: java.lang.String,
+    name: java.lang.String,
+    namespaceSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    rules: js.Array[RuleWithOperations],
+    sideEffects: java.lang.String
+  ): Webhook = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientConfig")(clientConfig)
+    __obj.updateDynamic("failurePolicy")(failurePolicy)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespaceSelector")(namespaceSelector)
+    __obj.updateDynamic("rules")(rules)
+    __obj.updateDynamic("sideEffects")(sideEffects)
+    __obj.asInstanceOf[Webhook]
+  }
+}
+

@@ -13,3 +13,16 @@ trait NgModuleProviderDef extends js.Object {
   var value: js.Any
 }
 
+object NgModuleProviderDef {
+  @scala.inline
+  def apply(deps: js.Array[DepDef], flags: NodeFlags, index: scala.Double, token: js.Any, value: js.Any): NgModuleProviderDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deps")(deps)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("token")(token)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[NgModuleProviderDef]
+  }
+}
+

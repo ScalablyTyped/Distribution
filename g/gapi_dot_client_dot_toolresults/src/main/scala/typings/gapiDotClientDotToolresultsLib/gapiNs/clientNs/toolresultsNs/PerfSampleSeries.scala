@@ -20,3 +20,24 @@ trait PerfSampleSeries extends js.Object {
   var stepId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PerfSampleSeries {
+  @scala.inline
+  def apply(
+    basicPerfSampleSeries: BasicPerfSampleSeries = null,
+    executionId: java.lang.String = null,
+    historyId: java.lang.String = null,
+    projectId: java.lang.String = null,
+    sampleSeriesId: java.lang.String = null,
+    stepId: java.lang.String = null
+  ): PerfSampleSeries = {
+    val __obj = js.Dynamic.literal()
+    if (basicPerfSampleSeries != null) __obj.updateDynamic("basicPerfSampleSeries")(basicPerfSampleSeries)
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (sampleSeriesId != null) __obj.updateDynamic("sampleSeriesId")(sampleSeriesId)
+    if (stepId != null) __obj.updateDynamic("stepId")(stepId)
+    __obj.asInstanceOf[PerfSampleSeries]
+  }
+}
+

@@ -11,3 +11,13 @@ trait EventHandlerOf[T, TSubs /* <: Subscribable[T] */] extends js.Object {
   def handler(value: T): scala.Unit
 }
 
+object EventHandlerOf {
+  @scala.inline
+  def apply[T, TSubs /* <: Subscribable[T] */](handler: js.Function1[T, scala.Unit], stream: TSubs): EventHandlerOf[T, TSubs] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handler")(handler)
+    __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventHandlerOf[T, TSubs]]
+  }
+}
+

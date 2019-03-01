@@ -18,3 +18,22 @@ trait Envelope extends js.Object {
   var use8BitMime: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Envelope {
+  @scala.inline
+  def apply(
+    from: java.lang.String | nodemailerLib.nodemailerLibNumbers.`false`,
+    to: java.lang.String | js.Array[java.lang.String],
+    dsn: DSNOptions = null,
+    size: scala.Int | scala.Double = null,
+    use8BitMime: js.UndefOr[scala.Boolean] = js.undefined
+  ): Envelope = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (dsn != null) __obj.updateDynamic("dsn")(dsn)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(use8BitMime)) __obj.updateDynamic("use8BitMime")(use8BitMime)
+    __obj.asInstanceOf[Envelope]
+  }
+}
+

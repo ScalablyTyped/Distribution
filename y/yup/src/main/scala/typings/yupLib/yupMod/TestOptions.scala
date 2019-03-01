@@ -28,3 +28,26 @@ trait TestOptions extends js.Object {
   def test(`this`: TestContext, value: js.Any): scala.Boolean | ValidationError | (js.Promise[scala.Boolean | ValidationError])
 }
 
+object TestOptions {
+  @scala.inline
+  def apply(
+    test: js.Function2[
+      TestContext, 
+      js.Any, 
+      scala.Boolean | ValidationError | (js.Promise[scala.Boolean | ValidationError])
+    ],
+    exclusive: js.UndefOr[scala.Boolean] = js.undefined,
+    message: TestOptionsMessage = null,
+    name: java.lang.String = null,
+    params: js.Object = null
+  ): TestOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("test")(test)
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[TestOptions]
+  }
+}
+

@@ -16,7 +16,6 @@ package object mongodbMod {
   type GridFSBucketErrorCallback = js.Function1[/* err */ js.UndefOr[MongoError], scala.Unit]
   type IteratorCallback[T] = js.Function1[/* doc */ T, scala.Unit]
   type MongoCallback[T] = js.Function2[/* error */ MongoError, /* result */ T, scala.Unit]
-  type ProfilingLevel = mongodbLib.mongodbLibStrings.off | mongodbLib.mongodbLibStrings.slow_only | mongodbLib.mongodbLibStrings.all
   type log = js.Function2[
     /* message */ js.UndefOr[java.lang.String], 
     /* state */ js.UndefOr[LoggerState], 

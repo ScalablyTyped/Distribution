@@ -18,3 +18,22 @@ trait Kernel extends js.Object {
   var width: scala.Double
 }
 
+object Kernel {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    kernel: stdLib.ArrayLike[scala.Double],
+    width: scala.Double,
+    offset: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null
+  ): Kernel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("kernel")(kernel)
+    __obj.updateDynamic("width")(width)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Kernel]
+  }
+}
+

@@ -12,3 +12,18 @@ trait AllDocsResponse[Content /* <: js.Object */] extends js.Object {
   var total_rows: scala.Double
 }
 
+object AllDocsResponse {
+  @scala.inline
+  def apply[Content /* <: js.Object */](
+    offset: scala.Double,
+    rows: js.Array[pouchdbDashCoreLib.Anon_Doc[Content]],
+    total_rows: scala.Double
+  ): AllDocsResponse[Content] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("total_rows")(total_rows)
+    __obj.asInstanceOf[AllDocsResponse[Content]]
+  }
+}
+

@@ -36,3 +36,22 @@ trait IEffects extends js.Object {
   var roundedCorner2: java.lang.String
 }
 
+object IEffects {
+  @scala.inline
+  def apply(
+    elevation16: java.lang.String,
+    elevation4: java.lang.String,
+    elevation64: java.lang.String,
+    elevation8: java.lang.String,
+    roundedCorner2: java.lang.String
+  ): IEffects = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("elevation16")(elevation16)
+    __obj.updateDynamic("elevation4")(elevation4)
+    __obj.updateDynamic("elevation64")(elevation64)
+    __obj.updateDynamic("elevation8")(elevation8)
+    __obj.updateDynamic("roundedCorner2")(roundedCorner2)
+    __obj.asInstanceOf[IEffects]
+  }
+}
+

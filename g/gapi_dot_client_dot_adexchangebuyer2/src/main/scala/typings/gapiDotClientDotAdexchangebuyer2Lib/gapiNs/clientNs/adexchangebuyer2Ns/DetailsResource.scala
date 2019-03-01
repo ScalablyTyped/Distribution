@@ -15,3 +15,17 @@ trait DetailsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListCreativeStatusBreakdownByDetailResponse]
 }
 
+object DetailsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackCreativeStatusId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListCreativeStatusBreakdownByDetailResponse]
+    ]
+  ): DetailsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[DetailsResource]
+  }
+}
+

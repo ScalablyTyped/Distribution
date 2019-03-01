@@ -9,3 +9,14 @@ import scala.scalajs.js.annotation._
 trait MangoSelector
   extends /* key */ org.scalablytyped.runtime.StringDictionary[MangoSelector | MangoValue | js.Array[MangoValue]]
 
+object MangoSelector {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[MangoSelector | MangoValue | js.Array[MangoValue]] = null
+  ): MangoSelector = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[MangoSelector]
+  }
+}
+

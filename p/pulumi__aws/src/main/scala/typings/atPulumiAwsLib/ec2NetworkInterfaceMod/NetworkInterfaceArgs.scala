@@ -51,3 +51,34 @@ trait NetworkInterfaceArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object NetworkInterfaceArgs {
+  @scala.inline
+  def apply(
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    attachments: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttachmentIdDeviceIndexInstance]
+      ]
+    ] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateIps: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    privateIpsCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    sourceDestCheck: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): NetworkInterfaceArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
+    if (privateIps != null) __obj.updateDynamic("privateIps")(privateIps.asInstanceOf[js.Any])
+    if (privateIpsCount != null) __obj.updateDynamic("privateIpsCount")(privateIpsCount.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (sourceDestCheck != null) __obj.updateDynamic("sourceDestCheck")(sourceDestCheck.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkInterfaceArgs]
+  }
+}
+

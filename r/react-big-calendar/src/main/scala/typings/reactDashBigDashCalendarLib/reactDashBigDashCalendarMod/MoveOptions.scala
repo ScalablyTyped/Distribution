@@ -11,3 +11,14 @@ trait MoveOptions extends js.Object {
   var today: stdLib.Date
 }
 
+object MoveOptions {
+  @scala.inline
+  def apply(action: Navigate, date: stdLib.Date, today: stdLib.Date): MoveOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("today")(today)
+    __obj.asInstanceOf[MoveOptions]
+  }
+}
+

@@ -47,3 +47,26 @@ trait SearchAnnotationsRequest extends js.Object {
   var start: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchAnnotationsRequest {
+  @scala.inline
+  def apply(
+    annotationSetIds: js.Array[java.lang.String] = null,
+    end: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    referenceId: java.lang.String = null,
+    referenceName: java.lang.String = null,
+    start: java.lang.String = null
+  ): SearchAnnotationsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (annotationSetIds != null) __obj.updateDynamic("annotationSetIds")(annotationSetIds)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId)
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[SearchAnnotationsRequest]
+  }
+}
+

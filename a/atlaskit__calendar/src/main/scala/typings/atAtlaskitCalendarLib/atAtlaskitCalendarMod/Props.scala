@@ -71,3 +71,54 @@ trait Props extends js.Object {
   var year: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    day: scala.Int | scala.Double = null,
+    defaultDay: scala.Int | scala.Double = null,
+    defaultDisabled: js.Array[java.lang.String] = null,
+    defaultMonth: scala.Int | scala.Double = null,
+    defaultPreviouslySelected: js.Array[java.lang.String] = null,
+    defaultSelected: js.Array[java.lang.String] = null,
+    defaultYear: scala.Int | scala.Double = null,
+    disabled: js.Array[java.lang.String] = null,
+    innerProps: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    month: scala.Int | scala.Double = null,
+    onBlur: js.Function1[
+      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement]], 
+      scala.Unit
+    ] = null,
+    onChange: js.Function1[/* e */ ChangeEvent, scala.Unit] = null,
+    onFocus: js.Function1[
+      /* e */ js.UndefOr[reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement]], 
+      scala.Unit
+    ] = null,
+    onSelect: js.Function1[/* e */ SelectEvent, scala.Unit] = null,
+    previouslySelected: js.Array[java.lang.String] = null,
+    selected: js.Array[java.lang.String] = null,
+    today: java.lang.String = null,
+    year: scala.Int | scala.Double = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (defaultDay != null) __obj.updateDynamic("defaultDay")(defaultDay.asInstanceOf[js.Any])
+    if (defaultDisabled != null) __obj.updateDynamic("defaultDisabled")(defaultDisabled)
+    if (defaultMonth != null) __obj.updateDynamic("defaultMonth")(defaultMonth.asInstanceOf[js.Any])
+    if (defaultPreviouslySelected != null) __obj.updateDynamic("defaultPreviouslySelected")(defaultPreviouslySelected)
+    if (defaultSelected != null) __obj.updateDynamic("defaultSelected")(defaultSelected)
+    if (defaultYear != null) __obj.updateDynamic("defaultYear")(defaultYear.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (innerProps != null) __obj.updateDynamic("innerProps")(innerProps)
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (previouslySelected != null) __obj.updateDynamic("previouslySelected")(previouslySelected)
+    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (today != null) __obj.updateDynamic("today")(today)
+    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props]
+  }
+}
+

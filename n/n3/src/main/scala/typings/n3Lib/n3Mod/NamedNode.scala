@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("n3", "NamedNode")
 @js.native
 class NamedNode protected ()
-  extends rdfDashJsLib.rdfDashJsMod.NamedNode {
+  extends rdfDashJsLib.rdfDashJsMod.NamedNode
+     with Quad_Graph
+     with Quad_Object
+     with Quad_Predicate
+     with Quad_Subject
+     with Term {
   def this(iri: java.lang.String) = this()
   val id: java.lang.String = js.native
   /**

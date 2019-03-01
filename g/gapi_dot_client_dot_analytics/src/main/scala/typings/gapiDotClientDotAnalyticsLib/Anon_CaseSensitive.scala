@@ -34,3 +34,38 @@ trait Anon_CaseSensitive extends js.Object {
   var overrideOutputField: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_CaseSensitive {
+  @scala.inline
+  def apply(
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    extractA: java.lang.String = null,
+    extractB: java.lang.String = null,
+    fieldA: java.lang.String = null,
+    fieldAIndex: scala.Int | scala.Double = null,
+    fieldARequired: js.UndefOr[scala.Boolean] = js.undefined,
+    fieldB: java.lang.String = null,
+    fieldBIndex: scala.Int | scala.Double = null,
+    fieldBRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    outputConstructor: java.lang.String = null,
+    outputToField: java.lang.String = null,
+    outputToFieldIndex: scala.Int | scala.Double = null,
+    overrideOutputField: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_CaseSensitive = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (extractA != null) __obj.updateDynamic("extractA")(extractA)
+    if (extractB != null) __obj.updateDynamic("extractB")(extractB)
+    if (fieldA != null) __obj.updateDynamic("fieldA")(fieldA)
+    if (fieldAIndex != null) __obj.updateDynamic("fieldAIndex")(fieldAIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldARequired)) __obj.updateDynamic("fieldARequired")(fieldARequired)
+    if (fieldB != null) __obj.updateDynamic("fieldB")(fieldB)
+    if (fieldBIndex != null) __obj.updateDynamic("fieldBIndex")(fieldBIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(fieldBRequired)) __obj.updateDynamic("fieldBRequired")(fieldBRequired)
+    if (outputConstructor != null) __obj.updateDynamic("outputConstructor")(outputConstructor)
+    if (outputToField != null) __obj.updateDynamic("outputToField")(outputToField)
+    if (outputToFieldIndex != null) __obj.updateDynamic("outputToFieldIndex")(outputToFieldIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideOutputField)) __obj.updateDynamic("overrideOutputField")(overrideOutputField)
+    __obj.asInstanceOf[Anon_CaseSensitive]
+  }
+}
+

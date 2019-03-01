@@ -27,3 +27,22 @@ trait XHierarchicalPropertySetInfo
   def hasPropertyByHierarchicalName(aHierarchicalName: java.lang.String): scala.Boolean
 }
 
+object XHierarchicalPropertySetInfo {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getPropertyByHierarchicalName: js.Function1[java.lang.String, Property],
+    hasPropertyByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XHierarchicalPropertySetInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getPropertyByHierarchicalName")(getPropertyByHierarchicalName)
+    __obj.updateDynamic("hasPropertyByHierarchicalName")(hasPropertyByHierarchicalName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XHierarchicalPropertySetInfo]
+  }
+}
+

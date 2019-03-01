@@ -10,3 +10,12 @@ trait ResourceIssue extends js.Object {
   var blockedResource: js.UndefOr[BlockedResource] = js.undefined
 }
 
+object ResourceIssue {
+  @scala.inline
+  def apply(blockedResource: BlockedResource = null): ResourceIssue = {
+    val __obj = js.Dynamic.literal()
+    if (blockedResource != null) __obj.updateDynamic("blockedResource")(blockedResource)
+    __obj.asInstanceOf[ResourceIssue]
+  }
+}
+

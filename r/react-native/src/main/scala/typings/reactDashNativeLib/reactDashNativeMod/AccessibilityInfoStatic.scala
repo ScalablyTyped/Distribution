@@ -47,3 +47,30 @@ trait AccessibilityInfoStatic extends js.Object {
   def setAccessibilityFocus(reactTag: scala.Double): scala.Unit
 }
 
+object AccessibilityInfoStatic {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[
+      reactDashNativeLib.AccessibilityEventName, 
+      js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit], 
+      scala.Unit
+    ],
+    announceForAccessibility: js.Function1[java.lang.String, scala.Unit],
+    fetch: js.Function0[js.Promise[scala.Boolean]],
+    removeEventListener: js.Function2[
+      reactDashNativeLib.AccessibilityEventName, 
+      js.Function1[/* event */ reactDashNativeLib.AccessibilityEvent, scala.Unit], 
+      scala.Unit
+    ],
+    setAccessibilityFocus: js.Function1[scala.Double, scala.Unit]
+  ): AccessibilityInfoStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("announceForAccessibility")(announceForAccessibility)
+    __obj.updateDynamic("fetch")(fetch)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setAccessibilityFocus")(setAccessibilityFocus)
+    __obj.asInstanceOf[AccessibilityInfoStatic]
+  }
+}
+

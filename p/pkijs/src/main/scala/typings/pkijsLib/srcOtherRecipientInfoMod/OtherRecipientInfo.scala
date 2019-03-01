@@ -13,3 +13,22 @@ trait OtherRecipientInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object OtherRecipientInfo {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    oriType: java.lang.String,
+    oriValue: js.Any,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): OtherRecipientInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("oriType")(oriType)
+    __obj.updateDynamic("oriValue")(oriValue)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.asInstanceOf[OtherRecipientInfo]
+  }
+}
+

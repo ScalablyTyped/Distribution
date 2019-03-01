@@ -71,3 +71,32 @@ trait RegisterOptions extends js.Object {
   var skip: js.UndefOr[scala.Boolean | SkipFunction] = js.undefined
 }
 
+object RegisterOptions {
+  @scala.inline
+  def apply(
+    addToViewContext: js.UndefOr[scala.Boolean] = js.undefined,
+    autoGenerate: js.UndefOr[scala.Boolean] = js.undefined,
+    cookieOptions: hapiLib.hapiMod.ServerStateCookieOptions = null,
+    enforce: js.UndefOr[scala.Boolean] = js.undefined,
+    headerName: java.lang.String = null,
+    key: java.lang.String = null,
+    logUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    restful: js.UndefOr[scala.Boolean] = js.undefined,
+    size: scala.Int | scala.Double = null,
+    skip: scala.Boolean | SkipFunction = null
+  ): RegisterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addToViewContext)) __obj.updateDynamic("addToViewContext")(addToViewContext)
+    if (!js.isUndefined(autoGenerate)) __obj.updateDynamic("autoGenerate")(autoGenerate)
+    if (cookieOptions != null) __obj.updateDynamic("cookieOptions")(cookieOptions)
+    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce)
+    if (headerName != null) __obj.updateDynamic("headerName")(headerName)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(logUnauthorized)) __obj.updateDynamic("logUnauthorized")(logUnauthorized)
+    if (!js.isUndefined(restful)) __obj.updateDynamic("restful")(restful)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RegisterOptions]
+  }
+}
+

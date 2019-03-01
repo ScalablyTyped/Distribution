@@ -13,3 +13,22 @@ trait Anon_CommentsEach extends js.Object {
   var right: astDashTypesLib.genKindsMod.ExpressionKind
 }
 
+object Anon_CommentsEach {
+  @scala.inline
+  def apply(
+    each: scala.Boolean,
+    left: astDashTypesLib.genKindsMod.PatternKind,
+    right: astDashTypesLib.genKindsMod.ExpressionKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsEach = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("each")(each)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("right")(right)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsEach]
+  }
+}
+

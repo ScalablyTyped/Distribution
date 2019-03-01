@@ -34,3 +34,62 @@ trait SubscriptionsResource extends js.Object {
   def suspend(request: gapiDotClientDotResellerLib.Anon_AltCustomerIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
 }
 
+object SubscriptionsResource {
+  @scala.inline
+  def apply(
+    activate: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ],
+    changePlan: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ],
+    changeRenewalSettings: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ],
+    changeSeats: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerIdDeletionType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerAuthTokenCustomerId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ],
+    list: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerAuthTokenCustomerIdCustomerNamePrefix, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscriptions]
+    ],
+    startPaidService: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ],
+    suspend: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltCustomerIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ]
+  ): SubscriptionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activate")(activate)
+    __obj.updateDynamic("changePlan")(changePlan)
+    __obj.updateDynamic("changeRenewalSettings")(changeRenewalSettings)
+    __obj.updateDynamic("changeSeats")(changeSeats)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("startPaidService")(startPaidService)
+    __obj.updateDynamic("suspend")(suspend)
+    __obj.asInstanceOf[SubscriptionsResource]
+  }
+}
+

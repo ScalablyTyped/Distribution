@@ -78,3 +78,72 @@ trait ChartStatistics
   var RegressionCurves: ChartRegressionCurveType
 }
 
+object ChartStatistics {
+  @scala.inline
+  def apply(
+    ConstantErrorHigh: scala.Double,
+    ConstantErrorLow: scala.Double,
+    ErrorBarRangeNegative: java.lang.String,
+    ErrorBarRangePositive: java.lang.String,
+    ErrorBarStyle: scala.Double,
+    ErrorCategory: ChartErrorCategory,
+    ErrorIndicator: ChartErrorIndicatorType,
+    ErrorMargin: scala.Double,
+    MeanValue: scala.Boolean,
+    PercentageError: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RegressionCurves: ChartRegressionCurveType,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): ChartStatistics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ConstantErrorHigh")(ConstantErrorHigh)
+    __obj.updateDynamic("ConstantErrorLow")(ConstantErrorLow)
+    __obj.updateDynamic("ErrorBarRangeNegative")(ErrorBarRangeNegative)
+    __obj.updateDynamic("ErrorBarRangePositive")(ErrorBarRangePositive)
+    __obj.updateDynamic("ErrorBarStyle")(ErrorBarStyle)
+    __obj.updateDynamic("ErrorCategory")(ErrorCategory)
+    __obj.updateDynamic("ErrorIndicator")(ErrorIndicator)
+    __obj.updateDynamic("ErrorMargin")(ErrorMargin)
+    __obj.updateDynamic("MeanValue")(MeanValue)
+    __obj.updateDynamic("PercentageError")(PercentageError)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RegressionCurves")(RegressionCurves)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[ChartStatistics]
+  }
+}
+

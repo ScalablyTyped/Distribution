@@ -11,3 +11,14 @@ trait Anon_Always extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Always {
+  @scala.inline
+  def apply(
+    warnOnDeprecatedNgFormSelector: atAngularFormsLib.atAngularFormsLibStrings.never | atAngularFormsLib.atAngularFormsLibStrings.once | atAngularFormsLib.atAngularFormsLibStrings.always = null
+  ): Anon_Always = {
+    val __obj = js.Dynamic.literal()
+    if (warnOnDeprecatedNgFormSelector != null) __obj.updateDynamic("warnOnDeprecatedNgFormSelector")(warnOnDeprecatedNgFormSelector.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Always]
+  }
+}
+

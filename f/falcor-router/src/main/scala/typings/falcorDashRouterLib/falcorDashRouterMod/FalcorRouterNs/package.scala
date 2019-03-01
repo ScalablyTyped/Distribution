@@ -10,7 +10,6 @@ package object FalcorRouterNs {
     falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.PathValue | falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.InvalidPath
   ]) | falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.JSONGraphEnvelope
   type CreatedRouter = falcorDashRouterLib.falcorDashRouterMod.FalcorRouter
-  type RouteDefinition = GetRoute | SetRoute | CallRoute
   type RoutePathSet = falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.PathSet
   type RouteResult = falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.PathValue | (js.Array[
     falcorDashJsonDashGraphLib.falcorDashJsonDashGraphMod.FalcorJsonGraphNs.PathValue

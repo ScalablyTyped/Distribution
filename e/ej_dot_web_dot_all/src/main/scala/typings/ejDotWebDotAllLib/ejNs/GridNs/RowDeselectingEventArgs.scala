@@ -32,3 +32,28 @@ trait RowDeselectingEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RowDeselectingEventArgs {
+  @scala.inline
+  def apply(
+    data: js.Any = null,
+    isCtrlKeyPressed: js.UndefOr[scala.Boolean] = js.undefined,
+    isShiftKeyPressed: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    row: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null,
+    selectedData: js.Any = null,
+    `type`: java.lang.String = null
+  ): RowDeselectingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(isCtrlKeyPressed)) __obj.updateDynamic("isCtrlKeyPressed")(isCtrlKeyPressed)
+    if (!js.isUndefined(isShiftKeyPressed)) __obj.updateDynamic("isShiftKeyPressed")(isShiftKeyPressed)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RowDeselectingEventArgs]
+  }
+}
+

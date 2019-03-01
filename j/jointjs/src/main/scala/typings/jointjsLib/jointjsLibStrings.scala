@@ -10,55 +10,69 @@ object jointjsLibStrings {
   sealed trait BT extends js.Object
   
   @js.native
-  sealed trait C extends js.Object
+  sealed trait C
+    extends jointjsLib.jointjsMod.gNs.SegmentType
   
   @js.native
-  sealed trait E extends js.Object
+  sealed trait E
+    extends jointjsLib.jointjsMod.gNs.CardinalDirection
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait L
+    extends jointjsLib.jointjsMod.gNs.SegmentType
   
   @js.native
   sealed trait LR extends js.Object
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait M
+    extends jointjsLib.jointjsMod.gNs.SegmentType
   
   @js.native
-  sealed trait N extends js.Object
+  sealed trait N
+    extends jointjsLib.jointjsMod.gNs.CardinalDirection
   
   @js.native
-  sealed trait NE extends js.Object
+  sealed trait NE
+    extends jointjsLib.jointjsMod.gNs.CardinalDirection
   
   @js.native
-  sealed trait NW extends js.Object
+  sealed trait NW
+    extends jointjsLib.jointjsMod.gNs.CardinalDirection
   
   @js.native
   sealed trait RL extends js.Object
   
   @js.native
-  sealed trait S extends js.Object
+  sealed trait S
+    extends jointjsLib.jointjsMod.gNs.CardinalDirection
   
   @js.native
-  sealed trait SE extends js.Object
+  sealed trait SE
+    extends jointjsLib.jointjsMod.gNs.CardinalDirection
   
   @js.native
-  sealed trait SW extends js.Object
+  sealed trait SW
+    extends jointjsLib.jointjsMod.gNs.CardinalDirection
   
   @js.native
   sealed trait TB extends js.Object
   
   @js.native
-  sealed trait W extends js.Object
+  sealed trait W
+    extends jointjsLib.jointjsMod.gNs.CardinalDirection
   
   @js.native
-  sealed trait Z extends js.Object
+  sealed trait Z
+    extends jointjsLib.jointjsMod.gNs.SegmentType
   
   @js.native
-  sealed trait addClass extends js.Object
+  sealed trait addClass
+    extends jointjsLib.jointjsMod.highlightersNs.HighlighterType
   
   @js.native
-  sealed trait anchor extends js.Object
+  sealed trait anchor
+    extends jointjsLib.jointjsMod.connectionPointsNs.ConnectionPointType
   
   @js.native
   sealed trait any extends js.Object
@@ -70,31 +84,41 @@ object jointjsLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait bbox extends js.Object
+  sealed trait bbox
+    extends jointjsLib.jointjsMod.connectionPointsNs.ConnectionPointType
   
   @js.native
   sealed trait blur extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends jointjsLib.jointjsMod.diaNs.OrthogonalDirection
+       with jointjsLib.jointjsMod.anchorsNs.AnchorType
+       with jointjsLib.jointjsMod.gNs.RectangleSide
+       with jointjsLib.jointjsMod.VectorizerNs.TextVerticalAnchor
   
   @js.native
-  sealed trait `bottom-left` extends js.Object
+  sealed trait `bottom-left`
+    extends jointjsLib.jointjsMod.diaNs.Direction
   
   @js.native
-  sealed trait `bottom-right` extends js.Object
+  sealed trait `bottom-right`
+    extends jointjsLib.jointjsMod.diaNs.Direction
   
   @js.native
-  sealed trait bottomLeft extends js.Object
+  sealed trait bottomLeft
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
   
   @js.native
   sealed trait bottomMiddle extends js.Object
   
   @js.native
-  sealed trait bottomRight extends js.Object
+  sealed trait bottomRight
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
   
   @js.native
-  sealed trait boundary extends js.Object
+  sealed trait boundary
+    extends jointjsLib.jointjsMod.connectionPointsNs.ConnectionPointType
   
   @js.native
   sealed trait brightness extends js.Object
@@ -103,7 +127,8 @@ object jointjsLibStrings {
   sealed trait c extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
   
   @js.native
   sealed trait contrast extends js.Object
@@ -145,13 +170,17 @@ object jointjsLibStrings {
   sealed trait invert extends js.Object
   
   @js.native
-  sealed trait jumpover extends js.Object
+  sealed trait jumpover
+    extends jointjsLib.jointjsMod.connectorsNs.ConnectorType
   
   @js.native
   sealed trait l extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends jointjsLib.jointjsMod.diaNs.OrthogonalDirection
+       with jointjsLib.jointjsMod.anchorsNs.AnchorType
+       with jointjsLib.jointjsMod.gNs.RectangleSide
   
   @js.native
   sealed trait leftMiddle extends js.Object
@@ -163,22 +192,27 @@ object jointjsLibStrings {
   sealed trait `longest-path` extends js.Object
   
   @js.native
-  sealed trait manhattan extends js.Object
+  sealed trait manhattan
+    extends jointjsLib.jointjsMod.routersNs.RouterType
   
   @js.native
   sealed trait mesh extends js.Object
   
   @js.native
-  sealed trait metro extends js.Object
+  sealed trait metro
+    extends jointjsLib.jointjsMod.routersNs.RouterType
   
   @js.native
-  sealed trait midSide extends js.Object
+  sealed trait midSide
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle
+    extends jointjsLib.jointjsMod.VectorizerNs.TextVerticalAnchor
   
   @js.native
-  sealed trait modelCenter extends js.Object
+  sealed trait modelCenter
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
   
   @js.native
   sealed trait negative extends js.Object
@@ -187,25 +221,31 @@ object jointjsLibStrings {
   sealed trait `network-simplex` extends js.Object
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends jointjsLib.jointjsMod.connectorsNs.ConnectorType
+       with jointjsLib.jointjsMod.routersNs.RouterType
   
   @js.native
-  sealed trait oneSide extends js.Object
+  sealed trait oneSide
+    extends jointjsLib.jointjsMod.routersNs.RouterType
   
   @js.native
-  sealed trait opacity extends js.Object
+  sealed trait opacity
+    extends jointjsLib.jointjsMod.highlightersNs.HighlighterType
   
   @js.native
   sealed trait origin extends js.Object
   
   @js.native
-  sealed trait orthogonal extends js.Object
+  sealed trait orthogonal
+    extends jointjsLib.jointjsMod.routersNs.RouterType
   
   @js.native
   sealed trait outline extends js.Object
   
   @js.native
-  sealed trait perpendicular extends js.Object
+  sealed trait perpendicular
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
   
   @js.native
   sealed trait positive extends js.Object
@@ -217,16 +257,21 @@ object jointjsLibStrings {
   sealed trait radialGradient extends js.Object
   
   @js.native
-  sealed trait rectangle extends js.Object
+  sealed trait rectangle
+    extends jointjsLib.jointjsMod.connectionPointsNs.ConnectionPointType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends jointjsLib.jointjsMod.diaNs.OrthogonalDirection
+       with jointjsLib.jointjsMod.anchorsNs.AnchorType
+       with jointjsLib.jointjsMod.gNs.RectangleSide
   
   @js.native
   sealed trait rightMiddle extends js.Object
   
   @js.native
-  sealed trait rounded extends js.Object
+  sealed trait rounded
+    extends jointjsLib.jointjsMod.connectorsNs.ConnectorType
   
   @js.native
   sealed trait saturate extends js.Object
@@ -235,37 +280,49 @@ object jointjsLibStrings {
   sealed trait sepia extends js.Object
   
   @js.native
-  sealed trait smooth extends js.Object
+  sealed trait smooth
+    extends jointjsLib.jointjsMod.connectorsNs.ConnectorType
   
   @js.native
-  sealed trait source extends js.Object
+  sealed trait source
+    extends jointjsLib.jointjsMod.diaNs.LinkEnd
   
   @js.native
-  sealed trait stroke extends js.Object
+  sealed trait stroke
+    extends jointjsLib.jointjsMod.highlightersNs.HighlighterType
   
   @js.native
-  sealed trait target extends js.Object
+  sealed trait target
+    extends jointjsLib.jointjsMod.diaNs.LinkEnd
   
   @js.native
   sealed trait `tight-tree` extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends jointjsLib.jointjsMod.diaNs.OrthogonalDirection
+       with jointjsLib.jointjsMod.anchorsNs.AnchorType
+       with jointjsLib.jointjsMod.gNs.RectangleSide
+       with jointjsLib.jointjsMod.VectorizerNs.TextVerticalAnchor
   
   @js.native
-  sealed trait `top-left` extends js.Object
+  sealed trait `top-left`
+    extends jointjsLib.jointjsMod.diaNs.Direction
   
   @js.native
-  sealed trait `top-right` extends js.Object
+  sealed trait `top-right`
+    extends jointjsLib.jointjsMod.diaNs.Direction
   
   @js.native
-  sealed trait topLeft extends js.Object
+  sealed trait topLeft
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
   
   @js.native
   sealed trait topMiddle extends js.Object
   
   @js.native
-  sealed trait topRight extends js.Object
+  sealed trait topRight
+    extends jointjsLib.jointjsMod.anchorsNs.AnchorType
   
   @js.native
   sealed trait width extends js.Object

@@ -46,3 +46,34 @@ trait PrintSettings extends js.Object {
   var PrintTables: scala.Boolean
 }
 
+object PrintSettings {
+  @scala.inline
+  def apply(
+    PrintAnnotationMode: scala.Double,
+    PrintBlackFonts: scala.Boolean,
+    PrintControls: scala.Boolean,
+    PrintDrawings: scala.Boolean,
+    PrintGraphics: scala.Boolean,
+    PrintLeftPages: scala.Boolean,
+    PrintPageBackground: scala.Boolean,
+    PrintProspect: scala.Boolean,
+    PrintReversed: scala.Boolean,
+    PrintRightPages: scala.Boolean,
+    PrintTables: scala.Boolean
+  ): PrintSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PrintAnnotationMode")(PrintAnnotationMode)
+    __obj.updateDynamic("PrintBlackFonts")(PrintBlackFonts)
+    __obj.updateDynamic("PrintControls")(PrintControls)
+    __obj.updateDynamic("PrintDrawings")(PrintDrawings)
+    __obj.updateDynamic("PrintGraphics")(PrintGraphics)
+    __obj.updateDynamic("PrintLeftPages")(PrintLeftPages)
+    __obj.updateDynamic("PrintPageBackground")(PrintPageBackground)
+    __obj.updateDynamic("PrintProspect")(PrintProspect)
+    __obj.updateDynamic("PrintReversed")(PrintReversed)
+    __obj.updateDynamic("PrintRightPages")(PrintRightPages)
+    __obj.updateDynamic("PrintTables")(PrintTables)
+    __obj.asInstanceOf[PrintSettings]
+  }
+}
+

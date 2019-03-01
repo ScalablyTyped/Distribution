@@ -24,3 +24,20 @@ trait Points extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Points {
+  @scala.inline
+  def apply(
+    fill: java.lang.String = null,
+    text: java.lang.String = null,
+    x: java.lang.String = null,
+    y: scala.Int | scala.Double = null
+  ): Points = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (x != null) __obj.updateDynamic("x")(x)
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Points]
+  }
+}
+

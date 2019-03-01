@@ -15,3 +15,24 @@ trait Anon_Dns extends js.Object {
   var wait_FAnon_Dns: scala.Double
 }
 
+object Anon_Dns {
+  @scala.inline
+  def apply(
+    dns: scala.Double,
+    download: scala.Double,
+    firstByte: scala.Double,
+    tcp: scala.Double,
+    total: scala.Double,
+    wait: scala.Double
+  ): Anon_Dns = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dns")(dns)
+    __obj.updateDynamic("download")(download)
+    __obj.updateDynamic("firstByte")(firstByte)
+    __obj.updateDynamic("tcp")(tcp)
+    __obj.updateDynamic("total")(total)
+    __obj.updateDynamic("wait")(wait)
+    __obj.asInstanceOf[Anon_Dns]
+  }
+}
+

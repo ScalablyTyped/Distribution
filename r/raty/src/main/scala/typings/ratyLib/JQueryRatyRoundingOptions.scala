@@ -11,3 +11,14 @@ trait JQueryRatyRoundingOptions extends js.Object {
   var up: scala.Double
 }
 
+object JQueryRatyRoundingOptions {
+  @scala.inline
+  def apply(down: scala.Double, full: scala.Double, up: scala.Double): JQueryRatyRoundingOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("down")(down)
+    __obj.updateDynamic("full")(full)
+    __obj.updateDynamic("up")(up)
+    __obj.asInstanceOf[JQueryRatyRoundingOptions]
+  }
+}
+

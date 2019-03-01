@@ -14,3 +14,24 @@ trait LinkedWorkItemsQuery extends js.Object {
   var workItemCategory: java.lang.String
 }
 
+object LinkedWorkItemsQuery {
+  @scala.inline
+  def apply(
+    automatedTestNames: js.Array[java.lang.String],
+    planId: scala.Double,
+    pointIds: js.Array[scala.Double],
+    suiteIds: js.Array[scala.Double],
+    testCaseIds: js.Array[scala.Double],
+    workItemCategory: java.lang.String
+  ): LinkedWorkItemsQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("automatedTestNames")(automatedTestNames)
+    __obj.updateDynamic("planId")(planId)
+    __obj.updateDynamic("pointIds")(pointIds)
+    __obj.updateDynamic("suiteIds")(suiteIds)
+    __obj.updateDynamic("testCaseIds")(testCaseIds)
+    __obj.updateDynamic("workItemCategory")(workItemCategory)
+    __obj.asInstanceOf[LinkedWorkItemsQuery]
+  }
+}
+

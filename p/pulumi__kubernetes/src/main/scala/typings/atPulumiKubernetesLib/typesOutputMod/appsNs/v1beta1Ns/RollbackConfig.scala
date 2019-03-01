@@ -15,3 +15,12 @@ trait RollbackConfig extends js.Object {
   val revision: scala.Double
 }
 
+object RollbackConfig {
+  @scala.inline
+  def apply(revision: scala.Double): RollbackConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("revision")(revision)
+    __obj.asInstanceOf[RollbackConfig]
+  }
+}
+

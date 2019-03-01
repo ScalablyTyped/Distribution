@@ -142,3 +142,82 @@ trait MapboxOptions extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MapboxOptions {
+  @scala.inline
+  def apply(
+    container: java.lang.String | stdLib.Element,
+    attributionControl: js.UndefOr[scala.Boolean] = js.undefined,
+    bearing: scala.Int | scala.Double = null,
+    bearingSnap: scala.Int | scala.Double = null,
+    boxZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    center: LngLatLike = null,
+    clickTolerance: scala.Int | scala.Double = null,
+    collectResourceTiming: js.UndefOr[scala.Boolean] = js.undefined,
+    crossSourceCollisions: js.UndefOr[scala.Boolean] = js.undefined,
+    customAttribution: java.lang.String | js.Array[java.lang.String] = null,
+    doubleClickZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    dragPan: js.UndefOr[scala.Boolean] = js.undefined,
+    dragRotate: js.UndefOr[scala.Boolean] = js.undefined,
+    fadeDuration: scala.Int | scala.Double = null,
+    failIfMajorPerformanceCaveat: js.UndefOr[scala.Boolean] = js.undefined,
+    hash: js.UndefOr[scala.Boolean] = js.undefined,
+    interactive: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    localIdeographFontFamily: java.lang.String = null,
+    logoPosition: mapboxDashGlLib.mapboxDashGlLibStrings.`top-left` | mapboxDashGlLib.mapboxDashGlLibStrings.`top-right` | mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-left` | mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-right` = null,
+    maxBounds: LngLatBoundsLike = null,
+    maxTileCacheSize: scala.Int | scala.Double = null,
+    maxZoom: scala.Int | scala.Double = null,
+    minZoom: scala.Int | scala.Double = null,
+    pitch: scala.Int | scala.Double = null,
+    pitchWithRotate: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined,
+    refreshExpiredTiles: js.UndefOr[scala.Boolean] = js.undefined,
+    renderWorldCopies: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    style: Style | java.lang.String = null,
+    touchZoomRotate: js.UndefOr[scala.Boolean] = js.undefined,
+    trackResize: js.UndefOr[scala.Boolean] = js.undefined,
+    transformRequest: TransformRequestFunction = null,
+    zoom: scala.Int | scala.Double = null
+  ): MapboxOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
+    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
+    if (bearingSnap != null) __obj.updateDynamic("bearingSnap")(bearingSnap.asInstanceOf[js.Any])
+    if (!js.isUndefined(boxZoom)) __obj.updateDynamic("boxZoom")(boxZoom)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (clickTolerance != null) __obj.updateDynamic("clickTolerance")(clickTolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(collectResourceTiming)) __obj.updateDynamic("collectResourceTiming")(collectResourceTiming)
+    if (!js.isUndefined(crossSourceCollisions)) __obj.updateDynamic("crossSourceCollisions")(crossSourceCollisions)
+    if (customAttribution != null) __obj.updateDynamic("customAttribution")(customAttribution.asInstanceOf[js.Any])
+    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom)
+    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan)
+    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate)
+    if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(failIfMajorPerformanceCaveat)) __obj.updateDynamic("failIfMajorPerformanceCaveat")(failIfMajorPerformanceCaveat)
+    if (!js.isUndefined(hash)) __obj.updateDynamic("hash")(hash)
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (localIdeographFontFamily != null) __obj.updateDynamic("localIdeographFontFamily")(localIdeographFontFamily)
+    if (logoPosition != null) __obj.updateDynamic("logoPosition")(logoPosition.asInstanceOf[js.Any])
+    if (maxBounds != null) __obj.updateDynamic("maxBounds")(maxBounds.asInstanceOf[js.Any])
+    if (maxTileCacheSize != null) __obj.updateDynamic("maxTileCacheSize")(maxTileCacheSize.asInstanceOf[js.Any])
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (!js.isUndefined(pitchWithRotate)) __obj.updateDynamic("pitchWithRotate")(pitchWithRotate)
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
+    if (!js.isUndefined(refreshExpiredTiles)) __obj.updateDynamic("refreshExpiredTiles")(refreshExpiredTiles)
+    if (!js.isUndefined(renderWorldCopies)) __obj.updateDynamic("renderWorldCopies")(renderWorldCopies)
+    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(touchZoomRotate)) __obj.updateDynamic("touchZoomRotate")(touchZoomRotate)
+    if (!js.isUndefined(trackResize)) __obj.updateDynamic("trackResize")(trackResize)
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapboxOptions]
+  }
+}
+

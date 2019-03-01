@@ -164,3 +164,139 @@ trait Anon_AAVLTree extends js.Object {
   ]
 }
 
+object Anon_AAVLTree {
+  @scala.inline
+  def apply(
+    AVLTree: org.scalablytyped.runtime.Instantiable1[
+      /* options */ js.UndefOr[
+        /* options */ adoneLib.adoneNs.collectionNs.INs.BinarySearchTreeNs.ConstructorOptions[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any, 
+          adoneLib.adoneNs.collectionNs.AVLTree[
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+          ]
+        ]
+      ], 
+      adoneLib.adoneNs.collectionNs.AVLTree[js.Object, js.Object]
+    ],
+    ArraySet: Anon_AllowDuplicates,
+    AsyncQueue: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.AsyncQueue[js.Object]],
+    BinarySearchTree: org.scalablytyped.runtime.Instantiable1[
+      /* options */ js.UndefOr[
+        /* options */ adoneLib.adoneNs.collectionNs.INs.BinarySearchTreeNs.ConstructorOptions[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any, 
+          adoneLib.adoneNs.collectionNs.BinarySearchTree[
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+          ]
+        ]
+      ], 
+      adoneLib.adoneNs.collectionNs.BinarySearchTree[js.Object, js.Object]
+    ],
+    BufferList: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.BufferList],
+    ByteArray: Anon_Accessor,
+    DefaultMap: org.scalablytyped.runtime.Instantiable2[
+      /* factory */ js.UndefOr[
+        /* factory */ (js.Function1[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+        ]) | (org.scalablytyped.runtime.StringDictionary[/* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any])
+      ], 
+      /* iterable */ js.UndefOr[
+        /* iterable */ nodeLib.Iterable[
+          js.Tuple2[
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+          ]
+        ]
+      ], 
+      adoneLib.adoneNs.collectionNs.DefaultMap[js.Object, js.Object]
+    ],
+    FastLRU: org.scalablytyped.runtime.Instantiable1[
+      /* options */ js.UndefOr[/* options */ Anon_DisposeKey], 
+      adoneLib.adoneNs.collectionNs.FastLRU[js.Object, js.Object]
+    ],
+    INs: Anon_BinarySearchTree,
+    LRU: org.scalablytyped.runtime.Instantiable1[
+      /* options */ js.UndefOr[
+        /* options */ adoneLib.adoneNs.collectionNs.INs.LRUNs.ConstructorOptions[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+        ]
+      ], 
+      adoneLib.adoneNs.collectionNs.LRU[js.Object, js.Object]
+    ],
+    LinkedList: Anon_DEFAULTLENGTH,
+    MapCache: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.MapCache[js.Object]],
+    NSCache: org.scalablytyped.runtime.Instantiable2[
+      /* maxSize */ scala.Double, 
+      /* namespaces */ js.Array[java.lang.String], 
+      adoneLib.adoneNs.collectionNs.NSCache[js.Object]
+    ],
+    PriorityQueue: Anon_FromIterable,
+    Queue: Anon_FromIterableLength,
+    RedBlackTree: org.scalablytyped.runtime.Instantiable2[
+      /* compare */ js.UndefOr[
+        /* compare */ js.Function2[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* a */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* b */ js.Any, 
+          scala.Double
+        ]
+      ], 
+      /* root */ js.UndefOr[
+        /* root */ adoneLib.adoneNs.collectionNs.RedBlackTree[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+        ]
+      ], 
+      adoneLib.adoneNs.collectionNs.RedBlackTree[js.Object, js.Object]
+    ],
+    RefcountedCache: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.RefcountedCache[js.Object]],
+    Set: org.scalablytyped.runtime.Instantiable1[
+      /* key */ js.UndefOr[
+        /* key */ js.Function1[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* x */ js.Any, 
+          js.Any
+        ]
+      ], 
+      adoneLib.adoneNs.collectionNs.Set[js.Object]
+    ],
+    Stack: Anon_FromIterableAny,
+    TimeMap: org.scalablytyped.runtime.Instantiable2[
+      /* timeout */ js.UndefOr[/* timeout */ scala.Double], 
+      /* callback */ js.UndefOr[
+        /* callback */ js.Function1[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* key */ js.Any, 
+          scala.Unit
+        ]
+      ], 
+      adoneLib.adoneNs.collectionNs.TimeMap[js.Object, js.Object]
+    ]
+  ): Anon_AAVLTree = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AVLTree")(AVLTree)
+    __obj.updateDynamic("ArraySet")(ArraySet)
+    __obj.updateDynamic("AsyncQueue")(AsyncQueue)
+    __obj.updateDynamic("BinarySearchTree")(BinarySearchTree)
+    __obj.updateDynamic("BufferList")(BufferList)
+    __obj.updateDynamic("ByteArray")(ByteArray)
+    __obj.updateDynamic("DefaultMap")(DefaultMap)
+    __obj.updateDynamic("FastLRU")(FastLRU)
+    __obj.updateDynamic("INs")(INs)
+    __obj.updateDynamic("LRU")(LRU)
+    __obj.updateDynamic("LinkedList")(LinkedList)
+    __obj.updateDynamic("MapCache")(MapCache)
+    __obj.updateDynamic("NSCache")(NSCache)
+    __obj.updateDynamic("PriorityQueue")(PriorityQueue)
+    __obj.updateDynamic("Queue")(Queue)
+    __obj.updateDynamic("RedBlackTree")(RedBlackTree)
+    __obj.updateDynamic("RefcountedCache")(RefcountedCache)
+    __obj.updateDynamic("Set")(Set)
+    __obj.updateDynamic("Stack")(Stack)
+    __obj.updateDynamic("TimeMap")(TimeMap)
+    __obj.asInstanceOf[Anon_AAVLTree]
+  }
+}
+

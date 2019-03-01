@@ -15,3 +15,12 @@ trait FindOneOptions extends js.Object {
   var populate: js.UndefOr[scala.Boolean | js.Array[java.lang.String]] = js.undefined
 }
 
+object FindOneOptions {
+  @scala.inline
+  def apply(populate: scala.Boolean | js.Array[java.lang.String] = null): FindOneOptions = {
+    val __obj = js.Dynamic.literal()
+    if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FindOneOptions]
+  }
+}
+

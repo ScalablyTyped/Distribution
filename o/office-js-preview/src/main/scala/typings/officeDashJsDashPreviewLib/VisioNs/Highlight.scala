@@ -28,3 +28,13 @@ trait Highlight extends js.Object {
   var width: scala.Double
 }
 
+object Highlight {
+  @scala.inline
+  def apply(color: java.lang.String, width: scala.Double): Highlight = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Highlight]
+  }
+}
+

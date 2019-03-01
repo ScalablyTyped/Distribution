@@ -80,3 +80,46 @@ trait FeedOptions extends js.Object {
   var webMaster: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FeedOptions {
+  @scala.inline
+  def apply(
+    feed_url: java.lang.String,
+    site_url: java.lang.String,
+    title: java.lang.String,
+    categories: js.Array[java.lang.String] = null,
+    copyright: java.lang.String = null,
+    custom_elements: js.Array[_] = null,
+    custom_namespaces: js.Object = null,
+    description: java.lang.String = null,
+    docs: java.lang.String = null,
+    generator: java.lang.String = null,
+    hub: java.lang.String = null,
+    image_url: java.lang.String = null,
+    language: java.lang.String = null,
+    managingEditor: java.lang.String = null,
+    pubDate: stdLib.Date | java.lang.String = null,
+    ttl: scala.Int | scala.Double = null,
+    webMaster: java.lang.String = null
+  ): FeedOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("feed_url")(feed_url)
+    __obj.updateDynamic("site_url")(site_url)
+    __obj.updateDynamic("title")(title)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (custom_elements != null) __obj.updateDynamic("custom_elements")(custom_elements)
+    if (custom_namespaces != null) __obj.updateDynamic("custom_namespaces")(custom_namespaces)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (docs != null) __obj.updateDynamic("docs")(docs)
+    if (generator != null) __obj.updateDynamic("generator")(generator)
+    if (hub != null) __obj.updateDynamic("hub")(hub)
+    if (image_url != null) __obj.updateDynamic("image_url")(image_url)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (managingEditor != null) __obj.updateDynamic("managingEditor")(managingEditor)
+    if (pubDate != null) __obj.updateDynamic("pubDate")(pubDate.asInstanceOf[js.Any])
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (webMaster != null) __obj.updateDynamic("webMaster")(webMaster)
+    __obj.asInstanceOf[FeedOptions]
+  }
+}
+

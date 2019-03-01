@@ -19,3 +19,13 @@ trait MarketOrder extends js.Object {
   var Price: scala.Double
 }
 
+object MarketOrder {
+  @scala.inline
+  def apply(Amount: scala.Double, Price: scala.Double): MarketOrder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Amount")(Amount)
+    __obj.updateDynamic("Price")(Price)
+    __obj.asInstanceOf[MarketOrder]
+  }
+}
+

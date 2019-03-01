@@ -81,3 +81,46 @@ trait ForwardGeocodeResponse extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ForwardGeocodeResponse {
+  @scala.inline
+  def apply(
+    accuracy: scala.Int | scala.Double = null,
+    address: java.lang.String = null,
+    city: java.lang.String = null,
+    code: scala.Int | scala.Double = null,
+    country: java.lang.String = null,
+    countryCode: java.lang.String = null,
+    country_code: java.lang.String = null,
+    displayAddress: java.lang.String = null,
+    error: java.lang.String = null,
+    latitude: java.lang.String = null,
+    longitude: java.lang.String = null,
+    postalCode: java.lang.String = null,
+    region1: java.lang.String = null,
+    region2: java.lang.String = null,
+    street: java.lang.String = null,
+    street1: java.lang.String = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): ForwardGeocodeResponse = {
+    val __obj = js.Dynamic.literal()
+    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (city != null) __obj.updateDynamic("city")(city)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (country_code != null) __obj.updateDynamic("country_code")(country_code)
+    if (displayAddress != null) __obj.updateDynamic("displayAddress")(displayAddress)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (latitude != null) __obj.updateDynamic("latitude")(latitude)
+    if (longitude != null) __obj.updateDynamic("longitude")(longitude)
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
+    if (region1 != null) __obj.updateDynamic("region1")(region1)
+    if (region2 != null) __obj.updateDynamic("region2")(region2)
+    if (street != null) __obj.updateDynamic("street")(street)
+    if (street1 != null) __obj.updateDynamic("street1")(street1)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ForwardGeocodeResponse]
+  }
+}
+

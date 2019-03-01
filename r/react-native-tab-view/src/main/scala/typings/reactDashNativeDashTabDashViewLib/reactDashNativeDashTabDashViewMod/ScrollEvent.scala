@@ -9,3 +9,12 @@ trait ScrollEvent extends js.Object {
   var nativeEvent: reactDashNativeDashTabDashViewLib.Anon_ContentOffset
 }
 
+object ScrollEvent {
+  @scala.inline
+  def apply(nativeEvent: reactDashNativeDashTabDashViewLib.Anon_ContentOffset): ScrollEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nativeEvent")(nativeEvent)
+    __obj.asInstanceOf[ScrollEvent]
+  }
+}
+

@@ -20,3 +20,18 @@ trait ScalesSubGauge extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScalesSubGauge {
+  @scala.inline
+  def apply(
+    height: scala.Int | scala.Double = null,
+    position: ScalesSubGaugesPosition = null,
+    width: scala.Int | scala.Double = null
+  ): ScalesSubGauge = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScalesSubGauge]
+  }
+}
+

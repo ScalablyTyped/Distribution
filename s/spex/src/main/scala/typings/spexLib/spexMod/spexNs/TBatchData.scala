@@ -11,3 +11,14 @@ trait TBatchData extends js.Object {
   var success: scala.Boolean
 }
 
+object TBatchData {
+  @scala.inline
+  def apply(result: js.Any, success: scala.Boolean, origin: TOriginData = null): TBatchData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("success")(success)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    __obj.asInstanceOf[TBatchData]
+  }
+}
+

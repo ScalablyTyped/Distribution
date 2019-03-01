@@ -16,3 +16,13 @@ trait ExtensionFilterResultMetadata extends js.Object {
   var metadataType: java.lang.String
 }
 
+object ExtensionFilterResultMetadata {
+  @scala.inline
+  def apply(metadataItems: js.Array[MetadataItem], metadataType: java.lang.String): ExtensionFilterResultMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metadataItems")(metadataItems)
+    __obj.updateDynamic("metadataType")(metadataType)
+    __obj.asInstanceOf[ExtensionFilterResultMetadata]
+  }
+}
+

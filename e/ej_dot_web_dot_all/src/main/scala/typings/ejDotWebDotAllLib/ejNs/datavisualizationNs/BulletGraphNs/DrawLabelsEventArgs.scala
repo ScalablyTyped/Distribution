@@ -20,3 +20,20 @@ trait DrawLabelsEventArgs extends js.Object {
   var tickElement: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
+object DrawLabelsEventArgs {
+  @scala.inline
+  def apply(
+    Object: js.Any = null,
+    labelType: java.lang.String = null,
+    scaleElement: stdLib.HTMLElement = null,
+    tickElement: stdLib.HTMLElement = null
+  ): DrawLabelsEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Object != null) __obj.updateDynamic("Object")(Object)
+    if (labelType != null) __obj.updateDynamic("labelType")(labelType)
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (tickElement != null) __obj.updateDynamic("tickElement")(tickElement)
+    __obj.asInstanceOf[DrawLabelsEventArgs]
+  }
+}
+

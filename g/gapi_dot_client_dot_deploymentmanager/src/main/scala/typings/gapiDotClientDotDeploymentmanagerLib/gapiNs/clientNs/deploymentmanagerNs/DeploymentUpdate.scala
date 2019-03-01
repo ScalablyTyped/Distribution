@@ -18,3 +18,18 @@ trait DeploymentUpdate extends js.Object {
   var manifest: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeploymentUpdate {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    labels: js.Array[DeploymentUpdateLabelEntry] = null,
+    manifest: java.lang.String = null
+  ): DeploymentUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
+    __obj.asInstanceOf[DeploymentUpdate]
+  }
+}
+

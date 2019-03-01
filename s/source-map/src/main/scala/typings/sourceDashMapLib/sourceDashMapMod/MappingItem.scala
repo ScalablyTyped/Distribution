@@ -14,3 +14,24 @@ trait MappingItem extends js.Object {
   var source: java.lang.String
 }
 
+object MappingItem {
+  @scala.inline
+  def apply(
+    generatedColumn: scala.Double,
+    generatedLine: scala.Double,
+    name: java.lang.String,
+    originalColumn: scala.Double,
+    originalLine: scala.Double,
+    source: java.lang.String
+  ): MappingItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("generatedColumn")(generatedColumn)
+    __obj.updateDynamic("generatedLine")(generatedLine)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("originalColumn")(originalColumn)
+    __obj.updateDynamic("originalLine")(originalLine)
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[MappingItem]
+  }
+}
+

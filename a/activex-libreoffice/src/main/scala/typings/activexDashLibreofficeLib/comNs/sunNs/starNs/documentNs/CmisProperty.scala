@@ -27,3 +27,30 @@ trait CmisProperty extends js.Object {
   var Value: js.Any
 }
 
+object CmisProperty {
+  @scala.inline
+  def apply(
+    Choices: js.Any,
+    Id: java.lang.String,
+    MultiValued: scala.Boolean,
+    Name: java.lang.String,
+    OpenChoice: scala.Boolean,
+    Required: scala.Boolean,
+    Type: java.lang.String,
+    Updatable: scala.Boolean,
+    Value: js.Any
+  ): CmisProperty = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Choices")(Choices)
+    __obj.updateDynamic("Id")(Id)
+    __obj.updateDynamic("MultiValued")(MultiValued)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("OpenChoice")(OpenChoice)
+    __obj.updateDynamic("Required")(Required)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("Updatable")(Updatable)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[CmisProperty]
+  }
+}
+

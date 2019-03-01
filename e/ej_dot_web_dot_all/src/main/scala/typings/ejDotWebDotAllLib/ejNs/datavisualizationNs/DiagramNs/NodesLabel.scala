@@ -124,3 +124,72 @@ trait NodesLabel extends js.Object {
   var wrapping: js.UndefOr[TextWrapping | java.lang.String] = js.undefined
 }
 
+object NodesLabel {
+  @scala.inline
+  def apply(
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    borderColor: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    constraints: LabelConstraints | java.lang.String = null,
+    cssClass: java.lang.String = null,
+    fillColor: java.lang.String = null,
+    fontColor: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    horizontalAlignment: HorizontalAlignment | java.lang.String = null,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    margin: js.Any = null,
+    mode: LabelEditMode | java.lang.String = null,
+    name: java.lang.String = null,
+    offset: js.Any = null,
+    opacity: scala.Int | scala.Double = null,
+    overflowType: OverflowType | java.lang.String = null,
+    padding: js.Any = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    rotateAngle: scala.Int | scala.Double = null,
+    templateId: java.lang.String = null,
+    text: java.lang.String = null,
+    textAlign: TextAlign | java.lang.String = null,
+    textDecoration: TextDecorations | java.lang.String = null,
+    textOverflow: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: VerticalAlignment | java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null,
+    wrapping: TextWrapping | java.lang.String = null
+  ): NodesLabel = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (overflowType != null) __obj.updateDynamic("overflowType")(overflowType.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (rotateAngle != null) __obj.updateDynamic("rotateAngle")(rotateAngle.asInstanceOf[js.Any])
+    if (templateId != null) __obj.updateDynamic("templateId")(templateId)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
+    if (!js.isUndefined(textOverflow)) __obj.updateDynamic("textOverflow")(textOverflow)
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wrapping != null) __obj.updateDynamic("wrapping")(wrapping.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodesLabel]
+  }
+}
+

@@ -43,3 +43,37 @@ trait DataRequirement extends Element {
   var `type`: code
 }
 
+object DataRequirement {
+  @scala.inline
+  def apply(
+    `type`: code,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _mustSupport: js.Array[Element] = null,
+    _profile: js.Array[Element] = null,
+    _type: Element = null,
+    codeFilter: js.Array[DataRequirementCodeFilter] = null,
+    dateFilter: js.Array[DataRequirementDateFilter] = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    mustSupport: js.Array[java.lang.String] = null,
+    profile: js.Array[uri] = null
+  ): DataRequirement = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_mustSupport != null) __obj.updateDynamic("_mustSupport")(_mustSupport)
+    if (_profile != null) __obj.updateDynamic("_profile")(_profile)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (codeFilter != null) __obj.updateDynamic("codeFilter")(codeFilter)
+    if (dateFilter != null) __obj.updateDynamic("dateFilter")(dateFilter)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (mustSupport != null) __obj.updateDynamic("mustSupport")(mustSupport)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    __obj.asInstanceOf[DataRequirement]
+  }
+}
+

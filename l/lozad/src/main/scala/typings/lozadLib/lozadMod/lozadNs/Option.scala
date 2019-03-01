@@ -12,3 +12,20 @@ trait Option extends js.Object {
   var threshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    load: js.Function1[/* element */ stdLib.Element, scala.Unit] = null,
+    loaded: js.Function1[/* element */ stdLib.Element, scala.Unit] = null,
+    rootMargin: java.lang.String = null,
+    threshold: scala.Int | scala.Double = null
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loaded != null) __obj.updateDynamic("loaded")(loaded)
+    if (rootMargin != null) __obj.updateDynamic("rootMargin")(rootMargin)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Option]
+  }
+}
+

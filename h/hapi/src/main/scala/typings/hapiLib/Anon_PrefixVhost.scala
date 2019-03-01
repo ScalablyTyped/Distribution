@@ -16,3 +16,13 @@ trait Anon_PrefixVhost extends js.Object {
   var vhost: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_PrefixVhost {
+  @scala.inline
+  def apply(prefix: java.lang.String, vhost: java.lang.String | js.Array[java.lang.String] = null): Anon_PrefixVhost = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("prefix")(prefix)
+    if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_PrefixVhost]
+  }
+}
+

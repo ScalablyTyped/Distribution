@@ -21,3 +21,26 @@ trait ChooseVideoOptions
   var success_ChooseVideoOptions: js.UndefOr[js.Function1[/* res */ VideoData, scala.Unit]] = js.undefined
 }
 
+object ChooseVideoOptions {
+  @scala.inline
+  def apply(
+    camera: CameraDevice = null,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    compressed: js.UndefOr[scala.Boolean] = js.undefined,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    maxDuration: scala.Int | scala.Double = null,
+    sourceType: js.Array[VideoSourceType] = null,
+    success: js.Function1[/* res */ VideoData, scala.Unit] = null
+  ): ChooseVideoOptions = {
+    val __obj = js.Dynamic.literal()
+    if (camera != null) __obj.updateDynamic("camera")(camera)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ChooseVideoOptions]
+  }
+}
+

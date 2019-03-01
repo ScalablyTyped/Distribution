@@ -15,3 +15,22 @@ trait Anon_Bounds extends js.Object {
   var width: scala.Double
 }
 
+object Anon_Bounds {
+  @scala.inline
+  def apply(
+    bounds: viewportDashMercatorDashProjectLib.viewportDashMercatorDashProjectMod.Bounds,
+    height: scala.Double,
+    width: scala.Double,
+    offset: viewportDashMercatorDashProjectLib.viewportDashMercatorDashProjectMod.Coordinates = null,
+    padding: viewportDashMercatorDashProjectLib.viewportDashMercatorDashProjectMod.Padding = null
+  ): Anon_Bounds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Bounds]
+  }
+}
+

@@ -24,3 +24,28 @@ trait Anon_ChildrenGetPortalPlacement extends js.Object {
   def getPortalPlacement(state: reactDashSelectLib.libComponentsMenuMod.MenuState): scala.Unit
 }
 
+object Anon_ChildrenGetPortalPlacement {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    getPortalPlacement: js.Function1[reactDashSelectLib.libComponentsMenuMod.MenuState, scala.Unit],
+    innerProps: js.Object,
+    maxMenuHeight: scala.Double,
+    menuPlacement: reactDashSelectLib.libTypesMod.MenuPlacement,
+    menuPosition: reactDashSelectLib.libTypesMod.MenuPosition,
+    menuShouldScrollIntoView: scala.Boolean,
+    minMenuHeight: scala.Double
+  ): Anon_ChildrenGetPortalPlacement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("getPortalPlacement")(getPortalPlacement)
+    __obj.updateDynamic("innerProps")(innerProps)
+    __obj.updateDynamic("maxMenuHeight")(maxMenuHeight)
+    __obj.updateDynamic("menuPlacement")(menuPlacement)
+    __obj.updateDynamic("menuPosition")(menuPosition)
+    __obj.updateDynamic("menuShouldScrollIntoView")(menuShouldScrollIntoView)
+    __obj.updateDynamic("minMenuHeight")(minMenuHeight)
+    __obj.asInstanceOf[Anon_ChildrenGetPortalPlacement]
+  }
+}
+

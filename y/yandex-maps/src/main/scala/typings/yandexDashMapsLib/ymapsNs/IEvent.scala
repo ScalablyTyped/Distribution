@@ -19,3 +19,34 @@ trait IEvent extends js.Object {
   def stopPropagation(): scala.Boolean
 }
 
+object IEvent {
+  @scala.inline
+  def apply(
+    allowMapEvent: js.Function0[scala.Unit],
+    callMethod: js.Function1[java.lang.String, scala.Unit],
+    get: js.Function1[java.lang.String, js.Object],
+    getSourceEvent: js.Function0[IEvent | scala.Null],
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    isImmediatePropagationStopped: js.Function0[scala.Boolean],
+    isMapEventAllowed: js.Function0[scala.Boolean],
+    isPropagationStopped: js.Function0[scala.Boolean],
+    preventDefault: js.Function0[scala.Boolean],
+    stopImmediatePropagation: js.Function0[scala.Boolean],
+    stopPropagation: js.Function0[scala.Boolean]
+  ): IEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowMapEvent")(allowMapEvent)
+    __obj.updateDynamic("callMethod")(callMethod)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getSourceEvent")(getSourceEvent)
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
+    __obj.updateDynamic("isMapEventAllowed")(isMapEventAllowed)
+    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
+    __obj.updateDynamic("stopPropagation")(stopPropagation)
+    __obj.asInstanceOf[IEvent]
+  }
+}
+

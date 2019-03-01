@@ -11,3 +11,18 @@ trait KeyboardPanOptions extends js.Object {
   var pixelDelta: js.UndefOr[scala.Double] = js.undefined
 }
 
+object KeyboardPanOptions {
+  @scala.inline
+  def apply(
+    condition: openlayersLib.openlayersMod.EventsConditionType = null,
+    duration: scala.Int | scala.Double = null,
+    pixelDelta: scala.Int | scala.Double = null
+  ): KeyboardPanOptions = {
+    val __obj = js.Dynamic.literal()
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (pixelDelta != null) __obj.updateDynamic("pixelDelta")(pixelDelta.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyboardPanOptions]
+  }
+}
+

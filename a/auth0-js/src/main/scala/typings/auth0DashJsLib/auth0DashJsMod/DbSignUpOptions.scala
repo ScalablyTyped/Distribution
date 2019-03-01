@@ -13,3 +13,22 @@ trait DbSignUpOptions extends js.Object {
   var user_metadata: js.UndefOr[js.Any] = js.undefined
 }
 
+object DbSignUpOptions {
+  @scala.inline
+  def apply(
+    connection: java.lang.String,
+    email: java.lang.String,
+    password: java.lang.String,
+    scope: java.lang.String = null,
+    user_metadata: js.Any = null
+  ): DbSignUpOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("password")(password)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (user_metadata != null) __obj.updateDynamic("user_metadata")(user_metadata)
+    __obj.asInstanceOf[DbSignUpOptions]
+  }
+}
+

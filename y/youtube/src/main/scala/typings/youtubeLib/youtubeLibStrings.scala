@@ -46,7 +46,8 @@ object youtubeLibStrings {
   sealed trait player extends js.Object
   
   @js.native
-  sealed trait red extends js.Object
+  sealed trait red
+    extends youtubeLib.YTNs.ProgressBarColor
   
   @js.native
   sealed trait search extends js.Object
@@ -58,7 +59,8 @@ object youtubeLibStrings {
   sealed trait user_uploads extends js.Object
   
   @js.native
-  sealed trait white extends js.Object
+  sealed trait white
+    extends youtubeLib.YTNs.ProgressBarColor
   
   @scala.inline
   def default: default = "default".asInstanceOf[default]

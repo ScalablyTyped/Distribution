@@ -35,3 +35,66 @@ trait FlashSymbolInstance extends js.Object {
   var visible: scala.Boolean
 }
 
+object FlashSymbolInstance {
+  @scala.inline
+  def apply(
+    accName: java.lang.String,
+    actionScript: java.lang.String,
+    backgroundColor: java.lang.String,
+    bitmapRenderMode: java.lang.String,
+    blendMode: java.lang.String,
+    buttonTracking: java.lang.String,
+    cacheAsBitmap: scala.Boolean,
+    colorAlphaAmount: scala.Double,
+    colorAlphaPercent: scala.Double,
+    colorBlueAmount: scala.Double,
+    colorBluePercent: scala.Double,
+    colorGreenAmount: scala.Double,
+    colorGreenPercent: scala.Double,
+    colorMode: java.lang.String,
+    colorRedAmount: scala.Double,
+    colorRedPercent: scala.Double,
+    description: java.lang.String,
+    filters: js.Array[FlashFilter],
+    firstFrame: scala.Double,
+    forceSimple: scala.Boolean,
+    loop: java.lang.String,
+    shortcut: java.lang.String,
+    silent: scala.Boolean,
+    symbolType: java.lang.String,
+    tabIndex: scala.Double,
+    useBackgroundColor: scala.Boolean,
+    visible: scala.Boolean
+  ): FlashSymbolInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accName")(accName)
+    __obj.updateDynamic("actionScript")(actionScript)
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("bitmapRenderMode")(bitmapRenderMode)
+    __obj.updateDynamic("blendMode")(blendMode)
+    __obj.updateDynamic("buttonTracking")(buttonTracking)
+    __obj.updateDynamic("cacheAsBitmap")(cacheAsBitmap)
+    __obj.updateDynamic("colorAlphaAmount")(colorAlphaAmount)
+    __obj.updateDynamic("colorAlphaPercent")(colorAlphaPercent)
+    __obj.updateDynamic("colorBlueAmount")(colorBlueAmount)
+    __obj.updateDynamic("colorBluePercent")(colorBluePercent)
+    __obj.updateDynamic("colorGreenAmount")(colorGreenAmount)
+    __obj.updateDynamic("colorGreenPercent")(colorGreenPercent)
+    __obj.updateDynamic("colorMode")(colorMode)
+    __obj.updateDynamic("colorRedAmount")(colorRedAmount)
+    __obj.updateDynamic("colorRedPercent")(colorRedPercent)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("filters")(filters)
+    __obj.updateDynamic("firstFrame")(firstFrame)
+    __obj.updateDynamic("forceSimple")(forceSimple)
+    __obj.updateDynamic("loop")(loop)
+    __obj.updateDynamic("shortcut")(shortcut)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("symbolType")(symbolType)
+    __obj.updateDynamic("tabIndex")(tabIndex)
+    __obj.updateDynamic("useBackgroundColor")(useBackgroundColor)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[FlashSymbolInstance]
+  }
+}
+

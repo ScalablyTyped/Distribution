@@ -12,3 +12,20 @@ trait Anon_Control extends js.Object {
   var selectWrapper: java.lang.String
 }
 
+object Anon_Control {
+  @scala.inline
+  def apply(
+    control: java.lang.String,
+    other: java.lang.String,
+    root: java.lang.String,
+    selectWrapper: java.lang.String
+  ): Anon_Control = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("control")(control)
+    __obj.updateDynamic("other")(other)
+    __obj.updateDynamic("root")(root)
+    __obj.updateDynamic("selectWrapper")(selectWrapper)
+    __obj.asInstanceOf[Anon_Control]
+  }
+}
+

@@ -25,3 +25,28 @@ trait DataSettings extends js.Object {
   var TextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color
 }
 
+object DataSettings {
+  @scala.inline
+  def apply(
+    ApplyFilter: scala.Boolean,
+    Filter: java.lang.String,
+    FontDescriptor: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontDescriptor,
+    GroupBy: java.lang.String,
+    HavingClause: java.lang.String,
+    Order: java.lang.String,
+    RowHeight: scala.Double,
+    TextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color
+  ): DataSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ApplyFilter")(ApplyFilter)
+    __obj.updateDynamic("Filter")(Filter)
+    __obj.updateDynamic("FontDescriptor")(FontDescriptor)
+    __obj.updateDynamic("GroupBy")(GroupBy)
+    __obj.updateDynamic("HavingClause")(HavingClause)
+    __obj.updateDynamic("Order")(Order)
+    __obj.updateDynamic("RowHeight")(RowHeight)
+    __obj.updateDynamic("TextColor")(TextColor)
+    __obj.asInstanceOf[DataSettings]
+  }
+}
+

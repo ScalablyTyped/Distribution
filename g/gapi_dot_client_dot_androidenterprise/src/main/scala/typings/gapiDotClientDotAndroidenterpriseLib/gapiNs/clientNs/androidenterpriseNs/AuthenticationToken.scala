@@ -15,3 +15,13 @@ trait AuthenticationToken extends js.Object {
   var token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthenticationToken {
+  @scala.inline
+  def apply(kind: java.lang.String = null, token: java.lang.String = null): AuthenticationToken = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[AuthenticationToken]
+  }
+}
+

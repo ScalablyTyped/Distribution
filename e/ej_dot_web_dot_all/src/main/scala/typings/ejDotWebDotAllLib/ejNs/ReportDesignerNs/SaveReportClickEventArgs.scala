@@ -14,3 +14,13 @@ trait SaveReportClickEventArgs extends js.Object {
   var target: js.UndefOr[ejDotWebDotAllLib.JQuery] = js.undefined
 }
 
+object SaveReportClickEventArgs {
+  @scala.inline
+  def apply(select: java.lang.String = null, target: ejDotWebDotAllLib.JQuery = null): SaveReportClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[SaveReportClickEventArgs]
+  }
+}
+

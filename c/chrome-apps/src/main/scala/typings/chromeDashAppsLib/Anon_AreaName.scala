@@ -27,3 +27,26 @@ trait Anon_AreaName extends js.Object {
   val sync: chromeDashAppsLib.chromeNs.storageNs.SyncStorageArea
 }
 
+object Anon_AreaName {
+  @scala.inline
+  def apply(
+    local: chromeDashAppsLib.chromeNs.storageNs.LocalStorageArea,
+    managed: chromeDashAppsLib.chromeNs.storageNs.ManagedStorageArea,
+    onChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
+      js.Function2[
+        /* changes */ org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.chromeNs.storageNs.StorageChange], 
+        /* areaName */ chromeDashAppsLib.chromeNs.storageNs.StorageAreas, 
+        scala.Unit
+      ]
+    ],
+    sync: chromeDashAppsLib.chromeNs.storageNs.SyncStorageArea
+  ): Anon_AreaName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("local")(local)
+    __obj.updateDynamic("managed")(managed)
+    __obj.updateDynamic("onChanged")(onChanged)
+    __obj.updateDynamic("sync")(sync)
+    __obj.asInstanceOf[Anon_AreaName]
+  }
+}
+

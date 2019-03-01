@@ -20,3 +20,20 @@ trait OnRequestNavigateEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OnRequestNavigateEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    hyperlink: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): OnRequestNavigateEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[OnRequestNavigateEventArgs]
+  }
+}
+

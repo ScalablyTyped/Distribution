@@ -24,3 +24,25 @@ trait FileStatusInfo extends js.Object {
   ]
 }
 
+object FileStatusInfo {
+  @scala.inline
+  def apply(
+    fileEntry: filesystemLib.FileEntry,
+    status: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_CONFLICTING, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONFLICTING[keyof chrome-apps.Anon_CONFLICTING] */ js.Any
+      ]
+    ],
+    error: java.lang.String = null
+  ): FileStatusInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileEntry")(fileEntry)
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[FileStatusInfo]
+  }
+}
+

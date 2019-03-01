@@ -24,3 +24,20 @@ trait CellProps extends js.Object {
   var style: reactLib.reactMod.ReactNs.CSSProperties
 }
 
+object CellProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String,
+    index: scala.Double,
+    rowIndex: scala.Double,
+    style: reactLib.reactMod.ReactNs.CSSProperties
+  ): CellProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("rowIndex")(rowIndex)
+    __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[CellProps]
+  }
+}
+

@@ -17,3 +17,24 @@ trait XDataBarEntry extends js.Object {
   def setType(Type: scala.Double): scala.Unit
 }
 
+object XDataBarEntry {
+  @scala.inline
+  def apply(
+    Formula: java.lang.String,
+    Type: scala.Double,
+    getFormula: js.Function0[java.lang.String],
+    getType: js.Function0[scala.Double],
+    setFormula: js.Function1[java.lang.String, scala.Unit],
+    setType: js.Function1[scala.Double, scala.Unit]
+  ): XDataBarEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Formula")(Formula)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("getFormula")(getFormula)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("setFormula")(setFormula)
+    __obj.updateDynamic("setType")(setType)
+    __obj.asInstanceOf[XDataBarEntry]
+  }
+}
+

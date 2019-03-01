@@ -31,3 +31,22 @@ trait BaseOptions extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BaseOptions {
+  @scala.inline
+  def apply(
+    body: java.lang.String = null,
+    isPrerelease: js.UndefOr[scala.Boolean] = js.undefined,
+    tag: java.lang.String = null,
+    target: java.lang.String = null,
+    title: java.lang.String = null
+  ): BaseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (!js.isUndefined(isPrerelease)) __obj.updateDynamic("isPrerelease")(isPrerelease)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[BaseOptions]
+  }
+}
+

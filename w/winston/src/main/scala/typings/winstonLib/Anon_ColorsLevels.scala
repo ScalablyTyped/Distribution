@@ -10,3 +10,16 @@ trait Anon_ColorsLevels extends js.Object {
   var levels: winstonLib.libWinstonConfigMod.winstonNs.NpmConfigSetLevels
 }
 
+object Anon_ColorsLevels {
+  @scala.inline
+  def apply(
+    colors: winstonLib.libWinstonConfigMod.winstonNs.NpmConfigSetColors,
+    levels: winstonLib.libWinstonConfigMod.winstonNs.NpmConfigSetLevels
+  ): Anon_ColorsLevels = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("colors")(colors)
+    __obj.updateDynamic("levels")(levels)
+    __obj.asInstanceOf[Anon_ColorsLevels]
+  }
+}
+

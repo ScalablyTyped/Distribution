@@ -20,3 +20,42 @@ trait TriggersResource extends js.Object {
   def update(request: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint): gapiDotClientLib.gapiNs.clientNs.Request[Trigger]
 }
 
+object TriggersResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Trigger]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Trigger]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTriggersResponse]
+    ],
+    revert: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RevertTriggerResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Trigger]
+    ]
+  ): TriggersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("revert")(revert)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[TriggersResource]
+  }
+}
+

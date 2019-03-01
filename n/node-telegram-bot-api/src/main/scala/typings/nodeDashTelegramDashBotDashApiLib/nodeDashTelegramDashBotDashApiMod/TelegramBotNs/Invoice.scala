@@ -13,3 +13,22 @@ trait Invoice extends js.Object {
   var total_amount: scala.Double
 }
 
+object Invoice {
+  @scala.inline
+  def apply(
+    currency: java.lang.String,
+    description: java.lang.String,
+    start_parameter: java.lang.String,
+    title: java.lang.String,
+    total_amount: scala.Double
+  ): Invoice = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("start_parameter")(start_parameter)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("total_amount")(total_amount)
+    __obj.asInstanceOf[Invoice]
+  }
+}
+

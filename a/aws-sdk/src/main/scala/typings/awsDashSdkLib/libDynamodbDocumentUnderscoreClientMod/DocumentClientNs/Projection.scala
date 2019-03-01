@@ -16,3 +16,13 @@ trait Projection extends js.Object {
   var ProjectionType: js.UndefOr[ProjectionType] = js.undefined
 }
 
+object Projection {
+  @scala.inline
+  def apply(NonKeyAttributes: NonKeyAttributeNameList = null, ProjectionType: ProjectionType = null): Projection = {
+    val __obj = js.Dynamic.literal()
+    if (NonKeyAttributes != null) __obj.updateDynamic("NonKeyAttributes")(NonKeyAttributes)
+    if (ProjectionType != null) __obj.updateDynamic("ProjectionType")(ProjectionType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Projection]
+  }
+}
+

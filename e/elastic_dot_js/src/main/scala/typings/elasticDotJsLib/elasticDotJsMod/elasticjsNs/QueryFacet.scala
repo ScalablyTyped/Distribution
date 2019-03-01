@@ -48,3 +48,30 @@ trait QueryFacet extends Facet {
   def toJSON(): js.Any
 }
 
+object QueryFacet {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cacheFilter: js.Function1[scala.Boolean, QueryFacet],
+    facetFilter: js.Function1[js.Object, QueryFacet],
+    global: js.Function1[scala.Boolean, QueryFacet],
+    mode: js.Function1[java.lang.String, QueryFacet],
+    nested: js.Function1[java.lang.String, QueryFacet],
+    query: js.Function1[js.Object, QueryFacet],
+    scope: js.Function1[java.lang.String, QueryFacet],
+    toJSON: js.Function0[js.Any]
+  ): QueryFacet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cacheFilter")(cacheFilter)
+    __obj.updateDynamic("facetFilter")(facetFilter)
+    __obj.updateDynamic("global")(global)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("nested")(nested)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[QueryFacet]
+  }
+}
+

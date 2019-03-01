@@ -7,37 +7,48 @@ import scala.scalajs.js.annotation._
 
 object atPulumiCloudLibStrings {
   @js.native
-  sealed trait HostPathVolume extends js.Object
+  sealed trait HostPathVolume
+    extends atPulumiCloudLib.serviceMod.VolumeKind
   
   @js.native
-  sealed trait SharedVolume extends js.Object
+  sealed trait SharedVolume
+    extends atPulumiCloudLib.serviceMod.VolumeKind
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends atPulumiCloudLib.tableMod.PrimaryKeyType
   
   @js.native
-  sealed trait http extends js.Object
+  sealed trait http
+    extends atPulumiCloudLib.serviceMod.ContainerProtocol
   
   @js.native
-  sealed trait https extends js.Object
+  sealed trait https
+    extends atPulumiCloudLib.serviceMod.ContainerProtocol
   
   @js.native
-  sealed trait linux extends js.Object
+  sealed trait linux
+    extends atPulumiCloudLib.serviceMod.HostOperatingSystem
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends atPulumiCloudLib.tableMod.PrimaryKeyType
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends atPulumiCloudLib.tableMod.PrimaryKeyType
   
   @js.native
-  sealed trait tcp extends js.Object
+  sealed trait tcp
+    extends atPulumiCloudLib.serviceMod.ContainerProtocol
   
   @js.native
-  sealed trait udp extends js.Object
+  sealed trait udp
+    extends atPulumiCloudLib.serviceMod.ContainerProtocol
   
   @js.native
-  sealed trait windows extends js.Object
+  sealed trait windows
+    extends atPulumiCloudLib.serviceMod.HostOperatingSystem
   
   @scala.inline
   def HostPathVolume: HostPathVolume = "HostPathVolume".asInstanceOf[HostPathVolume]

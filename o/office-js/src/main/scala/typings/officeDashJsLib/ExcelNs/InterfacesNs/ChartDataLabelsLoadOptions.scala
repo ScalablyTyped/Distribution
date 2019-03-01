@@ -116,3 +116,42 @@ trait ChartDataLabelsLoadOptions extends js.Object {
   var verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartDataLabelsLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    autoText: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartDataLabelFormatLoadOptions = null,
+    horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    numberFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    position: js.UndefOr[scala.Boolean] = js.undefined,
+    separator: js.UndefOr[scala.Boolean] = js.undefined,
+    showBubbleSize: js.UndefOr[scala.Boolean] = js.undefined,
+    showCategoryName: js.UndefOr[scala.Boolean] = js.undefined,
+    showLegendKey: js.UndefOr[scala.Boolean] = js.undefined,
+    showPercentage: js.UndefOr[scala.Boolean] = js.undefined,
+    showSeriesName: js.UndefOr[scala.Boolean] = js.undefined,
+    showValue: js.UndefOr[scala.Boolean] = js.undefined,
+    textOrientation: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartDataLabelsLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(showBubbleSize)) __obj.updateDynamic("showBubbleSize")(showBubbleSize)
+    if (!js.isUndefined(showCategoryName)) __obj.updateDynamic("showCategoryName")(showCategoryName)
+    if (!js.isUndefined(showLegendKey)) __obj.updateDynamic("showLegendKey")(showLegendKey)
+    if (!js.isUndefined(showPercentage)) __obj.updateDynamic("showPercentage")(showPercentage)
+    if (!js.isUndefined(showSeriesName)) __obj.updateDynamic("showSeriesName")(showSeriesName)
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue)
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation)
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    __obj.asInstanceOf[ChartDataLabelsLoadOptions]
+  }
+}
+

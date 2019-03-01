@@ -57,3 +57,33 @@ trait AutocompleteProvider extends js.Object {
   def getSuggestions(params: SuggestionsRequestedEvent): Suggestions | js.Promise[Suggestions]
 }
 
+object AutocompleteProvider {
+  @scala.inline
+  def apply(
+    getSuggestions: js.Function1[SuggestionsRequestedEvent, Suggestions | js.Promise[Suggestions]],
+    selector: java.lang.String,
+    disableForSelector: java.lang.String = null,
+    dispose: js.Function0[scala.Unit] = null,
+    excludeLowerPriority: js.UndefOr[scala.Boolean] = js.undefined,
+    getSuggestionDetailsOnSelect: js.Function1[
+      /* suggestion */ AnySuggestion, 
+      (js.Promise[AnySuggestion | scala.Null]) | AnySuggestion | scala.Null
+    ] = null,
+    inclusionPriority: scala.Int | scala.Double = null,
+    onDidInsertSuggestion: js.Function1[/* params */ SuggestionInsertedEvent, scala.Unit] = null,
+    suggestionPriority: scala.Int | scala.Double = null
+  ): AutocompleteProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getSuggestions")(getSuggestions)
+    __obj.updateDynamic("selector")(selector)
+    if (disableForSelector != null) __obj.updateDynamic("disableForSelector")(disableForSelector)
+    if (dispose != null) __obj.updateDynamic("dispose")(dispose)
+    if (!js.isUndefined(excludeLowerPriority)) __obj.updateDynamic("excludeLowerPriority")(excludeLowerPriority)
+    if (getSuggestionDetailsOnSelect != null) __obj.updateDynamic("getSuggestionDetailsOnSelect")(getSuggestionDetailsOnSelect)
+    if (inclusionPriority != null) __obj.updateDynamic("inclusionPriority")(inclusionPriority.asInstanceOf[js.Any])
+    if (onDidInsertSuggestion != null) __obj.updateDynamic("onDidInsertSuggestion")(onDidInsertSuggestion)
+    if (suggestionPriority != null) __obj.updateDynamic("suggestionPriority")(suggestionPriority.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AutocompleteProvider]
+  }
+}
+

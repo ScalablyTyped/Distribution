@@ -42,3 +42,24 @@ trait Label extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Label {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    offset: LabelOffset = null,
+    position: java.lang.String = null,
+    rotate: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Label = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Label]
+  }
+}
+

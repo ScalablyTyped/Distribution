@@ -11,3 +11,18 @@ trait Anon_LEFT extends js.Object {
   var RIGHT: threeLib.threeDashCoreMod.MOUSE
 }
 
+object Anon_LEFT {
+  @scala.inline
+  def apply(
+    LEFT: threeLib.threeDashCoreMod.MOUSE,
+    MIDDLE: threeLib.threeDashCoreMod.MOUSE,
+    RIGHT: threeLib.threeDashCoreMod.MOUSE
+  ): Anon_LEFT = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LEFT")(LEFT)
+    __obj.updateDynamic("MIDDLE")(MIDDLE)
+    __obj.updateDynamic("RIGHT")(RIGHT)
+    __obj.asInstanceOf[Anon_LEFT]
+  }
+}
+

@@ -11,3 +11,20 @@ trait TableProps extends UndecoratedTableProps {
   var sortable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableProps {
+  @scala.inline
+  def apply(
+    UndecoratedTableProps: UndecoratedTableProps = null,
+    onSelectionChanged: js.Function1[/* row */ js.Any, _] = null,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    sortable: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableProps = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, UndecoratedTableProps)
+    if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(onSelectionChanged)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    __obj.asInstanceOf[TableProps]
+  }
+}
+

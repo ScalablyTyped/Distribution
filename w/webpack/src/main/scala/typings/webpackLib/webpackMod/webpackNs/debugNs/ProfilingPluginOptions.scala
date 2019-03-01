@@ -10,3 +10,12 @@ trait ProfilingPluginOptions extends js.Object {
   var outputPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProfilingPluginOptions {
+  @scala.inline
+  def apply(outputPath: java.lang.String = null): ProfilingPluginOptions = {
+    val __obj = js.Dynamic.literal()
+    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath)
+    __obj.asInstanceOf[ProfilingPluginOptions]
+  }
+}
+

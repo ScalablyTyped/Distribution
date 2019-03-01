@@ -10,3 +10,16 @@ trait Anon_Gfm extends js.Object {
   var stripListLeaders: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Gfm {
+  @scala.inline
+  def apply(
+    gfm: js.UndefOr[scala.Boolean] = js.undefined,
+    stripListLeaders: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Gfm = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm)
+    if (!js.isUndefined(stripListLeaders)) __obj.updateDynamic("stripListLeaders")(stripListLeaders)
+    __obj.asInstanceOf[Anon_Gfm]
+  }
+}
+

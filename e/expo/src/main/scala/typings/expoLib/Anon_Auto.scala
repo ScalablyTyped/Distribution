@@ -12,3 +12,15 @@ trait Anon_Auto extends js.Object {
   var torch: java.lang.String
 }
 
+object Anon_Auto {
+  @scala.inline
+  def apply(auto: java.lang.String, off: java.lang.String, on: java.lang.String, torch: java.lang.String): Anon_Auto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("auto")(auto)
+    __obj.updateDynamic("off")(off)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("torch")(torch)
+    __obj.asInstanceOf[Anon_Auto]
+  }
+}
+

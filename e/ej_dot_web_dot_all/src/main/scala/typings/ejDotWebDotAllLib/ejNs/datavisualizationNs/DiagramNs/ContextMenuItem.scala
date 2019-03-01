@@ -28,3 +28,22 @@ trait ContextMenuItem extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContextMenuItem {
+  @scala.inline
+  def apply(
+    cssClass: java.lang.String = null,
+    imageUrl: java.lang.String = null,
+    name: java.lang.String = null,
+    subItems: js.Array[_] = null,
+    text: java.lang.String = null
+  ): ContextMenuItem = {
+    val __obj = js.Dynamic.literal()
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (subItems != null) __obj.updateDynamic("subItems")(subItems)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ContextMenuItem]
+  }
+}
+

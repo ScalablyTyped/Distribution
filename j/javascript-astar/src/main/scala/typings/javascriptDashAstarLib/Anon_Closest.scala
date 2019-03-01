@@ -10,3 +10,13 @@ trait Anon_Closest extends js.Object {
   var heuristic: js.UndefOr[Heuristic] = js.undefined
 }
 
+object Anon_Closest {
+  @scala.inline
+  def apply(closest: js.UndefOr[scala.Boolean] = js.undefined, heuristic: Heuristic = null): Anon_Closest = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(closest)) __obj.updateDynamic("closest")(closest)
+    if (heuristic != null) __obj.updateDynamic("heuristic")(heuristic)
+    __obj.asInstanceOf[Anon_Closest]
+  }
+}
+

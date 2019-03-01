@@ -37,3 +37,24 @@ trait IGridOptions extends js.Object {
   var expandableRowTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(
+    enableExpandable: js.UndefOr[scala.Boolean] = js.undefined,
+    enableExpandableRowHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    expandableRowHeaderWidth: scala.Int | scala.Double = null,
+    expandableRowHeight: scala.Int | scala.Double = null,
+    expandableRowScope: angularLib.angularMod.angularNs.IScope | js.Object = null,
+    expandableRowTemplate: java.lang.String = null
+  ): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableExpandable)) __obj.updateDynamic("enableExpandable")(enableExpandable)
+    if (!js.isUndefined(enableExpandableRowHeader)) __obj.updateDynamic("enableExpandableRowHeader")(enableExpandableRowHeader)
+    if (expandableRowHeaderWidth != null) __obj.updateDynamic("expandableRowHeaderWidth")(expandableRowHeaderWidth.asInstanceOf[js.Any])
+    if (expandableRowHeight != null) __obj.updateDynamic("expandableRowHeight")(expandableRowHeight.asInstanceOf[js.Any])
+    if (expandableRowScope != null) __obj.updateDynamic("expandableRowScope")(expandableRowScope.asInstanceOf[js.Any])
+    if (expandableRowTemplate != null) __obj.updateDynamic("expandableRowTemplate")(expandableRowTemplate)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

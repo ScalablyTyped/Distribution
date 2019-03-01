@@ -21,3 +21,13 @@ trait UiLabelElement extends js.Object {
   def setLabel(label: java.lang.String): scala.Unit
 }
 
+object UiLabelElement {
+  @scala.inline
+  def apply(getLabel: js.Function0[java.lang.String], setLabel: js.Function1[java.lang.String, scala.Unit]): UiLabelElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getLabel")(getLabel)
+    __obj.updateDynamic("setLabel")(setLabel)
+    __obj.asInstanceOf[UiLabelElement]
+  }
+}
+

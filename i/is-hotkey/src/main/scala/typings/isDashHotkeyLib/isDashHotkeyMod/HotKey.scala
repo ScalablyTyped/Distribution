@@ -14,3 +14,24 @@ trait HotKey extends js.Object {
   var which: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HotKey {
+  @scala.inline
+  def apply(
+    altKey: scala.Boolean,
+    ctrlKey: scala.Boolean,
+    metaKey: scala.Boolean,
+    shiftKey: scala.Boolean,
+    key: java.lang.String = null,
+    which: scala.Int | scala.Double = null
+  ): HotKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("altKey")(altKey)
+    __obj.updateDynamic("ctrlKey")(ctrlKey)
+    __obj.updateDynamic("metaKey")(metaKey)
+    __obj.updateDynamic("shiftKey")(shiftKey)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (which != null) __obj.updateDynamic("which")(which.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HotKey]
+  }
+}
+

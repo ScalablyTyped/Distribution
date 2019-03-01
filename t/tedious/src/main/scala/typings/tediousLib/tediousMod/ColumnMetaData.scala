@@ -28,3 +28,21 @@ trait ColumnMetaData extends js.Object {
   var `type`: ColumnType
 }
 
+object ColumnMetaData {
+  @scala.inline
+  def apply(
+    colName: java.lang.String,
+    `type`: ColumnType,
+    dataLength: scala.Int | scala.Double = null,
+    precision: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null
+  ): ColumnMetaData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("colName")(colName)
+    if (dataLength != null) __obj.updateDynamic("dataLength")(dataLength.asInstanceOf[js.Any])
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnMetaData]
+  }
+}
+

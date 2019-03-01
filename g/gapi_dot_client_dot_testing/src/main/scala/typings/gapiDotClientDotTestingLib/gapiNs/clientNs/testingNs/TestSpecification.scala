@@ -41,3 +41,28 @@ trait TestSpecification extends js.Object {
   var testTimeout: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TestSpecification {
+  @scala.inline
+  def apply(
+    androidInstrumentationTest: AndroidInstrumentationTest = null,
+    androidRoboTest: AndroidRoboTest = null,
+    androidTestLoop: AndroidTestLoop = null,
+    autoGoogleLogin: js.UndefOr[scala.Boolean] = js.undefined,
+    disablePerformanceMetrics: js.UndefOr[scala.Boolean] = js.undefined,
+    disableVideoRecording: js.UndefOr[scala.Boolean] = js.undefined,
+    testSetup: TestSetup = null,
+    testTimeout: java.lang.String = null
+  ): TestSpecification = {
+    val __obj = js.Dynamic.literal()
+    if (androidInstrumentationTest != null) __obj.updateDynamic("androidInstrumentationTest")(androidInstrumentationTest)
+    if (androidRoboTest != null) __obj.updateDynamic("androidRoboTest")(androidRoboTest)
+    if (androidTestLoop != null) __obj.updateDynamic("androidTestLoop")(androidTestLoop)
+    if (!js.isUndefined(autoGoogleLogin)) __obj.updateDynamic("autoGoogleLogin")(autoGoogleLogin)
+    if (!js.isUndefined(disablePerformanceMetrics)) __obj.updateDynamic("disablePerformanceMetrics")(disablePerformanceMetrics)
+    if (!js.isUndefined(disableVideoRecording)) __obj.updateDynamic("disableVideoRecording")(disableVideoRecording)
+    if (testSetup != null) __obj.updateDynamic("testSetup")(testSetup)
+    if (testTimeout != null) __obj.updateDynamic("testTimeout")(testTimeout)
+    __obj.asInstanceOf[TestSpecification]
+  }
+}
+

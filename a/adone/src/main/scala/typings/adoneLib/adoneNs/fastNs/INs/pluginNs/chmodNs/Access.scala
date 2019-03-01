@@ -20,3 +20,18 @@ trait Access extends js.Object {
   var write: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Access {
+  @scala.inline
+  def apply(
+    execute: js.UndefOr[scala.Boolean] = js.undefined,
+    read: js.UndefOr[scala.Boolean] = js.undefined,
+    write: js.UndefOr[scala.Boolean] = js.undefined
+  ): Access = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(execute)) __obj.updateDynamic("execute")(execute)
+    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read)
+    if (!js.isUndefined(write)) __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[Access]
+  }
+}
+

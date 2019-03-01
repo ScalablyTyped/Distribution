@@ -11,3 +11,18 @@ trait DistanceMatrixResponse extends js.Object {
   var rows: js.Array[DistanceMatrixResponseRow]
 }
 
+object DistanceMatrixResponse {
+  @scala.inline
+  def apply(
+    destinationAddresses: js.Array[java.lang.String],
+    originAddresses: js.Array[java.lang.String],
+    rows: js.Array[DistanceMatrixResponseRow]
+  ): DistanceMatrixResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinationAddresses")(destinationAddresses)
+    __obj.updateDynamic("originAddresses")(originAddresses)
+    __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[DistanceMatrixResponse]
+  }
+}
+

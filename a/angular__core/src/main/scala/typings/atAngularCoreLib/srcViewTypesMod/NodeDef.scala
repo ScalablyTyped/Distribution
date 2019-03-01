@@ -47,3 +47,58 @@ trait NodeDef extends js.Object {
   var text: TextDef | scala.Null
 }
 
+object NodeDef {
+  @scala.inline
+  def apply(
+    bindingFlags: BindingFlags,
+    bindingIndex: scala.Double,
+    bindings: js.Array[BindingDef],
+    checkIndex: scala.Double,
+    childCount: scala.Double,
+    childFlags: NodeFlags,
+    childMatchedQueries: scala.Double,
+    directChildFlags: NodeFlags,
+    flags: NodeFlags,
+    matchedQueries: org.scalablytyped.runtime.NumberDictionary[QueryValueType],
+    matchedQueryIds: scala.Double,
+    nodeIndex: scala.Double,
+    outputIndex: scala.Double,
+    outputs: js.Array[OutputDef],
+    references: org.scalablytyped.runtime.StringDictionary[QueryValueType],
+    element: ElementDef = null,
+    ngContent: NgContentDef = null,
+    ngContentIndex: scala.Int | scala.Double = null,
+    parent: NodeDef = null,
+    provider: ProviderDef = null,
+    query: QueryDef = null,
+    renderParent: NodeDef = null,
+    text: TextDef = null
+  ): NodeDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bindingFlags")(bindingFlags)
+    __obj.updateDynamic("bindingIndex")(bindingIndex)
+    __obj.updateDynamic("bindings")(bindings)
+    __obj.updateDynamic("checkIndex")(checkIndex)
+    __obj.updateDynamic("childCount")(childCount)
+    __obj.updateDynamic("childFlags")(childFlags)
+    __obj.updateDynamic("childMatchedQueries")(childMatchedQueries)
+    __obj.updateDynamic("directChildFlags")(directChildFlags)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("matchedQueries")(matchedQueries)
+    __obj.updateDynamic("matchedQueryIds")(matchedQueryIds)
+    __obj.updateDynamic("nodeIndex")(nodeIndex)
+    __obj.updateDynamic("outputIndex")(outputIndex)
+    __obj.updateDynamic("outputs")(outputs)
+    __obj.updateDynamic("references")(references)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (ngContent != null) __obj.updateDynamic("ngContent")(ngContent)
+    if (ngContentIndex != null) __obj.updateDynamic("ngContentIndex")(ngContentIndex.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (renderParent != null) __obj.updateDynamic("renderParent")(renderParent)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[NodeDef]
+  }
+}
+

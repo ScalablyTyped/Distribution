@@ -64,3 +64,32 @@ trait MathMenu extends js.Object {
   var windowSettings: js.UndefOr[js.Any] = js.undefined
 }
 
+object MathMenu {
+  @scala.inline
+  def apply(
+    delay: scala.Int | scala.Double = null,
+    helpURL: java.lang.String = null,
+    semanticsAnnotations: js.Any = null,
+    showContext: js.UndefOr[scala.Boolean] = js.undefined,
+    showFontMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    showLocale: js.UndefOr[scala.Boolean] = js.undefined,
+    showMathPlayer: js.UndefOr[scala.Boolean] = js.undefined,
+    showRenderer: js.UndefOr[scala.Boolean] = js.undefined,
+    styles: js.Any = null,
+    windowSettings: js.Any = null
+  ): MathMenu = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (helpURL != null) __obj.updateDynamic("helpURL")(helpURL)
+    if (semanticsAnnotations != null) __obj.updateDynamic("semanticsAnnotations")(semanticsAnnotations)
+    if (!js.isUndefined(showContext)) __obj.updateDynamic("showContext")(showContext)
+    if (!js.isUndefined(showFontMenu)) __obj.updateDynamic("showFontMenu")(showFontMenu)
+    if (!js.isUndefined(showLocale)) __obj.updateDynamic("showLocale")(showLocale)
+    if (!js.isUndefined(showMathPlayer)) __obj.updateDynamic("showMathPlayer")(showMathPlayer)
+    if (!js.isUndefined(showRenderer)) __obj.updateDynamic("showRenderer")(showRenderer)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (windowSettings != null) __obj.updateDynamic("windowSettings")(windowSettings)
+    __obj.asInstanceOf[MathMenu]
+  }
+}
+

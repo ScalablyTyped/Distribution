@@ -10,3 +10,13 @@ trait Anon_NextMonth extends js.Object {
   var previousMonth: java.lang.String
 }
 
+object Anon_NextMonth {
+  @scala.inline
+  def apply(nextMonth: java.lang.String, previousMonth: java.lang.String): Anon_NextMonth = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nextMonth")(nextMonth)
+    __obj.updateDynamic("previousMonth")(previousMonth)
+    __obj.asInstanceOf[Anon_NextMonth]
+  }
+}
+

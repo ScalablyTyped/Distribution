@@ -77,3 +77,38 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object HeaderProps {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    backgroundImage: reactDashNativeLib.reactDashNativeMod.ImageURISource = null,
+    backgroundImageStyle: reactDashNativeLib.reactDashNativeMod.ImageStyle = null,
+    barStyle: reactDashNativeLib.reactDashNativeMod.StatusBarStyle = null,
+    centerComponent: HeaderSubComponent = null,
+    centerContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    leftComponent: HeaderSubComponent = null,
+    leftContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    placement: reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.left | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.center | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.right = null,
+    rightComponent: HeaderSubComponent = null,
+    rightContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    statusBarProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StatusBarProperties */ js.Any = null
+  ): HeaderProps = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage)
+    if (backgroundImageStyle != null) __obj.updateDynamic("backgroundImageStyle")(backgroundImageStyle)
+    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle)
+    if (centerComponent != null) __obj.updateDynamic("centerComponent")(centerComponent.asInstanceOf[js.Any])
+    if (centerContainerStyle != null) __obj.updateDynamic("centerContainerStyle")(centerContainerStyle.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (leftComponent != null) __obj.updateDynamic("leftComponent")(leftComponent.asInstanceOf[js.Any])
+    if (leftContainerStyle != null) __obj.updateDynamic("leftContainerStyle")(leftContainerStyle.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (rightComponent != null) __obj.updateDynamic("rightComponent")(rightComponent.asInstanceOf[js.Any])
+    if (rightContainerStyle != null) __obj.updateDynamic("rightContainerStyle")(rightContainerStyle.asInstanceOf[js.Any])
+    if (statusBarProps != null) __obj.updateDynamic("statusBarProps")(statusBarProps)
+    __obj.asInstanceOf[HeaderProps]
+  }
+}
+

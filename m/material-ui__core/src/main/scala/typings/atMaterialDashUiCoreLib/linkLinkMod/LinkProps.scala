@@ -24,3 +24,32 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object LinkProps {
+  @scala.inline
+  def apply(
+    TypographyClasses: stdLib.Partial[
+      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey]
+    ] = null,
+    block: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[LinkClassKey]] = null,
+    color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color = null,
+    component: reactLib.reactMod.ReactNs.ReactType[LinkProps] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    underline: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.hover | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.always = null
+  ): LinkProps = {
+    val __obj = js.Dynamic.literal()
+    if (TypographyClasses != null) __obj.updateDynamic("TypographyClasses")(TypographyClasses)
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LinkProps]
+  }
+}
+

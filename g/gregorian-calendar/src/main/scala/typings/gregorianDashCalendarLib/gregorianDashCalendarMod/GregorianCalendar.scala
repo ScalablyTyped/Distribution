@@ -172,3 +172,99 @@ trait GregorianCalendar extends js.Object {
   def setYear(year: stdLib.Number): scala.Unit
 }
 
+object GregorianCalendar {
+  @scala.inline
+  def apply(
+    addDayOfMonth: js.Function1[stdLib.Number, scala.Unit],
+    addHourOfDay: js.Function1[stdLib.Number, scala.Unit],
+    addMilliSecond: js.Function1[stdLib.Number, scala.Unit],
+    addMinute: js.Function1[stdLib.Number, scala.Unit],
+    addMonth: js.Function1[stdLib.Number, scala.Unit],
+    addSecond: js.Function1[stdLib.Number, scala.Unit],
+    addYear: js.Function1[stdLib.Number, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    clone: js.Function0[GregorianCalendar],
+    compareToDay: js.Function1[GregorianCalendar, stdLib.Number],
+    equals: js.Function1[GregorianCalendar, scala.Boolean],
+    getDayOfMonth: js.Function0[stdLib.Number],
+    getDayOfWeek: js.Function0[stdLib.Number],
+    getDayOfWeekInMonth: js.Function0[stdLib.Number],
+    getDayOfYear: js.Function0[stdLib.Number],
+    getHourOfDay: js.Function0[stdLib.Number],
+    getMilliSeconds: js.Function0[stdLib.Number],
+    getMinutes: js.Function0[stdLib.Number],
+    getMonth: js.Function0[stdLib.Number],
+    getSeconds: js.Function0[stdLib.Number],
+    getTime: js.Function0[stdLib.Number],
+    getTimezoneOffset: js.Function0[stdLib.Number],
+    getWeekOfMonth: js.Function0[stdLib.Number],
+    getWeekOfYear: js.Function0[stdLib.Number],
+    getWeekYear: js.Function0[stdLib.Number],
+    getWeeksInWeekYear: js.Function0[stdLib.Number],
+    getYear: js.Function0[stdLib.Number],
+    rollSetMonth: js.Function1[stdLib.Number, scala.Unit],
+    set: js.Function7[
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      stdLib.Number, 
+      scala.Unit
+    ],
+    setDayOfMonth: js.Function1[stdLib.Number, scala.Unit],
+    setHourOfDay: js.Function1[stdLib.Number, scala.Unit],
+    setMilliSeconds: js.Function1[stdLib.Number, scala.Unit],
+    setMinutes: js.Function1[stdLib.Number, scala.Unit],
+    setMonth: js.Function1[stdLib.Number, scala.Unit],
+    setSeconds: js.Function1[stdLib.Number, scala.Unit],
+    setTime: js.Function1[stdLib.Number, scala.Unit],
+    setTimezoneOffset: js.Function1[stdLib.Number, scala.Unit],
+    setWeekDate: js.Function3[stdLib.Number, stdLib.Number, stdLib.Number, scala.Unit],
+    setYear: js.Function1[stdLib.Number, scala.Unit]
+  ): GregorianCalendar = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addDayOfMonth")(addDayOfMonth)
+    __obj.updateDynamic("addHourOfDay")(addHourOfDay)
+    __obj.updateDynamic("addMilliSecond")(addMilliSecond)
+    __obj.updateDynamic("addMinute")(addMinute)
+    __obj.updateDynamic("addMonth")(addMonth)
+    __obj.updateDynamic("addSecond")(addSecond)
+    __obj.updateDynamic("addYear")(addYear)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("compareToDay")(compareToDay)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("getDayOfMonth")(getDayOfMonth)
+    __obj.updateDynamic("getDayOfWeek")(getDayOfWeek)
+    __obj.updateDynamic("getDayOfWeekInMonth")(getDayOfWeekInMonth)
+    __obj.updateDynamic("getDayOfYear")(getDayOfYear)
+    __obj.updateDynamic("getHourOfDay")(getHourOfDay)
+    __obj.updateDynamic("getMilliSeconds")(getMilliSeconds)
+    __obj.updateDynamic("getMinutes")(getMinutes)
+    __obj.updateDynamic("getMonth")(getMonth)
+    __obj.updateDynamic("getSeconds")(getSeconds)
+    __obj.updateDynamic("getTime")(getTime)
+    __obj.updateDynamic("getTimezoneOffset")(getTimezoneOffset)
+    __obj.updateDynamic("getWeekOfMonth")(getWeekOfMonth)
+    __obj.updateDynamic("getWeekOfYear")(getWeekOfYear)
+    __obj.updateDynamic("getWeekYear")(getWeekYear)
+    __obj.updateDynamic("getWeeksInWeekYear")(getWeeksInWeekYear)
+    __obj.updateDynamic("getYear")(getYear)
+    __obj.updateDynamic("rollSetMonth")(rollSetMonth)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("setDayOfMonth")(setDayOfMonth)
+    __obj.updateDynamic("setHourOfDay")(setHourOfDay)
+    __obj.updateDynamic("setMilliSeconds")(setMilliSeconds)
+    __obj.updateDynamic("setMinutes")(setMinutes)
+    __obj.updateDynamic("setMonth")(setMonth)
+    __obj.updateDynamic("setSeconds")(setSeconds)
+    __obj.updateDynamic("setTime")(setTime)
+    __obj.updateDynamic("setTimezoneOffset")(setTimezoneOffset)
+    __obj.updateDynamic("setWeekDate")(setWeekDate)
+    __obj.updateDynamic("setYear")(setYear)
+    __obj.asInstanceOf[GregorianCalendar]
+  }
+}
+

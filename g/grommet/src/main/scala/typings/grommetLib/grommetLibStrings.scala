@@ -82,7 +82,8 @@ object grommetLibStrings {
   sealed trait around extends js.Object
   
   @js.native
-  sealed trait assertive extends js.Object
+  sealed trait assertive
+    extends grommetLib.contextsAnnounceContextMod.AnnounceMode
   
   @js.native
   sealed trait auto extends js.Object
@@ -259,7 +260,8 @@ object grommetLibStrings {
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends grommetLib.contextsAnnounceContextMod.AnnounceMode
   
   @js.native
   sealed trait onSelect extends js.Object
@@ -271,7 +273,8 @@ object grommetLibStrings {
   sealed trait over extends js.Object
   
   @js.native
-  sealed trait polite extends js.Object
+  sealed trait polite
+    extends grommetLib.contextsAnnounceContextMod.AnnounceMode
   
   @js.native
   sealed trait pulse extends js.Object

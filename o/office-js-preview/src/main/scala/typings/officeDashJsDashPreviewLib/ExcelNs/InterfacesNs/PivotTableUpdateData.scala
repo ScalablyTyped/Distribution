@@ -32,3 +32,18 @@ trait PivotTableUpdateData extends js.Object {
   var useCustomSortLists: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PivotTableUpdateData {
+  @scala.inline
+  def apply(
+    enableDataValueEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    useCustomSortLists: js.UndefOr[scala.Boolean] = js.undefined
+  ): PivotTableUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists)
+    __obj.asInstanceOf[PivotTableUpdateData]
+  }
+}
+

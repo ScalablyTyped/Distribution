@@ -23,3 +23,12 @@ trait DataTypeAbstract extends js.Object {
   var dialectTypes: java.lang.String
 }
 
+object DataTypeAbstract {
+  @scala.inline
+  def apply(dialectTypes: java.lang.String): DataTypeAbstract = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dialectTypes")(dialectTypes)
+    __obj.asInstanceOf[DataTypeAbstract]
+  }
+}
+

@@ -10,3 +10,20 @@ trait BindChain extends js.Object {
   def toMany(observable: js.Array[Observable], bindProperties: (Observable | java.lang.String | js.Function)*): scala.Unit
 }
 
+object BindChain {
+  @scala.inline
+  def apply(
+    to: js.Function2[Observable, /* repeated */ Observable | java.lang.String | js.Function, scala.Unit],
+    toMany: js.Function2[
+      js.Array[Observable], 
+      /* repeated */ Observable | java.lang.String | js.Function, 
+      scala.Unit
+    ]
+  ): BindChain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("to")(to)
+    __obj.updateDynamic("toMany")(toMany)
+    __obj.asInstanceOf[BindChain]
+  }
+}
+

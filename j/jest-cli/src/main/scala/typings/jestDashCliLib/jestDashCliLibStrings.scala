@@ -7,61 +7,80 @@ import scala.scalajs.js.annotation._
 
 object jestDashCliLibStrings {
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends jestDashCliLib.jestDashCliMod.SnapshotUpdateState
   
   @js.native
-  sealed trait assert extends js.Object
+  sealed trait assert
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait count extends js.Object
+  sealed trait count
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait dir extends js.Object
+  sealed trait dir
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait dirxml extends js.Object
+  sealed trait dirxml
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends jestDashCliLib.jestDashCliMod.Status
   
   @js.native
-  sealed trait group extends js.Object
+  sealed trait group
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait groupCollapsed extends js.Object
+  sealed trait groupCollapsed
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait `new` extends js.Object
+  sealed trait `new`
+    extends jestDashCliLib.jestDashCliMod.SnapshotUpdateState
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends jestDashCliLib.jestDashCliMod.SnapshotUpdateState
   
   @js.native
-  sealed trait passed extends js.Object
+  sealed trait passed
+    extends jestDashCliLib.jestDashCliMod.Status
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends jestDashCliLib.jestDashCliMod.Status
   
   @js.native
-  sealed trait skipped extends js.Object
+  sealed trait skipped
+    extends jestDashCliLib.jestDashCliMod.Status
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends jestDashCliLib.jestDashCliMod.LogType
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

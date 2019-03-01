@@ -54,3 +54,26 @@ trait IExecuteOptions extends js.Object {
   var resultSet: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IExecuteOptions {
+  @scala.inline
+  def apply(
+    autoCommit: js.UndefOr[scala.Boolean] = js.undefined,
+    extendedMetaData: js.UndefOr[scala.Boolean] = js.undefined,
+    fetchInfo: js.Object = null,
+    maxRows: scala.Int | scala.Double = null,
+    outFormat: scala.Int | scala.Double = null,
+    prefetchRows: scala.Int | scala.Double = null,
+    resultSet: js.UndefOr[scala.Boolean] = js.undefined
+  ): IExecuteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
+    if (!js.isUndefined(extendedMetaData)) __obj.updateDynamic("extendedMetaData")(extendedMetaData)
+    if (fetchInfo != null) __obj.updateDynamic("fetchInfo")(fetchInfo)
+    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
+    if (outFormat != null) __obj.updateDynamic("outFormat")(outFormat.asInstanceOf[js.Any])
+    if (prefetchRows != null) __obj.updateDynamic("prefetchRows")(prefetchRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(resultSet)) __obj.updateDynamic("resultSet")(resultSet)
+    __obj.asInstanceOf[IExecuteOptions]
+  }
+}
+

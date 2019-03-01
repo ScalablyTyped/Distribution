@@ -48,3 +48,30 @@ trait JsonParseOptionItem extends js.Object {
   ] = js.undefined
 }
 
+object JsonParseOptionItem {
+  @scala.inline
+  def apply(
+    inflate: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: java.lang.String | scala.Double = null,
+    receiver: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: (js.Function1[/* req */ expressLib.expressMod.eNs.Request, java.lang.String]) | java.lang.String = null,
+    verify: js.Function4[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* res */ Response, 
+      /* buf */ nodeLib.Buffer, 
+      /* encoding */ java.lang.String, 
+      scala.Unit
+    ] = null
+  ): JsonParseOptionItem = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (receiver != null) __obj.updateDynamic("receiver")(receiver)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (verify != null) __obj.updateDynamic("verify")(verify)
+    __obj.asInstanceOf[JsonParseOptionItem]
+  }
+}
+

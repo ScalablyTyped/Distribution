@@ -98,3 +98,52 @@ trait Options extends js.Object {
   var translateTitle: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    autodetectLanguage: scala.Boolean,
+    basePath: java.lang.String,
+    blockedClasses: js.Array[java.lang.String],
+    defaultLanguage: java.lang.String,
+    enhancedContentSecurity: scala.Boolean,
+    fetchTranslations: scala.Boolean,
+    key: java.lang.String,
+    prefetch: scala.Boolean,
+    rememberLanguage: scala.Boolean,
+    retranslateOnNewPhrases: scala.Boolean,
+    saveNewPhrases: scala.Boolean,
+    saveNewPhrasesFromSource: scala.Boolean,
+    targetLanguage: java.lang.String,
+    translateAlt: scala.Boolean,
+    translateBody: scala.Boolean,
+    translateClasses: js.Array[java.lang.String],
+    translateMetaTags: scala.Boolean,
+    translateNumbers: scala.Boolean,
+    translateTimeElement: scala.Boolean,
+    translateTitle: scala.Boolean
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autodetectLanguage")(autodetectLanguage)
+    __obj.updateDynamic("basePath")(basePath)
+    __obj.updateDynamic("blockedClasses")(blockedClasses)
+    __obj.updateDynamic("defaultLanguage")(defaultLanguage)
+    __obj.updateDynamic("enhancedContentSecurity")(enhancedContentSecurity)
+    __obj.updateDynamic("fetchTranslations")(fetchTranslations)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("prefetch")(prefetch)
+    __obj.updateDynamic("rememberLanguage")(rememberLanguage)
+    __obj.updateDynamic("retranslateOnNewPhrases")(retranslateOnNewPhrases)
+    __obj.updateDynamic("saveNewPhrases")(saveNewPhrases)
+    __obj.updateDynamic("saveNewPhrasesFromSource")(saveNewPhrasesFromSource)
+    __obj.updateDynamic("targetLanguage")(targetLanguage)
+    __obj.updateDynamic("translateAlt")(translateAlt)
+    __obj.updateDynamic("translateBody")(translateBody)
+    __obj.updateDynamic("translateClasses")(translateClasses)
+    __obj.updateDynamic("translateMetaTags")(translateMetaTags)
+    __obj.updateDynamic("translateNumbers")(translateNumbers)
+    __obj.updateDynamic("translateTimeElement")(translateTimeElement)
+    __obj.updateDynamic("translateTitle")(translateTitle)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -28,3 +28,25 @@ trait OlapResultViewOptions
   var visibleResult: js.UndefOr[js.Any] = js.undefined
 }
 
+object OlapResultViewOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for OlapResultViewOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    hasColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    hasRows: js.UndefOr[scala.Boolean] = js.undefined,
+    result: js.Any = null,
+    visibleResult: js.Any = null
+  ): OlapResultViewOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(hasColumns)) __obj.updateDynamic("hasColumns")(hasColumns)
+    if (!js.isUndefined(hasRows)) __obj.updateDynamic("hasRows")(hasRows)
+    if (result != null) __obj.updateDynamic("result")(result)
+    if (visibleResult != null) __obj.updateDynamic("visibleResult")(visibleResult)
+    __obj.asInstanceOf[OlapResultViewOptions]
+  }
+}
+

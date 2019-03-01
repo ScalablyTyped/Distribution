@@ -12,3 +12,12 @@ trait DeleteRequest extends js.Object {
   var Key: Key
 }
 
+object DeleteRequest {
+  @scala.inline
+  def apply(Key: Key): DeleteRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Key")(Key)
+    __obj.asInstanceOf[DeleteRequest]
+  }
+}
+

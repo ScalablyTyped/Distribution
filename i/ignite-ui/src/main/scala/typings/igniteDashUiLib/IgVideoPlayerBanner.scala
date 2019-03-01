@@ -72,3 +72,41 @@ trait IgVideoPlayerBanner
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object IgVideoPlayerBanner {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgVideoPlayerBanner
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    autohide: js.UndefOr[scala.Boolean] = js.undefined,
+    closeBanner: js.UndefOr[scala.Boolean] = js.undefined,
+    css: java.lang.String = null,
+    duration: scala.Int | scala.Double = null,
+    height: scala.Double | java.lang.String = null,
+    hidedelay: scala.Int | scala.Double = null,
+    imageUrl: java.lang.String = null,
+    link: java.lang.String = null,
+    times: js.Array[_] = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Double | java.lang.String = null
+  ): IgVideoPlayerBanner = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
+    if (!js.isUndefined(closeBanner)) __obj.updateDynamic("closeBanner")(closeBanner)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hidedelay != null) __obj.updateDynamic("hidedelay")(hidedelay.asInstanceOf[js.Any])
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (times != null) __obj.updateDynamic("times")(times)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgVideoPlayerBanner]
+  }
+}
+

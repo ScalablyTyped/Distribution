@@ -6,7 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.FlowType, 'type'> ]: ast-types.ast-types/gen/nodes.FlowType[P]} */ trait AnyTypeAnnotation extends js.Object {
+- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.FlowType, 'type'> ]: ast-types.ast-types/gen/nodes.FlowType[P]} */ trait AnyTypeAnnotation
+  extends ASTNode
+     with astDashTypesLib.genKindsMod.FlowKind
+     with astDashTypesLib.genKindsMod.FlowTypeKind
+     with astDashTypesLib.genKindsMod.NodeKind
+     with astDashTypesLib.genKindsMod.PrintableKind {
   var `type`: astDashTypesLib.astDashTypesLibStrings.AnyTypeAnnotation
+}
+
+object AnyTypeAnnotation {
+  @scala.inline
+  def apply(`type`: astDashTypesLib.astDashTypesLibStrings.AnyTypeAnnotation): AnyTypeAnnotation = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[AnyTypeAnnotation]
+  }
 }
 

@@ -45,3 +45,30 @@ trait AdvancedSettings extends js.Object {
   var stalledInterval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AdvancedSettings {
+  @scala.inline
+  def apply(
+    backoffStrategies: org.scalablytyped.runtime.StringDictionary[
+      js.Function2[/* attemptsMade */ scala.Double, /* err */ nodeLib.Error, scala.Double]
+    ] = null,
+    drainDelay: scala.Int | scala.Double = null,
+    guardInterval: scala.Int | scala.Double = null,
+    lockDuration: scala.Int | scala.Double = null,
+    lockRenewTime: scala.Int | scala.Double = null,
+    maxStalledCount: scala.Int | scala.Double = null,
+    retryProcessDelay: scala.Int | scala.Double = null,
+    stalledInterval: scala.Int | scala.Double = null
+  ): AdvancedSettings = {
+    val __obj = js.Dynamic.literal()
+    if (backoffStrategies != null) __obj.updateDynamic("backoffStrategies")(backoffStrategies)
+    if (drainDelay != null) __obj.updateDynamic("drainDelay")(drainDelay.asInstanceOf[js.Any])
+    if (guardInterval != null) __obj.updateDynamic("guardInterval")(guardInterval.asInstanceOf[js.Any])
+    if (lockDuration != null) __obj.updateDynamic("lockDuration")(lockDuration.asInstanceOf[js.Any])
+    if (lockRenewTime != null) __obj.updateDynamic("lockRenewTime")(lockRenewTime.asInstanceOf[js.Any])
+    if (maxStalledCount != null) __obj.updateDynamic("maxStalledCount")(maxStalledCount.asInstanceOf[js.Any])
+    if (retryProcessDelay != null) __obj.updateDynamic("retryProcessDelay")(retryProcessDelay.asInstanceOf[js.Any])
+    if (stalledInterval != null) __obj.updateDynamic("stalledInterval")(stalledInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AdvancedSettings]
+  }
+}
+

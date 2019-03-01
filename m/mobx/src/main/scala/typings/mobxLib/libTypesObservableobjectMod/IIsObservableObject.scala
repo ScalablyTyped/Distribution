@@ -10,3 +10,12 @@ trait IIsObservableObject extends js.Object {
   var $mobx: ObservableObjectAdministration
 }
 
+object IIsObservableObject {
+  @scala.inline
+  def apply($mobx: ObservableObjectAdministration): IIsObservableObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$mobx")($mobx)
+    __obj.asInstanceOf[IIsObservableObject]
+  }
+}
+

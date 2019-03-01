@@ -20,3 +20,20 @@ trait RenderingTicksEventArgs extends js.Object {
   var valueType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RenderingTicksEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    tick: js.Any = null,
+    value: scala.Int | scala.Double = null,
+    valueType: java.lang.String = null
+  ): RenderingTicksEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (tick != null) __obj.updateDynamic("tick")(tick)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType)
+    __obj.asInstanceOf[RenderingTicksEventArgs]
+  }
+}
+

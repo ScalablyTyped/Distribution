@@ -9,3 +9,12 @@ trait ISubscriptionChannel extends js.Object {
   var `type`: java.lang.String
 }
 
+object ISubscriptionChannel {
+  @scala.inline
+  def apply(`type`: java.lang.String): ISubscriptionChannel = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[ISubscriptionChannel]
+  }
+}
+

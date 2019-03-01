@@ -12,3 +12,16 @@ trait TransferResultInfo extends js.Object {
   var resultCode: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object TransferResultInfo {
+  @scala.inline
+  def apply(
+    data: stdLib.ArrayBuffer = null,
+    resultCode: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): TransferResultInfo = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(resultCode)) __obj.updateDynamic("resultCode")(resultCode)
+    __obj.asInstanceOf[TransferResultInfo]
+  }
+}
+

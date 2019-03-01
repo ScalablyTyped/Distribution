@@ -11,3 +11,14 @@ trait ErrorWithParam extends js.Object {
   var value: java.lang.String | scala.Null
 }
 
+object ErrorWithParam {
+  @scala.inline
+  def apply(message: java.lang.String, param: java.lang.String, value: java.lang.String = null): ErrorWithParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("param")(param)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ErrorWithParam]
+  }
+}
+

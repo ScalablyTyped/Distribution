@@ -22,3 +22,20 @@ trait FolderOperation extends js.Object {
   var sourceParent: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FolderOperation {
+  @scala.inline
+  def apply(
+    destinationParent: java.lang.String = null,
+    displayName: java.lang.String = null,
+    operationType: java.lang.String = null,
+    sourceParent: java.lang.String = null
+  ): FolderOperation = {
+    val __obj = js.Dynamic.literal()
+    if (destinationParent != null) __obj.updateDynamic("destinationParent")(destinationParent)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
+    if (sourceParent != null) __obj.updateDynamic("sourceParent")(sourceParent)
+    __obj.asInstanceOf[FolderOperation]
+  }
+}
+

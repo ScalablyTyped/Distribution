@@ -68,3 +68,28 @@ trait PivotLayoutLoadOptions extends js.Object {
   var subtotalLocation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PivotLayoutLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFieldList: js.UndefOr[scala.Boolean] = js.undefined,
+    layoutType: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveFormatting: js.UndefOr[scala.Boolean] = js.undefined,
+    showColumnGrandTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    showRowGrandTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    subtotalLocation: js.UndefOr[scala.Boolean] = js.undefined
+  ): PivotLayoutLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(autoFormat)) __obj.updateDynamic("autoFormat")(autoFormat)
+    if (!js.isUndefined(enableFieldList)) __obj.updateDynamic("enableFieldList")(enableFieldList)
+    if (!js.isUndefined(layoutType)) __obj.updateDynamic("layoutType")(layoutType)
+    if (!js.isUndefined(preserveFormatting)) __obj.updateDynamic("preserveFormatting")(preserveFormatting)
+    if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals)
+    if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals)
+    if (!js.isUndefined(subtotalLocation)) __obj.updateDynamic("subtotalLocation")(subtotalLocation)
+    __obj.asInstanceOf[PivotLayoutLoadOptions]
+  }
+}
+

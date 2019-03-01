@@ -10,3 +10,12 @@ trait UpdateClusterRequest extends js.Object {
   var update: js.UndefOr[ClusterUpdate] = js.undefined
 }
 
+object UpdateClusterRequest {
+  @scala.inline
+  def apply(update: ClusterUpdate = null): UpdateClusterRequest = {
+    val __obj = js.Dynamic.literal()
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[UpdateClusterRequest]
+  }
+}
+

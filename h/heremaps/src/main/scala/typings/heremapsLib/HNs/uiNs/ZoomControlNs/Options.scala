@@ -18,3 +18,20 @@ trait Options extends js.Object {
   var zoomSpeed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    alignment: heremapsLib.HNs.uiNs.LayoutAlignment = null,
+    slider: js.UndefOr[scala.Boolean] = js.undefined,
+    sliderSnaps: js.UndefOr[scala.Boolean] = js.undefined,
+    zoomSpeed: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (!js.isUndefined(slider)) __obj.updateDynamic("slider")(slider)
+    if (!js.isUndefined(sliderSnaps)) __obj.updateDynamic("sliderSnaps")(sliderSnaps)
+    if (zoomSpeed != null) __obj.updateDynamic("zoomSpeed")(zoomSpeed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

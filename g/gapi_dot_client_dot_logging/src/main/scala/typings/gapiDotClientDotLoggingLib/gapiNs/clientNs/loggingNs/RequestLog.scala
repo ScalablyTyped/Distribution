@@ -91,3 +91,76 @@ trait RequestLog extends js.Object {
   var wasLoadingRequest: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RequestLog {
+  @scala.inline
+  def apply(
+    appEngineRelease: java.lang.String = null,
+    appId: java.lang.String = null,
+    cost: scala.Int | scala.Double = null,
+    endTime: java.lang.String = null,
+    finished: js.UndefOr[scala.Boolean] = js.undefined,
+    first: js.UndefOr[scala.Boolean] = js.undefined,
+    host: java.lang.String = null,
+    httpVersion: java.lang.String = null,
+    instanceId: java.lang.String = null,
+    instanceIndex: scala.Int | scala.Double = null,
+    ip: java.lang.String = null,
+    latency: java.lang.String = null,
+    line: js.Array[LogLine] = null,
+    megaCycles: java.lang.String = null,
+    method: java.lang.String = null,
+    moduleId: java.lang.String = null,
+    nickname: java.lang.String = null,
+    pendingTime: java.lang.String = null,
+    referrer: java.lang.String = null,
+    requestId: java.lang.String = null,
+    resource: java.lang.String = null,
+    responseSize: java.lang.String = null,
+    sourceReference: js.Array[SourceReference] = null,
+    startTime: java.lang.String = null,
+    status: scala.Int | scala.Double = null,
+    taskName: java.lang.String = null,
+    taskQueueName: java.lang.String = null,
+    traceId: java.lang.String = null,
+    urlMapEntry: java.lang.String = null,
+    userAgent: java.lang.String = null,
+    versionId: java.lang.String = null,
+    wasLoadingRequest: js.UndefOr[scala.Boolean] = js.undefined
+  ): RequestLog = {
+    val __obj = js.Dynamic.literal()
+    if (appEngineRelease != null) __obj.updateDynamic("appEngineRelease")(appEngineRelease)
+    if (appId != null) __obj.updateDynamic("appId")(appId)
+    if (cost != null) __obj.updateDynamic("cost")(cost.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (!js.isUndefined(finished)) __obj.updateDynamic("finished")(finished)
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (httpVersion != null) __obj.updateDynamic("httpVersion")(httpVersion)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (instanceIndex != null) __obj.updateDynamic("instanceIndex")(instanceIndex.asInstanceOf[js.Any])
+    if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (latency != null) __obj.updateDynamic("latency")(latency)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (megaCycles != null) __obj.updateDynamic("megaCycles")(megaCycles)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId)
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
+    if (pendingTime != null) __obj.updateDynamic("pendingTime")(pendingTime)
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (responseSize != null) __obj.updateDynamic("responseSize")(responseSize)
+    if (sourceReference != null) __obj.updateDynamic("sourceReference")(sourceReference)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (taskName != null) __obj.updateDynamic("taskName")(taskName)
+    if (taskQueueName != null) __obj.updateDynamic("taskQueueName")(taskQueueName)
+    if (traceId != null) __obj.updateDynamic("traceId")(traceId)
+    if (urlMapEntry != null) __obj.updateDynamic("urlMapEntry")(urlMapEntry)
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId)
+    if (!js.isUndefined(wasLoadingRequest)) __obj.updateDynamic("wasLoadingRequest")(wasLoadingRequest)
+    __obj.asInstanceOf[RequestLog]
+  }
+}
+

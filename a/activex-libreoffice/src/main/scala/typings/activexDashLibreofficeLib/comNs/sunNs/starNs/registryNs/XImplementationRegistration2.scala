@@ -26,3 +26,32 @@ trait XImplementationRegistration2 extends XImplementationRegistration {
   ): scala.Unit
 }
 
+object XImplementationRegistration2 {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    checkInstantiation: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[java.lang.String]],
+    getImplementations: js.Function2[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerImplementation: js.Function3[java.lang.String, java.lang.String, XSimpleRegistry, scala.Unit],
+    registerImplementationWithLocation: js.Function4[java.lang.String, java.lang.String, java.lang.String, XSimpleRegistry, scala.Unit],
+    release: js.Function0[scala.Unit],
+    revokeImplementation: js.Function2[java.lang.String, XSimpleRegistry, scala.Boolean]
+  ): XImplementationRegistration2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("checkInstantiation")(checkInstantiation)
+    __obj.updateDynamic("getImplementations")(getImplementations)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerImplementation")(registerImplementation)
+    __obj.updateDynamic("registerImplementationWithLocation")(registerImplementationWithLocation)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("revokeImplementation")(revokeImplementation)
+    __obj.asInstanceOf[XImplementationRegistration2]
+  }
+}
+

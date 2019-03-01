@@ -20,3 +20,14 @@ trait ValidatingEventUIParam extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object ValidatingEventUIParam {
+  @scala.inline
+  def apply(fieldOptions: js.Any = null, owner: js.Any = null, value: js.Any = null): ValidatingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ValidatingEventUIParam]
+  }
+}
+

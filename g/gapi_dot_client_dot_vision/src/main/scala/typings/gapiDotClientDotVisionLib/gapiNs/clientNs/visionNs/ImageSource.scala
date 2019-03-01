@@ -30,3 +30,13 @@ trait ImageSource extends js.Object {
   var imageUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImageSource {
+  @scala.inline
+  def apply(gcsImageUri: java.lang.String = null, imageUri: java.lang.String = null): ImageSource = {
+    val __obj = js.Dynamic.literal()
+    if (gcsImageUri != null) __obj.updateDynamic("gcsImageUri")(gcsImageUri)
+    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri)
+    __obj.asInstanceOf[ImageSource]
+  }
+}
+

@@ -10,3 +10,20 @@ trait OpenCardOptions
   var cardList: js.Array[baiduDashAppLib.Anon_CardId]
 }
 
+object OpenCardOptions {
+  @scala.inline
+  def apply(
+    cardList: js.Array[baiduDashAppLib.Anon_CardId],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): OpenCardOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cardList")(cardList)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[OpenCardOptions]
+  }
+}
+

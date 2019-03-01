@@ -12,3 +12,13 @@ trait OnPremisesConfiguration extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OnPremisesConfiguration {
+  @scala.inline
+  def apply(hostPort: java.lang.String = null, kind: java.lang.String = null): OnPremisesConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (hostPort != null) __obj.updateDynamic("hostPort")(hostPort)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[OnPremisesConfiguration]
+  }
+}
+

@@ -204,3 +204,28 @@ trait Directive extends js.Object {
   var selector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Directive {
+  @scala.inline
+  def apply(
+    exportAs: java.lang.String = null,
+    host: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    inputs: js.Array[java.lang.String] = null,
+    jit: atAngularCoreLib.atAngularCoreLibNumbers.`true` = null,
+    outputs: js.Array[java.lang.String] = null,
+    providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] = null,
+    queries: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    selector: java.lang.String = null
+  ): Directive = {
+    val __obj = js.Dynamic.literal()
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    if (jit != null) __obj.updateDynamic("jit")(jit)
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[Directive]
+  }
+}
+

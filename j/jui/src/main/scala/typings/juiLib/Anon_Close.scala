@@ -45,3 +45,30 @@ trait Anon_Close extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Close {
+  @scala.inline
+  def apply(
+    close: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    height: scala.Int | scala.Double = null,
+    keydown: js.UndefOr[scala.Boolean] = js.undefined,
+    left: scala.Int | scala.Double = null,
+    nodes: js.Array[_] = null,
+    top: scala.Int | scala.Double = null,
+    tpl: js.Any = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_Close = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(keydown)) __obj.updateDynamic("keydown")(keydown)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Close]
+  }
+}
+

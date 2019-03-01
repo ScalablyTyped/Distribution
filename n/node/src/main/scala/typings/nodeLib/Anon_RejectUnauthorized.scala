@@ -11,3 +11,13 @@ trait Anon_RejectUnauthorized extends js.Object {
   var servername: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_RejectUnauthorized {
+  @scala.inline
+  def apply(rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined, servername: java.lang.String = null): Anon_RejectUnauthorized = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (servername != null) __obj.updateDynamic("servername")(servername)
+    __obj.asInstanceOf[Anon_RejectUnauthorized]
+  }
+}
+

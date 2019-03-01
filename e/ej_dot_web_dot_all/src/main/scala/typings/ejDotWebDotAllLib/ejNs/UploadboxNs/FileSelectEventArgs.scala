@@ -17,3 +17,14 @@ trait FileSelectEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FileSelectEventArgs {
+  @scala.inline
+  def apply(files: js.Any = null, model: js.Any = null, `type`: java.lang.String = null): FileSelectEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[FileSelectEventArgs]
+  }
+}
+

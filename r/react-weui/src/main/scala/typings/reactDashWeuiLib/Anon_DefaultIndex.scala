@@ -10,3 +10,12 @@ trait Anon_DefaultIndex extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_DefaultIndex {
+  @scala.inline
+  def apply(defaultIndex: scala.Double, `type`: java.lang.String): Anon_DefaultIndex = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("defaultIndex")(defaultIndex)
+    __obj.asInstanceOf[Anon_DefaultIndex]
+  }
+}
+

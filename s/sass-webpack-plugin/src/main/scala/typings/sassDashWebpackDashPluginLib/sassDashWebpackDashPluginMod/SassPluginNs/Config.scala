@@ -11,3 +11,18 @@ trait Config extends js.Object {
   var sourceMap: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    autoprefixer: js.UndefOr[scala.Boolean] = js.undefined,
+    sass: nodeDashSassLib.nodeDashSassMod.Options = null,
+    sourceMap: js.UndefOr[scala.Boolean] = js.undefined
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoprefixer)) __obj.updateDynamic("autoprefixer")(autoprefixer)
+    if (sass != null) __obj.updateDynamic("sass")(sass)
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    __obj.asInstanceOf[Config]
+  }
+}
+

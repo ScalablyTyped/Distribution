@@ -65,3 +65,26 @@ trait PivotLayoutData extends js.Object {
   ] = js.undefined
 }
 
+object PivotLayoutData {
+  @scala.inline
+  def apply(
+    autoFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFieldList: js.UndefOr[scala.Boolean] = js.undefined,
+    layoutType: officeDashJsDashPreviewLib.ExcelNs.PivotLayoutType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Compact | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Tabular | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Outline = null,
+    preserveFormatting: js.UndefOr[scala.Boolean] = js.undefined,
+    showColumnGrandTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    showRowGrandTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    subtotalLocation: officeDashJsDashPreviewLib.ExcelNs.SubtotalLocationType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AtTop | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AtBottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Off = null
+  ): PivotLayoutData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFormat)) __obj.updateDynamic("autoFormat")(autoFormat)
+    if (!js.isUndefined(enableFieldList)) __obj.updateDynamic("enableFieldList")(enableFieldList)
+    if (layoutType != null) __obj.updateDynamic("layoutType")(layoutType.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveFormatting)) __obj.updateDynamic("preserveFormatting")(preserveFormatting)
+    if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals)
+    if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals)
+    if (subtotalLocation != null) __obj.updateDynamic("subtotalLocation")(subtotalLocation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PivotLayoutData]
+  }
+}
+

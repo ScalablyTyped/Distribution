@@ -18,3 +18,17 @@ trait AnimationGroupMetadata extends AnimationMetadata {
   var steps: js.Array[AnimationMetadata]
 }
 
+object AnimationGroupMetadata {
+  @scala.inline
+  def apply(
+    steps: js.Array[AnimationMetadata],
+    `type`: AnimationMetadataType,
+    options: AnimationOptions = null
+  ): AnimationGroupMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("steps")(steps)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[AnimationGroupMetadata]
+  }
+}
+

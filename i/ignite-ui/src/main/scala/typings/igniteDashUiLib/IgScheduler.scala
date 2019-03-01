@@ -204,3 +204,95 @@ trait IgScheduler
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgScheduler {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igScheduler
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    agendaRangeChanged: AgendaRangeChangedEvent = null,
+    agendaRangeChanging: AgendaRangeChangingEvent = null,
+    agendaViewSettings: IgSchedulerAgendaViewSettings = null,
+    appointmentCreated: AppointmentCreatedEvent = null,
+    appointmentCreating: AppointmentCreatingEvent = null,
+    appointmentDeleted: AppointmentDeletedEvent = null,
+    appointmentDeleting: AppointmentDeletingEvent = null,
+    appointmentDialogClosed: AppointmentDialogClosedEvent = null,
+    appointmentDialogClosing: AppointmentDialogClosingEvent = null,
+    appointmentDialogOpened: AppointmentDialogOpenedEvent = null,
+    appointmentDialogOpening: AppointmentDialogOpeningEvent = null,
+    appointmentDialogSuppress: js.UndefOr[scala.Boolean] = js.undefined,
+    appointmentEdited: AppointmentEditedEvent = null,
+    appointmentEditing: AppointmentEditingEvent = null,
+    dataSource: js.Any = null,
+    dayChanged: DayChangedEvent = null,
+    dayChanging: DayChangingEvent = null,
+    daySelected: DaySelectedEvent = null,
+    dayViewSettings: IgSchedulerDayViewSettings = null,
+    enableTodayButton: js.UndefOr[scala.Boolean] = js.undefined,
+    height: java.lang.String | scala.Double = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    monthChanged: MonthChangedEvent = null,
+    monthChanging: MonthChangingEvent = null,
+    monthViewSettings: IgSchedulerMonthViewSettings = null,
+    regional: java.lang.String | js.Object = null,
+    rendered: RenderedEvent = null,
+    rendering: RenderingEvent = null,
+    resources: js.Any = null,
+    selectedDate: stdLib.Date = null,
+    viewChanged: ViewChangedEvent = null,
+    viewChanging: ViewChangingEvent = null,
+    viewMode: java.lang.String = null,
+    views: js.Array[_] = null,
+    weekChanged: WeekChangedEvent = null,
+    weekChanging: WeekChangingEvent = null,
+    weekViewSettings: IgSchedulerWeekViewSettings = null,
+    width: java.lang.String | scala.Double = null
+  ): IgScheduler = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (agendaRangeChanged != null) __obj.updateDynamic("agendaRangeChanged")(agendaRangeChanged)
+    if (agendaRangeChanging != null) __obj.updateDynamic("agendaRangeChanging")(agendaRangeChanging)
+    if (agendaViewSettings != null) __obj.updateDynamic("agendaViewSettings")(agendaViewSettings)
+    if (appointmentCreated != null) __obj.updateDynamic("appointmentCreated")(appointmentCreated)
+    if (appointmentCreating != null) __obj.updateDynamic("appointmentCreating")(appointmentCreating)
+    if (appointmentDeleted != null) __obj.updateDynamic("appointmentDeleted")(appointmentDeleted)
+    if (appointmentDeleting != null) __obj.updateDynamic("appointmentDeleting")(appointmentDeleting)
+    if (appointmentDialogClosed != null) __obj.updateDynamic("appointmentDialogClosed")(appointmentDialogClosed)
+    if (appointmentDialogClosing != null) __obj.updateDynamic("appointmentDialogClosing")(appointmentDialogClosing)
+    if (appointmentDialogOpened != null) __obj.updateDynamic("appointmentDialogOpened")(appointmentDialogOpened)
+    if (appointmentDialogOpening != null) __obj.updateDynamic("appointmentDialogOpening")(appointmentDialogOpening)
+    if (!js.isUndefined(appointmentDialogSuppress)) __obj.updateDynamic("appointmentDialogSuppress")(appointmentDialogSuppress)
+    if (appointmentEdited != null) __obj.updateDynamic("appointmentEdited")(appointmentEdited)
+    if (appointmentEditing != null) __obj.updateDynamic("appointmentEditing")(appointmentEditing)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dayChanged != null) __obj.updateDynamic("dayChanged")(dayChanged)
+    if (dayChanging != null) __obj.updateDynamic("dayChanging")(dayChanging)
+    if (daySelected != null) __obj.updateDynamic("daySelected")(daySelected)
+    if (dayViewSettings != null) __obj.updateDynamic("dayViewSettings")(dayViewSettings)
+    if (!js.isUndefined(enableTodayButton)) __obj.updateDynamic("enableTodayButton")(enableTodayButton)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (monthChanged != null) __obj.updateDynamic("monthChanged")(monthChanged)
+    if (monthChanging != null) __obj.updateDynamic("monthChanging")(monthChanging)
+    if (monthViewSettings != null) __obj.updateDynamic("monthViewSettings")(monthViewSettings)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (selectedDate != null) __obj.updateDynamic("selectedDate")(selectedDate)
+    if (viewChanged != null) __obj.updateDynamic("viewChanged")(viewChanged)
+    if (viewChanging != null) __obj.updateDynamic("viewChanging")(viewChanging)
+    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode)
+    if (views != null) __obj.updateDynamic("views")(views)
+    if (weekChanged != null) __obj.updateDynamic("weekChanged")(weekChanged)
+    if (weekChanging != null) __obj.updateDynamic("weekChanging")(weekChanging)
+    if (weekViewSettings != null) __obj.updateDynamic("weekViewSettings")(weekViewSettings)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgScheduler]
+  }
+}
+

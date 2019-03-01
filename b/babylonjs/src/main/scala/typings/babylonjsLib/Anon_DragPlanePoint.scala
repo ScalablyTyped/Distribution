@@ -10,3 +10,13 @@ trait Anon_DragPlanePoint extends js.Object {
   var pointerId: scala.Double
 }
 
+object Anon_DragPlanePoint {
+  @scala.inline
+  def apply(dragPlanePoint: babylonjsLib.BABYLONNs.Vector3, pointerId: scala.Double): Anon_DragPlanePoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dragPlanePoint")(dragPlanePoint)
+    __obj.updateDynamic("pointerId")(pointerId)
+    __obj.asInstanceOf[Anon_DragPlanePoint]
+  }
+}
+

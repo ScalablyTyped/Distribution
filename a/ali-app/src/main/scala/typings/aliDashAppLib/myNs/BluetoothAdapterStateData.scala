@@ -16,3 +16,18 @@ trait BluetoothAdapterStateData extends ErrMsgResponse {
   var discovering: scala.Boolean
 }
 
+object BluetoothAdapterStateData {
+  @scala.inline
+  def apply(
+    available: scala.Boolean,
+    discovering: scala.Boolean,
+    errMsg: aliDashAppLib.aliDashAppLibStrings.ok | java.lang.String
+  ): BluetoothAdapterStateData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("available")(available)
+    __obj.updateDynamic("discovering")(discovering)
+    __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BluetoothAdapterStateData]
+  }
+}
+

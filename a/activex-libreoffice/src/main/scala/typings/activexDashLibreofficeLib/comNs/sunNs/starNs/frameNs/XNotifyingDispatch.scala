@@ -24,3 +24,35 @@ trait XNotifyingDispatch extends XDispatch {
   ): scala.Unit
 }
 
+object XNotifyingDispatch {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addStatusListener: js.Function2[XStatusListener, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, scala.Unit],
+    dispatch: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    dispatchWithNotification: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XDispatchResultListener, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeStatusListener: js.Function2[XStatusListener, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, scala.Unit]
+  ): XNotifyingDispatch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addStatusListener")(addStatusListener)
+    __obj.updateDynamic("dispatch")(dispatch)
+    __obj.updateDynamic("dispatchWithNotification")(dispatchWithNotification)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeStatusListener")(removeStatusListener)
+    __obj.asInstanceOf[XNotifyingDispatch]
+  }
+}
+

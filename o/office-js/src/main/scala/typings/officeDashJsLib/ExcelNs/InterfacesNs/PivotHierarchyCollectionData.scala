@@ -10,3 +10,12 @@ trait PivotHierarchyCollectionData extends js.Object {
   var items: js.UndefOr[js.Array[PivotHierarchyData]] = js.undefined
 }
 
+object PivotHierarchyCollectionData {
+  @scala.inline
+  def apply(items: js.Array[PivotHierarchyData] = null): PivotHierarchyCollectionData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[PivotHierarchyCollectionData]
+  }
+}
+

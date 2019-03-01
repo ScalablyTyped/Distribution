@@ -10,3 +10,13 @@ trait EnhancedCustomShapeSegment extends js.Object {
   var Count: scala.Double
 }
 
+object EnhancedCustomShapeSegment {
+  @scala.inline
+  def apply(Command: scala.Double, Count: scala.Double): EnhancedCustomShapeSegment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Command")(Command)
+    __obj.updateDynamic("Count")(Count)
+    __obj.asInstanceOf[EnhancedCustomShapeSegment]
+  }
+}
+

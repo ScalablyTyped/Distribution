@@ -31,3 +31,38 @@ trait QueryFindOneAndUpdateOptions extends QueryFindOneAndRemoveOptions {
   var upsert: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object QueryFindOneAndUpdateOptions {
+  @scala.inline
+  def apply(
+    context: java.lang.String = null,
+    fields: js.Any | java.lang.String = null,
+    maxTimeMS: scala.Int | scala.Double = null,
+    multipleCastError: js.UndefOr[scala.Boolean] = js.undefined,
+    `new`: js.UndefOr[scala.Boolean] = js.undefined,
+    projection: js.Any = null,
+    rawResult: js.UndefOr[scala.Boolean] = js.undefined,
+    runValidators: js.UndefOr[scala.Boolean] = js.undefined,
+    select: js.Any = null,
+    setDefaultsOnInsert: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.Any = null,
+    strict: scala.Boolean | java.lang.String = null,
+    upsert: js.UndefOr[scala.Boolean] = js.undefined
+  ): QueryFindOneAndUpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleCastError)) __obj.updateDynamic("multipleCastError")(multipleCastError)
+    if (!js.isUndefined(`new`)) __obj.updateDynamic("new")(`new`)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult)
+    if (!js.isUndefined(runValidators)) __obj.updateDynamic("runValidators")(runValidators)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (!js.isUndefined(setDefaultsOnInsert)) __obj.updateDynamic("setDefaultsOnInsert")(setDefaultsOnInsert)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert)
+    __obj.asInstanceOf[QueryFindOneAndUpdateOptions]
+  }
+}
+

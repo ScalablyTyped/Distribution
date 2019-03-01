@@ -80,3 +80,48 @@ trait Options extends js.Object {
   var wrapClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    maxVisible: scala.Double,
+    total: scala.Double,
+    activeClass: java.lang.String = null,
+    disabledClass: java.lang.String = null,
+    first: java.lang.String = null,
+    firstClass: java.lang.String = null,
+    firstLastUse: js.UndefOr[scala.Boolean] = js.undefined,
+    href: java.lang.String = null,
+    hrefVariable: java.lang.String = null,
+    last: java.lang.String = null,
+    lastClass: java.lang.String = null,
+    leaps: js.UndefOr[scala.Boolean] = js.undefined,
+    next: java.lang.String = null,
+    nextClass: java.lang.String = null,
+    page: scala.Int | scala.Double = null,
+    prev: java.lang.String = null,
+    prevClass: java.lang.String = null,
+    wrapClass: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxVisible")(maxVisible)
+    __obj.updateDynamic("total")(total)
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
+    if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass)
+    if (first != null) __obj.updateDynamic("first")(first)
+    if (firstClass != null) __obj.updateDynamic("firstClass")(firstClass)
+    if (!js.isUndefined(firstLastUse)) __obj.updateDynamic("firstLastUse")(firstLastUse)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (hrefVariable != null) __obj.updateDynamic("hrefVariable")(hrefVariable)
+    if (last != null) __obj.updateDynamic("last")(last)
+    if (lastClass != null) __obj.updateDynamic("lastClass")(lastClass)
+    if (!js.isUndefined(leaps)) __obj.updateDynamic("leaps")(leaps)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (nextClass != null) __obj.updateDynamic("nextClass")(nextClass)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (prevClass != null) __obj.updateDynamic("prevClass")(prevClass)
+    if (wrapClass != null) __obj.updateDynamic("wrapClass")(wrapClass)
+    __obj.asInstanceOf[Options]
+  }
+}
+

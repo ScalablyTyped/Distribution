@@ -12,3 +12,12 @@ trait DeleteTableOutput extends js.Object {
   var TableDescription: js.UndefOr[TableDescription] = js.undefined
 }
 
+object DeleteTableOutput {
+  @scala.inline
+  def apply(TableDescription: TableDescription = null): DeleteTableOutput = {
+    val __obj = js.Dynamic.literal()
+    if (TableDescription != null) __obj.updateDynamic("TableDescription")(TableDescription)
+    __obj.asInstanceOf[DeleteTableOutput]
+  }
+}
+

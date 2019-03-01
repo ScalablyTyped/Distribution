@@ -28,3 +28,24 @@ trait Package extends js.Object {
   def rebuild(): js.Promise[atomLib.Anon_Code]
 }
 
+object Package {
+  @scala.inline
+  def apply(
+    getBuildFailureOutput: js.Function0[java.lang.String | scala.Null],
+    isCompatible: js.Function0[scala.Boolean],
+    name: java.lang.String,
+    onDidDeactivate: js.Function1[js.Function0[scala.Unit], Disposable],
+    path: java.lang.String,
+    rebuild: js.Function0[js.Promise[atomLib.Anon_Code]]
+  ): Package = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getBuildFailureOutput")(getBuildFailureOutput)
+    __obj.updateDynamic("isCompatible")(isCompatible)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("onDidDeactivate")(onDidDeactivate)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("rebuild")(rebuild)
+    __obj.asInstanceOf[Package]
+  }
+}
+

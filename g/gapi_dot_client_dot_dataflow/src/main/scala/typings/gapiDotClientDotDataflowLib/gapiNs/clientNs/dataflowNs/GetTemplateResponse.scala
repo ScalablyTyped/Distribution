@@ -18,3 +18,13 @@ trait GetTemplateResponse extends js.Object {
   var status: js.UndefOr[Status] = js.undefined
 }
 
+object GetTemplateResponse {
+  @scala.inline
+  def apply(metadata: TemplateMetadata = null, status: Status = null): GetTemplateResponse = {
+    val __obj = js.Dynamic.literal()
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[GetTemplateResponse]
+  }
+}
+

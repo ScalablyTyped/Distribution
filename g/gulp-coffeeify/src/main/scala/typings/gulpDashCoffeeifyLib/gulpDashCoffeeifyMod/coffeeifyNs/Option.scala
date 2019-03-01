@@ -17,3 +17,18 @@ trait Option extends js.Object {
   var transforms: js.UndefOr[Transforms] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    aliases: Aliases = null,
+    options: gulpDashCoffeeifyLib.Anon_Debug = null,
+    transforms: Transforms = null
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
+    __obj.asInstanceOf[Option]
+  }
+}
+

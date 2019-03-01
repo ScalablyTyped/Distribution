@@ -16,3 +16,22 @@ trait Anon_AuthInfo extends js.Object {
   ): scala.Unit
 }
 
+object Anon_AuthInfo {
+  @scala.inline
+  def apply(
+    authorize: js.Function2[
+      java.lang.String, 
+      js.Function2[
+        /* errored */ scala.Boolean, 
+        /* authInfo */ js.UndefOr[pusherDashJsLib.pusherDashJsMod.pusherNs.AuthInfo], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): Anon_AuthInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorize")(authorize)
+    __obj.asInstanceOf[Anon_AuthInfo]
+  }
+}
+

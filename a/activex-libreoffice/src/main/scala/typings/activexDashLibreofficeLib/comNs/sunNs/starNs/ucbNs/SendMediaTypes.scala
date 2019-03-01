@@ -13,3 +13,13 @@ trait SendMediaTypes extends js.Object {
   var Value: activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object SendMediaTypes {
+  @scala.inline
+  def apply(ProtocolType: java.lang.String, Value: activexDashInteropLib.SafeArray[java.lang.String]): SendMediaTypes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ProtocolType")(ProtocolType)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[SendMediaTypes]
+  }
+}
+

@@ -74,3 +74,36 @@ trait OnClickData extends js.Object {
   var wasChecked: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OnClickData {
+  @scala.inline
+  def apply(
+    editable: scala.Boolean,
+    menuItemId: chromeDashAppsLib.chromeNs.integer | java.lang.String,
+    pageUrl: java.lang.String,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    frameId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    frameUrl: java.lang.String = null,
+    linkUrl: java.lang.String = null,
+    mediaType: MediaType = null,
+    parentMenuItemId: chromeDashAppsLib.chromeNs.integer | java.lang.String = null,
+    selectionText: java.lang.String = null,
+    srcUrl: java.lang.String = null,
+    wasChecked: js.UndefOr[scala.Boolean] = js.undefined
+  ): OnClickData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editable")(editable)
+    __obj.updateDynamic("menuItemId")(menuItemId.asInstanceOf[js.Any])
+    __obj.updateDynamic("pageUrl")(pageUrl)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId)
+    if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl)
+    if (linkUrl != null) __obj.updateDynamic("linkUrl")(linkUrl)
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    if (parentMenuItemId != null) __obj.updateDynamic("parentMenuItemId")(parentMenuItemId.asInstanceOf[js.Any])
+    if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText)
+    if (srcUrl != null) __obj.updateDynamic("srcUrl")(srcUrl)
+    if (!js.isUndefined(wasChecked)) __obj.updateDynamic("wasChecked")(wasChecked)
+    __obj.asInstanceOf[OnClickData]
+  }
+}
+

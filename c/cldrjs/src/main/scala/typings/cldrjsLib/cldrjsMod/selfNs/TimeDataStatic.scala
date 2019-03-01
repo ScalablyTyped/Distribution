@@ -10,3 +10,13 @@ trait TimeDataStatic extends js.Object {
   def preferred(): java.lang.String
 }
 
+object TimeDataStatic {
+  @scala.inline
+  def apply(allowed: js.Function0[java.lang.String], preferred: js.Function0[java.lang.String]): TimeDataStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowed")(allowed)
+    __obj.updateDynamic("preferred")(preferred)
+    __obj.asInstanceOf[TimeDataStatic]
+  }
+}
+

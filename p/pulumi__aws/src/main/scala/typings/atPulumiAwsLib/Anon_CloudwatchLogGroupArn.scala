@@ -11,3 +11,18 @@ trait Anon_CloudwatchLogGroupArn extends js.Object {
   var logType: java.lang.String
 }
 
+object Anon_CloudwatchLogGroupArn {
+  @scala.inline
+  def apply(
+    cloudwatchLogGroupArn: java.lang.String,
+    logType: java.lang.String,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_CloudwatchLogGroupArn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn)
+    __obj.updateDynamic("logType")(logType)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[Anon_CloudwatchLogGroupArn]
+  }
+}
+

@@ -30,3 +30,18 @@ trait RoomLeaveRequest extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RoomLeaveRequest {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    leaveDiagnostics: RoomLeaveDiagnostics = null,
+    reason: java.lang.String = null
+  ): RoomLeaveRequest = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (leaveDiagnostics != null) __obj.updateDynamic("leaveDiagnostics")(leaveDiagnostics)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[RoomLeaveRequest]
+  }
+}
+

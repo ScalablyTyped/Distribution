@@ -138,3 +138,67 @@ trait IgDoughnutChartSeries
   var valueMemberPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgDoughnutChartSeries {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgDoughnutChartSeries
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    brushes: js.Any = null,
+    formatLabel: js.Any = null,
+    formatLegendLabel: js.Any = null,
+    isSurfaceInteractionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    itemsSource: js.Any = null,
+    labelExtent: scala.Int | scala.Double = null,
+    labelMemberPath: java.lang.String = null,
+    labelsPosition: java.lang.String = null,
+    leaderLineMargin: scala.Int | scala.Double = null,
+    leaderLineStyle: js.Any = null,
+    leaderLineType: java.lang.String = null,
+    leaderLineVisibility: java.lang.String = null,
+    legend: js.Any = null,
+    legendLabelMemberPath: java.lang.String = null,
+    othersCategoryText: java.lang.String = null,
+    othersCategoryThreshold: scala.Int | scala.Double = null,
+    othersCategoryType: java.lang.String = null,
+    outlines: js.Any = null,
+    radiusFactor: scala.Int | scala.Double = null,
+    selectedStyle: js.Any = null,
+    showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    startAngle: scala.Int | scala.Double = null,
+    tooltipTemplate: java.lang.String = null,
+    `type`: java.lang.String = null,
+    valueMemberPath: java.lang.String = null
+  ): IgDoughnutChartSeries = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (brushes != null) __obj.updateDynamic("brushes")(brushes)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (formatLegendLabel != null) __obj.updateDynamic("formatLegendLabel")(formatLegendLabel)
+    if (!js.isUndefined(isSurfaceInteractionDisabled)) __obj.updateDynamic("isSurfaceInteractionDisabled")(isSurfaceInteractionDisabled)
+    if (itemsSource != null) __obj.updateDynamic("itemsSource")(itemsSource)
+    if (labelExtent != null) __obj.updateDynamic("labelExtent")(labelExtent.asInstanceOf[js.Any])
+    if (labelMemberPath != null) __obj.updateDynamic("labelMemberPath")(labelMemberPath)
+    if (labelsPosition != null) __obj.updateDynamic("labelsPosition")(labelsPosition)
+    if (leaderLineMargin != null) __obj.updateDynamic("leaderLineMargin")(leaderLineMargin.asInstanceOf[js.Any])
+    if (leaderLineStyle != null) __obj.updateDynamic("leaderLineStyle")(leaderLineStyle)
+    if (leaderLineType != null) __obj.updateDynamic("leaderLineType")(leaderLineType)
+    if (leaderLineVisibility != null) __obj.updateDynamic("leaderLineVisibility")(leaderLineVisibility)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (legendLabelMemberPath != null) __obj.updateDynamic("legendLabelMemberPath")(legendLabelMemberPath)
+    if (othersCategoryText != null) __obj.updateDynamic("othersCategoryText")(othersCategoryText)
+    if (othersCategoryThreshold != null) __obj.updateDynamic("othersCategoryThreshold")(othersCategoryThreshold.asInstanceOf[js.Any])
+    if (othersCategoryType != null) __obj.updateDynamic("othersCategoryType")(othersCategoryType)
+    if (outlines != null) __obj.updateDynamic("outlines")(outlines)
+    if (radiusFactor != null) __obj.updateDynamic("radiusFactor")(radiusFactor.asInstanceOf[js.Any])
+    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle)
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath)
+    __obj.asInstanceOf[IgDoughnutChartSeries]
+  }
+}
+

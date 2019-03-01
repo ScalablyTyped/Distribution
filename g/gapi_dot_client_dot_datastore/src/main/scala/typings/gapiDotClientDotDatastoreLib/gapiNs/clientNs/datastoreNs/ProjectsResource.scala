@@ -27,3 +27,44 @@ trait ProjectsResource extends js.Object {
   def runQuery(request: gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[RunQueryResponse]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    allocateIds: js.Function1[
+      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AllocateIdsResponse]
+    ],
+    beginTransaction: js.Function1[
+      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BeginTransactionResponse]
+    ],
+    commit: js.Function1[
+      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse]
+    ],
+    lookup: js.Function1[
+      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LookupResponse]
+    ],
+    operations: OperationsResource,
+    rollback: js.Function1[
+      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    runQuery: js.Function1[
+      gapiDotClientDotDatastoreLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RunQueryResponse]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allocateIds")(allocateIds)
+    __obj.updateDynamic("beginTransaction")(beginTransaction)
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("lookup")(lookup)
+    __obj.updateDynamic("operations")(operations)
+    __obj.updateDynamic("rollback")(rollback)
+    __obj.updateDynamic("runQuery")(runQuery)
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

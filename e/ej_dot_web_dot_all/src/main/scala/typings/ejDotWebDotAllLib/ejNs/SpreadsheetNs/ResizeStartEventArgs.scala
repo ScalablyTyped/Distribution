@@ -26,3 +26,24 @@ trait ResizeStartEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResizeStartEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    colIndex: scala.Int | scala.Double = null,
+    model: js.Any = null,
+    reqType: java.lang.String = null,
+    rowIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): ResizeStartEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (reqType != null) __obj.updateDynamic("reqType")(reqType)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ResizeStartEventArgs]
+  }
+}
+

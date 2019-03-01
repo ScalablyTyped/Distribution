@@ -19,3 +19,20 @@ trait ISyncTreeArgs extends js.Object {
   var tree: java.lang.String
 }
 
+object ISyncTreeArgs {
+  @scala.inline
+  def apply(
+    activate: scala.Boolean,
+    forceReload: scala.Boolean,
+    path: java.lang.String,
+    tree: java.lang.String
+  ): ISyncTreeArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activate")(activate)
+    __obj.updateDynamic("forceReload")(forceReload)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("tree")(tree)
+    __obj.asInstanceOf[ISyncTreeArgs]
+  }
+}
+

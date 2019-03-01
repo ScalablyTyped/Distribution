@@ -25,3 +25,46 @@ trait ReactListProps
   var useTranslate3d: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReactListProps {
+  @scala.inline
+  def apply(
+    axis: reactDashListLib.reactDashListLibStrings.x | reactDashListLib.reactDashListLibStrings.y = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    initialIndex: scala.Int | scala.Double = null,
+    itemRenderer: reactDashListLib.ItemRenderer = null,
+    itemSizeEstimator: reactDashListLib.ItemSizeEstimator = null,
+    itemSizeGetter: reactDashListLib.ItemSizeGetter = null,
+    itemsRenderer: reactDashListLib.ItemsRenderer = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    length: scala.Int | scala.Double = null,
+    minSize: scala.Int | scala.Double = null,
+    pageSize: scala.Int | scala.Double = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[ReactList] = null,
+    scrollParentGetter: reactDashListLib.ScrollParentGetter = null,
+    threshold: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    useStaticSize: js.UndefOr[scala.Boolean] = js.undefined,
+    useTranslate3d: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReactListProps = {
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
+    if (itemRenderer != null) __obj.updateDynamic("itemRenderer")(itemRenderer)
+    if (itemSizeEstimator != null) __obj.updateDynamic("itemSizeEstimator")(itemSizeEstimator)
+    if (itemSizeGetter != null) __obj.updateDynamic("itemSizeGetter")(itemSizeGetter)
+    if (itemsRenderer != null) __obj.updateDynamic("itemsRenderer")(itemsRenderer)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (scrollParentGetter != null) __obj.updateDynamic("scrollParentGetter")(scrollParentGetter)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(useStaticSize)) __obj.updateDynamic("useStaticSize")(useStaticSize)
+    if (!js.isUndefined(useTranslate3d)) __obj.updateDynamic("useTranslate3d")(useTranslate3d)
+    __obj.asInstanceOf[ReactListProps]
+  }
+}
+

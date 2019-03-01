@@ -43,3 +43,24 @@ trait AndroidRoboTest extends js.Object {
   var roboDirectives: js.UndefOr[js.Array[RoboDirective]] = js.undefined
 }
 
+object AndroidRoboTest {
+  @scala.inline
+  def apply(
+    appApk: FileReference = null,
+    appInitialActivity: java.lang.String = null,
+    appPackageId: java.lang.String = null,
+    maxDepth: scala.Int | scala.Double = null,
+    maxSteps: scala.Int | scala.Double = null,
+    roboDirectives: js.Array[RoboDirective] = null
+  ): AndroidRoboTest = {
+    val __obj = js.Dynamic.literal()
+    if (appApk != null) __obj.updateDynamic("appApk")(appApk)
+    if (appInitialActivity != null) __obj.updateDynamic("appInitialActivity")(appInitialActivity)
+    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId)
+    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
+    if (maxSteps != null) __obj.updateDynamic("maxSteps")(maxSteps.asInstanceOf[js.Any])
+    if (roboDirectives != null) __obj.updateDynamic("roboDirectives")(roboDirectives)
+    __obj.asInstanceOf[AndroidRoboTest]
+  }
+}
+

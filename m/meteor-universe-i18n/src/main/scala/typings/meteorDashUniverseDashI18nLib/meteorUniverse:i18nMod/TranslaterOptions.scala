@@ -10,3 +10,13 @@ trait TranslaterOptions extends js.Object {
   var _purify: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TranslaterOptions {
+  @scala.inline
+  def apply(_locale: java.lang.String = null, _purify: js.UndefOr[scala.Boolean] = js.undefined): TranslaterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (_locale != null) __obj.updateDynamic("_locale")(_locale)
+    if (!js.isUndefined(_purify)) __obj.updateDynamic("_purify")(_purify)
+    __obj.asInstanceOf[TranslaterOptions]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Speech extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Speech {
+  @scala.inline
+  def apply(speech: java.lang.String, `type`: java.lang.String): Anon_Speech = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("speech")(speech)
+    __obj.asInstanceOf[Anon_Speech]
+  }
+}
+

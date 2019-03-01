@@ -22,3 +22,14 @@ trait VertOrientationFormat extends js.Object {
   var YPos: scala.Double
 }
 
+object VertOrientationFormat {
+  @scala.inline
+  def apply(VerticalOrientation: scala.Double, VerticalRelation: scala.Double, YPos: scala.Double): VertOrientationFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("VerticalOrientation")(VerticalOrientation)
+    __obj.updateDynamic("VerticalRelation")(VerticalRelation)
+    __obj.updateDynamic("YPos")(YPos)
+    __obj.asInstanceOf[VertOrientationFormat]
+  }
+}
+

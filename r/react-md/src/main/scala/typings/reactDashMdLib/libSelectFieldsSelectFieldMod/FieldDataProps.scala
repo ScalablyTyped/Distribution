@@ -11,3 +11,14 @@ trait FieldDataProps extends js.Object {
   var value: scala.Double | java.lang.String
 }
 
+object FieldDataProps {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, value: scala.Double | java.lang.String): FieldDataProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FieldDataProps]
+  }
+}
+

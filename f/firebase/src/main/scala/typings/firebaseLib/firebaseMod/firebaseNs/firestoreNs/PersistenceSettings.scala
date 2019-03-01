@@ -21,3 +21,12 @@ trait PersistenceSettings extends js.Object {
   var experimentalTabSynchronization: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PersistenceSettings {
+  @scala.inline
+  def apply(experimentalTabSynchronization: js.UndefOr[scala.Boolean] = js.undefined): PersistenceSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(experimentalTabSynchronization)) __obj.updateDynamic("experimentalTabSynchronization")(experimentalTabSynchronization)
+    __obj.asInstanceOf[PersistenceSettings]
+  }
+}
+

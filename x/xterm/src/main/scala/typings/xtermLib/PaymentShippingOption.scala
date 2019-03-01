@@ -12,3 +12,20 @@ trait PaymentShippingOption extends js.Object {
   var selected: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PaymentShippingOption {
+  @scala.inline
+  def apply(
+    amount: PaymentCurrencyAmount,
+    id: java.lang.String,
+    label: java.lang.String,
+    selected: js.UndefOr[scala.Boolean] = js.undefined
+  ): PaymentShippingOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    __obj.asInstanceOf[PaymentShippingOption]
+  }
+}
+

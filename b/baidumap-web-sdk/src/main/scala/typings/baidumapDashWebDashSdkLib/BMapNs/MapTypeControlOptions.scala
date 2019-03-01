@@ -10,3 +10,13 @@ trait MapTypeControlOptions extends js.Object {
   var `type`: js.UndefOr[MapTypeControlType] = js.undefined
 }
 
+object MapTypeControlOptions {
+  @scala.inline
+  def apply(mapTypes: js.Array[MapType] = null, `type`: js.UndefOr[MapTypeControlType] = js.undefined): MapTypeControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (mapTypes != null) __obj.updateDynamic("mapTypes")(mapTypes)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[MapTypeControlOptions]
+  }
+}
+

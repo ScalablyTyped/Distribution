@@ -30,3 +30,34 @@ trait JobStatistics2 extends js.Object {
   var undeclaredQueryParameters: js.UndefOr[js.Array[QueryParameter]] = js.undefined
 }
 
+object JobStatistics2 {
+  @scala.inline
+  def apply(
+    billingTier: scala.Int | scala.Double = null,
+    cacheHit: js.UndefOr[scala.Boolean] = js.undefined,
+    numDmlAffectedRows: java.lang.String = null,
+    queryPlan: js.Array[ExplainQueryStage] = null,
+    referencedTables: js.Array[TableReference] = null,
+    schema: TableSchema = null,
+    statementType: java.lang.String = null,
+    totalBytesBilled: java.lang.String = null,
+    totalBytesProcessed: java.lang.String = null,
+    totalSlotMs: java.lang.String = null,
+    undeclaredQueryParameters: js.Array[QueryParameter] = null
+  ): JobStatistics2 = {
+    val __obj = js.Dynamic.literal()
+    if (billingTier != null) __obj.updateDynamic("billingTier")(billingTier.asInstanceOf[js.Any])
+    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit)
+    if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows)
+    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan)
+    if (referencedTables != null) __obj.updateDynamic("referencedTables")(referencedTables)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (statementType != null) __obj.updateDynamic("statementType")(statementType)
+    if (totalBytesBilled != null) __obj.updateDynamic("totalBytesBilled")(totalBytesBilled)
+    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed)
+    if (totalSlotMs != null) __obj.updateDynamic("totalSlotMs")(totalSlotMs)
+    if (undeclaredQueryParameters != null) __obj.updateDynamic("undeclaredQueryParameters")(undeclaredQueryParameters)
+    __obj.asInstanceOf[JobStatistics2]
+  }
+}
+

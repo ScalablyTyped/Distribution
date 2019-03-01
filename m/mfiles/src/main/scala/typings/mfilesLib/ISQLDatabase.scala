@@ -14,3 +14,24 @@ trait ISQLDatabase extends js.Object {
   def Clone(): ISQLDatabase
 }
 
+object ISQLDatabase {
+  @scala.inline
+  def apply(
+    AdminUser: IImpersonation,
+    BasicUser: IImpersonation,
+    Clone: js.Function0[ISQLDatabase],
+    Engine: mfilesLib.MFilesNs.MFDBEngine,
+    Name: java.lang.String,
+    Server: java.lang.String
+  ): ISQLDatabase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AdminUser")(AdminUser)
+    __obj.updateDynamic("BasicUser")(BasicUser)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Engine")(Engine)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Server")(Server)
+    __obj.asInstanceOf[ISQLDatabase]
+  }
+}
+

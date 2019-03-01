@@ -24,3 +24,20 @@ trait Anon_Id extends js.Object {
   var tile: js.UndefOr[Anon_Height] = js.undefined
 }
 
+object Anon_Id {
+  @scala.inline
+  def apply(
+    onclick: js.Function1[/* id */ js.Any, scala.Unit] = null,
+    onmouseout: js.Function1[/* id */ js.Any, scala.Unit] = null,
+    onmouseover: js.Function1[/* id */ js.Any, scala.Unit] = null,
+    tile: Anon_Height = null
+  ): Anon_Id = {
+    val __obj = js.Dynamic.literal()
+    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout)
+    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover)
+    if (tile != null) __obj.updateDynamic("tile")(tile)
+    __obj.asInstanceOf[Anon_Id]
+  }
+}
+

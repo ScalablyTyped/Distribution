@@ -17,3 +17,30 @@ trait Locale extends js.Object {
   var shortMonths: js.Array[java.lang.String]
 }
 
+object Locale {
+  @scala.inline
+  def apply(
+    AM: java.lang.String,
+    PM: java.lang.String,
+    am: java.lang.String,
+    days: js.Array[java.lang.String],
+    formats: LocaleFormats,
+    months: js.Array[java.lang.String],
+    pm: java.lang.String,
+    shortDays: js.Array[java.lang.String],
+    shortMonths: js.Array[java.lang.String]
+  ): Locale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AM")(AM)
+    __obj.updateDynamic("PM")(PM)
+    __obj.updateDynamic("am")(am)
+    __obj.updateDynamic("days")(days)
+    __obj.updateDynamic("formats")(formats)
+    __obj.updateDynamic("months")(months)
+    __obj.updateDynamic("pm")(pm)
+    __obj.updateDynamic("shortDays")(shortDays)
+    __obj.updateDynamic("shortMonths")(shortMonths)
+    __obj.asInstanceOf[Locale]
+  }
+}
+

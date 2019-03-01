@@ -48,3 +48,37 @@ trait ServiceEndpoint extends js.Object {
   var url: java.lang.String
 }
 
+object ServiceEndpoint {
+  @scala.inline
+  def apply(
+    administratorsGroup: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    authorization: EndpointAuthorization,
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    data: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    description: java.lang.String,
+    groupScopeId: java.lang.String,
+    id: java.lang.String,
+    isReady: scala.Boolean,
+    name: java.lang.String,
+    operationStatus: js.Any,
+    readersGroup: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    `type`: java.lang.String,
+    url: java.lang.String
+  ): ServiceEndpoint = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("administratorsGroup")(administratorsGroup)
+    __obj.updateDynamic("authorization")(authorization)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("groupScopeId")(groupScopeId)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isReady")(isReady)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("operationStatus")(operationStatus)
+    __obj.updateDynamic("readersGroup")(readersGroup)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ServiceEndpoint]
+  }
+}
+

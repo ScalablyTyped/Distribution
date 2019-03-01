@@ -87,3 +87,45 @@ trait Event extends js.Object {
   val `type`: java.lang.String
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    count: scala.Double,
+    eventTime: java.lang.String,
+    firstTimestamp: java.lang.String,
+    involvedObject: ObjectReference,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event,
+    lastTimestamp: java.lang.String,
+    message: java.lang.String,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    reason: java.lang.String,
+    related: ObjectReference,
+    reportingComponent: java.lang.String,
+    reportingInstance: java.lang.String,
+    series: EventSeries,
+    source: EventSource,
+    `type`: java.lang.String
+  ): Event = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("eventTime")(eventTime)
+    __obj.updateDynamic("firstTimestamp")(firstTimestamp)
+    __obj.updateDynamic("involvedObject")(involvedObject)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("lastTimestamp")(lastTimestamp)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("related")(related)
+    __obj.updateDynamic("reportingComponent")(reportingComponent)
+    __obj.updateDynamic("reportingInstance")(reportingInstance)
+    __obj.updateDynamic("series")(series)
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[Event]
+  }
+}
+

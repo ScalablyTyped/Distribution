@@ -24,3 +24,13 @@ trait EasyEncoderOptions extends js.Object {
   var preset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object EasyEncoderOptions {
+  @scala.inline
+  def apply(check: scala.Int | scala.Double = null, preset: scala.Int | scala.Double = null): EasyEncoderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EasyEncoderOptions]
+  }
+}
+

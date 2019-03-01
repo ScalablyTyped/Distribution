@@ -481,3 +481,193 @@ trait IgTreeGrid
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgTreeGrid {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTreeGrid
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    adjustVirtualHeights: js.UndefOr[scala.Boolean] = js.undefined,
+    aggregateTransactions: js.UndefOr[scala.Boolean] = js.undefined,
+    alternateRowStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    autoAdjustHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCommit: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFormat: java.lang.String | scala.Boolean = null,
+    autoGenerateColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    autofitLastColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    avgColumnWidth: js.Any = null,
+    avgRowHeight: scala.Int | scala.Double = null,
+    caption: java.lang.String = null,
+    captionRendered: CaptionRenderedEvent = null,
+    captionRendering: CaptionRenderingEvent = null,
+    cellClick: CellClickEvent = null,
+    cellRightClick: CellRightClickEvent = null,
+    childDataKey: java.lang.String = null,
+    collapseTooltipText: java.lang.String = null,
+    columnVirtualization: js.Any = null,
+    columns: js.Array[IgGridColumn] = null,
+    columnsCollectionModified: ColumnsCollectionModifiedEvent = null,
+    created: CreatedEvent = null,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataRendered: DataRenderedEvent = null,
+    dataRendering: DataRenderingEvent = null,
+    dataSource: js.Array[_] | js.Object | java.lang.String = null,
+    dataSourceSettings: IgTreeGridDataSourceSettings = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    defaultColumnWidth: java.lang.String | scala.Double = null,
+    destroyed: DestroyedEvent = null,
+    enableHoverStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRemoteLoadOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
+    enableResizeContainerCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    enableUTCDates: js.UndefOr[scala.Boolean] = js.undefined,
+    expandTooltipText: java.lang.String = null,
+    featureChooserIconDisplay: java.lang.String = null,
+    features: js.Array[IgGridFeature] = null,
+    fixedFooters: js.UndefOr[scala.Boolean] = js.undefined,
+    fixedHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    footerRendered: FooterRenderedEvent = null,
+    footerRendering: FooterRenderingEvent = null,
+    foreignKey: java.lang.String = null,
+    foreignKeyRootValue: scala.Double | java.lang.String = null,
+    headerCellRendered: HeaderCellRenderedEvent = null,
+    headerRendered: HeaderRenderedEvent = null,
+    headerRendering: HeaderRenderingEvent = null,
+    height: java.lang.String | scala.Double = null,
+    indentation: java.lang.String = null,
+    initialExpandDepth: scala.Int | scala.Double = null,
+    initialIndentationLevel: scala.Int | scala.Double = null,
+    jsonpRequest: js.UndefOr[scala.Boolean] = js.undefined,
+    localSchemaTransform: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: IgTreeGridLocale = null,
+    mergeUnboundColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    primaryKey: java.lang.String = null,
+    renderCheckboxes: js.UndefOr[scala.Boolean] = js.undefined,
+    renderExpansionCellFunction: java.lang.String | js.Object = null,
+    renderExpansionIndicatorColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    renderFirstDataCellFunction: java.lang.String | js.Object = null,
+    rendered: RenderedEvent = null,
+    rendering: RenderingEvent = null,
+    requestError: RequestErrorEvent = null,
+    requestType: java.lang.String = null,
+    responseContentType: java.lang.String = null,
+    responseDataKey: java.lang.String = null,
+    responseTotalRecCountKey: java.lang.String = null,
+    restSettings: IgTreeGridRestSettings = null,
+    rowCollapsed: RowCollapsedEvent = null,
+    rowCollapsing: RowCollapsingEvent = null,
+    rowExpanded: RowExpandedEvent = null,
+    rowExpanding: RowExpandingEvent = null,
+    rowVirtualization: js.UndefOr[scala.Boolean] = js.undefined,
+    rowsRendered: RowsRenderedEvent = null,
+    rowsRendering: RowsRenderingEvent = null,
+    schemaGenerated: SchemaGeneratedEvent = null,
+    scrollSettings: IgGridScrollSettings = null,
+    serializeTransactionLog: js.UndefOr[scala.Boolean] = js.undefined,
+    showExpansionIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    showFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null,
+    templatingEngine: java.lang.String = null,
+    updateUrl: java.lang.String = null,
+    virtualization: js.UndefOr[scala.Boolean] = js.undefined,
+    virtualizationMode: java.lang.String = null,
+    virtualizationMouseWheelStep: scala.Int | scala.Double = null,
+    width: java.lang.String | scala.Double = null
+  ): IgTreeGrid = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(adjustVirtualHeights)) __obj.updateDynamic("adjustVirtualHeights")(adjustVirtualHeights)
+    if (!js.isUndefined(aggregateTransactions)) __obj.updateDynamic("aggregateTransactions")(aggregateTransactions)
+    if (!js.isUndefined(alternateRowStyles)) __obj.updateDynamic("alternateRowStyles")(alternateRowStyles)
+    if (!js.isUndefined(autoAdjustHeight)) __obj.updateDynamic("autoAdjustHeight")(autoAdjustHeight)
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
+    if (autoFormat != null) __obj.updateDynamic("autoFormat")(autoFormat.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGenerateColumns)) __obj.updateDynamic("autoGenerateColumns")(autoGenerateColumns)
+    if (!js.isUndefined(autofitLastColumn)) __obj.updateDynamic("autofitLastColumn")(autofitLastColumn)
+    if (avgColumnWidth != null) __obj.updateDynamic("avgColumnWidth")(avgColumnWidth)
+    if (avgRowHeight != null) __obj.updateDynamic("avgRowHeight")(avgRowHeight.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (captionRendered != null) __obj.updateDynamic("captionRendered")(captionRendered)
+    if (captionRendering != null) __obj.updateDynamic("captionRendering")(captionRendering)
+    if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
+    if (cellRightClick != null) __obj.updateDynamic("cellRightClick")(cellRightClick)
+    if (childDataKey != null) __obj.updateDynamic("childDataKey")(childDataKey)
+    if (collapseTooltipText != null) __obj.updateDynamic("collapseTooltipText")(collapseTooltipText)
+    if (columnVirtualization != null) __obj.updateDynamic("columnVirtualization")(columnVirtualization)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (columnsCollectionModified != null) __obj.updateDynamic("columnsCollectionModified")(columnsCollectionModified)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataRendered != null) __obj.updateDynamic("dataRendered")(dataRendered)
+    if (dataRendering != null) __obj.updateDynamic("dataRendering")(dataRendering)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (dataSourceSettings != null) __obj.updateDynamic("dataSourceSettings")(dataSourceSettings)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
+    if (destroyed != null) __obj.updateDynamic("destroyed")(destroyed)
+    if (!js.isUndefined(enableHoverStyles)) __obj.updateDynamic("enableHoverStyles")(enableHoverStyles)
+    if (!js.isUndefined(enableRemoteLoadOnDemand)) __obj.updateDynamic("enableRemoteLoadOnDemand")(enableRemoteLoadOnDemand)
+    if (!js.isUndefined(enableResizeContainerCheck)) __obj.updateDynamic("enableResizeContainerCheck")(enableResizeContainerCheck)
+    if (!js.isUndefined(enableUTCDates)) __obj.updateDynamic("enableUTCDates")(enableUTCDates)
+    if (expandTooltipText != null) __obj.updateDynamic("expandTooltipText")(expandTooltipText)
+    if (featureChooserIconDisplay != null) __obj.updateDynamic("featureChooserIconDisplay")(featureChooserIconDisplay)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (!js.isUndefined(fixedFooters)) __obj.updateDynamic("fixedFooters")(fixedFooters)
+    if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders)
+    if (footerRendered != null) __obj.updateDynamic("footerRendered")(footerRendered)
+    if (footerRendering != null) __obj.updateDynamic("footerRendering")(footerRendering)
+    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey)
+    if (foreignKeyRootValue != null) __obj.updateDynamic("foreignKeyRootValue")(foreignKeyRootValue.asInstanceOf[js.Any])
+    if (headerCellRendered != null) __obj.updateDynamic("headerCellRendered")(headerCellRendered)
+    if (headerRendered != null) __obj.updateDynamic("headerRendered")(headerRendered)
+    if (headerRendering != null) __obj.updateDynamic("headerRendering")(headerRendering)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (indentation != null) __obj.updateDynamic("indentation")(indentation)
+    if (initialExpandDepth != null) __obj.updateDynamic("initialExpandDepth")(initialExpandDepth.asInstanceOf[js.Any])
+    if (initialIndentationLevel != null) __obj.updateDynamic("initialIndentationLevel")(initialIndentationLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsonpRequest)) __obj.updateDynamic("jsonpRequest")(jsonpRequest)
+    if (!js.isUndefined(localSchemaTransform)) __obj.updateDynamic("localSchemaTransform")(localSchemaTransform)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (!js.isUndefined(mergeUnboundColumns)) __obj.updateDynamic("mergeUnboundColumns")(mergeUnboundColumns)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (!js.isUndefined(renderCheckboxes)) __obj.updateDynamic("renderCheckboxes")(renderCheckboxes)
+    if (renderExpansionCellFunction != null) __obj.updateDynamic("renderExpansionCellFunction")(renderExpansionCellFunction.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderExpansionIndicatorColumn)) __obj.updateDynamic("renderExpansionIndicatorColumn")(renderExpansionIndicatorColumn)
+    if (renderFirstDataCellFunction != null) __obj.updateDynamic("renderFirstDataCellFunction")(renderFirstDataCellFunction.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (requestError != null) __obj.updateDynamic("requestError")(requestError)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
+    if (restSettings != null) __obj.updateDynamic("restSettings")(restSettings)
+    if (rowCollapsed != null) __obj.updateDynamic("rowCollapsed")(rowCollapsed)
+    if (rowCollapsing != null) __obj.updateDynamic("rowCollapsing")(rowCollapsing)
+    if (rowExpanded != null) __obj.updateDynamic("rowExpanded")(rowExpanded)
+    if (rowExpanding != null) __obj.updateDynamic("rowExpanding")(rowExpanding)
+    if (!js.isUndefined(rowVirtualization)) __obj.updateDynamic("rowVirtualization")(rowVirtualization)
+    if (rowsRendered != null) __obj.updateDynamic("rowsRendered")(rowsRendered)
+    if (rowsRendering != null) __obj.updateDynamic("rowsRendering")(rowsRendering)
+    if (schemaGenerated != null) __obj.updateDynamic("schemaGenerated")(schemaGenerated)
+    if (scrollSettings != null) __obj.updateDynamic("scrollSettings")(scrollSettings)
+    if (!js.isUndefined(serializeTransactionLog)) __obj.updateDynamic("serializeTransactionLog")(serializeTransactionLog)
+    if (!js.isUndefined(showExpansionIndicator)) __obj.updateDynamic("showExpansionIndicator")(showExpansionIndicator)
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (templatingEngine != null) __obj.updateDynamic("templatingEngine")(templatingEngine)
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (!js.isUndefined(virtualization)) __obj.updateDynamic("virtualization")(virtualization)
+    if (virtualizationMode != null) __obj.updateDynamic("virtualizationMode")(virtualizationMode)
+    if (virtualizationMouseWheelStep != null) __obj.updateDynamic("virtualizationMouseWheelStep")(virtualizationMouseWheelStep.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgTreeGrid]
+  }
+}
+

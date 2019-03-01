@@ -17,3 +17,18 @@ trait Anon_ContainerType extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ContainerType {
+  @scala.inline
+  def apply(
+    containerType: java.lang.String = null,
+    sha1Checksum: java.lang.String = null,
+    source: java.lang.String = null
+  ): Anon_ContainerType = {
+    val __obj = js.Dynamic.literal()
+    if (containerType != null) __obj.updateDynamic("containerType")(containerType)
+    if (sha1Checksum != null) __obj.updateDynamic("sha1Checksum")(sha1Checksum)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[Anon_ContainerType]
+  }
+}
+

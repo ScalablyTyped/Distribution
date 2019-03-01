@@ -29,3 +29,26 @@ trait CellDoubleClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellDoubleClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    endTime: js.Any = null,
+    model: Model = null,
+    resources: js.Any = null,
+    startTime: js.Any = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): CellDoubleClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CellDoubleClickEventArgs]
+  }
+}
+

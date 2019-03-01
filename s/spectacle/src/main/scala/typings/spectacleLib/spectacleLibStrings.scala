@@ -7,208 +7,276 @@ import scala.scalajs.js.annotation._
 
 object spectacleLibStrings {
   @js.native
-  sealed trait _blank extends js.Object
+  sealed trait _blank
+    extends spectacleLib.spectacleMod.targetType
   
   @js.native
-  sealed trait _parent extends js.Object
+  sealed trait _parent
+    extends spectacleLib.spectacleMod.targetType
   
   @js.native
-  sealed trait _self extends js.Object
+  sealed trait _self
+    extends spectacleLib.spectacleMod.targetType
   
   @js.native
-  sealed trait _top extends js.Object
+  sealed trait _top
+    extends spectacleLib.spectacleMod.targetType
   
   @js.native
-  sealed trait back extends js.Object
+  sealed trait back
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait backIn extends js.Object
+  sealed trait backIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait backInOut extends js.Object
+  sealed trait backInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait backOut extends js.Object
+  sealed trait backOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait bar extends js.Object
+  sealed trait bar
+    extends spectacleLib.spectacleMod.progressType
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait bold
+    extends spectacleLib.spectacleMod.sType
   
   @js.native
-  sealed trait bounce extends js.Object
+  sealed trait bounce
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait bounceIn extends js.Object
+  sealed trait bounceIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait bounceInOut extends js.Object
+  sealed trait bounceInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait bounceOut extends js.Object
+  sealed trait bounceOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait `center center` extends js.Object
+  sealed trait `center center`
+    extends spectacleLib.spectacleMod.alignType
   
   @js.native
-  sealed trait `center flex-end` extends js.Object
+  sealed trait `center flex-end`
+    extends spectacleLib.spectacleMod.alignType
   
   @js.native
-  sealed trait `center flex-start` extends js.Object
+  sealed trait `center flex-start`
+    extends spectacleLib.spectacleMod.alignType
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait circleIn extends js.Object
+  sealed trait circleIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait circleInOut extends js.Object
+  sealed trait circleInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait circleOut extends js.Object
+  sealed trait circleOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait cubic extends js.Object
+  sealed trait cubic
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait cubicIn extends js.Object
+  sealed trait cubicIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait cubicInOut extends js.Object
+  sealed trait cubicInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait cubicOut extends js.Object
+  sealed trait cubicOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait dark
+    extends spectacleLib.spectacleMod.themeType
   
   @js.native
-  sealed trait elastic extends js.Object
+  sealed trait elastic
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait elasticIn extends js.Object
+  sealed trait elasticIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait elasticInOut extends js.Object
+  sealed trait elasticInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait elasticOut extends js.Object
+  sealed trait elasticOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait exp extends js.Object
+  sealed trait exp
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait expIn extends js.Object
+  sealed trait expIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait expInOut extends js.Object
+  sealed trait expInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait expOut extends js.Object
+  sealed trait expOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait external extends js.Object
+  sealed trait external
+    extends spectacleLib.spectacleMod.themeType
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait fade
+    extends spectacleLib.spectacleMod.transitionType
   
   @js.native
-  sealed trait `flex-end center` extends js.Object
+  sealed trait `flex-end center`
+    extends spectacleLib.spectacleMod.alignType
   
   @js.native
-  sealed trait `flex-end flex-end` extends js.Object
+  sealed trait `flex-end flex-end`
+    extends spectacleLib.spectacleMod.alignType
   
   @js.native
-  sealed trait `flex-end flex-start` extends js.Object
+  sealed trait `flex-end flex-start`
+    extends spectacleLib.spectacleMod.alignType
   
   @js.native
-  sealed trait `flex-start center` extends js.Object
+  sealed trait `flex-start center`
+    extends spectacleLib.spectacleMod.alignType
   
   @js.native
-  sealed trait `flex-start flex-end` extends js.Object
+  sealed trait `flex-start flex-end`
+    extends spectacleLib.spectacleMod.alignType
   
   @js.native
-  sealed trait `flex-start flex-start` extends js.Object
+  sealed trait `flex-start flex-start`
+    extends spectacleLib.spectacleMod.alignType
   
   @js.native
-  sealed trait italic extends js.Object
+  sealed trait italic
+    extends spectacleLib.spectacleMod.sType
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light
+    extends spectacleLib.spectacleMod.themeType
   
   @js.native
-  sealed trait `line-through` extends js.Object
+  sealed trait `line-through`
+    extends spectacleLib.spectacleMod.sType
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait linearIn extends js.Object
+  sealed trait linearIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait linearInOut extends js.Object
+  sealed trait linearInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait linearOut extends js.Object
+  sealed trait linearOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends spectacleLib.spectacleMod.progressType
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends spectacleLib.spectacleMod.progressType
   
   @js.native
-  sealed trait pacman extends js.Object
+  sealed trait pacman
+    extends spectacleLib.spectacleMod.progressType
   
   @js.native
-  sealed trait poly extends js.Object
+  sealed trait poly
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait polyIn extends js.Object
+  sealed trait polyIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait polyInOut extends js.Object
+  sealed trait polyInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait polyOut extends js.Object
+  sealed trait polyOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait quad extends js.Object
+  sealed trait quad
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait quadIn extends js.Object
+  sealed trait quadIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait quadInOut extends js.Object
+  sealed trait quadInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait quadOut extends js.Object
+  sealed trait quadOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait sin extends js.Object
+  sealed trait sin
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait sinIn extends js.Object
+  sealed trait sinIn
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait sinInOut extends js.Object
+  sealed trait sinInOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait sinOut extends js.Object
+  sealed trait sinOut
+    extends spectacleLib.spectacleMod.easeType
   
   @js.native
-  sealed trait slide extends js.Object
+  sealed trait slide
+    extends spectacleLib.spectacleMod.transitionType
   
   @js.native
-  sealed trait spin extends js.Object
+  sealed trait spin
+    extends spectacleLib.spectacleMod.transitionType
   
   @js.native
-  sealed trait underline extends js.Object
+  sealed trait underline
+    extends spectacleLib.spectacleMod.sType
   
   @js.native
-  sealed trait zoom extends js.Object
+  sealed trait zoom
+    extends spectacleLib.spectacleMod.transitionType
   
   @scala.inline
   def _blank: _blank = "_blank".asInstanceOf[_blank]

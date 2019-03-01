@@ -10,3 +10,16 @@ trait IUriEscapeStatics extends js.Object {
   def unescapeComponent(toUnescape: java.lang.String): java.lang.String
 }
 
+object IUriEscapeStatics {
+  @scala.inline
+  def apply(
+    escapeComponent: js.Function1[java.lang.String, java.lang.String],
+    unescapeComponent: js.Function1[java.lang.String, java.lang.String]
+  ): IUriEscapeStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("escapeComponent")(escapeComponent)
+    __obj.updateDynamic("unescapeComponent")(unescapeComponent)
+    __obj.asInstanceOf[IUriEscapeStatics]
+  }
+}
+

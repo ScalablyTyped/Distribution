@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Complex extends js.Object {
+trait Complex extends _MathType {
   var im: scala.Double = js.native
   var re: scala.Double = js.native
   def compare(a: Complex, b: Complex): scala.Double = js.native

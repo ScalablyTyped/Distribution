@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when sent message status changed
 		*/
-trait MessageStatus extends js.Object {
+trait MessageStatus
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	User id
   			*/
@@ -25,5 +26,21 @@ trait MessageStatus extends js.Object {
   			*	Message event type. See VoxImplant.MessageEventType enum
   			*/
   var `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.MessageEventType
+}
+
+object MessageStatus {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    message_id: java.lang.String,
+    `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.MessageEventType,
+    resource: java.lang.String = null
+  ): MessageStatus = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("message_id")(message_id)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[MessageStatus]
+  }
 }
 

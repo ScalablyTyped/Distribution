@@ -10,3 +10,13 @@ trait ValueCore extends js.Object {
   var value: js.Any
 }
 
+object ValueCore {
+  @scala.inline
+  def apply(hasValue: scala.Boolean, value: js.Any): ValueCore = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hasValue")(hasValue)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ValueCore]
+  }
+}
+

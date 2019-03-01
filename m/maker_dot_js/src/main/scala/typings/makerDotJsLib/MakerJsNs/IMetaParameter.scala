@@ -35,3 +35,23 @@ trait IMetaParameter extends js.Object {
   var value: js.Any
 }
 
+object IMetaParameter {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    `type`: java.lang.String,
+    value: js.Any,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    step: scala.Int | scala.Double = null
+  ): IMetaParameter = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("value")(value)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IMetaParameter]
+  }
+}
+

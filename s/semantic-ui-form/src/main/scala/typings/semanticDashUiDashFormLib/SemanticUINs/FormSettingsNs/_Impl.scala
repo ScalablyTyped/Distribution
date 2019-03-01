@@ -132,3 +132,70 @@ trait _Impl extends js.Object {
   def onValid(`this`: semanticDashUiDashFormLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    className: semanticDashUiDashFormLib.SemanticUINs.FormNs.ClassNameSettings,
+    debug: scala.Boolean,
+    defaults: /* import warning: ImportType.apply Failed type conversion: {[name: string] : semantic-ui-form.SemanticUI.Form.Field, [name: string] : semantic-ui-form.SemanticUI.Form.Field} */ js.Any,
+    delay: scala.Boolean,
+    duration: scala.Double,
+    error: semanticDashUiDashFormLib.SemanticUINs.FormNs.ErrorSettings,
+    fields: /* import warning: ImportType.apply Failed type conversion: {[name: string] : string | std.Array<string> | semantic-ui-form.SemanticUI.Form.Field, [name: string] : string | std.Array<string> | semantic-ui-form.SemanticUI.Form.Field} */ js.Any,
+    `inline`: scala.Boolean,
+    keyboardShortcuts: scala.Boolean,
+    metadata: semanticDashUiDashFormLib.SemanticUINs.FormNs.MetadataSettings,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    on: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.submit | semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.blur | semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.change,
+    onFailure: js.Function3[semanticDashUiDashFormLib.JQuery, js.Array[java.lang.String], js.Any, scala.Unit],
+    onInvalid: js.Function1[semanticDashUiDashFormLib.JQuery, scala.Unit],
+    onSuccess: js.Function3[
+      semanticDashUiDashFormLib.JQuery, 
+      jqueryLib.JQueryNs.TriggeredEvent[stdLib.HTMLElement, _, _, _], 
+      js.Any, 
+      scala.Unit
+    ],
+    onValid: js.Function1[semanticDashUiDashFormLib.JQuery, scala.Unit],
+    performance: scala.Boolean,
+    prompt: semanticDashUiDashFormLib.SemanticUINs.FormNs.PromptSettings,
+    revalidate: scala.Boolean,
+    rules: /* import warning: ImportType.apply Failed type conversion: {[name: string] : (this : std.HTMLElement, args : ...any): boolean, [name: string] : (this : std.HTMLElement, args : ...any): boolean} */ js.Any,
+    selector: semanticDashUiDashFormLib.SemanticUINs.FormNs.SelectorSettings,
+    silent: scala.Boolean,
+    templates: semanticDashUiDashFormLib.SemanticUINs.FormNs.TemplatesSettings,
+    text: semanticDashUiDashFormLib.SemanticUINs.FormNs.TextSettings,
+    transition: java.lang.String,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(`inline` = `inline`)
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("defaults")(defaults)
+    __obj.updateDynamic("delay")(delay)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    __obj.updateDynamic("onFailure")(onFailure)
+    __obj.updateDynamic("onInvalid")(onInvalid)
+    __obj.updateDynamic("onSuccess")(onSuccess)
+    __obj.updateDynamic("onValid")(onValid)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    __obj.updateDynamic("revalidate")(revalidate)
+    __obj.updateDynamic("rules")(rules)
+    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
+    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    __obj.updateDynamic("transition")(transition)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

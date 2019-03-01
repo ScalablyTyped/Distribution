@@ -16,3 +16,13 @@ trait AnalyzeEntitySentimentResponse extends js.Object {
   var language: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AnalyzeEntitySentimentResponse {
+  @scala.inline
+  def apply(entities: js.Array[Entity] = null, language: java.lang.String = null): AnalyzeEntitySentimentResponse = {
+    val __obj = js.Dynamic.literal()
+    if (entities != null) __obj.updateDynamic("entities")(entities)
+    if (language != null) __obj.updateDynamic("language")(language)
+    __obj.asInstanceOf[AnalyzeEntitySentimentResponse]
+  }
+}
+

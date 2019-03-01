@@ -10,3 +10,17 @@ trait Anon_GetTokenParams extends js.Object {
   def getToken(params: simpleDashOauth2Lib.simpleDashOauth2Mod.ClientCredentialTokenConfig): js.Promise[simpleDashOauth2Lib.simpleDashOauth2Mod.Token]
 }
 
+object Anon_GetTokenParams {
+  @scala.inline
+  def apply(
+    getToken: js.Function1[
+      simpleDashOauth2Lib.simpleDashOauth2Mod.ClientCredentialTokenConfig, 
+      js.Promise[simpleDashOauth2Lib.simpleDashOauth2Mod.Token]
+    ]
+  ): Anon_GetTokenParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getToken")(getToken)
+    __obj.asInstanceOf[Anon_GetTokenParams]
+  }
+}
+

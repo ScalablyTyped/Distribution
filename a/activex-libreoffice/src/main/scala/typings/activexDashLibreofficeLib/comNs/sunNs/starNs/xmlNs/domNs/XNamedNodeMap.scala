@@ -46,3 +46,36 @@ trait XNamedNodeMap
   def setNamedItemNS(arg: XNode): XNode
 }
 
+object XNamedNodeMap {
+  @scala.inline
+  def apply(
+    Length: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getLength: js.Function0[scala.Double],
+    getNamedItem: js.Function1[java.lang.String, XNode],
+    getNamedItemNS: js.Function2[java.lang.String, java.lang.String, XNode],
+    item: js.Function1[scala.Double, XNode],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeNamedItem: js.Function1[java.lang.String, XNode],
+    removeNamedItemNS: js.Function2[java.lang.String, java.lang.String, XNode],
+    setNamedItem: js.Function1[XNode, XNode],
+    setNamedItemNS: js.Function1[XNode, XNode]
+  ): XNamedNodeMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Length")(Length)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLength")(getLength)
+    __obj.updateDynamic("getNamedItem")(getNamedItem)
+    __obj.updateDynamic("getNamedItemNS")(getNamedItemNS)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeNamedItem")(removeNamedItem)
+    __obj.updateDynamic("removeNamedItemNS")(removeNamedItemNS)
+    __obj.updateDynamic("setNamedItem")(setNamedItem)
+    __obj.updateDynamic("setNamedItemNS")(setNamedItemNS)
+    __obj.asInstanceOf[XNamedNodeMap]
+  }
+}
+

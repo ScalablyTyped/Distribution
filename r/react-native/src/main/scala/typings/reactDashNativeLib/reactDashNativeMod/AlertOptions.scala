@@ -12,3 +12,13 @@ trait AlertOptions extends js.Object {
   var onDismiss: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object AlertOptions {
+  @scala.inline
+  def apply(cancelable: js.UndefOr[scala.Boolean] = js.undefined, onDismiss: js.Function0[scala.Unit] = null): AlertOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    __obj.asInstanceOf[AlertOptions]
+  }
+}
+

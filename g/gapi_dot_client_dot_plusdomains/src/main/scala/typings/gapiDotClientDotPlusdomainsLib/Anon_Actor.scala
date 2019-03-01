@@ -40,3 +40,34 @@ trait Anon_Actor extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Actor {
+  @scala.inline
+  def apply(
+    actor: Anon_ClientSpecificActorInfoDisplayName = null,
+    attachments: js.Array[Anon_Content] = null,
+    content: java.lang.String = null,
+    id: java.lang.String = null,
+    objectType: java.lang.String = null,
+    originalContent: java.lang.String = null,
+    plusoners: Anon_SelfLink = null,
+    replies: Anon_SelfLink = null,
+    resharers: Anon_SelfLink = null,
+    statusForViewer: Anon_CanComment = null,
+    url: java.lang.String = null
+  ): Anon_Actor = {
+    val __obj = js.Dynamic.literal()
+    if (actor != null) __obj.updateDynamic("actor")(actor)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (originalContent != null) __obj.updateDynamic("originalContent")(originalContent)
+    if (plusoners != null) __obj.updateDynamic("plusoners")(plusoners)
+    if (replies != null) __obj.updateDynamic("replies")(replies)
+    if (resharers != null) __obj.updateDynamic("resharers")(resharers)
+    if (statusForViewer != null) __obj.updateDynamic("statusForViewer")(statusForViewer)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_Actor]
+  }
+}
+

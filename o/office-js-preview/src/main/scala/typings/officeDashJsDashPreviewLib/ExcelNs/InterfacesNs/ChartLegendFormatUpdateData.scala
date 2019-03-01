@@ -23,3 +23,13 @@ trait ChartLegendFormatUpdateData extends js.Object {
   var font: js.UndefOr[ChartFontUpdateData] = js.undefined
 }
 
+object ChartLegendFormatUpdateData {
+  @scala.inline
+  def apply(border: ChartBorderUpdateData = null, font: ChartFontUpdateData = null): ChartLegendFormatUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (font != null) __obj.updateDynamic("font")(font)
+    __obj.asInstanceOf[ChartLegendFormatUpdateData]
+  }
+}
+

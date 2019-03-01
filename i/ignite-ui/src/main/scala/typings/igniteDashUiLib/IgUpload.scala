@@ -293,3 +293,125 @@ trait IgUpload
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object IgUpload {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igUpload
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowedExtensions: js.Array[_] = null,
+    autostartupload: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelAllClicked: CancelAllClickedEvent = null,
+    controlId: java.lang.String = null,
+    css: js.Any = null,
+    errorMessageAJAXRequestFileSize: java.lang.String = null,
+    errorMessageCancelUpload: java.lang.String = null,
+    errorMessageDropMultipleFilesWhenSingleModel: java.lang.String = null,
+    errorMessageGetFileStatus: java.lang.String = null,
+    errorMessageMaxFileSizeExceeded: java.lang.String = null,
+    errorMessageMaxSimultaneousFiles: java.lang.String = null,
+    errorMessageMaxUploadedFiles: java.lang.String = null,
+    errorMessageNoSuchFile: java.lang.String = null,
+    errorMessageOther: java.lang.String = null,
+    errorMessageTryToRemoveNonExistingFile: java.lang.String = null,
+    errorMessageTryToStartNonExistingFile: java.lang.String = null,
+    errorMessageValidatingFileExtension: java.lang.String = null,
+    fileExtensionIcons: IgUploadFileExtensionIcons = null,
+    fileExtensionsValidating: FileExtensionsValidatingEvent = null,
+    fileSelected: FileSelectedEvent = null,
+    fileSelecting: FileSelectingEvent = null,
+    fileSizeDecimalDisplay: scala.Int | scala.Double = null,
+    fileSizeMetric: js.Any = null,
+    fileUploadAborted: FileUploadAbortedEvent = null,
+    fileUploaded: FileUploadedEvent = null,
+    fileUploading: FileUploadingEvent = null,
+    height: scala.Double | java.lang.String = null,
+    labelAddButton: java.lang.String = null,
+    labelClearAllButton: java.lang.String = null,
+    labelHideDetails: java.lang.String = null,
+    labelProgressBarFileNameContinue: java.lang.String = null,
+    labelShowDetails: java.lang.String = null,
+    labelSummaryProgressBarTemplate: java.lang.String = null,
+    labelSummaryProgressButtonCancel: java.lang.String = null,
+    labelSummaryProgressButtonContinue: java.lang.String = null,
+    labelSummaryProgressButtonDone: java.lang.String = null,
+    labelSummaryTemplate: java.lang.String = null,
+    labelUploadButton: java.lang.String = null,
+    language: java.lang.String = null,
+    locale: IgUploadLocale = null,
+    maxFileSize: js.Any = null,
+    maxSimultaneousFilesUploads: scala.Int | scala.Double = null,
+    maxUploadedFiles: scala.Int | scala.Double = null,
+    mode: js.Any = null,
+    multipleFiles: js.UndefOr[scala.Boolean] = js.undefined,
+    onError: OnErrorEvent = null,
+    onFormDataSubmit: OnFormDataSubmitEvent = null,
+    onXHRLoad: OnXHRLoadEvent = null,
+    progressUrl: java.lang.String = null,
+    regional: java.lang.String | js.Object = null,
+    showFileExtensionIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    uploadUrl: java.lang.String = null,
+    useSingleRequest: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Double | java.lang.String = null
+  ): IgUpload = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (allowedExtensions != null) __obj.updateDynamic("allowedExtensions")(allowedExtensions)
+    if (!js.isUndefined(autostartupload)) __obj.updateDynamic("autostartupload")(autostartupload)
+    if (cancelAllClicked != null) __obj.updateDynamic("cancelAllClicked")(cancelAllClicked)
+    if (controlId != null) __obj.updateDynamic("controlId")(controlId)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (errorMessageAJAXRequestFileSize != null) __obj.updateDynamic("errorMessageAJAXRequestFileSize")(errorMessageAJAXRequestFileSize)
+    if (errorMessageCancelUpload != null) __obj.updateDynamic("errorMessageCancelUpload")(errorMessageCancelUpload)
+    if (errorMessageDropMultipleFilesWhenSingleModel != null) __obj.updateDynamic("errorMessageDropMultipleFilesWhenSingleModel")(errorMessageDropMultipleFilesWhenSingleModel)
+    if (errorMessageGetFileStatus != null) __obj.updateDynamic("errorMessageGetFileStatus")(errorMessageGetFileStatus)
+    if (errorMessageMaxFileSizeExceeded != null) __obj.updateDynamic("errorMessageMaxFileSizeExceeded")(errorMessageMaxFileSizeExceeded)
+    if (errorMessageMaxSimultaneousFiles != null) __obj.updateDynamic("errorMessageMaxSimultaneousFiles")(errorMessageMaxSimultaneousFiles)
+    if (errorMessageMaxUploadedFiles != null) __obj.updateDynamic("errorMessageMaxUploadedFiles")(errorMessageMaxUploadedFiles)
+    if (errorMessageNoSuchFile != null) __obj.updateDynamic("errorMessageNoSuchFile")(errorMessageNoSuchFile)
+    if (errorMessageOther != null) __obj.updateDynamic("errorMessageOther")(errorMessageOther)
+    if (errorMessageTryToRemoveNonExistingFile != null) __obj.updateDynamic("errorMessageTryToRemoveNonExistingFile")(errorMessageTryToRemoveNonExistingFile)
+    if (errorMessageTryToStartNonExistingFile != null) __obj.updateDynamic("errorMessageTryToStartNonExistingFile")(errorMessageTryToStartNonExistingFile)
+    if (errorMessageValidatingFileExtension != null) __obj.updateDynamic("errorMessageValidatingFileExtension")(errorMessageValidatingFileExtension)
+    if (fileExtensionIcons != null) __obj.updateDynamic("fileExtensionIcons")(fileExtensionIcons)
+    if (fileExtensionsValidating != null) __obj.updateDynamic("fileExtensionsValidating")(fileExtensionsValidating)
+    if (fileSelected != null) __obj.updateDynamic("fileSelected")(fileSelected)
+    if (fileSelecting != null) __obj.updateDynamic("fileSelecting")(fileSelecting)
+    if (fileSizeDecimalDisplay != null) __obj.updateDynamic("fileSizeDecimalDisplay")(fileSizeDecimalDisplay.asInstanceOf[js.Any])
+    if (fileSizeMetric != null) __obj.updateDynamic("fileSizeMetric")(fileSizeMetric)
+    if (fileUploadAborted != null) __obj.updateDynamic("fileUploadAborted")(fileUploadAborted)
+    if (fileUploaded != null) __obj.updateDynamic("fileUploaded")(fileUploaded)
+    if (fileUploading != null) __obj.updateDynamic("fileUploading")(fileUploading)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (labelAddButton != null) __obj.updateDynamic("labelAddButton")(labelAddButton)
+    if (labelClearAllButton != null) __obj.updateDynamic("labelClearAllButton")(labelClearAllButton)
+    if (labelHideDetails != null) __obj.updateDynamic("labelHideDetails")(labelHideDetails)
+    if (labelProgressBarFileNameContinue != null) __obj.updateDynamic("labelProgressBarFileNameContinue")(labelProgressBarFileNameContinue)
+    if (labelShowDetails != null) __obj.updateDynamic("labelShowDetails")(labelShowDetails)
+    if (labelSummaryProgressBarTemplate != null) __obj.updateDynamic("labelSummaryProgressBarTemplate")(labelSummaryProgressBarTemplate)
+    if (labelSummaryProgressButtonCancel != null) __obj.updateDynamic("labelSummaryProgressButtonCancel")(labelSummaryProgressButtonCancel)
+    if (labelSummaryProgressButtonContinue != null) __obj.updateDynamic("labelSummaryProgressButtonContinue")(labelSummaryProgressButtonContinue)
+    if (labelSummaryProgressButtonDone != null) __obj.updateDynamic("labelSummaryProgressButtonDone")(labelSummaryProgressButtonDone)
+    if (labelSummaryTemplate != null) __obj.updateDynamic("labelSummaryTemplate")(labelSummaryTemplate)
+    if (labelUploadButton != null) __obj.updateDynamic("labelUploadButton")(labelUploadButton)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize)
+    if (maxSimultaneousFilesUploads != null) __obj.updateDynamic("maxSimultaneousFilesUploads")(maxSimultaneousFilesUploads.asInstanceOf[js.Any])
+    if (maxUploadedFiles != null) __obj.updateDynamic("maxUploadedFiles")(maxUploadedFiles.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (!js.isUndefined(multipleFiles)) __obj.updateDynamic("multipleFiles")(multipleFiles)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onFormDataSubmit != null) __obj.updateDynamic("onFormDataSubmit")(onFormDataSubmit)
+    if (onXHRLoad != null) __obj.updateDynamic("onXHRLoad")(onXHRLoad)
+    if (progressUrl != null) __obj.updateDynamic("progressUrl")(progressUrl)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFileExtensionIcon)) __obj.updateDynamic("showFileExtensionIcon")(showFileExtensionIcon)
+    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl)
+    if (!js.isUndefined(useSingleRequest)) __obj.updateDynamic("useSingleRequest")(useSingleRequest)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgUpload]
+  }
+}
+

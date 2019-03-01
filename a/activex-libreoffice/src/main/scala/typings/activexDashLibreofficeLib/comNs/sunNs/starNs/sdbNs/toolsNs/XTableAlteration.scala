@@ -53,3 +53,41 @@ trait XTableAlteration extends XConnectionSupplier {
   ): scala.Unit
 }
 
+object XTableAlteration {
+  @scala.inline
+  def apply(
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    acquire: js.Function0[scala.Unit],
+    addColumn: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    alterColumnByName: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    dropColumn: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTableAlteration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addColumn")(addColumn)
+    __obj.updateDynamic("alterColumnByName")(alterColumnByName)
+    __obj.updateDynamic("dropColumn")(dropColumn)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTableAlteration]
+  }
+}
+

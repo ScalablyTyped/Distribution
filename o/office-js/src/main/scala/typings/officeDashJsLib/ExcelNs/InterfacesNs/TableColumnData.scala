@@ -44,3 +44,22 @@ trait TableColumnData extends js.Object {
   var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
 }
 
+object TableColumnData {
+  @scala.inline
+  def apply(
+    filter: FilterData = null,
+    id: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    values: js.Array[js.Array[_]] = null
+  ): TableColumnData = {
+    val __obj = js.Dynamic.literal()
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[TableColumnData]
+  }
+}
+

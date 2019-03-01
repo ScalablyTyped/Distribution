@@ -48,3 +48,30 @@ trait InterruptEngineEvent
   var StartLine: scala.Double
 }
 
+object InterruptEngineEvent {
+  @scala.inline
+  def apply(
+    EndColumn: scala.Double,
+    EndLine: scala.Double,
+    ErrorMessage: java.lang.String,
+    Name: java.lang.String,
+    Reason: InterruptReason,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    SourceCode: java.lang.String,
+    StartColumn: scala.Double,
+    StartLine: scala.Double
+  ): InterruptEngineEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EndColumn")(EndColumn)
+    __obj.updateDynamic("EndLine")(EndLine)
+    __obj.updateDynamic("ErrorMessage")(ErrorMessage)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Reason")(Reason)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("SourceCode")(SourceCode)
+    __obj.updateDynamic("StartColumn")(StartColumn)
+    __obj.updateDynamic("StartLine")(StartLine)
+    __obj.asInstanceOf[InterruptEngineEvent]
+  }
+}
+

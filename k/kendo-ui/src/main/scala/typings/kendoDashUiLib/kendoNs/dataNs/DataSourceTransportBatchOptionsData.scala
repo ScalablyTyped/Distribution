@@ -9,3 +9,12 @@ trait DataSourceTransportBatchOptionsData extends js.Object {
   var models: js.Array[_]
 }
 
+object DataSourceTransportBatchOptionsData {
+  @scala.inline
+  def apply(models: js.Array[_]): DataSourceTransportBatchOptionsData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("models")(models)
+    __obj.asInstanceOf[DataSourceTransportBatchOptionsData]
+  }
+}
+

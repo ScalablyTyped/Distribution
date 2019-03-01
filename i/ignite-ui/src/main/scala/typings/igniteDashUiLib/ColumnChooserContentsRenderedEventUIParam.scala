@@ -16,3 +16,13 @@ trait ColumnChooserContentsRenderedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColumnChooserContentsRenderedEventUIParam {
+  @scala.inline
+  def apply(columnChooserElement: java.lang.String = null, owner: js.Any = null): ColumnChooserContentsRenderedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnChooserElement != null) __obj.updateDynamic("columnChooserElement")(columnChooserElement)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ColumnChooserContentsRenderedEventUIParam]
+  }
+}
+

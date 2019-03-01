@@ -10,3 +10,13 @@ trait Photo extends js.Object {
   var url: java.lang.String
 }
 
+object Photo {
+  @scala.inline
+  def apply(title: java.lang.String, url: java.lang.String): Photo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Photo]
+  }
+}
+

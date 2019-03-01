@@ -24,3 +24,20 @@ trait Anon_Clientid extends js.Object {
   var scope: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Clientid {
+  @scala.inline
+  def apply(
+    client_id: java.lang.String = null,
+    immediate: js.UndefOr[scala.Boolean] = js.undefined,
+    response_type: java.lang.String = null,
+    scope: java.lang.String | js.Array[java.lang.String] = null
+  ): Anon_Clientid = {
+    val __obj = js.Dynamic.literal()
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Clientid]
+  }
+}
+

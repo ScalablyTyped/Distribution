@@ -23,3 +23,20 @@ trait EditAllOrderDealsRequest extends js.Object {
   var updateAction: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EditAllOrderDealsRequest {
+  @scala.inline
+  def apply(
+    deals: js.Array[MarketplaceDeal] = null,
+    proposal: Proposal = null,
+    proposalRevisionNumber: java.lang.String = null,
+    updateAction: java.lang.String = null
+  ): EditAllOrderDealsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (deals != null) __obj.updateDynamic("deals")(deals)
+    if (proposal != null) __obj.updateDynamic("proposal")(proposal)
+    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber)
+    if (updateAction != null) __obj.updateDynamic("updateAction")(updateAction)
+    __obj.asInstanceOf[EditAllOrderDealsRequest]
+  }
+}
+

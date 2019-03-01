@@ -17,3 +17,19 @@ trait TracesResource extends js.Object {
   def batchWrite(request: gapiDotClientDotCloudtraceLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 
+object TracesResource {
+  @scala.inline
+  def apply(
+    batchWrite: js.Function1[
+      gapiDotClientDotCloudtraceLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    spans: SpansResource
+  ): TracesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("batchWrite")(batchWrite)
+    __obj.updateDynamic("spans")(spans)
+    __obj.asInstanceOf[TracesResource]
+  }
+}
+

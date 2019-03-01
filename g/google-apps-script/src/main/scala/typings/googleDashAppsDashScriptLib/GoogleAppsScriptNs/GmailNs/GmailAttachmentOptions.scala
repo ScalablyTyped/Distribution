@@ -16,3 +16,16 @@ trait GmailAttachmentOptions extends js.Object {
   var includeInlineImages: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GmailAttachmentOptions {
+  @scala.inline
+  def apply(
+    includeAttachments: js.UndefOr[scala.Boolean] = js.undefined,
+    includeInlineImages: js.UndefOr[scala.Boolean] = js.undefined
+  ): GmailAttachmentOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeAttachments)) __obj.updateDynamic("includeAttachments")(includeAttachments)
+    if (!js.isUndefined(includeInlineImages)) __obj.updateDynamic("includeInlineImages")(includeInlineImages)
+    __obj.asInstanceOf[GmailAttachmentOptions]
+  }
+}
+

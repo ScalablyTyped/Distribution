@@ -16,3 +16,16 @@ trait RouteTableAssociationArgs extends js.Object {
   val subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object RouteTableAssociationArgs {
+  @scala.inline
+  def apply(
+    routeTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): RouteTableAssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
+    __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteTableAssociationArgs]
+  }
+}
+

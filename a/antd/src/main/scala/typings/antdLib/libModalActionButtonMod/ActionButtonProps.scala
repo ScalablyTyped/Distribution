@@ -13,3 +13,22 @@ trait ActionButtonProps extends js.Object {
   var `type`: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
 }
 
+object ActionButtonProps {
+  @scala.inline
+  def apply(
+    closeModal: js.Function,
+    actionFn: js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]] = null,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    buttonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
+    `type`: antdLib.libButtonButtonMod.ButtonType = null
+  ): ActionButtonProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("closeModal")(closeModal)
+    if (actionFn != null) __obj.updateDynamic("actionFn")(actionFn)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ActionButtonProps]
+  }
+}
+

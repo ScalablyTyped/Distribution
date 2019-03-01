@@ -29,3 +29,24 @@ trait TtsVoice extends js.Object {
   var voiceName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TtsVoice {
+  @scala.inline
+  def apply(
+    eventTypes: js.Array[java.lang.String] = null,
+    extensionsId: java.lang.String = null,
+    gender: chromeDashAppsLib.chromeDashAppsLibStrings.male | chromeDashAppsLib.chromeDashAppsLibStrings.female = null,
+    lang: java.lang.String = null,
+    remote: js.UndefOr[scala.Boolean] = js.undefined,
+    voiceName: java.lang.String = null
+  ): TtsVoice = {
+    val __obj = js.Dynamic.literal()
+    if (eventTypes != null) __obj.updateDynamic("eventTypes")(eventTypes)
+    if (extensionsId != null) __obj.updateDynamic("extensionsId")(extensionsId)
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote)
+    if (voiceName != null) __obj.updateDynamic("voiceName")(voiceName)
+    __obj.asInstanceOf[TtsVoice]
+  }
+}
+

@@ -14,3 +14,12 @@ trait CancelTestMatrixResponse extends js.Object {
   var testState: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CancelTestMatrixResponse {
+  @scala.inline
+  def apply(testState: java.lang.String = null): CancelTestMatrixResponse = {
+    val __obj = js.Dynamic.literal()
+    if (testState != null) __obj.updateDynamic("testState")(testState)
+    __obj.asInstanceOf[CancelTestMatrixResponse]
+  }
+}
+

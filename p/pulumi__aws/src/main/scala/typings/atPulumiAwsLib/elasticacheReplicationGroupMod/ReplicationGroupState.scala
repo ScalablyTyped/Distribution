@@ -147,3 +147,70 @@ trait ReplicationGroupState extends js.Object {
   val transitEncryptionEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 
+object ReplicationGroupState {
+  @scala.inline
+  def apply(
+    applyImmediately: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    atRestEncryptionEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    authToken: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    autoMinorVersionUpgrade: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    automaticFailoverEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    availabilityZones: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    clusterMode: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NumNodeGroupsReplicasPerNodeGroup] = null,
+    configurationEndpointAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engine: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    maintenanceWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    memberClusters: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    nodeType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    notificationTopicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    numberCacheClusters: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    parameterGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    primaryEndpointAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationGroupDescription: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    securityGroupNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    snapshotArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    snapshotName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    snapshotRetentionLimit: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    snapshotWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    transitEncryptionEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): ReplicationGroupState = {
+    val __obj = js.Dynamic.literal()
+    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (atRestEncryptionEnabled != null) __obj.updateDynamic("atRestEncryptionEnabled")(atRestEncryptionEnabled.asInstanceOf[js.Any])
+    if (authToken != null) __obj.updateDynamic("authToken")(authToken.asInstanceOf[js.Any])
+    if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (automaticFailoverEnabled != null) __obj.updateDynamic("automaticFailoverEnabled")(automaticFailoverEnabled.asInstanceOf[js.Any])
+    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
+    if (clusterMode != null) __obj.updateDynamic("clusterMode")(clusterMode.asInstanceOf[js.Any])
+    if (configurationEndpointAddress != null) __obj.updateDynamic("configurationEndpointAddress")(configurationEndpointAddress.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (maintenanceWindow != null) __obj.updateDynamic("maintenanceWindow")(maintenanceWindow.asInstanceOf[js.Any])
+    if (memberClusters != null) __obj.updateDynamic("memberClusters")(memberClusters.asInstanceOf[js.Any])
+    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
+    if (notificationTopicArn != null) __obj.updateDynamic("notificationTopicArn")(notificationTopicArn.asInstanceOf[js.Any])
+    if (numberCacheClusters != null) __obj.updateDynamic("numberCacheClusters")(numberCacheClusters.asInstanceOf[js.Any])
+    if (parameterGroupName != null) __obj.updateDynamic("parameterGroupName")(parameterGroupName.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (primaryEndpointAddress != null) __obj.updateDynamic("primaryEndpointAddress")(primaryEndpointAddress.asInstanceOf[js.Any])
+    if (replicationGroupDescription != null) __obj.updateDynamic("replicationGroupDescription")(replicationGroupDescription.asInstanceOf[js.Any])
+    if (replicationGroupId != null) __obj.updateDynamic("replicationGroupId")(replicationGroupId.asInstanceOf[js.Any])
+    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
+    if (securityGroupNames != null) __obj.updateDynamic("securityGroupNames")(securityGroupNames.asInstanceOf[js.Any])
+    if (snapshotArns != null) __obj.updateDynamic("snapshotArns")(snapshotArns.asInstanceOf[js.Any])
+    if (snapshotName != null) __obj.updateDynamic("snapshotName")(snapshotName.asInstanceOf[js.Any])
+    if (snapshotRetentionLimit != null) __obj.updateDynamic("snapshotRetentionLimit")(snapshotRetentionLimit.asInstanceOf[js.Any])
+    if (snapshotWindow != null) __obj.updateDynamic("snapshotWindow")(snapshotWindow.asInstanceOf[js.Any])
+    if (subnetGroupName != null) __obj.updateDynamic("subnetGroupName")(subnetGroupName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (transitEncryptionEnabled != null) __obj.updateDynamic("transitEncryptionEnabled")(transitEncryptionEnabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReplicationGroupState]
+  }
+}
+

@@ -25,3 +25,22 @@ trait TaskAgentSession extends js.Object {
   var systemCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object TaskAgentSession {
+  @scala.inline
+  def apply(
+    agent: TaskAgentReference,
+    encryptionKey: TaskAgentSessionKey,
+    ownerName: java.lang.String,
+    sessionId: java.lang.String,
+    systemCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): TaskAgentSession = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("agent")(agent)
+    __obj.updateDynamic("encryptionKey")(encryptionKey)
+    __obj.updateDynamic("ownerName")(ownerName)
+    __obj.updateDynamic("sessionId")(sessionId)
+    __obj.updateDynamic("systemCapabilities")(systemCapabilities)
+    __obj.asInstanceOf[TaskAgentSession]
+  }
+}
+

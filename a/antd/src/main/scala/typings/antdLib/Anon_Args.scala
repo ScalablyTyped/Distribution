@@ -11,3 +11,18 @@ trait Anon_Args extends js.Object {
   var target: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
 }
 
+object Anon_Args {
+  @scala.inline
+  def apply(
+    offsetBottom: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
+    offsetTop: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
+    target: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
+  ): Anon_Args = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offsetBottom")(offsetBottom)
+    __obj.updateDynamic("offsetTop")(offsetTop)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[Anon_Args]
+  }
+}
+

@@ -83,3 +83,32 @@ trait SharedClass extends js.Object {
   def resolve(resolver: js.Function0[scala.Unit]): scala.Unit
 }
 
+object SharedClass {
+  @scala.inline
+  def apply(
+    ctor: js.Function0[scala.Unit],
+    defineMethod: js.Function2[java.lang.String, js.Any, scala.Unit],
+    disableMethod: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    disableMethodByName: js.Function1[java.lang.String, scala.Unit],
+    find: js.Function2[js.Function0[scala.Unit | java.lang.String], scala.Boolean, js.Any],
+    findMethodByName: js.Function1[java.lang.String, js.Any],
+    getKeyFromMethodNameAndTarget: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    http: js.Any,
+    methods: js.Function1[loopbackLib.Anon_IncludeDisabled, js.Array[_]],
+    resolve: js.Function1[js.Function0[scala.Unit], scala.Unit]
+  ): SharedClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ctor")(ctor)
+    __obj.updateDynamic("defineMethod")(defineMethod)
+    __obj.updateDynamic("disableMethod")(disableMethod)
+    __obj.updateDynamic("disableMethodByName")(disableMethodByName)
+    __obj.updateDynamic("find")(find)
+    __obj.updateDynamic("findMethodByName")(findMethodByName)
+    __obj.updateDynamic("getKeyFromMethodNameAndTarget")(getKeyFromMethodNameAndTarget)
+    __obj.updateDynamic("http")(http)
+    __obj.updateDynamic("methods")(methods)
+    __obj.updateDynamic("resolve")(resolve)
+    __obj.asInstanceOf[SharedClass]
+  }
+}
+

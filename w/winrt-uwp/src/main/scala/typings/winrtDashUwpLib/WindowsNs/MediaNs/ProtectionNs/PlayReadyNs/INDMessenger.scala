@@ -51,3 +51,40 @@ trait INDMessenger extends js.Object {
   def sendRegistrationRequestAsync(sessionIDBytes: js.Array[scala.Double], challengeDataBytes: js.Array[scala.Double]): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[INDSendResult]
 }
 
+object INDMessenger {
+  @scala.inline
+  def apply(
+    sendLicenseFetchRequestAsync: js.Function2[
+      js.Array[scala.Double], 
+      js.Array[scala.Double], 
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[INDSendResult]
+    ],
+    sendProximityDetectionResponseAsync: js.Function4[
+      NDProximityDetectionType, 
+      js.Array[scala.Double], 
+      js.Array[scala.Double], 
+      js.Array[scala.Double], 
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[INDSendResult]
+    ],
+    sendProximityDetectionStartAsync: js.Function4[
+      NDProximityDetectionType, 
+      js.Array[scala.Double], 
+      js.Array[scala.Double], 
+      js.Array[scala.Double], 
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[INDSendResult]
+    ],
+    sendRegistrationRequestAsync: js.Function2[
+      js.Array[scala.Double], 
+      js.Array[scala.Double], 
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[INDSendResult]
+    ]
+  ): INDMessenger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sendLicenseFetchRequestAsync")(sendLicenseFetchRequestAsync)
+    __obj.updateDynamic("sendProximityDetectionResponseAsync")(sendProximityDetectionResponseAsync)
+    __obj.updateDynamic("sendProximityDetectionStartAsync")(sendProximityDetectionStartAsync)
+    __obj.updateDynamic("sendRegistrationRequestAsync")(sendRegistrationRequestAsync)
+    __obj.asInstanceOf[INDMessenger]
+  }
+}
+

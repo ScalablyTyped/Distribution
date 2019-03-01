@@ -11,3 +11,18 @@ trait IBUDDY_VARIABLES_UPDATE extends js.Object {
   var isItMe: scala.Boolean
 }
 
+object IBUDDY_VARIABLES_UPDATE {
+  @scala.inline
+  def apply(
+    buddy: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSBuddy,
+    changedVars: js.Array[java.lang.String],
+    isItMe: scala.Boolean
+  ): IBUDDY_VARIABLES_UPDATE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buddy")(buddy)
+    __obj.updateDynamic("changedVars")(changedVars)
+    __obj.updateDynamic("isItMe")(isItMe)
+    __obj.asInstanceOf[IBUDDY_VARIABLES_UPDATE]
+  }
+}
+

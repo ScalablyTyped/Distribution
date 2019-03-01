@@ -19,3 +19,30 @@ trait AceDiffOpts extends js.Object {
   var theme: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AceDiffOpts {
+  @scala.inline
+  def apply(
+    classes: aceDashDiffLib.Anon_Connector = null,
+    diffGranularity: aceDashDiffLib.aceDashDiffLibStrings.specific | aceDashDiffLib.aceDashDiffLibStrings.broad = null,
+    left: AceDiffLROpts = null,
+    maxDiffs: scala.Int | scala.Double = null,
+    mode: java.lang.String = null,
+    right: AceDiffLROpts = null,
+    showConnectors: js.UndefOr[scala.Boolean] = js.undefined,
+    showDiffs: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: java.lang.String = null
+  ): AceDiffOpts = {
+    val __obj = js.Dynamic.literal()
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (diffGranularity != null) __obj.updateDynamic("diffGranularity")(diffGranularity.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (maxDiffs != null) __obj.updateDynamic("maxDiffs")(maxDiffs.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (right != null) __obj.updateDynamic("right")(right)
+    if (!js.isUndefined(showConnectors)) __obj.updateDynamic("showConnectors")(showConnectors)
+    if (!js.isUndefined(showDiffs)) __obj.updateDynamic("showDiffs")(showDiffs)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[AceDiffOpts]
+  }
+}
+

@@ -21,3 +21,13 @@ trait FloatingObjectAbsoluteSizeSettings extends js.Object {
   var absoluteWidth: scala.Double
 }
 
+object FloatingObjectAbsoluteSizeSettings {
+  @scala.inline
+  def apply(absoluteHeight: scala.Double, absoluteWidth: scala.Double): FloatingObjectAbsoluteSizeSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("absoluteHeight")(absoluteHeight)
+    __obj.updateDynamic("absoluteWidth")(absoluteWidth)
+    __obj.asInstanceOf[FloatingObjectAbsoluteSizeSettings]
+  }
+}
+

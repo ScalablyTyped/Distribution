@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonBooleanDateTimeDoubleGuidHistory extends js.Object {
   var enumValues: Anon_BooleanDateTimeDoubleGuidHistory
 }
 
+object Anon_EnumValuesAnonBooleanDateTimeDoubleGuidHistory {
+  @scala.inline
+  def apply(enumValues: Anon_BooleanDateTimeDoubleGuidHistory): Anon_EnumValuesAnonBooleanDateTimeDoubleGuidHistory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonBooleanDateTimeDoubleGuidHistory]
+  }
+}
+

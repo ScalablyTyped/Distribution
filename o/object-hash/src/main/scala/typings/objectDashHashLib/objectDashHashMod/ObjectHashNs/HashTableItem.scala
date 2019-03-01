@@ -10,3 +10,13 @@ trait HashTableItem extends js.Object {
   var value: js.Any
 }
 
+object HashTableItem {
+  @scala.inline
+  def apply(count: scala.Double, value: js.Any): HashTableItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[HashTableItem]
+  }
+}
+

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FillGradientPath extends js.Object {
+trait FillGradientPath extends Fill {
   /**
   	 * For 'path' gradient. Specifies the relative coordinates for the start of the path.
   	 * 'left' and 'top' values range from 0 to 1
@@ -19,5 +19,21 @@ trait FillGradientPath extends js.Object {
   	 */
   var stops: js.Array[GradientStop]
   var `type`: exceljsLib.exceljsLibStrings.gradient
+}
+
+object FillGradientPath {
+  @scala.inline
+  def apply(
+    center: exceljsLib.Anon_Left,
+    gradient: exceljsLib.exceljsLibStrings.path,
+    stops: js.Array[GradientStop],
+    `type`: exceljsLib.exceljsLibStrings.gradient
+  ): FillGradientPath = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("center")(center)
+    __obj.updateDynamic("gradient")(gradient)
+    __obj.updateDynamic("stops")(stops)
+    __obj.asInstanceOf[FillGradientPath]
+  }
 }
 

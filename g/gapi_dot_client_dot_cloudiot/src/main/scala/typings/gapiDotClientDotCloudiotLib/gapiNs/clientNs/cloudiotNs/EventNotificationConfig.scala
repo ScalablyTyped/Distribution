@@ -13,3 +13,12 @@ trait EventNotificationConfig extends js.Object {
   var pubsubTopicName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EventNotificationConfig {
+  @scala.inline
+  def apply(pubsubTopicName: java.lang.String = null): EventNotificationConfig = {
+    val __obj = js.Dynamic.literal()
+    if (pubsubTopicName != null) __obj.updateDynamic("pubsubTopicName")(pubsubTopicName)
+    __obj.asInstanceOf[EventNotificationConfig]
+  }
+}
+

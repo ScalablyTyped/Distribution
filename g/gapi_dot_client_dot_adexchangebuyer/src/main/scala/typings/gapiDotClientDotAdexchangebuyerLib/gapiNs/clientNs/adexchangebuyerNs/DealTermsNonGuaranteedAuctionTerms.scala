@@ -12,3 +12,16 @@ trait DealTermsNonGuaranteedAuctionTerms extends js.Object {
   var reservePricePerBuyers: js.UndefOr[js.Array[PricePerBuyer]] = js.undefined
 }
 
+object DealTermsNonGuaranteedAuctionTerms {
+  @scala.inline
+  def apply(
+    autoOptimizePrivateAuction: js.UndefOr[scala.Boolean] = js.undefined,
+    reservePricePerBuyers: js.Array[PricePerBuyer] = null
+  ): DealTermsNonGuaranteedAuctionTerms = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoOptimizePrivateAuction)) __obj.updateDynamic("autoOptimizePrivateAuction")(autoOptimizePrivateAuction)
+    if (reservePricePerBuyers != null) __obj.updateDynamic("reservePricePerBuyers")(reservePricePerBuyers)
+    __obj.asInstanceOf[DealTermsNonGuaranteedAuctionTerms]
+  }
+}
+

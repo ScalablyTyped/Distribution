@@ -11,3 +11,14 @@ trait ARTSurfaceProps extends js.Object {
   var width: scala.Double
 }
 
+object ARTSurfaceProps {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double, style: StyleProp[ViewStyle] = null): ARTSurfaceProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ARTSurfaceProps]
+  }
+}
+

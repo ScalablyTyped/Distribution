@@ -9,3 +9,12 @@ trait Options extends js.Object {
   var file: java.lang.String
 }
 
+object Options {
+  @scala.inline
+  def apply(file: java.lang.String): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("file")(file)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -14,3 +14,20 @@ trait DatePickerAndroidOpenOptions extends js.Object {
   ] = js.undefined
 }
 
+object DatePickerAndroidOpenOptions {
+  @scala.inline
+  def apply(
+    date: stdLib.Date | scala.Double = null,
+    maxDate: stdLib.Date | scala.Double = null,
+    minDate: stdLib.Date | scala.Double = null,
+    mode: reactDashNativeLib.reactDashNativeLibStrings.calendar | reactDashNativeLib.reactDashNativeLibStrings.spinner | reactDashNativeLib.reactDashNativeLibStrings.default = null
+  ): DatePickerAndroidOpenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatePickerAndroidOpenOptions]
+  }
+}
+

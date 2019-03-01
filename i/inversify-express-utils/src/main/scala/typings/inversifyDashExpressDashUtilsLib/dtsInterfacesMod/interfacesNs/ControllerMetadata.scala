@@ -11,3 +11,14 @@ trait ControllerMetadata extends js.Object {
   var target: js.Any
 }
 
+object ControllerMetadata {
+  @scala.inline
+  def apply(middleware: js.Array[Middleware], path: java.lang.String, target: js.Any): ControllerMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("middleware")(middleware)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ControllerMetadata]
+  }
+}
+

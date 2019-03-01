@@ -23,3 +23,18 @@ trait InstanceDestroyOptions extends js.Object {
   var transaction: js.UndefOr[Transaction] = js.undefined
 }
 
+object InstanceDestroyOptions {
+  @scala.inline
+  def apply(
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    logging: scala.Boolean | js.Function = null,
+    transaction: Transaction = null
+  ): InstanceDestroyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[InstanceDestroyOptions]
+  }
+}
+

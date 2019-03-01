@@ -51,3 +51,38 @@ trait XGridDataModel
   def getRowHeading(RowIndex: scala.Double): js.Any
 }
 
+object XGridDataModel {
+  @scala.inline
+  def apply(
+    ColumnCount: scala.Double,
+    RowCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    dispose: js.Function0[scala.Unit],
+    getCellData: js.Function2[scala.Double, scala.Double, js.Any],
+    getCellToolTip: js.Function2[scala.Double, scala.Double, js.Any],
+    getRowData: js.Function1[scala.Double, activexDashInteropLib.SafeArray[_]],
+    getRowHeading: js.Function1[scala.Double, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XGridDataModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColumnCount")(ColumnCount)
+    __obj.updateDynamic("RowCount")(RowCount)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("createClone")(createClone)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getCellData")(getCellData)
+    __obj.updateDynamic("getCellToolTip")(getCellToolTip)
+    __obj.updateDynamic("getRowData")(getRowData)
+    __obj.updateDynamic("getRowHeading")(getRowHeading)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[XGridDataModel]
+  }
+}
+

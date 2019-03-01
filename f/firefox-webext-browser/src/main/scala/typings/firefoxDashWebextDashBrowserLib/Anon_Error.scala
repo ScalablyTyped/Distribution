@@ -28,3 +28,24 @@ trait Anon_Error extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Error {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    url: java.lang.String,
+    error: java.lang.String = null,
+    processId: scala.Int | scala.Double = null
+  ): Anon_Error = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frameId")(frameId)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("url")(url)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Error]
+  }
+}
+

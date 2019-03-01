@@ -5,9 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UnicodeRange extends CssNodeCommon {
+trait UnicodeRange
+  extends CssNodeCommon
+     with CssNode
+     with CssNodePlain {
   @JSName("type")
   var type_UnicodeRange: cssDashTreeLib.cssDashTreeLibStrings.UnicodeRange
   var value: java.lang.String
+}
+
+object UnicodeRange {
+  @scala.inline
+  def apply(
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.UnicodeRange,
+    value: java.lang.String,
+    loc: CssLocation = null
+  ): UnicodeRange = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[UnicodeRange]
+  }
 }
 

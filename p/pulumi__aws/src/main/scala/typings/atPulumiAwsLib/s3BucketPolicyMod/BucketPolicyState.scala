@@ -18,3 +18,16 @@ trait BucketPolicyState extends js.Object {
   ] = js.undefined
 }
 
+object BucketPolicyState {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument] = null
+  ): BucketPolicyState = {
+    val __obj = js.Dynamic.literal()
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BucketPolicyState]
+  }
+}
+

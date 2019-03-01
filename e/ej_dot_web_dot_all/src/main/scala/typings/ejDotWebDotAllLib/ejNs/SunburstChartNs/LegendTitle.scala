@@ -24,3 +24,20 @@ trait LegendTitle extends js.Object {
   var visible: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LegendTitle {
+  @scala.inline
+  def apply(
+    font: LegendTitleFont = null,
+    text: java.lang.String = null,
+    textAlignment: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstAlignment | java.lang.String = null,
+    visible: java.lang.String = null
+  ): LegendTitle = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
+    if (visible != null) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[LegendTitle]
+  }
+}
+

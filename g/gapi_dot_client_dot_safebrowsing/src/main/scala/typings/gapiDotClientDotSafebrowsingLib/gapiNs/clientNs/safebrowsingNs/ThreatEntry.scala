@@ -21,3 +21,14 @@ trait ThreatEntry extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ThreatEntry {
+  @scala.inline
+  def apply(digest: java.lang.String = null, hash: java.lang.String = null, url: java.lang.String = null): ThreatEntry = {
+    val __obj = js.Dynamic.literal()
+    if (digest != null) __obj.updateDynamic("digest")(digest)
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ThreatEntry]
+  }
+}
+

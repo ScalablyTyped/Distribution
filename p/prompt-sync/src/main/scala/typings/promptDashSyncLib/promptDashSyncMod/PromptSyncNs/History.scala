@@ -17,3 +17,30 @@ trait History extends js.Object {
   def save(): scala.Unit
 }
 
+object History {
+  @scala.inline
+  def apply(
+    atEnd: js.Function0[scala.Boolean],
+    atPenultimate: js.Function0[scala.Boolean],
+    atStart: js.Function0[scala.Boolean],
+    next: js.Function0[java.lang.String],
+    pastEnd: js.Function0[scala.Boolean],
+    prev: js.Function0[java.lang.String],
+    push: js.Function1[java.lang.String, scala.Unit],
+    reset: js.Function0[scala.Unit],
+    save: js.Function0[scala.Unit]
+  ): History = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("atEnd")(atEnd)
+    __obj.updateDynamic("atPenultimate")(atPenultimate)
+    __obj.updateDynamic("atStart")(atStart)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("pastEnd")(pastEnd)
+    __obj.updateDynamic("prev")(prev)
+    __obj.updateDynamic("push")(push)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("save")(save)
+    __obj.asInstanceOf[History]
+  }
+}
+

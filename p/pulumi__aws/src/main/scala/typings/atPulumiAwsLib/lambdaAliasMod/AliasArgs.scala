@@ -30,3 +30,22 @@ trait AliasArgs extends js.Object {
   ] = js.undefined
 }
 
+object AliasArgs {
+  @scala.inline
+  def apply(
+    functionName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    functionVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    routingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AdditionalVersionWeightsKey] = null
+  ): AliasArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    __obj.updateDynamic("functionVersion")(functionVersion.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (routingConfig != null) __obj.updateDynamic("routingConfig")(routingConfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AliasArgs]
+  }
+}
+

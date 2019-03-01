@@ -18,3 +18,32 @@ trait GoogleEarthEnterpriseMetadata extends js.Object {
   val url: java.lang.String
 }
 
+object GoogleEarthEnterpriseMetadata {
+  @scala.inline
+  def apply(
+    imageryPresent: scala.Boolean,
+    key: stdLib.ArrayBuffer,
+    negativeAltitudeExponentBias: scala.Double,
+    negativeAltitudeThreshold: scala.Double,
+    protoImagery: scala.Boolean,
+    proxy: Proxy,
+    readyPromise: js.Promise[scala.Boolean],
+    resource: Resource,
+    terrainPresent: scala.Boolean,
+    url: java.lang.String
+  ): GoogleEarthEnterpriseMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("imageryPresent")(imageryPresent)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("negativeAltitudeExponentBias")(negativeAltitudeExponentBias)
+    __obj.updateDynamic("negativeAltitudeThreshold")(negativeAltitudeThreshold)
+    __obj.updateDynamic("protoImagery")(protoImagery)
+    __obj.updateDynamic("proxy")(proxy)
+    __obj.updateDynamic("readyPromise")(readyPromise)
+    __obj.updateDynamic("resource")(resource)
+    __obj.updateDynamic("terrainPresent")(terrainPresent)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GoogleEarthEnterpriseMetadata]
+  }
+}
+

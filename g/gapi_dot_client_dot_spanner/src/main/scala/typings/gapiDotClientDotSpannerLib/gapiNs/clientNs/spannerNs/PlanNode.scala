@@ -42,3 +42,26 @@ trait PlanNode extends js.Object {
   var shortRepresentation: js.UndefOr[ShortRepresentation] = js.undefined
 }
 
+object PlanNode {
+  @scala.inline
+  def apply(
+    childLinks: js.Array[ChildLink] = null,
+    displayName: java.lang.String = null,
+    executionStats: stdLib.Record[java.lang.String, _] = null,
+    index: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    metadata: stdLib.Record[java.lang.String, _] = null,
+    shortRepresentation: ShortRepresentation = null
+  ): PlanNode = {
+    val __obj = js.Dynamic.literal()
+    if (childLinks != null) __obj.updateDynamic("childLinks")(childLinks)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (executionStats != null) __obj.updateDynamic("executionStats")(executionStats)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (shortRepresentation != null) __obj.updateDynamic("shortRepresentation")(shortRepresentation)
+    __obj.asInstanceOf[PlanNode]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A reference to a document
   */
-trait DocumentReference extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DocumentReference extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */
@@ -97,5 +98,83 @@ trait DocumentReference extends DomainResource {
     * Kind of document (LOINC if possible)
     */
   var `type`: CodeableConcept
+}
+
+object DocumentReference {
+  @scala.inline
+  def apply(
+    content: js.Array[DocumentReferenceContent],
+    indexed: instant,
+    status: code,
+    `type`: CodeableConcept,
+    _created: Element = null,
+    _description: Element = null,
+    _docStatus: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _indexed: Element = null,
+    _language: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    authenticator: Reference = null,
+    author: js.Array[Reference] = null,
+    `class`: CodeableConcept = null,
+    contained: js.Array[Resource] = null,
+    context: DocumentReferenceContext = null,
+    created: dateTime = null,
+    custodian: Reference = null,
+    description: java.lang.String = null,
+    docStatus: code = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    masterIdentifier: Identifier = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    relatesTo: js.Array[DocumentReferenceRelatesTo] = null,
+    resourceType: code = null,
+    securityLabel: js.Array[CodeableConcept] = null,
+    subject: Reference = null,
+    text: Narrative = null
+  ): DocumentReference = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("indexed")(indexed)
+    __obj.updateDynamic("status")(status)
+    if (_created != null) __obj.updateDynamic("_created")(_created)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_docStatus != null) __obj.updateDynamic("_docStatus")(_docStatus)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_indexed != null) __obj.updateDynamic("_indexed")(_indexed)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (authenticator != null) __obj.updateDynamic("authenticator")(authenticator)
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (custodian != null) __obj.updateDynamic("custodian")(custodian)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (docStatus != null) __obj.updateDynamic("docStatus")(docStatus)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (masterIdentifier != null) __obj.updateDynamic("masterIdentifier")(masterIdentifier)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (relatesTo != null) __obj.updateDynamic("relatesTo")(relatesTo)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (securityLabel != null) __obj.updateDynamic("securityLabel")(securityLabel)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[DocumentReference]
+  }
 }
 

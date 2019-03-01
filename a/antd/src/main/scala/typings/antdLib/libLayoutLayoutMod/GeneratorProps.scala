@@ -9,3 +9,12 @@ trait GeneratorProps extends js.Object {
   var suffixCls: java.lang.String
 }
 
+object GeneratorProps {
+  @scala.inline
+  def apply(suffixCls: java.lang.String): GeneratorProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("suffixCls")(suffixCls)
+    __obj.asInstanceOf[GeneratorProps]
+  }
+}
+

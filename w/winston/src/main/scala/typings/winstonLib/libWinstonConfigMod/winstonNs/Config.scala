@@ -13,3 +13,22 @@ trait Config extends js.Object {
   def addColors(colors: AbstractConfigSetColors): scala.Unit
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    addColors: js.Function1[AbstractConfigSetColors, scala.Unit],
+    allColors: AbstractConfigSetColors,
+    cli: winstonLib.Anon_Colors,
+    npm: winstonLib.Anon_ColorsLevels,
+    syslog: winstonLib.Anon_ColorsLevelsSyslogConfigSetColors
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addColors")(addColors)
+    __obj.updateDynamic("allColors")(allColors)
+    __obj.updateDynamic("cli")(cli)
+    __obj.updateDynamic("npm")(npm)
+    __obj.updateDynamic("syslog")(syslog)
+    __obj.asInstanceOf[Config]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ChartSeriesItemErrorBarsLine extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartSeriesItemErrorBarsLine {
+  @scala.inline
+  def apply(dashType: java.lang.String = null, width: scala.Int | scala.Double = null): ChartSeriesItemErrorBarsLine = {
+    val __obj = js.Dynamic.literal()
+    if (dashType != null) __obj.updateDynamic("dashType")(dashType)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartSeriesItemErrorBarsLine]
+  }
+}
+

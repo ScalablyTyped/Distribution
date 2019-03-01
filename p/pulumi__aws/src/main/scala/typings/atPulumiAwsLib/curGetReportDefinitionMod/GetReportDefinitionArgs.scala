@@ -12,3 +12,12 @@ trait GetReportDefinitionArgs extends js.Object {
   val reportName: java.lang.String
 }
 
+object GetReportDefinitionArgs {
+  @scala.inline
+  def apply(reportName: java.lang.String): GetReportDefinitionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reportName")(reportName)
+    __obj.asInstanceOf[GetReportDefinitionArgs]
+  }
+}
+

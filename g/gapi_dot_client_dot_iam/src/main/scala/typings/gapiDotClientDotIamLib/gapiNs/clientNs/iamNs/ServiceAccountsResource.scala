@@ -53,3 +53,64 @@ trait ServiceAccountsResource extends js.Object {
   def update(request: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
 }
 
+object ServiceAccountsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    keys: KeysResource,
+    list: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyNameOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListServiceAccountsResponse]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    signBlob: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SignBlobResponse]
+    ],
+    signJwt: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SignJwtResponse]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotIamLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ServiceAccount]
+    ]
+  ): ServiceAccountsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("keys")(keys)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("signBlob")(signBlob)
+    __obj.updateDynamic("signJwt")(signJwt)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ServiceAccountsResource]
+  }
+}
+

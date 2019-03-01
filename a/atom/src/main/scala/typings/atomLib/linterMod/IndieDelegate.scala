@@ -16,3 +16,28 @@ trait IndieDelegate extends js.Object {
   def setMessages(filePath: java.lang.String, messages: js.Array[Message]): scala.Unit
 }
 
+object IndieDelegate {
+  @scala.inline
+  def apply(
+    clearMessages: js.Function0[scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getMessages: js.Function0[js.Array[Message]],
+    name: java.lang.String,
+    onDidDestroy: js.Function1[js.Function0[scala.Unit], atomLib.atomMod.Disposable],
+    onDidUpdate: js.Function1[js.Function0[scala.Unit], atomLib.atomMod.Disposable],
+    setAllMessages: js.Function1[js.Array[Message], scala.Unit],
+    setMessages: js.Function2[java.lang.String, js.Array[Message], scala.Unit]
+  ): IndieDelegate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearMessages")(clearMessages)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getMessages")(getMessages)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("onDidDestroy")(onDidDestroy)
+    __obj.updateDynamic("onDidUpdate")(onDidUpdate)
+    __obj.updateDynamic("setAllMessages")(setAllMessages)
+    __obj.updateDynamic("setMessages")(setMessages)
+    __obj.asInstanceOf[IndieDelegate]
+  }
+}
+

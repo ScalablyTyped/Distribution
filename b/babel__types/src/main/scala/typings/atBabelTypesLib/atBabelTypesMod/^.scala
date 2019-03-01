@@ -125,7 +125,7 @@ object ^ extends js.Object {
   def awaitExpression(argument: atBabelTypesLib.atBabelTypesMod.Expression): atBabelTypesLib.atBabelTypesMod.AwaitExpression = js.native
   def bigIntLiteral(value: java.lang.String): atBabelTypesLib.atBabelTypesMod.BigIntLiteral = js.native
   def binaryExpression(
-    operator: atBabelTypesLib.atBabelTypesLibStrings.`+` | atBabelTypesLib.atBabelTypesLibStrings.`-` | atBabelTypesLib.atBabelTypesLibStrings.`/` | atBabelTypesLib.atBabelTypesLibStrings.`%` | atBabelTypesLib.atBabelTypesLibStrings.`*` | atBabelTypesLib.atBabelTypesLibStrings.`**` | atBabelTypesLib.atBabelTypesLibStrings.`&` | atBabelTypesLib.atBabelTypesLibStrings.`|` | atBabelTypesLib.atBabelTypesLibStrings.`>>` | atBabelTypesLib.atBabelTypesLibStrings.`>>>` | atBabelTypesLib.atBabelTypesLibStrings.`<<` | atBabelTypesLib.atBabelTypesLibStrings.`^` | atBabelTypesLib.atBabelTypesLibStrings.`==` | atBabelTypesLib.atBabelTypesLibStrings.`===` | atBabelTypesLib.atBabelTypesLibStrings.`!=` | atBabelTypesLib.atBabelTypesLibStrings.`!==` | atBabelTypesLib.atBabelTypesLibStrings.in | atBabelTypesLib.atBabelTypesLibStrings.instanceof | atBabelTypesLib.atBabelTypesLibStrings.`>` | atBabelTypesLib.atBabelTypesLibStrings.`<` | atBabelTypesLib.atBabelTypesLibStrings.`>=` | atBabelTypesLib.atBabelTypesLibStrings.`<=`,
+    operator: atBabelTypesLib.atBabelTypesLibStrings.`+` | atBabelTypesLib.atBabelTypesLibStrings.`-` | atBabelTypesLib.atBabelTypesLibStrings.`/` | atBabelTypesLib.atBabelTypesLibStrings.`%` | atBabelTypesLib.atBabelTypesLibStrings.`*` | atBabelTypesLib.atBabelTypesLibStrings.`**` | atBabelTypesLib.atBabelTypesLibStrings.`&` | atBabelTypesLib.atBabelTypesLibStrings.`|` | atBabelTypesLib.atBabelTypesLibStrings.`>>` | atBabelTypesLib.atBabelTypesLibStrings.`>>>` | atBabelTypesLib.atBabelTypesLibStrings.`<<` | atBabelTypesLib.atBabelTypesLibStrings.`_backtick^_backtick` | atBabelTypesLib.atBabelTypesLibStrings.`==` | atBabelTypesLib.atBabelTypesLibStrings.`===` | atBabelTypesLib.atBabelTypesLibStrings.`!=` | atBabelTypesLib.atBabelTypesLibStrings.`!==` | atBabelTypesLib.atBabelTypesLibStrings.in | atBabelTypesLib.atBabelTypesLibStrings.instanceof | atBabelTypesLib.atBabelTypesLibStrings.`>` | atBabelTypesLib.atBabelTypesLibStrings.`<` | atBabelTypesLib.atBabelTypesLibStrings.`>=` | atBabelTypesLib.atBabelTypesLibStrings.`<=`,
     left: atBabelTypesLib.atBabelTypesMod.Expression,
     right: atBabelTypesLib.atBabelTypesMod.Expression
   ): atBabelTypesLib.atBabelTypesMod.BinaryExpression = js.native
@@ -637,15 +637,28 @@ object ^ extends js.Object {
   def exportDefaultDeclaration(declaration: atBabelTypesLib.atBabelTypesMod.TSDeclareFunction): atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration = js.native
   def exportDefaultSpecifier(exported: atBabelTypesLib.atBabelTypesMod.Identifier): atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier = js.native
   def exportNamedDeclaration(
-    declaration: atBabelTypesLib.atBabelTypesMod.Declaration | js.UndefOr[scala.Nothing],
+    declaration: atBabelTypesLib.atBabelTypesMod.Declaration,
     specifiers: js.Array[
       atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier | atBabelTypesLib.atBabelTypesMod.ExportSpecifier
     ]
   ): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
-    declaration: atBabelTypesLib.atBabelTypesMod.Declaration | js.UndefOr[scala.Nothing],
+    declaration: atBabelTypesLib.atBabelTypesMod.Declaration,
+    specifiers: js.Array[
+      atBabelTypesLib.atBabelTypesMod.ExportSpecifier | atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier
+    ],
+    source: atBabelTypesLib.atBabelTypesMod.StringLiteral
+  ): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
+  def exportNamedDeclaration(
+    declaration: js.UndefOr[scala.Nothing],
     specifiers: js.Array[
       atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier | atBabelTypesLib.atBabelTypesMod.ExportSpecifier
+    ]
+  ): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
+  def exportNamedDeclaration(
+    declaration: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[
+      atBabelTypesLib.atBabelTypesMod.ExportSpecifier | atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier
     ],
     source: atBabelTypesLib.atBabelTypesMod.StringLiteral
   ): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
@@ -2775,24 +2788,32 @@ object ^ extends js.Object {
     decorators: scala.Null,
     typeAnnotation: atBabelTypesLib.atBabelTypesMod.TypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.ObjectPattern = js.native
+  def objectProperty(key: js.Any, value: atBabelTypesLib.atBabelTypesMod.Expression): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(key: js.Any, value: atBabelTypesLib.atBabelTypesMod.Expression, computed: scala.Boolean): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
   def objectProperty(
     key: js.Any,
-    value: atBabelTypesLib.atBabelTypesMod.Expression | atBabelTypesLib.atBabelTypesMod.PatternLike
-  ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
-  def objectProperty(
-    key: js.Any,
-    value: atBabelTypesLib.atBabelTypesMod.Expression | atBabelTypesLib.atBabelTypesMod.PatternLike,
-    computed: scala.Boolean
-  ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
-  def objectProperty(
-    key: js.Any,
-    value: atBabelTypesLib.atBabelTypesMod.Expression | atBabelTypesLib.atBabelTypesMod.PatternLike,
+    value: atBabelTypesLib.atBabelTypesMod.Expression,
     computed: scala.Boolean,
     shorthand: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
   def objectProperty(
     key: js.Any,
-    value: atBabelTypesLib.atBabelTypesMod.Expression | atBabelTypesLib.atBabelTypesMod.PatternLike,
+    value: atBabelTypesLib.atBabelTypesMod.Expression,
+    computed: scala.Boolean,
+    shorthand: scala.Boolean,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
+  ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(key: js.Any, value: atBabelTypesLib.atBabelTypesMod.PatternLike): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(key: js.Any, value: atBabelTypesLib.atBabelTypesMod.PatternLike, computed: scala.Boolean): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(
+    key: js.Any,
+    value: atBabelTypesLib.atBabelTypesMod.PatternLike,
+    computed: scala.Boolean,
+    shorthand: scala.Boolean
+  ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(
+    key: js.Any,
+    value: atBabelTypesLib.atBabelTypesMod.PatternLike,
     computed: scala.Boolean,
     shorthand: scala.Boolean,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
@@ -3133,7 +3154,13 @@ object ^ extends js.Object {
   def opaqueType(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
-    supertype: atBabelTypesLib.atBabelTypesMod.FlowType | js.UndefOr[scala.Nothing],
+    supertype: atBabelTypesLib.atBabelTypesMod.FlowType,
+    impltype: atBabelTypesLib.atBabelTypesMod.FlowType
+  ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def opaqueType(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
+    supertype: js.UndefOr[scala.Nothing],
     impltype: atBabelTypesLib.atBabelTypesMod.FlowType
   ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
   def opaqueType(
@@ -3145,7 +3172,13 @@ object ^ extends js.Object {
   def opaqueType(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
-    supertype: atBabelTypesLib.atBabelTypesMod.FlowType | js.UndefOr[scala.Nothing],
+    supertype: atBabelTypesLib.atBabelTypesMod.FlowType,
+    impltype: atBabelTypesLib.atBabelTypesMod.FlowType
+  ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def opaqueType(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    supertype: js.UndefOr[scala.Nothing],
     impltype: atBabelTypesLib.atBabelTypesMod.FlowType
   ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
   def opaqueType(
@@ -3157,7 +3190,13 @@ object ^ extends js.Object {
   def opaqueType(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: scala.Null,
-    supertype: atBabelTypesLib.atBabelTypesMod.FlowType | js.UndefOr[scala.Nothing],
+    supertype: atBabelTypesLib.atBabelTypesMod.FlowType,
+    impltype: atBabelTypesLib.atBabelTypesMod.FlowType
+  ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def opaqueType(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    typeParameters: scala.Null,
+    supertype: js.UndefOr[scala.Nothing],
     impltype: atBabelTypesLib.atBabelTypesMod.FlowType
   ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
   def opaqueType(
@@ -3336,9 +3375,10 @@ object ^ extends js.Object {
   def stringLiteralTypeAnnotation(value: java.lang.String): atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation = js.native
   def stringTypeAnnotation(): atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation = js.native
   def switchCase(
-    test: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    test: atBabelTypesLib.atBabelTypesMod.Expression,
     consequent: js.Array[atBabelTypesLib.atBabelTypesMod.Statement]
   ): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
+  def switchCase(test: js.UndefOr[scala.Nothing], consequent: js.Array[atBabelTypesLib.atBabelTypesMod.Statement]): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
   def switchCase(test: scala.Null, consequent: js.Array[atBabelTypesLib.atBabelTypesMod.Statement]): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
   def switchStatement(
     discriminant: atBabelTypesLib.atBabelTypesMod.Expression,

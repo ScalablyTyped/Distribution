@@ -133,3 +133,82 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    allowResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    applicationTab: ApplicationTab = null,
+    backstageItemClick: js.Function1[/* e */ BackstageItemClickEventArgs, scala.Unit] = null,
+    beforeTabRemove: js.Function1[/* e */ BeforeTabRemoveEventArgs, scala.Unit] = null,
+    buttonDefaults: js.Any = null,
+    collapse: js.Function1[/* e */ CollapseEventArgs, scala.Unit] = null,
+    collapsePinSettings: CollapsePinSettings = null,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    contextualTabs: js.Array[ContextualTab] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    disabledItemIndex: js.Array[_] = null,
+    enableOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enabledItemIndex: js.Array[_] = null,
+    expand: js.Function1[/* e */ ExpandEventArgs, scala.Unit] = null,
+    expandPinSettings: ExpandPinSettings = null,
+    galleryItemClick: js.Function1[/* e */ GalleryItemClickEventArgs, scala.Unit] = null,
+    groupClick: js.Function1[/* e */ GroupClickEventArgs, scala.Unit] = null,
+    groupExpand: js.Function1[/* e */ GroupExpandEventArgs, scala.Unit] = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    qatMenuItemClick: js.Function1[/* e */ QatMenuItemClickEventArgs, scala.Unit] = null,
+    selectedItemIndex: scala.Int | scala.Double = null,
+    showQAT: js.UndefOr[scala.Boolean] = js.undefined,
+    tabAdd: js.Function1[/* e */ TabAddEventArgs, scala.Unit] = null,
+    tabClick: js.Function1[/* e */ TabClickEventArgs, scala.Unit] = null,
+    tabCreate: js.Function1[/* e */ TabCreateEventArgs, scala.Unit] = null,
+    tabRemove: js.Function1[/* e */ TabRemoveEventArgs, scala.Unit] = null,
+    tabSelect: js.Function1[/* e */ TabSelectEventArgs, scala.Unit] = null,
+    tabs: js.Array[Tab] = null,
+    toggleButtonClick: js.Function1[/* e */ ToggleButtonClickEventArgs, scala.Unit] = null,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing)
+    if (applicationTab != null) __obj.updateDynamic("applicationTab")(applicationTab)
+    if (backstageItemClick != null) __obj.updateDynamic("backstageItemClick")(backstageItemClick)
+    if (beforeTabRemove != null) __obj.updateDynamic("beforeTabRemove")(beforeTabRemove)
+    if (buttonDefaults != null) __obj.updateDynamic("buttonDefaults")(buttonDefaults)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (collapsePinSettings != null) __obj.updateDynamic("collapsePinSettings")(collapsePinSettings)
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (contextualTabs != null) __obj.updateDynamic("contextualTabs")(contextualTabs)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (disabledItemIndex != null) __obj.updateDynamic("disabledItemIndex")(disabledItemIndex)
+    if (!js.isUndefined(enableOnDemand)) __obj.updateDynamic("enableOnDemand")(enableOnDemand)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (enabledItemIndex != null) __obj.updateDynamic("enabledItemIndex")(enabledItemIndex)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (expandPinSettings != null) __obj.updateDynamic("expandPinSettings")(expandPinSettings)
+    if (galleryItemClick != null) __obj.updateDynamic("galleryItemClick")(galleryItemClick)
+    if (groupClick != null) __obj.updateDynamic("groupClick")(groupClick)
+    if (groupExpand != null) __obj.updateDynamic("groupExpand")(groupExpand)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (qatMenuItemClick != null) __obj.updateDynamic("qatMenuItemClick")(qatMenuItemClick)
+    if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(showQAT)) __obj.updateDynamic("showQAT")(showQAT)
+    if (tabAdd != null) __obj.updateDynamic("tabAdd")(tabAdd)
+    if (tabClick != null) __obj.updateDynamic("tabClick")(tabClick)
+    if (tabCreate != null) __obj.updateDynamic("tabCreate")(tabCreate)
+    if (tabRemove != null) __obj.updateDynamic("tabRemove")(tabRemove)
+    if (tabSelect != null) __obj.updateDynamic("tabSelect")(tabSelect)
+    if (tabs != null) __obj.updateDynamic("tabs")(tabs)
+    if (toggleButtonClick != null) __obj.updateDynamic("toggleButtonClick")(toggleButtonClick)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

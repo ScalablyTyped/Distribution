@@ -11,3 +11,14 @@ trait Anon_SocialAction extends js.Object {
   var socialTarget: java.lang.String
 }
 
+object Anon_SocialAction {
+  @scala.inline
+  def apply(socialAction: java.lang.String, socialNetwork: java.lang.String, socialTarget: java.lang.String): Anon_SocialAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("socialAction")(socialAction)
+    __obj.updateDynamic("socialNetwork")(socialNetwork)
+    __obj.updateDynamic("socialTarget")(socialTarget)
+    __obj.asInstanceOf[Anon_SocialAction]
+  }
+}
+

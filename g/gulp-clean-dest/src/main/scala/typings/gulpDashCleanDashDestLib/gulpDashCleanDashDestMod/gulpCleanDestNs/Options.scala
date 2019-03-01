@@ -16,3 +16,13 @@ trait Options extends js.Object {
   var extension: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(cwd: java.lang.String = null, extension: java.lang.String = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    __obj.asInstanceOf[Options]
+  }
+}
+

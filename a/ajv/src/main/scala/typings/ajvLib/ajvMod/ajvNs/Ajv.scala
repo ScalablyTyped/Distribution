@@ -8,13 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Ajv extends js.Object {
   var errors: js.UndefOr[js.Array[ErrorObject] | scala.Null] = js.native
+  def addFormat(name: java.lang.String, format: FormatDefinition): Ajv = js.native
   /**
     * Add custom format
     * @param {string} name format name
     * @param {string|RegExp|Function} format string is converted to RegExp; function should return boolean (true when valid)
     * @return {Ajv} this for method chaining
     */
-  def addFormat(name: java.lang.String, format: FormatDefinition | FormatValidator): Ajv = js.native
+  def addFormat(name: java.lang.String, format: FormatValidator): Ajv = js.native
   /**
     * Define custom keyword
     * @this  Ajv

@@ -12,3 +12,13 @@ trait MonthDay extends js.Object {
   var month: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MonthDay {
+  @scala.inline
+  def apply(day: scala.Int | scala.Double = null, month: scala.Int | scala.Double = null): MonthDay = {
+    val __obj = js.Dynamic.literal()
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MonthDay]
+  }
+}
+

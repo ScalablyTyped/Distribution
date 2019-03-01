@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object hostedDashGitDashInfoLibStrings {
   @js.native
-  sealed trait bitbucket extends js.Object
+  sealed trait bitbucket
+    extends hostedDashGitDashInfoLib.hostedDashGitDashInfoMod.HostedGitInfoNs.hosts
   
   @js.native
-  sealed trait gist extends js.Object
+  sealed trait gist
+    extends hostedDashGitDashInfoLib.hostedDashGitDashInfoMod.HostedGitInfoNs.hosts
   
   @js.native
-  sealed trait github extends js.Object
+  sealed trait github
+    extends hostedDashGitDashInfoLib.hostedDashGitDashInfoMod.HostedGitInfoNs.hosts
   
   @js.native
-  sealed trait gitlab extends js.Object
+  sealed trait gitlab
+    extends hostedDashGitDashInfoLib.hostedDashGitDashInfoMod.HostedGitInfoNs.hosts
   
   @scala.inline
   def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]

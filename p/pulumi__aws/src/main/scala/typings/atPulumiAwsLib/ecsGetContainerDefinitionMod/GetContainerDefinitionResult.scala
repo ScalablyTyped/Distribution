@@ -44,3 +44,30 @@ trait GetContainerDefinitionResult extends js.Object {
   val memoryReservation: scala.Double
 }
 
+object GetContainerDefinitionResult {
+  @scala.inline
+  def apply(
+    cpu: scala.Double,
+    disableNetworking: scala.Boolean,
+    dockerLabels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    environment: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    id: java.lang.String,
+    image: java.lang.String,
+    imageDigest: java.lang.String,
+    memory: scala.Double,
+    memoryReservation: scala.Double
+  ): GetContainerDefinitionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cpu")(cpu)
+    __obj.updateDynamic("disableNetworking")(disableNetworking)
+    __obj.updateDynamic("dockerLabels")(dockerLabels)
+    __obj.updateDynamic("environment")(environment)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("imageDigest")(imageDigest)
+    __obj.updateDynamic("memory")(memory)
+    __obj.updateDynamic("memoryReservation")(memoryReservation)
+    __obj.asInstanceOf[GetContainerDefinitionResult]
+  }
+}
+

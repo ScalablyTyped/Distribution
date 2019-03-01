@@ -29,3 +29,24 @@ trait DataSourceValue extends js.Object {
   var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
 }
 
+object DataSourceValue {
+  @scala.inline
+  def apply(
+    axis: java.lang.String = null,
+    fieldCaption: java.lang.String = null,
+    fieldName: java.lang.String = null,
+    formula: java.lang.String = null,
+    isCalculatedField: js.UndefOr[scala.Boolean] = js.undefined,
+    measures: js.Array[DataSourceValuesMeasure] = null
+  ): DataSourceValue = {
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (formula != null) __obj.updateDynamic("formula")(formula)
+    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField)
+    if (measures != null) __obj.updateDynamic("measures")(measures)
+    __obj.asInstanceOf[DataSourceValue]
+  }
+}
+

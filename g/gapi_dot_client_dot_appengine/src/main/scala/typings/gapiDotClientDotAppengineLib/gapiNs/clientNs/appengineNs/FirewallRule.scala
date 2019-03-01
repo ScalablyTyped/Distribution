@@ -25,3 +25,20 @@ trait FirewallRule extends js.Object {
   var sourceRange: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FirewallRule {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    description: java.lang.String = null,
+    priority: scala.Int | scala.Double = null,
+    sourceRange: java.lang.String = null
+  ): FirewallRule = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (sourceRange != null) __obj.updateDynamic("sourceRange")(sourceRange)
+    __obj.asInstanceOf[FirewallRule]
+  }
+}
+

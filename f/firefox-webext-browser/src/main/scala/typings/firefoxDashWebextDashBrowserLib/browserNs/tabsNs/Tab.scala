@@ -83,3 +83,66 @@ trait Tab extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Tab {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    highlighted: scala.Boolean,
+    incognito: scala.Boolean,
+    index: scala.Double,
+    pinned: scala.Boolean,
+    attention: js.UndefOr[scala.Boolean] = js.undefined,
+    audible: js.UndefOr[scala.Boolean] = js.undefined,
+    cookieStoreId: java.lang.String = null,
+    discarded: js.UndefOr[scala.Boolean] = js.undefined,
+    favIconUrl: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    id: scala.Int | scala.Double = null,
+    isArticle: js.UndefOr[scala.Boolean] = js.undefined,
+    isInReaderMode: js.UndefOr[scala.Boolean] = js.undefined,
+    lastAccessed: scala.Int | scala.Double = null,
+    mutedInfo: MutedInfo = null,
+    openerTabId: scala.Int | scala.Double = null,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    sessionId: java.lang.String = null,
+    sharingState: SharingState = null,
+    status: java.lang.String = null,
+    successorTabId: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    windowId: scala.Int | scala.Double = null
+  ): Tab = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("highlighted")(highlighted)
+    __obj.updateDynamic("incognito")(incognito)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("pinned")(pinned)
+    if (!js.isUndefined(attention)) __obj.updateDynamic("attention")(attention)
+    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible)
+    if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId)
+    if (!js.isUndefined(discarded)) __obj.updateDynamic("discarded")(discarded)
+    if (favIconUrl != null) __obj.updateDynamic("favIconUrl")(favIconUrl)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(isArticle)) __obj.updateDynamic("isArticle")(isArticle)
+    if (!js.isUndefined(isInReaderMode)) __obj.updateDynamic("isInReaderMode")(isInReaderMode)
+    if (lastAccessed != null) __obj.updateDynamic("lastAccessed")(lastAccessed.asInstanceOf[js.Any])
+    if (mutedInfo != null) __obj.updateDynamic("mutedInfo")(mutedInfo)
+    if (openerTabId != null) __obj.updateDynamic("openerTabId")(openerTabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
+    if (sharingState != null) __obj.updateDynamic("sharingState")(sharingState)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (successorTabId != null) __obj.updateDynamic("successorTabId")(successorTabId.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tab]
+  }
+}
+

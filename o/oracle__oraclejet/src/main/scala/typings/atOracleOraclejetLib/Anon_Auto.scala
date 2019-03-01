@@ -13,3 +13,25 @@ trait Anon_Auto extends js.Object {
   def renderer(context: atOracleOraclejetLib.ojchartMod.ojChartNs.PieCenterContext): Anon_Insert | Anon_PreventDefault
 }
 
+object Anon_Auto {
+  @scala.inline
+  def apply(
+    converter: js.Object,
+    label: java.lang.String,
+    labelStyle: js.Object,
+    renderer: js.Function1[
+      atOracleOraclejetLib.ojchartMod.ojChartNs.PieCenterContext, 
+      Anon_Insert | Anon_PreventDefault
+    ],
+    scaling: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.thousand | atOracleOraclejetLib.atOracleOraclejetLibStrings.million | atOracleOraclejetLib.atOracleOraclejetLibStrings.billion | atOracleOraclejetLib.atOracleOraclejetLibStrings.trillion | atOracleOraclejetLib.atOracleOraclejetLibStrings.quadrillion | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
+  ): Anon_Auto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("converter")(converter)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("labelStyle")(labelStyle)
+    __obj.updateDynamic("renderer")(renderer)
+    __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Auto]
+  }
+}
+

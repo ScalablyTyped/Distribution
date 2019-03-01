@@ -14,3 +14,24 @@ trait Anon_Age extends js.Object {
   var profile_image: java.lang.String
 }
 
+object Anon_Age {
+  @scala.inline
+  def apply(
+    age: scala.Double,
+    birthday: js.Any,
+    email: java.lang.String,
+    id: java.lang.String,
+    nickname: java.lang.String,
+    profile_image: java.lang.String
+  ): Anon_Age = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("age")(age)
+    __obj.updateDynamic("birthday")(birthday)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("nickname")(nickname)
+    __obj.updateDynamic("profile_image")(profile_image)
+    __obj.asInstanceOf[Anon_Age]
+  }
+}
+

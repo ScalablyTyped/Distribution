@@ -10,3 +10,13 @@ trait IValueListItemSearchResultsWithPermissions extends js.Object {
   val ValueListItemSearchResults: IValueListItemSearchResults
 }
 
+object IValueListItemSearchResultsWithPermissions {
+  @scala.inline
+  def apply(Permissions: IAccessControlLists, ValueListItemSearchResults: IValueListItemSearchResults): IValueListItemSearchResultsWithPermissions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Permissions")(Permissions)
+    __obj.updateDynamic("ValueListItemSearchResults")(ValueListItemSearchResults)
+    __obj.asInstanceOf[IValueListItemSearchResultsWithPermissions]
+  }
+}
+

@@ -120,6 +120,10 @@ object MarketplaceEntitlementServiceNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[GetEntitlementsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _GetEntitlementFilterName extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -127,12 +131,12 @@ object MarketplaceEntitlementServiceNs extends js.Object {
   type EntitlementList = js.Array[Entitlement]
   type FilterValue = java.lang.String
   type FilterValueList = js.Array[FilterValue]
-  type GetEntitlementFilterName = awsDashSdkLib.awsDashSdkLibStrings.CUSTOMER_IDENTIFIER | awsDashSdkLib.awsDashSdkLibStrings.DIMENSION | java.lang.String
+  type GetEntitlementFilterName = _GetEntitlementFilterName | java.lang.String
   type Integer = scala.Double
   type NonEmptyString = java.lang.String
   type ProductCode = java.lang.String
   type String = java.lang.String
   type Timestamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-01-11` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -16,3 +16,12 @@ trait WorkerHealthReportResponse extends js.Object {
   var reportInterval: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WorkerHealthReportResponse {
+  @scala.inline
+  def apply(reportInterval: java.lang.String = null): WorkerHealthReportResponse = {
+    val __obj = js.Dynamic.literal()
+    if (reportInterval != null) __obj.updateDynamic("reportInterval")(reportInterval)
+    __obj.asInstanceOf[WorkerHealthReportResponse]
+  }
+}
+

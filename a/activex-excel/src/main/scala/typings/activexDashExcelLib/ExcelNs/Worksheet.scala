@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Worksheet")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- activexDashExcelLib.ExcelNs.AddSheetResult because Already inherited */ @JSGlobal("Excel.Worksheet")
 @js.native
-class Worksheet protected () extends js.Object {
+class Worksheet protected () extends Sheet {
   val Application: Application = js.native
   val AutoFilter: AutoFilter = js.native
   var AutoFilterMode: scala.Boolean = js.native

@@ -12,3 +12,12 @@ trait TextDocumentChangeEvent extends js.Object {
   var document: TextDocument
 }
 
+object TextDocumentChangeEvent {
+  @scala.inline
+  def apply(document: TextDocument): TextDocumentChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("document")(document)
+    __obj.asInstanceOf[TextDocumentChangeEvent]
+  }
+}
+

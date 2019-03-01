@@ -12,3 +12,13 @@ trait LanguagesListResponse extends js.Object {
   var languages: js.UndefOr[js.Array[Language]] = js.undefined
 }
 
+object LanguagesListResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, languages: js.Array[Language] = null): LanguagesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (languages != null) __obj.updateDynamic("languages")(languages)
+    __obj.asInstanceOf[LanguagesListResponse]
+  }
+}
+

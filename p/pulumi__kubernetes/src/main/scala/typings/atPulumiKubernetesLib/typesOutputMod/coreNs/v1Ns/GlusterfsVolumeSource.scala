@@ -28,3 +28,14 @@ trait GlusterfsVolumeSource extends js.Object {
   val readOnly: scala.Boolean
 }
 
+object GlusterfsVolumeSource {
+  @scala.inline
+  def apply(endpoints: java.lang.String, path: java.lang.String, readOnly: scala.Boolean): GlusterfsVolumeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endpoints")(endpoints)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.asInstanceOf[GlusterfsVolumeSource]
+  }
+}
+

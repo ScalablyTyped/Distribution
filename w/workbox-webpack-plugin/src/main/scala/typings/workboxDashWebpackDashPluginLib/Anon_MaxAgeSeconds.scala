@@ -16,3 +16,13 @@ trait Anon_MaxAgeSeconds extends js.Object {
   var maxEntries: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_MaxAgeSeconds {
+  @scala.inline
+  def apply(maxAgeSeconds: scala.Int | scala.Double = null, maxEntries: scala.Int | scala.Double = null): Anon_MaxAgeSeconds = {
+    val __obj = js.Dynamic.literal()
+    if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
+    if (maxEntries != null) __obj.updateDynamic("maxEntries")(maxEntries.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_MaxAgeSeconds]
+  }
+}
+

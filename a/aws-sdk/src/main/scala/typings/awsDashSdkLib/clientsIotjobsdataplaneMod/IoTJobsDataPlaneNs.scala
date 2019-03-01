@@ -322,6 +322,10 @@ object IoTJobsDataPlaneNs extends js.Object {
     var jobDocument: js.UndefOr[JobDocument] = js.undefined
   }
   
+  trait _JobExecutionStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ApproximateSecondsBeforeTimedOut = scala.Double
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -333,7 +337,7 @@ object IoTJobsDataPlaneNs extends js.Object {
   type IncludeExecutionState = scala.Boolean
   type IncludeJobDocument = scala.Boolean
   type JobDocument = java.lang.String
-  type JobExecutionStatus = awsDashSdkLib.awsDashSdkLibStrings.QUEUED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | awsDashSdkLib.awsDashSdkLibStrings.REJECTED | awsDashSdkLib.awsDashSdkLibStrings.REMOVED | awsDashSdkLib.awsDashSdkLibStrings.CANCELED | java.lang.String
+  type JobExecutionStatus = _JobExecutionStatus | java.lang.String
   type JobExecutionSummaryList = js.Array[JobExecutionSummary]
   type JobId = java.lang.String
   type LastUpdatedAt = scala.Double
@@ -342,6 +346,6 @@ object IoTJobsDataPlaneNs extends js.Object {
   type StepTimeoutInMinutes = scala.Double
   type ThingName = java.lang.String
   type VersionNumber = scala.Double
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-09-29` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -7,22 +7,31 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashOrientationLibStrings {
   @js.native
-  sealed trait LANDSCAPE extends js.Object
+  sealed trait LANDSCAPE
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.orientation
   
   @js.native
-  sealed trait `LANDSCAPE-LEFT` extends js.Object
+  sealed trait `LANDSCAPE-LEFT`
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
   
   @js.native
-  sealed trait `LANDSCAPE-RIGHT` extends js.Object
+  sealed trait `LANDSCAPE-RIGHT`
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
   
   @js.native
-  sealed trait PORTRAIT extends js.Object
+  sealed trait PORTRAIT
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.orientation
+       with reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
   
   @js.native
-  sealed trait PORTRAITUPSIDEDOWN extends js.Object
+  sealed trait PORTRAITUPSIDEDOWN
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.orientation
+       with reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.orientation
+       with reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod.OrientationNs.specificOrientation
   
   @scala.inline
   def LANDSCAPE: LANDSCAPE = "LANDSCAPE".asInstanceOf[LANDSCAPE]

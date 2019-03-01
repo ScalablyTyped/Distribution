@@ -16,3 +16,16 @@ trait TaskExecution extends js.Object {
   var platformInstructions: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
 }
 
+object TaskExecution {
+  @scala.inline
+  def apply(
+    execTask: TaskReference,
+    platformInstructions: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
+  ): TaskExecution = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execTask")(execTask)
+    __obj.updateDynamic("platformInstructions")(platformInstructions)
+    __obj.asInstanceOf[TaskExecution]
+  }
+}
+

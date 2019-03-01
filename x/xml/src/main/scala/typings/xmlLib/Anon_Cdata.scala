@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Cdata extends js.Object {
+trait Anon_Cdata extends _XmlDesc {
   var _cdata: java.lang.String
+}
+
+object Anon_Cdata {
+  @scala.inline
+  def apply(_cdata: java.lang.String): Anon_Cdata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_cdata")(_cdata)
+    __obj.asInstanceOf[Anon_Cdata]
+  }
 }
 

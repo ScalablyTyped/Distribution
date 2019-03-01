@@ -41,3 +41,24 @@ trait ChunkingOptions extends js.Object {
   var success: js.UndefOr[SuccessOptions] = js.undefined
 }
 
+object ChunkingOptions {
+  @scala.inline
+  def apply(
+    concurrent: ConcurrentOptions = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    mandatory: js.UndefOr[scala.Boolean] = js.undefined,
+    paramNames: ParamNamesOptions = null,
+    partSize: scala.Double | js.Function = null,
+    success: SuccessOptions = null
+  ): ChunkingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (concurrent != null) __obj.updateDynamic("concurrent")(concurrent)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory)
+    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames)
+    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ChunkingOptions]
+  }
+}
+

@@ -23,3 +23,14 @@ trait INxTickCell extends js.Object {
   var qText: java.lang.String
 }
 
+object INxTickCell {
+  @scala.inline
+  def apply(qEnd: scala.Double, qStart: scala.Double, qText: java.lang.String): INxTickCell = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qEnd")(qEnd)
+    __obj.updateDynamic("qStart")(qStart)
+    __obj.updateDynamic("qText")(qText)
+    __obj.asInstanceOf[INxTickCell]
+  }
+}
+

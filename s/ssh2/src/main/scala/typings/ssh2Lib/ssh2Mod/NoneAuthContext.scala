@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait NoneAuthContext extends AuthContextBase {
+trait NoneAuthContext
+  extends AuthContextBase
+     with AuthContext {
   /** The method of authentication. */
   @JSName("method")
   var method_NoneAuthContext: ssh2Lib.ssh2LibStrings.none = js.native

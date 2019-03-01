@@ -7,7 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-leaflet", "ImageOverlay")
 @js.native
-class ImageOverlay[P /* <: ImageOverlayProps */, E /* <: leafletLib.leafletMod.ImageOverlay */] () extends MapLayer[P, E] {
-  def getChildContext(): reactDashLeafletLib.Anon_PopupContainer[E] = js.native
-}
+class ImageOverlay[P /* <: ImageOverlayProps */, E /* <: leafletLib.leafletMod.ImageOverlay */] () extends MapLayer[P, E]
 

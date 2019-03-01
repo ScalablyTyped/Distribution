@@ -12,3 +12,16 @@ trait SendInfo extends js.Object {
   var resultCode: chromeDashAppsLib.chromeNs.integer
 }
 
+object SendInfo {
+  @scala.inline
+  def apply(
+    resultCode: chromeDashAppsLib.chromeNs.integer,
+    bytesSent: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): SendInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resultCode")(resultCode)
+    if (!js.isUndefined(bytesSent)) __obj.updateDynamic("bytesSent")(bytesSent)
+    __obj.asInstanceOf[SendInfo]
+  }
+}
+

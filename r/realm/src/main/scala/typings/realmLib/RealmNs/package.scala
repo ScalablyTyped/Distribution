@@ -16,7 +16,7 @@ package object RealmNs {
     * PropertyType
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~PropertyType }
     */
-  type PropertyType = java.lang.String | realmLib.realmLibStrings.bool | realmLib.realmLibStrings.int | realmLib.realmLibStrings.float | realmLib.realmLibStrings.double | realmLib.realmLibStrings.string | realmLib.realmLibStrings.data | realmLib.realmLibStrings.date | realmLib.realmLibStrings.list | realmLib.realmLibStrings.linkingObjects
+  type PropertyType = _PropertyType | java.lang.String
   /**
     * SortDescriptor
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Collection.html#~SortDescriptor }

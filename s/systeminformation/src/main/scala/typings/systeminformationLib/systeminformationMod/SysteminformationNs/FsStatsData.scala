@@ -15,3 +15,26 @@ trait FsStatsData extends js.Object {
   var wx_sec: scala.Double
 }
 
+object FsStatsData {
+  @scala.inline
+  def apply(
+    ms: scala.Double,
+    rx: scala.Double,
+    rx_sec: scala.Double,
+    tx: scala.Double,
+    tx_sec: scala.Double,
+    wx: scala.Double,
+    wx_sec: scala.Double
+  ): FsStatsData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ms")(ms)
+    __obj.updateDynamic("rx")(rx)
+    __obj.updateDynamic("rx_sec")(rx_sec)
+    __obj.updateDynamic("tx")(tx)
+    __obj.updateDynamic("tx_sec")(tx_sec)
+    __obj.updateDynamic("wx")(wx)
+    __obj.updateDynamic("wx_sec")(wx_sec)
+    __obj.asInstanceOf[FsStatsData]
+  }
+}
+

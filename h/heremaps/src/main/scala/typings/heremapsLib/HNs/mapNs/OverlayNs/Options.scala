@@ -26,3 +26,26 @@ trait Options extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    data: js.Any = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    provider: heremapsLib.HNs.mapNs.providerNs.Provider = null,
+    visibility: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

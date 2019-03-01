@@ -41,3 +41,29 @@ trait PresentationsResource extends js.Object {
   def get(request: gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Presentation]
 }
 
+object PresentationsResource {
+  @scala.inline
+  def apply(
+    batchUpdate: js.Function1[
+      gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdatePresentationResponse]
+    ],
+    create: js.Function1[
+      gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Presentation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Presentation]
+    ],
+    pages: PagesResource
+  ): PresentationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("batchUpdate")(batchUpdate)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("pages")(pages)
+    __obj.asInstanceOf[PresentationsResource]
+  }
+}
+

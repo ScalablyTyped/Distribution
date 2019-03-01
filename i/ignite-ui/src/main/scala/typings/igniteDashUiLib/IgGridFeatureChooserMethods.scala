@@ -47,3 +47,30 @@ trait IgGridFeatureChooserMethods extends js.Object {
   def toggleDropDown(columnKey: java.lang.String): scala.Unit
 }
 
+object IgGridFeatureChooserMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    destroy: js.Function2[js.Object, js.Object, scala.Unit],
+    getDropDownByColumnKey: js.Function1[java.lang.String, scala.Unit],
+    hideDropDown: js.Function1[java.lang.String, scala.Unit],
+    shouldShowFeatureIcon: js.Function1[js.Object, scala.Unit],
+    showDropDown: js.Function1[java.lang.String, scala.Unit],
+    toggleDropDown: js.Function1[java.lang.String, scala.Unit]
+  ): IgGridFeatureChooserMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getDropDownByColumnKey")(getDropDownByColumnKey)
+    __obj.updateDynamic("hideDropDown")(hideDropDown)
+    __obj.updateDynamic("shouldShowFeatureIcon")(shouldShowFeatureIcon)
+    __obj.updateDynamic("showDropDown")(showDropDown)
+    __obj.updateDynamic("toggleDropDown")(toggleDropDown)
+    __obj.asInstanceOf[IgGridFeatureChooserMethods]
+  }
+}
+

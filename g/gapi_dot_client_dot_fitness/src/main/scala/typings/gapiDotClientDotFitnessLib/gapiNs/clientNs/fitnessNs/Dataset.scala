@@ -30,3 +30,22 @@ trait Dataset extends js.Object {
   var point: js.UndefOr[js.Array[DataPoint]] = js.undefined
 }
 
+object Dataset {
+  @scala.inline
+  def apply(
+    dataSourceId: java.lang.String = null,
+    maxEndTimeNs: java.lang.String = null,
+    minStartTimeNs: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    point: js.Array[DataPoint] = null
+  ): Dataset = {
+    val __obj = js.Dynamic.literal()
+    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId)
+    if (maxEndTimeNs != null) __obj.updateDynamic("maxEndTimeNs")(maxEndTimeNs)
+    if (minStartTimeNs != null) __obj.updateDynamic("minStartTimeNs")(minStartTimeNs)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (point != null) __obj.updateDynamic("point")(point)
+    __obj.asInstanceOf[Dataset]
+  }
+}
+

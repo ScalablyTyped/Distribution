@@ -106,3 +106,38 @@ trait ChartTitleData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartTitleData {
+  @scala.inline
+  def apply(
+    format: ChartTitleFormatData = null,
+    height: scala.Int | scala.Double = null,
+    horizontalAlignment: officeDashJsLib.ExcelNs.ChartTextHorizontalAlignment | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.Distributed = null,
+    left: scala.Int | scala.Double = null,
+    overlay: js.UndefOr[scala.Boolean] = js.undefined,
+    position: officeDashJsLib.ExcelNs.ChartTitlePosition | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.Top | officeDashJsLib.officeDashJsLibStrings.Bottom | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Right = null,
+    showShadow: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null,
+    textOrientation: scala.Int | scala.Double = null,
+    top: scala.Int | scala.Double = null,
+    verticalAlignment: officeDashJsLib.ExcelNs.ChartTextVerticalAlignment | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Bottom | officeDashJsLib.officeDashJsLibStrings.Top | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.Distributed = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): ChartTitleData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartTitleData]
+  }
+}
+

@@ -1380,6 +1380,18 @@ object AppMeshNs extends js.Object {
     var weight: js.UndefOr[PercentInt] = js.undefined
   }
   
+  trait _MeshStatusCode extends js.Object
+  
+  trait _PortProtocol extends js.Object
+  
+  trait _RouteStatusCode extends js.Object
+  
+  trait _VirtualNodeStatusCode extends js.Object
+  
+  trait _VirtualRouterStatusCode extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Arn = java.lang.String
   type Backends = js.Array[ServiceName]
@@ -1394,22 +1406,22 @@ object AppMeshNs extends js.Object {
   type Listeners = js.Array[Listener]
   type Long = scala.Double
   type MeshList = js.Array[MeshRef]
-  type MeshStatusCode = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
+  type MeshStatusCode = _MeshStatusCode | java.lang.String
   type PercentInt = scala.Double
   type PortNumber = scala.Double
-  type PortProtocol = awsDashSdkLib.awsDashSdkLibStrings.http | awsDashSdkLib.awsDashSdkLibStrings.tcp | java.lang.String
+  type PortProtocol = _PortProtocol | java.lang.String
   type ResourceName = java.lang.String
   type RouteList = js.Array[RouteRef]
-  type RouteStatusCode = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
+  type RouteStatusCode = _RouteStatusCode | java.lang.String
   type ServiceName = java.lang.String
   type ServiceNames = js.Array[ServiceName]
   type String = java.lang.String
   type Timestamp = stdLib.Date
   type VirtualNodeList = js.Array[VirtualNodeRef]
-  type VirtualNodeStatusCode = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
+  type VirtualNodeStatusCode = _VirtualNodeStatusCode | java.lang.String
   type VirtualRouterList = js.Array[VirtualRouterRef]
-  type VirtualRouterStatusCode = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
+  type VirtualRouterStatusCode = _VirtualRouterStatusCode | java.lang.String
   type WeightedTargets = js.Array[WeightedTarget]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-10-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

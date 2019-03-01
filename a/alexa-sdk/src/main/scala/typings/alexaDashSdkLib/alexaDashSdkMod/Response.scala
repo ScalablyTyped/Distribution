@@ -13,3 +13,22 @@ trait Response extends js.Object {
   var shouldEndSession: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    card: Card = null,
+    directives: js.Any = null,
+    outputSpeech: OutputSpeech = null,
+    reprompt: Reprompt = null,
+    shouldEndSession: js.UndefOr[scala.Boolean] = js.undefined
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    if (card != null) __obj.updateDynamic("card")(card)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (outputSpeech != null) __obj.updateDynamic("outputSpeech")(outputSpeech)
+    if (reprompt != null) __obj.updateDynamic("reprompt")(reprompt)
+    if (!js.isUndefined(shouldEndSession)) __obj.updateDynamic("shouldEndSession")(shouldEndSession)
+    __obj.asInstanceOf[Response]
+  }
+}
+

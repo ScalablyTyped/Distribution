@@ -166,3 +166,40 @@ trait Anon_ColorFontFamily extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object Anon_ColorFontFamily {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    height: scala.Double | java.lang.String = null,
+    lineHeight: scala.Int | scala.Double = null,
+    textBorderColor: java.lang.String = null,
+    textBorderWidth: scala.Int | scala.Double = null,
+    textShadowBlur: scala.Int | scala.Double = null,
+    textShadowColor: java.lang.String = null,
+    textShadowOffsetX: scala.Int | scala.Double = null,
+    textShadowOffsetY: scala.Int | scala.Double = null,
+    width: scala.Double | java.lang.String = null
+  ): Anon_ColorFontFamily = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (textBorderColor != null) __obj.updateDynamic("textBorderColor")(textBorderColor)
+    if (textBorderWidth != null) __obj.updateDynamic("textBorderWidth")(textBorderWidth.asInstanceOf[js.Any])
+    if (textShadowBlur != null) __obj.updateDynamic("textShadowBlur")(textShadowBlur.asInstanceOf[js.Any])
+    if (textShadowColor != null) __obj.updateDynamic("textShadowColor")(textShadowColor)
+    if (textShadowOffsetX != null) __obj.updateDynamic("textShadowOffsetX")(textShadowOffsetX.asInstanceOf[js.Any])
+    if (textShadowOffsetY != null) __obj.updateDynamic("textShadowOffsetY")(textShadowOffsetY.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ColorFontFamily]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_EnterTimeout extends js.Object {
   var name: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_EnterTimeout {
+  @scala.inline
+  def apply(
+    enterTimeout: scala.Int | scala.Double = null,
+    leaveTimeout: scala.Int | scala.Double = null,
+    name: js.Any = null
+  ): Anon_EnterTimeout = {
+    val __obj = js.Dynamic.literal()
+    if (enterTimeout != null) __obj.updateDynamic("enterTimeout")(enterTimeout.asInstanceOf[js.Any])
+    if (leaveTimeout != null) __obj.updateDynamic("leaveTimeout")(leaveTimeout.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_EnterTimeout]
+  }
+}
+

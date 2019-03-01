@@ -40,3 +40,44 @@ trait Instance extends js.Object {
   var vmZoneName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    appEngineRelease: java.lang.String = null,
+    availability: java.lang.String = null,
+    averageLatency: scala.Int | scala.Double = null,
+    errors: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    memoryUsage: java.lang.String = null,
+    name: java.lang.String = null,
+    qps: scala.Int | scala.Double = null,
+    requests: scala.Int | scala.Double = null,
+    startTime: java.lang.String = null,
+    vmDebugEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    vmId: java.lang.String = null,
+    vmIp: java.lang.String = null,
+    vmName: java.lang.String = null,
+    vmStatus: java.lang.String = null,
+    vmZoneName: java.lang.String = null
+  ): Instance = {
+    val __obj = js.Dynamic.literal()
+    if (appEngineRelease != null) __obj.updateDynamic("appEngineRelease")(appEngineRelease)
+    if (availability != null) __obj.updateDynamic("availability")(availability)
+    if (averageLatency != null) __obj.updateDynamic("averageLatency")(averageLatency.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (memoryUsage != null) __obj.updateDynamic("memoryUsage")(memoryUsage)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (qps != null) __obj.updateDynamic("qps")(qps.asInstanceOf[js.Any])
+    if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (!js.isUndefined(vmDebugEnabled)) __obj.updateDynamic("vmDebugEnabled")(vmDebugEnabled)
+    if (vmId != null) __obj.updateDynamic("vmId")(vmId)
+    if (vmIp != null) __obj.updateDynamic("vmIp")(vmIp)
+    if (vmName != null) __obj.updateDynamic("vmName")(vmName)
+    if (vmStatus != null) __obj.updateDynamic("vmStatus")(vmStatus)
+    if (vmZoneName != null) __obj.updateDynamic("vmZoneName")(vmZoneName)
+    __obj.asInstanceOf[Instance]
+  }
+}
+

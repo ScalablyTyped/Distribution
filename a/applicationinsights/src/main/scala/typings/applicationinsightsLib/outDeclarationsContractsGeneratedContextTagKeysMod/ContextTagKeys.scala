@@ -108,3 +108,58 @@ trait ContextTagKeys extends js.Object {
   var userId: java.lang.String
 }
 
+object ContextTagKeys {
+  @scala.inline
+  def apply(
+    applicationVersion: java.lang.String,
+    cloudRole: java.lang.String,
+    cloudRoleInstance: java.lang.String,
+    deviceId: java.lang.String,
+    deviceLocale: java.lang.String,
+    deviceModel: java.lang.String,
+    deviceOEMName: java.lang.String,
+    deviceOSVersion: java.lang.String,
+    deviceType: java.lang.String,
+    internalAgentVersion: java.lang.String,
+    internalNodeName: java.lang.String,
+    internalSdkVersion: java.lang.String,
+    locationIp: java.lang.String,
+    operationCorrelationVector: java.lang.String,
+    operationId: java.lang.String,
+    operationName: java.lang.String,
+    operationParentId: java.lang.String,
+    operationSyntheticSource: java.lang.String,
+    sessionId: java.lang.String,
+    sessionIsFirst: java.lang.String,
+    userAccountId: java.lang.String,
+    userAuthUserId: java.lang.String,
+    userId: java.lang.String
+  ): ContextTagKeys = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applicationVersion")(applicationVersion)
+    __obj.updateDynamic("cloudRole")(cloudRole)
+    __obj.updateDynamic("cloudRoleInstance")(cloudRoleInstance)
+    __obj.updateDynamic("deviceId")(deviceId)
+    __obj.updateDynamic("deviceLocale")(deviceLocale)
+    __obj.updateDynamic("deviceModel")(deviceModel)
+    __obj.updateDynamic("deviceOEMName")(deviceOEMName)
+    __obj.updateDynamic("deviceOSVersion")(deviceOSVersion)
+    __obj.updateDynamic("deviceType")(deviceType)
+    __obj.updateDynamic("internalAgentVersion")(internalAgentVersion)
+    __obj.updateDynamic("internalNodeName")(internalNodeName)
+    __obj.updateDynamic("internalSdkVersion")(internalSdkVersion)
+    __obj.updateDynamic("locationIp")(locationIp)
+    __obj.updateDynamic("operationCorrelationVector")(operationCorrelationVector)
+    __obj.updateDynamic("operationId")(operationId)
+    __obj.updateDynamic("operationName")(operationName)
+    __obj.updateDynamic("operationParentId")(operationParentId)
+    __obj.updateDynamic("operationSyntheticSource")(operationSyntheticSource)
+    __obj.updateDynamic("sessionId")(sessionId)
+    __obj.updateDynamic("sessionIsFirst")(sessionIsFirst)
+    __obj.updateDynamic("userAccountId")(userAccountId)
+    __obj.updateDynamic("userAuthUserId")(userAuthUserId)
+    __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[ContextTagKeys]
+  }
+}
+

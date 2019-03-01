@@ -15,6 +15,8 @@ object codeactionsNs extends js.Object {
   - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IBasicParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined `type`, asLoaded, load, load, load, load */ @js.native
   class BasicParameterType protected () extends ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsCodeActionParameter")
+    val containerAsCodeActionParameter_BasicParameterType: CodeActionParameter = js.native
     var `type`: IType | Type = js.native
   }
   
@@ -111,6 +113,12 @@ object codeactionsNs extends js.Object {
   - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   abstract class EntityType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsBasicParameterType")
+    val containerAsBasicParameterType_EntityType: BasicParameterType = js.native
+    @JSName("containerAsCodeAction")
+    val containerAsCodeAction_EntityType: CodeAction = js.native
+    @JSName("containerAsListType")
+    val containerAsListType_EntityType: ListType = js.native
   }
   
   /**
@@ -120,6 +128,8 @@ object codeactionsNs extends js.Object {
   - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IEntityTypeParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameter, asLoaded, load, load, load, load */ @js.native
   class EntityTypeParameterType protected () extends ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsCodeActionParameter")
+    val containerAsCodeActionParameter_EntityTypeParameterType: CodeActionParameter = js.native
     var typeParameter: ITypeParameter | scala.Null | TypeParameter = js.native
   }
   
@@ -130,6 +140,10 @@ object codeactionsNs extends js.Object {
   - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IEnumerationType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName, asLoaded, load, load, load, load */ @js.native
   class EnumerationType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsBasicParameterType")
+    val containerAsBasicParameterType_EnumerationType: BasicParameterType = js.native
+    @JSName("containerAsCodeAction")
+    val containerAsCodeAction_EnumerationType: CodeAction = js.native
     var enumeration: mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration = js.native
     val enumerationQualifiedName: java.lang.String = js.native
   }
@@ -371,6 +385,10 @@ object codeactionsNs extends js.Object {
   - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IListType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined parameter, asLoaded, load, load, load, load */ @js.native
   class ListType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsBasicParameterType")
+    val containerAsBasicParameterType_ListType: BasicParameterType = js.native
+    @JSName("containerAsCodeAction")
+    val containerAsCodeAction_ListType: CodeAction = js.native
     var parameter: EntityType | IEntityType = js.native
   }
   
@@ -421,6 +439,10 @@ object codeactionsNs extends js.Object {
   - mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IPrimitiveType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   abstract class PrimitiveType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsBasicParameterType")
+    val containerAsBasicParameterType_PrimitiveType: BasicParameterType = js.native
+    @JSName("containerAsCodeAction")
+    val containerAsCodeAction_PrimitiveType: CodeAction = js.native
   }
   
   /**

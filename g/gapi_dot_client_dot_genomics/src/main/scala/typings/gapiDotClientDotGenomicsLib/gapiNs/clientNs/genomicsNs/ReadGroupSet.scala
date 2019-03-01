@@ -28,3 +28,26 @@ trait ReadGroupSet extends js.Object {
   var referenceSetId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReadGroupSet {
+  @scala.inline
+  def apply(
+    datasetId: java.lang.String = null,
+    filename: java.lang.String = null,
+    id: java.lang.String = null,
+    info: stdLib.Record[java.lang.String, js.Array[_]] = null,
+    name: java.lang.String = null,
+    readGroups: js.Array[ReadGroup] = null,
+    referenceSetId: java.lang.String = null
+  ): ReadGroupSet = {
+    val __obj = js.Dynamic.literal()
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (readGroups != null) __obj.updateDynamic("readGroups")(readGroups)
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
+    __obj.asInstanceOf[ReadGroupSet]
+  }
+}
+

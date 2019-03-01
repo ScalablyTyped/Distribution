@@ -28,3 +28,22 @@ trait AutoScalingSettingsUpdate extends js.Object {
   var ScalingPolicyUpdate: js.UndefOr[AutoScalingPolicyUpdate] = js.undefined
 }
 
+object AutoScalingSettingsUpdate {
+  @scala.inline
+  def apply(
+    AutoScalingDisabled: js.UndefOr[BooleanObject] = js.undefined,
+    AutoScalingRoleArn: AutoScalingRoleArn = null,
+    MaximumUnits: js.UndefOr[PositiveLongObject] = js.undefined,
+    MinimumUnits: js.UndefOr[PositiveLongObject] = js.undefined,
+    ScalingPolicyUpdate: AutoScalingPolicyUpdate = null
+  ): AutoScalingSettingsUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(AutoScalingDisabled)) __obj.updateDynamic("AutoScalingDisabled")(AutoScalingDisabled)
+    if (AutoScalingRoleArn != null) __obj.updateDynamic("AutoScalingRoleArn")(AutoScalingRoleArn)
+    if (!js.isUndefined(MaximumUnits)) __obj.updateDynamic("MaximumUnits")(MaximumUnits)
+    if (!js.isUndefined(MinimumUnits)) __obj.updateDynamic("MinimumUnits")(MinimumUnits)
+    if (ScalingPolicyUpdate != null) __obj.updateDynamic("ScalingPolicyUpdate")(ScalingPolicyUpdate)
+    __obj.asInstanceOf[AutoScalingSettingsUpdate]
+  }
+}
+

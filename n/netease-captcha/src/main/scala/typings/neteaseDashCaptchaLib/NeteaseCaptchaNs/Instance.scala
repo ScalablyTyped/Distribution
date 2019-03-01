@@ -20,3 +20,18 @@ trait Instance extends js.Object {
   def refresh(): scala.Unit
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    refresh: js.Function0[scala.Unit],
+    popUp: js.Function0[scala.Unit] = null
+  ): Instance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("refresh")(refresh)
+    if (popUp != null) __obj.updateDynamic("popUp")(popUp)
+    __obj.asInstanceOf[Instance]
+  }
+}
+

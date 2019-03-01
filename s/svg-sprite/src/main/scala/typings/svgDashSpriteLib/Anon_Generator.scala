@@ -24,3 +24,20 @@ trait Anon_Generator extends js.Object {
   var whitespace: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Generator {
+  @scala.inline
+  def apply(
+    generator: java.lang.String | (js.Function1[/* svg */ java.lang.String, java.lang.String]) = null,
+    pseudo: java.lang.String = null,
+    separator: java.lang.String = null,
+    whitespace: java.lang.String = null
+  ): Anon_Generator = {
+    val __obj = js.Dynamic.literal()
+    if (generator != null) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
+    if (pseudo != null) __obj.updateDynamic("pseudo")(pseudo)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (whitespace != null) __obj.updateDynamic("whitespace")(whitespace)
+    __obj.asInstanceOf[Anon_Generator]
+  }
+}
+

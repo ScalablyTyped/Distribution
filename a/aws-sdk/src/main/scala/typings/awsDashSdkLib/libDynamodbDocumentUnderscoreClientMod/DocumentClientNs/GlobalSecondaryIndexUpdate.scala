@@ -20,3 +20,18 @@ trait GlobalSecondaryIndexUpdate extends js.Object {
   var Update: js.UndefOr[UpdateGlobalSecondaryIndexAction] = js.undefined
 }
 
+object GlobalSecondaryIndexUpdate {
+  @scala.inline
+  def apply(
+    Create: CreateGlobalSecondaryIndexAction = null,
+    Delete: DeleteGlobalSecondaryIndexAction = null,
+    Update: UpdateGlobalSecondaryIndexAction = null
+  ): GlobalSecondaryIndexUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (Create != null) __obj.updateDynamic("Create")(Create)
+    if (Delete != null) __obj.updateDynamic("Delete")(Delete)
+    if (Update != null) __obj.updateDynamic("Update")(Update)
+    __obj.asInstanceOf[GlobalSecondaryIndexUpdate]
+  }
+}
+

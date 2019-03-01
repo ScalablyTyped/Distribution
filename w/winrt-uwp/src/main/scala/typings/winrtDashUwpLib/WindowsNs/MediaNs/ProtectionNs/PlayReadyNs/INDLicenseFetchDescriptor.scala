@@ -15,3 +15,18 @@ trait INDLicenseFetchDescriptor extends js.Object {
   var licenseFetchChallengeCustomData: INDCustomData
 }
 
+object INDLicenseFetchDescriptor {
+  @scala.inline
+  def apply(
+    contentID: scala.Double,
+    contentIDType: NDContentIDType,
+    licenseFetchChallengeCustomData: INDCustomData
+  ): INDLicenseFetchDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentID")(contentID)
+    __obj.updateDynamic("contentIDType")(contentIDType)
+    __obj.updateDynamic("licenseFetchChallengeCustomData")(licenseFetchChallengeCustomData)
+    __obj.asInstanceOf[INDLicenseFetchDescriptor]
+  }
+}
+

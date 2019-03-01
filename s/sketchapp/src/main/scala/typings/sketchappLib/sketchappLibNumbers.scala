@@ -7,58 +7,102 @@ import scala.scalajs.js.annotation._
 
 object sketchappLibNumbers {
   @js.native
-  sealed trait `-1` extends js.Object
+  sealed trait `-1` extends SketchMSBooleanOperation
   
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends SketchMSBlendModeEnum
+       with SketchMSBooleanOperation
+       with SketchMSBorderLineCapStyle
+       with SketchMSBorderLineJoinStyle
+       with SketchMSBorderPositionEnum
+       with SketchMSCurveMode
+       with SketchMSFillTypeEnum
+       with SketchMSLayerListExpandedType
+       with SketchMSLineDecorationTypeEnum
+       with SketchMSPatternFillTypeEnum
+       with SketchMSResizingType
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends SketchMSBlendModeEnum
+       with SketchMSBooleanOperation
+       with SketchMSBorderLineCapStyle
+       with SketchMSBorderLineJoinStyle
+       with SketchMSBorderPositionEnum
+       with SketchMSCurveMode
+       with SketchMSFillTypeEnum
+       with SketchMSLayerListExpandedType
+       with SketchMSLineDecorationTypeEnum
+       with SketchMSPatternFillTypeEnum
+       with SketchMSResizingType
   
   @js.native
-  sealed trait `10` extends js.Object
+  sealed trait `10` extends SketchMSBlendModeEnum
   
   @js.native
-  sealed trait `11` extends js.Object
+  sealed trait `11` extends SketchMSBlendModeEnum
   
   @js.native
-  sealed trait `12` extends js.Object
+  sealed trait `12` extends SketchMSBlendModeEnum
   
   @js.native
-  sealed trait `13` extends js.Object
+  sealed trait `13` extends SketchMSBlendModeEnum
   
   @js.native
-  sealed trait `14` extends js.Object
+  sealed trait `14` extends SketchMSBlendModeEnum
   
   @js.native
-  sealed trait `15` extends js.Object
+  sealed trait `15` extends SketchMSBlendModeEnum
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends SketchMSBlendModeEnum
+       with SketchMSBooleanOperation
+       with SketchMSBorderLineCapStyle
+       with SketchMSBorderLineJoinStyle
+       with SketchMSBorderPositionEnum
+       with SketchMSCurveMode
+       with SketchMSLayerListExpandedType
+       with SketchMSLineDecorationTypeEnum
+       with SketchMSPatternFillTypeEnum
+       with SketchMSResizingType
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends SketchMSBlendModeEnum
+       with SketchMSBooleanOperation
+       with SketchMSBorderPositionEnum
+       with SketchMSCurveMode
+       with SketchMSLineDecorationTypeEnum
+       with SketchMSPatternFillTypeEnum
+       with SketchMSResizingType
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends SketchMSBlendModeEnum
+       with SketchMSCurveMode
+       with SketchMSFillTypeEnum
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends SketchMSBlendModeEnum
+       with SketchMSFillTypeEnum
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6` extends SketchMSBlendModeEnum
   
   @js.native
   sealed trait `63` extends js.Object
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7` extends SketchMSBlendModeEnum
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8` extends SketchMSBlendModeEnum
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9` extends SketchMSBlendModeEnum
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

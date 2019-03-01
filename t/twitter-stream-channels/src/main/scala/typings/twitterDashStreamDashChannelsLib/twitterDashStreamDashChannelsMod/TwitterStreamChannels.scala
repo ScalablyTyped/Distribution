@@ -41,3 +41,19 @@ trait TwitterStreamChannels extends js.Object {
   ): twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.TwitterStreamChannelsNs.StreamChannels
 }
 
+object TwitterStreamChannels {
+  @scala.inline
+  def apply(
+    getApiClient: js.Function0[twitLib.twitMod.namespaced],
+    streamChannels: js.Function1[
+      twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.TwitterStreamChannelsNs.StreamChannelsNs.StreamChannelsOptions, 
+      twitterDashStreamDashChannelsLib.twitterDashStreamDashChannelsMod.TwitterStreamChannelsNs.StreamChannels
+    ]
+  ): TwitterStreamChannels = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getApiClient")(getApiClient)
+    __obj.updateDynamic("streamChannels")(streamChannels)
+    __obj.asInstanceOf[TwitterStreamChannels]
+  }
+}
+

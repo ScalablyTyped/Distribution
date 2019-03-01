@@ -12,3 +12,20 @@ trait BoxZoomHandler extends js.Object {
   def isEnabled(): scala.Boolean
 }
 
+object BoxZoomHandler {
+  @scala.inline
+  def apply(
+    disable: js.Function0[scala.Unit],
+    enable: js.Function0[scala.Unit],
+    isActive: js.Function0[scala.Boolean],
+    isEnabled: js.Function0[scala.Boolean]
+  ): BoxZoomHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disable")(disable)
+    __obj.updateDynamic("enable")(enable)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("isEnabled")(isEnabled)
+    __obj.asInstanceOf[BoxZoomHandler]
+  }
+}
+

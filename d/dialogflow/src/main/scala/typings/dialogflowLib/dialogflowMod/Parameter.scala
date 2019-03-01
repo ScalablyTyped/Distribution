@@ -16,3 +16,28 @@ trait Parameter extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Parameter {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    name: java.lang.String,
+    defaultValue: java.lang.String = null,
+    entityTypeDisplayName: java.lang.String = null,
+    isList: js.UndefOr[scala.Boolean] = js.undefined,
+    mandatory: js.UndefOr[scala.Boolean] = js.undefined,
+    prompts: js.Array[java.lang.String] = null,
+    value: java.lang.String = null
+  ): Parameter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("name")(name)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (entityTypeDisplayName != null) __obj.updateDynamic("entityTypeDisplayName")(entityTypeDisplayName)
+    if (!js.isUndefined(isList)) __obj.updateDynamic("isList")(isList)
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory)
+    if (prompts != null) __obj.updateDynamic("prompts")(prompts)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Parameter]
+  }
+}
+

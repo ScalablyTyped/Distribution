@@ -91,3 +91,34 @@ trait Beacon extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Beacon {
+  @scala.inline
+  def apply(
+    advertisedId: AdvertisedId = null,
+    beaconName: java.lang.String = null,
+    description: java.lang.String = null,
+    ephemeralIdRegistration: EphemeralIdRegistration = null,
+    expectedStability: java.lang.String = null,
+    indoorLevel: IndoorLevel = null,
+    latLng: LatLng = null,
+    placeId: java.lang.String = null,
+    properties: stdLib.Record[java.lang.String, java.lang.String] = null,
+    provisioningKey: java.lang.String = null,
+    status: java.lang.String = null
+  ): Beacon = {
+    val __obj = js.Dynamic.literal()
+    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId)
+    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (ephemeralIdRegistration != null) __obj.updateDynamic("ephemeralIdRegistration")(ephemeralIdRegistration)
+    if (expectedStability != null) __obj.updateDynamic("expectedStability")(expectedStability)
+    if (indoorLevel != null) __obj.updateDynamic("indoorLevel")(indoorLevel)
+    if (latLng != null) __obj.updateDynamic("latLng")(latLng)
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (provisioningKey != null) __obj.updateDynamic("provisioningKey")(provisioningKey)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Beacon]
+  }
+}
+

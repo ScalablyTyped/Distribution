@@ -13,3 +13,20 @@ trait FooterRendererContext[K, D] extends js.Object {
   var parentElement: stdLib.Element
 }
 
+object FooterRendererContext {
+  @scala.inline
+  def apply[K, D](
+    columnIndex: scala.Double,
+    componentElement: stdLib.Element,
+    footerContext: atOracleOraclejetLib.Anon_DatasourceD[K, D],
+    parentElement: stdLib.Element
+  ): FooterRendererContext[K, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnIndex")(columnIndex)
+    __obj.updateDynamic("componentElement")(componentElement)
+    __obj.updateDynamic("footerContext")(footerContext)
+    __obj.updateDynamic("parentElement")(parentElement)
+    __obj.asInstanceOf[FooterRendererContext[K, D]]
+  }
+}
+

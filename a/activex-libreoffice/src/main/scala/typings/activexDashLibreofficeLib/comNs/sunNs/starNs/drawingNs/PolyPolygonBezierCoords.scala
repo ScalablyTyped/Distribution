@@ -11,3 +11,13 @@ trait PolyPolygonBezierCoords extends js.Object {
   var Flags: FlagSequenceSequence
 }
 
+object PolyPolygonBezierCoords {
+  @scala.inline
+  def apply(Coordinates: PointSequenceSequence, Flags: FlagSequenceSequence): PolyPolygonBezierCoords = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Coordinates")(Coordinates.asInstanceOf[js.Any])
+    __obj.updateDynamic("Flags")(Flags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolyPolygonBezierCoords]
+  }
+}
+

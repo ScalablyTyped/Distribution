@@ -16,3 +16,13 @@ trait SwimlaneSettingsHeader extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SwimlaneSettingsHeader {
+  @scala.inline
+  def apply(key: java.lang.String = null, text: java.lang.String = null): SwimlaneSettingsHeader = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[SwimlaneSettingsHeader]
+  }
+}
+

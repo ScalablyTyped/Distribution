@@ -25,3 +25,28 @@ trait UnoControlDialogElement extends js.Object {
   var Width: scala.Double
 }
 
+object UnoControlDialogElement {
+  @scala.inline
+  def apply(
+    Height: scala.Double,
+    Name: java.lang.String,
+    PositionX: java.lang.String,
+    PositionY: java.lang.String,
+    Step: scala.Double,
+    TabIndex: scala.Double,
+    Tag: java.lang.String,
+    Width: scala.Double
+  ): UnoControlDialogElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("PositionX")(PositionX)
+    __obj.updateDynamic("PositionY")(PositionY)
+    __obj.updateDynamic("Step")(Step)
+    __obj.updateDynamic("TabIndex")(TabIndex)
+    __obj.updateDynamic("Tag")(Tag)
+    __obj.updateDynamic("Width")(Width)
+    __obj.asInstanceOf[UnoControlDialogElement]
+  }
+}
+

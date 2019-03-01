@@ -66,3 +66,32 @@ trait Environment extends js.Object {
   var workerPools: js.UndefOr[js.Array[WorkerPool]] = js.undefined
 }
 
+object Environment {
+  @scala.inline
+  def apply(
+    clusterManagerApiService: java.lang.String = null,
+    dataset: java.lang.String = null,
+    experiments: js.Array[java.lang.String] = null,
+    internalExperiments: stdLib.Record[java.lang.String, _] = null,
+    sdkPipelineOptions: stdLib.Record[java.lang.String, _] = null,
+    serviceAccountEmail: java.lang.String = null,
+    tempStoragePrefix: java.lang.String = null,
+    userAgent: stdLib.Record[java.lang.String, _] = null,
+    version: stdLib.Record[java.lang.String, _] = null,
+    workerPools: js.Array[WorkerPool] = null
+  ): Environment = {
+    val __obj = js.Dynamic.literal()
+    if (clusterManagerApiService != null) __obj.updateDynamic("clusterManagerApiService")(clusterManagerApiService)
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
+    if (experiments != null) __obj.updateDynamic("experiments")(experiments)
+    if (internalExperiments != null) __obj.updateDynamic("internalExperiments")(internalExperiments)
+    if (sdkPipelineOptions != null) __obj.updateDynamic("sdkPipelineOptions")(sdkPipelineOptions)
+    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail)
+    if (tempStoragePrefix != null) __obj.updateDynamic("tempStoragePrefix")(tempStoragePrefix)
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (workerPools != null) __obj.updateDynamic("workerPools")(workerPools)
+    __obj.asInstanceOf[Environment]
+  }
+}
+

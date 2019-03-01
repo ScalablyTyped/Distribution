@@ -9,3 +9,12 @@ trait ContextConfigData extends js.Object {
   var options: wonderDotJsLib.Anon_Alpha
 }
 
+object ContextConfigData {
+  @scala.inline
+  def apply(options: wonderDotJsLib.Anon_Alpha): ContextConfigData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[ContextConfigData]
+  }
+}
+

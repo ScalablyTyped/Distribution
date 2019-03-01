@@ -54,3 +54,34 @@ trait NestedFilter extends Filter {
   def toJSON(): NestedFilter
 }
 
+object NestedFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, NestedFilter],
+    cache: js.Function1[scala.Boolean, NestedFilter],
+    cacheKey: js.Function1[java.lang.String, NestedFilter],
+    filter: js.Function1[js.Object, NestedFilter],
+    join: js.Function1[scala.Boolean, NestedFilter],
+    name: js.Function1[java.lang.String, NestedFilter],
+    path: js.Function1[java.lang.String, NestedFilter],
+    query: js.Function1[Query, NestedFilter],
+    scope: js.Function1[java.lang.String, NestedFilter],
+    toJSON: js.Function0[NestedFilter]
+  ): NestedFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("join")(join)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[NestedFilter]
+  }
+}
+

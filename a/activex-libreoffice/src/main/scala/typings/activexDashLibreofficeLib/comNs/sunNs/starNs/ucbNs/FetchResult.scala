@@ -38,3 +38,20 @@ trait FetchResult extends js.Object {
   var StartIndex: scala.Double
 }
 
+object FetchResult {
+  @scala.inline
+  def apply(
+    FetchError: scala.Double,
+    Orientation: scala.Boolean,
+    Rows: activexDashInteropLib.SafeArray[_],
+    StartIndex: scala.Double
+  ): FetchResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FetchError")(FetchError)
+    __obj.updateDynamic("Orientation")(Orientation)
+    __obj.updateDynamic("Rows")(Rows)
+    __obj.updateDynamic("StartIndex")(StartIndex)
+    __obj.asInstanceOf[FetchResult]
+  }
+}
+

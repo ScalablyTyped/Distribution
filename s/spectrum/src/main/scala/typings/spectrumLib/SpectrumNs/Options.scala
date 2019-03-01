@@ -165,3 +165,74 @@ trait Options extends js.Object {
   var togglePaletteOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allowEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    appendTo: js.Any = null,
+    beforeShow: js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit] = null,
+    cancelText: java.lang.String = null,
+    change: js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit] = null,
+    chooseText: java.lang.String = null,
+    clickoutFiresChange: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    containerClassName: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    flat: js.UndefOr[scala.Boolean] = js.undefined,
+    hide: js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit] = null,
+    hideAfterPaletteSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    localStorageKey: java.lang.String = null,
+    maxSelectionSize: scala.Int | scala.Double = null,
+    move: js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit] = null,
+    palette: js.Array[js.Array[java.lang.String]] = null,
+    preferredFormat: java.lang.String = null,
+    replacerClassName: java.lang.String = null,
+    selectionPalette: js.Array[java.lang.String] = null,
+    show: js.Function1[/* color */ tinycolor2Lib.tinycolor2Mod.tinycolorNs.Instance, scala.Unit] = null,
+    showAlpha: js.UndefOr[scala.Boolean] = js.undefined,
+    showButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    showInitial: js.UndefOr[scala.Boolean] = js.undefined,
+    showInput: js.UndefOr[scala.Boolean] = js.undefined,
+    showPalette: js.UndefOr[scala.Boolean] = js.undefined,
+    showPaletteOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    showSelectionPalette: js.UndefOr[scala.Boolean] = js.undefined,
+    togglePaletteLessText: java.lang.String = null,
+    togglePaletteMoreText: java.lang.String = null,
+    togglePaletteOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (chooseText != null) __obj.updateDynamic("chooseText")(chooseText)
+    if (!js.isUndefined(clickoutFiresChange)) __obj.updateDynamic("clickoutFiresChange")(clickoutFiresChange)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(flat)) __obj.updateDynamic("flat")(flat)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (!js.isUndefined(hideAfterPaletteSelect)) __obj.updateDynamic("hideAfterPaletteSelect")(hideAfterPaletteSelect)
+    if (localStorageKey != null) __obj.updateDynamic("localStorageKey")(localStorageKey)
+    if (maxSelectionSize != null) __obj.updateDynamic("maxSelectionSize")(maxSelectionSize.asInstanceOf[js.Any])
+    if (move != null) __obj.updateDynamic("move")(move)
+    if (palette != null) __obj.updateDynamic("palette")(palette)
+    if (preferredFormat != null) __obj.updateDynamic("preferredFormat")(preferredFormat)
+    if (replacerClassName != null) __obj.updateDynamic("replacerClassName")(replacerClassName)
+    if (selectionPalette != null) __obj.updateDynamic("selectionPalette")(selectionPalette)
+    if (show != null) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(showAlpha)) __obj.updateDynamic("showAlpha")(showAlpha)
+    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons)
+    if (!js.isUndefined(showInitial)) __obj.updateDynamic("showInitial")(showInitial)
+    if (!js.isUndefined(showInput)) __obj.updateDynamic("showInput")(showInput)
+    if (!js.isUndefined(showPalette)) __obj.updateDynamic("showPalette")(showPalette)
+    if (!js.isUndefined(showPaletteOnly)) __obj.updateDynamic("showPaletteOnly")(showPaletteOnly)
+    if (!js.isUndefined(showSelectionPalette)) __obj.updateDynamic("showSelectionPalette")(showSelectionPalette)
+    if (togglePaletteLessText != null) __obj.updateDynamic("togglePaletteLessText")(togglePaletteLessText)
+    if (togglePaletteMoreText != null) __obj.updateDynamic("togglePaletteMoreText")(togglePaletteMoreText)
+    if (!js.isUndefined(togglePaletteOnly)) __obj.updateDynamic("togglePaletteOnly")(togglePaletteOnly)
+    __obj.asInstanceOf[Options]
+  }
+}
+

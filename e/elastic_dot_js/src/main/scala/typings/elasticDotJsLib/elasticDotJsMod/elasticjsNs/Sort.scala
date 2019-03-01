@@ -125,3 +125,51 @@ trait Sort extends js.Object {
   def unit(unit: java.lang.String): Sort
 }
 
+object Sort {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    asc: js.Function0[Sort],
+    desc: js.Function0[Sort],
+    distanceType: js.Function1[java.lang.String, Sort],
+    field: js.Function1[java.lang.String, Sort],
+    geoDistance: js.Function1[GeoPoint, Sort],
+    ignoreUnmapped: js.Function1[scala.Boolean, Sort],
+    lang: js.Function1[java.lang.String, Sort],
+    missing: js.Function1[java.lang.String, Sort],
+    mode: js.Function1[java.lang.String, Sort],
+    nestedFilter: js.Function1[js.Object, Sort],
+    nestedPath: js.Function1[java.lang.String, Sort],
+    normalize: js.Function1[java.lang.String, Sort],
+    order: js.Function1[java.lang.String, Sort],
+    params: js.Function1[js.Object, Sort],
+    reverse: js.Function1[scala.Boolean, Sort],
+    script: js.Function1[java.lang.String, Sort],
+    toJSON: js.Function0[js.Any],
+    `type`: js.Function1[java.lang.String, Sort],
+    unit: js.Function1[java.lang.String, Sort]
+  ): Sort = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("asc")(asc)
+    __obj.updateDynamic("desc")(desc)
+    __obj.updateDynamic("distanceType")(distanceType)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("geoDistance")(geoDistance)
+    __obj.updateDynamic("ignoreUnmapped")(ignoreUnmapped)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("missing")(missing)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("nestedFilter")(nestedFilter)
+    __obj.updateDynamic("nestedPath")(nestedPath)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("reverse")(reverse)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[Sort]
+  }
+}
+

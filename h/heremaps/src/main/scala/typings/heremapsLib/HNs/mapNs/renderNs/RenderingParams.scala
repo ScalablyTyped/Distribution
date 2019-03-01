@@ -54,3 +54,28 @@ trait RenderingParams extends js.Object {
   var zoom: scala.Double
 }
 
+object RenderingParams {
+  @scala.inline
+  def apply(
+    bounds: heremapsLib.HNs.geoNs.Rect,
+    cacheOnly: scala.Boolean,
+    pixelRatio: scala.Double,
+    priorityCenter: heremapsLib.HNs.mathNs.Point,
+    projection: heremapsLib.HNs.geoNs.PixelProjection,
+    screenCenter: heremapsLib.HNs.mathNs.Point,
+    size: heremapsLib.HNs.mathNs.Size,
+    zoom: scala.Double
+  ): RenderingParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("cacheOnly")(cacheOnly)
+    __obj.updateDynamic("pixelRatio")(pixelRatio)
+    __obj.updateDynamic("priorityCenter")(priorityCenter)
+    __obj.updateDynamic("projection")(projection)
+    __obj.updateDynamic("screenCenter")(screenCenter)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[RenderingParams]
+  }
+}
+

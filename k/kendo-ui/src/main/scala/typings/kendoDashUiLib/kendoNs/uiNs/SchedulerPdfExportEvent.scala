@@ -9,3 +9,20 @@ trait SchedulerPdfExportEvent extends SchedulerEvent {
   var promise: js.UndefOr[kendoDashUiLib.JQueryPromise[_]] = js.undefined
 }
 
+object SchedulerPdfExportEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Scheduler,
+    promise: kendoDashUiLib.JQueryPromise[_] = null
+  ): SchedulerPdfExportEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (promise != null) __obj.updateDynamic("promise")(promise)
+    __obj.asInstanceOf[SchedulerPdfExportEvent]
+  }
+}
+

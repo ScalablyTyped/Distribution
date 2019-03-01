@@ -62,3 +62,30 @@ trait Options extends js.Object {
   var showPreviousClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    buttonNextClass: java.lang.String = null,
+    buttonPreviousClass: java.lang.String = null,
+    carousel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentItemClass: java.lang.String = null,
+    hideNextClass: java.lang.String = null,
+    hidePreviousClass: java.lang.String = null,
+    itemClass: java.lang.String = null,
+    showNextClass: java.lang.String = null,
+    showPreviousClass: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (buttonNextClass != null) __obj.updateDynamic("buttonNextClass")(buttonNextClass)
+    if (buttonPreviousClass != null) __obj.updateDynamic("buttonPreviousClass")(buttonPreviousClass)
+    if (!js.isUndefined(carousel)) __obj.updateDynamic("carousel")(carousel)
+    if (currentItemClass != null) __obj.updateDynamic("currentItemClass")(currentItemClass)
+    if (hideNextClass != null) __obj.updateDynamic("hideNextClass")(hideNextClass)
+    if (hidePreviousClass != null) __obj.updateDynamic("hidePreviousClass")(hidePreviousClass)
+    if (itemClass != null) __obj.updateDynamic("itemClass")(itemClass)
+    if (showNextClass != null) __obj.updateDynamic("showNextClass")(showNextClass)
+    if (showPreviousClass != null) __obj.updateDynamic("showPreviousClass")(showPreviousClass)
+    __obj.asInstanceOf[Options]
+  }
+}
+

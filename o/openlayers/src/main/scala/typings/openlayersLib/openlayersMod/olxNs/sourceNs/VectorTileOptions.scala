@@ -32,3 +32,48 @@ trait VectorTileOptions extends js.Object {
   var wrapX: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object VectorTileOptions {
+  @scala.inline
+  def apply(
+    projection: openlayersLib.openlayersMod.ProjectionLike,
+    attributions: openlayersLib.openlayersMod.AttributionLike = null,
+    cacheSize: scala.Int | scala.Double = null,
+    format: openlayersLib.openlayersMod.formatNs.Feature = null,
+    logo: java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions = null,
+    overlaps: js.UndefOr[scala.Boolean] = js.undefined,
+    state: openlayersLib.openlayersMod.sourceNs.State = null,
+    tileClass: js.Function6[
+      /* n */ openlayersLib.openlayersMod.VectorTile, 
+      /* coords */ openlayersLib.openlayersMod.TileCoord, 
+      /* state */ openlayersLib.openlayersMod.TileNs.State, 
+      /* s */ java.lang.String, 
+      /* feature */ openlayersLib.openlayersMod.formatNs.Feature, 
+      /* type */ openlayersLib.openlayersMod.TileLoadFunctionType, 
+      _
+    ] = null,
+    tileGrid: openlayersLib.openlayersMod.tilegridNs.TileGrid = null,
+    tileLoadFunction: openlayersLib.openlayersMod.TileLoadFunctionType = null,
+    tileUrlFunction: openlayersLib.openlayersMod.TileUrlFunctionType = null,
+    url: java.lang.String = null,
+    urls: js.Array[java.lang.String] = null,
+    wrapX: js.UndefOr[scala.Boolean] = js.undefined
+  ): VectorTileOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
+    if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlaps)) __obj.updateDynamic("overlaps")(overlaps)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (tileClass != null) __obj.updateDynamic("tileClass")(tileClass)
+    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (tileUrlFunction != null) __obj.updateDynamic("tileUrlFunction")(tileUrlFunction)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    __obj.asInstanceOf[VectorTileOptions]
+  }
+}
+

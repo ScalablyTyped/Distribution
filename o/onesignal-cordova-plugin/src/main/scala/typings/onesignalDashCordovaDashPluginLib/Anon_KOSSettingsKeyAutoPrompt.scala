@@ -10,3 +10,13 @@ trait Anon_KOSSettingsKeyAutoPrompt extends js.Object {
   var kOSSettingsKeyInAppLaunchURL: scala.Boolean
 }
 
+object Anon_KOSSettingsKeyAutoPrompt {
+  @scala.inline
+  def apply(kOSSettingsKeyAutoPrompt: scala.Boolean, kOSSettingsKeyInAppLaunchURL: scala.Boolean): Anon_KOSSettingsKeyAutoPrompt = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kOSSettingsKeyAutoPrompt")(kOSSettingsKeyAutoPrompt)
+    __obj.updateDynamic("kOSSettingsKeyInAppLaunchURL")(kOSSettingsKeyInAppLaunchURL)
+    __obj.asInstanceOf[Anon_KOSSettingsKeyAutoPrompt]
+  }
+}
+

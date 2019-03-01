@@ -10,3 +10,13 @@ trait IMapChangedEventArgs[K] extends js.Object {
   var key: K
 }
 
+object IMapChangedEventArgs {
+  @scala.inline
+  def apply[K](collectionChange: CollectionChange, key: K): IMapChangedEventArgs[K] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collectionChange")(collectionChange)
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IMapChangedEventArgs[K]]
+  }
+}
+

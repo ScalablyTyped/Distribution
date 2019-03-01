@@ -11,3 +11,22 @@ trait StylesCreator extends js.Object {
   def create(theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme, name: java.lang.String): StyleRules[java.lang.String]
 }
 
+object StylesCreator {
+  @scala.inline
+  def apply(
+    create: js.Function2[
+      atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme, 
+      java.lang.String, 
+      StyleRules[java.lang.String]
+    ],
+    options: atMaterialDashUiCoreLib.Anon_Index,
+    themingEnabled: scala.Boolean
+  ): StylesCreator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("themingEnabled")(themingEnabled)
+    __obj.asInstanceOf[StylesCreator]
+  }
+}
+

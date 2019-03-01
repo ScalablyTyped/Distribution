@@ -24,3 +24,20 @@ trait GetAliasResult extends js.Object {
   val targetKeyId: java.lang.String
 }
 
+object GetAliasResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    id: java.lang.String,
+    targetKeyArn: java.lang.String,
+    targetKeyId: java.lang.String
+  ): GetAliasResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("targetKeyArn")(targetKeyArn)
+    __obj.updateDynamic("targetKeyId")(targetKeyId)
+    __obj.asInstanceOf[GetAliasResult]
+  }
+}
+

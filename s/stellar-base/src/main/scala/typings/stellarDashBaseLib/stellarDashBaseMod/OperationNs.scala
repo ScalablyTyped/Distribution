@@ -9,12 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object OperationNs extends js.Object {
   trait AccountMerge
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.AccountMerge] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.AccountMerge]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var destination: java.lang.String
   }
   
   trait AllowTrust
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.AllowTrust] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.AllowTrust]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var assetCode: java.lang.String
     var authorize: js.UndefOr[scala.Boolean]
     var trustor: java.lang.String
@@ -26,24 +28,28 @@ object OperationNs extends js.Object {
   }
   
   trait BumpSequence
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.BumpSequence] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.BumpSequence]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var bumpTo: java.lang.String
   }
   
   trait ChangeTrust
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.ChangeTrust] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.ChangeTrust]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var limit: java.lang.String
     var line: stellarDashBaseLib.stellarDashBaseMod.Asset
   }
   
   trait CreateAccount
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.CreateAccount] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.CreateAccount]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var destination: java.lang.String
     var startingBalance: java.lang.String
   }
   
   trait CreatePassiveOffer
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.CreatePassiveOffer] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.CreatePassiveOffer]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var amount: java.lang.String
     var buying: stellarDashBaseLib.stellarDashBaseMod.Asset
     var price: java.lang.String
@@ -52,15 +58,18 @@ object OperationNs extends js.Object {
   
   trait Inflation
     extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.Inflation]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation
   
   trait ManageData
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.ManageData] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.ManageData]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var name: java.lang.String
     var value: nodeLib.Buffer
   }
   
   trait ManageOffer
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.ManageOffer] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.ManageOffer]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var amount: java.lang.String
     var buying: stellarDashBaseLib.stellarDashBaseMod.Asset
     var offerId: java.lang.String
@@ -69,7 +78,8 @@ object OperationNs extends js.Object {
   }
   
   trait PathPayment
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.PathPayment] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.PathPayment]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var destAmount: java.lang.String
     var destAsset: stellarDashBaseLib.stellarDashBaseMod.Asset
     var destination: java.lang.String
@@ -79,7 +89,8 @@ object OperationNs extends js.Object {
   }
   
   trait Payment
-    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.Payment] {
+    extends BaseOperation[stellarDashBaseLib.stellarDashBaseMod.OperationTypeNs.Payment]
+       with stellarDashBaseLib.stellarDashBaseMod._Operation {
     var amount: java.lang.String
     var asset: stellarDashBaseLib.stellarDashBaseMod.Asset
     var destination: java.lang.String

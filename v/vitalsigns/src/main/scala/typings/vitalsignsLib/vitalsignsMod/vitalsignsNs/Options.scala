@@ -23,3 +23,18 @@ trait Options extends js.Object {
   var httpUnhealthy: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    autoCheck: scala.Double | scala.Boolean = null,
+    httpHealthy: scala.Int | scala.Double = null,
+    httpUnhealthy: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (autoCheck != null) __obj.updateDynamic("autoCheck")(autoCheck.asInstanceOf[js.Any])
+    if (httpHealthy != null) __obj.updateDynamic("httpHealthy")(httpHealthy.asInstanceOf[js.Any])
+    if (httpUnhealthy != null) __obj.updateDynamic("httpUnhealthy")(httpUnhealthy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -18,3 +18,32 @@ trait Loader extends js.Object {
   var request: java.lang.String
 }
 
+object Loader {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    normalExecuted: scala.Boolean,
+    options: js.Any,
+    path: java.lang.String,
+    pitchExecuted: scala.Boolean,
+    query: java.lang.String,
+    raw: java.lang.String,
+    request: java.lang.String,
+    normal: js.Function1[/* request */ java.lang.String, java.lang.String] = null,
+    pitch: js.Function1[/* request */ java.lang.String, java.lang.String] = null
+  ): Loader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("normalExecuted")(normalExecuted)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("pitchExecuted")(pitchExecuted)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("raw")(raw)
+    __obj.updateDynamic("request")(request)
+    if (normal != null) __obj.updateDynamic("normal")(normal)
+    if (pitch != null) __obj.updateDynamic("pitch")(pitch)
+    __obj.asInstanceOf[Loader]
+  }
+}
+

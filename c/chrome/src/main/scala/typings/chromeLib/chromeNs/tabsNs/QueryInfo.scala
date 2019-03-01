@@ -69,3 +69,42 @@ trait QueryInfo extends js.Object {
   ] = js.undefined
 }
 
+object QueryInfo {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    audible: js.UndefOr[scala.Boolean] = js.undefined,
+    autoDiscardable: js.UndefOr[scala.Boolean] = js.undefined,
+    currentWindow: js.UndefOr[scala.Boolean] = js.undefined,
+    discarded: js.UndefOr[scala.Boolean] = js.undefined,
+    highlighted: js.UndefOr[scala.Boolean] = js.undefined,
+    index: scala.Int | scala.Double = null,
+    lastFocusedWindow: js.UndefOr[scala.Boolean] = js.undefined,
+    muted: js.UndefOr[scala.Boolean] = js.undefined,
+    pinned: js.UndefOr[scala.Boolean] = js.undefined,
+    status: chromeLib.chromeLibStrings.loading | chromeLib.chromeLibStrings.complete = null,
+    title: java.lang.String = null,
+    url: java.lang.String | js.Array[java.lang.String] = null,
+    windowId: scala.Int | scala.Double = null,
+    windowType: chromeLib.chromeLibStrings.normal | chromeLib.chromeLibStrings.popup | chromeLib.chromeLibStrings.panel | chromeLib.chromeLibStrings.app | chromeLib.chromeLibStrings.devtools = null
+  ): QueryInfo = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible)
+    if (!js.isUndefined(autoDiscardable)) __obj.updateDynamic("autoDiscardable")(autoDiscardable)
+    if (!js.isUndefined(currentWindow)) __obj.updateDynamic("currentWindow")(currentWindow)
+    if (!js.isUndefined(discarded)) __obj.updateDynamic("discarded")(discarded)
+    if (!js.isUndefined(highlighted)) __obj.updateDynamic("highlighted")(highlighted)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastFocusedWindow)) __obj.updateDynamic("lastFocusedWindow")(lastFocusedWindow)
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (windowType != null) __obj.updateDynamic("windowType")(windowType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueryInfo]
+  }
+}
+

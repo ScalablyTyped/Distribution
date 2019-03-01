@@ -24,3 +24,24 @@ trait RsaOptions
   var text: java.lang.String
 }
 
+object RsaOptions {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    key: java.lang.String,
+    text: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[/* res */ aliDashAppLib.Anon_Text, scala.Unit] = null
+  ): RsaOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("text")(text)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[RsaOptions]
+  }
+}
+

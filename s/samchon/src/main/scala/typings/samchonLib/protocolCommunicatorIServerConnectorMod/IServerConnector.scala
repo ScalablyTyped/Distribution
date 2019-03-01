@@ -37,3 +37,26 @@ trait IServerConnector
   def connect(ip: java.lang.String, port: scala.Double): scala.Unit
 }
 
+object IServerConnector {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    connect: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    isConnected: js.Function0[scala.Boolean],
+    onClose: js.Function,
+    onConnect: js.Function,
+    replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
+    sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
+  ): IServerConnector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("connect")(connect)
+    __obj.updateDynamic("isConnected")(isConnected)
+    __obj.updateDynamic("onClose")(onClose)
+    __obj.updateDynamic("onConnect")(onConnect)
+    __obj.updateDynamic("replyData")(replyData)
+    __obj.updateDynamic("sendData")(sendData)
+    __obj.asInstanceOf[IServerConnector]
+  }
+}
+

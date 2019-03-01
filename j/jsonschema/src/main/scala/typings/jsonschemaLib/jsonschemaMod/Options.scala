@@ -14,3 +14,24 @@ trait Options extends js.Object {
   var throwError: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allowUnknownAttributes: js.UndefOr[scala.Boolean] = js.undefined,
+    base: java.lang.String = null,
+    propertyName: java.lang.String = null,
+    rewrite: RewriteFunction = null,
+    skipAttributes: js.Array[java.lang.String] = null,
+    throwError: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowUnknownAttributes)) __obj.updateDynamic("allowUnknownAttributes")(allowUnknownAttributes)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
+    if (rewrite != null) __obj.updateDynamic("rewrite")(rewrite)
+    if (skipAttributes != null) __obj.updateDynamic("skipAttributes")(skipAttributes)
+    if (!js.isUndefined(throwError)) __obj.updateDynamic("throwError")(throwError)
+    __obj.asInstanceOf[Options]
+  }
+}
+

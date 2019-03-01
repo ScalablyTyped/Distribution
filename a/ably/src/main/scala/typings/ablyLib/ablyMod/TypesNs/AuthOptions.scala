@@ -41,3 +41,42 @@ trait AuthOptions extends js.Object {
   var useTokenAuth: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AuthOptions {
+  @scala.inline
+  def apply(
+    authCallback: js.Function2[
+      /* data */ TokenParams, 
+      /* callback */ js.Function2[
+        /* error */ ErrorInfo | java.lang.String, 
+        /* tokenRequestOrDetails */ TokenDetails | TokenRequest | java.lang.String, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ] = null,
+    authHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    authMethod: HTTPMethods = null,
+    authParams: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    authUrl: java.lang.String = null,
+    clientId: java.lang.String = null,
+    key: java.lang.String = null,
+    queryTime: js.UndefOr[scala.Boolean] = js.undefined,
+    token: TokenDetails | java.lang.String = null,
+    tokenDetails: TokenDetails = null,
+    useTokenAuth: js.UndefOr[scala.Boolean] = js.undefined
+  ): AuthOptions = {
+    val __obj = js.Dynamic.literal()
+    if (authCallback != null) __obj.updateDynamic("authCallback")(authCallback)
+    if (authHeaders != null) __obj.updateDynamic("authHeaders")(authHeaders)
+    if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod.asInstanceOf[js.Any])
+    if (authParams != null) __obj.updateDynamic("authParams")(authParams)
+    if (authUrl != null) __obj.updateDynamic("authUrl")(authUrl)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(queryTime)) __obj.updateDynamic("queryTime")(queryTime)
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    if (tokenDetails != null) __obj.updateDynamic("tokenDetails")(tokenDetails)
+    if (!js.isUndefined(useTokenAuth)) __obj.updateDynamic("useTokenAuth")(useTokenAuth)
+    __obj.asInstanceOf[AuthOptions]
+  }
+}
+

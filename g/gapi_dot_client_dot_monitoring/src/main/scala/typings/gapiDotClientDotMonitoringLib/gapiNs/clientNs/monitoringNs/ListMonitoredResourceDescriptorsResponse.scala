@@ -15,3 +15,16 @@ trait ListMonitoredResourceDescriptorsResponse extends js.Object {
   var resourceDescriptors: js.UndefOr[js.Array[MonitoredResourceDescriptor]] = js.undefined
 }
 
+object ListMonitoredResourceDescriptorsResponse {
+  @scala.inline
+  def apply(
+    nextPageToken: java.lang.String = null,
+    resourceDescriptors: js.Array[MonitoredResourceDescriptor] = null
+  ): ListMonitoredResourceDescriptorsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (resourceDescriptors != null) __obj.updateDynamic("resourceDescriptors")(resourceDescriptors)
+    __obj.asInstanceOf[ListMonitoredResourceDescriptorsResponse]
+  }
+}
+

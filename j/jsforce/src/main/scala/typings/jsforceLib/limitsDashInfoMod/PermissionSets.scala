@@ -9,3 +9,14 @@ trait PermissionSets extends Limit {
   var CreateCustom: Limit
 }
 
+object PermissionSets {
+  @scala.inline
+  def apply(CreateCustom: Limit, Max: scala.Double, Remaining: scala.Double): PermissionSets = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CreateCustom")(CreateCustom)
+    __obj.updateDynamic("Max")(Max)
+    __obj.updateDynamic("Remaining")(Remaining)
+    __obj.asInstanceOf[PermissionSets]
+  }
+}
+

@@ -18,3 +18,22 @@ trait UsageReports extends js.Object {
   var warnings: js.UndefOr[js.Array[gapiDotClientDotAdminLib.Anon_Code]] = js.undefined
 }
 
+object UsageReports {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    usageReports: js.Array[UsageReport] = null,
+    warnings: js.Array[gapiDotClientDotAdminLib.Anon_Code] = null
+  ): UsageReports = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (usageReports != null) __obj.updateDynamic("usageReports")(usageReports)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[UsageReports]
+  }
+}
+

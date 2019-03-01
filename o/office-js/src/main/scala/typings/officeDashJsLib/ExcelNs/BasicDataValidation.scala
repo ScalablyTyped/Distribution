@@ -40,3 +40,18 @@ trait BasicDataValidation extends js.Object {
   var operator: DataValidationOperator | officeDashJsLib.officeDashJsLibStrings.Between | officeDashJsLib.officeDashJsLibStrings.NotBetween | officeDashJsLib.officeDashJsLibStrings.EqualTo | officeDashJsLib.officeDashJsLibStrings.NotEqualTo | officeDashJsLib.officeDashJsLibStrings.GreaterThan | officeDashJsLib.officeDashJsLibStrings.LessThan | officeDashJsLib.officeDashJsLibStrings.GreaterThanOrEqualTo | officeDashJsLib.officeDashJsLibStrings.LessThanOrEqualTo
 }
 
+object BasicDataValidation {
+  @scala.inline
+  def apply(
+    formula1: java.lang.String | scala.Double | Range,
+    operator: DataValidationOperator | officeDashJsLib.officeDashJsLibStrings.Between | officeDashJsLib.officeDashJsLibStrings.NotBetween | officeDashJsLib.officeDashJsLibStrings.EqualTo | officeDashJsLib.officeDashJsLibStrings.NotEqualTo | officeDashJsLib.officeDashJsLibStrings.GreaterThan | officeDashJsLib.officeDashJsLibStrings.LessThan | officeDashJsLib.officeDashJsLibStrings.GreaterThanOrEqualTo | officeDashJsLib.officeDashJsLibStrings.LessThanOrEqualTo,
+    formula2: java.lang.String | scala.Double | Range = null
+  ): BasicDataValidation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("formula1")(formula1.asInstanceOf[js.Any])
+    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (formula2 != null) __obj.updateDynamic("formula2")(formula2.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BasicDataValidation]
+  }
+}
+

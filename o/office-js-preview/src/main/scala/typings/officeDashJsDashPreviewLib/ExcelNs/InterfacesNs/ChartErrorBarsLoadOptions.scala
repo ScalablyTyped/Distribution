@@ -57,3 +57,24 @@ trait ChartErrorBarsLoadOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartErrorBarsLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    endStyleCap: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartErrorBarsFormatLoadOptions = null,
+    include: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartErrorBarsLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(endStyleCap)) __obj.updateDynamic("endStyleCap")(endStyleCap)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ChartErrorBarsLoadOptions]
+  }
+}
+

@@ -31,3 +31,20 @@ trait Options extends js.Object {
   var separator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    customReplacements: js.Array[js.Tuple2[java.lang.String, java.lang.String]] = null,
+    decamelize: js.UndefOr[scala.Boolean] = js.undefined,
+    lowercase: js.UndefOr[scala.Boolean] = js.undefined,
+    separator: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (customReplacements != null) __obj.updateDynamic("customReplacements")(customReplacements)
+    if (!js.isUndefined(decamelize)) __obj.updateDynamic("decamelize")(decamelize)
+    if (!js.isUndefined(lowercase)) __obj.updateDynamic("lowercase")(lowercase)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    __obj.asInstanceOf[Options]
+  }
+}
+

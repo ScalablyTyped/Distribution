@@ -19,3 +19,34 @@ trait RequestOptions extends js.Object {
   var qs: js.UndefOr[js.Any] = js.undefined
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    att: java.lang.String = null,
+    body: js.Any = null,
+    content_type: java.lang.String = null,
+    db: java.lang.String = null,
+    doc: java.lang.String = null,
+    encoding: java.lang.String = null,
+    headers: js.Any = null,
+    method: java.lang.String = null,
+    multipart: js.Array[_] = null,
+    path: java.lang.String = null,
+    qs: js.Any = null
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (att != null) __obj.updateDynamic("att")(att)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
+    if (db != null) __obj.updateDynamic("db")(db)
+    if (doc != null) __obj.updateDynamic("doc")(doc)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (multipart != null) __obj.updateDynamic("multipart")(multipart)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (qs != null) __obj.updateDynamic("qs")(qs)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

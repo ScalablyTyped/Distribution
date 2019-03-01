@@ -16,3 +16,20 @@ trait ImageConfiguration extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImageConfiguration {
+  @scala.inline
+  def apply(
+    imageType: java.lang.String = null,
+    kind: java.lang.String = null,
+    resourceId: java.lang.String = null,
+    url: java.lang.String = null
+  ): ImageConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (imageType != null) __obj.updateDynamic("imageType")(imageType)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ImageConfiguration]
+  }
+}
+

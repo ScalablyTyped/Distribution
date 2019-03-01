@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 object saneLibStrings {
   @js.native
-  sealed trait add extends js.Object
+  sealed trait add extends AllEventType
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all extends EventType
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change extends AllEventType
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete extends AllEventType
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends EventType
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait ready extends EventType
   
   @scala.inline
   def add: add = "add".asInstanceOf[add]

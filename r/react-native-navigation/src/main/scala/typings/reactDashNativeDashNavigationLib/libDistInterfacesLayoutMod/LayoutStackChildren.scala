@@ -12,3 +12,12 @@ trait LayoutStackChildren extends js.Object {
   var component: js.UndefOr[LayoutComponent[js.Object]] = js.undefined
 }
 
+object LayoutStackChildren {
+  @scala.inline
+  def apply(component: LayoutComponent[js.Object] = null): LayoutStackChildren = {
+    val __obj = js.Dynamic.literal()
+    if (component != null) __obj.updateDynamic("component")(component)
+    __obj.asInstanceOf[LayoutStackChildren]
+  }
+}
+

@@ -11,3 +11,14 @@ trait Feature extends GeoJSONObject {
   var properties: js.Any
 }
 
+object Feature {
+  @scala.inline
+  def apply(geometry: Geometry, properties: js.Any, `type`: java.lang.String, id: java.lang.String = null): Feature = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("geometry")(geometry)
+    __obj.updateDynamic("properties")(properties)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[Feature]
+  }
+}
+

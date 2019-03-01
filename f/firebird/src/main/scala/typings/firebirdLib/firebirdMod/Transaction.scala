@@ -95,3 +95,36 @@ trait Transaction extends js.Object {
   def startSync(): scala.Unit
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    commit: js.Function1[js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit], scala.Unit],
+    commitSync: js.Function0[scala.Unit],
+    inTransaction: scala.Boolean,
+    prepareSync: js.Function1[java.lang.String, FBStatement],
+    query: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ nodeLib.Error | scala.Null, /* res */ FBResult, scala.Unit], 
+      scala.Unit
+    ],
+    querySync: js.Function1[java.lang.String, scala.Unit],
+    rollback: js.Function1[js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit], scala.Unit],
+    rollbackSync: js.Function0[scala.Unit],
+    start: js.Function1[js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit], scala.Unit],
+    startSync: js.Function0[scala.Unit]
+  ): Transaction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("commitSync")(commitSync)
+    __obj.updateDynamic("inTransaction")(inTransaction)
+    __obj.updateDynamic("prepareSync")(prepareSync)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("querySync")(querySync)
+    __obj.updateDynamic("rollback")(rollback)
+    __obj.updateDynamic("rollbackSync")(rollbackSync)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("startSync")(startSync)
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

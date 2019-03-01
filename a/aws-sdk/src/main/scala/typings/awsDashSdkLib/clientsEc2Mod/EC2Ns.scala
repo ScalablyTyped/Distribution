@@ -535,11 +535,11 @@ object EC2Ns extends js.Object {
   
   trait AssociatedTargetNetwork extends js.Object {
     /**
-      *  The ID of the subnet. 
+      * The ID of the subnet.
       */
     var NetworkId: js.UndefOr[String] = js.undefined
     /**
-      *  The target network type. 
+      * The target network type.
       */
     var NetworkType: js.UndefOr[AssociatedNetworkType] = js.undefined
   }
@@ -1266,14 +1266,14 @@ object EC2Ns extends js.Object {
   
   trait CertificateAuthentication extends js.Object {
     /**
-      *  The ARN of the client certificate.  
+      * The ARN of the client certificate. 
       */
     var ClientRootCertificateChain: js.UndefOr[String] = js.undefined
   }
   
   trait CertificateAuthenticationRequest extends js.Object {
     /**
-      *  The ARN of the client certificate. The certificate must be signed by a certificate authority (CA) and it must be provisioned in AWS Certificate Manager (ACM). 
+      * The ARN of the client certificate. The certificate must be signed by a certificate authority (CA) and it must be provisioned in AWS Certificate Manager (ACM).
       */
     var ClientRootCertificateChainArn: js.UndefOr[String] = js.undefined
   }
@@ -1428,7 +1428,7 @@ object EC2Ns extends js.Object {
       */
     var ClientVpnEndpointId: js.UndefOr[String] = js.undefined
     /**
-      *  The common name associated with the client. This is either the name of the client certificate, or the Active Directory user name. 
+      * The common name associated with the client. This is either the name of the client certificate, or the Active Directory user name.
       */
     var CommonName: js.UndefOr[String] = js.undefined
     /**
@@ -1464,7 +1464,7 @@ object EC2Ns extends js.Object {
       */
     var Status: js.UndefOr[ClientVpnConnectionStatus] = js.undefined
     /**
-      *  The current date and time. 
+      * The current date and time.
       */
     var Timestamp: js.UndefOr[String] = js.undefined
     /**
@@ -1542,7 +1542,7 @@ object EC2Ns extends js.Object {
       */
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
-      *  The transport protocol used by the Client VPN endpoint. 
+      * The transport protocol used by the Client VPN endpoint.
       */
     var TransportProtocol: js.UndefOr[TransportProtocol] = js.undefined
     /**
@@ -1588,7 +1588,7 @@ object EC2Ns extends js.Object {
       */
     var TargetSubnet: js.UndefOr[String] = js.undefined
     /**
-      *  The route type. 
+      * The route type.
       */
     var Type: js.UndefOr[String] = js.undefined
   }
@@ -1804,7 +1804,7 @@ object EC2Ns extends js.Object {
       */
     var Description: js.UndefOr[String] = js.undefined
     /**
-      * The destination region to use in the PresignedUrl parameter of a snapshot copy operation. This parameter is only valid for specifying the destination region in a PresignedUrl parameter, where it is required. The snapshot copy is sent to the regional endpoint that you sent the HTTP request to (for example, ec2.us-east-1.amazonaws.com). With the AWS CLI, this is specified using the --region parameter or the default region in your AWS configuration file.
+      * The destination Region to use in the PresignedUrl parameter of a snapshot copy operation. This parameter is only valid for specifying the destination Region in a PresignedUrl parameter, where it is required. The snapshot copy is sent to the regional endpoint that you sent the HTTP request to (for example, ec2.us-east-1.amazonaws.com). With the AWS CLI, this is specified using the --region parameter or the default Region in your AWS configuration file.
       */
     var DestinationRegion: js.UndefOr[String] = js.undefined
     /**
@@ -1824,7 +1824,7 @@ object EC2Ns extends js.Object {
       */
     var PresignedUrl: js.UndefOr[String] = js.undefined
     /**
-      * The ID of the region that contains the snapshot to be copied.
+      * The ID of the Region that contains the snapshot to be copied.
       */
     var SourceRegion: String
     /**
@@ -1954,7 +1954,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * The ARN of the server certificate. For more information, see the AWS Certificate Manager User Guide .
+      * The ARN of the server certificate. For more information, see the AWS Certificate Manager User Guide.
       */
     var ServerCertificateArn: String
     /**
@@ -2206,7 +2206,7 @@ object EC2Ns extends js.Object {
       */
     var ValidFrom: js.UndefOr[DateTime] = js.undefined
     /**
-      * The end date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new EC2 Fleet requests are placed or able to fulfill the request. The default end date is 7 days from the current date.
+      * The end date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new EC2 Fleet requests are placed or able to fulfill the request. If no value is specified, the request remains until you cancel it.
       */
     var ValidUntil: js.UndefOr[DateTime] = js.undefined
   }
@@ -2992,22 +2992,22 @@ object EC2Ns extends js.Object {
   
   trait CreateVolumePermission extends js.Object {
     /**
-      * The specific group that is to be added or removed from a volume's list of create volume permissions.
+      * The group to be added or removed. The possible value is all.
       */
     var Group: js.UndefOr[PermissionGroup] = js.undefined
     /**
-      * The specific AWS account ID that is to be added or removed from a volume's list of create volume permissions.
+      * The AWS account ID to be added or removed.
       */
     var UserId: js.UndefOr[String] = js.undefined
   }
   
   trait CreateVolumePermissionModifications extends js.Object {
     /**
-      * Adds a specific AWS account ID or group to a volume's list of create volume permissions.
+      * Adds the specified AWS account ID or group to the list.
       */
     var Add: js.UndefOr[CreateVolumePermissionList] = js.undefined
     /**
-      * Removes a specific AWS account ID or group from a volume's list of create volume permissions.
+      * Removes the specified AWS account ID or group from the list.
       */
     var Remove: js.UndefOr[CreateVolumePermissionList] = js.undefined
   }
@@ -3026,7 +3026,7 @@ object EC2Ns extends js.Object {
       */
     var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
-      * The number of I/O operations per second (IOPS) to provision for the volume, with a maximum ratio of 50 IOPS/GiB. Range is 100 to 64,000 IOPS for volumes in most regions. Maximum IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. This parameter is valid only for Provisioned IOPS SSD (io1) volumes.
+      * The number of I/O operations per second (IOPS) to provision for the volume, with a maximum ratio of 50 IOPS/GiB. Range is 100 to 64,000 IOPS for volumes in most Regions. Maximum IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. This parameter is valid only for Provisioned IOPS SSD (io1) volumes.
       */
     var Iops: js.UndefOr[Integer] = js.undefined
     /**
@@ -3046,7 +3046,7 @@ object EC2Ns extends js.Object {
       */
     var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
     /**
-      * The volume type. This can be gp2 for General Purpose SSD, io1 for Provisioned IOPS SSD, st1 for Throughput Optimized HDD, sc1 for Cold HDD, or standard for Magnetic volumes. Defaults: If no volume type is specified, the default is standard in us-east-1, eu-west-1, eu-central-1, us-west-2, us-west-1, sa-east-1, ap-northeast-1, ap-northeast-2, ap-southeast-1, ap-southeast-2, ap-south-1, us-gov-west-1, and cn-north-1. In all other regions, EBS defaults to gp2.
+      * The volume type. This can be gp2 for General Purpose SSD, io1 for Provisioned IOPS SSD, st1 for Throughput Optimized HDD, sc1 for Cold HDD, or standard for Magnetic volumes. Defaults: If no volume type is specified, the default is standard in us-east-1, eu-west-1, eu-central-1, us-west-2, us-west-1, sa-east-1, ap-northeast-1, ap-northeast-2, ap-southeast-1, ap-southeast-2, ap-south-1, us-gov-west-1, and cn-north-1. In all other Regions, EBS defaults to gp2.
       */
     var VolumeType: js.UndefOr[VolumeType] = js.undefined
   }
@@ -3099,7 +3099,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * (Gateway endpoint) A policy to attach to the endpoint that controls access to the service. The policy must be in valid JSON format. If this parameter is not specified, we attach a default policy that allows full access to the service.
+      * A policy to attach to the endpoint that controls access to the service. The policy must be in valid JSON format. If this parameter is not specified, we attach a default policy that allows full access to the service.
       */
     var PolicyDocument: js.UndefOr[String] = js.undefined
     /**
@@ -5125,7 +5125,7 @@ object EC2Ns extends js.Object {
     /**
       * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. This value can be between 5 and 1000. You cannot specify this parameter and the instance IDs parameter in the same call.
       */
-    var MaxResults: js.UndefOr[Integer] = js.undefined
+    var MaxResults: js.UndefOr[DescribeInstanceCreditSpecificationsMaxResults] = js.undefined
     /**
       * The token to retrieve the next page of results.
       */
@@ -5149,7 +5149,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * One or more filters.    availability-zone - The Availability Zone of the instance.    event.code - The code for the scheduled event (instance-reboot | system-reboot | system-maintenance | instance-retirement | instance-stop).    event.description - A description of the event.    event.not-after - The latest end time for the scheduled event (for example, 2014-09-15T17:15:20.000Z).    event.not-before - The earliest start time for the scheduled event (for example, 2014-09-15T17:15:20.000Z).    instance-state-code - The code for the instance state, as a 16-bit unsigned integer. The high byte is used for internal purposes and should be ignored. The low byte is set based on the state represented. The valid values are 0 (pending), 16 (running), 32 (shutting-down), 48 (terminated), 64 (stopping), and 80 (stopped).    instance-state-name - The state of the instance (pending | running | shutting-down | terminated | stopping | stopped).    instance-status.reachability - Filters on instance status where the name is reachability (passed | failed | initializing | insufficient-data).    instance-status.status - The status of the instance (ok | impaired | initializing | insufficient-data | not-applicable).    system-status.reachability - Filters on system status where the name is reachability (passed | failed | initializing | insufficient-data).    system-status.status - The system status of the instance (ok | impaired | initializing | insufficient-data | not-applicable).  
+      * One or more filters.    availability-zone - The Availability Zone of the instance.    event.code - The code for the scheduled event (instance-reboot | system-reboot | system-maintenance | instance-retirement | instance-stop).    event.description - A description of the event.    event.instance-event-id - The ID of the event whose date and time you are modifying.    event.not-after - The latest end time for the scheduled event (for example, 2014-09-15T17:15:20.000Z).    event.not-before - The earliest start time for the scheduled event (for example, 2014-09-15T17:15:20.000Z).    event.not-before-deadline - The deadline for starting the event (for example, 2014-09-15T17:15:20.000Z).    instance-state-code - The code for the instance state, as a 16-bit unsigned integer. The high byte is used for internal purposes and should be ignored. The low byte is set based on the state represented. The valid values are 0 (pending), 16 (running), 32 (shutting-down), 48 (terminated), 64 (stopping), and 80 (stopped).    instance-state-name - The state of the instance (pending | running | shutting-down | terminated | stopping | stopped).    instance-status.reachability - Filters on instance status where the name is reachability (passed | failed | initializing | insufficient-data).    instance-status.status - The status of the instance (ok | impaired | initializing | insufficient-data | not-applicable).    system-status.reachability - Filters on system status where the name is reachability (passed | failed | initializing | insufficient-data).    system-status.status - The system status of the instance (ok | impaired | initializing | insufficient-data | not-applicable).  
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -6012,11 +6012,11 @@ object EC2Ns extends js.Object {
   
   trait DescribeSnapshotAttributeResult extends js.Object {
     /**
-      * A list of permissions for creating volumes from the snapshot.
+      * The users and groups that have the permissions for creating volumes from the snapshot.
       */
     var CreateVolumePermissions: js.UndefOr[CreateVolumePermissionList] = js.undefined
     /**
-      * A list of product codes.
+      * The product codes.
       */
     var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
     /**
@@ -6043,7 +6043,7 @@ object EC2Ns extends js.Object {
       */
     var NextToken: js.UndefOr[String] = js.undefined
     /**
-      * Returns the snapshots owned by the specified owner. Multiple owners can be specified.
+      * Describes the snapshots owned by one or more owners.
       */
     var OwnerIds: js.UndefOr[OwnerStringList] = js.undefined
     /**
@@ -6051,7 +6051,7 @@ object EC2Ns extends js.Object {
       */
     var RestorableByUserIds: js.UndefOr[RestorableByStringList] = js.undefined
     /**
-      * One or more snapshot IDs. Default: Describes snapshots for which you have launch permissions.
+      * One or more snapshot IDs. Default: Describes the snapshots for which you have create volume permissions.
       */
     var SnapshotIds: js.UndefOr[SnapshotIdStringList] = js.undefined
   }
@@ -7426,11 +7426,11 @@ object EC2Ns extends js.Object {
       */
     var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
     /**
-      * Indicates whether the EBS volume is encrypted. Encrypted volumes can only be attached to instances that support Amazon EBS encryption.  If you are creating a volume from a snapshot, you cannot specify an encryption value. This is because only blank volumes can be encrypted on creation. If you are creating a snapshot from an existing EBS volume, you cannot specify an encryption value that differs from that of the EBS volume. We recommend that you omit the encryption value from the block device mappings when creating an image from an instance.
+      * Indicates whether the EBS volume is encrypted. Encrypted volumes can only be attached to instances that support Amazon EBS encryption. If you are creating a volume from a snapshot, you cannot specify an encryption value. This is because only blank volumes can be encrypted on creation. If you are creating a snapshot from an existing EBS volume, you cannot specify an encryption value that differs from that of the EBS volume. We recommend that you omit the encryption value from the block device mappings when creating an image from an instance.
       */
     var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
-      * The number of I/O operations per second (IOPS) that the volume supports. For io1, this represents the number of IOPS that are provisioned for the volume. For gp2, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-16,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most Regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
+      * The number of I/O operations per second (IOPS) that the volume supports. For io1 volumes, this represents the number of IOPS that are provisioned for the volume. For gp2 volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-16,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes, in most Regions. The maximum IOPS for io1 of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
       */
     var Iops: js.UndefOr[Integer] = js.undefined
     /**
@@ -7667,7 +7667,7 @@ object EC2Ns extends js.Object {
       */
     var EventDescription: js.UndefOr[String] = js.undefined
     /**
-      * The event. The following are the error events:    iamFleetRoleInvalid - The Spot Fleet did not have the required permissions either to launch or terminate an instance.    launchSpecTemporarilyBlacklisted - The configuration is not valid and several attempts to launch instances have failed. For more information, see the description of the event.    spotFleetRequestConfigurationInvalid - The configuration is not valid. For more information, see the description of the event.    spotInstanceCountLimitExceeded - You've reached the limit on the number of Spot Instances that you can launch.   The following are the fleetRequestChange events:    active - The Spot Fleet has been validated and Amazon EC2 is attempting to maintain the target number of running Spot Instances.    cancelled - The Spot Fleet is canceled and has no running Spot Instances. The Spot Fleet will be deleted two days after its instances were terminated.    cancelled_running - The Spot Fleet is canceled and does not launch additional Spot Instances. Existing Spot Instances continue to run until they are interrupted or terminated.    cancelled_terminating - The Spot Fleet is canceled and its Spot Instances are terminating.    expired - The Spot Fleet request has expired. A subsequent event indicates that the instances were terminated, if the request was created with TerminateInstancesWithExpiration set.    modify_in_progress - A request to modify the Spot Fleet request was accepted and is in progress.    modify_successful - The Spot Fleet request was modified.    price_update - The price for a launch configuration was adjusted because it was too high. This change is permanent.    submitted - The Spot Fleet request is being evaluated and Amazon EC2 is preparing to launch the target number of Spot Instances.   The following are the instanceChange events:    launched - A request was fulfilled and a new instance was launched.    terminated - An instance was terminated by the user.   The following are the Information events:    launchSpecUnusable - The price in a launch specification is not valid because it is below the Spot price or the Spot price is above the On-Demand price.    fleetProgressHalted - The price in every launch specification is not valid. A launch specification might become valid if the Spot price changes.  
+      * The event. The following are the error events:    iamFleetRoleInvalid - The Spot Fleet did not have the required permissions either to launch or terminate an instance.    spotFleetRequestConfigurationInvalid - The configuration is not valid. For more information, see the description of the event.    spotInstanceCountLimitExceeded - You've reached the limit on the number of Spot Instances that you can launch.   The following are the fleetRequestChange events:    active - The Spot Fleet has been validated and Amazon EC2 is attempting to maintain the target number of running Spot Instances.    cancelled - The Spot Fleet is canceled and has no running Spot Instances. The Spot Fleet will be deleted two days after its instances were terminated.    cancelled_running - The Spot Fleet is canceled and does not launch additional Spot Instances. Existing Spot Instances continue to run until they are interrupted or terminated.    cancelled_terminating - The Spot Fleet is canceled and its Spot Instances are terminating.    expired - The Spot Fleet request has expired. A subsequent event indicates that the instances were terminated, if the request was created with TerminateInstancesWithExpiration set.    modify_in_progress - A request to modify the Spot Fleet request was accepted and is in progress.    modify_successful - The Spot Fleet request was modified.    price_update - The price for a launch configuration was adjusted because it was too high. This change is permanent.    submitted - The Spot Fleet request is being evaluated and Amazon EC2 is preparing to launch the target number of Spot Instances.   The following are the instanceChange events:    launched - A request was fulfilled and a new instance was launched.    terminated - An instance was terminated by the user.   The following are the Information events:    launchSpecTemporarilyBlacklisted - The configuration is not valid and several attempts to launch instances have failed. For more information, see the description of the event.    launchSpecUnusable - The price in a launch specification is not valid because it is below the Spot price or the Spot price is above the On-Demand price.    fleetProgressHalted - The price in every launch specification is not valid. A launch specification might become valid if the Spot price changes.  
       */
     var EventSubType: js.UndefOr[String] = js.undefined
     /**
@@ -8897,7 +8897,7 @@ object EC2Ns extends js.Object {
   
   trait ImportClientVpnClientCertificateRevocationListRequest extends js.Object {
     /**
-      * The client certificate revocation list file. For more information, see Generate a Client Certificate Revocation List in the AWS Client VPN Admin Guide.
+      * The client certificate revocation list file. For more information, see Generate a Client Certificate Revocation List in the AWS Client VPN Administrator Guide.
       */
     var CertificateRevocationList: String
     /**
@@ -9893,7 +9893,7 @@ object EC2Ns extends js.Object {
   
   trait InstanceState extends js.Object {
     /**
-      * The low byte represents the state. The high byte is used for internal purposes and should be ignored.    0 : pending     16 : running     32 : shutting-down     48 : terminated     64 : stopping     80 : stopped   
+      * The state of the instance as a 16-bit unsigned integer.  The high byte is all of the bits between 2^8 and (2^16)-1, which equals decimal values between 256 and 65,535. These numerical values are used for internal purposes and should be ignored. The low byte is all of the bits between 2^0 and (2^8)-1, which equals decimal values between 0 and 255.  The valid values for instance-state-code will all be in the range of the low byte and they are:    0 : pending     16 : running     32 : shutting-down     48 : terminated     64 : stopping     80 : stopped    You can ignore the high byte value by zeroing out all of the bits above 2^8 or 256 in decimal.
       */
     var Code: js.UndefOr[Integer] = js.undefined
     /**
@@ -9969,6 +9969,10 @@ object EC2Ns extends js.Object {
       */
     var Description: js.UndefOr[String] = js.undefined
     /**
+      * The ID of the event.
+      */
+    var InstanceEventId: js.UndefOr[InstanceEventId] = js.undefined
+    /**
       * The latest scheduled end time for the event.
       */
     var NotAfter: js.UndefOr[DateTime] = js.undefined
@@ -9976,6 +9980,10 @@ object EC2Ns extends js.Object {
       * The earliest scheduled start time for the event.
       */
     var NotBefore: js.UndefOr[DateTime] = js.undefined
+    /**
+      * The deadline for starting the event.
+      */
+    var NotBeforeDeadline: js.UndefOr[DateTime] = js.undefined
   }
   
   trait InstanceStatusSummary extends js.Object {
@@ -11189,6 +11197,29 @@ object EC2Ns extends js.Object {
     var UnsuccessfulInstanceCreditSpecifications: js.UndefOr[UnsuccessfulInstanceCreditSpecificationSet] = js.undefined
   }
   
+  trait ModifyInstanceEventStartTimeRequest extends js.Object {
+    /**
+      * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation. 
+      */
+    var DryRun: js.UndefOr[Boolean] = js.undefined
+    /**
+      * The ID of the event whose date and time you are modifying.
+      */
+    var InstanceEventId: String
+    /**
+      * The ID of the instance with the scheduled event.
+      */
+    var InstanceId: String
+    /**
+      * The new date and time when the event will take place.
+      */
+    var NotBefore: DateTime
+  }
+  
+  trait ModifyInstanceEventStartTimeResult extends js.Object {
+    var Event: js.UndefOr[InstanceStatusEvent] = js.undefined
+  }
+  
   trait ModifyInstancePlacementRequest extends js.Object {
     /**
       * The affinity setting for the instance.
@@ -11515,7 +11546,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * (Gateway endpoint) A policy document to attach to the endpoint. The policy must be in valid JSON format.
+      * A policy to attach to the endpoint that controls access to the service. The policy must be in valid JSON format. If this parameter is not specified, we attach a default policy that allows full access to the service.
       */
     var PolicyDocument: js.UndefOr[String] = js.undefined
     /**
@@ -15117,7 +15148,7 @@ object EC2Ns extends js.Object {
       */
     var ValidFrom: js.UndefOr[DateTime] = js.undefined
     /**
-      * The end date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new Spot Instance requests are placed or able to fulfill the request. The default end date is 7 days from the current date.
+      * The end date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new Spot Instance requests are placed or able to fulfill the request. If no value is specified, the Spot Fleet request remains until you cancel it.
       */
     var ValidUntil: js.UndefOr[DateTime] = js.undefined
   }
@@ -16985,7 +17016,7 @@ object EC2Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ CopyImageResult, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[CopyImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3. You can copy the snapshot within the same region or from one region to another. You can use the snapshot to create EBS volumes or Amazon Machine Images (AMIs). The snapshot is copied to the regional endpoint that you send the HTTP request to. Copies of encrypted EBS snapshots remain encrypted. Copies of unencrypted snapshots remain unencrypted, unless the Encrypted flag is specified during the snapshot copy operation. By default, encrypted snapshot copies use the default AWS Key Management Service (AWS KMS) customer master key (CMK); however, you can specify a non-default CMK with the KmsKeyId parameter. To copy an encrypted snapshot that has been shared from another account, you must have permissions for the CMK used to encrypt the snapshot. Snapshots created by copying another snapshot have an arbitrary volume ID that should not be used for any purpose. For more information, see Copying an Amazon EBS Snapshot in the Amazon Elastic Compute Cloud User Guide.
+      * Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3. You can copy the snapshot within the same Region or from one Region to another. You can use the snapshot to create EBS volumes or Amazon Machine Images (AMIs). The snapshot is copied to the regional endpoint that you send the HTTP request to. Copies of encrypted EBS snapshots remain encrypted. Copies of unencrypted snapshots remain unencrypted, unless the Encrypted flag is specified during the snapshot copy operation. By default, encrypted snapshot copies use the default AWS Key Management Service (AWS KMS) customer master key (CMK); however, you can specify a non-default CMK with the KmsKeyId parameter. To copy an encrypted snapshot that has been shared from another account, you must have permissions for the CMK used to encrypt the snapshot. Snapshots created by copying another snapshot have an arbitrary volume ID that should not be used for any purpose. For more information, see Copying an Amazon EBS Snapshot in the Amazon Elastic Compute Cloud User Guide.
       */
     def copySnapshot(): awsDashSdkLib.libRequestMod.Request[CopySnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def copySnapshot(
@@ -16996,7 +17027,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CopySnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3. You can copy the snapshot within the same region or from one region to another. You can use the snapshot to create EBS volumes or Amazon Machine Images (AMIs). The snapshot is copied to the regional endpoint that you send the HTTP request to. Copies of encrypted EBS snapshots remain encrypted. Copies of unencrypted snapshots remain unencrypted, unless the Encrypted flag is specified during the snapshot copy operation. By default, encrypted snapshot copies use the default AWS Key Management Service (AWS KMS) customer master key (CMK); however, you can specify a non-default CMK with the KmsKeyId parameter. To copy an encrypted snapshot that has been shared from another account, you must have permissions for the CMK used to encrypt the snapshot. Snapshots created by copying another snapshot have an arbitrary volume ID that should not be used for any purpose. For more information, see Copying an Amazon EBS Snapshot in the Amazon Elastic Compute Cloud User Guide.
+      * Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3. You can copy the snapshot within the same Region or from one Region to another. You can use the snapshot to create EBS volumes or Amazon Machine Images (AMIs). The snapshot is copied to the regional endpoint that you send the HTTP request to. Copies of encrypted EBS snapshots remain encrypted. Copies of unencrypted snapshots remain unencrypted, unless the Encrypted flag is specified during the snapshot copy operation. By default, encrypted snapshot copies use the default AWS Key Management Service (AWS KMS) customer master key (CMK); however, you can specify a non-default CMK with the KmsKeyId parameter. To copy an encrypted snapshot that has been shared from another account, you must have permissions for the CMK used to encrypt the snapshot. Snapshots created by copying another snapshot have an arbitrary volume ID that should not be used for any purpose. For more information, see Copying an Amazon EBS Snapshot in the Amazon Elastic Compute Cloud User Guide.
       */
     def copySnapshot(params: CopySnapshotRequest): awsDashSdkLib.libRequestMod.Request[CopySnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def copySnapshot(
@@ -17513,7 +17544,7 @@ object EC2Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a listing for Amazon EC2 Standard Reserved Instances to be sold in the Reserved Instance Marketplace. You can submit one Standard Reserved Instance listing at a time. To get a list of your Standard Reserved Instances, you can use the DescribeReservedInstances operation.  Only Standard Reserved Instances with a capacity reservation can be sold in the Reserved Instance Marketplace. Convertible Reserved Instances and Standard Reserved Instances with a regional benefit cannot be sold.  The Reserved Instance Marketplace matches sellers who want to resell Standard Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances. To sell your Standard Reserved Instances, you must first register as a seller in the Reserved Instance Marketplace. After completing the registration process, you can create a Reserved Instance Marketplace listing of some or all of your Standard Reserved Instances, and specify the upfront price to receive for them. Your Standard Reserved Instance listings then become available for purchase. To view the details of your Standard Reserved Instance listing, you can use the DescribeReservedInstancesListings operation. For more information, see Reserved Instance Marketplace in the Amazon Elastic Compute Cloud User Guide.
+      * Creates a listing for Amazon EC2 Standard Reserved Instances to be sold in the Reserved Instance Marketplace. You can submit one Standard Reserved Instance listing at a time. To get a list of your Standard Reserved Instances, you can use the DescribeReservedInstances operation.  Only Standard Reserved Instances can be sold in the Reserved Instance Marketplace. Convertible Reserved Instances cannot be sold.  The Reserved Instance Marketplace matches sellers who want to resell Standard Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances. To sell your Standard Reserved Instances, you must first register as a seller in the Reserved Instance Marketplace. After completing the registration process, you can create a Reserved Instance Marketplace listing of some or all of your Standard Reserved Instances, and specify the upfront price to receive for them. Your Standard Reserved Instance listings then become available for purchase. To view the details of your Standard Reserved Instance listing, you can use the DescribeReservedInstancesListings operation. For more information, see Reserved Instance Marketplace in the Amazon Elastic Compute Cloud User Guide.
       */
     def createReservedInstancesListing(): awsDashSdkLib.libRequestMod.Request[CreateReservedInstancesListingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createReservedInstancesListing(
@@ -17524,7 +17555,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateReservedInstancesListingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a listing for Amazon EC2 Standard Reserved Instances to be sold in the Reserved Instance Marketplace. You can submit one Standard Reserved Instance listing at a time. To get a list of your Standard Reserved Instances, you can use the DescribeReservedInstances operation.  Only Standard Reserved Instances with a capacity reservation can be sold in the Reserved Instance Marketplace. Convertible Reserved Instances and Standard Reserved Instances with a regional benefit cannot be sold.  The Reserved Instance Marketplace matches sellers who want to resell Standard Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances. To sell your Standard Reserved Instances, you must first register as a seller in the Reserved Instance Marketplace. After completing the registration process, you can create a Reserved Instance Marketplace listing of some or all of your Standard Reserved Instances, and specify the upfront price to receive for them. Your Standard Reserved Instance listings then become available for purchase. To view the details of your Standard Reserved Instance listing, you can use the DescribeReservedInstancesListings operation. For more information, see Reserved Instance Marketplace in the Amazon Elastic Compute Cloud User Guide.
+      * Creates a listing for Amazon EC2 Standard Reserved Instances to be sold in the Reserved Instance Marketplace. You can submit one Standard Reserved Instance listing at a time. To get a list of your Standard Reserved Instances, you can use the DescribeReservedInstances operation.  Only Standard Reserved Instances can be sold in the Reserved Instance Marketplace. Convertible Reserved Instances cannot be sold.  The Reserved Instance Marketplace matches sellers who want to resell Standard Reserved Instance capacity that they no longer need with buyers who want to purchase additional capacity. Reserved Instances bought and sold through the Reserved Instance Marketplace work like any other Reserved Instances. To sell your Standard Reserved Instances, you must first register as a seller in the Reserved Instance Marketplace. After completing the registration process, you can create a Reserved Instance Marketplace listing of some or all of your Standard Reserved Instances, and specify the upfront price to receive for them. Your Standard Reserved Instance listings then become available for purchase. To view the details of your Standard Reserved Instance listing, you can use the DescribeReservedInstancesListings operation. For more information, see Reserved Instance Marketplace in the Amazon Elastic Compute Cloud User Guide.
       */
     def createReservedInstancesListing(params: CreateReservedInstancesListingRequest): awsDashSdkLib.libRequestMod.Request[CreateReservedInstancesListingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createReservedInstancesListing(
@@ -20172,7 +20203,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotAttributeResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes one or more of the EBS snapshots available to you. Available snapshots include public snapshots available for any AWS account to launch, private snapshots that you own, and private snapshots owned by another AWS account but for which you've been given explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All AWS accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific AWS account.    implicit: An AWS account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be modified by specifying snapshot IDs, snapshot owners, or AWS accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the AWS account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify AWS account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, you can paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSnapshots request to retrieve the remaining results. For more information about EBS snapshots, see Amazon EBS Snapshots in the Amazon Elastic Compute Cloud User Guide.
+      * Describes one or more of the EBS snapshots available to you. Available snapshots include public snapshots available for use by any AWS account, private snapshots that you own, and private snapshots owned by another AWS account for which you've been given explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All AWS accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific AWS account.    implicit: An AWS account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be modified by specifying snapshot IDs, snapshot owners, or AWS accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the AWS account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify AWS account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, you can paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSnapshots request to retrieve the remaining results. For more information about EBS snapshots, see Amazon EBS Snapshots in the Amazon Elastic Compute Cloud User Guide.
       */
     def describeSnapshots(): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeSnapshots(
@@ -20183,7 +20214,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes one or more of the EBS snapshots available to you. Available snapshots include public snapshots available for any AWS account to launch, private snapshots that you own, and private snapshots owned by another AWS account but for which you've been given explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All AWS accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific AWS account.    implicit: An AWS account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be modified by specifying snapshot IDs, snapshot owners, or AWS accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the AWS account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify AWS account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, you can paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSnapshots request to retrieve the remaining results. For more information about EBS snapshots, see Amazon EBS Snapshots in the Amazon Elastic Compute Cloud User Guide.
+      * Describes one or more of the EBS snapshots available to you. Available snapshots include public snapshots available for use by any AWS account, private snapshots that you own, and private snapshots owned by another AWS account for which you've been given explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All AWS accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific AWS account.    implicit: An AWS account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be modified by specifying snapshot IDs, snapshot owners, or AWS accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the AWS account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify AWS account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, you can paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSnapshots request to retrieve the remaining results. For more information about EBS snapshots, see Amazon EBS Snapshots in the Amazon Elastic Compute Cloud User Guide.
       */
     def describeSnapshots(params: DescribeSnapshotsRequest): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeSnapshots(
@@ -22010,6 +22041,29 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyInstanceCreditSpecificationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Modifies the start time for a scheduled Amazon EC2 instance event.
+      */
+    def modifyInstanceEventStartTime(): awsDashSdkLib.libRequestMod.Request[ModifyInstanceEventStartTimeResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def modifyInstanceEventStartTime(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyInstanceEventStartTimeResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyInstanceEventStartTimeResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Modifies the start time for a scheduled Amazon EC2 instance event.
+      */
+    def modifyInstanceEventStartTime(params: ModifyInstanceEventStartTimeRequest): awsDashSdkLib.libRequestMod.Request[ModifyInstanceEventStartTimeResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def modifyInstanceEventStartTime(
+      params: ModifyInstanceEventStartTimeRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyInstanceEventStartTimeResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyInstanceEventStartTimeResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Modifies the placement attributes for a specified instance. You can do the following:   Modify the affinity between an instance and a Dedicated Host. When affinity is set to host and the instance is not associated with a specific Dedicated Host, the next time the instance is launched, it is automatically associated with the host on which it lands. If the instance is restarted or rebooted, this relationship persists.   Change the Dedicated Host with which an instance is associated.   Change the instance tenancy of an instance from host to dedicated, or from dedicated to host.   Move an instance to or from a placement group.   At least one attribute for affinity, host ID, tenancy, or placement group name must be specified in the request. Affinity and tenancy can be modified in the same request. To modify the host ID, tenancy, placement group, or partition for an instance, the instance must be in the stopped state.
       */
@@ -24535,7 +24589,7 @@ object EC2Ns extends js.Object {
       */
     var Encrypted: js.UndefOr[Boolean] = js.undefined
     /**
-      * The number of I/O operations per second (IOPS) that the volume supports. For Provisioned IOPS SSD volumes, this represents the number of IOPS that are provisioned for the volume. For General Purpose SSD volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-16,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
+      * The number of I/O operations per second (IOPS) that the volume supports. For Provisioned IOPS SSD volumes, this represents the number of IOPS that are provisioned for the volume. For General Purpose SSD volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-16,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes, in most Regions. The maximum IOPS for io1 of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
       */
     var Iops: js.UndefOr[Integer] = js.undefined
     /**
@@ -25156,87 +25210,373 @@ object EC2Ns extends js.Object {
     var ByoipCidr: js.UndefOr[ByoipCidr] = js.undefined
   }
   
+  trait _AccountAttributeName extends js.Object
+  
+  trait _ActivityStatus extends js.Object
+  
+  trait _Affinity extends js.Object
+  
+  trait _AllocationState extends js.Object
+  
+  trait _AllocationStrategy extends js.Object
+  
+  trait _ArchitectureValues extends js.Object
+  
+  trait _AssociationStatusCode extends js.Object
+  
+  trait _AttachmentStatus extends js.Object
+  
+  trait _AutoAcceptSharedAttachmentsValue extends js.Object
+  
+  trait _AutoPlacement extends js.Object
+  
+  trait _AvailabilityZoneState extends js.Object
+  
+  trait _BatchState extends js.Object
+  
+  trait _BundleTaskState extends js.Object
+  
+  trait _ByoipCidrState extends js.Object
+  
+  trait _CancelBatchErrorCode extends js.Object
+  
+  trait _CancelSpotInstanceRequestState extends js.Object
+  
+  trait _CapacityReservationInstancePlatform extends js.Object
+  
+  trait _CapacityReservationPreference extends js.Object
+  
+  trait _CapacityReservationState extends js.Object
+  
+  trait _CapacityReservationTenancy extends js.Object
+  
+  trait _ClientCertificateRevocationListStatusCode extends js.Object
+  
+  trait _ClientVpnAuthenticationType extends js.Object
+  
+  trait _ClientVpnAuthorizationRuleStatusCode extends js.Object
+  
+  trait _ClientVpnConnectionStatusCode extends js.Object
+  
+  trait _ClientVpnEndpointStatusCode extends js.Object
+  
+  trait _ClientVpnRouteStatusCode extends js.Object
+  
+  trait _ConnectionNotificationState extends js.Object
+  
+  trait _ConversionTaskState extends js.Object
+  
+  trait _DatafeedSubscriptionState extends js.Object
+  
+  trait _DefaultRouteTableAssociationValue extends js.Object
+  
+  trait _DefaultRouteTablePropagationValue extends js.Object
+  
+  trait _DefaultTargetCapacityType extends js.Object
+  
+  trait _DeleteFleetErrorCode extends js.Object
+  
+  trait _DeviceType extends js.Object
+  
+  trait _DiskImageFormat extends js.Object
+  
+  trait _DnsSupportValue extends js.Object
+  
+  trait _DomainType extends js.Object
+  
+  trait _ElasticGpuStatus extends js.Object
+  
+  trait _EndDateType extends js.Object
+  
+  trait _EventCode extends js.Object
+  
+  trait _EventType extends js.Object
+  
+  trait _ExcessCapacityTerminationPolicy extends js.Object
+  
+  trait _ExportEnvironment extends js.Object
+  
+  trait _ExportTaskState extends js.Object
+  
+  trait _FleetActivityStatus extends js.Object
+  
+  trait _FleetEventType extends js.Object
+  
+  trait _FleetExcessCapacityTerminationPolicy extends js.Object
+  
+  trait _FleetOnDemandAllocationStrategy extends js.Object
+  
+  trait _FleetStateCode extends js.Object
+  
+  trait _FleetType extends js.Object
+  
+  trait _FlowLogsResourceType extends js.Object
+  
+  trait _FpgaImageAttributeName extends js.Object
+  
+  trait _FpgaImageStateCode extends js.Object
+  
+  trait _HostTenancy extends js.Object
+  
+  trait _HypervisorType extends js.Object
+  
+  trait _IamInstanceProfileAssociationState extends js.Object
+  
+  trait _ImageAttributeName extends js.Object
+  
+  trait _ImageState extends js.Object
+  
+  trait _ImageTypeValues extends js.Object
+  
+  trait _InstanceAttributeName extends js.Object
+  
+  trait _InstanceHealthStatus extends js.Object
+  
+  trait _InstanceInterruptionBehavior extends js.Object
+  
+  trait _InstanceLifecycle extends js.Object
+  
+  trait _InstanceLifecycleType extends js.Object
+  
+  trait _InstanceMatchCriteria extends js.Object
+  
+  trait _InstanceStateName extends js.Object
+  
+  trait _InstanceType extends js.Object
+  
+  trait _InterfacePermissionType extends js.Object
+  
+  trait _Ipv6SupportValue extends js.Object
+  
+  trait _LaunchTemplateErrorCode extends js.Object
+  
+  trait _ListingState extends js.Object
+  
+  trait _ListingStatus extends js.Object
+  
+  trait _LogDestinationType extends js.Object
+  
+  trait _MonitoringState extends js.Object
+  
+  trait _MoveStatus extends js.Object
+  
+  trait _NatGatewayState extends js.Object
+  
+  trait _NetworkInterfaceAttribute extends js.Object
+  
+  trait _NetworkInterfacePermissionStateCode extends js.Object
+  
+  trait _NetworkInterfaceStatus extends js.Object
+  
+  trait _NetworkInterfaceType extends js.Object
+  
+  trait _OfferingClassType extends js.Object
+  
+  trait _OfferingTypeValues extends js.Object
+  
+  trait _OnDemandAllocationStrategy extends js.Object
+  
+  trait _OperationType extends js.Object
+  
+  trait _PaymentOption extends js.Object
+  
+  trait _PlacementGroupState extends js.Object
+  
+  trait _PlacementStrategy extends js.Object
+  
+  trait _PrincipalType extends js.Object
+  
+  trait _ProductCodeValues extends js.Object
+  
+  trait _RIProductDescription extends js.Object
+  
+  trait _ReportInstanceReasonCodes extends js.Object
+  
+  trait _ReportStatusType extends js.Object
+  
+  trait _ReservationState extends js.Object
+  
+  trait _ReservedInstanceState extends js.Object
+  
+  trait _ResourceType extends js.Object
+  
+  trait _RouteOrigin extends js.Object
+  
+  trait _RouteState extends js.Object
+  
+  trait _RuleAction extends js.Object
+  
+  trait _ServiceState extends js.Object
+  
+  trait _ServiceType extends js.Object
+  
+  trait _ShutdownBehavior extends js.Object
+  
+  trait _SnapshotAttributeName extends js.Object
+  
+  trait _SnapshotState extends js.Object
+  
+  trait _SpotAllocationStrategy extends js.Object
+  
+  trait _SpotInstanceInterruptionBehavior extends js.Object
+  
+  trait _SpotInstanceState extends js.Object
+  
+  trait _SpotInstanceType extends js.Object
+  
+  trait _State extends js.Object
+  
+  trait _Status extends js.Object
+  
+  trait _StatusType extends js.Object
+  
+  trait _SubnetCidrBlockStateCode extends js.Object
+  
+  trait _SubnetState extends js.Object
+  
+  trait _SummaryStatus extends js.Object
+  
+  trait _TelemetryStatus extends js.Object
+  
+  trait _Tenancy extends js.Object
+  
+  trait _TrafficType extends js.Object
+  
+  trait _TransitGatewayAssociationState extends js.Object
+  
+  trait _TransitGatewayAttachmentResourceType extends js.Object
+  
+  trait _TransitGatewayAttachmentState extends js.Object
+  
+  trait _TransitGatewayPropagationState extends js.Object
+  
+  trait _TransitGatewayRouteState extends js.Object
+  
+  trait _TransitGatewayRouteTableState extends js.Object
+  
+  trait _TransitGatewayRouteType extends js.Object
+  
+  trait _TransitGatewayState extends js.Object
+  
+  trait _TransportProtocol extends js.Object
+  
+  trait _UnsuccessfulInstanceCreditSpecificationErrorCode extends js.Object
+  
+  trait _VirtualizationType extends js.Object
+  
+  trait _VolumeAttachmentState extends js.Object
+  
+  trait _VolumeAttributeName extends js.Object
+  
+  trait _VolumeModificationState extends js.Object
+  
+  trait _VolumeState extends js.Object
+  
+  trait _VolumeStatusInfoStatus extends js.Object
+  
+  trait _VolumeStatusName extends js.Object
+  
+  trait _VolumeType extends js.Object
+  
+  trait _VpcAttributeName extends js.Object
+  
+  trait _VpcCidrBlockStateCode extends js.Object
+  
+  trait _VpcEndpointType extends js.Object
+  
+  trait _VpcPeeringConnectionStateReasonCode extends js.Object
+  
+  trait _VpcState extends js.Object
+  
+  trait _VpnEcmpSupportValue extends js.Object
+  
+  trait _VpnState extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
+  trait _scope extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccountAttributeList = js.Array[AccountAttribute]
-  type AccountAttributeName = awsDashSdkLib.awsDashSdkLibStrings.`supported-platforms` | awsDashSdkLib.awsDashSdkLibStrings.`default-vpc` | java.lang.String
+  type AccountAttributeName = _AccountAttributeName | java.lang.String
   type AccountAttributeNameStringList = js.Array[AccountAttributeName]
   type AccountAttributeValueList = js.Array[AccountAttributeValue]
   type ActiveInstanceSet = js.Array[ActiveInstance]
-  type ActivityStatus = awsDashSdkLib.awsDashSdkLibStrings.error | awsDashSdkLib.awsDashSdkLibStrings.pending_fulfillment | awsDashSdkLib.awsDashSdkLibStrings.pending_termination | awsDashSdkLib.awsDashSdkLibStrings.fulfilled | java.lang.String
+  type ActivityStatus = _ActivityStatus | java.lang.String
   type AddressList = js.Array[Address]
-  type Affinity = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.host | java.lang.String
+  type Affinity = _Affinity | java.lang.String
   type AllocationIdList = js.Array[String]
-  type AllocationState = awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.`under-assessment` | awsDashSdkLib.awsDashSdkLibStrings.`permanent-failure` | awsDashSdkLib.awsDashSdkLibStrings.released | awsDashSdkLib.awsDashSdkLibStrings.`released-permanent-failure` | java.lang.String
-  type AllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.lowestPrice | awsDashSdkLib.awsDashSdkLibStrings.diversified | java.lang.String
+  type AllocationState = _AllocationState | java.lang.String
+  type AllocationStrategy = _AllocationStrategy | java.lang.String
   type AllowedPrincipalSet = js.Array[AllowedPrincipal]
-  type ArchitectureValues = awsDashSdkLib.awsDashSdkLibStrings.i386 | awsDashSdkLib.awsDashSdkLibStrings.x86_64 | awsDashSdkLib.awsDashSdkLibStrings.arm64 | java.lang.String
+  type ArchitectureValues = _ArchitectureValues | java.lang.String
   type AssociatedNetworkType = awsDashSdkLib.awsDashSdkLibStrings.vpc | java.lang.String
   type AssociatedTargetNetworkSet = js.Array[AssociatedTargetNetwork]
   type AssociationIdList = js.Array[String]
-  type AssociationStatusCode = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.`association-failed` | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | java.lang.String
-  type AttachmentStatus = awsDashSdkLib.awsDashSdkLibStrings.attaching | awsDashSdkLib.awsDashSdkLibStrings.attached | awsDashSdkLib.awsDashSdkLibStrings.detaching | awsDashSdkLib.awsDashSdkLibStrings.detached | java.lang.String
+  type AssociationStatusCode = _AssociationStatusCode | java.lang.String
+  type AttachmentStatus = _AttachmentStatus | java.lang.String
   type AuthorizationRuleSet = js.Array[AuthorizationRule]
-  type AutoAcceptSharedAttachmentsValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
-  type AutoPlacement = awsDashSdkLib.awsDashSdkLibStrings.on | awsDashSdkLib.awsDashSdkLibStrings.off | java.lang.String
+  type AutoAcceptSharedAttachmentsValue = _AutoAcceptSharedAttachmentsValue | java.lang.String
+  type AutoPlacement = _AutoPlacement | java.lang.String
   type AvailabilityZoneList = js.Array[AvailabilityZone]
   type AvailabilityZoneMessageList = js.Array[AvailabilityZoneMessage]
-  type AvailabilityZoneState = awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.information | awsDashSdkLib.awsDashSdkLibStrings.impaired | awsDashSdkLib.awsDashSdkLibStrings.unavailable | java.lang.String
+  type AvailabilityZoneState = _AvailabilityZoneState | java.lang.String
   type AvailableInstanceCapacityList = js.Array[InstanceCapacity]
-  type BatchState = awsDashSdkLib.awsDashSdkLibStrings.submitted | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.cancelled_running | awsDashSdkLib.awsDashSdkLibStrings.cancelled_terminating | awsDashSdkLib.awsDashSdkLibStrings.modifying | java.lang.String
+  type BatchState = _BatchState | java.lang.String
   type BillingProductList = js.Array[String]
   type BlockDeviceMappingList = js.Array[BlockDeviceMapping]
   type BlockDeviceMappingRequestList = js.Array[BlockDeviceMapping]
   type Boolean = scala.Boolean
   type BundleIdStringList = js.Array[String]
   type BundleTaskList = js.Array[BundleTask]
-  type BundleTaskState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.`waiting-for-shutdown` | awsDashSdkLib.awsDashSdkLibStrings.bundling | awsDashSdkLib.awsDashSdkLibStrings.storing | awsDashSdkLib.awsDashSdkLibStrings.cancelling | awsDashSdkLib.awsDashSdkLibStrings.complete | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
+  type BundleTaskState = _BundleTaskState | java.lang.String
   type ByoipCidrSet = js.Array[ByoipCidr]
-  type ByoipCidrState = awsDashSdkLib.awsDashSdkLibStrings.advertised | awsDashSdkLib.awsDashSdkLibStrings.deprovisioned | awsDashSdkLib.awsDashSdkLibStrings.`failed-deprovision` | awsDashSdkLib.awsDashSdkLibStrings.`failed-provision` | awsDashSdkLib.awsDashSdkLibStrings.`pending-deprovision` | awsDashSdkLib.awsDashSdkLibStrings.`pending-provision` | awsDashSdkLib.awsDashSdkLibStrings.provisioned | java.lang.String
-  type CancelBatchErrorCode = awsDashSdkLib.awsDashSdkLibStrings.fleetRequestIdDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestIdMalformed | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestNotInCancellableState | awsDashSdkLib.awsDashSdkLibStrings.unexpectedError | java.lang.String
+  type ByoipCidrState = _ByoipCidrState | java.lang.String
+  type CancelBatchErrorCode = _CancelBatchErrorCode | java.lang.String
   type CancelSpotFleetRequestsErrorSet = js.Array[CancelSpotFleetRequestsErrorItem]
   type CancelSpotFleetRequestsSuccessSet = js.Array[CancelSpotFleetRequestsSuccessItem]
-  type CancelSpotInstanceRequestState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.closed | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
+  type CancelSpotInstanceRequestState = _CancelSpotInstanceRequestState | java.lang.String
   type CancelledSpotInstanceRequestList = js.Array[CancelledSpotInstanceRequest]
   type CapacityReservationIdSet = js.Array[String]
-  type CapacityReservationInstancePlatform = awsDashSdkLib.awsDashSdkLibStrings.`Linux/UNIX` | (awsDashSdkLib.awsDashSdkLibStrings.`Red Hat Enterprise Linux`) | (awsDashSdkLib.awsDashSdkLibStrings.`SUSE Linux`) | awsDashSdkLib.awsDashSdkLibStrings.Windows | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Enterprise`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Standard`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Web`) | (awsDashSdkLib.awsDashSdkLibStrings.`Linux with SQL Server Standard`) | (awsDashSdkLib.awsDashSdkLibStrings.`Linux with SQL Server Web`) | (awsDashSdkLib.awsDashSdkLibStrings.`Linux with SQL Server Enterprise`) | java.lang.String
-  type CapacityReservationPreference = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.none | java.lang.String
+  type CapacityReservationInstancePlatform = _CapacityReservationInstancePlatform | java.lang.String
+  type CapacityReservationPreference = _CapacityReservationPreference | java.lang.String
   type CapacityReservationSet = js.Array[CapacityReservation]
-  type CapacityReservationState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.expired | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
-  type CapacityReservationTenancy = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.dedicated | java.lang.String
+  type CapacityReservationState = _CapacityReservationState | java.lang.String
+  type CapacityReservationTenancy = _CapacityReservationTenancy | java.lang.String
   type CidrBlockSet = js.Array[CidrBlock]
   type ClassicLinkDnsSupportList = js.Array[ClassicLinkDnsSupport]
   type ClassicLinkInstanceList = js.Array[ClassicLinkInstance]
   type ClassicLoadBalancers = js.Array[ClassicLoadBalancer]
-  type ClientCertificateRevocationListStatusCode = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.active | java.lang.String
+  type ClientCertificateRevocationListStatusCode = _ClientCertificateRevocationListStatusCode | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientVpnAuthenticationList = js.Array[ClientVpnAuthentication]
   type ClientVpnAuthenticationRequestList = js.Array[ClientVpnAuthenticationRequest]
-  type ClientVpnAuthenticationType = awsDashSdkLib.awsDashSdkLibStrings.`certificate-authentication` | awsDashSdkLib.awsDashSdkLibStrings.`directory-service-authentication` | java.lang.String
-  type ClientVpnAuthorizationRuleStatusCode = awsDashSdkLib.awsDashSdkLibStrings.authorizing | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.revoking | java.lang.String
+  type ClientVpnAuthenticationType = _ClientVpnAuthenticationType | java.lang.String
+  type ClientVpnAuthorizationRuleStatusCode = _ClientVpnAuthorizationRuleStatusCode | java.lang.String
   type ClientVpnConnectionSet = js.Array[ClientVpnConnection]
-  type ClientVpnConnectionStatusCode = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.`failed-to-terminate` | awsDashSdkLib.awsDashSdkLibStrings.terminating | awsDashSdkLib.awsDashSdkLibStrings.terminated | java.lang.String
-  type ClientVpnEndpointStatusCode = awsDashSdkLib.awsDashSdkLibStrings.`pending-associate` | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type ClientVpnConnectionStatusCode = _ClientVpnConnectionStatusCode | java.lang.String
+  type ClientVpnEndpointStatusCode = _ClientVpnEndpointStatusCode | java.lang.String
   type ClientVpnRouteSet = js.Array[ClientVpnRoute]
-  type ClientVpnRouteStatusCode = awsDashSdkLib.awsDashSdkLibStrings.creating | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.deleting | java.lang.String
+  type ClientVpnRouteStatusCode = _ClientVpnRouteStatusCode | java.lang.String
   type ClientVpnSecurityGroupIdSet = js.Array[String]
   type ConnectionNotificationSet = js.Array[ConnectionNotification]
-  type ConnectionNotificationState = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Disabled | java.lang.String
+  type ConnectionNotificationState = _ConnectionNotificationState | java.lang.String
   type ConnectionNotificationType = awsDashSdkLib.awsDashSdkLibStrings.Topic | java.lang.String
   type ContainerFormat = awsDashSdkLib.awsDashSdkLibStrings.ova | java.lang.String
   type ConversionIdStringList = js.Array[String]
-  type ConversionTaskState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.cancelling | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
+  type ConversionTaskState = _ConversionTaskState | java.lang.String
   type CreateFleetErrorsSet = js.Array[CreateFleetError]
   type CreateFleetInstancesSet = js.Array[CreateFleetInstance]
   type CreateVolumePermissionList = js.Array[CreateVolumePermission]
   type CurrencyCodeValues = awsDashSdkLib.awsDashSdkLibStrings.USD | java.lang.String
   type CustomerGatewayIdStringList = js.Array[String]
   type CustomerGatewayList = js.Array[CustomerGateway]
-  type DatafeedSubscriptionState = awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Inactive | java.lang.String
+  type DatafeedSubscriptionState = _DatafeedSubscriptionState | java.lang.String
   type DateTime = stdLib.Date
-  type DefaultRouteTableAssociationValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
-  type DefaultRouteTablePropagationValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
-  type DefaultTargetCapacityType = awsDashSdkLib.awsDashSdkLibStrings.spot | awsDashSdkLib.awsDashSdkLibStrings.`on-demand` | java.lang.String
-  type DeleteFleetErrorCode = awsDashSdkLib.awsDashSdkLibStrings.fleetIdDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.fleetIdMalformed | awsDashSdkLib.awsDashSdkLibStrings.fleetNotInDeletableState | awsDashSdkLib.awsDashSdkLibStrings.unexpectedError | java.lang.String
+  type DefaultRouteTableAssociationValue = _DefaultRouteTableAssociationValue | java.lang.String
+  type DefaultRouteTablePropagationValue = _DefaultRouteTablePropagationValue | java.lang.String
+  type DefaultTargetCapacityType = _DefaultTargetCapacityType | java.lang.String
+  type DeleteFleetErrorCode = _DeleteFleetErrorCode | java.lang.String
   type DeleteFleetErrorSet = js.Array[DeleteFleetErrorItem]
   type DeleteFleetSuccessSet = js.Array[DeleteFleetSuccessItem]
   type DeleteLaunchTemplateVersionsResponseErrorSet = js.Array[DeleteLaunchTemplateVersionsResponseErrorItem]
@@ -25244,17 +25584,18 @@ object EC2Ns extends js.Object {
   type DescribeConversionTaskList = js.Array[ConversionTask]
   type DescribeFleetsErrorSet = js.Array[DescribeFleetError]
   type DescribeFleetsInstancesSet = js.Array[DescribeFleetsInstances]
+  type DescribeInstanceCreditSpecificationsMaxResults = scala.Double
   type DescribeVpcPeeringConnectionsMaxResults = scala.Double
-  type DeviceType = awsDashSdkLib.awsDashSdkLibStrings.ebs | awsDashSdkLib.awsDashSdkLibStrings.`instance-store` | java.lang.String
+  type DeviceType = _DeviceType | java.lang.String
   type DhcpConfigurationList = js.Array[DhcpConfiguration]
   type DhcpConfigurationValueList = js.Array[AttributeValue]
   type DhcpOptionsIdStringList = js.Array[String]
   type DhcpOptionsList = js.Array[DhcpOptions]
-  type DiskImageFormat = awsDashSdkLib.awsDashSdkLibStrings.VMDK | awsDashSdkLib.awsDashSdkLibStrings.RAW | awsDashSdkLib.awsDashSdkLibStrings.VHD | java.lang.String
+  type DiskImageFormat = _DiskImageFormat | java.lang.String
   type DiskImageList = js.Array[DiskImage]
   type DnsEntrySet = js.Array[DnsEntry]
-  type DnsSupportValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
-  type DomainType = awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.standard | java.lang.String
+  type DnsSupportValue = _DnsSupportValue | java.lang.String
+  type DomainType = _DomainType | java.lang.String
   type Double = scala.Double
   type EgressOnlyInternetGatewayId = java.lang.String
   type EgressOnlyInternetGatewayIdList = js.Array[EgressOnlyInternetGatewayId]
@@ -25266,40 +25607,40 @@ object EC2Ns extends js.Object {
   type ElasticGpuSpecificationResponseList = js.Array[ElasticGpuSpecificationResponse]
   type ElasticGpuSpecifications = js.Array[ElasticGpuSpecification]
   type ElasticGpuState = awsDashSdkLib.awsDashSdkLibStrings.ATTACHED | java.lang.String
-  type ElasticGpuStatus = awsDashSdkLib.awsDashSdkLibStrings.OK | awsDashSdkLib.awsDashSdkLibStrings.IMPAIRED | java.lang.String
+  type ElasticGpuStatus = _ElasticGpuStatus | java.lang.String
   type ElasticInferenceAcceleratorAssociationList = js.Array[ElasticInferenceAcceleratorAssociation]
   type ElasticInferenceAccelerators = js.Array[ElasticInferenceAccelerator]
-  type EndDateType = awsDashSdkLib.awsDashSdkLibStrings.unlimited | awsDashSdkLib.awsDashSdkLibStrings.limited | java.lang.String
+  type EndDateType = _EndDateType | java.lang.String
   type EndpointSet = js.Array[ClientVpnEndpoint]
-  type EventCode = awsDashSdkLib.awsDashSdkLibStrings.`instance-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-maintenance` | awsDashSdkLib.awsDashSdkLibStrings.`instance-retirement` | awsDashSdkLib.awsDashSdkLibStrings.`instance-stop` | java.lang.String
-  type EventType = awsDashSdkLib.awsDashSdkLibStrings.instanceChange | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestChange | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
-  type ExcessCapacityTerminationPolicy = awsDashSdkLib.awsDashSdkLibStrings.noTermination | awsDashSdkLib.awsDashSdkLibStrings.default | java.lang.String
+  type EventCode = _EventCode | java.lang.String
+  type EventType = _EventType | java.lang.String
+  type ExcessCapacityTerminationPolicy = _ExcessCapacityTerminationPolicy | java.lang.String
   type ExecutableByStringList = js.Array[String]
-  type ExportEnvironment = awsDashSdkLib.awsDashSdkLibStrings.citrix | awsDashSdkLib.awsDashSdkLibStrings.vmware | awsDashSdkLib.awsDashSdkLibStrings.microsoft | java.lang.String
+  type ExportEnvironment = _ExportEnvironment | java.lang.String
   type ExportTaskIdStringList = js.Array[String]
   type ExportTaskList = js.Array[ExportTask]
-  type ExportTaskState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.cancelling | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
+  type ExportTaskState = _ExportTaskState | java.lang.String
   type FilterList = js.Array[Filter]
-  type FleetActivityStatus = awsDashSdkLib.awsDashSdkLibStrings.error | awsDashSdkLib.awsDashSdkLibStrings.`pending-fulfillment` | awsDashSdkLib.awsDashSdkLibStrings.`pending-termination` | awsDashSdkLib.awsDashSdkLibStrings.fulfilled | java.lang.String
-  type FleetEventType = awsDashSdkLib.awsDashSdkLibStrings.`instance-change` | awsDashSdkLib.awsDashSdkLibStrings.`fleet-change` | awsDashSdkLib.awsDashSdkLibStrings.`service-error` | java.lang.String
-  type FleetExcessCapacityTerminationPolicy = awsDashSdkLib.awsDashSdkLibStrings.`no-termination` | awsDashSdkLib.awsDashSdkLibStrings.termination | java.lang.String
+  type FleetActivityStatus = _FleetActivityStatus | java.lang.String
+  type FleetEventType = _FleetEventType | java.lang.String
+  type FleetExcessCapacityTerminationPolicy = _FleetExcessCapacityTerminationPolicy | java.lang.String
   type FleetIdSet = js.Array[FleetIdentifier]
   type FleetIdentifier = java.lang.String
   type FleetLaunchTemplateConfigList = js.Array[FleetLaunchTemplateConfig]
   type FleetLaunchTemplateConfigListRequest = js.Array[FleetLaunchTemplateConfigRequest]
   type FleetLaunchTemplateOverridesList = js.Array[FleetLaunchTemplateOverrides]
   type FleetLaunchTemplateOverridesListRequest = js.Array[FleetLaunchTemplateOverridesRequest]
-  type FleetOnDemandAllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.`lowest-price` | awsDashSdkLib.awsDashSdkLibStrings.prioritized | java.lang.String
+  type FleetOnDemandAllocationStrategy = _FleetOnDemandAllocationStrategy | java.lang.String
   type FleetSet = js.Array[FleetData]
-  type FleetStateCode = awsDashSdkLib.awsDashSdkLibStrings.submitted | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.`deleted-running` | awsDashSdkLib.awsDashSdkLibStrings.`deleted-terminating` | awsDashSdkLib.awsDashSdkLibStrings.modifying | java.lang.String
-  type FleetType = awsDashSdkLib.awsDashSdkLibStrings.request | awsDashSdkLib.awsDashSdkLibStrings.maintain | awsDashSdkLib.awsDashSdkLibStrings.instant | java.lang.String
+  type FleetStateCode = _FleetStateCode | java.lang.String
+  type FleetType = _FleetType | java.lang.String
   type Float = scala.Double
   type FlowLogSet = js.Array[FlowLog]
-  type FlowLogsResourceType = awsDashSdkLib.awsDashSdkLibStrings.VPC | awsDashSdkLib.awsDashSdkLibStrings.Subnet | awsDashSdkLib.awsDashSdkLibStrings.NetworkInterface | java.lang.String
-  type FpgaImageAttributeName = awsDashSdkLib.awsDashSdkLibStrings.description | awsDashSdkLib.awsDashSdkLibStrings.name | awsDashSdkLib.awsDashSdkLibStrings.loadPermission | awsDashSdkLib.awsDashSdkLibStrings.productCodes | java.lang.String
+  type FlowLogsResourceType = _FlowLogsResourceType | java.lang.String
+  type FpgaImageAttributeName = _FpgaImageAttributeName | java.lang.String
   type FpgaImageIdList = js.Array[String]
   type FpgaImageList = js.Array[FpgaImage]
-  type FpgaImageStateCode = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.unavailable | java.lang.String
+  type FpgaImageStateCode = _FpgaImageStateCode | java.lang.String
   type GatewayType = awsDashSdkLib.awsDashSdkLibStrings.ipsecDOT1 | java.lang.String
   type GroupIdStringList = js.Array[String]
   type GroupIdentifierList = js.Array[GroupIdentifier]
@@ -25313,52 +25654,53 @@ object EC2Ns extends js.Object {
   type HostOfferingSet = js.Array[HostOffering]
   type HostReservationIdSet = js.Array[String]
   type HostReservationSet = js.Array[HostReservation]
-  type HostTenancy = awsDashSdkLib.awsDashSdkLibStrings.dedicated | awsDashSdkLib.awsDashSdkLibStrings.host | java.lang.String
-  type HypervisorType = awsDashSdkLib.awsDashSdkLibStrings.ovm | awsDashSdkLib.awsDashSdkLibStrings.xen | java.lang.String
+  type HostTenancy = _HostTenancy | java.lang.String
+  type HypervisorType = _HypervisorType | java.lang.String
   type IamInstanceProfileAssociationSet = js.Array[IamInstanceProfileAssociation]
-  type IamInstanceProfileAssociationState = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | java.lang.String
+  type IamInstanceProfileAssociationState = _IamInstanceProfileAssociationState | java.lang.String
   type IdFormatList = js.Array[IdFormat]
-  type ImageAttributeName = awsDashSdkLib.awsDashSdkLibStrings.description | awsDashSdkLib.awsDashSdkLibStrings.kernel | awsDashSdkLib.awsDashSdkLibStrings.ramdisk | awsDashSdkLib.awsDashSdkLibStrings.launchPermission | awsDashSdkLib.awsDashSdkLibStrings.productCodes | awsDashSdkLib.awsDashSdkLibStrings.blockDeviceMapping | awsDashSdkLib.awsDashSdkLibStrings.sriovNetSupport | java.lang.String
+  type ImageAttributeName = _ImageAttributeName | java.lang.String
   type ImageDiskContainerList = js.Array[ImageDiskContainer]
   type ImageIdStringList = js.Array[String]
   type ImageList = js.Array[Image]
-  type ImageState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.invalid | awsDashSdkLib.awsDashSdkLibStrings.deregistered | awsDashSdkLib.awsDashSdkLibStrings.transient | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
-  type ImageTypeValues = awsDashSdkLib.awsDashSdkLibStrings.machine | awsDashSdkLib.awsDashSdkLibStrings.kernel | awsDashSdkLib.awsDashSdkLibStrings.ramdisk | java.lang.String
+  type ImageState = _ImageState | java.lang.String
+  type ImageTypeValues = _ImageTypeValues | java.lang.String
   type ImportImageTaskList = js.Array[ImportImageTask]
   type ImportInstanceVolumeDetailSet = js.Array[ImportInstanceVolumeDetailItem]
   type ImportSnapshotTaskList = js.Array[ImportSnapshotTask]
   type ImportTaskIdList = js.Array[String]
-  type InstanceAttributeName = awsDashSdkLib.awsDashSdkLibStrings.instanceType | awsDashSdkLib.awsDashSdkLibStrings.kernel | awsDashSdkLib.awsDashSdkLibStrings.ramdisk | awsDashSdkLib.awsDashSdkLibStrings.userData | awsDashSdkLib.awsDashSdkLibStrings.disableApiTermination | awsDashSdkLib.awsDashSdkLibStrings.instanceInitiatedShutdownBehavior | awsDashSdkLib.awsDashSdkLibStrings.rootDeviceName | awsDashSdkLib.awsDashSdkLibStrings.blockDeviceMapping | awsDashSdkLib.awsDashSdkLibStrings.productCodes | awsDashSdkLib.awsDashSdkLibStrings.sourceDestCheck | awsDashSdkLib.awsDashSdkLibStrings.groupSet | awsDashSdkLib.awsDashSdkLibStrings.ebsOptimized | awsDashSdkLib.awsDashSdkLibStrings.sriovNetSupport | awsDashSdkLib.awsDashSdkLibStrings.enaSupport | java.lang.String
+  type InstanceAttributeName = _InstanceAttributeName | java.lang.String
   type InstanceBlockDeviceMappingList = js.Array[InstanceBlockDeviceMapping]
   type InstanceBlockDeviceMappingSpecificationList = js.Array[InstanceBlockDeviceMappingSpecification]
   type InstanceCountList = js.Array[InstanceCount]
   type InstanceCreditSpecificationList = js.Array[InstanceCreditSpecification]
   type InstanceCreditSpecificationListRequest = js.Array[InstanceCreditSpecificationRequest]
-  type InstanceHealthStatus = awsDashSdkLib.awsDashSdkLibStrings.healthy | awsDashSdkLib.awsDashSdkLibStrings.unhealthy | java.lang.String
+  type InstanceEventId = java.lang.String
+  type InstanceHealthStatus = _InstanceHealthStatus | java.lang.String
   type InstanceId = java.lang.String
   type InstanceIdSet = js.Array[String]
   type InstanceIdStringList = js.Array[String]
   type InstanceIdsSet = js.Array[InstanceId]
-  type InstanceInterruptionBehavior = awsDashSdkLib.awsDashSdkLibStrings.hibernate | awsDashSdkLib.awsDashSdkLibStrings.stop | awsDashSdkLib.awsDashSdkLibStrings.terminate | java.lang.String
+  type InstanceInterruptionBehavior = _InstanceInterruptionBehavior | java.lang.String
   type InstanceIpv6AddressList = js.Array[InstanceIpv6Address]
   type InstanceIpv6AddressListRequest = js.Array[InstanceIpv6AddressRequest]
-  type InstanceLifecycle = awsDashSdkLib.awsDashSdkLibStrings.spot | awsDashSdkLib.awsDashSdkLibStrings.`on-demand` | java.lang.String
-  type InstanceLifecycleType = awsDashSdkLib.awsDashSdkLibStrings.spot | awsDashSdkLib.awsDashSdkLibStrings.scheduled | java.lang.String
+  type InstanceLifecycle = _InstanceLifecycle | java.lang.String
+  type InstanceLifecycleType = _InstanceLifecycleType | java.lang.String
   type InstanceList = js.Array[Instance]
-  type InstanceMatchCriteria = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.targeted | java.lang.String
+  type InstanceMatchCriteria = _InstanceMatchCriteria | java.lang.String
   type InstanceMonitoringList = js.Array[InstanceMonitoring]
   type InstanceNetworkInterfaceList = js.Array[InstanceNetworkInterface]
   type InstanceNetworkInterfaceSpecificationList = js.Array[InstanceNetworkInterfaceSpecification]
   type InstancePrivateIpAddressList = js.Array[InstancePrivateIpAddress]
   type InstanceStateChangeList = js.Array[InstanceStateChange]
-  type InstanceStateName = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.running | awsDashSdkLib.awsDashSdkLibStrings.`shutting-down` | awsDashSdkLib.awsDashSdkLibStrings.terminated | awsDashSdkLib.awsDashSdkLibStrings.stopping | awsDashSdkLib.awsDashSdkLibStrings.stopped | java.lang.String
+  type InstanceStateName = _InstanceStateName | java.lang.String
   type InstanceStatusDetailsList = js.Array[InstanceStatusDetails]
   type InstanceStatusEventList = js.Array[InstanceStatusEvent]
   type InstanceStatusList = js.Array[InstanceStatus]
-  type InstanceType = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 178 */ js.Any
+  type InstanceType = _InstanceType | java.lang.String
   type InstanceTypeList = js.Array[InstanceType]
   type Integer = scala.Double
-  type InterfacePermissionType = awsDashSdkLib.awsDashSdkLibStrings.`INSTANCE-ATTACH` | awsDashSdkLib.awsDashSdkLibStrings.`EIP-ASSOCIATE` | java.lang.String
+  type InterfacePermissionType = _InterfacePermissionType | java.lang.String
   type InternetGatewayAttachmentList = js.Array[InternetGatewayAttachment]
   type InternetGatewayList = js.Array[InternetGateway]
   type IpPermissionList = js.Array[IpPermission]
@@ -25368,7 +25710,7 @@ object EC2Ns extends js.Object {
   type Ipv6AddressList = js.Array[String]
   type Ipv6CidrBlockSet = js.Array[Ipv6CidrBlock]
   type Ipv6RangeList = js.Array[Ipv6Range]
-  type Ipv6SupportValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
+  type Ipv6SupportValue = _Ipv6SupportValue | java.lang.String
   type KeyNameStringList = js.Array[String]
   type KeyPairList = js.Array[KeyPairInfo]
   type LaunchPermissionList = js.Array[LaunchPermission]
@@ -25378,7 +25720,7 @@ object EC2Ns extends js.Object {
   type LaunchTemplateConfigList = js.Array[LaunchTemplateConfig]
   type LaunchTemplateElasticInferenceAcceleratorList = js.Array[LaunchTemplateElasticInferenceAccelerator]
   type LaunchTemplateElasticInferenceAcceleratorResponseList = js.Array[LaunchTemplateElasticInferenceAcceleratorResponse]
-  type LaunchTemplateErrorCode = awsDashSdkLib.awsDashSdkLibStrings.launchTemplateIdDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.launchTemplateIdMalformed | awsDashSdkLib.awsDashSdkLibStrings.launchTemplateNameDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.launchTemplateNameMalformed | awsDashSdkLib.awsDashSdkLibStrings.launchTemplateVersionDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.unexpectedError | java.lang.String
+  type LaunchTemplateErrorCode = _LaunchTemplateErrorCode | java.lang.String
   type LaunchTemplateInstanceNetworkInterfaceSpecificationList = js.Array[LaunchTemplateInstanceNetworkInterfaceSpecification]
   type LaunchTemplateInstanceNetworkInterfaceSpecificationRequestList = js.Array[LaunchTemplateInstanceNetworkInterfaceSpecificationRequest]
   type LaunchTemplateLicenseList = js.Array[LaunchTemplateLicenseConfiguration]
@@ -25392,48 +25734,48 @@ object EC2Ns extends js.Object {
   type LaunchTemplateVersionSet = js.Array[LaunchTemplateVersion]
   type LicenseList = js.Array[LicenseConfiguration]
   type LicenseSpecificationListRequest = js.Array[LicenseConfigurationRequest]
-  type ListingState = awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.sold | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.pending | java.lang.String
-  type ListingStatus = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.closed | java.lang.String
+  type ListingState = _ListingState | java.lang.String
+  type ListingStatus = _ListingStatus | java.lang.String
   type LoadPermissionList = js.Array[LoadPermission]
   type LoadPermissionListRequest = js.Array[LoadPermissionRequest]
-  type LogDestinationType = awsDashSdkLib.awsDashSdkLibStrings.`cloud-watch-logs` | awsDashSdkLib.awsDashSdkLibStrings.s3 | java.lang.String
+  type LogDestinationType = _LogDestinationType | java.lang.String
   type Long = scala.Double
   type MarketType = awsDashSdkLib.awsDashSdkLibStrings.spot | java.lang.String
   type MaxResults = scala.Double
-  type MonitoringState = awsDashSdkLib.awsDashSdkLibStrings.disabled | awsDashSdkLib.awsDashSdkLibStrings.disabling | awsDashSdkLib.awsDashSdkLibStrings.enabled | awsDashSdkLib.awsDashSdkLibStrings.pending | java.lang.String
-  type MoveStatus = awsDashSdkLib.awsDashSdkLibStrings.movingToVpc | awsDashSdkLib.awsDashSdkLibStrings.restoringToClassic | java.lang.String
+  type MonitoringState = _MonitoringState | java.lang.String
+  type MoveStatus = _MoveStatus | java.lang.String
   type MovingAddressStatusSet = js.Array[MovingAddressStatus]
   type NatGatewayAddressList = js.Array[NatGatewayAddress]
   type NatGatewayList = js.Array[NatGateway]
-  type NatGatewayState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type NatGatewayState = _NatGatewayState | java.lang.String
   type NetworkAclAssociationList = js.Array[NetworkAclAssociation]
   type NetworkAclEntryList = js.Array[NetworkAclEntry]
   type NetworkAclList = js.Array[NetworkAcl]
-  type NetworkInterfaceAttribute = awsDashSdkLib.awsDashSdkLibStrings.description | awsDashSdkLib.awsDashSdkLibStrings.groupSet | awsDashSdkLib.awsDashSdkLibStrings.sourceDestCheck | awsDashSdkLib.awsDashSdkLibStrings.attachment | java.lang.String
+  type NetworkInterfaceAttribute = _NetworkInterfaceAttribute | java.lang.String
   type NetworkInterfaceIdList = js.Array[String]
   type NetworkInterfaceIpv6AddressesList = js.Array[NetworkInterfaceIpv6Address]
   type NetworkInterfaceList = js.Array[NetworkInterface]
   type NetworkInterfacePermissionIdList = js.Array[String]
   type NetworkInterfacePermissionList = js.Array[NetworkInterfacePermission]
-  type NetworkInterfacePermissionStateCode = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.granted | awsDashSdkLib.awsDashSdkLibStrings.revoking | awsDashSdkLib.awsDashSdkLibStrings.revoked | java.lang.String
+  type NetworkInterfacePermissionStateCode = _NetworkInterfacePermissionStateCode | java.lang.String
   type NetworkInterfacePrivateIpAddressList = js.Array[NetworkInterfacePrivateIpAddress]
-  type NetworkInterfaceStatus = awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.attaching | awsDashSdkLib.awsDashSdkLibStrings.`in-use` | awsDashSdkLib.awsDashSdkLibStrings.detaching | java.lang.String
-  type NetworkInterfaceType = awsDashSdkLib.awsDashSdkLibStrings.interface | awsDashSdkLib.awsDashSdkLibStrings.natGateway | java.lang.String
+  type NetworkInterfaceStatus = _NetworkInterfaceStatus | java.lang.String
+  type NetworkInterfaceType = _NetworkInterfaceType | java.lang.String
   type NewDhcpConfigurationList = js.Array[NewDhcpConfiguration]
   type NextToken = java.lang.String
   type OccurrenceDayRequestSet = js.Array[Integer]
   type OccurrenceDaySet = js.Array[Integer]
-  type OfferingClassType = awsDashSdkLib.awsDashSdkLibStrings.standard | awsDashSdkLib.awsDashSdkLibStrings.convertible | java.lang.String
-  type OfferingTypeValues = (awsDashSdkLib.awsDashSdkLibStrings.`Heavy Utilization`) | (awsDashSdkLib.awsDashSdkLibStrings.`Medium Utilization`) | (awsDashSdkLib.awsDashSdkLibStrings.`Light Utilization`) | (awsDashSdkLib.awsDashSdkLibStrings.`No Upfront`) | (awsDashSdkLib.awsDashSdkLibStrings.`Partial Upfront`) | (awsDashSdkLib.awsDashSdkLibStrings.`All Upfront`) | java.lang.String
-  type OnDemandAllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.lowestPrice | awsDashSdkLib.awsDashSdkLibStrings.prioritized | java.lang.String
-  type OperationType = awsDashSdkLib.awsDashSdkLibStrings.add | awsDashSdkLib.awsDashSdkLibStrings.remove | java.lang.String
+  type OfferingClassType = _OfferingClassType | java.lang.String
+  type OfferingTypeValues = _OfferingTypeValues | java.lang.String
+  type OnDemandAllocationStrategy = _OnDemandAllocationStrategy | java.lang.String
+  type OperationType = _OperationType | java.lang.String
   type OwnerStringList = js.Array[String]
-  type PaymentOption = awsDashSdkLib.awsDashSdkLibStrings.AllUpfront | awsDashSdkLib.awsDashSdkLibStrings.PartialUpfront | awsDashSdkLib.awsDashSdkLibStrings.NoUpfront | java.lang.String
+  type PaymentOption = _PaymentOption | java.lang.String
   type PermissionGroup = awsDashSdkLib.awsDashSdkLibStrings.all | java.lang.String
   type PlacementGroupList = js.Array[PlacementGroup]
-  type PlacementGroupState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type PlacementGroupState = _PlacementGroupState | java.lang.String
   type PlacementGroupStringList = js.Array[String]
-  type PlacementStrategy = awsDashSdkLib.awsDashSdkLibStrings.cluster | awsDashSdkLib.awsDashSdkLibStrings.spread | awsDashSdkLib.awsDashSdkLibStrings.partition | java.lang.String
+  type PlacementStrategy = _PlacementStrategy | java.lang.String
   type PlatformValues = awsDashSdkLib.awsDashSdkLibStrings.Windows | java.lang.String
   type PoolMaxResults = scala.Double
   type PrefixListIdList = js.Array[PrefixListId]
@@ -25443,13 +25785,13 @@ object EC2Ns extends js.Object {
   type PriceScheduleSpecificationList = js.Array[PriceScheduleSpecification]
   type PricingDetailsList = js.Array[PricingDetail]
   type PrincipalIdFormatList = js.Array[PrincipalIdFormat]
-  type PrincipalType = awsDashSdkLib.awsDashSdkLibStrings.All | awsDashSdkLib.awsDashSdkLibStrings.Service | awsDashSdkLib.awsDashSdkLibStrings.OrganizationUnit | awsDashSdkLib.awsDashSdkLibStrings.Account | awsDashSdkLib.awsDashSdkLibStrings.User | awsDashSdkLib.awsDashSdkLibStrings.Role | java.lang.String
+  type PrincipalType = _PrincipalType | java.lang.String
   type PrivateIpAddressConfigSet = js.Array[ScheduledInstancesPrivateIpAddressConfig]
   type PrivateIpAddressSpecificationList = js.Array[PrivateIpAddressSpecification]
   type PrivateIpAddressStringList = js.Array[String]
   type ProductCodeList = js.Array[ProductCode]
   type ProductCodeStringList = js.Array[String]
-  type ProductCodeValues = awsDashSdkLib.awsDashSdkLibStrings.devpay | awsDashSdkLib.awsDashSdkLibStrings.marketplace | java.lang.String
+  type ProductCodeValues = _ProductCodeValues | java.lang.String
   type ProductDescriptionList = js.Array[String]
   type PropagatingVgwList = js.Array[PropagatingVgw]
   type PublicIpStringList = js.Array[String]
@@ -25458,21 +25800,21 @@ object EC2Ns extends js.Object {
   type PurchaseRequestSet = js.Array[PurchaseRequest]
   type PurchaseSet = js.Array[Purchase]
   type PurchasedScheduledInstanceSet = js.Array[ScheduledInstance]
-  type RIProductDescription = awsDashSdkLib.awsDashSdkLibStrings.`Linux/UNIX` | (awsDashSdkLib.awsDashSdkLibStrings.`Linux/UNIX (Amazon VPC)`) | awsDashSdkLib.awsDashSdkLibStrings.Windows | (awsDashSdkLib.awsDashSdkLibStrings.`Windows (Amazon VPC)`) | java.lang.String
+  type RIProductDescription = _RIProductDescription | java.lang.String
   type ReasonCodesList = js.Array[ReportInstanceReasonCodes]
   type RecurringChargeFrequency = awsDashSdkLib.awsDashSdkLibStrings.Hourly | java.lang.String
   type RecurringChargesList = js.Array[RecurringCharge]
   type RegionList = js.Array[Region]
   type RegionNameStringList = js.Array[String]
-  type ReportInstanceReasonCodes = awsDashSdkLib.awsDashSdkLibStrings.`instance-stuck-in-state` | awsDashSdkLib.awsDashSdkLibStrings.unresponsive | awsDashSdkLib.awsDashSdkLibStrings.`not-accepting-credentials` | awsDashSdkLib.awsDashSdkLibStrings.`password-not-available` | awsDashSdkLib.awsDashSdkLibStrings.`performance-network` | awsDashSdkLib.awsDashSdkLibStrings.`performance-instance-store` | awsDashSdkLib.awsDashSdkLibStrings.`performance-ebs-volume` | awsDashSdkLib.awsDashSdkLibStrings.`performance-other` | awsDashSdkLib.awsDashSdkLibStrings.other | java.lang.String
-  type ReportStatusType = awsDashSdkLib.awsDashSdkLibStrings.ok | awsDashSdkLib.awsDashSdkLibStrings.impaired | java.lang.String
+  type ReportInstanceReasonCodes = _ReportInstanceReasonCodes | java.lang.String
+  type ReportStatusType = _ReportStatusType | java.lang.String
   type RequestHostIdList = js.Array[String]
   type RequestHostIdSet = js.Array[String]
   type ReservationList = js.Array[Reservation]
-  type ReservationState = awsDashSdkLib.awsDashSdkLibStrings.`payment-pending` | awsDashSdkLib.awsDashSdkLibStrings.`payment-failed` | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.retired | java.lang.String
+  type ReservationState = _ReservationState | java.lang.String
   type ReservedInstanceIdSet = js.Array[String]
   type ReservedInstanceReservationValueSet = js.Array[ReservedInstanceReservationValue]
-  type ReservedInstanceState = awsDashSdkLib.awsDashSdkLibStrings.`payment-pending` | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.`payment-failed` | awsDashSdkLib.awsDashSdkLibStrings.retired | java.lang.String
+  type ReservedInstanceState = _ReservedInstanceState | java.lang.String
   type ReservedInstancesConfigurationList = js.Array[ReservedInstancesConfiguration]
   type ReservedInstancesIdStringList = js.Array[String]
   type ReservedInstancesList = js.Array[ReservedInstances]
@@ -25487,16 +25829,16 @@ object EC2Ns extends js.Object {
   type ResetImageAttributeName = awsDashSdkLib.awsDashSdkLibStrings.launchPermission | java.lang.String
   type ResourceIdList = js.Array[String]
   type ResourceList = js.Array[String]
-  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.`client-vpn-endpoint` | awsDashSdkLib.awsDashSdkLibStrings.`customer-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`dedicated-host` | awsDashSdkLib.awsDashSdkLibStrings.`dhcp-options` | awsDashSdkLib.awsDashSdkLibStrings.`elastic-ip` | awsDashSdkLib.awsDashSdkLibStrings.fleet | awsDashSdkLib.awsDashSdkLibStrings.`fpga-image` | awsDashSdkLib.awsDashSdkLibStrings.image | awsDashSdkLib.awsDashSdkLibStrings.instance | awsDashSdkLib.awsDashSdkLibStrings.`internet-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`launch-template` | awsDashSdkLib.awsDashSdkLibStrings.natgateway | awsDashSdkLib.awsDashSdkLibStrings.`network-acl` | awsDashSdkLib.awsDashSdkLibStrings.`network-interface` | awsDashSdkLib.awsDashSdkLibStrings.`reserved-instances` | awsDashSdkLib.awsDashSdkLibStrings.`route-table` | awsDashSdkLib.awsDashSdkLibStrings.`security-group` | awsDashSdkLib.awsDashSdkLibStrings.snapshot | awsDashSdkLib.awsDashSdkLibStrings.`spot-instances-request` | awsDashSdkLib.awsDashSdkLibStrings.subnet | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-attachment` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-route-table` | awsDashSdkLib.awsDashSdkLibStrings.volume | awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.`vpc-peering-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-gateway` | java.lang.String
+  type ResourceType = _ResourceType | java.lang.String
   type ResponseHostIdList = js.Array[String]
   type ResponseHostIdSet = js.Array[String]
   type RestorableByStringList = js.Array[String]
   type RouteList = js.Array[Route]
-  type RouteOrigin = awsDashSdkLib.awsDashSdkLibStrings.CreateRouteTable | awsDashSdkLib.awsDashSdkLibStrings.CreateRoute | awsDashSdkLib.awsDashSdkLibStrings.EnableVgwRoutePropagation | java.lang.String
-  type RouteState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.blackhole | java.lang.String
+  type RouteOrigin = _RouteOrigin | java.lang.String
+  type RouteState = _RouteState | java.lang.String
   type RouteTableAssociationList = js.Array[RouteTableAssociation]
   type RouteTableList = js.Array[RouteTable]
-  type RuleAction = awsDashSdkLib.awsDashSdkLibStrings.allow | awsDashSdkLib.awsDashSdkLibStrings.deny | java.lang.String
+  type RuleAction = _RuleAction | java.lang.String
   type ScheduledInstanceAvailabilitySet = js.Array[ScheduledInstanceAvailability]
   type ScheduledInstanceIdRequestSet = js.Array[String]
   type ScheduledInstanceSet = js.Array[ScheduledInstance]
@@ -25510,38 +25852,38 @@ object EC2Ns extends js.Object {
   type SecurityGroupStringList = js.Array[String]
   type ServiceConfigurationSet = js.Array[ServiceConfiguration]
   type ServiceDetailSet = js.Array[ServiceDetail]
-  type ServiceState = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Available | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Deleted | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
-  type ServiceType = awsDashSdkLib.awsDashSdkLibStrings.Interface | awsDashSdkLib.awsDashSdkLibStrings.Gateway | java.lang.String
+  type ServiceState = _ServiceState | java.lang.String
+  type ServiceType = _ServiceType | java.lang.String
   type ServiceTypeDetailSet = js.Array[ServiceTypeDetail]
-  type ShutdownBehavior = awsDashSdkLib.awsDashSdkLibStrings.stop | awsDashSdkLib.awsDashSdkLibStrings.terminate | java.lang.String
-  type SnapshotAttributeName = awsDashSdkLib.awsDashSdkLibStrings.productCodes | awsDashSdkLib.awsDashSdkLibStrings.createVolumePermission | java.lang.String
+  type ShutdownBehavior = _ShutdownBehavior | java.lang.String
+  type SnapshotAttributeName = _SnapshotAttributeName | java.lang.String
   type SnapshotDetailList = js.Array[SnapshotDetail]
   type SnapshotIdStringList = js.Array[String]
   type SnapshotList = js.Array[Snapshot]
-  type SnapshotState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.completed | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
-  type SpotAllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.`lowest-price` | awsDashSdkLib.awsDashSdkLibStrings.diversified | java.lang.String
+  type SnapshotState = _SnapshotState | java.lang.String
+  type SpotAllocationStrategy = _SpotAllocationStrategy | java.lang.String
   type SpotFleetRequestConfigSet = js.Array[SpotFleetRequestConfig]
   type SpotFleetTagSpecificationList = js.Array[SpotFleetTagSpecification]
-  type SpotInstanceInterruptionBehavior = awsDashSdkLib.awsDashSdkLibStrings.hibernate | awsDashSdkLib.awsDashSdkLibStrings.stop | awsDashSdkLib.awsDashSdkLibStrings.terminate | java.lang.String
+  type SpotInstanceInterruptionBehavior = _SpotInstanceInterruptionBehavior | java.lang.String
   type SpotInstanceRequestIdList = js.Array[String]
   type SpotInstanceRequestList = js.Array[SpotInstanceRequest]
-  type SpotInstanceState = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.closed | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
-  type SpotInstanceType = awsDashSdkLib.awsDashSdkLibStrings.`one-time` | awsDashSdkLib.awsDashSdkLibStrings.persistent | java.lang.String
+  type SpotInstanceState = _SpotInstanceState | java.lang.String
+  type SpotInstanceType = _SpotInstanceType | java.lang.String
   type SpotPriceHistoryList = js.Array[SpotPrice]
   type StaleIpPermissionSet = js.Array[StaleIpPermission]
   type StaleSecurityGroupSet = js.Array[StaleSecurityGroup]
-  type State = awsDashSdkLib.awsDashSdkLibStrings.PendingAcceptance | awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Available | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Deleted | awsDashSdkLib.awsDashSdkLibStrings.Rejected | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Expired | java.lang.String
-  type Status = awsDashSdkLib.awsDashSdkLibStrings.MoveInProgress | awsDashSdkLib.awsDashSdkLibStrings.InVpc | awsDashSdkLib.awsDashSdkLibStrings.InClassic | java.lang.String
+  type State = _State | java.lang.String
+  type Status = _Status | java.lang.String
   type StatusName = awsDashSdkLib.awsDashSdkLibStrings.reachability | java.lang.String
-  type StatusType = awsDashSdkLib.awsDashSdkLibStrings.passed | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.`insufficient-data` | awsDashSdkLib.awsDashSdkLibStrings.initializing | java.lang.String
+  type StatusType = _StatusType | java.lang.String
   type String = java.lang.String
-  type SubnetCidrBlockStateCode = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | awsDashSdkLib.awsDashSdkLibStrings.failing | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
+  type SubnetCidrBlockStateCode = _SubnetCidrBlockStateCode | java.lang.String
   type SubnetIdStringList = js.Array[String]
   type SubnetIpv6CidrBlockAssociationSet = js.Array[SubnetIpv6CidrBlockAssociation]
   type SubnetList = js.Array[Subnet]
-  type SubnetState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | java.lang.String
+  type SubnetState = _SubnetState | java.lang.String
   type SuccessfulInstanceCreditSpecificationSet = js.Array[SuccessfulInstanceCreditSpecificationItem]
-  type SummaryStatus = awsDashSdkLib.awsDashSdkLibStrings.ok | awsDashSdkLib.awsDashSdkLibStrings.impaired | awsDashSdkLib.awsDashSdkLibStrings.`insufficient-data` | awsDashSdkLib.awsDashSdkLibStrings.`not-applicable` | awsDashSdkLib.awsDashSdkLibStrings.initializing | java.lang.String
+  type SummaryStatus = _SummaryStatus | java.lang.String
   type TagDescriptionList = js.Array[TagDescription]
   type TagList = js.Array[Tag]
   type TagSpecificationList = js.Array[TagSpecification]
@@ -25549,34 +25891,34 @@ object EC2Ns extends js.Object {
   type TargetGroups = js.Array[TargetGroup]
   type TargetNetworkSet = js.Array[TargetNetwork]
   type TargetReservationValueSet = js.Array[TargetReservationValue]
-  type TelemetryStatus = awsDashSdkLib.awsDashSdkLibStrings.UP | awsDashSdkLib.awsDashSdkLibStrings.DOWN | java.lang.String
-  type Tenancy = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.dedicated | awsDashSdkLib.awsDashSdkLibStrings.host | java.lang.String
+  type TelemetryStatus = _TelemetryStatus | java.lang.String
+  type Tenancy = _Tenancy | java.lang.String
   type TerminateConnectionStatusSet = js.Array[TerminateConnectionStatus]
-  type TrafficType = awsDashSdkLib.awsDashSdkLibStrings.ACCEPT | awsDashSdkLib.awsDashSdkLibStrings.REJECT | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
-  type TransitGatewayAssociationState = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | java.lang.String
+  type TrafficType = _TrafficType | java.lang.String
+  type TransitGatewayAssociationState = _TransitGatewayAssociationState | java.lang.String
   type TransitGatewayAttachmentIdStringList = js.Array[String]
   type TransitGatewayAttachmentList = js.Array[TransitGatewayAttachment]
   type TransitGatewayAttachmentPropagationList = js.Array[TransitGatewayAttachmentPropagation]
-  type TransitGatewayAttachmentResourceType = awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.vpn | java.lang.String
-  type TransitGatewayAttachmentState = awsDashSdkLib.awsDashSdkLibStrings.pendingAcceptance | awsDashSdkLib.awsDashSdkLibStrings.rollingBack | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.modifying | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.rejected | awsDashSdkLib.awsDashSdkLibStrings.rejecting | awsDashSdkLib.awsDashSdkLibStrings.failing | java.lang.String
+  type TransitGatewayAttachmentResourceType = _TransitGatewayAttachmentResourceType | java.lang.String
+  type TransitGatewayAttachmentState = _TransitGatewayAttachmentState | java.lang.String
   type TransitGatewayIdStringList = js.Array[String]
   type TransitGatewayList = js.Array[TransitGateway]
   type TransitGatewayMaxResults = scala.Double
-  type TransitGatewayPropagationState = awsDashSdkLib.awsDashSdkLibStrings.enabling | awsDashSdkLib.awsDashSdkLibStrings.enabled | awsDashSdkLib.awsDashSdkLibStrings.disabling | awsDashSdkLib.awsDashSdkLibStrings.disabled | java.lang.String
+  type TransitGatewayPropagationState = _TransitGatewayPropagationState | java.lang.String
   type TransitGatewayRouteAttachmentList = js.Array[TransitGatewayRouteAttachment]
   type TransitGatewayRouteList = js.Array[TransitGatewayRoute]
-  type TransitGatewayRouteState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.blackhole | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type TransitGatewayRouteState = _TransitGatewayRouteState | java.lang.String
   type TransitGatewayRouteTableAssociationList = js.Array[TransitGatewayRouteTableAssociation]
   type TransitGatewayRouteTableIdStringList = js.Array[String]
   type TransitGatewayRouteTableList = js.Array[TransitGatewayRouteTable]
   type TransitGatewayRouteTablePropagationList = js.Array[TransitGatewayRouteTablePropagation]
-  type TransitGatewayRouteTableState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
-  type TransitGatewayRouteType = awsDashSdkLib.awsDashSdkLibStrings.static | awsDashSdkLib.awsDashSdkLibStrings.propagated | java.lang.String
-  type TransitGatewayState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.modifying | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type TransitGatewayRouteTableState = _TransitGatewayRouteTableState | java.lang.String
+  type TransitGatewayRouteType = _TransitGatewayRouteType | java.lang.String
+  type TransitGatewayState = _TransitGatewayState | java.lang.String
   type TransitGatewayVpcAttachmentList = js.Array[TransitGatewayVpcAttachment]
-  type TransportProtocol = awsDashSdkLib.awsDashSdkLibStrings.tcp | awsDashSdkLib.awsDashSdkLibStrings.udp | java.lang.String
+  type TransportProtocol = _TransportProtocol | java.lang.String
   type TunnelOptionsList = js.Array[VpnTunnelOptionsSpecification]
-  type UnsuccessfulInstanceCreditSpecificationErrorCode = awsDashSdkLib.awsDashSdkLibStrings.InvalidInstanceIDDOTMalformed | awsDashSdkLib.awsDashSdkLibStrings.InvalidInstanceIDDOTNotFound | awsDashSdkLib.awsDashSdkLibStrings.IncorrectInstanceState | awsDashSdkLib.awsDashSdkLibStrings.InstanceCreditSpecificationDOTNotSupported | java.lang.String
+  type UnsuccessfulInstanceCreditSpecificationErrorCode = _UnsuccessfulInstanceCreditSpecificationErrorCode | java.lang.String
   type UnsuccessfulInstanceCreditSpecificationSet = js.Array[UnsuccessfulInstanceCreditSpecificationItem]
   type UnsuccessfulItemList = js.Array[UnsuccessfulItem]
   type UnsuccessfulItemSet = js.Array[UnsuccessfulItem]
@@ -25588,51 +25930,51 @@ object EC2Ns extends js.Object {
   type VersionDescription = java.lang.String
   type VersionStringList = js.Array[String]
   type VgwTelemetryList = js.Array[VgwTelemetry]
-  type VirtualizationType = awsDashSdkLib.awsDashSdkLibStrings.hvm | awsDashSdkLib.awsDashSdkLibStrings.paravirtual | java.lang.String
+  type VirtualizationType = _VirtualizationType | java.lang.String
   type VolumeAttachmentList = js.Array[VolumeAttachment]
-  type VolumeAttachmentState = awsDashSdkLib.awsDashSdkLibStrings.attaching | awsDashSdkLib.awsDashSdkLibStrings.attached | awsDashSdkLib.awsDashSdkLibStrings.detaching | awsDashSdkLib.awsDashSdkLibStrings.detached | awsDashSdkLib.awsDashSdkLibStrings.busy | java.lang.String
-  type VolumeAttributeName = awsDashSdkLib.awsDashSdkLibStrings.autoEnableIO | awsDashSdkLib.awsDashSdkLibStrings.productCodes | java.lang.String
+  type VolumeAttachmentState = _VolumeAttachmentState | java.lang.String
+  type VolumeAttributeName = _VolumeAttributeName | java.lang.String
   type VolumeIdStringList = js.Array[String]
   type VolumeList = js.Array[Volume]
   type VolumeModificationList = js.Array[VolumeModification]
-  type VolumeModificationState = awsDashSdkLib.awsDashSdkLibStrings.modifying | awsDashSdkLib.awsDashSdkLibStrings.optimizing | awsDashSdkLib.awsDashSdkLibStrings.completed | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
-  type VolumeState = awsDashSdkLib.awsDashSdkLibStrings.creating | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.`in-use` | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
+  type VolumeModificationState = _VolumeModificationState | java.lang.String
+  type VolumeState = _VolumeState | java.lang.String
   type VolumeStatusActionsList = js.Array[VolumeStatusAction]
   type VolumeStatusDetailsList = js.Array[VolumeStatusDetails]
   type VolumeStatusEventsList = js.Array[VolumeStatusEvent]
-  type VolumeStatusInfoStatus = awsDashSdkLib.awsDashSdkLibStrings.ok | awsDashSdkLib.awsDashSdkLibStrings.impaired | awsDashSdkLib.awsDashSdkLibStrings.`insufficient-data` | java.lang.String
+  type VolumeStatusInfoStatus = _VolumeStatusInfoStatus | java.lang.String
   type VolumeStatusList = js.Array[VolumeStatusItem]
-  type VolumeStatusName = awsDashSdkLib.awsDashSdkLibStrings.`io-enabled` | awsDashSdkLib.awsDashSdkLibStrings.`io-performance` | java.lang.String
-  type VolumeType = awsDashSdkLib.awsDashSdkLibStrings.standard | awsDashSdkLib.awsDashSdkLibStrings.io1 | awsDashSdkLib.awsDashSdkLibStrings.gp2 | awsDashSdkLib.awsDashSdkLibStrings.sc1 | awsDashSdkLib.awsDashSdkLibStrings.st1 | java.lang.String
+  type VolumeStatusName = _VolumeStatusName | java.lang.String
+  type VolumeType = _VolumeType | java.lang.String
   type VpcAttachmentList = js.Array[VpcAttachment]
-  type VpcAttributeName = awsDashSdkLib.awsDashSdkLibStrings.enableDnsSupport | awsDashSdkLib.awsDashSdkLibStrings.enableDnsHostnames | java.lang.String
+  type VpcAttributeName = _VpcAttributeName | java.lang.String
   type VpcCidrBlockAssociationSet = js.Array[VpcCidrBlockAssociation]
-  type VpcCidrBlockStateCode = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | awsDashSdkLib.awsDashSdkLibStrings.failing | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
+  type VpcCidrBlockStateCode = _VpcCidrBlockStateCode | java.lang.String
   type VpcClassicLinkIdList = js.Array[String]
   type VpcClassicLinkList = js.Array[VpcClassicLink]
   type VpcEndpointConnectionSet = js.Array[VpcEndpointConnection]
   type VpcEndpointSet = js.Array[VpcEndpoint]
-  type VpcEndpointType = awsDashSdkLib.awsDashSdkLibStrings.Interface | awsDashSdkLib.awsDashSdkLibStrings.Gateway | java.lang.String
+  type VpcEndpointType = _VpcEndpointType | java.lang.String
   type VpcIdStringList = js.Array[String]
   type VpcIpv6CidrBlockAssociationSet = js.Array[VpcIpv6CidrBlockAssociation]
   type VpcList = js.Array[Vpc]
   type VpcPeeringConnectionList = js.Array[VpcPeeringConnection]
-  type VpcPeeringConnectionStateReasonCode = awsDashSdkLib.awsDashSdkLibStrings.`initiating-request` | awsDashSdkLib.awsDashSdkLibStrings.`pending-acceptance` | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.rejected | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.expired | awsDashSdkLib.awsDashSdkLibStrings.provisioning | awsDashSdkLib.awsDashSdkLibStrings.deleting | java.lang.String
-  type VpcState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | java.lang.String
+  type VpcPeeringConnectionStateReasonCode = _VpcPeeringConnectionStateReasonCode | java.lang.String
+  type VpcState = _VpcState | java.lang.String
   type VpcTenancy = awsDashSdkLib.awsDashSdkLibStrings.default | java.lang.String
   type VpnConnectionIdStringList = js.Array[String]
   type VpnConnectionList = js.Array[VpnConnection]
-  type VpnEcmpSupportValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
+  type VpnEcmpSupportValue = _VpnEcmpSupportValue | java.lang.String
   type VpnGatewayIdStringList = js.Array[String]
   type VpnGatewayList = js.Array[VpnGateway]
   type VpnProtocol = awsDashSdkLib.awsDashSdkLibStrings.openvpn | java.lang.String
-  type VpnState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type VpnState = _VpnState | java.lang.String
   type VpnStaticRouteList = js.Array[VpnStaticRoute]
   type VpnStaticRouteSource = awsDashSdkLib.awsDashSdkLibStrings.Static | java.lang.String
   type ZoneIdStringList = js.Array[String]
   type ZoneNameStringList = js.Array[String]
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsEc2Mod.Blob | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-06-15` | awsDashSdkLib.awsDashSdkLibStrings.`2013-10-15` | awsDashSdkLib.awsDashSdkLibStrings.`2014-02-01` | awsDashSdkLib.awsDashSdkLibStrings.`2014-05-01` | awsDashSdkLib.awsDashSdkLibStrings.`2014-06-15` | awsDashSdkLib.awsDashSdkLibStrings.`2014-09-01` | awsDashSdkLib.awsDashSdkLibStrings.`2014-10-01` | awsDashSdkLib.awsDashSdkLibStrings.`2015-03-01` | awsDashSdkLib.awsDashSdkLibStrings.`2015-04-15` | awsDashSdkLib.awsDashSdkLibStrings.`2015-10-01` | awsDashSdkLib.awsDashSdkLibStrings.`2016-04-01` | awsDashSdkLib.awsDashSdkLibStrings.`2016-09-15` | awsDashSdkLib.awsDashSdkLibStrings.`2016-11-15` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
-  type scope = (awsDashSdkLib.awsDashSdkLibStrings.`Availability Zone`) | awsDashSdkLib.awsDashSdkLibStrings.Region | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
+  type scope = _scope | java.lang.String
 }
 

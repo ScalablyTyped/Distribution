@@ -16,3 +16,13 @@ trait LoggedInOptions extends js.Object {
   var setRedirectTo: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LoggedInOptions {
+  @scala.inline
+  def apply(redirectTo: java.lang.String = null, setRedirectTo: js.UndefOr[scala.Boolean] = js.undefined): LoggedInOptions = {
+    val __obj = js.Dynamic.literal()
+    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo)
+    if (!js.isUndefined(setRedirectTo)) __obj.updateDynamic("setRedirectTo")(setRedirectTo)
+    __obj.asInstanceOf[LoggedInOptions]
+  }
+}
+

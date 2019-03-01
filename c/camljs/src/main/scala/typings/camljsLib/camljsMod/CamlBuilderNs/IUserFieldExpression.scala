@@ -26,3 +26,30 @@ trait IUserFieldExpression extends js.Object {
   def ValueAsText(): ITextFieldExpression
 }
 
+object IUserFieldExpression {
+  @scala.inline
+  def apply(
+    EqualToCurrentUser: js.Function0[IExpression],
+    Id: js.Function0[INumberFieldExpression],
+    IsInCurrentUserGroups: js.Function0[IExpression],
+    IsInSPGroup: js.Function1[scala.Double, IExpression],
+    IsInSPWebAllUsers: js.Function0[IExpression],
+    IsInSPWebGroups: js.Function0[IExpression],
+    IsInSPWebUsers: js.Function0[IExpression],
+    Membership: IMembership,
+    ValueAsText: js.Function0[ITextFieldExpression]
+  ): IUserFieldExpression = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EqualToCurrentUser")(EqualToCurrentUser)
+    __obj.updateDynamic("Id")(Id)
+    __obj.updateDynamic("IsInCurrentUserGroups")(IsInCurrentUserGroups)
+    __obj.updateDynamic("IsInSPGroup")(IsInSPGroup)
+    __obj.updateDynamic("IsInSPWebAllUsers")(IsInSPWebAllUsers)
+    __obj.updateDynamic("IsInSPWebGroups")(IsInSPWebGroups)
+    __obj.updateDynamic("IsInSPWebUsers")(IsInSPWebUsers)
+    __obj.updateDynamic("Membership")(Membership)
+    __obj.updateDynamic("ValueAsText")(ValueAsText)
+    __obj.asInstanceOf[IUserFieldExpression]
+  }
+}
+

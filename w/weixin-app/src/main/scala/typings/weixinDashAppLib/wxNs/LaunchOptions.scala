@@ -98,3 +98,22 @@ trait LaunchOptions extends js.Object {
   var shareTicket: java.lang.String
 }
 
+object LaunchOptions {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    query: js.Object,
+    referrerInfo: weixinDashAppLib.Anon_AppIdExtraData,
+    scene: SceneValues,
+    shareTicket: java.lang.String
+  ): LaunchOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("referrerInfo")(referrerInfo)
+    __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
+    __obj.updateDynamic("shareTicket")(shareTicket)
+    __obj.asInstanceOf[LaunchOptions]
+  }
+}
+

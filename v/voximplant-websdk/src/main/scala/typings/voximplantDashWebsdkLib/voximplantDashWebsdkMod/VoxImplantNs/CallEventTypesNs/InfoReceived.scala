@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when INFO message is received
 		*/
-trait InfoReceived extends js.Object {
+trait InfoReceived
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantCallEvent {
   /**
   			*	Content of the message
   			*/
@@ -25,5 +26,22 @@ trait InfoReceived extends js.Object {
   			*	MIME type of INFO message
   			*/
   var mimeType: java.lang.String
+}
+
+object InfoReceived {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call,
+    mimeType: java.lang.String,
+    headers: js.Object = null
+  ): InfoReceived = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("call")(call)
+    __obj.updateDynamic("mimeType")(mimeType)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    __obj.asInstanceOf[InfoReceived]
+  }
 }
 

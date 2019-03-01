@@ -16,3 +16,20 @@ trait Screen extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Screen {
+  @scala.inline
+  def apply(
+    fileReference: java.lang.String = null,
+    locale: java.lang.String = null,
+    model: java.lang.String = null,
+    version: java.lang.String = null
+  ): Screen = {
+    val __obj = js.Dynamic.literal()
+    if (fileReference != null) __obj.updateDynamic("fileReference")(fileReference)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Screen]
+  }
+}
+

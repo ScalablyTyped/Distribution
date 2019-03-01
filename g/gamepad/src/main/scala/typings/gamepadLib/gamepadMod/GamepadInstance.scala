@@ -14,3 +14,24 @@ trait GamepadInstance extends js.Object {
   var vendorID: scala.Double
 }
 
+object GamepadInstance {
+  @scala.inline
+  def apply(
+    axisStates: js.Array[scala.Double],
+    buttonStates: js.Array[scala.Boolean],
+    description: java.lang.String,
+    deviceID: scala.Double,
+    productID: scala.Double,
+    vendorID: scala.Double
+  ): GamepadInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axisStates")(axisStates)
+    __obj.updateDynamic("buttonStates")(buttonStates)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("deviceID")(deviceID)
+    __obj.updateDynamic("productID")(productID)
+    __obj.updateDynamic("vendorID")(vendorID)
+    __obj.asInstanceOf[GamepadInstance]
+  }
+}
+

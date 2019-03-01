@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object apolloDashClientLibStrings {
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy
   
   @js.native
-  sealed trait `cache-and-network` extends js.Object
+  sealed trait `cache-and-network`
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy
   
   @js.native
-  sealed trait `cache-first` extends js.Object
+  sealed trait `cache-first`
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy
   
   @js.native
-  sealed trait `cache-only` extends js.Object
+  sealed trait `cache-only`
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait ignore
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy
   
   @js.native
-  sealed trait `network-only` extends js.Object
+  sealed trait `network-only`
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy
   
   @js.native
-  sealed trait `no-cache` extends js.Object
+  sealed trait `no-cache`
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy
   
   @js.native
-  sealed trait standby extends js.Object
+  sealed trait standby
+    extends apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

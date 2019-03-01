@@ -40,3 +40,34 @@ trait XWizardPage
   def commitPage(Reason: scala.Double): scala.Boolean
 }
 
+object XWizardPage {
+  @scala.inline
+  def apply(
+    PageId: scala.Double,
+    Window: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    acquire: js.Function0[scala.Unit],
+    activatePage: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    canAdvance: js.Function0[scala.Boolean],
+    commitPage: js.Function1[scala.Double, scala.Boolean],
+    dispose: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XWizardPage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PageId")(PageId)
+    __obj.updateDynamic("Window")(Window)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("activatePage")(activatePage)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("canAdvance")(canAdvance)
+    __obj.updateDynamic("commitPage")(commitPage)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[XWizardPage]
+  }
+}
+

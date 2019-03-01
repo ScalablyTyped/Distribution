@@ -9,3 +9,12 @@ trait IObject extends js.Object {
   var `object`: java.lang.String
 }
 
+object IObject {
+  @scala.inline
+  def apply(`object`: java.lang.String): IObject = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+  
+    __obj.asInstanceOf[IObject]
+  }
+}
+

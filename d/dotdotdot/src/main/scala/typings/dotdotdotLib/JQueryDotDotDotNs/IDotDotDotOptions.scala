@@ -50,3 +50,30 @@ trait IDotDotDotOptions extends js.Object {
   var wrap: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IDotDotDotOptions {
+  @scala.inline
+  def apply(
+    after: java.lang.String | dotdotdotLib.JQuery = null,
+    callback: js.Function2[/* isTruncated */ scala.Boolean, /* orgContent */ js.Any, scala.Unit] = null,
+    ellipsis: java.lang.String = null,
+    fallbackToLetter: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    lastCharacter: IDotDotDotOptionsLastCharacter = null,
+    tolerance: scala.Int | scala.Double = null,
+    watch: scala.Boolean | dotdotdotLib.dotdotdotLibStrings.window = null,
+    wrap: java.lang.String = null
+  ): IDotDotDotOptions = {
+    val __obj = js.Dynamic.literal()
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis)
+    if (!js.isUndefined(fallbackToLetter)) __obj.updateDynamic("fallbackToLetter")(fallbackToLetter)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (lastCharacter != null) __obj.updateDynamic("lastCharacter")(lastCharacter)
+    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    if (wrap != null) __obj.updateDynamic("wrap")(wrap)
+    __obj.asInstanceOf[IDotDotDotOptions]
+  }
+}
+

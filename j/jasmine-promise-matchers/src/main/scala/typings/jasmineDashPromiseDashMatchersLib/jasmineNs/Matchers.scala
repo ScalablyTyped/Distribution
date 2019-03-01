@@ -24,3 +24,20 @@ trait Matchers[T] extends js.Object {
   def toBeResolvedWith(value: js.Any): scala.Boolean
 }
 
+object Matchers {
+  @scala.inline
+  def apply[T](
+    toBeRejected: js.Function0[scala.Boolean],
+    toBeRejectedWith: js.Function1[js.Any, scala.Boolean],
+    toBeResolved: js.Function0[scala.Boolean],
+    toBeResolvedWith: js.Function1[js.Any, scala.Boolean]
+  ): Matchers[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toBeRejected")(toBeRejected)
+    __obj.updateDynamic("toBeRejectedWith")(toBeRejectedWith)
+    __obj.updateDynamic("toBeResolved")(toBeResolved)
+    __obj.updateDynamic("toBeResolvedWith")(toBeResolvedWith)
+    __obj.asInstanceOf[Matchers[T]]
+  }
+}
+

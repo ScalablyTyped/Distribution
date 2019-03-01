@@ -29,3 +29,22 @@ trait AliasState extends js.Object {
   val targetKeyId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object AliasState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targetKeyArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targetKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AliasState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (targetKeyArn != null) __obj.updateDynamic("targetKeyArn")(targetKeyArn.asInstanceOf[js.Any])
+    if (targetKeyId != null) __obj.updateDynamic("targetKeyId")(targetKeyId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AliasState]
+  }
+}
+

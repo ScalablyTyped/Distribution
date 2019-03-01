@@ -45,3 +45,32 @@ trait PrimaryYAxisMultiLevelLabel extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PrimaryYAxisMultiLevelLabel {
+  @scala.inline
+  def apply(
+    border: PrimaryYAxisMultiLevelLabelsBorder = null,
+    end: scala.Int | scala.Double = null,
+    font: PrimaryYAxisMultiLevelLabelsFont = null,
+    level: scala.Int | scala.Double = null,
+    maximumTextWidth: scala.Int | scala.Double = null,
+    start: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    textAlignment: TextAlignment | java.lang.String = null,
+    textOverflow: TextOverflow | java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): PrimaryYAxisMultiLevelLabel = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (maximumTextWidth != null) __obj.updateDynamic("maximumTextWidth")(maximumTextWidth.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
+    if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[PrimaryYAxisMultiLevelLabel]
+  }
+}
+

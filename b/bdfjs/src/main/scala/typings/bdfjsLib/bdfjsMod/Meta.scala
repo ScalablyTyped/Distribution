@@ -17,3 +17,24 @@ trait Meta extends js.Object {
   var version: java.lang.String
 }
 
+object Meta {
+  @scala.inline
+  def apply(
+    boundingBox: BoundingBox,
+    name: java.lang.String,
+    properties: Properties,
+    size: Size,
+    totalChars: scala.Double,
+    version: java.lang.String
+  ): Meta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boundingBox")(boundingBox)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("totalChars")(totalChars)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Meta]
+  }
+}
+

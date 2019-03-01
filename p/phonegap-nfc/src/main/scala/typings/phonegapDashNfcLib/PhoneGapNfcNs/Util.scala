@@ -23,3 +23,18 @@ trait Util extends js.Object {
   def stringToBytes(string: java.lang.String): js.Array[scala.Double]
 }
 
+object Util {
+  @scala.inline
+  def apply(
+    bytesToHexString: js.Function1[js.Array[scala.Double], java.lang.String],
+    bytesToString: js.Function1[js.Array[scala.Double], java.lang.String],
+    stringToBytes: js.Function1[java.lang.String, js.Array[scala.Double]]
+  ): Util = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bytesToHexString")(bytesToHexString)
+    __obj.updateDynamic("bytesToString")(bytesToString)
+    __obj.updateDynamic("stringToBytes")(stringToBytes)
+    __obj.asInstanceOf[Util]
+  }
+}
+

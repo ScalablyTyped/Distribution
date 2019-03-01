@@ -23,3 +23,16 @@ trait ApplicationUpdateData extends js.Object {
   var showToolbars: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ApplicationUpdateData {
+  @scala.inline
+  def apply(
+    showBorders: js.UndefOr[scala.Boolean] = js.undefined,
+    showToolbars: js.UndefOr[scala.Boolean] = js.undefined
+  ): ApplicationUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders)
+    if (!js.isUndefined(showToolbars)) __obj.updateDynamic("showToolbars")(showToolbars)
+    __obj.asInstanceOf[ApplicationUpdateData]
+  }
+}
+

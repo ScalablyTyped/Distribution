@@ -12,3 +12,17 @@ trait channelBanners extends js.Object {
   def insert(`object`: gapiDotYoutubeLib.Anon_OnBehalfOfContentOwner): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeChannelBannerResource]
 }
 
+object channelBanners {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotYoutubeLib.Anon_OnBehalfOfContentOwner, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeChannelBannerResource]
+    ]
+  ): channelBanners = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.asInstanceOf[channelBanners]
+  }
+}
+

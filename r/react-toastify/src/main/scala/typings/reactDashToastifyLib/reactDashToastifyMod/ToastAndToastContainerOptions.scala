@@ -63,3 +63,34 @@ trait ToastAndToastContainerOptions extends js.Object {
   var transition: js.UndefOr[reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition] = js.undefined
 }
 
+object ToastAndToastContainerOptions {
+  @scala.inline
+  def apply(
+    autoClose: reactDashToastifyLib.reactDashToastifyLibNumbers.`false` | scala.Double = null,
+    bodyClassName: java.lang.String = null,
+    closeButton: reactDashToastifyLib.reactDashToastifyLibNumbers.`false` | ToastCloseButton = null,
+    closeOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    draggablePercent: scala.Int | scala.Double = null,
+    hideProgressBar: js.UndefOr[scala.Boolean] = js.undefined,
+    pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    position: reactDashToastifyLib.reactDashToastifyLibStrings.`top-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`top-left` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-right` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-center` | reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-left` = null,
+    progressClassName: java.lang.String = null,
+    transition: reactDashTransitionDashGroupLib.reactDashTransitionDashGroupMod.Transition = null
+  ): ToastAndToastContainerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (autoClose != null) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
+    if (bodyClassName != null) __obj.updateDynamic("bodyClassName")(bodyClassName)
+    if (closeButton != null) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (draggablePercent != null) __obj.updateDynamic("draggablePercent")(draggablePercent.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideProgressBar)) __obj.updateDynamic("hideProgressBar")(hideProgressBar)
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (progressClassName != null) __obj.updateDynamic("progressClassName")(progressClassName)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    __obj.asInstanceOf[ToastAndToastContainerOptions]
+  }
+}
+

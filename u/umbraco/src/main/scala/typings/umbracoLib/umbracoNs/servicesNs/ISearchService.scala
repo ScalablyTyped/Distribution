@@ -65,3 +65,20 @@ trait ISearchService extends js.Object {
   def searchMembers(args: ISearchArgs): angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMember]]
 }
 
+object ISearchService {
+  @scala.inline
+  def apply(
+    searchAll: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[_]],
+    searchContent: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[js.Array[ISearchContent]]],
+    searchMedia: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMedia]]],
+    searchMembers: js.Function1[ISearchArgs, angularLib.angularMod.angularNs.IPromise[js.Array[ISearchMember]]]
+  ): ISearchService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("searchAll")(searchAll)
+    __obj.updateDynamic("searchContent")(searchContent)
+    __obj.updateDynamic("searchMedia")(searchMedia)
+    __obj.updateDynamic("searchMembers")(searchMembers)
+    __obj.asInstanceOf[ISearchService]
+  }
+}
+

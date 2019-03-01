@@ -20,3 +20,20 @@ trait XMenuBarAcceptor
   def updateMenuBar(xMenuBar: js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMenuBar]): scala.Unit
 }
 
+object XMenuBarAcceptor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateMenuBar: js.Function1[js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMenuBar], scala.Unit]
+  ): XMenuBarAcceptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("updateMenuBar")(updateMenuBar)
+    __obj.asInstanceOf[XMenuBarAcceptor]
+  }
+}
+

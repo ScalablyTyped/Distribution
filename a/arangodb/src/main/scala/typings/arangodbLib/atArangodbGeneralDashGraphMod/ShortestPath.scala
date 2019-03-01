@@ -11,3 +11,18 @@ trait ShortestPath[T /* <: js.Object */] extends js.Object {
   var vertices: js.Array[java.lang.String]
 }
 
+object ShortestPath {
+  @scala.inline
+  def apply[T /* <: js.Object */](
+    distance: scala.Double,
+    edges: js.Array[arangodbLib.ArangoDBNs.Edge[T]],
+    vertices: js.Array[java.lang.String]
+  ): ShortestPath[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("edges")(edges)
+    __obj.updateDynamic("vertices")(vertices)
+    __obj.asInstanceOf[ShortestPath[T]]
+  }
+}
+

@@ -16,3 +16,16 @@ trait EventListener extends js.Object {
   def callback(): scala.Unit
 }
 
+object EventListener {
+  @scala.inline
+  def apply(
+    callback: js.Function0[scala.Unit],
+    eventName: reactDashLottieLib.reactDashLottieLibStrings.complete | reactDashLottieLib.reactDashLottieLibStrings.loopComplete | reactDashLottieLib.reactDashLottieLibStrings.enterFrame | reactDashLottieLib.reactDashLottieLibStrings.segmentStart | reactDashLottieLib.reactDashLottieLibStrings.config_ready | reactDashLottieLib.reactDashLottieLibStrings.data_ready | reactDashLottieLib.reactDashLottieLibStrings.loaded_images | reactDashLottieLib.reactDashLottieLibStrings.DOMLoaded | reactDashLottieLib.reactDashLottieLibStrings.destroy
+  ): EventListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventListener]
+  }
+}
+

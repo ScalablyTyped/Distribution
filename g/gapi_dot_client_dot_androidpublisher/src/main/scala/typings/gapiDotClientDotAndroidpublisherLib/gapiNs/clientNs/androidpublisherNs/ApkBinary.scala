@@ -12,3 +12,13 @@ trait ApkBinary extends js.Object {
   var sha256: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApkBinary {
+  @scala.inline
+  def apply(sha1: java.lang.String = null, sha256: java.lang.String = null): ApkBinary = {
+    val __obj = js.Dynamic.literal()
+    if (sha1 != null) __obj.updateDynamic("sha1")(sha1)
+    if (sha256 != null) __obj.updateDynamic("sha256")(sha256)
+    __obj.asInstanceOf[ApkBinary]
+  }
+}
+

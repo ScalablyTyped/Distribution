@@ -18,3 +18,22 @@ trait imageAuditOptions
   var success_imageAuditOptions: js.UndefOr[js.Function1[/* res */ imageAuditResponse, scala.Unit]] = js.undefined
 }
 
+object imageAuditOptions {
+  @scala.inline
+  def apply(
+    image: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    imgUrl: java.lang.String = null,
+    success: js.Function1[/* res */ imageAuditResponse, scala.Unit] = null
+  ): imageAuditOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("image")(image)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (imgUrl != null) __obj.updateDynamic("imgUrl")(imgUrl)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[imageAuditOptions]
+  }
+}
+

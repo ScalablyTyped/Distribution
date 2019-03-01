@@ -28,3 +28,13 @@ trait JSTreeStaticDefaultsMassload extends js.Object {
   var url: js.Any
 }
 
+object JSTreeStaticDefaultsMassload {
+  @scala.inline
+  def apply(data: js.Any, url: js.Any): JSTreeStaticDefaultsMassload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[JSTreeStaticDefaultsMassload]
+  }
+}
+

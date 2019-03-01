@@ -14,3 +14,18 @@ trait SiteVerificationWebResourceResource extends js.Object {
   var site: js.UndefOr[gapiDotClientDotSiteverificationLib.Anon_Identifier] = js.undefined
 }
 
+object SiteVerificationWebResourceResource {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    owners: js.Array[java.lang.String] = null,
+    site: gapiDotClientDotSiteverificationLib.Anon_Identifier = null
+  ): SiteVerificationWebResourceResource = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (owners != null) __obj.updateDynamic("owners")(owners)
+    if (site != null) __obj.updateDynamic("site")(site)
+    __obj.asInstanceOf[SiteVerificationWebResourceResource]
+  }
+}
+

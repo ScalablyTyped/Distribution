@@ -16,3 +16,22 @@ trait NodePackage extends js.Object {
   var version: java.lang.String
 }
 
+object NodePackage {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    version: java.lang.String,
+    description: java.lang.String = null,
+    homepage: java.lang.String = null,
+    keywords: js.Array[java.lang.String] = null
+  ): NodePackage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("version")(version)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (homepage != null) __obj.updateDynamic("homepage")(homepage)
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords)
+    __obj.asInstanceOf[NodePackage]
+  }
+}
+

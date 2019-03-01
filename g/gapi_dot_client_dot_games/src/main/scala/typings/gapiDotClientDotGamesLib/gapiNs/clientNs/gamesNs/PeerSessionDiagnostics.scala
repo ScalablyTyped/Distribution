@@ -18,3 +18,22 @@ trait PeerSessionDiagnostics extends js.Object {
   var unreliableChannel: js.UndefOr[PeerChannelDiagnostics] = js.undefined
 }
 
+object PeerSessionDiagnostics {
+  @scala.inline
+  def apply(
+    connectedTimestampMillis: java.lang.String = null,
+    kind: java.lang.String = null,
+    participantId: java.lang.String = null,
+    reliableChannel: PeerChannelDiagnostics = null,
+    unreliableChannel: PeerChannelDiagnostics = null
+  ): PeerSessionDiagnostics = {
+    val __obj = js.Dynamic.literal()
+    if (connectedTimestampMillis != null) __obj.updateDynamic("connectedTimestampMillis")(connectedTimestampMillis)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (participantId != null) __obj.updateDynamic("participantId")(participantId)
+    if (reliableChannel != null) __obj.updateDynamic("reliableChannel")(reliableChannel)
+    if (unreliableChannel != null) __obj.updateDynamic("unreliableChannel")(unreliableChannel)
+    __obj.asInstanceOf[PeerSessionDiagnostics]
+  }
+}
+

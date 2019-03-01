@@ -12,3 +12,13 @@ trait StorageCapacityInfo extends js.Object {
   var id: java.lang.String
 }
 
+object StorageCapacityInfo {
+  @scala.inline
+  def apply(availableCapacity: scala.Double, id: java.lang.String): StorageCapacityInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("availableCapacity")(availableCapacity)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[StorageCapacityInfo]
+  }
+}
+

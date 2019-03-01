@@ -16,3 +16,13 @@ trait TooltipSettings extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TooltipSettings {
+  @scala.inline
+  def apply(enable: js.UndefOr[scala.Boolean] = js.undefined, template: java.lang.String = null): TooltipSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[TooltipSettings]
+  }
+}
+

@@ -34,3 +34,20 @@ trait InitializerConfigurationList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object InitializerConfigurationList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1`,
+    items: js.Array[InitializerConfiguration],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfigurationList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): InitializerConfigurationList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[InitializerConfigurationList]
+  }
+}
+

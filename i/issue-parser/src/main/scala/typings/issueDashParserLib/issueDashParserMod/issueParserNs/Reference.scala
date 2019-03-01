@@ -12,3 +12,20 @@ trait Reference extends js.Object {
   var slug: js.UndefOr[java.lang.String]
 }
 
+object Reference {
+  @scala.inline
+  def apply(
+    issue: java.lang.String,
+    raw: java.lang.String,
+    prefix: java.lang.String = null,
+    slug: java.lang.String = null
+  ): Reference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("issue")(issue)
+    __obj.updateDynamic("raw")(raw)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (slug != null) __obj.updateDynamic("slug")(slug)
+    __obj.asInstanceOf[Reference]
+  }
+}
+

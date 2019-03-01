@@ -40,3 +40,20 @@ trait EndReconciliationResponse extends js.Object {
   var serviceConfigId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EndReconciliationResponse {
+  @scala.inline
+  def apply(
+    operationId: java.lang.String = null,
+    quotaMetrics: js.Array[MetricValueSet] = null,
+    reconciliationErrors: js.Array[QuotaError] = null,
+    serviceConfigId: java.lang.String = null
+  ): EndReconciliationResponse = {
+    val __obj = js.Dynamic.literal()
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics)
+    if (reconciliationErrors != null) __obj.updateDynamic("reconciliationErrors")(reconciliationErrors)
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    __obj.asInstanceOf[EndReconciliationResponse]
+  }
+}
+

@@ -26,3 +26,24 @@ trait DropEventArgs extends js.Object {
   var target: js.UndefOr[js.Any] = js.undefined
 }
 
+object DropEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    diagramId: java.lang.String = null,
+    element: js.Any = null,
+    objectType: java.lang.String = null,
+    source: js.Any = null,
+    target: js.Any = null
+  ): DropEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[DropEventArgs]
+  }
+}
+

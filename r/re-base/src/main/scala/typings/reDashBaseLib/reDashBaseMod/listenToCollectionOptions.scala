@@ -37,3 +37,23 @@ trait listenToCollectionOptions extends js.Object {
   def `then`(): scala.Unit
 }
 
+object listenToCollectionOptions {
+  @scala.inline
+  def apply(
+    context: js.Object,
+    `then`: js.Function0[scala.Unit],
+    onFailure: js.Function0[scala.Unit] = null,
+    query: js.Function0[scala.Unit] = null,
+    withIds: js.UndefOr[scala.Boolean] = js.undefined,
+    withRefs: js.UndefOr[scala.Boolean] = js.undefined
+  ): listenToCollectionOptions = {
+    val __obj = js.Dynamic.literal(`then` = `then`)
+    __obj.updateDynamic("context")(context)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds)
+    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs)
+    __obj.asInstanceOf[listenToCollectionOptions]
+  }
+}
+

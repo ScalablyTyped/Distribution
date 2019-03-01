@@ -13,3 +13,16 @@ trait Anon_Cancel extends js.Object {
   val pDisp: js.Any
 }
 
+object Anon_Cancel {
+  @scala.inline
+  def apply(Cancel: scala.Boolean, Frame: js.Any, StatusCode: js.Any, URL: js.Any, pDisp: js.Any): Anon_Cancel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("Frame")(Frame)
+    __obj.updateDynamic("StatusCode")(StatusCode)
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("pDisp")(pDisp)
+    __obj.asInstanceOf[Anon_Cancel]
+  }
+}
+

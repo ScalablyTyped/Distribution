@@ -15,3 +15,22 @@ trait IscanQRCode extends BaseParams {
   def success_MIscanQRCode(res: jweixinLib.Anon_ResultStr): scala.Unit
 }
 
+object IscanQRCode {
+  @scala.inline
+  def apply(
+    needResult: jweixinLib.jweixinLibNumbers.`0` | jweixinLib.jweixinLibNumbers.`1`,
+    scanType: js.Array[scanType],
+    success: js.Function1[jweixinLib.Anon_ResultStr, scala.Unit],
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): IscanQRCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("needResult")(needResult.asInstanceOf[js.Any])
+    __obj.updateDynamic("scanType")(scanType)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[IscanQRCode]
+  }
+}
+

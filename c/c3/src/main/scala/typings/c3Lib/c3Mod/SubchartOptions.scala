@@ -18,3 +18,18 @@ trait SubchartOptions extends js.Object {
   var size: js.UndefOr[c3Lib.Anon_HeightNumber] = js.undefined
 }
 
+object SubchartOptions {
+  @scala.inline
+  def apply(
+    onbrush: js.Function1[/* domain */ js.Any, scala.Unit] = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    size: c3Lib.Anon_HeightNumber = null
+  ): SubchartOptions = {
+    val __obj = js.Dynamic.literal()
+    if (onbrush != null) __obj.updateDynamic("onbrush")(onbrush)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[SubchartOptions]
+  }
+}
+

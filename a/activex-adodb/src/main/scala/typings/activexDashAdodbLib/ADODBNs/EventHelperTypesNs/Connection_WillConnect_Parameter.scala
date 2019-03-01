@@ -14,3 +14,24 @@ trait Connection_WillConnect_Parameter extends js.Object {
   val pConnection: activexDashAdodbLib.ADODBNs.Connection
 }
 
+object Connection_WillConnect_Parameter {
+  @scala.inline
+  def apply(
+    ConnectionString: java.lang.String,
+    Options: scala.Double,
+    Password: java.lang.String,
+    UserID: java.lang.String,
+    adStatus: activexDashAdodbLib.ADODBNs.EventStatusEnum,
+    pConnection: activexDashAdodbLib.ADODBNs.Connection
+  ): Connection_WillConnect_Parameter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ConnectionString")(ConnectionString)
+    __obj.updateDynamic("Options")(Options)
+    __obj.updateDynamic("Password")(Password)
+    __obj.updateDynamic("UserID")(UserID)
+    __obj.updateDynamic("adStatus")(adStatus)
+    __obj.updateDynamic("pConnection")(pConnection)
+    __obj.asInstanceOf[Connection_WillConnect_Parameter]
+  }
+}
+

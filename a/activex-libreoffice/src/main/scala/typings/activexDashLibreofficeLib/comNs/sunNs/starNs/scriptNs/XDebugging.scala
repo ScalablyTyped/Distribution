@@ -69,3 +69,46 @@ trait XDebugging
   def stop(): scala.Unit
 }
 
+object XDebugging {
+  @scala.inline
+  def apply(
+    StackTrace: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    clearAllBreakPoints: js.Function1[java.lang.String, scala.Unit],
+    doContinue: js.Function0[scala.Unit],
+    dumpVariable: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    eval: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getContextInformation: js.Function1[scala.Double, ContextInformation],
+    getStackTrace: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    isVariable: js.Function2[java.lang.String, scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setBreakPoint: js.Function3[java.lang.String, scala.Double, scala.Boolean, scala.Double],
+    setVariable: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit],
+    stepIn: js.Function0[scala.Unit],
+    stepOut: js.Function0[scala.Unit],
+    stepOver: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): XDebugging = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("StackTrace")(StackTrace)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("clearAllBreakPoints")(clearAllBreakPoints)
+    __obj.updateDynamic("doContinue")(doContinue)
+    __obj.updateDynamic("dumpVariable")(dumpVariable)
+    __obj.updateDynamic("eval")(eval)
+    __obj.updateDynamic("getContextInformation")(getContextInformation)
+    __obj.updateDynamic("getStackTrace")(getStackTrace)
+    __obj.updateDynamic("isVariable")(isVariable)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setBreakPoint")(setBreakPoint)
+    __obj.updateDynamic("setVariable")(setVariable)
+    __obj.updateDynamic("stepIn")(stepIn)
+    __obj.updateDynamic("stepOut")(stepOut)
+    __obj.updateDynamic("stepOver")(stepOver)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[XDebugging]
+  }
+}
+

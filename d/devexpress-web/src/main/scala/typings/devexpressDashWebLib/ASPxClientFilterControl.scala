@@ -52,3 +52,62 @@ trait ASPxClientFilterControl extends ASPxClientControl {
   def Reset(): scala.Unit
 }
 
+object ASPxClientFilterControl {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    Applied: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]],
+    Apply: js.Function0[scala.Unit],
+    BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]],
+    CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]],
+    EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]],
+    GetAppliedFilterExpression: js.Function0[java.lang.String],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetEditor: js.Function1[scala.Double, ASPxClientEditBase],
+    GetFilterExpression: js.Function0[java.lang.String],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetParentControl: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    IsFilterExpressionValid: js.Function0[scala.Boolean],
+    Reset: js.Function0[scala.Unit],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientFilterControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AdjustControl")(AdjustControl)
+    __obj.updateDynamic("Applied")(Applied)
+    __obj.updateDynamic("Apply")(Apply)
+    __obj.updateDynamic("BeginCallback")(BeginCallback)
+    __obj.updateDynamic("CallbackError")(CallbackError)
+    __obj.updateDynamic("EndCallback")(EndCallback)
+    __obj.updateDynamic("GetAppliedFilterExpression")(GetAppliedFilterExpression)
+    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
+    __obj.updateDynamic("GetEditor")(GetEditor)
+    __obj.updateDynamic("GetFilterExpression")(GetFilterExpression)
+    __obj.updateDynamic("GetHeight")(GetHeight)
+    __obj.updateDynamic("GetMainElement")(GetMainElement)
+    __obj.updateDynamic("GetParentControl")(GetParentControl)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("GetWidth")(GetWidth)
+    __obj.updateDynamic("InCallback")(InCallback)
+    __obj.updateDynamic("Init")(Init)
+    __obj.updateDynamic("IsFilterExpressionValid")(IsFilterExpressionValid)
+    __obj.updateDynamic("Reset")(Reset)
+    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
+    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
+    __obj.updateDynamic("SetHeight")(SetHeight)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("SetWidth")(SetWidth)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientFilterControl]
+  }
+}
+

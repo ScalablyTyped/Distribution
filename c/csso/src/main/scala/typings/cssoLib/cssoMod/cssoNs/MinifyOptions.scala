@@ -32,3 +32,24 @@ trait MinifyOptions extends js.Object {
   var sourceMap: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MinifyOptions {
+  @scala.inline
+  def apply(
+    afterCompress: AfterCompressFn | js.Array[AfterCompressFn] = null,
+    beforeCompress: BeforeCompressFn | js.Array[BeforeCompressFn] = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    filename: java.lang.String = null,
+    restructure: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceMap: js.UndefOr[scala.Boolean] = js.undefined
+  ): MinifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterCompress != null) __obj.updateDynamic("afterCompress")(afterCompress.asInstanceOf[js.Any])
+    if (beforeCompress != null) __obj.updateDynamic("beforeCompress")(beforeCompress.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(restructure)) __obj.updateDynamic("restructure")(restructure)
+    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap)
+    __obj.asInstanceOf[MinifyOptions]
+  }
+}
+

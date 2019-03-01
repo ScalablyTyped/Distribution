@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object enigmaDotJsLibStrings {
   @js.native
-  sealed trait Doc extends js.Object
+  sealed trait Doc
+    extends enigmaDotJsLib.enigmaJSNs._MixinType
   
   @js.native
-  sealed trait GenericBookmark extends js.Object
+  sealed trait GenericBookmark
+    extends enigmaDotJsLib.enigmaJSNs._MixinType
   
   @js.native
-  sealed trait GenericObject extends js.Object
+  sealed trait GenericObject
+    extends enigmaDotJsLib.enigmaJSNs._MixinType
   
   @js.native
   sealed trait changed extends js.Object

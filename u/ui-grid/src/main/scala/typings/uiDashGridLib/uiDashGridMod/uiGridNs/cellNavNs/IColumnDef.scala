@@ -14,3 +14,12 @@ trait IColumnDef extends js.Object {
   var allowCellFocus: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IColumnDef {
+  @scala.inline
+  def apply(allowCellFocus: js.UndefOr[scala.Boolean] = js.undefined): IColumnDef = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowCellFocus)) __obj.updateDynamic("allowCellFocus")(allowCellFocus)
+    __obj.asInstanceOf[IColumnDef]
+  }
+}
+

@@ -44,3 +44,32 @@ trait GrantArgs extends js.Object {
   val retiringPrincipal: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object GrantArgs {
+  @scala.inline
+  def apply(
+    granteePrincipal: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    keyId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    operations: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    constraints: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionContextEqualsEncryptionContextSubset]
+      ]
+    ] = null,
+    grantCreationTokens: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    retireOnDelete: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    retiringPrincipal: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): GrantArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("granteePrincipal")(granteePrincipal.asInstanceOf[js.Any])
+    __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
+    __obj.updateDynamic("operations")(operations.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (grantCreationTokens != null) __obj.updateDynamic("grantCreationTokens")(grantCreationTokens.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (retireOnDelete != null) __obj.updateDynamic("retireOnDelete")(retireOnDelete.asInstanceOf[js.Any])
+    if (retiringPrincipal != null) __obj.updateDynamic("retiringPrincipal")(retiringPrincipal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GrantArgs]
+  }
+}
+

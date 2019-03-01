@@ -15,3 +15,12 @@ trait RuntimePermission extends js.Object {
   var Name: java.lang.String
 }
 
+object RuntimePermission {
+  @scala.inline
+  def apply(Name: java.lang.String): RuntimePermission = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.asInstanceOf[RuntimePermission]
+  }
+}
+

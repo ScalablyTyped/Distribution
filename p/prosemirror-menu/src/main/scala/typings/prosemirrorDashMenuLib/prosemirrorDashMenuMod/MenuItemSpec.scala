@@ -97,3 +97,51 @@ trait MenuItemSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schem
   ): scala.Unit
 }
 
+object MenuItemSpec {
+  @scala.inline
+  def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    `class`: java.lang.String,
+    css: java.lang.String,
+    execEvent: java.lang.String,
+    run: js.Function4[
+      prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+      js.Function1[/* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S], scala.Unit], 
+      prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], 
+      stdLib.Event, 
+      scala.Unit
+    ],
+    active: js.Function1[
+      /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+      scala.Boolean
+    ] = null,
+    enable: js.Function1[
+      /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+      scala.Boolean
+    ] = null,
+    icon: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    label: java.lang.String = null,
+    render: js.Function1[/* p */ prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], stdLib.Node] = null,
+    select: js.Function1[
+      /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+      scala.Boolean
+    ] = null,
+    title: java.lang.String | (js.Function1[
+      /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+      java.lang.String
+    ]) = null
+  ): MenuItemSpec[S] = {
+    val __obj = js.Dynamic.literal(`class` = `class`)
+    __obj.updateDynamic("css")(css)
+    __obj.updateDynamic("execEvent")(execEvent)
+    __obj.updateDynamic("run")(run)
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (enable != null) __obj.updateDynamic("enable")(enable)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MenuItemSpec[S]]
+  }
+}
+

@@ -13,3 +13,18 @@ trait CheckboxSettings extends js.Object {
   var uiLibrary: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CheckboxSettings {
+  @scala.inline
+  def apply(
+    change: js.Function2[/* e */ js.Any, /* state */ java.lang.String, _] = null,
+    iconsLibrary: java.lang.String = null,
+    uiLibrary: java.lang.String = null
+  ): CheckboxSettings = {
+    val __obj = js.Dynamic.literal()
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary)
+    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary)
+    __obj.asInstanceOf[CheckboxSettings]
+  }
+}
+

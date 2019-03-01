@@ -114,3 +114,59 @@ trait IgGridColumnFixing
   var syncRowHeights: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgGridColumnFixing {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridColumnFixing
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columnFixed: ColumnFixedEvent = null,
+    columnFixing: ColumnFixingEvent = null,
+    columnFixingRefused: ColumnFixingRefusedEvent = null,
+    columnSettings: js.Array[IgGridColumnFixingColumnSetting] = null,
+    columnUnfixed: ColumnUnfixedEvent = null,
+    columnUnfixing: ColumnUnfixingEvent = null,
+    columnUnfixingRefused: ColumnUnfixingRefusedEvent = null,
+    featureChooserTextFixedColumn: java.lang.String = null,
+    featureChooserTextUnfixedColumn: java.lang.String = null,
+    fixNondataColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    fixingDirection: java.lang.String = null,
+    headerFixButtonText: java.lang.String = null,
+    headerUnfixButtonText: java.lang.String = null,
+    language: java.lang.String = null,
+    locale: IgGridColumnFixingLocale = null,
+    minimalVisibleAreaWidth: java.lang.String | scala.Double = null,
+    populateDataRowsAttributes: js.UndefOr[scala.Boolean] = js.undefined,
+    regional: java.lang.String | js.Object = null,
+    scrollDelta: scala.Int | scala.Double = null,
+    showFixButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    syncRowHeights: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgGridColumnFixing = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnFixed != null) __obj.updateDynamic("columnFixed")(columnFixed)
+    if (columnFixing != null) __obj.updateDynamic("columnFixing")(columnFixing)
+    if (columnFixingRefused != null) __obj.updateDynamic("columnFixingRefused")(columnFixingRefused)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (columnUnfixed != null) __obj.updateDynamic("columnUnfixed")(columnUnfixed)
+    if (columnUnfixing != null) __obj.updateDynamic("columnUnfixing")(columnUnfixing)
+    if (columnUnfixingRefused != null) __obj.updateDynamic("columnUnfixingRefused")(columnUnfixingRefused)
+    if (featureChooserTextFixedColumn != null) __obj.updateDynamic("featureChooserTextFixedColumn")(featureChooserTextFixedColumn)
+    if (featureChooserTextUnfixedColumn != null) __obj.updateDynamic("featureChooserTextUnfixedColumn")(featureChooserTextUnfixedColumn)
+    if (!js.isUndefined(fixNondataColumns)) __obj.updateDynamic("fixNondataColumns")(fixNondataColumns)
+    if (fixingDirection != null) __obj.updateDynamic("fixingDirection")(fixingDirection)
+    if (headerFixButtonText != null) __obj.updateDynamic("headerFixButtonText")(headerFixButtonText)
+    if (headerUnfixButtonText != null) __obj.updateDynamic("headerUnfixButtonText")(headerUnfixButtonText)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (minimalVisibleAreaWidth != null) __obj.updateDynamic("minimalVisibleAreaWidth")(minimalVisibleAreaWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(populateDataRowsAttributes)) __obj.updateDynamic("populateDataRowsAttributes")(populateDataRowsAttributes)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (scrollDelta != null) __obj.updateDynamic("scrollDelta")(scrollDelta.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFixButtons)) __obj.updateDynamic("showFixButtons")(showFixButtons)
+    if (!js.isUndefined(syncRowHeights)) __obj.updateDynamic("syncRowHeights")(syncRowHeights)
+    __obj.asInstanceOf[IgGridColumnFixing]
+  }
+}
+

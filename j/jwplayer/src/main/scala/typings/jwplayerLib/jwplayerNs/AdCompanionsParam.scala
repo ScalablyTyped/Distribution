@@ -10,3 +10,13 @@ trait AdCompanionsParam extends js.Object {
   var tag: java.lang.String
 }
 
+object AdCompanionsParam {
+  @scala.inline
+  def apply(companions: js.Array[_], tag: java.lang.String): AdCompanionsParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("companions")(companions)
+    __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[AdCompanionsParam]
+  }
+}
+

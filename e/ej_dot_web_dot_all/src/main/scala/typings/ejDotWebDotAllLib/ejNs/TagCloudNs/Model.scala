@@ -70,3 +70,46 @@ trait Model extends js.Object {
   var titleText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    dataSource: js.Any = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: Fields = null,
+    format: java.lang.String | ejDotWebDotAllLib.ejNs.Format = null,
+    htmlAttributes: js.Any = null,
+    maxFontSize: java.lang.String | scala.Double = null,
+    minFontSize: java.lang.String | scala.Double = null,
+    mouseout: js.Function1[/* e */ MouseoutEventArgs, scala.Unit] = null,
+    mouseover: js.Function1[/* e */ MouseoverEventArgs, scala.Unit] = null,
+    query: js.Any = null,
+    showTitle: js.UndefOr[scala.Boolean] = js.undefined,
+    titleImage: java.lang.String = null,
+    titleText: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (maxFontSize != null) __obj.updateDynamic("maxFontSize")(maxFontSize.asInstanceOf[js.Any])
+    if (minFontSize != null) __obj.updateDynamic("minFontSize")(minFontSize.asInstanceOf[js.Any])
+    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
+    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle)
+    if (titleImage != null) __obj.updateDynamic("titleImage")(titleImage)
+    if (titleText != null) __obj.updateDynamic("titleText")(titleText)
+    __obj.asInstanceOf[Model]
+  }
+}
+

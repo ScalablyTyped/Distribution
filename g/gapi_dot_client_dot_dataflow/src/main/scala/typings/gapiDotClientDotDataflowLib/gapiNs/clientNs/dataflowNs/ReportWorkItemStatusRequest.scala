@@ -25,3 +25,20 @@ trait ReportWorkItemStatusRequest extends js.Object {
   var workerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReportWorkItemStatusRequest {
+  @scala.inline
+  def apply(
+    currentWorkerTime: java.lang.String = null,
+    location: java.lang.String = null,
+    workItemStatuses: js.Array[WorkItemStatus] = null,
+    workerId: java.lang.String = null
+  ): ReportWorkItemStatusRequest = {
+    val __obj = js.Dynamic.literal()
+    if (currentWorkerTime != null) __obj.updateDynamic("currentWorkerTime")(currentWorkerTime)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (workItemStatuses != null) __obj.updateDynamic("workItemStatuses")(workItemStatuses)
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    __obj.asInstanceOf[ReportWorkItemStatusRequest]
+  }
+}
+

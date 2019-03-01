@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object ParserNs {
   type Data = scala.Double | java.lang.String | (js.Array[scala.Double | binaryDashParserLib.binaryDashParserMod.Parser[js.Any]]) | binaryDashParserLib.binaryDashParserMod.Parser[js.Any] | nodeLib.Buffer
-  type Endianness = binaryDashParserLib.binaryDashParserLibStrings.little | binaryDashParserLib.binaryDashParserLibStrings.big
   type Next[O /* <: js.UndefOr[js.Object] */, N /* <: java.lang.String */, T /* <: js.Any */] = binaryDashParserLib.binaryDashParserMod.Parser[
     Valid[
       O, 

@@ -14,3 +14,18 @@ trait ExecutionStageState extends js.Object {
   var executionStageState: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExecutionStageState {
+  @scala.inline
+  def apply(
+    currentStateTime: java.lang.String = null,
+    executionStageName: java.lang.String = null,
+    executionStageState: java.lang.String = null
+  ): ExecutionStageState = {
+    val __obj = js.Dynamic.literal()
+    if (currentStateTime != null) __obj.updateDynamic("currentStateTime")(currentStateTime)
+    if (executionStageName != null) __obj.updateDynamic("executionStageName")(executionStageName)
+    if (executionStageState != null) __obj.updateDynamic("executionStageState")(executionStageState)
+    __obj.asInstanceOf[ExecutionStageState]
+  }
+}
+

@@ -16,3 +16,16 @@ trait LogResourcePolicyArgs extends js.Object {
   val policyName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object LogResourcePolicyArgs {
+  @scala.inline
+  def apply(
+    policyDocument: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    policyName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): LogResourcePolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("policyDocument")(policyDocument.asInstanceOf[js.Any])
+    __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogResourcePolicyArgs]
+  }
+}
+

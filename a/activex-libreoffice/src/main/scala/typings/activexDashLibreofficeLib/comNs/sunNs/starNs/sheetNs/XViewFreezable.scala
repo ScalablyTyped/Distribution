@@ -22,3 +22,22 @@ trait XViewFreezable
   def hasFrozenPanes(): scala.Boolean
 }
 
+object XViewFreezable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    freezeAtPosition: js.Function2[scala.Double, scala.Double, scala.Unit],
+    hasFrozenPanes: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XViewFreezable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("freezeAtPosition")(freezeAtPosition)
+    __obj.updateDynamic("hasFrozenPanes")(hasFrozenPanes)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XViewFreezable]
+  }
+}
+

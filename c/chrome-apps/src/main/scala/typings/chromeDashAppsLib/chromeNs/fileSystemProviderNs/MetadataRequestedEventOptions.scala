@@ -38,3 +38,30 @@ trait MetadataRequestedEventOptions
   var thumbnail: scala.Boolean
 }
 
+object MetadataRequestedEventOptions {
+  @scala.inline
+  def apply(
+    entryPath: java.lang.String,
+    fileSystemId: java.lang.String,
+    isDirectory: scala.Boolean,
+    mimeType: scala.Boolean,
+    modificationTime: scala.Boolean,
+    name: scala.Boolean,
+    requestId: chromeDashAppsLib.chromeNs.integer,
+    size: scala.Boolean,
+    thumbnail: scala.Boolean
+  ): MetadataRequestedEventOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entryPath")(entryPath)
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("isDirectory")(isDirectory)
+    __obj.updateDynamic("mimeType")(mimeType)
+    __obj.updateDynamic("modificationTime")(modificationTime)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[MetadataRequestedEventOptions]
+  }
+}
+

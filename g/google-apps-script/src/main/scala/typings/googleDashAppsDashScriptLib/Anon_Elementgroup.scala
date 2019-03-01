@@ -25,3 +25,28 @@ trait Anon_Elementgroup extends js.Object {
   var word_art: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.WordArt
 }
 
+object Anon_Elementgroup {
+  @scala.inline
+  def apply(
+    element_group: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Group,
+    image: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Image,
+    line: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Line,
+    shape: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Shape,
+    sheets_chart: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.SheetsChart,
+    table: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Table,
+    video: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Video,
+    word_art: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.WordArt
+  ): Anon_Elementgroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element_group")(element_group)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("shape")(shape)
+    __obj.updateDynamic("sheets_chart")(sheets_chart)
+    __obj.updateDynamic("table")(table)
+    __obj.updateDynamic("video")(video)
+    __obj.updateDynamic("word_art")(word_art)
+    __obj.asInstanceOf[Anon_Elementgroup]
+  }
+}
+

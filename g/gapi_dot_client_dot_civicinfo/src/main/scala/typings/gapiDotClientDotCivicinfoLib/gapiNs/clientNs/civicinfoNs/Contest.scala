@@ -78,3 +78,60 @@ trait Contest extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Contest {
+  @scala.inline
+  def apply(
+    ballotPlacement: java.lang.String = null,
+    candidates: js.Array[Candidate] = null,
+    district: ElectoralDistrict = null,
+    electorateSpecifications: java.lang.String = null,
+    id: java.lang.String = null,
+    level: js.Array[java.lang.String] = null,
+    numberElected: java.lang.String = null,
+    numberVotingFor: java.lang.String = null,
+    office: java.lang.String = null,
+    primaryParty: java.lang.String = null,
+    referendumBallotResponses: js.Array[java.lang.String] = null,
+    referendumBrief: java.lang.String = null,
+    referendumConStatement: java.lang.String = null,
+    referendumEffectOfAbstain: java.lang.String = null,
+    referendumPassageThreshold: java.lang.String = null,
+    referendumProStatement: java.lang.String = null,
+    referendumSubtitle: java.lang.String = null,
+    referendumText: java.lang.String = null,
+    referendumTitle: java.lang.String = null,
+    referendumUrl: java.lang.String = null,
+    roles: js.Array[java.lang.String] = null,
+    sources: js.Array[Source] = null,
+    special: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Contest = {
+    val __obj = js.Dynamic.literal()
+    if (ballotPlacement != null) __obj.updateDynamic("ballotPlacement")(ballotPlacement)
+    if (candidates != null) __obj.updateDynamic("candidates")(candidates)
+    if (district != null) __obj.updateDynamic("district")(district)
+    if (electorateSpecifications != null) __obj.updateDynamic("electorateSpecifications")(electorateSpecifications)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (level != null) __obj.updateDynamic("level")(level)
+    if (numberElected != null) __obj.updateDynamic("numberElected")(numberElected)
+    if (numberVotingFor != null) __obj.updateDynamic("numberVotingFor")(numberVotingFor)
+    if (office != null) __obj.updateDynamic("office")(office)
+    if (primaryParty != null) __obj.updateDynamic("primaryParty")(primaryParty)
+    if (referendumBallotResponses != null) __obj.updateDynamic("referendumBallotResponses")(referendumBallotResponses)
+    if (referendumBrief != null) __obj.updateDynamic("referendumBrief")(referendumBrief)
+    if (referendumConStatement != null) __obj.updateDynamic("referendumConStatement")(referendumConStatement)
+    if (referendumEffectOfAbstain != null) __obj.updateDynamic("referendumEffectOfAbstain")(referendumEffectOfAbstain)
+    if (referendumPassageThreshold != null) __obj.updateDynamic("referendumPassageThreshold")(referendumPassageThreshold)
+    if (referendumProStatement != null) __obj.updateDynamic("referendumProStatement")(referendumProStatement)
+    if (referendumSubtitle != null) __obj.updateDynamic("referendumSubtitle")(referendumSubtitle)
+    if (referendumText != null) __obj.updateDynamic("referendumText")(referendumText)
+    if (referendumTitle != null) __obj.updateDynamic("referendumTitle")(referendumTitle)
+    if (referendumUrl != null) __obj.updateDynamic("referendumUrl")(referendumUrl)
+    if (roles != null) __obj.updateDynamic("roles")(roles)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (special != null) __obj.updateDynamic("special")(special)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Contest]
+  }
+}
+

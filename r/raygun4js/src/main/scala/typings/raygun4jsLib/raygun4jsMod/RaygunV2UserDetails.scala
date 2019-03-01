@@ -32,3 +32,24 @@ trait RaygunV2UserDetails extends js.Object {
   var uuid: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RaygunV2UserDetails {
+  @scala.inline
+  def apply(
+    identifier: java.lang.String,
+    email: java.lang.String = null,
+    firstName: java.lang.String = null,
+    fullName: java.lang.String = null,
+    isAnonymous: js.UndefOr[scala.Boolean] = js.undefined,
+    uuid: java.lang.String = null
+  ): RaygunV2UserDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("identifier")(identifier)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
+    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
+    if (!js.isUndefined(isAnonymous)) __obj.updateDynamic("isAnonymous")(isAnonymous)
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    __obj.asInstanceOf[RaygunV2UserDetails]
+  }
+}
+

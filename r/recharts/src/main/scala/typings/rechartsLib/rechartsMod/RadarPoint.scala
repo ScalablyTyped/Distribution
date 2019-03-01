@@ -16,3 +16,28 @@ trait RadarPoint extends js.Object {
   var y: scala.Double
 }
 
+object RadarPoint {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    cx: scala.Double,
+    cy: scala.Double,
+    payload: js.Object,
+    radius: scala.Double,
+    value: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): RadarPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("cx")(cx)
+    __obj.updateDynamic("cy")(cy)
+    __obj.updateDynamic("payload")(payload)
+    __obj.updateDynamic("radius")(radius)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[RadarPoint]
+  }
+}
+

@@ -35,3 +35,26 @@ trait ScalesCustomLabel extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ScalesCustomLabel {
+  @scala.inline
+  def apply(
+    color: scala.Int | scala.Double = null,
+    font: ScalesCustomLabelsFont = null,
+    opacity: java.lang.String = null,
+    position: ScalesCustomLabelsPosition = null,
+    positionType: js.Any = null,
+    textAngle: scala.Int | scala.Double = null,
+    value: java.lang.String = null
+  ): ScalesCustomLabel = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (positionType != null) __obj.updateDynamic("positionType")(positionType)
+    if (textAngle != null) __obj.updateDynamic("textAngle")(textAngle.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ScalesCustomLabel]
+  }
+}
+

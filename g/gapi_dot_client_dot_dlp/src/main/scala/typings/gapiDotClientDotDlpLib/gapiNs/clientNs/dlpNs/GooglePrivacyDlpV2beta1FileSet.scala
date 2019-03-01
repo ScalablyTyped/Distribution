@@ -13,3 +13,12 @@ trait GooglePrivacyDlpV2beta1FileSet extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1FileSet {
+  @scala.inline
+  def apply(url: java.lang.String = null): GooglePrivacyDlpV2beta1FileSet = {
+    val __obj = js.Dynamic.literal()
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1FileSet]
+  }
+}
+

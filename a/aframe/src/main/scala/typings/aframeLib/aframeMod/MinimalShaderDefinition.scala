@@ -11,3 +11,16 @@ trait MinimalShaderDefinition extends js.Object {
   ]
 }
 
+object MinimalShaderDefinition {
+  @scala.inline
+  def apply(
+    schema: Schema[
+      /* import warning: ImportType.apply Failed type conversion: this['data'] */ js.Any
+    ]
+  ): MinimalShaderDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MinimalShaderDefinition]
+  }
+}
+

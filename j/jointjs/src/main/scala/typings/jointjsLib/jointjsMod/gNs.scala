@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("jointjs", "g")
 @js.native
 object gNs extends js.Object {
+  trait CardinalDirection extends js.Object
+  
   @js.native
   class Curve protected () extends js.Object {
     def this(curve: Curve) = this()
@@ -429,6 +431,8 @@ object gNs extends js.Object {
     def union(rect: PlainRect): Rect = js.native
   }
   
+  trait RectangleSide extends js.Object
+  
   trait Scale extends js.Object {
     var sx: scala.Double
     var sy: scala.Double
@@ -480,6 +484,8 @@ object gNs extends js.Object {
   trait SegmentSubdivisionsOpt extends PrecisionOpt {
     var segmentSubdivisions: js.UndefOr[js.Array[js.Array[Curve]]] = js.undefined
   }
+  
+  trait SegmentType extends js.Object
   
   trait SegmentTypes
     extends /* key */ org.scalablytyped.runtime.StringDictionary[Segment]
@@ -660,8 +666,5 @@ object gNs extends js.Object {
     ): scala.Double = js.native
   }
   
-  type CardinalDirection = jointjsLib.jointjsLibStrings.NE | jointjsLib.jointjsLibStrings.E | jointjsLib.jointjsLibStrings.SE | jointjsLib.jointjsLibStrings.S | jointjsLib.jointjsLibStrings.SW | jointjsLib.jointjsLibStrings.W | jointjsLib.jointjsLibStrings.NW | jointjsLib.jointjsLibStrings.N
-  type RectangleSide = jointjsLib.jointjsLibStrings.left | jointjsLib.jointjsLibStrings.right | jointjsLib.jointjsLibStrings.top | jointjsLib.jointjsLibStrings.bottom
-  type SegmentType = jointjsLib.jointjsLibStrings.L | jointjsLib.jointjsLibStrings.C | jointjsLib.jointjsLibStrings.M | jointjsLib.jointjsLibStrings.Z
 }
 

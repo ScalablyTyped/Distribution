@@ -10,3 +10,16 @@ trait Anon_Countries extends js.Object {
   var land: topojsonDashSpecificationLib.topojsonDashSpecificationMod.GeometryCollection[js.Object]
 }
 
+object Anon_Countries {
+  @scala.inline
+  def apply(
+    countries: Anon_Geometries,
+    land: topojsonDashSpecificationLib.topojsonDashSpecificationMod.GeometryCollection[js.Object]
+  ): Anon_Countries = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("countries")(countries)
+    __obj.updateDynamic("land")(land)
+    __obj.asInstanceOf[Anon_Countries]
+  }
+}
+

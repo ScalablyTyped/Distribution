@@ -46,3 +46,30 @@ trait AnalyticsApplicationArgs extends js.Object {
   val referenceDataSources: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IdS3Schema]] = js.undefined
 }
 
+object AnalyticsApplicationArgs {
+  @scala.inline
+  def apply(
+    cloudwatchLoggingOptions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IdLogStreamArnRoleArn] = null,
+    code: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    inputs: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IdKinesisFirehoseKinesisStreamNamePrefix] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    outputs: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IdKinesisFirehoseKinesisStreamLambda]
+      ]
+    ] = null,
+    referenceDataSources: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IdS3Schema] = null
+  ): AnalyticsApplicationArgs = {
+    val __obj = js.Dynamic.literal()
+    if (cloudwatchLoggingOptions != null) __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
+    if (referenceDataSources != null) __obj.updateDynamic("referenceDataSources")(referenceDataSources.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnalyticsApplicationArgs]
+  }
+}
+

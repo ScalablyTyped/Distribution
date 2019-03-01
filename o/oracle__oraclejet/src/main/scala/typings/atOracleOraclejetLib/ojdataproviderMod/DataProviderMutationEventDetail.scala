@@ -11,3 +11,18 @@ trait DataProviderMutationEventDetail[K, D] extends js.Object {
   var update: js.UndefOr[DataProviderOperationEventDetail[K, D]] = js.undefined
 }
 
+object DataProviderMutationEventDetail {
+  @scala.inline
+  def apply[K, D](
+    add: DataProviderAddOperationEventDetail[K, D] = null,
+    remove: DataProviderOperationEventDetail[K, D] = null,
+    update: DataProviderOperationEventDetail[K, D] = null
+  ): DataProviderMutationEventDetail[K, D] = {
+    val __obj = js.Dynamic.literal()
+    if (add != null) __obj.updateDynamic("add")(add)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[DataProviderMutationEventDetail[K, D]]
+  }
+}
+

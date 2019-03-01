@@ -520,8 +520,16 @@ object KinesisVideoNs extends js.Object {
   
   trait UpdateStreamOutput extends js.Object
   
+  trait _APIName extends js.Object
+  
+  trait _Status extends js.Object
+  
+  trait _UpdateDataRetentionOperation extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
-  type APIName = awsDashSdkLib.awsDashSdkLibStrings.PUT_MEDIA | awsDashSdkLib.awsDashSdkLibStrings.GET_MEDIA | awsDashSdkLib.awsDashSdkLibStrings.LIST_FRAGMENTS | awsDashSdkLib.awsDashSdkLibStrings.GET_MEDIA_FOR_FRAGMENT_LIST | awsDashSdkLib.awsDashSdkLibStrings.GET_HLS_STREAMING_SESSION_URL | java.lang.String
+  type APIName = _APIName | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ComparisonOperator = awsDashSdkLib.awsDashSdkLibStrings.BEGINS_WITH | java.lang.String
   type DataEndpoint = java.lang.String
@@ -533,15 +541,15 @@ object KinesisVideoNs extends js.Object {
   type MediaType = java.lang.String
   type NextToken = java.lang.String
   type ResourceARN = java.lang.String
-  type Status = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type Status = _Status | java.lang.String
   type StreamInfoList = js.Array[StreamInfo]
   type StreamName = java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagValue = java.lang.String
   type Timestamp = stdLib.Date
-  type UpdateDataRetentionOperation = awsDashSdkLib.awsDashSdkLibStrings.INCREASE_DATA_RETENTION | awsDashSdkLib.awsDashSdkLibStrings.DECREASE_DATA_RETENTION | java.lang.String
+  type UpdateDataRetentionOperation = _UpdateDataRetentionOperation | java.lang.String
   type Version = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-09-30` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

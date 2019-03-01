@@ -20,3 +20,12 @@ trait XVndSunStarPkgUrlReferenceFactory extends js.Object {
   def createVndSunStarPkgUrlReference(authority: XUriReference): XUriReference
 }
 
+object XVndSunStarPkgUrlReferenceFactory {
+  @scala.inline
+  def apply(createVndSunStarPkgUrlReference: js.Function1[XUriReference, XUriReference]): XVndSunStarPkgUrlReferenceFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createVndSunStarPkgUrlReference")(createVndSunStarPkgUrlReference)
+    __obj.asInstanceOf[XVndSunStarPkgUrlReferenceFactory]
+  }
+}
+

@@ -30,3 +30,36 @@ trait ModelMapReduceOption[T, Key, Val] extends js.Object {
   def reduce(key: Key, vals: js.Array[T]): Val
 }
 
+object ModelMapReduceOption {
+  @scala.inline
+  def apply[T, Key, Val](
+    map: js.Function | java.lang.String,
+    reduce: js.Function2[Key, js.Array[T], Val],
+    finalize: js.Function2[/* key */ Key, /* val */ Val, Val] = null,
+    jsMode: js.UndefOr[scala.Boolean] = js.undefined,
+    keeptemp: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null,
+    out: mongooseLib.Anon_Inline = null,
+    query: js.Any = null,
+    readPreference: java.lang.String = null,
+    scope: js.Any = null,
+    sort: js.Any = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
+  ): ModelMapReduceOption[T, Key, Val] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    __obj.updateDynamic("reduce")(reduce)
+    if (finalize != null) __obj.updateDynamic("finalize")(finalize)
+    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode)
+    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (out != null) __obj.updateDynamic("out")(out)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[ModelMapReduceOption[T, Key, Val]]
+  }
+}
+

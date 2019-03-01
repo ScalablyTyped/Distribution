@@ -10,3 +10,13 @@ trait AsanaAuthorizeUrlOptions extends js.Object {
   var redirectUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AsanaAuthorizeUrlOptions {
+  @scala.inline
+  def apply(asanaBaseUrl: java.lang.String = null, redirectUri: java.lang.String = null): AsanaAuthorizeUrlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asanaBaseUrl != null) __obj.updateDynamic("asanaBaseUrl")(asanaBaseUrl)
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    __obj.asInstanceOf[AsanaAuthorizeUrlOptions]
+  }
+}
+

@@ -13,3 +13,12 @@ trait OnResponseStartedFilter extends js.Object {
   var urls: js.Array[java.lang.String]
 }
 
+object OnResponseStartedFilter {
+  @scala.inline
+  def apply(urls: js.Array[java.lang.String]): OnResponseStartedFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[OnResponseStartedFilter]
+  }
+}
+

@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver
   */
-trait SeriesThemeRiver extends js.Object {
+trait SeriesThemeRiver extends Series {
   /**
     * Distance between thmemRiver component and the bottom side of
     * the container.
@@ -354,5 +354,56 @@ trait SeriesThemeRiver extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesThemeRiver {
+  @scala.inline
+  def apply(
+    bottom: scala.Double | java.lang.String = null,
+    boundaryGap: js.Array[_] = null,
+    coordinateSystem: java.lang.String = null,
+    data: (js.Array[
+      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesThemeRiverNs.DataObject
+    ]) | (js.Array[
+      js.Array[
+        scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesThemeRiverNs.DataObject
+      ]
+    ]) = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle = null,
+    height: scala.Double | java.lang.String = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    label: echartsLib.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
+    left: scala.Double | java.lang.String = null,
+    right: scala.Double | java.lang.String = null,
+    singleAxisIndex: scala.Int | scala.Double = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    top: scala.Double | java.lang.String = null,
+    `type`: java.lang.String = null,
+    width: scala.Double | java.lang.String = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesThemeRiver = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (boundaryGap != null) __obj.updateDynamic("boundaryGap")(boundaryGap)
+    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (singleAxisIndex != null) __obj.updateDynamic("singleAxisIndex")(singleAxisIndex.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesThemeRiver]
+  }
 }
 

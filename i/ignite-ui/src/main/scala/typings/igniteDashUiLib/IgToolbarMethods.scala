@@ -61,3 +61,34 @@ trait IgToolbarMethods extends js.Object {
   def widget(): scala.Unit
 }
 
+object IgToolbarMethods {
+  @scala.inline
+  def apply(
+    activateItem: js.Function2[js.Object, js.Object, scala.Unit],
+    addItem: js.Function1[js.Object, scala.Unit],
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    deactivateAll: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    disableItem: js.Function2[js.Object, js.Object, scala.Unit],
+    getItem: js.Function1[js.Object, js.Object],
+    removeItem: js.Function1[js.Object, js.Object],
+    widget: js.Function0[scala.Unit]
+  ): IgToolbarMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activateItem")(activateItem)
+    __obj.updateDynamic("addItem")(addItem)
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("deactivateAll")(deactivateAll)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("disableItem")(disableItem)
+    __obj.updateDynamic("getItem")(getItem)
+    __obj.updateDynamic("removeItem")(removeItem)
+    __obj.updateDynamic("widget")(widget)
+    __obj.asInstanceOf[IgToolbarMethods]
+  }
+}
+

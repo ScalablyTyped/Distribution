@@ -10,3 +10,13 @@ trait Data2d extends js.Object {
   var y: scala.Double
 }
 
+object Data2d {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): Data2d = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Data2d]
+  }
+}
+

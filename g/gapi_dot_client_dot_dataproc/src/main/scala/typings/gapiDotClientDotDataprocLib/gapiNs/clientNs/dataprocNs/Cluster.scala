@@ -31,3 +31,28 @@ trait Cluster extends js.Object {
   var statusHistory: js.UndefOr[js.Array[ClusterStatus]] = js.undefined
 }
 
+object Cluster {
+  @scala.inline
+  def apply(
+    clusterName: java.lang.String = null,
+    clusterUuid: java.lang.String = null,
+    config: ClusterConfig = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    metrics: ClusterMetrics = null,
+    projectId: java.lang.String = null,
+    status: ClusterStatus = null,
+    statusHistory: js.Array[ClusterStatus] = null
+  ): Cluster = {
+    val __obj = js.Dynamic.literal()
+    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName)
+    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory)
+    __obj.asInstanceOf[Cluster]
+  }
+}
+

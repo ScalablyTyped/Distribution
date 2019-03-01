@@ -39,3 +39,20 @@ trait XLPivot extends js.Object {
   def refreshDataSource(name: java.lang.String, sheetIdx: scala.Double): scala.Unit
 }
 
+object XLPivot {
+  @scala.inline
+  def apply(
+    clearPivotFieldList: js.Function1[java.lang.String, scala.Unit],
+    createPivotTable: js.Function5[java.lang.String, java.lang.String, java.lang.String, js.Any, js.Any, java.lang.String],
+    deletePivotTable: js.Function1[java.lang.String, scala.Unit],
+    refreshDataSource: js.Function2[java.lang.String, scala.Double, scala.Unit]
+  ): XLPivot = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearPivotFieldList")(clearPivotFieldList)
+    __obj.updateDynamic("createPivotTable")(createPivotTable)
+    __obj.updateDynamic("deletePivotTable")(deletePivotTable)
+    __obj.updateDynamic("refreshDataSource")(refreshDataSource)
+    __obj.asInstanceOf[XLPivot]
+  }
+}
+

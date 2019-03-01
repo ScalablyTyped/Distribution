@@ -14,3 +14,20 @@ trait IntlTimeFormat extends js.Object {
   ] = js.undefined
 }
 
+object IntlTimeFormat {
+  @scala.inline
+  def apply(
+    hour: N2D = null,
+    minute: N2D = null,
+    second: N2D = null,
+    timeZoneName: reactDashMdLib.reactDashMdLibStrings.short | reactDashMdLib.reactDashMdLibStrings.long = null
+  ): IntlTimeFormat = {
+    val __obj = js.Dynamic.literal()
+    if (hour != null) __obj.updateDynamic("hour")(hour)
+    if (minute != null) __obj.updateDynamic("minute")(minute)
+    if (second != null) __obj.updateDynamic("second")(second)
+    if (timeZoneName != null) __obj.updateDynamic("timeZoneName")(timeZoneName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntlTimeFormat]
+  }
+}
+

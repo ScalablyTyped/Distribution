@@ -16,3 +16,15 @@ trait DownloadBeginCallbackResult extends js.Object {
   var statusCode: scala.Double
 }
 
+object DownloadBeginCallbackResult {
+  @scala.inline
+  def apply(contentLength: scala.Double, headers: Headers, jobId: scala.Double, statusCode: scala.Double): DownloadBeginCallbackResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentLength")(contentLength)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("jobId")(jobId)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.asInstanceOf[DownloadBeginCallbackResult]
+  }
+}
+

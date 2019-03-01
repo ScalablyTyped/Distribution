@@ -12,3 +12,30 @@ trait PinBuilder extends js.Object {
   def fromUrl(url: java.lang.String, color: Color, size: scala.Double): stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement]
 }
 
+object PinBuilder {
+  @scala.inline
+  def apply(
+    fromColor: js.Function2[Color, scala.Double, stdLib.HTMLCanvasElement],
+    fromMakiIconId: js.Function3[
+      java.lang.String, 
+      Color, 
+      scala.Double, 
+      stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement]
+    ],
+    fromText: js.Function3[java.lang.String, Color, scala.Double, stdLib.HTMLCanvasElement],
+    fromUrl: js.Function3[
+      java.lang.String, 
+      Color, 
+      scala.Double, 
+      stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement]
+    ]
+  ): PinBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromColor")(fromColor)
+    __obj.updateDynamic("fromMakiIconId")(fromMakiIconId)
+    __obj.updateDynamic("fromText")(fromText)
+    __obj.updateDynamic("fromUrl")(fromUrl)
+    __obj.asInstanceOf[PinBuilder]
+  }
+}
+

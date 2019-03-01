@@ -34,3 +34,30 @@ trait IInvoiceUpdateOptions
   var tax_percent: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IInvoiceUpdateOptions {
+  @scala.inline
+  def apply(
+    application_fee: scala.Int | scala.Double = null,
+    closed: js.UndefOr[scala.Boolean] = js.undefined,
+    description: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    forgiven: js.UndefOr[scala.Boolean] = js.undefined,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    statement_descriptor: java.lang.String = null,
+    tax_percent: scala.Int | scala.Double = null
+  ): IInvoiceUpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (!js.isUndefined(forgiven)) __obj.updateDynamic("forgiven")(forgiven)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IInvoiceUpdateOptions]
+  }
+}
+

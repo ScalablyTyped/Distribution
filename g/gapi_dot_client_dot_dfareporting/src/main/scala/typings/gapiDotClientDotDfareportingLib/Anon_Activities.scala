@@ -29,3 +29,24 @@ trait Anon_Activities extends js.Object {
   var metricNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Activities {
+  @scala.inline
+  def apply(
+    activities: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.Activities = null,
+    customRichMediaEvents: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.CustomRichMediaEvents = null,
+    dateRange: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DateRange = null,
+    dimensionFilters: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue] = null,
+    dimensions: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.SortedDimension] = null,
+    metricNames: js.Array[java.lang.String] = null
+  ): Anon_Activities = {
+    val __obj = js.Dynamic.literal()
+    if (activities != null) __obj.updateDynamic("activities")(activities)
+    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents)
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
+    __obj.asInstanceOf[Anon_Activities]
+  }
+}
+

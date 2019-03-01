@@ -39,3 +39,26 @@ trait DataPoint extends js.Object {
   var value: scala.Double
 }
 
+object DataPoint {
+  @scala.inline
+  def apply(
+    count: scala.Double,
+    kind: applicationinsightsLib.outDeclarationsContractsGeneratedDataPointTypeMod.DataPointType,
+    max: scala.Double,
+    min: scala.Double,
+    name: java.lang.String,
+    stdDev: scala.Double,
+    value: scala.Double
+  ): DataPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("min")(min)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("stdDev")(stdDev)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DataPoint]
+  }
+}
+

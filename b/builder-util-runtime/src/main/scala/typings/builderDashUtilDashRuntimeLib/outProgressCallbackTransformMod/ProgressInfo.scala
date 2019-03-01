@@ -13,3 +13,22 @@ trait ProgressInfo extends js.Object {
   var transferred: scala.Double
 }
 
+object ProgressInfo {
+  @scala.inline
+  def apply(
+    bytesPerSecond: scala.Double,
+    delta: scala.Double,
+    percent: scala.Double,
+    total: scala.Double,
+    transferred: scala.Double
+  ): ProgressInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bytesPerSecond")(bytesPerSecond)
+    __obj.updateDynamic("delta")(delta)
+    __obj.updateDynamic("percent")(percent)
+    __obj.updateDynamic("total")(total)
+    __obj.updateDynamic("transferred")(transferred)
+    __obj.asInstanceOf[ProgressInfo]
+  }
+}
+

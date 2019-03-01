@@ -20,3 +20,20 @@ trait BabelCodeFrameOptions extends js.Object {
   var linesBelow: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BabelCodeFrameOptions {
+  @scala.inline
+  def apply(
+    forceColor: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightCode: js.UndefOr[scala.Boolean] = js.undefined,
+    linesAbove: scala.Int | scala.Double = null,
+    linesBelow: scala.Int | scala.Double = null
+  ): BabelCodeFrameOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(forceColor)) __obj.updateDynamic("forceColor")(forceColor)
+    if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode)
+    if (linesAbove != null) __obj.updateDynamic("linesAbove")(linesAbove.asInstanceOf[js.Any])
+    if (linesBelow != null) __obj.updateDynamic("linesBelow")(linesBelow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BabelCodeFrameOptions]
+  }
+}
+

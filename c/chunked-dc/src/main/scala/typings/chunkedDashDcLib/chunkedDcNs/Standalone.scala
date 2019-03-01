@@ -11,3 +11,13 @@ trait Standalone extends js.Object {
   var Unchunker: UnchunkerStatic
 }
 
+object Standalone {
+  @scala.inline
+  def apply(Chunker: ChunkerStatic, Unchunker: UnchunkerStatic): Standalone = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Chunker")(Chunker)
+    __obj.updateDynamic("Unchunker")(Unchunker)
+    __obj.asInstanceOf[Standalone]
+  }
+}
+

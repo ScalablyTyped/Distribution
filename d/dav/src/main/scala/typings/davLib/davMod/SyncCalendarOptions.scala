@@ -29,3 +29,22 @@ trait SyncCalendarOptions extends js.Object {
   var xhr: js.UndefOr[davLib.davMod.transportNs.Transport] = js.undefined
 }
 
+object SyncCalendarOptions {
+  @scala.inline
+  def apply(
+    filters: js.Array[js.Object] = null,
+    sandbox: Sandbox = null,
+    syncMethod: davLib.davLibStrings.basic | davLib.davLibStrings.webdav = null,
+    timezone: java.lang.String = null,
+    xhr: davLib.davMod.transportNs.Transport = null
+  ): SyncCalendarOptions = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
+    if (syncMethod != null) __obj.updateDynamic("syncMethod")(syncMethod.asInstanceOf[js.Any])
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[SyncCalendarOptions]
+  }
+}
+

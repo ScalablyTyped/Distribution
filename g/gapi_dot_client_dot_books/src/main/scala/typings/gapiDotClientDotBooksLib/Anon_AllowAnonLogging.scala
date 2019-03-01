@@ -63,3 +63,66 @@ trait Anon_AllowAnonLogging extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AllowAnonLogging {
+  @scala.inline
+  def apply(
+    allowAnonLogging: js.UndefOr[scala.Boolean] = js.undefined,
+    authors: js.Array[java.lang.String] = null,
+    averageRating: scala.Int | scala.Double = null,
+    canonicalVolumeLink: java.lang.String = null,
+    categories: js.Array[java.lang.String] = null,
+    contentVersion: java.lang.String = null,
+    description: java.lang.String = null,
+    dimensions: Anon_Height = null,
+    imageLinks: Anon_ExtraLarge = null,
+    industryIdentifiers: js.Array[Anon_Identifier] = null,
+    infoLink: java.lang.String = null,
+    language: java.lang.String = null,
+    mainCategory: java.lang.String = null,
+    maturityRating: java.lang.String = null,
+    pageCount: scala.Int | scala.Double = null,
+    panelizationSummary: Anon_ContainsEpubBubbles = null,
+    previewLink: java.lang.String = null,
+    printType: java.lang.String = null,
+    printedPageCount: scala.Int | scala.Double = null,
+    publishedDate: java.lang.String = null,
+    publisher: java.lang.String = null,
+    ratingsCount: scala.Int | scala.Double = null,
+    readingModes: js.Any = null,
+    samplePageCount: scala.Int | scala.Double = null,
+    seriesInfo: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.Volumeseriesinfo = null,
+    subtitle: java.lang.String = null,
+    title: java.lang.String = null
+  ): Anon_AllowAnonLogging = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowAnonLogging)) __obj.updateDynamic("allowAnonLogging")(allowAnonLogging)
+    if (authors != null) __obj.updateDynamic("authors")(authors)
+    if (averageRating != null) __obj.updateDynamic("averageRating")(averageRating.asInstanceOf[js.Any])
+    if (canonicalVolumeLink != null) __obj.updateDynamic("canonicalVolumeLink")(canonicalVolumeLink)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (imageLinks != null) __obj.updateDynamic("imageLinks")(imageLinks)
+    if (industryIdentifiers != null) __obj.updateDynamic("industryIdentifiers")(industryIdentifiers)
+    if (infoLink != null) __obj.updateDynamic("infoLink")(infoLink)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (mainCategory != null) __obj.updateDynamic("mainCategory")(mainCategory)
+    if (maturityRating != null) __obj.updateDynamic("maturityRating")(maturityRating)
+    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
+    if (panelizationSummary != null) __obj.updateDynamic("panelizationSummary")(panelizationSummary)
+    if (previewLink != null) __obj.updateDynamic("previewLink")(previewLink)
+    if (printType != null) __obj.updateDynamic("printType")(printType)
+    if (printedPageCount != null) __obj.updateDynamic("printedPageCount")(printedPageCount.asInstanceOf[js.Any])
+    if (publishedDate != null) __obj.updateDynamic("publishedDate")(publishedDate)
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (ratingsCount != null) __obj.updateDynamic("ratingsCount")(ratingsCount.asInstanceOf[js.Any])
+    if (readingModes != null) __obj.updateDynamic("readingModes")(readingModes)
+    if (samplePageCount != null) __obj.updateDynamic("samplePageCount")(samplePageCount.asInstanceOf[js.Any])
+    if (seriesInfo != null) __obj.updateDynamic("seriesInfo")(seriesInfo)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_AllowAnonLogging]
+  }
+}
+

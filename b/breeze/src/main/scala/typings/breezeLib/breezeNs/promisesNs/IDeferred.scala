@@ -11,3 +11,18 @@ trait IDeferred[T] extends js.Object {
   def resolve(value: T): scala.Unit
 }
 
+object IDeferred {
+  @scala.inline
+  def apply[T](
+    promise: js.Promise[T],
+    reject: js.Function1[js.Any, scala.Unit],
+    resolve: js.Function1[T, scala.Unit]
+  ): IDeferred[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("promise")(promise)
+    __obj.updateDynamic("reject")(reject)
+    __obj.updateDynamic("resolve")(resolve)
+    __obj.asInstanceOf[IDeferred[T]]
+  }
+}
+

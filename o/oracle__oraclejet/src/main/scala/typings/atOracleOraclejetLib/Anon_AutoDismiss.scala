@@ -23,3 +23,26 @@ trait Anon_AutoDismiss extends js.Object {
   var size: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AutoDismiss {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    selector: java.lang.String,
+    autoDismiss: atOracleOraclejetLib.atOracleOraclejetLibStrings.focusLoss | atOracleOraclejetLib.atOracleOraclejetLibStrings.none = null,
+    displayMode: atOracleOraclejetLib.atOracleOraclejetLibStrings.push | atOracleOraclejetLib.atOracleOraclejetLibStrings.overlay = null,
+    edge: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom = null,
+    modality: atOracleOraclejetLib.atOracleOraclejetLibStrings.modal | atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless = null,
+    size: java.lang.String = null
+  ): Anon_AutoDismiss = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("selector")(selector)
+    if (autoDismiss != null) __obj.updateDynamic("autoDismiss")(autoDismiss.asInstanceOf[js.Any])
+    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
+    if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
+    if (modality != null) __obj.updateDynamic("modality")(modality.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Anon_AutoDismiss]
+  }
+}
+

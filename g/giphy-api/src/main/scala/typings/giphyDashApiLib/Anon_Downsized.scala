@@ -28,3 +28,52 @@ trait Anon_Downsized extends js.Object {
   var preview_gif: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_SizeString
 }
 
+object Anon_Downsized {
+  @scala.inline
+  def apply(
+    downsized: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_SizeString,
+    downsized_large: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_SizeString,
+    downsized_medium: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_SizeString,
+    downsized_small: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_SizeString,
+    downsized_still: giphyDashApiLib.giphyDashApiMod.BaseImage,
+    fixed_height: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_Mp4,
+    fixed_height_downsampled: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_Size,
+    fixed_height_small: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_Mp4,
+    fixed_height_small_still: giphyDashApiLib.giphyDashApiMod.BaseImage,
+    fixed_height_still: giphyDashApiLib.giphyDashApiMod.BaseImage,
+    fixed_width: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_Mp4,
+    fixed_width_downsampled: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_Size,
+    fixed_width_small: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_Mp4,
+    fixed_width_small_still: giphyDashApiLib.giphyDashApiMod.BaseImage,
+    fixed_width_still: giphyDashApiLib.giphyDashApiMod.BaseImage,
+    looping: Anon_Mp4String,
+    original: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_Frames,
+    original_still: giphyDashApiLib.giphyDashApiMod.BaseImage,
+    preview: Anon_Height,
+    preview_gif: giphyDashApiLib.giphyDashApiMod.BaseImage with Anon_SizeString
+  ): Anon_Downsized = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("downsized")(downsized)
+    __obj.updateDynamic("downsized_large")(downsized_large)
+    __obj.updateDynamic("downsized_medium")(downsized_medium)
+    __obj.updateDynamic("downsized_small")(downsized_small)
+    __obj.updateDynamic("downsized_still")(downsized_still)
+    __obj.updateDynamic("fixed_height")(fixed_height)
+    __obj.updateDynamic("fixed_height_downsampled")(fixed_height_downsampled)
+    __obj.updateDynamic("fixed_height_small")(fixed_height_small)
+    __obj.updateDynamic("fixed_height_small_still")(fixed_height_small_still)
+    __obj.updateDynamic("fixed_height_still")(fixed_height_still)
+    __obj.updateDynamic("fixed_width")(fixed_width)
+    __obj.updateDynamic("fixed_width_downsampled")(fixed_width_downsampled)
+    __obj.updateDynamic("fixed_width_small")(fixed_width_small)
+    __obj.updateDynamic("fixed_width_small_still")(fixed_width_small_still)
+    __obj.updateDynamic("fixed_width_still")(fixed_width_still)
+    __obj.updateDynamic("looping")(looping)
+    __obj.updateDynamic("original")(original)
+    __obj.updateDynamic("original_still")(original_still)
+    __obj.updateDynamic("preview")(preview)
+    __obj.updateDynamic("preview_gif")(preview_gif)
+    __obj.asInstanceOf[Anon_Downsized]
+  }
+}
+

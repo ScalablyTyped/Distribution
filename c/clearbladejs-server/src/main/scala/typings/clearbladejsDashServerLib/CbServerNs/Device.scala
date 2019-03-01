@@ -15,3 +15,26 @@ trait Device extends js.Object {
   def update(query: Query, changes: js.Object, callback: CbCallback): scala.Unit
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    URI: java.lang.String,
+    create: js.Function2[js.Object, CbCallback, scala.Unit],
+    delete: js.Function2[Query, CbCallback, scala.Unit],
+    fetch: js.Function2[Query, CbCallback, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    update: js.Function3[Query, js.Object, CbCallback, scala.Unit]
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("fetch")(fetch)
+    __obj.updateDynamic("systemKey")(systemKey)
+    __obj.updateDynamic("systemSecret")(systemSecret)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Device]
+  }
+}
+

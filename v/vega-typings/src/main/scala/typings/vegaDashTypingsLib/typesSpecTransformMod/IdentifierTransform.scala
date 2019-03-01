@@ -5,8 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IdentifierTransform extends js.Object {
+trait IdentifierTransform extends _Transforms {
   var as: java.lang.String
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.identifier
+}
+
+object IdentifierTransform {
+  @scala.inline
+  def apply(as: java.lang.String, `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.identifier): IdentifierTransform = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("as")(as)
+    __obj.asInstanceOf[IdentifierTransform]
+  }
 }
 

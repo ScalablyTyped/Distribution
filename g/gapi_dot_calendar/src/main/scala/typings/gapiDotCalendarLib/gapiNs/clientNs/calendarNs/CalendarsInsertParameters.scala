@@ -14,3 +14,20 @@ trait CalendarsInsertParameters extends js.Object {
   var timeZone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CalendarsInsertParameters {
+  @scala.inline
+  def apply(
+    summary: java.lang.String,
+    description: java.lang.String = null,
+    location: java.lang.String = null,
+    timeZone: java.lang.String = null
+  ): CalendarsInsertParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("summary")(summary)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    __obj.asInstanceOf[CalendarsInsertParameters]
+  }
+}
+

@@ -14,3 +14,24 @@ trait TooltipProps extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TooltipProps {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    height: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null,
+    pointStroke: java.lang.String = null,
+    stroke: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): TooltipProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (pointStroke != null) __obj.updateDynamic("pointStroke")(pointStroke)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TooltipProps]
+  }
+}
+

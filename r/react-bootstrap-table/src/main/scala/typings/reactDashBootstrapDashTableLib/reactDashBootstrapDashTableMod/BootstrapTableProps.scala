@@ -264,3 +264,122 @@ trait BootstrapTableProps
   var withoutTabIndex: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BootstrapTableProps {
+  @scala.inline
+  def apply(
+    data: js.Array[js.Object],
+    autoCollapse: reactDashBootstrapDashTableLib.Anon_Filter = null,
+    bodyContainerClass: java.lang.String = null,
+    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bordered: js.UndefOr[scala.Boolean] = js.undefined,
+    cellEdit: CellEdit[_] = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    columnFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    condensed: js.UndefOr[scala.Boolean] = js.undefined,
+    containerClass: java.lang.String = null,
+    containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    csvFileName: java.lang.String | js.Function0[java.lang.String] = null,
+    deleteRow: js.UndefOr[scala.Boolean] = js.undefined,
+    excludeCSVHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    expandColumnOptions: ExpandColumnOptions = null,
+    expandComponent: js.Function1[/* row */ js.Any, java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    expandableRow: js.Function1[/* row */ js.Any, scala.Boolean] = null,
+    exportCSV: js.UndefOr[scala.Boolean] = js.undefined,
+    fetchInfo: FetchInfo = null,
+    footer: js.UndefOr[scala.Boolean] = js.undefined,
+    footerData: js.Array[js.Array[FooterData]] = null,
+    headerContainerClass: java.lang.String = null,
+    headerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    height: java.lang.String = null,
+    hover: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreSinglePage: js.UndefOr[scala.Boolean] = js.undefined,
+    insertRow: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    keyBoardNav: scala.Boolean | KeyboardNavigation = null,
+    keyField: java.lang.String = null,
+    maxHeight: java.lang.String = null,
+    multiColumnSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    multiColumnSort: scala.Int | scala.Double = null,
+    options: Options[_] = null,
+    pagination: js.UndefOr[scala.Boolean] = js.undefined,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[BootstrapTable] = null,
+    remote: scala.Boolean | (js.Function1[/* remobeObj */ RemoteObjSpec, RemoteObjSpec]) = null,
+    renderAlert: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollTop: scala.Double | ScrollPosition = null,
+    search: js.UndefOr[scala.Boolean] = js.undefined,
+    searchPlaceholder: java.lang.String = null,
+    selectRow: SelectRow[_] = null,
+    strictSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    striped: js.UndefOr[scala.Boolean] = js.undefined,
+    tableBodyClass: java.lang.String = null,
+    tableContainerClass: java.lang.String = null,
+    tableFooterClass: java.lang.String = null,
+    tableHeaderClass: java.lang.String = null,
+    tableStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    trClassName: java.lang.String | (js.Function2[/* rowData */ js.Any, /* rowIndex */ scala.Double, java.lang.String]) = null,
+    trStyle: reactLib.reactMod.ReactNs.CSSProperties | (js.Function2[
+      /* rowData */ js.Any, 
+      /* rowIndex */ scala.Double, 
+      reactLib.reactMod.ReactNs.CSSProperties
+    ]) = null,
+    version: BootstrapVersion = null,
+    withoutTabIndex: js.UndefOr[scala.Boolean] = js.undefined
+  ): BootstrapTableProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (autoCollapse != null) __obj.updateDynamic("autoCollapse")(autoCollapse)
+    if (bodyContainerClass != null) __obj.updateDynamic("bodyContainerClass")(bodyContainerClass)
+    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
+    if (cellEdit != null) __obj.updateDynamic("cellEdit")(cellEdit)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnFilter)) __obj.updateDynamic("columnFilter")(columnFilter)
+    if (!js.isUndefined(condensed)) __obj.updateDynamic("condensed")(condensed)
+    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
+    if (csvFileName != null) __obj.updateDynamic("csvFileName")(csvFileName.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteRow)) __obj.updateDynamic("deleteRow")(deleteRow)
+    if (!js.isUndefined(excludeCSVHeader)) __obj.updateDynamic("excludeCSVHeader")(excludeCSVHeader)
+    if (expandColumnOptions != null) __obj.updateDynamic("expandColumnOptions")(expandColumnOptions)
+    if (expandComponent != null) __obj.updateDynamic("expandComponent")(expandComponent)
+    if (expandableRow != null) __obj.updateDynamic("expandableRow")(expandableRow)
+    if (!js.isUndefined(exportCSV)) __obj.updateDynamic("exportCSV")(exportCSV)
+    if (fetchInfo != null) __obj.updateDynamic("fetchInfo")(fetchInfo)
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer)
+    if (footerData != null) __obj.updateDynamic("footerData")(footerData)
+    if (headerContainerClass != null) __obj.updateDynamic("headerContainerClass")(headerContainerClass)
+    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover)
+    if (!js.isUndefined(ignoreSinglePage)) __obj.updateDynamic("ignoreSinglePage")(ignoreSinglePage)
+    if (!js.isUndefined(insertRow)) __obj.updateDynamic("insertRow")(insertRow)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (keyBoardNav != null) __obj.updateDynamic("keyBoardNav")(keyBoardNav.asInstanceOf[js.Any])
+    if (keyField != null) __obj.updateDynamic("keyField")(keyField)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight)
+    if (!js.isUndefined(multiColumnSearch)) __obj.updateDynamic("multiColumnSearch")(multiColumnSearch)
+    if (multiColumnSort != null) __obj.updateDynamic("multiColumnSort")(multiColumnSort.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderAlert)) __obj.updateDynamic("renderAlert")(renderAlert)
+    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
+    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
+    if (selectRow != null) __obj.updateDynamic("selectRow")(selectRow)
+    if (!js.isUndefined(strictSearch)) __obj.updateDynamic("strictSearch")(strictSearch)
+    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped)
+    if (tableBodyClass != null) __obj.updateDynamic("tableBodyClass")(tableBodyClass)
+    if (tableContainerClass != null) __obj.updateDynamic("tableContainerClass")(tableContainerClass)
+    if (tableFooterClass != null) __obj.updateDynamic("tableFooterClass")(tableFooterClass)
+    if (tableHeaderClass != null) __obj.updateDynamic("tableHeaderClass")(tableHeaderClass)
+    if (tableStyle != null) __obj.updateDynamic("tableStyle")(tableStyle)
+    if (trClassName != null) __obj.updateDynamic("trClassName")(trClassName.asInstanceOf[js.Any])
+    if (trStyle != null) __obj.updateDynamic("trStyle")(trStyle.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(withoutTabIndex)) __obj.updateDynamic("withoutTabIndex")(withoutTabIndex)
+    __obj.asInstanceOf[BootstrapTableProps]
+  }
+}
+

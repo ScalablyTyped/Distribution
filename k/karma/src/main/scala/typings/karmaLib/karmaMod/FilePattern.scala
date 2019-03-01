@@ -34,3 +34,22 @@ trait FilePattern extends js.Object {
   var watched: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FilePattern {
+  @scala.inline
+  def apply(
+    pattern: java.lang.String,
+    included: js.UndefOr[scala.Boolean] = js.undefined,
+    nocache: js.UndefOr[scala.Boolean] = js.undefined,
+    served: js.UndefOr[scala.Boolean] = js.undefined,
+    watched: js.UndefOr[scala.Boolean] = js.undefined
+  ): FilePattern = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pattern")(pattern)
+    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included)
+    if (!js.isUndefined(nocache)) __obj.updateDynamic("nocache")(nocache)
+    if (!js.isUndefined(served)) __obj.updateDynamic("served")(served)
+    if (!js.isUndefined(watched)) __obj.updateDynamic("watched")(watched)
+    __obj.asInstanceOf[FilePattern]
+  }
+}
+

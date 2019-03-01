@@ -53,3 +53,34 @@ trait Value extends js.Object {
   var timestampValue: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Value {
+  @scala.inline
+  def apply(
+    arrayValue: ArrayValue = null,
+    booleanValue: js.UndefOr[scala.Boolean] = js.undefined,
+    bytesValue: java.lang.String = null,
+    doubleValue: scala.Int | scala.Double = null,
+    geoPointValue: LatLng = null,
+    integerValue: java.lang.String = null,
+    mapValue: MapValue = null,
+    nullValue: java.lang.String = null,
+    referenceValue: java.lang.String = null,
+    stringValue: java.lang.String = null,
+    timestampValue: java.lang.String = null
+  ): Value = {
+    val __obj = js.Dynamic.literal()
+    if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue)
+    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue)
+    if (bytesValue != null) __obj.updateDynamic("bytesValue")(bytesValue)
+    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (geoPointValue != null) __obj.updateDynamic("geoPointValue")(geoPointValue)
+    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue)
+    if (mapValue != null) __obj.updateDynamic("mapValue")(mapValue)
+    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue)
+    if (referenceValue != null) __obj.updateDynamic("referenceValue")(referenceValue)
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue)
+    __obj.asInstanceOf[Value]
+  }
+}
+

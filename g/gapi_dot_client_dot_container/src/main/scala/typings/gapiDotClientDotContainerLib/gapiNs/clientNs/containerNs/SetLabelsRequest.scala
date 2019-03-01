@@ -19,3 +19,16 @@ trait SetLabelsRequest extends js.Object {
   var resourceLabels: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object SetLabelsRequest {
+  @scala.inline
+  def apply(
+    labelFingerprint: java.lang.String = null,
+    resourceLabels: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): SetLabelsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint)
+    if (resourceLabels != null) __obj.updateDynamic("resourceLabels")(resourceLabels)
+    __obj.asInstanceOf[SetLabelsRequest]
+  }
+}
+

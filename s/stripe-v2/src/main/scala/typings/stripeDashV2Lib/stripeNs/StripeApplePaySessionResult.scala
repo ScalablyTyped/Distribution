@@ -11,3 +11,18 @@ trait StripeApplePaySessionResult extends js.Object {
   var token: StripeCardTokenResponse
 }
 
+object StripeApplePaySessionResult {
+  @scala.inline
+  def apply(
+    token: StripeCardTokenResponse,
+    shippingContact: StripeApplePayPaymentContact = null,
+    shippingMethod: StripeApplePayShippingMethod = null
+  ): StripeApplePaySessionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("token")(token)
+    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact)
+    if (shippingMethod != null) __obj.updateDynamic("shippingMethod")(shippingMethod)
+    __obj.asInstanceOf[StripeApplePaySessionResult]
+  }
+}
+

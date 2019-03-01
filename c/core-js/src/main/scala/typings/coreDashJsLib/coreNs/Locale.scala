@@ -10,3 +10,13 @@ trait Locale extends js.Object {
   var weekdays: java.lang.String
 }
 
+object Locale {
+  @scala.inline
+  def apply(months: java.lang.String, weekdays: java.lang.String): Locale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("months")(months)
+    __obj.updateDynamic("weekdays")(weekdays)
+    __obj.asInstanceOf[Locale]
+  }
+}
+

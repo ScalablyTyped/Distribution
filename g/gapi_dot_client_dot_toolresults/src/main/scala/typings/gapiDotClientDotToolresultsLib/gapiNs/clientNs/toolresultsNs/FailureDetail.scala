@@ -18,3 +18,22 @@ trait FailureDetail extends js.Object {
   var unableToCrawl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FailureDetail {
+  @scala.inline
+  def apply(
+    crashed: js.UndefOr[scala.Boolean] = js.undefined,
+    notInstalled: js.UndefOr[scala.Boolean] = js.undefined,
+    otherNativeCrash: js.UndefOr[scala.Boolean] = js.undefined,
+    timedOut: js.UndefOr[scala.Boolean] = js.undefined,
+    unableToCrawl: js.UndefOr[scala.Boolean] = js.undefined
+  ): FailureDetail = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(crashed)) __obj.updateDynamic("crashed")(crashed)
+    if (!js.isUndefined(notInstalled)) __obj.updateDynamic("notInstalled")(notInstalled)
+    if (!js.isUndefined(otherNativeCrash)) __obj.updateDynamic("otherNativeCrash")(otherNativeCrash)
+    if (!js.isUndefined(timedOut)) __obj.updateDynamic("timedOut")(timedOut)
+    if (!js.isUndefined(unableToCrawl)) __obj.updateDynamic("unableToCrawl")(unableToCrawl)
+    __obj.asInstanceOf[FailureDetail]
+  }
+}
+

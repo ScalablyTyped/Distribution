@@ -22,3 +22,18 @@ trait SideInputInfo extends js.Object {
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SideInputInfo {
+  @scala.inline
+  def apply(
+    kind: stdLib.Record[java.lang.String, _] = null,
+    sources: js.Array[Source] = null,
+    tag: java.lang.String = null
+  ): SideInputInfo = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[SideInputInfo]
+  }
+}
+

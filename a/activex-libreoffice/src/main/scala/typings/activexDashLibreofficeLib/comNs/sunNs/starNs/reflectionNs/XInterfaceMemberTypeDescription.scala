@@ -33,3 +33,34 @@ trait XInterfaceMemberTypeDescription extends XTypeDescription {
   def getPosition(): scala.Double
 }
 
+object XInterfaceMemberTypeDescription {
+  @scala.inline
+  def apply(
+    MemberName: java.lang.String,
+    Name: java.lang.String,
+    Position: scala.Double,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    acquire: js.Function0[scala.Unit],
+    getMemberName: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getPosition: js.Function0[scala.Double],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInterfaceMemberTypeDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MemberName")(MemberName)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("TypeClass")(TypeClass)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMemberName")(getMemberName)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getPosition")(getPosition)
+    __obj.updateDynamic("getTypeClass")(getTypeClass)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XInterfaceMemberTypeDescription]
+  }
+}
+

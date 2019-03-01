@@ -23,3 +23,24 @@ trait IGeoDataResult extends js.Object {
   var Primitives: js.Array[IGeoDataPrimitive]
 }
 
+object IGeoDataResult {
+  @scala.inline
+  def apply(
+    Copyright: ICopyright,
+    EntityID: java.lang.String,
+    EntityMetadata: IMetadata,
+    Name: IName,
+    Polygons: js.Array[bingmapsLib.MicrosoftNs.MapsNs.Polygon],
+    Primitives: js.Array[IGeoDataPrimitive]
+  ): IGeoDataResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Copyright")(Copyright)
+    __obj.updateDynamic("EntityID")(EntityID)
+    __obj.updateDynamic("EntityMetadata")(EntityMetadata)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Polygons")(Polygons)
+    __obj.updateDynamic("Primitives")(Primitives)
+    __obj.asInstanceOf[IGeoDataResult]
+  }
+}
+

@@ -5,9 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObjectValueNode extends js.Object {
+trait ObjectValueNode
+  extends ASTNode
+     with ValueNode {
   val fields: js.Array[ObjectFieldNode]
   val kind: graphqlLib.graphqlLibStrings.ObjectValue
   val loc: js.UndefOr[Location] = js.undefined
+}
+
+object ObjectValueNode {
+  @scala.inline
+  def apply(
+    fields: js.Array[ObjectFieldNode],
+    kind: graphqlLib.graphqlLibStrings.ObjectValue,
+    loc: Location = null
+  ): ObjectValueNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("kind")(kind)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[ObjectValueNode]
+  }
 }
 

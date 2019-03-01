@@ -10,3 +10,17 @@ trait AccountsResource extends js.Object {
   def insert(request: gapiDotClientDotMirrorLib.Anon_AccountName): gapiDotClientLib.gapiNs.clientNs.Request[Account]
 }
 
+object AccountsResource {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AccountName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ]
+  ): AccountsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.asInstanceOf[AccountsResource]
+  }
+}
+

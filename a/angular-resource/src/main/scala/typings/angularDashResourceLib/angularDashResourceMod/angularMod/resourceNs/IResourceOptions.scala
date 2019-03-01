@@ -20,3 +20,16 @@ trait IResourceOptions extends js.Object {
   var stripTrailingSlashes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IResourceOptions {
+  @scala.inline
+  def apply(
+    cancellable: js.UndefOr[scala.Boolean] = js.undefined,
+    stripTrailingSlashes: js.UndefOr[scala.Boolean] = js.undefined
+  ): IResourceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable)
+    if (!js.isUndefined(stripTrailingSlashes)) __obj.updateDynamic("stripTrailingSlashes")(stripTrailingSlashes)
+    __obj.asInstanceOf[IResourceOptions]
+  }
+}
+

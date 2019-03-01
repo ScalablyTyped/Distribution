@@ -24,3 +24,20 @@ trait TargetGroupAttachmentArgs extends js.Object {
   val targetId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object TargetGroupAttachmentArgs {
+  @scala.inline
+  def apply(
+    targetGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    targetId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): TargetGroupAttachmentArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("targetGroupArn")(targetGroupArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetGroupAttachmentArgs]
+  }
+}
+

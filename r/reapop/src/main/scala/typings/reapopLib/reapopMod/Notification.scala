@@ -21,3 +21,38 @@ trait Notification extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Notification {
+  @scala.inline
+  def apply(
+    allowHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    buttons: js.Array[Button] = null,
+    closeButton: js.UndefOr[scala.Boolean] = js.undefined,
+    dismissAfter: scala.Int | scala.Double = null,
+    dismissible: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String | scala.Double = null,
+    image: java.lang.String = null,
+    message: java.lang.String = null,
+    onAdd: js.Function0[scala.Unit] = null,
+    onRemove: js.Function0[scala.Unit] = null,
+    position: java.lang.String | reapopLib.POSITION = null,
+    status: java.lang.String | scala.Double | reapopLib.STATUSES = null,
+    title: java.lang.String = null
+  ): Notification = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
+    if (dismissAfter != null) __obj.updateDynamic("dismissAfter")(dismissAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
+    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Notification]
+  }
+}
+

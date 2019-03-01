@@ -7,34 +7,48 @@ import scala.scalajs.js.annotation._
 
 object bignumberDotJsLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.ModuloMode
+       with bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.RoundingMode
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.ModuloMode
+       with bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.RoundingMode
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.RoundingMode
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.ModuloMode
+       with bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.RoundingMode
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.RoundingMode
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.RoundingMode
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.ModuloMode
+       with bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.RoundingMode
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.RoundingMode
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.RoundingMode
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.ModuloMode
   
   @js.native
   sealed trait `true` extends js.Object

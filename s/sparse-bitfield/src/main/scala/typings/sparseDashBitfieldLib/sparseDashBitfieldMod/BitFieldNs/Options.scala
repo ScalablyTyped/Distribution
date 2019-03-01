@@ -30,3 +30,22 @@ trait Options extends js.Object {
   var trackUpdates: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    buffer: nodeLib.Buffer = null,
+    pageOffset: scala.Int | scala.Double = null,
+    pageSize: scala.Int | scala.Double = null,
+    pages: memoryDashPagerLib.memoryDashPagerMod.PagerNs.PagerInstance = null,
+    trackUpdates: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (pageOffset != null) __obj.updateDynamic("pageOffset")(pageOffset.asInstanceOf[js.Any])
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages)
+    if (!js.isUndefined(trackUpdates)) __obj.updateDynamic("trackUpdates")(trackUpdates)
+    __obj.asInstanceOf[Options]
+  }
+}
+

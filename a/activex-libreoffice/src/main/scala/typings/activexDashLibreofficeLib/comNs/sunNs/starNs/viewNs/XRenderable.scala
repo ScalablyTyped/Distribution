@@ -45,3 +45,38 @@ trait XRenderable
   ): scala.Unit
 }
 
+object XRenderable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getRenderer: js.Function3[
+      scala.Double, 
+      js.Any, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getRendererCount: js.Function2[
+      js.Any, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Double
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    render: js.Function3[
+      scala.Double, 
+      js.Any, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XRenderable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getRenderer")(getRenderer)
+    __obj.updateDynamic("getRendererCount")(getRendererCount)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[XRenderable]
+  }
+}
+

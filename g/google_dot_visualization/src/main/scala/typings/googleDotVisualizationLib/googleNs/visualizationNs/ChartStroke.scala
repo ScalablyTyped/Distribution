@@ -11,3 +11,14 @@ trait ChartStroke extends js.Object {
   var strokeWidth: scala.Double
 }
 
+object ChartStroke {
+  @scala.inline
+  def apply(fill: java.lang.String, stroke: java.lang.String, strokeWidth: scala.Double): ChartStroke = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fill")(fill)
+    __obj.updateDynamic("stroke")(stroke)
+    __obj.updateDynamic("strokeWidth")(strokeWidth)
+    __obj.asInstanceOf[ChartStroke]
+  }
+}
+

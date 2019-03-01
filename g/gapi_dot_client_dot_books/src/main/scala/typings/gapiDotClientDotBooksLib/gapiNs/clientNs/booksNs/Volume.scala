@@ -36,3 +36,34 @@ trait Volume extends js.Object {
   var volumeInfo: js.UndefOr[gapiDotClientDotBooksLib.Anon_AllowAnonLogging] = js.undefined
 }
 
+object Volume {
+  @scala.inline
+  def apply(
+    accessInfo: gapiDotClientDotBooksLib.Anon_AccessViewStatus = null,
+    etag: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    layerInfo: gapiDotClientDotBooksLib.Anon_Layers = null,
+    recommendedInfo: gapiDotClientDotBooksLib.Anon_Explanation = null,
+    saleInfo: gapiDotClientDotBooksLib.Anon_BuyLink = null,
+    searchInfo: gapiDotClientDotBooksLib.Anon_TextSnippet = null,
+    selfLink: java.lang.String = null,
+    userInfo: gapiDotClientDotBooksLib.Anon_AcquiredTime = null,
+    volumeInfo: gapiDotClientDotBooksLib.Anon_AllowAnonLogging = null
+  ): Volume = {
+    val __obj = js.Dynamic.literal()
+    if (accessInfo != null) __obj.updateDynamic("accessInfo")(accessInfo)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (layerInfo != null) __obj.updateDynamic("layerInfo")(layerInfo)
+    if (recommendedInfo != null) __obj.updateDynamic("recommendedInfo")(recommendedInfo)
+    if (saleInfo != null) __obj.updateDynamic("saleInfo")(saleInfo)
+    if (searchInfo != null) __obj.updateDynamic("searchInfo")(searchInfo)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
+    if (volumeInfo != null) __obj.updateDynamic("volumeInfo")(volumeInfo)
+    __obj.asInstanceOf[Volume]
+  }
+}
+

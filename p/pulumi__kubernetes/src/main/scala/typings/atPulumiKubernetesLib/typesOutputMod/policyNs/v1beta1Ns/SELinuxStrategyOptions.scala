@@ -20,3 +20,16 @@ trait SELinuxStrategyOptions extends js.Object {
   val seLinuxOptions: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.SELinuxOptions
 }
 
+object SELinuxStrategyOptions {
+  @scala.inline
+  def apply(
+    rule: java.lang.String,
+    seLinuxOptions: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.SELinuxOptions
+  ): SELinuxStrategyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rule")(rule)
+    __obj.updateDynamic("seLinuxOptions")(seLinuxOptions)
+    __obj.asInstanceOf[SELinuxStrategyOptions]
+  }
+}
+

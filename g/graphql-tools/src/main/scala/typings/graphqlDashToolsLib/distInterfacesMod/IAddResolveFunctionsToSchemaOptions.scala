@@ -12,3 +12,20 @@ trait IAddResolveFunctionsToSchemaOptions extends js.Object {
   var schema: graphqlLib.graphqlMod.GraphQLSchema
 }
 
+object IAddResolveFunctionsToSchemaOptions {
+  @scala.inline
+  def apply(
+    resolvers: IResolvers[_, _],
+    schema: graphqlLib.graphqlMod.GraphQLSchema,
+    inheritResolversFromInterfaces: js.UndefOr[scala.Boolean] = js.undefined,
+    resolverValidationOptions: IResolverValidationOptions = null
+  ): IAddResolveFunctionsToSchemaOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resolvers")(resolvers)
+    __obj.updateDynamic("schema")(schema)
+    if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces)
+    if (resolverValidationOptions != null) __obj.updateDynamic("resolverValidationOptions")(resolverValidationOptions)
+    __obj.asInstanceOf[IAddResolveFunctionsToSchemaOptions]
+  }
+}
+

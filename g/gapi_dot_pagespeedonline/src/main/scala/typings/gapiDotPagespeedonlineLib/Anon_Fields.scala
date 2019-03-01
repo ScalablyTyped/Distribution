@@ -32,3 +32,24 @@ trait Anon_Fields extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Fields {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    fields: java.lang.String = null,
+    locale: java.lang.String = null,
+    rule: js.Array[java.lang.String] = null,
+    screenshot: js.UndefOr[scala.Boolean] = js.undefined,
+    stategy: java.lang.String = null
+  ): Anon_Fields = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (!js.isUndefined(screenshot)) __obj.updateDynamic("screenshot")(screenshot)
+    if (stategy != null) __obj.updateDynamic("stategy")(stategy)
+    __obj.asInstanceOf[Anon_Fields]
+  }
+}
+

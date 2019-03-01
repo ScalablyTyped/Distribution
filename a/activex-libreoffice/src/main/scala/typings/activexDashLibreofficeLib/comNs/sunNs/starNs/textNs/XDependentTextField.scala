@@ -23,3 +23,38 @@ trait XDependentTextField extends XTextField {
   def getTextFieldMaster(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object XDependentTextField {
+  @scala.inline
+  def apply(
+    Anchor: XTextRange,
+    TextFieldMaster: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attach: js.Function1[XTextRange, scala.Unit],
+    attachTextFieldMaster: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getAnchor: js.Function0[XTextRange],
+    getPresentation: js.Function1[scala.Boolean, java.lang.String],
+    getTextFieldMaster: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XDependentTextField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Anchor")(Anchor)
+    __obj.updateDynamic("TextFieldMaster")(TextFieldMaster)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("attach")(attach)
+    __obj.updateDynamic("attachTextFieldMaster")(attachTextFieldMaster)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getAnchor")(getAnchor)
+    __obj.updateDynamic("getPresentation")(getPresentation)
+    __obj.updateDynamic("getTextFieldMaster")(getTextFieldMaster)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[XDependentTextField]
+  }
+}
+

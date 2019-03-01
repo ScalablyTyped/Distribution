@@ -32,3 +32,50 @@ trait ITool
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITool {
+  @scala.inline
+  def apply(
+    IComponent: extjsLib.ExtNs.IComponent = null,
+    afterRender: js.Function0[scala.Unit] = null,
+    baseCls: java.lang.String = null,
+    callback: js.Any = null,
+    disabledCls: java.lang.String = null,
+    handler: js.Any = null,
+    height: scala.Int | scala.Double = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    isTool: js.UndefOr[scala.Boolean] = js.undefined,
+    onDestroy: js.Function0[scala.Unit] = null,
+    renderTpl: js.Any = null,
+    scope: js.Any = null,
+    setType: js.Function1[/* type */ js.UndefOr[java.lang.String], ITool] = null,
+    stopEvent: js.UndefOr[scala.Boolean] = js.undefined,
+    toolOwner: extjsLib.ExtNs.IComponent = null,
+    tooltip: js.Any = null,
+    tooltipType: java.lang.String = null,
+    `type`: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ITool = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls)
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (!js.isUndefined(isTool)) __obj.updateDynamic("isTool")(isTool)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (setType != null) __obj.updateDynamic("setType")(setType)
+    if (!js.isUndefined(stopEvent)) __obj.updateDynamic("stopEvent")(stopEvent)
+    if (toolOwner != null) __obj.updateDynamic("toolOwner")(toolOwner)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltipType != null) __obj.updateDynamic("tooltipType")(tooltipType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITool]
+  }
+}
+

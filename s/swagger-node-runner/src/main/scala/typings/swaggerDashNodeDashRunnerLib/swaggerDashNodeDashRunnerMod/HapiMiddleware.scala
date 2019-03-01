@@ -12,3 +12,14 @@ trait HapiMiddleware extends Middleware {
   var plugin: swaggerDashNodeDashRunnerLib.Anon_Next
 }
 
+object HapiMiddleware {
+  @scala.inline
+  def apply(config: ConfigInternal, plugin: swaggerDashNodeDashRunnerLib.Anon_Next, runner: Runner): HapiMiddleware = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("plugin")(plugin)
+    __obj.updateDynamic("runner")(runner)
+    __obj.asInstanceOf[HapiMiddleware]
+  }
+}
+

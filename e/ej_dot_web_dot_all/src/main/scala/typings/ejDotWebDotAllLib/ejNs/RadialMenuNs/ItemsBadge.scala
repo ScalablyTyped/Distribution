@@ -14,3 +14,13 @@ trait ItemsBadge extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ItemsBadge {
+  @scala.inline
+  def apply(enabled: js.UndefOr[scala.Boolean] = js.undefined, value: scala.Int | scala.Double = null): ItemsBadge = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ItemsBadge]
+  }
+}
+

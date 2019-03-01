@@ -16,3 +16,12 @@ trait InkAnalysisUpdateData extends js.Object {
   var page: js.UndefOr[PageUpdateData] = js.undefined
 }
 
+object InkAnalysisUpdateData {
+  @scala.inline
+  def apply(page: PageUpdateData = null): InkAnalysisUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (page != null) __obj.updateDynamic("page")(page)
+    __obj.asInstanceOf[InkAnalysisUpdateData]
+  }
+}
+

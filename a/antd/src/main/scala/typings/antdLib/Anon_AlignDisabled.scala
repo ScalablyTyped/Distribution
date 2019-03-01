@@ -17,3 +17,30 @@ trait Anon_AlignDisabled extends js.Object {
   var transitionName: java.lang.String
 }
 
+object Anon_AlignDisabled {
+  @scala.inline
+  def apply(
+    align: Anon_Offset,
+    disabled: scala.Boolean,
+    focusOnOpen: scala.Boolean,
+    hideDisabledOptions: scala.Boolean,
+    placement: java.lang.String,
+    transitionName: java.lang.String,
+    disabledHours: js.UndefOr[scala.Nothing] = js.undefined,
+    disabledMinutes: js.UndefOr[scala.Nothing] = js.undefined,
+    disabledSeconds: js.UndefOr[scala.Nothing] = js.undefined
+  ): Anon_AlignDisabled = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("align")(align)
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("focusOnOpen")(focusOnOpen)
+    __obj.updateDynamic("hideDisabledOptions")(hideDisabledOptions)
+    __obj.updateDynamic("placement")(placement)
+    __obj.updateDynamic("transitionName")(transitionName)
+    if (!js.isUndefined(disabledHours)) __obj.updateDynamic("disabledHours")(disabledHours)
+    if (!js.isUndefined(disabledMinutes)) __obj.updateDynamic("disabledMinutes")(disabledMinutes)
+    if (!js.isUndefined(disabledSeconds)) __obj.updateDynamic("disabledSeconds")(disabledSeconds)
+    __obj.asInstanceOf[Anon_AlignDisabled]
+  }
+}
+

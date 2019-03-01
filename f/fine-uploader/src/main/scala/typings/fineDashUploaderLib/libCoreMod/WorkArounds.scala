@@ -31,3 +31,18 @@ trait WorkArounds extends js.Object {
   var iosEmptyVideos: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WorkArounds {
+  @scala.inline
+  def apply(
+    ios8BrowserCrash: js.UndefOr[scala.Boolean] = js.undefined,
+    ios8SafariUploads: js.UndefOr[scala.Boolean] = js.undefined,
+    iosEmptyVideos: js.UndefOr[scala.Boolean] = js.undefined
+  ): WorkArounds = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ios8BrowserCrash)) __obj.updateDynamic("ios8BrowserCrash")(ios8BrowserCrash)
+    if (!js.isUndefined(ios8SafariUploads)) __obj.updateDynamic("ios8SafariUploads")(ios8SafariUploads)
+    if (!js.isUndefined(iosEmptyVideos)) __obj.updateDynamic("iosEmptyVideos")(iosEmptyVideos)
+    __obj.asInstanceOf[WorkArounds]
+  }
+}
+

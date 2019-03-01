@@ -11,3 +11,26 @@ trait XEnumerationAccess extends XElementAccess {
   def createEnumeration(): XEnumeration
 }
 
+object XEnumerationAccess {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    createEnumeration: js.Function0[XEnumeration],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XEnumerationAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createEnumeration")(createEnumeration)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XEnumerationAccess]
+  }
+}
+

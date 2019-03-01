@@ -41,3 +41,37 @@ trait ISourceCreationOptions extends js.Object {
   var `object`: stripeLib.stripeLibStrings.card
 }
 
+object ISourceCreationOptions {
+  @scala.inline
+  def apply(
+    exp_month: scala.Double,
+    exp_year: scala.Double,
+    number: java.lang.String,
+    `object`: stripeLib.stripeLibStrings.card,
+    address_city: java.lang.String = null,
+    address_country: java.lang.String = null,
+    address_line1: java.lang.String = null,
+    address_line2: java.lang.String = null,
+    address_state: java.lang.String = null,
+    address_zip: java.lang.String = null,
+    cvc: java.lang.String = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    name: java.lang.String = null
+  ): ISourceCreationOptions = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("exp_month")(exp_month)
+    __obj.updateDynamic("exp_year")(exp_year)
+    __obj.updateDynamic("number")(number)
+    if (address_city != null) __obj.updateDynamic("address_city")(address_city)
+    if (address_country != null) __obj.updateDynamic("address_country")(address_country)
+    if (address_line1 != null) __obj.updateDynamic("address_line1")(address_line1)
+    if (address_line2 != null) __obj.updateDynamic("address_line2")(address_line2)
+    if (address_state != null) __obj.updateDynamic("address_state")(address_state)
+    if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip)
+    if (cvc != null) __obj.updateDynamic("cvc")(cvc)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ISourceCreationOptions]
+  }
+}
+

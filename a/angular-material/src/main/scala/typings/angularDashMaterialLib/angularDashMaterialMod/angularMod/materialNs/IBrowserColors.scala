@@ -11,3 +11,14 @@ trait IBrowserColors extends js.Object {
   var theme: java.lang.String
 }
 
+object IBrowserColors {
+  @scala.inline
+  def apply(hue: java.lang.String, palette: java.lang.String, theme: java.lang.String): IBrowserColors = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hue")(hue)
+    __obj.updateDynamic("palette")(palette)
+    __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[IBrowserColors]
+  }
+}
+

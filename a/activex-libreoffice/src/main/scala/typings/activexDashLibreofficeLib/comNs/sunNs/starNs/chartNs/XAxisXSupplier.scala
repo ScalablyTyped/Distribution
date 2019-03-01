@@ -55,3 +55,34 @@ trait XAxisXSupplier
   def getXMainGrid(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object XAxisXSupplier {
+  @scala.inline
+  def apply(
+    XAxis: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    XAxisTitle: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    XHelpGrid: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    XMainGrid: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getXAxis: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getXAxisTitle: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
+    getXHelpGrid: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getXMainGrid: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAxisXSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("XAxis")(XAxis)
+    __obj.updateDynamic("XAxisTitle")(XAxisTitle)
+    __obj.updateDynamic("XHelpGrid")(XHelpGrid)
+    __obj.updateDynamic("XMainGrid")(XMainGrid)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getXAxis")(getXAxis)
+    __obj.updateDynamic("getXAxisTitle")(getXAxisTitle)
+    __obj.updateDynamic("getXHelpGrid")(getXHelpGrid)
+    __obj.updateDynamic("getXMainGrid")(getXMainGrid)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAxisXSupplier]
+  }
+}
+

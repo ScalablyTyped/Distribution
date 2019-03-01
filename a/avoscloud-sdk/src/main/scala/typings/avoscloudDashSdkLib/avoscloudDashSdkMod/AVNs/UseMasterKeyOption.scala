@@ -12,3 +12,12 @@ trait UseMasterKeyOption extends js.Object {
   var useMasterKey: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UseMasterKeyOption {
+  @scala.inline
+  def apply(useMasterKey: js.UndefOr[scala.Boolean] = js.undefined): UseMasterKeyOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(useMasterKey)) __obj.updateDynamic("useMasterKey")(useMasterKey)
+    __obj.asInstanceOf[UseMasterKeyOption]
+  }
+}
+

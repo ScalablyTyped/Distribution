@@ -57,3 +57,30 @@ trait DefineIndexesOptions extends js.Object {
   var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 
+object DefineIndexesOptions {
+  @scala.inline
+  def apply(
+    concurrently: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: js.Array[java.lang.String | fn | sequelizeLib.Anon_Attribute] = null,
+    index: java.lang.String = null,
+    method: java.lang.String = null,
+    name: java.lang.String = null,
+    operator: java.lang.String = null,
+    unique: js.UndefOr[scala.Boolean] = js.undefined,
+    using: java.lang.String = null,
+    where: AnyWhereOptions = null
+  ): DefineIndexesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(concurrently)) __obj.updateDynamic("concurrently")(concurrently)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (operator != null) __obj.updateDynamic("operator")(operator)
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    if (using != null) __obj.updateDynamic("using")(using)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[DefineIndexesOptions]
+  }
+}
+

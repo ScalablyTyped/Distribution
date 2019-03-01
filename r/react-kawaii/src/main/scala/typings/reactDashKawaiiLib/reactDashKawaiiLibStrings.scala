@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object reactDashKawaiiLibStrings {
   @js.native
-  sealed trait blissful extends js.Object
+  sealed trait blissful
+    extends reactDashKawaiiLib.reactDashKawaiiMod.KawaiiMood
   
   @js.native
-  sealed trait excited extends js.Object
+  sealed trait excited
+    extends reactDashKawaiiLib.reactDashKawaiiMod.KawaiiMood
   
   @js.native
-  sealed trait happy extends js.Object
+  sealed trait happy
+    extends reactDashKawaiiLib.reactDashKawaiiMod.KawaiiMood
   
   @js.native
-  sealed trait ko extends js.Object
+  sealed trait ko
+    extends reactDashKawaiiLib.reactDashKawaiiMod.KawaiiMood
   
   @js.native
-  sealed trait lovestruck extends js.Object
+  sealed trait lovestruck
+    extends reactDashKawaiiLib.reactDashKawaiiMod.KawaiiMood
   
   @js.native
-  sealed trait sad extends js.Object
+  sealed trait sad
+    extends reactDashKawaiiLib.reactDashKawaiiMod.KawaiiMood
   
   @js.native
-  sealed trait shocked extends js.Object
+  sealed trait shocked
+    extends reactDashKawaiiLib.reactDashKawaiiMod.KawaiiMood
   
   @scala.inline
   def blissful: blissful = "blissful".asInstanceOf[blissful]

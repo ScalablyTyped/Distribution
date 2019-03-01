@@ -10,3 +10,12 @@ trait TargetSslProxiesSetBackendServiceRequest extends js.Object {
   var service: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TargetSslProxiesSetBackendServiceRequest {
+  @scala.inline
+  def apply(service: java.lang.String = null): TargetSslProxiesSetBackendServiceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (service != null) __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[TargetSslProxiesSetBackendServiceRequest]
+  }
+}
+

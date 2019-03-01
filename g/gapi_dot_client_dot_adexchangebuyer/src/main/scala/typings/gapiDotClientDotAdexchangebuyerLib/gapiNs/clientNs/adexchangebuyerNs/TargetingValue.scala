@@ -16,3 +16,20 @@ trait TargetingValue extends js.Object {
   var stringValue: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TargetingValue {
+  @scala.inline
+  def apply(
+    creativeSizeValue: TargetingValueCreativeSize = null,
+    dayPartTargetingValue: TargetingValueDayPartTargeting = null,
+    longValue: java.lang.String = null,
+    stringValue: java.lang.String = null
+  ): TargetingValue = {
+    val __obj = js.Dynamic.literal()
+    if (creativeSizeValue != null) __obj.updateDynamic("creativeSizeValue")(creativeSizeValue)
+    if (dayPartTargetingValue != null) __obj.updateDynamic("dayPartTargetingValue")(dayPartTargetingValue)
+    if (longValue != null) __obj.updateDynamic("longValue")(longValue)
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    __obj.asInstanceOf[TargetingValue]
+  }
+}
+

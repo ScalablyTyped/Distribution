@@ -9,3 +9,12 @@ trait Anon_PEvtObj extends js.Object {
   val pEvtObj: activexDashMshtmlLib.MSHTMLNs.IHTMLEventObj
 }
 
+object Anon_PEvtObj {
+  @scala.inline
+  def apply(pEvtObj: activexDashMshtmlLib.MSHTMLNs.IHTMLEventObj): Anon_PEvtObj = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pEvtObj")(pEvtObj)
+    __obj.asInstanceOf[Anon_PEvtObj]
+  }
+}
+

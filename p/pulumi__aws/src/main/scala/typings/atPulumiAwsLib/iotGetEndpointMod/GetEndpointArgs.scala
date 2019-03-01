@@ -12,3 +12,12 @@ trait GetEndpointArgs extends js.Object {
   val endpointType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetEndpointArgs {
+  @scala.inline
+  def apply(endpointType: java.lang.String = null): GetEndpointArgs = {
+    val __obj = js.Dynamic.literal()
+    if (endpointType != null) __obj.updateDynamic("endpointType")(endpointType)
+    __obj.asInstanceOf[GetEndpointArgs]
+  }
+}
+

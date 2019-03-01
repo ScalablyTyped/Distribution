@@ -27,3 +27,34 @@ trait SignaleConfig extends js.Object {
   var uppercaseLabel: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SignaleConfig {
+  @scala.inline
+  def apply(
+    displayBadge: js.UndefOr[scala.Boolean] = js.undefined,
+    displayDate: js.UndefOr[scala.Boolean] = js.undefined,
+    displayFilename: js.UndefOr[scala.Boolean] = js.undefined,
+    displayLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    displayScope: js.UndefOr[scala.Boolean] = js.undefined,
+    displayTimestamp: js.UndefOr[scala.Boolean] = js.undefined,
+    underlineLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    underlineMessage: js.UndefOr[scala.Boolean] = js.undefined,
+    underlinePrefix: js.UndefOr[scala.Boolean] = js.undefined,
+    underlineSuffix: js.UndefOr[scala.Boolean] = js.undefined,
+    uppercaseLabel: js.UndefOr[scala.Boolean] = js.undefined
+  ): SignaleConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(displayBadge)) __obj.updateDynamic("displayBadge")(displayBadge)
+    if (!js.isUndefined(displayDate)) __obj.updateDynamic("displayDate")(displayDate)
+    if (!js.isUndefined(displayFilename)) __obj.updateDynamic("displayFilename")(displayFilename)
+    if (!js.isUndefined(displayLabel)) __obj.updateDynamic("displayLabel")(displayLabel)
+    if (!js.isUndefined(displayScope)) __obj.updateDynamic("displayScope")(displayScope)
+    if (!js.isUndefined(displayTimestamp)) __obj.updateDynamic("displayTimestamp")(displayTimestamp)
+    if (!js.isUndefined(underlineLabel)) __obj.updateDynamic("underlineLabel")(underlineLabel)
+    if (!js.isUndefined(underlineMessage)) __obj.updateDynamic("underlineMessage")(underlineMessage)
+    if (!js.isUndefined(underlinePrefix)) __obj.updateDynamic("underlinePrefix")(underlinePrefix)
+    if (!js.isUndefined(underlineSuffix)) __obj.updateDynamic("underlineSuffix")(underlineSuffix)
+    if (!js.isUndefined(uppercaseLabel)) __obj.updateDynamic("uppercaseLabel")(uppercaseLabel)
+    __obj.asInstanceOf[SignaleConfig]
+  }
+}
+

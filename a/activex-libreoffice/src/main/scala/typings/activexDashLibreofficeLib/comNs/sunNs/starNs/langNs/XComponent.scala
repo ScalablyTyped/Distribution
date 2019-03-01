@@ -60,3 +60,24 @@ trait XComponent
   def removeEventListener(aListener: XEventListener): scala.Unit
 }
 
+object XComponent {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[XEventListener, scala.Unit]
+  ): XComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[XComponent]
+  }
+}
+

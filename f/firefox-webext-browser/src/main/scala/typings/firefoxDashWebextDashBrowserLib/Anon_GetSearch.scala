@@ -13,3 +13,18 @@ trait Anon_GetSearch extends js.Object {
   def search(searchProperties: Anon_Engine): js.Promise[_]
 }
 
+object Anon_GetSearch {
+  @scala.inline
+  def apply(
+    get: js.Function0[
+      js.Promise[js.Array[firefoxDashWebextDashBrowserLib.browserNs.searchNs.SearchEngine]]
+    ],
+    search: js.Function1[Anon_Engine, js.Promise[_]]
+  ): Anon_GetSearch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[Anon_GetSearch]
+  }
+}
+

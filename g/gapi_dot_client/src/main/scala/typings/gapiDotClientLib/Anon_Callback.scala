@@ -22,3 +22,16 @@ trait Anon_Callback[T] extends js.Object {
   ): js.Any
 }
 
+object Anon_Callback {
+  @scala.inline
+  def apply[T](
+    callback: js.Function2[gapiDotClientLib.gapiNs.clientNs.Response[T], java.lang.String, js.Any],
+    id: java.lang.String
+  ): Anon_Callback[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[Anon_Callback[T]]
+  }
+}
+

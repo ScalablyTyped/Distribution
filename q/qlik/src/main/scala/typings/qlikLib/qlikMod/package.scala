@@ -6,11 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object qlikMod {
-  type CustomProperty = CustomPropertyString | CustomPropertyInteger | CustomPropertyNumber | CustomPropertyArray | CustomPropertyButton | CustomPropertyButtonGroup | CustomPropertyCheckbox | CustomPropertyColorPicker | CustomPropertyDropdown | CustomPropertyLink | CustomProperyMedia | CustomPropertyRadio | CustomPropertySlider | CustomPropertyRangeSlider | CustomPropertySwitch | CustomPropertyText | CustomPropertyTextArea | CustomPropertyExpression | CustomPropertyItems
   type CustomPropertyOptions = js.Array[CustomPropertyOption] | js.Function0[js.Array[CustomPropertyOption]]
   type Global = js.Any
-  type InitialProperties = InitialPropertiesHyperCube | InitialPropertiesListobject
-  type ListTypes = qlikLib.qlikLibStrings.FieldList | qlikLib.qlikLibStrings.MeasureList | qlikLib.qlikLibStrings.DimensionList | qlikLib.qlikLibStrings.BookmarkList | qlikLib.qlikLibStrings.Selectionobject | qlikLib.qlikLibStrings.SnapshotList | qlikLib.qlikLibStrings.MediaList | qlikLib.qlikLibStrings.sheet | qlikLib.qlikLibStrings.Materobject | qlikLib.qlikLibStrings.VariableList | qlikLib.qlikLibStrings.story
   type NxCellRows = js.Array[NxCell]
   type NxMeasureInfo = ColumnInfo
   type Paint = js.ThisFunction10[

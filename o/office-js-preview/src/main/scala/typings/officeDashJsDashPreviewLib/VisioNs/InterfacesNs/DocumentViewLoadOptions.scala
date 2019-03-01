@@ -51,3 +51,24 @@ trait DocumentViewLoadOptions extends js.Object {
   var hideDiagramBoundary: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DocumentViewLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    disableHyperlinks: js.UndefOr[scala.Boolean] = js.undefined,
+    disablePan: js.UndefOr[scala.Boolean] = js.undefined,
+    disablePanZoomWindow: js.UndefOr[scala.Boolean] = js.undefined,
+    disableZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    hideDiagramBoundary: js.UndefOr[scala.Boolean] = js.undefined
+  ): DocumentViewLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(disableHyperlinks)) __obj.updateDynamic("disableHyperlinks")(disableHyperlinks)
+    if (!js.isUndefined(disablePan)) __obj.updateDynamic("disablePan")(disablePan)
+    if (!js.isUndefined(disablePanZoomWindow)) __obj.updateDynamic("disablePanZoomWindow")(disablePanZoomWindow)
+    if (!js.isUndefined(disableZoom)) __obj.updateDynamic("disableZoom")(disableZoom)
+    if (!js.isUndefined(hideDiagramBoundary)) __obj.updateDynamic("hideDiagramBoundary")(hideDiagramBoundary)
+    __obj.asInstanceOf[DocumentViewLoadOptions]
+  }
+}
+

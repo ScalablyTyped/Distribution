@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object d3DashColorMod {
-  type ColorSpaceObject = RGBColor | HSLColor | LabColor | HCLColor | CubehelixColor
   type GrayColorFactory = /**
     * Constructs a new Lab color with the specified l value and a = b = 0.
     *

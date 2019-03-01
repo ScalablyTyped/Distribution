@@ -24,3 +24,20 @@ trait LogDestinationState extends js.Object {
   val targetArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object LogDestinationState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targetArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): LogDestinationState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogDestinationState]
+  }
+}
+

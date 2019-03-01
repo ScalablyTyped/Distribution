@@ -18,3 +18,35 @@ trait TypeDescriptionProvider
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
      with XTypeDescriptionEnumerationAccess
 
+object TypeDescriptionProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    createTypeDescriptionEnumeration: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass], 
+      TypeDescriptionSearchDepth, 
+      XTypeDescriptionEnumeration
+    ],
+    dispose: js.Function0[scala.Unit],
+    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
+    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): TypeDescriptionProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("createTypeDescriptionEnumeration")(createTypeDescriptionEnumeration)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
+    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[TypeDescriptionProvider]
+  }
+}
+

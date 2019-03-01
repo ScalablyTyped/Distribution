@@ -85,3 +85,46 @@ trait RecordState extends js.Object {
   val zoneId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RecordState {
+  @scala.inline
+  def apply(
+    aliases: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EvaluateTargetHealthName]]
+    ] = null,
+    allowOverwrite: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    failoverRoutingPolicies: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput]]] = null,
+    fqdn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    geolocationRoutingPolicies: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ContinentCountry]]
+    ] = null,
+    healthCheckId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    latencyRoutingPolicies: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_RegionInput]]] = null,
+    multivalueAnswerRoutingPolicy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    records: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    setIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ttl: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    weightedRoutingPolicies: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_WeightInput]]] = null,
+    zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RecordState = {
+    val __obj = js.Dynamic.literal()
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (allowOverwrite != null) __obj.updateDynamic("allowOverwrite")(allowOverwrite.asInstanceOf[js.Any])
+    if (failoverRoutingPolicies != null) __obj.updateDynamic("failoverRoutingPolicies")(failoverRoutingPolicies.asInstanceOf[js.Any])
+    if (fqdn != null) __obj.updateDynamic("fqdn")(fqdn.asInstanceOf[js.Any])
+    if (geolocationRoutingPolicies != null) __obj.updateDynamic("geolocationRoutingPolicies")(geolocationRoutingPolicies.asInstanceOf[js.Any])
+    if (healthCheckId != null) __obj.updateDynamic("healthCheckId")(healthCheckId.asInstanceOf[js.Any])
+    if (latencyRoutingPolicies != null) __obj.updateDynamic("latencyRoutingPolicies")(latencyRoutingPolicies.asInstanceOf[js.Any])
+    if (multivalueAnswerRoutingPolicy != null) __obj.updateDynamic("multivalueAnswerRoutingPolicy")(multivalueAnswerRoutingPolicy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (records != null) __obj.updateDynamic("records")(records.asInstanceOf[js.Any])
+    if (setIdentifier != null) __obj.updateDynamic("setIdentifier")(setIdentifier.asInstanceOf[js.Any])
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (weightedRoutingPolicies != null) __obj.updateDynamic("weightedRoutingPolicies")(weightedRoutingPolicies.asInstanceOf[js.Any])
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecordState]
+  }
+}
+

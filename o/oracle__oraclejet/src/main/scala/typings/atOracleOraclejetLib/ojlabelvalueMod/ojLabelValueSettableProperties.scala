@@ -11,3 +11,16 @@ trait ojLabelValueSettableProperties
   var labelWidth: java.lang.String
 }
 
+object ojLabelValueSettableProperties {
+  @scala.inline
+  def apply(
+    labelEdge: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.inherit,
+    labelWidth: java.lang.String
+  ): ojLabelValueSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("labelEdge")(labelEdge.asInstanceOf[js.Any])
+    __obj.updateDynamic("labelWidth")(labelWidth)
+    __obj.asInstanceOf[ojLabelValueSettableProperties]
+  }
+}
+

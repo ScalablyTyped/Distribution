@@ -16,3 +16,16 @@ trait CreateLimiterOptions extends js.Object {
   var streamOptions: js.UndefOr[nodeLib.streamMod.internalNs.TransformOptions] = js.undefined
 }
 
+object CreateLimiterOptions {
+  @scala.inline
+  def apply(
+    maxApiCalls: scala.Int | scala.Double = null,
+    streamOptions: nodeLib.streamMod.internalNs.TransformOptions = null
+  ): CreateLimiterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (maxApiCalls != null) __obj.updateDynamic("maxApiCalls")(maxApiCalls.asInstanceOf[js.Any])
+    if (streamOptions != null) __obj.updateDynamic("streamOptions")(streamOptions)
+    __obj.asInstanceOf[CreateLimiterOptions]
+  }
+}
+

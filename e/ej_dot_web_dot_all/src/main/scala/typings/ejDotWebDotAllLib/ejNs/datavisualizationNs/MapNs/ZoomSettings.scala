@@ -40,3 +40,28 @@ trait ZoomSettings extends js.Object {
   var minValue: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ZoomSettings {
+  @scala.inline
+  def apply(
+    animationDuration: java.lang.String = null,
+    enableMouseWheelZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    enableZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    enableZoomOnSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    factor: scala.Int | scala.Double = null,
+    level: scala.Int | scala.Double = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null
+  ): ZoomSettings = {
+    val __obj = js.Dynamic.literal()
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration)
+    if (!js.isUndefined(enableMouseWheelZoom)) __obj.updateDynamic("enableMouseWheelZoom")(enableMouseWheelZoom)
+    if (!js.isUndefined(enableZoom)) __obj.updateDynamic("enableZoom")(enableZoom)
+    if (!js.isUndefined(enableZoomOnSelection)) __obj.updateDynamic("enableZoomOnSelection")(enableZoomOnSelection)
+    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ZoomSettings]
+  }
+}
+

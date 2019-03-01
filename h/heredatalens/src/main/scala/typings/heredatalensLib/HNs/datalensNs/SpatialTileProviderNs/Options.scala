@@ -16,3 +16,13 @@ trait Options extends js.Object {
   var queryParams: js.UndefOr[js.Any] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(layerName: java.lang.String, queryParams: js.Any = null): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("layerName")(layerName)
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    __obj.asInstanceOf[Options]
+  }
+}
+

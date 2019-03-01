@@ -36,3 +36,23 @@ trait IDiscount
   var subscription: java.lang.String
 }
 
+object IDiscount {
+  @scala.inline
+  def apply(
+    coupon: ICoupon,
+    customer: java.lang.String,
+    end: scala.Double,
+    `object`: stripeLib.stripeLibStrings.discount,
+    start: scala.Double,
+    subscription: java.lang.String
+  ): IDiscount = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("coupon")(coupon)
+    __obj.updateDynamic("customer")(customer)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("subscription")(subscription)
+    __obj.asInstanceOf[IDiscount]
+  }
+}
+

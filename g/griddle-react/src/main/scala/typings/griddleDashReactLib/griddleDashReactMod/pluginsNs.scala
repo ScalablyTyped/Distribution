@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("griddle-react", "plugins")
 @js.native
 object pluginsNs extends js.Object {
-  
   trait PositionSettings extends js.Object {
     // TODO: Unused?
     // The minimum column width

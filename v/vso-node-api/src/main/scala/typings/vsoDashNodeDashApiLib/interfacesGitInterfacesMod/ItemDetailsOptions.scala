@@ -16,3 +16,13 @@ trait ItemDetailsOptions extends js.Object {
   var recursionLevel: VersionControlRecursionType
 }
 
+object ItemDetailsOptions {
+  @scala.inline
+  def apply(includeContentMetadata: scala.Boolean, recursionLevel: VersionControlRecursionType): ItemDetailsOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("includeContentMetadata")(includeContentMetadata)
+    __obj.updateDynamic("recursionLevel")(recursionLevel)
+    __obj.asInstanceOf[ItemDetailsOptions]
+  }
+}
+

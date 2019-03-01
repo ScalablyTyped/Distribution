@@ -30,3 +30,26 @@ trait IBackgroundTaskInstance extends js.Object {
   def getThrottleCount(counter: BackgroundTaskThrottleCounter): scala.Double
 }
 
+object IBackgroundTaskInstance {
+  @scala.inline
+  def apply(
+    getDeferral: js.Function0[BackgroundTaskDeferral],
+    getThrottleCount: js.Function1[BackgroundTaskThrottleCounter, scala.Double],
+    instanceId: java.lang.String,
+    progress: scala.Double,
+    suspendedCount: scala.Double,
+    task: BackgroundTaskRegistration,
+    triggerDetails: js.Any
+  ): IBackgroundTaskInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getDeferral")(getDeferral)
+    __obj.updateDynamic("getThrottleCount")(getThrottleCount)
+    __obj.updateDynamic("instanceId")(instanceId)
+    __obj.updateDynamic("progress")(progress)
+    __obj.updateDynamic("suspendedCount")(suspendedCount)
+    __obj.updateDynamic("task")(task)
+    __obj.updateDynamic("triggerDetails")(triggerDetails)
+    __obj.asInstanceOf[IBackgroundTaskInstance]
+  }
+}
+

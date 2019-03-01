@@ -292,3 +292,26 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResponsiveNavigationProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    breakpoint: scala.Int | scala.Double = null,
+    menuIcon: MenuIconProps = null,
+    titleBar: TitleBarProps = null,
+    titleBarTitle: TitleBarTitleProps = null,
+    topBar: reactDashFoundationLib.componentsTopDashBarMod.TopBarProps = null
+  ): ResponsiveNavigationProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
+    if (menuIcon != null) __obj.updateDynamic("menuIcon")(menuIcon)
+    if (titleBar != null) __obj.updateDynamic("titleBar")(titleBar)
+    if (titleBarTitle != null) __obj.updateDynamic("titleBarTitle")(titleBarTitle)
+    if (topBar != null) __obj.updateDynamic("topBar")(topBar)
+    __obj.asInstanceOf[ResponsiveNavigationProps]
+  }
+}
+

@@ -10,3 +10,12 @@ trait GalleryChangedEventArgs extends js.Object {
   var `type`: GalleryChangedType
 }
 
+object GalleryChangedEventArgs {
+  @scala.inline
+  def apply(galleryId: java.lang.String, `type`: GalleryChangedType): GalleryChangedEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("galleryId")(galleryId)
+    __obj.asInstanceOf[GalleryChangedEventArgs]
+  }
+}
+

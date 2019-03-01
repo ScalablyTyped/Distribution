@@ -33,3 +33,57 @@ trait BucketsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
 }
 
+object BucketsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucketFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucketFieldsIfMetagenerationMatch, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucket, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
+    ],
+    list: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Buckets]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucketFieldsIfMetagenerationMatchIfMetagenerationNotMatch, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucket, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucketFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotStorageLib.Anon_AltBucketFieldsIfMetagenerationMatchIfMetagenerationNotMatch, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
+    ]
+  ): BucketsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[BucketsResource]
+  }
+}
+

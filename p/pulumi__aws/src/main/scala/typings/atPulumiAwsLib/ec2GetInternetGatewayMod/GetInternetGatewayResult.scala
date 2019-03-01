@@ -19,3 +19,22 @@ trait GetInternetGatewayResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetInternetGatewayResult {
+  @scala.inline
+  def apply(
+    attachments: js.Array[atPulumiAwsLib.Anon_State],
+    id: java.lang.String,
+    internetGatewayId: java.lang.String,
+    ownerId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetInternetGatewayResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attachments")(attachments)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("internetGatewayId")(internetGatewayId)
+    __obj.updateDynamic("ownerId")(ownerId)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetInternetGatewayResult]
+  }
+}
+

@@ -15,3 +15,16 @@ trait UserFacingMessage extends js.Object {
   var localizedMessages: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object UserFacingMessage {
+  @scala.inline
+  def apply(
+    defaultMessage: java.lang.String = null,
+    localizedMessages: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): UserFacingMessage = {
+    val __obj = js.Dynamic.literal()
+    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage)
+    if (localizedMessages != null) __obj.updateDynamic("localizedMessages")(localizedMessages)
+    __obj.asInstanceOf[UserFacingMessage]
+  }
+}
+

@@ -15,3 +15,26 @@ trait IPrintTask extends js.Object {
   var source: IPrintDocumentSource
 }
 
+object IPrintTask {
+  @scala.inline
+  def apply(
+    oncompleted: js.Any,
+    onpreviewing: js.Any,
+    onprogressing: js.Any,
+    onsubmitting: js.Any,
+    options: PrintTaskOptions,
+    properties: winrtLib.WindowsNs.ApplicationModelNs.DataTransferNs.DataPackagePropertySet,
+    source: IPrintDocumentSource
+  ): IPrintTask = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("oncompleted")(oncompleted)
+    __obj.updateDynamic("onpreviewing")(onpreviewing)
+    __obj.updateDynamic("onprogressing")(onprogressing)
+    __obj.updateDynamic("onsubmitting")(onsubmitting)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[IPrintTask]
+  }
+}
+

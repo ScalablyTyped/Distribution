@@ -10,3 +10,13 @@ trait IOmitResponse extends js.Object {
   var removedParams: js.Object
 }
 
+object IOmitResponse {
+  @scala.inline
+  def apply(querystring: java.lang.String, removedParams: js.Object): IOmitResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("querystring")(querystring)
+    __obj.updateDynamic("removedParams")(removedParams)
+    __obj.asInstanceOf[IOmitResponse]
+  }
+}
+

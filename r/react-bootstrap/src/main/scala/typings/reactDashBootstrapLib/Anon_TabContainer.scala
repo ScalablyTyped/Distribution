@@ -9,3 +9,12 @@ trait Anon_TabContainer extends js.Object {
   val TabContainerNs: js.Any
 }
 
+object Anon_TabContainer {
+  @scala.inline
+  def apply(TabContainerNs: js.Any): Anon_TabContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TabContainerNs")(TabContainerNs)
+    __obj.asInstanceOf[Anon_TabContainer]
+  }
+}
+

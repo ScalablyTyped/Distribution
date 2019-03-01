@@ -62,3 +62,59 @@ trait StarRatingComponentProps extends js.Object {
   var value: scala.Double
 }
 
+object StarRatingComponentProps {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    value: scala.Double,
+    editing: js.UndefOr[scala.Boolean] = js.undefined,
+    emptyStarColor: java.lang.String = null,
+    onStarClick: js.Function3[
+      /* nextValue */ scala.Double, 
+      /* prevValue */ scala.Double, 
+      /* name */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    onStarHover: js.Function3[
+      /* nextValue */ scala.Double, 
+      /* prevValue */ scala.Double, 
+      /* name */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    onStarHoverOut: js.Function3[
+      /* nextValue */ scala.Double, 
+      /* prevValue */ scala.Double, 
+      /* name */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    renderStarIcon: js.Function3[
+      /* nextValue */ scala.Double, 
+      /* prevValue */ scala.Double, 
+      /* name */ java.lang.String, 
+      reactLib.reactMod.ReactNs.ReactNode | java.lang.String
+    ] = null,
+    renderStarIconHalf: js.Function3[
+      /* nextValue */ scala.Double, 
+      /* prevValue */ scala.Double, 
+      /* name */ java.lang.String, 
+      reactLib.reactMod.ReactNs.ReactNode | java.lang.String
+    ] = null,
+    starColor: java.lang.String = null,
+    starCount: scala.Int | scala.Double = null
+  ): StarRatingComponentProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing)
+    if (emptyStarColor != null) __obj.updateDynamic("emptyStarColor")(emptyStarColor)
+    if (onStarClick != null) __obj.updateDynamic("onStarClick")(onStarClick)
+    if (onStarHover != null) __obj.updateDynamic("onStarHover")(onStarHover)
+    if (onStarHoverOut != null) __obj.updateDynamic("onStarHoverOut")(onStarHoverOut)
+    if (renderStarIcon != null) __obj.updateDynamic("renderStarIcon")(renderStarIcon)
+    if (renderStarIconHalf != null) __obj.updateDynamic("renderStarIconHalf")(renderStarIconHalf)
+    if (starColor != null) __obj.updateDynamic("starColor")(starColor)
+    if (starCount != null) __obj.updateDynamic("starCount")(starCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StarRatingComponentProps]
+  }
+}
+

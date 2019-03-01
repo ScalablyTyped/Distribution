@@ -12,3 +12,20 @@ trait Anon_CoordinateSpace extends js.Object {
   var path: java.lang.String
 }
 
+object Anon_CoordinateSpace {
+  @scala.inline
+  def apply(
+    coordinateSpace: js.Any,
+    id: js.Any,
+    labelLayout: atOracleOraclejetLib.ojdiagramDashUtilsMod.LabelLayout,
+    path: java.lang.String
+  ): Anon_CoordinateSpace = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coordinateSpace")(coordinateSpace)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("labelLayout")(labelLayout)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Anon_CoordinateSpace]
+  }
+}
+

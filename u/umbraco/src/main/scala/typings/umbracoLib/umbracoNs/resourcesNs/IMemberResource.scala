@@ -118,3 +118,29 @@ trait IMemberResource extends js.Object {
   def save(member: js.Object, isNew: scala.Boolean, files: js.Array[_]): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 
+object IMemberResource {
+  @scala.inline
+  def apply(
+    deleteByKey: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getByKey: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getListNode: js.Function1[java.lang.String, js.Any],
+    getPagedResults: js.Function2[java.lang.String, js.Any, js.Any],
+    getScaffold: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    save: js.Function3[
+      js.Object, 
+      scala.Boolean, 
+      js.Array[_], 
+      angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+    ]
+  ): IMemberResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deleteByKey")(deleteByKey)
+    __obj.updateDynamic("getByKey")(getByKey)
+    __obj.updateDynamic("getListNode")(getListNode)
+    __obj.updateDynamic("getPagedResults")(getPagedResults)
+    __obj.updateDynamic("getScaffold")(getScaffold)
+    __obj.updateDynamic("save")(save)
+    __obj.asInstanceOf[IMemberResource]
+  }
+}
+

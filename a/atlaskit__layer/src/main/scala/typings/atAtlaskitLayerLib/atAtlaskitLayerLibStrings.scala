@@ -7,67 +7,88 @@ import scala.scalajs.js.annotation._
 
 object atAtlaskitLayerLibStrings {
   @js.native
-  sealed trait absolute extends js.Object
+  sealed trait absolute
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.CSSPositionType
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.FlipPositionType
   
   @js.native
-  sealed trait `bottom center` extends js.Object
+  sealed trait `bottom center`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait `bottom left` extends js.Object
+  sealed trait `bottom left`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait `bottom right` extends js.Object
+  sealed trait `bottom right`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait fixed extends js.Object
+  sealed trait fixed
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.CSSPositionType
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.FlipPositionType
   
   @js.native
-  sealed trait `left bottom` extends js.Object
+  sealed trait `left bottom`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait `left middle` extends js.Object
+  sealed trait `left middle`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait `left top` extends js.Object
+  sealed trait `left top`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.FlipPositionType
   
   @js.native
-  sealed trait `right bottom` extends js.Object
+  sealed trait `right bottom`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait `right middle` extends js.Object
+  sealed trait `right middle`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait `right top` extends js.Object
+  sealed trait `right top`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait scrollParent extends js.Object
+  sealed trait scrollParent
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.BoundariesElementType
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.FlipPositionType
   
   @js.native
-  sealed trait `top center` extends js.Object
+  sealed trait `top center`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait `top left` extends js.Object
+  sealed trait `top left`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait `top right` extends js.Object
+  sealed trait `top right`
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.PositionType
   
   @js.native
-  sealed trait viewport extends js.Object
+  sealed trait viewport
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.BoundariesElementType
   
   @js.native
-  sealed trait window extends js.Object
+  sealed trait window
+    extends atAtlaskitLayerLib.atAtlaskitLayerMod.BoundariesElementType
   
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]

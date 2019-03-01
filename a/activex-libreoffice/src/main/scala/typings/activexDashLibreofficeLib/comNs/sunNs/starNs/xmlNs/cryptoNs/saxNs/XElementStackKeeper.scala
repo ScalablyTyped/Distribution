@@ -25,3 +25,28 @@ trait XElementStackKeeper
   def stop(): scala.Unit
 }
 
+object XElementStackKeeper {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    retrieve: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    start: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): XElementStackKeeper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("retrieve")(retrieve)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[XElementStackKeeper]
+  }
+}
+

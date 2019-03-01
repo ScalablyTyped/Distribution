@@ -47,3 +47,34 @@ trait SpeakOptions extends js.Object {
   var volume: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object SpeakOptions {
+  @scala.inline
+  def apply(
+    desiredEventTypes: js.Array[java.lang.String] = null,
+    enqueue: js.UndefOr[scala.Boolean] = js.undefined,
+    extensionId: java.lang.String = null,
+    gender: chromeDashAppsLib.chromeDashAppsLibStrings.male | chromeDashAppsLib.chromeDashAppsLibStrings.female = null,
+    lang: java.lang.String = null,
+    onEvent: js.Function1[/* event */ TtsEvent, scala.Unit] = null,
+    pitch: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    rate: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    requiredEventTypes: js.Array[java.lang.String] = null,
+    voiceName: java.lang.String = null,
+    volume: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): SpeakOptions = {
+    val __obj = js.Dynamic.literal()
+    if (desiredEventTypes != null) __obj.updateDynamic("desiredEventTypes")(desiredEventTypes)
+    if (!js.isUndefined(enqueue)) __obj.updateDynamic("enqueue")(enqueue)
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (onEvent != null) __obj.updateDynamic("onEvent")(onEvent)
+    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch)
+    if (!js.isUndefined(rate)) __obj.updateDynamic("rate")(rate)
+    if (requiredEventTypes != null) __obj.updateDynamic("requiredEventTypes")(requiredEventTypes)
+    if (voiceName != null) __obj.updateDynamic("voiceName")(voiceName)
+    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume)
+    __obj.asInstanceOf[SpeakOptions]
+  }
+}
+

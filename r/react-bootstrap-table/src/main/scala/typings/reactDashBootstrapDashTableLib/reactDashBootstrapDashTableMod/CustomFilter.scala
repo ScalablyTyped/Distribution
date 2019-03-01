@@ -30,3 +30,27 @@ trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElemen
   ): reactLib.reactMod.ReactNs.ReactElement[FElement]
 }
 
+object CustomFilter {
+  @scala.inline
+  def apply[FParams /* <: js.Object */, FElement /* <: CustomFilterElement */](
+    customFilterParameters: CustomFilterParameters[FParams],
+    getElement_CustomFilter: js.Function2[
+      js.Function2[
+        /* value */ js.UndefOr[CustomFilterParameters[FParams]], 
+        /* type */ js.UndefOr[
+          reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.CustomFilter
+        ], 
+        scala.Unit
+      ], 
+      CustomFilterParameters[FParams], 
+      reactLib.reactMod.ReactNs.ReactElement[FElement]
+    ],
+    `type`: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibStrings.CustomFilter
+  ): CustomFilter[FParams, FElement] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("customFilterParameters")(customFilterParameters)
+    __obj.updateDynamic("getElement")(getElement_CustomFilter)
+    __obj.asInstanceOf[CustomFilter[FParams, FElement]]
+  }
+}
+

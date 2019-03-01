@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("are-we-there-yet", "TrackerGroup")
 @js.native
-class TrackerGroup () extends TrackerBase {
+class TrackerGroup ()
+  extends TrackerBase
+     with TrackerObject {
   def this(name: java.lang.String) = this()
   def addUnit(tracker: TrackerBase): TrackerObject = js.native
   def addUnit(tracker: TrackerBase, weight: scala.Double): TrackerObject = js.native

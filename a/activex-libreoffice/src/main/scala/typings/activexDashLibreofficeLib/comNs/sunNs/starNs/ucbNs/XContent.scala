@@ -48,3 +48,30 @@ trait XContent
   def removeContentEventListener(Listener: XContentEventListener): scala.Unit
 }
 
+object XContent {
+  @scala.inline
+  def apply(
+    ContentType: java.lang.String,
+    Identifier: XContentIdentifier,
+    acquire: js.Function0[scala.Unit],
+    addContentEventListener: js.Function1[XContentEventListener, scala.Unit],
+    getContentType: js.Function0[java.lang.String],
+    getIdentifier: js.Function0[XContentIdentifier],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeContentEventListener: js.Function1[XContentEventListener, scala.Unit]
+  ): XContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ContentType")(ContentType)
+    __obj.updateDynamic("Identifier")(Identifier)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addContentEventListener")(addContentEventListener)
+    __obj.updateDynamic("getContentType")(getContentType)
+    __obj.updateDynamic("getIdentifier")(getIdentifier)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeContentEventListener")(removeContentEventListener)
+    __obj.asInstanceOf[XContent]
+  }
+}
+

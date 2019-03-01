@@ -9,3 +9,12 @@ trait Anon_IsInline extends js.Object {
   var isInline: scala.Boolean
 }
 
+object Anon_IsInline {
+  @scala.inline
+  def apply(isInline: scala.Boolean): Anon_IsInline = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isInline")(isInline)
+    __obj.asInstanceOf[Anon_IsInline]
+  }
+}
+

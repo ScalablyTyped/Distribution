@@ -35,3 +35,18 @@ trait RangeAreasUpdateData extends js.Object {
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RangeAreasUpdateData {
+  @scala.inline
+  def apply(
+    dataValidation: DataValidationUpdateData = null,
+    format: RangeFormatUpdateData = null,
+    style: java.lang.String = null
+  ): RangeAreasUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[RangeAreasUpdateData]
+  }
+}
+

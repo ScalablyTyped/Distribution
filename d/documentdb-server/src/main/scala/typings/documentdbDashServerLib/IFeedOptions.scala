@@ -20,3 +20,20 @@ trait IFeedOptions extends js.Object {
   var pageSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IFeedOptions {
+  @scala.inline
+  def apply(
+    continuation: java.lang.String = null,
+    enableLowPrecisionOrderBy: js.UndefOr[scala.Boolean] = js.undefined,
+    enableScan: js.UndefOr[scala.Boolean] = js.undefined,
+    pageSize: scala.Int | scala.Double = null
+  ): IFeedOptions = {
+    val __obj = js.Dynamic.literal()
+    if (continuation != null) __obj.updateDynamic("continuation")(continuation)
+    if (!js.isUndefined(enableLowPrecisionOrderBy)) __obj.updateDynamic("enableLowPrecisionOrderBy")(enableLowPrecisionOrderBy)
+    if (!js.isUndefined(enableScan)) __obj.updateDynamic("enableScan")(enableScan)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IFeedOptions]
+  }
+}
+

@@ -11,3 +11,13 @@ trait Entry[D] extends js.Object {
   var next: Entry[D] | scala.Null
 }
 
+object Entry {
+  @scala.inline
+  def apply[D](data: D, next: Entry[D] = null): Entry[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[Entry[D]]
+  }
+}
+

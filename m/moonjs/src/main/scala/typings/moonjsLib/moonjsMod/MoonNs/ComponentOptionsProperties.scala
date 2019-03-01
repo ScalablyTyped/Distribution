@@ -17,3 +17,30 @@ trait ComponentOptionsProperties[Props /* <: java.lang.String */, Data, Methods]
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ComponentOptionsProperties {
+  @scala.inline
+  def apply[Props /* <: java.lang.String */, Data, Methods](
+    data: Data = null,
+    el: java.lang.String | stdLib.HTMLElement = null,
+    functional: moonjsLib.moonjsLibNumbers.`true` = null,
+    hooks: LifecycleHooks = null,
+    methods: Methods = null,
+    name: java.lang.String = null,
+    props: js.Array[Props] = null,
+    render: js.Function2[/* h */ CreateElement, /* ctx */ js.Any, VDomElement] = null,
+    template: java.lang.String = null
+  ): ComponentOptionsProperties[Props, Data, Methods] = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    if (functional != null) __obj.updateDynamic("functional")(functional)
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (props != null) __obj.updateDynamic("props")(props)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[ComponentOptionsProperties[Props, Data, Methods]]
+  }
+}
+

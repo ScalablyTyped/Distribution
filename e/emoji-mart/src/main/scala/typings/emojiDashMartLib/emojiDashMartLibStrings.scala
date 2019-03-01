@@ -10,61 +10,78 @@ object emojiDashMartLibStrings {
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait activity extends js.Object
+  sealed trait activity
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait apple extends js.Object
+  sealed trait apple
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSet
   
   @js.native
-  sealed trait custom extends js.Object
+  sealed trait custom
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait emojione extends js.Object
+  sealed trait emojione
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSet
   
   @js.native
-  sealed trait facebook extends js.Object
+  sealed trait facebook
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSet
   
   @js.native
-  sealed trait flags extends js.Object
+  sealed trait flags
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait foods extends js.Object
+  sealed trait foods
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait google extends js.Object
+  sealed trait google
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSet
   
   @js.native
   sealed trait id extends js.Object
   
   @js.native
-  sealed trait messenger extends js.Object
+  sealed trait messenger
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSet
   
   @js.native
-  sealed trait nature extends js.Object
+  sealed trait nature
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
   sealed trait notfound extends js.Object
   
   @js.native
-  sealed trait objects extends js.Object
+  sealed trait objects
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait people extends js.Object
+  sealed trait people
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait places extends js.Object
+  sealed trait places
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait recent extends js.Object
+  sealed trait recent
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait search extends js.Object
+  sealed trait search
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait symbols extends js.Object
+  sealed trait symbols
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName
   
   @js.native
-  sealed trait twitter extends js.Object
+  sealed trait twitter
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSet
   
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]

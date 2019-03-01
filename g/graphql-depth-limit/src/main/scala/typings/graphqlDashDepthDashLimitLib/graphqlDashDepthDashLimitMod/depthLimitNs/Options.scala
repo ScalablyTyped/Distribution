@@ -11,3 +11,16 @@ trait Options extends js.Object {
   ]
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    ignore: js.Array[
+      java.lang.String | stdLib.RegExp | (js.Function1[/* queryDepths */ js.Array[_], scala.Boolean])
+    ]
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ignore")(ignore)
+    __obj.asInstanceOf[Options]
+  }
+}
+

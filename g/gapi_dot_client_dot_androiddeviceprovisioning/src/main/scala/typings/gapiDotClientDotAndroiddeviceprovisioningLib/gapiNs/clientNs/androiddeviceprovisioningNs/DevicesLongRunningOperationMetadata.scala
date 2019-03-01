@@ -14,3 +14,18 @@ trait DevicesLongRunningOperationMetadata extends js.Object {
   var progress: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DevicesLongRunningOperationMetadata {
+  @scala.inline
+  def apply(
+    devicesCount: scala.Int | scala.Double = null,
+    processingStatus: java.lang.String = null,
+    progress: scala.Int | scala.Double = null
+  ): DevicesLongRunningOperationMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (devicesCount != null) __obj.updateDynamic("devicesCount")(devicesCount.asInstanceOf[js.Any])
+    if (processingStatus != null) __obj.updateDynamic("processingStatus")(processingStatus)
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DevicesLongRunningOperationMetadata]
+  }
+}
+

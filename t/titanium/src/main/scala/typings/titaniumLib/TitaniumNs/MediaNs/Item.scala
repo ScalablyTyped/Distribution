@@ -304,3 +304,180 @@ trait Item
   def getUserGrouping(): java.lang.String
 }
 
+object Item {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    albumArtist: java.lang.String,
+    albumArtistPersistentID: scala.Double,
+    albumPersistentID: scala.Double,
+    albumTitle: java.lang.String,
+    albumTrackCount: scala.Double,
+    albumTrackNumber: scala.Double,
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    artist: java.lang.String,
+    artwork: titaniumLib.TitaniumNs.Blob,
+    assetURL: java.lang.String,
+    beatsPerMinute: scala.Double,
+    bookmarkTime: java.lang.String,
+    bubbleParent: scala.Boolean,
+    comments: java.lang.String,
+    composer: java.lang.String,
+    dateAdded: stdLib.Date,
+    discCount: scala.Double,
+    discNumber: scala.Double,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    genre: java.lang.String,
+    genrePersistentID: scala.Double,
+    getAlbumArtist: js.Function0[java.lang.String],
+    getAlbumArtistPersistentID: js.Function0[scala.Double],
+    getAlbumPersistentID: js.Function0[scala.Double],
+    getAlbumTitle: js.Function0[java.lang.String],
+    getAlbumTrackCount: js.Function0[scala.Double],
+    getAlbumTrackNumber: js.Function0[scala.Double],
+    getApiName: js.Function0[java.lang.String],
+    getArtist: js.Function0[java.lang.String],
+    getArtwork: js.Function0[titaniumLib.TitaniumNs.Blob],
+    getAssetURL: js.Function0[java.lang.String],
+    getBeatsPerMinute: js.Function0[scala.Double],
+    getBookmarkTime: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getComments: js.Function0[java.lang.String],
+    getComposer: js.Function0[java.lang.String],
+    getDateAdded: js.Function0[stdLib.Date],
+    getDiscCount: js.Function0[scala.Double],
+    getDiscNumber: js.Function0[scala.Double],
+    getGenre: js.Function0[java.lang.String],
+    getGenrePersistentID: js.Function0[scala.Double],
+    getHasProtectedAsset: js.Function0[scala.Boolean],
+    getIsCloudItem: js.Function0[scala.Boolean],
+    getIsCompilation: js.Function0[scala.Boolean],
+    getIsExplicit: js.Function0[scala.Boolean],
+    getLastPlayedDate: js.Function0[stdLib.Date],
+    getLyrics: js.Function0[java.lang.String],
+    getMediaType: js.Function0[scala.Double],
+    getPersistentID: js.Function0[java.lang.String],
+    getPlayCount: js.Function0[scala.Double],
+    getPlaybackDuration: js.Function0[scala.Double],
+    getPlaybackStoreID: js.Function0[scala.Double],
+    getPodcastPersistentID: js.Function0[scala.Double],
+    getPodcastTitle: js.Function0[java.lang.String],
+    getRating: js.Function0[scala.Double],
+    getReleaseDate: js.Function0[stdLib.Date],
+    getSkipCount: js.Function0[scala.Double],
+    getTitle: js.Function0[java.lang.String],
+    getUserGrouping: js.Function0[java.lang.String],
+    hasProtectedAsset: scala.Boolean,
+    isCloudItem: scala.Boolean,
+    isCompilation: scala.Boolean,
+    isExplicit: scala.Boolean,
+    lastPlayedDate: stdLib.Date,
+    lyrics: java.lang.String,
+    mediaType: scala.Double,
+    persistentID: java.lang.String,
+    playCount: scala.Double,
+    playbackDuration: scala.Double,
+    playbackStoreID: scala.Double,
+    podcastPersistentID: scala.Double,
+    podcastTitle: java.lang.String,
+    rating: scala.Double,
+    releaseDate: stdLib.Date,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    skipCount: scala.Double,
+    title: java.lang.String,
+    userGrouping: java.lang.String,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): Item = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("albumArtist")(albumArtist)
+    __obj.updateDynamic("albumArtistPersistentID")(albumArtistPersistentID)
+    __obj.updateDynamic("albumPersistentID")(albumPersistentID)
+    __obj.updateDynamic("albumTitle")(albumTitle)
+    __obj.updateDynamic("albumTrackCount")(albumTrackCount)
+    __obj.updateDynamic("albumTrackNumber")(albumTrackNumber)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("artist")(artist)
+    __obj.updateDynamic("artwork")(artwork)
+    __obj.updateDynamic("assetURL")(assetURL)
+    __obj.updateDynamic("beatsPerMinute")(beatsPerMinute)
+    __obj.updateDynamic("bookmarkTime")(bookmarkTime)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("comments")(comments)
+    __obj.updateDynamic("composer")(composer)
+    __obj.updateDynamic("dateAdded")(dateAdded)
+    __obj.updateDynamic("discCount")(discCount)
+    __obj.updateDynamic("discNumber")(discNumber)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("genre")(genre)
+    __obj.updateDynamic("genrePersistentID")(genrePersistentID)
+    __obj.updateDynamic("getAlbumArtist")(getAlbumArtist)
+    __obj.updateDynamic("getAlbumArtistPersistentID")(getAlbumArtistPersistentID)
+    __obj.updateDynamic("getAlbumPersistentID")(getAlbumPersistentID)
+    __obj.updateDynamic("getAlbumTitle")(getAlbumTitle)
+    __obj.updateDynamic("getAlbumTrackCount")(getAlbumTrackCount)
+    __obj.updateDynamic("getAlbumTrackNumber")(getAlbumTrackNumber)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getArtist")(getArtist)
+    __obj.updateDynamic("getArtwork")(getArtwork)
+    __obj.updateDynamic("getAssetURL")(getAssetURL)
+    __obj.updateDynamic("getBeatsPerMinute")(getBeatsPerMinute)
+    __obj.updateDynamic("getBookmarkTime")(getBookmarkTime)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getComments")(getComments)
+    __obj.updateDynamic("getComposer")(getComposer)
+    __obj.updateDynamic("getDateAdded")(getDateAdded)
+    __obj.updateDynamic("getDiscCount")(getDiscCount)
+    __obj.updateDynamic("getDiscNumber")(getDiscNumber)
+    __obj.updateDynamic("getGenre")(getGenre)
+    __obj.updateDynamic("getGenrePersistentID")(getGenrePersistentID)
+    __obj.updateDynamic("getHasProtectedAsset")(getHasProtectedAsset)
+    __obj.updateDynamic("getIsCloudItem")(getIsCloudItem)
+    __obj.updateDynamic("getIsCompilation")(getIsCompilation)
+    __obj.updateDynamic("getIsExplicit")(getIsExplicit)
+    __obj.updateDynamic("getLastPlayedDate")(getLastPlayedDate)
+    __obj.updateDynamic("getLyrics")(getLyrics)
+    __obj.updateDynamic("getMediaType")(getMediaType)
+    __obj.updateDynamic("getPersistentID")(getPersistentID)
+    __obj.updateDynamic("getPlayCount")(getPlayCount)
+    __obj.updateDynamic("getPlaybackDuration")(getPlaybackDuration)
+    __obj.updateDynamic("getPlaybackStoreID")(getPlaybackStoreID)
+    __obj.updateDynamic("getPodcastPersistentID")(getPodcastPersistentID)
+    __obj.updateDynamic("getPodcastTitle")(getPodcastTitle)
+    __obj.updateDynamic("getRating")(getRating)
+    __obj.updateDynamic("getReleaseDate")(getReleaseDate)
+    __obj.updateDynamic("getSkipCount")(getSkipCount)
+    __obj.updateDynamic("getTitle")(getTitle)
+    __obj.updateDynamic("getUserGrouping")(getUserGrouping)
+    __obj.updateDynamic("hasProtectedAsset")(hasProtectedAsset)
+    __obj.updateDynamic("isCloudItem")(isCloudItem)
+    __obj.updateDynamic("isCompilation")(isCompilation)
+    __obj.updateDynamic("isExplicit")(isExplicit)
+    __obj.updateDynamic("lastPlayedDate")(lastPlayedDate)
+    __obj.updateDynamic("lyrics")(lyrics)
+    __obj.updateDynamic("mediaType")(mediaType)
+    __obj.updateDynamic("persistentID")(persistentID)
+    __obj.updateDynamic("playCount")(playCount)
+    __obj.updateDynamic("playbackDuration")(playbackDuration)
+    __obj.updateDynamic("playbackStoreID")(playbackStoreID)
+    __obj.updateDynamic("podcastPersistentID")(podcastPersistentID)
+    __obj.updateDynamic("podcastTitle")(podcastTitle)
+    __obj.updateDynamic("rating")(rating)
+    __obj.updateDynamic("releaseDate")(releaseDate)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("skipCount")(skipCount)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("userGrouping")(userGrouping)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[Item]
+  }
+}
+

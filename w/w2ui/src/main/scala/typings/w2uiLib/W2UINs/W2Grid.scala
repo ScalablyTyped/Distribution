@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait W2Grid
   extends W2Common
-     with W2OnClickable {
+     with W2OnClickable
+     with W2Object {
   var autoLoad: scala.Boolean = js.native
   var buttons: js.Object = js.native
   var columnGroups: js.Array[js.Object] = js.native

@@ -10,3 +10,13 @@ trait Reason extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Reason {
+  @scala.inline
+  def apply(code: scala.Double, description: java.lang.String = null): Reason = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[Reason]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_40 extends js.Object {
   var `40`: java.lang.String
 }
 
+object Anon_40 {
+  @scala.inline
+  def apply(`40`: java.lang.String): Anon_40 = {
+    val __obj = js.Dynamic.literal(`40` = `40`)
+  
+    __obj.asInstanceOf[Anon_40]
+  }
+}
+

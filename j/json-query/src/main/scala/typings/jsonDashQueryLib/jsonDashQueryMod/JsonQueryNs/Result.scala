@@ -12,3 +12,15 @@ trait Result extends js.Object {
   var value: js.Any
 }
 
+object Result {
+  @scala.inline
+  def apply(key: java.lang.String, parents: js.Array[java.lang.String], references: js.Array[_], value: js.Any): Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("parents")(parents)
+    __obj.updateDynamic("references")(references)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Result]
+  }
+}
+

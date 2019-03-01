@@ -12,3 +12,13 @@ trait Anon_Body extends js.Object {
   var subject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Body {
+  @scala.inline
+  def apply(body: java.lang.String = null, subject: java.lang.String = null): Anon_Body = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    __obj.asInstanceOf[Anon_Body]
+  }
+}
+

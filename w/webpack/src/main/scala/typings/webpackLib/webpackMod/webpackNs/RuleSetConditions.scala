@@ -9,4 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RuleSetConditions
   extends stdLib.Array[RuleSetCondition]
+     with _RuleSetCondition
 

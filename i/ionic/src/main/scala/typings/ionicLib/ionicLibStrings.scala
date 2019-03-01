@@ -7,97 +7,126 @@ import scala.scalajs.js.annotation._
 
 object ionicLibStrings {
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends ionicLib.definitionsMod.HttpMethod
   
   @js.native
-  sealed trait ERR_INVALID_PROJECT_FILE extends js.Object
+  sealed trait ERR_INVALID_PROJECT_FILE
+    extends ionicLib.libProjectMod.ProjectDetailsErrorCode
   
   @js.native
-  sealed trait ERR_INVALID_PROJECT_TYPE extends js.Object
+  sealed trait ERR_INVALID_PROJECT_TYPE
+    extends ionicLib.libProjectMod.ProjectDetailsErrorCode
   
   @js.native
-  sealed trait ERR_MISSING_PROJECT_TYPE extends js.Object
+  sealed trait ERR_MISSING_PROJECT_TYPE
+    extends ionicLib.libProjectMod.ProjectDetailsErrorCode
   
   @js.native
-  sealed trait ERR_MULTI_MISSING_CONFIG extends js.Object
+  sealed trait ERR_MULTI_MISSING_CONFIG
+    extends ionicLib.libProjectMod.ProjectDetailsErrorCode
   
   @js.native
-  sealed trait ERR_MULTI_MISSING_ID extends js.Object
+  sealed trait ERR_MULTI_MISSING_ID
+    extends ionicLib.libProjectMod.ProjectDetailsErrorCode
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends ionicLib.definitionsMod.HttpMethod
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait HEAD
+    extends ionicLib.definitionsMod.HttpMethod
   
   @js.native
   sealed trait OAuthIdentity extends js.Object
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait OPTIONS
+    extends ionicLib.definitionsMod.HttpMethod
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH
+    extends ionicLib.definitionsMod.HttpMethod
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends ionicLib.definitionsMod.HttpMethod
   
   @js.native
-  sealed trait PURGE extends js.Object
+  sealed trait PURGE
+    extends ionicLib.definitionsMod.HttpMethod
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends ionicLib.definitionsMod.HttpMethod
   
   @js.native
-  sealed trait android extends js.Object
+  sealed trait android
+    extends ionicLib.definitionsMod.KnownPlatform
   
   @js.native
-  sealed trait angular extends js.Object
+  sealed trait angular
+    extends ionicLib.definitionsMod.ProjectType
   
   @js.native
   sealed trait app extends js.Object
   
   @js.native
-  sealed trait bare extends js.Object
+  sealed trait bare
+    extends ionicLib.definitionsMod.ProjectType
   
   @js.native
-  sealed trait bitbucket_cloud extends js.Object
+  sealed trait bitbucket_cloud
+    extends ionicLib.definitionsMod.AssociationType
   
   @js.native
-  sealed trait bitbucket_server extends js.Object
+  sealed trait bitbucket_server
+    extends ionicLib.definitionsMod.AssociationType
   
   @js.native
-  sealed trait browser extends js.Object
+  sealed trait browser
+    extends ionicLib.definitionsMod.KnownPlatform
   
   @js.native
-  sealed trait `build:after` extends js.Object
+  sealed trait `build:after`
+    extends ionicLib.definitionsMod.HookName
   
   @js.native
-  sealed trait `build:before` extends js.Object
+  sealed trait `build:before`
+    extends ionicLib.definitionsMod.HookName
   
   @js.native
-  sealed trait canary extends js.Object
+  sealed trait canary
+    extends ionicLib.definitionsMod.DistTag
   
   @js.native
-  sealed trait capacitor extends js.Object
+  sealed trait capacitor
+    extends ionicLib.definitionsMod.InfoItemGroup
+       with ionicLib.definitionsMod.IntegrationName
   
   @js.native
   sealed trait compile extends js.Object
   
   @js.native
-  sealed trait cordova extends js.Object
+  sealed trait cordova
+    extends ionicLib.definitionsMod.InfoItemGroup
+       with ionicLib.definitionsMod.IntegrationName
   
   @js.native
-  sealed trait custom extends js.Object
+  sealed trait custom
+    extends ionicLib.definitionsMod.ProjectType
   
   @js.native
   sealed trait development extends js.Object
   
   @js.native
-  sealed trait environment extends js.Object
+  sealed trait environment
+    extends ionicLib.definitionsMod.InfoItemGroup
   
   @js.native
-  sealed trait github extends js.Object
+  sealed trait github
+    extends ionicLib.definitionsMod.AssociationType
   
   @js.native
   sealed trait global extends js.Object
@@ -106,25 +135,31 @@ object ionicLibStrings {
   sealed trait guard extends js.Object
   
   @js.native
-  sealed trait icon extends js.Object
+  sealed trait icon
+    extends ionicLib.definitionsMod.KnownResourceType
   
   @js.native
-  sealed trait ionic extends js.Object
+  sealed trait ionic
+    extends ionicLib.definitionsMod.InfoItemGroup
   
   @js.native
-  sealed trait `ionic-angular` extends js.Object
+  sealed trait `ionic-angular`
+    extends ionicLib.definitionsMod.ProjectType
   
   @js.native
-  sealed trait ionic1 extends js.Object
+  sealed trait ionic1
+    extends ionicLib.definitionsMod.ProjectType
   
   @js.native
-  sealed trait ios extends js.Object
+  sealed trait ios
+    extends ionicLib.definitionsMod.KnownPlatform
   
   @js.native
   sealed trait landscape extends js.Object
   
   @js.native
-  sealed trait latest extends js.Object
+  sealed trait latest
+    extends ionicLib.definitionsMod.DistTag
   
   @js.native
   sealed trait max extends js.Object
@@ -133,7 +168,8 @@ object ionicLibStrings {
   sealed trait multiapp extends js.Object
   
   @js.native
-  sealed trait npm extends js.Object
+  sealed trait npm
+    extends ionicLib.definitionsMod.NpmClient
   
   @js.native
   sealed trait portrait extends js.Object
@@ -151,13 +187,16 @@ object ionicLibStrings {
   sealed trait reqgen extends js.Object
   
   @js.native
-  sealed trait `serve:after` extends js.Object
+  sealed trait `serve:after`
+    extends ionicLib.definitionsMod.HookName
   
   @js.native
-  sealed trait `serve:before` extends js.Object
+  sealed trait `serve:before`
+    extends ionicLib.definitionsMod.HookName
   
   @js.native
-  sealed trait splash extends js.Object
+  sealed trait splash
+    extends ionicLib.definitionsMod.KnownResourceType
   
   @js.native
   sealed trait `ssl-commands` extends js.Object
@@ -166,25 +205,30 @@ object ionicLibStrings {
   sealed trait state extends js.Object
   
   @js.native
-  sealed trait system extends js.Object
+  sealed trait system
+    extends ionicLib.definitionsMod.InfoItemGroup
   
   @js.native
   sealed trait telemetry extends js.Object
   
   @js.native
-  sealed trait testing extends js.Object
+  sealed trait testing
+    extends ionicLib.definitionsMod.DistTag
   
   @js.native
   sealed trait unknown extends js.Object
   
   @js.native
-  sealed trait windows extends js.Object
+  sealed trait windows
+    extends ionicLib.definitionsMod.KnownPlatform
   
   @js.native
-  sealed trait wp8 extends js.Object
+  sealed trait wp8
+    extends ionicLib.definitionsMod.KnownPlatform
   
   @js.native
-  sealed trait yarn extends js.Object
+  sealed trait yarn
+    extends ionicLib.definitionsMod.NpmClient
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

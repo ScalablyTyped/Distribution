@@ -36,3 +36,22 @@ trait ASPxClientGridViewColumnMovingEventArgs extends ASPxClientEventArgs {
   var sourceColumn: ASPxClientGridViewColumn
 }
 
+object ASPxClientGridViewColumnMovingEventArgs {
+  @scala.inline
+  def apply(
+    allow: scala.Boolean,
+    destinationColumn: ASPxClientGridViewColumn,
+    isDropBefore: scala.Boolean,
+    isGroupPanel: scala.Boolean,
+    sourceColumn: ASPxClientGridViewColumn
+  ): ASPxClientGridViewColumnMovingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allow")(allow)
+    __obj.updateDynamic("destinationColumn")(destinationColumn)
+    __obj.updateDynamic("isDropBefore")(isDropBefore)
+    __obj.updateDynamic("isGroupPanel")(isGroupPanel)
+    __obj.updateDynamic("sourceColumn")(sourceColumn)
+    __obj.asInstanceOf[ASPxClientGridViewColumnMovingEventArgs]
+  }
+}
+

@@ -57,3 +57,34 @@ trait DecayScoreFunction extends ScoreFunction {
   def toJSON(): js.Any
 }
 
+object DecayScoreFunction {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    decay: js.Function1[scala.Double, DecayScoreFunction],
+    exp: js.Function0[DecayScoreFunction],
+    field: js.Function1[java.lang.String, DecayScoreFunction],
+    filter: js.Function1[Filter, DecayScoreFunction],
+    gauss: js.Function0[DecayScoreFunction],
+    linear: js.Function0[DecayScoreFunction],
+    offset: js.Function1[java.lang.String, DecayScoreFunction],
+    origin: js.Function1[java.lang.String, DecayScoreFunction],
+    scale: js.Function1[java.lang.String, DecayScoreFunction],
+    toJSON: js.Function0[js.Any]
+  ): DecayScoreFunction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("decay")(decay)
+    __obj.updateDynamic("exp")(exp)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("gauss")(gauss)
+    __obj.updateDynamic("linear")(linear)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("origin")(origin)
+    __obj.updateDynamic("scale")(scale)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[DecayScoreFunction]
+  }
+}
+

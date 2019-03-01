@@ -14,3 +14,18 @@ trait BaseOptions[R, E] extends js.Object {
   var success: js.UndefOr[js.Function1[/* res */ R, scala.Unit]] = js.undefined
 }
 
+object BaseOptions {
+  @scala.inline
+  def apply[R, E](
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* res */ E, scala.Unit] = null,
+    success: js.Function1[/* res */ R, scala.Unit] = null
+  ): BaseOptions[R, E] = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[BaseOptions[R, E]]
+  }
+}
+

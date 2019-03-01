@@ -6,5 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait JSDocPropertyTag extends JSDocPropertyLikeTag
+trait JSDocPropertyTag
+  extends JSDocPropertyLikeTag
+     with VariableLikeDeclaration
 

@@ -14,3 +14,14 @@ trait Anon_Query extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Query {
+  @scala.inline
+  def apply(query: java.lang.String = null, title: java.lang.String = null, url: java.lang.String = null): Anon_Query = {
+    val __obj = js.Dynamic.literal()
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_Query]
+  }
+}
+

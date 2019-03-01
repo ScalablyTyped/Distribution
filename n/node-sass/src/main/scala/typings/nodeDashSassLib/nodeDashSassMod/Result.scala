@@ -11,3 +11,14 @@ trait Result extends js.Object {
   var stats: nodeDashSassLib.Anon_Duration
 }
 
+object Result {
+  @scala.inline
+  def apply(css: nodeLib.Buffer, map: nodeLib.Buffer, stats: nodeDashSassLib.Anon_Duration): Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("css")(css)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("stats")(stats)
+    __obj.asInstanceOf[Result]
+  }
+}
+

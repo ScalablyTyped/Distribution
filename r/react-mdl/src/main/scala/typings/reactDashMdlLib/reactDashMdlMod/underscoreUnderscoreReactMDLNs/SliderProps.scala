@@ -15,3 +15,24 @@ trait SliderProps
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SliderProps {
+  @scala.inline
+  def apply(
+    max: scala.Double,
+    min: scala.Double,
+    DOMAttributes: reactLib.reactMod.ReactNs.DOMAttributes[Slider] = null,
+    MDLHTMLAttributes: MDLHTMLAttributes = null,
+    onChange: reactLib.reactMod.ReactNs.FormEventHandler[Slider] = null,
+    value: scala.Int | scala.Double = null
+  ): SliderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("min")(min)
+    js.Dynamic.global.Object.assign(__obj, DOMAttributes)
+    js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SliderProps]
+  }
+}
+

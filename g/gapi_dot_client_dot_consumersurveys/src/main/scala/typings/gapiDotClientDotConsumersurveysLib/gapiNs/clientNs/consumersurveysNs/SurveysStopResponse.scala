@@ -10,3 +10,12 @@ trait SurveysStopResponse extends js.Object {
   var requestId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SurveysStopResponse {
+  @scala.inline
+  def apply(requestId: java.lang.String = null): SurveysStopResponse = {
+    val __obj = js.Dynamic.literal()
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    __obj.asInstanceOf[SurveysStopResponse]
+  }
+}
+

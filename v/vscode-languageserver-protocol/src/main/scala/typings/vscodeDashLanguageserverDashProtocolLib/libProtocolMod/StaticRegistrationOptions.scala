@@ -13,3 +13,12 @@ trait StaticRegistrationOptions extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StaticRegistrationOptions {
+  @scala.inline
+  def apply(id: java.lang.String = null): StaticRegistrationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[StaticRegistrationOptions]
+  }
+}
+

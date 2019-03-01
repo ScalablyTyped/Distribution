@@ -20,3 +20,29 @@ trait MutationBaseOptions[T, TVariables] extends js.Object {
   var variables: js.UndefOr[TVariables] = js.undefined
 }
 
+object MutationBaseOptions {
+  @scala.inline
+  def apply[T, TVariables](
+    awaitRefetchQueries: js.UndefOr[scala.Boolean] = js.undefined,
+    errorPolicy: ErrorPolicy = null,
+    optimisticResponse: js.Object | js.Function = null,
+    refetchQueries: (js.Function1[
+      /* result */ graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault], 
+      RefetchQueryDescription
+    ]) | RefetchQueryDescription = null,
+    update: MutationUpdaterFn[T] = null,
+    updateQueries: apolloDashClientLib.coreTypesMod.MutationQueryReducersMap[T] = null,
+    variables: TVariables = null
+  ): MutationBaseOptions[T, TVariables] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries)
+    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
+    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
+    if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update)
+    if (updateQueries != null) __obj.updateDynamic("updateQueries")(updateQueries)
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MutationBaseOptions[T, TVariables]]
+  }
+}
+

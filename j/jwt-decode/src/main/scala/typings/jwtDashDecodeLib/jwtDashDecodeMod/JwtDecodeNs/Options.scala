@@ -9,3 +9,12 @@ trait Options extends js.Object {
   var header: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(header: scala.Boolean): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("header")(header)
+    __obj.asInstanceOf[Options]
+  }
+}
+

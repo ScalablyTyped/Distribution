@@ -20,3 +20,36 @@ trait ResourceOptions extends js.Object {
   var updateMethod: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResourceOptions {
+  @scala.inline
+  def apply(
+    endpoints: js.Array[java.lang.String],
+    model: js.Any,
+    actions: js.Array[java.lang.String] = null,
+    associations: sequelizeLib.sequelizeMod.sequelizeNs.AssociationOptions = null,
+    excludeAttributes: js.Array[java.lang.String] = null,
+    include: js.Array[epilogueLib.Anon_Model | java.lang.String] = null,
+    pagination: js.UndefOr[scala.Boolean] = js.undefined,
+    readOnlyAttributes: js.Array[java.lang.String] = null,
+    reloadInstances: js.UndefOr[scala.Boolean] = js.undefined,
+    search: ResourceSearchOption = null,
+    sort: ResourceSortOption = null,
+    updateMethod: java.lang.String = null
+  ): ResourceOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endpoints")(endpoints)
+    __obj.updateDynamic("model")(model)
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (associations != null) __obj.updateDynamic("associations")(associations)
+    if (excludeAttributes != null) __obj.updateDynamic("excludeAttributes")(excludeAttributes)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
+    if (readOnlyAttributes != null) __obj.updateDynamic("readOnlyAttributes")(readOnlyAttributes)
+    if (!js.isUndefined(reloadInstances)) __obj.updateDynamic("reloadInstances")(reloadInstances)
+    if (search != null) __obj.updateDynamic("search")(search)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (updateMethod != null) __obj.updateDynamic("updateMethod")(updateMethod)
+    __obj.asInstanceOf[ResourceOptions]
+  }
+}
+

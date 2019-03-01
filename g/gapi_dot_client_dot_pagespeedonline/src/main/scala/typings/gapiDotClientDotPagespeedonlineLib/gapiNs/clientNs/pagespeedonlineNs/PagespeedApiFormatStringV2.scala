@@ -15,3 +15,16 @@ trait PagespeedApiFormatStringV2 extends js.Object {
   var format: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PagespeedApiFormatStringV2 {
+  @scala.inline
+  def apply(
+    args: js.Array[gapiDotClientDotPagespeedonlineLib.Anon_Key] = null,
+    format: java.lang.String = null
+  ): PagespeedApiFormatStringV2 = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (format != null) __obj.updateDynamic("format")(format)
+    __obj.asInstanceOf[PagespeedApiFormatStringV2]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_GulpUglify extends js.Object {
   val GulpUglifyNs: js.Any
 }
 
+object Anon_GulpUglify {
+  @scala.inline
+  def apply(GulpUglifyNs: js.Any): Anon_GulpUglify = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GulpUglifyNs")(GulpUglifyNs)
+    __obj.asInstanceOf[Anon_GulpUglify]
+  }
+}
+

@@ -36,3 +36,26 @@ trait CellsMergingEventUIParam extends js.Object {
   var rowIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CellsMergingEventUIParam {
+  @scala.inline
+  def apply(
+    columnKey: java.lang.String = null,
+    firstRecord: js.Any = null,
+    owner: js.Any = null,
+    record: js.Any = null,
+    row: java.lang.String = null,
+    rowId: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null
+  ): CellsMergingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (firstRecord != null) __obj.updateDynamic("firstRecord")(firstRecord)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (record != null) __obj.updateDynamic("record")(record)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowId != null) __obj.updateDynamic("rowId")(rowId)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CellsMergingEventUIParam]
+  }
+}
+

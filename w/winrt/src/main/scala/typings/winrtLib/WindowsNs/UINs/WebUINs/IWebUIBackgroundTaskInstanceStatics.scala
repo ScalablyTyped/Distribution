@@ -9,3 +9,12 @@ trait IWebUIBackgroundTaskInstanceStatics extends js.Object {
   var current: IWebUIBackgroundTaskInstance
 }
 
+object IWebUIBackgroundTaskInstanceStatics {
+  @scala.inline
+  def apply(current: IWebUIBackgroundTaskInstance): IWebUIBackgroundTaskInstanceStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("current")(current)
+    __obj.asInstanceOf[IWebUIBackgroundTaskInstanceStatics]
+  }
+}
+

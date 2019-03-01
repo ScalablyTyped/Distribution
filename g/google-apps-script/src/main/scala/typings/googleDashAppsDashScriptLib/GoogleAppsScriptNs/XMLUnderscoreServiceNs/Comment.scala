@@ -13,3 +13,22 @@ trait Comment extends js.Object {
   def setText(text: java.lang.String): Comment
 }
 
+object Comment {
+  @scala.inline
+  def apply(
+    detach: js.Function0[Content],
+    getParentElement: js.Function0[Element],
+    getText: js.Function0[java.lang.String],
+    getValue: js.Function0[java.lang.String],
+    setText: js.Function1[java.lang.String, Comment]
+  ): Comment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("detach")(detach)
+    __obj.updateDynamic("getParentElement")(getParentElement)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("setText")(setText)
+    __obj.asInstanceOf[Comment]
+  }
+}
+

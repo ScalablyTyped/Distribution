@@ -42,3 +42,24 @@ trait ISourceCreationOptions extends js.Object {
   var routing_number: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ISourceCreationOptions {
+  @scala.inline
+  def apply(
+    account_number: java.lang.String,
+    country: java.lang.String,
+    currency: java.lang.String,
+    account_holder_name: java.lang.String = null,
+    account_holder_type: stripeLib.stripeLibStrings.individual | stripeLib.stripeLibStrings.company = null,
+    routing_number: java.lang.String = null
+  ): ISourceCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("account_number")(account_number)
+    __obj.updateDynamic("country")(country)
+    __obj.updateDynamic("currency")(currency)
+    if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name)
+    if (account_holder_type != null) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
+    if (routing_number != null) __obj.updateDynamic("routing_number")(routing_number)
+    __obj.asInstanceOf[ISourceCreationOptions]
+  }
+}
+

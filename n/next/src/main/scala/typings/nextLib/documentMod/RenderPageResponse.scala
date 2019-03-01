@@ -10,3 +10,13 @@ trait RenderPageResponse extends js.Object {
   var html: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RenderPageResponse {
+  @scala.inline
+  def apply(head: reactLib.reactMod.ReactNs.ReactNode = null, html: java.lang.String = null): RenderPageResponse = {
+    val __obj = js.Dynamic.literal()
+    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html)
+    __obj.asInstanceOf[RenderPageResponse]
+  }
+}
+

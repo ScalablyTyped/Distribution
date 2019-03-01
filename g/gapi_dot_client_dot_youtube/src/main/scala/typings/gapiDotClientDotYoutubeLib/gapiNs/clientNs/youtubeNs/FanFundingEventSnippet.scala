@@ -22,3 +22,26 @@ trait FanFundingEventSnippet extends js.Object {
   var supporterDetails: js.UndefOr[ChannelProfileDetails] = js.undefined
 }
 
+object FanFundingEventSnippet {
+  @scala.inline
+  def apply(
+    amountMicros: java.lang.String = null,
+    channelId: java.lang.String = null,
+    commentText: java.lang.String = null,
+    createdAt: java.lang.String = null,
+    currency: java.lang.String = null,
+    displayString: java.lang.String = null,
+    supporterDetails: ChannelProfileDetails = null
+  ): FanFundingEventSnippet = {
+    val __obj = js.Dynamic.literal()
+    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (commentText != null) __obj.updateDynamic("commentText")(commentText)
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (displayString != null) __obj.updateDynamic("displayString")(displayString)
+    if (supporterDetails != null) __obj.updateDynamic("supporterDetails")(supporterDetails)
+    __obj.asInstanceOf[FanFundingEventSnippet]
+  }
+}
+

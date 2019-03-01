@@ -11,3 +11,18 @@ trait MapControls extends js.Object {
   var zoom: js.UndefOr[scala.Boolean | MapControlsZoom] = js.undefined
 }
 
+object MapControls {
+  @scala.inline
+  def apply(
+    attribution: scala.Boolean | MapControlsAttribution = null,
+    navigator: scala.Boolean | MapControlsNavigator = null,
+    zoom: scala.Boolean | MapControlsZoom = null
+  ): MapControls = {
+    val __obj = js.Dynamic.literal()
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
+    if (navigator != null) __obj.updateDynamic("navigator")(navigator.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapControls]
+  }
+}
+

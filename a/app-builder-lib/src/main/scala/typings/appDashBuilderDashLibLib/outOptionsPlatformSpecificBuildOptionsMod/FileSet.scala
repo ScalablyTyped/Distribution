@@ -20,3 +20,18 @@ trait FileSet extends js.Object {
   var to: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FileSet {
+  @scala.inline
+  def apply(
+    filter: js.Array[java.lang.String] | java.lang.String = null,
+    from: java.lang.String = null,
+    to: java.lang.String = null
+  ): FileSet = {
+    val __obj = js.Dynamic.literal()
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[FileSet]
+  }
+}
+

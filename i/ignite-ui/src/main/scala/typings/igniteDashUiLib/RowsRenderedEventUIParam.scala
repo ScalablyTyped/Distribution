@@ -16,3 +16,13 @@ trait RowsRenderedEventUIParam extends js.Object {
   var tbody: js.UndefOr[stdLib.Element] = js.undefined
 }
 
+object RowsRenderedEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null, tbody: stdLib.Element = null): RowsRenderedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (tbody != null) __obj.updateDynamic("tbody")(tbody)
+    __obj.asInstanceOf[RowsRenderedEventUIParam]
+  }
+}
+

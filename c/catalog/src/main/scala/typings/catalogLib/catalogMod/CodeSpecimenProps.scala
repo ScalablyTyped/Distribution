@@ -11,3 +11,18 @@ trait CodeSpecimenProps extends js.Object {
   var raw: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CodeSpecimenProps {
+  @scala.inline
+  def apply(
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    lang: java.lang.String = null,
+    raw: js.UndefOr[scala.Boolean] = js.undefined
+  ): CodeSpecimenProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[CodeSpecimenProps]
+  }
+}
+

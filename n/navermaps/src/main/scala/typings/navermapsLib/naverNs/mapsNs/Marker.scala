@@ -31,7 +31,8 @@ class Marker protected () extends OverlayView {
   def setIcon(icon: ImageIcon): scala.Unit = js.native
   def setIcon(icon: SymbolIcon): scala.Unit = js.native
   def setOptions(options: MarkerOptions): scala.Unit = js.native
-  def setPosition(position: Coord | CoordLiteral): scala.Unit = js.native
+  def setPosition(position: Coord): scala.Unit = js.native
+  def setPosition(position: CoordLiteral): scala.Unit = js.native
   def setShape(shape: MarkerShape): scala.Unit = js.native
   def setTitle(title: java.lang.String): scala.Unit = js.native
   def setVisible(visible: scala.Boolean): scala.Unit = js.native

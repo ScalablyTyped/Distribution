@@ -23,3 +23,18 @@ trait ConfigOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ConfigOptions {
+  @scala.inline
+  def apply(
+    height: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConfigOptions]
+  }
+}
+

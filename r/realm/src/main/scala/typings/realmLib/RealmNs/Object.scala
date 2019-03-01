@@ -28,3 +28,20 @@ trait Object extends js.Object {
   def objectSchema(): ObjectSchema
 }
 
+object Object {
+  @scala.inline
+  def apply(
+    isValid: js.Function0[scala.Boolean],
+    linkingObjects: js.Function2[java.lang.String, java.lang.String, Results[js.Any with Object]],
+    linkingObjectsCount: js.Function0[scala.Double],
+    objectSchema: js.Function0[ObjectSchema]
+  ): Object = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("linkingObjects")(linkingObjects)
+    __obj.updateDynamic("linkingObjectsCount")(linkingObjectsCount)
+    __obj.updateDynamic("objectSchema")(objectSchema)
+    __obj.asInstanceOf[Object]
+  }
+}
+

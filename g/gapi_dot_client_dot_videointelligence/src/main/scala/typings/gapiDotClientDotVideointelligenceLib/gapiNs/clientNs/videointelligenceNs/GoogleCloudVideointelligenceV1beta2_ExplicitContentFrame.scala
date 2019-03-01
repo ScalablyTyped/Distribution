@@ -15,3 +15,13 @@ trait GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame extends js.Object
   var timeOffset: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame {
+  @scala.inline
+  def apply(pornographyLikelihood: java.lang.String = null, timeOffset: java.lang.String = null): GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame = {
+    val __obj = js.Dynamic.literal()
+    if (pornographyLikelihood != null) __obj.updateDynamic("pornographyLikelihood")(pornographyLikelihood)
+    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame]
+  }
+}
+

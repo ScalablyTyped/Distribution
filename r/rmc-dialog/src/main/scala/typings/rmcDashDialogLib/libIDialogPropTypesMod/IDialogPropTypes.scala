@@ -32,3 +32,60 @@ trait IDialogPropTypes extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IDialogPropTypes {
+  @scala.inline
+  def apply(
+    afterClose: js.Function0[scala.Unit] = null,
+    animation: js.Any = null,
+    bodyStyle: js.Object = null,
+    children: js.Any = null,
+    className: java.lang.String = null,
+    closable: js.UndefOr[scala.Boolean] = js.undefined,
+    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    mask: js.UndefOr[scala.Boolean] = js.undefined,
+    maskAnimation: js.Any = null,
+    maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
+    maskProps: js.Any = null,
+    maskStyle: js.Object = null,
+    maskTransitionName: java.lang.String = null,
+    onAnimateLeave: js.Function0[scala.Unit] = null,
+    onClose: js.Function1[/* e */ js.Any, scala.Unit] = null,
+    prefixCls: java.lang.String = null,
+    style: js.Object = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    transitionName: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapClassName: java.lang.String = null,
+    wrapProps: js.Any = null,
+    wrapStyle: js.Object = null,
+    zIndex: scala.Int | scala.Double = null
+  ): IDialogPropTypes = {
+    val __obj = js.Dynamic.literal()
+    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (maskAnimation != null) __obj.updateDynamic("maskAnimation")(maskAnimation)
+    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)
+    if (maskProps != null) __obj.updateDynamic("maskProps")(maskProps)
+    if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle)
+    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName)
+    if (onAnimateLeave != null) __obj.updateDynamic("onAnimateLeave")(onAnimateLeave)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName)
+    if (wrapProps != null) __obj.updateDynamic("wrapProps")(wrapProps)
+    if (wrapStyle != null) __obj.updateDynamic("wrapStyle")(wrapStyle)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDialogPropTypes]
+  }
+}
+

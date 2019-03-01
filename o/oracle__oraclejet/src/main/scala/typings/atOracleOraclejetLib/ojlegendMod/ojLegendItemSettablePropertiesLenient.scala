@@ -9,3 +9,12 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof @oracle/oraclejet.@oracle/oraclejet/ojlegend.ojLegendItemSettableProperties ]:? @oracle/oraclejet.@oracle/oraclejet/ojlegend.ojLegendItemSettableProperties[P]} */ trait ojLegendItemSettablePropertiesLenient
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 
+object ojLegendItemSettablePropertiesLenient {
+  @scala.inline
+  def apply(StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null): ojLegendItemSettablePropertiesLenient = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ojLegendItemSettablePropertiesLenient]
+  }
+}
+

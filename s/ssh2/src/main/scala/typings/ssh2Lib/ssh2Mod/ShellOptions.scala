@@ -10,3 +10,12 @@ trait ShellOptions extends js.Object {
   var x11: js.UndefOr[scala.Boolean | scala.Double | X11Options] = js.undefined
 }
 
+object ShellOptions {
+  @scala.inline
+  def apply(x11: scala.Boolean | scala.Double | X11Options = null): ShellOptions = {
+    val __obj = js.Dynamic.literal()
+    if (x11 != null) __obj.updateDynamic("x11")(x11.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShellOptions]
+  }
+}
+

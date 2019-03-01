@@ -25,3 +25,20 @@ trait UpdateConditionalFormatRuleResponse extends js.Object {
   var oldRule: js.UndefOr[ConditionalFormatRule] = js.undefined
 }
 
+object UpdateConditionalFormatRuleResponse {
+  @scala.inline
+  def apply(
+    newIndex: scala.Int | scala.Double = null,
+    newRule: ConditionalFormatRule = null,
+    oldIndex: scala.Int | scala.Double = null,
+    oldRule: ConditionalFormatRule = null
+  ): UpdateConditionalFormatRuleResponse = {
+    val __obj = js.Dynamic.literal()
+    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
+    if (newRule != null) __obj.updateDynamic("newRule")(newRule)
+    if (oldIndex != null) __obj.updateDynamic("oldIndex")(oldIndex.asInstanceOf[js.Any])
+    if (oldRule != null) __obj.updateDynamic("oldRule")(oldRule)
+    __obj.asInstanceOf[UpdateConditionalFormatRuleResponse]
+  }
+}
+

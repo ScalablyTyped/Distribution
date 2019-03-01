@@ -27,3 +27,44 @@ trait IEditControl extends js.Object {
   def Unbind(): scala.Unit
 }
 
+object IEditControl {
+  @scala.inline
+  def apply(
+    BindToCell: js.Function1[IEditControlCellContext, scala.Unit],
+    Dispose: js.Function0[scala.Unit],
+    OnBeginEdit: js.Function1[microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit],
+    OnEndEdit: js.Function0[scala.Unit],
+    Unbind: js.Function0[scala.Unit],
+    Focus: js.Function1[/* eventInfo */ microsoftDashAjaxLib.SysNs.UINs.DomEvent, scala.Unit] = null,
+    GetCellContext: js.Function0[IEditControlCellContext] = null,
+    GetInputElement: js.Function0[stdLib.HTMLElement] = null,
+    GetOriginalValue: js.Function0[IValue] = null,
+    IsCurrentlyUsingGridTextInputElement: js.Function0[scala.Boolean] = null,
+    OnCellMove: js.Function0[scala.Unit] = null,
+    OnValueChanged: js.Function1[/* newValue */ IValue, scala.Unit] = null,
+    SetSize: js.Function2[/* width */ scala.Double, /* height */ scala.Double, scala.Unit] = null,
+    SetValue: js.Function1[/* value */ IValue, scala.Unit] = null,
+    SupportedReadMode: EditActorReadType = null,
+    SupportedWriteMode: EditActorWriteType = null
+  ): IEditControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BindToCell")(BindToCell)
+    __obj.updateDynamic("Dispose")(Dispose)
+    __obj.updateDynamic("OnBeginEdit")(OnBeginEdit)
+    __obj.updateDynamic("OnEndEdit")(OnEndEdit)
+    __obj.updateDynamic("Unbind")(Unbind)
+    if (Focus != null) __obj.updateDynamic("Focus")(Focus)
+    if (GetCellContext != null) __obj.updateDynamic("GetCellContext")(GetCellContext)
+    if (GetInputElement != null) __obj.updateDynamic("GetInputElement")(GetInputElement)
+    if (GetOriginalValue != null) __obj.updateDynamic("GetOriginalValue")(GetOriginalValue)
+    if (IsCurrentlyUsingGridTextInputElement != null) __obj.updateDynamic("IsCurrentlyUsingGridTextInputElement")(IsCurrentlyUsingGridTextInputElement)
+    if (OnCellMove != null) __obj.updateDynamic("OnCellMove")(OnCellMove)
+    if (OnValueChanged != null) __obj.updateDynamic("OnValueChanged")(OnValueChanged)
+    if (SetSize != null) __obj.updateDynamic("SetSize")(SetSize)
+    if (SetValue != null) __obj.updateDynamic("SetValue")(SetValue)
+    if (SupportedReadMode != null) __obj.updateDynamic("SupportedReadMode")(SupportedReadMode)
+    if (SupportedWriteMode != null) __obj.updateDynamic("SupportedWriteMode")(SupportedWriteMode)
+    __obj.asInstanceOf[IEditControl]
+  }
+}
+

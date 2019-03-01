@@ -12,3 +12,12 @@ trait Helper extends js.Object {
   def replaceRecursiveRegExp(args: js.Any*): java.lang.String
 }
 
+object Helper {
+  @scala.inline
+  def apply(replaceRecursiveRegExp: js.Function1[/* repeated */ js.Any, java.lang.String]): Helper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("replaceRecursiveRegExp")(replaceRecursiveRegExp)
+    __obj.asInstanceOf[Helper]
+  }
+}
+

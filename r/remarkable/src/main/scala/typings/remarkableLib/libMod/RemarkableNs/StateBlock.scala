@@ -36,3 +36,54 @@ trait StateBlock extends js.Object {
   def skipSpaces(pos: scala.Double): scala.Double
 }
 
+object StateBlock {
+  @scala.inline
+  def apply(
+    bMarks: js.Array[scala.Double],
+    blkIndent: scala.Double,
+    ddIndent: scala.Double,
+    eMarks: js.Array[scala.Double],
+    env: Env,
+    getLines: js.Function4[scala.Double, scala.Double, scala.Double, scala.Boolean, java.lang.String],
+    isEmpty: js.Function1[scala.Double, scala.Boolean],
+    level: scala.Double,
+    line: scala.Double,
+    lineMax: scala.Double,
+    options: Options,
+    parentType: remarkableLib.remarkableLibStrings.root | remarkableLib.remarkableLibStrings.list,
+    parser: remarkableLib.libMod.ParserBlock,
+    result: java.lang.String,
+    skipChars: js.Function2[scala.Double, scala.Double, scala.Double],
+    skipEmptyLines: js.Function1[scala.Double, scala.Double],
+    skipSpaces: js.Function1[scala.Double, scala.Double],
+    src: java.lang.String,
+    tShift: js.Array[scala.Double],
+    tight: scala.Boolean,
+    tokens: js.Array[ContentToken]
+  ): StateBlock = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bMarks")(bMarks)
+    __obj.updateDynamic("blkIndent")(blkIndent)
+    __obj.updateDynamic("ddIndent")(ddIndent)
+    __obj.updateDynamic("eMarks")(eMarks)
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("getLines")(getLines)
+    __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("lineMax")(lineMax)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("parentType")(parentType.asInstanceOf[js.Any])
+    __obj.updateDynamic("parser")(parser)
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("skipChars")(skipChars)
+    __obj.updateDynamic("skipEmptyLines")(skipEmptyLines)
+    __obj.updateDynamic("skipSpaces")(skipSpaces)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("tShift")(tShift)
+    __obj.updateDynamic("tight")(tight)
+    __obj.updateDynamic("tokens")(tokens)
+    __obj.asInstanceOf[StateBlock]
+  }
+}
+

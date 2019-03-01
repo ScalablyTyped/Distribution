@@ -40,3 +40,28 @@ trait ServiceObjectConfig extends js.Object {
   ] = js.undefined
 }
 
+object ServiceObjectConfig {
+  @scala.inline
+  def apply(
+    parent: ServiceObjectParent,
+    baseUrl: java.lang.String = null,
+    createMethod: js.Function = null,
+    id: java.lang.String = null,
+    methods: Methods = null,
+    requestModule: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
+      requestLib.requestMod.requestNs.Request, 
+      requestLib.requestMod.requestNs.CoreOptions, 
+      requestLib.requestMod.requestNs.RequiredUriUrl
+    ]) = null
+  ): ServiceObjectConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parent")(parent)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (createMethod != null) __obj.updateDynamic("createMethod")(createMethod)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (requestModule != null) __obj.updateDynamic("requestModule")(requestModule)
+    __obj.asInstanceOf[ServiceObjectConfig]
+  }
+}
+

@@ -13,3 +13,12 @@ trait Anon_PathPromisifyBoolean extends js.Object {
   def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[scala.Boolean]
 }
 
+object Anon_PathPromisifyBoolean {
+  @scala.inline
+  def apply(`__promisify__`: js.Function1[nodeLib.fsMod.PathLike, js.Promise[scala.Boolean]]): Anon_PathPromisifyBoolean = {
+    val __obj = js.Dynamic.literal(`__promisify__` = `__promisify__`)
+  
+    __obj.asInstanceOf[Anon_PathPromisifyBoolean]
+  }
+}
+

@@ -16,3 +16,13 @@ trait CommentToken extends js.Object {
   var text: java.lang.String
 }
 
+object CommentToken {
+  @scala.inline
+  def apply(text: java.lang.String, sourceCodeLocation: parse5Lib.parse5Mod.Location = null): CommentToken = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    __obj.asInstanceOf[CommentToken]
+  }
+}
+

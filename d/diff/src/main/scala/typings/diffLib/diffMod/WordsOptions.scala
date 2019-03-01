@@ -12,3 +12,16 @@ trait WordsOptions extends BaseOptions {
   var ignoreWhitespace: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WordsOptions {
+  @scala.inline
+  def apply(
+    ignoreCase: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreWhitespace: js.UndefOr[scala.Boolean] = js.undefined
+  ): WordsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace)
+    __obj.asInstanceOf[WordsOptions]
+  }
+}
+

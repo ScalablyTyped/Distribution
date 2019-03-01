@@ -36,5 +36,4 @@ package object typesRuntimeMod {
     /* value */ js.Any, 
     scala.Unit
   ]
-  type TypeInference = vegaDashTypingsLib.typesSpecDataMod.DataType | vegaDashTypingsLib.vegaDashTypingsLibStrings.integer
 }

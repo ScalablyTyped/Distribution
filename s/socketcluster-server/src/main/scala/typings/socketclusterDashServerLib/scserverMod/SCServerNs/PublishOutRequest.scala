@@ -12,3 +12,20 @@ trait PublishOutRequest extends js.Object {
   var useCache: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PublishOutRequest {
+  @scala.inline
+  def apply(
+    socket: socketclusterDashServerLib.scserversocketMod.namespaced,
+    channel: java.lang.String = null,
+    data: js.Any = null,
+    useCache: js.UndefOr[scala.Boolean] = js.undefined
+  ): PublishOutRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("socket")(socket)
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache)
+    __obj.asInstanceOf[PublishOutRequest]
+  }
+}
+

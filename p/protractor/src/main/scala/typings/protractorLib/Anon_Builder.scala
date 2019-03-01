@@ -16,3 +16,17 @@ trait Anon_Builder extends js.Object {
   ]
 }
 
+object Anon_Builder {
+  @scala.inline
+  def apply(
+    Builder: org.scalablytyped.runtime.Instantiable1[
+      /* exe */ java.lang.String, 
+      seleniumDashWebdriverLib.remoteMod.DriverServiceNs.Builder
+    ]
+  ): Anon_Builder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Builder")(Builder)
+    __obj.asInstanceOf[Anon_Builder]
+  }
+}
+

@@ -16,3 +16,32 @@ trait ImagesResource extends js.Object {
   def upload(request: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType): gapiDotClientLib.gapiNs.clientNs.Request[ImagesUploadResponse]
 }
 
+object ImagesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    deleteall: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ImagesDeleteAllResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ImagesListResponse]
+    ],
+    upload: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsImageType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ImagesUploadResponse]
+    ]
+  ): ImagesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("deleteall")(deleteall)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("upload")(upload)
+    __obj.asInstanceOf[ImagesResource]
+  }
+}
+

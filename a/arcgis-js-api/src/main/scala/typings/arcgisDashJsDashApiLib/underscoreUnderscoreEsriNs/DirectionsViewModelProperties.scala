@@ -1,0 +1,97 @@
+package typings
+package arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DirectionsViewModelProperties extends GoToProperties {
+  /**
+    * The network attribute name to be used as the impedance attribute in the analysis. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html). You can specify any attribute names listed in the Service Directory under `Network Dataset -> Network Attributes` as `Usage Type: esriNAUTCost`. You can also specify a value of `none` to indicate that no network attributes should be used for impedance. If you specify an empty array, it will default to the default of the service.  For example, set `impedanceAttribute = "Time"` for the quickest route and `impedanceAttribute = "Length"` for shortest drive, assuming the service has those two esriNAUTCost attributes.  For more information, see [Understanding the network attribute](http://resources.arcgis.com/en/help/main/10.2/index.html#//00470000000m000000).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#impedanceAttribute)
+    */
+  var impedanceAttribute: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The maximum number of stops allowed for routing.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#maxStops)
+    *
+    * @default 50
+    */
+  var maxStops: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Route Parameters object used to call the service. Please refer to the [RouteParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html) documentation for the list of available settings.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeParameters)
+    */
+  var routeParameters: js.UndefOr[RouteParametersProperties] = js.undefined
+  /**
+    * The URL of the REST endpoint of the Route service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeServiceUrl)
+    *
+    * @default "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
+    */
+  var routeServiceUrl: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Defines the symbol used to draw the route on the map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeSymbol)
+    */
+  var routeSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
+  /**
+    * The default stop symbols used to display locations between the origin and final destination.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#stopSymbols)
+    */
+  var stopSymbols: js.UndefOr[DirectionsViewModelStopSymbols] = js.undefined
+  /**
+    * An array of graphics that define the stop locations along the route.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#stops)
+    */
+  var stops: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
+  /**
+    * The name of the network attribute to use for the drive time when computing directions.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
+    */
+  var timeAttribute: js.UndefOr[DirectionsViewModelTimeAttribute] = js.undefined
+  /**
+    * The view from which the widget will operate.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#view)
+    */
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+}
+
+object DirectionsViewModelProperties {
+  @scala.inline
+  def apply(
+    goToOverride: GoToOverride = null,
+    impedanceAttribute: java.lang.String = null,
+    maxStops: scala.Int | scala.Double = null,
+    routeParameters: RouteParametersProperties = null,
+    routeServiceUrl: java.lang.String = null,
+    routeSymbol: SimpleLineSymbolProperties = null,
+    stopSymbols: DirectionsViewModelStopSymbols = null,
+    stops: CollectionProperties[GraphicProperties] = null,
+    timeAttribute: DirectionsViewModelTimeAttribute = null,
+    view: MapViewProperties | SceneViewProperties = null
+  ): DirectionsViewModelProperties = {
+    val __obj = js.Dynamic.literal()
+    if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute)
+    if (maxStops != null) __obj.updateDynamic("maxStops")(maxStops.asInstanceOf[js.Any])
+    if (routeParameters != null) __obj.updateDynamic("routeParameters")(routeParameters)
+    if (routeServiceUrl != null) __obj.updateDynamic("routeServiceUrl")(routeServiceUrl)
+    if (routeSymbol != null) __obj.updateDynamic("routeSymbol")(routeSymbol)
+    if (stopSymbols != null) __obj.updateDynamic("stopSymbols")(stopSymbols)
+    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
+    if (timeAttribute != null) __obj.updateDynamic("timeAttribute")(timeAttribute)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DirectionsViewModelProperties]
+  }
+}
+

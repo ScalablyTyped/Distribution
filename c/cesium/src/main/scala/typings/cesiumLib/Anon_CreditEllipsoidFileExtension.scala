@@ -19,3 +19,34 @@ trait Anon_CreditEllipsoidFileExtension extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_CreditEllipsoidFileExtension {
+  @scala.inline
+  def apply(
+    credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    fileExtension: java.lang.String = null,
+    maximumLevel: scala.Int | scala.Double = null,
+    minimumLevel: scala.Int | scala.Double = null,
+    proxy: js.Any = null,
+    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null,
+    tileHeight: scala.Int | scala.Double = null,
+    tileWidth: scala.Int | scala.Double = null,
+    tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme = null,
+    url: java.lang.String = null
+  ): Anon_CreditEllipsoidFileExtension = {
+    val __obj = js.Dynamic.literal()
+    if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension)
+    if (maximumLevel != null) __obj.updateDynamic("maximumLevel")(maximumLevel.asInstanceOf[js.Any])
+    if (minimumLevel != null) __obj.updateDynamic("minimumLevel")(minimumLevel.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    if (tileHeight != null) __obj.updateDynamic("tileHeight")(tileHeight.asInstanceOf[js.Any])
+    if (tileWidth != null) __obj.updateDynamic("tileWidth")(tileWidth.asInstanceOf[js.Any])
+    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_CreditEllipsoidFileExtension]
+  }
+}
+

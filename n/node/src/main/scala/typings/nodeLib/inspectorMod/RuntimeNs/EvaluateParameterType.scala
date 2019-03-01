@@ -58,3 +58,34 @@ trait EvaluateParameterType extends js.Object {
   var userGesture: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EvaluateParameterType {
+  @scala.inline
+  def apply(
+    expression: java.lang.String,
+    awaitPromise: js.UndefOr[scala.Boolean] = js.undefined,
+    contextId: js.UndefOr[ExecutionContextId] = js.undefined,
+    generatePreview: js.UndefOr[scala.Boolean] = js.undefined,
+    includeCommandLineAPI: js.UndefOr[scala.Boolean] = js.undefined,
+    objectGroup: java.lang.String = null,
+    returnByValue: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    throwOnSideEffect: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: js.UndefOr[TimeDelta] = js.undefined,
+    userGesture: js.UndefOr[scala.Boolean] = js.undefined
+  ): EvaluateParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expression")(expression)
+    if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
+    if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId)
+    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
+    if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI)
+    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)
+    if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(throwOnSideEffect)) __obj.updateDynamic("throwOnSideEffect")(throwOnSideEffect)
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
+    if (!js.isUndefined(userGesture)) __obj.updateDynamic("userGesture")(userGesture)
+    __obj.asInstanceOf[EvaluateParameterType]
+  }
+}
+

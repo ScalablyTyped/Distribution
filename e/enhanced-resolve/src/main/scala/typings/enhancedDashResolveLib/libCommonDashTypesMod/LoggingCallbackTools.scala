@@ -11,3 +11,18 @@ trait LoggingCallbackTools extends js.Object {
   var stack: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object LoggingCallbackTools {
+  @scala.inline
+  def apply(
+    log: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    missing: js.Array[java.lang.String] | enhancedDashResolveLib.Anon_Item = null,
+    stack: js.Array[java.lang.String] = null
+  ): LoggingCallbackTools = {
+    val __obj = js.Dynamic.literal()
+    if (log != null) __obj.updateDynamic("log")(log)
+    if (missing != null) __obj.updateDynamic("missing")(missing.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[LoggingCallbackTools]
+  }
+}
+

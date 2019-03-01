@@ -29,3 +29,20 @@ trait TwitchExtAuthorized extends js.Object {
   var userId: java.lang.String
 }
 
+object TwitchExtAuthorized {
+  @scala.inline
+  def apply(
+    channelId: java.lang.String,
+    clientId: java.lang.String,
+    token: java.lang.String,
+    userId: java.lang.String
+  ): TwitchExtAuthorized = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channelId")(channelId)
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("token")(token)
+    __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[TwitchExtAuthorized]
+  }
+}
+

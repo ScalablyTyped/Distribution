@@ -96,3 +96,38 @@ trait XAddIn
   def getProgrammaticFuntionName(aDisplayName: java.lang.String): java.lang.String
 }
 
+object XAddIn {
+  @scala.inline
+  def apply(
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    acquire: js.Function0[scala.Unit],
+    getArgumentDescription: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getDisplayArgumentName: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getDisplayCategoryName: js.Function1[java.lang.String, java.lang.String],
+    getDisplayFunctionName: js.Function1[java.lang.String, java.lang.String],
+    getFunctionDescription: js.Function1[java.lang.String, java.lang.String],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getProgrammaticCategoryName: js.Function1[java.lang.String, java.lang.String],
+    getProgrammaticFuntionName: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
+  ): XAddIn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Locale")(Locale)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getArgumentDescription")(getArgumentDescription)
+    __obj.updateDynamic("getDisplayArgumentName")(getDisplayArgumentName)
+    __obj.updateDynamic("getDisplayCategoryName")(getDisplayCategoryName)
+    __obj.updateDynamic("getDisplayFunctionName")(getDisplayFunctionName)
+    __obj.updateDynamic("getFunctionDescription")(getFunctionDescription)
+    __obj.updateDynamic("getLocale")(getLocale)
+    __obj.updateDynamic("getProgrammaticCategoryName")(getProgrammaticCategoryName)
+    __obj.updateDynamic("getProgrammaticFuntionName")(getProgrammaticFuntionName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setLocale")(setLocale)
+    __obj.asInstanceOf[XAddIn]
+  }
+}
+

@@ -16,3 +16,20 @@ trait IApplicationFeeRefundCreationOptions
   var amount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IApplicationFeeRefundCreationOptions {
+  @scala.inline
+  def apply(
+    amount: scala.Int | scala.Double = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null
+  ): IApplicationFeeRefundCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[IApplicationFeeRefundCreationOptions]
+  }
+}
+

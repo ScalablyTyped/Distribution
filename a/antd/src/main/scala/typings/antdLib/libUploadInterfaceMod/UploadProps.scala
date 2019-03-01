@@ -36,3 +36,64 @@ trait UploadProps extends js.Object {
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UploadProps {
+  @scala.inline
+  def apply(
+    accept: java.lang.String = null,
+    action: java.lang.String | (js.Function1[/* file */ UploadFile, js.Thenable[_]]) = null,
+    beforeUpload: js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], scala.Boolean | js.Thenable[_]] = null,
+    className: java.lang.String = null,
+    customRequest: js.Function1[/* option */ js.Any, scala.Unit] = null,
+    data: js.Object | (js.Function1[/* file */ UploadFile, _]) = null,
+    defaultFileList: js.Array[UploadFile] = null,
+    directory: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fileList: js.Array[UploadFile] = null,
+    headers: HttpRequestHeader = null,
+    id: java.lang.String = null,
+    listType: UploadListType = null,
+    locale: UploadLocale = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    onChange: js.Function1[/* info */ UploadChangeParam, scala.Unit] = null,
+    onPreview: js.Function1[/* file */ UploadFile, scala.Unit] = null,
+    onRemove: js.Function1[/* file */ UploadFile, scala.Unit | scala.Boolean] = null,
+    openFileDialogOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    prefixCls: java.lang.String = null,
+    showUploadList: scala.Boolean | ShowUploadListInterface = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    supportServerRender: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: UploadType = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): UploadProps = {
+    val __obj = js.Dynamic.literal()
+    if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (beforeUpload != null) __obj.updateDynamic("beforeUpload")(beforeUpload)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (customRequest != null) __obj.updateDynamic("customRequest")(customRequest)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (defaultFileList != null) __obj.updateDynamic("defaultFileList")(defaultFileList)
+    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (fileList != null) __obj.updateDynamic("fileList")(fileList)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (listType != null) __obj.updateDynamic("listType")(listType)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onPreview != null) __obj.updateDynamic("onPreview")(onPreview)
+    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (showUploadList != null) __obj.updateDynamic("showUploadList")(showUploadList.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(supportServerRender)) __obj.updateDynamic("supportServerRender")(supportServerRender)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[UploadProps]
+  }
+}
+

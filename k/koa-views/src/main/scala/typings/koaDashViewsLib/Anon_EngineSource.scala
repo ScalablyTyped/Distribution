@@ -24,3 +24,20 @@ trait Anon_EngineSource extends js.Object {
   var options: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_EngineSource {
+  @scala.inline
+  def apply(
+    engineSource: js.Any = null,
+    extension: java.lang.String = null,
+    map: js.Any = null,
+    options: js.Any = null
+  ): Anon_EngineSource = {
+    val __obj = js.Dynamic.literal()
+    if (engineSource != null) __obj.updateDynamic("engineSource")(engineSource)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[Anon_EngineSource]
+  }
+}
+

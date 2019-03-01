@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
   var phone_number: java.lang.String
 }
 
+object InputContactMessageContent {
+  @scala.inline
+  def apply(first_name: java.lang.String, phone_number: java.lang.String, last_name: java.lang.String = null): InputContactMessageContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("first_name")(first_name)
+    __obj.updateDynamic("phone_number")(phone_number)
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
+    __obj.asInstanceOf[InputContactMessageContent]
+  }
+}
+

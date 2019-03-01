@@ -10,7 +10,8 @@ object reactDashWidgetsLibStrings {
   sealed trait calendar extends js.Object
   
   @js.native
-  sealed trait century extends js.Object
+  sealed trait century
+    extends reactDashWidgetsLib.libCalendarMod.CalendarView
   
   @js.native
   sealed trait clear extends js.Object
@@ -22,7 +23,8 @@ object reactDashWidgetsLibStrings {
   sealed trait date extends js.Object
   
   @js.native
-  sealed trait decade extends js.Object
+  sealed trait decade
+    extends reactDashWidgetsLib.libCalendarMod.CalendarView
   
   @js.native
   sealed trait endsWith extends js.Object
@@ -34,7 +36,8 @@ object reactDashWidgetsLibStrings {
   sealed trait insert extends js.Object
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends reactDashWidgetsLib.libCalendarMod.CalendarView
   
   @js.native
   sealed trait onFilter extends js.Object
@@ -49,7 +52,8 @@ object reactDashWidgetsLibStrings {
   sealed trait time extends js.Object
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends reactDashWidgetsLib.libCalendarMod.CalendarView
   
   @scala.inline
   def calendar: calendar = "calendar".asInstanceOf[calendar]

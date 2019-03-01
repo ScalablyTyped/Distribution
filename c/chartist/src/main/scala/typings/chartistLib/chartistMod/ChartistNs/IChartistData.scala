@@ -13,3 +13,16 @@ trait IChartistData extends js.Object {
   var series: js.Array[IChartistSeriesData] | js.Array[js.Array[IChartistSeriesData]] | js.Array[js.Array[IChartistData]] | js.Array[scala.Double] | js.Array[js.Array[scala.Double]]
 }
 
+object IChartistData {
+  @scala.inline
+  def apply(
+    series: js.Array[IChartistSeriesData] | js.Array[js.Array[IChartistSeriesData]] | js.Array[js.Array[IChartistData]] | js.Array[scala.Double] | js.Array[js.Array[scala.Double]],
+    labels: js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[stdLib.Date] = null
+  ): IChartistData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IChartistData]
+  }
+}
+

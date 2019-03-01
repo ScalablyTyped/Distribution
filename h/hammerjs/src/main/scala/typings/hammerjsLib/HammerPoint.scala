@@ -10,3 +10,13 @@ trait HammerPoint extends js.Object {
   var y: scala.Double
 }
 
+object HammerPoint {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): HammerPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[HammerPoint]
+  }
+}
+

@@ -7,37 +7,48 @@ import scala.scalajs.js.annotation._
 
 object halogenLibStrings {
   @js.native
-  sealed trait baseline extends js.Object
+  sealed trait baseline
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait inherit
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait initial extends js.Object
+  sealed trait initial
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait length extends js.Object
+  sealed trait length
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait sub extends js.Object
+  sealed trait sub
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait `super` extends js.Object
+  sealed trait `super`
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait `text-bottom` extends js.Object
+  sealed trait `text-bottom`
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait `text-top` extends js.Object
+  sealed trait `text-top`
+    extends halogenLib.halogenMod.VerticalAlign
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends halogenLib.halogenMod.VerticalAlign
   
   @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]

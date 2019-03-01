@@ -24,3 +24,20 @@ trait SafeSearchAnnotation extends js.Object {
   var violence: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SafeSearchAnnotation {
+  @scala.inline
+  def apply(
+    adult: java.lang.String = null,
+    medical: java.lang.String = null,
+    spoof: java.lang.String = null,
+    violence: java.lang.String = null
+  ): SafeSearchAnnotation = {
+    val __obj = js.Dynamic.literal()
+    if (adult != null) __obj.updateDynamic("adult")(adult)
+    if (medical != null) __obj.updateDynamic("medical")(medical)
+    if (spoof != null) __obj.updateDynamic("spoof")(spoof)
+    if (violence != null) __obj.updateDynamic("violence")(violence)
+    __obj.asInstanceOf[SafeSearchAnnotation]
+  }
+}
+

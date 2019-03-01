@@ -17,3 +17,30 @@ trait Collection extends js.Object {
   def update(query: Query, changes: js.Object, callback: CbCallback): scala.Unit
 }
 
+object Collection {
+  @scala.inline
+  def apply(
+    URI: java.lang.String,
+    create: js.Function2[Item, CbCallback, scala.Unit],
+    endpoint: java.lang.String,
+    fetch: js.Function2[QueryObj, CbCallback, scala.Unit],
+    remove: js.Function2[Query, CbCallback, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    update: js.Function3[Query, js.Object, CbCallback, scala.Unit],
+    user: APIUser
+  ): Collection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("endpoint")(endpoint)
+    __obj.updateDynamic("fetch")(fetch)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("systemKey")(systemKey)
+    __obj.updateDynamic("systemSecret")(systemSecret)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[Collection]
+  }
+}
+

@@ -18,3 +18,13 @@ trait GoogleDatastoreAdminV1beta1Progress extends js.Object {
   var workEstimated: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleDatastoreAdminV1beta1Progress {
+  @scala.inline
+  def apply(workCompleted: java.lang.String = null, workEstimated: java.lang.String = null): GoogleDatastoreAdminV1beta1Progress = {
+    val __obj = js.Dynamic.literal()
+    if (workCompleted != null) __obj.updateDynamic("workCompleted")(workCompleted)
+    if (workEstimated != null) __obj.updateDynamic("workEstimated")(workEstimated)
+    __obj.asInstanceOf[GoogleDatastoreAdminV1beta1Progress]
+  }
+}
+

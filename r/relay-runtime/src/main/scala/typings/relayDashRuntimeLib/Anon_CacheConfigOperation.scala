@@ -11,3 +11,18 @@ trait Anon_CacheConfigOperation extends js.Object {
   var updater: js.UndefOr[relayDashRuntimeLib.relayDashRuntimeMod.SelectorStoreUpdater[_]] = js.undefined
 }
 
+object Anon_CacheConfigOperation {
+  @scala.inline
+  def apply(
+    operation: relayDashRuntimeLib.relayDashRuntimeMod.OperationSelector,
+    cacheConfig: relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig = null,
+    updater: relayDashRuntimeLib.relayDashRuntimeMod.SelectorStoreUpdater[_] = null
+  ): Anon_CacheConfigOperation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("operation")(operation)
+    if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)
+    if (updater != null) __obj.updateDynamic("updater")(updater)
+    __obj.asInstanceOf[Anon_CacheConfigOperation]
+  }
+}
+

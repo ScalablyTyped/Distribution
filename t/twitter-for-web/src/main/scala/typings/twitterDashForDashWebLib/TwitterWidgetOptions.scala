@@ -31,3 +31,22 @@ trait TwitterWidgetOptions extends js.Object {
   var via: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TwitterWidgetOptions {
+  @scala.inline
+  def apply(
+    dnt: js.UndefOr[scala.Boolean] = js.undefined,
+    hashtags: java.lang.String = null,
+    lang: java.lang.String = null,
+    related: java.lang.String = null,
+    via: java.lang.String = null
+  ): TwitterWidgetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt)
+    if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (related != null) __obj.updateDynamic("related")(related)
+    if (via != null) __obj.updateDynamic("via")(via)
+    __obj.asInstanceOf[TwitterWidgetOptions]
+  }
+}
+

@@ -7,67 +7,88 @@ import scala.scalajs.js.annotation._
 
 object whatwgDashUrlLibStrings {
   @js.native
-  sealed trait authority extends js.Object
+  sealed trait authority
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `cannot-be-a-base-URL path` extends js.Object
+  sealed trait `cannot-be-a-base-URL path`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `file host` extends js.Object
+  sealed trait `file host`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `file slash` extends js.Object
+  sealed trait `file slash`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait fragment extends js.Object
+  sealed trait fragment
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait host extends js.Object
+  sealed trait host
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait hostname extends js.Object
+  sealed trait hostname
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `no scheme` extends js.Object
+  sealed trait `no scheme`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait path extends js.Object
+  sealed trait path
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `path or authority` extends js.Object
+  sealed trait `path or authority`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `path start` extends js.Object
+  sealed trait `path start`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait port extends js.Object
+  sealed trait port
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait query
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait relative extends js.Object
+  sealed trait relative
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `relative slash` extends js.Object
+  sealed trait `relative slash`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait scheme extends js.Object
+  sealed trait scheme
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `scheme start` extends js.Object
+  sealed trait `scheme start`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `special authority ignore slashes` extends js.Object
+  sealed trait `special authority ignore slashes`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `special authority slashes` extends js.Object
+  sealed trait `special authority slashes`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @js.native
-  sealed trait `special relative or authority` extends js.Object
+  sealed trait `special relative or authority`
+    extends whatwgDashUrlLib.whatwgDashUrlMod.StateOverride
   
   @scala.inline
   def authority: authority = "authority".asInstanceOf[authority]

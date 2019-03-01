@@ -40,3 +40,67 @@ trait ReporterContributions extends js.Object {
   var xunit: scala.Nothing
 }
 
+object ReporterContributions {
+  @scala.inline
+  def apply(
+    Base: scala.Nothing,
+    Dot: scala.Nothing,
+    HTML: scala.Nothing,
+    JSON: scala.Nothing,
+    JSONStream: scala.Nothing,
+    Landing: scala.Nothing,
+    List: scala.Nothing,
+    Markdown: scala.Nothing,
+    Min: scala.Nothing,
+    Nyan: scala.Nothing,
+    Progress: scala.Nothing,
+    Spec: scala.Nothing,
+    TAP: scala.Nothing,
+    XUnit: scala.Nothing,
+    base: scala.Nothing,
+    dot: scala.Nothing,
+    html: scala.Nothing,
+    json: scala.Nothing,
+    `json-stream`: scala.Nothing,
+    landing: scala.Nothing,
+    list: scala.Nothing,
+    markdown: scala.Nothing,
+    min: scala.Nothing,
+    nyan: scala.Nothing,
+    progress: scala.Nothing,
+    spec: scala.Nothing,
+    tap: scala.Nothing,
+    xunit: scala.Nothing
+  ): ReporterContributions = {
+    val __obj = js.Dynamic.literal(`json-stream` = `json-stream`)
+    __obj.updateDynamic("Base")(Base)
+    __obj.updateDynamic("Dot")(Dot)
+    __obj.updateDynamic("HTML")(HTML)
+    __obj.updateDynamic("JSON")(JSON)
+    __obj.updateDynamic("JSONStream")(JSONStream)
+    __obj.updateDynamic("Landing")(Landing)
+    __obj.updateDynamic("List")(List)
+    __obj.updateDynamic("Markdown")(Markdown)
+    __obj.updateDynamic("Min")(Min)
+    __obj.updateDynamic("Nyan")(Nyan)
+    __obj.updateDynamic("Progress")(Progress)
+    __obj.updateDynamic("Spec")(Spec)
+    __obj.updateDynamic("TAP")(TAP)
+    __obj.updateDynamic("XUnit")(XUnit)
+    __obj.updateDynamic("base")(base)
+    __obj.updateDynamic("dot")(dot)
+    __obj.updateDynamic("html")(html)
+    __obj.updateDynamic("json")(json)
+    __obj.updateDynamic("landing")(landing)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("markdown")(markdown)
+    __obj.updateDynamic("min")(min)
+    __obj.updateDynamic("nyan")(nyan)
+    __obj.updateDynamic("progress")(progress)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("tap")(tap)
+    __obj.updateDynamic("xunit")(xunit)
+    __obj.asInstanceOf[ReporterContributions]
+  }
+}
+

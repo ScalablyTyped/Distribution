@@ -33,3 +33,24 @@ trait IOCounters extends js.Object {
   var writeTransferCount: scala.Double
 }
 
+object IOCounters {
+  @scala.inline
+  def apply(
+    otherOperationCount: scala.Double,
+    otherTransferCount: scala.Double,
+    readOperationCount: scala.Double,
+    readTransferCount: scala.Double,
+    writeOperationCount: scala.Double,
+    writeTransferCount: scala.Double
+  ): IOCounters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("otherOperationCount")(otherOperationCount)
+    __obj.updateDynamic("otherTransferCount")(otherTransferCount)
+    __obj.updateDynamic("readOperationCount")(readOperationCount)
+    __obj.updateDynamic("readTransferCount")(readTransferCount)
+    __obj.updateDynamic("writeOperationCount")(writeOperationCount)
+    __obj.updateDynamic("writeTransferCount")(writeTransferCount)
+    __obj.asInstanceOf[IOCounters]
+  }
+}
+

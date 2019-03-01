@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object snazzyDashInfoDashWindowLibStrings {
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends snazzyDashInfoDashWindowLib.snazzyDashInfoDashWindowMod.SnazzyInfoWindowNs.PlacementOptions
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends snazzyDashInfoDashWindowLib.snazzyDashInfoDashWindowMod.SnazzyInfoWindowNs.PlacementOptions
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends snazzyDashInfoDashWindowLib.snazzyDashInfoDashWindowMod.SnazzyInfoWindowNs.PlacementOptions
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends snazzyDashInfoDashWindowLib.snazzyDashInfoDashWindowMod.SnazzyInfoWindowNs.PlacementOptions
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

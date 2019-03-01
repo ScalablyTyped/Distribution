@@ -33,3 +33,25 @@ trait ButtonProps extends js.Object {
   ] = js.undefined
 }
 
+object ButtonProps {
+  @scala.inline
+  def apply(
+    btnContextual: java.lang.String = null,
+    btnGlyphicon: java.lang.String = null,
+    btnText: java.lang.String = null,
+    className: java.lang.String = null,
+    onClick: js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null
+  ): ButtonProps = {
+    val __obj = js.Dynamic.literal()
+    if (btnContextual != null) __obj.updateDynamic("btnContextual")(btnContextual)
+    if (btnGlyphicon != null) __obj.updateDynamic("btnGlyphicon")(btnGlyphicon)
+    if (btnText != null) __obj.updateDynamic("btnText")(btnText)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    __obj.asInstanceOf[ButtonProps]
+  }
+}
+

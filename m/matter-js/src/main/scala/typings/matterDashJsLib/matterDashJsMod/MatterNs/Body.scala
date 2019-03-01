@@ -352,3 +352,81 @@ trait Body extends js.Object {
   var vertices: js.Array[Vector]
 }
 
+object Body {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    angularSpeed: scala.Double,
+    angularVelocity: scala.Double,
+    area: scala.Double,
+    axes: js.Array[Vector],
+    bounds: Bounds,
+    collisionFilter: ICollisionFilter,
+    density: scala.Double,
+    force: Vector,
+    friction: scala.Double,
+    frictionAir: scala.Double,
+    frictionStatic: scala.Double,
+    id: scala.Double,
+    inertia: scala.Double,
+    inverseInertia: scala.Double,
+    inverseMass: scala.Double,
+    isSensor: scala.Boolean,
+    isSleeping: scala.Boolean,
+    isStatic: scala.Boolean,
+    label: java.lang.String,
+    mass: scala.Double,
+    motion: scala.Double,
+    parent: Body,
+    parts: js.Array[Body],
+    position: Vector,
+    render: IBodyRenderOptions,
+    restitution: scala.Double,
+    sleepThreshold: scala.Double,
+    slop: scala.Double,
+    speed: scala.Double,
+    timeScale: scala.Double,
+    torque: scala.Double,
+    `type`: java.lang.String,
+    velocity: Vector,
+    vertices: js.Array[Vector]
+  ): Body = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("angularSpeed")(angularSpeed)
+    __obj.updateDynamic("angularVelocity")(angularVelocity)
+    __obj.updateDynamic("area")(area)
+    __obj.updateDynamic("axes")(axes)
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("collisionFilter")(collisionFilter)
+    __obj.updateDynamic("density")(density)
+    __obj.updateDynamic("force")(force)
+    __obj.updateDynamic("friction")(friction)
+    __obj.updateDynamic("frictionAir")(frictionAir)
+    __obj.updateDynamic("frictionStatic")(frictionStatic)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("inertia")(inertia)
+    __obj.updateDynamic("inverseInertia")(inverseInertia)
+    __obj.updateDynamic("inverseMass")(inverseMass)
+    __obj.updateDynamic("isSensor")(isSensor)
+    __obj.updateDynamic("isSleeping")(isSleeping)
+    __obj.updateDynamic("isStatic")(isStatic)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("mass")(mass)
+    __obj.updateDynamic("motion")(motion)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("parts")(parts)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("render")(render)
+    __obj.updateDynamic("restitution")(restitution)
+    __obj.updateDynamic("sleepThreshold")(sleepThreshold)
+    __obj.updateDynamic("slop")(slop)
+    __obj.updateDynamic("speed")(speed)
+    __obj.updateDynamic("timeScale")(timeScale)
+    __obj.updateDynamic("torque")(torque)
+    __obj.updateDynamic("velocity")(velocity)
+    __obj.updateDynamic("vertices")(vertices)
+    __obj.asInstanceOf[Body]
+  }
+}
+

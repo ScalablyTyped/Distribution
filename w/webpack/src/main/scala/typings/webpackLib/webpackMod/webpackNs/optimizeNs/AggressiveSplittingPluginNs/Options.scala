@@ -26,3 +26,20 @@ trait Options extends js.Object {
   var minSize: webpackLib.webpackLibNumbers.`30000`
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    chunkOverhead: webpackLib.webpackLibNumbers.`0`,
+    entryChunkMultiplicator: webpackLib.webpackLibNumbers.`1`,
+    maxSize: webpackLib.webpackLibNumbers.`50000`,
+    minSize: webpackLib.webpackLibNumbers.`30000`
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chunkOverhead")(chunkOverhead)
+    __obj.updateDynamic("entryChunkMultiplicator")(entryChunkMultiplicator)
+    __obj.updateDynamic("maxSize")(maxSize)
+    __obj.updateDynamic("minSize")(minSize)
+    __obj.asInstanceOf[Options]
+  }
+}
+

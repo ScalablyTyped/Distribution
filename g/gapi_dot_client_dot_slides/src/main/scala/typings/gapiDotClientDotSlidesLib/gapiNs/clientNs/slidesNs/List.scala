@@ -16,3 +16,16 @@ trait List extends js.Object {
   var nestingLevel: js.UndefOr[stdLib.Record[java.lang.String, NestingLevel]] = js.undefined
 }
 
+object List {
+  @scala.inline
+  def apply(
+    listId: java.lang.String = null,
+    nestingLevel: stdLib.Record[java.lang.String, NestingLevel] = null
+  ): List = {
+    val __obj = js.Dynamic.literal()
+    if (listId != null) __obj.updateDynamic("listId")(listId)
+    if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel)
+    __obj.asInstanceOf[List]
+  }
+}
+

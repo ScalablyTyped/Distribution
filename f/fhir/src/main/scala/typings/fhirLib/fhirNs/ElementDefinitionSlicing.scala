@@ -39,3 +39,36 @@ trait ElementDefinitionSlicing extends Element {
   var rules: code
 }
 
+object ElementDefinitionSlicing {
+  @scala.inline
+  def apply(
+    rules: code,
+    _description: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _ordered: Element = null,
+    _rules: Element = null,
+    description: java.lang.String = null,
+    discriminator: js.Array[ElementDefinitionSlicingDiscriminator] = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    ordered: js.UndefOr[scala.Boolean] = js.undefined
+  ): ElementDefinitionSlicing = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rules")(rules)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_ordered != null) __obj.updateDynamic("_ordered")(_ordered)
+    if (_rules != null) __obj.updateDynamic("_rules")(_rules)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered)
+    __obj.asInstanceOf[ElementDefinitionSlicing]
+  }
+}
+

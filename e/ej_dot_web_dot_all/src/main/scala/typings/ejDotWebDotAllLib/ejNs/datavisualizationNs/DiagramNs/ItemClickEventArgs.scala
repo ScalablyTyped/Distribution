@@ -23,3 +23,22 @@ trait ItemClickEventArgs extends js.Object {
   var selectedObject: js.UndefOr[js.Any] = js.undefined
 }
 
+object ItemClickEventArgs {
+  @scala.inline
+  def apply(
+    actualObject: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    diagramId: java.lang.String = null,
+    event: js.Any = null,
+    selectedObject: js.Any = null
+  ): ItemClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (actualObject != null) __obj.updateDynamic("actualObject")(actualObject)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (selectedObject != null) __obj.updateDynamic("selectedObject")(selectedObject)
+    __obj.asInstanceOf[ItemClickEventArgs]
+  }
+}
+

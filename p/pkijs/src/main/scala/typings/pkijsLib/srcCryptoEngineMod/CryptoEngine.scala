@@ -36,7 +36,21 @@ trait CryptoEngine
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
   ): js.Thenable[stdLib.BufferSource | stdLib.JsonWebKey] = js.native
+  def decrypt(algorithm: java.lang.String, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def decrypt(algorithm: stdLib.AesCbcParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def decrypt(algorithm: stdLib.AesCfbParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def decrypt(algorithm: stdLib.AesCmacParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def decrypt(algorithm: stdLib.AesCtrParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def decrypt(algorithm: stdLib.AesGcmParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def decrypt(algorithm: stdLib.RsaOaepParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
   def digest(algorithm: stdLib.AlgorithmIdentifier, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def encrypt(algorithm: java.lang.String, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def encrypt(algorithm: stdLib.AesCbcParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def encrypt(algorithm: stdLib.AesCfbParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def encrypt(algorithm: stdLib.AesCmacParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def encrypt(algorithm: stdLib.AesCtrParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def encrypt(algorithm: stdLib.AesGcmParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def encrypt(algorithm: stdLib.RsaOaepParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
   @JSName("exportKey")
   def exportKey_jwk(format: pkijsLib.pkijsLibStrings.jwk, key: stdLib.CryptoKey): js.Thenable[stdLib.JsonWebKey] = js.native
   @JSName("exportKey")
@@ -47,6 +61,41 @@ trait CryptoEngine
   def exportKey_spki(format: pkijsLib.pkijsLibStrings.spki, key: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
   def importKey(
     format: java.lang.String,
+    keyData: stdLib.BufferSource,
+    algorithm: java.lang.String,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[java.lang.String]
+  ): js.Thenable[stdLib.CryptoKey] = js.native
+  def importKey(
+    format: java.lang.String,
+    keyData: stdLib.BufferSource,
+    algorithm: stdLib.DhImportKeyParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[java.lang.String]
+  ): js.Thenable[stdLib.CryptoKey] = js.native
+  def importKey(
+    format: java.lang.String,
+    keyData: stdLib.BufferSource,
+    algorithm: stdLib.EcKeyImportParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[java.lang.String]
+  ): js.Thenable[stdLib.CryptoKey] = js.native
+  def importKey(
+    format: java.lang.String,
+    keyData: stdLib.BufferSource,
+    algorithm: stdLib.HmacImportParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[java.lang.String]
+  ): js.Thenable[stdLib.CryptoKey] = js.native
+  def importKey(
+    format: java.lang.String,
+    keyData: stdLib.BufferSource,
+    algorithm: stdLib.RsaHashedImportParams,
+    extractable: scala.Boolean,
+    keyUsages: js.Array[java.lang.String]
+  ): js.Thenable[stdLib.CryptoKey] = js.native
+  def importKey(
+    format: java.lang.String,
     keyData: stdLib.JsonWebKey,
     algorithm: java.lang.String,
     extractable: scala.Boolean,
@@ -240,6 +289,10 @@ trait CryptoEngine
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
   ): js.Thenable[stdLib.CryptoKey] = js.native
+  def sign(algorithm: java.lang.String, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def sign(algorithm: stdLib.AesCmacParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def sign(algorithm: stdLib.EcdsaParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
+  def sign(algorithm: stdLib.RsaPssParams, key: stdLib.CryptoKey, data: stdLib.BufferSource): js.Thenable[stdLib.ArrayBuffer] = js.native
   def unwrapKey(
     format: java.lang.String,
     wrappedKey: stdLib.BufferSource,
@@ -249,6 +302,30 @@ trait CryptoEngine
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
   ): js.Thenable[stdLib.CryptoKey] = js.native
+  def verify(
+    algorithm: java.lang.String,
+    key: stdLib.CryptoKey,
+    signature: stdLib.BufferSource,
+    data: stdLib.BufferSource
+  ): js.Thenable[scala.Boolean] = js.native
+  def verify(
+    algorithm: stdLib.AesCmacParams,
+    key: stdLib.CryptoKey,
+    signature: stdLib.BufferSource,
+    data: stdLib.BufferSource
+  ): js.Thenable[scala.Boolean] = js.native
+  def verify(
+    algorithm: stdLib.EcdsaParams,
+    key: stdLib.CryptoKey,
+    signature: stdLib.BufferSource,
+    data: stdLib.BufferSource
+  ): js.Thenable[scala.Boolean] = js.native
+  def verify(
+    algorithm: stdLib.RsaPssParams,
+    key: stdLib.CryptoKey,
+    signature: stdLib.BufferSource,
+    data: stdLib.BufferSource
+  ): js.Thenable[scala.Boolean] = js.native
   def wrapKey(
     format: java.lang.String,
     key: stdLib.CryptoKey,

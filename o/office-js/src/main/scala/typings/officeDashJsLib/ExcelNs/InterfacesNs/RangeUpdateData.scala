@@ -101,3 +101,36 @@ trait RangeUpdateData extends js.Object {
   var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
 }
 
+object RangeUpdateData {
+  @scala.inline
+  def apply(
+    columnHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    dataValidation: DataValidationUpdateData = null,
+    format: RangeFormatUpdateData = null,
+    formulas: js.Array[js.Array[_]] = null,
+    formulasLocal: js.Array[js.Array[_]] = null,
+    formulasR1C1: js.Array[js.Array[_]] = null,
+    hyperlink: officeDashJsLib.ExcelNs.RangeHyperlink = null,
+    numberFormat: js.Array[js.Array[_]] = null,
+    numberFormatLocal: js.Array[js.Array[_]] = null,
+    rowHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    style: java.lang.String = null,
+    values: js.Array[js.Array[_]] = null
+  ): RangeUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden)
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formulas != null) __obj.updateDynamic("formulas")(formulas)
+    if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal)
+    if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1)
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (numberFormatLocal != null) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal)
+    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[RangeUpdateData]
+  }
+}
+

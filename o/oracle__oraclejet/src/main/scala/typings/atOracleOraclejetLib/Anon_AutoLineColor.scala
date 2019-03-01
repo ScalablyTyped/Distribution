@@ -11,3 +11,18 @@ trait Anon_AutoLineColor extends js.Object {
   var rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
 }
 
+object Anon_AutoLineColor {
+  @scala.inline
+  def apply(
+    lineColor: java.lang.String,
+    lineWidth: scala.Double,
+    rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
+  ): Anon_AutoLineColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lineColor")(lineColor)
+    __obj.updateDynamic("lineWidth")(lineWidth)
+    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AutoLineColor]
+  }
+}
+

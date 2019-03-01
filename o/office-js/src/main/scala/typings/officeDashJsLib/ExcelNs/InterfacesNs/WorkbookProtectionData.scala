@@ -16,3 +16,12 @@ trait WorkbookProtectionData extends js.Object {
   var `protected`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WorkbookProtectionData {
+  @scala.inline
+  def apply(`protected`: js.UndefOr[scala.Boolean] = js.undefined): WorkbookProtectionData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`)
+    __obj.asInstanceOf[WorkbookProtectionData]
+  }
+}
+

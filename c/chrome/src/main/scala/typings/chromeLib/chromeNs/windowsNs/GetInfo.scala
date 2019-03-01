@@ -19,3 +19,13 @@ trait GetInfo extends js.Object {
   var windowTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object GetInfo {
+  @scala.inline
+  def apply(populate: js.UndefOr[scala.Boolean] = js.undefined, windowTypes: js.Array[java.lang.String] = null): GetInfo = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(populate)) __obj.updateDynamic("populate")(populate)
+    if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes)
+    __obj.asInstanceOf[GetInfo]
+  }
+}
+

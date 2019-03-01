@@ -39,3 +39,30 @@ trait Anon_ActivityFilters extends js.Object {
   var reportProperties: js.UndefOr[Anon_ClicksLookbackWindow] = js.undefined
 }
 
+object Anon_ActivityFilters {
+  @scala.inline
+  def apply(
+    activityFilters: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue] = null,
+    conversionDimensions: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.SortedDimension] = null,
+    customFloodlightVariables: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.SortedDimension] = null,
+    customRichMediaEvents: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue] = null,
+    dateRange: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DateRange = null,
+    floodlightConfigId: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue = null,
+    metricNames: js.Array[java.lang.String] = null,
+    perInteractionDimensions: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.SortedDimension] = null,
+    reportProperties: Anon_ClicksLookbackWindow = null
+  ): Anon_ActivityFilters = {
+    val __obj = js.Dynamic.literal()
+    if (activityFilters != null) __obj.updateDynamic("activityFilters")(activityFilters)
+    if (conversionDimensions != null) __obj.updateDynamic("conversionDimensions")(conversionDimensions)
+    if (customFloodlightVariables != null) __obj.updateDynamic("customFloodlightVariables")(customFloodlightVariables)
+    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents)
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
+    if (floodlightConfigId != null) __obj.updateDynamic("floodlightConfigId")(floodlightConfigId)
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
+    if (perInteractionDimensions != null) __obj.updateDynamic("perInteractionDimensions")(perInteractionDimensions)
+    if (reportProperties != null) __obj.updateDynamic("reportProperties")(reportProperties)
+    __obj.asInstanceOf[Anon_ActivityFilters]
+  }
+}
+

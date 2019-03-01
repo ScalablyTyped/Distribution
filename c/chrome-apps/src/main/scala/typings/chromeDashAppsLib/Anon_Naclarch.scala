@@ -17,3 +17,23 @@ trait Anon_Naclarch extends js.Object {
   var sub_package_path: java.lang.String
 }
 
+object Anon_Naclarch {
+  @scala.inline
+  def apply(
+    nacl_arch: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      Anon_ARM, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ARM[keyof chrome-apps.Anon_ARM] */ js.Any
+      ]
+    ],
+    sub_package_path: java.lang.String
+  ): Anon_Naclarch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nacl_arch")(nacl_arch.asInstanceOf[js.Any])
+    __obj.updateDynamic("sub_package_path")(sub_package_path)
+    __obj.asInstanceOf[Anon_Naclarch]
+  }
+}
+

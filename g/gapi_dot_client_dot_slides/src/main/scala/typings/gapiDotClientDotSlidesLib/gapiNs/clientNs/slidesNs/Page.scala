@@ -43,3 +43,30 @@ trait Page extends js.Object {
   var slideProperties: js.UndefOr[SlideProperties] = js.undefined
 }
 
+object Page {
+  @scala.inline
+  def apply(
+    layoutProperties: LayoutProperties = null,
+    masterProperties: MasterProperties = null,
+    notesProperties: NotesProperties = null,
+    objectId: java.lang.String = null,
+    pageElements: js.Array[PageElement] = null,
+    pageProperties: PageProperties = null,
+    pageType: java.lang.String = null,
+    revisionId: java.lang.String = null,
+    slideProperties: SlideProperties = null
+  ): Page = {
+    val __obj = js.Dynamic.literal()
+    if (layoutProperties != null) __obj.updateDynamic("layoutProperties")(layoutProperties)
+    if (masterProperties != null) __obj.updateDynamic("masterProperties")(masterProperties)
+    if (notesProperties != null) __obj.updateDynamic("notesProperties")(notesProperties)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (pageElements != null) __obj.updateDynamic("pageElements")(pageElements)
+    if (pageProperties != null) __obj.updateDynamic("pageProperties")(pageProperties)
+    if (pageType != null) __obj.updateDynamic("pageType")(pageType)
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
+    if (slideProperties != null) __obj.updateDynamic("slideProperties")(slideProperties)
+    __obj.asInstanceOf[Page]
+  }
+}
+

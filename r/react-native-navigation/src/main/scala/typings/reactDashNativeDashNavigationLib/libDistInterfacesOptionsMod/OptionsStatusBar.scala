@@ -30,3 +30,20 @@ trait OptionsStatusBar extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OptionsStatusBar {
+  @scala.inline
+  def apply(
+    backgroundColor: Color = null,
+    drawBehind: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.light | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.dark = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): OptionsStatusBar = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[OptionsStatusBar]
+  }
+}
+

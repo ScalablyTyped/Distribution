@@ -13,13 +13,16 @@ object mqttDashPacketLibStrings {
   sealed trait MQTT extends js.Object
   
   @js.native
-  sealed trait connack extends js.Object
+  sealed trait connack
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait connect extends js.Object
+  sealed trait connect
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait disconnect extends js.Object
+  sealed trait disconnect
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
   sealed trait error extends js.Object
@@ -28,37 +31,48 @@ object mqttDashPacketLibStrings {
   sealed trait packet extends js.Object
   
   @js.native
-  sealed trait pingreq extends js.Object
+  sealed trait pingreq
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait pingresp extends js.Object
+  sealed trait pingresp
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait puback extends js.Object
+  sealed trait puback
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait pubcomp extends js.Object
+  sealed trait pubcomp
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait publish extends js.Object
+  sealed trait publish
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait pubrec extends js.Object
+  sealed trait pubrec
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait pubrel extends js.Object
+  sealed trait pubrel
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait suback extends js.Object
+  sealed trait suback
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait subscribe extends js.Object
+  sealed trait subscribe
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait unsuback extends js.Object
+  sealed trait unsuback
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @js.native
-  sealed trait unsubscribe extends js.Object
+  sealed trait unsubscribe
+    extends mqttDashPacketLib.mqttDashPacketMod.PacketCmd
   
   @scala.inline
   def MQIsdp: MQIsdp = "MQIsdp".asInstanceOf[MQIsdp]

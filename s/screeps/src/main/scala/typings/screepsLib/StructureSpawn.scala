@@ -12,7 +12,9 @@ import scala.scalajs.js.annotation._
   * easily recover even if all your creeps died.
   */
 @js.native
-trait StructureSpawn extends OwnedStructure[STRUCTURE_SPAWN] {
+trait StructureSpawn
+  extends OwnedStructure[STRUCTURE_SPAWN]
+     with AnyOwnedStructure {
   /**
     * The amount of energy containing in the spawn.
     */

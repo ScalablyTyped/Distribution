@@ -23,3 +23,16 @@ trait SinonStub extends js.Object {
   def resolves[T](value: T): sinonLib.sinonMod.SinonNs.SinonStub
 }
 
+object SinonStub {
+  @scala.inline
+  def apply(
+    rejects: js.Function1[js.Any, sinonLib.sinonMod.SinonNs.SinonStub],
+    resolves: js.Function1[js.Any, sinonLib.sinonMod.SinonNs.SinonStub]
+  ): SinonStub = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rejects")(rejects)
+    __obj.updateDynamic("resolves")(resolves)
+    __obj.asInstanceOf[SinonStub]
+  }
+}
+

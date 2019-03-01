@@ -12,3 +12,20 @@ trait Anon_Key extends js.Object {
   var state: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    layer: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Layer,
+    source: java.lang.String,
+    sourceLayer: java.lang.String,
+    state: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("layer")(layer)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("sourceLayer")(sourceLayer)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

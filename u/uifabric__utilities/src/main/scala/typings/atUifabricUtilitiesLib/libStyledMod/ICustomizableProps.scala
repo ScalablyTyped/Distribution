@@ -17,3 +17,13 @@ trait ICustomizableProps extends js.Object {
   var scope: java.lang.String
 }
 
+object ICustomizableProps {
+  @scala.inline
+  def apply(scope: java.lang.String, fields: js.Array[java.lang.String] = null): ICustomizableProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scope")(scope)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[ICustomizableProps]
+  }
+}
+

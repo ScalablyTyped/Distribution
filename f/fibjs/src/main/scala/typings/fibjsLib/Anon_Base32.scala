@@ -11,3 +11,18 @@ trait Anon_Base32 extends js.Object {
   def encode(data: Class_Buffer): java.lang.String
 }
 
+object Anon_Base32 {
+  @scala.inline
+  def apply(
+    base32Ns: js.Any,
+    decode: js.Function1[java.lang.String, Class_Buffer],
+    encode: js.Function1[Class_Buffer, java.lang.String]
+  ): Anon_Base32 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("base32Ns")(base32Ns)
+    __obj.updateDynamic("decode")(decode)
+    __obj.updateDynamic("encode")(encode)
+    __obj.asInstanceOf[Anon_Base32]
+  }
+}
+

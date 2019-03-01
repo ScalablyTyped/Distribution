@@ -10,3 +10,13 @@ trait InternalOAuthError
   var oauthError: js.Any
 }
 
+object InternalOAuthError {
+  @scala.inline
+  def apply(oauthError: js.Any, stack: java.lang.String = null): InternalOAuthError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("oauthError")(oauthError)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[InternalOAuthError]
+  }
+}
+

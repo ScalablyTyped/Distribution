@@ -70,3 +70,70 @@ trait ChartConfiguration extends js.Object {
   var zoom: js.UndefOr[ZoomOptions] = js.undefined
 }
 
+object ChartConfiguration {
+  @scala.inline
+  def apply(
+    data: Data,
+    area: c3Lib.Anon_Zerobased = null,
+    axis: Axis = null,
+    bar: c3Lib.Anon_Space = null,
+    bindto: java.lang.String | stdLib.HTMLElement | (d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, _, _]) = null,
+    color: c3Lib.Anon_Pattern = null,
+    donut: c3Lib.Anon_ExpandLabel = null,
+    gauge: c3Lib.Anon_ExpandFullCircle = null,
+    grid: Grid = null,
+    interaction: c3Lib.Anon_Enabled = null,
+    legend: LegendOptions = null,
+    line: c3Lib.Anon_ConnectNull = null,
+    oninit: js.Function0[scala.Unit] = null,
+    onmouseout: js.Function0[scala.Unit] = null,
+    onmouseover: js.Function0[scala.Unit] = null,
+    onrendered: js.Function0[scala.Unit] = null,
+    onresize: js.Function0[scala.Unit] = null,
+    onresized: js.Function0[scala.Unit] = null,
+    padding: c3Lib.Anon_Bottom = null,
+    pie: c3Lib.Anon_Expand = null,
+    point: PointOptions = null,
+    regions: js.Array[RegionOptions] = null,
+    resize: c3Lib.Anon_Auto = null,
+    size: c3Lib.Anon_Height = null,
+    spline: c3Lib.Anon_Interpolation = null,
+    subchart: SubchartOptions = null,
+    tooltip: TooltipOptions = null,
+    transition: c3Lib.Anon_Duration = null,
+    zoom: ZoomOptions = null
+  ): ChartConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (area != null) __obj.updateDynamic("area")(area)
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (bar != null) __obj.updateDynamic("bar")(bar)
+    if (bindto != null) __obj.updateDynamic("bindto")(bindto.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (donut != null) __obj.updateDynamic("donut")(donut)
+    if (gauge != null) __obj.updateDynamic("gauge")(gauge)
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (interaction != null) __obj.updateDynamic("interaction")(interaction)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
+    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout)
+    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover)
+    if (onrendered != null) __obj.updateDynamic("onrendered")(onrendered)
+    if (onresize != null) __obj.updateDynamic("onresize")(onresize)
+    if (onresized != null) __obj.updateDynamic("onresized")(onresized)
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (pie != null) __obj.updateDynamic("pie")(pie)
+    if (point != null) __obj.updateDynamic("point")(point)
+    if (regions != null) __obj.updateDynamic("regions")(regions)
+    if (resize != null) __obj.updateDynamic("resize")(resize)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (spline != null) __obj.updateDynamic("spline")(spline)
+    if (subchart != null) __obj.updateDynamic("subchart")(subchart)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[ChartConfiguration]
+  }
+}
+

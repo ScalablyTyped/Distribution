@@ -39,3 +39,20 @@ trait AWSElasticBlockStoreVolumeSource extends js.Object {
   val volumeID: java.lang.String
 }
 
+object AWSElasticBlockStoreVolumeSource {
+  @scala.inline
+  def apply(
+    fsType: java.lang.String,
+    partition: scala.Double,
+    readOnly: scala.Boolean,
+    volumeID: java.lang.String
+  ): AWSElasticBlockStoreVolumeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fsType")(fsType)
+    __obj.updateDynamic("partition")(partition)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.updateDynamic("volumeID")(volumeID)
+    __obj.asInstanceOf[AWSElasticBlockStoreVolumeSource]
+  }
+}
+

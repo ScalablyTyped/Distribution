@@ -12,3 +12,20 @@ trait TouchAction extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TouchAction {
+  @scala.inline
+  def apply(
+    action: ActionTypes,
+    element: Element = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): TouchAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TouchAction]
+  }
+}
+

@@ -14,3 +14,13 @@ trait TooltipSettingsPosition extends js.Object {
   var target: js.UndefOr[TooltipSettingsPositionTarget] = js.undefined
 }
 
+object TooltipSettingsPosition {
+  @scala.inline
+  def apply(stem: TooltipSettingsPositionStem = null, target: TooltipSettingsPositionTarget = null): TooltipSettingsPosition = {
+    val __obj = js.Dynamic.literal()
+    if (stem != null) __obj.updateDynamic("stem")(stem)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[TooltipSettingsPosition]
+  }
+}
+

@@ -11,3 +11,18 @@ trait HttpClient extends js.Object {
   def recordResponse(traceId: zipkinLib.zipkinMod.zipkinNs.TraceId, statusCode: java.lang.String): scala.Unit
 }
 
+object HttpClient {
+  @scala.inline
+  def apply(
+    recordError: js.Function2[zipkinLib.zipkinMod.zipkinNs.TraceId, stdLib.Error, scala.Unit],
+    recordRequest: js.Function3[js.Any, java.lang.String, java.lang.String, js.Any],
+    recordResponse: js.Function2[zipkinLib.zipkinMod.zipkinNs.TraceId, java.lang.String, scala.Unit]
+  ): HttpClient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("recordError")(recordError)
+    __obj.updateDynamic("recordRequest")(recordRequest)
+    __obj.updateDynamic("recordResponse")(recordResponse)
+    __obj.asInstanceOf[HttpClient]
+  }
+}
+

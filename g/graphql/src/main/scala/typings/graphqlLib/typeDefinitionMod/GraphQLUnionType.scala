@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("graphql/type/definition", "GraphQLUnionType")
 @js.native
-class GraphQLUnionType protected () extends js.Object {
+class GraphQLUnionType protected ()
+  extends GraphQLAbstractType
+     with _GraphQLCompositeType
+     with _GraphQLNamedType
+     with _GraphQLNullableType
+     with _GraphQLOutputType
+     with _GraphQLType {
   def this(config: GraphQLUnionTypeConfig[_, _]) = this()
   var astNode: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.UnionTypeDefinitionNode] = js.native
   var description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = js.native

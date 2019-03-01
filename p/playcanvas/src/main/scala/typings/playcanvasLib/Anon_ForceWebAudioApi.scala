@@ -9,3 +9,12 @@ trait Anon_ForceWebAudioApi extends js.Object {
   var forceWebAudioApi: scala.Boolean
 }
 
+object Anon_ForceWebAudioApi {
+  @scala.inline
+  def apply(forceWebAudioApi: scala.Boolean): Anon_ForceWebAudioApi = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("forceWebAudioApi")(forceWebAudioApi)
+    __obj.asInstanceOf[Anon_ForceWebAudioApi]
+  }
+}
+

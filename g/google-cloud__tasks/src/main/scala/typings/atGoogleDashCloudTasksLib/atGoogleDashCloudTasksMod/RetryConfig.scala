@@ -13,3 +13,22 @@ trait RetryConfig extends js.Object {
   var minBackoff: java.lang.String
 }
 
+object RetryConfig {
+  @scala.inline
+  def apply(
+    maxAttempts: scala.Double,
+    maxBackoff: java.lang.String,
+    maxDoublings: scala.Double,
+    maxRetryDuration: java.lang.String,
+    minBackoff: java.lang.String
+  ): RetryConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxAttempts")(maxAttempts)
+    __obj.updateDynamic("maxBackoff")(maxBackoff)
+    __obj.updateDynamic("maxDoublings")(maxDoublings)
+    __obj.updateDynamic("maxRetryDuration")(maxRetryDuration)
+    __obj.updateDynamic("minBackoff")(minBackoff)
+    __obj.asInstanceOf[RetryConfig]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_MediaTypeWithQualityHeaderValue extends js.Object {
   /** true if input is valid HttpMediaTypeWithQualityHeaderValue information; otherwise, false. */ var returnValue: scala.Boolean
 }
 
+object Anon_MediaTypeWithQualityHeaderValue {
+  @scala.inline
+  def apply(
+    mediaTypeWithQualityHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpMediaTypeWithQualityHeaderValue,
+    returnValue: scala.Boolean
+  ): Anon_MediaTypeWithQualityHeaderValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mediaTypeWithQualityHeaderValue")(mediaTypeWithQualityHeaderValue)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_MediaTypeWithQualityHeaderValue]
+  }
+}
+

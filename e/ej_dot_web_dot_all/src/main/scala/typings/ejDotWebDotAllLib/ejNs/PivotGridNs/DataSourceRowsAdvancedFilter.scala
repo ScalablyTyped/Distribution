@@ -28,3 +28,24 @@ trait DataSourceRowsAdvancedFilter extends js.Object {
   var values: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object DataSourceRowsAdvancedFilter {
+  @scala.inline
+  def apply(
+    advancedFilterType: java.lang.String = null,
+    labelFilterOperator: java.lang.String = null,
+    measure: java.lang.String = null,
+    name: java.lang.String = null,
+    valueFilterOperator: java.lang.String = null,
+    values: js.Array[_] = null
+  ): DataSourceRowsAdvancedFilter = {
+    val __obj = js.Dynamic.literal()
+    if (advancedFilterType != null) __obj.updateDynamic("advancedFilterType")(advancedFilterType)
+    if (labelFilterOperator != null) __obj.updateDynamic("labelFilterOperator")(labelFilterOperator)
+    if (measure != null) __obj.updateDynamic("measure")(measure)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (valueFilterOperator != null) __obj.updateDynamic("valueFilterOperator")(valueFilterOperator)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[DataSourceRowsAdvancedFilter]
+  }
+}
+

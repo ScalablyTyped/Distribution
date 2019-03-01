@@ -10,3 +10,13 @@ trait NumberOptions extends js.Object {
   var thousands: java.lang.String
 }
 
+object NumberOptions {
+  @scala.inline
+  def apply(decimal: java.lang.String, thousands: java.lang.String): NumberOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decimal")(decimal)
+    __obj.updateDynamic("thousands")(thousands)
+    __obj.asInstanceOf[NumberOptions]
+  }
+}
+

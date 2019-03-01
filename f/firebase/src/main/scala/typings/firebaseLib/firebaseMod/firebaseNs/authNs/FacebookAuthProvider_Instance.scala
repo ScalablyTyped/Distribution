@@ -10,3 +10,18 @@ trait FacebookAuthProvider_Instance extends AuthProvider {
   def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): AuthProvider
 }
 
+object FacebookAuthProvider_Instance {
+  @scala.inline
+  def apply(
+    addScope: js.Function1[java.lang.String, AuthProvider],
+    providerId: java.lang.String,
+    setCustomParameters: js.Function1[coreDashJsLib.Object, AuthProvider]
+  ): FacebookAuthProvider_Instance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addScope")(addScope)
+    __obj.updateDynamic("providerId")(providerId)
+    __obj.updateDynamic("setCustomParameters")(setCustomParameters)
+    __obj.asInstanceOf[FacebookAuthProvider_Instance]
+  }
+}
+

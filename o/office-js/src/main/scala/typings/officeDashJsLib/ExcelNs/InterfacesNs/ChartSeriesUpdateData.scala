@@ -180,3 +180,58 @@ trait ChartSeriesUpdateData extends js.Object {
   var varyByCategories: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartSeriesUpdateData {
+  @scala.inline
+  def apply(
+    axisGroup: officeDashJsLib.ExcelNs.ChartAxisGroup | officeDashJsLib.officeDashJsLibStrings.Primary | officeDashJsLib.officeDashJsLibStrings.Secondary = null,
+    chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any = null,
+    dataLabels: ChartDataLabelsUpdateData = null,
+    doughnutHoleSize: scala.Int | scala.Double = null,
+    explosion: scala.Int | scala.Double = null,
+    filtered: js.UndefOr[scala.Boolean] = js.undefined,
+    firstSliceAngle: scala.Int | scala.Double = null,
+    format: ChartSeriesFormatUpdateData = null,
+    gapWidth: scala.Int | scala.Double = null,
+    hasDataLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    invertIfNegative: js.UndefOr[scala.Boolean] = js.undefined,
+    markerBackgroundColor: java.lang.String = null,
+    markerForegroundColor: java.lang.String = null,
+    markerSize: scala.Int | scala.Double = null,
+    markerStyle: officeDashJsLib.ExcelNs.ChartMarkerStyle | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Square | officeDashJsLib.officeDashJsLibStrings.Diamond | officeDashJsLib.officeDashJsLibStrings.Triangle | officeDashJsLib.officeDashJsLibStrings.X | officeDashJsLib.officeDashJsLibStrings.Star | officeDashJsLib.officeDashJsLibStrings.Dot | officeDashJsLib.officeDashJsLibStrings.Dash | officeDashJsLib.officeDashJsLibStrings.Circle | officeDashJsLib.officeDashJsLibStrings.Plus | officeDashJsLib.officeDashJsLibStrings.Picture = null,
+    name: java.lang.String = null,
+    overlap: scala.Int | scala.Double = null,
+    plotOrder: scala.Int | scala.Double = null,
+    secondPlotSize: scala.Int | scala.Double = null,
+    showShadow: js.UndefOr[scala.Boolean] = js.undefined,
+    smooth: js.UndefOr[scala.Boolean] = js.undefined,
+    splitType: officeDashJsLib.ExcelNs.ChartSplitType | officeDashJsLib.officeDashJsLibStrings.SplitByPosition | officeDashJsLib.officeDashJsLibStrings.SplitByValue | officeDashJsLib.officeDashJsLibStrings.SplitByPercentValue | officeDashJsLib.officeDashJsLibStrings.SplitByCustomSplit = null,
+    varyByCategories: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartSeriesUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (axisGroup != null) __obj.updateDynamic("axisGroup")(axisGroup.asInstanceOf[js.Any])
+    if (chartType != null) __obj.updateDynamic("chartType")(chartType)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (doughnutHoleSize != null) __obj.updateDynamic("doughnutHoleSize")(doughnutHoleSize.asInstanceOf[js.Any])
+    if (explosion != null) __obj.updateDynamic("explosion")(explosion.asInstanceOf[js.Any])
+    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered)
+    if (firstSliceAngle != null) __obj.updateDynamic("firstSliceAngle")(firstSliceAngle.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (gapWidth != null) __obj.updateDynamic("gapWidth")(gapWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDataLabels)) __obj.updateDynamic("hasDataLabels")(hasDataLabels)
+    if (!js.isUndefined(invertIfNegative)) __obj.updateDynamic("invertIfNegative")(invertIfNegative)
+    if (markerBackgroundColor != null) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor)
+    if (markerForegroundColor != null) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor)
+    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (overlap != null) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
+    if (plotOrder != null) __obj.updateDynamic("plotOrder")(plotOrder.asInstanceOf[js.Any])
+    if (secondPlotSize != null) __obj.updateDynamic("secondPlotSize")(secondPlotSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
+    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth)
+    if (splitType != null) __obj.updateDynamic("splitType")(splitType.asInstanceOf[js.Any])
+    if (!js.isUndefined(varyByCategories)) __obj.updateDynamic("varyByCategories")(varyByCategories)
+    __obj.asInstanceOf[ChartSeriesUpdateData]
+  }
+}
+

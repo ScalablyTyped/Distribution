@@ -14,3 +14,24 @@ trait IRectangle extends js.Object {
   var width: scala.Double
 }
 
+object IRectangle {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double,
+    bottom: scala.Int | scala.Double = null,
+    right: scala.Int | scala.Double = null
+  ): IRectangle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("top")(top)
+    __obj.updateDynamic("width")(width)
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IRectangle]
+  }
+}
+

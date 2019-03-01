@@ -16,3 +16,28 @@ trait Anon_BlockParams extends js.Object {
   def toString(obj: js.Any): java.lang.String
 }
 
+object Anon_BlockParams {
+  @scala.inline
+  def apply(
+    blockParams: js.Function2[js.Array[_], js.Array[_], js.Array[_]],
+    createFrame: js.Function1[js.Any, js.Any],
+    escapeExpression: js.Function1[java.lang.String, java.lang.String],
+    extend: js.Function2[js.Any, /* repeated */ js.Any, js.Any],
+    isArray: js.Function1[js.Any, scala.Boolean],
+    isEmpty: js.Function1[js.Any, scala.Boolean],
+    isFunction: js.Function1[js.Any, scala.Boolean],
+    toString: js.Function1[js.Any, java.lang.String]
+  ): Anon_BlockParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blockParams")(blockParams)
+    __obj.updateDynamic("createFrame")(createFrame)
+    __obj.updateDynamic("escapeExpression")(escapeExpression)
+    __obj.updateDynamic("extend")(extend)
+    __obj.updateDynamic("isArray")(isArray)
+    __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.updateDynamic("isFunction")(isFunction)
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[Anon_BlockParams]
+  }
+}
+

@@ -7,31 +7,38 @@ import scala.scalajs.js.annotation._
 
 object atPollyjsCoreLibStrings {
   @js.native
-  sealed trait beforePersist extends js.Object
+  sealed trait beforePersist
+    extends atPollyjsCoreLib.atPollyjsCoreMod.RecordingRouteEvent
   
   @js.native
-  sealed trait beforeReplay extends js.Object
+  sealed trait beforeReplay
+    extends atPollyjsCoreLib.atPollyjsCoreMod.RecordingRouteEvent
   
   @js.native
-  sealed trait beforeResponse extends js.Object
+  sealed trait beforeResponse
+    extends atPollyjsCoreLib.atPollyjsCoreMod.ResponseRouteEvent
   
   @js.native
-  sealed trait create extends js.Object
+  sealed trait create
+    extends atPollyjsCoreLib.atPollyjsCoreMod.PollyEvent
   
   @js.native
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait register extends js.Object
+  sealed trait register
+    extends atPollyjsCoreLib.atPollyjsCoreMod.PollyEvent
   
   @js.native
   sealed trait request extends js.Object
   
   @js.native
-  sealed trait response extends js.Object
+  sealed trait response
+    extends atPollyjsCoreLib.atPollyjsCoreMod.ResponseRouteEvent
   
   @js.native
-  sealed trait stop extends js.Object
+  sealed trait stop
+    extends atPollyjsCoreLib.atPollyjsCoreMod.PollyEvent
   
   @scala.inline
   def beforePersist: beforePersist = "beforePersist".asInstanceOf[beforePersist]

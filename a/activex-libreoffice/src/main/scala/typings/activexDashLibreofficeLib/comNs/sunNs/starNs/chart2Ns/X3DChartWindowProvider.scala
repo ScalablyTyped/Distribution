@@ -9,3 +9,12 @@ trait X3DChartWindowProvider extends js.Object {
   def setWindow(window: scala.Double): scala.Unit
 }
 
+object X3DChartWindowProvider {
+  @scala.inline
+  def apply(setWindow: js.Function1[scala.Double, scala.Unit]): X3DChartWindowProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setWindow")(setWindow)
+    __obj.asInstanceOf[X3DChartWindowProvider]
+  }
+}
+

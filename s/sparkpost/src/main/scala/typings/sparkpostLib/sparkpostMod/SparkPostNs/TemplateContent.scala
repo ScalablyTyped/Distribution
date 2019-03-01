@@ -24,3 +24,24 @@ trait TemplateContent extends js.Object {
   var text: java.lang.String
 }
 
+object TemplateContent {
+  @scala.inline
+  def apply(
+    from: Address | java.lang.String,
+    html: java.lang.String,
+    subject: java.lang.String,
+    text: java.lang.String,
+    headers: js.Any = null,
+    reply_to: java.lang.String = null
+  ): TemplateContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    __obj.updateDynamic("html")(html)
+    __obj.updateDynamic("subject")(subject)
+    __obj.updateDynamic("text")(text)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to)
+    __obj.asInstanceOf[TemplateContent]
+  }
+}
+

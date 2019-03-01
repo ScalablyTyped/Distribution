@@ -37,3 +37,32 @@ trait XFormLayerAccess extends XControlAccess {
   def setFormDesignMode(DesignMode: scala.Boolean): scala.Unit
 }
 
+object XFormLayerAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getControl: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl
+    ],
+    getFormController: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.XForm, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.runtimeNs.XFormController
+    ],
+    isFormDesignMode: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setFormDesignMode: js.Function1[scala.Boolean, scala.Unit]
+  ): XFormLayerAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getControl")(getControl)
+    __obj.updateDynamic("getFormController")(getFormController)
+    __obj.updateDynamic("isFormDesignMode")(isFormDesignMode)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setFormDesignMode")(setFormDesignMode)
+    __obj.asInstanceOf[XFormLayerAccess]
+  }
+}
+

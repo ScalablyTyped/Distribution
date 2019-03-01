@@ -13,3 +13,12 @@ trait JQuery extends js.Object {
   def affix(selector: java.lang.String): JQuery
 }
 
+object JQuery {
+  @scala.inline
+  def apply(affix: js.Function1[java.lang.String, JQuery]): JQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("affix")(affix)
+    __obj.asInstanceOf[JQuery]
+  }
+}
+

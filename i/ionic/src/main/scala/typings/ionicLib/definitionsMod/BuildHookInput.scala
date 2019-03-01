@@ -5,8 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BuildHookInput extends js.Object {
+trait BuildHookInput extends HookInput {
   val build: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions
   val name: ionicLib.ionicLibStrings.`build:before` | ionicLib.ionicLibStrings.`build:after`
+}
+
+object BuildHookInput {
+  @scala.inline
+  def apply(
+    build: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions,
+    name: ionicLib.ionicLibStrings.`build:before` | ionicLib.ionicLibStrings.`build:after`
+  ): BuildHookInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BuildHookInput]
+  }
 }
 

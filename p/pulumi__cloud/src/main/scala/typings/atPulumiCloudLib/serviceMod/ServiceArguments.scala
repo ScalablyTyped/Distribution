@@ -27,3 +27,42 @@ trait ServiceArguments extends Container {
   var waitForSteadyState: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ServiceArguments {
+  @scala.inline
+  def apply(
+    build: java.lang.String | ContainerBuild = null,
+    command: atPulumiPulumiLib.outputMod.Input[js.Array[java.lang.String]] = null,
+    containers: Containers = null,
+    cpu: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    dockerLabels: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = null,
+    environment: org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = null,
+    function: js.Function0[scala.Unit] = null,
+    host: HostProperties = null,
+    image: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    memory: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    memoryReservation: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    ports: js.Array[ContainerPort] = null,
+    replicas: scala.Int | scala.Double = null,
+    volumes: js.Array[ContainerVolumeMount] = null,
+    waitForSteadyState: js.UndefOr[scala.Boolean] = js.undefined
+  ): ServiceArguments = {
+    val __obj = js.Dynamic.literal()
+    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (containers != null) __obj.updateDynamic("containers")(containers)
+    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
+    if (dockerLabels != null) __obj.updateDynamic("dockerLabels")(dockerLabels.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (function != null) __obj.updateDynamic("function")(function)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (memoryReservation != null) __obj.updateDynamic("memoryReservation")(memoryReservation.asInstanceOf[js.Any])
+    if (ports != null) __obj.updateDynamic("ports")(ports)
+    if (replicas != null) __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
+    if (volumes != null) __obj.updateDynamic("volumes")(volumes)
+    if (!js.isUndefined(waitForSteadyState)) __obj.updateDynamic("waitForSteadyState")(waitForSteadyState)
+    __obj.asInstanceOf[ServiceArguments]
+  }
+}
+

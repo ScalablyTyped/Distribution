@@ -20,3 +20,13 @@ trait Anon_IPProtocol extends js.Object {
   var ports: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_IPProtocol {
+  @scala.inline
+  def apply(IPProtocol: java.lang.String = null, ports: js.Array[java.lang.String] = null): Anon_IPProtocol = {
+    val __obj = js.Dynamic.literal()
+    if (IPProtocol != null) __obj.updateDynamic("IPProtocol")(IPProtocol)
+    if (ports != null) __obj.updateDynamic("ports")(ports)
+    __obj.asInstanceOf[Anon_IPProtocol]
+  }
+}
+

@@ -24,3 +24,20 @@ trait ColumnDefinition extends js.Object {
   var unit: js.UndefOr[Unit | java.lang.String] = js.undefined
 }
 
+object ColumnDefinition {
+  @scala.inline
+  def apply(
+    columnWidth: scala.Int | scala.Double = null,
+    lineColor: java.lang.String = null,
+    lineWidth: scala.Int | scala.Double = null,
+    unit: Unit | java.lang.String = null
+  ): ColumnDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnDefinition]
+  }
+}
+

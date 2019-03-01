@@ -10,3 +10,13 @@ trait StartMonitoringOptions extends js.Object {
   var traceOptions: java.lang.String
 }
 
+object StartMonitoringOptions {
+  @scala.inline
+  def apply(categoryFilter: java.lang.String, traceOptions: java.lang.String): StartMonitoringOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("categoryFilter")(categoryFilter)
+    __obj.updateDynamic("traceOptions")(traceOptions)
+    __obj.asInstanceOf[StartMonitoringOptions]
+  }
+}
+

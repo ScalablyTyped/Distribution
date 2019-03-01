@@ -13,3 +13,22 @@ trait SkyBox extends js.Object {
   def update(): scala.Unit
 }
 
+object SkyBox {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    isDestroyed: js.Function0[scala.Boolean],
+    show: scala.Boolean,
+    sources: js.Any,
+    update: js.Function0[scala.Unit]
+  ): SkyBox = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("isDestroyed")(isDestroyed)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("sources")(sources)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[SkyBox]
+  }
+}
+

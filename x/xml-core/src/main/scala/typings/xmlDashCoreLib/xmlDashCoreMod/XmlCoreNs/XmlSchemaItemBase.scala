@@ -29,3 +29,18 @@ trait XmlSchemaItemBase extends js.Object {
   var prefix: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object XmlSchemaItemBase {
+  @scala.inline
+  def apply(
+    localName: java.lang.String = null,
+    namespaceURI: java.lang.String = null,
+    prefix: java.lang.String = null
+  ): XmlSchemaItemBase = {
+    val __obj = js.Dynamic.literal()
+    if (localName != null) __obj.updateDynamic("localName")(localName)
+    if (namespaceURI != null) __obj.updateDynamic("namespaceURI")(namespaceURI)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[XmlSchemaItemBase]
+  }
+}
+

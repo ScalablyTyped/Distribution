@@ -13,3 +13,22 @@ trait IInkDrawingAttributes extends js.Object {
   var size: winrtLib.WindowsNs.FoundationNs.Size
 }
 
+object IInkDrawingAttributes {
+  @scala.inline
+  def apply(
+    color: winrtLib.WindowsNs.UINs.Color,
+    fitToCurve: scala.Boolean,
+    ignorePressure: scala.Boolean,
+    penTip: PenTipShape,
+    size: winrtLib.WindowsNs.FoundationNs.Size
+  ): IInkDrawingAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("fitToCurve")(fitToCurve)
+    __obj.updateDynamic("ignorePressure")(ignorePressure)
+    __obj.updateDynamic("penTip")(penTip)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[IInkDrawingAttributes]
+  }
+}
+

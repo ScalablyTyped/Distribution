@@ -16,3 +16,16 @@ trait PolicyAttachmentState extends js.Object {
   val targetId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object PolicyAttachmentState {
+  @scala.inline
+  def apply(
+    policyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): PolicyAttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (policyId != null) __obj.updateDynamic("policyId")(policyId.asInstanceOf[js.Any])
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolicyAttachmentState]
+  }
+}
+

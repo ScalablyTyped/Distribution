@@ -125,3 +125,72 @@ trait VictoryBoxPlotProps
   var whiskerWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VictoryBoxPlotProps {
+  @scala.inline
+  def apply(
+    animate: AnimatePropTypeInterface = null,
+    boxWidth: scala.Int | scala.Double = null,
+    categories: CategoryPropType = null,
+    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    data: js.Array[_] = null,
+    dataComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    domain: DomainPropType = null,
+    domainPadding: DomainPaddingPropType = null,
+    eventKey: StringOrNumberOrCallback = null,
+    events: js.Array[EventPropTypeInterface[java.lang.String, StringOrNumberOrCallback]] = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    height: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    labelOrientation: victoryLib.victoryLibStrings.top | victoryLib.victoryLibStrings.bottom | victoryLib.victoryLibStrings.left | victoryLib.victoryLibStrings.right = null,
+    labels: js.UndefOr[scala.Boolean] = js.undefined,
+    max: StringOrNumberOrCallback = null,
+    median: StringOrNumberOrCallback = null,
+    min: StringOrNumberOrCallback = null,
+    name: java.lang.String = null,
+    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    q1: StringOrNumberOrCallback = null,
+    q3: StringOrNumberOrCallback = null,
+    scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    style: VictoryBoxPlotStyleInterface = null,
+    theme: VictoryThemeDefinition = null,
+    whiskerWidth: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    x: DataGetterPropType = null,
+    y: DataGetterPropType = null
+  ): VictoryBoxPlotProps = {
+    val __obj = js.Dynamic.literal()
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (boxWidth != null) __obj.updateDynamic("boxWidth")(boxWidth.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (domainPadding != null) __obj.updateDynamic("domainPadding")(domainPadding.asInstanceOf[js.Any])
+    if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (labelOrientation != null) __obj.updateDynamic("labelOrientation")(labelOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (median != null) __obj.updateDynamic("median")(median.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (q1 != null) __obj.updateDynamic("q1")(q1.asInstanceOf[js.Any])
+    if (q3 != null) __obj.updateDynamic("q3")(q3.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (whiskerWidth != null) __obj.updateDynamic("whiskerWidth")(whiskerWidth.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryBoxPlotProps]
+  }
+}
+

@@ -19,3 +19,18 @@ trait ICheckboxProps extends IControlProps {
   var indeterminate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ICheckboxProps {
+  @scala.inline
+  def apply(
+    IControlProps: IControlProps = null,
+    defaultIndeterminate: js.UndefOr[scala.Boolean] = js.undefined,
+    indeterminate: js.UndefOr[scala.Boolean] = js.undefined
+  ): ICheckboxProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IControlProps)
+    if (!js.isUndefined(defaultIndeterminate)) __obj.updateDynamic("defaultIndeterminate")(defaultIndeterminate)
+    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate)
+    __obj.asInstanceOf[ICheckboxProps]
+  }
+}
+

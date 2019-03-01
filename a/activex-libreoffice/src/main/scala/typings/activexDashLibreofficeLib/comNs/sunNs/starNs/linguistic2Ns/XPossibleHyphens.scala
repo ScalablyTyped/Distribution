@@ -39,3 +39,34 @@ trait XPossibleHyphens
   def getWord(): java.lang.String
 }
 
+object XPossibleHyphens {
+  @scala.inline
+  def apply(
+    HyphenationPositions: activexDashInteropLib.SafeArray[scala.Double],
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    PossibleHyphens: java.lang.String,
+    Word: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getHyphenationPositions: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getPossibleHyphens: js.Function0[java.lang.String],
+    getWord: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPossibleHyphens = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("HyphenationPositions")(HyphenationPositions)
+    __obj.updateDynamic("Locale")(Locale)
+    __obj.updateDynamic("PossibleHyphens")(PossibleHyphens)
+    __obj.updateDynamic("Word")(Word)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getHyphenationPositions")(getHyphenationPositions)
+    __obj.updateDynamic("getLocale")(getLocale)
+    __obj.updateDynamic("getPossibleHyphens")(getPossibleHyphens)
+    __obj.updateDynamic("getWord")(getWord)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XPossibleHyphens]
+  }
+}
+

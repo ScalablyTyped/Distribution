@@ -14,3 +14,23 @@ trait Marker extends js.Object {
   var `type`: java.lang.String
 }
 
+object Marker {
+  @scala.inline
+  def apply(
+    className: java.lang.String,
+    endCol: scala.Double,
+    endRow: scala.Double,
+    startCol: scala.Double,
+    startRow: scala.Double,
+    `type`: java.lang.String
+  ): Marker = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("endCol")(endCol)
+    __obj.updateDynamic("endRow")(endRow)
+    __obj.updateDynamic("startCol")(startCol)
+    __obj.updateDynamic("startRow")(startRow)
+    __obj.asInstanceOf[Marker]
+  }
+}
+

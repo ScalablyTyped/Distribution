@@ -31,3 +31,22 @@ trait IntentAndroidStatic extends js.Object {
   def openURL(url: java.lang.String): scala.Unit
 }
 
+object IntentAndroidStatic {
+  @scala.inline
+  def apply(
+    canOpenURL: js.Function2[
+      java.lang.String, 
+      js.Function1[/* supported */ scala.Boolean, scala.Unit], 
+      scala.Unit
+    ],
+    getInitialURL: js.Function1[js.Function1[/* url */ java.lang.String | scala.Null, scala.Unit], scala.Unit],
+    openURL: js.Function1[java.lang.String, scala.Unit]
+  ): IntentAndroidStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canOpenURL")(canOpenURL)
+    __obj.updateDynamic("getInitialURL")(getInitialURL)
+    __obj.updateDynamic("openURL")(openURL)
+    __obj.asInstanceOf[IntentAndroidStatic]
+  }
+}
+

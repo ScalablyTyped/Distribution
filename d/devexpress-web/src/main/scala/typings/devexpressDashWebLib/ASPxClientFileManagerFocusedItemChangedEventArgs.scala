@@ -26,3 +26,14 @@ trait ASPxClientFileManagerFocusedItemChangedEventArgs extends ASPxClientEventAr
   var name: java.lang.String
 }
 
+object ASPxClientFileManagerFocusedItemChangedEventArgs {
+  @scala.inline
+  def apply(fullName: java.lang.String, item: ASPxClientFileManagerItem, name: java.lang.String): ASPxClientFileManagerFocusedItemChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fullName")(fullName)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientFileManagerFocusedItemChangedEventArgs]
+  }
+}
+

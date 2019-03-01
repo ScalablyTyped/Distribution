@@ -13,46 +13,61 @@ object momentLibStrings {
   sealed trait `(]` extends js.Object
   
   @js.native
-  sealed trait D extends js.Object
+  sealed trait D
+    extends momentLib.momentMod.momentNs.unitOfTimeNs._date
   
   @js.native
-  sealed trait DDD extends js.Object
+  sealed trait DDD
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait E extends js.Object
+  sealed trait E
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait GG extends js.Object
+  sealed trait GG
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait L
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait LL extends js.Object
+  sealed trait LL
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait LLL extends js.Object
+  sealed trait LLL
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait LLLL extends js.Object
+  sealed trait LLLL
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait LT extends js.Object
+  sealed trait LT
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait LTS extends js.Object
+  sealed trait LTS
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait M
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
+       with momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait MM extends js.Object
+  sealed trait MM
+    extends momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait Q extends js.Object
+  sealed trait Q
+    extends momentLib.momentMod.momentNs.unitOfTimeNs._quarter
   
   @js.native
-  sealed trait W extends js.Object
+  sealed trait W
+    extends momentLib.momentMod.momentNs.unitOfTimeNs._isoWeek
   
   @js.native
   sealed trait `[)` extends js.Object
@@ -61,178 +76,241 @@ object momentLibStrings {
   sealed trait `[]` extends js.Object
   
   @js.native
-  sealed trait d extends js.Object
+  sealed trait d
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
+       with momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends momentLib.momentMod.momentNs.unitOfTimeNs._date
   
   @js.native
-  sealed trait dates extends js.Object
+  sealed trait dates
+    extends momentLib.momentMod.momentNs.unitOfTimeNs._date
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait dayOfYear extends js.Object
+  sealed trait dayOfYear
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait dayOfYears extends js.Object
+  sealed trait dayOfYears
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait days extends js.Object
+  sealed trait days
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait dd extends js.Object
+  sealed trait dd
+    extends momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait e extends js.Object
+  sealed trait e
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait gg extends js.Object
+  sealed trait gg
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait h extends js.Object
+  sealed trait h
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
+       with momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait hh extends js.Object
+  sealed trait hh
+    extends momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait hour
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait hours extends js.Object
+  sealed trait hours
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait isoWeek extends js.Object
+  sealed trait isoWeek
+    extends momentLib.momentMod.momentNs.unitOfTimeNs._isoWeek
   
   @js.native
-  sealed trait isoWeekYear extends js.Object
+  sealed trait isoWeekYear
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait isoWeekYears extends js.Object
+  sealed trait isoWeekYears
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait isoWeekday extends js.Object
+  sealed trait isoWeekday
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait isoWeekdays extends js.Object
+  sealed trait isoWeekdays
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait isoWeeks extends js.Object
+  sealed trait isoWeeks
+    extends momentLib.momentMod.momentNs.unitOfTimeNs._isoWeek
   
   @js.native
-  sealed trait l extends js.Object
+  sealed trait l
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait lastDay extends js.Object
+  sealed trait lastDay
+    extends momentLib.momentMod.momentNs._CalendarKey
   
   @js.native
-  sealed trait lastWeek extends js.Object
+  sealed trait lastWeek
+    extends momentLib.momentMod.momentNs._CalendarKey
   
   @js.native
-  sealed trait ll extends js.Object
+  sealed trait ll
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait lll extends js.Object
+  sealed trait lll
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait llll extends js.Object
+  sealed trait llll
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait lt extends js.Object
+  sealed trait lt
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait lts extends js.Object
+  sealed trait lts
+    extends momentLib.momentMod.momentNs.LongDateFormatKey
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait m
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
+       with momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait millisecond extends js.Object
+  sealed trait millisecond
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait milliseconds extends js.Object
+  sealed trait milliseconds
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait minute
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait minutes extends js.Object
+  sealed trait minutes
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait mm extends js.Object
+  sealed trait mm
+    extends momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait months extends js.Object
+  sealed trait months
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait ms extends js.Object
+  sealed trait ms
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait nextDay extends js.Object
+  sealed trait nextDay
+    extends momentLib.momentMod.momentNs._CalendarKey
   
   @js.native
-  sealed trait nextWeek extends js.Object
+  sealed trait nextWeek
+    extends momentLib.momentMod.momentNs._CalendarKey
   
   @js.native
-  sealed trait quarter extends js.Object
+  sealed trait quarter
+    extends momentLib.momentMod.momentNs.unitOfTimeNs._quarter
   
   @js.native
-  sealed trait quarters extends js.Object
+  sealed trait quarters
+    extends momentLib.momentMod.momentNs.unitOfTimeNs._quarter
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
+       with momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait sameDay extends js.Object
+  sealed trait sameDay
+    extends momentLib.momentMod.momentNs._CalendarKey
   
   @js.native
-  sealed trait sameElse extends js.Object
+  sealed trait sameElse
+    extends momentLib.momentMod.momentNs._CalendarKey
   
   @js.native
-  sealed trait second extends js.Object
+  sealed trait second
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait seconds extends js.Object
+  sealed trait seconds
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait ss extends js.Object
+  sealed trait ss
+    extends momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait w extends js.Object
+  sealed trait w
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait weekYear extends js.Object
+  sealed trait weekYear
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait weekYears extends js.Object
+  sealed trait weekYears
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait weekday extends js.Object
+  sealed trait weekday
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait weekdays extends js.Object
+  sealed trait weekdays
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait weeks extends js.Object
+  sealed trait weeks
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
+       with momentLib.momentMod.momentNs.RelativeTimeKey
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait years extends js.Object
+  sealed trait years
+    extends momentLib.momentMod.momentNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait yy extends js.Object
+  sealed trait yy
+    extends momentLib.momentMod.momentNs.RelativeTimeKey
   
   @scala.inline
   def `()`: `()` = "()".asInstanceOf[`()`]

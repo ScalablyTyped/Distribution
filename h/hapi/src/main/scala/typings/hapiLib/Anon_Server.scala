@@ -18,3 +18,13 @@ trait Anon_Server extends js.Object {
   var socket: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
 }
 
+object Anon_Server {
+  @scala.inline
+  def apply(server: scala.Boolean | scala.Double = null, socket: scala.Boolean | scala.Double = null): Anon_Server = {
+    val __obj = js.Dynamic.literal()
+    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Server]
+  }
+}
+

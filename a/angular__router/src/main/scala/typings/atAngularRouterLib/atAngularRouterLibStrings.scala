@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation._
 
 object atAngularRouterLibStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends atAngularRouterLib.srcConfigMod.QueryParamsHandling
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends atAngularRouterLib.srcRouterUnderscoreStateMod.ParamsInheritanceStrategy
+       with atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
   
   @js.native
   sealed trait corrected extends js.Object
@@ -19,55 +22,69 @@ object atAngularRouterLibStrings {
   sealed trait deferred extends js.Object
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait disabled
+    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
   
   @js.native
   sealed trait eager extends js.Object
   
   @js.native
-  sealed trait emptyOnly extends js.Object
+  sealed trait emptyOnly
+    extends atAngularRouterLib.srcRouterUnderscoreStateMod.ParamsInheritanceStrategy
   
   @js.native
-  sealed trait enabled extends js.Object
+  sealed trait enabled
+    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
   
   @js.native
-  sealed trait hashchange extends js.Object
+  sealed trait hashchange
+    extends atAngularRouterLib.srcEventsMod.NavigationTrigger
   
   @js.native
   sealed trait ignore extends js.Object
   
   @js.native
-  sealed trait imperative extends js.Object
+  sealed trait imperative
+    extends atAngularRouterLib.srcEventsMod.NavigationTrigger
   
   @js.native
   sealed trait legacy extends js.Object
   
   @js.native
-  sealed trait legacy_disabled extends js.Object
+  sealed trait legacy_disabled
+    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
   
   @js.native
-  sealed trait legacy_enabled extends js.Object
+  sealed trait legacy_enabled
+    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
   
   @js.native
-  sealed trait merge extends js.Object
+  sealed trait merge
+    extends atAngularRouterLib.srcConfigMod.QueryParamsHandling
   
   @js.native
-  sealed trait paramsChange extends js.Object
+  sealed trait paramsChange
+    extends atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
   
   @js.native
-  sealed trait paramsOrQueryParamsChange extends js.Object
+  sealed trait paramsOrQueryParamsChange
+    extends atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
   
   @js.native
-  sealed trait pathParamsChange extends js.Object
+  sealed trait pathParamsChange
+    extends atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
   
   @js.native
-  sealed trait pathParamsOrQueryParamsChange extends js.Object
+  sealed trait pathParamsOrQueryParamsChange
+    extends atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
   
   @js.native
-  sealed trait popstate extends js.Object
+  sealed trait popstate
+    extends atAngularRouterLib.srcEventsMod.NavigationTrigger
   
   @js.native
-  sealed trait preserve extends js.Object
+  sealed trait preserve
+    extends atAngularRouterLib.srcConfigMod.QueryParamsHandling
   
   @js.native
   sealed trait reload extends js.Object

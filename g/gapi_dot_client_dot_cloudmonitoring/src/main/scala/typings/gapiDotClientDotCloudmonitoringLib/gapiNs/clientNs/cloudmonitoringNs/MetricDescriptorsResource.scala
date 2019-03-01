@@ -18,3 +18,27 @@ trait MetricDescriptorsResource extends js.Object {
   def list(request: gapiDotClientDotCloudmonitoringLib.Anon_AltCount): gapiDotClientLib.gapiNs.clientNs.Request[ListMetricDescriptorsResponse]
 }
 
+object MetricDescriptorsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotCloudmonitoringLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudmonitoringLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeleteMetricDescriptorResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudmonitoringLib.Anon_AltCount, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListMetricDescriptorsResponse]
+    ]
+  ): MetricDescriptorsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[MetricDescriptorsResource]
+  }
+}
+

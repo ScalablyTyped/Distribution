@@ -13,3 +13,22 @@ trait ComponentPlaygroundProps extends js.Object {
   var transformCode: js.UndefOr[js.Function1[/* code */ java.lang.String, java.lang.String]] = js.undefined
 }
 
+object ComponentPlaygroundProps {
+  @scala.inline
+  def apply(
+    code: java.lang.String = null,
+    previewBackgroundColor: java.lang.String = null,
+    scope: js.Object = null,
+    theme: themeType = null,
+    transformCode: js.Function1[/* code */ java.lang.String, java.lang.String] = null
+  ): ComponentPlaygroundProps = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (previewBackgroundColor != null) __obj.updateDynamic("previewBackgroundColor")(previewBackgroundColor)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (transformCode != null) __obj.updateDynamic("transformCode")(transformCode)
+    __obj.asInstanceOf[ComponentPlaygroundProps]
+  }
+}
+

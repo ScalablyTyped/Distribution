@@ -20,3 +20,36 @@ trait Anon_AnimationDelayAnimationDuration extends js.Object {
   var transitionTiming: java.lang.String
 }
 
+object Anon_AnimationDelayAnimationDuration {
+  @scala.inline
+  def apply(
+    animationDelay: java.lang.String,
+    animationDuration: java.lang.String,
+    animationEnd: java.lang.String,
+    animationName: java.lang.String,
+    animationTiming: java.lang.String,
+    default: Anon_Delay,
+    transform: java.lang.String,
+    transitionDelay: java.lang.String,
+    transitionDuration: java.lang.String,
+    transitionEnd: java.lang.String,
+    transitionProperty: java.lang.String,
+    transitionTiming: java.lang.String
+  ): Anon_AnimationDelayAnimationDuration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animationDelay")(animationDelay)
+    __obj.updateDynamic("animationDuration")(animationDuration)
+    __obj.updateDynamic("animationEnd")(animationEnd)
+    __obj.updateDynamic("animationName")(animationName)
+    __obj.updateDynamic("animationTiming")(animationTiming)
+    __obj.updateDynamic("default")(default)
+    __obj.updateDynamic("transform")(transform)
+    __obj.updateDynamic("transitionDelay")(transitionDelay)
+    __obj.updateDynamic("transitionDuration")(transitionDuration)
+    __obj.updateDynamic("transitionEnd")(transitionEnd)
+    __obj.updateDynamic("transitionProperty")(transitionProperty)
+    __obj.updateDynamic("transitionTiming")(transitionTiming)
+    __obj.asInstanceOf[Anon_AnimationDelayAnimationDuration]
+  }
+}
+

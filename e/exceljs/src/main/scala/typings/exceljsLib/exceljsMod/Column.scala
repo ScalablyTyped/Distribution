@@ -32,3 +32,24 @@ trait Column extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Column {
+  @scala.inline
+  def apply(
+    header: java.lang.String | js.Array[java.lang.String] = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    outlineLevel: scala.Int | scala.Double = null,
+    style: Style = null,
+    width: scala.Int | scala.Double = null
+  ): Column = {
+    val __obj = js.Dynamic.literal()
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (outlineLevel != null) __obj.updateDynamic("outlineLevel")(outlineLevel.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Column]
+  }
+}
+

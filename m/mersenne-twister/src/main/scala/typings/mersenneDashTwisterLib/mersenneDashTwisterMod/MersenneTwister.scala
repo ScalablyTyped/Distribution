@@ -36,3 +36,26 @@ trait MersenneTwister extends js.Object {
   def random_long(): scala.Double
 }
 
+object MersenneTwister {
+  @scala.inline
+  def apply(
+    init_seed: js.Function1[scala.Double, scala.Unit],
+    random: js.Function0[scala.Double],
+    random_excl: js.Function0[scala.Double],
+    random_incl: js.Function0[scala.Double],
+    random_int: js.Function0[scala.Double],
+    random_int31: js.Function0[scala.Double],
+    random_long: js.Function0[scala.Double]
+  ): MersenneTwister = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("init_seed")(init_seed)
+    __obj.updateDynamic("random")(random)
+    __obj.updateDynamic("random_excl")(random_excl)
+    __obj.updateDynamic("random_incl")(random_incl)
+    __obj.updateDynamic("random_int")(random_int)
+    __obj.updateDynamic("random_int31")(random_int31)
+    __obj.updateDynamic("random_long")(random_long)
+    __obj.asInstanceOf[MersenneTwister]
+  }
+}
+

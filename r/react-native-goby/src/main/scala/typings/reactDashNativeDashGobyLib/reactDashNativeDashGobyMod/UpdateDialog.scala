@@ -43,3 +43,28 @@ trait UpdateDialog extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UpdateDialog {
+  @scala.inline
+  def apply(
+    appendReleaseDescription: js.UndefOr[scala.Boolean] = js.undefined,
+    descriptionPrefix: java.lang.String = null,
+    mandatoryContinueButtonLabel: java.lang.String = null,
+    mandatoryUpdateMessage: java.lang.String = null,
+    optionalIgnoreButtonLabel: java.lang.String = null,
+    optionalInstallButtonLabel: java.lang.String = null,
+    optionalUpdateMessage: java.lang.String = null,
+    title: java.lang.String = null
+  ): UpdateDialog = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(appendReleaseDescription)) __obj.updateDynamic("appendReleaseDescription")(appendReleaseDescription)
+    if (descriptionPrefix != null) __obj.updateDynamic("descriptionPrefix")(descriptionPrefix)
+    if (mandatoryContinueButtonLabel != null) __obj.updateDynamic("mandatoryContinueButtonLabel")(mandatoryContinueButtonLabel)
+    if (mandatoryUpdateMessage != null) __obj.updateDynamic("mandatoryUpdateMessage")(mandatoryUpdateMessage)
+    if (optionalIgnoreButtonLabel != null) __obj.updateDynamic("optionalIgnoreButtonLabel")(optionalIgnoreButtonLabel)
+    if (optionalInstallButtonLabel != null) __obj.updateDynamic("optionalInstallButtonLabel")(optionalInstallButtonLabel)
+    if (optionalUpdateMessage != null) __obj.updateDynamic("optionalUpdateMessage")(optionalUpdateMessage)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[UpdateDialog]
+  }
+}
+

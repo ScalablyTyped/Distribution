@@ -20,3 +20,20 @@ trait XRename
   def rename(newName: java.lang.String): scala.Unit
 }
 
+object XRename {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    rename: js.Function1[java.lang.String, scala.Unit]
+  ): XRename = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("rename")(rename)
+    __obj.asInstanceOf[XRename]
+  }
+}
+

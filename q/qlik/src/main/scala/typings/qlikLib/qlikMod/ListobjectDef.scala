@@ -16,3 +16,28 @@ trait ListobjectDef extends js.Object {
   var qStateName: java.lang.String
 }
 
+object ListobjectDef {
+  @scala.inline
+  def apply(
+    qAutoSortByState: NxAutoSortByStateDef,
+    qDef: NxInlineDimensionDef,
+    qExpressions: js.Array[NxListobjectExpressionDef],
+    qFrequencyMode: qlikLib.qlikLibStrings.NX_FREQUENCY_NONE | qlikLib.qlikLibStrings.NX_FREQUENCY_VALUE | qlikLib.qlikLibStrings.NX_FREQUENCY_PERCENT | qlikLib.qlikLibStrings.NX_FREQUENCY_RELATIVE,
+    qInitialDataFetch: js.Array[NxPage],
+    qLibraryId: java.lang.String,
+    qShowAlternatives: scala.Boolean,
+    qStateName: java.lang.String
+  ): ListobjectDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qAutoSortByState")(qAutoSortByState)
+    __obj.updateDynamic("qDef")(qDef)
+    __obj.updateDynamic("qExpressions")(qExpressions)
+    __obj.updateDynamic("qFrequencyMode")(qFrequencyMode.asInstanceOf[js.Any])
+    __obj.updateDynamic("qInitialDataFetch")(qInitialDataFetch)
+    __obj.updateDynamic("qLibraryId")(qLibraryId)
+    __obj.updateDynamic("qShowAlternatives")(qShowAlternatives)
+    __obj.updateDynamic("qStateName")(qStateName)
+    __obj.asInstanceOf[ListobjectDef]
+  }
+}
+

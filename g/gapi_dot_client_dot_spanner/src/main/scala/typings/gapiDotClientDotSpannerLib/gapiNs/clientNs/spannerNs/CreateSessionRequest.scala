@@ -10,3 +10,12 @@ trait CreateSessionRequest extends js.Object {
   var session: js.UndefOr[Session] = js.undefined
 }
 
+object CreateSessionRequest {
+  @scala.inline
+  def apply(session: Session = null): CreateSessionRequest = {
+    val __obj = js.Dynamic.literal()
+    if (session != null) __obj.updateDynamic("session")(session)
+    __obj.asInstanceOf[CreateSessionRequest]
+  }
+}
+

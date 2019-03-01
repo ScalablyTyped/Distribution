@@ -15,3 +15,12 @@ trait IParams extends js.Object {
   var `type`: scala.Double
 }
 
+object IParams {
+  @scala.inline
+  def apply(`type`: scala.Double): IParams = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[IParams]
+  }
+}
+

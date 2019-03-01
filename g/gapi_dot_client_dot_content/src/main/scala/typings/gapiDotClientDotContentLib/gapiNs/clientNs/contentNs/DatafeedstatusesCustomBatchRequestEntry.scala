@@ -25,3 +25,24 @@ trait DatafeedstatusesCustomBatchRequestEntry extends js.Object {
   var method: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DatafeedstatusesCustomBatchRequestEntry {
+  @scala.inline
+  def apply(
+    batchId: scala.Int | scala.Double = null,
+    country: java.lang.String = null,
+    datafeedId: java.lang.String = null,
+    language: java.lang.String = null,
+    merchantId: java.lang.String = null,
+    method: java.lang.String = null
+  ): DatafeedstatusesCustomBatchRequestEntry = {
+    val __obj = js.Dynamic.literal()
+    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (datafeedId != null) __obj.updateDynamic("datafeedId")(datafeedId)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
+    if (method != null) __obj.updateDynamic("method")(method)
+    __obj.asInstanceOf[DatafeedstatusesCustomBatchRequestEntry]
+  }
+}
+

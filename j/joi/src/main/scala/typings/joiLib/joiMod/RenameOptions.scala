@@ -24,3 +24,20 @@ trait RenameOptions extends js.Object {
   var `override`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RenameOptions {
+  @scala.inline
+  def apply(
+    alias: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreUndefined: js.UndefOr[scala.Boolean] = js.undefined,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    `override`: js.UndefOr[scala.Boolean] = js.undefined
+  ): RenameOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alias)) __obj.updateDynamic("alias")(alias)
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`)
+    __obj.asInstanceOf[RenameOptions]
+  }
+}
+

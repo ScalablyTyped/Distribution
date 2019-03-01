@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonAscendingDescending extends js.Object {
   var enumValues: Anon_AscendingDescending
 }
 
+object Anon_EnumValuesAnonAscendingDescending {
+  @scala.inline
+  def apply(enumValues: Anon_AscendingDescending): Anon_EnumValuesAnonAscendingDescending = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonAscendingDescending]
+  }
+}
+

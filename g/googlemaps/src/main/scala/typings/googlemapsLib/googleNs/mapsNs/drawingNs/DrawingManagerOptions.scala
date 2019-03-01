@@ -57,3 +57,30 @@ trait DrawingManagerOptions extends js.Object {
   var rectangleOptions: js.UndefOr[googlemapsLib.googleNs.mapsNs.RectangleOptions] = js.undefined
 }
 
+object DrawingManagerOptions {
+  @scala.inline
+  def apply(
+    circleOptions: googlemapsLib.googleNs.mapsNs.CircleOptions = null,
+    drawingControl: js.UndefOr[scala.Boolean] = js.undefined,
+    drawingControlOptions: DrawingControlOptions = null,
+    drawingMode: OverlayType = null,
+    map: googlemapsLib.googleNs.mapsNs.Map = null,
+    markerOptions: googlemapsLib.googleNs.mapsNs.MarkerOptions = null,
+    polygonOptions: googlemapsLib.googleNs.mapsNs.PolygonOptions = null,
+    polylineOptions: googlemapsLib.googleNs.mapsNs.PolylineOptions = null,
+    rectangleOptions: googlemapsLib.googleNs.mapsNs.RectangleOptions = null
+  ): DrawingManagerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (circleOptions != null) __obj.updateDynamic("circleOptions")(circleOptions)
+    if (!js.isUndefined(drawingControl)) __obj.updateDynamic("drawingControl")(drawingControl)
+    if (drawingControlOptions != null) __obj.updateDynamic("drawingControlOptions")(drawingControlOptions)
+    if (drawingMode != null) __obj.updateDynamic("drawingMode")(drawingMode)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions)
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
+    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions)
+    if (rectangleOptions != null) __obj.updateDynamic("rectangleOptions")(rectangleOptions)
+    __obj.asInstanceOf[DrawingManagerOptions]
+  }
+}
+

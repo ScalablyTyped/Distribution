@@ -30,3 +30,30 @@ trait DiskStorageOptions extends js.Object {
   ] = js.undefined
 }
 
+object DiskStorageOptions {
+  @scala.inline
+  def apply(
+    destination: java.lang.String | (js.Function3[
+      /* req */ multerLib.multerMod.Global.ExpressNs.Request, 
+      /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, 
+      /* callback */ js.Function2[
+        /* error */ nodeLib.Error | scala.Null, 
+        /* destination */ java.lang.String, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]) = null,
+    filename: js.Function3[
+      /* req */ multerLib.multerMod.Global.ExpressNs.Request, 
+      /* file */ multerLib.multerMod.Global.ExpressNs.MulterNs.File, 
+      /* callback */ js.Function2[/* error */ nodeLib.Error | scala.Null, /* filename */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ] = null
+  ): DiskStorageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    __obj.asInstanceOf[DiskStorageOptions]
+  }
+}
+

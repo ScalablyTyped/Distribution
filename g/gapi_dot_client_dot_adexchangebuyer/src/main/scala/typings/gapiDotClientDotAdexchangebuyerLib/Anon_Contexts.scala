@@ -14,3 +14,18 @@ trait Anon_Contexts extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Contexts {
+  @scala.inline
+  def apply(
+    contexts: js.Array[Anon_AuctionType] = null,
+    details: js.Array[java.lang.String] = null,
+    reason: java.lang.String = null
+  ): Anon_Contexts = {
+    val __obj = js.Dynamic.literal()
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[Anon_Contexts]
+  }
+}
+

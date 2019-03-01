@@ -27,3 +27,20 @@ trait OutputRow extends js.Object {
   var indexDeps: org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 
+object OutputRow {
+  @scala.inline
+  def apply(
+    dedupe: java.lang.String,
+    dedupeIndex: scala.Double,
+    index: scala.Double,
+    indexDeps: org.scalablytyped.runtime.StringDictionary[scala.Double]
+  ): OutputRow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dedupe")(dedupe)
+    __obj.updateDynamic("dedupeIndex")(dedupeIndex)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("indexDeps")(indexDeps)
+    __obj.asInstanceOf[OutputRow]
+  }
+}
+

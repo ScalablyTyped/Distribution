@@ -10,3 +10,16 @@ trait CP$Conv extends js.Object {
   var enc: org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 
+object CP$Conv {
+  @scala.inline
+  def apply(
+    dec: org.scalablytyped.runtime.NumberDictionary[java.lang.String],
+    enc: org.scalablytyped.runtime.StringDictionary[scala.Double]
+  ): CP$Conv = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dec")(dec)
+    __obj.updateDynamic("enc")(enc)
+    __obj.asInstanceOf[CP$Conv]
+  }
+}
+

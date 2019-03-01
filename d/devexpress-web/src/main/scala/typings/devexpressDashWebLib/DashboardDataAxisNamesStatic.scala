@@ -32,3 +32,24 @@ trait DashboardDataAxisNamesStatic extends js.Object {
   var SparklineAxis: java.lang.String
 }
 
+object DashboardDataAxisNamesStatic {
+  @scala.inline
+  def apply(
+    ChartArgumentAxis: java.lang.String,
+    ChartSeriesAxis: java.lang.String,
+    DefaultAxis: java.lang.String,
+    PivotColumnAxis: java.lang.String,
+    PivotRowAxis: java.lang.String,
+    SparklineAxis: java.lang.String
+  ): DashboardDataAxisNamesStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ChartArgumentAxis")(ChartArgumentAxis)
+    __obj.updateDynamic("ChartSeriesAxis")(ChartSeriesAxis)
+    __obj.updateDynamic("DefaultAxis")(DefaultAxis)
+    __obj.updateDynamic("PivotColumnAxis")(PivotColumnAxis)
+    __obj.updateDynamic("PivotRowAxis")(PivotRowAxis)
+    __obj.updateDynamic("SparklineAxis")(SparklineAxis)
+    __obj.asInstanceOf[DashboardDataAxisNamesStatic]
+  }
+}
+

@@ -35,3 +35,36 @@ trait Config extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    amazonAPIVersion: scala.Int | scala.Double = null,
+    applePassword: java.lang.String = null,
+    clientId: java.lang.String = null,
+    clientSecret: java.lang.String = null,
+    googleAccToken: java.lang.String = null,
+    googlePublicKeyPath: java.lang.String = null,
+    googleRefToken: java.lang.String = null,
+    refreshToken: java.lang.String = null,
+    rokuApiKey: java.lang.String = null,
+    secret: java.lang.String = null,
+    test: js.UndefOr[scala.Boolean] = js.undefined,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (amazonAPIVersion != null) __obj.updateDynamic("amazonAPIVersion")(amazonAPIVersion.asInstanceOf[js.Any])
+    if (applePassword != null) __obj.updateDynamic("applePassword")(applePassword)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
+    if (googleAccToken != null) __obj.updateDynamic("googleAccToken")(googleAccToken)
+    if (googlePublicKeyPath != null) __obj.updateDynamic("googlePublicKeyPath")(googlePublicKeyPath)
+    if (googleRefToken != null) __obj.updateDynamic("googleRefToken")(googleRefToken)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (rokuApiKey != null) __obj.updateDynamic("rokuApiKey")(rokuApiKey)
+    if (secret != null) __obj.updateDynamic("secret")(secret)
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[Config]
+  }
+}
+

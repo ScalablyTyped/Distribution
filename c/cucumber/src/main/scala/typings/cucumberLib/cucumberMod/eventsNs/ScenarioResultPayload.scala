@@ -13,3 +13,22 @@ trait ScenarioResultPayload extends EventPayload {
   var stepResults: js.Array[_]
 }
 
+object ScenarioResultPayload {
+  @scala.inline
+  def apply(
+    duration: js.Any,
+    failureException: stdLib.Error,
+    scenario: cucumberLib.cucumberMod.Scenario,
+    status: cucumberLib.cucumberMod.Status,
+    stepResults: js.Array[_]
+  ): ScenarioResultPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("failureException")(failureException)
+    __obj.updateDynamic("scenario")(scenario)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("stepResults")(stepResults)
+    __obj.asInstanceOf[ScenarioResultPayload]
+  }
+}
+

@@ -31,3 +31,54 @@ trait ASPxClientHtmlEditorVideoDialog extends ASPxClientHtmlEditorMediaDialogBas
   def GetShowPlayerControlsCheckBox(): ASPxClientCheckBox
 }
 
+object ASPxClientHtmlEditorVideoDialog {
+  @scala.inline
+  def apply(
+    GetAutoPlayCheckBox: js.Function0[ASPxClientCheckBox],
+    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
+    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetHeightSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetLoopCheckBox: js.Function0[ASPxClientCheckBox],
+    GetMediaFileSelector: js.Function0[ASPxClientMediaFileSelector],
+    GetMoreOptionsCheckBox: js.Function0[ASPxClientCheckBox],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetPositionComboBox: js.Function0[ASPxClientComboBox],
+    GetPosterTextBox: js.Function0[ASPxClientTextBox],
+    GetPreloadModeComboBox: js.Function0[ASPxClientComboBox],
+    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetShowPlayerControlsCheckBox: js.Function0[ASPxClientCheckBox],
+    GetTopMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetWidthSpinEdit: js.Function0[ASPxClientSpinEdit]
+  ): ASPxClientHtmlEditorVideoDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetAutoPlayCheckBox")(GetAutoPlayCheckBox)
+    __obj.updateDynamic("GetBorderColorColorEdit")(GetBorderColorColorEdit)
+    __obj.updateDynamic("GetBorderStyleComboBox")(GetBorderStyleComboBox)
+    __obj.updateDynamic("GetBorderWidthSpinEdit")(GetBorderWidthSpinEdit)
+    __obj.updateDynamic("GetBottomMarginTextBox")(GetBottomMarginTextBox)
+    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
+    __obj.updateDynamic("GetCssClassNameComboBox")(GetCssClassNameComboBox)
+    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
+    __obj.updateDynamic("GetHeightSpinEdit")(GetHeightSpinEdit)
+    __obj.updateDynamic("GetLeftMarginTextBox")(GetLeftMarginTextBox)
+    __obj.updateDynamic("GetLoopCheckBox")(GetLoopCheckBox)
+    __obj.updateDynamic("GetMediaFileSelector")(GetMediaFileSelector)
+    __obj.updateDynamic("GetMoreOptionsCheckBox")(GetMoreOptionsCheckBox)
+    __obj.updateDynamic("GetOkButton")(GetOkButton)
+    __obj.updateDynamic("GetPositionComboBox")(GetPositionComboBox)
+    __obj.updateDynamic("GetPosterTextBox")(GetPosterTextBox)
+    __obj.updateDynamic("GetPreloadModeComboBox")(GetPreloadModeComboBox)
+    __obj.updateDynamic("GetRightMarginTextBox")(GetRightMarginTextBox)
+    __obj.updateDynamic("GetShowPlayerControlsCheckBox")(GetShowPlayerControlsCheckBox)
+    __obj.updateDynamic("GetTopMarginTextBox")(GetTopMarginTextBox)
+    __obj.updateDynamic("GetWidthSpinEdit")(GetWidthSpinEdit)
+    __obj.asInstanceOf[ASPxClientHtmlEditorVideoDialog]
+  }
+}
+

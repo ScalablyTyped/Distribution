@@ -102,3 +102,52 @@ trait GeoDistanceFacet extends Facet {
   def valueScript(scriptCode: java.lang.String): GeoDistanceFacet
 }
 
+object GeoDistanceFacet {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    addRange: js.Function2[stdLib.Number, stdLib.Number, GeoDistanceFacet],
+    addUnboundedFrom: js.Function1[stdLib.Number, GeoDistanceFacet],
+    addUnboundedTo: js.Function1[stdLib.Number, GeoDistanceFacet],
+    cacheFilter: js.Function1[scala.Boolean, GeoDistanceFacet],
+    distanceType: js.Function1[java.lang.String, GeoDistanceFacet],
+    facetFilter: js.Function1[js.Object, GeoDistanceFacet],
+    field: js.Function1[java.lang.String, GeoDistanceFacet],
+    global: js.Function1[scala.Boolean, GeoDistanceFacet],
+    lang: js.Function1[java.lang.String, GeoDistanceFacet],
+    mode: js.Function1[java.lang.String, GeoDistanceFacet],
+    nested: js.Function1[java.lang.String, GeoDistanceFacet],
+    normalize: js.Function1[java.lang.String, GeoDistanceFacet],
+    params: js.Function1[js.Object, GeoDistanceFacet],
+    point: js.Function1[GeoPoint, GeoDistanceFacet],
+    scope: js.Function1[java.lang.String, GeoDistanceFacet],
+    toJSON: js.Function0[js.Any],
+    unit: js.Function1[java.lang.String, GeoDistanceFacet],
+    valueField: js.Function1[java.lang.String, GeoDistanceFacet],
+    valueScript: js.Function1[java.lang.String, GeoDistanceFacet]
+  ): GeoDistanceFacet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("addRange")(addRange)
+    __obj.updateDynamic("addUnboundedFrom")(addUnboundedFrom)
+    __obj.updateDynamic("addUnboundedTo")(addUnboundedTo)
+    __obj.updateDynamic("cacheFilter")(cacheFilter)
+    __obj.updateDynamic("distanceType")(distanceType)
+    __obj.updateDynamic("facetFilter")(facetFilter)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("global")(global)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("nested")(nested)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("point")(point)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("unit")(unit)
+    __obj.updateDynamic("valueField")(valueField)
+    __obj.updateDynamic("valueScript")(valueScript)
+    __obj.asInstanceOf[GeoDistanceFacet]
+  }
+}
+

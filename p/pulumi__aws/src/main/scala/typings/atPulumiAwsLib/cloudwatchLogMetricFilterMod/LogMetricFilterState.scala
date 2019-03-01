@@ -26,3 +26,20 @@ trait LogMetricFilterState extends js.Object {
   val pattern: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object LogMetricFilterState {
+  @scala.inline
+  def apply(
+    logGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    metricTransformation: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DefaultValueName] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    pattern: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): LogMetricFilterState = {
+    val __obj = js.Dynamic.literal()
+    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
+    if (metricTransformation != null) __obj.updateDynamic("metricTransformation")(metricTransformation.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogMetricFilterState]
+  }
+}
+

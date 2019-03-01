@@ -7,43 +7,56 @@ import scala.scalajs.js.annotation._
 
 object intercomDashWebLibStrings {
   @js.native
-  sealed trait boot extends js.Object
+  sealed trait boot
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait getVisitorId extends js.Object
+  sealed trait getVisitorId
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait hide
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait onActivatorClick extends js.Object
+  sealed trait onActivatorClick
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait onHide extends js.Object
+  sealed trait onHide
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait onShow extends js.Object
+  sealed trait onShow
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait onUnreadCountChange extends js.Object
+  sealed trait onUnreadCountChange
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait show
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait showMessages extends js.Object
+  sealed trait showMessages
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait showNewMessage extends js.Object
+  sealed trait showNewMessage
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait shutdown extends js.Object
+  sealed trait shutdown
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait trackEvent extends js.Object
+  sealed trait trackEvent
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update
+    extends intercomDashWebLib.IntercomUnderscoreNs.IntercomCommand
   
   @scala.inline
   def boot: boot = "boot".asInstanceOf[boot]

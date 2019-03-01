@@ -29,8 +29,8 @@ trait IUtilMisc extends js.Object {
   	 */
   def createImage(): stdLib.HTMLImageElement = js.native
   /**
-    * Creates a transform matrix with the specified scale and skew
-    */
+  	 * Creates a transform matrix with the specified scale and skew
+  	 */
   def customTransformMatrix(scaleX: scala.Double, scaleY: scala.Double, skewX: scala.Double): js.Array[scala.Double] = js.native
   /**
   	 * Transforms degrees to radians.
@@ -90,9 +90,9 @@ trait IUtilMisc extends js.Object {
   	 * @param elements SVG elements to group
   	 * @param [options] Options object
   	 */
-  def groupSVGElements(elements: js.Array[_]): PathGroup = js.native
-  def groupSVGElements(elements: js.Array[_], options: js.Any): PathGroup = js.native
-  def groupSVGElements(elements: js.Array[_], options: js.Any, path: js.Any): PathGroup = js.native
+  def groupSVGElements(elements: js.Array[_]): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[_], options: js.Any): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[_], options: js.Any, path: java.lang.String): Object | Group = js.native
   /**
   	 * Invert transformation t
   	 * @param t The transform

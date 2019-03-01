@@ -10,3 +10,12 @@ trait MaskHint extends js.Object {
   var value: java.lang.String
 }
 
+object MaskHint {
+  @scala.inline
+  def apply(`type`: MaskType, value: java.lang.String): MaskHint = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[MaskHint]
+  }
+}
+

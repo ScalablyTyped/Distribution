@@ -13,3 +13,22 @@ trait ColumnDefinition extends js.Object {
   var unique: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ColumnDefinition {
+  @scala.inline
+  def apply(
+    dataType: java.lang.String = null,
+    notNull: js.UndefOr[scala.Boolean] = js.undefined,
+    primaryKey: js.UndefOr[scala.Boolean] = js.undefined,
+    references: anydbDashSqlLib.Anon_Column = null,
+    unique: js.UndefOr[scala.Boolean] = js.undefined
+  ): ColumnDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull)
+    if (!js.isUndefined(primaryKey)) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (references != null) __obj.updateDynamic("references")(references)
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    __obj.asInstanceOf[ColumnDefinition]
+  }
+}
+

@@ -24,3 +24,13 @@ trait Details extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Details {
+  @scala.inline
+  def apply(tabId: scala.Int | scala.Double = null, windowId: scala.Int | scala.Double = null): Details = {
+    val __obj = js.Dynamic.literal()
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Details]
+  }
+}
+

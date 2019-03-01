@@ -46,3 +46,26 @@ trait XDockingAreaAcceptor
   def setDockingAreaSpace(BorderSpace: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle): scala.Unit
 }
 
+object XDockingAreaAcceptor {
+  @scala.inline
+  def apply(
+    ContainerWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    acquire: js.Function0[scala.Unit],
+    getContainerWindow: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    requestDockingAreaSpace: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Boolean],
+    setDockingAreaSpace: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit]
+  ): XDockingAreaAcceptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ContainerWindow")(ContainerWindow)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getContainerWindow")(getContainerWindow)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("requestDockingAreaSpace")(requestDockingAreaSpace)
+    __obj.updateDynamic("setDockingAreaSpace")(setDockingAreaSpace)
+    __obj.asInstanceOf[XDockingAreaAcceptor]
+  }
+}
+

@@ -16,3 +16,13 @@ trait SummariesCalculatedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object SummariesCalculatedEventUIParam {
+  @scala.inline
+  def apply(data: js.Array[_] = null, owner: js.Any = null): SummariesCalculatedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[SummariesCalculatedEventUIParam]
+  }
+}
+

@@ -12,3 +12,13 @@ trait ShellTask extends js.Object {
   var exitCode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ShellTask {
+  @scala.inline
+  def apply(command: java.lang.String = null, exitCode: scala.Int | scala.Double = null): ShellTask = {
+    val __obj = js.Dynamic.literal()
+    if (command != null) __obj.updateDynamic("command")(command)
+    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShellTask]
+  }
+}
+

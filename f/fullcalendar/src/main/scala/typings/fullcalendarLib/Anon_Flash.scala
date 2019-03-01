@@ -10,3 +10,13 @@ trait Anon_Flash extends js.Object {
   def teardown(): scala.Unit
 }
 
+object Anon_Flash {
+  @scala.inline
+  def apply(flash: js.Function0[scala.Unit], teardown: js.Function0[scala.Unit]): Anon_Flash = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("flash")(flash)
+    __obj.updateDynamic("teardown")(teardown)
+    __obj.asInstanceOf[Anon_Flash]
+  }
+}
+

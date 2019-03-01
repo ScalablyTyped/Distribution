@@ -19,3 +19,16 @@ trait GooglePrivacyDlpV2beta1InspectResult extends js.Object {
   var findingsTruncated: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1InspectResult {
+  @scala.inline
+  def apply(
+    findings: js.Array[GooglePrivacyDlpV2beta1Finding] = null,
+    findingsTruncated: js.UndefOr[scala.Boolean] = js.undefined
+  ): GooglePrivacyDlpV2beta1InspectResult = {
+    val __obj = js.Dynamic.literal()
+    if (findings != null) __obj.updateDynamic("findings")(findings)
+    if (!js.isUndefined(findingsTruncated)) __obj.updateDynamic("findingsTruncated")(findingsTruncated)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectResult]
+  }
+}
+

@@ -13,3 +13,20 @@ trait NavigationNavigateActionPayload extends js.Object {
   var routeName: java.lang.String
 }
 
+object NavigationNavigateActionPayload {
+  @scala.inline
+  def apply(
+    routeName: java.lang.String,
+    action: NavigationNavigateAction = null,
+    key: java.lang.String = null,
+    params: NavigationParams = null
+  ): NavigationNavigateActionPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("routeName")(routeName)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[NavigationNavigateActionPayload]
+  }
+}
+

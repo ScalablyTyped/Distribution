@@ -12,3 +12,18 @@ trait FunctorComposition3C1[F /* <: fpDashTsLib.libHKTMod.URIS3 */, G /* <: fpDa
   ): fpDashTsLib.libHKTMod.Type3[F, UF, LF, fpDashTsLib.libHKTMod.Type[G, B]]
 }
 
+object FunctorComposition3C1 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */, G /* <: fpDashTsLib.libHKTMod.URIS */, UF, LF](
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, UF, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, UF, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]]
+    ]
+  ): FunctorComposition3C1[F, G, UF, LF] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[FunctorComposition3C1[F, G, UF, LF]]
+  }
+}
+

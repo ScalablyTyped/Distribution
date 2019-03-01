@@ -14,3 +14,12 @@ trait BackgroundImageProps extends js.Object {
   var backgroundImage: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BackgroundImageProperty]] = js.undefined
 }
 
+object BackgroundImageProps {
+  @scala.inline
+  def apply(backgroundImage: ResponsiveValue[csstypeLib.csstypeMod.BackgroundImageProperty] = null): BackgroundImageProps = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundImageProps]
+  }
+}
+

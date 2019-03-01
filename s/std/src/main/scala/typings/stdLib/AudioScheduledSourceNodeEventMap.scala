@@ -9,3 +9,12 @@ trait AudioScheduledSourceNodeEventMap extends js.Object {
   var ended: Event
 }
 
+object AudioScheduledSourceNodeEventMap {
+  @scala.inline
+  def apply(ended: Event): AudioScheduledSourceNodeEventMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ended")(ended)
+    __obj.asInstanceOf[AudioScheduledSourceNodeEventMap]
+  }
+}
+

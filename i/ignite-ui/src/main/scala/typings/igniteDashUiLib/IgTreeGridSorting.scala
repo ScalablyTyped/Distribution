@@ -263,3 +263,111 @@ trait IgTreeGridSorting
   var unsortedColumnTooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgTreeGridSorting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTreeGridSorting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    applySortedColumnCss: js.UndefOr[scala.Boolean] = js.undefined,
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    columnSettings: js.Array[IgGridSortingColumnSetting] = null,
+    columnSorted: ColumnSortedEvent = null,
+    columnSorting: ColumnSortingEvent = null,
+    customSortFunction: js.Function = null,
+    dialogWidget: java.lang.String = null,
+    featureChooserSortAsc: java.lang.String = null,
+    featureChooserSortDesc: java.lang.String = null,
+    featureChooserText: java.lang.String = null,
+    firstSortDirection: java.lang.String = null,
+    fromLevel: scala.Int | scala.Double = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: IgGridSortingLocale = null,
+    modalDialogAnimationDuration: scala.Int | scala.Double = null,
+    modalDialogButtonApplyClick: ModalDialogButtonApplyClickEvent = null,
+    modalDialogButtonApplyText: java.lang.String = null,
+    modalDialogButtonCancelText: java.lang.String = null,
+    modalDialogButtonResetClick: ModalDialogButtonResetClickEvent = null,
+    modalDialogButtonUnsortClick: ModalDialogButtonUnsortClickEvent = null,
+    modalDialogCaptionButtonAsc: java.lang.String = null,
+    modalDialogCaptionButtonDesc: java.lang.String = null,
+    modalDialogCaptionButtonUnsort: java.lang.String = null,
+    modalDialogCaptionText: java.lang.String = null,
+    modalDialogClosed: ModalDialogClosedEvent = null,
+    modalDialogClosing: ModalDialogClosingEvent = null,
+    modalDialogContentsRendered: ModalDialogContentsRenderedEvent = null,
+    modalDialogContentsRendering: ModalDialogContentsRenderingEvent = null,
+    modalDialogHeight: java.lang.String | scala.Double = null,
+    modalDialogMoving: ModalDialogMovingEvent = null,
+    modalDialogOpened: ModalDialogOpenedEvent = null,
+    modalDialogOpening: ModalDialogOpeningEvent = null,
+    modalDialogResetButtonLabel: java.lang.String = null,
+    modalDialogSortByButtonText: java.lang.String = null,
+    modalDialogSortClick: ModalDialogSortClickEvent = null,
+    modalDialogSortOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    modalDialogSortingChanged: ModalDialogSortingChangedEvent = null,
+    modalDialogWidth: java.lang.String | scala.Double = null,
+    mode: java.lang.String = null,
+    persist: js.UndefOr[scala.Boolean] = js.undefined,
+    sortUrlKey: java.lang.String = null,
+    sortUrlKeyAscValue: java.lang.String = null,
+    sortUrlKeyDescValue: java.lang.String = null,
+    sortingDialogContainment: java.lang.String = null,
+    toLevel: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    unsortedColumnTooltip: java.lang.String = null
+  ): IgTreeGridSorting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(applySortedColumnCss)) __obj.updateDynamic("applySortedColumnCss")(applySortedColumnCss)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (columnSorted != null) __obj.updateDynamic("columnSorted")(columnSorted)
+    if (columnSorting != null) __obj.updateDynamic("columnSorting")(columnSorting)
+    if (customSortFunction != null) __obj.updateDynamic("customSortFunction")(customSortFunction)
+    if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
+    if (featureChooserSortAsc != null) __obj.updateDynamic("featureChooserSortAsc")(featureChooserSortAsc)
+    if (featureChooserSortDesc != null) __obj.updateDynamic("featureChooserSortDesc")(featureChooserSortDesc)
+    if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText)
+    if (firstSortDirection != null) __obj.updateDynamic("firstSortDirection")(firstSortDirection)
+    if (fromLevel != null) __obj.updateDynamic("fromLevel")(fromLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (modalDialogAnimationDuration != null) __obj.updateDynamic("modalDialogAnimationDuration")(modalDialogAnimationDuration.asInstanceOf[js.Any])
+    if (modalDialogButtonApplyClick != null) __obj.updateDynamic("modalDialogButtonApplyClick")(modalDialogButtonApplyClick)
+    if (modalDialogButtonApplyText != null) __obj.updateDynamic("modalDialogButtonApplyText")(modalDialogButtonApplyText)
+    if (modalDialogButtonCancelText != null) __obj.updateDynamic("modalDialogButtonCancelText")(modalDialogButtonCancelText)
+    if (modalDialogButtonResetClick != null) __obj.updateDynamic("modalDialogButtonResetClick")(modalDialogButtonResetClick)
+    if (modalDialogButtonUnsortClick != null) __obj.updateDynamic("modalDialogButtonUnsortClick")(modalDialogButtonUnsortClick)
+    if (modalDialogCaptionButtonAsc != null) __obj.updateDynamic("modalDialogCaptionButtonAsc")(modalDialogCaptionButtonAsc)
+    if (modalDialogCaptionButtonDesc != null) __obj.updateDynamic("modalDialogCaptionButtonDesc")(modalDialogCaptionButtonDesc)
+    if (modalDialogCaptionButtonUnsort != null) __obj.updateDynamic("modalDialogCaptionButtonUnsort")(modalDialogCaptionButtonUnsort)
+    if (modalDialogCaptionText != null) __obj.updateDynamic("modalDialogCaptionText")(modalDialogCaptionText)
+    if (modalDialogClosed != null) __obj.updateDynamic("modalDialogClosed")(modalDialogClosed)
+    if (modalDialogClosing != null) __obj.updateDynamic("modalDialogClosing")(modalDialogClosing)
+    if (modalDialogContentsRendered != null) __obj.updateDynamic("modalDialogContentsRendered")(modalDialogContentsRendered)
+    if (modalDialogContentsRendering != null) __obj.updateDynamic("modalDialogContentsRendering")(modalDialogContentsRendering)
+    if (modalDialogHeight != null) __obj.updateDynamic("modalDialogHeight")(modalDialogHeight.asInstanceOf[js.Any])
+    if (modalDialogMoving != null) __obj.updateDynamic("modalDialogMoving")(modalDialogMoving)
+    if (modalDialogOpened != null) __obj.updateDynamic("modalDialogOpened")(modalDialogOpened)
+    if (modalDialogOpening != null) __obj.updateDynamic("modalDialogOpening")(modalDialogOpening)
+    if (modalDialogResetButtonLabel != null) __obj.updateDynamic("modalDialogResetButtonLabel")(modalDialogResetButtonLabel)
+    if (modalDialogSortByButtonText != null) __obj.updateDynamic("modalDialogSortByButtonText")(modalDialogSortByButtonText)
+    if (modalDialogSortClick != null) __obj.updateDynamic("modalDialogSortClick")(modalDialogSortClick)
+    if (!js.isUndefined(modalDialogSortOnClick)) __obj.updateDynamic("modalDialogSortOnClick")(modalDialogSortOnClick)
+    if (modalDialogSortingChanged != null) __obj.updateDynamic("modalDialogSortingChanged")(modalDialogSortingChanged)
+    if (modalDialogWidth != null) __obj.updateDynamic("modalDialogWidth")(modalDialogWidth.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (sortUrlKey != null) __obj.updateDynamic("sortUrlKey")(sortUrlKey)
+    if (sortUrlKeyAscValue != null) __obj.updateDynamic("sortUrlKeyAscValue")(sortUrlKeyAscValue)
+    if (sortUrlKeyDescValue != null) __obj.updateDynamic("sortUrlKeyDescValue")(sortUrlKeyDescValue)
+    if (sortingDialogContainment != null) __obj.updateDynamic("sortingDialogContainment")(sortingDialogContainment)
+    if (toLevel != null) __obj.updateDynamic("toLevel")(toLevel.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unsortedColumnTooltip != null) __obj.updateDynamic("unsortedColumnTooltip")(unsortedColumnTooltip)
+    __obj.asInstanceOf[IgTreeGridSorting]
+  }
+}
+

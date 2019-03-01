@@ -37,3 +37,38 @@ trait Anon_AltCpksverFieldsKey extends js.Object {
   var volumeId: java.lang.String
 }
 
+object Anon_AltCpksverFieldsKey {
+  @scala.inline
+  def apply(
+    cpksver: java.lang.String,
+    nonce: java.lang.String,
+    source: java.lang.String,
+    volumeId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    licenseTypes: java.lang.String = null,
+    locale: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltCpksverFieldsKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cpksver")(cpksver)
+    __obj.updateDynamic("nonce")(nonce)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("volumeId")(volumeId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (licenseTypes != null) __obj.updateDynamic("licenseTypes")(licenseTypes)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltCpksverFieldsKey]
+  }
+}
+

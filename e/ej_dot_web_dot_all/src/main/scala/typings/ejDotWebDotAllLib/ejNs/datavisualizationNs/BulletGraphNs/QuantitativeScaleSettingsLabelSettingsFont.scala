@@ -24,3 +24,20 @@ trait QuantitativeScaleSettingsLabelSettingsFont extends js.Object {
   var opacity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object QuantitativeScaleSettingsLabelSettingsFont {
+  @scala.inline
+  def apply(
+    fontFamily: java.lang.String = null,
+    fontStyle: FontStyle | java.lang.String = null,
+    fontWeight: FontWeight | java.lang.String = null,
+    opacity: scala.Int | scala.Double = null
+  ): QuantitativeScaleSettingsLabelSettingsFont = {
+    val __obj = js.Dynamic.literal()
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QuantitativeScaleSettingsLabelSettingsFont]
+  }
+}
+

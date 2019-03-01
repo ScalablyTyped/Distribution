@@ -10,3 +10,13 @@ trait RequestEmailCodeOrLinkOptions extends js.Object {
   var send: SendType
 }
 
+object RequestEmailCodeOrLinkOptions {
+  @scala.inline
+  def apply(email: java.lang.String, send: SendType): RequestEmailCodeOrLinkOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("send")(send)
+    __obj.asInstanceOf[RequestEmailCodeOrLinkOptions]
+  }
+}
+

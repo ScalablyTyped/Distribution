@@ -27,3 +27,22 @@ trait DistanceMatrixResponse extends js.Object {
   var status: DistanceMatrixResponseTopLevelStatus
 }
 
+object DistanceMatrixResponse {
+  @scala.inline
+  def apply(
+    destination_addresses: js.Array[java.lang.String],
+    error_message: java.lang.String,
+    origin_addresses: java.lang.String,
+    rows: js.Array[DistanceMatrixRow],
+    status: DistanceMatrixResponseTopLevelStatus
+  ): DistanceMatrixResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destination_addresses")(destination_addresses)
+    __obj.updateDynamic("error_message")(error_message)
+    __obj.updateDynamic("origin_addresses")(origin_addresses)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[DistanceMatrixResponse]
+  }
+}
+

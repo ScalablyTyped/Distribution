@@ -9,3 +9,12 @@ trait OnMatrixChangedListener extends js.Object {
   def onMatrixChanged(rect: androiduixLib.androidNs.graphicsNs.RectF): scala.Unit
 }
 
+object OnMatrixChangedListener {
+  @scala.inline
+  def apply(onMatrixChanged: js.Function1[androiduixLib.androidNs.graphicsNs.RectF, scala.Unit]): OnMatrixChangedListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onMatrixChanged")(onMatrixChanged)
+    __obj.asInstanceOf[OnMatrixChangedListener]
+  }
+}
+

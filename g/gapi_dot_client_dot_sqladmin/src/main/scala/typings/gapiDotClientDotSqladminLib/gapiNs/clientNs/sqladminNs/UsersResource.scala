@@ -16,3 +16,32 @@ trait UsersResource extends js.Object {
   def update(request: gapiDotClientDotSqladminLib.Anon_AltFieldsHost): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object UsersResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltFieldsHost, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UsersListResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltFieldsHost, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): UsersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[UsersResource]
+  }
+}
+

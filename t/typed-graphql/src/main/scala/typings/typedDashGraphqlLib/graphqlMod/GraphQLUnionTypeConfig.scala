@@ -17,3 +17,20 @@ trait GraphQLUnionTypeConfig extends js.Object {
   var types: js.Array[GraphQLObjectType]
 }
 
+object GraphQLUnionTypeConfig {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    types: js.Array[GraphQLObjectType],
+    description: java.lang.String = null,
+    resolveType: GraphQLTypeResolveFn = null
+  ): GraphQLUnionTypeConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("types")(types)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (resolveType != null) __obj.updateDynamic("resolveType")(resolveType)
+    __obj.asInstanceOf[GraphQLUnionTypeConfig]
+  }
+}
+

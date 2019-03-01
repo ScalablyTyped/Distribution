@@ -23,3 +23,22 @@ trait StripLine extends js.Object {
   var lineWidth: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StripLine {
+  @scala.inline
+  def apply(
+    day: java.lang.String = null,
+    label: java.lang.String = null,
+    lineColor: java.lang.String = null,
+    lineStyle: java.lang.String = null,
+    lineWidth: java.lang.String = null
+  ): StripLine = {
+    val __obj = js.Dynamic.literal()
+    if (day != null) __obj.updateDynamic("day")(day)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth)
+    __obj.asInstanceOf[StripLine]
+  }
+}
+

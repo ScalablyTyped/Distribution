@@ -20,3 +20,13 @@ trait TCPSocketAction extends js.Object {
   val port: scala.Double | java.lang.String
 }
 
+object TCPSocketAction {
+  @scala.inline
+  def apply(host: java.lang.String, port: scala.Double | java.lang.String): TCPSocketAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TCPSocketAction]
+  }
+}
+

@@ -18,3 +18,13 @@ trait NumberPickerMessages extends js.Object {
   var increment: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NumberPickerMessages {
+  @scala.inline
+  def apply(decrement: java.lang.String = null, increment: java.lang.String = null): NumberPickerMessages = {
+    val __obj = js.Dynamic.literal()
+    if (decrement != null) __obj.updateDynamic("decrement")(decrement)
+    if (increment != null) __obj.updateDynamic("increment")(increment)
+    __obj.asInstanceOf[NumberPickerMessages]
+  }
+}
+

@@ -23,3 +23,22 @@ trait HistoryChangeEventArgs extends js.Object {
   var diagramId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HistoryChangeEventArgs {
+  @scala.inline
+  def apply(
+    Source: js.Array[_] = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cause: js.UndefOr[scala.Boolean] = js.undefined,
+    changes: js.Array[_] = null,
+    diagramId: java.lang.String = null
+  ): HistoryChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Source != null) __obj.updateDynamic("Source")(Source)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(cause)) __obj.updateDynamic("cause")(cause)
+    if (changes != null) __obj.updateDynamic("changes")(changes)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    __obj.asInstanceOf[HistoryChangeEventArgs]
+  }
+}
+

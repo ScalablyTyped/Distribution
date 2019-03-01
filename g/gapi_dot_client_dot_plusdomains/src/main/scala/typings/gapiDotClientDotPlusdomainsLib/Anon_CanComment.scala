@@ -18,3 +18,22 @@ trait Anon_CanComment extends js.Object {
   var resharingDisabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_CanComment {
+  @scala.inline
+  def apply(
+    canComment: js.UndefOr[scala.Boolean] = js.undefined,
+    canPlusone: js.UndefOr[scala.Boolean] = js.undefined,
+    canUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    isPlusOned: js.UndefOr[scala.Boolean] = js.undefined,
+    resharingDisabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_CanComment = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canComment)) __obj.updateDynamic("canComment")(canComment)
+    if (!js.isUndefined(canPlusone)) __obj.updateDynamic("canPlusone")(canPlusone)
+    if (!js.isUndefined(canUpdate)) __obj.updateDynamic("canUpdate")(canUpdate)
+    if (!js.isUndefined(isPlusOned)) __obj.updateDynamic("isPlusOned")(isPlusOned)
+    if (!js.isUndefined(resharingDisabled)) __obj.updateDynamic("resharingDisabled")(resharingDisabled)
+    __obj.asInstanceOf[Anon_CanComment]
+  }
+}
+

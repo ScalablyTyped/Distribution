@@ -16,3 +16,14 @@ trait Anon_NewPath extends js.Object {
   def `__promisify__`(oldPath: nodeLib.fsMod.PathLike, newPath: nodeLib.fsMod.PathLike): js.Promise[scala.Unit]
 }
 
+object Anon_NewPath {
+  @scala.inline
+  def apply(
+    `__promisify__`: js.Function2[nodeLib.fsMod.PathLike, nodeLib.fsMod.PathLike, js.Promise[scala.Unit]]
+  ): Anon_NewPath = {
+    val __obj = js.Dynamic.literal(`__promisify__` = `__promisify__`)
+  
+    __obj.asInstanceOf[Anon_NewPath]
+  }
+}
+

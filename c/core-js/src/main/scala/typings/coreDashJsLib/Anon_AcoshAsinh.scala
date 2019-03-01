@@ -25,3 +25,46 @@ trait Anon_AcoshAsinh extends js.Object {
   def trunc(x: scala.Double): scala.Double
 }
 
+object Anon_AcoshAsinh {
+  @scala.inline
+  def apply(
+    acosh: js.Function1[scala.Double, scala.Double],
+    asinh: js.Function1[scala.Double, scala.Double],
+    atanh: js.Function1[scala.Double, scala.Double],
+    cbrt: js.Function1[scala.Double, scala.Double],
+    clz32: js.Function1[scala.Double, scala.Double],
+    cosh: js.Function1[scala.Double, scala.Double],
+    expm1: js.Function1[scala.Double, scala.Double],
+    fround: js.Function1[scala.Double, scala.Double],
+    hypot: js.Function1[/* repeated */ scala.Double, scala.Double],
+    imul: js.Function2[scala.Double, scala.Double, scala.Double],
+    log10: js.Function1[scala.Double, scala.Double],
+    log1p: js.Function1[scala.Double, scala.Double],
+    log2: js.Function1[scala.Double, scala.Double],
+    sign: js.Function1[scala.Double, scala.Double],
+    sinh: js.Function1[scala.Double, scala.Double],
+    tanh: js.Function1[scala.Double, scala.Double],
+    trunc: js.Function1[scala.Double, scala.Double]
+  ): Anon_AcoshAsinh = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acosh")(acosh)
+    __obj.updateDynamic("asinh")(asinh)
+    __obj.updateDynamic("atanh")(atanh)
+    __obj.updateDynamic("cbrt")(cbrt)
+    __obj.updateDynamic("clz32")(clz32)
+    __obj.updateDynamic("cosh")(cosh)
+    __obj.updateDynamic("expm1")(expm1)
+    __obj.updateDynamic("fround")(fround)
+    __obj.updateDynamic("hypot")(hypot)
+    __obj.updateDynamic("imul")(imul)
+    __obj.updateDynamic("log10")(log10)
+    __obj.updateDynamic("log1p")(log1p)
+    __obj.updateDynamic("log2")(log2)
+    __obj.updateDynamic("sign")(sign)
+    __obj.updateDynamic("sinh")(sinh)
+    __obj.updateDynamic("tanh")(tanh)
+    __obj.updateDynamic("trunc")(trunc)
+    __obj.asInstanceOf[Anon_AcoshAsinh]
+  }
+}
+

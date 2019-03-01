@@ -59,3 +59,34 @@ trait INxFieldDescription extends js.Object {
   var qTags: js.Array[java.lang.String]
 }
 
+object INxFieldDescription {
+  @scala.inline
+  def apply(
+    qCardinal: scala.Double,
+    qDerivedFieldData: INxDerivedFieldDescriptionList,
+    qIsDefinitionOnly: scala.Boolean,
+    qIsDetail: scala.Boolean,
+    qIsHidden: scala.Boolean,
+    qIsImplicit: scala.Boolean,
+    qIsSemantic: scala.Boolean,
+    qIsSystem: scala.Boolean,
+    qName: java.lang.String,
+    qTags: js.Array[java.lang.String],
+    qAndMode: js.UndefOr[scala.Boolean] = js.undefined
+  ): INxFieldDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qCardinal")(qCardinal)
+    __obj.updateDynamic("qDerivedFieldData")(qDerivedFieldData)
+    __obj.updateDynamic("qIsDefinitionOnly")(qIsDefinitionOnly)
+    __obj.updateDynamic("qIsDetail")(qIsDetail)
+    __obj.updateDynamic("qIsHidden")(qIsHidden)
+    __obj.updateDynamic("qIsImplicit")(qIsImplicit)
+    __obj.updateDynamic("qIsSemantic")(qIsSemantic)
+    __obj.updateDynamic("qIsSystem")(qIsSystem)
+    __obj.updateDynamic("qName")(qName)
+    __obj.updateDynamic("qTags")(qTags)
+    if (!js.isUndefined(qAndMode)) __obj.updateDynamic("qAndMode")(qAndMode)
+    __obj.asInstanceOf[INxFieldDescription]
+  }
+}
+

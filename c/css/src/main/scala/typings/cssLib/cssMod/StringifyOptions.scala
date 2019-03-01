@@ -24,3 +24,20 @@ trait StringifyOptions extends js.Object {
   var sourcemap: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StringifyOptions {
+  @scala.inline
+  def apply(
+    compress: js.UndefOr[scala.Boolean] = js.undefined,
+    indent: java.lang.String = null,
+    inputSourcemaps: js.UndefOr[scala.Boolean] = js.undefined,
+    sourcemap: java.lang.String = null
+  ): StringifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (!js.isUndefined(inputSourcemaps)) __obj.updateDynamic("inputSourcemaps")(inputSourcemaps)
+    if (sourcemap != null) __obj.updateDynamic("sourcemap")(sourcemap)
+    __obj.asInstanceOf[StringifyOptions]
+  }
+}
+

@@ -38,3 +38,42 @@ trait XXMLEncryptionTemplate extends XXMLSecurityTemplate {
   def getTarget(): activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper
 }
 
+object XXMLEncryptionTemplate {
+  @scala.inline
+  def apply(
+    Status: SecurityOperationStatus,
+    Target: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    Template: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    acquire: js.Function0[scala.Unit],
+    getStatus: js.Function0[SecurityOperationStatus],
+    getTarget: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
+    getTemplate: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setStatus: js.Function1[SecurityOperationStatus, scala.Unit],
+    setTarget: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
+      scala.Unit
+    ],
+    setTemplate: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
+      scala.Unit
+    ]
+  ): XXMLEncryptionTemplate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Status")(Status)
+    __obj.updateDynamic("Target")(Target)
+    __obj.updateDynamic("Template")(Template)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getStatus")(getStatus)
+    __obj.updateDynamic("getTarget")(getTarget)
+    __obj.updateDynamic("getTemplate")(getTemplate)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setStatus")(setStatus)
+    __obj.updateDynamic("setTarget")(setTarget)
+    __obj.updateDynamic("setTemplate")(setTemplate)
+    __obj.asInstanceOf[XXMLEncryptionTemplate]
+  }
+}
+

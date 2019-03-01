@@ -16,3 +16,20 @@ trait NetworkUtilization extends js.Object {
   var targetSentPacketsPerSecond: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NetworkUtilization {
+  @scala.inline
+  def apply(
+    targetReceivedBytesPerSecond: scala.Int | scala.Double = null,
+    targetReceivedPacketsPerSecond: scala.Int | scala.Double = null,
+    targetSentBytesPerSecond: scala.Int | scala.Double = null,
+    targetSentPacketsPerSecond: scala.Int | scala.Double = null
+  ): NetworkUtilization = {
+    val __obj = js.Dynamic.literal()
+    if (targetReceivedBytesPerSecond != null) __obj.updateDynamic("targetReceivedBytesPerSecond")(targetReceivedBytesPerSecond.asInstanceOf[js.Any])
+    if (targetReceivedPacketsPerSecond != null) __obj.updateDynamic("targetReceivedPacketsPerSecond")(targetReceivedPacketsPerSecond.asInstanceOf[js.Any])
+    if (targetSentBytesPerSecond != null) __obj.updateDynamic("targetSentBytesPerSecond")(targetSentBytesPerSecond.asInstanceOf[js.Any])
+    if (targetSentPacketsPerSecond != null) __obj.updateDynamic("targetSentPacketsPerSecond")(targetSentPacketsPerSecond.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkUtilization]
+  }
+}
+

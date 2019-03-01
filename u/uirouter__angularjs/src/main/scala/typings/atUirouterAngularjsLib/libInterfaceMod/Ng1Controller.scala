@@ -84,3 +84,21 @@ trait Ng1Controller extends js.Object {
   def uiOnParamsChanged(newValues: js.Any, $transition$: atUirouterCoreLib.atUirouterCoreMod.Transition): scala.Unit
 }
 
+object Ng1Controller {
+  @scala.inline
+  def apply(
+    $onInit: js.Function0[scala.Unit],
+    uiCanExit: js.Function1[
+      atUirouterCoreLib.atUirouterCoreMod.Transition, 
+      atUirouterCoreLib.libTransitionInterfaceMod.HookResult
+    ],
+    uiOnParamsChanged: js.Function2[js.Any, atUirouterCoreLib.atUirouterCoreMod.Transition, scala.Unit]
+  ): Ng1Controller = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$onInit")($onInit)
+    __obj.updateDynamic("uiCanExit")(uiCanExit)
+    __obj.updateDynamic("uiOnParamsChanged")(uiOnParamsChanged)
+    __obj.asInstanceOf[Ng1Controller]
+  }
+}
+

@@ -7,37 +7,48 @@ import scala.scalajs.js.annotation._
 
 object rcDashTooltipLibStrings {
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Placement
   
   @js.native
-  sealed trait bottomLeft extends js.Object
+  sealed trait bottomLeft
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Placement
   
   @js.native
-  sealed trait bottomRight extends js.Object
+  sealed trait bottomRight
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Placement
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Trigger
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait focus
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Trigger
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait hover
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Trigger
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Placement
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Placement
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Placement
   
   @js.native
-  sealed trait topLeft extends js.Object
+  sealed trait topLeft
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Placement
   
   @js.native
-  sealed trait topRight extends js.Object
+  sealed trait topRight
+    extends rcDashTooltipLib.rcDashTooltipMod.RCTooltipNs.Placement
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

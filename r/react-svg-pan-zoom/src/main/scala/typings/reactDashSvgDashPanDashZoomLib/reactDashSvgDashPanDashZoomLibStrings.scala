@@ -7,40 +7,53 @@ import scala.scalajs.js.annotation._
 
 object reactDashSvgDashPanDashZoomLibStrings {
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Tool
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.ToolbarPosition
   
   @js.native
-  sealed trait idle extends js.Object
+  sealed trait idle
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Mode
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.ToolbarPosition
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Tool
+       with reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.ToolbarPosition
   
   @js.native
-  sealed trait pan extends js.Object
+  sealed trait pan
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Tool
   
   @js.native
-  sealed trait panning extends js.Object
+  sealed trait panning
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Mode
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.ToolbarPosition
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.ToolbarPosition
   
   @js.native
-  sealed trait `zoom-in` extends js.Object
+  sealed trait `zoom-in`
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Tool
   
   @js.native
-  sealed trait `zoom-out` extends js.Object
+  sealed trait `zoom-out`
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Tool
   
   @js.native
-  sealed trait zooming extends js.Object
+  sealed trait zooming
+    extends reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomMod.Mode
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]

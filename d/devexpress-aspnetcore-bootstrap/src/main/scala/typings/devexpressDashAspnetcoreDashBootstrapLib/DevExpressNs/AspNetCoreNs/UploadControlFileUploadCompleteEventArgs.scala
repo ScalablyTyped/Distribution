@@ -12,3 +12,22 @@ trait UploadControlFileUploadCompleteEventArgs extends EventArgs {
   val isValid: scala.Boolean
 }
 
+object UploadControlFileUploadCompleteEventArgs {
+  @scala.inline
+  def apply(
+    callbackData: java.lang.String,
+    errorText: java.lang.String,
+    inputIndex: scala.Double,
+    isValid: scala.Boolean,
+    sender: Control
+  ): UploadControlFileUploadCompleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callbackData")(callbackData)
+    __obj.updateDynamic("errorText")(errorText)
+    __obj.updateDynamic("inputIndex")(inputIndex)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[UploadControlFileUploadCompleteEventArgs]
+  }
+}
+

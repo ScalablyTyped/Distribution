@@ -11,3 +11,17 @@ trait PreAutoCloseEvent extends js.Object {
   def cancel(): scala.Unit
 }
 
+object PreAutoCloseEvent {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[scala.Unit],
+    cause: stdLib.Event,
+    `type`: inboxsdkLib.inboxsdkLibStrings.outsideInteraction | inboxsdkLib.inboxsdkLibStrings.escape
+  ): PreAutoCloseEvent = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("cause")(cause)
+    __obj.asInstanceOf[PreAutoCloseEvent]
+  }
+}
+

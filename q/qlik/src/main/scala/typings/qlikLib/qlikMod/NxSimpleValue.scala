@@ -10,3 +10,13 @@ trait NxSimpleValue extends js.Object {
   var qText: java.lang.String
 }
 
+object NxSimpleValue {
+  @scala.inline
+  def apply(qNum: scala.Double, qText: java.lang.String): NxSimpleValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qNum")(qNum)
+    __obj.updateDynamic("qText")(qText)
+    __obj.asInstanceOf[NxSimpleValue]
+  }
+}
+

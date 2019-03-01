@@ -7,16 +7,19 @@ import scala.scalajs.js.annotation._
 
 object dropboxDashChooserLibStrings {
   @js.native
-  sealed trait crop extends js.Object
+  sealed trait crop
+    extends dropboxDashChooserLib.DropboxNs.ChooserFileMode
   
   @js.native
   sealed trait direct extends js.Object
   
   @js.native
-  sealed trait fit extends js.Object
+  sealed trait fit
+    extends dropboxDashChooserLib.DropboxNs.ChooserFileMode
   
   @js.native
-  sealed trait fit_one_and_overflow extends js.Object
+  sealed trait fit_one_and_overflow
+    extends dropboxDashChooserLib.DropboxNs.ChooserFileMode
   
   @js.native
   sealed trait preview extends js.Object

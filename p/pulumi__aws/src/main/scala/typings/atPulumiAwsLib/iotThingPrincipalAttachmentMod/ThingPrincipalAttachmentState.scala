@@ -16,3 +16,16 @@ trait ThingPrincipalAttachmentState extends js.Object {
   val thing: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ThingPrincipalAttachmentState {
+  @scala.inline
+  def apply(
+    principal: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN] = null,
+    thing: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ThingPrincipalAttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
+    if (thing != null) __obj.updateDynamic("thing")(thing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThingPrincipalAttachmentState]
+  }
+}
+

@@ -45,3 +45,30 @@ trait QueryParserOptions extends js.Object {
   var strictNullHandling: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object QueryParserOptions {
+  @scala.inline
+  def apply(
+    allowDots: js.UndefOr[scala.Boolean] = js.undefined,
+    arrayLimit: scala.Int | scala.Double = null,
+    depth: scala.Int | scala.Double = null,
+    mapParams: js.UndefOr[scala.Boolean] = js.undefined,
+    overrideParams: js.UndefOr[scala.Boolean] = js.undefined,
+    parameterLimit: scala.Int | scala.Double = null,
+    parseArrays: js.UndefOr[scala.Boolean] = js.undefined,
+    plainObjects: js.UndefOr[scala.Boolean] = js.undefined,
+    strictNullHandling: js.UndefOr[scala.Boolean] = js.undefined
+  ): QueryParserOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots)
+    if (arrayLimit != null) __obj.updateDynamic("arrayLimit")(arrayLimit.asInstanceOf[js.Any])
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams)
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams)
+    if (parameterLimit != null) __obj.updateDynamic("parameterLimit")(parameterLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseArrays)) __obj.updateDynamic("parseArrays")(parseArrays)
+    if (!js.isUndefined(plainObjects)) __obj.updateDynamic("plainObjects")(plainObjects)
+    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling)
+    __obj.asInstanceOf[QueryParserOptions]
+  }
+}
+

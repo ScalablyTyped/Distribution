@@ -13,3 +13,12 @@ trait SetAddonsConfigRequest extends js.Object {
   var addonsConfig: js.UndefOr[AddonsConfig] = js.undefined
 }
 
+object SetAddonsConfigRequest {
+  @scala.inline
+  def apply(addonsConfig: AddonsConfig = null): SetAddonsConfigRequest = {
+    val __obj = js.Dynamic.literal()
+    if (addonsConfig != null) __obj.updateDynamic("addonsConfig")(addonsConfig)
+    __obj.asInstanceOf[SetAddonsConfigRequest]
+  }
+}
+

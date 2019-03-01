@@ -114,3 +114,40 @@ trait WorksheetProtectionOptions extends js.Object {
   ] = js.undefined
 }
 
+object WorksheetProtectionOptions {
+  @scala.inline
+  def apply(
+    allowAutoFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDeleteColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDeleteRows: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEditObjects: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEditScenarios: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFormatCells: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFormatColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFormatRows: js.UndefOr[scala.Boolean] = js.undefined,
+    allowInsertColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    allowInsertHyperlinks: js.UndefOr[scala.Boolean] = js.undefined,
+    allowInsertRows: js.UndefOr[scala.Boolean] = js.undefined,
+    allowPivotTables: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSort: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionMode: ProtectionSelectionMode | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Normal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unlocked | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None = null
+  ): WorksheetProtectionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowAutoFilter)) __obj.updateDynamic("allowAutoFilter")(allowAutoFilter)
+    if (!js.isUndefined(allowDeleteColumns)) __obj.updateDynamic("allowDeleteColumns")(allowDeleteColumns)
+    if (!js.isUndefined(allowDeleteRows)) __obj.updateDynamic("allowDeleteRows")(allowDeleteRows)
+    if (!js.isUndefined(allowEditObjects)) __obj.updateDynamic("allowEditObjects")(allowEditObjects)
+    if (!js.isUndefined(allowEditScenarios)) __obj.updateDynamic("allowEditScenarios")(allowEditScenarios)
+    if (!js.isUndefined(allowFormatCells)) __obj.updateDynamic("allowFormatCells")(allowFormatCells)
+    if (!js.isUndefined(allowFormatColumns)) __obj.updateDynamic("allowFormatColumns")(allowFormatColumns)
+    if (!js.isUndefined(allowFormatRows)) __obj.updateDynamic("allowFormatRows")(allowFormatRows)
+    if (!js.isUndefined(allowInsertColumns)) __obj.updateDynamic("allowInsertColumns")(allowInsertColumns)
+    if (!js.isUndefined(allowInsertHyperlinks)) __obj.updateDynamic("allowInsertHyperlinks")(allowInsertHyperlinks)
+    if (!js.isUndefined(allowInsertRows)) __obj.updateDynamic("allowInsertRows")(allowInsertRows)
+    if (!js.isUndefined(allowPivotTables)) __obj.updateDynamic("allowPivotTables")(allowPivotTables)
+    if (!js.isUndefined(allowSort)) __obj.updateDynamic("allowSort")(allowSort)
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetProtectionOptions]
+  }
+}
+

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Navigation")
 @js.native
-class Navigation () extends js.Object {
+class Navigation ()
+  extends swiperLib.swiperMod.SwiperModule {
   /**
     * HTMLElement of "next" navigation button
     */

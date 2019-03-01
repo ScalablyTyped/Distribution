@@ -13,3 +13,13 @@ trait I2cTransferResult extends js.Object {
   var status: I2cTransferStatus
 }
 
+object I2cTransferResult {
+  @scala.inline
+  def apply(bytesTransferred: scala.Double, status: I2cTransferStatus): I2cTransferResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bytesTransferred")(bytesTransferred)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[I2cTransferResult]
+  }
+}
+

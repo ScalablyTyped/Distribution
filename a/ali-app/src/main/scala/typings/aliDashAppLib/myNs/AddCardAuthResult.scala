@@ -26,3 +26,20 @@ trait AddCardAuthResult extends js.Object {
   var success: (aliDashAppLib.aliDashAppLibNumbers.`true` | scala.Boolean) with (aliDashAppLib.aliDashAppLibNumbers.`false` | scala.Boolean)
 }
 
+object AddCardAuthResult {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    result: aliDashAppLib.Anon_Appid,
+    resultStatus: java.lang.String,
+    success: (aliDashAppLib.aliDashAppLibNumbers.`true` | scala.Boolean) with (aliDashAppLib.aliDashAppLibNumbers.`false` | scala.Boolean)
+  ): AddCardAuthResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("resultStatus")(resultStatus)
+    __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AddCardAuthResult]
+  }
+}
+

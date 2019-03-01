@@ -20,3 +20,18 @@ trait MapTask extends js.Object {
   var systemName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MapTask {
+  @scala.inline
+  def apply(
+    instructions: js.Array[ParallelInstruction] = null,
+    stageName: java.lang.String = null,
+    systemName: java.lang.String = null
+  ): MapTask = {
+    val __obj = js.Dynamic.literal()
+    if (instructions != null) __obj.updateDynamic("instructions")(instructions)
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName)
+    if (systemName != null) __obj.updateDynamic("systemName")(systemName)
+    __obj.asInstanceOf[MapTask]
+  }
+}
+

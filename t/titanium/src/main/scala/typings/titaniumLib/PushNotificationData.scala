@@ -20,3 +20,13 @@ trait PushNotificationData extends js.Object {
   var inBackground: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PushNotificationData {
+  @scala.inline
+  def apply(data: js.Any = null, inBackground: js.UndefOr[scala.Boolean] = js.undefined): PushNotificationData = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(inBackground)) __obj.updateDynamic("inBackground")(inBackground)
+    __obj.asInstanceOf[PushNotificationData]
+  }
+}
+

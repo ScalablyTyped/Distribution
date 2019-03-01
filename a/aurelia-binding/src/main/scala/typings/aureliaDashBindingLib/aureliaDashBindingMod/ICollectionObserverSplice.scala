@@ -46,3 +46,26 @@ trait ICollectionObserverSplice[T, K] extends js.Object {
   var value: T
 }
 
+object ICollectionObserverSplice {
+  @scala.inline
+  def apply[T, K](
+    addedCount: scala.Double,
+    index: scala.Double,
+    key: K,
+    `object`: stdLib.Set[T] | (stdLib.Map[K, T]),
+    oldValue: T,
+    removed: js.Array[T],
+    `type`: aureliaDashBindingLib.aureliaDashBindingLibStrings.add | aureliaDashBindingLib.aureliaDashBindingLibStrings.delete | aureliaDashBindingLib.aureliaDashBindingLibStrings.update | aureliaDashBindingLib.aureliaDashBindingLibStrings.clear,
+    value: T
+  ): ICollectionObserverSplice[T, K] = {
+    val __obj = js.Dynamic.literal(`object` = `object`.asInstanceOf[js.Any], `type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("addedCount")(addedCount)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("removed")(removed)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICollectionObserverSplice[T, K]]
+  }
+}
+

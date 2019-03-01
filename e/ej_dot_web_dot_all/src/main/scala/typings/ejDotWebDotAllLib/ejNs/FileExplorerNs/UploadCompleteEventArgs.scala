@@ -32,3 +32,28 @@ trait UploadCompleteEventArgs extends js.Object {
   var xhr: js.UndefOr[js.Any] = js.undefined
 }
 
+object UploadCompleteEventArgs {
+  @scala.inline
+  def apply(
+    e: js.Any = null,
+    error: java.lang.String = null,
+    files: js.Any = null,
+    model: js.Any = null,
+    responseText: java.lang.String = null,
+    success: js.Any = null,
+    `type`: java.lang.String = null,
+    xhr: js.Any = null
+  ): UploadCompleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (e != null) __obj.updateDynamic("e")(e)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (responseText != null) __obj.updateDynamic("responseText")(responseText)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[UploadCompleteEventArgs]
+  }
+}
+

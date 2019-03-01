@@ -12,3 +12,12 @@ trait PropertyBag extends js.Object {
   var bag: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object PropertyBag {
+  @scala.inline
+  def apply(bag: org.scalablytyped.runtime.StringDictionary[java.lang.String]): PropertyBag = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bag")(bag)
+    __obj.asInstanceOf[PropertyBag]
+  }
+}
+

@@ -33,3 +33,34 @@ trait Anon_AltCategory extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltCategory {
+  @scala.inline
+  def apply(
+    siteUrl: java.lang.String,
+    alt: java.lang.String = null,
+    category: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    latestCountsOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    oauth_token: java.lang.String = null,
+    platform: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltCategory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("siteUrl")(siteUrl)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(latestCountsOnly)) __obj.updateDynamic("latestCountsOnly")(latestCountsOnly)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltCategory]
+  }
+}
+

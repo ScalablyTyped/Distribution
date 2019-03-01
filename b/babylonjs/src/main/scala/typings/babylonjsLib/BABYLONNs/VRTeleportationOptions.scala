@@ -19,3 +19,13 @@ trait VRTeleportationOptions extends js.Object {
   var floorMeshes: js.UndefOr[js.Array[Mesh]] = js.undefined
 }
 
+object VRTeleportationOptions {
+  @scala.inline
+  def apply(floorMeshName: java.lang.String = null, floorMeshes: js.Array[Mesh] = null): VRTeleportationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (floorMeshName != null) __obj.updateDynamic("floorMeshName")(floorMeshName)
+    if (floorMeshes != null) __obj.updateDynamic("floorMeshes")(floorMeshes)
+    __obj.asInstanceOf[VRTeleportationOptions]
+  }
+}
+

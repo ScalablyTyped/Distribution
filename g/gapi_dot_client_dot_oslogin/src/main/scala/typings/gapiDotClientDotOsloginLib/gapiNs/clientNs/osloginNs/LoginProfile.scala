@@ -16,3 +16,20 @@ trait LoginProfile extends js.Object {
   var suspended: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LoginProfile {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    posixAccounts: js.Array[PosixAccount] = null,
+    sshPublicKeys: stdLib.Record[java.lang.String, SshPublicKey] = null,
+    suspended: js.UndefOr[scala.Boolean] = js.undefined
+  ): LoginProfile = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (posixAccounts != null) __obj.updateDynamic("posixAccounts")(posixAccounts)
+    if (sshPublicKeys != null) __obj.updateDynamic("sshPublicKeys")(sshPublicKeys)
+    if (!js.isUndefined(suspended)) __obj.updateDynamic("suspended")(suspended)
+    __obj.asInstanceOf[LoginProfile]
+  }
+}
+

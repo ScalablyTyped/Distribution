@@ -20,3 +20,13 @@ trait ChangeTableRowPreferredHeightCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeTableRowPreferredHeightCommand {
+  @scala.inline
+  def apply(execute: js.Function1[TableHeightUnit, scala.Boolean], getState: js.Function0[js.Any]): ChangeTableRowPreferredHeightCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeTableRowPreferredHeightCommand]
+  }
+}
+

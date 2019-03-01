@@ -9,3 +9,17 @@ trait Anon_Context extends js.Object {
   def renderer(context: atOracleOraclejetLib.ojchartMod.ojChartNs.TooltipContext): Anon_Insert | Anon_PreventDefault
 }
 
+object Anon_Context {
+  @scala.inline
+  def apply(
+    renderer: js.Function1[
+      atOracleOraclejetLib.ojchartMod.ojChartNs.TooltipContext, 
+      Anon_Insert | Anon_PreventDefault
+    ]
+  ): Anon_Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderer")(renderer)
+    __obj.asInstanceOf[Anon_Context]
+  }
+}
+

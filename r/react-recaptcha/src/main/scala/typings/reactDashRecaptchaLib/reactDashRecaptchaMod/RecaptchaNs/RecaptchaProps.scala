@@ -34,3 +34,44 @@ trait RecaptchaProps extends js.Object {
   var verifyCallbackName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RecaptchaProps {
+  @scala.inline
+  def apply(
+    badge: reactDashRecaptchaLib.reactDashRecaptchaLibStrings.bottomright | reactDashRecaptchaLib.reactDashRecaptchaLibStrings.bottomleft | reactDashRecaptchaLib.reactDashRecaptchaLibStrings.`inline` = null,
+    className: java.lang.String = null,
+    elementID: java.lang.String = null,
+    expiredCallback: js.Function0[_] = null,
+    expiredCallbackName: java.lang.String = null,
+    hl: java.lang.String = null,
+    onloadCallback: js.Function0[_] = null,
+    onloadCallbackName: java.lang.String = null,
+    render: reactDashRecaptchaLib.reactDashRecaptchaLibStrings.onload | reactDashRecaptchaLib.reactDashRecaptchaLibStrings.explicit = null,
+    sitekey: java.lang.String = null,
+    size: reactDashRecaptchaLib.reactDashRecaptchaLibStrings.normal | reactDashRecaptchaLib.reactDashRecaptchaLibStrings.compact | reactDashRecaptchaLib.reactDashRecaptchaLibStrings.invisible = null,
+    tabindex: scala.Double | java.lang.String = null,
+    theme: reactDashRecaptchaLib.reactDashRecaptchaLibStrings.dark | reactDashRecaptchaLib.reactDashRecaptchaLibStrings.light = null,
+    `type`: reactDashRecaptchaLib.reactDashRecaptchaLibStrings.audio | reactDashRecaptchaLib.reactDashRecaptchaLibStrings.image = null,
+    verifyCallback: js.Function1[/* response */ java.lang.String, _] = null,
+    verifyCallbackName: java.lang.String = null
+  ): RecaptchaProps = {
+    val __obj = js.Dynamic.literal()
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (elementID != null) __obj.updateDynamic("elementID")(elementID)
+    if (expiredCallback != null) __obj.updateDynamic("expiredCallback")(expiredCallback)
+    if (expiredCallbackName != null) __obj.updateDynamic("expiredCallbackName")(expiredCallbackName)
+    if (hl != null) __obj.updateDynamic("hl")(hl)
+    if (onloadCallback != null) __obj.updateDynamic("onloadCallback")(onloadCallback)
+    if (onloadCallbackName != null) __obj.updateDynamic("onloadCallbackName")(onloadCallbackName)
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
+    if (sitekey != null) __obj.updateDynamic("sitekey")(sitekey)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (verifyCallback != null) __obj.updateDynamic("verifyCallback")(verifyCallback)
+    if (verifyCallbackName != null) __obj.updateDynamic("verifyCallbackName")(verifyCallbackName)
+    __obj.asInstanceOf[RecaptchaProps]
+  }
+}
+

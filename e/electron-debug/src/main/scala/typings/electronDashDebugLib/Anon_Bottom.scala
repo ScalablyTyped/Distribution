@@ -14,3 +14,16 @@ trait Anon_Bottom extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Bottom {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    showDevTools: scala.Boolean | electronDashDebugLib.electronDashDebugLibStrings.right | electronDashDebugLib.electronDashDebugLibStrings.bottom | electronDashDebugLib.electronDashDebugLibStrings.undocked = null
+  ): Anon_Bottom = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (showDevTools != null) __obj.updateDynamic("showDevTools")(showDevTools.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Bottom]
+  }
+}
+

@@ -28,3 +28,22 @@ trait GulpHelpOptions extends js.Object {
   var hideEmpty: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GulpHelpOptions {
+  @scala.inline
+  def apply(
+    afterPrintCallback: js.Function = null,
+    aliases: js.Array[java.lang.String] = null,
+    description: java.lang.String = null,
+    hideDepsMessage: js.UndefOr[scala.Boolean] = js.undefined,
+    hideEmpty: js.UndefOr[scala.Boolean] = js.undefined
+  ): GulpHelpOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterPrintCallback != null) __obj.updateDynamic("afterPrintCallback")(afterPrintCallback)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(hideDepsMessage)) __obj.updateDynamic("hideDepsMessage")(hideDepsMessage)
+    if (!js.isUndefined(hideEmpty)) __obj.updateDynamic("hideEmpty")(hideEmpty)
+    __obj.asInstanceOf[GulpHelpOptions]
+  }
+}
+

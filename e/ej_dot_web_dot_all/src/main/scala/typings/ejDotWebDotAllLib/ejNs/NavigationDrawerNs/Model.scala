@@ -72,3 +72,48 @@ trait Model extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    ajaxComplete: js.Function1[/* e */ AjaxCompleteEventArgs, scala.Unit] = null,
+    ajaxError: js.Function1[/* e */ AjaxErrorEventArgs, scala.Unit] = null,
+    ajaxSettings: AjaxSettings = null,
+    ajaxSuccess: js.Function1[/* e */ AjaxSuccessEventArgs, scala.Unit] = null,
+    beforeClose: js.Function1[/* e */ BeforeCloseEventArgs, scala.Unit] = null,
+    contentId: java.lang.String = null,
+    cssClass: java.lang.String = null,
+    direction: ejDotWebDotAllLib.ejNs.Direction | java.lang.String = null,
+    enableListView: js.UndefOr[scala.Boolean] = js.undefined,
+    isPaneOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    items: js.Array[_] = null,
+    listViewSettings: js.Any = null,
+    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    position: java.lang.String = null,
+    swipe: js.Function1[/* e */ SwipeEventArgs, scala.Unit] = null,
+    targetId: java.lang.String = null,
+    `type`: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (ajaxComplete != null) __obj.updateDynamic("ajaxComplete")(ajaxComplete)
+    if (ajaxError != null) __obj.updateDynamic("ajaxError")(ajaxError)
+    if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings)
+    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(ajaxSuccess)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableListView)) __obj.updateDynamic("enableListView")(enableListView)
+    if (!js.isUndefined(isPaneOpen)) __obj.updateDynamic("isPaneOpen")(isPaneOpen)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (listViewSettings != null) __obj.updateDynamic("listViewSettings")(listViewSettings)
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (swipe != null) __obj.updateDynamic("swipe")(swipe)
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

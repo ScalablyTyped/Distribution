@@ -44,3 +44,13 @@ trait WorkerMessageCode extends js.Object {
   var parameters: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object WorkerMessageCode {
+  @scala.inline
+  def apply(code: java.lang.String = null, parameters: stdLib.Record[java.lang.String, _] = null): WorkerMessageCode = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.asInstanceOf[WorkerMessageCode]
+  }
+}
+

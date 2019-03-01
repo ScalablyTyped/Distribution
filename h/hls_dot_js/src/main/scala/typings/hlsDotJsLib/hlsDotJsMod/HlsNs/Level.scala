@@ -67,3 +67,40 @@ trait Level extends js.Object {
   var width: scala.Double
 }
 
+object Level {
+  @scala.inline
+  def apply(
+    attrs: js.Array[LevelAttr],
+    audioCodec: java.lang.String,
+    bitrate: scala.Double,
+    height: scala.Double,
+    loadError: scala.Double,
+    name: java.lang.String,
+    unkownCodecs: js.Array[java.lang.String],
+    url: js.Array[java.lang.String],
+    urlId: scala.Double,
+    videoCodec: java.lang.String,
+    width: scala.Double,
+    details: LevelDetails = null,
+    fragmentError: js.UndefOr[scala.Boolean] = js.undefined,
+    level: scala.Int | scala.Double = null
+  ): Level = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attrs")(attrs)
+    __obj.updateDynamic("audioCodec")(audioCodec)
+    __obj.updateDynamic("bitrate")(bitrate)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("loadError")(loadError)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("unkownCodecs")(unkownCodecs)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("urlId")(urlId)
+    __obj.updateDynamic("videoCodec")(videoCodec)
+    __obj.updateDynamic("width")(width)
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (!js.isUndefined(fragmentError)) __obj.updateDynamic("fragmentError")(fragmentError)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Level]
+  }
+}
+

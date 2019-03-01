@@ -29,3 +29,20 @@ trait Options extends js.Object {
   var slidingSubmenus: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    extensions: js.Array[js.Object] = null,
+    navbar: NavbarOptions = null,
+    onClick: OnclickOptions = null,
+    slidingSubmenus: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (navbar != null) __obj.updateDynamic("navbar")(navbar)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (!js.isUndefined(slidingSubmenus)) __obj.updateDynamic("slidingSubmenus")(slidingSubmenus)
+    __obj.asInstanceOf[Options]
+  }
+}
+

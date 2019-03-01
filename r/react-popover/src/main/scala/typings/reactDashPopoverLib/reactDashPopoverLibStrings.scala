@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object reactDashPopoverLibStrings {
   @js.native
-  sealed trait above extends js.Object
+  sealed trait above
+    extends reactDashPopoverLib.reactDashPopoverMod.PopoverNs.PopoverPlace
   
   @js.native
-  sealed trait below extends js.Object
+  sealed trait below
+    extends reactDashPopoverLib.reactDashPopoverMod.PopoverNs.PopoverPlace
   
   @js.native
-  sealed trait column extends js.Object
+  sealed trait column
+    extends reactDashPopoverLib.reactDashPopoverMod.PopoverNs.PopoverPlace
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends reactDashPopoverLib.reactDashPopoverMod.PopoverNs.PopoverPlace
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashPopoverLib.reactDashPopoverMod.PopoverNs.PopoverPlace
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashPopoverLib.reactDashPopoverMod.PopoverNs.PopoverPlace
   
   @js.native
-  sealed trait row extends js.Object
+  sealed trait row
+    extends reactDashPopoverLib.reactDashPopoverMod.PopoverNs.PopoverPlace
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends reactDashPopoverLib.reactDashPopoverMod.PopoverNs.PopoverPlace
   
   @scala.inline
   def above: above = "above".asInstanceOf[above]

@@ -12,3 +12,13 @@ trait TypesListResponse extends js.Object {
   var types: js.UndefOr[js.Array[Type]] = js.undefined
 }
 
+object TypesListResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, types: js.Array[Type] = null): TypesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[TypesListResponse]
+  }
+}
+

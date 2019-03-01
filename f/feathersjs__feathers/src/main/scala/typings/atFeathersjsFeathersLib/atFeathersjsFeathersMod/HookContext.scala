@@ -73,3 +73,35 @@ trait HookContext[T] extends js.Object {
   val `type`: atFeathersjsFeathersLib.atFeathersjsFeathersLibStrings.before | atFeathersjsFeathersLib.atFeathersjsFeathersLibStrings.after | atFeathersjsFeathersLib.atFeathersjsFeathersLibStrings.error
 }
 
+object HookContext {
+  @scala.inline
+  def apply[T](
+    app: Application[_],
+    method: java.lang.String,
+    params: Params,
+    path: java.lang.String,
+    service: Service[T],
+    `type`: atFeathersjsFeathersLib.atFeathersjsFeathersLibStrings.before | atFeathersjsFeathersLib.atFeathersjsFeathersLibStrings.after | atFeathersjsFeathersLib.atFeathersjsFeathersLibStrings.error,
+    data: T = null,
+    dispatch: T = null,
+    error: js.Any = null,
+    id: java.lang.String | scala.Double = null,
+    result: T = null,
+    statusCode: scala.Int | scala.Double = null
+  ): HookContext[T] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("app")(app)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("service")(service)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dispatch != null) __obj.updateDynamic("dispatch")(dispatch.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HookContext[T]]
+  }
+}
+

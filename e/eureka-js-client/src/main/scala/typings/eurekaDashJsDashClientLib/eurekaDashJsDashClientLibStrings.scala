@@ -7,37 +7,48 @@ import scala.scalajs.js.annotation._
 
 object eurekaDashJsDashClientLibStrings {
   @js.native
-  sealed trait ADDED extends js.Object
+  sealed trait ADDED
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.ActionType
   
   @js.native
-  sealed trait Amazon extends js.Object
+  sealed trait Amazon
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.DataCenterName
   
   @js.native
-  sealed trait DELETED extends js.Object
+  sealed trait DELETED
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.ActionType
   
   @js.native
-  sealed trait DOWN extends js.Object
+  sealed trait DOWN
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.InstanceStatus
   
   @js.native
-  sealed trait MODIFIED extends js.Object
+  sealed trait MODIFIED
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.ActionType
   
   @js.native
-  sealed trait MyOwn extends js.Object
+  sealed trait MyOwn
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.DataCenterName
   
   @js.native
-  sealed trait Netflix extends js.Object
+  sealed trait Netflix
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.DataCenterName
   
   @js.native
-  sealed trait OUT_OF_SERVICE extends js.Object
+  sealed trait OUT_OF_SERVICE
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.InstanceStatus
   
   @js.native
-  sealed trait STARTING extends js.Object
+  sealed trait STARTING
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.InstanceStatus
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.InstanceStatus
   
   @js.native
-  sealed trait UP extends js.Object
+  sealed trait UP
+    extends eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.InstanceStatus
   
   @scala.inline
   def ADDED: ADDED = "ADDED".asInstanceOf[ADDED]

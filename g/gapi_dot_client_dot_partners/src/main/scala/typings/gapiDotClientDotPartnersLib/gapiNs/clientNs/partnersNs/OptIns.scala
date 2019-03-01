@@ -24,3 +24,22 @@ trait OptIns extends js.Object {
   var specialOffers: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OptIns {
+  @scala.inline
+  def apply(
+    marketComm: js.UndefOr[scala.Boolean] = js.undefined,
+    performanceSuggestions: js.UndefOr[scala.Boolean] = js.undefined,
+    phoneContact: js.UndefOr[scala.Boolean] = js.undefined,
+    physicalMail: js.UndefOr[scala.Boolean] = js.undefined,
+    specialOffers: js.UndefOr[scala.Boolean] = js.undefined
+  ): OptIns = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(marketComm)) __obj.updateDynamic("marketComm")(marketComm)
+    if (!js.isUndefined(performanceSuggestions)) __obj.updateDynamic("performanceSuggestions")(performanceSuggestions)
+    if (!js.isUndefined(phoneContact)) __obj.updateDynamic("phoneContact")(phoneContact)
+    if (!js.isUndefined(physicalMail)) __obj.updateDynamic("physicalMail")(physicalMail)
+    if (!js.isUndefined(specialOffers)) __obj.updateDynamic("specialOffers")(specialOffers)
+    __obj.asInstanceOf[OptIns]
+  }
+}
+

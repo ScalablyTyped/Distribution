@@ -20,3 +20,18 @@ trait TimeEvents extends js.Object {
   var timeEvent: js.UndefOr[js.Array[TimeEvent]] = js.undefined
 }
 
+object TimeEvents {
+  @scala.inline
+  def apply(
+    droppedAnnotationsCount: scala.Int | scala.Double = null,
+    droppedNetworkEventsCount: scala.Int | scala.Double = null,
+    timeEvent: js.Array[TimeEvent] = null
+  ): TimeEvents = {
+    val __obj = js.Dynamic.literal()
+    if (droppedAnnotationsCount != null) __obj.updateDynamic("droppedAnnotationsCount")(droppedAnnotationsCount.asInstanceOf[js.Any])
+    if (droppedNetworkEventsCount != null) __obj.updateDynamic("droppedNetworkEventsCount")(droppedNetworkEventsCount.asInstanceOf[js.Any])
+    if (timeEvent != null) __obj.updateDynamic("timeEvent")(timeEvent)
+    __obj.asInstanceOf[TimeEvents]
+  }
+}
+

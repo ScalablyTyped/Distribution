@@ -64,3 +64,35 @@ import scala.scalajs.js.annotation._
   var properties: js.UndefOr[Props] = js.undefined
 }
 
+object ComponentOptions {
+  @scala.inline
+  def apply[Instance /* <: Component[Data, Props] */, Data, Methods, Props](
+    behaviors: js.Array[
+      (ComponentOptions[
+        Component[js.Object, js.Object], 
+        DefaultData[Component[js.Object, js.Object]], 
+        DefaultMethods[Component[js.Object, js.Object]], 
+        PropsDefinition[DefaultProps]
+      ]) | java.lang.String
+    ] = null,
+    data: Data = null,
+    externalClasses: js.Array[java.lang.String] = null,
+    lifetimes: stdLib.Partial[Lifetimes] = null,
+    methods: Methods = null,
+    options: stdLib.Partial[baiduDashAppLib.Anon_AddGlobalClass] = null,
+    pageLifetimes: stdLib.Partial[PageLifetimes] = null,
+    properties: Props = null
+  ): ComponentOptions[Instance, Data, Methods, Props] = {
+    val __obj = js.Dynamic.literal()
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (externalClasses != null) __obj.updateDynamic("externalClasses")(externalClasses)
+    if (lifetimes != null) __obj.updateDynamic("lifetimes")(lifetimes)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (pageLifetimes != null) __obj.updateDynamic("pageLifetimes")(pageLifetimes)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComponentOptions[Instance, Data, Methods, Props]]
+  }
+}
+

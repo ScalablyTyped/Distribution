@@ -9,3 +9,13 @@ trait TabControlTabEventArgs extends EventArgs {
   val tab: BootstrapTab
 }
 
+object TabControlTabEventArgs {
+  @scala.inline
+  def apply(sender: Control, tab: BootstrapTab): TabControlTabEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sender")(sender)
+    __obj.updateDynamic("tab")(tab)
+    __obj.asInstanceOf[TabControlTabEventArgs]
+  }
+}
+

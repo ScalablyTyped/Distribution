@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/compiler/src/i18n/i18n_ast", "Message")
 @js.native
-class Message protected () extends js.Object {
+class Message protected () extends AST {
   /**
     * @param nodes message AST
     * @param placeholders maps placeholder names to static content

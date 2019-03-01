@@ -1841,9 +1841,29 @@ object KMSNs extends js.Object {
     var KeyId: KeyIdType
   }
   
+  trait _AlgorithmSpec extends js.Object
+  
+  trait _ConnectionErrorCodeType extends js.Object
+  
+  trait _ConnectionStateType extends js.Object
+  
+  trait _DataKeySpec extends js.Object
+  
+  trait _ExpirationModelType extends js.Object
+  
+  trait _GrantOperation extends js.Object
+  
+  trait _KeyManagerType extends js.Object
+  
+  trait _KeyState extends js.Object
+  
+  trait _OriginType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AWSAccountIdType = java.lang.String
-  type AlgorithmSpec = awsDashSdkLib.awsDashSdkLibStrings.RSAES_PKCS1_V1_5 | awsDashSdkLib.awsDashSdkLibStrings.RSAES_OAEP_SHA_1 | awsDashSdkLib.awsDashSdkLibStrings.RSAES_OAEP_SHA_256 | java.lang.String
+  type AlgorithmSpec = _AlgorithmSpec | java.lang.String
   type AliasList = js.Array[AliasListEntry]
   type AliasNameType = java.lang.String
   type ArnType = java.lang.String
@@ -1851,34 +1871,34 @@ object KMSNs extends js.Object {
   type CiphertextType = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsKmsMod.Blob | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CloudHsmClusterIdType = java.lang.String
-  type ConnectionErrorCodeType = awsDashSdkLib.awsDashSdkLibStrings.INVALID_CREDENTIALS | awsDashSdkLib.awsDashSdkLibStrings.CLUSTER_NOT_FOUND | awsDashSdkLib.awsDashSdkLibStrings.NETWORK_ERRORS | awsDashSdkLib.awsDashSdkLibStrings.INSUFFICIENT_CLOUDHSM_HSMS | awsDashSdkLib.awsDashSdkLibStrings.USER_LOCKED_OUT | java.lang.String
-  type ConnectionStateType = awsDashSdkLib.awsDashSdkLibStrings.CONNECTED | awsDashSdkLib.awsDashSdkLibStrings.CONNECTING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.DISCONNECTED | awsDashSdkLib.awsDashSdkLibStrings.DISCONNECTING | java.lang.String
+  type ConnectionErrorCodeType = _ConnectionErrorCodeType | java.lang.String
+  type ConnectionStateType = _ConnectionStateType | java.lang.String
   type CustomKeyStoreIdType = java.lang.String
   type CustomKeyStoreNameType = java.lang.String
   type CustomKeyStoresList = js.Array[CustomKeyStoresListEntry]
-  type DataKeySpec = awsDashSdkLib.awsDashSdkLibStrings.AES_256 | awsDashSdkLib.awsDashSdkLibStrings.AES_128 | java.lang.String
+  type DataKeySpec = _DataKeySpec | java.lang.String
   type DateType = stdLib.Date
   type DescriptionType = java.lang.String
   type EncryptionContextKey = java.lang.String
   type EncryptionContextValue = java.lang.String
-  type ExpirationModelType = awsDashSdkLib.awsDashSdkLibStrings.KEY_MATERIAL_EXPIRES | awsDashSdkLib.awsDashSdkLibStrings.KEY_MATERIAL_DOES_NOT_EXPIRE | java.lang.String
+  type ExpirationModelType = _ExpirationModelType | java.lang.String
   type GrantIdType = java.lang.String
   type GrantList = js.Array[GrantListEntry]
   type GrantNameType = java.lang.String
-  type GrantOperation = awsDashSdkLib.awsDashSdkLibStrings.Decrypt | awsDashSdkLib.awsDashSdkLibStrings.Encrypt | awsDashSdkLib.awsDashSdkLibStrings.GenerateDataKey | awsDashSdkLib.awsDashSdkLibStrings.GenerateDataKeyWithoutPlaintext | awsDashSdkLib.awsDashSdkLibStrings.ReEncryptFrom | awsDashSdkLib.awsDashSdkLibStrings.ReEncryptTo | awsDashSdkLib.awsDashSdkLibStrings.CreateGrant | awsDashSdkLib.awsDashSdkLibStrings.RetireGrant | awsDashSdkLib.awsDashSdkLibStrings.DescribeKey | java.lang.String
+  type GrantOperation = _GrantOperation | java.lang.String
   type GrantOperationList = js.Array[GrantOperation]
   type GrantTokenList = js.Array[GrantTokenType]
   type GrantTokenType = java.lang.String
   type KeyIdType = java.lang.String
   type KeyList = js.Array[KeyListEntry]
-  type KeyManagerType = awsDashSdkLib.awsDashSdkLibStrings.AWS | awsDashSdkLib.awsDashSdkLibStrings.CUSTOMER | java.lang.String
-  type KeyState = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Disabled | awsDashSdkLib.awsDashSdkLibStrings.PendingDeletion | awsDashSdkLib.awsDashSdkLibStrings.PendingImport | awsDashSdkLib.awsDashSdkLibStrings.Unavailable | java.lang.String
+  type KeyManagerType = _KeyManagerType | java.lang.String
+  type KeyState = _KeyState | java.lang.String
   type KeyStorePasswordType = java.lang.String
   type KeyUsageType = awsDashSdkLib.awsDashSdkLibStrings.ENCRYPT_DECRYPT | java.lang.String
   type LimitType = scala.Double
   type MarkerType = java.lang.String
   type NumberOfBytesType = scala.Double
-  type OriginType = awsDashSdkLib.awsDashSdkLibStrings.AWS_KMS | awsDashSdkLib.awsDashSdkLibStrings.EXTERNAL | awsDashSdkLib.awsDashSdkLibStrings.AWS_CLOUDHSM | java.lang.String
+  type OriginType = _OriginType | java.lang.String
   type PendingWindowInDaysType = scala.Double
   type PlaintextType = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsKmsMod.Blob | java.lang.String
   type PolicyNameList = js.Array[PolicyNameType]
@@ -1891,6 +1911,6 @@ object KMSNs extends js.Object {
   type TagValueType = java.lang.String
   type TrustAnchorCertificateType = java.lang.String
   type WrappingKeySpec = awsDashSdkLib.awsDashSdkLibStrings.RSA_2048 | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2014-11-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

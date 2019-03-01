@@ -16,3 +16,20 @@ trait PerDeviceStatusInBatch extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PerDeviceStatusInBatch {
+  @scala.inline
+  def apply(
+    deviceId: java.lang.String = null,
+    errorIdentifier: java.lang.String = null,
+    errorMessage: java.lang.String = null,
+    status: java.lang.String = null
+  ): PerDeviceStatusInBatch = {
+    val __obj = js.Dynamic.literal()
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (errorIdentifier != null) __obj.updateDynamic("errorIdentifier")(errorIdentifier)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[PerDeviceStatusInBatch]
+  }
+}
+

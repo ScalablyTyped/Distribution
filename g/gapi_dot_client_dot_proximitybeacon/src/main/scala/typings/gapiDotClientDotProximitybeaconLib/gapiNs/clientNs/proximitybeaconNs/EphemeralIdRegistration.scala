@@ -51,3 +51,24 @@ trait EphemeralIdRegistration extends js.Object {
   var serviceEcdhPublicKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EphemeralIdRegistration {
+  @scala.inline
+  def apply(
+    beaconEcdhPublicKey: java.lang.String = null,
+    beaconIdentityKey: java.lang.String = null,
+    initialClockValue: java.lang.String = null,
+    initialEid: java.lang.String = null,
+    rotationPeriodExponent: scala.Int | scala.Double = null,
+    serviceEcdhPublicKey: java.lang.String = null
+  ): EphemeralIdRegistration = {
+    val __obj = js.Dynamic.literal()
+    if (beaconEcdhPublicKey != null) __obj.updateDynamic("beaconEcdhPublicKey")(beaconEcdhPublicKey)
+    if (beaconIdentityKey != null) __obj.updateDynamic("beaconIdentityKey")(beaconIdentityKey)
+    if (initialClockValue != null) __obj.updateDynamic("initialClockValue")(initialClockValue)
+    if (initialEid != null) __obj.updateDynamic("initialEid")(initialEid)
+    if (rotationPeriodExponent != null) __obj.updateDynamic("rotationPeriodExponent")(rotationPeriodExponent.asInstanceOf[js.Any])
+    if (serviceEcdhPublicKey != null) __obj.updateDynamic("serviceEcdhPublicKey")(serviceEcdhPublicKey)
+    __obj.asInstanceOf[EphemeralIdRegistration]
+  }
+}
+

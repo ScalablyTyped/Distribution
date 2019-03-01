@@ -35,3 +35,28 @@ trait InstanceGroupConfig extends js.Object {
   var numInstances: js.UndefOr[scala.Double] = js.undefined
 }
 
+object InstanceGroupConfig {
+  @scala.inline
+  def apply(
+    accelerators: js.Array[AcceleratorConfig] = null,
+    diskConfig: DiskConfig = null,
+    imageUri: java.lang.String = null,
+    instanceNames: js.Array[java.lang.String] = null,
+    isPreemptible: js.UndefOr[scala.Boolean] = js.undefined,
+    machineTypeUri: java.lang.String = null,
+    managedGroupConfig: ManagedGroupConfig = null,
+    numInstances: scala.Int | scala.Double = null
+  ): InstanceGroupConfig = {
+    val __obj = js.Dynamic.literal()
+    if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators)
+    if (diskConfig != null) __obj.updateDynamic("diskConfig")(diskConfig)
+    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri)
+    if (instanceNames != null) __obj.updateDynamic("instanceNames")(instanceNames)
+    if (!js.isUndefined(isPreemptible)) __obj.updateDynamic("isPreemptible")(isPreemptible)
+    if (machineTypeUri != null) __obj.updateDynamic("machineTypeUri")(machineTypeUri)
+    if (managedGroupConfig != null) __obj.updateDynamic("managedGroupConfig")(managedGroupConfig)
+    if (numInstances != null) __obj.updateDynamic("numInstances")(numInstances.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstanceGroupConfig]
+  }
+}
+

@@ -11,3 +11,14 @@ trait WhereNowStatus extends js.Object {
   var statusCode: scala.Double
 }
 
+object WhereNowStatus {
+  @scala.inline
+  def apply(error: scala.Boolean, operation: java.lang.String, statusCode: scala.Double): WhereNowStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("operation")(operation)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.asInstanceOf[WhereNowStatus]
+  }
+}
+

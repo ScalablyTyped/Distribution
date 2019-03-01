@@ -37,3 +37,36 @@ trait Options extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    autoColor: js.UndefOr[scala.Boolean] = js.undefined,
+    bounds: heremapsLib.HNs.geoNs.Rect = null,
+    center: heremapsLib.HNs.geoNs.IPoint = null,
+    engineType: EngineType = null,
+    fixedCenter: js.UndefOr[scala.Boolean] = js.undefined,
+    imprint: heremapsLib.HNs.mapNs.ImprintNs.Options = null,
+    layers: js.Array[heremapsLib.HNs.mapNs.layerNs.Layer] = null,
+    margin: scala.Int | scala.Double = null,
+    padding: heremapsLib.HNs.mapNs.ViewPortNs.Padding = null,
+    pixelRatio: scala.Int | scala.Double = null,
+    renderBaseBackground: BackgroundRange = null,
+    zoom: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoColor)) __obj.updateDynamic("autoColor")(autoColor)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (engineType != null) __obj.updateDynamic("engineType")(engineType)
+    if (!js.isUndefined(fixedCenter)) __obj.updateDynamic("fixedCenter")(fixedCenter)
+    if (imprint != null) __obj.updateDynamic("imprint")(imprint)
+    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (renderBaseBackground != null) __obj.updateDynamic("renderBaseBackground")(renderBaseBackground)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

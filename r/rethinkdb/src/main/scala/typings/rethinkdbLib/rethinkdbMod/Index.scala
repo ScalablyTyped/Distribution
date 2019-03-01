@@ -12,3 +12,14 @@ trait Index extends js.Object {
   var right_bound: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Index {
+  @scala.inline
+  def apply(index: java.lang.String, left_bound: java.lang.String = null, right_bound: java.lang.String = null): Index = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    if (left_bound != null) __obj.updateDynamic("left_bound")(left_bound)
+    if (right_bound != null) __obj.updateDynamic("right_bound")(right_bound)
+    __obj.asInstanceOf[Index]
+  }
+}
+

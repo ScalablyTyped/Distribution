@@ -17,3 +17,30 @@ trait StripeApplePayPaymentContact extends js.Object {
   var postalCode: java.lang.String
 }
 
+object StripeApplePayPaymentContact {
+  @scala.inline
+  def apply(
+    addressLines: js.Array[java.lang.String],
+    administrativeArea: java.lang.String,
+    countryCode: java.lang.String,
+    emailAddress: java.lang.String,
+    familyName: java.lang.String,
+    givenName: java.lang.String,
+    locality: java.lang.String,
+    phoneNumber: java.lang.String,
+    postalCode: java.lang.String
+  ): StripeApplePayPaymentContact = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addressLines")(addressLines)
+    __obj.updateDynamic("administrativeArea")(administrativeArea)
+    __obj.updateDynamic("countryCode")(countryCode)
+    __obj.updateDynamic("emailAddress")(emailAddress)
+    __obj.updateDynamic("familyName")(familyName)
+    __obj.updateDynamic("givenName")(givenName)
+    __obj.updateDynamic("locality")(locality)
+    __obj.updateDynamic("phoneNumber")(phoneNumber)
+    __obj.updateDynamic("postalCode")(postalCode)
+    __obj.asInstanceOf[StripeApplePayPaymentContact]
+  }
+}
+

@@ -16,3 +16,20 @@ trait TurnBasedMatchSync extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TurnBasedMatchSync {
+  @scala.inline
+  def apply(
+    items: js.Array[TurnBasedMatch] = null,
+    kind: java.lang.String = null,
+    moreAvailable: js.UndefOr[scala.Boolean] = js.undefined,
+    nextPageToken: java.lang.String = null
+  ): TurnBasedMatchSync = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(moreAvailable)) __obj.updateDynamic("moreAvailable")(moreAvailable)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[TurnBasedMatchSync]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_ModalFooter extends js.Object {
   val ModalFooterNs: js.Any
 }
 
+object Anon_ModalFooter {
+  @scala.inline
+  def apply(ModalFooterNs: js.Any): Anon_ModalFooter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ModalFooterNs")(ModalFooterNs)
+    __obj.asInstanceOf[Anon_ModalFooter]
+  }
+}
+

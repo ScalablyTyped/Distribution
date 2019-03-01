@@ -23,3 +23,14 @@ trait titleAttributesParams extends js.Object {
   var shadow: js.UndefOr[shadowDict] = js.undefined
 }
 
+object titleAttributesParams {
+  @scala.inline
+  def apply(color: java.lang.String = null, font: Font = null, shadow: shadowDict = null): titleAttributesParams = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
+    __obj.asInstanceOf[titleAttributesParams]
+  }
+}
+

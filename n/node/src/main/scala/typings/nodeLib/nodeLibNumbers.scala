@@ -7,13 +7,18 @@ import scala.scalajs.js.annotation._
 
 object nodeLibNumbers {
   @js.native
-  sealed trait `-1` extends js.Object
+  sealed trait `-1`
+    extends nodeLib.ttyMod.Direction
   
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends nodeLib.ttyMod.Direction
+       with nodeLib.v8Mod.DoesZapCodeSpaceFlag
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends nodeLib.ttyMod.Direction
+       with nodeLib.v8Mod.DoesZapCodeSpaceFlag
   
   @js.native
   sealed trait `false` extends js.Object

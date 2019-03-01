@@ -179,3 +179,70 @@ trait ViewerOption extends js.Object {
   var zoomable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ViewerOption {
+  @scala.inline
+  def apply(
+    button: js.UndefOr[scala.Boolean] = js.undefined,
+    fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    hidden: ViewerMethod = null,
+    hide: ViewerMethod = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    interval: scala.Int | scala.Double = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    maxZoomRatio: scala.Int | scala.Double = null,
+    minHeight: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    minZoomRatio: scala.Int | scala.Double = null,
+    movable: js.UndefOr[scala.Boolean] = js.undefined,
+    navbar: scala.Boolean | scala.Double = null,
+    ready: ViewerMethod = null,
+    rotatable: js.UndefOr[scala.Boolean] = js.undefined,
+    scalable: js.UndefOr[scala.Boolean] = js.undefined,
+    show: ViewerMethod = null,
+    shown: ViewerMethod = null,
+    title: scala.Boolean | scala.Double = null,
+    toolbar: scala.Boolean | scala.Double = null,
+    tooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    transition: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String | ImageSourceDelegate = null,
+    view: ViewerMethod = null,
+    viewed: ViewerMethod = null,
+    zIndex: scala.Int | scala.Double = null,
+    zIndexInline: scala.Int | scala.Double = null,
+    zoomRatio: scala.Int | scala.Double = null,
+    zoomable: js.UndefOr[scala.Boolean] = js.undefined
+  ): ViewerOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button)
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (maxZoomRatio != null) __obj.updateDynamic("maxZoomRatio")(maxZoomRatio.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (minZoomRatio != null) __obj.updateDynamic("minZoomRatio")(minZoomRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(movable)) __obj.updateDynamic("movable")(movable)
+    if (navbar != null) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (!js.isUndefined(rotatable)) __obj.updateDynamic("rotatable")(rotatable)
+    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable)
+    if (show != null) __obj.updateDynamic("show")(show)
+    if (shown != null) __obj.updateDynamic("shown")(shown)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
+    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (viewed != null) __obj.updateDynamic("viewed")(viewed)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (zIndexInline != null) __obj.updateDynamic("zIndexInline")(zIndexInline.asInstanceOf[js.Any])
+    if (zoomRatio != null) __obj.updateDynamic("zoomRatio")(zoomRatio.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable)
+    __obj.asInstanceOf[ViewerOption]
+  }
+}
+

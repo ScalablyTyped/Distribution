@@ -18,3 +18,13 @@ trait Namespace extends js.Object {
   var servingVisibility: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Namespace {
+  @scala.inline
+  def apply(namespaceName: java.lang.String = null, servingVisibility: java.lang.String = null): Namespace = {
+    val __obj = js.Dynamic.literal()
+    if (namespaceName != null) __obj.updateDynamic("namespaceName")(namespaceName)
+    if (servingVisibility != null) __obj.updateDynamic("servingVisibility")(servingVisibility)
+    __obj.asInstanceOf[Namespace]
+  }
+}
+

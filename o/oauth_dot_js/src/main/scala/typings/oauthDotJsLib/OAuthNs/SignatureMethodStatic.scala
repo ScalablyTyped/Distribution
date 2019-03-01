@@ -34,3 +34,33 @@ trait SignatureMethodStatic extends js.Object {
   def sign(message: Message, accessor: Accessor): scala.Unit
 }
 
+object SignatureMethodStatic {
+  @scala.inline
+  def apply(
+    REGISTERED: org.scalablytyped.runtime.StringDictionary[oauthDotJsLib.Anon_SignatureMethod],
+    getBaseString: js.Function1[Message, java.lang.String],
+    makeSubclass: js.Function1[
+      js.Function1[/* baseString */ java.lang.String, java.lang.String], 
+      oauthDotJsLib.Anon_SignatureMethod
+    ],
+    newMethod: js.Function2[java.lang.String, Accessor, SignatureMethod],
+    normalizeParameters: js.Function1[ParameterListOrMap, java.lang.String],
+    normalizeUrl: js.Function1[java.lang.String, java.lang.String],
+    parseUri: js.Function1[java.lang.String, Uri],
+    registerMethodClass: js.Function2[js.Array[java.lang.String], oauthDotJsLib.Anon_SignatureMethod, scala.Unit],
+    sign: js.Function2[Message, Accessor, scala.Unit]
+  ): SignatureMethodStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("REGISTERED")(REGISTERED)
+    __obj.updateDynamic("getBaseString")(getBaseString)
+    __obj.updateDynamic("makeSubclass")(makeSubclass)
+    __obj.updateDynamic("newMethod")(newMethod)
+    __obj.updateDynamic("normalizeParameters")(normalizeParameters)
+    __obj.updateDynamic("normalizeUrl")(normalizeUrl)
+    __obj.updateDynamic("parseUri")(parseUri)
+    __obj.updateDynamic("registerMethodClass")(registerMethodClass)
+    __obj.updateDynamic("sign")(sign)
+    __obj.asInstanceOf[SignatureMethodStatic]
+  }
+}
+

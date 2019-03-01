@@ -34,3 +34,20 @@ trait Anon_Daily extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Daily {
+  @scala.inline
+  def apply(
+    delay_days: scala.Double | java.lang.String = null,
+    interval: stripeLib.stripeLibStrings.manual | stripeLib.stripeLibStrings.daily | stripeLib.stripeLibStrings.weekly | stripeLib.stripeLibStrings.monthly = null,
+    monthly_anchor: scala.Int | scala.Double = null,
+    weekly_anchor: stripeLib.stripeLibStrings.monday | stripeLib.stripeLibStrings.tuesday | stripeLib.stripeLibStrings.wednesday | stripeLib.stripeLibStrings.thursday | stripeLib.stripeLibStrings.friday | stripeLib.stripeLibStrings.saturday | stripeLib.stripeLibStrings.sunday = null
+  ): Anon_Daily = {
+    val __obj = js.Dynamic.literal()
+    if (delay_days != null) __obj.updateDynamic("delay_days")(delay_days.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (monthly_anchor != null) __obj.updateDynamic("monthly_anchor")(monthly_anchor.asInstanceOf[js.Any])
+    if (weekly_anchor != null) __obj.updateDynamic("weekly_anchor")(weekly_anchor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Daily]
+  }
+}
+

@@ -12,3 +12,12 @@ trait SearchInContentReturnType extends js.Object {
   var result: js.Array[SearchMatch]
 }
 
+object SearchInContentReturnType {
+  @scala.inline
+  def apply(result: js.Array[SearchMatch]): SearchInContentReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[SearchInContentReturnType]
+  }
+}
+

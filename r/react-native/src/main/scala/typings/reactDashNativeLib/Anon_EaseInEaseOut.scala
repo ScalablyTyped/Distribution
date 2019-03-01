@@ -11,3 +11,18 @@ trait Anon_EaseInEaseOut extends js.Object {
   var spring: reactDashNativeLib.reactDashNativeMod.LayoutAnimationConfig
 }
 
+object Anon_EaseInEaseOut {
+  @scala.inline
+  def apply(
+    easeInEaseOut: reactDashNativeLib.reactDashNativeMod.LayoutAnimationConfig,
+    linear: reactDashNativeLib.reactDashNativeMod.LayoutAnimationConfig,
+    spring: reactDashNativeLib.reactDashNativeMod.LayoutAnimationConfig
+  ): Anon_EaseInEaseOut = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("easeInEaseOut")(easeInEaseOut)
+    __obj.updateDynamic("linear")(linear)
+    __obj.updateDynamic("spring")(spring)
+    __obj.asInstanceOf[Anon_EaseInEaseOut]
+  }
+}
+

@@ -81,3 +81,40 @@ trait INxStackedPivotCell extends js.Object {
   var qValue: scala.Double
 }
 
+object INxStackedPivotCell {
+  @scala.inline
+  def apply(
+    qAttrDims: INxAttributeDimValues,
+    qAttrExps: INxAttributeExpressionValues,
+    qCanCollapse: scala.Boolean,
+    qCanExpand: scala.Boolean,
+    qDown: scala.Double,
+    qElemNo: scala.Double,
+    qMaxPos: scala.Double,
+    qMinNeg: scala.Double,
+    qRow: scala.Double,
+    qSubNodes: js.Array[INxStackedPivotCell],
+    qText: java.lang.String,
+    qType: NxCellType,
+    qUp: scala.Double,
+    qValue: scala.Double
+  ): INxStackedPivotCell = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qAttrDims")(qAttrDims)
+    __obj.updateDynamic("qAttrExps")(qAttrExps)
+    __obj.updateDynamic("qCanCollapse")(qCanCollapse)
+    __obj.updateDynamic("qCanExpand")(qCanExpand)
+    __obj.updateDynamic("qDown")(qDown)
+    __obj.updateDynamic("qElemNo")(qElemNo)
+    __obj.updateDynamic("qMaxPos")(qMaxPos)
+    __obj.updateDynamic("qMinNeg")(qMinNeg)
+    __obj.updateDynamic("qRow")(qRow)
+    __obj.updateDynamic("qSubNodes")(qSubNodes)
+    __obj.updateDynamic("qText")(qText)
+    __obj.updateDynamic("qType")(qType)
+    __obj.updateDynamic("qUp")(qUp)
+    __obj.updateDynamic("qValue")(qValue)
+    __obj.asInstanceOf[INxStackedPivotCell]
+  }
+}
+

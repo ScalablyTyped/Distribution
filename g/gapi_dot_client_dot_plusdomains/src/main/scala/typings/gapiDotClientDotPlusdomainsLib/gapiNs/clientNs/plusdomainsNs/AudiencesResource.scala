@@ -10,3 +10,17 @@ trait AudiencesResource extends js.Object {
   def list(request: gapiDotClientDotPlusdomainsLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[AudiencesFeed]
 }
 
+object AudiencesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AudiencesFeed]
+    ]
+  ): AudiencesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AudiencesResource]
+  }
+}
+

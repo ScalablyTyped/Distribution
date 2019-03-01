@@ -12,3 +12,15 @@ trait Transform extends js.Object {
   var value: java.lang.String
 }
 
+object Transform {
+  @scala.inline
+  def apply(rotate: Rotation, scale: Scale, translate: Translation, value: java.lang.String): Transform = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("scale")(scale)
+    __obj.updateDynamic("translate")(translate)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Transform]
+  }
+}
+

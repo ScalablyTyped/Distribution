@@ -10,3 +10,13 @@ trait RecentGamesDto extends js.Object {
   var summonerId: scala.Double
 }
 
+object RecentGamesDto {
+  @scala.inline
+  def apply(games: js.Array[GameDto], summonerId: scala.Double): RecentGamesDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("games")(games)
+    __obj.updateDynamic("summonerId")(summonerId)
+    __obj.asInstanceOf[RecentGamesDto]
+  }
+}
+

@@ -55,3 +55,20 @@ trait NodeConfigStatus extends js.Object {
   val lastKnownGood: NodeConfigSource
 }
 
+object NodeConfigStatus {
+  @scala.inline
+  def apply(
+    active: NodeConfigSource,
+    assigned: NodeConfigSource,
+    error: java.lang.String,
+    lastKnownGood: NodeConfigSource
+  ): NodeConfigStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("assigned")(assigned)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("lastKnownGood")(lastKnownGood)
+    __obj.asInstanceOf[NodeConfigStatus]
+  }
+}
+

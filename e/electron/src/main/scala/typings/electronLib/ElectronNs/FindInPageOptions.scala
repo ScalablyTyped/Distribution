@@ -30,3 +30,22 @@ trait FindInPageOptions extends js.Object {
   var wordStart: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FindInPageOptions {
+  @scala.inline
+  def apply(
+    findNext: js.UndefOr[scala.Boolean] = js.undefined,
+    forward: js.UndefOr[scala.Boolean] = js.undefined,
+    matchCase: js.UndefOr[scala.Boolean] = js.undefined,
+    medialCapitalAsWordStart: js.UndefOr[scala.Boolean] = js.undefined,
+    wordStart: js.UndefOr[scala.Boolean] = js.undefined
+  ): FindInPageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(findNext)) __obj.updateDynamic("findNext")(findNext)
+    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward)
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    if (!js.isUndefined(medialCapitalAsWordStart)) __obj.updateDynamic("medialCapitalAsWordStart")(medialCapitalAsWordStart)
+    if (!js.isUndefined(wordStart)) __obj.updateDynamic("wordStart")(wordStart)
+    __obj.asInstanceOf[FindInPageOptions]
+  }
+}
+

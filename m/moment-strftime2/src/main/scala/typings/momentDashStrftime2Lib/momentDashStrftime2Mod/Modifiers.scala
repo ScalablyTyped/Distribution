@@ -61,3 +61,117 @@ trait Modifiers extends js.Object {
   var z: java.lang.String
 }
 
+object Modifiers {
+  @scala.inline
+  def apply(
+    `%`: java.lang.String,
+    A: java.lang.String,
+    B: java.lang.String,
+    D: java.lang.String,
+    F: java.lang.String,
+    H: java.lang.String,
+    I: java.lang.String,
+    L: java.lang.String,
+    M: java.lang.String,
+    P: java.lang.String,
+    R: java.lang.String,
+    S: java.lang.String,
+    T: java.lang.String,
+    V: java.lang.String,
+    W: java.lang.String,
+    Y: java.lang.String,
+    Z: java.lang.String,
+    a: java.lang.String,
+    b: java.lang.String,
+    d: java.lang.String,
+    e: java.lang.String,
+    g: java.lang.String,
+    h: java.lang.String,
+    j: java.lang.String,
+    k: java.lang.String,
+    l: java.lang.String,
+    m: java.lang.String,
+    p: java.lang.String,
+    r: java.lang.String,
+    s: java.lang.String,
+    u: java.lang.String,
+    w: java.lang.String,
+    y: java.lang.String,
+    z: java.lang.String,
+    C: java.lang.String = null,
+    E: java.lang.String = null,
+    G: java.lang.String = null,
+    J: java.lang.String = null,
+    K: java.lang.String = null,
+    N: java.lang.String = null,
+    O: java.lang.String = null,
+    Q: java.lang.String = null,
+    U: java.lang.String = null,
+    X: java.lang.String = null,
+    c: java.lang.String = null,
+    f: java.lang.String = null,
+    i: java.lang.String = null,
+    n: java.lang.String = null,
+    o: java.lang.String = null,
+    q: java.lang.String = null,
+    t: java.lang.String = null,
+    v: java.lang.String = null,
+    x: java.lang.String = null
+  ): Modifiers = {
+    val __obj = js.Dynamic.literal(`%` = `%`)
+    __obj.updateDynamic("A")(A)
+    __obj.updateDynamic("B")(B)
+    __obj.updateDynamic("D")(D)
+    __obj.updateDynamic("F")(F)
+    __obj.updateDynamic("H")(H)
+    __obj.updateDynamic("I")(I)
+    __obj.updateDynamic("L")(L)
+    __obj.updateDynamic("M")(M)
+    __obj.updateDynamic("P")(P)
+    __obj.updateDynamic("R")(R)
+    __obj.updateDynamic("S")(S)
+    __obj.updateDynamic("T")(T)
+    __obj.updateDynamic("V")(V)
+    __obj.updateDynamic("W")(W)
+    __obj.updateDynamic("Y")(Y)
+    __obj.updateDynamic("Z")(Z)
+    __obj.updateDynamic("a")(a)
+    __obj.updateDynamic("b")(b)
+    __obj.updateDynamic("d")(d)
+    __obj.updateDynamic("e")(e)
+    __obj.updateDynamic("g")(g)
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("j")(j)
+    __obj.updateDynamic("k")(k)
+    __obj.updateDynamic("l")(l)
+    __obj.updateDynamic("m")(m)
+    __obj.updateDynamic("p")(p)
+    __obj.updateDynamic("r")(r)
+    __obj.updateDynamic("s")(s)
+    __obj.updateDynamic("u")(u)
+    __obj.updateDynamic("w")(w)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("z")(z)
+    if (C != null) __obj.updateDynamic("C")(C)
+    if (E != null) __obj.updateDynamic("E")(E)
+    if (G != null) __obj.updateDynamic("G")(G)
+    if (J != null) __obj.updateDynamic("J")(J)
+    if (K != null) __obj.updateDynamic("K")(K)
+    if (N != null) __obj.updateDynamic("N")(N)
+    if (O != null) __obj.updateDynamic("O")(O)
+    if (Q != null) __obj.updateDynamic("Q")(Q)
+    if (U != null) __obj.updateDynamic("U")(U)
+    if (X != null) __obj.updateDynamic("X")(X)
+    if (c != null) __obj.updateDynamic("c")(c)
+    if (f != null) __obj.updateDynamic("f")(f)
+    if (i != null) __obj.updateDynamic("i")(i)
+    if (n != null) __obj.updateDynamic("n")(n)
+    if (o != null) __obj.updateDynamic("o")(o)
+    if (q != null) __obj.updateDynamic("q")(q)
+    if (t != null) __obj.updateDynamic("t")(t)
+    if (v != null) __obj.updateDynamic("v")(v)
+    if (x != null) __obj.updateDynamic("x")(x)
+    __obj.asInstanceOf[Modifiers]
+  }
+}
+

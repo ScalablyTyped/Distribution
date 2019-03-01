@@ -17,3 +17,13 @@ trait FilteringStats extends js.Object {
   var reasons: js.UndefOr[js.Array[Reason]] = js.undefined
 }
 
+object FilteringStats {
+  @scala.inline
+  def apply(date: Date = null, reasons: js.Array[Reason] = null): FilteringStats = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (reasons != null) __obj.updateDynamic("reasons")(reasons)
+    __obj.asInstanceOf[FilteringStats]
+  }
+}
+

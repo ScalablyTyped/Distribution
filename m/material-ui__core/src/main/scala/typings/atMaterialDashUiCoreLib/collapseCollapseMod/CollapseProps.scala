@@ -18,3 +18,30 @@ import scala.scalajs.js.annotation._
   var timeout: js.UndefOr[js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
 }
 
+object CollapseProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[CollapseClassKey]] = null,
+    collapsedHeight: java.lang.String = null,
+    component: reactLib.reactMod.ReactNs.ReactType[CollapseProps] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null,
+    timeout: js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
+  ): CollapseProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (collapsedHeight != null) __obj.updateDynamic("collapsedHeight")(collapsedHeight)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CollapseProps]
+  }
+}
+

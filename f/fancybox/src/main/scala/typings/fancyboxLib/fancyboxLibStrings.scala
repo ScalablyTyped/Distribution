@@ -16,7 +16,7 @@ object fancyboxLibStrings {
   sealed trait circular extends js.Object
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait close extends FancyBoxInteractionTypes
   
   @js.native
   sealed trait download extends js.Object
@@ -40,10 +40,10 @@ object fancyboxLibStrings {
   sealed trait `inline` extends js.Object
   
   @js.native
-  sealed trait next extends js.Object
+  sealed trait next extends FancyBoxInteractionTypes
   
   @js.native
-  sealed trait nextOrClose extends js.Object
+  sealed trait nextOrClose extends FancyBoxInteractionTypes
   
   @js.native
   sealed trait rotate extends js.Object
@@ -61,7 +61,7 @@ object fancyboxLibStrings {
   sealed trait thumbs extends js.Object
   
   @js.native
-  sealed trait toggleControls extends js.Object
+  sealed trait toggleControls extends FancyBoxInteractionTypes
   
   @js.native
   sealed trait tube extends js.Object
@@ -73,7 +73,7 @@ object fancyboxLibStrings {
   sealed trait y extends js.Object
   
   @js.native
-  sealed trait zoom extends js.Object
+  sealed trait zoom extends FancyBoxInteractionTypes
   
   @js.native
   sealed trait `zoom-in-out` extends js.Object

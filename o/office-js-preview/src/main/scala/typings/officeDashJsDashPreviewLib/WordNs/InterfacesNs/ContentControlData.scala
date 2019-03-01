@@ -206,3 +206,66 @@ trait ContentControlData extends js.Object {
   ] = js.undefined
 }
 
+object ContentControlData {
+  @scala.inline
+  def apply(
+    appearance: officeDashJsDashPreviewLib.WordNs.ContentControlAppearance | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BoundingBox | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Tags | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Hidden = null,
+    cannotDelete: js.UndefOr[scala.Boolean] = js.undefined,
+    cannotEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    contentControls: js.Array[ContentControlData] = null,
+    font: FontData = null,
+    id: scala.Int | scala.Double = null,
+    inlinePictures: js.Array[InlinePictureData] = null,
+    lists: js.Array[ListData] = null,
+    paragraphs: js.Array[ParagraphData] = null,
+    parentBody: BodyData = null,
+    parentContentControl: ContentControlData = null,
+    parentContentControlOrNullObject: ContentControlData = null,
+    parentTable: TableData = null,
+    parentTableCell: TableCellData = null,
+    parentTableCellOrNullObject: TableCellData = null,
+    parentTableOrNullObject: TableData = null,
+    placeholderText: java.lang.String = null,
+    removeWhenEdited: js.UndefOr[scala.Boolean] = js.undefined,
+    style: java.lang.String = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    subtype: officeDashJsDashPreviewLib.WordNs.ContentControlType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextInline | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextParagraphs | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextTableCell | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextTableRow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextTable | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlainTextInline | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlainTextParagraph | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Picture | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BuildingBlockGallery | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CheckBox | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ComboBox | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DropDownList | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DatePicker | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RepeatingSection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlainText = null,
+    tables: js.Array[TableData] = null,
+    tag: java.lang.String = null,
+    text: java.lang.String = null,
+    title: java.lang.String = null,
+    `type`: officeDashJsDashPreviewLib.WordNs.ContentControlType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextInline | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextParagraphs | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextTableCell | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextTableRow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextTable | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlainTextInline | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlainTextParagraph | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Picture | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BuildingBlockGallery | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CheckBox | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ComboBox | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DropDownList | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DatePicker | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RepeatingSection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlainText = null
+  ): ContentControlData = {
+    val __obj = js.Dynamic.literal()
+    if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
+    if (!js.isUndefined(cannotDelete)) __obj.updateDynamic("cannotDelete")(cannotDelete)
+    if (!js.isUndefined(cannotEdit)) __obj.updateDynamic("cannotEdit")(cannotEdit)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inlinePictures != null) __obj.updateDynamic("inlinePictures")(inlinePictures)
+    if (lists != null) __obj.updateDynamic("lists")(lists)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
+    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
+    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
+    if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText)
+    if (!js.isUndefined(removeWhenEdited)) __obj.updateDynamic("removeWhenEdited")(removeWhenEdited)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype.asInstanceOf[js.Any])
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContentControlData]
+  }
+}
+

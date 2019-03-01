@@ -48,3 +48,32 @@ trait Options extends js.Object {
   var transformUrl: js.UndefOr[js.Function] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    base: java.lang.String | js.Function = null,
+    filename: java.lang.String = null,
+    module: java.lang.String = null,
+    moduleSystem: java.lang.String = null,
+    root: java.lang.String = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    templateBody: java.lang.String = null,
+    templateFooter: java.lang.String = null,
+    templateHeader: java.lang.String = null,
+    transformUrl: js.Function = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (module != null) __obj.updateDynamic("module")(module)
+    if (moduleSystem != null) __obj.updateDynamic("moduleSystem")(moduleSystem)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody)
+    if (templateFooter != null) __obj.updateDynamic("templateFooter")(templateFooter)
+    if (templateHeader != null) __obj.updateDynamic("templateHeader")(templateHeader)
+    if (transformUrl != null) __obj.updateDynamic("transformUrl")(transformUrl)
+    __obj.asInstanceOf[Options]
+  }
+}
+

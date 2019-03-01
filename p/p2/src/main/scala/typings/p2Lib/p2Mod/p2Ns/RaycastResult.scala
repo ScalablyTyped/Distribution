@@ -27,3 +27,38 @@ trait RaycastResult extends js.Object {
   def stop(): scala.Unit
 }
 
+object RaycastResult {
+  @scala.inline
+  def apply(
+    body: Body,
+    faceIndex: scala.Double,
+    fraction: scala.Double,
+    getHitDistance: js.Function1[Ray, scala.Double],
+    getHitPoint: js.Function2[js.Tuple2[scala.Double, scala.Double], Ray, scala.Unit],
+    hasHit: js.Function0[scala.Boolean],
+    isStopped: scala.Boolean,
+    normal: js.Tuple2[scala.Double, scala.Double],
+    reset: js.Function0[scala.Unit],
+    set: js.Function5[js.Tuple2[scala.Double, scala.Double], Shape, Body, scala.Double, scala.Double, scala.Unit],
+    shape: Shape,
+    shouldStop: js.Function1[Ray, scala.Boolean],
+    stop: js.Function0[scala.Unit]
+  ): RaycastResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("faceIndex")(faceIndex)
+    __obj.updateDynamic("fraction")(fraction)
+    __obj.updateDynamic("getHitDistance")(getHitDistance)
+    __obj.updateDynamic("getHitPoint")(getHitPoint)
+    __obj.updateDynamic("hasHit")(hasHit)
+    __obj.updateDynamic("isStopped")(isStopped)
+    __obj.updateDynamic("normal")(normal)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("shape")(shape)
+    __obj.updateDynamic("shouldStop")(shouldStop)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[RaycastResult]
+  }
+}
+

@@ -82,3 +82,40 @@ trait Options extends js.Object {
   var useCompilerPath: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    entrypoints: js.UndefOr[scala.Boolean] = js.undefined,
+    fileTypes: js.Array[java.lang.String] = null,
+    filename: java.lang.String = null,
+    fullPath: js.UndefOr[scala.Boolean] = js.undefined,
+    includeAllFileTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    includeManifest: js.UndefOr[scala.Boolean] = js.undefined,
+    keepInMemory: js.UndefOr[scala.Boolean] = js.undefined,
+    manifestFirst: js.UndefOr[scala.Boolean] = js.undefined,
+    metadata: js.Object = null,
+    path: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    processOutput: ProcessOutputFn = null,
+    update: js.UndefOr[scala.Boolean] = js.undefined,
+    useCompilerPath: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(entrypoints)) __obj.updateDynamic("entrypoints")(entrypoints)
+    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(fullPath)) __obj.updateDynamic("fullPath")(fullPath)
+    if (!js.isUndefined(includeAllFileTypes)) __obj.updateDynamic("includeAllFileTypes")(includeAllFileTypes)
+    if (!js.isUndefined(includeManifest)) __obj.updateDynamic("includeManifest")(includeManifest)
+    if (!js.isUndefined(keepInMemory)) __obj.updateDynamic("keepInMemory")(keepInMemory)
+    if (!js.isUndefined(manifestFirst)) __obj.updateDynamic("manifestFirst")(manifestFirst)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (processOutput != null) __obj.updateDynamic("processOutput")(processOutput)
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
+    if (!js.isUndefined(useCompilerPath)) __obj.updateDynamic("useCompilerPath")(useCompilerPath)
+    __obj.asInstanceOf[Options]
+  }
+}
+

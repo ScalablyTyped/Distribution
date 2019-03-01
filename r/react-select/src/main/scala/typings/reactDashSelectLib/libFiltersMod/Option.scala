@@ -11,3 +11,14 @@ trait Option extends js.Object {
   var value: java.lang.String
 }
 
+object Option {
+  @scala.inline
+  def apply(data: js.Any, label: java.lang.String, value: java.lang.String): Option = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Option]
+  }
+}
+

@@ -37,3 +37,18 @@ trait ViewPropsAndroid extends js.Object {
   var renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ViewPropsAndroid {
+  @scala.inline
+  def apply(
+    collapsable: js.UndefOr[scala.Boolean] = js.undefined,
+    needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
+    renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined
+  ): ViewPropsAndroid = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
+    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
+    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)
+    __obj.asInstanceOf[ViewPropsAndroid]
+  }
+}
+

@@ -26,3 +26,20 @@ trait Image extends js.Object {
   var thumbnail: js.UndefOr[Thumbnail] = js.undefined
 }
 
+object Image {
+  @scala.inline
+  def apply(
+    error: Status = null,
+    sourceImage: ToolOutputReference = null,
+    stepId: java.lang.String = null,
+    thumbnail: Thumbnail = null
+  ): Image = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage)
+    if (stepId != null) __obj.updateDynamic("stepId")(stepId)
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[Image]
+  }
+}
+

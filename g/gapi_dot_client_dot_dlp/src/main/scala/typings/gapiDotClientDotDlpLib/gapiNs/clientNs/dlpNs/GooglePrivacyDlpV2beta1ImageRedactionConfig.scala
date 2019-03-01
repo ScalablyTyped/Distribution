@@ -25,3 +25,18 @@ trait GooglePrivacyDlpV2beta1ImageRedactionConfig extends js.Object {
   var redactionColor: js.UndefOr[GooglePrivacyDlpV2beta1Color] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1ImageRedactionConfig {
+  @scala.inline
+  def apply(
+    infoType: GooglePrivacyDlpV2beta1InfoType = null,
+    redactAllText: js.UndefOr[scala.Boolean] = js.undefined,
+    redactionColor: GooglePrivacyDlpV2beta1Color = null
+  ): GooglePrivacyDlpV2beta1ImageRedactionConfig = {
+    val __obj = js.Dynamic.literal()
+    if (infoType != null) __obj.updateDynamic("infoType")(infoType)
+    if (!js.isUndefined(redactAllText)) __obj.updateDynamic("redactAllText")(redactAllText)
+    if (redactionColor != null) __obj.updateDynamic("redactionColor")(redactionColor)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1ImageRedactionConfig]
+  }
+}
+

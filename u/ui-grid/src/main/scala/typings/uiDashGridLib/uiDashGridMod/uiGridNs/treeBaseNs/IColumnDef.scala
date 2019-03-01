@@ -82,3 +82,28 @@ trait IColumnDef[TEntity] extends js.Object {
   var treeAggregationUpdateEntity: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IColumnDef {
+  @scala.inline
+  def apply[TEntity](
+    customTreeAggregationFinalizerFn: js.Function1[/* aggregation */ IGridTreeBaseAggregationObject, scala.Unit] = null,
+    customTreeAggregationFn: js.Function4[
+      /* aggregation */ IGridTreeBaseAggregationObject, 
+      /* fieldValue */ js.Any, 
+      /* numValue */ scala.Double, 
+      /* row */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], 
+      scala.Unit
+    ] = null,
+    treeAggregationLabel: java.lang.String = null,
+    treeAggregationType: java.lang.String = null,
+    treeAggregationUpdateEntity: js.UndefOr[scala.Boolean] = js.undefined
+  ): IColumnDef[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    if (customTreeAggregationFinalizerFn != null) __obj.updateDynamic("customTreeAggregationFinalizerFn")(customTreeAggregationFinalizerFn)
+    if (customTreeAggregationFn != null) __obj.updateDynamic("customTreeAggregationFn")(customTreeAggregationFn)
+    if (treeAggregationLabel != null) __obj.updateDynamic("treeAggregationLabel")(treeAggregationLabel)
+    if (treeAggregationType != null) __obj.updateDynamic("treeAggregationType")(treeAggregationType)
+    if (!js.isUndefined(treeAggregationUpdateEntity)) __obj.updateDynamic("treeAggregationUpdateEntity")(treeAggregationUpdateEntity)
+    __obj.asInstanceOf[IColumnDef[TEntity]]
+  }
+}
+

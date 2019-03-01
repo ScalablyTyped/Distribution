@@ -14,3 +14,24 @@ trait Anon_ApprovedBroken extends js.Object {
   var running: scala.Double
 }
 
+object Anon_ApprovedBroken {
+  @scala.inline
+  def apply(
+    approved: scala.Double,
+    broken: scala.Double,
+    notApplicable: scala.Double,
+    queued: scala.Double,
+    rejected: scala.Double,
+    running: scala.Double
+  ): Anon_ApprovedBroken = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("approved")(approved)
+    __obj.updateDynamic("broken")(broken)
+    __obj.updateDynamic("notApplicable")(notApplicable)
+    __obj.updateDynamic("queued")(queued)
+    __obj.updateDynamic("rejected")(rejected)
+    __obj.updateDynamic("running")(running)
+    __obj.asInstanceOf[Anon_ApprovedBroken]
+  }
+}
+

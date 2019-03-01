@@ -16,3 +16,22 @@ trait CreateDetails extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateDetails {
+  @scala.inline
+  def apply(
+    index: scala.Int | scala.Double = null,
+    parentId: java.lang.String = null,
+    title: java.lang.String = null,
+    `type`: BookmarkTreeNodeType = null,
+    url: java.lang.String = null
+  ): CreateDetails = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[CreateDetails]
+  }
+}
+

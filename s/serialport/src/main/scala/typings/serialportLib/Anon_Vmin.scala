@@ -10,3 +10,13 @@ trait Anon_Vmin extends js.Object {
   var vtime: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Vmin {
+  @scala.inline
+  def apply(vmin: scala.Int | scala.Double = null, vtime: scala.Int | scala.Double = null): Anon_Vmin = {
+    val __obj = js.Dynamic.literal()
+    if (vmin != null) __obj.updateDynamic("vmin")(vmin.asInstanceOf[js.Any])
+    if (vtime != null) __obj.updateDynamic("vtime")(vtime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Vmin]
+  }
+}
+

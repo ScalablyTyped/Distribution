@@ -23,3 +23,20 @@ trait Shape extends js.Object {
   var text: js.UndefOr[TextContent] = js.undefined
 }
 
+object Shape {
+  @scala.inline
+  def apply(
+    placeholder: Placeholder = null,
+    shapeProperties: ShapeProperties = null,
+    shapeType: java.lang.String = null,
+    text: TextContent = null
+  ): Shape = {
+    val __obj = js.Dynamic.literal()
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (shapeProperties != null) __obj.updateDynamic("shapeProperties")(shapeProperties)
+    if (shapeType != null) __obj.updateDynamic("shapeType")(shapeType)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Shape]
+  }
+}
+

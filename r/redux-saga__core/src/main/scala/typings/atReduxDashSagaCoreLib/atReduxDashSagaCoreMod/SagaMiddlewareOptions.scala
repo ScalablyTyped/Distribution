@@ -27,3 +27,20 @@ trait SagaMiddlewareOptions[C /* <: js.Object */] extends js.Object {
   var sagaMonitor: js.UndefOr[SagaMonitor] = js.undefined
 }
 
+object SagaMiddlewareOptions {
+  @scala.inline
+  def apply[C /* <: js.Object */](
+    context: C = null,
+    effectMiddlewares: js.Array[EffectMiddleware] = null,
+    onError: js.Function2[/* error */ nodeLib.Error, /* errorInfo */ ErrorInfo, scala.Unit] = null,
+    sagaMonitor: SagaMonitor = null
+  ): SagaMiddlewareOptions[C] = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (effectMiddlewares != null) __obj.updateDynamic("effectMiddlewares")(effectMiddlewares)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (sagaMonitor != null) __obj.updateDynamic("sagaMonitor")(sagaMonitor)
+    __obj.asInstanceOf[SagaMiddlewareOptions[C]]
+  }
+}
+

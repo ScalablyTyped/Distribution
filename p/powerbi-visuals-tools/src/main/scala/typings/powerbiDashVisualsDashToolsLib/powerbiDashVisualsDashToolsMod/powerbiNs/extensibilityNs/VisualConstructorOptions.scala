@@ -10,3 +10,12 @@ trait VisualConstructorOptions extends js.Object {
   var module: js.UndefOr[js.Any] = js.undefined
 }
 
+object VisualConstructorOptions {
+  @scala.inline
+  def apply(module: js.Any = null): VisualConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (module != null) __obj.updateDynamic("module")(module)
+    __obj.asInstanceOf[VisualConstructorOptions]
+  }
+}
+

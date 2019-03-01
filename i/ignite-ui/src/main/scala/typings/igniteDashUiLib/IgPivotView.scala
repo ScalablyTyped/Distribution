@@ -76,3 +76,39 @@ trait IgPivotView
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgPivotView {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igPivotView
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    dataSelectorOptions: IgPivotViewDataSelectorOptions = null,
+    dataSelectorPanel: IgPivotViewDataSelectorPanel = null,
+    dataSource: js.Any = null,
+    dataSourceOptions: IgPivotViewDataSourceOptions = null,
+    height: java.lang.String | scala.Double = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    pivotGridOptions: IgPivotViewPivotGridOptions = null,
+    pivotGridPanel: IgPivotViewPivotGridPanel = null,
+    regional: java.lang.String | js.Object = null,
+    width: java.lang.String | scala.Double = null
+  ): IgPivotView = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dataSelectorOptions != null) __obj.updateDynamic("dataSelectorOptions")(dataSelectorOptions)
+    if (dataSelectorPanel != null) __obj.updateDynamic("dataSelectorPanel")(dataSelectorPanel)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceOptions != null) __obj.updateDynamic("dataSourceOptions")(dataSourceOptions)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (pivotGridOptions != null) __obj.updateDynamic("pivotGridOptions")(pivotGridOptions)
+    if (pivotGridPanel != null) __obj.updateDynamic("pivotGridPanel")(pivotGridPanel)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgPivotView]
+  }
+}
+

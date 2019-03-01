@@ -15,3 +15,22 @@ trait XFormComponentValidityListener
   def componentValidityChanged(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject): scala.Unit
 }
 
+object XFormComponentValidityListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    componentValidityChanged: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFormComponentValidityListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("componentValidityChanged")(componentValidityChanged)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFormComponentValidityListener]
+  }
+}
+

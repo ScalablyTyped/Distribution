@@ -22,3 +22,25 @@ trait Target extends js.Object {
   def url(): java.lang.String
 }
 
+object Target {
+  @scala.inline
+  def apply(
+    browser: js.Function0[Browser],
+    browserContext: js.Function0[BrowserContext],
+    createCDPSession: js.Function0[js.Promise[CDPSession]],
+    opener: js.Function0[Target | scala.Null],
+    page: js.Function0[js.Promise[Page]],
+    `type`: js.Function0[TargetType],
+    url: js.Function0[java.lang.String]
+  ): Target = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("browser")(browser)
+    __obj.updateDynamic("browserContext")(browserContext)
+    __obj.updateDynamic("createCDPSession")(createCDPSession)
+    __obj.updateDynamic("opener")(opener)
+    __obj.updateDynamic("page")(page)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Target]
+  }
+}
+

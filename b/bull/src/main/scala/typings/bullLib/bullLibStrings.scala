@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 object bullLibStrings {
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends bullLib.bullMod.BullNs.JobStatus
+       with bullLib.bullMod.BullNs.JobStatusClean
   
   @js.native
   sealed trait bclient extends js.Object
@@ -19,10 +21,14 @@ object bullLibStrings {
   sealed trait client extends js.Object
   
   @js.native
-  sealed trait completed extends js.Object
+  sealed trait completed
+    extends bullLib.bullMod.BullNs.JobStatus
+       with bullLib.bullMod.BullNs.JobStatusClean
   
   @js.native
-  sealed trait delayed extends js.Object
+  sealed trait delayed
+    extends bullLib.bullMod.BullNs.JobStatus
+       with bullLib.bullMod.BullNs.JobStatusClean
   
   @js.native
   sealed trait drained extends js.Object
@@ -31,7 +37,9 @@ object bullLibStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends bullLib.bullMod.BullNs.JobStatus
+       with bullLib.bullMod.BullNs.JobStatusClean
   
   @js.native
   sealed trait paused extends js.Object
@@ -52,10 +60,12 @@ object bullLibStrings {
   sealed trait subscriber extends js.Object
   
   @js.native
-  sealed trait wait extends js.Object
+  sealed trait wait
+    extends bullLib.bullMod.BullNs.JobStatusClean
   
   @js.native
-  sealed trait waiting extends js.Object
+  sealed trait waiting
+    extends bullLib.bullMod.BullNs.JobStatus
   
   @scala.inline
   def active: active = "active".asInstanceOf[active]

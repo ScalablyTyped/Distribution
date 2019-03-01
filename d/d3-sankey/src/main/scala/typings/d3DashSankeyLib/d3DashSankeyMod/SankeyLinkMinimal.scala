@@ -48,3 +48,26 @@ trait SankeyLinkMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPro
   var y1: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SankeyLinkMinimal {
+  @scala.inline
+  def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](
+    source: scala.Double | java.lang.String | (SankeyNode[N, L]),
+    target: scala.Double | java.lang.String | (SankeyNode[N, L]),
+    value: scala.Double,
+    index: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    y0: scala.Int | scala.Double = null,
+    y1: scala.Int | scala.Double = null
+  ): SankeyLinkMinimal[N, L] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
+    if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SankeyLinkMinimal[N, L]]
+  }
+}
+

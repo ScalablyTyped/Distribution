@@ -11,3 +11,18 @@ trait IMediaEncodingProfile extends js.Object {
   var video: VideoEncodingProperties
 }
 
+object IMediaEncodingProfile {
+  @scala.inline
+  def apply(
+    audio: AudioEncodingProperties,
+    container: ContainerEncodingProperties,
+    video: VideoEncodingProperties
+  ): IMediaEncodingProfile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audio")(audio)
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("video")(video)
+    __obj.asInstanceOf[IMediaEncodingProfile]
+  }
+}
+

@@ -43,3 +43,27 @@ trait Node extends js.Object {
   var `type`: java.lang.String
 }
 
+object Node {
+  @scala.inline
+  def apply(
+    next: Node,
+    nextSibling: Node,
+    nodeType: scala.Double,
+    parent: ParentNode,
+    parentNode: ParentNode,
+    prev: Node,
+    previousSibling: Node,
+    `type`: java.lang.String
+  ): Node = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("nextSibling")(nextSibling)
+    __obj.updateDynamic("nodeType")(nodeType)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("parentNode")(parentNode)
+    __obj.updateDynamic("prev")(prev)
+    __obj.updateDynamic("previousSibling")(previousSibling)
+    __obj.asInstanceOf[Node]
+  }
+}
+

@@ -14,3 +14,24 @@ trait Anon_Conflicts extends js.Object {
   var succeeded: scala.Double
 }
 
+object Anon_Conflicts {
+  @scala.inline
+  def apply(
+    conflicts: scala.Double,
+    failure: scala.Double,
+    notSet: scala.Double,
+    queued: scala.Double,
+    rejectedByPolicy: scala.Double,
+    succeeded: scala.Double
+  ): Anon_Conflicts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("conflicts")(conflicts)
+    __obj.updateDynamic("failure")(failure)
+    __obj.updateDynamic("notSet")(notSet)
+    __obj.updateDynamic("queued")(queued)
+    __obj.updateDynamic("rejectedByPolicy")(rejectedByPolicy)
+    __obj.updateDynamic("succeeded")(succeeded)
+    __obj.asInstanceOf[Anon_Conflicts]
+  }
+}
+

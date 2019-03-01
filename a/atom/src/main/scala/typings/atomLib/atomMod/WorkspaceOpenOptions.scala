@@ -56,3 +56,28 @@ trait WorkspaceOpenOptions extends js.Object {
   ] = js.undefined
 }
 
+object WorkspaceOpenOptions {
+  @scala.inline
+  def apply(
+    activateItem: js.UndefOr[scala.Boolean] = js.undefined,
+    activatePane: js.UndefOr[scala.Boolean] = js.undefined,
+    initialColumn: scala.Int | scala.Double = null,
+    initialLine: scala.Int | scala.Double = null,
+    location: atomLib.atomLibStrings.left | atomLib.atomLibStrings.right | atomLib.atomLibStrings.bottom | atomLib.atomLibStrings.center = null,
+    pending: js.UndefOr[scala.Boolean] = js.undefined,
+    searchAllPanes: js.UndefOr[scala.Boolean] = js.undefined,
+    split: atomLib.atomLibStrings.left | atomLib.atomLibStrings.right | atomLib.atomLibStrings.up | atomLib.atomLibStrings.down = null
+  ): WorkspaceOpenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(activateItem)) __obj.updateDynamic("activateItem")(activateItem)
+    if (!js.isUndefined(activatePane)) __obj.updateDynamic("activatePane")(activatePane)
+    if (initialColumn != null) __obj.updateDynamic("initialColumn")(initialColumn.asInstanceOf[js.Any])
+    if (initialLine != null) __obj.updateDynamic("initialLine")(initialLine.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending)
+    if (!js.isUndefined(searchAllPanes)) __obj.updateDynamic("searchAllPanes")(searchAllPanes)
+    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorkspaceOpenOptions]
+  }
+}
+

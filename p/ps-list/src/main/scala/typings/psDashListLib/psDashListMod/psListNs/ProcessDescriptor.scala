@@ -14,3 +14,24 @@ trait ProcessDescriptor extends js.Object {
   var ppid: scala.Double
 }
 
+object ProcessDescriptor {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    pid: scala.Double,
+    ppid: scala.Double,
+    cmd: java.lang.String = null,
+    cpu: scala.Int | scala.Double = null,
+    memory: scala.Int | scala.Double = null
+  ): ProcessDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("pid")(pid)
+    __obj.updateDynamic("ppid")(ppid)
+    if (cmd != null) __obj.updateDynamic("cmd")(cmd)
+    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProcessDescriptor]
+  }
+}
+

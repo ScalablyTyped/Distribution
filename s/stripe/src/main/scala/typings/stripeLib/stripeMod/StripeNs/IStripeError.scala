@@ -66,3 +66,19 @@ trait IStripeError extends js.Object {
   var `type`: java.lang.String
 }
 
+object IStripeError {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    code: java.lang.String = null,
+    message: java.lang.String = null,
+    param: java.lang.String = null
+  ): IStripeError = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (param != null) __obj.updateDynamic("param")(param)
+    __obj.asInstanceOf[IStripeError]
+  }
+}
+

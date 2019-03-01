@@ -82,3 +82,48 @@ trait SpinnerOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SpinnerOptions {
+  @scala.inline
+  def apply(
+    animation: java.lang.String = null,
+    className: java.lang.String = null,
+    color: java.lang.String | js.Array[java.lang.String] = null,
+    corners: scala.Int | scala.Double = null,
+    direction: scala.Int | scala.Double = null,
+    fadeColor: java.lang.String | js.Array[java.lang.String] = null,
+    left: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    lines: scala.Int | scala.Double = null,
+    position: java.lang.String = null,
+    radius: scala.Int | scala.Double = null,
+    rotate: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null,
+    shadow: scala.Boolean | java.lang.String = null,
+    speed: scala.Int | scala.Double = null,
+    top: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): SpinnerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (corners != null) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (fadeColor != null) __obj.updateDynamic("fadeColor")(fadeColor.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpinnerOptions]
+  }
+}
+

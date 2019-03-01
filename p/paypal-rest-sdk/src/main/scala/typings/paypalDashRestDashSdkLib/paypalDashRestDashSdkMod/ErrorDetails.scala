@@ -10,3 +10,13 @@ trait ErrorDetails extends js.Object {
   val issue: java.lang.String
 }
 
+object ErrorDetails {
+  @scala.inline
+  def apply(field: java.lang.String, issue: java.lang.String): ErrorDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("issue")(issue)
+    __obj.asInstanceOf[ErrorDetails]
+  }
+}
+

@@ -26,3 +26,20 @@ trait XJobExecutor
   def trigger(Event: java.lang.String): scala.Unit
 }
 
+object XJobExecutor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    trigger: js.Function1[java.lang.String, scala.Unit]
+  ): XJobExecutor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("trigger")(trigger)
+    __obj.asInstanceOf[XJobExecutor]
+  }
+}
+

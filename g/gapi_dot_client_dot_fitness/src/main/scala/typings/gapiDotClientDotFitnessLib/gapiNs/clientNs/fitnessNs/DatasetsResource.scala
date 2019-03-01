@@ -26,3 +26,27 @@ trait DatasetsResource extends js.Object {
   def patch(request: gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillisDataSourceId): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
 }
 
+object DatasetsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillis, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltDataSourceId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillisDataSourceId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ]
+  ): DatasetsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("patch")(patch)
+    __obj.asInstanceOf[DatasetsResource]
+  }
+}
+

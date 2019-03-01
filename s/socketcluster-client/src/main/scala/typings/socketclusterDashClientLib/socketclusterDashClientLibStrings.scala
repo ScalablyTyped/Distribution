@@ -13,13 +13,15 @@ object socketclusterDashClientLibStrings {
   sealed trait authenticate extends js.Object
   
   @js.native
-  sealed trait authenticated extends js.Object
+  sealed trait authenticated
+    extends socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.AuthStates
   
   @js.native
   sealed trait close extends js.Object
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait closed
+    extends socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.States
   
   @js.native
   sealed trait connect extends js.Object
@@ -28,7 +30,8 @@ object socketclusterDashClientLibStrings {
   sealed trait connectAbort extends js.Object
   
   @js.native
-  sealed trait connecting extends js.Object
+  sealed trait connecting
+    extends socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.States
   
   @js.native
   sealed trait deauthenticate extends js.Object
@@ -46,7 +49,8 @@ object socketclusterDashClientLibStrings {
   sealed trait message extends js.Object
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open
+    extends socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.States
   
   @js.native
   sealed trait pending extends js.Object
@@ -70,7 +74,8 @@ object socketclusterDashClientLibStrings {
   sealed trait subscribeStateChange extends js.Object
   
   @js.native
-  sealed trait unauthenticated extends js.Object
+  sealed trait unauthenticated
+    extends socketclusterDashClientLib.libScclientsocketMod.SCClientSocketNs.AuthStates
   
   @js.native
   sealed trait unsubscribe extends js.Object

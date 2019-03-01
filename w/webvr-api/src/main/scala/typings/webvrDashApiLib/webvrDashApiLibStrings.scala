@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 object webvrDashApiLibStrings {
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left extends VREye_dt_alias
   
   @js.native
-  sealed trait mounted extends js.Object
+  sealed trait mounted extends VRDisplayEventReason_dt_alias
   
   @js.native
-  sealed trait navigation extends js.Object
+  sealed trait navigation extends VRDisplayEventReason_dt_alias
   
   @js.native
-  sealed trait requested extends js.Object
+  sealed trait requested extends VRDisplayEventReason_dt_alias
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right extends VREye_dt_alias
   
   @js.native
-  sealed trait unmounted extends js.Object
+  sealed trait unmounted extends VRDisplayEventReason_dt_alias
   
   @js.native
   sealed trait vrdisplayactivate extends js.Object

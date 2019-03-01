@@ -154,3 +154,90 @@ trait Column extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Column {
+  @scala.inline
+  def apply(
+    allowEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    allowGrouping: js.UndefOr[scala.Boolean] = js.undefined,
+    allowResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    clipMode: ClipMode | java.lang.String = null,
+    commands: js.Array[ColumnsCommand] = null,
+    cssClass: java.lang.String = null,
+    customAttributes: js.Any = null,
+    dataSource: js.Any = null,
+    defaultValue: java.lang.String | scala.Double | scala.Boolean | stdLib.Date = null,
+    disableHtmlEncode: js.UndefOr[scala.Boolean] = js.undefined,
+    displayAsCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    editParams: js.Any = null,
+    editTemplate: js.Any = null,
+    editType: EditingType | java.lang.String = null,
+    enableGroupByFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    field: java.lang.String = null,
+    filterBarTemplate: js.Any = null,
+    filterType: FilterType | java.lang.String = null,
+    foreignKeyField: java.lang.String = null,
+    foreignKeyValue: java.lang.String = null,
+    format: java.lang.String = null,
+    headerTemplateID: java.lang.String = null,
+    headerText: java.lang.String = null,
+    headerTextAlign: ejDotWebDotAllLib.ejNs.TextAlign | java.lang.String = null,
+    headerTooltip: java.lang.String = null,
+    isFrozen: js.UndefOr[scala.Boolean] = js.undefined,
+    isIdentity: js.UndefOr[scala.Boolean] = js.undefined,
+    isPrimaryKey: js.UndefOr[scala.Boolean] = js.undefined,
+    priority: scala.Int | scala.Double = null,
+    showInColumnChooser: js.UndefOr[scala.Boolean] = js.undefined,
+    template: scala.Boolean | java.lang.String = null,
+    textAlign: ejDotWebDotAllLib.ejNs.TextAlign | java.lang.String = null,
+    tooltip: java.lang.String = null,
+    `type`: java.lang.String = null,
+    validationRules: js.Any = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): Column = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering)
+    if (!js.isUndefined(allowGrouping)) __obj.updateDynamic("allowGrouping")(allowGrouping)
+    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing)
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
+    if (clipMode != null) __obj.updateDynamic("clipMode")(clipMode.asInstanceOf[js.Any])
+    if (commands != null) __obj.updateDynamic("commands")(commands)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableHtmlEncode)) __obj.updateDynamic("disableHtmlEncode")(disableHtmlEncode)
+    if (!js.isUndefined(displayAsCheckbox)) __obj.updateDynamic("displayAsCheckbox")(displayAsCheckbox)
+    if (editParams != null) __obj.updateDynamic("editParams")(editParams)
+    if (editTemplate != null) __obj.updateDynamic("editTemplate")(editTemplate)
+    if (editType != null) __obj.updateDynamic("editType")(editType.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableGroupByFormat)) __obj.updateDynamic("enableGroupByFormat")(enableGroupByFormat)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (filterBarTemplate != null) __obj.updateDynamic("filterBarTemplate")(filterBarTemplate)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (foreignKeyField != null) __obj.updateDynamic("foreignKeyField")(foreignKeyField)
+    if (foreignKeyValue != null) __obj.updateDynamic("foreignKeyValue")(foreignKeyValue)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (headerTemplateID != null) __obj.updateDynamic("headerTemplateID")(headerTemplateID)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (headerTextAlign != null) __obj.updateDynamic("headerTextAlign")(headerTextAlign.asInstanceOf[js.Any])
+    if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip)
+    if (!js.isUndefined(isFrozen)) __obj.updateDynamic("isFrozen")(isFrozen)
+    if (!js.isUndefined(isIdentity)) __obj.updateDynamic("isIdentity")(isIdentity)
+    if (!js.isUndefined(isPrimaryKey)) __obj.updateDynamic("isPrimaryKey")(isPrimaryKey)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInColumnChooser)) __obj.updateDynamic("showInColumnChooser")(showInColumnChooser)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Column]
+  }
+}
+

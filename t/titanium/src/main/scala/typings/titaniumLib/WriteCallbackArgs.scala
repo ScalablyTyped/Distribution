@@ -42,3 +42,26 @@ trait WriteCallbackArgs extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WriteCallbackArgs {
+  @scala.inline
+  def apply(
+    bytesProcessed: scala.Int | scala.Double = null,
+    code: scala.Int | scala.Double = null,
+    error: java.lang.String = null,
+    errorDescription: java.lang.String = null,
+    errorState: scala.Int | scala.Double = null,
+    source: titaniumLib.TitaniumNs.IOStream = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): WriteCallbackArgs = {
+    val __obj = js.Dynamic.literal()
+    if (bytesProcessed != null) __obj.updateDynamic("bytesProcessed")(bytesProcessed.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription)
+    if (errorState != null) __obj.updateDynamic("errorState")(errorState.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[WriteCallbackArgs]
+  }
+}
+

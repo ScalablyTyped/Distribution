@@ -11,3 +11,14 @@ trait Anon_CurrentTime extends js.Object {
   var seekableDuration: scala.Double
 }
 
+object Anon_CurrentTime {
+  @scala.inline
+  def apply(currentTime: scala.Double, playableDuration: scala.Double, seekableDuration: scala.Double): Anon_CurrentTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentTime")(currentTime)
+    __obj.updateDynamic("playableDuration")(playableDuration)
+    __obj.updateDynamic("seekableDuration")(seekableDuration)
+    __obj.asInstanceOf[Anon_CurrentTime]
+  }
+}
+

@@ -74,3 +74,38 @@ trait SortableGridProps extends js.Object {
   ] = js.undefined
 }
 
+object SortableGridProps {
+  @scala.inline
+  def apply(
+    activeBlockCenteringDuration: scala.Int | scala.Double = null,
+    blockTransitionDuration: scala.Int | scala.Double = null,
+    children: js.Array[reactDashNativeDashSortableDashGridLib.SortableGridItem] = null,
+    doubleTapTreshold: scala.Int | scala.Double = null,
+    dragActivationThreshold: scala.Int | scala.Double = null,
+    dragStartAnimation: reactDashNativeDashSortableDashGridLib.Anon_Transform = null,
+    itemHeight: scala.Int | scala.Double = null,
+    itemWidth: scala.Int | scala.Double = null,
+    itemsPerRow: scala.Int | scala.Double = null,
+    onDeleteItem: js.Function1[/* deletedItem */ OrderedItem, scala.Unit] = null,
+    onDragRelease: js.Function1[/* itemOrder */ ItemOrder, scala.Unit] = null,
+    onDragStart: js.Function1[/* item */ OrderedItem, scala.Unit] = null,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): SortableGridProps = {
+    val __obj = js.Dynamic.literal()
+    if (activeBlockCenteringDuration != null) __obj.updateDynamic("activeBlockCenteringDuration")(activeBlockCenteringDuration.asInstanceOf[js.Any])
+    if (blockTransitionDuration != null) __obj.updateDynamic("blockTransitionDuration")(blockTransitionDuration.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (doubleTapTreshold != null) __obj.updateDynamic("doubleTapTreshold")(doubleTapTreshold.asInstanceOf[js.Any])
+    if (dragActivationThreshold != null) __obj.updateDynamic("dragActivationThreshold")(dragActivationThreshold.asInstanceOf[js.Any])
+    if (dragStartAnimation != null) __obj.updateDynamic("dragStartAnimation")(dragStartAnimation)
+    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
+    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
+    if (itemsPerRow != null) __obj.updateDynamic("itemsPerRow")(itemsPerRow.asInstanceOf[js.Any])
+    if (onDeleteItem != null) __obj.updateDynamic("onDeleteItem")(onDeleteItem)
+    if (onDragRelease != null) __obj.updateDynamic("onDragRelease")(onDragRelease)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SortableGridProps]
+  }
+}
+

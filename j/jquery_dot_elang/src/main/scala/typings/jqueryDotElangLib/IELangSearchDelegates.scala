@@ -14,3 +14,24 @@ trait IELangSearchDelegates extends js.Object {
   var selectHandler: js.Function
 }
 
+object IELangSearchDelegates {
+  @scala.inline
+  def apply(
+    langDirectionClickHandler: js.Function,
+    langDirectionHandler: js.Function,
+    searchClickHandler: js.Function,
+    searchHandler: js.Function,
+    selectCallback: js.Function,
+    selectHandler: js.Function
+  ): IELangSearchDelegates = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("langDirectionClickHandler")(langDirectionClickHandler)
+    __obj.updateDynamic("langDirectionHandler")(langDirectionHandler)
+    __obj.updateDynamic("searchClickHandler")(searchClickHandler)
+    __obj.updateDynamic("searchHandler")(searchHandler)
+    __obj.updateDynamic("selectCallback")(selectCallback)
+    __obj.updateDynamic("selectHandler")(selectHandler)
+    __obj.asInstanceOf[IELangSearchDelegates]
+  }
+}
+

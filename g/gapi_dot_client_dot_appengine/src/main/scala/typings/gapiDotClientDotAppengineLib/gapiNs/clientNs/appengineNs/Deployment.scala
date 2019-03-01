@@ -17,3 +17,18 @@ trait Deployment extends js.Object {
   var zip: js.UndefOr[ZipInfo] = js.undefined
 }
 
+object Deployment {
+  @scala.inline
+  def apply(
+    container: ContainerInfo = null,
+    files: stdLib.Record[java.lang.String, FileInfo] = null,
+    zip: ZipInfo = null
+  ): Deployment = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (zip != null) __obj.updateDynamic("zip")(zip)
+    __obj.asInstanceOf[Deployment]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Validator[V] extends js.Object {
   def validate(value: V): scala.Unit
 }
 
+object Validator {
+  @scala.inline
+  def apply[V](validate: js.Function1[V, scala.Unit], getHint: js.Function0[java.lang.String | scala.Null] = null): Validator[V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("validate")(validate)
+    if (getHint != null) __obj.updateDynamic("getHint")(getHint)
+    __obj.asInstanceOf[Validator[V]]
+  }
+}
+

@@ -49,3 +49,36 @@ trait InstanceProperties extends js.Object {
   var tags: js.UndefOr[Tags] = js.undefined
 }
 
+object InstanceProperties {
+  @scala.inline
+  def apply(
+    canIpForward: js.UndefOr[scala.Boolean] = js.undefined,
+    description: java.lang.String = null,
+    disks: js.Array[AttachedDisk] = null,
+    guestAccelerators: js.Array[AcceleratorConfig] = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    machineType: java.lang.String = null,
+    metadata: Metadata = null,
+    minCpuPlatform: java.lang.String = null,
+    networkInterfaces: js.Array[NetworkInterface] = null,
+    scheduling: Scheduling = null,
+    serviceAccounts: js.Array[ServiceAccount] = null,
+    tags: Tags = null
+  ): InstanceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (disks != null) __obj.updateDynamic("disks")(disks)
+    if (guestAccelerators != null) __obj.updateDynamic("guestAccelerators")(guestAccelerators)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform)
+    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces)
+    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling)
+    if (serviceAccounts != null) __obj.updateDynamic("serviceAccounts")(serviceAccounts)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[InstanceProperties]
+  }
+}
+

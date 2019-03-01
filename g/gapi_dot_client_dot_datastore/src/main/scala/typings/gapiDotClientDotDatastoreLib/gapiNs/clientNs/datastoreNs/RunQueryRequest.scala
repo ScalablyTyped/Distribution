@@ -21,3 +21,20 @@ trait RunQueryRequest extends js.Object {
   var readOptions: js.UndefOr[ReadOptions] = js.undefined
 }
 
+object RunQueryRequest {
+  @scala.inline
+  def apply(
+    gqlQuery: GqlQuery = null,
+    partitionId: PartitionId = null,
+    query: Query = null,
+    readOptions: ReadOptions = null
+  ): RunQueryRequest = {
+    val __obj = js.Dynamic.literal()
+    if (gqlQuery != null) __obj.updateDynamic("gqlQuery")(gqlQuery)
+    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (readOptions != null) __obj.updateDynamic("readOptions")(readOptions)
+    __obj.asInstanceOf[RunQueryRequest]
+  }
+}
+

@@ -76,3 +76,68 @@ trait InputEvent extends js.Object {
   def copy(): InputEvent
 }
 
+object InputEvent {
+  @scala.inline
+  def apply(
+    alt: scala.Boolean,
+    bubbles: scala.Boolean,
+    button: scala.Double,
+    buttons: scala.Double,
+    clickCount: scala.Double,
+    control: scala.Boolean,
+    copy: js.Function0[InputEvent],
+    delta: scala.Double,
+    diagram: Diagram,
+    documentPoint: Point,
+    down: scala.Boolean,
+    event: stdLib.Event,
+    handled: scala.Boolean,
+    isMac: scala.Boolean,
+    isMultiTouch: scala.Boolean,
+    isTouchEvent: scala.Boolean,
+    key: java.lang.String,
+    left: scala.Boolean,
+    meta: scala.Boolean,
+    middle: scala.Boolean,
+    modifiers: scala.Double,
+    right: scala.Boolean,
+    shift: scala.Boolean,
+    targetDiagram: Diagram,
+    targetObject: GraphObject,
+    timestamp: scala.Double,
+    up: scala.Boolean,
+    viewPoint: Point
+  ): InputEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alt")(alt)
+    __obj.updateDynamic("bubbles")(bubbles)
+    __obj.updateDynamic("button")(button)
+    __obj.updateDynamic("buttons")(buttons)
+    __obj.updateDynamic("clickCount")(clickCount)
+    __obj.updateDynamic("control")(control)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("delta")(delta)
+    __obj.updateDynamic("diagram")(diagram)
+    __obj.updateDynamic("documentPoint")(documentPoint)
+    __obj.updateDynamic("down")(down)
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("handled")(handled)
+    __obj.updateDynamic("isMac")(isMac)
+    __obj.updateDynamic("isMultiTouch")(isMultiTouch)
+    __obj.updateDynamic("isTouchEvent")(isTouchEvent)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("middle")(middle)
+    __obj.updateDynamic("modifiers")(modifiers)
+    __obj.updateDynamic("right")(right)
+    __obj.updateDynamic("shift")(shift)
+    __obj.updateDynamic("targetDiagram")(targetDiagram)
+    __obj.updateDynamic("targetObject")(targetObject)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.updateDynamic("up")(up)
+    __obj.updateDynamic("viewPoint")(viewPoint)
+    __obj.asInstanceOf[InputEvent]
+  }
+}
+

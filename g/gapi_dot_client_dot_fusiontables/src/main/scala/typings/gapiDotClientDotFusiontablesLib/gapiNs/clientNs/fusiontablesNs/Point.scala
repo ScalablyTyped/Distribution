@@ -12,3 +12,13 @@ trait Point extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Point {
+  @scala.inline
+  def apply(coordinates: js.Array[scala.Double] = null, `type`: java.lang.String = null): Point = {
+    val __obj = js.Dynamic.literal()
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Point]
+  }
+}
+

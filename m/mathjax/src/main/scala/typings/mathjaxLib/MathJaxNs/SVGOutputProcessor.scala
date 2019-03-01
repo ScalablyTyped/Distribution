@@ -87,3 +87,44 @@ trait SVGOutputProcessor extends js.Object {
   var useGlobalCache: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SVGOutputProcessor {
+  @scala.inline
+  def apply(
+    EqnChunk: scala.Int | scala.Double = null,
+    EqnChunkDelay: scala.Int | scala.Double = null,
+    EqnChunkFactor: scala.Int | scala.Double = null,
+    addMMLclasses: js.UndefOr[scala.Boolean] = js.undefined,
+    blacker: scala.Int | scala.Double = null,
+    font: java.lang.String = null,
+    linebreaks: LineBreaks = null,
+    matchFontHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    minScaleAdjust: scala.Int | scala.Double = null,
+    mtextFontInherit: js.UndefOr[scala.Boolean] = js.undefined,
+    scale: scala.Int | scala.Double = null,
+    styles: js.Any = null,
+    tooltip: ToolTip = null,
+    undefinedFamily: java.lang.String = null,
+    useFontCache: js.UndefOr[scala.Boolean] = js.undefined,
+    useGlobalCache: js.UndefOr[scala.Boolean] = js.undefined
+  ): SVGOutputProcessor = {
+    val __obj = js.Dynamic.literal()
+    if (EqnChunk != null) __obj.updateDynamic("EqnChunk")(EqnChunk.asInstanceOf[js.Any])
+    if (EqnChunkDelay != null) __obj.updateDynamic("EqnChunkDelay")(EqnChunkDelay.asInstanceOf[js.Any])
+    if (EqnChunkFactor != null) __obj.updateDynamic("EqnChunkFactor")(EqnChunkFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(addMMLclasses)) __obj.updateDynamic("addMMLclasses")(addMMLclasses)
+    if (blacker != null) __obj.updateDynamic("blacker")(blacker.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (linebreaks != null) __obj.updateDynamic("linebreaks")(linebreaks)
+    if (!js.isUndefined(matchFontHeight)) __obj.updateDynamic("matchFontHeight")(matchFontHeight)
+    if (minScaleAdjust != null) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtextFontInherit)) __obj.updateDynamic("mtextFontInherit")(mtextFontInherit)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (undefinedFamily != null) __obj.updateDynamic("undefinedFamily")(undefinedFamily)
+    if (!js.isUndefined(useFontCache)) __obj.updateDynamic("useFontCache")(useFontCache)
+    if (!js.isUndefined(useGlobalCache)) __obj.updateDynamic("useGlobalCache")(useGlobalCache)
+    __obj.asInstanceOf[SVGOutputProcessor]
+  }
+}
+

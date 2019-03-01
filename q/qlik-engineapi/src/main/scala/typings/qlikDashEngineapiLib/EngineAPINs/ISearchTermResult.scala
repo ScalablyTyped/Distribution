@@ -25,3 +25,14 @@ trait ISearchTermResult extends js.Object {
   var qText: java.lang.String
 }
 
+object ISearchTermResult {
+  @scala.inline
+  def apply(qElemNumber: scala.Double, qRanges: js.Array[ISearchCharRange], qText: java.lang.String): ISearchTermResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qElemNumber")(qElemNumber)
+    __obj.updateDynamic("qRanges")(qRanges)
+    __obj.updateDynamic("qText")(qText)
+    __obj.asInstanceOf[ISearchTermResult]
+  }
+}
+

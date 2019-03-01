@@ -39,3 +39,13 @@ trait IStaticContentListItem extends js.Object {
   var qUrlDef: java.lang.String
 }
 
+object IStaticContentListItem {
+  @scala.inline
+  def apply(qUrl: java.lang.String, qUrlDef: java.lang.String): IStaticContentListItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qUrl")(qUrl)
+    __obj.updateDynamic("qUrlDef")(qUrlDef)
+    __obj.asInstanceOf[IStaticContentListItem]
+  }
+}
+

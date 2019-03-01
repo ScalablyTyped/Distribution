@@ -173,3 +173,38 @@ trait LinkifyOptions extends js.Object {
   var validate: js.UndefOr[PossiblyByType[PossiblyFuncOfHrefAndType[scala.Boolean]]] = js.undefined
 }
 
+object LinkifyOptions {
+  @scala.inline
+  def apply(
+    attributes: PossiblyFuncOfHrefAndType[reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement]] = null,
+    className: PossiblyByType[PossiblyFuncOfHrefAndType[js.UndefOr[java.lang.String]]] = null,
+    defaultProtocol: java.lang.String = null,
+    events: PossiblyFuncOfHrefAndType[org.scalablytyped.runtime.StringDictionary[EventHandler]] = null,
+    format: PossiblyByType[
+      js.Function2[/* value */ java.lang.String, /* type */ java.lang.String, java.lang.String]
+    ] = null,
+    formatHref: PossiblyByType[
+      js.Function2[/* href */ java.lang.String, /* type */ java.lang.String, java.lang.String]
+    ] = null,
+    ignoreTags: js.Array[java.lang.String] = null,
+    nl2br: js.UndefOr[scala.Boolean] = js.undefined,
+    tagName: PossiblyByType[PossiblyFuncOfHrefAndType[java.lang.String]] = null,
+    target: PossiblyByType[PossiblyFuncOfHrefAndType[js.UndefOr[java.lang.String | scala.Null]]] = null,
+    validate: PossiblyByType[PossiblyFuncOfHrefAndType[scala.Boolean]] = null
+  ): LinkifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (defaultProtocol != null) __obj.updateDynamic("defaultProtocol")(defaultProtocol)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (formatHref != null) __obj.updateDynamic("formatHref")(formatHref.asInstanceOf[js.Any])
+    if (ignoreTags != null) __obj.updateDynamic("ignoreTags")(ignoreTags)
+    if (!js.isUndefined(nl2br)) __obj.updateDynamic("nl2br")(nl2br)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LinkifyOptions]
+  }
+}
+

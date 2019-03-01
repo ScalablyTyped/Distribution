@@ -195,3 +195,72 @@ trait PodSpec extends js.Object {
   val volumes: js.Array[Volume]
 }
 
+object PodSpec {
+  @scala.inline
+  def apply(
+    activeDeadlineSeconds: scala.Double,
+    affinity: Affinity,
+    automountServiceAccountToken: scala.Boolean,
+    containers: js.Array[Container],
+    dnsConfig: PodDNSConfig,
+    dnsPolicy: java.lang.String,
+    enableServiceLinks: scala.Boolean,
+    hostAliases: js.Array[HostAlias],
+    hostIPC: scala.Boolean,
+    hostNetwork: scala.Boolean,
+    hostPID: scala.Boolean,
+    hostname: java.lang.String,
+    imagePullSecrets: js.Array[LocalObjectReference],
+    initContainers: js.Array[Container],
+    nodeName: java.lang.String,
+    nodeSelector: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    priority: scala.Double,
+    priorityClassName: java.lang.String,
+    readinessGates: js.Array[PodReadinessGate],
+    restartPolicy: java.lang.String,
+    runtimeClassName: java.lang.String,
+    schedulerName: java.lang.String,
+    securityContext: PodSecurityContext,
+    serviceAccount: java.lang.String,
+    serviceAccountName: java.lang.String,
+    shareProcessNamespace: scala.Boolean,
+    subdomain: java.lang.String,
+    terminationGracePeriodSeconds: scala.Double,
+    tolerations: js.Array[Toleration],
+    volumes: js.Array[Volume]
+  ): PodSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activeDeadlineSeconds")(activeDeadlineSeconds)
+    __obj.updateDynamic("affinity")(affinity)
+    __obj.updateDynamic("automountServiceAccountToken")(automountServiceAccountToken)
+    __obj.updateDynamic("containers")(containers)
+    __obj.updateDynamic("dnsConfig")(dnsConfig)
+    __obj.updateDynamic("dnsPolicy")(dnsPolicy)
+    __obj.updateDynamic("enableServiceLinks")(enableServiceLinks)
+    __obj.updateDynamic("hostAliases")(hostAliases)
+    __obj.updateDynamic("hostIPC")(hostIPC)
+    __obj.updateDynamic("hostNetwork")(hostNetwork)
+    __obj.updateDynamic("hostPID")(hostPID)
+    __obj.updateDynamic("hostname")(hostname)
+    __obj.updateDynamic("imagePullSecrets")(imagePullSecrets)
+    __obj.updateDynamic("initContainers")(initContainers)
+    __obj.updateDynamic("nodeName")(nodeName)
+    __obj.updateDynamic("nodeSelector")(nodeSelector)
+    __obj.updateDynamic("priority")(priority)
+    __obj.updateDynamic("priorityClassName")(priorityClassName)
+    __obj.updateDynamic("readinessGates")(readinessGates)
+    __obj.updateDynamic("restartPolicy")(restartPolicy)
+    __obj.updateDynamic("runtimeClassName")(runtimeClassName)
+    __obj.updateDynamic("schedulerName")(schedulerName)
+    __obj.updateDynamic("securityContext")(securityContext)
+    __obj.updateDynamic("serviceAccount")(serviceAccount)
+    __obj.updateDynamic("serviceAccountName")(serviceAccountName)
+    __obj.updateDynamic("shareProcessNamespace")(shareProcessNamespace)
+    __obj.updateDynamic("subdomain")(subdomain)
+    __obj.updateDynamic("terminationGracePeriodSeconds")(terminationGracePeriodSeconds)
+    __obj.updateDynamic("tolerations")(tolerations)
+    __obj.updateDynamic("volumes")(volumes)
+    __obj.asInstanceOf[PodSpec]
+  }
+}
+

@@ -40,3 +40,40 @@ trait CollectionAggregationOptions extends js.Object {
   var session: js.UndefOr[ClientSession] = js.undefined
 }
 
+object CollectionAggregationOptions {
+  @scala.inline
+  def apply(
+    allowDiskUse: js.UndefOr[scala.Boolean] = js.undefined,
+    bypassDocumentValidation: js.UndefOr[scala.Boolean] = js.undefined,
+    collation: CollationDocument = null,
+    comment: java.lang.String = null,
+    cursor: mongodbLib.Anon_BatchSizeNumber = null,
+    explain: js.UndefOr[scala.Boolean] = js.undefined,
+    hint: java.lang.String | js.Object = null,
+    maxTimeMS: scala.Int | scala.Double = null,
+    promoteBuffers: js.UndefOr[scala.Boolean] = js.undefined,
+    promoteLongs: js.UndefOr[scala.Boolean] = js.undefined,
+    promoteValues: js.UndefOr[scala.Boolean] = js.undefined,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    readPreference: ReadPreference | java.lang.String = null,
+    session: ClientSession = null
+  ): CollectionAggregationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDiskUse)) __obj.updateDynamic("allowDiskUse")(allowDiskUse)
+    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation)
+    if (collation != null) __obj.updateDynamic("collation")(collation)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain)
+    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
+    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
+    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers)
+    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
+    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session)
+    __obj.asInstanceOf[CollectionAggregationOptions]
+  }
+}
+

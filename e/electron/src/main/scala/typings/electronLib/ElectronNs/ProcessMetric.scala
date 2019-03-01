@@ -21,3 +21,13 @@ trait ProcessMetric extends js.Object {
   var `type`: java.lang.String
 }
 
+object ProcessMetric {
+  @scala.inline
+  def apply(cpu: CPUUsage, pid: scala.Double, `type`: java.lang.String): ProcessMetric = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("cpu")(cpu)
+    __obj.updateDynamic("pid")(pid)
+    __obj.asInstanceOf[ProcessMetric]
+  }
+}
+

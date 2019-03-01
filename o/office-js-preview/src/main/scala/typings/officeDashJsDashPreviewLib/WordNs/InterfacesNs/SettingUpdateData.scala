@@ -17,3 +17,12 @@ trait SettingUpdateData extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object SettingUpdateData {
+  @scala.inline
+  def apply(value: js.Any = null): SettingUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SettingUpdateData]
+  }
+}
+

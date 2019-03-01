@@ -27,3 +27,20 @@ trait OAuth2Provider extends js.Object {
   var url: java.lang.String
 }
 
+object OAuth2Provider {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    description: java.lang.String = null,
+    name: java.lang.String = null,
+    oauth2: OAuth2Endpoints = null
+  ): OAuth2Provider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2)
+    __obj.asInstanceOf[OAuth2Provider]
+  }
+}
+

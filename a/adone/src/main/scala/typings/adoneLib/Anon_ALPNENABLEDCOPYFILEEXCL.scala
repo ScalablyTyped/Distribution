@@ -285,3 +285,312 @@ trait Anon_ALPNENABLEDCOPYFILEEXCL extends js.Object {
   val defaultCoreCipherList: java.lang.String
 }
 
+object Anon_ALPNENABLEDCOPYFILEEXCL {
+  @scala.inline
+  def apply(
+    ALPN_ENABLED: scala.Double,
+    COPYFILE_EXCL: scala.Double,
+    COPYFILE_FICLONE: scala.Double,
+    COPYFILE_FICLONE_FORCE: scala.Double,
+    DH_CHECK_P_NOT_PRIME: scala.Double,
+    DH_CHECK_P_NOT_SAFE_PRIME: scala.Double,
+    DH_NOT_SUITABLE_GENERATOR: scala.Double,
+    DH_UNABLE_TO_CHECK_GENERATOR: scala.Double,
+    E2BIG: scala.Double,
+    EACCES: scala.Double,
+    EADDRINUSE: scala.Double,
+    EADDRNOTAVAIL: scala.Double,
+    EAFNOSUPPORT: scala.Double,
+    EAGAIN: scala.Double,
+    EALREADY: scala.Double,
+    EBADF: scala.Double,
+    EBADMSG: scala.Double,
+    EBUSY: scala.Double,
+    ECANCELED: scala.Double,
+    ECHILD: scala.Double,
+    ECONNABORTED: scala.Double,
+    ECONNREFUSED: scala.Double,
+    ECONNRESET: scala.Double,
+    EDEADLK: scala.Double,
+    EDESTADDRREQ: scala.Double,
+    EDOM: scala.Double,
+    EEXIST: scala.Double,
+    EFAULT: scala.Double,
+    EFBIG: scala.Double,
+    EHOSTUNREACH: scala.Double,
+    EIDRM: scala.Double,
+    EILSEQ: scala.Double,
+    EINPROGRESS: scala.Double,
+    EINTR: scala.Double,
+    EINVAL: scala.Double,
+    EIO: scala.Double,
+    EISCONN: scala.Double,
+    EISDIR: scala.Double,
+    ELOOP: scala.Double,
+    EMFILE: scala.Double,
+    EMLINK: scala.Double,
+    EMSGSIZE: scala.Double,
+    ENAMETOOLONG: scala.Double,
+    ENETDOWN: scala.Double,
+    ENETRESET: scala.Double,
+    ENETUNREACH: scala.Double,
+    ENFILE: scala.Double,
+    ENGINE_METHOD_ALL: scala.Double,
+    ENGINE_METHOD_CIPHERS: scala.Double,
+    ENGINE_METHOD_DH: scala.Double,
+    ENGINE_METHOD_DIGESTS: scala.Double,
+    ENGINE_METHOD_DSA: scala.Double,
+    ENGINE_METHOD_ECDH: scala.Double,
+    ENGINE_METHOD_ECDSA: scala.Double,
+    ENGINE_METHOD_NONE: scala.Double,
+    ENGINE_METHOD_PKEY_ASN1_METHS: scala.Double,
+    ENGINE_METHOD_PKEY_METHS: scala.Double,
+    ENGINE_METHOD_RAND: scala.Double,
+    ENGINE_METHOD_RSA: scala.Double,
+    ENGINE_METHOD_STORE: scala.Double,
+    ENOBUFS: scala.Double,
+    ENODATA: scala.Double,
+    ENODEV: scala.Double,
+    ENOENT: scala.Double,
+    ENOEXEC: scala.Double,
+    ENOLCK: scala.Double,
+    ENOLINK: scala.Double,
+    ENOMEM: scala.Double,
+    ENOMSG: scala.Double,
+    ENOPROTOOPT: scala.Double,
+    ENOSPC: scala.Double,
+    ENOSR: scala.Double,
+    ENOSTR: scala.Double,
+    ENOSYS: scala.Double,
+    ENOTCONN: scala.Double,
+    ENOTDIR: scala.Double,
+    ENOTEMPTY: scala.Double,
+    ENOTSOCK: scala.Double,
+    ENOTSUP: scala.Double,
+    ENOTTY: scala.Double,
+    ENXIO: scala.Double,
+    EOPNOTSUPP: scala.Double,
+    EOVERFLOW: scala.Double,
+    EPERM: scala.Double,
+    EPIPE: scala.Double,
+    EPROTO: scala.Double,
+    EPROTONOSUPPORT: scala.Double,
+    EPROTOTYPE: scala.Double,
+    ERANGE: scala.Double,
+    EROFS: scala.Double,
+    ESPIPE: scala.Double,
+    ESRCH: scala.Double,
+    ETIME: scala.Double,
+    ETIMEDOUT: scala.Double,
+    ETXTBSY: scala.Double,
+    EWOULDBLOCK: scala.Double,
+    EXDEV: scala.Double,
+    F_OK: scala.Double,
+    NPN_ENABLED: scala.Double,
+    O_APPEND: scala.Double,
+    O_CREAT: scala.Double,
+    O_DIRECT: scala.Double,
+    O_DIRECTORY: scala.Double,
+    O_DSYNC: scala.Double,
+    O_EXCL: scala.Double,
+    O_NOATIME: scala.Double,
+    O_NOCTTY: scala.Double,
+    O_NOFOLLOW: scala.Double,
+    O_NONBLOCK: scala.Double,
+    O_RDONLY: scala.Double,
+    O_RDWR: scala.Double,
+    O_SYMLINK: scala.Double,
+    O_SYNC: scala.Double,
+    O_TRUNC: scala.Double,
+    O_WRONLY: scala.Double,
+    POINT_CONVERSION_COMPRESSED: scala.Double,
+    POINT_CONVERSION_HYBRID: scala.Double,
+    POINT_CONVERSION_UNCOMPRESSED: scala.Double,
+    RSA_NO_PADDING: scala.Double,
+    RSA_PKCS1_OAEP_PADDING: scala.Double,
+    RSA_PKCS1_PADDING: scala.Double,
+    RSA_PKCS1_PSS_PADDING: scala.Double,
+    RSA_SSLV23_PADDING: scala.Double,
+    RSA_X931_PADDING: scala.Double,
+    R_OK: scala.Double,
+    SIGABRT: scala.Double,
+    SIGALRM: scala.Double,
+    SIGBREAK: scala.Double,
+    SIGBUS: scala.Double,
+    SIGCHLD: scala.Double,
+    SIGCONT: scala.Double,
+    SIGFPE: scala.Double,
+    SIGHUP: scala.Double,
+    SIGILL: scala.Double,
+    SIGINT: scala.Double,
+    SIGIO: scala.Double,
+    SIGIOT: scala.Double,
+    SIGKILL: scala.Double,
+    SIGPIPE: scala.Double,
+    SIGPOLL: scala.Double,
+    SIGPROF: scala.Double,
+    SIGPWR: scala.Double,
+    SIGQUIT: scala.Double,
+    SIGSEGV: scala.Double,
+    SIGSTKFLT: scala.Double,
+    SIGSTOP: scala.Double,
+    SIGSYS: scala.Double,
+    SIGTERM: scala.Double,
+    SIGTRAP: scala.Double,
+    SIGTSTP: scala.Double
+  ): Anon_ALPNENABLEDCOPYFILEEXCL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ALPN_ENABLED")(ALPN_ENABLED)
+    __obj.updateDynamic("COPYFILE_EXCL")(COPYFILE_EXCL)
+    __obj.updateDynamic("COPYFILE_FICLONE")(COPYFILE_FICLONE)
+    __obj.updateDynamic("COPYFILE_FICLONE_FORCE")(COPYFILE_FICLONE_FORCE)
+    __obj.updateDynamic("DH_CHECK_P_NOT_PRIME")(DH_CHECK_P_NOT_PRIME)
+    __obj.updateDynamic("DH_CHECK_P_NOT_SAFE_PRIME")(DH_CHECK_P_NOT_SAFE_PRIME)
+    __obj.updateDynamic("DH_NOT_SUITABLE_GENERATOR")(DH_NOT_SUITABLE_GENERATOR)
+    __obj.updateDynamic("DH_UNABLE_TO_CHECK_GENERATOR")(DH_UNABLE_TO_CHECK_GENERATOR)
+    __obj.updateDynamic("E2BIG")(E2BIG)
+    __obj.updateDynamic("EACCES")(EACCES)
+    __obj.updateDynamic("EADDRINUSE")(EADDRINUSE)
+    __obj.updateDynamic("EADDRNOTAVAIL")(EADDRNOTAVAIL)
+    __obj.updateDynamic("EAFNOSUPPORT")(EAFNOSUPPORT)
+    __obj.updateDynamic("EAGAIN")(EAGAIN)
+    __obj.updateDynamic("EALREADY")(EALREADY)
+    __obj.updateDynamic("EBADF")(EBADF)
+    __obj.updateDynamic("EBADMSG")(EBADMSG)
+    __obj.updateDynamic("EBUSY")(EBUSY)
+    __obj.updateDynamic("ECANCELED")(ECANCELED)
+    __obj.updateDynamic("ECHILD")(ECHILD)
+    __obj.updateDynamic("ECONNABORTED")(ECONNABORTED)
+    __obj.updateDynamic("ECONNREFUSED")(ECONNREFUSED)
+    __obj.updateDynamic("ECONNRESET")(ECONNRESET)
+    __obj.updateDynamic("EDEADLK")(EDEADLK)
+    __obj.updateDynamic("EDESTADDRREQ")(EDESTADDRREQ)
+    __obj.updateDynamic("EDOM")(EDOM)
+    __obj.updateDynamic("EEXIST")(EEXIST)
+    __obj.updateDynamic("EFAULT")(EFAULT)
+    __obj.updateDynamic("EFBIG")(EFBIG)
+    __obj.updateDynamic("EHOSTUNREACH")(EHOSTUNREACH)
+    __obj.updateDynamic("EIDRM")(EIDRM)
+    __obj.updateDynamic("EILSEQ")(EILSEQ)
+    __obj.updateDynamic("EINPROGRESS")(EINPROGRESS)
+    __obj.updateDynamic("EINTR")(EINTR)
+    __obj.updateDynamic("EINVAL")(EINVAL)
+    __obj.updateDynamic("EIO")(EIO)
+    __obj.updateDynamic("EISCONN")(EISCONN)
+    __obj.updateDynamic("EISDIR")(EISDIR)
+    __obj.updateDynamic("ELOOP")(ELOOP)
+    __obj.updateDynamic("EMFILE")(EMFILE)
+    __obj.updateDynamic("EMLINK")(EMLINK)
+    __obj.updateDynamic("EMSGSIZE")(EMSGSIZE)
+    __obj.updateDynamic("ENAMETOOLONG")(ENAMETOOLONG)
+    __obj.updateDynamic("ENETDOWN")(ENETDOWN)
+    __obj.updateDynamic("ENETRESET")(ENETRESET)
+    __obj.updateDynamic("ENETUNREACH")(ENETUNREACH)
+    __obj.updateDynamic("ENFILE")(ENFILE)
+    __obj.updateDynamic("ENGINE_METHOD_ALL")(ENGINE_METHOD_ALL)
+    __obj.updateDynamic("ENGINE_METHOD_CIPHERS")(ENGINE_METHOD_CIPHERS)
+    __obj.updateDynamic("ENGINE_METHOD_DH")(ENGINE_METHOD_DH)
+    __obj.updateDynamic("ENGINE_METHOD_DIGESTS")(ENGINE_METHOD_DIGESTS)
+    __obj.updateDynamic("ENGINE_METHOD_DSA")(ENGINE_METHOD_DSA)
+    __obj.updateDynamic("ENGINE_METHOD_ECDH")(ENGINE_METHOD_ECDH)
+    __obj.updateDynamic("ENGINE_METHOD_ECDSA")(ENGINE_METHOD_ECDSA)
+    __obj.updateDynamic("ENGINE_METHOD_NONE")(ENGINE_METHOD_NONE)
+    __obj.updateDynamic("ENGINE_METHOD_PKEY_ASN1_METHS")(ENGINE_METHOD_PKEY_ASN1_METHS)
+    __obj.updateDynamic("ENGINE_METHOD_PKEY_METHS")(ENGINE_METHOD_PKEY_METHS)
+    __obj.updateDynamic("ENGINE_METHOD_RAND")(ENGINE_METHOD_RAND)
+    __obj.updateDynamic("ENGINE_METHOD_RSA")(ENGINE_METHOD_RSA)
+    __obj.updateDynamic("ENGINE_METHOD_STORE")(ENGINE_METHOD_STORE)
+    __obj.updateDynamic("ENOBUFS")(ENOBUFS)
+    __obj.updateDynamic("ENODATA")(ENODATA)
+    __obj.updateDynamic("ENODEV")(ENODEV)
+    __obj.updateDynamic("ENOENT")(ENOENT)
+    __obj.updateDynamic("ENOEXEC")(ENOEXEC)
+    __obj.updateDynamic("ENOLCK")(ENOLCK)
+    __obj.updateDynamic("ENOLINK")(ENOLINK)
+    __obj.updateDynamic("ENOMEM")(ENOMEM)
+    __obj.updateDynamic("ENOMSG")(ENOMSG)
+    __obj.updateDynamic("ENOPROTOOPT")(ENOPROTOOPT)
+    __obj.updateDynamic("ENOSPC")(ENOSPC)
+    __obj.updateDynamic("ENOSR")(ENOSR)
+    __obj.updateDynamic("ENOSTR")(ENOSTR)
+    __obj.updateDynamic("ENOSYS")(ENOSYS)
+    __obj.updateDynamic("ENOTCONN")(ENOTCONN)
+    __obj.updateDynamic("ENOTDIR")(ENOTDIR)
+    __obj.updateDynamic("ENOTEMPTY")(ENOTEMPTY)
+    __obj.updateDynamic("ENOTSOCK")(ENOTSOCK)
+    __obj.updateDynamic("ENOTSUP")(ENOTSUP)
+    __obj.updateDynamic("ENOTTY")(ENOTTY)
+    __obj.updateDynamic("ENXIO")(ENXIO)
+    __obj.updateDynamic("EOPNOTSUPP")(EOPNOTSUPP)
+    __obj.updateDynamic("EOVERFLOW")(EOVERFLOW)
+    __obj.updateDynamic("EPERM")(EPERM)
+    __obj.updateDynamic("EPIPE")(EPIPE)
+    __obj.updateDynamic("EPROTO")(EPROTO)
+    __obj.updateDynamic("EPROTONOSUPPORT")(EPROTONOSUPPORT)
+    __obj.updateDynamic("EPROTOTYPE")(EPROTOTYPE)
+    __obj.updateDynamic("ERANGE")(ERANGE)
+    __obj.updateDynamic("EROFS")(EROFS)
+    __obj.updateDynamic("ESPIPE")(ESPIPE)
+    __obj.updateDynamic("ESRCH")(ESRCH)
+    __obj.updateDynamic("ETIME")(ETIME)
+    __obj.updateDynamic("ETIMEDOUT")(ETIMEDOUT)
+    __obj.updateDynamic("ETXTBSY")(ETXTBSY)
+    __obj.updateDynamic("EWOULDBLOCK")(EWOULDBLOCK)
+    __obj.updateDynamic("EXDEV")(EXDEV)
+    __obj.updateDynamic("F_OK")(F_OK)
+    __obj.updateDynamic("NPN_ENABLED")(NPN_ENABLED)
+    __obj.updateDynamic("O_APPEND")(O_APPEND)
+    __obj.updateDynamic("O_CREAT")(O_CREAT)
+    __obj.updateDynamic("O_DIRECT")(O_DIRECT)
+    __obj.updateDynamic("O_DIRECTORY")(O_DIRECTORY)
+    __obj.updateDynamic("O_DSYNC")(O_DSYNC)
+    __obj.updateDynamic("O_EXCL")(O_EXCL)
+    __obj.updateDynamic("O_NOATIME")(O_NOATIME)
+    __obj.updateDynamic("O_NOCTTY")(O_NOCTTY)
+    __obj.updateDynamic("O_NOFOLLOW")(O_NOFOLLOW)
+    __obj.updateDynamic("O_NONBLOCK")(O_NONBLOCK)
+    __obj.updateDynamic("O_RDONLY")(O_RDONLY)
+    __obj.updateDynamic("O_RDWR")(O_RDWR)
+    __obj.updateDynamic("O_SYMLINK")(O_SYMLINK)
+    __obj.updateDynamic("O_SYNC")(O_SYNC)
+    __obj.updateDynamic("O_TRUNC")(O_TRUNC)
+    __obj.updateDynamic("O_WRONLY")(O_WRONLY)
+    __obj.updateDynamic("POINT_CONVERSION_COMPRESSED")(POINT_CONVERSION_COMPRESSED)
+    __obj.updateDynamic("POINT_CONVERSION_HYBRID")(POINT_CONVERSION_HYBRID)
+    __obj.updateDynamic("POINT_CONVERSION_UNCOMPRESSED")(POINT_CONVERSION_UNCOMPRESSED)
+    __obj.updateDynamic("RSA_NO_PADDING")(RSA_NO_PADDING)
+    __obj.updateDynamic("RSA_PKCS1_OAEP_PADDING")(RSA_PKCS1_OAEP_PADDING)
+    __obj.updateDynamic("RSA_PKCS1_PADDING")(RSA_PKCS1_PADDING)
+    __obj.updateDynamic("RSA_PKCS1_PSS_PADDING")(RSA_PKCS1_PSS_PADDING)
+    __obj.updateDynamic("RSA_SSLV23_PADDING")(RSA_SSLV23_PADDING)
+    __obj.updateDynamic("RSA_X931_PADDING")(RSA_X931_PADDING)
+    __obj.updateDynamic("R_OK")(R_OK)
+    __obj.updateDynamic("SIGABRT")(SIGABRT)
+    __obj.updateDynamic("SIGALRM")(SIGALRM)
+    __obj.updateDynamic("SIGBREAK")(SIGBREAK)
+    __obj.updateDynamic("SIGBUS")(SIGBUS)
+    __obj.updateDynamic("SIGCHLD")(SIGCHLD)
+    __obj.updateDynamic("SIGCONT")(SIGCONT)
+    __obj.updateDynamic("SIGFPE")(SIGFPE)
+    __obj.updateDynamic("SIGHUP")(SIGHUP)
+    __obj.updateDynamic("SIGILL")(SIGILL)
+    __obj.updateDynamic("SIGINT")(SIGINT)
+    __obj.updateDynamic("SIGIO")(SIGIO)
+    __obj.updateDynamic("SIGIOT")(SIGIOT)
+    __obj.updateDynamic("SIGKILL")(SIGKILL)
+    __obj.updateDynamic("SIGPIPE")(SIGPIPE)
+    __obj.updateDynamic("SIGPOLL")(SIGPOLL)
+    __obj.updateDynamic("SIGPROF")(SIGPROF)
+    __obj.updateDynamic("SIGPWR")(SIGPWR)
+    __obj.updateDynamic("SIGQUIT")(SIGQUIT)
+    __obj.updateDynamic("SIGSEGV")(SIGSEGV)
+    __obj.updateDynamic("SIGSTKFLT")(SIGSTKFLT)
+    __obj.updateDynamic("SIGSTOP")(SIGSTOP)
+    __obj.updateDynamic("SIGSYS")(SIGSYS)
+    __obj.updateDynamic("SIGTERM")(SIGTERM)
+    __obj.updateDynamic("SIGTRAP")(SIGTRAP)
+    __obj.updateDynamic("SIGTSTP")(SIGTSTP)
+    __obj.asInstanceOf[Anon_ALPNENABLEDCOPYFILEEXCL]
+  }
+}
+

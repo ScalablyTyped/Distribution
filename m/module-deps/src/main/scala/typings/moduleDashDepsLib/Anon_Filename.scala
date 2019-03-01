@@ -11,3 +11,18 @@ trait Anon_Filename
   var id: java.lang.String
 }
 
+object Anon_Filename {
+  @scala.inline
+  def apply(
+    filename: java.lang.String,
+    id: java.lang.String,
+    StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Filename = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filename")(filename)
+    __obj.updateDynamic("id")(id)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Filename]
+  }
+}
+

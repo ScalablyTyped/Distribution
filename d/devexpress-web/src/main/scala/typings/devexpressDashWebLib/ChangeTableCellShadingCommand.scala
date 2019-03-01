@@ -20,3 +20,13 @@ trait ChangeTableCellShadingCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeTableCellShadingCommand {
+  @scala.inline
+  def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[js.Any]): ChangeTableCellShadingCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeTableCellShadingCommand]
+  }
+}
+

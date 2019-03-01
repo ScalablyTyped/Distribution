@@ -32,3 +32,20 @@ trait AxisBreak extends js.Object {
   var to: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AxisBreak {
+  @scala.inline
+  def apply(
+    breakSize: scala.Int | scala.Double = null,
+    from: scala.Int | scala.Double = null,
+    repeat: scala.Int | scala.Double = null,
+    to: scala.Int | scala.Double = null
+  ): AxisBreak = {
+    val __obj = js.Dynamic.literal()
+    if (breakSize != null) __obj.updateDynamic("breakSize")(breakSize.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AxisBreak]
+  }
+}
+

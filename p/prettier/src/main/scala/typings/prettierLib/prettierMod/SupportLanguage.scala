@@ -21,3 +21,38 @@ trait SupportLanguage extends js.Object {
   var vscodeLanguageIds: js.Array[java.lang.String]
 }
 
+object SupportLanguage {
+  @scala.inline
+  def apply(
+    aceMode: java.lang.String,
+    codemirrorMimeType: java.lang.String,
+    codemirrorMode: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    linguistLanguageId: scala.Double,
+    name: java.lang.String,
+    parsers: js.Array[BuiltInParserName] | js.Array[java.lang.String],
+    tmScope: java.lang.String,
+    vscodeLanguageIds: js.Array[java.lang.String],
+    aliases: js.Array[java.lang.String] = null,
+    filenames: js.Array[java.lang.String] = null,
+    group: java.lang.String = null,
+    since: java.lang.String = null
+  ): SupportLanguage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aceMode")(aceMode)
+    __obj.updateDynamic("codemirrorMimeType")(codemirrorMimeType)
+    __obj.updateDynamic("codemirrorMode")(codemirrorMode)
+    __obj.updateDynamic("extensions")(extensions)
+    __obj.updateDynamic("linguistLanguageId")(linguistLanguageId)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parsers")(parsers.asInstanceOf[js.Any])
+    __obj.updateDynamic("tmScope")(tmScope)
+    __obj.updateDynamic("vscodeLanguageIds")(vscodeLanguageIds)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (filenames != null) __obj.updateDynamic("filenames")(filenames)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (since != null) __obj.updateDynamic("since")(since)
+    __obj.asInstanceOf[SupportLanguage]
+  }
+}
+

@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object rcDashCalendarLibStrings {
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends rcDashCalendarLib.rcDashCalendarMod.Mode
   
   @js.native
-  sealed trait decade extends js.Object
+  sealed trait decade
+    extends rcDashCalendarLib.rcDashCalendarMod.Mode
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends rcDashCalendarLib.rcDashCalendarMod.Mode
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends rcDashCalendarLib.rcDashCalendarMod.Mode
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends rcDashCalendarLib.rcDashCalendarMod.Mode
   
   @scala.inline
   def date: date = "date".asInstanceOf[date]

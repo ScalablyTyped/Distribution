@@ -52,3 +52,32 @@ trait Anon_BottomBottomleft extends js.Object {
   var tpl: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_BottomBottomleft {
+  @scala.inline
+  def apply(
+    distance: scala.Int | scala.Double = null,
+    event: js.Any = null,
+    hideDuration: scala.Int | scala.Double = null,
+    hideEasing: java.lang.String = null,
+    padding: scala.Int | scala.Double = null,
+    position: juiLib.juiLibStrings.top | juiLib.juiLibStrings.`top-lefet` | juiLib.juiLibStrings.`top-right` | juiLib.juiLibStrings.bottom | juiLib.juiLibStrings.`bottom-left` | juiLib.juiLibStrings.`bottom-right` = null,
+    showDuration: scala.Int | scala.Double = null,
+    showEasing: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    tpl: js.Any = null
+  ): Anon_BottomBottomleft = {
+    val __obj = js.Dynamic.literal()
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (hideDuration != null) __obj.updateDynamic("hideDuration")(hideDuration.asInstanceOf[js.Any])
+    if (hideEasing != null) __obj.updateDynamic("hideEasing")(hideEasing)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (showDuration != null) __obj.updateDynamic("showDuration")(showDuration.asInstanceOf[js.Any])
+    if (showEasing != null) __obj.updateDynamic("showEasing")(showEasing)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    __obj.asInstanceOf[Anon_BottomBottomleft]
+  }
+}
+

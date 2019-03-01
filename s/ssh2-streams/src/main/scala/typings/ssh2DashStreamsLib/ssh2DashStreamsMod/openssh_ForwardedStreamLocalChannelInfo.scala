@@ -5,11 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait openssh_ForwardedStreamLocalChannelInfo extends js.Object {
+trait openssh_ForwardedStreamLocalChannelInfo extends ChannelOpenInfo {
   var data: SocketChannelData
   var packetSize: scala.Double
   var sender: scala.Double
   var `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`forwarded-streamlocal@opensshDOTcom`
   var window: scala.Double
+}
+
+object openssh_ForwardedStreamLocalChannelInfo {
+  @scala.inline
+  def apply(
+    data: SocketChannelData,
+    packetSize: scala.Double,
+    sender: scala.Double,
+    `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`forwarded-streamlocal@opensshDOTcom`,
+    window: scala.Double
+  ): openssh_ForwardedStreamLocalChannelInfo = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("packetSize")(packetSize)
+    __obj.updateDynamic("sender")(sender)
+    __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[openssh_ForwardedStreamLocalChannelInfo]
+  }
 }
 

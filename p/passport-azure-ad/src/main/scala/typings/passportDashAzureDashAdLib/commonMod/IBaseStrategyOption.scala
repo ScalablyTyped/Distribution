@@ -18,3 +18,28 @@ trait IBaseStrategyOption extends js.Object {
   var validateIssuer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IBaseStrategyOption {
+  @scala.inline
+  def apply(
+    clientID: java.lang.String,
+    identityMetadata: java.lang.String,
+    clockSkew: scala.Int | scala.Double = null,
+    isB2C: js.UndefOr[scala.Boolean] = js.undefined,
+    issuer: java.lang.String | js.Array[java.lang.String] = null,
+    loggingLevel: passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.info | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.warn | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.error = null,
+    loggingNoPII: js.UndefOr[scala.Boolean] = js.undefined,
+    validateIssuer: js.UndefOr[scala.Boolean] = js.undefined
+  ): IBaseStrategyOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientID")(clientID)
+    __obj.updateDynamic("identityMetadata")(identityMetadata)
+    if (clockSkew != null) __obj.updateDynamic("clockSkew")(clockSkew.asInstanceOf[js.Any])
+    if (!js.isUndefined(isB2C)) __obj.updateDynamic("isB2C")(isB2C)
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    if (loggingLevel != null) __obj.updateDynamic("loggingLevel")(loggingLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(loggingNoPII)) __obj.updateDynamic("loggingNoPII")(loggingNoPII)
+    if (!js.isUndefined(validateIssuer)) __obj.updateDynamic("validateIssuer")(validateIssuer)
+    __obj.asInstanceOf[IBaseStrategyOption]
+  }
+}
+

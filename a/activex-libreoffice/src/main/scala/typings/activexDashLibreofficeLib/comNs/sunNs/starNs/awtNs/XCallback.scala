@@ -14,3 +14,12 @@ trait XCallback extends js.Object {
   def notify(aData: js.Any): scala.Unit
 }
 
+object XCallback {
+  @scala.inline
+  def apply(notify: js.Function1[js.Any, scala.Unit]): XCallback = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("notify")(notify)
+    __obj.asInstanceOf[XCallback]
+  }
+}
+

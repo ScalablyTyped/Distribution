@@ -28,3 +28,14 @@ trait ResourceQuotaSpec extends js.Object {
   val scopes: js.Array[java.lang.String]
 }
 
+object ResourceQuotaSpec {
+  @scala.inline
+  def apply(hard: js.Object, scopeSelector: ScopeSelector, scopes: js.Array[java.lang.String]): ResourceQuotaSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hard")(hard)
+    __obj.updateDynamic("scopeSelector")(scopeSelector)
+    __obj.updateDynamic("scopes")(scopes)
+    __obj.asInstanceOf[ResourceQuotaSpec]
+  }
+}
+

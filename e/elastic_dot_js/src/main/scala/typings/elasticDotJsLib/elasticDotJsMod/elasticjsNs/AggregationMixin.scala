@@ -30,3 +30,20 @@ trait AggregationMixin extends Aggregation {
   def toJSON(): js.Any
 }
 
+object AggregationMixin {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, AggregationMixin],
+    aggregation: js.Function1[Aggregation, AggregationMixin],
+    toJSON: js.Function0[js.Any]
+  ): AggregationMixin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("agg")(agg)
+    __obj.updateDynamic("aggregation")(aggregation)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[AggregationMixin]
+  }
+}
+

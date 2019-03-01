@@ -11,3 +11,12 @@ trait Anon_Js extends js.Object {
   var sql: js.Any
 }
 
+object Anon_Js {
+  @scala.inline
+  def apply(`js_`: js.Any, sql: js.Any): Anon_Js = {
+    val __obj = js.Dynamic.literal(`js_` = `js_`)
+    __obj.updateDynamic("sql")(sql)
+    __obj.asInstanceOf[Anon_Js]
+  }
+}
+

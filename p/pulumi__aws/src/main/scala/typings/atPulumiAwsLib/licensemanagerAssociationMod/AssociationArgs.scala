@@ -16,3 +16,16 @@ trait AssociationArgs extends js.Object {
   val resourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object AssociationArgs {
+  @scala.inline
+  def apply(
+    licenseConfigurationArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    resourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): AssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("licenseConfigurationArn")(licenseConfigurationArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AssociationArgs]
+  }
+}
+

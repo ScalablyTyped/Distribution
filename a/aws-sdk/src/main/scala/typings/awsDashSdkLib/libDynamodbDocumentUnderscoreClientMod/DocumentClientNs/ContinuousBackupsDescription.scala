@@ -16,3 +16,16 @@ trait ContinuousBackupsDescription extends js.Object {
   var PointInTimeRecoveryDescription: js.UndefOr[PointInTimeRecoveryDescription] = js.undefined
 }
 
+object ContinuousBackupsDescription {
+  @scala.inline
+  def apply(
+    ContinuousBackupsStatus: ContinuousBackupsStatus,
+    PointInTimeRecoveryDescription: PointInTimeRecoveryDescription = null
+  ): ContinuousBackupsDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ContinuousBackupsStatus")(ContinuousBackupsStatus.asInstanceOf[js.Any])
+    if (PointInTimeRecoveryDescription != null) __obj.updateDynamic("PointInTimeRecoveryDescription")(PointInTimeRecoveryDescription)
+    __obj.asInstanceOf[ContinuousBackupsDescription]
+  }
+}
+

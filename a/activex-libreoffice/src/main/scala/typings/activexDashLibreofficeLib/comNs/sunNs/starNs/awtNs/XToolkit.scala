@@ -36,3 +36,37 @@ trait XToolkit
   def getWorkArea(): Rectangle
 }
 
+object XToolkit {
+  @scala.inline
+  def apply(
+    DesktopWindow: XWindowPeer,
+    WorkArea: Rectangle,
+    acquire: js.Function0[scala.Unit],
+    createRegion: js.Function0[XRegion],
+    createScreenCompatibleDevice: js.Function2[scala.Double, scala.Double, XDevice],
+    createWindow: js.Function1[WindowDescriptor, XWindowPeer],
+    createWindows: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[WindowDescriptor], 
+      activexDashInteropLib.SafeArray[XWindowPeer]
+    ],
+    getDesktopWindow: js.Function0[XWindowPeer],
+    getWorkArea: js.Function0[Rectangle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XToolkit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DesktopWindow")(DesktopWindow)
+    __obj.updateDynamic("WorkArea")(WorkArea)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createRegion")(createRegion)
+    __obj.updateDynamic("createScreenCompatibleDevice")(createScreenCompatibleDevice)
+    __obj.updateDynamic("createWindow")(createWindow)
+    __obj.updateDynamic("createWindows")(createWindows)
+    __obj.updateDynamic("getDesktopWindow")(getDesktopWindow)
+    __obj.updateDynamic("getWorkArea")(getWorkArea)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XToolkit]
+  }
+}
+

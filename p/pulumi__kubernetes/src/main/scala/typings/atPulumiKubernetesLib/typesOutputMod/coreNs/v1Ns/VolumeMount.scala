@@ -33,3 +33,22 @@ trait VolumeMount extends js.Object {
   val subPath: java.lang.String
 }
 
+object VolumeMount {
+  @scala.inline
+  def apply(
+    mountPath: java.lang.String,
+    mountPropagation: java.lang.String,
+    name: java.lang.String,
+    readOnly: scala.Boolean,
+    subPath: java.lang.String
+  ): VolumeMount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mountPath")(mountPath)
+    __obj.updateDynamic("mountPropagation")(mountPropagation)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.updateDynamic("subPath")(subPath)
+    __obj.asInstanceOf[VolumeMount]
+  }
+}
+

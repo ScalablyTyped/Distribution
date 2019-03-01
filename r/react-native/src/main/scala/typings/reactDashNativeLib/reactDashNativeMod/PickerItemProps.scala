@@ -12,3 +12,20 @@ trait PickerItemProps extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object PickerItemProps {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    color: java.lang.String = null,
+    testID: java.lang.String = null,
+    value: js.Any = null
+  ): PickerItemProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PickerItemProps]
+  }
+}
+

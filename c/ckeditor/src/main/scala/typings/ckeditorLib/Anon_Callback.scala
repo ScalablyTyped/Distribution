@@ -11,3 +11,18 @@ trait Anon_Callback extends js.Object {
   var noSnapshot: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Callback {
+  @scala.inline
+  def apply(
+    callback: js.Function0[scala.Unit] = null,
+    internal: js.UndefOr[scala.Boolean] = js.undefined,
+    noSnapshot: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Callback = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
+    if (!js.isUndefined(noSnapshot)) __obj.updateDynamic("noSnapshot")(noSnapshot)
+    __obj.asInstanceOf[Anon_Callback]
+  }
+}
+

@@ -11,3 +11,18 @@ trait WorkbookSheetRow extends js.Object {
   var index: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WorkbookSheetRow {
+  @scala.inline
+  def apply(
+    cells: js.Array[WorkbookSheetRowCell] = null,
+    height: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null
+  ): WorkbookSheetRow = {
+    val __obj = js.Dynamic.literal()
+    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorkbookSheetRow]
+  }
+}
+

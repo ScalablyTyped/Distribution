@@ -52,3 +52,34 @@ trait Anon_DefaultTab extends js.Object {
   var unsubscribedTrailer: java.lang.String
 }
 
+object Anon_DefaultTab {
+  @scala.inline
+  def apply(
+    defaultTab: java.lang.String,
+    description: java.lang.String,
+    featuredChannelsTitle: java.lang.String,
+    featuredChannelsUrls: js.Array[java.lang.String],
+    keywords: java.lang.String,
+    moderateComments: scala.Boolean,
+    showBrowseView: scala.Boolean,
+    showRelatedChannels: scala.Boolean,
+    title: java.lang.String,
+    trackingAnalyticsAccountId: java.lang.String,
+    unsubscribedTrailer: java.lang.String
+  ): Anon_DefaultTab = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultTab")(defaultTab)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("featuredChannelsTitle")(featuredChannelsTitle)
+    __obj.updateDynamic("featuredChannelsUrls")(featuredChannelsUrls)
+    __obj.updateDynamic("keywords")(keywords)
+    __obj.updateDynamic("moderateComments")(moderateComments)
+    __obj.updateDynamic("showBrowseView")(showBrowseView)
+    __obj.updateDynamic("showRelatedChannels")(showRelatedChannels)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("trackingAnalyticsAccountId")(trackingAnalyticsAccountId)
+    __obj.updateDynamic("unsubscribedTrailer")(unsubscribedTrailer)
+    __obj.asInstanceOf[Anon_DefaultTab]
+  }
+}
+

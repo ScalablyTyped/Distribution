@@ -19,7 +19,8 @@ object eslintLibStrings {
   sealed trait BlockStatement extends js.Object
   
   @js.native
-  sealed trait Boolean extends js.Object
+  sealed trait Boolean
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
   sealed trait BreakStatement extends js.Object
@@ -85,7 +86,8 @@ object eslintLibStrings {
   sealed trait FunctionName extends js.Object
   
   @js.native
-  sealed trait Identifier extends js.Object
+  sealed trait Identifier
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
   sealed trait IfStatement extends js.Object
@@ -109,13 +111,16 @@ object eslintLibStrings {
   sealed trait ImportSpecifier extends js.Object
   
   @js.native
-  sealed trait JSXIdentifier extends js.Object
+  sealed trait JSXIdentifier
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
-  sealed trait JSXText extends js.Object
+  sealed trait JSXText
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
-  sealed trait Keyword extends js.Object
+  sealed trait Keyword
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
   sealed trait LabeledStatement extends js.Object
@@ -133,10 +138,12 @@ object eslintLibStrings {
   sealed trait NodeListener extends js.Object
   
   @js.native
-  sealed trait Null extends js.Object
+  sealed trait Null
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
-  sealed trait Numeric extends js.Object
+  sealed trait Numeric
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
   sealed trait ObjectPattern extends js.Object
@@ -151,10 +158,12 @@ object eslintLibStrings {
   sealed trait Property extends js.Object
   
   @js.native
-  sealed trait Punctuator extends js.Object
+  sealed trait Punctuator
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
-  sealed trait RegularExpression extends js.Object
+  sealed trait RegularExpression
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
   sealed trait RestElement extends js.Object
@@ -166,7 +175,8 @@ object eslintLibStrings {
   sealed trait SpreadElement extends js.Object
   
   @js.native
-  sealed trait String extends js.Object
+  sealed trait String
+    extends eslintLib.eslintMod.ASTNs.TokenType
   
   @js.native
   sealed trait Super extends js.Object
@@ -217,7 +227,8 @@ object eslintLibStrings {
   sealed trait code extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends eslintLib.eslintMod.LinterNs.RuleLevel
   
   @js.native
   sealed trait `for` extends js.Object
@@ -235,7 +246,8 @@ object eslintLibStrings {
   sealed trait module extends js.Object
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends eslintLib.eslintMod.LinterNs.RuleLevel
   
   @js.native
   sealed trait script extends js.Object
@@ -244,7 +256,8 @@ object eslintLibStrings {
   sealed trait switch extends js.Object
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends eslintLib.eslintMod.LinterNs.RuleLevel
   
   @js.native
   sealed trait whitespace extends js.Object

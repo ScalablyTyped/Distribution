@@ -10,3 +10,16 @@ trait GridScrollable extends js.Object {
   var virtual: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GridScrollable {
+  @scala.inline
+  def apply(
+    endless: js.UndefOr[scala.Boolean] = js.undefined,
+    virtual: js.UndefOr[scala.Boolean] = js.undefined
+  ): GridScrollable = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(endless)) __obj.updateDynamic("endless")(endless)
+    if (!js.isUndefined(virtual)) __obj.updateDynamic("virtual")(virtual)
+    __obj.asInstanceOf[GridScrollable]
+  }
+}
+

@@ -38,3 +38,22 @@ trait SyncOptions extends js.Object {
   var updateDialog: js.UndefOr[UpdateDialog] = js.undefined
 }
 
+object SyncOptions {
+  @scala.inline
+  def apply(
+    deploymentKey: java.lang.String = null,
+    installMode: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode = null,
+    mandatoryInstallMode: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode = null,
+    minimumBackgroundDuration: scala.Int | scala.Double = null,
+    updateDialog: UpdateDialog = null
+  ): SyncOptions = {
+    val __obj = js.Dynamic.literal()
+    if (deploymentKey != null) __obj.updateDynamic("deploymentKey")(deploymentKey)
+    if (installMode != null) __obj.updateDynamic("installMode")(installMode)
+    if (mandatoryInstallMode != null) __obj.updateDynamic("mandatoryInstallMode")(mandatoryInstallMode)
+    if (minimumBackgroundDuration != null) __obj.updateDynamic("minimumBackgroundDuration")(minimumBackgroundDuration.asInstanceOf[js.Any])
+    if (updateDialog != null) __obj.updateDynamic("updateDialog")(updateDialog)
+    __obj.asInstanceOf[SyncOptions]
+  }
+}
+

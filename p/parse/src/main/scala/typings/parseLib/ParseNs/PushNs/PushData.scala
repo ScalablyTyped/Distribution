@@ -18,3 +18,32 @@ trait PushData extends js.Object {
   var where: js.UndefOr[parseLib.ParseNs.Query[parseLib.ParseNs.Installation]] = js.undefined
 }
 
+object PushData {
+  @scala.inline
+  def apply(
+    alert: java.lang.String = null,
+    badge: java.lang.String = null,
+    channels: js.Array[java.lang.String] = null,
+    data: js.Any = null,
+    expiration_interval: scala.Int | scala.Double = null,
+    expiration_time: stdLib.Date = null,
+    push_time: stdLib.Date = null,
+    sound: java.lang.String = null,
+    title: java.lang.String = null,
+    where: parseLib.ParseNs.Query[parseLib.ParseNs.Installation] = null
+  ): PushData = {
+    val __obj = js.Dynamic.literal()
+    if (alert != null) __obj.updateDynamic("alert")(alert)
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (expiration_interval != null) __obj.updateDynamic("expiration_interval")(expiration_interval.asInstanceOf[js.Any])
+    if (expiration_time != null) __obj.updateDynamic("expiration_time")(expiration_time)
+    if (push_time != null) __obj.updateDynamic("push_time")(push_time)
+    if (sound != null) __obj.updateDynamic("sound")(sound)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[PushData]
+  }
+}
+

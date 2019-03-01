@@ -14,3 +14,18 @@ trait LineBreakHyphenationOptions extends js.Object {
   var rHyphenator: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.XHyphenator
 }
 
+object LineBreakHyphenationOptions {
+  @scala.inline
+  def apply(
+    aHyphenationOptions: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues,
+    hyphenIndex: scala.Double,
+    rHyphenator: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.XHyphenator
+  ): LineBreakHyphenationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aHyphenationOptions")(aHyphenationOptions.asInstanceOf[js.Any])
+    __obj.updateDynamic("hyphenIndex")(hyphenIndex)
+    __obj.updateDynamic("rHyphenator")(rHyphenator)
+    __obj.asInstanceOf[LineBreakHyphenationOptions]
+  }
+}
+

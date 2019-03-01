@@ -10,37 +10,48 @@ object reactDashAlertLibStrings {
   sealed trait alert extends js.Object
   
   @js.native
-  sealed trait `bottom center` extends js.Object
+  sealed trait `bottom center`
+    extends reactDashAlertLib.reactDashAlertMod.AlertPosition
   
   @js.native
-  sealed trait `bottom left` extends js.Object
+  sealed trait `bottom left`
+    extends reactDashAlertLib.reactDashAlertMod.AlertPosition
   
   @js.native
-  sealed trait `bottom right` extends js.Object
+  sealed trait `bottom right`
+    extends reactDashAlertLib.reactDashAlertMod.AlertPosition
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends reactDashAlertLib.reactDashAlertMod.AlertType
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait fade
+    extends reactDashAlertLib.reactDashAlertMod.AlertTransition
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends reactDashAlertLib.reactDashAlertMod.AlertType
   
   @js.native
-  sealed trait scale extends js.Object
+  sealed trait scale
+    extends reactDashAlertLib.reactDashAlertMod.AlertTransition
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends reactDashAlertLib.reactDashAlertMod.AlertType
   
   @js.native
-  sealed trait `top center` extends js.Object
+  sealed trait `top center`
+    extends reactDashAlertLib.reactDashAlertMod.AlertPosition
   
   @js.native
-  sealed trait `top left` extends js.Object
+  sealed trait `top left`
+    extends reactDashAlertLib.reactDashAlertMod.AlertPosition
   
   @js.native
-  sealed trait `top right` extends js.Object
+  sealed trait `top right`
+    extends reactDashAlertLib.reactDashAlertMod.AlertPosition
   
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]

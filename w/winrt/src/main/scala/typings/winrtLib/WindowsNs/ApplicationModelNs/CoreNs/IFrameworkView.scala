@@ -13,3 +13,22 @@ trait IFrameworkView extends js.Object {
   def uninitialize(): scala.Unit
 }
 
+object IFrameworkView {
+  @scala.inline
+  def apply(
+    initialize: js.Function1[CoreApplicationView, scala.Unit],
+    load: js.Function1[java.lang.String, scala.Unit],
+    run: js.Function0[scala.Unit],
+    setWindow: js.Function1[winrtLib.WindowsNs.UINs.CoreNs.CoreWindow, scala.Unit],
+    uninitialize: js.Function0[scala.Unit]
+  ): IFrameworkView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("load")(load)
+    __obj.updateDynamic("run")(run)
+    __obj.updateDynamic("setWindow")(setWindow)
+    __obj.updateDynamic("uninitialize")(uninitialize)
+    __obj.asInstanceOf[IFrameworkView]
+  }
+}
+

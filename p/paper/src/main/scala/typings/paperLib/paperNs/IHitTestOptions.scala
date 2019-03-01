@@ -64,3 +64,40 @@ trait IHitTestOptions extends js.Object {
   var tolerance: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IHitTestOptions {
+  @scala.inline
+  def apply(
+    bounds: js.UndefOr[scala.Boolean] = js.undefined,
+    center: js.UndefOr[scala.Boolean] = js.undefined,
+    `class`: java.lang.String = null,
+    curves: js.UndefOr[scala.Boolean] = js.undefined,
+    ends: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    guides: js.UndefOr[scala.Boolean] = js.undefined,
+    handles: js.UndefOr[scala.Boolean] = js.undefined,
+    `match`: js.Function1[/* hit */ HitResult, scala.Boolean] = null,
+    position: js.UndefOr[scala.Boolean] = js.undefined,
+    segments: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    stroke: js.UndefOr[scala.Boolean] = js.undefined,
+    tolerance: scala.Int | scala.Double = null
+  ): IHitTestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bounds)) __obj.updateDynamic("bounds")(bounds)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (!js.isUndefined(curves)) __obj.updateDynamic("curves")(curves)
+    if (!js.isUndefined(ends)) __obj.updateDynamic("ends")(ends)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (!js.isUndefined(guides)) __obj.updateDynamic("guides")(guides)
+    if (!js.isUndefined(handles)) __obj.updateDynamic("handles")(handles)
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(segments)) __obj.updateDynamic("segments")(segments)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke)
+    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IHitTestOptions]
+  }
+}
+

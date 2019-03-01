@@ -24,3 +24,24 @@ trait CreateTemplateContent extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateTemplateContent {
+  @scala.inline
+  def apply(
+    from: Address | java.lang.String,
+    subject: java.lang.String,
+    headers: js.Any = null,
+    html: java.lang.String = null,
+    reply_to: java.lang.String = null,
+    text: java.lang.String = null
+  ): CreateTemplateContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    __obj.updateDynamic("subject")(subject)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[CreateTemplateContent]
+  }
+}
+

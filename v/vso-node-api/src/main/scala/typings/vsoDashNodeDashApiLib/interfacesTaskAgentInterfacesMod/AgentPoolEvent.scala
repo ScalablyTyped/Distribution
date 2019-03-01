@@ -10,3 +10,13 @@ trait AgentPoolEvent extends js.Object {
   var pool: TaskAgentPool
 }
 
+object AgentPoolEvent {
+  @scala.inline
+  def apply(eventType: java.lang.String, pool: TaskAgentPool): AgentPoolEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventType")(eventType)
+    __obj.updateDynamic("pool")(pool)
+    __obj.asInstanceOf[AgentPoolEvent]
+  }
+}
+

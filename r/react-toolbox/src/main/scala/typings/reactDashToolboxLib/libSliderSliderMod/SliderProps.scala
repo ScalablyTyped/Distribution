@@ -65,3 +65,86 @@ trait SliderProps
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SliderProps {
+  @scala.inline
+  def apply(
+    buffer: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    onChange: coreDashJsLib.Function = null,
+    onClick: coreDashJsLib.Function = null,
+    onContextMenu: coreDashJsLib.Function = null,
+    onDoubleClick: coreDashJsLib.Function = null,
+    onDrag: coreDashJsLib.Function = null,
+    onDragEnd: coreDashJsLib.Function = null,
+    onDragEnter: coreDashJsLib.Function = null,
+    onDragExit: coreDashJsLib.Function = null,
+    onDragLeave: coreDashJsLib.Function = null,
+    onDragOver: coreDashJsLib.Function = null,
+    onDragStart: coreDashJsLib.Function = null,
+    onDragStop: coreDashJsLib.Function = null,
+    onDrop: coreDashJsLib.Function = null,
+    onMouseDown: coreDashJsLib.Function = null,
+    onMouseEnter: coreDashJsLib.Function = null,
+    onMouseLeave: coreDashJsLib.Function = null,
+    onMouseMove: coreDashJsLib.Function = null,
+    onMouseOut: coreDashJsLib.Function = null,
+    onMouseOver: coreDashJsLib.Function = null,
+    onMouseUp: coreDashJsLib.Function = null,
+    onTouchCancel: coreDashJsLib.Function = null,
+    onTouchEnd: coreDashJsLib.Function = null,
+    onTouchMove: coreDashJsLib.Function = null,
+    onTouchStart: coreDashJsLib.Function = null,
+    pinned: js.UndefOr[scala.Boolean] = js.undefined,
+    snaps: js.UndefOr[scala.Boolean] = js.undefined,
+    step: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    theme: SliderTheme = null,
+    value: scala.Int | scala.Double = null
+  ): SliderProps = {
+    val __obj = js.Dynamic.literal()
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu)
+    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick)
+    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
+    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit)
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
+    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (onDragStop != null) __obj.updateDynamic("onDragStop")(onDragStop)
+    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
+    if (!js.isUndefined(snaps)) __obj.updateDynamic("snaps")(snaps)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SliderProps]
+  }
+}
+

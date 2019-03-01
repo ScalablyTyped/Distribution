@@ -29,3 +29,22 @@ trait TimeScale extends js.Object {
   var minorSlotTemplateId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimeScale {
+  @scala.inline
+  def apply(
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    majorSlot: scala.Int | scala.Double = null,
+    majorSlotTemplateId: java.lang.String = null,
+    minorSlotCount: scala.Int | scala.Double = null,
+    minorSlotTemplateId: java.lang.String = null
+  ): TimeScale = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (majorSlot != null) __obj.updateDynamic("majorSlot")(majorSlot.asInstanceOf[js.Any])
+    if (majorSlotTemplateId != null) __obj.updateDynamic("majorSlotTemplateId")(majorSlotTemplateId)
+    if (minorSlotCount != null) __obj.updateDynamic("minorSlotCount")(minorSlotCount.asInstanceOf[js.Any])
+    if (minorSlotTemplateId != null) __obj.updateDynamic("minorSlotTemplateId")(minorSlotTemplateId)
+    __obj.asInstanceOf[TimeScale]
+  }
+}
+

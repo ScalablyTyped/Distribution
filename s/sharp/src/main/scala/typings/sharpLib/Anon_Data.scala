@@ -10,3 +10,13 @@ trait Anon_Data extends js.Object {
   var info: sharpLib.sharpMod.sharpNs.OutputInfo
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply(data: nodeLib.Buffer, info: sharpLib.sharpMod.sharpNs.OutputInfo): Anon_Data = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("info")(info)
+    __obj.asInstanceOf[Anon_Data]
+  }
+}
+

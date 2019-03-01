@@ -19,3 +19,16 @@ trait CreateMacBuiltinOption extends js.Object {
   var hideWindow: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CreateMacBuiltinOption {
+  @scala.inline
+  def apply(
+    hideEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    hideWindow: js.UndefOr[scala.Boolean] = js.undefined
+  ): CreateMacBuiltinOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hideEdit)) __obj.updateDynamic("hideEdit")(hideEdit)
+    if (!js.isUndefined(hideWindow)) __obj.updateDynamic("hideWindow")(hideWindow)
+    __obj.asInstanceOf[CreateMacBuiltinOption]
+  }
+}
+

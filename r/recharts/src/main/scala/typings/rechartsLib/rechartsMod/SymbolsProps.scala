@@ -17,3 +17,24 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object SymbolsProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    cx: scala.Int | scala.Double = null,
+    cy: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null,
+    sizeType: rechartsLib.rechartsLibStrings.area | rechartsLib.rechartsLibStrings.diameter = null,
+    `type`: rechartsLib.rechartsLibStrings.circle | rechartsLib.rechartsLibStrings.cross | rechartsLib.rechartsLibStrings.diamond | rechartsLib.rechartsLibStrings.square | rechartsLib.rechartsLibStrings.star | rechartsLib.rechartsLibStrings.triangle | rechartsLib.rechartsLibStrings.wye = null
+  ): SymbolsProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
+    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SymbolsProps]
+  }
+}
+

@@ -47,3 +47,32 @@ trait IPayoutCreationOptions
   var statement_descriptor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IPayoutCreationOptions {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    description: java.lang.String = null,
+    destination: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    method: PayoutMethods = null,
+    source_type: stripeLib.stripeLibStrings.alipay_account | stripeLib.stripeLibStrings.bank_account | stripeLib.stripeLibStrings.card = null,
+    statement_descriptor: java.lang.String = null
+  ): IPayoutCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (source_type != null) __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    __obj.asInstanceOf[IPayoutCreationOptions]
+  }
+}
+

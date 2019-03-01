@@ -14,3 +14,24 @@ trait Text extends js.Object {
   def setText(text: java.lang.String): Text
 }
 
+object Text {
+  @scala.inline
+  def apply(
+    append: js.Function1[java.lang.String, Text],
+    detach: js.Function0[Content],
+    getParentElement: js.Function0[Element],
+    getText: js.Function0[java.lang.String],
+    getValue: js.Function0[java.lang.String],
+    setText: js.Function1[java.lang.String, Text]
+  ): Text = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("append")(append)
+    __obj.updateDynamic("detach")(detach)
+    __obj.updateDynamic("getParentElement")(getParentElement)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("setText")(setText)
+    __obj.asInstanceOf[Text]
+  }
+}
+

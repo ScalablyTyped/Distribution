@@ -13,3 +13,22 @@ trait DerivedDataObject
   var _subRows: js.Any
 }
 
+object DerivedDataObject {
+  @scala.inline
+  def apply(
+    _index: scala.Double,
+    _nestingLevel: scala.Double,
+    _original: js.Any,
+    _subRows: js.Any,
+    StringDictionary: /* p */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): DerivedDataObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_index")(_index)
+    __obj.updateDynamic("_nestingLevel")(_nestingLevel)
+    __obj.updateDynamic("_original")(_original)
+    __obj.updateDynamic("_subRows")(_subRows)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[DerivedDataObject]
+  }
+}
+

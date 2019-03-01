@@ -13,3 +13,22 @@ trait Anon_Encoding extends js.Object {
   var throws: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Encoding {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String = null,
+    flag: java.lang.String = null,
+    fs: jsonfileLib.jsonfileMod.FS = null,
+    reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _] = null,
+    throws: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Encoding = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (flag != null) __obj.updateDynamic("flag")(flag)
+    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (reviver != null) __obj.updateDynamic("reviver")(reviver)
+    if (!js.isUndefined(throws)) __obj.updateDynamic("throws")(throws)
+    __obj.asInstanceOf[Anon_Encoding]
+  }
+}
+

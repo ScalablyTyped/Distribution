@@ -121,3 +121,33 @@ trait IDataTypeResource extends js.Object {
   def save(dataType: js.Object, preValues: js.Array[_], isNew: scala.Boolean): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 
+object IDataTypeResource {
+  @scala.inline
+  def apply(
+    deleteById: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getAll: js.Function0[js.Any],
+    getById: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getPreValues: js.Function2[
+      java.lang.String, 
+      scala.Double, 
+      angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+    ],
+    getScaffold: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    save: js.Function3[
+      js.Object, 
+      js.Array[_], 
+      scala.Boolean, 
+      angularLib.angularMod.angularNs.IPromise[IResourcePromise]
+    ]
+  ): IDataTypeResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deleteById")(deleteById)
+    __obj.updateDynamic("getAll")(getAll)
+    __obj.updateDynamic("getById")(getById)
+    __obj.updateDynamic("getPreValues")(getPreValues)
+    __obj.updateDynamic("getScaffold")(getScaffold)
+    __obj.updateDynamic("save")(save)
+    __obj.asInstanceOf[IDataTypeResource]
+  }
+}
+

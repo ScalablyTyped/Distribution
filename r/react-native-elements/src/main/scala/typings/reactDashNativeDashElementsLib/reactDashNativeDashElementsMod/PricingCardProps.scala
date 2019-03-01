@@ -63,3 +63,34 @@ trait PricingCardProps extends js.Object {
   ] = js.undefined
 }
 
+object PricingCardProps {
+  @scala.inline
+  def apply(
+    button: ButtonInformation,
+    price: java.lang.String,
+    color: java.lang.String = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    info: js.Array[java.lang.String] = null,
+    infoStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    onButtonPress: js.Function0[scala.Unit] = null,
+    pricingStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    title: java.lang.String = null,
+    titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    wrapperStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): PricingCardProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("button")(button)
+    __obj.updateDynamic("price")(price)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (infoStyle != null) __obj.updateDynamic("infoStyle")(infoStyle.asInstanceOf[js.Any])
+    if (onButtonPress != null) __obj.updateDynamic("onButtonPress")(onButtonPress)
+    if (pricingStyle != null) __obj.updateDynamic("pricingStyle")(pricingStyle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PricingCardProps]
+  }
+}
+

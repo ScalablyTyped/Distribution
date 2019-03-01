@@ -39,3 +39,32 @@ trait HidDeviceInfo extends js.Object {
   var vendorId: chromeDashAppsLib.chromeNs.integer
 }
 
+object HidDeviceInfo {
+  @scala.inline
+  def apply(
+    collections: js.Array[Collection],
+    deviceId: chromeDashAppsLib.chromeNs.integer,
+    maxFeatureReportSize: chromeDashAppsLib.chromeNs.integer,
+    maxInputReportSize: chromeDashAppsLib.chromeNs.integer,
+    maxOutputReportSize: chromeDashAppsLib.chromeNs.integer,
+    productId: chromeDashAppsLib.chromeNs.integer,
+    productName: java.lang.String,
+    reportDescriptor: stdLib.ArrayBuffer,
+    serialNumber: java.lang.String,
+    vendorId: chromeDashAppsLib.chromeNs.integer
+  ): HidDeviceInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collections")(collections)
+    __obj.updateDynamic("deviceId")(deviceId)
+    __obj.updateDynamic("maxFeatureReportSize")(maxFeatureReportSize)
+    __obj.updateDynamic("maxInputReportSize")(maxInputReportSize)
+    __obj.updateDynamic("maxOutputReportSize")(maxOutputReportSize)
+    __obj.updateDynamic("productId")(productId)
+    __obj.updateDynamic("productName")(productName)
+    __obj.updateDynamic("reportDescriptor")(reportDescriptor)
+    __obj.updateDynamic("serialNumber")(serialNumber)
+    __obj.updateDynamic("vendorId")(vendorId)
+    __obj.asInstanceOf[HidDeviceInfo]
+  }
+}
+

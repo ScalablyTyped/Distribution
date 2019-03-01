@@ -52,3 +52,30 @@ trait DashboardImageExportOptions extends js.Object {
   var Title: java.lang.String
 }
 
+object DashboardImageExportOptions {
+  @scala.inline
+  def apply(
+    ExportFilters: scala.Boolean,
+    ExportParameters: scala.Boolean,
+    FontInfo: ExportFontInfo,
+    Format: java.lang.String,
+    IncludeHiddenParameters: scala.Boolean,
+    Resolution: scala.Double,
+    ScaleFactor: scala.Double,
+    ShowTitle: scala.Boolean,
+    Title: java.lang.String
+  ): DashboardImageExportOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ExportFilters")(ExportFilters)
+    __obj.updateDynamic("ExportParameters")(ExportParameters)
+    __obj.updateDynamic("FontInfo")(FontInfo)
+    __obj.updateDynamic("Format")(Format)
+    __obj.updateDynamic("IncludeHiddenParameters")(IncludeHiddenParameters)
+    __obj.updateDynamic("Resolution")(Resolution)
+    __obj.updateDynamic("ScaleFactor")(ScaleFactor)
+    __obj.updateDynamic("ShowTitle")(ShowTitle)
+    __obj.updateDynamic("Title")(Title)
+    __obj.asInstanceOf[DashboardImageExportOptions]
+  }
+}
+

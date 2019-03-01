@@ -24,3 +24,44 @@ trait MjmlButtonProps extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object MjmlButtonProps {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    backgroundColor: csstypeLib.csstypeMod.BackgroundColorProperty = null,
+    color: csstypeLib.csstypeMod.ColorProperty = null,
+    containerBackgroundColor: csstypeLib.csstypeMod.BackgroundColorProperty = null,
+    fontFamily: java.lang.String = null,
+    fontSize: java.lang.String | scala.Double = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: scala.Int | scala.Double = null,
+    height: java.lang.String | scala.Double = null,
+    innerPadding: java.lang.String = null,
+    lineHeight: java.lang.String | scala.Double = null,
+    textAlign: csstypeLib.csstypeMod.TextAlignProperty = null,
+    textDecoration: java.lang.String = null,
+    textTransform: java.lang.String = null,
+    verticalAlign: csstypeLib.csstypeMod.VerticalAlignProperty[java.lang.String | scala.Double] = null,
+    width: java.lang.String | scala.Double = null
+  ): MjmlButtonProps = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (innerPadding != null) __obj.updateDynamic("innerPadding")(innerPadding)
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration)
+    if (textTransform != null) __obj.updateDynamic("textTransform")(textTransform)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MjmlButtonProps]
+  }
+}
+

@@ -13,3 +13,22 @@ trait MomentCreationData extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MomentCreationData {
+  @scala.inline
+  def apply(
+    input: MomentInput,
+    isUTC: scala.Boolean,
+    locale: Locale,
+    format: MomentFormatSpecification = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined
+  ): MomentCreationData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    __obj.updateDynamic("isUTC")(isUTC)
+    __obj.updateDynamic("locale")(locale)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[MomentCreationData]
+  }
+}
+

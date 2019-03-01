@@ -15,3 +15,20 @@ trait LightSource extends js.Object {
   var nDiffuseColor: scala.Double
 }
 
+object LightSource {
+  @scala.inline
+  def apply(
+    aDirection: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.Direction3D,
+    bIsEnabled: scala.Boolean,
+    bSpecular: scala.Boolean,
+    nDiffuseColor: scala.Double
+  ): LightSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aDirection")(aDirection)
+    __obj.updateDynamic("bIsEnabled")(bIsEnabled)
+    __obj.updateDynamic("bSpecular")(bSpecular)
+    __obj.updateDynamic("nDiffuseColor")(nDiffuseColor)
+    __obj.asInstanceOf[LightSource]
+  }
+}
+

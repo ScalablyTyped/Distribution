@@ -24,3 +24,16 @@ import scala.scalajs.js.annotation._
   var showOnlyFor: js.UndefOr[reactDashFoundationLib.enumsMod.Breakpoints] = js.undefined
 }
 
+object SwitchPaddleProps {
+  @scala.inline
+  def apply(
+    GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null,
+    LabelHTMLAttributes: reactLib.reactMod.ReactNs.LabelHTMLAttributes[reactLib.HTMLLabelElement] = null
+  ): SwitchPaddleProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, GeneralPropTypes)
+    js.Dynamic.global.Object.assign(__obj, LabelHTMLAttributes)
+    __obj.asInstanceOf[SwitchPaddleProps]
+  }
+}
+

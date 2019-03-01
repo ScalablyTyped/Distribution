@@ -10,3 +10,13 @@ trait Anon_Anchor extends js.Object {
   var head: scala.Double
 }
 
+object Anon_Anchor {
+  @scala.inline
+  def apply(anchor: scala.Double, head: scala.Double): Anon_Anchor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("anchor")(anchor)
+    __obj.updateDynamic("head")(head)
+    __obj.asInstanceOf[Anon_Anchor]
+  }
+}
+

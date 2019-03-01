@@ -36,3 +36,36 @@ trait MapType extends js.Object {
   var xbasenight: js.UndefOr[heremapsLib.HNs.mapNs.layerNs.TileLayer] = js.undefined
 }
 
+object MapType {
+  @scala.inline
+  def apply(
+    map: heremapsLib.HNs.mapNs.layerNs.TileLayer,
+    mapnight: heremapsLib.HNs.mapNs.layerNs.TileLayer,
+    base: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
+    basenight: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
+    labels: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
+    panorama: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
+    panoramanight: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
+    traffic: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
+    trafficnight: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
+    transit: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
+    xbase: heremapsLib.HNs.mapNs.layerNs.TileLayer = null,
+    xbasenight: heremapsLib.HNs.mapNs.layerNs.TileLayer = null
+  ): MapType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("mapnight")(mapnight)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (basenight != null) __obj.updateDynamic("basenight")(basenight)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (panorama != null) __obj.updateDynamic("panorama")(panorama)
+    if (panoramanight != null) __obj.updateDynamic("panoramanight")(panoramanight)
+    if (traffic != null) __obj.updateDynamic("traffic")(traffic)
+    if (trafficnight != null) __obj.updateDynamic("trafficnight")(trafficnight)
+    if (transit != null) __obj.updateDynamic("transit")(transit)
+    if (xbase != null) __obj.updateDynamic("xbase")(xbase)
+    if (xbasenight != null) __obj.updateDynamic("xbasenight")(xbasenight)
+    __obj.asInstanceOf[MapType]
+  }
+}
+

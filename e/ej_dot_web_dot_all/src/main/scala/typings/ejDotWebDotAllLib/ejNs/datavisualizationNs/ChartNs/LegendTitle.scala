@@ -18,3 +18,18 @@ trait LegendTitle extends js.Object {
   var textAlignment: js.UndefOr[Alignment | java.lang.String] = js.undefined
 }
 
+object LegendTitle {
+  @scala.inline
+  def apply(
+    font: LegendTitleFont = null,
+    text: java.lang.String = null,
+    textAlignment: Alignment | java.lang.String = null
+  ): LegendTitle = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LegendTitle]
+  }
+}
+

@@ -19,3 +19,13 @@ trait RemoveHandlerOptions extends js.Object {
   var handler: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RemoveHandlerOptions {
+  @scala.inline
+  def apply(asyncContext: js.Any = null, handler: java.lang.String = null): RemoveHandlerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    __obj.asInstanceOf[RemoveHandlerOptions]
+  }
+}
+

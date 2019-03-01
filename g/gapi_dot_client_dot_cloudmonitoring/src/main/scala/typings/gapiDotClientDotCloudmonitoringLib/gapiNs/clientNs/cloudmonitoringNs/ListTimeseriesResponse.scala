@@ -21,3 +21,22 @@ trait ListTimeseriesResponse extends js.Object {
   var youngest: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListTimeseriesResponse {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    oldest: java.lang.String = null,
+    timeseries: js.Array[Timeseries] = null,
+    youngest: java.lang.String = null
+  ): ListTimeseriesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (oldest != null) __obj.updateDynamic("oldest")(oldest)
+    if (timeseries != null) __obj.updateDynamic("timeseries")(timeseries)
+    if (youngest != null) __obj.updateDynamic("youngest")(youngest)
+    __obj.asInstanceOf[ListTimeseriesResponse]
+  }
+}
+

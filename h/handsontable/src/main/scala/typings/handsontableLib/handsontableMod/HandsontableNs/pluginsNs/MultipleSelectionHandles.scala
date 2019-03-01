@@ -19,3 +19,55 @@ trait MultipleSelectionHandles extends Base {
   def isDragged(): scala.Boolean
 }
 
+object MultipleSelectionHandles {
+  @scala.inline
+  def apply(
+    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    clearHooks: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    disablePlugin: js.Function0[scala.Unit],
+    dragged: js.Array[_],
+    enablePlugin: js.Function0[scala.Unit],
+    enabled: scala.Boolean,
+    eventManager: EventManager,
+    getCurrentRangeCoords: js.Function5[
+      handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange, 
+      handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      js.Object
+    ],
+    init: js.Function0[scala.Unit],
+    initialized: scala.Boolean,
+    isDragged: js.Function0[scala.Boolean],
+    isPluginsReady: scala.Boolean,
+    lastSetCell: stdLib.HTMLElement | scala.Unit,
+    pluginName: java.lang.String,
+    pluginsInitializedCallback: js.Array[_],
+    removeHook: js.Function1[java.lang.String, scala.Unit]
+  ): MultipleSelectionHandles = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addHook")(addHook)
+    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
+    __obj.updateDynamic("clearHooks")(clearHooks)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("disablePlugin")(disablePlugin)
+    __obj.updateDynamic("dragged")(dragged)
+    __obj.updateDynamic("enablePlugin")(enablePlugin)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("eventManager")(eventManager)
+    __obj.updateDynamic("getCurrentRangeCoords")(getCurrentRangeCoords)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("initialized")(initialized)
+    __obj.updateDynamic("isDragged")(isDragged)
+    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
+    __obj.updateDynamic("lastSetCell")(lastSetCell.asInstanceOf[js.Any])
+    __obj.updateDynamic("pluginName")(pluginName)
+    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
+    __obj.updateDynamic("removeHook")(removeHook)
+    __obj.asInstanceOf[MultipleSelectionHandles]
+  }
+}
+

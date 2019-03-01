@@ -10,3 +10,16 @@ trait SubheaderProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object SubheaderProps {
+  @scala.inline
+  def apply(
+    inset: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): SubheaderProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[SubheaderProps]
+  }
+}
+

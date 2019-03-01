@@ -18,3 +18,20 @@ trait StrictTransitionGroupProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictTransitionGroupProps {
+  @scala.inline
+  def apply(
+    animation: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTRANSITIONS = null,
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    duration: scala.Double | java.lang.String | semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionPropDuration = null
+  ): StrictTransitionGroupProps = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictTransitionGroupProps]
+  }
+}
+

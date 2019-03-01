@@ -89,3 +89,52 @@ trait CoursesResource extends js.Object {
   def update(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId): gapiDotClientLib.gapiNs.clientNs.Request[Course]
 }
 
+object CoursesResource {
+  @scala.inline
+  def apply(
+    aliases: AliasesResource,
+    announcements: AnnouncementsResource,
+    courseWork: CourseWorkResource,
+    create: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Course]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Course]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseStates, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListCoursesResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Course]
+    ],
+    students: StudentsResource,
+    teachers: TeachersResource,
+    update: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Course]
+    ]
+  ): CoursesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aliases")(aliases)
+    __obj.updateDynamic("announcements")(announcements)
+    __obj.updateDynamic("courseWork")(courseWork)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("students")(students)
+    __obj.updateDynamic("teachers")(teachers)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[CoursesResource]
+  }
+}
+

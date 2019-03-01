@@ -13,3 +13,21 @@ trait VisualUpdateOptions
   var viewport: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.IViewport
 }
 
+object VisualUpdateOptions {
+  @scala.inline
+  def apply(
+    dataViews: js.Array[powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.DataView],
+    `type`: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.VisualUpdateType,
+    viewport: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.IViewport,
+    editMode: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.EditMode = null,
+    viewMode: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.ViewMode = null
+  ): VisualUpdateOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("dataViews")(dataViews)
+    __obj.updateDynamic("viewport")(viewport)
+    if (editMode != null) __obj.updateDynamic("editMode")(editMode)
+    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode)
+    __obj.asInstanceOf[VisualUpdateOptions]
+  }
+}
+

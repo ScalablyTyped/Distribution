@@ -26,3 +26,20 @@ trait Options extends js.Object {
   var vars: js.UndefOr[VarsOption] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    always: js.UndefOr[scala.Boolean] = js.undefined,
+    basedir: java.lang.String = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    vars: VarsOption = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(always)) __obj.updateDynamic("always")(always)
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (vars != null) __obj.updateDynamic("vars")(vars)
+    __obj.asInstanceOf[Options]
+  }
+}
+

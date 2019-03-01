@@ -34,3 +34,44 @@ trait TransferConfigsResource extends js.Object {
   def scheduleRuns(request: gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ScheduleTransferRunsResponse]
 }
 
+object TransferConfigsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltAuthorizationCode, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TransferConfig]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TransferConfig]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertokenCallbackDataSourceIds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTransferConfigsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltAuthorizationCodeBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TransferConfig]
+    ],
+    runs: RunsResource,
+    scheduleRuns: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ScheduleTransferRunsResponse]
+    ]
+  ): TransferConfigsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("runs")(runs)
+    __obj.updateDynamic("scheduleRuns")(scheduleRuns)
+    __obj.asInstanceOf[TransferConfigsResource]
+  }
+}
+

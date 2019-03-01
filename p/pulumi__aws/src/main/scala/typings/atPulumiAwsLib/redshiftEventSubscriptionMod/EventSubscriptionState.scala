@@ -46,3 +46,32 @@ trait EventSubscriptionState extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object EventSubscriptionState {
+  @scala.inline
+  def apply(
+    customerAwsId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    eventCategories: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    severity: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    snsTopicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sourceIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    sourceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): EventSubscriptionState = {
+    val __obj = js.Dynamic.literal()
+    if (customerAwsId != null) __obj.updateDynamic("customerAwsId")(customerAwsId.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (eventCategories != null) __obj.updateDynamic("eventCategories")(eventCategories.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    if (snsTopicArn != null) __obj.updateDynamic("snsTopicArn")(snsTopicArn.asInstanceOf[js.Any])
+    if (sourceIds != null) __obj.updateDynamic("sourceIds")(sourceIds.asInstanceOf[js.Any])
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventSubscriptionState]
+  }
+}
+

@@ -36,3 +36,26 @@ trait MetadataDroppedEventUIParam extends js.Object {
   var targetElement: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MetadataDroppedEventUIParam {
+  @scala.inline
+  def apply(
+    draggedElement: java.lang.String = null,
+    helper: java.lang.String = null,
+    metadata: js.Any = null,
+    metadataIndex: scala.Int | scala.Double = null,
+    offset: js.Any = null,
+    position: js.Any = null,
+    targetElement: java.lang.String = null
+  ): MetadataDroppedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (draggedElement != null) __obj.updateDynamic("draggedElement")(draggedElement)
+    if (helper != null) __obj.updateDynamic("helper")(helper)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (metadataIndex != null) __obj.updateDynamic("metadataIndex")(metadataIndex.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
+    __obj.asInstanceOf[MetadataDroppedEventUIParam]
+  }
+}
+

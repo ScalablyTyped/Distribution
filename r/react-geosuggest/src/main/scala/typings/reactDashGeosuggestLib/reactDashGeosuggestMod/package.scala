@@ -10,5 +10,4 @@ package object reactDashGeosuggestMod {
     T, 
     /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any
   ]
-  type QueryType = reactDashGeosuggestLib.reactDashGeosuggestLibStrings.address | reactDashGeosuggestLib.reactDashGeosuggestLibStrings.establishment | reactDashGeosuggestLib.reactDashGeosuggestLibStrings.geocode | reactDashGeosuggestLib.reactDashGeosuggestLibStrings.`(cities)` | reactDashGeosuggestLib.reactDashGeosuggestLibStrings.`(regions)`
 }

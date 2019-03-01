@@ -46,7 +46,8 @@ object realmLibStrings {
   sealed trait active extends js.Object
   
   @js.native
-  sealed trait admin extends js.Object
+  sealed trait admin
+    extends realmLib.RealmNs.SyncNs.AccessLevel
   
   @js.native
   sealed trait adminToken extends js.Object
@@ -58,37 +59,45 @@ object realmLibStrings {
   sealed trait any extends js.Object
   
   @js.native
-  sealed trait available extends js.Object
+  sealed trait available
+    extends realmLib.RealmNs.SyncNs.RealmListenerEventName
   
   @js.native
-  sealed trait bool extends js.Object
+  sealed trait bool
+    extends realmLib.RealmNs._PropertyType
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change
+    extends realmLib.RealmNs.SyncNs.RealmListenerEventName
   
   @js.native
   sealed trait currentUser extends js.Object
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait data
+    extends realmLib.RealmNs._PropertyType
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends realmLib.RealmNs._PropertyType
   
   @js.native
   sealed trait debug extends js.Object
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends realmLib.RealmNs.SyncNs.RealmListenerEventName
   
   @js.native
   sealed trait detail extends js.Object
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait double
+    extends realmLib.RealmNs._PropertyType
   
   @js.native
-  sealed trait download extends js.Object
+  sealed trait download
+    extends realmLib.RealmNs.SyncNs.ProgressDirection
   
   @js.native
   sealed trait error extends js.Object
@@ -97,10 +106,12 @@ object realmLibStrings {
   sealed trait fatal extends js.Object
   
   @js.native
-  sealed trait float extends js.Object
+  sealed trait float
+    extends realmLib.RealmNs._PropertyType
   
   @js.native
-  sealed trait forCurrentlyOutstandingWork extends js.Object
+  sealed trait forCurrentlyOutstandingWork
+    extends realmLib.RealmNs.SyncNs.ProgressMode
   
   @js.native
   sealed trait inactive extends js.Object
@@ -109,19 +120,23 @@ object realmLibStrings {
   sealed trait info extends js.Object
   
   @js.native
-  sealed trait int extends js.Object
+  sealed trait int
+    extends realmLib.RealmNs._PropertyType
   
   @js.native
   sealed trait invalid extends js.Object
   
   @js.native
-  sealed trait linkingObjects extends js.Object
+  sealed trait linkingObjects
+    extends realmLib.RealmNs._PropertyType
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait list
+    extends realmLib.RealmNs._PropertyType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends realmLib.RealmNs.SyncNs.AccessLevel
   
   @js.native
   sealed trait off extends js.Object
@@ -130,28 +145,33 @@ object realmLibStrings {
   sealed trait otherUser extends js.Object
   
   @js.native
-  sealed trait read extends js.Object
+  sealed trait read
+    extends realmLib.RealmNs.SyncNs.AccessLevel
   
   @js.native
-  sealed trait reportIndefinitely extends js.Object
+  sealed trait reportIndefinitely
+    extends realmLib.RealmNs.SyncNs.ProgressMode
   
   @js.native
   sealed trait schema extends js.Object
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends realmLib.RealmNs._PropertyType
   
   @js.native
   sealed trait trace extends js.Object
   
   @js.native
-  sealed trait upload extends js.Object
+  sealed trait upload
+    extends realmLib.RealmNs.SyncNs.ProgressDirection
   
   @js.native
   sealed trait warn extends js.Object
   
   @js.native
-  sealed trait write extends js.Object
+  sealed trait write
+    extends realmLib.RealmNs.SyncNs.AccessLevel
   
   @scala.inline
   def ADD_PROPERTIES: ADD_PROPERTIES = "ADD_PROPERTIES".asInstanceOf[ADD_PROPERTIES]

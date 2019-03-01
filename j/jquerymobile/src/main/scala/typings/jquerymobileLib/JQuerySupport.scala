@@ -9,3 +9,12 @@ trait JQuerySupport extends js.Object {
   var touchOverflow: js.Any
 }
 
+object JQuerySupport {
+  @scala.inline
+  def apply(touchOverflow: js.Any): JQuerySupport = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("touchOverflow")(touchOverflow)
+    __obj.asInstanceOf[JQuerySupport]
+  }
+}
+

@@ -42,3 +42,18 @@ trait RenewLeaseRequest extends js.Object {
   var scheduleTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RenewLeaseRequest {
+  @scala.inline
+  def apply(
+    newLeaseDuration: java.lang.String = null,
+    responseView: java.lang.String = null,
+    scheduleTime: java.lang.String = null
+  ): RenewLeaseRequest = {
+    val __obj = js.Dynamic.literal()
+    if (newLeaseDuration != null) __obj.updateDynamic("newLeaseDuration")(newLeaseDuration)
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    __obj.asInstanceOf[RenewLeaseRequest]
+  }
+}
+

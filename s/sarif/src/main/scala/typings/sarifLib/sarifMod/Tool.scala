@@ -25,3 +25,20 @@ trait Tool extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object Tool {
+  @scala.inline
+  def apply(
+    driver: ToolComponent,
+    extensions: js.Array[ToolComponent] = null,
+    language: java.lang.String = null,
+    properties: PropertyBag = null
+  ): Tool = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("driver")(driver)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Tool]
+  }
+}
+

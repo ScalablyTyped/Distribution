@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object layzrDotJsLibStrings {
   @js.native
-  sealed trait `src:after` extends js.Object
+  sealed trait `src:after`
+    extends layzrDotJsLib.layzrDotJsMod.LayzrNs.LayzrEvents
   
   @js.native
-  sealed trait `src:before` extends js.Object
+  sealed trait `src:before`
+    extends layzrDotJsLib.layzrDotJsMod.LayzrNs.LayzrEvents
   
   @scala.inline
   def `src:after`: `src:after` = "src:after".asInstanceOf[`src:after`]

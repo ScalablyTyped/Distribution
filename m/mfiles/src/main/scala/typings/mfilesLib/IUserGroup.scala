@@ -16,3 +16,28 @@ trait IUserGroup extends js.Object {
   def RemoveMember(ID: scala.Double): scala.Unit
 }
 
+object IUserGroup {
+  @scala.inline
+  def apply(
+    AddMember: js.Function1[scala.Double, scala.Unit],
+    Clone: js.Function0[IUserGroup],
+    CloneFrom: js.Function1[IUserGroup, scala.Unit],
+    ID: scala.Double,
+    Members: IIDs,
+    Name: java.lang.String,
+    Predefined: scala.Boolean,
+    RemoveMember: js.Function1[scala.Double, scala.Unit]
+  ): IUserGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AddMember")(AddMember)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("CloneFrom")(CloneFrom)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("Members")(Members)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Predefined")(Predefined)
+    __obj.updateDynamic("RemoveMember")(RemoveMember)
+    __obj.asInstanceOf[IUserGroup]
+  }
+}
+

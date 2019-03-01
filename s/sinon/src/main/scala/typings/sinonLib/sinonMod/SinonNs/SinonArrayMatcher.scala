@@ -24,3 +24,26 @@ trait SinonArrayMatcher extends SinonMatcher {
   def startsWith(expected: js.Array[_]): SinonMatcher
 }
 
+object SinonArrayMatcher {
+  @scala.inline
+  def apply(
+    and: js.Function1[SinonMatcher, SinonMatcher],
+    contains: js.Function1[js.Array[_], SinonMatcher],
+    deepEquals: js.Function1[js.Array[_], SinonMatcher],
+    endsWith: js.Function1[js.Array[_], SinonMatcher],
+    or: js.Function1[SinonMatcher, SinonMatcher],
+    startsWith: js.Function1[js.Array[_], SinonMatcher],
+    test: js.Function1[js.Any, scala.Boolean]
+  ): SinonArrayMatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("deepEquals")(deepEquals)
+    __obj.updateDynamic("endsWith")(endsWith)
+    __obj.updateDynamic("or")(or)
+    __obj.updateDynamic("startsWith")(startsWith)
+    __obj.updateDynamic("test")(test)
+    __obj.asInstanceOf[SinonArrayMatcher]
+  }
+}
+

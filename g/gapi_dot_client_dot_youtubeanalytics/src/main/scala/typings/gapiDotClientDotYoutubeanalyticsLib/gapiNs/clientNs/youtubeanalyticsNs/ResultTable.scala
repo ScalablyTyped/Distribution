@@ -25,3 +25,18 @@ trait ResultTable extends js.Object {
   var rows: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
 }
 
+object ResultTable {
+  @scala.inline
+  def apply(
+    columnHeaders: js.Array[gapiDotClientDotYoutubeanalyticsLib.Anon_ColumnType] = null,
+    kind: java.lang.String = null,
+    rows: js.Array[js.Array[_]] = null
+  ): ResultTable = {
+    val __obj = js.Dynamic.literal()
+    if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[ResultTable]
+  }
+}
+

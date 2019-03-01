@@ -15,3 +15,13 @@ trait Anon_Token extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Token {
+  @scala.inline
+  def apply(token: java.lang.String = null, `type`: java.lang.String = null): Anon_Token = {
+    val __obj = js.Dynamic.literal()
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_Token]
+  }
+}
+

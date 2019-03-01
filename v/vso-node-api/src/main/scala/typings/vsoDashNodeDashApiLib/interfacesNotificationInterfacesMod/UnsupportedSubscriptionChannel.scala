@@ -9,3 +9,12 @@ trait UnsupportedSubscriptionChannel extends js.Object {
   var `type`: java.lang.String
 }
 
+object UnsupportedSubscriptionChannel {
+  @scala.inline
+  def apply(`type`: java.lang.String): UnsupportedSubscriptionChannel = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[UnsupportedSubscriptionChannel]
+  }
+}
+

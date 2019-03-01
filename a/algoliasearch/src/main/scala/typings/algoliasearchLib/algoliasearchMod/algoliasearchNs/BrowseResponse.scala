@@ -13,3 +13,22 @@ trait BrowseResponse extends js.Object {
   var query: java.lang.String
 }
 
+object BrowseResponse {
+  @scala.inline
+  def apply(
+    hits: js.Array[js.Object],
+    params: java.lang.String,
+    processingTimeMS: scala.Double,
+    query: java.lang.String,
+    cursor: java.lang.String = null
+  ): BrowseResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hits")(hits)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("processingTimeMS")(processingTimeMS)
+    __obj.updateDynamic("query")(query)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    __obj.asInstanceOf[BrowseResponse]
+  }
+}
+

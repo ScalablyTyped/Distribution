@@ -12,3 +12,13 @@ trait SqlParameter extends js.Object {
   var value: js.Any
 }
 
+object SqlParameter {
+  @scala.inline
+  def apply(name: java.lang.String, value: js.Any): SqlParameter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SqlParameter]
+  }
+}
+

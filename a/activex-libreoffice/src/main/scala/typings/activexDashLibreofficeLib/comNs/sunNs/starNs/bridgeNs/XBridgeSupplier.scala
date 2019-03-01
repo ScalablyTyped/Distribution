@@ -43,3 +43,27 @@ trait XBridgeSupplier
   ): js.Any
 }
 
+object XBridgeSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createBridge: js.Function5[
+      js.Any, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      js.Any
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBridgeSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createBridge")(createBridge)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XBridgeSupplier]
+  }
+}
+

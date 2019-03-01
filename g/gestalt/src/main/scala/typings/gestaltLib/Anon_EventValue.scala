@@ -10,3 +10,16 @@ trait Anon_EventValue extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_EventValue {
+  @scala.inline
+  def apply(
+    event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLInputElement, reactLib.Event],
+    value: java.lang.String
+  ): Anon_EventValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_EventValue]
+  }
+}
+

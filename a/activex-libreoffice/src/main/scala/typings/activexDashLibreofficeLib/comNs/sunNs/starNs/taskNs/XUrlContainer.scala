@@ -36,3 +36,26 @@ trait XUrlContainer
   def removeUrl(Url: java.lang.String): scala.Unit
 }
 
+object XUrlContainer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addUrl: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    findUrl: js.Function1[java.lang.String, java.lang.String],
+    getUrls: js.Function1[scala.Boolean, activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeUrl: js.Function1[java.lang.String, scala.Unit]
+  ): XUrlContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addUrl")(addUrl)
+    __obj.updateDynamic("findUrl")(findUrl)
+    __obj.updateDynamic("getUrls")(getUrls)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeUrl")(removeUrl)
+    __obj.asInstanceOf[XUrlContainer]
+  }
+}
+

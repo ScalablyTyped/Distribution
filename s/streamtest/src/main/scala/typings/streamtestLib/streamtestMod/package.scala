@@ -8,5 +8,4 @@ import scala.scalajs.js.annotation._
 package object streamtestMod {
   type Chunk = java.lang.String | nodeLib.Buffer | stdLib.Uint8Array
   type NonNull = js.UndefOr[js.Object]
-  type VersionName = streamtestLib.streamtestLibStrings.v1 | streamtestLib.streamtestLibStrings.v2
 }

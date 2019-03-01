@@ -9,3 +9,12 @@ trait SkewXTransform extends js.Object {
   var skewX: java.lang.String
 }
 
+object SkewXTransform {
+  @scala.inline
+  def apply(skewX: java.lang.String): SkewXTransform = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("skewX")(skewX)
+    __obj.asInstanceOf[SkewXTransform]
+  }
+}
+

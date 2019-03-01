@@ -17,3 +17,20 @@ trait Default
   var mismatch_Default: typescriptDashCompareLib.typescriptDashCompareLibStrings.mismatch
 }
 
+object Default {
+  @scala.inline
+  def apply(
+    broaderLeft: typescriptDashCompareLib.typescriptDashCompareLibStrings.broaderLeft,
+    broaderRight: typescriptDashCompareLib.typescriptDashCompareLibStrings.broaderRight,
+    equal: typescriptDashCompareLib.typescriptDashCompareLibStrings.equal,
+    mismatch: typescriptDashCompareLib.typescriptDashCompareLibStrings.mismatch
+  ): Default = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("broaderLeft")(broaderLeft)
+    __obj.updateDynamic("broaderRight")(broaderRight)
+    __obj.updateDynamic("equal")(equal)
+    __obj.updateDynamic("mismatch")(mismatch)
+    __obj.asInstanceOf[Default]
+  }
+}
+

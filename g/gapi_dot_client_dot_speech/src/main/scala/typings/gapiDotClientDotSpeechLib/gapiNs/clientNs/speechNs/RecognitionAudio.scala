@@ -23,3 +23,13 @@ trait RecognitionAudio extends js.Object {
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RecognitionAudio {
+  @scala.inline
+  def apply(content: java.lang.String = null, uri: java.lang.String = null): RecognitionAudio = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[RecognitionAudio]
+  }
+}
+

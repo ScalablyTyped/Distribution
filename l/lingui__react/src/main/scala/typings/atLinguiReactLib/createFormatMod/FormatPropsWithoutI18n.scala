@@ -11,3 +11,20 @@ trait FormatPropsWithoutI18n[V, FormatOptions]
   var value: V
 }
 
+object FormatPropsWithoutI18n {
+  @scala.inline
+  def apply[V, FormatOptions](
+    value: V,
+    className: java.lang.String = null,
+    format: FormatOptions = null,
+    render: reactLib.reactMod.ReactNs.ReactNode = null
+  ): FormatPropsWithoutI18n[V, FormatOptions] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormatPropsWithoutI18n[V, FormatOptions]]
+  }
+}
+

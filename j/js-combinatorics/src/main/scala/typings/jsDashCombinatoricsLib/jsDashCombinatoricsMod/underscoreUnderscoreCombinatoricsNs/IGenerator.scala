@@ -34,3 +34,24 @@ trait IGenerator[T] extends js.Object {
   def toArray(): js.Array[T]
 }
 
+object IGenerator {
+  @scala.inline
+  def apply[T](
+    filter: js.Function1[js.Function1[/* item */ T, scala.Boolean], js.Array[T]],
+    forEach: js.Function1[js.Function1[/* item */ T, scala.Unit], scala.Unit],
+    length: scala.Double,
+    map: js.Function1[js.Function1[/* item */ T, js.Any], js.Array[js.Any]],
+    next: js.Function0[T],
+    toArray: js.Function0[js.Array[T]]
+  ): IGenerator[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("forEach")(forEach)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("toArray")(toArray)
+    __obj.asInstanceOf[IGenerator[T]]
+  }
+}
+

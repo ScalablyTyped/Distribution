@@ -22,3 +22,16 @@ trait ListBidResponsesWithoutBidsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListBidResponsesWithoutBidsResponse {
+  @scala.inline
+  def apply(
+    bidResponseWithoutBidsStatusRows: js.Array[BidResponseWithoutBidsStatusRow] = null,
+    nextPageToken: java.lang.String = null
+  ): ListBidResponsesWithoutBidsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (bidResponseWithoutBidsStatusRows != null) __obj.updateDynamic("bidResponseWithoutBidsStatusRows")(bidResponseWithoutBidsStatusRows)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListBidResponsesWithoutBidsResponse]
+  }
+}
+

@@ -11,3 +11,16 @@ trait CancellationToken extends js.Object {
   def throwIfCancellationRequested(): scala.Unit
 }
 
+object CancellationToken {
+  @scala.inline
+  def apply(
+    isCancellationRequested: js.Function0[scala.Boolean],
+    throwIfCancellationRequested: js.Function0[scala.Unit]
+  ): CancellationToken = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isCancellationRequested")(isCancellationRequested)
+    __obj.updateDynamic("throwIfCancellationRequested")(throwIfCancellationRequested)
+    __obj.asInstanceOf[CancellationToken]
+  }
+}
+

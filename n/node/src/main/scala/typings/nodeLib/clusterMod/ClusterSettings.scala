@@ -18,3 +18,28 @@ trait ClusterSettings extends js.Object {
   var uid: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ClusterSettings {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    exec: java.lang.String = null,
+    execArgv: js.Array[java.lang.String] = null,
+    gid: scala.Int | scala.Double = null,
+    inspectPort: scala.Double | js.Function0[scala.Double] = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    stdio: js.Array[_] = null,
+    uid: scala.Int | scala.Double = null
+  ): ClusterSettings = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (exec != null) __obj.updateDynamic("exec")(exec)
+    if (execArgv != null) __obj.updateDynamic("execArgv")(execArgv)
+    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (inspectPort != null) __obj.updateDynamic("inspectPort")(inspectPort.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (stdio != null) __obj.updateDynamic("stdio")(stdio)
+    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterSettings]
+  }
+}
+

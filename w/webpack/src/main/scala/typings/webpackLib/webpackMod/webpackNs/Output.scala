@@ -90,3 +90,68 @@ trait Output extends js.Object {
   var umdNamedDefine: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Output {
+  @scala.inline
+  def apply(
+    auxiliaryComment: java.lang.String | AuxiliaryCommentObject = null,
+    chunkFilename: java.lang.String = null,
+    chunkLoadTimeout: scala.Int | scala.Double = null,
+    crossOriginLoading: java.lang.String | scala.Boolean = null,
+    devtoolFallbackModuleFilenameTemplate: java.lang.String | (js.Function1[/* info */ DevtoolModuleFilenameTemplateInfo, java.lang.String]) = null,
+    devtoolLineToLine: js.UndefOr[scala.Boolean] = js.undefined,
+    devtoolModuleFilenameTemplate: java.lang.String | (js.Function1[/* info */ DevtoolModuleFilenameTemplateInfo, java.lang.String]) = null,
+    devtoolNamespace: java.lang.String = null,
+    filename: java.lang.String = null,
+    globalObject: java.lang.String = null,
+    hashDigest: webpackLib.webpackLibStrings.hex | webpackLib.webpackLibStrings.latin1 | webpackLib.webpackLibStrings.base64 = null,
+    hashDigestLength: scala.Int | scala.Double = null,
+    hashFunction: java.lang.String | (js.Function2[/* algorithm */ java.lang.String, /* options */ js.UndefOr[js.Any], _]) = null,
+    hashSalt: java.lang.String = null,
+    hotUpdateChunkFilename: java.lang.String = null,
+    hotUpdateFunction: java.lang.String = null,
+    hotUpdateMainFilename: java.lang.String = null,
+    jsonpFunction: java.lang.String = null,
+    jsonpScriptType: webpackLib.webpackLibStrings.`text/javascript` | webpackLib.webpackLibStrings.module = null,
+    library: java.lang.String | js.Array[java.lang.String] = null,
+    libraryExport: java.lang.String | js.Array[java.lang.String] = null,
+    libraryTarget: LibraryTarget = null,
+    path: java.lang.String = null,
+    pathinfo: js.UndefOr[scala.Boolean] = js.undefined,
+    publicPath: java.lang.String = null,
+    sourceMapFilename: java.lang.String = null,
+    sourcePrefix: java.lang.String = null,
+    umdNamedDefine: js.UndefOr[scala.Boolean] = js.undefined
+  ): Output = {
+    val __obj = js.Dynamic.literal()
+    if (auxiliaryComment != null) __obj.updateDynamic("auxiliaryComment")(auxiliaryComment.asInstanceOf[js.Any])
+    if (chunkFilename != null) __obj.updateDynamic("chunkFilename")(chunkFilename)
+    if (chunkLoadTimeout != null) __obj.updateDynamic("chunkLoadTimeout")(chunkLoadTimeout.asInstanceOf[js.Any])
+    if (crossOriginLoading != null) __obj.updateDynamic("crossOriginLoading")(crossOriginLoading.asInstanceOf[js.Any])
+    if (devtoolFallbackModuleFilenameTemplate != null) __obj.updateDynamic("devtoolFallbackModuleFilenameTemplate")(devtoolFallbackModuleFilenameTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(devtoolLineToLine)) __obj.updateDynamic("devtoolLineToLine")(devtoolLineToLine)
+    if (devtoolModuleFilenameTemplate != null) __obj.updateDynamic("devtoolModuleFilenameTemplate")(devtoolModuleFilenameTemplate.asInstanceOf[js.Any])
+    if (devtoolNamespace != null) __obj.updateDynamic("devtoolNamespace")(devtoolNamespace)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (globalObject != null) __obj.updateDynamic("globalObject")(globalObject)
+    if (hashDigest != null) __obj.updateDynamic("hashDigest")(hashDigest.asInstanceOf[js.Any])
+    if (hashDigestLength != null) __obj.updateDynamic("hashDigestLength")(hashDigestLength.asInstanceOf[js.Any])
+    if (hashFunction != null) __obj.updateDynamic("hashFunction")(hashFunction.asInstanceOf[js.Any])
+    if (hashSalt != null) __obj.updateDynamic("hashSalt")(hashSalt)
+    if (hotUpdateChunkFilename != null) __obj.updateDynamic("hotUpdateChunkFilename")(hotUpdateChunkFilename)
+    if (hotUpdateFunction != null) __obj.updateDynamic("hotUpdateFunction")(hotUpdateFunction)
+    if (hotUpdateMainFilename != null) __obj.updateDynamic("hotUpdateMainFilename")(hotUpdateMainFilename)
+    if (jsonpFunction != null) __obj.updateDynamic("jsonpFunction")(jsonpFunction)
+    if (jsonpScriptType != null) __obj.updateDynamic("jsonpScriptType")(jsonpScriptType.asInstanceOf[js.Any])
+    if (library != null) __obj.updateDynamic("library")(library.asInstanceOf[js.Any])
+    if (libraryExport != null) __obj.updateDynamic("libraryExport")(libraryExport.asInstanceOf[js.Any])
+    if (libraryTarget != null) __obj.updateDynamic("libraryTarget")(libraryTarget)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(pathinfo)) __obj.updateDynamic("pathinfo")(pathinfo)
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
+    if (sourceMapFilename != null) __obj.updateDynamic("sourceMapFilename")(sourceMapFilename)
+    if (sourcePrefix != null) __obj.updateDynamic("sourcePrefix")(sourcePrefix)
+    if (!js.isUndefined(umdNamedDefine)) __obj.updateDynamic("umdNamedDefine")(umdNamedDefine)
+    __obj.asInstanceOf[Output]
+  }
+}
+

@@ -296,3 +296,34 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GridProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    collapseOnLarge: reactDashFoundationLib.enumsMod.GutterTypes = null,
+    collapseOnMedium: reactDashFoundationLib.enumsMod.GutterTypes = null,
+    collapseOnSmall: reactDashFoundationLib.enumsMod.GutterTypes = null,
+    gridFrame: reactDashFoundationLib.enumsMod.ExtendedBreakpoints = null,
+    gutters: reactDashFoundationLib.enumsMod.GutterTypes = null,
+    upOnLarge: scala.Int | scala.Double = null,
+    upOnMedium: scala.Int | scala.Double = null,
+    upOnSmall: scala.Int | scala.Double = null,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): GridProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (collapseOnLarge != null) __obj.updateDynamic("collapseOnLarge")(collapseOnLarge)
+    if (collapseOnMedium != null) __obj.updateDynamic("collapseOnMedium")(collapseOnMedium)
+    if (collapseOnSmall != null) __obj.updateDynamic("collapseOnSmall")(collapseOnSmall)
+    if (gridFrame != null) __obj.updateDynamic("gridFrame")(gridFrame)
+    if (gutters != null) __obj.updateDynamic("gutters")(gutters)
+    if (upOnLarge != null) __obj.updateDynamic("upOnLarge")(upOnLarge.asInstanceOf[js.Any])
+    if (upOnMedium != null) __obj.updateDynamic("upOnMedium")(upOnMedium.asInstanceOf[js.Any])
+    if (upOnSmall != null) __obj.updateDynamic("upOnSmall")(upOnSmall.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[GridProps]
+  }
+}
+

@@ -12,3 +12,13 @@ trait MetricDescriptorTypeDescriptor extends js.Object {
   var valueType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MetricDescriptorTypeDescriptor {
+  @scala.inline
+  def apply(metricType: java.lang.String = null, valueType: java.lang.String = null): MetricDescriptorTypeDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (metricType != null) __obj.updateDynamic("metricType")(metricType)
+    if (valueType != null) __obj.updateDynamic("valueType")(valueType)
+    __obj.asInstanceOf[MetricDescriptorTypeDescriptor]
+  }
+}
+

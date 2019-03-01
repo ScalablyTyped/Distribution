@@ -24,3 +24,28 @@ trait IWhoisData extends js.Object {
   var user: java.lang.String
 }
 
+object IWhoisData {
+  @scala.inline
+  def apply(
+    channels: js.Array[java.lang.String],
+    host: java.lang.String,
+    nick: java.lang.String,
+    operator: java.lang.String,
+    realname: java.lang.String,
+    server: java.lang.String,
+    serverinfo: java.lang.String,
+    user: java.lang.String
+  ): IWhoisData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channels")(channels)
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("nick")(nick)
+    __obj.updateDynamic("operator")(operator)
+    __obj.updateDynamic("realname")(realname)
+    __obj.updateDynamic("server")(server)
+    __obj.updateDynamic("serverinfo")(serverinfo)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[IWhoisData]
+  }
+}
+

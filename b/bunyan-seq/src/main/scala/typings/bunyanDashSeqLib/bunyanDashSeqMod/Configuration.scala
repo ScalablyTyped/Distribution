@@ -17,3 +17,30 @@ trait Configuration extends js.Object {
   var serverUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    apiKey: java.lang.String = null,
+    batchSizeLimit: scala.Int | scala.Double = null,
+    eventSizeLimit: scala.Int | scala.Double = null,
+    level: java.lang.String = null,
+    maxBatchingTime: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    onError: js.Function1[/* e */ nodeLib.Error, scala.Unit] = null,
+    reemitErrorEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    serverUrl: java.lang.String = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
+    if (batchSizeLimit != null) __obj.updateDynamic("batchSizeLimit")(batchSizeLimit.asInstanceOf[js.Any])
+    if (eventSizeLimit != null) __obj.updateDynamic("eventSizeLimit")(eventSizeLimit.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level)
+    if (maxBatchingTime != null) __obj.updateDynamic("maxBatchingTime")(maxBatchingTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (!js.isUndefined(reemitErrorEvents)) __obj.updateDynamic("reemitErrorEvents")(reemitErrorEvents)
+    if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

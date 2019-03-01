@@ -32,3 +32,25 @@ trait IgTileManagerSplitterOptions
   var events: js.UndefOr[IgTileManagerSplitterOptionsEvents] = js.undefined
 }
 
+object IgTileManagerSplitterOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgTileManagerSplitterOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    events: IgTileManagerSplitterOptionsEvents = null
+  ): IgTileManagerSplitterOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (events != null) __obj.updateDynamic("events")(events)
+    __obj.asInstanceOf[IgTileManagerSplitterOptions]
+  }
+}
+

@@ -15,3 +15,16 @@ trait DeliveryTime extends js.Object {
   var minTransitTimeInDays: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DeliveryTime {
+  @scala.inline
+  def apply(
+    maxTransitTimeInDays: scala.Int | scala.Double = null,
+    minTransitTimeInDays: scala.Int | scala.Double = null
+  ): DeliveryTime = {
+    val __obj = js.Dynamic.literal()
+    if (maxTransitTimeInDays != null) __obj.updateDynamic("maxTransitTimeInDays")(maxTransitTimeInDays.asInstanceOf[js.Any])
+    if (minTransitTimeInDays != null) __obj.updateDynamic("minTransitTimeInDays")(minTransitTimeInDays.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeliveryTime]
+  }
+}
+

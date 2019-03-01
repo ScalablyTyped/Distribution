@@ -12,3 +12,20 @@ trait AsObject extends js.Object {
   var suffix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AsObject {
+  @scala.inline
+  def apply(
+    major: scala.Int | scala.Double = null,
+    minor: scala.Int | scala.Double = null,
+    patch: scala.Int | scala.Double = null,
+    suffix: java.lang.String = null
+  ): AsObject = {
+    val __obj = js.Dynamic.literal()
+    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
+    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
+    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

@@ -18,3 +18,24 @@ trait item extends js.Object {
   var seriesIndex: scala.Double
 }
 
+object item {
+  @scala.inline
+  def apply(
+    dataIndex: scala.Double,
+    datapoint: js.Array[scala.Double],
+    pageX: scala.Double,
+    pageY: scala.Double,
+    series: dataSeries,
+    seriesIndex: scala.Double
+  ): item = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataIndex")(dataIndex)
+    __obj.updateDynamic("datapoint")(datapoint)
+    __obj.updateDynamic("pageX")(pageX)
+    __obj.updateDynamic("pageY")(pageY)
+    __obj.updateDynamic("series")(series)
+    __obj.updateDynamic("seriesIndex")(seriesIndex)
+    __obj.asInstanceOf[item]
+  }
+}
+

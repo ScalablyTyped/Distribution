@@ -13,3 +13,24 @@ trait FunctorWithIndexComposition21[F /* <: fpDashTsLib.libHKTMod.URIS2 */, FI, 
   ): fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libHKTMod.Type[G, B]]
 }
 
+object FunctorWithIndexComposition21 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, FI, G /* <: fpDashTsLib.libHKTMod.URIS */, GI](
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type[G, js.Any]], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type[G, js.Any]]
+    ],
+    mapWithIndex: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type[G, js.Any]], 
+      js.Function2[/* i */ js.Tuple2[FI, GI], js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type[G, js.Any]]
+    ]
+  ): FunctorWithIndexComposition21[F, FI, G, GI] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("mapWithIndex")(mapWithIndex)
+    __obj.asInstanceOf[FunctorWithIndexComposition21[F, FI, G, GI]]
+  }
+}
+

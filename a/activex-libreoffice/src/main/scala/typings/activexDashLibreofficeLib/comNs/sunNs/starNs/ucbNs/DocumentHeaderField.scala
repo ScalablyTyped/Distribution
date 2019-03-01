@@ -13,3 +13,13 @@ trait DocumentHeaderField extends js.Object {
   var Value: java.lang.String
 }
 
+object DocumentHeaderField {
+  @scala.inline
+  def apply(Name: java.lang.String, Value: java.lang.String): DocumentHeaderField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[DocumentHeaderField]
+  }
+}
+

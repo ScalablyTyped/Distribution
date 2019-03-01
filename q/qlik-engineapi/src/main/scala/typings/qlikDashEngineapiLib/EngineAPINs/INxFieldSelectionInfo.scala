@@ -19,3 +19,13 @@ trait INxFieldSelectionInfo extends js.Object {
   var qName: java.lang.String
 }
 
+object INxFieldSelectionInfo {
+  @scala.inline
+  def apply(qFieldSelectionMode: FieldSelectionModeType, qName: java.lang.String): INxFieldSelectionInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFieldSelectionMode")(qFieldSelectionMode)
+    __obj.updateDynamic("qName")(qName)
+    __obj.asInstanceOf[INxFieldSelectionInfo]
+  }
+}
+

@@ -18,3 +18,22 @@ trait ParDoInstruction extends js.Object {
   var userFn: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object ParDoInstruction {
+  @scala.inline
+  def apply(
+    input: InstructionInput = null,
+    multiOutputInfos: js.Array[MultiOutputInfo] = null,
+    numOutputs: scala.Int | scala.Double = null,
+    sideInputs: js.Array[SideInputInfo] = null,
+    userFn: stdLib.Record[java.lang.String, _] = null
+  ): ParDoInstruction = {
+    val __obj = js.Dynamic.literal()
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (multiOutputInfos != null) __obj.updateDynamic("multiOutputInfos")(multiOutputInfos)
+    if (numOutputs != null) __obj.updateDynamic("numOutputs")(numOutputs.asInstanceOf[js.Any])
+    if (sideInputs != null) __obj.updateDynamic("sideInputs")(sideInputs)
+    if (userFn != null) __obj.updateDynamic("userFn")(userFn)
+    __obj.asInstanceOf[ParDoInstruction]
+  }
+}
+

@@ -31,3 +31,25 @@ trait IgGridGroupByGroupedColumn
   var layout: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridGroupByGroupedColumn {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridGroupByGroupedColumn
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    col: js.Any = null,
+    dir: js.Any = null,
+    key: java.lang.String = null,
+    layout: java.lang.String = null
+  ): IgGridGroupByGroupedColumn = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (col != null) __obj.updateDynamic("col")(col)
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    __obj.asInstanceOf[IgGridGroupByGroupedColumn]
+  }
+}
+

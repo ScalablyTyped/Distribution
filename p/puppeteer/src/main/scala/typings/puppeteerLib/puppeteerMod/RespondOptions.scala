@@ -19,3 +19,20 @@ trait RespondOptions extends js.Object {
   var status: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RespondOptions {
+  @scala.inline
+  def apply(
+    body: nodeLib.Buffer | java.lang.String = null,
+    contentType: java.lang.String = null,
+    headers: Headers = null,
+    status: scala.Int | scala.Double = null
+  ): RespondOptions = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RespondOptions]
+  }
+}
+

@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object microsoftDashSdkDashSoapLibStrings {
   @js.native
-  sealed trait Active extends js.Object
+  sealed trait Active
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.CascadeType
   
   @js.native
-  sealed trait Append extends js.Object
+  sealed trait Append
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SecurityType
   
   @js.native
   sealed trait AppendTo extends js.Object
@@ -34,7 +36,8 @@ object microsoftDashSdkDashSoapLibStrings {
   sealed trait CalendarRulesType extends js.Object
   
   @js.native
-  sealed trait Cascade extends js.Object
+  sealed trait Cascade
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.CascadeType
   
   @js.native
   sealed trait Create extends js.Object
@@ -58,16 +61,19 @@ object microsoftDashSdkDashSoapLibStrings {
   sealed trait DecimalType extends js.Object
   
   @js.native
-  sealed trait Default extends js.Object
+  sealed trait Default
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.RelationshipType
   
   @js.native
   sealed trait Delete extends js.Object
   
   @js.native
-  sealed trait Details extends js.Object
+  sealed trait Details
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuGroup
   
   @js.native
-  sealed trait DoNotDisplay extends js.Object
+  sealed trait DoNotDisplay
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuBehavior
   
   @js.native
   sealed trait Double extends js.Object
@@ -85,7 +91,8 @@ object microsoftDashSdkDashSoapLibStrings {
   sealed trait ImageType extends js.Object
   
   @js.native
-  sealed trait Inheritance extends js.Object
+  sealed trait Inheritance
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SecurityType
   
   @js.native
   sealed trait Integer extends js.Object
@@ -106,10 +113,12 @@ object microsoftDashSdkDashSoapLibStrings {
   sealed trait ManagedPropertyType extends js.Object
   
   @js.native
-  sealed trait ManyToManyRelationship extends js.Object
+  sealed trait ManyToManyRelationship
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.RelationshipType
   
   @js.native
-  sealed trait Marketing extends js.Object
+  sealed trait Marketing
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuGroup
   
   @js.native
   sealed trait Memo extends js.Object
@@ -124,16 +133,19 @@ object microsoftDashSdkDashSoapLibStrings {
   sealed trait MoneyType extends js.Object
   
   @js.native
-  sealed trait NoCascade extends js.Object
+  sealed trait NoCascade
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.CascadeType
   
   @js.native
-  sealed trait None extends js.Object
+  sealed trait None
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SecurityType
   
   @js.native
   sealed trait NoneBACKSLASHtOrganizationOwned extends js.Object
   
   @js.native
-  sealed trait OneToManyRelationship extends js.Object
+  sealed trait OneToManyRelationship
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.RelationshipType
   
   @js.native
   sealed trait Owner extends js.Object
@@ -142,7 +154,8 @@ object microsoftDashSdkDashSoapLibStrings {
   sealed trait OwnerType extends js.Object
   
   @js.native
-  sealed trait ParentChild extends js.Object
+  sealed trait ParentChild
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SecurityType
   
   @js.native
   sealed trait PartyList extends js.Object
@@ -157,16 +170,19 @@ object microsoftDashSdkDashSoapLibStrings {
   sealed trait PicklistType extends js.Object
   
   @js.native
-  sealed trait Pointer extends js.Object
+  sealed trait Pointer
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.SecurityType
   
   @js.native
   sealed trait Read extends js.Object
   
   @js.native
-  sealed trait Sales extends js.Object
+  sealed trait Sales
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuGroup
   
   @js.native
-  sealed trait Service extends js.Object
+  sealed trait Service
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuGroup
   
   @js.native
   sealed trait Share extends js.Object
@@ -193,13 +209,16 @@ object microsoftDashSdkDashSoapLibStrings {
   sealed trait UniqueidentifierType extends js.Object
   
   @js.native
-  sealed trait UseCollectionName extends js.Object
+  sealed trait UseCollectionName
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuBehavior
   
   @js.native
-  sealed trait UseLabel extends js.Object
+  sealed trait UseLabel
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.AssociatedMenuBehavior
   
   @js.native
-  sealed trait UserOwned extends js.Object
+  sealed trait UserOwned
+    extends microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapMod.Global.SdkNs.MdqNs.CascadeType
   
   @js.native
   sealed trait Virtual extends js.Object

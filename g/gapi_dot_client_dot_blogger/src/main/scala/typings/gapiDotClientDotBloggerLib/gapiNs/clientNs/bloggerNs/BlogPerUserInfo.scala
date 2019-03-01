@@ -20,3 +20,24 @@ trait BlogPerUserInfo extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BlogPerUserInfo {
+  @scala.inline
+  def apply(
+    blogId: java.lang.String = null,
+    hasAdminAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    photosAlbumKey: java.lang.String = null,
+    role: java.lang.String = null,
+    userId: java.lang.String = null
+  ): BlogPerUserInfo = {
+    val __obj = js.Dynamic.literal()
+    if (blogId != null) __obj.updateDynamic("blogId")(blogId)
+    if (!js.isUndefined(hasAdminAccess)) __obj.updateDynamic("hasAdminAccess")(hasAdminAccess)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (photosAlbumKey != null) __obj.updateDynamic("photosAlbumKey")(photosAlbumKey)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[BlogPerUserInfo]
+  }
+}
+

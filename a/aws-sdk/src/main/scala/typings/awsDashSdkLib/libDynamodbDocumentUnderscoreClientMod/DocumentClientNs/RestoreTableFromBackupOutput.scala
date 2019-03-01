@@ -12,3 +12,12 @@ trait RestoreTableFromBackupOutput extends js.Object {
   var TableDescription: js.UndefOr[TableDescription] = js.undefined
 }
 
+object RestoreTableFromBackupOutput {
+  @scala.inline
+  def apply(TableDescription: TableDescription = null): RestoreTableFromBackupOutput = {
+    val __obj = js.Dynamic.literal()
+    if (TableDescription != null) __obj.updateDynamic("TableDescription")(TableDescription)
+    __obj.asInstanceOf[RestoreTableFromBackupOutput]
+  }
+}
+

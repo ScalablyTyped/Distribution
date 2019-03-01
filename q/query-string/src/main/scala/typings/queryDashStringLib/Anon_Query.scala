@@ -10,3 +10,13 @@ trait Anon_Query extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Query {
+  @scala.inline
+  def apply(query: queryDashStringLib.queryDashStringMod.OutputParams, url: java.lang.String): Anon_Query = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_Query]
+  }
+}
+

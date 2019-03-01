@@ -42,3 +42,13 @@ trait UpdatePhotoRequest extends js.Object {
   var updateMask: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UpdatePhotoRequest {
+  @scala.inline
+  def apply(photo: Photo = null, updateMask: java.lang.String = null): UpdatePhotoRequest = {
+    val __obj = js.Dynamic.literal()
+    if (photo != null) __obj.updateDynamic("photo")(photo)
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    __obj.asInstanceOf[UpdatePhotoRequest]
+  }
+}
+

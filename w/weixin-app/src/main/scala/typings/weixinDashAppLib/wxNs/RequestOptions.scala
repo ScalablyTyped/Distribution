@@ -26,3 +26,30 @@ trait RequestOptions
   var url: java.lang.String
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    data: java.lang.String | js.Object | stdLib.ArrayBuffer = null,
+    dataType: java.lang.String = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    header: RequestHeader = null,
+    method: weixinDashAppLib.weixinDashAppLibStrings.GET | weixinDashAppLib.weixinDashAppLibStrings.OPTIONS | weixinDashAppLib.weixinDashAppLibStrings.HEAD | weixinDashAppLib.weixinDashAppLibStrings.POST | weixinDashAppLib.weixinDashAppLibStrings.PUT | weixinDashAppLib.weixinDashAppLibStrings.DELETE | weixinDashAppLib.weixinDashAppLibStrings.TRACE | weixinDashAppLib.weixinDashAppLibStrings.CONNECT = null,
+    responseType: java.lang.String = null,
+    success: js.Function1[/* res */ DataResponse, scala.Unit] = null
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

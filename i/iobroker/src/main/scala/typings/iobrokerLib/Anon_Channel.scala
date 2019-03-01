@@ -11,3 +11,14 @@ trait Anon_Channel extends js.Object {
   var state: java.lang.String
 }
 
+object Anon_Channel {
+  @scala.inline
+  def apply(channel: java.lang.String, device: java.lang.String, state: java.lang.String): Anon_Channel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("device")(device)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Anon_Channel]
+  }
+}
+

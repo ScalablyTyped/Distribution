@@ -23,3 +23,22 @@ trait ScrollChangeEventArgs extends js.Object {
   var oldValues: js.UndefOr[js.Any] = js.undefined
 }
 
+object ScrollChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cause: java.lang.String = null,
+    diagramId: java.lang.String = null,
+    newValues: js.Any = null,
+    oldValues: js.Any = null
+  ): ScrollChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cause != null) __obj.updateDynamic("cause")(cause)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (newValues != null) __obj.updateDynamic("newValues")(newValues)
+    if (oldValues != null) __obj.updateDynamic("oldValues")(oldValues)
+    __obj.asInstanceOf[ScrollChangeEventArgs]
+  }
+}
+

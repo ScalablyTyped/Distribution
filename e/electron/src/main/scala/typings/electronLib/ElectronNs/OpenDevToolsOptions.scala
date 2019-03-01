@@ -14,3 +14,14 @@ trait OpenDevToolsOptions extends js.Object {
   var mode: electronLib.electronLibStrings.right | electronLib.electronLibStrings.bottom | electronLib.electronLibStrings.undocked | electronLib.electronLibStrings.detach
 }
 
+object OpenDevToolsOptions {
+  @scala.inline
+  def apply(
+    mode: electronLib.electronLibStrings.right | electronLib.electronLibStrings.bottom | electronLib.electronLibStrings.undocked | electronLib.electronLibStrings.detach
+  ): OpenDevToolsOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OpenDevToolsOptions]
+  }
+}
+

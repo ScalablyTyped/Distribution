@@ -18,3 +18,20 @@ trait RequestFilter extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RequestFilter {
+  @scala.inline
+  def apply(
+    urls: js.Array[java.lang.String],
+    tabId: scala.Int | scala.Double = null,
+    types: js.Array[ResourceType] = null,
+    windowId: scala.Int | scala.Double = null
+  ): RequestFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("urls")(urls)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types)
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestFilter]
+  }
+}
+

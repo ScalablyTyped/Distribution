@@ -12,3 +12,20 @@ trait SuggestedWarpOutputOptions extends js.Object {
   var t_srs: SpatialReference
 }
 
+object SuggestedWarpOutputOptions {
+  @scala.inline
+  def apply(
+    s_srs: SpatialReference,
+    src: Dataset,
+    t_srs: SpatialReference,
+    maxError: scala.Int | scala.Double = null
+  ): SuggestedWarpOutputOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("s_srs")(s_srs)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("t_srs")(t_srs)
+    if (maxError != null) __obj.updateDynamic("maxError")(maxError.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SuggestedWarpOutputOptions]
+  }
+}
+

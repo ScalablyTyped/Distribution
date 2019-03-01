@@ -24,3 +24,20 @@ trait DOMPointInit extends js.Object {
   var z: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DOMPointInit {
+  @scala.inline
+  def apply(
+    x: scala.Double,
+    y: scala.Double,
+    w: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null
+  ): DOMPointInit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DOMPointInit]
+  }
+}
+

@@ -280,3 +280,132 @@ trait Configuration extends js.Object {
   var vtype: js.UndefOr[js.Any] = js.undefined
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    ajaxConfig: jqueryLib.JQueryAjaxSettings = null,
+    allowDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFreeEntries: js.UndefOr[scala.Boolean] = js.undefined,
+    autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeSend: js.Function0[scala.Unit] = null,
+    cls: java.lang.String = null,
+    data: js.Any = null,
+    dataUrlParams: js.Object = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledField: java.lang.String = null,
+    displayField: java.lang.String = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    expandOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    groupBy: java.lang.String = null,
+    hideTrigger: js.UndefOr[scala.Boolean] = js.undefined,
+    highlight: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    infoMsgCls: java.lang.String = null,
+    inputCfg: js.Any = null,
+    invalidCls: java.lang.String = null,
+    matchCase: js.UndefOr[scala.Boolean] = js.undefined,
+    maxDropHeight: scala.Int | scala.Double = null,
+    maxEntryLength: scala.Int | scala.Double = null,
+    maxEntryRenderer: js.Function1[/* v */ js.UndefOr[scala.Double], scala.Unit] = null,
+    maxSelection: scala.Int | scala.Double = null,
+    maxSelectionRenderer: js.Function1[/* v */ scala.Double, scala.Unit] = null,
+    maxSuggestions: scala.Int | scala.Double = null,
+    method: java.lang.String = null,
+    minChars: scala.Int | scala.Double = null,
+    minCharsRenderer: js.Function1[/* v */ scala.Double, scala.Unit] = null,
+    mode: java.lang.String = null,
+    name: java.lang.String = null,
+    noSuggestionText: java.lang.String = null,
+    placeholder: java.lang.String = null,
+    queryParam: java.lang.String = null,
+    renderer: js.Function1[/* item */ js.Any, scala.Unit] = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    resultAsString: js.UndefOr[scala.Boolean] = js.undefined,
+    resultAsStringDelimiter: java.lang.String = null,
+    resultsField: java.lang.String = null,
+    selectFirst: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionCls: java.lang.String = null,
+    selectionContainer: magicsuggestLib.JQuery = null,
+    selectionPosition: java.lang.String = null,
+    selectionRenderer: js.Function1[/* item */ js.Any, scala.Unit] = null,
+    selectionStacked: js.UndefOr[scala.Boolean] = js.undefined,
+    sortDir: java.lang.String = null,
+    sortOrder: java.lang.String = null,
+    strictSuggest: js.UndefOr[scala.Boolean] = js.undefined,
+    style: java.lang.String = null,
+    toggleOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    typeDelay: scala.Int | scala.Double = null,
+    useCommaKey: js.UndefOr[scala.Boolean] = js.undefined,
+    useTabKey: js.UndefOr[scala.Boolean] = js.undefined,
+    useZebraStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.Any = null,
+    valueField: java.lang.String = null,
+    vregex: js.Any = null,
+    vtype: js.Any = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    if (ajaxConfig != null) __obj.updateDynamic("ajaxConfig")(ajaxConfig)
+    if (!js.isUndefined(allowDuplicates)) __obj.updateDynamic("allowDuplicates")(allowDuplicates)
+    if (!js.isUndefined(allowFreeEntries)) __obj.updateDynamic("allowFreeEntries")(allowFreeEntries)
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataUrlParams != null) __obj.updateDynamic("dataUrlParams")(dataUrlParams)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (disabledField != null) __obj.updateDynamic("disabledField")(disabledField)
+    if (displayField != null) __obj.updateDynamic("displayField")(displayField)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (!js.isUndefined(expandOnFocus)) __obj.updateDynamic("expandOnFocus")(expandOnFocus)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy)
+    if (!js.isUndefined(hideTrigger)) __obj.updateDynamic("hideTrigger")(hideTrigger)
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (infoMsgCls != null) __obj.updateDynamic("infoMsgCls")(infoMsgCls)
+    if (inputCfg != null) __obj.updateDynamic("inputCfg")(inputCfg)
+    if (invalidCls != null) __obj.updateDynamic("invalidCls")(invalidCls)
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    if (maxDropHeight != null) __obj.updateDynamic("maxDropHeight")(maxDropHeight.asInstanceOf[js.Any])
+    if (maxEntryLength != null) __obj.updateDynamic("maxEntryLength")(maxEntryLength.asInstanceOf[js.Any])
+    if (maxEntryRenderer != null) __obj.updateDynamic("maxEntryRenderer")(maxEntryRenderer)
+    if (maxSelection != null) __obj.updateDynamic("maxSelection")(maxSelection.asInstanceOf[js.Any])
+    if (maxSelectionRenderer != null) __obj.updateDynamic("maxSelectionRenderer")(maxSelectionRenderer)
+    if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
+    if (minCharsRenderer != null) __obj.updateDynamic("minCharsRenderer")(minCharsRenderer)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (noSuggestionText != null) __obj.updateDynamic("noSuggestionText")(noSuggestionText)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (queryParam != null) __obj.updateDynamic("queryParam")(queryParam)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(resultAsString)) __obj.updateDynamic("resultAsString")(resultAsString)
+    if (resultAsStringDelimiter != null) __obj.updateDynamic("resultAsStringDelimiter")(resultAsStringDelimiter)
+    if (resultsField != null) __obj.updateDynamic("resultsField")(resultsField)
+    if (!js.isUndefined(selectFirst)) __obj.updateDynamic("selectFirst")(selectFirst)
+    if (selectionCls != null) __obj.updateDynamic("selectionCls")(selectionCls)
+    if (selectionContainer != null) __obj.updateDynamic("selectionContainer")(selectionContainer)
+    if (selectionPosition != null) __obj.updateDynamic("selectionPosition")(selectionPosition)
+    if (selectionRenderer != null) __obj.updateDynamic("selectionRenderer")(selectionRenderer)
+    if (!js.isUndefined(selectionStacked)) __obj.updateDynamic("selectionStacked")(selectionStacked)
+    if (sortDir != null) __obj.updateDynamic("sortDir")(sortDir)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (!js.isUndefined(strictSuggest)) __obj.updateDynamic("strictSuggest")(strictSuggest)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(toggleOnClick)) __obj.updateDynamic("toggleOnClick")(toggleOnClick)
+    if (typeDelay != null) __obj.updateDynamic("typeDelay")(typeDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCommaKey)) __obj.updateDynamic("useCommaKey")(useCommaKey)
+    if (!js.isUndefined(useTabKey)) __obj.updateDynamic("useTabKey")(useTabKey)
+    if (!js.isUndefined(useZebraStyle)) __obj.updateDynamic("useZebraStyle")(useZebraStyle)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (valueField != null) __obj.updateDynamic("valueField")(valueField)
+    if (vregex != null) __obj.updateDynamic("vregex")(vregex)
+    if (vtype != null) __obj.updateDynamic("vtype")(vtype)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

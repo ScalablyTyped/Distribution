@@ -29,3 +29,26 @@ trait TooltipChangeEventArgs extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TooltipChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    isInteraction: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    sliderIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): TooltipChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (sliderIndex != null) __obj.updateDynamic("sliderIndex")(sliderIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TooltipChangeEventArgs]
+  }
+}
+

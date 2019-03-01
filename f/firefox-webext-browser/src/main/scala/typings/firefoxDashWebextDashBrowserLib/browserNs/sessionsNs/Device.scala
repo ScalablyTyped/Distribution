@@ -16,3 +16,14 @@ trait Device extends js.Object {
   var sessions: js.Array[Session]
 }
 
+object Device {
+  @scala.inline
+  def apply(deviceName: java.lang.String, info: java.lang.String, sessions: js.Array[Session]): Device = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceName")(deviceName)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("sessions")(sessions)
+    __obj.asInstanceOf[Device]
+  }
+}
+

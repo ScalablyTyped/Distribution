@@ -13,3 +13,12 @@ trait CreateClusterRequest extends js.Object {
   var cluster: js.UndefOr[Cluster] = js.undefined
 }
 
+object CreateClusterRequest {
+  @scala.inline
+  def apply(cluster: Cluster = null): CreateClusterRequest = {
+    val __obj = js.Dynamic.literal()
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster)
+    __obj.asInstanceOf[CreateClusterRequest]
+  }
+}
+

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImageDetailsPng extends js.Object {
+trait ImageDetailsPng extends ImageDetails {
   /**
     * The format of the resulting image.
     * @default 'jpeg'
@@ -18,5 +18,18 @@ trait ImageDetailsPng extends js.Object {
     * of bytes needed to store it will decrease.
     */
   var quality: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+}
+
+object ImageDetailsPng {
+  @scala.inline
+  def apply(
+    format: chromeDashAppsLib.chromeDashAppsLibStrings.jpeg = null,
+    quality: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): ImageDetailsPng = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(quality)) __obj.updateDynamic("quality")(quality)
+    __obj.asInstanceOf[ImageDetailsPng]
+  }
 }
 

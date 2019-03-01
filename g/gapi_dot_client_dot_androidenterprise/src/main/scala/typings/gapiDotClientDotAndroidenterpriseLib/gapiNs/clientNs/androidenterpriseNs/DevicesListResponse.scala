@@ -12,3 +12,13 @@ trait DevicesListResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DevicesListResponse {
+  @scala.inline
+  def apply(device: js.Array[Device] = null, kind: java.lang.String = null): DevicesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[DevicesListResponse]
+  }
+}
+

@@ -10,3 +10,16 @@ trait SerializeOptions extends js.Object {
   var shallow: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SerializeOptions {
+  @scala.inline
+  def apply(
+    omitPivot: js.UndefOr[scala.Boolean] = js.undefined,
+    shallow: js.UndefOr[scala.Boolean] = js.undefined
+  ): SerializeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(omitPivot)) __obj.updateDynamic("omitPivot")(omitPivot)
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow)
+    __obj.asInstanceOf[SerializeOptions]
+  }
+}
+

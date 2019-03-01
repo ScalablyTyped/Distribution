@@ -17,3 +17,27 @@ trait Anon_Data extends js.Object {
   ): Anon_EntityType
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    visitNode: js.Function3[
+      js.Object, 
+      breezeLib.breezeNs.QueryContext, 
+      breezeLib.breezeNs.NodeContext, 
+      Anon_EntityType
+    ],
+    extractKeyMappings: js.Function1[/* data */ js.Object, js.Array[breezeLib.breezeNs.KeyMapping]] = null,
+    extractResults: js.Function1[/* data */ js.Object, js.Object] = null,
+    extractSaveResults: js.Function1[/* data */ js.Object, js.Array[_]] = null
+  ): Anon_Data = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("visitNode")(visitNode)
+    if (extractKeyMappings != null) __obj.updateDynamic("extractKeyMappings")(extractKeyMappings)
+    if (extractResults != null) __obj.updateDynamic("extractResults")(extractResults)
+    if (extractSaveResults != null) __obj.updateDynamic("extractSaveResults")(extractSaveResults)
+    __obj.asInstanceOf[Anon_Data]
+  }
+}
+

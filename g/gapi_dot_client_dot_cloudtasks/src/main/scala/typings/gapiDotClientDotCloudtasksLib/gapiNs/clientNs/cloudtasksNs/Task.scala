@@ -82,3 +82,30 @@ trait Task extends js.Object {
   var view: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Task {
+  @scala.inline
+  def apply(
+    appEngineHttpRequest: AppEngineHttpRequest = null,
+    appEngineTaskTarget: AppEngineTaskTarget = null,
+    createTime: java.lang.String = null,
+    name: java.lang.String = null,
+    pullMessage: PullMessage = null,
+    pullTaskTarget: PullTaskTarget = null,
+    scheduleTime: java.lang.String = null,
+    taskStatus: TaskStatus = null,
+    view: java.lang.String = null
+  ): Task = {
+    val __obj = js.Dynamic.literal()
+    if (appEngineHttpRequest != null) __obj.updateDynamic("appEngineHttpRequest")(appEngineHttpRequest)
+    if (appEngineTaskTarget != null) __obj.updateDynamic("appEngineTaskTarget")(appEngineTaskTarget)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pullMessage != null) __obj.updateDynamic("pullMessage")(pullMessage)
+    if (pullTaskTarget != null) __obj.updateDynamic("pullTaskTarget")(pullTaskTarget)
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    if (taskStatus != null) __obj.updateDynamic("taskStatus")(taskStatus)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[Task]
+  }
+}
+

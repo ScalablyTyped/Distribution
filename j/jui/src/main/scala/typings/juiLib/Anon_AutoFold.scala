@@ -24,3 +24,22 @@ trait Anon_AutoFold extends js.Object {
   var tpl: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_AutoFold {
+  @scala.inline
+  def apply(
+    autoFold: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    index: scala.Int | scala.Double = null,
+    multipanel: js.UndefOr[scala.Boolean] = js.undefined,
+    tpl: js.Any = null
+  ): Anon_AutoFold = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFold)) __obj.updateDynamic("autoFold")(autoFold)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipanel)) __obj.updateDynamic("multipanel")(multipanel)
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    __obj.asInstanceOf[Anon_AutoFold]
+  }
+}
+

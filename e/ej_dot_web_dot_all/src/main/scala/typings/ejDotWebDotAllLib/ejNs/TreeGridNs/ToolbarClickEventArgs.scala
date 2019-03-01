@@ -23,3 +23,22 @@ trait ToolbarClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ToolbarClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentTarget: js.Any = null,
+    itemName: java.lang.String = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): ToolbarClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget)
+    if (itemName != null) __obj.updateDynamic("itemName")(itemName)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ToolbarClickEventArgs]
+  }
+}
+

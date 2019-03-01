@@ -12,3 +12,16 @@ trait CreateConfigItemOptions extends js.Object {
   ] = js.undefined
 }
 
+object CreateConfigItemOptions {
+  @scala.inline
+  def apply(
+    dirname: java.lang.String = null,
+    `type`: atBabelCoreLib.atBabelCoreLibStrings.preset | atBabelCoreLib.atBabelCoreLibStrings.plugin = null
+  ): CreateConfigItemOptions = {
+    val __obj = js.Dynamic.literal()
+    if (dirname != null) __obj.updateDynamic("dirname")(dirname)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateConfigItemOptions]
+  }
+}
+

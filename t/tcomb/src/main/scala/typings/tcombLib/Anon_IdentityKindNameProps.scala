@@ -13,3 +13,22 @@ trait Anon_IdentityKindNameProps extends js.Object {
   var strict: scala.Boolean
 }
 
+object Anon_IdentityKindNameProps {
+  @scala.inline
+  def apply(
+    identity: scala.Boolean,
+    kind: java.lang.String,
+    name: java.lang.String,
+    props: StructProps,
+    strict: scala.Boolean
+  ): Anon_IdentityKindNameProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("identity")(identity)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("props")(props)
+    __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[Anon_IdentityKindNameProps]
+  }
+}
+

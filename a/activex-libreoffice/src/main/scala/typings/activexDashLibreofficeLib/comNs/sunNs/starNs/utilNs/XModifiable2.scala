@@ -26,3 +26,32 @@ trait XModifiable2 extends XModifiable {
   def isSetModifiedEnabled(): scala.Boolean
 }
 
+object XModifiable2 {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addModifyListener: js.Function1[XModifyListener, scala.Unit],
+    disableSetModified: js.Function0[scala.Boolean],
+    enableSetModified: js.Function0[scala.Boolean],
+    isModified: js.Function0[scala.Boolean],
+    isSetModifiedEnabled: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeModifyListener: js.Function1[XModifyListener, scala.Unit],
+    setModified: js.Function1[scala.Boolean, scala.Unit]
+  ): XModifiable2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addModifyListener")(addModifyListener)
+    __obj.updateDynamic("disableSetModified")(disableSetModified)
+    __obj.updateDynamic("enableSetModified")(enableSetModified)
+    __obj.updateDynamic("isModified")(isModified)
+    __obj.updateDynamic("isSetModifiedEnabled")(isSetModifiedEnabled)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
+    __obj.updateDynamic("setModified")(setModified)
+    __obj.asInstanceOf[XModifiable2]
+  }
+}
+

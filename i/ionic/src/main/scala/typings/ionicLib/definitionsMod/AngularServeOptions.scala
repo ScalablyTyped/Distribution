@@ -11,3 +11,49 @@ trait AngularServeOptions extends ServeOptions {
   var ssl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AngularServeOptions {
+  @scala.inline
+  def apply(
+    `--`: js.Array[java.lang.String],
+    address: java.lang.String,
+    devapp: scala.Boolean,
+    engine: java.lang.String,
+    lab: scala.Boolean,
+    labHost: java.lang.String,
+    labPort: scala.Double,
+    livereload: scala.Boolean,
+    open: scala.Boolean,
+    port: scala.Double,
+    proxy: scala.Boolean,
+    browser: java.lang.String = null,
+    browserOption: java.lang.String = null,
+    configuration: java.lang.String = null,
+    externalAddressRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    platform: java.lang.String = null,
+    project: java.lang.String = null,
+    sourcemaps: js.UndefOr[scala.Boolean] = js.undefined,
+    ssl: js.UndefOr[scala.Boolean] = js.undefined
+  ): AngularServeOptions = {
+    val __obj = js.Dynamic.literal(`--` = `--`)
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("devapp")(devapp)
+    __obj.updateDynamic("engine")(engine)
+    __obj.updateDynamic("lab")(lab)
+    __obj.updateDynamic("labHost")(labHost)
+    __obj.updateDynamic("labPort")(labPort)
+    __obj.updateDynamic("livereload")(livereload)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("proxy")(proxy)
+    if (browser != null) __obj.updateDynamic("browser")(browser)
+    if (browserOption != null) __obj.updateDynamic("browserOption")(browserOption)
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    if (!js.isUndefined(externalAddressRequired)) __obj.updateDynamic("externalAddressRequired")(externalAddressRequired)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (project != null) __obj.updateDynamic("project")(project)
+    if (!js.isUndefined(sourcemaps)) __obj.updateDynamic("sourcemaps")(sourcemaps)
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    __obj.asInstanceOf[AngularServeOptions]
+  }
+}
+

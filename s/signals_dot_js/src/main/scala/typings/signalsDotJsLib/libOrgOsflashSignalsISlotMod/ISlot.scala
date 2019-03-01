@@ -58,3 +58,30 @@ trait ISlot extends js.Object {
   def remove(): scala.Unit
 }
 
+object ISlot {
+  @scala.inline
+  def apply(
+    enabled: scala.Boolean,
+    execute: js.Function1[js.Array[_], scala.Unit],
+    execute0: js.Function0[scala.Unit],
+    execute1: js.Function1[js.Object, scala.Unit],
+    listener: js.Function,
+    once: scala.Boolean,
+    params: js.Array[_],
+    priority: scala.Double,
+    remove: js.Function0[scala.Unit]
+  ): ISlot = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("execute0")(execute0)
+    __obj.updateDynamic("execute1")(execute1)
+    __obj.updateDynamic("listener")(listener)
+    __obj.updateDynamic("once")(once)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("priority")(priority)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[ISlot]
+  }
+}
+

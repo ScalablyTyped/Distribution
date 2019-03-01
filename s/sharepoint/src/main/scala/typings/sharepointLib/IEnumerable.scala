@@ -10,3 +10,12 @@ trait IEnumerable[T] extends js.Object {
   def getEnumerator(): IEnumerator[T]
 }
 
+object IEnumerable {
+  @scala.inline
+  def apply[T](getEnumerator: js.Function0[IEnumerator[T]]): IEnumerable[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getEnumerator")(getEnumerator)
+    __obj.asInstanceOf[IEnumerable[T]]
+  }
+}
+

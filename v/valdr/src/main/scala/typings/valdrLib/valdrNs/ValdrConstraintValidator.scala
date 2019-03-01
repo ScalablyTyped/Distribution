@@ -10,3 +10,16 @@ trait ValdrConstraintValidator
   var message: java.lang.String
 }
 
+object ValdrConstraintValidator {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    StringDictionary: /* argumentName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): ValdrConstraintValidator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ValdrConstraintValidator]
+  }
+}
+

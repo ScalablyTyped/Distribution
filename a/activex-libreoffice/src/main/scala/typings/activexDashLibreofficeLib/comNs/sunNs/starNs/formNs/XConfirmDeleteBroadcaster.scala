@@ -28,3 +28,22 @@ trait XConfirmDeleteBroadcaster
   def removeConfirmDeleteListener(aListener: XConfirmDeleteListener): scala.Unit
 }
 
+object XConfirmDeleteBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addConfirmDeleteListener: js.Function1[XConfirmDeleteListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeConfirmDeleteListener: js.Function1[XConfirmDeleteListener, scala.Unit]
+  ): XConfirmDeleteBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addConfirmDeleteListener")(addConfirmDeleteListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeConfirmDeleteListener")(removeConfirmDeleteListener)
+    __obj.asInstanceOf[XConfirmDeleteBroadcaster]
+  }
+}
+

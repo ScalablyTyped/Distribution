@@ -13,3 +13,18 @@ trait CompletionParams extends TextDocumentPositionParams {
   var context: js.UndefOr[CompletionContext] = js.undefined
 }
 
+object CompletionParams {
+  @scala.inline
+  def apply(
+    position: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position,
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier,
+    context: CompletionContext = null
+  ): CompletionParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("textDocument")(textDocument)
+    if (context != null) __obj.updateDynamic("context")(context)
+    __obj.asInstanceOf[CompletionParams]
+  }
+}
+

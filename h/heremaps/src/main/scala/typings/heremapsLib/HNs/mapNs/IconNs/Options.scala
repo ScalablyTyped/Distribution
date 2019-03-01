@@ -23,3 +23,22 @@ trait Options extends js.Object {
   var size: js.UndefOr[heremapsLib.HNs.mathNs.ISize | scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    crossOrigin: scala.Boolean,
+    anchor: heremapsLib.HNs.mathNs.IPoint = null,
+    asCanvas: heremapsLib.HNs.mapNs.HitArea = null,
+    hitArea: heremapsLib.HNs.mapNs.HitArea = null,
+    size: heremapsLib.HNs.mathNs.ISize | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (asCanvas != null) __obj.updateDynamic("asCanvas")(asCanvas)
+    if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

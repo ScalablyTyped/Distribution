@@ -52,3 +52,33 @@ trait IgHierarchicalGridScrollSettings
   var wheelStep: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgHierarchicalGridScrollSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgHierarchicalGridScrollSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    inertiaDuration: scala.Int | scala.Double = null,
+    inertiaStep: scala.Int | scala.Double = null,
+    scrollLeft: scala.Int | scala.Double = null,
+    scrollTop: scala.Int | scala.Double = null,
+    smoothing: js.UndefOr[scala.Boolean] = js.undefined,
+    smoothingDuration: scala.Int | scala.Double = null,
+    smoothingStep: scala.Int | scala.Double = null,
+    wheelStep: scala.Int | scala.Double = null
+  ): IgHierarchicalGridScrollSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (inertiaDuration != null) __obj.updateDynamic("inertiaDuration")(inertiaDuration.asInstanceOf[js.Any])
+    if (inertiaStep != null) __obj.updateDynamic("inertiaStep")(inertiaStep.asInstanceOf[js.Any])
+    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
+    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothing)) __obj.updateDynamic("smoothing")(smoothing)
+    if (smoothingDuration != null) __obj.updateDynamic("smoothingDuration")(smoothingDuration.asInstanceOf[js.Any])
+    if (smoothingStep != null) __obj.updateDynamic("smoothingStep")(smoothingStep.asInstanceOf[js.Any])
+    if (wheelStep != null) __obj.updateDynamic("wheelStep")(wheelStep.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgHierarchicalGridScrollSettings]
+  }
+}
+

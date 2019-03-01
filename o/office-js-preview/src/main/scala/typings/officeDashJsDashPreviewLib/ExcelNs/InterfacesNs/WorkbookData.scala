@@ -168,3 +168,54 @@ trait WorkbookData extends js.Object {
   var worksheets: js.UndefOr[js.Array[WorksheetData]] = js.undefined
 }
 
+object WorkbookData {
+  @scala.inline
+  def apply(
+    autoSave: js.UndefOr[scala.Boolean] = js.undefined,
+    bindings: js.Array[BindingData] = null,
+    calculationEngineVersion: scala.Int | scala.Double = null,
+    chartDataPointTrack: js.UndefOr[scala.Boolean] = js.undefined,
+    comments: js.Array[CommentData] = null,
+    customXmlParts: js.Array[CustomXmlPartData] = null,
+    isDirty: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    names: js.Array[NamedItemData] = null,
+    pivotTables: js.Array[PivotTableData] = null,
+    previouslySaved: js.UndefOr[scala.Boolean] = js.undefined,
+    properties: DocumentPropertiesData = null,
+    protection: WorkbookProtectionData = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    settings: js.Array[SettingData] = null,
+    slicers: js.Array[SlicerData] = null,
+    styles: js.Array[StyleData] = null,
+    tables: js.Array[TableData] = null,
+    use1904DateSystem: js.UndefOr[scala.Boolean] = js.undefined,
+    usePrecisionAsDisplayed: js.UndefOr[scala.Boolean] = js.undefined,
+    worksheets: js.Array[WorksheetData] = null
+  ): WorkbookData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (calculationEngineVersion != null) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (customXmlParts != null) __obj.updateDynamic("customXmlParts")(customXmlParts)
+    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables)
+    if (!js.isUndefined(previouslySaved)) __obj.updateDynamic("previouslySaved")(previouslySaved)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (slicers != null) __obj.updateDynamic("slicers")(slicers)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (!js.isUndefined(use1904DateSystem)) __obj.updateDynamic("use1904DateSystem")(use1904DateSystem)
+    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed)
+    if (worksheets != null) __obj.updateDynamic("worksheets")(worksheets)
+    __obj.asInstanceOf[WorkbookData]
+  }
+}
+

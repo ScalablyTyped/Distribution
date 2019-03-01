@@ -27,3 +27,22 @@ trait SelectionSettings extends js.Object {
   var selectionUnit: js.UndefOr[SelectionUnit | java.lang.String] = js.undefined
 }
 
+object SelectionSettings {
+  @scala.inline
+  def apply(
+    activeCell: java.lang.String = null,
+    animationTime: scala.Int | scala.Double = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionType: SelectionType | java.lang.String = null,
+    selectionUnit: SelectionUnit | java.lang.String = null
+  ): SelectionSettings = {
+    val __obj = js.Dynamic.literal()
+    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell)
+    if (animationTime != null) __obj.updateDynamic("animationTime")(animationTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
+    if (selectionUnit != null) __obj.updateDynamic("selectionUnit")(selectionUnit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectionSettings]
+  }
+}
+

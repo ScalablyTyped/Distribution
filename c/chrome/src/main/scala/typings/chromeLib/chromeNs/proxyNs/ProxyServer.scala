@@ -14,3 +14,14 @@ trait ProxyServer extends js.Object {
   var scheme: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProxyServer {
+  @scala.inline
+  def apply(host: java.lang.String, port: scala.Int | scala.Double = null, scheme: java.lang.String = null): ProxyServer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("host")(host)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme)
+    __obj.asInstanceOf[ProxyServer]
+  }
+}
+

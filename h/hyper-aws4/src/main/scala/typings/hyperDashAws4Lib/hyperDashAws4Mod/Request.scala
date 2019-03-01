@@ -13,3 +13,22 @@ trait Request extends js.Object {
   var url: java.lang.String
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    body: java.lang.String = null,
+    credential: Credentials = null,
+    headers: Header = null,
+    method: HttpMethods = null
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (credential != null) __obj.updateDynamic("credential")(credential)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    __obj.asInstanceOf[Request]
+  }
+}
+

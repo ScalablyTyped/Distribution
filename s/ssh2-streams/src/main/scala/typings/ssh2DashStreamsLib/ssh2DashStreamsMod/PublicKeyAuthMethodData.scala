@@ -5,10 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PublicKeyAuthMethodData extends js.Object {
+trait PublicKeyAuthMethodData extends _AuthMethodData {
   var blob: js.UndefOr[nodeLib.Buffer] = js.undefined
   var key: nodeLib.Buffer
   var keyAlgo: java.lang.String
   var signature: js.UndefOr[nodeLib.Buffer] = js.undefined
+}
+
+object PublicKeyAuthMethodData {
+  @scala.inline
+  def apply(
+    key: nodeLib.Buffer,
+    keyAlgo: java.lang.String,
+    blob: nodeLib.Buffer = null,
+    signature: nodeLib.Buffer = null
+  ): PublicKeyAuthMethodData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("keyAlgo")(keyAlgo)
+    if (blob != null) __obj.updateDynamic("blob")(blob)
+    if (signature != null) __obj.updateDynamic("signature")(signature)
+    __obj.asInstanceOf[PublicKeyAuthMethodData]
+  }
 }
 

@@ -7,13 +7,59 @@ import scala.scalajs.js.annotation._
 
 object mapboxDashGlLibStrings {
   @js.native
+  sealed trait `!=`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `%`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `*`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `+`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `-`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `/`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `<`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `<=`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `==`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `>`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `>=`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait GET extends js.Object
   
   @js.native
-  sealed trait Glyphs extends js.Object
+  sealed trait Glyphs
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
   
   @js.native
-  sealed trait Image extends js.Object
+  sealed trait Image
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
   
   @js.native
   sealed trait POST extends js.Object
@@ -22,22 +68,64 @@ object mapboxDashGlLibStrings {
   sealed trait PUT extends js.Object
   
   @js.native
-  sealed trait Source extends js.Object
+  sealed trait Source
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
   
   @js.native
-  sealed trait SpriteImage extends js.Object
+  sealed trait SpriteImage
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
   
   @js.native
-  sealed trait SpriteJSON extends js.Object
+  sealed trait SpriteJSON
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
   
   @js.native
-  sealed trait Style extends js.Object
+  sealed trait Style
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
   
   @js.native
-  sealed trait Tile extends js.Object
+  sealed trait Tile
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
   
   @js.native
-  sealed trait Unknown extends js.Object
+  sealed trait Unknown
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ResourceType
+  
+  @js.native
+  sealed trait `_backtick^_backtick`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait abs
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait acos
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait all
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait any
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait array
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait asin
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait at
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait atan
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait auto extends js.Object
@@ -49,16 +137,23 @@ object mapboxDashGlLibStrings {
   sealed trait bevel extends js.Object
   
   @js.native
+  sealed trait boolean
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait both extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
   
   @js.native
-  sealed trait `bottom-left` extends js.Object
+  sealed trait `bottom-left`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
   
   @js.native
-  sealed trait `bottom-right` extends js.Object
+  sealed trait `bottom-right`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
   
   @js.native
   sealed trait boxzoomcancel extends js.Object
@@ -76,10 +171,19 @@ object mapboxDashGlLibStrings {
   sealed trait canvas extends js.Object
   
   @js.native
+  sealed trait `case`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait categorical extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait ceil
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait center
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
   
   @js.native
   sealed trait circle extends js.Object
@@ -88,10 +192,22 @@ object mapboxDashGlLibStrings {
   sealed trait click extends js.Object
   
   @js.native
+  sealed trait collator
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait concat
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait content extends js.Object
   
   @js.native
   sealed trait contextmenu extends js.Object
+  
+  @js.native
+  sealed trait cos
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait data extends js.Object
@@ -103,6 +219,10 @@ object mapboxDashGlLibStrings {
   sealed trait dblclick extends js.Object
   
   @js.native
+  sealed trait downcase
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait drag extends js.Object
   
   @js.native
@@ -112,10 +232,18 @@ object mapboxDashGlLibStrings {
   sealed trait dragstart extends js.Object
   
   @js.native
+  sealed trait e
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
   sealed trait exponential extends js.Object
+  
+  @js.native
+  sealed trait `feature-state`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait fill extends js.Object
@@ -124,7 +252,27 @@ object mapboxDashGlLibStrings {
   sealed trait `fill-extrusion` extends js.Object
   
   @js.native
+  sealed trait floor
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait format
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait geojson extends js.Object
+  
+  @js.native
+  sealed trait `geometry-type`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait get
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait has
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait hcl extends js.Object
@@ -133,10 +281,18 @@ object mapboxDashGlLibStrings {
   sealed trait heatmap extends js.Object
   
   @js.native
+  sealed trait `heatmap-density`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait height extends js.Object
   
   @js.native
   sealed trait hillshade extends js.Object
+  
+  @js.native
+  sealed trait id
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait identity extends js.Object
@@ -151,13 +307,38 @@ object mapboxDashGlLibStrings {
   sealed trait include extends js.Object
   
   @js.native
+  sealed trait interpolate
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `interpolate-hcl`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `interpolate-lab`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait interval extends js.Object
+  
+  @js.native
+  sealed trait `is-supported-script`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait lab extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+  
+  @js.native
+  sealed trait length
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait let
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait line extends js.Object
@@ -166,10 +347,34 @@ object mapboxDashGlLibStrings {
   sealed trait `line-center` extends js.Object
   
   @js.native
+  sealed trait `line-progress`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait linear extends js.Object
   
   @js.native
+  sealed trait literal
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait ln
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait ln2
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait load extends js.Object
+  
+  @js.native
+  sealed trait log10
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait log2
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait lowercase extends js.Object
@@ -181,10 +386,22 @@ object mapboxDashGlLibStrings {
   sealed trait mapbox extends js.Object
   
   @js.native
+  sealed trait `match`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait max
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait metadata extends js.Object
   
   @js.native
   sealed trait metric extends js.Object
+  
+  @js.native
+  sealed trait min
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait miter extends js.Object
@@ -229,6 +446,18 @@ object mapboxDashGlLibStrings {
   sealed trait none extends js.Object
   
   @js.native
+  sealed trait number
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `object`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait pi
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait pitch extends js.Object
   
   @js.native
@@ -239,6 +468,10 @@ object mapboxDashGlLibStrings {
   
   @js.native
   sealed trait point extends js.Object
+  
+  @js.native
+  sealed trait properties
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait raster extends js.Object
@@ -256,10 +489,20 @@ object mapboxDashGlLibStrings {
   sealed trait resize extends js.Object
   
   @js.native
-  sealed trait rgb extends js.Object
+  sealed trait `resolved-locale`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait rgb
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait rgba
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait right
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
   
   @js.native
   sealed trait rotate extends js.Object
@@ -271,10 +514,15 @@ object mapboxDashGlLibStrings {
   sealed trait rotatestart extends js.Object
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait `same-origin` extends js.Object
+  
+  @js.native
+  sealed trait sin
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait source extends js.Object
@@ -286,7 +534,19 @@ object mapboxDashGlLibStrings {
   sealed trait sourcedataloading extends js.Object
   
   @js.native
+  sealed trait sqrt
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait square extends js.Object
+  
+  @js.native
+  sealed trait step
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait string
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait style extends js.Object
@@ -301,6 +561,10 @@ object mapboxDashGlLibStrings {
   sealed trait symbol extends js.Object
   
   @js.native
+  sealed trait tan
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait terrarium extends js.Object
   
   @js.native
@@ -310,13 +574,32 @@ object mapboxDashGlLibStrings {
   sealed trait tms extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait `to-boolean`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
-  sealed trait `top-left` extends js.Object
+  sealed trait `to-color`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
-  sealed trait `top-right` extends js.Object
+  sealed trait `to-number`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait `to-string`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait top
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+  
+  @js.native
+  sealed trait `top-left`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
+  
+  @js.native
+  sealed trait `top-right`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Anchor
   
   @js.native
   sealed trait touchcancel extends js.Object
@@ -331,7 +614,19 @@ object mapboxDashGlLibStrings {
   sealed trait touchstart extends js.Object
   
   @js.native
+  sealed trait typeof
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
+  sealed trait upcase
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
+  
+  @js.native
   sealed trait uppercase extends js.Object
+  
+  @js.native
+  sealed trait `var`
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait vector extends js.Object
@@ -364,7 +659,8 @@ object mapboxDashGlLibStrings {
   sealed trait xyz extends js.Object
   
   @js.native
-  sealed trait zoom extends js.Object
+  sealed trait zoom
+    extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.ExpressionName
   
   @js.native
   sealed trait zoomend extends js.Object
@@ -372,6 +668,28 @@ object mapboxDashGlLibStrings {
   @js.native
   sealed trait zoomstart extends js.Object
   
+  @scala.inline
+  def `!=`: `!=` = "!=".asInstanceOf[`!=`]
+  @scala.inline
+  def `%`: `%` = "%".asInstanceOf[`%`]
+  @scala.inline
+  def `*`: `*` = "*".asInstanceOf[`*`]
+  @scala.inline
+  def `+`: `+` = "+".asInstanceOf[`+`]
+  @scala.inline
+  def `-`: `-` = "-".asInstanceOf[`-`]
+  @scala.inline
+  def `/`: `/` = "/".asInstanceOf[`/`]
+  @scala.inline
+  def `<`: `<` = "<".asInstanceOf[`<`]
+  @scala.inline
+  def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  @scala.inline
+  def `==`: `==` = "==".asInstanceOf[`==`]
+  @scala.inline
+  def `>`: `>` = ">".asInstanceOf[`>`]
+  @scala.inline
+  def `>=`: `>=` = ">=".asInstanceOf[`>=`]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
@@ -395,11 +713,31 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   @scala.inline
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
+  @scala.inline
+  def abs: abs = "abs".asInstanceOf[abs]
+  @scala.inline
+  def acos: acos = "acos".asInstanceOf[acos]
+  @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
+  def array: array = "array".asInstanceOf[array]
+  @scala.inline
+  def asin: asin = "asin".asInstanceOf[asin]
+  @scala.inline
+  def at: at = "at".asInstanceOf[at]
+  @scala.inline
+  def atan: atan = "atan".asInstanceOf[atan]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def background: background = "background".asInstanceOf[background]
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
+  @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   @scala.inline
@@ -419,7 +757,11 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   @scala.inline
+  def `case`: `case` = "case".asInstanceOf[`case`]
+  @scala.inline
   def categorical: categorical = "categorical".asInstanceOf[categorical]
+  @scala.inline
+  def ceil: ceil = "ceil".asInstanceOf[ceil]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
@@ -427,9 +769,15 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
+  def collator: collator = "collator".asInstanceOf[collator]
+  @scala.inline
+  def concat: concat = "concat".asInstanceOf[concat]
+  @scala.inline
   def content: content = "content".asInstanceOf[content]
   @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
+  @scala.inline
+  def cos: cos = "cos".asInstanceOf[cos]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
@@ -437,29 +785,49 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   @scala.inline
+  def downcase: downcase = "downcase".asInstanceOf[downcase]
+  @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
   @scala.inline
   def dragend: dragend = "dragend".asInstanceOf[dragend]
   @scala.inline
   def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
   @scala.inline
+  def e: e = "e".asInstanceOf[e]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def exponential: exponential = "exponential".asInstanceOf[exponential]
+  @scala.inline
+  def `feature-state`: `feature-state` = "feature-state".asInstanceOf[`feature-state`]
   @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
   @scala.inline
   def `fill-extrusion`: `fill-extrusion` = "fill-extrusion".asInstanceOf[`fill-extrusion`]
   @scala.inline
+  def floor: floor = "floor".asInstanceOf[floor]
+  @scala.inline
+  def format: format = "format".asInstanceOf[format]
+  @scala.inline
   def geojson: geojson = "geojson".asInstanceOf[geojson]
+  @scala.inline
+  def `geometry-type`: `geometry-type` = "geometry-type".asInstanceOf[`geometry-type`]
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  @scala.inline
+  def has: has = "has".asInstanceOf[has]
   @scala.inline
   def hcl: hcl = "hcl".asInstanceOf[hcl]
   @scala.inline
   def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
   @scala.inline
+  def `heatmap-density`: `heatmap-density` = "heatmap-density".asInstanceOf[`heatmap-density`]
+  @scala.inline
   def height: height = "height".asInstanceOf[height]
   @scala.inline
   def hillshade: hillshade = "hillshade".asInstanceOf[hillshade]
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
   @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   @scala.inline
@@ -469,19 +837,43 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def include: include = "include".asInstanceOf[include]
   @scala.inline
+  def interpolate: interpolate = "interpolate".asInstanceOf[interpolate]
+  @scala.inline
+  def `interpolate-hcl`: `interpolate-hcl` = "interpolate-hcl".asInstanceOf[`interpolate-hcl`]
+  @scala.inline
+  def `interpolate-lab`: `interpolate-lab` = "interpolate-lab".asInstanceOf[`interpolate-lab`]
+  @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
+  @scala.inline
+  def `is-supported-script`: `is-supported-script` = "is-supported-script".asInstanceOf[`is-supported-script`]
   @scala.inline
   def lab: lab = "lab".asInstanceOf[lab]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
+  def length: length = "length".asInstanceOf[length]
+  @scala.inline
+  def let: let = "let".asInstanceOf[let]
+  @scala.inline
   def line: line = "line".asInstanceOf[line]
   @scala.inline
   def `line-center`: `line-center` = "line-center".asInstanceOf[`line-center`]
   @scala.inline
+  def `line-progress`: `line-progress` = "line-progress".asInstanceOf[`line-progress`]
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
+  def literal: literal = "literal".asInstanceOf[literal]
+  @scala.inline
+  def ln: ln = "ln".asInstanceOf[ln]
+  @scala.inline
+  def ln2: ln2 = "ln2".asInstanceOf[ln2]
+  @scala.inline
   def load: load = "load".asInstanceOf[load]
+  @scala.inline
+  def log10: log10 = "log10".asInstanceOf[log10]
+  @scala.inline
+  def log2: log2 = "log2".asInstanceOf[log2]
   @scala.inline
   def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
   @scala.inline
@@ -489,9 +881,15 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def mapbox: mapbox = "mapbox".asInstanceOf[mapbox]
   @scala.inline
+  def `match`: `match` = "match".asInstanceOf[`match`]
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
   def metric: metric = "metric".asInstanceOf[metric]
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   @scala.inline
@@ -521,6 +919,12 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def number: number = "number".asInstanceOf[number]
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
+  def pi: pi = "pi".asInstanceOf[pi]
+  @scala.inline
   def pitch: pitch = "pitch".asInstanceOf[pitch]
   @scala.inline
   def pitchend: pitchend = "pitchend".asInstanceOf[pitchend]
@@ -528,6 +932,8 @@ object mapboxDashGlLibStrings {
   def pitchstart: pitchstart = "pitchstart".asInstanceOf[pitchstart]
   @scala.inline
   def point: point = "point".asInstanceOf[point]
+  @scala.inline
+  def properties: properties = "properties".asInstanceOf[properties]
   @scala.inline
   def raster: raster = "raster".asInstanceOf[raster]
   @scala.inline
@@ -539,7 +945,11 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline
+  def `resolved-locale`: `resolved-locale` = "resolved-locale".asInstanceOf[`resolved-locale`]
+  @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
+  @scala.inline
+  def rgba: rgba = "rgba".asInstanceOf[rgba]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
@@ -553,13 +963,21 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
   @scala.inline
+  def sin: sin = "sin".asInstanceOf[sin]
+  @scala.inline
   def source: source = "source".asInstanceOf[source]
   @scala.inline
   def sourcedata: sourcedata = "sourcedata".asInstanceOf[sourcedata]
   @scala.inline
   def sourcedataloading: sourcedataloading = "sourcedataloading".asInstanceOf[sourcedataloading]
   @scala.inline
+  def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
+  @scala.inline
   def square: square = "square".asInstanceOf[square]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
   @scala.inline
   def style: style = "style".asInstanceOf[style]
   @scala.inline
@@ -569,11 +987,21 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline
+  def tan: tan = "tan".asInstanceOf[tan]
+  @scala.inline
   def terrarium: terrarium = "terrarium".asInstanceOf[terrarium]
   @scala.inline
   def tiledataloading: tiledataloading = "tiledataloading".asInstanceOf[tiledataloading]
   @scala.inline
   def tms: tms = "tms".asInstanceOf[tms]
+  @scala.inline
+  def `to-boolean`: `to-boolean` = "to-boolean".asInstanceOf[`to-boolean`]
+  @scala.inline
+  def `to-color`: `to-color` = "to-color".asInstanceOf[`to-color`]
+  @scala.inline
+  def `to-number`: `to-number` = "to-number".asInstanceOf[`to-number`]
+  @scala.inline
+  def `to-string`: `to-string` = "to-string".asInstanceOf[`to-string`]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
@@ -589,7 +1017,13 @@ object mapboxDashGlLibStrings {
   @scala.inline
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   @scala.inline
+  def typeof: typeof = "typeof".asInstanceOf[typeof]
+  @scala.inline
+  def upcase: upcase = "upcase".asInstanceOf[upcase]
+  @scala.inline
   def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
+  @scala.inline
+  def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
   def vector: vector = "vector".asInstanceOf[vector]
   @scala.inline

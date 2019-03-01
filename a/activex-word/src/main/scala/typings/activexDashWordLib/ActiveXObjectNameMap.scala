@@ -10,3 +10,15 @@ trait ActiveXObjectNameMap extends js.Object {
   var `Word.Document`: activexDashWordLib.WordNs.Document
 }
 
+object ActiveXObjectNameMap {
+  @scala.inline
+  def apply(
+    `Word.Application`: activexDashWordLib.WordNs.Application,
+    `Word.Document`: activexDashWordLib.WordNs.Document
+  ): ActiveXObjectNameMap = {
+    val __obj = js.Dynamic.literal(`Word.Application` = `Word.Application`, `Word.Document` = `Word.Document`)
+  
+    __obj.asInstanceOf[ActiveXObjectNameMap]
+  }
+}
+

@@ -16,3 +16,12 @@ trait FilterOptions extends js.Object {
   var isExcludeMode: scala.Boolean
 }
 
+object FilterOptions {
+  @scala.inline
+  def apply(isExcludeMode: scala.Boolean): FilterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isExcludeMode")(isExcludeMode)
+    __obj.asInstanceOf[FilterOptions]
+  }
+}
+

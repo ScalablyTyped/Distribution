@@ -15,3 +15,19 @@ trait ListObjectsQuery extends js.Object {
   var prefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListObjectsQuery {
+  @scala.inline
+  def apply(
+    `max-keys`: java.lang.String | scala.Double,
+    delimiter: java.lang.String = null,
+    marker: java.lang.String = null,
+    prefix: java.lang.String = null
+  ): ListObjectsQuery = {
+    val __obj = js.Dynamic.literal(`max-keys` = `max-keys`.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[ListObjectsQuery]
+  }
+}
+

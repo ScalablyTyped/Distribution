@@ -14,3 +14,23 @@ trait AddToastPayload extends js.Object {
   var `type`: toastType
 }
 
+object AddToastPayload {
+  @scala.inline
+  def apply(
+    `type`: toastType,
+    id: java.lang.String = null,
+    message: java.lang.String = null,
+    options: BasicToastrOptions | LightToastrOptions = null,
+    position: positionType = null,
+    title: java.lang.String = null
+  ): AddToastPayload = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[AddToastPayload]
+  }
+}
+

@@ -10,3 +10,12 @@ trait numbers
   var PAGE_FACTOR: atMaterialSliderLib.atMaterialSliderLibNumbers.`4`
 }
 
+object numbers {
+  @scala.inline
+  def apply(PAGE_FACTOR: atMaterialSliderLib.atMaterialSliderLibNumbers.`4`): numbers = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PAGE_FACTOR")(PAGE_FACTOR)
+    __obj.asInstanceOf[numbers]
+  }
+}
+

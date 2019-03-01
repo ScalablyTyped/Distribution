@@ -20,3 +20,22 @@ trait StrictMessageListProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictMessageListProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    items: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[
+      semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageItemMod.MessageItemProps
+    ] = null
+  ): StrictMessageListProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[StrictMessageListProps]
+  }
+}
+

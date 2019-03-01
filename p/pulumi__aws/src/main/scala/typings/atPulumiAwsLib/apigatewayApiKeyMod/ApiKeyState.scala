@@ -40,3 +40,28 @@ trait ApiKeyState extends js.Object {
   val value: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApiKeyState {
+  @scala.inline
+  def apply(
+    createdDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    lastUpdatedDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    stageKeys: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_RestApiStageName]]
+    ] = null,
+    value: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ApiKeyState = {
+    val __obj = js.Dynamic.literal()
+    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (stageKeys != null) __obj.updateDynamic("stageKeys")(stageKeys.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApiKeyState]
+  }
+}
+

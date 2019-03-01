@@ -16,3 +16,13 @@ trait StackedHeaderRowsStackedHeaderColumn extends js.Object {
   var headerText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StackedHeaderRowsStackedHeaderColumn {
+  @scala.inline
+  def apply(column: java.lang.String = null, headerText: java.lang.String = null): StackedHeaderRowsStackedHeaderColumn = {
+    val __obj = js.Dynamic.literal()
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    __obj.asInstanceOf[StackedHeaderRowsStackedHeaderColumn]
+  }
+}
+

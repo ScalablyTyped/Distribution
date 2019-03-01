@@ -62,3 +62,36 @@ trait StringifyOpts extends js.Object {
   var rowDelimiter: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StringifyOpts {
+  @scala.inline
+  def apply(
+    columns: org.scalablytyped.runtime.StringDictionary[java.lang.String] | js.Array[java.lang.String] = null,
+    delimiter: java.lang.String = null,
+    eof: js.UndefOr[scala.Boolean] = js.undefined,
+    escape: js.UndefOr[scala.Boolean] = js.undefined,
+    formatters: FormatterOpts = null,
+    header: js.UndefOr[scala.Boolean] = js.undefined,
+    lineBreaks: java.lang.String = null,
+    quote: java.lang.String = null,
+    quoted: js.UndefOr[scala.Boolean] = js.undefined,
+    quotedEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    quotedString: js.UndefOr[scala.Boolean] = js.undefined,
+    rowDelimiter: java.lang.String = null
+  ): StringifyOpts = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (!js.isUndefined(eof)) __obj.updateDynamic("eof")(eof)
+    if (!js.isUndefined(escape)) __obj.updateDynamic("escape")(escape)
+    if (formatters != null) __obj.updateDynamic("formatters")(formatters)
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
+    if (lineBreaks != null) __obj.updateDynamic("lineBreaks")(lineBreaks)
+    if (quote != null) __obj.updateDynamic("quote")(quote)
+    if (!js.isUndefined(quoted)) __obj.updateDynamic("quoted")(quoted)
+    if (!js.isUndefined(quotedEmpty)) __obj.updateDynamic("quotedEmpty")(quotedEmpty)
+    if (!js.isUndefined(quotedString)) __obj.updateDynamic("quotedString")(quotedString)
+    if (rowDelimiter != null) __obj.updateDynamic("rowDelimiter")(rowDelimiter)
+    __obj.asInstanceOf[StringifyOpts]
+  }
+}
+

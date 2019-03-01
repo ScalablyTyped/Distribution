@@ -123,3 +123,70 @@ trait FancytreeEvents extends js.Object {
   ] = js.undefined
 }
 
+object FancytreeEvents {
+  @scala.inline
+  def apply(
+    activate: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    beforeActivate: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Boolean] = null,
+    beforeExpand: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Boolean] = null,
+    beforeSelect: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Boolean] = null,
+    blur: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    blurTree: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    click: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Boolean] = null,
+    collapse: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    create: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    createNode: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    dblclick: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Boolean] = null,
+    deactivate: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    expand: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    focus: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    focusTree: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    init: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    keydown: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Boolean] = null,
+    keypress: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    lazyLoad: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    loadChildren: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    loadError: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Boolean] = null,
+    postProcess: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    removeNode: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    renderColumns: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    renderNode: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    renderTitle: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    restore: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null,
+    rtl: js.UndefOr[scala.Boolean] = js.undefined,
+    select: js.Function2[/* event */ jqueryLib.JQueryEventObject, /* data */ EventData, scala.Unit] = null
+  ): FancytreeEvents = {
+    val __obj = js.Dynamic.literal()
+    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(beforeActivate)
+    if (beforeExpand != null) __obj.updateDynamic("beforeExpand")(beforeExpand)
+    if (beforeSelect != null) __obj.updateDynamic("beforeSelect")(beforeSelect)
+    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (blurTree != null) __obj.updateDynamic("blurTree")(blurTree)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (createNode != null) __obj.updateDynamic("createNode")(createNode)
+    if (dblclick != null) __obj.updateDynamic("dblclick")(dblclick)
+    if (deactivate != null) __obj.updateDynamic("deactivate")(deactivate)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (focusTree != null) __obj.updateDynamic("focusTree")(focusTree)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (keydown != null) __obj.updateDynamic("keydown")(keydown)
+    if (keypress != null) __obj.updateDynamic("keypress")(keypress)
+    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad)
+    if (loadChildren != null) __obj.updateDynamic("loadChildren")(loadChildren)
+    if (loadError != null) __obj.updateDynamic("loadError")(loadError)
+    if (postProcess != null) __obj.updateDynamic("postProcess")(postProcess)
+    if (removeNode != null) __obj.updateDynamic("removeNode")(removeNode)
+    if (renderColumns != null) __obj.updateDynamic("renderColumns")(renderColumns)
+    if (renderNode != null) __obj.updateDynamic("renderNode")(renderNode)
+    if (renderTitle != null) __obj.updateDynamic("renderTitle")(renderTitle)
+    if (restore != null) __obj.updateDynamic("restore")(restore)
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
+    if (select != null) __obj.updateDynamic("select")(select)
+    __obj.asInstanceOf[FancytreeEvents]
+  }
+}
+

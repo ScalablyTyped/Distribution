@@ -5,7 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CookiesConfig extends BaseConfig {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- keycloakDashConnectLib.keycloakDashConnectMod.KeycloakNs.Config because Already inherited */ trait CookiesConfig extends BaseConfig {
   var cookies: js.Any
+}
+
+object CookiesConfig {
+  @scala.inline
+  def apply(cookies: js.Any, scope: js.Any = null): CookiesConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cookies")(cookies)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[CookiesConfig]
+  }
 }
 

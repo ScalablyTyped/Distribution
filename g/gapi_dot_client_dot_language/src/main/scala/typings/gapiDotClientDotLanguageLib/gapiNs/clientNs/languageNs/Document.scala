@@ -33,3 +33,20 @@ trait Document extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    content: java.lang.String = null,
+    gcsContentUri: java.lang.String = null,
+    language: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Document = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (gcsContentUri != null) __obj.updateDynamic("gcsContentUri")(gcsContentUri)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Document]
+  }
+}
+

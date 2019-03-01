@@ -20,3 +20,13 @@ trait IAlternateStateData extends js.Object {
   var qStateName: java.lang.String
 }
 
+object IAlternateStateData {
+  @scala.inline
+  def apply(qFieldItems: js.Array[IBookmarkFieldItem], qStateName: java.lang.String): IAlternateStateData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFieldItems")(qFieldItems)
+    __obj.updateDynamic("qStateName")(qStateName)
+    __obj.asInstanceOf[IAlternateStateData]
+  }
+}
+

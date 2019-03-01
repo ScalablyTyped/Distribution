@@ -14,3 +14,18 @@ trait Layersummaries extends js.Object {
   var totalItems: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Layersummaries {
+  @scala.inline
+  def apply(
+    items: js.Array[Layersummary] = null,
+    kind: java.lang.String = null,
+    totalItems: scala.Int | scala.Double = null
+  ): Layersummaries = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Layersummaries]
+  }
+}
+

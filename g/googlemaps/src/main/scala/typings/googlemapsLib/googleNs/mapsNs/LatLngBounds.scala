@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
   * Constructs a rectangle from the points at its south-west and north-east
   * corners.
   */
-class LatLngBounds () extends js.Object {
+class LatLngBounds ()
+  extends googlemapsLib.googleNs.mapsNs.placesNs._LocationBias {
   def this(sw: LatLng) = this()
   def this(sw: LatLngLiteral) = this()
   def this(sw: LatLngLiteral, ne: LatLng) = this()

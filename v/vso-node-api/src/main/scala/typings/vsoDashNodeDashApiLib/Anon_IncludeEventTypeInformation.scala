@@ -13,3 +13,22 @@ trait Anon_IncludeEventTypeInformation extends js.Object {
   var none: scala.Double
 }
 
+object Anon_IncludeEventTypeInformation {
+  @scala.inline
+  def apply(
+    includeEventTypeInformation: scala.Double,
+    includeGroup: scala.Double,
+    includeUser: scala.Double,
+    includeUserAndGroup: scala.Double,
+    none: scala.Double
+  ): Anon_IncludeEventTypeInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("includeEventTypeInformation")(includeEventTypeInformation)
+    __obj.updateDynamic("includeGroup")(includeGroup)
+    __obj.updateDynamic("includeUser")(includeUser)
+    __obj.updateDynamic("includeUserAndGroup")(includeUserAndGroup)
+    __obj.updateDynamic("none")(none)
+    __obj.asInstanceOf[Anon_IncludeEventTypeInformation]
+  }
+}
+

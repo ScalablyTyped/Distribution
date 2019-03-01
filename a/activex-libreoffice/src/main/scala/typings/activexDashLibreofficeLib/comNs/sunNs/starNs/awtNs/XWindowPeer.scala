@@ -29,3 +29,36 @@ trait XWindowPeer
   def setPointer(Pointer: XPointer): scala.Unit
 }
 
+object XWindowPeer {
+  @scala.inline
+  def apply(
+    Toolkit: XToolkit,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getToolkit: js.Function0[XToolkit],
+    invalidate: js.Function1[scala.Double, scala.Unit],
+    invalidateRect: js.Function2[Rectangle, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setBackground: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
+    setPointer: js.Function1[XPointer, scala.Unit]
+  ): XWindowPeer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Toolkit")(Toolkit)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getToolkit")(getToolkit)
+    __obj.updateDynamic("invalidate")(invalidate)
+    __obj.updateDynamic("invalidateRect")(invalidateRect)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setBackground")(setBackground)
+    __obj.updateDynamic("setPointer")(setPointer)
+    __obj.asInstanceOf[XWindowPeer]
+  }
+}
+

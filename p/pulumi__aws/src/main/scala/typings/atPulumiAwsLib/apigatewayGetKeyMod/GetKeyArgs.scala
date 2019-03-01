@@ -12,3 +12,12 @@ trait GetKeyArgs extends js.Object {
   val id: java.lang.String
 }
 
+object GetKeyArgs {
+  @scala.inline
+  def apply(id: java.lang.String): GetKeyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[GetKeyArgs]
+  }
+}
+

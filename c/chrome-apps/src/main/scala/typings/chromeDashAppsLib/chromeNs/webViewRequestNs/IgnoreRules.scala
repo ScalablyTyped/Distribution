@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.webViewRequest.IgnoreRules")
 @js.native
-class IgnoreRules protected () extends js.Object {
+class IgnoreRules protected () extends OnRequestActions {
   def this(parameters: IgnoreRulesParams) = this()
   val instanceType: java.lang.String = js.native
   val typeGuard: chromeDashAppsLib.chromeDashAppsLibStrings.IgnoreRules = js.native

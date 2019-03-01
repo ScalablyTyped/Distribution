@@ -10,3 +10,13 @@ trait AdWordsReportRowIterator extends js.Object {
   def next(): AdWordsReportRow
 }
 
+object AdWordsReportRowIterator {
+  @scala.inline
+  def apply(hasNext: js.Function0[scala.Boolean], next: js.Function0[AdWordsReportRow]): AdWordsReportRowIterator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hasNext")(hasNext)
+    __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[AdWordsReportRowIterator]
+  }
+}
+

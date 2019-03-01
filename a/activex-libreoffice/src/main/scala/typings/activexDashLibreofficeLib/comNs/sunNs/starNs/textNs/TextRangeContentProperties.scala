@@ -36,3 +36,32 @@ trait TextRangeContentProperties extends js.Object {
   var TextTable: XTextTable
 }
 
+object TextRangeContentProperties {
+  @scala.inline
+  def apply(
+    Cell: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell,
+    DocumentIndex: XDocumentIndex,
+    DocumentIndexMark: XDocumentIndexMark,
+    Endnote: XFootnote,
+    Footnote: XFootnote,
+    NestedTextContent: XTextContent,
+    ReferenceMark: XTextContent,
+    TextFrame: XTextFrame,
+    TextSection: XTextSection,
+    TextTable: XTextTable
+  ): TextRangeContentProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cell")(Cell)
+    __obj.updateDynamic("DocumentIndex")(DocumentIndex)
+    __obj.updateDynamic("DocumentIndexMark")(DocumentIndexMark)
+    __obj.updateDynamic("Endnote")(Endnote)
+    __obj.updateDynamic("Footnote")(Footnote)
+    __obj.updateDynamic("NestedTextContent")(NestedTextContent)
+    __obj.updateDynamic("ReferenceMark")(ReferenceMark)
+    __obj.updateDynamic("TextFrame")(TextFrame)
+    __obj.updateDynamic("TextSection")(TextSection)
+    __obj.updateDynamic("TextTable")(TextTable)
+    __obj.asInstanceOf[TextRangeContentProperties]
+  }
+}
+

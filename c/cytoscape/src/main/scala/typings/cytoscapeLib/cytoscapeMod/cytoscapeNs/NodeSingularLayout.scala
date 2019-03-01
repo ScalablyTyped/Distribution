@@ -14,3 +14,12 @@ trait NodeSingularLayout extends js.Object {
   def layoutDimensions(options: LayoutDimensionOptions): cytoscapeLib.Anon_X
 }
 
+object NodeSingularLayout {
+  @scala.inline
+  def apply(layoutDimensions: js.Function1[LayoutDimensionOptions, cytoscapeLib.Anon_X]): NodeSingularLayout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("layoutDimensions")(layoutDimensions)
+    __obj.asInstanceOf[NodeSingularLayout]
+  }
+}
+

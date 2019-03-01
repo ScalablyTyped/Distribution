@@ -12,3 +12,13 @@ trait Options extends js.Object {
   var server: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(dryRun: js.UndefOr[scala.Boolean] = js.undefined, server: java.lang.String = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
+    if (server != null) __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[Options]
+  }
+}
+

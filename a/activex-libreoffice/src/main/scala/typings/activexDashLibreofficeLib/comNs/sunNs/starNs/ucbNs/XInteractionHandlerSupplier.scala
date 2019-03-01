@@ -18,3 +18,20 @@ trait XInteractionHandlerSupplier
   def hasInteractionHandler(): scala.Boolean
 }
 
+object XInteractionHandlerSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    hasInteractionHandler: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInteractionHandlerSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("hasInteractionHandler")(hasInteractionHandler)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XInteractionHandlerSupplier]
+  }
+}
+

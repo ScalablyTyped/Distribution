@@ -162,3 +162,63 @@ trait IgGridColumn
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgGridColumn {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridColumn
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    colSpan: scala.Int | scala.Double = null,
+    columnCssClass: java.lang.String = null,
+    columnIndex: scala.Int | scala.Double = null,
+    dataType: java.lang.String = null,
+    dateDisplayType: java.lang.String = null,
+    format: java.lang.String = null,
+    formatter: java.lang.String | js.Function = null,
+    formula: java.lang.String | js.Function = null,
+    group: js.Array[_] = null,
+    groupOptions: IgGridColumnGroupOptions = null,
+    headerCssClass: java.lang.String = null,
+    headerText: java.lang.String = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    mapper: java.lang.String | js.Function = null,
+    navigationIndex: scala.Int | scala.Double = null,
+    rowIndex: scala.Int | scala.Double = null,
+    rowSpan: scala.Int | scala.Double = null,
+    rowspan: scala.Int | scala.Double = null,
+    template: java.lang.String = null,
+    unbound: js.UndefOr[scala.Boolean] = js.undefined,
+    unboundValues: js.Array[_] = null,
+    width: java.lang.String | scala.Double = null
+  ): IgGridColumn = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
+    if (columnCssClass != null) __obj.updateDynamic("columnCssClass")(columnCssClass)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (dateDisplayType != null) __obj.updateDynamic("dateDisplayType")(dateDisplayType)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (groupOptions != null) __obj.updateDynamic("groupOptions")(groupOptions)
+    if (headerCssClass != null) __obj.updateDynamic("headerCssClass")(headerCssClass)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (mapper != null) __obj.updateDynamic("mapper")(mapper.asInstanceOf[js.Any])
+    if (navigationIndex != null) __obj.updateDynamic("navigationIndex")(navigationIndex.asInstanceOf[js.Any])
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (rowspan != null) __obj.updateDynamic("rowspan")(rowspan.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(unbound)) __obj.updateDynamic("unbound")(unbound)
+    if (unboundValues != null) __obj.updateDynamic("unboundValues")(unboundValues)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgGridColumn]
+  }
+}
+

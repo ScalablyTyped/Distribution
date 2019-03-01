@@ -17,3 +17,12 @@ trait StreetViewControlOptions extends js.Object {
   var position: js.UndefOr[ControlPosition] = js.undefined
 }
 
+object StreetViewControlOptions {
+  @scala.inline
+  def apply(position: ControlPosition = null): StreetViewControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[StreetViewControlOptions]
+  }
+}
+

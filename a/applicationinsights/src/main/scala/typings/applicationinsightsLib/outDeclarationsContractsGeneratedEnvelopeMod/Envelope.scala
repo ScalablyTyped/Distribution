@@ -43,3 +43,28 @@ trait Envelope extends js.Object {
   var ver: scala.Double
 }
 
+object Envelope {
+  @scala.inline
+  def apply(
+    data: applicationinsightsLib.outDeclarationsContractsGeneratedBaseMod.namespaced,
+    iKey: java.lang.String,
+    name: java.lang.String,
+    sampleRate: scala.Double,
+    seq: java.lang.String,
+    tags: js.Any,
+    time: java.lang.String,
+    ver: scala.Double
+  ): Envelope = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("iKey")(iKey)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("sampleRate")(sampleRate)
+    __obj.updateDynamic("seq")(seq)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("ver")(ver)
+    __obj.asInstanceOf[Envelope]
+  }
+}
+

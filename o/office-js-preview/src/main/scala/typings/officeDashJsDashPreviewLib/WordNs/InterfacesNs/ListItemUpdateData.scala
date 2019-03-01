@@ -16,3 +16,12 @@ trait ListItemUpdateData extends js.Object {
   var level: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListItemUpdateData {
+  @scala.inline
+  def apply(level: scala.Int | scala.Double = null): ListItemUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListItemUpdateData]
+  }
+}
+

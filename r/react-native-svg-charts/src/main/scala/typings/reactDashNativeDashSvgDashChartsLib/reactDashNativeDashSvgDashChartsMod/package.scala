@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashSvgDashChartsMod {
   type AccessorFunction[T, U] = js.Function1[/* props */ reactDashNativeDashSvgDashChartsLib.Anon_Index[T], U]
-  type GridDirection = reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsLibStrings.VERTICAL | reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsLibStrings.HORIZONTAL | reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsLibStrings.BOTH
   type OffsetFunction = js.Function2[
     /* series */ d3DashShapeLib.d3DashShapeMod.Series[js.Any, js.Any], 
     /* order */ js.Array[scala.Double], 

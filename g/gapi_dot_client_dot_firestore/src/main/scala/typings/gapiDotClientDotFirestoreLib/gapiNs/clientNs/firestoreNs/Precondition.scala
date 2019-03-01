@@ -18,3 +18,13 @@ trait Precondition extends js.Object {
   var updateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Precondition {
+  @scala.inline
+  def apply(exists: js.UndefOr[scala.Boolean] = js.undefined, updateTime: java.lang.String = null): Precondition = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(exists)) __obj.updateDynamic("exists")(exists)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    __obj.asInstanceOf[Precondition]
+  }
+}
+

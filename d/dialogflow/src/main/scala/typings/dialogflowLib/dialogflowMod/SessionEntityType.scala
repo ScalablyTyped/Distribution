@@ -11,3 +11,14 @@ trait SessionEntityType extends js.Object {
   var name: java.lang.String
 }
 
+object SessionEntityType {
+  @scala.inline
+  def apply(entities: js.Array[Entity], entityOverrideMode: java.lang.String, name: java.lang.String): SessionEntityType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entities")(entities)
+    __obj.updateDynamic("entityOverrideMode")(entityOverrideMode)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[SessionEntityType]
+  }
+}
+

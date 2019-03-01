@@ -15,3 +15,12 @@ trait ConfirmResult extends js.Object {
   var confirmed: scala.Boolean
 }
 
+object ConfirmResult {
+  @scala.inline
+  def apply(confirmed: scala.Boolean): ConfirmResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("confirmed")(confirmed)
+    __obj.asInstanceOf[ConfirmResult]
+  }
+}
+

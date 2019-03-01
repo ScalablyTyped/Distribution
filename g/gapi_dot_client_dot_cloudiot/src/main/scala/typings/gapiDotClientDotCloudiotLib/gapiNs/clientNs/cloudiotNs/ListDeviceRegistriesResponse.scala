@@ -16,3 +16,13 @@ trait ListDeviceRegistriesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListDeviceRegistriesResponse {
+  @scala.inline
+  def apply(deviceRegistries: js.Array[DeviceRegistry] = null, nextPageToken: java.lang.String = null): ListDeviceRegistriesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (deviceRegistries != null) __obj.updateDynamic("deviceRegistries")(deviceRegistries)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListDeviceRegistriesResponse]
+  }
+}
+

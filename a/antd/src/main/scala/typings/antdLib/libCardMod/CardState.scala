@@ -9,3 +9,12 @@ trait CardState extends js.Object {
   var widerPadding: scala.Boolean
 }
 
+object CardState {
+  @scala.inline
+  def apply(widerPadding: scala.Boolean): CardState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("widerPadding")(widerPadding)
+    __obj.asInstanceOf[CardState]
+  }
+}
+

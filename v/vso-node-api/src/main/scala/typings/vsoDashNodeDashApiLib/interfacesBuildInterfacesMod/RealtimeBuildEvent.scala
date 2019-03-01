@@ -9,3 +9,12 @@ trait RealtimeBuildEvent extends js.Object {
   var buildId: scala.Double
 }
 
+object RealtimeBuildEvent {
+  @scala.inline
+  def apply(buildId: scala.Double): RealtimeBuildEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildId")(buildId)
+    __obj.asInstanceOf[RealtimeBuildEvent]
+  }
+}
+

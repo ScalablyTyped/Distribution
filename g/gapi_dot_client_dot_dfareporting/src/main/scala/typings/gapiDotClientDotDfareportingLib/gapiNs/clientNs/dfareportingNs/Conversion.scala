@@ -50,3 +50,40 @@ trait Conversion extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Conversion {
+  @scala.inline
+  def apply(
+    childDirectedTreatment: js.UndefOr[scala.Boolean] = js.undefined,
+    customVariables: js.Array[CustomFloodlightVariable] = null,
+    encryptedUserId: java.lang.String = null,
+    encryptedUserIdCandidates: js.Array[java.lang.String] = null,
+    floodlightActivityId: java.lang.String = null,
+    floodlightConfigurationId: java.lang.String = null,
+    gclid: java.lang.String = null,
+    kind: java.lang.String = null,
+    limitAdTracking: js.UndefOr[scala.Boolean] = js.undefined,
+    mobileDeviceId: java.lang.String = null,
+    ordinal: java.lang.String = null,
+    quantity: java.lang.String = null,
+    timestampMicros: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): Conversion = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(childDirectedTreatment)) __obj.updateDynamic("childDirectedTreatment")(childDirectedTreatment)
+    if (customVariables != null) __obj.updateDynamic("customVariables")(customVariables)
+    if (encryptedUserId != null) __obj.updateDynamic("encryptedUserId")(encryptedUserId)
+    if (encryptedUserIdCandidates != null) __obj.updateDynamic("encryptedUserIdCandidates")(encryptedUserIdCandidates)
+    if (floodlightActivityId != null) __obj.updateDynamic("floodlightActivityId")(floodlightActivityId)
+    if (floodlightConfigurationId != null) __obj.updateDynamic("floodlightConfigurationId")(floodlightConfigurationId)
+    if (gclid != null) __obj.updateDynamic("gclid")(gclid)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(limitAdTracking)) __obj.updateDynamic("limitAdTracking")(limitAdTracking)
+    if (mobileDeviceId != null) __obj.updateDynamic("mobileDeviceId")(mobileDeviceId)
+    if (ordinal != null) __obj.updateDynamic("ordinal")(ordinal)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
+    if (timestampMicros != null) __obj.updateDynamic("timestampMicros")(timestampMicros)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Conversion]
+  }
+}
+

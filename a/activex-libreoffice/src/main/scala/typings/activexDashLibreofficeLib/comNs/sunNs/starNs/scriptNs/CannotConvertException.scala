@@ -16,3 +16,22 @@ trait CannotConvertException
   var Reason: scala.Double
 }
 
+object CannotConvertException {
+  @scala.inline
+  def apply(
+    ArgumentIndex: scala.Double,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    DestinationTypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    Message: java.lang.String,
+    Reason: scala.Double
+  ): CannotConvertException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ArgumentIndex")(ArgumentIndex)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("DestinationTypeClass")(DestinationTypeClass)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("Reason")(Reason)
+    __obj.asInstanceOf[CannotConvertException]
+  }
+}
+

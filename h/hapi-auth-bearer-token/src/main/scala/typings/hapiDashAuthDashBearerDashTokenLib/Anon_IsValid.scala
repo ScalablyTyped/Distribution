@@ -9,3 +9,12 @@ trait Anon_IsValid extends js.Object {
   var isValid: scala.Boolean
 }
 
+object Anon_IsValid {
+  @scala.inline
+  def apply(isValid: scala.Boolean): Anon_IsValid = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.asInstanceOf[Anon_IsValid]
+  }
+}
+

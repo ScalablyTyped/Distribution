@@ -11,3 +11,18 @@ trait BrokenDownURI extends js.Object {
   var secure: js.UndefOr[sccDashBrokerDashClientLib.sccDashBrokerDashClientLibNumbers.`true`] = js.undefined
 }
 
+object BrokenDownURI {
+  @scala.inline
+  def apply(
+    hostname: java.lang.String,
+    port: java.lang.String = null,
+    secure: sccDashBrokerDashClientLib.sccDashBrokerDashClientLibNumbers.`true` = null
+  ): BrokenDownURI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hostname")(hostname)
+    if (port != null) __obj.updateDynamic("port")(port)
+    if (secure != null) __obj.updateDynamic("secure")(secure)
+    __obj.asInstanceOf[BrokenDownURI]
+  }
+}
+

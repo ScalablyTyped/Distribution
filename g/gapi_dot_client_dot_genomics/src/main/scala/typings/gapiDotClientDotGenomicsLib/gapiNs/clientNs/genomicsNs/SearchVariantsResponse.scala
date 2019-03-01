@@ -16,3 +16,13 @@ trait SearchVariantsResponse extends js.Object {
   var variants: js.UndefOr[js.Array[Variant]] = js.undefined
 }
 
+object SearchVariantsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, variants: js.Array[Variant] = null): SearchVariantsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (variants != null) __obj.updateDynamic("variants")(variants)
+    __obj.asInstanceOf[SearchVariantsResponse]
+  }
+}
+

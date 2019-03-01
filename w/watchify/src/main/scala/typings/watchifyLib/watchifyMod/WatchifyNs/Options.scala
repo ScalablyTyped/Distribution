@@ -27,3 +27,20 @@ trait Options extends js.Object {
   var poll: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    delay: scala.Int | scala.Double = null,
+    ignoreWatch: scala.Boolean | java.lang.String | stdLib.RegExp | (js.Function1[/* repeated */ js.Any, scala.Boolean]) | (js.Array[
+      java.lang.String | stdLib.RegExp | (js.Function1[/* repeated */ _, scala.Boolean])
+    ]) = null,
+    poll: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (ignoreWatch != null) __obj.updateDynamic("ignoreWatch")(ignoreWatch.asInstanceOf[js.Any])
+    if (poll != null) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -158,3 +158,50 @@ trait XLayerHandler
   def startLayer(): scala.Unit
 }
 
+object XLayerHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addOrReplaceNode: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    addOrReplaceNodeFromTemplate: js.Function3[java.lang.String, TemplateIdentifier, scala.Double, scala.Unit],
+    addProperty: js.Function3[java.lang.String, scala.Double, activexDashLibreofficeLib.`type`, scala.Unit],
+    addPropertyWithValue: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
+    dropNode: js.Function1[java.lang.String, scala.Unit],
+    endLayer: js.Function0[scala.Unit],
+    endNode: js.Function0[scala.Unit],
+    endProperty: js.Function0[scala.Unit],
+    overrideNode: js.Function3[java.lang.String, scala.Double, scala.Boolean, scala.Unit],
+    overrideProperty: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.`type`, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPropertyValue: js.Function1[js.Any, scala.Unit],
+    setPropertyValueForLocale: js.Function2[js.Any, java.lang.String, scala.Unit],
+    startLayer: js.Function0[scala.Unit]
+  ): XLayerHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addOrReplaceNode")(addOrReplaceNode)
+    __obj.updateDynamic("addOrReplaceNodeFromTemplate")(addOrReplaceNodeFromTemplate)
+    __obj.updateDynamic("addProperty")(addProperty)
+    __obj.updateDynamic("addPropertyWithValue")(addPropertyWithValue)
+    __obj.updateDynamic("dropNode")(dropNode)
+    __obj.updateDynamic("endLayer")(endLayer)
+    __obj.updateDynamic("endNode")(endNode)
+    __obj.updateDynamic("endProperty")(endProperty)
+    __obj.updateDynamic("overrideNode")(overrideNode)
+    __obj.updateDynamic("overrideProperty")(overrideProperty)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setPropertyValueForLocale")(setPropertyValueForLocale)
+    __obj.updateDynamic("startLayer")(startLayer)
+    __obj.asInstanceOf[XLayerHandler]
+  }
+}
+

@@ -24,3 +24,18 @@ trait QueryTestablePermissionsRequest extends js.Object {
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QueryTestablePermissionsRequest {
+  @scala.inline
+  def apply(
+    fullResourceName: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null
+  ): QueryTestablePermissionsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fullResourceName != null) __obj.updateDynamic("fullResourceName")(fullResourceName)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    __obj.asInstanceOf[QueryTestablePermissionsRequest]
+  }
+}
+

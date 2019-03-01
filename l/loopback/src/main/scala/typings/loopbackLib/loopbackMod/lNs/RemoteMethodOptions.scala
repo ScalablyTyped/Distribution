@@ -59,3 +59,24 @@ trait RemoteMethodOptions extends js.Object {
   var returns: js.UndefOr[RemoteMethodArgument] = js.undefined
 }
 
+object RemoteMethodOptions {
+  @scala.inline
+  def apply(
+    accepts: js.Array[RemoteMethodArgument] = null,
+    description: java.lang.String | js.Array[java.lang.String] = null,
+    http: RemoteHttpOptions = null,
+    isStatic: js.UndefOr[scala.Boolean] = js.undefined,
+    notes: java.lang.String | js.Array[java.lang.String] = null,
+    returns: RemoteMethodArgument = null
+  ): RemoteMethodOptions = {
+    val __obj = js.Dynamic.literal()
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (http != null) __obj.updateDynamic("http")(http)
+    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic)
+    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
+    if (returns != null) __obj.updateDynamic("returns")(returns)
+    __obj.asInstanceOf[RemoteMethodOptions]
+  }
+}
+

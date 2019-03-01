@@ -12,3 +12,13 @@ trait DiskTypesScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object DiskTypesScopedList {
+  @scala.inline
+  def apply(diskTypes: js.Array[DiskType] = null, warning: gapiDotClientDotComputeLib.Anon_Code = null): DiskTypesScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (diskTypes != null) __obj.updateDynamic("diskTypes")(diskTypes)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[DiskTypesScopedList]
+  }
+}
+

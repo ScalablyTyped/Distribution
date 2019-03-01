@@ -82,3 +82,62 @@ trait Anon_AccesstokenAddress extends js.Object {
   var view: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccesstokenAddress {
+  @scala.inline
+  def apply(
+    companyId: java.lang.String,
+    `$.xgafv`: java.lang.String = null,
+    access_token: java.lang.String = null,
+    address: java.lang.String = null,
+    alt: java.lang.String = null,
+    bearer_token: java.lang.String = null,
+    callback: java.lang.String = null,
+    currencyCode: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    orderBy: java.lang.String = null,
+    pp: js.UndefOr[scala.Boolean] = js.undefined,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    `requestMetadata.experimentIds`: java.lang.String = null,
+    `requestMetadata.locale`: java.lang.String = null,
+    `requestMetadata.partnersSessionId`: java.lang.String = null,
+    `requestMetadata.trafficSource.trafficSourceId`: java.lang.String = null,
+    `requestMetadata.trafficSource.trafficSubId`: java.lang.String = null,
+    `requestMetadata.userOverrides.ipAddress`: java.lang.String = null,
+    `requestMetadata.userOverrides.userId`: java.lang.String = null,
+    uploadType: java.lang.String = null,
+    upload_protocol: java.lang.String = null,
+    view: java.lang.String = null
+  ): Anon_AccesstokenAddress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("companyId")(companyId)
+    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (bearer_token != null) __obj.updateDynamic("bearer_token")(bearer_token)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (`requestMetadata.experimentIds` != null) __obj.updateDynamic("requestMetadata.experimentIds")(`requestMetadata.experimentIds`)
+    if (`requestMetadata.locale` != null) __obj.updateDynamic("requestMetadata.locale")(`requestMetadata.locale`)
+    if (`requestMetadata.partnersSessionId` != null) __obj.updateDynamic("requestMetadata.partnersSessionId")(`requestMetadata.partnersSessionId`)
+    if (`requestMetadata.trafficSource.trafficSourceId` != null) __obj.updateDynamic("requestMetadata.trafficSource.trafficSourceId")(`requestMetadata.trafficSource.trafficSourceId`)
+    if (`requestMetadata.trafficSource.trafficSubId` != null) __obj.updateDynamic("requestMetadata.trafficSource.trafficSubId")(`requestMetadata.trafficSource.trafficSubId`)
+    if (`requestMetadata.userOverrides.ipAddress` != null) __obj.updateDynamic("requestMetadata.userOverrides.ipAddress")(`requestMetadata.userOverrides.ipAddress`)
+    if (`requestMetadata.userOverrides.userId` != null) __obj.updateDynamic("requestMetadata.userOverrides.userId")(`requestMetadata.userOverrides.userId`)
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType)
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[Anon_AccesstokenAddress]
+  }
+}
+

@@ -21,3 +21,18 @@ trait GoogleRpc_Status extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleRpc_Status {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    details: js.Array[stdLib.Record[java.lang.String, _]] = null,
+    message: java.lang.String = null
+  ): GoogleRpc_Status = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[GoogleRpc_Status]
+  }
+}
+

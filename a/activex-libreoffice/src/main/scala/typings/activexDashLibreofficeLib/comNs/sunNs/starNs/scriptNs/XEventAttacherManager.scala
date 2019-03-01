@@ -113,3 +113,53 @@ trait XEventAttacherManager
   def revokeScriptEvents(nIndex: scala.Double): scala.Unit
 }
 
+object XEventAttacherManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addScriptListener: js.Function1[XScriptListener, scala.Unit],
+    attach: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      js.Any, 
+      scala.Unit
+    ],
+    detach: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Unit
+    ],
+    getScriptEvents: js.Function1[scala.Double, activexDashInteropLib.SafeArray[ScriptEventDescriptor]],
+    insertEntry: js.Function1[scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerScriptEvent: js.Function2[scala.Double, ScriptEventDescriptor, scala.Unit],
+    registerScriptEvents: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ScriptEventDescriptor], 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    removeEntry: js.Function1[scala.Double, scala.Unit],
+    removeScriptListener: js.Function1[XScriptListener, scala.Unit],
+    revokeScriptEvent: js.Function4[scala.Double, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    revokeScriptEvents: js.Function1[scala.Double, scala.Unit]
+  ): XEventAttacherManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addScriptListener")(addScriptListener)
+    __obj.updateDynamic("attach")(attach)
+    __obj.updateDynamic("detach")(detach)
+    __obj.updateDynamic("getScriptEvents")(getScriptEvents)
+    __obj.updateDynamic("insertEntry")(insertEntry)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerScriptEvent")(registerScriptEvent)
+    __obj.updateDynamic("registerScriptEvents")(registerScriptEvents)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEntry")(removeEntry)
+    __obj.updateDynamic("removeScriptListener")(removeScriptListener)
+    __obj.updateDynamic("revokeScriptEvent")(revokeScriptEvent)
+    __obj.updateDynamic("revokeScriptEvents")(revokeScriptEvents)
+    __obj.asInstanceOf[XEventAttacherManager]
+  }
+}
+

@@ -25,3 +25,26 @@ trait Uploads extends js.Object {
   var totalResults: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Uploads {
+  @scala.inline
+  def apply(
+    items: js.Array[Upload] = null,
+    itemsPerPage: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    nextLink: java.lang.String = null,
+    previousLink: java.lang.String = null,
+    startIndex: scala.Int | scala.Double = null,
+    totalResults: scala.Int | scala.Double = null
+  ): Uploads = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextLink != null) __obj.updateDynamic("nextLink")(nextLink)
+    if (previousLink != null) __obj.updateDynamic("previousLink")(previousLink)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Uploads]
+  }
+}
+

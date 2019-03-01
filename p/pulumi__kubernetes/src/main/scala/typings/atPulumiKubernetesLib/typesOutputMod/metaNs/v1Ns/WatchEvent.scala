@@ -20,3 +20,15 @@ trait WatchEvent extends js.Object {
   val `type`: java.lang.String
 }
 
+object WatchEvent {
+  @scala.inline
+  def apply(
+    `object`: atPulumiKubernetesLib.typesOutputMod.pkgNs.runtimeNs.RawExtension,
+    `type`: java.lang.String
+  ): WatchEvent = {
+    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
+  
+    __obj.asInstanceOf[WatchEvent]
+  }
+}
+

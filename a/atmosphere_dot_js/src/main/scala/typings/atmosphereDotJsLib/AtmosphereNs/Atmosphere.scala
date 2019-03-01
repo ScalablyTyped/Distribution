@@ -22,3 +22,23 @@ trait Atmosphere extends js.Object {
   var unsubscribe: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object Atmosphere {
+  @scala.inline
+  def apply(
+    AtmosphereRequest: AtmosphereRequest = null,
+    subscribe: js.Function3[
+      /* requestOrUrl */ js.Any, 
+      /* callback */ js.UndefOr[js.Function], 
+      /* request */ js.UndefOr[Request], 
+      Request
+    ] = null,
+    unsubscribe: js.Function0[scala.Unit] = null
+  ): Atmosphere = {
+    val __obj = js.Dynamic.literal()
+    if (AtmosphereRequest != null) __obj.updateDynamic("AtmosphereRequest")(AtmosphereRequest)
+    if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
+    if (unsubscribe != null) __obj.updateDynamic("unsubscribe")(unsubscribe)
+    __obj.asInstanceOf[Atmosphere]
+  }
+}
+

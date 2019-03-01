@@ -12,3 +12,20 @@ trait ResponseInformation extends js.Object {
   var lineItemId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ResponseInformation {
+  @scala.inline
+  def apply(
+    advertiserId: java.lang.String,
+    campaignId: java.lang.String,
+    creativeId: scala.Int | scala.Double = null,
+    lineItemId: scala.Int | scala.Double = null
+  ): ResponseInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("advertiserId")(advertiserId)
+    __obj.updateDynamic("campaignId")(campaignId)
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResponseInformation]
+  }
+}
+

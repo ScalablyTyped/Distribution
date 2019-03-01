@@ -32,3 +32,30 @@ trait RealtimeData extends js.Object {
   var totalsForAllResults: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object RealtimeData {
+  @scala.inline
+  def apply(
+    columnHeaders: js.Array[gapiDotClientDotAnalyticsLib.Anon_ColumnType] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    profileInfo: gapiDotClientDotAnalyticsLib.Anon_AccountId = null,
+    query: gapiDotClientDotAnalyticsLib.Anon_DimensionsFilters = null,
+    rows: js.Array[js.Array[java.lang.String]] = null,
+    selfLink: java.lang.String = null,
+    totalResults: scala.Int | scala.Double = null,
+    totalsForAllResults: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): RealtimeData = {
+    val __obj = js.Dynamic.literal()
+    if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (profileInfo != null) __obj.updateDynamic("profileInfo")(profileInfo)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults.asInstanceOf[js.Any])
+    if (totalsForAllResults != null) __obj.updateDynamic("totalsForAllResults")(totalsForAllResults)
+    __obj.asInstanceOf[RealtimeData]
+  }
+}
+

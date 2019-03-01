@@ -11,3 +11,18 @@ trait PointUpdateModel extends js.Object {
   var tester: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
 }
 
+object PointUpdateModel {
+  @scala.inline
+  def apply(
+    outcome: java.lang.String,
+    resetToActive: scala.Boolean,
+    tester: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
+  ): PointUpdateModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("outcome")(outcome)
+    __obj.updateDynamic("resetToActive")(resetToActive)
+    __obj.updateDynamic("tester")(tester)
+    __obj.asInstanceOf[PointUpdateModel]
+  }
+}
+

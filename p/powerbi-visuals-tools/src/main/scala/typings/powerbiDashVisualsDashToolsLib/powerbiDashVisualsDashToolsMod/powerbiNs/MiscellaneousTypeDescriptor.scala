@@ -12,3 +12,20 @@ trait MiscellaneousTypeDescriptor extends js.Object {
   val webUrl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MiscellaneousTypeDescriptor {
+  @scala.inline
+  def apply(
+    barcode: js.UndefOr[scala.Boolean] = js.undefined,
+    image: js.UndefOr[scala.Boolean] = js.undefined,
+    imageUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    webUrl: js.UndefOr[scala.Boolean] = js.undefined
+  ): MiscellaneousTypeDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(barcode)) __obj.updateDynamic("barcode")(barcode)
+    if (!js.isUndefined(image)) __obj.updateDynamic("image")(image)
+    if (!js.isUndefined(imageUrl)) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (!js.isUndefined(webUrl)) __obj.updateDynamic("webUrl")(webUrl)
+    __obj.asInstanceOf[MiscellaneousTypeDescriptor]
+  }
+}
+

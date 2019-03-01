@@ -17,3 +17,21 @@ trait FilteredBidsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListFilteredBidsResponse]
 }
 
+object FilteredBidsResource {
+  @scala.inline
+  def apply(
+    creatives: CreativesResource,
+    details: DetailsResource,
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListFilteredBidsResponse]
+    ]
+  ): FilteredBidsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("creatives")(creatives)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[FilteredBidsResource]
+  }
+}
+

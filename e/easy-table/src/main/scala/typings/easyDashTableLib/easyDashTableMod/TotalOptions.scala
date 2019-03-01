@@ -20,3 +20,18 @@ trait TotalOptions[T] extends js.Object {
   var reduce: js.UndefOr[easyDashTableLib.ReduceFunction[T]] = js.undefined
 }
 
+object TotalOptions {
+  @scala.inline
+  def apply[T](
+    init: T = null,
+    printer: easyDashTableLib.CellPrinter[T] = null,
+    reduce: easyDashTableLib.ReduceFunction[T] = null
+  ): TotalOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (printer != null) __obj.updateDynamic("printer")(printer)
+    if (reduce != null) __obj.updateDynamic("reduce")(reduce)
+    __obj.asInstanceOf[TotalOptions[T]]
+  }
+}
+

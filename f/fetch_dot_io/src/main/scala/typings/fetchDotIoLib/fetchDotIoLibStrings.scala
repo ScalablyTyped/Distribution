@@ -7,28 +7,34 @@ import scala.scalajs.js.annotation._
 
 object fetchDotIoLibStrings {
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends fetchDotIoLib.fetchDotIoMod.TMethod
   
   @js.native
   sealed trait form extends js.Object
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get
+    extends fetchDotIoLib.fetchDotIoMod.TMethod
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait head
+    extends fetchDotIoLib.fetchDotIoMod.TMethod
   
   @js.native
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait options extends js.Object
+  sealed trait options
+    extends fetchDotIoLib.fetchDotIoMod.TMethod
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post
+    extends fetchDotIoLib.fetchDotIoMod.TMethod
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait put
+    extends fetchDotIoLib.fetchDotIoMod.TMethod
   
   @js.native
   sealed trait urlencoded extends js.Object

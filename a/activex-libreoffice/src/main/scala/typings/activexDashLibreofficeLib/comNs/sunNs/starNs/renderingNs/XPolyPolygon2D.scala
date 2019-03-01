@@ -47,3 +47,40 @@ trait XPolyPolygon2D
   def setFillRule(fillRule: FillRule): scala.Unit
 }
 
+object XPolyPolygon2D {
+  @scala.inline
+  def apply(
+    FillRule: FillRule,
+    NumberOfPolygons: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPolyPolygon: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
+      XPolyPolygon2D, 
+      scala.Unit
+    ],
+    getFillRule: js.Function0[FillRule],
+    getNumberOfPolygonPoints: js.Function1[scala.Double, scala.Double],
+    getNumberOfPolygons: js.Function0[scala.Double],
+    isClosed: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setClosed: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    setFillRule: js.Function1[FillRule, scala.Unit]
+  ): XPolyPolygon2D = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FillRule")(FillRule)
+    __obj.updateDynamic("NumberOfPolygons")(NumberOfPolygons)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPolyPolygon")(addPolyPolygon)
+    __obj.updateDynamic("getFillRule")(getFillRule)
+    __obj.updateDynamic("getNumberOfPolygonPoints")(getNumberOfPolygonPoints)
+    __obj.updateDynamic("getNumberOfPolygons")(getNumberOfPolygons)
+    __obj.updateDynamic("isClosed")(isClosed)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setClosed")(setClosed)
+    __obj.updateDynamic("setFillRule")(setFillRule)
+    __obj.asInstanceOf[XPolyPolygon2D]
+  }
+}
+

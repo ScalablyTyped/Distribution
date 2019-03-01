@@ -10,3 +10,13 @@ trait JQRangeSliderRangeLength extends js.Object {
   var min: js.UndefOr[js.Any] = js.undefined
 }
 
+object JQRangeSliderRangeLength {
+  @scala.inline
+  def apply(max: js.Any = null, min: js.Any = null): JQRangeSliderRangeLength = {
+    val __obj = js.Dynamic.literal()
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (min != null) __obj.updateDynamic("min")(min)
+    __obj.asInstanceOf[JQRangeSliderRangeLength]
+  }
+}
+

@@ -20,3 +20,14 @@ trait DropDownOKClickedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DropDownOKClickedEventUIParam {
+  @scala.inline
+  def apply(columnKey: java.lang.String = null, eventData: js.Any = null, owner: js.Any = null): DropDownOKClickedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (eventData != null) __obj.updateDynamic("eventData")(eventData)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DropDownOKClickedEventUIParam]
+  }
+}
+

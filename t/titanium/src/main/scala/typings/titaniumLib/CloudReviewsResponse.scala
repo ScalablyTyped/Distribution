@@ -35,3 +35,24 @@ trait CloudReviewsResponse extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CloudReviewsResponse {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    error: js.UndefOr[scala.Boolean] = js.undefined,
+    message: java.lang.String = null,
+    meta: js.Any = null,
+    reviews: js.Array[_] = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): CloudReviewsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (reviews != null) __obj.updateDynamic("reviews")(reviews)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[CloudReviewsResponse]
+  }
+}
+

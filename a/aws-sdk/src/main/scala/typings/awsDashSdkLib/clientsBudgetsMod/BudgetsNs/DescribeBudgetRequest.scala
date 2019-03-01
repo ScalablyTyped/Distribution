@@ -16,3 +16,13 @@ trait DescribeBudgetRequest extends js.Object {
   var BudgetName: BudgetName
 }
 
+object DescribeBudgetRequest {
+  @scala.inline
+  def apply(AccountId: AccountId, BudgetName: BudgetName): DescribeBudgetRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccountId")(AccountId)
+    __obj.updateDynamic("BudgetName")(BudgetName)
+    __obj.asInstanceOf[DescribeBudgetRequest]
+  }
+}
+

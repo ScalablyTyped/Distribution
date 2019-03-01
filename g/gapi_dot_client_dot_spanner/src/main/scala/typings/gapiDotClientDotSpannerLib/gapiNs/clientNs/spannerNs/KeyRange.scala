@@ -28,3 +28,20 @@ trait KeyRange extends js.Object {
   var startOpen: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object KeyRange {
+  @scala.inline
+  def apply(
+    endClosed: js.Array[_] = null,
+    endOpen: js.Array[_] = null,
+    startClosed: js.Array[_] = null,
+    startOpen: js.Array[_] = null
+  ): KeyRange = {
+    val __obj = js.Dynamic.literal()
+    if (endClosed != null) __obj.updateDynamic("endClosed")(endClosed)
+    if (endOpen != null) __obj.updateDynamic("endOpen")(endOpen)
+    if (startClosed != null) __obj.updateDynamic("startClosed")(startClosed)
+    if (startOpen != null) __obj.updateDynamic("startOpen")(startOpen)
+    __obj.asInstanceOf[KeyRange]
+  }
+}
+

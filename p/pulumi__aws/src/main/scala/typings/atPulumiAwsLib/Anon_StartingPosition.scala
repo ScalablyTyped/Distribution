@@ -9,3 +9,12 @@ trait Anon_StartingPosition extends js.Object {
   var startingPosition: java.lang.String
 }
 
+object Anon_StartingPosition {
+  @scala.inline
+  def apply(startingPosition: java.lang.String): Anon_StartingPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("startingPosition")(startingPosition)
+    __obj.asInstanceOf[Anon_StartingPosition]
+  }
+}
+

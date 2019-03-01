@@ -54,3 +54,30 @@ trait Options extends js.Object {
   var shutdownGracefully: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    apiKey: java.lang.String = null,
+    endpointUrl: java.lang.String = null,
+    normalizeQuery: js.Function1[/* graphQLResolveInfo */ js.Any, java.lang.String] = null,
+    printReports: js.UndefOr[scala.Boolean] = js.undefined,
+    proxyUrl: java.lang.String = null,
+    reportIntervalMs: scala.Int | scala.Double = null,
+    reportTraces: js.UndefOr[scala.Boolean] = js.undefined,
+    reportVariables: js.UndefOr[scala.Boolean] = js.undefined,
+    shutdownGracefully: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
+    if (endpointUrl != null) __obj.updateDynamic("endpointUrl")(endpointUrl)
+    if (normalizeQuery != null) __obj.updateDynamic("normalizeQuery")(normalizeQuery)
+    if (!js.isUndefined(printReports)) __obj.updateDynamic("printReports")(printReports)
+    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl)
+    if (reportIntervalMs != null) __obj.updateDynamic("reportIntervalMs")(reportIntervalMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportTraces)) __obj.updateDynamic("reportTraces")(reportTraces)
+    if (!js.isUndefined(reportVariables)) __obj.updateDynamic("reportVariables")(reportVariables)
+    if (!js.isUndefined(shutdownGracefully)) __obj.updateDynamic("shutdownGracefully")(shutdownGracefully)
+    __obj.asInstanceOf[Options]
+  }
+}
+

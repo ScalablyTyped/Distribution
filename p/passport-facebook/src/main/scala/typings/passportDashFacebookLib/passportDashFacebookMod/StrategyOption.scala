@@ -14,3 +14,24 @@ trait StrategyOption extends js.Object {
   var scopeSeparator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StrategyOption {
+  @scala.inline
+  def apply(
+    callbackURL: java.lang.String,
+    clientID: java.lang.String,
+    clientSecret: java.lang.String,
+    enableProof: js.UndefOr[scala.Boolean] = js.undefined,
+    profileFields: js.Array[java.lang.String] = null,
+    scopeSeparator: java.lang.String = null
+  ): StrategyOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callbackURL")(callbackURL)
+    __obj.updateDynamic("clientID")(clientID)
+    __obj.updateDynamic("clientSecret")(clientSecret)
+    if (!js.isUndefined(enableProof)) __obj.updateDynamic("enableProof")(enableProof)
+    if (profileFields != null) __obj.updateDynamic("profileFields")(profileFields)
+    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator)
+    __obj.asInstanceOf[StrategyOption]
+  }
+}
+

@@ -21,3 +21,13 @@ trait ASPxClientCrosshairValueItem extends js.Object {
   var value: scala.Double
 }
 
+object ASPxClientCrosshairValueItem {
+  @scala.inline
+  def apply(pointIndex: scala.Double, value: scala.Double): ASPxClientCrosshairValueItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pointIndex")(pointIndex)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ASPxClientCrosshairValueItem]
+  }
+}
+

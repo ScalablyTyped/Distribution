@@ -39,3 +39,26 @@ trait OrganizationSettings extends js.Object {
   var useSkypeProtocol: scala.Boolean
 }
 
+object OrganizationSettings {
+  @scala.inline
+  def apply(
+    baseCurrencyId: java.lang.String,
+    defaultCountryCode: java.lang.String,
+    isAutoSaveEnabled: scala.Boolean,
+    languageId: scala.Double,
+    organizationId: java.lang.String,
+    uniqueName: java.lang.String,
+    useSkypeProtocol: scala.Boolean
+  ): OrganizationSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseCurrencyId")(baseCurrencyId)
+    __obj.updateDynamic("defaultCountryCode")(defaultCountryCode)
+    __obj.updateDynamic("isAutoSaveEnabled")(isAutoSaveEnabled)
+    __obj.updateDynamic("languageId")(languageId)
+    __obj.updateDynamic("organizationId")(organizationId)
+    __obj.updateDynamic("uniqueName")(uniqueName)
+    __obj.updateDynamic("useSkypeProtocol")(useSkypeProtocol)
+    __obj.asInstanceOf[OrganizationSettings]
+  }
+}
+

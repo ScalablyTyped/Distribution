@@ -28,3 +28,12 @@ trait XDocumentDataSource extends js.Object {
   var DatabaseDocument: XOfficeDatabaseDocument
 }
 
+object XDocumentDataSource {
+  @scala.inline
+  def apply(DatabaseDocument: XOfficeDatabaseDocument): XDocumentDataSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DatabaseDocument")(DatabaseDocument)
+    __obj.asInstanceOf[XDocumentDataSource]
+  }
+}
+

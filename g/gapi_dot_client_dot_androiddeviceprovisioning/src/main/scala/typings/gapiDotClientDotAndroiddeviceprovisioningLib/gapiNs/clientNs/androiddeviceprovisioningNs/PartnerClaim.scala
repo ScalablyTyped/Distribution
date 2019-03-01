@@ -16,3 +16,20 @@ trait PartnerClaim extends js.Object {
   var sectionType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PartnerClaim {
+  @scala.inline
+  def apply(
+    customerId: java.lang.String = null,
+    deviceIdentifier: DeviceIdentifier = null,
+    deviceMetadata: DeviceMetadata = null,
+    sectionType: java.lang.String = null
+  ): PartnerClaim = {
+    val __obj = js.Dynamic.literal()
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
+    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier)
+    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata)
+    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType)
+    __obj.asInstanceOf[PartnerClaim]
+  }
+}
+

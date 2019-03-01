@@ -25,3 +25,18 @@ trait ISimplificationSettings extends js.Object {
   var quality: scala.Double
 }
 
+object ISimplificationSettings {
+  @scala.inline
+  def apply(
+    distance: scala.Double,
+    quality: scala.Double,
+    optimizeMesh: js.UndefOr[scala.Boolean] = js.undefined
+  ): ISimplificationSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("quality")(quality)
+    if (!js.isUndefined(optimizeMesh)) __obj.updateDynamic("optimizeMesh")(optimizeMesh)
+    __obj.asInstanceOf[ISimplificationSettings]
+  }
+}
+

@@ -37,3 +37,38 @@ trait Layersummary extends js.Object {
   var volumeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Layersummary {
+  @scala.inline
+  def apply(
+    annotationCount: scala.Int | scala.Double = null,
+    annotationTypes: js.Array[java.lang.String] = null,
+    annotationsDataLink: java.lang.String = null,
+    annotationsLink: java.lang.String = null,
+    contentVersion: java.lang.String = null,
+    dataCount: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    layerId: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    updated: java.lang.String = null,
+    volumeAnnotationsVersion: java.lang.String = null,
+    volumeId: java.lang.String = null
+  ): Layersummary = {
+    val __obj = js.Dynamic.literal()
+    if (annotationCount != null) __obj.updateDynamic("annotationCount")(annotationCount.asInstanceOf[js.Any])
+    if (annotationTypes != null) __obj.updateDynamic("annotationTypes")(annotationTypes)
+    if (annotationsDataLink != null) __obj.updateDynamic("annotationsDataLink")(annotationsDataLink)
+    if (annotationsLink != null) __obj.updateDynamic("annotationsLink")(annotationsLink)
+    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion)
+    if (dataCount != null) __obj.updateDynamic("dataCount")(dataCount.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (volumeAnnotationsVersion != null) __obj.updateDynamic("volumeAnnotationsVersion")(volumeAnnotationsVersion)
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    __obj.asInstanceOf[Layersummary]
+  }
+}
+

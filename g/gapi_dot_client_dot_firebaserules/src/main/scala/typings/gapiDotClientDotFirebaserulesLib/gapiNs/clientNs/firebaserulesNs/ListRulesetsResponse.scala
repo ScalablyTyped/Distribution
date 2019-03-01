@@ -15,3 +15,13 @@ trait ListRulesetsResponse extends js.Object {
   var rulesets: js.UndefOr[js.Array[Ruleset]] = js.undefined
 }
 
+object ListRulesetsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, rulesets: js.Array[Ruleset] = null): ListRulesetsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (rulesets != null) __obj.updateDynamic("rulesets")(rulesets)
+    __obj.asInstanceOf[ListRulesetsResponse]
+  }
+}
+

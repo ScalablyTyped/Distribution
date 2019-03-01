@@ -15,3 +15,13 @@ trait TargetConfiguration extends js.Object {
   var imports: js.UndefOr[js.Array[ImportFile]] = js.undefined
 }
 
+object TargetConfiguration {
+  @scala.inline
+  def apply(config: ConfigFile = null, imports: js.Array[ImportFile] = null): TargetConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (imports != null) __obj.updateDynamic("imports")(imports)
+    __obj.asInstanceOf[TargetConfiguration]
+  }
+}
+

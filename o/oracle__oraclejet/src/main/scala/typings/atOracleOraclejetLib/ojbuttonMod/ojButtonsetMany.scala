@@ -13,32 +13,28 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
   var focusManagement: atOracleOraclejetLib.atOracleOraclejetLibStrings.oneTabstop | atOracleOraclejetLib.atOracleOraclejetLibStrings.none = js.native
   var onChromingChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['chroming'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.full | atOracleOraclejetLib.atOracleOraclejetLibStrings.half | atOracleOraclejetLib.atOracleOraclejetLibStrings.outlined
     ], 
     _
   ]) | scala.Null = js.native
   var onDisabledChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['disabled'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
     _
   ]) | scala.Null = js.native
   var onDisplayChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['display'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.atOracleOraclejetLibStrings.icons
     ], 
     _
   ]) | scala.Null = js.native
   var onFocusManagementChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['focusManagement'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.oneTabstop | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
     ], 
     _
   ]) | scala.Null = js.native
   var onValueChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['value'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[_] | scala.Null], 
     _
   ]) | scala.Null = js.native
   var value: js.Array[_] | scala.Null = js.native
@@ -47,7 +43,7 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['chroming'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.full | atOracleOraclejetLib.atOracleOraclejetLibStrings.half | atOracleOraclejetLib.atOracleOraclejetLibStrings.outlined
       ], 
       _
     ]
@@ -57,28 +53,7 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['chroming'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['disabled'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['disabled'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.full | atOracleOraclejetLib.atOracleOraclejetLibStrings.half | atOracleOraclejetLib.atOracleOraclejetLibStrings.outlined
       ], 
       _
     ],
@@ -89,7 +64,7 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['display'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.atOracleOraclejetLibStrings.icons
       ], 
       _
     ]
@@ -99,7 +74,7 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['display'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.atOracleOraclejetLibStrings.icons
       ], 
       _
     ],
@@ -110,7 +85,7 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['focusManagement'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.oneTabstop | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ]
@@ -120,29 +95,46 @@ trait ojButtonsetMany extends ojButtonset[ojButtonsetManySettableProperties] {
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['focusManagement'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.oneTabstop | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
+  @JSName("addEventListener")
+  def addEventListener_disabledChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['value'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
       _
     ]
   ): scala.Unit = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_disabledChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_valueChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['value'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[_] | scala.Null], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_valueChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[_] | scala.Null], 
       _
     ],
     useCapture: scala.Boolean

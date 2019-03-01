@@ -10,3 +10,12 @@ trait InstanceGroupManagersRecreateInstancesRequest extends js.Object {
   var instances: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object InstanceGroupManagersRecreateInstancesRequest {
+  @scala.inline
+  def apply(instances: js.Array[java.lang.String] = null): InstanceGroupManagersRecreateInstancesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (instances != null) __obj.updateDynamic("instances")(instances)
+    __obj.asInstanceOf[InstanceGroupManagersRecreateInstancesRequest]
+  }
+}
+

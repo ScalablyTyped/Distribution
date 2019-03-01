@@ -85,3 +85,49 @@ trait MarkerClusterGroupOptions
   var zoomToBoundsOnClick: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MarkerClusterGroupOptions {
+  @scala.inline
+  def apply(
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    animateAddingMarkers: js.UndefOr[scala.Boolean] = js.undefined,
+    attribution: java.lang.String = null,
+    chunkDelay: scala.Int | scala.Double = null,
+    chunkedLoading: js.UndefOr[scala.Boolean] = js.undefined,
+    disableClusteringAtZoom: scala.Int | scala.Double = null,
+    iconCreateFunction: js.Function1[
+      /* cluster */ MarkerCluster, 
+      leafletLib.leafletMod.Icon[leafletLib.leafletMod.IconOptions] | leafletLib.leafletMod.DivIcon
+    ] = null,
+    maxClusterRadius: scala.Double | (js.Function1[/* zoom */ scala.Double, scala.Double]) = null,
+    pane: java.lang.String = null,
+    polygonOptions: leafletLib.leafletMod.PolylineOptions = null,
+    removeOutsideVisibleBounds: js.UndefOr[scala.Boolean] = js.undefined,
+    showCoverageOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    singleMarkerMode: js.UndefOr[scala.Boolean] = js.undefined,
+    spiderLegPolylineOptions: leafletLib.leafletMod.PolylineOptions = null,
+    spiderfyDistanceMultiplier: scala.Int | scala.Double = null,
+    spiderfyOnMaxZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    zoomToBoundsOnClick: js.UndefOr[scala.Boolean] = js.undefined
+  ): MarkerClusterGroupOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (!js.isUndefined(animateAddingMarkers)) __obj.updateDynamic("animateAddingMarkers")(animateAddingMarkers)
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    if (chunkDelay != null) __obj.updateDynamic("chunkDelay")(chunkDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkedLoading)) __obj.updateDynamic("chunkedLoading")(chunkedLoading)
+    if (disableClusteringAtZoom != null) __obj.updateDynamic("disableClusteringAtZoom")(disableClusteringAtZoom.asInstanceOf[js.Any])
+    if (iconCreateFunction != null) __obj.updateDynamic("iconCreateFunction")(iconCreateFunction)
+    if (maxClusterRadius != null) __obj.updateDynamic("maxClusterRadius")(maxClusterRadius.asInstanceOf[js.Any])
+    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
+    if (!js.isUndefined(removeOutsideVisibleBounds)) __obj.updateDynamic("removeOutsideVisibleBounds")(removeOutsideVisibleBounds)
+    if (!js.isUndefined(showCoverageOnHover)) __obj.updateDynamic("showCoverageOnHover")(showCoverageOnHover)
+    if (!js.isUndefined(singleMarkerMode)) __obj.updateDynamic("singleMarkerMode")(singleMarkerMode)
+    if (spiderLegPolylineOptions != null) __obj.updateDynamic("spiderLegPolylineOptions")(spiderLegPolylineOptions)
+    if (spiderfyDistanceMultiplier != null) __obj.updateDynamic("spiderfyDistanceMultiplier")(spiderfyDistanceMultiplier.asInstanceOf[js.Any])
+    if (!js.isUndefined(spiderfyOnMaxZoom)) __obj.updateDynamic("spiderfyOnMaxZoom")(spiderfyOnMaxZoom)
+    if (!js.isUndefined(zoomToBoundsOnClick)) __obj.updateDynamic("zoomToBoundsOnClick")(zoomToBoundsOnClick)
+    __obj.asInstanceOf[MarkerClusterGroupOptions]
+  }
+}
+

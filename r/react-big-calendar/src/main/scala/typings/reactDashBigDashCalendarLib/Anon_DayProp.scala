@@ -11,3 +11,18 @@ trait Anon_DayProp[T /* <: reactDashBigDashCalendarLib.reactDashBigDashCalendarM
   var slotProp: js.UndefOr[reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.SlotPropGetter] = js.undefined
 }
 
+object Anon_DayProp {
+  @scala.inline
+  def apply[T /* <: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Event */](
+    dayProp: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.DayPropGetter = null,
+    eventProp: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.EventPropGetter[T] = null,
+    slotProp: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.SlotPropGetter = null
+  ): Anon_DayProp[T] = {
+    val __obj = js.Dynamic.literal()
+    if (dayProp != null) __obj.updateDynamic("dayProp")(dayProp)
+    if (eventProp != null) __obj.updateDynamic("eventProp")(eventProp)
+    if (slotProp != null) __obj.updateDynamic("slotProp")(slotProp)
+    __obj.asInstanceOf[Anon_DayProp[T]]
+  }
+}
+

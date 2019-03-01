@@ -105,3 +105,40 @@ trait NodeSpec extends js.Object {
   var toDebugString: js.UndefOr[(js.Function1[/* node */ ProsemirrorNode[_], java.lang.String]) | scala.Null] = js.undefined
 }
 
+object NodeSpec {
+  @scala.inline
+  def apply(
+    atom: js.UndefOr[scala.Boolean] = js.undefined,
+    attrs: org.scalablytyped.runtime.StringDictionary[AttributeSpec] = null,
+    code: js.UndefOr[scala.Boolean] = js.undefined,
+    content: java.lang.String = null,
+    defining: js.UndefOr[scala.Boolean] = js.undefined,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    group: java.lang.String = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    isolating: js.UndefOr[scala.Boolean] = js.undefined,
+    marks: java.lang.String = null,
+    parseDOM: js.Array[ParseRule] = null,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    toDOM: js.Function1[/* node */ ProsemirrorNode[_], DOMOutputSpec] = null,
+    toDebugString: js.Function1[/* node */ ProsemirrorNode[_], java.lang.String] = null
+  ): NodeSpec = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(atom)) __obj.updateDynamic("atom")(atom)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (!js.isUndefined(defining)) __obj.updateDynamic("defining")(defining)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (!js.isUndefined(isolating)) __obj.updateDynamic("isolating")(isolating)
+    if (marks != null) __obj.updateDynamic("marks")(marks)
+    if (parseDOM != null) __obj.updateDynamic("parseDOM")(parseDOM)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (toDOM != null) __obj.updateDynamic("toDOM")(toDOM)
+    if (toDebugString != null) __obj.updateDynamic("toDebugString")(toDebugString)
+    __obj.asInstanceOf[NodeSpec]
+  }
+}
+

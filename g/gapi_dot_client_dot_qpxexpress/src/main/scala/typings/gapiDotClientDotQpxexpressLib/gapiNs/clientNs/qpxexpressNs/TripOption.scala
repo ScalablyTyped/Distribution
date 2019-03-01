@@ -18,3 +18,22 @@ trait TripOption extends js.Object {
   var slice: js.UndefOr[js.Array[SliceInfo]] = js.undefined
 }
 
+object TripOption {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    pricing: js.Array[PricingInfo] = null,
+    saleTotal: java.lang.String = null,
+    slice: js.Array[SliceInfo] = null
+  ): TripOption = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (pricing != null) __obj.updateDynamic("pricing")(pricing)
+    if (saleTotal != null) __obj.updateDynamic("saleTotal")(saleTotal)
+    if (slice != null) __obj.updateDynamic("slice")(slice)
+    __obj.asInstanceOf[TripOption]
+  }
+}
+

@@ -15,3 +15,16 @@ trait GooglePrivacyDlpV2beta1RecordTransformations extends js.Object {
   var recordSuppressions: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1RecordSuppression]] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1RecordTransformations {
+  @scala.inline
+  def apply(
+    fieldTransformations: js.Array[GooglePrivacyDlpV2beta1FieldTransformation] = null,
+    recordSuppressions: js.Array[GooglePrivacyDlpV2beta1RecordSuppression] = null
+  ): GooglePrivacyDlpV2beta1RecordTransformations = {
+    val __obj = js.Dynamic.literal()
+    if (fieldTransformations != null) __obj.updateDynamic("fieldTransformations")(fieldTransformations)
+    if (recordSuppressions != null) __obj.updateDynamic("recordSuppressions")(recordSuppressions)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1RecordTransformations]
+  }
+}
+

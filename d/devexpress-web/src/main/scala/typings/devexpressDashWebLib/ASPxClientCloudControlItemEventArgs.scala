@@ -26,3 +26,15 @@ trait ASPxClientCloudControlItemEventArgs extends ASPxClientProcessingModeEventA
   var name: js.Object
 }
 
+object ASPxClientCloudControlItemEventArgs {
+  @scala.inline
+  def apply(htmlElement: js.Object, htmlEvent: js.Object, name: js.Object, processOnServer: scala.Boolean): ASPxClientCloudControlItemEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("htmlElement")(htmlElement)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[ASPxClientCloudControlItemEventArgs]
+  }
+}
+

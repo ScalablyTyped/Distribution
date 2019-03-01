@@ -13,3 +13,22 @@ trait ConnectStatus extends js.Object {
   var pingTimeout: scala.Double
 }
 
+object ConnectStatus {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    isAuthenticated: scala.Boolean,
+    pingTimeout: scala.Double,
+    authError: nodeLib.Error = null,
+    authToken: js.Object = null
+  ): ConnectStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
+    __obj.updateDynamic("pingTimeout")(pingTimeout)
+    if (authError != null) __obj.updateDynamic("authError")(authError)
+    if (authToken != null) __obj.updateDynamic("authToken")(authToken)
+    __obj.asInstanceOf[ConnectStatus]
+  }
+}
+

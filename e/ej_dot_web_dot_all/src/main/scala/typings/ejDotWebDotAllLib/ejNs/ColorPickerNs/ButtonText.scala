@@ -18,3 +18,14 @@ trait ButtonText extends js.Object {
   var swatches: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ButtonText {
+  @scala.inline
+  def apply(apply: java.lang.String = null, cancel: java.lang.String = null, swatches: java.lang.String = null): ButtonText = {
+    val __obj = js.Dynamic.literal()
+    if (apply != null) __obj.updateDynamic("apply")(apply)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (swatches != null) __obj.updateDynamic("swatches")(swatches)
+    __obj.asInstanceOf[ButtonText]
+  }
+}
+

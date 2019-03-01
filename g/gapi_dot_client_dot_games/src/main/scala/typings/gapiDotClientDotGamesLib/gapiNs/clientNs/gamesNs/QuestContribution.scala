@@ -17,3 +17,18 @@ trait QuestContribution extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QuestContribution {
+  @scala.inline
+  def apply(
+    formattedValue: java.lang.String = null,
+    kind: java.lang.String = null,
+    value: java.lang.String = null
+  ): QuestContribution = {
+    val __obj = js.Dynamic.literal()
+    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[QuestContribution]
+  }
+}
+

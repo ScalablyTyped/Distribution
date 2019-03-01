@@ -47,3 +47,30 @@ trait Options extends js.Object {
   var textLimit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    detectJSON: js.Function1[/* ctx */ koaLib.koaMod.ApplicationNs.Context, scala.Boolean] = null,
+    enableTypes: js.Array[java.lang.String] = null,
+    encode: java.lang.String = null,
+    extendTypes: koaDashBodyparserLib.Anon_Form = null,
+    formLimit: java.lang.String = null,
+    jsonLimit: java.lang.String = null,
+    onerror: js.Function2[/* err */ nodeLib.Error, /* ctx */ koaLib.koaMod.ApplicationNs.Context, scala.Unit] = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    textLimit: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (detectJSON != null) __obj.updateDynamic("detectJSON")(detectJSON)
+    if (enableTypes != null) __obj.updateDynamic("enableTypes")(enableTypes)
+    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (extendTypes != null) __obj.updateDynamic("extendTypes")(extendTypes)
+    if (formLimit != null) __obj.updateDynamic("formLimit")(formLimit)
+    if (jsonLimit != null) __obj.updateDynamic("jsonLimit")(jsonLimit)
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (textLimit != null) __obj.updateDynamic("textLimit")(textLimit)
+    __obj.asInstanceOf[Options]
+  }
+}
+

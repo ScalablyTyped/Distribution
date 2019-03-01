@@ -18,3 +18,22 @@ trait IExecuteReturn extends js.Object {
   var rowsAffected: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IExecuteReturn {
+  @scala.inline
+  def apply(
+    metaData: js.Array[IMetaData] = null,
+    outBinds: js.Array[_] | js.Object = null,
+    resultSet: IResultSet = null,
+    rows: js.Array[js.Array[_]] | js.Array[_] = null,
+    rowsAffected: scala.Int | scala.Double = null
+  ): IExecuteReturn = {
+    val __obj = js.Dynamic.literal()
+    if (metaData != null) __obj.updateDynamic("metaData")(metaData)
+    if (outBinds != null) __obj.updateDynamic("outBinds")(outBinds.asInstanceOf[js.Any])
+    if (resultSet != null) __obj.updateDynamic("resultSet")(resultSet)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (rowsAffected != null) __obj.updateDynamic("rowsAffected")(rowsAffected.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IExecuteReturn]
+  }
+}
+

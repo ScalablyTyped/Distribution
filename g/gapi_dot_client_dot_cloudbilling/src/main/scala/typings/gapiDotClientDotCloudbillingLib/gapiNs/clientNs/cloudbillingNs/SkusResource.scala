@@ -10,3 +10,17 @@ trait SkusResource extends js.Object {
   def list(request: gapiDotClientDotCloudbillingLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListSkusResponse]
 }
 
+object SkusResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotCloudbillingLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListSkusResponse]
+    ]
+  ): SkusResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[SkusResource]
+  }
+}
+

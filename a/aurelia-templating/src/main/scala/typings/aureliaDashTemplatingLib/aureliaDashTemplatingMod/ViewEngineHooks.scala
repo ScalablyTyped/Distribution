@@ -58,3 +58,35 @@ trait ViewEngineHooks extends js.Object {
   var beforeUnbind: js.UndefOr[js.Function1[/* view */ View, scala.Unit]] = js.undefined
 }
 
+object ViewEngineHooks {
+  @scala.inline
+  def apply(
+    afterCompile: js.Function1[/* viewFactory */ ViewFactory, scala.Unit] = null,
+    afterCreate: js.Function1[/* view */ View, scala.Unit] = null,
+    beforeBind: js.Function1[/* view */ View, scala.Unit] = null,
+    beforeCompile: js.Function3[
+      /* content */ stdLib.DocumentFragment, 
+      /* resources */ ViewResources, 
+      /* instruction */ ViewCompileInstruction, 
+      scala.Unit
+    ] = null,
+    beforeCreate: js.Function4[
+      /* viewFactory */ ViewFactory, 
+      /* container */ aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container, 
+      /* content */ stdLib.DocumentFragment, 
+      /* instruction */ ViewCreateInstruction, 
+      scala.Unit
+    ] = null,
+    beforeUnbind: js.Function1[/* view */ View, scala.Unit] = null
+  ): ViewEngineHooks = {
+    val __obj = js.Dynamic.literal()
+    if (afterCompile != null) __obj.updateDynamic("afterCompile")(afterCompile)
+    if (afterCreate != null) __obj.updateDynamic("afterCreate")(afterCreate)
+    if (beforeBind != null) __obj.updateDynamic("beforeBind")(beforeBind)
+    if (beforeCompile != null) __obj.updateDynamic("beforeCompile")(beforeCompile)
+    if (beforeCreate != null) __obj.updateDynamic("beforeCreate")(beforeCreate)
+    if (beforeUnbind != null) __obj.updateDynamic("beforeUnbind")(beforeUnbind)
+    __obj.asInstanceOf[ViewEngineHooks]
+  }
+}
+

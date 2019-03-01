@@ -10,3 +10,12 @@ trait InstanceReference extends js.Object {
   var instance: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstanceReference {
+  @scala.inline
+  def apply(instance: java.lang.String = null): InstanceReference = {
+    val __obj = js.Dynamic.literal()
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    __obj.asInstanceOf[InstanceReference]
+  }
+}
+

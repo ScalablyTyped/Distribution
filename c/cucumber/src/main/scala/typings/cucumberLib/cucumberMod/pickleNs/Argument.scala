@@ -9,3 +9,12 @@ trait Argument extends js.Object {
   var rows: js.Array[Cell]
 }
 
+object Argument {
+  @scala.inline
+  def apply(rows: js.Array[Cell]): Argument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[Argument]
+  }
+}
+

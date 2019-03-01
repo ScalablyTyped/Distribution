@@ -12,3 +12,15 @@ trait CompilationModule extends js.Object {
   var module: js.Any
 }
 
+object CompilationModule {
+  @scala.inline
+  def apply(build: scala.Boolean, dependencies: scala.Boolean, issuer: scala.Boolean, module: js.Any): CompilationModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("dependencies")(dependencies)
+    __obj.updateDynamic("issuer")(issuer)
+    __obj.updateDynamic("module")(module)
+    __obj.asInstanceOf[CompilationModule]
+  }
+}
+

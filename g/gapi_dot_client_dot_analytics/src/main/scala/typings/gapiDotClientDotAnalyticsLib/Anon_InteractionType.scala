@@ -12,3 +12,13 @@ trait Anon_InteractionType extends js.Object {
   var nodeValue: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_InteractionType {
+  @scala.inline
+  def apply(interactionType: java.lang.String = null, nodeValue: java.lang.String = null): Anon_InteractionType = {
+    val __obj = js.Dynamic.literal()
+    if (interactionType != null) __obj.updateDynamic("interactionType")(interactionType)
+    if (nodeValue != null) __obj.updateDynamic("nodeValue")(nodeValue)
+    __obj.asInstanceOf[Anon_InteractionType]
+  }
+}
+

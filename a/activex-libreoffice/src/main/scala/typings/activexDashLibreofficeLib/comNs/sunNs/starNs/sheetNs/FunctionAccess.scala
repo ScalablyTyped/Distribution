@@ -25,3 +25,104 @@ trait FunctionAccess
   var IsArrayFunction: scala.Boolean
 }
 
+object FunctionAccess {
+  @scala.inline
+  def apply(
+    CalcAsShown: scala.Boolean,
+    CharLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    CharLocaleAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    CharLocaleComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    DefaultTabStop: scala.Double,
+    ForbiddenCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.XForbiddenCharacters,
+    HasDrawPages: scala.Boolean,
+    IgnoreCase: scala.Boolean,
+    IsAdjustHeightEnabled: scala.Boolean,
+    IsArrayFunction: scala.Boolean,
+    IsExecuteLinkEnabled: scala.Boolean,
+    IsIterationEnabled: scala.Boolean,
+    IsLoaded: scala.Boolean,
+    IsRecordChangesProtected: scala.Boolean,
+    IsUndoEnabled: scala.Boolean,
+    IterationCount: scala.Double,
+    IterationEpsilon: scala.Double,
+    LookUpLabels: scala.Boolean,
+    MatchWholeCell: scala.Boolean,
+    NullDate: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RecordChanges: scala.Boolean,
+    ReferenceDevice: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XDevice,
+    RegularExpressions: scala.Boolean,
+    SpellOnline: scala.Boolean,
+    StandardDecimals: scala.Double,
+    Wildcards: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    callFunction: js.Function2[java.lang.String, activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], js.Any],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): FunctionAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CalcAsShown")(CalcAsShown)
+    __obj.updateDynamic("CharLocale")(CharLocale)
+    __obj.updateDynamic("CharLocaleAsian")(CharLocaleAsian)
+    __obj.updateDynamic("CharLocaleComplex")(CharLocaleComplex)
+    __obj.updateDynamic("DefaultTabStop")(DefaultTabStop)
+    __obj.updateDynamic("ForbiddenCharacters")(ForbiddenCharacters)
+    __obj.updateDynamic("HasDrawPages")(HasDrawPages)
+    __obj.updateDynamic("IgnoreCase")(IgnoreCase)
+    __obj.updateDynamic("IsAdjustHeightEnabled")(IsAdjustHeightEnabled)
+    __obj.updateDynamic("IsArrayFunction")(IsArrayFunction)
+    __obj.updateDynamic("IsExecuteLinkEnabled")(IsExecuteLinkEnabled)
+    __obj.updateDynamic("IsIterationEnabled")(IsIterationEnabled)
+    __obj.updateDynamic("IsLoaded")(IsLoaded)
+    __obj.updateDynamic("IsRecordChangesProtected")(IsRecordChangesProtected)
+    __obj.updateDynamic("IsUndoEnabled")(IsUndoEnabled)
+    __obj.updateDynamic("IterationCount")(IterationCount)
+    __obj.updateDynamic("IterationEpsilon")(IterationEpsilon)
+    __obj.updateDynamic("LookUpLabels")(LookUpLabels)
+    __obj.updateDynamic("MatchWholeCell")(MatchWholeCell)
+    __obj.updateDynamic("NullDate")(NullDate)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RecordChanges")(RecordChanges)
+    __obj.updateDynamic("ReferenceDevice")(ReferenceDevice)
+    __obj.updateDynamic("RegularExpressions")(RegularExpressions)
+    __obj.updateDynamic("SpellOnline")(SpellOnline)
+    __obj.updateDynamic("StandardDecimals")(StandardDecimals)
+    __obj.updateDynamic("Wildcards")(Wildcards)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("callFunction")(callFunction)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[FunctionAccess]
+  }
+}
+

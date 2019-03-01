@@ -14,3 +14,24 @@ trait PaginationArrowProps[T]
   var onTrigger: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object PaginationArrowProps {
+  @scala.inline
+  def apply[T](
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    direction: reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.next | reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.previous = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    onTrigger: js.Function0[scala.Unit] = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[T] = null
+  ): PaginationArrowProps[T] = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (onTrigger != null) __obj.updateDynamic("onTrigger")(onTrigger)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PaginationArrowProps[T]]
+  }
+}
+

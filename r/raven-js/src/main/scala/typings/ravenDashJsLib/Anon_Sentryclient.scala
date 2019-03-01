@@ -11,3 +11,14 @@ trait Anon_Sentryclient extends js.Object {
   var sentry_version: java.lang.String
 }
 
+object Anon_Sentryclient {
+  @scala.inline
+  def apply(sentry_client: java.lang.String, sentry_key: java.lang.String, sentry_version: java.lang.String): Anon_Sentryclient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sentry_client")(sentry_client)
+    __obj.updateDynamic("sentry_key")(sentry_key)
+    __obj.updateDynamic("sentry_version")(sentry_version)
+    __obj.asInstanceOf[Anon_Sentryclient]
+  }
+}
+

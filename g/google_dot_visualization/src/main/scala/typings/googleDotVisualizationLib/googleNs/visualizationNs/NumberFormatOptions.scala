@@ -41,3 +41,28 @@ trait NumberFormatOptions extends js.Object {
   var suffix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NumberFormatOptions {
+  @scala.inline
+  def apply(
+    decimalSymbol: java.lang.String = null,
+    fractionDigits: scala.Int | scala.Double = null,
+    groupingSymbol: java.lang.String = null,
+    negativeColor: java.lang.String = null,
+    negativeParens: js.UndefOr[scala.Boolean] = js.undefined,
+    pattern: java.lang.String = null,
+    prefix: java.lang.String = null,
+    suffix: java.lang.String = null
+  ): NumberFormatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (decimalSymbol != null) __obj.updateDynamic("decimalSymbol")(decimalSymbol)
+    if (fractionDigits != null) __obj.updateDynamic("fractionDigits")(fractionDigits.asInstanceOf[js.Any])
+    if (groupingSymbol != null) __obj.updateDynamic("groupingSymbol")(groupingSymbol)
+    if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor)
+    if (!js.isUndefined(negativeParens)) __obj.updateDynamic("negativeParens")(negativeParens)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    __obj.asInstanceOf[NumberFormatOptions]
+  }
+}
+

@@ -12,3 +12,16 @@ trait AnalyticsInfo extends js.Object {
   var itunesConnectAnalytics: js.UndefOr[ITunesConnectAnalytics] = js.undefined
 }
 
+object AnalyticsInfo {
+  @scala.inline
+  def apply(
+    googlePlayAnalytics: GooglePlayAnalytics = null,
+    itunesConnectAnalytics: ITunesConnectAnalytics = null
+  ): AnalyticsInfo = {
+    val __obj = js.Dynamic.literal()
+    if (googlePlayAnalytics != null) __obj.updateDynamic("googlePlayAnalytics")(googlePlayAnalytics)
+    if (itunesConnectAnalytics != null) __obj.updateDynamic("itunesConnectAnalytics")(itunesConnectAnalytics)
+    __obj.asInstanceOf[AnalyticsInfo]
+  }
+}
+

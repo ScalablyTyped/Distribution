@@ -10,3 +10,12 @@ trait RotateOptions extends js.Object {
   var background: js.UndefOr[Color] = js.undefined
 }
 
+object RotateOptions {
+  @scala.inline
+  def apply(background: Color = null): RotateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RotateOptions]
+  }
+}
+

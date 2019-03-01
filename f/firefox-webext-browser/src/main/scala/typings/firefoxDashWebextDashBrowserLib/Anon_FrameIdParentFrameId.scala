@@ -25,3 +25,24 @@ trait Anon_FrameIdParentFrameId extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_FrameIdParentFrameId {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    parentFrameId: scala.Double,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    url: java.lang.String,
+    processId: scala.Int | scala.Double = null
+  ): Anon_FrameIdParentFrameId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frameId")(frameId)
+    __obj.updateDynamic("parentFrameId")(parentFrameId)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("url")(url)
+    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FrameIdParentFrameId]
+  }
+}
+

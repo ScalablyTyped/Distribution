@@ -31,3 +31,32 @@ trait ContextSession extends js.Object {
   def set(`val`: js.Any): scala.Unit
 }
 
+object ContextSession {
+  @scala.inline
+  def apply(
+    app: js.Any,
+    commit: js.Function0[js.Promise[scala.Unit]],
+    ctx: koaDashSessionLib.koaDashSessionMod.koaMod.Context,
+    get: js.Function0[Session],
+    initFromExternal: js.Function0[js.Promise[scala.Unit]],
+    opts: opts,
+    prevHash: java.lang.String,
+    session: Session | koaDashSessionLib.koaDashSessionLibNumbers.`false`,
+    set: js.Function1[js.Any, scala.Unit],
+    store: stores
+  ): ContextSession = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app")(app)
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("ctx")(ctx)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("initFromExternal")(initFromExternal)
+    __obj.updateDynamic("opts")(opts)
+    __obj.updateDynamic("prevHash")(prevHash)
+    __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("store")(store)
+    __obj.asInstanceOf[ContextSession]
+  }
+}
+

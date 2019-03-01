@@ -16,3 +16,12 @@ trait ApplicationData extends js.Object {
   var notebooks: js.UndefOr[js.Array[NotebookData]] = js.undefined
 }
 
+object ApplicationData {
+  @scala.inline
+  def apply(notebooks: js.Array[NotebookData] = null): ApplicationData = {
+    val __obj = js.Dynamic.literal()
+    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks)
+    __obj.asInstanceOf[ApplicationData]
+  }
+}
+

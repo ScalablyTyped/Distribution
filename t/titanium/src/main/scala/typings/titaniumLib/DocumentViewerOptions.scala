@@ -19,3 +19,13 @@ trait DocumentViewerOptions extends js.Object {
   var view: js.UndefOr[titaniumLib.TitaniumNs.UINs.View] = js.undefined
 }
 
+object DocumentViewerOptions {
+  @scala.inline
+  def apply(animated: js.UndefOr[scala.Boolean] = js.undefined, view: titaniumLib.TitaniumNs.UINs.View = null): DocumentViewerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[DocumentViewerOptions]
+  }
+}
+

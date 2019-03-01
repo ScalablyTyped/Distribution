@@ -24,3 +24,18 @@ trait RecorderArgs extends js.Object {
   val roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object RecorderArgs {
+  @scala.inline
+  def apply(
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    recordingGroup: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllSupportedIncludeGlobalResourceTypes] = null
+  ): RecorderArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (recordingGroup != null) __obj.updateDynamic("recordingGroup")(recordingGroup.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecorderArgs]
+  }
+}
+

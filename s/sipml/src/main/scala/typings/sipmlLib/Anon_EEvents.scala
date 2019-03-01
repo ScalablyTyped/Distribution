@@ -10,3 +10,16 @@ trait Anon_EEvents extends js.Object {
   def listener(e: sipmlLib.SIPmlNs.StackNs.Event): scala.Unit
 }
 
+object Anon_EEvents {
+  @scala.inline
+  def apply(
+    events: sipmlLib.SIPmlNs.StackNs.EventSubscriptionType | js.Array[sipmlLib.SIPmlNs.StackNs.EventSubscriptionType],
+    listener: js.Function1[sipmlLib.SIPmlNs.StackNs.Event, scala.Unit]
+  ): Anon_EEvents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    __obj.updateDynamic("listener")(listener)
+    __obj.asInstanceOf[Anon_EEvents]
+  }
+}
+

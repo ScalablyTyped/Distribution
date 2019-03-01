@@ -24,3 +24,20 @@ trait DataSourceInitializedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DataSourceInitializedEventUIParam {
+  @scala.inline
+  def apply(
+    dataSource: js.Any = null,
+    error: java.lang.String = null,
+    metadataTreeRoot: js.Any = null,
+    owner: js.Any = null
+  ): DataSourceInitializedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (metadataTreeRoot != null) __obj.updateDynamic("metadataTreeRoot")(metadataTreeRoot)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DataSourceInitializedEventUIParam]
+  }
+}
+

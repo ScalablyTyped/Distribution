@@ -10,3 +10,13 @@ trait HistoryListenerParameter extends js.Object {
   var location: HistoryLocation
 }
 
+object HistoryListenerParameter {
+  @scala.inline
+  def apply(action: HistoryActionType, location: HistoryLocation): HistoryListenerParameter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("location")(location)
+    __obj.asInstanceOf[HistoryListenerParameter]
+  }
+}
+

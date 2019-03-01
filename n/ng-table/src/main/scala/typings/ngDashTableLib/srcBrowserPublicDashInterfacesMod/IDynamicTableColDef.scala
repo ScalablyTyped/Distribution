@@ -56,3 +56,32 @@ trait IDynamicTableColDef extends js.Object {
   var titleAlt: js.UndefOr[DynamicTableColField[java.lang.String]] = js.undefined
 }
 
+object IDynamicTableColDef {
+  @scala.inline
+  def apply(
+    `class`: DynamicTableColField[java.lang.String] = null,
+    filter: DynamicTableColField[IFilterTemplateDefMap] = null,
+    filterData: DynamicTableColField[angularLib.angularMod.angularNs.IPromise[SelectData] | SelectData] = null,
+    groupable: DynamicTableColField[java.lang.String | scala.Boolean] = null,
+    headerTemplateURL: DynamicTableColField[java.lang.String | scala.Boolean] = null,
+    headerTitle: DynamicTableColField[java.lang.String] = null,
+    show: DynamicTableColField[scala.Boolean] = null,
+    sortable: DynamicTableColField[java.lang.String | scala.Boolean] = null,
+    title: DynamicTableColField[java.lang.String] = null,
+    titleAlt: DynamicTableColField[java.lang.String] = null
+  ): IDynamicTableColDef = {
+    val __obj = js.Dynamic.literal()
+    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (filterData != null) __obj.updateDynamic("filterData")(filterData.asInstanceOf[js.Any])
+    if (groupable != null) __obj.updateDynamic("groupable")(groupable.asInstanceOf[js.Any])
+    if (headerTemplateURL != null) __obj.updateDynamic("headerTemplateURL")(headerTemplateURL.asInstanceOf[js.Any])
+    if (headerTitle != null) __obj.updateDynamic("headerTitle")(headerTitle.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+    if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleAlt != null) __obj.updateDynamic("titleAlt")(titleAlt.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDynamicTableColDef]
+  }
+}
+

@@ -12,3 +12,13 @@ trait ICollapseState extends js.Object {
   var height: java.lang.String
 }
 
+object ICollapseState {
+  @scala.inline
+  def apply(animationState: AnimationStates, height: java.lang.String): ICollapseState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animationState")(animationState)
+    __obj.updateDynamic("height")(height)
+    __obj.asInstanceOf[ICollapseState]
+  }
+}
+

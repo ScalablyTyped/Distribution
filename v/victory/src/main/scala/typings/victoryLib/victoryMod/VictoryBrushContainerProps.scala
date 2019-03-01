@@ -93,3 +93,48 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
   ] = js.undefined
 }
 
+object VictoryBrushContainerProps {
+  @scala.inline
+  def apply(
+    allowDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    allowResize: js.UndefOr[scala.Boolean] = js.undefined,
+    brushComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    brushDimension: victoryLib.victoryLibStrings.x | victoryLib.victoryLibStrings.y = null,
+    brushDomain: DomainPropType = null,
+    brushStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    defaultBrushArea: victoryLib.victoryLibStrings.all | victoryLib.victoryLibStrings.none | victoryLib.victoryLibStrings.disable = null,
+    desc: java.lang.String = null,
+    disable: js.UndefOr[scala.Boolean] = js.undefined,
+    events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
+    handleComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    handleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    height: scala.Int | scala.Double = null,
+    onBrushDomainChange: js.Function2[/* domain */ DomainPropType, /* props */ VictoryBrushContainerProps, scala.Unit] = null,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    title: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): VictoryBrushContainerProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag)
+    if (!js.isUndefined(allowResize)) __obj.updateDynamic("allowResize")(allowResize)
+    if (brushComponent != null) __obj.updateDynamic("brushComponent")(brushComponent)
+    if (brushDimension != null) __obj.updateDynamic("brushDimension")(brushDimension.asInstanceOf[js.Any])
+    if (brushDomain != null) __obj.updateDynamic("brushDomain")(brushDomain.asInstanceOf[js.Any])
+    if (brushStyle != null) __obj.updateDynamic("brushStyle")(brushStyle)
+    if (defaultBrushArea != null) __obj.updateDynamic("defaultBrushArea")(defaultBrushArea.asInstanceOf[js.Any])
+    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (handleComponent != null) __obj.updateDynamic("handleComponent")(handleComponent)
+    if (handleStyle != null) __obj.updateDynamic("handleStyle")(handleStyle)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (onBrushDomainChange != null) __obj.updateDynamic("onBrushDomainChange")(onBrushDomainChange)
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryBrushContainerProps]
+  }
+}
+

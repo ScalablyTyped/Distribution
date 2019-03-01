@@ -22,3 +22,13 @@ trait ResultSetStats extends js.Object {
   var queryStats: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object ResultSetStats {
+  @scala.inline
+  def apply(queryPlan: QueryPlan = null, queryStats: stdLib.Record[java.lang.String, _] = null): ResultSetStats = {
+    val __obj = js.Dynamic.literal()
+    if (queryPlan != null) __obj.updateDynamic("queryPlan")(queryPlan)
+    if (queryStats != null) __obj.updateDynamic("queryStats")(queryStats)
+    __obj.asInstanceOf[ResultSetStats]
+  }
+}
+

@@ -17,3 +17,32 @@ trait QueueAttributes extends QueueIdentifier {
   var vt: scala.Double
 }
 
+object QueueAttributes {
+  @scala.inline
+  def apply(
+    created: scala.Double,
+    delay: scala.Double,
+    hiddenmsgs: scala.Double,
+    maxsize: scala.Double,
+    modified: scala.Double,
+    msgs: scala.Double,
+    qname: java.lang.String,
+    totalrecv: scala.Double,
+    totalsent: scala.Double,
+    vt: scala.Double
+  ): QueueAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("delay")(delay)
+    __obj.updateDynamic("hiddenmsgs")(hiddenmsgs)
+    __obj.updateDynamic("maxsize")(maxsize)
+    __obj.updateDynamic("modified")(modified)
+    __obj.updateDynamic("msgs")(msgs)
+    __obj.updateDynamic("qname")(qname)
+    __obj.updateDynamic("totalrecv")(totalrecv)
+    __obj.updateDynamic("totalsent")(totalsent)
+    __obj.updateDynamic("vt")(vt)
+    __obj.asInstanceOf[QueueAttributes]
+  }
+}
+

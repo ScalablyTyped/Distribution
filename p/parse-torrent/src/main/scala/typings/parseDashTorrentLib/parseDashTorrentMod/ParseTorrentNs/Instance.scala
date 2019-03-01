@@ -30,3 +30,68 @@ import scala.scalajs.js.annotation._
   var `private`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    infoHash: java.lang.String,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    announce: js.Array[java.lang.String] = null,
+    as: java.lang.String | js.Array[java.lang.String] = null,
+    created: stdLib.Date = null,
+    createdBy: java.lang.String = null,
+    dn: java.lang.String | js.Array[java.lang.String] = null,
+    files: js.Array[
+      parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.ParsedFile
+    ] = null,
+    info: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.TorrentInfo = null,
+    infoBuffer: nodeLib.Buffer = null,
+    infoHashBuffer: nodeLib.Buffer = null,
+    ix: scala.Double | js.Array[scala.Double] = null,
+    keywords: java.lang.String | js.Array[java.lang.String] = null,
+    kt: js.Array[java.lang.String] = null,
+    lastPieceLength: scala.Int | scala.Double = null,
+    length: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    pieceLength: scala.Int | scala.Double = null,
+    pieces: js.Array[java.lang.String] = null,
+    `private`: js.UndefOr[scala.Boolean] = js.undefined,
+    tr: java.lang.String | js.Array[java.lang.String] = null,
+    urlList: js.Array[java.lang.String] = null,
+    ws: java.lang.String | js.Array[java.lang.String] = null,
+    xs: java.lang.String | js.Array[java.lang.String] = null,
+    xt: java.lang.String | js.Array[java.lang.String] = null
+  ): Instance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("constructor")(constructor)
+    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
+    __obj.updateDynamic("infoHash")(infoHash)
+    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    if (announce != null) __obj.updateDynamic("announce")(announce)
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)
+    if (dn != null) __obj.updateDynamic("dn")(dn.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (infoBuffer != null) __obj.updateDynamic("infoBuffer")(infoBuffer)
+    if (infoHashBuffer != null) __obj.updateDynamic("infoHashBuffer")(infoHashBuffer)
+    if (ix != null) __obj.updateDynamic("ix")(ix.asInstanceOf[js.Any])
+    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
+    if (kt != null) __obj.updateDynamic("kt")(kt)
+    if (lastPieceLength != null) __obj.updateDynamic("lastPieceLength")(lastPieceLength.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pieceLength != null) __obj.updateDynamic("pieceLength")(pieceLength.asInstanceOf[js.Any])
+    if (pieces != null) __obj.updateDynamic("pieces")(pieces)
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
+    if (urlList != null) __obj.updateDynamic("urlList")(urlList)
+    if (ws != null) __obj.updateDynamic("ws")(ws.asInstanceOf[js.Any])
+    if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
+    if (xt != null) __obj.updateDynamic("xt")(xt.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Instance]
+  }
+}
+

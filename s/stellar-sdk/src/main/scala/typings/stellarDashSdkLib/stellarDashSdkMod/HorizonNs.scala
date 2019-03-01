@@ -48,7 +48,7 @@ object HorizonNs extends js.Object {
     var trustor: java.lang.String
   }
   
-  trait BalanceLineAsset[T /* <: stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12 */] extends js.Object {
+  trait BalanceLineAsset[T /* <: stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12 */] extends _BalanceLine[T] {
     var asset_code: java.lang.String
     var asset_issuer: java.lang.String
     var asset_type: T
@@ -56,7 +56,8 @@ object HorizonNs extends js.Object {
     var limit: java.lang.String
   }
   
-  trait BalanceLineNative extends js.Object {
+  trait BalanceLineNative
+    extends _BalanceLine[js.Any] {
     var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.native
     var balance: java.lang.String
   }
@@ -223,6 +224,8 @@ object HorizonNs extends js.Object {
     var source_account_sequence: java.lang.String
   }
   
+  trait _BalanceLine[T /* <: stellarDashBaseLib.stellarDashBaseMod.AssetType */] extends js.Object
+  
   @js.native
   object OperationResponseType extends js.Object {
     @js.native
@@ -359,9 +362,9 @@ object HorizonNs extends js.Object {
       ] = js.native
   }
   
-  type BalanceLine[T /* <: stellarDashBaseLib.stellarDashBaseMod.AssetType */] = BalanceLineNative | (BalanceLineAsset[
+  type BalanceLine[T /* <: stellarDashBaseLib.stellarDashBaseMod.AssetType */] = _BalanceLine[T] | (BalanceLineAsset[
     stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12
-  ]) | BalanceLineAsset[T]
+  ])
   type InflationOperationResponse = BaseOperationResponse[OperationResponseType, OperationResponseTypeI]
   type TransactionResponseCollection = ResponseCollection[TransactionResponse]
 }

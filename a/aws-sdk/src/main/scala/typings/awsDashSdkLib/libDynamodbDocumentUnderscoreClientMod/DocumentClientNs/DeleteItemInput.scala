@@ -45,3 +45,32 @@ trait DeleteItemInput extends js.Object {
   var TableName: TableName
 }
 
+object DeleteItemInput {
+  @scala.inline
+  def apply(
+    Key: Key,
+    TableName: TableName,
+    ConditionExpression: ConditionExpression = null,
+    ConditionalOperator: ConditionalOperator = null,
+    Expected: ExpectedAttributeMap = null,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
+    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = null,
+    ReturnValues: ReturnValue = null
+  ): DeleteItemInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Key")(Key)
+    __obj.updateDynamic("TableName")(TableName)
+    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
+    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
+    if (Expected != null) __obj.updateDynamic("Expected")(Expected)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
+    if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])
+    if (ReturnValues != null) __obj.updateDynamic("ReturnValues")(ReturnValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeleteItemInput]
+  }
+}
+

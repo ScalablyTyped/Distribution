@@ -16,3 +16,22 @@ trait Anon_FirstSecondIMapView extends js.Object {
   ]
 }
 
+object Anon_FirstSecondIMapView {
+  @scala.inline
+  def apply(
+    first: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[
+      java.lang.String, 
+      winrtLib.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.NamedResource
+    ],
+    second: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[
+      java.lang.String, 
+      winrtLib.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.NamedResource
+    ]
+  ): Anon_FirstSecondIMapView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("second")(second)
+    __obj.asInstanceOf[Anon_FirstSecondIMapView]
+  }
+}
+

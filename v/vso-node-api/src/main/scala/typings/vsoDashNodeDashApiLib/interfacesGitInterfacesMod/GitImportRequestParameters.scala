@@ -24,3 +24,20 @@ trait GitImportRequestParameters extends js.Object {
   var tfvcSource: GitImportTfvcSource
 }
 
+object GitImportRequestParameters {
+  @scala.inline
+  def apply(
+    deleteServiceEndpointAfterImportIsDone: scala.Boolean,
+    gitSource: GitImportGitSource,
+    serviceEndpointId: java.lang.String,
+    tfvcSource: GitImportTfvcSource
+  ): GitImportRequestParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deleteServiceEndpointAfterImportIsDone")(deleteServiceEndpointAfterImportIsDone)
+    __obj.updateDynamic("gitSource")(gitSource)
+    __obj.updateDynamic("serviceEndpointId")(serviceEndpointId)
+    __obj.updateDynamic("tfvcSource")(tfvcSource)
+    __obj.asInstanceOf[GitImportRequestParameters]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Anon_CornerTypeEllipsoidGranularityPolylinePositions extends js.Object {
   var shapePositions: scala.Double
 }
 
+object Anon_CornerTypeEllipsoidGranularityPolylinePositions {
+  @scala.inline
+  def apply(
+    polylinePositions: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3],
+    shapePositions: scala.Double,
+    cornerType: cesiumLib.cesiumMod.CesiumNs.CornerType = null,
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    granularity: scala.Int | scala.Double = null
+  ): Anon_CornerTypeEllipsoidGranularityPolylinePositions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("polylinePositions")(polylinePositions)
+    __obj.updateDynamic("shapePositions")(shapePositions)
+    if (cornerType != null) __obj.updateDynamic("cornerType")(cornerType)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CornerTypeEllipsoidGranularityPolylinePositions]
+  }
+}
+

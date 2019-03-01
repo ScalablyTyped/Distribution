@@ -54,3 +54,38 @@ trait IInfoboxOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IInfoboxOptions {
+  @scala.inline
+  def apply(
+    actions: js.Array[IInfoboxActions] = null,
+    closeDelayTime: scala.Int | scala.Double = null,
+    description: java.lang.String = null,
+    htmlContent: java.lang.String = null,
+    location: Location = null,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    offset: Point = null,
+    showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showPointer: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): IInfoboxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (closeDelayTime != null) __obj.updateDynamic("closeDelayTime")(closeDelayTime.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
+    if (!js.isUndefined(showPointer)) __obj.updateDynamic("showPointer")(showPointer)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IInfoboxOptions]
+  }
+}
+

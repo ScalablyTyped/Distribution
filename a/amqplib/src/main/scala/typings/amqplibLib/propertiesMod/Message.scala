@@ -11,3 +11,14 @@ trait Message extends js.Object {
   var properties: MessageProperties
 }
 
+object Message {
+  @scala.inline
+  def apply(content: nodeLib.Buffer, fields: MessageFields, properties: MessageProperties): Message = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Message]
+  }
+}
+

@@ -154,3 +154,74 @@ trait Data extends js.Object {
   var xs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 
+object Data {
+  @scala.inline
+  def apply(
+    axes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    classes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    color: js.Function2[
+      /* color */ java.lang.String, 
+      /* d */ js.Any, 
+      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor
+    ] = null,
+    colors: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor | (js.Function1[/* d */ js.Any, java.lang.String | d3DashColorLib.d3DashColorMod.RGBColor])
+    ] = null,
+    columns: js.Array[PrimitiveArray] = null,
+    empty: c3Lib.Anon_Label = null,
+    groups: js.Array[js.Array[java.lang.String]] = null,
+    hide: scala.Boolean | js.Array[java.lang.String] = null,
+    json: js.Object = null,
+    keys: c3Lib.Anon_Value = null,
+    labels: scala.Boolean | c3Lib.Anon_FormatI | c3Lib.Anon_FormatKey = null,
+    mimeType: java.lang.String = null,
+    names: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    onclick: js.Function2[/* d */ js.Any, /* element */ js.Any, scala.Unit] = null,
+    onmouseout: js.Function2[/* d */ js.Any, /* element */ js.UndefOr[js.Any], scala.Unit] = null,
+    onmouseover: js.Function2[/* d */ js.Any, /* element */ js.UndefOr[js.Any], scala.Unit] = null,
+    onselected: js.Function2[/* d */ js.Any, /* element */ js.UndefOr[js.Any], scala.Unit] = null,
+    onunselected: js.Function2[/* d */ js.Any, /* element */ js.UndefOr[js.Any], scala.Unit] = null,
+    order: java.lang.String | (js.Function1[/* repeated */ java.lang.String, scala.Unit]) = null,
+    regions: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    rows: js.Array[PrimitiveArray] = null,
+    selection: c3Lib.Anon_D = null,
+    `type`: java.lang.String = null,
+    types: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    url: java.lang.String = null,
+    x: java.lang.String = null,
+    xFormat: java.lang.String = null,
+    xs: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Data = {
+    val __obj = js.Dynamic.literal()
+    if (axes != null) __obj.updateDynamic("axes")(axes)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (empty != null) __obj.updateDynamic("empty")(empty)
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
+    if (json != null) __obj.updateDynamic("json")(json)
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (onmouseout != null) __obj.updateDynamic("onmouseout")(onmouseout)
+    if (onmouseover != null) __obj.updateDynamic("onmouseover")(onmouseover)
+    if (onselected != null) __obj.updateDynamic("onselected")(onselected)
+    if (onunselected != null) __obj.updateDynamic("onunselected")(onunselected)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (regions != null) __obj.updateDynamic("regions")(regions)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (types != null) __obj.updateDynamic("types")(types)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (x != null) __obj.updateDynamic("x")(x)
+    if (xFormat != null) __obj.updateDynamic("xFormat")(xFormat)
+    if (xs != null) __obj.updateDynamic("xs")(xs)
+    __obj.asInstanceOf[Data]
+  }
+}
+

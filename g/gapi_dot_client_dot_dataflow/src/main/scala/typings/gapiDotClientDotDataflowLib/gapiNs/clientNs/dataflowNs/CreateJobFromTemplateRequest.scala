@@ -22,3 +22,22 @@ trait CreateJobFromTemplateRequest extends js.Object {
   var parameters: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object CreateJobFromTemplateRequest {
+  @scala.inline
+  def apply(
+    environment: RuntimeEnvironment = null,
+    gcsPath: java.lang.String = null,
+    jobName: java.lang.String = null,
+    location: java.lang.String = null,
+    parameters: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): CreateJobFromTemplateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath)
+    if (jobName != null) __obj.updateDynamic("jobName")(jobName)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.asInstanceOf[CreateJobFromTemplateRequest]
+  }
+}
+

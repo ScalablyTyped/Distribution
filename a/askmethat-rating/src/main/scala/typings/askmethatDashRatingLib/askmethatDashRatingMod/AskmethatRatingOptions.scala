@@ -43,3 +43,30 @@ trait AskmethatRatingOptions extends js.Object {
   var step: js.UndefOr[AskmethatRatingSteps] = js.undefined
 }
 
+object AskmethatRatingOptions {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    fontClass: java.lang.String = null,
+    hoverColor: java.lang.String = null,
+    inputName: java.lang.String = null,
+    maxRating: scala.Int | scala.Double = null,
+    minRating: scala.Int | scala.Double = null,
+    popover: askmethatDashRatingLib.distAmtDashRatingDashPopoverMod.AskmethatRatingPopoverOptions = null,
+    readonly: js.UndefOr[scala.Boolean] = js.undefined,
+    step: AskmethatRatingSteps = null
+  ): AskmethatRatingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (fontClass != null) __obj.updateDynamic("fontClass")(fontClass)
+    if (hoverColor != null) __obj.updateDynamic("hoverColor")(hoverColor)
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (maxRating != null) __obj.updateDynamic("maxRating")(maxRating.asInstanceOf[js.Any])
+    if (minRating != null) __obj.updateDynamic("minRating")(minRating.asInstanceOf[js.Any])
+    if (popover != null) __obj.updateDynamic("popover")(popover)
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (step != null) __obj.updateDynamic("step")(step)
+    __obj.asInstanceOf[AskmethatRatingOptions]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Npapi extends js.Object {
   var npapi: scala.Boolean
 }
 
+object Anon_Npapi {
+  @scala.inline
+  def apply(npapi: scala.Boolean): Anon_Npapi = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("npapi")(npapi)
+    __obj.asInstanceOf[Anon_Npapi]
+  }
+}
+

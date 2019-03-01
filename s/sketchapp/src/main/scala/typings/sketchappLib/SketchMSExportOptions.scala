@@ -14,3 +14,24 @@ trait SketchMSExportOptions extends js.Object {
   var shouldTrim: scala.Boolean
 }
 
+object SketchMSExportOptions {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.exportOptions,
+    exportFormats: js.Array[_],
+    includedLayerIds: js.Array[_],
+    layerOptions: scala.Double,
+    shouldTrim: scala.Boolean,
+    do_objectID: java.lang.String = null
+  ): SketchMSExportOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_class")(_class)
+    __obj.updateDynamic("exportFormats")(exportFormats)
+    __obj.updateDynamic("includedLayerIds")(includedLayerIds)
+    __obj.updateDynamic("layerOptions")(layerOptions)
+    __obj.updateDynamic("shouldTrim")(shouldTrim)
+    if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
+    __obj.asInstanceOf[SketchMSExportOptions]
+  }
+}
+

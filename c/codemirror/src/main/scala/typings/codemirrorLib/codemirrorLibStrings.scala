@@ -40,37 +40,46 @@ object codemirrorLibStrings {
   sealed trait clear extends js.Object
   
   @js.native
-  sealed trait contextmenu extends js.Object
+  sealed trait contextmenu
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait copy extends js.Object
+  sealed trait copy
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
   sealed trait cursorActivity extends js.Object
   
   @js.native
-  sealed trait cut extends js.Object
+  sealed trait cut
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait dblclick extends js.Object
+  sealed trait dblclick
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
   sealed trait delete extends js.Object
   
   @js.native
-  sealed trait dragenter extends js.Object
+  sealed trait dragenter
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait dragleave extends js.Object
+  sealed trait dragleave
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait dragover extends js.Object
+  sealed trait dragover
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait dragstart extends js.Object
+  sealed trait dragstart
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait drop extends js.Object
+  sealed trait drop
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
   sealed trait focus extends js.Object
@@ -82,25 +91,32 @@ object codemirrorLibStrings {
   sealed trait hide extends js.Object
   
   @js.native
-  sealed trait keydown extends js.Object
+  sealed trait keydown
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait keypress extends js.Object
+  sealed trait keypress
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait keyup extends js.Object
+  sealed trait keyup
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait local extends js.Object
+  sealed trait local
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.CoordsMode
   
   @js.native
-  sealed trait mousedown extends js.Object
+  sealed trait mousedown
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
-  sealed trait page extends js.Object
+  sealed trait page
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.CoordsMode
   
   @js.native
-  sealed trait paste extends js.Object
+  sealed trait paste
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
   sealed trait redraw extends js.Object
@@ -115,7 +131,8 @@ object codemirrorLibStrings {
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchstart
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
   sealed trait unhide extends js.Object
@@ -127,7 +144,8 @@ object codemirrorLibStrings {
   sealed trait viewportChange extends js.Object
   
   @js.native
-  sealed trait window extends js.Object
+  sealed trait window
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.CoordsMode
   
   @scala.inline
   def CodeMirrorDOTPASS: CodeMirrorDOTPASS = "CodeMirror.PASS".asInstanceOf[CodeMirrorDOTPASS]

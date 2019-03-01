@@ -40,3 +40,28 @@ trait TfvcChangesetRef extends js.Object {
   var url: java.lang.String
 }
 
+object TfvcChangesetRef {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    author: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    changesetId: scala.Double,
+    checkedInBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    comment: java.lang.String,
+    commentTruncated: scala.Boolean,
+    createdDate: stdLib.Date,
+    url: java.lang.String
+  ): TfvcChangesetRef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("author")(author)
+    __obj.updateDynamic("changesetId")(changesetId)
+    __obj.updateDynamic("checkedInBy")(checkedInBy)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("commentTruncated")(commentTruncated)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TfvcChangesetRef]
+  }
+}
+

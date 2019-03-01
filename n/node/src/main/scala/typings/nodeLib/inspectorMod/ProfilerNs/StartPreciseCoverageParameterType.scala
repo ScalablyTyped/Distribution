@@ -16,3 +16,16 @@ trait StartPreciseCoverageParameterType extends js.Object {
   var detailed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StartPreciseCoverageParameterType {
+  @scala.inline
+  def apply(
+    callCount: js.UndefOr[scala.Boolean] = js.undefined,
+    detailed: js.UndefOr[scala.Boolean] = js.undefined
+  ): StartPreciseCoverageParameterType = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(callCount)) __obj.updateDynamic("callCount")(callCount)
+    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed)
+    __obj.asInstanceOf[StartPreciseCoverageParameterType]
+  }
+}
+

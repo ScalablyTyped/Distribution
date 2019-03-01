@@ -14,3 +14,24 @@ trait FusionTablesLayerOptions extends js.Object {
   var suppressInfoWindows: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FusionTablesLayerOptions {
+  @scala.inline
+  def apply(
+    clickable: js.UndefOr[scala.Boolean] = js.undefined,
+    heatmap: FusionTablesHeatmap = null,
+    map: Map = null,
+    query: FusionTablesQuery = null,
+    styles: js.Array[FusionTablesStyle] = null,
+    suppressInfoWindows: js.UndefOr[scala.Boolean] = js.undefined
+  ): FusionTablesLayerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (heatmap != null) __obj.updateDynamic("heatmap")(heatmap)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (!js.isUndefined(suppressInfoWindows)) __obj.updateDynamic("suppressInfoWindows")(suppressInfoWindows)
+    __obj.asInstanceOf[FusionTablesLayerOptions]
+  }
+}
+

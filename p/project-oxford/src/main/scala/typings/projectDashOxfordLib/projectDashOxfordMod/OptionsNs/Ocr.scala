@@ -15,3 +15,20 @@ trait Ocr extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Ocr {
+  @scala.inline
+  def apply(
+    detectOrientation: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    path: java.lang.String = null,
+    url: java.lang.String = null
+  ): Ocr = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(detectOrientation)) __obj.updateDynamic("detectOrientation")(detectOrientation)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Ocr]
+  }
+}
+

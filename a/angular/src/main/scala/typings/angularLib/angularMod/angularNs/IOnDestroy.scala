@@ -18,3 +18,12 @@ trait IOnDestroy extends js.Object {
   def $onDestroy(): scala.Unit
 }
 
+object IOnDestroy {
+  @scala.inline
+  def apply($onDestroy: js.Function0[scala.Unit]): IOnDestroy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$onDestroy")($onDestroy)
+    __obj.asInstanceOf[IOnDestroy]
+  }
+}
+

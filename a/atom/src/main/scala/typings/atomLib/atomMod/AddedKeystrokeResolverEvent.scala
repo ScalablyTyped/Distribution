@@ -26,3 +26,20 @@ trait AddedKeystrokeResolverEvent extends js.Object {
   var layoutName: java.lang.String
 }
 
+object AddedKeystrokeResolverEvent {
+  @scala.inline
+  def apply(
+    event: stdLib.KeyboardEvent,
+    keymap: js.Object,
+    keystroke: java.lang.String,
+    layoutName: java.lang.String
+  ): AddedKeystrokeResolverEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("keymap")(keymap)
+    __obj.updateDynamic("keystroke")(keystroke)
+    __obj.updateDynamic("layoutName")(layoutName)
+    __obj.asInstanceOf[AddedKeystrokeResolverEvent]
+  }
+}
+

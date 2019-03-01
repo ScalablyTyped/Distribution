@@ -12,3 +12,13 @@ trait TextEvent
   var dummy1: scala.Double
 }
 
+object TextEvent {
+  @scala.inline
+  def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, dummy1: scala.Double): TextEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("dummy1")(dummy1)
+    __obj.asInstanceOf[TextEvent]
+  }
+}
+

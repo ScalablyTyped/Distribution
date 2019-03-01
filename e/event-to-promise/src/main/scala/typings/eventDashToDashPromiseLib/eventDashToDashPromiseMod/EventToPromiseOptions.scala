@@ -14,3 +14,18 @@ trait EventToPromiseOptions extends js.Object {
   var ignoreErrors: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EventToPromiseOptions {
+  @scala.inline
+  def apply(
+    array: js.UndefOr[scala.Boolean] = js.undefined,
+    error: java.lang.String = null,
+    ignoreErrors: js.UndefOr[scala.Boolean] = js.undefined
+  ): EventToPromiseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
+    __obj.asInstanceOf[EventToPromiseOptions]
+  }
+}
+

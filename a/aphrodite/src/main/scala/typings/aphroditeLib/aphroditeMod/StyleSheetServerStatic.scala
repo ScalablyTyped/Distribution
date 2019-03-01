@@ -12,3 +12,12 @@ trait StyleSheetServerStatic extends js.Object {
   def renderStatic(renderFunc: js.Function0[java.lang.String]): StaticRendererResult
 }
 
+object StyleSheetServerStatic {
+  @scala.inline
+  def apply(renderStatic: js.Function1[js.Function0[java.lang.String], StaticRendererResult]): StyleSheetServerStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderStatic")(renderStatic)
+    __obj.asInstanceOf[StyleSheetServerStatic]
+  }
+}
+

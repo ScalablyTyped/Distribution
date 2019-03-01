@@ -14,3 +14,18 @@ trait Anon_Cause extends js.Object {
   var removed: scala.Boolean
 }
 
+object Anon_Cause {
+  @scala.inline
+  def apply(
+    cause: firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.OnChangedCause,
+    cookie: firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.Cookie,
+    removed: scala.Boolean
+  ): Anon_Cause = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cause")(cause)
+    __obj.updateDynamic("cookie")(cookie)
+    __obj.updateDynamic("removed")(removed)
+    __obj.asInstanceOf[Anon_Cause]
+  }
+}
+

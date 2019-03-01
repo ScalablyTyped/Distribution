@@ -12,3 +12,13 @@ trait MetricValueSet extends js.Object {
   var metricValues: js.UndefOr[js.Array[MetricValue]] = js.undefined
 }
 
+object MetricValueSet {
+  @scala.inline
+  def apply(metricName: java.lang.String = null, metricValues: js.Array[MetricValue] = null): MetricValueSet = {
+    val __obj = js.Dynamic.literal()
+    if (metricName != null) __obj.updateDynamic("metricName")(metricName)
+    if (metricValues != null) __obj.updateDynamic("metricValues")(metricValues)
+    __obj.asInstanceOf[MetricValueSet]
+  }
+}
+

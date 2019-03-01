@@ -19,3 +19,16 @@ trait GetSecurityGroupsArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetSecurityGroupsArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetSecurityGroupsArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetSecurityGroupsArgs]
+  }
+}
+

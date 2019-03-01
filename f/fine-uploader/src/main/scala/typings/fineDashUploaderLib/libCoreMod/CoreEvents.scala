@@ -198,3 +198,56 @@ trait CoreEvents extends js.Object {
   var onValidateBatch: js.UndefOr[OnValidateBatch] = js.undefined
 }
 
+object CoreEvents {
+  @scala.inline
+  def apply(
+    onAllComplete: OnAllComplete = null,
+    onAutoRetry: OnAutoRetry = null,
+    onCancel: OnCancel = null,
+    onComplete: OnComplete = null,
+    onDelete: OnDelete = null,
+    onDeleteComplete: OnDeleteComplete = null,
+    onError: OnError = null,
+    onManualRetry: OnManualRetry = null,
+    onPasteReceived: OnPasteReceived = null,
+    onProgress: OnProgress = null,
+    onResume: OnResume = null,
+    onSessionRequestComplete: OnSessionRequestComplete = null,
+    onStatusChange: OnStatusChange = null,
+    onSubmit: OnSubmit = null,
+    onSubmitDelete: OnSubmitDelete = null,
+    onSubmitted: OnSubmitted = null,
+    onTotalProgress: OnTotalProgress = null,
+    onUpload: OnUpload = null,
+    onUploadChunk: OnUploadChunk = null,
+    onUploadChunkSuccess: OnUploadChunkSuccess = null,
+    onValidate: OnValidate = null,
+    onValidateBatch: OnValidateBatch = null
+  ): CoreEvents = {
+    val __obj = js.Dynamic.literal()
+    if (onAllComplete != null) __obj.updateDynamic("onAllComplete")(onAllComplete)
+    if (onAutoRetry != null) __obj.updateDynamic("onAutoRetry")(onAutoRetry)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
+    if (onDeleteComplete != null) __obj.updateDynamic("onDeleteComplete")(onDeleteComplete)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onManualRetry != null) __obj.updateDynamic("onManualRetry")(onManualRetry)
+    if (onPasteReceived != null) __obj.updateDynamic("onPasteReceived")(onPasteReceived)
+    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onResume != null) __obj.updateDynamic("onResume")(onResume)
+    if (onSessionRequestComplete != null) __obj.updateDynamic("onSessionRequestComplete")(onSessionRequestComplete)
+    if (onStatusChange != null) __obj.updateDynamic("onStatusChange")(onStatusChange)
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
+    if (onSubmitDelete != null) __obj.updateDynamic("onSubmitDelete")(onSubmitDelete)
+    if (onSubmitted != null) __obj.updateDynamic("onSubmitted")(onSubmitted)
+    if (onTotalProgress != null) __obj.updateDynamic("onTotalProgress")(onTotalProgress)
+    if (onUpload != null) __obj.updateDynamic("onUpload")(onUpload)
+    if (onUploadChunk != null) __obj.updateDynamic("onUploadChunk")(onUploadChunk)
+    if (onUploadChunkSuccess != null) __obj.updateDynamic("onUploadChunkSuccess")(onUploadChunkSuccess)
+    if (onValidate != null) __obj.updateDynamic("onValidate")(onValidate)
+    if (onValidateBatch != null) __obj.updateDynamic("onValidateBatch")(onValidateBatch)
+    __obj.asInstanceOf[CoreEvents]
+  }
+}
+

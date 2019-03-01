@@ -26,3 +26,24 @@ trait ActivateEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActivateEventArgs {
+  @scala.inline
+  def apply(
+    activeHeader: js.Any = null,
+    activeIndex: scala.Int | scala.Double = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    isInteraction: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    `type`: java.lang.String = null
+  ): ActivateEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (activeHeader != null) __obj.updateDynamic("activeHeader")(activeHeader)
+    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(isInteraction)) __obj.updateDynamic("isInteraction")(isInteraction)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ActivateEventArgs]
+  }
+}
+

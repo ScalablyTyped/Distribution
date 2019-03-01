@@ -95,3 +95,53 @@ trait IOptions[T] extends js.Object {
   var unique: scala.Boolean
 }
 
+object IOptions {
+  @scala.inline
+  def apply[T](
+    absolute: scala.Boolean,
+    brace: scala.Boolean,
+    `case`: scala.Boolean,
+    cwd: java.lang.String,
+    deep: scala.Double | scala.Boolean,
+    dot: scala.Boolean,
+    extension: scala.Boolean,
+    followSymlinkedDirectories: scala.Boolean,
+    globstar: scala.Boolean,
+    ignore: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
+    markDirectories: scala.Boolean,
+    matchBase: scala.Boolean,
+    nobrace: scala.Boolean,
+    nocase: scala.Boolean,
+    noext: scala.Boolean,
+    noglobstar: scala.Boolean,
+    onlyDirectories: scala.Boolean,
+    onlyFiles: scala.Boolean,
+    stats: scala.Boolean,
+    unique: scala.Boolean,
+    transform: TransformFunction[T] = null
+  ): IOptions[T] = {
+    val __obj = js.Dynamic.literal(`case` = `case`)
+    __obj.updateDynamic("absolute")(absolute)
+    __obj.updateDynamic("brace")(brace)
+    __obj.updateDynamic("cwd")(cwd)
+    __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    __obj.updateDynamic("dot")(dot)
+    __obj.updateDynamic("extension")(extension)
+    __obj.updateDynamic("followSymlinkedDirectories")(followSymlinkedDirectories)
+    __obj.updateDynamic("globstar")(globstar)
+    __obj.updateDynamic("ignore")(ignore)
+    __obj.updateDynamic("markDirectories")(markDirectories)
+    __obj.updateDynamic("matchBase")(matchBase)
+    __obj.updateDynamic("nobrace")(nobrace)
+    __obj.updateDynamic("nocase")(nocase)
+    __obj.updateDynamic("noext")(noext)
+    __obj.updateDynamic("noglobstar")(noglobstar)
+    __obj.updateDynamic("onlyDirectories")(onlyDirectories)
+    __obj.updateDynamic("onlyFiles")(onlyFiles)
+    __obj.updateDynamic("stats")(stats)
+    __obj.updateDynamic("unique")(unique)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[IOptions[T]]
+  }
+}
+

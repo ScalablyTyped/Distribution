@@ -18,3 +18,20 @@ trait TriggerState extends js.Object {
   ] = js.undefined
 }
 
+object TriggerState {
+  @scala.inline
+  def apply(
+    configurationId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    repositoryName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    triggers: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BranchesCustomData]]
+    ] = null
+  ): TriggerState = {
+    val __obj = js.Dynamic.literal()
+    if (configurationId != null) __obj.updateDynamic("configurationId")(configurationId.asInstanceOf[js.Any])
+    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
+    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TriggerState]
+  }
+}
+

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object OrderedMapNs extends js.Object {
   /**
-       * True if the provided value is an OrderedMap.
-       */
-  def isOrderedMap(maybeOrderedMap: js.Any): scala.Boolean = js.native
+    * True if the provided value is an OrderedMap.
+    */
+  def isOrderedMap(maybeOrderedMap: js.Any): /* is immutable.immutable.OrderedMap<any, any> */ scala.Boolean = js.native
 }
 

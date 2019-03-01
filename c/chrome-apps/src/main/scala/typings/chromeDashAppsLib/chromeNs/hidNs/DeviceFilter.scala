@@ -17,3 +17,20 @@ trait DeviceFilter extends js.Object {
   var vendorId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object DeviceFilter {
+  @scala.inline
+  def apply(
+    productId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    usage: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    usagePage: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    vendorId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): DeviceFilter = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(productId)) __obj.updateDynamic("productId")(productId)
+    if (!js.isUndefined(usage)) __obj.updateDynamic("usage")(usage)
+    if (!js.isUndefined(usagePage)) __obj.updateDynamic("usagePage")(usagePage)
+    if (!js.isUndefined(vendorId)) __obj.updateDynamic("vendorId")(vendorId)
+    __obj.asInstanceOf[DeviceFilter]
+  }
+}
+

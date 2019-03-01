@@ -13,70 +13,90 @@ object commonmarkLibStrings {
   sealed trait DOT extends js.Object
   
   @js.native
-  sealed trait block_quote extends js.Object
+  sealed trait block_quote
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
   sealed trait bullet extends js.Object
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait code
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait code_block extends js.Object
+  sealed trait code_block
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait custom_block extends js.Object
+  sealed trait custom_block
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait custom_inline extends js.Object
+  sealed trait custom_inline
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait document extends js.Object
+  sealed trait document
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait emph extends js.Object
+  sealed trait emph
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait heading extends js.Object
+  sealed trait heading
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait html_block extends js.Object
+  sealed trait html_block
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait html_inline extends js.Object
+  sealed trait html_inline
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait item extends js.Object
+  sealed trait item
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait linebreak extends js.Object
+  sealed trait linebreak
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait list
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
   sealed trait ordered extends js.Object
   
   @js.native
-  sealed trait paragraph extends js.Object
+  sealed trait paragraph
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait softbreak extends js.Object
+  sealed trait softbreak
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait strong extends js.Object
+  sealed trait strong
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @js.native
-  sealed trait thematic_break extends js.Object
+  sealed trait thematic_break
+    extends commonmarkLib.commonmarkMod.NodeType
   
   @scala.inline
   def `)`: `)` = ")".asInstanceOf[`)`]

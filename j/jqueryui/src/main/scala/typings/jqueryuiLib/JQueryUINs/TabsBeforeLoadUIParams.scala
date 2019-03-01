@@ -12,3 +12,20 @@ trait TabsBeforeLoadUIParams extends js.Object {
   var tab: jqueryuiLib.JQuery
 }
 
+object TabsBeforeLoadUIParams {
+  @scala.inline
+  def apply(
+    ajaxSettings: js.Any,
+    jqXHR: jqueryLib.JQueryXHR,
+    panel: jqueryuiLib.JQuery,
+    tab: jqueryuiLib.JQuery
+  ): TabsBeforeLoadUIParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ajaxSettings")(ajaxSettings)
+    __obj.updateDynamic("jqXHR")(jqXHR)
+    __obj.updateDynamic("panel")(panel)
+    __obj.updateDynamic("tab")(tab)
+    __obj.asInstanceOf[TabsBeforeLoadUIParams]
+  }
+}
+

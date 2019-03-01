@@ -10,3 +10,13 @@ trait CitySearchResult extends js.Object {
   var city: java.lang.String
 }
 
+object CitySearchResult {
+  @scala.inline
+  def apply(bounds: Bounds, city: java.lang.String): CitySearchResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("city")(city)
+    __obj.asInstanceOf[CitySearchResult]
+  }
+}
+

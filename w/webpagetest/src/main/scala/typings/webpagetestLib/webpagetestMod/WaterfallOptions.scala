@@ -26,3 +26,30 @@ trait WaterfallOptions extends js.Object {
   var requests: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WaterfallOptions {
+  @scala.inline
+  def apply(
+    chartType: java.lang.String = null,
+    chartWidth: scala.Int | scala.Double = null,
+    colorByMime: js.UndefOr[scala.Boolean] = js.undefined,
+    maxTime: scala.Int | scala.Double = null,
+    noBandwidth: js.UndefOr[scala.Boolean] = js.undefined,
+    noCPU: js.UndefOr[scala.Boolean] = js.undefined,
+    noEllipsis: js.UndefOr[scala.Boolean] = js.undefined,
+    noLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    requests: java.lang.String = null
+  ): WaterfallOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chartType != null) __obj.updateDynamic("chartType")(chartType)
+    if (chartWidth != null) __obj.updateDynamic("chartWidth")(chartWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorByMime)) __obj.updateDynamic("colorByMime")(colorByMime)
+    if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(noBandwidth)) __obj.updateDynamic("noBandwidth")(noBandwidth)
+    if (!js.isUndefined(noCPU)) __obj.updateDynamic("noCPU")(noCPU)
+    if (!js.isUndefined(noEllipsis)) __obj.updateDynamic("noEllipsis")(noEllipsis)
+    if (!js.isUndefined(noLabels)) __obj.updateDynamic("noLabels")(noLabels)
+    if (requests != null) __obj.updateDynamic("requests")(requests)
+    __obj.asInstanceOf[WaterfallOptions]
+  }
+}
+

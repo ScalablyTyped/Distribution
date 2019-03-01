@@ -12,3 +12,12 @@ trait GetPossibleBreakpointsReturnType extends js.Object {
   var locations: js.Array[BreakLocation]
 }
 
+object GetPossibleBreakpointsReturnType {
+  @scala.inline
+  def apply(locations: js.Array[BreakLocation]): GetPossibleBreakpointsReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("locations")(locations)
+    __obj.asInstanceOf[GetPossibleBreakpointsReturnType]
+  }
+}
+

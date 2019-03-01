@@ -24,3 +24,20 @@ trait SelectionSettings extends js.Object {
   var selectionType: js.UndefOr[SelectionType | java.lang.String] = js.undefined
 }
 
+object SelectionSettings {
+  @scala.inline
+  def apply(
+    enableHierarchySelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSelectAll: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionMode: SelectionMode | java.lang.String = null,
+    selectionType: SelectionType | java.lang.String = null
+  ): SelectionSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableHierarchySelection)) __obj.updateDynamic("enableHierarchySelection")(enableHierarchySelection)
+    if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll)
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectionSettings]
+  }
+}
+

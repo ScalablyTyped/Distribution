@@ -90,3 +90,39 @@ trait IColumnDef[TEntity] extends js.Object {
   var enableCellEditOnFocus: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IColumnDef {
+  @scala.inline
+  def apply[TEntity](
+    cellEditableCondition: js.Any | uiDashGridLib.Anon_Scope = null,
+    editDropdownFilter: java.lang.String = null,
+    editDropdownIdLabel: java.lang.String = null,
+    editDropdownOptionsArray: js.Array[IEditDropdown] = null,
+    editDropdownRowEntityOptionsArrayPath: java.lang.String = null,
+    editDropdownValueLabel: java.lang.String = null,
+    editFileChooserCallback: js.Function3[
+      /* gridRow */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], 
+      /* gridCol */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity], 
+      /* files */ stdLib.FileList, 
+      scala.Unit
+    ] = null,
+    editModelField: java.lang.String = null,
+    editableCellTemplate: java.lang.String = null,
+    enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCellEditOnFocus: js.UndefOr[scala.Boolean] = js.undefined
+  ): IColumnDef[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    if (cellEditableCondition != null) __obj.updateDynamic("cellEditableCondition")(cellEditableCondition.asInstanceOf[js.Any])
+    if (editDropdownFilter != null) __obj.updateDynamic("editDropdownFilter")(editDropdownFilter)
+    if (editDropdownIdLabel != null) __obj.updateDynamic("editDropdownIdLabel")(editDropdownIdLabel)
+    if (editDropdownOptionsArray != null) __obj.updateDynamic("editDropdownOptionsArray")(editDropdownOptionsArray)
+    if (editDropdownRowEntityOptionsArrayPath != null) __obj.updateDynamic("editDropdownRowEntityOptionsArrayPath")(editDropdownRowEntityOptionsArrayPath)
+    if (editDropdownValueLabel != null) __obj.updateDynamic("editDropdownValueLabel")(editDropdownValueLabel)
+    if (editFileChooserCallback != null) __obj.updateDynamic("editFileChooserCallback")(editFileChooserCallback)
+    if (editModelField != null) __obj.updateDynamic("editModelField")(editModelField)
+    if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate)
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
+    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus)
+    __obj.asInstanceOf[IColumnDef[TEntity]]
+  }
+}
+

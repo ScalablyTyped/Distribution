@@ -81,3 +81,33 @@ trait IgGridUpdatingColumnSetting
   var validation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgGridUpdatingColumnSetting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridUpdatingColumnSetting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columnKey: java.lang.String = null,
+    defaultValue: js.Any = null,
+    editorOptions: js.Any = null,
+    editorProvider: js.Any = null,
+    editorType: java.lang.String = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    validation: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgGridUpdatingColumnSetting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions)
+    if (editorProvider != null) __obj.updateDynamic("editorProvider")(editorProvider)
+    if (editorType != null) __obj.updateDynamic("editorType")(editorType)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(validation)) __obj.updateDynamic("validation")(validation)
+    __obj.asInstanceOf[IgGridUpdatingColumnSetting]
+  }
+}
+

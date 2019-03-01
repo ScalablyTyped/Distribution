@@ -14,3 +14,24 @@ trait ConnectionConfig extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConnectionConfig {
+  @scala.inline
+  def apply(
+    connectionString: java.lang.String = null,
+    database: java.lang.String = null,
+    host: java.lang.String = null,
+    password: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    user: java.lang.String = null
+  ): ConnectionConfig = {
+    val __obj = js.Dynamic.literal()
+    if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString)
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[ConnectionConfig]
+  }
+}
+

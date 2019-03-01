@@ -16,3 +16,28 @@ trait ContentPanelDescriptor extends js.Object {
   var title: java.lang.String
 }
 
+object ContentPanelDescriptor {
+  @scala.inline
+  def apply(
+    el: stdLib.HTMLElement,
+    iconUrl: java.lang.String,
+    title: java.lang.String,
+    appIconUrl: java.lang.String = null,
+    appName: java.lang.String = null,
+    hideTitleBar: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    orderHint: scala.Int | scala.Double = null
+  ): ContentPanelDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("el")(el)
+    __obj.updateDynamic("iconUrl")(iconUrl)
+    __obj.updateDynamic("title")(title)
+    if (appIconUrl != null) __obj.updateDynamic("appIconUrl")(appIconUrl)
+    if (appName != null) __obj.updateDynamic("appName")(appName)
+    if (!js.isUndefined(hideTitleBar)) __obj.updateDynamic("hideTitleBar")(hideTitleBar)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContentPanelDescriptor]
+  }
+}
+

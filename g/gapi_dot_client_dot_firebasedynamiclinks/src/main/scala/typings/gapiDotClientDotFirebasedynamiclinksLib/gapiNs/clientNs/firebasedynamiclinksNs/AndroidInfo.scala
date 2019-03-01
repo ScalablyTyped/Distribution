@@ -19,3 +19,20 @@ trait AndroidInfo extends js.Object {
   var androidPackageName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AndroidInfo {
+  @scala.inline
+  def apply(
+    androidFallbackLink: java.lang.String = null,
+    androidLink: java.lang.String = null,
+    androidMinPackageVersionCode: java.lang.String = null,
+    androidPackageName: java.lang.String = null
+  ): AndroidInfo = {
+    val __obj = js.Dynamic.literal()
+    if (androidFallbackLink != null) __obj.updateDynamic("androidFallbackLink")(androidFallbackLink)
+    if (androidLink != null) __obj.updateDynamic("androidLink")(androidLink)
+    if (androidMinPackageVersionCode != null) __obj.updateDynamic("androidMinPackageVersionCode")(androidMinPackageVersionCode)
+    if (androidPackageName != null) __obj.updateDynamic("androidPackageName")(androidPackageName)
+    __obj.asInstanceOf[AndroidInfo]
+  }
+}
+

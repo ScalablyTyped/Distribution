@@ -12,3 +12,12 @@ trait LoggedOutOptions extends js.Object {
   var redirectTo: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LoggedOutOptions {
+  @scala.inline
+  def apply(redirectTo: java.lang.String = null): LoggedOutOptions = {
+    val __obj = js.Dynamic.literal()
+    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo)
+    __obj.asInstanceOf[LoggedOutOptions]
+  }
+}
+

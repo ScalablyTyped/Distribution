@@ -43,3 +43,22 @@ trait Options extends js.Object {
   var regExpOptions: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String = null,
+    ignoreCase: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null,
+    maxMatchLen: scala.Int | scala.Double = null,
+    regExpOptions: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (maxMatchLen != null) __obj.updateDynamic("maxMatchLen")(maxMatchLen.asInstanceOf[js.Any])
+    if (regExpOptions != null) __obj.updateDynamic("regExpOptions")(regExpOptions)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -34,3 +34,14 @@ trait Caret extends js.Object {
   var SecondaryCaretIndex: scala.Double
 }
 
+object Caret {
+  @scala.inline
+  def apply(CaretAngle: scala.Double, MainCaretIndex: scala.Double, SecondaryCaretIndex: scala.Double): Caret = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CaretAngle")(CaretAngle)
+    __obj.updateDynamic("MainCaretIndex")(MainCaretIndex)
+    __obj.updateDynamic("SecondaryCaretIndex")(SecondaryCaretIndex)
+    __obj.asInstanceOf[Caret]
+  }
+}
+

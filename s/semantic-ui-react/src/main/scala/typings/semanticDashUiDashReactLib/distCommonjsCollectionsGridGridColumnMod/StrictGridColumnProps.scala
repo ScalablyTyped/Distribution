@@ -38,3 +38,42 @@ trait StrictGridColumnProps extends js.Object {
   var width: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS] = js.undefined
 }
 
+object StrictGridColumnProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    color: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS = null,
+    computer: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null,
+    floated: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticFLOATS = null,
+    largeScreen: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null,
+    mobile: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null,
+    only: GridOnlyProp = null,
+    stretched: js.UndefOr[scala.Boolean] = js.undefined,
+    tablet: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null,
+    textAlign: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTEXTALIGNMENTS = null,
+    verticalAlign: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS = null,
+    widescreen: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null,
+    width: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null
+  ): StrictGridColumnProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (computer != null) __obj.updateDynamic("computer")(computer)
+    if (floated != null) __obj.updateDynamic("floated")(floated)
+    if (largeScreen != null) __obj.updateDynamic("largeScreen")(largeScreen)
+    if (mobile != null) __obj.updateDynamic("mobile")(mobile)
+    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (!js.isUndefined(stretched)) __obj.updateDynamic("stretched")(stretched)
+    if (tablet != null) __obj.updateDynamic("tablet")(tablet)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (widescreen != null) __obj.updateDynamic("widescreen")(widescreen)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[StrictGridColumnProps]
+  }
+}
+

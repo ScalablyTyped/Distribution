@@ -17,3 +17,30 @@ trait ClassModel[T] extends js.Object {
   var secured: js.UndefOr[meteorDashAstronomyLib.Anon_Insert | scala.Boolean] = js.undefined
 }
 
+object ClassModel {
+  @scala.inline
+  def apply[T](
+    fields: Fields[T],
+    name: java.lang.String,
+    behaviors: js.Object = null,
+    collection: meteorLib.MongoNs.Collection[T] = null,
+    events: js.Object = null,
+    helpers: Helpers[T] = null,
+    indexes: js.Object = null,
+    meteorMethods: js.Object = null,
+    secured: meteorDashAstronomyLib.Anon_Insert | scala.Boolean = null
+  ): ClassModel[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("name")(name)
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
+    if (collection != null) __obj.updateDynamic("collection")(collection)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (helpers != null) __obj.updateDynamic("helpers")(helpers)
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
+    if (meteorMethods != null) __obj.updateDynamic("meteorMethods")(meteorMethods)
+    if (secured != null) __obj.updateDynamic("secured")(secured.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClassModel[T]]
+  }
+}
+

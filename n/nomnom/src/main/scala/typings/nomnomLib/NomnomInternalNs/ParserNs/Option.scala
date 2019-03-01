@@ -64,3 +64,40 @@ trait Option extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    abbr: java.lang.String = null,
+    callback: js.Function1[/* option */ js.Any, java.lang.String] = null,
+    choices: js.Array[java.lang.String] = null,
+    default: js.Any = null,
+    flag: js.UndefOr[scala.Boolean] = js.undefined,
+    full: java.lang.String = null,
+    help: java.lang.String = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    list: js.UndefOr[scala.Boolean] = js.undefined,
+    metavar: java.lang.String = null,
+    position: scala.Int | scala.Double = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    string: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    if (abbr != null) __obj.updateDynamic("abbr")(abbr)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (choices != null) __obj.updateDynamic("choices")(choices)
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (!js.isUndefined(flag)) __obj.updateDynamic("flag")(flag)
+    if (full != null) __obj.updateDynamic("full")(full)
+    if (help != null) __obj.updateDynamic("help")(help)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(list)) __obj.updateDynamic("list")(list)
+    if (metavar != null) __obj.updateDynamic("metavar")(metavar)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (string != null) __obj.updateDynamic("string")(string)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Option]
+  }
+}
+

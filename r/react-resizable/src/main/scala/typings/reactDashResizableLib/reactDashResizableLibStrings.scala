@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object reactDashResizableLibStrings {
   @js.native
-  sealed trait both extends js.Object
+  sealed trait both
+    extends reactDashResizableLib.reactDashResizableMod.Axis
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashResizableLib.reactDashResizableMod.Axis
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait x
+    extends reactDashResizableLib.reactDashResizableMod.Axis
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends reactDashResizableLib.reactDashResizableMod.Axis
   
   @scala.inline
   def both: both = "both".asInstanceOf[both]

@@ -12,3 +12,13 @@ trait OperationErrors extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OperationErrors {
+  @scala.inline
+  def apply(errors: js.Array[OperationError] = null, kind: java.lang.String = null): OperationErrors = {
+    val __obj = js.Dynamic.literal()
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[OperationErrors]
+  }
+}
+

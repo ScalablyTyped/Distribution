@@ -80,3 +80,46 @@ trait VpcState extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object VpcState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    assignGeneratedIpv6CidrBlock: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    cidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultNetworkAclId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultSecurityGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dhcpOptionsId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enableClassiclink: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableClassiclinkDnsSupport: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableDnsHostnames: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableDnsSupport: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    instanceTenancy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipv6AssociationId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipv6CidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    mainRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ownerId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): VpcState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (assignGeneratedIpv6CidrBlock != null) __obj.updateDynamic("assignGeneratedIpv6CidrBlock")(assignGeneratedIpv6CidrBlock.asInstanceOf[js.Any])
+    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
+    if (defaultNetworkAclId != null) __obj.updateDynamic("defaultNetworkAclId")(defaultNetworkAclId.asInstanceOf[js.Any])
+    if (defaultRouteTableId != null) __obj.updateDynamic("defaultRouteTableId")(defaultRouteTableId.asInstanceOf[js.Any])
+    if (defaultSecurityGroupId != null) __obj.updateDynamic("defaultSecurityGroupId")(defaultSecurityGroupId.asInstanceOf[js.Any])
+    if (dhcpOptionsId != null) __obj.updateDynamic("dhcpOptionsId")(dhcpOptionsId.asInstanceOf[js.Any])
+    if (enableClassiclink != null) __obj.updateDynamic("enableClassiclink")(enableClassiclink.asInstanceOf[js.Any])
+    if (enableClassiclinkDnsSupport != null) __obj.updateDynamic("enableClassiclinkDnsSupport")(enableClassiclinkDnsSupport.asInstanceOf[js.Any])
+    if (enableDnsHostnames != null) __obj.updateDynamic("enableDnsHostnames")(enableDnsHostnames.asInstanceOf[js.Any])
+    if (enableDnsSupport != null) __obj.updateDynamic("enableDnsSupport")(enableDnsSupport.asInstanceOf[js.Any])
+    if (instanceTenancy != null) __obj.updateDynamic("instanceTenancy")(instanceTenancy.asInstanceOf[js.Any])
+    if (ipv6AssociationId != null) __obj.updateDynamic("ipv6AssociationId")(ipv6AssociationId.asInstanceOf[js.Any])
+    if (ipv6CidrBlock != null) __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock.asInstanceOf[js.Any])
+    if (mainRouteTableId != null) __obj.updateDynamic("mainRouteTableId")(mainRouteTableId.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcState]
+  }
+}
+

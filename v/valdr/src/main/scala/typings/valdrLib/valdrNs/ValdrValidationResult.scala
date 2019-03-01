@@ -11,3 +11,18 @@ trait ValdrValidationResult extends js.Object {
   var violations: js.Array[ValdrViolation]
 }
 
+object ValdrValidationResult {
+  @scala.inline
+  def apply(
+    valid: scala.Boolean,
+    validationResults: js.Array[ValdrViolation],
+    violations: js.Array[ValdrViolation]
+  ): ValdrValidationResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("valid")(valid)
+    __obj.updateDynamic("validationResults")(validationResults)
+    __obj.updateDynamic("violations")(violations)
+    __obj.asInstanceOf[ValdrValidationResult]
+  }
+}
+

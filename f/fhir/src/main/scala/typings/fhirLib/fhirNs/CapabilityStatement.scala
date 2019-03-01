@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A statement of system capabilities
   */
-trait CapabilityStatement extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait CapabilityStatement extends DomainResource {
   /**
     * Contains extended information for property 'acceptUnknown'.
     */
@@ -189,5 +190,130 @@ trait CapabilityStatement extends DomainResource {
     * Business version of the capability statement
     */
   var version: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object CapabilityStatement {
+  @scala.inline
+  def apply(
+    acceptUnknown: code,
+    date: dateTime,
+    fhirVersion: id,
+    format: js.Array[code],
+    kind: code,
+    status: code,
+    _acceptUnknown: Element = null,
+    _copyright: Element = null,
+    _date: Element = null,
+    _description: Element = null,
+    _experimental: Element = null,
+    _fhirVersion: Element = null,
+    _format: js.Array[Element] = null,
+    _id: Element = null,
+    _implementationGuide: js.Array[Element] = null,
+    _implicitRules: Element = null,
+    _instantiates: js.Array[Element] = null,
+    _kind: Element = null,
+    _language: Element = null,
+    _name: Element = null,
+    _patchFormat: js.Array[Element] = null,
+    _publisher: Element = null,
+    _purpose: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _title: Element = null,
+    _url: Element = null,
+    _version: Element = null,
+    contact: js.Array[ContactDetail] = null,
+    contained: js.Array[Resource] = null,
+    copyright: markdown = null,
+    description: markdown = null,
+    document: js.Array[CapabilityStatementDocument] = null,
+    experimental: js.UndefOr[scala.Boolean] = js.undefined,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    implementation: CapabilityStatementImplementation = null,
+    implementationGuide: js.Array[uri] = null,
+    implicitRules: uri = null,
+    instantiates: js.Array[uri] = null,
+    jurisdiction: js.Array[CodeableConcept] = null,
+    language: code = null,
+    messaging: js.Array[CapabilityStatementMessaging] = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    name: java.lang.String = null,
+    patchFormat: js.Array[code] = null,
+    profile: js.Array[Reference] = null,
+    publisher: java.lang.String = null,
+    purpose: markdown = null,
+    resourceType: code = null,
+    rest: js.Array[CapabilityStatementRest] = null,
+    software: CapabilityStatementSoftware = null,
+    text: Narrative = null,
+    title: java.lang.String = null,
+    url: uri = null,
+    useContext: js.Array[UsageContext] = null,
+    version: java.lang.String = null
+  ): CapabilityStatement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acceptUnknown")(acceptUnknown)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("fhirVersion")(fhirVersion)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("status")(status)
+    if (_acceptUnknown != null) __obj.updateDynamic("_acceptUnknown")(_acceptUnknown)
+    if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental)
+    if (_fhirVersion != null) __obj.updateDynamic("_fhirVersion")(_fhirVersion)
+    if (_format != null) __obj.updateDynamic("_format")(_format)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implementationGuide != null) __obj.updateDynamic("_implementationGuide")(_implementationGuide)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_instantiates != null) __obj.updateDynamic("_instantiates")(_instantiates)
+    if (_kind != null) __obj.updateDynamic("_kind")(_kind)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_patchFormat != null) __obj.updateDynamic("_patchFormat")(_patchFormat)
+    if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher)
+    if (_purpose != null) __obj.updateDynamic("_purpose")(_purpose)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_title != null) __obj.updateDynamic("_title")(_title)
+    if (_url != null) __obj.updateDynamic("_url")(_url)
+    if (_version != null) __obj.updateDynamic("_version")(_version)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (implementation != null) __obj.updateDynamic("implementation")(implementation)
+    if (implementationGuide != null) __obj.updateDynamic("implementationGuide")(implementationGuide)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (instantiates != null) __obj.updateDynamic("instantiates")(instantiates)
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (messaging != null) __obj.updateDynamic("messaging")(messaging)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (patchFormat != null) __obj.updateDynamic("patchFormat")(patchFormat)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (rest != null) __obj.updateDynamic("rest")(rest)
+    if (software != null) __obj.updateDynamic("software")(software)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (useContext != null) __obj.updateDynamic("useContext")(useContext)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[CapabilityStatement]
+  }
 }
 

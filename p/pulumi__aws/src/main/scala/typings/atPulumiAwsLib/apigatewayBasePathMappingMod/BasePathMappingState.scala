@@ -24,3 +24,20 @@ trait BasePathMappingState extends js.Object {
   val stageName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object BasePathMappingState {
+  @scala.inline
+  def apply(
+    basePath: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null,
+    stageName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): BasePathMappingState = {
+    val __obj = js.Dynamic.literal()
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BasePathMappingState]
+  }
+}
+

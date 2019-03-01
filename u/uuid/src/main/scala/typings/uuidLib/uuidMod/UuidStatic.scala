@@ -21,13 +21,11 @@ trait UuidStatic extends js.Object {
   def v1[T /* <: uuidLib.interfacesMod.OutputBuffer */](options: uuidLib.interfacesMod.V1Options, buffer: T, offset: scala.Double): T = js.native
   def v4(): java.lang.String = js.native
   def v4(options: uuidLib.interfacesMod.V4Options): java.lang.String = js.native
-  def v4[T /* <: uuidLib.interfacesMod.OutputBuffer */](options: js.UndefOr[scala.Nothing] | uuidLib.interfacesMod.V4Options, buffer: T): T = js.native
-  def v4[T /* <: uuidLib.interfacesMod.OutputBuffer */](
-    options: js.UndefOr[scala.Nothing] | uuidLib.interfacesMod.V4Options,
-    buffer: T,
-    offset: scala.Double
-  ): T = js.native
+  def v4[T /* <: uuidLib.interfacesMod.OutputBuffer */](options: js.UndefOr[scala.Nothing], buffer: T): T = js.native
+  def v4[T /* <: uuidLib.interfacesMod.OutputBuffer */](options: js.UndefOr[scala.Nothing], buffer: T, offset: scala.Double): T = js.native
   def v4[T /* <: uuidLib.interfacesMod.OutputBuffer */](options: scala.Null, buffer: T): T = js.native
   def v4[T /* <: uuidLib.interfacesMod.OutputBuffer */](options: scala.Null, buffer: T, offset: scala.Double): T = js.native
+  def v4[T /* <: uuidLib.interfacesMod.OutputBuffer */](options: uuidLib.interfacesMod.V4Options, buffer: T): T = js.native
+  def v4[T /* <: uuidLib.interfacesMod.OutputBuffer */](options: uuidLib.interfacesMod.V4Options, buffer: T, offset: scala.Double): T = js.native
 }
 

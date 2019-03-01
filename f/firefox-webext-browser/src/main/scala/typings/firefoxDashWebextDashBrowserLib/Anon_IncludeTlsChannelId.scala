@@ -15,3 +15,13 @@ trait Anon_IncludeTlsChannelId extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_IncludeTlsChannelId {
+  @scala.inline
+  def apply(includeTlsChannelId: js.UndefOr[scala.Boolean] = js.undefined, name: java.lang.String = null): Anon_IncludeTlsChannelId = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeTlsChannelId)) __obj.updateDynamic("includeTlsChannelId")(includeTlsChannelId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_IncludeTlsChannelId]
+  }
+}
+

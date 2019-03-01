@@ -16,3 +16,13 @@ trait TileMinimizedEventUIParam extends js.Object {
   var tile: js.UndefOr[js.Any] = js.undefined
 }
 
+object TileMinimizedEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null, tile: js.Any = null): TileMinimizedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (tile != null) __obj.updateDynamic("tile")(tile)
+    __obj.asInstanceOf[TileMinimizedEventUIParam]
+  }
+}
+

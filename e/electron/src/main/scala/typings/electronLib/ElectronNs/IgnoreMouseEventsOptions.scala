@@ -14,3 +14,12 @@ trait IgnoreMouseEventsOptions extends js.Object {
   var forward: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgnoreMouseEventsOptions {
+  @scala.inline
+  def apply(forward: js.UndefOr[scala.Boolean] = js.undefined): IgnoreMouseEventsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(forward)) __obj.updateDynamic("forward")(forward)
+    __obj.asInstanceOf[IgnoreMouseEventsOptions]
+  }
+}
+

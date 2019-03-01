@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("spdy", "server")
 @js.native
 object serverNs extends js.Object {
+  trait Protocol extends js.Object
+  
   trait PushOptions extends js.Object {
     var method: js.UndefOr[java.lang.String] = js.undefined
     var request: js.UndefOr[js.Any] = js.undefined
@@ -53,7 +55,6 @@ object serverNs extends js.Object {
   ): Server = js.native
   type IncomingMessage = nodeLib.httpMod.IncomingMessage
   type PlainServer = nodeLib.httpMod.Server
-  type Protocol = spdyLib.spdyLibStrings.h2 | spdyLib.spdyLibStrings.`spdy/3DOT1` | spdyLib.spdyLibStrings.`spdy/3` | spdyLib.spdyLibStrings.`spdy/2` | spdyLib.spdyLibStrings.`http/1DOT1` | spdyLib.spdyLibStrings.`http/1DOT0`
   type Server = nodeLib.httpsMod.Server
 }
 

@@ -16,3 +16,20 @@ trait TurnBasedMatchResults extends js.Object {
   var results: js.UndefOr[js.Array[ParticipantResult]] = js.undefined
 }
 
+object TurnBasedMatchResults {
+  @scala.inline
+  def apply(
+    data: TurnBasedMatchDataRequest = null,
+    kind: java.lang.String = null,
+    matchVersion: scala.Int | scala.Double = null,
+    results: js.Array[ParticipantResult] = null
+  ): TurnBasedMatchResults = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (matchVersion != null) __obj.updateDynamic("matchVersion")(matchVersion.asInstanceOf[js.Any])
+    if (results != null) __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[TurnBasedMatchResults]
+  }
+}
+

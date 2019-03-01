@@ -19,13 +19,15 @@ object pouchdbDashCoreLibStrings {
   sealed trait all_docs extends js.Object
   
   @js.native
-  sealed trait available extends js.Object
+  sealed trait available
+    extends pouchdbDashCoreLib.PouchDBNs.CoreNs.Availability
   
   @js.native
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait compacted extends js.Object
+  sealed trait compacted
+    extends pouchdbDashCoreLib.PouchDBNs.CoreNs.Availability
   
   @js.native
   sealed trait complete extends js.Object
@@ -43,10 +45,12 @@ object pouchdbDashCoreLibStrings {
   sealed trait main_only extends js.Object
   
   @js.native
-  sealed trait missing extends js.Object
+  sealed trait missing
+    extends pouchdbDashCoreLib.PouchDBNs.CoreNs.Availability
   
   @js.native
-  sealed trait `not compacted` extends js.Object
+  sealed trait `not compacted`
+    extends pouchdbDashCoreLib.PouchDBNs.CoreNs.Availability
   
   @js.native
   sealed trait now extends js.Object

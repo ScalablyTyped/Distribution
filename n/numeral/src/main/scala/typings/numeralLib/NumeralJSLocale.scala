@@ -12,3 +12,20 @@ trait NumeralJSLocale extends js.Object {
   def ordinal(num: scala.Double): java.lang.String
 }
 
+object NumeralJSLocale {
+  @scala.inline
+  def apply(
+    abbreviations: Anon_Billion,
+    currency: Anon_Symbol,
+    delimiters: Anon_Decimal,
+    ordinal: js.Function1[scala.Double, java.lang.String]
+  ): NumeralJSLocale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abbreviations")(abbreviations)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("delimiters")(delimiters)
+    __obj.updateDynamic("ordinal")(ordinal)
+    __obj.asInstanceOf[NumeralJSLocale]
+  }
+}
+

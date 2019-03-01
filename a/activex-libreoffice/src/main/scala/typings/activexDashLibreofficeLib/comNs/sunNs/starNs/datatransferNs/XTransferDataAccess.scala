@@ -26,3 +26,25 @@ trait XTransferDataAccess
   def queryDataSize(aFlavorList: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor]): scala.Double
 }
 
+object XTransferDataAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getData: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    queryDataSize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataFlavor], scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTransferDataAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("queryDataSize")(queryDataSize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTransferDataAccess]
+  }
+}
+

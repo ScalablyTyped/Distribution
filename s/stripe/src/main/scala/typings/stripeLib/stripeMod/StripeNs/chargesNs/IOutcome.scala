@@ -42,3 +42,23 @@ trait IOutcome extends js.Object {
   var `type`: stripeLib.stripeLibStrings.authorized | stripeLib.stripeLibStrings.manual_review | stripeLib.stripeLibStrings.issuer_declined | stripeLib.stripeLibStrings.blocked | stripeLib.stripeLibStrings.invalid
 }
 
+object IOutcome {
+  @scala.inline
+  def apply(
+    network_status: stripeLib.stripeLibStrings.approved_by_network | stripeLib.stripeLibStrings.declined_by_network | stripeLib.stripeLibStrings.not_sent_to_network | stripeLib.stripeLibStrings.reversed_after_approval,
+    seller_message: java.lang.String,
+    `type`: stripeLib.stripeLibStrings.authorized | stripeLib.stripeLibStrings.manual_review | stripeLib.stripeLibStrings.issuer_declined | stripeLib.stripeLibStrings.blocked | stripeLib.stripeLibStrings.invalid,
+    reason: java.lang.String = null,
+    risk_level: java.lang.String = null,
+    rule: java.lang.String | js.Array[java.lang.String] = null
+  ): IOutcome = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("network_status")(network_status.asInstanceOf[js.Any])
+    __obj.updateDynamic("seller_message")(seller_message)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (risk_level != null) __obj.updateDynamic("risk_level")(risk_level)
+    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IOutcome]
+  }
+}
+

@@ -32,3 +32,60 @@ trait Charts extends js.Object {
   def newTextStyle(): TextStyleBuilder
 }
 
+object Charts {
+  @scala.inline
+  def apply(
+    ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any,
+    ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any,
+    ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any,
+    ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any,
+    CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any,
+    MatchType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MatchType */ js.Any,
+    Orientation: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Orientation */ js.Any,
+    PickerValuesLayout: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PickerValuesLayout */ js.Any,
+    PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any,
+    Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any,
+    newAreaChart: js.Function0[AreaChartBuilder],
+    newBarChart: js.Function0[BarChartBuilder],
+    newCategoryFilter: js.Function0[CategoryFilterBuilder],
+    newColumnChart: js.Function0[ColumnChartBuilder],
+    newDashboardPanel: js.Function0[DashboardPanelBuilder],
+    newDataTable: js.Function0[DataTableBuilder],
+    newDataViewDefinition: js.Function0[DataViewDefinitionBuilder],
+    newLineChart: js.Function0[LineChartBuilder],
+    newNumberRangeFilter: js.Function0[NumberRangeFilterBuilder],
+    newPieChart: js.Function0[PieChartBuilder],
+    newScatterChart: js.Function0[ScatterChartBuilder],
+    newStringFilter: js.Function0[StringFilterBuilder],
+    newTableChart: js.Function0[TableChartBuilder],
+    newTextStyle: js.Function0[TextStyleBuilder]
+  ): Charts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ChartHiddenDimensionStrategy")(ChartHiddenDimensionStrategy)
+    __obj.updateDynamic("ChartMergeStrategy")(ChartMergeStrategy)
+    __obj.updateDynamic("ChartType")(ChartType)
+    __obj.updateDynamic("ColumnType")(ColumnType)
+    __obj.updateDynamic("CurveStyle")(CurveStyle)
+    __obj.updateDynamic("MatchType")(MatchType)
+    __obj.updateDynamic("Orientation")(Orientation)
+    __obj.updateDynamic("PickerValuesLayout")(PickerValuesLayout)
+    __obj.updateDynamic("PointStyle")(PointStyle)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("newAreaChart")(newAreaChart)
+    __obj.updateDynamic("newBarChart")(newBarChart)
+    __obj.updateDynamic("newCategoryFilter")(newCategoryFilter)
+    __obj.updateDynamic("newColumnChart")(newColumnChart)
+    __obj.updateDynamic("newDashboardPanel")(newDashboardPanel)
+    __obj.updateDynamic("newDataTable")(newDataTable)
+    __obj.updateDynamic("newDataViewDefinition")(newDataViewDefinition)
+    __obj.updateDynamic("newLineChart")(newLineChart)
+    __obj.updateDynamic("newNumberRangeFilter")(newNumberRangeFilter)
+    __obj.updateDynamic("newPieChart")(newPieChart)
+    __obj.updateDynamic("newScatterChart")(newScatterChart)
+    __obj.updateDynamic("newStringFilter")(newStringFilter)
+    __obj.updateDynamic("newTableChart")(newTableChart)
+    __obj.updateDynamic("newTextStyle")(newTextStyle)
+    __obj.asInstanceOf[Charts]
+  }
+}
+

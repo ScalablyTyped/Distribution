@@ -9,3 +9,12 @@ trait Anon_Filter extends js.Object {
   var filter: js.Any | java.lang.String
 }
 
+object Anon_Filter {
+  @scala.inline
+  def apply(filter: js.Any | java.lang.String): Anon_Filter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Filter]
+  }
+}
+

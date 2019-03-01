@@ -23,3 +23,28 @@ trait IClientConfig extends IConfig {
   var webSocketVersion: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IClientConfig {
+  @scala.inline
+  def apply(
+    assembleFragments: js.UndefOr[scala.Boolean] = js.undefined,
+    closeTimeout: scala.Int | scala.Double = null,
+    fragmentOutgoingMessages: js.UndefOr[scala.Boolean] = js.undefined,
+    fragmentationThreshold: scala.Int | scala.Double = null,
+    maxReceivedFrameSize: scala.Int | scala.Double = null,
+    maxReceivedMessageSize: scala.Int | scala.Double = null,
+    tlsOptions: nodeLib.httpsMod.RequestOptions = null,
+    webSocketVersion: scala.Int | scala.Double = null
+  ): IClientConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments)
+    if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages)
+    if (fragmentationThreshold != null) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.asInstanceOf[js.Any])
+    if (maxReceivedFrameSize != null) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.asInstanceOf[js.Any])
+    if (maxReceivedMessageSize != null) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.asInstanceOf[js.Any])
+    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions)
+    if (webSocketVersion != null) __obj.updateDynamic("webSocketVersion")(webSocketVersion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IClientConfig]
+  }
+}
+

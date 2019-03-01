@@ -55,6 +55,8 @@ object javascriptactionsNs extends js.Object {
   class JavaScriptActionParameter protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeActionParameter {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsCodeAction")
+    val containerAsCodeAction_JavaScriptActionParameter: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction = js.native
   }
   
   /* static members */

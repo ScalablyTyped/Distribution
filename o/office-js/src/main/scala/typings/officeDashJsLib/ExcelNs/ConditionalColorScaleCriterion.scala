@@ -35,3 +35,17 @@ trait ConditionalColorScaleCriterion extends js.Object {
   var `type`: ConditionalFormatColorCriterionType | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.LowestValue | officeDashJsLib.officeDashJsLibStrings.HighestValue | officeDashJsLib.officeDashJsLibStrings.Number | officeDashJsLib.officeDashJsLibStrings.Percent | officeDashJsLib.officeDashJsLibStrings.Formula | officeDashJsLib.officeDashJsLibStrings.Percentile
 }
 
+object ConditionalColorScaleCriterion {
+  @scala.inline
+  def apply(
+    `type`: ConditionalFormatColorCriterionType | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.LowestValue | officeDashJsLib.officeDashJsLibStrings.HighestValue | officeDashJsLib.officeDashJsLibStrings.Number | officeDashJsLib.officeDashJsLibStrings.Percent | officeDashJsLib.officeDashJsLibStrings.Formula | officeDashJsLib.officeDashJsLibStrings.Percentile,
+    color: java.lang.String = null,
+    formula: java.lang.String = null
+  ): ConditionalColorScaleCriterion = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (formula != null) __obj.updateDynamic("formula")(formula)
+    __obj.asInstanceOf[ConditionalColorScaleCriterion]
+  }
+}
+

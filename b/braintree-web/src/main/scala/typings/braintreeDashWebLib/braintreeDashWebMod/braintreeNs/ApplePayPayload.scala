@@ -11,3 +11,14 @@ trait ApplePayPayload extends js.Object {
   var merchantIdentifier: java.lang.String
 }
 
+object ApplePayPayload {
+  @scala.inline
+  def apply(displayName: java.lang.String, domainName: java.lang.String, merchantIdentifier: java.lang.String): ApplePayPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("domainName")(domainName)
+    __obj.updateDynamic("merchantIdentifier")(merchantIdentifier)
+    __obj.asInstanceOf[ApplePayPayload]
+  }
+}
+

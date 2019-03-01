@@ -22,3 +22,20 @@ trait IGridPinningApi[TEntity] extends js.Object {
   def pinColumn(col: uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity], container: java.lang.String): scala.Unit
 }
 
+object IGridPinningApi {
+  @scala.inline
+  def apply[TEntity](
+    columnPin: js.Function2[angularLib.angularMod.angularNs.IScope, columnPinHandler, scala.Unit],
+    pinColumn: js.Function2[
+      uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity], 
+      java.lang.String, 
+      scala.Unit
+    ]
+  ): IGridPinningApi[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnPin")(columnPin)
+    __obj.updateDynamic("pinColumn")(pinColumn)
+    __obj.asInstanceOf[IGridPinningApi[TEntity]]
+  }
+}
+

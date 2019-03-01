@@ -24,3 +24,20 @@ trait RestoreTableToPointInTimeInput extends js.Object {
   var UseLatestRestorableTime: js.UndefOr[BooleanObject] = js.undefined
 }
 
+object RestoreTableToPointInTimeInput {
+  @scala.inline
+  def apply(
+    SourceTableName: TableName,
+    TargetTableName: TableName,
+    RestoreDateTime: _Date = null,
+    UseLatestRestorableTime: js.UndefOr[BooleanObject] = js.undefined
+  ): RestoreTableToPointInTimeInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SourceTableName")(SourceTableName)
+    __obj.updateDynamic("TargetTableName")(TargetTableName)
+    if (RestoreDateTime != null) __obj.updateDynamic("RestoreDateTime")(RestoreDateTime)
+    if (!js.isUndefined(UseLatestRestorableTime)) __obj.updateDynamic("UseLatestRestorableTime")(UseLatestRestorableTime)
+    __obj.asInstanceOf[RestoreTableToPointInTimeInput]
+  }
+}
+

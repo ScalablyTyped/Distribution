@@ -49,6 +49,11 @@ class Color () extends js.Object {
   	 */
   def toHex(): java.lang.String = js.native
   /**
+  	 * Returns color representation in HEXA format
+  	 * @return {String} ex: FF5555CC
+  	 */
+  def toHexa(): java.lang.String = js.native
+  /**
   	 * Returns color represenation in HSL format ex: hsl(0-360,0%-100%,0%-100%)
   	 */
   def toHsl(): java.lang.String = js.native

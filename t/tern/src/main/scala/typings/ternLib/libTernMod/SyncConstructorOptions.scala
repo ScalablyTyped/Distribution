@@ -17,3 +17,16 @@ trait SyncConstructorOptions extends js.Object {
   var getFile: js.UndefOr[js.Function1[/* filename */ java.lang.String, java.lang.String]] = js.undefined
 }
 
+object SyncConstructorOptions {
+  @scala.inline
+  def apply(
+    async: ternLib.ternLibNumbers.`false` = null,
+    getFile: js.Function1[/* filename */ java.lang.String, java.lang.String] = null
+  ): SyncConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (async != null) __obj.updateDynamic("async")(async)
+    if (getFile != null) __obj.updateDynamic("getFile")(getFile)
+    __obj.asInstanceOf[SyncConstructorOptions]
+  }
+}
+

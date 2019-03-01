@@ -12,3 +12,13 @@ trait StrictDimmerProps extends js.Object {
   var page: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StrictDimmerProps {
+  @scala.inline
+  def apply(active: js.UndefOr[scala.Boolean] = js.undefined, page: js.UndefOr[scala.Boolean] = js.undefined): StrictDimmerProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page)
+    __obj.asInstanceOf[StrictDimmerProps]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_Async extends js.Object {
   var transport: js.UndefOr[atStorybookChannelsLib.atStorybookChannelsMod.ChannelNs.Transport] = js.undefined
 }
 
+object Anon_Async {
+  @scala.inline
+  def apply(
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    transport: atStorybookChannelsLib.atStorybookChannelsMod.ChannelNs.Transport = null
+  ): Anon_Async = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    __obj.asInstanceOf[Anon_Async]
+  }
+}
+

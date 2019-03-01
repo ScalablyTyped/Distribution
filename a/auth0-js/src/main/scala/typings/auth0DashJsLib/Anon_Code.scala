@@ -20,3 +20,20 @@ trait Anon_Code extends js.Object {
   var scope: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Code {
+  @scala.inline
+  def apply(
+    redirectUri: java.lang.String = null,
+    responseMode: auth0DashJsLib.auth0DashJsLibStrings.query | auth0DashJsLib.auth0DashJsLibStrings.fragment = null,
+    responseType: auth0DashJsLib.auth0DashJsLibStrings.code | auth0DashJsLib.auth0DashJsLibStrings.token = null,
+    scope: java.lang.String = null
+  ): Anon_Code = {
+    val __obj = js.Dynamic.literal()
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Anon_Code]
+  }
+}
+

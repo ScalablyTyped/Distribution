@@ -28,3 +28,22 @@ trait Attachment extends js.Object {
   var regions: js.UndefOr[js.Array[Region]] = js.undefined
 }
 
+object Attachment {
+  @scala.inline
+  def apply(
+    artifactLocation: ArtifactLocation,
+    description: Message = null,
+    properties: PropertyBag = null,
+    rectangles: js.Array[Rectangle] = null,
+    regions: js.Array[Region] = null
+  ): Attachment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifactLocation")(artifactLocation)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (rectangles != null) __obj.updateDynamic("rectangles")(rectangles)
+    if (regions != null) __obj.updateDynamic("regions")(regions)
+    __obj.asInstanceOf[Attachment]
+  }
+}
+

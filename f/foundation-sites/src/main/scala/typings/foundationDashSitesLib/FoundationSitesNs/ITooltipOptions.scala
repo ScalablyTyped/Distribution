@@ -22,3 +22,40 @@ trait ITooltipOptions extends js.Object {
   var vOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ITooltipOptions {
+  @scala.inline
+  def apply(
+    clickOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    disableHover: js.UndefOr[scala.Boolean] = js.undefined,
+    fadeInDuration: scala.Int | scala.Double = null,
+    fadeOutDuration: scala.Int | scala.Double = null,
+    hOffset: scala.Int | scala.Double = null,
+    hoverDelay: scala.Int | scala.Double = null,
+    positionClass: java.lang.String = null,
+    showOn: java.lang.String = null,
+    template: java.lang.String = null,
+    templateClasses: java.lang.String = null,
+    tipText: java.lang.String = null,
+    tooltipClass: java.lang.String = null,
+    triggerClass: java.lang.String = null,
+    vOffset: scala.Int | scala.Double = null
+  ): ITooltipOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clickOpen)) __obj.updateDynamic("clickOpen")(clickOpen)
+    if (!js.isUndefined(disableHover)) __obj.updateDynamic("disableHover")(disableHover)
+    if (fadeInDuration != null) __obj.updateDynamic("fadeInDuration")(fadeInDuration.asInstanceOf[js.Any])
+    if (fadeOutDuration != null) __obj.updateDynamic("fadeOutDuration")(fadeOutDuration.asInstanceOf[js.Any])
+    if (hOffset != null) __obj.updateDynamic("hOffset")(hOffset.asInstanceOf[js.Any])
+    if (hoverDelay != null) __obj.updateDynamic("hoverDelay")(hoverDelay.asInstanceOf[js.Any])
+    if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass)
+    if (showOn != null) __obj.updateDynamic("showOn")(showOn)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateClasses != null) __obj.updateDynamic("templateClasses")(templateClasses)
+    if (tipText != null) __obj.updateDynamic("tipText")(tipText)
+    if (tooltipClass != null) __obj.updateDynamic("tooltipClass")(tooltipClass)
+    if (triggerClass != null) __obj.updateDynamic("triggerClass")(triggerClass)
+    if (vOffset != null) __obj.updateDynamic("vOffset")(vOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITooltipOptions]
+  }
+}
+

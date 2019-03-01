@@ -16,3 +16,26 @@ trait ASPxClientSpreadsheetCellEndEditEventArgs extends ASPxClientSpreadsheetCel
   var editorText: java.lang.String
 }
 
+object ASPxClientSpreadsheetCellEndEditEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    columnIndex: scala.Double,
+    editorText: java.lang.String,
+    formula: java.lang.String,
+    rowIndex: scala.Double,
+    sheetName: java.lang.String,
+    value: java.lang.String
+  ): ASPxClientSpreadsheetCellEndEditEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("columnIndex")(columnIndex)
+    __obj.updateDynamic("editorText")(editorText)
+    __obj.updateDynamic("formula")(formula)
+    __obj.updateDynamic("rowIndex")(rowIndex)
+    __obj.updateDynamic("sheetName")(sheetName)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ASPxClientSpreadsheetCellEndEditEventArgs]
+  }
+}
+

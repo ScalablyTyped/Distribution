@@ -10,3 +10,16 @@ trait Anon_IndexNameParamsParameters extends js.Object {
   var params: algoliasearchLib.liteMod.algoliasearchNs.SearchForFacetValuesNs.Parameters
 }
 
+object Anon_IndexNameParamsParameters {
+  @scala.inline
+  def apply(
+    indexName: java.lang.String,
+    params: algoliasearchLib.liteMod.algoliasearchNs.SearchForFacetValuesNs.Parameters
+  ): Anon_IndexNameParamsParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("indexName")(indexName)
+    __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[Anon_IndexNameParamsParameters]
+  }
+}
+

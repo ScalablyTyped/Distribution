@@ -20,3 +20,13 @@ trait UpdateInstanceRequest extends js.Object {
   var instance: js.UndefOr[Instance] = js.undefined
 }
 
+object UpdateInstanceRequest {
+  @scala.inline
+  def apply(fieldMask: java.lang.String = null, instance: Instance = null): UpdateInstanceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fieldMask != null) __obj.updateDynamic("fieldMask")(fieldMask)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    __obj.asInstanceOf[UpdateInstanceRequest]
+  }
+}
+

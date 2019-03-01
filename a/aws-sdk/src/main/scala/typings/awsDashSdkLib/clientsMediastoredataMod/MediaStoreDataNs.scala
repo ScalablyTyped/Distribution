@@ -313,6 +313,10 @@ object MediaStoreDataNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[PutObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _ItemType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ContentRangePattern = java.lang.String
@@ -320,7 +324,7 @@ object MediaStoreDataNs extends js.Object {
   type ETag = java.lang.String
   type ItemList = js.Array[Item]
   type ItemName = java.lang.String
-  type ItemType = awsDashSdkLib.awsDashSdkLibStrings.OBJECT | awsDashSdkLib.awsDashSdkLibStrings.FOLDER | java.lang.String
+  type ItemType = _ItemType | java.lang.String
   type ListLimit = scala.Double
   type ListPathNaming = java.lang.String
   type NonNegativeLong = scala.Double
@@ -332,7 +336,7 @@ object MediaStoreDataNs extends js.Object {
   type StorageClass = awsDashSdkLib.awsDashSdkLibStrings.TEMPORAL | java.lang.String
   type StringPrimitive = java.lang.String
   type TimeStamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-09-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type statusCode = scala.Double
 }
 

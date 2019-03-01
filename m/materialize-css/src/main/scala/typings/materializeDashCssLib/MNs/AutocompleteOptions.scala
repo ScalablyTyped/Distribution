@@ -30,3 +30,22 @@ trait AutocompleteOptions extends js.Object {
   def sortFunction(a: java.lang.String, b: java.lang.String, inputText: java.lang.String): scala.Double
 }
 
+object AutocompleteOptions {
+  @scala.inline
+  def apply(
+    data: AutocompleteData,
+    limit: scala.Double,
+    minLength: scala.Double,
+    onAutocomplete: js.Function2[Autocomplete, java.lang.String, scala.Unit],
+    sortFunction: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Double]
+  ): AutocompleteOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("limit")(limit)
+    __obj.updateDynamic("minLength")(minLength)
+    __obj.updateDynamic("onAutocomplete")(onAutocomplete)
+    __obj.updateDynamic("sortFunction")(sortFunction)
+    __obj.asInstanceOf[AutocompleteOptions]
+  }
+}
+

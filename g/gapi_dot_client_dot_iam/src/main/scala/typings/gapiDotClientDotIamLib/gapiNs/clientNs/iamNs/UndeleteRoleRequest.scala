@@ -10,3 +10,12 @@ trait UndeleteRoleRequest extends js.Object {
   var etag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UndeleteRoleRequest {
+  @scala.inline
+  def apply(etag: java.lang.String = null): UndeleteRoleRequest = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    __obj.asInstanceOf[UndeleteRoleRequest]
+  }
+}
+

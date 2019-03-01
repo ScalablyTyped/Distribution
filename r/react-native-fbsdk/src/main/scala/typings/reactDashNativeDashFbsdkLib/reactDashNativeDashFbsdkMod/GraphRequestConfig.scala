@@ -24,3 +24,20 @@ trait GraphRequestConfig extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GraphRequestConfig {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String = null,
+    httpMethod: java.lang.String = null,
+    parameters: GraphRequestParameters = null,
+    version: java.lang.String = null
+  ): GraphRequestConfig = {
+    val __obj = js.Dynamic.literal()
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[GraphRequestConfig]
+  }
+}
+

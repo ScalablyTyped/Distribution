@@ -12,3 +12,17 @@ trait RippleBackgroundPropType extends BaseBackgroundPropType {
   var type_RippleBackgroundPropType: reactDashNativeLib.reactDashNativeLibStrings.RippleAndroid
 }
 
+object RippleBackgroundPropType {
+  @scala.inline
+  def apply(
+    `type`: reactDashNativeLib.reactDashNativeLibStrings.RippleAndroid,
+    borderless: js.UndefOr[scala.Boolean] = js.undefined,
+    color: scala.Int | scala.Double = null
+  ): RippleBackgroundPropType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RippleBackgroundPropType]
+  }
+}
+

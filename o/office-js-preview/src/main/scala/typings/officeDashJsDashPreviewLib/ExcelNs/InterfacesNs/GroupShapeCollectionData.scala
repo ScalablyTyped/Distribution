@@ -10,3 +10,12 @@ trait GroupShapeCollectionData extends js.Object {
   var items: js.UndefOr[js.Array[ShapeData]] = js.undefined
 }
 
+object GroupShapeCollectionData {
+  @scala.inline
+  def apply(items: js.Array[ShapeData] = null): GroupShapeCollectionData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[GroupShapeCollectionData]
+  }
+}
+

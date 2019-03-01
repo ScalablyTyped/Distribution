@@ -25,3 +25,18 @@ trait Anon_Accepttlschannelid extends js.Object {
   var matches: js.Array[java.lang.String]
 }
 
+object Anon_Accepttlschannelid {
+  @scala.inline
+  def apply(
+    id: js.Array[java.lang.String],
+    matches: js.Array[java.lang.String],
+    accept_tls_channel_id: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Accepttlschannelid = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("matches")(matches)
+    if (!js.isUndefined(accept_tls_channel_id)) __obj.updateDynamic("accept_tls_channel_id")(accept_tls_channel_id)
+    __obj.asInstanceOf[Anon_Accepttlschannelid]
+  }
+}
+

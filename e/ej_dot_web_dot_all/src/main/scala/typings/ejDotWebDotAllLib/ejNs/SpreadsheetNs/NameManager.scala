@@ -14,3 +14,13 @@ trait NameManager extends js.Object {
   var refersto: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NameManager {
+  @scala.inline
+  def apply(name: java.lang.String = null, refersto: java.lang.String = null): NameManager = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (refersto != null) __obj.updateDynamic("refersto")(refersto)
+    __obj.asInstanceOf[NameManager]
+  }
+}
+

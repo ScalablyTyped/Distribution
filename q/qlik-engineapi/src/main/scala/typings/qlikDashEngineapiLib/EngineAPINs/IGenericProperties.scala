@@ -18,3 +18,17 @@ trait IGenericProperties
   var qInfo: INxInfo
 }
 
+object IGenericProperties {
+  @scala.inline
+  def apply(
+    qInfo: INxInfo,
+    StringDictionary: // ?Dynamic properties?
+  /* qMetaDef */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): IGenericProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qInfo")(qInfo)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IGenericProperties]
+  }
+}
+

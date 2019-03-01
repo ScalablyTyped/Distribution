@@ -17,3 +17,22 @@ trait GetLocalImgDataConfig extends WxBaseRequestConfig {
   def success_MGetLocalImgDataConfig(res: wxDashJsDashSdkDashDtLib.Anon_LocalData): scala.Unit
 }
 
+object GetLocalImgDataConfig {
+  @scala.inline
+  def apply(
+    localId: java.lang.String,
+    success: js.Function1[wxDashJsDashSdkDashDtLib.Anon_LocalData, scala.Unit],
+    cancel: js.Function0[scala.Unit] = null,
+    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
+    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null
+  ): GetLocalImgDataConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("localId")(localId)
+    __obj.updateDynamic("success")(success)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[GetLocalImgDataConfig]
+  }
+}
+

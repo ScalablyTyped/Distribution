@@ -32,3 +32,22 @@ trait BarStates extends js.Object {
   var halo: js.UndefOr[scala.Boolean | Halo] = js.undefined
 }
 
+object BarStates {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String | Gradient = null,
+    brightness: scala.Int | scala.Double = null,
+    color: java.lang.String | Gradient = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    halo: scala.Boolean | Halo = null
+  ): BarStates = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (halo != null) __obj.updateDynamic("halo")(halo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BarStates]
+  }
+}
+

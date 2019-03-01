@@ -12,3 +12,14 @@ trait Configuration extends js.Object {
   ] = js.undefined
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    devServer: webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServerNs.Configuration = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    if (devServer != null) __obj.updateDynamic("devServer")(devServer)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

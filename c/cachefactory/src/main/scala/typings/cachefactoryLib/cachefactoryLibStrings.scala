@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object cachefactoryLibStrings {
   @js.native
-  sealed trait aggressive extends js.Object
+  sealed trait aggressive
+    extends cachefactoryLib.cachefactoryMod.DeleteOnExpire
   
   @js.native
-  sealed trait localStorage extends js.Object
+  sealed trait localStorage
+    extends cachefactoryLib.cachefactoryMod.StorageMode
   
   @js.native
-  sealed trait memory extends js.Object
+  sealed trait memory
+    extends cachefactoryLib.cachefactoryMod.StorageMode
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends cachefactoryLib.cachefactoryMod.DeleteOnExpire
   
   @js.native
-  sealed trait passive extends js.Object
+  sealed trait passive
+    extends cachefactoryLib.cachefactoryMod.DeleteOnExpire
   
   @js.native
-  sealed trait sessionStorage extends js.Object
+  sealed trait sessionStorage
+    extends cachefactoryLib.cachefactoryMod.StorageMode
   
   @scala.inline
   def aggressive: aggressive = "aggressive".asInstanceOf[aggressive]

@@ -18,3 +18,13 @@ trait AggregateBy extends js.Object {
   var dataTypeName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AggregateBy {
+  @scala.inline
+  def apply(dataSourceId: java.lang.String = null, dataTypeName: java.lang.String = null): AggregateBy = {
+    val __obj = js.Dynamic.literal()
+    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId)
+    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName)
+    __obj.asInstanceOf[AggregateBy]
+  }
+}
+

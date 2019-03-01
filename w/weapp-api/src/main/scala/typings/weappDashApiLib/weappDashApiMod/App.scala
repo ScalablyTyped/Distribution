@@ -12,3 +12,12 @@ trait App extends js.Object {
   def getCurrentPage(): Page
 }
 
+object App {
+  @scala.inline
+  def apply(getCurrentPage: js.Function0[Page]): App = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCurrentPage")(getCurrentPage)
+    __obj.asInstanceOf[App]
+  }
+}
+

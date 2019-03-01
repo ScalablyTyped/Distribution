@@ -20,3 +20,14 @@ trait TileMaximizingEventUIParam extends js.Object {
   var tile: js.UndefOr[js.Any] = js.undefined
 }
 
+object TileMaximizingEventUIParam {
+  @scala.inline
+  def apply(minimizingTile: js.Any = null, owner: js.Any = null, tile: js.Any = null): TileMaximizingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (minimizingTile != null) __obj.updateDynamic("minimizingTile")(minimizingTile)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (tile != null) __obj.updateDynamic("tile")(tile)
+    __obj.asInstanceOf[TileMaximizingEventUIParam]
+  }
+}
+

@@ -12,3 +12,20 @@ trait StepProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object StepProps {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    completed: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): StepProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[StepProps]
+  }
+}
+

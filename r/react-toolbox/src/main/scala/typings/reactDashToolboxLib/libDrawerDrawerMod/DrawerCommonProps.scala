@@ -38,3 +38,24 @@ trait DrawerCommonProps extends js.Object {
   var withOverlay: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DrawerCommonProps {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    insideTree: js.UndefOr[scala.Boolean] = js.undefined,
+    onOverlayClick: coreDashJsLib.Function = null,
+    `type`: reactDashToolboxLib.reactDashToolboxLibStrings.left | reactDashToolboxLib.reactDashToolboxLibStrings.right = null,
+    withOverlay: js.UndefOr[scala.Boolean] = js.undefined
+  ): DrawerCommonProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(insideTree)) __obj.updateDynamic("insideTree")(insideTree)
+    if (onOverlayClick != null) __obj.updateDynamic("onOverlayClick")(onOverlayClick)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(withOverlay)) __obj.updateDynamic("withOverlay")(withOverlay)
+    __obj.asInstanceOf[DrawerCommonProps]
+  }
+}
+

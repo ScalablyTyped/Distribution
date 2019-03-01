@@ -64,3 +64,58 @@ trait INavigationView extends IContainer {
   var useTitleForBackButtonText: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object INavigationView {
+  @scala.inline
+  def apply(
+    IContainer: IContainer = null,
+    baseCls: java.lang.String = null,
+    defaultBackButtonText: java.lang.String = null,
+    getBaseCls: js.Function0[java.lang.String] = null,
+    getDefaultBackButtonText: js.Function0[java.lang.String] = null,
+    getItems: js.Function0[_] = null,
+    getLayout: js.Function0[_] = null,
+    getNavigationBar: js.Function0[_] = null,
+    getPreviousItem: js.Function0[_] = null,
+    getUseTitleForBackButtonText: js.Function0[scala.Boolean] = null,
+    items: js.Any = null,
+    layout: js.Any = null,
+    navigationBar: js.Any = null,
+    pop: js.Function1[/* count */ js.UndefOr[js.Any], IComponent] = null,
+    push: js.Function1[/* view */ js.UndefOr[js.Any], IComponent] = null,
+    reset: js.Function0[IComponent] = null,
+    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setDefaultBackButtonText: js.Function1[/* defaultBackButtonText */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setItems: js.Function1[/* items */ js.UndefOr[js.Any], scala.Unit] = null,
+    setLayout: js.Function1[/* layout */ js.UndefOr[js.Any], scala.Unit] = null,
+    setNavigationBar: js.Function1[/* navigationBar */ js.UndefOr[js.Any], scala.Unit] = null,
+    setUseTitleForBackButtonText: js.Function1[/* useTitleForBackButtonText */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    useTitleForBackButtonText: js.UndefOr[scala.Boolean] = js.undefined
+  ): INavigationView = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (defaultBackButtonText != null) __obj.updateDynamic("defaultBackButtonText")(defaultBackButtonText)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
+    if (getDefaultBackButtonText != null) __obj.updateDynamic("getDefaultBackButtonText")(getDefaultBackButtonText)
+    if (getItems != null) __obj.updateDynamic("getItems")(getItems)
+    if (getLayout != null) __obj.updateDynamic("getLayout")(getLayout)
+    if (getNavigationBar != null) __obj.updateDynamic("getNavigationBar")(getNavigationBar)
+    if (getPreviousItem != null) __obj.updateDynamic("getPreviousItem")(getPreviousItem)
+    if (getUseTitleForBackButtonText != null) __obj.updateDynamic("getUseTitleForBackButtonText")(getUseTitleForBackButtonText)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (navigationBar != null) __obj.updateDynamic("navigationBar")(navigationBar)
+    if (pop != null) __obj.updateDynamic("pop")(pop)
+    if (push != null) __obj.updateDynamic("push")(push)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
+    if (setDefaultBackButtonText != null) __obj.updateDynamic("setDefaultBackButtonText")(setDefaultBackButtonText)
+    if (setItems != null) __obj.updateDynamic("setItems")(setItems)
+    if (setLayout != null) __obj.updateDynamic("setLayout")(setLayout)
+    if (setNavigationBar != null) __obj.updateDynamic("setNavigationBar")(setNavigationBar)
+    if (setUseTitleForBackButtonText != null) __obj.updateDynamic("setUseTitleForBackButtonText")(setUseTitleForBackButtonText)
+    if (!js.isUndefined(useTitleForBackButtonText)) __obj.updateDynamic("useTitleForBackButtonText")(useTitleForBackButtonText)
+    __obj.asInstanceOf[INavigationView]
+  }
+}
+

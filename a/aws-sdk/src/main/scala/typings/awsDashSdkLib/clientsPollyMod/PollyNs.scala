@@ -620,6 +620,22 @@ object PollyNs extends js.Object {
     var Name: js.UndefOr[VoiceName] = js.undefined
   }
   
+  trait _Gender extends js.Object
+  
+  trait _LanguageCode extends js.Object
+  
+  trait _OutputFormat extends js.Object
+  
+  trait _SpeechMarkType extends js.Object
+  
+  trait _TaskStatus extends js.Object
+  
+  trait _TextType extends js.Object
+  
+  trait _VoiceId extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   @JSName("Presigner")
   @js.native
@@ -642,9 +658,9 @@ object PollyNs extends js.Object {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ContentType = java.lang.String
   type DateTime = stdLib.Date
-  type Gender = awsDashSdkLib.awsDashSdkLibStrings.Female | awsDashSdkLib.awsDashSdkLibStrings.Male | java.lang.String
+  type Gender = _Gender | java.lang.String
   type IncludeAdditionalLanguageCodes = scala.Boolean
-  type LanguageCode = awsDashSdkLib.awsDashSdkLibStrings.`cmn-CN` | awsDashSdkLib.awsDashSdkLibStrings.`cy-GB` | awsDashSdkLib.awsDashSdkLibStrings.`da-DK` | awsDashSdkLib.awsDashSdkLibStrings.`de-DE` | awsDashSdkLib.awsDashSdkLibStrings.`en-AU` | awsDashSdkLib.awsDashSdkLibStrings.`en-GB` | awsDashSdkLib.awsDashSdkLibStrings.`en-GB-WLS` | awsDashSdkLib.awsDashSdkLibStrings.`en-IN` | awsDashSdkLib.awsDashSdkLibStrings.`en-US` | awsDashSdkLib.awsDashSdkLibStrings.`es-ES` | awsDashSdkLib.awsDashSdkLibStrings.`es-MX` | awsDashSdkLib.awsDashSdkLibStrings.`es-US` | awsDashSdkLib.awsDashSdkLibStrings.`fr-CA` | awsDashSdkLib.awsDashSdkLibStrings.`fr-FR` | awsDashSdkLib.awsDashSdkLibStrings.`is-IS` | awsDashSdkLib.awsDashSdkLibStrings.`it-IT` | awsDashSdkLib.awsDashSdkLibStrings.`ja-JP` | awsDashSdkLib.awsDashSdkLibStrings.`hi-IN` | awsDashSdkLib.awsDashSdkLibStrings.`ko-KR` | awsDashSdkLib.awsDashSdkLibStrings.`nb-NO` | awsDashSdkLib.awsDashSdkLibStrings.`nl-NL` | awsDashSdkLib.awsDashSdkLibStrings.`pl-PL` | awsDashSdkLib.awsDashSdkLibStrings.`pt-BR` | awsDashSdkLib.awsDashSdkLibStrings.`pt-PT` | awsDashSdkLib.awsDashSdkLibStrings.`ro-RO` | awsDashSdkLib.awsDashSdkLibStrings.`ru-RU` | awsDashSdkLib.awsDashSdkLibStrings.`sv-SE` | awsDashSdkLib.awsDashSdkLibStrings.`tr-TR` | java.lang.String
+  type LanguageCode = _LanguageCode | java.lang.String
   type LanguageCodeList = js.Array[LanguageCode]
   type LanguageName = java.lang.String
   type LastModified = stdLib.Date
@@ -656,7 +672,7 @@ object PollyNs extends js.Object {
   type LexiconNameList = js.Array[LexiconName]
   type MaxResults = scala.Double
   type NextToken = java.lang.String
-  type OutputFormat = awsDashSdkLib.awsDashSdkLibStrings.json | awsDashSdkLib.awsDashSdkLibStrings.mp3 | awsDashSdkLib.awsDashSdkLibStrings.ogg_vorbis | awsDashSdkLib.awsDashSdkLibStrings.pcm | java.lang.String
+  type OutputFormat = _OutputFormat | java.lang.String
   type OutputS3BucketName = java.lang.String
   type OutputS3KeyPrefix = java.lang.String
   type OutputUri = java.lang.String
@@ -664,17 +680,17 @@ object PollyNs extends js.Object {
   type SampleRate = java.lang.String
   type Size = scala.Double
   type SnsTopicArn = java.lang.String
-  type SpeechMarkType = awsDashSdkLib.awsDashSdkLibStrings.sentence | awsDashSdkLib.awsDashSdkLibStrings.ssml | awsDashSdkLib.awsDashSdkLibStrings.viseme | awsDashSdkLib.awsDashSdkLibStrings.word | java.lang.String
+  type SpeechMarkType = _SpeechMarkType | java.lang.String
   type SpeechMarkTypeList = js.Array[SpeechMarkType]
   type SynthesisTasks = js.Array[SynthesisTask]
   type TaskId = java.lang.String
-  type TaskStatus = awsDashSdkLib.awsDashSdkLibStrings.scheduled | awsDashSdkLib.awsDashSdkLibStrings.inProgress | awsDashSdkLib.awsDashSdkLibStrings.completed | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
+  type TaskStatus = _TaskStatus | java.lang.String
   type TaskStatusReason = java.lang.String
   type Text = java.lang.String
-  type TextType = awsDashSdkLib.awsDashSdkLibStrings.ssml | awsDashSdkLib.awsDashSdkLibStrings.text | java.lang.String
-  type VoiceId = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 58 */ js.Any
+  type TextType = _TextType | java.lang.String
+  type VoiceId = _VoiceId | java.lang.String
   type VoiceList = js.Array[Voice]
   type VoiceName = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-06-10` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -10,3 +10,16 @@ trait Anon_CookiePairHeaderValue extends js.Object {
   /** true if input is valid HttpCookiePairHeaderValue information; otherwise, false. */ var returnValue: scala.Boolean
 }
 
+object Anon_CookiePairHeaderValue {
+  @scala.inline
+  def apply(
+    cookiePairHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpCookiePairHeaderValue,
+    returnValue: scala.Boolean
+  ): Anon_CookiePairHeaderValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cookiePairHeaderValue")(cookiePairHeaderValue)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_CookiePairHeaderValue]
+  }
+}
+

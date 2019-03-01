@@ -73,3 +73,46 @@ trait QueryInput extends js.Object {
   var TableName: TableName
 }
 
+object QueryInput {
+  @scala.inline
+  def apply(
+    TableName: TableName,
+    AttributesToGet: AttributeNameList = null,
+    ConditionalOperator: ConditionalOperator = null,
+    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
+    ExclusiveStartKey: Key = null,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
+    FilterExpression: ConditionExpression = null,
+    IndexName: IndexName = null,
+    KeyConditionExpression: KeyExpression = null,
+    KeyConditions: KeyConditions = null,
+    Limit: js.UndefOr[PositiveIntegerObject] = js.undefined,
+    ProjectionExpression: ProjectionExpression = null,
+    QueryFilter: FilterConditionMap = null,
+    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
+    ScanIndexForward: js.UndefOr[BooleanObject] = js.undefined,
+    Select: Select = null
+  ): QueryInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TableName")(TableName)
+    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet)
+    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead)
+    if (ExclusiveStartKey != null) __obj.updateDynamic("ExclusiveStartKey")(ExclusiveStartKey)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
+    if (FilterExpression != null) __obj.updateDynamic("FilterExpression")(FilterExpression)
+    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
+    if (KeyConditionExpression != null) __obj.updateDynamic("KeyConditionExpression")(KeyConditionExpression)
+    if (KeyConditions != null) __obj.updateDynamic("KeyConditions")(KeyConditions)
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression)
+    if (QueryFilter != null) __obj.updateDynamic("QueryFilter")(QueryFilter)
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(ScanIndexForward)) __obj.updateDynamic("ScanIndexForward")(ScanIndexForward)
+    if (Select != null) __obj.updateDynamic("Select")(Select.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueryInput]
+  }
+}
+

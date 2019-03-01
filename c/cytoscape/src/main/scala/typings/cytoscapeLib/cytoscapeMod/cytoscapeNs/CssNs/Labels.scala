@@ -234,3 +234,56 @@ trait Labels extends js.Object {
   var `text-wrap`: cytoscapeLib.cytoscapeLibStrings.none | cytoscapeLib.cytoscapeLibStrings.wrap
 }
 
+object Labels {
+  @scala.inline
+  def apply(
+    color: Colour,
+    `font-family`: java.lang.String,
+    `font-size`: scala.Double,
+    `font-style`: FontStyle,
+    `font-weight`: FontWeight,
+    label: java.lang.String,
+    `min-zoomed-font-size`: scala.Double,
+    `source-label`: java.lang.String,
+    `source-text-margin-x`: scala.Double,
+    `source-text-margin-y`: scala.Double,
+    `source-text-offset`: scala.Double,
+    `source-text-rotation`: scala.Double,
+    `target-label`: java.lang.String,
+    `target-text-margin-x`: scala.Double,
+    `target-text-margin-y`: scala.Double,
+    `target-text-offset`: scala.Double,
+    `target-text-rotation`: scala.Double,
+    `text-background-color`: Colour,
+    `text-background-opacity`: scala.Double,
+    `text-background-shape`: cytoscapeLib.cytoscapeLibStrings.ractangle | cytoscapeLib.cytoscapeLibStrings.roundrectangle,
+    `text-border-color`: Colour,
+    `text-border-opacity`: scala.Double,
+    `text-border-style`: LineStyle,
+    `text-border-width`: scala.Double,
+    `text-events`: cytoscapeLib.cytoscapeLibStrings.yes | cytoscapeLib.cytoscapeLibStrings.no,
+    `text-halign`: cytoscapeLib.cytoscapeLibStrings.left | cytoscapeLib.cytoscapeLibStrings.center | cytoscapeLib.cytoscapeLibStrings.right,
+    `text-margin-x`: scala.Double,
+    `text-margin-y`: scala.Double,
+    `text-max-width`: java.lang.String,
+    `text-opacity`: scala.Double,
+    `text-outline-color`: Colour,
+    `text-outline-opacity`: scala.Double,
+    `text-outline-width`: scala.Double,
+    `text-rotation`: scala.Double,
+    `text-shadow-blur`: scala.Double,
+    `text-shadow-color`: Colour,
+    `text-shadow-offset-x`: scala.Double,
+    `text-shadow-offset-y`: scala.Double,
+    `text-shadow-opacity`: scala.Double,
+    `text-transform`: TextTranformation,
+    `text-valign`: cytoscapeLib.cytoscapeLibStrings.top | cytoscapeLib.cytoscapeLibStrings.center | cytoscapeLib.cytoscapeLibStrings.bottom,
+    `text-wrap`: cytoscapeLib.cytoscapeLibStrings.none | cytoscapeLib.cytoscapeLibStrings.wrap
+  ): Labels = {
+    val __obj = js.Dynamic.literal(`font-family` = `font-family`, `font-size` = `font-size`, `font-style` = `font-style`, `font-weight` = `font-weight`.asInstanceOf[js.Any], `min-zoomed-font-size` = `min-zoomed-font-size`, `source-label` = `source-label`, `source-text-margin-x` = `source-text-margin-x`, `source-text-margin-y` = `source-text-margin-y`, `source-text-offset` = `source-text-offset`, `source-text-rotation` = `source-text-rotation`, `target-label` = `target-label`, `target-text-margin-x` = `target-text-margin-x`, `target-text-margin-y` = `target-text-margin-y`, `target-text-offset` = `target-text-offset`, `target-text-rotation` = `target-text-rotation`, `text-background-color` = `text-background-color`, `text-background-opacity` = `text-background-opacity`, `text-background-shape` = `text-background-shape`.asInstanceOf[js.Any], `text-border-color` = `text-border-color`, `text-border-opacity` = `text-border-opacity`, `text-border-style` = `text-border-style`, `text-border-width` = `text-border-width`, `text-events` = `text-events`.asInstanceOf[js.Any], `text-halign` = `text-halign`.asInstanceOf[js.Any], `text-margin-x` = `text-margin-x`, `text-margin-y` = `text-margin-y`, `text-max-width` = `text-max-width`, `text-opacity` = `text-opacity`, `text-outline-color` = `text-outline-color`, `text-outline-opacity` = `text-outline-opacity`, `text-outline-width` = `text-outline-width`, `text-rotation` = `text-rotation`, `text-shadow-blur` = `text-shadow-blur`, `text-shadow-color` = `text-shadow-color`, `text-shadow-offset-x` = `text-shadow-offset-x`, `text-shadow-offset-y` = `text-shadow-offset-y`, `text-shadow-opacity` = `text-shadow-opacity`, `text-transform` = `text-transform`, `text-valign` = `text-valign`.asInstanceOf[js.Any], `text-wrap` = `text-wrap`.asInstanceOf[js.Any])
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[Labels]
+  }
+}
+

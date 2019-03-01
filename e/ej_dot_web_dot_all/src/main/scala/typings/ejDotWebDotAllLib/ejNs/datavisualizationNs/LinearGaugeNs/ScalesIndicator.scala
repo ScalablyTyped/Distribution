@@ -48,3 +48,32 @@ trait ScalesIndicator extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScalesIndicator {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    border: ScalesIndicatorsBorder = null,
+    font: ScalesIndicatorsFont = null,
+    height: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    position: ScalesIndicatorsPosition = null,
+    stateRanges: js.Array[ScalesIndicatorsStateRange] = null,
+    textLocation: ScalesIndicatorsTextLocation = null,
+    `type`: IndicatorTypes | java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ScalesIndicator = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (stateRanges != null) __obj.updateDynamic("stateRanges")(stateRanges)
+    if (textLocation != null) __obj.updateDynamic("textLocation")(textLocation)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScalesIndicator]
+  }
+}
+

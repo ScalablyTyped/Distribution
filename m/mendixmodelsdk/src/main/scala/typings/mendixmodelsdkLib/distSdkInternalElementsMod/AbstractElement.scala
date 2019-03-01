@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 - mendixmodelsdkLib.distSdkInternalElementsMod.IAbstractElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined load, load, load, load, asLoaded */ @JSImport("mendixmodelsdk/dist/sdk/internal/elements", "AbstractElement")
 @js.native
 abstract class AbstractElement protected ()
-  extends mendixmodelsdkLib.distSdkInternalStructuresMod.Structure {
+  extends mendixmodelsdkLib.distSdkInternalStructuresMod.Structure
+     with mendixmodelsdkLib.distSdkInternalStructuresMod.aliasesNs.Container {
   def this(model: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean) = this()
   def this(model: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distSdkInternalStructuresMod.aliasesNs.IContainer) = this()
   @JSName("container")

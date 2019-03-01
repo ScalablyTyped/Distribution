@@ -46,3 +46,22 @@ trait ChartAreaFormatLoadOptions extends js.Object {
   var roundedCorners: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartAreaFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    border: ChartBorderLoadOptions = null,
+    colorScheme: js.UndefOr[scala.Boolean] = js.undefined,
+    font: ChartFontLoadOptions = null,
+    roundedCorners: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartAreaFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (!js.isUndefined(colorScheme)) __obj.updateDynamic("colorScheme")(colorScheme)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(roundedCorners)) __obj.updateDynamic("roundedCorners")(roundedCorners)
+    __obj.asInstanceOf[ChartAreaFormatLoadOptions]
+  }
+}
+

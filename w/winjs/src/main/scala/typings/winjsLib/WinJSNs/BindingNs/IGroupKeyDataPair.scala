@@ -11,3 +11,22 @@ trait IGroupKeyDataPair[T] extends IKeyDataPair[T] {
   var groupSize: scala.Double
 }
 
+object IGroupKeyDataPair {
+  @scala.inline
+  def apply[T](
+    data: T,
+    firstItemIndexHint: scala.Double,
+    firstItemKey: java.lang.String,
+    groupSize: scala.Double,
+    key: java.lang.String
+  ): IGroupKeyDataPair[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("firstItemIndexHint")(firstItemIndexHint)
+    __obj.updateDynamic("firstItemKey")(firstItemKey)
+    __obj.updateDynamic("groupSize")(groupSize)
+    __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[IGroupKeyDataPair[T]]
+  }
+}
+

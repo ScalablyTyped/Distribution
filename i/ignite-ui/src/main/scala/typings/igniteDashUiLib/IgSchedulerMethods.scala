@@ -71,3 +71,38 @@ trait IgSchedulerMethods extends js.Object {
   def todayButton(): java.lang.String
 }
 
+object IgSchedulerMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    createAppointment: js.Function1[js.Object, js.Object],
+    dateRangeButton: js.Function0[java.lang.String],
+    deleteAppointment: js.Function1[js.Object, js.Object],
+    destroy: js.Function0[scala.Unit],
+    editAppointment: js.Function2[js.Object, js.Object, js.Object],
+    getAppointmentsInRange: js.Function2[stdLib.Date, stdLib.Date, js.Object],
+    getCalendar: js.Function0[java.lang.String],
+    nextButton: js.Function0[java.lang.String],
+    previousButton: js.Function0[java.lang.String],
+    todayButton: js.Function0[java.lang.String]
+  ): IgSchedulerMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("createAppointment")(createAppointment)
+    __obj.updateDynamic("dateRangeButton")(dateRangeButton)
+    __obj.updateDynamic("deleteAppointment")(deleteAppointment)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("editAppointment")(editAppointment)
+    __obj.updateDynamic("getAppointmentsInRange")(getAppointmentsInRange)
+    __obj.updateDynamic("getCalendar")(getCalendar)
+    __obj.updateDynamic("nextButton")(nextButton)
+    __obj.updateDynamic("previousButton")(previousButton)
+    __obj.updateDynamic("todayButton")(todayButton)
+    __obj.asInstanceOf[IgSchedulerMethods]
+  }
+}
+

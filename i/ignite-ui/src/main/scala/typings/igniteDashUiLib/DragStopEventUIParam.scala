@@ -24,3 +24,20 @@ trait DragStopEventUIParam extends js.Object {
   var position: js.UndefOr[js.Any] = js.undefined
 }
 
+object DragStopEventUIParam {
+  @scala.inline
+  def apply(
+    helper: java.lang.String = null,
+    offset: js.Any = null,
+    originalPosition: js.Any = null,
+    position: js.Any = null
+  ): DragStopEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (helper != null) __obj.updateDynamic("helper")(helper)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[DragStopEventUIParam]
+  }
+}
+

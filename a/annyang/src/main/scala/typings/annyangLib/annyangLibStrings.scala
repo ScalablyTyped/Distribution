@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object annyangLibStrings {
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends annyangLib.annyangMod.Events
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends annyangLib.annyangMod.Events
   
   @js.native
-  sealed trait errorNetwork extends js.Object
+  sealed trait errorNetwork
+    extends annyangLib.annyangMod.Events
   
   @js.native
-  sealed trait errorPermissionBlocked extends js.Object
+  sealed trait errorPermissionBlocked
+    extends annyangLib.annyangMod.Events
   
   @js.native
-  sealed trait errorPermissionDenied extends js.Object
+  sealed trait errorPermissionDenied
+    extends annyangLib.annyangMod.Events
   
   @js.native
-  sealed trait result extends js.Object
+  sealed trait result
+    extends annyangLib.annyangMod.Events
   
   @js.native
-  sealed trait resultMatch extends js.Object
+  sealed trait resultMatch
+    extends annyangLib.annyangMod.Events
   
   @js.native
-  sealed trait resultNoMatch extends js.Object
+  sealed trait resultNoMatch
+    extends annyangLib.annyangMod.Events
   
   @js.native
-  sealed trait soundstart extends js.Object
+  sealed trait soundstart
+    extends annyangLib.annyangMod.Events
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends annyangLib.annyangMod.Events
   
   @scala.inline
   def end: end = "end".asInstanceOf[end]

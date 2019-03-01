@@ -9,3 +9,12 @@ trait Anon_Left extends js.Object {
   val Left: scala.Double
 }
 
+object Anon_Left {
+  @scala.inline
+  def apply(Left: scala.Double): Anon_Left = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Left")(Left)
+    __obj.asInstanceOf[Anon_Left]
+  }
+}
+

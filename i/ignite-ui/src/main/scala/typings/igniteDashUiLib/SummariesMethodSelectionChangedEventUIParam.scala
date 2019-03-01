@@ -24,3 +24,20 @@ trait SummariesMethodSelectionChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object SummariesMethodSelectionChangedEventUIParam {
+  @scala.inline
+  def apply(
+    columnKey: java.lang.String = null,
+    isSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    methodName: java.lang.String = null,
+    owner: js.Any = null
+  ): SummariesMethodSelectionChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[SummariesMethodSelectionChangedEventUIParam]
+  }
+}
+

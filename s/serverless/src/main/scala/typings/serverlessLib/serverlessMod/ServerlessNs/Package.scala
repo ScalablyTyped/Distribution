@@ -12,3 +12,20 @@ trait Package extends js.Object {
   var individually: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Package {
+  @scala.inline
+  def apply(
+    exclude: js.Array[java.lang.String],
+    include: js.Array[java.lang.String],
+    artifact: java.lang.String = null,
+    individually: js.UndefOr[scala.Boolean] = js.undefined
+  ): Package = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exclude")(exclude)
+    __obj.updateDynamic("include")(include)
+    if (artifact != null) __obj.updateDynamic("artifact")(artifact)
+    if (!js.isUndefined(individually)) __obj.updateDynamic("individually")(individually)
+    __obj.asInstanceOf[Package]
+  }
+}
+

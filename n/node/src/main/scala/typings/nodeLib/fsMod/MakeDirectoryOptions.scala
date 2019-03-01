@@ -18,3 +18,13 @@ trait MakeDirectoryOptions extends js.Object {
   var recursive: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MakeDirectoryOptions {
+  @scala.inline
+  def apply(mode: scala.Int | scala.Double = null, recursive: js.UndefOr[scala.Boolean] = js.undefined): MakeDirectoryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    __obj.asInstanceOf[MakeDirectoryOptions]
+  }
+}
+

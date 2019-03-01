@@ -13,3 +13,22 @@ trait ChartCategoryAxisItemLabelsDateFormats extends js.Object {
   var years: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChartCategoryAxisItemLabelsDateFormats {
+  @scala.inline
+  def apply(
+    days: java.lang.String = null,
+    hours: java.lang.String = null,
+    months: java.lang.String = null,
+    weeks: java.lang.String = null,
+    years: java.lang.String = null
+  ): ChartCategoryAxisItemLabelsDateFormats = {
+    val __obj = js.Dynamic.literal()
+    if (days != null) __obj.updateDynamic("days")(days)
+    if (hours != null) __obj.updateDynamic("hours")(hours)
+    if (months != null) __obj.updateDynamic("months")(months)
+    if (weeks != null) __obj.updateDynamic("weeks")(weeks)
+    if (years != null) __obj.updateDynamic("years")(years)
+    __obj.asInstanceOf[ChartCategoryAxisItemLabelsDateFormats]
+  }
+}
+

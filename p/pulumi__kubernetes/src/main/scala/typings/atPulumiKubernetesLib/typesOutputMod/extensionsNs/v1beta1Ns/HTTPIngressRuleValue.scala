@@ -18,3 +18,12 @@ trait HTTPIngressRuleValue extends js.Object {
   val paths: js.Array[HTTPIngressPath]
 }
 
+object HTTPIngressRuleValue {
+  @scala.inline
+  def apply(paths: js.Array[HTTPIngressPath]): HTTPIngressRuleValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("paths")(paths)
+    __obj.asInstanceOf[HTTPIngressRuleValue]
+  }
+}
+

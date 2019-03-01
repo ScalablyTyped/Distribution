@@ -13,3 +13,22 @@ trait Anon_Description extends js.Object {
   var rpc_origins: js.Array[java.lang.String]
 }
 
+object Anon_Description {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    icon: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    rpc_origins: js.Array[java.lang.String]
+  ): Anon_Description = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("icon")(icon)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("rpc_origins")(rpc_origins)
+    __obj.asInstanceOf[Anon_Description]
+  }
+}
+

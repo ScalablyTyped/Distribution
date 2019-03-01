@@ -130,3 +130,92 @@ trait IMedia extends IComponent {
   var volume: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IMedia {
+  @scala.inline
+  def apply(
+    IComponent: IComponent = null,
+    autoPause: js.UndefOr[scala.Boolean] = js.undefined,
+    autoResume: js.UndefOr[scala.Boolean] = js.undefined,
+    destroy: js.Function0[scala.Unit] = null,
+    enableControls: js.UndefOr[scala.Boolean] = js.undefined,
+    getAutoPause: js.Function0[scala.Boolean] = null,
+    getAutoResume: js.Function0[scala.Boolean] = null,
+    getCurrentTime: js.Function0[scala.Double] = null,
+    getDuration: js.Function0[scala.Double] = null,
+    getEnableControls: js.Function0[scala.Boolean] = null,
+    getLoop: js.Function0[scala.Boolean] = null,
+    getMedia: js.Function0[IElement] = null,
+    getMuted: js.Function0[scala.Boolean] = null,
+    getPreload: js.Function0[scala.Boolean] = null,
+    getUrl: js.Function0[java.lang.String] = null,
+    getVolume: js.Function0[scala.Double] = null,
+    initialize: js.Function0[scala.Unit] = null,
+    isPlaying: js.Function0[scala.Boolean] = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    media: IElement = null,
+    muted: js.UndefOr[scala.Boolean] = js.undefined,
+    pause: js.Function0[scala.Unit] = null,
+    play: js.Function0[scala.Unit] = null,
+    preload: js.UndefOr[scala.Boolean] = js.undefined,
+    setAutoPause: js.Function1[/* autoPause */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setAutoResume: js.Function1[/* autoResume */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setEnableControls: js.Function1[/* enableControls */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setLoop: js.Function1[/* loop */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setMedia: js.Function1[/* media */ js.UndefOr[IElement], scala.Unit] = null,
+    setMuted: js.Function1[/* muted */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setPreload: js.Function1[/* preload */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setUrl: js.Function1[/* url */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setVolume: js.Function1[/* volume */ js.UndefOr[scala.Double], scala.Unit] = null,
+    stop: js.Function0[scala.Unit] = null,
+    toggle: js.Function0[scala.Unit] = null,
+    updateEnableControls: js.Function1[/* enableControls */ js.UndefOr[js.Any], scala.Unit] = null,
+    updateLoop: js.Function1[/* loop */ js.UndefOr[js.Any], scala.Unit] = null,
+    updateUrl: js.Function1[/* newUrl */ js.UndefOr[js.Any], scala.Unit] = null,
+    url: java.lang.String = null,
+    volume: scala.Int | scala.Double = null
+  ): IMedia = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(autoPause)) __obj.updateDynamic("autoPause")(autoPause)
+    if (!js.isUndefined(autoResume)) __obj.updateDynamic("autoResume")(autoResume)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enableControls)) __obj.updateDynamic("enableControls")(enableControls)
+    if (getAutoPause != null) __obj.updateDynamic("getAutoPause")(getAutoPause)
+    if (getAutoResume != null) __obj.updateDynamic("getAutoResume")(getAutoResume)
+    if (getCurrentTime != null) __obj.updateDynamic("getCurrentTime")(getCurrentTime)
+    if (getDuration != null) __obj.updateDynamic("getDuration")(getDuration)
+    if (getEnableControls != null) __obj.updateDynamic("getEnableControls")(getEnableControls)
+    if (getLoop != null) __obj.updateDynamic("getLoop")(getLoop)
+    if (getMedia != null) __obj.updateDynamic("getMedia")(getMedia)
+    if (getMuted != null) __obj.updateDynamic("getMuted")(getMuted)
+    if (getPreload != null) __obj.updateDynamic("getPreload")(getPreload)
+    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
+    if (getVolume != null) __obj.updateDynamic("getVolume")(getVolume)
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (isPlaying != null) __obj.updateDynamic("isPlaying")(isPlaying)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (media != null) __obj.updateDynamic("media")(media)
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (pause != null) __obj.updateDynamic("pause")(pause)
+    if (play != null) __obj.updateDynamic("play")(play)
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
+    if (setAutoPause != null) __obj.updateDynamic("setAutoPause")(setAutoPause)
+    if (setAutoResume != null) __obj.updateDynamic("setAutoResume")(setAutoResume)
+    if (setEnableControls != null) __obj.updateDynamic("setEnableControls")(setEnableControls)
+    if (setLoop != null) __obj.updateDynamic("setLoop")(setLoop)
+    if (setMedia != null) __obj.updateDynamic("setMedia")(setMedia)
+    if (setMuted != null) __obj.updateDynamic("setMuted")(setMuted)
+    if (setPreload != null) __obj.updateDynamic("setPreload")(setPreload)
+    if (setUrl != null) __obj.updateDynamic("setUrl")(setUrl)
+    if (setVolume != null) __obj.updateDynamic("setVolume")(setVolume)
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (updateEnableControls != null) __obj.updateDynamic("updateEnableControls")(updateEnableControls)
+    if (updateLoop != null) __obj.updateDynamic("updateLoop")(updateLoop)
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IMedia]
+  }
+}
+

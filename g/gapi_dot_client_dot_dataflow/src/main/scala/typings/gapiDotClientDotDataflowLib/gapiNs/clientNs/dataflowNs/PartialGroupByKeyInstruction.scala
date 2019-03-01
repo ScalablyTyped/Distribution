@@ -26,3 +26,24 @@ trait PartialGroupByKeyInstruction extends js.Object {
   var valueCombiningFn: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object PartialGroupByKeyInstruction {
+  @scala.inline
+  def apply(
+    input: InstructionInput = null,
+    inputElementCodec: stdLib.Record[java.lang.String, _] = null,
+    originalCombineValuesInputStoreName: java.lang.String = null,
+    originalCombineValuesStepName: java.lang.String = null,
+    sideInputs: js.Array[SideInputInfo] = null,
+    valueCombiningFn: stdLib.Record[java.lang.String, _] = null
+  ): PartialGroupByKeyInstruction = {
+    val __obj = js.Dynamic.literal()
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (inputElementCodec != null) __obj.updateDynamic("inputElementCodec")(inputElementCodec)
+    if (originalCombineValuesInputStoreName != null) __obj.updateDynamic("originalCombineValuesInputStoreName")(originalCombineValuesInputStoreName)
+    if (originalCombineValuesStepName != null) __obj.updateDynamic("originalCombineValuesStepName")(originalCombineValuesStepName)
+    if (sideInputs != null) __obj.updateDynamic("sideInputs")(sideInputs)
+    if (valueCombiningFn != null) __obj.updateDynamic("valueCombiningFn")(valueCombiningFn)
+    __obj.asInstanceOf[PartialGroupByKeyInstruction]
+  }
+}
+

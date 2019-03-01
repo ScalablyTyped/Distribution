@@ -17,3 +17,14 @@ trait Injectable extends js.Object {
   ] = js.undefined
 }
 
+object Injectable {
+  @scala.inline
+  def apply(
+    providedIn: atAngularCoreLib.srcTypeMod.Type[_] | atAngularCoreLib.atAngularCoreLibStrings.root = null
+  ): Injectable = {
+    val __obj = js.Dynamic.literal()
+    if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Injectable]
+  }
+}
+

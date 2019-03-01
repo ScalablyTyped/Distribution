@@ -13,3 +13,22 @@ trait Anon_Const extends js.Object {
   var scope: babelDashTraverseLib.babelDashTraverseMod.Scope
 }
 
+object Anon_Const {
+  @scala.inline
+  def apply(
+    existing: babelDashTraverseLib.babelDashTraverseMod.Binding,
+    identifier: babelDashTypesLib.babelDashTypesMod.Identifier,
+    kind: babelDashTraverseLib.babelDashTraverseLibStrings.`var` | babelDashTraverseLib.babelDashTraverseLibStrings.let | babelDashTraverseLib.babelDashTraverseLibStrings.const,
+    path: babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node],
+    scope: babelDashTraverseLib.babelDashTraverseMod.Scope
+  ): Anon_Const = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("existing")(existing)
+    __obj.updateDynamic("identifier")(identifier)
+    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Anon_Const]
+  }
+}
+

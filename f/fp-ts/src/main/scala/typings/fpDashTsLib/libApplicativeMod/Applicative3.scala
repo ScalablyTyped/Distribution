@@ -10,3 +10,28 @@ trait Applicative3[F /* <: fpDashTsLib.libHKTMod.URIS3 */]
   def of[U, L, A](a: A): fpDashTsLib.libHKTMod.Type3[F, U, L, A]
 }
 
+object Applicative3 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
+    URI: F,
+    ap: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Function1[js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]]
+  ): Applicative3[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("ap")(ap)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("of")(of)
+    __obj.asInstanceOf[Applicative3[F]]
+  }
+}
+

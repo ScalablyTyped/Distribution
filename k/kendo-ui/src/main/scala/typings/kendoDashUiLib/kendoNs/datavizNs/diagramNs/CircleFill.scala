@@ -11,3 +11,18 @@ trait CircleFill extends js.Object {
   var opacity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CircleFill {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    gradient: CircleFillGradient = null,
+    opacity: scala.Int | scala.Double = null
+  ): CircleFill = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CircleFill]
+  }
+}
+

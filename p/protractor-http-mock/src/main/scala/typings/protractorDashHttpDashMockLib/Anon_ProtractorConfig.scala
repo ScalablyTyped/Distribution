@@ -18,3 +18,13 @@ trait Anon_ProtractorConfig extends js.Object {
   var rootDirectory: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ProtractorConfig {
+  @scala.inline
+  def apply(protractorConfig: java.lang.String = null, rootDirectory: java.lang.String = null): Anon_ProtractorConfig = {
+    val __obj = js.Dynamic.literal()
+    if (protractorConfig != null) __obj.updateDynamic("protractorConfig")(protractorConfig)
+    if (rootDirectory != null) __obj.updateDynamic("rootDirectory")(rootDirectory)
+    __obj.asInstanceOf[Anon_ProtractorConfig]
+  }
+}
+

@@ -22,3 +22,16 @@ trait Anon_Duratio extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Duratio {
+  @scala.inline
+  def apply(
+    duratio: scala.Int | scala.Double = null,
+    timingFunc: weixinDashAppLib.weixinDashAppLibStrings.linear | weixinDashAppLib.weixinDashAppLibStrings.easeIn | weixinDashAppLib.weixinDashAppLibStrings.easeOut | weixinDashAppLib.weixinDashAppLibStrings.easeInOut = null
+  ): Anon_Duratio = {
+    val __obj = js.Dynamic.literal()
+    if (duratio != null) __obj.updateDynamic("duratio")(duratio.asInstanceOf[js.Any])
+    if (timingFunc != null) __obj.updateDynamic("timingFunc")(timingFunc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Duratio]
+  }
+}
+

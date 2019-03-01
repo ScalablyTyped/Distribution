@@ -24,3 +24,28 @@ trait Database extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Database {
+  @scala.inline
+  def apply(
+    charset: java.lang.String = null,
+    collation: java.lang.String = null,
+    etag: java.lang.String = null,
+    instance: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    project: java.lang.String = null,
+    selfLink: java.lang.String = null
+  ): Database = {
+    val __obj = js.Dynamic.literal()
+    if (charset != null) __obj.updateDynamic("charset")(charset)
+    if (collation != null) __obj.updateDynamic("collation")(collation)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (project != null) __obj.updateDynamic("project")(project)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Database]
+  }
+}
+

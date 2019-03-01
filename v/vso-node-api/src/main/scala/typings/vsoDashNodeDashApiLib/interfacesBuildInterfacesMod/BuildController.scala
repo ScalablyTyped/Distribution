@@ -33,3 +33,32 @@ trait BuildController extends XamlBuildControllerReference {
   var uri: java.lang.String
 }
 
+object BuildController {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    createdDate: stdLib.Date,
+    description: java.lang.String,
+    enabled: scala.Boolean,
+    id: scala.Double,
+    name: java.lang.String,
+    status: ControllerStatus,
+    updatedDate: stdLib.Date,
+    uri: java.lang.String,
+    url: java.lang.String
+  ): BuildController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("updatedDate")(updatedDate)
+    __obj.updateDynamic("uri")(uri)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[BuildController]
+  }
+}
+

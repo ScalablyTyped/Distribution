@@ -33,3 +33,22 @@ trait GridRowsUpdatedEvent[T] extends js.Object {
   var updated: T
 }
 
+object GridRowsUpdatedEvent {
+  @scala.inline
+  def apply[T](
+    action: reactDashDataDashGridLib.reactDashDataDashGridLibStrings.cellUpdate | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.cellDrag | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.columnFill | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.copyPaste,
+    cellKey: java.lang.String,
+    fromRow: scala.Double,
+    toRow: scala.Double,
+    updated: T
+  ): GridRowsUpdatedEvent[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    __obj.updateDynamic("cellKey")(cellKey)
+    __obj.updateDynamic("fromRow")(fromRow)
+    __obj.updateDynamic("toRow")(toRow)
+    __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridRowsUpdatedEvent[T]]
+  }
+}
+

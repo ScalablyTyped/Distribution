@@ -65,3 +65,30 @@ trait XMultipleResults
   def getUpdateCount(): scala.Double
 }
 
+object XMultipleResults {
+  @scala.inline
+  def apply(
+    MoreResults: scala.Boolean,
+    ResultSet: XResultSet,
+    UpdateCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getMoreResults: js.Function0[scala.Boolean],
+    getResultSet: js.Function0[XResultSet],
+    getUpdateCount: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMultipleResults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MoreResults")(MoreResults)
+    __obj.updateDynamic("ResultSet")(ResultSet)
+    __obj.updateDynamic("UpdateCount")(UpdateCount)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMoreResults")(getMoreResults)
+    __obj.updateDynamic("getResultSet")(getResultSet)
+    __obj.updateDynamic("getUpdateCount")(getUpdateCount)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMultipleResults]
+  }
+}
+

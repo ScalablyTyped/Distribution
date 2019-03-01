@@ -10,3 +10,13 @@ trait ISenderSendOptions extends js.Object {
   var retries: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ISenderSendOptions {
+  @scala.inline
+  def apply(backoff: scala.Int | scala.Double = null, retries: scala.Int | scala.Double = null): ISenderSendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backoff != null) __obj.updateDynamic("backoff")(backoff.asInstanceOf[js.Any])
+    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISenderSendOptions]
+  }
+}
+

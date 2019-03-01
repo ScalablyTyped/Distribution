@@ -41,3 +41,18 @@ trait SegmentFilter extends js.Object {
   var simpleSegment: js.UndefOr[SimpleSegment] = js.undefined
 }
 
+object SegmentFilter {
+  @scala.inline
+  def apply(
+    not: js.UndefOr[scala.Boolean] = js.undefined,
+    sequenceSegment: SequenceSegment = null,
+    simpleSegment: SimpleSegment = null
+  ): SegmentFilter = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(not)) __obj.updateDynamic("not")(not)
+    if (sequenceSegment != null) __obj.updateDynamic("sequenceSegment")(sequenceSegment)
+    if (simpleSegment != null) __obj.updateDynamic("simpleSegment")(simpleSegment)
+    __obj.asInstanceOf[SegmentFilter]
+  }
+}
+

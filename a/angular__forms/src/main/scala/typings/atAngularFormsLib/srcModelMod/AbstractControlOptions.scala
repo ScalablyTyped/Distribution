@@ -29,3 +29,18 @@ trait AbstractControlOptions extends js.Object {
   ] = js.undefined
 }
 
+object AbstractControlOptions {
+  @scala.inline
+  def apply(
+    asyncValidators: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn | js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn] = null,
+    updateOn: atAngularFormsLib.atAngularFormsLibStrings.change | atAngularFormsLib.atAngularFormsLibStrings.blur | atAngularFormsLib.atAngularFormsLibStrings.submit = null,
+    validators: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn | js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn] = null
+  ): AbstractControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncValidators != null) __obj.updateDynamic("asyncValidators")(asyncValidators.asInstanceOf[js.Any])
+    if (updateOn != null) __obj.updateDynamic("updateOn")(updateOn.asInstanceOf[js.Any])
+    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AbstractControlOptions]
+  }
+}
+

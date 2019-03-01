@@ -7,43 +7,43 @@ import scala.scalajs.js.annotation._
 
 object canvasjsLibStrings {
   @js.native
-  sealed trait dash extends js.Object
+  sealed trait dash extends DashType
   
   @js.native
-  sealed trait dashDot extends js.Object
+  sealed trait dashDot extends DashType
   
   @js.native
-  sealed trait dot extends js.Object
+  sealed trait dot extends DashType
   
   @js.native
   sealed trait jpg extends js.Object
   
   @js.native
-  sealed trait longDash extends js.Object
+  sealed trait longDash extends DashType
   
   @js.native
-  sealed trait longDashDot extends js.Object
+  sealed trait longDashDot extends DashType
   
   @js.native
-  sealed trait longDashDotDot extends js.Object
+  sealed trait longDashDotDot extends DashType
   
   @js.native
   sealed trait png extends js.Object
   
   @js.native
-  sealed trait shortDash extends js.Object
+  sealed trait shortDash extends DashType
   
   @js.native
-  sealed trait shortDashDot extends js.Object
+  sealed trait shortDashDot extends DashType
   
   @js.native
-  sealed trait shortDashDotDot extends js.Object
+  sealed trait shortDashDotDot extends DashType
   
   @js.native
-  sealed trait shortDot extends js.Object
+  sealed trait shortDot extends DashType
   
   @js.native
-  sealed trait solid extends js.Object
+  sealed trait solid extends DashType
   
   @scala.inline
   def dash: dash = "dash".asInstanceOf[dash]

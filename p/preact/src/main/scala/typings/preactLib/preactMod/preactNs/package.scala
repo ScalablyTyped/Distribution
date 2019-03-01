@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object preactNs {
-  // Type alias for a component considered generally, whether stateless or stateful.
-  type AnyComponent[P, S] = FunctionalComponent[P] | (ComponentConstructor[P, S])
   type ComponentChild = VNode[js.Any] | js.Object | java.lang.String | scala.Double | scala.Boolean | scala.Null
   type ComponentChildren = js.Array[ComponentChild] | ComponentChild
   type ComponentFactory[P] = (ComponentConstructor[P, js.Object]) | FunctionalComponent[P]

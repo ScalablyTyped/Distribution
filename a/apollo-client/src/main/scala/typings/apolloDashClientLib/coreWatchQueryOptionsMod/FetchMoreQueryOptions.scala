@@ -10,3 +10,13 @@ trait FetchMoreQueryOptions[TVariables, K /* <: java.lang.String */] extends js.
   var variables: js.UndefOr[stdLib.Pick[TVariables, K]] = js.undefined
 }
 
+object FetchMoreQueryOptions {
+  @scala.inline
+  def apply[TVariables, K /* <: java.lang.String */](query: graphqlLib.languageAstMod.DocumentNode = null, variables: stdLib.Pick[TVariables, K] = null): FetchMoreQueryOptions[TVariables, K] = {
+    val __obj = js.Dynamic.literal()
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (variables != null) __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[FetchMoreQueryOptions[TVariables, K]]
+  }
+}
+

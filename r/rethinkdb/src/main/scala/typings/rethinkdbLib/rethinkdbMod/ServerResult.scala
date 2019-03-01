@@ -11,3 +11,14 @@ trait ServerResult extends js.Object {
   var proxy: scala.Boolean
 }
 
+object ServerResult {
+  @scala.inline
+  def apply(id: java.lang.String, proxy: scala.Boolean, name: java.lang.String = null): ServerResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("proxy")(proxy)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ServerResult]
+  }
+}
+

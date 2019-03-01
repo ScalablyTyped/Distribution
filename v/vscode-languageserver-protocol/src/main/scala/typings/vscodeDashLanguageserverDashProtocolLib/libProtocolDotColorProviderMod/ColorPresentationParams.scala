@@ -20,3 +20,18 @@ trait ColorPresentationParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object ColorPresentationParams {
+  @scala.inline
+  def apply(
+    color: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Color,
+    range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): ColorPresentationParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("textDocument")(textDocument)
+    __obj.asInstanceOf[ColorPresentationParams]
+  }
+}
+

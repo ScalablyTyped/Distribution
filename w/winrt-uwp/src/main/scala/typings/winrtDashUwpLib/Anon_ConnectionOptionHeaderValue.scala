@@ -10,3 +10,16 @@ trait Anon_ConnectionOptionHeaderValue extends js.Object {
   /** true if input is valid HttpConnectionOptionHeaderValue information; otherwise, false. */ var returnValue: scala.Boolean
 }
 
+object Anon_ConnectionOptionHeaderValue {
+  @scala.inline
+  def apply(
+    connectionOptionHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpConnectionOptionHeaderValue,
+    returnValue: scala.Boolean
+  ): Anon_ConnectionOptionHeaderValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connectionOptionHeaderValue")(connectionOptionHeaderValue)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ConnectionOptionHeaderValue]
+  }
+}
+

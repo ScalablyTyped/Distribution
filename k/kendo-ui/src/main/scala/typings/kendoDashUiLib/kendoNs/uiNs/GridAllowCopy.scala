@@ -9,3 +9,12 @@ trait GridAllowCopy extends js.Object {
   var delimeter: js.UndefOr[java.lang.String | js.Any] = js.undefined
 }
 
+object GridAllowCopy {
+  @scala.inline
+  def apply(delimeter: java.lang.String | js.Any = null): GridAllowCopy = {
+    val __obj = js.Dynamic.literal()
+    if (delimeter != null) __obj.updateDynamic("delimeter")(delimeter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridAllowCopy]
+  }
+}
+

@@ -53,3 +53,28 @@ trait IModel extends js.Object {
   var units: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IModel {
+  @scala.inline
+  def apply(
+    exporterOptions: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    layer: java.lang.String = null,
+    models: IModelMap = null,
+    notes: java.lang.String = null,
+    origin: IPoint = null,
+    paths: IPathMap = null,
+    `type`: java.lang.String = null,
+    units: java.lang.String = null
+  ): IModel = {
+    val __obj = js.Dynamic.literal()
+    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (models != null) __obj.updateDynamic("models")(models)
+    if (notes != null) __obj.updateDynamic("notes")(notes)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (units != null) __obj.updateDynamic("units")(units)
+    __obj.asInstanceOf[IModel]
+  }
+}
+

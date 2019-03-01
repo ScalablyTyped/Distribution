@@ -18,3 +18,32 @@ trait zIndex extends js.Object {
   var tooltip: scala.Double
 }
 
+object zIndex {
+  @scala.inline
+  def apply(
+    appBar: scala.Double,
+    dialog: scala.Double,
+    dialogOverlay: scala.Double,
+    drawer: scala.Double,
+    drawerOverlay: scala.Double,
+    layer: scala.Double,
+    menu: scala.Double,
+    popover: scala.Double,
+    snackbar: scala.Double,
+    tooltip: scala.Double
+  ): zIndex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appBar")(appBar)
+    __obj.updateDynamic("dialog")(dialog)
+    __obj.updateDynamic("dialogOverlay")(dialogOverlay)
+    __obj.updateDynamic("drawer")(drawer)
+    __obj.updateDynamic("drawerOverlay")(drawerOverlay)
+    __obj.updateDynamic("layer")(layer)
+    __obj.updateDynamic("menu")(menu)
+    __obj.updateDynamic("popover")(popover)
+    __obj.updateDynamic("snackbar")(snackbar)
+    __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[zIndex]
+  }
+}
+

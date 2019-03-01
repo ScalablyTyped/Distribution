@@ -96,3 +96,44 @@ trait Options extends js.Object {
   var tooltips: js.UndefOr[scala.Boolean | js.Object | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    range: org.scalablytyped.runtime.StringDictionary[scala.Double | js.Array[scala.Double]],
+    start: scala.Double | js.Array[scala.Double] | js.Array[js.Array[scala.Double]],
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDuration: scala.Int | scala.Double = null,
+    behaviour: java.lang.String = null,
+    connect: scala.Boolean | js.Array[scala.Boolean] = null,
+    direction: nouisliderLib.nouisliderLibStrings.ltr | nouisliderLib.nouisliderLibStrings.rtl = null,
+    format: js.Object | (js.Function1[/* repeated */ js.Any, _]) = null,
+    limit: scala.Int | scala.Double = null,
+    margin: scala.Int | scala.Double = null,
+    orientation: nouisliderLib.nouisliderLibStrings.vertical | nouisliderLib.nouisliderLibStrings.horizontal = null,
+    padding: scala.Int | scala.Double = null,
+    pips: PipsOptions = null,
+    snap: js.UndefOr[scala.Boolean] = js.undefined,
+    step: scala.Int | scala.Double = null,
+    tooltips: scala.Boolean | js.Object | (js.Function1[/* repeated */ js.Any, _]) = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (behaviour != null) __obj.updateDynamic("behaviour")(behaviour)
+    if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (pips != null) __obj.updateDynamic("pips")(pips)
+    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

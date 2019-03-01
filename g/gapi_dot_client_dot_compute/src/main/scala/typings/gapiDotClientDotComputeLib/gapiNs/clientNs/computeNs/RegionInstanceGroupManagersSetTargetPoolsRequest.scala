@@ -18,3 +18,13 @@ trait RegionInstanceGroupManagersSetTargetPoolsRequest extends js.Object {
   var targetPools: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object RegionInstanceGroupManagersSetTargetPoolsRequest {
+  @scala.inline
+  def apply(fingerprint: java.lang.String = null, targetPools: js.Array[java.lang.String] = null): RegionInstanceGroupManagersSetTargetPoolsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (targetPools != null) __obj.updateDynamic("targetPools")(targetPools)
+    __obj.asInstanceOf[RegionInstanceGroupManagersSetTargetPoolsRequest]
+  }
+}
+

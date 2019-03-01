@@ -15,3 +15,20 @@ trait Anon_ExtractHostnameRules extends js.Object {
   var validHosts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_ExtractHostnameRules {
+  @scala.inline
+  def apply(
+    extractHostname: stdLib.ReturnType[
+      /* import warning: ImportType.apply Failed type conversion: typeof extractHostname */ js.Any
+    ] = null,
+    rules: js.Any = null,
+    validHosts: js.Array[java.lang.String] = null
+  ): Anon_ExtractHostnameRules = {
+    val __obj = js.Dynamic.literal()
+    if (extractHostname != null) __obj.updateDynamic("extractHostname")(extractHostname)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (validHosts != null) __obj.updateDynamic("validHosts")(validHosts)
+    __obj.asInstanceOf[Anon_ExtractHostnameRules]
+  }
+}
+

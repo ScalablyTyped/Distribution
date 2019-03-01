@@ -30,3 +30,22 @@ trait Spec extends js.Object {
   def explain(path: js.Array[java.lang.String], via: js.Array[java.lang.String], value: js.Any): js.Array[Problem]
 }
 
+object Spec {
+  @scala.inline
+  def apply(
+    conform: js.Function1[js.Any, js.Any],
+    explain: js.Function3[js.Array[java.lang.String], js.Array[java.lang.String], js.Any, js.Array[Problem]],
+    name: java.lang.String,
+    options: js.Object,
+    toString: js.Function0[java.lang.String]
+  ): Spec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("conform")(conform)
+    __obj.updateDynamic("explain")(explain)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[Spec]
+  }
+}
+

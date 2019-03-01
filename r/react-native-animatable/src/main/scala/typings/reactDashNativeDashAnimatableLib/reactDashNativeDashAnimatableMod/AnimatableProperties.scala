@@ -25,3 +25,38 @@ trait AnimatableProperties[S /* <: js.Object */] extends js.Object {
   var useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AnimatableProperties {
+  @scala.inline
+  def apply[S /* <: js.Object */](
+    animation: Animation | java.lang.String = null,
+    delay: scala.Int | scala.Double = null,
+    direction: reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.normal | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.reverse | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.alternate | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.`alternate-reverse` = null,
+    duration: scala.Int | scala.Double = null,
+    easing: reactDashNativeDashAnimatableLib.Easing = null,
+    iterationCount: scala.Double | reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableLibStrings.infinite = null,
+    iterationDelay: scala.Int | scala.Double = null,
+    onAnimationBegin: js.Function = null,
+    onAnimationEnd: js.Function = null,
+    onTransitionBegin: js.Function1[/* property */ java.lang.String, scala.Unit] = null,
+    onTransitionEnd: js.Function1[/* property */ java.lang.String, scala.Unit] = null,
+    transition: java.lang.String = null,
+    useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
+  ): AnimatableProperties[S] = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (iterationCount != null) __obj.updateDynamic("iterationCount")(iterationCount.asInstanceOf[js.Any])
+    if (iterationDelay != null) __obj.updateDynamic("iterationDelay")(iterationDelay.asInstanceOf[js.Any])
+    if (onAnimationBegin != null) __obj.updateDynamic("onAnimationBegin")(onAnimationBegin)
+    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd)
+    if (onTransitionBegin != null) __obj.updateDynamic("onTransitionBegin")(onTransitionBegin)
+    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(onTransitionEnd)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver)
+    __obj.asInstanceOf[AnimatableProperties[S]]
+  }
+}
+

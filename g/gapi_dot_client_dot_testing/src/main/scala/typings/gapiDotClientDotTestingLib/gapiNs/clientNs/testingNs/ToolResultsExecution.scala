@@ -23,3 +23,18 @@ trait ToolResultsExecution extends js.Object {
   var projectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ToolResultsExecution {
+  @scala.inline
+  def apply(
+    executionId: java.lang.String = null,
+    historyId: java.lang.String = null,
+    projectId: java.lang.String = null
+  ): ToolResultsExecution = {
+    val __obj = js.Dynamic.literal()
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    __obj.asInstanceOf[ToolResultsExecution]
+  }
+}
+

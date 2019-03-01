@@ -88,3 +88,52 @@ trait DatePickerTheme extends js.Object {
   var yearsDisplay: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DatePickerTheme {
+  @scala.inline
+  def apply(
+    active: java.lang.String = null,
+    button: java.lang.String = null,
+    calendar: java.lang.String = null,
+    calendarWrapper: java.lang.String = null,
+    date: java.lang.String = null,
+    day: java.lang.String = null,
+    days: java.lang.String = null,
+    dialog: java.lang.String = null,
+    disabled: java.lang.String = null,
+    header: java.lang.String = null,
+    input: java.lang.String = null,
+    month: java.lang.String = null,
+    monthsDisplay: java.lang.String = null,
+    next: java.lang.String = null,
+    prev: java.lang.String = null,
+    title: java.lang.String = null,
+    week: java.lang.String = null,
+    year: java.lang.String = null,
+    years: java.lang.String = null,
+    yearsDisplay: java.lang.String = null
+  ): DatePickerTheme = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (calendar != null) __obj.updateDynamic("calendar")(calendar)
+    if (calendarWrapper != null) __obj.updateDynamic("calendarWrapper")(calendarWrapper)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (day != null) __obj.updateDynamic("day")(day)
+    if (days != null) __obj.updateDynamic("days")(days)
+    if (dialog != null) __obj.updateDynamic("dialog")(dialog)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (month != null) __obj.updateDynamic("month")(month)
+    if (monthsDisplay != null) __obj.updateDynamic("monthsDisplay")(monthsDisplay)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (week != null) __obj.updateDynamic("week")(week)
+    if (year != null) __obj.updateDynamic("year")(year)
+    if (years != null) __obj.updateDynamic("years")(years)
+    if (yearsDisplay != null) __obj.updateDynamic("yearsDisplay")(yearsDisplay)
+    __obj.asInstanceOf[DatePickerTheme]
+  }
+}
+

@@ -40,3 +40,28 @@ trait TopicSubscriptionArgs extends js.Object {
   val topic: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.snsTopicMod.Topic]
 }
 
+object TopicSubscriptionArgs {
+  @scala.inline
+  def apply(
+    endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    topic: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.snsTopicMod.Topic],
+    confirmationTimeoutInMinutes: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    deliveryPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    endpointAutoConfirms: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    filterPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rawMessageDelivery: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): TopicSubscriptionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
+    if (confirmationTimeoutInMinutes != null) __obj.updateDynamic("confirmationTimeoutInMinutes")(confirmationTimeoutInMinutes.asInstanceOf[js.Any])
+    if (deliveryPolicy != null) __obj.updateDynamic("deliveryPolicy")(deliveryPolicy.asInstanceOf[js.Any])
+    if (endpointAutoConfirms != null) __obj.updateDynamic("endpointAutoConfirms")(endpointAutoConfirms.asInstanceOf[js.Any])
+    if (filterPolicy != null) __obj.updateDynamic("filterPolicy")(filterPolicy.asInstanceOf[js.Any])
+    if (rawMessageDelivery != null) __obj.updateDynamic("rawMessageDelivery")(rawMessageDelivery.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TopicSubscriptionArgs]
+  }
+}
+

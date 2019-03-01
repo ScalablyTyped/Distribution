@@ -186,3 +186,61 @@ trait IWebElement extends js.Object {
   def submit(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
 }
 
+object IWebElement {
+  @scala.inline
+  def apply(
+    clear: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]],
+    click: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]],
+    getAttribute: js.Function1[
+      java.lang.String, 
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]
+    ],
+    getCssValue: js.Function1[
+      java.lang.String, 
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]
+    ],
+    getId: js.Function0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[IWebElementId]
+    ],
+    getLocation: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[ILocation]],
+    getSize: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[ISize]],
+    getTagName: js.Function0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]
+    ],
+    getText: js.Function0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]
+    ],
+    isDisplayed: js.Function0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean]
+    ],
+    isEnabled: js.Function0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean]
+    ],
+    isSelected: js.Function0[
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean]
+    ],
+    sendKeys: js.Function1[
+      /* repeated */ scala.Double | java.lang.String | (seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String | scala.Double]), 
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
+    ],
+    submit: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]]
+  ): IWebElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("click")(click)
+    __obj.updateDynamic("getAttribute")(getAttribute)
+    __obj.updateDynamic("getCssValue")(getCssValue)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getLocation")(getLocation)
+    __obj.updateDynamic("getSize")(getSize)
+    __obj.updateDynamic("getTagName")(getTagName)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("isDisplayed")(isDisplayed)
+    __obj.updateDynamic("isEnabled")(isEnabled)
+    __obj.updateDynamic("isSelected")(isSelected)
+    __obj.updateDynamic("sendKeys")(sendKeys)
+    __obj.updateDynamic("submit")(submit)
+    __obj.asInstanceOf[IWebElement]
+  }
+}
+

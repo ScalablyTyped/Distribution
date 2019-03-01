@@ -28,3 +28,32 @@ trait IDirectionsRequestOptions extends js.Object {
   var vehicleSpec: js.UndefOr[IVehicleSpec] = js.undefined
 }
 
+object IDirectionsRequestOptions {
+  @scala.inline
+  def apply(
+    distanceUnit: DistanceUnit = null,
+    maxRoutes: scala.Int | scala.Double = null,
+    routeAvoidance: js.Array[RouteAvoidance] = null,
+    routeDraggable: js.UndefOr[scala.Boolean] = js.undefined,
+    routeIndex: scala.Int | scala.Double = null,
+    routeMode: RouteMode = null,
+    routeOptimization: RouteOptimization = null,
+    time: stdLib.Date = null,
+    timeType: TimeType = null,
+    vehicleSpec: IVehicleSpec = null
+  ): IDirectionsRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (distanceUnit != null) __obj.updateDynamic("distanceUnit")(distanceUnit)
+    if (maxRoutes != null) __obj.updateDynamic("maxRoutes")(maxRoutes.asInstanceOf[js.Any])
+    if (routeAvoidance != null) __obj.updateDynamic("routeAvoidance")(routeAvoidance)
+    if (!js.isUndefined(routeDraggable)) __obj.updateDynamic("routeDraggable")(routeDraggable)
+    if (routeIndex != null) __obj.updateDynamic("routeIndex")(routeIndex.asInstanceOf[js.Any])
+    if (routeMode != null) __obj.updateDynamic("routeMode")(routeMode)
+    if (routeOptimization != null) __obj.updateDynamic("routeOptimization")(routeOptimization)
+    if (time != null) __obj.updateDynamic("time")(time)
+    if (timeType != null) __obj.updateDynamic("timeType")(timeType)
+    if (vehicleSpec != null) __obj.updateDynamic("vehicleSpec")(vehicleSpec)
+    __obj.asInstanceOf[IDirectionsRequestOptions]
+  }
+}
+

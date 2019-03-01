@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object feedparserLibStrings {
   @js.native
-  sealed trait atom extends js.Object
+  sealed trait atom
+    extends feedparserLib.feedparserMod.FeedParserNs.Type
   
   @js.native
-  sealed trait rdf extends js.Object
+  sealed trait rdf
+    extends feedparserLib.feedparserMod.FeedParserNs.Type
   
   @js.native
-  sealed trait rss extends js.Object
+  sealed trait rss
+    extends feedparserLib.feedparserMod.FeedParserNs.Type
   
   @scala.inline
   def atom: atom = "atom".asInstanceOf[atom]

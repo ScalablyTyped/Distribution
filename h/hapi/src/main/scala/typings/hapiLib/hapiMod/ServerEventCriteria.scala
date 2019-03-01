@@ -42,3 +42,26 @@ trait ServerEventCriteria[T] extends js.Object {
   var tags: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ServerEventCriteria {
+  @scala.inline
+  def apply[T](
+    name: T,
+    channels: java.lang.String | js.Array[java.lang.String] = null,
+    clone: js.UndefOr[scala.Boolean] = js.undefined,
+    count: scala.Int | scala.Double = null,
+    filter: java.lang.String | js.Array[java.lang.String] | hapiLib.Anon_All = null,
+    spread: js.UndefOr[scala.Boolean] = js.undefined,
+    tags: js.UndefOr[scala.Boolean] = js.undefined
+  ): ServerEventCriteria[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread)
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[ServerEventCriteria[T]]
+  }
+}
+

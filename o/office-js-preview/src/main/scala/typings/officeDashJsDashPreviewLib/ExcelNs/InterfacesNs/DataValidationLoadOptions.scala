@@ -60,3 +60,26 @@ trait DataValidationLoadOptions extends js.Object {
   var valid: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataValidationLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    errorAlert: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreBlanks: js.UndefOr[scala.Boolean] = js.undefined,
+    prompt: js.UndefOr[scala.Boolean] = js.undefined,
+    rule: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined,
+    valid: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataValidationLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(errorAlert)) __obj.updateDynamic("errorAlert")(errorAlert)
+    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks)
+    if (!js.isUndefined(prompt)) __obj.updateDynamic("prompt")(prompt)
+    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    __obj.asInstanceOf[DataValidationLoadOptions]
+  }
+}
+

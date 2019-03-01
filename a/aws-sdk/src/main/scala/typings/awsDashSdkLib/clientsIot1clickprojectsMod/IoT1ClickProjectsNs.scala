@@ -664,6 +664,8 @@ object IoT1ClickProjectsNs extends js.Object {
   
   trait UpdateProjectResponse extends js.Object
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AttributeDefaultValue = java.lang.String
   type AttributeName = java.lang.String
@@ -682,6 +684,6 @@ object IoT1ClickProjectsNs extends js.Object {
   type ProjectName = java.lang.String
   type ProjectSummaryList = js.Array[ProjectSummary]
   type Time = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-05-14` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

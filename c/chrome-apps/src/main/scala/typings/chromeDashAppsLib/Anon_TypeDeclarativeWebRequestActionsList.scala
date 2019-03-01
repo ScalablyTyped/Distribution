@@ -10,3 +10,12 @@ trait Anon_TypeDeclarativeWebRequestActionsList extends js.Object {
   var `type`: chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList
 }
 
+object Anon_TypeDeclarativeWebRequestActionsList {
+  @scala.inline
+  def apply(`type`: chromeDashAppsLib.chromeNs.webViewRequestNs.DeclarativeWebRequestActionsList): Anon_TypeDeclarativeWebRequestActionsList = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Anon_TypeDeclarativeWebRequestActionsList]
+  }
+}
+

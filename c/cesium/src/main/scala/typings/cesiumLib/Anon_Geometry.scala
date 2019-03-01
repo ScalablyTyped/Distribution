@@ -11,3 +11,18 @@ trait Anon_Geometry extends js.Object {
   var modelMatrix: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Matrix4] = js.undefined
 }
 
+object Anon_Geometry {
+  @scala.inline
+  def apply(
+    geometry: cesiumLib.cesiumMod.CesiumNs.Geometry,
+    length: scala.Int | scala.Double = null,
+    modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null
+  ): Anon_Geometry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("geometry")(geometry)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix)
+    __obj.asInstanceOf[Anon_Geometry]
+  }
+}
+

@@ -20,3 +20,24 @@ trait IdpConfig extends js.Object {
   var whitelistedAudiences: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object IdpConfig {
+  @scala.inline
+  def apply(
+    clientId: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    experimentPercent: scala.Int | scala.Double = null,
+    provider: java.lang.String = null,
+    secret: java.lang.String = null,
+    whitelistedAudiences: js.Array[java.lang.String] = null
+  ): IdpConfig = {
+    val __obj = js.Dynamic.literal()
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (experimentPercent != null) __obj.updateDynamic("experimentPercent")(experimentPercent.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (secret != null) __obj.updateDynamic("secret")(secret)
+    if (whitelistedAudiences != null) __obj.updateDynamic("whitelistedAudiences")(whitelistedAudiences)
+    __obj.asInstanceOf[IdpConfig]
+  }
+}
+

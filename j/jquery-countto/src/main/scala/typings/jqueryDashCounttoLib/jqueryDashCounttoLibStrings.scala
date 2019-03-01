@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object jqueryDashCounttoLibStrings {
   @js.native
-  sealed trait restart extends js.Object
+  sealed trait restart
+    extends jqueryDashCounttoLib.jqueryDashCounttoMod.Method
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends jqueryDashCounttoLib.jqueryDashCounttoMod.Method
   
   @js.native
-  sealed trait stop extends js.Object
+  sealed trait stop
+    extends jqueryDashCounttoLib.jqueryDashCounttoMod.Method
   
   @js.native
-  sealed trait toggle extends js.Object
+  sealed trait toggle
+    extends jqueryDashCounttoLib.jqueryDashCounttoMod.Method
   
   @scala.inline
   def restart: restart = "restart".asInstanceOf[restart]

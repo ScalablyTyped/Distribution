@@ -67,3 +67,38 @@ trait Anon_AltAutoLevels extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltAutoLevels {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    alt: java.lang.String = null,
+    autoLevels: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    notifySubscribers: js.UndefOr[scala.Boolean] = js.undefined,
+    oauth_token: java.lang.String = null,
+    onBehalfOfContentOwner: java.lang.String = null,
+    onBehalfOfContentOwnerChannel: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    stabilize: js.UndefOr[scala.Boolean] = js.undefined,
+    userIp: java.lang.String = null
+  ): Anon_AltAutoLevels = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(autoLevels)) __obj.updateDynamic("autoLevels")(autoLevels)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(notifySubscribers)) __obj.updateDynamic("notifySubscribers")(notifySubscribers)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
+    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (!js.isUndefined(stabilize)) __obj.updateDynamic("stabilize")(stabilize)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltAutoLevels]
+  }
+}
+

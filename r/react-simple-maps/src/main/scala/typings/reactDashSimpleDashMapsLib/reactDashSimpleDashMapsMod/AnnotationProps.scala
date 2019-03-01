@@ -17,3 +17,30 @@ trait AnnotationProps extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AnnotationProps {
+  @scala.inline
+  def apply(
+    curve: scala.Int | scala.Double = null,
+    dx: scala.Int | scala.Double = null,
+    dy: scala.Int | scala.Double = null,
+    markerEnd: java.lang.String = null,
+    stroke: java.lang.String = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    subject: Point = null,
+    zoom: scala.Int | scala.Double = null
+  ): AnnotationProps = {
+    val __obj = js.Dynamic.literal()
+    if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
+    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
+    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
+    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnnotationProps]
+  }
+}
+

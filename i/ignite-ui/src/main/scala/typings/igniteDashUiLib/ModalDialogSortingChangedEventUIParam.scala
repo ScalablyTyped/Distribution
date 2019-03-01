@@ -24,3 +24,20 @@ trait ModalDialogSortingChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ModalDialogSortingChangedEventUIParam {
+  @scala.inline
+  def apply(
+    columnKey: java.lang.String = null,
+    isAsc: js.UndefOr[scala.Boolean] = js.undefined,
+    modalDialogElement: java.lang.String = null,
+    owner: js.Any = null
+  ): ModalDialogSortingChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (!js.isUndefined(isAsc)) __obj.updateDynamic("isAsc")(isAsc)
+    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ModalDialogSortingChangedEventUIParam]
+  }
+}
+

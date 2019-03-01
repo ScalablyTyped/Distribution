@@ -10,3 +10,12 @@ trait ListServiceAccountKeysResponse extends js.Object {
   var keys: js.UndefOr[js.Array[ServiceAccountKey]] = js.undefined
 }
 
+object ListServiceAccountKeysResponse {
+  @scala.inline
+  def apply(keys: js.Array[ServiceAccountKey] = null): ListServiceAccountKeysResponse = {
+    val __obj = js.Dynamic.literal()
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    __obj.asInstanceOf[ListServiceAccountKeysResponse]
+  }
+}
+

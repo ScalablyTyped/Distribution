@@ -73,3 +73,42 @@ trait Firewall extends js.Object {
   var targetTags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Firewall {
+  @scala.inline
+  def apply(
+    allowed: js.Array[gapiDotClientDotComputeLib.Anon_IPProtocol] = null,
+    creationTimestamp: java.lang.String = null,
+    denied: js.Array[gapiDotClientDotComputeLib.Anon_IPProtocol] = null,
+    description: java.lang.String = null,
+    destinationRanges: js.Array[java.lang.String] = null,
+    direction: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    network: java.lang.String = null,
+    priority: scala.Int | scala.Double = null,
+    selfLink: java.lang.String = null,
+    sourceRanges: js.Array[java.lang.String] = null,
+    sourceTags: js.Array[java.lang.String] = null,
+    targetTags: js.Array[java.lang.String] = null
+  ): Firewall = {
+    val __obj = js.Dynamic.literal()
+    if (allowed != null) __obj.updateDynamic("allowed")(allowed)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (denied != null) __obj.updateDynamic("denied")(denied)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (destinationRanges != null) __obj.updateDynamic("destinationRanges")(destinationRanges)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (sourceRanges != null) __obj.updateDynamic("sourceRanges")(sourceRanges)
+    if (sourceTags != null) __obj.updateDynamic("sourceTags")(sourceTags)
+    if (targetTags != null) __obj.updateDynamic("targetTags")(targetTags)
+    __obj.asInstanceOf[Firewall]
+  }
+}
+

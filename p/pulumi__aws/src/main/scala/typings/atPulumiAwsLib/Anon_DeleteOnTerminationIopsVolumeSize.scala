@@ -12,3 +12,20 @@ trait Anon_DeleteOnTerminationIopsVolumeSize extends js.Object {
   var volumeType: java.lang.String
 }
 
+object Anon_DeleteOnTerminationIopsVolumeSize {
+  @scala.inline
+  def apply(
+    deleteOnTermination: scala.Boolean,
+    iops: scala.Double,
+    volumeSize: scala.Double,
+    volumeType: java.lang.String
+  ): Anon_DeleteOnTerminationIopsVolumeSize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
+    __obj.updateDynamic("iops")(iops)
+    __obj.updateDynamic("volumeSize")(volumeSize)
+    __obj.updateDynamic("volumeType")(volumeType)
+    __obj.asInstanceOf[Anon_DeleteOnTerminationIopsVolumeSize]
+  }
+}
+

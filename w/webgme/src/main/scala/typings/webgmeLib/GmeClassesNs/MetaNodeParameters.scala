@@ -30,3 +30,19 @@ trait MetaNodeParameters extends js.Object {
   var sensitive: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MetaNodeParameters {
+  @scala.inline
+  def apply(
+    `object`: webgmeLib.Anon_Children,
+    aspect: java.lang.String = null,
+    multiplicity: js.UndefOr[scala.Boolean] = js.undefined,
+    sensitive: js.UndefOr[scala.Boolean] = js.undefined
+  ): MetaNodeParameters = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    if (aspect != null) __obj.updateDynamic("aspect")(aspect)
+    if (!js.isUndefined(multiplicity)) __obj.updateDynamic("multiplicity")(multiplicity)
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    __obj.asInstanceOf[MetaNodeParameters]
+  }
+}
+

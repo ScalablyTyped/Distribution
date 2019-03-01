@@ -20,3 +20,14 @@ trait SelectedItemsChangingEventUIParam extends js.Object {
   var oldItems: js.UndefOr[js.Any] = js.undefined
 }
 
+object SelectedItemsChangingEventUIParam {
+  @scala.inline
+  def apply(cancel: js.Any = null, newItems: js.Any = null, oldItems: js.Any = null): SelectedItemsChangingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (newItems != null) __obj.updateDynamic("newItems")(newItems)
+    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems)
+    __obj.asInstanceOf[SelectedItemsChangingEventUIParam]
+  }
+}
+

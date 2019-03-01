@@ -23,3 +23,20 @@ trait GamesNumberFormatConfiguration extends js.Object {
   var suffix: js.UndefOr[GamesNumberAffixConfiguration] = js.undefined
 }
 
+object GamesNumberFormatConfiguration {
+  @scala.inline
+  def apply(
+    currencyCode: java.lang.String = null,
+    numDecimalPlaces: scala.Int | scala.Double = null,
+    numberFormatType: java.lang.String = null,
+    suffix: GamesNumberAffixConfiguration = null
+  ): GamesNumberFormatConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (numDecimalPlaces != null) __obj.updateDynamic("numDecimalPlaces")(numDecimalPlaces.asInstanceOf[js.Any])
+    if (numberFormatType != null) __obj.updateDynamic("numberFormatType")(numberFormatType)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    __obj.asInstanceOf[GamesNumberFormatConfiguration]
+  }
+}
+

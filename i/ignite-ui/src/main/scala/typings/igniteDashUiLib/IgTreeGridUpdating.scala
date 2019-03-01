@@ -249,3 +249,113 @@ trait IgTreeGridUpdating
   var wrapAround: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgTreeGridUpdating {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTreeGridUpdating
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    addChildButtonLabel: java.lang.String = null,
+    addChildTooltip: java.lang.String = null,
+    addRowLabel: java.lang.String = null,
+    addRowTooltip: java.lang.String = null,
+    cancelLabel: java.lang.String = null,
+    cancelTooltip: java.lang.String = null,
+    columnSettings: js.Array[IgGridUpdatingColumnSetting] = null,
+    dataDirty: DataDirtyEvent = null,
+    deleteRowLabel: java.lang.String = null,
+    deleteRowTooltip: java.lang.String = null,
+    dialogWidget: java.lang.String = null,
+    doneLabel: java.lang.String = null,
+    doneTooltip: java.lang.String = null,
+    editCellEnded: EditCellEndedEvent = null,
+    editCellEnding: EditCellEndingEvent = null,
+    editCellStarted: EditCellStartedEvent = null,
+    editCellStarting: EditCellStartingEvent = null,
+    editMode: java.lang.String = null,
+    editRowEnded: EditRowEndedEvent = null,
+    editRowEnding: EditRowEndingEvent = null,
+    editRowStarted: EditRowStartedEvent = null,
+    editRowStarting: EditRowStartingEvent = null,
+    enableAddChild: js.UndefOr[scala.Boolean] = js.undefined,
+    enableAddRow: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDataDirtyException: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDeleteRow: js.UndefOr[scala.Boolean] = js.undefined,
+    excelNavigationMode: js.UndefOr[scala.Boolean] = js.undefined,
+    generatePrimaryKeyValue: GeneratePrimaryKeyValueEvent = null,
+    horizontalMoveOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: IgTreeGridUpdatingLocale = null,
+    rowAdded: RowAddedEvent = null,
+    rowAdding: RowAddingEvent = null,
+    rowDeleted: RowDeletedEvent = null,
+    rowDeleting: RowDeletingEvent = null,
+    rowEditDialogAfterClose: RowEditDialogAfterCloseEvent = null,
+    rowEditDialogAfterOpen: RowEditDialogAfterOpenEvent = null,
+    rowEditDialogBeforeClose: RowEditDialogBeforeCloseEvent = null,
+    rowEditDialogBeforeOpen: RowEditDialogBeforeOpenEvent = null,
+    rowEditDialogContentsRendered: RowEditDialogContentsRenderedEvent = null,
+    rowEditDialogOptions: IgGridUpdatingRowEditDialogOptions = null,
+    saveChangesErrorHandler: js.Function | java.lang.String = null,
+    saveChangesSuccessHandler: js.Function | java.lang.String = null,
+    showDoneCancelButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    startEditTriggers: java.lang.String | js.Array[_] = null,
+    swipeDistance: java.lang.String | scala.Double = null,
+    validation: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapAround: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgTreeGridUpdating = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (addChildButtonLabel != null) __obj.updateDynamic("addChildButtonLabel")(addChildButtonLabel)
+    if (addChildTooltip != null) __obj.updateDynamic("addChildTooltip")(addChildTooltip)
+    if (addRowLabel != null) __obj.updateDynamic("addRowLabel")(addRowLabel)
+    if (addRowTooltip != null) __obj.updateDynamic("addRowTooltip")(addRowTooltip)
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
+    if (cancelTooltip != null) __obj.updateDynamic("cancelTooltip")(cancelTooltip)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (dataDirty != null) __obj.updateDynamic("dataDirty")(dataDirty)
+    if (deleteRowLabel != null) __obj.updateDynamic("deleteRowLabel")(deleteRowLabel)
+    if (deleteRowTooltip != null) __obj.updateDynamic("deleteRowTooltip")(deleteRowTooltip)
+    if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
+    if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel)
+    if (doneTooltip != null) __obj.updateDynamic("doneTooltip")(doneTooltip)
+    if (editCellEnded != null) __obj.updateDynamic("editCellEnded")(editCellEnded)
+    if (editCellEnding != null) __obj.updateDynamic("editCellEnding")(editCellEnding)
+    if (editCellStarted != null) __obj.updateDynamic("editCellStarted")(editCellStarted)
+    if (editCellStarting != null) __obj.updateDynamic("editCellStarting")(editCellStarting)
+    if (editMode != null) __obj.updateDynamic("editMode")(editMode)
+    if (editRowEnded != null) __obj.updateDynamic("editRowEnded")(editRowEnded)
+    if (editRowEnding != null) __obj.updateDynamic("editRowEnding")(editRowEnding)
+    if (editRowStarted != null) __obj.updateDynamic("editRowStarted")(editRowStarted)
+    if (editRowStarting != null) __obj.updateDynamic("editRowStarting")(editRowStarting)
+    if (!js.isUndefined(enableAddChild)) __obj.updateDynamic("enableAddChild")(enableAddChild)
+    if (!js.isUndefined(enableAddRow)) __obj.updateDynamic("enableAddRow")(enableAddRow)
+    if (!js.isUndefined(enableDataDirtyException)) __obj.updateDynamic("enableDataDirtyException")(enableDataDirtyException)
+    if (!js.isUndefined(enableDeleteRow)) __obj.updateDynamic("enableDeleteRow")(enableDeleteRow)
+    if (!js.isUndefined(excelNavigationMode)) __obj.updateDynamic("excelNavigationMode")(excelNavigationMode)
+    if (generatePrimaryKeyValue != null) __obj.updateDynamic("generatePrimaryKeyValue")(generatePrimaryKeyValue)
+    if (!js.isUndefined(horizontalMoveOnEnter)) __obj.updateDynamic("horizontalMoveOnEnter")(horizontalMoveOnEnter)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (rowAdded != null) __obj.updateDynamic("rowAdded")(rowAdded)
+    if (rowAdding != null) __obj.updateDynamic("rowAdding")(rowAdding)
+    if (rowDeleted != null) __obj.updateDynamic("rowDeleted")(rowDeleted)
+    if (rowDeleting != null) __obj.updateDynamic("rowDeleting")(rowDeleting)
+    if (rowEditDialogAfterClose != null) __obj.updateDynamic("rowEditDialogAfterClose")(rowEditDialogAfterClose)
+    if (rowEditDialogAfterOpen != null) __obj.updateDynamic("rowEditDialogAfterOpen")(rowEditDialogAfterOpen)
+    if (rowEditDialogBeforeClose != null) __obj.updateDynamic("rowEditDialogBeforeClose")(rowEditDialogBeforeClose)
+    if (rowEditDialogBeforeOpen != null) __obj.updateDynamic("rowEditDialogBeforeOpen")(rowEditDialogBeforeOpen)
+    if (rowEditDialogContentsRendered != null) __obj.updateDynamic("rowEditDialogContentsRendered")(rowEditDialogContentsRendered)
+    if (rowEditDialogOptions != null) __obj.updateDynamic("rowEditDialogOptions")(rowEditDialogOptions)
+    if (saveChangesErrorHandler != null) __obj.updateDynamic("saveChangesErrorHandler")(saveChangesErrorHandler.asInstanceOf[js.Any])
+    if (saveChangesSuccessHandler != null) __obj.updateDynamic("saveChangesSuccessHandler")(saveChangesSuccessHandler.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDoneCancelButtons)) __obj.updateDynamic("showDoneCancelButtons")(showDoneCancelButtons)
+    if (startEditTriggers != null) __obj.updateDynamic("startEditTriggers")(startEditTriggers.asInstanceOf[js.Any])
+    if (swipeDistance != null) __obj.updateDynamic("swipeDistance")(swipeDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(validation)) __obj.updateDynamic("validation")(validation)
+    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround)
+    __obj.asInstanceOf[IgTreeGridUpdating]
+  }
+}
+

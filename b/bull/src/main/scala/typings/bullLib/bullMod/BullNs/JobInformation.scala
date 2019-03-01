@@ -15,3 +15,26 @@ trait JobInformation extends js.Object {
   var tz: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JobInformation {
+  @scala.inline
+  def apply(
+    cron: java.lang.String,
+    key: java.lang.String,
+    name: java.lang.String,
+    next: scala.Double,
+    endDate: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    tz: java.lang.String = null
+  ): JobInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cron")(cron)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("next")(next)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (tz != null) __obj.updateDynamic("tz")(tz)
+    __obj.asInstanceOf[JobInformation]
+  }
+}
+

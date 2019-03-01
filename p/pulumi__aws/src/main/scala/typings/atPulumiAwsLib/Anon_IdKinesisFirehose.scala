@@ -17,3 +17,30 @@ trait Anon_IdKinesisFirehose extends js.Object {
   var streamNames: js.Array[java.lang.String]
 }
 
+object Anon_IdKinesisFirehose {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    namePrefix: java.lang.String,
+    schema: Anon_RecordColumns,
+    startingPositionConfigurations: js.Array[Anon_StartingPosition],
+    streamNames: js.Array[java.lang.String],
+    kinesisFirehose: Anon_ResourceArn = null,
+    kinesisStream: Anon_ResourceArn = null,
+    parallelism: Anon_Count = null,
+    processingConfiguration: Anon_LambdaAnonResourceArn = null
+  ): Anon_IdKinesisFirehose = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("namePrefix")(namePrefix)
+    __obj.updateDynamic("schema")(schema)
+    __obj.updateDynamic("startingPositionConfigurations")(startingPositionConfigurations)
+    __obj.updateDynamic("streamNames")(streamNames)
+    if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose)
+    if (kinesisStream != null) __obj.updateDynamic("kinesisStream")(kinesisStream)
+    if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism)
+    if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration)
+    __obj.asInstanceOf[Anon_IdKinesisFirehose]
+  }
+}
+

@@ -45,3 +45,30 @@ trait Options extends js.Object {
   var theme: js.UndefOr[Theme] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    callToJSON: js.UndefOr[scala.Boolean] = js.undefined,
+    escapeRegex: js.UndefOr[scala.Boolean] = js.undefined,
+    highlight: js.UndefOr[scala.Boolean] = js.undefined,
+    indent: scala.Int | scala.Double = null,
+    maxDepth: scala.Int | scala.Double = null,
+    min: js.UndefOr[scala.Boolean] = js.undefined,
+    plugins: js.Array[Plugin] = null,
+    printFunctionName: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: Theme = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(callToJSON)) __obj.updateDynamic("callToJSON")(callToJSON)
+    if (!js.isUndefined(escapeRegex)) __obj.updateDynamic("escapeRegex")(escapeRegex)
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(printFunctionName)) __obj.updateDynamic("printFunctionName")(printFunctionName)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[Options]
+  }
+}
+

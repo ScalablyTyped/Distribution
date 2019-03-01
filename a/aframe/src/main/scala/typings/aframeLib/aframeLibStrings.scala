@@ -19,19 +19,23 @@ object aframeLibStrings {
   sealed trait alternateReverse extends js.Object
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
-  sealed trait asset extends js.Object
+  sealed trait asset
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait audio
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
   sealed trait backwards extends js.Object
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
   sealed trait both extends js.Object
@@ -43,7 +47,8 @@ object aframeLibStrings {
   sealed trait `child-detached` extends js.Object
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait color
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
   sealed trait componentchanged extends js.Object
@@ -52,10 +57,12 @@ object aframeLibStrings {
   sealed trait componentremoved extends js.Object
   
   @js.native
-  sealed trait `enter-vr` extends js.Object
+  sealed trait `enter-vr`
+    extends aframeLib.aframeMod.SceneEvents
   
   @js.native
-  sealed trait `exit-vr` extends js.Object
+  sealed trait `exit-vr`
+    extends aframeLib.aframeMod.SceneEvents
   
   @js.native
   sealed trait forwards extends js.Object
@@ -64,16 +71,20 @@ object aframeLibStrings {
   sealed trait indefinite extends js.Object
   
   @js.native
-  sealed trait int extends js.Object
+  sealed trait int
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
-  sealed trait loaded extends js.Object
+  sealed trait loaded
+    extends aframeLib.aframeMod.SceneEvents
   
   @js.native
-  sealed trait map extends js.Object
+  sealed trait map
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
-  sealed trait model extends js.Object
+  sealed trait model
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
   sealed trait none extends js.Object
@@ -82,7 +93,8 @@ object aframeLibStrings {
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
   sealed trait pause extends js.Object
@@ -94,7 +106,8 @@ object aframeLibStrings {
   sealed trait position extends js.Object
   
   @js.native
-  sealed trait renderstart extends js.Object
+  sealed trait renderstart
+    extends aframeLib.aframeMod.SceneEvents
   
   @js.native
   sealed trait reverse extends js.Object
@@ -109,10 +122,12 @@ object aframeLibStrings {
   sealed trait schemachanged extends js.Object
   
   @js.native
-  sealed trait selector extends js.Object
+  sealed trait selector
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
-  sealed trait selectorAll extends js.Object
+  sealed trait selectorAll
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
   sealed trait stateadded extends js.Object
@@ -121,16 +136,20 @@ object aframeLibStrings {
   sealed trait stateremoved extends js.Object
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
-  sealed trait vec2 extends js.Object
+  sealed trait vec2
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
-  sealed trait vec3 extends js.Object
+  sealed trait vec3
+    extends aframeLib.aframeMod.PropertyTypes
   
   @js.native
-  sealed trait vec4 extends js.Object
+  sealed trait vec4
+    extends aframeLib.aframeMod.PropertyTypes
   
   @scala.inline
   def MultiPropertySchema: MultiPropertySchema = "MultiPropertySchema".asInstanceOf[MultiPropertySchema]

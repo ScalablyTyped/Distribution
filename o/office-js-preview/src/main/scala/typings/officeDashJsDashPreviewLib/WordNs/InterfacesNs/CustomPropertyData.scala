@@ -32,3 +32,18 @@ trait CustomPropertyData extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object CustomPropertyData {
+  @scala.inline
+  def apply(
+    key: java.lang.String = null,
+    `type`: officeDashJsDashPreviewLib.WordNs.DocumentPropertyType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.String | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Date | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Boolean = null,
+    value: js.Any = null
+  ): CustomPropertyData = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CustomPropertyData]
+  }
+}
+

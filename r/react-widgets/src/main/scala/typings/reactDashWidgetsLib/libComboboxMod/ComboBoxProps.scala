@@ -152,3 +152,84 @@ trait ComboBoxProps
   var valueField: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ComboBoxProps {
+  @scala.inline
+  def apply(
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    busy: js.UndefOr[scala.Boolean] = js.undefined,
+    busySpinner: reactLib.reactMod.ReactNs.ReactNode = null,
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    data: js.Array[_] = null,
+    defaultValue: js.Any = null,
+    delay: scala.Int | scala.Double = null,
+    disabled: scala.Boolean | js.Array[_] = null,
+    dropUp: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    filter: scala.Boolean | java.lang.String | (js.Function2[/* dataItem */ js.Any, /* searchItem */ js.Any, scala.Boolean]) = null,
+    groupBy: java.lang.String | (js.Function1[/* dataItem */ js.Any, _]) = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    id: java.lang.String = null,
+    inputProps: js.Object = null,
+    isRtl: js.UndefOr[scala.Boolean] = js.undefined,
+    itemComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    listComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    listProps: js.Object = null,
+    messages: ComboBoxMessages = null,
+    minLength: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    onChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    onSelect: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    onToggle: js.Function1[/* isOpen */ scala.Boolean, scala.Unit] = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    placeholder: java.lang.String = null,
+    popupTransition: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    readOnly: scala.Boolean | js.Array[_] = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[ComboBoxClass] = null,
+    suggest: js.UndefOr[scala.Boolean] = js.undefined,
+    textField: java.lang.String | (js.Function1[/* dataItem */ js.Any, java.lang.String]) = null,
+    value: js.Any = null,
+    valueField: java.lang.String = null
+  ): ComboBoxProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(busy)) __obj.updateDynamic("busy")(busy)
+    if (busySpinner != null) __obj.updateDynamic("busySpinner")(busySpinner.asInstanceOf[js.Any])
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropUp)) __obj.updateDynamic("dropUp")(dropUp)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl)
+    if (itemComponent != null) __obj.updateDynamic("itemComponent")(itemComponent.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (listComponent != null) __obj.updateDynamic("listComponent")(listComponent.asInstanceOf[js.Any])
+    if (listProps != null) __obj.updateDynamic("listProps")(listProps)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (popupTransition != null) __obj.updateDynamic("popupTransition")(popupTransition.asInstanceOf[js.Any])
+    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (!js.isUndefined(suggest)) __obj.updateDynamic("suggest")(suggest)
+    if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (valueField != null) __obj.updateDynamic("valueField")(valueField)
+    __obj.asInstanceOf[ComboBoxProps]
+  }
+}
+

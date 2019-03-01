@@ -28,3 +28,18 @@ trait Anon_Runtime extends js.Object {
   val window: chromeDashAppsLib.chromeNs.appNs.ChromeAppWindow
 }
 
+object Anon_Runtime {
+  @scala.inline
+  def apply(
+    _State: Anon_FULLSCREEN,
+    runtimeNs: Anon_ActionType,
+    window: chromeDashAppsLib.chromeNs.appNs.ChromeAppWindow
+  ): Anon_Runtime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_State")(_State)
+    __obj.updateDynamic("runtimeNs")(runtimeNs)
+    __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[Anon_Runtime]
+  }
+}
+

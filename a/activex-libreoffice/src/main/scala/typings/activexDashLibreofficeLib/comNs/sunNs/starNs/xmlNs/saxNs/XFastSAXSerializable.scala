@@ -28,3 +28,22 @@ trait XFastSAXSerializable extends js.Object {
   ): scala.Unit
 }
 
+object XFastSAXSerializable {
+  @scala.inline
+  def apply(
+    fastSerialize: js.Function4[
+      XFastDocumentHandler, 
+      XFastTokenHandler, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, scala.Double]
+      ], 
+      scala.Unit
+    ]
+  ): XFastSAXSerializable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fastSerialize")(fastSerialize)
+    __obj.asInstanceOf[XFastSAXSerializable]
+  }
+}
+

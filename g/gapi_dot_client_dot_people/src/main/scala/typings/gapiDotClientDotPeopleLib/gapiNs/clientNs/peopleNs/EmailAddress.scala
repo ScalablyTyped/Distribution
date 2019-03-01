@@ -28,3 +28,22 @@ trait EmailAddress extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EmailAddress {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    formattedType: java.lang.String = null,
+    metadata: FieldMetadata = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): EmailAddress = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[EmailAddress]
+  }
+}
+

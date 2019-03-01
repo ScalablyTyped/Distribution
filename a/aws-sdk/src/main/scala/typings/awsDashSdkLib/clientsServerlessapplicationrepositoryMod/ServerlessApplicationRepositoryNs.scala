@@ -1229,11 +1229,17 @@ object ServerlessApplicationRepositoryNs extends js.Object {
     var SourceCodeUrl: js.UndefOr[__string] = js.undefined
   }
   
+  trait _Capability extends js.Object
+  
+  trait _Status extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
-  type Capability = awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_IAM | awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_NAMED_IAM | awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_AUTO_EXPAND | awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_RESOURCE_POLICY | java.lang.String
+  type Capability = _Capability | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type MaxItems = scala.Double
-  type Status = awsDashSdkLib.awsDashSdkLibStrings.PREPARING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.EXPIRED | java.lang.String
+  type Status = _Status | java.lang.String
   type __boolean = scala.Boolean
   type __integer = scala.Double
   type __listOfApplicationDependencySummary = js.Array[ApplicationDependencySummary]
@@ -1247,6 +1253,6 @@ object ServerlessApplicationRepositoryNs extends js.Object {
   type __listOfVersionSummary = js.Array[VersionSummary]
   type __listOf__string = js.Array[__string]
   type __string = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-09-08` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

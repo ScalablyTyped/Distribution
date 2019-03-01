@@ -11,3 +11,16 @@ trait FindResponse[Content /* <: js.Object */] extends js.Object {
   ]
 }
 
+object FindResponse {
+  @scala.inline
+  def apply[Content /* <: js.Object */](
+    docs: js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ _
+    ]
+  ): FindResponse[Content] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("docs")(docs)
+    __obj.asInstanceOf[FindResponse[Content]]
+  }
+}
+

@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
   * Remotely transfers energy to another Link in the same room.
   */
 @js.native
-trait StructureLink extends OwnedStructure[STRUCTURE_LINK] {
+trait StructureLink
+  extends OwnedStructure[STRUCTURE_LINK]
+     with AnyOwnedStructure {
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.
     */

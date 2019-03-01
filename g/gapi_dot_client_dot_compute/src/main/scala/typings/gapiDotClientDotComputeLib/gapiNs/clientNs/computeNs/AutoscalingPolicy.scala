@@ -33,3 +33,24 @@ trait AutoscalingPolicy extends js.Object {
   var minNumReplicas: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AutoscalingPolicy {
+  @scala.inline
+  def apply(
+    coolDownPeriodSec: scala.Int | scala.Double = null,
+    cpuUtilization: AutoscalingPolicyCpuUtilization = null,
+    customMetricUtilizations: js.Array[AutoscalingPolicyCustomMetricUtilization] = null,
+    loadBalancingUtilization: AutoscalingPolicyLoadBalancingUtilization = null,
+    maxNumReplicas: scala.Int | scala.Double = null,
+    minNumReplicas: scala.Int | scala.Double = null
+  ): AutoscalingPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (coolDownPeriodSec != null) __obj.updateDynamic("coolDownPeriodSec")(coolDownPeriodSec.asInstanceOf[js.Any])
+    if (cpuUtilization != null) __obj.updateDynamic("cpuUtilization")(cpuUtilization)
+    if (customMetricUtilizations != null) __obj.updateDynamic("customMetricUtilizations")(customMetricUtilizations)
+    if (loadBalancingUtilization != null) __obj.updateDynamic("loadBalancingUtilization")(loadBalancingUtilization)
+    if (maxNumReplicas != null) __obj.updateDynamic("maxNumReplicas")(maxNumReplicas.asInstanceOf[js.Any])
+    if (minNumReplicas != null) __obj.updateDynamic("minNumReplicas")(minNumReplicas.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AutoscalingPolicy]
+  }
+}
+

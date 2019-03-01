@@ -13,3 +13,12 @@ trait UriOptions extends js.Object {
   var scheme: js.UndefOr[java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp])] = js.undefined
 }
 
+object UriOptions {
+  @scala.inline
+  def apply(scheme: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null): UriOptions = {
+    val __obj = js.Dynamic.literal()
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UriOptions]
+  }
+}
+

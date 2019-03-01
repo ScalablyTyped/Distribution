@@ -9,3 +9,12 @@ trait Anon_Width extends js.Object {
   val Width: scala.Double
 }
 
+object Anon_Width {
+  @scala.inline
+  def apply(Width: scala.Double): Anon_Width = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Width")(Width)
+    __obj.asInstanceOf[Anon_Width]
+  }
+}
+

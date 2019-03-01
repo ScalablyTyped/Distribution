@@ -12,3 +12,19 @@ trait ExtendedGeometryCollection[GeometryType /* <: GeoGeometryObjects */] exten
   var `type`: java.lang.String
 }
 
+object ExtendedGeometryCollection {
+  @scala.inline
+  def apply[GeometryType /* <: GeoGeometryObjects */](
+    geometries: js.Array[GeometryType],
+    `type`: java.lang.String,
+    bbox: js.Array[scala.Double] = null,
+    crs: d3DashGeoLib.Anon_Properties = null
+  ): ExtendedGeometryCollection[GeometryType] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("geometries")(geometries)
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox)
+    if (crs != null) __obj.updateDynamic("crs")(crs)
+    __obj.asInstanceOf[ExtendedGeometryCollection[GeometryType]]
+  }
+}
+

@@ -24,3 +24,20 @@ trait GetServerCertificateArgs extends js.Object {
   val pathPrefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetServerCertificateArgs {
+  @scala.inline
+  def apply(
+    latest: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    namePrefix: java.lang.String = null,
+    pathPrefix: java.lang.String = null
+  ): GetServerCertificateArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix)
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
+    __obj.asInstanceOf[GetServerCertificateArgs]
+  }
+}
+

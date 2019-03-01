@@ -38,3 +38,24 @@ trait SubjectAccessReviewSpec extends js.Object {
   val user: java.lang.String
 }
 
+object SubjectAccessReviewSpec {
+  @scala.inline
+  def apply(
+    extra: js.Object,
+    groups: js.Array[java.lang.String],
+    nonResourceAttributes: NonResourceAttributes,
+    resourceAttributes: ResourceAttributes,
+    uid: java.lang.String,
+    user: java.lang.String
+  ): SubjectAccessReviewSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extra")(extra)
+    __obj.updateDynamic("groups")(groups)
+    __obj.updateDynamic("nonResourceAttributes")(nonResourceAttributes)
+    __obj.updateDynamic("resourceAttributes")(resourceAttributes)
+    __obj.updateDynamic("uid")(uid)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[SubjectAccessReviewSpec]
+  }
+}
+

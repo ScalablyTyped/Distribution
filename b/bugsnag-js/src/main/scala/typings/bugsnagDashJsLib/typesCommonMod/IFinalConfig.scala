@@ -38,3 +38,54 @@ trait IFinalConfig extends IConfig {
   var user_IFinalConfig: js.Object | scala.Null
 }
 
+object IFinalConfig {
+  @scala.inline
+  def apply(
+    apiKey: java.lang.String,
+    autoBreadcrumbs: scala.Boolean,
+    autoCaptureSessions: scala.Boolean,
+    autoNotify: scala.Boolean,
+    beforeSend: js.Array[BeforeSend],
+    collectUserIp: scala.Boolean,
+    consoleBreadcrumbsEnabled: scala.Boolean,
+    endpoints: bugsnagDashJsLib.Anon_Notify,
+    interactionBreadcrumbsEnabled: scala.Boolean,
+    maxBreadcrumbs: scala.Double,
+    maxEvents: scala.Double,
+    navigationBreadcrumbsEnabled: scala.Boolean,
+    notifyReleaseStages: js.Array[java.lang.String],
+    releaseStage: java.lang.String,
+    appVersion: java.lang.String = null,
+    endpoint: java.lang.String = null,
+    logger: bugsnagDashJsLib.typesClientMod.ILogger = null,
+    metaData: js.Object = null,
+    networkBreadcrumbsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    sessionEndpoint: java.lang.String = null,
+    user: js.Object = null
+  ): IFinalConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiKey")(apiKey)
+    __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs)
+    __obj.updateDynamic("autoCaptureSessions")(autoCaptureSessions)
+    __obj.updateDynamic("autoNotify")(autoNotify)
+    __obj.updateDynamic("beforeSend")(beforeSend)
+    __obj.updateDynamic("collectUserIp")(collectUserIp)
+    __obj.updateDynamic("consoleBreadcrumbsEnabled")(consoleBreadcrumbsEnabled)
+    __obj.updateDynamic("endpoints")(endpoints)
+    __obj.updateDynamic("interactionBreadcrumbsEnabled")(interactionBreadcrumbsEnabled)
+    __obj.updateDynamic("maxBreadcrumbs")(maxBreadcrumbs)
+    __obj.updateDynamic("maxEvents")(maxEvents)
+    __obj.updateDynamic("navigationBreadcrumbsEnabled")(navigationBreadcrumbsEnabled)
+    __obj.updateDynamic("notifyReleaseStages")(notifyReleaseStages)
+    __obj.updateDynamic("releaseStage")(releaseStage)
+    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (metaData != null) __obj.updateDynamic("metaData")(metaData)
+    if (!js.isUndefined(networkBreadcrumbsEnabled)) __obj.updateDynamic("networkBreadcrumbsEnabled")(networkBreadcrumbsEnabled)
+    if (sessionEndpoint != null) __obj.updateDynamic("sessionEndpoint")(sessionEndpoint)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[IFinalConfig]
+  }
+}
+

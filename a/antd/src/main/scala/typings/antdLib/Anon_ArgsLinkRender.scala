@@ -14,3 +14,24 @@ trait Anon_ArgsLinkRender extends js.Object {
   var separator: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
 }
 
+object Anon_ArgsLinkRender {
+  @scala.inline
+  def apply(
+    linkRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    nameRender: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
+    params: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    routes: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
+    separator: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
+  ): Anon_ArgsLinkRender = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("linkRender")(linkRender)
+    __obj.updateDynamic("nameRender")(nameRender)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("prefixCls")(prefixCls)
+    __obj.updateDynamic("routes")(routes)
+    __obj.updateDynamic("separator")(separator)
+    __obj.asInstanceOf[Anon_ArgsLinkRender]
+  }
+}
+

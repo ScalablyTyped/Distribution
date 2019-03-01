@@ -14,3 +14,24 @@ trait Anon_NotesSearchedWords extends js.Object {
   var updateCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_NotesSearchedWords {
+  @scala.inline
+  def apply(
+    notes: js.Array[evernoteLib.evernoteMod.EvernoteNs.NoteMetadata],
+    startIndex: scala.Double,
+    totalNotes: scala.Double,
+    searchedWords: js.Array[java.lang.String] = null,
+    stoppedWords: js.Array[java.lang.String] = null,
+    updateCount: scala.Int | scala.Double = null
+  ): Anon_NotesSearchedWords = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("notes")(notes)
+    __obj.updateDynamic("startIndex")(startIndex)
+    __obj.updateDynamic("totalNotes")(totalNotes)
+    if (searchedWords != null) __obj.updateDynamic("searchedWords")(searchedWords)
+    if (stoppedWords != null) __obj.updateDynamic("stoppedWords")(stoppedWords)
+    if (updateCount != null) __obj.updateDynamic("updateCount")(updateCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_NotesSearchedWords]
+  }
+}
+

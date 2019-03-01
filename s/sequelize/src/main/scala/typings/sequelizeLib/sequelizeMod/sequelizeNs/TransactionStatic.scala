@@ -119,3 +119,14 @@ trait TransactionStatic extends js.Object {
   var TYPES: TransactionTypes
 }
 
+object TransactionStatic {
+  @scala.inline
+  def apply(ISOLATION_LEVELS: TransactionIsolationLevels, LOCK: TransactionLock, TYPES: TransactionTypes): TransactionStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ISOLATION_LEVELS")(ISOLATION_LEVELS)
+    __obj.updateDynamic("LOCK")(LOCK)
+    __obj.updateDynamic("TYPES")(TYPES)
+    __obj.asInstanceOf[TransactionStatic]
+  }
+}
+

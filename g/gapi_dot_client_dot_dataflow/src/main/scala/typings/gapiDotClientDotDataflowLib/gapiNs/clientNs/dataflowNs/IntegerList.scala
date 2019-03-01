@@ -10,3 +10,12 @@ trait IntegerList extends js.Object {
   var elements: js.UndefOr[js.Array[SplitInt64]] = js.undefined
 }
 
+object IntegerList {
+  @scala.inline
+  def apply(elements: js.Array[SplitInt64] = null): IntegerList = {
+    val __obj = js.Dynamic.literal()
+    if (elements != null) __obj.updateDynamic("elements")(elements)
+    __obj.asInstanceOf[IntegerList]
+  }
+}
+

@@ -40,3 +40,28 @@ trait Options extends js.Object {
   var temporary: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    disallowStatus: scala.Int | scala.Double = null,
+    hostname: java.lang.String = null,
+    ignoreUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Int | scala.Double = null,
+    redirectMethods: js.Array[java.lang.String] = null,
+    resolver: js.Function1[/* ctx */ koaLib.koaMod.ApplicationNs.Context, scala.Boolean] = null,
+    skipDefaultPort: js.UndefOr[scala.Boolean] = js.undefined,
+    temporary: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (disallowStatus != null) __obj.updateDynamic("disallowStatus")(disallowStatus.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (redirectMethods != null) __obj.updateDynamic("redirectMethods")(redirectMethods)
+    if (resolver != null) __obj.updateDynamic("resolver")(resolver)
+    if (!js.isUndefined(skipDefaultPort)) __obj.updateDynamic("skipDefaultPort")(skipDefaultPort)
+    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -17,3 +17,30 @@ trait ListOptions extends js.Object {
   var valueNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ListOptions {
+  @scala.inline
+  def apply(
+    i: scala.Int | scala.Double = null,
+    indexAsync: js.UndefOr[scala.Boolean] = js.undefined,
+    item: java.lang.String = null,
+    listClass: java.lang.String = null,
+    page: scala.Int | scala.Double = null,
+    pagination: js.UndefOr[scala.Boolean] = js.undefined,
+    searchClass: java.lang.String = null,
+    sortClass: java.lang.String = null,
+    valueNames: js.Array[java.lang.String] = null
+  ): ListOptions = {
+    val __obj = js.Dynamic.literal()
+    if (i != null) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
+    if (!js.isUndefined(indexAsync)) __obj.updateDynamic("indexAsync")(indexAsync)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (listClass != null) __obj.updateDynamic("listClass")(listClass)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
+    if (searchClass != null) __obj.updateDynamic("searchClass")(searchClass)
+    if (sortClass != null) __obj.updateDynamic("sortClass")(sortClass)
+    if (valueNames != null) __obj.updateDynamic("valueNames")(valueNames)
+    __obj.asInstanceOf[ListOptions]
+  }
+}
+

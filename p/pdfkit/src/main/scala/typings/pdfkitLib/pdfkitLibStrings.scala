@@ -7,19 +7,23 @@ import scala.scalajs.js.annotation._
 
 object pdfkitLibStrings {
   @js.native
-  sealed trait `even-odd` extends js.Object
+  sealed trait `even-odd`
+    extends pdfkitLib.PDFKitNs.MixinsNs.RuleValue
   
   @js.native
-  sealed trait evenodd extends js.Object
+  sealed trait evenodd
+    extends pdfkitLib.PDFKitNs.MixinsNs.RuleValue
   
   @js.native
   sealed trait landscape extends js.Object
   
   @js.native
-  sealed trait `non-zero` extends js.Object
+  sealed trait `non-zero`
+    extends pdfkitLib.PDFKitNs.MixinsNs.RuleValue
   
   @js.native
-  sealed trait nonzero extends js.Object
+  sealed trait nonzero
+    extends pdfkitLib.PDFKitNs.MixinsNs.RuleValue
   
   @js.native
   sealed trait portrait extends js.Object

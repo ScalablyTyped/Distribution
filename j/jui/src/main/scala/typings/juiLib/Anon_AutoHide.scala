@@ -41,3 +41,28 @@ trait Anon_AutoHide extends js.Object {
   var tpl: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_AutoHide {
+  @scala.inline
+  def apply(
+    autoHide: js.UndefOr[scala.Boolean] = js.undefined,
+    clone: js.UndefOr[scala.Boolean] = js.undefined,
+    color: juiLib.juiLibStrings.black | juiLib.juiLibStrings.gray = null,
+    event: js.Any = null,
+    index: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    target: java.lang.String | js.Any = null,
+    tpl: js.Any = null
+  ): Anon_AutoHide = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    __obj.asInstanceOf[Anon_AutoHide]
+  }
+}
+

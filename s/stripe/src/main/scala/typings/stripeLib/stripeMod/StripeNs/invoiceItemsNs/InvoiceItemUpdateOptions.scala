@@ -24,3 +24,24 @@ trait InvoiceItemUpdateOptions
   var discountable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InvoiceItemUpdateOptions {
+  @scala.inline
+  def apply(
+    amount: scala.Int | scala.Double = null,
+    description: java.lang.String = null,
+    discountable: js.UndefOr[scala.Boolean] = js.undefined,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null
+  ): InvoiceItemUpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(discountable)) __obj.updateDynamic("discountable")(discountable)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[InvoiceItemUpdateOptions]
+  }
+}
+

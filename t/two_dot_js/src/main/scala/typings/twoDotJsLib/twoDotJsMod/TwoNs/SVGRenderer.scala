@@ -5,5 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SVGRenderer extends js.Object
+trait SVGRenderer extends Renderer
 

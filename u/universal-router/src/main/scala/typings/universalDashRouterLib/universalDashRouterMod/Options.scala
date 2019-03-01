@@ -18,3 +18,24 @@ trait Options[C /* <: Context */, R] extends js.Object {
   var resolveRoute: js.UndefOr[js.Function2[/* context */ C with (RouteContext[C, R]), /* params */ Params, _]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[C /* <: Context */, R](
+    baseUrl: java.lang.String = null,
+    context: C = null,
+    errorHandler: js.Function2[
+      /* error */ stdLib.Error with universalDashRouterLib.Anon_Status, 
+      /* context */ C with (RouteContext[C, R]), 
+      _
+    ] = null,
+    resolveRoute: js.Function2[/* context */ C with (RouteContext[C, R]), /* params */ Params, _] = null
+  ): Options[C, R] = {
+    val __obj = js.Dynamic.literal()
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
+    if (resolveRoute != null) __obj.updateDynamic("resolveRoute")(resolveRoute)
+    __obj.asInstanceOf[Options[C, R]]
+  }
+}
+

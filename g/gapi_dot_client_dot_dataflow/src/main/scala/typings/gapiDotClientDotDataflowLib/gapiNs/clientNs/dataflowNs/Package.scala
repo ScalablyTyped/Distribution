@@ -19,3 +19,13 @@ trait Package extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Package {
+  @scala.inline
+  def apply(location: java.lang.String = null, name: java.lang.String = null): Package = {
+    val __obj = js.Dynamic.literal()
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Package]
+  }
+}
+

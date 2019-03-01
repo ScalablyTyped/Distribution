@@ -32,3 +32,24 @@ trait Badge extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Badge {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    position: BadgePosition | java.lang.String = null,
+    text: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): Badge = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Badge]
+  }
+}
+

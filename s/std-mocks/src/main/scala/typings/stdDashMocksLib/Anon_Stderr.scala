@@ -9,3 +9,12 @@ trait Anon_Stderr extends js.Object {
   var stderr: js.Array[java.lang.String]
 }
 
+object Anon_Stderr {
+  @scala.inline
+  def apply(stderr: js.Array[java.lang.String]): Anon_Stderr = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stderr")(stderr)
+    __obj.asInstanceOf[Anon_Stderr]
+  }
+}
+

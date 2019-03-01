@@ -27,3 +27,13 @@ trait RotationDescriptor extends js.Object {
   var ShearAngle: scala.Double
 }
 
+object RotationDescriptor {
+  @scala.inline
+  def apply(RotateAngle: scala.Double, ShearAngle: scala.Double): RotationDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RotateAngle")(RotateAngle)
+    __obj.updateDynamic("ShearAngle")(ShearAngle)
+    __obj.asInstanceOf[RotationDescriptor]
+  }
+}
+

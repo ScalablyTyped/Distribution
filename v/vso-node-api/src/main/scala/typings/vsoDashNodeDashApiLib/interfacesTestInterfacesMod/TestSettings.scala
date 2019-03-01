@@ -36,3 +36,26 @@ trait TestSettings extends js.Object {
   var testSettingsName: java.lang.String
 }
 
+object TestSettings {
+  @scala.inline
+  def apply(
+    areaPath: java.lang.String,
+    description: java.lang.String,
+    isPublic: scala.Boolean,
+    machineRoles: java.lang.String,
+    testSettingsContent: java.lang.String,
+    testSettingsId: scala.Double,
+    testSettingsName: java.lang.String
+  ): TestSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("areaPath")(areaPath)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("isPublic")(isPublic)
+    __obj.updateDynamic("machineRoles")(machineRoles)
+    __obj.updateDynamic("testSettingsContent")(testSettingsContent)
+    __obj.updateDynamic("testSettingsId")(testSettingsId)
+    __obj.updateDynamic("testSettingsName")(testSettingsName)
+    __obj.asInstanceOf[TestSettings]
+  }
+}
+

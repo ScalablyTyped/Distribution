@@ -20,3 +20,14 @@ trait KeyValueChangeRecord[K, V] extends js.Object {
   val previousValue: V | scala.Null
 }
 
+object KeyValueChangeRecord {
+  @scala.inline
+  def apply[K, V](key: K, currentValue: V = null, previousValue: V = null): KeyValueChangeRecord[K, V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue.asInstanceOf[js.Any])
+    if (previousValue != null) __obj.updateDynamic("previousValue")(previousValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyValueChangeRecord[K, V]]
+  }
+}
+

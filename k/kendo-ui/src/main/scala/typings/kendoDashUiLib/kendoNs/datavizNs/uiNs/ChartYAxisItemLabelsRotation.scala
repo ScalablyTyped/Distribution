@@ -10,3 +10,13 @@ trait ChartYAxisItemLabelsRotation extends js.Object {
   var angle: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartYAxisItemLabelsRotation {
+  @scala.inline
+  def apply(align: java.lang.String = null, angle: scala.Int | scala.Double = null): ChartYAxisItemLabelsRotation = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartYAxisItemLabelsRotation]
+  }
+}
+

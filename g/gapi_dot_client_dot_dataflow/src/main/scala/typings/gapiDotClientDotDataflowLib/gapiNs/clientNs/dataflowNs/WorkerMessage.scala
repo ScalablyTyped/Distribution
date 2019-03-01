@@ -31,3 +31,24 @@ trait WorkerMessage extends js.Object {
   var workerShutdownNotice: js.UndefOr[WorkerShutdownNotice] = js.undefined
 }
 
+object WorkerMessage {
+  @scala.inline
+  def apply(
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    time: java.lang.String = null,
+    workerHealthReport: WorkerHealthReport = null,
+    workerMessageCode: WorkerMessageCode = null,
+    workerMetrics: ResourceUtilizationReport = null,
+    workerShutdownNotice: WorkerShutdownNotice = null
+  ): WorkerMessage = {
+    val __obj = js.Dynamic.literal()
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (time != null) __obj.updateDynamic("time")(time)
+    if (workerHealthReport != null) __obj.updateDynamic("workerHealthReport")(workerHealthReport)
+    if (workerMessageCode != null) __obj.updateDynamic("workerMessageCode")(workerMessageCode)
+    if (workerMetrics != null) __obj.updateDynamic("workerMetrics")(workerMetrics)
+    if (workerShutdownNotice != null) __obj.updateDynamic("workerShutdownNotice")(workerShutdownNotice)
+    __obj.asInstanceOf[WorkerMessage]
+  }
+}
+

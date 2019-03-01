@@ -10,3 +10,13 @@ trait EditorFileBrowserSchemaModel extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EditorFileBrowserSchemaModel {
+  @scala.inline
+  def apply(fields: EditorFileBrowserSchemaModelFields = null, id: java.lang.String = null): EditorFileBrowserSchemaModel = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[EditorFileBrowserSchemaModel]
+  }
+}
+

@@ -15,3 +15,13 @@ trait ToggleTableCellInsideVerticalBordersCommand extends CommandWithBooleanStat
   def execute(): scala.Boolean
 }
 
+object ToggleTableCellInsideVerticalBordersCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[js.Any]): ToggleTableCellInsideVerticalBordersCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ToggleTableCellInsideVerticalBordersCommand]
+  }
+}
+

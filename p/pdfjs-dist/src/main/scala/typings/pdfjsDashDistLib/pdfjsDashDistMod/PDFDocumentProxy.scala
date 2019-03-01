@@ -59,3 +59,36 @@ trait PDFDocumentProxy extends js.Object {
   def isEncrypted(): PDFPromise[scala.Boolean]
 }
 
+object PDFDocumentProxy {
+  @scala.inline
+  def apply(
+    dataLoaded: js.Function0[PDFPromise[js.Array[_]]],
+    destroy: js.Function0[scala.Unit],
+    embeddedFontsUsed: js.Function0[scala.Boolean],
+    fingerprint: java.lang.String,
+    getData: js.Function0[PDFPromise[stdLib.Uint8Array]],
+    getDestinations: js.Function0[PDFPromise[js.Array[_]]],
+    getJavaScript: js.Function0[PDFPromise[js.Array[java.lang.String]]],
+    getMetadata: js.Function0[PDFPromise[pdfjsDashDistLib.Anon_Info]],
+    getOutline: js.Function0[PDFPromise[js.Array[PDFTreeNode]]],
+    getPage: js.Function1[scala.Double, PDFPromise[PDFPageProxy]],
+    isEncrypted: js.Function0[PDFPromise[scala.Boolean]],
+    numPages: scala.Double
+  ): PDFDocumentProxy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataLoaded")(dataLoaded)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("embeddedFontsUsed")(embeddedFontsUsed)
+    __obj.updateDynamic("fingerprint")(fingerprint)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("getDestinations")(getDestinations)
+    __obj.updateDynamic("getJavaScript")(getJavaScript)
+    __obj.updateDynamic("getMetadata")(getMetadata)
+    __obj.updateDynamic("getOutline")(getOutline)
+    __obj.updateDynamic("getPage")(getPage)
+    __obj.updateDynamic("isEncrypted")(isEncrypted)
+    __obj.updateDynamic("numPages")(numPages)
+    __obj.asInstanceOf[PDFDocumentProxy]
+  }
+}
+

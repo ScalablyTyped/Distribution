@@ -38,3 +38,26 @@ trait AliasState extends js.Object {
   ] = js.undefined
 }
 
+object AliasState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    functionName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    functionVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    invokeArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    routingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AdditionalVersionWeightsKey] = null
+  ): AliasState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    if (functionVersion != null) __obj.updateDynamic("functionVersion")(functionVersion.asInstanceOf[js.Any])
+    if (invokeArn != null) __obj.updateDynamic("invokeArn")(invokeArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (routingConfig != null) __obj.updateDynamic("routingConfig")(routingConfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AliasState]
+  }
+}
+

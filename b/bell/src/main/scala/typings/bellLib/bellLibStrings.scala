@@ -13,76 +13,98 @@ object bellLibStrings {
   sealed trait `RSA-SHA1` extends js.Object
   
   @js.native
-  sealed trait arcgisonline extends js.Object
+  sealed trait arcgisonline
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait auth0 extends js.Object
+  sealed trait auth0
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait azuread extends js.Object
+  sealed trait azuread
+    extends bellLib.bellMod.Provider
   
   @js.native
   sealed trait bell extends js.Object
   
   @js.native
-  sealed trait bitbucket extends js.Object
+  sealed trait bitbucket
+    extends bellLib.bellMod.Provider
   
   @js.native
   sealed trait custom extends js.Object
   
   @js.native
-  sealed trait digitalocean extends js.Object
+  sealed trait digitalocean
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait discord extends js.Object
+  sealed trait discord
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait dropbox extends js.Object
+  sealed trait dropbox
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait dropboxV2 extends js.Object
+  sealed trait dropboxV2
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait facebook extends js.Object
+  sealed trait facebook
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait fitbit extends js.Object
+  sealed trait fitbit
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait foursquare extends js.Object
+  sealed trait foursquare
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait github extends js.Object
+  sealed trait github
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait gitlab extends js.Object
+  sealed trait gitlab
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait google extends js.Object
+  sealed trait google
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait googleplus extends js.Object
+  sealed trait googleplus
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait instagram extends js.Object
+  sealed trait instagram
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait linkedin extends js.Object
+  sealed trait linkedin
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait live extends js.Object
+  sealed trait live
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait medium
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait meetup extends js.Object
+  sealed trait meetup
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait mixer extends js.Object
+  sealed trait mixer
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait nest extends js.Object
+  sealed trait nest
+    extends bellLib.bellMod.Provider
   
   @js.native
   sealed trait oauth extends js.Object
@@ -91,64 +113,81 @@ object bellLibStrings {
   sealed trait oauth2 extends js.Object
   
   @js.native
-  sealed trait office365 extends js.Object
+  sealed trait office365
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait okta extends js.Object
+  sealed trait okta
+    extends bellLib.bellMod.Provider
   
   @js.native
   sealed trait optional extends js.Object
   
   @js.native
-  sealed trait phabricator extends js.Object
+  sealed trait phabricator
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait pingfed extends js.Object
+  sealed trait pingfed
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait pinterest extends js.Object
+  sealed trait pinterest
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait reddit extends js.Object
+  sealed trait reddit
+    extends bellLib.bellMod.Provider
   
   @js.native
   sealed trait required extends js.Object
   
   @js.native
-  sealed trait salesforce extends js.Object
+  sealed trait salesforce
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait slack extends js.Object
+  sealed trait slack
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait spotify extends js.Object
+  sealed trait spotify
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait stripe extends js.Object
+  sealed trait stripe
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait trakt extends js.Object
+  sealed trait trakt
+    extends bellLib.bellMod.Provider
   
   @js.native
   sealed trait `try` extends js.Object
   
   @js.native
-  sealed trait tumblr extends js.Object
+  sealed trait tumblr
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait twitch extends js.Object
+  sealed trait twitch
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait twitter extends js.Object
+  sealed trait twitter
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait vk extends js.Object
+  sealed trait vk
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait wordpress extends js.Object
+  sealed trait wordpress
+    extends bellLib.bellMod.Provider
   
   @js.native
-  sealed trait yahoo extends js.Object
+  sealed trait yahoo
+    extends bellLib.bellMod.Provider
   
   @scala.inline
   def `HMAC-SHA1`: `HMAC-SHA1` = "HMAC-SHA1".asInstanceOf[`HMAC-SHA1`]

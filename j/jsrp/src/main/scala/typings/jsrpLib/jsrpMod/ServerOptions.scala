@@ -11,3 +11,18 @@ trait ServerOptions extends js.Object {
   var verifier: java.lang.String
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    salt: java.lang.String,
+    verifier: java.lang.String,
+    length: jsrpLib.jsrpLibNumbers.`2048` | jsrpLib.jsrpLibNumbers.`4096` = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("salt")(salt)
+    __obj.updateDynamic("verifier")(verifier)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

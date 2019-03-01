@@ -10,3 +10,12 @@ trait SslSettings extends js.Object {
   var certificateId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SslSettings {
+  @scala.inline
+  def apply(certificateId: java.lang.String = null): SslSettings = {
+    val __obj = js.Dynamic.literal()
+    if (certificateId != null) __obj.updateDynamic("certificateId")(certificateId)
+    __obj.asInstanceOf[SslSettings]
+  }
+}
+

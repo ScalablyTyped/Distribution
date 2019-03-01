@@ -10,3 +10,36 @@ trait MonadIO2[M /* <: fpDashTsLib.libHKTMod.URIS2 */]
   def fromIO[L, A](fa: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libHKTMod.Type2[M, L, A]
 }
 
+object MonadIO2 {
+  @scala.inline
+  def apply[M /* <: fpDashTsLib.libHKTMod.URIS2 */](
+    URI: M,
+    ap: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Function1[js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Any]
+    ],
+    chain: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Any]
+    ],
+    fromIO: js.Function1[fpDashTsLib.libIOMod.IO[js.Any], fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Any]],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Any]
+    ],
+    of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type2[M, js.Any, js.Any]]
+  ): MonadIO2[M] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("ap")(ap)
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("fromIO")(fromIO)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("of")(of)
+    __obj.asInstanceOf[MonadIO2[M]]
+  }
+}
+

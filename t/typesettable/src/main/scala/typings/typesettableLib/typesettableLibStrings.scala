@@ -10,28 +10,37 @@ object typesettableLibStrings {
   sealed trait Writer extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends typesettableLib.buildSrcWritersWriterMod.IYAlign
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends typesettableLib.buildSrcWritersWriterMod.IXAlign
+       with typesettableLib.buildSrcWritersWriterMod.IYAlign
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends typesettableLib.buildSrcContextsSvgMod.IAnchor
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends typesettableLib.buildSrcWritersWriterMod.IXAlign
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle
+    extends typesettableLib.buildSrcContextsSvgMod.IAnchor
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends typesettableLib.buildSrcWritersWriterMod.IXAlign
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends typesettableLib.buildSrcContextsSvgMod.IAnchor
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends typesettableLib.buildSrcWritersWriterMod.IYAlign
   
   @scala.inline
   def Writer: Writer = "Writer".asInstanceOf[Writer]

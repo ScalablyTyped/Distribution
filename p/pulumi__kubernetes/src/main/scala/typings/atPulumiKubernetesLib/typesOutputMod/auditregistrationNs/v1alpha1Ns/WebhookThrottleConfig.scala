@@ -19,3 +19,13 @@ trait WebhookThrottleConfig extends js.Object {
   val qps: scala.Double
 }
 
+object WebhookThrottleConfig {
+  @scala.inline
+  def apply(burst: scala.Double, qps: scala.Double): WebhookThrottleConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("burst")(burst)
+    __obj.updateDynamic("qps")(qps)
+    __obj.asInstanceOf[WebhookThrottleConfig]
+  }
+}
+

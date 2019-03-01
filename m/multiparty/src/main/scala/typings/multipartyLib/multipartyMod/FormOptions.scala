@@ -45,3 +45,26 @@ trait FormOptions extends js.Object {
   var uploadDir: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FormOptions {
+  @scala.inline
+  def apply(
+    autoFields: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFiles: js.UndefOr[scala.Boolean] = js.undefined,
+    encoding: java.lang.String = null,
+    maxFields: scala.Int | scala.Double = null,
+    maxFieldsSize: scala.Int | scala.Double = null,
+    maxFilesSize: scala.Int | scala.Double = null,
+    uploadDir: java.lang.String = null
+  ): FormOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFields)) __obj.updateDynamic("autoFields")(autoFields)
+    if (!js.isUndefined(autoFiles)) __obj.updateDynamic("autoFiles")(autoFiles)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (maxFields != null) __obj.updateDynamic("maxFields")(maxFields.asInstanceOf[js.Any])
+    if (maxFieldsSize != null) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.asInstanceOf[js.Any])
+    if (maxFilesSize != null) __obj.updateDynamic("maxFilesSize")(maxFilesSize.asInstanceOf[js.Any])
+    if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir)
+    __obj.asInstanceOf[FormOptions]
+  }
+}
+

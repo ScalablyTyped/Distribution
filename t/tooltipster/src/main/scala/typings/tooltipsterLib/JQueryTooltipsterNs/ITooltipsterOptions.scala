@@ -254,3 +254,104 @@ trait ITooltipsterOptions
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ITooltipsterOptions {
+  @scala.inline
+  def apply(
+    IEmin: scala.Int | scala.Double = null,
+    StringDictionary: /**
+  		 * Several plugins may have options of the same name. To resolve the conflict, wrap the options of plugins 
+  		 * under a property with their full name.
+  		 */
+  /* pluginName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animation: tooltipsterLib.tooltipsterLibStrings.fade | tooltipsterLib.tooltipsterLibStrings.grow | tooltipsterLib.tooltipsterLibStrings.swing | tooltipsterLib.tooltipsterLibStrings.slide | tooltipsterLib.tooltipsterLibStrings.fall = null,
+    animationDuration: scala.Double | js.Array[scala.Double] = null,
+    arrow: js.UndefOr[scala.Boolean] = js.undefined,
+    content: java.lang.String | tooltipsterLib.JQuery | js.Any = null,
+    contentAsHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    contentCloning: js.UndefOr[scala.Boolean] = js.undefined,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    delay: scala.Double | js.Array[scala.Double] = null,
+    delayTouch: scala.Double | js.Array[scala.Double] = null,
+    distance: scala.Double | js.Array[scala.Double] = null,
+    functionAfter: TooltipsterStandardCallbackFunction = null,
+    functionBefore: TooltipsterStandardCallbackFunction = null,
+    functionFormat: js.Function3[
+      /* instance */ ITooltipsterInstance, 
+      /* helper */ ITooltipsterHelper, 
+      /* content */ js.Any, 
+      java.lang.String | tooltipsterLib.JQuery
+    ] = null,
+    functionInit: TooltipsterStandardCallbackFunction = null,
+    functionPosition: js.Function3[
+      /* instance */ ITooltipsterInstance, 
+      /* helper */ ITooltipsterHelper, 
+      /* position */ ITooltipPosition, 
+      ITooltipPosition
+    ] = null,
+    functionReady: TooltipsterStandardCallbackFunction = null,
+    interactive: js.UndefOr[scala.Boolean] = js.undefined,
+    maxWidth: scala.Int | scala.Double = null,
+    minIntersection: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    plugins: js.Array[java.lang.String] = null,
+    repositionOnScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    restoration: tooltipsterLib.tooltipsterLibStrings.none | tooltipsterLib.tooltipsterLibStrings.previous | tooltipsterLib.tooltipsterLibStrings.current = null,
+    selfDestruction: js.UndefOr[scala.Boolean] = js.undefined,
+    side: TooltipPositioningSide | js.Array[TooltipPositioningSide] = null,
+    theme: java.lang.String | js.Array[java.lang.String] = null,
+    timer: scala.Int | scala.Double = null,
+    trackOrigin: js.UndefOr[scala.Boolean] = js.undefined,
+    trackTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    trackerInterval: scala.Int | scala.Double = null,
+    trigger: java.lang.String = null,
+    triggerClose: tooltipsterLib.Anon_Click = null,
+    triggerOpen: tooltipsterLib.Anon_ClickMouseenter = null,
+    updateAnimation: tooltipsterLib.tooltipsterLibStrings.fade | tooltipsterLib.tooltipsterLibStrings.rotate | tooltipsterLib.tooltipsterLibStrings.scale = null,
+    viewportAware: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): ITooltipsterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (IEmin != null) __obj.updateDynamic("IEmin")(IEmin.asInstanceOf[js.Any])
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrow)) __obj.updateDynamic("arrow")(arrow)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(contentAsHTML)) __obj.updateDynamic("contentAsHTML")(contentAsHTML)
+    if (!js.isUndefined(contentCloning)) __obj.updateDynamic("contentCloning")(contentCloning)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (delayTouch != null) __obj.updateDynamic("delayTouch")(delayTouch.asInstanceOf[js.Any])
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (functionAfter != null) __obj.updateDynamic("functionAfter")(functionAfter)
+    if (functionBefore != null) __obj.updateDynamic("functionBefore")(functionBefore)
+    if (functionFormat != null) __obj.updateDynamic("functionFormat")(functionFormat)
+    if (functionInit != null) __obj.updateDynamic("functionInit")(functionInit)
+    if (functionPosition != null) __obj.updateDynamic("functionPosition")(functionPosition)
+    if (functionReady != null) __obj.updateDynamic("functionReady")(functionReady)
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minIntersection != null) __obj.updateDynamic("minIntersection")(minIntersection.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(repositionOnScroll)) __obj.updateDynamic("repositionOnScroll")(repositionOnScroll)
+    if (restoration != null) __obj.updateDynamic("restoration")(restoration.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfDestruction)) __obj.updateDynamic("selfDestruction")(selfDestruction)
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackOrigin)) __obj.updateDynamic("trackOrigin")(trackOrigin)
+    if (!js.isUndefined(trackTooltip)) __obj.updateDynamic("trackTooltip")(trackTooltip)
+    if (trackerInterval != null) __obj.updateDynamic("trackerInterval")(trackerInterval.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (triggerClose != null) __obj.updateDynamic("triggerClose")(triggerClose)
+    if (triggerOpen != null) __obj.updateDynamic("triggerOpen")(triggerOpen)
+    if (updateAnimation != null) __obj.updateDynamic("updateAnimation")(updateAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewportAware)) __obj.updateDynamic("viewportAware")(viewportAware)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITooltipsterOptions]
+  }
+}
+

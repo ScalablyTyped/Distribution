@@ -27,3 +27,24 @@ trait ProfileFilterLink extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProfileFilterLink {
+  @scala.inline
+  def apply(
+    filterRef: FilterRef = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    profileRef: ProfileRef = null,
+    rank: scala.Int | scala.Double = null,
+    selfLink: java.lang.String = null
+  ): ProfileFilterLink = {
+    val __obj = js.Dynamic.literal()
+    if (filterRef != null) __obj.updateDynamic("filterRef")(filterRef)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (profileRef != null) __obj.updateDynamic("profileRef")(profileRef)
+    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[ProfileFilterLink]
+  }
+}
+

@@ -12,3 +12,13 @@ trait LocalizedText extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LocalizedText {
+  @scala.inline
+  def apply(locale: java.lang.String = null, text: java.lang.String = null): LocalizedText = {
+    val __obj = js.Dynamic.literal()
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[LocalizedText]
+  }
+}
+

@@ -12,3 +12,20 @@ trait NavigationBarButton extends js.Object {
   var title: java.lang.String
 }
 
+object NavigationBarButton {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    disable: js.UndefOr[scala.Boolean] = js.undefined,
+    handler: js.Function0[scala.Unit] = null,
+    style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null
+  ): NavigationBarButton = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[NavigationBarButton]
+  }
+}
+

@@ -15,9 +15,9 @@ object utilNs extends js.Object {
   def isNextLineEmpty(text: java.lang.String, node: js.Any, options: prettierLib.prettierMod.ParserOptions): scala.Boolean = js.native
   def isNextLineEmptyAfterIndex(text: java.lang.String, index: scala.Double): scala.Boolean = js.native
   @JSName("makeString")
-  def `makeString_'`(
+  def makeString__quote(
     rawContent: java.lang.String,
-    enclosingQuote: prettierLib.prettierLibStrings.`'`,
+    enclosingQuote: prettierLib.prettierLibStrings._quote,
     unescapeUnnecessaryEscapes: scala.Boolean
   ): java.lang.String = js.native
   @JSName("makeString")

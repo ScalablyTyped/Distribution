@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 package object prettierMod {
   type AST = js.Any
   type BuiltInParser = js.Function2[/* text */ java.lang.String, /* options */ js.UndefOr[js.Any], AST]
-  type BuiltInParserName = prettierLib.prettierLibStrings.babylon | prettierLib.prettierLibStrings.babel | prettierLib.prettierLibStrings.`babel-flow` | prettierLib.prettierLibStrings.flow | prettierLib.prettierLibStrings.typescript | prettierLib.prettierLibStrings.postcss | prettierLib.prettierLibStrings.css | prettierLib.prettierLibStrings.less | prettierLib.prettierLibStrings.scss | prettierLib.prettierLibStrings.json | prettierLib.prettierLibStrings.json5 | prettierLib.prettierLibStrings.`json-stringify` | prettierLib.prettierLibStrings.graphql | prettierLib.prettierLibStrings.markdown | prettierLib.prettierLibStrings.vue | prettierLib.prettierLibStrings.html | prettierLib.prettierLibStrings.angular | prettierLib.prettierLibStrings.mdx | prettierLib.prettierLibStrings.yaml
   type CustomParser = js.Function3[
     /* text */ java.lang.String, 
     /* parsers */ stdLib.Record[BuiltInParserName, BuiltInParser], 

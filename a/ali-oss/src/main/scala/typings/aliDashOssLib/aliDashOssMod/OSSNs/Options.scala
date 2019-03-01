@@ -27,3 +27,32 @@ trait Options extends js.Object {
   var timeout: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    accessKeyId: java.lang.String,
+    accessKeySecret: java.lang.String,
+    bucket: java.lang.String = null,
+    cname: js.UndefOr[scala.Boolean] = js.undefined,
+    endpoint: java.lang.String = null,
+    internal: js.UndefOr[scala.Boolean] = js.undefined,
+    region: java.lang.String = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    stsToken: java.lang.String = null,
+    timeout: java.lang.String | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessKeyId")(accessKeyId)
+    __obj.updateDynamic("accessKeySecret")(accessKeySecret)
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket)
+    if (!js.isUndefined(cname)) __obj.updateDynamic("cname")(cname)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (stsToken != null) __obj.updateDynamic("stsToken")(stsToken)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -13,3 +13,14 @@ trait Anon_Gid extends js.Object {
   def `__promisify__`(path: nodeLib.fsMod.PathLike, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit]
 }
 
+object Anon_Gid {
+  @scala.inline
+  def apply(
+    `__promisify__`: js.Function3[nodeLib.fsMod.PathLike, scala.Double, scala.Double, js.Promise[scala.Unit]]
+  ): Anon_Gid = {
+    val __obj = js.Dynamic.literal(`__promisify__` = `__promisify__`)
+  
+    __obj.asInstanceOf[Anon_Gid]
+  }
+}
+

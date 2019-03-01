@@ -26,3 +26,20 @@ trait Anon_ClickMouseenter extends js.Object {
   var touchstart: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ClickMouseenter {
+  @scala.inline
+  def apply(
+    click: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseenter: js.UndefOr[scala.Boolean] = js.undefined,
+    tap: js.UndefOr[scala.Boolean] = js.undefined,
+    touchstart: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ClickMouseenter = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(click)) __obj.updateDynamic("click")(click)
+    if (!js.isUndefined(mouseenter)) __obj.updateDynamic("mouseenter")(mouseenter)
+    if (!js.isUndefined(tap)) __obj.updateDynamic("tap")(tap)
+    if (!js.isUndefined(touchstart)) __obj.updateDynamic("touchstart")(touchstart)
+    __obj.asInstanceOf[Anon_ClickMouseenter]
+  }
+}
+

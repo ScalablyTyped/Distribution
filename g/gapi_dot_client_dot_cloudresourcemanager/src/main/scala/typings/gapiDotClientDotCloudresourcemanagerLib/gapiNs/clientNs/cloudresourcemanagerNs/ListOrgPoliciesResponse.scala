@@ -18,3 +18,13 @@ trait ListOrgPoliciesResponse extends js.Object {
   var policies: js.UndefOr[js.Array[OrgPolicy]] = js.undefined
 }
 
+object ListOrgPoliciesResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, policies: js.Array[OrgPolicy] = null): ListOrgPoliciesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (policies != null) __obj.updateDynamic("policies")(policies)
+    __obj.asInstanceOf[ListOrgPoliciesResponse]
+  }
+}
+

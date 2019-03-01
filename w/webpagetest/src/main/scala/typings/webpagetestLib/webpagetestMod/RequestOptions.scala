@@ -10,3 +10,12 @@ trait RequestOptions extends js.Object {
   var requestId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(requestId: java.lang.String = null): RequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

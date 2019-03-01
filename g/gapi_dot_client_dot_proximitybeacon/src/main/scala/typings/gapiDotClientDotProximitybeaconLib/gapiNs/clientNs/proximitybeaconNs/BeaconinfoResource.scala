@@ -15,3 +15,17 @@ trait BeaconinfoResource extends js.Object {
   def getforobserved(request: gapiDotClientDotProximitybeaconLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GetInfoForObservedBeaconsResponse]
 }
 
+object BeaconinfoResource {
+  @scala.inline
+  def apply(
+    getforobserved: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetInfoForObservedBeaconsResponse]
+    ]
+  ): BeaconinfoResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getforobserved")(getforobserved)
+    __obj.asInstanceOf[BeaconinfoResource]
+  }
+}
+

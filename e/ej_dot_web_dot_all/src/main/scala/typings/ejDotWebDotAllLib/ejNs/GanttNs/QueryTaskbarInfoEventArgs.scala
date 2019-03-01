@@ -26,3 +26,24 @@ trait QueryTaskbarInfoEventArgs extends js.Object {
   var parentTaskbarBackground: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QueryTaskbarInfoEventArgs {
+  @scala.inline
+  def apply(
+    ProgressbarBackground: java.lang.String = null,
+    TaskbarBackground: java.lang.String = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    parentProgressbarBackground: java.lang.String = null,
+    parentTaskbarBackground: java.lang.String = null
+  ): QueryTaskbarInfoEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (ProgressbarBackground != null) __obj.updateDynamic("ProgressbarBackground")(ProgressbarBackground)
+    if (TaskbarBackground != null) __obj.updateDynamic("TaskbarBackground")(TaskbarBackground)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (parentProgressbarBackground != null) __obj.updateDynamic("parentProgressbarBackground")(parentProgressbarBackground)
+    if (parentTaskbarBackground != null) __obj.updateDynamic("parentTaskbarBackground")(parentTaskbarBackground)
+    __obj.asInstanceOf[QueryTaskbarInfoEventArgs]
+  }
+}
+

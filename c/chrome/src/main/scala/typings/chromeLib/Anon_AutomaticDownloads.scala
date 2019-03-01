@@ -21,3 +21,38 @@ trait Anon_AutomaticDownloads extends js.Object {
   var unsandboxedPlugins: chromeLib.chromeNs.contentSettingsNs.PpapiBrokerContentSetting
 }
 
+object Anon_AutomaticDownloads {
+  @scala.inline
+  def apply(
+    automaticDownloads: chromeLib.chromeNs.contentSettingsNs.MultipleAutomaticDownloadsContentSetting,
+    camera: chromeLib.chromeNs.contentSettingsNs.CameraContentSetting,
+    cookies: chromeLib.chromeNs.contentSettingsNs.CookieContentSetting,
+    fullscreen: chromeLib.chromeNs.contentSettingsNs.FullscreenContentSetting,
+    images: chromeLib.chromeNs.contentSettingsNs.ImagesContentSetting,
+    javascript: chromeLib.chromeNs.contentSettingsNs.JavascriptContentSetting,
+    location: chromeLib.chromeNs.contentSettingsNs.LocationContentSetting,
+    microphone: chromeLib.chromeNs.contentSettingsNs.MicrophoneContentSetting,
+    mouselock: chromeLib.chromeNs.contentSettingsNs.MouselockContentSetting,
+    notifications: chromeLib.chromeNs.contentSettingsNs.NotificationsContentSetting,
+    plugins: chromeLib.chromeNs.contentSettingsNs.PluginsContentSetting,
+    popups: chromeLib.chromeNs.contentSettingsNs.PopupsContentSetting,
+    unsandboxedPlugins: chromeLib.chromeNs.contentSettingsNs.PpapiBrokerContentSetting
+  ): Anon_AutomaticDownloads = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("automaticDownloads")(automaticDownloads)
+    __obj.updateDynamic("camera")(camera)
+    __obj.updateDynamic("cookies")(cookies)
+    __obj.updateDynamic("fullscreen")(fullscreen)
+    __obj.updateDynamic("images")(images)
+    __obj.updateDynamic("javascript")(javascript)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("microphone")(microphone)
+    __obj.updateDynamic("mouselock")(mouselock)
+    __obj.updateDynamic("notifications")(notifications)
+    __obj.updateDynamic("plugins")(plugins)
+    __obj.updateDynamic("popups")(popups)
+    __obj.updateDynamic("unsandboxedPlugins")(unsandboxedPlugins)
+    __obj.asInstanceOf[Anon_AutomaticDownloads]
+  }
+}
+

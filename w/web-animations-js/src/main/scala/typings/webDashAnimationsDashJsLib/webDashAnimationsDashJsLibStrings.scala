@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object webDashAnimationsDashJsLibStrings {
   @js.native
-  sealed trait alternate extends js.Object
+  sealed trait alternate extends AnimationEffectTimingPlaybackDirection
   
   @js.native
-  sealed trait `alternate-reverse` extends js.Object
+  sealed trait `alternate-reverse` extends AnimationEffectTimingPlaybackDirection
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends AnimationEffectTimingFillMode
   
   @js.native
-  sealed trait backwards extends js.Object
+  sealed trait backwards extends AnimationEffectTimingFillMode
   
   @js.native
-  sealed trait both extends js.Object
+  sealed trait both extends AnimationEffectTimingFillMode
   
   @js.native
   sealed trait cancel extends js.Object
@@ -28,16 +28,16 @@ object webDashAnimationsDashJsLibStrings {
   sealed trait finish extends js.Object
   
   @js.native
-  sealed trait forwards extends js.Object
+  sealed trait forwards extends AnimationEffectTimingFillMode
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none extends AnimationEffectTimingFillMode
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal extends AnimationEffectTimingPlaybackDirection
   
   @js.native
-  sealed trait reverse extends js.Object
+  sealed trait reverse extends AnimationEffectTimingPlaybackDirection
   
   @scala.inline
   def alternate: alternate = "alternate".asInstanceOf[alternate]

@@ -12,3 +12,13 @@ trait ISettingsStyle extends js.Object {
   var shadedReliefVisible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ISettingsStyle {
+  @scala.inline
+  def apply(landColor: java.lang.String = null, shadedReliefVisible: js.UndefOr[scala.Boolean] = js.undefined): ISettingsStyle = {
+    val __obj = js.Dynamic.literal()
+    if (landColor != null) __obj.updateDynamic("landColor")(landColor)
+    if (!js.isUndefined(shadedReliefVisible)) __obj.updateDynamic("shadedReliefVisible")(shadedReliefVisible)
+    __obj.asInstanceOf[ISettingsStyle]
+  }
+}
+

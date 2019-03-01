@@ -79,3 +79,70 @@ trait TextProps
   var testID: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TextProps {
+  @scala.inline
+  def apply(
+    accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
+    accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityHint: java.lang.String = null,
+    accessibilityIgnoresInvertColors: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityLabel: java.lang.String = null,
+    accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
+    accessibilityRole: AccessibilityRole = null,
+    accessibilityStates: js.Array[AccessibilityState] = null,
+    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessible: js.UndefOr[scala.Boolean] = js.undefined,
+    adjustsFontSizeToFit: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFontScaling: js.UndefOr[scala.Boolean] = js.undefined,
+    ellipsizeMode: reactDashNativeLib.reactDashNativeLibStrings.head | reactDashNativeLib.reactDashNativeLibStrings.middle | reactDashNativeLib.reactDashNativeLibStrings.tail | reactDashNativeLib.reactDashNativeLibStrings.clip = null,
+    importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
+    lineBreakMode: reactDashNativeLib.reactDashNativeLibStrings.head | reactDashNativeLib.reactDashNativeLibStrings.middle | reactDashNativeLib.reactDashNativeLibStrings.tail | reactDashNativeLib.reactDashNativeLibStrings.clip = null,
+    minimumFontScale: scala.Int | scala.Double = null,
+    nativeID: java.lang.String = null,
+    numberOfLines: scala.Int | scala.Double = null,
+    onAccessibilityTap: js.Function0[scala.Unit] = null,
+    onLayout: js.Function1[/* event */ LayoutChangeEvent, scala.Unit] = null,
+    onLongPress: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onMagicTap: js.Function0[scala.Unit] = null,
+    onPress: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionColor: java.lang.String = null,
+    style: StyleProp[TextStyle] = null,
+    suppressHighlighting: js.UndefOr[scala.Boolean] = js.undefined,
+    testID: java.lang.String = null,
+    textBreakStrategy: reactDashNativeLib.reactDashNativeLibStrings.simple | reactDashNativeLib.reactDashNativeLibStrings.highQuality | reactDashNativeLib.reactDashNativeLibStrings.balanced = null
+  ): TextProps = {
+    val __obj = js.Dynamic.literal()
+    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
+    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint)
+    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors)
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
+    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
+    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole)
+    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates)
+    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
+    if (!js.isUndefined(adjustsFontSizeToFit)) __obj.updateDynamic("adjustsFontSizeToFit")(adjustsFontSizeToFit)
+    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling)
+    if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
+    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (lineBreakMode != null) __obj.updateDynamic("lineBreakMode")(lineBreakMode.asInstanceOf[js.Any])
+    if (minimumFontScale != null) __obj.updateDynamic("minimumFontScale")(minimumFontScale.asInstanceOf[js.Any])
+    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
+    if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
+    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressHighlighting)) __obj.updateDynamic("suppressHighlighting")(suppressHighlighting)
+    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextProps]
+  }
+}
+

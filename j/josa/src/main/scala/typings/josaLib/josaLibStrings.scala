@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object josaLibStrings {
   @js.native
-  sealed trait BACKSLASHuAC00 extends js.Object
+  sealed trait BACKSLASHuAC00
+    extends josaLib.josaMod.Subject
   
   @js.native
-  sealed trait BACKSLASHuACFC extends js.Object
+  sealed trait BACKSLASHuACFC
+    extends josaLib.josaMod.Conjunction
   
   @js.native
-  sealed trait BACKSLASHuB294 extends js.Object
+  sealed trait BACKSLASHuB294
+    extends josaLib.josaMod.Topic
   
   @js.native
-  sealed trait BACKSLASHuB85C extends js.Object
+  sealed trait BACKSLASHuB85C
+    extends josaLib.josaMod.Means
   
   @js.native
-  sealed trait BACKSLASHuB97C extends js.Object
+  sealed trait BACKSLASHuB97C
+    extends josaLib.josaMod.Objective
   
   @js.native
-  sealed trait BACKSLASHuC640 extends js.Object
+  sealed trait BACKSLASHuC640
+    extends josaLib.josaMod.Conjunction
   
   @js.native
-  sealed trait BACKSLASHuC73CBACKSLASHuB85C extends js.Object
+  sealed trait BACKSLASHuC73CBACKSLASHuB85C
+    extends josaLib.josaMod.Means
   
   @js.native
-  sealed trait BACKSLASHuC740 extends js.Object
+  sealed trait BACKSLASHuC740
+    extends josaLib.josaMod.Topic
   
   @js.native
-  sealed trait BACKSLASHuC744 extends js.Object
+  sealed trait BACKSLASHuC744
+    extends josaLib.josaMod.Objective
   
   @js.native
-  sealed trait BACKSLASHuC774 extends js.Object
+  sealed trait BACKSLASHuC774
+    extends josaLib.josaMod.Subject
   
   @scala.inline
   def BACKSLASHuAC00: BACKSLASHuAC00 = "\uAC00".asInstanceOf[BACKSLASHuAC00]

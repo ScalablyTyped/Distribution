@@ -11,3 +11,18 @@ trait Anon_Coefficients extends js.Object {
   var variables: js.Array[java.lang.String]
 }
 
+object Anon_Coefficients {
+  @scala.inline
+  def apply(
+    coefficients: js.Array[mathjsLib.mathjsMod.mathNs.MathType],
+    expression: mathjsLib.mathjsMod.mathNs.MathNode | java.lang.String,
+    variables: js.Array[java.lang.String]
+  ): Anon_Coefficients = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coefficients")(coefficients)
+    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[Anon_Coefficients]
+  }
+}
+

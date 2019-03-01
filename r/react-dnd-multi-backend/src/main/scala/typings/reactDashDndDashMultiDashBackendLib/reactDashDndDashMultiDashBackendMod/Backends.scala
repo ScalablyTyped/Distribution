@@ -14,3 +14,12 @@ trait Backends extends js.Object {
   var backends: js.Array[BackendDeclaration]
 }
 
+object Backends {
+  @scala.inline
+  def apply(backends: js.Array[BackendDeclaration]): Backends = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backends")(backends)
+    __obj.asInstanceOf[Backends]
+  }
+}
+

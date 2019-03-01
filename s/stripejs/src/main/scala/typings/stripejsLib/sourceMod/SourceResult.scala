@@ -16,3 +16,13 @@ trait SourceResult extends js.Object {
   var source: Source
 }
 
+object SourceResult {
+  @scala.inline
+  def apply(source: Source, error: stripejsLib.stripejsMod.StripeError = null): SourceResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[SourceResult]
+  }
+}
+

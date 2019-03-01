@@ -42,3 +42,24 @@ trait PlaceDetailsRequest extends js.Object {
   var sessiontoken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PlaceDetailsRequest {
+  @scala.inline
+  def apply(
+    placeid: java.lang.String,
+    fields: js.Array[
+      atGoogleMapsLib.atGoogleMapsLibStrings.address_components | atGoogleMapsLib.atGoogleMapsLibStrings.formatted_address | atGoogleMapsLib.atGoogleMapsLibStrings.formatted_phone_number | atGoogleMapsLib.atGoogleMapsLibStrings.adr_address | atGoogleMapsLib.atGoogleMapsLibStrings.geometry | atGoogleMapsLib.atGoogleMapsLibStrings.plus_code | atGoogleMapsLib.atGoogleMapsLibStrings.icon | atGoogleMapsLib.atGoogleMapsLibStrings.international_phone_number | atGoogleMapsLib.atGoogleMapsLibStrings.name | atGoogleMapsLib.atGoogleMapsLibStrings.opening_hours | atGoogleMapsLib.atGoogleMapsLibStrings.permanently_closed | atGoogleMapsLib.atGoogleMapsLibStrings.photos | atGoogleMapsLib.atGoogleMapsLibStrings.place_id | atGoogleMapsLib.atGoogleMapsLibStrings.scope | atGoogleMapsLib.atGoogleMapsLibStrings.alt_ids | atGoogleMapsLib.atGoogleMapsLibStrings.price_level | atGoogleMapsLib.atGoogleMapsLibStrings.rating | atGoogleMapsLib.atGoogleMapsLibStrings.reviews | atGoogleMapsLib.atGoogleMapsLibStrings.types | atGoogleMapsLib.atGoogleMapsLibStrings.url | atGoogleMapsLib.atGoogleMapsLibStrings.utc_offset | atGoogleMapsLib.atGoogleMapsLibStrings.vicinity | atGoogleMapsLib.atGoogleMapsLibStrings.website
+    ] = null,
+    language: Language = null,
+    region: java.lang.String = null,
+    sessiontoken: java.lang.String = null
+  ): PlaceDetailsRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("placeid")(placeid)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (sessiontoken != null) __obj.updateDynamic("sessiontoken")(sessiontoken)
+    __obj.asInstanceOf[PlaceDetailsRequest]
+  }
+}
+

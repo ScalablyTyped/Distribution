@@ -19,3 +19,13 @@ trait TestRulesetResponse extends js.Object {
   var testResults: js.UndefOr[js.Array[TestResult]] = js.undefined
 }
 
+object TestRulesetResponse {
+  @scala.inline
+  def apply(issues: js.Array[Issue] = null, testResults: js.Array[TestResult] = null): TestRulesetResponse = {
+    val __obj = js.Dynamic.literal()
+    if (issues != null) __obj.updateDynamic("issues")(issues)
+    if (testResults != null) __obj.updateDynamic("testResults")(testResults)
+    __obj.asInstanceOf[TestRulesetResponse]
+  }
+}
+

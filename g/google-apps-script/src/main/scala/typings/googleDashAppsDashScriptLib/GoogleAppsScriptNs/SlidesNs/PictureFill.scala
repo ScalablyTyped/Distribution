@@ -12,3 +12,20 @@ trait PictureFill extends js.Object {
   def getSourceUrl(): java.lang.String
 }
 
+object PictureFill {
+  @scala.inline
+  def apply(
+    getAs: js.Function1[java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
+    getBlob: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
+    getContentUrl: js.Function0[java.lang.String],
+    getSourceUrl: js.Function0[java.lang.String]
+  ): PictureFill = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAs")(getAs)
+    __obj.updateDynamic("getBlob")(getBlob)
+    __obj.updateDynamic("getContentUrl")(getContentUrl)
+    __obj.updateDynamic("getSourceUrl")(getSourceUrl)
+    __obj.asInstanceOf[PictureFill]
+  }
+}
+

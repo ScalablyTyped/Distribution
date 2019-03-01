@@ -16,3 +16,18 @@ trait CopyWebpackPluginConfiguration extends js.Object {
   var ignore: js.UndefOr[js.Array[java.lang.String | MiniMatchGlob]] = js.undefined
 }
 
+object CopyWebpackPluginConfiguration {
+  @scala.inline
+  def apply(
+    copyUnmodified: js.UndefOr[scala.Boolean] = js.undefined,
+    debug: copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.warning | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.info | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibNumbers.`true` | copyDashWebpackDashPluginLib.copyDashWebpackDashPluginLibStrings.debug = null,
+    ignore: js.Array[java.lang.String | MiniMatchGlob] = null
+  ): CopyWebpackPluginConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(copyUnmodified)) __obj.updateDynamic("copyUnmodified")(copyUnmodified)
+    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    __obj.asInstanceOf[CopyWebpackPluginConfiguration]
+  }
+}
+

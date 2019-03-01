@@ -24,3 +24,20 @@ trait WorkItemComments extends js.Object {
   var totalCount: scala.Double
 }
 
+object WorkItemComments {
+  @scala.inline
+  def apply(
+    comments: js.Array[WorkItemComment],
+    count: scala.Double,
+    fromRevisionCount: scala.Double,
+    totalCount: scala.Double
+  ): WorkItemComments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("comments")(comments)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("fromRevisionCount")(fromRevisionCount)
+    __obj.updateDynamic("totalCount")(totalCount)
+    __obj.asInstanceOf[WorkItemComments]
+  }
+}
+

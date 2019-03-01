@@ -26,3 +26,21 @@ trait animationOption extends js.Object {
   var animated: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AnimationOption {
+  @scala.inline
+  def apply(animated: js.UndefOr[scala.Boolean] = js.undefined): AnimationOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    __obj.asInstanceOf[AnimationOption]
+  }
+}
+
+object animationOption {
+  @scala.inline
+  def apply(animated: js.UndefOr[scala.Boolean] = js.undefined): animationOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    __obj.asInstanceOf[animationOption]
+  }
+}
+

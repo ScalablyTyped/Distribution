@@ -10,3 +10,13 @@ trait GetACLResult extends js.Object {
   var res: NormalSuccessResponse
 }
 
+object GetACLResult {
+  @scala.inline
+  def apply(acl: ACLType, res: NormalSuccessResponse): GetACLResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acl")(acl)
+    __obj.updateDynamic("res")(res)
+    __obj.asInstanceOf[GetACLResult]
+  }
+}
+

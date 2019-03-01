@@ -19,3 +19,20 @@ trait OperationMetadata extends js.Object {
   var steps: js.UndefOr[js.Array[Step]] = js.undefined
 }
 
+object OperationMetadata {
+  @scala.inline
+  def apply(
+    progressPercentage: scala.Int | scala.Double = null,
+    resourceNames: js.Array[java.lang.String] = null,
+    startTime: java.lang.String = null,
+    steps: js.Array[Step] = null
+  ): OperationMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (progressPercentage != null) __obj.updateDynamic("progressPercentage")(progressPercentage.asInstanceOf[js.Any])
+    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (steps != null) __obj.updateDynamic("steps")(steps)
+    __obj.asInstanceOf[OperationMetadata]
+  }
+}
+

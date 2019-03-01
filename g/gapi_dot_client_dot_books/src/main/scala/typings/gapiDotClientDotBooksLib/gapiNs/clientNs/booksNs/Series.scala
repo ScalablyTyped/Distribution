@@ -11,3 +11,16 @@ trait Series extends js.Object {
   var series: js.UndefOr[js.Array[gapiDotClientDotBooksLib.Anon_BannerImageUrl]] = js.undefined
 }
 
+object Series {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    series: js.Array[gapiDotClientDotBooksLib.Anon_BannerImageUrl] = null
+  ): Series = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (series != null) __obj.updateDynamic("series")(series)
+    __obj.asInstanceOf[Series]
+  }
+}
+

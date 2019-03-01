@@ -167,3 +167,54 @@ trait ConditionalFormatCollectionLoadOptions extends js.Object {
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConditionalFormatCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    cellValue: CellValueConditionalFormatLoadOptions = null,
+    cellValueOrNullObject: CellValueConditionalFormatLoadOptions = null,
+    colorScale: ColorScaleConditionalFormatLoadOptions = null,
+    colorScaleOrNullObject: ColorScaleConditionalFormatLoadOptions = null,
+    custom: CustomConditionalFormatLoadOptions = null,
+    customOrNullObject: CustomConditionalFormatLoadOptions = null,
+    dataBar: DataBarConditionalFormatLoadOptions = null,
+    dataBarOrNullObject: DataBarConditionalFormatLoadOptions = null,
+    iconSet: IconSetConditionalFormatLoadOptions = null,
+    iconSetOrNullObject: IconSetConditionalFormatLoadOptions = null,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    preset: PresetCriteriaConditionalFormatLoadOptions = null,
+    presetOrNullObject: PresetCriteriaConditionalFormatLoadOptions = null,
+    priority: js.UndefOr[scala.Boolean] = js.undefined,
+    stopIfTrue: js.UndefOr[scala.Boolean] = js.undefined,
+    textComparison: TextConditionalFormatLoadOptions = null,
+    textComparisonOrNullObject: TextConditionalFormatLoadOptions = null,
+    topBottom: TopBottomConditionalFormatLoadOptions = null,
+    topBottomOrNullObject: TopBottomConditionalFormatLoadOptions = null,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConditionalFormatCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
+    if (cellValueOrNullObject != null) __obj.updateDynamic("cellValueOrNullObject")(cellValueOrNullObject)
+    if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale)
+    if (colorScaleOrNullObject != null) __obj.updateDynamic("colorScaleOrNullObject")(colorScaleOrNullObject)
+    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (customOrNullObject != null) __obj.updateDynamic("customOrNullObject")(customOrNullObject)
+    if (dataBar != null) __obj.updateDynamic("dataBar")(dataBar)
+    if (dataBarOrNullObject != null) __obj.updateDynamic("dataBarOrNullObject")(dataBarOrNullObject)
+    if (iconSet != null) __obj.updateDynamic("iconSet")(iconSet)
+    if (iconSetOrNullObject != null) __obj.updateDynamic("iconSetOrNullObject")(iconSetOrNullObject)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (preset != null) __obj.updateDynamic("preset")(preset)
+    if (presetOrNullObject != null) __obj.updateDynamic("presetOrNullObject")(presetOrNullObject)
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority)
+    if (!js.isUndefined(stopIfTrue)) __obj.updateDynamic("stopIfTrue")(stopIfTrue)
+    if (textComparison != null) __obj.updateDynamic("textComparison")(textComparison)
+    if (textComparisonOrNullObject != null) __obj.updateDynamic("textComparisonOrNullObject")(textComparisonOrNullObject)
+    if (topBottom != null) __obj.updateDynamic("topBottom")(topBottom)
+    if (topBottomOrNullObject != null) __obj.updateDynamic("topBottomOrNullObject")(topBottomOrNullObject)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ConditionalFormatCollectionLoadOptions]
+  }
+}
+

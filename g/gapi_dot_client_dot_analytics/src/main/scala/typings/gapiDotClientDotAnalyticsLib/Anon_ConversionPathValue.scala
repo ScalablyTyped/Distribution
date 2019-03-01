@@ -12,3 +12,16 @@ trait Anon_ConversionPathValue extends js.Object {
   var primitiveValue: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ConversionPathValue {
+  @scala.inline
+  def apply(
+    conversionPathValue: js.Array[Anon_InteractionType] = null,
+    primitiveValue: java.lang.String = null
+  ): Anon_ConversionPathValue = {
+    val __obj = js.Dynamic.literal()
+    if (conversionPathValue != null) __obj.updateDynamic("conversionPathValue")(conversionPathValue)
+    if (primitiveValue != null) __obj.updateDynamic("primitiveValue")(primitiveValue)
+    __obj.asInstanceOf[Anon_ConversionPathValue]
+  }
+}
+

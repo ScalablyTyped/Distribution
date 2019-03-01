@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GitLabEnv extends CiEnvBase {
+trait GitLabEnv
+  extends KnownCiEnv
+     with CiEnvBase {
   var branch: java.lang.String
   var build: java.lang.String
   var buildUrl: java.lang.String
@@ -17,5 +19,38 @@ trait GitLabEnv extends CiEnvBase {
   var service: envDashCiLib.envDashCiLibStrings.gitlab
   var slug: java.lang.String
   var tag: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object GitLabEnv {
+  @scala.inline
+  def apply(
+    branch: java.lang.String,
+    build: java.lang.String,
+    buildUrl: java.lang.String,
+    commit: java.lang.String,
+    isCi: envDashCiLib.envDashCiLibNumbers.`true`,
+    job: java.lang.String,
+    jobUrl: java.lang.String,
+    name: envDashCiLib.envDashCiLibStrings.`GitLab CI/CD`,
+    root: java.lang.String,
+    service: envDashCiLib.envDashCiLibStrings.gitlab,
+    slug: java.lang.String,
+    tag: java.lang.String = null
+  ): GitLabEnv = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("branch")(branch)
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("buildUrl")(buildUrl)
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("isCi")(isCi)
+    __obj.updateDynamic("job")(job)
+    __obj.updateDynamic("jobUrl")(jobUrl)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("root")(root)
+    __obj.updateDynamic("service")(service)
+    __obj.updateDynamic("slug")(slug)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[GitLabEnv]
+  }
 }
 

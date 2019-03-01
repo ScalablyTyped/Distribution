@@ -20,3 +20,18 @@ trait GitPullRequestCommentThreadContext extends js.Object {
   var trackingCriteria: CommentTrackingCriteria
 }
 
+object GitPullRequestCommentThreadContext {
+  @scala.inline
+  def apply(
+    changeTrackingId: scala.Double,
+    iterationContext: CommentIterationContext,
+    trackingCriteria: CommentTrackingCriteria
+  ): GitPullRequestCommentThreadContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeTrackingId")(changeTrackingId)
+    __obj.updateDynamic("iterationContext")(iterationContext)
+    __obj.updateDynamic("trackingCriteria")(trackingCriteria)
+    __obj.asInstanceOf[GitPullRequestCommentThreadContext]
+  }
+}
+

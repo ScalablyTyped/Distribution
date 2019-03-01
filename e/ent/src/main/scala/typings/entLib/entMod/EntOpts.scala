@@ -20,3 +20,18 @@ trait EntOpts extends js.Object {
   var special: js.UndefOr[js.Any] = js.undefined
 }
 
+object EntOpts {
+  @scala.inline
+  def apply(
+    named: js.UndefOr[scala.Boolean] = js.undefined,
+    numeric: js.UndefOr[scala.Boolean] = js.undefined,
+    special: js.Any = null
+  ): EntOpts = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(named)) __obj.updateDynamic("named")(named)
+    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric)
+    if (special != null) __obj.updateDynamic("special")(special)
+    __obj.asInstanceOf[EntOpts]
+  }
+}
+

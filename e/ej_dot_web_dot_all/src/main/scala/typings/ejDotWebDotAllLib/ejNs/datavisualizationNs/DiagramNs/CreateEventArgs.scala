@@ -17,3 +17,14 @@ trait CreateEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateEventArgs {
+  @scala.inline
+  def apply(diagramId: java.lang.String = null, model: js.Any = null, `type`: java.lang.String = null): CreateEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CreateEventArgs]
+  }
+}
+

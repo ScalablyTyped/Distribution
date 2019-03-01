@@ -28,3 +28,39 @@ trait XDocumentBuilder
   def setErrorHandler(eh: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XErrorHandler): scala.Unit
 }
 
+object XDocumentBuilder {
+  @scala.inline
+  def apply(
+    DOMImplementation: XDOMImplementation,
+    acquire: js.Function0[scala.Unit],
+    getDOMImplementation: js.Function0[XDOMImplementation],
+    isNamespaceAware: js.Function0[scala.Boolean],
+    isValidating: js.Function0[scala.Boolean],
+    newDocument: js.Function0[XDocument],
+    parse: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, XDocument],
+    parseURI: js.Function1[java.lang.String, XDocument],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setEntityResolver: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XEntityResolver, 
+      scala.Unit
+    ],
+    setErrorHandler: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XErrorHandler, scala.Unit]
+  ): XDocumentBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DOMImplementation")(DOMImplementation)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDOMImplementation")(getDOMImplementation)
+    __obj.updateDynamic("isNamespaceAware")(isNamespaceAware)
+    __obj.updateDynamic("isValidating")(isValidating)
+    __obj.updateDynamic("newDocument")(newDocument)
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("parseURI")(parseURI)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setEntityResolver")(setEntityResolver)
+    __obj.updateDynamic("setErrorHandler")(setErrorHandler)
+    __obj.asInstanceOf[XDocumentBuilder]
+  }
+}
+

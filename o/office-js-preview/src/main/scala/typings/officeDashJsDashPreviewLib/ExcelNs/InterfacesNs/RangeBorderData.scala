@@ -52,3 +52,22 @@ trait RangeBorderData extends js.Object {
   ] = js.undefined
 }
 
+object RangeBorderData {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    sideIndex: officeDashJsDashPreviewLib.ExcelNs.BorderIndex | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EdgeTop | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EdgeBottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EdgeLeft | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EdgeRight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.InsideVertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.InsideHorizontal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DiagonalDown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DiagonalUp = null,
+    style: officeDashJsDashPreviewLib.ExcelNs.BorderLineStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Continuous | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashDotDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Double | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SlantDashDot = null,
+    tintAndShade: scala.Int | scala.Double = null,
+    weight: officeDashJsDashPreviewLib.ExcelNs.BorderWeight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Hairline | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Thin | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Thick = null
+  ): RangeBorderData = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (sideIndex != null) __obj.updateDynamic("sideIndex")(sideIndex.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RangeBorderData]
+  }
+}
+

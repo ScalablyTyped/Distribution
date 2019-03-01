@@ -14,7 +14,7 @@ trait Anon_70 extends js.Object {
     adoneLib.adoneLibStrings.`-`, 
     adoneLib.adoneLibStrings.BACKTICK, 
     adoneLib.adoneLibStrings.BACKTICK, 
-    adoneLib.adoneLibStrings.`'`, 
+    adoneLib.adoneLibStrings._quote, 
     adoneLib.adoneLibStrings.BACKSLASHu00B4, 
     adoneLib.adoneLibStrings.`-`, 
     adoneLib.adoneLibStrings.Underscore, 

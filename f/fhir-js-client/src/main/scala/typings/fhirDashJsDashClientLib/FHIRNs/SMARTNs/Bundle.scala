@@ -15,3 +15,12 @@ trait Bundle extends js.Object {
   var bundle: Resource
 }
 
+object Bundle {
+  @scala.inline
+  def apply(bundle: Resource): Bundle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bundle")(bundle)
+    __obj.asInstanceOf[Bundle]
+  }
+}
+

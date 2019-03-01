@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object jsonrpcDashSerializerLibNumbers {
   @js.native
-  sealed trait `-32600` extends js.Object
+  sealed trait `-32600`
+    extends jsonrpcDashSerializerLib.jsonrpcDashSerializerMod.errNs.ErrorCode
   
   @js.native
-  sealed trait `-32601` extends js.Object
+  sealed trait `-32601`
+    extends jsonrpcDashSerializerLib.jsonrpcDashSerializerMod.errNs.ErrorCode
   
   @js.native
-  sealed trait `-32602` extends js.Object
+  sealed trait `-32602`
+    extends jsonrpcDashSerializerLib.jsonrpcDashSerializerMod.errNs.ErrorCode
   
   @js.native
-  sealed trait `-32603` extends js.Object
+  sealed trait `-32603`
+    extends jsonrpcDashSerializerLib.jsonrpcDashSerializerMod.errNs.ErrorCode
   
   @js.native
-  sealed trait `-32700` extends js.Object
+  sealed trait `-32700`
+    extends jsonrpcDashSerializerLib.jsonrpcDashSerializerMod.errNs.ErrorCode
   
   @scala.inline
   def `-32600`: `-32600` = -32600.asInstanceOf[`-32600`]

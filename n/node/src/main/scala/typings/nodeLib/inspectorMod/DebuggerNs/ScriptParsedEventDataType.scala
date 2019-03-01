@@ -70,3 +70,42 @@ trait ScriptParsedEventDataType extends js.Object {
   var url: java.lang.String
 }
 
+object ScriptParsedEventDataType {
+  @scala.inline
+  def apply(
+    endColumn: scala.Double,
+    endLine: scala.Double,
+    executionContextId: nodeLib.inspectorMod.RuntimeNs.ExecutionContextId,
+    hash: java.lang.String,
+    scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId,
+    startColumn: scala.Double,
+    startLine: scala.Double,
+    url: java.lang.String,
+    executionContextAuxData: js.Object = null,
+    hasSourceURL: js.UndefOr[scala.Boolean] = js.undefined,
+    isLiveEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    isModule: js.UndefOr[scala.Boolean] = js.undefined,
+    length: scala.Int | scala.Double = null,
+    sourceMapURL: java.lang.String = null,
+    stackTrace: nodeLib.inspectorMod.RuntimeNs.StackTrace = null
+  ): ScriptParsedEventDataType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endColumn")(endColumn)
+    __obj.updateDynamic("endLine")(endLine)
+    __obj.updateDynamic("executionContextId")(executionContextId)
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("scriptId")(scriptId)
+    __obj.updateDynamic("startColumn")(startColumn)
+    __obj.updateDynamic("startLine")(startLine)
+    __obj.updateDynamic("url")(url)
+    if (executionContextAuxData != null) __obj.updateDynamic("executionContextAuxData")(executionContextAuxData)
+    if (!js.isUndefined(hasSourceURL)) __obj.updateDynamic("hasSourceURL")(hasSourceURL)
+    if (!js.isUndefined(isLiveEdit)) __obj.updateDynamic("isLiveEdit")(isLiveEdit)
+    if (!js.isUndefined(isModule)) __obj.updateDynamic("isModule")(isModule)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (sourceMapURL != null) __obj.updateDynamic("sourceMapURL")(sourceMapURL)
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
+    __obj.asInstanceOf[ScriptParsedEventDataType]
+  }
+}
+

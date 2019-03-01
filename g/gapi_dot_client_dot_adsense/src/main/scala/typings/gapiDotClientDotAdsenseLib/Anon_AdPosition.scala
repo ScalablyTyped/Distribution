@@ -16,3 +16,20 @@ trait Anon_AdPosition extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AdPosition {
+  @scala.inline
+  def apply(
+    adPosition: java.lang.String = null,
+    frequency: scala.Int | scala.Double = null,
+    minimumWordCount: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): Anon_AdPosition = {
+    val __obj = js.Dynamic.literal()
+    if (adPosition != null) __obj.updateDynamic("adPosition")(adPosition)
+    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (minimumWordCount != null) __obj.updateDynamic("minimumWordCount")(minimumWordCount.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_AdPosition]
+  }
+}
+

@@ -25,3 +25,46 @@ trait IUriRuntimeClass extends js.Object {
   def equals(pUri: Uri): scala.Boolean
 }
 
+object IUriRuntimeClass {
+  @scala.inline
+  def apply(
+    absoluteUri: java.lang.String,
+    combineUri: js.Function1[java.lang.String, Uri],
+    displayUri: java.lang.String,
+    domain: java.lang.String,
+    equals: js.Function1[Uri, scala.Boolean],
+    extension: java.lang.String,
+    fragment: java.lang.String,
+    host: java.lang.String,
+    password: java.lang.String,
+    path: java.lang.String,
+    port: scala.Double,
+    query: java.lang.String,
+    queryParsed: WwwFormUrlDecoder,
+    rawUri: java.lang.String,
+    schemeName: java.lang.String,
+    suspicious: scala.Boolean,
+    userName: java.lang.String
+  ): IUriRuntimeClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("absoluteUri")(absoluteUri)
+    __obj.updateDynamic("combineUri")(combineUri)
+    __obj.updateDynamic("displayUri")(displayUri)
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("extension")(extension)
+    __obj.updateDynamic("fragment")(fragment)
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("queryParsed")(queryParsed)
+    __obj.updateDynamic("rawUri")(rawUri)
+    __obj.updateDynamic("schemeName")(schemeName)
+    __obj.updateDynamic("suspicious")(suspicious)
+    __obj.updateDynamic("userName")(userName)
+    __obj.asInstanceOf[IUriRuntimeClass]
+  }
+}
+

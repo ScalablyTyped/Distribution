@@ -29,3 +29,26 @@ trait DragOverEventArgs extends js.Object {
   var target: js.UndefOr[js.Any] = js.undefined
 }
 
+object DragOverEventArgs {
+  @scala.inline
+  def apply(
+    allowDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    diagramId: java.lang.String = null,
+    element: js.Any = null,
+    newValue: js.Any = null,
+    oldValue: js.Any = null,
+    target: js.Any = null
+  ): DragOverEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[DragOverEventArgs]
+  }
+}
+

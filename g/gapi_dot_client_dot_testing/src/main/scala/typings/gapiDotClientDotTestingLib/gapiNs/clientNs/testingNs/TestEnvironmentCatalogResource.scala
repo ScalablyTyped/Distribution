@@ -18,3 +18,17 @@ trait TestEnvironmentCatalogResource extends js.Object {
   def get(request: gapiDotClientDotTestingLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[TestEnvironmentCatalog]
 }
 
+object TestEnvironmentCatalogResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotTestingLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestEnvironmentCatalog]
+    ]
+  ): TestEnvironmentCatalogResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[TestEnvironmentCatalogResource]
+  }
+}
+

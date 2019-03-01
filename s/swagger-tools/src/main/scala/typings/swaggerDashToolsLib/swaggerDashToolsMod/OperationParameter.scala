@@ -10,3 +10,13 @@ trait OperationParameter extends js.Object {
   var schema: SwaggerParameterSchema
 }
 
+object OperationParameter {
+  @scala.inline
+  def apply(path: js.Array[java.lang.String], schema: SwaggerParameterSchema): OperationParameter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[OperationParameter]
+  }
+}
+

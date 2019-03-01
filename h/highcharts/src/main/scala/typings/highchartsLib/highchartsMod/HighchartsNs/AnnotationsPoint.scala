@@ -36,3 +36,20 @@ trait AnnotationsPoint extends js.Object {
   var yAxis: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AnnotationsPoint {
+  @scala.inline
+  def apply(
+    x: scala.Int | scala.Double = null,
+    xAxis: scala.Double | java.lang.String = null,
+    y: scala.Int | scala.Double = null,
+    yAxis: scala.Int | scala.Double = null
+  ): AnnotationsPoint = {
+    val __obj = js.Dynamic.literal()
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnnotationsPoint]
+  }
+}
+

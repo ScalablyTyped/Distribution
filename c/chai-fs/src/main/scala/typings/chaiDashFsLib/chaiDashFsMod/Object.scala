@@ -9,3 +9,12 @@ trait Object extends js.Object {
   var should: chaiDashFsLib.chaiDashFsMod.Global.ChaiNs.Assertion
 }
 
+object Object {
+  @scala.inline
+  def apply(should: chaiDashFsLib.chaiDashFsMod.Global.ChaiNs.Assertion): Object = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("should")(should)
+    __obj.asInstanceOf[Object]
+  }
+}
+

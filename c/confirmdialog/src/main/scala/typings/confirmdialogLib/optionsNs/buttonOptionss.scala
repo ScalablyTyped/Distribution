@@ -10,3 +10,13 @@ trait buttonOptionss extends js.Object {
   var confirm: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object buttonOptionss {
+  @scala.inline
+  def apply(cancel: js.Function0[scala.Unit] = null, confirm: js.Function0[scala.Unit] = null): buttonOptionss = {
+    val __obj = js.Dynamic.literal()
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (confirm != null) __obj.updateDynamic("confirm")(confirm)
+    __obj.asInstanceOf[buttonOptionss]
+  }
+}
+

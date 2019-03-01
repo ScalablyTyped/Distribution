@@ -11,3 +11,13 @@ trait OperationMessage extends js.Object {
   var `type`: java.lang.String
 }
 
+object OperationMessage {
+  @scala.inline
+  def apply(`type`: java.lang.String, id: java.lang.String = null, payload: OperationMessagePayload = null): OperationMessage = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (payload != null) __obj.updateDynamic("payload")(payload)
+    __obj.asInstanceOf[OperationMessage]
+  }
+}
+

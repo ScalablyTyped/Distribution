@@ -50,3 +50,38 @@ trait Options extends js.Object {
   var stream: js.UndefOr[nodeLib.NodeJSNs.WritableStream] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    barCompleteChar: java.lang.String = null,
+    barCompleteString: java.lang.String = null,
+    barIncompleteChar: java.lang.String = null,
+    barIncompleteString: java.lang.String = null,
+    barsize: scala.Int | scala.Double = null,
+    clearOnComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    etaBuffer: scala.Int | scala.Double = null,
+    format: java.lang.String = null,
+    fps: scala.Int | scala.Double = null,
+    hideCursor: js.UndefOr[scala.Boolean] = js.undefined,
+    linewrap: js.UndefOr[scala.Boolean] = js.undefined,
+    stopOnComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    stream: nodeLib.NodeJSNs.WritableStream = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (barCompleteChar != null) __obj.updateDynamic("barCompleteChar")(barCompleteChar)
+    if (barCompleteString != null) __obj.updateDynamic("barCompleteString")(barCompleteString)
+    if (barIncompleteChar != null) __obj.updateDynamic("barIncompleteChar")(barIncompleteChar)
+    if (barIncompleteString != null) __obj.updateDynamic("barIncompleteString")(barIncompleteString)
+    if (barsize != null) __obj.updateDynamic("barsize")(barsize.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearOnComplete)) __obj.updateDynamic("clearOnComplete")(clearOnComplete)
+    if (etaBuffer != null) __obj.updateDynamic("etaBuffer")(etaBuffer.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor)
+    if (!js.isUndefined(linewrap)) __obj.updateDynamic("linewrap")(linewrap)
+    if (!js.isUndefined(stopOnComplete)) __obj.updateDynamic("stopOnComplete")(stopOnComplete)
+    if (stream != null) __obj.updateDynamic("stream")(stream)
+    __obj.asInstanceOf[Options]
+  }
+}
+

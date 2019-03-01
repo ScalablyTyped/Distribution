@@ -20,3 +20,13 @@ trait ChangeTableCellFormattingCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeTableCellFormattingCommand {
+  @scala.inline
+  def apply(execute: js.Function1[TableCellFormattingSettings, scala.Boolean], getState: js.Function0[js.Any]): ChangeTableCellFormattingCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeTableCellFormattingCommand]
+  }
+}
+

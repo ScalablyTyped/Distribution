@@ -12,3 +12,12 @@ trait QueueOptions extends js.Object {
   def onEmpty(): scala.Unit
 }
 
+object QueueOptions {
+  @scala.inline
+  def apply(onEmpty: js.Function0[scala.Unit]): QueueOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onEmpty")(onEmpty)
+    __obj.asInstanceOf[QueueOptions]
+  }
+}
+

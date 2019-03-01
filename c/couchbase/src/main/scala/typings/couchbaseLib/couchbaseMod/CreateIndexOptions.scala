@@ -16,3 +16,16 @@ trait CreateIndexOptions extends js.Object {
   var ignoreIfExists: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CreateIndexOptions {
+  @scala.inline
+  def apply(
+    deferred: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreIfExists: js.UndefOr[scala.Boolean] = js.undefined
+  ): CreateIndexOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
+    if (!js.isUndefined(ignoreIfExists)) __obj.updateDynamic("ignoreIfExists")(ignoreIfExists)
+    __obj.asInstanceOf[CreateIndexOptions]
+  }
+}
+

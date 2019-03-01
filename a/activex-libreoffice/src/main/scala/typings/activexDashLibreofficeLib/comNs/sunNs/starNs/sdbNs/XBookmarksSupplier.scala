@@ -14,3 +14,22 @@ trait XBookmarksSupplier
   def getBookmarks(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XBookmarksSupplier {
+  @scala.inline
+  def apply(
+    Bookmarks: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getBookmarks: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBookmarksSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Bookmarks")(Bookmarks)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getBookmarks")(getBookmarks)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XBookmarksSupplier]
+  }
+}
+

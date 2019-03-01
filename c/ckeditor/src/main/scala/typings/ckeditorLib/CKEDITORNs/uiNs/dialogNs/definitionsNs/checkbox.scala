@@ -11,3 +11,18 @@ trait checkbox extends js.Object {
   var validate: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
 }
 
+object checkbox {
+  @scala.inline
+  def apply(
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    validate: js.Function0[scala.Boolean] = null
+  ): checkbox = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[checkbox]
+  }
+}
+

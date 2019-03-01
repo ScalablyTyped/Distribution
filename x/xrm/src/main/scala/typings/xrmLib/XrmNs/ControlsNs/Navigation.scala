@@ -16,3 +16,12 @@ trait Navigation extends js.Object {
   var items: xrmLib.XrmNs.CollectionNs.ItemCollection[NavigationItem]
 }
 
+object Navigation {
+  @scala.inline
+  def apply(items: xrmLib.XrmNs.CollectionNs.ItemCollection[NavigationItem]): Navigation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[Navigation]
+  }
+}
+

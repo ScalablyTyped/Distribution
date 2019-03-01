@@ -9,3 +9,12 @@ trait StockChartLegendInactiveItemsMarkers extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StockChartLegendInactiveItemsMarkers {
+  @scala.inline
+  def apply(color: java.lang.String = null): StockChartLegendInactiveItemsMarkers = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    __obj.asInstanceOf[StockChartLegendInactiveItemsMarkers]
+  }
+}
+

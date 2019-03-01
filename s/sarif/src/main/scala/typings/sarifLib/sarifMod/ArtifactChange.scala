@@ -21,3 +21,18 @@ trait ArtifactChange extends js.Object {
   var replacements: js.Array[Replacement]
 }
 
+object ArtifactChange {
+  @scala.inline
+  def apply(
+    artifactLocation: ArtifactLocation,
+    replacements: js.Array[Replacement],
+    properties: PropertyBag = null
+  ): ArtifactChange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifactLocation")(artifactLocation)
+    __obj.updateDynamic("replacements")(replacements)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[ArtifactChange]
+  }
+}
+

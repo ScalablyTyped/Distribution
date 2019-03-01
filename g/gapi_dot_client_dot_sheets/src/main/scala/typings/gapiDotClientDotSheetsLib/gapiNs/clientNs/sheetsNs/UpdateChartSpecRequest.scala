@@ -12,3 +12,13 @@ trait UpdateChartSpecRequest extends js.Object {
   var spec: js.UndefOr[ChartSpec] = js.undefined
 }
 
+object UpdateChartSpecRequest {
+  @scala.inline
+  def apply(chartId: scala.Int | scala.Double = null, spec: ChartSpec = null): UpdateChartSpecRequest = {
+    val __obj = js.Dynamic.literal()
+    if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
+    if (spec != null) __obj.updateDynamic("spec")(spec)
+    __obj.asInstanceOf[UpdateChartSpecRequest]
+  }
+}
+

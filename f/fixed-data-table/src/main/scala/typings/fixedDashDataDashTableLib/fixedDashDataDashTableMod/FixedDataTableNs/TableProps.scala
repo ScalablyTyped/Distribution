@@ -194,3 +194,92 @@ trait TableProps
   var width: scala.Double
 }
 
+object TableProps {
+  @scala.inline
+  def apply(
+    rowHeight: scala.Double,
+    rowsCount: scala.Double,
+    width: scala.Double,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    footerHeight: scala.Int | scala.Double = null,
+    groupHeaderHeight: scala.Int | scala.Double = null,
+    headerHeight: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    isColumnResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    maxHeight: scala.Int | scala.Double = null,
+    onColumnResizeEndCallback: js.Function2[/* newColumnWidth */ scala.Double, /* columnKey */ java.lang.String, scala.Unit] = null,
+    onContentHeightChange: js.Function1[/* newHeight */ scala.Double, scala.Unit] = null,
+    onRowClick: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
+      /* rowIndex */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onRowDoubleClick: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
+      /* rowIndex */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onRowMouseDown: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
+      /* rowIndex */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onRowMouseEnter: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
+      /* rowIndex */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onRowMouseLeave: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[Table, reactLib.Event], 
+      /* rowIndex */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onScrollEnd: js.Function2[/* x */ scala.Double, /* y */ scala.Double, scala.Unit] = null,
+    onScrollStart: js.Function2[/* x */ scala.Double, /* y */ scala.Double, scala.Unit] = null,
+    overflowX: java.lang.String = null,
+    overflowY: java.lang.String = null,
+    ownerHeight: scala.Int | scala.Double = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[Table] = null,
+    rowClassNameGetter: js.Function1[/* index */ scala.Double, java.lang.String] = null,
+    rowHeightGetter: js.Function1[/* index */ scala.Double, scala.Double] = null,
+    scrollLeft: scala.Int | scala.Double = null,
+    scrollToColumn: scala.Int | scala.Double = null,
+    scrollToRow: scala.Int | scala.Double = null,
+    scrollTop: scala.Int | scala.Double = null
+  ): TableProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rowHeight")(rowHeight)
+    __obj.updateDynamic("rowsCount")(rowsCount)
+    __obj.updateDynamic("width")(width)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (footerHeight != null) __obj.updateDynamic("footerHeight")(footerHeight.asInstanceOf[js.Any])
+    if (groupHeaderHeight != null) __obj.updateDynamic("groupHeaderHeight")(groupHeaderHeight.asInstanceOf[js.Any])
+    if (headerHeight != null) __obj.updateDynamic("headerHeight")(headerHeight.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(isColumnResizing)) __obj.updateDynamic("isColumnResizing")(isColumnResizing)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (onColumnResizeEndCallback != null) __obj.updateDynamic("onColumnResizeEndCallback")(onColumnResizeEndCallback)
+    if (onContentHeightChange != null) __obj.updateDynamic("onContentHeightChange")(onContentHeightChange)
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
+    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(onRowDoubleClick)
+    if (onRowMouseDown != null) __obj.updateDynamic("onRowMouseDown")(onRowMouseDown)
+    if (onRowMouseEnter != null) __obj.updateDynamic("onRowMouseEnter")(onRowMouseEnter)
+    if (onRowMouseLeave != null) __obj.updateDynamic("onRowMouseLeave")(onRowMouseLeave)
+    if (onScrollEnd != null) __obj.updateDynamic("onScrollEnd")(onScrollEnd)
+    if (onScrollStart != null) __obj.updateDynamic("onScrollStart")(onScrollStart)
+    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX)
+    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY)
+    if (ownerHeight != null) __obj.updateDynamic("ownerHeight")(ownerHeight.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (rowClassNameGetter != null) __obj.updateDynamic("rowClassNameGetter")(rowClassNameGetter)
+    if (rowHeightGetter != null) __obj.updateDynamic("rowHeightGetter")(rowHeightGetter)
+    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
+    if (scrollToColumn != null) __obj.updateDynamic("scrollToColumn")(scrollToColumn.asInstanceOf[js.Any])
+    if (scrollToRow != null) __obj.updateDynamic("scrollToRow")(scrollToRow.asInstanceOf[js.Any])
+    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableProps]
+  }
+}
+

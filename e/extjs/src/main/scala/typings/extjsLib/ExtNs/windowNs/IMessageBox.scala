@@ -159,3 +159,128 @@ trait IMessageBox extends IWindow {
   ] = js.undefined
 }
 
+object IMessageBox {
+  @scala.inline
+  def apply(
+    CANCEL: scala.Int | scala.Double = null,
+    ERROR: java.lang.String = null,
+    INFO: java.lang.String = null,
+    IWindow: IWindow = null,
+    NO: scala.Int | scala.Double = null,
+    OK: scala.Int | scala.Double = null,
+    OKCANCEL: scala.Int | scala.Double = null,
+    QUESTION: java.lang.String = null,
+    WARNING: java.lang.String = null,
+    YES: scala.Int | scala.Double = null,
+    YESNO: scala.Int | scala.Double = null,
+    YESNOCANCEL: scala.Int | scala.Double = null,
+    alert: js.Function4[
+      /* title */ js.UndefOr[java.lang.String], 
+      /* msg */ js.UndefOr[java.lang.String], 
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      IMessageBox
+    ] = null,
+    buttonText: js.Any = null,
+    closeAction: java.lang.String = null,
+    cls: java.lang.String = null,
+    confirm: js.Function4[
+      /* title */ js.UndefOr[java.lang.String], 
+      /* msg */ js.UndefOr[java.lang.String], 
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      IMessageBox
+    ] = null,
+    constrain: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultTextHeight: scala.Int | scala.Double = null,
+    hide: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    hideMode: java.lang.String = null,
+    layout: js.Any = null,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    minHeight: scala.Int | scala.Double = null,
+    minProgressWidth: scala.Int | scala.Double = null,
+    minPromptWidth: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    onShow: js.Function0[scala.Unit] = null,
+    progress: js.Function3[
+      /* title */ js.UndefOr[java.lang.String], 
+      /* msg */ js.UndefOr[java.lang.String], 
+      /* progressText */ js.UndefOr[java.lang.String], 
+      IMessageBox
+    ] = null,
+    prompt: js.Function6[
+      /* title */ js.UndefOr[java.lang.String], 
+      /* msg */ js.UndefOr[java.lang.String], 
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* multiline */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[java.lang.String], 
+      IMessageBox
+    ] = null,
+    resizable: js.Any = null,
+    setIcon: js.Function3[
+      /* icon */ js.UndefOr[java.lang.String], 
+      /* width */ js.UndefOr[scala.Double], 
+      /* height */ js.UndefOr[scala.Double], 
+      IMessageBox
+    ] = null,
+    show: js.Function1[/* config */ js.UndefOr[js.Any], IMessageBox] = null,
+    shrinkWrapDock: js.Any = null,
+    title: java.lang.String = null,
+    updateProgress: js.Function3[
+      /* value */ js.UndefOr[scala.Double], 
+      /* progressText */ js.UndefOr[java.lang.String], 
+      /* msg */ js.UndefOr[java.lang.String], 
+      IMessageBox
+    ] = null,
+    wait: js.Function3[
+      /* msg */ js.UndefOr[java.lang.String], 
+      /* title */ js.UndefOr[java.lang.String], 
+      /* config */ js.UndefOr[js.Any], 
+      IMessageBox
+    ] = null
+  ): IMessageBox = {
+    val __obj = js.Dynamic.literal()
+    if (CANCEL != null) __obj.updateDynamic("CANCEL")(CANCEL.asInstanceOf[js.Any])
+    if (ERROR != null) __obj.updateDynamic("ERROR")(ERROR)
+    if (INFO != null) __obj.updateDynamic("INFO")(INFO)
+    js.Dynamic.global.Object.assign(__obj, IWindow)
+    if (NO != null) __obj.updateDynamic("NO")(NO.asInstanceOf[js.Any])
+    if (OK != null) __obj.updateDynamic("OK")(OK.asInstanceOf[js.Any])
+    if (OKCANCEL != null) __obj.updateDynamic("OKCANCEL")(OKCANCEL.asInstanceOf[js.Any])
+    if (QUESTION != null) __obj.updateDynamic("QUESTION")(QUESTION)
+    if (WARNING != null) __obj.updateDynamic("WARNING")(WARNING)
+    if (YES != null) __obj.updateDynamic("YES")(YES.asInstanceOf[js.Any])
+    if (YESNO != null) __obj.updateDynamic("YESNO")(YESNO.asInstanceOf[js.Any])
+    if (YESNOCANCEL != null) __obj.updateDynamic("YESNOCANCEL")(YESNOCANCEL.asInstanceOf[js.Any])
+    if (alert != null) __obj.updateDynamic("alert")(alert)
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
+    if (closeAction != null) __obj.updateDynamic("closeAction")(closeAction)
+    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (confirm != null) __obj.updateDynamic("confirm")(confirm)
+    if (!js.isUndefined(constrain)) __obj.updateDynamic("constrain")(constrain)
+    if (defaultTextHeight != null) __obj.updateDynamic("defaultTextHeight")(defaultTextHeight.asInstanceOf[js.Any])
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (hideMode != null) __obj.updateDynamic("hideMode")(hideMode)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minProgressWidth != null) __obj.updateDynamic("minProgressWidth")(minProgressWidth.asInstanceOf[js.Any])
+    if (minPromptWidth != null) __obj.updateDynamic("minPromptWidth")(minPromptWidth.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (resizable != null) __obj.updateDynamic("resizable")(resizable)
+    if (setIcon != null) __obj.updateDynamic("setIcon")(setIcon)
+    if (show != null) __obj.updateDynamic("show")(show)
+    if (shrinkWrapDock != null) __obj.updateDynamic("shrinkWrapDock")(shrinkWrapDock)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (updateProgress != null) __obj.updateDynamic("updateProgress")(updateProgress)
+    if (wait != null) __obj.updateDynamic("wait")(wait)
+    __obj.asInstanceOf[IMessageBox]
+  }
+}
+

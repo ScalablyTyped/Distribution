@@ -12,3 +12,20 @@ trait Client extends js.Object {
   var product_name: java.lang.String
 }
 
+object Client {
+  @scala.inline
+  def apply(
+    environment: java.lang.String,
+    paypal_sdk_version: java.lang.String,
+    platform: java.lang.String,
+    product_name: java.lang.String
+  ): Client = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("environment")(environment)
+    __obj.updateDynamic("paypal_sdk_version")(paypal_sdk_version)
+    __obj.updateDynamic("platform")(platform)
+    __obj.updateDynamic("product_name")(product_name)
+    __obj.asInstanceOf[Client]
+  }
+}
+

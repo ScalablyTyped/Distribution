@@ -9,3 +9,12 @@ trait SpeechSynthesisEventMap extends js.Object {
   var voiceschanged: Event
 }
 
+object SpeechSynthesisEventMap {
+  @scala.inline
+  def apply(voiceschanged: Event): SpeechSynthesisEventMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("voiceschanged")(voiceschanged)
+    __obj.asInstanceOf[SpeechSynthesisEventMap]
+  }
+}
+

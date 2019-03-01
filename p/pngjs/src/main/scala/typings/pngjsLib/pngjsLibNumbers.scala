@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object pngjsLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends pngjsLib.pngjsMod.ColorType
   
   @js.native
   sealed trait `1` extends js.Object
@@ -16,16 +17,19 @@ object pngjsLibNumbers {
   sealed trait `16` extends js.Object
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends pngjsLib.pngjsMod.ColorType
   
   @js.native
   sealed trait `3` extends js.Object
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends pngjsLib.pngjsMod.ColorType
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends pngjsLib.pngjsMod.ColorType
   
   @js.native
   sealed trait `8` extends js.Object

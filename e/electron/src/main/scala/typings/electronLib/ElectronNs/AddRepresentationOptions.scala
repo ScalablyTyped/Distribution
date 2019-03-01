@@ -28,3 +28,22 @@ trait AddRepresentationOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AddRepresentationOptions {
+  @scala.inline
+  def apply(
+    scaleFactor: scala.Double,
+    buffer: nodeLib.Buffer = null,
+    dataURL: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): AddRepresentationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scaleFactor")(scaleFactor)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (dataURL != null) __obj.updateDynamic("dataURL")(dataURL)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AddRepresentationOptions]
+  }
+}
+

@@ -10,3 +10,12 @@ trait TableBorderPropertiesTableBorderFill extends js.Object {
   var kind: googleDashAppsDashScriptLib.Anon_SolidfillSolidFill
 }
 
+object TableBorderPropertiesTableBorderFill {
+  @scala.inline
+  def apply(kind: googleDashAppsDashScriptLib.Anon_SolidfillSolidFill): TableBorderPropertiesTableBorderFill = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[TableBorderPropertiesTableBorderFill]
+  }
+}
+

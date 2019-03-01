@@ -17,3 +17,13 @@ trait MathEvents extends js.Object {
   var styles: js.UndefOr[js.Any] = js.undefined
 }
 
+object MathEvents {
+  @scala.inline
+  def apply(hover: scala.Int | scala.Double = null, styles: js.Any = null): MathEvents = {
+    val __obj = js.Dynamic.literal()
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[MathEvents]
+  }
+}
+

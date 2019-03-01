@@ -10,3 +10,13 @@ trait fragChangedData extends js.Object {
   var id: java.lang.String
 }
 
+object fragChangedData {
+  @scala.inline
+  def apply(frag: Fragment, id: java.lang.String): fragChangedData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frag")(frag)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[fragChangedData]
+  }
+}
+

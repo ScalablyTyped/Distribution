@@ -47,3 +47,40 @@ trait Anon_AllowPopupsForUserEvents extends js.Object {
   val webNotificationsDisabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting
 }
 
+object Anon_AllowPopupsForUserEvents {
+  @scala.inline
+  def apply(
+    allowPopupsForUserEvents: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    cacheEnabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    closeTabsByDoubleClick: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    contextMenuShowEvent: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    homepageOverride: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    imageAnimationBehavior: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    newTabPageOverride: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    newTabPosition: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    openBookmarksInNewTabs: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    openSearchResultsInNewTabs: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    openUrlbarResultsInNewTabs: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    overrideDocumentColors: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    useDocumentFonts: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    webNotificationsDisabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting
+  ): Anon_AllowPopupsForUserEvents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowPopupsForUserEvents")(allowPopupsForUserEvents)
+    __obj.updateDynamic("cacheEnabled")(cacheEnabled)
+    __obj.updateDynamic("closeTabsByDoubleClick")(closeTabsByDoubleClick)
+    __obj.updateDynamic("contextMenuShowEvent")(contextMenuShowEvent)
+    __obj.updateDynamic("homepageOverride")(homepageOverride)
+    __obj.updateDynamic("imageAnimationBehavior")(imageAnimationBehavior)
+    __obj.updateDynamic("newTabPageOverride")(newTabPageOverride)
+    __obj.updateDynamic("newTabPosition")(newTabPosition)
+    __obj.updateDynamic("openBookmarksInNewTabs")(openBookmarksInNewTabs)
+    __obj.updateDynamic("openSearchResultsInNewTabs")(openSearchResultsInNewTabs)
+    __obj.updateDynamic("openUrlbarResultsInNewTabs")(openUrlbarResultsInNewTabs)
+    __obj.updateDynamic("overrideDocumentColors")(overrideDocumentColors)
+    __obj.updateDynamic("useDocumentFonts")(useDocumentFonts)
+    __obj.updateDynamic("webNotificationsDisabled")(webNotificationsDisabled)
+    __obj.asInstanceOf[Anon_AllowPopupsForUserEvents]
+  }
+}
+

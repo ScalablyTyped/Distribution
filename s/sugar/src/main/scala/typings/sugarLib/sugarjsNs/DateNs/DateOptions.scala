@@ -9,3 +9,12 @@ trait DateOptions extends js.Object {
   var newDateInternal: js.Function
 }
 
+object DateOptions {
+  @scala.inline
+  def apply(newDateInternal: js.Function): DateOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newDateInternal")(newDateInternal)
+    __obj.asInstanceOf[DateOptions]
+  }
+}
+

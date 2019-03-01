@@ -39,3 +39,24 @@ trait CertificateSigningRequestSpec extends js.Object {
   val username: java.lang.String
 }
 
+object CertificateSigningRequestSpec {
+  @scala.inline
+  def apply(
+    extra: js.Object,
+    groups: js.Array[java.lang.String],
+    request: java.lang.String,
+    uid: java.lang.String,
+    usages: js.Array[java.lang.String],
+    username: java.lang.String
+  ): CertificateSigningRequestSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extra")(extra)
+    __obj.updateDynamic("groups")(groups)
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("uid")(uid)
+    __obj.updateDynamic("usages")(usages)
+    __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[CertificateSigningRequestSpec]
+  }
+}
+

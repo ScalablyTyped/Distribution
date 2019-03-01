@@ -9,3 +9,12 @@ trait ActionMeta extends js.Object {
   var action: ActionTypes
 }
 
+object ActionMeta {
+  @scala.inline
+  def apply(action: ActionTypes): ActionMeta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.asInstanceOf[ActionMeta]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_Lasso extends js.Object {
   var sendOptions: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Lasso {
+  @scala.inline
+  def apply(lasso: lassoLib.libLassoMod.default = null, sendOptions: js.Any = null): Anon_Lasso = {
+    val __obj = js.Dynamic.literal()
+    if (lasso != null) __obj.updateDynamic("lasso")(lasso)
+    if (sendOptions != null) __obj.updateDynamic("sendOptions")(sendOptions)
+    __obj.asInstanceOf[Anon_Lasso]
+  }
+}
+

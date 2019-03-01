@@ -28,3 +28,22 @@ trait StateChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object StateChangedEventUIParam {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    button: java.lang.String = null,
+    oldPinned: js.UndefOr[scala.Boolean] = js.undefined,
+    oldState: java.lang.String = null,
+    owner: js.Any = null
+  ): StateChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (!js.isUndefined(oldPinned)) __obj.updateDynamic("oldPinned")(oldPinned)
+    if (oldState != null) __obj.updateDynamic("oldState")(oldState)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[StateChangedEventUIParam]
+  }
+}
+

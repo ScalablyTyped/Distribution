@@ -9,3 +9,12 @@ trait CordovaPlugins extends js.Object {
   var socialsharing: cordovaDashPluginDashXDashSocialsharingLib.SocialSharingPluginNs.SocialSharing
 }
 
+object CordovaPlugins {
+  @scala.inline
+  def apply(socialsharing: cordovaDashPluginDashXDashSocialsharingLib.SocialSharingPluginNs.SocialSharing): CordovaPlugins = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("socialsharing")(socialsharing)
+    __obj.asInstanceOf[CordovaPlugins]
+  }
+}
+

@@ -11,3 +11,14 @@ trait PlayerDto extends js.Object {
   var teamId: scala.Double
 }
 
+object PlayerDto {
+  @scala.inline
+  def apply(championId: scala.Double, summonerId: scala.Double, teamId: scala.Double): PlayerDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("championId")(championId)
+    __obj.updateDynamic("summonerId")(summonerId)
+    __obj.updateDynamic("teamId")(teamId)
+    __obj.asInstanceOf[PlayerDto]
+  }
+}
+

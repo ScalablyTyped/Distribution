@@ -13,3 +13,18 @@ trait Params
   var query: js.UndefOr[Query] = js.undefined
 }
 
+object Params {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    paginate: atFeathersjsFeathersLib.atFeathersjsFeathersLibNumbers.`false` | (stdLib.Pick[PaginationOptions, atFeathersjsFeathersLib.atFeathersjsFeathersLibStrings.max]) = null,
+    query: Query = null
+  ): Params = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (paginate != null) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[Params]
+  }
+}
+

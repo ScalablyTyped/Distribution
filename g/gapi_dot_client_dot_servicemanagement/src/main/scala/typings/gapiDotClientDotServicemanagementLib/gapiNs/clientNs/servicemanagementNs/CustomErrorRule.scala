@@ -19,3 +19,13 @@ trait CustomErrorRule extends js.Object {
   var selector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomErrorRule {
+  @scala.inline
+  def apply(isErrorType: js.UndefOr[scala.Boolean] = js.undefined, selector: java.lang.String = null): CustomErrorRule = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isErrorType)) __obj.updateDynamic("isErrorType")(isErrorType)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[CustomErrorRule]
+  }
+}
+

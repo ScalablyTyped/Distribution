@@ -20,3 +20,32 @@ trait ServerOptions extends js.Object {
   ] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    execute: ExecuteFunction = null,
+    keepAlive: scala.Int | scala.Double = null,
+    onConnect: js.Function = null,
+    onDisconnect: js.Function = null,
+    onOperation: js.Function = null,
+    onOperationComplete: js.Function = null,
+    rootValue: js.Any = null,
+    schema: graphqlLib.graphqlMod.GraphQLSchema = null,
+    subscribe: SubscribeFunction = null,
+    validationRules: (js.Array[js.Function1[/* context */ graphqlLib.graphqlMod.ValidationContext, _]]) | js.Array[_] = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (execute != null) __obj.updateDynamic("execute")(execute)
+    if (keepAlive != null) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
+    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
+    if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(onDisconnect)
+    if (onOperation != null) __obj.updateDynamic("onOperation")(onOperation)
+    if (onOperationComplete != null) __obj.updateDynamic("onOperationComplete")(onOperationComplete)
+    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

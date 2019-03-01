@@ -63,3 +63,56 @@ trait PartialLocale extends js.Object {
   var weekdayTwoLetters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object PartialLocale {
+  @scala.inline
+  def apply(
+    dayPeriodAbbreviated: DayPeriod = null,
+    dayPeriodNarrow: DayPeriod = null,
+    dayPeriodWide: DayPeriod = null,
+    eraAbbreviated: js.Tuple2[java.lang.String, java.lang.String] = null,
+    eraNarrow: js.Tuple2[java.lang.String, java.lang.String] = null,
+    eraWide: js.Tuple2[java.lang.String, java.lang.String] = null,
+    longMonthNames: js.Array[java.lang.String] = null,
+    longWeekdayNames: js.Array[java.lang.String] = null,
+    monthLetters: js.Array[java.lang.String] = null,
+    quarterAbbreviations: js.Array[java.lang.String] = null,
+    quarterLetter: java.lang.String = null,
+    quarterWord: java.lang.String = null,
+    shortMonthNames: js.Array[java.lang.String] = null,
+    shortWeekdayNames: js.Array[java.lang.String] = null,
+    standAloneLongMonthNames: js.Array[java.lang.String] = null,
+    standAloneMonthLetters: js.Array[java.lang.String] = null,
+    standAloneQuarterAbbreviations: js.Array[java.lang.String] = null,
+    standAloneQuarterLetter: java.lang.String = null,
+    standAloneQuarterWord: java.lang.String = null,
+    standAloneShortMonthNames: js.Array[java.lang.String] = null,
+    weekdayLetters: js.Array[java.lang.String] = null,
+    weekdayTwoLetters: js.Array[java.lang.String] = null
+  ): PartialLocale = {
+    val __obj = js.Dynamic.literal()
+    if (dayPeriodAbbreviated != null) __obj.updateDynamic("dayPeriodAbbreviated")(dayPeriodAbbreviated)
+    if (dayPeriodNarrow != null) __obj.updateDynamic("dayPeriodNarrow")(dayPeriodNarrow)
+    if (dayPeriodWide != null) __obj.updateDynamic("dayPeriodWide")(dayPeriodWide)
+    if (eraAbbreviated != null) __obj.updateDynamic("eraAbbreviated")(eraAbbreviated)
+    if (eraNarrow != null) __obj.updateDynamic("eraNarrow")(eraNarrow)
+    if (eraWide != null) __obj.updateDynamic("eraWide")(eraWide)
+    if (longMonthNames != null) __obj.updateDynamic("longMonthNames")(longMonthNames)
+    if (longWeekdayNames != null) __obj.updateDynamic("longWeekdayNames")(longWeekdayNames)
+    if (monthLetters != null) __obj.updateDynamic("monthLetters")(monthLetters)
+    if (quarterAbbreviations != null) __obj.updateDynamic("quarterAbbreviations")(quarterAbbreviations)
+    if (quarterLetter != null) __obj.updateDynamic("quarterLetter")(quarterLetter)
+    if (quarterWord != null) __obj.updateDynamic("quarterWord")(quarterWord)
+    if (shortMonthNames != null) __obj.updateDynamic("shortMonthNames")(shortMonthNames)
+    if (shortWeekdayNames != null) __obj.updateDynamic("shortWeekdayNames")(shortWeekdayNames)
+    if (standAloneLongMonthNames != null) __obj.updateDynamic("standAloneLongMonthNames")(standAloneLongMonthNames)
+    if (standAloneMonthLetters != null) __obj.updateDynamic("standAloneMonthLetters")(standAloneMonthLetters)
+    if (standAloneQuarterAbbreviations != null) __obj.updateDynamic("standAloneQuarterAbbreviations")(standAloneQuarterAbbreviations)
+    if (standAloneQuarterLetter != null) __obj.updateDynamic("standAloneQuarterLetter")(standAloneQuarterLetter)
+    if (standAloneQuarterWord != null) __obj.updateDynamic("standAloneQuarterWord")(standAloneQuarterWord)
+    if (standAloneShortMonthNames != null) __obj.updateDynamic("standAloneShortMonthNames")(standAloneShortMonthNames)
+    if (weekdayLetters != null) __obj.updateDynamic("weekdayLetters")(weekdayLetters)
+    if (weekdayTwoLetters != null) __obj.updateDynamic("weekdayTwoLetters")(weekdayTwoLetters)
+    __obj.asInstanceOf[PartialLocale]
+  }
+}
+

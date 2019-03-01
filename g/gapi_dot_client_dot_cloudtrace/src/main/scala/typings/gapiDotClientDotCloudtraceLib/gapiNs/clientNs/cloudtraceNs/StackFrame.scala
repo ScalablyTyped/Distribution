@@ -35,3 +35,26 @@ trait StackFrame extends js.Object {
   var sourceVersion: js.UndefOr[TruncatableString] = js.undefined
 }
 
+object StackFrame {
+  @scala.inline
+  def apply(
+    columnNumber: java.lang.String = null,
+    fileName: TruncatableString = null,
+    functionName: TruncatableString = null,
+    lineNumber: java.lang.String = null,
+    loadModule: Module = null,
+    originalFunctionName: TruncatableString = null,
+    sourceVersion: TruncatableString = null
+  ): StackFrame = {
+    val __obj = js.Dynamic.literal()
+    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
+    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber)
+    if (loadModule != null) __obj.updateDynamic("loadModule")(loadModule)
+    if (originalFunctionName != null) __obj.updateDynamic("originalFunctionName")(originalFunctionName)
+    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion)
+    __obj.asInstanceOf[StackFrame]
+  }
+}
+

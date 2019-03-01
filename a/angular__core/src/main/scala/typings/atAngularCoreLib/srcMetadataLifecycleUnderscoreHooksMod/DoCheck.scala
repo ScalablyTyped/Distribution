@@ -16,3 +16,12 @@ trait DoCheck extends js.Object {
   def ngDoCheck(): scala.Unit
 }
 
+object DoCheck {
+  @scala.inline
+  def apply(ngDoCheck: js.Function0[scala.Unit]): DoCheck = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ngDoCheck")(ngDoCheck)
+    __obj.asInstanceOf[DoCheck]
+  }
+}
+

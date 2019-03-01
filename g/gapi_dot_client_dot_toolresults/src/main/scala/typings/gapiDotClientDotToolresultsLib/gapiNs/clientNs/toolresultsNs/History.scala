@@ -28,3 +28,18 @@ trait History extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object History {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    historyId: java.lang.String = null,
+    name: java.lang.String = null
+  ): History = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[History]
+  }
+}
+

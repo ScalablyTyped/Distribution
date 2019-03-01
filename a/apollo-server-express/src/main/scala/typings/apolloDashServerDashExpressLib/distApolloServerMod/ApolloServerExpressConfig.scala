@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object ApolloServerExpressConfig {
+  @scala.inline
+  def apply(
+    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ContextFunction<ExpressContext, Context> */ js.Any = null
+  ): ApolloServerExpressConfig = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    __obj.asInstanceOf[ApolloServerExpressConfig]
+  }
+}
+

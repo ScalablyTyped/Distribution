@@ -362,3 +362,312 @@ trait Options extends PaneOptions {
   var west__togglerTip_open: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    PaneOptions: PaneOptions = null,
+    center: PaneOptions = null,
+    center__applyDefaultStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    center__buttonClass: java.lang.String = null,
+    center__closable: js.UndefOr[scala.Boolean] = js.undefined,
+    center__contentIgnoreSelector: java.lang.String = null,
+    center__contentSelector: java.lang.String = null,
+    center__customHotkey: java.lang.String | scala.Double = null,
+    center__customHotkeyModifier: java.lang.String = null,
+    center__enableCursorHotkey: js.UndefOr[scala.Boolean] = js.undefined,
+    center__fxName: java.lang.String = null,
+    center__fxSettings: jqueryLib.JQueryAnimationOptions = null,
+    center__fxSpeed: java.lang.String | scala.Double = null,
+    center__hideTogglerOnSlide: js.UndefOr[scala.Boolean] = js.undefined,
+    center__initClosed: js.UndefOr[scala.Boolean] = js.undefined,
+    center__initHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    center__maskIframesOnResize: scala.Boolean | java.lang.String = null,
+    center__maxSize: scala.Int | scala.Double = null,
+    center__minSize: scala.Int | scala.Double = null,
+    center__onclose: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onclose_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onclose_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    center__onhide: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onhide_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onhide_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    center__onopen: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onopen_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onopen_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    center__onresize: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onresize_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onresize_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    center__onshow: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onshow_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    center__onshow_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    center__paneClass: java.lang.String = null,
+    center__paneSelector: java.lang.String = null,
+    center__resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    center__resizerClass: java.lang.String = null,
+    center__resizerCursor: java.lang.String = null,
+    center__resizerDragOpacity: scala.Int | scala.Double = null,
+    center__resizerTip: java.lang.String = null,
+    center__scrollToBookmarkOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    center__showOverflowOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    center__size: java.lang.String | scala.Double = null,
+    center__slidable: js.UndefOr[scala.Boolean] = js.undefined,
+    center__slideTrigger_close: java.lang.String = null,
+    center__slideTrigger_open: java.lang.String = null,
+    center__sliderCursor: java.lang.String = null,
+    center__sliderTip: java.lang.String = null,
+    center__spacing_closed: scala.Int | scala.Double = null,
+    center__spacing_open: scala.Int | scala.Double = null,
+    center__togglerAlign_closed: java.lang.String | scala.Double = null,
+    center__togglerAlign_open: java.lang.String | scala.Double = null,
+    center__togglerClass: java.lang.String = null,
+    center__togglerContent_closed: java.lang.String = null,
+    center__togglerContent_open: java.lang.String = null,
+    center__togglerLength_closed: scala.Double | java.lang.String = null,
+    center__togglerLength_open: scala.Double | java.lang.String = null,
+    center__togglerTip_closed: java.lang.String = null,
+    center__togglerTip_open: java.lang.String = null,
+    defaults: PaneOptions = null,
+    defaults__applyDefaultStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__buttonClass: java.lang.String = null,
+    defaults__closable: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__contentIgnoreSelector: java.lang.String = null,
+    defaults__contentSelector: java.lang.String = null,
+    defaults__customHotkey: java.lang.String | scala.Double = null,
+    defaults__customHotkeyModifier: java.lang.String = null,
+    defaults__enableCursorHotkey: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__fxName: java.lang.String = null,
+    defaults__fxSettings: jqueryLib.JQueryAnimationOptions = null,
+    defaults__fxSpeed: java.lang.String | scala.Double = null,
+    defaults__hideTogglerOnSlide: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__initClosed: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__initHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__maskIframesOnResize: scala.Boolean | java.lang.String = null,
+    defaults__maxSize: scala.Int | scala.Double = null,
+    defaults__minSize: scala.Int | scala.Double = null,
+    defaults__onclose: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onclose_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onclose_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    defaults__onhide: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onhide_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onhide_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    defaults__onopen: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onopen_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onopen_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    defaults__onresize: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onresize_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onresize_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    defaults__onshow: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onshow_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    defaults__onshow_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    defaults__paneClass: java.lang.String = null,
+    defaults__paneSelector: java.lang.String = null,
+    defaults__resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__resizerClass: java.lang.String = null,
+    defaults__resizerCursor: java.lang.String = null,
+    defaults__resizerDragOpacity: scala.Int | scala.Double = null,
+    defaults__resizerTip: java.lang.String = null,
+    defaults__scrollToBookmarkOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__showOverflowOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__size: java.lang.String | scala.Double = null,
+    defaults__slidable: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults__slideTrigger_close: java.lang.String = null,
+    defaults__slideTrigger_open: java.lang.String = null,
+    defaults__sliderCursor: java.lang.String = null,
+    defaults__sliderTip: java.lang.String = null,
+    defaults__spacing_closed: scala.Int | scala.Double = null,
+    defaults__spacing_open: scala.Int | scala.Double = null,
+    defaults__togglerAlign_closed: java.lang.String | scala.Double = null,
+    defaults__togglerAlign_open: java.lang.String | scala.Double = null,
+    defaults__togglerClass: java.lang.String = null,
+    defaults__togglerContent_closed: java.lang.String = null,
+    defaults__togglerContent_open: java.lang.String = null,
+    defaults__togglerLength_closed: scala.Double | java.lang.String = null,
+    defaults__togglerLength_open: scala.Double | java.lang.String = null,
+    defaults__togglerTip_closed: java.lang.String = null,
+    defaults__togglerTip_open: java.lang.String = null,
+    east: PaneOptions = null,
+    east__applyDefaultStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    east__buttonClass: java.lang.String = null,
+    east__closable: js.UndefOr[scala.Boolean] = js.undefined,
+    east__contentIgnoreSelector: java.lang.String = null,
+    east__contentSelector: java.lang.String = null,
+    east__customHotkey: java.lang.String | scala.Double = null,
+    east__customHotkeyModifier: java.lang.String = null,
+    east__enableCursorHotkey: js.UndefOr[scala.Boolean] = js.undefined,
+    east__fxName: java.lang.String = null,
+    east__fxSettings: jqueryLib.JQueryAnimationOptions = null,
+    east__fxSpeed: java.lang.String | scala.Double = null,
+    east__hideTogglerOnSlide: js.UndefOr[scala.Boolean] = js.undefined,
+    east__initClosed: js.UndefOr[scala.Boolean] = js.undefined,
+    east__initHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    east__maskIframesOnResize: scala.Boolean | java.lang.String = null,
+    east__maxSize: scala.Int | scala.Double = null,
+    east__minSize: scala.Int | scala.Double = null,
+    east__onclose: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    east__onclose_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    east__onclose_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    east__onhide: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    east__onhide_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    east__onhide_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    east__onopen: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    east__onopen_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    east__onopen_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    east__onresize: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    east__onresize_end: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null,
+    east__onresize_start: java.lang.String | jqueryDotUiDotLayoutLib.Anon_Layoutname = null,
+    east__onshow: java.lang.String | jqueryDotUiDotLayoutLib.Anon_LayoutnameName = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, PaneOptions)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (!js.isUndefined(center__applyDefaultStyles)) __obj.updateDynamic("center__applyDefaultStyles")(center__applyDefaultStyles)
+    if (center__buttonClass != null) __obj.updateDynamic("center__buttonClass")(center__buttonClass)
+    if (!js.isUndefined(center__closable)) __obj.updateDynamic("center__closable")(center__closable)
+    if (center__contentIgnoreSelector != null) __obj.updateDynamic("center__contentIgnoreSelector")(center__contentIgnoreSelector)
+    if (center__contentSelector != null) __obj.updateDynamic("center__contentSelector")(center__contentSelector)
+    if (center__customHotkey != null) __obj.updateDynamic("center__customHotkey")(center__customHotkey.asInstanceOf[js.Any])
+    if (center__customHotkeyModifier != null) __obj.updateDynamic("center__customHotkeyModifier")(center__customHotkeyModifier)
+    if (!js.isUndefined(center__enableCursorHotkey)) __obj.updateDynamic("center__enableCursorHotkey")(center__enableCursorHotkey)
+    if (center__fxName != null) __obj.updateDynamic("center__fxName")(center__fxName)
+    if (center__fxSettings != null) __obj.updateDynamic("center__fxSettings")(center__fxSettings)
+    if (center__fxSpeed != null) __obj.updateDynamic("center__fxSpeed")(center__fxSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(center__hideTogglerOnSlide)) __obj.updateDynamic("center__hideTogglerOnSlide")(center__hideTogglerOnSlide)
+    if (!js.isUndefined(center__initClosed)) __obj.updateDynamic("center__initClosed")(center__initClosed)
+    if (!js.isUndefined(center__initHidden)) __obj.updateDynamic("center__initHidden")(center__initHidden)
+    if (center__maskIframesOnResize != null) __obj.updateDynamic("center__maskIframesOnResize")(center__maskIframesOnResize.asInstanceOf[js.Any])
+    if (center__maxSize != null) __obj.updateDynamic("center__maxSize")(center__maxSize.asInstanceOf[js.Any])
+    if (center__minSize != null) __obj.updateDynamic("center__minSize")(center__minSize.asInstanceOf[js.Any])
+    if (center__onclose != null) __obj.updateDynamic("center__onclose")(center__onclose.asInstanceOf[js.Any])
+    if (center__onclose_end != null) __obj.updateDynamic("center__onclose_end")(center__onclose_end.asInstanceOf[js.Any])
+    if (center__onclose_start != null) __obj.updateDynamic("center__onclose_start")(center__onclose_start.asInstanceOf[js.Any])
+    if (center__onhide != null) __obj.updateDynamic("center__onhide")(center__onhide.asInstanceOf[js.Any])
+    if (center__onhide_end != null) __obj.updateDynamic("center__onhide_end")(center__onhide_end.asInstanceOf[js.Any])
+    if (center__onhide_start != null) __obj.updateDynamic("center__onhide_start")(center__onhide_start.asInstanceOf[js.Any])
+    if (center__onopen != null) __obj.updateDynamic("center__onopen")(center__onopen.asInstanceOf[js.Any])
+    if (center__onopen_end != null) __obj.updateDynamic("center__onopen_end")(center__onopen_end.asInstanceOf[js.Any])
+    if (center__onopen_start != null) __obj.updateDynamic("center__onopen_start")(center__onopen_start.asInstanceOf[js.Any])
+    if (center__onresize != null) __obj.updateDynamic("center__onresize")(center__onresize.asInstanceOf[js.Any])
+    if (center__onresize_end != null) __obj.updateDynamic("center__onresize_end")(center__onresize_end.asInstanceOf[js.Any])
+    if (center__onresize_start != null) __obj.updateDynamic("center__onresize_start")(center__onresize_start.asInstanceOf[js.Any])
+    if (center__onshow != null) __obj.updateDynamic("center__onshow")(center__onshow.asInstanceOf[js.Any])
+    if (center__onshow_end != null) __obj.updateDynamic("center__onshow_end")(center__onshow_end.asInstanceOf[js.Any])
+    if (center__onshow_start != null) __obj.updateDynamic("center__onshow_start")(center__onshow_start.asInstanceOf[js.Any])
+    if (center__paneClass != null) __obj.updateDynamic("center__paneClass")(center__paneClass)
+    if (center__paneSelector != null) __obj.updateDynamic("center__paneSelector")(center__paneSelector)
+    if (!js.isUndefined(center__resizable)) __obj.updateDynamic("center__resizable")(center__resizable)
+    if (center__resizerClass != null) __obj.updateDynamic("center__resizerClass")(center__resizerClass)
+    if (center__resizerCursor != null) __obj.updateDynamic("center__resizerCursor")(center__resizerCursor)
+    if (center__resizerDragOpacity != null) __obj.updateDynamic("center__resizerDragOpacity")(center__resizerDragOpacity.asInstanceOf[js.Any])
+    if (center__resizerTip != null) __obj.updateDynamic("center__resizerTip")(center__resizerTip)
+    if (!js.isUndefined(center__scrollToBookmarkOnLoad)) __obj.updateDynamic("center__scrollToBookmarkOnLoad")(center__scrollToBookmarkOnLoad)
+    if (!js.isUndefined(center__showOverflowOnHover)) __obj.updateDynamic("center__showOverflowOnHover")(center__showOverflowOnHover)
+    if (center__size != null) __obj.updateDynamic("center__size")(center__size.asInstanceOf[js.Any])
+    if (!js.isUndefined(center__slidable)) __obj.updateDynamic("center__slidable")(center__slidable)
+    if (center__slideTrigger_close != null) __obj.updateDynamic("center__slideTrigger_close")(center__slideTrigger_close)
+    if (center__slideTrigger_open != null) __obj.updateDynamic("center__slideTrigger_open")(center__slideTrigger_open)
+    if (center__sliderCursor != null) __obj.updateDynamic("center__sliderCursor")(center__sliderCursor)
+    if (center__sliderTip != null) __obj.updateDynamic("center__sliderTip")(center__sliderTip)
+    if (center__spacing_closed != null) __obj.updateDynamic("center__spacing_closed")(center__spacing_closed.asInstanceOf[js.Any])
+    if (center__spacing_open != null) __obj.updateDynamic("center__spacing_open")(center__spacing_open.asInstanceOf[js.Any])
+    if (center__togglerAlign_closed != null) __obj.updateDynamic("center__togglerAlign_closed")(center__togglerAlign_closed.asInstanceOf[js.Any])
+    if (center__togglerAlign_open != null) __obj.updateDynamic("center__togglerAlign_open")(center__togglerAlign_open.asInstanceOf[js.Any])
+    if (center__togglerClass != null) __obj.updateDynamic("center__togglerClass")(center__togglerClass)
+    if (center__togglerContent_closed != null) __obj.updateDynamic("center__togglerContent_closed")(center__togglerContent_closed)
+    if (center__togglerContent_open != null) __obj.updateDynamic("center__togglerContent_open")(center__togglerContent_open)
+    if (center__togglerLength_closed != null) __obj.updateDynamic("center__togglerLength_closed")(center__togglerLength_closed.asInstanceOf[js.Any])
+    if (center__togglerLength_open != null) __obj.updateDynamic("center__togglerLength_open")(center__togglerLength_open.asInstanceOf[js.Any])
+    if (center__togglerTip_closed != null) __obj.updateDynamic("center__togglerTip_closed")(center__togglerTip_closed)
+    if (center__togglerTip_open != null) __obj.updateDynamic("center__togglerTip_open")(center__togglerTip_open)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (!js.isUndefined(defaults__applyDefaultStyles)) __obj.updateDynamic("defaults__applyDefaultStyles")(defaults__applyDefaultStyles)
+    if (defaults__buttonClass != null) __obj.updateDynamic("defaults__buttonClass")(defaults__buttonClass)
+    if (!js.isUndefined(defaults__closable)) __obj.updateDynamic("defaults__closable")(defaults__closable)
+    if (defaults__contentIgnoreSelector != null) __obj.updateDynamic("defaults__contentIgnoreSelector")(defaults__contentIgnoreSelector)
+    if (defaults__contentSelector != null) __obj.updateDynamic("defaults__contentSelector")(defaults__contentSelector)
+    if (defaults__customHotkey != null) __obj.updateDynamic("defaults__customHotkey")(defaults__customHotkey.asInstanceOf[js.Any])
+    if (defaults__customHotkeyModifier != null) __obj.updateDynamic("defaults__customHotkeyModifier")(defaults__customHotkeyModifier)
+    if (!js.isUndefined(defaults__enableCursorHotkey)) __obj.updateDynamic("defaults__enableCursorHotkey")(defaults__enableCursorHotkey)
+    if (defaults__fxName != null) __obj.updateDynamic("defaults__fxName")(defaults__fxName)
+    if (defaults__fxSettings != null) __obj.updateDynamic("defaults__fxSettings")(defaults__fxSettings)
+    if (defaults__fxSpeed != null) __obj.updateDynamic("defaults__fxSpeed")(defaults__fxSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults__hideTogglerOnSlide)) __obj.updateDynamic("defaults__hideTogglerOnSlide")(defaults__hideTogglerOnSlide)
+    if (!js.isUndefined(defaults__initClosed)) __obj.updateDynamic("defaults__initClosed")(defaults__initClosed)
+    if (!js.isUndefined(defaults__initHidden)) __obj.updateDynamic("defaults__initHidden")(defaults__initHidden)
+    if (defaults__maskIframesOnResize != null) __obj.updateDynamic("defaults__maskIframesOnResize")(defaults__maskIframesOnResize.asInstanceOf[js.Any])
+    if (defaults__maxSize != null) __obj.updateDynamic("defaults__maxSize")(defaults__maxSize.asInstanceOf[js.Any])
+    if (defaults__minSize != null) __obj.updateDynamic("defaults__minSize")(defaults__minSize.asInstanceOf[js.Any])
+    if (defaults__onclose != null) __obj.updateDynamic("defaults__onclose")(defaults__onclose.asInstanceOf[js.Any])
+    if (defaults__onclose_end != null) __obj.updateDynamic("defaults__onclose_end")(defaults__onclose_end.asInstanceOf[js.Any])
+    if (defaults__onclose_start != null) __obj.updateDynamic("defaults__onclose_start")(defaults__onclose_start.asInstanceOf[js.Any])
+    if (defaults__onhide != null) __obj.updateDynamic("defaults__onhide")(defaults__onhide.asInstanceOf[js.Any])
+    if (defaults__onhide_end != null) __obj.updateDynamic("defaults__onhide_end")(defaults__onhide_end.asInstanceOf[js.Any])
+    if (defaults__onhide_start != null) __obj.updateDynamic("defaults__onhide_start")(defaults__onhide_start.asInstanceOf[js.Any])
+    if (defaults__onopen != null) __obj.updateDynamic("defaults__onopen")(defaults__onopen.asInstanceOf[js.Any])
+    if (defaults__onopen_end != null) __obj.updateDynamic("defaults__onopen_end")(defaults__onopen_end.asInstanceOf[js.Any])
+    if (defaults__onopen_start != null) __obj.updateDynamic("defaults__onopen_start")(defaults__onopen_start.asInstanceOf[js.Any])
+    if (defaults__onresize != null) __obj.updateDynamic("defaults__onresize")(defaults__onresize.asInstanceOf[js.Any])
+    if (defaults__onresize_end != null) __obj.updateDynamic("defaults__onresize_end")(defaults__onresize_end.asInstanceOf[js.Any])
+    if (defaults__onresize_start != null) __obj.updateDynamic("defaults__onresize_start")(defaults__onresize_start.asInstanceOf[js.Any])
+    if (defaults__onshow != null) __obj.updateDynamic("defaults__onshow")(defaults__onshow.asInstanceOf[js.Any])
+    if (defaults__onshow_end != null) __obj.updateDynamic("defaults__onshow_end")(defaults__onshow_end.asInstanceOf[js.Any])
+    if (defaults__onshow_start != null) __obj.updateDynamic("defaults__onshow_start")(defaults__onshow_start.asInstanceOf[js.Any])
+    if (defaults__paneClass != null) __obj.updateDynamic("defaults__paneClass")(defaults__paneClass)
+    if (defaults__paneSelector != null) __obj.updateDynamic("defaults__paneSelector")(defaults__paneSelector)
+    if (!js.isUndefined(defaults__resizable)) __obj.updateDynamic("defaults__resizable")(defaults__resizable)
+    if (defaults__resizerClass != null) __obj.updateDynamic("defaults__resizerClass")(defaults__resizerClass)
+    if (defaults__resizerCursor != null) __obj.updateDynamic("defaults__resizerCursor")(defaults__resizerCursor)
+    if (defaults__resizerDragOpacity != null) __obj.updateDynamic("defaults__resizerDragOpacity")(defaults__resizerDragOpacity.asInstanceOf[js.Any])
+    if (defaults__resizerTip != null) __obj.updateDynamic("defaults__resizerTip")(defaults__resizerTip)
+    if (!js.isUndefined(defaults__scrollToBookmarkOnLoad)) __obj.updateDynamic("defaults__scrollToBookmarkOnLoad")(defaults__scrollToBookmarkOnLoad)
+    if (!js.isUndefined(defaults__showOverflowOnHover)) __obj.updateDynamic("defaults__showOverflowOnHover")(defaults__showOverflowOnHover)
+    if (defaults__size != null) __obj.updateDynamic("defaults__size")(defaults__size.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults__slidable)) __obj.updateDynamic("defaults__slidable")(defaults__slidable)
+    if (defaults__slideTrigger_close != null) __obj.updateDynamic("defaults__slideTrigger_close")(defaults__slideTrigger_close)
+    if (defaults__slideTrigger_open != null) __obj.updateDynamic("defaults__slideTrigger_open")(defaults__slideTrigger_open)
+    if (defaults__sliderCursor != null) __obj.updateDynamic("defaults__sliderCursor")(defaults__sliderCursor)
+    if (defaults__sliderTip != null) __obj.updateDynamic("defaults__sliderTip")(defaults__sliderTip)
+    if (defaults__spacing_closed != null) __obj.updateDynamic("defaults__spacing_closed")(defaults__spacing_closed.asInstanceOf[js.Any])
+    if (defaults__spacing_open != null) __obj.updateDynamic("defaults__spacing_open")(defaults__spacing_open.asInstanceOf[js.Any])
+    if (defaults__togglerAlign_closed != null) __obj.updateDynamic("defaults__togglerAlign_closed")(defaults__togglerAlign_closed.asInstanceOf[js.Any])
+    if (defaults__togglerAlign_open != null) __obj.updateDynamic("defaults__togglerAlign_open")(defaults__togglerAlign_open.asInstanceOf[js.Any])
+    if (defaults__togglerClass != null) __obj.updateDynamic("defaults__togglerClass")(defaults__togglerClass)
+    if (defaults__togglerContent_closed != null) __obj.updateDynamic("defaults__togglerContent_closed")(defaults__togglerContent_closed)
+    if (defaults__togglerContent_open != null) __obj.updateDynamic("defaults__togglerContent_open")(defaults__togglerContent_open)
+    if (defaults__togglerLength_closed != null) __obj.updateDynamic("defaults__togglerLength_closed")(defaults__togglerLength_closed.asInstanceOf[js.Any])
+    if (defaults__togglerLength_open != null) __obj.updateDynamic("defaults__togglerLength_open")(defaults__togglerLength_open.asInstanceOf[js.Any])
+    if (defaults__togglerTip_closed != null) __obj.updateDynamic("defaults__togglerTip_closed")(defaults__togglerTip_closed)
+    if (defaults__togglerTip_open != null) __obj.updateDynamic("defaults__togglerTip_open")(defaults__togglerTip_open)
+    if (east != null) __obj.updateDynamic("east")(east)
+    if (!js.isUndefined(east__applyDefaultStyles)) __obj.updateDynamic("east__applyDefaultStyles")(east__applyDefaultStyles)
+    if (east__buttonClass != null) __obj.updateDynamic("east__buttonClass")(east__buttonClass)
+    if (!js.isUndefined(east__closable)) __obj.updateDynamic("east__closable")(east__closable)
+    if (east__contentIgnoreSelector != null) __obj.updateDynamic("east__contentIgnoreSelector")(east__contentIgnoreSelector)
+    if (east__contentSelector != null) __obj.updateDynamic("east__contentSelector")(east__contentSelector)
+    if (east__customHotkey != null) __obj.updateDynamic("east__customHotkey")(east__customHotkey.asInstanceOf[js.Any])
+    if (east__customHotkeyModifier != null) __obj.updateDynamic("east__customHotkeyModifier")(east__customHotkeyModifier)
+    if (!js.isUndefined(east__enableCursorHotkey)) __obj.updateDynamic("east__enableCursorHotkey")(east__enableCursorHotkey)
+    if (east__fxName != null) __obj.updateDynamic("east__fxName")(east__fxName)
+    if (east__fxSettings != null) __obj.updateDynamic("east__fxSettings")(east__fxSettings)
+    if (east__fxSpeed != null) __obj.updateDynamic("east__fxSpeed")(east__fxSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(east__hideTogglerOnSlide)) __obj.updateDynamic("east__hideTogglerOnSlide")(east__hideTogglerOnSlide)
+    if (!js.isUndefined(east__initClosed)) __obj.updateDynamic("east__initClosed")(east__initClosed)
+    if (!js.isUndefined(east__initHidden)) __obj.updateDynamic("east__initHidden")(east__initHidden)
+    if (east__maskIframesOnResize != null) __obj.updateDynamic("east__maskIframesOnResize")(east__maskIframesOnResize.asInstanceOf[js.Any])
+    if (east__maxSize != null) __obj.updateDynamic("east__maxSize")(east__maxSize.asInstanceOf[js.Any])
+    if (east__minSize != null) __obj.updateDynamic("east__minSize")(east__minSize.asInstanceOf[js.Any])
+    if (east__onclose != null) __obj.updateDynamic("east__onclose")(east__onclose.asInstanceOf[js.Any])
+    if (east__onclose_end != null) __obj.updateDynamic("east__onclose_end")(east__onclose_end.asInstanceOf[js.Any])
+    if (east__onclose_start != null) __obj.updateDynamic("east__onclose_start")(east__onclose_start.asInstanceOf[js.Any])
+    if (east__onhide != null) __obj.updateDynamic("east__onhide")(east__onhide.asInstanceOf[js.Any])
+    if (east__onhide_end != null) __obj.updateDynamic("east__onhide_end")(east__onhide_end.asInstanceOf[js.Any])
+    if (east__onhide_start != null) __obj.updateDynamic("east__onhide_start")(east__onhide_start.asInstanceOf[js.Any])
+    if (east__onopen != null) __obj.updateDynamic("east__onopen")(east__onopen.asInstanceOf[js.Any])
+    if (east__onopen_end != null) __obj.updateDynamic("east__onopen_end")(east__onopen_end.asInstanceOf[js.Any])
+    if (east__onopen_start != null) __obj.updateDynamic("east__onopen_start")(east__onopen_start.asInstanceOf[js.Any])
+    if (east__onresize != null) __obj.updateDynamic("east__onresize")(east__onresize.asInstanceOf[js.Any])
+    if (east__onresize_end != null) __obj.updateDynamic("east__onresize_end")(east__onresize_end.asInstanceOf[js.Any])
+    if (east__onresize_start != null) __obj.updateDynamic("east__onresize_start")(east__onresize_start.asInstanceOf[js.Any])
+    if (east__onshow != null) __obj.updateDynamic("east__onshow")(east__onshow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

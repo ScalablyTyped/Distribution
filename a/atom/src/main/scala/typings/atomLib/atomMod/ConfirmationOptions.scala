@@ -49,3 +49,36 @@ trait ConfirmationOptions extends js.Object {
   ] = js.undefined
 }
 
+object ConfirmationOptions {
+  @scala.inline
+  def apply(
+    buttons: js.Array[java.lang.String] = null,
+    cancelId: scala.Int | scala.Double = null,
+    checkboxChecked: js.UndefOr[scala.Boolean] = js.undefined,
+    checkboxLabel: java.lang.String = null,
+    defaultId: scala.Int | scala.Double = null,
+    detail: java.lang.String = null,
+    icon: js.Object = null,
+    message: java.lang.String = null,
+    noLink: js.UndefOr[scala.Boolean] = js.undefined,
+    normalizeAccessKeys: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    `type`: atomLib.atomLibStrings.none | atomLib.atomLibStrings.info | atomLib.atomLibStrings.error | atomLib.atomLibStrings.question | atomLib.atomLibStrings.warning = null
+  ): ConfirmationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (cancelId != null) __obj.updateDynamic("cancelId")(cancelId.asInstanceOf[js.Any])
+    if (!js.isUndefined(checkboxChecked)) __obj.updateDynamic("checkboxChecked")(checkboxChecked)
+    if (checkboxLabel != null) __obj.updateDynamic("checkboxLabel")(checkboxLabel)
+    if (defaultId != null) __obj.updateDynamic("defaultId")(defaultId.asInstanceOf[js.Any])
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink)
+    if (!js.isUndefined(normalizeAccessKeys)) __obj.updateDynamic("normalizeAccessKeys")(normalizeAccessKeys)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConfirmationOptions]
+  }
+}
+

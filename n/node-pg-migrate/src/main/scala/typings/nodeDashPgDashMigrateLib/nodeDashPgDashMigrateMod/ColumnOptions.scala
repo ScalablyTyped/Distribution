@@ -15,3 +15,26 @@ trait ColumnOptions extends js.Object {
   var using: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColumnOptions {
+  @scala.inline
+  def apply(
+    allowNull: js.UndefOr[scala.Boolean] = js.undefined,
+    collation: java.lang.String = null,
+    comment: java.lang.String = null,
+    default: Value = null,
+    notNull: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    using: java.lang.String = null
+  ): ColumnOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull)
+    if (collation != null) __obj.updateDynamic("collation")(collation)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (using != null) __obj.updateDynamic("using")(using)
+    __obj.asInstanceOf[ColumnOptions]
+  }
+}
+

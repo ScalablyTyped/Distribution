@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object bootstrapDashGrowlDashIfightcrimeLibStrings {
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs.OffsetPositionType
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs.AlignType
   
   @js.native
-  sealed trait danger extends js.Object
+  sealed trait danger
+    extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs._AlertType
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs._AlertType
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs.AlignType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs.AlignType
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs._AlertType
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs.OffsetPositionType
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs._AlertType
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

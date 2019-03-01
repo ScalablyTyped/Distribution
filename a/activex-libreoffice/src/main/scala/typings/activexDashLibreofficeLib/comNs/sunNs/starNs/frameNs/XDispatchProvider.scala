@@ -33,3 +33,30 @@ trait XDispatchProvider
   def queryDispatches(Requests: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor]): activexDashInteropLib.SafeArray[XDispatch]
 }
 
+object XDispatchProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryDispatch: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      java.lang.String, 
+      scala.Double, 
+      XDispatch
+    ],
+    queryDispatches: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
+      activexDashInteropLib.SafeArray[XDispatch]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDispatchProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryDispatch")(queryDispatch)
+    __obj.updateDynamic("queryDispatches")(queryDispatches)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDispatchProvider]
+  }
+}
+

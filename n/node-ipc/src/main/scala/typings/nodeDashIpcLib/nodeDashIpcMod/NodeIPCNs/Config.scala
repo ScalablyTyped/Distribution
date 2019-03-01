@@ -115,3 +115,50 @@ trait Config extends js.Object {
   def logger(msg: java.lang.String): scala.Unit
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    appspace: java.lang.String,
+    encoding: nodeDashIpcLib.nodeDashIpcLibStrings.ascii | nodeDashIpcLib.nodeDashIpcLibStrings.utf8 | nodeDashIpcLib.nodeDashIpcLibStrings.utf16le | nodeDashIpcLib.nodeDashIpcLibStrings.ucs2 | nodeDashIpcLib.nodeDashIpcLibStrings.base64 | nodeDashIpcLib.nodeDashIpcLibStrings.hex,
+    id: java.lang.String,
+    interfaces: nodeDashIpcLib.Anon_Family,
+    logDepth: scala.Double,
+    logInColor: scala.Boolean,
+    logger: js.Function1[java.lang.String, scala.Unit],
+    maxConnections: scala.Double,
+    maxRetries: scala.Boolean,
+    networkHost: java.lang.String,
+    networkPort: scala.Double,
+    rawBuffer: scala.Boolean,
+    retry: scala.Double,
+    silent: scala.Boolean,
+    socketRoot: java.lang.String,
+    stopRetrying: scala.Boolean,
+    sync: scala.Boolean,
+    tls: nodeDashIpcLib.Anon_Private,
+    unlink: scala.Boolean
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appspace")(appspace)
+    __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("interfaces")(interfaces)
+    __obj.updateDynamic("logDepth")(logDepth)
+    __obj.updateDynamic("logInColor")(logInColor)
+    __obj.updateDynamic("logger")(logger)
+    __obj.updateDynamic("maxConnections")(maxConnections)
+    __obj.updateDynamic("maxRetries")(maxRetries)
+    __obj.updateDynamic("networkHost")(networkHost)
+    __obj.updateDynamic("networkPort")(networkPort)
+    __obj.updateDynamic("rawBuffer")(rawBuffer)
+    __obj.updateDynamic("retry")(retry)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("socketRoot")(socketRoot)
+    __obj.updateDynamic("stopRetrying")(stopRetrying)
+    __obj.updateDynamic("sync")(sync)
+    __obj.updateDynamic("tls")(tls)
+    __obj.updateDynamic("unlink")(unlink)
+    __obj.asInstanceOf[Config]
+  }
+}
+

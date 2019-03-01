@@ -23,3 +23,18 @@ trait PreviewImageOptions extends js.Object {
   var success: js.UndefOr[js.Function1[/* param0 */ js.Any, _]] = js.undefined
 }
 
+object PreviewImageOptions {
+  @scala.inline
+  def apply(
+    error: js.Function1[/* param0 */ PreviewImageError, _] = null,
+    image: titaniumLib.TitaniumNs.Blob = null,
+    success: js.Function1[/* param0 */ js.Any, _] = null
+  ): PreviewImageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[PreviewImageOptions]
+  }
+}
+

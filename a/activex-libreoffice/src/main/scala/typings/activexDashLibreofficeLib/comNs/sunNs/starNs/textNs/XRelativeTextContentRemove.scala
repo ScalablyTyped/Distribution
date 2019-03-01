@@ -25,3 +25,22 @@ trait XRelativeTextContentRemove
   def removeTextContentBefore(xSuccessor: XTextContent): scala.Unit
 }
 
+object XRelativeTextContentRemove {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTextContentAfter: js.Function1[XTextContent, scala.Unit],
+    removeTextContentBefore: js.Function1[XTextContent, scala.Unit]
+  ): XRelativeTextContentRemove = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeTextContentAfter")(removeTextContentAfter)
+    __obj.updateDynamic("removeTextContentBefore")(removeTextContentBefore)
+    __obj.asInstanceOf[XRelativeTextContentRemove]
+  }
+}
+

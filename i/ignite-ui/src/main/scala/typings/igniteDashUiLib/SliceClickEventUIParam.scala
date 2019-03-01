@@ -16,3 +16,13 @@ trait SliceClickEventUIParam extends js.Object {
   var slice: js.UndefOr[js.Any] = js.undefined
 }
 
+object SliceClickEventUIParam {
+  @scala.inline
+  def apply(chart: js.Any = null, slice: js.Any = null): SliceClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (chart != null) __obj.updateDynamic("chart")(chart)
+    if (slice != null) __obj.updateDynamic("slice")(slice)
+    __obj.asInstanceOf[SliceClickEventUIParam]
+  }
+}
+

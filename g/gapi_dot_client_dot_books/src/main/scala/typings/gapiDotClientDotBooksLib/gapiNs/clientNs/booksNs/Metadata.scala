@@ -12,3 +12,13 @@ trait Metadata extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Metadata {
+  @scala.inline
+  def apply(items: js.Array[gapiDotClientDotBooksLib.Anon_Downloadurl] = null, kind: java.lang.String = null): Metadata = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[Metadata]
+  }
+}
+

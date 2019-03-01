@@ -21,3 +21,13 @@ trait NamedArgument extends js.Object {
   var Value: js.Any
 }
 
+object NamedArgument {
+  @scala.inline
+  def apply(Name: java.lang.String, Value: js.Any): NamedArgument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[NamedArgument]
+  }
+}
+

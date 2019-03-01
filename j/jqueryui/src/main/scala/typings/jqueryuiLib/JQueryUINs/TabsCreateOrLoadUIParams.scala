@@ -10,3 +10,13 @@ trait TabsCreateOrLoadUIParams extends js.Object {
   var tab: jqueryuiLib.JQuery
 }
 
+object TabsCreateOrLoadUIParams {
+  @scala.inline
+  def apply(panel: jqueryuiLib.JQuery, tab: jqueryuiLib.JQuery): TabsCreateOrLoadUIParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("panel")(panel)
+    __obj.updateDynamic("tab")(tab)
+    __obj.asInstanceOf[TabsCreateOrLoadUIParams]
+  }
+}
+

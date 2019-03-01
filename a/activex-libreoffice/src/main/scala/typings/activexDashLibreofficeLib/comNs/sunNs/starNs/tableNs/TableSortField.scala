@@ -40,3 +40,24 @@ trait TableSortField extends js.Object {
   var IsCaseSensitive: scala.Boolean
 }
 
+object TableSortField {
+  @scala.inline
+  def apply(
+    CollatorAlgorithm: java.lang.String,
+    CollatorLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Field: scala.Double,
+    FieldType: TableSortFieldType,
+    IsAscending: scala.Boolean,
+    IsCaseSensitive: scala.Boolean
+  ): TableSortField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CollatorAlgorithm")(CollatorAlgorithm)
+    __obj.updateDynamic("CollatorLocale")(CollatorLocale)
+    __obj.updateDynamic("Field")(Field)
+    __obj.updateDynamic("FieldType")(FieldType)
+    __obj.updateDynamic("IsAscending")(IsAscending)
+    __obj.updateDynamic("IsCaseSensitive")(IsCaseSensitive)
+    __obj.asInstanceOf[TableSortField]
+  }
+}
+

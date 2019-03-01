@@ -52,3 +52,44 @@ trait InstanceGroupManager extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstanceGroupManager {
+  @scala.inline
+  def apply(
+    baseInstanceName: java.lang.String = null,
+    creationTimestamp: java.lang.String = null,
+    currentActions: InstanceGroupManagerActionsSummary = null,
+    description: java.lang.String = null,
+    fingerprint: java.lang.String = null,
+    id: java.lang.String = null,
+    instanceGroup: java.lang.String = null,
+    instanceTemplate: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    namedPorts: js.Array[NamedPort] = null,
+    region: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    targetPools: js.Array[java.lang.String] = null,
+    targetSize: scala.Int | scala.Double = null,
+    zone: java.lang.String = null
+  ): InstanceGroupManager = {
+    val __obj = js.Dynamic.literal()
+    if (baseInstanceName != null) __obj.updateDynamic("baseInstanceName")(baseInstanceName)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (currentActions != null) __obj.updateDynamic("currentActions")(currentActions)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (instanceGroup != null) __obj.updateDynamic("instanceGroup")(instanceGroup)
+    if (instanceTemplate != null) __obj.updateDynamic("instanceTemplate")(instanceTemplate)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (namedPorts != null) __obj.updateDynamic("namedPorts")(namedPorts)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (targetPools != null) __obj.updateDynamic("targetPools")(targetPools)
+    if (targetSize != null) __obj.updateDynamic("targetSize")(targetSize.asInstanceOf[js.Any])
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[InstanceGroupManager]
+  }
+}
+

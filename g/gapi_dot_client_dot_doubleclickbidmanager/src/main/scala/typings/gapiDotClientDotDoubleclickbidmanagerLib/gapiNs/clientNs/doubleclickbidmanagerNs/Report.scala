@@ -14,3 +14,14 @@ trait Report extends js.Object {
   var params: js.UndefOr[Parameters] = js.undefined
 }
 
+object Report {
+  @scala.inline
+  def apply(key: ReportKey = null, metadata: ReportMetadata = null, params: Parameters = null): Report = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[Report]
+  }
+}
+

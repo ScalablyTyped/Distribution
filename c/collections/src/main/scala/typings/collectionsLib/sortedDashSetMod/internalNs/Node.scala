@@ -28,3 +28,40 @@ trait Node[T] extends js.Object {
   def touch(plus: js.Any*): scala.Unit
 }
 
+object Node {
+  @scala.inline
+  def apply[T](
+    checkIntegrity: js.Function1[/* repeated */ js.Any, scala.Double],
+    getNext: js.Function1[/* repeated */ js.Any, js.UndefOr[Node[T]]],
+    getPrevious: js.Function1[/* repeated */ js.Any, js.UndefOr[Node[T]]],
+    log: js.Function4[js.Any, js.Any, js.Any, js.Any, js.Any],
+    reduce: js.Function6[
+      js.Function4[
+        /* result */ js.UndefOr[js.Any], 
+        /* val */ js.UndefOr[js.Any], 
+        /* key */ js.UndefOr[js.Any], 
+        /* collection */ js.UndefOr[js.Any], 
+        _
+      ], 
+      js.Any, 
+      scala.Double, 
+      js.Any, 
+      js.Any, 
+      scala.Double, 
+      js.Any
+    ],
+    summary: js.Function1[/* repeated */ js.Any, java.lang.String],
+    touch: js.Function1[/* repeated */ js.Any, scala.Unit]
+  ): Node[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkIntegrity")(checkIntegrity)
+    __obj.updateDynamic("getNext")(getNext)
+    __obj.updateDynamic("getPrevious")(getPrevious)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("reduce")(reduce)
+    __obj.updateDynamic("summary")(summary)
+    __obj.updateDynamic("touch")(touch)
+    __obj.asInstanceOf[Node[T]]
+  }
+}
+

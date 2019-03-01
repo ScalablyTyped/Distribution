@@ -27,3 +27,18 @@ trait RelationshipInterest extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RelationshipInterest {
+  @scala.inline
+  def apply(
+    formattedValue: java.lang.String = null,
+    metadata: FieldMetadata = null,
+    value: java.lang.String = null
+  ): RelationshipInterest = {
+    val __obj = js.Dynamic.literal()
+    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[RelationshipInterest]
+  }
+}
+

@@ -12,3 +12,20 @@ trait FetchListParameters[D] extends js.Object {
   var sortCriteria: js.UndefOr[js.Array[SortCriterion[D]]] = js.undefined
 }
 
+object FetchListParameters {
+  @scala.inline
+  def apply[D](
+    size: scala.Double,
+    attributes: js.Array[java.lang.String | FetchAttribute] = null,
+    filterCriterion: FilterOperator[D] = null,
+    sortCriteria: js.Array[SortCriterion[D]] = null
+  ): FetchListParameters[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("size")(size)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (filterCriterion != null) __obj.updateDynamic("filterCriterion")(filterCriterion)
+    if (sortCriteria != null) __obj.updateDynamic("sortCriteria")(sortCriteria)
+    __obj.asInstanceOf[FetchListParameters[D]]
+  }
+}
+

@@ -16,3 +16,13 @@ trait ASPxClientProcessingModeCancelEventArgs extends ASPxClientProcessingModeEv
   var cancel: scala.Boolean
 }
 
+object ASPxClientProcessingModeCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, processOnServer: scala.Boolean): ASPxClientProcessingModeCancelEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[ASPxClientProcessingModeCancelEventArgs]
+  }
+}
+

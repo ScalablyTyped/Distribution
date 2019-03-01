@@ -10,3 +10,13 @@ trait ConnectError
   var connectArgs: stompitLib.libConnectMod.connectNs.ConnectOptions
 }
 
+object ConnectError {
+  @scala.inline
+  def apply(connectArgs: stompitLib.libConnectMod.connectNs.ConnectOptions, stack: java.lang.String = null): ConnectError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connectArgs")(connectArgs)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ConnectError]
+  }
+}
+

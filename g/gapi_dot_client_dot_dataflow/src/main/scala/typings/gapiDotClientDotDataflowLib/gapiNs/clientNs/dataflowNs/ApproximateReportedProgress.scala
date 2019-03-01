@@ -52,3 +52,20 @@ trait ApproximateReportedProgress extends js.Object {
   var remainingParallelism: js.UndefOr[ReportedParallelism] = js.undefined
 }
 
+object ApproximateReportedProgress {
+  @scala.inline
+  def apply(
+    consumedParallelism: ReportedParallelism = null,
+    fractionConsumed: scala.Int | scala.Double = null,
+    position: Position = null,
+    remainingParallelism: ReportedParallelism = null
+  ): ApproximateReportedProgress = {
+    val __obj = js.Dynamic.literal()
+    if (consumedParallelism != null) __obj.updateDynamic("consumedParallelism")(consumedParallelism)
+    if (fractionConsumed != null) __obj.updateDynamic("fractionConsumed")(fractionConsumed.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (remainingParallelism != null) __obj.updateDynamic("remainingParallelism")(remainingParallelism)
+    __obj.asInstanceOf[ApproximateReportedProgress]
+  }
+}
+

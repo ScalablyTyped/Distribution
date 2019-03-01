@@ -16,3 +16,13 @@ trait MSDOSFormat extends js.Object {
   var time: scala.Double
 }
 
+object MSDOSFormat {
+  @scala.inline
+  def apply(date: scala.Double, time: scala.Double): MSDOSFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[MSDOSFormat]
+  }
+}
+

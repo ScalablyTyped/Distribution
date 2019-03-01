@@ -27,3 +27,23 @@ trait IgGridRestSettingsCreate
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridRestSettingsCreate {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridRestSettingsCreate
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    batch: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    url: java.lang.String = null
+  ): IgGridRestSettingsCreate = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[IgGridRestSettingsCreate]
+  }
+}
+

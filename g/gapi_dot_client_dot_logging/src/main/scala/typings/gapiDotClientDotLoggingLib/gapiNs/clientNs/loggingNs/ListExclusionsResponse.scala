@@ -15,3 +15,13 @@ trait ListExclusionsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListExclusionsResponse {
+  @scala.inline
+  def apply(exclusions: js.Array[LogExclusion] = null, nextPageToken: java.lang.String = null): ListExclusionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListExclusionsResponse]
+  }
+}
+

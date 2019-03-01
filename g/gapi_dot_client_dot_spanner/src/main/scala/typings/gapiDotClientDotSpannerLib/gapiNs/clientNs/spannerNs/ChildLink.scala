@@ -28,3 +28,18 @@ trait ChildLink extends js.Object {
   var variable: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChildLink {
+  @scala.inline
+  def apply(
+    childIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    variable: java.lang.String = null
+  ): ChildLink = {
+    val __obj = js.Dynamic.literal()
+    if (childIndex != null) __obj.updateDynamic("childIndex")(childIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (variable != null) __obj.updateDynamic("variable")(variable)
+    __obj.asInstanceOf[ChildLink]
+  }
+}
+

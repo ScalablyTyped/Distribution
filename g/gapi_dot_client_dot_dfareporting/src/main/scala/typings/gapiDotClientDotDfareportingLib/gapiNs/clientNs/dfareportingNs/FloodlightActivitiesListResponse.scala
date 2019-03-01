@@ -14,3 +14,18 @@ trait FloodlightActivitiesListResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FloodlightActivitiesListResponse {
+  @scala.inline
+  def apply(
+    floodlightActivities: js.Array[FloodlightActivity] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null
+  ): FloodlightActivitiesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (floodlightActivities != null) __obj.updateDynamic("floodlightActivities")(floodlightActivities)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[FloodlightActivitiesListResponse]
+  }
+}
+

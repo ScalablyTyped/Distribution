@@ -35,3 +35,32 @@ trait IterResult[M /* <: rruleLib.distEsmSrcTypesMod.QueryMethodTypes */] extend
   def getValue(): rruleLib.distEsmSrcTypesMod.IterResultType[M]
 }
 
+object IterResult {
+  @scala.inline
+  def apply[M /* <: rruleLib.distEsmSrcTypesMod.QueryMethodTypes */](
+    _result: js.Array[stdLib.Date],
+    accept: js.Function1[stdLib.Date, scala.Boolean],
+    add: js.Function1[stdLib.Date, scala.Boolean],
+    args: stdLib.Partial[IterArgs],
+    clone: js.Function0[IterResult[M]],
+    getValue: js.Function0[rruleLib.distEsmSrcTypesMod.IterResultType[M]],
+    method: M,
+    total: scala.Double,
+    maxDate: stdLib.Date = null,
+    minDate: stdLib.Date = null
+  ): IterResult[M] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_result")(_result)
+    __obj.updateDynamic("accept")(accept)
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    __obj.updateDynamic("total")(total)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    __obj.asInstanceOf[IterResult[M]]
+  }
+}
+

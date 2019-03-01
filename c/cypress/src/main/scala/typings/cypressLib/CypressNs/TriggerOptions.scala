@@ -26,3 +26,22 @@ trait TriggerOptions
   var cancable: scala.Boolean
 }
 
+object TriggerOptions {
+  @scala.inline
+  def apply(
+    bubbles: scala.Boolean,
+    cancable: scala.Boolean,
+    force: scala.Boolean,
+    log: scala.Boolean,
+    timeout: scala.Double
+  ): TriggerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bubbles")(bubbles)
+    __obj.updateDynamic("cancable")(cancable)
+    __obj.updateDynamic("force")(force)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[TriggerOptions]
+  }
+}
+

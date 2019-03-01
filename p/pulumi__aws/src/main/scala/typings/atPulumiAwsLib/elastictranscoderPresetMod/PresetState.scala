@@ -50,3 +50,38 @@ trait PresetState extends js.Object {
   ] = js.undefined
 }
 
+object PresetState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    audio: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AudioPackingModeBitRate] = null,
+    audioCodecOptions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BitDepthBitOrder] = null,
+    container: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    thumbnails: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AspectRatioFormat] = null,
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    video: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AspectRatioBitRateCodec] = null,
+    videoCodecOptions: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    videoWatermarks: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HorizontalAlignHorizontalOffset]
+      ]
+    ] = null
+  ): PresetState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
+    if (audioCodecOptions != null) __obj.updateDynamic("audioCodecOptions")(audioCodecOptions.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
+    if (videoCodecOptions != null) __obj.updateDynamic("videoCodecOptions")(videoCodecOptions.asInstanceOf[js.Any])
+    if (videoWatermarks != null) __obj.updateDynamic("videoWatermarks")(videoWatermarks.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PresetState]
+  }
+}
+

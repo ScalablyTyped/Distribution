@@ -17,3 +17,16 @@ trait IModalService extends js.Object {
   def open(options: IModalSettings): IModalInstanceService
 }
 
+object IModalService {
+  @scala.inline
+  def apply(
+    getPromiseChain: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
+    open: js.Function1[IModalSettings, IModalInstanceService]
+  ): IModalService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getPromiseChain")(getPromiseChain)
+    __obj.updateDynamic("open")(open)
+    __obj.asInstanceOf[IModalService]
+  }
+}
+

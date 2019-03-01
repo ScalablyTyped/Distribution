@@ -44,3 +44,30 @@ trait Binding extends js.Object {
   def unbind(): scala.Unit
 }
 
+object Binding {
+  @scala.inline
+  def apply(
+    bind: js.Function1[Scope, scala.Unit],
+    isBound: scala.Boolean,
+    source: Scope,
+    unbind: js.Function0[scala.Unit],
+    callSource: js.Function1[/* event */ js.Any, _] = null,
+    mode: bindingMode = null,
+    sourceExpression: Expression = null,
+    updateSource: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    updateTarget: js.Function1[/* value */ js.Any, scala.Unit] = null
+  ): Binding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bind")(bind)
+    __obj.updateDynamic("isBound")(isBound)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("unbind")(unbind)
+    if (callSource != null) __obj.updateDynamic("callSource")(callSource)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (sourceExpression != null) __obj.updateDynamic("sourceExpression")(sourceExpression)
+    if (updateSource != null) __obj.updateDynamic("updateSource")(updateSource)
+    if (updateTarget != null) __obj.updateDynamic("updateTarget")(updateTarget)
+    __obj.asInstanceOf[Binding]
+  }
+}
+

@@ -61,3 +61,52 @@ trait XOpenCLSelection
   def setFormulaCellNumberLimit(number: scala.Double): scala.Unit
 }
 
+object XOpenCLSelection {
+  @scala.inline
+  def apply(
+    DeviceID: scala.Double,
+    FormulaCellNumberLimit: scala.Double,
+    OpenCLPlatforms: activexDashInteropLib.SafeArray[OpenCLPlatform],
+    PlatformID: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    disableAutomaticDeviceSelection: js.Function0[scala.Unit],
+    disableOpcodeSubsetTest: js.Function0[scala.Unit],
+    enableAutomaticDeviceSelection: js.Function1[scala.Boolean, scala.Unit],
+    enableOpcodeSubsetTest: js.Function0[scala.Unit],
+    enableOpenCL: js.Function1[scala.Boolean, scala.Unit],
+    getDeviceID: js.Function0[scala.Double],
+    getFormulaCellNumberLimit: js.Function0[scala.Double],
+    getOpenCLPlatforms: js.Function0[activexDashInteropLib.SafeArray[OpenCLPlatform]],
+    getPlatformID: js.Function0[scala.Double],
+    isOpcodeSubsetTested: js.Function0[scala.Boolean],
+    isOpenCLEnabled: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    selectOpenCLDevice: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setFormulaCellNumberLimit: js.Function1[scala.Double, scala.Unit]
+  ): XOpenCLSelection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DeviceID")(DeviceID)
+    __obj.updateDynamic("FormulaCellNumberLimit")(FormulaCellNumberLimit)
+    __obj.updateDynamic("OpenCLPlatforms")(OpenCLPlatforms)
+    __obj.updateDynamic("PlatformID")(PlatformID)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("disableAutomaticDeviceSelection")(disableAutomaticDeviceSelection)
+    __obj.updateDynamic("disableOpcodeSubsetTest")(disableOpcodeSubsetTest)
+    __obj.updateDynamic("enableAutomaticDeviceSelection")(enableAutomaticDeviceSelection)
+    __obj.updateDynamic("enableOpcodeSubsetTest")(enableOpcodeSubsetTest)
+    __obj.updateDynamic("enableOpenCL")(enableOpenCL)
+    __obj.updateDynamic("getDeviceID")(getDeviceID)
+    __obj.updateDynamic("getFormulaCellNumberLimit")(getFormulaCellNumberLimit)
+    __obj.updateDynamic("getOpenCLPlatforms")(getOpenCLPlatforms)
+    __obj.updateDynamic("getPlatformID")(getPlatformID)
+    __obj.updateDynamic("isOpcodeSubsetTested")(isOpcodeSubsetTested)
+    __obj.updateDynamic("isOpenCLEnabled")(isOpenCLEnabled)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("selectOpenCLDevice")(selectOpenCLDevice)
+    __obj.updateDynamic("setFormulaCellNumberLimit")(setFormulaCellNumberLimit)
+    __obj.asInstanceOf[XOpenCLSelection]
+  }
+}
+

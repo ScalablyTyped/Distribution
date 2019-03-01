@@ -21,3 +21,22 @@ trait ScanOptions
   var `type`: js.UndefOr[scanType] = js.undefined
 }
 
+object ScanOptions {
+  @scala.inline
+  def apply(
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    hideAlbum: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function1[/* res */ ScanCodeData, scala.Unit] = null,
+    `type`: scanType = null
+  ): ScanOptions = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(hideAlbum)) __obj.updateDynamic("hideAlbum")(hideAlbum)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ScanOptions]
+  }
+}
+

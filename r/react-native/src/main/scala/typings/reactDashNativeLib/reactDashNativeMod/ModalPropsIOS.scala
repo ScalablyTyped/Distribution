@@ -32,3 +32,22 @@ trait ModalPropsIOS extends js.Object {
   ] = js.undefined
 }
 
+object ModalPropsIOS {
+  @scala.inline
+  def apply(
+    onDismiss: js.Function0[scala.Unit] = null,
+    onOrientationChange: js.Function1[/* event */ NativeSyntheticEvent[_], scala.Unit] = null,
+    presentationStyle: reactDashNativeLib.reactDashNativeLibStrings.fullScreen | reactDashNativeLib.reactDashNativeLibStrings.pageSheet | reactDashNativeLib.reactDashNativeLibStrings.formSheet | reactDashNativeLib.reactDashNativeLibStrings.overFullScreen = null,
+    supportedOrientations: js.Array[
+      reactDashNativeLib.reactDashNativeLibStrings.portrait | reactDashNativeLib.reactDashNativeLibStrings.`portrait-upside-down` | reactDashNativeLib.reactDashNativeLibStrings.landscape | reactDashNativeLib.reactDashNativeLibStrings.`landscape-left` | reactDashNativeLib.reactDashNativeLibStrings.`landscape-right`
+    ] = null
+  ): ModalPropsIOS = {
+    val __obj = js.Dynamic.literal()
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(onOrientationChange)
+    if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
+    if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations)
+    __obj.asInstanceOf[ModalPropsIOS]
+  }
+}
+

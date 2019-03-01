@@ -20,3 +20,18 @@ trait ContextMenuSettingsCustomMenuItem extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContextMenuSettingsCustomMenuItem {
+  @scala.inline
+  def apply(
+    target: Target | java.lang.String = null,
+    template: java.lang.String = null,
+    text: java.lang.String = null
+  ): ContextMenuSettingsCustomMenuItem = {
+    val __obj = js.Dynamic.literal()
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ContextMenuSettingsCustomMenuItem]
+  }
+}
+

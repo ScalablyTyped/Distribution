@@ -25,3 +25,22 @@ trait LoginRequest extends js.Object {
   var version: java.lang.String
 }
 
+object LoginRequest {
+  @scala.inline
+  def apply(
+    agent: java.lang.String,
+    interactive: scala.Boolean,
+    rememberLogin: scala.Boolean,
+    url: java.lang.String,
+    version: java.lang.String
+  ): LoginRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("agent")(agent)
+    __obj.updateDynamic("interactive")(interactive)
+    __obj.updateDynamic("rememberLogin")(rememberLogin)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[LoginRequest]
+  }
+}
+

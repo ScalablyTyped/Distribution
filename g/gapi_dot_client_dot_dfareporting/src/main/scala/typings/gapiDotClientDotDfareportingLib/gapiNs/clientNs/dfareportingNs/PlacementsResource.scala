@@ -20,3 +20,42 @@ trait PlacementsResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Placement]
 }
 
+object PlacementsResource {
+  @scala.inline
+  def apply(
+    generatetags: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlacementsGenerateTagsResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Placement]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Placement]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AdvertiserIdsAltArchivedCampaignIds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlacementsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Placement]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Placement]
+    ]
+  ): PlacementsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("generatetags")(generatetags)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[PlacementsResource]
+  }
+}
+

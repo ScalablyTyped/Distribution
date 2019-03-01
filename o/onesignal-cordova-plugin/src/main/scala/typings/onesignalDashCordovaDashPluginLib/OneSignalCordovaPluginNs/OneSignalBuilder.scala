@@ -13,3 +13,22 @@ trait OneSignalBuilder extends js.Object {
   def inFocusDisplaying(displayOption: OSDisplayType): OneSignalBuilder
 }
 
+object OneSignalBuilder {
+  @scala.inline
+  def apply(
+    endInit: js.Function0[scala.Unit],
+    handleNotificationOpened: js.Function1[js.Function1[/* json */ OSNotificationOpenedResult, scala.Unit], OneSignalBuilder],
+    handleNotificationReceived: js.Function1[js.Function1[/* json */ OSNotification, scala.Unit], OneSignalBuilder],
+    iOSSettings: js.Function1[onesignalDashCordovaDashPluginLib.Anon_KOSSettingsKeyAutoPrompt, OneSignalBuilder],
+    inFocusDisplaying: js.Function1[OSDisplayType, OneSignalBuilder]
+  ): OneSignalBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endInit")(endInit)
+    __obj.updateDynamic("handleNotificationOpened")(handleNotificationOpened)
+    __obj.updateDynamic("handleNotificationReceived")(handleNotificationReceived)
+    __obj.updateDynamic("iOSSettings")(iOSSettings)
+    __obj.updateDynamic("inFocusDisplaying")(inFocusDisplaying)
+    __obj.asInstanceOf[OneSignalBuilder]
+  }
+}
+

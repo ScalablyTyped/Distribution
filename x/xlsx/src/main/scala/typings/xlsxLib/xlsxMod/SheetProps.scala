@@ -14,3 +14,16 @@ trait SheetProps extends js.Object {
   ] = js.undefined
 }
 
+object SheetProps {
+  @scala.inline
+  def apply(
+    CodeName: java.lang.String = null,
+    Hidden: xlsxLib.xlsxLibNumbers.`0` | xlsxLib.xlsxLibNumbers.`1` | xlsxLib.xlsxLibNumbers.`2` = null
+  ): SheetProps = {
+    val __obj = js.Dynamic.literal()
+    if (CodeName != null) __obj.updateDynamic("CodeName")(CodeName)
+    if (Hidden != null) __obj.updateDynamic("Hidden")(Hidden.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SheetProps]
+  }
+}
+

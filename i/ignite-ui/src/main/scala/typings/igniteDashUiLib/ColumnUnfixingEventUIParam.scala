@@ -20,3 +20,18 @@ trait ColumnUnfixingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColumnUnfixingEventUIParam {
+  @scala.inline
+  def apply(
+    columnIdentifier: js.Any = null,
+    isGroupHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    owner: js.Any = null
+  ): ColumnUnfixingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnIdentifier != null) __obj.updateDynamic("columnIdentifier")(columnIdentifier)
+    if (!js.isUndefined(isGroupHeader)) __obj.updateDynamic("isGroupHeader")(isGroupHeader)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ColumnUnfixingEventUIParam]
+  }
+}
+

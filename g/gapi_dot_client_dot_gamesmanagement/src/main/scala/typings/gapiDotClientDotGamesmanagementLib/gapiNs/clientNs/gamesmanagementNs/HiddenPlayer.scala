@@ -14,3 +14,14 @@ trait HiddenPlayer extends js.Object {
   var player: js.UndefOr[Player] = js.undefined
 }
 
+object HiddenPlayer {
+  @scala.inline
+  def apply(hiddenTimeMillis: java.lang.String = null, kind: java.lang.String = null, player: Player = null): HiddenPlayer = {
+    val __obj = js.Dynamic.literal()
+    if (hiddenTimeMillis != null) __obj.updateDynamic("hiddenTimeMillis")(hiddenTimeMillis)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (player != null) __obj.updateDynamic("player")(player)
+    __obj.asInstanceOf[HiddenPlayer]
+  }
+}
+

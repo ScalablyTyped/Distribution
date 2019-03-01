@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A resource that defines a type of message that can be exchanged between systems
   */
-trait MessageDefinition extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait MessageDefinition extends DomainResource {
   /**
     * Contains extended information for property 'category'.
     */
@@ -153,5 +154,112 @@ trait MessageDefinition extends DomainResource {
     * Business version of the message definition
     */
   var version: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object MessageDefinition {
+  @scala.inline
+  def apply(
+    date: dateTime,
+    event: Coding,
+    status: code,
+    _category: Element = null,
+    _copyright: Element = null,
+    _date: Element = null,
+    _description: Element = null,
+    _experimental: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _name: Element = null,
+    _publisher: Element = null,
+    _purpose: Element = null,
+    _resourceType: Element = null,
+    _responseRequired: Element = null,
+    _status: Element = null,
+    _title: Element = null,
+    _url: Element = null,
+    _version: Element = null,
+    allowedResponse: js.Array[MessageDefinitionAllowedResponse] = null,
+    base: Reference = null,
+    category: code = null,
+    contact: js.Array[ContactDetail] = null,
+    contained: js.Array[Resource] = null,
+    copyright: markdown = null,
+    description: markdown = null,
+    experimental: js.UndefOr[scala.Boolean] = js.undefined,
+    extension: js.Array[Extension] = null,
+    focus: js.Array[MessageDefinitionFocus] = null,
+    id: id = null,
+    identifier: Identifier = null,
+    implicitRules: uri = null,
+    jurisdiction: js.Array[CodeableConcept] = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    name: java.lang.String = null,
+    parent: js.Array[Reference] = null,
+    publisher: java.lang.String = null,
+    purpose: markdown = null,
+    replaces: js.Array[Reference] = null,
+    resourceType: code = null,
+    responseRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    text: Narrative = null,
+    title: java.lang.String = null,
+    url: uri = null,
+    useContext: js.Array[UsageContext] = null,
+    version: java.lang.String = null
+  ): MessageDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("status")(status)
+    if (_category != null) __obj.updateDynamic("_category")(_category)
+    if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher)
+    if (_purpose != null) __obj.updateDynamic("_purpose")(_purpose)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_responseRequired != null) __obj.updateDynamic("_responseRequired")(_responseRequired)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_title != null) __obj.updateDynamic("_title")(_title)
+    if (_url != null) __obj.updateDynamic("_url")(_url)
+    if (_version != null) __obj.updateDynamic("_version")(_version)
+    if (allowedResponse != null) __obj.updateDynamic("allowedResponse")(allowedResponse)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (replaces != null) __obj.updateDynamic("replaces")(replaces)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (!js.isUndefined(responseRequired)) __obj.updateDynamic("responseRequired")(responseRequired)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (useContext != null) __obj.updateDynamic("useContext")(useContext)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[MessageDefinition]
+  }
 }
 

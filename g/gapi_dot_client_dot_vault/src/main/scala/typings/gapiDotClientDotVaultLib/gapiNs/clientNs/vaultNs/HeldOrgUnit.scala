@@ -12,3 +12,13 @@ trait HeldOrgUnit extends js.Object {
   var orgUnitId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HeldOrgUnit {
+  @scala.inline
+  def apply(holdTime: java.lang.String = null, orgUnitId: java.lang.String = null): HeldOrgUnit = {
+    val __obj = js.Dynamic.literal()
+    if (holdTime != null) __obj.updateDynamic("holdTime")(holdTime)
+    if (orgUnitId != null) __obj.updateDynamic("orgUnitId")(orgUnitId)
+    __obj.asInstanceOf[HeldOrgUnit]
+  }
+}
+

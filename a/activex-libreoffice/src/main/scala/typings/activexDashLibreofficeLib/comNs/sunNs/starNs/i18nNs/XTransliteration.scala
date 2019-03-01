@@ -164,3 +164,102 @@ trait XTransliteration
   def transliterateRange(aStr1: java.lang.String, aStr2: java.lang.String): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XTransliteration {
+  @scala.inline
+  def apply(
+    Name: java.lang.String,
+    Type: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    compareString: js.Function2[java.lang.String, java.lang.String, scala.Double],
+    compareSubstring: js.Function6[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double
+    ],
+    equals: js.Function8[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[scala.Double], 
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[scala.Double], 
+      scala.Boolean
+    ],
+    folding: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      java.lang.String
+    ],
+    getAvailableModules: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    getName: js.Function0[java.lang.String],
+    getType: js.Function0[scala.Double],
+    loadModule: js.Function2[
+      TransliterationModules, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Unit
+    ],
+    loadModuleByImplName: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Unit
+    ],
+    loadModuleNew: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TransliterationModulesNew], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Unit
+    ],
+    loadModulesByImplNames: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    transliterate: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      java.lang.String
+    ],
+    transliterateRange: js.Function2[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ]
+  ): XTransliteration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("compareString")(compareString)
+    __obj.updateDynamic("compareSubstring")(compareSubstring)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("folding")(folding)
+    __obj.updateDynamic("getAvailableModules")(getAvailableModules)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("loadModule")(loadModule)
+    __obj.updateDynamic("loadModuleByImplName")(loadModuleByImplName)
+    __obj.updateDynamic("loadModuleNew")(loadModuleNew)
+    __obj.updateDynamic("loadModulesByImplNames")(loadModulesByImplNames)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("transliterate")(transliterate)
+    __obj.updateDynamic("transliterateRange")(transliterateRange)
+    __obj.asInstanceOf[XTransliteration]
+  }
+}
+

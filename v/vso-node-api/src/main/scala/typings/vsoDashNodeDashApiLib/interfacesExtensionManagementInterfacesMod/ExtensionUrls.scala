@@ -16,3 +16,13 @@ trait ExtensionUrls extends js.Object {
   var extensionPage: java.lang.String
 }
 
+object ExtensionUrls {
+  @scala.inline
+  def apply(extensionIcon: java.lang.String, extensionPage: java.lang.String): ExtensionUrls = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extensionIcon")(extensionIcon)
+    __obj.updateDynamic("extensionPage")(extensionPage)
+    __obj.asInstanceOf[ExtensionUrls]
+  }
+}
+

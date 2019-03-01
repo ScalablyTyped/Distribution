@@ -20,3 +20,28 @@ trait Anon_CommentsComputedKeyLocMinus extends js.Object {
   ] = js.undefined
 }
 
+object Anon_CommentsComputedKeyLocMinus {
+  @scala.inline
+  def apply(
+    key: astDashTypesLib.genKindsMod.PrivateNameKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    computed: js.UndefOr[scala.Boolean] = js.undefined,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    static: js.UndefOr[scala.Boolean] = js.undefined,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
+    value: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
+  ): Anon_CommentsComputedKeyLocMinus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CommentsComputedKeyLocMinus]
+  }
+}
+

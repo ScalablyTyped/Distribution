@@ -116,3 +116,72 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    animation: Animation = null,
+    associate: Associate | java.lang.String = null,
+    autoCloseTimeout: scala.Int | scala.Double = null,
+    beforeClose: js.Function1[/* e */ BeforeCloseEventArgs, scala.Unit] = null,
+    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
+    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    closeMode: CloseMode | java.lang.String = null,
+    collision: Collision | java.lang.String = null,
+    containment: java.lang.String = null,
+    content: java.lang.String = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    height: java.lang.String | scala.Double = null,
+    hover: js.Function1[/* e */ HoverEventArgs, scala.Unit] = null,
+    isBalloon: js.UndefOr[scala.Boolean] = js.undefined,
+    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    position: Position = null,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    showShadow: js.UndefOr[scala.Boolean] = js.undefined,
+    target: java.lang.String = null,
+    tip: Tip = null,
+    title: java.lang.String = null,
+    tracking: js.Function1[/* e */ TrackingEventArgs, scala.Unit] = null,
+    trigger: Trigger | java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (associate != null) __obj.updateDynamic("associate")(associate.asInstanceOf[js.Any])
+    if (autoCloseTimeout != null) __obj.updateDynamic("autoCloseTimeout")(autoCloseTimeout.asInstanceOf[js.Any])
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (closeMode != null) __obj.updateDynamic("closeMode")(closeMode.asInstanceOf[js.Any])
+    if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
+    if (containment != null) __obj.updateDynamic("containment")(containment)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (!js.isUndefined(isBalloon)) __obj.updateDynamic("isBalloon")(isBalloon)
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (tip != null) __obj.updateDynamic("tip")(tip)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (tracking != null) __obj.updateDynamic("tracking")(tracking)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

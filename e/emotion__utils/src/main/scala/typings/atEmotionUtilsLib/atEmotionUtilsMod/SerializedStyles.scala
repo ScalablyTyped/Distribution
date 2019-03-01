@@ -12,3 +12,20 @@ trait SerializedStyles extends js.Object {
   var styles: java.lang.String
 }
 
+object SerializedStyles {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    styles: java.lang.String,
+    map: java.lang.String = null,
+    next: SerializedStyles = null
+  ): SerializedStyles = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("styles")(styles)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (next != null) __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[SerializedStyles]
+  }
+}
+

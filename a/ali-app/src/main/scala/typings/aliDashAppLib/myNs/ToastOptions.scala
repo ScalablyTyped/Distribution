@@ -21,3 +21,24 @@ trait ToastOptions
   ] = js.undefined
 }
 
+object ToastOptions {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    duration: scala.Int | scala.Double = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[js.Any, scala.Unit] = null,
+    `type`: aliDashAppLib.aliDashAppLibStrings.none | aliDashAppLib.aliDashAppLibStrings.success | aliDashAppLib.aliDashAppLibStrings.fail | aliDashAppLib.aliDashAppLibStrings.exception | java.lang.String = null
+  ): ToastOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToastOptions]
+  }
+}
+

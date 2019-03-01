@@ -16,3 +16,20 @@ trait Features extends js.Object {
   var extractSyntax: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Features {
+  @scala.inline
+  def apply(
+    extractDocumentSentiment: js.UndefOr[scala.Boolean] = js.undefined,
+    extractEntities: js.UndefOr[scala.Boolean] = js.undefined,
+    extractEntitySentiment: js.UndefOr[scala.Boolean] = js.undefined,
+    extractSyntax: js.UndefOr[scala.Boolean] = js.undefined
+  ): Features = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(extractDocumentSentiment)) __obj.updateDynamic("extractDocumentSentiment")(extractDocumentSentiment)
+    if (!js.isUndefined(extractEntities)) __obj.updateDynamic("extractEntities")(extractEntities)
+    if (!js.isUndefined(extractEntitySentiment)) __obj.updateDynamic("extractEntitySentiment")(extractEntitySentiment)
+    if (!js.isUndefined(extractSyntax)) __obj.updateDynamic("extractSyntax")(extractSyntax)
+    __obj.asInstanceOf[Features]
+  }
+}
+

@@ -76,3 +76,48 @@ trait XGlobalSheetSettings extends js.Object {
   var UserLists: activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XGlobalSheetSettings {
+  @scala.inline
+  def apply(
+    DoAutoComplete: scala.Boolean,
+    EnterEdit: scala.Boolean,
+    ExpandReferences: scala.Boolean,
+    ExtendFormat: scala.Boolean,
+    LinkUpdateMode: scala.Double,
+    MarkHeader: scala.Boolean,
+    Metric: scala.Double,
+    MoveDirection: scala.Double,
+    MoveSelection: scala.Boolean,
+    PrintAllSheets: scala.Boolean,
+    PrintEmptyPages: scala.Boolean,
+    RangeFinder: scala.Boolean,
+    ReplaceCellsWarning: scala.Boolean,
+    Scale: scala.Double,
+    StatusBarFunction: scala.Double,
+    UsePrinterMetrics: scala.Boolean,
+    UseTabCol: scala.Boolean,
+    UserLists: activexDashInteropLib.SafeArray[java.lang.String]
+  ): XGlobalSheetSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DoAutoComplete")(DoAutoComplete)
+    __obj.updateDynamic("EnterEdit")(EnterEdit)
+    __obj.updateDynamic("ExpandReferences")(ExpandReferences)
+    __obj.updateDynamic("ExtendFormat")(ExtendFormat)
+    __obj.updateDynamic("LinkUpdateMode")(LinkUpdateMode)
+    __obj.updateDynamic("MarkHeader")(MarkHeader)
+    __obj.updateDynamic("Metric")(Metric)
+    __obj.updateDynamic("MoveDirection")(MoveDirection)
+    __obj.updateDynamic("MoveSelection")(MoveSelection)
+    __obj.updateDynamic("PrintAllSheets")(PrintAllSheets)
+    __obj.updateDynamic("PrintEmptyPages")(PrintEmptyPages)
+    __obj.updateDynamic("RangeFinder")(RangeFinder)
+    __obj.updateDynamic("ReplaceCellsWarning")(ReplaceCellsWarning)
+    __obj.updateDynamic("Scale")(Scale)
+    __obj.updateDynamic("StatusBarFunction")(StatusBarFunction)
+    __obj.updateDynamic("UsePrinterMetrics")(UsePrinterMetrics)
+    __obj.updateDynamic("UseTabCol")(UseTabCol)
+    __obj.updateDynamic("UserLists")(UserLists)
+    __obj.asInstanceOf[XGlobalSheetSettings]
+  }
+}
+

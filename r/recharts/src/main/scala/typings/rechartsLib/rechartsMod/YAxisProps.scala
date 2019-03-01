@@ -51,3 +51,92 @@ trait YAxisProps extends EventAttributes {
   var yAxisId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object YAxisProps {
+  @scala.inline
+  def apply(
+    allowDataOverflow: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDecimals: js.UndefOr[scala.Boolean] = js.undefined,
+    axisLine: scala.Boolean | js.Object = null,
+    dataKey: DataKey = null,
+    domain: js.Tuple2[AxisDomain, AxisDomain] = null,
+    height: scala.Int | scala.Double = null,
+    hide: js.UndefOr[scala.Boolean] = js.undefined,
+    interval: AxisInterval = null,
+    label: java.lang.String | scala.Double | Label | LabelProps = null,
+    minTickGap: scala.Int | scala.Double = null,
+    mirror: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String | scala.Double = null,
+    onClick: RechartsFunction = null,
+    onMouseDown: RechartsFunction = null,
+    onMouseEnter: RechartsFunction = null,
+    onMouseLeave: RechartsFunction = null,
+    onMouseMove: RechartsFunction = null,
+    onMouseOut: RechartsFunction = null,
+    onMouseOver: RechartsFunction = null,
+    onMouseUp: RechartsFunction = null,
+    onTouchCancel: RechartsFunction = null,
+    onTouchEnd: RechartsFunction = null,
+    onTouchMove: RechartsFunction = null,
+    onTouchStart: RechartsFunction = null,
+    orientation: rechartsLib.rechartsLibStrings.left | rechartsLib.rechartsLibStrings.right = null,
+    padding: YPadding = null,
+    reversed: js.UndefOr[scala.Boolean] = js.undefined,
+    scale: ScaleType | RechartsFunction = null,
+    stroke: java.lang.String = null,
+    tick: scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    tickCount: scala.Int | scala.Double = null,
+    tickFormatter: TickFormatterFunction = null,
+    tickLine: scala.Boolean | js.Object = null,
+    tickMargin: scala.Int | scala.Double = null,
+    tickSize: scala.Int | scala.Double = null,
+    ticks: js.Array[_] = null,
+    `type`: rechartsLib.rechartsLibStrings.number | rechartsLib.rechartsLibStrings.category = null,
+    unit: java.lang.String | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    yAxisId: java.lang.String | scala.Double = null
+  ): YAxisProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDataOverflow)) __obj.updateDynamic("allowDataOverflow")(allowDataOverflow)
+    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals)
+    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
+    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (minTickGap != null) __obj.updateDynamic("minTickGap")(minTickGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
+    if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
+    if (tickFormatter != null) __obj.updateDynamic("tickFormatter")(tickFormatter)
+    if (tickLine != null) __obj.updateDynamic("tickLine")(tickLine.asInstanceOf[js.Any])
+    if (tickMargin != null) __obj.updateDynamic("tickMargin")(tickMargin.asInstanceOf[js.Any])
+    if (tickSize != null) __obj.updateDynamic("tickSize")(tickSize.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (yAxisId != null) __obj.updateDynamic("yAxisId")(yAxisId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[YAxisProps]
+  }
+}
+

@@ -48,3 +48,104 @@ trait IAtomPubClient
   def updateResourceItemAsync(item: winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationItem): winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[winrtLib.WindowsNs.WebNs.SyndicationNs.TransferProgress]
 }
 
+object IAtomPubClient {
+  @scala.inline
+  def apply(
+    bypassCacheOnRetrieve: scala.Boolean,
+    cancelAsyncOperations: js.Function0[scala.Unit],
+    createMediaResourceAsync: js.Function4[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      java.lang.String, 
+      java.lang.String, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[
+        winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationItem, 
+        winrtLib.WindowsNs.WebNs.SyndicationNs.TransferProgress
+      ]
+    ],
+    createResourceAsync: js.Function3[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      java.lang.String, 
+      winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationItem, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[
+        winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationItem, 
+        winrtLib.WindowsNs.WebNs.SyndicationNs.TransferProgress
+      ]
+    ],
+    deleteResourceAsync: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[winrtLib.WindowsNs.WebNs.SyndicationNs.TransferProgress]
+    ],
+    deleteResourceItemAsync: js.Function1[
+      winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationItem, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[winrtLib.WindowsNs.WebNs.SyndicationNs.TransferProgress]
+    ],
+    maxResponseBufferSize: scala.Double,
+    proxyCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
+    retrieveFeedAsync: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[
+        winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationFeed, 
+        winrtLib.WindowsNs.WebNs.SyndicationNs.RetrievalProgress
+      ]
+    ],
+    retrieveMediaResourceAsync: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[
+        winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, 
+        winrtLib.WindowsNs.WebNs.SyndicationNs.RetrievalProgress
+      ]
+    ],
+    retrieveResourceAsync: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[
+        winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationItem, 
+        winrtLib.WindowsNs.WebNs.SyndicationNs.RetrievalProgress
+      ]
+    ],
+    retrieveServiceDocumentAsync: js.Function1[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[ServiceDocument, winrtLib.WindowsNs.WebNs.SyndicationNs.RetrievalProgress]
+    ],
+    serverCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
+    setRequestHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    timeout: scala.Double,
+    updateMediaResourceAsync: js.Function3[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      java.lang.String, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[winrtLib.WindowsNs.WebNs.SyndicationNs.TransferProgress]
+    ],
+    updateResourceAsync: js.Function2[
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationItem, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[winrtLib.WindowsNs.WebNs.SyndicationNs.TransferProgress]
+    ],
+    updateResourceItemAsync: js.Function1[
+      winrtLib.WindowsNs.WebNs.SyndicationNs.SyndicationItem, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncActionWithProgress[winrtLib.WindowsNs.WebNs.SyndicationNs.TransferProgress]
+    ]
+  ): IAtomPubClient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bypassCacheOnRetrieve")(bypassCacheOnRetrieve)
+    __obj.updateDynamic("cancelAsyncOperations")(cancelAsyncOperations)
+    __obj.updateDynamic("createMediaResourceAsync")(createMediaResourceAsync)
+    __obj.updateDynamic("createResourceAsync")(createResourceAsync)
+    __obj.updateDynamic("deleteResourceAsync")(deleteResourceAsync)
+    __obj.updateDynamic("deleteResourceItemAsync")(deleteResourceItemAsync)
+    __obj.updateDynamic("maxResponseBufferSize")(maxResponseBufferSize)
+    __obj.updateDynamic("proxyCredential")(proxyCredential)
+    __obj.updateDynamic("retrieveFeedAsync")(retrieveFeedAsync)
+    __obj.updateDynamic("retrieveMediaResourceAsync")(retrieveMediaResourceAsync)
+    __obj.updateDynamic("retrieveResourceAsync")(retrieveResourceAsync)
+    __obj.updateDynamic("retrieveServiceDocumentAsync")(retrieveServiceDocumentAsync)
+    __obj.updateDynamic("serverCredential")(serverCredential)
+    __obj.updateDynamic("setRequestHeader")(setRequestHeader)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.updateDynamic("updateMediaResourceAsync")(updateMediaResourceAsync)
+    __obj.updateDynamic("updateResourceAsync")(updateResourceAsync)
+    __obj.updateDynamic("updateResourceItemAsync")(updateResourceItemAsync)
+    __obj.asInstanceOf[IAtomPubClient]
+  }
+}
+

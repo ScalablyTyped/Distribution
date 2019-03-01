@@ -21,3 +21,14 @@ trait AuthCredentials extends js.Object {
   var user: js.UndefOr[UserCredentials] = js.undefined
 }
 
+object AuthCredentials {
+  @scala.inline
+  def apply(app: AppCredentials = null, scope: js.Array[java.lang.String] = null, user: UserCredentials = null): AuthCredentials = {
+    val __obj = js.Dynamic.literal()
+    if (app != null) __obj.updateDynamic("app")(app)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[AuthCredentials]
+  }
+}
+

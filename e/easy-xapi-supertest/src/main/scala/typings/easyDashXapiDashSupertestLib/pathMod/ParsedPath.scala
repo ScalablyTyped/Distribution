@@ -28,3 +28,22 @@ trait ParsedPath extends js.Object {
   var root: java.lang.String
 }
 
+object ParsedPath {
+  @scala.inline
+  def apply(
+    base: java.lang.String,
+    dir: java.lang.String,
+    ext: java.lang.String,
+    name: java.lang.String,
+    root: java.lang.String
+  ): ParsedPath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("base")(base)
+    __obj.updateDynamic("dir")(dir)
+    __obj.updateDynamic("ext")(ext)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("root")(root)
+    __obj.asInstanceOf[ParsedPath]
+  }
+}
+

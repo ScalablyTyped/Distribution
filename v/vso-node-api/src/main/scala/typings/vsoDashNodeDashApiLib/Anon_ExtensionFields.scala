@@ -10,3 +10,13 @@ trait Anon_ExtensionFields extends js.Object {
   var none: scala.Double
 }
 
+object Anon_ExtensionFields {
+  @scala.inline
+  def apply(extensionFields: scala.Double, none: scala.Double): Anon_ExtensionFields = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extensionFields")(extensionFields)
+    __obj.updateDynamic("none")(none)
+    __obj.asInstanceOf[Anon_ExtensionFields]
+  }
+}
+

@@ -27,3 +27,18 @@ trait XTransferableSupplier extends js.Object {
   def insertTransferable(xTrans: XTransferable): scala.Unit
 }
 
+object XTransferableSupplier {
+  @scala.inline
+  def apply(
+    Transferable: XTransferable,
+    getTransferable: js.Function0[XTransferable],
+    insertTransferable: js.Function1[XTransferable, scala.Unit]
+  ): XTransferableSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Transferable")(Transferable)
+    __obj.updateDynamic("getTransferable")(getTransferable)
+    __obj.updateDynamic("insertTransferable")(insertTransferable)
+    __obj.asInstanceOf[XTransferableSupplier]
+  }
+}
+

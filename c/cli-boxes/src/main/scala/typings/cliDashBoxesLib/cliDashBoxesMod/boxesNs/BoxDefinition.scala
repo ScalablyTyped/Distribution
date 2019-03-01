@@ -14,3 +14,24 @@ trait BoxDefinition extends js.Object {
   var vertical: java.lang.String
 }
 
+object BoxDefinition {
+  @scala.inline
+  def apply(
+    bottomLeft: java.lang.String,
+    bottomRight: java.lang.String,
+    horizontal: java.lang.String,
+    topLeft: java.lang.String,
+    topRight: java.lang.String,
+    vertical: java.lang.String
+  ): BoxDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottomLeft")(bottomLeft)
+    __obj.updateDynamic("bottomRight")(bottomRight)
+    __obj.updateDynamic("horizontal")(horizontal)
+    __obj.updateDynamic("topLeft")(topLeft)
+    __obj.updateDynamic("topRight")(topRight)
+    __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[BoxDefinition]
+  }
+}
+

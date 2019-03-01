@@ -13,3 +13,22 @@ trait DataSourceTransportReadOptionsData extends js.Object {
   var take: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DataSourceTransportReadOptionsData {
+  @scala.inline
+  def apply(
+    filter: DataSourceFilters = null,
+    group: js.Array[DataSourceGroupItem] = null,
+    skip: scala.Int | scala.Double = null,
+    sort: js.Array[DataSourceSortItem] = null,
+    take: scala.Int | scala.Double = null
+  ): DataSourceTransportReadOptionsData = {
+    val __obj = js.Dynamic.literal()
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (take != null) __obj.updateDynamic("take")(take.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataSourceTransportReadOptionsData]
+  }
+}
+

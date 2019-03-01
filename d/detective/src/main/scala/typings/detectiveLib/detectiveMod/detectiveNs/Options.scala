@@ -70,3 +70,36 @@ trait Options extends js.Object {
   var word: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allowHashBang: js.UndefOr[scala.Boolean] = js.undefined,
+    allowImportExportEverywhere: js.UndefOr[scala.Boolean] = js.undefined,
+    allowReserved: scala.Boolean | detectiveLib.detectiveLibStrings.never = null,
+    allowReturnOutsideFunction: js.UndefOr[scala.Boolean] = js.undefined,
+    ecmaVersion: java.lang.String | scala.Double = null,
+    isRequire: js.Function1[/* node */ js.Any, scala.Boolean] = null,
+    locations: js.UndefOr[scala.Boolean] = js.undefined,
+    nodes: java.lang.String = null,
+    parse: acornLib.acornMod.acornNs.Options = null,
+    ranges: java.lang.String = null,
+    sourceType: detectiveLib.detectiveLibStrings.script | detectiveLib.detectiveLibStrings.module = null,
+    word: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowHashBang)) __obj.updateDynamic("allowHashBang")(allowHashBang)
+    if (!js.isUndefined(allowImportExportEverywhere)) __obj.updateDynamic("allowImportExportEverywhere")(allowImportExportEverywhere)
+    if (allowReserved != null) __obj.updateDynamic("allowReserved")(allowReserved.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowReturnOutsideFunction)) __obj.updateDynamic("allowReturnOutsideFunction")(allowReturnOutsideFunction)
+    if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
+    if (isRequire != null) __obj.updateDynamic("isRequire")(isRequire)
+    if (!js.isUndefined(locations)) __obj.updateDynamic("locations")(locations)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
+    if (word != null) __obj.updateDynamic("word")(word)
+    __obj.asInstanceOf[Options]
+  }
+}
+

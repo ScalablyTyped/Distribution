@@ -24,3 +24,22 @@ trait OldUserInfoParam extends js.Object {
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OldUserInfoParam {
+  @scala.inline
+  def apply(
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    lang: wegameDashApiLib.wegameDashApiLibStrings.en | wegameDashApiLib.wegameDashApiLibStrings.zh_CN | wegameDashApiLib.wegameDashApiLibStrings.zh_TW = null,
+    success: js.Function1[/* res */ wegameDashApiLib.Anon_EncryptedData, scala.Unit] = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): OldUserInfoParam = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[OldUserInfoParam]
+  }
+}
+

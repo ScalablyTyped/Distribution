@@ -12,3 +12,16 @@ trait ConcatFromOptionsBuilder extends js.Object {
   def strings(markdownTexts: js.Array[java.lang.String], opts: js.Any): ToOptionsBuilder
 }
 
+object ConcatFromOptionsBuilder {
+  @scala.inline
+  def apply(
+    paths: js.Function2[js.Array[java.lang.String], js.Any, ToOptionsBuilder],
+    strings: js.Function2[js.Array[java.lang.String], js.Any, ToOptionsBuilder]
+  ): ConcatFromOptionsBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("paths")(paths)
+    __obj.updateDynamic("strings")(strings)
+    __obj.asInstanceOf[ConcatFromOptionsBuilder]
+  }
+}
+

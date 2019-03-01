@@ -11,3 +11,18 @@ trait Anon_CodeMessage extends js.Object {
   var warning: grammarkdownLib.grammarkdownLibNumbers.`true`
 }
 
+object Anon_CodeMessage {
+  @scala.inline
+  def apply(
+    code: scala.Double,
+    message: java.lang.String,
+    warning: grammarkdownLib.grammarkdownLibNumbers.`true`
+  ): Anon_CodeMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[Anon_CodeMessage]
+  }
+}
+

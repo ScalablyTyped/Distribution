@@ -11,3 +11,14 @@ trait EditorRunConfig extends js.Object {
   var isTerminalEditor: scala.Boolean
 }
 
+object EditorRunConfig {
+  @scala.inline
+  def apply(args: js.Array[java.lang.String], bin: java.lang.String, isTerminalEditor: scala.Boolean): EditorRunConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("bin")(bin)
+    __obj.updateDynamic("isTerminalEditor")(isTerminalEditor)
+    __obj.asInstanceOf[EditorRunConfig]
+  }
+}
+

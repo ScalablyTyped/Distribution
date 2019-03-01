@@ -52,3 +52,59 @@ trait XConsolidationDescriptor
   def setUseRowHeaders(bUseRowHeaders: scala.Boolean): scala.Unit
 }
 
+object XConsolidationDescriptor {
+  @scala.inline
+  def apply(
+    Function: GeneralFunction,
+    InsertLinks: scala.Boolean,
+    Sources: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    StartOutputPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    UseColumnHeaders: scala.Boolean,
+    UseRowHeaders: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    getFunction: js.Function0[GeneralFunction],
+    getInsertLinks: js.Function0[scala.Boolean],
+    getSources: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+    ],
+    getStartOutputPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
+    getUseColumnHeaders: js.Function0[scala.Boolean],
+    getUseRowHeaders: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setFunction: js.Function1[GeneralFunction, scala.Unit],
+    setInsertLinks: js.Function1[scala.Boolean, scala.Unit],
+    setSources: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress], 
+      scala.Unit
+    ],
+    setStartOutputPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
+    setUseColumnHeaders: js.Function1[scala.Boolean, scala.Unit],
+    setUseRowHeaders: js.Function1[scala.Boolean, scala.Unit]
+  ): XConsolidationDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Function")(Function)
+    __obj.updateDynamic("InsertLinks")(InsertLinks)
+    __obj.updateDynamic("Sources")(Sources)
+    __obj.updateDynamic("StartOutputPosition")(StartOutputPosition)
+    __obj.updateDynamic("UseColumnHeaders")(UseColumnHeaders)
+    __obj.updateDynamic("UseRowHeaders")(UseRowHeaders)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFunction")(getFunction)
+    __obj.updateDynamic("getInsertLinks")(getInsertLinks)
+    __obj.updateDynamic("getSources")(getSources)
+    __obj.updateDynamic("getStartOutputPosition")(getStartOutputPosition)
+    __obj.updateDynamic("getUseColumnHeaders")(getUseColumnHeaders)
+    __obj.updateDynamic("getUseRowHeaders")(getUseRowHeaders)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setFunction")(setFunction)
+    __obj.updateDynamic("setInsertLinks")(setInsertLinks)
+    __obj.updateDynamic("setSources")(setSources)
+    __obj.updateDynamic("setStartOutputPosition")(setStartOutputPosition)
+    __obj.updateDynamic("setUseColumnHeaders")(setUseColumnHeaders)
+    __obj.updateDynamic("setUseRowHeaders")(setUseRowHeaders)
+    __obj.asInstanceOf[XConsolidationDescriptor]
+  }
+}
+

@@ -36,3 +36,25 @@ trait IGeoJsonObject extends js.Object {
   var `type`: java.lang.String
 }
 
+object IGeoJsonObject {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    coordinates: js.Array[scala.Double] | js.Array[js.Array[scala.Double]] | js.Array[js.Array[js.Array[scala.Double]]] | js.Array[js.Array[js.Array[js.Array[scala.Double]]]] = null,
+    features: js.Array[IGeoJsonObject] = null,
+    geometries: js.Array[IGeoJsonObject] = null,
+    geometry: IGeoJsonObject = null,
+    id: js.Any = null,
+    properties: js.Any = null
+  ): IGeoJsonObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (geometry != null) __obj.updateDynamic("geometry")(geometry)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[IGeoJsonObject]
+  }
+}
+

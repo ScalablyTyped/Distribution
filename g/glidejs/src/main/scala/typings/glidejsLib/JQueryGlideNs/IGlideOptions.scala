@@ -128,3 +128,58 @@ trait IGlideOptions extends js.Object {
   var touchDistance: js.UndefOr[js.Any] = js.undefined
 }
 
+object IGlideOptions {
+  @scala.inline
+  def apply(
+    afterInit: js.Function = null,
+    afterTransition: js.Function = null,
+    animationDuration: scala.Int | scala.Double = null,
+    animationTimingFunc: java.lang.String = null,
+    arrowLeftClass: java.lang.String = null,
+    arrowLeftText: java.lang.String = null,
+    arrowMainClass: java.lang.String = null,
+    arrowRightClass: java.lang.String = null,
+    arrowRightText: java.lang.String = null,
+    arrows: js.Any = null,
+    arrowsWrapperClass: java.lang.String = null,
+    autoplay: js.Any = null,
+    beforeInit: js.Function = null,
+    beforeTransition: js.Function = null,
+    circular: js.UndefOr[scala.Boolean] = js.undefined,
+    hoverpause: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    navigation: js.Any = null,
+    navigationCenter: js.UndefOr[scala.Boolean] = js.undefined,
+    navigationClass: java.lang.String = null,
+    navigationCurrentItemClass: java.lang.String = null,
+    navigationItemClass: java.lang.String = null,
+    touchDistance: js.Any = null
+  ): IGlideOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
+    if (afterTransition != null) __obj.updateDynamic("afterTransition")(afterTransition)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationTimingFunc != null) __obj.updateDynamic("animationTimingFunc")(animationTimingFunc)
+    if (arrowLeftClass != null) __obj.updateDynamic("arrowLeftClass")(arrowLeftClass)
+    if (arrowLeftText != null) __obj.updateDynamic("arrowLeftText")(arrowLeftText)
+    if (arrowMainClass != null) __obj.updateDynamic("arrowMainClass")(arrowMainClass)
+    if (arrowRightClass != null) __obj.updateDynamic("arrowRightClass")(arrowRightClass)
+    if (arrowRightText != null) __obj.updateDynamic("arrowRightText")(arrowRightText)
+    if (arrows != null) __obj.updateDynamic("arrows")(arrows)
+    if (arrowsWrapperClass != null) __obj.updateDynamic("arrowsWrapperClass")(arrowsWrapperClass)
+    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay)
+    if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit)
+    if (beforeTransition != null) __obj.updateDynamic("beforeTransition")(beforeTransition)
+    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular)
+    if (!js.isUndefined(hoverpause)) __obj.updateDynamic("hoverpause")(hoverpause)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
+    if (!js.isUndefined(navigationCenter)) __obj.updateDynamic("navigationCenter")(navigationCenter)
+    if (navigationClass != null) __obj.updateDynamic("navigationClass")(navigationClass)
+    if (navigationCurrentItemClass != null) __obj.updateDynamic("navigationCurrentItemClass")(navigationCurrentItemClass)
+    if (navigationItemClass != null) __obj.updateDynamic("navigationItemClass")(navigationItemClass)
+    if (touchDistance != null) __obj.updateDynamic("touchDistance")(touchDistance)
+    __obj.asInstanceOf[IGlideOptions]
+  }
+}
+

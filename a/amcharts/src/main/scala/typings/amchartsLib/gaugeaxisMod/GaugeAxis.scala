@@ -262,3 +262,120 @@ trait GaugeAxis extends js.Object {
   def value2angle(value: scala.Double): scala.Unit
 }
 
+object GaugeAxis {
+  @scala.inline
+  def apply(
+    addListener: js.Function2[java.lang.String, js.Any, scala.Unit],
+    axisAlpha: scala.Double,
+    axisColor: java.lang.String,
+    axisThickness: scala.Double,
+    bandAlpha: scala.Double,
+    bandGradientRatio: js.Array[scala.Double],
+    bandOutlineAlpha: scala.Double,
+    bandOutlineColor: java.lang.String,
+    bandOutlineThickness: scala.Double,
+    bands: js.Array[amchartsLib.gaugebandMod.default],
+    bottomText: java.lang.String,
+    bottomTextBold: scala.Boolean,
+    bottomTextColor: java.lang.String,
+    bottomTextFontSize: scala.Double,
+    bottomTextYOffset: scala.Double,
+    centerX: js.Any,
+    centerY: js.Any,
+    color: java.lang.String,
+    endAngle: scala.Double,
+    endValue: scala.Double,
+    fontSize: scala.Double,
+    gridCount: scala.Double,
+    gridInside: scala.Boolean,
+    id: js.Any,
+    inside: scala.Boolean,
+    labelFrequency: scala.Double,
+    labelFunction: js.Function1[scala.Double, java.lang.String],
+    labelOffset: scala.Double,
+    labelsEnabled: scala.Boolean,
+    listeners: js.Array[js.Object],
+    minorTickInterval: scala.Double,
+    minorTickLength: scala.Double,
+    radius: js.Any,
+    removeListener: js.Function3[amchartsLib.amchartMod.default, java.lang.String, js.Any, scala.Unit],
+    setBottomText: js.Function1[java.lang.String, scala.Unit],
+    setTopText: js.Function1[java.lang.String, scala.Unit],
+    showFirstLabel: scala.Boolean,
+    showLastLabel: scala.Boolean,
+    startAngle: scala.Double,
+    startValue: scala.Double,
+    tickAlpha: scala.Double,
+    tickColor: java.lang.String,
+    tickLength: scala.Double,
+    tickThickness: scala.Double,
+    topText: java.lang.String,
+    topTextBold: scala.Boolean,
+    topTextColor: java.lang.String,
+    topTextFontSize: scala.Double,
+    topTextYOffset: scala.Double,
+    unit: java.lang.String,
+    unitPosition: java.lang.String,
+    usePrefixes: scala.Boolean,
+    value2angle: js.Function1[scala.Double, scala.Unit],
+    valueInterval: scala.Double
+  ): GaugeAxis = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addListener")(addListener)
+    __obj.updateDynamic("axisAlpha")(axisAlpha)
+    __obj.updateDynamic("axisColor")(axisColor)
+    __obj.updateDynamic("axisThickness")(axisThickness)
+    __obj.updateDynamic("bandAlpha")(bandAlpha)
+    __obj.updateDynamic("bandGradientRatio")(bandGradientRatio)
+    __obj.updateDynamic("bandOutlineAlpha")(bandOutlineAlpha)
+    __obj.updateDynamic("bandOutlineColor")(bandOutlineColor)
+    __obj.updateDynamic("bandOutlineThickness")(bandOutlineThickness)
+    __obj.updateDynamic("bands")(bands)
+    __obj.updateDynamic("bottomText")(bottomText)
+    __obj.updateDynamic("bottomTextBold")(bottomTextBold)
+    __obj.updateDynamic("bottomTextColor")(bottomTextColor)
+    __obj.updateDynamic("bottomTextFontSize")(bottomTextFontSize)
+    __obj.updateDynamic("bottomTextYOffset")(bottomTextYOffset)
+    __obj.updateDynamic("centerX")(centerX)
+    __obj.updateDynamic("centerY")(centerY)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("endAngle")(endAngle)
+    __obj.updateDynamic("endValue")(endValue)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("gridCount")(gridCount)
+    __obj.updateDynamic("gridInside")(gridInside)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("inside")(inside)
+    __obj.updateDynamic("labelFrequency")(labelFrequency)
+    __obj.updateDynamic("labelFunction")(labelFunction)
+    __obj.updateDynamic("labelOffset")(labelOffset)
+    __obj.updateDynamic("labelsEnabled")(labelsEnabled)
+    __obj.updateDynamic("listeners")(listeners)
+    __obj.updateDynamic("minorTickInterval")(minorTickInterval)
+    __obj.updateDynamic("minorTickLength")(minorTickLength)
+    __obj.updateDynamic("radius")(radius)
+    __obj.updateDynamic("removeListener")(removeListener)
+    __obj.updateDynamic("setBottomText")(setBottomText)
+    __obj.updateDynamic("setTopText")(setTopText)
+    __obj.updateDynamic("showFirstLabel")(showFirstLabel)
+    __obj.updateDynamic("showLastLabel")(showLastLabel)
+    __obj.updateDynamic("startAngle")(startAngle)
+    __obj.updateDynamic("startValue")(startValue)
+    __obj.updateDynamic("tickAlpha")(tickAlpha)
+    __obj.updateDynamic("tickColor")(tickColor)
+    __obj.updateDynamic("tickLength")(tickLength)
+    __obj.updateDynamic("tickThickness")(tickThickness)
+    __obj.updateDynamic("topText")(topText)
+    __obj.updateDynamic("topTextBold")(topTextBold)
+    __obj.updateDynamic("topTextColor")(topTextColor)
+    __obj.updateDynamic("topTextFontSize")(topTextFontSize)
+    __obj.updateDynamic("topTextYOffset")(topTextYOffset)
+    __obj.updateDynamic("unit")(unit)
+    __obj.updateDynamic("unitPosition")(unitPosition)
+    __obj.updateDynamic("usePrefixes")(usePrefixes)
+    __obj.updateDynamic("value2angle")(value2angle)
+    __obj.updateDynamic("valueInterval")(valueInterval)
+    __obj.asInstanceOf[GaugeAxis]
+  }
+}
+

@@ -28,3 +28,22 @@ trait ActiveWorksheetChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ActiveWorksheetChangedEventUIParam {
+  @scala.inline
+  def apply(
+    newActiveWorksheet: js.Any = null,
+    newActiveWorksheetName: java.lang.String = null,
+    oldActiveWorksheet: js.Any = null,
+    oldActiveWorksheetName: java.lang.String = null,
+    owner: js.Any = null
+  ): ActiveWorksheetChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (newActiveWorksheet != null) __obj.updateDynamic("newActiveWorksheet")(newActiveWorksheet)
+    if (newActiveWorksheetName != null) __obj.updateDynamic("newActiveWorksheetName")(newActiveWorksheetName)
+    if (oldActiveWorksheet != null) __obj.updateDynamic("oldActiveWorksheet")(oldActiveWorksheet)
+    if (oldActiveWorksheetName != null) __obj.updateDynamic("oldActiveWorksheetName")(oldActiveWorksheetName)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ActiveWorksheetChangedEventUIParam]
+  }
+}
+

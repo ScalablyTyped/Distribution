@@ -148,3 +148,53 @@ trait Options extends js.Object {
   var utilsScript: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allowDropdown: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHideDialCode: js.UndefOr[scala.Boolean] = js.undefined,
+    autoPlaceholder: intlDashTelDashInputLib.intlDashTelDashInputLibStrings.off | intlDashTelDashInputLib.intlDashTelDashInputLibStrings.polite | intlDashTelDashInputLib.intlDashTelDashInputLibStrings.aggressive = null,
+    customPlaceholder: js.Function2[
+      /* selectedCountryPlaceholder */ java.lang.String, 
+      /* selectedCountryData */ intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.CountryData, 
+      java.lang.String
+    ] = null,
+    dropdownContainer: stdLib.Node = null,
+    excludeCountries: js.Array[java.lang.String] = null,
+    formatOnDisplay: js.UndefOr[scala.Boolean] = js.undefined,
+    geoIpLookup: js.Function1[
+      /* callback */ js.Function1[/* countryCode */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ] = null,
+    hiddenInput: java.lang.String = null,
+    initialCountry: java.lang.String = null,
+    localizedCountries: js.Object = null,
+    nationalMode: js.UndefOr[scala.Boolean] = js.undefined,
+    onlyCountries: js.Array[java.lang.String] = null,
+    placeholderNumberType: intlDashTelDashInputLib.intlDashTelDashInputMod.intlTelInputUtilsNs.placeholderNumberType = null,
+    preferredCountries: js.Array[java.lang.String] = null,
+    separateDialCode: js.UndefOr[scala.Boolean] = js.undefined,
+    utilsScript: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDropdown)) __obj.updateDynamic("allowDropdown")(allowDropdown)
+    if (!js.isUndefined(autoHideDialCode)) __obj.updateDynamic("autoHideDialCode")(autoHideDialCode)
+    if (autoPlaceholder != null) __obj.updateDynamic("autoPlaceholder")(autoPlaceholder.asInstanceOf[js.Any])
+    if (customPlaceholder != null) __obj.updateDynamic("customPlaceholder")(customPlaceholder)
+    if (dropdownContainer != null) __obj.updateDynamic("dropdownContainer")(dropdownContainer)
+    if (excludeCountries != null) __obj.updateDynamic("excludeCountries")(excludeCountries)
+    if (!js.isUndefined(formatOnDisplay)) __obj.updateDynamic("formatOnDisplay")(formatOnDisplay)
+    if (geoIpLookup != null) __obj.updateDynamic("geoIpLookup")(geoIpLookup)
+    if (hiddenInput != null) __obj.updateDynamic("hiddenInput")(hiddenInput)
+    if (initialCountry != null) __obj.updateDynamic("initialCountry")(initialCountry)
+    if (localizedCountries != null) __obj.updateDynamic("localizedCountries")(localizedCountries)
+    if (!js.isUndefined(nationalMode)) __obj.updateDynamic("nationalMode")(nationalMode)
+    if (onlyCountries != null) __obj.updateDynamic("onlyCountries")(onlyCountries)
+    if (placeholderNumberType != null) __obj.updateDynamic("placeholderNumberType")(placeholderNumberType)
+    if (preferredCountries != null) __obj.updateDynamic("preferredCountries")(preferredCountries)
+    if (!js.isUndefined(separateDialCode)) __obj.updateDynamic("separateDialCode")(separateDialCode)
+    if (utilsScript != null) __obj.updateDynamic("utilsScript")(utilsScript)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -25,3 +25,22 @@ trait WebDetection extends js.Object {
   var webEntities: js.UndefOr[js.Array[WebEntity]] = js.undefined
 }
 
+object WebDetection {
+  @scala.inline
+  def apply(
+    fullMatchingImages: js.Array[WebImage] = null,
+    pagesWithMatchingImages: js.Array[WebPage] = null,
+    partialMatchingImages: js.Array[WebImage] = null,
+    visuallySimilarImages: js.Array[WebImage] = null,
+    webEntities: js.Array[WebEntity] = null
+  ): WebDetection = {
+    val __obj = js.Dynamic.literal()
+    if (fullMatchingImages != null) __obj.updateDynamic("fullMatchingImages")(fullMatchingImages)
+    if (pagesWithMatchingImages != null) __obj.updateDynamic("pagesWithMatchingImages")(pagesWithMatchingImages)
+    if (partialMatchingImages != null) __obj.updateDynamic("partialMatchingImages")(partialMatchingImages)
+    if (visuallySimilarImages != null) __obj.updateDynamic("visuallySimilarImages")(visuallySimilarImages)
+    if (webEntities != null) __obj.updateDynamic("webEntities")(webEntities)
+    __obj.asInstanceOf[WebDetection]
+  }
+}
+

@@ -20,3 +20,24 @@ trait Budget extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Budget {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    billingId: java.lang.String = null,
+    budgetAmount: java.lang.String = null,
+    currencyCode: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null
+  ): Budget = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (billingId != null) __obj.updateDynamic("billingId")(billingId)
+    if (budgetAmount != null) __obj.updateDynamic("budgetAmount")(budgetAmount)
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[Budget]
+  }
+}
+

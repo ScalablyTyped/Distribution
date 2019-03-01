@@ -31,3 +31,20 @@ trait IHeaderOptions extends js.Object {
   var stripe_account: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IHeaderOptions {
+  @scala.inline
+  def apply(
+    api_key: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    idempotency_key: java.lang.String = null,
+    stripe_account: java.lang.String = null
+  ): IHeaderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (api_key != null) __obj.updateDynamic("api_key")(api_key)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (idempotency_key != null) __obj.updateDynamic("idempotency_key")(idempotency_key)
+    if (stripe_account != null) __obj.updateDynamic("stripe_account")(stripe_account)
+    __obj.asInstanceOf[IHeaderOptions]
+  }
+}
+

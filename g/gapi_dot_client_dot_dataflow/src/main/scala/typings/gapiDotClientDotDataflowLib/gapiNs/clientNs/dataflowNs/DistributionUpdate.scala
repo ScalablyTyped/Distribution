@@ -23,3 +23,24 @@ trait DistributionUpdate extends js.Object {
   var sumOfSquares: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DistributionUpdate {
+  @scala.inline
+  def apply(
+    count: SplitInt64 = null,
+    histogram: Histogram = null,
+    max: SplitInt64 = null,
+    min: SplitInt64 = null,
+    sum: SplitInt64 = null,
+    sumOfSquares: scala.Int | scala.Double = null
+  ): DistributionUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (histogram != null) __obj.updateDynamic("histogram")(histogram)
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (min != null) __obj.updateDynamic("min")(min)
+    if (sum != null) __obj.updateDynamic("sum")(sum)
+    if (sumOfSquares != null) __obj.updateDynamic("sumOfSquares")(sumOfSquares.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DistributionUpdate]
+  }
+}
+

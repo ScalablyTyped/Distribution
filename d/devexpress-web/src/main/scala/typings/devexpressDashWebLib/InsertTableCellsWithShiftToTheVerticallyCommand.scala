@@ -15,3 +15,13 @@ trait InsertTableCellsWithShiftToTheVerticallyCommand extends CommandWithSimpleS
   def execute(): scala.Boolean
 }
 
+object InsertTableCellsWithShiftToTheVerticallyCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): InsertTableCellsWithShiftToTheVerticallyCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[InsertTableCellsWithShiftToTheVerticallyCommand]
+  }
+}
+

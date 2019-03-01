@@ -9,3 +9,12 @@ trait TextInputKeyPressEventData extends js.Object {
   var key: java.lang.String
 }
 
+object TextInputKeyPressEventData {
+  @scala.inline
+  def apply(key: java.lang.String): TextInputKeyPressEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[TextInputKeyPressEventData]
+  }
+}
+

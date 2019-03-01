@@ -12,3 +12,18 @@ trait Discoveryclusters extends js.Object {
   var totalClusters: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Discoveryclusters {
+  @scala.inline
+  def apply(
+    clusters: js.Array[gapiDotClientDotBooksLib.Anon_Bannerwithcontentcontainer] = null,
+    kind: java.lang.String = null,
+    totalClusters: scala.Int | scala.Double = null
+  ): Discoveryclusters = {
+    val __obj = js.Dynamic.literal()
+    if (clusters != null) __obj.updateDynamic("clusters")(clusters)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (totalClusters != null) __obj.updateDynamic("totalClusters")(totalClusters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Discoveryclusters]
+  }
+}
+

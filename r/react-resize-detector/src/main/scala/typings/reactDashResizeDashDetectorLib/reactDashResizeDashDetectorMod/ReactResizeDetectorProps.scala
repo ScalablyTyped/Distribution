@@ -26,3 +26,34 @@ trait ReactResizeDetectorProps
   var skipOnMount: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReactResizeDetectorProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    handleHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    handleWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    onResize: js.Function2[/* width */ scala.Double, /* height */ scala.Double, scala.Unit] = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[ReactResizeDetector] = null,
+    refreshMode: reactDashResizeDashDetectorLib.reactDashResizeDashDetectorLibStrings.throttle | reactDashResizeDashDetectorLib.reactDashResizeDashDetectorLibStrings.debounce = null,
+    refreshRate: scala.Int | scala.Double = null,
+    render: js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactNode] = null,
+    resizableElementId: java.lang.String = null,
+    skipOnMount: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReactResizeDetectorProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(handleHeight)) __obj.updateDynamic("handleHeight")(handleHeight)
+    if (!js.isUndefined(handleWidth)) __obj.updateDynamic("handleWidth")(handleWidth)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (refreshMode != null) __obj.updateDynamic("refreshMode")(refreshMode.asInstanceOf[js.Any])
+    if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (resizableElementId != null) __obj.updateDynamic("resizableElementId")(resizableElementId)
+    if (!js.isUndefined(skipOnMount)) __obj.updateDynamic("skipOnMount")(skipOnMount)
+    __obj.asInstanceOf[ReactResizeDetectorProps]
+  }
+}
+

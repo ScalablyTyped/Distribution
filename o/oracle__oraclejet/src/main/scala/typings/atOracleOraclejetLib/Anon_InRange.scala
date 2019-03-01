@@ -11,3 +11,14 @@ trait Anon_InRange extends js.Object {
   var min: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_InRange {
+  @scala.inline
+  def apply(inRange: java.lang.String = null, max: java.lang.String = null, min: java.lang.String = null): Anon_InRange = {
+    val __obj = js.Dynamic.literal()
+    if (inRange != null) __obj.updateDynamic("inRange")(inRange)
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (min != null) __obj.updateDynamic("min")(min)
+    __obj.asInstanceOf[Anon_InRange]
+  }
+}
+

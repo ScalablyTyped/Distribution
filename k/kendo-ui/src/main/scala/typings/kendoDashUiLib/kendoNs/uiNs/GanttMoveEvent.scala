@@ -11,3 +11,24 @@ trait GanttMoveEvent extends GanttEvent {
   var task: js.UndefOr[kendoDashUiLib.kendoNs.dataNs.GanttTask] = js.undefined
 }
 
+object GanttMoveEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Gantt,
+    end: stdLib.Date = null,
+    start: stdLib.Date = null,
+    task: kendoDashUiLib.kendoNs.dataNs.GanttTask = null
+  ): GanttMoveEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (task != null) __obj.updateDynamic("task")(task)
+    __obj.asInstanceOf[GanttMoveEvent]
+  }
+}
+

@@ -16,3 +16,13 @@ trait Label extends js.Object {
   var UserLocalizedLabel: LocalizedLabel
 }
 
+object Label {
+  @scala.inline
+  def apply(LocalizedLabels: js.Array[LocalizedLabel], UserLocalizedLabel: LocalizedLabel): Label = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LocalizedLabels")(LocalizedLabels)
+    __obj.updateDynamic("UserLocalizedLabel")(UserLocalizedLabel)
+    __obj.asInstanceOf[Label]
+  }
+}
+

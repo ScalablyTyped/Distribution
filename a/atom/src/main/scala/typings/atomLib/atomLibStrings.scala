@@ -19,19 +19,24 @@ object atomLibStrings {
   sealed trait `atom-text-editor` extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends atomLib.atomMod.TooltipPlacement
   
   @js.native
-  sealed trait `auto bottom` extends js.Object
+  sealed trait `auto bottom`
+    extends atomLib.atomMod.TooltipPlacement
   
   @js.native
-  sealed trait `auto left` extends js.Object
+  sealed trait `auto left`
+    extends atomLib.atomMod.TooltipPlacement
   
   @js.native
-  sealed trait `auto right` extends js.Object
+  sealed trait `auto right`
+    extends atomLib.atomMod.TooltipPlacement
   
   @js.native
-  sealed trait `auto top` extends js.Object
+  sealed trait `auto top`
+    extends atomLib.atomMod.TooltipPlacement
   
   @js.native
   sealed trait backward extends js.Object
@@ -43,13 +48,15 @@ object atomLibStrings {
   sealed trait beta extends js.Object
   
   @js.native
-  sealed trait big5hkscs extends js.Object
+  sealed trait big5hkscs
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
   sealed trait block extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends atomLib.atomMod.TooltipPlacement
   
   @js.native
   sealed trait center extends js.Object
@@ -130,19 +137,24 @@ object atomLibStrings {
   sealed trait coreDOTwarnOnLargeFileLimit extends js.Object
   
   @js.native
-  sealed trait cp437 extends js.Object
+  sealed trait cp437
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait cp850 extends js.Object
+  sealed trait cp850
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait cp866 extends js.Object
+  sealed trait cp866
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait cp932 extends js.Object
+  sealed trait cp932
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait cp950 extends js.Object
+  sealed trait cp950
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
   sealed trait created extends js.Object
@@ -256,10 +268,12 @@ object atomLibStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait eucjp extends js.Object
+  sealed trait eucjp
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait euckr extends js.Object
+  sealed trait euckr
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
   sealed trait experimental extends js.Object
@@ -277,10 +291,12 @@ object atomLibStrings {
   sealed trait forward extends js.Object
   
   @js.native
-  sealed trait gb18030 extends js.Object
+  sealed trait gb18030
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait gbk extends js.Object
+  sealed trait gbk
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
   sealed trait git extends js.Object
@@ -310,55 +326,72 @@ object atomLibStrings {
   sealed trait inside extends js.Object
   
   @js.native
-  sealed trait iso88591 extends js.Object
+  sealed trait iso88591
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso885910 extends js.Object
+  sealed trait iso885910
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso885913 extends js.Object
+  sealed trait iso885913
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso885914 extends js.Object
+  sealed trait iso885914
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso885915 extends js.Object
+  sealed trait iso885915
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso885916 extends js.Object
+  sealed trait iso885916
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso88592 extends js.Object
+  sealed trait iso88592
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso88593 extends js.Object
+  sealed trait iso88593
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso88594 extends js.Object
+  sealed trait iso88594
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso88595 extends js.Object
+  sealed trait iso88595
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso88596 extends js.Object
+  sealed trait iso88596
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso88597 extends js.Object
+  sealed trait iso88597
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso88598 extends js.Object
+  sealed trait iso88598
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait iso88599 extends js.Object
+  sealed trait iso88599
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait koi8r extends js.Object
+  sealed trait koi8r
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait koi8u extends js.Object
+  sealed trait koi8u
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends atomLib.atomMod.TooltipPlacement
   
   @js.native
   sealed trait limited extends js.Object
@@ -370,7 +403,8 @@ object atomLibStrings {
   sealed trait `line-number` extends js.Object
   
   @js.native
-  sealed trait macroman extends js.Object
+  sealed trait macroman
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
   sealed trait manual extends js.Object
@@ -412,13 +446,15 @@ object atomLibStrings {
   sealed trait renamed extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends atomLib.atomMod.TooltipPlacement
   
   @js.native
   sealed trait separator extends js.Object
   
   @js.native
-  sealed trait shiftjis extends js.Object
+  sealed trait shiftjis
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
   sealed trait skip extends js.Object
@@ -442,7 +478,8 @@ object atomLibStrings {
   sealed trait tail extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends atomLib.atomMod.TooltipPlacement
   
   @js.native
   sealed trait touch extends js.Object
@@ -454,43 +491,55 @@ object atomLibStrings {
   sealed trait up extends js.Object
   
   @js.native
-  sealed trait utf16be extends js.Object
+  sealed trait utf16be
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait utf16le extends js.Object
+  sealed trait utf16le
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
   sealed trait warning extends js.Object
   
   @js.native
-  sealed trait windows1250 extends js.Object
+  sealed trait windows1250
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait windows1251 extends js.Object
+  sealed trait windows1251
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait windows1252 extends js.Object
+  sealed trait windows1252
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait windows1253 extends js.Object
+  sealed trait windows1253
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait windows1254 extends js.Object
+  sealed trait windows1254
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait windows1255 extends js.Object
+  sealed trait windows1255
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait windows1256 extends js.Object
+  sealed trait windows1256
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait windows1257 extends js.Object
+  sealed trait windows1257
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
-  sealed trait windows1258 extends js.Object
+  sealed trait windows1258
+    extends atomLib.atomMod.FileEncoding
   
   @js.native
   sealed trait yes extends js.Object

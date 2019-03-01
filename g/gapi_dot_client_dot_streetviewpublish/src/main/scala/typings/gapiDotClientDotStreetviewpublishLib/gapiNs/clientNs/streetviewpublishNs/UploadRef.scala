@@ -14,3 +14,12 @@ trait UploadRef extends js.Object {
   var uploadUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UploadRef {
+  @scala.inline
+  def apply(uploadUrl: java.lang.String = null): UploadRef = {
+    val __obj = js.Dynamic.literal()
+    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl)
+    __obj.asInstanceOf[UploadRef]
+  }
+}
+

@@ -26,3 +26,28 @@ trait IBitcoinReceiverCreationOptions
   var refund_mispayments: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IBitcoinReceiverCreationOptions {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    email: java.lang.String,
+    description: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    refund_mispayments: js.UndefOr[scala.Boolean] = js.undefined
+  ): IBitcoinReceiverCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("email")(email)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (!js.isUndefined(refund_mispayments)) __obj.updateDynamic("refund_mispayments")(refund_mispayments)
+    __obj.asInstanceOf[IBitcoinReceiverCreationOptions]
+  }
+}
+

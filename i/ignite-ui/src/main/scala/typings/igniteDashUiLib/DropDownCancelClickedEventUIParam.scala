@@ -16,3 +16,13 @@ trait DropDownCancelClickedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DropDownCancelClickedEventUIParam {
+  @scala.inline
+  def apply(columnKey: java.lang.String = null, owner: js.Any = null): DropDownCancelClickedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DropDownCancelClickedEventUIParam]
+  }
+}
+

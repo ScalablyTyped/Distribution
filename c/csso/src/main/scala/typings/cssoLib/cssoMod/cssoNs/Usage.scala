@@ -13,3 +13,22 @@ trait Usage extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Usage {
+  @scala.inline
+  def apply(
+    blacklist: cssoLib.Anon_Classes = null,
+    classes: js.Array[java.lang.String] = null,
+    ids: js.Array[java.lang.String] = null,
+    scopes: js.Array[js.Array[java.lang.String]] = null,
+    tags: js.Array[java.lang.String] = null
+  ): Usage = {
+    val __obj = js.Dynamic.literal()
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[Usage]
+  }
+}
+

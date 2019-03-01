@@ -10,3 +10,13 @@ trait ThreadDescriptor extends js.Object {
   var rfcMessageId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ThreadDescriptor {
+  @scala.inline
+  def apply(gmailThreadId: java.lang.String = null, rfcMessageId: java.lang.String = null): ThreadDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (gmailThreadId != null) __obj.updateDynamic("gmailThreadId")(gmailThreadId)
+    if (rfcMessageId != null) __obj.updateDynamic("rfcMessageId")(rfcMessageId)
+    __obj.asInstanceOf[ThreadDescriptor]
+  }
+}
+

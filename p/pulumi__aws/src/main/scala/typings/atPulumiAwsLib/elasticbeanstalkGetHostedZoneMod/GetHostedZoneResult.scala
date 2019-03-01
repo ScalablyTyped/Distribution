@@ -12,3 +12,12 @@ trait GetHostedZoneResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetHostedZoneResult {
+  @scala.inline
+  def apply(id: java.lang.String): GetHostedZoneResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[GetHostedZoneResult]
+  }
+}
+

@@ -20,3 +20,18 @@ trait IpMapping extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IpMapping {
+  @scala.inline
+  def apply(
+    ipAddress: java.lang.String = null,
+    timeToRetire: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): IpMapping = {
+    val __obj = js.Dynamic.literal()
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
+    if (timeToRetire != null) __obj.updateDynamic("timeToRetire")(timeToRetire)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IpMapping]
+  }
+}
+

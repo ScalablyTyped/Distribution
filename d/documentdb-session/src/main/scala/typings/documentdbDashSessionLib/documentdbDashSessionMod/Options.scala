@@ -51,3 +51,24 @@ trait Options extends js.Object {
   var ttl: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    host: java.lang.String,
+    key: java.lang.String,
+    collection: java.lang.String = null,
+    database: java.lang.String = null,
+    discriminator: js.Object = null,
+    ttl: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("key")(key)
+    if (collection != null) __obj.updateDynamic("collection")(collection)
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -27,3 +27,22 @@ trait PivotGroup extends js.Object {
   var valueMetadata: js.UndefOr[js.Array[PivotGroupValueMetadata]] = js.undefined
 }
 
+object PivotGroup {
+  @scala.inline
+  def apply(
+    showTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    sortOrder: java.lang.String = null,
+    sourceColumnOffset: scala.Int | scala.Double = null,
+    valueBucket: PivotGroupSortValueBucket = null,
+    valueMetadata: js.Array[PivotGroupValueMetadata] = null
+  ): PivotGroup = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (sourceColumnOffset != null) __obj.updateDynamic("sourceColumnOffset")(sourceColumnOffset.asInstanceOf[js.Any])
+    if (valueBucket != null) __obj.updateDynamic("valueBucket")(valueBucket)
+    if (valueMetadata != null) __obj.updateDynamic("valueMetadata")(valueMetadata)
+    __obj.asInstanceOf[PivotGroup]
+  }
+}
+

@@ -11,3 +11,18 @@ trait OpeningHours extends js.Object {
   var weekday_text: js.Array[java.lang.String]
 }
 
+object OpeningHours {
+  @scala.inline
+  def apply(
+    open_now: scala.Boolean,
+    periods: js.Array[OpeningPeriod],
+    weekday_text: js.Array[java.lang.String]
+  ): OpeningHours = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("open_now")(open_now)
+    __obj.updateDynamic("periods")(periods)
+    __obj.updateDynamic("weekday_text")(weekday_text)
+    __obj.asInstanceOf[OpeningHours]
+  }
+}
+

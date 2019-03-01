@@ -14,3 +14,24 @@ trait ID3PieChart extends js.Object {
   def updateProp(propKey: java.lang.String, value: js.Any): scala.Unit
 }
 
+object ID3PieChart {
+  @scala.inline
+  def apply(
+    closeSegment: js.Function1[scala.Unit, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getOpenSegment: js.Function0[js.Any],
+    openSegment: js.Function1[scala.Double, scala.Unit],
+    redraw: js.Function0[scala.Unit],
+    updateProp: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): ID3PieChart = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("closeSegment")(closeSegment)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getOpenSegment")(getOpenSegment)
+    __obj.updateDynamic("openSegment")(openSegment)
+    __obj.updateDynamic("redraw")(redraw)
+    __obj.updateDynamic("updateProp")(updateProp)
+    __obj.asInstanceOf[ID3PieChart]
+  }
+}
+

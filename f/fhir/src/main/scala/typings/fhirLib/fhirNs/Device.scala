@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Item used in healthcare
   */
-trait Device extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Device extends DomainResource {
   /**
     * Contains extended information for property 'expirationDate'.
     */
@@ -109,5 +110,90 @@ trait Device extends DomainResource {
     * Version number (i.e. software)
     */
   var version: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object Device {
+  @scala.inline
+  def apply(
+    _expirationDate: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _lotNumber: Element = null,
+    _manufactureDate: Element = null,
+    _manufacturer: Element = null,
+    _model: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _url: Element = null,
+    _version: Element = null,
+    contact: js.Array[ContactPoint] = null,
+    contained: js.Array[Resource] = null,
+    expirationDate: dateTime = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    location: Reference = null,
+    lotNumber: java.lang.String = null,
+    manufactureDate: dateTime = null,
+    manufacturer: java.lang.String = null,
+    meta: Meta = null,
+    model: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null,
+    note: js.Array[Annotation] = null,
+    owner: Reference = null,
+    patient: Reference = null,
+    resourceType: code = null,
+    safety: js.Array[CodeableConcept] = null,
+    status: code = null,
+    text: Narrative = null,
+    `type`: CodeableConcept = null,
+    udi: DeviceUdi = null,
+    url: uri = null,
+    version: java.lang.String = null
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    if (_expirationDate != null) __obj.updateDynamic("_expirationDate")(_expirationDate)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_lotNumber != null) __obj.updateDynamic("_lotNumber")(_lotNumber)
+    if (_manufactureDate != null) __obj.updateDynamic("_manufactureDate")(_manufactureDate)
+    if (_manufacturer != null) __obj.updateDynamic("_manufacturer")(_manufacturer)
+    if (_model != null) __obj.updateDynamic("_model")(_model)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_url != null) __obj.updateDynamic("_url")(_url)
+    if (_version != null) __obj.updateDynamic("_version")(_version)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (lotNumber != null) __obj.updateDynamic("lotNumber")(lotNumber)
+    if (manufactureDate != null) __obj.updateDynamic("manufactureDate")(manufactureDate)
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (patient != null) __obj.updateDynamic("patient")(patient)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (safety != null) __obj.updateDynamic("safety")(safety)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (udi != null) __obj.updateDynamic("udi")(udi)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Device]
+  }
 }
 

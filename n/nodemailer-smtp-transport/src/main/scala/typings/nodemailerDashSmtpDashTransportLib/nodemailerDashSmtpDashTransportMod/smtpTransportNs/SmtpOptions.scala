@@ -118,3 +118,52 @@ trait SmtpOptions extends js.Object {
   var tls: js.UndefOr[nodeLib.tlsMod.ConnectionOptions] = js.undefined
 }
 
+object SmtpOptions {
+  @scala.inline
+  def apply(
+    auth: AuthOptions = null,
+    authMethod: java.lang.String = null,
+    connectionTimeout: scala.Int | scala.Double = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    disableFileAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    disableUrlAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    greetingTimeout: scala.Int | scala.Double = null,
+    host: java.lang.String = null,
+    ignoreTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    localAddress: java.lang.String = null,
+    logger: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    pool: nodemailerDashSmtpDashTransportLib.Anon_MaxConnections = null,
+    port: scala.Int | scala.Double = null,
+    proxy: java.lang.String = null,
+    requireTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    service: java.lang.String = null,
+    socketTimeout: scala.Int | scala.Double = null,
+    tls: nodeLib.tlsMod.ConnectionOptions = null
+  ): SmtpOptions = {
+    val __obj = js.Dynamic.literal()
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod)
+    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(disableFileAccess)) __obj.updateDynamic("disableFileAccess")(disableFileAccess)
+    if (!js.isUndefined(disableUrlAccess)) __obj.updateDynamic("disableUrlAccess")(disableUrlAccess)
+    if (greetingTimeout != null) __obj.updateDynamic("greetingTimeout")(greetingTimeout.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (!js.isUndefined(logger)) __obj.updateDynamic("logger")(logger)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pool != null) __obj.updateDynamic("pool")(pool)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (!js.isUndefined(requireTLS)) __obj.updateDynamic("requireTLS")(requireTLS)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
+    if (tls != null) __obj.updateDynamic("tls")(tls)
+    __obj.asInstanceOf[SmtpOptions]
+  }
+}
+

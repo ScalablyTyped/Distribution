@@ -22,3 +22,18 @@ trait PawsVerifyDeviceRequest extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PawsVerifyDeviceRequest {
+  @scala.inline
+  def apply(
+    deviceDescs: js.Array[DeviceDescriptor] = null,
+    `type`: java.lang.String = null,
+    version: java.lang.String = null
+  ): PawsVerifyDeviceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (deviceDescs != null) __obj.updateDynamic("deviceDescs")(deviceDescs)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PawsVerifyDeviceRequest]
+  }
+}
+

@@ -23,3 +23,22 @@ trait ActionTrigger extends js.Object {
   var Text: java.lang.String
 }
 
+object ActionTrigger {
+  @scala.inline
+  def apply(
+    CommandURL: java.lang.String,
+    HelpURL: java.lang.String,
+    Image: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap,
+    SubContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    Text: java.lang.String
+  ): ActionTrigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CommandURL")(CommandURL)
+    __obj.updateDynamic("HelpURL")(HelpURL)
+    __obj.updateDynamic("Image")(Image)
+    __obj.updateDynamic("SubContainer")(SubContainer)
+    __obj.updateDynamic("Text")(Text)
+    __obj.asInstanceOf[ActionTrigger]
+  }
+}
+

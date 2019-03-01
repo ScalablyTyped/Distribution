@@ -48,3 +48,36 @@ trait DisplayData extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DisplayData {
+  @scala.inline
+  def apply(
+    boolValue: js.UndefOr[scala.Boolean] = js.undefined,
+    durationValue: java.lang.String = null,
+    floatValue: scala.Int | scala.Double = null,
+    int64Value: java.lang.String = null,
+    javaClassValue: java.lang.String = null,
+    key: java.lang.String = null,
+    label: java.lang.String = null,
+    namespace: java.lang.String = null,
+    shortStrValue: java.lang.String = null,
+    strValue: java.lang.String = null,
+    timestampValue: java.lang.String = null,
+    url: java.lang.String = null
+  ): DisplayData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
+    if (durationValue != null) __obj.updateDynamic("durationValue")(durationValue)
+    if (floatValue != null) __obj.updateDynamic("floatValue")(floatValue.asInstanceOf[js.Any])
+    if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value)
+    if (javaClassValue != null) __obj.updateDynamic("javaClassValue")(javaClassValue)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (shortStrValue != null) __obj.updateDynamic("shortStrValue")(shortStrValue)
+    if (strValue != null) __obj.updateDynamic("strValue")(strValue)
+    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[DisplayData]
+  }
+}
+

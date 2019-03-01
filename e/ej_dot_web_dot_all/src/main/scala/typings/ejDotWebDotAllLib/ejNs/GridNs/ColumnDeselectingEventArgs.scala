@@ -29,3 +29,26 @@ trait ColumnDeselectingEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColumnDeselectingEventArgs {
+  @scala.inline
+  def apply(
+    column: js.Any = null,
+    columnIndex: scala.Int | scala.Double = null,
+    headerCell: js.Any = null,
+    isCtrlKeyPressed: js.UndefOr[scala.Boolean] = js.undefined,
+    isShiftKeyPressed: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): ColumnDeselectingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (headerCell != null) __obj.updateDynamic("headerCell")(headerCell)
+    if (!js.isUndefined(isCtrlKeyPressed)) __obj.updateDynamic("isCtrlKeyPressed")(isCtrlKeyPressed)
+    if (!js.isUndefined(isShiftKeyPressed)) __obj.updateDynamic("isShiftKeyPressed")(isShiftKeyPressed)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ColumnDeselectingEventArgs]
+  }
+}
+

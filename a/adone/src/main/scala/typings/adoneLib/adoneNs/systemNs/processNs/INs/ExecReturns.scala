@@ -40,3 +40,28 @@ trait ExecReturns extends js.Object {
   var timedOut: scala.Boolean
 }
 
+object ExecReturns {
+  @scala.inline
+  def apply(
+    cmd: java.lang.String,
+    code: scala.Double,
+    failed: scala.Boolean,
+    killed: scala.Boolean,
+    stderr: java.lang.String,
+    stdout: java.lang.String,
+    timedOut: scala.Boolean,
+    signal: java.lang.String = null
+  ): ExecReturns = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cmd")(cmd)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("failed")(failed)
+    __obj.updateDynamic("killed")(killed)
+    __obj.updateDynamic("stderr")(stderr)
+    __obj.updateDynamic("stdout")(stdout)
+    __obj.updateDynamic("timedOut")(timedOut)
+    if (signal != null) __obj.updateDynamic("signal")(signal)
+    __obj.asInstanceOf[ExecReturns]
+  }
+}
+

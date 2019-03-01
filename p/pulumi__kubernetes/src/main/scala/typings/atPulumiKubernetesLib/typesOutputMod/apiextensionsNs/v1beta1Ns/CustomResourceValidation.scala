@@ -15,3 +15,12 @@ trait CustomResourceValidation extends js.Object {
   val openAPIV3Schema: JSONSchemaProps
 }
 
+object CustomResourceValidation {
+  @scala.inline
+  def apply(openAPIV3Schema: JSONSchemaProps): CustomResourceValidation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("openAPIV3Schema")(openAPIV3Schema)
+    __obj.asInstanceOf[CustomResourceValidation]
+  }
+}
+

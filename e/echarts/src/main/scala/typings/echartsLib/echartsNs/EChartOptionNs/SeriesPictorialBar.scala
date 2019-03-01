@@ -86,7 +86,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar
   */
-trait SeriesPictorialBar extends js.Object {
+trait SeriesPictorialBar extends Series {
   /**
     * Whether to enable animation.
     *
@@ -1184,5 +1184,108 @@ trait SeriesPictorialBar extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesPictorialBar {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: echartsLib.Anon_AnimationDelay = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    barCategoryGap: java.lang.String = null,
+    barGap: java.lang.String = null,
+    barMaxWidth: scala.Int | scala.Double = null,
+    barMinHeight: scala.Int | scala.Double = null,
+    barWidth: scala.Int | scala.Double = null,
+    coordinateSystem: java.lang.String = null,
+    cursor: java.lang.String = null,
+    data: (js.Array[
+      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesPictorialBarNs.DataObject
+    ]) | (js.Array[
+      js.Array[
+        scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesPictorialBarNs.DataObject
+      ]
+    ]) = null,
+    dimensions: js.Array[_] = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = null,
+    encode: js.Object = null,
+    hoverAnimation: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
+    legendHoverLink: js.UndefOr[scala.Boolean] = js.undefined,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelay = null,
+    markPoint: echartsLib.Anon_Animation = null,
+    name: java.lang.String = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    symbol: java.lang.String = null,
+    symbolBoundingData: scala.Int | scala.Double = null,
+    symbolClip: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolMargin: scala.Double | java.lang.String = null,
+    symbolOffset: js.Array[_] = null,
+    symbolPatternSize: scala.Int | scala.Double = null,
+    symbolPosition: java.lang.String = null,
+    symbolRepeat: scala.Boolean | scala.Double | java.lang.String = null,
+    symbolRepeatDirection: java.lang.String = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | scala.Double = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    `type`: java.lang.String = null,
+    xAxisIndex: scala.Int | scala.Double = null,
+    yAxisIndex: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesPictorialBar = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (barCategoryGap != null) __obj.updateDynamic("barCategoryGap")(barCategoryGap)
+    if (barGap != null) __obj.updateDynamic("barGap")(barGap)
+    if (barMaxWidth != null) __obj.updateDynamic("barMaxWidth")(barMaxWidth.asInstanceOf[js.Any])
+    if (barMinHeight != null) __obj.updateDynamic("barMinHeight")(barMinHeight.asInstanceOf[js.Any])
+    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
+    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (hoverAnimation != null) __obj.updateDynamic("hoverAnimation")(hoverAnimation)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink)
+    if (markArea != null) __obj.updateDynamic("markArea")(markArea)
+    if (markLine != null) __obj.updateDynamic("markLine")(markLine)
+    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (symbolBoundingData != null) __obj.updateDynamic("symbolBoundingData")(symbolBoundingData.asInstanceOf[js.Any])
+    if (!js.isUndefined(symbolClip)) __obj.updateDynamic("symbolClip")(symbolClip)
+    if (symbolMargin != null) __obj.updateDynamic("symbolMargin")(symbolMargin.asInstanceOf[js.Any])
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolPatternSize != null) __obj.updateDynamic("symbolPatternSize")(symbolPatternSize.asInstanceOf[js.Any])
+    if (symbolPosition != null) __obj.updateDynamic("symbolPosition")(symbolPosition)
+    if (symbolRepeat != null) __obj.updateDynamic("symbolRepeat")(symbolRepeat.asInstanceOf[js.Any])
+    if (symbolRepeatDirection != null) __obj.updateDynamic("symbolRepeatDirection")(symbolRepeatDirection)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
+    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesPictorialBar]
+  }
 }
 

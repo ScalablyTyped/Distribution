@@ -20,3 +20,20 @@ trait StartEventArgs extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StartEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    `type`: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): StartEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StartEventArgs]
+  }
+}
+

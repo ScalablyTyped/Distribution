@@ -56,3 +56,36 @@ trait Region extends js.Object {
   var startLine: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Region {
+  @scala.inline
+  def apply(
+    byteLength: scala.Int | scala.Double = null,
+    byteOffset: scala.Int | scala.Double = null,
+    charLength: scala.Int | scala.Double = null,
+    charOffset: scala.Int | scala.Double = null,
+    endColumn: scala.Int | scala.Double = null,
+    endLine: scala.Int | scala.Double = null,
+    message: Message = null,
+    properties: PropertyBag = null,
+    snippet: ArtifactContent = null,
+    sourceLanguage: java.lang.String = null,
+    startColumn: scala.Int | scala.Double = null,
+    startLine: scala.Int | scala.Double = null
+  ): Region = {
+    val __obj = js.Dynamic.literal()
+    if (byteLength != null) __obj.updateDynamic("byteLength")(byteLength.asInstanceOf[js.Any])
+    if (byteOffset != null) __obj.updateDynamic("byteOffset")(byteOffset.asInstanceOf[js.Any])
+    if (charLength != null) __obj.updateDynamic("charLength")(charLength.asInstanceOf[js.Any])
+    if (charOffset != null) __obj.updateDynamic("charOffset")(charOffset.asInstanceOf[js.Any])
+    if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
+    if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (sourceLanguage != null) __obj.updateDynamic("sourceLanguage")(sourceLanguage)
+    if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])
+    if (startLine != null) __obj.updateDynamic("startLine")(startLine.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Region]
+  }
+}
+

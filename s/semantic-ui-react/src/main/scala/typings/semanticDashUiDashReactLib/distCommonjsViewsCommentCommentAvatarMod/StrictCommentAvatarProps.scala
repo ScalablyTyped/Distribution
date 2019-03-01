@@ -14,3 +14,14 @@ trait StrictCommentAvatarProps extends js.Object {
   var src: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StrictCommentAvatarProps {
+  @scala.inline
+  def apply(as: js.Any = null, className: java.lang.String = null, src: java.lang.String = null): StrictCommentAvatarProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (src != null) __obj.updateDynamic("src")(src)
+    __obj.asInstanceOf[StrictCommentAvatarProps]
+  }
+}
+

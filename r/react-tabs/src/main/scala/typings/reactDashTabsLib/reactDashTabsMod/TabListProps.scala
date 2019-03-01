@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object TabListProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null
+  ): TabListProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TabListProps]
+  }
+}
+

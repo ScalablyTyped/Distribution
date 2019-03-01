@@ -12,3 +12,12 @@ trait RefreshCompletedEventUIParam extends js.Object {
   var chart: js.UndefOr[js.Any] = js.undefined
 }
 
+object RefreshCompletedEventUIParam {
+  @scala.inline
+  def apply(chart: js.Any = null): RefreshCompletedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (chart != null) __obj.updateDynamic("chart")(chart)
+    __obj.asInstanceOf[RefreshCompletedEventUIParam]
+  }
+}
+

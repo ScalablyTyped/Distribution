@@ -16,10 +16,12 @@ object nodeDashJoseLibStrings {
   sealed trait compact extends js.Object
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends nodeDashJoseLib.nodeDashJoseMod.JWKNs.KeyUse
   
   @js.native
-  sealed trait enc extends js.Object
+  sealed trait enc
+    extends nodeDashJoseLib.nodeDashJoseMod.JWKNs.KeyUse
   
   @js.native
   sealed trait flattened extends js.Object
@@ -43,7 +45,8 @@ object nodeDashJoseLibStrings {
   sealed trait public extends js.Object
   
   @js.native
-  sealed trait sig extends js.Object
+  sealed trait sig
+    extends nodeDashJoseLib.nodeDashJoseMod.JWKNs.KeyUse
   
   @js.native
   sealed trait spki extends js.Object

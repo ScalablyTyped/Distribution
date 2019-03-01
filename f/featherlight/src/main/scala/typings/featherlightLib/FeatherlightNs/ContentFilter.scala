@@ -18,3 +18,21 @@ trait ContentFilter extends js.Object {
   ] = js.undefined
 }
 
+object ContentFilter {
+  @scala.inline
+  def apply(
+    process: js.Function1[
+      /* data */ featherlightLib.JQuery | java.lang.String, 
+      featherlightLib.JQuery | jqueryLib.JQueryPromise[featherlightLib.JQuery]
+    ] = null,
+    regex: stdLib.RegExp = null,
+    test: js.Function1[/* data */ featherlightLib.JQuery | java.lang.String, scala.Boolean] = null
+  ): ContentFilter = {
+    val __obj = js.Dynamic.literal()
+    if (process != null) __obj.updateDynamic("process")(process)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    if (test != null) __obj.updateDynamic("test")(test)
+    __obj.asInstanceOf[ContentFilter]
+  }
+}
+

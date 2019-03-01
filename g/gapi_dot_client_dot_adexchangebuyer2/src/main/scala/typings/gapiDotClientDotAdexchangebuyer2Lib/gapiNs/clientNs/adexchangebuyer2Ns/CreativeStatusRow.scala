@@ -17,3 +17,18 @@ trait CreativeStatusRow extends js.Object {
   var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
 }
 
+object CreativeStatusRow {
+  @scala.inline
+  def apply(
+    bidCount: MetricValue = null,
+    creativeStatusId: scala.Int | scala.Double = null,
+    rowDimensions: RowDimensions = null
+  ): CreativeStatusRow = {
+    val __obj = js.Dynamic.literal()
+    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount)
+    if (creativeStatusId != null) __obj.updateDynamic("creativeStatusId")(creativeStatusId.asInstanceOf[js.Any])
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    __obj.asInstanceOf[CreativeStatusRow]
+  }
+}
+

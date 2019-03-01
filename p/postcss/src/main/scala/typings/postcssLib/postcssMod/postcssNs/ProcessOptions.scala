@@ -32,3 +32,30 @@ trait ProcessOptions extends Syntax {
   var to: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProcessOptions {
+  @scala.inline
+  def apply(
+    from: java.lang.String = null,
+    map: SourceMapOptions = null,
+    parse: Parse = null,
+    parser: Parse | Syntax = null,
+    safe: js.UndefOr[scala.Boolean] = js.undefined,
+    stringifier: Stringify | Syntax = null,
+    stringify: Stringify = null,
+    syntax: Syntax = null,
+    to: java.lang.String = null
+  ): ProcessOptions = {
+    val __obj = js.Dynamic.literal()
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
+    if (stringifier != null) __obj.updateDynamic("stringifier")(stringifier.asInstanceOf[js.Any])
+    if (stringify != null) __obj.updateDynamic("stringify")(stringify)
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[ProcessOptions]
+  }
+}
+

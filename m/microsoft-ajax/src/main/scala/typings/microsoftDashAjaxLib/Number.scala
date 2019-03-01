@@ -21,3 +21,16 @@ trait Number extends js.Object {
   def localeFormat(format: java.lang.String): java.lang.String
 }
 
+object Number {
+  @scala.inline
+  def apply(
+    format: js.Function1[java.lang.String, java.lang.String],
+    localeFormat: js.Function1[java.lang.String, java.lang.String]
+  ): Number = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("localeFormat")(localeFormat)
+    __obj.asInstanceOf[Number]
+  }
+}
+

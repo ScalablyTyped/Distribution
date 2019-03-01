@@ -27,3 +27,26 @@ trait Proxy extends js.Object {
   var url: java.lang.String
 }
 
+object Proxy {
+  @scala.inline
+  def apply(
+    authorization: ProxyAuthorization,
+    description: java.lang.String,
+    friendlyName: java.lang.String,
+    globalDefault: scala.Boolean,
+    site: java.lang.String,
+    siteDefault: scala.Boolean,
+    url: java.lang.String
+  ): Proxy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorization")(authorization)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("friendlyName")(friendlyName)
+    __obj.updateDynamic("globalDefault")(globalDefault)
+    __obj.updateDynamic("site")(site)
+    __obj.updateDynamic("siteDefault")(siteDefault)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Proxy]
+  }
+}
+

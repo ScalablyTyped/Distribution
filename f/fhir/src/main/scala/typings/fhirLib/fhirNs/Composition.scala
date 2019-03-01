@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A set of resources composed into a single coherent clinical statement with clinical attestation
   */
-trait Composition extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Composition extends DomainResource {
   /**
     * Contains extended information for property 'confidentiality'.
     */
@@ -85,5 +86,77 @@ trait Composition extends DomainResource {
     * Kind of composition (LOINC if possible)
     */
   var `type`: CodeableConcept
+}
+
+object Composition {
+  @scala.inline
+  def apply(
+    author: js.Array[Reference],
+    date: dateTime,
+    status: code,
+    subject: Reference,
+    title: java.lang.String,
+    `type`: CodeableConcept,
+    _confidentiality: Element = null,
+    _date: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _title: Element = null,
+    attester: js.Array[CompositionAttester] = null,
+    `class`: CodeableConcept = null,
+    confidentiality: code = null,
+    contained: js.Array[Resource] = null,
+    custodian: Reference = null,
+    encounter: Reference = null,
+    event: js.Array[CompositionEvent] = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: Identifier = null,
+    implicitRules: uri = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    relatesTo: js.Array[CompositionRelatesTo] = null,
+    resourceType: code = null,
+    section: js.Array[CompositionSection] = null,
+    text: Narrative = null
+  ): Composition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("author")(author)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("subject")(subject)
+    __obj.updateDynamic("title")(title)
+    if (_confidentiality != null) __obj.updateDynamic("_confidentiality")(_confidentiality)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_title != null) __obj.updateDynamic("_title")(_title)
+    if (attester != null) __obj.updateDynamic("attester")(attester)
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (confidentiality != null) __obj.updateDynamic("confidentiality")(confidentiality)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (custodian != null) __obj.updateDynamic("custodian")(custodian)
+    if (encounter != null) __obj.updateDynamic("encounter")(encounter)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (relatesTo != null) __obj.updateDynamic("relatesTo")(relatesTo)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (section != null) __obj.updateDynamic("section")(section)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Composition]
+  }
 }
 

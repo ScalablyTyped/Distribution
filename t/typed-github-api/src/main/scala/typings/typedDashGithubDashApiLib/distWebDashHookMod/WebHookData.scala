@@ -12,3 +12,20 @@ trait WebHookData extends js.Object {
   var sender: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary
 }
 
+object WebHookData {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    event: java.lang.String,
+    id: java.lang.String,
+    sender: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary
+  ): WebHookData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[WebHookData]
+  }
+}
+

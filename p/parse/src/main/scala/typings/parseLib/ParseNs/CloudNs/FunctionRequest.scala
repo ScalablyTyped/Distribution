@@ -12,3 +12,20 @@ trait FunctionRequest extends js.Object {
   var user: js.UndefOr[parseLib.ParseNs.User] = js.undefined
 }
 
+object FunctionRequest {
+  @scala.inline
+  def apply(
+    installationId: nodeLib.String = null,
+    master: js.UndefOr[scala.Boolean] = js.undefined,
+    params: js.Any = null,
+    user: parseLib.ParseNs.User = null
+  ): FunctionRequest = {
+    val __obj = js.Dynamic.literal()
+    if (installationId != null) __obj.updateDynamic("installationId")(installationId)
+    if (!js.isUndefined(master)) __obj.updateDynamic("master")(master)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[FunctionRequest]
+  }
+}
+

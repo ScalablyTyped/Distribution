@@ -20,3 +20,18 @@ trait GetCipherTextArgs extends js.Object {
   val plaintext: java.lang.String
 }
 
+object GetCipherTextArgs {
+  @scala.inline
+  def apply(
+    keyId: java.lang.String,
+    plaintext: java.lang.String,
+    context: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): GetCipherTextArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyId")(keyId)
+    __obj.updateDynamic("plaintext")(plaintext)
+    if (context != null) __obj.updateDynamic("context")(context)
+    __obj.asInstanceOf[GetCipherTextArgs]
+  }
+}
+

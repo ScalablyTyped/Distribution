@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NamedNode extends js.Object {
+trait NamedNode
+  extends Quad_Graph
+     with Quad_Object
+     with Quad_Predicate
+     with Quad_Subject
+     with Term {
   /**
     * Contains the constant "NamedNode".
     */
@@ -19,5 +24,20 @@ trait NamedNode extends js.Object {
     * @return True if and only if other has termType "NamedNode" and the same `value`.
     */
   def equals(other: Term): scala.Boolean
+}
+
+object NamedNode {
+  @scala.inline
+  def apply(
+    equals: js.Function1[Term, scala.Boolean],
+    termType: rdfDashJsLib.rdfDashJsLibStrings.NamedNode,
+    value: java.lang.String
+  ): NamedNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("termType")(termType)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[NamedNode]
+  }
 }
 

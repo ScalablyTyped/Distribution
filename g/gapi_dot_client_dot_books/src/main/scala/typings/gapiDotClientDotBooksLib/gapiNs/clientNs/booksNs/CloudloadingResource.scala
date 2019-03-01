@@ -12,3 +12,27 @@ trait CloudloadingResource extends js.Object {
   def updateBook(request: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean): gapiDotClientLib.gapiNs.clientNs.Request[BooksCloudloadingResource]
 }
 
+object CloudloadingResource {
+  @scala.inline
+  def apply(
+    addBook: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltDrivedocumentid, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BooksCloudloadingResource]
+    ],
+    deleteBook: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    updateBook: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BooksCloudloadingResource]
+    ]
+  ): CloudloadingResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addBook")(addBook)
+    __obj.updateDynamic("deleteBook")(deleteBook)
+    __obj.updateDynamic("updateBook")(updateBook)
+    __obj.asInstanceOf[CloudloadingResource]
+  }
+}
+

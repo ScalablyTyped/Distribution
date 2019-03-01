@@ -42,3 +42,28 @@ trait XDictionaryEntry
   def isNegative(): scala.Boolean
 }
 
+object XDictionaryEntry {
+  @scala.inline
+  def apply(
+    DictionaryWord: java.lang.String,
+    ReplacementText: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getDictionaryWord: js.Function0[java.lang.String],
+    getReplacementText: js.Function0[java.lang.String],
+    isNegative: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDictionaryEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DictionaryWord")(DictionaryWord)
+    __obj.updateDynamic("ReplacementText")(ReplacementText)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDictionaryWord")(getDictionaryWord)
+    __obj.updateDynamic("getReplacementText")(getReplacementText)
+    __obj.updateDynamic("isNegative")(isNegative)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDictionaryEntry]
+  }
+}
+

@@ -12,3 +12,19 @@ trait InputValidationItem extends js.Object {
   var value: java.lang.String
 }
 
+object InputValidationItem {
+  @scala.inline
+  def apply(
+    isValid: scala.Boolean,
+    reason: java.lang.String,
+    `type`: java.lang.String,
+    value: java.lang.String
+  ): InputValidationItem = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[InputValidationItem]
+  }
+}
+

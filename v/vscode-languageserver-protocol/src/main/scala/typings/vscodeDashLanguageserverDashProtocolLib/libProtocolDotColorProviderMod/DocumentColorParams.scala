@@ -12,3 +12,14 @@ trait DocumentColorParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object DocumentColorParams {
+  @scala.inline
+  def apply(
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): DocumentColorParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("textDocument")(textDocument)
+    __obj.asInstanceOf[DocumentColorParams]
+  }
+}
+

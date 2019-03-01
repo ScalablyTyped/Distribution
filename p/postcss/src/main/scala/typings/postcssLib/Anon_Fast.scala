@@ -23,3 +23,13 @@ trait Anon_Fast extends js.Object {
   var props: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Fast {
+  @scala.inline
+  def apply(fast: java.lang.String = null, props: js.Array[java.lang.String] = null): Anon_Fast = {
+    val __obj = js.Dynamic.literal()
+    if (fast != null) __obj.updateDynamic("fast")(fast)
+    if (props != null) __obj.updateDynamic("props")(props)
+    __obj.asInstanceOf[Anon_Fast]
+  }
+}
+

@@ -12,3 +12,20 @@ trait ChartConfiguration extends js.Object {
   var `type`: js.UndefOr[ChartType | java.lang.String] = js.undefined
 }
 
+object ChartConfiguration {
+  @scala.inline
+  def apply(
+    data: ChartData = null,
+    options: ChartOptions = null,
+    plugins: js.Array[chartDotJsLib.chartDotJsMod.PluginServiceRegistrationOptions] = null,
+    `type`: ChartType | java.lang.String = null
+  ): ChartConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartConfiguration]
+  }
+}
+

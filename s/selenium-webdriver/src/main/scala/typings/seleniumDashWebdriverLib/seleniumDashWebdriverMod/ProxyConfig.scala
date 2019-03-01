@@ -17,3 +17,30 @@ trait ProxyConfig extends js.Object {
   var sslProxy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProxyConfig {
+  @scala.inline
+  def apply(
+    proxyType: java.lang.String,
+    ftpProxy: java.lang.String = null,
+    httpProxy: java.lang.String = null,
+    noProxy: java.lang.String = null,
+    proxyAutoconfigUrl: java.lang.String = null,
+    socksPassword: java.lang.String = null,
+    socksProxy: java.lang.String = null,
+    socksUsername: java.lang.String = null,
+    sslProxy: java.lang.String = null
+  ): ProxyConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("proxyType")(proxyType)
+    if (ftpProxy != null) __obj.updateDynamic("ftpProxy")(ftpProxy)
+    if (httpProxy != null) __obj.updateDynamic("httpProxy")(httpProxy)
+    if (noProxy != null) __obj.updateDynamic("noProxy")(noProxy)
+    if (proxyAutoconfigUrl != null) __obj.updateDynamic("proxyAutoconfigUrl")(proxyAutoconfigUrl)
+    if (socksPassword != null) __obj.updateDynamic("socksPassword")(socksPassword)
+    if (socksProxy != null) __obj.updateDynamic("socksProxy")(socksProxy)
+    if (socksUsername != null) __obj.updateDynamic("socksUsername")(socksUsername)
+    if (sslProxy != null) __obj.updateDynamic("sslProxy")(sslProxy)
+    __obj.asInstanceOf[ProxyConfig]
+  }
+}
+

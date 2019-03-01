@@ -29,3 +29,30 @@ trait Report extends js.Object {
   var statisticsTimeZone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Report {
+  @scala.inline
+  def apply(
+    files: js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_ByteCount] = null,
+    id: java.lang.String = null,
+    isReportReady: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    request: ReportRequest = null,
+    rowCount: scala.Int | scala.Double = null,
+    rows: js.Array[ReportRow] = null,
+    statisticsCurrencyCode: java.lang.String = null,
+    statisticsTimeZone: java.lang.String = null
+  ): Report = {
+    val __obj = js.Dynamic.literal()
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isReportReady)) __obj.updateDynamic("isReportReady")(isReportReady)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (statisticsCurrencyCode != null) __obj.updateDynamic("statisticsCurrencyCode")(statisticsCurrencyCode)
+    if (statisticsTimeZone != null) __obj.updateDynamic("statisticsTimeZone")(statisticsTimeZone)
+    __obj.asInstanceOf[Report]
+  }
+}
+

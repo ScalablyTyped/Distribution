@@ -15,3 +15,18 @@ trait KeyboardSpacerProps extends js.Object {
   var topSpacing: js.UndefOr[scala.Double] = js.undefined
 }
 
+object KeyboardSpacerProps {
+  @scala.inline
+  def apply(
+    onToggle: js.Function2[/* keyboardIsOpen */ scala.Boolean, /* keyboardSpace */ scala.Double, scala.Unit] = null,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    topSpacing: scala.Int | scala.Double = null
+  ): KeyboardSpacerProps = {
+    val __obj = js.Dynamic.literal()
+    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (topSpacing != null) __obj.updateDynamic("topSpacing")(topSpacing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyboardSpacerProps]
+  }
+}
+

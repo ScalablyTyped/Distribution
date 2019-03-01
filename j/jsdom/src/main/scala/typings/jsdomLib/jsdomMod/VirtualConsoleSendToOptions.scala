@@ -9,3 +9,12 @@ trait VirtualConsoleSendToOptions extends js.Object {
   var omitJSDOMErrors: scala.Boolean
 }
 
+object VirtualConsoleSendToOptions {
+  @scala.inline
+  def apply(omitJSDOMErrors: scala.Boolean): VirtualConsoleSendToOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("omitJSDOMErrors")(omitJSDOMErrors)
+    __obj.asInstanceOf[VirtualConsoleSendToOptions]
+  }
+}
+

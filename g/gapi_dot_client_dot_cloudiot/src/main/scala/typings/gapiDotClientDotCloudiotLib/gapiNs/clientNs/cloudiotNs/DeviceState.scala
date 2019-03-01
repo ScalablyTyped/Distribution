@@ -15,3 +15,13 @@ trait DeviceState extends js.Object {
   var updateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeviceState {
+  @scala.inline
+  def apply(binaryData: java.lang.String = null, updateTime: java.lang.String = null): DeviceState = {
+    val __obj = js.Dynamic.literal()
+    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    __obj.asInstanceOf[DeviceState]
+  }
+}
+

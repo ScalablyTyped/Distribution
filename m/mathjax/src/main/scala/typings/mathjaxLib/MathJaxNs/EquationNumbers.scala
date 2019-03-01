@@ -31,3 +31,24 @@ trait EquationNumbers extends js.Object {
   var useLabelIds: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EquationNumbers {
+  @scala.inline
+  def apply(
+    autoNumber: java.lang.String = null,
+    formatID: js.Function0[java.lang.String] = null,
+    formatNumber: js.Function1[/* n */ scala.Double, java.lang.String] = null,
+    formatTag: js.Function1[/* n */ scala.Double, java.lang.String] = null,
+    formatURL: js.Function1[/* id */ java.lang.String, java.lang.String] = null,
+    useLabelIds: js.UndefOr[scala.Boolean] = js.undefined
+  ): EquationNumbers = {
+    val __obj = js.Dynamic.literal()
+    if (autoNumber != null) __obj.updateDynamic("autoNumber")(autoNumber)
+    if (formatID != null) __obj.updateDynamic("formatID")(formatID)
+    if (formatNumber != null) __obj.updateDynamic("formatNumber")(formatNumber)
+    if (formatTag != null) __obj.updateDynamic("formatTag")(formatTag)
+    if (formatURL != null) __obj.updateDynamic("formatURL")(formatURL)
+    if (!js.isUndefined(useLabelIds)) __obj.updateDynamic("useLabelIds")(useLabelIds)
+    __obj.asInstanceOf[EquationNumbers]
+  }
+}
+

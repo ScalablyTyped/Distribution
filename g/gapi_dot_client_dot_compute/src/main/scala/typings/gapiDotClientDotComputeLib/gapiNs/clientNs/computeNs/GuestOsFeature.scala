@@ -13,3 +13,12 @@ trait GuestOsFeature extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GuestOsFeature {
+  @scala.inline
+  def apply(`type`: java.lang.String = null): GuestOsFeature = {
+    val __obj = js.Dynamic.literal()
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[GuestOsFeature]
+  }
+}
+

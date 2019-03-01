@@ -52,3 +52,34 @@ trait WindowProps extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WindowProps {
+  @scala.inline
+  def apply(
+    borderless: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.Global.JSXNs.Element = null,
+    closed: js.UndefOr[scala.Boolean] = js.undefined,
+    fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    lastWindow: js.UndefOr[scala.Boolean] = js.undefined,
+    margined: js.UndefOr[scala.Boolean] = js.undefined,
+    menuBar: js.UndefOr[scala.Boolean] = js.undefined,
+    onClose: js.Function0[scala.Unit] = null,
+    onContentSizeChange: js.Function1[/* size */ protonDashNativeLib.Anon_HY, scala.Unit] = null,
+    size: protonDashNativeLib.Anon_HW = null,
+    title: java.lang.String = null
+  ): WindowProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (!js.isUndefined(lastWindow)) __obj.updateDynamic("lastWindow")(lastWindow)
+    if (!js.isUndefined(margined)) __obj.updateDynamic("margined")(margined)
+    if (!js.isUndefined(menuBar)) __obj.updateDynamic("menuBar")(menuBar)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(onContentSizeChange)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[WindowProps]
+  }
+}
+

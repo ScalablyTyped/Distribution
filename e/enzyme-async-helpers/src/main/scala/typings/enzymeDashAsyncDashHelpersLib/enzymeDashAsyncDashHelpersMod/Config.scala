@@ -16,3 +16,22 @@ trait Config extends js.Object {
   var timeoutMessage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    interval: scala.Int | scala.Double = null,
+    logStructureOnSuccess: js.UndefOr[scala.Boolean] = js.undefined,
+    logStructureOnTimeout: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    timeoutMessage: java.lang.String = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(logStructureOnSuccess)) __obj.updateDynamic("logStructureOnSuccess")(logStructureOnSuccess)
+    if (!js.isUndefined(logStructureOnTimeout)) __obj.updateDynamic("logStructureOnTimeout")(logStructureOnTimeout)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (timeoutMessage != null) __obj.updateDynamic("timeoutMessage")(timeoutMessage)
+    __obj.asInstanceOf[Config]
+  }
+}
+

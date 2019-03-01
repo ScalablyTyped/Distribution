@@ -16,3 +16,20 @@ trait ResetPasswordResponse extends js.Object {
   var requestType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResetPasswordResponse {
+  @scala.inline
+  def apply(
+    email: java.lang.String = null,
+    kind: java.lang.String = null,
+    newEmail: java.lang.String = null,
+    requestType: java.lang.String = null
+  ): ResetPasswordResponse = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (newEmail != null) __obj.updateDynamic("newEmail")(newEmail)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    __obj.asInstanceOf[ResetPasswordResponse]
+  }
+}
+

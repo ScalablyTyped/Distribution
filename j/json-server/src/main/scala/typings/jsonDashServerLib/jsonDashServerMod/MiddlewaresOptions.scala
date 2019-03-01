@@ -33,3 +33,22 @@ trait MiddlewaresOptions extends js.Object {
   var static: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MiddlewaresOptions {
+  @scala.inline
+  def apply(
+    bodyParser: js.UndefOr[scala.Boolean] = js.undefined,
+    logger: js.UndefOr[scala.Boolean] = js.undefined,
+    noCors: js.UndefOr[scala.Boolean] = js.undefined,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    static: java.lang.String = null
+  ): MiddlewaresOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bodyParser)) __obj.updateDynamic("bodyParser")(bodyParser)
+    if (!js.isUndefined(logger)) __obj.updateDynamic("logger")(logger)
+    if (!js.isUndefined(noCors)) __obj.updateDynamic("noCors")(noCors)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (static != null) __obj.updateDynamic("static")(static)
+    __obj.asInstanceOf[MiddlewaresOptions]
+  }
+}
+

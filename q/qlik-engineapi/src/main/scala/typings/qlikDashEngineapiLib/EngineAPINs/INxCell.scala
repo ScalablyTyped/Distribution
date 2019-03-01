@@ -89,3 +89,36 @@ trait INxCell extends js.Object {
   var qText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object INxCell {
+  @scala.inline
+  def apply(
+    qAttrDims: INxAttributeExpressionValues,
+    qAttrExps: INxAttributeExpressionValues,
+    qElemNumber: scala.Double,
+    qIsNull: scala.Boolean,
+    qState: NxCellStateType,
+    qFrequency: java.lang.String = null,
+    qHighlightRanges: INxHighlightRanges = null,
+    qIsEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    qIsOtherCell: js.UndefOr[scala.Boolean] = js.undefined,
+    qIsTotalCell: js.UndefOr[scala.Boolean] = js.undefined,
+    qNum: scala.Int | scala.Double = null,
+    qText: java.lang.String = null
+  ): INxCell = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qAttrDims")(qAttrDims)
+    __obj.updateDynamic("qAttrExps")(qAttrExps)
+    __obj.updateDynamic("qElemNumber")(qElemNumber)
+    __obj.updateDynamic("qIsNull")(qIsNull)
+    __obj.updateDynamic("qState")(qState)
+    if (qFrequency != null) __obj.updateDynamic("qFrequency")(qFrequency)
+    if (qHighlightRanges != null) __obj.updateDynamic("qHighlightRanges")(qHighlightRanges)
+    if (!js.isUndefined(qIsEmpty)) __obj.updateDynamic("qIsEmpty")(qIsEmpty)
+    if (!js.isUndefined(qIsOtherCell)) __obj.updateDynamic("qIsOtherCell")(qIsOtherCell)
+    if (!js.isUndefined(qIsTotalCell)) __obj.updateDynamic("qIsTotalCell")(qIsTotalCell)
+    if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
+    if (qText != null) __obj.updateDynamic("qText")(qText)
+    __obj.asInstanceOf[INxCell]
+  }
+}
+

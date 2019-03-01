@@ -14,3 +14,18 @@ trait IdentitytoolkitRelyingpartyDeleteAccountRequest extends js.Object {
   var localId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartyDeleteAccountRequest {
+  @scala.inline
+  def apply(
+    delegatedProjectNumber: java.lang.String = null,
+    idToken: java.lang.String = null,
+    localId: java.lang.String = null
+  ): IdentitytoolkitRelyingpartyDeleteAccountRequest = {
+    val __obj = js.Dynamic.literal()
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (localId != null) __obj.updateDynamic("localId")(localId)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartyDeleteAccountRequest]
+  }
+}
+

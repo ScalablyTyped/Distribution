@@ -20,3 +20,13 @@ trait ListClientUserInvitationsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListClientUserInvitationsResponse {
+  @scala.inline
+  def apply(invitations: js.Array[ClientUserInvitation] = null, nextPageToken: java.lang.String = null): ListClientUserInvitationsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (invitations != null) __obj.updateDynamic("invitations")(invitations)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListClientUserInvitationsResponse]
+  }
+}
+

@@ -30,3 +30,18 @@ trait InkAnalysisLineData extends js.Object {
   var words: js.UndefOr[js.Array[InkAnalysisWordData]] = js.undefined
 }
 
+object InkAnalysisLineData {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    paragraph: InkAnalysisParagraphData = null,
+    words: js.Array[InkAnalysisWordData] = null
+  ): InkAnalysisLineData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    if (words != null) __obj.updateDynamic("words")(words)
+    __obj.asInstanceOf[InkAnalysisLineData]
+  }
+}
+

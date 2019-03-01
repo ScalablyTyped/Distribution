@@ -53,3 +53,30 @@ trait ClusterState extends js.Object {
   val vpcId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ClusterState {
+  @scala.inline
+  def apply(
+    clusterCertificates: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AwsHardwareCertificateClusterCertificate] = null,
+    clusterId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterState: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hsmType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sourceBackupIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ClusterState = {
+    val __obj = js.Dynamic.literal()
+    if (clusterCertificates != null) __obj.updateDynamic("clusterCertificates")(clusterCertificates.asInstanceOf[js.Any])
+    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
+    if (clusterState != null) __obj.updateDynamic("clusterState")(clusterState.asInstanceOf[js.Any])
+    if (hsmType != null) __obj.updateDynamic("hsmType")(hsmType.asInstanceOf[js.Any])
+    if (securityGroupId != null) __obj.updateDynamic("securityGroupId")(securityGroupId.asInstanceOf[js.Any])
+    if (sourceBackupIdentifier != null) __obj.updateDynamic("sourceBackupIdentifier")(sourceBackupIdentifier.asInstanceOf[js.Any])
+    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterState]
+  }
+}
+

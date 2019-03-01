@@ -61,3 +61,38 @@ trait Anon_CacheFile extends js.Object {
   ] = js.undefined
 }
 
+object Anon_CacheFile {
+  @scala.inline
+  def apply(
+    cacheFile: java.lang.String = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    dest: java.lang.String = null,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    once: js.UndefOr[scala.Boolean] = js.undefined,
+    pathRoot: java.lang.String = null,
+    postprocess: Anon_Css = null,
+    preprocess: Anon_CssImportPaths = null,
+    render: Anon_Compress = null,
+    storeCss: js.Function4[
+      /* pathname */ java.lang.String, 
+      /* css */ java.lang.String, 
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* next */ js.Function, 
+      scala.Unit
+    ] = null
+  ): Anon_CacheFile = {
+    val __obj = js.Dynamic.literal()
+    if (cacheFile != null) __obj.updateDynamic("cacheFile")(cacheFile)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
+    if (pathRoot != null) __obj.updateDynamic("pathRoot")(pathRoot)
+    if (postprocess != null) __obj.updateDynamic("postprocess")(postprocess)
+    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (storeCss != null) __obj.updateDynamic("storeCss")(storeCss)
+    __obj.asInstanceOf[Anon_CacheFile]
+  }
+}
+

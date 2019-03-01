@@ -20,3 +20,18 @@ trait PictureSettings extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PictureSettings {
+  @scala.inline
+  def apply(
+    allowPictures: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): PictureSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowPictures)) __obj.updateDynamic("allowPictures")(allowPictures)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PictureSettings]
+  }
+}
+

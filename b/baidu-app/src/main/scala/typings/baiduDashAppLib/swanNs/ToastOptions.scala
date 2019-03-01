@@ -33,3 +33,28 @@ trait ToastOptions
   var title: java.lang.String
 }
 
+object ToastOptions {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    duration: scala.Int | scala.Double = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    icon: baiduDashAppLib.baiduDashAppLibStrings.success | baiduDashAppLib.baiduDashAppLibStrings.loading = null,
+    image: java.lang.String = null,
+    mask: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): ToastOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ToastOptions]
+  }
+}
+

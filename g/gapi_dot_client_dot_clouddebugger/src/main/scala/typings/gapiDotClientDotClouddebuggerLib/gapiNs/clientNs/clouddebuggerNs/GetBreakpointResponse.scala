@@ -13,3 +13,12 @@ trait GetBreakpointResponse extends js.Object {
   var breakpoint: js.UndefOr[Breakpoint] = js.undefined
 }
 
+object GetBreakpointResponse {
+  @scala.inline
+  def apply(breakpoint: Breakpoint = null): GetBreakpointResponse = {
+    val __obj = js.Dynamic.literal()
+    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint)
+    __obj.asInstanceOf[GetBreakpointResponse]
+  }
+}
+

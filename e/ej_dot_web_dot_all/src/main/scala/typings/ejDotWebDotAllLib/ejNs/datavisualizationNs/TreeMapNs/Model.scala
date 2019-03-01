@@ -203,3 +203,118 @@ trait Model extends js.Object {
   var weightValuePath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    Click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    borderBrush: java.lang.String = null,
+    borderThickness: scala.Int | scala.Double = null,
+    colorPath: java.lang.String = null,
+    colorValuePath: java.lang.String = null,
+    dataSource: js.Any = null,
+    desaturationColorMapping: DesaturationColorMapping = null,
+    dockPosition: DockPosition | java.lang.String = null,
+    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
+    draggingGroupOnSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    draggingOnSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    drillDownHeaderColor: java.lang.String = null,
+    drillDownItemSelected: js.Function1[/* e */ DrillDownItemSelectedEventArgs, scala.Unit] = null,
+    drillDownLevel: scala.Int | scala.Double = null,
+    drillDownSelectionColor: java.lang.String = null,
+    drillDownValue: java.lang.String = null,
+    drillStarted: js.Function1[/* e */ DrillStartedEventArgs, scala.Unit] = null,
+    enableDrillDown: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGradient: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGroupSeparator: js.UndefOr[scala.Boolean] = js.undefined,
+    enableResize: js.UndefOr[scala.Boolean] = js.undefined,
+    groupColorMapping: js.Array[GroupColorMapping] = null,
+    groupSelectionMode: groupSelectionMode | java.lang.String = null,
+    header: java.lang.String = null,
+    headerTemplateRendering: js.Function1[/* e */ HeaderTemplateRenderingEventArgs, scala.Unit] = null,
+    highlightBorderBrush: java.lang.String = null,
+    highlightBorderThickness: scala.Int | scala.Double = null,
+    highlightGroupBorderBrush: java.lang.String = null,
+    highlightGroupBorderThickness: scala.Int | scala.Double = null,
+    highlightGroupOnSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightOnSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    isHierarchicalDatasource: js.UndefOr[scala.Boolean] = js.undefined,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    itemRendering: js.Function1[/* e */ ItemRenderingEventArgs, scala.Unit] = null,
+    itemsLayoutMode: ItemsLayoutMode | java.lang.String = null,
+    leafItemSettings: LeafItemSettings = null,
+    legendItemRendering: js.Function1[/* e */ LegendItemRenderingEventArgs, scala.Unit] = null,
+    legendSettings: LegendSettings = null,
+    levels: js.Array[Level] = null,
+    locale: java.lang.String = null,
+    paletteColorMapping: PaletteColorMapping = null,
+    rangeColorMapping: js.Array[RangeColorMapping] = null,
+    refreshed: js.Function1[/* e */ RefreshedEventArgs, scala.Unit] = null,
+    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
+    selectionMode: selectionMode | java.lang.String = null,
+    showLegend: js.UndefOr[scala.Boolean] = js.undefined,
+    showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltipTemplate: java.lang.String = null,
+    treeMapGroupSelected: js.Function1[/* e */ TreeMapGroupSelectedEventArgs, scala.Unit] = null,
+    treeMapItemSelected: js.Function1[/* e */ TreeMapItemSelectedEventArgs, scala.Unit] = null,
+    treeMapItems: js.Array[_] = null,
+    uniColorMapping: UniColorMapping = null,
+    weightValuePath: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (Click != null) __obj.updateDynamic("Click")(Click)
+    if (borderBrush != null) __obj.updateDynamic("borderBrush")(borderBrush)
+    if (borderThickness != null) __obj.updateDynamic("borderThickness")(borderThickness.asInstanceOf[js.Any])
+    if (colorPath != null) __obj.updateDynamic("colorPath")(colorPath)
+    if (colorValuePath != null) __obj.updateDynamic("colorValuePath")(colorValuePath)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (desaturationColorMapping != null) __obj.updateDynamic("desaturationColorMapping")(desaturationColorMapping)
+    if (dockPosition != null) __obj.updateDynamic("dockPosition")(dockPosition.asInstanceOf[js.Any])
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
+    if (!js.isUndefined(draggingGroupOnSelection)) __obj.updateDynamic("draggingGroupOnSelection")(draggingGroupOnSelection)
+    if (!js.isUndefined(draggingOnSelection)) __obj.updateDynamic("draggingOnSelection")(draggingOnSelection)
+    if (drillDownHeaderColor != null) __obj.updateDynamic("drillDownHeaderColor")(drillDownHeaderColor)
+    if (drillDownItemSelected != null) __obj.updateDynamic("drillDownItemSelected")(drillDownItemSelected)
+    if (drillDownLevel != null) __obj.updateDynamic("drillDownLevel")(drillDownLevel.asInstanceOf[js.Any])
+    if (drillDownSelectionColor != null) __obj.updateDynamic("drillDownSelectionColor")(drillDownSelectionColor)
+    if (drillDownValue != null) __obj.updateDynamic("drillDownValue")(drillDownValue)
+    if (drillStarted != null) __obj.updateDynamic("drillStarted")(drillStarted)
+    if (!js.isUndefined(enableDrillDown)) __obj.updateDynamic("enableDrillDown")(enableDrillDown)
+    if (!js.isUndefined(enableGradient)) __obj.updateDynamic("enableGradient")(enableGradient)
+    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator)
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize)
+    if (groupColorMapping != null) __obj.updateDynamic("groupColorMapping")(groupColorMapping)
+    if (groupSelectionMode != null) __obj.updateDynamic("groupSelectionMode")(groupSelectionMode.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (headerTemplateRendering != null) __obj.updateDynamic("headerTemplateRendering")(headerTemplateRendering)
+    if (highlightBorderBrush != null) __obj.updateDynamic("highlightBorderBrush")(highlightBorderBrush)
+    if (highlightBorderThickness != null) __obj.updateDynamic("highlightBorderThickness")(highlightBorderThickness.asInstanceOf[js.Any])
+    if (highlightGroupBorderBrush != null) __obj.updateDynamic("highlightGroupBorderBrush")(highlightGroupBorderBrush)
+    if (highlightGroupBorderThickness != null) __obj.updateDynamic("highlightGroupBorderThickness")(highlightGroupBorderThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightGroupOnSelection)) __obj.updateDynamic("highlightGroupOnSelection")(highlightGroupOnSelection)
+    if (!js.isUndefined(highlightOnSelection)) __obj.updateDynamic("highlightOnSelection")(highlightOnSelection)
+    if (!js.isUndefined(isHierarchicalDatasource)) __obj.updateDynamic("isHierarchicalDatasource")(isHierarchicalDatasource)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (itemRendering != null) __obj.updateDynamic("itemRendering")(itemRendering)
+    if (itemsLayoutMode != null) __obj.updateDynamic("itemsLayoutMode")(itemsLayoutMode.asInstanceOf[js.Any])
+    if (leafItemSettings != null) __obj.updateDynamic("leafItemSettings")(leafItemSettings)
+    if (legendItemRendering != null) __obj.updateDynamic("legendItemRendering")(legendItemRendering)
+    if (legendSettings != null) __obj.updateDynamic("legendSettings")(legendSettings)
+    if (levels != null) __obj.updateDynamic("levels")(levels)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (paletteColorMapping != null) __obj.updateDynamic("paletteColorMapping")(paletteColorMapping)
+    if (rangeColorMapping != null) __obj.updateDynamic("rangeColorMapping")(rangeColorMapping)
+    if (refreshed != null) __obj.updateDynamic("refreshed")(refreshed)
+    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLegend)) __obj.updateDynamic("showLegend")(showLegend)
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (treeMapGroupSelected != null) __obj.updateDynamic("treeMapGroupSelected")(treeMapGroupSelected)
+    if (treeMapItemSelected != null) __obj.updateDynamic("treeMapItemSelected")(treeMapItemSelected)
+    if (treeMapItems != null) __obj.updateDynamic("treeMapItems")(treeMapItems)
+    if (uniColorMapping != null) __obj.updateDynamic("uniColorMapping")(uniColorMapping)
+    if (weightValuePath != null) __obj.updateDynamic("weightValuePath")(weightValuePath)
+    __obj.asInstanceOf[Model]
+  }
+}
+

@@ -54,3 +54,24 @@ trait XCommandProcessor
   def execute(aCommand: Command, CommandId: scala.Double, Environment: XCommandEnvironment): js.Any
 }
 
+object XCommandProcessor {
+  @scala.inline
+  def apply(
+    abort: js.Function1[scala.Double, scala.Unit],
+    acquire: js.Function0[scala.Unit],
+    createCommandIdentifier: js.Function0[scala.Double],
+    execute: js.Function3[Command, scala.Double, XCommandEnvironment, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCommandProcessor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abort")(abort)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createCommandIdentifier")(createCommandIdentifier)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCommandProcessor]
+  }
+}
+

@@ -15,3 +15,20 @@ trait ActiveXObject extends js.Object {
   ): scala.Unit
 }
 
+object ActiveXObject {
+  @scala.inline
+  def apply(
+    set_Item: js.Function4[
+      activexDashScriptingLib.ScriptingNs.Dictionary[js.Any, js.Any], 
+      activexDashScriptingLib.activexDashScriptingLibStrings.Item, 
+      js.Array[js.Any], 
+      js.Any, 
+      scala.Unit
+    ]
+  ): ActiveXObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("set")(set_Item)
+    __obj.asInstanceOf[ActiveXObject]
+  }
+}
+

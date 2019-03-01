@@ -15,3 +15,26 @@ trait IBackupJob extends js.Object {
   def Clone(): IBackupJob
 }
 
+object IBackupJob {
+  @scala.inline
+  def apply(
+    BackupType: mfilesLib.MFilesNs.MFBackupType,
+    Clone: js.Function0[IBackupJob],
+    FileSizeLimitInMB: scala.Double,
+    Impersonation: IImpersonation,
+    OverwriteExistingFiles: scala.Boolean,
+    TargetFile: java.lang.String,
+    VaultGUID: java.lang.String
+  ): IBackupJob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BackupType")(BackupType)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("FileSizeLimitInMB")(FileSizeLimitInMB)
+    __obj.updateDynamic("Impersonation")(Impersonation)
+    __obj.updateDynamic("OverwriteExistingFiles")(OverwriteExistingFiles)
+    __obj.updateDynamic("TargetFile")(TargetFile)
+    __obj.updateDynamic("VaultGUID")(VaultGUID)
+    __obj.asInstanceOf[IBackupJob]
+  }
+}
+

@@ -12,3 +12,13 @@ trait ContextEntry extends js.Object {
   val `type`: Decoder[_, _]
 }
 
+object ContextEntry {
+  @scala.inline
+  def apply(key: java.lang.String, `type`: Decoder[_, _], actual: js.Any = null): ContextEntry = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("key")(key)
+    if (actual != null) __obj.updateDynamic("actual")(actual)
+    __obj.asInstanceOf[ContextEntry]
+  }
+}
+

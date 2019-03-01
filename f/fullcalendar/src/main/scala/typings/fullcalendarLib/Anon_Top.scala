@@ -9,3 +9,12 @@ trait Anon_Top extends js.Object {
   var top: js.Any
 }
 
+object Anon_Top {
+  @scala.inline
+  def apply(top: js.Any): Anon_Top = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[Anon_Top]
+  }
+}
+

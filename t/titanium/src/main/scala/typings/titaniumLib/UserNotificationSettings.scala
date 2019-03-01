@@ -22,3 +22,16 @@ trait UserNotificationSettings extends js.Object {
   var types: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object UserNotificationSettings {
+  @scala.inline
+  def apply(
+    categories: js.Array[titaniumLib.TitaniumNs.AppNs.iOSNs.UserNotificationCategory] = null,
+    types: js.Array[scala.Double] = null
+  ): UserNotificationSettings = {
+    val __obj = js.Dynamic.literal()
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[UserNotificationSettings]
+  }
+}
+

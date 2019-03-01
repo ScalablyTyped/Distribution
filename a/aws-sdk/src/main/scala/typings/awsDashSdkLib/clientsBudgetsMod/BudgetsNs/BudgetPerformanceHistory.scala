@@ -23,3 +23,24 @@ trait BudgetPerformanceHistory extends js.Object {
   var TimeUnit: js.UndefOr[TimeUnit] = js.undefined
 }
 
+object BudgetPerformanceHistory {
+  @scala.inline
+  def apply(
+    BudgetName: BudgetName = null,
+    BudgetType: BudgetType = null,
+    BudgetedAndActualAmountsList: BudgetedAndActualAmountsList = null,
+    CostFilters: CostFilters = null,
+    CostTypes: CostTypes = null,
+    TimeUnit: TimeUnit = null
+  ): BudgetPerformanceHistory = {
+    val __obj = js.Dynamic.literal()
+    if (BudgetName != null) __obj.updateDynamic("BudgetName")(BudgetName)
+    if (BudgetType != null) __obj.updateDynamic("BudgetType")(BudgetType.asInstanceOf[js.Any])
+    if (BudgetedAndActualAmountsList != null) __obj.updateDynamic("BudgetedAndActualAmountsList")(BudgetedAndActualAmountsList)
+    if (CostFilters != null) __obj.updateDynamic("CostFilters")(CostFilters)
+    if (CostTypes != null) __obj.updateDynamic("CostTypes")(CostTypes)
+    if (TimeUnit != null) __obj.updateDynamic("TimeUnit")(TimeUnit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BudgetPerformanceHistory]
+  }
+}
+

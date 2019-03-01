@@ -10,3 +10,16 @@ trait Anon_ReturnValueTransferCodingHeaderValue extends js.Object {
   /** The HttpTransferCodingHeaderValue version of the string. */ var transferCodingHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpTransferCodingHeaderValue
 }
 
+object Anon_ReturnValueTransferCodingHeaderValue {
+  @scala.inline
+  def apply(
+    returnValue: scala.Boolean,
+    transferCodingHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpTransferCodingHeaderValue
+  ): Anon_ReturnValueTransferCodingHeaderValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.updateDynamic("transferCodingHeaderValue")(transferCodingHeaderValue)
+    __obj.asInstanceOf[Anon_ReturnValueTransferCodingHeaderValue]
+  }
+}
+

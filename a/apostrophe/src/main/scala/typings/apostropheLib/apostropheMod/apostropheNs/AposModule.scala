@@ -10,3 +10,16 @@ trait AposModule extends js.Object {
   def on(name: java.lang.String, methodName: js.Any, fn: js.Function0[_]): scala.Unit
 }
 
+object AposModule {
+  @scala.inline
+  def apply(
+    emit: js.Function1[java.lang.String, scala.Unit],
+    on: js.Function3[java.lang.String, js.Any, js.Function0[_], scala.Unit]
+  ): AposModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("emit")(emit)
+    __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[AposModule]
+  }
+}
+

@@ -32,3 +32,25 @@ trait IgGridHidingColumnSetting
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgGridHidingColumnSetting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridHidingColumnSetting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowHiding: js.UndefOr[scala.Boolean] = js.undefined,
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgGridHidingColumnSetting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowHiding)) __obj.updateDynamic("allowHiding")(allowHiding)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    __obj.asInstanceOf[IgGridHidingColumnSetting]
+  }
+}
+

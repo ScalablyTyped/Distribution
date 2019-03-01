@@ -10,16 +10,16 @@ object metismenuLibStrings {
   sealed trait dispose extends js.Object
   
   @js.native
-  sealed trait hiddenDOTmetisMenu extends js.Object
+  sealed trait hiddenDOTmetisMenu extends MetisMenuEvents
   
   @js.native
-  sealed trait hideDOTmetisMenu extends js.Object
+  sealed trait hideDOTmetisMenu extends MetisMenuEvents
   
   @js.native
-  sealed trait showDOTmetisMenu extends js.Object
+  sealed trait showDOTmetisMenu extends MetisMenuEvents
   
   @js.native
-  sealed trait shownDOTmetisMenu extends js.Object
+  sealed trait shownDOTmetisMenu extends MetisMenuEvents
   
   @scala.inline
   def dispose: dispose = "dispose".asInstanceOf[dispose]

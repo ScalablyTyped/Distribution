@@ -32,3 +32,24 @@ trait LoaderStats extends js.Object {
   var trequest: scala.Double
 }
 
+object LoaderStats {
+  @scala.inline
+  def apply(
+    bw: scala.Double,
+    loaded: scala.Double,
+    tfirst: scala.Double,
+    tload: scala.Double,
+    total: scala.Double,
+    trequest: scala.Double
+  ): LoaderStats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bw")(bw)
+    __obj.updateDynamic("loaded")(loaded)
+    __obj.updateDynamic("tfirst")(tfirst)
+    __obj.updateDynamic("tload")(tload)
+    __obj.updateDynamic("total")(total)
+    __obj.updateDynamic("trequest")(trequest)
+    __obj.asInstanceOf[LoaderStats]
+  }
+}
+

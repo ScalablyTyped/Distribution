@@ -16,3 +16,24 @@ trait PushOptions
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PushOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    callbacks: nodegitLib.remoteDashCallbacksMod.RemoteCallbacks = null,
+    customHeaders: nodegitLib.strDashArrayMod.Strarray | java.lang.String | js.Array[java.lang.String] = null,
+    pbParallelism: scala.Int | scala.Double = null,
+    proxyOpts: nodegitLib.proxyDashOptionsMod.ProxyOptions = null,
+    version: scala.Int | scala.Double = null
+  ): PushOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
+    if (pbParallelism != null) __obj.updateDynamic("pbParallelism")(pbParallelism.asInstanceOf[js.Any])
+    if (proxyOpts != null) __obj.updateDynamic("proxyOpts")(proxyOpts)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PushOptions]
+  }
+}
+

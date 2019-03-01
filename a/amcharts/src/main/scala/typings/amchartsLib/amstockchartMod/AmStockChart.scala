@@ -169,3 +169,88 @@ trait AmStockChart extends js.Object {
   def zoomOut(): scala.Unit
 }
 
+object AmStockChart {
+  @scala.inline
+  def apply(
+    addListener: js.Function2[
+      java.lang.String, 
+      js.Function1[/* e */ amchartsLib.Anon_ChartDate, scala.Unit], 
+      scala.Unit
+    ],
+    addPanel: js.Function1[amchartsLib.stockpanelMod.default, scala.Unit],
+    addPanelAt: js.Function2[amchartsLib.stockpanelMod.default, scala.Double, scala.Unit],
+    animationPlayed: scala.Boolean,
+    balloon: amchartsLib.amballoonMod.default,
+    categoryAxesSettings: amchartsLib.categoryaxessettingsMod.default,
+    chartCreated: scala.Boolean,
+    chartCursorSettings: amchartsLib.chartcursorsettingsMod.default,
+    chartScrollbarSettings: amchartsLib.chartscrollbarsettingsMod.default,
+    clear: js.Function0[scala.Unit],
+    colors: js.Array[_],
+    comparedDataSets: js.Array[_],
+    dataSetSelector: amchartsLib.datasetselectorMod.default,
+    dataSets: js.Array[_],
+    endDate: stdLib.Date,
+    firstDayOfWeek: scala.Double,
+    glueToTheEnd: scala.Boolean,
+    hideStockEvents: js.Function0[scala.Unit],
+    legendSettings: amchartsLib.legendsettingsMod.default,
+    mainDataSet: amchartsLib.datasetMod.default,
+    panels: js.Array[_],
+    panelsSettings: amchartsLib.panelsettingsMod.default,
+    periodSelector: amchartsLib.periodselectorMod.default,
+    removeListener: js.Function3[amchartsLib.amchartMod.default, java.lang.String, js.Any, scala.Unit],
+    removePanel: js.Function1[amchartsLib.stockpanelMod.default, scala.Unit],
+    scrollbarChart: amchartsLib.amserialchartMod.default,
+    showStockEvents: js.Function0[scala.Unit],
+    startDate: stdLib.Date,
+    stockEventsSettings: js.Any,
+    validateData: js.Function0[scala.Unit],
+    validateNow: js.Function0[scala.Unit],
+    valueAxesSettings: amchartsLib.valueaxessettingsMod.default,
+    version: java.lang.String,
+    zoom: js.Function2[stdLib.Date, stdLib.Date, scala.Unit],
+    zoomOut: js.Function0[scala.Unit],
+    zoomOutOnDataSetChange: scala.Boolean
+  ): AmStockChart = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addListener")(addListener)
+    __obj.updateDynamic("addPanel")(addPanel)
+    __obj.updateDynamic("addPanelAt")(addPanelAt)
+    __obj.updateDynamic("animationPlayed")(animationPlayed)
+    __obj.updateDynamic("balloon")(balloon)
+    __obj.updateDynamic("categoryAxesSettings")(categoryAxesSettings)
+    __obj.updateDynamic("chartCreated")(chartCreated)
+    __obj.updateDynamic("chartCursorSettings")(chartCursorSettings)
+    __obj.updateDynamic("chartScrollbarSettings")(chartScrollbarSettings)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("colors")(colors)
+    __obj.updateDynamic("comparedDataSets")(comparedDataSets)
+    __obj.updateDynamic("dataSetSelector")(dataSetSelector)
+    __obj.updateDynamic("dataSets")(dataSets)
+    __obj.updateDynamic("endDate")(endDate)
+    __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
+    __obj.updateDynamic("glueToTheEnd")(glueToTheEnd)
+    __obj.updateDynamic("hideStockEvents")(hideStockEvents)
+    __obj.updateDynamic("legendSettings")(legendSettings)
+    __obj.updateDynamic("mainDataSet")(mainDataSet)
+    __obj.updateDynamic("panels")(panels)
+    __obj.updateDynamic("panelsSettings")(panelsSettings)
+    __obj.updateDynamic("periodSelector")(periodSelector)
+    __obj.updateDynamic("removeListener")(removeListener)
+    __obj.updateDynamic("removePanel")(removePanel)
+    __obj.updateDynamic("scrollbarChart")(scrollbarChart)
+    __obj.updateDynamic("showStockEvents")(showStockEvents)
+    __obj.updateDynamic("startDate")(startDate)
+    __obj.updateDynamic("stockEventsSettings")(stockEventsSettings)
+    __obj.updateDynamic("validateData")(validateData)
+    __obj.updateDynamic("validateNow")(validateNow)
+    __obj.updateDynamic("valueAxesSettings")(valueAxesSettings)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("zoom")(zoom)
+    __obj.updateDynamic("zoomOut")(zoomOut)
+    __obj.updateDynamic("zoomOutOnDataSetChange")(zoomOutOnDataSetChange)
+    __obj.asInstanceOf[AmStockChart]
+  }
+}
+

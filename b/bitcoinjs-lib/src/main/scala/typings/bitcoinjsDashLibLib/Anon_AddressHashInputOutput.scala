@@ -14,3 +14,24 @@ trait Anon_AddressHashInputOutput extends js.Object {
   var witness: js.Array[nodeLib.Buffer]
 }
 
+object Anon_AddressHashInputOutput {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    hash: nodeLib.Buffer,
+    input: nodeLib.Buffer,
+    output: nodeLib.Buffer,
+    redeem: bitcoinjsDashLibLib.bitcoinjsDashLibMod.paymentsNs.Redeem,
+    witness: js.Array[nodeLib.Buffer]
+  ): Anon_AddressHashInputOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("input")(input)
+    __obj.updateDynamic("output")(output)
+    __obj.updateDynamic("redeem")(redeem)
+    __obj.updateDynamic("witness")(witness)
+    __obj.asInstanceOf[Anon_AddressHashInputOutput]
+  }
+}
+

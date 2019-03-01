@@ -33,3 +33,20 @@ trait FindOptions extends js.Object {
   var sort: js.UndefOr[TypeOrArrayOfType[java.lang.String]] = js.undefined
 }
 
+object FindOptions {
+  @scala.inline
+  def apply(
+    limit: scala.Int | scala.Double = null,
+    populate: scala.Boolean | js.Array[java.lang.String] = null,
+    skip: scala.Int | scala.Double = null,
+    sort: TypeOrArrayOfType[java.lang.String] = null
+  ): FindOptions = {
+    val __obj = js.Dynamic.literal()
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FindOptions]
+  }
+}
+

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * on numerous CSS files.
   */
 @js.native
-trait Processor extends js.Object {
+trait Processor extends _AcceptedPlugin {
   /**
     * Contains plugins added to this processor.
     */

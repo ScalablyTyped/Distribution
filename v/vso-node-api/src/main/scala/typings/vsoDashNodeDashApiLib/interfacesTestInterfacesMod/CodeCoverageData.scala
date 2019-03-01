@@ -20,3 +20,18 @@ trait CodeCoverageData extends js.Object {
   var coverageStats: js.Array[CodeCoverageStatistics]
 }
 
+object CodeCoverageData {
+  @scala.inline
+  def apply(
+    buildFlavor: java.lang.String,
+    buildPlatform: java.lang.String,
+    coverageStats: js.Array[CodeCoverageStatistics]
+  ): CodeCoverageData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildFlavor")(buildFlavor)
+    __obj.updateDynamic("buildPlatform")(buildPlatform)
+    __obj.updateDynamic("coverageStats")(coverageStats)
+    __obj.asInstanceOf[CodeCoverageData]
+  }
+}
+

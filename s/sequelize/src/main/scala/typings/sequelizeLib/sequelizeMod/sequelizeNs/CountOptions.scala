@@ -39,3 +39,32 @@ trait CountOptions
   var where: js.UndefOr[AnyWhereOptions | js.Array[java.lang.String]] = js.undefined
 }
 
+object CountOptions {
+  @scala.inline
+  def apply(
+    attributes: js.Array[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])] = null,
+    benchmark: js.UndefOr[scala.Boolean] = js.undefined,
+    col: java.lang.String = null,
+    distinct: js.UndefOr[scala.Boolean] = js.undefined,
+    group: js.Object = null,
+    include: js.Array[(Model[_, _]) | IncludeOptions] = null,
+    logging: scala.Boolean | js.Function = null,
+    searchPath: java.lang.String = null,
+    transaction: Transaction = null,
+    where: AnyWhereOptions | js.Array[java.lang.String] = null
+  ): CountOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
+    if (col != null) __obj.updateDynamic("col")(col)
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CountOptions]
+  }
+}
+

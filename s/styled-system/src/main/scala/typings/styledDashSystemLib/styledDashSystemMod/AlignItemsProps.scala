@@ -18,3 +18,12 @@ trait AlignItemsProps extends js.Object {
   var alignItems: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.AlignItemsProperty]] = js.undefined
 }
 
+object AlignItemsProps {
+  @scala.inline
+  def apply(alignItems: ResponsiveValue[csstypeLib.csstypeMod.AlignItemsProperty] = null): AlignItemsProps = {
+    val __obj = js.Dynamic.literal()
+    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AlignItemsProps]
+  }
+}
+

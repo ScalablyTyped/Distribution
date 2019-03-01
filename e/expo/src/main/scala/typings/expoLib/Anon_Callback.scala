@@ -13,3 +13,22 @@ trait Anon_Callback extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Callback {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    callback: js.Function0[_] = null,
+    description: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    version: java.lang.String = null
+  ): Anon_Callback = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Callback]
+  }
+}
+

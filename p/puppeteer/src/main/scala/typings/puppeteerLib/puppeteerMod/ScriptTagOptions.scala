@@ -16,3 +16,20 @@ trait ScriptTagOptions extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ScriptTagOptions {
+  @scala.inline
+  def apply(
+    content: java.lang.String = null,
+    path: java.lang.String = null,
+    `type`: java.lang.String = null,
+    url: java.lang.String = null
+  ): ScriptTagOptions = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ScriptTagOptions]
+  }
+}
+

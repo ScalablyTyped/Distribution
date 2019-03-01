@@ -9,3 +9,12 @@ trait Anon_CustomArray extends js.Object {
   var custom: js.Array[chartmogulDashNodeLib.chartmogulDashNodeMod.CustomerNs.NewCustomAttributes]
 }
 
+object Anon_CustomArray {
+  @scala.inline
+  def apply(custom: js.Array[chartmogulDashNodeLib.chartmogulDashNodeMod.CustomerNs.NewCustomAttributes]): Anon_CustomArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custom")(custom)
+    __obj.asInstanceOf[Anon_CustomArray]
+  }
+}
+

@@ -20,3 +20,13 @@ trait IJSError extends js.Object {
   var error_description: java.lang.String
 }
 
+object IJSError {
+  @scala.inline
+  def apply(error: java.lang.String, error_description: java.lang.String): IJSError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("error_description")(error_description)
+    __obj.asInstanceOf[IJSError]
+  }
+}
+

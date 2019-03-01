@@ -19,3 +19,20 @@ trait GoogleCloudMlV1__HyperparameterOutput extends js.Object {
   var trialId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudMlV1__HyperparameterOutput {
+  @scala.inline
+  def apply(
+    allMetrics: js.Array[GoogleCloudMlV1_HyperparameterOutput_HyperparameterMetric] = null,
+    finalMetric: GoogleCloudMlV1_HyperparameterOutput_HyperparameterMetric = null,
+    hyperparameters: stdLib.Record[java.lang.String, java.lang.String] = null,
+    trialId: java.lang.String = null
+  ): GoogleCloudMlV1__HyperparameterOutput = {
+    val __obj = js.Dynamic.literal()
+    if (allMetrics != null) __obj.updateDynamic("allMetrics")(allMetrics)
+    if (finalMetric != null) __obj.updateDynamic("finalMetric")(finalMetric)
+    if (hyperparameters != null) __obj.updateDynamic("hyperparameters")(hyperparameters)
+    if (trialId != null) __obj.updateDynamic("trialId")(trialId)
+    __obj.asInstanceOf[GoogleCloudMlV1__HyperparameterOutput]
+  }
+}
+

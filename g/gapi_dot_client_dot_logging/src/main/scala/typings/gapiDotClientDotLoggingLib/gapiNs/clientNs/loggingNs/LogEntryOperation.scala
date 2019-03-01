@@ -19,3 +19,20 @@ trait LogEntryOperation extends js.Object {
   var producer: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogEntryOperation {
+  @scala.inline
+  def apply(
+    first: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    last: js.UndefOr[scala.Boolean] = js.undefined,
+    producer: java.lang.String = null
+  ): LogEntryOperation = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last)
+    if (producer != null) __obj.updateDynamic("producer")(producer)
+    __obj.asInstanceOf[LogEntryOperation]
+  }
+}
+

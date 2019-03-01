@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object mitmMod {
   type Callback = SocketConnectCallback | SocketConnectionCallback | HttpCallback
-  type Event = mitmLib.mitmLibStrings.connect | mitmLib.mitmLibStrings.connection | mitmLib.mitmLibStrings.request
   type HttpCallback = js.Function2[
     /* request */ nodeLib.httpMod.IncomingMessage, 
     /* response */ nodeLib.httpMod.ServerResponse, 

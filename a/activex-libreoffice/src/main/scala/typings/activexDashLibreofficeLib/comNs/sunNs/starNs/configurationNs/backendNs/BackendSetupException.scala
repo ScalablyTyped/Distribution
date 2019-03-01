@@ -21,3 +21,18 @@ trait BackendSetupException
   var BackendException: js.Any
 }
 
+object BackendSetupException {
+  @scala.inline
+  def apply(
+    BackendException: js.Any,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): BackendSetupException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BackendException")(BackendException)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[BackendSetupException]
+  }
+}
+

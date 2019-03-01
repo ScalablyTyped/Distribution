@@ -28,3 +28,13 @@ trait StretchedPictureFill extends js.Object {
   var size: js.UndefOr[Size] = js.undefined
 }
 
+object StretchedPictureFill {
+  @scala.inline
+  def apply(contentUrl: java.lang.String = null, size: Size = null): StretchedPictureFill = {
+    val __obj = js.Dynamic.literal()
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[StretchedPictureFill]
+  }
+}
+

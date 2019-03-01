@@ -28,3 +28,20 @@ trait PushNotificationErrorArg extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PushNotificationErrorArg {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    error: java.lang.String = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null
+  ): PushNotificationErrorArg = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PushNotificationErrorArg]
+  }
+}
+

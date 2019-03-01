@@ -10,3 +10,13 @@ trait KeyLabelObject extends js.Object {
   var label: java.lang.String
 }
 
+object KeyLabelObject {
+  @scala.inline
+  def apply(key: java.lang.String, label: java.lang.String): KeyLabelObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[KeyLabelObject]
+  }
+}
+

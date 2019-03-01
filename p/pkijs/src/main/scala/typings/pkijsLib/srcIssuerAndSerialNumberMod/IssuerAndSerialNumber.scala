@@ -13,3 +13,22 @@ trait IssuerAndSerialNumber extends js.Object {
   def toSchema(): js.Any
 }
 
+object IssuerAndSerialNumber {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    issuer: pkijsLib.srcRelativeDistinguishedNamesMod.default,
+    serialNumber: asn1jsLib.asn1jsMod.Integer,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): IssuerAndSerialNumber = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("issuer")(issuer)
+    __obj.updateDynamic("serialNumber")(serialNumber)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.asInstanceOf[IssuerAndSerialNumber]
+  }
+}
+

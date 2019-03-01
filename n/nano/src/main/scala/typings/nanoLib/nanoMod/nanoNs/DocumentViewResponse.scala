@@ -17,3 +17,20 @@ trait DocumentViewResponse[V, D] extends js.Object {
   var update_seq: js.Any
 }
 
+object DocumentViewResponse {
+  @scala.inline
+  def apply[V, D](
+    offset: scala.Double,
+    rows: js.Array[nanoLib.Anon_DocId[V, D]],
+    total_rows: scala.Double,
+    update_seq: js.Any
+  ): DocumentViewResponse[V, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("total_rows")(total_rows)
+    __obj.updateDynamic("update_seq")(update_seq)
+    __obj.asInstanceOf[DocumentViewResponse[V, D]]
+  }
+}
+

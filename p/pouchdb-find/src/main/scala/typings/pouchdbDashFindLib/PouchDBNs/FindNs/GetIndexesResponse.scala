@@ -9,3 +9,12 @@ trait GetIndexesResponse[Content /* <: js.Object */] extends js.Object {
   var indexes: js.Array[Index]
 }
 
+object GetIndexesResponse {
+  @scala.inline
+  def apply[Content /* <: js.Object */](indexes: js.Array[Index]): GetIndexesResponse[Content] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("indexes")(indexes)
+    __obj.asInstanceOf[GetIndexesResponse[Content]]
+  }
+}
+

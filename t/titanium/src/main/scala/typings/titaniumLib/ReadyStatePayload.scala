@@ -15,3 +15,12 @@ trait ReadyStatePayload extends js.Object {
   var readyState: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ReadyStatePayload {
+  @scala.inline
+  def apply(readyState: scala.Int | scala.Double = null): ReadyStatePayload = {
+    val __obj = js.Dynamic.literal()
+    if (readyState != null) __obj.updateDynamic("readyState")(readyState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReadyStatePayload]
+  }
+}
+

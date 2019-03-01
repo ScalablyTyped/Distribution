@@ -43,3 +43,30 @@ trait XDisplayConnection
   def removeEventHandler(window: js.Any, eventHandler: XEventHandler): scala.Unit
 }
 
+object XDisplayConnection {
+  @scala.inline
+  def apply(
+    Identifier: js.Any,
+    acquire: js.Function0[scala.Unit],
+    addErrorHandler: js.Function1[XEventHandler, scala.Unit],
+    addEventHandler: js.Function3[js.Any, XEventHandler, scala.Double, scala.Unit],
+    getIdentifier: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeErrorHandler: js.Function1[XEventHandler, scala.Unit],
+    removeEventHandler: js.Function2[js.Any, XEventHandler, scala.Unit]
+  ): XDisplayConnection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Identifier")(Identifier)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addErrorHandler")(addErrorHandler)
+    __obj.updateDynamic("addEventHandler")(addEventHandler)
+    __obj.updateDynamic("getIdentifier")(getIdentifier)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeErrorHandler")(removeErrorHandler)
+    __obj.updateDynamic("removeEventHandler")(removeEventHandler)
+    __obj.asInstanceOf[XDisplayConnection]
+  }
+}
+

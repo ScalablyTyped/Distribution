@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object draggabillyLibStrings {
   @js.native
-  sealed trait dragEnd extends js.Object
+  sealed trait dragEnd
+    extends draggabillyLib.draggabillyMod.DraggabillyClickEventName
   
   @js.native
-  sealed trait dragMove extends js.Object
+  sealed trait dragMove
+    extends draggabillyLib.draggabillyMod.DraggabillyMoveEventName
   
   @js.native
-  sealed trait dragStart extends js.Object
+  sealed trait dragStart
+    extends draggabillyLib.draggabillyMod.DraggabillyClickEventName
   
   @js.native
-  sealed trait pointerDown extends js.Object
+  sealed trait pointerDown
+    extends draggabillyLib.draggabillyMod.DraggabillyClickEventName
   
   @js.native
-  sealed trait pointerMove extends js.Object
+  sealed trait pointerMove
+    extends draggabillyLib.draggabillyMod.DraggabillyMoveEventName
   
   @js.native
-  sealed trait pointerUp extends js.Object
+  sealed trait pointerUp
+    extends draggabillyLib.draggabillyMod.DraggabillyClickEventName
   
   @js.native
-  sealed trait staticClick extends js.Object
+  sealed trait staticClick
+    extends draggabillyLib.draggabillyMod.DraggabillyClickEventName
   
   @js.native
   sealed trait x extends js.Object

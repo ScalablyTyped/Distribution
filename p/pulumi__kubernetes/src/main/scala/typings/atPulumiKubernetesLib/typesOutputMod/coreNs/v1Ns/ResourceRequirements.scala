@@ -23,3 +23,13 @@ trait ResourceRequirements extends js.Object {
   val requests: js.Object
 }
 
+object ResourceRequirements {
+  @scala.inline
+  def apply(limits: js.Object, requests: js.Object): ResourceRequirements = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("limits")(limits)
+    __obj.updateDynamic("requests")(requests)
+    __obj.asInstanceOf[ResourceRequirements]
+  }
+}
+

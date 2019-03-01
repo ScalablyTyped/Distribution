@@ -68,3 +68,52 @@ trait TurnBasedMatch extends js.Object {
   var withParticipantId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TurnBasedMatch {
+  @scala.inline
+  def apply(
+    applicationId: java.lang.String = null,
+    autoMatchingCriteria: TurnBasedAutoMatchingCriteria = null,
+    creationDetails: TurnBasedMatchModification = null,
+    data: TurnBasedMatchData = null,
+    description: java.lang.String = null,
+    inviterId: java.lang.String = null,
+    kind: java.lang.String = null,
+    lastUpdateDetails: TurnBasedMatchModification = null,
+    matchId: java.lang.String = null,
+    matchNumber: scala.Int | scala.Double = null,
+    matchVersion: scala.Int | scala.Double = null,
+    participants: js.Array[TurnBasedMatchParticipant] = null,
+    pendingParticipantId: java.lang.String = null,
+    previousMatchData: TurnBasedMatchData = null,
+    rematchId: java.lang.String = null,
+    results: js.Array[ParticipantResult] = null,
+    status: java.lang.String = null,
+    userMatchStatus: java.lang.String = null,
+    variant: scala.Int | scala.Double = null,
+    withParticipantId: java.lang.String = null
+  ): TurnBasedMatch = {
+    val __obj = js.Dynamic.literal()
+    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId)
+    if (autoMatchingCriteria != null) __obj.updateDynamic("autoMatchingCriteria")(autoMatchingCriteria)
+    if (creationDetails != null) __obj.updateDynamic("creationDetails")(creationDetails)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (inviterId != null) __obj.updateDynamic("inviterId")(inviterId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastUpdateDetails != null) __obj.updateDynamic("lastUpdateDetails")(lastUpdateDetails)
+    if (matchId != null) __obj.updateDynamic("matchId")(matchId)
+    if (matchNumber != null) __obj.updateDynamic("matchNumber")(matchNumber.asInstanceOf[js.Any])
+    if (matchVersion != null) __obj.updateDynamic("matchVersion")(matchVersion.asInstanceOf[js.Any])
+    if (participants != null) __obj.updateDynamic("participants")(participants)
+    if (pendingParticipantId != null) __obj.updateDynamic("pendingParticipantId")(pendingParticipantId)
+    if (previousMatchData != null) __obj.updateDynamic("previousMatchData")(previousMatchData)
+    if (rematchId != null) __obj.updateDynamic("rematchId")(rematchId)
+    if (results != null) __obj.updateDynamic("results")(results)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (userMatchStatus != null) __obj.updateDynamic("userMatchStatus")(userMatchStatus)
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (withParticipantId != null) __obj.updateDynamic("withParticipantId")(withParticipantId)
+    __obj.asInstanceOf[TurnBasedMatch]
+  }
+}
+

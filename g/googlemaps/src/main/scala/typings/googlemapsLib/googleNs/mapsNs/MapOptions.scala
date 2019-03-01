@@ -178,3 +178,86 @@ trait MapOptions extends js.Object {
   var zoomControlOptions: js.UndefOr[ZoomControlOptions] = js.undefined
 }
 
+object MapOptions {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    center: LatLng | LatLngLiteral = null,
+    clickableIcons: js.UndefOr[scala.Boolean] = js.undefined,
+    disableDefaultUI: js.UndefOr[scala.Boolean] = js.undefined,
+    disableDoubleClickZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    draggableCursor: java.lang.String = null,
+    draggingCursor: java.lang.String = null,
+    fullscreenControl: js.UndefOr[scala.Boolean] = js.undefined,
+    fullscreenControlOptions: FullscreenControlOptions = null,
+    gestureHandling: GestureHandlingOptions = null,
+    heading: scala.Int | scala.Double = null,
+    keyboardShortcuts: js.UndefOr[scala.Boolean] = js.undefined,
+    mapTypeControl: js.UndefOr[scala.Boolean] = js.undefined,
+    mapTypeControlOptions: MapTypeControlOptions = null,
+    mapTypeId: MapTypeId = null,
+    maxZoom: scala.Int | scala.Double = null,
+    minZoom: scala.Int | scala.Double = null,
+    noClear: js.UndefOr[scala.Boolean] = js.undefined,
+    overviewMapControl: js.UndefOr[scala.Boolean] = js.undefined,
+    overviewMapControlOptions: OverviewMapControlOptions = null,
+    panControl: js.UndefOr[scala.Boolean] = js.undefined,
+    panControlOptions: PanControlOptions = null,
+    rotateControl: js.UndefOr[scala.Boolean] = js.undefined,
+    rotateControlOptions: RotateControlOptions = null,
+    scaleControl: js.UndefOr[scala.Boolean] = js.undefined,
+    scaleControlOptions: ScaleControlOptions = null,
+    scrollwheel: js.UndefOr[scala.Boolean] = js.undefined,
+    signInControl: js.UndefOr[scala.Boolean] = js.undefined,
+    streetView: StreetViewPanorama = null,
+    streetViewControl: js.UndefOr[scala.Boolean] = js.undefined,
+    streetViewControlOptions: StreetViewControlOptions = null,
+    styles: js.Array[MapTypeStyle] = null,
+    tilt: scala.Int | scala.Double = null,
+    zoom: scala.Int | scala.Double = null,
+    zoomControl: js.UndefOr[scala.Boolean] = js.undefined,
+    zoomControlOptions: ZoomControlOptions = null
+  ): MapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickableIcons)) __obj.updateDynamic("clickableIcons")(clickableIcons)
+    if (!js.isUndefined(disableDefaultUI)) __obj.updateDynamic("disableDefaultUI")(disableDefaultUI)
+    if (!js.isUndefined(disableDoubleClickZoom)) __obj.updateDynamic("disableDoubleClickZoom")(disableDoubleClickZoom)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (draggableCursor != null) __obj.updateDynamic("draggableCursor")(draggableCursor)
+    if (draggingCursor != null) __obj.updateDynamic("draggingCursor")(draggingCursor)
+    if (!js.isUndefined(fullscreenControl)) __obj.updateDynamic("fullscreenControl")(fullscreenControl)
+    if (fullscreenControlOptions != null) __obj.updateDynamic("fullscreenControlOptions")(fullscreenControlOptions)
+    if (gestureHandling != null) __obj.updateDynamic("gestureHandling")(gestureHandling)
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardShortcuts)) __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts)
+    if (!js.isUndefined(mapTypeControl)) __obj.updateDynamic("mapTypeControl")(mapTypeControl)
+    if (mapTypeControlOptions != null) __obj.updateDynamic("mapTypeControlOptions")(mapTypeControlOptions)
+    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId)
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(noClear)) __obj.updateDynamic("noClear")(noClear)
+    if (!js.isUndefined(overviewMapControl)) __obj.updateDynamic("overviewMapControl")(overviewMapControl)
+    if (overviewMapControlOptions != null) __obj.updateDynamic("overviewMapControlOptions")(overviewMapControlOptions)
+    if (!js.isUndefined(panControl)) __obj.updateDynamic("panControl")(panControl)
+    if (panControlOptions != null) __obj.updateDynamic("panControlOptions")(panControlOptions)
+    if (!js.isUndefined(rotateControl)) __obj.updateDynamic("rotateControl")(rotateControl)
+    if (rotateControlOptions != null) __obj.updateDynamic("rotateControlOptions")(rotateControlOptions)
+    if (!js.isUndefined(scaleControl)) __obj.updateDynamic("scaleControl")(scaleControl)
+    if (scaleControlOptions != null) __obj.updateDynamic("scaleControlOptions")(scaleControlOptions)
+    if (!js.isUndefined(scrollwheel)) __obj.updateDynamic("scrollwheel")(scrollwheel)
+    if (!js.isUndefined(signInControl)) __obj.updateDynamic("signInControl")(signInControl)
+    if (streetView != null) __obj.updateDynamic("streetView")(streetView)
+    if (!js.isUndefined(streetViewControl)) __obj.updateDynamic("streetViewControl")(streetViewControl)
+    if (streetViewControlOptions != null) __obj.updateDynamic("streetViewControlOptions")(streetViewControlOptions)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomControl)) __obj.updateDynamic("zoomControl")(zoomControl)
+    if (zoomControlOptions != null) __obj.updateDynamic("zoomControlOptions")(zoomControlOptions)
+    __obj.asInstanceOf[MapOptions]
+  }
+}
+

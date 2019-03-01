@@ -12,3 +12,12 @@ trait GetBestEffortCoverageReturnType extends js.Object {
   var result: js.Array[ScriptCoverage]
 }
 
+object GetBestEffortCoverageReturnType {
+  @scala.inline
+  def apply(result: js.Array[ScriptCoverage]): GetBestEffortCoverageReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[GetBestEffortCoverageReturnType]
+  }
+}
+

@@ -23,3 +23,12 @@ trait ICropperHelper extends js.Object {
   def configuration(mediaTypeAlias: java.lang.String): js.Any
 }
 
+object ICropperHelper {
+  @scala.inline
+  def apply(configuration: js.Function1[java.lang.String, js.Any]): ICropperHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configuration")(configuration)
+    __obj.asInstanceOf[ICropperHelper]
+  }
+}
+

@@ -20,3 +20,14 @@ trait TriangulationStatusChangedEventUIParam extends js.Object {
   var series: js.UndefOr[js.Any] = js.undefined
 }
 
+object TriangulationStatusChangedEventUIParam {
+  @scala.inline
+  def apply(currentStatus: js.Any = null, map: js.Any = null, series: js.Any = null): TriangulationStatusChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (currentStatus != null) __obj.updateDynamic("currentStatus")(currentStatus)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (series != null) __obj.updateDynamic("series")(series)
+    __obj.asInstanceOf[TriangulationStatusChangedEventUIParam]
+  }
+}
+

@@ -14,3 +14,12 @@ trait BorderColorProps extends js.Object {
   var borderColor: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BorderColorProperty]] = js.undefined
 }
 
+object BorderColorProps {
+  @scala.inline
+  def apply(borderColor: ResponsiveValue[csstypeLib.csstypeMod.BorderColorProperty] = null): BorderColorProps = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BorderColorProps]
+  }
+}
+

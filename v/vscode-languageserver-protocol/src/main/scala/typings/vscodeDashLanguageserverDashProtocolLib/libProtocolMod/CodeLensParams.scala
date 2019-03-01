@@ -12,3 +12,14 @@ trait CodeLensParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object CodeLensParams {
+  @scala.inline
+  def apply(
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): CodeLensParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("textDocument")(textDocument)
+    __obj.asInstanceOf[CodeLensParams]
+  }
+}
+

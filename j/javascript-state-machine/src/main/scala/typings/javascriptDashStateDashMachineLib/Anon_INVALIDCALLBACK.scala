@@ -13,3 +13,14 @@ trait Anon_INVALIDCALLBACK extends js.Object {
   var PENDING_TRANSITION: scala.Double
 }
 
+object Anon_INVALIDCALLBACK {
+  @scala.inline
+  def apply(INVALID_CALLBACK: scala.Double, INVALID_TRANSITION: scala.Double, PENDING_TRANSITION: scala.Double): Anon_INVALIDCALLBACK = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("INVALID_CALLBACK")(INVALID_CALLBACK)
+    __obj.updateDynamic("INVALID_TRANSITION")(INVALID_TRANSITION)
+    __obj.updateDynamic("PENDING_TRANSITION")(PENDING_TRANSITION)
+    __obj.asInstanceOf[Anon_INVALIDCALLBACK]
+  }
+}
+

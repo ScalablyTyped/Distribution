@@ -64,3 +64,28 @@ trait AccordionOptions extends js.Object {
   var toggle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccordionOptions {
+  @scala.inline
+  def apply(
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    clsactive: java.lang.String = null,
+    collapse: js.UndefOr[scala.Boolean] = js.undefined,
+    containers: java.lang.String = null,
+    duration: scala.Int | scala.Double = null,
+    easing: java.lang.String = null,
+    showfirst: js.UndefOr[scala.Boolean] = js.undefined,
+    toggle: java.lang.String = null
+  ): AccordionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (clsactive != null) __obj.updateDynamic("clsactive")(clsactive)
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse)
+    if (containers != null) __obj.updateDynamic("containers")(containers)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (!js.isUndefined(showfirst)) __obj.updateDynamic("showfirst")(showfirst)
+    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    __obj.asInstanceOf[AccordionOptions]
+  }
+}
+

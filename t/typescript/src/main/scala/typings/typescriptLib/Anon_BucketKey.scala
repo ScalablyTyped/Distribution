@@ -9,3 +9,12 @@ trait Anon_BucketKey extends js.Object {
   var __bucketKey: js.Any
 }
 
+object Anon_BucketKey {
+  @scala.inline
+  def apply(__bucketKey: js.Any): Anon_BucketKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("__bucketKey")(__bucketKey)
+    __obj.asInstanceOf[Anon_BucketKey]
+  }
+}
+

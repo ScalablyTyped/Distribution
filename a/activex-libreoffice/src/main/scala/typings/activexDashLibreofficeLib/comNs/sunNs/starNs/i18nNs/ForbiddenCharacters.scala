@@ -15,3 +15,13 @@ trait ForbiddenCharacters extends js.Object {
   var endLine: java.lang.String
 }
 
+object ForbiddenCharacters {
+  @scala.inline
+  def apply(beginLine: java.lang.String, endLine: java.lang.String): ForbiddenCharacters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("beginLine")(beginLine)
+    __obj.updateDynamic("endLine")(endLine)
+    __obj.asInstanceOf[ForbiddenCharacters]
+  }
+}
+

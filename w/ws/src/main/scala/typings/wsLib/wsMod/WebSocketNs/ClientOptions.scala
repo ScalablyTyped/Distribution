@@ -29,3 +29,50 @@ trait ClientOptions extends js.Object {
   var rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    agent: nodeLib.httpMod.Agent = null,
+    ca: CertMeta = null,
+    cert: CertMeta = null,
+    checkServerIdentity: js.Function2[/* servername */ java.lang.String, /* cert */ CertMeta, scala.Boolean] = null,
+    ciphers: java.lang.String = null,
+    family: scala.Int | scala.Double = null,
+    handshakeTimeout: scala.Int | scala.Double = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    host: java.lang.String = null,
+    key: CertMeta = null,
+    localAddress: java.lang.String = null,
+    maxPayload: scala.Int | scala.Double = null,
+    origin: java.lang.String = null,
+    passphrase: java.lang.String = null,
+    perMessageDeflate: scala.Boolean | PerMessageDeflateOptions = null,
+    pfx: java.lang.String | nodeLib.Buffer = null,
+    protocol: java.lang.String = null,
+    protocolVersion: scala.Int | scala.Double = null,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (agent != null) __obj.updateDynamic("agent")(agent)
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity)
+    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (handshakeTimeout != null) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (maxPayload != null) __obj.updateDynamic("maxPayload")(maxPayload.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate.asInstanceOf[js.Any])
+    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

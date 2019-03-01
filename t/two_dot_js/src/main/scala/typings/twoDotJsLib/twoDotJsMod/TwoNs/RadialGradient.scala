@@ -5,11 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RadialGradient extends js.Object {
+trait RadialGradient extends _Color {
   var center: Vector
   var focal: Vector
   var radius: scala.Double
   var spread: java.lang.String
   var stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
+}
+
+object RadialGradient {
+  @scala.inline
+  def apply(
+    center: Vector,
+    clone: js.Function0[RadialGradient],
+    focal: Vector,
+    radius: scala.Double,
+    spread: java.lang.String,
+    stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
+  ): RadialGradient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("center")(center)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("focal")(focal)
+    __obj.updateDynamic("radius")(radius)
+    __obj.updateDynamic("spread")(spread)
+    __obj.updateDynamic("stops")(stops)
+    __obj.asInstanceOf[RadialGradient]
+  }
 }
 

@@ -13,3 +13,17 @@ trait ThreatListUpdatesResource extends js.Object {
   def fetch(request: gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[FetchThreatListUpdatesResponse]
 }
 
+object ThreatListUpdatesResource {
+  @scala.inline
+  def apply(
+    fetch: js.Function1[
+      gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FetchThreatListUpdatesResponse]
+    ]
+  ): ThreatListUpdatesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fetch")(fetch)
+    __obj.asInstanceOf[ThreatListUpdatesResource]
+  }
+}
+

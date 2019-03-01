@@ -10,3 +10,12 @@ trait Anon_Features extends js.Object {
   var features: js.Array[chromeDashAppsLib.chromeDashAppsLibStrings.webgl]
 }
 
+object Anon_Features {
+  @scala.inline
+  def apply(features: js.Array[chromeDashAppsLib.chromeDashAppsLibStrings.webgl]): Anon_Features = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("features")(features)
+    __obj.asInstanceOf[Anon_Features]
+  }
+}
+

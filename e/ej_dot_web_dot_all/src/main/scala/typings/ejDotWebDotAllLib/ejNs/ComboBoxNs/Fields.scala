@@ -24,3 +24,20 @@ trait Fields extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Fields {
+  @scala.inline
+  def apply(
+    groupBy: java.lang.String = null,
+    iconCss: java.lang.String = null,
+    text: java.lang.String = null,
+    value: java.lang.String = null
+  ): Fields = {
+    val __obj = js.Dynamic.literal()
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy)
+    if (iconCss != null) __obj.updateDynamic("iconCss")(iconCss)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Fields]
+  }
+}
+

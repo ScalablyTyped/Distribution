@@ -36,3 +36,34 @@ trait LineNumberingProperties extends js.Object {
   var SeparatorText: java.lang.String
 }
 
+object LineNumberingProperties {
+  @scala.inline
+  def apply(
+    CharStyleName: java.lang.String,
+    CountEmptyLines: scala.Boolean,
+    CountLinesInFrames: scala.Boolean,
+    Distance: scala.Double,
+    Interval: scala.Double,
+    IsOn: scala.Boolean,
+    NumberPosition: scala.Double,
+    NumberingType: scala.Double,
+    RestartAtEachPage: scala.Boolean,
+    SeparatorInterval: scala.Double,
+    SeparatorText: java.lang.String
+  ): LineNumberingProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CharStyleName")(CharStyleName)
+    __obj.updateDynamic("CountEmptyLines")(CountEmptyLines)
+    __obj.updateDynamic("CountLinesInFrames")(CountLinesInFrames)
+    __obj.updateDynamic("Distance")(Distance)
+    __obj.updateDynamic("Interval")(Interval)
+    __obj.updateDynamic("IsOn")(IsOn)
+    __obj.updateDynamic("NumberPosition")(NumberPosition)
+    __obj.updateDynamic("NumberingType")(NumberingType)
+    __obj.updateDynamic("RestartAtEachPage")(RestartAtEachPage)
+    __obj.updateDynamic("SeparatorInterval")(SeparatorInterval)
+    __obj.updateDynamic("SeparatorText")(SeparatorText)
+    __obj.asInstanceOf[LineNumberingProperties]
+  }
+}
+

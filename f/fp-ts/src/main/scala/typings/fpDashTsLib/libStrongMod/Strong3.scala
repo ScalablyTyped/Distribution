@@ -11,3 +11,37 @@ trait Strong3[F /* <: fpDashTsLib.libHKTMod.URIS3 */]
   def second[U, A, B, C](pab: fpDashTsLib.libHKTMod.Type3[F, U, B, C]): fpDashTsLib.libHKTMod.Type3[F, U, js.Tuple2[A, B], js.Tuple2[A, C]]
 }
 
+object Strong3 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
+    URI: F,
+    first: js.Function1[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Tuple2[js.Any, js.Any], js.Tuple2[js.Any, js.Any]]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    promap: js.Function3[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    second: js.Function1[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Tuple2[js.Any, js.Any], js.Tuple2[js.Any, js.Any]]
+    ]
+  ): Strong3[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("promap")(promap)
+    __obj.updateDynamic("second")(second)
+    __obj.asInstanceOf[Strong3[F]]
+  }
+}
+

@@ -14,3 +14,22 @@ trait RoutingOptions extends js.Object {
   var z: scala.Double
 }
 
+object RoutingOptions {
+  @scala.inline
+  def apply(
+    allowUTurns: scala.Boolean,
+    fileFormat: java.lang.String,
+    geometryOnly: scala.Boolean,
+    simplifyGeometry: scala.Boolean,
+    z: scala.Double
+  ): RoutingOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowUTurns")(allowUTurns)
+    __obj.updateDynamic("fileFormat")(fileFormat)
+    __obj.updateDynamic("geometryOnly")(geometryOnly)
+    __obj.updateDynamic("simplifyGeometry")(simplifyGeometry)
+    __obj.updateDynamic("z")(z)
+    __obj.asInstanceOf[RoutingOptions]
+  }
+}
+

@@ -20,3 +20,18 @@ trait Anon_Label extends js.Object {
   var skip: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Label {
+  @scala.inline
+  def apply(
+    label: java.lang.String = null,
+    parent: java.lang.String | angularLib.angularMod.Global.Function = null,
+    skip: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Label = {
+    val __obj = js.Dynamic.literal()
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
+    __obj.asInstanceOf[Anon_Label]
+  }
+}
+

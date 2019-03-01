@@ -12,3 +12,12 @@ trait GetTaskDefinitionArgs extends js.Object {
   val taskDefinition: java.lang.String
 }
 
+object GetTaskDefinitionArgs {
+  @scala.inline
+  def apply(taskDefinition: java.lang.String): GetTaskDefinitionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("taskDefinition")(taskDefinition)
+    __obj.asInstanceOf[GetTaskDefinitionArgs]
+  }
+}
+

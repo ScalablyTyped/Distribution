@@ -12,3 +12,20 @@ trait XmlOptions extends js.Object {
   var trimmed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object XmlOptions {
+  @scala.inline
+  def apply(
+    compressed: js.UndefOr[scala.Boolean] = js.undefined,
+    html: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
+    trimmed: js.UndefOr[scala.Boolean] = js.undefined
+  ): XmlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(compressed)) __obj.updateDynamic("compressed")(compressed)
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
+    if (!js.isUndefined(trimmed)) __obj.updateDynamic("trimmed")(trimmed)
+    __obj.asInstanceOf[XmlOptions]
+  }
+}
+

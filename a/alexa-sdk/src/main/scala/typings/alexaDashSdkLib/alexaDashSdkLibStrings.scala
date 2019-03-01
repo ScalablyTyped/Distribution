@@ -40,13 +40,16 @@ object alexaDashSdkLibStrings {
   sealed trait AlexaSkillEventDOTSkillPermissionChanged extends js.Object
   
   @js.native
-  sealed trait AskForPermissionsConsent extends js.Object
+  sealed trait AskForPermissionsConsent
+    extends alexaDashSdkLib.alexaDashSdkMod.CardType
   
   @js.native
-  sealed trait AudioPlayerDOTClearQueue extends js.Object
+  sealed trait AudioPlayerDOTClearQueue
+    extends alexaDashSdkLib.alexaDashSdkMod.DirectiveTypes
   
   @js.native
-  sealed trait AudioPlayerDOTPlay extends js.Object
+  sealed trait AudioPlayerDOTPlay
+    extends alexaDashSdkLib.alexaDashSdkMod.DirectiveTypes
   
   @js.native
   sealed trait AudioPlayerDOTPlaybackFinished extends js.Object
@@ -61,106 +64,138 @@ object alexaDashSdkLibStrings {
   sealed trait AudioPlayerDOTPlaybackStopped extends js.Object
   
   @js.native
-  sealed trait AudioPlayerDOTStop extends js.Object
+  sealed trait AudioPlayerDOTStop
+    extends alexaDashSdkLib.alexaDashSdkMod.DirectiveTypes
   
   @js.native
-  sealed trait BUFFER_UNDERRUN extends js.Object
+  sealed trait BUFFER_UNDERRUN
+    extends alexaDashSdkLib.alexaDashSdkMod.AudioPlayerActivity
   
   @js.native
-  sealed trait BodyTemplate1 extends js.Object
+  sealed trait BodyTemplate1
+    extends alexaDashSdkLib.alexaDashSdkMod.TemplateType
   
   @js.native
-  sealed trait BodyTemplate2 extends js.Object
+  sealed trait BodyTemplate2
+    extends alexaDashSdkLib.alexaDashSdkMod.TemplateType
   
   @js.native
-  sealed trait BodyTemplate3 extends js.Object
+  sealed trait BodyTemplate3
+    extends alexaDashSdkLib.alexaDashSdkMod.TemplateType
   
   @js.native
-  sealed trait BodyTemplate6 extends js.Object
+  sealed trait BodyTemplate6
+    extends alexaDashSdkLib.alexaDashSdkMod.TemplateType
   
   @js.native
-  sealed trait COMPLETED extends js.Object
+  sealed trait COMPLETED
+    extends alexaDashSdkLib.alexaDashSdkMod.DialogStates
   
   @js.native
-  sealed trait CONFIRMED extends js.Object
+  sealed trait CONFIRMED
+    extends alexaDashSdkLib.alexaDashSdkMod.ConfirmationStatuses
   
   @js.native
-  sealed trait DENIED extends js.Object
+  sealed trait DENIED
+    extends alexaDashSdkLib.alexaDashSdkMod.ConfirmationStatuses
   
   @js.native
-  sealed trait DEVICE_COMMUNICATION_ERROR extends js.Object
+  sealed trait DEVICE_COMMUNICATION_ERROR
+    extends alexaDashSdkLib.alexaDashSdkMod.SystemErrorType
   
   @js.native
-  sealed trait DisplayDOTRenderTemplate extends js.Object
+  sealed trait DisplayDOTRenderTemplate
+    extends alexaDashSdkLib.alexaDashSdkMod.DirectiveTypes
   
   @js.native
-  sealed trait FINISHED extends js.Object
+  sealed trait FINISHED
+    extends alexaDashSdkLib.alexaDashSdkMod.AudioPlayerActivity
   
   @js.native
-  sealed trait HIDDEN extends js.Object
+  sealed trait HIDDEN
+    extends alexaDashSdkLib.alexaDashSdkMod.TemplateBackButtonVisibility
   
   @js.native
-  sealed trait Hint extends js.Object
+  sealed trait Hint
+    extends alexaDashSdkLib.alexaDashSdkMod.DirectiveTypes
   
   @js.native
-  sealed trait IDLE extends js.Object
+  sealed trait IDLE
+    extends alexaDashSdkLib.alexaDashSdkMod.AudioPlayerActivity
   
   @js.native
-  sealed trait INTERNAL_ERROR extends js.Object
+  sealed trait INTERNAL_ERROR
+    extends alexaDashSdkLib.alexaDashSdkMod.SystemErrorType
   
   @js.native
-  sealed trait INVALID_RESPONSE extends js.Object
+  sealed trait INVALID_RESPONSE
+    extends alexaDashSdkLib.alexaDashSdkMod.SystemErrorType
   
   @js.native
-  sealed trait IN_PROGRESS extends js.Object
+  sealed trait IN_PROGRESS
+    extends alexaDashSdkLib.alexaDashSdkMod.DialogStates
   
   @js.native
   sealed trait IntentRequest extends js.Object
   
   @js.native
-  sealed trait LARGE extends js.Object
+  sealed trait LARGE
+    extends alexaDashSdkLib.alexaDashSdkMod.ImageSourceSize
   
   @js.native
   sealed trait LaunchRequest extends js.Object
   
   @js.native
-  sealed trait LinkAccount extends js.Object
+  sealed trait LinkAccount
+    extends alexaDashSdkLib.alexaDashSdkMod.CardType
   
   @js.native
-  sealed trait ListTemplate1 extends js.Object
+  sealed trait ListTemplate1
+    extends alexaDashSdkLib.alexaDashSdkMod.TemplateType
   
   @js.native
-  sealed trait ListTemplate2 extends js.Object
+  sealed trait ListTemplate2
+    extends alexaDashSdkLib.alexaDashSdkMod.TemplateType
   
   @js.native
-  sealed trait MEDIA_ERROR_INTERNAL_DEVICE_ERROR extends js.Object
+  sealed trait MEDIA_ERROR_INTERNAL_DEVICE_ERROR
+    extends alexaDashSdkLib.alexaDashSdkMod.MediaErrorType
   
   @js.native
-  sealed trait MEDIA_ERROR_INTERNAL_SERVER_ERROR extends js.Object
+  sealed trait MEDIA_ERROR_INTERNAL_SERVER_ERROR
+    extends alexaDashSdkLib.alexaDashSdkMod.MediaErrorType
   
   @js.native
-  sealed trait MEDIA_ERROR_INVALID_REQUEST extends js.Object
+  sealed trait MEDIA_ERROR_INVALID_REQUEST
+    extends alexaDashSdkLib.alexaDashSdkMod.MediaErrorType
   
   @js.native
-  sealed trait MEDIA_ERROR_SERVICE_UNAVAILABLE extends js.Object
+  sealed trait MEDIA_ERROR_SERVICE_UNAVAILABLE
+    extends alexaDashSdkLib.alexaDashSdkMod.MediaErrorType
   
   @js.native
-  sealed trait MEDIA_ERROR_UNKNOWN extends js.Object
+  sealed trait MEDIA_ERROR_UNKNOWN
+    extends alexaDashSdkLib.alexaDashSdkMod.MediaErrorType
   
   @js.native
-  sealed trait MEDIUM extends js.Object
+  sealed trait MEDIUM
+    extends alexaDashSdkLib.alexaDashSdkMod.ImageSourceSize
   
   @js.native
-  sealed trait NONE extends js.Object
+  sealed trait NONE
+    extends alexaDashSdkLib.alexaDashSdkMod.ConfirmationStatuses
   
   @js.native
-  sealed trait PAUSED extends js.Object
+  sealed trait PAUSED
+    extends alexaDashSdkLib.alexaDashSdkMod.AudioPlayerActivity
   
   @js.native
-  sealed trait PLAYING extends js.Object
+  sealed trait PLAYING
+    extends alexaDashSdkLib.alexaDashSdkMod.AudioPlayerActivity
   
   @js.native
-  sealed trait PlainText extends js.Object
+  sealed trait PlainText
+    extends alexaDashSdkLib.alexaDashSdkMod.TextContentType
   
   @js.native
   sealed trait PlaybackControllerDOTNextCommandIssued extends js.Object
@@ -175,52 +210,66 @@ object alexaDashSdkLibStrings {
   sealed trait PlaybackControllerDOTPreviousCommandIssued extends js.Object
   
   @js.native
-  sealed trait RichText extends js.Object
+  sealed trait RichText
+    extends alexaDashSdkLib.alexaDashSdkMod.TextContentType
   
   @js.native
-  sealed trait SMALL extends js.Object
+  sealed trait SMALL
+    extends alexaDashSdkLib.alexaDashSdkMod.ImageSourceSize
   
   @js.native
   sealed trait SSML extends js.Object
   
   @js.native
-  sealed trait STARTED extends js.Object
+  sealed trait STARTED
+    extends alexaDashSdkLib.alexaDashSdkMod.DialogStates
   
   @js.native
-  sealed trait STOPPED extends js.Object
+  sealed trait STOPPED
+    extends alexaDashSdkLib.alexaDashSdkMod.AudioPlayerActivity
   
   @js.native
   sealed trait SessionEndedRequest extends js.Object
   
   @js.native
-  sealed trait Simple extends js.Object
+  sealed trait Simple
+    extends alexaDashSdkLib.alexaDashSdkMod.CardType
   
   @js.native
-  sealed trait Standard extends js.Object
+  sealed trait Standard
+    extends alexaDashSdkLib.alexaDashSdkMod.CardType
   
   @js.native
   sealed trait SystemDOTExceptionEncountered extends js.Object
   
   @js.native
-  sealed trait VISIBLE extends js.Object
+  sealed trait VISIBLE
+    extends alexaDashSdkLib.alexaDashSdkMod.TemplateBackButtonVisibility
   
   @js.native
-  sealed trait VideoAppDOTLaunch extends js.Object
+  sealed trait VideoAppDOTLaunch
+    extends alexaDashSdkLib.alexaDashSdkMod.DirectiveTypes
   
   @js.native
-  sealed trait X_LARGE extends js.Object
+  sealed trait X_LARGE
+    extends alexaDashSdkLib.alexaDashSdkMod.ImageSourceSize
   
   @js.native
-  sealed trait X_SMALL extends js.Object
+  sealed trait X_SMALL
+    extends alexaDashSdkLib.alexaDashSdkMod.ImageSourceSize
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends alexaDashSdkLib.alexaDashSdkMod.ListItemObjectStatus
+       with alexaDashSdkLib.alexaDashSdkMod.ListObjectState
   
   @js.native
-  sealed trait archived extends js.Object
+  sealed trait archived
+    extends alexaDashSdkLib.alexaDashSdkMod.ListObjectState
   
   @js.native
-  sealed trait completed extends js.Object
+  sealed trait completed
+    extends alexaDashSdkLib.alexaDashSdkMod.ListItemObjectStatus
   
   @scala.inline
   def AlexaHouseholdListEventDOTItemsCreated: AlexaHouseholdListEventDOTItemsCreated = "AlexaHouseholdListEvent.ItemsCreated".asInstanceOf[AlexaHouseholdListEventDOTItemsCreated]

@@ -32,3 +32,21 @@ trait ReplyFormAttachment extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReplyFormAttachment {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: java.lang.String,
+    inLine: js.UndefOr[scala.Boolean] = js.undefined,
+    itemId: java.lang.String = null,
+    url: java.lang.String = null
+  ): ReplyFormAttachment = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(inLine)) __obj.updateDynamic("inLine")(inLine)
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ReplyFormAttachment]
+  }
+}
+

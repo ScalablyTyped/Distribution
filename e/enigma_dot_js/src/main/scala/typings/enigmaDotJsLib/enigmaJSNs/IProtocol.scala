@@ -10,3 +10,12 @@ trait IProtocol extends js.Object {
   var delta: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IProtocol {
+  @scala.inline
+  def apply(delta: js.UndefOr[scala.Boolean] = js.undefined): IProtocol = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta)
+    __obj.asInstanceOf[IProtocol]
+  }
+}
+

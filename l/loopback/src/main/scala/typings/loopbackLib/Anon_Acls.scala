@@ -11,3 +11,18 @@ trait Anon_Acls extends js.Object {
   var http: Anon_Path
 }
 
+object Anon_Acls {
+  @scala.inline
+  def apply(
+    acls: js.Array[loopbackLib.loopbackMod.lNs.ACL],
+    defaultPermission: loopbackLib.loopbackLibStrings.DENY,
+    http: Anon_Path
+  ): Anon_Acls = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acls")(acls)
+    __obj.updateDynamic("defaultPermission")(defaultPermission)
+    __obj.updateDynamic("http")(http)
+    __obj.asInstanceOf[Anon_Acls]
+  }
+}
+

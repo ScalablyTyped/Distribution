@@ -25,3 +25,20 @@ trait CheckRequest extends js.Object {
   var skipActivationCheck: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CheckRequest {
+  @scala.inline
+  def apply(
+    operation: Operation = null,
+    requestProjectSettings: js.UndefOr[scala.Boolean] = js.undefined,
+    serviceConfigId: java.lang.String = null,
+    skipActivationCheck: js.UndefOr[scala.Boolean] = js.undefined
+  ): CheckRequest = {
+    val __obj = js.Dynamic.literal()
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (!js.isUndefined(requestProjectSettings)) __obj.updateDynamic("requestProjectSettings")(requestProjectSettings)
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    if (!js.isUndefined(skipActivationCheck)) __obj.updateDynamic("skipActivationCheck")(skipActivationCheck)
+    __obj.asInstanceOf[CheckRequest]
+  }
+}
+

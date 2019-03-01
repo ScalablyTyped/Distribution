@@ -20,3 +20,18 @@ trait MailFromArgs extends js.Object {
   val mailFromDomain: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object MailFromArgs {
+  @scala.inline
+  def apply(
+    domain: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    mailFromDomain: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    behaviorOnMxFailure: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): MailFromArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    __obj.updateDynamic("mailFromDomain")(mailFromDomain.asInstanceOf[js.Any])
+    if (behaviorOnMxFailure != null) __obj.updateDynamic("behaviorOnMxFailure")(behaviorOnMxFailure.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MailFromArgs]
+  }
+}
+

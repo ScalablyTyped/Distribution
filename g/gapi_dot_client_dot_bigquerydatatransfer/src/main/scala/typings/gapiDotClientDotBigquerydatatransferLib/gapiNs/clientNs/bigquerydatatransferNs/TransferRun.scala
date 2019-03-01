@@ -58,3 +58,38 @@ trait TransferRun extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TransferRun {
+  @scala.inline
+  def apply(
+    dataSourceId: java.lang.String = null,
+    datasetRegion: java.lang.String = null,
+    destinationDatasetId: java.lang.String = null,
+    endTime: java.lang.String = null,
+    name: java.lang.String = null,
+    params: stdLib.Record[java.lang.String, _] = null,
+    runTime: java.lang.String = null,
+    schedule: java.lang.String = null,
+    scheduleTime: java.lang.String = null,
+    startTime: java.lang.String = null,
+    state: java.lang.String = null,
+    updateTime: java.lang.String = null,
+    userId: java.lang.String = null
+  ): TransferRun = {
+    val __obj = js.Dynamic.literal()
+    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId)
+    if (datasetRegion != null) __obj.updateDynamic("datasetRegion")(datasetRegion)
+    if (destinationDatasetId != null) __obj.updateDynamic("destinationDatasetId")(destinationDatasetId)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (runTime != null) __obj.updateDynamic("runTime")(runTime)
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[TransferRun]
+  }
+}
+

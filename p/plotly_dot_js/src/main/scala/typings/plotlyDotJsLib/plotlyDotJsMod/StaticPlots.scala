@@ -9,3 +9,12 @@ trait StaticPlots extends js.Object {
   def resize(root: Root): scala.Unit
 }
 
+object StaticPlots {
+  @scala.inline
+  def apply(resize: js.Function1[Root, scala.Unit]): StaticPlots = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resize")(resize)
+    __obj.asInstanceOf[StaticPlots]
+  }
+}
+

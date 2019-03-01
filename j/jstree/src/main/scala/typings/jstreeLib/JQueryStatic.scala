@@ -20,3 +20,13 @@ trait JQueryStatic extends js.Object {
   var vakata: js.UndefOr[VakataStatic] = js.undefined
 }
 
+object JQueryStatic {
+  @scala.inline
+  def apply(jstree: JSTreeStatic = null, vakata: VakataStatic = null): JQueryStatic = {
+    val __obj = js.Dynamic.literal()
+    if (jstree != null) __obj.updateDynamic("jstree")(jstree)
+    if (vakata != null) __obj.updateDynamic("vakata")(vakata)
+    __obj.asInstanceOf[JQueryStatic]
+  }
+}
+

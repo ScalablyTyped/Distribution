@@ -18,3 +18,22 @@ trait EventObject extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EventObject {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    start: scala.Double,
+    end: scala.Int | scala.Double = null,
+    origin: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): EventObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("start")(start)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[EventObject]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_CrlConfigurationsAnonCustomCnameEnabledExpirationInDaysS3BucketName e
   var crlConfigurations: js.Array[Anon_CustomCnameEnabledExpirationInDaysS3BucketName]
 }
 
+object Anon_CrlConfigurationsAnonCustomCnameEnabledExpirationInDaysS3BucketName {
+  @scala.inline
+  def apply(crlConfigurations: js.Array[Anon_CustomCnameEnabledExpirationInDaysS3BucketName]): Anon_CrlConfigurationsAnonCustomCnameEnabledExpirationInDaysS3BucketName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("crlConfigurations")(crlConfigurations)
+    __obj.asInstanceOf[Anon_CrlConfigurationsAnonCustomCnameEnabledExpirationInDaysS3BucketName]
+  }
+}
+

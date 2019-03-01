@@ -16,3 +16,13 @@ trait TabContentTheme extends js.Object {
   var tab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabContentTheme {
+  @scala.inline
+  def apply(active: java.lang.String = null, tab: java.lang.String = null): TabContentTheme = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (tab != null) __obj.updateDynamic("tab")(tab)
+    __obj.asInstanceOf[TabContentTheme]
+  }
+}
+

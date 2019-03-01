@@ -28,3 +28,20 @@ trait Anon_Compress extends js.Object {
   var mtime: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Compress {
+  @scala.inline
+  def apply(
+    compress: js.UndefOr[scala.Boolean] = js.undefined,
+    forceZip64Format: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: scala.Int | scala.Double = null,
+    mtime: scala.Int | scala.Double = null
+  ): Anon_Compress = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (!js.isUndefined(forceZip64Format)) __obj.updateDynamic("forceZip64Format")(forceZip64Format)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Compress]
+  }
+}
+

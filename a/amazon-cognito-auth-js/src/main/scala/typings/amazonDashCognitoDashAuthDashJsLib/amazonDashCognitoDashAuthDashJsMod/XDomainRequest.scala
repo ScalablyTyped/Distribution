@@ -17,3 +17,30 @@ trait XDomainRequest extends js.Object {
   def send(data: java.lang.String): scala.Unit
 }
 
+object XDomainRequest {
+  @scala.inline
+  def apply(
+    abort: js.Function0[scala.Unit],
+    onerror: js.Function0[scala.Unit],
+    onload: js.Function0[scala.Unit],
+    onprogress: js.Function0[scala.Unit],
+    ontimeout: js.Function0[scala.Unit],
+    open: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    responseText: java.lang.String,
+    send: js.Function1[java.lang.String, scala.Unit],
+    timeout: scala.Double
+  ): XDomainRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abort")(abort)
+    __obj.updateDynamic("onerror")(onerror)
+    __obj.updateDynamic("onload")(onload)
+    __obj.updateDynamic("onprogress")(onprogress)
+    __obj.updateDynamic("ontimeout")(ontimeout)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("responseText")(responseText)
+    __obj.updateDynamic("send")(send)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[XDomainRequest]
+  }
+}
+

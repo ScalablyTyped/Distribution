@@ -24,3 +24,18 @@ trait RecorderState extends js.Object {
   val roleArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RecorderState {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    recordingGroup: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllSupportedIncludeGlobalResourceTypes] = null,
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RecorderState = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (recordingGroup != null) __obj.updateDynamic("recordingGroup")(recordingGroup.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecorderState]
+  }
+}
+

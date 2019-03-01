@@ -24,3 +24,40 @@ trait StripeStatic extends js.Object {
   def validateExpiry(month: java.lang.String, year: java.lang.String): scala.Boolean
 }
 
+object StripeStatic {
+  @scala.inline
+  def apply(
+    applePay: StripeApplePay,
+    bankAccount: StripeBankAccount,
+    card: StripeCard,
+    cardType: js.Function1[java.lang.String, StripeCardDataBrand],
+    createToken: js.Function2[
+      StripeCardTokenData, 
+      js.Function2[/* status */ scala.Double, /* response */ StripeCardTokenResponse, scala.Unit], 
+      scala.Unit
+    ],
+    getToken: js.Function2[
+      java.lang.String, 
+      js.Function2[/* status */ scala.Double, /* response */ StripeCardTokenResponse, scala.Unit], 
+      scala.Unit
+    ],
+    setPublishableKey: js.Function1[java.lang.String, scala.Unit],
+    validateCVC: js.Function1[java.lang.String, scala.Boolean],
+    validateCardNumber: js.Function1[java.lang.String, scala.Boolean],
+    validateExpiry: js.Function2[java.lang.String, java.lang.String, scala.Boolean]
+  ): StripeStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applePay")(applePay)
+    __obj.updateDynamic("bankAccount")(bankAccount)
+    __obj.updateDynamic("card")(card)
+    __obj.updateDynamic("cardType")(cardType)
+    __obj.updateDynamic("createToken")(createToken)
+    __obj.updateDynamic("getToken")(getToken)
+    __obj.updateDynamic("setPublishableKey")(setPublishableKey)
+    __obj.updateDynamic("validateCVC")(validateCVC)
+    __obj.updateDynamic("validateCardNumber")(validateCardNumber)
+    __obj.updateDynamic("validateExpiry")(validateExpiry)
+    __obj.asInstanceOf[StripeStatic]
+  }
+}
+

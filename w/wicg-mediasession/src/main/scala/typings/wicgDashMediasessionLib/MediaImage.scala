@@ -14,3 +14,14 @@ trait MediaImage extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MediaImage {
+  @scala.inline
+  def apply(src: java.lang.String, sizes: java.lang.String = null, `type`: java.lang.String = null): MediaImage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("src")(src)
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[MediaImage]
+  }
+}
+

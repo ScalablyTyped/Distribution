@@ -27,3 +27,20 @@ trait BaseOptions extends js.Object {
   var style: js.UndefOr[stripejsLib.Anon_BaseCompleteEmptyInvalid] = js.undefined
 }
 
+object BaseOptions {
+  @scala.inline
+  def apply(
+    classes: stripejsLib.Anon_BaseCompleteEmpty = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    hideIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    style: stripejsLib.Anon_BaseCompleteEmptyInvalid = null
+  ): BaseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[BaseOptions]
+  }
+}
+

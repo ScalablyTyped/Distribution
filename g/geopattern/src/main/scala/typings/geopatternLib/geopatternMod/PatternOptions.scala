@@ -26,3 +26,18 @@ trait PatternOptions extends js.Object {
   var generator: js.UndefOr[GeneratorType] = js.undefined
 }
 
+object PatternOptions {
+  @scala.inline
+  def apply(
+    baseColor: java.lang.String = null,
+    color: java.lang.String = null,
+    generator: GeneratorType = null
+  ): PatternOptions = {
+    val __obj = js.Dynamic.literal()
+    if (baseColor != null) __obj.updateDynamic("baseColor")(baseColor)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (generator != null) __obj.updateDynamic("generator")(generator)
+    __obj.asInstanceOf[PatternOptions]
+  }
+}
+

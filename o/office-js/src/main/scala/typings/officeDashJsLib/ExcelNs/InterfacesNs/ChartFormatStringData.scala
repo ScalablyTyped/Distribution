@@ -16,3 +16,12 @@ trait ChartFormatStringData extends js.Object {
   var font: js.UndefOr[ChartFontData] = js.undefined
 }
 
+object ChartFormatStringData {
+  @scala.inline
+  def apply(font: ChartFontData = null): ChartFormatStringData = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    __obj.asInstanceOf[ChartFormatStringData]
+  }
+}
+

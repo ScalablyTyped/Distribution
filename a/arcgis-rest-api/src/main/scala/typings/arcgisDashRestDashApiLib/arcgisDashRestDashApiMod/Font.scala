@@ -21,3 +21,22 @@ trait Font extends js.Object {
   ] = js.undefined
 }
 
+object Font {
+  @scala.inline
+  def apply(
+    decoration: arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.`line-through` | arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.underline | arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.none = null,
+    family: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    style: arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.italic | arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.normal | arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.oblique = null,
+    weight: arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.bold | arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.bolder | arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.lighter | arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.normal = null
+  ): Font = {
+    val __obj = js.Dynamic.literal()
+    if (decoration != null) __obj.updateDynamic("decoration")(decoration.asInstanceOf[js.Any])
+    if (family != null) __obj.updateDynamic("family")(family)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Font]
+  }
+}
+

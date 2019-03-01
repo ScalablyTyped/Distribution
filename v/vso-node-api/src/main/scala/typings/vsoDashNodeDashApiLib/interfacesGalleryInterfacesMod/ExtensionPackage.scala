@@ -12,3 +12,12 @@ trait ExtensionPackage extends js.Object {
   var extensionManifest: java.lang.String
 }
 
+object ExtensionPackage {
+  @scala.inline
+  def apply(extensionManifest: java.lang.String): ExtensionPackage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extensionManifest")(extensionManifest)
+    __obj.asInstanceOf[ExtensionPackage]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_LanguageRangeWithQualityHeaderValue extends js.Object {
   /** true if input is valid HttpLanguageRangeWithQualityHeaderValue information; otherwise, false. */ var returnValue: scala.Boolean
 }
 
+object Anon_LanguageRangeWithQualityHeaderValue {
+  @scala.inline
+  def apply(
+    languageRangeWithQualityHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpLanguageRangeWithQualityHeaderValue,
+    returnValue: scala.Boolean
+  ): Anon_LanguageRangeWithQualityHeaderValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("languageRangeWithQualityHeaderValue")(languageRangeWithQualityHeaderValue)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_LanguageRangeWithQualityHeaderValue]
+  }
+}
+

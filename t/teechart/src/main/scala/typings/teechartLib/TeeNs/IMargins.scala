@@ -12,3 +12,15 @@ trait IMargins extends js.Object {
   var top: scala.Double
 }
 
+object IMargins {
+  @scala.inline
+  def apply(bottom: scala.Double, left: scala.Double, right: scala.Double, top: scala.Double): IMargins = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottom")(bottom)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("right")(right)
+    __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[IMargins]
+  }
+}
+

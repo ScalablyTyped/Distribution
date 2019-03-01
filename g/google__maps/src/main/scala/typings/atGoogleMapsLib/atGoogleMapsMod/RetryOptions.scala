@@ -10,3 +10,12 @@ trait RetryOptions extends js.Object {
   var interval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RetryOptions {
+  @scala.inline
+  def apply(interval: scala.Int | scala.Double = null): RetryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RetryOptions]
+  }
+}
+

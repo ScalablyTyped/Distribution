@@ -22,3 +22,18 @@ trait GroupMembershipState extends js.Object {
   ] = js.undefined
 }
 
+object GroupMembershipState {
+  @scala.inline
+  def apply(
+    group: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    users: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): GroupMembershipState = {
+    val __obj = js.Dynamic.literal()
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupMembershipState]
+  }
+}
+

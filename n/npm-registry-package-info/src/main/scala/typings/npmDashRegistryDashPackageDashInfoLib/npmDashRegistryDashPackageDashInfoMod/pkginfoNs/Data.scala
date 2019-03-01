@@ -10,3 +10,13 @@ trait Data extends js.Object {
   var meta: npmDashRegistryDashPackageDashInfoLib.Anon_Failure
 }
 
+object Data {
+  @scala.inline
+  def apply(data: js.Any, meta: npmDashRegistryDashPackageDashInfoLib.Anon_Failure): Data = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("meta")(meta)
+    __obj.asInstanceOf[Data]
+  }
+}
+

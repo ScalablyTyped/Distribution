@@ -14,3 +14,14 @@ trait IMediaExtension extends js.Object {
   def setProperties(configuration: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet): scala.Unit
 }
 
+object IMediaExtension {
+  @scala.inline
+  def apply(
+    setProperties: js.Function1[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet, scala.Unit]
+  ): IMediaExtension = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setProperties")(setProperties)
+    __obj.asInstanceOf[IMediaExtension]
+  }
+}
+

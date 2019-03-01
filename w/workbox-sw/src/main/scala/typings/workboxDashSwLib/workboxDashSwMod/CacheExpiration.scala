@@ -31,3 +31,18 @@ trait CacheExpiration extends js.Object {
   def updateTimestamp(url: java.lang.String): js.Promise[scala.Unit]
 }
 
+object CacheExpiration {
+  @scala.inline
+  def apply(
+    expireEntries: js.Function0[js.Promise[scala.Unit]],
+    isURLExpired: js.Function1[java.lang.String, js.Promise[scala.Boolean]],
+    updateTimestamp: js.Function1[java.lang.String, js.Promise[scala.Unit]]
+  ): CacheExpiration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expireEntries")(expireEntries)
+    __obj.updateDynamic("isURLExpired")(isURLExpired)
+    __obj.updateDynamic("updateTimestamp")(updateTimestamp)
+    __obj.asInstanceOf[CacheExpiration]
+  }
+}
+

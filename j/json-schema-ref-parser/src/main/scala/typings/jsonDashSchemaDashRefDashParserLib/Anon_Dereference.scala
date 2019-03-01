@@ -24,3 +24,14 @@ trait Anon_Dereference extends js.Object {
   var resolve: js.UndefOr[Anon_External] = js.undefined
 }
 
+object Anon_Dereference {
+  @scala.inline
+  def apply(dereference: Anon_Circular = null, parse: Anon_Json = null, resolve: Anon_External = null): Anon_Dereference = {
+    val __obj = js.Dynamic.literal()
+    if (dereference != null) __obj.updateDynamic("dereference")(dereference)
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    __obj.asInstanceOf[Anon_Dereference]
+  }
+}
+

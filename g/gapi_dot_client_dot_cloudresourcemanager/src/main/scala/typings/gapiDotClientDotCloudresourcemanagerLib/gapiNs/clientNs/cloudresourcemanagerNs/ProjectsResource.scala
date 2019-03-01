@@ -177,3 +177,92 @@ trait ProjectsResource extends js.Object {
   def update(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Project]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    clearOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    create: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Project]
+    ],
+    getAncestry: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetAncestryResponse]
+    ],
+    getEffectiveOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    getOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListProjectsResponse]
+    ],
+    listAvailableOrgPolicyConstraints: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse]
+    ],
+    listOrgPolicies: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListOrgPoliciesResponse]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    setOrgPolicy: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[OrgPolicy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ],
+    undelete: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    update: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Project]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearOrgPolicy")(clearOrgPolicy)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getAncestry")(getAncestry)
+    __obj.updateDynamic("getEffectiveOrgPolicy")(getEffectiveOrgPolicy)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("getOrgPolicy")(getOrgPolicy)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("listAvailableOrgPolicyConstraints")(listAvailableOrgPolicyConstraints)
+    __obj.updateDynamic("listOrgPolicies")(listOrgPolicies)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("setOrgPolicy")(setOrgPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.updateDynamic("undelete")(undelete)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

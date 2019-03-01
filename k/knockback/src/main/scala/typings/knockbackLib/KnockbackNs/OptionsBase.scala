@@ -15,3 +15,20 @@ trait OptionsBase extends js.Object {
   var store: js.UndefOr[Store] = js.undefined
 }
 
+object OptionsBase {
+  @scala.inline
+  def apply(
+    factory: Factory = null,
+    options: js.Any = null,
+    path: java.lang.String = null,
+    store: Store = null
+  ): OptionsBase = {
+    val __obj = js.Dynamic.literal()
+    if (factory != null) __obj.updateDynamic("factory")(factory)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (store != null) __obj.updateDynamic("store")(store)
+    __obj.asInstanceOf[OptionsBase]
+  }
+}
+

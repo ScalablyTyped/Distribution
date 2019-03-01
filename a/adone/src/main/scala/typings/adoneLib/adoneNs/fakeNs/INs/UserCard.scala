@@ -15,3 +15,26 @@ trait UserCard extends js.Object {
   var website: java.lang.String
 }
 
+object UserCard {
+  @scala.inline
+  def apply(
+    address: Address,
+    company: Company,
+    email: java.lang.String,
+    name: java.lang.String,
+    phone: java.lang.String,
+    username: java.lang.String,
+    website: java.lang.String
+  ): UserCard = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("company")(company)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("phone")(phone)
+    __obj.updateDynamic("username")(username)
+    __obj.updateDynamic("website")(website)
+    __obj.asInstanceOf[UserCard]
+  }
+}
+

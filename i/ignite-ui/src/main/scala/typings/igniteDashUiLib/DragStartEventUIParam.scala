@@ -28,3 +28,22 @@ trait DragStartEventUIParam extends js.Object {
   var position: js.UndefOr[js.Any] = js.undefined
 }
 
+object DragStartEventUIParam {
+  @scala.inline
+  def apply(
+    helper: java.lang.String = null,
+    metadata: js.Any = null,
+    offset: js.Any = null,
+    originalPosition: js.Any = null,
+    position: js.Any = null
+  ): DragStartEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (helper != null) __obj.updateDynamic("helper")(helper)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[DragStartEventUIParam]
+  }
+}
+

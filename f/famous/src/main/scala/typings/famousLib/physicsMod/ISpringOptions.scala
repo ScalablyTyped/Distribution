@@ -16,3 +16,30 @@ trait ISpringOptions extends IForceOptions {
   var `type`: js.UndefOr[js.Function2[/* dist */ js.Any, /* rMax */ js.Any, scala.Double]] = js.undefined
 }
 
+object ISpringOptions {
+  @scala.inline
+  def apply(
+    anchor: famousLib.mathMod.Vec3 = null,
+    damping: scala.Int | scala.Double = null,
+    dampingRatio: scala.Int | scala.Double = null,
+    length: scala.Int | scala.Double = null,
+    maxLength: scala.Int | scala.Double = null,
+    period: scala.Int | scala.Double = null,
+    stiffness: scala.Int | scala.Double = null,
+    targets: js.Array[_] = null,
+    `type`: js.Function2[/* dist */ js.Any, /* rMax */ js.Any, scala.Double] = null
+  ): ISpringOptions = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
+    if (dampingRatio != null) __obj.updateDynamic("dampingRatio")(dampingRatio.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ISpringOptions]
+  }
+}
+

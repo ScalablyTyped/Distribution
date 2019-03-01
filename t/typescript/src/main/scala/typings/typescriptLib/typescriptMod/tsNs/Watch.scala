@@ -10,3 +10,12 @@ trait Watch[T] extends js.Object {
   def getProgram(): T
 }
 
+object Watch {
+  @scala.inline
+  def apply[T](getProgram: js.Function0[T]): Watch[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getProgram")(getProgram)
+    __obj.asInstanceOf[Watch[T]]
+  }
+}
+

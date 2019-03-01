@@ -19,3 +19,20 @@ trait XSimpleMailClientSupplier
   def querySimpleMailClient(): XSimpleMailClient
 }
 
+object XSimpleMailClientSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    querySimpleMailClient: js.Function0[XSimpleMailClient],
+    release: js.Function0[scala.Unit]
+  ): XSimpleMailClientSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("querySimpleMailClient")(querySimpleMailClient)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSimpleMailClientSupplier]
+  }
+}
+

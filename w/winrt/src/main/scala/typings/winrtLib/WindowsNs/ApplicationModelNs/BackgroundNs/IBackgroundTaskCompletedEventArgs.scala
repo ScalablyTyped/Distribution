@@ -10,3 +10,13 @@ trait IBackgroundTaskCompletedEventArgs extends js.Object {
   def checkResult(): scala.Unit
 }
 
+object IBackgroundTaskCompletedEventArgs {
+  @scala.inline
+  def apply(checkResult: js.Function0[scala.Unit], instanceId: java.lang.String): IBackgroundTaskCompletedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkResult")(checkResult)
+    __obj.updateDynamic("instanceId")(instanceId)
+    __obj.asInstanceOf[IBackgroundTaskCompletedEventArgs]
+  }
+}
+

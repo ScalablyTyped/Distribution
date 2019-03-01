@@ -13,3 +13,22 @@ trait Attrs extends js.Object {
   var value: js.Any
 }
 
+object Attrs {
+  @scala.inline
+  def apply(
+    local: java.lang.String,
+    name: java.lang.String,
+    prefix: java.lang.String,
+    uri: java.lang.String,
+    value: js.Any
+  ): Attrs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("local")(local)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("uri")(uri)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Attrs]
+  }
+}
+

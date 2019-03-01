@@ -9,3 +9,12 @@ trait IExtensionComponent extends js.Object {
   var model: IExtensionModel
 }
 
+object IExtensionComponent {
+  @scala.inline
+  def apply(model: IExtensionModel): IExtensionComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("model")(model)
+    __obj.asInstanceOf[IExtensionComponent]
+  }
+}
+

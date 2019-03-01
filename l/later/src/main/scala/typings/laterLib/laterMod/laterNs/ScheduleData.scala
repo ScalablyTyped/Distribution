@@ -21,3 +21,14 @@ trait ScheduleData extends js.Object {
   var schedules: js.Array[Recurrence]
 }
 
+object ScheduleData {
+  @scala.inline
+  def apply(error: scala.Double, exceptions: js.Array[Recurrence], schedules: js.Array[Recurrence]): ScheduleData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("exceptions")(exceptions)
+    __obj.updateDynamic("schedules")(schedules)
+    __obj.asInstanceOf[ScheduleData]
+  }
+}
+

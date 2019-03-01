@@ -20,3 +20,13 @@ trait Options extends js.Object {
   var precision: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(order: scala.Int | scala.Double = null, precision: scala.Int | scala.Double = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

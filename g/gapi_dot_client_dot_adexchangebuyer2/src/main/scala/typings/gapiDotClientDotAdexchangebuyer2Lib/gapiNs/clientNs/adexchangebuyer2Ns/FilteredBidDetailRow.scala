@@ -17,3 +17,18 @@ trait FilteredBidDetailRow extends js.Object {
   var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
 }
 
+object FilteredBidDetailRow {
+  @scala.inline
+  def apply(
+    bidCount: MetricValue = null,
+    detailId: scala.Int | scala.Double = null,
+    rowDimensions: RowDimensions = null
+  ): FilteredBidDetailRow = {
+    val __obj = js.Dynamic.literal()
+    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount)
+    if (detailId != null) __obj.updateDynamic("detailId")(detailId.asInstanceOf[js.Any])
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    __obj.asInstanceOf[FilteredBidDetailRow]
+  }
+}
+

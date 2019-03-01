@@ -12,3 +12,12 @@ trait FilterDialogClosingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object FilterDialogClosingEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null): FilterDialogClosingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[FilterDialogClosingEventUIParam]
+  }
+}
+

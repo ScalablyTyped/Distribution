@@ -28,3 +28,20 @@ trait Constraints extends js.Object {
   var supportedCompressions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Constraints {
+  @scala.inline
+  def apply(
+    maxDatabaseEntries: scala.Int | scala.Double = null,
+    maxUpdateEntries: scala.Int | scala.Double = null,
+    region: java.lang.String = null,
+    supportedCompressions: js.Array[java.lang.String] = null
+  ): Constraints = {
+    val __obj = js.Dynamic.literal()
+    if (maxDatabaseEntries != null) __obj.updateDynamic("maxDatabaseEntries")(maxDatabaseEntries.asInstanceOf[js.Any])
+    if (maxUpdateEntries != null) __obj.updateDynamic("maxUpdateEntries")(maxUpdateEntries.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (supportedCompressions != null) __obj.updateDynamic("supportedCompressions")(supportedCompressions)
+    __obj.asInstanceOf[Constraints]
+  }
+}
+

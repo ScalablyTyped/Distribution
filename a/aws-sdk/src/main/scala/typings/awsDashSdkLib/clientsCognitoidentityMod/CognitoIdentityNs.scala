@@ -115,7 +115,8 @@ object CognitoIdentityNs extends js.Object {
     var IdentityPoolId: IdentityPoolId
   }
   
-  trait GetCredentialsForIdentityInput extends js.Object {
+  trait GetCredentialsForIdentityInput
+    extends awsDashSdkLib.libCredentialsCognitoUnderscoreIdentityUnderscoreCredentialsMod.CognitoIdentityCredentialsNs.CognitoIdentityCredentialsInputs {
     /**
       * The Amazon Resource Name (ARN) of the role to be assumed when multiple roles were received in the token from the identity provider. For example, a SAML-based identity provider. This parameter is optional for identity providers that do not support role customization.
       */
@@ -141,7 +142,8 @@ object CognitoIdentityNs extends js.Object {
     var IdentityId: js.UndefOr[IdentityId] = js.undefined
   }
   
-  trait GetIdInput extends js.Object {
+  trait GetIdInput
+    extends awsDashSdkLib.libCredentialsCognitoUnderscoreIdentityUnderscoreCredentialsMod.CognitoIdentityCredentialsNs.CognitoIdentityCredentialsInputs {
     /**
       * A standard AWS account ID (9+ digits).
       */
@@ -215,7 +217,8 @@ object CognitoIdentityNs extends js.Object {
     var Token: js.UndefOr[OIDCToken] = js.undefined
   }
   
-  trait GetOpenIdTokenInput extends js.Object {
+  trait GetOpenIdTokenInput
+    extends awsDashSdkLib.libCredentialsCognitoUnderscoreIdentityUnderscoreCredentialsMod.CognitoIdentityCredentialsNs.CognitoIdentityCredentialsInputs {
     /**
       * A unique identifier in the format REGION:GUID.
       */
@@ -892,11 +895,21 @@ object CognitoIdentityNs extends js.Object {
     var IdentityId: js.UndefOr[IdentityId] = js.undefined
   }
   
+  trait _AmbiguousRoleResolutionType extends js.Object
+  
+  trait _ErrorCode extends js.Object
+  
+  trait _MappingRuleMatchType extends js.Object
+  
+  trait _RoleMappingType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ARNString = java.lang.String
   type AccessKeyString = java.lang.String
   type AccountId = java.lang.String
-  type AmbiguousRoleResolutionType = awsDashSdkLib.awsDashSdkLibStrings.AuthenticatedRole | awsDashSdkLib.awsDashSdkLibStrings.Deny | java.lang.String
+  type AmbiguousRoleResolutionType = _AmbiguousRoleResolutionType | java.lang.String
   type ClaimName = java.lang.String
   type ClaimValue = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -908,7 +921,7 @@ object CognitoIdentityNs extends js.Object {
   type DeveloperProviderName = java.lang.String
   type DeveloperUserIdentifier = java.lang.String
   type DeveloperUserIdentifierList = js.Array[DeveloperUserIdentifier]
-  type ErrorCode = awsDashSdkLib.awsDashSdkLibStrings.AccessDenied | awsDashSdkLib.awsDashSdkLibStrings.InternalServerError | java.lang.String
+  type ErrorCode = _ErrorCode | java.lang.String
   type HideDisabled = scala.Boolean
   type IdentitiesList = js.Array[IdentityDescription]
   type IdentityId = java.lang.String
@@ -921,19 +934,19 @@ object CognitoIdentityNs extends js.Object {
   type IdentityProviderName = java.lang.String
   type IdentityProviderToken = java.lang.String
   type LoginsList = js.Array[IdentityProviderName]
-  type MappingRuleMatchType = awsDashSdkLib.awsDashSdkLibStrings.Equals | awsDashSdkLib.awsDashSdkLibStrings.Contains | awsDashSdkLib.awsDashSdkLibStrings.StartsWith | awsDashSdkLib.awsDashSdkLibStrings.NotEqual | java.lang.String
+  type MappingRuleMatchType = _MappingRuleMatchType | java.lang.String
   type MappingRulesList = js.Array[MappingRule]
   type OIDCProviderList = js.Array[ARNString]
   type OIDCToken = java.lang.String
   type PaginationKey = java.lang.String
   type QueryLimit = scala.Double
-  type RoleMappingType = awsDashSdkLib.awsDashSdkLibStrings.Token | awsDashSdkLib.awsDashSdkLibStrings.Rules | java.lang.String
+  type RoleMappingType = _RoleMappingType | java.lang.String
   type RoleType = java.lang.String
   type SAMLProviderList = js.Array[ARNString]
   type SecretKeyString = java.lang.String
   type SessionTokenString = java.lang.String
   type TokenDuration = scala.Double
   type UnprocessedIdentityIdList = js.Array[UnprocessedIdentityId]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2014-06-30` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

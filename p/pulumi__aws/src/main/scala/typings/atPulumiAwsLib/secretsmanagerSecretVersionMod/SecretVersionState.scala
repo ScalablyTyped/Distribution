@@ -34,3 +34,24 @@ trait SecretVersionState extends js.Object {
   ] = js.undefined
 }
 
+object SecretVersionState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    secretBinary: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    secretId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    secretString: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    versionId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    versionStages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): SecretVersionState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (secretBinary != null) __obj.updateDynamic("secretBinary")(secretBinary.asInstanceOf[js.Any])
+    if (secretId != null) __obj.updateDynamic("secretId")(secretId.asInstanceOf[js.Any])
+    if (secretString != null) __obj.updateDynamic("secretString")(secretString.asInstanceOf[js.Any])
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
+    if (versionStages != null) __obj.updateDynamic("versionStages")(versionStages.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SecretVersionState]
+  }
+}
+

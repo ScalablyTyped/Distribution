@@ -11,3 +11,18 @@ trait ExtraVerificationParams extends js.Object {
   var prompt: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExtraVerificationParams {
+  @scala.inline
+  def apply(
+    audience: java.lang.String = null,
+    connection: java.lang.String = null,
+    prompt: java.lang.String = null
+  ): ExtraVerificationParams = {
+    val __obj = js.Dynamic.literal()
+    if (audience != null) __obj.updateDynamic("audience")(audience)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    __obj.asInstanceOf[ExtraVerificationParams]
+  }
+}
+

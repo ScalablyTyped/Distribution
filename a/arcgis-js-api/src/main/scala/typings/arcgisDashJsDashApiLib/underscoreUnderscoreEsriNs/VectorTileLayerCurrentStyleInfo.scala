@@ -1,0 +1,74 @@
+package typings
+package arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait VectorTileLayerCurrentStyleInfo
+  extends stdLib.Object {
+  /**
+    * Absolute template URL for font sets included in a style. The URL includes `{fontstack}` and `{range}` tokens.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+    */
+  var glyphsUrl: java.lang.String
+  /**
+    * Vector tile service information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+    */
+  var layerDefinition: js.Any
+  /**
+    * Absolute URL for a vector tile service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+    */
+  var serviceUrl: java.lang.String
+  /**
+    * Absolute URL for sprites included in a style.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+    */
+  var spriteUrl: java.lang.String
+  /**
+    * Style JSON object for vector tiles. Style object includes `version` of the style specification, `sprite` and `glyphs` properties. It adheres to [version 8 of the Mapbox GL style specification](https://www.mapbox.com/mapbox-gl-js/style-spec/).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+    */
+  var style: js.Any
+  /**
+    * Absolute URL for vector tile service style.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#currentStyleInfo)
+    */
+  var styleUrl: java.lang.String
+}
+
+object VectorTileLayerCurrentStyleInfo {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    glyphsUrl: java.lang.String,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    layerDefinition: js.Any,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    serviceUrl: java.lang.String,
+    spriteUrl: java.lang.String,
+    style: js.Any,
+    styleUrl: java.lang.String
+  ): VectorTileLayerCurrentStyleInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("constructor")(constructor)
+    __obj.updateDynamic("glyphsUrl")(glyphsUrl)
+    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
+    __obj.updateDynamic("layerDefinition")(layerDefinition)
+    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    __obj.updateDynamic("serviceUrl")(serviceUrl)
+    __obj.updateDynamic("spriteUrl")(spriteUrl)
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("styleUrl")(styleUrl)
+    __obj.asInstanceOf[VectorTileLayerCurrentStyleInfo]
+  }
+}
+

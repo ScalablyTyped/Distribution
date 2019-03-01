@@ -20,3 +20,20 @@ trait XProxyRunner
   def Run(aCode: XCodeProxy): scala.Double
 }
 
+object XProxyRunner {
+  @scala.inline
+  def apply(
+    Run: js.Function1[XCodeProxy, scala.Double],
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XProxyRunner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Run")(Run)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XProxyRunner]
+  }
+}
+

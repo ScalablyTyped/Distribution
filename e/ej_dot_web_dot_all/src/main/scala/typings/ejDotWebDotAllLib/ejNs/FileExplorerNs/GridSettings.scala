@@ -21,3 +21,18 @@ trait GridSettings extends js.Object {
   var columns: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object GridSettings {
+  @scala.inline
+  def apply(
+    allowResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    columns: js.Array[_] = null
+  ): GridSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing)
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    __obj.asInstanceOf[GridSettings]
+  }
+}
+

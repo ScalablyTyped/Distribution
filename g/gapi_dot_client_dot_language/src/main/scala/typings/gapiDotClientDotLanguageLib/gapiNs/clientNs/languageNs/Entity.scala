@@ -40,3 +40,24 @@ trait Entity extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Entity {
+  @scala.inline
+  def apply(
+    mentions: js.Array[EntityMention] = null,
+    metadata: stdLib.Record[java.lang.String, java.lang.String] = null,
+    name: java.lang.String = null,
+    salience: scala.Int | scala.Double = null,
+    sentiment: Sentiment = null,
+    `type`: java.lang.String = null
+  ): Entity = {
+    val __obj = js.Dynamic.literal()
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (salience != null) __obj.updateDynamic("salience")(salience.asInstanceOf[js.Any])
+    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Entity]
+  }
+}
+

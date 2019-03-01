@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "EffectFade")
 @js.native
-class EffectFade () extends js.Object
+class EffectFade ()
+  extends swiperLib.swiperMod.SwiperModule
 

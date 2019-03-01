@@ -19,3 +19,18 @@ trait EventRecordFailure extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EventRecordFailure {
+  @scala.inline
+  def apply(
+    eventId: java.lang.String = null,
+    failureCause: java.lang.String = null,
+    kind: java.lang.String = null
+  ): EventRecordFailure = {
+    val __obj = js.Dynamic.literal()
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
+    if (failureCause != null) __obj.updateDynamic("failureCause")(failureCause)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[EventRecordFailure]
+  }
+}
+

@@ -15,3 +15,13 @@ trait Anon_ShouldDestroyOnFileDelete extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ShouldDestroyOnFileDelete {
+  @scala.inline
+  def apply(shouldDestroyOnFileDelete: js.Function0[scala.Boolean] = null, text: java.lang.String = null): Anon_ShouldDestroyOnFileDelete = {
+    val __obj = js.Dynamic.literal()
+    if (shouldDestroyOnFileDelete != null) __obj.updateDynamic("shouldDestroyOnFileDelete")(shouldDestroyOnFileDelete)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Anon_ShouldDestroyOnFileDelete]
+  }
+}
+

@@ -27,3 +27,20 @@ trait OAuth2 extends js.Object {
   def getRedirectUri(scriptId: java.lang.String): java.lang.String
 }
 
+object OAuth2 {
+  @scala.inline
+  def apply(
+    STATE_PARAMETER_LOCATION: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof StateParameterLocation */ js.Any,
+    TOKEN_FORMAT: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TokenFormat */ js.Any,
+    createService: js.Function1[java.lang.String, OAuth2Service],
+    getRedirectUri: js.Function1[java.lang.String, java.lang.String]
+  ): OAuth2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("STATE_PARAMETER_LOCATION")(STATE_PARAMETER_LOCATION)
+    __obj.updateDynamic("TOKEN_FORMAT")(TOKEN_FORMAT)
+    __obj.updateDynamic("createService")(createService)
+    __obj.updateDynamic("getRedirectUri")(getRedirectUri)
+    __obj.asInstanceOf[OAuth2]
+  }
+}
+

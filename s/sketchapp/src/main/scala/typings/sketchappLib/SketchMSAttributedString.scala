@@ -12,3 +12,20 @@ trait SketchMSAttributedString extends js.Object {
   var string: java.lang.String
 }
 
+object SketchMSAttributedString {
+  @scala.inline
+  def apply(
+    _class: sketchappLib.sketchappLibStrings.attributedString,
+    attributes: js.Array[SketchMSStringAttribute],
+    string: java.lang.String,
+    archivedAttributedString: SketchMSKeyValueArchive = null
+  ): SketchMSAttributedString = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_class")(_class)
+    __obj.updateDynamic("attributes")(attributes)
+    __obj.updateDynamic("string")(string)
+    if (archivedAttributedString != null) __obj.updateDynamic("archivedAttributedString")(archivedAttributedString)
+    __obj.asInstanceOf[SketchMSAttributedString]
+  }
+}
+

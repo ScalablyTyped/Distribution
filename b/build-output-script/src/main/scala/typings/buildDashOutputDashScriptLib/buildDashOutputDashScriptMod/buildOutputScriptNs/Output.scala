@@ -16,3 +16,13 @@ trait Output extends js.Object {
   var value: scala.Double
 }
 
+object Output {
+  @scala.inline
+  def apply(address: java.lang.String, value: scala.Double): Output = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Output]
+  }
+}
+

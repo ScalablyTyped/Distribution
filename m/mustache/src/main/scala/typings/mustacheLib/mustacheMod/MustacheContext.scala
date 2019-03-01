@@ -27,3 +27,20 @@ trait MustacheContext extends js.Object {
   def push(view: js.Any): MustacheContext
 }
 
+object MustacheContext {
+  @scala.inline
+  def apply(
+    lookup: js.Function1[java.lang.String, js.Any],
+    parentContext: MustacheContext,
+    push: js.Function1[js.Any, MustacheContext],
+    view: js.Any
+  ): MustacheContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lookup")(lookup)
+    __obj.updateDynamic("parentContext")(parentContext)
+    __obj.updateDynamic("push")(push)
+    __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[MustacheContext]
+  }
+}
+

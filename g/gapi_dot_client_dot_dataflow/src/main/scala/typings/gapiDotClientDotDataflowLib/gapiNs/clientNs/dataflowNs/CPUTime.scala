@@ -20,3 +20,18 @@ trait CPUTime extends js.Object {
   var totalMs: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CPUTime {
+  @scala.inline
+  def apply(
+    rate: scala.Int | scala.Double = null,
+    timestamp: java.lang.String = null,
+    totalMs: java.lang.String = null
+  ): CPUTime = {
+    val __obj = js.Dynamic.literal()
+    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (totalMs != null) __obj.updateDynamic("totalMs")(totalMs)
+    __obj.asInstanceOf[CPUTime]
+  }
+}
+

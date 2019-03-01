@@ -10,3 +10,16 @@ trait CompoundFilterOperator[D] extends js.Object {
   var op: atOracleOraclejetLib.ojdataproviderMod.CompoundFilterOperatorNs.CompoundOperator
 }
 
+object CompoundFilterOperator {
+  @scala.inline
+  def apply[D](
+    criteria: js.Array[FilterOperator[D]],
+    op: atOracleOraclejetLib.ojdataproviderMod.CompoundFilterOperatorNs.CompoundOperator
+  ): CompoundFilterOperator[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("criteria")(criteria)
+    __obj.updateDynamic("op")(op)
+    __obj.asInstanceOf[CompoundFilterOperator[D]]
+  }
+}
+

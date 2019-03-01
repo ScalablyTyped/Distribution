@@ -10,3 +10,13 @@ trait Dimensions extends js.Object {
   val width: scala.Double
 }
 
+object Dimensions {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): Dimensions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Dimensions]
+  }
+}
+

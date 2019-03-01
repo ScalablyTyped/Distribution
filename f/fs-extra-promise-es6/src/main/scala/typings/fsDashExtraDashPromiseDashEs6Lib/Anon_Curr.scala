@@ -10,3 +10,16 @@ trait Anon_Curr extends js.Object {
   var prev: fsDashExtraDashPromiseDashEs6Lib.fsDashExtraDashPromiseDashEs6Mod.Stats
 }
 
+object Anon_Curr {
+  @scala.inline
+  def apply(
+    curr: fsDashExtraDashPromiseDashEs6Lib.fsDashExtraDashPromiseDashEs6Mod.Stats,
+    prev: fsDashExtraDashPromiseDashEs6Lib.fsDashExtraDashPromiseDashEs6Mod.Stats
+  ): Anon_Curr = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("curr")(curr)
+    __obj.updateDynamic("prev")(prev)
+    __obj.asInstanceOf[Anon_Curr]
+  }
+}
+

@@ -19,3 +19,33 @@ trait CommandData extends js.Object {
   def callback(args: js.Any*): js.Any
 }
 
+object CommandData {
+  @scala.inline
+  def apply(
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    command: java.lang.String,
+    execution: scala.Double,
+    start: scala.Double,
+    `type`: java.lang.String,
+    validate: js.Array[js.Tuple2[java.lang.String, js.Function1[/* repeated */ _, _]]],
+    cas: java.lang.String = null,
+    key: java.lang.String = null,
+    lifetime: scala.Int | scala.Double = null,
+    redundancyEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.Any = null
+  ): CommandData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("execution")(execution)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("validate")(validate)
+    if (cas != null) __obj.updateDynamic("cas")(cas)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (lifetime != null) __obj.updateDynamic("lifetime")(lifetime.asInstanceOf[js.Any])
+    if (!js.isUndefined(redundancyEnabled)) __obj.updateDynamic("redundancyEnabled")(redundancyEnabled)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CommandData]
+  }
+}
+

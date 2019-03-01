@@ -28,7 +28,8 @@ object archiverLibStrings {
   sealed trait progress extends js.Object
   
   @js.native
-  sealed trait tar extends js.Object
+  sealed trait tar
+    extends archiverLib.archiverMod.archiverNs.Format
   
   @js.native
   sealed trait unpipe extends js.Object
@@ -37,7 +38,8 @@ object archiverLibStrings {
   sealed trait warning extends js.Object
   
   @js.native
-  sealed trait zip extends js.Object
+  sealed trait zip
+    extends archiverLib.archiverMod.archiverNs.Format
   
   @scala.inline
   def close: close = "close".asInstanceOf[close]

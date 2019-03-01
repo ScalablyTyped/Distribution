@@ -14,3 +14,16 @@ trait Anon_Backward extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Backward {
+  @scala.inline
+  def apply(
+    direction: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.forward | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.backward = null,
+    unit: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.character | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.codePoint | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.word = null
+  ): Anon_Backward = {
+    val __obj = js.Dynamic.literal()
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Backward]
+  }
+}
+

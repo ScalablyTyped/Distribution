@@ -16,3 +16,13 @@ trait ASPxClientGridViewColumnProcessingModeEventArgs extends ASPxClientProcessi
   var column: ASPxClientGridViewColumn
 }
 
+object ASPxClientGridViewColumnProcessingModeEventArgs {
+  @scala.inline
+  def apply(column: ASPxClientGridViewColumn, processOnServer: scala.Boolean): ASPxClientGridViewColumnProcessingModeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[ASPxClientGridViewColumnProcessingModeEventArgs]
+  }
+}
+

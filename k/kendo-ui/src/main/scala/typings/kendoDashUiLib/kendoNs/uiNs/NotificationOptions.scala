@@ -22,3 +22,40 @@ trait NotificationOptions extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object NotificationOptions {
+  @scala.inline
+  def apply(
+    allowHideAfter: scala.Int | scala.Double = null,
+    animation: js.Any | scala.Boolean = null,
+    appendTo: java.lang.String | kendoDashUiLib.JQuery = null,
+    autoHideAfter: scala.Int | scala.Double = null,
+    button: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Double | java.lang.String = null,
+    hide: js.Function1[/* e */ NotificationHideEvent, scala.Unit] = null,
+    hideOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    position: NotificationPosition = null,
+    show: js.Function1[/* e */ NotificationShowEvent, scala.Unit] = null,
+    stacking: java.lang.String = null,
+    templates: js.Array[NotificationTemplate] = null,
+    width: scala.Double | java.lang.String = null
+  ): NotificationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (allowHideAfter != null) __obj.updateDynamic("allowHideAfter")(allowHideAfter.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
+    if (autoHideAfter != null) __obj.updateDynamic("autoHideAfter")(autoHideAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (show != null) __obj.updateDynamic("show")(show)
+    if (stacking != null) __obj.updateDynamic("stacking")(stacking)
+    if (templates != null) __obj.updateDynamic("templates")(templates)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NotificationOptions]
+  }
+}
+

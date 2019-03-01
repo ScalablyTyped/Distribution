@@ -20,3 +20,13 @@ trait ChangePageColorCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangePageColorCommand {
+  @scala.inline
+  def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[js.Any]): ChangePageColorCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangePageColorCommand]
+  }
+}
+

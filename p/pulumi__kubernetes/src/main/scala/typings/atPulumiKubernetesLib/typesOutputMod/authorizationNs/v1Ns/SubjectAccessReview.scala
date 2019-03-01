@@ -34,3 +34,22 @@ trait SubjectAccessReview extends js.Object {
   val status: SubjectAccessReviewStatus
 }
 
+object SubjectAccessReview {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: SubjectAccessReviewSpec,
+    status: SubjectAccessReviewStatus
+  ): SubjectAccessReview = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[SubjectAccessReview]
+  }
+}
+

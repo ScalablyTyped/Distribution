@@ -10,7 +10,9 @@ object reactDashJoyrideLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait beacon extends js.Object
+  sealed trait beacon
+    extends reactDashJoyrideLib.reactDashJoyrideMod.EventType
+       with reactDashJoyrideLib.reactDashJoyrideMod.Lifecycle
   
   @js.native
   sealed trait bottom extends js.Object
@@ -28,34 +30,46 @@ object reactDashJoyrideLibStrings {
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait close
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
-  sealed trait complete extends js.Object
+  sealed trait complete
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Lifecycle
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends reactDashJoyrideLib.reactDashJoyrideMod.EventType
+       with reactDashJoyrideLib.reactDashJoyrideMod.Lifecycle
+       with reactDashJoyrideLib.reactDashJoyrideMod.Status
   
   @js.native
-  sealed trait `error:target_not_found` extends js.Object
+  sealed trait `error:target_not_found`
+    extends reactDashJoyrideLib.reactDashJoyrideMod.EventType
   
   @js.native
-  sealed trait finished extends js.Object
+  sealed trait finished
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Status
   
   @js.native
-  sealed trait go extends js.Object
+  sealed trait go
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
   sealed trait hover extends js.Object
   
   @js.native
-  sealed trait idle extends js.Object
+  sealed trait idle
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Status
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait index
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
-  sealed trait init extends js.Object
+  sealed trait init
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
+       with reactDashJoyrideLib.reactDashJoyrideMod.Lifecycle
   
   @js.native
   sealed trait left extends js.Object
@@ -67,22 +81,29 @@ object reactDashJoyrideLibStrings {
   sealed trait `left-start` extends js.Object
   
   @js.native
-  sealed trait next extends js.Object
+  sealed trait next
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait paused
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Status
   
   @js.native
-  sealed trait prev extends js.Object
+  sealed trait prev
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait ready
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Lifecycle
+       with reactDashJoyrideLib.reactDashJoyrideMod.Status
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait reset
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
-  sealed trait restart extends js.Object
+  sealed trait restart
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
   sealed trait right extends js.Object
@@ -94,28 +115,37 @@ object reactDashJoyrideLibStrings {
   sealed trait `right-start` extends js.Object
   
   @js.native
-  sealed trait running extends js.Object
+  sealed trait running
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Status
   
   @js.native
-  sealed trait skip extends js.Object
+  sealed trait skip
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
-  sealed trait skipped extends js.Object
+  sealed trait skipped
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Status
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
-  sealed trait `step:after` extends js.Object
+  sealed trait `step:after`
+    extends reactDashJoyrideLib.reactDashJoyrideMod.EventType
   
   @js.native
-  sealed trait `step:before` extends js.Object
+  sealed trait `step:before`
+    extends reactDashJoyrideLib.reactDashJoyrideMod.EventType
   
   @js.native
-  sealed trait stop extends js.Object
+  sealed trait stop
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
-  sealed trait tooltip extends js.Object
+  sealed trait tooltip
+    extends reactDashJoyrideLib.reactDashJoyrideMod.EventType
+       with reactDashJoyrideLib.reactDashJoyrideMod.Lifecycle
   
   @js.native
   sealed trait top extends js.Object
@@ -127,19 +157,24 @@ object reactDashJoyrideLibStrings {
   sealed trait `top-start` extends js.Object
   
   @js.native
-  sealed trait `tour:end` extends js.Object
+  sealed trait `tour:end`
+    extends reactDashJoyrideLib.reactDashJoyrideMod.EventType
   
   @js.native
-  sealed trait `tour:start` extends js.Object
+  sealed trait `tour:start`
+    extends reactDashJoyrideLib.reactDashJoyrideMod.EventType
   
   @js.native
-  sealed trait `tour:status` extends js.Object
+  sealed trait `tour:status`
+    extends reactDashJoyrideLib.reactDashJoyrideMod.EventType
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Action
   
   @js.native
-  sealed trait waiting extends js.Object
+  sealed trait waiting
+    extends reactDashJoyrideLib.reactDashJoyrideMod.Status
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]

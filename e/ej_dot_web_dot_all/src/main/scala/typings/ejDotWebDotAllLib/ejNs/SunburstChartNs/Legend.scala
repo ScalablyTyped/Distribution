@@ -67,3 +67,40 @@ trait Legend extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Legend {
+  @scala.inline
+  def apply(
+    alignment: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstAlignment | java.lang.String = null,
+    border: LegendBorder = null,
+    clickAction: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstClickAction | java.lang.String = null,
+    columnCount: scala.Int | scala.Double = null,
+    font: LegendFont = null,
+    itemPadding: scala.Int | scala.Double = null,
+    itemStyle: LegendItemStyle = null,
+    location: LegendLocation = null,
+    position: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstLegendPosition | java.lang.String = null,
+    rowCount: scala.Int | scala.Double = null,
+    shape: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstLegendShape | java.lang.String = null,
+    size: LegendSize = null,
+    title: LegendTitle = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): Legend = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (clickAction != null) __obj.updateDynamic("clickAction")(clickAction.asInstanceOf[js.Any])
+    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (itemPadding != null) __obj.updateDynamic("itemPadding")(itemPadding.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[Legend]
+  }
+}
+

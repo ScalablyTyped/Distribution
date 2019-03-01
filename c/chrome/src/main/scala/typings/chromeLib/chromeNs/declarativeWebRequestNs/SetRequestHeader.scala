@@ -10,3 +10,13 @@ trait SetRequestHeader extends js.Object {
   var value: java.lang.String
 }
 
+object SetRequestHeader {
+  @scala.inline
+  def apply(name: java.lang.String, value: java.lang.String): SetRequestHeader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SetRequestHeader]
+  }
+}
+

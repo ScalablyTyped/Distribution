@@ -10,3 +10,12 @@ trait NotebookCollectionData extends js.Object {
   var items: js.UndefOr[js.Array[NotebookData]] = js.undefined
 }
 
+object NotebookCollectionData {
+  @scala.inline
+  def apply(items: js.Array[NotebookData] = null): NotebookCollectionData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[NotebookCollectionData]
+  }
+}
+

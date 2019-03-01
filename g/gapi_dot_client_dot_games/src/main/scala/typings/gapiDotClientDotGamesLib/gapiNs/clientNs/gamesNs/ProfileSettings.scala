@@ -12,3 +12,13 @@ trait ProfileSettings extends js.Object {
   var profileVisible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ProfileSettings {
+  @scala.inline
+  def apply(kind: java.lang.String = null, profileVisible: js.UndefOr[scala.Boolean] = js.undefined): ProfileSettings = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(profileVisible)) __obj.updateDynamic("profileVisible")(profileVisible)
+    __obj.asInstanceOf[ProfileSettings]
+  }
+}
+

@@ -4198,8 +4198,14 @@ object NeptuneNs extends js.Object {
     var VpcSecurityGroupId: js.UndefOr[String] = js.undefined
   }
   
+  trait _ApplyMethod extends js.Object
+  
+  trait _SourceType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
-  type ApplyMethod = awsDashSdkLib.awsDashSdkLibStrings.immediate | awsDashSdkLib.awsDashSdkLibStrings.`pending-reboot` | java.lang.String
+  type ApplyMethod = _ApplyMethod | java.lang.String
   type AttributeValueList = js.Array[String]
   type AvailabilityZoneList = js.Array[AvailabilityZone]
   type AvailabilityZones = js.Array[String]
@@ -4245,7 +4251,7 @@ object NeptuneNs extends js.Object {
   type ReadReplicaDBInstanceIdentifierList = js.Array[String]
   type ReadReplicaIdentifierList = js.Array[String]
   type SourceIdsList = js.Array[String]
-  type SourceType = awsDashSdkLib.awsDashSdkLibStrings.`db-instance` | awsDashSdkLib.awsDashSdkLibStrings.`db-parameter-group` | awsDashSdkLib.awsDashSdkLibStrings.`db-security-group` | awsDashSdkLib.awsDashSdkLibStrings.`db-snapshot` | awsDashSdkLib.awsDashSdkLibStrings.`db-cluster` | awsDashSdkLib.awsDashSdkLibStrings.`db-cluster-snapshot` | java.lang.String
+  type SourceType = _SourceType | java.lang.String
   type String = java.lang.String
   type SubnetIdentifierList = js.Array[String]
   type SubnetList = js.Array[Subnet]
@@ -4257,6 +4263,6 @@ object NeptuneNs extends js.Object {
   type ValidUpgradeTargetList = js.Array[UpgradeTarget]
   type VpcSecurityGroupIdList = js.Array[String]
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2014-10-31` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

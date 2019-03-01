@@ -16,3 +16,12 @@ trait BoxShadowProps extends js.Object {
   var boxShadow: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BoxShadowProperty | scala.Double]] = js.undefined
 }
 
+object BoxShadowProps {
+  @scala.inline
+  def apply(boxShadow: ResponsiveValue[csstypeLib.csstypeMod.BoxShadowProperty | scala.Double] = null): BoxShadowProps = {
+    val __obj = js.Dynamic.literal()
+    if (boxShadow != null) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BoxShadowProps]
+  }
+}
+

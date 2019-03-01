@@ -28,3 +28,22 @@ trait Anon_MaxConnections extends js.Object {
   var rateLimit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_MaxConnections {
+  @scala.inline
+  def apply(
+    maxConnections: js.UndefOr[scala.Boolean] = js.undefined,
+    maxMessages: js.UndefOr[scala.Boolean] = js.undefined,
+    pool: js.UndefOr[scala.Boolean] = js.undefined,
+    rateDelta: js.UndefOr[scala.Boolean] = js.undefined,
+    rateLimit: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_MaxConnections = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections)
+    if (!js.isUndefined(maxMessages)) __obj.updateDynamic("maxMessages")(maxMessages)
+    if (!js.isUndefined(pool)) __obj.updateDynamic("pool")(pool)
+    if (!js.isUndefined(rateDelta)) __obj.updateDynamic("rateDelta")(rateDelta)
+    if (!js.isUndefined(rateLimit)) __obj.updateDynamic("rateLimit")(rateLimit)
+    __obj.asInstanceOf[Anon_MaxConnections]
+  }
+}
+

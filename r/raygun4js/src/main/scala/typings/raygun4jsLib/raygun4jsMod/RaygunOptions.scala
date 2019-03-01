@@ -75,3 +75,46 @@ trait RaygunOptions extends js.Object {
   var wrapAsynchronousCallbacks: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RaygunOptions {
+  @scala.inline
+  def apply(
+    allowInsecureSubmissions: js.UndefOr[scala.Boolean] = js.undefined,
+    apiEndpoint: java.lang.String = null,
+    captureUnhandledRejections: js.UndefOr[scala.Boolean] = js.undefined,
+    debugMode: js.UndefOr[scala.Boolean] = js.undefined,
+    disableAnonymousUserTracking: js.UndefOr[scala.Boolean] = js.undefined,
+    disableErrorTracking: js.UndefOr[scala.Boolean] = js.undefined,
+    disablePulse: js.UndefOr[scala.Boolean] = js.undefined,
+    excludedHostnames: js.Array[java.lang.String | stdLib.RegExp] = null,
+    excludedUserAgents: js.Array[java.lang.String | stdLib.RegExp] = null,
+    from: java.lang.String | raygun4jsLib.raygun4jsLibStrings.onLoad = null,
+    ignore3rdPartyErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreAjaxAbort: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreAjaxError: js.UndefOr[scala.Boolean] = js.undefined,
+    pulseIgnoreUrlCasing: js.UndefOr[scala.Boolean] = js.undefined,
+    pulseMaxVirtualPageDuration: scala.Int | scala.Double = null,
+    setCookieAsSecure: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapAsynchronousCallbacks: js.UndefOr[scala.Boolean] = js.undefined
+  ): RaygunOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowInsecureSubmissions)) __obj.updateDynamic("allowInsecureSubmissions")(allowInsecureSubmissions)
+    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint)
+    if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections)
+    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode)
+    if (!js.isUndefined(disableAnonymousUserTracking)) __obj.updateDynamic("disableAnonymousUserTracking")(disableAnonymousUserTracking)
+    if (!js.isUndefined(disableErrorTracking)) __obj.updateDynamic("disableErrorTracking")(disableErrorTracking)
+    if (!js.isUndefined(disablePulse)) __obj.updateDynamic("disablePulse")(disablePulse)
+    if (excludedHostnames != null) __obj.updateDynamic("excludedHostnames")(excludedHostnames)
+    if (excludedUserAgents != null) __obj.updateDynamic("excludedUserAgents")(excludedUserAgents)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignore3rdPartyErrors)) __obj.updateDynamic("ignore3rdPartyErrors")(ignore3rdPartyErrors)
+    if (!js.isUndefined(ignoreAjaxAbort)) __obj.updateDynamic("ignoreAjaxAbort")(ignoreAjaxAbort)
+    if (!js.isUndefined(ignoreAjaxError)) __obj.updateDynamic("ignoreAjaxError")(ignoreAjaxError)
+    if (!js.isUndefined(pulseIgnoreUrlCasing)) __obj.updateDynamic("pulseIgnoreUrlCasing")(pulseIgnoreUrlCasing)
+    if (pulseMaxVirtualPageDuration != null) __obj.updateDynamic("pulseMaxVirtualPageDuration")(pulseMaxVirtualPageDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(setCookieAsSecure)) __obj.updateDynamic("setCookieAsSecure")(setCookieAsSecure)
+    if (!js.isUndefined(wrapAsynchronousCallbacks)) __obj.updateDynamic("wrapAsynchronousCallbacks")(wrapAsynchronousCallbacks)
+    __obj.asInstanceOf[RaygunOptions]
+  }
+}
+

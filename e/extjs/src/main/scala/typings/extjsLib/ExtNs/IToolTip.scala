@@ -37,3 +37,40 @@ trait IToolTip
   var triggerElement: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
+object IToolTip {
+  @scala.inline
+  def apply(
+    ITip: extjsLib.ExtNs.tipNs.ITip = null,
+    anchor: java.lang.String = null,
+    anchorOffset: scala.Int | scala.Double = null,
+    anchorToTarget: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHide: js.UndefOr[scala.Boolean] = js.undefined,
+    delegate: java.lang.String = null,
+    dismissDelay: scala.Int | scala.Double = null,
+    hideDelay: scala.Int | scala.Double = null,
+    mouseOffset: Array = null,
+    setTarget: js.Function1[/* t */ js.UndefOr[js.Any], scala.Unit] = null,
+    showDelay: scala.Int | scala.Double = null,
+    target: js.Any = null,
+    trackMouse: js.UndefOr[scala.Boolean] = js.undefined,
+    triggerElement: stdLib.HTMLElement = null
+  ): IToolTip = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ITip)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (anchorOffset != null) __obj.updateDynamic("anchorOffset")(anchorOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(anchorToTarget)) __obj.updateDynamic("anchorToTarget")(anchorToTarget)
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
+    if (delegate != null) __obj.updateDynamic("delegate")(delegate)
+    if (dismissDelay != null) __obj.updateDynamic("dismissDelay")(dismissDelay.asInstanceOf[js.Any])
+    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
+    if (mouseOffset != null) __obj.updateDynamic("mouseOffset")(mouseOffset)
+    if (setTarget != null) __obj.updateDynamic("setTarget")(setTarget)
+    if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(trackMouse)) __obj.updateDynamic("trackMouse")(trackMouse)
+    if (triggerElement != null) __obj.updateDynamic("triggerElement")(triggerElement)
+    __obj.asInstanceOf[IToolTip]
+  }
+}
+

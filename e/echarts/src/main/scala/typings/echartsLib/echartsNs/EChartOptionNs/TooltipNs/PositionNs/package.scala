@@ -14,6 +14,5 @@ package object PositionNs {
     /* size */ js.Object, 
     (js.Array[scala.Double | java.lang.String]) | Obj
   ]
-  type Str = echartsLib.echartsLibStrings.inside | echartsLib.echartsLibStrings.top | echartsLib.echartsLibStrings.left | echartsLib.echartsLibStrings.right | echartsLib.echartsLibStrings.bottom
-  type Type = Str | Obj | (js.Array[scala.Double | java.lang.String]) | Fn
+  type Type = _Type | (js.Array[scala.Double | java.lang.String]) | Fn
 }

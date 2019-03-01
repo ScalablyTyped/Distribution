@@ -16,3 +16,24 @@ trait XJobManager
   def releaseJob(Job: XCancellable): scala.Unit
 }
 
+object XJobManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    cancelAllJobs: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerJob: js.Function1[XCancellable, scala.Unit],
+    release: js.Function0[scala.Unit],
+    releaseJob: js.Function1[XCancellable, scala.Unit]
+  ): XJobManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("cancelAllJobs")(cancelAllJobs)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerJob")(registerJob)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("releaseJob")(releaseJob)
+    __obj.asInstanceOf[XJobManager]
+  }
+}
+

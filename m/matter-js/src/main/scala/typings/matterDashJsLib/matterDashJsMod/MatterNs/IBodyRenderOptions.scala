@@ -42,3 +42,24 @@ trait IBodyRenderOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IBodyRenderOptions {
+  @scala.inline
+  def apply(
+    fillStyle: java.lang.String = null,
+    lineWidth: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    sprite: IBodyRenderOptionsSprite = null,
+    strokeStyle: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): IBodyRenderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (sprite != null) __obj.updateDynamic("sprite")(sprite)
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[IBodyRenderOptions]
+  }
+}
+

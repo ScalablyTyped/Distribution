@@ -33,3 +33,18 @@ trait ColumnOptions extends js.Object {
   var field: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColumnOptions {
+  @scala.inline
+  def apply(
+    allowNull: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultValue: js.Any = null,
+    field: java.lang.String = null
+  ): ColumnOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (field != null) __obj.updateDynamic("field")(field)
+    __obj.asInstanceOf[ColumnOptions]
+  }
+}
+

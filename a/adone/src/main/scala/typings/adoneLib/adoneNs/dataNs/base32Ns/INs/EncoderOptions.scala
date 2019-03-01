@@ -10,3 +10,15 @@ trait EncoderOptions extends js.Object {
   var `type`: adoneLib.adoneLibStrings.rfc4648 | adoneLib.adoneLibStrings.crockford | adoneLib.adoneLibStrings.base32hex
 }
 
+object EncoderOptions {
+  @scala.inline
+  def apply(
+    `type`: adoneLib.adoneLibStrings.rfc4648 | adoneLib.adoneLibStrings.crockford | adoneLib.adoneLibStrings.base32hex,
+    alphabet: java.lang.String = null
+  ): EncoderOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (alphabet != null) __obj.updateDynamic("alphabet")(alphabet)
+    __obj.asInstanceOf[EncoderOptions]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ILoadUnitResponse extends js.Object {
   var unit: IAbstractUnitJson
 }
 
+object ILoadUnitResponse {
+  @scala.inline
+  def apply(eventId: scala.Double, unit: IAbstractUnitJson): ILoadUnitResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventId")(eventId)
+    __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[ILoadUnitResponse]
+  }
+}
+

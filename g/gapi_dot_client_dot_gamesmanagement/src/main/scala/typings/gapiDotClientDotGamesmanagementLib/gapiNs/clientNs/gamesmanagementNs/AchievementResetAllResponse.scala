@@ -12,3 +12,13 @@ trait AchievementResetAllResponse extends js.Object {
   var results: js.UndefOr[js.Array[AchievementResetResponse]] = js.undefined
 }
 
+object AchievementResetAllResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, results: js.Array[AchievementResetResponse] = null): AchievementResetAllResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (results != null) __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[AchievementResetAllResponse]
+  }
+}
+

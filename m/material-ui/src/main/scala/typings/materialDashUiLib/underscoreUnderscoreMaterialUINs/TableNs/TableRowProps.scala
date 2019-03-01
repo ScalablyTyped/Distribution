@@ -69,3 +69,69 @@ trait TableRowProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object TableRowProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    displayBorder: js.UndefOr[scala.Boolean] = js.undefined,
+    hoverable: js.UndefOr[scala.Boolean] = js.undefined,
+    hovered: js.UndefOr[scala.Boolean] = js.undefined,
+    onCellClick: js.Function3[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* row */ scala.Double, 
+      /* column */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onCellHover: js.Function3[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* row */ scala.Double, 
+      /* column */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onCellHoverExit: js.Function3[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* row */ scala.Double, 
+      /* column */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onRowClick: js.Function2[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* row */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onRowHover: js.Function2[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* row */ scala.Double, 
+      scala.Unit
+    ] = null,
+    onRowHoverExit: js.Function2[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* row */ scala.Double, 
+      scala.Unit
+    ] = null,
+    rowNumber: scala.Int | scala.Double = null,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    striped: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): TableRowProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(displayBorder)) __obj.updateDynamic("displayBorder")(displayBorder)
+    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable)
+    if (!js.isUndefined(hovered)) __obj.updateDynamic("hovered")(hovered)
+    if (onCellClick != null) __obj.updateDynamic("onCellClick")(onCellClick)
+    if (onCellHover != null) __obj.updateDynamic("onCellHover")(onCellHover)
+    if (onCellHoverExit != null) __obj.updateDynamic("onCellHoverExit")(onCellHoverExit)
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
+    if (onRowHover != null) __obj.updateDynamic("onRowHover")(onRowHover)
+    if (onRowHoverExit != null) __obj.updateDynamic("onRowHoverExit")(onRowHoverExit)
+    if (rowNumber != null) __obj.updateDynamic("rowNumber")(rowNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[TableRowProps]
+  }
+}
+

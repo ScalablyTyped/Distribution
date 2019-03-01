@@ -10,3 +10,16 @@ trait CommentsRangeObject extends js.Object {
   var to: js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords] = js.undefined
 }
 
+object CommentsRangeObject {
+  @scala.inline
+  def apply(
+    from: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords,
+    to: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords = null
+  ): CommentsRangeObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[CommentsRangeObject]
+  }
+}
+

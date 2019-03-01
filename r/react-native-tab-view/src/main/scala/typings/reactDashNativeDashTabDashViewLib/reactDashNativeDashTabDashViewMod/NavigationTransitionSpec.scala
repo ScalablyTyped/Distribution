@@ -19,3 +19,22 @@ trait NavigationTransitionSpec extends js.Object {
   ] = js.undefined
 }
 
+object NavigationTransitionSpec {
+  @scala.inline
+  def apply(
+    duration: scala.Int | scala.Double = null,
+    easing: reactDashNativeLib.reactDashNativeMod.EasingFunction = null,
+    timing: js.Function2[
+      /* value */ reactDashNativeLib.reactDashNativeMod.AnimatedNs.Value, 
+      /* config */ js.Any, 
+      _
+    ] = null
+  ): NavigationTransitionSpec = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (timing != null) __obj.updateDynamic("timing")(timing)
+    __obj.asInstanceOf[NavigationTransitionSpec]
+  }
+}
+

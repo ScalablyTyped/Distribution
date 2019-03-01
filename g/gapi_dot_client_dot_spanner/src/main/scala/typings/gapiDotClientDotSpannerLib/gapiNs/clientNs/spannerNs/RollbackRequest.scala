@@ -10,3 +10,12 @@ trait RollbackRequest extends js.Object {
   var transactionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RollbackRequest {
+  @scala.inline
+  def apply(transactionId: java.lang.String = null): RollbackRequest = {
+    val __obj = js.Dynamic.literal()
+    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId)
+    __obj.asInstanceOf[RollbackRequest]
+  }
+}
+

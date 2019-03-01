@@ -28,3 +28,14 @@ trait NoDataOptions extends js.Object {
   var style: js.UndefOr[CSSObject] = js.undefined
 }
 
+object NoDataOptions {
+  @scala.inline
+  def apply(attr: js.Object = null, position: Position = null, style: CSSObject = null): NoDataOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attr != null) __obj.updateDynamic("attr")(attr)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[NoDataOptions]
+  }
+}
+

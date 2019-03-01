@@ -69,3 +69,54 @@ trait Options extends js.Object {
   var zoomScaleSensitivity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    beforePan: js.Function2[/* oldPan */ Point, /* newPan */ Point, scala.Unit | scala.Boolean | PointModifier] = null,
+    beforeZoom: js.Function2[/* oldScale */ scala.Double, /* newScale */ scala.Double, scala.Unit | scala.Boolean] = null,
+    center: js.UndefOr[scala.Boolean] = js.undefined,
+    contain: js.UndefOr[scala.Boolean] = js.undefined,
+    controlIconsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    customEventsHandler: CustomEventHandler = null,
+    dblClickZoomEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    eventsListenerElement: stdLib.SVGElement = null,
+    fit: js.UndefOr[scala.Boolean] = js.undefined,
+    maxZoom: scala.Int | scala.Double = null,
+    minZoom: scala.Int | scala.Double = null,
+    mouseWheelZoomEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    onPan: js.Function1[/* newPan */ Point, scala.Unit] = null,
+    onUpdatedCTM: js.Function1[/* newCTM */ stdLib.SVGMatrix, scala.Unit] = null,
+    onZoom: js.Function1[/* newScale */ scala.Double, scala.Unit] = null,
+    panEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    preventMouseEventsDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    refreshRate: scala.Double | svgDashPanDashZoomLib.svgDashPanDashZoomLibStrings.auto = null,
+    viewportSelector: java.lang.String | stdLib.HTMLElement | stdLib.SVGElement = null,
+    zoomEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    zoomScaleSensitivity: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (beforePan != null) __obj.updateDynamic("beforePan")(beforePan)
+    if (beforeZoom != null) __obj.updateDynamic("beforeZoom")(beforeZoom)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (!js.isUndefined(contain)) __obj.updateDynamic("contain")(contain)
+    if (!js.isUndefined(controlIconsEnabled)) __obj.updateDynamic("controlIconsEnabled")(controlIconsEnabled)
+    if (customEventsHandler != null) __obj.updateDynamic("customEventsHandler")(customEventsHandler)
+    if (!js.isUndefined(dblClickZoomEnabled)) __obj.updateDynamic("dblClickZoomEnabled")(dblClickZoomEnabled)
+    if (eventsListenerElement != null) __obj.updateDynamic("eventsListenerElement")(eventsListenerElement)
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit)
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseWheelZoomEnabled)) __obj.updateDynamic("mouseWheelZoomEnabled")(mouseWheelZoomEnabled)
+    if (onPan != null) __obj.updateDynamic("onPan")(onPan)
+    if (onUpdatedCTM != null) __obj.updateDynamic("onUpdatedCTM")(onUpdatedCTM)
+    if (onZoom != null) __obj.updateDynamic("onZoom")(onZoom)
+    if (!js.isUndefined(panEnabled)) __obj.updateDynamic("panEnabled")(panEnabled)
+    if (!js.isUndefined(preventMouseEventsDefault)) __obj.updateDynamic("preventMouseEventsDefault")(preventMouseEventsDefault)
+    if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
+    if (viewportSelector != null) __obj.updateDynamic("viewportSelector")(viewportSelector.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled)
+    if (zoomScaleSensitivity != null) __obj.updateDynamic("zoomScaleSensitivity")(zoomScaleSensitivity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

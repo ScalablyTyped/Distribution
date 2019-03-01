@@ -10,3 +10,13 @@ trait MenuOptions[OptionType] extends js.Object {
   var render: js.Array[OptionType]
 }
 
+object MenuOptions {
+  @scala.inline
+  def apply[OptionType](focusable: js.Array[OptionType], render: js.Array[OptionType]): MenuOptions[OptionType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("focusable")(focusable)
+    __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[MenuOptions[OptionType]]
+  }
+}
+

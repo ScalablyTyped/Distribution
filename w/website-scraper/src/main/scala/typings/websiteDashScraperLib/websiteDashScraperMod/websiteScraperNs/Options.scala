@@ -20,3 +20,36 @@ trait Options extends js.Object {
   var urls: js.Array[java.lang.String | Url]
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    directory: java.lang.String,
+    urls: js.Array[java.lang.String | Url],
+    defaultFilename: java.lang.String = null,
+    filenameGenerator: java.lang.String = null,
+    ignoreErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    maxDepth: scala.Int | scala.Double = null,
+    prettifyUrls: js.UndefOr[scala.Boolean] = js.undefined,
+    recursive: js.UndefOr[scala.Boolean] = js.undefined,
+    request: RequestOptions = null,
+    sources: js.Array[Source] = null,
+    subdirectories: js.Array[SubDirectory] = null,
+    urlFilter: js.Function1[/* url */ java.lang.String, scala.Boolean] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("directory")(directory)
+    __obj.updateDynamic("urls")(urls)
+    if (defaultFilename != null) __obj.updateDynamic("defaultFilename")(defaultFilename)
+    if (filenameGenerator != null) __obj.updateDynamic("filenameGenerator")(filenameGenerator)
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
+    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettifyUrls)) __obj.updateDynamic("prettifyUrls")(prettifyUrls)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (subdirectories != null) __obj.updateDynamic("subdirectories")(subdirectories)
+    if (urlFilter != null) __obj.updateDynamic("urlFilter")(urlFilter)
+    __obj.asInstanceOf[Options]
+  }
+}
+

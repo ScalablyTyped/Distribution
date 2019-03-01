@@ -9,3 +9,12 @@ trait ReplaceConfig extends js.Object {
   var deep: scala.Boolean
 }
 
+object ReplaceConfig {
+  @scala.inline
+  def apply(deep: scala.Boolean): ReplaceConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deep")(deep)
+    __obj.asInstanceOf[ReplaceConfig]
+  }
+}
+

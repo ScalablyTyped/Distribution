@@ -22,3 +22,13 @@ trait StackTrace extends js.Object {
   var stackTraceHashId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StackTrace {
+  @scala.inline
+  def apply(stackFrames: StackFrames = null, stackTraceHashId: java.lang.String = null): StackTrace = {
+    val __obj = js.Dynamic.literal()
+    if (stackFrames != null) __obj.updateDynamic("stackFrames")(stackFrames)
+    if (stackTraceHashId != null) __obj.updateDynamic("stackTraceHashId")(stackTraceHashId)
+    __obj.asInstanceOf[StackTrace]
+  }
+}
+

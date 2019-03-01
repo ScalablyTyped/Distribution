@@ -12,3 +12,13 @@ trait SearchAnalyticsQueryResponse extends js.Object {
   var rows: js.UndefOr[js.Array[ApiDataRow]] = js.undefined
 }
 
+object SearchAnalyticsQueryResponse {
+  @scala.inline
+  def apply(responseAggregationType: java.lang.String = null, rows: js.Array[ApiDataRow] = null): SearchAnalyticsQueryResponse = {
+    val __obj = js.Dynamic.literal()
+    if (responseAggregationType != null) __obj.updateDynamic("responseAggregationType")(responseAggregationType)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[SearchAnalyticsQueryResponse]
+  }
+}
+

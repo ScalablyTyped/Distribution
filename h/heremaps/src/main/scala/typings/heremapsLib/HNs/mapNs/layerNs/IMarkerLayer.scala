@@ -39,3 +39,28 @@ trait IMarkerLayer extends js.Object {
   ): heremapsLib.HNs.mapNs.layerNs.IMarkerLayerNs.Response | heremapsLib.HNs.mapNs.layerNs.IMarkerLayerNs.TiledResponse
 }
 
+object IMarkerLayer {
+  @scala.inline
+  def apply(
+    requestDomMarkers: js.Function4[
+      heremapsLib.HNs.geoNs.Rect, 
+      scala.Double, 
+      scala.Boolean, 
+      heremapsLib.HNs.mathNs.Point, 
+      heremapsLib.HNs.mapNs.layerNs.IMarkerLayerNs.Response | heremapsLib.HNs.mapNs.layerNs.IMarkerLayerNs.TiledResponse
+    ],
+    requestMarkers: js.Function4[
+      heremapsLib.HNs.geoNs.Rect, 
+      scala.Double, 
+      scala.Boolean, 
+      heremapsLib.HNs.mathNs.Point, 
+      heremapsLib.HNs.mapNs.layerNs.IMarkerLayerNs.Response | heremapsLib.HNs.mapNs.layerNs.IMarkerLayerNs.TiledResponse
+    ]
+  ): IMarkerLayer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("requestDomMarkers")(requestDomMarkers)
+    __obj.updateDynamic("requestMarkers")(requestMarkers)
+    __obj.asInstanceOf[IMarkerLayer]
+  }
+}
+

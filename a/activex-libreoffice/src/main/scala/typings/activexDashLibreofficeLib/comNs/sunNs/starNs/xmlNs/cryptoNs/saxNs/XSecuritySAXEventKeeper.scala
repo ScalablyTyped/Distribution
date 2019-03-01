@@ -26,3 +26,54 @@ trait XSecuritySAXEventKeeper extends XSAXEventKeeper {
   def setSecurityId(id: scala.Double, securityId: scala.Double): scala.Unit
 }
 
+object XSecuritySAXEventKeeper {
+  @scala.inline
+  def apply(
+    CurrentBlockingNode: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper,
+    acquire: js.Function0[scala.Unit],
+    addBlocker: js.Function0[scala.Double],
+    addElementCollector: js.Function0[scala.Double],
+    addSecurityElementCollector: js.Function2[ElementMarkPriority, scala.Boolean, scala.Double],
+    getCurrentBlockingNode: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper],
+    getElement: js.Function1[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper
+    ],
+    isBlocking: js.Function0[scala.Boolean],
+    printBufferNodeTree: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeBlocker: js.Function1[scala.Double, scala.Unit],
+    removeElementCollector: js.Function1[scala.Double, scala.Unit],
+    setElement: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.wrapperNs.XXMLElementWrapper, 
+      scala.Unit
+    ],
+    setNextHandler: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler
+    ],
+    setSecurityId: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): XSecuritySAXEventKeeper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CurrentBlockingNode")(CurrentBlockingNode)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addBlocker")(addBlocker)
+    __obj.updateDynamic("addElementCollector")(addElementCollector)
+    __obj.updateDynamic("addSecurityElementCollector")(addSecurityElementCollector)
+    __obj.updateDynamic("getCurrentBlockingNode")(getCurrentBlockingNode)
+    __obj.updateDynamic("getElement")(getElement)
+    __obj.updateDynamic("isBlocking")(isBlocking)
+    __obj.updateDynamic("printBufferNodeTree")(printBufferNodeTree)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeBlocker")(removeBlocker)
+    __obj.updateDynamic("removeElementCollector")(removeElementCollector)
+    __obj.updateDynamic("setElement")(setElement)
+    __obj.updateDynamic("setNextHandler")(setNextHandler)
+    __obj.updateDynamic("setSecurityId")(setSecurityId)
+    __obj.asInstanceOf[XSecuritySAXEventKeeper]
+  }
+}
+

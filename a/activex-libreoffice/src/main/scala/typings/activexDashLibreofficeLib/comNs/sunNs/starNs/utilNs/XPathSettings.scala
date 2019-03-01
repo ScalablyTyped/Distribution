@@ -69,3 +69,102 @@ trait XPathSettings
   var Work: java.lang.String
 }
 
+object XPathSettings {
+  @scala.inline
+  def apply(
+    Addin: java.lang.String,
+    AutoCorrect: java.lang.String,
+    AutoText: java.lang.String,
+    Backup: java.lang.String,
+    BasePathShareLayer: java.lang.String,
+    BasePathUserLayer: java.lang.String,
+    Basic: java.lang.String,
+    Bitmap: java.lang.String,
+    Config: java.lang.String,
+    Dictionary: java.lang.String,
+    Favorite: java.lang.String,
+    Filter: java.lang.String,
+    Gallery: java.lang.String,
+    Graphic: java.lang.String,
+    Help: java.lang.String,
+    Linguistic: java.lang.String,
+    Module: java.lang.String,
+    Palette: java.lang.String,
+    Plugin: java.lang.String,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    Storage: java.lang.String,
+    Temp: java.lang.String,
+    Template: java.lang.String,
+    UIConfig: java.lang.String,
+    UserConfig: java.lang.String,
+    UserDictionary: java.lang.String,
+    Work: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XPathSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Addin")(Addin)
+    __obj.updateDynamic("AutoCorrect")(AutoCorrect)
+    __obj.updateDynamic("AutoText")(AutoText)
+    __obj.updateDynamic("Backup")(Backup)
+    __obj.updateDynamic("BasePathShareLayer")(BasePathShareLayer)
+    __obj.updateDynamic("BasePathUserLayer")(BasePathUserLayer)
+    __obj.updateDynamic("Basic")(Basic)
+    __obj.updateDynamic("Bitmap")(Bitmap)
+    __obj.updateDynamic("Config")(Config)
+    __obj.updateDynamic("Dictionary")(Dictionary)
+    __obj.updateDynamic("Favorite")(Favorite)
+    __obj.updateDynamic("Filter")(Filter)
+    __obj.updateDynamic("Gallery")(Gallery)
+    __obj.updateDynamic("Graphic")(Graphic)
+    __obj.updateDynamic("Help")(Help)
+    __obj.updateDynamic("Linguistic")(Linguistic)
+    __obj.updateDynamic("Module")(Module)
+    __obj.updateDynamic("Palette")(Palette)
+    __obj.updateDynamic("Plugin")(Plugin)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("Storage")(Storage)
+    __obj.updateDynamic("Temp")(Temp)
+    __obj.updateDynamic("Template")(Template)
+    __obj.updateDynamic("UIConfig")(UIConfig)
+    __obj.updateDynamic("UserConfig")(UserConfig)
+    __obj.updateDynamic("UserDictionary")(UserDictionary)
+    __obj.updateDynamic("Work")(Work)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[XPathSettings]
+  }
+}
+

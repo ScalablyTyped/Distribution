@@ -140,3 +140,87 @@ trait CalendarProps
   var yearFormat: js.UndefOr[java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String])] = js.undefined
 }
 
+object CalendarProps {
+  @scala.inline
+  def apply(
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    centuryFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    culture: java.lang.String = null,
+    currentDate: stdLib.Date = null,
+    dateFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
+    dayComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    dayFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
+    decadeFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
+    defaultValue: stdLib.Date = null,
+    defaultView: CalendarView = null,
+    disabled: scala.Boolean | js.Array[_] = null,
+    finalView: reactDashWidgetsLib.reactDashWidgetsLibStrings.month | reactDashWidgetsLib.reactDashWidgetsLibStrings.year | reactDashWidgetsLib.reactDashWidgetsLibStrings.decade | reactDashWidgetsLib.reactDashWidgetsLibStrings.century = null,
+    footer: js.UndefOr[scala.Boolean] = js.undefined,
+    footerFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
+    headerFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
+    id: java.lang.String = null,
+    initialView: reactDashWidgetsLib.reactDashWidgetsLibStrings.month | reactDashWidgetsLib.reactDashWidgetsLibStrings.year | reactDashWidgetsLib.reactDashWidgetsLibStrings.decade | reactDashWidgetsLib.reactDashWidgetsLibStrings.century = null,
+    isRtl: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    max: stdLib.Date = null,
+    messages: CalendarMessages = null,
+    min: stdLib.Date = null,
+    monthFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null,
+    onChange: js.Function1[/* date */ js.UndefOr[stdLib.Date], scala.Unit] = null,
+    onCurrentDateChange: js.Function1[/* date */ js.UndefOr[stdLib.Date], scala.Unit] = null,
+    onKeyDown: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
+    onNavigate: js.Function3[
+      /* date */ stdLib.Date, 
+      /* direction */ java.lang.String, 
+      /* view */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    onViewChange: js.Function0[scala.Unit] = null,
+    readOnly: scala.Boolean | js.Array[_] = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[CalendarClass] = null,
+    value: stdLib.Date = null,
+    view: CalendarView = null,
+    views: js.Array[CalendarView] = null,
+    yearFormat: java.lang.String | (js.Function1[/* day */ stdLib.Date, java.lang.String]) = null
+  ): CalendarProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (centuryFormat != null) __obj.updateDynamic("centuryFormat")(centuryFormat.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
+    if (dayComponent != null) __obj.updateDynamic("dayComponent")(dayComponent.asInstanceOf[js.Any])
+    if (dayFormat != null) __obj.updateDynamic("dayFormat")(dayFormat.asInstanceOf[js.Any])
+    if (decadeFormat != null) __obj.updateDynamic("decadeFormat")(decadeFormat.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (finalView != null) __obj.updateDynamic("finalView")(finalView.asInstanceOf[js.Any])
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer)
+    if (footerFormat != null) __obj.updateDynamic("footerFormat")(footerFormat.asInstanceOf[js.Any])
+    if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (initialView != null) __obj.updateDynamic("initialView")(initialView.asInstanceOf[js.Any])
+    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (min != null) __obj.updateDynamic("min")(min)
+    if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onCurrentDateChange != null) __obj.updateDynamic("onCurrentDateChange")(onCurrentDateChange)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onNavigate != null) __obj.updateDynamic("onNavigate")(onNavigate)
+    if (onViewChange != null) __obj.updateDynamic("onViewChange")(onViewChange)
+    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (views != null) __obj.updateDynamic("views")(views)
+    if (yearFormat != null) __obj.updateDynamic("yearFormat")(yearFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CalendarProps]
+  }
+}
+

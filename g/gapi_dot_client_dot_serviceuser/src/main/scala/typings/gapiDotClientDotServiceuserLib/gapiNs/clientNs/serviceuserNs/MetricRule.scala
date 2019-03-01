@@ -23,3 +23,16 @@ trait MetricRule extends js.Object {
   var selector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MetricRule {
+  @scala.inline
+  def apply(
+    metricCosts: stdLib.Record[java.lang.String, java.lang.String] = null,
+    selector: java.lang.String = null
+  ): MetricRule = {
+    val __obj = js.Dynamic.literal()
+    if (metricCosts != null) __obj.updateDynamic("metricCosts")(metricCosts)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[MetricRule]
+  }
+}
+

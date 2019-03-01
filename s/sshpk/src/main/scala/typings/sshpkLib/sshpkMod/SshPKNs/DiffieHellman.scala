@@ -16,3 +16,28 @@ trait DiffieHellman extends js.Object {
   def setPrivateKey(key: PrivateKey): scala.Unit
 }
 
+object DiffieHellman {
+  @scala.inline
+  def apply(
+    computeSecret: js.Function1[PrivateKey, nodeLib.Buffer],
+    generateKey: js.Function0[PrivateKey],
+    generateKeys: js.Function0[PrivateKey],
+    getKey: js.Function0[PrivateKey],
+    getPrivateKey: js.Function0[PrivateKey],
+    getPublicKey: js.Function0[Key],
+    setKey: js.Function1[PrivateKey, scala.Unit],
+    setPrivateKey: js.Function1[PrivateKey, scala.Unit]
+  ): DiffieHellman = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("computeSecret")(computeSecret)
+    __obj.updateDynamic("generateKey")(generateKey)
+    __obj.updateDynamic("generateKeys")(generateKeys)
+    __obj.updateDynamic("getKey")(getKey)
+    __obj.updateDynamic("getPrivateKey")(getPrivateKey)
+    __obj.updateDynamic("getPublicKey")(getPublicKey)
+    __obj.updateDynamic("setKey")(setKey)
+    __obj.updateDynamic("setPrivateKey")(setPrivateKey)
+    __obj.asInstanceOf[DiffieHellman]
+  }
+}
+

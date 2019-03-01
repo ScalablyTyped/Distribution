@@ -9,3 +9,12 @@ trait Reference extends js.Object {
   var referenceType: ReferenceType
 }
 
+object Reference {
+  @scala.inline
+  def apply(referenceType: ReferenceType): Reference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("referenceType")(referenceType)
+    __obj.asInstanceOf[Reference]
+  }
+}
+

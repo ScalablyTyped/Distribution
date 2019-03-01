@@ -86,3 +86,76 @@ trait IXTemplateCompiler extends IXTemplateParser {
   var doText_IXTemplateCompiler: js.UndefOr[js.Function1[/* text */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
 }
 
+object IXTemplateCompiler {
+  @scala.inline
+  def apply(
+    alias: Array = null,
+    alternateClassName: js.Any = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    doCase: js.Function1[/* action */ js.UndefOr[js.Any], scala.Unit] = null,
+    doDefault: js.Function0[scala.Unit] = null,
+    doElse: js.Function0[scala.Unit] = null,
+    doElseIf: js.Function2[/* action */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], scala.Unit] = null,
+    doEnd: js.Function2[/* type */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], scala.Unit] = null,
+    doEval: js.Function1[/* text */ js.UndefOr[js.Any], scala.Unit] = null,
+    doExec: js.Function2[/* action */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], scala.Unit] = null,
+    doExpr: js.Function1[/* expr */ js.UndefOr[js.Any], scala.Unit] = null,
+    doFor: js.Function2[/* action */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], scala.Unit] = null,
+    doForEach: js.Function2[/* action */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], scala.Unit] = null,
+    doIf: js.Function2[/* action */ js.UndefOr[js.Any], /* actions */ js.UndefOr[js.Any], scala.Unit] = null,
+    doSwitch: js.Function1[/* action */ js.UndefOr[js.Any], scala.Unit] = null,
+    doTag: js.Function1[/* tag */ js.UndefOr[js.Any], scala.Unit] = null,
+    doText: js.Function1[/* text */ js.UndefOr[js.Any], scala.Unit] = null,
+    doTpl: js.Function0[scala.Unit] = null,
+    extend: java.lang.String = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IXTemplateCompiler] = null,
+    level: scala.Int | scala.Double = null,
+    mixins: js.Any = null,
+    requires: Array = null,
+    self: IClass = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    uses: Array = null
+  ): IXTemplateCompiler = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (doCase != null) __obj.updateDynamic("doCase")(doCase)
+    if (doDefault != null) __obj.updateDynamic("doDefault")(doDefault)
+    if (doElse != null) __obj.updateDynamic("doElse")(doElse)
+    if (doElseIf != null) __obj.updateDynamic("doElseIf")(doElseIf)
+    if (doEnd != null) __obj.updateDynamic("doEnd")(doEnd)
+    if (doEval != null) __obj.updateDynamic("doEval")(doEval)
+    if (doExec != null) __obj.updateDynamic("doExec")(doExec)
+    if (doExpr != null) __obj.updateDynamic("doExpr")(doExpr)
+    if (doFor != null) __obj.updateDynamic("doFor")(doFor)
+    if (doForEach != null) __obj.updateDynamic("doForEach")(doForEach)
+    if (doIf != null) __obj.updateDynamic("doIf")(doIf)
+    if (doSwitch != null) __obj.updateDynamic("doSwitch")(doSwitch)
+    if (doTag != null) __obj.updateDynamic("doTag")(doTag)
+    if (doText != null) __obj.updateDynamic("doText")(doText)
+    if (doTpl != null) __obj.updateDynamic("doTpl")(doTpl)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IXTemplateCompiler]
+  }
+}
+

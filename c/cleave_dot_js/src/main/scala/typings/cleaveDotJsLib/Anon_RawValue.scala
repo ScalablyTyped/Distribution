@@ -9,3 +9,12 @@ trait Anon_RawValue extends js.Object {
   var rawValue: java.lang.String
 }
 
+object Anon_RawValue {
+  @scala.inline
+  def apply(rawValue: java.lang.String): Anon_RawValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rawValue")(rawValue)
+    __obj.asInstanceOf[Anon_RawValue]
+  }
+}
+

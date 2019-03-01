@@ -18,3 +18,27 @@ trait XBrowseHistoryRegistry
   def updateViewData(Value: js.Any): scala.Unit
 }
 
+object XBrowseHistoryRegistry {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createNewEntry: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      java.lang.String, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateViewData: js.Function1[js.Any, scala.Unit]
+  ): XBrowseHistoryRegistry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createNewEntry")(createNewEntry)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("updateViewData")(updateViewData)
+    __obj.asInstanceOf[XBrowseHistoryRegistry]
+  }
+}
+

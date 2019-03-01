@@ -2498,32 +2498,78 @@ object WorkDocsNs extends js.Object {
     var StorageUtilizedInBytes: js.UndefOr[SizeType] = js.undefined
   }
   
+  trait _ActivityType extends js.Object
+  
+  trait _BooleanEnumType extends js.Object
+  
+  trait _CommentStatusType extends js.Object
+  
+  trait _CommentVisibilityType extends js.Object
+  
+  trait _DocumentSourceType extends js.Object
+  
+  trait _DocumentStatusType extends js.Object
+  
+  trait _DocumentThumbnailType extends js.Object
+  
+  trait _FolderContentType extends js.Object
+  
+  trait _LocaleType extends js.Object
+  
+  trait _OrderType extends js.Object
+  
+  trait _PrincipalType extends js.Object
+  
+  trait _ResourceSortType extends js.Object
+  
+  trait _ResourceStateType extends js.Object
+  
+  trait _ResourceType extends js.Object
+  
+  trait _RolePermissionType extends js.Object
+  
+  trait _RoleType extends js.Object
+  
+  trait _ShareStatusType extends js.Object
+  
+  trait _StorageType extends js.Object
+  
+  trait _UserFilterType extends js.Object
+  
+  trait _UserSortType extends js.Object
+  
+  trait _UserStatusType extends js.Object
+  
+  trait _UserType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActivityNamesFilterType = java.lang.String
-  type ActivityType = awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_CHECKED_IN | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_CHECKED_OUT | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_RENAMED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_UPLOADED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_DELETED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_VIEWED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_DOWNLOADED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_RECYCLED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_RESTORED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_REVERTED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHARED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_UNSHARED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHARE_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHAREABLE_LINK_CREATED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHAREABLE_LINK_REMOVED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHAREABLE_LINK_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_MOVED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_COMMENT_ADDED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_COMMENT_DELETED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_ANNOTATION_ADDED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_ANNOTATION_DELETED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_CREATED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_DELETED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_RENAMED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_RECYCLED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_RESTORED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHARED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_UNSHARED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHARE_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHAREABLE_LINK_CREATED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHAREABLE_LINK_REMOVED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHAREABLE_LINK_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_MOVED | java.lang.String
+  type ActivityType = _ActivityType | java.lang.String
   type AuthenticationHeaderType = java.lang.String
-  type BooleanEnumType = awsDashSdkLib.awsDashSdkLibStrings.TRUE | awsDashSdkLib.awsDashSdkLibStrings.FALSE | java.lang.String
+  type BooleanEnumType = _BooleanEnumType | java.lang.String
   type BooleanType = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CommentIdType = java.lang.String
   type CommentList = js.Array[Comment]
-  type CommentStatusType = awsDashSdkLib.awsDashSdkLibStrings.DRAFT | awsDashSdkLib.awsDashSdkLibStrings.PUBLISHED | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
+  type CommentStatusType = _CommentStatusType | java.lang.String
   type CommentTextType = java.lang.String
-  type CommentVisibilityType = awsDashSdkLib.awsDashSdkLibStrings.PUBLIC | awsDashSdkLib.awsDashSdkLibStrings.PRIVATE | java.lang.String
+  type CommentVisibilityType = _CommentVisibilityType | java.lang.String
   type CustomMetadataKeyList = js.Array[CustomMetadataKeyType]
   type CustomMetadataKeyType = java.lang.String
   type CustomMetadataValueType = java.lang.String
   type DocumentContentType = java.lang.String
   type DocumentMetadataList = js.Array[DocumentMetadata]
-  type DocumentSourceType = awsDashSdkLib.awsDashSdkLibStrings.ORIGINAL | awsDashSdkLib.awsDashSdkLibStrings.WITH_COMMENTS | java.lang.String
-  type DocumentStatusType = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZED | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | java.lang.String
-  type DocumentThumbnailType = awsDashSdkLib.awsDashSdkLibStrings.SMALL | awsDashSdkLib.awsDashSdkLibStrings.SMALL_HQ | awsDashSdkLib.awsDashSdkLibStrings.LARGE | java.lang.String
+  type DocumentSourceType = _DocumentSourceType | java.lang.String
+  type DocumentStatusType = _DocumentStatusType | java.lang.String
+  type DocumentThumbnailType = _DocumentThumbnailType | java.lang.String
   type DocumentVersionIdType = java.lang.String
   type DocumentVersionMetadataList = js.Array[DocumentVersionMetadata]
   type DocumentVersionStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | java.lang.String
   type EmailAddressType = java.lang.String
   type FieldNamesType = java.lang.String
-  type FolderContentType = awsDashSdkLib.awsDashSdkLibStrings.ALL | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT | awsDashSdkLib.awsDashSdkLibStrings.FOLDER | java.lang.String
+  type FolderContentType = _FolderContentType | java.lang.String
   type FolderMetadataList = js.Array[FolderMetadata]
   type GroupMetadataList = js.Array[GroupMetadata]
   type GroupNameType = java.lang.String
@@ -2532,10 +2578,10 @@ object WorkDocsNs extends js.Object {
   type HeaderValueType = java.lang.String
   type IdType = java.lang.String
   type LimitType = scala.Double
-  type LocaleType = awsDashSdkLib.awsDashSdkLibStrings.en | awsDashSdkLib.awsDashSdkLibStrings.fr | awsDashSdkLib.awsDashSdkLibStrings.ko | awsDashSdkLib.awsDashSdkLibStrings.de | awsDashSdkLib.awsDashSdkLibStrings.es | awsDashSdkLib.awsDashSdkLibStrings.ja | awsDashSdkLib.awsDashSdkLibStrings.ru | awsDashSdkLib.awsDashSdkLibStrings.zh_CN | awsDashSdkLib.awsDashSdkLibStrings.zh_TW | awsDashSdkLib.awsDashSdkLibStrings.pt_BR | awsDashSdkLib.awsDashSdkLibStrings.default | java.lang.String
+  type LocaleType = _LocaleType | java.lang.String
   type MarkerType = java.lang.String
   type MessageType = java.lang.String
-  type OrderType = awsDashSdkLib.awsDashSdkLibStrings.ASCENDING | awsDashSdkLib.awsDashSdkLibStrings.DESCENDING | java.lang.String
+  type OrderType = _OrderType | java.lang.String
   type OrganizationUserList = js.Array[User]
   type PageMarkerType = java.lang.String
   type PasswordType = java.lang.String
@@ -2543,24 +2589,24 @@ object WorkDocsNs extends js.Object {
   type PositiveIntegerType = scala.Double
   type PositiveSizeType = scala.Double
   type PrincipalList = js.Array[Principal]
-  type PrincipalType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.GROUP | awsDashSdkLib.awsDashSdkLibStrings.INVITE | awsDashSdkLib.awsDashSdkLibStrings.ANONYMOUS | awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATION | java.lang.String
+  type PrincipalType = _PrincipalType | java.lang.String
   type ResourceCollectionType = awsDashSdkLib.awsDashSdkLibStrings.SHARED_WITH_ME | java.lang.String
   type ResourceIdType = java.lang.String
   type ResourceNameType = java.lang.String
   type ResourcePathComponentList = js.Array[ResourcePathComponent]
-  type ResourceSortType = awsDashSdkLib.awsDashSdkLibStrings.DATE | awsDashSdkLib.awsDashSdkLibStrings.NAME | java.lang.String
-  type ResourceStateType = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.RESTORING | awsDashSdkLib.awsDashSdkLibStrings.RECYCLING | awsDashSdkLib.awsDashSdkLibStrings.RECYCLED | java.lang.String
-  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.FOLDER | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT | java.lang.String
-  type RolePermissionType = awsDashSdkLib.awsDashSdkLibStrings.DIRECT | awsDashSdkLib.awsDashSdkLibStrings.INHERITED | java.lang.String
-  type RoleType = awsDashSdkLib.awsDashSdkLibStrings.VIEWER | awsDashSdkLib.awsDashSdkLibStrings.CONTRIBUTOR | awsDashSdkLib.awsDashSdkLibStrings.OWNER | awsDashSdkLib.awsDashSdkLibStrings.COOWNER | java.lang.String
+  type ResourceSortType = _ResourceSortType | java.lang.String
+  type ResourceStateType = _ResourceStateType | java.lang.String
+  type ResourceType = _ResourceType | java.lang.String
+  type RolePermissionType = _RolePermissionType | java.lang.String
+  type RoleType = _RoleType | java.lang.String
   type SearchQueryType = java.lang.String
   type SharePrincipalList = js.Array[SharePrincipal]
   type ShareResultsList = js.Array[ShareResult]
-  type ShareStatusType = awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.FAILURE | java.lang.String
+  type ShareStatusType = _ShareStatusType | java.lang.String
   type SharedLabel = java.lang.String
   type SharedLabels = js.Array[SharedLabel]
   type SizeType = scala.Double
-  type StorageType = awsDashSdkLib.awsDashSdkLibStrings.UNLIMITED | awsDashSdkLib.awsDashSdkLibStrings.QUOTA | java.lang.String
+  type StorageType = _StorageType | java.lang.String
   type SubscriptionEndPointType = java.lang.String
   type SubscriptionList = js.Array[Subscription]
   type SubscriptionProtocolType = awsDashSdkLib.awsDashSdkLibStrings.HTTPS | java.lang.String
@@ -2570,13 +2616,13 @@ object WorkDocsNs extends js.Object {
   type UrlType = java.lang.String
   type UserActivities = js.Array[Activity]
   type UserAttributeValueType = java.lang.String
-  type UserFilterType = awsDashSdkLib.awsDashSdkLibStrings.ALL | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE_PENDING | java.lang.String
+  type UserFilterType = _UserFilterType | java.lang.String
   type UserIdsType = java.lang.String
   type UserMetadataList = js.Array[UserMetadata]
-  type UserSortType = awsDashSdkLib.awsDashSdkLibStrings.USER_NAME | awsDashSdkLib.awsDashSdkLibStrings.FULL_NAME | awsDashSdkLib.awsDashSdkLibStrings.STORAGE_LIMIT | awsDashSdkLib.awsDashSdkLibStrings.USER_STATUS | awsDashSdkLib.awsDashSdkLibStrings.STORAGE_USED | java.lang.String
-  type UserStatusType = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | awsDashSdkLib.awsDashSdkLibStrings.PENDING | java.lang.String
-  type UserType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.ADMIN | awsDashSdkLib.awsDashSdkLibStrings.POWERUSER | awsDashSdkLib.awsDashSdkLibStrings.MINIMALUSER | awsDashSdkLib.awsDashSdkLibStrings.WORKSPACESUSER | java.lang.String
+  type UserSortType = _UserSortType | java.lang.String
+  type UserStatusType = _UserStatusType | java.lang.String
+  type UserType = _UserType | java.lang.String
   type UsernameType = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-05-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -39,3 +39,24 @@ trait OriginAccessIdentityState extends js.Object {
   val s3CanonicalUserId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object OriginAccessIdentityState {
+  @scala.inline
+  def apply(
+    callerReference: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cloudfrontAccessIdentityPath: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    comment: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    etag: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    iamArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3CanonicalUserId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): OriginAccessIdentityState = {
+    val __obj = js.Dynamic.literal()
+    if (callerReference != null) __obj.updateDynamic("callerReference")(callerReference.asInstanceOf[js.Any])
+    if (cloudfrontAccessIdentityPath != null) __obj.updateDynamic("cloudfrontAccessIdentityPath")(cloudfrontAccessIdentityPath.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (iamArn != null) __obj.updateDynamic("iamArn")(iamArn.asInstanceOf[js.Any])
+    if (s3CanonicalUserId != null) __obj.updateDynamic("s3CanonicalUserId")(s3CanonicalUserId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OriginAccessIdentityState]
+  }
+}
+

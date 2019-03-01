@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactMod {
-  type UpdateSpec = js.Array[js.Array[scala.Double]] | UpdateSpecCommand | UpdateSpecPath
+  type UpdateSpec = _UpdateSpec | js.Array[js.Array[scala.Double]]
 }

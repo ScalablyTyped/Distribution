@@ -87,3 +87,51 @@ trait MenuItemConstructorOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MenuItemConstructorOptions {
+  @scala.inline
+  def apply(
+    accelerator: Accelerator = null,
+    after: js.Array[java.lang.String] = null,
+    afterGroupContaining: js.Array[java.lang.String] = null,
+    before: js.Array[java.lang.String] = null,
+    beforeGroupContaining: js.Array[java.lang.String] = null,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    click: js.Function3[
+      /* menuItem */ MenuItem, 
+      /* browserWindow */ BrowserWindow, 
+      /* event */ Event, 
+      scala.Unit
+    ] = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: NativeImage | java.lang.String = null,
+    id: java.lang.String = null,
+    label: java.lang.String = null,
+    registerAccelerator: js.UndefOr[scala.Boolean] = js.undefined,
+    role: java.lang.String = null,
+    sublabel: java.lang.String = null,
+    submenu: js.Array[MenuItemConstructorOptions] | Menu = null,
+    `type`: electronLib.electronLibStrings.normal | electronLib.electronLibStrings.separator | electronLib.electronLibStrings.submenu | electronLib.electronLibStrings.checkbox | electronLib.electronLibStrings.radio = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): MenuItemConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (accelerator != null) __obj.updateDynamic("accelerator")(accelerator)
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (afterGroupContaining != null) __obj.updateDynamic("afterGroupContaining")(afterGroupContaining)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (beforeGroupContaining != null) __obj.updateDynamic("beforeGroupContaining")(beforeGroupContaining)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(registerAccelerator)) __obj.updateDynamic("registerAccelerator")(registerAccelerator)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (sublabel != null) __obj.updateDynamic("sublabel")(sublabel)
+    if (submenu != null) __obj.updateDynamic("submenu")(submenu.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[MenuItemConstructorOptions]
+  }
+}
+

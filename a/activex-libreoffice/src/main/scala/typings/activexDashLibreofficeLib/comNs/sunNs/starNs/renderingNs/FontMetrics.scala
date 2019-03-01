@@ -40,3 +40,26 @@ trait FontMetrics extends js.Object {
   var UnderlineOffset: scala.Double
 }
 
+object FontMetrics {
+  @scala.inline
+  def apply(
+    Ascent: scala.Double,
+    Descent: scala.Double,
+    ExternalLeading: scala.Double,
+    InternalLeading: scala.Double,
+    ReferenceCharSize: scala.Double,
+    StrikeThroughOffset: scala.Double,
+    UnderlineOffset: scala.Double
+  ): FontMetrics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Ascent")(Ascent)
+    __obj.updateDynamic("Descent")(Descent)
+    __obj.updateDynamic("ExternalLeading")(ExternalLeading)
+    __obj.updateDynamic("InternalLeading")(InternalLeading)
+    __obj.updateDynamic("ReferenceCharSize")(ReferenceCharSize)
+    __obj.updateDynamic("StrikeThroughOffset")(StrikeThroughOffset)
+    __obj.updateDynamic("UnderlineOffset")(UnderlineOffset)
+    __obj.asInstanceOf[FontMetrics]
+  }
+}
+

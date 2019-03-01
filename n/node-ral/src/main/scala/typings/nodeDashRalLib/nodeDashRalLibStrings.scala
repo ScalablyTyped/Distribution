@@ -16,10 +16,12 @@ object nodeDashRalLibStrings {
   sealed trait POST extends js.Object
   
   @js.native
-  sealed trait form extends js.Object
+  sealed trait form
+    extends nodeDashRalLib.nodeDashRalMod.buildInConverter
   
   @js.native
-  sealed trait formData extends js.Object
+  sealed trait formData
+    extends nodeDashRalLib.nodeDashRalMod.buildInConverter
   
   @js.native
   sealed trait hashring extends js.Object
@@ -31,22 +33,27 @@ object nodeDashRalLibStrings {
   sealed trait https extends js.Object
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json
+    extends nodeDashRalLib.nodeDashRalMod.buildInConverter
   
   @js.native
-  sealed trait protobuf extends js.Object
+  sealed trait protobuf
+    extends nodeDashRalLib.nodeDashRalMod.buildInConverter
   
   @js.native
-  sealed trait querystring extends js.Object
+  sealed trait querystring
+    extends nodeDashRalLib.nodeDashRalMod.buildInConverter
   
   @js.native
   sealed trait random extends js.Object
   
   @js.native
-  sealed trait raw extends js.Object
+  sealed trait raw
+    extends nodeDashRalLib.nodeDashRalMod.buildInConverter
   
   @js.native
-  sealed trait redis extends js.Object
+  sealed trait redis
+    extends nodeDashRalLib.nodeDashRalMod.buildInConverter
   
   @js.native
   sealed trait roundrobin extends js.Object
@@ -55,10 +62,12 @@ object nodeDashRalLibStrings {
   sealed trait soap extends js.Object
   
   @js.native
-  sealed trait stream extends js.Object
+  sealed trait stream
+    extends nodeDashRalLib.nodeDashRalMod.buildInConverter
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends nodeDashRalLib.nodeDashRalMod.buildInConverter
   
   @js.native
   sealed trait `utf-8` extends js.Object

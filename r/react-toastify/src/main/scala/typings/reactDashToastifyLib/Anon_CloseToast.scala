@@ -9,3 +9,12 @@ trait Anon_CloseToast extends js.Object {
   def closeToast(): scala.Unit
 }
 
+object Anon_CloseToast {
+  @scala.inline
+  def apply(closeToast: js.Function0[scala.Unit]): Anon_CloseToast = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("closeToast")(closeToast)
+    __obj.asInstanceOf[Anon_CloseToast]
+  }
+}
+

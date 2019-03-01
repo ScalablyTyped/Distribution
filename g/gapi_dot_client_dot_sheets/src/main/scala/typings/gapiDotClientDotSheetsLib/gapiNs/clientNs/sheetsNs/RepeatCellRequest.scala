@@ -18,3 +18,14 @@ trait RepeatCellRequest extends js.Object {
   var range: js.UndefOr[GridRange] = js.undefined
 }
 
+object RepeatCellRequest {
+  @scala.inline
+  def apply(cell: CellData = null, fields: java.lang.String = null, range: GridRange = null): RepeatCellRequest = {
+    val __obj = js.Dynamic.literal()
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[RepeatCellRequest]
+  }
+}
+

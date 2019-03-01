@@ -28,3 +28,22 @@ trait Anon_CommentCountDislikeCount extends js.Object {
   var viewCount: scala.Double
 }
 
+object Anon_CommentCountDislikeCount {
+  @scala.inline
+  def apply(
+    commentCount: scala.Double,
+    dislikeCount: scala.Double,
+    favoriteCount: scala.Double,
+    likeCount: scala.Double,
+    viewCount: scala.Double
+  ): Anon_CommentCountDislikeCount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commentCount")(commentCount)
+    __obj.updateDynamic("dislikeCount")(dislikeCount)
+    __obj.updateDynamic("favoriteCount")(favoriteCount)
+    __obj.updateDynamic("likeCount")(likeCount)
+    __obj.updateDynamic("viewCount")(viewCount)
+    __obj.asInstanceOf[Anon_CommentCountDislikeCount]
+  }
+}
+

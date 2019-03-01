@@ -47,3 +47,71 @@ trait MovementMethod extends js.Object {
   ): scala.Boolean
 }
 
+object MovementMethod {
+  @scala.inline
+  def apply(
+    canSelectArbitrarily: js.Function0[scala.Boolean],
+    initialize: js.Function2[
+      androiduixLib.androidNs.widgetNs.TextView, 
+      androiduixLib.androidNs.textNs.Spannable, 
+      scala.Unit
+    ],
+    onGenericMotionEvent: js.Function3[
+      androiduixLib.androidNs.widgetNs.TextView, 
+      androiduixLib.androidNs.textNs.Spannable, 
+      androiduixLib.androidNs.viewNs.MotionEvent, 
+      scala.Boolean
+    ],
+    onKeyDown: js.Function4[
+      androiduixLib.androidNs.widgetNs.TextView, 
+      androiduixLib.androidNs.textNs.Spannable, 
+      scala.Double, 
+      androiduixLib.androidNs.viewNs.KeyEvent, 
+      scala.Boolean
+    ],
+    onKeyOther: js.Function3[
+      androiduixLib.androidNs.widgetNs.TextView, 
+      androiduixLib.androidNs.textNs.Spannable, 
+      androiduixLib.androidNs.viewNs.KeyEvent, 
+      scala.Boolean
+    ],
+    onKeyUp: js.Function4[
+      androiduixLib.androidNs.widgetNs.TextView, 
+      androiduixLib.androidNs.textNs.Spannable, 
+      scala.Double, 
+      androiduixLib.androidNs.viewNs.KeyEvent, 
+      scala.Boolean
+    ],
+    onTakeFocus: js.Function3[
+      androiduixLib.androidNs.widgetNs.TextView, 
+      androiduixLib.androidNs.textNs.Spannable, 
+      scala.Double, 
+      scala.Unit
+    ],
+    onTouchEvent: js.Function3[
+      androiduixLib.androidNs.widgetNs.TextView, 
+      androiduixLib.androidNs.textNs.Spannable, 
+      androiduixLib.androidNs.viewNs.MotionEvent, 
+      scala.Boolean
+    ],
+    onTrackballEvent: js.Function3[
+      androiduixLib.androidNs.widgetNs.TextView, 
+      androiduixLib.androidNs.textNs.Spannable, 
+      androiduixLib.androidNs.viewNs.MotionEvent, 
+      scala.Boolean
+    ]
+  ): MovementMethod = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canSelectArbitrarily")(canSelectArbitrarily)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("onGenericMotionEvent")(onGenericMotionEvent)
+    __obj.updateDynamic("onKeyDown")(onKeyDown)
+    __obj.updateDynamic("onKeyOther")(onKeyOther)
+    __obj.updateDynamic("onKeyUp")(onKeyUp)
+    __obj.updateDynamic("onTakeFocus")(onTakeFocus)
+    __obj.updateDynamic("onTouchEvent")(onTouchEvent)
+    __obj.updateDynamic("onTrackballEvent")(onTrackballEvent)
+    __obj.asInstanceOf[MovementMethod]
+  }
+}
+

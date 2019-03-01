@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Dispensing a medication to a named patient
   */
-trait MedicationDispense extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait MedicationDispense extends DomainResource {
   /**
     * Contains extended information for property 'notDone'.
     */
@@ -129,5 +130,100 @@ trait MedicationDispense extends DomainResource {
     * When product was packaged and reviewed
     */
   var whenPrepared: js.UndefOr[dateTime] = js.undefined
+}
+
+object MedicationDispense {
+  @scala.inline
+  def apply(
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _notDone: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _whenHandedOver: Element = null,
+    _whenPrepared: Element = null,
+    authorizingPrescription: js.Array[Reference] = null,
+    category: CodeableConcept = null,
+    contained: js.Array[Resource] = null,
+    context: Reference = null,
+    daysSupply: Quantity = null,
+    destination: Reference = null,
+    detectedIssue: js.Array[Reference] = null,
+    dosageInstruction: js.Array[Dosage] = null,
+    eventHistory: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    medicationCodeableConcept: CodeableConcept = null,
+    medicationReference: Reference = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    notDone: js.UndefOr[scala.Boolean] = js.undefined,
+    notDoneReasonCodeableConcept: CodeableConcept = null,
+    notDoneReasonReference: Reference = null,
+    note: js.Array[Annotation] = null,
+    partOf: js.Array[Reference] = null,
+    performer: js.Array[MedicationDispensePerformer] = null,
+    quantity: Quantity = null,
+    receiver: js.Array[Reference] = null,
+    resourceType: code = null,
+    status: code = null,
+    subject: Reference = null,
+    substitution: MedicationDispenseSubstitution = null,
+    supportingInformation: js.Array[Reference] = null,
+    text: Narrative = null,
+    `type`: CodeableConcept = null,
+    whenHandedOver: dateTime = null,
+    whenPrepared: dateTime = null
+  ): MedicationDispense = {
+    val __obj = js.Dynamic.literal()
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_notDone != null) __obj.updateDynamic("_notDone")(_notDone)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_whenHandedOver != null) __obj.updateDynamic("_whenHandedOver")(_whenHandedOver)
+    if (_whenPrepared != null) __obj.updateDynamic("_whenPrepared")(_whenPrepared)
+    if (authorizingPrescription != null) __obj.updateDynamic("authorizingPrescription")(authorizingPrescription)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (daysSupply != null) __obj.updateDynamic("daysSupply")(daysSupply)
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (detectedIssue != null) __obj.updateDynamic("detectedIssue")(detectedIssue)
+    if (dosageInstruction != null) __obj.updateDynamic("dosageInstruction")(dosageInstruction)
+    if (eventHistory != null) __obj.updateDynamic("eventHistory")(eventHistory)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (medicationCodeableConcept != null) __obj.updateDynamic("medicationCodeableConcept")(medicationCodeableConcept)
+    if (medicationReference != null) __obj.updateDynamic("medicationReference")(medicationReference)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (!js.isUndefined(notDone)) __obj.updateDynamic("notDone")(notDone)
+    if (notDoneReasonCodeableConcept != null) __obj.updateDynamic("notDoneReasonCodeableConcept")(notDoneReasonCodeableConcept)
+    if (notDoneReasonReference != null) __obj.updateDynamic("notDoneReasonReference")(notDoneReasonReference)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (partOf != null) __obj.updateDynamic("partOf")(partOf)
+    if (performer != null) __obj.updateDynamic("performer")(performer)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
+    if (receiver != null) __obj.updateDynamic("receiver")(receiver)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (substitution != null) __obj.updateDynamic("substitution")(substitution)
+    if (supportingInformation != null) __obj.updateDynamic("supportingInformation")(supportingInformation)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (whenHandedOver != null) __obj.updateDynamic("whenHandedOver")(whenHandedOver)
+    if (whenPrepared != null) __obj.updateDynamic("whenPrepared")(whenPrepared)
+    __obj.asInstanceOf[MedicationDispense]
+  }
 }
 

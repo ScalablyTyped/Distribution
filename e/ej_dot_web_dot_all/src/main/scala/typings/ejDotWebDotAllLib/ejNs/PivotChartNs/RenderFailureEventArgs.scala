@@ -20,3 +20,20 @@ trait RenderFailureEventArgs extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RenderFailureEventArgs {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    customObject: js.Any = null,
+    element: js.Any = null,
+    message: java.lang.String = null
+  ): RenderFailureEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[RenderFailureEventArgs]
+  }
+}
+

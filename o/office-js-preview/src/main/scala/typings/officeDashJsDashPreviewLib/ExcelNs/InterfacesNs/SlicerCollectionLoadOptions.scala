@@ -117,3 +117,38 @@ trait SlicerCollectionLoadOptions extends js.Object {
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 
+object SlicerCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    caption: js.UndefOr[scala.Boolean] = js.undefined,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    isFilterCleared: js.UndefOr[scala.Boolean] = js.undefined,
+    left: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    nameInFormula: js.UndefOr[scala.Boolean] = js.undefined,
+    sortBy: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    top: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined,
+    worksheet: WorksheetLoadOptions = null
+  ): SlicerCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(caption)) __obj.updateDynamic("caption")(caption)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isFilterCleared)) __obj.updateDynamic("isFilterCleared")(isFilterCleared)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(nameInFormula)) __obj.updateDynamic("nameInFormula")(nameInFormula)
+    if (!js.isUndefined(sortBy)) __obj.updateDynamic("sortBy")(sortBy)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
+    __obj.asInstanceOf[SlicerCollectionLoadOptions]
+  }
+}
+

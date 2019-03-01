@@ -115,3 +115,42 @@ trait TableData extends js.Object {
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableData {
+  @scala.inline
+  def apply(
+    autoFilter: AutoFilterData = null,
+    columns: js.Array[TableColumnData] = null,
+    highlightFirstColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightLastColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    legacyId: java.lang.String = null,
+    name: java.lang.String = null,
+    rows: js.Array[TableRowData] = null,
+    showBandedColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    showBandedRows: js.UndefOr[scala.Boolean] = js.undefined,
+    showFilterButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    showTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: TableSortData = null,
+    style: java.lang.String = null
+  ): TableData = {
+    val __obj = js.Dynamic.literal()
+    if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (!js.isUndefined(highlightFirstColumn)) __obj.updateDynamic("highlightFirstColumn")(highlightFirstColumn)
+    if (!js.isUndefined(highlightLastColumn)) __obj.updateDynamic("highlightLastColumn")(highlightLastColumn)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (legacyId != null) __obj.updateDynamic("legacyId")(legacyId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (!js.isUndefined(showBandedColumns)) __obj.updateDynamic("showBandedColumns")(showBandedColumns)
+    if (!js.isUndefined(showBandedRows)) __obj.updateDynamic("showBandedRows")(showBandedRows)
+    if (!js.isUndefined(showFilterButton)) __obj.updateDynamic("showFilterButton")(showFilterButton)
+    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders)
+    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[TableData]
+  }
+}
+

@@ -21,3 +21,21 @@ trait RouteResolver[Attrs, State] extends js.Object {
   ] = js.undefined
 }
 
+object RouteResolver {
+  @scala.inline
+  def apply[Attrs, State](
+    onmatch: js.ThisFunction2[
+      RouteResolver[Attrs, State], 
+      /* args */ Attrs, 
+      /* requestedPath */ java.lang.String, 
+      (ComponentTypes[_, _]) | js.Promise[_] | scala.Unit
+    ] = null,
+    render: js.ThisFunction1[RouteResolver[Attrs, State], /* vnode */ Vnode[Attrs, State], Children] = null
+  ): RouteResolver[Attrs, State] = {
+    val __obj = js.Dynamic.literal()
+    if (onmatch != null) __obj.updateDynamic("onmatch")(onmatch)
+    if (render != null) __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[RouteResolver[Attrs, State]]
+  }
+}
+

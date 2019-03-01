@@ -9,3 +9,12 @@ trait Anon_Selected extends js.Object {
   var selected: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Selected {
+  @scala.inline
+  def apply(selected: js.UndefOr[scala.Boolean] = js.undefined): Anon_Selected = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    __obj.asInstanceOf[Anon_Selected]
+  }
+}
+

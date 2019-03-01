@@ -20,3 +20,42 @@ trait ApklistingsResource extends js.Object {
   def update(request: gapiDotClientDotAndroidpublisherLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[ApkListing]
 }
 
+object ApklistingsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    deleteall: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCode, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ApkListing]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltApkVersionCode, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ApkListingsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ApkListing]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ApkListing]
+    ]
+  ): ApklistingsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("deleteall")(deleteall)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ApklistingsResource]
+  }
+}
+

@@ -15,3 +15,12 @@ trait GridAutoFlowProps extends js.Object {
   var gridAutoFlow: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.GridAutoFlowProperty]] = js.undefined
 }
 
+object GridAutoFlowProps {
+  @scala.inline
+  def apply(gridAutoFlow: ResponsiveValue[csstypeLib.csstypeMod.GridAutoFlowProperty] = null): GridAutoFlowProps = {
+    val __obj = js.Dynamic.literal()
+    if (gridAutoFlow != null) __obj.updateDynamic("gridAutoFlow")(gridAutoFlow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridAutoFlowProps]
+  }
+}
+

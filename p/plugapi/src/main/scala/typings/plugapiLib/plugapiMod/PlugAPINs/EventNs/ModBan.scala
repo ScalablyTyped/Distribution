@@ -13,3 +13,22 @@ trait ModBan extends js.Object {
   var username: java.lang.String
 }
 
+object ModBan {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    moderator: java.lang.String,
+    reason: java.lang.String,
+    ref: java.lang.String,
+    username: java.lang.String
+  ): ModBan = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("moderator")(moderator)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("ref")(ref)
+    __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[ModBan]
+  }
+}
+

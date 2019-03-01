@@ -12,3 +12,13 @@ trait GamesAchievementSetStepsAtLeast extends js.Object {
   var steps: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GamesAchievementSetStepsAtLeast {
+  @scala.inline
+  def apply(kind: java.lang.String = null, steps: scala.Int | scala.Double = null): GamesAchievementSetStepsAtLeast = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GamesAchievementSetStepsAtLeast]
+  }
+}
+

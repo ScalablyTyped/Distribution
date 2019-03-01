@@ -16,3 +16,13 @@ trait TableTheme extends js.Object {
   var table: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableTheme {
+  @scala.inline
+  def apply(head: java.lang.String = null, table: java.lang.String = null): TableTheme = {
+    val __obj = js.Dynamic.literal()
+    if (head != null) __obj.updateDynamic("head")(head)
+    if (table != null) __obj.updateDynamic("table")(table)
+    __obj.asInstanceOf[TableTheme]
+  }
+}
+

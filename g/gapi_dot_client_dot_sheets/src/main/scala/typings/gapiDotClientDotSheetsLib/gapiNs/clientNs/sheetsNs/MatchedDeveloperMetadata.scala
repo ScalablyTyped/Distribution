@@ -12,3 +12,13 @@ trait MatchedDeveloperMetadata extends js.Object {
   var developerMetadata: js.UndefOr[DeveloperMetadata] = js.undefined
 }
 
+object MatchedDeveloperMetadata {
+  @scala.inline
+  def apply(dataFilters: js.Array[DataFilter] = null, developerMetadata: DeveloperMetadata = null): MatchedDeveloperMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (dataFilters != null) __obj.updateDynamic("dataFilters")(dataFilters)
+    if (developerMetadata != null) __obj.updateDynamic("developerMetadata")(developerMetadata)
+    __obj.asInstanceOf[MatchedDeveloperMetadata]
+  }
+}
+

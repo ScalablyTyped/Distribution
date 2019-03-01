@@ -10,3 +10,12 @@ trait InkAnalysisLineCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[InkAnalysisLineData]] = js.undefined
 }
 
+object InkAnalysisLineCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[InkAnalysisLineData] = null): InkAnalysisLineCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[InkAnalysisLineCollectionUpdateData]
+  }
+}
+

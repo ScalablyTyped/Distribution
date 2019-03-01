@@ -9,3 +9,12 @@ trait PluginConvertStyleToAttrs extends js.Object {
   var convertStyleToAttrs: scala.Boolean | js.Object
 }
 
+object PluginConvertStyleToAttrs {
+  @scala.inline
+  def apply(convertStyleToAttrs: scala.Boolean | js.Object): PluginConvertStyleToAttrs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("convertStyleToAttrs")(convertStyleToAttrs.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PluginConvertStyleToAttrs]
+  }
+}
+

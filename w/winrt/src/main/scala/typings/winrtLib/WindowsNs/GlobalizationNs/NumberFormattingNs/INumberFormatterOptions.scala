@@ -17,3 +17,30 @@ trait INumberFormatterOptions extends js.Object {
   var resolvedLanguage: java.lang.String
 }
 
+object INumberFormatterOptions {
+  @scala.inline
+  def apply(
+    fractionDigits: scala.Double,
+    geographicRegion: java.lang.String,
+    integerDigits: scala.Double,
+    isDecimalPointAlwaysDisplayed: scala.Boolean,
+    isGrouped: scala.Boolean,
+    languages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
+    numeralSystem: java.lang.String,
+    resolvedGeographicRegion: java.lang.String,
+    resolvedLanguage: java.lang.String
+  ): INumberFormatterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fractionDigits")(fractionDigits)
+    __obj.updateDynamic("geographicRegion")(geographicRegion)
+    __obj.updateDynamic("integerDigits")(integerDigits)
+    __obj.updateDynamic("isDecimalPointAlwaysDisplayed")(isDecimalPointAlwaysDisplayed)
+    __obj.updateDynamic("isGrouped")(isGrouped)
+    __obj.updateDynamic("languages")(languages)
+    __obj.updateDynamic("numeralSystem")(numeralSystem)
+    __obj.updateDynamic("resolvedGeographicRegion")(resolvedGeographicRegion)
+    __obj.updateDynamic("resolvedLanguage")(resolvedLanguage)
+    __obj.asInstanceOf[INumberFormatterOptions]
+  }
+}
+

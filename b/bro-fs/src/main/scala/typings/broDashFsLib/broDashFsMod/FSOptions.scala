@@ -16,3 +16,18 @@ trait FSOptions extends js.Object {
   var `type`: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FSOptions {
+  @scala.inline
+  def apply(
+    bytes: scala.Int | scala.Double = null,
+    requestQuota: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: scala.Int | scala.Double = null
+  ): FSOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bytes != null) __obj.updateDynamic("bytes")(bytes.asInstanceOf[js.Any])
+    if (!js.isUndefined(requestQuota)) __obj.updateDynamic("requestQuota")(requestQuota)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FSOptions]
+  }
+}
+

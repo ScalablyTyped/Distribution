@@ -14,3 +14,24 @@ trait Anon_Device extends js.Object {
   var patch: java.lang.String
 }
 
+object Anon_Device {
+  @scala.inline
+  def apply(
+    family: java.lang.String,
+    major: java.lang.String,
+    minor: java.lang.String,
+    patch: java.lang.String,
+    device: java.lang.String = null,
+    os: java.lang.String = null
+  ): Anon_Device = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("family")(family)
+    __obj.updateDynamic("major")(major)
+    __obj.updateDynamic("minor")(minor)
+    __obj.updateDynamic("patch")(patch)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (os != null) __obj.updateDynamic("os")(os)
+    __obj.asInstanceOf[Anon_Device]
+  }
+}
+

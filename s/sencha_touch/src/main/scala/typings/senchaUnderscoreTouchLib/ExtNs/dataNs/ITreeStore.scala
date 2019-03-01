@@ -89,3 +89,58 @@ trait ITreeStore extends INodeStore {
   var setRootNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[IModel], IModel]] = js.undefined
 }
 
+object ITreeStore {
+  @scala.inline
+  def apply(
+    INodeStore: INodeStore = null,
+    clearOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultRootId: java.lang.String = null,
+    defaultRootProperty: java.lang.String = null,
+    getById: js.Function1[/* id */ js.UndefOr[js.Any], _] = null,
+    getClearOnLoad: js.Function0[scala.Boolean] = null,
+    getDefaultRootId: js.Function0[java.lang.String] = null,
+    getDefaultRootProperty: js.Function0[java.lang.String] = null,
+    getNodeById: js.Function1[/* id */ js.UndefOr[js.Any], INodeInterface] = null,
+    getNodeParam: js.Function0[java.lang.String] = null,
+    getRoot: js.Function0[_] = null,
+    getRootNode: js.Function1[/* node */ js.UndefOr[js.Any], IModel] = null,
+    load: js.Function1[/* options */ js.UndefOr[js.Any], _] = null,
+    nodeParam: java.lang.String = null,
+    onProxyLoad: js.Function1[/* operation */ js.UndefOr[js.Any], scala.Unit] = null,
+    removeAll: js.Function1[/* silent */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    root: js.Any = null,
+    setClearOnLoad: js.Function1[/* clearOnLoad */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setDefaultRootId: js.Function1[/* defaultRootId */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setDefaultRootProperty: js.Function1[/* defaultRootProperty */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setNodeParam: js.Function1[/* nodeParam */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setRoot: js.Function1[/* root */ js.UndefOr[js.Any], scala.Unit] = null,
+    setRootNode: js.Function1[/* node */ js.UndefOr[IModel], IModel] = null
+  ): ITreeStore = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, INodeStore)
+    if (!js.isUndefined(clearOnLoad)) __obj.updateDynamic("clearOnLoad")(clearOnLoad)
+    if (defaultRootId != null) __obj.updateDynamic("defaultRootId")(defaultRootId)
+    if (defaultRootProperty != null) __obj.updateDynamic("defaultRootProperty")(defaultRootProperty)
+    if (getById != null) __obj.updateDynamic("getById")(getById)
+    if (getClearOnLoad != null) __obj.updateDynamic("getClearOnLoad")(getClearOnLoad)
+    if (getDefaultRootId != null) __obj.updateDynamic("getDefaultRootId")(getDefaultRootId)
+    if (getDefaultRootProperty != null) __obj.updateDynamic("getDefaultRootProperty")(getDefaultRootProperty)
+    if (getNodeById != null) __obj.updateDynamic("getNodeById")(getNodeById)
+    if (getNodeParam != null) __obj.updateDynamic("getNodeParam")(getNodeParam)
+    if (getRoot != null) __obj.updateDynamic("getRoot")(getRoot)
+    if (getRootNode != null) __obj.updateDynamic("getRootNode")(getRootNode)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (nodeParam != null) __obj.updateDynamic("nodeParam")(nodeParam)
+    if (onProxyLoad != null) __obj.updateDynamic("onProxyLoad")(onProxyLoad)
+    if (removeAll != null) __obj.updateDynamic("removeAll")(removeAll)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (setClearOnLoad != null) __obj.updateDynamic("setClearOnLoad")(setClearOnLoad)
+    if (setDefaultRootId != null) __obj.updateDynamic("setDefaultRootId")(setDefaultRootId)
+    if (setDefaultRootProperty != null) __obj.updateDynamic("setDefaultRootProperty")(setDefaultRootProperty)
+    if (setNodeParam != null) __obj.updateDynamic("setNodeParam")(setNodeParam)
+    if (setRoot != null) __obj.updateDynamic("setRoot")(setRoot)
+    if (setRootNode != null) __obj.updateDynamic("setRootNode")(setRootNode)
+    __obj.asInstanceOf[ITreeStore]
+  }
+}
+

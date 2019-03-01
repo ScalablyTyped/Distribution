@@ -1,0 +1,50 @@
+package typings
+package arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ArcGISMapServiceCapabilities
+  extends stdLib.Object {
+  /**
+    * Indicates options supported by the exportMap operation. Will be `null` if the `supportsExportMap` is `false`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+    */
+  var exportMap: ArcGISMapServiceCapabilitiesExportMap
+  /**
+    * Indicates options supported by the exportTiles operation. Will be `null` if the `supportsExportTiles` is `false`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+    */
+  var exportTiles: ArcGISMapServiceCapabilitiesExportTiles
+  /**
+    * Indicates operations that can be performed on the service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+    */
+  var operations: ArcGISMapServiceCapabilitiesOperations
+}
+
+object ArcGISMapServiceCapabilities {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    exportMap: ArcGISMapServiceCapabilitiesExportMap,
+    exportTiles: ArcGISMapServiceCapabilitiesExportTiles,
+    hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
+    operations: ArcGISMapServiceCapabilitiesOperations,
+    propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
+  ): ArcGISMapServiceCapabilities = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("constructor")(constructor)
+    __obj.updateDynamic("exportMap")(exportMap)
+    __obj.updateDynamic("exportTiles")(exportTiles)
+    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
+    __obj.updateDynamic("operations")(operations)
+    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    __obj.asInstanceOf[ArcGISMapServiceCapabilities]
+  }
+}
+

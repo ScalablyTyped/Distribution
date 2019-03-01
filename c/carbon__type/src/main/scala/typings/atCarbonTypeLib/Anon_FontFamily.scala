@@ -13,3 +13,22 @@ trait Anon_FontFamily extends js.Object {
   var lineHeight: java.lang.String
 }
 
+object Anon_FontFamily {
+  @scala.inline
+  def apply(
+    fontFamily: java.lang.String,
+    fontSize: java.lang.String,
+    fontWeight: scala.Double,
+    letterSpacing: java.lang.String,
+    lineHeight: java.lang.String
+  ): Anon_FontFamily = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fontFamily")(fontFamily)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("fontWeight")(fontWeight)
+    __obj.updateDynamic("letterSpacing")(letterSpacing)
+    __obj.updateDynamic("lineHeight")(lineHeight)
+    __obj.asInstanceOf[Anon_FontFamily]
+  }
+}
+

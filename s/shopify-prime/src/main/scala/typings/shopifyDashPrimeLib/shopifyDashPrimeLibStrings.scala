@@ -28,106 +28,139 @@ object shopifyDashPrimeLibStrings {
   sealed trait active extends js.Object
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends shopifyDashPrimeLib.distEnumsScriptUnderscoreTagUnderscoreDisplayUnderscoreScopeMod._ScriptTagDisplayScope
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any
+    extends shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod._FinancialStatus
+       with shopifyDashPrimeLib.distEnumsFulfillmentUnderscoreStatusMod._FulfillmentStatus
+       with shopifyDashPrimeLib.distEnumsOrderUnderscoreStatusMod._OrderStatus
+       with shopifyDashPrimeLib.distEnumsPublishedUnderscoreStatusMod._PublishedStatus
   
   @js.native
-  sealed trait `app/uninstalled` extends js.Object
+  sealed trait `app/uninstalled`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
   sealed trait applies_to_resource extends js.Object
   
   @js.native
-  sealed trait authorization extends js.Object
+  sealed trait authorization
+    extends shopifyDashPrimeLib.distEnumsTransactionUnderscoreKindMod._TransactionKind
   
   @js.native
-  sealed trait authorized extends js.Object
+  sealed trait authorized
+    extends shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod._FinancialStatus
   
   @js.native
-  sealed trait bypass extends js.Object
+  sealed trait bypass
+    extends shopifyDashPrimeLib.distEnumsInventoryUnderscoreBehaviorMod._InventoryBehavior
   
   @js.native
-  sealed trait cancelled extends js.Object
+  sealed trait cancelled
+    extends shopifyDashPrimeLib.distEnumsOrderUnderscoreStatusMod._OrderStatus
   
   @js.native
-  sealed trait capture extends js.Object
+  sealed trait capture
+    extends shopifyDashPrimeLib.distEnumsTransactionUnderscoreKindMod._TransactionKind
   
   @js.native
-  sealed trait `carts/create` extends js.Object
+  sealed trait `carts/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `carts/update` extends js.Object
+  sealed trait `carts/update`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `checkouts/create` extends js.Object
+  sealed trait `checkouts/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `checkouts/delete` extends js.Object
+  sealed trait `checkouts/delete`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `checkouts/update` extends js.Object
+  sealed trait `checkouts/update`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait closed
+    extends shopifyDashPrimeLib.distEnumsOrderUnderscoreStatusMod._OrderStatus
   
   @js.native
-  sealed trait `collections/create` extends js.Object
+  sealed trait `collections/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `collections/delete` extends js.Object
+  sealed trait `collections/delete`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `collections/update` extends js.Object
+  sealed trait `collections/update`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
   sealed trait custom_collection extends js.Object
   
   @js.native
-  sealed trait customer extends js.Object
+  sealed trait customer
+    extends shopifyDashPrimeLib.distEnumsOrderUnderscoreCancelUnderscoreReasonMod._OrderCancelReason
   
   @js.native
-  sealed trait `customer_groups/create` extends js.Object
+  sealed trait `customer_groups/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `customer_groups/delete` extends js.Object
+  sealed trait `customer_groups/delete`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `customer_groups/update` extends js.Object
+  sealed trait `customer_groups/update`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `customers/create` extends js.Object
+  sealed trait `customers/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `customers/delete` extends js.Object
+  sealed trait `customers/delete`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `customers/disable` extends js.Object
+  sealed trait `customers/disable`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `customers/enable` extends js.Object
+  sealed trait `customers/enable`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `customers/update` extends js.Object
+  sealed trait `customers/update`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
   sealed trait declined extends js.Object
   
   @js.native
-  sealed trait decrement_ignoring_policy extends js.Object
+  sealed trait decrement_ignoring_policy
+    extends shopifyDashPrimeLib.distEnumsInventoryUnderscoreBehaviorMod._InventoryBehavior
   
   @js.native
-  sealed trait decrement_obeying_policy extends js.Object
+  sealed trait decrement_obeying_policy
+    extends shopifyDashPrimeLib.distEnumsInventoryUnderscoreBehaviorMod._InventoryBehavior
   
   @js.native
   sealed trait demo extends js.Object
   
   @js.native
-  sealed trait `disputes/create` extends js.Object
+  sealed trait `disputes/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `disputes/update` extends js.Object
+  sealed trait `disputes/update`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
   sealed trait each extends js.Object
@@ -136,34 +169,40 @@ object shopifyDashPrimeLibStrings {
   sealed trait entitled extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends shopifyDashPrimeLib.distEnumsTransactionUnderscoreStatusMod._TransactionStatus
   
   @js.native
   sealed trait expired extends js.Object
   
   @js.native
-  sealed trait failure extends js.Object
+  sealed trait failure
+    extends shopifyDashPrimeLib.distEnumsTransactionUnderscoreStatusMod._TransactionStatus
   
   @js.native
   sealed trait fixed_amount extends js.Object
   
   @js.native
-  sealed trait fraud extends js.Object
+  sealed trait fraud
+    extends shopifyDashPrimeLib.distEnumsOrderUnderscoreCancelUnderscoreReasonMod._OrderCancelReason
   
   @js.native
   sealed trait fulfilled extends js.Object
   
   @js.native
-  sealed trait `fulfillments/create` extends js.Object
+  sealed trait `fulfillments/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `fulfillments/update` extends js.Object
+  sealed trait `fulfillments/update`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
   sealed trait integer extends js.Object
   
   @js.native
-  sealed trait inventory extends js.Object
+  sealed trait inventory
+    extends shopifyDashPrimeLib.distEnumsOrderUnderscoreCancelUnderscoreReasonMod._OrderCancelReason
   
   @js.native
   sealed trait json extends js.Object
@@ -175,64 +214,84 @@ object shopifyDashPrimeLibStrings {
   sealed trait main extends js.Object
   
   @js.native
-  sealed trait moderate extends js.Object
+  sealed trait moderate
+    extends shopifyDashPrimeLib.distEnumsBlogUnderscoreCommentableMod._BlogCommentable
   
   @js.native
-  sealed trait no extends js.Object
+  sealed trait no
+    extends shopifyDashPrimeLib.distEnumsBlogUnderscoreCommentableMod._BlogCommentable
   
   @js.native
-  sealed trait online_store extends js.Object
+  sealed trait online_store
+    extends shopifyDashPrimeLib.distEnumsScriptUnderscoreTagUnderscoreDisplayUnderscoreScopeMod._ScriptTagDisplayScope
   
   @js.native
   sealed trait onload extends js.Object
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open
+    extends shopifyDashPrimeLib.distEnumsOrderUnderscoreStatusMod._OrderStatus
   
   @js.native
-  sealed trait order_status extends js.Object
+  sealed trait order_status
+    extends shopifyDashPrimeLib.distEnumsScriptUnderscoreTagUnderscoreDisplayUnderscoreScopeMod._ScriptTagDisplayScope
   
   @js.native
-  sealed trait `order_transations/create` extends js.Object
+  sealed trait `order_transations/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `orders/cancelled` extends js.Object
+  sealed trait `orders/cancelled`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `orders/create` extends js.Object
+  sealed trait `orders/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `orders/delete` extends js.Object
+  sealed trait `orders/delete`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `orders/fulfilled` extends js.Object
+  sealed trait `orders/fulfilled`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `orders/paid` extends js.Object
+  sealed trait `orders/paid`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `orders/partially_fulfilled` extends js.Object
+  sealed trait `orders/partially_fulfilled`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `orders/updated` extends js.Object
+  sealed trait `orders/updated`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait other
+    extends shopifyDashPrimeLib.distEnumsOrderUnderscoreCancelUnderscoreReasonMod._OrderCancelReason
   
   @js.native
-  sealed trait paid extends js.Object
+  sealed trait paid
+    extends shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod._FinancialStatus
   
   @js.native
-  sealed trait partial extends js.Object
+  sealed trait partial
+    extends shopifyDashPrimeLib.distEnumsFulfillmentUnderscoreStatusMod._FulfillmentStatus
   
   @js.native
-  sealed trait partially_paid extends js.Object
+  sealed trait partially_paid
+    extends shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod._FinancialStatus
   
   @js.native
-  sealed trait partially_refunded extends js.Object
+  sealed trait partially_refunded
+    extends shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod._FinancialStatus
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod._FinancialStatus
+       with shopifyDashPrimeLib.distEnumsTransactionUnderscoreStatusMod._TransactionStatus
   
   @js.native
   sealed trait `per-user` extends js.Object
@@ -244,61 +303,80 @@ object shopifyDashPrimeLibStrings {
   sealed trait prerequisite extends js.Object
   
   @js.native
-  sealed trait `products/create` extends js.Object
+  sealed trait `products/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `products/delete` extends js.Object
+  sealed trait `products/delete`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait `products/update` extends js.Object
+  sealed trait `products/update`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait published extends js.Object
+  sealed trait published
+    extends shopifyDashPrimeLib.distEnumsPublishedUnderscoreStatusMod._PublishedStatus
   
   @js.native
-  sealed trait read_analytics extends js.Object
+  sealed trait read_analytics
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait read_content extends js.Object
+  sealed trait read_content
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait read_customers extends js.Object
+  sealed trait read_customers
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait read_fulfillments extends js.Object
+  sealed trait read_fulfillments
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait read_orders extends js.Object
+  sealed trait read_orders
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait read_products extends js.Object
+  sealed trait read_products
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait read_script_tags extends js.Object
+  sealed trait read_script_tags
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait read_shipping extends js.Object
+  sealed trait read_shipping
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait read_themes extends js.Object
+  sealed trait read_themes
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait read_users extends js.Object
+  sealed trait read_users
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait refund extends js.Object
+  sealed trait refund
+    extends shopifyDashPrimeLib.distEnumsTransactionUnderscoreKindMod._TransactionKind
   
   @js.native
-  sealed trait refunded extends js.Object
+  sealed trait refunded
+    extends shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod._FinancialStatus
   
   @js.native
-  sealed trait `refunds/create` extends js.Object
+  sealed trait `refunds/create`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait sale extends js.Object
+  sealed trait sale
+    extends shopifyDashPrimeLib.distEnumsTransactionUnderscoreKindMod._TransactionKind
   
   @js.native
-  sealed trait shipped extends js.Object
+  sealed trait shipped
+    extends shopifyDashPrimeLib.distEnumsFulfillmentUnderscoreStatusMod._FulfillmentStatus
   
   @js.native
   sealed trait shipping extends js.Object
@@ -307,64 +385,82 @@ object shopifyDashPrimeLibStrings {
   sealed trait shipping_line extends js.Object
   
   @js.native
-  sealed trait `shop/update` extends js.Object
+  sealed trait `shop/update`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends shopifyDashPrimeLib.distEnumsTransactionUnderscoreStatusMod._TransactionStatus
   
   @js.native
-  sealed trait `themes/publish` extends js.Object
+  sealed trait `themes/publish`
+    extends shopifyDashPrimeLib.distEnumsWebhookUnderscoreTopicMod._WebhookTopic
   
   @js.native
-  sealed trait unpaid extends js.Object
+  sealed trait unpaid
+    extends shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod._FinancialStatus
   
   @js.native
-  sealed trait unpublished extends js.Object
+  sealed trait unpublished
+    extends shopifyDashPrimeLib.distEnumsPublishedUnderscoreStatusMod._PublishedStatus
   
   @js.native
-  sealed trait unshipped extends js.Object
+  sealed trait unshipped
+    extends shopifyDashPrimeLib.distEnumsFulfillmentUnderscoreStatusMod._FulfillmentStatus
   
   @js.native
-  sealed trait void extends js.Object
+  sealed trait void
+    extends shopifyDashPrimeLib.distEnumsTransactionUnderscoreKindMod._TransactionKind
   
   @js.native
-  sealed trait voided extends js.Object
+  sealed trait voided
+    extends shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod._FinancialStatus
   
   @js.native
-  sealed trait write_content extends js.Object
+  sealed trait write_content
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait write_customers extends js.Object
+  sealed trait write_customers
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait write_fulfillments extends js.Object
+  sealed trait write_fulfillments
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait write_orders extends js.Object
+  sealed trait write_orders
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait write_products extends js.Object
+  sealed trait write_products
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait write_script_tags extends js.Object
+  sealed trait write_script_tags
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait write_shipping extends js.Object
+  sealed trait write_shipping
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait write_themes extends js.Object
+  sealed trait write_themes
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
-  sealed trait write_users extends js.Object
+  sealed trait write_users
+    extends shopifyDashPrimeLib.distEnumsAuthUnderscoreScopeMod._AuthScope
   
   @js.native
   sealed trait xml extends js.Object
   
   @js.native
-  sealed trait yes extends js.Object
+  sealed trait yes
+    extends shopifyDashPrimeLib.distEnumsBlogUnderscoreCommentableMod._BlogCommentable
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

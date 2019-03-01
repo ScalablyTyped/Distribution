@@ -21,3 +21,28 @@ trait Deployment extends js.Object {
   def update(name: java.lang.String, options: DeploymentOptions, callback: CbCallback): scala.Unit
 }
 
+object Deployment {
+  @scala.inline
+  def apply(
+    create: js.Function4[java.lang.String, java.lang.String, DeploymentOptions, CbCallback, scala.Unit],
+    delete: js.Function2[java.lang.String, CbCallback, scala.Unit],
+    read: js.Function2[java.lang.String, CbCallback, scala.Unit],
+    readAll: js.Function2[QueryObj, CbCallback, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    update: js.Function3[java.lang.String, DeploymentOptions, CbCallback, scala.Unit],
+    user: APIUser
+  ): Deployment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("readAll")(readAll)
+    __obj.updateDynamic("systemKey")(systemKey)
+    __obj.updateDynamic("systemSecret")(systemSecret)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[Deployment]
+  }
+}
+

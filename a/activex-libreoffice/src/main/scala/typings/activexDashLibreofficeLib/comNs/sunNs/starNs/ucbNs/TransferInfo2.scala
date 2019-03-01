@@ -11,3 +11,22 @@ trait TransferInfo2 extends TransferInfo {
   var MimeType: java.lang.String
 }
 
+object TransferInfo2 {
+  @scala.inline
+  def apply(
+    MimeType: java.lang.String,
+    MoveData: scala.Boolean,
+    NameClash: scala.Double,
+    NewTitle: java.lang.String,
+    SourceURL: java.lang.String
+  ): TransferInfo2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MimeType")(MimeType)
+    __obj.updateDynamic("MoveData")(MoveData)
+    __obj.updateDynamic("NameClash")(NameClash)
+    __obj.updateDynamic("NewTitle")(NewTitle)
+    __obj.updateDynamic("SourceURL")(SourceURL)
+    __obj.asInstanceOf[TransferInfo2]
+  }
+}
+

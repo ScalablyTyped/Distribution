@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("tableau.QuantitativeFilter")
 @js.native
-class QuantitativeFilter () extends Filter {
+class QuantitativeFilter ()
+  extends Filter
+     with ConcreteFilter {
   /** Gets the maximum value as specified in the domain. */
   def getDomainMax(): DataValue = js.native
   /** Gets the minimum value as specified in the domain. */

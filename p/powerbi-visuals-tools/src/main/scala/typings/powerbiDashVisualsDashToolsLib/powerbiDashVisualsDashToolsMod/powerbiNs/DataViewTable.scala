@@ -18,3 +18,24 @@ trait DataViewTable extends js.Object {
   var totals: js.UndefOr[js.Array[PrimitiveValue]] = js.undefined
 }
 
+object DataViewTable {
+  @scala.inline
+  def apply(
+    columns: js.Array[DataViewMetadataColumn],
+    identity: js.Array[DataViewScopeIdentity] = null,
+    identityFields: js.Array[
+      powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr
+    ] = null,
+    rows: js.Array[DataViewTableRow] = null,
+    totals: js.Array[PrimitiveValue] = null
+  ): DataViewTable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columns")(columns)
+    if (identity != null) __obj.updateDynamic("identity")(identity)
+    if (identityFields != null) __obj.updateDynamic("identityFields")(identityFields)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (totals != null) __obj.updateDynamic("totals")(totals)
+    __obj.asInstanceOf[DataViewTable]
+  }
+}
+

@@ -11,3 +11,18 @@ trait LinearOptimizationService extends js.Object {
   def createEngine(): LinearOptimizationEngine
 }
 
+object LinearOptimizationService {
+  @scala.inline
+  def apply(
+    Status: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Status */ js.Any,
+    VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ js.Any,
+    createEngine: js.Function0[LinearOptimizationEngine]
+  ): LinearOptimizationService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Status")(Status)
+    __obj.updateDynamic("VariableType")(VariableType)
+    __obj.updateDynamic("createEngine")(createEngine)
+    __obj.asInstanceOf[LinearOptimizationService]
+  }
+}
+

@@ -11,3 +11,16 @@ trait Anon_ElAny extends js.Object {
   ])
 }
 
+object Anon_ElAny {
+  @scala.inline
+  def apply(
+    el: stdLib.Element | (aframeLib.aframeMod.Entity[
+      aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.Component[_, aframeLib.aframeMod.System[_]]]
+    ])
+  ): Anon_ElAny = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ElAny]
+  }
+}
+

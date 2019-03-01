@@ -95,3 +95,50 @@ trait XPlayer extends js.Object {
   def stop(): scala.Unit
 }
 
+object XPlayer {
+  @scala.inline
+  def apply(
+    Duration: scala.Double,
+    MediaTime: scala.Double,
+    PreferredPlayerWindowSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    VolumeDB: scala.Double,
+    createFrameGrabber: js.Function0[XFrameGrabber],
+    createPlayerWindow: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], XPlayerWindow],
+    getDuration: js.Function0[scala.Double],
+    getMediaTime: js.Function0[scala.Double],
+    getPreferredPlayerWindowSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    getVolumeDB: js.Function0[scala.Double],
+    isMute: js.Function0[scala.Boolean],
+    isPlaybackLoop: js.Function0[scala.Boolean],
+    isPlaying: js.Function0[scala.Boolean],
+    setMediaTime: js.Function1[scala.Double, scala.Unit],
+    setMute: js.Function1[scala.Boolean, scala.Unit],
+    setPlaybackLoop: js.Function1[scala.Boolean, scala.Unit],
+    setVolumeDB: js.Function1[scala.Double, scala.Unit],
+    start: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit]
+  ): XPlayer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Duration")(Duration)
+    __obj.updateDynamic("MediaTime")(MediaTime)
+    __obj.updateDynamic("PreferredPlayerWindowSize")(PreferredPlayerWindowSize)
+    __obj.updateDynamic("VolumeDB")(VolumeDB)
+    __obj.updateDynamic("createFrameGrabber")(createFrameGrabber)
+    __obj.updateDynamic("createPlayerWindow")(createPlayerWindow)
+    __obj.updateDynamic("getDuration")(getDuration)
+    __obj.updateDynamic("getMediaTime")(getMediaTime)
+    __obj.updateDynamic("getPreferredPlayerWindowSize")(getPreferredPlayerWindowSize)
+    __obj.updateDynamic("getVolumeDB")(getVolumeDB)
+    __obj.updateDynamic("isMute")(isMute)
+    __obj.updateDynamic("isPlaybackLoop")(isPlaybackLoop)
+    __obj.updateDynamic("isPlaying")(isPlaying)
+    __obj.updateDynamic("setMediaTime")(setMediaTime)
+    __obj.updateDynamic("setMute")(setMute)
+    __obj.updateDynamic("setPlaybackLoop")(setPlaybackLoop)
+    __obj.updateDynamic("setVolumeDB")(setVolumeDB)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[XPlayer]
+  }
+}
+

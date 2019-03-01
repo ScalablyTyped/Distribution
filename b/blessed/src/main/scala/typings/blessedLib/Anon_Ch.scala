@@ -11,3 +11,14 @@ trait Anon_Ch extends js.Object {
   var track: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Ch {
+  @scala.inline
+  def apply(ch: java.lang.String = null, style: js.Any = null, track: js.Any = null): Anon_Ch = {
+    val __obj = js.Dynamic.literal()
+    if (ch != null) __obj.updateDynamic("ch")(ch)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (track != null) __obj.updateDynamic("track")(track)
+    __obj.asInstanceOf[Anon_Ch]
+  }
+}
+

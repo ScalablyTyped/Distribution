@@ -28,3 +28,22 @@ trait TaskAgentUpdate extends js.Object {
   var targetVersion: PackageVersion
 }
 
+object TaskAgentUpdate {
+  @scala.inline
+  def apply(
+    currentState: java.lang.String,
+    requestTime: stdLib.Date,
+    requestedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    sourceVersion: PackageVersion,
+    targetVersion: PackageVersion
+  ): TaskAgentUpdate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentState")(currentState)
+    __obj.updateDynamic("requestTime")(requestTime)
+    __obj.updateDynamic("requestedBy")(requestedBy)
+    __obj.updateDynamic("sourceVersion")(sourceVersion)
+    __obj.updateDynamic("targetVersion")(targetVersion)
+    __obj.asInstanceOf[TaskAgentUpdate]
+  }
+}
+

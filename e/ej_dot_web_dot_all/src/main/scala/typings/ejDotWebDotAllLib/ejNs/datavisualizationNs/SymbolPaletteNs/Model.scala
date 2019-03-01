@@ -66,3 +66,42 @@ trait Model extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    allowDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    cssClass: java.lang.String = null,
+    defaultSettings: DefaultSettings = null,
+    diagramId: java.lang.String = null,
+    headerHeight: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    paletteItemHeight: scala.Int | scala.Double = null,
+    paletteItemWidth: scala.Int | scala.Double = null,
+    palettes: js.Array[Palette] = null,
+    previewHeight: scala.Int | scala.Double = null,
+    previewOffset: js.Any = null,
+    previewWidth: scala.Int | scala.Double = null,
+    selectionChange: js.Function1[/* e */ SelectionChangeEventArgs, scala.Unit] = null,
+    showPaletteItemText: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (defaultSettings != null) __obj.updateDynamic("defaultSettings")(defaultSettings)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (headerHeight != null) __obj.updateDynamic("headerHeight")(headerHeight.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (paletteItemHeight != null) __obj.updateDynamic("paletteItemHeight")(paletteItemHeight.asInstanceOf[js.Any])
+    if (paletteItemWidth != null) __obj.updateDynamic("paletteItemWidth")(paletteItemWidth.asInstanceOf[js.Any])
+    if (palettes != null) __obj.updateDynamic("palettes")(palettes)
+    if (previewHeight != null) __obj.updateDynamic("previewHeight")(previewHeight.asInstanceOf[js.Any])
+    if (previewOffset != null) __obj.updateDynamic("previewOffset")(previewOffset)
+    if (previewWidth != null) __obj.updateDynamic("previewWidth")(previewWidth.asInstanceOf[js.Any])
+    if (selectionChange != null) __obj.updateDynamic("selectionChange")(selectionChange)
+    if (!js.isUndefined(showPaletteItemText)) __obj.updateDynamic("showPaletteItemText")(showPaletteItemText)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

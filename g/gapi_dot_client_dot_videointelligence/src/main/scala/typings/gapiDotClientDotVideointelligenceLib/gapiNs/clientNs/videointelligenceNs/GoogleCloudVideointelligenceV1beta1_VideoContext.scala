@@ -40,3 +40,24 @@ trait GoogleCloudVideointelligenceV1beta1_VideoContext extends js.Object {
   var stationaryCamera: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta1_VideoContext {
+  @scala.inline
+  def apply(
+    labelDetectionMode: java.lang.String = null,
+    labelDetectionModel: java.lang.String = null,
+    safeSearchDetectionModel: java.lang.String = null,
+    segments: js.Array[GoogleCloudVideointelligenceV1beta1_VideoSegment] = null,
+    shotChangeDetectionModel: java.lang.String = null,
+    stationaryCamera: js.UndefOr[scala.Boolean] = js.undefined
+  ): GoogleCloudVideointelligenceV1beta1_VideoContext = {
+    val __obj = js.Dynamic.literal()
+    if (labelDetectionMode != null) __obj.updateDynamic("labelDetectionMode")(labelDetectionMode)
+    if (labelDetectionModel != null) __obj.updateDynamic("labelDetectionModel")(labelDetectionModel)
+    if (safeSearchDetectionModel != null) __obj.updateDynamic("safeSearchDetectionModel")(safeSearchDetectionModel)
+    if (segments != null) __obj.updateDynamic("segments")(segments)
+    if (shotChangeDetectionModel != null) __obj.updateDynamic("shotChangeDetectionModel")(shotChangeDetectionModel)
+    if (!js.isUndefined(stationaryCamera)) __obj.updateDynamic("stationaryCamera")(stationaryCamera)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_VideoContext]
+  }
+}
+

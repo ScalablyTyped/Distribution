@@ -17,3 +17,16 @@ trait InvokeOptions extends js.Object {
   var provider: js.UndefOr[atPulumiPulumiLib.resourceMod.ProviderResource] = js.undefined
 }
 
+object InvokeOptions {
+  @scala.inline
+  def apply(
+    parent: atPulumiPulumiLib.resourceMod.Resource = null,
+    provider: atPulumiPulumiLib.resourceMod.ProviderResource = null
+  ): InvokeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    __obj.asInstanceOf[InvokeOptions]
+  }
+}
+

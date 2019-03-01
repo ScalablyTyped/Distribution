@@ -9,3 +9,12 @@ trait ReadConcern extends js.Object {
   var level: mongodbLib.ReadConcernLevel
 }
 
+object ReadConcern {
+  @scala.inline
+  def apply(level: mongodbLib.ReadConcernLevel): ReadConcern = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("level")(level)
+    __obj.asInstanceOf[ReadConcern]
+  }
+}
+

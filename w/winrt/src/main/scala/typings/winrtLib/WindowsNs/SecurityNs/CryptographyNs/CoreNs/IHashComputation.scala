@@ -10,3 +10,16 @@ trait IHashComputation extends js.Object {
   def getValueAndReset(): winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
 }
 
+object IHashComputation {
+  @scala.inline
+  def apply(
+    append: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Unit],
+    getValueAndReset: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer]
+  ): IHashComputation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("append")(append)
+    __obj.updateDynamic("getValueAndReset")(getValueAndReset)
+    __obj.asInstanceOf[IHashComputation]
+  }
+}
+

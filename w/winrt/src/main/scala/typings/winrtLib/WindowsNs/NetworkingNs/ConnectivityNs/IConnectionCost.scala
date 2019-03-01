@@ -12,3 +12,20 @@ trait IConnectionCost extends js.Object {
   var roaming: scala.Boolean
 }
 
+object IConnectionCost {
+  @scala.inline
+  def apply(
+    approachingDataLimit: scala.Boolean,
+    networkCostType: NetworkCostType,
+    overDataLimit: scala.Boolean,
+    roaming: scala.Boolean
+  ): IConnectionCost = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("approachingDataLimit")(approachingDataLimit)
+    __obj.updateDynamic("networkCostType")(networkCostType)
+    __obj.updateDynamic("overDataLimit")(overDataLimit)
+    __obj.updateDynamic("roaming")(roaming)
+    __obj.asInstanceOf[IConnectionCost]
+  }
+}
+

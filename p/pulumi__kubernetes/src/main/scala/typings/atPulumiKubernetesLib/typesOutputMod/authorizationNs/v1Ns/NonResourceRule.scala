@@ -21,3 +21,13 @@ trait NonResourceRule extends js.Object {
   val verbs: js.Array[java.lang.String]
 }
 
+object NonResourceRule {
+  @scala.inline
+  def apply(nonResourceURLs: js.Array[java.lang.String], verbs: js.Array[java.lang.String]): NonResourceRule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nonResourceURLs")(nonResourceURLs)
+    __obj.updateDynamic("verbs")(verbs)
+    __obj.asInstanceOf[NonResourceRule]
+  }
+}
+

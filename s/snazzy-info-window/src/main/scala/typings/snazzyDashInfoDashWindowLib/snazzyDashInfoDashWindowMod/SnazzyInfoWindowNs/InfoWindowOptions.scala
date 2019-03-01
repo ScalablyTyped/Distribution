@@ -171,3 +171,62 @@ trait InfoWindowOptions extends js.Object {
   var wrapperClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InfoWindowOptions {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    border: Border | scala.Boolean = null,
+    borderRadius: java.lang.String = null,
+    callbacks: Callbacks = null,
+    closeButtonMarkup: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnMapClick: js.UndefOr[scala.Boolean] = js.undefined,
+    closeWhenOthersOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    content: java.lang.String | stdLib.HTMLElement = null,
+    edgeOffset: EdgeOffset = null,
+    fontColor: java.lang.String = null,
+    fontSize: java.lang.String = null,
+    map: googlemapsLib.googleNs.mapsNs.Map = null,
+    marker: googlemapsLib.googleNs.mapsNs.Marker = null,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    offset: Offset = null,
+    openOnMarkerClick: js.UndefOr[scala.Boolean] = js.undefined,
+    padding: java.lang.String = null,
+    panOnOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    placement: PlacementOptions = null,
+    pointer: java.lang.String | scala.Boolean = null,
+    position: googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral = null,
+    shadow: Shadow | scala.Boolean = null,
+    showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapperClass: java.lang.String = null
+  ): InfoWindowOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
+    if (!js.isUndefined(closeButtonMarkup)) __obj.updateDynamic("closeButtonMarkup")(closeButtonMarkup)
+    if (!js.isUndefined(closeOnMapClick)) __obj.updateDynamic("closeOnMapClick")(closeOnMapClick)
+    if (!js.isUndefined(closeWhenOthersOpen)) __obj.updateDynamic("closeWhenOthersOpen")(closeWhenOthersOpen)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (edgeOffset != null) __obj.updateDynamic("edgeOffset")(edgeOffset)
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (!js.isUndefined(openOnMarkerClick)) __obj.updateDynamic("openOnMarkerClick")(openOnMarkerClick)
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (!js.isUndefined(panOnOpen)) __obj.updateDynamic("panOnOpen")(panOnOpen)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (pointer != null) __obj.updateDynamic("pointer")(pointer.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
+    if (wrapperClass != null) __obj.updateDynamic("wrapperClass")(wrapperClass)
+    __obj.asInstanceOf[InfoWindowOptions]
+  }
+}
+

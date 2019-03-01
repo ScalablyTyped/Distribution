@@ -13,3 +13,16 @@ trait ExportStreamInfo extends js.Object {
   var Target: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream
 }
 
+object ExportStreamInfo {
+  @scala.inline
+  def apply(
+    ForceBodies: scala.Boolean,
+    Target: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream
+  ): ExportStreamInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ForceBodies")(ForceBodies)
+    __obj.updateDynamic("Target")(Target)
+    __obj.asInstanceOf[ExportStreamInfo]
+  }
+}
+

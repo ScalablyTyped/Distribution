@@ -28,3 +28,20 @@ trait GroupPolicyState extends js.Object {
   ] = js.undefined
 }
 
+object GroupPolicyState {
+  @scala.inline
+  def apply(
+    group: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument] = null
+  ): GroupPolicyState = {
+    val __obj = js.Dynamic.literal()
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupPolicyState]
+  }
+}
+

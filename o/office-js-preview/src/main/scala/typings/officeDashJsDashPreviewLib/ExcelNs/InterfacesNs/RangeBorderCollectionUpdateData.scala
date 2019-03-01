@@ -19,3 +19,13 @@ trait RangeBorderCollectionUpdateData extends js.Object {
   var tintAndShade: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RangeBorderCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[RangeBorderData] = null, tintAndShade: scala.Int | scala.Double = null): RangeBorderCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RangeBorderCollectionUpdateData]
+  }
+}
+

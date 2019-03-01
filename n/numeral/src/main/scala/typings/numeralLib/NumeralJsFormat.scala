@@ -12,3 +12,18 @@ trait NumeralJsFormat extends js.Object {
   def unformat(value: java.lang.String): scala.Double
 }
 
+object NumeralJsFormat {
+  @scala.inline
+  def apply(
+    format: js.Function3[js.Any, java.lang.String, RoundingFunction, java.lang.String],
+    regexps: Anon_Format,
+    unformat: js.Function1[java.lang.String, scala.Double]
+  ): NumeralJsFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("regexps")(regexps)
+    __obj.updateDynamic("unformat")(unformat)
+    __obj.asInstanceOf[NumeralJsFormat]
+  }
+}
+

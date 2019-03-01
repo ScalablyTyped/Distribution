@@ -9,3 +9,12 @@ trait Anon_MediaBody extends js.Object {
   val MediaBodyNs: js.Any
 }
 
+object Anon_MediaBody {
+  @scala.inline
+  def apply(MediaBodyNs: js.Any): Anon_MediaBody = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MediaBodyNs")(MediaBodyNs)
+    __obj.asInstanceOf[Anon_MediaBody]
+  }
+}
+

@@ -27,3 +27,20 @@ trait TwitterIntentEventData extends js.Object {
   var user_id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TwitterIntentEventData {
+  @scala.inline
+  def apply(
+    screen_name: java.lang.String = null,
+    source_tweet_id: java.lang.String = null,
+    tweet_id: java.lang.String = null,
+    user_id: java.lang.String = null
+  ): TwitterIntentEventData = {
+    val __obj = js.Dynamic.literal()
+    if (screen_name != null) __obj.updateDynamic("screen_name")(screen_name)
+    if (source_tweet_id != null) __obj.updateDynamic("source_tweet_id")(source_tweet_id)
+    if (tweet_id != null) __obj.updateDynamic("tweet_id")(tweet_id)
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id)
+    __obj.asInstanceOf[TwitterIntentEventData]
+  }
+}
+

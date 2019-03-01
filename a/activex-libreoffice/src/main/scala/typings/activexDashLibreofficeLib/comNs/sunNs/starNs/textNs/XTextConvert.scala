@@ -40,3 +40,37 @@ trait XTextConvert
   ): XTextContent
 }
 
+object XTextConvert {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    convertToTable: js.Function4[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.sequence[XTextRange]]
+      ], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
+      ], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextTable
+    ],
+    convertToTextFrame: js.Function3[
+      XTextRange, 
+      XTextRange, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextContent
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextConvert = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("convertToTable")(convertToTable)
+    __obj.updateDynamic("convertToTextFrame")(convertToTextFrame)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTextConvert]
+  }
+}
+

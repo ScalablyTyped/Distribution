@@ -9,3 +9,12 @@ trait CordovaPlugins extends js.Object {
   var backgroundMode: CordovaPluginBackgroundMode
 }
 
+object CordovaPlugins {
+  @scala.inline
+  def apply(backgroundMode: CordovaPluginBackgroundMode): CordovaPlugins = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundMode")(backgroundMode)
+    __obj.asInstanceOf[CordovaPlugins]
+  }
+}
+

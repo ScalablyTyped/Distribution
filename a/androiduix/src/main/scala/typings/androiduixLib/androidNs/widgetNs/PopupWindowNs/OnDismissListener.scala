@@ -9,3 +9,12 @@ trait OnDismissListener extends js.Object {
   def onDismiss(): scala.Unit
 }
 
+object OnDismissListener {
+  @scala.inline
+  def apply(onDismiss: js.Function0[scala.Unit]): OnDismissListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onDismiss")(onDismiss)
+    __obj.asInstanceOf[OnDismissListener]
+  }
+}
+

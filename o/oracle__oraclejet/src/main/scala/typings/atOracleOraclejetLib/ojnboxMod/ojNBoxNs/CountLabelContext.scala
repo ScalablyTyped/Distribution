@@ -14,3 +14,22 @@ trait CountLabelContext extends js.Object {
   var totalNodeCount: scala.Double
 }
 
+object CountLabelContext {
+  @scala.inline
+  def apply(
+    column: java.lang.String,
+    highlightedNodeCount: scala.Double,
+    nodeCount: scala.Double,
+    row: java.lang.String,
+    totalNodeCount: scala.Double
+  ): CountLabelContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("highlightedNodeCount")(highlightedNodeCount)
+    __obj.updateDynamic("nodeCount")(nodeCount)
+    __obj.updateDynamic("row")(row)
+    __obj.updateDynamic("totalNodeCount")(totalNodeCount)
+    __obj.asInstanceOf[CountLabelContext]
+  }
+}
+

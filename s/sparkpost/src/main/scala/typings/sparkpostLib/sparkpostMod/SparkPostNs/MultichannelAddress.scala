@@ -20,3 +20,24 @@ trait MultichannelAddress extends js.Object {
   var token: java.lang.String
 }
 
+object MultichannelAddress {
+  @scala.inline
+  def apply(
+    app_id: java.lang.String,
+    channel: java.lang.String,
+    email: java.lang.String,
+    header_to: java.lang.String,
+    name: java.lang.String,
+    token: java.lang.String
+  ): MultichannelAddress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app_id")(app_id)
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("header_to")(header_to)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[MultichannelAddress]
+  }
+}
+

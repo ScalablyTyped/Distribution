@@ -39,3 +39,28 @@ trait ConnectorsSegment extends js.Object {
   var vector2: js.UndefOr[js.Any] = js.undefined
 }
 
+object ConnectorsSegment {
+  @scala.inline
+  def apply(
+    direction: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    point: ConnectorsSourcePoint = null,
+    point1: ConnectorsSourcePoint = null,
+    point2: ConnectorsSourcePoint = null,
+    `type`: Segments | java.lang.String = null,
+    vector1: js.Any = null,
+    vector2: js.Any = null
+  ): ConnectorsSegment = {
+    val __obj = js.Dynamic.literal()
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (point != null) __obj.updateDynamic("point")(point)
+    if (point1 != null) __obj.updateDynamic("point1")(point1)
+    if (point2 != null) __obj.updateDynamic("point2")(point2)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (vector1 != null) __obj.updateDynamic("vector1")(vector1)
+    if (vector2 != null) __obj.updateDynamic("vector2")(vector2)
+    __obj.asInstanceOf[ConnectorsSegment]
+  }
+}
+

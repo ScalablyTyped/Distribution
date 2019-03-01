@@ -10,3 +10,13 @@ trait Grouping extends js.Object {
   var messyGroup: js.Array[java.lang.String]
 }
 
+object Grouping {
+  @scala.inline
+  def apply(groups: js.Array[java.lang.String], messyGroup: js.Array[java.lang.String]): Grouping = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("groups")(groups)
+    __obj.updateDynamic("messyGroup")(messyGroup)
+    __obj.asInstanceOf[Grouping]
+  }
+}
+

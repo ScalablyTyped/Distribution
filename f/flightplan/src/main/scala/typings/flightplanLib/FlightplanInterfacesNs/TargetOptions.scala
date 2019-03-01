@@ -12,3 +12,20 @@ trait TargetOptions extends js.Object {
   var username: java.lang.String
 }
 
+object TargetOptions {
+  @scala.inline
+  def apply(
+    agent: java.lang.String,
+    host: java.lang.String,
+    username: java.lang.String,
+    failsafe: js.UndefOr[scala.Boolean] = js.undefined
+  ): TargetOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("agent")(agent)
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("username")(username)
+    if (!js.isUndefined(failsafe)) __obj.updateDynamic("failsafe")(failsafe)
+    __obj.asInstanceOf[TargetOptions]
+  }
+}
+

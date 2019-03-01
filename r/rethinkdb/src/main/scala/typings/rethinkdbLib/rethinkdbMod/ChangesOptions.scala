@@ -39,3 +39,24 @@ trait ChangesOptions extends js.Object {
   var squash: scala.Boolean | scala.Double
 }
 
+object ChangesOptions {
+  @scala.inline
+  def apply(
+    changefeedQueueSize: scala.Double,
+    includeInitial: scala.Boolean,
+    includeOffsets: scala.Boolean,
+    includeStates: scala.Boolean,
+    includeTypes: scala.Boolean,
+    squash: scala.Boolean | scala.Double
+  ): ChangesOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changefeedQueueSize")(changefeedQueueSize)
+    __obj.updateDynamic("includeInitial")(includeInitial)
+    __obj.updateDynamic("includeOffsets")(includeOffsets)
+    __obj.updateDynamic("includeStates")(includeStates)
+    __obj.updateDynamic("includeTypes")(includeTypes)
+    __obj.updateDynamic("squash")(squash.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChangesOptions]
+  }
+}
+

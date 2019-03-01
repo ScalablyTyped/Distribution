@@ -10,3 +10,13 @@ trait ConverterExtensions extends js.Object {
   var output: js.Array[ShowdownExtension]
 }
 
+object ConverterExtensions {
+  @scala.inline
+  def apply(language: js.Array[ShowdownExtension], output: js.Array[ShowdownExtension]): ConverterExtensions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("output")(output)
+    __obj.asInstanceOf[ConverterExtensions]
+  }
+}
+

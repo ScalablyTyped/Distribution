@@ -22,3 +22,12 @@ trait QueryList extends js.Object {
   var queries: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object QueryList {
+  @scala.inline
+  def apply(queries: js.Array[java.lang.String] = null): QueryList = {
+    val __obj = js.Dynamic.literal()
+    if (queries != null) __obj.updateDynamic("queries")(queries)
+    __obj.asInstanceOf[QueryList]
+  }
+}
+

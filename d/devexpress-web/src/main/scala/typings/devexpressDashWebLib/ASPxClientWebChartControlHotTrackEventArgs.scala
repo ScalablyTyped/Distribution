@@ -61,3 +61,34 @@ trait ASPxClientWebChartControlHotTrackEventArgs extends ASPxClientProcessingMod
   var y: scala.Double
 }
 
+object ASPxClientWebChartControlHotTrackEventArgs {
+  @scala.inline
+  def apply(
+    absoluteX: scala.Double,
+    absoluteY: scala.Double,
+    additionalHitObject: ASPxClientWebChartElement,
+    cancel: scala.Boolean,
+    chart: ASPxClientWebChart,
+    hitInfo: ASPxClientWebChartHitInfo,
+    hitObject: ASPxClientWebChartElement,
+    htmlElement: js.Object,
+    processOnServer: scala.Boolean,
+    x: scala.Double,
+    y: scala.Double
+  ): ASPxClientWebChartControlHotTrackEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("absoluteX")(absoluteX)
+    __obj.updateDynamic("absoluteY")(absoluteY)
+    __obj.updateDynamic("additionalHitObject")(additionalHitObject)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("hitInfo")(hitInfo)
+    __obj.updateDynamic("hitObject")(hitObject)
+    __obj.updateDynamic("htmlElement")(htmlElement)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[ASPxClientWebChartControlHotTrackEventArgs]
+  }
+}
+

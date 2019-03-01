@@ -7,73 +7,104 @@ import scala.scalajs.js.annotation._
 
 object luxonLibStrings {
   @js.native
-  sealed trait `2-digit` extends js.Object
+  sealed trait `2-digit`
+    extends luxonLib.luxonMod.UnitLength
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
-  sealed trait days extends js.Object
+  sealed trait days
+    extends luxonLib.luxonMod.DurationUnit
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait hour
+    extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
-  sealed trait hours extends js.Object
+  sealed trait hours
+    extends luxonLib.luxonMod.DurationUnit
   
   @js.native
-  sealed trait long extends js.Object
+  sealed trait long
+    extends luxonLib.luxonMod.EraLength
   
   @js.native
-  sealed trait millisecond extends js.Object
+  sealed trait millisecond
+    extends luxonLib.luxonMod.DurationUnit
   
   @js.native
-  sealed trait milliseconds extends js.Object
+  sealed trait milliseconds
+    extends luxonLib.luxonMod.DurationUnit
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait minute
+    extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
-  sealed trait minutes extends js.Object
+  sealed trait minutes
+    extends luxonLib.luxonMod.DurationUnit
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
-  sealed trait months extends js.Object
+  sealed trait months
+    extends luxonLib.luxonMod.DurationUnit
   
   @js.native
-  sealed trait narrow extends js.Object
+  sealed trait narrow
+    extends luxonLib.luxonMod.UnitLength
   
   @js.native
-  sealed trait numeric extends js.Object
+  sealed trait numeric
+    extends luxonLib.luxonMod.UnitLength
   
   @js.native
-  sealed trait quarter extends js.Object
+  sealed trait quarter
+    extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
-  sealed trait quarters extends js.Object
+  sealed trait quarters
+    extends luxonLib.luxonMod.DurationUnit
   
   @js.native
-  sealed trait second extends js.Object
+  sealed trait second
+    extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
-  sealed trait seconds extends js.Object
+  sealed trait seconds
+    extends luxonLib.luxonMod.DurationUnit
   
   @js.native
-  sealed trait short extends js.Object
+  sealed trait short
+    extends luxonLib.luxonMod.EraLength
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week
+    extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
-  sealed trait weeks extends js.Object
+  sealed trait weeks
+    extends luxonLib.luxonMod.DurationUnit
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends luxonLib.luxonMod.DurationUnit
+       with luxonLib.luxonMod.ToRelativeUnit
   
   @js.native
-  sealed trait years extends js.Object
+  sealed trait years
+    extends luxonLib.luxonMod.DurationUnit
   
   @scala.inline
   def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]

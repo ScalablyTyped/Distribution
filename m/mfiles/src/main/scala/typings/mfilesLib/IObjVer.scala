@@ -19,3 +19,34 @@ trait IObjVer extends js.Object {
   def Unserialize(Bytes: js.Array[scala.Double]): scala.Unit
 }
 
+object IObjVer {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IObjVer],
+    CloneFrom: js.Function1[IObjVer, scala.Unit],
+    ID: scala.Double,
+    ObjID: IObjID,
+    Serialize: js.Function0[js.Array[scala.Double]],
+    SetIDs: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    SetObjIDAndVersion: js.Function2[IObjID, scala.Double, scala.Unit],
+    ToJSON: js.Function0[java.lang.String],
+    Type: scala.Double,
+    Unserialize: js.Function1[js.Array[scala.Double], scala.Unit],
+    Version: scala.Double
+  ): IObjVer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("CloneFrom")(CloneFrom)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("ObjID")(ObjID)
+    __obj.updateDynamic("Serialize")(Serialize)
+    __obj.updateDynamic("SetIDs")(SetIDs)
+    __obj.updateDynamic("SetObjIDAndVersion")(SetObjIDAndVersion)
+    __obj.updateDynamic("ToJSON")(ToJSON)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("Unserialize")(Unserialize)
+    __obj.updateDynamic("Version")(Version)
+    __obj.asInstanceOf[IObjVer]
+  }
+}
+

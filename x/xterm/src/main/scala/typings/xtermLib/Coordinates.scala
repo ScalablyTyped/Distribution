@@ -15,3 +15,26 @@ trait Coordinates extends js.Object {
   val speed: scala.Double | scala.Null
 }
 
+object Coordinates {
+  @scala.inline
+  def apply(
+    accuracy: scala.Double,
+    latitude: scala.Double,
+    longitude: scala.Double,
+    altitude: scala.Int | scala.Double = null,
+    altitudeAccuracy: scala.Int | scala.Double = null,
+    heading: scala.Int | scala.Double = null,
+    speed: scala.Int | scala.Double = null
+  ): Coordinates = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accuracy")(accuracy)
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (altitudeAccuracy != null) __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Coordinates]
+  }
+}
+

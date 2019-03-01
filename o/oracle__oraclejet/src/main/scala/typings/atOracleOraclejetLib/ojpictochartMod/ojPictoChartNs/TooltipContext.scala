@@ -15,3 +15,24 @@ trait TooltipContext[K] extends js.Object {
   var parentElement: stdLib.Element
 }
 
+object TooltipContext {
+  @scala.inline
+  def apply[K](
+    color: java.lang.String,
+    componentElement: stdLib.Element,
+    count: scala.Double,
+    id: K,
+    name: java.lang.String,
+    parentElement: stdLib.Element
+  ): TooltipContext[K] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("componentElement")(componentElement)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parentElement")(parentElement)
+    __obj.asInstanceOf[TooltipContext[K]]
+  }
+}
+

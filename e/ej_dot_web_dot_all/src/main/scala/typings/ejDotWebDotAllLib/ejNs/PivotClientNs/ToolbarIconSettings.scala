@@ -72,3 +72,44 @@ trait ToolbarIconSettings extends js.Object {
   var enableWordExport: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ToolbarIconSettings {
+  @scala.inline
+  def apply(
+    enableAddReport: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCalculatedMember: js.UndefOr[scala.Boolean] = js.undefined,
+    enableChartTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDBManipulation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDeferUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    enableExcelExport: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFullScreen: js.UndefOr[scala.Boolean] = js.undefined,
+    enableMDXQuery: js.UndefOr[scala.Boolean] = js.undefined,
+    enableNewReport: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePdfExport: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRemoveReport: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRenameReport: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSortOrFilterColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSortOrFilterRow: js.UndefOr[scala.Boolean] = js.undefined,
+    enableToggleAxis: js.UndefOr[scala.Boolean] = js.undefined,
+    enableWordExport: js.UndefOr[scala.Boolean] = js.undefined
+  ): ToolbarIconSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableAddReport)) __obj.updateDynamic("enableAddReport")(enableAddReport)
+    if (!js.isUndefined(enableCalculatedMember)) __obj.updateDynamic("enableCalculatedMember")(enableCalculatedMember)
+    if (!js.isUndefined(enableChartTypes)) __obj.updateDynamic("enableChartTypes")(enableChartTypes)
+    if (!js.isUndefined(enableDBManipulation)) __obj.updateDynamic("enableDBManipulation")(enableDBManipulation)
+    if (!js.isUndefined(enableDeferUpdate)) __obj.updateDynamic("enableDeferUpdate")(enableDeferUpdate)
+    if (!js.isUndefined(enableExcelExport)) __obj.updateDynamic("enableExcelExport")(enableExcelExport)
+    if (!js.isUndefined(enableFullScreen)) __obj.updateDynamic("enableFullScreen")(enableFullScreen)
+    if (!js.isUndefined(enableMDXQuery)) __obj.updateDynamic("enableMDXQuery")(enableMDXQuery)
+    if (!js.isUndefined(enableNewReport)) __obj.updateDynamic("enableNewReport")(enableNewReport)
+    if (!js.isUndefined(enablePdfExport)) __obj.updateDynamic("enablePdfExport")(enablePdfExport)
+    if (!js.isUndefined(enableRemoveReport)) __obj.updateDynamic("enableRemoveReport")(enableRemoveReport)
+    if (!js.isUndefined(enableRenameReport)) __obj.updateDynamic("enableRenameReport")(enableRenameReport)
+    if (!js.isUndefined(enableSortOrFilterColumn)) __obj.updateDynamic("enableSortOrFilterColumn")(enableSortOrFilterColumn)
+    if (!js.isUndefined(enableSortOrFilterRow)) __obj.updateDynamic("enableSortOrFilterRow")(enableSortOrFilterRow)
+    if (!js.isUndefined(enableToggleAxis)) __obj.updateDynamic("enableToggleAxis")(enableToggleAxis)
+    if (!js.isUndefined(enableWordExport)) __obj.updateDynamic("enableWordExport")(enableWordExport)
+    __obj.asInstanceOf[ToolbarIconSettings]
+  }
+}
+

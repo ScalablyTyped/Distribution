@@ -86,3 +86,47 @@ trait XChartTypeTemplate
   def supportsCategories(): scala.Boolean
 }
 
+object XChartTypeTemplate {
+  @scala.inline
+  def apply(
+    DataInterpreter: XDataInterpreter,
+    acquire: js.Function0[scala.Unit],
+    applyStyle: js.Function4[XDataSeries, scala.Double, scala.Double, scala.Double, scala.Unit],
+    changeDiagram: js.Function1[XDiagram, scala.Unit],
+    changeDiagramData: js.Function3[
+      XDiagram, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    createDiagramByDataSource: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XDiagram
+    ],
+    getChartTypeForNewSeries: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XChartType], XChartType],
+    getDataInterpreter: js.Function0[XDataInterpreter],
+    matchesTemplate: js.Function2[XDiagram, scala.Boolean, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    resetStyles: js.Function1[XDiagram, scala.Unit],
+    supportsCategories: js.Function0[scala.Boolean]
+  ): XChartTypeTemplate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataInterpreter")(DataInterpreter)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("applyStyle")(applyStyle)
+    __obj.updateDynamic("changeDiagram")(changeDiagram)
+    __obj.updateDynamic("changeDiagramData")(changeDiagramData)
+    __obj.updateDynamic("createDiagramByDataSource")(createDiagramByDataSource)
+    __obj.updateDynamic("getChartTypeForNewSeries")(getChartTypeForNewSeries)
+    __obj.updateDynamic("getDataInterpreter")(getDataInterpreter)
+    __obj.updateDynamic("matchesTemplate")(matchesTemplate)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("resetStyles")(resetStyles)
+    __obj.updateDynamic("supportsCategories")(supportsCategories)
+    __obj.asInstanceOf[XChartTypeTemplate]
+  }
+}
+

@@ -18,3 +18,32 @@ trait Options extends js.Object {
   var hostSelector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    autoCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseOnClickOut: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseOnFocusOut: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseOnMouseOut: js.UndefOr[scala.Boolean] = js.undefined,
+    contentSelector: java.lang.String = null,
+    expandOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    expandOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    expandOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    focusManagement: java.lang.String = null,
+    hostSelector: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse)
+    if (!js.isUndefined(collapseOnClickOut)) __obj.updateDynamic("collapseOnClickOut")(collapseOnClickOut)
+    if (!js.isUndefined(collapseOnFocusOut)) __obj.updateDynamic("collapseOnFocusOut")(collapseOnFocusOut)
+    if (!js.isUndefined(collapseOnMouseOut)) __obj.updateDynamic("collapseOnMouseOut")(collapseOnMouseOut)
+    if (contentSelector != null) __obj.updateDynamic("contentSelector")(contentSelector)
+    if (!js.isUndefined(expandOnClick)) __obj.updateDynamic("expandOnClick")(expandOnClick)
+    if (!js.isUndefined(expandOnFocus)) __obj.updateDynamic("expandOnFocus")(expandOnFocus)
+    if (!js.isUndefined(expandOnHover)) __obj.updateDynamic("expandOnHover")(expandOnHover)
+    if (focusManagement != null) __obj.updateDynamic("focusManagement")(focusManagement)
+    if (hostSelector != null) __obj.updateDynamic("hostSelector")(hostSelector)
+    __obj.asInstanceOf[Options]
+  }
+}
+

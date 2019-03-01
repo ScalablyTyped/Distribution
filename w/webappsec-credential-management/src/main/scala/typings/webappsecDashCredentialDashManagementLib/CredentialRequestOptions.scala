@@ -41,3 +41,24 @@ trait CredentialRequestOptions extends js.Object {
   var unmediated: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CredentialRequestOptions {
+  @scala.inline
+  def apply(
+    federated: FederatedCredentialRequestOptions = null,
+    mediation: CredentialMediationRequirement = null,
+    password: js.UndefOr[scala.Boolean] = js.undefined,
+    publicKey: PublicKeyCredentialRequestOptions = null,
+    signal: stdLib.AbortSignal = null,
+    unmediated: js.UndefOr[scala.Boolean] = js.undefined
+  ): CredentialRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (federated != null) __obj.updateDynamic("federated")(federated)
+    if (mediation != null) __obj.updateDynamic("mediation")(mediation)
+    if (!js.isUndefined(password)) __obj.updateDynamic("password")(password)
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
+    if (signal != null) __obj.updateDynamic("signal")(signal)
+    if (!js.isUndefined(unmediated)) __obj.updateDynamic("unmediated")(unmediated)
+    __obj.asInstanceOf[CredentialRequestOptions]
+  }
+}
+

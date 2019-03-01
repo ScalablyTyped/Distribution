@@ -9,3 +9,12 @@ trait IKeypadPressedEventArgs extends js.Object {
   var telephonyKey: TelephonyKey
 }
 
+object IKeypadPressedEventArgs {
+  @scala.inline
+  def apply(telephonyKey: TelephonyKey): IKeypadPressedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("telephonyKey")(telephonyKey)
+    __obj.asInstanceOf[IKeypadPressedEventArgs]
+  }
+}
+

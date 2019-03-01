@@ -56,3 +56,28 @@ trait Timings extends js.Object {
   var wait_FTimings: scala.Double
 }
 
+object Timings {
+  @scala.inline
+  def apply(
+    receive: scala.Double,
+    wait: scala.Double,
+    blocked: scala.Int | scala.Double = null,
+    comment: java.lang.String = null,
+    connect: scala.Int | scala.Double = null,
+    dns: scala.Int | scala.Double = null,
+    send: scala.Int | scala.Double = null,
+    ssl: scala.Int | scala.Double = null
+  ): Timings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("receive")(receive)
+    __obj.updateDynamic("wait")(wait)
+    if (blocked != null) __obj.updateDynamic("blocked")(blocked.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
+    if (dns != null) __obj.updateDynamic("dns")(dns.asInstanceOf[js.Any])
+    if (send != null) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])
+    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Timings]
+  }
+}
+

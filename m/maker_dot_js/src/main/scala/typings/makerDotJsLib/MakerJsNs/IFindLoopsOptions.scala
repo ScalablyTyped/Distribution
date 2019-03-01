@@ -15,3 +15,16 @@ trait IFindLoopsOptions extends IPointMatchOptions {
   var removeFromOriginal: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IFindLoopsOptions {
+  @scala.inline
+  def apply(
+    pointMatchingDistance: scala.Int | scala.Double = null,
+    removeFromOriginal: js.UndefOr[scala.Boolean] = js.undefined
+  ): IFindLoopsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeFromOriginal)) __obj.updateDynamic("removeFromOriginal")(removeFromOriginal)
+    __obj.asInstanceOf[IFindLoopsOptions]
+  }
+}
+

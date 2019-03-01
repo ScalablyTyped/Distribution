@@ -13,3 +13,22 @@ trait Anon_Flags extends js.Object {
   var traceId: js.UndefOr[zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[java.lang.String]] = js.undefined
 }
 
+object Anon_Flags {
+  @scala.inline
+  def apply(
+    flags: scala.Int | scala.Double = null,
+    parentId: zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[java.lang.String] = null,
+    sampled: zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[scala.Boolean] = null,
+    spanId: java.lang.String = null,
+    traceId: zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[java.lang.String] = null
+  ): Anon_Flags = {
+    val __obj = js.Dynamic.literal()
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (sampled != null) __obj.updateDynamic("sampled")(sampled)
+    if (spanId != null) __obj.updateDynamic("spanId")(spanId)
+    if (traceId != null) __obj.updateDynamic("traceId")(traceId)
+    __obj.asInstanceOf[Anon_Flags]
+  }
+}
+

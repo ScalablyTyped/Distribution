@@ -16,3 +16,42 @@ trait FullMetadata extends UploadMetadata {
   var updated: java.lang.String
 }
 
+object FullMetadata {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String,
+    fullPath: java.lang.String,
+    generation: java.lang.String,
+    metageneration: java.lang.String,
+    name: java.lang.String,
+    size: scala.Double,
+    timeCreated: java.lang.String,
+    updated: java.lang.String,
+    cacheControl: java.lang.String = null,
+    contentDisposition: java.lang.String = null,
+    contentEncoding: java.lang.String = null,
+    contentLanguage: java.lang.String = null,
+    contentType: java.lang.String = null,
+    customMetadata: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    md5Hash: java.lang.String = null
+  ): FullMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucket")(bucket)
+    __obj.updateDynamic("fullPath")(fullPath)
+    __obj.updateDynamic("generation")(generation)
+    __obj.updateDynamic("metageneration")(metageneration)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("timeCreated")(timeCreated)
+    __obj.updateDynamic("updated")(updated)
+    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)
+    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition)
+    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)
+    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (customMetadata != null) __obj.updateDynamic("customMetadata")(customMetadata)
+    if (md5Hash != null) __obj.updateDynamic("md5Hash")(md5Hash)
+    __obj.asInstanceOf[FullMetadata]
+  }
+}
+

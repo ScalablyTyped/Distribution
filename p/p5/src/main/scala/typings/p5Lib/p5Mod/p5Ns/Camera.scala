@@ -68,3 +68,28 @@ trait Camera extends js.Object {
   def tilt(angle: scala.Double): scala.Unit
 }
 
+object Camera {
+  @scala.inline
+  def apply(
+    camera: js.Function0[scala.Unit],
+    lookAt: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    move: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    ortho: js.Function0[scala.Unit],
+    pan: js.Function1[scala.Double, scala.Unit],
+    perspective: js.Function0[scala.Unit],
+    setPosition: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    tilt: js.Function1[scala.Double, scala.Unit]
+  ): Camera = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("camera")(camera)
+    __obj.updateDynamic("lookAt")(lookAt)
+    __obj.updateDynamic("move")(move)
+    __obj.updateDynamic("ortho")(ortho)
+    __obj.updateDynamic("pan")(pan)
+    __obj.updateDynamic("perspective")(perspective)
+    __obj.updateDynamic("setPosition")(setPosition)
+    __obj.updateDynamic("tilt")(tilt)
+    __obj.asInstanceOf[Camera]
+  }
+}
+

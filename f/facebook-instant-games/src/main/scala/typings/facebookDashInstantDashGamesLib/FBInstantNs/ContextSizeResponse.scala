@@ -14,3 +14,18 @@ trait ContextSizeResponse extends js.Object {
   var minSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ContextSizeResponse {
+  @scala.inline
+  def apply(
+    answer: scala.Boolean,
+    maxSize: scala.Int | scala.Double = null,
+    minSize: scala.Int | scala.Double = null
+  ): ContextSizeResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("answer")(answer)
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContextSizeResponse]
+  }
+}
+

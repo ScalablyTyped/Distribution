@@ -30,3 +30,24 @@ trait ApplicationPolicy extends js.Object {
   var permissionGrants: js.UndefOr[js.Array[PermissionGrant]] = js.undefined
 }
 
+object ApplicationPolicy {
+  @scala.inline
+  def apply(
+    defaultPermissionPolicy: java.lang.String = null,
+    installType: java.lang.String = null,
+    lockTaskAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    managedConfiguration: stdLib.Record[java.lang.String, _] = null,
+    packageName: java.lang.String = null,
+    permissionGrants: js.Array[PermissionGrant] = null
+  ): ApplicationPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (defaultPermissionPolicy != null) __obj.updateDynamic("defaultPermissionPolicy")(defaultPermissionPolicy)
+    if (installType != null) __obj.updateDynamic("installType")(installType)
+    if (!js.isUndefined(lockTaskAllowed)) __obj.updateDynamic("lockTaskAllowed")(lockTaskAllowed)
+    if (managedConfiguration != null) __obj.updateDynamic("managedConfiguration")(managedConfiguration)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
+    if (permissionGrants != null) __obj.updateDynamic("permissionGrants")(permissionGrants)
+    __obj.asInstanceOf[ApplicationPolicy]
+  }
+}
+

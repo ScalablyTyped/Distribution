@@ -118,3 +118,77 @@ trait GenerateSWOptions extends CommonOptions {
   var skipWaiting: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GenerateSWOptions {
+  @scala.inline
+  def apply(
+    cacheId: java.lang.String = null,
+    chunks: js.Array[java.lang.String] = null,
+    clientsClaim: js.UndefOr[scala.Boolean] = js.undefined,
+    directoryIndex: java.lang.String = null,
+    dontCacheBustUrlsMatching: stdLib.RegExp = null,
+    exclude: js.Array[java.lang.String | stdLib.RegExp] = null,
+    excludeChunks: js.Array[java.lang.String] = null,
+    globDirectory: java.lang.String = null,
+    globFollow: js.UndefOr[scala.Boolean] = js.undefined,
+    globIgnores: js.Array[java.lang.String] = null,
+    globPatterns: js.Array[java.lang.String] = null,
+    globStrict: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreUrlParametersMatching: js.Array[stdLib.RegExp] = null,
+    importScripts: js.Array[java.lang.String] = null,
+    importWorkboxFrom: workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.cdn | workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.local | workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.disabled = null,
+    importsDirectory: java.lang.String = null,
+    include: js.Array[java.lang.String | stdLib.RegExp] = null,
+    manifestTransforms: js.Array[
+      js.Function1[
+        /* originalManifest */ js.Array[ManifestEntry], 
+        workboxDashWebpackDashPluginLib.Anon_Manifest
+      ]
+    ] = null,
+    maximumFileSizeToCacheInBytes: scala.Int | scala.Double = null,
+    modifyUrlPrefix: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    navigateFallback: java.lang.String = null,
+    navigateFallbackBlacklist: js.Array[stdLib.RegExp] = null,
+    navigateFallbackWhitelist: js.Array[stdLib.RegExp] = null,
+    offlineGoogleAnalytics: js.UndefOr[scala.Boolean] = js.undefined,
+    precacheManifestFilename: java.lang.String = null,
+    runtimeCaching: js.Array[RuntimeCacheRule] = null,
+    skipWaiting: js.UndefOr[scala.Boolean] = js.undefined,
+    swDest: java.lang.String = null,
+    templatedUrls: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] = null,
+    test: js.Array[java.lang.String | stdLib.RegExp] = null
+  ): GenerateSWOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cacheId != null) __obj.updateDynamic("cacheId")(cacheId)
+    if (chunks != null) __obj.updateDynamic("chunks")(chunks)
+    if (!js.isUndefined(clientsClaim)) __obj.updateDynamic("clientsClaim")(clientsClaim)
+    if (directoryIndex != null) __obj.updateDynamic("directoryIndex")(directoryIndex)
+    if (dontCacheBustUrlsMatching != null) __obj.updateDynamic("dontCacheBustUrlsMatching")(dontCacheBustUrlsMatching)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (excludeChunks != null) __obj.updateDynamic("excludeChunks")(excludeChunks)
+    if (globDirectory != null) __obj.updateDynamic("globDirectory")(globDirectory)
+    if (!js.isUndefined(globFollow)) __obj.updateDynamic("globFollow")(globFollow)
+    if (globIgnores != null) __obj.updateDynamic("globIgnores")(globIgnores)
+    if (globPatterns != null) __obj.updateDynamic("globPatterns")(globPatterns)
+    if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict)
+    if (ignoreUrlParametersMatching != null) __obj.updateDynamic("ignoreUrlParametersMatching")(ignoreUrlParametersMatching)
+    if (importScripts != null) __obj.updateDynamic("importScripts")(importScripts)
+    if (importWorkboxFrom != null) __obj.updateDynamic("importWorkboxFrom")(importWorkboxFrom.asInstanceOf[js.Any])
+    if (importsDirectory != null) __obj.updateDynamic("importsDirectory")(importsDirectory)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (manifestTransforms != null) __obj.updateDynamic("manifestTransforms")(manifestTransforms)
+    if (maximumFileSizeToCacheInBytes != null) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.asInstanceOf[js.Any])
+    if (modifyUrlPrefix != null) __obj.updateDynamic("modifyUrlPrefix")(modifyUrlPrefix)
+    if (navigateFallback != null) __obj.updateDynamic("navigateFallback")(navigateFallback)
+    if (navigateFallbackBlacklist != null) __obj.updateDynamic("navigateFallbackBlacklist")(navigateFallbackBlacklist)
+    if (navigateFallbackWhitelist != null) __obj.updateDynamic("navigateFallbackWhitelist")(navigateFallbackWhitelist)
+    if (!js.isUndefined(offlineGoogleAnalytics)) __obj.updateDynamic("offlineGoogleAnalytics")(offlineGoogleAnalytics)
+    if (precacheManifestFilename != null) __obj.updateDynamic("precacheManifestFilename")(precacheManifestFilename)
+    if (runtimeCaching != null) __obj.updateDynamic("runtimeCaching")(runtimeCaching)
+    if (!js.isUndefined(skipWaiting)) __obj.updateDynamic("skipWaiting")(skipWaiting)
+    if (swDest != null) __obj.updateDynamic("swDest")(swDest)
+    if (templatedUrls != null) __obj.updateDynamic("templatedUrls")(templatedUrls)
+    if (test != null) __obj.updateDynamic("test")(test)
+    __obj.asInstanceOf[GenerateSWOptions]
+  }
+}
+

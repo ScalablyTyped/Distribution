@@ -42,3 +42,28 @@ trait RetryConfig extends js.Object {
   var statusCodesToRetry: js.UndefOr[js.Array[js.Array[scala.Double]]] = js.undefined
 }
 
+object RetryConfig {
+  @scala.inline
+  def apply(
+    currentRetryAttempt: scala.Int | scala.Double = null,
+    httpMethodsToRetry: js.Array[java.lang.String] = null,
+    noResponseRetries: scala.Int | scala.Double = null,
+    onRetryAttempt: js.Function1[/* err */ GaxiosError[_], scala.Unit] = null,
+    retry: scala.Int | scala.Double = null,
+    retryDelay: scala.Int | scala.Double = null,
+    shouldRetry: js.Function1[/* err */ GaxiosError[_], scala.Boolean] = null,
+    statusCodesToRetry: js.Array[js.Array[scala.Double]] = null
+  ): RetryConfig = {
+    val __obj = js.Dynamic.literal()
+    if (currentRetryAttempt != null) __obj.updateDynamic("currentRetryAttempt")(currentRetryAttempt.asInstanceOf[js.Any])
+    if (httpMethodsToRetry != null) __obj.updateDynamic("httpMethodsToRetry")(httpMethodsToRetry)
+    if (noResponseRetries != null) __obj.updateDynamic("noResponseRetries")(noResponseRetries.asInstanceOf[js.Any])
+    if (onRetryAttempt != null) __obj.updateDynamic("onRetryAttempt")(onRetryAttempt)
+    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
+    if (retryDelay != null) __obj.updateDynamic("retryDelay")(retryDelay.asInstanceOf[js.Any])
+    if (shouldRetry != null) __obj.updateDynamic("shouldRetry")(shouldRetry)
+    if (statusCodesToRetry != null) __obj.updateDynamic("statusCodesToRetry")(statusCodesToRetry)
+    __obj.asInstanceOf[RetryConfig]
+  }
+}
+

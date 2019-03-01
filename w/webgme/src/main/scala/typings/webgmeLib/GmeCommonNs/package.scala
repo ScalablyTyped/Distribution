@@ -18,7 +18,6 @@ package object GmeCommonNs {
   type ContentString = java.lang.String
   type CrosscutsInfo = Registry
   type DataObject = webgmeLib.CoreNs.Node
-  type DefObject = DefStringObject | DefIntegerObject | DefFloatObject | DefBoolObject | DefAssetObject
   type ErrorOnlyCallback = js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
   type ErrorStr = java.lang.String
   type ISO8601 = java.lang.String

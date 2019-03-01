@@ -96,3 +96,40 @@ trait Options extends js.Object {
   var validateFunc: js.UndefOr[ValidateFunction] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    password: java.lang.String,
+    appendNext: scala.Boolean | java.lang.String = null,
+    clearInvalid: js.UndefOr[scala.Boolean] = js.undefined,
+    cookie: java.lang.String = null,
+    domain: java.lang.String = null,
+    isHttpOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    isSameSite: hapiDashAuthDashCookieLib.hapiDashAuthDashCookieLibNumbers.`false` | hapiDashAuthDashCookieLib.hapiDashAuthDashCookieLibStrings.Strict | hapiDashAuthDashCookieLib.hapiDashAuthDashCookieLibStrings.Lax = null,
+    isSecure: js.UndefOr[scala.Boolean] = js.undefined,
+    keepAlive: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    redirectTo: java.lang.String | RedirectToFunction = null,
+    requestDecoratorName: java.lang.String = null,
+    ttl: scala.Int | scala.Double = null,
+    validateFunc: ValidateFunction = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("password")(password)
+    if (appendNext != null) __obj.updateDynamic("appendNext")(appendNext.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearInvalid)) __obj.updateDynamic("clearInvalid")(clearInvalid)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (!js.isUndefined(isHttpOnly)) __obj.updateDynamic("isHttpOnly")(isHttpOnly)
+    if (isSameSite != null) __obj.updateDynamic("isSameSite")(isSameSite.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSecure)) __obj.updateDynamic("isSecure")(isSecure)
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
+    if (requestDecoratorName != null) __obj.updateDynamic("requestDecoratorName")(requestDecoratorName)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (validateFunc != null) __obj.updateDynamic("validateFunc")(validateFunc)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -221,3 +221,127 @@ trait Options
   var zoomEl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    addCaptionHTMLFn: js.Function3[
+      /* item */ Item, 
+      /* captionEl */ stdLib.HTMLElement, 
+      /* isFake */ scala.Boolean, 
+      scala.Boolean
+    ] = null,
+    allowNoPanText: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowEl: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowKeys: js.UndefOr[scala.Boolean] = js.undefined,
+    barsSize: photoswipeLib.Anon_Bottom = null,
+    bgOpacity: scala.Int | scala.Double = null,
+    captionEl: js.UndefOr[scala.Boolean] = js.undefined,
+    clickToCloseNonZoomable: js.UndefOr[scala.Boolean] = js.undefined,
+    closeEl: js.UndefOr[scala.Boolean] = js.undefined,
+    closeElClasses: js.Array[java.lang.String] = null,
+    closeOnScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnVerticalDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    counterEl: js.UndefOr[scala.Boolean] = js.undefined,
+    errorMsg: java.lang.String = null,
+    escKey: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: js.UndefOr[scala.Boolean] = js.undefined,
+    fullscreenEl: js.UndefOr[scala.Boolean] = js.undefined,
+    galleryUID: scala.Int | scala.Double = null,
+    getDoubleTapZoom: js.Function2[
+      /* isMouseClick */ scala.Boolean, 
+      /* item */ photoswipeLib.photoswipeMod.PhotoSwipeNs.Item, 
+      scala.Double
+    ] = null,
+    getImageURLForShare: js.Function1[/* shareButtonData */ ShareButtonData, java.lang.String] = null,
+    getNumItemsFn: js.Function0[scala.Double] = null,
+    getPageURLForShare: js.Function1[/* shareButtonData */ ShareButtonData, java.lang.String] = null,
+    getTextForShare: js.Function1[/* shareButtonData */ ShareButtonData, java.lang.String] = null,
+    getThumbBoundsFn: js.Function1[/* index */ scala.Double, photoswipeLib.Anon_W] = null,
+    hideAnimationDuration: scala.Int | scala.Double = null,
+    history: js.UndefOr[scala.Boolean] = js.undefined,
+    index: scala.Int | scala.Double = null,
+    indexIndicatorSep: java.lang.String = null,
+    isClickableElement: js.Function1[/* el */ stdLib.HTMLElement, scala.Boolean] = null,
+    loadingIndicatorDelay: scala.Int | scala.Double = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    mainClass: java.lang.String = null,
+    mainScrollEndFriction: scala.Int | scala.Double = null,
+    maxSpreadZoom: scala.Int | scala.Double = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseUsed: js.UndefOr[scala.Boolean] = js.undefined,
+    panEndFriction: scala.Int | scala.Double = null,
+    parseShareButtonOut: js.Function2[
+      /* shareButtonData */ ShareButtonData, 
+      /* shareButtonOut */ java.lang.String, 
+      java.lang.String
+    ] = null,
+    pinchToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    preload: js.Array[scala.Double] = null,
+    preloaderEl: js.UndefOr[scala.Boolean] = js.undefined,
+    shareButtons: js.Array[ShareButtonData] = null,
+    shareEl: js.UndefOr[scala.Boolean] = js.undefined,
+    showAnimationDuration: scala.Int | scala.Double = null,
+    showHideOpacity: js.UndefOr[scala.Boolean] = js.undefined,
+    spacing: scala.Int | scala.Double = null,
+    tapToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    tapToToggleControls: js.UndefOr[scala.Boolean] = js.undefined,
+    timeToIdle: scala.Int | scala.Double = null,
+    timeToIdleOutside: scala.Int | scala.Double = null,
+    zoomEl: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (addCaptionHTMLFn != null) __obj.updateDynamic("addCaptionHTMLFn")(addCaptionHTMLFn)
+    if (!js.isUndefined(allowNoPanText)) __obj.updateDynamic("allowNoPanText")(allowNoPanText)
+    if (!js.isUndefined(arrowEl)) __obj.updateDynamic("arrowEl")(arrowEl)
+    if (!js.isUndefined(arrowKeys)) __obj.updateDynamic("arrowKeys")(arrowKeys)
+    if (barsSize != null) __obj.updateDynamic("barsSize")(barsSize)
+    if (bgOpacity != null) __obj.updateDynamic("bgOpacity")(bgOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(captionEl)) __obj.updateDynamic("captionEl")(captionEl)
+    if (!js.isUndefined(clickToCloseNonZoomable)) __obj.updateDynamic("clickToCloseNonZoomable")(clickToCloseNonZoomable)
+    if (!js.isUndefined(closeEl)) __obj.updateDynamic("closeEl")(closeEl)
+    if (closeElClasses != null) __obj.updateDynamic("closeElClasses")(closeElClasses)
+    if (!js.isUndefined(closeOnScroll)) __obj.updateDynamic("closeOnScroll")(closeOnScroll)
+    if (!js.isUndefined(closeOnVerticalDrag)) __obj.updateDynamic("closeOnVerticalDrag")(closeOnVerticalDrag)
+    if (!js.isUndefined(counterEl)) __obj.updateDynamic("counterEl")(counterEl)
+    if (errorMsg != null) __obj.updateDynamic("errorMsg")(errorMsg)
+    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey)
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
+    if (!js.isUndefined(fullscreenEl)) __obj.updateDynamic("fullscreenEl")(fullscreenEl)
+    if (galleryUID != null) __obj.updateDynamic("galleryUID")(galleryUID.asInstanceOf[js.Any])
+    if (getDoubleTapZoom != null) __obj.updateDynamic("getDoubleTapZoom")(getDoubleTapZoom)
+    if (getImageURLForShare != null) __obj.updateDynamic("getImageURLForShare")(getImageURLForShare)
+    if (getNumItemsFn != null) __obj.updateDynamic("getNumItemsFn")(getNumItemsFn)
+    if (getPageURLForShare != null) __obj.updateDynamic("getPageURLForShare")(getPageURLForShare)
+    if (getTextForShare != null) __obj.updateDynamic("getTextForShare")(getTextForShare)
+    if (getThumbBoundsFn != null) __obj.updateDynamic("getThumbBoundsFn")(getThumbBoundsFn)
+    if (hideAnimationDuration != null) __obj.updateDynamic("hideAnimationDuration")(hideAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (indexIndicatorSep != null) __obj.updateDynamic("indexIndicatorSep")(indexIndicatorSep)
+    if (isClickableElement != null) __obj.updateDynamic("isClickableElement")(isClickableElement)
+    if (loadingIndicatorDelay != null) __obj.updateDynamic("loadingIndicatorDelay")(loadingIndicatorDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass)
+    if (mainScrollEndFriction != null) __obj.updateDynamic("mainScrollEndFriction")(mainScrollEndFriction.asInstanceOf[js.Any])
+    if (maxSpreadZoom != null) __obj.updateDynamic("maxSpreadZoom")(maxSpreadZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (!js.isUndefined(mouseUsed)) __obj.updateDynamic("mouseUsed")(mouseUsed)
+    if (panEndFriction != null) __obj.updateDynamic("panEndFriction")(panEndFriction.asInstanceOf[js.Any])
+    if (parseShareButtonOut != null) __obj.updateDynamic("parseShareButtonOut")(parseShareButtonOut)
+    if (!js.isUndefined(pinchToClose)) __obj.updateDynamic("pinchToClose")(pinchToClose)
+    if (preload != null) __obj.updateDynamic("preload")(preload)
+    if (!js.isUndefined(preloaderEl)) __obj.updateDynamic("preloaderEl")(preloaderEl)
+    if (shareButtons != null) __obj.updateDynamic("shareButtons")(shareButtons)
+    if (!js.isUndefined(shareEl)) __obj.updateDynamic("shareEl")(shareEl)
+    if (showAnimationDuration != null) __obj.updateDynamic("showAnimationDuration")(showAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHideOpacity)) __obj.updateDynamic("showHideOpacity")(showHideOpacity)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapToClose)) __obj.updateDynamic("tapToClose")(tapToClose)
+    if (!js.isUndefined(tapToToggleControls)) __obj.updateDynamic("tapToToggleControls")(tapToToggleControls)
+    if (timeToIdle != null) __obj.updateDynamic("timeToIdle")(timeToIdle.asInstanceOf[js.Any])
+    if (timeToIdleOutside != null) __obj.updateDynamic("timeToIdleOutside")(timeToIdleOutside.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEl)) __obj.updateDynamic("zoomEl")(zoomEl)
+    __obj.asInstanceOf[Options]
+  }
+}
+

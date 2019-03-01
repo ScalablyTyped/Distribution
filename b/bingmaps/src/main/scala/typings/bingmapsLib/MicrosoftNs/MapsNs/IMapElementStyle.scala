@@ -32,3 +32,24 @@ trait IMapElementStyle extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IMapElementStyle {
+  @scala.inline
+  def apply(
+    fillColor: java.lang.String = null,
+    labelColor: java.lang.String = null,
+    labelOutlineColor: java.lang.String = null,
+    labelVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    strokeColor: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): IMapElementStyle = {
+    val __obj = js.Dynamic.literal()
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
+    if (labelOutlineColor != null) __obj.updateDynamic("labelOutlineColor")(labelOutlineColor)
+    if (!js.isUndefined(labelVisible)) __obj.updateDynamic("labelVisible")(labelVisible)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[IMapElementStyle]
+  }
+}
+

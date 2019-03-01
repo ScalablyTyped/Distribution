@@ -28,3 +28,22 @@ trait AuthenticateParameters extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AuthenticateParameters {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    failureCallback: js.Function1[/* reason */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    height: scala.Int | scala.Double = null,
+    successCallback: js.Function1[/* result */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    width: scala.Int | scala.Double = null
+  ): AuthenticateParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (failureCallback != null) __obj.updateDynamic("failureCallback")(failureCallback)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthenticateParameters]
+  }
+}
+

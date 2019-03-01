@@ -40,3 +40,76 @@ trait i18n extends js.Object {
   def timeFormatStr(date: js.Any): java.lang.String
 }
 
+object i18n {
+  @scala.inline
+  def apply(
+    calendar: js.Any,
+    controls: js.Any,
+    dateFormat: java.lang.String,
+    dateFormatDate: js.Function1[java.lang.String, js.Any],
+    dateFormatStr: js.Function1[js.Any, java.lang.String],
+    decimalDelimiter: java.lang.String,
+    decimalSize: scala.Double,
+    fileSize: js.Array[_],
+    fullDateFormat: java.lang.String,
+    fullDateFormatDate: js.Function1[java.lang.String, js.Any],
+    fullDateFormatStr: js.Function1[Date, java.lang.String],
+    groupDelimiter: java.lang.String,
+    groupSize: scala.Double,
+    intFormat: js.Function1[scala.Double, java.lang.String],
+    locales: js.Any,
+    longDateFormat: java.lang.String,
+    longDateFormatDate: js.Function1[java.lang.String, js.Any],
+    longDateFormatStr: js.Function1[js.Any, java.lang.String],
+    numberFormat: js.Function1[scala.Double, java.lang.String],
+    parseFormat: java.lang.String,
+    parseFormatDate: js.Function1[java.lang.String, js.Any],
+    parseFormatStr: js.Function1[js.Any, java.lang.String],
+    parseTimeFormat: java.lang.String,
+    parseTimeFormatDate: js.Function1[java.lang.String, js.Any],
+    parseTimeFormatStr: js.Function1[js.Any, java.lang.String],
+    price: java.lang.String,
+    priceFormat: js.Function1[scala.Double, java.lang.String],
+    priceSettings: js.Any,
+    setLocale: js.Function1[java.lang.String, scala.Unit],
+    timeFormat: java.lang.String,
+    timeFormatDate: js.Function1[java.lang.String, js.Any],
+    timeFormatStr: js.Function1[js.Any, java.lang.String]
+  ): i18n = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calendar")(calendar)
+    __obj.updateDynamic("controls")(controls)
+    __obj.updateDynamic("dateFormat")(dateFormat)
+    __obj.updateDynamic("dateFormatDate")(dateFormatDate)
+    __obj.updateDynamic("dateFormatStr")(dateFormatStr)
+    __obj.updateDynamic("decimalDelimiter")(decimalDelimiter)
+    __obj.updateDynamic("decimalSize")(decimalSize)
+    __obj.updateDynamic("fileSize")(fileSize)
+    __obj.updateDynamic("fullDateFormat")(fullDateFormat)
+    __obj.updateDynamic("fullDateFormatDate")(fullDateFormatDate)
+    __obj.updateDynamic("fullDateFormatStr")(fullDateFormatStr)
+    __obj.updateDynamic("groupDelimiter")(groupDelimiter)
+    __obj.updateDynamic("groupSize")(groupSize)
+    __obj.updateDynamic("intFormat")(intFormat)
+    __obj.updateDynamic("locales")(locales)
+    __obj.updateDynamic("longDateFormat")(longDateFormat)
+    __obj.updateDynamic("longDateFormatDate")(longDateFormatDate)
+    __obj.updateDynamic("longDateFormatStr")(longDateFormatStr)
+    __obj.updateDynamic("numberFormat")(numberFormat)
+    __obj.updateDynamic("parseFormat")(parseFormat)
+    __obj.updateDynamic("parseFormatDate")(parseFormatDate)
+    __obj.updateDynamic("parseFormatStr")(parseFormatStr)
+    __obj.updateDynamic("parseTimeFormat")(parseTimeFormat)
+    __obj.updateDynamic("parseTimeFormatDate")(parseTimeFormatDate)
+    __obj.updateDynamic("parseTimeFormatStr")(parseTimeFormatStr)
+    __obj.updateDynamic("price")(price)
+    __obj.updateDynamic("priceFormat")(priceFormat)
+    __obj.updateDynamic("priceSettings")(priceSettings)
+    __obj.updateDynamic("setLocale")(setLocale)
+    __obj.updateDynamic("timeFormat")(timeFormat)
+    __obj.updateDynamic("timeFormatDate")(timeFormatDate)
+    __obj.updateDynamic("timeFormatStr")(timeFormatStr)
+    __obj.asInstanceOf[i18n]
+  }
+}
+

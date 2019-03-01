@@ -139,3 +139,54 @@ trait ChartLegendOptions extends js.Object {
   var verticalAlign: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChartLegendOptions {
+  @scala.inline
+  def apply(
+    cursor: java.lang.String = null,
+    dockInsidePlotArea: js.UndefOr[scala.Boolean] = js.undefined,
+    fontColor: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    horizontalAlign: java.lang.String = null,
+    itemMaxWidth: scala.Int | scala.Double = null,
+    itemTextFormatter: js.Function1[/* e */ js.UndefOr[canvasjsLib.Anon_Chart], java.lang.String] = null,
+    itemWidth: scala.Int | scala.Double = null,
+    itemWrap: js.UndefOr[scala.Boolean] = js.undefined,
+    itemclick: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    itemmousemove: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    itemmouseout: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    itemmouseover: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    markerMargin: scala.Int | scala.Double = null,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    reversed: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlign: java.lang.String = null
+  ): ChartLegendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (!js.isUndefined(dockInsidePlotArea)) __obj.updateDynamic("dockInsidePlotArea")(dockInsidePlotArea)
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (horizontalAlign != null) __obj.updateDynamic("horizontalAlign")(horizontalAlign)
+    if (itemMaxWidth != null) __obj.updateDynamic("itemMaxWidth")(itemMaxWidth.asInstanceOf[js.Any])
+    if (itemTextFormatter != null) __obj.updateDynamic("itemTextFormatter")(itemTextFormatter)
+    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(itemWrap)) __obj.updateDynamic("itemWrap")(itemWrap)
+    if (itemclick != null) __obj.updateDynamic("itemclick")(itemclick)
+    if (itemmousemove != null) __obj.updateDynamic("itemmousemove")(itemmousemove)
+    if (itemmouseout != null) __obj.updateDynamic("itemmouseout")(itemmouseout)
+    if (itemmouseover != null) __obj.updateDynamic("itemmouseover")(itemmouseover)
+    if (markerMargin != null) __obj.updateDynamic("markerMargin")(markerMargin.asInstanceOf[js.Any])
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    __obj.asInstanceOf[ChartLegendOptions]
+  }
+}
+

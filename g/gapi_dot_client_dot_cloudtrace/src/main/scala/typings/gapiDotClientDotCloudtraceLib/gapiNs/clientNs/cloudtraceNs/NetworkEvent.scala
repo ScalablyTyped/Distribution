@@ -25,3 +25,22 @@ trait NetworkEvent extends js.Object {
   var uncompressedMessageSize: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NetworkEvent {
+  @scala.inline
+  def apply(
+    compressedMessageSize: java.lang.String = null,
+    messageId: java.lang.String = null,
+    time: java.lang.String = null,
+    `type`: java.lang.String = null,
+    uncompressedMessageSize: java.lang.String = null
+  ): NetworkEvent = {
+    val __obj = js.Dynamic.literal()
+    if (compressedMessageSize != null) __obj.updateDynamic("compressedMessageSize")(compressedMessageSize)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (time != null) __obj.updateDynamic("time")(time)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (uncompressedMessageSize != null) __obj.updateDynamic("uncompressedMessageSize")(uncompressedMessageSize)
+    __obj.asInstanceOf[NetworkEvent]
+  }
+}
+

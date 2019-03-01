@@ -15,3 +15,20 @@ trait ToRelativeCalendarOptions extends js.Object {
   var unit: js.UndefOr[ToRelativeUnit] = js.undefined
 }
 
+object ToRelativeCalendarOptions {
+  @scala.inline
+  def apply(
+    base: DateTime = null,
+    locale: java.lang.String = null,
+    numberingSystem: java.lang.String = null,
+    unit: ToRelativeUnit = null
+  ): ToRelativeCalendarOptions = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (numberingSystem != null) __obj.updateDynamic("numberingSystem")(numberingSystem)
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[ToRelativeCalendarOptions]
+  }
+}
+

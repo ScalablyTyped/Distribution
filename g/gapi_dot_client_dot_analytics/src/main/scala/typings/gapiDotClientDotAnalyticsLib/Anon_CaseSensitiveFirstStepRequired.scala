@@ -18,3 +18,22 @@ trait Anon_CaseSensitiveFirstStepRequired extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_CaseSensitiveFirstStepRequired {
+  @scala.inline
+  def apply(
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    firstStepRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    matchType: java.lang.String = null,
+    steps: js.Array[Anon_NameNumber] = null,
+    url: java.lang.String = null
+  ): Anon_CaseSensitiveFirstStepRequired = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (!js.isUndefined(firstStepRequired)) __obj.updateDynamic("firstStepRequired")(firstStepRequired)
+    if (matchType != null) __obj.updateDynamic("matchType")(matchType)
+    if (steps != null) __obj.updateDynamic("steps")(steps)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_CaseSensitiveFirstStepRequired]
+  }
+}
+

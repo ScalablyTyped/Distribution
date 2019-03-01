@@ -13,3 +13,22 @@ trait Anon_Event
   var stopEvent: js.UndefOr[(js.Function1[/* event */ stdLib.Event, scala.Boolean]) | scala.Null] = js.undefined
 }
 
+object Anon_Event {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    key: java.lang.String = null,
+    marks: js.Array[prosemirrorDashModelLib.prosemirrorDashModelMod.Mark[_]] = null,
+    side: scala.Int | scala.Double = null,
+    stopEvent: js.Function1[/* event */ stdLib.Event, scala.Boolean] = null
+  ): Anon_Event = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (marks != null) __obj.updateDynamic("marks")(marks)
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (stopEvent != null) __obj.updateDynamic("stopEvent")(stopEvent)
+    __obj.asInstanceOf[Anon_Event]
+  }
+}
+

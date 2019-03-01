@@ -16,3 +16,12 @@ trait Anon_Cmd extends js.Object {
   var cmd: java.lang.String
 }
 
+object Anon_Cmd {
+  @scala.inline
+  def apply(cmd: java.lang.String): Anon_Cmd = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cmd")(cmd)
+    __obj.asInstanceOf[Anon_Cmd]
+  }
+}
+

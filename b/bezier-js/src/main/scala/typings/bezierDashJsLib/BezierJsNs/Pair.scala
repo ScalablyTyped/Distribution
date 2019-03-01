@@ -10,3 +10,13 @@ trait Pair extends js.Object {
   var right: Bezier
 }
 
+object Pair {
+  @scala.inline
+  def apply(left: Bezier, right: Bezier): Pair = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("right")(right)
+    __obj.asInstanceOf[Pair]
+  }
+}
+

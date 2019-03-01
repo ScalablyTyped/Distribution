@@ -10,3 +10,13 @@ trait AnimationActionOption extends js.Object {
   var transition: AnimationTransition
 }
 
+object AnimationActionOption {
+  @scala.inline
+  def apply(transformOrigin: java.lang.String, transition: AnimationTransition): AnimationActionOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transformOrigin")(transformOrigin)
+    __obj.updateDynamic("transition")(transition)
+    __obj.asInstanceOf[AnimationActionOption]
+  }
+}
+

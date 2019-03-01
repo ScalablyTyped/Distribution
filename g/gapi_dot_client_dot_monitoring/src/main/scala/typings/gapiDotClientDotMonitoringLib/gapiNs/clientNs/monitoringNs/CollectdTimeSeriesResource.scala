@@ -13,3 +13,17 @@ trait CollectdTimeSeriesResource extends js.Object {
   def create(request: gapiDotClientDotMonitoringLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CreateCollectdTimeSeriesResponse]
 }
 
+object CollectdTimeSeriesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreateCollectdTimeSeriesResponse]
+    ]
+  ): CollectdTimeSeriesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.asInstanceOf[CollectdTimeSeriesResource]
+  }
+}
+

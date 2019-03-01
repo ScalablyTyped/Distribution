@@ -55,3 +55,39 @@ trait XOptimizedStorage extends js.Object {
   def writeAndAttachToStream(xStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream): scala.Unit
 }
 
+object XOptimizedStorage {
+  @scala.inline
+  def apply(
+    attachToURL: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    copyElementDirectlyTo: js.Function3[java.lang.String, XOptimizedStorage, java.lang.String, scala.Unit],
+    copyStreamElementData: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream, 
+      scala.Unit
+    ],
+    getElementPropertyValue: js.Function2[java.lang.String, java.lang.String, js.Any],
+    insertRawNonEncrStreamElementDirect: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Unit
+    ],
+    insertStreamElementDirect: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    writeAndAttachToStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream, scala.Unit]
+  ): XOptimizedStorage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attachToURL")(attachToURL)
+    __obj.updateDynamic("copyElementDirectlyTo")(copyElementDirectlyTo)
+    __obj.updateDynamic("copyStreamElementData")(copyStreamElementData)
+    __obj.updateDynamic("getElementPropertyValue")(getElementPropertyValue)
+    __obj.updateDynamic("insertRawNonEncrStreamElementDirect")(insertRawNonEncrStreamElementDirect)
+    __obj.updateDynamic("insertStreamElementDirect")(insertStreamElementDirect)
+    __obj.updateDynamic("writeAndAttachToStream")(writeAndAttachToStream)
+    __obj.asInstanceOf[XOptimizedStorage]
+  }
+}
+

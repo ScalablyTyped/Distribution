@@ -20,3 +20,14 @@ trait SuiteEntryUpdateModel extends js.Object {
   var testCaseId: scala.Double
 }
 
+object SuiteEntryUpdateModel {
+  @scala.inline
+  def apply(childSuiteId: scala.Double, sequenceNumber: scala.Double, testCaseId: scala.Double): SuiteEntryUpdateModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("childSuiteId")(childSuiteId)
+    __obj.updateDynamic("sequenceNumber")(sequenceNumber)
+    __obj.updateDynamic("testCaseId")(testCaseId)
+    __obj.asInstanceOf[SuiteEntryUpdateModel]
+  }
+}
+

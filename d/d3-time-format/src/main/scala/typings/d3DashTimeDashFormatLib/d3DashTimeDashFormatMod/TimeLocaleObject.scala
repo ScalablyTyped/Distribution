@@ -93,3 +93,26 @@ trait TimeLocaleObject extends js.Object {
   def utcParse(specifier: java.lang.String): js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null]
 }
 
+object TimeLocaleObject {
+  @scala.inline
+  def apply(
+    format: js.Function1[java.lang.String, js.Function1[/* date */ stdLib.Date, java.lang.String]],
+    parse: js.Function1[
+      java.lang.String, 
+      js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null]
+    ],
+    utcFormat: js.Function1[java.lang.String, js.Function1[/* date */ stdLib.Date, java.lang.String]],
+    utcParse: js.Function1[
+      java.lang.String, 
+      js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null]
+    ]
+  ): TimeLocaleObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("utcFormat")(utcFormat)
+    __obj.updateDynamic("utcParse")(utcParse)
+    __obj.asInstanceOf[TimeLocaleObject]
+  }
+}
+

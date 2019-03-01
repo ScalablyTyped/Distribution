@@ -20,3 +20,16 @@ trait RuleOption extends js.Object {
   var forwardToReplicas: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RuleOption {
+  @scala.inline
+  def apply(
+    clearExistingRules: js.UndefOr[scala.Boolean] = js.undefined,
+    forwardToReplicas: js.UndefOr[scala.Boolean] = js.undefined
+  ): RuleOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clearExistingRules)) __obj.updateDynamic("clearExistingRules")(clearExistingRules)
+    if (!js.isUndefined(forwardToReplicas)) __obj.updateDynamic("forwardToReplicas")(forwardToReplicas)
+    __obj.asInstanceOf[RuleOption]
+  }
+}
+

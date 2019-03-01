@@ -38,3 +38,32 @@ trait CellSelectedEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellSelectedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cellIndex: scala.Int | scala.Double = null,
+    currentCell: js.Any = null,
+    data: js.Any = null,
+    model: js.Any = null,
+    previousRowCell: js.Any = null,
+    previousRowCellIndex: scala.Int | scala.Double = null,
+    selectedData: js.Any = null,
+    selectedRowCellIndex: js.Array[_] = null,
+    `type`: java.lang.String = null
+  ): CellSelectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (previousRowCell != null) __obj.updateDynamic("previousRowCell")(previousRowCell)
+    if (previousRowCellIndex != null) __obj.updateDynamic("previousRowCellIndex")(previousRowCellIndex.asInstanceOf[js.Any])
+    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
+    if (selectedRowCellIndex != null) __obj.updateDynamic("selectedRowCellIndex")(selectedRowCellIndex)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CellSelectedEventArgs]
+  }
+}
+

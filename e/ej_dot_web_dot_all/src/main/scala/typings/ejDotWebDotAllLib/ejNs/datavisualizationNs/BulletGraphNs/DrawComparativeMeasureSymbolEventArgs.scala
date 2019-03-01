@@ -20,3 +20,20 @@ trait DrawComparativeMeasureSymbolEventArgs extends js.Object {
   var targetElement: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
+object DrawComparativeMeasureSymbolEventArgs {
+  @scala.inline
+  def apply(
+    Object: js.Any = null,
+    Value: scala.Int | scala.Double = null,
+    scaleElement: stdLib.HTMLElement = null,
+    targetElement: stdLib.HTMLElement = null
+  ): DrawComparativeMeasureSymbolEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Object != null) __obj.updateDynamic("Object")(Object)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
+    __obj.asInstanceOf[DrawComparativeMeasureSymbolEventArgs]
+  }
+}
+

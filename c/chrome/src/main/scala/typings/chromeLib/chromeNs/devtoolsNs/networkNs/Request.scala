@@ -19,3 +19,17 @@ trait Request extends js.Object {
   ): scala.Unit
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    getContent: js.Function1[
+      js.Function2[/* content */ java.lang.String, /* encoding */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ]
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getContent")(getContent)
+    __obj.asInstanceOf[Request]
+  }
+}
+

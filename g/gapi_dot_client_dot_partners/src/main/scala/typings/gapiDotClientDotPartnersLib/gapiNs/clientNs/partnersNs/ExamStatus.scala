@@ -20,3 +20,24 @@ trait ExamStatus extends js.Object {
   var warning: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ExamStatus {
+  @scala.inline
+  def apply(
+    examType: java.lang.String = null,
+    expiration: java.lang.String = null,
+    lastPassed: java.lang.String = null,
+    passed: js.UndefOr[scala.Boolean] = js.undefined,
+    taken: java.lang.String = null,
+    warning: js.UndefOr[scala.Boolean] = js.undefined
+  ): ExamStatus = {
+    val __obj = js.Dynamic.literal()
+    if (examType != null) __obj.updateDynamic("examType")(examType)
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
+    if (lastPassed != null) __obj.updateDynamic("lastPassed")(lastPassed)
+    if (!js.isUndefined(passed)) __obj.updateDynamic("passed")(passed)
+    if (taken != null) __obj.updateDynamic("taken")(taken)
+    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[ExamStatus]
+  }
+}
+

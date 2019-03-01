@@ -13,3 +13,22 @@ trait RNFetchBlobWriteStream extends js.Object {
   def write(data: java.lang.String): js.Promise[scala.Unit]
 }
 
+object RNFetchBlobWriteStream {
+  @scala.inline
+  def apply(
+    append: scala.Boolean,
+    close: js.Function0[scala.Unit],
+    encoding: java.lang.String,
+    id: java.lang.String,
+    write: js.Function1[java.lang.String, js.Promise[scala.Unit]]
+  ): RNFetchBlobWriteStream = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("append")(append)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("encoding")(encoding)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[RNFetchBlobWriteStream]
+  }
+}
+

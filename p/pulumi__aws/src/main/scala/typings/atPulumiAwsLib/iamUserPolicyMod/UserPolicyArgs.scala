@@ -24,3 +24,20 @@ trait UserPolicyArgs extends js.Object {
   val user: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object UserPolicyArgs {
+  @scala.inline
+  def apply(
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamDocumentsMod.PolicyDocument],
+    user: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): UserPolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserPolicyArgs]
+  }
+}
+

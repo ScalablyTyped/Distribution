@@ -13,3 +13,22 @@ trait CameraRollFetchParams extends js.Object {
   var groupTypes: js.UndefOr[CameraRollGroupType] = js.undefined
 }
 
+object CameraRollFetchParams {
+  @scala.inline
+  def apply(
+    first: scala.Double,
+    after: java.lang.String = null,
+    assetType: CameraRollAssetType = null,
+    groupName: java.lang.String = null,
+    groupTypes: CameraRollGroupType = null
+  ): CameraRollFetchParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("first")(first)
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (assetType != null) __obj.updateDynamic("assetType")(assetType)
+    if (groupName != null) __obj.updateDynamic("groupName")(groupName)
+    if (groupTypes != null) __obj.updateDynamic("groupTypes")(groupTypes)
+    __obj.asInstanceOf[CameraRollFetchParams]
+  }
+}
+

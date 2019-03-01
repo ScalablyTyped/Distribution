@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object angularDashUiDashBootstrapLibStrings {
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.DatepickerMode
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.DatepickerMode
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.DatepickerMode
   
   @scala.inline
   def day: day = "day".asInstanceOf[day]

@@ -54,3 +54,34 @@ trait Fingerprint extends js.Object {
   def murmurhash3_32_gc(key: java.lang.String, seed: scala.Double): scala.Double
 }
 
+object Fingerprint {
+  @scala.inline
+  def apply(
+    get: js.Function0[scala.Double],
+    getCanvasFingerprint: js.Function0[java.lang.String],
+    getIEPluginsString: js.Function0[java.lang.String],
+    getPluginsString: js.Function0[java.lang.String],
+    getRegularPluginsString: js.Function0[java.lang.String],
+    getScreenResolution: js.Function0[js.Array[scala.Double]],
+    hasLocalStorage: js.Function0[scala.Boolean],
+    hasSessionStorage: js.Function0[scala.Boolean],
+    isCanvasSupported: js.Function0[scala.Boolean],
+    isIE: js.Function0[scala.Boolean],
+    murmurhash3_32_gc: js.Function2[java.lang.String, scala.Double, scala.Double]
+  ): Fingerprint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getCanvasFingerprint")(getCanvasFingerprint)
+    __obj.updateDynamic("getIEPluginsString")(getIEPluginsString)
+    __obj.updateDynamic("getPluginsString")(getPluginsString)
+    __obj.updateDynamic("getRegularPluginsString")(getRegularPluginsString)
+    __obj.updateDynamic("getScreenResolution")(getScreenResolution)
+    __obj.updateDynamic("hasLocalStorage")(hasLocalStorage)
+    __obj.updateDynamic("hasSessionStorage")(hasSessionStorage)
+    __obj.updateDynamic("isCanvasSupported")(isCanvasSupported)
+    __obj.updateDynamic("isIE")(isIE)
+    __obj.updateDynamic("murmurhash3_32_gc")(murmurhash3_32_gc)
+    __obj.asInstanceOf[Fingerprint]
+  }
+}
+

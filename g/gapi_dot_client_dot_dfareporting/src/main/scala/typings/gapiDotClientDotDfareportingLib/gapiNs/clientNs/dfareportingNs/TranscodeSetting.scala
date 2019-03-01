@@ -12,3 +12,13 @@ trait TranscodeSetting extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TranscodeSetting {
+  @scala.inline
+  def apply(enabledVideoFormats: js.Array[scala.Double] = null, kind: java.lang.String = null): TranscodeSetting = {
+    val __obj = js.Dynamic.literal()
+    if (enabledVideoFormats != null) __obj.updateDynamic("enabledVideoFormats")(enabledVideoFormats)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[TranscodeSetting]
+  }
+}
+

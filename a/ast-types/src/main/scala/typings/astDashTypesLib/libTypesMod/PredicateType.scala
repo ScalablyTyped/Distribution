@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait PredicateType[T] extends BaseType[T] {
+trait PredicateType[T]
+  extends BaseType[T]
+     with Type[T] {
   val kind: astDashTypesLib.astDashTypesLibStrings.PredicateType = js.native
   val name: java.lang.String = js.native
   def predicate(value: js.Any): scala.Boolean = js.native

@@ -24,3 +24,30 @@ trait Anon_Args extends js.Object {
   var textFormat: js.UndefOr[Anon_M with cliDashColorLib.cliDashColorMod.mNs.Format] = js.undefined
 }
 
+object Anon_Args {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] | (stdLib.Record[java.lang.String, _]) | java.lang.String,
+    callback: js.Function1[/* result */ java.lang.String, scala.Unit] = null,
+    console: nodeLib.Console with stdLib.Console = null,
+    error: js.Function1[/* message */ java.lang.String, scala.Unit] = null,
+    exit: js.Function1[/* code */ scala.Double, scala.Unit] = null,
+    fs: Anon_AccessAccessSync = null,
+    input: java.lang.String = null,
+    stdin: nodeLib.NodeJSNs.ReadStream = null,
+    textFormat: Anon_M with cliDashColorLib.cliDashColorMod.mNs.Format = null
+  ): Anon_Args = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (console != null) __obj.updateDynamic("console")(console)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (exit != null) __obj.updateDynamic("exit")(exit)
+    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (stdin != null) __obj.updateDynamic("stdin")(stdin)
+    if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat)
+    __obj.asInstanceOf[Anon_Args]
+  }
+}
+

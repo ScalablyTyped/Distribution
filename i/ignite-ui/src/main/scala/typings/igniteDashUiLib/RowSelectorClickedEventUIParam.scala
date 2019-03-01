@@ -36,3 +36,26 @@ trait RowSelectorClickedEventUIParam extends js.Object {
   var rowSelector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RowSelectorClickedEventUIParam {
+  @scala.inline
+  def apply(
+    fixedRow: java.lang.String = null,
+    grid: js.Any = null,
+    owner: js.Any = null,
+    row: java.lang.String = null,
+    rowIndex: scala.Int | scala.Double = null,
+    rowKey: java.lang.String = null,
+    rowSelector: java.lang.String = null
+  ): RowSelectorClickedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (fixedRow != null) __obj.updateDynamic("fixedRow")(fixedRow)
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
+    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector)
+    __obj.asInstanceOf[RowSelectorClickedEventUIParam]
+  }
+}
+

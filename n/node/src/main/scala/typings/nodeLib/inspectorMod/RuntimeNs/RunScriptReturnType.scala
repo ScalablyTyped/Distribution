@@ -16,3 +16,13 @@ trait RunScriptReturnType extends js.Object {
   var result: RemoteObject
 }
 
+object RunScriptReturnType {
+  @scala.inline
+  def apply(result: RemoteObject, exceptionDetails: ExceptionDetails = null): RunScriptReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
+    __obj.asInstanceOf[RunScriptReturnType]
+  }
+}
+

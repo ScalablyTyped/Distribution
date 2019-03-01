@@ -13,3 +13,22 @@ trait SparklineValueAxisItemNotes extends js.Object {
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SparklineValueAxisItemNotes {
+  @scala.inline
+  def apply(
+    data: js.Array[SparklineValueAxisItemNotesDataItem] = null,
+    icon: SparklineValueAxisItemNotesIcon = null,
+    label: SparklineValueAxisItemNotesLabel = null,
+    line: SparklineValueAxisItemNotesLine = null,
+    position: java.lang.String = null
+  ): SparklineValueAxisItemNotes = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[SparklineValueAxisItemNotes]
+  }
+}
+

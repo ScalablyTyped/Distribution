@@ -114,3 +114,60 @@ trait XColumnUpdate
   def updateTimestamp(x: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime): scala.Unit
 }
 
+object XColumnUpdate {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateBinaryStream: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Double, 
+      scala.Unit
+    ],
+    updateBoolean: js.Function1[scala.Boolean, scala.Unit],
+    updateByte: js.Function1[scala.Double, scala.Unit],
+    updateBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    updateCharacterStream: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Double, 
+      scala.Unit
+    ],
+    updateDate: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    updateDouble: js.Function1[scala.Double, scala.Unit],
+    updateFloat: js.Function1[scala.Double, scala.Unit],
+    updateInt: js.Function1[scala.Double, scala.Unit],
+    updateLong: js.Function1[scala.Double, scala.Unit],
+    updateNull: js.Function0[scala.Unit],
+    updateNumericObject: js.Function2[js.Any, scala.Double, scala.Unit],
+    updateObject: js.Function1[js.Any, scala.Unit],
+    updateShort: js.Function1[scala.Double, scala.Unit],
+    updateString: js.Function1[java.lang.String, scala.Unit],
+    updateTime: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
+    updateTimestamp: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, scala.Unit]
+  ): XColumnUpdate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("updateBinaryStream")(updateBinaryStream)
+    __obj.updateDynamic("updateBoolean")(updateBoolean)
+    __obj.updateDynamic("updateByte")(updateByte)
+    __obj.updateDynamic("updateBytes")(updateBytes)
+    __obj.updateDynamic("updateCharacterStream")(updateCharacterStream)
+    __obj.updateDynamic("updateDate")(updateDate)
+    __obj.updateDynamic("updateDouble")(updateDouble)
+    __obj.updateDynamic("updateFloat")(updateFloat)
+    __obj.updateDynamic("updateInt")(updateInt)
+    __obj.updateDynamic("updateLong")(updateLong)
+    __obj.updateDynamic("updateNull")(updateNull)
+    __obj.updateDynamic("updateNumericObject")(updateNumericObject)
+    __obj.updateDynamic("updateObject")(updateObject)
+    __obj.updateDynamic("updateShort")(updateShort)
+    __obj.updateDynamic("updateString")(updateString)
+    __obj.updateDynamic("updateTime")(updateTime)
+    __obj.updateDynamic("updateTimestamp")(updateTimestamp)
+    __obj.asInstanceOf[XColumnUpdate]
+  }
+}
+

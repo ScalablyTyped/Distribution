@@ -40,3 +40,27 @@ trait OperationsResource extends js.Object {
   def list(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
 }
 
+object OperationsResource {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
+    ]
+  ): OperationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[OperationsResource]
+  }
+}
+

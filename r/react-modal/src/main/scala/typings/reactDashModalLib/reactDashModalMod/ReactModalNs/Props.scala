@@ -60,3 +60,62 @@ trait Props extends js.Object {
   var testId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    isOpen: scala.Boolean,
+    appElement: reactLib.HTMLElement | js.Object = null,
+    aria: Aria = null,
+    ariaHideApp: js.UndefOr[scala.Boolean] = js.undefined,
+    bodyOpenClassName: java.lang.String = null,
+    className: java.lang.String | Classes = null,
+    closeTimeoutMS: scala.Int | scala.Double = null,
+    contentLabel: java.lang.String = null,
+    contentRef: js.Function1[/* instance */ reactLib.HTMLDivElement, scala.Unit] = null,
+    data: js.Any = null,
+    htmlOpenClassName: java.lang.String = null,
+    onAfterClose: js.Function0[scala.Unit] = null,
+    onAfterOpen: js.Function0[scala.Unit] = null,
+    onRequestClose: js.Function1[/* event */ reactLib.MouseEvent | reactLib.KeyboardEvent, scala.Unit] = null,
+    overlayClassName: java.lang.String | Classes = null,
+    overlayRef: js.Function1[/* instance */ reactLib.HTMLDivElement, scala.Unit] = null,
+    parentSelector: js.Function0[reactLib.HTMLElement] = null,
+    portalClassName: java.lang.String = null,
+    role: java.lang.String = null,
+    shouldCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldCloseOnOverlayClick: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldFocusAfterRender: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldReturnFocusAfterClose: js.UndefOr[scala.Boolean] = js.undefined,
+    style: Styles = null,
+    testId: java.lang.String = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isOpen")(isOpen)
+    if (appElement != null) __obj.updateDynamic("appElement")(appElement.asInstanceOf[js.Any])
+    if (aria != null) __obj.updateDynamic("aria")(aria)
+    if (!js.isUndefined(ariaHideApp)) __obj.updateDynamic("ariaHideApp")(ariaHideApp)
+    if (bodyOpenClassName != null) __obj.updateDynamic("bodyOpenClassName")(bodyOpenClassName)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (closeTimeoutMS != null) __obj.updateDynamic("closeTimeoutMS")(closeTimeoutMS.asInstanceOf[js.Any])
+    if (contentLabel != null) __obj.updateDynamic("contentLabel")(contentLabel)
+    if (contentRef != null) __obj.updateDynamic("contentRef")(contentRef)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (htmlOpenClassName != null) __obj.updateDynamic("htmlOpenClassName")(htmlOpenClassName)
+    if (onAfterClose != null) __obj.updateDynamic("onAfterClose")(onAfterClose)
+    if (onAfterOpen != null) __obj.updateDynamic("onAfterOpen")(onAfterOpen)
+    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(onRequestClose)
+    if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName.asInstanceOf[js.Any])
+    if (overlayRef != null) __obj.updateDynamic("overlayRef")(overlayRef)
+    if (parentSelector != null) __obj.updateDynamic("parentSelector")(parentSelector)
+    if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (!js.isUndefined(shouldCloseOnEsc)) __obj.updateDynamic("shouldCloseOnEsc")(shouldCloseOnEsc)
+    if (!js.isUndefined(shouldCloseOnOverlayClick)) __obj.updateDynamic("shouldCloseOnOverlayClick")(shouldCloseOnOverlayClick)
+    if (!js.isUndefined(shouldFocusAfterRender)) __obj.updateDynamic("shouldFocusAfterRender")(shouldFocusAfterRender)
+    if (!js.isUndefined(shouldReturnFocusAfterClose)) __obj.updateDynamic("shouldReturnFocusAfterClose")(shouldReturnFocusAfterClose)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (testId != null) __obj.updateDynamic("testId")(testId)
+    __obj.asInstanceOf[Props]
+  }
+}
+

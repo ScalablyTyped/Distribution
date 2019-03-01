@@ -10,3 +10,13 @@ trait Login extends js.Object {
   var user: User
 }
 
+object Login {
+  @scala.inline
+  def apply(token: java.lang.String, user: User): Login = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("token")(token)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[Login]
+  }
+}
+

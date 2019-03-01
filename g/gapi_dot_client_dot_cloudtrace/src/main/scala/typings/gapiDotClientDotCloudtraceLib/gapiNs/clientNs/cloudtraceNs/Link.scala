@@ -19,3 +19,20 @@ trait Link extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Link {
+  @scala.inline
+  def apply(
+    attributes: Attributes = null,
+    spanId: java.lang.String = null,
+    traceId: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Link = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (spanId != null) __obj.updateDynamic("spanId")(spanId)
+    if (traceId != null) __obj.updateDynamic("traceId")(traceId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Link]
+  }
+}
+

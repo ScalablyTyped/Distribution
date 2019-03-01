@@ -16,3 +16,28 @@ trait AttachmentCardNoPreviewOptions extends js.Object {
   def previewOnClick(event: PreviewClickEvent): scala.Unit
 }
 
+object AttachmentCardNoPreviewOptions {
+  @scala.inline
+  def apply(
+    buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor],
+    description: java.lang.String,
+    fileIconImageUrl: java.lang.String,
+    iconThumbnailUrl: java.lang.String,
+    previewOnClick: js.Function1[PreviewClickEvent, scala.Unit],
+    previewUrl: java.lang.String,
+    title: java.lang.String,
+    foldColor: java.lang.String = null
+  ): AttachmentCardNoPreviewOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buttons")(buttons)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("fileIconImageUrl")(fileIconImageUrl)
+    __obj.updateDynamic("iconThumbnailUrl")(iconThumbnailUrl)
+    __obj.updateDynamic("previewOnClick")(previewOnClick)
+    __obj.updateDynamic("previewUrl")(previewUrl)
+    __obj.updateDynamic("title")(title)
+    if (foldColor != null) __obj.updateDynamic("foldColor")(foldColor)
+    __obj.asInstanceOf[AttachmentCardNoPreviewOptions]
+  }
+}
+

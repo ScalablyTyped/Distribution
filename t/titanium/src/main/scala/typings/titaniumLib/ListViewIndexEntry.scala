@@ -19,3 +19,13 @@ trait ListViewIndexEntry extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListViewIndexEntry {
+  @scala.inline
+  def apply(index: scala.Int | scala.Double = null, title: java.lang.String = null): ListViewIndexEntry = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ListViewIndexEntry]
+  }
+}
+

@@ -14,3 +14,18 @@ trait GoogleCloudVideointelligenceV1beta1_LabelAnnotation extends js.Object {
   var locations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta1_LabelLocation]] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta1_LabelAnnotation {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    languageCode: java.lang.String = null,
+    locations: js.Array[GoogleCloudVideointelligenceV1beta1_LabelLocation] = null
+  ): GoogleCloudVideointelligenceV1beta1_LabelAnnotation = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_LabelAnnotation]
+  }
+}
+

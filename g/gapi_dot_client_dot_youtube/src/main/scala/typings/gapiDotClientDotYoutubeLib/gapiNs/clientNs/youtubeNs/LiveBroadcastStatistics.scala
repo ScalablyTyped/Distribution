@@ -20,3 +20,13 @@ trait LiveBroadcastStatistics extends js.Object {
   var totalChatCount: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LiveBroadcastStatistics {
+  @scala.inline
+  def apply(concurrentViewers: java.lang.String = null, totalChatCount: java.lang.String = null): LiveBroadcastStatistics = {
+    val __obj = js.Dynamic.literal()
+    if (concurrentViewers != null) __obj.updateDynamic("concurrentViewers")(concurrentViewers)
+    if (totalChatCount != null) __obj.updateDynamic("totalChatCount")(totalChatCount)
+    __obj.asInstanceOf[LiveBroadcastStatistics]
+  }
+}
+

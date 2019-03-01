@@ -168,3 +168,81 @@ trait IgPivotDataSelector
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgPivotDataSelector {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igPivotDataSelector
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    customMoveValidation: js.Function = null,
+    dataSelectorRendered: DataSelectorRenderedEvent = null,
+    dataSource: js.Any = null,
+    dataSourceInitialized: DataSourceInitializedEvent = null,
+    dataSourceOptions: IgPivotDataSelectorDataSourceOptions = null,
+    dataSourceUpdated: DataSourceUpdatedEvent = null,
+    deferUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    deferUpdateChanged: DeferUpdateChangedEvent = null,
+    disableColumnsDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    disableFiltersDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    disableMeasuresDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    disableRowsDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    drag: DragEvent = null,
+    dragAndDropSettings: IgPivotDataSelectorDragAndDropSettings = null,
+    dragStart: DragStartEvent = null,
+    dragStop: DragStopEvent = null,
+    dropDownParent: js.Any = null,
+    filterDropDownClosed: FilterDropDownClosedEvent = null,
+    filterDropDownClosing: FilterDropDownClosingEvent = null,
+    filterDropDownOk: FilterDropDownOkEvent = null,
+    filterDropDownOpened: FilterDropDownOpenedEvent = null,
+    filterDropDownOpening: FilterDropDownOpeningEvent = null,
+    filterMembersLoaded: FilterMembersLoadedEvent = null,
+    height: java.lang.String | scala.Double = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    metadataDropped: MetadataDroppedEvent = null,
+    metadataDropping: MetadataDroppingEvent = null,
+    metadataRemoved: MetadataRemovedEvent = null,
+    metadataRemoving: MetadataRemovingEvent = null,
+    regional: java.lang.String | js.Object = null,
+    width: java.lang.String | scala.Double = null
+  ): IgPivotDataSelector = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (customMoveValidation != null) __obj.updateDynamic("customMoveValidation")(customMoveValidation)
+    if (dataSelectorRendered != null) __obj.updateDynamic("dataSelectorRendered")(dataSelectorRendered)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceInitialized != null) __obj.updateDynamic("dataSourceInitialized")(dataSourceInitialized)
+    if (dataSourceOptions != null) __obj.updateDynamic("dataSourceOptions")(dataSourceOptions)
+    if (dataSourceUpdated != null) __obj.updateDynamic("dataSourceUpdated")(dataSourceUpdated)
+    if (!js.isUndefined(deferUpdate)) __obj.updateDynamic("deferUpdate")(deferUpdate)
+    if (deferUpdateChanged != null) __obj.updateDynamic("deferUpdateChanged")(deferUpdateChanged)
+    if (!js.isUndefined(disableColumnsDropArea)) __obj.updateDynamic("disableColumnsDropArea")(disableColumnsDropArea)
+    if (!js.isUndefined(disableFiltersDropArea)) __obj.updateDynamic("disableFiltersDropArea")(disableFiltersDropArea)
+    if (!js.isUndefined(disableMeasuresDropArea)) __obj.updateDynamic("disableMeasuresDropArea")(disableMeasuresDropArea)
+    if (!js.isUndefined(disableRowsDropArea)) __obj.updateDynamic("disableRowsDropArea")(disableRowsDropArea)
+    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
+    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
+    if (dropDownParent != null) __obj.updateDynamic("dropDownParent")(dropDownParent)
+    if (filterDropDownClosed != null) __obj.updateDynamic("filterDropDownClosed")(filterDropDownClosed)
+    if (filterDropDownClosing != null) __obj.updateDynamic("filterDropDownClosing")(filterDropDownClosing)
+    if (filterDropDownOk != null) __obj.updateDynamic("filterDropDownOk")(filterDropDownOk)
+    if (filterDropDownOpened != null) __obj.updateDynamic("filterDropDownOpened")(filterDropDownOpened)
+    if (filterDropDownOpening != null) __obj.updateDynamic("filterDropDownOpening")(filterDropDownOpening)
+    if (filterMembersLoaded != null) __obj.updateDynamic("filterMembersLoaded")(filterMembersLoaded)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (metadataDropped != null) __obj.updateDynamic("metadataDropped")(metadataDropped)
+    if (metadataDropping != null) __obj.updateDynamic("metadataDropping")(metadataDropping)
+    if (metadataRemoved != null) __obj.updateDynamic("metadataRemoved")(metadataRemoved)
+    if (metadataRemoving != null) __obj.updateDynamic("metadataRemoving")(metadataRemoving)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgPivotDataSelector]
+  }
+}
+

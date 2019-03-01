@@ -53,3 +53,28 @@ trait Column extends js.Object {
   def attributeWriter(record: js.Any): js.Any
 }
 
+object Column {
+  @scala.inline
+  def apply(
+    attributeReader: js.Function2[stdLib.Element, js.Any, java.lang.String],
+    attributeWriter: js.Function1[js.Any, js.Any],
+    hidden: scala.Boolean,
+    id: java.lang.String,
+    index: scala.Double,
+    label: java.lang.String,
+    sorts: js.Array[java.lang.String],
+    textAlign: java.lang.String
+  ): Column = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attributeReader")(attributeReader)
+    __obj.updateDynamic("attributeWriter")(attributeWriter)
+    __obj.updateDynamic("hidden")(hidden)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("sorts")(sorts)
+    __obj.updateDynamic("textAlign")(textAlign)
+    __obj.asInstanceOf[Column]
+  }
+}
+

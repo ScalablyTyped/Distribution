@@ -21,3 +21,18 @@ trait ZoomSettings extends js.Object {
   var scope: js.UndefOr[ZoomSettingsScope] = js.undefined
 }
 
+object ZoomSettings {
+  @scala.inline
+  def apply(
+    defaultZoomFactor: scala.Int | scala.Double = null,
+    mode: ZoomSettingsMode = null,
+    scope: ZoomSettingsScope = null
+  ): ZoomSettings = {
+    val __obj = js.Dynamic.literal()
+    if (defaultZoomFactor != null) __obj.updateDynamic("defaultZoomFactor")(defaultZoomFactor.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[ZoomSettings]
+  }
+}
+

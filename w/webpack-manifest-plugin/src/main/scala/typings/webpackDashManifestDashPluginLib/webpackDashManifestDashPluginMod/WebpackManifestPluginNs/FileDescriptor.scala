@@ -18,3 +18,26 @@ trait FileDescriptor extends js.Object {
   var path: java.lang.String
 }
 
+object FileDescriptor {
+  @scala.inline
+  def apply(
+    isAsset: scala.Boolean,
+    isChunk: scala.Boolean,
+    isInitial: scala.Boolean,
+    isModuleAsset: scala.Boolean,
+    path: java.lang.String,
+    chunk: Chunk = null,
+    name: java.lang.String = null
+  ): FileDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isAsset")(isAsset)
+    __obj.updateDynamic("isChunk")(isChunk)
+    __obj.updateDynamic("isInitial")(isInitial)
+    __obj.updateDynamic("isModuleAsset")(isModuleAsset)
+    __obj.updateDynamic("path")(path)
+    if (chunk != null) __obj.updateDynamic("chunk")(chunk)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[FileDescriptor]
+  }
+}
+

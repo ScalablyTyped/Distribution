@@ -11,3 +11,18 @@ trait i18nState extends js.Object {
   var translations: org.scalablytyped.runtime.StringDictionary[Translations]
 }
 
+object i18nState {
+  @scala.inline
+  def apply(
+    translations: org.scalablytyped.runtime.StringDictionary[Translations],
+    fallback: java.lang.String = null,
+    locale: java.lang.String = null
+  ): i18nState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("translations")(translations)
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    __obj.asInstanceOf[i18nState]
+  }
+}
+

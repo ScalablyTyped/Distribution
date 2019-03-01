@@ -20,3 +20,13 @@ trait ChangeTableLookCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeTableLookCommand {
+  @scala.inline
+  def apply(execute: js.Function1[TableLookSettings, scala.Boolean], getState: js.Function0[js.Any]): ChangeTableLookCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeTableLookCommand]
+  }
+}
+

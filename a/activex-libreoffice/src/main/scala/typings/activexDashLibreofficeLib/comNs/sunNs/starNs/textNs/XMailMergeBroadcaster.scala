@@ -27,3 +27,22 @@ trait XMailMergeBroadcaster
   def removeMailMergeEventListener(xListener: XMailMergeListener): scala.Unit
 }
 
+object XMailMergeBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addMailMergeEventListener: js.Function1[XMailMergeListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeMailMergeEventListener: js.Function1[XMailMergeListener, scala.Unit]
+  ): XMailMergeBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addMailMergeEventListener")(addMailMergeEventListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeMailMergeEventListener")(removeMailMergeEventListener)
+    __obj.asInstanceOf[XMailMergeBroadcaster]
+  }
+}
+

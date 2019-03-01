@@ -13,3 +13,22 @@ trait Request extends js.Object {
   def toSchema(): js.Any
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    reqCert: pkijsLib.srcCertIDMod.default,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    singleRequestExtensions: js.Array[pkijsLib.srcExtensionMod.default] = null
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("reqCert")(reqCert)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    if (singleRequestExtensions != null) __obj.updateDynamic("singleRequestExtensions")(singleRequestExtensions)
+    __obj.asInstanceOf[Request]
+  }
+}
+

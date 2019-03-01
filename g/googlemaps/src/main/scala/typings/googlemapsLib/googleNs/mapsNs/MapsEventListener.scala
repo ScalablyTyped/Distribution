@@ -13,3 +13,12 @@ trait MapsEventListener extends js.Object {
   def remove(): scala.Unit
 }
 
+object MapsEventListener {
+  @scala.inline
+  def apply(remove: js.Function0[scala.Unit]): MapsEventListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[MapsEventListener]
+  }
+}
+

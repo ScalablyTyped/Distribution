@@ -15,3 +15,12 @@ trait IExportOptions extends js.Object {
   var units: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IExportOptions {
+  @scala.inline
+  def apply(units: java.lang.String = null): IExportOptions = {
+    val __obj = js.Dynamic.literal()
+    if (units != null) __obj.updateDynamic("units")(units)
+    __obj.asInstanceOf[IExportOptions]
+  }
+}
+

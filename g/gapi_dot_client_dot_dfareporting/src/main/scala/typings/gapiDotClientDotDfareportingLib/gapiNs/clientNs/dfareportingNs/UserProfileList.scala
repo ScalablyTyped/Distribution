@@ -14,3 +14,14 @@ trait UserProfileList extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UserProfileList {
+  @scala.inline
+  def apply(etag: java.lang.String = null, items: js.Array[UserProfile] = null, kind: java.lang.String = null): UserProfileList = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[UserProfileList]
+  }
+}
+

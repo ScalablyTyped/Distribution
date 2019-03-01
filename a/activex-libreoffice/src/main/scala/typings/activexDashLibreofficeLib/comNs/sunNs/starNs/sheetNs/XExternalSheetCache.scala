@@ -52,3 +52,24 @@ trait XExternalSheetCache extends js.Object {
   def setCellValue(nColumn: scala.Double, nRow: scala.Double, aValue: js.Any): scala.Unit
 }
 
+object XExternalSheetCache {
+  @scala.inline
+  def apply(
+    AllRows: activexDashInteropLib.SafeArray[scala.Double],
+    TokenIndex: scala.Double,
+    getAllColumns: js.Function1[scala.Double, activexDashInteropLib.SafeArray[scala.Double]],
+    getAllRows: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getCellValue: js.Function2[scala.Double, scala.Double, js.Any],
+    setCellValue: js.Function3[scala.Double, scala.Double, js.Any, scala.Unit]
+  ): XExternalSheetCache = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AllRows")(AllRows)
+    __obj.updateDynamic("TokenIndex")(TokenIndex)
+    __obj.updateDynamic("getAllColumns")(getAllColumns)
+    __obj.updateDynamic("getAllRows")(getAllRows)
+    __obj.updateDynamic("getCellValue")(getCellValue)
+    __obj.updateDynamic("setCellValue")(setCellValue)
+    __obj.asInstanceOf[XExternalSheetCache]
+  }
+}
+

@@ -53,3 +53,36 @@ trait XGraphicRasterizer
   ): XGraphic
 }
 
+object XGraphicRasterizer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    initializeData: js.Function4[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size], 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    rasterize: js.Function6[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XGraphic
+    ],
+    release: js.Function0[scala.Unit]
+  ): XGraphicRasterizer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("initializeData")(initializeData)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("rasterize")(rasterize)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XGraphicRasterizer]
+  }
+}
+

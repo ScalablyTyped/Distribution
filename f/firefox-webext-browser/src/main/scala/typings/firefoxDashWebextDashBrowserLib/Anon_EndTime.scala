@@ -18,3 +18,20 @@ trait Anon_EndTime extends js.Object {
   var text: java.lang.String
 }
 
+object Anon_EndTime {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    endTime: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date = null,
+    maxResults: scala.Int | scala.Double = null,
+    startTime: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date = null
+  ): Anon_EndTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_EndTime]
+  }
+}
+

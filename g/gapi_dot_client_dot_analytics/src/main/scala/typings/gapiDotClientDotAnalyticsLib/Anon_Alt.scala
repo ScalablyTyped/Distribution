@@ -57,3 +57,50 @@ trait Anon_Alt extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Alt {
+  @scala.inline
+  def apply(
+    `end-date`: java.lang.String,
+    ids: java.lang.String,
+    metrics: java.lang.String,
+    `start-date`: java.lang.String,
+    alt: java.lang.String = null,
+    dimensions: java.lang.String = null,
+    fields: java.lang.String = null,
+    filters: java.lang.String = null,
+    `include-empty-rows`: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    `max-results`: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    output: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    samplingLevel: java.lang.String = null,
+    segment: java.lang.String = null,
+    sort: java.lang.String = null,
+    `start-index`: scala.Int | scala.Double = null,
+    userIp: java.lang.String = null
+  ): Anon_Alt = {
+    val __obj = js.Dynamic.literal(`end-date` = `end-date`, `start-date` = `start-date`)
+    __obj.updateDynamic("ids")(ids)
+    __obj.updateDynamic("metrics")(metrics)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(`include-empty-rows`)) __obj.updateDynamic("include-empty-rows")(`include-empty-rows`)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel)
+    if (segment != null) __obj.updateDynamic("segment")(segment)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (`start-index` != null) __obj.updateDynamic("start-index")(`start-index`.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_Alt]
+  }
+}
+

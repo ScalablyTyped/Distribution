@@ -62,3 +62,35 @@ trait XConnectionTools extends js.Object {
   def getObjectNames(): XObjectNames
 }
 
+object XConnectionTools {
+  @scala.inline
+  def apply(
+    DataSourceMetaData: XDataSourceMetaData,
+    ObjectNames: XObjectNames,
+    createTableName: js.Function0[XTableName],
+    getComposer: js.Function2[
+      scala.Double, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbNs.XSingleSelectQueryComposer
+    ],
+    getDataSourceMetaData: js.Function0[XDataSourceMetaData],
+    getFieldsByCommandDescriptor: js.Function3[
+      scala.Double, 
+      java.lang.String, 
+      js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
+    ],
+    getObjectNames: js.Function0[XObjectNames]
+  ): XConnectionTools = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataSourceMetaData")(DataSourceMetaData)
+    __obj.updateDynamic("ObjectNames")(ObjectNames)
+    __obj.updateDynamic("createTableName")(createTableName)
+    __obj.updateDynamic("getComposer")(getComposer)
+    __obj.updateDynamic("getDataSourceMetaData")(getDataSourceMetaData)
+    __obj.updateDynamic("getFieldsByCommandDescriptor")(getFieldsByCommandDescriptor)
+    __obj.updateDynamic("getObjectNames")(getObjectNames)
+    __obj.asInstanceOf[XConnectionTools]
+  }
+}
+

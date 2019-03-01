@@ -14,3 +14,24 @@ trait MatchOptions extends js.Object {
   var trailingSlashMode: js.UndefOr[TrailingSlashMode] = js.undefined
 }
 
+object MatchOptions {
+  @scala.inline
+  def apply(
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    queryParams: searchDashParamsLib.typingsEncodeMod.IOptions = null,
+    queryParamsMode: QueryParamsMode = null,
+    strictTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined,
+    strongMatching: js.UndefOr[scala.Boolean] = js.undefined,
+    trailingSlashMode: TrailingSlashMode = null
+  ): MatchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    if (queryParamsMode != null) __obj.updateDynamic("queryParamsMode")(queryParamsMode)
+    if (!js.isUndefined(strictTrailingSlash)) __obj.updateDynamic("strictTrailingSlash")(strictTrailingSlash)
+    if (!js.isUndefined(strongMatching)) __obj.updateDynamic("strongMatching")(strongMatching)
+    if (trailingSlashMode != null) __obj.updateDynamic("trailingSlashMode")(trailingSlashMode)
+    __obj.asInstanceOf[MatchOptions]
+  }
+}
+

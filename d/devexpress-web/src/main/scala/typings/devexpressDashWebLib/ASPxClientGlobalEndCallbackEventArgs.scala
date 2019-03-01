@@ -16,3 +16,12 @@ trait ASPxClientGlobalEndCallbackEventArgs extends ASPxClientEventArgs {
   var control: ASPxClientControl
 }
 
+object ASPxClientGlobalEndCallbackEventArgs {
+  @scala.inline
+  def apply(control: ASPxClientControl): ASPxClientGlobalEndCallbackEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("control")(control)
+    __obj.asInstanceOf[ASPxClientGlobalEndCallbackEventArgs]
+  }
+}
+

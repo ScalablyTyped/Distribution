@@ -23,3 +23,18 @@ trait KnockoutValidationGroupingOptions extends js.Object {
   var observable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object KnockoutValidationGroupingOptions {
+  @scala.inline
+  def apply(
+    deep: js.UndefOr[scala.Boolean] = js.undefined,
+    live: js.UndefOr[scala.Boolean] = js.undefined,
+    observable: js.UndefOr[scala.Boolean] = js.undefined
+  ): KnockoutValidationGroupingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live)
+    if (!js.isUndefined(observable)) __obj.updateDynamic("observable")(observable)
+    __obj.asInstanceOf[KnockoutValidationGroupingOptions]
+  }
+}
+

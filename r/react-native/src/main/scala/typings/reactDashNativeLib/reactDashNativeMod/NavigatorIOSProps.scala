@@ -58,3 +58,32 @@ trait NavigatorIOSProps extends js.Object {
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NavigatorIOSProps {
+  @scala.inline
+  def apply(
+    initialRoute: Route,
+    barTintColor: java.lang.String = null,
+    interactivePopGestureEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    itemWrapperStyle: StyleProp[ViewStyle] = null,
+    navigationBarHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    shadowHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    style: StyleProp[ViewStyle] = null,
+    tintColor: java.lang.String = null,
+    titleTextColor: java.lang.String = null,
+    translucent: js.UndefOr[scala.Boolean] = js.undefined
+  ): NavigatorIOSProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("initialRoute")(initialRoute)
+    if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor)
+    if (!js.isUndefined(interactivePopGestureEnabled)) __obj.updateDynamic("interactivePopGestureEnabled")(interactivePopGestureEnabled)
+    if (itemWrapperStyle != null) __obj.updateDynamic("itemWrapperStyle")(itemWrapperStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigationBarHidden)) __obj.updateDynamic("navigationBarHidden")(navigationBarHidden)
+    if (!js.isUndefined(shadowHidden)) __obj.updateDynamic("shadowHidden")(shadowHidden)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
+    if (titleTextColor != null) __obj.updateDynamic("titleTextColor")(titleTextColor)
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
+    __obj.asInstanceOf[NavigatorIOSProps]
+  }
+}
+

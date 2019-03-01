@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 trait ProcessDictionary
   extends /* index */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 
+object ProcessDictionary {
+  @scala.inline
+  def apply(StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null): ProcessDictionary = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ProcessDictionary]
+  }
+}
+

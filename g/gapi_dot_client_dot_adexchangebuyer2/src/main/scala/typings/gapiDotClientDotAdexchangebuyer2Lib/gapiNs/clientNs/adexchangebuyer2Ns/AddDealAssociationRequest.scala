@@ -10,3 +10,12 @@ trait AddDealAssociationRequest extends js.Object {
   var association: js.UndefOr[CreativeDealAssociation] = js.undefined
 }
 
+object AddDealAssociationRequest {
+  @scala.inline
+  def apply(association: CreativeDealAssociation = null): AddDealAssociationRequest = {
+    val __obj = js.Dynamic.literal()
+    if (association != null) __obj.updateDynamic("association")(association)
+    __obj.asInstanceOf[AddDealAssociationRequest]
+  }
+}
+

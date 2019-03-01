@@ -17,3 +17,24 @@ trait WorldAtlas
   var transform_WorldAtlas: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Transform
 }
 
+object WorldAtlas {
+  @scala.inline
+  def apply(
+    arcs: js.Array[topojsonDashSpecificationLib.topojsonDashSpecificationMod.Arc],
+    bbox: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double],
+    objects: topojsonLib.Anon_Countries,
+    transform: topojsonDashSpecificationLib.topojsonDashSpecificationMod.Transform,
+    type_Topology: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.Topology,
+    `type`: topojsonDashSpecificationLib.topojsonDashSpecificationLibStrings.Topology | geojsonLib.geojsonMod.GeoJsonGeometryTypes = null
+  ): WorldAtlas = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arcs")(arcs)
+    __obj.updateDynamic("bbox")(bbox)
+    __obj.updateDynamic("objects")(objects)
+    __obj.updateDynamic("transform")(transform)
+    __obj.updateDynamic("type")(type_Topology)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorldAtlas]
+  }
+}
+

@@ -86,3 +86,43 @@ trait DataSourceSettingsSorting
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataSourceSettingsSorting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for DataSourceSettingsSorting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    applyToAllData: js.UndefOr[scala.Boolean] = js.undefined,
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    compareFunc: js.Any = null,
+    customConvertFunc: js.Any = null,
+    customFunc: js.Any = null,
+    defaultDirection: java.lang.String = null,
+    defaultFields: js.Array[_] = null,
+    exprString: java.lang.String = null,
+    expressions: js.Array[_] = null,
+    sortUrlAscValueKey: java.lang.String = null,
+    sortUrlDescValueKey: java.lang.String = null,
+    sortUrlKey: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DataSourceSettingsSorting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(applyToAllData)) __obj.updateDynamic("applyToAllData")(applyToAllData)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (compareFunc != null) __obj.updateDynamic("compareFunc")(compareFunc)
+    if (customConvertFunc != null) __obj.updateDynamic("customConvertFunc")(customConvertFunc)
+    if (customFunc != null) __obj.updateDynamic("customFunc")(customFunc)
+    if (defaultDirection != null) __obj.updateDynamic("defaultDirection")(defaultDirection)
+    if (defaultFields != null) __obj.updateDynamic("defaultFields")(defaultFields)
+    if (exprString != null) __obj.updateDynamic("exprString")(exprString)
+    if (expressions != null) __obj.updateDynamic("expressions")(expressions)
+    if (sortUrlAscValueKey != null) __obj.updateDynamic("sortUrlAscValueKey")(sortUrlAscValueKey)
+    if (sortUrlDescValueKey != null) __obj.updateDynamic("sortUrlDescValueKey")(sortUrlDescValueKey)
+    if (sortUrlKey != null) __obj.updateDynamic("sortUrlKey")(sortUrlKey)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DataSourceSettingsSorting]
+  }
+}
+

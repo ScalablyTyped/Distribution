@@ -10,3 +10,12 @@ trait RuntimeMetadata extends js.Object {
   var computeEngine: js.UndefOr[ComputeEngine] = js.undefined
 }
 
+object RuntimeMetadata {
+  @scala.inline
+  def apply(computeEngine: ComputeEngine = null): RuntimeMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (computeEngine != null) __obj.updateDynamic("computeEngine")(computeEngine)
+    __obj.asInstanceOf[RuntimeMetadata]
+  }
+}
+

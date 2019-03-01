@@ -17,5 +17,4 @@ package object libUrlInterfaceMod {
     /* router */ js.UndefOr[atUirouterCoreLib.libRouterMod.UIRouter], 
     js.Any
   ]
-  type UrlRuleType = atUirouterCoreLib.atUirouterCoreLibStrings.STATE | atUirouterCoreLib.atUirouterCoreLibStrings.URLMATCHER | atUirouterCoreLib.atUirouterCoreLibStrings.REGEXP | atUirouterCoreLib.atUirouterCoreLibStrings.RAW | atUirouterCoreLib.atUirouterCoreLibStrings.OTHER
 }

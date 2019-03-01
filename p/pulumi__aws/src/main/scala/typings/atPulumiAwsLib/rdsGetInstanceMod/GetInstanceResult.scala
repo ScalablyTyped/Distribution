@@ -156,3 +156,86 @@ trait GetInstanceResult extends js.Object {
   val vpcSecurityGroups: js.Array[java.lang.String]
 }
 
+object GetInstanceResult {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    allocatedStorage: scala.Double,
+    autoMinorVersionUpgrade: scala.Boolean,
+    availabilityZone: java.lang.String,
+    backupRetentionPeriod: scala.Double,
+    caCertIdentifier: java.lang.String,
+    dbClusterIdentifier: java.lang.String,
+    dbInstanceArn: java.lang.String,
+    dbInstanceClass: java.lang.String,
+    dbInstancePort: scala.Double,
+    dbName: java.lang.String,
+    dbParameterGroups: js.Array[java.lang.String],
+    dbSecurityGroups: js.Array[java.lang.String],
+    dbSubnetGroup: java.lang.String,
+    enabledCloudwatchLogsExports: js.Array[java.lang.String],
+    endpoint: java.lang.String,
+    engine: java.lang.String,
+    engineVersion: java.lang.String,
+    hostedZoneId: java.lang.String,
+    id: java.lang.String,
+    iops: scala.Double,
+    kmsKeyId: java.lang.String,
+    licenseModel: java.lang.String,
+    masterUsername: java.lang.String,
+    monitoringInterval: scala.Double,
+    monitoringRoleArn: java.lang.String,
+    multiAz: scala.Boolean,
+    optionGroupMemberships: js.Array[java.lang.String],
+    port: scala.Double,
+    preferredBackupWindow: java.lang.String,
+    preferredMaintenanceWindow: java.lang.String,
+    publiclyAccessible: scala.Boolean,
+    replicateSourceDb: java.lang.String,
+    storageEncrypted: scala.Boolean,
+    storageType: java.lang.String,
+    timezone: java.lang.String,
+    vpcSecurityGroups: js.Array[java.lang.String]
+  ): GetInstanceResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("allocatedStorage")(allocatedStorage)
+    __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade)
+    __obj.updateDynamic("availabilityZone")(availabilityZone)
+    __obj.updateDynamic("backupRetentionPeriod")(backupRetentionPeriod)
+    __obj.updateDynamic("caCertIdentifier")(caCertIdentifier)
+    __obj.updateDynamic("dbClusterIdentifier")(dbClusterIdentifier)
+    __obj.updateDynamic("dbInstanceArn")(dbInstanceArn)
+    __obj.updateDynamic("dbInstanceClass")(dbInstanceClass)
+    __obj.updateDynamic("dbInstancePort")(dbInstancePort)
+    __obj.updateDynamic("dbName")(dbName)
+    __obj.updateDynamic("dbParameterGroups")(dbParameterGroups)
+    __obj.updateDynamic("dbSecurityGroups")(dbSecurityGroups)
+    __obj.updateDynamic("dbSubnetGroup")(dbSubnetGroup)
+    __obj.updateDynamic("enabledCloudwatchLogsExports")(enabledCloudwatchLogsExports)
+    __obj.updateDynamic("endpoint")(endpoint)
+    __obj.updateDynamic("engine")(engine)
+    __obj.updateDynamic("engineVersion")(engineVersion)
+    __obj.updateDynamic("hostedZoneId")(hostedZoneId)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("iops")(iops)
+    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
+    __obj.updateDynamic("licenseModel")(licenseModel)
+    __obj.updateDynamic("masterUsername")(masterUsername)
+    __obj.updateDynamic("monitoringInterval")(monitoringInterval)
+    __obj.updateDynamic("monitoringRoleArn")(monitoringRoleArn)
+    __obj.updateDynamic("multiAz")(multiAz)
+    __obj.updateDynamic("optionGroupMemberships")(optionGroupMemberships)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow)
+    __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow)
+    __obj.updateDynamic("publiclyAccessible")(publiclyAccessible)
+    __obj.updateDynamic("replicateSourceDb")(replicateSourceDb)
+    __obj.updateDynamic("storageEncrypted")(storageEncrypted)
+    __obj.updateDynamic("storageType")(storageType)
+    __obj.updateDynamic("timezone")(timezone)
+    __obj.updateDynamic("vpcSecurityGroups")(vpcSecurityGroups)
+    __obj.asInstanceOf[GetInstanceResult]
+  }
+}
+

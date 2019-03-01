@@ -17,3 +17,18 @@ trait ITooltipProvider
   def setTriggers(triggers: js.Object): scala.Unit
 }
 
+object ITooltipProvider {
+  @scala.inline
+  def apply(
+    $get: js.Any,
+    options: js.Function1[ITooltipOptions, scala.Unit],
+    setTriggers: js.Function1[js.Object, scala.Unit]
+  ): ITooltipProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$get")($get)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("setTriggers")(setTriggers)
+    __obj.asInstanceOf[ITooltipProvider]
+  }
+}
+

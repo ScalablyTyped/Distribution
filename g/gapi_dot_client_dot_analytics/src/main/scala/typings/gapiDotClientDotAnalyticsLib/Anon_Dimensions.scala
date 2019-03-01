@@ -30,3 +30,34 @@ trait Anon_Dimensions extends js.Object {
   var `start-index`: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Dimensions {
+  @scala.inline
+  def apply(
+    dimensions: java.lang.String = null,
+    `end-date`: java.lang.String = null,
+    filters: java.lang.String = null,
+    ids: java.lang.String = null,
+    `max-results`: scala.Int | scala.Double = null,
+    metrics: js.Array[java.lang.String] = null,
+    samplingLevel: java.lang.String = null,
+    segment: java.lang.String = null,
+    sort: js.Array[java.lang.String] = null,
+    `start-date`: java.lang.String = null,
+    `start-index`: scala.Int | scala.Double = null
+  ): Anon_Dimensions = {
+    val __obj = js.Dynamic.literal()
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (`end-date` != null) __obj.updateDynamic("end-date")(`end-date`)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (samplingLevel != null) __obj.updateDynamic("samplingLevel")(samplingLevel)
+    if (segment != null) __obj.updateDynamic("segment")(segment)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (`start-date` != null) __obj.updateDynamic("start-date")(`start-date`)
+    if (`start-index` != null) __obj.updateDynamic("start-index")(`start-index`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Dimensions]
+  }
+}
+

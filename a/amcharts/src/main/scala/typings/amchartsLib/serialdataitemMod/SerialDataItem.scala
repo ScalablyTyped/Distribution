@@ -25,3 +25,15 @@ trait SerialDataItem extends js.Object {
   var x: scala.Double
 }
 
+object SerialDataItem {
+  @scala.inline
+  def apply(axes: js.Object, category: js.Any, time: scala.Double, x: scala.Double): SerialDataItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axes")(axes)
+    __obj.updateDynamic("category")(category)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("x")(x)
+    __obj.asInstanceOf[SerialDataItem]
+  }
+}
+

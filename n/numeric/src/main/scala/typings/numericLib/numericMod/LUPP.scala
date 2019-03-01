@@ -12,3 +12,20 @@ trait LUPP extends js.Object {
   var U: numericLib.SparseMatrix
 }
 
+object LUPP {
+  @scala.inline
+  def apply(
+    L: numericLib.SparseMatrix,
+    P: numericLib.Vector,
+    Pinv: numericLib.Vector,
+    U: numericLib.SparseMatrix
+  ): LUPP = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("L")(L)
+    __obj.updateDynamic("P")(P)
+    __obj.updateDynamic("Pinv")(Pinv)
+    __obj.updateDynamic("U")(U)
+    __obj.asInstanceOf[LUPP]
+  }
+}
+

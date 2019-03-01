@@ -23,3 +23,18 @@ trait TextPropsAndroid extends js.Object {
   ] = js.undefined
 }
 
+object TextPropsAndroid {
+  @scala.inline
+  def apply(
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionColor: java.lang.String = null,
+    textBreakStrategy: reactDashNativeLib.reactDashNativeLibStrings.simple | reactDashNativeLib.reactDashNativeLibStrings.highQuality | reactDashNativeLib.reactDashNativeLibStrings.balanced = null
+  ): TextPropsAndroid = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
+    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextPropsAndroid]
+  }
+}
+

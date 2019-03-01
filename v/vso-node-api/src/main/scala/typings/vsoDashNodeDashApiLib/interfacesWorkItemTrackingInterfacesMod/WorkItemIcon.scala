@@ -16,3 +16,13 @@ trait WorkItemIcon extends js.Object {
   var url: java.lang.String
 }
 
+object WorkItemIcon {
+  @scala.inline
+  def apply(id: java.lang.String, url: java.lang.String): WorkItemIcon = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WorkItemIcon]
+  }
+}
+

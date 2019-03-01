@@ -10,3 +10,12 @@ trait Environment extends js.Object {
   var androidDevice: js.UndefOr[AndroidDevice] = js.undefined
 }
 
+object Environment {
+  @scala.inline
+  def apply(androidDevice: AndroidDevice = null): Environment = {
+    val __obj = js.Dynamic.literal()
+    if (androidDevice != null) __obj.updateDynamic("androidDevice")(androidDevice)
+    __obj.asInstanceOf[Environment]
+  }
+}
+

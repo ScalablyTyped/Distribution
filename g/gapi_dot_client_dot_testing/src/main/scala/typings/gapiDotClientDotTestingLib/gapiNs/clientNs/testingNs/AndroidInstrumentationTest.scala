@@ -60,3 +60,26 @@ trait AndroidInstrumentationTest extends js.Object {
   var testTargets: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AndroidInstrumentationTest {
+  @scala.inline
+  def apply(
+    appApk: FileReference = null,
+    appPackageId: java.lang.String = null,
+    orchestratorOption: java.lang.String = null,
+    testApk: FileReference = null,
+    testPackageId: java.lang.String = null,
+    testRunnerClass: java.lang.String = null,
+    testTargets: js.Array[java.lang.String] = null
+  ): AndroidInstrumentationTest = {
+    val __obj = js.Dynamic.literal()
+    if (appApk != null) __obj.updateDynamic("appApk")(appApk)
+    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId)
+    if (orchestratorOption != null) __obj.updateDynamic("orchestratorOption")(orchestratorOption)
+    if (testApk != null) __obj.updateDynamic("testApk")(testApk)
+    if (testPackageId != null) __obj.updateDynamic("testPackageId")(testPackageId)
+    if (testRunnerClass != null) __obj.updateDynamic("testRunnerClass")(testRunnerClass)
+    if (testTargets != null) __obj.updateDynamic("testTargets")(testTargets)
+    __obj.asInstanceOf[AndroidInstrumentationTest]
+  }
+}
+

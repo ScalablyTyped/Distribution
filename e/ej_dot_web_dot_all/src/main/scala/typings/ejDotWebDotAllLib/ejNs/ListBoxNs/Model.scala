@@ -190,3 +190,110 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    actionBeforeSuccess: js.Function1[/* e */ ActionBeforeSuccessEventArgs, scala.Unit] = null,
+    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
+    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
+    actionFailure: js.Function1[/* e */ ActionFailureEventArgs, scala.Unit] = null,
+    actionSuccess: js.Function1[/* e */ ActionSuccessEventArgs, scala.Unit] = null,
+    allowDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    allowMultiSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    allowVirtualScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    cascadeTo: java.lang.String = null,
+    caseSensitiveSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    checkChange: js.Function1[/* e */ CheckChangeEventArgs, scala.Unit] = null,
+    checkedIndices: js.Array[_] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    dataSource: js.Any = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enableIncrementalSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableWordWrap: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: Fields = null,
+    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
+    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    height: java.lang.String = null,
+    itemDrag: js.Function1[/* e */ ItemDragEventArgs, scala.Unit] = null,
+    itemDragStart: js.Function1[/* e */ ItemDragStartEventArgs, scala.Unit] = null,
+    itemDragStop: js.Function1[/* e */ ItemDragStopEventArgs, scala.Unit] = null,
+    itemDrop: js.Function1[/* e */ ItemDropEventArgs, scala.Unit] = null,
+    itemHeight: java.lang.String = null,
+    itemRequestCount: scala.Int | scala.Double = null,
+    itemsCount: scala.Int | scala.Double = null,
+    loadDataOnInit: js.UndefOr[scala.Boolean] = js.undefined,
+    query: ejDotWebDotAllLib.ejNs.Query = null,
+    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    selectedIndex: scala.Int | scala.Double = null,
+    selectedIndices: js.Array[_] = null,
+    showCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    sortOrder: SortOrder | java.lang.String = null,
+    targetID: java.lang.String = null,
+    template: java.lang.String = null,
+    totalItemsCount: scala.Int | scala.Double = null,
+    unselect: js.Function1[/* e */ UnselectEventArgs, scala.Unit] = null,
+    value: scala.Int | scala.Double = null,
+    virtualScrollMode: ejDotWebDotAllLib.ejNs.VirtualScrollMode | java.lang.String = null,
+    width: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (actionBeforeSuccess != null) __obj.updateDynamic("actionBeforeSuccess")(actionBeforeSuccess)
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
+    if (actionFailure != null) __obj.updateDynamic("actionFailure")(actionFailure)
+    if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(actionSuccess)
+    if (!js.isUndefined(allowDrag)) __obj.updateDynamic("allowDrag")(allowDrag)
+    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop)
+    if (!js.isUndefined(allowMultiSelection)) __obj.updateDynamic("allowMultiSelection")(allowMultiSelection)
+    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling)
+    if (cascadeTo != null) __obj.updateDynamic("cascadeTo")(cascadeTo)
+    if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (checkChange != null) __obj.updateDynamic("checkChange")(checkChange)
+    if (checkedIndices != null) __obj.updateDynamic("checkedIndices")(checkedIndices)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enableIncrementalSearch)) __obj.updateDynamic("enableIncrementalSearch")(enableIncrementalSearch)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableWordWrap)) __obj.updateDynamic("enableWordWrap")(enableWordWrap)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
+    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (itemDrag != null) __obj.updateDynamic("itemDrag")(itemDrag)
+    if (itemDragStart != null) __obj.updateDynamic("itemDragStart")(itemDragStart)
+    if (itemDragStop != null) __obj.updateDynamic("itemDragStop")(itemDragStop)
+    if (itemDrop != null) __obj.updateDynamic("itemDrop")(itemDrop)
+    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight)
+    if (itemRequestCount != null) __obj.updateDynamic("itemRequestCount")(itemRequestCount.asInstanceOf[js.Any])
+    if (itemsCount != null) __obj.updateDynamic("itemsCount")(itemsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadDataOnInit)) __obj.updateDynamic("loadDataOnInit")(loadDataOnInit)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (selectedIndices != null) __obj.updateDynamic("selectedIndices")(selectedIndices)
+    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    if (targetID != null) __obj.updateDynamic("targetID")(targetID)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (totalItemsCount != null) __obj.updateDynamic("totalItemsCount")(totalItemsCount.asInstanceOf[js.Any])
+    if (unselect != null) __obj.updateDynamic("unselect")(unselect)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (virtualScrollMode != null) __obj.updateDynamic("virtualScrollMode")(virtualScrollMode.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Model]
+  }
+}
+

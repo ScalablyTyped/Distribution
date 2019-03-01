@@ -14,3 +14,12 @@ trait JobExecutionStageInfo extends js.Object {
   var stepName: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object JobExecutionStageInfo {
+  @scala.inline
+  def apply(stepName: js.Array[java.lang.String] = null): JobExecutionStageInfo = {
+    val __obj = js.Dynamic.literal()
+    if (stepName != null) __obj.updateDynamic("stepName")(stepName)
+    __obj.asInstanceOf[JobExecutionStageInfo]
+  }
+}
+

@@ -15,3 +15,26 @@ trait ChartSeriesItemHighlight extends js.Object {
   var visual: js.UndefOr[js.Function] = js.undefined
 }
 
+object ChartSeriesItemHighlight {
+  @scala.inline
+  def apply(
+    border: ChartSeriesItemHighlightBorder = null,
+    color: java.lang.String = null,
+    line: ChartSeriesItemHighlightLine = null,
+    opacity: scala.Int | scala.Double = null,
+    toggle: js.Function = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    visual: js.Function = null
+  ): ChartSeriesItemHighlight = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (visual != null) __obj.updateDynamic("visual")(visual)
+    __obj.asInstanceOf[ChartSeriesItemHighlight]
+  }
+}
+

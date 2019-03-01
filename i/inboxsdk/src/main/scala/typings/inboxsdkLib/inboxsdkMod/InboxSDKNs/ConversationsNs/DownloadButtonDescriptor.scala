@@ -12,3 +12,20 @@ trait DownloadButtonDescriptor extends js.Object {
   def onClick(event: js.Any): scala.Unit
 }
 
+object DownloadButtonDescriptor {
+  @scala.inline
+  def apply(
+    downloadUrl: java.lang.String,
+    onClick: js.Function1[js.Any, scala.Unit],
+    downloadFilename: java.lang.String = null,
+    openInNewTab: js.UndefOr[scala.Boolean] = js.undefined
+  ): DownloadButtonDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("downloadUrl")(downloadUrl)
+    __obj.updateDynamic("onClick")(onClick)
+    if (downloadFilename != null) __obj.updateDynamic("downloadFilename")(downloadFilename)
+    if (!js.isUndefined(openInNewTab)) __obj.updateDynamic("openInNewTab")(openInNewTab)
+    __obj.asInstanceOf[DownloadButtonDescriptor]
+  }
+}
+

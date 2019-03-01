@@ -16,3 +16,12 @@ trait ASPxClientReportDesignerSaveCommandExecuteEventArgs extends ASPxClientEven
   var handled: scala.Boolean
 }
 
+object ASPxClientReportDesignerSaveCommandExecuteEventArgs {
+  @scala.inline
+  def apply(handled: scala.Boolean): ASPxClientReportDesignerSaveCommandExecuteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handled")(handled)
+    __obj.asInstanceOf[ASPxClientReportDesignerSaveCommandExecuteEventArgs]
+  }
+}
+

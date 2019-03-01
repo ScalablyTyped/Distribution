@@ -26,3 +26,18 @@ trait Options extends js.Object {
   var mask: js.UndefOr[java.lang.String | stdLib.RegExp] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    header: js.UndefOr[scala.Boolean] = js.undefined,
+    markdown: js.UndefOr[scala.Boolean] = js.undefined,
+    mask: java.lang.String | stdLib.RegExp = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header)
+    if (!js.isUndefined(markdown)) __obj.updateDynamic("markdown")(markdown)
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

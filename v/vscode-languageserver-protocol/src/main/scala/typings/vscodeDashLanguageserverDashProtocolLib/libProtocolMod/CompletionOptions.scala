@@ -30,3 +30,18 @@ trait CompletionOptions extends js.Object {
   var triggerCharacters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CompletionOptions {
+  @scala.inline
+  def apply(
+    allCommitCharacters: js.Array[java.lang.String] = null,
+    resolveProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    triggerCharacters: js.Array[java.lang.String] = null
+  ): CompletionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (allCommitCharacters != null) __obj.updateDynamic("allCommitCharacters")(allCommitCharacters)
+    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider)
+    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters)
+    __obj.asInstanceOf[CompletionOptions]
+  }
+}
+

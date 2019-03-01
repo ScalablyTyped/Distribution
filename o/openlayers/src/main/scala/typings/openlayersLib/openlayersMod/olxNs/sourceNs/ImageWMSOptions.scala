@@ -19,3 +19,34 @@ trait ImageWMSOptions extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImageWMSOptions {
+  @scala.inline
+  def apply(
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
+    projection: openlayersLib.openlayersMod.ProjectionLike,
+    attributions: openlayersLib.openlayersMod.AttributionLike = null,
+    crossOrigin: java.lang.String = null,
+    hidpi: js.UndefOr[scala.Boolean] = js.undefined,
+    imageLoadFunction: openlayersLib.openlayersMod.ImageLoadFunctionType = null,
+    logo: java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions = null,
+    ratio: scala.Int | scala.Double = null,
+    resolutions: js.Array[scala.Double] = null,
+    serverType: openlayersLib.openlayersMod.sourceNs.wmsNs.ServerType | java.lang.String = null,
+    url: java.lang.String = null
+  ): ImageWMSOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)
+    if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(imageLoadFunction)
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)
+    if (serverType != null) __obj.updateDynamic("serverType")(serverType.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ImageWMSOptions]
+  }
+}
+

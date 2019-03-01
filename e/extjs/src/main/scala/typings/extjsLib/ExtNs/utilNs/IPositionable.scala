@@ -233,3 +233,142 @@ trait IPositionable
   var translatePoints: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double], _]] = js.undefined
 }
 
+object IPositionable {
+  @scala.inline
+  def apply(
+    alias: extjsLib.ExtNs.Array = null,
+    alignTo: js.Function4[
+      /* element */ js.UndefOr[js.Any], 
+      /* position */ js.UndefOr[java.lang.String], 
+      /* offsets */ js.UndefOr[extjsLib.ExtNs.Array], 
+      /* animate */ js.UndefOr[js.Any], 
+      IPositionable
+    ] = null,
+    alternateClassName: js.Any = null,
+    anchorTo: js.Function6[
+      /* element */ js.UndefOr[js.Any], 
+      /* position */ js.UndefOr[java.lang.String], 
+      /* offsets */ js.UndefOr[extjsLib.ExtNs.Array], 
+      /* animate */ js.UndefOr[js.Any], 
+      /* monitorScroll */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      IPositionable
+    ] = null,
+    calculateConstrainedPosition: js.Function4[
+      /* constrainTo */ js.UndefOr[js.Any], 
+      /* proposedPosition */ js.UndefOr[extjsLib.ExtNs.Array], 
+      /* local */ js.UndefOr[scala.Boolean], 
+      /* proposedSize */ js.UndefOr[extjsLib.ExtNs.Array], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    extend: java.lang.String = null,
+    getAlignToXY: js.Function3[
+      /* element */ js.UndefOr[js.Any], 
+      /* position */ js.UndefOr[java.lang.String], 
+      /* offsets */ js.UndefOr[extjsLib.ExtNs.Array], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    getAnchorXY: js.Function3[
+      /* anchor */ js.UndefOr[java.lang.String], 
+      /* local */ js.UndefOr[scala.Boolean], 
+      /* size */ js.UndefOr[js.Any], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    getBox: js.Function2[/* contentBox */ js.UndefOr[scala.Boolean], /* local */ js.UndefOr[scala.Boolean], _] = null,
+    getConstrainVector: js.Function3[
+      /* constrainTo */ js.UndefOr[js.Any], 
+      /* proposedPosition */ js.UndefOr[extjsLib.ExtNs.Array], 
+      /* proposedSize */ js.UndefOr[extjsLib.ExtNs.Array], 
+      _
+    ] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getLocalX: js.Function0[scala.Double] = null,
+    getLocalXY: js.Function0[extjsLib.ExtNs.Array] = null,
+    getLocalY: js.Function0[scala.Double] = null,
+    getOffsetsTo: js.Function1[/* offsetsTo */ js.UndefOr[js.Any], extjsLib.ExtNs.Array] = null,
+    getRegion: js.Function0[IRegion] = null,
+    getViewRegion: js.Function0[IRegion] = null,
+    getX: js.Function0[scala.Double] = null,
+    getXY: js.Function0[extjsLib.ExtNs.Array] = null,
+    getY: js.Function0[scala.Double] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IPositionable] = null,
+    mixins: js.Any = null,
+    move: js.Function3[
+      /* direction */ js.UndefOr[java.lang.String], 
+      /* distance */ js.UndefOr[scala.Double], 
+      /* animate */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    removeAnchor: js.Function0[IPositionable] = null,
+    requires: extjsLib.ExtNs.Array = null,
+    self: extjsLib.ExtNs.IClass = null,
+    setBox: js.Function2[/* box */ js.UndefOr[js.Any], /* animate */ js.UndefOr[js.Any], IPositionable] = null,
+    setLocalX: js.Function1[/* x */ js.UndefOr[scala.Double], IPositionable] = null,
+    setLocalXY: js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double], IPositionable] = null,
+    setLocalY: js.Function1[/* y */ js.UndefOr[scala.Double], IPositionable] = null,
+    setRegion: js.Function2[/* region */ js.UndefOr[IRegion], /* animate */ js.UndefOr[js.Any], IPositionable] = null,
+    setX: js.Function2[/* The */ js.UndefOr[scala.Double], /* animate */ js.UndefOr[js.Any], IPositionable] = null,
+    setXY: js.Function2[
+      /* pos */ js.UndefOr[extjsLib.ExtNs.Array], 
+      /* animate */ js.UndefOr[js.Any], 
+      IPositionable
+    ] = null,
+    setY: js.Function2[/* The */ js.UndefOr[scala.Double], /* animate */ js.UndefOr[js.Any], IPositionable] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    translatePoints: js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double], _] = null,
+    uses: extjsLib.ExtNs.Array = null
+  ): IPositionable = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alignTo != null) __obj.updateDynamic("alignTo")(alignTo)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (anchorTo != null) __obj.updateDynamic("anchorTo")(anchorTo)
+    if (calculateConstrainedPosition != null) __obj.updateDynamic("calculateConstrainedPosition")(calculateConstrainedPosition)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (getAlignToXY != null) __obj.updateDynamic("getAlignToXY")(getAlignToXY)
+    if (getAnchorXY != null) __obj.updateDynamic("getAnchorXY")(getAnchorXY)
+    if (getBox != null) __obj.updateDynamic("getBox")(getBox)
+    if (getConstrainVector != null) __obj.updateDynamic("getConstrainVector")(getConstrainVector)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getLocalX != null) __obj.updateDynamic("getLocalX")(getLocalX)
+    if (getLocalXY != null) __obj.updateDynamic("getLocalXY")(getLocalXY)
+    if (getLocalY != null) __obj.updateDynamic("getLocalY")(getLocalY)
+    if (getOffsetsTo != null) __obj.updateDynamic("getOffsetsTo")(getOffsetsTo)
+    if (getRegion != null) __obj.updateDynamic("getRegion")(getRegion)
+    if (getViewRegion != null) __obj.updateDynamic("getViewRegion")(getViewRegion)
+    if (getX != null) __obj.updateDynamic("getX")(getX)
+    if (getXY != null) __obj.updateDynamic("getXY")(getXY)
+    if (getY != null) __obj.updateDynamic("getY")(getY)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (move != null) __obj.updateDynamic("move")(move)
+    if (removeAnchor != null) __obj.updateDynamic("removeAnchor")(removeAnchor)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (setBox != null) __obj.updateDynamic("setBox")(setBox)
+    if (setLocalX != null) __obj.updateDynamic("setLocalX")(setLocalX)
+    if (setLocalXY != null) __obj.updateDynamic("setLocalXY")(setLocalXY)
+    if (setLocalY != null) __obj.updateDynamic("setLocalY")(setLocalY)
+    if (setRegion != null) __obj.updateDynamic("setRegion")(setRegion)
+    if (setX != null) __obj.updateDynamic("setX")(setX)
+    if (setXY != null) __obj.updateDynamic("setXY")(setXY)
+    if (setY != null) __obj.updateDynamic("setY")(setY)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (translatePoints != null) __obj.updateDynamic("translatePoints")(translatePoints)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IPositionable]
+  }
+}
+

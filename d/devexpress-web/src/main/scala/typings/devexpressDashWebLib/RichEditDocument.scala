@@ -61,3 +61,32 @@ trait RichEditDocument extends js.Object {
   def getSubDocumentById(subDocumentId: scala.Double): SubDocument
 }
 
+object RichEditDocument {
+  @scala.inline
+  def apply(
+    abstractNumberingListsInfo: js.Array[AbstractNumberingList],
+    activeSubDocument: SubDocument,
+    characterStylesInfo: js.Array[CharacterStyle],
+    getSubDocumentById: js.Function1[scala.Double, SubDocument],
+    mainSubDocument: SubDocument,
+    paragraphStylesInfo: js.Array[ParagraphStyle],
+    sectionsInfo: js.Array[Section],
+    spellingInfo: SpellingInfo,
+    subDocuments: js.Array[SubDocument],
+    tableStylesInfo: js.Array[TableStyle]
+  ): RichEditDocument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abstractNumberingListsInfo")(abstractNumberingListsInfo)
+    __obj.updateDynamic("activeSubDocument")(activeSubDocument)
+    __obj.updateDynamic("characterStylesInfo")(characterStylesInfo)
+    __obj.updateDynamic("getSubDocumentById")(getSubDocumentById)
+    __obj.updateDynamic("mainSubDocument")(mainSubDocument)
+    __obj.updateDynamic("paragraphStylesInfo")(paragraphStylesInfo)
+    __obj.updateDynamic("sectionsInfo")(sectionsInfo)
+    __obj.updateDynamic("spellingInfo")(spellingInfo)
+    __obj.updateDynamic("subDocuments")(subDocuments)
+    __obj.updateDynamic("tableStylesInfo")(tableStylesInfo)
+    __obj.asInstanceOf[RichEditDocument]
+  }
+}
+

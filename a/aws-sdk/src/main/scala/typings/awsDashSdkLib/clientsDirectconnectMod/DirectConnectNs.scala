@@ -2214,17 +2214,41 @@ object DirectConnectNs extends js.Object {
     var virtualInterfaces: js.UndefOr[VirtualInterfaceList] = js.undefined
   }
   
+  trait _AddressFamily extends js.Object
+  
+  trait _BGPPeerState extends js.Object
+  
+  trait _BGPStatus extends js.Object
+  
+  trait _ConnectionState extends js.Object
+  
+  trait _DirectConnectGatewayAssociationState extends js.Object
+  
+  trait _DirectConnectGatewayAttachmentState extends js.Object
+  
+  trait _DirectConnectGatewayState extends js.Object
+  
+  trait _HasLogicalRedundancy extends js.Object
+  
+  trait _InterconnectState extends js.Object
+  
+  trait _LagState extends js.Object
+  
+  trait _VirtualInterfaceState extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ASN = scala.Double
-  type AddressFamily = awsDashSdkLib.awsDashSdkLibStrings.ipv4 | awsDashSdkLib.awsDashSdkLibStrings.ipv6 | java.lang.String
+  type AddressFamily = _AddressFamily | java.lang.String
   type AmazonAddress = java.lang.String
   type AwsDevice = java.lang.String
   type AwsDeviceV2 = java.lang.String
   type BGPAuthKey = java.lang.String
   type BGPPeerId = java.lang.String
   type BGPPeerList = js.Array[BGPPeer]
-  type BGPPeerState = awsDashSdkLib.awsDashSdkLibStrings.verifying | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
-  type BGPStatus = awsDashSdkLib.awsDashSdkLibStrings.up | awsDashSdkLib.awsDashSdkLibStrings.down | awsDashSdkLib.awsDashSdkLibStrings.unknown | java.lang.String
+  type BGPPeerState = _BGPPeerState | java.lang.String
+  type BGPStatus = _BGPStatus | java.lang.String
   type Bandwidth = java.lang.String
   type BooleanFlag = scala.Boolean
   type CIDR = java.lang.String
@@ -2232,27 +2256,27 @@ object DirectConnectNs extends js.Object {
   type ConnectionId = java.lang.String
   type ConnectionList = js.Array[Connection]
   type ConnectionName = java.lang.String
-  type ConnectionState = awsDashSdkLib.awsDashSdkLibStrings.ordering | awsDashSdkLib.awsDashSdkLibStrings.requested | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.down | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.rejected | awsDashSdkLib.awsDashSdkLibStrings.unknown | java.lang.String
+  type ConnectionState = _ConnectionState | java.lang.String
   type Count = scala.Double
   type CustomerAddress = java.lang.String
   type DirectConnectGatewayAssociationList = js.Array[DirectConnectGatewayAssociation]
-  type DirectConnectGatewayAssociationState = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | java.lang.String
+  type DirectConnectGatewayAssociationState = _DirectConnectGatewayAssociationState | java.lang.String
   type DirectConnectGatewayAttachmentList = js.Array[DirectConnectGatewayAttachment]
-  type DirectConnectGatewayAttachmentState = awsDashSdkLib.awsDashSdkLibStrings.attaching | awsDashSdkLib.awsDashSdkLibStrings.attached | awsDashSdkLib.awsDashSdkLibStrings.detaching | awsDashSdkLib.awsDashSdkLibStrings.detached | java.lang.String
+  type DirectConnectGatewayAttachmentState = _DirectConnectGatewayAttachmentState | java.lang.String
   type DirectConnectGatewayId = java.lang.String
   type DirectConnectGatewayList = js.Array[DirectConnectGateway]
   type DirectConnectGatewayName = java.lang.String
-  type DirectConnectGatewayState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
-  type HasLogicalRedundancy = awsDashSdkLib.awsDashSdkLibStrings.unknown | awsDashSdkLib.awsDashSdkLibStrings.yes | awsDashSdkLib.awsDashSdkLibStrings.no | java.lang.String
+  type DirectConnectGatewayState = _DirectConnectGatewayState | java.lang.String
+  type HasLogicalRedundancy = _HasLogicalRedundancy | java.lang.String
   type InterconnectId = java.lang.String
   type InterconnectList = js.Array[Interconnect]
   type InterconnectName = java.lang.String
-  type InterconnectState = awsDashSdkLib.awsDashSdkLibStrings.requested | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.down | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.unknown | java.lang.String
+  type InterconnectState = _InterconnectState | java.lang.String
   type JumboFrameCapable = scala.Boolean
   type LagId = java.lang.String
   type LagList = js.Array[Lag]
   type LagName = java.lang.String
-  type LagState = awsDashSdkLib.awsDashSdkLibStrings.requested | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.down | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.unknown | java.lang.String
+  type LagState = _LagState | java.lang.String
   type LoaContent = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsDirectconnectMod.Blob | java.lang.String
   type LoaContentType = awsDashSdkLib.awsDashSdkLibStrings.`application/pdf` | java.lang.String
   type LoaIssueTime = stdLib.Date
@@ -2286,8 +2310,8 @@ object DirectConnectNs extends js.Object {
   type VirtualInterfaceList = js.Array[VirtualInterface]
   type VirtualInterfaceName = java.lang.String
   type VirtualInterfaceRegion = java.lang.String
-  type VirtualInterfaceState = awsDashSdkLib.awsDashSdkLibStrings.confirming | awsDashSdkLib.awsDashSdkLibStrings.verifying | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.down | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.rejected | awsDashSdkLib.awsDashSdkLibStrings.unknown | java.lang.String
+  type VirtualInterfaceState = _VirtualInterfaceState | java.lang.String
   type VirtualInterfaceType = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2012-10-25` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

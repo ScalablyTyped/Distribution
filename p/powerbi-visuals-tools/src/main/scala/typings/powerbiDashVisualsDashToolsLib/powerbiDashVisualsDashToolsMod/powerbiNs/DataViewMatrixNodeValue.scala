@@ -14,3 +14,20 @@ trait DataViewMatrixNodeValue extends DataViewTreeNodeValue {
   var valueSourceIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DataViewMatrixNodeValue {
+  @scala.inline
+  def apply(
+    highlight: PrimitiveValue = null,
+    objects: DataViewObjects = null,
+    value: PrimitiveValue = null,
+    valueSourceIndex: scala.Int | scala.Double = null
+  ): DataViewMatrixNodeValue = {
+    val __obj = js.Dynamic.literal()
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (objects != null) __obj.updateDynamic("objects")(objects)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueSourceIndex != null) __obj.updateDynamic("valueSourceIndex")(valueSourceIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataViewMatrixNodeValue]
+  }
+}
+

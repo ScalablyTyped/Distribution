@@ -24,3 +24,20 @@ trait SCBrokerOptions
   var secretKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SCBrokerOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /* additionalOptions */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    instanceId: java.lang.String = null,
+    ipcAckTimeout: scala.Int | scala.Double = null,
+    secretKey: java.lang.String = null
+  ): SCBrokerOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (ipcAckTimeout != null) __obj.updateDynamic("ipcAckTimeout")(ipcAckTimeout.asInstanceOf[js.Any])
+    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey)
+    __obj.asInstanceOf[SCBrokerOptions]
+  }
+}
+

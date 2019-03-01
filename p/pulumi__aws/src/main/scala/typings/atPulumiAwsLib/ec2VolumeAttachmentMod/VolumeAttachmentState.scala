@@ -36,3 +36,22 @@ trait VolumeAttachmentState extends js.Object {
   val volumeId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object VolumeAttachmentState {
+  @scala.inline
+  def apply(
+    deviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    forceDetach: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    instanceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    skipDestroy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    volumeId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): VolumeAttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
+    if (forceDetach != null) __obj.updateDynamic("forceDetach")(forceDetach.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (skipDestroy != null) __obj.updateDynamic("skipDestroy")(skipDestroy.asInstanceOf[js.Any])
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VolumeAttachmentState]
+  }
+}
+

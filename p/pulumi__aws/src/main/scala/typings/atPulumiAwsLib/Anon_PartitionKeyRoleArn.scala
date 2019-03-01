@@ -11,3 +11,18 @@ trait Anon_PartitionKeyRoleArn extends js.Object {
   var streamName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_PartitionKeyRoleArn {
+  @scala.inline
+  def apply(
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    streamName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    partitionKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_PartitionKeyRoleArn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("streamName")(streamName.asInstanceOf[js.Any])
+    if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_PartitionKeyRoleArn]
+  }
+}
+

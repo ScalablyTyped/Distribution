@@ -10,3 +10,16 @@ trait Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest extends js.Object 
   /** The number of items in the collection. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest {
+  @scala.inline
+  def apply(
+    items: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.IPlayReadySecureStopServiceRequest,
+    returnValue: scala.Double
+  ): Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ItemsReturnValueIPlayReadySecureStopServiceRequest]
+  }
+}
+

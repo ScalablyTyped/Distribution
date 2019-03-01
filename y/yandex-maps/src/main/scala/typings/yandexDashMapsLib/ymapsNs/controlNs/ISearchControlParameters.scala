@@ -11,3 +11,18 @@ trait ISearchControlParameters extends js.Object {
   var state: js.UndefOr[js.Object] = js.undefined
 }
 
+object ISearchControlParameters {
+  @scala.inline
+  def apply(
+    data: js.Object = null,
+    options: yandexDashMapsLib.Anon_AdjustMapMarginAuto = null,
+    state: js.Object = null
+  ): ISearchControlParameters = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ISearchControlParameters]
+  }
+}
+

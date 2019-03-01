@@ -41,3 +41,25 @@ trait TemplateTransformer[TCtx] extends js.Object {
   ] = js.undefined
 }
 
+object TemplateTransformer {
+  @scala.inline
+  def apply[TCtx](
+    getInitialContext: js.Function0[TCtx] = null,
+    onEndResult: js.Function2[/* endResult */ java.lang.String, /* context */ TCtx, java.lang.String] = null,
+    onString: js.Function2[/* str */ java.lang.String, /* context */ TCtx, java.lang.String] = null,
+    onSubstitution: js.Function3[
+      /* substitution */ java.lang.String, 
+      /* resultSoFar */ java.lang.String, 
+      /* context */ TCtx, 
+      java.lang.String
+    ] = null
+  ): TemplateTransformer[TCtx] = {
+    val __obj = js.Dynamic.literal()
+    if (getInitialContext != null) __obj.updateDynamic("getInitialContext")(getInitialContext)
+    if (onEndResult != null) __obj.updateDynamic("onEndResult")(onEndResult)
+    if (onString != null) __obj.updateDynamic("onString")(onString)
+    if (onSubstitution != null) __obj.updateDynamic("onSubstitution")(onSubstitution)
+    __obj.asInstanceOf[TemplateTransformer[TCtx]]
+  }
+}
+

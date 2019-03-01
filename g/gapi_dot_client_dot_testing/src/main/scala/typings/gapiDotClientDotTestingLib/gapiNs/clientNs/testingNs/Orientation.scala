@@ -25,3 +25,18 @@ trait Orientation extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Orientation {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    tags: js.Array[java.lang.String] = null
+  ): Orientation = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[Orientation]
+  }
+}
+

@@ -43,3 +43,26 @@ trait XContentIdentifier
   def getContentProviderScheme(): java.lang.String
 }
 
+object XContentIdentifier {
+  @scala.inline
+  def apply(
+    ContentIdentifier: java.lang.String,
+    ContentProviderScheme: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getContentIdentifier: js.Function0[java.lang.String],
+    getContentProviderScheme: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContentIdentifier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ContentIdentifier")(ContentIdentifier)
+    __obj.updateDynamic("ContentProviderScheme")(ContentProviderScheme)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getContentIdentifier")(getContentIdentifier)
+    __obj.updateDynamic("getContentProviderScheme")(getContentProviderScheme)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XContentIdentifier]
+  }
+}
+

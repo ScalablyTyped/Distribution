@@ -13,3 +13,22 @@ trait Anon_AllowedHeaders extends js.Object {
   var maxAgeSeconds: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AllowedHeaders {
+  @scala.inline
+  def apply(
+    allowedMethods: js.Array[java.lang.String],
+    allowedOrigins: js.Array[java.lang.String],
+    allowedHeaders: js.Array[java.lang.String] = null,
+    exposeHeaders: js.Array[java.lang.String] = null,
+    maxAgeSeconds: scala.Int | scala.Double = null
+  ): Anon_AllowedHeaders = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowedMethods")(allowedMethods)
+    __obj.updateDynamic("allowedOrigins")(allowedOrigins)
+    if (allowedHeaders != null) __obj.updateDynamic("allowedHeaders")(allowedHeaders)
+    if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders)
+    if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AllowedHeaders]
+  }
+}
+

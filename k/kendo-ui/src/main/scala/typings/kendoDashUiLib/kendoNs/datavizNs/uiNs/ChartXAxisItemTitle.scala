@@ -19,3 +19,34 @@ trait ChartXAxisItemTitle extends js.Object {
   var visual: js.UndefOr[js.Function] = js.undefined
 }
 
+object ChartXAxisItemTitle {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: ChartXAxisItemTitleBorder = null,
+    color: java.lang.String = null,
+    font: java.lang.String = null,
+    margin: ChartXAxisItemTitleMargin = null,
+    padding: ChartXAxisItemTitlePadding = null,
+    position: java.lang.String = null,
+    rotation: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    visual: js.Function = null
+  ): ChartXAxisItemTitle = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (visual != null) __obj.updateDynamic("visual")(visual)
+    __obj.asInstanceOf[ChartXAxisItemTitle]
+  }
+}
+

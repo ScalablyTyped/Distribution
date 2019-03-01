@@ -10,3 +10,15 @@ trait BlankTriple[Q /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */] extends js.Obje
   var predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any
 }
 
+object BlankTriple {
+  @scala.inline
+  def apply[Q /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */](
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any
+  ): BlankTriple[Q] = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("predicate")(predicate)
+    __obj.asInstanceOf[BlankTriple[Q]]
+  }
+}
+

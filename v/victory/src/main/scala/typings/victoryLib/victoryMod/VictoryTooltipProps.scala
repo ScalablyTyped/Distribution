@@ -137,3 +137,64 @@ trait VictoryTooltipProps extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VictoryTooltipProps {
+  @scala.inline
+  def apply(
+    activateData: js.UndefOr[scala.Boolean] = js.undefined,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    angle: java.lang.String | scala.Double = null,
+    cornerRadius: NumberOrCallback = null,
+    data: js.Array[_] = null,
+    datum: js.Object = null,
+    dx: StringOrNumberOrCallback = null,
+    dy: StringOrNumberOrCallback = null,
+    events: js.Object = null,
+    flyoutComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    flyoutStyle: VictoryStyleObject = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    height: NumberOrCallback = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    index: scala.Double | java.lang.String = null,
+    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    orientation: OrientationTypes = null,
+    pointerLength: NumberOrCallback = null,
+    pointerWidth: NumberOrCallback = null,
+    renderInPortal: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    text: StringOrNumberOrCallback | js.Array[java.lang.String] | js.Array[scala.Double] = null,
+    theme: VictoryThemeDefinition = null,
+    width: NumberOrCallback = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): VictoryTooltipProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(activateData)) __obj.updateDynamic("activateData")(activateData)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (datum != null) __obj.updateDynamic("datum")(datum)
+    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
+    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (flyoutComponent != null) __obj.updateDynamic("flyoutComponent")(flyoutComponent)
+    if (flyoutStyle != null) __obj.updateDynamic("flyoutStyle")(flyoutStyle)
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (pointerLength != null) __obj.updateDynamic("pointerLength")(pointerLength.asInstanceOf[js.Any])
+    if (pointerWidth != null) __obj.updateDynamic("pointerWidth")(pointerWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderInPortal)) __obj.updateDynamic("renderInPortal")(renderInPortal)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryTooltipProps]
+  }
+}
+

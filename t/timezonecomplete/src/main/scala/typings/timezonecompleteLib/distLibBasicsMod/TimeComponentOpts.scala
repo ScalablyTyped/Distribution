@@ -36,3 +36,26 @@ trait TimeComponentOpts extends js.Object {
   var year: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TimeComponentOpts {
+  @scala.inline
+  def apply(
+    day: scala.Int | scala.Double = null,
+    hour: scala.Int | scala.Double = null,
+    milli: scala.Int | scala.Double = null,
+    minute: scala.Int | scala.Double = null,
+    month: scala.Int | scala.Double = null,
+    second: scala.Int | scala.Double = null,
+    year: scala.Int | scala.Double = null
+  ): TimeComponentOpts = {
+    val __obj = js.Dynamic.literal()
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
+    if (milli != null) __obj.updateDynamic("milli")(milli.asInstanceOf[js.Any])
+    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
+    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimeComponentOpts]
+  }
+}
+

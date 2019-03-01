@@ -12,3 +12,20 @@ trait Anon_CreditEllipsoidMetadataUrl extends js.Object {
   var url: cesiumLib.cesiumMod.CesiumNs.Resource | java.lang.String
 }
 
+object Anon_CreditEllipsoidMetadataUrl {
+  @scala.inline
+  def apply(
+    metadata: cesiumLib.cesiumMod.CesiumNs.GoogleEarthEnterpriseMetadata,
+    url: cesiumLib.cesiumMod.CesiumNs.Resource | java.lang.String,
+    credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null
+  ): Anon_CreditEllipsoidMetadataUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    __obj.asInstanceOf[Anon_CreditEllipsoidMetadataUrl]
+  }
+}
+

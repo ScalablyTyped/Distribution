@@ -13,3 +13,24 @@ trait LocationsResource extends js.Object {
   def list(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
 }
 
+object LocationsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Location]
+    ],
+    keyRings: KeyRingsResource,
+    list: js.Function1[
+      gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
+    ]
+  ): LocationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("keyRings")(keyRings)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[LocationsResource]
+  }
+}
+

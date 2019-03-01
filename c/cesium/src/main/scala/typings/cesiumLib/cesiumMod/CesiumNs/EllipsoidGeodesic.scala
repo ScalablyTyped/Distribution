@@ -16,3 +16,28 @@ trait EllipsoidGeodesic extends js.Object {
   def setEndPoints(start: Cartographic, end: Cartographic): scala.Unit
 }
 
+object EllipsoidGeodesic {
+  @scala.inline
+  def apply(
+    end: Cartographic,
+    endHeading: scala.Double,
+    interpolateUsingFraction: js.Function1[scala.Double, Cartographic],
+    interpolateUsingSurfaceDistance: js.Function1[scala.Double, Cartographic],
+    setEndPoints: js.Function2[Cartographic, Cartographic, scala.Unit],
+    start: Cartographic,
+    startHeading: scala.Double,
+    surfaceDistance: scala.Double
+  ): EllipsoidGeodesic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("endHeading")(endHeading)
+    __obj.updateDynamic("interpolateUsingFraction")(interpolateUsingFraction)
+    __obj.updateDynamic("interpolateUsingSurfaceDistance")(interpolateUsingSurfaceDistance)
+    __obj.updateDynamic("setEndPoints")(setEndPoints)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("startHeading")(startHeading)
+    __obj.updateDynamic("surfaceDistance")(surfaceDistance)
+    __obj.asInstanceOf[EllipsoidGeodesic]
+  }
+}
+

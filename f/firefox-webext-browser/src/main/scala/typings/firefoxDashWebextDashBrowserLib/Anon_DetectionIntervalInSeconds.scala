@@ -33,3 +33,26 @@ trait Anon_DetectionIntervalInSeconds extends js.Object {
   def setDetectionInterval(intervalInSeconds: scala.Double): scala.Unit
 }
 
+object Anon_DetectionIntervalInSeconds {
+  @scala.inline
+  def apply(
+    onStateChanged: WebExtEvent[
+      js.Function1[
+        /* newState */ firefoxDashWebextDashBrowserLib.browserNs.idleNs.IdleState, 
+        scala.Unit
+      ]
+    ],
+    queryState: js.Function1[
+      scala.Double, 
+      js.Promise[firefoxDashWebextDashBrowserLib.browserNs.idleNs.IdleState]
+    ],
+    setDetectionInterval: js.Function1[scala.Double, scala.Unit]
+  ): Anon_DetectionIntervalInSeconds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onStateChanged")(onStateChanged)
+    __obj.updateDynamic("queryState")(queryState)
+    __obj.updateDynamic("setDetectionInterval")(setDetectionInterval)
+    __obj.asInstanceOf[Anon_DetectionIntervalInSeconds]
+  }
+}
+

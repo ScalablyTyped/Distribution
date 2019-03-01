@@ -12,3 +12,20 @@ trait Events extends js.Object {
   def once(el: reactLib.Element, `type`: java.lang.String, callback: stdLib.EventListener): scala.Unit
 }
 
+object Events {
+  @scala.inline
+  def apply(
+    isKeyboard: js.Function1[reactLib.Event, scala.Boolean],
+    off: js.Function3[reactLib.Element, java.lang.String, stdLib.EventListener, scala.Unit],
+    on: js.Function3[reactLib.Element, java.lang.String, stdLib.EventListener, scala.Unit],
+    once: js.Function3[reactLib.Element, java.lang.String, stdLib.EventListener, scala.Unit]
+  ): Events = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isKeyboard")(isKeyboard)
+    __obj.updateDynamic("off")(off)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("once")(once)
+    __obj.asInstanceOf[Events]
+  }
+}
+

@@ -14,3 +14,16 @@ trait Anon_HoverSelect extends js.Object {
   var select: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.MarkerState] = js.undefined
 }
 
+object Anon_HoverSelect {
+  @scala.inline
+  def apply(
+    hover: highchartsLib.highchartsMod.HighchartsNs.MarkerHoverState = null,
+    select: highchartsLib.highchartsMod.HighchartsNs.MarkerState = null
+  ): Anon_HoverSelect = {
+    val __obj = js.Dynamic.literal()
+    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (select != null) __obj.updateDynamic("select")(select)
+    __obj.asInstanceOf[Anon_HoverSelect]
+  }
+}
+

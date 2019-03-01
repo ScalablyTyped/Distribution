@@ -19,3 +19,34 @@ trait IControlChannelTrigger
   def waitForPushEnabled(): ControlChannelTriggerStatus
 }
 
+object IControlChannelTrigger {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    controlChannelTriggerId: java.lang.String,
+    currentKeepAliveIntervalInMinutes: scala.Double,
+    decreaseNetworkKeepAliveInterval: js.Function0[scala.Unit],
+    flushTransport: js.Function0[scala.Unit],
+    keepAliveTrigger: winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.IBackgroundTrigger,
+    pushNotificationTrigger: winrtLib.WindowsNs.ApplicationModelNs.BackgroundNs.IBackgroundTrigger,
+    serverKeepAliveIntervalInMinutes: scala.Double,
+    transportObject: js.Any,
+    usingTransport: js.Function1[js.Any, scala.Unit],
+    waitForPushEnabled: js.Function0[ControlChannelTriggerStatus]
+  ): IControlChannelTrigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("controlChannelTriggerId")(controlChannelTriggerId)
+    __obj.updateDynamic("currentKeepAliveIntervalInMinutes")(currentKeepAliveIntervalInMinutes)
+    __obj.updateDynamic("decreaseNetworkKeepAliveInterval")(decreaseNetworkKeepAliveInterval)
+    __obj.updateDynamic("flushTransport")(flushTransport)
+    __obj.updateDynamic("keepAliveTrigger")(keepAliveTrigger)
+    __obj.updateDynamic("pushNotificationTrigger")(pushNotificationTrigger)
+    __obj.updateDynamic("serverKeepAliveIntervalInMinutes")(serverKeepAliveIntervalInMinutes)
+    __obj.updateDynamic("transportObject")(transportObject)
+    __obj.updateDynamic("usingTransport")(usingTransport)
+    __obj.updateDynamic("waitForPushEnabled")(waitForPushEnabled)
+    __obj.asInstanceOf[IControlChannelTrigger]
+  }
+}
+

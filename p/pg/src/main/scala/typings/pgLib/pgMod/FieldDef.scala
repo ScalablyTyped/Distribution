@@ -15,3 +15,26 @@ trait FieldDef extends js.Object {
   var tableID: scala.Double
 }
 
+object FieldDef {
+  @scala.inline
+  def apply(
+    columnID: scala.Double,
+    dataTypeID: scala.Double,
+    dataTypeModifier: scala.Double,
+    dataTypeSize: scala.Double,
+    format: java.lang.String,
+    name: java.lang.String,
+    tableID: scala.Double
+  ): FieldDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnID")(columnID)
+    __obj.updateDynamic("dataTypeID")(dataTypeID)
+    __obj.updateDynamic("dataTypeModifier")(dataTypeModifier)
+    __obj.updateDynamic("dataTypeSize")(dataTypeSize)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("tableID")(tableID)
+    __obj.asInstanceOf[FieldDef]
+  }
+}
+

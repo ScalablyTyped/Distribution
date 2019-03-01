@@ -29,3 +29,18 @@ trait Options extends js.Object {
   var style: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    heteronym: js.UndefOr[scala.Boolean] = js.undefined,
+    segment: js.UndefOr[scala.Boolean] = js.undefined,
+    style: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(heteronym)) __obj.updateDynamic("heteronym")(heteronym)
+    if (!js.isUndefined(segment)) __obj.updateDynamic("segment")(segment)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

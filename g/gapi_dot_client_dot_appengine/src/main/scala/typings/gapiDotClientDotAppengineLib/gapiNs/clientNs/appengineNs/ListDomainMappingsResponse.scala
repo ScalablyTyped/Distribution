@@ -12,3 +12,13 @@ trait ListDomainMappingsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListDomainMappingsResponse {
+  @scala.inline
+  def apply(domainMappings: js.Array[DomainMapping] = null, nextPageToken: java.lang.String = null): ListDomainMappingsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (domainMappings != null) __obj.updateDynamic("domainMappings")(domainMappings)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListDomainMappingsResponse]
+  }
+}
+

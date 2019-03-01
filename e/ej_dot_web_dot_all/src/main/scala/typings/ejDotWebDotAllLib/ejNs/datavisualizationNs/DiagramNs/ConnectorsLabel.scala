@@ -134,3 +134,76 @@ trait ConnectorsLabel extends js.Object {
   var wrapping: js.UndefOr[TextWrapping | java.lang.String] = js.undefined
 }
 
+object ConnectorsLabel {
+  @scala.inline
+  def apply(
+    alignment: Alignment | java.lang.String = null,
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    borderColor: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    boundaryConstraints: js.UndefOr[scala.Boolean] = js.undefined,
+    constraints: LabelConstraints | java.lang.String = null,
+    dragLimit: ConnectorsLabelsDragLimit = null,
+    fillColor: java.lang.String = null,
+    fontColor: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    horizontalAlignment: HorizontalAlignment | java.lang.String = null,
+    hyperlink: java.lang.String = null,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    margin: ConnectorsLabelsMargin = null,
+    mode: LabelEditMode | java.lang.String = null,
+    name: java.lang.String = null,
+    offset: js.Any = null,
+    opacity: scala.Int | scala.Double = null,
+    padding: js.Any = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    relativeMode: LabelRelativeMode | java.lang.String = null,
+    rotateAngle: scala.Int | scala.Double = null,
+    segmentOffset: java.lang.String = null,
+    text: java.lang.String = null,
+    textAlign: TextAlign | java.lang.String = null,
+    textDecoration: TextDecorations | java.lang.String = null,
+    verticalAlignment: VerticalAlignment | java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null,
+    wrapping: TextWrapping | java.lang.String = null
+  ): ConnectorsLabel = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(boundaryConstraints)) __obj.updateDynamic("boundaryConstraints")(boundaryConstraints)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (dragLimit != null) __obj.updateDynamic("dragLimit")(dragLimit)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (relativeMode != null) __obj.updateDynamic("relativeMode")(relativeMode.asInstanceOf[js.Any])
+    if (rotateAngle != null) __obj.updateDynamic("rotateAngle")(rotateAngle.asInstanceOf[js.Any])
+    if (segmentOffset != null) __obj.updateDynamic("segmentOffset")(segmentOffset)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wrapping != null) __obj.updateDynamic("wrapping")(wrapping.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectorsLabel]
+  }
+}
+

@@ -18,3 +18,22 @@ trait JsonOptions extends LinesOptions {
   var undefinedReplacement: js.UndefOr[js.Any] = js.undefined
 }
 
+object JsonOptions {
+  @scala.inline
+  def apply(
+    ignoreCase: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
+    newlineIsToken: js.UndefOr[scala.Boolean] = js.undefined,
+    stringifyReplacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
+    undefinedReplacement: js.Any = null
+  ): JsonOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace)
+    if (!js.isUndefined(newlineIsToken)) __obj.updateDynamic("newlineIsToken")(newlineIsToken)
+    if (stringifyReplacer != null) __obj.updateDynamic("stringifyReplacer")(stringifyReplacer)
+    if (undefinedReplacement != null) __obj.updateDynamic("undefinedReplacement")(undefinedReplacement)
+    __obj.asInstanceOf[JsonOptions]
+  }
+}
+

@@ -30,3 +30,47 @@ trait SubnetworksResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object SubnetworksResource {
+  @scala.inline
+  def apply(
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SubnetworkAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdSubnetwork, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    expandIpCidrRange: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdSubnetwork, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionSubnetwork, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subnetwork]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SubnetworkList]
+    ],
+    setPrivateIpGoogleAccess: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdSubnetwork, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): SubnetworksResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("expandIpCidrRange")(expandIpCidrRange)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("setPrivateIpGoogleAccess")(setPrivateIpGoogleAccess)
+    __obj.asInstanceOf[SubnetworksResource]
+  }
+}
+

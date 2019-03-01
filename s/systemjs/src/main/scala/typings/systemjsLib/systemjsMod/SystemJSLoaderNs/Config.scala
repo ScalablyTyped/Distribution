@@ -71,3 +71,43 @@ trait Config
   var typescriptOptions: js.UndefOr[systemjsLib.Anon_Key] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * For custom config names
+    */
+  /* customName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    babelOptions: js.Any = null,
+    baseURL: java.lang.String = null,
+    bundles: ModulesList = null,
+    defaultJSExtensions: js.UndefOr[scala.Boolean] = js.undefined,
+    depCache: ModulesList = null,
+    map: ConfigMap = null,
+    meta: ConfigMeta = null,
+    packages: PackageList[PackageConfig] = null,
+    paths: PackageList[java.lang.String] = null,
+    trace: js.UndefOr[scala.Boolean] = js.undefined,
+    traceurOptions: TraceurOptions = null,
+    transpiler: Transpiler = null,
+    typescriptOptions: systemjsLib.Anon_Key = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (babelOptions != null) __obj.updateDynamic("babelOptions")(babelOptions)
+    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL)
+    if (bundles != null) __obj.updateDynamic("bundles")(bundles)
+    if (!js.isUndefined(defaultJSExtensions)) __obj.updateDynamic("defaultJSExtensions")(defaultJSExtensions)
+    if (depCache != null) __obj.updateDynamic("depCache")(depCache)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (packages != null) __obj.updateDynamic("packages")(packages)
+    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace)
+    if (traceurOptions != null) __obj.updateDynamic("traceurOptions")(traceurOptions)
+    if (transpiler != null) __obj.updateDynamic("transpiler")(transpiler)
+    if (typescriptOptions != null) __obj.updateDynamic("typescriptOptions")(typescriptOptions)
+    __obj.asInstanceOf[Config]
+  }
+}
+

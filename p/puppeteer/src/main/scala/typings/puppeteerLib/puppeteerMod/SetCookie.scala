@@ -28,3 +28,32 @@ trait SetCookie extends js.Object {
   var value: java.lang.String
 }
 
+object SetCookie {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    value: java.lang.String,
+    domain: java.lang.String = null,
+    expires: scala.Int | scala.Double = null,
+    httpOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    sameSite: SameSiteSetting = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    session: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null
+  ): SetCookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[SetCookie]
+  }
+}
+

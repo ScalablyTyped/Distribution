@@ -12,3 +12,12 @@ trait ToDataURLOptions extends js.Object {
   var scaleFactor: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ToDataURLOptions {
+  @scala.inline
+  def apply(scaleFactor: scala.Int | scala.Double = null): ToDataURLOptions = {
+    val __obj = js.Dynamic.literal()
+    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToDataURLOptions]
+  }
+}
+

@@ -16,3 +16,13 @@ trait ModalOptions extends js.Object {
   var animationOptions: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ModalOptions {
+  @scala.inline
+  def apply(animation: java.lang.String = null, animationOptions: java.lang.String = null): ModalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
+    __obj.asInstanceOf[ModalOptions]
+  }
+}
+

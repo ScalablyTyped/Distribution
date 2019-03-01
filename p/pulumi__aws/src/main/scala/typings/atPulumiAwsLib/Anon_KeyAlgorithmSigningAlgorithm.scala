@@ -11,3 +11,18 @@ trait Anon_KeyAlgorithmSigningAlgorithm extends js.Object {
   var subject: atPulumiPulumiLib.outputMod.Input[Anon_CommonNameCountry]
 }
 
+object Anon_KeyAlgorithmSigningAlgorithm {
+  @scala.inline
+  def apply(
+    keyAlgorithm: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    signingAlgorithm: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    subject: atPulumiPulumiLib.outputMod.Input[Anon_CommonNameCountry]
+  ): Anon_KeyAlgorithmSigningAlgorithm = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyAlgorithm")(keyAlgorithm.asInstanceOf[js.Any])
+    __obj.updateDynamic("signingAlgorithm")(signingAlgorithm.asInstanceOf[js.Any])
+    __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_KeyAlgorithmSigningAlgorithm]
+  }
+}
+

@@ -14,3 +14,20 @@ trait Anon_Id extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Id {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    label: java.lang.String = null,
+    tooltip: java.lang.String = null,
+    value: java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Anon_Id = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Id]
+  }
+}
+

@@ -16,3 +16,13 @@ trait DeleteTokenParams extends js.Object {
   var scope: java.lang.String
 }
 
+object DeleteTokenParams {
+  @scala.inline
+  def apply(authorizedEntity: java.lang.String, scope: java.lang.String): DeleteTokenParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorizedEntity")(authorizedEntity)
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[DeleteTokenParams]
+  }
+}
+

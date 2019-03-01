@@ -186,3 +186,62 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var varyByCategories: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartSeriesCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    axisGroup: js.UndefOr[scala.Boolean] = js.undefined,
+    chartType: js.UndefOr[scala.Boolean] = js.undefined,
+    dataLabels: ChartDataLabelsLoadOptions = null,
+    doughnutHoleSize: js.UndefOr[scala.Boolean] = js.undefined,
+    explosion: js.UndefOr[scala.Boolean] = js.undefined,
+    filtered: js.UndefOr[scala.Boolean] = js.undefined,
+    firstSliceAngle: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartSeriesFormatLoadOptions = null,
+    gapWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    hasDataLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    invertIfNegative: js.UndefOr[scala.Boolean] = js.undefined,
+    markerBackgroundColor: js.UndefOr[scala.Boolean] = js.undefined,
+    markerForegroundColor: js.UndefOr[scala.Boolean] = js.undefined,
+    markerSize: js.UndefOr[scala.Boolean] = js.undefined,
+    markerStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    overlap: js.UndefOr[scala.Boolean] = js.undefined,
+    plotOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    points: ChartPointsCollectionLoadOptions = null,
+    secondPlotSize: js.UndefOr[scala.Boolean] = js.undefined,
+    showShadow: js.UndefOr[scala.Boolean] = js.undefined,
+    smooth: js.UndefOr[scala.Boolean] = js.undefined,
+    splitType: js.UndefOr[scala.Boolean] = js.undefined,
+    varyByCategories: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartSeriesCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(axisGroup)) __obj.updateDynamic("axisGroup")(axisGroup)
+    if (!js.isUndefined(chartType)) __obj.updateDynamic("chartType")(chartType)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (!js.isUndefined(doughnutHoleSize)) __obj.updateDynamic("doughnutHoleSize")(doughnutHoleSize)
+    if (!js.isUndefined(explosion)) __obj.updateDynamic("explosion")(explosion)
+    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered)
+    if (!js.isUndefined(firstSliceAngle)) __obj.updateDynamic("firstSliceAngle")(firstSliceAngle)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(gapWidth)) __obj.updateDynamic("gapWidth")(gapWidth)
+    if (!js.isUndefined(hasDataLabels)) __obj.updateDynamic("hasDataLabels")(hasDataLabels)
+    if (!js.isUndefined(invertIfNegative)) __obj.updateDynamic("invertIfNegative")(invertIfNegative)
+    if (!js.isUndefined(markerBackgroundColor)) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor)
+    if (!js.isUndefined(markerForegroundColor)) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor)
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize)
+    if (!js.isUndefined(markerStyle)) __obj.updateDynamic("markerStyle")(markerStyle)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap)
+    if (!js.isUndefined(plotOrder)) __obj.updateDynamic("plotOrder")(plotOrder)
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (!js.isUndefined(secondPlotSize)) __obj.updateDynamic("secondPlotSize")(secondPlotSize)
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
+    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth)
+    if (!js.isUndefined(splitType)) __obj.updateDynamic("splitType")(splitType)
+    if (!js.isUndefined(varyByCategories)) __obj.updateDynamic("varyByCategories")(varyByCategories)
+    __obj.asInstanceOf[ChartSeriesCollectionLoadOptions]
+  }
+}
+

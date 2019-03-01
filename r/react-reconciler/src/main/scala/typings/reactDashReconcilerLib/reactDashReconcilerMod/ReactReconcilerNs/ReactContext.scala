@@ -20,3 +20,32 @@ trait ReactContext[T] extends js.Object {
   def unstable_read(): T
 }
 
+object ReactContext {
+  @scala.inline
+  def apply[T](
+    $$typeof: js.Symbol | scala.Double,
+    Consumer: ReactContext[T],
+    Provider: ReactProviderType[T],
+    _currentValue: T,
+    _currentValue2: T,
+    _threadCount: scala.Double,
+    unstable_read: js.Function0[T],
+    _calculateChangedBits: js.Function2[/* a */ T, /* b */ T, scala.Double] = null,
+    _currentRenderer: js.Object = null,
+    _currentRenderer2: js.Object = null
+  ): ReactContext[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$$typeof")($$typeof.asInstanceOf[js.Any])
+    __obj.updateDynamic("Consumer")(Consumer)
+    __obj.updateDynamic("Provider")(Provider)
+    __obj.updateDynamic("_currentValue")(_currentValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("_currentValue2")(_currentValue2.asInstanceOf[js.Any])
+    __obj.updateDynamic("_threadCount")(_threadCount)
+    __obj.updateDynamic("unstable_read")(unstable_read)
+    if (_calculateChangedBits != null) __obj.updateDynamic("_calculateChangedBits")(_calculateChangedBits)
+    if (_currentRenderer != null) __obj.updateDynamic("_currentRenderer")(_currentRenderer)
+    if (_currentRenderer2 != null) __obj.updateDynamic("_currentRenderer2")(_currentRenderer2)
+    __obj.asInstanceOf[ReactContext[T]]
+  }
+}
+

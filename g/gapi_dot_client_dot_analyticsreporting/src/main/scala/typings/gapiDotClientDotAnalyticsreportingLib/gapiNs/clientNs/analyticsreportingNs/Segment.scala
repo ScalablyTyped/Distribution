@@ -12,3 +12,13 @@ trait Segment extends js.Object {
   var segmentId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Segment {
+  @scala.inline
+  def apply(dynamicSegment: DynamicSegment = null, segmentId: java.lang.String = null): Segment = {
+    val __obj = js.Dynamic.literal()
+    if (dynamicSegment != null) __obj.updateDynamic("dynamicSegment")(dynamicSegment)
+    if (segmentId != null) __obj.updateDynamic("segmentId")(segmentId)
+    __obj.asInstanceOf[Segment]
+  }
+}
+

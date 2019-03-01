@@ -24,3 +24,20 @@ trait _Impl extends js.Object {
   var trigger: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    accordion: java.lang.String,
+    content: java.lang.String,
+    title: java.lang.String,
+    trigger: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accordion")(accordion)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("trigger")(trigger)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

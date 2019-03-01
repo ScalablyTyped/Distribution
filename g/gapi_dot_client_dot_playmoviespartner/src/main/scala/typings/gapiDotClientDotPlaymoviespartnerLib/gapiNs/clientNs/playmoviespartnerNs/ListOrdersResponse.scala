@@ -14,3 +14,18 @@ trait ListOrdersResponse extends js.Object {
   var totalSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListOrdersResponse {
+  @scala.inline
+  def apply(
+    nextPageToken: java.lang.String = null,
+    orders: js.Array[Order] = null,
+    totalSize: scala.Int | scala.Double = null
+  ): ListOrdersResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (orders != null) __obj.updateDynamic("orders")(orders)
+    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListOrdersResponse]
+  }
+}
+

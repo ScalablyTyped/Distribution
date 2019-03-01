@@ -27,3 +27,14 @@ trait ILocation extends js.Object {
   var longitude: scala.Double
 }
 
+object ILocation {
+  @scala.inline
+  def apply(altitude: scala.Double, latitude: scala.Double, longitude: scala.Double): ILocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("altitude")(altitude)
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    __obj.asInstanceOf[ILocation]
+  }
+}
+

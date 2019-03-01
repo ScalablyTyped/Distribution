@@ -33,3 +33,22 @@ trait TouchBarSegmentedControlConstructorOptions extends js.Object {
   def change(selectedIndex: scala.Double, isSelected: scala.Boolean): scala.Unit
 }
 
+object TouchBarSegmentedControlConstructorOptions {
+  @scala.inline
+  def apply(
+    change: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    segments: js.Array[SegmentedControlSegment],
+    mode: electronLib.electronLibStrings.single | electronLib.electronLibStrings.multiple | electronLib.electronLibStrings.buttons = null,
+    segmentStyle: electronLib.electronLibStrings.automatic | electronLib.electronLibStrings.rounded | electronLib.electronLibStrings.`textured-rounded` | electronLib.electronLibStrings.`round-rect` | electronLib.electronLibStrings.`textured-square` | electronLib.electronLibStrings.capsule | electronLib.electronLibStrings.`small-square` | electronLib.electronLibStrings.separated = null,
+    selectedIndex: scala.Int | scala.Double = null
+  ): TouchBarSegmentedControlConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("change")(change)
+    __obj.updateDynamic("segments")(segments)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (segmentStyle != null) __obj.updateDynamic("segmentStyle")(segmentStyle.asInstanceOf[js.Any])
+    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TouchBarSegmentedControlConstructorOptions]
+  }
+}
+

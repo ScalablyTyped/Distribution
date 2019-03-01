@@ -15,3 +15,26 @@ trait SearchShardsResponseShard extends js.Object {
   var state: java.lang.String
 }
 
+object SearchShardsResponseShard {
+  @scala.inline
+  def apply(
+    allocation_id: elasticsearchLib.Anon_Id,
+    index: java.lang.String,
+    node: java.lang.String,
+    primary: scala.Boolean,
+    relocating_node: js.Any,
+    share: scala.Double,
+    state: java.lang.String
+  ): SearchShardsResponseShard = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allocation_id")(allocation_id)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("node")(node)
+    __obj.updateDynamic("primary")(primary)
+    __obj.updateDynamic("relocating_node")(relocating_node)
+    __obj.updateDynamic("share")(share)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[SearchShardsResponseShard]
+  }
+}
+

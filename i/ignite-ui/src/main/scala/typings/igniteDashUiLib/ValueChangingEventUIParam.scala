@@ -24,3 +24,15 @@ trait ValueChangingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ValueChangingEventUIParam {
+  @scala.inline
+  def apply(editorInput: js.Any = null, newValue: js.Any = null, oldValue: js.Any = null, owner: js.Any = null): ValueChangingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput)
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ValueChangingEventUIParam]
+  }
+}
+

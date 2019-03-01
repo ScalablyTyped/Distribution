@@ -70,3 +70,42 @@ trait SystemInfo extends js.Object {
   var windowWidth: scala.Double
 }
 
+object SystemInfo {
+  @scala.inline
+  def apply(
+    app: aliDashAppLib.aliDashAppLibStrings.alipay | java.lang.String,
+    brand: java.lang.String,
+    currentBattery: java.lang.String,
+    fontSizeSetting: scala.Double,
+    language: java.lang.String,
+    model: java.lang.String,
+    pixelRatio: scala.Double,
+    platform: aliDashAppLib.aliDashAppLibStrings.Android | aliDashAppLib.aliDashAppLibStrings.iOS | java.lang.String,
+    screenHeight: scala.Double,
+    screenWidth: scala.Double,
+    storage: java.lang.String,
+    system: java.lang.String,
+    version: java.lang.String,
+    windowHeight: scala.Double,
+    windowWidth: scala.Double
+  ): SystemInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
+    __obj.updateDynamic("brand")(brand)
+    __obj.updateDynamic("currentBattery")(currentBattery)
+    __obj.updateDynamic("fontSizeSetting")(fontSizeSetting)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("pixelRatio")(pixelRatio)
+    __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    __obj.updateDynamic("screenHeight")(screenHeight)
+    __obj.updateDynamic("screenWidth")(screenWidth)
+    __obj.updateDynamic("storage")(storage)
+    __obj.updateDynamic("system")(system)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("windowHeight")(windowHeight)
+    __obj.updateDynamic("windowWidth")(windowWidth)
+    __obj.asInstanceOf[SystemInfo]
+  }
+}
+

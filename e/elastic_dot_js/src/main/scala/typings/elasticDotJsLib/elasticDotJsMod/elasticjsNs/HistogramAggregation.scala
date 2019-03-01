@@ -80,3 +80,42 @@ trait HistogramAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object HistogramAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, HistogramAggregation],
+    aggregation: js.Function1[Aggregation, HistogramAggregation],
+    extendedBounds: js.Function2[scala.Double, scala.Double, HistogramAggregation],
+    field: js.Function1[java.lang.String, HistogramAggregation],
+    format: js.Function1[java.lang.String, HistogramAggregation],
+    interval: js.Function1[scala.Double, HistogramAggregation],
+    keyed: js.Function1[scala.Boolean, HistogramAggregation],
+    lang: js.Function1[java.lang.String, HistogramAggregation],
+    minDocCount: js.Function1[scala.Double, HistogramAggregation],
+    order: js.Function2[java.lang.String, java.lang.String, HistogramAggregation],
+    params: js.Function1[js.Object, HistogramAggregation],
+    script: js.Function1[java.lang.String, HistogramAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, HistogramAggregation],
+    toJSON: js.Function0[js.Any]
+  ): HistogramAggregation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("agg")(agg)
+    __obj.updateDynamic("aggregation")(aggregation)
+    __obj.updateDynamic("extendedBounds")(extendedBounds)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("keyed")(keyed)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("minDocCount")(minDocCount)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("scriptValuesSorted")(scriptValuesSorted)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[HistogramAggregation]
+  }
+}
+

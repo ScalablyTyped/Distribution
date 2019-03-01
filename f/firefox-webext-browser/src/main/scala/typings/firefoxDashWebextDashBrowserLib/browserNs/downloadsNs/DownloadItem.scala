@@ -42,3 +42,52 @@ trait DownloadItem extends js.Object {
   var url: java.lang.String
 }
 
+object DownloadItem {
+  @scala.inline
+  def apply(
+    bytesReceived: scala.Double,
+    canResume: scala.Boolean,
+    danger: DangerType,
+    exists: scala.Boolean,
+    fileSize: scala.Double,
+    filename: java.lang.String,
+    id: scala.Double,
+    incognito: scala.Boolean,
+    mime: java.lang.String,
+    paused: scala.Boolean,
+    startTime: java.lang.String,
+    state: State,
+    totalBytes: scala.Double,
+    url: java.lang.String,
+    byExtensionId: java.lang.String = null,
+    byExtensionName: java.lang.String = null,
+    endTime: java.lang.String = null,
+    error: InterruptReason = null,
+    estimatedEndTime: java.lang.String = null,
+    referrer: java.lang.String = null
+  ): DownloadItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bytesReceived")(bytesReceived)
+    __obj.updateDynamic("canResume")(canResume)
+    __obj.updateDynamic("danger")(danger)
+    __obj.updateDynamic("exists")(exists)
+    __obj.updateDynamic("fileSize")(fileSize)
+    __obj.updateDynamic("filename")(filename)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("incognito")(incognito)
+    __obj.updateDynamic("mime")(mime)
+    __obj.updateDynamic("paused")(paused)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("totalBytes")(totalBytes)
+    __obj.updateDynamic("url")(url)
+    if (byExtensionId != null) __obj.updateDynamic("byExtensionId")(byExtensionId)
+    if (byExtensionName != null) __obj.updateDynamic("byExtensionName")(byExtensionName)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (estimatedEndTime != null) __obj.updateDynamic("estimatedEndTime")(estimatedEndTime)
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    __obj.asInstanceOf[DownloadItem]
+  }
+}
+

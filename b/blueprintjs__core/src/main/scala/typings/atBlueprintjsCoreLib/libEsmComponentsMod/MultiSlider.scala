@@ -15,7 +15,7 @@ class MultiSlider ()
 @js.native
 object MultiSlider extends js.Object {
   @JSName("Handle")
-  var Handle_Original: reactLib.reactMod.ReactNs.StatelessComponent[atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps] = js.native
+  var Handle_Original: reactLib.reactMod.ReactNs.FunctionComponent[atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps] = js.native
   var defaultProps: atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.IMultiSliderProps = js.native
   var defaultSliderProps: atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.ISliderBaseProps = js.native
   var displayName: java.lang.String = js.native

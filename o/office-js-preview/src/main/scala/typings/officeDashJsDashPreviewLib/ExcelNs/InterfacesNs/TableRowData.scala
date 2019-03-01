@@ -23,3 +23,13 @@ trait TableRowData extends js.Object {
   var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
 }
 
+object TableRowData {
+  @scala.inline
+  def apply(index: scala.Int | scala.Double = null, values: js.Array[js.Array[_]] = null): TableRowData = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[TableRowData]
+  }
+}
+

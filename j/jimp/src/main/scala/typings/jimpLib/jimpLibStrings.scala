@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 object jimpLibStrings {
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any extends ListenableName
   
   @js.native
-  sealed trait background extends js.Object
+  sealed trait background extends ChangeName
   
   @js.native
-  sealed trait `before-change` extends js.Object
+  sealed trait `before-change` extends ListenableName
   
   @js.native
-  sealed trait `before-clone` extends js.Object
+  sealed trait `before-clone` extends ListenableName
   
   @js.native
   sealed trait bezierInterpolation extends js.Object
@@ -28,31 +28,31 @@ object jimpLibStrings {
   sealed trait bilinearInterpolation extends js.Object
   
   @js.native
-  sealed trait blue extends js.Object
+  sealed trait blue extends ColorActionName
   
   @js.native
-  sealed trait changed extends js.Object
+  sealed trait changed extends ListenableName
   
   @js.native
   sealed trait clone extends js.Object
   
   @js.native
-  sealed trait cloned extends js.Object
+  sealed trait cloned extends ListenableName
   
   @js.native
   sealed trait constructor extends js.Object
   
   @js.native
-  sealed trait crop extends js.Object
+  sealed trait crop extends ChangeName
   
   @js.native
-  sealed trait green extends js.Object
+  sealed trait green extends ColorActionName
   
   @js.native
   sealed trait hermiteInterpolation extends js.Object
   
   @js.native
-  sealed trait hue extends js.Object
+  sealed trait hue extends ColorActionName
   
   @js.native
   sealed trait `image/bmp` extends js.Object
@@ -76,28 +76,28 @@ object jimpLibStrings {
   sealed trait `image/x-ms-bmp` extends js.Object
   
   @js.native
-  sealed trait initialized extends js.Object
+  sealed trait initialized extends ListenableName
   
   @js.native
-  sealed trait mix extends js.Object
+  sealed trait mix extends ColorActionName
   
   @js.native
   sealed trait nearestNeighbor extends js.Object
   
   @js.native
-  sealed trait red extends js.Object
+  sealed trait red extends ColorActionName
   
   @js.native
-  sealed trait scan extends js.Object
+  sealed trait scan extends ChangeName
   
   @js.native
-  sealed trait shade extends js.Object
+  sealed trait shade extends ColorActionName
   
   @js.native
-  sealed trait tint extends js.Object
+  sealed trait tint extends ColorActionName
   
   @js.native
-  sealed trait xor extends js.Object
+  sealed trait xor extends ColorActionName
   
   @scala.inline
   def any: any = "any".asInstanceOf[any]

@@ -12,3 +12,20 @@ trait Anon_AnimatedIndex extends js.Object {
   var viewPosition: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AnimatedIndex {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    viewOffset: scala.Int | scala.Double = null,
+    viewPosition: scala.Int | scala.Double = null
+  ): Anon_AnimatedIndex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (viewOffset != null) __obj.updateDynamic("viewOffset")(viewOffset.asInstanceOf[js.Any])
+    if (viewPosition != null) __obj.updateDynamic("viewPosition")(viewPosition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AnimatedIndex]
+  }
+}
+

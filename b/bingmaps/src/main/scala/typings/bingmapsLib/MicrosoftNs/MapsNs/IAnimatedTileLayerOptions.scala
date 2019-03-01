@@ -20,3 +20,24 @@ trait IAnimatedTileLayerOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IAnimatedTileLayerOptions {
+  @scala.inline
+  def apply(
+    mercator: js.Array[TileSource],
+    autoPlay: js.UndefOr[scala.Boolean] = js.undefined,
+    frameRate: scala.Int | scala.Double = null,
+    loadingScreen: CustomOverlay = null,
+    maxTotalLoadTime: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): IAnimatedTileLayerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mercator")(mercator)
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
+    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
+    if (loadingScreen != null) __obj.updateDynamic("loadingScreen")(loadingScreen)
+    if (maxTotalLoadTime != null) __obj.updateDynamic("maxTotalLoadTime")(maxTotalLoadTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[IAnimatedTileLayerOptions]
+  }
+}
+

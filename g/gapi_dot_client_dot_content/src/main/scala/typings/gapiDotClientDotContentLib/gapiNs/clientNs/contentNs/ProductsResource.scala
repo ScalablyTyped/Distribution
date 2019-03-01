@@ -21,3 +21,37 @@ trait ProductsResource extends js.Object {
   def list(request: gapiDotClientDotContentLib.Anon_AltFieldsIncludeInvalidInsertedItems): gapiDotClientLib.gapiNs.clientNs.Request[ProductsListResponse]
 }
 
+object ProductsResource {
+  @scala.inline
+  def apply(
+    custombatch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductsCustomBatchResponse]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDryRunFieldsKeyMerchantId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantIdOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Product]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDryRunFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Product]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFieldsIncludeInvalidInsertedItems, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductsListResponse]
+    ]
+  ): ProductsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custombatch")(custombatch)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ProductsResource]
+  }
+}
+

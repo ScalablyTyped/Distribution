@@ -11,3 +11,14 @@ trait CertificateParseError
   var name: java.lang.String
 }
 
+object CertificateParseError {
+  @scala.inline
+  def apply(message: java.lang.String, name: java.lang.String, stack: java.lang.String = null): CertificateParseError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[CertificateParseError]
+  }
+}
+

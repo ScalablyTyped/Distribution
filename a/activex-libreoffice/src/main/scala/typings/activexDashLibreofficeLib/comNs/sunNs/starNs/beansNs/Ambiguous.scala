@@ -23,3 +23,13 @@ trait Ambiguous[T] extends js.Object {
   var Value: T
 }
 
+object Ambiguous {
+  @scala.inline
+  def apply[T](IsAmbiguous: scala.Boolean, Value: T): Ambiguous[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IsAmbiguous")(IsAmbiguous)
+    __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ambiguous[T]]
+  }
+}
+

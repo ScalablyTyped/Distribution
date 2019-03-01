@@ -21,3 +21,14 @@ trait ASPxClientVerticalGridRecordClickEventArgs extends ASPxClientCancelEventAr
   var visibleIndex: scala.Double
 }
 
+object ASPxClientVerticalGridRecordClickEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, htmlEvent: js.Object, visibleIndex: scala.Double): ASPxClientVerticalGridRecordClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[ASPxClientVerticalGridRecordClickEventArgs]
+  }
+}
+

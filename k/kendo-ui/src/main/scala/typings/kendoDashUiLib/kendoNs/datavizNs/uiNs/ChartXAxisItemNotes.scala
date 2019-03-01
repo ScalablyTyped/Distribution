@@ -14,3 +14,24 @@ trait ChartXAxisItemNotes extends js.Object {
   var visual: js.UndefOr[js.Function] = js.undefined
 }
 
+object ChartXAxisItemNotes {
+  @scala.inline
+  def apply(
+    data: js.Array[ChartXAxisItemNotesDataItem] = null,
+    icon: ChartXAxisItemNotesIcon = null,
+    label: ChartXAxisItemNotesLabel = null,
+    line: ChartXAxisItemNotesLine = null,
+    position: java.lang.String = null,
+    visual: js.Function = null
+  ): ChartXAxisItemNotes = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (visual != null) __obj.updateDynamic("visual")(visual)
+    __obj.asInstanceOf[ChartXAxisItemNotes]
+  }
+}
+

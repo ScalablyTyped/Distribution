@@ -9,3 +9,13 @@ trait ConversationsGrant extends Grant {
   var configurationProfileSid: java.lang.String
 }
 
+object ConversationsGrant {
+  @scala.inline
+  def apply(configurationProfileSid: java.lang.String, toPayload: js.Function0[ConversationsGrantPayload]): ConversationsGrant = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configurationProfileSid")(configurationProfileSid)
+    __obj.updateDynamic("toPayload")(toPayload)
+    __obj.asInstanceOf[ConversationsGrant]
+  }
+}
+

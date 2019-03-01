@@ -65,3 +65,28 @@ trait PageData extends js.Object {
   var webUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PageData {
+  @scala.inline
+  def apply(
+    classNotebookPageSource: java.lang.String = null,
+    clientUrl: java.lang.String = null,
+    contents: js.Array[PageContentData] = null,
+    id: java.lang.String = null,
+    inkAnalysisOrNull: InkAnalysisData = null,
+    pageLevel: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    webUrl: java.lang.String = null
+  ): PageData = {
+    val __obj = js.Dynamic.literal()
+    if (classNotebookPageSource != null) __obj.updateDynamic("classNotebookPageSource")(classNotebookPageSource)
+    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl)
+    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inkAnalysisOrNull != null) __obj.updateDynamic("inkAnalysisOrNull")(inkAnalysisOrNull)
+    if (pageLevel != null) __obj.updateDynamic("pageLevel")(pageLevel.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl)
+    __obj.asInstanceOf[PageData]
+  }
+}
+

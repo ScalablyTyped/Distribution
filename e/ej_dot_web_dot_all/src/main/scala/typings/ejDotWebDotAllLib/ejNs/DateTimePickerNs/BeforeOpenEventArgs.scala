@@ -23,3 +23,22 @@ trait BeforeOpenEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeOpenEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    element: stdLib.HTMLElement = null,
+    events: js.Any = null,
+    model: Model = null,
+    `type`: java.lang.String = null
+  ): BeforeOpenEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeOpenEventArgs]
+  }
+}
+

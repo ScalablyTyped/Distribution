@@ -7,43 +7,53 @@ import scala.scalajs.js.annotation._
 
 object inboxsdkLibStrings {
   @js.native
-  sealed trait CHAT extends js.Object
+  sealed trait CHAT
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.RouterNs.RouteTypes
   
   @js.native
-  sealed trait COLLAPSED extends js.Object
+  sealed trait COLLAPSED
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.MessageViewViewStates
   
   @js.native
   sealed trait CREATE extends js.Object
   
   @js.native
-  sealed trait CUSTOM extends js.Object
+  sealed trait CUSTOM
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.RouterNs.RouteTypes
   
   @js.native
   sealed trait DROPDOWN_BUTTON extends js.Object
   
   @js.native
-  sealed trait EXPANDED extends js.Object
+  sealed trait EXPANDED
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.MessageViewViewStates
   
   @js.native
-  sealed trait HIDDEN extends js.Object
+  sealed trait HIDDEN
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.MessageViewViewStates
   
   @js.native
   sealed trait ICON_BUTTON extends js.Object
   
   @js.native
-  sealed trait INBOX_STATE extends js.Object
+  sealed trait INBOX_STATE
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.ToolbarsNs.SectionNames
   
   @js.native
   sealed trait LINK extends js.Object
   
   @js.native
-  sealed trait LIST extends js.Object
+  sealed trait LIST
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.RouterNs.RouteTypes
+       with inboxsdkLib.inboxsdkMod.InboxSDKNs.ToolbarsNs.ToolbarButtonPosition
   
   @js.native
-  sealed trait MANAGE extends js.Object
+  sealed trait MANAGE
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.NavMenuNs.NavItemTypes
   
   @js.native
-  sealed trait METADATA_STATE extends js.Object
+  sealed trait METADATA_STATE
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.ToolbarsNs.SectionNames
   
   @js.native
   sealed trait MODIFIER extends js.Object
@@ -52,16 +62,19 @@ object inboxsdkLibStrings {
   sealed trait MORE extends js.Object
   
   @js.native
-  sealed trait NAVIGATION extends js.Object
+  sealed trait NAVIGATION
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.NavMenuNs.NavItemTypes
   
   @js.native
-  sealed trait OTHER extends js.Object
+  sealed trait OTHER
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.ToolbarsNs.SectionNames
   
   @js.native
   sealed trait PRIMARY_ACTION extends js.Object
   
   @js.native
-  sealed trait ROW extends js.Object
+  sealed trait ROW
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.ToolbarsNs.ToolbarButtonPosition
   
   @js.native
   sealed trait SECONDARY_ACTION extends js.Object
@@ -70,13 +83,17 @@ object inboxsdkLibStrings {
   sealed trait SEND_ACTION extends js.Object
   
   @js.native
-  sealed trait SETTINGS extends js.Object
+  sealed trait SETTINGS
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.RouterNs.RouteTypes
   
   @js.native
-  sealed trait THREAD extends js.Object
+  sealed trait THREAD
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.RouterNs.RouteTypes
+       with inboxsdkLib.inboxsdkMod.InboxSDKNs.ToolbarsNs.ToolbarButtonPosition
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends inboxsdkLib.inboxsdkMod.InboxSDKNs.RouterNs.RouteTypes
   
   @js.native
   sealed trait activate extends js.Object

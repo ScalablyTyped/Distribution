@@ -13,3 +13,28 @@ trait XSequenceOutputStream extends XOutputStream {
   def getWrittenBytes(): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XSequenceOutputStream {
+  @scala.inline
+  def apply(
+    WrittenBytes: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    closeOutput: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    getWrittenBytes: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+  ): XSequenceOutputStream = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("WrittenBytes")(WrittenBytes)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("closeOutput")(closeOutput)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("getWrittenBytes")(getWrittenBytes)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("writeBytes")(writeBytes)
+    __obj.asInstanceOf[XSequenceOutputStream]
+  }
+}
+

@@ -51,3 +51,28 @@ trait ASPxClientAppointmentFlags extends js.Object {
   var allowResize: scala.Boolean
 }
 
+object ASPxClientAppointmentFlags {
+  @scala.inline
+  def apply(
+    allowConflicts: scala.Boolean,
+    allowCopy: scala.Boolean,
+    allowDelete: scala.Boolean,
+    allowDrag: scala.Boolean,
+    allowDragBetweenResources: scala.Boolean,
+    allowEdit: scala.Boolean,
+    allowInplaceEditor: scala.Boolean,
+    allowResize: scala.Boolean
+  ): ASPxClientAppointmentFlags = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowConflicts")(allowConflicts)
+    __obj.updateDynamic("allowCopy")(allowCopy)
+    __obj.updateDynamic("allowDelete")(allowDelete)
+    __obj.updateDynamic("allowDrag")(allowDrag)
+    __obj.updateDynamic("allowDragBetweenResources")(allowDragBetweenResources)
+    __obj.updateDynamic("allowEdit")(allowEdit)
+    __obj.updateDynamic("allowInplaceEditor")(allowInplaceEditor)
+    __obj.updateDynamic("allowResize")(allowResize)
+    __obj.asInstanceOf[ASPxClientAppointmentFlags]
+  }
+}
+

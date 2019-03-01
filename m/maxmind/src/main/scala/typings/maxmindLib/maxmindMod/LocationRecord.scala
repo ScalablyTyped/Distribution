@@ -15,3 +15,26 @@ trait LocationRecord extends js.Object {
   val time_zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LocationRecord {
+  @scala.inline
+  def apply(
+    accuracy_radius: scala.Double,
+    latitude: scala.Double,
+    longitude: scala.Double,
+    average_income: scala.Int | scala.Double = null,
+    metro_code: scala.Int | scala.Double = null,
+    population_density: scala.Int | scala.Double = null,
+    time_zone: java.lang.String = null
+  ): LocationRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accuracy_radius")(accuracy_radius)
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    if (average_income != null) __obj.updateDynamic("average_income")(average_income.asInstanceOf[js.Any])
+    if (metro_code != null) __obj.updateDynamic("metro_code")(metro_code.asInstanceOf[js.Any])
+    if (population_density != null) __obj.updateDynamic("population_density")(population_density.asInstanceOf[js.Any])
+    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone)
+    __obj.asInstanceOf[LocationRecord]
+  }
+}
+

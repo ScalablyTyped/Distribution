@@ -12,3 +12,17 @@ trait RadioProps extends js.Object {
   var `type`: reactDashBootstrapLib.reactDashBootstrapLibStrings.radio
 }
 
+object RadioProps {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: reactDashBootstrapLib.reactDashBootstrapLibStrings.radio,
+    onChange: js.Function1[/* value */ js.Any, scala.Unit] = null
+  ): RadioProps = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    __obj.asInstanceOf[RadioProps]
+  }
+}
+

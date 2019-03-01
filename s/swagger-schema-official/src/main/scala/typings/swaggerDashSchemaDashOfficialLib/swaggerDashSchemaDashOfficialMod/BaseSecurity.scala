@@ -10,3 +10,12 @@ trait BaseSecurity extends js.Object {
   var `type`: java.lang.String
 }
 
+object BaseSecurity {
+  @scala.inline
+  def apply(`type`: java.lang.String, description: java.lang.String = null): BaseSecurity = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[BaseSecurity]
+  }
+}
+

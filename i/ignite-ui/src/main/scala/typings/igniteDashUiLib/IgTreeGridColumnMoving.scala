@@ -229,3 +229,107 @@ trait IgTreeGridColumnMoving
   var scrollSpeedMultiplier: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgTreeGridColumnMoving {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTreeGridColumnMoving
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    addMovingDropdown: js.UndefOr[scala.Boolean] = js.undefined,
+    columnDragCanceled: ColumnDragCanceledEvent = null,
+    columnDragEnd: ColumnDragEndEvent = null,
+    columnDragStart: ColumnDragStartEvent = null,
+    columnMoved: ColumnMovedEvent = null,
+    columnMoving: ColumnMovingEvent = null,
+    columnMovingDialogContainment: java.lang.String = null,
+    columnSettings: js.Array[IgGridColumnMovingColumnSetting] = null,
+    dialogWidget: java.lang.String = null,
+    dragHelperOpacity: scala.Int | scala.Double = null,
+    dropDownMoveFirstText: java.lang.String = null,
+    dropDownMoveLastText: java.lang.String = null,
+    dropDownMoveLeftText: java.lang.String = null,
+    dropDownMoveRightText: java.lang.String = null,
+    featureChooserSubmenuText: java.lang.String = null,
+    hideHeaderContentsDuringDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: IgGridColumnMovingLocale = null,
+    mode: java.lang.String = null,
+    moveType: java.lang.String = null,
+    movingAcceptanceTolerance: scala.Int | scala.Double = null,
+    movingDialogAnimationDuration: scala.Int | scala.Double = null,
+    movingDialogCaptionButtonAsc: java.lang.String = null,
+    movingDialogCaptionButtonDesc: java.lang.String = null,
+    movingDialogCaptionText: java.lang.String = null,
+    movingDialogClosed: MovingDialogClosedEvent = null,
+    movingDialogClosing: MovingDialogClosingEvent = null,
+    movingDialogContentsRendered: MovingDialogContentsRenderedEvent = null,
+    movingDialogContentsRendering: MovingDialogContentsRenderingEvent = null,
+    movingDialogDisplayText: java.lang.String = null,
+    movingDialogDragColumnMoved: MovingDialogDragColumnMovedEvent = null,
+    movingDialogDragColumnMoving: MovingDialogDragColumnMovingEvent = null,
+    movingDialogDragged: MovingDialogDraggedEvent = null,
+    movingDialogDropTooltipMarkup: java.lang.String = null,
+    movingDialogDropTooltipText: java.lang.String = null,
+    movingDialogHeight: scala.Int | scala.Double = null,
+    movingDialogMoveDownButtonPressed: MovingDialogMoveDownButtonPressedEvent = null,
+    movingDialogMoveUpButtonPressed: MovingDialogMoveUpButtonPressedEvent = null,
+    movingDialogOpened: MovingDialogOpenedEvent = null,
+    movingDialogOpening: MovingDialogOpeningEvent = null,
+    movingDialogWidth: scala.Int | scala.Double = null,
+    movingScrollTolerance: scala.Int | scala.Double = null,
+    movingToolTipMove: java.lang.String = null,
+    scrollDelta: scala.Int | scala.Double = null,
+    scrollSpeedMultiplier: scala.Int | scala.Double = null
+  ): IgTreeGridColumnMoving = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(addMovingDropdown)) __obj.updateDynamic("addMovingDropdown")(addMovingDropdown)
+    if (columnDragCanceled != null) __obj.updateDynamic("columnDragCanceled")(columnDragCanceled)
+    if (columnDragEnd != null) __obj.updateDynamic("columnDragEnd")(columnDragEnd)
+    if (columnDragStart != null) __obj.updateDynamic("columnDragStart")(columnDragStart)
+    if (columnMoved != null) __obj.updateDynamic("columnMoved")(columnMoved)
+    if (columnMoving != null) __obj.updateDynamic("columnMoving")(columnMoving)
+    if (columnMovingDialogContainment != null) __obj.updateDynamic("columnMovingDialogContainment")(columnMovingDialogContainment)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
+    if (dragHelperOpacity != null) __obj.updateDynamic("dragHelperOpacity")(dragHelperOpacity.asInstanceOf[js.Any])
+    if (dropDownMoveFirstText != null) __obj.updateDynamic("dropDownMoveFirstText")(dropDownMoveFirstText)
+    if (dropDownMoveLastText != null) __obj.updateDynamic("dropDownMoveLastText")(dropDownMoveLastText)
+    if (dropDownMoveLeftText != null) __obj.updateDynamic("dropDownMoveLeftText")(dropDownMoveLeftText)
+    if (dropDownMoveRightText != null) __obj.updateDynamic("dropDownMoveRightText")(dropDownMoveRightText)
+    if (featureChooserSubmenuText != null) __obj.updateDynamic("featureChooserSubmenuText")(featureChooserSubmenuText)
+    if (!js.isUndefined(hideHeaderContentsDuringDrag)) __obj.updateDynamic("hideHeaderContentsDuringDrag")(hideHeaderContentsDuringDrag)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (moveType != null) __obj.updateDynamic("moveType")(moveType)
+    if (movingAcceptanceTolerance != null) __obj.updateDynamic("movingAcceptanceTolerance")(movingAcceptanceTolerance.asInstanceOf[js.Any])
+    if (movingDialogAnimationDuration != null) __obj.updateDynamic("movingDialogAnimationDuration")(movingDialogAnimationDuration.asInstanceOf[js.Any])
+    if (movingDialogCaptionButtonAsc != null) __obj.updateDynamic("movingDialogCaptionButtonAsc")(movingDialogCaptionButtonAsc)
+    if (movingDialogCaptionButtonDesc != null) __obj.updateDynamic("movingDialogCaptionButtonDesc")(movingDialogCaptionButtonDesc)
+    if (movingDialogCaptionText != null) __obj.updateDynamic("movingDialogCaptionText")(movingDialogCaptionText)
+    if (movingDialogClosed != null) __obj.updateDynamic("movingDialogClosed")(movingDialogClosed)
+    if (movingDialogClosing != null) __obj.updateDynamic("movingDialogClosing")(movingDialogClosing)
+    if (movingDialogContentsRendered != null) __obj.updateDynamic("movingDialogContentsRendered")(movingDialogContentsRendered)
+    if (movingDialogContentsRendering != null) __obj.updateDynamic("movingDialogContentsRendering")(movingDialogContentsRendering)
+    if (movingDialogDisplayText != null) __obj.updateDynamic("movingDialogDisplayText")(movingDialogDisplayText)
+    if (movingDialogDragColumnMoved != null) __obj.updateDynamic("movingDialogDragColumnMoved")(movingDialogDragColumnMoved)
+    if (movingDialogDragColumnMoving != null) __obj.updateDynamic("movingDialogDragColumnMoving")(movingDialogDragColumnMoving)
+    if (movingDialogDragged != null) __obj.updateDynamic("movingDialogDragged")(movingDialogDragged)
+    if (movingDialogDropTooltipMarkup != null) __obj.updateDynamic("movingDialogDropTooltipMarkup")(movingDialogDropTooltipMarkup)
+    if (movingDialogDropTooltipText != null) __obj.updateDynamic("movingDialogDropTooltipText")(movingDialogDropTooltipText)
+    if (movingDialogHeight != null) __obj.updateDynamic("movingDialogHeight")(movingDialogHeight.asInstanceOf[js.Any])
+    if (movingDialogMoveDownButtonPressed != null) __obj.updateDynamic("movingDialogMoveDownButtonPressed")(movingDialogMoveDownButtonPressed)
+    if (movingDialogMoveUpButtonPressed != null) __obj.updateDynamic("movingDialogMoveUpButtonPressed")(movingDialogMoveUpButtonPressed)
+    if (movingDialogOpened != null) __obj.updateDynamic("movingDialogOpened")(movingDialogOpened)
+    if (movingDialogOpening != null) __obj.updateDynamic("movingDialogOpening")(movingDialogOpening)
+    if (movingDialogWidth != null) __obj.updateDynamic("movingDialogWidth")(movingDialogWidth.asInstanceOf[js.Any])
+    if (movingScrollTolerance != null) __obj.updateDynamic("movingScrollTolerance")(movingScrollTolerance.asInstanceOf[js.Any])
+    if (movingToolTipMove != null) __obj.updateDynamic("movingToolTipMove")(movingToolTipMove)
+    if (scrollDelta != null) __obj.updateDynamic("scrollDelta")(scrollDelta.asInstanceOf[js.Any])
+    if (scrollSpeedMultiplier != null) __obj.updateDynamic("scrollSpeedMultiplier")(scrollSpeedMultiplier.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgTreeGridColumnMoving]
+  }
+}
+

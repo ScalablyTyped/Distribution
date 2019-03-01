@@ -20,3 +20,20 @@ trait BufferEndEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BufferEndEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    isBuffering: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): BufferEndEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(isBuffering)) __obj.updateDynamic("isBuffering")(isBuffering)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BufferEndEventArgs]
+  }
+}
+

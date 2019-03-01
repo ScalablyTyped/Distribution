@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object scDashChannelLibStrings {
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends scDashChannelLib.scDashChannelMod.ChannelState
   
   @js.native
-  sealed trait subscribed extends js.Object
+  sealed trait subscribed
+    extends scDashChannelLib.scDashChannelMod.ChannelState
   
   @js.native
-  sealed trait unsubscribed extends js.Object
+  sealed trait unsubscribed
+    extends scDashChannelLib.scDashChannelMod.ChannelState
   
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]

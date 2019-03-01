@@ -51,3 +51,44 @@ trait ConceptMapGroup extends BackboneElement {
   var unmapped: js.UndefOr[ConceptMapGroupUnmapped] = js.undefined
 }
 
+object ConceptMapGroup {
+  @scala.inline
+  def apply(
+    element: js.Array[ConceptMapGroupElement],
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _source: Element = null,
+    _sourceVersion: Element = null,
+    _target: Element = null,
+    _targetVersion: Element = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null,
+    source: uri = null,
+    sourceVersion: java.lang.String = null,
+    target: uri = null,
+    targetVersion: java.lang.String = null,
+    unmapped: ConceptMapGroupUnmapped = null
+  ): ConceptMapGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_source != null) __obj.updateDynamic("_source")(_source)
+    if (_sourceVersion != null) __obj.updateDynamic("_sourceVersion")(_sourceVersion)
+    if (_target != null) __obj.updateDynamic("_target")(_target)
+    if (_targetVersion != null) __obj.updateDynamic("_targetVersion")(_targetVersion)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (targetVersion != null) __obj.updateDynamic("targetVersion")(targetVersion)
+    if (unmapped != null) __obj.updateDynamic("unmapped")(unmapped)
+    __obj.asInstanceOf[ConceptMapGroup]
+  }
+}
+

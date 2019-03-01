@@ -16,3 +16,24 @@ trait Anon_Altitude extends js.Object {
   var pitch: scala.Double
 }
 
+object Anon_Altitude {
+  @scala.inline
+  def apply(
+    altitude: scala.Double,
+    bearing: scala.Double,
+    height: scala.Double,
+    pitch: scala.Double,
+    center: viewportDashMercatorDashProjectLib.viewportDashMercatorDashProjectMod.CoordinatesZ = null,
+    flipY: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Altitude = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("altitude")(altitude)
+    __obj.updateDynamic("bearing")(bearing)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("pitch")(pitch)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)
+    __obj.asInstanceOf[Anon_Altitude]
+  }
+}
+

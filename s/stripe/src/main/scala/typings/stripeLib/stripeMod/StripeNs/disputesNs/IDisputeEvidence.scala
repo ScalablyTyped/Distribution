@@ -127,3 +127,66 @@ trait IDisputeEvidence extends js.Object {
   var uncategorized_text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IDisputeEvidence {
+  @scala.inline
+  def apply(
+    access_activity_log: java.lang.String = null,
+    billing_address: java.lang.String = null,
+    cancellation_policy: java.lang.String = null,
+    cancellation_policy_disclosure: java.lang.String = null,
+    cancellation_rebuttal: java.lang.String = null,
+    customer_communication: java.lang.String = null,
+    customer_email_address: java.lang.String = null,
+    customer_name: java.lang.String = null,
+    customer_purchase_ip: java.lang.String = null,
+    customer_signature: java.lang.String = null,
+    duplicate_charge_documentation: java.lang.String = null,
+    duplicate_charge_explanation: java.lang.String = null,
+    duplicate_charge_id: java.lang.String = null,
+    product_description: java.lang.String = null,
+    receipt: java.lang.String = null,
+    refund_policy: java.lang.String = null,
+    refund_policy_disclosure: java.lang.String = null,
+    refund_refusal_explanation: java.lang.String = null,
+    service_date: java.lang.String = null,
+    service_documentation: java.lang.String = null,
+    shipping_address: java.lang.String = null,
+    shipping_carrier: java.lang.String = null,
+    shipping_date: java.lang.String = null,
+    shipping_documentation: java.lang.String = null,
+    shipping_tracking_number: java.lang.String = null,
+    uncategorized_file: java.lang.String = null,
+    uncategorized_text: java.lang.String = null
+  ): IDisputeEvidence = {
+    val __obj = js.Dynamic.literal()
+    if (access_activity_log != null) __obj.updateDynamic("access_activity_log")(access_activity_log)
+    if (billing_address != null) __obj.updateDynamic("billing_address")(billing_address)
+    if (cancellation_policy != null) __obj.updateDynamic("cancellation_policy")(cancellation_policy)
+    if (cancellation_policy_disclosure != null) __obj.updateDynamic("cancellation_policy_disclosure")(cancellation_policy_disclosure)
+    if (cancellation_rebuttal != null) __obj.updateDynamic("cancellation_rebuttal")(cancellation_rebuttal)
+    if (customer_communication != null) __obj.updateDynamic("customer_communication")(customer_communication)
+    if (customer_email_address != null) __obj.updateDynamic("customer_email_address")(customer_email_address)
+    if (customer_name != null) __obj.updateDynamic("customer_name")(customer_name)
+    if (customer_purchase_ip != null) __obj.updateDynamic("customer_purchase_ip")(customer_purchase_ip)
+    if (customer_signature != null) __obj.updateDynamic("customer_signature")(customer_signature)
+    if (duplicate_charge_documentation != null) __obj.updateDynamic("duplicate_charge_documentation")(duplicate_charge_documentation)
+    if (duplicate_charge_explanation != null) __obj.updateDynamic("duplicate_charge_explanation")(duplicate_charge_explanation)
+    if (duplicate_charge_id != null) __obj.updateDynamic("duplicate_charge_id")(duplicate_charge_id)
+    if (product_description != null) __obj.updateDynamic("product_description")(product_description)
+    if (receipt != null) __obj.updateDynamic("receipt")(receipt)
+    if (refund_policy != null) __obj.updateDynamic("refund_policy")(refund_policy)
+    if (refund_policy_disclosure != null) __obj.updateDynamic("refund_policy_disclosure")(refund_policy_disclosure)
+    if (refund_refusal_explanation != null) __obj.updateDynamic("refund_refusal_explanation")(refund_refusal_explanation)
+    if (service_date != null) __obj.updateDynamic("service_date")(service_date)
+    if (service_documentation != null) __obj.updateDynamic("service_documentation")(service_documentation)
+    if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address)
+    if (shipping_carrier != null) __obj.updateDynamic("shipping_carrier")(shipping_carrier)
+    if (shipping_date != null) __obj.updateDynamic("shipping_date")(shipping_date)
+    if (shipping_documentation != null) __obj.updateDynamic("shipping_documentation")(shipping_documentation)
+    if (shipping_tracking_number != null) __obj.updateDynamic("shipping_tracking_number")(shipping_tracking_number)
+    if (uncategorized_file != null) __obj.updateDynamic("uncategorized_file")(uncategorized_file)
+    if (uncategorized_text != null) __obj.updateDynamic("uncategorized_text")(uncategorized_text)
+    __obj.asInstanceOf[IDisputeEvidence]
+  }
+}
+

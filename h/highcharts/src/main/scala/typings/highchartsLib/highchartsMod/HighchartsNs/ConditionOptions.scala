@@ -40,3 +40,22 @@ trait ConditionOptions extends js.Object {
   var minWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ConditionOptions {
+  @scala.inline
+  def apply(
+    callback: js.Function = null,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    minHeight: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null
+  ): ConditionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConditionOptions]
+  }
+}
+

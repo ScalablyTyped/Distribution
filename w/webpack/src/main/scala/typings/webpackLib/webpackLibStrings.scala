@@ -7,94 +7,124 @@ import scala.scalajs.js.annotation._
 
 object webpackLibStrings {
   @js.native
-  sealed trait `#@cheap-eval-source-map` extends js.Object
+  sealed trait `#@cheap-eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#@cheap-module-eval-source-map` extends js.Object
+  sealed trait `#@cheap-module-eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#@cheap-module-source-map` extends js.Object
+  sealed trait `#@cheap-module-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#@cheap-source-map` extends js.Object
+  sealed trait `#@cheap-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#@eval` extends js.Object
+  sealed trait `#@eval`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#@eval-source-map` extends js.Object
+  sealed trait `#@eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#@hidden-source-map` extends js.Object
+  sealed trait `#@hidden-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#@inline-source-map` extends js.Object
+  sealed trait `#@inline-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#@nosources-source-map` extends js.Object
+  sealed trait `#@nosources-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#@source-map` extends js.Object
+  sealed trait `#@source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#cheap-eval-source-map` extends js.Object
+  sealed trait `#cheap-eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#cheap-module-eval-source-map` extends js.Object
+  sealed trait `#cheap-module-eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#cheap-module-source-map` extends js.Object
+  sealed trait `#cheap-module-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#cheap-source-map` extends js.Object
+  sealed trait `#cheap-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#eval` extends js.Object
+  sealed trait `#eval`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#eval-source-map` extends js.Object
+  sealed trait `#eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#hidden-source-map` extends js.Object
+  sealed trait `#hidden-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#inline-source-map` extends js.Object
+  sealed trait `#inline-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#nosources-source-map` extends js.Object
+  sealed trait `#nosources-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `#source-map` extends js.Object
+  sealed trait `#source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@cheap-eval-source-map` extends js.Object
+  sealed trait `@cheap-eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@cheap-module-eval-source-map` extends js.Object
+  sealed trait `@cheap-module-eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@cheap-module-source-map` extends js.Object
+  sealed trait `@cheap-module-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@cheap-source-map` extends js.Object
+  sealed trait `@cheap-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@eval` extends js.Object
+  sealed trait `@eval`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@eval-source-map` extends js.Object
+  sealed trait `@eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@hidden-source-map` extends js.Object
+  sealed trait `@hidden-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@inline-source-map` extends js.Object
+  sealed trait `@inline-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@nosources-source-map` extends js.Object
+  sealed trait `@nosources-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `@source-map` extends js.Object
+  sealed trait `@source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
   sealed trait AuxiliaryCommentObject extends js.Object
@@ -103,10 +133,12 @@ object webpackLibStrings {
   sealed trait all extends js.Object
   
   @js.native
-  sealed trait amd extends js.Object
+  sealed trait amd
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @js.native
-  sealed trait assign extends js.Object
+  sealed trait assign
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @js.native
   sealed trait async extends js.Object
@@ -121,22 +153,28 @@ object webpackLibStrings {
   sealed trait base64 extends js.Object
   
   @js.native
-  sealed trait `cheap-eval-source-map` extends js.Object
+  sealed trait `cheap-eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `cheap-module-eval-source-map` extends js.Object
+  sealed trait `cheap-module-eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `cheap-module-source-map` extends js.Object
+  sealed trait `cheap-module-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `cheap-source-map` extends js.Object
+  sealed trait `cheap-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait commonjs extends js.Object
+  sealed trait commonjs
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @js.native
-  sealed trait commonjs2 extends js.Object
+  sealed trait commonjs2
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @js.native
   sealed trait development extends js.Object
@@ -157,34 +195,42 @@ object webpackLibStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait `errors-only` extends js.Object
+  sealed trait `errors-only`
+    extends webpackLib.webpackMod.webpackNs.StatsNs._Preset
   
   @js.native
-  sealed trait eval extends js.Object
+  sealed trait eval
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `eval-source-map` extends js.Object
+  sealed trait `eval-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait global extends js.Object
+  sealed trait global
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @js.native
   sealed trait hex extends js.Object
   
   @js.native
-  sealed trait `hidden-source-map` extends js.Object
+  sealed trait `hidden-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
   sealed trait initial extends js.Object
   
   @js.native
-  sealed trait `inline-cheap-module-source-map` extends js.Object
+  sealed trait `inline-cheap-module-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `inline-cheap-source-map` extends js.Object
+  sealed trait `inline-cheap-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
-  sealed trait `inline-source-map` extends js.Object
+  sealed trait `inline-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
   sealed trait `javascript/auto` extends js.Object
@@ -199,13 +245,15 @@ object webpackLibStrings {
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait jsonp extends js.Object
+  sealed trait jsonp
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @js.native
   sealed trait latin1 extends js.Object
   
   @js.native
-  sealed trait minimal extends js.Object
+  sealed trait minimal
+    extends webpackLib.webpackMod.webpackNs.StatsNs._Preset
   
   @js.native
   sealed trait mock extends js.Object
@@ -223,13 +271,16 @@ object webpackLibStrings {
   sealed trait `node-webkit` extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends webpackLib.webpackMod.webpackNs.StatsNs._Preset
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends webpackLib.webpackMod.webpackNs.StatsNs._Preset
   
   @js.native
-  sealed trait `nosources-source-map` extends js.Object
+  sealed trait `nosources-source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
   sealed trait post extends js.Object
@@ -244,22 +295,27 @@ object webpackLibStrings {
   sealed trait single extends js.Object
   
   @js.native
-  sealed trait `source-map` extends js.Object
+  sealed trait `source-map`
+    extends webpackLib.webpackMod.webpackNs.OptionsNs._Devtool
   
   @js.native
   sealed trait `text/javascript` extends js.Object
   
   @js.native
-  sealed trait `this` extends js.Object
+  sealed trait `this`
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @js.native
-  sealed trait umd extends js.Object
+  sealed trait umd
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @js.native
-  sealed trait `var` extends js.Object
+  sealed trait `var`
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @js.native
-  sealed trait verbose extends js.Object
+  sealed trait verbose
+    extends webpackLib.webpackMod.webpackNs.StatsNs._Preset
   
   @js.native
   sealed trait warning extends js.Object
@@ -274,7 +330,8 @@ object webpackLibStrings {
   sealed trait webworker extends js.Object
   
   @js.native
-  sealed trait window extends js.Object
+  sealed trait window
+    extends webpackLib.webpackMod.webpackNs.LibraryTarget
   
   @scala.inline
   def `#@cheap-eval-source-map`: `#@cheap-eval-source-map` = "#@cheap-eval-source-map".asInstanceOf[`#@cheap-eval-source-map`]

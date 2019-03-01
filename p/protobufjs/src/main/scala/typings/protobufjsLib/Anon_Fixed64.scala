@@ -13,3 +13,22 @@ trait Anon_Fixed64 extends js.Object {
   var uint64: scala.Double
 }
 
+object Anon_Fixed64 {
+  @scala.inline
+  def apply(
+    fixed64: scala.Double,
+    int64: scala.Double,
+    sfixed64: scala.Double,
+    sint64: scala.Double,
+    uint64: scala.Double
+  ): Anon_Fixed64 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fixed64")(fixed64)
+    __obj.updateDynamic("int64")(int64)
+    __obj.updateDynamic("sfixed64")(sfixed64)
+    __obj.updateDynamic("sint64")(sint64)
+    __obj.updateDynamic("uint64")(uint64)
+    __obj.asInstanceOf[Anon_Fixed64]
+  }
+}
+

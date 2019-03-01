@@ -135,3 +135,58 @@ trait ZMCreditBorrowOptions
   var success_ZMCreditBorrowOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_4000, scala.Unit]] = js.undefined
 }
 
+object ZMCreditBorrowOptions {
+  @scala.inline
+  def apply(
+    credit_biz: java.lang.String,
+    deposit_amount: java.lang.String,
+    expiry_time: java.lang.String,
+    goods_name: java.lang.String,
+    out_order_no: java.lang.String,
+    product_code: java.lang.String,
+    rent_amount: java.lang.String,
+    rent_unit: java.lang.String,
+    address: java.lang.String = null,
+    borrow_shop_name: java.lang.String = null,
+    borrow_time: java.lang.String = null,
+    cert_no: java.lang.String = null,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    deposit_state: java.lang.String = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    invoke_return_url: java.lang.String = null,
+    invoke_state: java.lang.String = null,
+    invoke_type: aliDashAppLib.aliDashAppLibStrings.TINYAPP | aliDashAppLib.aliDashAppLibStrings.WINDOWS | java.lang.String = null,
+    mobile_no: java.lang.String = null,
+    name: java.lang.String = null,
+    rent_info: java.lang.String = null,
+    rent_settle_type: aliDashAppLib.aliDashAppLibStrings.merchant | aliDashAppLib.aliDashAppLibStrings.alipay | java.lang.String = null,
+    success: js.Function1[/* res */ aliDashAppLib.Anon_4000, scala.Unit] = null
+  ): ZMCreditBorrowOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("credit_biz")(credit_biz)
+    __obj.updateDynamic("deposit_amount")(deposit_amount)
+    __obj.updateDynamic("expiry_time")(expiry_time)
+    __obj.updateDynamic("goods_name")(goods_name)
+    __obj.updateDynamic("out_order_no")(out_order_no)
+    __obj.updateDynamic("product_code")(product_code)
+    __obj.updateDynamic("rent_amount")(rent_amount)
+    __obj.updateDynamic("rent_unit")(rent_unit)
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (borrow_shop_name != null) __obj.updateDynamic("borrow_shop_name")(borrow_shop_name)
+    if (borrow_time != null) __obj.updateDynamic("borrow_time")(borrow_time)
+    if (cert_no != null) __obj.updateDynamic("cert_no")(cert_no)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (deposit_state != null) __obj.updateDynamic("deposit_state")(deposit_state)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (invoke_return_url != null) __obj.updateDynamic("invoke_return_url")(invoke_return_url)
+    if (invoke_state != null) __obj.updateDynamic("invoke_state")(invoke_state)
+    if (invoke_type != null) __obj.updateDynamic("invoke_type")(invoke_type.asInstanceOf[js.Any])
+    if (mobile_no != null) __obj.updateDynamic("mobile_no")(mobile_no)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (rent_info != null) __obj.updateDynamic("rent_info")(rent_info)
+    if (rent_settle_type != null) __obj.updateDynamic("rent_settle_type")(rent_settle_type.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ZMCreditBorrowOptions]
+  }
+}
+

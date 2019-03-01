@@ -128,3 +128,36 @@ trait Anon_FillHeight extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_FillHeight {
+  @scala.inline
+  def apply(
+    fill: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    image: java.lang.String = null,
+    lineWidth: scala.Int | scala.Double = null,
+    shadowBlur: scala.Int | scala.Double = null,
+    shadowColor: scala.Int | scala.Double = null,
+    shadowOffsetX: scala.Int | scala.Double = null,
+    shadowOffsetY: scala.Int | scala.Double = null,
+    stroke: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Anon_FillHeight = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
+    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
+    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FillHeight]
+  }
+}
+

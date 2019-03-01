@@ -13,3 +13,22 @@ trait IFolderListingUIState extends js.Object {
   var ViewMode: mfilesLib.MFilesNs.MFFolderListingViewMode
 }
 
+object IFolderListingUIState {
+  @scala.inline
+  def apply(
+    ColumnSortings: IFolderListingColumnSortings,
+    Columns: IFolderListingColumns,
+    GroupingMode: mfilesLib.MFilesNs.MFFolderListingItemGroupingMode,
+    IconSize: scala.Double,
+    ViewMode: mfilesLib.MFilesNs.MFFolderListingViewMode
+  ): IFolderListingUIState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColumnSortings")(ColumnSortings)
+    __obj.updateDynamic("Columns")(Columns)
+    __obj.updateDynamic("GroupingMode")(GroupingMode)
+    __obj.updateDynamic("IconSize")(IconSize)
+    __obj.updateDynamic("ViewMode")(ViewMode)
+    __obj.asInstanceOf[IFolderListingUIState]
+  }
+}
+

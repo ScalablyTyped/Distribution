@@ -19,3 +19,18 @@ trait DocumentIndexMarkAsian extends js.Object {
   var TextReading: java.lang.String
 }
 
+object DocumentIndexMarkAsian {
+  @scala.inline
+  def apply(
+    PrimaryKeyReading: java.lang.String,
+    SecondaryKeyReading: java.lang.String,
+    TextReading: java.lang.String
+  ): DocumentIndexMarkAsian = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PrimaryKeyReading")(PrimaryKeyReading)
+    __obj.updateDynamic("SecondaryKeyReading")(SecondaryKeyReading)
+    __obj.updateDynamic("TextReading")(TextReading)
+    __obj.asInstanceOf[DocumentIndexMarkAsian]
+  }
+}
+

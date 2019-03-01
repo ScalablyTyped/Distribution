@@ -11,3 +11,16 @@ trait cssClasses
   var ROOT: atMaterialRadioLib.atMaterialRadioLibStrings.`mdc-radio`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    DISABLED: atMaterialRadioLib.atMaterialRadioLibStrings.`mdc-radio--disabled`,
+    ROOT: atMaterialRadioLib.atMaterialRadioLibStrings.`mdc-radio`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DISABLED")(DISABLED)
+    __obj.updateDynamic("ROOT")(ROOT)
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

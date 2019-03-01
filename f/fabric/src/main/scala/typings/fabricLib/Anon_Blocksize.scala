@@ -13,3 +13,12 @@ trait Anon_Blocksize extends js.Object {
   var blocksize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Blocksize {
+  @scala.inline
+  def apply(blocksize: scala.Int | scala.Double = null): Anon_Blocksize = {
+    val __obj = js.Dynamic.literal()
+    if (blocksize != null) __obj.updateDynamic("blocksize")(blocksize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Blocksize]
+  }
+}
+

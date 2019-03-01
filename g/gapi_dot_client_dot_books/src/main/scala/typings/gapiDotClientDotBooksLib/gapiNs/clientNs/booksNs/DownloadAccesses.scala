@@ -12,3 +12,13 @@ trait DownloadAccesses extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DownloadAccesses {
+  @scala.inline
+  def apply(downloadAccessList: js.Array[DownloadAccessRestriction] = null, kind: java.lang.String = null): DownloadAccesses = {
+    val __obj = js.Dynamic.literal()
+    if (downloadAccessList != null) __obj.updateDynamic("downloadAccessList")(downloadAccessList)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[DownloadAccesses]
+  }
+}
+

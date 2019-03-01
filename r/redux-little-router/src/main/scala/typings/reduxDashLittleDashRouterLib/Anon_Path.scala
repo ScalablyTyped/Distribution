@@ -11,3 +11,18 @@ trait Anon_Path extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Path {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    query: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.ObjectLiteral[java.lang.String],
+    url: java.lang.String
+  ): Anon_Path = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_Path]
+  }
+}
+

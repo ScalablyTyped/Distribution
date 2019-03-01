@@ -9,3 +9,12 @@ trait PointWorkItemProperty extends js.Object {
   var workItem: vsoDashNodeDashApiLib.Anon_KeyValueAny
 }
 
+object PointWorkItemProperty {
+  @scala.inline
+  def apply(workItem: vsoDashNodeDashApiLib.Anon_KeyValueAny): PointWorkItemProperty = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("workItem")(workItem)
+    __obj.asInstanceOf[PointWorkItemProperty]
+  }
+}
+

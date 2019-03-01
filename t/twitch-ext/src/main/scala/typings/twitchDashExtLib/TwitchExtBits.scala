@@ -68,3 +68,24 @@ trait TwitchExtBits extends js.Object {
   def useBits(sku: java.lang.String): scala.Unit
 }
 
+object TwitchExtBits {
+  @scala.inline
+  def apply(
+    getProducts: js.Function0[js.Promise[js.Array[TwitchExtBitsProduct]]],
+    onTransactionCancelled: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    onTransactionComplete: js.Function1[js.Function1[/* transaction */ TwitchExtBitsTransaction, scala.Unit], scala.Unit],
+    setUseLoopback: js.Function1[scala.Boolean, scala.Unit],
+    showBitsBalance: js.Function0[scala.Unit],
+    useBits: js.Function1[java.lang.String, scala.Unit]
+  ): TwitchExtBits = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getProducts")(getProducts)
+    __obj.updateDynamic("onTransactionCancelled")(onTransactionCancelled)
+    __obj.updateDynamic("onTransactionComplete")(onTransactionComplete)
+    __obj.updateDynamic("setUseLoopback")(setUseLoopback)
+    __obj.updateDynamic("showBitsBalance")(showBitsBalance)
+    __obj.updateDynamic("useBits")(useBits)
+    __obj.asInstanceOf[TwitchExtBits]
+  }
+}
+

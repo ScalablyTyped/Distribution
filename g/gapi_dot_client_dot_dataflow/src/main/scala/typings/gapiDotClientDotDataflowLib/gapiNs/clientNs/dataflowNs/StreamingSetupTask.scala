@@ -22,3 +22,20 @@ trait StreamingSetupTask extends js.Object {
   var workerHarnessPort: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StreamingSetupTask {
+  @scala.inline
+  def apply(
+    drain: js.UndefOr[scala.Boolean] = js.undefined,
+    receiveWorkPort: scala.Int | scala.Double = null,
+    streamingComputationTopology: TopologyConfig = null,
+    workerHarnessPort: scala.Int | scala.Double = null
+  ): StreamingSetupTask = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(drain)) __obj.updateDynamic("drain")(drain)
+    if (receiveWorkPort != null) __obj.updateDynamic("receiveWorkPort")(receiveWorkPort.asInstanceOf[js.Any])
+    if (streamingComputationTopology != null) __obj.updateDynamic("streamingComputationTopology")(streamingComputationTopology)
+    if (workerHarnessPort != null) __obj.updateDynamic("workerHarnessPort")(workerHarnessPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StreamingSetupTask]
+  }
+}
+

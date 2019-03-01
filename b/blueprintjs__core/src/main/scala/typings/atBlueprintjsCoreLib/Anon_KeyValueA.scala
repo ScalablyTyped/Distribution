@@ -11,3 +11,18 @@ trait Anon_KeyValueA[T /* <: js.Object */] extends js.Object {
   var valueB: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
 }
 
+object Anon_KeyValueA {
+  @scala.inline
+  def apply[T /* <: js.Object */](
+    key: java.lang.String,
+    valueA: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any,
+    valueB: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
+  ): Anon_KeyValueA[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("valueA")(valueA)
+    __obj.updateDynamic("valueB")(valueB)
+    __obj.asInstanceOf[Anon_KeyValueA[T]]
+  }
+}
+

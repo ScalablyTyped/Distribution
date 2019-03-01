@@ -13,3 +13,24 @@ trait XDiagramProvider
   def setDiagram(xDiagram: XDiagram): scala.Unit
 }
 
+object XDiagramProvider {
+  @scala.inline
+  def apply(
+    Diagram: XDiagram,
+    acquire: js.Function0[scala.Unit],
+    getDiagram: js.Function0[XDiagram],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDiagram: js.Function1[XDiagram, scala.Unit]
+  ): XDiagramProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Diagram")(Diagram)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDiagram")(getDiagram)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDiagram")(setDiagram)
+    __obj.asInstanceOf[XDiagramProvider]
+  }
+}
+

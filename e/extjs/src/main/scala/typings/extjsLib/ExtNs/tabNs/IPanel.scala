@@ -48,3 +48,44 @@ trait IPanel
   var tabPosition: js.UndefOr[js.Any] = js.undefined
 }
 
+object IPanel {
+  @scala.inline
+  def apply(
+    IPanel: extjsLib.ExtNs.panelNs.IPanel = null,
+    activeItem: js.Any = null,
+    activeTab: js.Any = null,
+    deferredRender: js.UndefOr[scala.Boolean] = js.undefined,
+    getActiveTab: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    getTabBar: js.Function0[IBar] = null,
+    itemCls: java.lang.String = null,
+    layout: js.Any = null,
+    maxTabWidth: scala.Int | scala.Double = null,
+    minTabWidth: scala.Int | scala.Double = null,
+    onAdd: js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], scala.Unit] = null,
+    plain: js.UndefOr[scala.Boolean] = js.undefined,
+    removePanelHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    setActiveTab: js.Function1[/* card */ js.UndefOr[js.Any], extjsLib.ExtNs.IComponent] = null,
+    tabBar: js.Any = null,
+    tabPosition: js.Any = null
+  ): IPanel = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IPanel)
+    if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem)
+    if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab)
+    if (!js.isUndefined(deferredRender)) __obj.updateDynamic("deferredRender")(deferredRender)
+    if (getActiveTab != null) __obj.updateDynamic("getActiveTab")(getActiveTab)
+    if (getTabBar != null) __obj.updateDynamic("getTabBar")(getTabBar)
+    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (maxTabWidth != null) __obj.updateDynamic("maxTabWidth")(maxTabWidth.asInstanceOf[js.Any])
+    if (minTabWidth != null) __obj.updateDynamic("minTabWidth")(minTabWidth.asInstanceOf[js.Any])
+    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (!js.isUndefined(removePanelHeader)) __obj.updateDynamic("removePanelHeader")(removePanelHeader)
+    if (setActiveTab != null) __obj.updateDynamic("setActiveTab")(setActiveTab)
+    if (tabBar != null) __obj.updateDynamic("tabBar")(tabBar)
+    if (tabPosition != null) __obj.updateDynamic("tabPosition")(tabPosition)
+    __obj.asInstanceOf[IPanel]
+  }
+}
+

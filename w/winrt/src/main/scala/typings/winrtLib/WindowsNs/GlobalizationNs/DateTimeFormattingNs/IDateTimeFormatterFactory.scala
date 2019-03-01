@@ -50,3 +50,60 @@ trait IDateTimeFormatterFactory extends js.Object {
   def createDateTimeFormatterTime(hourFormat: HourFormat, minuteFormat: MinuteFormat, secondFormat: SecondFormat): DateTimeFormatter
 }
 
+object IDateTimeFormatterFactory {
+  @scala.inline
+  def apply(
+    createDateTimeFormatter: js.Function1[java.lang.String, DateTimeFormatter],
+    createDateTimeFormatterContext: js.Function5[
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      DateTimeFormatter
+    ],
+    createDateTimeFormatterDate: js.Function4[YearFormat, MonthFormat, DayFormat, DayOfWeekFormat, DateTimeFormatter],
+    createDateTimeFormatterDateTimeContext: js.Function11[
+      YearFormat, 
+      MonthFormat, 
+      DayFormat, 
+      DayOfWeekFormat, 
+      HourFormat, 
+      MinuteFormat, 
+      SecondFormat, 
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      DateTimeFormatter
+    ],
+    createDateTimeFormatterDateTimeLanguages: js.Function8[
+      YearFormat, 
+      MonthFormat, 
+      DayFormat, 
+      DayOfWeekFormat, 
+      HourFormat, 
+      MinuteFormat, 
+      SecondFormat, 
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
+      DateTimeFormatter
+    ],
+    createDateTimeFormatterLanguages: js.Function2[
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
+      DateTimeFormatter
+    ],
+    createDateTimeFormatterTime: js.Function3[HourFormat, MinuteFormat, SecondFormat, DateTimeFormatter]
+  ): IDateTimeFormatterFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createDateTimeFormatter")(createDateTimeFormatter)
+    __obj.updateDynamic("createDateTimeFormatterContext")(createDateTimeFormatterContext)
+    __obj.updateDynamic("createDateTimeFormatterDate")(createDateTimeFormatterDate)
+    __obj.updateDynamic("createDateTimeFormatterDateTimeContext")(createDateTimeFormatterDateTimeContext)
+    __obj.updateDynamic("createDateTimeFormatterDateTimeLanguages")(createDateTimeFormatterDateTimeLanguages)
+    __obj.updateDynamic("createDateTimeFormatterLanguages")(createDateTimeFormatterLanguages)
+    __obj.updateDynamic("createDateTimeFormatterTime")(createDateTimeFormatterTime)
+    __obj.asInstanceOf[IDateTimeFormatterFactory]
+  }
+}
+

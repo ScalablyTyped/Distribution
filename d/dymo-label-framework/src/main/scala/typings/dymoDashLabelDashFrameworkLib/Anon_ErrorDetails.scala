@@ -14,3 +14,18 @@ trait Anon_ErrorDetails extends js.Object {
   var isFrameworkInstalled: scala.Boolean
 }
 
+object Anon_ErrorDetails {
+  @scala.inline
+  def apply(
+    errorDetails: java.lang.String,
+    isBrowserSupported: scala.Boolean,
+    isFrameworkInstalled: scala.Boolean
+  ): Anon_ErrorDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorDetails")(errorDetails)
+    __obj.updateDynamic("isBrowserSupported")(isBrowserSupported)
+    __obj.updateDynamic("isFrameworkInstalled")(isFrameworkInstalled)
+    __obj.asInstanceOf[Anon_ErrorDetails]
+  }
+}
+

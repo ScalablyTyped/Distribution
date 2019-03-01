@@ -10,3 +10,13 @@ trait ReadResult extends js.Object {
   var bytesRead: scala.Double
 }
 
+object ReadResult {
+  @scala.inline
+  def apply(buffer: nodeLib.Buffer, bytesRead: scala.Double): ReadResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buffer")(buffer)
+    __obj.updateDynamic("bytesRead")(bytesRead)
+    __obj.asInstanceOf[ReadResult]
+  }
+}
+

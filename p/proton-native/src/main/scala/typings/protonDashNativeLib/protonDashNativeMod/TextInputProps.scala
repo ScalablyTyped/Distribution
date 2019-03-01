@@ -39,3 +39,40 @@ trait TextInputProps
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TextInputProps {
+  @scala.inline
+  def apply(
+    align: protonDashNativeLib.Anon_H = null,
+    children: java.lang.String = null,
+    column: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    expand: protonDashNativeLib.Anon_H = null,
+    label: java.lang.String = null,
+    multiline: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: js.Function1[/* text */ java.lang.String, scala.Unit] = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    row: scala.Int | scala.Double = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    span: protonDashNativeLib.Anon_X = null,
+    stretchy: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): TextInputProps = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (span != null) __obj.updateDynamic("span")(span)
+    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[TextInputProps]
+  }
+}
+

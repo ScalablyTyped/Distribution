@@ -14,3 +14,22 @@ trait XNumericalDataSequence
   def getNumericalData(): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XNumericalDataSequence {
+  @scala.inline
+  def apply(
+    NumericalData: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    getNumericalData: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XNumericalDataSequence = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NumericalData")(NumericalData)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getNumericalData")(getNumericalData)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XNumericalDataSequence]
+  }
+}
+

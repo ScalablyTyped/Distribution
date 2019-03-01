@@ -12,3 +12,12 @@ trait GetComputeEnvironmentArgs extends js.Object {
   val computeEnvironmentName: java.lang.String
 }
 
+object GetComputeEnvironmentArgs {
+  @scala.inline
+  def apply(computeEnvironmentName: java.lang.String): GetComputeEnvironmentArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("computeEnvironmentName")(computeEnvironmentName)
+    __obj.asInstanceOf[GetComputeEnvironmentArgs]
+  }
+}
+

@@ -26,3 +26,45 @@ trait ServerOptionsCache
   var shared: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ServerOptionsCache {
+  @scala.inline
+  def apply(
+    StringDictionary: /** other options passed to the catbox strategy used. Other options are only passed to catbox when engine above is a class or function and ignored if engine is a catbox engine object). */
+  /* s */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    dropOnError: js.UndefOr[scala.Boolean] = js.undefined,
+    engine: catboxLib.catboxMod.ClientApi[_] = null,
+    expiresAt: java.lang.String = null,
+    expiresIn: scala.Int | scala.Double = null,
+    generateFunc: catboxLib.catboxMod.GenerateFunc[js.Any] = null,
+    generateIgnoreWriteError: js.UndefOr[scala.Boolean] = js.undefined,
+    generateOnReadError: js.UndefOr[scala.Boolean] = js.undefined,
+    generateTimeout: scala.Double | catboxLib.catboxLibNumbers.`false` = null,
+    name: java.lang.String = null,
+    partition: java.lang.String = null,
+    pendingGenerateTimeout: scala.Int | scala.Double = null,
+    provider: CacheProvider[catboxLib.catboxMod.ClientOptions] = null,
+    shared: js.UndefOr[scala.Boolean] = js.undefined,
+    staleIn: scala.Double | (js.Function2[/* stored */ scala.Double, /* ttl */ scala.Double, scala.Double]) = null,
+    staleTimeout: scala.Int | scala.Double = null
+  ): ServerOptionsCache = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(dropOnError)) __obj.updateDynamic("dropOnError")(dropOnError)
+    if (engine != null) __obj.updateDynamic("engine")(engine)
+    if (expiresAt != null) __obj.updateDynamic("expiresAt")(expiresAt)
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (generateFunc != null) __obj.updateDynamic("generateFunc")(generateFunc)
+    if (!js.isUndefined(generateIgnoreWriteError)) __obj.updateDynamic("generateIgnoreWriteError")(generateIgnoreWriteError)
+    if (!js.isUndefined(generateOnReadError)) __obj.updateDynamic("generateOnReadError")(generateOnReadError)
+    if (generateTimeout != null) __obj.updateDynamic("generateTimeout")(generateTimeout.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (partition != null) __obj.updateDynamic("partition")(partition)
+    if (pendingGenerateTimeout != null) __obj.updateDynamic("pendingGenerateTimeout")(pendingGenerateTimeout.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
+    if (staleIn != null) __obj.updateDynamic("staleIn")(staleIn.asInstanceOf[js.Any])
+    if (staleTimeout != null) __obj.updateDynamic("staleTimeout")(staleTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerOptionsCache]
+  }
+}
+

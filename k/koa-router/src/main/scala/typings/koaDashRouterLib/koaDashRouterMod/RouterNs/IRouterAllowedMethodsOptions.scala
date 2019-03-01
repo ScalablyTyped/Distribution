@@ -20,3 +20,18 @@ trait IRouterAllowedMethodsOptions extends js.Object {
   var `throw`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IRouterAllowedMethodsOptions {
+  @scala.inline
+  def apply(
+    methodNotAllowed: js.Function0[_] = null,
+    notImplemented: js.Function0[_] = null,
+    `throw`: js.UndefOr[scala.Boolean] = js.undefined
+  ): IRouterAllowedMethodsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (methodNotAllowed != null) __obj.updateDynamic("methodNotAllowed")(methodNotAllowed)
+    if (notImplemented != null) __obj.updateDynamic("notImplemented")(notImplemented)
+    if (!js.isUndefined(`throw`)) __obj.updateDynamic("throw")(`throw`)
+    __obj.asInstanceOf[IRouterAllowedMethodsOptions]
+  }
+}
+

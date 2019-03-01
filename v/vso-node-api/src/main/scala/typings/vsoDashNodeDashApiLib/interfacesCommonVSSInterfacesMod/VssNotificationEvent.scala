@@ -28,3 +28,22 @@ trait VssNotificationEvent extends js.Object {
   var scopes: js.Array[EventScope]
 }
 
+object VssNotificationEvent {
+  @scala.inline
+  def apply(
+    actors: js.Array[EventActor],
+    artifactUris: js.Array[java.lang.String],
+    data: js.Any,
+    eventType: java.lang.String,
+    scopes: js.Array[EventScope]
+  ): VssNotificationEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actors")(actors)
+    __obj.updateDynamic("artifactUris")(artifactUris)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("eventType")(eventType)
+    __obj.updateDynamic("scopes")(scopes)
+    __obj.asInstanceOf[VssNotificationEvent]
+  }
+}
+

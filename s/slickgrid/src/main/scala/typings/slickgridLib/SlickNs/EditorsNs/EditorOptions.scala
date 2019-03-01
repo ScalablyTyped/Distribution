@@ -16,3 +16,28 @@ trait EditorOptions[T /* <: slickgridLib.SlickNs.SlickData */] extends js.Object
   var position: js.UndefOr[slickgridLib.SlickNs.CellPosition] = js.undefined
 }
 
+object EditorOptions {
+  @scala.inline
+  def apply[T /* <: slickgridLib.SlickNs.SlickData */](
+    column: slickgridLib.SlickNs.Column[T],
+    container: stdLib.HTMLElement,
+    grid: slickgridLib.SlickNs.Grid[T],
+    cancelChanges: js.Function0[scala.Unit] = null,
+    commitChanges: js.Function0[scala.Unit] = null,
+    gridPosition: slickgridLib.SlickNs.CellPosition = null,
+    item: T = null,
+    position: slickgridLib.SlickNs.CellPosition = null
+  ): EditorOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("grid")(grid)
+    if (cancelChanges != null) __obj.updateDynamic("cancelChanges")(cancelChanges)
+    if (commitChanges != null) __obj.updateDynamic("commitChanges")(commitChanges)
+    if (gridPosition != null) __obj.updateDynamic("gridPosition")(gridPosition)
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[EditorOptions[T]]
+  }
+}
+

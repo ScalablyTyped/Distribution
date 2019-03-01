@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 object toastrLibStrings {
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends ToastrType
   
   @js.native
   sealed trait hidden extends js.Object
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info extends ToastrType
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success extends ToastrType
   
   @js.native
   sealed trait visible extends js.Object
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning extends ToastrType
   
   @scala.inline
   def error: error = "error".asInstanceOf[error]

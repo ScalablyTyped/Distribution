@@ -14,3 +14,18 @@ trait ListStoreInfosResponse extends js.Object {
   var totalSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListStoreInfosResponse {
+  @scala.inline
+  def apply(
+    nextPageToken: java.lang.String = null,
+    storeInfos: js.Array[StoreInfo] = null,
+    totalSize: scala.Int | scala.Double = null
+  ): ListStoreInfosResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (storeInfos != null) __obj.updateDynamic("storeInfos")(storeInfos)
+    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListStoreInfosResponse]
+  }
+}
+

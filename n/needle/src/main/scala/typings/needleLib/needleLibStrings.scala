@@ -13,28 +13,34 @@ object needleLibStrings {
   sealed trait basic extends js.Object
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends needleLib.needleMod.coreNs.NeedleReadWriteHttpVerbs
   
   @js.native
   sealed trait digest extends js.Object
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get
+    extends needleLib.needleMod.coreNs.NeedleReadonlyHttpVerbs
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait head
+    extends needleLib.needleMod.coreNs.NeedleReadonlyHttpVerbs
   
   @js.native
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait patch extends js.Object
+  sealed trait patch
+    extends needleLib.needleMod.coreNs.NeedleReadWriteHttpVerbs
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post
+    extends needleLib.needleMod.coreNs.NeedleReadWriteHttpVerbs
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait put
+    extends needleLib.needleMod.coreNs.NeedleReadWriteHttpVerbs
   
   @js.native
   sealed trait xml extends js.Object

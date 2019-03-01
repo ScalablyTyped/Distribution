@@ -16,3 +16,13 @@ trait DataSource extends js.Object {
   var value: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object DataSource {
+  @scala.inline
+  def apply(name: java.lang.String = null, value: js.Array[_] = null): DataSource = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DataSource]
+  }
+}
+

@@ -20,3 +20,28 @@ trait SparklinesBarsProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object SparklinesBarsProps {
+  @scala.inline
+  def apply(
+    barWidth: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    margin: scala.Int | scala.Double = null,
+    onMouseMove: js.Function2[
+      /* p */ Point, 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.reactMod.ReactNs.ReactSVGElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    points: js.Array[Point] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): SparklinesBarsProps = {
+    val __obj = js.Dynamic.literal()
+    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[SparklinesBarsProps]
+  }
+}
+

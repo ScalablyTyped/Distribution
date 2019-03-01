@@ -15,3 +15,20 @@ trait ojChartGroupSettableProperties
   var shortDesc: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ojChartGroupSettableProperties {
+  @scala.inline
+  def apply(
+    drilling: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.inherit = null,
+    labelStyle: js.Object = null,
+    name: java.lang.String = null,
+    shortDesc: java.lang.String = null
+  ): ojChartGroupSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
+    __obj.asInstanceOf[ojChartGroupSettableProperties]
+  }
+}
+

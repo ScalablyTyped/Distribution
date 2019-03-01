@@ -15,3 +15,20 @@ trait XShapeAligner
   def alignShapes(aShapes: js.Array[XShapes], eType: Alignment): scala.Unit
 }
 
+object XShapeAligner {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    alignShapes: js.Function2[js.Array[XShapes], Alignment, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XShapeAligner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("alignShapes")(alignShapes)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XShapeAligner]
+  }
+}
+

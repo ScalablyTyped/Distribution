@@ -14,3 +14,12 @@ trait XManager extends js.Object {
   def createPlayer(aURL: java.lang.String): XPlayer
 }
 
+object XManager {
+  @scala.inline
+  def apply(createPlayer: js.Function1[java.lang.String, XPlayer]): XManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createPlayer")(createPlayer)
+    __obj.asInstanceOf[XManager]
+  }
+}
+

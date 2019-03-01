@@ -56,3 +56,38 @@ trait NodesPort extends js.Object {
   var visibility: js.UndefOr[PortVisibility | java.lang.String] = js.undefined
 }
 
+object NodesPort {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    connectorPadding: scala.Int | scala.Double = null,
+    constraints: PortConstraints | java.lang.String = null,
+    cssClass: java.lang.String = null,
+    fillColor: java.lang.String = null,
+    name: java.lang.String = null,
+    offset: js.Any = null,
+    parent: java.lang.String = null,
+    pathData: java.lang.String = null,
+    shape: PortShapes | java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    visibility: PortVisibility | java.lang.String = null
+  ): NodesPort = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (connectorPadding != null) __obj.updateDynamic("connectorPadding")(connectorPadding.asInstanceOf[js.Any])
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (pathData != null) __obj.updateDynamic("pathData")(pathData)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodesPort]
+  }
+}
+

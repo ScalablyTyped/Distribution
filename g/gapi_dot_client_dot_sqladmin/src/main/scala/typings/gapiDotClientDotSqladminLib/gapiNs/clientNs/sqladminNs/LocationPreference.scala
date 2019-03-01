@@ -14,3 +14,18 @@ trait LocationPreference extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LocationPreference {
+  @scala.inline
+  def apply(
+    followGaeApplication: java.lang.String = null,
+    kind: java.lang.String = null,
+    zone: java.lang.String = null
+  ): LocationPreference = {
+    val __obj = js.Dynamic.literal()
+    if (followGaeApplication != null) __obj.updateDynamic("followGaeApplication")(followGaeApplication)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[LocationPreference]
+  }
+}
+

@@ -16,3 +16,20 @@ trait Objects extends js.Object {
   var prefixes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Objects {
+  @scala.inline
+  def apply(
+    items: js.Array[Object] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    prefixes: js.Array[java.lang.String] = null
+  ): Objects = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes)
+    __obj.asInstanceOf[Objects]
+  }
+}
+

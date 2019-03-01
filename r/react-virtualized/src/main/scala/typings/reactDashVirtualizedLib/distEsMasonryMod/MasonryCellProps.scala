@@ -13,3 +13,22 @@ trait MasonryCellProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object MasonryCellProps {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    isScrolling: scala.Boolean,
+    key: reactLib.reactMod.ReactNs.Key,
+    parent: reactDashVirtualizedLib.distEsCellMeasurerMod.MeasuredCellParent,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): MasonryCellProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("isScrolling")(isScrolling)
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("parent")(parent)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[MasonryCellProps]
+  }
+}
+

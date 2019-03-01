@@ -26,3 +26,40 @@ import scala.scalajs.js.annotation._
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object BottomNavigationActionProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    classes: stdLib.Partial[
+      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[BottomNavigationActionClassKey]
+    ] = null,
+    icon: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    onChange: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
+      /* value */ js.Any, 
+      scala.Unit
+    ] = null,
+    onClick: reactLib.reactMod.ReactNs.ReactEventHandler[_] = null,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    showLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    value: js.Any = null
+  ): BottomNavigationActionProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[BottomNavigationActionProps]
+  }
+}
+

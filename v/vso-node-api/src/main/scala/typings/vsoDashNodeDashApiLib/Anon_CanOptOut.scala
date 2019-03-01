@@ -13,3 +13,22 @@ trait Anon_CanOptOut extends js.Object {
   var teamSubscription: scala.Double
 }
 
+object Anon_CanOptOut {
+  @scala.inline
+  def apply(
+    canOptOut: scala.Double,
+    contributedSubscription: scala.Double,
+    groupSubscription: scala.Double,
+    none: scala.Double,
+    teamSubscription: scala.Double
+  ): Anon_CanOptOut = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canOptOut")(canOptOut)
+    __obj.updateDynamic("contributedSubscription")(contributedSubscription)
+    __obj.updateDynamic("groupSubscription")(groupSubscription)
+    __obj.updateDynamic("none")(none)
+    __obj.updateDynamic("teamSubscription")(teamSubscription)
+    __obj.asInstanceOf[Anon_CanOptOut]
+  }
+}
+

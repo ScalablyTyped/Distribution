@@ -32,3 +32,24 @@ trait Put extends js.Object {
   var TableName: TableName
 }
 
+object Put {
+  @scala.inline
+  def apply(
+    Item: PutItemInputAttributeMap,
+    TableName: TableName,
+    ConditionExpression: ConditionExpression = null,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
+    ReturnValuesOnConditionCheckFailure: ReturnValuesOnConditionCheckFailure = null
+  ): Put = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Item")(Item)
+    __obj.updateDynamic("TableName")(TableName)
+    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
+    if (ReturnValuesOnConditionCheckFailure != null) __obj.updateDynamic("ReturnValuesOnConditionCheckFailure")(ReturnValuesOnConditionCheckFailure.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Put]
+  }
+}
+

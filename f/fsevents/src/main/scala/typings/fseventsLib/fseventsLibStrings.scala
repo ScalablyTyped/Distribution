@@ -10,10 +10,12 @@ object fseventsLibStrings {
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait created extends js.Object
+  sealed trait created
+    extends fseventsLib.fseventsMod.fseventsNs.BaseEventType
   
   @js.native
-  sealed trait deleted extends js.Object
+  sealed trait deleted
+    extends fseventsLib.fseventsMod.fseventsNs.BaseEventType
   
   @js.native
   sealed trait directory extends js.Object
@@ -25,25 +27,30 @@ object fseventsLibStrings {
   sealed trait fsevent extends js.Object
   
   @js.native
-  sealed trait modified extends js.Object
+  sealed trait modified
+    extends fseventsLib.fseventsMod.fseventsNs.BaseEventType
   
   @js.native
   sealed trait moved extends js.Object
   
   @js.native
-  sealed trait `moved-in` extends js.Object
+  sealed trait `moved-in`
+    extends fseventsLib.fseventsMod.fseventsNs.EventType
   
   @js.native
-  sealed trait `moved-out` extends js.Object
+  sealed trait `moved-out`
+    extends fseventsLib.fseventsMod.fseventsNs.EventType
   
   @js.native
-  sealed trait `root-changed` extends js.Object
+  sealed trait `root-changed`
+    extends fseventsLib.fseventsMod.fseventsNs.BaseEventType
   
   @js.native
   sealed trait symlink extends js.Object
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends fseventsLib.fseventsMod.fseventsNs.BaseEventType
   
   @scala.inline
   def change: change = "change".asInstanceOf[change]

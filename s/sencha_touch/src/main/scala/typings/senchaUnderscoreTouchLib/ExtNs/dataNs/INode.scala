@@ -284,3 +284,184 @@ trait INode
   var updateInfo: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], scala.Boolean]] = js.undefined
 }
 
+object INode {
+  @scala.inline
+  def apply(
+    alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    appendChild: js.Function1[/* node */ js.UndefOr[js.Any], INodeInterface] = null,
+    bubble: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
+      scala.Unit
+    ] = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    cascadeBy: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
+      scala.Unit
+    ] = null,
+    childNodes: js.Any = null,
+    collapse: js.Function3[
+      /* recursive */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    config: js.Any = null,
+    contains: js.Function1[/* node */ js.UndefOr[INodeInterface], scala.Boolean] = null,
+    copy: js.Function2[
+      /* newId */ js.UndefOr[java.lang.String], 
+      /* deep */ js.UndefOr[scala.Boolean], 
+      INodeInterface
+    ] = null,
+    destroy: js.Function1[/* silent */ js.UndefOr[js.Any], scala.Unit] = null,
+    eachChild: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* args */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
+      scala.Unit
+    ] = null,
+    expand: js.Function3[
+      /* recursive */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    extend: java.lang.String = null,
+    findChild: js.Function3[
+      /* attribute */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* deep */ js.UndefOr[scala.Boolean], 
+      INodeInterface
+    ] = null,
+    findChildBy: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* deep */ js.UndefOr[scala.Boolean], 
+      INodeInterface
+    ] = null,
+    firstChild: js.Any = null,
+    getChildAt: js.Function1[/* index */ js.UndefOr[scala.Double], INodeInterface] = null,
+    getDepth: js.Function0[scala.Double] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getPath: js.Function2[
+      /* field */ js.UndefOr[java.lang.String], 
+      /* separator */ js.UndefOr[java.lang.String], 
+      java.lang.String
+    ] = null,
+    hasChildNodes: js.Function0[scala.Boolean] = null,
+    indexOf: js.Function1[/* child */ js.UndefOr[INodeInterface], scala.Double] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    insertBefore: js.Function2[
+      /* node */ js.UndefOr[INodeInterface], 
+      /* refNode */ js.UndefOr[INodeInterface], 
+      INodeInterface
+    ] = null,
+    insertChild: js.Function2[/* index */ js.UndefOr[scala.Double], /* node */ js.UndefOr[IModel], IModel] = null,
+    isAncestor: js.Function1[/* node */ js.UndefOr[INodeInterface], scala.Boolean] = null,
+    isExpandable: js.Function0[scala.Boolean] = null,
+    isExpanded: js.Function0[scala.Boolean] = null,
+    isFirst: js.Function0[scala.Boolean] = null,
+    isLast: js.Function0[scala.Boolean] = null,
+    isLeaf: js.Function0[scala.Boolean] = null,
+    isLoaded: js.Function0[scala.Boolean] = null,
+    isLoading: js.Function0[scala.Boolean] = null,
+    isRoot: js.Function0[scala.Boolean] = null,
+    isVisible: js.Function0[scala.Boolean] = null,
+    lastChild: js.Any = null,
+    mixins: js.Any = null,
+    nextSibling: js.Any = null,
+    parentNode: js.Any = null,
+    platformConfig: js.Any = null,
+    previousSibling: js.Any = null,
+    remove: js.Function1[/* destroy */ js.UndefOr[scala.Boolean], INodeInterface] = null,
+    removeAll: js.Function1[/* destroy */ js.UndefOr[scala.Boolean], INodeInterface] = null,
+    removeChild: js.Function2[
+      /* node */ js.UndefOr[INodeInterface], 
+      /* destroy */ js.UndefOr[scala.Boolean], 
+      INodeInterface
+    ] = null,
+    replaceChild: js.Function2[
+      /* newChild */ js.UndefOr[INodeInterface], 
+      /* oldChild */ js.UndefOr[INodeInterface], 
+      INodeInterface
+    ] = null,
+    self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.Function3[
+      /* sortFn */ js.UndefOr[js.Any], 
+      /* recursive */ js.UndefOr[scala.Boolean], 
+      /* suppressEvent */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    statics: js.Any = null,
+    updateInfo: js.Function1[/* silent */ js.UndefOr[js.Any], scala.Boolean] = null,
+    uses: senchaUnderscoreTouchLib.ExtNs.Array = null
+  ): INode = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (appendChild != null) __obj.updateDynamic("appendChild")(appendChild)
+    if (bubble != null) __obj.updateDynamic("bubble")(bubble)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (cascadeBy != null) __obj.updateDynamic("cascadeBy")(cascadeBy)
+    if (childNodes != null) __obj.updateDynamic("childNodes")(childNodes)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (contains != null) __obj.updateDynamic("contains")(contains)
+    if (copy != null) __obj.updateDynamic("copy")(copy)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (eachChild != null) __obj.updateDynamic("eachChild")(eachChild)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (findChild != null) __obj.updateDynamic("findChild")(findChild)
+    if (findChildBy != null) __obj.updateDynamic("findChildBy")(findChildBy)
+    if (firstChild != null) __obj.updateDynamic("firstChild")(firstChild)
+    if (getChildAt != null) __obj.updateDynamic("getChildAt")(getChildAt)
+    if (getDepth != null) __obj.updateDynamic("getDepth")(getDepth)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getPath != null) __obj.updateDynamic("getPath")(getPath)
+    if (hasChildNodes != null) __obj.updateDynamic("hasChildNodes")(hasChildNodes)
+    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (insertBefore != null) __obj.updateDynamic("insertBefore")(insertBefore)
+    if (insertChild != null) __obj.updateDynamic("insertChild")(insertChild)
+    if (isAncestor != null) __obj.updateDynamic("isAncestor")(isAncestor)
+    if (isExpandable != null) __obj.updateDynamic("isExpandable")(isExpandable)
+    if (isExpanded != null) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (isFirst != null) __obj.updateDynamic("isFirst")(isFirst)
+    if (isLast != null) __obj.updateDynamic("isLast")(isLast)
+    if (isLeaf != null) __obj.updateDynamic("isLeaf")(isLeaf)
+    if (isLoaded != null) __obj.updateDynamic("isLoaded")(isLoaded)
+    if (isLoading != null) __obj.updateDynamic("isLoading")(isLoading)
+    if (isRoot != null) __obj.updateDynamic("isRoot")(isRoot)
+    if (isVisible != null) __obj.updateDynamic("isVisible")(isVisible)
+    if (lastChild != null) __obj.updateDynamic("lastChild")(lastChild)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (nextSibling != null) __obj.updateDynamic("nextSibling")(nextSibling)
+    if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (previousSibling != null) __obj.updateDynamic("previousSibling")(previousSibling)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (removeAll != null) __obj.updateDynamic("removeAll")(removeAll)
+    if (removeChild != null) __obj.updateDynamic("removeChild")(removeChild)
+    if (replaceChild != null) __obj.updateDynamic("replaceChild")(replaceChild)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (updateInfo != null) __obj.updateDynamic("updateInfo")(updateInfo)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[INode]
+  }
+}
+

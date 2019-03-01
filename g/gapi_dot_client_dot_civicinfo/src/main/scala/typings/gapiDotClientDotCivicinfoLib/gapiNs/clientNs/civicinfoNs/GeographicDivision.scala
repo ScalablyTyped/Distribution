@@ -25,3 +25,18 @@ trait GeographicDivision extends js.Object {
   var officeIndices: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object GeographicDivision {
+  @scala.inline
+  def apply(
+    alsoKnownAs: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    officeIndices: js.Array[scala.Double] = null
+  ): GeographicDivision = {
+    val __obj = js.Dynamic.literal()
+    if (alsoKnownAs != null) __obj.updateDynamic("alsoKnownAs")(alsoKnownAs)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (officeIndices != null) __obj.updateDynamic("officeIndices")(officeIndices)
+    __obj.asInstanceOf[GeographicDivision]
+  }
+}
+

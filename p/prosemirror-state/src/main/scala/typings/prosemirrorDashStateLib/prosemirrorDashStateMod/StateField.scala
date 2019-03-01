@@ -40,3 +40,25 @@ trait StateField[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
   def init(config: org.scalablytyped.runtime.StringDictionary[js.Any], instance: EditorState[S]): T
 }
 
+object StateField {
+  @scala.inline
+  def apply[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    apply: js.Function4[Transaction[S], T, EditorState[S], EditorState[S], T],
+    init: js.Function2[org.scalablytyped.runtime.StringDictionary[js.Any], EditorState[S], T],
+    fromJSON: js.Function3[
+      /* config */ org.scalablytyped.runtime.StringDictionary[js.Any], 
+      /* value */ js.Any, 
+      /* state */ EditorState[S], 
+      T
+    ] = null,
+    toJSON: js.Function1[/* value */ T, _] = null
+  ): StateField[T, S] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apply")(apply)
+    __obj.updateDynamic("init")(init)
+    if (fromJSON != null) __obj.updateDynamic("fromJSON")(fromJSON)
+    if (toJSON != null) __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[StateField[T, S]]
+  }
+}
+

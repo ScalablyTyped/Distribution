@@ -18,3 +18,31 @@ trait Field extends js.Object {
   var widgetType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Field {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    name: java.lang.String,
+    `type`: java.lang.String,
+    choices: js.Array[SelectChoice] = null,
+    help: java.lang.String = null,
+    options: AposObject = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    schema: js.Array[Field] = null,
+    titleField: java.lang.String = null,
+    widgetType: java.lang.String = null
+  ): Field = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("name")(name)
+    if (choices != null) __obj.updateDynamic("choices")(choices)
+    if (help != null) __obj.updateDynamic("help")(help)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (titleField != null) __obj.updateDynamic("titleField")(titleField)
+    if (widgetType != null) __obj.updateDynamic("widgetType")(widgetType)
+    __obj.asInstanceOf[Field]
+  }
+}
+

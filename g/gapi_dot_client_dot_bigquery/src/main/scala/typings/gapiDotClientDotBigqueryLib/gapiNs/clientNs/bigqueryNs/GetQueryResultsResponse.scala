@@ -45,3 +45,36 @@ trait GetQueryResultsResponse extends js.Object {
   var totalRows: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetQueryResultsResponse {
+  @scala.inline
+  def apply(
+    cacheHit: js.UndefOr[scala.Boolean] = js.undefined,
+    errors: js.Array[ErrorProto] = null,
+    etag: java.lang.String = null,
+    jobComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    jobReference: JobReference = null,
+    kind: java.lang.String = null,
+    numDmlAffectedRows: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    rows: js.Array[TableRow] = null,
+    schema: TableSchema = null,
+    totalBytesProcessed: java.lang.String = null,
+    totalRows: java.lang.String = null
+  ): GetQueryResultsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (!js.isUndefined(jobComplete)) __obj.updateDynamic("jobComplete")(jobComplete)
+    if (jobReference != null) __obj.updateDynamic("jobReference")(jobReference)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (numDmlAffectedRows != null) __obj.updateDynamic("numDmlAffectedRows")(numDmlAffectedRows)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed)
+    if (totalRows != null) __obj.updateDynamic("totalRows")(totalRows)
+    __obj.asInstanceOf[GetQueryResultsResponse]
+  }
+}
+

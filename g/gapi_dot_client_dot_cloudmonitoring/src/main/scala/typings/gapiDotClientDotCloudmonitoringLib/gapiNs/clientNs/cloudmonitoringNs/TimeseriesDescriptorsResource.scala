@@ -14,3 +14,17 @@ trait TimeseriesDescriptorsResource extends js.Object {
   def list(request: gapiDotClientDotCloudmonitoringLib.Anon_Aggregator): gapiDotClientLib.gapiNs.clientNs.Request[ListTimeseriesDescriptorsResponse]
 }
 
+object TimeseriesDescriptorsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotCloudmonitoringLib.Anon_Aggregator, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTimeseriesDescriptorsResponse]
+    ]
+  ): TimeseriesDescriptorsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[TimeseriesDescriptorsResource]
+  }
+}
+

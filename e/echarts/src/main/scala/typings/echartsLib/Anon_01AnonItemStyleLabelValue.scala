@@ -22,3 +22,13 @@ trait Anon_01AnonItemStyleLabelValue extends js.Object {
   var `1`: js.UndefOr[Anon_ItemStyleLabelValue] = js.undefined
 }
 
+object Anon_01AnonItemStyleLabelValue {
+  @scala.inline
+  def apply(`0`: Anon_ItemStyleLabelValue = null, `1`: Anon_ItemStyleLabelValue = null): Anon_01AnonItemStyleLabelValue = {
+    val __obj = js.Dynamic.literal()
+    if (`0` != null) __obj.updateDynamic("0")(`0`)
+    if (`1` != null) __obj.updateDynamic("1")(`1`)
+    __obj.asInstanceOf[Anon_01AnonItemStyleLabelValue]
+  }
+}
+

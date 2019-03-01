@@ -15,3 +15,26 @@ trait EmotionCache extends js.Object {
   def stylis(key: java.lang.String, value: java.lang.String): js.Array[java.lang.String]
 }
 
+object EmotionCache {
+  @scala.inline
+  def apply(
+    inserted: org.scalablytyped.runtime.StringDictionary[java.lang.String | atEmotionUtilsLib.atEmotionUtilsLibNumbers.`true`],
+    key: java.lang.String,
+    registered: RegisteredCache,
+    sheet: StyleSheet,
+    stylis: js.Function2[java.lang.String, java.lang.String, js.Array[java.lang.String]],
+    compat: atEmotionUtilsLib.atEmotionUtilsLibNumbers.`true` = null,
+    nonce: java.lang.String = null
+  ): EmotionCache = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inserted")(inserted)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("registered")(registered)
+    __obj.updateDynamic("sheet")(sheet)
+    __obj.updateDynamic("stylis")(stylis)
+    if (compat != null) __obj.updateDynamic("compat")(compat)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    __obj.asInstanceOf[EmotionCache]
+  }
+}
+

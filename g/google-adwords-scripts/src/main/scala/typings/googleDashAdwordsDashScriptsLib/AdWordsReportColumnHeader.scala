@@ -10,3 +10,16 @@ trait AdWordsReportColumnHeader extends js.Object {
   def getReportColumnName(): java.lang.String
 }
 
+object AdWordsReportColumnHeader {
+  @scala.inline
+  def apply(
+    getBulkUploadColumnName: js.Function0[java.lang.String],
+    getReportColumnName: js.Function0[java.lang.String]
+  ): AdWordsReportColumnHeader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getBulkUploadColumnName")(getBulkUploadColumnName)
+    __obj.updateDynamic("getReportColumnName")(getReportColumnName)
+    __obj.asInstanceOf[AdWordsReportColumnHeader]
+  }
+}
+

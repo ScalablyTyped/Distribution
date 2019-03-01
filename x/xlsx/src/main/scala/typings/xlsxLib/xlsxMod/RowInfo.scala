@@ -18,3 +18,20 @@ trait RowInfo extends js.Object {
   var level: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RowInfo {
+  @scala.inline
+  def apply(
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    hpt: scala.Int | scala.Double = null,
+    hpx: scala.Int | scala.Double = null,
+    level: scala.Int | scala.Double = null
+  ): RowInfo = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (hpt != null) __obj.updateDynamic("hpt")(hpt.asInstanceOf[js.Any])
+    if (hpx != null) __obj.updateDynamic("hpx")(hpx.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RowInfo]
+  }
+}
+

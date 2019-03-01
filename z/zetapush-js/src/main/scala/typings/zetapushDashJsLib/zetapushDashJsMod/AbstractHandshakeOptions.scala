@@ -11,3 +11,14 @@ trait AbstractHandshakeOptions extends js.Object {
   var sandboxId: java.lang.String
 }
 
+object AbstractHandshakeOptions {
+  @scala.inline
+  def apply(authType: java.lang.String, deploymentId: java.lang.String, sandboxId: java.lang.String): AbstractHandshakeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authType")(authType)
+    __obj.updateDynamic("deploymentId")(deploymentId)
+    __obj.updateDynamic("sandboxId")(sandboxId)
+    __obj.asInstanceOf[AbstractHandshakeOptions]
+  }
+}
+

@@ -38,3 +38,24 @@ trait WorksheetViewSplit extends js.Object {
   var ySplit: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WorksheetViewSplit {
+  @scala.inline
+  def apply(
+    state: exceljsLib.exceljsLibStrings.split,
+    activePane: exceljsLib.exceljsLibStrings.topLeft | exceljsLib.exceljsLibStrings.topRight | exceljsLib.exceljsLibStrings.bottomLeft | exceljsLib.exceljsLibStrings.bottomRight = null,
+    style: exceljsLib.exceljsLibStrings.pageBreakPreview | exceljsLib.exceljsLibStrings.pageLayout = null,
+    topLeftCell: java.lang.String = null,
+    xSplit: scala.Int | scala.Double = null,
+    ySplit: scala.Int | scala.Double = null
+  ): WorksheetViewSplit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("state")(state)
+    if (activePane != null) __obj.updateDynamic("activePane")(activePane.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (topLeftCell != null) __obj.updateDynamic("topLeftCell")(topLeftCell)
+    if (xSplit != null) __obj.updateDynamic("xSplit")(xSplit.asInstanceOf[js.Any])
+    if (ySplit != null) __obj.updateDynamic("ySplit")(ySplit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetViewSplit]
+  }
+}
+

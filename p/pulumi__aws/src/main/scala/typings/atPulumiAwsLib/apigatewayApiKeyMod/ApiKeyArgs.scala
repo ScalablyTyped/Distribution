@@ -32,3 +32,24 @@ trait ApiKeyArgs extends js.Object {
   val value: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApiKeyArgs {
+  @scala.inline
+  def apply(
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    stageKeys: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_RestApiStageName]]
+    ] = null,
+    value: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ApiKeyArgs = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (stageKeys != null) __obj.updateDynamic("stageKeys")(stageKeys.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApiKeyArgs]
+  }
+}
+

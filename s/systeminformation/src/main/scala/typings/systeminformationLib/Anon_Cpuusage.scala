@@ -10,3 +10,13 @@ trait Anon_Cpuusage extends js.Object {
   var throttling_data: Anon_Periods
 }
 
+object Anon_Cpuusage {
+  @scala.inline
+  def apply(cpu_usage: Anon_Totalusage, throttling_data: Anon_Periods): Anon_Cpuusage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cpu_usage")(cpu_usage)
+    __obj.updateDynamic("throttling_data")(throttling_data)
+    __obj.asInstanceOf[Anon_Cpuusage]
+  }
+}
+

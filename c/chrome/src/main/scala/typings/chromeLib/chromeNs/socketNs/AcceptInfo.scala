@@ -10,3 +10,13 @@ trait AcceptInfo extends js.Object {
   var socketId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AcceptInfo {
+  @scala.inline
+  def apply(resultCode: scala.Double, socketId: scala.Int | scala.Double = null): AcceptInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resultCode")(resultCode)
+    if (socketId != null) __obj.updateDynamic("socketId")(socketId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AcceptInfo]
+  }
+}
+

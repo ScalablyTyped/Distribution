@@ -11,3 +11,13 @@ trait plantClassifyResponse extends js.Object {
   var result: js.Array[baiduDashAppLib.Anon_NameScore]
 }
 
+object plantClassifyResponse {
+  @scala.inline
+  def apply(log_id: scala.Double, result: js.Array[baiduDashAppLib.Anon_NameScore]): plantClassifyResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("log_id")(log_id)
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[plantClassifyResponse]
+  }
+}
+

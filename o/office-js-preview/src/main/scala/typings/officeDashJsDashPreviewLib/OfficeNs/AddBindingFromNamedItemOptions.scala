@@ -19,3 +19,13 @@ trait AddBindingFromNamedItemOptions extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AddBindingFromNamedItemOptions {
+  @scala.inline
+  def apply(asyncContext: js.Any = null, id: java.lang.String = null): AddBindingFromNamedItemOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[AddBindingFromNamedItemOptions]
+  }
+}
+

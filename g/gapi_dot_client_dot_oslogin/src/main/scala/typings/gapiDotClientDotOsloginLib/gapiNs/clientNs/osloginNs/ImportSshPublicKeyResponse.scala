@@ -10,3 +10,12 @@ trait ImportSshPublicKeyResponse extends js.Object {
   var loginProfile: js.UndefOr[LoginProfile] = js.undefined
 }
 
+object ImportSshPublicKeyResponse {
+  @scala.inline
+  def apply(loginProfile: LoginProfile = null): ImportSshPublicKeyResponse = {
+    val __obj = js.Dynamic.literal()
+    if (loginProfile != null) __obj.updateDynamic("loginProfile")(loginProfile)
+    __obj.asInstanceOf[ImportSshPublicKeyResponse]
+  }
+}
+

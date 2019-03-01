@@ -26,3 +26,27 @@ trait XGridPeer
   def setColumns(aColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer): scala.Unit
 }
 
+object XGridPeer {
+  @scala.inline
+  def apply(
+    Columns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    acquire: js.Function0[scala.Unit],
+    getColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setColumns: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer, 
+      scala.Unit
+    ]
+  ): XGridPeer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Columns")(Columns)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getColumns")(getColumns)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setColumns")(setColumns)
+    __obj.asInstanceOf[XGridPeer]
+  }
+}
+

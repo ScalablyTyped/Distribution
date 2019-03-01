@@ -120,3 +120,64 @@ trait GetLaunchTemplateResult extends js.Object {
   val vpcSecurityGroupIds: js.Array[java.lang.String]
 }
 
+object GetLaunchTemplateResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    blockDeviceMappings: js.Array[atPulumiAwsLib.Anon_DeviceNameEbs],
+    creditSpecifications: js.Array[atPulumiAwsLib.Anon_CpuCredits],
+    defaultVersion: scala.Double,
+    description: java.lang.String,
+    disableApiTermination: scala.Boolean,
+    ebsOptimized: java.lang.String,
+    elasticGpuSpecifications: js.Array[atPulumiAwsLib.Anon_TypeString],
+    iamInstanceProfiles: js.Array[atPulumiAwsLib.Anon_Arn],
+    id: java.lang.String,
+    imageId: java.lang.String,
+    instanceInitiatedShutdownBehavior: java.lang.String,
+    instanceMarketOptions: js.Array[atPulumiAwsLib.Anon_MarketType],
+    instanceType: java.lang.String,
+    kernelId: java.lang.String,
+    keyName: java.lang.String,
+    latestVersion: scala.Double,
+    monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean_204597847],
+    networkInterfaces: js.Array[atPulumiAwsLib.Anon_AssociatePublicIpAddress],
+    placements: js.Array[atPulumiAwsLib.Anon_Affinity],
+    ramDiskId: java.lang.String,
+    securityGroupNames: js.Array[java.lang.String],
+    tagSpecifications: js.Array[atPulumiAwsLib.Anon_KeyResourceType],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    userData: java.lang.String,
+    vpcSecurityGroupIds: js.Array[java.lang.String]
+  ): GetLaunchTemplateResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("blockDeviceMappings")(blockDeviceMappings)
+    __obj.updateDynamic("creditSpecifications")(creditSpecifications)
+    __obj.updateDynamic("defaultVersion")(defaultVersion)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("disableApiTermination")(disableApiTermination)
+    __obj.updateDynamic("ebsOptimized")(ebsOptimized)
+    __obj.updateDynamic("elasticGpuSpecifications")(elasticGpuSpecifications)
+    __obj.updateDynamic("iamInstanceProfiles")(iamInstanceProfiles)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("imageId")(imageId)
+    __obj.updateDynamic("instanceInitiatedShutdownBehavior")(instanceInitiatedShutdownBehavior)
+    __obj.updateDynamic("instanceMarketOptions")(instanceMarketOptions)
+    __obj.updateDynamic("instanceType")(instanceType)
+    __obj.updateDynamic("kernelId")(kernelId)
+    __obj.updateDynamic("keyName")(keyName)
+    __obj.updateDynamic("latestVersion")(latestVersion)
+    __obj.updateDynamic("monitorings")(monitorings)
+    __obj.updateDynamic("networkInterfaces")(networkInterfaces)
+    __obj.updateDynamic("placements")(placements)
+    __obj.updateDynamic("ramDiskId")(ramDiskId)
+    __obj.updateDynamic("securityGroupNames")(securityGroupNames)
+    __obj.updateDynamic("tagSpecifications")(tagSpecifications)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("userData")(userData)
+    __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds)
+    __obj.asInstanceOf[GetLaunchTemplateResult]
+  }
+}
+

@@ -281,3 +281,119 @@ trait IgTreeGridPaging
   var visiblePageCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgTreeGridPaging {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTreeGridPaging
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    breadcrumbDelimiter: java.lang.String = null,
+    breadcrumbKey: java.lang.String = null,
+    contextRowLoadingText: java.lang.String = null,
+    contextRowMode: java.lang.String = null,
+    contextRowRendered: ContextRowRenderedEvent = null,
+    contextRowRendering: ContextRowRenderingEvent = null,
+    contextRowRootText: java.lang.String = null,
+    currentPageDropDownLeadingLabel: java.lang.String = null,
+    currentPageDropDownTooltip: java.lang.String = null,
+    currentPageDropDownTrailingLabel: java.lang.String = null,
+    currentPageIndex: scala.Int | scala.Double = null,
+    defaultDropDownWidth: scala.Int | scala.Double = null,
+    delayOnPageChanged: scala.Int | scala.Double = null,
+    firstPageLabelText: java.lang.String = null,
+    firstPageTooltip: java.lang.String = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    lastPageLabelText: java.lang.String = null,
+    lastPageTooltip: java.lang.String = null,
+    locale: IgTreeGridPagingLocale = null,
+    mode: java.lang.String = null,
+    nextPageLabelText: java.lang.String = null,
+    nextPageTooltip: java.lang.String = null,
+    pageCountLimit: scala.Int | scala.Double = null,
+    pageIndexChanged: PageIndexChangedEvent = null,
+    pageIndexChanging: PageIndexChangingEvent = null,
+    pageIndexUrlKey: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageSizeChanged: PageSizeChangedEvent = null,
+    pageSizeChanging: PageSizeChangingEvent = null,
+    pageSizeDropDownLabel: java.lang.String = null,
+    pageSizeDropDownLocation: java.lang.String = null,
+    pageSizeDropDownTooltip: java.lang.String = null,
+    pageSizeDropDownTrailingLabel: java.lang.String = null,
+    pageSizeList: js.Any = null,
+    pageSizeUrlKey: java.lang.String = null,
+    pageTooltipFormat: java.lang.String = null,
+    pagerRecordsLabelTemplate: java.lang.String = null,
+    pagerRecordsLabelTooltip: java.lang.String = null,
+    pagerRendered: PagerRenderedEvent = null,
+    pagerRendering: PagerRenderingEvent = null,
+    persist: js.UndefOr[scala.Boolean] = js.undefined,
+    prevPageLabelText: java.lang.String = null,
+    prevPageTooltip: java.lang.String = null,
+    recordCountKey: java.lang.String = null,
+    renderContextRowFunc: js.Function | java.lang.String = null,
+    showFirstLastPages: js.UndefOr[scala.Boolean] = js.undefined,
+    showPageSizeDropDown: js.UndefOr[scala.Boolean] = js.undefined,
+    showPagerRecordsLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    showPrevNextPages: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    visiblePageCount: scala.Int | scala.Double = null
+  ): IgTreeGridPaging = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (breadcrumbDelimiter != null) __obj.updateDynamic("breadcrumbDelimiter")(breadcrumbDelimiter)
+    if (breadcrumbKey != null) __obj.updateDynamic("breadcrumbKey")(breadcrumbKey)
+    if (contextRowLoadingText != null) __obj.updateDynamic("contextRowLoadingText")(contextRowLoadingText)
+    if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode)
+    if (contextRowRendered != null) __obj.updateDynamic("contextRowRendered")(contextRowRendered)
+    if (contextRowRendering != null) __obj.updateDynamic("contextRowRendering")(contextRowRendering)
+    if (contextRowRootText != null) __obj.updateDynamic("contextRowRootText")(contextRowRootText)
+    if (currentPageDropDownLeadingLabel != null) __obj.updateDynamic("currentPageDropDownLeadingLabel")(currentPageDropDownLeadingLabel)
+    if (currentPageDropDownTooltip != null) __obj.updateDynamic("currentPageDropDownTooltip")(currentPageDropDownTooltip)
+    if (currentPageDropDownTrailingLabel != null) __obj.updateDynamic("currentPageDropDownTrailingLabel")(currentPageDropDownTrailingLabel)
+    if (currentPageIndex != null) __obj.updateDynamic("currentPageIndex")(currentPageIndex.asInstanceOf[js.Any])
+    if (defaultDropDownWidth != null) __obj.updateDynamic("defaultDropDownWidth")(defaultDropDownWidth.asInstanceOf[js.Any])
+    if (delayOnPageChanged != null) __obj.updateDynamic("delayOnPageChanged")(delayOnPageChanged.asInstanceOf[js.Any])
+    if (firstPageLabelText != null) __obj.updateDynamic("firstPageLabelText")(firstPageLabelText)
+    if (firstPageTooltip != null) __obj.updateDynamic("firstPageTooltip")(firstPageTooltip)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (lastPageLabelText != null) __obj.updateDynamic("lastPageLabelText")(lastPageLabelText)
+    if (lastPageTooltip != null) __obj.updateDynamic("lastPageTooltip")(lastPageTooltip)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (nextPageLabelText != null) __obj.updateDynamic("nextPageLabelText")(nextPageLabelText)
+    if (nextPageTooltip != null) __obj.updateDynamic("nextPageTooltip")(nextPageTooltip)
+    if (pageCountLimit != null) __obj.updateDynamic("pageCountLimit")(pageCountLimit.asInstanceOf[js.Any])
+    if (pageIndexChanged != null) __obj.updateDynamic("pageIndexChanged")(pageIndexChanged)
+    if (pageIndexChanging != null) __obj.updateDynamic("pageIndexChanging")(pageIndexChanging)
+    if (pageIndexUrlKey != null) __obj.updateDynamic("pageIndexUrlKey")(pageIndexUrlKey)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageSizeChanged != null) __obj.updateDynamic("pageSizeChanged")(pageSizeChanged)
+    if (pageSizeChanging != null) __obj.updateDynamic("pageSizeChanging")(pageSizeChanging)
+    if (pageSizeDropDownLabel != null) __obj.updateDynamic("pageSizeDropDownLabel")(pageSizeDropDownLabel)
+    if (pageSizeDropDownLocation != null) __obj.updateDynamic("pageSizeDropDownLocation")(pageSizeDropDownLocation)
+    if (pageSizeDropDownTooltip != null) __obj.updateDynamic("pageSizeDropDownTooltip")(pageSizeDropDownTooltip)
+    if (pageSizeDropDownTrailingLabel != null) __obj.updateDynamic("pageSizeDropDownTrailingLabel")(pageSizeDropDownTrailingLabel)
+    if (pageSizeList != null) __obj.updateDynamic("pageSizeList")(pageSizeList)
+    if (pageSizeUrlKey != null) __obj.updateDynamic("pageSizeUrlKey")(pageSizeUrlKey)
+    if (pageTooltipFormat != null) __obj.updateDynamic("pageTooltipFormat")(pageTooltipFormat)
+    if (pagerRecordsLabelTemplate != null) __obj.updateDynamic("pagerRecordsLabelTemplate")(pagerRecordsLabelTemplate)
+    if (pagerRecordsLabelTooltip != null) __obj.updateDynamic("pagerRecordsLabelTooltip")(pagerRecordsLabelTooltip)
+    if (pagerRendered != null) __obj.updateDynamic("pagerRendered")(pagerRendered)
+    if (pagerRendering != null) __obj.updateDynamic("pagerRendering")(pagerRendering)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (prevPageLabelText != null) __obj.updateDynamic("prevPageLabelText")(prevPageLabelText)
+    if (prevPageTooltip != null) __obj.updateDynamic("prevPageTooltip")(prevPageTooltip)
+    if (recordCountKey != null) __obj.updateDynamic("recordCountKey")(recordCountKey)
+    if (renderContextRowFunc != null) __obj.updateDynamic("renderContextRowFunc")(renderContextRowFunc.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFirstLastPages)) __obj.updateDynamic("showFirstLastPages")(showFirstLastPages)
+    if (!js.isUndefined(showPageSizeDropDown)) __obj.updateDynamic("showPageSizeDropDown")(showPageSizeDropDown)
+    if (!js.isUndefined(showPagerRecordsLabel)) __obj.updateDynamic("showPagerRecordsLabel")(showPagerRecordsLabel)
+    if (!js.isUndefined(showPrevNextPages)) __obj.updateDynamic("showPrevNextPages")(showPrevNextPages)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (visiblePageCount != null) __obj.updateDynamic("visiblePageCount")(visiblePageCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgTreeGridPaging]
+  }
+}
+

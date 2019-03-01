@@ -10,3 +10,13 @@ trait Anon_ColumnRow extends js.Object {
   var row: scala.Double
 }
 
+object Anon_ColumnRow {
+  @scala.inline
+  def apply(column: scala.Double, row: scala.Double): Anon_ColumnRow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[Anon_ColumnRow]
+  }
+}
+

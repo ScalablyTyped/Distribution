@@ -75,3 +75,34 @@ trait JSTreeStaticDefaultsDragNDrop extends js.Object {
   var use_html5: scala.Boolean
 }
 
+object JSTreeStaticDefaultsDragNDrop {
+  @scala.inline
+  def apply(
+    always_copy: scala.Boolean,
+    check_while_dragging: scala.Boolean,
+    copy: scala.Boolean,
+    drag_selection: scala.Boolean,
+    inside_pos: js.Any,
+    is_draggable: scala.Boolean,
+    large_drag_target: scala.Boolean,
+    large_drop_target: scala.Boolean,
+    open_timeout: scala.Double,
+    touch: scala.Boolean,
+    use_html5: scala.Boolean
+  ): JSTreeStaticDefaultsDragNDrop = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("always_copy")(always_copy)
+    __obj.updateDynamic("check_while_dragging")(check_while_dragging)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("drag_selection")(drag_selection)
+    __obj.updateDynamic("inside_pos")(inside_pos)
+    __obj.updateDynamic("is_draggable")(is_draggable)
+    __obj.updateDynamic("large_drag_target")(large_drag_target)
+    __obj.updateDynamic("large_drop_target")(large_drop_target)
+    __obj.updateDynamic("open_timeout")(open_timeout)
+    __obj.updateDynamic("touch")(touch)
+    __obj.updateDynamic("use_html5")(use_html5)
+    __obj.asInstanceOf[JSTreeStaticDefaultsDragNDrop]
+  }
+}
+

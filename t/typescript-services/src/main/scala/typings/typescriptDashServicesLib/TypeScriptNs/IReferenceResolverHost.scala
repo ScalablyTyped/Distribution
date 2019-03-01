@@ -13,3 +13,22 @@ trait IReferenceResolverHost extends js.Object {
   def resolveRelativePath(path: java.lang.String, directory: java.lang.String): java.lang.String
 }
 
+object IReferenceResolverHost {
+  @scala.inline
+  def apply(
+    directoryExists: js.Function1[java.lang.String, scala.Boolean],
+    fileExists: js.Function1[java.lang.String, scala.Boolean],
+    getParentDirectory: js.Function1[java.lang.String, java.lang.String],
+    getScriptSnapshot: js.Function1[java.lang.String, IScriptSnapshot],
+    resolveRelativePath: js.Function2[java.lang.String, java.lang.String, java.lang.String]
+  ): IReferenceResolverHost = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("directoryExists")(directoryExists)
+    __obj.updateDynamic("fileExists")(fileExists)
+    __obj.updateDynamic("getParentDirectory")(getParentDirectory)
+    __obj.updateDynamic("getScriptSnapshot")(getScriptSnapshot)
+    __obj.updateDynamic("resolveRelativePath")(resolveRelativePath)
+    __obj.asInstanceOf[IReferenceResolverHost]
+  }
+}
+

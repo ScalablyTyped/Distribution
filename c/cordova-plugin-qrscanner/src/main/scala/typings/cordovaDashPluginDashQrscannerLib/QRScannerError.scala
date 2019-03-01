@@ -44,3 +44,14 @@ trait QRScannerError extends js.Object {
   var name: java.lang.String
 }
 
+object QRScannerError {
+  @scala.inline
+  def apply(_message: java.lang.String, code: scala.Double, name: java.lang.String): QRScannerError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_message")(_message)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[QRScannerError]
+  }
+}
+

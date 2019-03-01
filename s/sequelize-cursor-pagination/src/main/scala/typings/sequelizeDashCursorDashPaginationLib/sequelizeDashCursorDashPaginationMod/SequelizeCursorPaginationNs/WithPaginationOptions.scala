@@ -11,3 +11,13 @@ trait WithPaginationOptions[MethodName /* <: java.lang.String */] extends js.Obj
   var primaryKeyField: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WithPaginationOptions {
+  @scala.inline
+  def apply[MethodName /* <: java.lang.String */](methodName: MethodName = null, primaryKeyField: java.lang.String = null): WithPaginationOptions[MethodName] = {
+    val __obj = js.Dynamic.literal()
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
+    if (primaryKeyField != null) __obj.updateDynamic("primaryKeyField")(primaryKeyField)
+    __obj.asInstanceOf[WithPaginationOptions[MethodName]]
+  }
+}
+

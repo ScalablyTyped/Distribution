@@ -41,3 +41,34 @@ trait Options extends js.Object {
   var stretch: js.UndefOr[Stretch] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    bounds: js.Any = null,
+    fileName: java.lang.String = null,
+    format: FileFormats = null,
+    margin: js.Any = null,
+    mode: ExportModes = null,
+    multiplePage: js.UndefOr[scala.Boolean] = js.undefined,
+    pageHeight: scala.Int | scala.Double = null,
+    pageOrientation: PageOrientations = null,
+    pageWidth: scala.Int | scala.Double = null,
+    region: Region = null,
+    stretch: Stretch = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (!js.isUndefined(multiplePage)) __obj.updateDynamic("multiplePage")(multiplePage)
+    if (pageHeight != null) __obj.updateDynamic("pageHeight")(pageHeight.asInstanceOf[js.Any])
+    if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation)
+    if (pageWidth != null) __obj.updateDynamic("pageWidth")(pageWidth.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (stretch != null) __obj.updateDynamic("stretch")(stretch)
+    __obj.asInstanceOf[Options]
+  }
+}
+

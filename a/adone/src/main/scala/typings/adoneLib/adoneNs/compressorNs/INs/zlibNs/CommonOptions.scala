@@ -17,3 +17,20 @@ trait CommonOptions extends js.Object {
   var windowBits: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CommonOptions {
+  @scala.inline
+  def apply(
+    chunkSize: scala.Int | scala.Double = null,
+    finishFlush: scala.Int | scala.Double = null,
+    flush: scala.Int | scala.Double = null,
+    windowBits: scala.Int | scala.Double = null
+  ): CommonOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (finishFlush != null) __obj.updateDynamic("finishFlush")(finishFlush.asInstanceOf[js.Any])
+    if (flush != null) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
+    if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommonOptions]
+  }
+}
+

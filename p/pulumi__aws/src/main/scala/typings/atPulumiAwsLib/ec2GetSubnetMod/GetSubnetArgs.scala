@@ -51,3 +51,32 @@ trait GetSubnetArgs extends js.Object {
   val vpcId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetSubnetArgs {
+  @scala.inline
+  def apply(
+    availabilityZone: java.lang.String = null,
+    availabilityZoneId: java.lang.String = null,
+    cidrBlock: java.lang.String = null,
+    defaultForAz: js.UndefOr[scala.Boolean] = js.undefined,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    id: java.lang.String = null,
+    ipv6CidrBlock: java.lang.String = null,
+    state: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    vpcId: java.lang.String = null
+  ): GetSubnetArgs = {
+    val __obj = js.Dynamic.literal()
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone)
+    if (availabilityZoneId != null) __obj.updateDynamic("availabilityZoneId")(availabilityZoneId)
+    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock)
+    if (!js.isUndefined(defaultForAz)) __obj.updateDynamic("defaultForAz")(defaultForAz)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (ipv6CidrBlock != null) __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId)
+    __obj.asInstanceOf[GetSubnetArgs]
+  }
+}
+

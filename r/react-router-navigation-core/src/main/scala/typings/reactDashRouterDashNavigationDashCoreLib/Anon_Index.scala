@@ -10,3 +10,13 @@ trait Anon_Index extends js.Object {
   var onIndexChange: js.UndefOr[js.Function1[/* index */ scala.Double, scala.Unit]] = js.undefined
 }
 
+object Anon_Index {
+  @scala.inline
+  def apply(key: java.lang.String, onIndexChange: js.Function1[/* index */ scala.Double, scala.Unit] = null): Anon_Index = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (onIndexChange != null) __obj.updateDynamic("onIndexChange")(onIndexChange)
+    __obj.asInstanceOf[Anon_Index]
+  }
+}
+

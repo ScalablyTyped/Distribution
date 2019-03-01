@@ -10,3 +10,12 @@ trait SuccessDetail extends js.Object {
   var otherNativeCrash: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SuccessDetail {
+  @scala.inline
+  def apply(otherNativeCrash: js.UndefOr[scala.Boolean] = js.undefined): SuccessDetail = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(otherNativeCrash)) __obj.updateDynamic("otherNativeCrash")(otherNativeCrash)
+    __obj.asInstanceOf[SuccessDetail]
+  }
+}
+

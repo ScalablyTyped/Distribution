@@ -416,3 +416,274 @@ import scala.scalajs.js.annotation._
   var useComponents: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IDataView {
+  @scala.inline
+  def apply(
+    IContainer: senchaUnderscoreTouchLib.ExtNs.IContainer = null,
+    ISelectable: senchaUnderscoreTouchLib.ExtNs.mixinNs.ISelectable = null,
+    baseCls: java.lang.String = null,
+    bindStore: js.Function0[scala.Unit] = null,
+    blockRefresh: js.UndefOr[scala.Boolean] = js.undefined,
+    clearSelections: js.Function0[scala.Unit] = null,
+    collectData: js.Function0[scala.Unit] = null,
+    data: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    defaultType: java.lang.String = null,
+    deferEmptyText: js.UndefOr[scala.Boolean] = js.undefined,
+    deselect: js.Function2[
+      /* records */ js.UndefOr[js.Any], 
+      /* suppressEvent */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    deselectAll: js.Function1[/* supress */ js.UndefOr[js.Any], scala.Unit] = null,
+    deselectOnContainerClick: js.UndefOr[scala.Boolean] = js.undefined,
+    destroy: js.Function0[scala.Unit] = null,
+    doDeselect: js.Function2[
+      /* records */ js.UndefOr[js.Any], 
+      /* suppressEvent */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    doSelect: js.Function3[
+      /* records */ js.UndefOr[js.Any], 
+      /* keepExisting */ js.UndefOr[scala.Boolean], 
+      /* suppressEvent */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    emptyText: java.lang.String = null,
+    findItemByChild: js.Function0[scala.Unit] = null,
+    findTargetByEvent: js.Function0[scala.Unit] = null,
+    getAllowDeselect: js.Function0[scala.Boolean] = null,
+    getBaseCls: js.Function0[java.lang.String] = null,
+    getCount: js.Function0[scala.Double] = null,
+    getData: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getDefaultType: js.Function0[java.lang.String] = null,
+    getDeferEmptyText: js.Function0[scala.Boolean] = null,
+    getDeselectOnContainerClick: js.Function0[scala.Boolean] = null,
+    getDisableSelection: js.Function0[scala.Boolean] = null,
+    getEmptyText: js.Function0[java.lang.String] = null,
+    getInline: js.Function0[_] = null,
+    getItemAt: js.Function1[/* index */ js.UndefOr[scala.Double], _] = null,
+    getItemCls: js.Function0[java.lang.String] = null,
+    getItemConfig: js.Function0[_] = null,
+    getItemIndex: js.Function1[/* item */ js.UndefOr[scala.Double], scala.Double] = null,
+    getItemTpl: js.Function0[_] = null,
+    getLastSelected: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getLoadingText: js.Function0[_] = null,
+    getMaxItemCache: js.Function0[scala.Double] = null,
+    getMode: js.Function0[java.lang.String] = null,
+    getNode: js.Function0[scala.Unit] = null,
+    getNodes: js.Function0[scala.Unit] = null,
+    getPressedCls: js.Function0[java.lang.String] = null,
+    getPressedDelay: js.Function0[scala.Double] = null,
+    getRecords: js.Function0[scala.Unit] = null,
+    getScrollToTopOnRefresh: js.Function0[scala.Boolean] = null,
+    getScrollable: js.Function0[senchaUnderscoreTouchLib.ExtNs.scrollNs.IView] = null,
+    getSelectedCls: js.Function0[java.lang.String] = null,
+    getSelectedNodes: js.Function0[scala.Unit] = null,
+    getSelectedRecords: js.Function0[scala.Unit] = null,
+    getSelection: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getSelectionCount: js.Function0[scala.Double] = null,
+    getSelectionMode: js.Function0[java.lang.String] = null,
+    getStore: js.Function0[_] = null,
+    getTriggerCtEvent: js.Function0[java.lang.String] = null,
+    getTriggerEvent: js.Function0[java.lang.String] = null,
+    getUseComponents: js.Function0[scala.Boolean] = null,
+    getViewItems: js.Function0[_] = null,
+    handleException: js.Function0[scala.Unit] = null,
+    hasSelection: js.Function0[scala.Boolean] = null,
+    indexOf: js.Function0[scala.Unit] = null,
+    initialize: js.Function0[scala.Unit] = null,
+    `inline`: js.Any = null,
+    isLocked: js.Function0[scala.Boolean] = null,
+    isSelected: js.Function1[/* record */ js.UndefOr[js.Any], scala.Boolean] = null,
+    itemCls: java.lang.String = null,
+    itemConfig: js.Any = null,
+    itemSelector: js.UndefOr[scala.Boolean] = js.undefined,
+    itemTpl: js.Any = null,
+    loadingText: js.Any = null,
+    maxItemCache: scala.Int | scala.Double = null,
+    multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    overItemCls: js.UndefOr[scala.Boolean] = js.undefined,
+    prepareData: js.Function3[
+      /* data */ js.UndefOr[js.Any], 
+      /* index */ js.UndefOr[scala.Double], 
+      /* record */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IModel], 
+      _
+    ] = null,
+    pressedCls: java.lang.String = null,
+    pressedDelay: scala.Int | scala.Double = null,
+    refresh: js.Function0[scala.Unit] = null,
+    refreshNode: js.Function0[scala.Unit] = null,
+    scrollToTopOnRefresh: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollable: js.Any = null,
+    select: js.Function3[
+      /* records */ js.UndefOr[js.Any], 
+      /* keepExisting */ js.UndefOr[scala.Boolean], 
+      /* suppressEvent */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    selectAll: js.Function1[/* silent */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    selectRange: js.Function3[
+      /* startRecord */ js.UndefOr[scala.Double], 
+      /* endRecord */ js.UndefOr[scala.Double], 
+      /* keepExisting */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    selectedCls: java.lang.String = null,
+    selectedItemCls: js.UndefOr[scala.Boolean] = js.undefined,
+    setAllowDeselect: js.Function1[/* allowDeselect */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setData: js.Function1[/* data */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    setDefaultType: js.Function1[/* defaultType */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setDeferEmptyText: js.Function1[/* deferEmptyText */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setDeselectOnContainerClick: js.Function1[/* deselectOnContainerClick */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setDisableSelection: js.Function1[/* disableSelection */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setEmptyText: js.Function1[/* emptyText */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setInline: js.Function1[/* inline */ js.UndefOr[js.Any], scala.Unit] = null,
+    setItemCls: js.Function1[/* itemCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setItemConfig: js.Function1[/* itemConfig */ js.UndefOr[js.Any], scala.Unit] = null,
+    setItemTpl: js.Function1[/* itemTpl */ js.UndefOr[js.Any], scala.Unit] = null,
+    setLastFocused: js.Function0[scala.Unit] = null,
+    setLoadingText: js.Function1[/* loadingText */ js.UndefOr[js.Any], scala.Unit] = null,
+    setMaxItemCache: js.Function1[/* maxItemCache */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setMode: js.Function1[/* mode */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setPressedCls: js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setPressedDelay: js.Function1[/* pressedDelay */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setScrollToTopOnRefresh: js.Function1[/* scrollToTopOnRefresh */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setSelectedCls: js.Function1[/* selectedCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setStore: js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit] = null,
+    setTriggerCtEvent: js.Function1[/* triggerCtEvent */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setTriggerEvent: js.Function1[/* triggerEvent */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setUseComponents: js.Function1[/* useComponents */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    simpleSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    singleSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    store: js.Any = null,
+    trackOver: js.UndefOr[scala.Boolean] = js.undefined,
+    triggerCtEvent: java.lang.String = null,
+    triggerEvent: java.lang.String = null,
+    updateLastFocused: js.Function2[
+      /* newRecord */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord], 
+      /* oldRecord */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IRecord], 
+      scala.Unit
+    ] = null,
+    useComponents: js.UndefOr[scala.Boolean] = js.undefined
+  ): IDataView = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    js.Dynamic.global.Object.assign(__obj, ISelectable)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (bindStore != null) __obj.updateDynamic("bindStore")(bindStore)
+    if (!js.isUndefined(blockRefresh)) __obj.updateDynamic("blockRefresh")(blockRefresh)
+    if (clearSelections != null) __obj.updateDynamic("clearSelections")(clearSelections)
+    if (collectData != null) __obj.updateDynamic("collectData")(collectData)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
+    if (!js.isUndefined(deferEmptyText)) __obj.updateDynamic("deferEmptyText")(deferEmptyText)
+    if (deselect != null) __obj.updateDynamic("deselect")(deselect)
+    if (deselectAll != null) __obj.updateDynamic("deselectAll")(deselectAll)
+    if (!js.isUndefined(deselectOnContainerClick)) __obj.updateDynamic("deselectOnContainerClick")(deselectOnContainerClick)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (doDeselect != null) __obj.updateDynamic("doDeselect")(doDeselect)
+    if (doSelect != null) __obj.updateDynamic("doSelect")(doSelect)
+    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText)
+    if (findItemByChild != null) __obj.updateDynamic("findItemByChild")(findItemByChild)
+    if (findTargetByEvent != null) __obj.updateDynamic("findTargetByEvent")(findTargetByEvent)
+    if (getAllowDeselect != null) __obj.updateDynamic("getAllowDeselect")(getAllowDeselect)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
+    if (getCount != null) __obj.updateDynamic("getCount")(getCount)
+    if (getData != null) __obj.updateDynamic("getData")(getData)
+    if (getDefaultType != null) __obj.updateDynamic("getDefaultType")(getDefaultType)
+    if (getDeferEmptyText != null) __obj.updateDynamic("getDeferEmptyText")(getDeferEmptyText)
+    if (getDeselectOnContainerClick != null) __obj.updateDynamic("getDeselectOnContainerClick")(getDeselectOnContainerClick)
+    if (getDisableSelection != null) __obj.updateDynamic("getDisableSelection")(getDisableSelection)
+    if (getEmptyText != null) __obj.updateDynamic("getEmptyText")(getEmptyText)
+    if (getInline != null) __obj.updateDynamic("getInline")(getInline)
+    if (getItemAt != null) __obj.updateDynamic("getItemAt")(getItemAt)
+    if (getItemCls != null) __obj.updateDynamic("getItemCls")(getItemCls)
+    if (getItemConfig != null) __obj.updateDynamic("getItemConfig")(getItemConfig)
+    if (getItemIndex != null) __obj.updateDynamic("getItemIndex")(getItemIndex)
+    if (getItemTpl != null) __obj.updateDynamic("getItemTpl")(getItemTpl)
+    if (getLastSelected != null) __obj.updateDynamic("getLastSelected")(getLastSelected)
+    if (getLoadingText != null) __obj.updateDynamic("getLoadingText")(getLoadingText)
+    if (getMaxItemCache != null) __obj.updateDynamic("getMaxItemCache")(getMaxItemCache)
+    if (getMode != null) __obj.updateDynamic("getMode")(getMode)
+    if (getNode != null) __obj.updateDynamic("getNode")(getNode)
+    if (getNodes != null) __obj.updateDynamic("getNodes")(getNodes)
+    if (getPressedCls != null) __obj.updateDynamic("getPressedCls")(getPressedCls)
+    if (getPressedDelay != null) __obj.updateDynamic("getPressedDelay")(getPressedDelay)
+    if (getRecords != null) __obj.updateDynamic("getRecords")(getRecords)
+    if (getScrollToTopOnRefresh != null) __obj.updateDynamic("getScrollToTopOnRefresh")(getScrollToTopOnRefresh)
+    if (getScrollable != null) __obj.updateDynamic("getScrollable")(getScrollable)
+    if (getSelectedCls != null) __obj.updateDynamic("getSelectedCls")(getSelectedCls)
+    if (getSelectedNodes != null) __obj.updateDynamic("getSelectedNodes")(getSelectedNodes)
+    if (getSelectedRecords != null) __obj.updateDynamic("getSelectedRecords")(getSelectedRecords)
+    if (getSelection != null) __obj.updateDynamic("getSelection")(getSelection)
+    if (getSelectionCount != null) __obj.updateDynamic("getSelectionCount")(getSelectionCount)
+    if (getSelectionMode != null) __obj.updateDynamic("getSelectionMode")(getSelectionMode)
+    if (getStore != null) __obj.updateDynamic("getStore")(getStore)
+    if (getTriggerCtEvent != null) __obj.updateDynamic("getTriggerCtEvent")(getTriggerCtEvent)
+    if (getTriggerEvent != null) __obj.updateDynamic("getTriggerEvent")(getTriggerEvent)
+    if (getUseComponents != null) __obj.updateDynamic("getUseComponents")(getUseComponents)
+    if (getViewItems != null) __obj.updateDynamic("getViewItems")(getViewItems)
+    if (handleException != null) __obj.updateDynamic("handleException")(handleException)
+    if (hasSelection != null) __obj.updateDynamic("hasSelection")(hasSelection)
+    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`)
+    if (isLocked != null) __obj.updateDynamic("isLocked")(isLocked)
+    if (isSelected != null) __obj.updateDynamic("isSelected")(isSelected)
+    if (itemCls != null) __obj.updateDynamic("itemCls")(itemCls)
+    if (itemConfig != null) __obj.updateDynamic("itemConfig")(itemConfig)
+    if (!js.isUndefined(itemSelector)) __obj.updateDynamic("itemSelector")(itemSelector)
+    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl)
+    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText)
+    if (maxItemCache != null) __obj.updateDynamic("maxItemCache")(maxItemCache.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
+    if (!js.isUndefined(overItemCls)) __obj.updateDynamic("overItemCls")(overItemCls)
+    if (prepareData != null) __obj.updateDynamic("prepareData")(prepareData)
+    if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls)
+    if (pressedDelay != null) __obj.updateDynamic("pressedDelay")(pressedDelay.asInstanceOf[js.Any])
+    if (refresh != null) __obj.updateDynamic("refresh")(refresh)
+    if (refreshNode != null) __obj.updateDynamic("refreshNode")(refreshNode)
+    if (!js.isUndefined(scrollToTopOnRefresh)) __obj.updateDynamic("scrollToTopOnRefresh")(scrollToTopOnRefresh)
+    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (selectAll != null) __obj.updateDynamic("selectAll")(selectAll)
+    if (selectRange != null) __obj.updateDynamic("selectRange")(selectRange)
+    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls)
+    if (!js.isUndefined(selectedItemCls)) __obj.updateDynamic("selectedItemCls")(selectedItemCls)
+    if (setAllowDeselect != null) __obj.updateDynamic("setAllowDeselect")(setAllowDeselect)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
+    if (setData != null) __obj.updateDynamic("setData")(setData)
+    if (setDefaultType != null) __obj.updateDynamic("setDefaultType")(setDefaultType)
+    if (setDeferEmptyText != null) __obj.updateDynamic("setDeferEmptyText")(setDeferEmptyText)
+    if (setDeselectOnContainerClick != null) __obj.updateDynamic("setDeselectOnContainerClick")(setDeselectOnContainerClick)
+    if (setDisableSelection != null) __obj.updateDynamic("setDisableSelection")(setDisableSelection)
+    if (setEmptyText != null) __obj.updateDynamic("setEmptyText")(setEmptyText)
+    if (setInline != null) __obj.updateDynamic("setInline")(setInline)
+    if (setItemCls != null) __obj.updateDynamic("setItemCls")(setItemCls)
+    if (setItemConfig != null) __obj.updateDynamic("setItemConfig")(setItemConfig)
+    if (setItemTpl != null) __obj.updateDynamic("setItemTpl")(setItemTpl)
+    if (setLastFocused != null) __obj.updateDynamic("setLastFocused")(setLastFocused)
+    if (setLoadingText != null) __obj.updateDynamic("setLoadingText")(setLoadingText)
+    if (setMaxItemCache != null) __obj.updateDynamic("setMaxItemCache")(setMaxItemCache)
+    if (setMode != null) __obj.updateDynamic("setMode")(setMode)
+    if (setPressedCls != null) __obj.updateDynamic("setPressedCls")(setPressedCls)
+    if (setPressedDelay != null) __obj.updateDynamic("setPressedDelay")(setPressedDelay)
+    if (setScrollToTopOnRefresh != null) __obj.updateDynamic("setScrollToTopOnRefresh")(setScrollToTopOnRefresh)
+    if (setSelectedCls != null) __obj.updateDynamic("setSelectedCls")(setSelectedCls)
+    if (setStore != null) __obj.updateDynamic("setStore")(setStore)
+    if (setTriggerCtEvent != null) __obj.updateDynamic("setTriggerCtEvent")(setTriggerCtEvent)
+    if (setTriggerEvent != null) __obj.updateDynamic("setTriggerEvent")(setTriggerEvent)
+    if (setUseComponents != null) __obj.updateDynamic("setUseComponents")(setUseComponents)
+    if (!js.isUndefined(simpleSelect)) __obj.updateDynamic("simpleSelect")(simpleSelect)
+    if (!js.isUndefined(singleSelect)) __obj.updateDynamic("singleSelect")(singleSelect)
+    if (store != null) __obj.updateDynamic("store")(store)
+    if (!js.isUndefined(trackOver)) __obj.updateDynamic("trackOver")(trackOver)
+    if (triggerCtEvent != null) __obj.updateDynamic("triggerCtEvent")(triggerCtEvent)
+    if (triggerEvent != null) __obj.updateDynamic("triggerEvent")(triggerEvent)
+    if (updateLastFocused != null) __obj.updateDynamic("updateLastFocused")(updateLastFocused)
+    if (!js.isUndefined(useComponents)) __obj.updateDynamic("useComponents")(useComponents)
+    __obj.asInstanceOf[IDataView]
+  }
+}
+

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Schema because Already inherited */ @js.native
 trait NumberSchema extends AnySchema {
   def greater(limit: Reference): this.type = js.native
   /**

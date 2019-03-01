@@ -14,3 +14,22 @@ trait XSelectedSheetsSupplier
   def getSelectedSheets(): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XSelectedSheetsSupplier {
+  @scala.inline
+  def apply(
+    SelectedSheets: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    getSelectedSheets: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSelectedSheetsSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SelectedSheets")(SelectedSheets)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getSelectedSheets")(getSelectedSheets)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSelectedSheetsSupplier]
+  }
+}
+

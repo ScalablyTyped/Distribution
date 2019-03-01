@@ -10,3 +10,18 @@ trait GetOperation[T] extends BaseOperation {
   var value: T
 }
 
+object GetOperation {
+  @scala.inline
+  def apply[T](
+    op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings._get,
+    path: java.lang.String,
+    value: T
+  ): GetOperation[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("op")(op)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetOperation[T]]
+  }
+}
+

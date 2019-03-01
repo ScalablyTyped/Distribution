@@ -7,43 +7,56 @@ import scala.scalajs.js.annotation._
 
 object jestDashGetDashTypeLibStrings {
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait function extends js.Object
+  sealed trait function
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait map extends js.Object
+  sealed trait map
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait `null` extends js.Object
+  sealed trait `null`
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait regexp extends js.Object
+  sealed trait regexp
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait set extends js.Object
+  sealed trait set
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait symbol extends js.Object
+  sealed trait symbol
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @js.native
-  sealed trait undefined extends js.Object
+  sealed trait undefined
+    extends jestDashGetDashTypeLib.jestDashGetDashTypeMod.getTypeNs.ValueType
   
   @scala.inline
   def array: array = "array".asInstanceOf[array]

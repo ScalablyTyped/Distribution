@@ -36,3 +36,13 @@ trait InjectDetails extends js.Object {
   var file: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InjectDetails {
+  @scala.inline
+  def apply(code: java.lang.String = null, file: java.lang.String = null): InjectDetails = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (file != null) __obj.updateDynamic("file")(file)
+    __obj.asInstanceOf[InjectDetails]
+  }
+}
+

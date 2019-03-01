@@ -9,5 +9,4 @@ package object SwaggerNs {
   type HeaderObject = ItemsObject
   type MimeTypes = js.Array[java.lang.String]
   type Parameters = js.Array[ParameterObject | ReferenceObject]
-  type Response = ResponseObject | ReferenceObject
 }

@@ -19,3 +19,14 @@ trait TileParamNames extends js.Object {
   var z: java.lang.String
 }
 
+object TileParamNames {
+  @scala.inline
+  def apply(x: java.lang.String, y: java.lang.String, z: java.lang.String): TileParamNames = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("z")(z)
+    __obj.asInstanceOf[TileParamNames]
+  }
+}
+

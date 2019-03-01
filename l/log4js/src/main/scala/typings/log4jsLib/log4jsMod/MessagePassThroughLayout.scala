@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MessagePassThroughLayout extends js.Object {
+trait MessagePassThroughLayout extends Layout {
   var `type`: log4jsLib.log4jsLibStrings.messagePassThrough
+}
+
+object MessagePassThroughLayout {
+  @scala.inline
+  def apply(`type`: log4jsLib.log4jsLibStrings.messagePassThrough): MessagePassThroughLayout = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[MessagePassThroughLayout]
+  }
 }
 

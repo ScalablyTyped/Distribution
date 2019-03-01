@@ -13,3 +13,22 @@ trait Anon_Orientation extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Orientation {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    orientation: scala.Int | scala.Double = null,
+    points: js.Array[scala.Double] = null,
+    useCanvas: js.UndefOr[scala.Boolean] = js.undefined,
+    zoom: scala.Int | scala.Double = null
+  ): Anon_Orientation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (!js.isUndefined(useCanvas)) __obj.updateDynamic("useCanvas")(useCanvas)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Orientation]
+  }
+}
+

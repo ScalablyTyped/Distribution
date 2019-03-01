@@ -16,3 +16,22 @@ trait PutObjectOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PutObjectOptions {
+  @scala.inline
+  def apply(
+    callback: ObjectCallback,
+    headers: js.Object = null,
+    meta: UserMeta = null,
+    mime: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null
+  ): PutObjectOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (mime != null) __obj.updateDynamic("mime")(mime)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PutObjectOptions]
+  }
+}
+

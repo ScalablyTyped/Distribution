@@ -10,3 +10,13 @@ trait Size extends js.Object {
   var w: scala.Double
 }
 
+object Size {
+  @scala.inline
+  def apply(h: scala.Double, w: scala.Double): Size = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("w")(w)
+    __obj.asInstanceOf[Size]
+  }
+}
+

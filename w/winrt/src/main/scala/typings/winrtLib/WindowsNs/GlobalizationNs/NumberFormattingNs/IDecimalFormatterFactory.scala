@@ -12,3 +12,18 @@ trait IDecimalFormatterFactory extends js.Object {
   ): DecimalFormatter
 }
 
+object IDecimalFormatterFactory {
+  @scala.inline
+  def apply(
+    createDecimalFormatter: js.Function2[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], 
+      java.lang.String, 
+      DecimalFormatter
+    ]
+  ): IDecimalFormatterFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createDecimalFormatter")(createDecimalFormatter)
+    __obj.asInstanceOf[IDecimalFormatterFactory]
+  }
+}
+

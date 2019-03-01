@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object compressionDashWebpackDashPluginLibStrings {
   @js.native
-  sealed trait deflate extends js.Object
+  sealed trait deflate
+    extends compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginMod.CompressionPluginNs.ZlibAlgorithm
   
   @js.native
-  sealed trait deflateRaw extends js.Object
+  sealed trait deflateRaw
+    extends compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginMod.CompressionPluginNs.ZlibAlgorithm
   
   @js.native
-  sealed trait gzip extends js.Object
+  sealed trait gzip
+    extends compressionDashWebpackDashPluginLib.compressionDashWebpackDashPluginMod.CompressionPluginNs.ZlibAlgorithm
   
   @scala.inline
   def deflate: deflate = "deflate".asInstanceOf[deflate]

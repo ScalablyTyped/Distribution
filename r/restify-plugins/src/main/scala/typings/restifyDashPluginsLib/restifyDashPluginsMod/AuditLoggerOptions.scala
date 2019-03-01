@@ -25,3 +25,22 @@ trait AuditLoggerOptions extends js.Object {
   var server: js.UndefOr[restifyLib.restifyMod.Server] = js.undefined
 }
 
+object AuditLoggerOptions {
+  @scala.inline
+  def apply(
+    log: bunyanLib.bunyanMod.namespaced,
+    body: js.UndefOr[scala.Boolean] = js.undefined,
+    logBuffer: js.Any = null,
+    printLog: js.UndefOr[scala.Boolean] = js.undefined,
+    server: restifyLib.restifyMod.Server = null
+  ): AuditLoggerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("log")(log)
+    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body)
+    if (logBuffer != null) __obj.updateDynamic("logBuffer")(logBuffer)
+    if (!js.isUndefined(printLog)) __obj.updateDynamic("printLog")(printLog)
+    if (server != null) __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[AuditLoggerOptions]
+  }
+}
+

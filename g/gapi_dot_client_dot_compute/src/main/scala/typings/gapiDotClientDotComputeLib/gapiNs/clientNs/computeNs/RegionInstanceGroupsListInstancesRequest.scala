@@ -15,3 +15,13 @@ trait RegionInstanceGroupsListInstancesRequest extends js.Object {
   var portName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RegionInstanceGroupsListInstancesRequest {
+  @scala.inline
+  def apply(instanceState: java.lang.String = null, portName: java.lang.String = null): RegionInstanceGroupsListInstancesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (instanceState != null) __obj.updateDynamic("instanceState")(instanceState)
+    if (portName != null) __obj.updateDynamic("portName")(portName)
+    __obj.asInstanceOf[RegionInstanceGroupsListInstancesRequest]
+  }
+}
+

@@ -40,3 +40,74 @@ trait FormProps[T] extends js.Object {
   var widgets: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Widget]] = js.undefined
 }
 
+object FormProps {
+  @scala.inline
+  def apply[T](
+    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
+    ArrayFieldTemplate: reactLib.reactMod.ReactNs.StatelessComponent[ArrayFieldTemplateProps] = null,
+    ErrorList: reactLib.reactMod.ReactNs.StatelessComponent[ErrorListProps] = null,
+    FieldTemplate: reactLib.reactMod.ReactNs.StatelessComponent[FieldTemplateProps] = null,
+    ObjectFieldTemplate: reactLib.reactMod.ReactNs.StatelessComponent[ObjectFieldTemplateProps] = null,
+    acceptcharset: java.lang.String = null,
+    action: java.lang.String = null,
+    autocomplete: java.lang.String = null,
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    enctype: java.lang.String = null,
+    fields: org.scalablytyped.runtime.StringDictionary[Field] = null,
+    formContext: js.Any = null,
+    formData: T = null,
+    id: java.lang.String = null,
+    idPrefix: java.lang.String = null,
+    liveValidate: js.UndefOr[scala.Boolean] = js.undefined,
+    method: java.lang.String = null,
+    name: java.lang.String = null,
+    noHtml5Validate: js.UndefOr[scala.Boolean] = js.undefined,
+    noValidate: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: js.Function1[/* e */ IChangeEvent[T], _] = null,
+    onError: js.Function1[/* e */ js.Any, _] = null,
+    onSubmit: js.Function1[/* e */ ISubmitEvent[T], _] = null,
+    safeRenderCompletion: js.UndefOr[scala.Boolean] = js.undefined,
+    showErrorList: js.UndefOr[scala.Boolean] = js.undefined,
+    target: java.lang.String = null,
+    transformErrors: js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]] = null,
+    uiSchema: UiSchema = null,
+    validate: js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation] = null,
+    widgets: org.scalablytyped.runtime.StringDictionary[Widget] = null
+  ): FormProps[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("schema")(schema)
+    if (ArrayFieldTemplate != null) __obj.updateDynamic("ArrayFieldTemplate")(ArrayFieldTemplate)
+    if (ErrorList != null) __obj.updateDynamic("ErrorList")(ErrorList)
+    if (FieldTemplate != null) __obj.updateDynamic("FieldTemplate")(FieldTemplate)
+    if (ObjectFieldTemplate != null) __obj.updateDynamic("ObjectFieldTemplate")(ObjectFieldTemplate)
+    if (acceptcharset != null) __obj.updateDynamic("acceptcharset")(acceptcharset)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (enctype != null) __obj.updateDynamic("enctype")(enctype)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (formContext != null) __obj.updateDynamic("formContext")(formContext)
+    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix)
+    if (!js.isUndefined(liveValidate)) __obj.updateDynamic("liveValidate")(liveValidate)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(noHtml5Validate)) __obj.updateDynamic("noHtml5Validate")(noHtml5Validate)
+    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onSubmit != null) __obj.updateDynamic("onSubmit")(onSubmit)
+    if (!js.isUndefined(safeRenderCompletion)) __obj.updateDynamic("safeRenderCompletion")(safeRenderCompletion)
+    if (!js.isUndefined(showErrorList)) __obj.updateDynamic("showErrorList")(showErrorList)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (transformErrors != null) __obj.updateDynamic("transformErrors")(transformErrors)
+    if (uiSchema != null) __obj.updateDynamic("uiSchema")(uiSchema)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (widgets != null) __obj.updateDynamic("widgets")(widgets)
+    __obj.asInstanceOf[FormProps[T]]
+  }
+}
+

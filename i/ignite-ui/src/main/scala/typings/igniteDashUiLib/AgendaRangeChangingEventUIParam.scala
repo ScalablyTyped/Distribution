@@ -24,3 +24,20 @@ trait AgendaRangeChangingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object AgendaRangeChangingEventUIParam {
+  @scala.inline
+  def apply(
+    currentAgendaRangeStartDate: js.Any = null,
+    dateRangeInterval: scala.Int | scala.Double = null,
+    newAgendaRangeStartDate: js.Any = null,
+    owner: js.Any = null
+  ): AgendaRangeChangingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (currentAgendaRangeStartDate != null) __obj.updateDynamic("currentAgendaRangeStartDate")(currentAgendaRangeStartDate)
+    if (dateRangeInterval != null) __obj.updateDynamic("dateRangeInterval")(dateRangeInterval.asInstanceOf[js.Any])
+    if (newAgendaRangeStartDate != null) __obj.updateDynamic("newAgendaRangeStartDate")(newAgendaRangeStartDate)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[AgendaRangeChangingEventUIParam]
+  }
+}
+

@@ -1363,11 +1363,25 @@ object CloudSearchNs extends js.Object {
     var AccessPolicies: AccessPoliciesStatus
   }
   
+  trait _AlgorithmicStemming extends js.Object
+  
+  trait _AnalysisSchemeLanguage extends js.Object
+  
+  trait _IndexFieldType extends js.Object
+  
+  trait _OptionState extends js.Object
+  
+  trait _PartitionInstanceType extends js.Object
+  
+  trait _SuggesterFuzzyMatching extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type APIVersion = java.lang.String
   type ARN = java.lang.String
-  type AlgorithmicStemming = awsDashSdkLib.awsDashSdkLibStrings.none | awsDashSdkLib.awsDashSdkLibStrings.minimal | awsDashSdkLib.awsDashSdkLibStrings.light | awsDashSdkLib.awsDashSdkLibStrings.full | java.lang.String
-  type AnalysisSchemeLanguage = awsDashSdkLib.awsDashSdkLibStrings.ar | awsDashSdkLib.awsDashSdkLibStrings.bg | awsDashSdkLib.awsDashSdkLibStrings.ca | awsDashSdkLib.awsDashSdkLibStrings.cs | awsDashSdkLib.awsDashSdkLibStrings.da | awsDashSdkLib.awsDashSdkLibStrings.de | awsDashSdkLib.awsDashSdkLibStrings.el | awsDashSdkLib.awsDashSdkLibStrings.en | awsDashSdkLib.awsDashSdkLibStrings.es | awsDashSdkLib.awsDashSdkLibStrings.eu | awsDashSdkLib.awsDashSdkLibStrings.fa | awsDashSdkLib.awsDashSdkLibStrings.fi | awsDashSdkLib.awsDashSdkLibStrings.fr | awsDashSdkLib.awsDashSdkLibStrings.ga | awsDashSdkLib.awsDashSdkLibStrings.gl | awsDashSdkLib.awsDashSdkLibStrings.he | awsDashSdkLib.awsDashSdkLibStrings.hi | awsDashSdkLib.awsDashSdkLibStrings.hu | awsDashSdkLib.awsDashSdkLibStrings.hy | awsDashSdkLib.awsDashSdkLibStrings.id | awsDashSdkLib.awsDashSdkLibStrings.it | awsDashSdkLib.awsDashSdkLibStrings.ja | awsDashSdkLib.awsDashSdkLibStrings.ko | awsDashSdkLib.awsDashSdkLibStrings.lv | awsDashSdkLib.awsDashSdkLibStrings.mul | awsDashSdkLib.awsDashSdkLibStrings.nl | awsDashSdkLib.awsDashSdkLibStrings.no | awsDashSdkLib.awsDashSdkLibStrings.pt | awsDashSdkLib.awsDashSdkLibStrings.ro | awsDashSdkLib.awsDashSdkLibStrings.ru | awsDashSdkLib.awsDashSdkLibStrings.sv | awsDashSdkLib.awsDashSdkLibStrings.th | awsDashSdkLib.awsDashSdkLibStrings.tr | awsDashSdkLib.awsDashSdkLibStrings.`zh-Hans` | awsDashSdkLib.awsDashSdkLibStrings.`zh-Hant` | java.lang.String
+  type AlgorithmicStemming = _AlgorithmicStemming | java.lang.String
+  type AnalysisSchemeLanguage = _AnalysisSchemeLanguage | java.lang.String
   type AnalysisSchemeStatusList = js.Array[AnalysisSchemeStatus]
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -1385,26 +1399,26 @@ object CloudSearchNs extends js.Object {
   type FieldNameList = js.Array[FieldName]
   type FieldValue = java.lang.String
   type IndexFieldStatusList = js.Array[IndexFieldStatus]
-  type IndexFieldType = awsDashSdkLib.awsDashSdkLibStrings.int | awsDashSdkLib.awsDashSdkLibStrings.double | awsDashSdkLib.awsDashSdkLibStrings.literal | awsDashSdkLib.awsDashSdkLibStrings.text | awsDashSdkLib.awsDashSdkLibStrings.date | awsDashSdkLib.awsDashSdkLibStrings.latlon | awsDashSdkLib.awsDashSdkLibStrings.`int-array` | awsDashSdkLib.awsDashSdkLibStrings.`double-array` | awsDashSdkLib.awsDashSdkLibStrings.`literal-array` | awsDashSdkLib.awsDashSdkLibStrings.`text-array` | awsDashSdkLib.awsDashSdkLibStrings.`date-array` | java.lang.String
+  type IndexFieldType = _IndexFieldType | java.lang.String
   type InstanceCount = scala.Double
   type Long = scala.Double
   type MaximumPartitionCount = scala.Double
   type MaximumReplicationCount = scala.Double
   type MultiAZ = scala.Boolean
-  type OptionState = awsDashSdkLib.awsDashSdkLibStrings.RequiresIndexDocuments | awsDashSdkLib.awsDashSdkLibStrings.Processing | awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.FailedToValidate | java.lang.String
+  type OptionState = _OptionState | java.lang.String
   type PartitionCount = scala.Double
-  type PartitionInstanceType = awsDashSdkLib.awsDashSdkLibStrings.searchDOTm1DOTsmall | awsDashSdkLib.awsDashSdkLibStrings.searchDOTm1DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.searchDOTm2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.searchDOTm2DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.searchDOTm3DOTmedium | awsDashSdkLib.awsDashSdkLibStrings.searchDOTm3DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.searchDOTm3DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.searchDOTm3DOT2xlarge | java.lang.String
+  type PartitionInstanceType = _PartitionInstanceType | java.lang.String
   type PolicyDocument = java.lang.String
   type SearchInstanceType = java.lang.String
   type ServiceUrl = java.lang.String
   type StandardName = java.lang.String
   type StandardNameList = js.Array[StandardName]
   type String = java.lang.String
-  type SuggesterFuzzyMatching = awsDashSdkLib.awsDashSdkLibStrings.none | awsDashSdkLib.awsDashSdkLibStrings.low | awsDashSdkLib.awsDashSdkLibStrings.high | java.lang.String
+  type SuggesterFuzzyMatching = _SuggesterFuzzyMatching | java.lang.String
   type SuggesterStatusList = js.Array[SuggesterStatus]
   type UIntValue = scala.Double
   type UpdateTimestamp = stdLib.Date
   type Word = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2011-02-01` | awsDashSdkLib.awsDashSdkLibStrings.`2013-01-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

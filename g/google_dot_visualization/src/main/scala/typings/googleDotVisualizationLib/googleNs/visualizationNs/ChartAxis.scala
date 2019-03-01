@@ -35,3 +35,58 @@ trait ChartAxis extends js.Object {
   var viewWindowMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChartAxis {
+  @scala.inline
+  def apply(
+    allowContainerBoundaryTextCufoff: js.UndefOr[scala.Boolean] = js.undefined,
+    baseline: scala.Int | scala.Double = null,
+    baselineColor: java.lang.String = null,
+    direction: scala.Int | scala.Double = null,
+    format: java.lang.String = null,
+    gridlines: ChartGridlines = null,
+    logScale: js.UndefOr[scala.Boolean] = js.undefined,
+    maxAlternation: scala.Int | scala.Double = null,
+    maxTextLines: scala.Int | scala.Double = null,
+    maxValue: scala.Double | stdLib.Date | js.Array[scala.Double] = null,
+    minTextSpacing: scala.Int | scala.Double = null,
+    minValue: scala.Double | stdLib.Date | js.Array[scala.Double] = null,
+    minorGridlines: ChartGridlines = null,
+    showTextEvery: scala.Int | scala.Double = null,
+    slantedText: js.UndefOr[scala.Boolean] = js.undefined,
+    slantedTextAngle: scala.Int | scala.Double = null,
+    textPosition: java.lang.String = null,
+    textStyle: ChartTextStyle = null,
+    ticks: js.Array[_] = null,
+    title: java.lang.String = null,
+    titleTextStyle: ChartTextStyle = null,
+    viewWindow: ChartViewWindow = null,
+    viewWindowMode: java.lang.String = null
+  ): ChartAxis = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowContainerBoundaryTextCufoff)) __obj.updateDynamic("allowContainerBoundaryTextCufoff")(allowContainerBoundaryTextCufoff)
+    if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
+    if (baselineColor != null) __obj.updateDynamic("baselineColor")(baselineColor)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (gridlines != null) __obj.updateDynamic("gridlines")(gridlines)
+    if (!js.isUndefined(logScale)) __obj.updateDynamic("logScale")(logScale)
+    if (maxAlternation != null) __obj.updateDynamic("maxAlternation")(maxAlternation.asInstanceOf[js.Any])
+    if (maxTextLines != null) __obj.updateDynamic("maxTextLines")(maxTextLines.asInstanceOf[js.Any])
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minTextSpacing != null) __obj.updateDynamic("minTextSpacing")(minTextSpacing.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (minorGridlines != null) __obj.updateDynamic("minorGridlines")(minorGridlines)
+    if (showTextEvery != null) __obj.updateDynamic("showTextEvery")(showTextEvery.asInstanceOf[js.Any])
+    if (!js.isUndefined(slantedText)) __obj.updateDynamic("slantedText")(slantedText)
+    if (slantedTextAngle != null) __obj.updateDynamic("slantedTextAngle")(slantedTextAngle.asInstanceOf[js.Any])
+    if (textPosition != null) __obj.updateDynamic("textPosition")(textPosition)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle)
+    if (viewWindow != null) __obj.updateDynamic("viewWindow")(viewWindow)
+    if (viewWindowMode != null) __obj.updateDynamic("viewWindowMode")(viewWindowMode)
+    __obj.asInstanceOf[ChartAxis]
+  }
+}
+

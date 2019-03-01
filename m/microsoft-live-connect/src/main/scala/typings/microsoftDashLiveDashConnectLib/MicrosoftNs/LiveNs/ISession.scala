@@ -44,3 +44,22 @@ trait ISession extends js.Object {
   var scope: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ISession {
+  @scala.inline
+  def apply(
+    access_token: java.lang.String,
+    authentication_token: java.lang.String,
+    expires: scala.Int | scala.Double = null,
+    expires_in: scala.Int | scala.Double = null,
+    scope: js.Array[java.lang.String] = null
+  ): ISession = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("access_token")(access_token)
+    __obj.updateDynamic("authentication_token")(authentication_token)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[ISession]
+  }
+}
+

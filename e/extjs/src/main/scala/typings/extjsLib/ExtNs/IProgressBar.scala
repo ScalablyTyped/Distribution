@@ -51,3 +51,53 @@ trait IProgressBar extends IComponent {
   var wait_FIProgressBar: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.undefined
 }
 
+object IProgressBar {
+  @scala.inline
+  def apply(
+    IComponent: IComponent = null,
+    animate: js.Any = null,
+    baseCls: java.lang.String = null,
+    componentLayout: js.Any = null,
+    id: java.lang.String = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    initRenderData: js.Function0[_] = null,
+    isWaiting: js.Function0[scala.Boolean] = null,
+    onDestroy: js.Function0[scala.Unit] = null,
+    onRender: js.Function0[scala.Unit] = null,
+    renderTpl: js.Any = null,
+    reset: js.Function1[/* hide */ js.UndefOr[scala.Boolean], IProgressBar] = null,
+    text: java.lang.String = null,
+    textEl: js.Any = null,
+    updateProgress: js.Function3[
+      /* value */ js.UndefOr[scala.Double], 
+      /* text */ js.UndefOr[java.lang.String], 
+      /* animate */ js.UndefOr[scala.Boolean], 
+      IProgressBar
+    ] = null,
+    updateText: js.Function1[/* text */ js.UndefOr[java.lang.String], IProgressBar] = null,
+    value: scala.Int | scala.Double = null,
+    wait: js.Function1[/* config */ js.UndefOr[js.Any], IProgressBar] = null
+  ): IProgressBar = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (initRenderData != null) __obj.updateDynamic("initRenderData")(initRenderData)
+    if (isWaiting != null) __obj.updateDynamic("isWaiting")(isWaiting)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textEl != null) __obj.updateDynamic("textEl")(textEl)
+    if (updateProgress != null) __obj.updateDynamic("updateProgress")(updateProgress)
+    if (updateText != null) __obj.updateDynamic("updateText")(updateText)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (wait != null) __obj.updateDynamic("wait")(wait)
+    __obj.asInstanceOf[IProgressBar]
+  }
+}
+

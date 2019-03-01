@@ -16,3 +16,20 @@ trait Anon_Categorical extends js.Object {
   var text: js.UndefOr[Anon_CountString] = js.undefined
 }
 
+object Anon_Categorical {
+  @scala.inline
+  def apply(
+    categorical: Anon_CountValues = null,
+    index: java.lang.String = null,
+    numeric: Anon_CountMean = null,
+    text: Anon_CountString = null
+  ): Anon_Categorical = {
+    val __obj = js.Dynamic.literal()
+    if (categorical != null) __obj.updateDynamic("categorical")(categorical)
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (numeric != null) __obj.updateDynamic("numeric")(numeric)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Anon_Categorical]
+  }
+}
+

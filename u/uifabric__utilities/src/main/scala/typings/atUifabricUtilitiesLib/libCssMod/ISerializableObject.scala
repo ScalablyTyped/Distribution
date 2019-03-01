@@ -10,3 +10,12 @@ trait ISerializableObject extends js.Object {
   var toString_FISerializableObject: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
 }
 
+object ISerializableObject {
+  @scala.inline
+  def apply(toString: js.Function0[java.lang.String] = null): ISerializableObject = {
+    val __obj = js.Dynamic.literal()
+    if (toString != null) __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[ISerializableObject]
+  }
+}
+

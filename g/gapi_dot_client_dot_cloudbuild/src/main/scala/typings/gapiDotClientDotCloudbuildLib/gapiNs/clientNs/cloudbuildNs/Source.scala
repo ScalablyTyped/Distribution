@@ -12,3 +12,13 @@ trait Source extends js.Object {
   var storageSource: js.UndefOr[StorageSource] = js.undefined
 }
 
+object Source {
+  @scala.inline
+  def apply(repoSource: RepoSource = null, storageSource: StorageSource = null): Source = {
+    val __obj = js.Dynamic.literal()
+    if (repoSource != null) __obj.updateDynamic("repoSource")(repoSource)
+    if (storageSource != null) __obj.updateDynamic("storageSource")(storageSource)
+    __obj.asInstanceOf[Source]
+  }
+}
+

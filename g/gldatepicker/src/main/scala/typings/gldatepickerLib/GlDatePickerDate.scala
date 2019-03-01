@@ -11,3 +11,18 @@ trait GlDatePickerDate extends js.Object {
   var repeatYear: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GlDatePickerDate {
+  @scala.inline
+  def apply(
+    date: stdLib.Date,
+    repeatMonth: js.UndefOr[scala.Boolean] = js.undefined,
+    repeatYear: js.UndefOr[scala.Boolean] = js.undefined
+  ): GlDatePickerDate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    if (!js.isUndefined(repeatMonth)) __obj.updateDynamic("repeatMonth")(repeatMonth)
+    if (!js.isUndefined(repeatYear)) __obj.updateDynamic("repeatYear")(repeatYear)
+    __obj.asInstanceOf[GlDatePickerDate]
+  }
+}
+

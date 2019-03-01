@@ -33,3 +33,28 @@ trait SparkJob extends js.Object {
   var properties: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object SparkJob {
+  @scala.inline
+  def apply(
+    archiveUris: js.Array[java.lang.String] = null,
+    args: js.Array[java.lang.String] = null,
+    fileUris: js.Array[java.lang.String] = null,
+    jarFileUris: js.Array[java.lang.String] = null,
+    loggingConfig: LoggingConfig = null,
+    mainClass: java.lang.String = null,
+    mainJarFileUri: java.lang.String = null,
+    properties: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): SparkJob = {
+    val __obj = js.Dynamic.literal()
+    if (archiveUris != null) __obj.updateDynamic("archiveUris")(archiveUris)
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris)
+    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris)
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig)
+    if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass)
+    if (mainJarFileUri != null) __obj.updateDynamic("mainJarFileUri")(mainJarFileUri)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[SparkJob]
+  }
+}
+

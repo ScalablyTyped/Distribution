@@ -23,3 +23,18 @@ trait IStrategyOptions extends js.Object {
   var plugins: js.Array[workboxDashSwLib.Plugin]
 }
 
+object IStrategyOptions {
+  @scala.inline
+  def apply(
+    cacheExpiration: stdLib.Partial[ICacheExpirationOptions],
+    cacheName: java.lang.String,
+    plugins: js.Array[workboxDashSwLib.Plugin]
+  ): IStrategyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cacheExpiration")(cacheExpiration)
+    __obj.updateDynamic("cacheName")(cacheName)
+    __obj.updateDynamic("plugins")(plugins)
+    __obj.asInstanceOf[IStrategyOptions]
+  }
+}
+

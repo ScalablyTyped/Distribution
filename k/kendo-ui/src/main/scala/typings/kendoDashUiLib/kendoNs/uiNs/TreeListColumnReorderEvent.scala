@@ -11,3 +11,24 @@ trait TreeListColumnReorderEvent extends TreeListEvent {
   var oldIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TreeListColumnReorderEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: TreeList,
+    column: js.Any = null,
+    newIndex: scala.Int | scala.Double = null,
+    oldIndex: scala.Int | scala.Double = null
+  ): TreeListColumnReorderEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
+    if (oldIndex != null) __obj.updateDynamic("oldIndex")(oldIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TreeListColumnReorderEvent]
+  }
+}
+

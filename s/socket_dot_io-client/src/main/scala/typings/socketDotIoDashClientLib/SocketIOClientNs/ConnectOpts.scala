@@ -204,3 +204,82 @@ trait ConnectOpts extends js.Object {
   var upgrade: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConnectOpts {
+  @scala.inline
+  def apply(
+    agent: java.lang.String | scala.Boolean = null,
+    autoConnect: js.UndefOr[scala.Boolean] = js.undefined,
+    ca: java.lang.String | js.Array[java.lang.String] = null,
+    cert: java.lang.String = null,
+    ciphers: java.lang.String = null,
+    enablesXDR: js.UndefOr[scala.Boolean] = js.undefined,
+    forceBase64: js.UndefOr[scala.Boolean] = js.undefined,
+    forceJSONP: js.UndefOr[scala.Boolean] = js.undefined,
+    forceNew: js.UndefOr[scala.Boolean] = js.undefined,
+    host: java.lang.String = null,
+    hostname: java.lang.String = null,
+    jsonp: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    multiplex: js.UndefOr[scala.Boolean] = js.undefined,
+    onlyBinaryUpgrades: js.UndefOr[scala.Boolean] = js.undefined,
+    passphrase: java.lang.String = null,
+    path: java.lang.String = null,
+    pfx: java.lang.String = null,
+    policyPost: scala.Int | scala.Double = null,
+    port: java.lang.String = null,
+    query: js.Object = null,
+    randomizationFactor: scala.Int | scala.Double = null,
+    reconnection: js.UndefOr[scala.Boolean] = js.undefined,
+    reconnectionAttempts: scala.Int | scala.Double = null,
+    reconnectionDelay: scala.Int | scala.Double = null,
+    reconnectionDelayMax: scala.Int | scala.Double = null,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    rememberUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    timestampParam: java.lang.String = null,
+    timestampRequests: js.UndefOr[scala.Boolean] = js.undefined,
+    transportOptions: js.Object = null,
+    transports: js.Array[java.lang.String] = null,
+    upgrade: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConnectOpts = {
+    val __obj = js.Dynamic.literal()
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect)
+    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
+    if (cert != null) __obj.updateDynamic("cert")(cert)
+    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
+    if (!js.isUndefined(enablesXDR)) __obj.updateDynamic("enablesXDR")(enablesXDR)
+    if (!js.isUndefined(forceBase64)) __obj.updateDynamic("forceBase64")(forceBase64)
+    if (!js.isUndefined(forceJSONP)) __obj.updateDynamic("forceJSONP")(forceJSONP)
+    if (!js.isUndefined(forceNew)) __obj.updateDynamic("forceNew")(forceNew)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (!js.isUndefined(jsonp)) __obj.updateDynamic("jsonp")(jsonp)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(multiplex)) __obj.updateDynamic("multiplex")(multiplex)
+    if (!js.isUndefined(onlyBinaryUpgrades)) __obj.updateDynamic("onlyBinaryUpgrades")(onlyBinaryUpgrades)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (pfx != null) __obj.updateDynamic("pfx")(pfx)
+    if (policyPost != null) __obj.updateDynamic("policyPost")(policyPost.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (randomizationFactor != null) __obj.updateDynamic("randomizationFactor")(randomizationFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(reconnection)) __obj.updateDynamic("reconnection")(reconnection)
+    if (reconnectionAttempts != null) __obj.updateDynamic("reconnectionAttempts")(reconnectionAttempts.asInstanceOf[js.Any])
+    if (reconnectionDelay != null) __obj.updateDynamic("reconnectionDelay")(reconnectionDelay.asInstanceOf[js.Any])
+    if (reconnectionDelayMax != null) __obj.updateDynamic("reconnectionDelayMax")(reconnectionDelayMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (!js.isUndefined(rememberUpgrade)) __obj.updateDynamic("rememberUpgrade")(rememberUpgrade)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (timestampParam != null) __obj.updateDynamic("timestampParam")(timestampParam)
+    if (!js.isUndefined(timestampRequests)) __obj.updateDynamic("timestampRequests")(timestampRequests)
+    if (transportOptions != null) __obj.updateDynamic("transportOptions")(transportOptions)
+    if (transports != null) __obj.updateDynamic("transports")(transports)
+    if (!js.isUndefined(upgrade)) __obj.updateDynamic("upgrade")(upgrade)
+    __obj.asInstanceOf[ConnectOpts]
+  }
+}
+

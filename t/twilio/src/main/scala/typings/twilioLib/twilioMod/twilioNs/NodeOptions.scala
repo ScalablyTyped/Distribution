@@ -13,3 +13,22 @@ trait NodeOptions extends js.Object {
   var topLevel: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NodeOptions {
+  @scala.inline
+  def apply(
+    legalNodes: js.Array[java.lang.String],
+    name: java.lang.String,
+    attributes: js.Any = null,
+    text: java.lang.String = null,
+    topLevel: js.UndefOr[scala.Boolean] = js.undefined
+  ): NodeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("legalNodes")(legalNodes)
+    __obj.updateDynamic("name")(name)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(topLevel)) __obj.updateDynamic("topLevel")(topLevel)
+    __obj.asInstanceOf[NodeOptions]
+  }
+}
+

@@ -21,3 +21,14 @@ trait Stream[T] extends js.Object {
   def subscribe(name: java.lang.String, handler: js.Function1[/* item */ T, js.Promise[scala.Unit]]): scala.Unit
 }
 
+object Stream {
+  @scala.inline
+  def apply[T](
+    subscribe: js.Function2[java.lang.String, js.Function1[/* item */ T, js.Promise[scala.Unit]], scala.Unit]
+  ): Stream[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("subscribe")(subscribe)
+    __obj.asInstanceOf[Stream[T]]
+  }
+}
+

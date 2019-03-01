@@ -37,3 +37,24 @@ trait DragGestureEvent
   var Event: js.Any
 }
 
+object DragGestureEvent {
+  @scala.inline
+  def apply(
+    DragAction: scala.Double,
+    DragOriginX: scala.Double,
+    DragOriginY: scala.Double,
+    DragSource: XDragSource,
+    Event: js.Any,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): DragGestureEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DragAction")(DragAction)
+    __obj.updateDynamic("DragOriginX")(DragOriginX)
+    __obj.updateDynamic("DragOriginY")(DragOriginY)
+    __obj.updateDynamic("DragSource")(DragSource)
+    __obj.updateDynamic("Event")(Event)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[DragGestureEvent]
+  }
+}
+

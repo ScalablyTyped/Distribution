@@ -132,3 +132,69 @@ trait QueuesResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 
+object QueuesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListQueuesResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+    ],
+    pause: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+    ],
+    purge: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+    ],
+    resume: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    tasks: TasksResource,
+    testIamPermissions: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ]
+  ): QueuesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("pause")(pause)
+    __obj.updateDynamic("purge")(purge)
+    __obj.updateDynamic("resume")(resume)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("tasks")(tasks)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.asInstanceOf[QueuesResource]
+  }
+}
+

@@ -13,3 +13,22 @@ trait GitPathAction extends js.Object {
   var targetPath: java.lang.String
 }
 
+object GitPathAction {
+  @scala.inline
+  def apply(
+    action: GitPathActions,
+    base64Content: java.lang.String,
+    path: java.lang.String,
+    rawTextContent: java.lang.String,
+    targetPath: java.lang.String
+  ): GitPathAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("base64Content")(base64Content)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("rawTextContent")(rawTextContent)
+    __obj.updateDynamic("targetPath")(targetPath)
+    __obj.asInstanceOf[GitPathAction]
+  }
+}
+

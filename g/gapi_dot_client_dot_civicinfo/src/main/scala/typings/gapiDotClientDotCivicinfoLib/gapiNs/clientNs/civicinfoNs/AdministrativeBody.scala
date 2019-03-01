@@ -35,3 +35,40 @@ trait AdministrativeBody extends js.Object {
   var votingLocationFinderUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AdministrativeBody {
+  @scala.inline
+  def apply(
+    absenteeVotingInfoUrl: java.lang.String = null,
+    addressLines: js.Array[java.lang.String] = null,
+    ballotInfoUrl: java.lang.String = null,
+    correspondenceAddress: SimpleAddressType = null,
+    electionInfoUrl: java.lang.String = null,
+    electionOfficials: js.Array[ElectionOfficial] = null,
+    electionRegistrationConfirmationUrl: java.lang.String = null,
+    electionRegistrationUrl: java.lang.String = null,
+    electionRulesUrl: java.lang.String = null,
+    hoursOfOperation: java.lang.String = null,
+    name: java.lang.String = null,
+    physicalAddress: SimpleAddressType = null,
+    voter_services: js.Array[java.lang.String] = null,
+    votingLocationFinderUrl: java.lang.String = null
+  ): AdministrativeBody = {
+    val __obj = js.Dynamic.literal()
+    if (absenteeVotingInfoUrl != null) __obj.updateDynamic("absenteeVotingInfoUrl")(absenteeVotingInfoUrl)
+    if (addressLines != null) __obj.updateDynamic("addressLines")(addressLines)
+    if (ballotInfoUrl != null) __obj.updateDynamic("ballotInfoUrl")(ballotInfoUrl)
+    if (correspondenceAddress != null) __obj.updateDynamic("correspondenceAddress")(correspondenceAddress)
+    if (electionInfoUrl != null) __obj.updateDynamic("electionInfoUrl")(electionInfoUrl)
+    if (electionOfficials != null) __obj.updateDynamic("electionOfficials")(electionOfficials)
+    if (electionRegistrationConfirmationUrl != null) __obj.updateDynamic("electionRegistrationConfirmationUrl")(electionRegistrationConfirmationUrl)
+    if (electionRegistrationUrl != null) __obj.updateDynamic("electionRegistrationUrl")(electionRegistrationUrl)
+    if (electionRulesUrl != null) __obj.updateDynamic("electionRulesUrl")(electionRulesUrl)
+    if (hoursOfOperation != null) __obj.updateDynamic("hoursOfOperation")(hoursOfOperation)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (physicalAddress != null) __obj.updateDynamic("physicalAddress")(physicalAddress)
+    if (voter_services != null) __obj.updateDynamic("voter_services")(voter_services)
+    if (votingLocationFinderUrl != null) __obj.updateDynamic("votingLocationFinderUrl")(votingLocationFinderUrl)
+    __obj.asInstanceOf[AdministrativeBody]
+  }
+}
+

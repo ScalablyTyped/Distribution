@@ -11,3 +11,13 @@ trait TracksListResponse extends js.Object {
   var tracks: js.UndefOr[js.Array[Track]] = js.undefined
 }
 
+object TracksListResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, tracks: js.Array[Track] = null): TracksListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (tracks != null) __obj.updateDynamic("tracks")(tracks)
+    __obj.asInstanceOf[TracksListResponse]
+  }
+}
+

@@ -20,3 +20,18 @@ trait GoogleTypeDate extends js.Object {
   var year: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GoogleTypeDate {
+  @scala.inline
+  def apply(
+    day: scala.Int | scala.Double = null,
+    month: scala.Int | scala.Double = null,
+    year: scala.Int | scala.Double = null
+  ): GoogleTypeDate = {
+    val __obj = js.Dynamic.literal()
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GoogleTypeDate]
+  }
+}
+

@@ -60,3 +60,26 @@ trait DocumentData extends js.Object {
   var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
 }
 
+object DocumentData {
+  @scala.inline
+  def apply(
+    body: BodyData = null,
+    contentControls: js.Array[ContentControlData] = null,
+    customXmlParts: js.Array[CustomXmlPartData] = null,
+    properties: DocumentPropertiesData = null,
+    saved: js.UndefOr[scala.Boolean] = js.undefined,
+    sections: js.Array[SectionData] = null,
+    settings: js.Array[SettingData] = null
+  ): DocumentData = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls)
+    if (customXmlParts != null) __obj.updateDynamic("customXmlParts")(customXmlParts)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved)
+    if (sections != null) __obj.updateDynamic("sections")(sections)
+    if (settings != null) __obj.updateDynamic("settings")(settings)
+    __obj.asInstanceOf[DocumentData]
+  }
+}
+

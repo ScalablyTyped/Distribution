@@ -14,3 +14,18 @@ trait FlashMath extends js.Object {
   def pointDistance(pt1: FlashPoint, pt2: FlashPoint): scala.Double
 }
 
+object FlashMath {
+  @scala.inline
+  def apply(
+    concatMatrix: js.Function2[FlashMatrix, FlashMatrix, FlashMatrix],
+    invertMatrix: js.Function1[FlashMatrix, FlashMatrix],
+    pointDistance: js.Function2[FlashPoint, FlashPoint, scala.Double]
+  ): FlashMath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("concatMatrix")(concatMatrix)
+    __obj.updateDynamic("invertMatrix")(invertMatrix)
+    __obj.updateDynamic("pointDistance")(pointDistance)
+    __obj.asInstanceOf[FlashMath]
+  }
+}
+

@@ -18,3 +18,32 @@ trait HelmetData extends js.Object {
   var titleAttributes: HelmetDatum
 }
 
+object HelmetData {
+  @scala.inline
+  def apply(
+    base: HelmetDatum,
+    bodyAttributes: HelmetHTMLBodyDatum,
+    htmlAttributes: HelmetHTMLElementDatum,
+    link: HelmetDatum,
+    meta: HelmetDatum,
+    noscript: HelmetDatum,
+    script: HelmetDatum,
+    style: HelmetDatum,
+    title: HelmetDatum,
+    titleAttributes: HelmetDatum
+  ): HelmetData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("base")(base)
+    __obj.updateDynamic("bodyAttributes")(bodyAttributes)
+    __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("noscript")(noscript)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("titleAttributes")(titleAttributes)
+    __obj.asInstanceOf[HelmetData]
+  }
+}
+

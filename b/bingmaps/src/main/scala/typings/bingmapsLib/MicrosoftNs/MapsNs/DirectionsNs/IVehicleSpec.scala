@@ -81,3 +81,42 @@ trait IVehicleSpec extends js.Object {
   var weightUnit: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IVehicleSpec {
+  @scala.inline
+  def apply(
+    dimensionUnit: java.lang.String = null,
+    vehicleAvoidCrossWind: js.UndefOr[scala.Boolean] = js.undefined,
+    vehicleAvoidGroundingRisk: js.UndefOr[scala.Boolean] = js.undefined,
+    vehicleAxles: scala.Int | scala.Double = null,
+    vehicleHazardousMaterials: java.lang.String = null,
+    vehicleHazardousPermits: java.lang.String = null,
+    vehicleHeight: scala.Int | scala.Double = null,
+    vehicleLength: scala.Int | scala.Double = null,
+    vehicleMaxGradient: js.UndefOr[scala.Boolean] = js.undefined,
+    vehicleMinTurnRadius: scala.Int | scala.Double = null,
+    vehicleSemi: js.UndefOr[scala.Boolean] = js.undefined,
+    vehicleTrailers: scala.Int | scala.Double = null,
+    vehicleWeight: scala.Int | scala.Double = null,
+    vehicleWidth: scala.Int | scala.Double = null,
+    weightUnit: java.lang.String = null
+  ): IVehicleSpec = {
+    val __obj = js.Dynamic.literal()
+    if (dimensionUnit != null) __obj.updateDynamic("dimensionUnit")(dimensionUnit)
+    if (!js.isUndefined(vehicleAvoidCrossWind)) __obj.updateDynamic("vehicleAvoidCrossWind")(vehicleAvoidCrossWind)
+    if (!js.isUndefined(vehicleAvoidGroundingRisk)) __obj.updateDynamic("vehicleAvoidGroundingRisk")(vehicleAvoidGroundingRisk)
+    if (vehicleAxles != null) __obj.updateDynamic("vehicleAxles")(vehicleAxles.asInstanceOf[js.Any])
+    if (vehicleHazardousMaterials != null) __obj.updateDynamic("vehicleHazardousMaterials")(vehicleHazardousMaterials)
+    if (vehicleHazardousPermits != null) __obj.updateDynamic("vehicleHazardousPermits")(vehicleHazardousPermits)
+    if (vehicleHeight != null) __obj.updateDynamic("vehicleHeight")(vehicleHeight.asInstanceOf[js.Any])
+    if (vehicleLength != null) __obj.updateDynamic("vehicleLength")(vehicleLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(vehicleMaxGradient)) __obj.updateDynamic("vehicleMaxGradient")(vehicleMaxGradient)
+    if (vehicleMinTurnRadius != null) __obj.updateDynamic("vehicleMinTurnRadius")(vehicleMinTurnRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(vehicleSemi)) __obj.updateDynamic("vehicleSemi")(vehicleSemi)
+    if (vehicleTrailers != null) __obj.updateDynamic("vehicleTrailers")(vehicleTrailers.asInstanceOf[js.Any])
+    if (vehicleWeight != null) __obj.updateDynamic("vehicleWeight")(vehicleWeight.asInstanceOf[js.Any])
+    if (vehicleWidth != null) __obj.updateDynamic("vehicleWidth")(vehicleWidth.asInstanceOf[js.Any])
+    if (weightUnit != null) __obj.updateDynamic("weightUnit")(weightUnit)
+    __obj.asInstanceOf[IVehicleSpec]
+  }
+}
+

@@ -18,3 +18,32 @@ trait UrlOptions extends js.Object {
   var search: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UrlOptions {
+  @scala.inline
+  def apply(
+    auth: java.lang.String = null,
+    hash: java.lang.String = null,
+    host: java.lang.String = null,
+    hostname: java.lang.String = null,
+    path: java.lang.String = null,
+    pathname: java.lang.String = null,
+    port: java.lang.String = null,
+    protocol: java.lang.String = null,
+    query: js.Any = null,
+    search: java.lang.String = null
+  ): UrlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
+    if (port != null) __obj.updateDynamic("port")(port)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[UrlOptions]
+  }
+}
+

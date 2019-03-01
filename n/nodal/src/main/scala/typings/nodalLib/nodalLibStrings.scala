@@ -16,31 +16,40 @@ object nodalLibStrings {
   sealed trait DSC extends js.Object
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends nodalLib.nodalMod.DataType
   
   @js.native
-  sealed trait currency extends js.Object
+  sealed trait currency
+    extends nodalLib.nodalMod.DataType
   
   @js.native
-  sealed trait datetime extends js.Object
+  sealed trait datetime
+    extends nodalLib.nodalMod.DataType
   
   @js.native
-  sealed trait float extends js.Object
+  sealed trait float
+    extends nodalLib.nodalMod.DataType
   
   @js.native
-  sealed trait int extends js.Object
+  sealed trait int
+    extends nodalLib.nodalMod.DataType
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json
+    extends nodalLib.nodalMod.DataType
   
   @js.native
-  sealed trait serial extends js.Object
+  sealed trait serial
+    extends nodalLib.nodalMod.DataType
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends nodalLib.nodalMod.DataType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends nodalLib.nodalMod.DataType
   
   @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]

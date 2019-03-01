@@ -72,3 +72,27 @@ trait GuardiansResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListGuardiansResponse]
 }
 
+object GuardiansResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Guardian]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddressKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListGuardiansResponse]
+    ]
+  ): GuardiansResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[GuardiansResource]
+  }
+}
+

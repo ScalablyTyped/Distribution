@@ -14,3 +14,24 @@ trait ConnStr extends js.Object {
   var UID: java.lang.String
 }
 
+object ConnStr {
+  @scala.inline
+  def apply(
+    DATABASE: java.lang.String,
+    HOSTNAME: java.lang.String,
+    PORT: scala.Double | java.lang.String,
+    PROTOCOL: java.lang.String,
+    PWD: java.lang.String,
+    UID: java.lang.String
+  ): ConnStr = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DATABASE")(DATABASE)
+    __obj.updateDynamic("HOSTNAME")(HOSTNAME)
+    __obj.updateDynamic("PORT")(PORT.asInstanceOf[js.Any])
+    __obj.updateDynamic("PROTOCOL")(PROTOCOL)
+    __obj.updateDynamic("PWD")(PWD)
+    __obj.updateDynamic("UID")(UID)
+    __obj.asInstanceOf[ConnStr]
+  }
+}
+

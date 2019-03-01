@@ -20,3 +20,13 @@ trait DialogClosedEvent
   var DialogResult: scala.Double
 }
 
+object DialogClosedEvent {
+  @scala.inline
+  def apply(DialogResult: scala.Double, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): DialogClosedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DialogResult")(DialogResult)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[DialogClosedEvent]
+  }
+}
+

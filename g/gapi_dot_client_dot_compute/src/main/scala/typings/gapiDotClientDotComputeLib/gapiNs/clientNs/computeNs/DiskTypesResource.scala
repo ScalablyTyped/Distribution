@@ -14,3 +14,27 @@ trait DiskTypesResource extends js.Object {
   def list(request: gapiDotClientDotComputeLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[DiskTypeList]
 }
 
+object DiskTypesResource {
+  @scala.inline
+  def apply(
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DiskTypeAggregatedList]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltDiskType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DiskType]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DiskTypeList]
+    ]
+  ): DiskTypesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[DiskTypesResource]
+  }
+}
+

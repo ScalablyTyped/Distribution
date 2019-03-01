@@ -11,3 +11,14 @@ trait MapOptions extends js.Object {
   ] = js.undefined
 }
 
+object MapOptions {
+  @scala.inline
+  def apply(
+    fullscreenControl: leafletDashFullscreenLib.leafletDashFullscreenLibNumbers.`true` | leafletDashFullscreenLib.Anon_PseudoFullscreen = null
+  ): MapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (fullscreenControl != null) __obj.updateDynamic("fullscreenControl")(fullscreenControl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapOptions]
+  }
+}
+

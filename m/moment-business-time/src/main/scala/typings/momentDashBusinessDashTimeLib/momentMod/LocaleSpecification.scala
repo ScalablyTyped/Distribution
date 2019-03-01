@@ -10,3 +10,13 @@ trait LocaleSpecification extends js.Object {
   var workinghours: js.UndefOr[WorkingHoursMap] = js.undefined
 }
 
+object LocaleSpecification {
+  @scala.inline
+  def apply(holidays: js.Array[java.lang.String] = null, workinghours: WorkingHoursMap = null): LocaleSpecification = {
+    val __obj = js.Dynamic.literal()
+    if (holidays != null) __obj.updateDynamic("holidays")(holidays)
+    if (workinghours != null) __obj.updateDynamic("workinghours")(workinghours)
+    __obj.asInstanceOf[LocaleSpecification]
+  }
+}
+

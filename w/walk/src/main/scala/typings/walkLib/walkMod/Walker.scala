@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Walker extends js.Object {
-  def on(event: WalkStatArrayEvent | WalkStatEvent, cb: WalkStatArrayEventCallback | WalkStatEventCallback): scala.Unit = js.native
+  def on(event: WalkStatArrayEvent, cb: WalkStatArrayEventCallback): scala.Unit = js.native
+  def on(event: WalkStatEvent, cb: WalkStatEventCallback): scala.Unit = js.native
   @JSName("on")
   def on_end(event: walkLib.walkLibStrings.end, cb: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")

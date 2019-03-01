@@ -29,3 +29,22 @@ trait GetIpRangesResult extends js.Object {
   val syncToken: scala.Double
 }
 
+object GetIpRangesResult {
+  @scala.inline
+  def apply(
+    cidrBlocks: js.Array[java.lang.String],
+    createDate: java.lang.String,
+    id: java.lang.String,
+    ipv6CidrBlocks: js.Array[java.lang.String],
+    syncToken: scala.Double
+  ): GetIpRangesResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cidrBlocks")(cidrBlocks)
+    __obj.updateDynamic("createDate")(createDate)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ipv6CidrBlocks")(ipv6CidrBlocks)
+    __obj.updateDynamic("syncToken")(syncToken)
+    __obj.asInstanceOf[GetIpRangesResult]
+  }
+}
+

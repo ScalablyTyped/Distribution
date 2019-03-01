@@ -31,3 +31,48 @@ import scala.scalajs.js.annotation._
   var width: scala.Double | java.lang.String
 }
 
+object MapboxProps {
+  @scala.inline
+  def apply(
+    height: scala.Double | java.lang.String,
+    width: scala.Double | java.lang.String,
+    attributionControl: js.UndefOr[scala.Boolean] = js.undefined,
+    container: js.Object = null,
+    gl: js.Object = null,
+    mapOptions: js.Object = null,
+    mapStyle: java.lang.String | js.Object = null,
+    mapboxApiAccessToken: java.lang.String = null,
+    onError: js.Function1[/* e */ MapError, scala.Unit] = null,
+    onLoad: js.Function0[scala.Unit] = null,
+    preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined,
+    reuseMap: js.UndefOr[scala.Boolean] = js.undefined,
+    reuseMaps: js.UndefOr[scala.Boolean] = js.undefined,
+    transformRequest: js.Function2[
+      /* url */ js.UndefOr[java.lang.String], 
+      /* resourceType */ js.UndefOr[java.lang.String], 
+      MapRequest
+    ] = null,
+    viewState: ViewState = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): MapboxProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (gl != null) __obj.updateDynamic("gl")(gl)
+    if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions)
+    if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
+    if (mapboxApiAccessToken != null) __obj.updateDynamic("mapboxApiAccessToken")(mapboxApiAccessToken)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
+    if (!js.isUndefined(reuseMap)) __obj.updateDynamic("reuseMap")(reuseMap)
+    if (!js.isUndefined(reuseMaps)) __obj.updateDynamic("reuseMaps")(reuseMaps)
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest)
+    if (viewState != null) __obj.updateDynamic("viewState")(viewState)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[MapboxProps]
+  }
+}
+

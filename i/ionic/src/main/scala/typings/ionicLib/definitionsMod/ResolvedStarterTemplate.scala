@@ -9,3 +9,21 @@ trait ResolvedStarterTemplate extends StarterTemplate {
   var archive: java.lang.String
 }
 
+object ResolvedStarterTemplate {
+  @scala.inline
+  def apply(
+    archive: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    `type`: ProjectType,
+    description: java.lang.String = null
+  ): ResolvedStarterTemplate = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("archive")(archive)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[ResolvedStarterTemplate]
+  }
+}
+

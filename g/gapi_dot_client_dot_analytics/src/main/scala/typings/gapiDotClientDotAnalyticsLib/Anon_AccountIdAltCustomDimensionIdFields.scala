@@ -33,3 +33,34 @@ trait Anon_AccountIdAltCustomDimensionIdFields extends js.Object {
   var webPropertyId: java.lang.String
 }
 
+object Anon_AccountIdAltCustomDimensionIdFields {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String,
+    customDimensionId: java.lang.String,
+    webPropertyId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    ignoreCustomDataSourceLinks: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AccountIdAltCustomDimensionIdFields = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accountId")(accountId)
+    __obj.updateDynamic("customDimensionId")(customDimensionId)
+    __obj.updateDynamic("webPropertyId")(webPropertyId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(ignoreCustomDataSourceLinks)) __obj.updateDynamic("ignoreCustomDataSourceLinks")(ignoreCustomDataSourceLinks)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AccountIdAltCustomDimensionIdFields]
+  }
+}
+

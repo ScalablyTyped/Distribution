@@ -10,3 +10,13 @@ trait Anon_Location extends js.Object {
   var size: scala.Double
 }
 
+object Anon_Location {
+  @scala.inline
+  def apply(location: scala.Double, size: scala.Double): Anon_Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Anon_Location]
+  }
+}
+

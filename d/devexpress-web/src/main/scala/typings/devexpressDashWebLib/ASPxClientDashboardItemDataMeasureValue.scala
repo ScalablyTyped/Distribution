@@ -19,3 +19,13 @@ trait ASPxClientDashboardItemDataMeasureValue extends js.Object {
   def GetValue(): js.Object
 }
 
+object ASPxClientDashboardItemDataMeasureValue {
+  @scala.inline
+  def apply(GetDisplayText: js.Function0[java.lang.String], GetValue: js.Function0[js.Object]): ASPxClientDashboardItemDataMeasureValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetDisplayText")(GetDisplayText)
+    __obj.updateDynamic("GetValue")(GetValue)
+    __obj.asInstanceOf[ASPxClientDashboardItemDataMeasureValue]
+  }
+}
+

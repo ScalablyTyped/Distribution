@@ -18,3 +18,26 @@ trait ExplorerOptions extends js.Object {
   ] = js.undefined
 }
 
+object ExplorerOptions {
+  @scala.inline
+  def apply(
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreEmptySearchPlaces: js.UndefOr[scala.Boolean] = js.undefined,
+    loaders: Loaders = null,
+    packageProp: java.lang.String = null,
+    searchPlaces: js.Array[java.lang.String] = null,
+    stopDir: java.lang.String = null,
+    transform: js.Function1[/* result */ CosmiconfigResult, js.Promise[CosmiconfigResult] | CosmiconfigResult] = null
+  ): ExplorerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(ignoreEmptySearchPlaces)) __obj.updateDynamic("ignoreEmptySearchPlaces")(ignoreEmptySearchPlaces)
+    if (loaders != null) __obj.updateDynamic("loaders")(loaders)
+    if (packageProp != null) __obj.updateDynamic("packageProp")(packageProp)
+    if (searchPlaces != null) __obj.updateDynamic("searchPlaces")(searchPlaces)
+    if (stopDir != null) __obj.updateDynamic("stopDir")(stopDir)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[ExplorerOptions]
+  }
+}
+

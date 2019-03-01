@@ -2286,33 +2286,61 @@ object MTurkNs extends js.Object {
     var WorkerId: js.UndefOr[CustomerId] = js.undefined
   }
   
+  trait _AssignmentStatus extends js.Object
+  
+  trait _Comparator extends js.Object
+  
+  trait _EventType extends js.Object
+  
+  trait _HITAccessActions extends js.Object
+  
+  trait _HITReviewStatus extends js.Object
+  
+  trait _HITStatus extends js.Object
+  
+  trait _NotificationTransport extends js.Object
+  
+  trait _NotifyWorkersFailureCode extends js.Object
+  
+  trait _QualificationStatus extends js.Object
+  
+  trait _QualificationTypeStatus extends js.Object
+  
+  trait _ReviewActionStatus extends js.Object
+  
+  trait _ReviewPolicyLevel extends js.Object
+  
+  trait _ReviewableHITStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AssignmentList = js.Array[Assignment]
-  type AssignmentStatus = awsDashSdkLib.awsDashSdkLibStrings.Submitted | awsDashSdkLib.awsDashSdkLibStrings.Approved | awsDashSdkLib.awsDashSdkLibStrings.Rejected | java.lang.String
+  type AssignmentStatus = _AssignmentStatus | java.lang.String
   type AssignmentStatusList = js.Array[AssignmentStatus]
   type BonusPaymentList = js.Array[BonusPayment]
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type Comparator = awsDashSdkLib.awsDashSdkLibStrings.LessThan | awsDashSdkLib.awsDashSdkLibStrings.LessThanOrEqualTo | awsDashSdkLib.awsDashSdkLibStrings.GreaterThan | awsDashSdkLib.awsDashSdkLibStrings.GreaterThanOrEqualTo | awsDashSdkLib.awsDashSdkLibStrings.EqualTo | awsDashSdkLib.awsDashSdkLibStrings.NotEqualTo | awsDashSdkLib.awsDashSdkLibStrings.Exists | awsDashSdkLib.awsDashSdkLibStrings.DoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.In | awsDashSdkLib.awsDashSdkLibStrings.NotIn | java.lang.String
+  type Comparator = _Comparator | java.lang.String
   type CountryParameters = java.lang.String
   type CurrencyAmount = java.lang.String
   type CustomerId = java.lang.String
   type CustomerIdList = js.Array[CustomerId]
   type EntityId = java.lang.String
-  type EventType = awsDashSdkLib.awsDashSdkLibStrings.AssignmentAccepted | awsDashSdkLib.awsDashSdkLibStrings.AssignmentAbandoned | awsDashSdkLib.awsDashSdkLibStrings.AssignmentReturned | awsDashSdkLib.awsDashSdkLibStrings.AssignmentSubmitted | awsDashSdkLib.awsDashSdkLibStrings.AssignmentRejected | awsDashSdkLib.awsDashSdkLibStrings.AssignmentApproved | awsDashSdkLib.awsDashSdkLibStrings.HITCreated | awsDashSdkLib.awsDashSdkLibStrings.HITExpired | awsDashSdkLib.awsDashSdkLibStrings.HITReviewable | awsDashSdkLib.awsDashSdkLibStrings.HITExtended | awsDashSdkLib.awsDashSdkLibStrings.HITDisposed | awsDashSdkLib.awsDashSdkLibStrings.Ping | java.lang.String
+  type EventType = _EventType | java.lang.String
   type EventTypeList = js.Array[EventType]
-  type HITAccessActions = awsDashSdkLib.awsDashSdkLibStrings.Accept | awsDashSdkLib.awsDashSdkLibStrings.PreviewAndAccept | awsDashSdkLib.awsDashSdkLibStrings.DiscoverPreviewAndAccept | java.lang.String
+  type HITAccessActions = _HITAccessActions | java.lang.String
   type HITLayoutParameterList = js.Array[HITLayoutParameter]
   type HITList = js.Array[HIT]
-  type HITReviewStatus = awsDashSdkLib.awsDashSdkLibStrings.NotReviewed | awsDashSdkLib.awsDashSdkLibStrings.MarkedForReview | awsDashSdkLib.awsDashSdkLibStrings.ReviewedAppropriate | awsDashSdkLib.awsDashSdkLibStrings.ReviewedInappropriate | java.lang.String
-  type HITStatus = awsDashSdkLib.awsDashSdkLibStrings.Assignable | awsDashSdkLib.awsDashSdkLibStrings.Unassignable | awsDashSdkLib.awsDashSdkLibStrings.Reviewable | awsDashSdkLib.awsDashSdkLibStrings.Reviewing | awsDashSdkLib.awsDashSdkLibStrings.Disposed | java.lang.String
+  type HITReviewStatus = _HITReviewStatus | java.lang.String
+  type HITStatus = _HITStatus | java.lang.String
   type IdempotencyToken = java.lang.String
   type Integer = scala.Double
   type IntegerList = js.Array[Integer]
   type LocaleList = js.Array[Locale]
   type Long = scala.Double
-  type NotificationTransport = awsDashSdkLib.awsDashSdkLibStrings.Email | awsDashSdkLib.awsDashSdkLibStrings.SQS | awsDashSdkLib.awsDashSdkLibStrings.SNS | java.lang.String
-  type NotifyWorkersFailureCode = awsDashSdkLib.awsDashSdkLibStrings.SoftFailure | awsDashSdkLib.awsDashSdkLibStrings.HardFailure | java.lang.String
+  type NotificationTransport = _NotificationTransport | java.lang.String
+  type NotifyWorkersFailureCode = _NotifyWorkersFailureCode | java.lang.String
   type NotifyWorkersFailureStatusList = js.Array[NotifyWorkersFailureStatus]
   type PaginationToken = java.lang.String
   type ParameterMapEntryList = js.Array[ParameterMapEntry]
@@ -2320,20 +2348,20 @@ object MTurkNs extends js.Object {
   type QualificationList = js.Array[Qualification]
   type QualificationRequestList = js.Array[QualificationRequest]
   type QualificationRequirementList = js.Array[QualificationRequirement]
-  type QualificationStatus = awsDashSdkLib.awsDashSdkLibStrings.Granted | awsDashSdkLib.awsDashSdkLibStrings.Revoked | java.lang.String
+  type QualificationStatus = _QualificationStatus | java.lang.String
   type QualificationTypeList = js.Array[QualificationType]
-  type QualificationTypeStatus = awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Inactive | java.lang.String
+  type QualificationTypeStatus = _QualificationTypeStatus | java.lang.String
   type ResultSize = scala.Double
   type ReviewActionDetailList = js.Array[ReviewActionDetail]
-  type ReviewActionStatus = awsDashSdkLib.awsDashSdkLibStrings.Intended | awsDashSdkLib.awsDashSdkLibStrings.Succeeded | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Cancelled | java.lang.String
-  type ReviewPolicyLevel = awsDashSdkLib.awsDashSdkLibStrings.Assignment | awsDashSdkLib.awsDashSdkLibStrings.HIT | java.lang.String
+  type ReviewActionStatus = _ReviewActionStatus | java.lang.String
+  type ReviewPolicyLevel = _ReviewPolicyLevel | java.lang.String
   type ReviewPolicyLevelList = js.Array[ReviewPolicyLevel]
   type ReviewResultDetailList = js.Array[ReviewResultDetail]
-  type ReviewableHITStatus = awsDashSdkLib.awsDashSdkLibStrings.Reviewable | awsDashSdkLib.awsDashSdkLibStrings.Reviewing | java.lang.String
+  type ReviewableHITStatus = _ReviewableHITStatus | java.lang.String
   type String = java.lang.String
   type StringList = js.Array[String]
   type Timestamp = stdLib.Date
   type WorkerBlockList = js.Array[WorkerBlock]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-01-17` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

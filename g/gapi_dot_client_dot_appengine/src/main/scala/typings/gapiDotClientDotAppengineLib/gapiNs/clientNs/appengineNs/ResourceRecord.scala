@@ -14,3 +14,14 @@ trait ResourceRecord extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResourceRecord {
+  @scala.inline
+  def apply(name: java.lang.String = null, rrdata: java.lang.String = null, `type`: java.lang.String = null): ResourceRecord = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (rrdata != null) __obj.updateDynamic("rrdata")(rrdata)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ResourceRecord]
+  }
+}
+

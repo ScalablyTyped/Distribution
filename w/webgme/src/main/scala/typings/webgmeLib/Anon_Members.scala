@@ -14,3 +14,18 @@ trait Anon_Members extends js.Object {
   var node: webgmeLib.CoreNs.Node
 }
 
+object Anon_Members {
+  @scala.inline
+  def apply(
+    name: webgmeLib.GmeCommonNs.Name,
+    node: webgmeLib.CoreNs.Node,
+    members: js.Array[webgmeLib.CoreNs.Node] = null
+  ): Anon_Members = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("node")(node)
+    if (members != null) __obj.updateDynamic("members")(members)
+    __obj.asInstanceOf[Anon_Members]
+  }
+}
+

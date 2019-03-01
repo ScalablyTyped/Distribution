@@ -35,3 +35,28 @@ trait AuthorizedCertificate extends js.Object {
   var visibleDomainMappings: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AuthorizedCertificate {
+  @scala.inline
+  def apply(
+    certificateRawData: CertificateRawData = null,
+    displayName: java.lang.String = null,
+    domainMappingsCount: scala.Int | scala.Double = null,
+    domainNames: js.Array[java.lang.String] = null,
+    expireTime: java.lang.String = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    visibleDomainMappings: js.Array[java.lang.String] = null
+  ): AuthorizedCertificate = {
+    val __obj = js.Dynamic.literal()
+    if (certificateRawData != null) __obj.updateDynamic("certificateRawData")(certificateRawData)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (domainMappingsCount != null) __obj.updateDynamic("domainMappingsCount")(domainMappingsCount.asInstanceOf[js.Any])
+    if (domainNames != null) __obj.updateDynamic("domainNames")(domainNames)
+    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (visibleDomainMappings != null) __obj.updateDynamic("visibleDomainMappings")(visibleDomainMappings)
+    __obj.asInstanceOf[AuthorizedCertificate]
+  }
+}
+

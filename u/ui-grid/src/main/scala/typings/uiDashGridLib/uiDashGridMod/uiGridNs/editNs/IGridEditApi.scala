@@ -9,3 +9,12 @@ trait IGridEditApi[TEntity] extends js.Object {
   var on: uiDashGridLib.Anon_AfterCellEdit[TEntity]
 }
 
+object IGridEditApi {
+  @scala.inline
+  def apply[TEntity](on: uiDashGridLib.Anon_AfterCellEdit[TEntity]): IGridEditApi[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[IGridEditApi[TEntity]]
+  }
+}
+

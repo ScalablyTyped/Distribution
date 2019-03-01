@@ -10,3 +10,16 @@ trait SpinnerProps
   var singleColor: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SpinnerProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[js.Any] = null,
+    singleColor: js.UndefOr[scala.Boolean] = js.undefined
+  ): SpinnerProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (!js.isUndefined(singleColor)) __obj.updateDynamic("singleColor")(singleColor)
+    __obj.asInstanceOf[SpinnerProps]
+  }
+}
+

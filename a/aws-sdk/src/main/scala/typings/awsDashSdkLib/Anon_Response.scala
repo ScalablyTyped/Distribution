@@ -10,3 +10,12 @@ trait Anon_Response[D, E] extends js.Object {
   var $response: awsDashSdkLib.libResponseMod.Response[D, E]
 }
 
+object Anon_Response {
+  @scala.inline
+  def apply[D, E]($response: awsDashSdkLib.libResponseMod.Response[D, E]): Anon_Response[D, E] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$response")($response)
+    __obj.asInstanceOf[Anon_Response[D, E]]
+  }
+}
+

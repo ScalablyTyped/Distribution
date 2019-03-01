@@ -16,3 +16,13 @@ trait CreateResult extends js.Object {
   val outs: js.UndefOr[js.Any] = js.undefined
 }
 
+object CreateResult {
+  @scala.inline
+  def apply(id: atPulumiPulumiLib.resourceMod.ID, outs: js.Any = null): CreateResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (outs != null) __obj.updateDynamic("outs")(outs)
+    __obj.asInstanceOf[CreateResult]
+  }
+}
+

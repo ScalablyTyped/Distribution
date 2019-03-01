@@ -197,3 +197,82 @@ trait Cluster extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Cluster {
+  @scala.inline
+  def apply(
+    addonsConfig: AddonsConfig = null,
+    clusterIpv4Cidr: java.lang.String = null,
+    createTime: java.lang.String = null,
+    currentMasterVersion: java.lang.String = null,
+    currentNodeCount: scala.Int | scala.Double = null,
+    currentNodeVersion: java.lang.String = null,
+    description: java.lang.String = null,
+    enableKubernetesAlpha: js.UndefOr[scala.Boolean] = js.undefined,
+    endpoint: java.lang.String = null,
+    expireTime: java.lang.String = null,
+    initialClusterVersion: java.lang.String = null,
+    initialNodeCount: scala.Int | scala.Double = null,
+    instanceGroupUrls: js.Array[java.lang.String] = null,
+    ipAllocationPolicy: IPAllocationPolicy = null,
+    labelFingerprint: java.lang.String = null,
+    legacyAbac: LegacyAbac = null,
+    locations: js.Array[java.lang.String] = null,
+    loggingService: java.lang.String = null,
+    maintenancePolicy: MaintenancePolicy = null,
+    masterAuth: MasterAuth = null,
+    masterAuthorizedNetworksConfig: MasterAuthorizedNetworksConfig = null,
+    monitoringService: java.lang.String = null,
+    name: java.lang.String = null,
+    network: java.lang.String = null,
+    networkPolicy: NetworkPolicy = null,
+    nodeConfig: NodeConfig = null,
+    nodeIpv4CidrSize: scala.Int | scala.Double = null,
+    nodePools: js.Array[NodePool] = null,
+    resourceLabels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    selfLink: java.lang.String = null,
+    servicesIpv4Cidr: java.lang.String = null,
+    status: java.lang.String = null,
+    statusMessage: java.lang.String = null,
+    subnetwork: java.lang.String = null,
+    zone: java.lang.String = null
+  ): Cluster = {
+    val __obj = js.Dynamic.literal()
+    if (addonsConfig != null) __obj.updateDynamic("addonsConfig")(addonsConfig)
+    if (clusterIpv4Cidr != null) __obj.updateDynamic("clusterIpv4Cidr")(clusterIpv4Cidr)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (currentMasterVersion != null) __obj.updateDynamic("currentMasterVersion")(currentMasterVersion)
+    if (currentNodeCount != null) __obj.updateDynamic("currentNodeCount")(currentNodeCount.asInstanceOf[js.Any])
+    if (currentNodeVersion != null) __obj.updateDynamic("currentNodeVersion")(currentNodeVersion)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(enableKubernetesAlpha)) __obj.updateDynamic("enableKubernetesAlpha")(enableKubernetesAlpha)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime)
+    if (initialClusterVersion != null) __obj.updateDynamic("initialClusterVersion")(initialClusterVersion)
+    if (initialNodeCount != null) __obj.updateDynamic("initialNodeCount")(initialNodeCount.asInstanceOf[js.Any])
+    if (instanceGroupUrls != null) __obj.updateDynamic("instanceGroupUrls")(instanceGroupUrls)
+    if (ipAllocationPolicy != null) __obj.updateDynamic("ipAllocationPolicy")(ipAllocationPolicy)
+    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint)
+    if (legacyAbac != null) __obj.updateDynamic("legacyAbac")(legacyAbac)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (loggingService != null) __obj.updateDynamic("loggingService")(loggingService)
+    if (maintenancePolicy != null) __obj.updateDynamic("maintenancePolicy")(maintenancePolicy)
+    if (masterAuth != null) __obj.updateDynamic("masterAuth")(masterAuth)
+    if (masterAuthorizedNetworksConfig != null) __obj.updateDynamic("masterAuthorizedNetworksConfig")(masterAuthorizedNetworksConfig)
+    if (monitoringService != null) __obj.updateDynamic("monitoringService")(monitoringService)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (networkPolicy != null) __obj.updateDynamic("networkPolicy")(networkPolicy)
+    if (nodeConfig != null) __obj.updateDynamic("nodeConfig")(nodeConfig)
+    if (nodeIpv4CidrSize != null) __obj.updateDynamic("nodeIpv4CidrSize")(nodeIpv4CidrSize.asInstanceOf[js.Any])
+    if (nodePools != null) __obj.updateDynamic("nodePools")(nodePools)
+    if (resourceLabels != null) __obj.updateDynamic("resourceLabels")(resourceLabels)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (servicesIpv4Cidr != null) __obj.updateDynamic("servicesIpv4Cidr")(servicesIpv4Cidr)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
+    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[Cluster]
+  }
+}
+

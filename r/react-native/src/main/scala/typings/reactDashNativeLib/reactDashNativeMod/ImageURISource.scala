@@ -70,3 +70,30 @@ trait ImageURISource extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImageURISource {
+  @scala.inline
+  def apply(
+    body: java.lang.String = null,
+    bundle: java.lang.String = null,
+    cache: reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.reload | reactDashNativeLib.reactDashNativeLibStrings.`force-cache` | reactDashNativeLib.reactDashNativeLibStrings.`only-if-cached` = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    height: scala.Int | scala.Double = null,
+    method: java.lang.String = null,
+    scale: scala.Int | scala.Double = null,
+    uri: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ImageURISource = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (bundle != null) __obj.updateDynamic("bundle")(bundle)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageURISource]
+  }
+}
+

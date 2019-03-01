@@ -12,3 +12,13 @@ trait TurnBasedMatchDataRequest extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TurnBasedMatchDataRequest {
+  @scala.inline
+  def apply(data: java.lang.String = null, kind: java.lang.String = null): TurnBasedMatchDataRequest = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[TurnBasedMatchDataRequest]
+  }
+}
+

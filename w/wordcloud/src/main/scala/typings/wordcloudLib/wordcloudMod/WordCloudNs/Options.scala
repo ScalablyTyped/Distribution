@@ -109,3 +109,78 @@ trait Options extends js.Object {
   var weightFactor: js.UndefOr[scala.Double | (js.Function1[/* weight */ scala.Double, scala.Double])] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    abort: js.Function = null,
+    abortThreshold: scala.Int | scala.Double = null,
+    backgroundColor: java.lang.String = null,
+    classes: java.lang.String | (js.Function5[
+      /* word */ java.lang.String, 
+      /* weight */ java.lang.String | scala.Double, 
+      /* fontSize */ scala.Double, 
+      /* distance */ scala.Double, 
+      /* theta */ scala.Double, 
+      java.lang.String
+    ]) = null,
+    clearCanvas: js.UndefOr[scala.Boolean] = js.undefined,
+    click: EventCallback = null,
+    color: java.lang.String | (js.Function5[
+      /* word */ java.lang.String, 
+      /* weight */ java.lang.String | scala.Double, 
+      /* fontSize */ scala.Double, 
+      /* distance */ scala.Double, 
+      /* theta */ scala.Double, 
+      java.lang.String
+    ]) = null,
+    drawMask: js.UndefOr[scala.Boolean] = js.undefined,
+    drawOutOfBound: js.UndefOr[scala.Boolean] = js.undefined,
+    ellipticity: scala.Int | scala.Double = null,
+    fontFamily: java.lang.String = null,
+    fontWeight: java.lang.String | scala.Double = null,
+    gridSize: scala.Int | scala.Double = null,
+    hover: EventCallback = null,
+    list: js.Array[ListEntry] | js.Array[_] = null,
+    maskColor: java.lang.String = null,
+    maskGapWidth: scala.Int | scala.Double = null,
+    maxRotation: scala.Int | scala.Double = null,
+    minRotation: scala.Int | scala.Double = null,
+    minSize: scala.Int | scala.Double = null,
+    origin: js.Tuple2[scala.Double, scala.Double] = null,
+    rotateRatio: scala.Int | scala.Double = null,
+    shape: java.lang.String | (js.Function1[/* theta */ scala.Double, scala.Double]) = null,
+    shuffle: js.UndefOr[scala.Boolean] = js.undefined,
+    wait: scala.Int | scala.Double = null,
+    weightFactor: scala.Double | (js.Function1[/* weight */ scala.Double, scala.Double]) = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (abort != null) __obj.updateDynamic("abort")(abort)
+    if (abortThreshold != null) __obj.updateDynamic("abortThreshold")(abortThreshold.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearCanvas)) __obj.updateDynamic("clearCanvas")(clearCanvas)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawMask)) __obj.updateDynamic("drawMask")(drawMask)
+    if (!js.isUndefined(drawOutOfBound)) __obj.updateDynamic("drawOutOfBound")(drawOutOfBound)
+    if (ellipticity != null) __obj.updateDynamic("ellipticity")(ellipticity.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor)
+    if (maskGapWidth != null) __obj.updateDynamic("maskGapWidth")(maskGapWidth.asInstanceOf[js.Any])
+    if (maxRotation != null) __obj.updateDynamic("maxRotation")(maxRotation.asInstanceOf[js.Any])
+    if (minRotation != null) __obj.updateDynamic("minRotation")(minRotation.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (rotateRatio != null) __obj.updateDynamic("rotateRatio")(rotateRatio.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle)
+    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    if (weightFactor != null) __obj.updateDynamic("weightFactor")(weightFactor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

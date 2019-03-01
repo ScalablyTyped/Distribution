@@ -146,3 +146,71 @@ trait IgBaseEditor
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgBaseEditor {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igBaseEditor
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowNullValue: js.UndefOr[scala.Boolean] = js.undefined,
+    blur: BlurEvent = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: IgFocusEvent = null,
+    height: java.lang.String | scala.Double = null,
+    inputName: java.lang.String = null,
+    keydown: KeydownEvent = null,
+    keypress: KeypressEvent = null,
+    keyup: KeyupEvent = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    mousedown: MousedownEvent = null,
+    mousemove: MousemoveEvent = null,
+    mouseout: MouseoutEvent = null,
+    mouseover: MouseoverEvent = null,
+    mouseup: MouseupEvent = null,
+    nullValue: java.lang.String | scala.Double = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    regional: java.lang.String | js.Object = null,
+    rendered: RenderedEvent = null,
+    rendering: RenderingEvent = null,
+    tabIndex: scala.Int | scala.Double = null,
+    validatorOptions: js.Any = null,
+    value: js.Any = null,
+    valueChanged: ValueChangedEvent = null,
+    valueChanging: ValueChangingEvent = null,
+    width: java.lang.String | scala.Double = null
+  ): IgBaseEditor = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowNullValue)) __obj.updateDynamic("allowNullValue")(allowNullValue)
+    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (keydown != null) __obj.updateDynamic("keydown")(keydown)
+    if (keypress != null) __obj.updateDynamic("keypress")(keypress)
+    if (keyup != null) __obj.updateDynamic("keyup")(keyup)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mousedown != null) __obj.updateDynamic("mousedown")(mousedown)
+    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
+    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
+    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (mouseup != null) __obj.updateDynamic("mouseup")(mouseup)
+    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (valueChanged != null) __obj.updateDynamic("valueChanged")(valueChanged)
+    if (valueChanging != null) __obj.updateDynamic("valueChanging")(valueChanging)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgBaseEditor]
+  }
+}
+

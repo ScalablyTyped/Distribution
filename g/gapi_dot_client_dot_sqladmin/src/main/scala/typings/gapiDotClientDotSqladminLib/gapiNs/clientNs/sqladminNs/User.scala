@@ -28,3 +28,26 @@ trait User extends js.Object {
   var project: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object User {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    host: java.lang.String = null,
+    instance: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    password: java.lang.String = null,
+    project: java.lang.String = null
+  ): User = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (project != null) __obj.updateDynamic("project")(project)
+    __obj.asInstanceOf[User]
+  }
+}
+

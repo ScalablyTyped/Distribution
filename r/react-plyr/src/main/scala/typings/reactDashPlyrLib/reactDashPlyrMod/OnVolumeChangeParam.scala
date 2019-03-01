@@ -10,3 +10,13 @@ trait OnVolumeChangeParam extends js.Object {
   var volume: scala.Double
 }
 
+object OnVolumeChangeParam {
+  @scala.inline
+  def apply(muted: scala.Boolean, volume: scala.Double): OnVolumeChangeParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("muted")(muted)
+    __obj.updateDynamic("volume")(volume)
+    __obj.asInstanceOf[OnVolumeChangeParam]
+  }
+}
+

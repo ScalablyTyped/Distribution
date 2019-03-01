@@ -28,3 +28,18 @@ trait CustomResourceDefinitionStatus extends js.Object {
   val storedVersions: js.Array[java.lang.String]
 }
 
+object CustomResourceDefinitionStatus {
+  @scala.inline
+  def apply(
+    acceptedNames: CustomResourceDefinitionNames,
+    conditions: js.Array[CustomResourceDefinitionCondition],
+    storedVersions: js.Array[java.lang.String]
+  ): CustomResourceDefinitionStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acceptedNames")(acceptedNames)
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.updateDynamic("storedVersions")(storedVersions)
+    __obj.asInstanceOf[CustomResourceDefinitionStatus]
+  }
+}
+

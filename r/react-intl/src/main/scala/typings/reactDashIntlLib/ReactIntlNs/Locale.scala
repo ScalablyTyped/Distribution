@@ -11,3 +11,18 @@ trait Locale extends js.Object {
   var pluralRuleFunction: js.UndefOr[js.Function2[/* n */ scala.Double, /* ord */ scala.Boolean, java.lang.String]] = js.undefined
 }
 
+object Locale {
+  @scala.inline
+  def apply(
+    locale: java.lang.String,
+    fields: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    pluralRuleFunction: js.Function2[/* n */ scala.Double, /* ord */ scala.Boolean, java.lang.String] = null
+  ): Locale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("locale")(locale)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (pluralRuleFunction != null) __obj.updateDynamic("pluralRuleFunction")(pluralRuleFunction)
+    __obj.asInstanceOf[Locale]
+  }
+}
+

@@ -76,3 +76,66 @@ import scala.scalajs.js.annotation._
   var ValidationLocal: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object SheetCell {
+  @scala.inline
+  def apply(
+    AbsoluteName: java.lang.String,
+    CharacterProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterProperties = null,
+    CharacterPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesAsian = null,
+    CharacterPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesComplex = null,
+    ConditionalFormat: XSheetConditionalEntries,
+    ConditionalFormatLocal: XSheetConditionalEntries,
+    FormulaLocal: java.lang.String,
+    FormulaResultType: scala.Double,
+    ParagraphProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphProperties = null,
+    ParagraphPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesAsian = null,
+    ParagraphPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesComplex = null,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    Text: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.Text = null,
+    Validation: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ValidationLocal: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    XActionLockable: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XActionLockable = null,
+    XCellAddressable: XCellAddressable = null,
+    XColumnRowRange: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XColumnRowRange = null,
+    XIndent: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XIndent = null,
+    XModifyBroadcaster: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyBroadcaster = null,
+    XReplaceable: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XReplaceable = null,
+    XSheetAnnotationAnchor: XSheetAnnotationAnchor = null,
+    XTextFieldsSupplier: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextFieldsSupplier = null,
+    XTolerantMultiPropertySet: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XTolerantMultiPropertySet = null,
+    Cell: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.Cell = null,
+    SheetRangesQuery: SheetRangesQuery = null
+  ): SheetCell = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AbsoluteName")(AbsoluteName)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
+    __obj.updateDynamic("ConditionalFormat")(ConditionalFormat)
+    __obj.updateDynamic("ConditionalFormatLocal")(ConditionalFormatLocal)
+    __obj.updateDynamic("FormulaLocal")(FormulaLocal)
+    __obj.updateDynamic("FormulaResultType")(FormulaResultType)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesComplex)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("Size")(Size)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Text)
+    __obj.updateDynamic("Validation")(Validation)
+    __obj.updateDynamic("ValidationLocal")(ValidationLocal)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XActionLockable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellAddressable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XColumnRowRange)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XIndent)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XModifyBroadcaster)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XReplaceable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetAnnotationAnchor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XTextFieldsSupplier)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XTolerantMultiPropertySet)
+    js.Dynamic.global.Object.assign(__obj, Cell)
+    js.Dynamic.global.Object.assign(__obj, SheetRangesQuery)
+    __obj.asInstanceOf[SheetCell]
+  }
+}
+

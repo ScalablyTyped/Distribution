@@ -21,3 +21,20 @@ trait Options extends js.Object {
   var rendererSettings: js.UndefOr[reactDashLottieLib.Anon_ClassName] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    animationData: js.Any,
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    rendererSettings: reactDashLottieLib.Anon_ClassName = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animationData")(animationData)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (rendererSettings != null) __obj.updateDynamic("rendererSettings")(rendererSettings)
+    __obj.asInstanceOf[Options]
+  }
+}
+

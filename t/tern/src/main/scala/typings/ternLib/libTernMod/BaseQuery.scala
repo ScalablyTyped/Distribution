@@ -11,3 +11,17 @@ trait BaseQuery extends js.Object {
   var `type`: java.lang.String
 }
 
+object BaseQuery {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    docFormat: ternLib.ternLibStrings.full = null,
+    lineCharPositions: js.UndefOr[scala.Boolean] = js.undefined
+  ): BaseQuery = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat)
+    if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions)
+    __obj.asInstanceOf[BaseQuery]
+  }
+}
+

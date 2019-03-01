@@ -167,6 +167,8 @@ object IotDataNs extends js.Object {
     var payload: js.UndefOr[JsonDocument] = js.undefined
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type JsonDocument = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsIotdataMod.Blob | java.lang.String
@@ -174,6 +176,6 @@ object IotDataNs extends js.Object {
   type Qos = scala.Double
   type ThingName = java.lang.String
   type Topic = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-05-28` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

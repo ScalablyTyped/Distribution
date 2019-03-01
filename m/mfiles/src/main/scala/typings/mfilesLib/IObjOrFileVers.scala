@@ -13,3 +13,22 @@ trait IObjOrFileVers extends js.Object {
   def Remove(Index: scala.Double): scala.Unit
 }
 
+object IObjOrFileVers {
+  @scala.inline
+  def apply(
+    Add: js.Function2[scala.Double, IObjOrFileVer, scala.Unit],
+    Clone: js.Function0[IObjOrFileVers],
+    Count: scala.Double,
+    Item: js.Function1[scala.Double, IObjOrFileVer],
+    Remove: js.Function1[scala.Double, scala.Unit]
+  ): IObjOrFileVers = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Add")(Add)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("Item")(Item)
+    __obj.updateDynamic("Remove")(Remove)
+    __obj.asInstanceOf[IObjOrFileVers]
+  }
+}
+

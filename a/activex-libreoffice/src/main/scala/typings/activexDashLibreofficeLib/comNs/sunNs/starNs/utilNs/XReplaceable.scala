@@ -25,3 +25,37 @@ trait XReplaceable extends XSearchable {
   def replaceAll(xDesc: XSearchDescriptor): scala.Double
 }
 
+object XReplaceable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createReplaceDescriptor: js.Function0[XReplaceDescriptor],
+    createSearchDescriptor: js.Function0[XSearchDescriptor],
+    findAll: js.Function1[
+      XSearchDescriptor, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+    ],
+    findFirst: js.Function1[XSearchDescriptor, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    findNext: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      XSearchDescriptor, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    replaceAll: js.Function1[XSearchDescriptor, scala.Double]
+  ): XReplaceable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createReplaceDescriptor")(createReplaceDescriptor)
+    __obj.updateDynamic("createSearchDescriptor")(createSearchDescriptor)
+    __obj.updateDynamic("findAll")(findAll)
+    __obj.updateDynamic("findFirst")(findFirst)
+    __obj.updateDynamic("findNext")(findNext)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("replaceAll")(replaceAll)
+    __obj.asInstanceOf[XReplaceable]
+  }
+}
+

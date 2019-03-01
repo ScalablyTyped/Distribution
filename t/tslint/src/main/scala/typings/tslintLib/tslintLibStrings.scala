@@ -13,52 +13,66 @@ object tslintLibStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends tslintLib.libLanguageRuleRuleMod.RuleSeverity
   
   @js.native
-  sealed trait formatting extends js.Object
+  sealed trait formatting
+    extends tslintLib.libLanguageRuleRuleMod.RuleType
   
   @js.native
-  sealed trait functionality extends js.Object
+  sealed trait functionality
+    extends tslintLib.libLanguageRuleRuleMod.RuleType
   
   @js.native
-  sealed trait human extends js.Object
+  sealed trait human
+    extends tslintLib.libLanguageFormatterFormatterMod.ConsumerType
   
   @js.native
-  sealed trait machine extends js.Object
+  sealed trait machine
+    extends tslintLib.libLanguageFormatterFormatterMod.ConsumerType
   
   @js.native
-  sealed trait maintainability extends js.Object
+  sealed trait maintainability
+    extends tslintLib.libLanguageRuleRuleMod.RuleType
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends tslintLib.libLanguageRuleRuleMod.RuleSeverity
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait style
+    extends tslintLib.libLanguageRuleRuleMod.RuleType
   
   @js.native
-  sealed trait typescript extends js.Object
+  sealed trait typescript
+    extends tslintLib.libLanguageRuleRuleMod.RuleType
   
   @js.native
-  sealed trait utf16be extends js.Object
+  sealed trait utf16be
+    extends tslintLib.libUtilsMod.Encoding
   
   @js.native
-  sealed trait utf16le extends js.Object
+  sealed trait utf16le
+    extends tslintLib.libUtilsMod.Encoding
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends tslintLib.libUtilsMod.Encoding
   
   @js.native
-  sealed trait `utf8-bom` extends js.Object
+  sealed trait `utf8-bom`
+    extends tslintLib.libUtilsMod.Encoding
   
   @js.native
   sealed trait warn extends js.Object
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends tslintLib.libLanguageRuleRuleMod.RuleSeverity
   
   @scala.inline
   def NoInfer: NoInfer = "NoInfer".asInstanceOf[NoInfer]

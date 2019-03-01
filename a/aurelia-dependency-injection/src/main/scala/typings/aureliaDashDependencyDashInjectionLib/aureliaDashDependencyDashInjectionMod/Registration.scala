@@ -16,3 +16,12 @@ trait Registration extends js.Object {
   def registerResolver(container: Container, key: js.Any, fn: js.Function): Resolver
 }
 
+object Registration {
+  @scala.inline
+  def apply(registerResolver: js.Function3[Container, js.Any, js.Function, Resolver]): Registration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("registerResolver")(registerResolver)
+    __obj.asInstanceOf[Registration]
+  }
+}
+

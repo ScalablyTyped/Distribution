@@ -19,3 +19,20 @@ trait DSNOptions extends js.Object {
   ] = js.undefined
 }
 
+object DSNOptions {
+  @scala.inline
+  def apply(
+    envid: java.lang.String = null,
+    notify: DSNOption | js.Array[DSNOption] = null,
+    orcpt: java.lang.String = null,
+    ret: nodemailerLib.nodemailerLibStrings.Full | nodemailerLib.nodemailerLibStrings.HDRS = null
+  ): DSNOptions = {
+    val __obj = js.Dynamic.literal()
+    if (envid != null) __obj.updateDynamic("envid")(envid)
+    if (notify != null) __obj.updateDynamic("notify")(notify.asInstanceOf[js.Any])
+    if (orcpt != null) __obj.updateDynamic("orcpt")(orcpt)
+    if (ret != null) __obj.updateDynamic("ret")(ret.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DSNOptions]
+  }
+}
+

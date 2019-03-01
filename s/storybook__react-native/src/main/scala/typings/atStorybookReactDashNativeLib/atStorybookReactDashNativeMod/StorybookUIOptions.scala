@@ -82,3 +82,36 @@ trait StorybookUIOptions extends js.Object {
   var tabOpen: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StorybookUIOptions {
+  @scala.inline
+  def apply(
+    disableWebsockets: js.UndefOr[scala.Boolean] = js.undefined,
+    host: java.lang.String = null,
+    initialSelection: js.Object = null,
+    isUIHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboardAvoidingViewVerticalOffset: scala.Int | scala.Double = null,
+    onDeviceUI: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Int | scala.Double = null,
+    query: java.lang.String = null,
+    secured: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldDisableKeyboardAvoidingView: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldPersistSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    tabOpen: scala.Int | scala.Double = null
+  ): StorybookUIOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disableWebsockets)) __obj.updateDynamic("disableWebsockets")(disableWebsockets)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (initialSelection != null) __obj.updateDynamic("initialSelection")(initialSelection)
+    if (!js.isUndefined(isUIHidden)) __obj.updateDynamic("isUIHidden")(isUIHidden)
+    if (keyboardAvoidingViewVerticalOffset != null) __obj.updateDynamic("keyboardAvoidingViewVerticalOffset")(keyboardAvoidingViewVerticalOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(onDeviceUI)) __obj.updateDynamic("onDeviceUI")(onDeviceUI)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(secured)) __obj.updateDynamic("secured")(secured)
+    if (!js.isUndefined(shouldDisableKeyboardAvoidingView)) __obj.updateDynamic("shouldDisableKeyboardAvoidingView")(shouldDisableKeyboardAvoidingView)
+    if (!js.isUndefined(shouldPersistSelection)) __obj.updateDynamic("shouldPersistSelection")(shouldPersistSelection)
+    if (tabOpen != null) __obj.updateDynamic("tabOpen")(tabOpen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StorybookUIOptions]
+  }
+}
+

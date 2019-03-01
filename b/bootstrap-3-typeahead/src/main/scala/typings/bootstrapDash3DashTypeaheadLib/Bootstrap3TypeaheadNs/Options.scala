@@ -90,3 +90,56 @@ trait Options extends js.Object {
   var updater: js.UndefOr[js.Function1[/* item */ java.lang.String, java.lang.String]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    addItem: js.Object = null,
+    afterSelect: js.Function1[/* item */ java.lang.String, scala.Unit] = null,
+    appendTo: bootstrapDash3DashTypeaheadLib.JQuery = null,
+    autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    delay: scala.Int | scala.Double = null,
+    displayText: js.Function1[
+      /* item */ java.lang.String | bootstrapDash3DashTypeaheadLib.Anon_Name, 
+      java.lang.String
+    ] = null,
+    fitToElement: js.UndefOr[scala.Boolean] = js.undefined,
+    highlighter: js.Function1[/* item */ java.lang.String, java.lang.String] = null,
+    items: scala.Int | scala.Double = null,
+    matcher: js.Function1[/* item */ java.lang.String, scala.Boolean] = null,
+    minLength: scala.Int | scala.Double = null,
+    scrollHeight: scala.Double | js.Function0[scala.Double] = null,
+    showHintOnFocus: scala.Boolean | bootstrapDash3DashTypeaheadLib.bootstrapDash3DashTypeaheadLibStrings.all = null,
+    sorter: js.Function1[/* items */ js.Array[java.lang.String], js.Array[java.lang.String]] = null,
+    source: js.Array[java.lang.String] | js.Array[js.Object] | (js.Function2[
+      /* query */ js.UndefOr[java.lang.String], 
+      /* process */ js.UndefOr[
+        js.Function1[
+          /* callback */ js.Any, 
+          java.lang.String | js.Array[java.lang.String] | js.Array[js.Object]
+        ]
+      ], 
+      scala.Unit
+    ]) = null,
+    updater: js.Function1[/* item */ java.lang.String, java.lang.String] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (addItem != null) __obj.updateDynamic("addItem")(addItem)
+    if (afterSelect != null) __obj.updateDynamic("afterSelect")(afterSelect)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (displayText != null) __obj.updateDynamic("displayText")(displayText)
+    if (!js.isUndefined(fitToElement)) __obj.updateDynamic("fitToElement")(fitToElement)
+    if (highlighter != null) __obj.updateDynamic("highlighter")(highlighter)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (matcher != null) __obj.updateDynamic("matcher")(matcher)
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
+    if (showHintOnFocus != null) __obj.updateDynamic("showHintOnFocus")(showHintOnFocus.asInstanceOf[js.Any])
+    if (sorter != null) __obj.updateDynamic("sorter")(sorter)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (updater != null) __obj.updateDynamic("updater")(updater)
+    __obj.asInstanceOf[Options]
+  }
+}
+

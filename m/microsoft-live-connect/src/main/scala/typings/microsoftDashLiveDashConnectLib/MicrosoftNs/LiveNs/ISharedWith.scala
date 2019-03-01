@@ -24,3 +24,12 @@ trait ISharedWith extends js.Object {
   var access: java.lang.String
 }
 
+object ISharedWith {
+  @scala.inline
+  def apply(access: java.lang.String): ISharedWith = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("access")(access)
+    __obj.asInstanceOf[ISharedWith]
+  }
+}
+

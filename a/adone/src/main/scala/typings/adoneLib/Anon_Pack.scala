@@ -16,3 +16,13 @@ trait Anon_Pack extends js.Object {
   val unpackNs: Anon_BufferFdFilename
 }
 
+object Anon_Pack {
+  @scala.inline
+  def apply(packNs: Anon_ZipFile, unpackNs: Anon_BufferFdFilename): Anon_Pack = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("packNs")(packNs)
+    __obj.updateDynamic("unpackNs")(unpackNs)
+    __obj.asInstanceOf[Anon_Pack]
+  }
+}
+

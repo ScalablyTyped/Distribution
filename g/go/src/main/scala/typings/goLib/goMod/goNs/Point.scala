@@ -155,3 +155,62 @@ trait Point extends js.Object {
   def subtract(p: Point): Point
 }
 
+object Point {
+  @scala.inline
+  def apply(
+    add: js.Function1[Point, Point],
+    copy: js.Function0[Point],
+    direction: js.Function2[scala.Double, scala.Double, scala.Double],
+    directionPoint: js.Function1[Point, scala.Double],
+    distanceSquared: js.Function2[scala.Double, scala.Double, scala.Double],
+    distanceSquaredPoint: js.Function1[Point, scala.Double],
+    equalTo: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    equals: js.Function1[Point, scala.Boolean],
+    equalsApprox: js.Function1[Point, scala.Boolean],
+    isReal: js.Function0[scala.Boolean],
+    normalize: js.Function0[Point],
+    offset: js.Function2[scala.Double, scala.Double, Point],
+    projectOntoLineSegment: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Point],
+    projectOntoLineSegmentPoint: js.Function2[Point, Point, Point],
+    rotate: js.Function1[scala.Double, Point],
+    scale: js.Function2[scala.Double, scala.Double, Point],
+    set: js.Function1[Point, Point],
+    setRectSpot: js.Function2[Rect, Spot, Point],
+    setSpot: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, Spot, Point],
+    setTo: js.Function2[scala.Double, scala.Double, Point],
+    snapToGrid: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Point],
+    snapToGridPoint: js.Function2[Point, Size, Point],
+    subtract: js.Function1[Point, Point],
+    x: scala.Double,
+    y: scala.Double
+  ): Point = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("direction")(direction)
+    __obj.updateDynamic("directionPoint")(directionPoint)
+    __obj.updateDynamic("distanceSquared")(distanceSquared)
+    __obj.updateDynamic("distanceSquaredPoint")(distanceSquaredPoint)
+    __obj.updateDynamic("equalTo")(equalTo)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("equalsApprox")(equalsApprox)
+    __obj.updateDynamic("isReal")(isReal)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("projectOntoLineSegment")(projectOntoLineSegment)
+    __obj.updateDynamic("projectOntoLineSegmentPoint")(projectOntoLineSegmentPoint)
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("scale")(scale)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("setRectSpot")(setRectSpot)
+    __obj.updateDynamic("setSpot")(setSpot)
+    __obj.updateDynamic("setTo")(setTo)
+    __obj.updateDynamic("snapToGrid")(snapToGrid)
+    __obj.updateDynamic("snapToGridPoint")(snapToGridPoint)
+    __obj.updateDynamic("subtract")(subtract)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Point]
+  }
+}
+

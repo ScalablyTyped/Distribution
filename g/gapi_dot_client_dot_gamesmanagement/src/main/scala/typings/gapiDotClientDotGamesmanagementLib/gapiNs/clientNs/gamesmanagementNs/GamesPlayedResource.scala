@@ -12,3 +12,13 @@ trait GamesPlayedResource extends js.Object {
   var timeMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GamesPlayedResource {
+  @scala.inline
+  def apply(autoMatched: js.UndefOr[scala.Boolean] = js.undefined, timeMillis: java.lang.String = null): GamesPlayedResource = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched)
+    if (timeMillis != null) __obj.updateDynamic("timeMillis")(timeMillis)
+    __obj.asInstanceOf[GamesPlayedResource]
+  }
+}
+

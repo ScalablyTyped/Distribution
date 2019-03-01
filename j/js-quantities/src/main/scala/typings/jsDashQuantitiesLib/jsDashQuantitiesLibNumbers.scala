@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object jsDashQuantitiesLibNumbers {
   @js.native
-  sealed trait `-1` extends js.Object
+  sealed trait `-1`
+    extends jsDashQuantitiesLib.jsDashQuantitiesMod.QtyNs.ComparisonResult
   
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends jsDashQuantitiesLib.jsDashQuantitiesMod.QtyNs.ComparisonResult
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends jsDashQuantitiesLib.jsDashQuantitiesMod.QtyNs.ComparisonResult
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

@@ -11,3 +11,14 @@ trait Anon_Id extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Id {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, version: java.lang.String = null): Anon_Id = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Id]
+  }
+}
+

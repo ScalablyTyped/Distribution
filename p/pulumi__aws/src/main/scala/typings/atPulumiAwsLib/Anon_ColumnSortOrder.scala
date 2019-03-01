@@ -10,3 +10,16 @@ trait Anon_ColumnSortOrder extends js.Object {
   var sortOrder: atPulumiPulumiLib.outputMod.Input[scala.Double]
 }
 
+object Anon_ColumnSortOrder {
+  @scala.inline
+  def apply(
+    column: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    sortOrder: atPulumiPulumiLib.outputMod.Input[scala.Double]
+  ): Anon_ColumnSortOrder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ColumnSortOrder]
+  }
+}
+

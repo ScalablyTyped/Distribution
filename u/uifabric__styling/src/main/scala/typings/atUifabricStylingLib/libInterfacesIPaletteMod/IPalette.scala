@@ -205,3 +205,110 @@ trait IPalette extends js.Object {
   var yellowLight: java.lang.String
 }
 
+object IPalette {
+  @scala.inline
+  def apply(
+    accent: java.lang.String,
+    black: java.lang.String,
+    blackTranslucent40: java.lang.String,
+    blue: java.lang.String,
+    blueDark: java.lang.String,
+    blueLight: java.lang.String,
+    blueMid: java.lang.String,
+    green: java.lang.String,
+    greenDark: java.lang.String,
+    greenLight: java.lang.String,
+    magenta: java.lang.String,
+    magentaDark: java.lang.String,
+    magentaLight: java.lang.String,
+    neutralDark: java.lang.String,
+    neutralLight: java.lang.String,
+    neutralLighter: java.lang.String,
+    neutralLighterAlt: java.lang.String,
+    neutralPrimary: java.lang.String,
+    neutralPrimaryAlt: java.lang.String,
+    neutralQuaternary: java.lang.String,
+    neutralQuaternaryAlt: java.lang.String,
+    neutralSecondary: java.lang.String,
+    neutralSecondaryAlt: java.lang.String,
+    neutralTertiary: java.lang.String,
+    neutralTertiaryAlt: java.lang.String,
+    orange: java.lang.String,
+    orangeLight: java.lang.String,
+    orangeLighter: java.lang.String,
+    purple: java.lang.String,
+    purpleDark: java.lang.String,
+    purpleLight: java.lang.String,
+    red: java.lang.String,
+    redDark: java.lang.String,
+    teal: java.lang.String,
+    tealDark: java.lang.String,
+    tealLight: java.lang.String,
+    themeDark: java.lang.String,
+    themeDarkAlt: java.lang.String,
+    themeDarker: java.lang.String,
+    themeLight: java.lang.String,
+    themeLighter: java.lang.String,
+    themeLighterAlt: java.lang.String,
+    themePrimary: java.lang.String,
+    themeSecondary: java.lang.String,
+    themeTertiary: java.lang.String,
+    white: java.lang.String,
+    whiteTranslucent40: java.lang.String,
+    yellow: java.lang.String,
+    yellowLight: java.lang.String
+  ): IPalette = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accent")(accent)
+    __obj.updateDynamic("black")(black)
+    __obj.updateDynamic("blackTranslucent40")(blackTranslucent40)
+    __obj.updateDynamic("blue")(blue)
+    __obj.updateDynamic("blueDark")(blueDark)
+    __obj.updateDynamic("blueLight")(blueLight)
+    __obj.updateDynamic("blueMid")(blueMid)
+    __obj.updateDynamic("green")(green)
+    __obj.updateDynamic("greenDark")(greenDark)
+    __obj.updateDynamic("greenLight")(greenLight)
+    __obj.updateDynamic("magenta")(magenta)
+    __obj.updateDynamic("magentaDark")(magentaDark)
+    __obj.updateDynamic("magentaLight")(magentaLight)
+    __obj.updateDynamic("neutralDark")(neutralDark)
+    __obj.updateDynamic("neutralLight")(neutralLight)
+    __obj.updateDynamic("neutralLighter")(neutralLighter)
+    __obj.updateDynamic("neutralLighterAlt")(neutralLighterAlt)
+    __obj.updateDynamic("neutralPrimary")(neutralPrimary)
+    __obj.updateDynamic("neutralPrimaryAlt")(neutralPrimaryAlt)
+    __obj.updateDynamic("neutralQuaternary")(neutralQuaternary)
+    __obj.updateDynamic("neutralQuaternaryAlt")(neutralQuaternaryAlt)
+    __obj.updateDynamic("neutralSecondary")(neutralSecondary)
+    __obj.updateDynamic("neutralSecondaryAlt")(neutralSecondaryAlt)
+    __obj.updateDynamic("neutralTertiary")(neutralTertiary)
+    __obj.updateDynamic("neutralTertiaryAlt")(neutralTertiaryAlt)
+    __obj.updateDynamic("orange")(orange)
+    __obj.updateDynamic("orangeLight")(orangeLight)
+    __obj.updateDynamic("orangeLighter")(orangeLighter)
+    __obj.updateDynamic("purple")(purple)
+    __obj.updateDynamic("purpleDark")(purpleDark)
+    __obj.updateDynamic("purpleLight")(purpleLight)
+    __obj.updateDynamic("red")(red)
+    __obj.updateDynamic("redDark")(redDark)
+    __obj.updateDynamic("teal")(teal)
+    __obj.updateDynamic("tealDark")(tealDark)
+    __obj.updateDynamic("tealLight")(tealLight)
+    __obj.updateDynamic("themeDark")(themeDark)
+    __obj.updateDynamic("themeDarkAlt")(themeDarkAlt)
+    __obj.updateDynamic("themeDarker")(themeDarker)
+    __obj.updateDynamic("themeLight")(themeLight)
+    __obj.updateDynamic("themeLighter")(themeLighter)
+    __obj.updateDynamic("themeLighterAlt")(themeLighterAlt)
+    __obj.updateDynamic("themePrimary")(themePrimary)
+    __obj.updateDynamic("themeSecondary")(themeSecondary)
+    __obj.updateDynamic("themeTertiary")(themeTertiary)
+    __obj.updateDynamic("white")(white)
+    __obj.updateDynamic("whiteTranslucent40")(whiteTranslucent40)
+    __obj.updateDynamic("yellow")(yellow)
+    __obj.updateDynamic("yellowLight")(yellowLight)
+    __obj.asInstanceOf[IPalette]
+  }
+}
+

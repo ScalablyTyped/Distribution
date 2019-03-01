@@ -35,3 +35,24 @@ trait Parameters extends js.Object {
   var viewSize: Size
 }
 
+object Parameters {
+  @scala.inline
+  def apply(
+    deviceScaleFactor: scala.Double,
+    scale: scala.Double,
+    screenPosition: electronLib.electronLibStrings.desktop | electronLib.electronLibStrings.mobile,
+    screenSize: Size,
+    viewPosition: Point,
+    viewSize: Size
+  ): Parameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor)
+    __obj.updateDynamic("scale")(scale)
+    __obj.updateDynamic("screenPosition")(screenPosition.asInstanceOf[js.Any])
+    __obj.updateDynamic("screenSize")(screenSize)
+    __obj.updateDynamic("viewPosition")(viewPosition)
+    __obj.updateDynamic("viewSize")(viewSize)
+    __obj.asInstanceOf[Parameters]
+  }
+}
+

@@ -35,3 +35,24 @@ trait Record extends js.Object {
   var Volume: scala.Double
 }
 
+object Record {
+  @scala.inline
+  def apply(
+    Close: scala.Double,
+    High: scala.Double,
+    Low: scala.Double,
+    Open: scala.Double,
+    Time: scala.Double,
+    Volume: scala.Double
+  ): Record = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Close")(Close)
+    __obj.updateDynamic("High")(High)
+    __obj.updateDynamic("Low")(Low)
+    __obj.updateDynamic("Open")(Open)
+    __obj.updateDynamic("Time")(Time)
+    __obj.updateDynamic("Volume")(Volume)
+    __obj.asInstanceOf[Record]
+  }
+}
+

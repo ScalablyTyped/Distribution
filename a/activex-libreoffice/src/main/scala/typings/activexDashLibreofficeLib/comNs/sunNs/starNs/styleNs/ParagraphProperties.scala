@@ -194,3 +194,128 @@ trait ParagraphProperties extends js.Object {
   var TopBorderDistance: scala.Double
 }
 
+object ParagraphProperties {
+  @scala.inline
+  def apply(
+    BorderDistance: scala.Double,
+    BottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    BottomBorderDistance: scala.Double,
+    BreakType: BreakType,
+    DropCapCharStyleName: java.lang.String,
+    DropCapFormat: DropCapFormat,
+    DropCapWholeWord: scala.Boolean,
+    LeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    LeftBorderDistance: scala.Double,
+    ListId: java.lang.String,
+    NumberingIsNumber: scala.Boolean,
+    NumberingLevel: scala.Double,
+    NumberingRules: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexReplace,
+    NumberingStartValue: scala.Double,
+    NumberingStyleName: java.lang.String,
+    OutlineLevel: scala.Double,
+    PageDescName: java.lang.String,
+    PageNumberOffset: scala.Double,
+    PageStyleName: java.lang.String,
+    ParaAdjust: ParagraphAdjust,
+    ParaBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ParaBackGraphicFilter: java.lang.String,
+    ParaBackGraphicLocation: GraphicLocation,
+    ParaBackGraphicURL: java.lang.String,
+    ParaBackTransparent: scala.Boolean,
+    ParaBottomMargin: scala.Double,
+    ParaContextMargin: scala.Boolean,
+    ParaExpandSingleWord: scala.Boolean,
+    ParaFirstLineIndent: scala.Double,
+    ParaHyphenationMaxHyphens: scala.Double,
+    ParaHyphenationMaxLeadingChars: scala.Double,
+    ParaHyphenationMaxTrailingChars: scala.Double,
+    ParaInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ParaIsAutoFirstLineIndent: scala.Boolean,
+    ParaIsConnectBorder: scala.Boolean,
+    ParaIsHyphenation: scala.Boolean,
+    ParaIsNumberingRestart: scala.Boolean,
+    ParaKeepTogether: scala.Boolean,
+    ParaLastLineAdjust: scala.Double,
+    ParaLeftMargin: scala.Double,
+    ParaLineNumberCount: scala.Boolean,
+    ParaLineNumberStartValue: scala.Double,
+    ParaLineSpacing: LineSpacing,
+    ParaOrphans: scala.Double,
+    ParaRegisterModeActive: scala.Boolean,
+    ParaRightMargin: scala.Double,
+    ParaShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    ParaSplit: scala.Boolean,
+    ParaStyleName: java.lang.String,
+    ParaTabStops: activexDashInteropLib.SafeArray[TabStop],
+    ParaTopMargin: scala.Double,
+    ParaUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    ParaVertAlignment: scala.Double,
+    ParaWidows: scala.Double,
+    RightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    RightBorderDistance: scala.Double,
+    TopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    TopBorderDistance: scala.Double
+  ): ParagraphProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BorderDistance")(BorderDistance)
+    __obj.updateDynamic("BottomBorder")(BottomBorder)
+    __obj.updateDynamic("BottomBorderDistance")(BottomBorderDistance)
+    __obj.updateDynamic("BreakType")(BreakType)
+    __obj.updateDynamic("DropCapCharStyleName")(DropCapCharStyleName)
+    __obj.updateDynamic("DropCapFormat")(DropCapFormat)
+    __obj.updateDynamic("DropCapWholeWord")(DropCapWholeWord)
+    __obj.updateDynamic("LeftBorder")(LeftBorder)
+    __obj.updateDynamic("LeftBorderDistance")(LeftBorderDistance)
+    __obj.updateDynamic("ListId")(ListId)
+    __obj.updateDynamic("NumberingIsNumber")(NumberingIsNumber)
+    __obj.updateDynamic("NumberingLevel")(NumberingLevel)
+    __obj.updateDynamic("NumberingRules")(NumberingRules)
+    __obj.updateDynamic("NumberingStartValue")(NumberingStartValue)
+    __obj.updateDynamic("NumberingStyleName")(NumberingStyleName)
+    __obj.updateDynamic("OutlineLevel")(OutlineLevel)
+    __obj.updateDynamic("PageDescName")(PageDescName)
+    __obj.updateDynamic("PageNumberOffset")(PageNumberOffset)
+    __obj.updateDynamic("PageStyleName")(PageStyleName)
+    __obj.updateDynamic("ParaAdjust")(ParaAdjust)
+    __obj.updateDynamic("ParaBackColor")(ParaBackColor)
+    __obj.updateDynamic("ParaBackGraphicFilter")(ParaBackGraphicFilter)
+    __obj.updateDynamic("ParaBackGraphicLocation")(ParaBackGraphicLocation)
+    __obj.updateDynamic("ParaBackGraphicURL")(ParaBackGraphicURL)
+    __obj.updateDynamic("ParaBackTransparent")(ParaBackTransparent)
+    __obj.updateDynamic("ParaBottomMargin")(ParaBottomMargin)
+    __obj.updateDynamic("ParaContextMargin")(ParaContextMargin)
+    __obj.updateDynamic("ParaExpandSingleWord")(ParaExpandSingleWord)
+    __obj.updateDynamic("ParaFirstLineIndent")(ParaFirstLineIndent)
+    __obj.updateDynamic("ParaHyphenationMaxHyphens")(ParaHyphenationMaxHyphens)
+    __obj.updateDynamic("ParaHyphenationMaxLeadingChars")(ParaHyphenationMaxLeadingChars)
+    __obj.updateDynamic("ParaHyphenationMaxTrailingChars")(ParaHyphenationMaxTrailingChars)
+    __obj.updateDynamic("ParaInteropGrabBag")(ParaInteropGrabBag)
+    __obj.updateDynamic("ParaIsAutoFirstLineIndent")(ParaIsAutoFirstLineIndent)
+    __obj.updateDynamic("ParaIsConnectBorder")(ParaIsConnectBorder)
+    __obj.updateDynamic("ParaIsHyphenation")(ParaIsHyphenation)
+    __obj.updateDynamic("ParaIsNumberingRestart")(ParaIsNumberingRestart)
+    __obj.updateDynamic("ParaKeepTogether")(ParaKeepTogether)
+    __obj.updateDynamic("ParaLastLineAdjust")(ParaLastLineAdjust)
+    __obj.updateDynamic("ParaLeftMargin")(ParaLeftMargin)
+    __obj.updateDynamic("ParaLineNumberCount")(ParaLineNumberCount)
+    __obj.updateDynamic("ParaLineNumberStartValue")(ParaLineNumberStartValue)
+    __obj.updateDynamic("ParaLineSpacing")(ParaLineSpacing)
+    __obj.updateDynamic("ParaOrphans")(ParaOrphans)
+    __obj.updateDynamic("ParaRegisterModeActive")(ParaRegisterModeActive)
+    __obj.updateDynamic("ParaRightMargin")(ParaRightMargin)
+    __obj.updateDynamic("ParaShadowFormat")(ParaShadowFormat)
+    __obj.updateDynamic("ParaSplit")(ParaSplit)
+    __obj.updateDynamic("ParaStyleName")(ParaStyleName)
+    __obj.updateDynamic("ParaTabStops")(ParaTabStops)
+    __obj.updateDynamic("ParaTopMargin")(ParaTopMargin)
+    __obj.updateDynamic("ParaUserDefinedAttributes")(ParaUserDefinedAttributes)
+    __obj.updateDynamic("ParaVertAlignment")(ParaVertAlignment)
+    __obj.updateDynamic("ParaWidows")(ParaWidows)
+    __obj.updateDynamic("RightBorder")(RightBorder)
+    __obj.updateDynamic("RightBorderDistance")(RightBorderDistance)
+    __obj.updateDynamic("TopBorder")(TopBorder)
+    __obj.updateDynamic("TopBorderDistance")(TopBorderDistance)
+    __obj.asInstanceOf[ParagraphProperties]
+  }
+}
+

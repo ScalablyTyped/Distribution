@@ -37,3 +37,20 @@ trait RowColumnPivotHierarchyLoadOptions extends js.Object {
   var position: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RowColumnPivotHierarchyLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    position: js.UndefOr[scala.Boolean] = js.undefined
+  ): RowColumnPivotHierarchyLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[RowColumnPivotHierarchyLoadOptions]
+  }
+}
+

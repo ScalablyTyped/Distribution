@@ -10,3 +10,12 @@ trait IBitmapTypedValue extends js.Object {
   var value: js.Any
 }
 
+object IBitmapTypedValue {
+  @scala.inline
+  def apply(`type`: winrtLib.WindowsNs.FoundationNs.PropertyType, value: js.Any): IBitmapTypedValue = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IBitmapTypedValue]
+  }
+}
+

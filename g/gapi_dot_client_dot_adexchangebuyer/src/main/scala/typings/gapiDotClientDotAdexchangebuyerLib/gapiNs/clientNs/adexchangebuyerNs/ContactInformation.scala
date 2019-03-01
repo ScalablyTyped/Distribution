@@ -12,3 +12,13 @@ trait ContactInformation extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContactInformation {
+  @scala.inline
+  def apply(email: java.lang.String = null, name: java.lang.String = null): ContactInformation = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ContactInformation]
+  }
+}
+

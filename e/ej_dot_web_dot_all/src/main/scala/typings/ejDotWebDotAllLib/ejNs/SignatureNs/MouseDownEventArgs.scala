@@ -20,3 +20,20 @@ trait MouseDownEventArgs extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object MouseDownEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    `type`: java.lang.String = null,
+    value: js.Any = null
+  ): MouseDownEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[MouseDownEventArgs]
+  }
+}
+

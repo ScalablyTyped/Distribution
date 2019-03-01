@@ -16,3 +16,13 @@ trait AuditLogConfig extends js.Object {
   var logType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuditLogConfig {
+  @scala.inline
+  def apply(exemptedMembers: js.Array[java.lang.String] = null, logType: java.lang.String = null): AuditLogConfig = {
+    val __obj = js.Dynamic.literal()
+    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers)
+    if (logType != null) __obj.updateDynamic("logType")(logType)
+    __obj.asInstanceOf[AuditLogConfig]
+  }
+}
+

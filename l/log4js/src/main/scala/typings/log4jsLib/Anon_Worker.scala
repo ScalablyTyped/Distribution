@@ -10,3 +10,13 @@ trait Anon_Worker extends js.Object {
   var workerId: scala.Double
 }
 
+object Anon_Worker {
+  @scala.inline
+  def apply(worker: scala.Double, workerId: scala.Double): Anon_Worker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("worker")(worker)
+    __obj.updateDynamic("workerId")(workerId)
+    __obj.asInstanceOf[Anon_Worker]
+  }
+}
+

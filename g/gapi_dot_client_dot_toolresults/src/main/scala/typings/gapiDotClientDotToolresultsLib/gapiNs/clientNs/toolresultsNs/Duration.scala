@@ -19,3 +19,13 @@ trait Duration extends js.Object {
   var seconds: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Duration {
+  @scala.inline
+  def apply(nanos: scala.Int | scala.Double = null, seconds: java.lang.String = null): Duration = {
+    val __obj = js.Dynamic.literal()
+    if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
+    if (seconds != null) __obj.updateDynamic("seconds")(seconds)
+    __obj.asInstanceOf[Duration]
+  }
+}
+

@@ -12,3 +12,19 @@ trait MasteryListDto extends js.Object {
   var version: java.lang.String
 }
 
+object MasteryListDto {
+  @scala.inline
+  def apply(
+    data: js.Array[org.scalablytyped.runtime.StringDictionary[MasteryDto]],
+    tree: MasteryTreeDto,
+    `type`: java.lang.String,
+    version: java.lang.String
+  ): MasteryListDto = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("tree")(tree)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[MasteryListDto]
+  }
+}
+

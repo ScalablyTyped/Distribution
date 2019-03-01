@@ -36,3 +36,23 @@ trait IConfigurationFile extends js.Object {
   var rulesDirectory: js.Array[java.lang.String]
 }
 
+object IConfigurationFile {
+  @scala.inline
+  def apply(
+    `extends`: js.Array[java.lang.String],
+    jsRules: stdLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]],
+    rules: stdLib.Map[java.lang.String, stdLib.Partial[tslintLib.libLanguageRuleRuleMod.IOptions]],
+    rulesDirectory: js.Array[java.lang.String],
+    defaultSeverity: tslintLib.libLanguageRuleRuleMod.RuleSeverity = null,
+    linterOptions: stdLib.Partial[tslintLib.Anon_Exclude] = null
+  ): IConfigurationFile = {
+    val __obj = js.Dynamic.literal(`extends` = `extends`)
+    __obj.updateDynamic("jsRules")(jsRules)
+    __obj.updateDynamic("rules")(rules)
+    __obj.updateDynamic("rulesDirectory")(rulesDirectory)
+    if (defaultSeverity != null) __obj.updateDynamic("defaultSeverity")(defaultSeverity)
+    if (linterOptions != null) __obj.updateDynamic("linterOptions")(linterOptions)
+    __obj.asInstanceOf[IConfigurationFile]
+  }
+}
+

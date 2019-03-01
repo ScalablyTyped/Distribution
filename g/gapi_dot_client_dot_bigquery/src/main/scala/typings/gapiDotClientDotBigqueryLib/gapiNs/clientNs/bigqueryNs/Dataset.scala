@@ -51,3 +51,38 @@ trait Dataset extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Dataset {
+  @scala.inline
+  def apply(
+    access: js.Array[gapiDotClientDotBigqueryLib.Anon_Domain] = null,
+    creationTime: java.lang.String = null,
+    datasetReference: DatasetReference = null,
+    defaultTableExpirationMs: java.lang.String = null,
+    description: java.lang.String = null,
+    etag: java.lang.String = null,
+    friendlyName: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    lastModifiedTime: java.lang.String = null,
+    location: java.lang.String = null,
+    selfLink: java.lang.String = null
+  ): Dataset = {
+    val __obj = js.Dynamic.literal()
+    if (access != null) __obj.updateDynamic("access")(access)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (datasetReference != null) __obj.updateDynamic("datasetReference")(datasetReference)
+    if (defaultTableExpirationMs != null) __obj.updateDynamic("defaultTableExpirationMs")(defaultTableExpirationMs)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Dataset]
+  }
+}
+

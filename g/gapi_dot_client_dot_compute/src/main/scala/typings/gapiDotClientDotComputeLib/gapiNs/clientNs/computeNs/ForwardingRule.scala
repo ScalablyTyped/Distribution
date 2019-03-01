@@ -107,3 +107,46 @@ trait ForwardingRule extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ForwardingRule {
+  @scala.inline
+  def apply(
+    IPAddress: java.lang.String = null,
+    IPProtocol: java.lang.String = null,
+    backendService: java.lang.String = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    ipVersion: java.lang.String = null,
+    kind: java.lang.String = null,
+    loadBalancingScheme: java.lang.String = null,
+    name: java.lang.String = null,
+    network: java.lang.String = null,
+    portRange: java.lang.String = null,
+    ports: js.Array[java.lang.String] = null,
+    region: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    subnetwork: java.lang.String = null,
+    target: java.lang.String = null
+  ): ForwardingRule = {
+    val __obj = js.Dynamic.literal()
+    if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress)
+    if (IPProtocol != null) __obj.updateDynamic("IPProtocol")(IPProtocol)
+    if (backendService != null) __obj.updateDynamic("backendService")(backendService)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (ipVersion != null) __obj.updateDynamic("ipVersion")(ipVersion)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (loadBalancingScheme != null) __obj.updateDynamic("loadBalancingScheme")(loadBalancingScheme)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (portRange != null) __obj.updateDynamic("portRange")(portRange)
+    if (ports != null) __obj.updateDynamic("ports")(ports)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ForwardingRule]
+  }
+}
+

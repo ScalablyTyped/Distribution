@@ -14,3 +14,24 @@ trait ActionSheetIOSOptions extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActionSheetIOSOptions {
+  @scala.inline
+  def apply(
+    options: js.Array[java.lang.String],
+    cancelButtonIndex: scala.Int | scala.Double = null,
+    destructiveButtonIndex: scala.Int | scala.Double = null,
+    message: java.lang.String = null,
+    tintColor: java.lang.String = null,
+    title: java.lang.String = null
+  ): ActionSheetIOSOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    if (cancelButtonIndex != null) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.asInstanceOf[js.Any])
+    if (destructiveButtonIndex != null) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ActionSheetIOSOptions]
+  }
+}
+

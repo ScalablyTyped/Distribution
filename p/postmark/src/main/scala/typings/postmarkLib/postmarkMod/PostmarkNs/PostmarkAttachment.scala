@@ -11,3 +11,14 @@ trait PostmarkAttachment extends js.Object {
   var Name: java.lang.String
 }
 
+object PostmarkAttachment {
+  @scala.inline
+  def apply(Content: java.lang.String, ContentType: java.lang.String, Name: java.lang.String): PostmarkAttachment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Content")(Content)
+    __obj.updateDynamic("ContentType")(ContentType)
+    __obj.updateDynamic("Name")(Name)
+    __obj.asInstanceOf[PostmarkAttachment]
+  }
+}
+

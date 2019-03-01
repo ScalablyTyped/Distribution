@@ -15,3 +15,20 @@ trait KnockoutTasks extends js.Object {
   def scheduler(callback: js.Function): js.Any
 }
 
+object KnockoutTasks {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[scala.Double, scala.Unit],
+    runEarly: js.Function0[scala.Unit],
+    schedule: js.Function1[js.Function, scala.Double],
+    scheduler: js.Function1[js.Function, js.Any]
+  ): KnockoutTasks = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("runEarly")(runEarly)
+    __obj.updateDynamic("schedule")(schedule)
+    __obj.updateDynamic("scheduler")(scheduler)
+    __obj.asInstanceOf[KnockoutTasks]
+  }
+}
+

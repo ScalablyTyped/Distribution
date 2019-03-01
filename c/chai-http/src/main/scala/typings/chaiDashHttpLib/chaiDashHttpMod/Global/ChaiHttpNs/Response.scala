@@ -14,3 +14,23 @@ trait Response extends js.Object {
   def setEncoding(encoding: java.lang.String): scala.Unit
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    body: js.Any,
+    on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit],
+    setEncoding: js.Function1[java.lang.String, scala.Unit],
+    status: scala.Double,
+    text: java.lang.String,
+    `type`: java.lang.String
+  ): Response = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("setEncoding")(setEncoding)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Response]
+  }
+}
+

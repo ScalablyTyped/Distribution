@@ -20,3 +20,20 @@ trait XRemoteContentProviderDoneListener
   def doneWithRemoteContentProviders(Acceptor: XRemoteContentProviderAcceptor): scala.Unit
 }
 
+object XRemoteContentProviderDoneListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    doneWithRemoteContentProviders: js.Function1[XRemoteContentProviderAcceptor, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XRemoteContentProviderDoneListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("doneWithRemoteContentProviders")(doneWithRemoteContentProviders)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XRemoteContentProviderDoneListener]
+  }
+}
+

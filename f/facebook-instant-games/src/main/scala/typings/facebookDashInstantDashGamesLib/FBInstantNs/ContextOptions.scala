@@ -20,3 +20,18 @@ trait ContextOptions extends js.Object {
   var minSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ContextOptions {
+  @scala.inline
+  def apply(
+    filters: js.Array[ContextFilter] = null,
+    maxSize: scala.Int | scala.Double = null,
+    minSize: scala.Int | scala.Double = null
+  ): ContextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContextOptions]
+  }
+}
+

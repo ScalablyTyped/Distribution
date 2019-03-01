@@ -110,3 +110,52 @@ trait ConfigurationOptions extends js.Object {
   var updateFiles: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConfigurationOptions {
+  @scala.inline
+  def apply(
+    api: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    autoReload: js.UndefOr[scala.Boolean] = js.undefined,
+    cookie: java.lang.String = null,
+    defaultLocale: java.lang.String = null,
+    directory: java.lang.String = null,
+    directoryPermissions: java.lang.String = null,
+    extension: java.lang.String = null,
+    fallbacks: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    indent: java.lang.String = null,
+    locales: js.Array[java.lang.String] = null,
+    logDebugFn: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    logErrorFn: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    logWarnFn: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    objectNotation: js.UndefOr[scala.Boolean] = js.undefined,
+    prefix: java.lang.String = null,
+    preserveLegacyCase: js.UndefOr[scala.Boolean] = js.undefined,
+    queryParameter: java.lang.String = null,
+    register: js.Any = null,
+    syncFiles: js.UndefOr[scala.Boolean] = js.undefined,
+    updateFiles: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConfigurationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (api != null) __obj.updateDynamic("api")(api)
+    if (!js.isUndefined(autoReload)) __obj.updateDynamic("autoReload")(autoReload)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
+    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale)
+    if (directory != null) __obj.updateDynamic("directory")(directory)
+    if (directoryPermissions != null) __obj.updateDynamic("directoryPermissions")(directoryPermissions)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fallbacks != null) __obj.updateDynamic("fallbacks")(fallbacks)
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (locales != null) __obj.updateDynamic("locales")(locales)
+    if (logDebugFn != null) __obj.updateDynamic("logDebugFn")(logDebugFn)
+    if (logErrorFn != null) __obj.updateDynamic("logErrorFn")(logErrorFn)
+    if (logWarnFn != null) __obj.updateDynamic("logWarnFn")(logWarnFn)
+    if (!js.isUndefined(objectNotation)) __obj.updateDynamic("objectNotation")(objectNotation)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(preserveLegacyCase)) __obj.updateDynamic("preserveLegacyCase")(preserveLegacyCase)
+    if (queryParameter != null) __obj.updateDynamic("queryParameter")(queryParameter)
+    if (register != null) __obj.updateDynamic("register")(register)
+    if (!js.isUndefined(syncFiles)) __obj.updateDynamic("syncFiles")(syncFiles)
+    if (!js.isUndefined(updateFiles)) __obj.updateDynamic("updateFiles")(updateFiles)
+    __obj.asInstanceOf[ConfigurationOptions]
+  }
+}
+

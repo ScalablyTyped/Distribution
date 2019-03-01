@@ -19,3 +19,24 @@ trait DocumentSearchResponse[V] extends js.Object {
   var total_rows: scala.Double
 }
 
+object DocumentSearchResponse {
+  @scala.inline
+  def apply[V](
+    bookmark: java.lang.String,
+    rows: js.Array[nanoLib.Anon_Doc[V]],
+    total_rows: scala.Double,
+    counts: js.Object = null,
+    highlights: js.Object = null,
+    ranges: js.Object = null
+  ): DocumentSearchResponse[V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bookmark")(bookmark)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("total_rows")(total_rows)
+    if (counts != null) __obj.updateDynamic("counts")(counts)
+    if (highlights != null) __obj.updateDynamic("highlights")(highlights)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    __obj.asInstanceOf[DocumentSearchResponse[V]]
+  }
+}
+

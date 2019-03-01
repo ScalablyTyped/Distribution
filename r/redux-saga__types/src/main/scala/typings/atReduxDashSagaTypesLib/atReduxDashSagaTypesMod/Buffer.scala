@@ -25,3 +25,20 @@ trait Buffer[T] extends js.Object {
   def take(): js.UndefOr[T]
 }
 
+object Buffer {
+  @scala.inline
+  def apply[T](
+    flush: js.Function0[js.Array[T]],
+    isEmpty: js.Function0[scala.Boolean],
+    put: js.Function1[T, scala.Unit],
+    take: js.Function0[js.UndefOr[T]]
+  ): Buffer[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.updateDynamic("put")(put)
+    __obj.updateDynamic("take")(take)
+    __obj.asInstanceOf[Buffer[T]]
+  }
+}
+

@@ -67,3 +67,52 @@ trait Anon_AccesstokenActionvalue extends js.Object {
   var waitToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccesstokenActionvalue {
+  @scala.inline
+  def apply(
+    debuggeeId: java.lang.String,
+    `$.xgafv`: java.lang.String = null,
+    access_token: java.lang.String = null,
+    `action.value`: java.lang.String = null,
+    alt: java.lang.String = null,
+    bearer_token: java.lang.String = null,
+    callback: java.lang.String = null,
+    clientVersion: java.lang.String = null,
+    fields: java.lang.String = null,
+    includeAllUsers: js.UndefOr[scala.Boolean] = js.undefined,
+    includeInactive: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    pp: js.UndefOr[scala.Boolean] = js.undefined,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    stripResults: js.UndefOr[scala.Boolean] = js.undefined,
+    uploadType: java.lang.String = null,
+    upload_protocol: java.lang.String = null,
+    waitToken: java.lang.String = null
+  ): Anon_AccesstokenActionvalue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("debuggeeId")(debuggeeId)
+    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (`action.value` != null) __obj.updateDynamic("action.value")(`action.value`)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (bearer_token != null) __obj.updateDynamic("bearer_token")(bearer_token)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (clientVersion != null) __obj.updateDynamic("clientVersion")(clientVersion)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(includeAllUsers)) __obj.updateDynamic("includeAllUsers")(includeAllUsers)
+    if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (!js.isUndefined(stripResults)) __obj.updateDynamic("stripResults")(stripResults)
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType)
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol)
+    if (waitToken != null) __obj.updateDynamic("waitToken")(waitToken)
+    __obj.asInstanceOf[Anon_AccesstokenActionvalue]
+  }
+}
+

@@ -11,3 +11,17 @@ trait Anon_New extends js.Object {
   var upsert: mongooseLib.mongooseLibNumbers.`true`
 }
 
+object Anon_New {
+  @scala.inline
+  def apply(
+    `new`: mongooseLib.mongooseLibNumbers.`true`,
+    rawResult: mongooseLib.mongooseLibNumbers.`true`,
+    upsert: mongooseLib.mongooseLibNumbers.`true`
+  ): Anon_New = {
+    val __obj = js.Dynamic.literal(`new` = `new`)
+    __obj.updateDynamic("rawResult")(rawResult)
+    __obj.updateDynamic("upsert")(upsert)
+    __obj.asInstanceOf[Anon_New]
+  }
+}
+

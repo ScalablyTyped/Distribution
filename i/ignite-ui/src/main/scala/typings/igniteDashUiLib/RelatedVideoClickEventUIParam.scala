@@ -16,3 +16,13 @@ trait RelatedVideoClickEventUIParam extends js.Object {
   var relatedVideoElement: js.UndefOr[js.Any] = js.undefined
 }
 
+object RelatedVideoClickEventUIParam {
+  @scala.inline
+  def apply(relatedVideo: js.Any = null, relatedVideoElement: js.Any = null): RelatedVideoClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (relatedVideo != null) __obj.updateDynamic("relatedVideo")(relatedVideo)
+    if (relatedVideoElement != null) __obj.updateDynamic("relatedVideoElement")(relatedVideoElement)
+    __obj.asInstanceOf[RelatedVideoClickEventUIParam]
+  }
+}
+

@@ -39,3 +39,24 @@ trait ScaleImageOptions extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ScaleImageOptions {
+  @scala.inline
+  def apply(
+    maxSize: scala.Double,
+    customResizer: CustomResizerCallBack = null,
+    includeExif: js.UndefOr[scala.Boolean] = js.undefined,
+    orient: js.UndefOr[scala.Boolean] = js.undefined,
+    quality: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): ScaleImageOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxSize")(maxSize)
+    if (customResizer != null) __obj.updateDynamic("customResizer")(customResizer)
+    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif)
+    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ScaleImageOptions]
+  }
+}
+

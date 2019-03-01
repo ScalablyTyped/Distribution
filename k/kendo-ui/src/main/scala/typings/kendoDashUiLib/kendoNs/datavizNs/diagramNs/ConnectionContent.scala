@@ -16,3 +16,28 @@ trait ConnectionContent extends js.Object {
   var visual: js.UndefOr[js.Function] = js.undefined
 }
 
+object ConnectionContent {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    template: java.lang.String | js.Function = null,
+    text: java.lang.String = null,
+    visual: js.Function = null
+  ): ConnectionContent = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (visual != null) __obj.updateDynamic("visual")(visual)
+    __obj.asInstanceOf[ConnectionContent]
+  }
+}
+

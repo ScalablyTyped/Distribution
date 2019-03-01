@@ -11,3 +11,14 @@ trait Anon_TypeArguments extends js.Object {
   ] = js.undefined
 }
 
+object Anon_TypeArguments {
+  @scala.inline
+  def apply(
+    typeArguments: typescriptLib.typescriptMod.tsNs.NodeArray[typescriptLib.typescriptMod.tsNs.TypeNode] = null
+  ): Anon_TypeArguments = {
+    val __obj = js.Dynamic.literal()
+    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments)
+    __obj.asInstanceOf[Anon_TypeArguments]
+  }
+}
+

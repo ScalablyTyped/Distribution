@@ -27,3 +27,18 @@ trait IFieldValue extends js.Object {
   var qText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IFieldValue {
+  @scala.inline
+  def apply(
+    qIsNumeric: js.UndefOr[scala.Boolean] = js.undefined,
+    qNumber: scala.Int | scala.Double = null,
+    qText: java.lang.String = null
+  ): IFieldValue = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(qIsNumeric)) __obj.updateDynamic("qIsNumeric")(qIsNumeric)
+    if (qNumber != null) __obj.updateDynamic("qNumber")(qNumber.asInstanceOf[js.Any])
+    if (qText != null) __obj.updateDynamic("qText")(qText)
+    __obj.asInstanceOf[IFieldValue]
+  }
+}
+

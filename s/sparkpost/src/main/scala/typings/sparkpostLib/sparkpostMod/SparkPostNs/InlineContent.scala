@@ -26,3 +26,30 @@ trait InlineContent extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InlineContent {
+  @scala.inline
+  def apply(
+    attachments: js.Array[Attachment] = null,
+    from: java.lang.String | sparkpostLib.Anon_Email = null,
+    headers: js.Any = null,
+    html: java.lang.String = null,
+    inline_images: js.Array[Attachment] = null,
+    push: PushData = null,
+    reply_to: java.lang.String = null,
+    subject: java.lang.String = null,
+    text: java.lang.String = null
+  ): InlineContent = {
+    val __obj = js.Dynamic.literal()
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (inline_images != null) __obj.updateDynamic("inline_images")(inline_images)
+    if (push != null) __obj.updateDynamic("push")(push)
+    if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[InlineContent]
+  }
+}
+

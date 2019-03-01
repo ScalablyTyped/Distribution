@@ -10,3 +10,16 @@ trait AppProps[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends js.O
   var router: nextDashServerLib.routerMod.RouterProps[Q]
 }
 
+object AppProps {
+  @scala.inline
+  def apply[Q /* <: nextDashServerLib.routerMod.DefaultQuery */](
+    Component: nextLib.nextMod.nextNs.NextComponentType[_, _, nextLib.nextMod.nextNs.NextContext[Q]],
+    router: nextDashServerLib.routerMod.RouterProps[Q]
+  ): AppProps[Q] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
+    __obj.updateDynamic("router")(router)
+    __obj.asInstanceOf[AppProps[Q]]
+  }
+}
+

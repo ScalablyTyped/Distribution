@@ -15,3 +15,14 @@ trait GooglePrivacyDlpV2beta1SummaryResult extends js.Object {
   var details: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1SummaryResult {
+  @scala.inline
+  def apply(code: java.lang.String = null, count: java.lang.String = null, details: java.lang.String = null): GooglePrivacyDlpV2beta1SummaryResult = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (details != null) __obj.updateDynamic("details")(details)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1SummaryResult]
+  }
+}
+

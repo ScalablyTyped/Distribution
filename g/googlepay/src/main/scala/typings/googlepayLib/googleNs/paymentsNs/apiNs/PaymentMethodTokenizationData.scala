@@ -10,3 +10,12 @@ trait PaymentMethodTokenizationData extends js.Object {
   var `type`: TokenizationType
 }
 
+object PaymentMethodTokenizationData {
+  @scala.inline
+  def apply(`type`: TokenizationType, token: java.lang.String = null): PaymentMethodTokenizationData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[PaymentMethodTokenizationData]
+  }
+}
+

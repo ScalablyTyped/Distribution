@@ -34,3 +34,42 @@ trait IGridChartOptions extends IChartOptions {
   var ykeys: js.Array[java.lang.String]
 }
 
+object IGridChartOptions {
+  @scala.inline
+  def apply(
+    data: js.Array[_],
+    element: js.Any,
+    labels: js.Array[java.lang.String],
+    xkey: java.lang.String,
+    ykeys: js.Array[java.lang.String],
+    axes: js.UndefOr[scala.Boolean] = js.undefined,
+    grid: js.UndefOr[scala.Boolean] = js.undefined,
+    gridLineColor: java.lang.String = null,
+    gridStrokeWidth: scala.Int | scala.Double = null,
+    gridTextColor: java.lang.String = null,
+    gridTextFamily: java.lang.String = null,
+    gridTextSize: scala.Int | scala.Double = null,
+    gridTextWeight: java.lang.String = null,
+    hideHover: scala.Boolean | AutoAlways = null,
+    resize: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGridChartOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("labels")(labels)
+    __obj.updateDynamic("xkey")(xkey)
+    __obj.updateDynamic("ykeys")(ykeys)
+    if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
+    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)
+    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
+    if (gridStrokeWidth != null) __obj.updateDynamic("gridStrokeWidth")(gridStrokeWidth.asInstanceOf[js.Any])
+    if (gridTextColor != null) __obj.updateDynamic("gridTextColor")(gridTextColor)
+    if (gridTextFamily != null) __obj.updateDynamic("gridTextFamily")(gridTextFamily)
+    if (gridTextSize != null) __obj.updateDynamic("gridTextSize")(gridTextSize.asInstanceOf[js.Any])
+    if (gridTextWeight != null) __obj.updateDynamic("gridTextWeight")(gridTextWeight)
+    if (hideHover != null) __obj.updateDynamic("hideHover")(hideHover.asInstanceOf[js.Any])
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    __obj.asInstanceOf[IGridChartOptions]
+  }
+}
+

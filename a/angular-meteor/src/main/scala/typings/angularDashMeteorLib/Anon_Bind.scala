@@ -13,3 +13,12 @@ trait Anon_Bind extends js.Object {
   def bind(scope: angularDashMeteorLib.angularMod.meteorNs.IScope, model: java.lang.String): scala.Unit
 }
 
+object Anon_Bind {
+  @scala.inline
+  def apply(bind: js.Function2[angularDashMeteorLib.angularMod.meteorNs.IScope, java.lang.String, scala.Unit]): Anon_Bind = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bind")(bind)
+    __obj.asInstanceOf[Anon_Bind]
+  }
+}
+

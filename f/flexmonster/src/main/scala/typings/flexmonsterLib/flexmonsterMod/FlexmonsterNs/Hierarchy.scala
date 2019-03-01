@@ -14,3 +14,24 @@ trait Hierarchy extends js.Object {
   var uniqueName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Hierarchy {
+  @scala.inline
+  def apply(
+    caption: java.lang.String = null,
+    dimensionName: java.lang.String = null,
+    filter: flexmonsterLib.Anon_MeasureMembers = null,
+    sortName: java.lang.String = null,
+    sortOrder: js.Array[java.lang.String] = null,
+    uniqueName: java.lang.String = null
+  ): Hierarchy = {
+    val __obj = js.Dynamic.literal()
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (dimensionName != null) __obj.updateDynamic("dimensionName")(dimensionName)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (sortName != null) __obj.updateDynamic("sortName")(sortName)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName)
+    __obj.asInstanceOf[Hierarchy]
+  }
+}
+

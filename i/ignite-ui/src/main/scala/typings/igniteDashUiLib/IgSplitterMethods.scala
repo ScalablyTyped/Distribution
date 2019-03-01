@@ -67,3 +67,36 @@ trait IgSplitterMethods extends js.Object {
   def widget(): js.Object
 }
 
+object IgSplitterMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    collapseAt: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    expandAt: js.Function1[js.Object, scala.Unit],
+    firstPanel: js.Function0[js.Object],
+    refreshLayout: js.Function0[scala.Unit],
+    secondPanel: js.Function0[js.Object],
+    setFirstPanelSize: js.Function1[js.Object, scala.Unit],
+    setSecondPanelSize: js.Function1[js.Object, scala.Unit],
+    widget: js.Function0[js.Object]
+  ): IgSplitterMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("collapseAt")(collapseAt)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("expandAt")(expandAt)
+    __obj.updateDynamic("firstPanel")(firstPanel)
+    __obj.updateDynamic("refreshLayout")(refreshLayout)
+    __obj.updateDynamic("secondPanel")(secondPanel)
+    __obj.updateDynamic("setFirstPanelSize")(setFirstPanelSize)
+    __obj.updateDynamic("setSecondPanelSize")(setSecondPanelSize)
+    __obj.updateDynamic("widget")(widget)
+    __obj.asInstanceOf[IgSplitterMethods]
+  }
+}
+

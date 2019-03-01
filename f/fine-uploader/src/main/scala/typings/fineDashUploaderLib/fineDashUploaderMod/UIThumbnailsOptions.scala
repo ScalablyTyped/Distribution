@@ -39,3 +39,20 @@ trait UIThumbnailsOptions extends js.Object {
   var timeBetweenThumbs: js.UndefOr[scala.Double] = js.undefined
 }
 
+object UIThumbnailsOptions {
+  @scala.inline
+  def apply(
+    customResizer: fineDashUploaderLib.libCoreMod.CustomResizerCallBack = null,
+    maxCount: scala.Int | scala.Double = null,
+    placeholders: UIThumbnailsPlaceholderOptions = null,
+    timeBetweenThumbs: scala.Int | scala.Double = null
+  ): UIThumbnailsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customResizer != null) __obj.updateDynamic("customResizer")(customResizer)
+    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
+    if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders)
+    if (timeBetweenThumbs != null) __obj.updateDynamic("timeBetweenThumbs")(timeBetweenThumbs.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UIThumbnailsOptions]
+  }
+}
+

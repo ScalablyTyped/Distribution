@@ -51,3 +51,24 @@ trait TableRowLoadOptions extends js.Object {
   var rowIndex: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableRowLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    cellCount: js.UndefOr[scala.Boolean] = js.undefined,
+    cells: TableCellCollectionLoadOptions = null,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    parentTable: TableLoadOptions = null,
+    rowIndex: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableRowLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount)
+    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex)
+    __obj.asInstanceOf[TableRowLoadOptions]
+  }
+}
+

@@ -12,3 +12,20 @@ trait OverviewMapControlOptions extends js.Object {
   var size: js.UndefOr[Size] = js.undefined
 }
 
+object OverviewMapControlOptions {
+  @scala.inline
+  def apply(
+    anchor: js.UndefOr[ControlAnchor] = js.undefined,
+    isOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    offset: Size = null,
+    size: Size = null
+  ): OverviewMapControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[OverviewMapControlOptions]
+  }
+}
+

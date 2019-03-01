@@ -31,3 +31,26 @@ trait WriteBLECharacteristicValue
   def success_MWriteBLECharacteristicValue(res: ErrMsgResponse): scala.Unit
 }
 
+object WriteBLECharacteristicValue {
+  @scala.inline
+  def apply(
+    characteristicId: java.lang.String,
+    deviceId: java.lang.String,
+    serviceId: java.lang.String,
+    success: js.Function1[ErrMsgResponse, scala.Unit],
+    value: stdLib.ArrayBuffer,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null
+  ): WriteBLECharacteristicValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("characteristicId")(characteristicId)
+    __obj.updateDynamic("deviceId")(deviceId)
+    __obj.updateDynamic("serviceId")(serviceId)
+    __obj.updateDynamic("success")(success)
+    __obj.updateDynamic("value")(value)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[WriteBLECharacteristicValue]
+  }
+}
+

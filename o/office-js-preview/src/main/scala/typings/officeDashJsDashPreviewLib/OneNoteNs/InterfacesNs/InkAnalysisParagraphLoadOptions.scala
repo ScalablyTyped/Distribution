@@ -37,3 +37,20 @@ trait InkAnalysisParagraphLoadOptions extends js.Object {
   var lines: js.UndefOr[InkAnalysisLineCollectionLoadOptions] = js.undefined
 }
 
+object InkAnalysisParagraphLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    inkAnalysis: InkAnalysisLoadOptions = null,
+    lines: InkAnalysisLineCollectionLoadOptions = null
+  ): InkAnalysisParagraphLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (inkAnalysis != null) __obj.updateDynamic("inkAnalysis")(inkAnalysis)
+    if (lines != null) __obj.updateDynamic("lines")(lines)
+    __obj.asInstanceOf[InkAnalysisParagraphLoadOptions]
+  }
+}
+

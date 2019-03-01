@@ -26,3 +26,20 @@ trait WorkerHealthReport extends js.Object {
   var vmStartupTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WorkerHealthReport {
+  @scala.inline
+  def apply(
+    pods: js.Array[stdLib.Record[java.lang.String, _]] = null,
+    reportInterval: java.lang.String = null,
+    vmIsHealthy: js.UndefOr[scala.Boolean] = js.undefined,
+    vmStartupTime: java.lang.String = null
+  ): WorkerHealthReport = {
+    val __obj = js.Dynamic.literal()
+    if (pods != null) __obj.updateDynamic("pods")(pods)
+    if (reportInterval != null) __obj.updateDynamic("reportInterval")(reportInterval)
+    if (!js.isUndefined(vmIsHealthy)) __obj.updateDynamic("vmIsHealthy")(vmIsHealthy)
+    if (vmStartupTime != null) __obj.updateDynamic("vmStartupTime")(vmStartupTime)
+    __obj.asInstanceOf[WorkerHealthReport]
+  }
+}
+

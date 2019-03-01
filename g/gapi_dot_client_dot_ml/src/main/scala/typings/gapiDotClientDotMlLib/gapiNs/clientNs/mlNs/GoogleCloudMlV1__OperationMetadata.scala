@@ -22,3 +22,26 @@ trait GoogleCloudMlV1__OperationMetadata extends js.Object {
   var version: js.UndefOr[GoogleCloudMlV1__Version] = js.undefined
 }
 
+object GoogleCloudMlV1__OperationMetadata {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    endTime: java.lang.String = null,
+    isCancellationRequested: js.UndefOr[scala.Boolean] = js.undefined,
+    modelName: java.lang.String = null,
+    operationType: java.lang.String = null,
+    startTime: java.lang.String = null,
+    version: GoogleCloudMlV1__Version = null
+  ): GoogleCloudMlV1__OperationMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (!js.isUndefined(isCancellationRequested)) __obj.updateDynamic("isCancellationRequested")(isCancellationRequested)
+    if (modelName != null) __obj.updateDynamic("modelName")(modelName)
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[GoogleCloudMlV1__OperationMetadata]
+  }
+}
+

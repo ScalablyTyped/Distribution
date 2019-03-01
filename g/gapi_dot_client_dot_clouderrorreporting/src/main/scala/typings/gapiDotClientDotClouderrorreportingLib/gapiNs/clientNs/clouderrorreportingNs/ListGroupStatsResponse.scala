@@ -23,3 +23,18 @@ trait ListGroupStatsResponse extends js.Object {
   var timeRangeBegin: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListGroupStatsResponse {
+  @scala.inline
+  def apply(
+    errorGroupStats: js.Array[ErrorGroupStats] = null,
+    nextPageToken: java.lang.String = null,
+    timeRangeBegin: java.lang.String = null
+  ): ListGroupStatsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (errorGroupStats != null) __obj.updateDynamic("errorGroupStats")(errorGroupStats)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (timeRangeBegin != null) __obj.updateDynamic("timeRangeBegin")(timeRangeBegin)
+    __obj.asInstanceOf[ListGroupStatsResponse]
+  }
+}
+

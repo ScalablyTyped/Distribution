@@ -20,3 +20,22 @@ trait XKeysSupplier
   def getKeys(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
 }
 
+object XKeysSupplier {
+  @scala.inline
+  def apply(
+    Keys: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    acquire: js.Function0[scala.Unit],
+    getKeys: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XKeysSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Keys")(Keys)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getKeys")(getKeys)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XKeysSupplier]
+  }
+}
+

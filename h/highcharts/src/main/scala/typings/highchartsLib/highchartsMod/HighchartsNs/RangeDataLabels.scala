@@ -175,3 +175,64 @@ trait RangeDataLabels extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RangeDataLabels {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    allowOverlap: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundColor: java.lang.String | Gradient = null,
+    borderColor: java.lang.String | Gradient = null,
+    borderRadius: scala.Int | scala.Double = null,
+    borderWidth: scala.Int | scala.Double = null,
+    color: java.lang.String | Gradient = null,
+    crop: js.UndefOr[scala.Boolean] = js.undefined,
+    defer: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    formatter: js.Function0[java.lang.String] = null,
+    inside: js.UndefOr[scala.Boolean] = js.undefined,
+    overflow: java.lang.String = null,
+    padding: scala.Int | scala.Double = null,
+    rotation: scala.Int | scala.Double = null,
+    shadow: scala.Boolean | Shadow = null,
+    shape: java.lang.String = null,
+    style: CSSObject = null,
+    useHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlign: java.lang.String = null,
+    xHigh: scala.Int | scala.Double = null,
+    xLow: scala.Int | scala.Double = null,
+    yHigh: scala.Int | scala.Double = null,
+    yLow: scala.Int | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): RangeDataLabels = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (!js.isUndefined(crop)) __obj.updateDynamic("crop")(crop)
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (!js.isUndefined(inside)) __obj.updateDynamic("inside")(inside)
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (xHigh != null) __obj.updateDynamic("xHigh")(xHigh.asInstanceOf[js.Any])
+    if (xLow != null) __obj.updateDynamic("xLow")(xLow.asInstanceOf[js.Any])
+    if (yHigh != null) __obj.updateDynamic("yHigh")(yHigh.asInstanceOf[js.Any])
+    if (yLow != null) __obj.updateDynamic("yLow")(yLow.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RangeDataLabels]
+  }
+}
+

@@ -12,3 +12,20 @@ trait NavigateOptions extends js.Object {
   var toggleMode: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NavigateOptions {
+  @scala.inline
+  def apply(
+    focusClass: java.lang.String = null,
+    position: js.Array[scala.Double] = null,
+    rowLooping: js.UndefOr[scala.Boolean] = js.undefined,
+    toggleMode: js.UndefOr[scala.Boolean] = js.undefined
+  ): NavigateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (focusClass != null) __obj.updateDynamic("focusClass")(focusClass)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(rowLooping)) __obj.updateDynamic("rowLooping")(rowLooping)
+    if (!js.isUndefined(toggleMode)) __obj.updateDynamic("toggleMode")(toggleMode)
+    __obj.asInstanceOf[NavigateOptions]
+  }
+}
+

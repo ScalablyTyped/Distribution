@@ -16,3 +16,12 @@ trait DaemonSetUpdateStrategy extends js.Object {
   val `type`: java.lang.String
 }
 
+object DaemonSetUpdateStrategy {
+  @scala.inline
+  def apply(rollingUpdate: RollingUpdateDaemonSet, `type`: java.lang.String): DaemonSetUpdateStrategy = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("rollingUpdate")(rollingUpdate)
+    __obj.asInstanceOf[DaemonSetUpdateStrategy]
+  }
+}
+

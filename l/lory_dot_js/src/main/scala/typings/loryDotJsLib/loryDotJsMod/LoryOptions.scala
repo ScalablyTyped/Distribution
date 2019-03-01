@@ -95,3 +95,50 @@ trait LoryOptions extends js.Object {
   var snapBackSpeed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LoryOptions {
+  @scala.inline
+  def apply(
+    afterInit: js.Function0[_] = null,
+    beforeInit: js.Function0[_] = null,
+    beforeNext: js.Function0[_] = null,
+    beforePrev: js.Function0[_] = null,
+    beforeResize: js.Function0[_] = null,
+    beforeTouch: js.Function0[_] = null,
+    classNameFrame: java.lang.String = null,
+    classNameNextCtrl: java.lang.String = null,
+    classNamePrevCtrl: java.lang.String = null,
+    classNameSlideContainer: java.lang.String = null,
+    ease: java.lang.String = null,
+    enableMouseEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    infinite: scala.Boolean | scala.Double = null,
+    initialIndex: scala.Int | scala.Double = null,
+    rewind: js.UndefOr[scala.Boolean] = js.undefined,
+    rewindSpeed: scala.Int | scala.Double = null,
+    slideSpeed: scala.Int | scala.Double = null,
+    slidesToScroll: scala.Int | scala.Double = null,
+    snapBackSpeed: scala.Int | scala.Double = null
+  ): LoryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
+    if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit)
+    if (beforeNext != null) __obj.updateDynamic("beforeNext")(beforeNext)
+    if (beforePrev != null) __obj.updateDynamic("beforePrev")(beforePrev)
+    if (beforeResize != null) __obj.updateDynamic("beforeResize")(beforeResize)
+    if (beforeTouch != null) __obj.updateDynamic("beforeTouch")(beforeTouch)
+    if (classNameFrame != null) __obj.updateDynamic("classNameFrame")(classNameFrame)
+    if (classNameNextCtrl != null) __obj.updateDynamic("classNameNextCtrl")(classNameNextCtrl)
+    if (classNamePrevCtrl != null) __obj.updateDynamic("classNamePrevCtrl")(classNamePrevCtrl)
+    if (classNameSlideContainer != null) __obj.updateDynamic("classNameSlideContainer")(classNameSlideContainer)
+    if (ease != null) __obj.updateDynamic("ease")(ease)
+    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents)
+    if (infinite != null) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
+    if (initialIndex != null) __obj.updateDynamic("initialIndex")(initialIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind)
+    if (rewindSpeed != null) __obj.updateDynamic("rewindSpeed")(rewindSpeed.asInstanceOf[js.Any])
+    if (slideSpeed != null) __obj.updateDynamic("slideSpeed")(slideSpeed.asInstanceOf[js.Any])
+    if (slidesToScroll != null) __obj.updateDynamic("slidesToScroll")(slidesToScroll.asInstanceOf[js.Any])
+    if (snapBackSpeed != null) __obj.updateDynamic("snapBackSpeed")(snapBackSpeed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoryOptions]
+  }
+}
+

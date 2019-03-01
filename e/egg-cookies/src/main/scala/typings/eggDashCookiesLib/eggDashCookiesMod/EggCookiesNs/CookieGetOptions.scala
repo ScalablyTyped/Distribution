@@ -16,3 +16,16 @@ trait CookieGetOptions extends js.Object {
   var signed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CookieGetOptions {
+  @scala.inline
+  def apply(
+    encrypt: js.UndefOr[scala.Boolean] = js.undefined,
+    signed: js.UndefOr[scala.Boolean] = js.undefined
+  ): CookieGetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(encrypt)) __obj.updateDynamic("encrypt")(encrypt)
+    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed)
+    __obj.asInstanceOf[CookieGetOptions]
+  }
+}
+

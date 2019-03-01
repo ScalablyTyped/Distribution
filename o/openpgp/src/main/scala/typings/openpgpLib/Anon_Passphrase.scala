@@ -10,3 +10,16 @@ trait Anon_Passphrase extends js.Object {
   var privateKey: openpgpLib.openpgpMod.keyNs.Key
 }
 
+object Anon_Passphrase {
+  @scala.inline
+  def apply(
+    privateKey: openpgpLib.openpgpMod.keyNs.Key,
+    passphrase: java.lang.String | js.Array[java.lang.String] = null
+  ): Anon_Passphrase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("privateKey")(privateKey)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Passphrase]
+  }
+}
+

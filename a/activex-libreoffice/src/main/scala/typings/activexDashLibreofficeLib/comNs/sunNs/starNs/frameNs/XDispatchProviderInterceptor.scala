@@ -51,3 +51,42 @@ trait XDispatchProviderInterceptor extends XDispatchProvider {
   def setSlaveDispatchProvider(NewDispatchProvider: XDispatchProvider): scala.Unit
 }
 
+object XDispatchProviderInterceptor {
+  @scala.inline
+  def apply(
+    MasterDispatchProvider: XDispatchProvider,
+    SlaveDispatchProvider: XDispatchProvider,
+    acquire: js.Function0[scala.Unit],
+    getMasterDispatchProvider: js.Function0[XDispatchProvider],
+    getSlaveDispatchProvider: js.Function0[XDispatchProvider],
+    queryDispatch: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      java.lang.String, 
+      scala.Double, 
+      XDispatch
+    ],
+    queryDispatches: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
+      activexDashInteropLib.SafeArray[XDispatch]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setMasterDispatchProvider: js.Function1[XDispatchProvider, scala.Unit],
+    setSlaveDispatchProvider: js.Function1[XDispatchProvider, scala.Unit]
+  ): XDispatchProviderInterceptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MasterDispatchProvider")(MasterDispatchProvider)
+    __obj.updateDynamic("SlaveDispatchProvider")(SlaveDispatchProvider)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMasterDispatchProvider")(getMasterDispatchProvider)
+    __obj.updateDynamic("getSlaveDispatchProvider")(getSlaveDispatchProvider)
+    __obj.updateDynamic("queryDispatch")(queryDispatch)
+    __obj.updateDynamic("queryDispatches")(queryDispatches)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setMasterDispatchProvider")(setMasterDispatchProvider)
+    __obj.updateDynamic("setSlaveDispatchProvider")(setSlaveDispatchProvider)
+    __obj.asInstanceOf[XDispatchProviderInterceptor]
+  }
+}
+

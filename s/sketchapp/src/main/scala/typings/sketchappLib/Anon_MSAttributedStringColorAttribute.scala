@@ -13,3 +13,22 @@ trait Anon_MSAttributedStringColorAttribute extends js.Object {
   var NSParagraphStyle: js.UndefOr[SketchMSKeyValueArchive] = js.undefined
 }
 
+object Anon_MSAttributedStringColorAttribute {
+  @scala.inline
+  def apply(
+    NSColor: SketchMSKeyValueArchive,
+    NSKern: scala.Double,
+    MSAttributedStringColorAttribute: SketchMSColor = null,
+    MSAttributedStringFontAttribute: SketchMSFontAttribute = null,
+    NSParagraphStyle: SketchMSKeyValueArchive = null
+  ): Anon_MSAttributedStringColorAttribute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NSColor")(NSColor)
+    __obj.updateDynamic("NSKern")(NSKern)
+    if (MSAttributedStringColorAttribute != null) __obj.updateDynamic("MSAttributedStringColorAttribute")(MSAttributedStringColorAttribute)
+    if (MSAttributedStringFontAttribute != null) __obj.updateDynamic("MSAttributedStringFontAttribute")(MSAttributedStringFontAttribute)
+    if (NSParagraphStyle != null) __obj.updateDynamic("NSParagraphStyle")(NSParagraphStyle)
+    __obj.asInstanceOf[Anon_MSAttributedStringColorAttribute]
+  }
+}
+

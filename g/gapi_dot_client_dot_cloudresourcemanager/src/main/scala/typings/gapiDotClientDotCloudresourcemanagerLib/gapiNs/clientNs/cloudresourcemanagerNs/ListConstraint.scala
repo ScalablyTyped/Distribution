@@ -13,3 +13,12 @@ trait ListConstraint extends js.Object {
   var suggestedValue: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListConstraint {
+  @scala.inline
+  def apply(suggestedValue: java.lang.String = null): ListConstraint = {
+    val __obj = js.Dynamic.literal()
+    if (suggestedValue != null) __obj.updateDynamic("suggestedValue")(suggestedValue)
+    __obj.asInstanceOf[ListConstraint]
+  }
+}
+

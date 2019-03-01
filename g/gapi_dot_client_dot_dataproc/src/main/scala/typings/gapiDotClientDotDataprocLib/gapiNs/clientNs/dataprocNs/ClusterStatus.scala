@@ -16,3 +16,20 @@ trait ClusterStatus extends js.Object {
   var substate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClusterStatus {
+  @scala.inline
+  def apply(
+    detail: java.lang.String = null,
+    state: java.lang.String = null,
+    stateStartTime: java.lang.String = null,
+    substate: java.lang.String = null
+  ): ClusterStatus = {
+    val __obj = js.Dynamic.literal()
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (stateStartTime != null) __obj.updateDynamic("stateStartTime")(stateStartTime)
+    if (substate != null) __obj.updateDynamic("substate")(substate)
+    __obj.asInstanceOf[ClusterStatus]
+  }
+}
+

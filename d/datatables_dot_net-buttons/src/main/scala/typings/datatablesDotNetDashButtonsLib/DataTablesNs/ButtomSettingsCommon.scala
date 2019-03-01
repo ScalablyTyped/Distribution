@@ -56,3 +56,36 @@ trait ButtomSettingsCommon extends js.Object {
   var titleAttr: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ButtomSettingsCommon {
+  @scala.inline
+  def apply(
+    action: FunctionButtonAction = null,
+    available: FunctionButtonAvailable = null,
+    className: java.lang.String = null,
+    destroy: FunctionButtonInit = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    extend: java.lang.String = null,
+    init: FunctionButtonInit = null,
+    key: java.lang.String | ButtonKey = null,
+    name: java.lang.String = null,
+    namespace: java.lang.String = null,
+    text: java.lang.String | FunctionButtonText = null,
+    titleAttr: java.lang.String = null
+  ): ButtomSettingsCommon = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (available != null) __obj.updateDynamic("available")(available)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (titleAttr != null) __obj.updateDynamic("titleAttr")(titleAttr)
+    __obj.asInstanceOf[ButtomSettingsCommon]
+  }
+}
+

@@ -16,3 +16,12 @@ trait VolumeNodeAffinity extends js.Object {
   val required: NodeSelector
 }
 
+object VolumeNodeAffinity {
+  @scala.inline
+  def apply(required: NodeSelector): VolumeNodeAffinity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("required")(required)
+    __obj.asInstanceOf[VolumeNodeAffinity]
+  }
+}
+

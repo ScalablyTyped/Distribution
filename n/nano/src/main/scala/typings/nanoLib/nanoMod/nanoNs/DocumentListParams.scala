@@ -43,3 +43,44 @@ trait DocumentListParams extends js.Object {
   var update_seq: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DocumentListParams {
+  @scala.inline
+  def apply(
+    conflicts: js.UndefOr[scala.Boolean] = js.undefined,
+    descending: js.UndefOr[scala.Boolean] = js.undefined,
+    end_key: java.lang.String = null,
+    end_key_doc_id: java.lang.String = null,
+    endkey: java.lang.String = null,
+    include_docs: js.UndefOr[scala.Boolean] = js.undefined,
+    inclusive_end: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    keys: java.lang.String | js.Array[java.lang.String] = null,
+    limit: scala.Int | scala.Double = null,
+    skip: scala.Int | scala.Double = null,
+    stale: java.lang.String = null,
+    start_key: java.lang.String = null,
+    start_key_doc_id: java.lang.String = null,
+    startkey: java.lang.String = null,
+    update_seq: js.UndefOr[scala.Boolean] = js.undefined
+  ): DocumentListParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
+    if (end_key != null) __obj.updateDynamic("end_key")(end_key)
+    if (end_key_doc_id != null) __obj.updateDynamic("end_key_doc_id")(end_key_doc_id)
+    if (endkey != null) __obj.updateDynamic("endkey")(endkey)
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
+    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (stale != null) __obj.updateDynamic("stale")(stale)
+    if (start_key != null) __obj.updateDynamic("start_key")(start_key)
+    if (start_key_doc_id != null) __obj.updateDynamic("start_key_doc_id")(start_key_doc_id)
+    if (startkey != null) __obj.updateDynamic("startkey")(startkey)
+    if (!js.isUndefined(update_seq)) __obj.updateDynamic("update_seq")(update_seq)
+    __obj.asInstanceOf[DocumentListParams]
+  }
+}
+

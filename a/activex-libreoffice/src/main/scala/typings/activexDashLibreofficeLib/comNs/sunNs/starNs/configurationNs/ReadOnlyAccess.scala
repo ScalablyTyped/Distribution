@@ -20,3 +20,24 @@ trait ReadOnlyAccess
   def create(locale: java.lang.String): scala.Unit
 }
 
+object ReadOnlyAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    create: js.Function1[java.lang.String, scala.Unit],
+    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
+    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): ReadOnlyAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
+    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[ReadOnlyAccess]
+  }
+}
+

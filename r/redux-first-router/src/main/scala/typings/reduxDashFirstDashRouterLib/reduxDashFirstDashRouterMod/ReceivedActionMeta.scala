@@ -13,3 +13,21 @@ trait ReceivedActionMeta extends js.Object {
   var `type`: java.lang.String
 }
 
+object ReceivedActionMeta {
+  @scala.inline
+  def apply(
+    meta: reduxDashFirstDashRouterLib.Anon_NotFoundPath,
+    payload: Payload,
+    `type`: java.lang.String,
+    navKey: Nullable[java.lang.String] = null,
+    query: js.Object = null
+  ): ReceivedActionMeta = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("payload")(payload)
+    if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[ReceivedActionMeta]
+  }
+}
+

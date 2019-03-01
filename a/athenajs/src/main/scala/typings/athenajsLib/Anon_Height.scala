@@ -14,3 +14,24 @@ trait Anon_Height extends js.Object {
   var width: scala.Double
 }
 
+object Anon_Height {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    offsetX: scala.Double,
+    offsetY: scala.Double,
+    width: scala.Double,
+    hitBox: Anon_X = null,
+    plane: scala.Int | scala.Double = null
+  ): Anon_Height = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("offsetX")(offsetX)
+    __obj.updateDynamic("offsetY")(offsetY)
+    __obj.updateDynamic("width")(width)
+    if (hitBox != null) __obj.updateDynamic("hitBox")(hitBox)
+    if (plane != null) __obj.updateDynamic("plane")(plane.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Height]
+  }
+}
+

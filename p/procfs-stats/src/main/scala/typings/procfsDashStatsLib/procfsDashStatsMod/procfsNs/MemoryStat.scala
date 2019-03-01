@@ -15,3 +15,26 @@ trait MemoryStat extends js.Object {
   var text: java.lang.String
 }
 
+object MemoryStat {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    dt: java.lang.String,
+    lib: java.lang.String,
+    resident: java.lang.String,
+    share: java.lang.String,
+    size: java.lang.String,
+    text: java.lang.String
+  ): MemoryStat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("dt")(dt)
+    __obj.updateDynamic("lib")(lib)
+    __obj.updateDynamic("resident")(resident)
+    __obj.updateDynamic("share")(share)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[MemoryStat]
+  }
+}
+

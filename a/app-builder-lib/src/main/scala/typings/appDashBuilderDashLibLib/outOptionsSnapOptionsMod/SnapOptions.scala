@@ -83,3 +83,48 @@ trait SnapOptions
   val useTemplateApp: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SnapOptions {
+  @scala.inline
+  def apply(
+    after: js.Array[java.lang.String] = null,
+    artifactName: java.lang.String = null,
+    assumes: js.Array[java.lang.String] | java.lang.String = null,
+    buildPackages: js.Array[java.lang.String] = null,
+    category: java.lang.String = null,
+    confinement: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.devmode | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.strict | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.classic = null,
+    description: java.lang.String = null,
+    desktop: js.Any = null,
+    environment: js.Object = null,
+    grade: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.devel | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.stable = null,
+    hooks: java.lang.String = null,
+    mimeTypes: js.Array[java.lang.String] = null,
+    plugs: (js.Array[java.lang.String | PlugDescriptor]) | PlugDescriptor = null,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
+    stagePackages: js.Array[java.lang.String] = null,
+    summary: java.lang.String = null,
+    synopsis: java.lang.String = null,
+    useTemplateApp: js.UndefOr[scala.Boolean] = js.undefined
+  ): SnapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
+    if (assumes != null) __obj.updateDynamic("assumes")(assumes.asInstanceOf[js.Any])
+    if (buildPackages != null) __obj.updateDynamic("buildPackages")(buildPackages)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (confinement != null) __obj.updateDynamic("confinement")(confinement.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (desktop != null) __obj.updateDynamic("desktop")(desktop)
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (grade != null) __obj.updateDynamic("grade")(grade.asInstanceOf[js.Any])
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
+    if (plugs != null) __obj.updateDynamic("plugs")(plugs.asInstanceOf[js.Any])
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (stagePackages != null) __obj.updateDynamic("stagePackages")(stagePackages)
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis)
+    if (!js.isUndefined(useTemplateApp)) __obj.updateDynamic("useTemplateApp")(useTemplateApp)
+    __obj.asInstanceOf[SnapOptions]
+  }
+}
+

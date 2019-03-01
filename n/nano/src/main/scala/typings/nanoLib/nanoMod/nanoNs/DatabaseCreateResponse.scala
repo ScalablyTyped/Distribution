@@ -18,3 +18,18 @@ trait DatabaseCreateResponse extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DatabaseCreateResponse {
+  @scala.inline
+  def apply(
+    error: java.lang.String = null,
+    ok: js.UndefOr[scala.Boolean] = js.undefined,
+    reason: java.lang.String = null
+  ): DatabaseCreateResponse = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(ok)) __obj.updateDynamic("ok")(ok)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[DatabaseCreateResponse]
+  }
+}
+

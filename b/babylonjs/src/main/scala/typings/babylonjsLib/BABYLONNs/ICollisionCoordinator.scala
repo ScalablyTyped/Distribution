@@ -31,3 +31,44 @@ trait ICollisionCoordinator extends js.Object {
   def onMeshUpdated(mesh: AbstractMesh): scala.Unit
 }
 
+object ICollisionCoordinator {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    getNewPosition: js.Function7[
+      Vector3, 
+      Vector3, 
+      Collider, 
+      scala.Double, 
+      Nullable[AbstractMesh], 
+      js.Function3[
+        /* collisionIndex */ scala.Double, 
+        /* newPosition */ Vector3, 
+        /* collidedMesh */ Nullable[AbstractMesh], 
+        scala.Unit
+      ], 
+      scala.Double, 
+      scala.Unit
+    ],
+    init: js.Function1[Scene, scala.Unit],
+    onGeometryAdded: js.Function1[Geometry, scala.Unit],
+    onGeometryDeleted: js.Function1[Geometry, scala.Unit],
+    onGeometryUpdated: js.Function1[Geometry, scala.Unit],
+    onMeshAdded: js.Function1[AbstractMesh, scala.Unit],
+    onMeshRemoved: js.Function1[AbstractMesh, scala.Unit],
+    onMeshUpdated: js.Function1[AbstractMesh, scala.Unit]
+  ): ICollisionCoordinator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getNewPosition")(getNewPosition)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("onGeometryAdded")(onGeometryAdded)
+    __obj.updateDynamic("onGeometryDeleted")(onGeometryDeleted)
+    __obj.updateDynamic("onGeometryUpdated")(onGeometryUpdated)
+    __obj.updateDynamic("onMeshAdded")(onMeshAdded)
+    __obj.updateDynamic("onMeshRemoved")(onMeshRemoved)
+    __obj.updateDynamic("onMeshUpdated")(onMeshUpdated)
+    __obj.asInstanceOf[ICollisionCoordinator]
+  }
+}
+

@@ -28,3 +28,32 @@ trait BaseCondition[P] extends js.Object {
   var $nin: js.Array[P]
 }
 
+object BaseCondition {
+  @scala.inline
+  def apply[P](
+    $all: js.Array[P],
+    $elemMatch: stdLib.Partial[P],
+    $gt: P,
+    $gte: P,
+    $in: js.Array[P],
+    $lt: P,
+    $lte: P,
+    $mod: js.Tuple2[scala.Double, scala.Double],
+    $ne: P,
+    $nin: js.Array[P]
+  ): BaseCondition[P] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$all")($all)
+    __obj.updateDynamic("$elemMatch")($elemMatch)
+    __obj.updateDynamic("$gt")($gt.asInstanceOf[js.Any])
+    __obj.updateDynamic("$gte")($gte.asInstanceOf[js.Any])
+    __obj.updateDynamic("$in")($in)
+    __obj.updateDynamic("$lt")($lt.asInstanceOf[js.Any])
+    __obj.updateDynamic("$lte")($lte.asInstanceOf[js.Any])
+    __obj.updateDynamic("$mod")($mod)
+    __obj.updateDynamic("$ne")($ne.asInstanceOf[js.Any])
+    __obj.updateDynamic("$nin")($nin)
+    __obj.asInstanceOf[BaseCondition[P]]
+  }
+}
+

@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait QualifiedName extends Node {
+trait QualifiedName
+  extends EntityName
+     with Node {
   var left: EntityName = js.native
   var right: Identifier = js.native
 }

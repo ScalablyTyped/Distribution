@@ -52,3 +52,28 @@ trait Option extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    cwd: java.lang.String = null,
+    env: js.Any = null,
+    errorMessage: java.lang.String = null,
+    ignoreErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    maxBuffer: scala.Int | scala.Double = null,
+    quiet: js.UndefOr[scala.Boolean] = js.undefined,
+    templateData: js.Any = null,
+    timeout: scala.Int | scala.Double = null
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors)
+    if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (templateData != null) __obj.updateDynamic("templateData")(templateData)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Option]
+  }
+}
+

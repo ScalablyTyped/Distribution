@@ -10,3 +10,12 @@ trait InstanceGroupManagersAbandonInstancesRequest extends js.Object {
   var instances: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object InstanceGroupManagersAbandonInstancesRequest {
+  @scala.inline
+  def apply(instances: js.Array[java.lang.String] = null): InstanceGroupManagersAbandonInstancesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (instances != null) __obj.updateDynamic("instances")(instances)
+    __obj.asInstanceOf[InstanceGroupManagersAbandonInstancesRequest]
+  }
+}
+

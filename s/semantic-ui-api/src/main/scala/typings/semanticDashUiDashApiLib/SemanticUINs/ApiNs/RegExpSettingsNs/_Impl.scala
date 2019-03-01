@@ -16,3 +16,13 @@ trait _Impl extends js.Object {
   var required: stdLib.RegExp
 }
 
+object _Impl {
+  @scala.inline
+  def apply(optional: stdLib.RegExp, required: stdLib.RegExp): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("optional")(optional)
+    __obj.updateDynamic("required")(required)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

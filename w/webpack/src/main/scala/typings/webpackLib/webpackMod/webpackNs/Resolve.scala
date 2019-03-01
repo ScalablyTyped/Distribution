@@ -98,3 +98,38 @@ trait Resolve extends js.Object {
   var unsafeCache: js.UndefOr[js.Object | scala.Boolean] = js.undefined
 }
 
+object Resolve {
+  @scala.inline
+  def apply(
+    alias: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    aliasFields: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
+    cachePredicate: js.Function1[/* data */ webpackLib.Anon_Path, scala.Boolean] = null,
+    cacheWithContext: js.UndefOr[scala.Boolean] = js.undefined,
+    descriptionFiles: js.Array[java.lang.String] = null,
+    enforceExtension: js.UndefOr[scala.Boolean] = js.undefined,
+    extensions: js.Array[java.lang.String] = null,
+    mainFields: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
+    mainFiles: js.Array[java.lang.String] = null,
+    modules: js.Array[java.lang.String] = null,
+    plugins: js.Array[ResolvePlugin] = null,
+    symlinks: js.UndefOr[scala.Boolean] = js.undefined,
+    unsafeCache: js.Object | scala.Boolean = null
+  ): Resolve = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (aliasFields != null) __obj.updateDynamic("aliasFields")(aliasFields.asInstanceOf[js.Any])
+    if (cachePredicate != null) __obj.updateDynamic("cachePredicate")(cachePredicate)
+    if (!js.isUndefined(cacheWithContext)) __obj.updateDynamic("cacheWithContext")(cacheWithContext)
+    if (descriptionFiles != null) __obj.updateDynamic("descriptionFiles")(descriptionFiles)
+    if (!js.isUndefined(enforceExtension)) __obj.updateDynamic("enforceExtension")(enforceExtension)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (mainFields != null) __obj.updateDynamic("mainFields")(mainFields.asInstanceOf[js.Any])
+    if (mainFiles != null) __obj.updateDynamic("mainFiles")(mainFiles)
+    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(symlinks)) __obj.updateDynamic("symlinks")(symlinks)
+    if (unsafeCache != null) __obj.updateDynamic("unsafeCache")(unsafeCache.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Resolve]
+  }
+}
+

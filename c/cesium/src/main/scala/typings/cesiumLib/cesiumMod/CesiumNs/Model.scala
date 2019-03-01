@@ -29,3 +29,54 @@ trait Model extends js.Object {
   def update(): scala.Unit
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    activeAnimations: ModelAnimationCollection,
+    allowPicking: scala.Boolean,
+    asynchronous: scala.Boolean,
+    basePath: java.lang.String,
+    boundingSphere: BoundingSphere,
+    debugShowBoundingVolume: scala.Boolean,
+    debugWireframe: scala.Boolean,
+    destroy: js.Function0[scala.Unit],
+    getMaterial: js.Function1[java.lang.String, ModelMaterial],
+    getMesh: js.Function1[java.lang.String, ModelMesh],
+    getNode: js.Function1[java.lang.String, ModelNode],
+    gltf: js.Any,
+    id: js.Any,
+    isDestroyed: js.Function0[scala.Boolean],
+    minimumPixelSize: scala.Double,
+    modelMatrix: Matrix4,
+    ready: scala.Boolean,
+    readyPromise: js.Promise[Model],
+    scale: scala.Double,
+    show: scala.Boolean,
+    update: js.Function0[scala.Unit]
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activeAnimations")(activeAnimations)
+    __obj.updateDynamic("allowPicking")(allowPicking)
+    __obj.updateDynamic("asynchronous")(asynchronous)
+    __obj.updateDynamic("basePath")(basePath)
+    __obj.updateDynamic("boundingSphere")(boundingSphere)
+    __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
+    __obj.updateDynamic("debugWireframe")(debugWireframe)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getMaterial")(getMaterial)
+    __obj.updateDynamic("getMesh")(getMesh)
+    __obj.updateDynamic("getNode")(getNode)
+    __obj.updateDynamic("gltf")(gltf)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isDestroyed")(isDestroyed)
+    __obj.updateDynamic("minimumPixelSize")(minimumPixelSize)
+    __obj.updateDynamic("modelMatrix")(modelMatrix)
+    __obj.updateDynamic("ready")(ready)
+    __obj.updateDynamic("readyPromise")(readyPromise)
+    __obj.updateDynamic("scale")(scale)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Model]
+  }
+}
+

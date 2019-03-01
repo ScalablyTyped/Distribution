@@ -15,3 +15,13 @@ trait CommonSeriesOptionsHighlightSettingsBorder extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommonSeriesOptionsHighlightSettingsBorder {
+  @scala.inline
+  def apply(color: java.lang.String = null, width: java.lang.String = null): CommonSeriesOptionsHighlightSettingsBorder = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[CommonSeriesOptionsHighlightSettingsBorder]
+  }
+}
+

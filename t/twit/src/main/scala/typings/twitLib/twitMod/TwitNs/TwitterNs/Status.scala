@@ -44,3 +44,84 @@ trait Status extends js.Object {
   var withheld_scope: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Status {
+  @scala.inline
+  def apply(
+    created_at: java.lang.String,
+    entities: Entities,
+    filter_level: twitLib.twitLibStrings.none | twitLib.twitLibStrings.low | twitLib.twitLibStrings.medium,
+    id: scala.Double,
+    id_str: java.lang.String,
+    retweet_count: scala.Double,
+    retweeted: scala.Boolean,
+    truncated: scala.Boolean,
+    user: User,
+    annotations: js.Object = null,
+    contributors: js.Array[Contributors] = null,
+    coordinates: geojsonLib.geojsonMod.Point = null,
+    current_user_retweet: twitLib.Anon_Id = null,
+    display_text_range: js.Tuple2[scala.Double, scala.Double] = null,
+    favorite_count: scala.Int | scala.Double = null,
+    favorited: js.UndefOr[scala.Boolean] = js.undefined,
+    full_text: java.lang.String = null,
+    geo: js.Object = null,
+    in_reply_to_screen_name: java.lang.String = null,
+    in_reply_to_status_id: scala.Int | scala.Double = null,
+    in_reply_to_status_id_str: java.lang.String = null,
+    in_reply_to_user_id: scala.Int | scala.Double = null,
+    in_reply_to_user_id_str: java.lang.String = null,
+    lang: java.lang.String = null,
+    place: Place = null,
+    possibly_sensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    quoted_status: Status = null,
+    quoted_status_id: scala.Int | scala.Double = null,
+    quoted_status_id_str: java.lang.String = null,
+    retweeted_status: Status = null,
+    scopes: js.Object = null,
+    source: java.lang.String = null,
+    text: java.lang.String = null,
+    withheld_copyright: js.UndefOr[scala.Boolean] = js.undefined,
+    withheld_in_countries: js.Array[java.lang.String] = null,
+    withheld_scope: java.lang.String = null
+  ): Status = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("created_at")(created_at)
+    __obj.updateDynamic("entities")(entities)
+    __obj.updateDynamic("filter_level")(filter_level.asInstanceOf[js.Any])
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("id_str")(id_str)
+    __obj.updateDynamic("retweet_count")(retweet_count)
+    __obj.updateDynamic("retweeted")(retweeted)
+    __obj.updateDynamic("truncated")(truncated)
+    __obj.updateDynamic("user")(user)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
+    if (contributors != null) __obj.updateDynamic("contributors")(contributors)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
+    if (current_user_retweet != null) __obj.updateDynamic("current_user_retweet")(current_user_retweet)
+    if (display_text_range != null) __obj.updateDynamic("display_text_range")(display_text_range)
+    if (favorite_count != null) __obj.updateDynamic("favorite_count")(favorite_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(favorited)) __obj.updateDynamic("favorited")(favorited)
+    if (full_text != null) __obj.updateDynamic("full_text")(full_text)
+    if (geo != null) __obj.updateDynamic("geo")(geo)
+    if (in_reply_to_screen_name != null) __obj.updateDynamic("in_reply_to_screen_name")(in_reply_to_screen_name)
+    if (in_reply_to_status_id != null) __obj.updateDynamic("in_reply_to_status_id")(in_reply_to_status_id.asInstanceOf[js.Any])
+    if (in_reply_to_status_id_str != null) __obj.updateDynamic("in_reply_to_status_id_str")(in_reply_to_status_id_str)
+    if (in_reply_to_user_id != null) __obj.updateDynamic("in_reply_to_user_id")(in_reply_to_user_id.asInstanceOf[js.Any])
+    if (in_reply_to_user_id_str != null) __obj.updateDynamic("in_reply_to_user_id_str")(in_reply_to_user_id_str)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (place != null) __obj.updateDynamic("place")(place)
+    if (!js.isUndefined(possibly_sensitive)) __obj.updateDynamic("possibly_sensitive")(possibly_sensitive)
+    if (quoted_status != null) __obj.updateDynamic("quoted_status")(quoted_status)
+    if (quoted_status_id != null) __obj.updateDynamic("quoted_status_id")(quoted_status_id.asInstanceOf[js.Any])
+    if (quoted_status_id_str != null) __obj.updateDynamic("quoted_status_id_str")(quoted_status_id_str)
+    if (retweeted_status != null) __obj.updateDynamic("retweeted_status")(retweeted_status)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(withheld_copyright)) __obj.updateDynamic("withheld_copyright")(withheld_copyright)
+    if (withheld_in_countries != null) __obj.updateDynamic("withheld_in_countries")(withheld_in_countries)
+    if (withheld_scope != null) __obj.updateDynamic("withheld_scope")(withheld_scope)
+    __obj.asInstanceOf[Status]
+  }
+}
+

@@ -21,3 +21,32 @@ trait OnResponseStartedDetails extends js.Object {
   var webContentsId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object OnResponseStartedDetails {
+  @scala.inline
+  def apply(
+    fromCache: scala.Boolean,
+    id: scala.Double,
+    method: java.lang.String,
+    resourceType: java.lang.String,
+    responseHeaders: ResponseHeaders,
+    statusCode: scala.Double,
+    statusLine: java.lang.String,
+    timestamp: scala.Double,
+    url: java.lang.String,
+    webContentsId: scala.Int | scala.Double = null
+  ): OnResponseStartedDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromCache")(fromCache)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("resourceType")(resourceType)
+    __obj.updateDynamic("responseHeaders")(responseHeaders)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.updateDynamic("statusLine")(statusLine)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.updateDynamic("url")(url)
+    if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnResponseStartedDetails]
+  }
+}
+

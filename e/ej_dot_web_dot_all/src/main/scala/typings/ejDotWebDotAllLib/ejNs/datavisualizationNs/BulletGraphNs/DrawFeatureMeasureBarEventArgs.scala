@@ -20,3 +20,20 @@ trait DrawFeatureMeasureBarEventArgs extends js.Object {
   var scaleElement: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
+object DrawFeatureMeasureBarEventArgs {
+  @scala.inline
+  def apply(
+    Object: js.Any = null,
+    Value: scala.Int | scala.Double = null,
+    currentElement: stdLib.HTMLElement = null,
+    scaleElement: stdLib.HTMLElement = null
+  ): DrawFeatureMeasureBarEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Object != null) __obj.updateDynamic("Object")(Object)
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement)
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    __obj.asInstanceOf[DrawFeatureMeasureBarEventArgs]
+  }
+}
+

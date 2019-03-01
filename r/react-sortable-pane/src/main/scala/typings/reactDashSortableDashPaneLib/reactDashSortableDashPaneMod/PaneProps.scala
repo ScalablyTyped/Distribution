@@ -18,3 +18,32 @@ trait PaneProps extends js.Object {
   var width: java.lang.String | scala.Double
 }
 
+object PaneProps {
+  @scala.inline
+  def apply(
+    height: java.lang.String | scala.Double,
+    id: PaneId,
+    width: java.lang.String | scala.Double,
+    className: java.lang.String = null,
+    isResizable: reactDashSortableDashPaneLib.Anon_X = null,
+    maxHeight: java.lang.String | scala.Double = null,
+    maxWidth: java.lang.String | scala.Double = null,
+    minHeight: java.lang.String | scala.Double = null,
+    minWidth: java.lang.String | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null
+  ): PaneProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (isResizable != null) __obj.updateDynamic("isResizable")(isResizable)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[PaneProps]
+  }
+}
+

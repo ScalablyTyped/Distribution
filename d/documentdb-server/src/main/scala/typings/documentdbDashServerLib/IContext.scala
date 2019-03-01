@@ -17,3 +17,18 @@ trait IContext extends js.Object {
   def getResponse(): IResponse
 }
 
+object IContext {
+  @scala.inline
+  def apply(
+    getCollection: js.Function0[ICollection],
+    getRequest: js.Function0[IRequest],
+    getResponse: js.Function0[IResponse]
+  ): IContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCollection")(getCollection)
+    __obj.updateDynamic("getRequest")(getRequest)
+    __obj.updateDynamic("getResponse")(getResponse)
+    __obj.asInstanceOf[IContext]
+  }
+}
+

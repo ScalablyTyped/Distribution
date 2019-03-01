@@ -53,3 +53,30 @@ trait CarouselOptions extends js.Object {
   def onCycleTo(`this`: Carousel, current: stdLib.Element, dragged: scala.Boolean): scala.Unit
 }
 
+object CarouselOptions {
+  @scala.inline
+  def apply(
+    dist: scala.Double,
+    duration: scala.Double,
+    fullWidth: scala.Boolean,
+    indicators: scala.Boolean,
+    noWrap: scala.Boolean,
+    numVisible: scala.Double,
+    onCycleTo: js.Function3[Carousel, stdLib.Element, scala.Boolean, scala.Unit],
+    padding: scala.Double,
+    shift: scala.Double
+  ): CarouselOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dist")(dist)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("fullWidth")(fullWidth)
+    __obj.updateDynamic("indicators")(indicators)
+    __obj.updateDynamic("noWrap")(noWrap)
+    __obj.updateDynamic("numVisible")(numVisible)
+    __obj.updateDynamic("onCycleTo")(onCycleTo)
+    __obj.updateDynamic("padding")(padding)
+    __obj.updateDynamic("shift")(shift)
+    __obj.asInstanceOf[CarouselOptions]
+  }
+}
+

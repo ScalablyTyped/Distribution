@@ -10,3 +10,12 @@ trait Surface extends js.Object {
   var capabilities: js.Array[Capability]
 }
 
+object Surface {
+  @scala.inline
+  def apply(capabilities: js.Array[Capability]): Surface = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("capabilities")(capabilities)
+    __obj.asInstanceOf[Surface]
+  }
+}
+

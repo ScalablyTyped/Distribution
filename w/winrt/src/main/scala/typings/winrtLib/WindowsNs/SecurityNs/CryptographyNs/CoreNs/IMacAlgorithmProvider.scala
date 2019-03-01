@@ -11,3 +11,18 @@ trait IMacAlgorithmProvider extends js.Object {
   def createKey(keyMaterial: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey
 }
 
+object IMacAlgorithmProvider {
+  @scala.inline
+  def apply(
+    algorithmName: java.lang.String,
+    createKey: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, CryptographicKey],
+    macLength: scala.Double
+  ): IMacAlgorithmProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("algorithmName")(algorithmName)
+    __obj.updateDynamic("createKey")(createKey)
+    __obj.updateDynamic("macLength")(macLength)
+    __obj.asInstanceOf[IMacAlgorithmProvider]
+  }
+}
+

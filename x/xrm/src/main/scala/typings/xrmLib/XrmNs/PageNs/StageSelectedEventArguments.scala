@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 trait StageSelectedEventArguments
   extends xrmLib.XrmNs.EventsNs.StageSelectedEventArguments
 
+object StageSelectedEventArguments {
+  @scala.inline
+  def apply(getStage: js.Function0[xrmLib.XrmNs.ProcessFlowNs.Stage]): StageSelectedEventArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getStage")(getStage)
+    __obj.asInstanceOf[StageSelectedEventArguments]
+  }
+}
+

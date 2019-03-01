@@ -12,3 +12,20 @@ trait Options extends js.Object {
   var saveContextOnRethrow: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    destructive: js.UndefOr[scala.Boolean] = js.undefined,
+    modifyMessageOnRethrow: js.UndefOr[scala.Boolean] = js.undefined,
+    patterns: js.Array[java.lang.String] = null,
+    saveContextOnRethrow: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(destructive)) __obj.updateDynamic("destructive")(destructive)
+    if (!js.isUndefined(modifyMessageOnRethrow)) __obj.updateDynamic("modifyMessageOnRethrow")(modifyMessageOnRethrow)
+    if (patterns != null) __obj.updateDynamic("patterns")(patterns)
+    if (!js.isUndefined(saveContextOnRethrow)) __obj.updateDynamic("saveContextOnRethrow")(saveContextOnRethrow)
+    __obj.asInstanceOf[Options]
+  }
+}
+

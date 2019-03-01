@@ -125,3 +125,39 @@ trait Options extends js.Object {
   var svgs: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    fileContent: java.lang.String,
+    images: scala.Boolean | scala.Double = null,
+    inlineAttribute: java.lang.String = null,
+    linkTransform: js.Function2[/* content */ java.lang.String, /* done */ Callback, _] = null,
+    links: scala.Boolean | scala.Double = null,
+    rebaseRelativeTo: java.lang.String = null,
+    relativeTo: java.lang.String = null,
+    requestTransform: js.Function1[
+      /* requestOptions */ requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions, 
+      requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions
+    ] = null,
+    scriptTransform: js.Function2[/* content */ java.lang.String, /* done */ Callback, _] = null,
+    scripts: scala.Boolean | scala.Double = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    svgs: scala.Boolean | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileContent")(fileContent)
+    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    if (inlineAttribute != null) __obj.updateDynamic("inlineAttribute")(inlineAttribute)
+    if (linkTransform != null) __obj.updateDynamic("linkTransform")(linkTransform)
+    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
+    if (rebaseRelativeTo != null) __obj.updateDynamic("rebaseRelativeTo")(rebaseRelativeTo)
+    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
+    if (requestTransform != null) __obj.updateDynamic("requestTransform")(requestTransform)
+    if (scriptTransform != null) __obj.updateDynamic("scriptTransform")(scriptTransform)
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (svgs != null) __obj.updateDynamic("svgs")(svgs.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

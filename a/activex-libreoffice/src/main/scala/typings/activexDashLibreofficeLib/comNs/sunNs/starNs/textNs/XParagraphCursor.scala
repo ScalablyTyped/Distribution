@@ -33,3 +33,62 @@ trait XParagraphCursor extends XTextCursor {
   def isStartOfParagraph(): scala.Boolean
 }
 
+object XParagraphCursor {
+  @scala.inline
+  def apply(
+    End: XTextRange,
+    Start: XTextRange,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    collapseToEnd: js.Function0[scala.Unit],
+    collapseToStart: js.Function0[scala.Unit],
+    getEnd: js.Function0[XTextRange],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    goLeft: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goRight: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    gotoEnd: js.Function1[scala.Boolean, scala.Unit],
+    gotoEndOfParagraph: js.Function1[scala.Boolean, scala.Boolean],
+    gotoNextParagraph: js.Function1[scala.Boolean, scala.Boolean],
+    gotoPreviousParagraph: js.Function1[scala.Boolean, scala.Boolean],
+    gotoRange: js.Function2[XTextRange, scala.Boolean, scala.Unit],
+    gotoStart: js.Function1[scala.Boolean, scala.Unit],
+    gotoStartOfParagraph: js.Function1[scala.Boolean, scala.Boolean],
+    isCollapsed: js.Function0[scala.Boolean],
+    isEndOfParagraph: js.Function0[scala.Boolean],
+    isStartOfParagraph: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): XParagraphCursor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("End")(End)
+    __obj.updateDynamic("Start")(Start)
+    __obj.updateDynamic("String")(String)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("collapseToEnd")(collapseToEnd)
+    __obj.updateDynamic("collapseToStart")(collapseToStart)
+    __obj.updateDynamic("getEnd")(getEnd)
+    __obj.updateDynamic("getStart")(getStart)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("goLeft")(goLeft)
+    __obj.updateDynamic("goRight")(goRight)
+    __obj.updateDynamic("gotoEnd")(gotoEnd)
+    __obj.updateDynamic("gotoEndOfParagraph")(gotoEndOfParagraph)
+    __obj.updateDynamic("gotoNextParagraph")(gotoNextParagraph)
+    __obj.updateDynamic("gotoPreviousParagraph")(gotoPreviousParagraph)
+    __obj.updateDynamic("gotoRange")(gotoRange)
+    __obj.updateDynamic("gotoStart")(gotoStart)
+    __obj.updateDynamic("gotoStartOfParagraph")(gotoStartOfParagraph)
+    __obj.updateDynamic("isCollapsed")(isCollapsed)
+    __obj.updateDynamic("isEndOfParagraph")(isEndOfParagraph)
+    __obj.updateDynamic("isStartOfParagraph")(isStartOfParagraph)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setString")(setString)
+    __obj.asInstanceOf[XParagraphCursor]
+  }
+}
+

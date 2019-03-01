@@ -40,3 +40,28 @@ trait Options extends js.Object {
   var thousands: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    affixesStay: js.UndefOr[scala.Boolean] = js.undefined,
+    allowNegative: js.UndefOr[scala.Boolean] = js.undefined,
+    allowZero: js.UndefOr[scala.Boolean] = js.undefined,
+    decimal: java.lang.String = null,
+    precision: scala.Int | scala.Double = null,
+    prefix: java.lang.String = null,
+    suffix: java.lang.String = null,
+    thousands: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(affixesStay)) __obj.updateDynamic("affixesStay")(affixesStay)
+    if (!js.isUndefined(allowNegative)) __obj.updateDynamic("allowNegative")(allowNegative)
+    if (!js.isUndefined(allowZero)) __obj.updateDynamic("allowZero")(allowZero)
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (thousands != null) __obj.updateDynamic("thousands")(thousands)
+    __obj.asInstanceOf[Options]
+  }
+}
+

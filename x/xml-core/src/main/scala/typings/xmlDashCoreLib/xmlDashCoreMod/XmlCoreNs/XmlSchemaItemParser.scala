@@ -15,3 +15,12 @@ trait XmlSchemaItemParser extends js.Object {
   var parser: js.UndefOr[IXmlSerializableConstructor] = js.undefined
 }
 
+object XmlSchemaItemParser {
+  @scala.inline
+  def apply(parser: IXmlSerializableConstructor = null): XmlSchemaItemParser = {
+    val __obj = js.Dynamic.literal()
+    if (parser != null) __obj.updateDynamic("parser")(parser)
+    __obj.asInstanceOf[XmlSchemaItemParser]
+  }
+}
+

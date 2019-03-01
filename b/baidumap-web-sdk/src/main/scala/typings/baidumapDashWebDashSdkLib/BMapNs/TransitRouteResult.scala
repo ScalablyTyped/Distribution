@@ -15,3 +15,26 @@ trait TransitRouteResult extends js.Object {
   def getStart(): LocalResultPoi
 }
 
+object TransitRouteResult {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    getEnd: js.Function0[LocalResultPoi],
+    getNumPlans: js.Function0[scala.Double],
+    getPlan: js.Function1[scala.Double, TransitRoutePlan],
+    getStart: js.Function0[LocalResultPoi],
+    moreResultsUrl: java.lang.String,
+    policy: TransitPolicy
+  ): TransitRouteResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("city")(city)
+    __obj.updateDynamic("getEnd")(getEnd)
+    __obj.updateDynamic("getNumPlans")(getNumPlans)
+    __obj.updateDynamic("getPlan")(getPlan)
+    __obj.updateDynamic("getStart")(getStart)
+    __obj.updateDynamic("moreResultsUrl")(moreResultsUrl)
+    __obj.updateDynamic("policy")(policy)
+    __obj.asInstanceOf[TransitRouteResult]
+  }
+}
+

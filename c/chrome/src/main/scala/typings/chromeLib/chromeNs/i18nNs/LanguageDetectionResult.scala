@@ -12,3 +12,13 @@ trait LanguageDetectionResult extends js.Object {
   var languages: js.Array[DetectedLanguage]
 }
 
+object LanguageDetectionResult {
+  @scala.inline
+  def apply(isReliable: scala.Boolean, languages: js.Array[DetectedLanguage]): LanguageDetectionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isReliable")(isReliable)
+    __obj.updateDynamic("languages")(languages)
+    __obj.asInstanceOf[LanguageDetectionResult]
+  }
+}
+

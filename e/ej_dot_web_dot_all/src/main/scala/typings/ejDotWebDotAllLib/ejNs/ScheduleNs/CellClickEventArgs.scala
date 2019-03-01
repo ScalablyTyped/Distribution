@@ -35,3 +35,30 @@ trait CellClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cellIndex: scala.Int | scala.Double = null,
+    endTime: js.Any = null,
+    model: Model = null,
+    quickString: java.lang.String = null,
+    resources: js.Any = null,
+    startTime: js.Any = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): CellClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (quickString != null) __obj.updateDynamic("quickString")(quickString)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CellClickEventArgs]
+  }
+}
+

@@ -11,3 +11,13 @@ trait Anon_AvatarNickName extends js.Object {
   var nickName: java.lang.String
 }
 
+object Anon_AvatarNickName {
+  @scala.inline
+  def apply(avatar: java.lang.String, nickName: java.lang.String): Anon_AvatarNickName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("avatar")(avatar)
+    __obj.updateDynamic("nickName")(nickName)
+    __obj.asInstanceOf[Anon_AvatarNickName]
+  }
+}
+

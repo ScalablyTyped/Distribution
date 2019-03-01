@@ -15,3 +15,20 @@ trait SaveImageToPhotosAlbumOptions
   def success_MSaveImageToPhotosAlbumOptions(res: baiduDashAppLib.Anon_ErrMsg): scala.Unit
 }
 
+object SaveImageToPhotosAlbumOptions {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    success: js.Function1[baiduDashAppLib.Anon_ErrMsg, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): SaveImageToPhotosAlbumOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[SaveImageToPhotosAlbumOptions]
+  }
+}
+

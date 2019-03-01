@@ -11,3 +11,14 @@ trait TMessage extends js.Object {
   var rseqid: scala.Double
 }
 
+object TMessage {
+  @scala.inline
+  def apply(fname: java.lang.String, mtype: thriftLib.thriftMod.ThriftNs.MessageType, rseqid: scala.Double): TMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fname")(fname)
+    __obj.updateDynamic("mtype")(mtype)
+    __obj.updateDynamic("rseqid")(rseqid)
+    __obj.asInstanceOf[TMessage]
+  }
+}
+

@@ -16,3 +16,13 @@ trait GetResourceArgs extends js.Object {
   val restApiId: java.lang.String
 }
 
+object GetResourceArgs {
+  @scala.inline
+  def apply(path: java.lang.String, restApiId: java.lang.String): GetResourceArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("restApiId")(restApiId)
+    __obj.asInstanceOf[GetResourceArgs]
+  }
+}
+

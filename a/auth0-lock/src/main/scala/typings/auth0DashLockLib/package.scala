@@ -5,7 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object auth0DashLockLib {
-  type Auth0LockAdditionalSignUpField = Auth0LockAdditionalSelectSignUpField | Auth0LockAdditionalTextSignUpField | Auth0LockAdditionalCheckboxSignUpField
   type Auth0LockAdditionalSignUpFieldOptionsCallback = js.Function2[
     /* error */ auth0DashJsLib.auth0DashJsMod.Auth0Error, 
     /* options */ js.Array[Auth0LockAdditionalSignUpFieldOption], 

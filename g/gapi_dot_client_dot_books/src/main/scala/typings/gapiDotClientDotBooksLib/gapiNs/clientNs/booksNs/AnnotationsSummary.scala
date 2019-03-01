@@ -10,3 +10,16 @@ trait AnnotationsSummary extends js.Object {
   var layers: js.UndefOr[js.Array[gapiDotClientDotBooksLib.Anon_AllowedCharacterCountLayerId]] = js.undefined
 }
 
+object AnnotationsSummary {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    layers: js.Array[gapiDotClientDotBooksLib.Anon_AllowedCharacterCountLayerId] = null
+  ): AnnotationsSummary = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (layers != null) __obj.updateDynamic("layers")(layers)
+    __obj.asInstanceOf[AnnotationsSummary]
+  }
+}
+

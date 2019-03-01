@@ -55,3 +55,21 @@ trait TableDeletedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object TableDeletedEventArgs {
+  @scala.inline
+  def apply(
+    source: EventSource | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Local | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Remote,
+    tableId: java.lang.String,
+    tableName: java.lang.String,
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableDeleted,
+    worksheetId: java.lang.String
+  ): TableDeletedEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("tableId")(tableId)
+    __obj.updateDynamic("tableName")(tableName)
+    __obj.updateDynamic("worksheetId")(worksheetId)
+    __obj.asInstanceOf[TableDeletedEventArgs]
+  }
+}
+

@@ -174,3 +174,78 @@ trait Attributes extends js.Object {
   var videoLink: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Attributes {
+  @scala.inline
+  def apply(
+    additionalImageLink: js.Array[Image] = null,
+    ageGroup: java.lang.String = null,
+    brand: java.lang.String = null,
+    capacity: Capacity = null,
+    color: java.lang.String = null,
+    count: Count = null,
+    description: java.lang.String = null,
+    disclosureDate: java.lang.String = null,
+    featureDescription: js.Array[FeatureDescription] = null,
+    flavor: java.lang.String = null,
+    format: java.lang.String = null,
+    gender: java.lang.String = null,
+    gtin: js.Array[java.lang.String] = null,
+    imageLink: Image = null,
+    itemGroupId: java.lang.String = null,
+    material: java.lang.String = null,
+    mpn: java.lang.String = null,
+    pattern: java.lang.String = null,
+    productDetail: js.Array[ProductDetail] = null,
+    productLine: java.lang.String = null,
+    productName: java.lang.String = null,
+    productPageUrl: java.lang.String = null,
+    productType: js.Array[java.lang.String] = null,
+    releaseDate: java.lang.String = null,
+    scent: java.lang.String = null,
+    size: java.lang.String = null,
+    sizeSystem: java.lang.String = null,
+    sizeType: java.lang.String = null,
+    suggestedRetailPrice: Price = null,
+    targetAccountId: java.lang.String = null,
+    theme: java.lang.String = null,
+    title: java.lang.String = null,
+    videoLink: js.Array[java.lang.String] = null
+  ): Attributes = {
+    val __obj = js.Dynamic.literal()
+    if (additionalImageLink != null) __obj.updateDynamic("additionalImageLink")(additionalImageLink)
+    if (ageGroup != null) __obj.updateDynamic("ageGroup")(ageGroup)
+    if (brand != null) __obj.updateDynamic("brand")(brand)
+    if (capacity != null) __obj.updateDynamic("capacity")(capacity)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (disclosureDate != null) __obj.updateDynamic("disclosureDate")(disclosureDate)
+    if (featureDescription != null) __obj.updateDynamic("featureDescription")(featureDescription)
+    if (flavor != null) __obj.updateDynamic("flavor")(flavor)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (gender != null) __obj.updateDynamic("gender")(gender)
+    if (gtin != null) __obj.updateDynamic("gtin")(gtin)
+    if (imageLink != null) __obj.updateDynamic("imageLink")(imageLink)
+    if (itemGroupId != null) __obj.updateDynamic("itemGroupId")(itemGroupId)
+    if (material != null) __obj.updateDynamic("material")(material)
+    if (mpn != null) __obj.updateDynamic("mpn")(mpn)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (productDetail != null) __obj.updateDynamic("productDetail")(productDetail)
+    if (productLine != null) __obj.updateDynamic("productLine")(productLine)
+    if (productName != null) __obj.updateDynamic("productName")(productName)
+    if (productPageUrl != null) __obj.updateDynamic("productPageUrl")(productPageUrl)
+    if (productType != null) __obj.updateDynamic("productType")(productType)
+    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate)
+    if (scent != null) __obj.updateDynamic("scent")(scent)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (sizeSystem != null) __obj.updateDynamic("sizeSystem")(sizeSystem)
+    if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType)
+    if (suggestedRetailPrice != null) __obj.updateDynamic("suggestedRetailPrice")(suggestedRetailPrice)
+    if (targetAccountId != null) __obj.updateDynamic("targetAccountId")(targetAccountId)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (videoLink != null) __obj.updateDynamic("videoLink")(videoLink)
+    __obj.asInstanceOf[Attributes]
+  }
+}
+

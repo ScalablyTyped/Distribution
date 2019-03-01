@@ -13,3 +13,22 @@ trait Anon_Ca extends js.Object {
   var rejectUnauthorized: scala.Boolean
 }
 
+object Anon_Ca {
+  @scala.inline
+  def apply(
+    rejectUnauthorized: scala.Boolean,
+    ca: java.lang.String = null,
+    cert: java.lang.String = null,
+    host: java.lang.String = null,
+    key: java.lang.String = null
+  ): Anon_Ca = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (ca != null) __obj.updateDynamic("ca")(ca)
+    if (cert != null) __obj.updateDynamic("cert")(cert)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[Anon_Ca]
+  }
+}
+

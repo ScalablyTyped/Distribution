@@ -12,3 +12,20 @@ trait PrivateKey extends js.Object {
   var version: scala.Double
 }
 
+object PrivateKey {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    crypto: web3Lib.Anon_Cipher,
+    id: java.lang.String,
+    version: scala.Double
+  ): PrivateKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("crypto")(crypto)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PrivateKey]
+  }
+}
+

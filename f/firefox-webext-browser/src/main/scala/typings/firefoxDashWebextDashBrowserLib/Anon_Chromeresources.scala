@@ -12,3 +12,18 @@ trait Anon_Chromeresources extends js.Object {
   var version: java.lang.String
 }
 
+object Anon_Chromeresources {
+  @scala.inline
+  def apply(
+    chrome_resources: org.scalablytyped.runtime.StringDictionary[
+      firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL | org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL]
+    ],
+    version: java.lang.String
+  ): Anon_Chromeresources = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chrome_resources")(chrome_resources)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Chromeresources]
+  }
+}
+

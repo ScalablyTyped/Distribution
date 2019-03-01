@@ -9,3 +9,12 @@ trait Template extends js.Object {
   var recipe: jsreportDashXlsxLib.jsreportDashXlsxLibStrings.xlsx | java.lang.String
 }
 
+object Template {
+  @scala.inline
+  def apply(recipe: jsreportDashXlsxLib.jsreportDashXlsxLibStrings.xlsx | java.lang.String): Template = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("recipe")(recipe.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Template]
+  }
+}
+

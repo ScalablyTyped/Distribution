@@ -33,3 +33,16 @@ trait Options extends js.Object {
   var mapping: js.UndefOr[rpioLib.rpioLibStrings.gpio | rpioLib.rpioLibStrings.physical] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    gpiomem: js.UndefOr[scala.Boolean] = js.undefined,
+    mapping: rpioLib.rpioLibStrings.gpio | rpioLib.rpioLibStrings.physical = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(gpiomem)) __obj.updateDynamic("gpiomem")(gpiomem)
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

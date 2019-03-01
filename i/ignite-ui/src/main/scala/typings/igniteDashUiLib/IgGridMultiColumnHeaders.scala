@@ -32,3 +32,27 @@ trait IgGridMultiColumnHeaders
   var inherit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgGridMultiColumnHeaders {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridMultiColumnHeaders
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    groupCollapsed: GroupCollapsedEvent = null,
+    groupCollapsing: GroupCollapsingEvent = null,
+    groupExpanded: GroupExpandedEvent = null,
+    groupExpanding: GroupExpandingEvent = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgGridMultiColumnHeaders = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (groupCollapsed != null) __obj.updateDynamic("groupCollapsed")(groupCollapsed)
+    if (groupCollapsing != null) __obj.updateDynamic("groupCollapsing")(groupCollapsing)
+    if (groupExpanded != null) __obj.updateDynamic("groupExpanded")(groupExpanded)
+    if (groupExpanding != null) __obj.updateDynamic("groupExpanding")(groupExpanding)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    __obj.asInstanceOf[IgGridMultiColumnHeaders]
+  }
+}
+

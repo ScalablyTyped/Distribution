@@ -76,3 +76,41 @@ trait Event extends js.Object {
   def removeListener(callback: js.Function0[scala.Unit]): scala.Unit
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    addListener: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    hasListener: js.Function1[js.Function0[scala.Unit], scala.Boolean],
+    hasListeners: js.Function0[scala.Boolean],
+    removeListener: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    addRules: js.Function3[
+      /* eventName */ java.lang.String, 
+      /* webViewInstanceId */ scala.Double, 
+      /* rules */ js.Array[Rule], 
+      js.Promise[js.UndefOr[js.Array[Rule]]]
+    ] = null,
+    getRules: js.Function3[
+      /* eventName */ java.lang.String, 
+      /* webViewInstanceId */ scala.Double, 
+      /* ruleIdentifiers */ js.UndefOr[js.Array[java.lang.String]], 
+      js.Promise[js.Array[Rule]]
+    ] = null,
+    removeRules: js.Function3[
+      /* eventName */ java.lang.String, 
+      /* webViewInstanceId */ scala.Double, 
+      /* ruleIdentifiers */ js.UndefOr[js.Array[java.lang.String]], 
+      js.Promise[scala.Unit]
+    ] = null
+  ): Event = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addListener")(addListener)
+    __obj.updateDynamic("hasListener")(hasListener)
+    __obj.updateDynamic("hasListeners")(hasListeners)
+    __obj.updateDynamic("removeListener")(removeListener)
+    if (addRules != null) __obj.updateDynamic("addRules")(addRules)
+    if (getRules != null) __obj.updateDynamic("getRules")(getRules)
+    if (removeRules != null) __obj.updateDynamic("removeRules")(removeRules)
+    __obj.asInstanceOf[Event]
+  }
+}
+

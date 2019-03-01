@@ -11,3 +11,18 @@ trait VictoryStyleInterface extends js.Object {
   var parent: js.UndefOr[VictoryStyleObject] = js.undefined
 }
 
+object VictoryStyleInterface {
+  @scala.inline
+  def apply(
+    data: VictoryStyleObject = null,
+    labels: VictoryStyleObject = null,
+    parent: VictoryStyleObject = null
+  ): VictoryStyleInterface = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[VictoryStyleInterface]
+  }
+}
+

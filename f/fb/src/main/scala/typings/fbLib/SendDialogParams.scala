@@ -15,3 +15,24 @@ trait SendDialogParams extends js.Object {
   var to: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SendDialogParams {
+  @scala.inline
+  def apply(
+    app_id: java.lang.String,
+    link: java.lang.String,
+    method: java.lang.String,
+    display: js.Any = null,
+    redirect_uri: java.lang.String = null,
+    to: java.lang.String = null
+  ): SendDialogParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app_id")(app_id)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("method")(method)
+    if (display != null) __obj.updateDynamic("display")(display)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[SendDialogParams]
+  }
+}
+

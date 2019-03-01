@@ -12,3 +12,20 @@ trait DropOperatorOptions extends js.Object {
   var right: js.UndefOr[Name] = js.undefined
 }
 
+object DropOperatorOptions {
+  @scala.inline
+  def apply(
+    cascade: js.UndefOr[scala.Boolean] = js.undefined,
+    ifExists: js.UndefOr[scala.Boolean] = js.undefined,
+    left: Name = null,
+    right: Name = null
+  ): DropOperatorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
+    if (!js.isUndefined(ifExists)) __obj.updateDynamic("ifExists")(ifExists)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DropOperatorOptions]
+  }
+}
+

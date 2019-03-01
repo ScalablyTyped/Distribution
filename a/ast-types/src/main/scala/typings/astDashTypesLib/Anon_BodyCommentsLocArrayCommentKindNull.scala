@@ -13,3 +13,20 @@ trait Anon_BodyCommentsLocArrayCommentKindNull extends js.Object {
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
 }
 
+object Anon_BodyCommentsLocArrayCommentKindNull {
+  @scala.inline
+  def apply(
+    body: js.Array[
+      astDashTypesLib.genKindsMod.TSCallSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSConstructSignatureDeclarationKind | astDashTypesLib.genKindsMod.TSIndexSignatureKind | astDashTypesLib.genKindsMod.TSMethodSignatureKind | astDashTypesLib.genKindsMod.TSPropertySignatureKind
+    ],
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_BodyCommentsLocArrayCommentKindNull = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_BodyCommentsLocArrayCommentKindNull]
+  }
+}
+

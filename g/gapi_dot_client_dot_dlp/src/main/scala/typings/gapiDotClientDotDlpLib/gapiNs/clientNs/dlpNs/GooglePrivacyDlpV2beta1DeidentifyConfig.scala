@@ -19,3 +19,16 @@ trait GooglePrivacyDlpV2beta1DeidentifyConfig extends js.Object {
   var recordTransformations: js.UndefOr[GooglePrivacyDlpV2beta1RecordTransformations] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1DeidentifyConfig {
+  @scala.inline
+  def apply(
+    infoTypeTransformations: GooglePrivacyDlpV2beta1InfoTypeTransformations = null,
+    recordTransformations: GooglePrivacyDlpV2beta1RecordTransformations = null
+  ): GooglePrivacyDlpV2beta1DeidentifyConfig = {
+    val __obj = js.Dynamic.literal()
+    if (infoTypeTransformations != null) __obj.updateDynamic("infoTypeTransformations")(infoTypeTransformations)
+    if (recordTransformations != null) __obj.updateDynamic("recordTransformations")(recordTransformations)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1DeidentifyConfig]
+  }
+}
+

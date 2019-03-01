@@ -37,3 +37,38 @@ trait Anon_AltFieldsKeyLocaleMaxResults extends js.Object {
   var volumeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltFieldsKeyLocaleMaxResults {
+  @scala.inline
+  def apply(
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    locale: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    processingState: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    source: java.lang.String = null,
+    startIndex: scala.Int | scala.Double = null,
+    userIp: java.lang.String = null,
+    volumeId: java.lang.String = null
+  ): Anon_AltFieldsKeyLocaleMaxResults = {
+    val __obj = js.Dynamic.literal()
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (processingState != null) __obj.updateDynamic("processingState")(processingState)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    __obj.asInstanceOf[Anon_AltFieldsKeyLocaleMaxResults]
+  }
+}
+

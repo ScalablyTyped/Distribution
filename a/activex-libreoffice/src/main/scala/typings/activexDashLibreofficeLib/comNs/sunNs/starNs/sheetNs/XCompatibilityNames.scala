@@ -27,3 +27,20 @@ trait XCompatibilityNames
   def getCompatibilityNames(aProgrammaticName: java.lang.String): activexDashInteropLib.SafeArray[LocalizedName]
 }
 
+object XCompatibilityNames {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getCompatibilityNames: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[LocalizedName]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCompatibilityNames = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCompatibilityNames")(getCompatibilityNames)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCompatibilityNames]
+  }
+}
+

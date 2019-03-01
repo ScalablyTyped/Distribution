@@ -9,3 +9,12 @@ trait Anon_Allowed extends js.Object {
   var allowed: scala.Boolean
 }
 
+object Anon_Allowed {
+  @scala.inline
+  def apply(allowed: scala.Boolean): Anon_Allowed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowed")(allowed)
+    __obj.asInstanceOf[Anon_Allowed]
+  }
+}
+

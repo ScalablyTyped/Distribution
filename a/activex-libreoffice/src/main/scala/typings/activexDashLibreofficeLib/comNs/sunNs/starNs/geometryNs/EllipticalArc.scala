@@ -28,3 +28,26 @@ trait EllipticalArc extends js.Object {
   var XAxisRotation: scala.Double
 }
 
+object EllipticalArc {
+  @scala.inline
+  def apply(
+    EndPosition: RealPoint2D,
+    IsClockwiseSweep: scala.Boolean,
+    IsLargeArc: scala.Boolean,
+    RadiusX: scala.Double,
+    RadiusY: scala.Double,
+    StartPosition: RealPoint2D,
+    XAxisRotation: scala.Double
+  ): EllipticalArc = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EndPosition")(EndPosition)
+    __obj.updateDynamic("IsClockwiseSweep")(IsClockwiseSweep)
+    __obj.updateDynamic("IsLargeArc")(IsLargeArc)
+    __obj.updateDynamic("RadiusX")(RadiusX)
+    __obj.updateDynamic("RadiusY")(RadiusY)
+    __obj.updateDynamic("StartPosition")(StartPosition)
+    __obj.updateDynamic("XAxisRotation")(XAxisRotation)
+    __obj.asInstanceOf[EllipticalArc]
+  }
+}
+

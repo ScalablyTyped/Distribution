@@ -18,3 +18,12 @@ trait ICommandConfig extends js.Object {
   var resultKey: java.lang.String
 }
 
+object ICommandConfig {
+  @scala.inline
+  def apply(resultKey: java.lang.String): ICommandConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resultKey")(resultKey)
+    __obj.asInstanceOf[ICommandConfig]
+  }
+}
+

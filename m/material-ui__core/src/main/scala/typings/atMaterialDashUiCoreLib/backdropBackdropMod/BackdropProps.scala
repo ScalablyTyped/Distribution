@@ -17,3 +17,28 @@ import scala.scalajs.js.annotation._
   var transitionDuration: js.UndefOr[js.Any] = js.undefined
 }
 
+object BackdropProps {
+  @scala.inline
+  def apply(
+    open: scala.Boolean,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[BackdropClassKey]] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    invisible: js.UndefOr[scala.Boolean] = js.undefined,
+    onClick: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    transitionDuration: js.Any = null
+  ): BackdropProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("open")(open)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(invisible)) __obj.updateDynamic("invisible")(invisible)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration)
+    __obj.asInstanceOf[BackdropProps]
+  }
+}
+

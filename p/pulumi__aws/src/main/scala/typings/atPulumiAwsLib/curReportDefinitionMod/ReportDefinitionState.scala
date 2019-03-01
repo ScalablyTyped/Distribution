@@ -48,3 +48,30 @@ trait ReportDefinitionState extends js.Object {
   val timeUnit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ReportDefinitionState {
+  @scala.inline
+  def apply(
+    additionalArtifacts: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    additionalSchemaElements: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    compression: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    format: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    reportName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3Bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3Prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3Region: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    timeUnit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ReportDefinitionState = {
+    val __obj = js.Dynamic.literal()
+    if (additionalArtifacts != null) __obj.updateDynamic("additionalArtifacts")(additionalArtifacts.asInstanceOf[js.Any])
+    if (additionalSchemaElements != null) __obj.updateDynamic("additionalSchemaElements")(additionalSchemaElements.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (reportName != null) __obj.updateDynamic("reportName")(reportName.asInstanceOf[js.Any])
+    if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
+    if (s3Prefix != null) __obj.updateDynamic("s3Prefix")(s3Prefix.asInstanceOf[js.Any])
+    if (s3Region != null) __obj.updateDynamic("s3Region")(s3Region.asInstanceOf[js.Any])
+    if (timeUnit != null) __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReportDefinitionState]
+  }
+}
+

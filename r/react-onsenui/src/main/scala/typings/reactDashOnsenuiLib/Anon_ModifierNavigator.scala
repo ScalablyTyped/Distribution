@@ -12,3 +12,16 @@ trait Anon_ModifierNavigator extends js.Object {
   ] = js.undefined
 }
 
+object Anon_ModifierNavigator {
+  @scala.inline
+  def apply(
+    modifier: java.lang.String = null,
+    onClick: js.Function1[/* navigator */ reactDashOnsenuiLib.reactDashOnsenuiMod.Navigator, scala.Unit] = null
+  ): Anon_ModifierNavigator = {
+    val __obj = js.Dynamic.literal()
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    __obj.asInstanceOf[Anon_ModifierNavigator]
+  }
+}
+

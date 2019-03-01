@@ -32,3 +32,28 @@ trait BeforeDropEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeDropEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentCell: js.Any = null,
+    dragAndDropRange: js.Any = null,
+    model: Model = null,
+    preventAlert: js.UndefOr[scala.Boolean] = js.undefined,
+    sheetIdx: scala.Int | scala.Double = null,
+    target: stdLib.HTMLElement = null,
+    `type`: java.lang.String = null
+  ): BeforeDropEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell)
+    if (dragAndDropRange != null) __obj.updateDynamic("dragAndDropRange")(dragAndDropRange)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(preventAlert)) __obj.updateDynamic("preventAlert")(preventAlert)
+    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeDropEventArgs]
+  }
+}
+

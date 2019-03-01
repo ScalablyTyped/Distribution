@@ -66,3 +66,30 @@ trait XClob
   def positionOfClob(pattern: XClob, start: scala.Double): scala.Double
 }
 
+object XClob {
+  @scala.inline
+  def apply(
+    CharacterStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    acquire: js.Function0[scala.Unit],
+    getCharacterStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getSubString: js.Function2[scala.Double, scala.Double, java.lang.String],
+    length: js.Function0[scala.Double],
+    position: js.Function2[java.lang.String, scala.Double, scala.Double],
+    positionOfClob: js.Function2[XClob, scala.Double, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XClob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CharacterStream")(CharacterStream)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCharacterStream")(getCharacterStream)
+    __obj.updateDynamic("getSubString")(getSubString)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("positionOfClob")(positionOfClob)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XClob]
+  }
+}
+

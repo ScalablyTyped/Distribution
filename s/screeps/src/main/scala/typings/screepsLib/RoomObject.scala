@@ -22,3 +22,13 @@ trait RoomObject extends js.Object {
   var room: js.UndefOr[Room]
 }
 
+object RoomObject {
+  @scala.inline
+  def apply(pos: RoomPosition, room: Room = null): RoomObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pos")(pos)
+    if (room != null) __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[RoomObject]
+  }
+}
+

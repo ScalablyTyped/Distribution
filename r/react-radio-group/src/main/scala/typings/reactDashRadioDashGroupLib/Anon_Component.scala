@@ -18,3 +18,23 @@ trait Anon_Component extends js.Object {
   var selectedValue: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Component {
+  @scala.inline
+  def apply(
+    Component: reactLib.reactMod.ReactNs.ReactType[
+      reactDashRadioDashGroupLib.reactDashRadioDashGroupMod.Omit[
+        reactLib.reactMod.ReactNs.HTMLProps[_], 
+        reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.onChange | reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.role
+      ]
+    ] = null,
+    onChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    selectedValue: js.Any = null
+  ): Anon_Component = {
+    val __obj = js.Dynamic.literal()
+    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue)
+    __obj.asInstanceOf[Anon_Component]
+  }
+}
+

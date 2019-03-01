@@ -22,3 +22,12 @@ trait TextUserDefinedAttributesSupplier extends js.Object {
   var TextUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer
 }
 
+object TextUserDefinedAttributesSupplier {
+  @scala.inline
+  def apply(TextUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer): TextUserDefinedAttributesSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TextUserDefinedAttributes")(TextUserDefinedAttributes)
+    __obj.asInstanceOf[TextUserDefinedAttributesSupplier]
+  }
+}
+

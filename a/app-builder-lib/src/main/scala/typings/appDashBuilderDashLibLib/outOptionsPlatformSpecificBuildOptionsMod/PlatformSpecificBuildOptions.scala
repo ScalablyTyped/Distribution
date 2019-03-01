@@ -79,3 +79,52 @@ trait PlatformSpecificBuildOptions
   ] = js.undefined
 }
 
+object PlatformSpecificBuildOptions {
+  @scala.inline
+  def apply(
+    appId: java.lang.String = null,
+    artifactName: java.lang.String = null,
+    asar: AsarOptions | scala.Boolean = null,
+    asarUnpack: js.Array[java.lang.String] | java.lang.String = null,
+    compression: appDashBuilderDashLibLib.outCoreMod.CompressionLevel = null,
+    cscKeyPassword: java.lang.String = null,
+    cscLink: java.lang.String = null,
+    detectUpdateChannel: js.UndefOr[scala.Boolean] = js.undefined,
+    electronUpdaterCompatibility: java.lang.String = null,
+    extraFiles: (js.Array[FileSet | java.lang.String]) | FileSet | java.lang.String = null,
+    extraResources: (js.Array[FileSet | java.lang.String]) | FileSet | java.lang.String = null,
+    fileAssociations: js.Array[appDashBuilderDashLibLib.outOptionsFileAssociationMod.FileAssociation] | appDashBuilderDashLibLib.outOptionsFileAssociationMod.FileAssociation = null,
+    files: (js.Array[FileSet | java.lang.String]) | FileSet | java.lang.String = null,
+    forceCodeSigning: js.UndefOr[scala.Boolean] = js.undefined,
+    generateUpdatesFilesForAllChannels: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    protocols: js.Array[Protocol] | Protocol = null,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
+    releaseInfo: ReleaseInfo = null,
+    target: (js.Array[java.lang.String | appDashBuilderDashLibLib.outCoreMod.TargetConfiguration]) | java.lang.String | appDashBuilderDashLibLib.outCoreMod.TargetConfiguration = null
+  ): PlatformSpecificBuildOptions = {
+    val __obj = js.Dynamic.literal()
+    if (appId != null) __obj.updateDynamic("appId")(appId)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
+    if (asar != null) __obj.updateDynamic("asar")(asar.asInstanceOf[js.Any])
+    if (asarUnpack != null) __obj.updateDynamic("asarUnpack")(asarUnpack.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression)
+    if (cscKeyPassword != null) __obj.updateDynamic("cscKeyPassword")(cscKeyPassword)
+    if (cscLink != null) __obj.updateDynamic("cscLink")(cscLink)
+    if (!js.isUndefined(detectUpdateChannel)) __obj.updateDynamic("detectUpdateChannel")(detectUpdateChannel)
+    if (electronUpdaterCompatibility != null) __obj.updateDynamic("electronUpdaterCompatibility")(electronUpdaterCompatibility)
+    if (extraFiles != null) __obj.updateDynamic("extraFiles")(extraFiles.asInstanceOf[js.Any])
+    if (extraResources != null) __obj.updateDynamic("extraResources")(extraResources.asInstanceOf[js.Any])
+    if (fileAssociations != null) __obj.updateDynamic("fileAssociations")(fileAssociations.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceCodeSigning)) __obj.updateDynamic("forceCodeSigning")(forceCodeSigning)
+    if (!js.isUndefined(generateUpdatesFilesForAllChannels)) __obj.updateDynamic("generateUpdatesFilesForAllChannels")(generateUpdatesFilesForAllChannels)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (releaseInfo != null) __obj.updateDynamic("releaseInfo")(releaseInfo)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlatformSpecificBuildOptions]
+  }
+}
+

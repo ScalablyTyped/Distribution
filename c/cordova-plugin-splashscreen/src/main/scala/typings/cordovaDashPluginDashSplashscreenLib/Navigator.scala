@@ -10,3 +10,12 @@ trait Navigator extends js.Object {
   var splashscreen: Anon_Hide
 }
 
+object Navigator {
+  @scala.inline
+  def apply(splashscreen: Anon_Hide): Navigator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("splashscreen")(splashscreen)
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

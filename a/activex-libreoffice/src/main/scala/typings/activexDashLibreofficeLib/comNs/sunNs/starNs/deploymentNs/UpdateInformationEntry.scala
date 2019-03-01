@@ -16,3 +16,16 @@ trait UpdateInformationEntry extends js.Object {
   var UpdateDocument: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement
 }
 
+object UpdateInformationEntry {
+  @scala.inline
+  def apply(
+    Description: java.lang.String,
+    UpdateDocument: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement
+  ): UpdateInformationEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("UpdateDocument")(UpdateDocument)
+    __obj.asInstanceOf[UpdateInformationEntry]
+  }
+}
+

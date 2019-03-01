@@ -12,3 +12,13 @@ trait GroupLicenseUsersListResponse extends js.Object {
   var user: js.UndefOr[js.Array[User]] = js.undefined
 }
 
+object GroupLicenseUsersListResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, user: js.Array[User] = null): GroupLicenseUsersListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[GroupLicenseUsersListResponse]
+  }
+}
+

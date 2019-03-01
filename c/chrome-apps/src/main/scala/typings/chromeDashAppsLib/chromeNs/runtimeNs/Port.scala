@@ -24,3 +24,24 @@ trait Port extends js.Object {
   def postMessage(message: js.Object): scala.Unit
 }
 
+object Port {
+  @scala.inline
+  def apply(
+    disconnect: js.Function0[scala.Unit],
+    name: java.lang.String,
+    onDisconnect: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[Port, scala.Unit]],
+    onMessage: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function2[/* message */ _, Port, scala.Unit]],
+    postMessage: js.Function1[js.Object, scala.Unit],
+    sender: MessageSender = null
+  ): Port = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disconnect")(disconnect)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("onDisconnect")(onDisconnect)
+    __obj.updateDynamic("onMessage")(onMessage)
+    __obj.updateDynamic("postMessage")(postMessage)
+    if (sender != null) __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[Port]
+  }
+}
+

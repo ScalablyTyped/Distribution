@@ -21,3 +21,20 @@ trait Socketty extends js.Object {
   def createServer(httpServer: js.Any): SockettyServer
 }
 
+object Socketty {
+  @scala.inline
+  def apply(
+    connect: js.Function2[
+      java.lang.String, 
+      js.Function1[/* socket */ SockettySocket, scala.Unit], 
+      SockettySocket
+    ],
+    createServer: js.Function1[js.Any, SockettyServer]
+  ): Socketty = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connect")(connect)
+    __obj.updateDynamic("createServer")(createServer)
+    __obj.asInstanceOf[Socketty]
+  }
+}
+

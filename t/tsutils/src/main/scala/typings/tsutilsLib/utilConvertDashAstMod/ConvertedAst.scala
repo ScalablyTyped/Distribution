@@ -10,3 +10,13 @@ trait ConvertedAst extends js.Object {
   var wrapped: WrappedAst
 }
 
+object ConvertedAst {
+  @scala.inline
+  def apply(flat: js.Array[typescriptLib.typescriptMod.tsNs.Node], wrapped: WrappedAst): ConvertedAst = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("flat")(flat)
+    __obj.updateDynamic("wrapped")(wrapped)
+    __obj.asInstanceOf[ConvertedAst]
+  }
+}
+

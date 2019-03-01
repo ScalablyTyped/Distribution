@@ -13,3 +13,22 @@ trait ImageIcon extends js.Object {
   var url: java.lang.String
 }
 
+object ImageIcon {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    anchor: Point | PointLiteral | Position = null,
+    origin: Point | PointLiteral = null,
+    scaledSize: Size | SizeLiteral = null,
+    size: Size | SizeLiteral = null
+  ): ImageIcon = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (scaledSize != null) __obj.updateDynamic("scaledSize")(scaledSize.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageIcon]
+  }
+}
+

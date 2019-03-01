@@ -36,3 +36,26 @@ trait Model extends js.Object {
   var targetControlID: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    categoricalCurrentPage: scala.Int | scala.Double = null,
+    categoricalPageCount: scala.Int | scala.Double = null,
+    locale: java.lang.String = null,
+    mode: Mode | java.lang.String = null,
+    seriesCurrentPage: scala.Int | scala.Double = null,
+    seriesPageCount: scala.Int | scala.Double = null,
+    targetControlID: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (categoricalCurrentPage != null) __obj.updateDynamic("categoricalCurrentPage")(categoricalCurrentPage.asInstanceOf[js.Any])
+    if (categoricalPageCount != null) __obj.updateDynamic("categoricalPageCount")(categoricalPageCount.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (seriesCurrentPage != null) __obj.updateDynamic("seriesCurrentPage")(seriesCurrentPage.asInstanceOf[js.Any])
+    if (seriesPageCount != null) __obj.updateDynamic("seriesPageCount")(seriesPageCount.asInstanceOf[js.Any])
+    if (targetControlID != null) __obj.updateDynamic("targetControlID")(targetControlID)
+    __obj.asInstanceOf[Model]
+  }
+}
+

@@ -22,3 +22,20 @@ trait OperationMetadataV1Beta2 extends js.Object {
   var versionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OperationMetadataV1Beta2 {
+  @scala.inline
+  def apply(
+    request: stdLib.Record[java.lang.String, _] = null,
+    target: java.lang.String = null,
+    `type`: java.lang.String = null,
+    versionId: java.lang.String = null
+  ): OperationMetadataV1Beta2 = {
+    val __obj = js.Dynamic.literal()
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId)
+    __obj.asInstanceOf[OperationMetadataV1Beta2]
+  }
+}
+

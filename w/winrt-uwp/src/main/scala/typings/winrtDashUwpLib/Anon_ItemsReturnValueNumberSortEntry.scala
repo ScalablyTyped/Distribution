@@ -10,3 +10,13 @@ trait Anon_ItemsReturnValueNumberSortEntry extends js.Object {
   /** The number of items retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueNumberSortEntry {
+  @scala.inline
+  def apply(items: winrtDashUwpLib.WindowsNs.StorageNs.SearchNs.SortEntry, returnValue: scala.Double): Anon_ItemsReturnValueNumberSortEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ItemsReturnValueNumberSortEntry]
+  }
+}
+

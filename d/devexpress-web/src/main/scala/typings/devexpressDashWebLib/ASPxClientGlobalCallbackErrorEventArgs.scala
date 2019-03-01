@@ -16,3 +16,14 @@ trait ASPxClientGlobalCallbackErrorEventArgs extends ASPxClientCallbackErrorEven
   var control: ASPxClientControl
 }
 
+object ASPxClientGlobalCallbackErrorEventArgs {
+  @scala.inline
+  def apply(control: ASPxClientControl, handled: scala.Boolean, message: java.lang.String): ASPxClientGlobalCallbackErrorEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("control")(control)
+    __obj.updateDynamic("handled")(handled)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[ASPxClientGlobalCallbackErrorEventArgs]
+  }
+}
+

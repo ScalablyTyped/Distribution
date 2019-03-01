@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ShareVideoContent extends js.Object {
+trait ShareVideoContent extends ShareContent {
   /**
     * Common parameters for share content;
     */
@@ -34,5 +34,28 @@ trait ShareVideoContent extends js.Object {
     * Video to be shared.
     */
   var video: ShareVideo
+}
+
+object ShareVideoContent {
+  @scala.inline
+  def apply(
+    contentType: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.video,
+    video: ShareVideo,
+    commonParameters: ShareContentCommonParameters = null,
+    contentDescription: java.lang.String = null,
+    contentTitle: java.lang.String = null,
+    contentUrl: java.lang.String = null,
+    previewPhoto: SharePhoto = null
+  ): ShareVideoContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("video")(video)
+    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
+    if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription)
+    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    if (previewPhoto != null) __obj.updateDynamic("previewPhoto")(previewPhoto)
+    __obj.asInstanceOf[ShareVideoContent]
+  }
 }
 

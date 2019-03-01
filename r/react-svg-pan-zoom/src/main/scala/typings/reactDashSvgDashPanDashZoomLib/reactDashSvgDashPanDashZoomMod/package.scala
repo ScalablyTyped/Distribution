@@ -6,8 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashSvgDashPanDashZoomMod {
-  type Mode = reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.idle | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.panning | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.zooming
   type Props = RequiredProps with stdLib.Partial[OptionalProps]
-  type Tool = reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.auto | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.none | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.pan | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.`zoom-in` | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.`zoom-out`
-  type ToolbarPosition = reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.none | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.top | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.right | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.bottom | reactDashSvgDashPanDashZoomLib.reactDashSvgDashPanDashZoomLibStrings.left
 }

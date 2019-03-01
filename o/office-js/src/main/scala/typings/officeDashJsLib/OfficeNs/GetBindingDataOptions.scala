@@ -52,3 +52,30 @@ trait GetBindingDataOptions extends js.Object {
   var valueFormat: js.UndefOr[ValueFormat | java.lang.String] = js.undefined
 }
 
+object GetBindingDataOptions {
+  @scala.inline
+  def apply(
+    asyncContext: js.Any = null,
+    coercionType: CoercionType | java.lang.String = null,
+    columnCount: scala.Int | scala.Double = null,
+    filterType: FilterType | java.lang.String = null,
+    rowCount: scala.Int | scala.Double = null,
+    rows: java.lang.String = null,
+    startColumn: scala.Int | scala.Double = null,
+    startRow: scala.Int | scala.Double = null,
+    valueFormat: ValueFormat | java.lang.String = null
+  ): GetBindingDataOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (coercionType != null) __obj.updateDynamic("coercionType")(coercionType.asInstanceOf[js.Any])
+    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])
+    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (valueFormat != null) __obj.updateDynamic("valueFormat")(valueFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetBindingDataOptions]
+  }
+}
+

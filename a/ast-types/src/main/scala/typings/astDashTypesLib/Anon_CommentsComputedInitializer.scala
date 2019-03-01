@@ -16,3 +16,28 @@ trait Anon_CommentsComputedInitializer extends js.Object {
   var typeAnnotation: js.UndefOr[astDashTypesLib.genKindsMod.TSTypeAnnotationKind | scala.Null] = js.undefined
 }
 
+object Anon_CommentsComputedInitializer {
+  @scala.inline
+  def apply(
+    key: astDashTypesLib.genKindsMod.ExpressionKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    computed: js.UndefOr[scala.Boolean] = js.undefined,
+    initializer: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    optional: js.UndefOr[scala.Boolean] = js.undefined,
+    readonly: js.UndefOr[scala.Boolean] = js.undefined,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
+  ): Anon_CommentsComputedInitializer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
+    if (initializer != null) __obj.updateDynamic("initializer")(initializer)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    __obj.asInstanceOf[Anon_CommentsComputedInitializer]
+  }
+}
+

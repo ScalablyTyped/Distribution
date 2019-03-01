@@ -10,3 +10,13 @@ trait RestifyMiddleware extends Middleware {
   def register(app: restifyLib.restifyMod.Server): scala.Unit
 }
 
+object RestifyMiddleware {
+  @scala.inline
+  def apply(register: js.Function1[restifyLib.restifyMod.Server, scala.Unit], runner: Runner): RestifyMiddleware = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("register")(register)
+    __obj.updateDynamic("runner")(runner)
+    __obj.asInstanceOf[RestifyMiddleware]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ChartAnimationParameter extends js.Object {
   var chartInstance: js.UndefOr[js.Any] = js.undefined
 }
 
+object ChartAnimationParameter {
+  @scala.inline
+  def apply(animationObject: js.Any = null, chartInstance: js.Any = null): ChartAnimationParameter = {
+    val __obj = js.Dynamic.literal()
+    if (animationObject != null) __obj.updateDynamic("animationObject")(animationObject)
+    if (chartInstance != null) __obj.updateDynamic("chartInstance")(chartInstance)
+    __obj.asInstanceOf[ChartAnimationParameter]
+  }
+}
+

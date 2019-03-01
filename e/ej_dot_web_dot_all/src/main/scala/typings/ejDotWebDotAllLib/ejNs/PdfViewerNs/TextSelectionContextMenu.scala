@@ -23,3 +23,22 @@ trait TextSelectionContextMenu extends js.Object {
   var isStrikeoutEnable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TextSelectionContextMenu {
+  @scala.inline
+  def apply(
+    isCopyEnable: js.UndefOr[scala.Boolean] = js.undefined,
+    isEnable: js.UndefOr[scala.Boolean] = js.undefined,
+    isHighlightEnable: js.UndefOr[scala.Boolean] = js.undefined,
+    isSearchEnable: js.UndefOr[scala.Boolean] = js.undefined,
+    isStrikeoutEnable: js.UndefOr[scala.Boolean] = js.undefined
+  ): TextSelectionContextMenu = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isCopyEnable)) __obj.updateDynamic("isCopyEnable")(isCopyEnable)
+    if (!js.isUndefined(isEnable)) __obj.updateDynamic("isEnable")(isEnable)
+    if (!js.isUndefined(isHighlightEnable)) __obj.updateDynamic("isHighlightEnable")(isHighlightEnable)
+    if (!js.isUndefined(isSearchEnable)) __obj.updateDynamic("isSearchEnable")(isSearchEnable)
+    if (!js.isUndefined(isStrikeoutEnable)) __obj.updateDynamic("isStrikeoutEnable")(isStrikeoutEnable)
+    __obj.asInstanceOf[TextSelectionContextMenu]
+  }
+}
+

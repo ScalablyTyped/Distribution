@@ -12,3 +12,16 @@ trait CreateWorkspaceProposalRequest extends js.Object {
   var reviewers: js.UndefOr[js.Array[WorkspaceProposalUser]] = js.undefined
 }
 
+object CreateWorkspaceProposalRequest {
+  @scala.inline
+  def apply(
+    initialComment: WorkspaceProposalHistoryComment = null,
+    reviewers: js.Array[WorkspaceProposalUser] = null
+  ): CreateWorkspaceProposalRequest = {
+    val __obj = js.Dynamic.literal()
+    if (initialComment != null) __obj.updateDynamic("initialComment")(initialComment)
+    if (reviewers != null) __obj.updateDynamic("reviewers")(reviewers)
+    __obj.asInstanceOf[CreateWorkspaceProposalRequest]
+  }
+}
+

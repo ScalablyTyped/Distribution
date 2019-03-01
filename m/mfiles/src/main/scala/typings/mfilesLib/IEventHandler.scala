@@ -15,3 +15,26 @@ trait IEventHandler extends js.Object {
   def GetID(): scala.Double
 }
 
+object IEventHandler {
+  @scala.inline
+  def apply(
+    Active: scala.Boolean,
+    Clone: js.Function0[IEventHandler],
+    Description: java.lang.String,
+    EventType: mfilesLib.MFilesNs.MFEventHandlerType,
+    GUID: java.lang.String,
+    GetID: js.Function0[scala.Double],
+    VBScript: java.lang.String
+  ): IEventHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Active")(Active)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("EventType")(EventType)
+    __obj.updateDynamic("GUID")(GUID)
+    __obj.updateDynamic("GetID")(GetID)
+    __obj.updateDynamic("VBScript")(VBScript)
+    __obj.asInstanceOf[IEventHandler]
+  }
+}
+

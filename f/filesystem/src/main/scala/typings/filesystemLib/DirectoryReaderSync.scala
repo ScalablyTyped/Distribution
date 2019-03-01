@@ -21,3 +21,12 @@ trait DirectoryReaderSync extends js.Object {
   def readEntries(): js.Array[EntrySync]
 }
 
+object DirectoryReaderSync {
+  @scala.inline
+  def apply(readEntries: js.Function0[js.Array[EntrySync]]): DirectoryReaderSync = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("readEntries")(readEntries)
+    __obj.asInstanceOf[DirectoryReaderSync]
+  }
+}
+

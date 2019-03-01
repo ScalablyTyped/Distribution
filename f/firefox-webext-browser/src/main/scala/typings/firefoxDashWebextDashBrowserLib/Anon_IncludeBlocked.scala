@@ -18,3 +18,22 @@ trait Anon_IncludeBlocked extends js.Object {
   var providers: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_IncludeBlocked {
+  @scala.inline
+  def apply(
+    includeBlocked: js.UndefOr[scala.Boolean] = js.undefined,
+    includeFavicon: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null,
+    onePerDomain: js.UndefOr[scala.Boolean] = js.undefined,
+    providers: js.Array[java.lang.String] = null
+  ): Anon_IncludeBlocked = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeBlocked)) __obj.updateDynamic("includeBlocked")(includeBlocked)
+    if (!js.isUndefined(includeFavicon)) __obj.updateDynamic("includeFavicon")(includeFavicon)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(onePerDomain)) __obj.updateDynamic("onePerDomain")(onePerDomain)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    __obj.asInstanceOf[Anon_IncludeBlocked]
+  }
+}
+

@@ -21,3 +21,13 @@ trait ASPxClientCrosshairPosition extends js.Object {
   var offsetY: scala.Double
 }
 
+object ASPxClientCrosshairPosition {
+  @scala.inline
+  def apply(offsetX: scala.Double, offsetY: scala.Double): ASPxClientCrosshairPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offsetX")(offsetX)
+    __obj.updateDynamic("offsetY")(offsetY)
+    __obj.asInstanceOf[ASPxClientCrosshairPosition]
+  }
+}
+

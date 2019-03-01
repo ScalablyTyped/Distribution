@@ -132,3 +132,76 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    currencySymbol: java.lang.String = null,
+    decimalPlaces: scala.Int | scala.Double = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableStrictMode: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
+    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    groupSeparator: java.lang.String = null,
+    groupSize: java.lang.String = null,
+    height: java.lang.String = null,
+    htmlAttributes: js.Any = null,
+    incrementStep: scala.Int | scala.Double = null,
+    locale: java.lang.String = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    negativePattern: java.lang.String = null,
+    positivePattern: java.lang.String = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    showSpinButton: js.UndefOr[scala.Boolean] = js.undefined,
+    validateOnType: js.UndefOr[scala.Boolean] = js.undefined,
+    validationMessage: js.Any = null,
+    validationRules: js.Any = null,
+    value: scala.Double | java.lang.String = null,
+    watermarkText: java.lang.String = null,
+    width: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (currencySymbol != null) __obj.updateDynamic("currencySymbol")(currencySymbol)
+    if (decimalPlaces != null) __obj.updateDynamic("decimalPlaces")(decimalPlaces.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableStrictMode)) __obj.updateDynamic("enableStrictMode")(enableStrictMode)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
+    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator)
+    if (groupSize != null) __obj.updateDynamic("groupSize")(groupSize)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (incrementStep != null) __obj.updateDynamic("incrementStep")(incrementStep.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (negativePattern != null) __obj.updateDynamic("negativePattern")(negativePattern)
+    if (positivePattern != null) __obj.updateDynamic("positivePattern")(positivePattern)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (!js.isUndefined(showSpinButton)) __obj.updateDynamic("showSpinButton")(showSpinButton)
+    if (!js.isUndefined(validateOnType)) __obj.updateDynamic("validateOnType")(validateOnType)
+    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (watermarkText != null) __obj.updateDynamic("watermarkText")(watermarkText)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Model]
+  }
+}
+

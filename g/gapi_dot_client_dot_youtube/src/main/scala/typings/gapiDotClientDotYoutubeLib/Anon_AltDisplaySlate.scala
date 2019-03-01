@@ -72,3 +72,40 @@ trait Anon_AltDisplaySlate extends js.Object {
   var walltime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltDisplaySlate {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    part: java.lang.String,
+    alt: java.lang.String = null,
+    displaySlate: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    offsetTimeMs: java.lang.String = null,
+    onBehalfOfContentOwner: java.lang.String = null,
+    onBehalfOfContentOwnerChannel: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null,
+    walltime: java.lang.String = null
+  ): Anon_AltDisplaySlate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("part")(part)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(displaySlate)) __obj.updateDynamic("displaySlate")(displaySlate)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (offsetTimeMs != null) __obj.updateDynamic("offsetTimeMs")(offsetTimeMs)
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
+    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (walltime != null) __obj.updateDynamic("walltime")(walltime)
+    __obj.asInstanceOf[Anon_AltDisplaySlate]
+  }
+}
+

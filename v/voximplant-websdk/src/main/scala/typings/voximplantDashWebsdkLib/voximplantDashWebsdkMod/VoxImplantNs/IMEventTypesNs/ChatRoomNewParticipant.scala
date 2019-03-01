@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when new participant joined the chat room
 		*/
-trait ChatRoomNewParticipant extends js.Object {
+trait ChatRoomNewParticipant
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User display name
   			*/
@@ -21,5 +22,16 @@ trait ChatRoomNewParticipant extends js.Object {
   			* Room id
   			*/
   var room: java.lang.String
+}
+
+object ChatRoomNewParticipant {
+  @scala.inline
+  def apply(displayName: java.lang.String, participant: java.lang.String, room: java.lang.String): ChatRoomNewParticipant = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("participant")(participant)
+    __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[ChatRoomNewParticipant]
+  }
 }
 

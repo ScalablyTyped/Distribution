@@ -11,3 +11,18 @@ trait Anon_FamilySizeWeight extends js.Object {
   var weight: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_FamilySizeWeight {
+  @scala.inline
+  def apply(
+    family: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    weight: scala.Int | scala.Double = null
+  ): Anon_FamilySizeWeight = {
+    val __obj = js.Dynamic.literal()
+    if (family != null) __obj.updateDynamic("family")(family)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FamilySizeWeight]
+  }
+}
+

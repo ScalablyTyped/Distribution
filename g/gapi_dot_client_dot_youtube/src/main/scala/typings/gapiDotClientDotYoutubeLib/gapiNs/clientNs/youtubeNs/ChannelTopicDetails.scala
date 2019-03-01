@@ -12,3 +12,13 @@ trait ChannelTopicDetails extends js.Object {
   var topicIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ChannelTopicDetails {
+  @scala.inline
+  def apply(topicCategories: js.Array[java.lang.String] = null, topicIds: js.Array[java.lang.String] = null): ChannelTopicDetails = {
+    val __obj = js.Dynamic.literal()
+    if (topicCategories != null) __obj.updateDynamic("topicCategories")(topicCategories)
+    if (topicIds != null) __obj.updateDynamic("topicIds")(topicIds)
+    __obj.asInstanceOf[ChannelTopicDetails]
+  }
+}
+

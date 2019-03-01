@@ -39,3 +39,22 @@ trait Documentation extends js.Object {
   var summary: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Documentation {
+  @scala.inline
+  def apply(
+    documentationRootUrl: java.lang.String = null,
+    overview: java.lang.String = null,
+    pages: js.Array[Page] = null,
+    rules: js.Array[DocumentationRule] = null,
+    summary: java.lang.String = null
+  ): Documentation = {
+    val __obj = js.Dynamic.literal()
+    if (documentationRootUrl != null) __obj.updateDynamic("documentationRootUrl")(documentationRootUrl)
+    if (overview != null) __obj.updateDynamic("overview")(overview)
+    if (pages != null) __obj.updateDynamic("pages")(pages)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    __obj.asInstanceOf[Documentation]
+  }
+}
+

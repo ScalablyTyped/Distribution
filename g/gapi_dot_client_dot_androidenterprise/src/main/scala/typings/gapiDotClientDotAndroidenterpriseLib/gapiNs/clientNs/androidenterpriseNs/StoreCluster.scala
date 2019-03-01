@@ -26,3 +26,22 @@ trait StoreCluster extends js.Object {
   var productId: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object StoreCluster {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: js.Array[LocalizedText] = null,
+    orderInPage: java.lang.String = null,
+    productId: js.Array[java.lang.String] = null
+  ): StoreCluster = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (orderInPage != null) __obj.updateDynamic("orderInPage")(orderInPage)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    __obj.asInstanceOf[StoreCluster]
+  }
+}
+

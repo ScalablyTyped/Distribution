@@ -102,3 +102,53 @@ trait IgTreeGridSelection
   var wrapAround: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgTreeGridSelection {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTreeGridSelection
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    activation: js.UndefOr[scala.Boolean] = js.undefined,
+    activeCellChanged: ActiveCellChangedEvent = null,
+    activeCellChanging: ActiveCellChangingEvent = null,
+    activeRowChanged: ActiveRowChangedEvent = null,
+    activeRowChanging: ActiveRowChangingEvent = null,
+    allowMultipleRangeSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    cellSelectionChanged: CellSelectionChangedEvent = null,
+    cellSelectionChanging: CellSelectionChangingEvent = null,
+    mode: java.lang.String = null,
+    mouseDragSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    multipleCellSelectOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    multipleSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    persist: js.UndefOr[scala.Boolean] = js.undefined,
+    rowSelectionChanged: RowSelectionChangedEvent = null,
+    rowSelectionChanging: RowSelectionChangingEvent = null,
+    skipChildren: js.UndefOr[scala.Boolean] = js.undefined,
+    touchDragSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapAround: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgTreeGridSelection = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(activation)) __obj.updateDynamic("activation")(activation)
+    if (activeCellChanged != null) __obj.updateDynamic("activeCellChanged")(activeCellChanged)
+    if (activeCellChanging != null) __obj.updateDynamic("activeCellChanging")(activeCellChanging)
+    if (activeRowChanged != null) __obj.updateDynamic("activeRowChanged")(activeRowChanged)
+    if (activeRowChanging != null) __obj.updateDynamic("activeRowChanging")(activeRowChanging)
+    if (!js.isUndefined(allowMultipleRangeSelection)) __obj.updateDynamic("allowMultipleRangeSelection")(allowMultipleRangeSelection)
+    if (cellSelectionChanged != null) __obj.updateDynamic("cellSelectionChanged")(cellSelectionChanged)
+    if (cellSelectionChanging != null) __obj.updateDynamic("cellSelectionChanging")(cellSelectionChanging)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (!js.isUndefined(mouseDragSelect)) __obj.updateDynamic("mouseDragSelect")(mouseDragSelect)
+    if (!js.isUndefined(multipleCellSelectOnClick)) __obj.updateDynamic("multipleCellSelectOnClick")(multipleCellSelectOnClick)
+    if (!js.isUndefined(multipleSelection)) __obj.updateDynamic("multipleSelection")(multipleSelection)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (rowSelectionChanged != null) __obj.updateDynamic("rowSelectionChanged")(rowSelectionChanged)
+    if (rowSelectionChanging != null) __obj.updateDynamic("rowSelectionChanging")(rowSelectionChanging)
+    if (!js.isUndefined(skipChildren)) __obj.updateDynamic("skipChildren")(skipChildren)
+    if (!js.isUndefined(touchDragSelect)) __obj.updateDynamic("touchDragSelect")(touchDragSelect)
+    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround)
+    __obj.asInstanceOf[IgTreeGridSelection]
+  }
+}
+

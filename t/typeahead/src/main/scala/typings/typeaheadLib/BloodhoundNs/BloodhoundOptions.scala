@@ -66,3 +66,30 @@ trait BloodhoundOptions[T] extends js.Object {
   def queryTokenizer(query: java.lang.String): js.Array[java.lang.String]
 }
 
+object BloodhoundOptions {
+  @scala.inline
+  def apply[T](
+    datumTokenizer: js.Function1[T, js.Array[java.lang.String]],
+    queryTokenizer: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    identify: js.Function1[/* datum */ T, scala.Double] = null,
+    initialize: js.UndefOr[scala.Boolean] = js.undefined,
+    local: js.Array[T] | js.Function0[js.Array[T]] = null,
+    prefetch: java.lang.String | PrefetchOptions[T] = null,
+    remote: java.lang.String | RemoteOptions[T] = null,
+    sorter: js.Function2[/* a */ T, /* b */ T, scala.Double] = null,
+    sufficient: scala.Int | scala.Double = null
+  ): BloodhoundOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("datumTokenizer")(datumTokenizer)
+    __obj.updateDynamic("queryTokenizer")(queryTokenizer)
+    if (identify != null) __obj.updateDynamic("identify")(identify)
+    if (!js.isUndefined(initialize)) __obj.updateDynamic("initialize")(initialize)
+    if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
+    if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
+    if (remote != null) __obj.updateDynamic("remote")(remote.asInstanceOf[js.Any])
+    if (sorter != null) __obj.updateDynamic("sorter")(sorter)
+    if (sufficient != null) __obj.updateDynamic("sufficient")(sufficient.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BloodhoundOptions[T]]
+  }
+}
+

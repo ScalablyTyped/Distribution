@@ -10,3 +10,16 @@ trait Actions
   var routing: routeActions
 }
 
+object Actions {
+  @scala.inline
+  def apply(
+    routing: routeActions,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Actions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("routing")(routing)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Actions]
+  }
+}
+

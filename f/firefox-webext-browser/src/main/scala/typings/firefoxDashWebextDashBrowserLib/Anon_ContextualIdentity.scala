@@ -10,3 +10,14 @@ trait Anon_ContextualIdentity extends js.Object {
   var contextualIdentity: firefoxDashWebextDashBrowserLib.browserNs.contextualIdentitiesNs.ContextualIdentity
 }
 
+object Anon_ContextualIdentity {
+  @scala.inline
+  def apply(
+    contextualIdentity: firefoxDashWebextDashBrowserLib.browserNs.contextualIdentitiesNs.ContextualIdentity
+  ): Anon_ContextualIdentity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contextualIdentity")(contextualIdentity)
+    __obj.asInstanceOf[Anon_ContextualIdentity]
+  }
+}
+

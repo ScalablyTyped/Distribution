@@ -61,3 +61,34 @@ trait JobOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object JobOptions {
+  @scala.inline
+  def apply(
+    attempts: scala.Int | scala.Double = null,
+    backoff: scala.Double | BackoffOptions = null,
+    delay: scala.Int | scala.Double = null,
+    jobId: JobId = null,
+    lifo: js.UndefOr[scala.Boolean] = js.undefined,
+    priority: scala.Int | scala.Double = null,
+    removeOnComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    removeOnFail: js.UndefOr[scala.Boolean] = js.undefined,
+    repeat: CronRepeatOptions | EveryRepeatOptions = null,
+    stackTraceLimit: scala.Int | scala.Double = null,
+    timeout: scala.Int | scala.Double = null
+  ): JobOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
+    if (backoff != null) __obj.updateDynamic("backoff")(backoff.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
+    if (!js.isUndefined(lifo)) __obj.updateDynamic("lifo")(lifo)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeOnComplete)) __obj.updateDynamic("removeOnComplete")(removeOnComplete)
+    if (!js.isUndefined(removeOnFail)) __obj.updateDynamic("removeOnFail")(removeOnFail)
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    if (stackTraceLimit != null) __obj.updateDynamic("stackTraceLimit")(stackTraceLimit.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JobOptions]
+  }
+}
+

@@ -55,3 +55,32 @@ trait Props
   var maskChar: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    mask: java.lang.String,
+    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] = null,
+    alwaysShowMask: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeMaskedValueChange: js.Function4[
+      /* newState */ InputState, 
+      /* oldState */ InputState, 
+      /* userInput */ java.lang.String, 
+      /* maskOptions */ MaskOptions, 
+      InputState
+    ] = null,
+    formatChars: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    inputRef: reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement] = null,
+    maskChar: java.lang.String = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mask")(mask)
+    js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
+    if (!js.isUndefined(alwaysShowMask)) __obj.updateDynamic("alwaysShowMask")(alwaysShowMask)
+    if (beforeMaskedValueChange != null) __obj.updateDynamic("beforeMaskedValueChange")(beforeMaskedValueChange)
+    if (formatChars != null) __obj.updateDynamic("formatChars")(formatChars)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (maskChar != null) __obj.updateDynamic("maskChar")(maskChar)
+    __obj.asInstanceOf[Props]
+  }
+}
+

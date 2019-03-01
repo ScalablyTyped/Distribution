@@ -11,3 +11,14 @@ trait PartEvent extends js.Object {
   var nick: java.lang.String
 }
 
+object PartEvent {
+  @scala.inline
+  def apply(channels: js.Array[java.lang.String], hostmask: java.lang.String, nick: java.lang.String): PartEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channels")(channels)
+    __obj.updateDynamic("hostmask")(hostmask)
+    __obj.updateDynamic("nick")(nick)
+    __obj.asInstanceOf[PartEvent]
+  }
+}
+

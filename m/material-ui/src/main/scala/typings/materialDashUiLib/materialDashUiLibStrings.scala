@@ -25,19 +25,27 @@ object materialDashUiLibStrings {
   sealed trait before extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
   
   @js.native
-  sealed trait `bottom-center` extends js.Object
+  sealed trait `bottom-center`
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter
   
   @js.native
-  sealed trait `bottom-left` extends js.Object
+  sealed trait `bottom-left`
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.corners
+       with materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter
   
   @js.native
-  sealed trait `bottom-right` extends js.Object
+  sealed trait `bottom-right`
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.corners
+       with materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.tooltipHorizontal
+       with materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
   
   @js.native
   sealed trait determinate extends js.Object
@@ -46,7 +54,8 @@ object materialDashUiLibStrings {
   sealed trait dialog extends js.Object
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.direction
   
   @js.native
   sealed trait hide extends js.Object
@@ -64,13 +73,17 @@ object materialDashUiLibStrings {
   sealed trait landscape extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.direction
+       with materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.horizontal
+       with materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.tooltipHorizontal
   
   @js.native
   sealed trait loading extends js.Object
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.horizontal
   
   @js.native
   sealed trait portrait extends js.Object
@@ -79,22 +92,32 @@ object materialDashUiLibStrings {
   sealed trait ready extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.direction
+       with materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.horizontal
+       with materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.tooltipHorizontal
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.vertical
   
   @js.native
-  sealed trait `top-center` extends js.Object
+  sealed trait `top-center`
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter
   
   @js.native
-  sealed trait `top-left` extends js.Object
+  sealed trait `top-left`
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.corners
+       with materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter
   
   @js.native
-  sealed trait `top-right` extends js.Object
+  sealed trait `top-right`
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.corners
+       with materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.cornersAndCenter
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.direction
   
   @js.native
   sealed trait vertical extends js.Object

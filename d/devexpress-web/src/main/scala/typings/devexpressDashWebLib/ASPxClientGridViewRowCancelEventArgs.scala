@@ -16,3 +16,13 @@ trait ASPxClientGridViewRowCancelEventArgs extends ASPxClientCancelEventArgs {
   var visibleIndex: scala.Double
 }
 
+object ASPxClientGridViewRowCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, visibleIndex: scala.Double): ASPxClientGridViewRowCancelEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[ASPxClientGridViewRowCancelEventArgs]
+  }
+}
+

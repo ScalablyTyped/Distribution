@@ -14,3 +14,18 @@ trait ManagedConfiguration extends js.Object {
   var productId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ManagedConfiguration {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    managedProperty: js.Array[ManagedProperty] = null,
+    productId: java.lang.String = null
+  ): ManagedConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (managedProperty != null) __obj.updateDynamic("managedProperty")(managedProperty)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    __obj.asInstanceOf[ManagedConfiguration]
+  }
+}
+

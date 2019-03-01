@@ -53,3 +53,32 @@ trait ZoneState extends js.Object {
   val zoneId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ZoneState {
+  @scala.inline
+  def apply(
+    comment: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    delegationSetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    forceDestroy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    nameServers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcRegion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcs: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_VpcIdVpcRegion]]] = null,
+    zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ZoneState = {
+    val __obj = js.Dynamic.literal()
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (delegationSetId != null) __obj.updateDynamic("delegationSetId")(delegationSetId.asInstanceOf[js.Any])
+    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nameServers != null) __obj.updateDynamic("nameServers")(nameServers.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    if (vpcRegion != null) __obj.updateDynamic("vpcRegion")(vpcRegion.asInstanceOf[js.Any])
+    if (vpcs != null) __obj.updateDynamic("vpcs")(vpcs.asInstanceOf[js.Any])
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ZoneState]
+  }
+}
+

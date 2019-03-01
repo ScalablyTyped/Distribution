@@ -27,3 +27,18 @@ trait IPathIntersection extends js.Object {
   var path2Angles: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object IPathIntersection {
+  @scala.inline
+  def apply(
+    intersectionPoints: js.Array[IPoint],
+    path1Angles: js.Array[scala.Double] = null,
+    path2Angles: js.Array[scala.Double] = null
+  ): IPathIntersection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("intersectionPoints")(intersectionPoints)
+    if (path1Angles != null) __obj.updateDynamic("path1Angles")(path1Angles)
+    if (path2Angles != null) __obj.updateDynamic("path2Angles")(path2Angles)
+    __obj.asInstanceOf[IPathIntersection]
+  }
+}
+

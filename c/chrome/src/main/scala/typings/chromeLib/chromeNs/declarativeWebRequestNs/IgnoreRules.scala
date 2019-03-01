@@ -9,3 +9,12 @@ trait IgnoreRules extends js.Object {
   var lowerPriorityThan: scala.Double
 }
 
+object IgnoreRules {
+  @scala.inline
+  def apply(lowerPriorityThan: scala.Double): IgnoreRules = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lowerPriorityThan")(lowerPriorityThan)
+    __obj.asInstanceOf[IgnoreRules]
+  }
+}
+

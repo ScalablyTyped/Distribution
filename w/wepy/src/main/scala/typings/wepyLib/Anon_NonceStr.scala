@@ -13,3 +13,21 @@ trait Anon_NonceStr extends js.Object {
   var timeStamp: java.lang.String
 }
 
+object Anon_NonceStr {
+  @scala.inline
+  def apply(
+    nonceStr: java.lang.String,
+    `package`: java.lang.String,
+    paySign: java.lang.String,
+    signType: java.lang.String,
+    timeStamp: java.lang.String
+  ): Anon_NonceStr = {
+    val __obj = js.Dynamic.literal(`package` = `package`)
+    __obj.updateDynamic("nonceStr")(nonceStr)
+    __obj.updateDynamic("paySign")(paySign)
+    __obj.updateDynamic("signType")(signType)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.asInstanceOf[Anon_NonceStr]
+  }
+}
+

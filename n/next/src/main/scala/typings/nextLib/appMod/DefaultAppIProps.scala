@@ -9,3 +9,12 @@ trait DefaultAppIProps extends js.Object {
   var pageProps: js.Any
 }
 
+object DefaultAppIProps {
+  @scala.inline
+  def apply(pageProps: js.Any): DefaultAppIProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pageProps")(pageProps)
+    __obj.asInstanceOf[DefaultAppIProps]
+  }
+}
+

@@ -10,3 +10,16 @@ trait SurfaceTooltip extends js.Object {
   var appendTo: js.UndefOr[java.lang.String | kendoDashUiLib.JQuery] = js.undefined
 }
 
+object SurfaceTooltip {
+  @scala.inline
+  def apply(
+    animation: scala.Boolean | SurfaceTooltipAnimation = null,
+    appendTo: java.lang.String | kendoDashUiLib.JQuery = null
+  ): SurfaceTooltip = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SurfaceTooltip]
+  }
+}
+

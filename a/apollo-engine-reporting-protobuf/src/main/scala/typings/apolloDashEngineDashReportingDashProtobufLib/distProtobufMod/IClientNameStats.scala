@@ -28,3 +28,32 @@ trait IClientNameStats extends js.Object {
   var rootErrorStats: js.UndefOr[IPathErrorStats | scala.Null] = js.undefined
 }
 
+object IClientNameStats {
+  @scala.inline
+  def apply(
+    cacheHitsPerVersion: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
+    cacheLatencyCount: js.Array[scala.Double] = null,
+    latencyCount: js.Array[scala.Double] = null,
+    persistedQueryHitsPerVersion: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
+    persistedQueryMissesPerVersion: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
+    privateCacheTtlCount: js.Array[scala.Double] = null,
+    publicCacheTtlCount: js.Array[scala.Double] = null,
+    requestsCountPerVersion: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
+    requestsWithErrorsCount: scala.Int | scala.Double = null,
+    rootErrorStats: IPathErrorStats = null
+  ): IClientNameStats = {
+    val __obj = js.Dynamic.literal()
+    if (cacheHitsPerVersion != null) __obj.updateDynamic("cacheHitsPerVersion")(cacheHitsPerVersion)
+    if (cacheLatencyCount != null) __obj.updateDynamic("cacheLatencyCount")(cacheLatencyCount)
+    if (latencyCount != null) __obj.updateDynamic("latencyCount")(latencyCount)
+    if (persistedQueryHitsPerVersion != null) __obj.updateDynamic("persistedQueryHitsPerVersion")(persistedQueryHitsPerVersion)
+    if (persistedQueryMissesPerVersion != null) __obj.updateDynamic("persistedQueryMissesPerVersion")(persistedQueryMissesPerVersion)
+    if (privateCacheTtlCount != null) __obj.updateDynamic("privateCacheTtlCount")(privateCacheTtlCount)
+    if (publicCacheTtlCount != null) __obj.updateDynamic("publicCacheTtlCount")(publicCacheTtlCount)
+    if (requestsCountPerVersion != null) __obj.updateDynamic("requestsCountPerVersion")(requestsCountPerVersion)
+    if (requestsWithErrorsCount != null) __obj.updateDynamic("requestsWithErrorsCount")(requestsWithErrorsCount.asInstanceOf[js.Any])
+    if (rootErrorStats != null) __obj.updateDynamic("rootErrorStats")(rootErrorStats)
+    __obj.asInstanceOf[IClientNameStats]
+  }
+}
+

@@ -64,3 +64,30 @@ trait ClusterUpdate extends js.Object {
   var desiredNodeVersion: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClusterUpdate {
+  @scala.inline
+  def apply(
+    desiredAddonsConfig: AddonsConfig = null,
+    desiredImageType: java.lang.String = null,
+    desiredLocations: js.Array[java.lang.String] = null,
+    desiredMasterAuthorizedNetworksConfig: MasterAuthorizedNetworksConfig = null,
+    desiredMasterVersion: java.lang.String = null,
+    desiredMonitoringService: java.lang.String = null,
+    desiredNodePoolAutoscaling: NodePoolAutoscaling = null,
+    desiredNodePoolId: java.lang.String = null,
+    desiredNodeVersion: java.lang.String = null
+  ): ClusterUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (desiredAddonsConfig != null) __obj.updateDynamic("desiredAddonsConfig")(desiredAddonsConfig)
+    if (desiredImageType != null) __obj.updateDynamic("desiredImageType")(desiredImageType)
+    if (desiredLocations != null) __obj.updateDynamic("desiredLocations")(desiredLocations)
+    if (desiredMasterAuthorizedNetworksConfig != null) __obj.updateDynamic("desiredMasterAuthorizedNetworksConfig")(desiredMasterAuthorizedNetworksConfig)
+    if (desiredMasterVersion != null) __obj.updateDynamic("desiredMasterVersion")(desiredMasterVersion)
+    if (desiredMonitoringService != null) __obj.updateDynamic("desiredMonitoringService")(desiredMonitoringService)
+    if (desiredNodePoolAutoscaling != null) __obj.updateDynamic("desiredNodePoolAutoscaling")(desiredNodePoolAutoscaling)
+    if (desiredNodePoolId != null) __obj.updateDynamic("desiredNodePoolId")(desiredNodePoolId)
+    if (desiredNodeVersion != null) __obj.updateDynamic("desiredNodeVersion")(desiredNodeVersion)
+    __obj.asInstanceOf[ClusterUpdate]
+  }
+}
+

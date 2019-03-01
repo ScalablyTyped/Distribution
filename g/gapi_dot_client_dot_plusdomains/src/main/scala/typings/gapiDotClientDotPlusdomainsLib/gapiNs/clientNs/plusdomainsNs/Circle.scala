@@ -22,3 +22,26 @@ trait Circle extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Circle {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    displayName: java.lang.String = null,
+    etag: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    people: gapiDotClientDotPlusdomainsLib.Anon_TotalItems = null,
+    selfLink: java.lang.String = null
+  ): Circle = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (people != null) __obj.updateDynamic("people")(people)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Circle]
+  }
+}
+

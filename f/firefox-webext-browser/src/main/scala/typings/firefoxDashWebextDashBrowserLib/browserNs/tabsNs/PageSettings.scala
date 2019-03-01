@@ -53,3 +53,56 @@ trait PageSettings extends js.Object {
   var shrinkToFit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PageSettings {
+  @scala.inline
+  def apply(
+    edgeBottom: scala.Int | scala.Double = null,
+    edgeLeft: scala.Int | scala.Double = null,
+    edgeRight: scala.Int | scala.Double = null,
+    edgeTop: scala.Int | scala.Double = null,
+    footerCenter: java.lang.String = null,
+    footerLeft: java.lang.String = null,
+    footerRight: java.lang.String = null,
+    headerCenter: java.lang.String = null,
+    headerLeft: java.lang.String = null,
+    headerRight: java.lang.String = null,
+    marginBottom: scala.Int | scala.Double = null,
+    marginLeft: scala.Int | scala.Double = null,
+    marginRight: scala.Int | scala.Double = null,
+    marginTop: scala.Int | scala.Double = null,
+    orientation: scala.Int | scala.Double = null,
+    paperHeight: scala.Int | scala.Double = null,
+    paperSizeUnit: scala.Int | scala.Double = null,
+    paperWidth: scala.Int | scala.Double = null,
+    scaling: scala.Int | scala.Double = null,
+    showBackgroundColors: js.UndefOr[scala.Boolean] = js.undefined,
+    showBackgroundImages: js.UndefOr[scala.Boolean] = js.undefined,
+    shrinkToFit: js.UndefOr[scala.Boolean] = js.undefined
+  ): PageSettings = {
+    val __obj = js.Dynamic.literal()
+    if (edgeBottom != null) __obj.updateDynamic("edgeBottom")(edgeBottom.asInstanceOf[js.Any])
+    if (edgeLeft != null) __obj.updateDynamic("edgeLeft")(edgeLeft.asInstanceOf[js.Any])
+    if (edgeRight != null) __obj.updateDynamic("edgeRight")(edgeRight.asInstanceOf[js.Any])
+    if (edgeTop != null) __obj.updateDynamic("edgeTop")(edgeTop.asInstanceOf[js.Any])
+    if (footerCenter != null) __obj.updateDynamic("footerCenter")(footerCenter)
+    if (footerLeft != null) __obj.updateDynamic("footerLeft")(footerLeft)
+    if (footerRight != null) __obj.updateDynamic("footerRight")(footerRight)
+    if (headerCenter != null) __obj.updateDynamic("headerCenter")(headerCenter)
+    if (headerLeft != null) __obj.updateDynamic("headerLeft")(headerLeft)
+    if (headerRight != null) __obj.updateDynamic("headerRight")(headerRight)
+    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
+    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
+    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
+    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (paperHeight != null) __obj.updateDynamic("paperHeight")(paperHeight.asInstanceOf[js.Any])
+    if (paperSizeUnit != null) __obj.updateDynamic("paperSizeUnit")(paperSizeUnit.asInstanceOf[js.Any])
+    if (paperWidth != null) __obj.updateDynamic("paperWidth")(paperWidth.asInstanceOf[js.Any])
+    if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBackgroundColors)) __obj.updateDynamic("showBackgroundColors")(showBackgroundColors)
+    if (!js.isUndefined(showBackgroundImages)) __obj.updateDynamic("showBackgroundImages")(showBackgroundImages)
+    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit)
+    __obj.asInstanceOf[PageSettings]
+  }
+}
+

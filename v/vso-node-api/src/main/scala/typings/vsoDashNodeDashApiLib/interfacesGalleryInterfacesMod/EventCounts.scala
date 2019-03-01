@@ -44,3 +44,30 @@ trait EventCounts extends js.Object {
   var webPageViews: scala.Double
 }
 
+object EventCounts {
+  @scala.inline
+  def apply(
+    averageRating: scala.Double,
+    buyCount: scala.Double,
+    connectedBuyCount: scala.Double,
+    connectedInstallCount: scala.Double,
+    installCount: scala.Double,
+    tryCount: scala.Double,
+    uninstallCount: scala.Double,
+    webDownloadCount: scala.Double,
+    webPageViews: scala.Double
+  ): EventCounts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("averageRating")(averageRating)
+    __obj.updateDynamic("buyCount")(buyCount)
+    __obj.updateDynamic("connectedBuyCount")(connectedBuyCount)
+    __obj.updateDynamic("connectedInstallCount")(connectedInstallCount)
+    __obj.updateDynamic("installCount")(installCount)
+    __obj.updateDynamic("tryCount")(tryCount)
+    __obj.updateDynamic("uninstallCount")(uninstallCount)
+    __obj.updateDynamic("webDownloadCount")(webDownloadCount)
+    __obj.updateDynamic("webPageViews")(webPageViews)
+    __obj.asInstanceOf[EventCounts]
+  }
+}
+

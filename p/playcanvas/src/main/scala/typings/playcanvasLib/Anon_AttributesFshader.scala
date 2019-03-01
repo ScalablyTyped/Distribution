@@ -11,3 +11,14 @@ trait Anon_AttributesFshader extends js.Object {
   var vshader: java.lang.String
 }
 
+object Anon_AttributesFshader {
+  @scala.inline
+  def apply(fshader: java.lang.String, useTransformFeedback: scala.Boolean, vshader: java.lang.String): Anon_AttributesFshader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fshader")(fshader)
+    __obj.updateDynamic("useTransformFeedback")(useTransformFeedback)
+    __obj.updateDynamic("vshader")(vshader)
+    __obj.asInstanceOf[Anon_AttributesFshader]
+  }
+}
+

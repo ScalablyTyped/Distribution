@@ -88,3 +88,40 @@ trait CircuitBreakerOptions extends js.Object {
   var volumeThreshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CircuitBreakerOptions {
+  @scala.inline
+  def apply(
+    allowWarmUp: js.UndefOr[scala.Boolean] = js.undefined,
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    capacity: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    errorThresholdPercentage: scala.Int | scala.Double = null,
+    group: java.lang.String = null,
+    maxFailures: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    resetTimeout: scala.Int | scala.Double = null,
+    rollingCountBuckets: scala.Int | scala.Double = null,
+    rollingCountTimeout: scala.Int | scala.Double = null,
+    rollingPercentilesEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Double | opossumLib.opossumLibNumbers.`false` = null,
+    volumeThreshold: scala.Int | scala.Double = null
+  ): CircuitBreakerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowWarmUp)) __obj.updateDynamic("allowWarmUp")(allowWarmUp)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (errorThresholdPercentage != null) __obj.updateDynamic("errorThresholdPercentage")(errorThresholdPercentage.asInstanceOf[js.Any])
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (maxFailures != null) __obj.updateDynamic("maxFailures")(maxFailures.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (resetTimeout != null) __obj.updateDynamic("resetTimeout")(resetTimeout.asInstanceOf[js.Any])
+    if (rollingCountBuckets != null) __obj.updateDynamic("rollingCountBuckets")(rollingCountBuckets.asInstanceOf[js.Any])
+    if (rollingCountTimeout != null) __obj.updateDynamic("rollingCountTimeout")(rollingCountTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(rollingPercentilesEnabled)) __obj.updateDynamic("rollingPercentilesEnabled")(rollingPercentilesEnabled)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (volumeThreshold != null) __obj.updateDynamic("volumeThreshold")(volumeThreshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CircuitBreakerOptions]
+  }
+}
+

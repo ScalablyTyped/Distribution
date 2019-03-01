@@ -112,3 +112,63 @@ trait _Impl extends js.Object {
   var url: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    checked: java.lang.String,
+    contain: java.lang.String,
+    containExactly: java.lang.String,
+    creditCard: java.lang.String,
+    decimal: java.lang.String,
+    different: java.lang.String,
+    doesntContain: java.lang.String,
+    doesntContainExactly: java.lang.String,
+    email: java.lang.String,
+    empty: java.lang.String,
+    exactCount: java.lang.String,
+    exactLength: java.lang.String,
+    integer: java.lang.String,
+    is: java.lang.String,
+    isExactly: java.lang.String,
+    length: java.lang.String,
+    `match`: java.lang.String,
+    maxCount: java.lang.String,
+    maxLength: java.lang.String,
+    minCount: java.lang.String,
+    minLength: java.lang.String,
+    not: java.lang.String,
+    notExactly: java.lang.String,
+    number: java.lang.String,
+    regExp: java.lang.String,
+    url: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(`match` = `match`)
+    __obj.updateDynamic("checked")(checked)
+    __obj.updateDynamic("contain")(contain)
+    __obj.updateDynamic("containExactly")(containExactly)
+    __obj.updateDynamic("creditCard")(creditCard)
+    __obj.updateDynamic("decimal")(decimal)
+    __obj.updateDynamic("different")(different)
+    __obj.updateDynamic("doesntContain")(doesntContain)
+    __obj.updateDynamic("doesntContainExactly")(doesntContainExactly)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("empty")(empty)
+    __obj.updateDynamic("exactCount")(exactCount)
+    __obj.updateDynamic("exactLength")(exactLength)
+    __obj.updateDynamic("integer")(integer)
+    __obj.updateDynamic("is")(is)
+    __obj.updateDynamic("isExactly")(isExactly)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("maxCount")(maxCount)
+    __obj.updateDynamic("maxLength")(maxLength)
+    __obj.updateDynamic("minCount")(minCount)
+    __obj.updateDynamic("minLength")(minLength)
+    __obj.updateDynamic("not")(not)
+    __obj.updateDynamic("notExactly")(notExactly)
+    __obj.updateDynamic("number")(number)
+    __obj.updateDynamic("regExp")(regExp)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

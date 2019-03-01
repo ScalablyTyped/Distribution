@@ -142,3 +142,110 @@ trait IDatePicker extends IComponent {
   var todayTip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IDatePicker {
+  @scala.inline
+  def apply(
+    IComponent: IComponent = null,
+    ariaTitle: java.lang.String = null,
+    ariaTitleDateFormat: java.lang.String = null,
+    baseCls: java.lang.String = null,
+    border: js.Any = null,
+    dayNames: Array = null,
+    disableAnim: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledCellCls: java.lang.String = null,
+    disabledDates: Array = null,
+    disabledDatesRE: stdLib.RegExp = null,
+    disabledDatesText: java.lang.String = null,
+    disabledDays: Array = null,
+    disabledDaysText: java.lang.String = null,
+    focusOnShow: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    getDayInitial: js.Function1[/* value */ js.UndefOr[js.Any], java.lang.String] = null,
+    getValue: js.Function0[_] = null,
+    handler: js.Any = null,
+    hideMonthPicker: js.Function1[/* animate */ js.UndefOr[scala.Boolean], extjsLib.ExtNs.pickerNs.IDate] = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    keyNavConfig: js.Any = null,
+    longDayFormat: java.lang.String = null,
+    maxDate: js.Any = null,
+    maxText: java.lang.String = null,
+    minDate: js.Any = null,
+    minText: java.lang.String = null,
+    monthNames: Array = null,
+    monthYearFormat: java.lang.String = null,
+    monthYearText: java.lang.String = null,
+    nextText: java.lang.String = null,
+    prevText: java.lang.String = null,
+    renderTpl: js.Any = null,
+    scope: js.Any = null,
+    selectToday: js.Function0[extjsLib.ExtNs.pickerNs.IDate] = null,
+    selectedCls: java.lang.String = null,
+    setDisabledDates: js.Function1[/* disabledDates */ js.UndefOr[js.Any], extjsLib.ExtNs.pickerNs.IDate] = null,
+    setDisabledDays: js.Function1[/* disabledDays */ js.UndefOr[Array], extjsLib.ExtNs.pickerNs.IDate] = null,
+    setMaxDate: js.Function1[/* value */ js.UndefOr[js.Any], extjsLib.ExtNs.pickerNs.IDate] = null,
+    setMinDate: js.Function1[/* value */ js.UndefOr[js.Any], extjsLib.ExtNs.pickerNs.IDate] = null,
+    setValue: js.Function1[/* value */ js.UndefOr[js.Any], extjsLib.ExtNs.pickerNs.IDate] = null,
+    showMonthPicker: js.Function1[/* animate */ js.UndefOr[scala.Boolean], extjsLib.ExtNs.pickerNs.IDate] = null,
+    showNextMonth: js.Function1[/* e */ js.UndefOr[js.Any], extjsLib.ExtNs.pickerNs.IDate] = null,
+    showNextYear: js.Function0[extjsLib.ExtNs.pickerNs.IDate] = null,
+    showPrevMonth: js.Function1[/* e */ js.UndefOr[js.Any], extjsLib.ExtNs.pickerNs.IDate] = null,
+    showPrevYear: js.Function0[extjsLib.ExtNs.pickerNs.IDate] = null,
+    showToday: js.UndefOr[scala.Boolean] = js.undefined,
+    startDay: scala.Int | scala.Double = null,
+    todayText: java.lang.String = null,
+    todayTip: java.lang.String = null
+  ): IDatePicker = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (ariaTitle != null) __obj.updateDynamic("ariaTitle")(ariaTitle)
+    if (ariaTitleDateFormat != null) __obj.updateDynamic("ariaTitleDateFormat")(ariaTitleDateFormat)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames)
+    if (!js.isUndefined(disableAnim)) __obj.updateDynamic("disableAnim")(disableAnim)
+    if (disabledCellCls != null) __obj.updateDynamic("disabledCellCls")(disabledCellCls)
+    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates)
+    if (disabledDatesRE != null) __obj.updateDynamic("disabledDatesRE")(disabledDatesRE)
+    if (disabledDatesText != null) __obj.updateDynamic("disabledDatesText")(disabledDatesText)
+    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays)
+    if (disabledDaysText != null) __obj.updateDynamic("disabledDaysText")(disabledDaysText)
+    if (!js.isUndefined(focusOnShow)) __obj.updateDynamic("focusOnShow")(focusOnShow)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (getDayInitial != null) __obj.updateDynamic("getDayInitial")(getDayInitial)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (hideMonthPicker != null) __obj.updateDynamic("hideMonthPicker")(hideMonthPicker)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (keyNavConfig != null) __obj.updateDynamic("keyNavConfig")(keyNavConfig)
+    if (longDayFormat != null) __obj.updateDynamic("longDayFormat")(longDayFormat)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (maxText != null) __obj.updateDynamic("maxText")(maxText)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (minText != null) __obj.updateDynamic("minText")(minText)
+    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames)
+    if (monthYearFormat != null) __obj.updateDynamic("monthYearFormat")(monthYearFormat)
+    if (monthYearText != null) __obj.updateDynamic("monthYearText")(monthYearText)
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
+    if (prevText != null) __obj.updateDynamic("prevText")(prevText)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (selectToday != null) __obj.updateDynamic("selectToday")(selectToday)
+    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls)
+    if (setDisabledDates != null) __obj.updateDynamic("setDisabledDates")(setDisabledDates)
+    if (setDisabledDays != null) __obj.updateDynamic("setDisabledDays")(setDisabledDays)
+    if (setMaxDate != null) __obj.updateDynamic("setMaxDate")(setMaxDate)
+    if (setMinDate != null) __obj.updateDynamic("setMinDate")(setMinDate)
+    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (showMonthPicker != null) __obj.updateDynamic("showMonthPicker")(showMonthPicker)
+    if (showNextMonth != null) __obj.updateDynamic("showNextMonth")(showNextMonth)
+    if (showNextYear != null) __obj.updateDynamic("showNextYear")(showNextYear)
+    if (showPrevMonth != null) __obj.updateDynamic("showPrevMonth")(showPrevMonth)
+    if (showPrevYear != null) __obj.updateDynamic("showPrevYear")(showPrevYear)
+    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday)
+    if (startDay != null) __obj.updateDynamic("startDay")(startDay.asInstanceOf[js.Any])
+    if (todayText != null) __obj.updateDynamic("todayText")(todayText)
+    if (todayTip != null) __obj.updateDynamic("todayTip")(todayTip)
+    __obj.asInstanceOf[IDatePicker]
+  }
+}
+

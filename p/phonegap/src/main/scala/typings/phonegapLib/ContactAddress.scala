@@ -16,3 +16,27 @@ trait ContactAddress extends js.Object {
   var `type`: java.lang.String
 }
 
+object ContactAddress {
+  @scala.inline
+  def apply(
+    country: java.lang.String,
+    formatted: java.lang.String,
+    locality: java.lang.String,
+    postalCode: java.lang.String,
+    pref: scala.Boolean,
+    region: java.lang.String,
+    streetAddress: java.lang.String,
+    `type`: java.lang.String
+  ): ContactAddress = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("country")(country)
+    __obj.updateDynamic("formatted")(formatted)
+    __obj.updateDynamic("locality")(locality)
+    __obj.updateDynamic("postalCode")(postalCode)
+    __obj.updateDynamic("pref")(pref)
+    __obj.updateDynamic("region")(region)
+    __obj.updateDynamic("streetAddress")(streetAddress)
+    __obj.asInstanceOf[ContactAddress]
+  }
+}
+

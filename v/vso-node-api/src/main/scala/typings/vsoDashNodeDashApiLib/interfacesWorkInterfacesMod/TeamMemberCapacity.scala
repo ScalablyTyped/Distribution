@@ -20,3 +20,22 @@ trait TeamMemberCapacity extends TeamSettingsDataContractBase {
   var teamMember: Member
 }
 
+object TeamMemberCapacity {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    activities: js.Array[Activity],
+    daysOff: js.Array[DateRange],
+    teamMember: Member,
+    url: java.lang.String
+  ): TeamMemberCapacity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("activities")(activities)
+    __obj.updateDynamic("daysOff")(daysOff)
+    __obj.updateDynamic("teamMember")(teamMember)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TeamMemberCapacity]
+  }
+}
+

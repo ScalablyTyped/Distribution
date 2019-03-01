@@ -35,3 +35,36 @@ trait ValueSetCompose extends BackboneElement {
   var lockedDate: js.UndefOr[date] = js.undefined
 }
 
+object ValueSetCompose {
+  @scala.inline
+  def apply(
+    include: js.Array[ValueSetComposeInclude],
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _inactive: Element = null,
+    _lockedDate: Element = null,
+    exclude: js.Array[ValueSetComposeInclude] = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    inactive: js.UndefOr[scala.Boolean] = js.undefined,
+    lockedDate: date = null,
+    modifierExtension: js.Array[Extension] = null
+  ): ValueSetCompose = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("include")(include)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_inactive != null) __obj.updateDynamic("_inactive")(_inactive)
+    if (_lockedDate != null) __obj.updateDynamic("_lockedDate")(_lockedDate)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(inactive)) __obj.updateDynamic("inactive")(inactive)
+    if (lockedDate != null) __obj.updateDynamic("lockedDate")(lockedDate)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    __obj.asInstanceOf[ValueSetCompose]
+  }
+}
+

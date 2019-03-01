@@ -19,3 +19,20 @@ trait Anon_BookmarkId extends js.Object {
   var tabId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_BookmarkId {
+  @scala.inline
+  def apply(
+    bookmarkId: java.lang.String = null,
+    context: firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs._OverrideContextContext = null,
+    showDefaults: js.UndefOr[scala.Boolean] = js.undefined,
+    tabId: scala.Int | scala.Double = null
+  ): Anon_BookmarkId = {
+    val __obj = js.Dynamic.literal()
+    if (bookmarkId != null) __obj.updateDynamic("bookmarkId")(bookmarkId)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(showDefaults)) __obj.updateDynamic("showDefaults")(showDefaults)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BookmarkId]
+  }
+}
+

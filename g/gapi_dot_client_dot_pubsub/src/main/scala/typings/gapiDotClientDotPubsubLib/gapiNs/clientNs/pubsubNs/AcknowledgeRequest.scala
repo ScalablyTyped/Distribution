@@ -13,3 +13,12 @@ trait AcknowledgeRequest extends js.Object {
   var ackIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AcknowledgeRequest {
+  @scala.inline
+  def apply(ackIds: js.Array[java.lang.String] = null): AcknowledgeRequest = {
+    val __obj = js.Dynamic.literal()
+    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds)
+    __obj.asInstanceOf[AcknowledgeRequest]
+  }
+}
+

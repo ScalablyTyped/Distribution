@@ -20,3 +20,12 @@ trait DisableServiceRequest extends js.Object {
   var consumerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DisableServiceRequest {
+  @scala.inline
+  def apply(consumerId: java.lang.String = null): DisableServiceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId)
+    __obj.asInstanceOf[DisableServiceRequest]
+  }
+}
+

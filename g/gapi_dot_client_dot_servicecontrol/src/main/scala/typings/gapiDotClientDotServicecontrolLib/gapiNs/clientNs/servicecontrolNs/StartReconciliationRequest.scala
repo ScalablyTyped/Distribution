@@ -16,3 +16,13 @@ trait StartReconciliationRequest extends js.Object {
   var serviceConfigId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StartReconciliationRequest {
+  @scala.inline
+  def apply(reconciliationOperation: QuotaOperation = null, serviceConfigId: java.lang.String = null): StartReconciliationRequest = {
+    val __obj = js.Dynamic.literal()
+    if (reconciliationOperation != null) __obj.updateDynamic("reconciliationOperation")(reconciliationOperation)
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    __obj.asInstanceOf[StartReconciliationRequest]
+  }
+}
+

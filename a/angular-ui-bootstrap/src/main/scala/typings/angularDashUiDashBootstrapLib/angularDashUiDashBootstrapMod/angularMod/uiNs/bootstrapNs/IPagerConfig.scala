@@ -32,3 +32,20 @@ trait IPagerConfig extends js.Object {
   var previousText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IPagerConfig {
+  @scala.inline
+  def apply(
+    align: js.UndefOr[scala.Boolean] = js.undefined,
+    itemsPerPage: scala.Int | scala.Double = null,
+    nextText: java.lang.String = null,
+    previousText: java.lang.String = null
+  ): IPagerConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(align)) __obj.updateDynamic("align")(align)
+    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
+    if (previousText != null) __obj.updateDynamic("previousText")(previousText)
+    __obj.asInstanceOf[IPagerConfig]
+  }
+}
+

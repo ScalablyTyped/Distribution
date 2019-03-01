@@ -21,3 +21,14 @@ trait Ruleset extends js.Object {
   var source: js.UndefOr[Source] = js.undefined
 }
 
+object Ruleset {
+  @scala.inline
+  def apply(createTime: java.lang.String = null, name: java.lang.String = null, source: Source = null): Ruleset = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[Ruleset]
+  }
+}
+

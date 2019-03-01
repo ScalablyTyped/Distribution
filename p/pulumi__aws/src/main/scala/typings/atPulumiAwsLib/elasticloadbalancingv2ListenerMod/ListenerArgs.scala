@@ -32,3 +32,24 @@ trait ListenerArgs extends js.Object {
   val sslPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ListenerArgs {
+  @scala.inline
+  def apply(
+    defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc],
+    loadBalancerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sslPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ListenerArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultAction")(defaultAction.asInstanceOf[js.Any])
+    __obj.updateDynamic("loadBalancerArn")(loadBalancerArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (sslPolicy != null) __obj.updateDynamic("sslPolicy")(sslPolicy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListenerArgs]
+  }
+}
+

@@ -21,3 +21,16 @@ trait AuthOptions extends js.Object {
   var recursive: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AuthOptions {
+  @scala.inline
+  def apply(
+    npmrc: registryDashAuthDashTokenLib.Anon_Registry = null,
+    recursive: js.UndefOr[scala.Boolean] = js.undefined
+  ): AuthOptions = {
+    val __obj = js.Dynamic.literal()
+    if (npmrc != null) __obj.updateDynamic("npmrc")(npmrc)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    __obj.asInstanceOf[AuthOptions]
+  }
+}
+

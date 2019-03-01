@@ -13,3 +13,16 @@ trait TargetSpecificOptions extends js.Object {
   var publish: js.UndefOr[builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish] = js.undefined
 }
 
+object TargetSpecificOptions {
+  @scala.inline
+  def apply(
+    artifactName: java.lang.String = null,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null
+  ): TargetSpecificOptions = {
+    val __obj = js.Dynamic.literal()
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetSpecificOptions]
+  }
+}
+

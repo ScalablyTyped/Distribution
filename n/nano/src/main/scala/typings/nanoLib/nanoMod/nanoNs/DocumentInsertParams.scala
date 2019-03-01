@@ -18,3 +18,18 @@ trait DocumentInsertParams extends js.Object {
   var rev: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DocumentInsertParams {
+  @scala.inline
+  def apply(
+    batch: nanoLib.nanoLibStrings.ok = null,
+    new_edits: js.UndefOr[scala.Boolean] = js.undefined,
+    rev: java.lang.String = null
+  ): DocumentInsertParams = {
+    val __obj = js.Dynamic.literal()
+    if (batch != null) __obj.updateDynamic("batch")(batch)
+    if (!js.isUndefined(new_edits)) __obj.updateDynamic("new_edits")(new_edits)
+    if (rev != null) __obj.updateDynamic("rev")(rev)
+    __obj.asInstanceOf[DocumentInsertParams]
+  }
+}
+

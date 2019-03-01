@@ -7,37 +7,48 @@ import scala.scalajs.js.annotation._
 
 object reactDashGravatarLibStrings {
   @js.native
-  sealed trait `404` extends js.Object
+  sealed trait `404`
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
   
   @js.native
-  sealed trait blank extends js.Object
+  sealed trait blank
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
   
   @js.native
-  sealed trait g extends js.Object
+  sealed trait g
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Rating
   
   @js.native
-  sealed trait identicon extends js.Object
+  sealed trait identicon
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
   
   @js.native
-  sealed trait mm extends js.Object
+  sealed trait mm
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
   
   @js.native
-  sealed trait monsterid extends js.Object
+  sealed trait monsterid
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
   
   @js.native
-  sealed trait pg extends js.Object
+  sealed trait pg
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Rating
   
   @js.native
-  sealed trait r extends js.Object
+  sealed trait r
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Rating
   
   @js.native
-  sealed trait retro extends js.Object
+  sealed trait retro
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
   
   @js.native
-  sealed trait wavatar extends js.Object
+  sealed trait wavatar
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.DefaultImage
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait x
+    extends reactDashGravatarLib.reactDashGravatarMod.GravatarNs.Rating
   
   @scala.inline
   def `404`: `404` = "404".asInstanceOf[`404`]

@@ -14,3 +14,23 @@ trait Anon_ArrayInteger extends js.Object {
   def string(value: js.Any, schema: js.Any, opts: js.Any): js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]
 }
 
+object Anon_ArrayInteger {
+  @scala.inline
+  def apply(
+    array: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    integer: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    number: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    numeric: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    `object`: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]],
+    string: js.Function3[js.Any, js.Any, js.Any, js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError]]
+  ): Anon_ArrayInteger = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("array")(array)
+    __obj.updateDynamic("integer")(integer)
+    __obj.updateDynamic("number")(number)
+    __obj.updateDynamic("numeric")(numeric)
+    __obj.updateDynamic("string")(string)
+    __obj.asInstanceOf[Anon_ArrayInteger]
+  }
+}
+

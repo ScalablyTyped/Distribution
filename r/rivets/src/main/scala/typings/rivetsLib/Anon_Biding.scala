@@ -20,3 +20,22 @@ trait Anon_Biding extends js.Object {
   var templateDelimiters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Biding {
+  @scala.inline
+  def apply(
+    handler: js.Function3[/* context */ js.Any, /* ev */ stdLib.Event, /* biding */ js.Any, scala.Unit] = null,
+    prefix: java.lang.String = null,
+    preloadData: js.UndefOr[scala.Boolean] = js.undefined,
+    rootInterface: java.lang.String = null,
+    templateDelimiters: js.Array[java.lang.String] = null
+  ): Anon_Biding = {
+    val __obj = js.Dynamic.literal()
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(preloadData)) __obj.updateDynamic("preloadData")(preloadData)
+    if (rootInterface != null) __obj.updateDynamic("rootInterface")(rootInterface)
+    if (templateDelimiters != null) __obj.updateDynamic("templateDelimiters")(templateDelimiters)
+    __obj.asInstanceOf[Anon_Biding]
+  }
+}
+

@@ -12,3 +12,20 @@ trait ViterbiSearcher extends js.Object {
   def search(lattice: ViterbiLattice): js.Array[ViterbiNode]
 }
 
+object ViterbiSearcher {
+  @scala.inline
+  def apply(
+    backward: js.Function1[ViterbiLattice, js.Array[ViterbiNode]],
+    connection_costs: ConnectionCosts,
+    forward: js.Function1[ViterbiLattice, ViterbiLattice],
+    search: js.Function1[ViterbiLattice, js.Array[ViterbiNode]]
+  ): ViterbiSearcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backward")(backward)
+    __obj.updateDynamic("connection_costs")(connection_costs)
+    __obj.updateDynamic("forward")(forward)
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ViterbiSearcher]
+  }
+}
+

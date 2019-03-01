@@ -12,3 +12,12 @@ trait DeleteTableInput extends js.Object {
   var TableName: TableName
 }
 
+object DeleteTableInput {
+  @scala.inline
+  def apply(TableName: TableName): DeleteTableInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TableName")(TableName)
+    __obj.asInstanceOf[DeleteTableInput]
+  }
+}
+

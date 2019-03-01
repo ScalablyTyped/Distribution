@@ -16,3 +16,16 @@ trait AssessmentTargetArgs extends js.Object {
   val resourceGroupArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object AssessmentTargetArgs {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    resourceGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AssessmentTargetArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (resourceGroupArn != null) __obj.updateDynamic("resourceGroupArn")(resourceGroupArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AssessmentTargetArgs]
+  }
+}
+

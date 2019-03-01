@@ -9,3 +9,12 @@ trait Params extends js.Object {
   var client: js.Any
 }
 
+object Params {
+  @scala.inline
+  def apply(client: js.Any): Params = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.asInstanceOf[Params]
+  }
+}
+

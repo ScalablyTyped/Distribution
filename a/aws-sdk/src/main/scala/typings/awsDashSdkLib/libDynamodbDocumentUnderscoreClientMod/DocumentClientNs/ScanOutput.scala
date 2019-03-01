@@ -28,3 +28,22 @@ trait ScanOutput extends js.Object {
   var ScannedCount: js.UndefOr[Integer] = js.undefined
 }
 
+object ScanOutput {
+  @scala.inline
+  def apply(
+    ConsumedCapacity: ConsumedCapacity = null,
+    Count: js.UndefOr[Integer] = js.undefined,
+    Items: ItemList = null,
+    LastEvaluatedKey: Key = null,
+    ScannedCount: js.UndefOr[Integer] = js.undefined
+  ): ScanOutput = {
+    val __obj = js.Dynamic.literal()
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
+    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count)
+    if (Items != null) __obj.updateDynamic("Items")(Items)
+    if (LastEvaluatedKey != null) __obj.updateDynamic("LastEvaluatedKey")(LastEvaluatedKey)
+    if (!js.isUndefined(ScannedCount)) __obj.updateDynamic("ScannedCount")(ScannedCount)
+    __obj.asInstanceOf[ScanOutput]
+  }
+}
+

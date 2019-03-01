@@ -11,3 +11,18 @@ trait LoaderHandler extends js.Object {
   def get(file: java.lang.String): AnyLoader | scala.Null
 }
 
+object LoaderHandler {
+  @scala.inline
+  def apply(
+    add: js.Function2[stdLib.RegExp, AnyLoader, scala.Unit],
+    get: js.Function1[java.lang.String, AnyLoader | scala.Null],
+    handlers: js.Array[stdLib.RegExp | AnyLoader]
+  ): LoaderHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("handlers")(handlers)
+    __obj.asInstanceOf[LoaderHandler]
+  }
+}
+

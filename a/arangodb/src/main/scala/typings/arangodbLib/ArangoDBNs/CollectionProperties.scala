@@ -17,3 +17,30 @@ trait CollectionProperties extends js.Object {
   var waitForSync: scala.Boolean
 }
 
+object CollectionProperties {
+  @scala.inline
+  def apply(
+    indexBuckets: scala.Double,
+    isSystem: scala.Boolean,
+    isVolatile: scala.Boolean,
+    journalSize: scala.Double,
+    waitForSync: scala.Boolean,
+    keyOptions: arangodbLib.Anon_AllowUserKeysIncrement = null,
+    numberOfShards: scala.Int | scala.Double = null,
+    replicationFactor: scala.Int | scala.Double = null,
+    shardKeys: js.Array[java.lang.String] = null
+  ): CollectionProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("indexBuckets")(indexBuckets)
+    __obj.updateDynamic("isSystem")(isSystem)
+    __obj.updateDynamic("isVolatile")(isVolatile)
+    __obj.updateDynamic("journalSize")(journalSize)
+    __obj.updateDynamic("waitForSync")(waitForSync)
+    if (keyOptions != null) __obj.updateDynamic("keyOptions")(keyOptions)
+    if (numberOfShards != null) __obj.updateDynamic("numberOfShards")(numberOfShards.asInstanceOf[js.Any])
+    if (replicationFactor != null) __obj.updateDynamic("replicationFactor")(replicationFactor.asInstanceOf[js.Any])
+    if (shardKeys != null) __obj.updateDynamic("shardKeys")(shardKeys)
+    __obj.asInstanceOf[CollectionProperties]
+  }
+}
+

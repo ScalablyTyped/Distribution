@@ -16,3 +16,16 @@ trait SnapshotCreateVolumePermissionState extends js.Object {
   val snapshotId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object SnapshotCreateVolumePermissionState {
+  @scala.inline
+  def apply(
+    accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    snapshotId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): SnapshotCreateVolumePermissionState = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotCreateVolumePermissionState]
+  }
+}
+

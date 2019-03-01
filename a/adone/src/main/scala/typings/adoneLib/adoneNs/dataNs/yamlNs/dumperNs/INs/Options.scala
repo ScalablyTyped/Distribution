@@ -52,3 +52,32 @@ trait Options extends js.Object {
   var styles: js.UndefOr[js.Object] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    condenseFlow: js.UndefOr[scala.Boolean] = js.undefined,
+    flowLevel: scala.Int | scala.Double = null,
+    indent: scala.Int | scala.Double = null,
+    lineWidth: scala.Int | scala.Double = null,
+    noCompatMode: js.UndefOr[scala.Boolean] = js.undefined,
+    noRefs: js.UndefOr[scala.Boolean] = js.undefined,
+    schema: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = null,
+    skipInvalid: js.UndefOr[scala.Boolean] = js.undefined,
+    sortKeys: js.UndefOr[scala.Boolean] = js.undefined,
+    styles: js.Object = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(condenseFlow)) __obj.updateDynamic("condenseFlow")(condenseFlow)
+    if (flowLevel != null) __obj.updateDynamic("flowLevel")(flowLevel.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(noCompatMode)) __obj.updateDynamic("noCompatMode")(noCompatMode)
+    if (!js.isUndefined(noRefs)) __obj.updateDynamic("noRefs")(noRefs)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (!js.isUndefined(skipInvalid)) __obj.updateDynamic("skipInvalid")(skipInvalid)
+    if (!js.isUndefined(sortKeys)) __obj.updateDynamic("sortKeys")(sortKeys)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[Options]
+  }
+}
+

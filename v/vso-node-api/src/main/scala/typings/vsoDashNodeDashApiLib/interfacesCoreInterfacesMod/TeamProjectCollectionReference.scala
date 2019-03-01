@@ -20,3 +20,14 @@ trait TeamProjectCollectionReference extends js.Object {
   var url: java.lang.String
 }
 
+object TeamProjectCollectionReference {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, url: java.lang.String): TeamProjectCollectionReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TeamProjectCollectionReference]
+  }
+}
+

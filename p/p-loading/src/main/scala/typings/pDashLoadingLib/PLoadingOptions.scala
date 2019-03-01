@@ -36,3 +36,46 @@ trait PLoadingOptions extends js.Object {
   var useAddOns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object PLoadingOptions {
+  @scala.inline
+  def apply(
+    action: pDashLoadingLib.pDashLoadingLibStrings.show | pDashLoadingLib.pDashLoadingLibStrings.hide | pDashLoadingLib.pDashLoadingLibStrings.destroy = null,
+    containerAttrs: js.Object = null,
+    containerClass: java.lang.String = null,
+    containerHTML: java.lang.String = null,
+    destroyAfterHide: js.UndefOr[scala.Boolean] = js.undefined,
+    hideAnimation: js.Function1[/* $container */ JQuery, scala.Unit] = null,
+    idPrefix: java.lang.String = null,
+    maskColor: java.lang.String = null,
+    onDestroyContainer: js.Function1[/* $container */ JQuery, scala.Unit] = null,
+    onHideContainer: js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, scala.Unit] = null,
+    onShowContainer: js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, scala.Unit] = null,
+    pluginNameSpace: java.lang.String = null,
+    showAnimation: js.Function1[/* $container */ JQuery, scala.Unit] = null,
+    spinnerAttrs: js.Object = null,
+    spinnerClass: java.lang.String = null,
+    spinnerHTML: java.lang.String = null,
+    useAddOns: js.Array[java.lang.String] = null
+  ): PLoadingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (containerAttrs != null) __obj.updateDynamic("containerAttrs")(containerAttrs)
+    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
+    if (containerHTML != null) __obj.updateDynamic("containerHTML")(containerHTML)
+    if (!js.isUndefined(destroyAfterHide)) __obj.updateDynamic("destroyAfterHide")(destroyAfterHide)
+    if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation)
+    if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix)
+    if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor)
+    if (onDestroyContainer != null) __obj.updateDynamic("onDestroyContainer")(onDestroyContainer)
+    if (onHideContainer != null) __obj.updateDynamic("onHideContainer")(onHideContainer)
+    if (onShowContainer != null) __obj.updateDynamic("onShowContainer")(onShowContainer)
+    if (pluginNameSpace != null) __obj.updateDynamic("pluginNameSpace")(pluginNameSpace)
+    if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation)
+    if (spinnerAttrs != null) __obj.updateDynamic("spinnerAttrs")(spinnerAttrs)
+    if (spinnerClass != null) __obj.updateDynamic("spinnerClass")(spinnerClass)
+    if (spinnerHTML != null) __obj.updateDynamic("spinnerHTML")(spinnerHTML)
+    if (useAddOns != null) __obj.updateDynamic("useAddOns")(useAddOns)
+    __obj.asInstanceOf[PLoadingOptions]
+  }
+}
+

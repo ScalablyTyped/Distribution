@@ -33,3 +33,21 @@ trait BaseQuad extends js.Object {
   def equals(other: BaseQuad): scala.Boolean
 }
 
+object BaseQuad {
+  @scala.inline
+  def apply(
+    equals: js.Function1[BaseQuad, scala.Boolean],
+    graph: Term,
+    `object`: Term,
+    predicate: Term,
+    subject: Term
+  ): BaseQuad = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("graph")(graph)
+    __obj.updateDynamic("predicate")(predicate)
+    __obj.updateDynamic("subject")(subject)
+    __obj.asInstanceOf[BaseQuad]
+  }
+}
+

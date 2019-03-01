@@ -20,3 +20,27 @@ trait Anon_DisabledEModifier extends js.Object {
   var ripple: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_DisabledEModifier {
+  @scala.inline
+  def apply(
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    modifier: java.lang.String = null,
+    name: java.lang.String = null,
+    onClick: js.Function1[
+      /* e */ js.UndefOr[
+        reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
+      ], 
+      scala.Unit
+    ] = null,
+    ripple: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_DisabledEModifier = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (!js.isUndefined(ripple)) __obj.updateDynamic("ripple")(ripple)
+    __obj.asInstanceOf[Anon_DisabledEModifier]
+  }
+}
+

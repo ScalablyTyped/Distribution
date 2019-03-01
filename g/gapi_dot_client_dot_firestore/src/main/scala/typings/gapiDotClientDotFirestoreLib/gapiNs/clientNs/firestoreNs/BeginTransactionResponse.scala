@@ -10,3 +10,12 @@ trait BeginTransactionResponse extends js.Object {
   var transaction: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeginTransactionResponse {
+  @scala.inline
+  def apply(transaction: java.lang.String = null): BeginTransactionResponse = {
+    val __obj = js.Dynamic.literal()
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[BeginTransactionResponse]
+  }
+}
+

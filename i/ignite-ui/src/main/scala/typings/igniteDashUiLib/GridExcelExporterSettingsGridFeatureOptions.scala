@@ -68,3 +68,29 @@ trait GridExcelExporterSettingsGridFeatureOptions
   var summaries: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GridExcelExporterSettingsGridFeatureOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for GridExcelExporterSettingsGridFeatureOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columnfixing: java.lang.String = null,
+    filtering: java.lang.String = null,
+    hiding: java.lang.String = null,
+    paging: java.lang.String = null,
+    sorting: java.lang.String = null,
+    summaries: java.lang.String = null
+  ): GridExcelExporterSettingsGridFeatureOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnfixing != null) __obj.updateDynamic("columnfixing")(columnfixing)
+    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (hiding != null) __obj.updateDynamic("hiding")(hiding)
+    if (paging != null) __obj.updateDynamic("paging")(paging)
+    if (sorting != null) __obj.updateDynamic("sorting")(sorting)
+    if (summaries != null) __obj.updateDynamic("summaries")(summaries)
+    __obj.asInstanceOf[GridExcelExporterSettingsGridFeatureOptions]
+  }
+}
+

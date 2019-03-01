@@ -11,3 +11,14 @@ trait Anon_Location extends js.Object {
   var req: expressLib.expressMod.eNs.Request
 }
 
+object Anon_Location {
+  @scala.inline
+  def apply(location: java.lang.String, path: java.lang.String, req: expressLib.expressMod.eNs.Request): Anon_Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("req")(req)
+    __obj.asInstanceOf[Anon_Location]
+  }
+}
+

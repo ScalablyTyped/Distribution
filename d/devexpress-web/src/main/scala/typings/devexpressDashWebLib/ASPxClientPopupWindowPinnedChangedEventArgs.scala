@@ -16,3 +16,13 @@ trait ASPxClientPopupWindowPinnedChangedEventArgs extends ASPxClientPopupWindowE
   var pinned: scala.Boolean
 }
 
+object ASPxClientPopupWindowPinnedChangedEventArgs {
+  @scala.inline
+  def apply(pinned: scala.Boolean, window: ASPxClientPopupWindow): ASPxClientPopupWindowPinnedChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pinned")(pinned)
+    __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[ASPxClientPopupWindowPinnedChangedEventArgs]
+  }
+}
+

@@ -25,3 +25,24 @@ trait DocumentToObjectOptions extends js.Object {
   var virtuals: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DocumentToObjectOptions {
+  @scala.inline
+  def apply(
+    depopulate: js.UndefOr[scala.Boolean] = js.undefined,
+    getters: js.UndefOr[scala.Boolean] = js.undefined,
+    minimize: js.UndefOr[scala.Boolean] = js.undefined,
+    transform: js.Function3[/* doc */ js.Any, /* ret */ js.Any, /* options */ js.Any, _] = null,
+    versionKey: js.UndefOr[scala.Boolean] = js.undefined,
+    virtuals: js.UndefOr[scala.Boolean] = js.undefined
+  ): DocumentToObjectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(depopulate)) __obj.updateDynamic("depopulate")(depopulate)
+    if (!js.isUndefined(getters)) __obj.updateDynamic("getters")(getters)
+    if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (!js.isUndefined(versionKey)) __obj.updateDynamic("versionKey")(versionKey)
+    if (!js.isUndefined(virtuals)) __obj.updateDynamic("virtuals")(virtuals)
+    __obj.asInstanceOf[DocumentToObjectOptions]
+  }
+}
+

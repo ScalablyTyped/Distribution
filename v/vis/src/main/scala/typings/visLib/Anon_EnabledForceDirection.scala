@@ -12,3 +12,19 @@ trait Anon_EnabledForceDirection extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_EnabledForceDirection {
+  @scala.inline
+  def apply(
+    enabled: scala.Boolean,
+    roundness: scala.Double,
+    `type`: java.lang.String,
+    forceDirection: java.lang.String | scala.Boolean = null
+  ): Anon_EnabledForceDirection = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("roundness")(roundness)
+    if (forceDirection != null) __obj.updateDynamic("forceDirection")(forceDirection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_EnabledForceDirection]
+  }
+}
+

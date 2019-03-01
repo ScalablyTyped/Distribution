@@ -28,3 +28,22 @@ trait FormatInputPathObject extends js.Object {
   var root: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FormatInputPathObject {
+  @scala.inline
+  def apply(
+    base: java.lang.String = null,
+    dir: java.lang.String = null,
+    ext: java.lang.String = null,
+    name: java.lang.String = null,
+    root: java.lang.String = null
+  ): FormatInputPathObject = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (ext != null) __obj.updateDynamic("ext")(ext)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (root != null) __obj.updateDynamic("root")(root)
+    __obj.asInstanceOf[FormatInputPathObject]
+  }
+}
+

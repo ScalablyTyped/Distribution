@@ -12,3 +12,14 @@ trait IEventTimestamped[T] extends IEvent[T] {
   var timestamp: scala.Double
 }
 
+object IEventTimestamped {
+  @scala.inline
+  def apply[T](name: java.lang.String, source: T, timestamp: scala.Double): IEventTimestamped[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[IEventTimestamped[T]]
+  }
+}
+

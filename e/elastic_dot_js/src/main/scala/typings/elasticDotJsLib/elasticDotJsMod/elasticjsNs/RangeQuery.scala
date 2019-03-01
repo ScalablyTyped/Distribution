@@ -62,3 +62,36 @@ trait RangeQuery extends Query {
   def toJSON(): js.Any
 }
 
+object RangeQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, RangeQuery],
+    field: js.Function1[java.lang.String, RangeQuery],
+    from: js.Function1[js.Any, RangeQuery],
+    gt: js.Function1[js.Any, RangeQuery],
+    gte: js.Function1[js.Any, RangeQuery],
+    includeLower: js.Function1[scala.Boolean, RangeQuery],
+    includeUpper: js.Function1[scala.Boolean, RangeQuery],
+    lt: js.Function1[js.Any, RangeQuery],
+    lte: js.Function1[js.Any, RangeQuery],
+    to: js.Function1[js.Any, RangeQuery],
+    toJSON: js.Function0[js.Any]
+  ): RangeQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("gt")(gt)
+    __obj.updateDynamic("gte")(gte)
+    __obj.updateDynamic("includeLower")(includeLower)
+    __obj.updateDynamic("includeUpper")(includeUpper)
+    __obj.updateDynamic("lt")(lt)
+    __obj.updateDynamic("lte")(lte)
+    __obj.updateDynamic("to")(to)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[RangeQuery]
+  }
+}
+

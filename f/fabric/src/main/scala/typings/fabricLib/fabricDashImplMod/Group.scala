@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("fabric/fabric-impl", "Group")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fabricLib.fabricDashImplMod.IGroupOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined subTargetCheck, useSetOnGroup */ @JSImport("fabric/fabric-impl", "Group")
 @js.native
 /**
 	 * Constructor
@@ -15,9 +16,22 @@ import scala.scalajs.js.annotation._
 class Group ()
   extends Object
      with ICollection[Group] {
-  def this(items: js.Array[_]) = this()
-  def this(items: js.Array[_], options: IObjectOptions) = this()
-  def activateAllObjects(): Group = js.native
+  def this(objects: js.Array[Object]) = this()
+  def this(objects: js.Array[Object], options: IGroupOptions) = this()
+  def this(objects: js.Array[Object], options: IGroupOptions, isAlreadyGrouped: scala.Boolean) = this()
+  /**
+  	 * Indicates if click events should also check for subtargets
+  	 * @type Boolean
+  	 */
+  var subTargetCheck: js.UndefOr[scala.Boolean] = js.native
+  /**
+  	 * setOnGroup is a method used for TextBox that is no more used since 2.0.0 The behavior is still
+  	 * available setting this boolean to true.
+  	 * @type Boolean
+  	 * @since 2.0.0
+  	 * @default
+  	 */
+  var useSetOnGroup: js.UndefOr[scala.Boolean] = js.native
   /**
   	 * Adds an object to a group; Then recalculates group's dimension, position.
   	 * @return thisArg
@@ -32,15 +46,24 @@ class Group ()
   override def complexity(): scala.Double = js.native
   /**
   	 * Destroys a group (restoring state of its objects)
-  	 * @return thisArg
+  	 * @return {fabric.Group} thisArg
   	 * @chainable
   	 */
   def destroy(): Group = js.native
   /**
-  	 * Checks whether this group was moved (since `saveCoords` was called last)
-  	 * @return true if an object was moved (since fabric.Group#saveCoords was called)
+  	 * Check if this group or its parent group are caching, recursively up
+  	 * @return {Boolean}
   	 */
-  def hasMoved(): scala.Boolean = js.native
+  def isOnACache(): scala.Boolean = js.native
+  /**
+  	 * Realises the transform from this group onto the supplied object
+  	 * i.e. it tells you what would happen if the supplied object was in
+  	 * the group, and then the group was destroyed. It mutates the supplied
+  	 * object.
+  	 * @param {fabric.Object} object
+  	 * @return {fabric.Object} transformedObject
+  	 */
+  def realizeTransform(`object`: Object): Object = js.native
   /**
   	 * Removes an object from a group; Then recalculates group's dimension, position.
   	 * @return thisArg
@@ -48,32 +71,24 @@ class Group ()
   	 */
   def removeWithUpdate(`object`: Object): Group = js.native
   /**
-  	 * Saves coordinates of this instance (to be used together with `hasMoved`)
-  	 * @saveCoords
-  	 * @return thisArg
-  	 * @chainable
-  	 */
-  def saveCoords(): Group = js.native
-  /**
   	 * Sets coordinates of all group objects
   	 * @return thisArg
   	 * @chainable
   	 */
   def setObjectsCoords(): Group = js.native
   /**
-    * make a group an active selection, remove the group from canvas
-    * the group has to be on canvas for this to work.
-    * @return {fabric.ActiveSelection} thisArg
-    * @chainable
-    */
+  	 * make a group an active selection, remove the group from canvas
+  	 * the group has to be on canvas for this to work.
+  	 * @return {fabric.ActiveSelection} thisArg
+  	 * @chainable
+  	 */
   def toActiveSelection(): ActiveSelection = js.native
   /**
-  	 * Returns svg representation of an instance
-  	 * @param [reviver] Method for further parsing of svg representation.
-  	 * @return svg representation of an instance
+  	 * Destroys a group (restoring state of its objects)
+  	 * @return {fabric.Group} thisArg
+  	 * @chainable
   	 */
-  def toSVG(): java.lang.String = js.native
-  def toSVG(reviver: js.Function): java.lang.String = js.native
+  def ungroupOnCanvas(): Group = js.native
 }
 
 /* static members */

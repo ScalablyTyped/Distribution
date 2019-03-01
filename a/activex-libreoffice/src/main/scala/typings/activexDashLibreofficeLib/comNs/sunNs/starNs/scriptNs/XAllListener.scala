@@ -22,3 +22,24 @@ trait XAllListener
   def firing(iaEvent: AllEventObject): scala.Unit
 }
 
+object XAllListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    approveFiring: js.Function1[AllEventObject, js.Any],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    firing: js.Function1[AllEventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAllListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("approveFiring")(approveFiring)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("firing")(firing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAllListener]
+  }
+}
+

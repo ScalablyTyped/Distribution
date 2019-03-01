@@ -14,3 +14,13 @@ trait AccountInfo extends js.Object {
   var plugin: js.UndefOr[weixinDashAppLib.Anon_AppIdVersion] = js.undefined
 }
 
+object AccountInfo {
+  @scala.inline
+  def apply(miniProgram: weixinDashAppLib.Anon_AppId, plugin: weixinDashAppLib.Anon_AppIdVersion = null): AccountInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("miniProgram")(miniProgram)
+    if (plugin != null) __obj.updateDynamic("plugin")(plugin)
+    __obj.asInstanceOf[AccountInfo]
+  }
+}
+

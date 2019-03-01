@@ -12,3 +12,20 @@ trait Anon_FirstParent extends js.Object {
   var simplifiedHistory: scala.Double
 }
 
+object Anon_FirstParent {
+  @scala.inline
+  def apply(
+    firstParent: scala.Double,
+    fullHistory: scala.Double,
+    fullHistorySimplifyMerges: scala.Double,
+    simplifiedHistory: scala.Double
+  ): Anon_FirstParent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("firstParent")(firstParent)
+    __obj.updateDynamic("fullHistory")(fullHistory)
+    __obj.updateDynamic("fullHistorySimplifyMerges")(fullHistorySimplifyMerges)
+    __obj.updateDynamic("simplifiedHistory")(simplifiedHistory)
+    __obj.asInstanceOf[Anon_FirstParent]
+  }
+}
+

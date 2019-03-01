@@ -29,3 +29,20 @@ trait LogicTargetModel extends js.Object {
   var LogicTargetModels: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
 }
 
+object LogicTargetModel {
+  @scala.inline
+  def apply(
+    CoordinateSystems: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    ID: java.lang.String,
+    LegendID: java.lang.String,
+    LogicTargetModels: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
+  ): LogicTargetModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CoordinateSystems")(CoordinateSystems)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("LegendID")(LegendID)
+    __obj.updateDynamic("LogicTargetModels")(LogicTargetModels)
+    __obj.asInstanceOf[LogicTargetModel]
+  }
+}
+

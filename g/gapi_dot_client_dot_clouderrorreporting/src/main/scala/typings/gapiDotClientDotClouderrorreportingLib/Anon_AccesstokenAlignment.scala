@@ -94,3 +94,62 @@ trait Anon_AccesstokenAlignment extends js.Object {
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccesstokenAlignment {
+  @scala.inline
+  def apply(
+    projectName: java.lang.String,
+    `$.xgafv`: java.lang.String = null,
+    access_token: java.lang.String = null,
+    alignment: java.lang.String = null,
+    alignmentTime: java.lang.String = null,
+    alt: java.lang.String = null,
+    bearer_token: java.lang.String = null,
+    callback: java.lang.String = null,
+    fields: java.lang.String = null,
+    groupId: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    order: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    pp: js.UndefOr[scala.Boolean] = js.undefined,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    `serviceFilter.resourceType`: java.lang.String = null,
+    `serviceFilter.service`: java.lang.String = null,
+    `serviceFilter.version`: java.lang.String = null,
+    `timeRange.period`: java.lang.String = null,
+    timedCountDuration: java.lang.String = null,
+    uploadType: java.lang.String = null,
+    upload_protocol: java.lang.String = null
+  ): Anon_AccesstokenAlignment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("projectName")(projectName)
+    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (alignmentTime != null) __obj.updateDynamic("alignmentTime")(alignmentTime)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (bearer_token != null) __obj.updateDynamic("bearer_token")(bearer_token)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (`serviceFilter.resourceType` != null) __obj.updateDynamic("serviceFilter.resourceType")(`serviceFilter.resourceType`)
+    if (`serviceFilter.service` != null) __obj.updateDynamic("serviceFilter.service")(`serviceFilter.service`)
+    if (`serviceFilter.version` != null) __obj.updateDynamic("serviceFilter.version")(`serviceFilter.version`)
+    if (`timeRange.period` != null) __obj.updateDynamic("timeRange.period")(`timeRange.period`)
+    if (timedCountDuration != null) __obj.updateDynamic("timedCountDuration")(timedCountDuration)
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType)
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol)
+    __obj.asInstanceOf[Anon_AccesstokenAlignment]
+  }
+}
+

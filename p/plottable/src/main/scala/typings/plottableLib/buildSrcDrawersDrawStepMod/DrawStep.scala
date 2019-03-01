@@ -10,3 +10,16 @@ trait DrawStep extends js.Object {
   var attrToProjector: plottableLib.buildSrcCoreInterfacesMod.AttributeToProjector
 }
 
+object DrawStep {
+  @scala.inline
+  def apply(
+    animator: plottableLib.buildSrcAnimatorsAnimatorMod.IAnimator,
+    attrToProjector: plottableLib.buildSrcCoreInterfacesMod.AttributeToProjector
+  ): DrawStep = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animator")(animator)
+    __obj.updateDynamic("attrToProjector")(attrToProjector)
+    __obj.asInstanceOf[DrawStep]
+  }
+}
+

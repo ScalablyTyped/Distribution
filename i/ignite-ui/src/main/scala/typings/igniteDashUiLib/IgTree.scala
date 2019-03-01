@@ -302,3 +302,119 @@ trait IgTree
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgTree {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTree
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animationDuration: scala.Int | scala.Double = null,
+    bindings: IgTreeBindings = null,
+    checkboxMode: java.lang.String = null,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    defaultNodeTarget: java.lang.String = null,
+    drag: DragEvent = null,
+    dragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    dragAndDropSettings: IgTreeDragAndDropSettings = null,
+    dragStart: DragStartEvent = null,
+    dragStop: DragStopEvent = null,
+    height: java.lang.String | scala.Double = null,
+    hotTracking: js.UndefOr[scala.Boolean] = js.undefined,
+    initialExpandDepth: scala.Int | scala.Double = null,
+    language: java.lang.String = null,
+    leafNodeImageClass: java.lang.String = null,
+    leafNodeImageTooltip: java.lang.String = null,
+    leafNodeImageUrl: java.lang.String = null,
+    loadOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: js.Any = null,
+    nodeCheckstateChanged: NodeCheckstateChangedEvent = null,
+    nodeCheckstateChanging: NodeCheckstateChangingEvent = null,
+    nodeClick: NodeClickEvent = null,
+    nodeCollapsed: NodeCollapsedEvent = null,
+    nodeCollapsing: NodeCollapsingEvent = null,
+    nodeDoubleClick: NodeDoubleClickEvent = null,
+    nodeDropped: NodeDroppedEvent = null,
+    nodeDropping: NodeDroppingEvent = null,
+    nodeExpanded: NodeExpandedEvent = null,
+    nodeExpanding: NodeExpandingEvent = null,
+    nodePopulated: NodePopulatedEvent = null,
+    nodePopulating: NodePopulatingEvent = null,
+    parentNodeImageClass: java.lang.String = null,
+    parentNodeImageTooltip: java.lang.String = null,
+    parentNodeImageUrl: java.lang.String = null,
+    pathSeparator: java.lang.String = null,
+    regional: java.lang.String | js.Object = null,
+    rendered: RenderedEvent = null,
+    rendering: RenderingEvent = null,
+    requestType: java.lang.String = null,
+    responseContentType: java.lang.String = null,
+    responseDataKey: java.lang.String = null,
+    responseDataType: java.lang.String = null,
+    selectionChanged: IgTreeSelectionChangedEvent = null,
+    selectionChanging: SelectionChangingEvent = null,
+    singleBranchExpand: js.UndefOr[scala.Boolean] = js.undefined,
+    updateUrl: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): IgTree = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (checkboxMode != null) __obj.updateDynamic("checkboxMode")(checkboxMode)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (defaultNodeTarget != null) __obj.updateDynamic("defaultNodeTarget")(defaultNodeTarget)
+    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (!js.isUndefined(dragAndDrop)) __obj.updateDynamic("dragAndDrop")(dragAndDrop)
+    if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
+    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hotTracking)) __obj.updateDynamic("hotTracking")(hotTracking)
+    if (initialExpandDepth != null) __obj.updateDynamic("initialExpandDepth")(initialExpandDepth.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (leafNodeImageClass != null) __obj.updateDynamic("leafNodeImageClass")(leafNodeImageClass)
+    if (leafNodeImageTooltip != null) __obj.updateDynamic("leafNodeImageTooltip")(leafNodeImageTooltip)
+    if (leafNodeImageUrl != null) __obj.updateDynamic("leafNodeImageUrl")(leafNodeImageUrl)
+    if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (nodeCheckstateChanged != null) __obj.updateDynamic("nodeCheckstateChanged")(nodeCheckstateChanged)
+    if (nodeCheckstateChanging != null) __obj.updateDynamic("nodeCheckstateChanging")(nodeCheckstateChanging)
+    if (nodeClick != null) __obj.updateDynamic("nodeClick")(nodeClick)
+    if (nodeCollapsed != null) __obj.updateDynamic("nodeCollapsed")(nodeCollapsed)
+    if (nodeCollapsing != null) __obj.updateDynamic("nodeCollapsing")(nodeCollapsing)
+    if (nodeDoubleClick != null) __obj.updateDynamic("nodeDoubleClick")(nodeDoubleClick)
+    if (nodeDropped != null) __obj.updateDynamic("nodeDropped")(nodeDropped)
+    if (nodeDropping != null) __obj.updateDynamic("nodeDropping")(nodeDropping)
+    if (nodeExpanded != null) __obj.updateDynamic("nodeExpanded")(nodeExpanded)
+    if (nodeExpanding != null) __obj.updateDynamic("nodeExpanding")(nodeExpanding)
+    if (nodePopulated != null) __obj.updateDynamic("nodePopulated")(nodePopulated)
+    if (nodePopulating != null) __obj.updateDynamic("nodePopulating")(nodePopulating)
+    if (parentNodeImageClass != null) __obj.updateDynamic("parentNodeImageClass")(parentNodeImageClass)
+    if (parentNodeImageTooltip != null) __obj.updateDynamic("parentNodeImageTooltip")(parentNodeImageTooltip)
+    if (parentNodeImageUrl != null) __obj.updateDynamic("parentNodeImageUrl")(parentNodeImageUrl)
+    if (pathSeparator != null) __obj.updateDynamic("pathSeparator")(pathSeparator)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType)
+    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(selectionChanged)
+    if (selectionChanging != null) __obj.updateDynamic("selectionChanging")(selectionChanging)
+    if (!js.isUndefined(singleBranchExpand)) __obj.updateDynamic("singleBranchExpand")(singleBranchExpand)
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgTree]
+  }
+}
+

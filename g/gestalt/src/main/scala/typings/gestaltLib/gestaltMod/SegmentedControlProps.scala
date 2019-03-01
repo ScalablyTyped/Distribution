@@ -12,3 +12,20 @@ trait SegmentedControlProps extends js.Object {
   def onChange(args: gestaltLib.Anon_ActiveIndex): scala.Unit
 }
 
+object SegmentedControlProps {
+  @scala.inline
+  def apply(
+    items: js.Array[reactLib.reactMod.ReactNs.ReactNode],
+    onChange: js.Function1[gestaltLib.Anon_ActiveIndex, scala.Unit],
+    selectedItemIndex: scala.Double,
+    size: gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null
+  ): SegmentedControlProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("selectedItemIndex")(selectedItemIndex)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SegmentedControlProps]
+  }
+}
+

@@ -28,3 +28,32 @@ trait Attachment extends AttachmentLike {
   var raw: js.UndefOr[java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | AttachmentLike] = js.undefined
 }
 
+object Attachment {
+  @scala.inline
+  def apply(
+    cid: java.lang.String = null,
+    content: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable = null,
+    contentDisposition: nodemailerLib.nodemailerLibStrings.attachment | nodemailerLib.nodemailerLibStrings.`inline` = null,
+    contentTransferEncoding: nodemailerLib.nodemailerLibStrings.`7bit` | nodemailerLib.nodemailerLibStrings.base64 | nodemailerLib.nodemailerLibStrings.`quoted-printable` | nodemailerLib.nodemailerLibNumbers.`false` = null,
+    contentType: java.lang.String = null,
+    encoding: java.lang.String = null,
+    filename: java.lang.String | nodemailerLib.nodemailerLibNumbers.`false` = null,
+    headers: Headers = null,
+    path: java.lang.String | nodeLib.urlMod.Url = null,
+    raw: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | AttachmentLike = null
+  ): Attachment = {
+    val __obj = js.Dynamic.literal()
+    if (cid != null) __obj.updateDynamic("cid")(cid)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
+    if (contentTransferEncoding != null) __obj.updateDynamic("contentTransferEncoding")(contentTransferEncoding.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Attachment]
+  }
+}
+

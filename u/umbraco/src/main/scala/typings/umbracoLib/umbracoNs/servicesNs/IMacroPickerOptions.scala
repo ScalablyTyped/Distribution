@@ -13,3 +13,12 @@ trait IMacroPickerOptions extends js.Object {
   var callback: angularLib.angularMod.Global.Function
 }
 
+object IMacroPickerOptions {
+  @scala.inline
+  def apply(callback: angularLib.angularMod.Global.Function): IMacroPickerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.asInstanceOf[IMacroPickerOptions]
+  }
+}
+

@@ -25,3 +25,18 @@ trait LengthOfTime extends js.Object {
   var months: js.UndefOr[scala.Double | scala.Null] = js.undefined
 }
 
+object LengthOfTime {
+  @scala.inline
+  def apply(
+    days: scala.Int | scala.Double = null,
+    interval: scala.Int | scala.Double = null,
+    months: scala.Int | scala.Double = null
+  ): LengthOfTime = {
+    val __obj = js.Dynamic.literal()
+    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LengthOfTime]
+  }
+}
+

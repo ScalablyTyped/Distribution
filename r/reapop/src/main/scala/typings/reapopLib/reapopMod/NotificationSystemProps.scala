@@ -10,3 +10,16 @@ trait NotificationSystemProps extends js.Object {
   var theme: NotificationSystemTheme
 }
 
+object NotificationSystemProps {
+  @scala.inline
+  def apply(
+    theme: NotificationSystemTheme,
+    filter: js.Function1[/* notification */ Notification, scala.Boolean] = null
+  ): NotificationSystemProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("theme")(theme)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    __obj.asInstanceOf[NotificationSystemProps]
+  }
+}
+

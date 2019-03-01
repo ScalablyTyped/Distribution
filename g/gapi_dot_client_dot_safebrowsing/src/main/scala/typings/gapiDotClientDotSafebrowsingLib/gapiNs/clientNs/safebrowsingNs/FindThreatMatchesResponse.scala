@@ -10,3 +10,12 @@ trait FindThreatMatchesResponse extends js.Object {
   var matches: js.UndefOr[js.Array[ThreatMatch]] = js.undefined
 }
 
+object FindThreatMatchesResponse {
+  @scala.inline
+  def apply(matches: js.Array[ThreatMatch] = null): FindThreatMatchesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (matches != null) __obj.updateDynamic("matches")(matches)
+    __obj.asInstanceOf[FindThreatMatchesResponse]
+  }
+}
+

@@ -12,3 +12,20 @@ trait GLViewNativeProps extends js.Object {
   var style: js.UndefOr[js.Any] = js.undefined
 }
 
+object GLViewNativeProps {
+  @scala.inline
+  def apply(
+    children: js.Any = null,
+    onContextCreate: js.Function1[/* gl */ reactLib.WebGLRenderingContext, scala.Unit] = null,
+    onContextFailure: js.Function1[/* e */ stdLib.Error, scala.Unit] = null,
+    style: js.Any = null
+  ): GLViewNativeProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (onContextCreate != null) __obj.updateDynamic("onContextCreate")(onContextCreate)
+    if (onContextFailure != null) __obj.updateDynamic("onContextFailure")(onContextFailure)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[GLViewNativeProps]
+  }
+}
+

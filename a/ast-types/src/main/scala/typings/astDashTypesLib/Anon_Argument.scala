@@ -11,3 +11,18 @@ trait Anon_Argument extends js.Object {
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
 }
 
+object Anon_Argument {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_Argument = {
+    val __obj = js.Dynamic.literal()
+    if (argument != null) __obj.updateDynamic("argument")(argument)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_Argument]
+  }
+}
+

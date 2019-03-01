@@ -48,3 +48,30 @@ trait ExceptionDetails extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExceptionDetails {
+  @scala.inline
+  def apply(
+    columnNumber: scala.Double,
+    exceptionId: scala.Double,
+    lineNumber: scala.Double,
+    text: java.lang.String,
+    exception: RemoteObject = null,
+    executionContextId: js.UndefOr[ExecutionContextId] = js.undefined,
+    scriptId: ScriptId = null,
+    stackTrace: StackTrace = null,
+    url: java.lang.String = null
+  ): ExceptionDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnNumber")(columnNumber)
+    __obj.updateDynamic("exceptionId")(exceptionId)
+    __obj.updateDynamic("lineNumber")(lineNumber)
+    __obj.updateDynamic("text")(text)
+    if (exception != null) __obj.updateDynamic("exception")(exception)
+    if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
+    if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId)
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ExceptionDetails]
+  }
+}
+

@@ -15,3 +15,12 @@ trait AddScopeOptions extends js.Object {
   var `override`: scala.Boolean
 }
 
+object AddScopeOptions {
+  @scala.inline
+  def apply(`override`: scala.Boolean): AddScopeOptions = {
+    val __obj = js.Dynamic.literal(`override` = `override`)
+  
+    __obj.asInstanceOf[AddScopeOptions]
+  }
+}
+

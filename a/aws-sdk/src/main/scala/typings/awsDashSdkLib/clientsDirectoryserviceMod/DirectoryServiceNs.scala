@@ -2772,6 +2772,44 @@ object DirectoryServiceNs extends js.Object {
     var TrustId: js.UndefOr[TrustId] = js.undefined
   }
   
+  trait _DirectoryEdition extends js.Object
+  
+  trait _DirectorySize extends js.Object
+  
+  trait _DirectoryStage extends js.Object
+  
+  trait _DirectoryType extends js.Object
+  
+  trait _DomainControllerStatus extends js.Object
+  
+  trait _IpRouteStatusMsg extends js.Object
+  
+  trait _RadiusAuthenticationProtocol extends js.Object
+  
+  trait _RadiusStatus extends js.Object
+  
+  trait _SchemaExtensionStatus extends js.Object
+  
+  trait _SelectiveAuth extends js.Object
+  
+  trait _ShareMethod extends js.Object
+  
+  trait _ShareStatus extends js.Object
+  
+  trait _SnapshotStatus extends js.Object
+  
+  trait _SnapshotType extends js.Object
+  
+  trait _TopicStatus extends js.Object
+  
+  trait _TrustDirection extends js.Object
+  
+  trait _TrustState extends js.Object
+  
+  trait _TrustType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccessUrl = java.lang.String
   type AddedDateTime = stdLib.Date
@@ -2798,25 +2836,25 @@ object DirectoryServiceNs extends js.Object {
   type Description = java.lang.String
   type DesiredNumberOfDomainControllers = scala.Double
   type DirectoryDescriptions = js.Array[DirectoryDescription]
-  type DirectoryEdition = awsDashSdkLib.awsDashSdkLibStrings.Enterprise | awsDashSdkLib.awsDashSdkLibStrings.Standard | java.lang.String
+  type DirectoryEdition = _DirectoryEdition | java.lang.String
   type DirectoryId = java.lang.String
   type DirectoryIds = js.Array[DirectoryId]
   type DirectoryName = java.lang.String
   type DirectoryShortName = java.lang.String
-  type DirectorySize = awsDashSdkLib.awsDashSdkLibStrings.Small | awsDashSdkLib.awsDashSdkLibStrings.Large | java.lang.String
-  type DirectoryStage = awsDashSdkLib.awsDashSdkLibStrings.Requested | awsDashSdkLib.awsDashSdkLibStrings.Creating | awsDashSdkLib.awsDashSdkLibStrings.Created | awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Inoperable | awsDashSdkLib.awsDashSdkLibStrings.Impaired | awsDashSdkLib.awsDashSdkLibStrings.Restoring | awsDashSdkLib.awsDashSdkLibStrings.RestoreFailed | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Deleted | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
-  type DirectoryType = awsDashSdkLib.awsDashSdkLibStrings.SimpleAD | awsDashSdkLib.awsDashSdkLibStrings.ADConnector | awsDashSdkLib.awsDashSdkLibStrings.MicrosoftAD | awsDashSdkLib.awsDashSdkLibStrings.SharedMicrosoftAD | java.lang.String
+  type DirectorySize = _DirectorySize | java.lang.String
+  type DirectoryStage = _DirectoryStage | java.lang.String
+  type DirectoryType = _DirectoryType | java.lang.String
   type DnsIpAddrs = js.Array[IpAddr]
   type DomainControllerId = java.lang.String
   type DomainControllerIds = js.Array[DomainControllerId]
-  type DomainControllerStatus = awsDashSdkLib.awsDashSdkLibStrings.Creating | awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Impaired | awsDashSdkLib.awsDashSdkLibStrings.Restoring | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Deleted | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type DomainControllerStatus = _DomainControllerStatus | java.lang.String
   type DomainControllerStatusReason = java.lang.String
   type DomainControllers = js.Array[DomainController]
   type EndDateTime = stdLib.Date
   type EventTopics = js.Array[EventTopic]
   type IpAddr = java.lang.String
   type IpAddrs = js.Array[IpAddr]
-  type IpRouteStatusMsg = awsDashSdkLib.awsDashSdkLibStrings.Adding | awsDashSdkLib.awsDashSdkLibStrings.Added | awsDashSdkLib.awsDashSdkLibStrings.Removing | awsDashSdkLib.awsDashSdkLibStrings.Removed | awsDashSdkLib.awsDashSdkLibStrings.AddFailed | awsDashSdkLib.awsDashSdkLibStrings.RemoveFailed | java.lang.String
+  type IpRouteStatusMsg = _IpRouteStatusMsg | java.lang.String
   type IpRouteStatusReason = java.lang.String
   type IpRoutes = js.Array[IpRoute]
   type IpRoutesInfo = js.Array[IpRouteInfo]
@@ -2832,11 +2870,11 @@ object DirectoryServiceNs extends js.Object {
   type OrganizationalUnitDN = java.lang.String
   type Password = java.lang.String
   type PortNumber = scala.Double
-  type RadiusAuthenticationProtocol = awsDashSdkLib.awsDashSdkLibStrings.PAP | awsDashSdkLib.awsDashSdkLibStrings.CHAP | awsDashSdkLib.awsDashSdkLibStrings.`MS-CHAPv1` | awsDashSdkLib.awsDashSdkLibStrings.`MS-CHAPv2` | java.lang.String
+  type RadiusAuthenticationProtocol = _RadiusAuthenticationProtocol | java.lang.String
   type RadiusDisplayLabel = java.lang.String
   type RadiusRetries = scala.Double
   type RadiusSharedSecret = java.lang.String
-  type RadiusStatus = awsDashSdkLib.awsDashSdkLibStrings.Creating | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type RadiusStatus = _RadiusStatus | java.lang.String
   type RadiusTimeout = scala.Double
   type RemoteDomainName = java.lang.String
   type RemoteDomainNames = js.Array[RemoteDomainName]
@@ -2845,21 +2883,21 @@ object DirectoryServiceNs extends js.Object {
   type ResourceId = java.lang.String
   type SID = java.lang.String
   type SchemaExtensionId = java.lang.String
-  type SchemaExtensionStatus = awsDashSdkLib.awsDashSdkLibStrings.Initializing | awsDashSdkLib.awsDashSdkLibStrings.CreatingSnapshot | awsDashSdkLib.awsDashSdkLibStrings.UpdatingSchema | awsDashSdkLib.awsDashSdkLibStrings.Replicating | awsDashSdkLib.awsDashSdkLibStrings.CancelInProgress | awsDashSdkLib.awsDashSdkLibStrings.RollbackInProgress | awsDashSdkLib.awsDashSdkLibStrings.Cancelled | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Completed | java.lang.String
+  type SchemaExtensionStatus = _SchemaExtensionStatus | java.lang.String
   type SchemaExtensionStatusReason = java.lang.String
   type SchemaExtensionsInfo = js.Array[SchemaExtensionInfo]
   type SecurityGroupId = java.lang.String
-  type SelectiveAuth = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Disabled | java.lang.String
+  type SelectiveAuth = _SelectiveAuth | java.lang.String
   type Server = java.lang.String
   type Servers = js.Array[Server]
-  type ShareMethod = awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATIONS | awsDashSdkLib.awsDashSdkLibStrings.HANDSHAKE | java.lang.String
-  type ShareStatus = awsDashSdkLib.awsDashSdkLibStrings.Shared | awsDashSdkLib.awsDashSdkLibStrings.PendingAcceptance | awsDashSdkLib.awsDashSdkLibStrings.Rejected | awsDashSdkLib.awsDashSdkLibStrings.Rejecting | awsDashSdkLib.awsDashSdkLibStrings.RejectFailed | awsDashSdkLib.awsDashSdkLibStrings.Sharing | awsDashSdkLib.awsDashSdkLibStrings.ShareFailed | awsDashSdkLib.awsDashSdkLibStrings.Deleted | awsDashSdkLib.awsDashSdkLibStrings.Deleting | java.lang.String
+  type ShareMethod = _ShareMethod | java.lang.String
+  type ShareStatus = _ShareStatus | java.lang.String
   type SharedDirectories = js.Array[SharedDirectory]
   type SnapshotId = java.lang.String
   type SnapshotIds = js.Array[SnapshotId]
   type SnapshotName = java.lang.String
-  type SnapshotStatus = awsDashSdkLib.awsDashSdkLibStrings.Creating | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
-  type SnapshotType = awsDashSdkLib.awsDashSdkLibStrings.Auto | awsDashSdkLib.awsDashSdkLibStrings.Manual | java.lang.String
+  type SnapshotStatus = _SnapshotStatus | java.lang.String
+  type SnapshotType = _SnapshotType | java.lang.String
   type Snapshots = js.Array[Snapshot]
   type SsoEnabled = scala.Boolean
   type StageReason = java.lang.String
@@ -2878,20 +2916,20 @@ object DirectoryServiceNs extends js.Object {
   type TopicArn = java.lang.String
   type TopicName = java.lang.String
   type TopicNames = js.Array[TopicName]
-  type TopicStatus = awsDashSdkLib.awsDashSdkLibStrings.Registered | (awsDashSdkLib.awsDashSdkLibStrings.`Topic not found`) | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Deleted | java.lang.String
-  type TrustDirection = (awsDashSdkLib.awsDashSdkLibStrings.`One-Way: Outgoing`) | (awsDashSdkLib.awsDashSdkLibStrings.`One-Way: Incoming`) | awsDashSdkLib.awsDashSdkLibStrings.`Two-Way` | java.lang.String
+  type TopicStatus = _TopicStatus | java.lang.String
+  type TrustDirection = _TrustDirection | java.lang.String
   type TrustId = java.lang.String
   type TrustIds = js.Array[TrustId]
   type TrustPassword = java.lang.String
-  type TrustState = awsDashSdkLib.awsDashSdkLibStrings.Creating | awsDashSdkLib.awsDashSdkLibStrings.Created | awsDashSdkLib.awsDashSdkLibStrings.Verifying | awsDashSdkLib.awsDashSdkLibStrings.VerifyFailed | awsDashSdkLib.awsDashSdkLibStrings.Verified | awsDashSdkLib.awsDashSdkLibStrings.Updating | awsDashSdkLib.awsDashSdkLibStrings.UpdateFailed | awsDashSdkLib.awsDashSdkLibStrings.Updated | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Deleted | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type TrustState = _TrustState | java.lang.String
   type TrustStateReason = java.lang.String
-  type TrustType = awsDashSdkLib.awsDashSdkLibStrings.Forest | awsDashSdkLib.awsDashSdkLibStrings.External | java.lang.String
+  type TrustType = _TrustType | java.lang.String
   type Trusts = js.Array[Trust]
   type UpdateSecurityGroupForDirectoryControllers = scala.Boolean
   type UseSameUsername = scala.Boolean
   type UserName = java.lang.String
   type UserPassword = java.lang.String
   type VpcId = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-04-16` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

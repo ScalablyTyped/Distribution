@@ -17,3 +17,12 @@ trait NodeSelector extends js.Object {
   val nodeSelectorTerms: js.Array[NodeSelectorTerm]
 }
 
+object NodeSelector {
+  @scala.inline
+  def apply(nodeSelectorTerms: js.Array[NodeSelectorTerm]): NodeSelector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nodeSelectorTerms")(nodeSelectorTerms)
+    __obj.asInstanceOf[NodeSelector]
+  }
+}
+

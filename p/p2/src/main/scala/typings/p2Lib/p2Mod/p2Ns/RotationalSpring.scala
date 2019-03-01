@@ -9,3 +9,24 @@ trait RotationalSpring extends Spring {
   var restAngle: scala.Double
 }
 
+object RotationalSpring {
+  @scala.inline
+  def apply(
+    applyForce: js.Function0[scala.Unit],
+    bodyA: Body,
+    bodyB: Body,
+    damping: scala.Double,
+    restAngle: scala.Double,
+    stiffness: scala.Double
+  ): RotationalSpring = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applyForce")(applyForce)
+    __obj.updateDynamic("bodyA")(bodyA)
+    __obj.updateDynamic("bodyB")(bodyB)
+    __obj.updateDynamic("damping")(damping)
+    __obj.updateDynamic("restAngle")(restAngle)
+    __obj.updateDynamic("stiffness")(stiffness)
+    __obj.asInstanceOf[RotationalSpring]
+  }
+}
+

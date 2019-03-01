@@ -12,3 +12,13 @@ trait GoogleLongrunning__ListOperationsResponse extends js.Object {
   var operations: js.UndefOr[js.Array[GoogleLongrunning__Operation]] = js.undefined
 }
 
+object GoogleLongrunning__ListOperationsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, operations: js.Array[GoogleLongrunning__Operation] = null): GoogleLongrunning__ListOperationsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (operations != null) __obj.updateDynamic("operations")(operations)
+    __obj.asInstanceOf[GoogleLongrunning__ListOperationsResponse]
+  }
+}
+

@@ -17,3 +17,20 @@ trait HtmlRenderingOptions extends XmlRenderingOptions {
   var smart: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HtmlRenderingOptions {
+  @scala.inline
+  def apply(
+    safe: js.UndefOr[scala.Boolean] = js.undefined,
+    smart: js.UndefOr[scala.Boolean] = js.undefined,
+    sourcepos: js.UndefOr[scala.Boolean] = js.undefined,
+    time: js.UndefOr[scala.Boolean] = js.undefined
+  ): HtmlRenderingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
+    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart)
+    if (!js.isUndefined(sourcepos)) __obj.updateDynamic("sourcepos")(sourcepos)
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[HtmlRenderingOptions]
+  }
+}
+

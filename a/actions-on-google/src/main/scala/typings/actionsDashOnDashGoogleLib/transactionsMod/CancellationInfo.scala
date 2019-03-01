@@ -10,3 +10,12 @@ trait CancellationInfo extends js.Object {
   var reason: java.lang.String
 }
 
+object CancellationInfo {
+  @scala.inline
+  def apply(reason: java.lang.String): CancellationInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[CancellationInfo]
+  }
+}
+

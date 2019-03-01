@@ -47,3 +47,23 @@ trait XDocumentEventBroadcaster extends js.Object {
   def removeDocumentEventListener(Listener: XDocumentEventListener): scala.Unit
 }
 
+object XDocumentEventBroadcaster {
+  @scala.inline
+  def apply(
+    addDocumentEventListener: js.Function1[XDocumentEventListener, scala.Unit],
+    notifyDocumentEvent: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController2, 
+      js.Any, 
+      scala.Unit
+    ],
+    removeDocumentEventListener: js.Function1[XDocumentEventListener, scala.Unit]
+  ): XDocumentEventBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addDocumentEventListener")(addDocumentEventListener)
+    __obj.updateDynamic("notifyDocumentEvent")(notifyDocumentEvent)
+    __obj.updateDynamic("removeDocumentEventListener")(removeDocumentEventListener)
+    __obj.asInstanceOf[XDocumentEventBroadcaster]
+  }
+}
+

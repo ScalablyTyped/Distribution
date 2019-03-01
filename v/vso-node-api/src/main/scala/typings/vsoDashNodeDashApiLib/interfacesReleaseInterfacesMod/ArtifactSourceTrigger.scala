@@ -13,3 +13,18 @@ trait ArtifactSourceTrigger extends ReleaseTriggerBase {
   var triggerConditions: js.Array[ArtifactFilter]
 }
 
+object ArtifactSourceTrigger {
+  @scala.inline
+  def apply(
+    artifactAlias: java.lang.String,
+    triggerConditions: js.Array[ArtifactFilter],
+    triggerType: ReleaseTriggerType
+  ): ArtifactSourceTrigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifactAlias")(artifactAlias)
+    __obj.updateDynamic("triggerConditions")(triggerConditions)
+    __obj.updateDynamic("triggerType")(triggerType)
+    __obj.asInstanceOf[ArtifactSourceTrigger]
+  }
+}
+

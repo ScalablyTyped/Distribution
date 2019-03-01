@@ -9,3 +9,12 @@ trait fragLoadingData extends js.Object {
   var frag: Fragment
 }
 
+object fragLoadingData {
+  @scala.inline
+  def apply(frag: Fragment): fragLoadingData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frag")(frag)
+    __obj.asInstanceOf[fragLoadingData]
+  }
+}
+

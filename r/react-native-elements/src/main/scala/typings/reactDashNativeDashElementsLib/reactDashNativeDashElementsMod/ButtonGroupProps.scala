@@ -141,3 +141,62 @@ trait ButtonGroupProps extends js.Object {
   def onPress(selectedIndex: scala.Double): scala.Unit
 }
 
+object ButtonGroupProps {
+  @scala.inline
+  def apply(
+    buttons: js.Array[java.lang.String] | js.Array[ElementObject],
+    onPress: js.Function1[scala.Double, scala.Unit],
+    selectedIndex: scala.Double,
+    Component: reactLib.reactMod.ReactNs.ComponentType[_] = null,
+    activeOpacity: scala.Int | scala.Double = null,
+    buttonStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    containerBorderRadius: scala.Int | scala.Double = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    disabled: scala.Boolean | js.Array[scala.Double] = null,
+    disabledSelectedStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    disabledSelectedTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    disabledStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    disabledTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    innerBorderStyle: InnerBorderStyleProperty = null,
+    lastBorderStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[
+      reactDashNativeLib.reactDashNativeMod.TextStyle | reactDashNativeLib.reactDashNativeMod.ViewStyle
+    ] = null,
+    onHideUnderlay: js.Function0[scala.Unit] = null,
+    onShowUnderlay: js.Function0[scala.Unit] = null,
+    selectMultiple: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedButtonStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    selectedIndexes: js.Array[scala.Double] = null,
+    selectedTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    setOpacityTo: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    underlayColor: java.lang.String = null
+  ): ButtonGroupProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    __obj.updateDynamic("onPress")(onPress)
+    __obj.updateDynamic("selectedIndex")(selectedIndex)
+    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
+    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
+    if (containerBorderRadius != null) __obj.updateDynamic("containerBorderRadius")(containerBorderRadius.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (disabledSelectedStyle != null) __obj.updateDynamic("disabledSelectedStyle")(disabledSelectedStyle.asInstanceOf[js.Any])
+    if (disabledSelectedTextStyle != null) __obj.updateDynamic("disabledSelectedTextStyle")(disabledSelectedTextStyle.asInstanceOf[js.Any])
+    if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle.asInstanceOf[js.Any])
+    if (disabledTextStyle != null) __obj.updateDynamic("disabledTextStyle")(disabledTextStyle.asInstanceOf[js.Any])
+    if (innerBorderStyle != null) __obj.updateDynamic("innerBorderStyle")(innerBorderStyle)
+    if (lastBorderStyle != null) __obj.updateDynamic("lastBorderStyle")(lastBorderStyle.asInstanceOf[js.Any])
+    if (onHideUnderlay != null) __obj.updateDynamic("onHideUnderlay")(onHideUnderlay)
+    if (onShowUnderlay != null) __obj.updateDynamic("onShowUnderlay")(onShowUnderlay)
+    if (!js.isUndefined(selectMultiple)) __obj.updateDynamic("selectMultiple")(selectMultiple)
+    if (selectedButtonStyle != null) __obj.updateDynamic("selectedButtonStyle")(selectedButtonStyle.asInstanceOf[js.Any])
+    if (selectedIndexes != null) __obj.updateDynamic("selectedIndexes")(selectedIndexes)
+    if (selectedTextStyle != null) __obj.updateDynamic("selectedTextStyle")(selectedTextStyle.asInstanceOf[js.Any])
+    if (setOpacityTo != null) __obj.updateDynamic("setOpacityTo")(setOpacityTo)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor)
+    __obj.asInstanceOf[ButtonGroupProps]
+  }
+}
+

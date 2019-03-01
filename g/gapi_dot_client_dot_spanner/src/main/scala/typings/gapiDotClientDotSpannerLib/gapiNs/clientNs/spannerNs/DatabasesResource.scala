@@ -68,3 +68,61 @@ trait DatabasesResource extends js.Object {
   def updateDdl(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object DatabasesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    dropDatabase: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Database]
+    ],
+    getDdl: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetDatabaseDdlResponse]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDatabasesResponse]
+    ],
+    operations: OperationsResource,
+    sessions: SessionsResource,
+    setIamPolicy: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ],
+    updateDdl: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): DatabasesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("dropDatabase")(dropDatabase)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getDdl")(getDdl)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("operations")(operations)
+    __obj.updateDynamic("sessions")(sessions)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.updateDynamic("updateDdl")(updateDdl)
+    __obj.asInstanceOf[DatabasesResource]
+  }
+}
+

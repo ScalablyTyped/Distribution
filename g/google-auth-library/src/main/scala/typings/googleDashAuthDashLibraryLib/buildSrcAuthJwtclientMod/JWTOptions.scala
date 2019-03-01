@@ -16,3 +16,28 @@ trait JWTOptions
   var subject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JWTOptions {
+  @scala.inline
+  def apply(
+    additionalClaims: js.Object = null,
+    eagerRefreshThresholdMillis: scala.Int | scala.Double = null,
+    email: java.lang.String = null,
+    key: java.lang.String = null,
+    keyFile: java.lang.String = null,
+    keyId: java.lang.String = null,
+    scopes: java.lang.String | js.Array[java.lang.String] = null,
+    subject: java.lang.String = null
+  ): JWTOptions = {
+    val __obj = js.Dynamic.literal()
+    if (additionalClaims != null) __obj.updateDynamic("additionalClaims")(additionalClaims)
+    if (eagerRefreshThresholdMillis != null) __obj.updateDynamic("eagerRefreshThresholdMillis")(eagerRefreshThresholdMillis.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    __obj.asInstanceOf[JWTOptions]
+  }
+}
+

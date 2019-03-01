@@ -13,3 +13,18 @@ trait Anon_ParseElements extends js.Object {
   ]
 }
 
+object Anon_ParseElements {
+  @scala.inline
+  def apply(
+    parseElements: js.Tuple3[
+      leafletDashGpxLib.leafletDashGpxLibStrings.track, 
+      leafletDashGpxLib.leafletDashGpxLibStrings.route, 
+      leafletDashGpxLib.leafletDashGpxLibStrings.waypoint
+    ]
+  ): Anon_ParseElements = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parseElements")(parseElements)
+    __obj.asInstanceOf[Anon_ParseElements]
+  }
+}
+

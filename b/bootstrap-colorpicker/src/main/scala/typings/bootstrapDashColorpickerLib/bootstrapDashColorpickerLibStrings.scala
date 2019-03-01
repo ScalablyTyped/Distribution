@@ -7,49 +7,49 @@ import scala.scalajs.js.annotation._
 
 object bootstrapDashColorpickerLibStrings {
   @js.native
-  sealed trait changeColor extends js.Object
+  sealed trait changeColor extends ColorPickerEvents
   
   @js.native
   sealed trait colorpicker extends js.Object
   
   @js.native
-  sealed trait create extends js.Object
+  sealed trait create extends ColorPickerEvents
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait destroy extends ColorPickerEvents
   
   @js.native
-  sealed trait disable extends js.Object
+  sealed trait disable extends ColorPickerEvents
   
   @js.native
-  sealed trait enable extends js.Object
+  sealed trait enable extends ColorPickerEvents
   
   @js.native
   sealed trait getValue extends js.Object
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex extends ColorFormat
   
   @js.native
   sealed trait hide extends js.Object
   
   @js.native
-  sealed trait hidePicker extends js.Object
+  sealed trait hidePicker extends ColorPickerEvents
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left extends ColorPickerAlignOptions
   
   @js.native
   sealed trait reposition extends js.Object
   
   @js.native
-  sealed trait rgb extends js.Object
+  sealed trait rgb extends ColorFormat
   
   @js.native
-  sealed trait rgba extends js.Object
+  sealed trait rgba extends ColorFormat
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right extends ColorPickerAlignOptions
   
   @js.native
   sealed trait setValue extends js.Object
@@ -58,7 +58,7 @@ object bootstrapDashColorpickerLibStrings {
   sealed trait show extends js.Object
   
   @js.native
-  sealed trait showPicker extends js.Object
+  sealed trait showPicker extends ColorPickerEvents
   
   @js.native
   sealed trait update extends js.Object

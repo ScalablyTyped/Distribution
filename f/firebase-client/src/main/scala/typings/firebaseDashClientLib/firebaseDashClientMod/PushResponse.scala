@@ -12,3 +12,12 @@ trait PushResponse extends js.Object {
   var name: java.lang.String
 }
 
+object PushResponse {
+  @scala.inline
+  def apply(name: java.lang.String): PushResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[PushResponse]
+  }
+}
+

@@ -32,3 +32,20 @@ trait Expr extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Expr {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    expression: java.lang.String = null,
+    location: java.lang.String = null,
+    title: java.lang.String = null
+  ): Expr = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (expression != null) __obj.updateDynamic("expression")(expression)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Expr]
+  }
+}
+

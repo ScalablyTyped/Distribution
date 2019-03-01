@@ -15,3 +15,26 @@ trait FancyBoxButtonTypes extends js.Object {
   var zoom: java.lang.String
 }
 
+object FancyBoxButtonTypes {
+  @scala.inline
+  def apply(
+    close: java.lang.String,
+    download: java.lang.String,
+    fullScreen: java.lang.String,
+    share: java.lang.String,
+    slideShow: java.lang.String,
+    thumbs: java.lang.String,
+    zoom: java.lang.String
+  ): FancyBoxButtonTypes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("download")(download)
+    __obj.updateDynamic("fullScreen")(fullScreen)
+    __obj.updateDynamic("share")(share)
+    __obj.updateDynamic("slideShow")(slideShow)
+    __obj.updateDynamic("thumbs")(thumbs)
+    __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[FancyBoxButtonTypes]
+  }
+}
+

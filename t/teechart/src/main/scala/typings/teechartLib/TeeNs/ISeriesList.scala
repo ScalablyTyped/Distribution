@@ -14,3 +14,22 @@ trait ISeriesList extends js.Object {
   def firstVisible(): ISeries
 }
 
+object ISeriesList {
+  @scala.inline
+  def apply(
+    anyUsesAxes: js.Function0[scala.Boolean],
+    chart: IChart,
+    clicked: js.Function1[IPoint, scala.Boolean],
+    firstVisible: js.Function0[ISeries],
+    items: js.Array[ISeries]
+  ): ISeriesList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("anyUsesAxes")(anyUsesAxes)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("clicked")(clicked)
+    __obj.updateDynamic("firstVisible")(firstVisible)
+    __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[ISeriesList]
+  }
+}
+

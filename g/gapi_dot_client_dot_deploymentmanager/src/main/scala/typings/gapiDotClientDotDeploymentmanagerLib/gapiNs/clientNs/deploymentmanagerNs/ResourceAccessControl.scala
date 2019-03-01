@@ -10,3 +10,12 @@ trait ResourceAccessControl extends js.Object {
   var gcpIamPolicy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResourceAccessControl {
+  @scala.inline
+  def apply(gcpIamPolicy: java.lang.String = null): ResourceAccessControl = {
+    val __obj = js.Dynamic.literal()
+    if (gcpIamPolicy != null) __obj.updateDynamic("gcpIamPolicy")(gcpIamPolicy)
+    __obj.asInstanceOf[ResourceAccessControl]
+  }
+}
+

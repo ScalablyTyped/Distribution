@@ -11,3 +11,18 @@ trait InterpolateOption extends js.Object {
   var regExp: js.UndefOr[java.lang.String | stdLib.RegExp] = js.undefined
 }
 
+object InterpolateOption {
+  @scala.inline
+  def apply(
+    content: java.lang.String | nodeLib.Buffer = null,
+    context: java.lang.String = null,
+    regExp: java.lang.String | stdLib.RegExp = null
+  ): InterpolateOption = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (regExp != null) __obj.updateDynamic("regExp")(regExp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InterpolateOption]
+  }
+}
+

@@ -12,3 +12,13 @@ trait ProductCustomGroup extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProductCustomGroup {
+  @scala.inline
+  def apply(attributes: js.Array[ProductCustomAttribute] = null, name: java.lang.String = null): ProductCustomGroup = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ProductCustomGroup]
+  }
+}
+

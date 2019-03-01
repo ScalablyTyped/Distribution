@@ -133,3 +133,76 @@ trait GetInstanceResult extends js.Object {
   val vpcSecurityGroupIds: js.Array[java.lang.String]
 }
 
+object GetInstanceResult {
+  @scala.inline
+  def apply(
+    ami: java.lang.String,
+    arn: java.lang.String,
+    associatePublicIpAddress: scala.Boolean,
+    availabilityZone: java.lang.String,
+    creditSpecifications: js.Array[atPulumiAwsLib.Anon_CpuCredits],
+    disableApiTermination: scala.Boolean,
+    ebsBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotId],
+    ebsOptimized: scala.Boolean,
+    ephemeralBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceNameNoDevice],
+    hostId: java.lang.String,
+    iamInstanceProfile: java.lang.String,
+    id: java.lang.String,
+    instanceState: java.lang.String,
+    instanceTags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    instanceType: java.lang.String,
+    keyName: java.lang.String,
+    monitoring: scala.Boolean,
+    networkInterfaceId: java.lang.String,
+    passwordData: java.lang.String,
+    placementGroup: java.lang.String,
+    privateDns: java.lang.String,
+    privateIp: java.lang.String,
+    publicDns: java.lang.String,
+    publicIp: java.lang.String,
+    rootBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationIops],
+    securityGroups: js.Array[java.lang.String],
+    sourceDestCheck: scala.Boolean,
+    subnetId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    tenancy: java.lang.String,
+    userData: java.lang.String,
+    vpcSecurityGroupIds: js.Array[java.lang.String]
+  ): GetInstanceResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ami")(ami)
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress)
+    __obj.updateDynamic("availabilityZone")(availabilityZone)
+    __obj.updateDynamic("creditSpecifications")(creditSpecifications)
+    __obj.updateDynamic("disableApiTermination")(disableApiTermination)
+    __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices)
+    __obj.updateDynamic("ebsOptimized")(ebsOptimized)
+    __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices)
+    __obj.updateDynamic("hostId")(hostId)
+    __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("instanceState")(instanceState)
+    __obj.updateDynamic("instanceTags")(instanceTags)
+    __obj.updateDynamic("instanceType")(instanceType)
+    __obj.updateDynamic("keyName")(keyName)
+    __obj.updateDynamic("monitoring")(monitoring)
+    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
+    __obj.updateDynamic("passwordData")(passwordData)
+    __obj.updateDynamic("placementGroup")(placementGroup)
+    __obj.updateDynamic("privateDns")(privateDns)
+    __obj.updateDynamic("privateIp")(privateIp)
+    __obj.updateDynamic("publicDns")(publicDns)
+    __obj.updateDynamic("publicIp")(publicIp)
+    __obj.updateDynamic("rootBlockDevices")(rootBlockDevices)
+    __obj.updateDynamic("securityGroups")(securityGroups)
+    __obj.updateDynamic("sourceDestCheck")(sourceDestCheck)
+    __obj.updateDynamic("subnetId")(subnetId)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("tenancy")(tenancy)
+    __obj.updateDynamic("userData")(userData)
+    __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds)
+    __obj.asInstanceOf[GetInstanceResult]
+  }
+}
+

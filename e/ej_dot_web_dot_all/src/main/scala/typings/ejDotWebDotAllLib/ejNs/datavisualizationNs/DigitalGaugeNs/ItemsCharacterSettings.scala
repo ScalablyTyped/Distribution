@@ -24,3 +24,20 @@ trait ItemsCharacterSettings extends js.Object {
   var `type`: js.UndefOr[CharacterType | java.lang.String] = js.undefined
 }
 
+object ItemsCharacterSettings {
+  @scala.inline
+  def apply(
+    count: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    spacing: scala.Int | scala.Double = null,
+    `type`: CharacterType | java.lang.String = null
+  ): ItemsCharacterSettings = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ItemsCharacterSettings]
+  }
+}
+

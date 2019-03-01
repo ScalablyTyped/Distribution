@@ -18,3 +18,20 @@ trait Anon_FromMode extends js.Object {
   var to: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_FromMode {
+  @scala.inline
+  def apply(
+    mode: js.Any,
+    from: scala.Int | scala.Double = null,
+    sharedHist: js.UndefOr[scala.Boolean] = js.undefined,
+    to: scala.Int | scala.Double = null
+  ): Anon_FromMode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mode")(mode)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(sharedHist)) __obj.updateDynamic("sharedHist")(sharedHist)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FromMode]
+  }
+}
+

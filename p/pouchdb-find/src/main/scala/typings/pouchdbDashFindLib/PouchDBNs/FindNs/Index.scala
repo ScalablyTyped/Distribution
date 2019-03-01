@@ -15,3 +15,18 @@ trait Index extends js.Object {
   var `type`: java.lang.String
 }
 
+object Index {
+  @scala.inline
+  def apply(
+    `def`: pouchdbDashFindLib.Anon_FieldName,
+    name: java.lang.String,
+    `type`: java.lang.String,
+    ddoc: java.lang.String = null
+  ): Index = {
+    val __obj = js.Dynamic.literal(`def` = `def`, `type` = `type`)
+    __obj.updateDynamic("name")(name)
+    if (ddoc != null) __obj.updateDynamic("ddoc")(ddoc)
+    __obj.asInstanceOf[Index]
+  }
+}
+

@@ -36,3 +36,20 @@ trait SearchOptions extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchOptions {
+  @scala.inline
+  def apply(
+    delay: scala.Int | scala.Double = null,
+    minLength: scala.Int | scala.Double = null,
+    param: java.lang.String = null,
+    source: java.lang.String = null
+  ): SearchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[SearchOptions]
+  }
+}
+

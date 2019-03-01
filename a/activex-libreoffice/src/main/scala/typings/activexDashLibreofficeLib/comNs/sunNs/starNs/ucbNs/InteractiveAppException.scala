@@ -15,3 +15,20 @@ trait InteractiveAppException
   var Code: scala.Double
 }
 
+object InteractiveAppException {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Code: scala.Double,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): InteractiveAppException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Classification")(Classification)
+    __obj.updateDynamic("Code")(Code)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[InteractiveAppException]
+  }
+}
+

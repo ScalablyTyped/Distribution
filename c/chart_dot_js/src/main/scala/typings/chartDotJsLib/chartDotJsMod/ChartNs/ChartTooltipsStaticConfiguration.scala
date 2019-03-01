@@ -9,3 +9,12 @@ trait ChartTooltipsStaticConfiguration extends js.Object {
   var positioners: org.scalablytyped.runtime.StringDictionary[ChartTooltipPositioner]
 }
 
+object ChartTooltipsStaticConfiguration {
+  @scala.inline
+  def apply(positioners: org.scalablytyped.runtime.StringDictionary[ChartTooltipPositioner]): ChartTooltipsStaticConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("positioners")(positioners)
+    __obj.asInstanceOf[ChartTooltipsStaticConfiguration]
+  }
+}
+

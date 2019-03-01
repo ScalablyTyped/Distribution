@@ -226,6 +226,8 @@ object PricingNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[GetProductsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AttributeNameList = js.Array[String]
   type AttributeValueList = js.Array[AttributeValue]
@@ -237,6 +239,6 @@ object PricingNs extends js.Object {
   type PriceListItemJSON = java.lang.String
   type ServiceList = js.Array[Service]
   type String = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-10-15` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

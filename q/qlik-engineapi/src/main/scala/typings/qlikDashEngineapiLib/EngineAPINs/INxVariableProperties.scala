@@ -35,3 +35,22 @@ trait INxVariableProperties extends js.Object {
   var qUsePredefListedValues: scala.Boolean
 }
 
+object INxVariableProperties {
+  @scala.inline
+  def apply(
+    qIncludeInBookmark: scala.Boolean,
+    qName: java.lang.String,
+    qNumberPresentation: IFieldAttributes,
+    qPreDefinedList: js.Array[java.lang.String],
+    qUsePredefListedValues: scala.Boolean
+  ): INxVariableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qIncludeInBookmark")(qIncludeInBookmark)
+    __obj.updateDynamic("qName")(qName)
+    __obj.updateDynamic("qNumberPresentation")(qNumberPresentation)
+    __obj.updateDynamic("qPreDefinedList")(qPreDefinedList)
+    __obj.updateDynamic("qUsePredefListedValues")(qUsePredefListedValues)
+    __obj.asInstanceOf[INxVariableProperties]
+  }
+}
+

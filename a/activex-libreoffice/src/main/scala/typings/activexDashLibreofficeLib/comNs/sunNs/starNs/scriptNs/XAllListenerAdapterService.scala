@@ -16,3 +16,25 @@ trait XAllListenerAdapterService
   def createAllListerAdapter(xListenerType: activexDashLibreofficeLib.`type`, xListener: XAllListener, aHelper: js.Any): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XAllListenerAdapterService {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createAllListerAdapter: js.Function3[
+      activexDashLibreofficeLib.`type`, 
+      XAllListener, 
+      js.Any, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAllListenerAdapterService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createAllListerAdapter")(createAllListerAdapter)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAllListenerAdapterService]
+  }
+}
+

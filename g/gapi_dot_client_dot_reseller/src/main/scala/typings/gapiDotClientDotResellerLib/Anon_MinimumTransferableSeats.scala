@@ -15,3 +15,16 @@ trait Anon_MinimumTransferableSeats extends js.Object {
   var transferabilityExpirationTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_MinimumTransferableSeats {
+  @scala.inline
+  def apply(
+    minimumTransferableSeats: scala.Int | scala.Double = null,
+    transferabilityExpirationTime: java.lang.String = null
+  ): Anon_MinimumTransferableSeats = {
+    val __obj = js.Dynamic.literal()
+    if (minimumTransferableSeats != null) __obj.updateDynamic("minimumTransferableSeats")(minimumTransferableSeats.asInstanceOf[js.Any])
+    if (transferabilityExpirationTime != null) __obj.updateDynamic("transferabilityExpirationTime")(transferabilityExpirationTime)
+    __obj.asInstanceOf[Anon_MinimumTransferableSeats]
+  }
+}
+

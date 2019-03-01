@@ -42,3 +42,40 @@ trait IdentitytoolkitRelyingpartyCreateAuthUriRequest extends js.Object {
   var sessionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartyCreateAuthUriRequest {
+  @scala.inline
+  def apply(
+    appId: java.lang.String = null,
+    authFlowType: java.lang.String = null,
+    clientId: java.lang.String = null,
+    context: java.lang.String = null,
+    continueUri: java.lang.String = null,
+    customParameter: stdLib.Record[java.lang.String, java.lang.String] = null,
+    hostedDomain: java.lang.String = null,
+    identifier: java.lang.String = null,
+    oauthConsumerKey: java.lang.String = null,
+    oauthScope: java.lang.String = null,
+    openidRealm: java.lang.String = null,
+    otaApp: java.lang.String = null,
+    providerId: java.lang.String = null,
+    sessionId: java.lang.String = null
+  ): IdentitytoolkitRelyingpartyCreateAuthUriRequest = {
+    val __obj = js.Dynamic.literal()
+    if (appId != null) __obj.updateDynamic("appId")(appId)
+    if (authFlowType != null) __obj.updateDynamic("authFlowType")(authFlowType)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (continueUri != null) __obj.updateDynamic("continueUri")(continueUri)
+    if (customParameter != null) __obj.updateDynamic("customParameter")(customParameter)
+    if (hostedDomain != null) __obj.updateDynamic("hostedDomain")(hostedDomain)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (oauthConsumerKey != null) __obj.updateDynamic("oauthConsumerKey")(oauthConsumerKey)
+    if (oauthScope != null) __obj.updateDynamic("oauthScope")(oauthScope)
+    if (openidRealm != null) __obj.updateDynamic("openidRealm")(openidRealm)
+    if (otaApp != null) __obj.updateDynamic("otaApp")(otaApp)
+    if (providerId != null) __obj.updateDynamic("providerId")(providerId)
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartyCreateAuthUriRequest]
+  }
+}
+

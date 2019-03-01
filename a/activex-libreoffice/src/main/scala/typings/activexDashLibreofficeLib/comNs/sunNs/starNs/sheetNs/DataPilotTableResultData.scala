@@ -33,3 +33,18 @@ trait DataPilotTableResultData extends js.Object {
   var Result: DataResult
 }
 
+object DataPilotTableResultData {
+  @scala.inline
+  def apply(
+    DataFieldIndex: scala.Double,
+    FieldFilters: activexDashInteropLib.SafeArray[DataPilotFieldFilter],
+    Result: DataResult
+  ): DataPilotTableResultData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataFieldIndex")(DataFieldIndex)
+    __obj.updateDynamic("FieldFilters")(FieldFilters)
+    __obj.updateDynamic("Result")(Result)
+    __obj.asInstanceOf[DataPilotTableResultData]
+  }
+}
+

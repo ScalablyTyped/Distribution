@@ -18,3 +18,22 @@ trait PseudoTtyOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PseudoTtyOptions {
+  @scala.inline
+  def apply(
+    cols: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    rows: scala.Int | scala.Double = null,
+    term: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): PseudoTtyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (term != null) __obj.updateDynamic("term")(term)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PseudoTtyOptions]
+  }
+}
+

@@ -233,3 +233,138 @@ trait Model extends js.Object {
   var workflows: js.UndefOr[js.Array[Workflow]] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
+    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
+    actionFailure: js.Function1[/* e */ ActionFailureEventArgs, scala.Unit] = null,
+    allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    allowExternalDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    allowHover: js.UndefOr[scala.Boolean] = js.undefined,
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    allowPrinting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSearching: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    allowTitle: js.UndefOr[scala.Boolean] = js.undefined,
+    allowToggleColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeCardSelect: js.Function1[/* e */ BeforeCardSelectEventArgs, scala.Unit] = null,
+    beginEdit: js.Function1[/* e */ BeginEditEventArgs, scala.Unit] = null,
+    cardClick: js.Function1[/* e */ CardClickEventArgs, scala.Unit] = null,
+    cardDoubleClick: js.Function1[/* e */ CardDoubleClickEventArgs, scala.Unit] = null,
+    cardDrag: js.Function1[/* e */ CardDragEventArgs, scala.Unit] = null,
+    cardDragStart: js.Function1[/* e */ CardDragStartEventArgs, scala.Unit] = null,
+    cardDragStop: js.Function1[/* e */ CardDragStopEventArgs, scala.Unit] = null,
+    cardDrop: js.Function1[/* e */ CardDropEventArgs, scala.Unit] = null,
+    cardSelect: js.Function1[/* e */ CardSelectEventArgs, scala.Unit] = null,
+    cardSelecting: js.Function1[/* e */ CardSelectingEventArgs, scala.Unit] = null,
+    cardSettings: CardSettings = null,
+    cellClick: js.Function1[/* e */ CellClickEventArgs, scala.Unit] = null,
+    columns: js.Array[Column] = null,
+    contextClick: js.Function1[/* e */ ContextClickEventArgs, scala.Unit] = null,
+    contextMenuSettings: ContextMenuSettings = null,
+    contextOpen: js.Function1[/* e */ ContextOpenEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    customToolbarItems: js.Array[CustomToolbarItem] = null,
+    dataBound: js.Function1[/* e */ DataBoundEventArgs, scala.Unit] = null,
+    dataSource: js.Any = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    editSettings: EditSettings = null,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTotalCount: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTouch: js.UndefOr[scala.Boolean] = js.undefined,
+    endDelete: js.Function1[/* e */ EndDeleteEventArgs, scala.Unit] = null,
+    endEdit: js.Function1[/* e */ EndEditEventArgs, scala.Unit] = null,
+    fields: Fields = null,
+    filterSettings: js.Array[FilterSetting] = null,
+    headerClick: js.Function1[/* e */ HeaderClickEventArgs, scala.Unit] = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    keyField: java.lang.String = null,
+    keySettings: js.Any = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    minWidth: scala.Int | scala.Double = null,
+    query: js.Any = null,
+    queryCellInfo: js.Function1[/* e */ QueryCellInfoEventArgs, scala.Unit] = null,
+    scrollSettings: ScrollSettings = null,
+    searchSettings: SearchSettings = null,
+    selectionType: SelectionType | java.lang.String = null,
+    showColumnWhenEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    stackedHeaderRows: js.Array[StackedHeaderRow] = null,
+    swimlaneClick: js.Function1[/* e */ SwimlaneClickEventArgs, scala.Unit] = null,
+    swimlaneSettings: SwimlaneSettings = null,
+    toolbarClick: js.Function1[/* e */ ToolbarClickEventArgs, scala.Unit] = null,
+    tooltipSettings: TooltipSettings = null,
+    workflows: js.Array[Workflow] = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
+    if (actionFailure != null) __obj.updateDynamic("actionFailure")(actionFailure)
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
+    if (!js.isUndefined(allowExternalDragAndDrop)) __obj.updateDynamic("allowExternalDragAndDrop")(allowExternalDragAndDrop)
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering)
+    if (!js.isUndefined(allowHover)) __obj.updateDynamic("allowHover")(allowHover)
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (!js.isUndefined(allowPrinting)) __obj.updateDynamic("allowPrinting")(allowPrinting)
+    if (!js.isUndefined(allowScrolling)) __obj.updateDynamic("allowScrolling")(allowScrolling)
+    if (!js.isUndefined(allowSearching)) __obj.updateDynamic("allowSearching")(allowSearching)
+    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection)
+    if (!js.isUndefined(allowTitle)) __obj.updateDynamic("allowTitle")(allowTitle)
+    if (!js.isUndefined(allowToggleColumn)) __obj.updateDynamic("allowToggleColumn")(allowToggleColumn)
+    if (beforeCardSelect != null) __obj.updateDynamic("beforeCardSelect")(beforeCardSelect)
+    if (beginEdit != null) __obj.updateDynamic("beginEdit")(beginEdit)
+    if (cardClick != null) __obj.updateDynamic("cardClick")(cardClick)
+    if (cardDoubleClick != null) __obj.updateDynamic("cardDoubleClick")(cardDoubleClick)
+    if (cardDrag != null) __obj.updateDynamic("cardDrag")(cardDrag)
+    if (cardDragStart != null) __obj.updateDynamic("cardDragStart")(cardDragStart)
+    if (cardDragStop != null) __obj.updateDynamic("cardDragStop")(cardDragStop)
+    if (cardDrop != null) __obj.updateDynamic("cardDrop")(cardDrop)
+    if (cardSelect != null) __obj.updateDynamic("cardSelect")(cardSelect)
+    if (cardSelecting != null) __obj.updateDynamic("cardSelecting")(cardSelecting)
+    if (cardSettings != null) __obj.updateDynamic("cardSettings")(cardSettings)
+    if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (contextClick != null) __obj.updateDynamic("contextClick")(contextClick)
+    if (contextMenuSettings != null) __obj.updateDynamic("contextMenuSettings")(contextMenuSettings)
+    if (contextOpen != null) __obj.updateDynamic("contextOpen")(contextOpen)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customToolbarItems != null) __obj.updateDynamic("customToolbarItems")(customToolbarItems)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (editSettings != null) __obj.updateDynamic("editSettings")(editSettings)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableTotalCount)) __obj.updateDynamic("enableTotalCount")(enableTotalCount)
+    if (!js.isUndefined(enableTouch)) __obj.updateDynamic("enableTouch")(enableTouch)
+    if (endDelete != null) __obj.updateDynamic("endDelete")(endDelete)
+    if (endEdit != null) __obj.updateDynamic("endEdit")(endEdit)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filterSettings != null) __obj.updateDynamic("filterSettings")(filterSettings)
+    if (headerClick != null) __obj.updateDynamic("headerClick")(headerClick)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (keyField != null) __obj.updateDynamic("keyField")(keyField)
+    if (keySettings != null) __obj.updateDynamic("keySettings")(keySettings)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(queryCellInfo)
+    if (scrollSettings != null) __obj.updateDynamic("scrollSettings")(scrollSettings)
+    if (searchSettings != null) __obj.updateDynamic("searchSettings")(searchSettings)
+    if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnWhenEmpty)) __obj.updateDynamic("showColumnWhenEmpty")(showColumnWhenEmpty)
+    if (stackedHeaderRows != null) __obj.updateDynamic("stackedHeaderRows")(stackedHeaderRows)
+    if (swimlaneClick != null) __obj.updateDynamic("swimlaneClick")(swimlaneClick)
+    if (swimlaneSettings != null) __obj.updateDynamic("swimlaneSettings")(swimlaneSettings)
+    if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(toolbarClick)
+    if (tooltipSettings != null) __obj.updateDynamic("tooltipSettings")(tooltipSettings)
+    if (workflows != null) __obj.updateDynamic("workflows")(workflows)
+    __obj.asInstanceOf[Model]
+  }
+}
+

@@ -20,3 +20,14 @@ trait Anon_Items extends js.Object {
   var timing: Anon_OffsetMs
 }
 
+object Anon_Items {
+  @scala.inline
+  def apply(items: js.Array[Anon_Type], position: Anon_CornerPosition, timing: Anon_OffsetMs): Anon_Items = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("timing")(timing)
+    __obj.asInstanceOf[Anon_Items]
+  }
+}
+

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("core-js/library/fn/reflect/es7/has-metadata'", JSImport.Namespace)
 @js.native
-object `libraryFnReflectEs7HasDashMetadata'Mod`
+object libraryFnReflectEs7HasDashMetadata_quoteMod
   extends org.scalablytyped.runtime.TopLevel[
       js.Function3[
         /* metadataKey */ js.Any, 

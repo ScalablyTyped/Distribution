@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("n3", "Literal")
 @js.native
 class Literal protected ()
-  extends rdfDashJsLib.rdfDashJsMod.Literal {
+  extends rdfDashJsLib.rdfDashJsMod.Literal
+     with Quad_Object
+     with Term {
   def this(id: java.lang.String) = this()
   /**
     * A NamedNode whose IRI represents the datatype of the literal.

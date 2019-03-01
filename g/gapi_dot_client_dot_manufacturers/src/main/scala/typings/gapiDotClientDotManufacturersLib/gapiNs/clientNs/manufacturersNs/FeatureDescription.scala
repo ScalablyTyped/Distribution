@@ -14,3 +14,14 @@ trait FeatureDescription extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FeatureDescription {
+  @scala.inline
+  def apply(headline: java.lang.String = null, image: Image = null, text: java.lang.String = null): FeatureDescription = {
+    val __obj = js.Dynamic.literal()
+    if (headline != null) __obj.updateDynamic("headline")(headline)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[FeatureDescription]
+  }
+}
+

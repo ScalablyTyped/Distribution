@@ -14,3 +14,24 @@ trait TranspileOptions extends js.Object {
   var transformers: js.UndefOr[CustomTransformers] = js.undefined
 }
 
+object TranspileOptions {
+  @scala.inline
+  def apply(
+    compilerOptions: CompilerOptions = null,
+    fileName: java.lang.String = null,
+    moduleName: java.lang.String = null,
+    renamedDependencies: MapLike[java.lang.String] = null,
+    reportDiagnostics: js.UndefOr[scala.Boolean] = js.undefined,
+    transformers: CustomTransformers = null
+  ): TranspileOptions = {
+    val __obj = js.Dynamic.literal()
+    if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (moduleName != null) __obj.updateDynamic("moduleName")(moduleName)
+    if (renamedDependencies != null) __obj.updateDynamic("renamedDependencies")(renamedDependencies)
+    if (!js.isUndefined(reportDiagnostics)) __obj.updateDynamic("reportDiagnostics")(reportDiagnostics)
+    if (transformers != null) __obj.updateDynamic("transformers")(transformers)
+    __obj.asInstanceOf[TranspileOptions]
+  }
+}
+

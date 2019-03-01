@@ -18,3 +18,24 @@ trait BrowserHistoryBuildOptions extends js.Object {
   var keyLength: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BrowserHistoryBuildOptions {
+  @scala.inline
+  def apply(
+    basename: java.lang.String = null,
+    forceRefresh: js.UndefOr[scala.Boolean] = js.undefined,
+    getUserConfirmation: js.Function2[
+      /* message */ java.lang.String, 
+      /* callback */ js.Function1[/* result */ scala.Boolean, scala.Unit], 
+      scala.Unit
+    ] = null,
+    keyLength: scala.Int | scala.Double = null
+  ): BrowserHistoryBuildOptions = {
+    val __obj = js.Dynamic.literal()
+    if (basename != null) __obj.updateDynamic("basename")(basename)
+    if (!js.isUndefined(forceRefresh)) __obj.updateDynamic("forceRefresh")(forceRefresh)
+    if (getUserConfirmation != null) __obj.updateDynamic("getUserConfirmation")(getUserConfirmation)
+    if (keyLength != null) __obj.updateDynamic("keyLength")(keyLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BrowserHistoryBuildOptions]
+  }
+}
+

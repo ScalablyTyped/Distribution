@@ -15,7 +15,7 @@ class Identity[A] protected () extends js.Object {
   def alt(fx: Identity[A]): Identity[A] = js.native
   def ap[B](fab: Identity[js.Function1[/* a */ A, B]]): Identity[B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     */
   def `ap_`[B, C](`this`: Identity[js.Function1[/* b */ B, C]], fb: Identity[B]): Identity[C] = js.native
   def chain[B](f: js.Function1[/* a */ A, Identity[B]]): Identity[B] = js.native
@@ -25,7 +25,7 @@ class Identity[A] protected () extends js.Object {
   def inspect(): java.lang.String = js.native
   def map[B](f: js.Function1[/* a */ A, B]): Identity[B] = js.native
   /**
-    * Lazy version of {@link alt}
+    * Lazy version of `alt`
     *
     * @example
     * import { Identity } from 'fp-ts/lib/Identity'

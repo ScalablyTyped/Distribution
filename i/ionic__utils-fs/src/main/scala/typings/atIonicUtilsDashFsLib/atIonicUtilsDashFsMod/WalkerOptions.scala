@@ -21,3 +21,12 @@ trait WalkerOptions extends js.Object {
   val pathFilter: js.UndefOr[js.Function1[/* p */ java.lang.String, scala.Boolean]] = js.undefined
 }
 
+object WalkerOptions {
+  @scala.inline
+  def apply(pathFilter: js.Function1[/* p */ java.lang.String, scala.Boolean] = null): WalkerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (pathFilter != null) __obj.updateDynamic("pathFilter")(pathFilter)
+    __obj.asInstanceOf[WalkerOptions]
+  }
+}
+

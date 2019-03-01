@@ -25,3 +25,24 @@ trait XValidatable
   def setValidator(Validator: XValidator): scala.Unit
 }
 
+object XValidatable {
+  @scala.inline
+  def apply(
+    Validator: XValidator,
+    acquire: js.Function0[scala.Unit],
+    getValidator: js.Function0[XValidator],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setValidator: js.Function1[XValidator, scala.Unit]
+  ): XValidatable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Validator")(Validator)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getValidator")(getValidator)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setValidator")(setValidator)
+    __obj.asInstanceOf[XValidatable]
+  }
+}
+

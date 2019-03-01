@@ -148,3 +148,86 @@ trait Model extends js.Object {
   var thumbnailSourceID: js.UndefOr[js.Any] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationSpeed: java.lang.String | scala.Double = null,
+    animationType: java.lang.String = null,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    circularMode: js.UndefOr[scala.Boolean] = js.undefined,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    dataSource: js.Any = null,
+    delay: scala.Int | scala.Double = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    displayItemsCount: java.lang.String | scala.Double = null,
+    enableAutoPlay: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: Fields = null,
+    frameSpace: java.lang.String | scala.Double = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    navigateSteps: java.lang.String | scala.Double = null,
+    orientation: ejDotWebDotAllLib.ejNs.Orientation | java.lang.String = null,
+    pagerClick: js.Function1[/* e */ PagerClickEventArgs, scala.Unit] = null,
+    pagerPosition: java.lang.String | PagerPosition = null,
+    query: java.lang.String = null,
+    showCaption: js.UndefOr[scala.Boolean] = js.undefined,
+    showNavigateButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showPager: js.UndefOr[scala.Boolean] = js.undefined,
+    showPlayButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showThumbnail: js.UndefOr[scala.Boolean] = js.undefined,
+    slideHeight: java.lang.String | scala.Double = null,
+    slideWidth: java.lang.String | scala.Double = null,
+    start: js.Function1[/* e */ StartEventArgs, scala.Unit] = null,
+    startIndex: java.lang.String | scala.Double = null,
+    stop: js.Function1[/* e */ StopEventArgs, scala.Unit] = null,
+    stopOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    templateId: js.Array[_] = null,
+    thumbItemClick: js.Function1[/* e */ ThumbItemClickEventArgs, scala.Unit] = null,
+    thumbnailSourceID: js.Any = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
+    if (animationType != null) __obj.updateDynamic("animationType")(animationType)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (!js.isUndefined(circularMode)) __obj.updateDynamic("circularMode")(circularMode)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (displayItemsCount != null) __obj.updateDynamic("displayItemsCount")(displayItemsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoPlay)) __obj.updateDynamic("enableAutoPlay")(enableAutoPlay)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (frameSpace != null) __obj.updateDynamic("frameSpace")(frameSpace.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (navigateSteps != null) __obj.updateDynamic("navigateSteps")(navigateSteps.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (pagerClick != null) __obj.updateDynamic("pagerClick")(pagerClick)
+    if (pagerPosition != null) __obj.updateDynamic("pagerPosition")(pagerPosition.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(showCaption)) __obj.updateDynamic("showCaption")(showCaption)
+    if (!js.isUndefined(showNavigateButton)) __obj.updateDynamic("showNavigateButton")(showNavigateButton)
+    if (!js.isUndefined(showPager)) __obj.updateDynamic("showPager")(showPager)
+    if (!js.isUndefined(showPlayButton)) __obj.updateDynamic("showPlayButton")(showPlayButton)
+    if (!js.isUndefined(showThumbnail)) __obj.updateDynamic("showThumbnail")(showThumbnail)
+    if (slideHeight != null) __obj.updateDynamic("slideHeight")(slideHeight.asInstanceOf[js.Any])
+    if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (!js.isUndefined(stopOnHover)) __obj.updateDynamic("stopOnHover")(stopOnHover)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateId != null) __obj.updateDynamic("templateId")(templateId)
+    if (thumbItemClick != null) __obj.updateDynamic("thumbItemClick")(thumbItemClick)
+    if (thumbnailSourceID != null) __obj.updateDynamic("thumbnailSourceID")(thumbnailSourceID)
+    __obj.asInstanceOf[Model]
+  }
+}
+

@@ -42,3 +42,20 @@ trait WriteRequest extends js.Object {
   var writes: js.UndefOr[js.Array[Write]] = js.undefined
 }
 
+object WriteRequest {
+  @scala.inline
+  def apply(
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    streamId: java.lang.String = null,
+    streamToken: java.lang.String = null,
+    writes: js.Array[Write] = null
+  ): WriteRequest = {
+    val __obj = js.Dynamic.literal()
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (streamId != null) __obj.updateDynamic("streamId")(streamId)
+    if (streamToken != null) __obj.updateDynamic("streamToken")(streamToken)
+    if (writes != null) __obj.updateDynamic("writes")(writes)
+    __obj.asInstanceOf[WriteRequest]
+  }
+}
+

@@ -30,3 +30,64 @@ trait XRowSet extends XResultSet {
   def removeRowSetListener(listener: XRowSetListener): scala.Unit
 }
 
+object XRowSet {
+  @scala.inline
+  def apply(
+    Row: scala.Double,
+    Statement: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    absolute: js.Function1[scala.Double, scala.Boolean],
+    acquire: js.Function0[scala.Unit],
+    addRowSetListener: js.Function1[XRowSetListener, scala.Unit],
+    afterLast: js.Function0[scala.Unit],
+    beforeFirst: js.Function0[scala.Unit],
+    execute: js.Function0[scala.Unit],
+    first: js.Function0[scala.Boolean],
+    getRow: js.Function0[scala.Double],
+    getStatement: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    isAfterLast: js.Function0[scala.Boolean],
+    isBeforeFirst: js.Function0[scala.Boolean],
+    isFirst: js.Function0[scala.Boolean],
+    isLast: js.Function0[scala.Boolean],
+    last: js.Function0[scala.Boolean],
+    next: js.Function0[scala.Boolean],
+    previous: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    refreshRow: js.Function0[scala.Unit],
+    relative: js.Function1[scala.Double, scala.Boolean],
+    release: js.Function0[scala.Unit],
+    removeRowSetListener: js.Function1[XRowSetListener, scala.Unit],
+    rowDeleted: js.Function0[scala.Boolean],
+    rowInserted: js.Function0[scala.Boolean],
+    rowUpdated: js.Function0[scala.Boolean]
+  ): XRowSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Row")(Row)
+    __obj.updateDynamic("Statement")(Statement)
+    __obj.updateDynamic("absolute")(absolute)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addRowSetListener")(addRowSetListener)
+    __obj.updateDynamic("afterLast")(afterLast)
+    __obj.updateDynamic("beforeFirst")(beforeFirst)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("getRow")(getRow)
+    __obj.updateDynamic("getStatement")(getStatement)
+    __obj.updateDynamic("isAfterLast")(isAfterLast)
+    __obj.updateDynamic("isBeforeFirst")(isBeforeFirst)
+    __obj.updateDynamic("isFirst")(isFirst)
+    __obj.updateDynamic("isLast")(isLast)
+    __obj.updateDynamic("last")(last)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("previous")(previous)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("refreshRow")(refreshRow)
+    __obj.updateDynamic("relative")(relative)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeRowSetListener")(removeRowSetListener)
+    __obj.updateDynamic("rowDeleted")(rowDeleted)
+    __obj.updateDynamic("rowInserted")(rowInserted)
+    __obj.updateDynamic("rowUpdated")(rowUpdated)
+    __obj.asInstanceOf[XRowSet]
+  }
+}
+

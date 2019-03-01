@@ -56,3 +56,34 @@ trait IGlobalConfig extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IGlobalConfig {
+  @scala.inline
+  def apply(
+    clickToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    html: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null,
+    msg: java.lang.String = null,
+    position: java.lang.String = null,
+    shake: js.UndefOr[scala.Boolean] = js.undefined,
+    showClose: js.UndefOr[scala.Boolean] = js.undefined,
+    sound: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: java.lang.String = null,
+    timeout: scala.Double | scala.Boolean = null,
+    title: java.lang.String = null
+  ): IGlobalConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose)
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (msg != null) __obj.updateDynamic("msg")(msg)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(shake)) __obj.updateDynamic("shake")(shake)
+    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose)
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[IGlobalConfig]
+  }
+}
+

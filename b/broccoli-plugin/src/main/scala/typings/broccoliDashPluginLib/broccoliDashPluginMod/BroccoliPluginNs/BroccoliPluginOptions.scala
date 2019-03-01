@@ -28,3 +28,20 @@ trait BroccoliPluginOptions extends js.Object {
   var persistentOutput: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BroccoliPluginOptions {
+  @scala.inline
+  def apply(
+    annotation: java.lang.String = null,
+    name: java.lang.String = null,
+    needsCache: js.UndefOr[scala.Boolean] = js.undefined,
+    persistentOutput: js.UndefOr[scala.Boolean] = js.undefined
+  ): BroccoliPluginOptions = {
+    val __obj = js.Dynamic.literal()
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(needsCache)) __obj.updateDynamic("needsCache")(needsCache)
+    if (!js.isUndefined(persistentOutput)) __obj.updateDynamic("persistentOutput")(persistentOutput)
+    __obj.asInstanceOf[BroccoliPluginOptions]
+  }
+}
+

@@ -36,3 +36,14 @@ trait Runner extends js.Object {
   var isFixed: scala.Boolean
 }
 
+object Runner {
+  @scala.inline
+  def apply(delta: scala.Double, enabled: scala.Boolean, isFixed: scala.Boolean): Runner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delta")(delta)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("isFixed")(isFixed)
+    __obj.asInstanceOf[Runner]
+  }
+}
+

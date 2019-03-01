@@ -15,3 +15,13 @@ trait OverlaysResponse extends js.Object {
   var total: scala.Double
 }
 
+object OverlaysResponse {
+  @scala.inline
+  def apply(overlays: js.Array[heremapsLib.HNs.mapNs.Overlay], total: scala.Double): OverlaysResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("overlays")(overlays)
+    __obj.updateDynamic("total")(total)
+    __obj.asInstanceOf[OverlaysResponse]
+  }
+}
+

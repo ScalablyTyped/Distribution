@@ -29,3 +29,30 @@ trait Device extends js.Object {
   var version: java.lang.String
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    available: scala.Boolean,
+    cordova: java.lang.String,
+    isVirtual: scala.Boolean,
+    manufacturer: java.lang.String,
+    model: java.lang.String,
+    platform: java.lang.String,
+    serial: java.lang.String,
+    uuid: java.lang.String,
+    version: java.lang.String
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("available")(available)
+    __obj.updateDynamic("cordova")(cordova)
+    __obj.updateDynamic("isVirtual")(isVirtual)
+    __obj.updateDynamic("manufacturer")(manufacturer)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("platform")(platform)
+    __obj.updateDynamic("serial")(serial)
+    __obj.updateDynamic("uuid")(uuid)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Device]
+  }
+}
+

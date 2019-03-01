@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object reactDashRelayLibStrings {
   @js.native
-  sealed trait ABORT extends js.Object
+  sealed trait ABORT
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
-  sealed trait CACHE_RESTORED_REQUIRED extends js.Object
+  sealed trait CACHE_RESTORED_REQUIRED
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
-  sealed trait CACHE_RESTORE_FAILED extends js.Object
+  sealed trait CACHE_RESTORE_FAILED
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
-  sealed trait CACHE_RESTORE_START extends js.Object
+  sealed trait CACHE_RESTORE_START
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
-  sealed trait COLLISION_COMMIT_FAILED extends js.Object
+  sealed trait COLLISION_COMMIT_FAILED
+    extends reactDashRelayLib.classicMod.RelayMutationStatus
   
   @js.native
-  sealed trait COMMITTING extends js.Object
+  sealed trait COMMITTING
+    extends reactDashRelayLib.classicMod.RelayMutationStatus
   
   @js.native
-  sealed trait COMMIT_FAILED extends js.Object
+  sealed trait COMMIT_FAILED
+    extends reactDashRelayLib.classicMod.RelayMutationStatus
   
   @js.native
-  sealed trait COMMIT_QUEUED extends js.Object
+  sealed trait COMMIT_QUEUED
+    extends reactDashRelayLib.classicMod.RelayMutationStatus
   
   @js.native
   sealed trait MappedFragmentProps extends js.Object
@@ -37,28 +45,35 @@ object reactDashRelayLibStrings {
   sealed trait NETWORK_ONLY extends js.Object
   
   @js.native
-  sealed trait NETWORK_QUERY_ERROR extends js.Object
+  sealed trait NETWORK_QUERY_ERROR
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
-  sealed trait NETWORK_QUERY_RECEIVED_ALL extends js.Object
+  sealed trait NETWORK_QUERY_RECEIVED_ALL
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
-  sealed trait NETWORK_QUERY_RECEIVED_REQUIRED extends js.Object
+  sealed trait NETWORK_QUERY_RECEIVED_REQUIRED
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
-  sealed trait NETWORK_QUERY_START extends js.Object
+  sealed trait NETWORK_QUERY_START
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
-  sealed trait STORE_FOUND_ALL extends js.Object
+  sealed trait STORE_FOUND_ALL
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
-  sealed trait STORE_FOUND_REQUIRED extends js.Object
+  sealed trait STORE_FOUND_REQUIRED
+    extends reactDashRelayLib.classicMod.ReadyStateEvent
   
   @js.native
   sealed trait STORE_THEN_NETWORK extends js.Object
   
   @js.native
-  sealed trait UNCOMMITTED extends js.Object
+  sealed trait UNCOMMITTED
+    extends reactDashRelayLib.classicMod.RelayMutationStatus
   
   @js.native
   sealed trait backward extends js.Object

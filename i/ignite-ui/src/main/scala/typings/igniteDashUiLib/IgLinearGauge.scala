@@ -336,3 +336,155 @@ trait IgLinearGauge
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgLinearGauge {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igLinearGauge
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    alignLabel: AlignLabelEvent = null,
+    backingBrush: java.lang.String = null,
+    backingInnerExtent: scala.Int | scala.Double = null,
+    backingOuterExtent: scala.Int | scala.Double = null,
+    backingOutline: java.lang.String = null,
+    backingStrokeThickness: scala.Int | scala.Double = null,
+    font: java.lang.String = null,
+    fontBrush: java.lang.String = null,
+    formatLabel: FormatLabelEvent = null,
+    height: java.lang.String | scala.Double = null,
+    interval: scala.Int | scala.Double = null,
+    isNeedleDraggingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isScaleInverted: js.UndefOr[scala.Boolean] = js.undefined,
+    labelExtent: scala.Int | scala.Double = null,
+    labelInterval: scala.Int | scala.Double = null,
+    labelsPostInitial: scala.Int | scala.Double = null,
+    labelsPreTerminal: scala.Int | scala.Double = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    maximumValue: scala.Int | scala.Double = null,
+    minimumValue: scala.Int | scala.Double = null,
+    minorTickBrush: java.lang.String = null,
+    minorTickCount: scala.Int | scala.Double = null,
+    minorTickEndExtent: scala.Int | scala.Double = null,
+    minorTickStartExtent: scala.Int | scala.Double = null,
+    minorTickStrokeThickness: scala.Int | scala.Double = null,
+    needleBreadth: scala.Int | scala.Double = null,
+    needleBrush: java.lang.String = null,
+    needleInnerBaseWidth: scala.Int | scala.Double = null,
+    needleInnerExtent: scala.Int | scala.Double = null,
+    needleInnerPointExtent: scala.Int | scala.Double = null,
+    needleInnerPointWidth: scala.Int | scala.Double = null,
+    needleName: java.lang.String = null,
+    needleOuterBaseWidth: scala.Int | scala.Double = null,
+    needleOuterExtent: scala.Int | scala.Double = null,
+    needleOuterPointExtent: scala.Int | scala.Double = null,
+    needleOuterPointWidth: scala.Int | scala.Double = null,
+    needleOutline: java.lang.String = null,
+    needleShape: java.lang.String = null,
+    needleStrokeThickness: scala.Int | scala.Double = null,
+    needleToolTipTemplate: java.lang.String = null,
+    orientation: java.lang.String = null,
+    pixelScalingRatio: scala.Int | scala.Double = null,
+    rangeBrushes: js.Any = null,
+    rangeInnerExtent: scala.Int | scala.Double = null,
+    rangeOuterExtent: scala.Int | scala.Double = null,
+    rangeOutlines: js.Any = null,
+    rangeToolTipTemplate: java.lang.String = null,
+    ranges: js.Array[IgLinearGaugeRange] = null,
+    regional: java.lang.String | js.Object = null,
+    scaleBrush: java.lang.String = null,
+    scaleEndExtent: scala.Int | scala.Double = null,
+    scaleInnerExtent: scala.Int | scala.Double = null,
+    scaleOuterExtent: scala.Int | scala.Double = null,
+    scaleOutline: java.lang.String = null,
+    scaleStartExtent: scala.Int | scala.Double = null,
+    scaleStrokeThickness: scala.Int | scala.Double = null,
+    showToolTip: js.UndefOr[scala.Boolean] = js.undefined,
+    showToolTipTimeout: scala.Int | scala.Double = null,
+    tickBrush: java.lang.String = null,
+    tickEndExtent: scala.Int | scala.Double = null,
+    tickStartExtent: scala.Int | scala.Double = null,
+    tickStrokeThickness: scala.Int | scala.Double = null,
+    ticksPostInitial: scala.Int | scala.Double = null,
+    ticksPreTerminal: scala.Int | scala.Double = null,
+    transitionDuration: scala.Int | scala.Double = null,
+    value: scala.Int | scala.Double = null,
+    valueChanged: ValueChangedEvent = null,
+    width: java.lang.String | scala.Double = null
+  ): IgLinearGauge = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (alignLabel != null) __obj.updateDynamic("alignLabel")(alignLabel)
+    if (backingBrush != null) __obj.updateDynamic("backingBrush")(backingBrush)
+    if (backingInnerExtent != null) __obj.updateDynamic("backingInnerExtent")(backingInnerExtent.asInstanceOf[js.Any])
+    if (backingOuterExtent != null) __obj.updateDynamic("backingOuterExtent")(backingOuterExtent.asInstanceOf[js.Any])
+    if (backingOutline != null) __obj.updateDynamic("backingOutline")(backingOutline)
+    if (backingStrokeThickness != null) __obj.updateDynamic("backingStrokeThickness")(backingStrokeThickness.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (fontBrush != null) __obj.updateDynamic("fontBrush")(fontBrush)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNeedleDraggingEnabled)) __obj.updateDynamic("isNeedleDraggingEnabled")(isNeedleDraggingEnabled)
+    if (!js.isUndefined(isScaleInverted)) __obj.updateDynamic("isScaleInverted")(isScaleInverted)
+    if (labelExtent != null) __obj.updateDynamic("labelExtent")(labelExtent.asInstanceOf[js.Any])
+    if (labelInterval != null) __obj.updateDynamic("labelInterval")(labelInterval.asInstanceOf[js.Any])
+    if (labelsPostInitial != null) __obj.updateDynamic("labelsPostInitial")(labelsPostInitial.asInstanceOf[js.Any])
+    if (labelsPreTerminal != null) __obj.updateDynamic("labelsPreTerminal")(labelsPreTerminal.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
+    if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])
+    if (minorTickBrush != null) __obj.updateDynamic("minorTickBrush")(minorTickBrush)
+    if (minorTickCount != null) __obj.updateDynamic("minorTickCount")(minorTickCount.asInstanceOf[js.Any])
+    if (minorTickEndExtent != null) __obj.updateDynamic("minorTickEndExtent")(minorTickEndExtent.asInstanceOf[js.Any])
+    if (minorTickStartExtent != null) __obj.updateDynamic("minorTickStartExtent")(minorTickStartExtent.asInstanceOf[js.Any])
+    if (minorTickStrokeThickness != null) __obj.updateDynamic("minorTickStrokeThickness")(minorTickStrokeThickness.asInstanceOf[js.Any])
+    if (needleBreadth != null) __obj.updateDynamic("needleBreadth")(needleBreadth.asInstanceOf[js.Any])
+    if (needleBrush != null) __obj.updateDynamic("needleBrush")(needleBrush)
+    if (needleInnerBaseWidth != null) __obj.updateDynamic("needleInnerBaseWidth")(needleInnerBaseWidth.asInstanceOf[js.Any])
+    if (needleInnerExtent != null) __obj.updateDynamic("needleInnerExtent")(needleInnerExtent.asInstanceOf[js.Any])
+    if (needleInnerPointExtent != null) __obj.updateDynamic("needleInnerPointExtent")(needleInnerPointExtent.asInstanceOf[js.Any])
+    if (needleInnerPointWidth != null) __obj.updateDynamic("needleInnerPointWidth")(needleInnerPointWidth.asInstanceOf[js.Any])
+    if (needleName != null) __obj.updateDynamic("needleName")(needleName)
+    if (needleOuterBaseWidth != null) __obj.updateDynamic("needleOuterBaseWidth")(needleOuterBaseWidth.asInstanceOf[js.Any])
+    if (needleOuterExtent != null) __obj.updateDynamic("needleOuterExtent")(needleOuterExtent.asInstanceOf[js.Any])
+    if (needleOuterPointExtent != null) __obj.updateDynamic("needleOuterPointExtent")(needleOuterPointExtent.asInstanceOf[js.Any])
+    if (needleOuterPointWidth != null) __obj.updateDynamic("needleOuterPointWidth")(needleOuterPointWidth.asInstanceOf[js.Any])
+    if (needleOutline != null) __obj.updateDynamic("needleOutline")(needleOutline)
+    if (needleShape != null) __obj.updateDynamic("needleShape")(needleShape)
+    if (needleStrokeThickness != null) __obj.updateDynamic("needleStrokeThickness")(needleStrokeThickness.asInstanceOf[js.Any])
+    if (needleToolTipTemplate != null) __obj.updateDynamic("needleToolTipTemplate")(needleToolTipTemplate)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
+    if (rangeBrushes != null) __obj.updateDynamic("rangeBrushes")(rangeBrushes)
+    if (rangeInnerExtent != null) __obj.updateDynamic("rangeInnerExtent")(rangeInnerExtent.asInstanceOf[js.Any])
+    if (rangeOuterExtent != null) __obj.updateDynamic("rangeOuterExtent")(rangeOuterExtent.asInstanceOf[js.Any])
+    if (rangeOutlines != null) __obj.updateDynamic("rangeOutlines")(rangeOutlines)
+    if (rangeToolTipTemplate != null) __obj.updateDynamic("rangeToolTipTemplate")(rangeToolTipTemplate)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (scaleBrush != null) __obj.updateDynamic("scaleBrush")(scaleBrush)
+    if (scaleEndExtent != null) __obj.updateDynamic("scaleEndExtent")(scaleEndExtent.asInstanceOf[js.Any])
+    if (scaleInnerExtent != null) __obj.updateDynamic("scaleInnerExtent")(scaleInnerExtent.asInstanceOf[js.Any])
+    if (scaleOuterExtent != null) __obj.updateDynamic("scaleOuterExtent")(scaleOuterExtent.asInstanceOf[js.Any])
+    if (scaleOutline != null) __obj.updateDynamic("scaleOutline")(scaleOutline)
+    if (scaleStartExtent != null) __obj.updateDynamic("scaleStartExtent")(scaleStartExtent.asInstanceOf[js.Any])
+    if (scaleStrokeThickness != null) __obj.updateDynamic("scaleStrokeThickness")(scaleStrokeThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(showToolTip)) __obj.updateDynamic("showToolTip")(showToolTip)
+    if (showToolTipTimeout != null) __obj.updateDynamic("showToolTipTimeout")(showToolTipTimeout.asInstanceOf[js.Any])
+    if (tickBrush != null) __obj.updateDynamic("tickBrush")(tickBrush)
+    if (tickEndExtent != null) __obj.updateDynamic("tickEndExtent")(tickEndExtent.asInstanceOf[js.Any])
+    if (tickStartExtent != null) __obj.updateDynamic("tickStartExtent")(tickStartExtent.asInstanceOf[js.Any])
+    if (tickStrokeThickness != null) __obj.updateDynamic("tickStrokeThickness")(tickStrokeThickness.asInstanceOf[js.Any])
+    if (ticksPostInitial != null) __obj.updateDynamic("ticksPostInitial")(ticksPostInitial.asInstanceOf[js.Any])
+    if (ticksPreTerminal != null) __obj.updateDynamic("ticksPreTerminal")(ticksPreTerminal.asInstanceOf[js.Any])
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueChanged != null) __obj.updateDynamic("valueChanged")(valueChanged)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgLinearGauge]
+  }
+}
+

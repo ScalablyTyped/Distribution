@@ -33,3 +33,26 @@ trait Schedule extends js.Object {
   var timeZoneId: java.lang.String
 }
 
+object Schedule {
+  @scala.inline
+  def apply(
+    branchFilters: js.Array[java.lang.String],
+    daysToBuild: ScheduleDays,
+    scheduleJobId: java.lang.String,
+    scheduleOnlyWithChanges: scala.Boolean,
+    startHours: scala.Double,
+    startMinutes: scala.Double,
+    timeZoneId: java.lang.String
+  ): Schedule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("branchFilters")(branchFilters)
+    __obj.updateDynamic("daysToBuild")(daysToBuild)
+    __obj.updateDynamic("scheduleJobId")(scheduleJobId)
+    __obj.updateDynamic("scheduleOnlyWithChanges")(scheduleOnlyWithChanges)
+    __obj.updateDynamic("startHours")(startHours)
+    __obj.updateDynamic("startMinutes")(startMinutes)
+    __obj.updateDynamic("timeZoneId")(timeZoneId)
+    __obj.asInstanceOf[Schedule]
+  }
+}
+

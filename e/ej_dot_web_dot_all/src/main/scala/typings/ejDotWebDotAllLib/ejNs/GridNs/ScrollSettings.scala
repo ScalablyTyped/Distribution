@@ -56,3 +56,36 @@ trait ScrollSettings extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object ScrollSettings {
+  @scala.inline
+  def apply(
+    allowVirtualScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHide: js.UndefOr[scala.Boolean] = js.undefined,
+    buttonSize: scala.Int | scala.Double = null,
+    enableTouchScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    enableVirtualization: js.UndefOr[scala.Boolean] = js.undefined,
+    frozenColumns: scala.Int | scala.Double = null,
+    frozenRows: scala.Int | scala.Double = null,
+    height: java.lang.String | scala.Double = null,
+    scrollOneStepBy: scala.Int | scala.Double = null,
+    scrollerSize: scala.Int | scala.Double = null,
+    virtualScrollMode: VirtualScrollMode | java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): ScrollSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling)
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
+    if (buttonSize != null) __obj.updateDynamic("buttonSize")(buttonSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTouchScroll)) __obj.updateDynamic("enableTouchScroll")(enableTouchScroll)
+    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization)
+    if (frozenColumns != null) __obj.updateDynamic("frozenColumns")(frozenColumns.asInstanceOf[js.Any])
+    if (frozenRows != null) __obj.updateDynamic("frozenRows")(frozenRows.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (scrollOneStepBy != null) __obj.updateDynamic("scrollOneStepBy")(scrollOneStepBy.asInstanceOf[js.Any])
+    if (scrollerSize != null) __obj.updateDynamic("scrollerSize")(scrollerSize.asInstanceOf[js.Any])
+    if (virtualScrollMode != null) __obj.updateDynamic("virtualScrollMode")(virtualScrollMode.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScrollSettings]
+  }
+}
+

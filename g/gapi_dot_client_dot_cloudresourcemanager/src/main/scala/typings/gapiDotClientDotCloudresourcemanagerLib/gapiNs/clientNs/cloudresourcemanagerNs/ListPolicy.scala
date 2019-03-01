@@ -114,3 +114,22 @@ trait ListPolicy extends js.Object {
   var suggestedValue: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListPolicy {
+  @scala.inline
+  def apply(
+    allValues: java.lang.String = null,
+    allowedValues: js.Array[java.lang.String] = null,
+    deniedValues: js.Array[java.lang.String] = null,
+    inheritFromParent: js.UndefOr[scala.Boolean] = js.undefined,
+    suggestedValue: java.lang.String = null
+  ): ListPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (allValues != null) __obj.updateDynamic("allValues")(allValues)
+    if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues)
+    if (deniedValues != null) __obj.updateDynamic("deniedValues")(deniedValues)
+    if (!js.isUndefined(inheritFromParent)) __obj.updateDynamic("inheritFromParent")(inheritFromParent)
+    if (suggestedValue != null) __obj.updateDynamic("suggestedValue")(suggestedValue)
+    __obj.asInstanceOf[ListPolicy]
+  }
+}
+

@@ -25,3 +25,14 @@ trait Anon_ArgsJvmArgs extends js.Object {
   var port: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_ArgsJvmArgs {
+  @scala.inline
+  def apply(args: js.Any = null, jvmArgs: js.Array[java.lang.String] = null, port: js.Any = null): Anon_ArgsJvmArgs = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (jvmArgs != null) __obj.updateDynamic("jvmArgs")(jvmArgs)
+    if (port != null) __obj.updateDynamic("port")(port)
+    __obj.asInstanceOf[Anon_ArgsJvmArgs]
+  }
+}
+

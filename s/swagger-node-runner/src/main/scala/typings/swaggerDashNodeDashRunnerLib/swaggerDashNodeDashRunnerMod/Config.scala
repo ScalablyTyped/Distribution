@@ -71,3 +71,36 @@ trait Config extends js.Object {
   var validateResponse: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    appRoot: java.lang.String,
+    bagpipes: js.Any = null,
+    configDir: java.lang.String = null,
+    controllersDirs: js.Array[java.lang.String] = null,
+    defaultPipe: java.lang.String = null,
+    fittingsDirs: js.Array[java.lang.String] = null,
+    mockControllersDirs: js.Array[java.lang.String] = null,
+    mockMode: js.UndefOr[scala.Boolean] = js.undefined,
+    swaggerControllerPipe: java.lang.String = null,
+    swaggerFile: java.lang.String = null,
+    swaggerSecurityHandlers: SwaggerSecurityHandlers = null,
+    validateResponse: js.UndefOr[scala.Boolean] = js.undefined
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appRoot")(appRoot)
+    if (bagpipes != null) __obj.updateDynamic("bagpipes")(bagpipes)
+    if (configDir != null) __obj.updateDynamic("configDir")(configDir)
+    if (controllersDirs != null) __obj.updateDynamic("controllersDirs")(controllersDirs)
+    if (defaultPipe != null) __obj.updateDynamic("defaultPipe")(defaultPipe)
+    if (fittingsDirs != null) __obj.updateDynamic("fittingsDirs")(fittingsDirs)
+    if (mockControllersDirs != null) __obj.updateDynamic("mockControllersDirs")(mockControllersDirs)
+    if (!js.isUndefined(mockMode)) __obj.updateDynamic("mockMode")(mockMode)
+    if (swaggerControllerPipe != null) __obj.updateDynamic("swaggerControllerPipe")(swaggerControllerPipe)
+    if (swaggerFile != null) __obj.updateDynamic("swaggerFile")(swaggerFile)
+    if (swaggerSecurityHandlers != null) __obj.updateDynamic("swaggerSecurityHandlers")(swaggerSecurityHandlers)
+    if (!js.isUndefined(validateResponse)) __obj.updateDynamic("validateResponse")(validateResponse)
+    __obj.asInstanceOf[Config]
+  }
+}
+

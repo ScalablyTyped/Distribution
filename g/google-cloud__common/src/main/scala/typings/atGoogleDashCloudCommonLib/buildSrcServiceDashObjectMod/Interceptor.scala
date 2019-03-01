@@ -9,3 +9,17 @@ trait Interceptor extends js.Object {
   def request(opts: requestLib.requestMod.requestNs.Options): atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions
 }
 
+object Interceptor {
+  @scala.inline
+  def apply(
+    request: js.Function1[
+      requestLib.requestMod.requestNs.Options, 
+      atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions
+    ]
+  ): Interceptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("request")(request)
+    __obj.asInstanceOf[Interceptor]
+  }
+}
+

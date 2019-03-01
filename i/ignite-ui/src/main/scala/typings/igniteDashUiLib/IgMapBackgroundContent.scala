@@ -43,3 +43,29 @@ trait IgMapBackgroundContent
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgMapBackgroundContent {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgMapBackgroundContent
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    bingUrl: java.lang.String = null,
+    imagerySet: java.lang.String = null,
+    key: java.lang.String = null,
+    parameter: java.lang.String = null,
+    tilePath: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): IgMapBackgroundContent = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (bingUrl != null) __obj.updateDynamic("bingUrl")(bingUrl)
+    if (imagerySet != null) __obj.updateDynamic("imagerySet")(imagerySet)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
+    if (tilePath != null) __obj.updateDynamic("tilePath")(tilePath)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IgMapBackgroundContent]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_Long extends js.Object {
   var long: scala.Boolean
 }
 
+object Anon_Long {
+  @scala.inline
+  def apply(long: scala.Boolean): Anon_Long = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("long")(long)
+    __obj.asInstanceOf[Anon_Long]
+  }
+}
+

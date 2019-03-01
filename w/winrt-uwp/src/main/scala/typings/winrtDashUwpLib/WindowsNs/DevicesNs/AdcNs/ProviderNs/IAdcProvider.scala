@@ -14,3 +14,16 @@ trait IAdcProvider extends js.Object {
   def getControllers(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IAdcControllerProvider]
 }
 
+object IAdcProvider {
+  @scala.inline
+  def apply(
+    getControllers: js.Function0[
+      winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IAdcControllerProvider]
+    ]
+  ): IAdcProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getControllers")(getControllers)
+    __obj.asInstanceOf[IAdcProvider]
+  }
+}
+

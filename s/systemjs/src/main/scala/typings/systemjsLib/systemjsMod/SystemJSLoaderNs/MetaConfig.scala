@@ -75,3 +75,38 @@ trait MetaConfig extends js.Object {
   var sourceMap: js.UndefOr[js.Any] = js.undefined
 }
 
+object MetaConfig {
+  @scala.inline
+  def apply(
+    authorization: java.lang.String | scala.Boolean = null,
+    build: js.UndefOr[scala.Boolean] = js.undefined,
+    crossOrigin: java.lang.String = null,
+    deps: js.Array[java.lang.String] = null,
+    esmExports: js.UndefOr[scala.Boolean] = js.undefined,
+    exports: java.lang.String = null,
+    format: ModuleFormat = null,
+    globals: java.lang.String = null,
+    integrity: java.lang.String = null,
+    loader: java.lang.String = null,
+    nonce: java.lang.String = null,
+    scriptLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceMap: js.Any = null
+  ): MetaConfig = {
+    val __obj = js.Dynamic.literal()
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
+    if (!js.isUndefined(build)) __obj.updateDynamic("build")(build)
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (!js.isUndefined(esmExports)) __obj.updateDynamic("esmExports")(esmExports)
+    if (exports != null) __obj.updateDynamic("exports")(exports)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (globals != null) __obj.updateDynamic("globals")(globals)
+    if (integrity != null) __obj.updateDynamic("integrity")(integrity)
+    if (loader != null) __obj.updateDynamic("loader")(loader)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (!js.isUndefined(scriptLoad)) __obj.updateDynamic("scriptLoad")(scriptLoad)
+    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap)
+    __obj.asInstanceOf[MetaConfig]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Comment extends js.Object {
   var t: java.lang.String
 }
 
+object Comment {
+  @scala.inline
+  def apply(t: java.lang.String, a: java.lang.String = null): Comment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("t")(t)
+    if (a != null) __obj.updateDynamic("a")(a)
+    __obj.asInstanceOf[Comment]
+  }
+}
+

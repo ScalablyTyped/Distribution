@@ -22,3 +22,18 @@ trait ListenerPolicyState extends js.Object {
   ] = js.undefined
 }
 
+object ListenerPolicyState {
+  @scala.inline
+  def apply(
+    loadBalancerName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    loadBalancerPort: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    policyNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): ListenerPolicyState = {
+    val __obj = js.Dynamic.literal()
+    if (loadBalancerName != null) __obj.updateDynamic("loadBalancerName")(loadBalancerName.asInstanceOf[js.Any])
+    if (loadBalancerPort != null) __obj.updateDynamic("loadBalancerPort")(loadBalancerPort.asInstanceOf[js.Any])
+    if (policyNames != null) __obj.updateDynamic("policyNames")(policyNames.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListenerPolicyState]
+  }
+}
+

@@ -14,3 +14,22 @@ trait Anon_EventItems extends js.Object {
   var viewport: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_EventItems {
+  @scala.inline
+  def apply(
+    event: js.Any = null,
+    items: js.Array[_] = null,
+    sort: java.lang.String = null,
+    tpl: js.Any = null,
+    viewport: java.lang.String = null
+  ): Anon_EventItems = {
+    val __obj = js.Dynamic.literal()
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+    __obj.asInstanceOf[Anon_EventItems]
+  }
+}
+

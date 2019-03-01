@@ -11,3 +11,18 @@ trait AvailablePhoneNumberInstance extends js.Object {
   var tollFree: AvailablePhoneNumberResourceGroup
 }
 
+object AvailablePhoneNumberInstance {
+  @scala.inline
+  def apply(
+    local: AvailablePhoneNumberResourceGroup,
+    mobile: AvailablePhoneNumberResourceGroup,
+    tollFree: AvailablePhoneNumberResourceGroup
+  ): AvailablePhoneNumberInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("local")(local)
+    __obj.updateDynamic("mobile")(mobile)
+    __obj.updateDynamic("tollFree")(tollFree)
+    __obj.asInstanceOf[AvailablePhoneNumberInstance]
+  }
+}
+

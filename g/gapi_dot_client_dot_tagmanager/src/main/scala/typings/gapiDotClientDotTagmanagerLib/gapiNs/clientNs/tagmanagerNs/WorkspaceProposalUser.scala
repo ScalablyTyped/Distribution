@@ -12,3 +12,13 @@ trait WorkspaceProposalUser extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WorkspaceProposalUser {
+  @scala.inline
+  def apply(gaiaId: java.lang.String = null, `type`: java.lang.String = null): WorkspaceProposalUser = {
+    val __obj = js.Dynamic.literal()
+    if (gaiaId != null) __obj.updateDynamic("gaiaId")(gaiaId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[WorkspaceProposalUser]
+  }
+}
+

@@ -81,3 +81,36 @@ trait Anon_AutoMerge extends js.Object {
   var requireHashesToMatch: scala.Boolean
 }
 
+object Anon_AutoMerge {
+  @scala.inline
+  def apply(
+    autoMerge: Anon_Enable,
+    broadcastProjectEvents: scala.Boolean,
+    cache: scala.Double,
+    clientCache: scala.Double,
+    database: Anon_Memory,
+    disableHashChecks: scala.Boolean,
+    keyType: webgmeLib.webgmeLibStrings.plainSHA1 | webgmeLib.webgmeLibStrings.rand160Bits | webgmeLib.webgmeLibStrings.ZSSHA,
+    loadBucketSize: scala.Double,
+    loadBucketTimer: scala.Double,
+    maxEmittedCoreObjects: scala.Double,
+    options: java.lang.String,
+    requireHashesToMatch: scala.Boolean
+  ): Anon_AutoMerge = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoMerge")(autoMerge)
+    __obj.updateDynamic("broadcastProjectEvents")(broadcastProjectEvents)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("clientCache")(clientCache)
+    __obj.updateDynamic("database")(database)
+    __obj.updateDynamic("disableHashChecks")(disableHashChecks)
+    __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
+    __obj.updateDynamic("loadBucketSize")(loadBucketSize)
+    __obj.updateDynamic("loadBucketTimer")(loadBucketTimer)
+    __obj.updateDynamic("maxEmittedCoreObjects")(maxEmittedCoreObjects)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("requireHashesToMatch")(requireHashesToMatch)
+    __obj.asInstanceOf[Anon_AutoMerge]
+  }
+}
+

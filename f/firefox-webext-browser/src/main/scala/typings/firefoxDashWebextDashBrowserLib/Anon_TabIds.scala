@@ -12,3 +12,13 @@ trait Anon_TabIds extends js.Object {
   var windowId: scala.Double
 }
 
+object Anon_TabIds {
+  @scala.inline
+  def apply(tabIds: js.Array[scala.Double], windowId: scala.Double): Anon_TabIds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabIds")(tabIds)
+    __obj.updateDynamic("windowId")(windowId)
+    __obj.asInstanceOf[Anon_TabIds]
+  }
+}
+

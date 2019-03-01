@@ -16,3 +16,13 @@ trait ProcessedOptions extends js.Object {
   var processed_at_min: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProcessedOptions {
+  @scala.inline
+  def apply(processed_at_max: java.lang.String = null, processed_at_min: java.lang.String = null): ProcessedOptions = {
+    val __obj = js.Dynamic.literal()
+    if (processed_at_max != null) __obj.updateDynamic("processed_at_max")(processed_at_max)
+    if (processed_at_min != null) __obj.updateDynamic("processed_at_min")(processed_at_min)
+    __obj.asInstanceOf[ProcessedOptions]
+  }
+}
+

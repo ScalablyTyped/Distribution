@@ -22,3 +22,29 @@ trait SentryMiddlewareOptions[T] extends js.Object {
   var stateTransformer: js.UndefOr[js.Function1[/* state */ T, T]] = js.undefined
 }
 
+object SentryMiddlewareOptions {
+  @scala.inline
+  def apply[T](
+    actionTransformer: js.Function1[/* action */ reduxLib.reduxMod.Action[_], reduxLib.reduxMod.Action[_]] = null,
+    breadcrumbCategory: java.lang.String = null,
+    breadcrumbDataFromAction: js.Function1[/* action */ reduxLib.reduxMod.Action[_], _] = null,
+    filterBreadcrumbActions: js.Function1[/* action */ reduxLib.reduxMod.Action[_], scala.Boolean] = null,
+    getTags: js.Function1[/* state */ T, _] = null,
+    getUserContext: js.Function1[
+      /* state */ T, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.User */ _
+    ] = null,
+    stateTransformer: js.Function1[/* state */ T, T] = null
+  ): SentryMiddlewareOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (actionTransformer != null) __obj.updateDynamic("actionTransformer")(actionTransformer)
+    if (breadcrumbCategory != null) __obj.updateDynamic("breadcrumbCategory")(breadcrumbCategory)
+    if (breadcrumbDataFromAction != null) __obj.updateDynamic("breadcrumbDataFromAction")(breadcrumbDataFromAction)
+    if (filterBreadcrumbActions != null) __obj.updateDynamic("filterBreadcrumbActions")(filterBreadcrumbActions)
+    if (getTags != null) __obj.updateDynamic("getTags")(getTags)
+    if (getUserContext != null) __obj.updateDynamic("getUserContext")(getUserContext)
+    if (stateTransformer != null) __obj.updateDynamic("stateTransformer")(stateTransformer)
+    __obj.asInstanceOf[SentryMiddlewareOptions[T]]
+  }
+}
+

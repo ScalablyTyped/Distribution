@@ -16,3 +16,23 @@ trait Anon_CertificateComputeType extends js.Object {
   var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_CertificateComputeType {
+  @scala.inline
+  def apply(
+    computeType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    image: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    certificate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    environmentVariables: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_NameTypeValue]]] = null,
+    privilegedMode: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): Anon_CertificateComputeType = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("computeType")(computeType.asInstanceOf[js.Any])
+    __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
+    if (privilegedMode != null) __obj.updateDynamic("privilegedMode")(privilegedMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CertificateComputeType]
+  }
+}
+

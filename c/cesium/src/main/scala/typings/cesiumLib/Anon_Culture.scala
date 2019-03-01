@@ -16,3 +16,28 @@ trait Anon_Culture extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Culture {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    culture: java.lang.String = null,
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    key: java.lang.String = null,
+    mapStyle: java.lang.String = null,
+    proxy: cesiumLib.cesiumMod.CesiumNs.Proxy = null,
+    tileDiscardPolicy: cesiumLib.cesiumMod.CesiumNs.TileDiscardPolicy = null,
+    tileProtocol: java.lang.String = null
+  ): Anon_Culture = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy)
+    if (tileProtocol != null) __obj.updateDynamic("tileProtocol")(tileProtocol)
+    __obj.asInstanceOf[Anon_Culture]
+  }
+}
+

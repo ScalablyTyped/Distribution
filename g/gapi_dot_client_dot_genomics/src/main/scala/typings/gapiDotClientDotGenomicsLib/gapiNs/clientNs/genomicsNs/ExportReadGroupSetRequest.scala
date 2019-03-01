@@ -25,3 +25,18 @@ trait ExportReadGroupSetRequest extends js.Object {
   var referenceNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ExportReadGroupSetRequest {
+  @scala.inline
+  def apply(
+    exportUri: java.lang.String = null,
+    projectId: java.lang.String = null,
+    referenceNames: js.Array[java.lang.String] = null
+  ): ExportReadGroupSetRequest = {
+    val __obj = js.Dynamic.literal()
+    if (exportUri != null) __obj.updateDynamic("exportUri")(exportUri)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (referenceNames != null) __obj.updateDynamic("referenceNames")(referenceNames)
+    __obj.asInstanceOf[ExportReadGroupSetRequest]
+  }
+}
+

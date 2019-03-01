@@ -16,3 +16,13 @@ trait IEvent[T] extends js.Object {
   var source: T
 }
 
+object IEvent {
+  @scala.inline
+  def apply[T](name: java.lang.String, source: T): IEvent[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IEvent[T]]
+  }
+}
+

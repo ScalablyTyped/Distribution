@@ -12,3 +12,13 @@ trait DeviceOwner extends js.Object {
   var owner: js.UndefOr[Vcard] = js.undefined
 }
 
+object DeviceOwner {
+  @scala.inline
+  def apply(operator: Vcard = null, owner: Vcard = null): DeviceOwner = {
+    val __obj = js.Dynamic.literal()
+    if (operator != null) __obj.updateDynamic("operator")(operator)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DeviceOwner]
+  }
+}
+

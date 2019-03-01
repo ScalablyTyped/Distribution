@@ -45,3 +45,46 @@ trait AugmentedNotificationOptions
   var vibrate_AugmentedNotificationOptions: js.UndefOr[js.Any] = js.undefined
 }
 
+object AugmentedNotificationOptions {
+  @scala.inline
+  def apply(
+    actions: js.Array[stdLib.NotificationAction] = null,
+    badge: java.lang.String = null,
+    body: java.lang.String = null,
+    data: js.Any = null,
+    dir: stdLib.NotificationDirection = null,
+    icon: java.lang.String = null,
+    image: java.lang.String = null,
+    lang: java.lang.String = null,
+    onClick: js.Function1[/* event */ stdLib.MouseEvent, scala.Unit] = null,
+    onError: stdLib.EventListener = null,
+    renotify: js.UndefOr[scala.Boolean] = js.undefined,
+    requireInteraction: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    tag: java.lang.String = null,
+    timestamp: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    vibrate: js.Any = null
+  ): AugmentedNotificationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (!js.isUndefined(renotify)) __obj.updateDynamic("renotify")(renotify)
+    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (vibrate != null) __obj.updateDynamic("vibrate")(vibrate)
+    __obj.asInstanceOf[AugmentedNotificationOptions]
+  }
+}
+

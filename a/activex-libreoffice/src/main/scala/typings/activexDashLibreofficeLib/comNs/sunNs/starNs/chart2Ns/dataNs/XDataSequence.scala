@@ -51,3 +51,30 @@ trait XDataSequence
   def getSourceRangeRepresentation(): java.lang.String
 }
 
+object XDataSequence {
+  @scala.inline
+  def apply(
+    Data: activexDashInteropLib.SafeArray[_],
+    SourceRangeRepresentation: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    generateLabel: js.Function1[LabelOrigin, activexDashInteropLib.SafeArray[java.lang.String]],
+    getData: js.Function0[activexDashInteropLib.SafeArray[_]],
+    getNumberFormatKeyByIndex: js.Function1[scala.Double, scala.Double],
+    getSourceRangeRepresentation: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataSequence = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Data")(Data)
+    __obj.updateDynamic("SourceRangeRepresentation")(SourceRangeRepresentation)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("generateLabel")(generateLabel)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("getNumberFormatKeyByIndex")(getNumberFormatKeyByIndex)
+    __obj.updateDynamic("getSourceRangeRepresentation")(getSourceRangeRepresentation)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDataSequence]
+  }
+}
+

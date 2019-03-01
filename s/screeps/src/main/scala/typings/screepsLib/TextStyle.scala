@@ -43,3 +43,28 @@ trait TextStyle extends js.Object {
   var strokeWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TextStyle {
+  @scala.inline
+  def apply(
+    align: screepsLib.screepsLibStrings.center | screepsLib.screepsLibStrings.left | screepsLib.screepsLibStrings.right = null,
+    backgroundColor: java.lang.String = null,
+    backgroundPadding: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    font: scala.Double | java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    stroke: java.lang.String = null,
+    strokeWidth: scala.Int | scala.Double = null
+  ): TextStyle = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundPadding != null) __obj.updateDynamic("backgroundPadding")(backgroundPadding.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextStyle]
+  }
+}
+

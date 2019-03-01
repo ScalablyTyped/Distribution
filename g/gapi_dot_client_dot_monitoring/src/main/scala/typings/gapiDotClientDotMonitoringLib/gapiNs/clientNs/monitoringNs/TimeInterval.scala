@@ -12,3 +12,13 @@ trait TimeInterval extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimeInterval {
+  @scala.inline
+  def apply(endTime: java.lang.String = null, startTime: java.lang.String = null): TimeInterval = {
+    val __obj = js.Dynamic.literal()
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[TimeInterval]
+  }
+}
+

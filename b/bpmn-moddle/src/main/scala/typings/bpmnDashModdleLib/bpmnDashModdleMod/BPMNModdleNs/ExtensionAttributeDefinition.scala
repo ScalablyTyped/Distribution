@@ -14,3 +14,14 @@ trait ExtensionAttributeDefinition extends TypeDerived {
   var `type`: java.lang.String
 }
 
+object ExtensionAttributeDefinition {
+  @scala.inline
+  def apply($type: ElementType, isReference: scala.Boolean, name: java.lang.String, `type`: java.lang.String): ExtensionAttributeDefinition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("$type")($type)
+    __obj.updateDynamic("isReference")(isReference)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ExtensionAttributeDefinition]
+  }
+}
+

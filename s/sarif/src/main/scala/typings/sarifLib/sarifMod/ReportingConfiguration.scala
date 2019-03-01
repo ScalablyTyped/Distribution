@@ -28,3 +28,22 @@ trait ReportingConfiguration extends js.Object {
   var rank: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ReportingConfiguration {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    level: sarifLib.sarifMod.ReportingConfigurationNs.level = null,
+    parameters: PropertyBag = null,
+    properties: PropertyBag = null,
+    rank: scala.Int | scala.Double = null
+  ): ReportingConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (level != null) __obj.updateDynamic("level")(level)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReportingConfiguration]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ITouchCapabilities extends js.Object {
   var touchPresent: scala.Double
 }
 
+object ITouchCapabilities {
+  @scala.inline
+  def apply(contacts: scala.Double, touchPresent: scala.Double): ITouchCapabilities = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contacts")(contacts)
+    __obj.updateDynamic("touchPresent")(touchPresent)
+    __obj.asInstanceOf[ITouchCapabilities]
+  }
+}
+

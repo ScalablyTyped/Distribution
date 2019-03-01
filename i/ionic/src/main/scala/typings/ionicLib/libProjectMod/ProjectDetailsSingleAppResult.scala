@@ -9,3 +9,18 @@ trait ProjectDetailsSingleAppResult extends ProjectDetailsResultBase {
   val context: ionicLib.ionicLibStrings.app
 }
 
+object ProjectDetailsSingleAppResult {
+  @scala.inline
+  def apply(
+    context: ionicLib.ionicLibStrings.app,
+    errors: js.Array[ProjectDetailsError],
+    `type`: ionicLib.definitionsMod.ProjectType = null
+  ): ProjectDetailsSingleAppResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("errors")(errors)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ProjectDetailsSingleAppResult]
+  }
+}
+

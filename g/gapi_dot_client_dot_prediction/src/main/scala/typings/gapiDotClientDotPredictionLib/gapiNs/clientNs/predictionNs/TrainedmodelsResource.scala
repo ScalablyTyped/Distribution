@@ -22,3 +22,47 @@ trait TrainedmodelsResource extends js.Object {
   def update(request: gapiDotClientDotPredictionLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Insert2]
 }
 
+object TrainedmodelsResource {
+  @scala.inline
+  def apply(
+    analyze: js.Function1[
+      gapiDotClientDotPredictionLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Analyze]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotPredictionLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotPredictionLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Insert2]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotPredictionLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Insert2]
+    ],
+    list: js.Function1[
+      gapiDotClientDotPredictionLib.Anon_AltFieldsKeyMaxResults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[List]
+    ],
+    predict: js.Function1[
+      gapiDotClientDotPredictionLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Output]
+    ],
+    update: js.Function1[
+      gapiDotClientDotPredictionLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Insert2]
+    ]
+  ): TrainedmodelsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("analyze")(analyze)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("predict")(predict)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[TrainedmodelsResource]
+  }
+}
+

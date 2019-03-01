@@ -51,3 +51,38 @@ trait XContextChangeEventMultiplexer
   ): scala.Unit
 }
 
+object XContextChangeEventMultiplexer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addContextChangeEventListener: js.Function2[
+      XContextChangeEventListener, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Unit
+    ],
+    broadcastContextChangeEvent: js.Function2[
+      ContextChangeEventObject, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeAllContextChangeEventListeners: js.Function1[XContextChangeEventListener, scala.Unit],
+    removeContextChangeEventListener: js.Function2[
+      XContextChangeEventListener, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      scala.Unit
+    ]
+  ): XContextChangeEventMultiplexer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addContextChangeEventListener")(addContextChangeEventListener)
+    __obj.updateDynamic("broadcastContextChangeEvent")(broadcastContextChangeEvent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeAllContextChangeEventListeners")(removeAllContextChangeEventListeners)
+    __obj.updateDynamic("removeContextChangeEventListener")(removeContextChangeEventListener)
+    __obj.asInstanceOf[XContextChangeEventMultiplexer]
+  }
+}
+

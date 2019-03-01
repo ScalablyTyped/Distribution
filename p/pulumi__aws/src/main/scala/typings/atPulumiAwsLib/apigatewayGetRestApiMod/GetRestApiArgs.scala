@@ -13,3 +13,12 @@ trait GetRestApiArgs extends js.Object {
   val name: java.lang.String
 }
 
+object GetRestApiArgs {
+  @scala.inline
+  def apply(name: java.lang.String): GetRestApiArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[GetRestApiArgs]
+  }
+}
+

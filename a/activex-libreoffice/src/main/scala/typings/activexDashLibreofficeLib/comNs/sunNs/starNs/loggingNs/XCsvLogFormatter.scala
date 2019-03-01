@@ -33,3 +33,37 @@ trait XCsvLogFormatter extends XLogFormatter {
   def formatMultiColumn(columnData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): java.lang.String
 }
 
+object XCsvLogFormatter {
+  @scala.inline
+  def apply(
+    Columnnames: activexDashInteropLib.SafeArray[java.lang.String],
+    Head: java.lang.String,
+    LogEventNo: scala.Boolean,
+    LogSource: scala.Boolean,
+    LogThread: scala.Boolean,
+    LogTimestamp: scala.Boolean,
+    Tail: java.lang.String,
+    format: js.Function1[LogRecord, java.lang.String],
+    formatMultiColumn: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      java.lang.String
+    ],
+    getHead: js.Function0[java.lang.String],
+    getTail: js.Function0[java.lang.String]
+  ): XCsvLogFormatter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Columnnames")(Columnnames)
+    __obj.updateDynamic("Head")(Head)
+    __obj.updateDynamic("LogEventNo")(LogEventNo)
+    __obj.updateDynamic("LogSource")(LogSource)
+    __obj.updateDynamic("LogThread")(LogThread)
+    __obj.updateDynamic("LogTimestamp")(LogTimestamp)
+    __obj.updateDynamic("Tail")(Tail)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("formatMultiColumn")(formatMultiColumn)
+    __obj.updateDynamic("getHead")(getHead)
+    __obj.updateDynamic("getTail")(getTail)
+    __obj.asInstanceOf[XCsvLogFormatter]
+  }
+}
+

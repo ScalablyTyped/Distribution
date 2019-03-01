@@ -15,3 +15,12 @@ trait FlexWrapProps extends js.Object {
   var flexWrap: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.FlexWrapProperty]] = js.undefined
 }
 
+object FlexWrapProps {
+  @scala.inline
+  def apply(flexWrap: ResponsiveValue[csstypeLib.csstypeMod.FlexWrapProperty] = null): FlexWrapProps = {
+    val __obj = js.Dynamic.literal()
+    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlexWrapProps]
+  }
+}
+

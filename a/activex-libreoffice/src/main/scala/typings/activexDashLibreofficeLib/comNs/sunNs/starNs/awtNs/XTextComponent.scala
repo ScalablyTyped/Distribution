@@ -42,3 +42,50 @@ trait XTextComponent
   def setText(aText: java.lang.String): scala.Unit
 }
 
+object XTextComponent {
+  @scala.inline
+  def apply(
+    MaxTextLen: scala.Double,
+    SelectedText: java.lang.String,
+    Selection: Selection,
+    Text: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addTextListener: js.Function1[XTextListener, scala.Unit],
+    getMaxTextLen: js.Function0[scala.Double],
+    getSelectedText: js.Function0[java.lang.String],
+    getSelection: js.Function0[Selection],
+    getText: js.Function0[java.lang.String],
+    insertText: js.Function2[Selection, java.lang.String, scala.Unit],
+    isEditable: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTextListener: js.Function1[XTextListener, scala.Unit],
+    setEditable: js.Function1[scala.Boolean, scala.Unit],
+    setMaxTextLen: js.Function1[scala.Double, scala.Unit],
+    setSelection: js.Function1[Selection, scala.Unit],
+    setText: js.Function1[java.lang.String, scala.Unit]
+  ): XTextComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MaxTextLen")(MaxTextLen)
+    __obj.updateDynamic("SelectedText")(SelectedText)
+    __obj.updateDynamic("Selection")(Selection)
+    __obj.updateDynamic("Text")(Text)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addTextListener")(addTextListener)
+    __obj.updateDynamic("getMaxTextLen")(getMaxTextLen)
+    __obj.updateDynamic("getSelectedText")(getSelectedText)
+    __obj.updateDynamic("getSelection")(getSelection)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("insertText")(insertText)
+    __obj.updateDynamic("isEditable")(isEditable)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeTextListener")(removeTextListener)
+    __obj.updateDynamic("setEditable")(setEditable)
+    __obj.updateDynamic("setMaxTextLen")(setMaxTextLen)
+    __obj.updateDynamic("setSelection")(setSelection)
+    __obj.updateDynamic("setText")(setText)
+    __obj.asInstanceOf[XTextComponent]
+  }
+}
+

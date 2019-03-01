@@ -10,3 +10,16 @@ trait Anon_ItemsReturnValueHttpContentCodingWithQualityHeaderValue extends js.Ob
   /** The number of HttpContentCodingWithQualityHeaderValue items retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueHttpContentCodingWithQualityHeaderValue {
+  @scala.inline
+  def apply(
+    items: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentCodingWithQualityHeaderValue,
+    returnValue: scala.Double
+  ): Anon_ItemsReturnValueHttpContentCodingWithQualityHeaderValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ItemsReturnValueHttpContentCodingWithQualityHeaderValue]
+  }
+}
+

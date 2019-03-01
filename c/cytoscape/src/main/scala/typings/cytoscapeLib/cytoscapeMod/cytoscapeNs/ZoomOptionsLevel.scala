@@ -10,3 +10,12 @@ trait ZoomOptionsLevel extends js.Object {
   var level: scala.Double
 }
 
+object ZoomOptionsLevel {
+  @scala.inline
+  def apply(level: scala.Double): ZoomOptionsLevel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("level")(level)
+    __obj.asInstanceOf[ZoomOptionsLevel]
+  }
+}
+

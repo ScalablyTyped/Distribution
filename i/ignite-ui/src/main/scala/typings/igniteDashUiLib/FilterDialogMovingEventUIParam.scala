@@ -24,3 +24,20 @@ trait FilterDialogMovingEventUIParam extends js.Object {
   var position: js.UndefOr[js.Any] = js.undefined
 }
 
+object FilterDialogMovingEventUIParam {
+  @scala.inline
+  def apply(
+    dialog: java.lang.String = null,
+    originalPosition: js.Any = null,
+    owner: js.Any = null,
+    position: js.Any = null
+  ): FilterDialogMovingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (dialog != null) __obj.updateDynamic("dialog")(dialog)
+    if (originalPosition != null) __obj.updateDynamic("originalPosition")(originalPosition)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[FilterDialogMovingEventUIParam]
+  }
+}
+

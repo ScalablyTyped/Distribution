@@ -14,3 +14,18 @@ trait LinuxGroupView extends js.Object {
   var members: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object LinuxGroupView {
+  @scala.inline
+  def apply(
+    gid: scala.Int | scala.Double = null,
+    groupName: java.lang.String = null,
+    members: js.Array[java.lang.String] = null
+  ): LinuxGroupView = {
+    val __obj = js.Dynamic.literal()
+    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (groupName != null) __obj.updateDynamic("groupName")(groupName)
+    if (members != null) __obj.updateDynamic("members")(members)
+    __obj.asInstanceOf[LinuxGroupView]
+  }
+}
+

@@ -14,3 +14,18 @@ trait Errors extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Errors {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    errors: js.Array[Error] = null,
+    message: java.lang.String = null
+  ): Errors = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Errors]
+  }
+}
+

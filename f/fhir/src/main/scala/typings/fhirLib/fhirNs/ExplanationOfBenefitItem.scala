@@ -147,3 +147,92 @@ trait ExplanationOfBenefitItem extends BackboneElement {
   var unitPrice: js.UndefOr[Money] = js.undefined
 }
 
+object ExplanationOfBenefitItem {
+  @scala.inline
+  def apply(
+    sequence: positiveInt,
+    _careTeamLinkId: js.Array[Element] = null,
+    _diagnosisLinkId: js.Array[Element] = null,
+    _factor: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _informationLinkId: js.Array[Element] = null,
+    _noteNumber: js.Array[Element] = null,
+    _procedureLinkId: js.Array[Element] = null,
+    _sequence: Element = null,
+    _servicedDate: Element = null,
+    adjudication: js.Array[ExplanationOfBenefitItemAdjudication] = null,
+    bodySite: CodeableConcept = null,
+    careTeamLinkId: js.Array[positiveInt] = null,
+    category: CodeableConcept = null,
+    detail: js.Array[ExplanationOfBenefitItemDetail] = null,
+    diagnosisLinkId: js.Array[positiveInt] = null,
+    encounter: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    factor: js.UndefOr[decimal] = js.undefined,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    informationLinkId: js.Array[positiveInt] = null,
+    locationAddress: Address = null,
+    locationCodeableConcept: CodeableConcept = null,
+    locationReference: Reference = null,
+    modifier: js.Array[CodeableConcept] = null,
+    modifierExtension: js.Array[Extension] = null,
+    net: Money = null,
+    noteNumber: js.Array[positiveInt] = null,
+    procedureLinkId: js.Array[positiveInt] = null,
+    programCode: js.Array[CodeableConcept] = null,
+    quantity: Quantity = null,
+    revenue: CodeableConcept = null,
+    service: CodeableConcept = null,
+    servicedDate: date = null,
+    servicedPeriod: Period = null,
+    subSite: js.Array[CodeableConcept] = null,
+    udi: js.Array[Reference] = null,
+    unitPrice: Money = null
+  ): ExplanationOfBenefitItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sequence")(sequence)
+    if (_careTeamLinkId != null) __obj.updateDynamic("_careTeamLinkId")(_careTeamLinkId)
+    if (_diagnosisLinkId != null) __obj.updateDynamic("_diagnosisLinkId")(_diagnosisLinkId)
+    if (_factor != null) __obj.updateDynamic("_factor")(_factor)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_informationLinkId != null) __obj.updateDynamic("_informationLinkId")(_informationLinkId)
+    if (_noteNumber != null) __obj.updateDynamic("_noteNumber")(_noteNumber)
+    if (_procedureLinkId != null) __obj.updateDynamic("_procedureLinkId")(_procedureLinkId)
+    if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence)
+    if (_servicedDate != null) __obj.updateDynamic("_servicedDate")(_servicedDate)
+    if (adjudication != null) __obj.updateDynamic("adjudication")(adjudication)
+    if (bodySite != null) __obj.updateDynamic("bodySite")(bodySite)
+    if (careTeamLinkId != null) __obj.updateDynamic("careTeamLinkId")(careTeamLinkId)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (diagnosisLinkId != null) __obj.updateDynamic("diagnosisLinkId")(diagnosisLinkId)
+    if (encounter != null) __obj.updateDynamic("encounter")(encounter)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (informationLinkId != null) __obj.updateDynamic("informationLinkId")(informationLinkId)
+    if (locationAddress != null) __obj.updateDynamic("locationAddress")(locationAddress)
+    if (locationCodeableConcept != null) __obj.updateDynamic("locationCodeableConcept")(locationCodeableConcept)
+    if (locationReference != null) __obj.updateDynamic("locationReference")(locationReference)
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (net != null) __obj.updateDynamic("net")(net)
+    if (noteNumber != null) __obj.updateDynamic("noteNumber")(noteNumber)
+    if (procedureLinkId != null) __obj.updateDynamic("procedureLinkId")(procedureLinkId)
+    if (programCode != null) __obj.updateDynamic("programCode")(programCode)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
+    if (revenue != null) __obj.updateDynamic("revenue")(revenue)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (servicedDate != null) __obj.updateDynamic("servicedDate")(servicedDate)
+    if (servicedPeriod != null) __obj.updateDynamic("servicedPeriod")(servicedPeriod)
+    if (subSite != null) __obj.updateDynamic("subSite")(subSite)
+    if (udi != null) __obj.updateDynamic("udi")(udi)
+    if (unitPrice != null) __obj.updateDynamic("unitPrice")(unitPrice)
+    __obj.asInstanceOf[ExplanationOfBenefitItem]
+  }
+}
+

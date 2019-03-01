@@ -21,3 +21,30 @@ trait DownloadFileOptions extends js.Object {
   var toFile: java.lang.String
 }
 
+object DownloadFileOptions {
+  @scala.inline
+  def apply(
+    fromUrl: java.lang.String,
+    toFile: java.lang.String,
+    background: js.UndefOr[scala.Boolean] = js.undefined,
+    begin: DownloadCallbackBegin = null,
+    connectionTimeout: scala.Int | scala.Double = null,
+    headers: Headers = null,
+    progress: DownloadCallbackProgress = null,
+    progressDivider: scala.Int | scala.Double = null,
+    readTimeout: scala.Int | scala.Double = null
+  ): DownloadFileOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromUrl")(fromUrl)
+    __obj.updateDynamic("toFile")(toFile)
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
+    if (begin != null) __obj.updateDynamic("begin")(begin)
+    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (progressDivider != null) __obj.updateDynamic("progressDivider")(progressDivider.asInstanceOf[js.Any])
+    if (readTimeout != null) __obj.updateDynamic("readTimeout")(readTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DownloadFileOptions]
+  }
+}
+

@@ -15,3 +15,13 @@ trait DeleteTableCellsWithShiftVerticallyCommand extends CommandWithSimpleStateB
   def execute(): scala.Boolean
 }
 
+object DeleteTableCellsWithShiftVerticallyCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): DeleteTableCellsWithShiftVerticallyCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[DeleteTableCellsWithShiftVerticallyCommand]
+  }
+}
+

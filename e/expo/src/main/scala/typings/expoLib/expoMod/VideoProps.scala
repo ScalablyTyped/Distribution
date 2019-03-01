@@ -37,3 +37,66 @@ trait VideoProps extends js.Object {
   var volume: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VideoProps {
+  @scala.inline
+  def apply(
+    isLooping: js.UndefOr[scala.Boolean] = js.undefined,
+    isMuted: js.UndefOr[scala.Boolean] = js.undefined,
+    onError: js.Function1[/* error */ java.lang.String, scala.Unit] = null,
+    onIOSFullscreenUpdate: js.Function1[/* event */ FullscreenUpdateEvent, scala.Unit] = null,
+    onLoad: js.Function1[/* status */ PlaybackStatus, scala.Unit] = null,
+    onLoadStart: js.Function0[scala.Unit] = null,
+    onPlaybackStatusUpdate: js.Function1[/* status */ PlaybackStatus, scala.Unit] = null,
+    onReadyForDisplay: js.Function1[/* event */ ReadyForDisplayEvent, scala.Unit] = null,
+    positionMillis: scala.Int | scala.Double = null,
+    posterSource: URISource | RequireSource = null,
+    progressUpdateIntervalMillis: scala.Int | scala.Double = null,
+    rate: scala.Int | scala.Double = null,
+    ref: reactLib.reactMod.ReactNs.Ref[PlaybackObject] = null,
+    resizeMode: ResizeModeContain | ResizeModeCover | ResizeModeStretch = null,
+    rotation: scala.Int | scala.Double = null,
+    scaleX: scala.Int | scala.Double = null,
+    scaleY: scala.Int | scala.Double = null,
+    shouldCorrectPitch: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldPlay: js.UndefOr[scala.Boolean] = js.undefined,
+    source: PlaybackSource = null,
+    status: PlaybackStatusToSet = null,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    translateX: scala.Int | scala.Double = null,
+    translateY: scala.Int | scala.Double = null,
+    useNativeControls: js.UndefOr[scala.Boolean] = js.undefined,
+    usePoster: js.UndefOr[scala.Boolean] = js.undefined,
+    volume: scala.Int | scala.Double = null
+  ): VideoProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isLooping)) __obj.updateDynamic("isLooping")(isLooping)
+    if (!js.isUndefined(isMuted)) __obj.updateDynamic("isMuted")(isMuted)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onIOSFullscreenUpdate != null) __obj.updateDynamic("onIOSFullscreenUpdate")(onIOSFullscreenUpdate)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
+    if (onPlaybackStatusUpdate != null) __obj.updateDynamic("onPlaybackStatusUpdate")(onPlaybackStatusUpdate)
+    if (onReadyForDisplay != null) __obj.updateDynamic("onReadyForDisplay")(onReadyForDisplay)
+    if (positionMillis != null) __obj.updateDynamic("positionMillis")(positionMillis.asInstanceOf[js.Any])
+    if (posterSource != null) __obj.updateDynamic("posterSource")(posterSource.asInstanceOf[js.Any])
+    if (progressUpdateIntervalMillis != null) __obj.updateDynamic("progressUpdateIntervalMillis")(progressUpdateIntervalMillis.asInstanceOf[js.Any])
+    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
+    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCorrectPitch)) __obj.updateDynamic("shouldCorrectPitch")(shouldCorrectPitch)
+    if (!js.isUndefined(shouldPlay)) __obj.updateDynamic("shouldPlay")(shouldPlay)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
+    if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNativeControls)) __obj.updateDynamic("useNativeControls")(useNativeControls)
+    if (!js.isUndefined(usePoster)) __obj.updateDynamic("usePoster")(usePoster)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoProps]
+  }
+}
+

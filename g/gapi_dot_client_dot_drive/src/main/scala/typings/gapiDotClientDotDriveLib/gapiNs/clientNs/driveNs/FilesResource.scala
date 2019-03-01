@@ -31,3 +31,62 @@ trait FilesResource extends js.Object {
   def watch(request: gapiDotClientDotDriveLib.Anon_AcknowledgeAbuse): gapiDotClientLib.gapiNs.clientNs.Request[Channel]
 }
 
+object FilesResource {
+  @scala.inline
+  def apply(
+    copy: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdIgnoreDefaultVisibility, 
+      gapiDotClientLib.gapiNs.clientNs.Request[File]
+    ],
+    create: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsIgnoreDefaultVisibility, 
+      gapiDotClientLib.gapiNs.clientNs.Request[File]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    emptyTrash: js.Function1[
+      gapiDotClientDotDriveLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    export: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyMimeType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    generateIds: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltCount, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GeneratedIds]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AcknowledgeAbuse, 
+      gapiDotClientLib.gapiNs.clientNs.Request[File]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltCorpora, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FileList]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AddParents, 
+      gapiDotClientLib.gapiNs.clientNs.Request[File]
+    ],
+    watch: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AcknowledgeAbuse, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
+    ]
+  ): FilesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("emptyTrash")(emptyTrash)
+    __obj.updateDynamic("export")(export)
+    __obj.updateDynamic("generateIds")(generateIds)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[FilesResource]
+  }
+}
+

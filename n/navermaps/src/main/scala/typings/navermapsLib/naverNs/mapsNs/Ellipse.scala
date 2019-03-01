@@ -19,7 +19,8 @@ class Ellipse () extends OverlayView {
   def getStyles(key: java.lang.String): EllipseOptions = js.native
   def getVisible(): scala.Boolean = js.native
   def getZIndex(): scala.Double = js.native
-  def setBounds(bounds: Bounds | BoundsLiteral): scala.Unit = js.native
+  def setBounds(bounds: Bounds): scala.Unit = js.native
+  def setBounds(bounds: BoundsLiteral): scala.Unit = js.native
   def setOptions(key: java.lang.String, value: js.Any): scala.Unit = js.native
   def setOptions(options: EllipseOptions): scala.Unit = js.native
   def setStyles(key: java.lang.String, value: js.Any): scala.Unit = js.native

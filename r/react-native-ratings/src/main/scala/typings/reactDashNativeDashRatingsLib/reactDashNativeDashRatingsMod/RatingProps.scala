@@ -90,3 +90,42 @@ trait RatingProps extends js.Object {
   ] = js.undefined
 }
 
+object RatingProps {
+  @scala.inline
+  def apply(
+    fractions: scala.Int | scala.Double = null,
+    imageSize: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    onFinishRating: js.Function1[/* rating */ scala.Double, scala.Unit] = null,
+    onStartRating: js.Function0[scala.Unit] = null,
+    ratingBackgroundColor: java.lang.String = null,
+    ratingColor: java.lang.String = null,
+    ratingCount: scala.Int | scala.Double = null,
+    ratingImage: reactDashNativeLib.reactDashNativeMod.ImageURISource = null,
+    ratingTextColor: java.lang.String = null,
+    readonly: js.UndefOr[scala.Boolean] = js.undefined,
+    showRating: js.UndefOr[scala.Boolean] = js.undefined,
+    startingValue: scala.Int | scala.Double = null,
+    style: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewPropTypes.style */ js.Any = null,
+    `type`: reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.star | reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.rocket | reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.bell | reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.heart | reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.custom = null
+  ): RatingProps = {
+    val __obj = js.Dynamic.literal()
+    if (fractions != null) __obj.updateDynamic("fractions")(fractions.asInstanceOf[js.Any])
+    if (imageSize != null) __obj.updateDynamic("imageSize")(imageSize.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (onFinishRating != null) __obj.updateDynamic("onFinishRating")(onFinishRating)
+    if (onStartRating != null) __obj.updateDynamic("onStartRating")(onStartRating)
+    if (ratingBackgroundColor != null) __obj.updateDynamic("ratingBackgroundColor")(ratingBackgroundColor)
+    if (ratingColor != null) __obj.updateDynamic("ratingColor")(ratingColor)
+    if (ratingCount != null) __obj.updateDynamic("ratingCount")(ratingCount.asInstanceOf[js.Any])
+    if (ratingImage != null) __obj.updateDynamic("ratingImage")(ratingImage)
+    if (ratingTextColor != null) __obj.updateDynamic("ratingTextColor")(ratingTextColor)
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (!js.isUndefined(showRating)) __obj.updateDynamic("showRating")(showRating)
+    if (startingValue != null) __obj.updateDynamic("startingValue")(startingValue.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RatingProps]
+  }
+}
+

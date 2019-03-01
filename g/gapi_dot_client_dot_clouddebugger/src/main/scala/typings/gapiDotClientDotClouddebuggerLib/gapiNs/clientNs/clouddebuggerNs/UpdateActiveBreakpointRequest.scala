@@ -14,3 +14,12 @@ trait UpdateActiveBreakpointRequest extends js.Object {
   var breakpoint: js.UndefOr[Breakpoint] = js.undefined
 }
 
+object UpdateActiveBreakpointRequest {
+  @scala.inline
+  def apply(breakpoint: Breakpoint = null): UpdateActiveBreakpointRequest = {
+    val __obj = js.Dynamic.literal()
+    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint)
+    __obj.asInstanceOf[UpdateActiveBreakpointRequest]
+  }
+}
+

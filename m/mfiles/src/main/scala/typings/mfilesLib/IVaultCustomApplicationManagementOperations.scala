@@ -18,3 +18,32 @@ trait IVaultCustomApplicationManagementOperations extends js.Object {
   def UninstallCustomApplication(ApplicationID: java.lang.String): scala.Unit
 }
 
+object IVaultCustomApplicationManagementOperations {
+  @scala.inline
+  def apply(
+    DownloadCustomApplicationBlock: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
+    DownloadCustomApplicationBlockBegin: js.Function1[java.lang.String, IFileDownloadSession],
+    DownloadCustomApplicationBlockBegin_32bit: js.Function1[java.lang.String, IFileDownloadSession],
+    DownloadCustomApplicationBlock_32bit: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
+    EnableCustomApplication: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    GetCustomApplication: js.Function1[java.lang.String, ICustomApplication],
+    GetCustomApplications: js.Function0[ICustomApplications],
+    GetCustomApplicationsEx: js.Function1[mfilesLib.MFilesNs.MFExtApplicationPlatform, ICustomApplications],
+    InstallCustomApplication: js.Function1[java.lang.String, scala.Unit],
+    UninstallCustomApplication: js.Function1[java.lang.String, scala.Unit]
+  ): IVaultCustomApplicationManagementOperations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DownloadCustomApplicationBlock")(DownloadCustomApplicationBlock)
+    __obj.updateDynamic("DownloadCustomApplicationBlockBegin")(DownloadCustomApplicationBlockBegin)
+    __obj.updateDynamic("DownloadCustomApplicationBlockBegin_32bit")(DownloadCustomApplicationBlockBegin_32bit)
+    __obj.updateDynamic("DownloadCustomApplicationBlock_32bit")(DownloadCustomApplicationBlock_32bit)
+    __obj.updateDynamic("EnableCustomApplication")(EnableCustomApplication)
+    __obj.updateDynamic("GetCustomApplication")(GetCustomApplication)
+    __obj.updateDynamic("GetCustomApplications")(GetCustomApplications)
+    __obj.updateDynamic("GetCustomApplicationsEx")(GetCustomApplicationsEx)
+    __obj.updateDynamic("InstallCustomApplication")(InstallCustomApplication)
+    __obj.updateDynamic("UninstallCustomApplication")(UninstallCustomApplication)
+    __obj.asInstanceOf[IVaultCustomApplicationManagementOperations]
+  }
+}
+

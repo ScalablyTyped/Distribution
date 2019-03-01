@@ -16,3 +16,15 @@ trait Query[K] extends js.Object {
   var $lte: js.UndefOr[K] = js.undefined
 }
 
+object Query {
+  @scala.inline
+  def apply[K]($gt: K = null, $gte: K = null, $lt: K = null, $lte: K = null): Query[K] = {
+    val __obj = js.Dynamic.literal()
+    if ($gt != null) __obj.updateDynamic("$gt")($gt.asInstanceOf[js.Any])
+    if ($gte != null) __obj.updateDynamic("$gte")($gte.asInstanceOf[js.Any])
+    if ($lt != null) __obj.updateDynamic("$lt")($lt.asInstanceOf[js.Any])
+    if ($lte != null) __obj.updateDynamic("$lte")($lte.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Query[K]]
+  }
+}
+

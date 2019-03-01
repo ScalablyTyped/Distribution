@@ -48,3 +48,22 @@ trait JsonOptions extends js.Object {
   var trim: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object JsonOptions {
+  @scala.inline
+  def apply(
+    arrayNotation: js.UndefOr[scala.Boolean] = js.undefined,
+    coerce: js.UndefOr[scala.Boolean] = js.undefined,
+    reversible: js.UndefOr[scala.Boolean] = js.undefined,
+    sanitize: js.UndefOr[scala.Boolean] = js.undefined,
+    trim: js.UndefOr[scala.Boolean] = js.undefined
+  ): JsonOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(arrayNotation)) __obj.updateDynamic("arrayNotation")(arrayNotation)
+    if (!js.isUndefined(coerce)) __obj.updateDynamic("coerce")(coerce)
+    if (!js.isUndefined(reversible)) __obj.updateDynamic("reversible")(reversible)
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    __obj.asInstanceOf[JsonOptions]
+  }
+}
+

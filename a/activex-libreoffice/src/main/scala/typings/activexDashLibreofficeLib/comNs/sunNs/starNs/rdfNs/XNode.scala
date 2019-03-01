@@ -23,3 +23,12 @@ trait XNode extends js.Object {
   var StringValue: java.lang.String
 }
 
+object XNode {
+  @scala.inline
+  def apply(StringValue: java.lang.String): XNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("StringValue")(StringValue)
+    __obj.asInstanceOf[XNode]
+  }
+}
+

@@ -15,3 +15,13 @@ trait Prorate extends js.Object {
   var start: js.UndefOr[MonthDay] = js.undefined
 }
 
+object Prorate {
+  @scala.inline
+  def apply(defaultPrice: Price = null, start: MonthDay = null): Prorate = {
+    val __obj = js.Dynamic.literal()
+    if (defaultPrice != null) __obj.updateDynamic("defaultPrice")(defaultPrice)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Prorate]
+  }
+}
+

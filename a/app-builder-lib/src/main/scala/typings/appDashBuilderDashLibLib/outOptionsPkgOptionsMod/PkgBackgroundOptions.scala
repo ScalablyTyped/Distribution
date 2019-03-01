@@ -24,3 +24,18 @@ trait PkgBackgroundOptions extends js.Object {
   var scaling: js.UndefOr[BackgroundScaling | scala.Null] = js.undefined
 }
 
+object PkgBackgroundOptions {
+  @scala.inline
+  def apply(
+    alignment: BackgroundAlignment = null,
+    file: java.lang.String = null,
+    scaling: BackgroundScaling = null
+  ): PkgBackgroundOptions = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (scaling != null) __obj.updateDynamic("scaling")(scaling)
+    __obj.asInstanceOf[PkgBackgroundOptions]
+  }
+}
+

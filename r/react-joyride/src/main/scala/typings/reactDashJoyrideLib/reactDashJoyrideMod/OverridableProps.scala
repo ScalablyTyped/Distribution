@@ -61,3 +61,40 @@ trait OverridableProps extends js.Object {
   var tooltipComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object OverridableProps {
+  @scala.inline
+  def apply(
+    beaconComponent: reactLib.reactMod.ReactNs.ReactNode = null,
+    disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
+    disableOverlay: js.UndefOr[scala.Boolean] = js.undefined,
+    disableOverlayClose: js.UndefOr[scala.Boolean] = js.undefined,
+    disableScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    floaterProps: js.Object = null,
+    hideBackButton: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: Locale = null,
+    showProgress: js.UndefOr[scala.Boolean] = js.undefined,
+    showSkipButton: js.UndefOr[scala.Boolean] = js.undefined,
+    spotlightClicks: js.UndefOr[scala.Boolean] = js.undefined,
+    spotlightPadding: scala.Int | scala.Double = null,
+    styles: StepStyles = null,
+    tooltipComponent: reactLib.reactMod.ReactNs.ReactNode = null
+  ): OverridableProps = {
+    val __obj = js.Dynamic.literal()
+    if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc)
+    if (!js.isUndefined(disableOverlay)) __obj.updateDynamic("disableOverlay")(disableOverlay)
+    if (!js.isUndefined(disableOverlayClose)) __obj.updateDynamic("disableOverlayClose")(disableOverlayClose)
+    if (!js.isUndefined(disableScrolling)) __obj.updateDynamic("disableScrolling")(disableScrolling)
+    if (floaterProps != null) __obj.updateDynamic("floaterProps")(floaterProps)
+    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (!js.isUndefined(showProgress)) __obj.updateDynamic("showProgress")(showProgress)
+    if (!js.isUndefined(showSkipButton)) __obj.updateDynamic("showSkipButton")(showSkipButton)
+    if (!js.isUndefined(spotlightClicks)) __obj.updateDynamic("spotlightClicks")(spotlightClicks)
+    if (spotlightPadding != null) __obj.updateDynamic("spotlightPadding")(spotlightPadding.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (tooltipComponent != null) __obj.updateDynamic("tooltipComponent")(tooltipComponent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OverridableProps]
+  }
+}
+

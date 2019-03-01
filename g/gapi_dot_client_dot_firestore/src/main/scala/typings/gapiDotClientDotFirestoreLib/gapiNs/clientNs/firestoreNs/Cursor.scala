@@ -20,3 +20,13 @@ trait Cursor extends js.Object {
   var values: js.UndefOr[js.Array[Value]] = js.undefined
 }
 
+object Cursor {
+  @scala.inline
+  def apply(before: js.UndefOr[scala.Boolean] = js.undefined, values: js.Array[Value] = null): Cursor = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(before)) __obj.updateDynamic("before")(before)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[Cursor]
+  }
+}
+

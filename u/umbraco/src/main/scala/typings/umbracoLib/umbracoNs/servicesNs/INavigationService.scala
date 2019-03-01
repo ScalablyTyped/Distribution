@@ -208,3 +208,56 @@ trait INavigationService extends js.Object {
   def syncTree(args: ISyncTreeArgs): js.Any
 }
 
+object INavigationService {
+  @scala.inline
+  def apply(
+    _setActiveTreeType: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    _syncPath: js.Function2[js.Array[java.lang.String], scala.Boolean, scala.Unit],
+    changeSection: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    executeMenuAction: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    hideDialog: js.Function1[scala.Boolean, scala.Unit],
+    hideMenu: js.Function0[scala.Unit],
+    hideNavigation: js.Function0[scala.Unit],
+    hideSearch: js.Function0[scala.Unit],
+    hideTray: js.Function0[scala.Unit],
+    hideTree: js.Function0[scala.Unit],
+    loadLegacyIFrame: js.Function1[java.lang.String, scala.Unit],
+    reloadNode: js.Function1[js.Any, scala.Unit],
+    reloadSection: js.Function1[java.lang.String, scala.Unit],
+    setupTreeEvents: js.Function1[js.Any, scala.Unit],
+    showDialog: js.Function1[IShowDialogArgs, scala.Unit],
+    showHelpDialog: js.Function0[scala.Unit],
+    showMenu: js.Function2[stdLib.Event, /* repeated */ js.Any, scala.Unit],
+    showSearch: js.Function0[scala.Unit],
+    showTray: js.Function0[scala.Unit],
+    showTree: js.Function2[java.lang.String, ISyncTreeArgs, scala.Unit],
+    showUserDialog: js.Function0[scala.Unit],
+    syncTree: js.Function1[ISyncTreeArgs, js.Any]
+  ): INavigationService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_setActiveTreeType")(_setActiveTreeType)
+    __obj.updateDynamic("_syncPath")(_syncPath)
+    __obj.updateDynamic("changeSection")(changeSection)
+    __obj.updateDynamic("executeMenuAction")(executeMenuAction)
+    __obj.updateDynamic("hideDialog")(hideDialog)
+    __obj.updateDynamic("hideMenu")(hideMenu)
+    __obj.updateDynamic("hideNavigation")(hideNavigation)
+    __obj.updateDynamic("hideSearch")(hideSearch)
+    __obj.updateDynamic("hideTray")(hideTray)
+    __obj.updateDynamic("hideTree")(hideTree)
+    __obj.updateDynamic("loadLegacyIFrame")(loadLegacyIFrame)
+    __obj.updateDynamic("reloadNode")(reloadNode)
+    __obj.updateDynamic("reloadSection")(reloadSection)
+    __obj.updateDynamic("setupTreeEvents")(setupTreeEvents)
+    __obj.updateDynamic("showDialog")(showDialog)
+    __obj.updateDynamic("showHelpDialog")(showHelpDialog)
+    __obj.updateDynamic("showMenu")(showMenu)
+    __obj.updateDynamic("showSearch")(showSearch)
+    __obj.updateDynamic("showTray")(showTray)
+    __obj.updateDynamic("showTree")(showTree)
+    __obj.updateDynamic("showUserDialog")(showUserDialog)
+    __obj.updateDynamic("syncTree")(syncTree)
+    __obj.asInstanceOf[INavigationService]
+  }
+}
+

@@ -326,3 +326,46 @@ trait Anon_Children extends js.Object {
   var z2: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Children {
+  @scala.inline
+  def apply(
+    children: js.Array[_] = null,
+    diffChildrenByName: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    ignore: js.UndefOr[scala.Boolean] = js.undefined,
+    info: js.Any = null,
+    invisible: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    origin: scala.Int | scala.Double = null,
+    position: js.Array[_] = null,
+    rotation: scala.Int | scala.Double = null,
+    scale: js.Array[_] = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    styleEmphasis: js.Object = null,
+    `type`: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    z2: scala.Int | scala.Double = null
+  ): Anon_Children = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(diffChildrenByName)) __obj.updateDynamic("diffChildrenByName")(diffChildrenByName)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (!js.isUndefined(invisible)) __obj.updateDynamic("invisible")(invisible)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (styleEmphasis != null) __obj.updateDynamic("styleEmphasis")(styleEmphasis)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (z2 != null) __obj.updateDynamic("z2")(z2.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Children]
+  }
+}
+

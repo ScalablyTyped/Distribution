@@ -9,3 +9,16 @@ trait OptionsWithTagName[K] extends AttributesOptions {
   var name: K
 }
 
+object OptionsWithTagName {
+  @scala.inline
+  def apply[K](
+    name: K,
+    attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double | js.Array[java.lang.String]] = null
+  ): OptionsWithTagName[K] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    __obj.asInstanceOf[OptionsWithTagName[K]]
+  }
+}
+

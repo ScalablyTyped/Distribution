@@ -9,3 +9,20 @@ trait CommonOptions extends WriteConcern {
   var session: js.UndefOr[ClientSession] = js.undefined
 }
 
+object CommonOptions {
+  @scala.inline
+  def apply(
+    j: js.UndefOr[scala.Boolean] = js.undefined,
+    session: ClientSession = null,
+    w: scala.Double | mongodbLib.mongodbLibStrings.majority | java.lang.String = null,
+    wtimeout: scala.Int | scala.Double = null
+  ): CommonOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
+    if (session != null) __obj.updateDynamic("session")(session)
+    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
+    if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommonOptions]
+  }
+}
+

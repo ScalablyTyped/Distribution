@@ -61,3 +61,48 @@ trait Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOption extends js.Obje
   var valueRenderOption: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOption {
+  @scala.inline
+  def apply(
+    spreadsheetId: java.lang.String,
+    `$.xgafv`: java.lang.String = null,
+    access_token: java.lang.String = null,
+    alt: java.lang.String = null,
+    bearer_token: java.lang.String = null,
+    callback: java.lang.String = null,
+    dateTimeRenderOption: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    majorDimension: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    pp: js.UndefOr[scala.Boolean] = js.undefined,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    ranges: java.lang.String = null,
+    uploadType: java.lang.String = null,
+    upload_protocol: java.lang.String = null,
+    valueRenderOption: java.lang.String = null
+  ): Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (bearer_token != null) __obj.updateDynamic("bearer_token")(bearer_token)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (dateTimeRenderOption != null) __obj.updateDynamic("dateTimeRenderOption")(dateTimeRenderOption)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (majorDimension != null) __obj.updateDynamic("majorDimension")(majorDimension)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType)
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol)
+    if (valueRenderOption != null) __obj.updateDynamic("valueRenderOption")(valueRenderOption)
+    __obj.asInstanceOf[Anon_AccesstokenAltBearertokenCallbackDateTimeRenderOption]
+  }
+}
+

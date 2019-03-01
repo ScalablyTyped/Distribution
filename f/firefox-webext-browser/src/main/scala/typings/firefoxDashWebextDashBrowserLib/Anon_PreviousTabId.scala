@@ -14,3 +14,14 @@ trait Anon_PreviousTabId extends js.Object {
   var windowId: scala.Double
 }
 
+object Anon_PreviousTabId {
+  @scala.inline
+  def apply(tabId: scala.Double, windowId: scala.Double, previousTabId: scala.Int | scala.Double = null): Anon_PreviousTabId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("windowId")(windowId)
+    if (previousTabId != null) __obj.updateDynamic("previousTabId")(previousTabId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_PreviousTabId]
+  }
+}
+

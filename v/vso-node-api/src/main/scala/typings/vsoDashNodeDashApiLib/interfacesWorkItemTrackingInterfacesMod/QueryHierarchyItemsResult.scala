@@ -20,3 +20,14 @@ trait QueryHierarchyItemsResult extends js.Object {
   var value: js.Array[QueryHierarchyItem]
 }
 
+object QueryHierarchyItemsResult {
+  @scala.inline
+  def apply(count: scala.Double, hasMore: scala.Boolean, value: js.Array[QueryHierarchyItem]): QueryHierarchyItemsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("hasMore")(hasMore)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[QueryHierarchyItemsResult]
+  }
+}
+

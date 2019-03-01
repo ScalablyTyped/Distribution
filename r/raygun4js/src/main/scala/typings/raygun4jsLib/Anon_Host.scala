@@ -11,3 +11,13 @@ trait Anon_Host extends js.Object {
   var `User-Agent`: java.lang.String
 }
 
+object Anon_Host {
+  @scala.inline
+  def apply(Host: java.lang.String, Referer: java.lang.String, `User-Agent`: java.lang.String): Anon_Host = {
+    val __obj = js.Dynamic.literal(`User-Agent` = `User-Agent`)
+    __obj.updateDynamic("Host")(Host)
+    __obj.updateDynamic("Referer")(Referer)
+    __obj.asInstanceOf[Anon_Host]
+  }
+}
+

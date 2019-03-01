@@ -19,3 +19,30 @@ trait KarmaCoverageReporter
   var watermarks: js.UndefOr[js.Any] = js.undefined
 }
 
+object KarmaCoverageReporter {
+  @scala.inline
+  def apply(
+    StringDictionary: /* moreSettings */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    check: js.Any = null,
+    dir: java.lang.String = null,
+    includeAllSources: js.UndefOr[scala.Boolean] = js.undefined,
+    instrumenter: js.Any = null,
+    sourceStore: istanbulLib.istanbulMod.istanbulNs.Store = null,
+    subdir: java.lang.String | (js.Function1[/* browser */ java.lang.String, java.lang.String]) = null,
+    `type`: java.lang.String = null,
+    watermarks: js.Any = null
+  ): KarmaCoverageReporter = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (check != null) __obj.updateDynamic("check")(check)
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (!js.isUndefined(includeAllSources)) __obj.updateDynamic("includeAllSources")(includeAllSources)
+    if (instrumenter != null) __obj.updateDynamic("instrumenter")(instrumenter)
+    if (sourceStore != null) __obj.updateDynamic("sourceStore")(sourceStore)
+    if (subdir != null) __obj.updateDynamic("subdir")(subdir.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (watermarks != null) __obj.updateDynamic("watermarks")(watermarks)
+    __obj.asInstanceOf[KarmaCoverageReporter]
+  }
+}
+

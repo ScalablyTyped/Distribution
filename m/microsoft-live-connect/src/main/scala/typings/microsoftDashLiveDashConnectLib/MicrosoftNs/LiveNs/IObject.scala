@@ -17,3 +17,12 @@ trait IObject extends js.Object {
   var `type`: java.lang.String
 }
 
+object IObject {
+  @scala.inline
+  def apply(`type`: java.lang.String): IObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[IObject]
+  }
+}
+

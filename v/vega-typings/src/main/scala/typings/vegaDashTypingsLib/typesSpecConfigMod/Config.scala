@@ -37,3 +37,43 @@ import scala.scalajs.js.annotation._
   var title: js.UndefOr[TitleConfig] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    autosize: vegaDashTypingsLib.typesSpecAutosizeMod.AutoSize = null,
+    background: java.lang.String = null,
+    events: vegaDashTypingsLib.Anon_Defaults = null,
+    group: js.Any = null,
+    legend: LegendConfig[
+      vegaDashTypingsLib.typesSpecValuesMod.NumberValue, 
+      scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
+      vegaDashTypingsLib.typesSpecValuesMod.StringValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.ColorValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.FontWeightValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.FontStyleValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.AlignValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
+      vegaDashTypingsLib.typesSpecLayoutMod.LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
+      vegaDashTypingsLib.typesSpecAxisMod.LabelOverlap | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
+      vegaDashTypingsLib.typesSpecValuesMod.SymbolShapeValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.OrientValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
+    ] = null,
+    range: vegaDashTypingsLib.Anon_Category = null,
+    style: js.Any = null,
+    title: TitleConfig = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (autosize != null) __obj.updateDynamic("autosize")(autosize)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Config]
+  }
+}
+

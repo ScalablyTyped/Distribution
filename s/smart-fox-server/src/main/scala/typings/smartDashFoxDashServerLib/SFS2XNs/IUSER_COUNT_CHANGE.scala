@@ -11,3 +11,18 @@ trait IUSER_COUNT_CHANGE extends js.Object {
   var uCount: scala.Double
 }
 
+object IUSER_COUNT_CHANGE {
+  @scala.inline
+  def apply(
+    room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom,
+    sCount: scala.Double,
+    uCount: scala.Double
+  ): IUSER_COUNT_CHANGE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("room")(room)
+    __obj.updateDynamic("sCount")(sCount)
+    __obj.updateDynamic("uCount")(uCount)
+    __obj.asInstanceOf[IUSER_COUNT_CHANGE]
+  }
+}
+

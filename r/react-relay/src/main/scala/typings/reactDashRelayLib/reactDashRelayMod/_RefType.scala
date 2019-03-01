@@ -10,3 +10,12 @@ trait _RefType[T] extends js.Object {
   var ` $refType`: T
 }
 
+object _RefType {
+  @scala.inline
+  def apply[T](` $refType`: T): _RefType[T] = {
+    val __obj = js.Dynamic.literal(` $refType` = ` $refType`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[_RefType[T]]
+  }
+}
+

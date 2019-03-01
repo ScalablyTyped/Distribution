@@ -20,3 +20,18 @@ trait GitQueryRefsCriteria extends js.Object {
   var searchType: GitRefSearchType
 }
 
+object GitQueryRefsCriteria {
+  @scala.inline
+  def apply(
+    commitIds: js.Array[java.lang.String],
+    refNames: js.Array[java.lang.String],
+    searchType: GitRefSearchType
+  ): GitQueryRefsCriteria = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commitIds")(commitIds)
+    __obj.updateDynamic("refNames")(refNames)
+    __obj.updateDynamic("searchType")(searchType)
+    __obj.asInstanceOf[GitQueryRefsCriteria]
+  }
+}
+

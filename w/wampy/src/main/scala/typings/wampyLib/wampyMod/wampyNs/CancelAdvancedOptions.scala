@@ -11,3 +11,14 @@ trait CancelAdvancedOptions extends js.Object {
   ] = js.undefined
 }
 
+object CancelAdvancedOptions {
+  @scala.inline
+  def apply(
+    mode: wampyLib.wampyLibStrings.skip | wampyLib.wampyLibStrings.kill | wampyLib.wampyLibStrings.killnowait = null
+  ): CancelAdvancedOptions = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CancelAdvancedOptions]
+  }
+}
+

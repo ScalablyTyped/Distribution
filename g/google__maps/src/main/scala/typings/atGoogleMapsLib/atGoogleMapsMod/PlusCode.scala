@@ -12,3 +12,13 @@ trait PlusCode extends js.Object {
   var global_code: java.lang.String
 }
 
+object PlusCode {
+  @scala.inline
+  def apply(compound_code: java.lang.String, global_code: java.lang.String): PlusCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compound_code")(compound_code)
+    __obj.updateDynamic("global_code")(global_code)
+    __obj.asInstanceOf[PlusCode]
+  }
+}
+

@@ -11,3 +11,13 @@ trait CacheInvalidationRule extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CacheInvalidationRule {
+  @scala.inline
+  def apply(host: java.lang.String = null, path: java.lang.String = null): CacheInvalidationRule = {
+    val __obj = js.Dynamic.literal()
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[CacheInvalidationRule]
+  }
+}
+

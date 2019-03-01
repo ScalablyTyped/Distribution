@@ -44,3 +44,28 @@ trait SupressionListEntry extends js.Object {
   var updated: java.lang.String
 }
 
+object SupressionListEntry {
+  @scala.inline
+  def apply(
+    created: java.lang.String,
+    recipient: java.lang.String,
+    updated: java.lang.String,
+    description: java.lang.String = null,
+    non_transactional: js.UndefOr[scala.Boolean] = js.undefined,
+    source: (sparkpostLib.sparkpostLibStrings.`Spam Complaint`) | (sparkpostLib.sparkpostLibStrings.`List Unsubscribe`) | (sparkpostLib.sparkpostLibStrings.`Bounce Rule`) | (sparkpostLib.sparkpostLibStrings.`Unsubscribe Link`) | (sparkpostLib.sparkpostLibStrings.`Manually Added`) | sparkpostLib.sparkpostLibStrings.Compliance = null,
+    transactional: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: sparkpostLib.sparkpostLibStrings.transactional | sparkpostLib.sparkpostLibStrings.non_transactional = null
+  ): SupressionListEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("recipient")(recipient)
+    __obj.updateDynamic("updated")(updated)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(non_transactional)) __obj.updateDynamic("non_transactional")(non_transactional)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactional)) __obj.updateDynamic("transactional")(transactional)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SupressionListEntry]
+  }
+}
+

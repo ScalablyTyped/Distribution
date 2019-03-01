@@ -11,3 +11,18 @@ trait Mechanism extends js.Object {
   def response(cred: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String
 }
 
+object Mechanism {
+  @scala.inline
+  def apply(
+    challenge: js.Function1[java.lang.String, scala.Unit],
+    name: java.lang.String,
+    response: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], java.lang.String]
+  ): Mechanism = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("challenge")(challenge)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[Mechanism]
+  }
+}
+

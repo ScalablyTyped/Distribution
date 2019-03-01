@@ -16,214 +16,283 @@ object jweixinLibStrings {
   sealed trait `2` extends js.Object
   
   @js.native
-  sealed trait `2g` extends js.Object
+  sealed trait `2g`
+    extends jweixinLib.jweixinMod.wxNs.networkType
   
   @js.native
-  sealed trait `3g` extends js.Object
+  sealed trait `3g`
+    extends jweixinLib.jweixinMod.wxNs.networkType
   
   @js.native
-  sealed trait `4g` extends js.Object
+  sealed trait `4g`
+    extends jweixinLib.jweixinMod.wxNs.networkType
   
   @js.native
-  sealed trait addCard extends js.Object
+  sealed trait addCard
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait album extends js.Object
+  sealed trait album
+    extends jweixinLib.jweixinMod.wxNs.ImageSourceType
+       with jweixinLib.jweixinMod.wxNs.VideoSourceType
   
   @js.native
-  sealed trait barCode extends js.Object
+  sealed trait barCode
+    extends jweixinLib.jweixinMod.wxNs.scanType
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera
+    extends jweixinLib.jweixinMod.wxNs.ImageSourceType
+       with jweixinLib.jweixinMod.wxNs.VideoSourceType
   
   @js.native
-  sealed trait chooseCard extends js.Object
+  sealed trait chooseCard
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait chooseImage extends js.Object
+  sealed trait chooseImage
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait chooseWXPay extends js.Object
+  sealed trait chooseWXPay
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait closeWindow extends js.Object
+  sealed trait closeWindow
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait compressed extends js.Object
+  sealed trait compressed
+    extends jweixinLib.jweixinMod.wxNs.ImageSizeType
   
   @js.native
-  sealed trait downloadImage extends js.Object
+  sealed trait downloadImage
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait downloadVoice extends js.Object
+  sealed trait downloadVoice
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
   sealed trait gcj02 extends js.Object
   
   @js.native
-  sealed trait getLocation extends js.Object
+  sealed trait getLocation
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait getNetworkType extends js.Object
+  sealed trait getNetworkType
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait hideAllNonBaseMenuItem extends js.Object
+  sealed trait hideAllNonBaseMenuItem
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait hideMenuItems extends js.Object
+  sealed trait hideMenuItems
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait hideOptionMenu extends js.Object
+  sealed trait hideOptionMenu
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait `menuItem:addContact` extends js.Object
+  sealed trait `menuItem:addContact`
+    extends jweixinLib.jweixinMod.wxNs.menuBase
   
   @js.native
-  sealed trait `menuItem:copyUrl` extends js.Object
+  sealed trait `menuItem:copyUrl`
+    extends jweixinLib.jweixinMod.wxNs.menuProtected
   
   @js.native
-  sealed trait `menuItem:dayMode` extends js.Object
+  sealed trait `menuItem:dayMode`
+    extends jweixinLib.jweixinMod.wxNs.menuBase
   
   @js.native
-  sealed trait `menuItem:delete` extends js.Object
+  sealed trait `menuItem:delete`
+    extends jweixinLib.jweixinMod.wxNs.menuProtected
   
   @js.native
-  sealed trait `menuItem:editTag` extends js.Object
+  sealed trait `menuItem:editTag`
+    extends jweixinLib.jweixinMod.wxNs.menuProtected
   
   @js.native
-  sealed trait `menuItem:exposeArticle` extends js.Object
+  sealed trait `menuItem:exposeArticle`
+    extends jweixinLib.jweixinMod.wxNs.menuBase
   
   @js.native
-  sealed trait `menuItem:favorite` extends js.Object
+  sealed trait `menuItem:favorite`
+    extends jweixinLib.jweixinMod.wxNs.menuShare
   
   @js.native
-  sealed trait `menuItem:nightMode` extends js.Object
+  sealed trait `menuItem:nightMode`
+    extends jweixinLib.jweixinMod.wxNs.menuBase
   
   @js.native
-  sealed trait `menuItem:openWithQQBrowser` extends js.Object
+  sealed trait `menuItem:openWithQQBrowser`
+    extends jweixinLib.jweixinMod.wxNs.menuProtected
   
   @js.native
-  sealed trait `menuItem:openWithSafari` extends js.Object
+  sealed trait `menuItem:openWithSafari`
+    extends jweixinLib.jweixinMod.wxNs.menuProtected
   
   @js.native
-  sealed trait `menuItem:originPage` extends js.Object
+  sealed trait `menuItem:originPage`
+    extends jweixinLib.jweixinMod.wxNs.menuProtected
   
   @js.native
-  sealed trait `menuItem:profile` extends js.Object
+  sealed trait `menuItem:profile`
+    extends jweixinLib.jweixinMod.wxNs.menuBase
   
   @js.native
-  sealed trait `menuItem:readMode` extends js.Object
+  sealed trait `menuItem:readMode`
+    extends jweixinLib.jweixinMod.wxNs.menuProtected
   
   @js.native
-  sealed trait `menuItem:refresh` extends js.Object
+  sealed trait `menuItem:refresh`
+    extends jweixinLib.jweixinMod.wxNs.menuBase
   
   @js.native
-  sealed trait `menuItem:setFont` extends js.Object
+  sealed trait `menuItem:setFont`
+    extends jweixinLib.jweixinMod.wxNs.menuBase
   
   @js.native
-  sealed trait `menuItem:share:QZone` extends js.Object
+  sealed trait `menuItem:share:QZone`
+    extends jweixinLib.jweixinMod.wxNs.menuShare
   
   @js.native
-  sealed trait `menuItem:share:appMessage` extends js.Object
+  sealed trait `menuItem:share:appMessage`
+    extends jweixinLib.jweixinMod.wxNs.menuShare
   
   @js.native
-  sealed trait `menuItem:share:brand` extends js.Object
+  sealed trait `menuItem:share:brand`
+    extends jweixinLib.jweixinMod.wxNs.menuProtected
   
   @js.native
-  sealed trait `menuItem:share:email` extends js.Object
+  sealed trait `menuItem:share:email`
+    extends jweixinLib.jweixinMod.wxNs.menuProtected
   
   @js.native
-  sealed trait `menuItem:share:facebook` extends js.Object
+  sealed trait `menuItem:share:facebook`
+    extends jweixinLib.jweixinMod.wxNs.menuShare
   
   @js.native
-  sealed trait `menuItem:share:qq` extends js.Object
+  sealed trait `menuItem:share:qq`
+    extends jweixinLib.jweixinMod.wxNs.menuShare
   
   @js.native
-  sealed trait `menuItem:share:timeline` extends js.Object
+  sealed trait `menuItem:share:timeline`
+    extends jweixinLib.jweixinMod.wxNs.menuShare
   
   @js.native
-  sealed trait `menuItem:share:weiboApp` extends js.Object
+  sealed trait `menuItem:share:weiboApp`
+    extends jweixinLib.jweixinMod.wxNs.menuShare
   
   @js.native
   sealed trait music extends js.Object
   
   @js.native
-  sealed trait onMenuShareAppMessage extends js.Object
+  sealed trait onMenuShareAppMessage
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait onMenuShareQQ extends js.Object
+  sealed trait onMenuShareQQ
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait onMenuShareQZone extends js.Object
+  sealed trait onMenuShareQZone
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait onMenuShareTimeline extends js.Object
+  sealed trait onMenuShareTimeline
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait onMenuShareWeibo extends js.Object
+  sealed trait onMenuShareWeibo
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait onVoicePlayEnd extends js.Object
+  sealed trait onVoicePlayEnd
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait onVoiceRecordEnd extends js.Object
+  sealed trait onVoiceRecordEnd
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait openCard extends js.Object
+  sealed trait openCard
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait openLocation extends js.Object
+  sealed trait openLocation
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait openProductSpecificView extends js.Object
+  sealed trait openProductSpecificView
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait original extends js.Object
+  sealed trait original
+    extends jweixinLib.jweixinMod.wxNs.ImageSizeType
   
   @js.native
-  sealed trait pauseVoice extends js.Object
+  sealed trait pauseVoice
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait playVoice extends js.Object
+  sealed trait playVoice
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait previewImage extends js.Object
+  sealed trait previewImage
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait qrCode extends js.Object
+  sealed trait qrCode
+    extends jweixinLib.jweixinMod.wxNs.scanType
   
   @js.native
-  sealed trait scanQRCode extends js.Object
+  sealed trait scanQRCode
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait showAllNonBaseMenuItem extends js.Object
+  sealed trait showAllNonBaseMenuItem
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait showMenuItems extends js.Object
+  sealed trait showMenuItems
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait showOptionMenu extends js.Object
+  sealed trait showOptionMenu
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait startRecord extends js.Object
+  sealed trait startRecord
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait stopRecord extends js.Object
+  sealed trait stopRecord
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait stopVoice extends js.Object
+  sealed trait stopVoice
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait translateVoice extends js.Object
+  sealed trait translateVoice
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait uploadImage extends js.Object
+  sealed trait uploadImage
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
-  sealed trait uploadVoice extends js.Object
+  sealed trait uploadVoice
+    extends jweixinLib.jweixinMod.wxNs.ApiMethod
   
   @js.native
   sealed trait videoBACKSLASHu6216link extends js.Object
@@ -232,7 +301,8 @@ object jweixinLibStrings {
   sealed trait wgs84 extends js.Object
   
   @js.native
-  sealed trait wifi extends js.Object
+  sealed trait wifi
+    extends jweixinLib.jweixinMod.wxNs.networkType
   
   @scala.inline
   def `0`: `0` = "0".asInstanceOf[`0`]

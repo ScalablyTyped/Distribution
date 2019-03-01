@@ -12,3 +12,12 @@ trait EventUpdatePropsEvent extends js.Object {
   var props: ComponentProps
 }
 
+object EventUpdatePropsEvent {
+  @scala.inline
+  def apply(props: ComponentProps): EventUpdatePropsEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("props")(props)
+    __obj.asInstanceOf[EventUpdatePropsEvent]
+  }
+}
+

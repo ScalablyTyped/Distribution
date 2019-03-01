@@ -19,3 +19,22 @@ trait PhotoImportProgress extends js.Object {
   var totalItemsToImport: scala.Double
 }
 
+object PhotoImportProgress {
+  @scala.inline
+  def apply(
+    bytesImported: scala.Double,
+    importProgress: scala.Double,
+    itemsImported: scala.Double,
+    totalBytesToImport: scala.Double,
+    totalItemsToImport: scala.Double
+  ): PhotoImportProgress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bytesImported")(bytesImported)
+    __obj.updateDynamic("importProgress")(importProgress)
+    __obj.updateDynamic("itemsImported")(itemsImported)
+    __obj.updateDynamic("totalBytesToImport")(totalBytesToImport)
+    __obj.updateDynamic("totalItemsToImport")(totalItemsToImport)
+    __obj.asInstanceOf[PhotoImportProgress]
+  }
+}
+

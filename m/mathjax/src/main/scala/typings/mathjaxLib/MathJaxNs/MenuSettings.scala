@@ -39,3 +39,32 @@ trait MenuSettings extends js.Object {
   var zscale: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MenuSettings {
+  @scala.inline
+  def apply(
+    ALT: js.UndefOr[scala.Boolean] = js.undefined,
+    CMD: js.UndefOr[scala.Boolean] = js.undefined,
+    CTRL: js.UndefOr[scala.Boolean] = js.undefined,
+    Shift: js.UndefOr[scala.Boolean] = js.undefined,
+    context: java.lang.String = null,
+    mpContext: js.UndefOr[scala.Boolean] = js.undefined,
+    mpMouse: js.UndefOr[scala.Boolean] = js.undefined,
+    texHints: js.UndefOr[scala.Boolean] = js.undefined,
+    zoom: java.lang.String = null,
+    zscale: java.lang.String = null
+  ): MenuSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ALT)) __obj.updateDynamic("ALT")(ALT)
+    if (!js.isUndefined(CMD)) __obj.updateDynamic("CMD")(CMD)
+    if (!js.isUndefined(CTRL)) __obj.updateDynamic("CTRL")(CTRL)
+    if (!js.isUndefined(Shift)) __obj.updateDynamic("Shift")(Shift)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(mpContext)) __obj.updateDynamic("mpContext")(mpContext)
+    if (!js.isUndefined(mpMouse)) __obj.updateDynamic("mpMouse")(mpMouse)
+    if (!js.isUndefined(texHints)) __obj.updateDynamic("texHints")(texHints)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom)
+    if (zscale != null) __obj.updateDynamic("zscale")(zscale)
+    __obj.asInstanceOf[MenuSettings]
+  }
+}
+

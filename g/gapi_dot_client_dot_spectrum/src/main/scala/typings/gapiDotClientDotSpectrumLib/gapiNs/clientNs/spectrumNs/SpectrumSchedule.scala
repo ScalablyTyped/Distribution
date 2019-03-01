@@ -12,3 +12,13 @@ trait SpectrumSchedule extends js.Object {
   var spectra: js.UndefOr[js.Array[SpectrumMessage]] = js.undefined
 }
 
+object SpectrumSchedule {
+  @scala.inline
+  def apply(eventTime: EventTime = null, spectra: js.Array[SpectrumMessage] = null): SpectrumSchedule = {
+    val __obj = js.Dynamic.literal()
+    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime)
+    if (spectra != null) __obj.updateDynamic("spectra")(spectra)
+    __obj.asInstanceOf[SpectrumSchedule]
+  }
+}
+

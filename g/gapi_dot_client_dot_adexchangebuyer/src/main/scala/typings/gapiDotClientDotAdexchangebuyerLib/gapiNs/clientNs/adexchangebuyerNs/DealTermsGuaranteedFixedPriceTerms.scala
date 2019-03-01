@@ -18,3 +18,22 @@ trait DealTermsGuaranteedFixedPriceTerms extends js.Object {
   var minimumDailyLooks: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DealTermsGuaranteedFixedPriceTerms {
+  @scala.inline
+  def apply(
+    billingInfo: DealTermsGuaranteedFixedPriceTermsBillingInfo = null,
+    fixedPrices: js.Array[PricePerBuyer] = null,
+    guaranteedImpressions: java.lang.String = null,
+    guaranteedLooks: java.lang.String = null,
+    minimumDailyLooks: java.lang.String = null
+  ): DealTermsGuaranteedFixedPriceTerms = {
+    val __obj = js.Dynamic.literal()
+    if (billingInfo != null) __obj.updateDynamic("billingInfo")(billingInfo)
+    if (fixedPrices != null) __obj.updateDynamic("fixedPrices")(fixedPrices)
+    if (guaranteedImpressions != null) __obj.updateDynamic("guaranteedImpressions")(guaranteedImpressions)
+    if (guaranteedLooks != null) __obj.updateDynamic("guaranteedLooks")(guaranteedLooks)
+    if (minimumDailyLooks != null) __obj.updateDynamic("minimumDailyLooks")(minimumDailyLooks)
+    __obj.asInstanceOf[DealTermsGuaranteedFixedPriceTerms]
+  }
+}
+

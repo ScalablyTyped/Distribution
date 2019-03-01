@@ -12,3 +12,12 @@ trait PutRequest extends js.Object {
   var Item: PutItemInputAttributeMap
 }
 
+object PutRequest {
+  @scala.inline
+  def apply(Item: PutItemInputAttributeMap): PutRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Item")(Item)
+    __obj.asInstanceOf[PutRequest]
+  }
+}
+

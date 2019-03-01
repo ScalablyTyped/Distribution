@@ -13,9 +13,6 @@ package object coreNs {
     /* body */ js.Any, 
     scala.Unit
   ]
-  type NeedleHttpVerbs = NeedleReadonlyHttpVerbs | NeedleReadWriteHttpVerbs
   type NeedleOptions = RequestOptions with ResponseOptions with RedirectOptions with nodeLib.httpsMod.RequestOptions
-  type NeedleReadWriteHttpVerbs = needleLib.needleLibStrings.delete | needleLib.needleLibStrings.patch | needleLib.needleLibStrings.post | needleLib.needleLibStrings.put
-  type NeedleReadonlyHttpVerbs = needleLib.needleLibStrings.get | needleLib.needleLibStrings.head
   type ReadableStream = nodeLib.NodeJSNs.ReadableStream
 }

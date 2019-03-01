@@ -746,22 +746,30 @@ object CloudHSMV2Ns extends js.Object {
   
   trait UntagResourceResponse extends js.Object
   
+  trait _BackupState extends js.Object
+  
+  trait _ClusterState extends js.Object
+  
+  trait _HsmState extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type BackupId = java.lang.String
   type BackupPolicy = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | java.lang.String
-  type BackupState = awsDashSdkLib.awsDashSdkLibStrings.CREATE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.READY | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.PENDING_DELETION | java.lang.String
+  type BackupState = _BackupState | java.lang.String
   type Backups = js.Array[Backup]
   type Boolean = scala.Boolean
   type Cert = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClusterId = java.lang.String
-  type ClusterState = awsDashSdkLib.awsDashSdkLibStrings.CREATE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.UNINITIALIZED | awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.INITIALIZED | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.UPDATE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DELETE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.DEGRADED | java.lang.String
+  type ClusterState = _ClusterState | java.lang.String
   type Clusters = js.Array[Cluster]
   type EniId = java.lang.String
   type ExternalAz = java.lang.String
   type Field = java.lang.String
   type HsmId = java.lang.String
-  type HsmState = awsDashSdkLib.awsDashSdkLibStrings.CREATE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DEGRADED | awsDashSdkLib.awsDashSdkLibStrings.DELETE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
+  type HsmState = _HsmState | java.lang.String
   type HsmType = java.lang.String
   type Hsms = js.Array[Hsm]
   type IpAddress = java.lang.String
@@ -781,6 +789,6 @@ object CloudHSMV2Ns extends js.Object {
   type TagValue = java.lang.String
   type Timestamp = stdLib.Date
   type VpcId = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-04-28` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

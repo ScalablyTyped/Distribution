@@ -17,3 +17,23 @@ trait Anon_Cookie extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Cookie {
+  @scala.inline
+  def apply(
+    cookie: csurfLib.csurfMod.csurfNs.CookieOptions | scala.Boolean = null,
+    ignoreMethods: js.Array[java.lang.String] = null,
+    sessionKey: java.lang.String = null,
+    value: js.Function1[
+      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request, 
+      java.lang.String
+    ] = null
+  ): Anon_Cookie = {
+    val __obj = js.Dynamic.literal()
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (ignoreMethods != null) __obj.updateDynamic("ignoreMethods")(ignoreMethods)
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Cookie]
+  }
+}
+

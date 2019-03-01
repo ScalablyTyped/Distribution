@@ -44,3 +44,22 @@ trait Table extends js.Object {
   var headRowSelector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Table {
+  @scala.inline
+  def apply(
+    bodyRowSelector: java.lang.String = null,
+    columns: js.Array[Column] = null,
+    defaultColumnIdStyle: java.lang.String = null,
+    headRowClass: java.lang.String = null,
+    headRowSelector: java.lang.String = null
+  ): Table = {
+    val __obj = js.Dynamic.literal()
+    if (bodyRowSelector != null) __obj.updateDynamic("bodyRowSelector")(bodyRowSelector)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (defaultColumnIdStyle != null) __obj.updateDynamic("defaultColumnIdStyle")(defaultColumnIdStyle)
+    if (headRowClass != null) __obj.updateDynamic("headRowClass")(headRowClass)
+    if (headRowSelector != null) __obj.updateDynamic("headRowSelector")(headRowSelector)
+    __obj.asInstanceOf[Table]
+  }
+}
+

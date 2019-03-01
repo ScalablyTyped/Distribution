@@ -19,3 +19,22 @@ trait ISmsMessageBase extends js.Object {
   var simIccId: java.lang.String
 }
 
+object ISmsMessageBase {
+  @scala.inline
+  def apply(
+    cellularClass: CellularClass,
+    deviceId: java.lang.String,
+    messageClass: SmsMessageClass,
+    messageType: SmsMessageType,
+    simIccId: java.lang.String
+  ): ISmsMessageBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cellularClass")(cellularClass)
+    __obj.updateDynamic("deviceId")(deviceId)
+    __obj.updateDynamic("messageClass")(messageClass)
+    __obj.updateDynamic("messageType")(messageType)
+    __obj.updateDynamic("simIccId")(simIccId)
+    __obj.asInstanceOf[ISmsMessageBase]
+  }
+}
+

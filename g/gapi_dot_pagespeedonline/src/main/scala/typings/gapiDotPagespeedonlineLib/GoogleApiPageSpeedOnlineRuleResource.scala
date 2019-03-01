@@ -24,3 +24,20 @@ trait GoogleApiPageSpeedOnlineRuleResource extends js.Object {
   var urlBlocks: js.Array[Anon_Header]
 }
 
+object GoogleApiPageSpeedOnlineRuleResource {
+  @scala.inline
+  def apply(
+    localizedRuleName: java.lang.String,
+    ruleImpact: scala.Double,
+    ruleScore: scala.Double,
+    urlBlocks: js.Array[Anon_Header]
+  ): GoogleApiPageSpeedOnlineRuleResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("localizedRuleName")(localizedRuleName)
+    __obj.updateDynamic("ruleImpact")(ruleImpact)
+    __obj.updateDynamic("ruleScore")(ruleScore)
+    __obj.updateDynamic("urlBlocks")(urlBlocks)
+    __obj.asInstanceOf[GoogleApiPageSpeedOnlineRuleResource]
+  }
+}
+

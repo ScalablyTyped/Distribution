@@ -28,3 +28,22 @@ trait Anon_GidGids extends js.Object {
   def username(uid: scala.Double): java.lang.String
 }
 
+object Anon_GidGids {
+  @scala.inline
+  def apply(
+    gid: js.Function1[java.lang.String, scala.Double],
+    gids: js.Function1[java.lang.String, js.Array[scala.Double]],
+    groupname: js.Function1[scala.Double, java.lang.String],
+    uid: js.Function1[java.lang.String, Anon_GidUidNumber],
+    username: js.Function1[scala.Double, java.lang.String]
+  ): Anon_GidGids = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gid")(gid)
+    __obj.updateDynamic("gids")(gids)
+    __obj.updateDynamic("groupname")(groupname)
+    __obj.updateDynamic("uid")(uid)
+    __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[Anon_GidGids]
+  }
+}
+

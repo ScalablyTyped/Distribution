@@ -16,3 +16,20 @@ trait CircleOptions extends DistanceOptions {
   var numVertices: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CircleOptions {
+  @scala.inline
+  def apply(
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    geoSystem: rethinkdbLib.rethinkdbLibStrings.WGS84 | rethinkdbLib.rethinkdbLibStrings.unit_sphere = null,
+    numVertices: scala.Int | scala.Double = null,
+    unit: rethinkdbLib.rethinkdbLibStrings.m | rethinkdbLib.rethinkdbLibStrings.km | rethinkdbLib.rethinkdbLibStrings.mi | rethinkdbLib.rethinkdbLibStrings.nm | rethinkdbLib.rethinkdbLibStrings.ft = null
+  ): CircleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (geoSystem != null) __obj.updateDynamic("geoSystem")(geoSystem.asInstanceOf[js.Any])
+    if (numVertices != null) __obj.updateDynamic("numVertices")(numVertices.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CircleOptions]
+  }
+}
+

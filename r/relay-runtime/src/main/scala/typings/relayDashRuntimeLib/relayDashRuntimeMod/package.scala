@@ -44,10 +44,7 @@ package object relayDashRuntimeMod {
   type ReadyStateChangeCallback = js.Function1[/* readyState */ ReadyState, scala.Unit]
   type RelayConcreteNode = js.Any
   type RelayContainer = js.Any
-  type RelayContainerErrorEventType = relayDashRuntimeLib.relayDashRuntimeLibStrings.CACHE_RESTORE_FAILED | relayDashRuntimeLib.relayDashRuntimeLibStrings.NETWORK_QUERY_ERROR
-  type RelayContainerLoadingEventType = relayDashRuntimeLib.relayDashRuntimeLibStrings.ABORT | relayDashRuntimeLib.relayDashRuntimeLibStrings.CACHE_RESTORED_REQUIRED | relayDashRuntimeLib.relayDashRuntimeLibStrings.CACHE_RESTORE_START | relayDashRuntimeLib.relayDashRuntimeLibStrings.NETWORK_QUERY_RECEIVED_ALL | relayDashRuntimeLib.relayDashRuntimeLibStrings.NETWORK_QUERY_RECEIVED_REQUIRED | relayDashRuntimeLib.relayDashRuntimeLibStrings.NETWORK_QUERY_START | relayDashRuntimeLib.relayDashRuntimeLibStrings.STORE_FOUND_ALL | relayDashRuntimeLib.relayDashRuntimeLibStrings.STORE_FOUND_REQUIRED
   type RelayDebugger = js.Any
-  type RelayMutationConfig = FIELDS_CHANGE | RANGE_ADD | NODE_DELETE | RANGE_DELETE | REQUIRED_CHILDREN
   type RelayMutationRequest = js.Any
   type RelayMutationTransaction = js.Any
   type RelayMutationTransactionCommitFailureCallback = js.Function2[

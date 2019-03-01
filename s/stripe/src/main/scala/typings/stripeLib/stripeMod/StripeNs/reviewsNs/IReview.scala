@@ -34,3 +34,25 @@ trait IReview
   var reason: stripeLib.stripeLibStrings.rule | stripeLib.stripeLibStrings.manual | stripeLib.stripeLibStrings.approved | stripeLib.stripeLibStrings.refunded | stripeLib.stripeLibStrings.refunded_as_fraud | stripeLib.stripeLibStrings.disputed
 }
 
+object IReview {
+  @scala.inline
+  def apply(
+    charge: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    created: scala.Double,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    `object`: stripeLib.stripeLibStrings.review,
+    open: scala.Boolean,
+    reason: stripeLib.stripeLibStrings.rule | stripeLib.stripeLibStrings.manual | stripeLib.stripeLibStrings.approved | stripeLib.stripeLibStrings.refunded | stripeLib.stripeLibStrings.refunded_as_fraud | stripeLib.stripeLibStrings.disputed
+  ): IReview = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IReview]
+  }
+}
+

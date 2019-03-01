@@ -9,3 +9,12 @@ trait ISensorsApiResponse extends js.Object {
   var sensors: js.Array[ISensor]
 }
 
+object ISensorsApiResponse {
+  @scala.inline
+  def apply(sensors: js.Array[ISensor]): ISensorsApiResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sensors")(sensors)
+    __obj.asInstanceOf[ISensorsApiResponse]
+  }
+}
+

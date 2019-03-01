@@ -15,118 +15,150 @@ class StaticCanvas protected ()
   def this(element: java.lang.String) = this()
   /**
   	 * Constructor
-  	 * @param element <canvas> element to initialize instance on
-  	 * @param [options] Options object
+  	 * @param {HTMLElement | String} el <canvas> element to initialize instance on
+  	 * @param {Object} [options] Options object
+  	 * @return {Object} thisArg
   	 */
   def this(element: stdLib.HTMLCanvasElement) = this()
   def this(element: java.lang.String, options: ICanvasOptions) = this()
   def this(element: stdLib.HTMLCanvasElement, options: ICanvasOptions) = this()
   /**
-  	 * When true, getSvgTransform() will apply the StaticCanvas.viewportTransform to the SVG transformation. When true,
-  	 * a zoomed canvas will then produce zoomed SVG output.
-  	 */
-  var svgViewportTransformation: scala.Boolean = js.native
-  /**
   	 * Pan viewport so as to place point at top left corner of canvas
-  	 * @param point to move to
-  	 */
-  def absolutePan(point: Point): this.type = js.native
-  /**
-  	 * Moves an object up in stack of drawn objects
-  	 * @param object Object to send
-  	 * @param [intersecting] If `true`, send object in front of next upper intersecting object
+  	 * @param {fabric.Point} point to move to
+  	 * @return {fabric.Canvas} instance
   	 * @chainable
   	 */
-  def bringForward(`object`: Object): this.type = js.native
+  def absolutePan(point: Point): Canvas = js.native
   /**
-  	 * Moves an object to the top of the stack of drawn objects
-  	 * @param object Object to send
+  	 * Moves an object or a selection up in stack of drawn objects
+  	 * An optional paramter, intersecting allowes to move the object in front
+  	 * of the first intersecting object. Where intersection is calculated with
+  	 * bounding box. If no intersection is found, there will not be change in the
+  	 * stack.
+  	 * @param {fabric.Object} object Object to send
+  	 * @param {Boolean} [intersecting] If `true`, send object in front of next upper intersecting object
+  	 * @return {fabric.Canvas} thisArg
   	 * @chainable
   	 */
-  def bringToFront(`object`: Object): this.type = js.native
+  def bringForward(`object`: Object): Canvas = js.native
+  def bringForward(`object`: Object, intersecting: scala.Boolean): Canvas = js.native
+  /**
+  	 * Moves an object or the objects of a multiple selection
+  	 * to the top of the stack of drawn objects
+  	 * @param {fabric.Object} object Object to send
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
+  	 */
+  def bringToFront(`object`: Object): Canvas = js.native
   /**
   	 * Calculates canvas element offset relative to the document
   	 * This method is also attached as "resize" event handler of window
+  	 * @return {fabric.Canvas} instance
+  	 * @chainable
   	 */
-  def calcOffset(): this.type = js.native
+  def calcOffset(): Canvas = js.native
   /**
-  	 * Centers object vertically and horizontally.
-  	 * You might need to call `setCoords` on an object after centering, to update controls area.
-  	 * @param object Object to center vertically and horizontally
+  	 * Calculate the position of the 4 corner of canvas with current viewportTransform.
+  	 * helps to determinate when an object is in the current rendering viewport using
+  	 * object absolute coordinates ( aCoords )
+  	 * @return {Object} points.tl
+  	 * @chainable
   	 */
-  def centerObject(`object`: Object): this.type = js.native
+  def calcViewportBoundaries(): fabricLib.Anon_Bl = js.native
   /**
-  	 * Centers object horizontally.
-  	 * You might need to call `setCoords` on an object after centering, to update controls area.
-  	 * @param object Object to center horizontally
+  	 * Centers object vertically and horizontally in the canvas
+  	 * @param {fabric.Object} object Object to center vertically and horizontally
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
   	 */
-  def centerObjectH(`object`: Object): this.type = js.native
+  def centerObject(`object`: Object): Canvas = js.native
   /**
-  	 * Centers object vertically.
-  	 * You might need to call `setCoords` on an object after centering, to update controls area.
-  	 * @param object Object to center vertically
+  	 * Centers object horizontally in the canvas
+  	 * @param {fabric.Object} object Object to center horizontally
+  	 * @return {fabric.Canvas} thisArg
   	 */
-  def centerObjectV(`object`: Object): this.type = js.native
+  def centerObjectH(`object`: Object): Canvas = js.native
+  /**
+  	 * Centers object vertically in the canvas
+  	 * @param {fabric.Object} object Object to center vertically
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
+  	 */
+  def centerObjectV(`object`: Object): Canvas = js.native
   /**
   	 * Clears all contexts (background, main, top) of an instance
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
   	 */
-  def clear(): this.type = js.native
+  def clear(): Canvas = js.native
   /**
   	 * Clears specified context of canvas element
   	 * @param ctx Context to clear
   	 * @chainable
   	 */
-  def clearContext(ctx: stdLib.CanvasRenderingContext2D): this.type = js.native
-  /**
-  	 * Clones canvas instance
-  	 * @param [callback] Receives cloned instance as a first argument
-  	 * @param [properties] Array of properties to include in the cloned canvas and children
-  	 */
-  def clone(callback: js.Function1[/* canvas */ this.type, scala.Unit]): scala.Unit = js.native
-  def clone(callback: js.Function1[/* canvas */ this.type, scala.Unit], properties: js.Array[java.lang.String]): scala.Unit = js.native
+  def clearContext(ctx: stdLib.CanvasRenderingContext2D): Canvas = js.native
+  def clone(callback: js.Any): scala.Unit = js.native
+  def clone(callback: js.Any, properties: js.Array[java.lang.String]): scala.Unit = js.native
   /**
   	 * Clones canvas instance without cloning existing data.
   	 * This essentially copies canvas dimensions, clipping properties, etc.
   	 * but leaves data empty (so that you can populate it with your own)
   	 * @param [callback] Receives cloned instance as a first argument
   	 */
-  def cloneWithoutData(callback: js.Function1[/* canvas */ this.type, scala.Unit]): scala.Unit = js.native
+  def cloneWithoutData(): scala.Unit = js.native
+  def cloneWithoutData(callback: js.Any): scala.Unit = js.native
   /**
-  	 * Clears a canvas element and removes all event listeners
+  	 * Creates markup containing SVG font faces,
+  	 * font URLs for font faces must be collected by developers
+  	 * and are not extracted from the DOM by fabricjs
+  	 * @param {Array} objects Array of fabric objects
+  	 * @return {String}
   	 */
-  def dispose(): this.type = js.native
+  def createSVGFontFacesMarkup(objects: js.Array[_]): java.lang.String = js.native
   /**
-  	 * Same as straightenObject, but animated
-  	 * @param object Object to straighten
+  	 * Creates markup containing SVG referenced elements like patterns, gradients etc.
+  	 * @return {String}
   	 */
-  def fxStraightenObject(`object`: Object): this.type = js.native
+  def createSVGRefElementsMarkup(): java.lang.String = js.native
   /**
-  	 * Returns currently selected group of object, if any
-  	 */
-  def getActiveGroup(): Group = js.native
+  	 * Clears a canvas element and dispose objects
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable	 */
+  def dispose(): Canvas = js.native
   /**
-  	 * Returns currently selected object, if any
+  	 * Paint the cached clipPath on the lowerCanvasEl
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
   	 */
-  def getActiveObject(): Object = js.native
+  def drawClipPathOnCanvas(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
   /**
   	 * Returns coordinates of a center of canvas.
   	 * Returned value is an object with top and left properties
+  	 * @return {Object} object with "top" and "left" number values
   	 */
   def getCenter(): fabricLib.Anon_Left = js.native
   /**
   	 * Returns context of canvas where objects are drawn
+  	 * @return {CanvasRenderingContext2D}
   	 */
   def getContext(): stdLib.CanvasRenderingContext2D = js.native
   /**
   	 * Returns <canvas> element corresponding to this instance
+  	 * @return {HTMLCanvasElement}
   	 */
   def getElement(): stdLib.HTMLCanvasElement = js.native
   /**
   	 * Returns canvas height (in px)
+  	 * @return {Number}
   	 */
   def getHeight(): scala.Double = js.native
   /**
+  	 * Calculate the point in canvas that correspond to the center of actual viewport.
+  	 * @return {fabric.Point} vpCenter, viewport center
+  	 */
+  def getVpCenter(): Point = js.native
+  /**
   	 * Returns canvas width (in px)
+  	 * @return {Number}
   	 */
   def getWidth(): scala.Double = js.native
   /**
@@ -134,170 +166,203 @@ class StaticCanvas protected ()
   	 */
   def getZoom(): scala.Double = js.native
   /**
-  	 * Populates canvas with data from the specified JSON.
-  	 * JSON format must conform to the one of toJSON formats
-  	 * @param json JSON string or object
-  	 * @param callback Callback, invoked when json is parsed
+  	 * Populates canvas with data from the specified dataless JSON.
+  	 * JSON format must conform to the one of {@link fabric.Canvas#toDatalessJSON}
+  	 * @deprecated since 1.2.2
+  	 * @param {String|Object} json JSON string or object
+  	 * @param {Function} callback Callback, invoked when json is parsed
   	 *                            and corresponding objects (e.g: {@link fabric.Image})
   	 *                            are initialized
-  	 * @param [reviver] Method for further parsing of JSON elements, called after each fabric object created.
+  	 * @param {Function} [reviver] Method for further parsing of JSON elements, called after each fabric object created.
+  	 * @return {fabric.Canvas} instance
+  	 * @chainable
+  	 * @tutorial {@link http://fabricjs.com/fabric-intro-part-3#deserialization}
   	 */
-  def loadFromJSON(json: java.lang.String, callback: js.Function0[scala.Unit]): this.type = js.native
-  def loadFromJSON(json: java.lang.String, callback: js.Function0[scala.Unit], reviver: js.Function): this.type = js.native
-  def loadFromJSON(json: js.Any, callback: js.Function0[scala.Unit]): this.type = js.native
-  def loadFromJSON(json: js.Any, callback: js.Function0[scala.Unit], reviver: js.Function): this.type = js.native
+  def loadFromDatalessJSON(json: js.Any, callback: js.Function): Canvas = js.native
+  def loadFromDatalessJSON(json: js.Any, callback: js.Function, reviver: js.Function): Canvas = js.native
+  /**
+  	 * Populates canvas with data from the specified JSON.
+  	 * JSON format must conform to the one of {@link fabric.Canvas#toJSON}
+  	 * @param {String|Object} json JSON string or object
+  	 * @param {Function} callback Callback, invoked when json is parsed
+  	 *                            and corresponding objects (e.g: {@link fabric.Image})
+  	 *                            are initialized
+  	 * @param {Function} [reviver] Method for further parsing of JSON elements, called after each fabric object created.
+  	 * @return {fabric.Canvas} instance
+  	 */
+  def loadFromJSON(json: js.Any, callback: js.Function): Canvas = js.native
+  def loadFromJSON(json: js.Any, callback: js.Function, reviver: js.Function): Canvas = js.native
   /**
   	 * Moves an object to specified level in stack of drawn objects
-  	 * @param object Object to send
-  	 * @param index Position to move to
+  	 * @param {fabric.Object} object Object to send
+  	 * @param {Number} index Position to move to
+  	 * @return {fabric.Canvas} thisArg
   	 * @chainable
   	 */
-  def moveTo(`object`: Object, index: scala.Double): this.type = js.native
-  /**
-  	 * Callback; invoked right before object is about to be scaled/rotated
-  	 */
-  def onBeforeScaleRotate(target: Object): scala.Unit = js.native
+  def moveTo(`object`: Object, index: scala.Double): Canvas = js.native
   /**
   	 * Pans viewpoint relatively
-  	 * @param point (position vector) to move by
-  	 */
-  def relativePan(point: Point): this.type = js.native
-  /**
-  	 * Renders both the top canvas and the secondary container canvas.
-  	 * @param [allOnTop] Whether we want to force all images to be rendered on the top canvas
+  	 * @param {fabric.Point} point (position vector) to move by
+  	 * @return {fabric.Canvas} instance
   	 * @chainable
   	 */
-  def renderAll(): this.type = js.native
-  def renderAll(allOnTop: scala.Boolean): this.type = js.native
+  def relativePan(point: Point): Canvas = js.native
   /**
-  	 * Method to render only the top canvas.
-  	 * Also used to render the group selection box.
+  	 * Renders the canvas
+  	 * @return {fabric.Canvas} instance
   	 * @chainable
   	 */
-  def renderTop(): StaticCanvas = js.native
+  def renderAll(): Canvas = js.native
   /**
-  	 * Append a renderAll request to next animation frame. a boolean flag will avoid appending more.
+  	 * Function created to be instance bound at initialization
+  	 * used in requestAnimationFrame rendering
+  	 * Let the fabricJS call it. If you call it manually you could have more
+  	 * animationFrame stacking on to of each other
+  	 * for an imperative rendering, use canvas.renderAll
+  	 * @private
+  	 * @return {fabric.Canvas} instance
   	 * @chainable
   	 */
-  def requestRenderAll(): this.type = js.native
+  def renderAndReset(): Canvas = js.native
   /**
-  	 * Moves an object down in stack of drawn objects
-  	 * @param object Object to send
-  	 * @param [intersecting] If `true`, send object behind next lower intersecting object
+  	 * Renders background, objects, overlay and controls.
+  	 * @param {CanvasRenderingContext2D} ctx
+  	 * @param {Array} objects to render
+  	 * @return {fabric.Canvas} instance
   	 * @chainable
   	 */
-  def sendBackwards(`object`: Object): this.type = js.native
+  def renderCanvas(ctx: stdLib.CanvasRenderingContext2D, objects: js.Array[Object]): Canvas = js.native
   /**
-  	 * Moves an object to the bottom of the stack of drawn objects
-  	 * @param object Object to send to back
+  	 * Append a renderAll request to next animation frame.
+  	 * unless one is already in progress, in that case nothing is done
+  	 * a boolean flag will avoid appending more.
+  	 * @return {fabric.Canvas} instance
   	 * @chainable
   	 */
-  def sendToBack(`object`: Object): this.type = js.native
-  def setBackgroundColor(backgroundColor: Pattern, callback: js.Function1[/* pattern */ js.UndefOr[Pattern], scala.Unit]): StaticCanvas = js.native
+  def requestRenderAll(): Canvas = js.native
+  /**
+  	 * Moves an object or a selection down in stack of drawn objects
+  	 * An optional paramter, intersecting allowes to move the object in behind
+  	 * the first intersecting object. Where intersection is calculated with
+  	 * bounding box. If no intersection is found, there will not be change in the
+  	 * stack.
+  	 * @param {fabric.Object} object Object to send
+  	 * @param {Boolean} [intersecting] If `true`, send object behind next lower intersecting object
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
+  	 */
+  def sendBackwards(`object`: Object): Canvas = js.native
+  def sendBackwards(`object`: Object, intersecting: scala.Boolean): Canvas = js.native
+  /**
+  	 * Moves an object or the objects of a multiple selection
+  	 * to the bottom of the stack of drawn objects
+  	 * @param {fabric.Object} object Object to send to back
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
+  	 */
+  def sendToBack(`object`: Object): Canvas = js.native
+  def setBackgroundColor(backgroundColor: Pattern, callback: js.Function): Canvas = js.native
   /**
   	 * Sets {@link fabric.StaticCanvas#backgroundColor|background color} for this canvas
-  	 * @param backgroundColor Color or pattern to set background color to
-  	 * @param callback Callback to invoke when background color is set
+  	 * @param {(String|fabric.Pattern)} backgroundColor Color or pattern to set background color to
+  	 * @param {Function} callback Callback to invoke when background color is set
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
   	 */
-  def setBackgroundColor(
-    backgroundColor: java.lang.String,
-    callback: js.Function1[/* pattern */ js.UndefOr[Pattern], scala.Unit]
-  ): StaticCanvas = js.native
+  def setBackgroundColor(backgroundColor: java.lang.String, callback: js.Function): Canvas = js.native
   /**
   	 * Sets {@link fabric.StaticCanvas#backgroundImage|background image} for this canvas
-  	 * @param image fabric.Image instance or URL of an image to set background to
-  	 * @param callback Callback to invoke when image is loaded and set as background
-  	 * @param [options] Optional options to set for the {@link fabric.Image|background image}.
+  	 * @param {(fabric.Image|String)} image fabric.Image instance or URL of an image to set background to
+  	 * @param {Function} callback Callback to invoke when image is loaded and set as background
+  	 * @param {Object} [options] Optional options to set for the {@link fabric.Image|background image}.
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
   	 */
-  def setBackgroundImage(image: Image): this.type = js.native
-  def setBackgroundImage(image: Image, callback: js.Function1[/* img */ stdLib.HTMLImageElement, scala.Unit]): this.type = js.native
-  def setBackgroundImage(
-    image: Image,
-    callback: js.Function1[/* img */ stdLib.HTMLImageElement, scala.Unit],
-    options: IImageOptions
-  ): this.type = js.native
-  def setBackgroundImage(image: java.lang.String): this.type = js.native
-  def setBackgroundImage(image: java.lang.String, callback: js.Function1[/* img */ stdLib.HTMLImageElement, scala.Unit]): this.type = js.native
-  def setBackgroundImage(
-    image: java.lang.String,
-    callback: js.Function1[/* img */ stdLib.HTMLImageElement, scala.Unit],
-    options: IImageOptions
-  ): this.type = js.native
+  def setBackgroundImage(image: Image, callback: js.Function): Canvas = js.native
+  def setBackgroundImage(image: Image, callback: js.Function, options: IImageOptions): Canvas = js.native
+  def setBackgroundImage(image: java.lang.String, callback: js.Function): Canvas = js.native
+  def setBackgroundImage(image: java.lang.String, callback: js.Function, options: IImageOptions): Canvas = js.native
   /**
   	 * Sets dimensions (width, height) of this canvas instance. when options.cssOnly flag active you should also supply the unit of measure (px/%/em)
   	 * @param        dimensions                    Object with width/height properties
   	 * @param        [options]                     Options object
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
   	 */
-  def setDimensions(dimensions: ICanvasDimensions): this.type = js.native
-  def setDimensions(dimensions: ICanvasDimensions, options: ICanvasDimensionsOptions): this.type = js.native
-  def setHeight(value: java.lang.String): this.type = js.native
-  def setHeight(value: java.lang.String, options: ICanvasDimensionsOptions): this.type = js.native
+  def setDimensions(dimensions: ICanvasDimensions): Canvas = js.native
+  def setDimensions(dimensions: ICanvasDimensions, options: ICanvasDimensionsOptions): Canvas = js.native
+  def setHeight(value: java.lang.String): Canvas = js.native
+  def setHeight(value: java.lang.String, options: ICanvasDimensionsOptions): Canvas = js.native
   /**
   	 * Sets height of this canvas instance
   	 * @param value                         Value to set height to
   	 * @param        [options]                     Options object
+  	 * @return {fabric.Canvas} instance
+  	 * @chainable true
   	 */
-  def setHeight(value: scala.Double): this.type = js.native
-  def setHeight(value: scala.Double, options: ICanvasDimensionsOptions): this.type = js.native
-  def setOverlayColor(overlayColor: Pattern, callback: js.Function1[/* pattern */ js.UndefOr[Pattern], scala.Unit]): this.type = js.native
+  def setHeight(value: scala.Double): Canvas = js.native
+  def setHeight(value: scala.Double, options: ICanvasDimensionsOptions): Canvas = js.native
+  def setOverlayColor(overlayColor: Pattern, callback: js.Function): Canvas = js.native
   /**
-  	 * Sets {@link fabric.StaticCanvas#overlayColor|background color} for this canvas
-  	 * @param overlayColor Color or pattern to set background color to
-  	 * @param callback Callback to invoke when background color is set
+  	 * Sets {@link fabric.StaticCanvas#overlayColor|foreground color} for this canvas
+  	 * @param {(String|fabric.Pattern)} overlayColor Color or pattern to set foreground color to
+  	 * @param {Function} callback Callback to invoke when foreground color is set
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
   	 */
-  def setOverlayColor(
-    overlayColor: java.lang.String,
-    callback: js.Function1[/* pattern */ js.UndefOr[Pattern], scala.Unit]
-  ): this.type = js.native
+  def setOverlayColor(overlayColor: java.lang.String, callback: js.Function): Canvas = js.native
   /**
   	 * Sets {@link fabric.StaticCanvas#overlayImage|overlay image} for this canvas
-  	 * @param image fabric.Image instance or URL of an image to set overlay to
-  	 * @param callback callback to invoke when image is loaded and set as an overlay
-  	 * @param [options] Optional options to set for the {@link fabric.Image|overlay image}.
+  	 * @param {(fabric.Image|String)} image fabric.Image instance or URL of an image to set overlay to
+  	 * @param {Function} callback callback to invoke when image is loaded and set as an overlay
+  	 * @param {Object} [options] Optional options to set for the {@link fabric.Image|overlay image}.
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
   	 */
-  def setOverlayImage(image: Image, callback: js.Function1[/* img */ stdLib.HTMLImageElement, scala.Unit]): this.type = js.native
-  def setOverlayImage(
-    image: Image,
-    callback: js.Function1[/* img */ stdLib.HTMLImageElement, scala.Unit],
-    options: IImageOptions
-  ): this.type = js.native
-  def setOverlayImage(image: java.lang.String, callback: js.Function1[/* img */ stdLib.HTMLImageElement, scala.Unit]): this.type = js.native
-  def setOverlayImage(
-    image: java.lang.String,
-    callback: js.Function1[/* img */ stdLib.HTMLImageElement, scala.Unit],
-    options: IImageOptions
-  ): this.type = js.native
+  def setOverlayImage(image: Image, callback: js.Function): Canvas = js.native
+  def setOverlayImage(image: Image, callback: js.Function, options: IImageOptions): Canvas = js.native
+  def setOverlayImage(image: java.lang.String, callback: js.Function): Canvas = js.native
+  def setOverlayImage(image: java.lang.String, callback: js.Function, options: IImageOptions): Canvas = js.native
   /**
   	 * Sets viewport transform of this canvas instance
-  	 * @param vpt the transform in the form of context.transform
+  	 * @param {Array} vpt the transform in the form of context.transform
+  	 * @return {fabric.Canvas} instance
+  	 * @chainable
   	 */
-  def setViewportTransform(vpt: js.Array[scala.Double]): this.type = js.native
-  def setWidth(value: java.lang.String): this.type = js.native
-  def setWidth(value: java.lang.String, options: ICanvasDimensionsOptions): this.type = js.native
+  def setViewportTransform(vpt: js.Array[scala.Double]): Canvas = js.native
+  def setWidth(value: java.lang.String): Canvas = js.native
+  def setWidth(value: java.lang.String, options: ICanvasDimensionsOptions): Canvas = js.native
   /**
   	 * Sets width of this canvas instance
-  	 * @param value                         Value to set width to
-  	 * @param        [options]                     Options object
+  	 * @param {Number|String} value                         Value to set width to
+  	 * @param {Object}        [options]                     Options object
+  	 * @return {fabric.Canvas} instance
+  	 * @chainable true
   	 */
-  def setWidth(value: scala.Double): this.type = js.native
-  def setWidth(value: scala.Double, options: ICanvasDimensionsOptions): this.type = js.native
+  def setWidth(value: scala.Double): Canvas = js.native
+  def setWidth(value: scala.Double, options: ICanvasDimensionsOptions): Canvas = js.native
   /**
   	 * Sets zoom level of this canvas instance
-  	 * @param value to set zoom to, less than 1 zooms out
+  	 * @param {Number} value to set zoom to, less than 1 zooms out
+  	 * @return {fabric.Canvas} instance
+  	 * @chainable
   	 */
-  def setZoom(value: scala.Double): this.type = js.native
-  // Functions from object straighten mixin
-  // --------------------------------------------------------------------------------------------------------------------------------
+  def setZoom(value: scala.Double): Canvas = js.native
   /**
   	 * Straightens object, then rerenders canvas
-  	 * @param object Object to straighten
+  	 * @param {fabric.Object} object Object to straighten
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
   	 */
-  def straightenObject(`object`: Object): this.type = js.native
+  def straightenObject(`object`: Object): Canvas = js.native
   /**
   	 * Provides a way to check support of some of the canvas methods
   	 * (either those of HTMLCanvasElement itself, or rendering context)
-  	 * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
-  	 * @return `true` if method is supported (or at least exists), null` if canvas element or context can not be initialized
+  	 *
+  	 * @param {String} methodName Method to check support for;
+  	 *                            Could be one of "setLineDash"
+  	 * @return {Boolean | null} `true` if method is supported (or at least exists),
+  	 *                          `null` if canvas element or context can not be initialized
   	 */
   @JSName("supports")
   def supports_getImageData(methodName: fabricLib.fabricLibStrings.getImageData): scala.Boolean = js.native
@@ -315,19 +380,22 @@ class StaticCanvas protected ()
   def toDataURL(options: IDataURLOptions): java.lang.String = js.native
   /**
   	 * Returs dataless JSON representation of canvas
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
+  	 * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
+  	 * @return {String} json string
   	 */
   def toDatalessJSON(): java.lang.String = js.native
   def toDatalessJSON(propertiesToInclude: js.Array[java.lang.String]): java.lang.String = js.native
   /**
   	 * Returns dataless object representation of canvas
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
+  	 * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
+  	 * @return {Object} object representation of an instance
   	 */
   def toDatalessObject(): js.Any = js.native
   def toDatalessObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Returns object representation of canvas
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
+  	 * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
+  	 * @return {Object} object representation of an instance
   	 */
   def toObject(): js.Any = js.native
   def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
@@ -335,35 +403,52 @@ class StaticCanvas protected ()
   	 * Returns SVG representation of canvas
   	 * @param [options] Options object for SVG output
   	 * @param [reviver] Method for further parsing of svg elements, called after each fabric object converted into svg representation.
+  	 * @return {String} SVG string
   	 */
+  def toSVG(): java.lang.String = js.native
   def toSVG(options: IToSVGOptions): java.lang.String = js.native
   def toSVG(options: IToSVGOptions, reviver: js.Function): java.lang.String = js.native
   /**
-  	 * Sets zoom level of this canvas instance, zoom centered around point
-  	 * @param point to zoom with respect to
-  	 * @param value to set zoom to, less than 1 zooms out
+  	 * Centers object vertically and horizontally in the viewport
+  	 * @param {fabric.Object} object Object to center vertically and horizontally
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
   	 */
-  def zoomToPoint(point: Point, value: scala.Double): this.type = js.native
+  def viewportCenterObject(`object`: Object): Canvas = js.native
+  /**
+  	 * Centers object horizontally in the viewport, object.top is unchanged
+  	 * @param {fabric.Object} object Object to center vertically and horizontally
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
+  	 */
+  def viewportCenterObjectH(`object`: Object): Canvas = js.native
+  /**
+  	 * Centers object Vertically in the viewport, object.top is unchanged
+  	 * @param {fabric.Object} object Object to center vertically and horizontally
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
+  	 */
+  def viewportCenterObjectV(`object`: Object): Canvas = js.native
+  /**
+  	 * Sets zoom level of this canvas instance, zoom centered around point
+  	 * @param {fabric.Point} point to zoom with respect to
+  	 * @param {Number} value to set zoom to, less than 1 zooms out
+  	 * @return {fabric.Canvas} instance
+  	 * @chainable true
+  	 */
+  def zoomToPoint(point: Point, value: scala.Double): Canvas = js.native
 }
 
 /* static members */
 @JSImport("fabric/fabric-impl", "StaticCanvas")
 @js.native
 object StaticCanvas extends js.Object {
-  var EMPTY_JSON: java.lang.String = js.native
   /**
-  	 * Provides a way to check support of some of the canvas methods
-  	 * (either those of HTMLCanvasElement itself, or rendering context)
-  	 * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
+  	 * @static
+  	 * @type String
+  	 * @default
   	 */
-  @JSName("supports")
-  def supports_getImageData(methodName: fabricLib.fabricLibStrings.getImageData): scala.Boolean = js.native
-  @JSName("supports")
-  def supports_setLineDash(methodName: fabricLib.fabricLibStrings.setLineDash): scala.Boolean = js.native
-  @JSName("supports")
-  def supports_toDataURL(methodName: fabricLib.fabricLibStrings.toDataURL): scala.Boolean = js.native
-  @JSName("supports")
-  def supports_toDataURLWithQuality(methodName: fabricLib.fabricLibStrings.toDataURLWithQuality): scala.Boolean = js.native
+  var EMPTY_JSON: java.lang.String = js.native
   /**
   	 * Returns JSON representation of canvas
   	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output

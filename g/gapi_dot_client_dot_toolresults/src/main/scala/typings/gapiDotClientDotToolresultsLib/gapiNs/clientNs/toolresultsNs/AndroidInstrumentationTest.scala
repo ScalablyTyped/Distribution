@@ -25,3 +25,20 @@ trait AndroidInstrumentationTest extends js.Object {
   var useOrchestrator: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AndroidInstrumentationTest {
+  @scala.inline
+  def apply(
+    testPackageId: java.lang.String = null,
+    testRunnerClass: java.lang.String = null,
+    testTargets: js.Array[java.lang.String] = null,
+    useOrchestrator: js.UndefOr[scala.Boolean] = js.undefined
+  ): AndroidInstrumentationTest = {
+    val __obj = js.Dynamic.literal()
+    if (testPackageId != null) __obj.updateDynamic("testPackageId")(testPackageId)
+    if (testRunnerClass != null) __obj.updateDynamic("testRunnerClass")(testRunnerClass)
+    if (testTargets != null) __obj.updateDynamic("testTargets")(testTargets)
+    if (!js.isUndefined(useOrchestrator)) __obj.updateDynamic("useOrchestrator")(useOrchestrator)
+    __obj.asInstanceOf[AndroidInstrumentationTest]
+  }
+}
+

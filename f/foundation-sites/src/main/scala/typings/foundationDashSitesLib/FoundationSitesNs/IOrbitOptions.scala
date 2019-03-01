@@ -26,3 +26,48 @@ trait IOrbitOptions extends js.Object {
   var useMUI: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IOrbitOptions {
+  @scala.inline
+  def apply(
+    accessible: js.UndefOr[scala.Boolean] = js.undefined,
+    animInFromLeft: java.lang.String = null,
+    animInFromRight: java.lang.String = null,
+    animOutToLeft: java.lang.String = null,
+    animOutToRight: java.lang.String = null,
+    autoPlay: js.UndefOr[scala.Boolean] = js.undefined,
+    boxOfBullets: java.lang.String = null,
+    bullets: js.UndefOr[scala.Boolean] = js.undefined,
+    containerClass: java.lang.String = null,
+    infiniteWrap: js.UndefOr[scala.Boolean] = js.undefined,
+    navButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    nextClass: java.lang.String = null,
+    pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    prevClass: java.lang.String = null,
+    slideClass: java.lang.String = null,
+    swipe: js.UndefOr[scala.Boolean] = js.undefined,
+    timerDelay: scala.Int | scala.Double = null,
+    useMUI: js.UndefOr[scala.Boolean] = js.undefined
+  ): IOrbitOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
+    if (animInFromLeft != null) __obj.updateDynamic("animInFromLeft")(animInFromLeft)
+    if (animInFromRight != null) __obj.updateDynamic("animInFromRight")(animInFromRight)
+    if (animOutToLeft != null) __obj.updateDynamic("animOutToLeft")(animOutToLeft)
+    if (animOutToRight != null) __obj.updateDynamic("animOutToRight")(animOutToRight)
+    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
+    if (boxOfBullets != null) __obj.updateDynamic("boxOfBullets")(boxOfBullets)
+    if (!js.isUndefined(bullets)) __obj.updateDynamic("bullets")(bullets)
+    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
+    if (!js.isUndefined(infiniteWrap)) __obj.updateDynamic("infiniteWrap")(infiniteWrap)
+    if (!js.isUndefined(navButtons)) __obj.updateDynamic("navButtons")(navButtons)
+    if (nextClass != null) __obj.updateDynamic("nextClass")(nextClass)
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
+    if (prevClass != null) __obj.updateDynamic("prevClass")(prevClass)
+    if (slideClass != null) __obj.updateDynamic("slideClass")(slideClass)
+    if (!js.isUndefined(swipe)) __obj.updateDynamic("swipe")(swipe)
+    if (timerDelay != null) __obj.updateDynamic("timerDelay")(timerDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMUI)) __obj.updateDynamic("useMUI")(useMUI)
+    __obj.asInstanceOf[IOrbitOptions]
+  }
+}
+

@@ -24,3 +24,42 @@ trait _BreakingChangeType extends js.Object {
   var VALUE_REMOVED_FROM_ENUM: graphqlLib.graphqlLibStrings.VALUE_REMOVED_FROM_ENUM
 }
 
+object _BreakingChangeType {
+  @scala.inline
+  def apply(
+    ARG_CHANGED_KIND: graphqlLib.graphqlLibStrings.ARG_CHANGED_KIND,
+    ARG_REMOVED: graphqlLib.graphqlLibStrings.ARG_REMOVED,
+    DIRECTIVE_ARG_REMOVED: graphqlLib.graphqlLibStrings.DIRECTIVE_ARG_REMOVED,
+    DIRECTIVE_LOCATION_REMOVED: graphqlLib.graphqlLibStrings.DIRECTIVE_LOCATION_REMOVED,
+    DIRECTIVE_REMOVED: graphqlLib.graphqlLibStrings.DIRECTIVE_REMOVED,
+    FIELD_CHANGED_KIND: graphqlLib.graphqlLibStrings.FIELD_CHANGED_KIND,
+    FIELD_REMOVED: graphqlLib.graphqlLibStrings.FIELD_REMOVED,
+    INTERFACE_REMOVED_FROM_OBJECT: graphqlLib.graphqlLibStrings.INTERFACE_REMOVED_FROM_OBJECT,
+    REQUIRED_ARG_ADDED: graphqlLib.graphqlLibStrings.REQUIRED_ARG_ADDED,
+    REQUIRED_DIRECTIVE_ARG_ADDED: graphqlLib.graphqlLibStrings.REQUIRED_DIRECTIVE_ARG_ADDED,
+    REQUIRED_INPUT_FIELD_ADDED: graphqlLib.graphqlLibStrings.REQUIRED_INPUT_FIELD_ADDED,
+    TYPE_CHANGED_KIND: graphqlLib.graphqlLibStrings.TYPE_CHANGED_KIND,
+    TYPE_REMOVED: graphqlLib.graphqlLibStrings.TYPE_REMOVED,
+    TYPE_REMOVED_FROM_UNION: graphqlLib.graphqlLibStrings.TYPE_REMOVED_FROM_UNION,
+    VALUE_REMOVED_FROM_ENUM: graphqlLib.graphqlLibStrings.VALUE_REMOVED_FROM_ENUM
+  ): _BreakingChangeType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ARG_CHANGED_KIND")(ARG_CHANGED_KIND)
+    __obj.updateDynamic("ARG_REMOVED")(ARG_REMOVED)
+    __obj.updateDynamic("DIRECTIVE_ARG_REMOVED")(DIRECTIVE_ARG_REMOVED)
+    __obj.updateDynamic("DIRECTIVE_LOCATION_REMOVED")(DIRECTIVE_LOCATION_REMOVED)
+    __obj.updateDynamic("DIRECTIVE_REMOVED")(DIRECTIVE_REMOVED)
+    __obj.updateDynamic("FIELD_CHANGED_KIND")(FIELD_CHANGED_KIND)
+    __obj.updateDynamic("FIELD_REMOVED")(FIELD_REMOVED)
+    __obj.updateDynamic("INTERFACE_REMOVED_FROM_OBJECT")(INTERFACE_REMOVED_FROM_OBJECT)
+    __obj.updateDynamic("REQUIRED_ARG_ADDED")(REQUIRED_ARG_ADDED)
+    __obj.updateDynamic("REQUIRED_DIRECTIVE_ARG_ADDED")(REQUIRED_DIRECTIVE_ARG_ADDED)
+    __obj.updateDynamic("REQUIRED_INPUT_FIELD_ADDED")(REQUIRED_INPUT_FIELD_ADDED)
+    __obj.updateDynamic("TYPE_CHANGED_KIND")(TYPE_CHANGED_KIND)
+    __obj.updateDynamic("TYPE_REMOVED")(TYPE_REMOVED)
+    __obj.updateDynamic("TYPE_REMOVED_FROM_UNION")(TYPE_REMOVED_FROM_UNION)
+    __obj.updateDynamic("VALUE_REMOVED_FROM_ENUM")(VALUE_REMOVED_FROM_ENUM)
+    __obj.asInstanceOf[_BreakingChangeType]
+  }
+}
+

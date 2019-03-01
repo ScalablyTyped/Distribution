@@ -31,3 +31,29 @@ trait PerfSampleSeriesResource extends js.Object {
   def list(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSampleSeriesResponse]
 }
 
+object PerfSampleSeriesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries]
+    ],
+    get: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries]
+    ],
+    list: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSampleSeriesResponse]
+    ],
+    samples: SamplesResource
+  ): PerfSampleSeriesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("samples")(samples)
+    __obj.asInstanceOf[PerfSampleSeriesResource]
+  }
+}
+

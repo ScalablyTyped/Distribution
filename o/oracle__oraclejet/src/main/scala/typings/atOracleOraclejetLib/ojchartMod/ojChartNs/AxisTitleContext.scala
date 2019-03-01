@@ -11,3 +11,16 @@ trait AxisTitleContext extends js.Object {
   var subId: java.lang.String
 }
 
+object AxisTitleContext {
+  @scala.inline
+  def apply(
+    axis: atOracleOraclejetLib.atOracleOraclejetLibStrings.xAxis | atOracleOraclejetLib.atOracleOraclejetLibStrings.yAxis | atOracleOraclejetLib.atOracleOraclejetLibStrings.y2Axis,
+    subId: java.lang.String
+  ): AxisTitleContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    __obj.updateDynamic("subId")(subId)
+    __obj.asInstanceOf[AxisTitleContext]
+  }
+}
+

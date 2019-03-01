@@ -22,3 +22,20 @@ trait AchievementResetResponse extends js.Object {
   var updateOccurred: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AchievementResetResponse {
+  @scala.inline
+  def apply(
+    currentState: java.lang.String = null,
+    definitionId: java.lang.String = null,
+    kind: java.lang.String = null,
+    updateOccurred: js.UndefOr[scala.Boolean] = js.undefined
+  ): AchievementResetResponse = {
+    val __obj = js.Dynamic.literal()
+    if (currentState != null) __obj.updateDynamic("currentState")(currentState)
+    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred)
+    __obj.asInstanceOf[AchievementResetResponse]
+  }
+}
+

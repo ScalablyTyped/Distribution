@@ -28,3 +28,22 @@ trait Options extends js.Object {
   var popstate: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    click: scala.Boolean,
+    decodeURLComponents: scala.Boolean,
+    dispatch: scala.Boolean,
+    hashbang: scala.Boolean,
+    popstate: scala.Boolean
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("click")(click)
+    __obj.updateDynamic("decodeURLComponents")(decodeURLComponents)
+    __obj.updateDynamic("dispatch")(dispatch)
+    __obj.updateDynamic("hashbang")(hashbang)
+    __obj.updateDynamic("popstate")(popstate)
+    __obj.asInstanceOf[Options]
+  }
+}
+

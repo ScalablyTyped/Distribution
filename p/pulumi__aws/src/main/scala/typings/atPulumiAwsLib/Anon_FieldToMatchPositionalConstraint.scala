@@ -12,3 +12,20 @@ trait Anon_FieldToMatchPositionalConstraint extends js.Object {
   var textTransformation: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_FieldToMatchPositionalConstraint {
+  @scala.inline
+  def apply(
+    fieldToMatch: atPulumiPulumiLib.outputMod.Input[Anon_DataTypeInput],
+    positionalConstraint: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    textTransformation: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    targetString: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_FieldToMatchPositionalConstraint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fieldToMatch")(fieldToMatch.asInstanceOf[js.Any])
+    __obj.updateDynamic("positionalConstraint")(positionalConstraint.asInstanceOf[js.Any])
+    __obj.updateDynamic("textTransformation")(textTransformation.asInstanceOf[js.Any])
+    if (targetString != null) __obj.updateDynamic("targetString")(targetString.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FieldToMatchPositionalConstraint]
+  }
+}
+

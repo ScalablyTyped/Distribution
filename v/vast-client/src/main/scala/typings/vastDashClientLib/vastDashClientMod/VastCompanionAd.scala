@@ -20,3 +20,36 @@ trait VastCompanionAd extends js.Object {
   var width: java.lang.String
 }
 
+object VastCompanionAd {
+  @scala.inline
+  def apply(
+    companionClickTrackingURLTemplates: js.Array[java.lang.String],
+    height: java.lang.String,
+    trackingEvents: VastCompanionTrackingEvents,
+    width: java.lang.String,
+    altText: java.lang.String = null,
+    companionClickThroughURLTemplate: java.lang.String = null,
+    companionClickTrackingURLTemplate: java.lang.String = null,
+    htmlResource: java.lang.String = null,
+    id: java.lang.String = null,
+    iframeResource: java.lang.String = null,
+    staticResource: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): VastCompanionAd = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("companionClickTrackingURLTemplates")(companionClickTrackingURLTemplates)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("trackingEvents")(trackingEvents)
+    __obj.updateDynamic("width")(width)
+    if (altText != null) __obj.updateDynamic("altText")(altText)
+    if (companionClickThroughURLTemplate != null) __obj.updateDynamic("companionClickThroughURLTemplate")(companionClickThroughURLTemplate)
+    if (companionClickTrackingURLTemplate != null) __obj.updateDynamic("companionClickTrackingURLTemplate")(companionClickTrackingURLTemplate)
+    if (htmlResource != null) __obj.updateDynamic("htmlResource")(htmlResource)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (iframeResource != null) __obj.updateDynamic("iframeResource")(iframeResource)
+    if (staticResource != null) __obj.updateDynamic("staticResource")(staticResource)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[VastCompanionAd]
+  }
+}
+

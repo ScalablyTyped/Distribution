@@ -26,3 +26,20 @@ trait ASPxClientTitleBase extends ASPxClientWebChartElement {
   var lines: js.Array[java.lang.String]
 }
 
+object ASPxClientTitleBase {
+  @scala.inline
+  def apply(
+    alignment: java.lang.String,
+    chart: ASPxClientWebChart,
+    dock: java.lang.String,
+    lines: js.Array[java.lang.String]
+  ): ASPxClientTitleBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alignment")(alignment)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("dock")(dock)
+    __obj.updateDynamic("lines")(lines)
+    __obj.asInstanceOf[ASPxClientTitleBase]
+  }
+}
+

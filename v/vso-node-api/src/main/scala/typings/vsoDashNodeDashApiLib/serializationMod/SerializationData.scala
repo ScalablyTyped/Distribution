@@ -11,3 +11,18 @@ trait SerializationData extends js.Object {
   var responseTypeMetadata: js.UndefOr[ContractMetadata] = js.undefined
 }
 
+object SerializationData {
+  @scala.inline
+  def apply(
+    responseIsCollection: scala.Boolean,
+    requestTypeMetadata: ContractMetadata = null,
+    responseTypeMetadata: ContractMetadata = null
+  ): SerializationData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("responseIsCollection")(responseIsCollection)
+    if (requestTypeMetadata != null) __obj.updateDynamic("requestTypeMetadata")(requestTypeMetadata)
+    if (responseTypeMetadata != null) __obj.updateDynamic("responseTypeMetadata")(responseTypeMetadata)
+    __obj.asInstanceOf[SerializationData]
+  }
+}
+

@@ -1220,6 +1220,22 @@ object Route53ResolverNs extends js.Object {
     var ResolverRule: js.UndefOr[ResolverRule] = js.undefined
   }
   
+  trait _IpAddressStatus extends js.Object
+  
+  trait _ResolverEndpointDirection extends js.Object
+  
+  trait _ResolverEndpointStatus extends js.Object
+  
+  trait _ResolverRuleAssociationStatus extends js.Object
+  
+  trait _ResolverRuleStatus extends js.Object
+  
+  trait _RuleTypeOption extends js.Object
+  
+  trait _ShareStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccountId = java.lang.String
   type Arn = java.lang.String
@@ -1233,26 +1249,26 @@ object Route53ResolverNs extends js.Object {
   type Filters = js.Array[Filter]
   type Ip = java.lang.String
   type IpAddressCount = scala.Double
-  type IpAddressStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.FAILED_CREATION | awsDashSdkLib.awsDashSdkLibStrings.ATTACHING | awsDashSdkLib.awsDashSdkLibStrings.ATTACHED | awsDashSdkLib.awsDashSdkLibStrings.REMAP_DETACHING | awsDashSdkLib.awsDashSdkLibStrings.REMAP_ATTACHING | awsDashSdkLib.awsDashSdkLibStrings.DETACHING | awsDashSdkLib.awsDashSdkLibStrings.FAILED_RESOURCE_GONE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED_FAS_EXPIRED | java.lang.String
+  type IpAddressStatus = _IpAddressStatus | java.lang.String
   type IpAddressesRequest = js.Array[IpAddressRequest]
   type IpAddressesResponse = js.Array[IpAddressResponse]
   type MaxResults = scala.Double
   type Name = java.lang.String
   type NextToken = java.lang.String
   type Port = scala.Double
-  type ResolverEndpointDirection = awsDashSdkLib.awsDashSdkLibStrings.INBOUND | awsDashSdkLib.awsDashSdkLibStrings.OUTBOUND | java.lang.String
-  type ResolverEndpointStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.OPERATIONAL | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.AUTO_RECOVERING | awsDashSdkLib.awsDashSdkLibStrings.ACTION_NEEDED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type ResolverEndpointDirection = _ResolverEndpointDirection | java.lang.String
+  type ResolverEndpointStatus = _ResolverEndpointStatus | java.lang.String
   type ResolverEndpoints = js.Array[ResolverEndpoint]
-  type ResolverRuleAssociationStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.COMPLETE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.OVERRIDDEN | java.lang.String
+  type ResolverRuleAssociationStatus = _ResolverRuleAssociationStatus | java.lang.String
   type ResolverRuleAssociations = js.Array[ResolverRuleAssociation]
   type ResolverRulePolicy = java.lang.String
-  type ResolverRuleStatus = awsDashSdkLib.awsDashSdkLibStrings.COMPLETE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type ResolverRuleStatus = _ResolverRuleStatus | java.lang.String
   type ResolverRules = js.Array[ResolverRule]
   type ResourceId = java.lang.String
   type Rfc3339TimeString = java.lang.String
-  type RuleTypeOption = awsDashSdkLib.awsDashSdkLibStrings.FORWARD | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.RECURSIVE | java.lang.String
+  type RuleTypeOption = _RuleTypeOption | java.lang.String
   type SecurityGroupIds = js.Array[ResourceId]
-  type ShareStatus = awsDashSdkLib.awsDashSdkLibStrings.NOT_SHARED | awsDashSdkLib.awsDashSdkLibStrings.SHARED_WITH_ME | awsDashSdkLib.awsDashSdkLibStrings.SHARED_BY_ME | java.lang.String
+  type ShareStatus = _ShareStatus | java.lang.String
   type StatusMessage = java.lang.String
   type SubnetId = java.lang.String
   type TagKey = java.lang.String
@@ -1260,6 +1276,6 @@ object Route53ResolverNs extends js.Object {
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
   type TargetList = js.Array[TargetAddress]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-04-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

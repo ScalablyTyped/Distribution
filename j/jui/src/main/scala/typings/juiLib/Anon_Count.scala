@@ -25,3 +25,22 @@ trait Anon_Count extends js.Object {
   var tpl: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Count {
+  @scala.inline
+  def apply(
+    count: scala.Int | scala.Double = null,
+    event: js.Any = null,
+    pageCount: scala.Int | scala.Double = null,
+    screenCount: scala.Int | scala.Double = null,
+    tpl: js.Any = null
+  ): Anon_Count = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
+    if (screenCount != null) __obj.updateDynamic("screenCount")(screenCount.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    __obj.asInstanceOf[Anon_Count]
+  }
+}
+

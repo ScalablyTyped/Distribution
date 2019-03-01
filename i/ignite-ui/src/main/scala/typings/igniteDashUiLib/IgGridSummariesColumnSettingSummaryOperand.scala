@@ -53,3 +53,29 @@ trait IgGridSummariesColumnSettingSummaryOperand
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridSummariesColumnSettingSummaryOperand {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridSummariesColumnSettingSummaryOperand
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    order: scala.Int | scala.Double = null,
+    rowDisplayLabel: java.lang.String = null,
+    summaryCalculator: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): IgGridSummariesColumnSettingSummaryOperand = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (rowDisplayLabel != null) __obj.updateDynamic("rowDisplayLabel")(rowDisplayLabel)
+    if (summaryCalculator != null) __obj.updateDynamic("summaryCalculator")(summaryCalculator)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IgGridSummariesColumnSettingSummaryOperand]
+  }
+}
+

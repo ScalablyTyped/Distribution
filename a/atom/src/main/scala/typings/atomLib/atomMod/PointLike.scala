@@ -12,3 +12,13 @@ trait PointLike extends js.Object {
   var row: scala.Double
 }
 
+object PointLike {
+  @scala.inline
+  def apply(column: scala.Double, row: scala.Double): PointLike = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[PointLike]
+  }
+}
+

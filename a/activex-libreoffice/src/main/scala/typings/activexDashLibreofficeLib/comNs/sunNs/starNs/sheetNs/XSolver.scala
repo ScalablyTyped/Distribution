@@ -20,3 +20,36 @@ trait XSolver
   def solve(): scala.Unit
 }
 
+object XSolver {
+  @scala.inline
+  def apply(
+    Constraints: activexDashInteropLib.SafeArray[SolverConstraint],
+    Document: XSpreadsheetDocument,
+    Maximize: scala.Boolean,
+    Objective: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    ResultValue: scala.Double,
+    Solution: activexDashInteropLib.SafeArray[scala.Double],
+    Success: scala.Boolean,
+    Variables: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    solve: js.Function0[scala.Unit]
+  ): XSolver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Constraints")(Constraints)
+    __obj.updateDynamic("Document")(Document)
+    __obj.updateDynamic("Maximize")(Maximize)
+    __obj.updateDynamic("Objective")(Objective)
+    __obj.updateDynamic("ResultValue")(ResultValue)
+    __obj.updateDynamic("Solution")(Solution)
+    __obj.updateDynamic("Success")(Success)
+    __obj.updateDynamic("Variables")(Variables)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("solve")(solve)
+    __obj.asInstanceOf[XSolver]
+  }
+}
+

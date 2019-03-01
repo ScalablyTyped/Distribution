@@ -24,3 +24,20 @@ trait RecordsCount extends js.Object {
   def initOnLoad(): scala.Boolean
 }
 
+object RecordsCount {
+  @scala.inline
+  def apply(
+    attach: js.Function0[scala.Unit],
+    create: js.Function0[dynatableLib.JQuery],
+    init: js.Function0[scala.Unit],
+    initOnLoad: js.Function0[scala.Boolean]
+  ): RecordsCount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attach")(attach)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("initOnLoad")(initOnLoad)
+    __obj.asInstanceOf[RecordsCount]
+  }
+}
+

@@ -60,3 +60,26 @@ trait PivotTableCollectionLoadOptions extends js.Object {
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 
+object PivotTableCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDataValueEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    layout: PivotLayoutLoadOptions = null,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    useCustomSortLists: js.UndefOr[scala.Boolean] = js.undefined,
+    worksheet: WorksheetLoadOptions = null
+  ): PivotTableCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(useCustomSortLists)) __obj.updateDynamic("useCustomSortLists")(useCustomSortLists)
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
+    __obj.asInstanceOf[PivotTableCollectionLoadOptions]
+  }
+}
+

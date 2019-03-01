@@ -12,3 +12,12 @@ trait ArtifactUriQueryResult extends js.Object {
   var artifactUrisQueryResult: org.scalablytyped.runtime.StringDictionary[js.Array[WorkItemReference]]
 }
 
+object ArtifactUriQueryResult {
+  @scala.inline
+  def apply(artifactUrisQueryResult: org.scalablytyped.runtime.StringDictionary[js.Array[WorkItemReference]]): ArtifactUriQueryResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifactUrisQueryResult")(artifactUrisQueryResult)
+    __obj.asInstanceOf[ArtifactUriQueryResult]
+  }
+}
+

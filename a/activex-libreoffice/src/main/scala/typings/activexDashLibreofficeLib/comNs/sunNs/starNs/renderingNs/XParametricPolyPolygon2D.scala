@@ -42,3 +42,31 @@ trait XParametricPolyPolygon2D
   def getPointColor(point: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D): activexDashInteropLib.SafeArray[ColorComponent]
 }
 
+object XParametricPolyPolygon2D {
+  @scala.inline
+  def apply(
+    ColorSpace: XColorSpace,
+    acquire: js.Function0[scala.Unit],
+    getColor: js.Function1[scala.Double, activexDashInteropLib.SafeArray[ColorComponent]],
+    getColorSpace: js.Function0[XColorSpace],
+    getOutline: js.Function1[scala.Double, XPolyPolygon2D],
+    getPointColor: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D, 
+      activexDashInteropLib.SafeArray[ColorComponent]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XParametricPolyPolygon2D = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColorSpace")(ColorSpace)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getColor")(getColor)
+    __obj.updateDynamic("getColorSpace")(getColorSpace)
+    __obj.updateDynamic("getOutline")(getOutline)
+    __obj.updateDynamic("getPointColor")(getPointColor)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XParametricPolyPolygon2D]
+  }
+}
+

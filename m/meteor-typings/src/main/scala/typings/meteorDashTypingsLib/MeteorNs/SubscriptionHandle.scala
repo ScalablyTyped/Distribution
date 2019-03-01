@@ -12,3 +12,13 @@ trait SubscriptionHandle extends js.Object {
   def stop(): scala.Unit
 }
 
+object SubscriptionHandle {
+  @scala.inline
+  def apply(ready: js.Function0[scala.Boolean], stop: js.Function0[scala.Unit]): SubscriptionHandle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ready")(ready)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[SubscriptionHandle]
+  }
+}
+

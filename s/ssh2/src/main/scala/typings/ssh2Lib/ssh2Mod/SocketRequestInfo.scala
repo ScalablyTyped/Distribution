@@ -10,3 +10,12 @@ trait SocketRequestInfo extends js.Object {
   var socketPath: java.lang.String
 }
 
+object SocketRequestInfo {
+  @scala.inline
+  def apply(socketPath: java.lang.String): SocketRequestInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("socketPath")(socketPath)
+    __obj.asInstanceOf[SocketRequestInfo]
+  }
+}
+

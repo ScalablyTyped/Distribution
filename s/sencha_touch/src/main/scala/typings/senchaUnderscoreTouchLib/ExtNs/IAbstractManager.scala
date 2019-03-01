@@ -67,3 +67,71 @@ trait IAbstractManager extends IBase {
   var unregister: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
 }
 
+object IAbstractManager {
+  @scala.inline
+  def apply(
+    alias: Array = null,
+    all: senchaUnderscoreTouchLib.ExtNs.utilNs.IHashMap = null,
+    alternateClassName: js.Any = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    create: js.Function2[/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String], _] = null,
+    destroy: js.Function0[scala.Unit] = null,
+    each: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    extend: java.lang.String = null,
+    get: js.Function1[/* id */ js.UndefOr[java.lang.String], _] = null,
+    getCount: js.Function0[scala.Double] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    isRegistered: js.Function1[/* type */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    mixins: js.Any = null,
+    onAvailable: js.Function3[
+      /* id */ js.UndefOr[java.lang.String], 
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    platformConfig: js.Any = null,
+    register: js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit] = null,
+    registerType: js.Function2[/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any], scala.Unit] = null,
+    self: IClass = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    unregister: js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit] = null,
+    uses: Array = null
+  ): IAbstractManager = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (all != null) __obj.updateDynamic("all")(all)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (each != null) __obj.updateDynamic("each")(each)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (getCount != null) __obj.updateDynamic("getCount")(getCount)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (isRegistered != null) __obj.updateDynamic("isRegistered")(isRegistered)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (onAvailable != null) __obj.updateDynamic("onAvailable")(onAvailable)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (register != null) __obj.updateDynamic("register")(register)
+    if (registerType != null) __obj.updateDynamic("registerType")(registerType)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (unregister != null) __obj.updateDynamic("unregister")(unregister)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IAbstractManager]
+  }
+}
+

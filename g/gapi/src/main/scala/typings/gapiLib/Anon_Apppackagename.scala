@@ -36,3 +36,26 @@ trait Anon_Apppackagename extends js.Object {
   var scope: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Apppackagename {
+  @scala.inline
+  def apply(
+    apppackagename: java.lang.String = null,
+    callback: js.Function0[scala.Unit] = null,
+    clientid: java.lang.String = null,
+    cookiepolicy: java.lang.String = null,
+    includegrantedscopes: js.UndefOr[scala.Boolean] = js.undefined,
+    requestvisibleactions: js.Any = null,
+    scope: js.Any = null
+  ): Anon_Apppackagename = {
+    val __obj = js.Dynamic.literal()
+    if (apppackagename != null) __obj.updateDynamic("apppackagename")(apppackagename)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (clientid != null) __obj.updateDynamic("clientid")(clientid)
+    if (cookiepolicy != null) __obj.updateDynamic("cookiepolicy")(cookiepolicy)
+    if (!js.isUndefined(includegrantedscopes)) __obj.updateDynamic("includegrantedscopes")(includegrantedscopes)
+    if (requestvisibleactions != null) __obj.updateDynamic("requestvisibleactions")(requestvisibleactions)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Anon_Apppackagename]
+  }
+}
+

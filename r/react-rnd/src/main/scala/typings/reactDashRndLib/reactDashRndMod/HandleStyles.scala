@@ -16,3 +16,28 @@ trait HandleStyles extends js.Object {
   var topRight: js.UndefOr[reactDashRndLib.CSSProperties] = js.undefined
 }
 
+object HandleStyles {
+  @scala.inline
+  def apply(
+    bottom: reactDashRndLib.CSSProperties = null,
+    bottomLeft: reactDashRndLib.CSSProperties = null,
+    bottomRight: reactDashRndLib.CSSProperties = null,
+    left: reactDashRndLib.CSSProperties = null,
+    right: reactDashRndLib.CSSProperties = null,
+    top: reactDashRndLib.CSSProperties = null,
+    topLeft: reactDashRndLib.CSSProperties = null,
+    topRight: reactDashRndLib.CSSProperties = null
+  ): HandleStyles = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
+    if (bottomLeft != null) __obj.updateDynamic("bottomLeft")(bottomLeft)
+    if (bottomRight != null) __obj.updateDynamic("bottomRight")(bottomRight)
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (right != null) __obj.updateDynamic("right")(right)
+    if (top != null) __obj.updateDynamic("top")(top)
+    if (topLeft != null) __obj.updateDynamic("topLeft")(topLeft)
+    if (topRight != null) __obj.updateDynamic("topRight")(topRight)
+    __obj.asInstanceOf[HandleStyles]
+  }
+}
+

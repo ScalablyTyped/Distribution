@@ -47,3 +47,42 @@ trait DisplayMarkerChanged extends js.Object {
   var wasValid: scala.Boolean
 }
 
+object DisplayMarkerChanged {
+  @scala.inline
+  def apply(
+    hadTail: scala.Boolean,
+    hasTail: scala.Boolean,
+    isValid: scala.Boolean,
+    newHeadBufferPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    newHeadScreenPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    newProperties: js.Object,
+    newTailBufferPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    newTailScreenPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldHeadBufferPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldHeadScreenPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldProperties: js.Object,
+    oldTailBufferPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    oldTailScreenPosition: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Point,
+    textChanged: scala.Boolean,
+    wasValid: scala.Boolean
+  ): DisplayMarkerChanged = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hadTail")(hadTail)
+    __obj.updateDynamic("hasTail")(hasTail)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("newHeadBufferPosition")(newHeadBufferPosition)
+    __obj.updateDynamic("newHeadScreenPosition")(newHeadScreenPosition)
+    __obj.updateDynamic("newProperties")(newProperties)
+    __obj.updateDynamic("newTailBufferPosition")(newTailBufferPosition)
+    __obj.updateDynamic("newTailScreenPosition")(newTailScreenPosition)
+    __obj.updateDynamic("oldHeadBufferPosition")(oldHeadBufferPosition)
+    __obj.updateDynamic("oldHeadScreenPosition")(oldHeadScreenPosition)
+    __obj.updateDynamic("oldProperties")(oldProperties)
+    __obj.updateDynamic("oldTailBufferPosition")(oldTailBufferPosition)
+    __obj.updateDynamic("oldTailScreenPosition")(oldTailScreenPosition)
+    __obj.updateDynamic("textChanged")(textChanged)
+    __obj.updateDynamic("wasValid")(wasValid)
+    __obj.asInstanceOf[DisplayMarkerChanged]
+  }
+}
+

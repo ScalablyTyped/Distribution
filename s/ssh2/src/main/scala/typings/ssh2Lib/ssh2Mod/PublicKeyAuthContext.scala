@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait PublicKeyAuthContext extends AuthContextBase {
+trait PublicKeyAuthContext
+  extends AuthContextBase
+     with AuthContext {
   /** The data used to verify the key, or `undefined` if the client is only checking the validity of the key. */
   var blob: nodeLib.Buffer = js.native
   /** The public key sent by the client. */

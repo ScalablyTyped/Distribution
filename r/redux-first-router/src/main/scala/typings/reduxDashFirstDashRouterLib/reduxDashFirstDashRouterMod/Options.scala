@@ -122,3 +122,64 @@ trait Options[TKeys, TState] extends js.Object {
   var title: js.UndefOr[java.lang.String | SelectTitleState[TState]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[TKeys, TState](
+    basename: java.lang.String = null,
+    createHistory: js.Function0[historyLib.historyMod.History[historyLib.historyMod.LocationState]] = null,
+    displayConfirmLeave: DisplayConfirmLeave = null,
+    extra: js.Any = null,
+    initialDispatch: js.UndefOr[scala.Boolean] = js.undefined,
+    initialEntries: HistoryEntries = null,
+    location: java.lang.String | (SelectLocationState[TKeys, TState]) = null,
+    navigators: NavigatorsConfig[TKeys, TState] = null,
+    notFoundPath: java.lang.String = null,
+    onAfterChange: js.Function3[
+      /* dispatch */ reduxLib.reduxMod.Dispatch[_], 
+      /* getState */ StateGetter[TState], 
+      /* bag */ Bag, 
+      scala.Unit
+    ] = null,
+    onBackNext: js.Function3[
+      /* dispatch */ reduxLib.reduxMod.Dispatch[_], 
+      /* getState */ StateGetter[TState], 
+      /* bag */ Bag, 
+      scala.Unit
+    ] = null,
+    onBeforeChange: js.Function3[
+      /* dispatch */ reduxLib.reduxMod.Dispatch[_], 
+      /* getState */ StateGetter[TState], 
+      /* bag */ Bag, 
+      scala.Unit
+    ] = null,
+    querySerializer: QuerySerializer = null,
+    restoreScroll: js.Function1[
+      /* history */ historyLib.historyMod.History[historyLib.historyMod.LocationState], 
+      ScrollBehavior
+    ] = null,
+    scrollTop: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String | SelectTitleState[TState] = null
+  ): Options[TKeys, TState] = {
+    val __obj = js.Dynamic.literal()
+    if (basename != null) __obj.updateDynamic("basename")(basename)
+    if (createHistory != null) __obj.updateDynamic("createHistory")(createHistory)
+    if (displayConfirmLeave != null) __obj.updateDynamic("displayConfirmLeave")(displayConfirmLeave)
+    if (extra != null) __obj.updateDynamic("extra")(extra)
+    if (!js.isUndefined(initialDispatch)) __obj.updateDynamic("initialDispatch")(initialDispatch)
+    if (initialEntries != null) __obj.updateDynamic("initialEntries")(initialEntries)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (navigators != null) __obj.updateDynamic("navigators")(navigators)
+    if (notFoundPath != null) __obj.updateDynamic("notFoundPath")(notFoundPath)
+    if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(onAfterChange)
+    if (onBackNext != null) __obj.updateDynamic("onBackNext")(onBackNext)
+    if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(onBeforeChange)
+    if (querySerializer != null) __obj.updateDynamic("querySerializer")(querySerializer)
+    if (restoreScroll != null) __obj.updateDynamic("restoreScroll")(restoreScroll)
+    if (!js.isUndefined(scrollTop)) __obj.updateDynamic("scrollTop")(scrollTop)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options[TKeys, TState]]
+  }
+}
+

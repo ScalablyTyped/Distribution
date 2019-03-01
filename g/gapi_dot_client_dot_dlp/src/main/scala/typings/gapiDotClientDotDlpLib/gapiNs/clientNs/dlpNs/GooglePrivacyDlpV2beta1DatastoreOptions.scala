@@ -20,3 +20,18 @@ trait GooglePrivacyDlpV2beta1DatastoreOptions extends js.Object {
   var projection: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1Projection]] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1DatastoreOptions {
+  @scala.inline
+  def apply(
+    kind: GooglePrivacyDlpV2beta1KindExpression = null,
+    partitionId: GooglePrivacyDlpV2beta1PartitionId = null,
+    projection: js.Array[GooglePrivacyDlpV2beta1Projection] = null
+  ): GooglePrivacyDlpV2beta1DatastoreOptions = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (partitionId != null) __obj.updateDynamic("partitionId")(partitionId)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1DatastoreOptions]
+  }
+}
+

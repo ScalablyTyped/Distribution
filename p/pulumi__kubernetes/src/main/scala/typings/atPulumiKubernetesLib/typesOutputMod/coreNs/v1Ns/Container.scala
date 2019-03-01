@@ -147,3 +147,54 @@ trait Container extends js.Object {
   val workingDir: java.lang.String
 }
 
+object Container {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String],
+    command: js.Array[java.lang.String],
+    env: js.Array[EnvVar],
+    envFrom: js.Array[EnvFromSource],
+    image: java.lang.String,
+    imagePullPolicy: java.lang.String,
+    lifecycle: Lifecycle,
+    livenessProbe: Probe,
+    name: java.lang.String,
+    ports: js.Array[ContainerPort],
+    readinessProbe: Probe,
+    resources: ResourceRequirements,
+    securityContext: SecurityContext,
+    stdin: scala.Boolean,
+    stdinOnce: scala.Boolean,
+    terminationMessagePath: java.lang.String,
+    terminationMessagePolicy: java.lang.String,
+    tty: scala.Boolean,
+    volumeDevices: js.Array[VolumeDevice],
+    volumeMounts: js.Array[VolumeMount],
+    workingDir: java.lang.String
+  ): Container = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("envFrom")(envFrom)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("imagePullPolicy")(imagePullPolicy)
+    __obj.updateDynamic("lifecycle")(lifecycle)
+    __obj.updateDynamic("livenessProbe")(livenessProbe)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("ports")(ports)
+    __obj.updateDynamic("readinessProbe")(readinessProbe)
+    __obj.updateDynamic("resources")(resources)
+    __obj.updateDynamic("securityContext")(securityContext)
+    __obj.updateDynamic("stdin")(stdin)
+    __obj.updateDynamic("stdinOnce")(stdinOnce)
+    __obj.updateDynamic("terminationMessagePath")(terminationMessagePath)
+    __obj.updateDynamic("terminationMessagePolicy")(terminationMessagePolicy)
+    __obj.updateDynamic("tty")(tty)
+    __obj.updateDynamic("volumeDevices")(volumeDevices)
+    __obj.updateDynamic("volumeMounts")(volumeMounts)
+    __obj.updateDynamic("workingDir")(workingDir)
+    __obj.asInstanceOf[Container]
+  }
+}
+

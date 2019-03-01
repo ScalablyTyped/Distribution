@@ -25,3 +25,26 @@ trait GeolocationRequest extends js.Object {
   var wifiAccessPoints: js.UndefOr[js.Array[WifiAccessPoint]] = js.undefined
 }
 
+object GeolocationRequest {
+  @scala.inline
+  def apply(
+    carrier: java.lang.String = null,
+    cellTowers: js.Array[CellTower] = null,
+    considerIp: js.UndefOr[scala.Boolean] = js.undefined,
+    homeMobileCountryCode: scala.Int | scala.Double = null,
+    homeMobileNetworkCode: scala.Int | scala.Double = null,
+    radioType: RadioType = null,
+    wifiAccessPoints: js.Array[WifiAccessPoint] = null
+  ): GeolocationRequest = {
+    val __obj = js.Dynamic.literal()
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
+    if (cellTowers != null) __obj.updateDynamic("cellTowers")(cellTowers)
+    if (!js.isUndefined(considerIp)) __obj.updateDynamic("considerIp")(considerIp)
+    if (homeMobileCountryCode != null) __obj.updateDynamic("homeMobileCountryCode")(homeMobileCountryCode.asInstanceOf[js.Any])
+    if (homeMobileNetworkCode != null) __obj.updateDynamic("homeMobileNetworkCode")(homeMobileNetworkCode.asInstanceOf[js.Any])
+    if (radioType != null) __obj.updateDynamic("radioType")(radioType)
+    if (wifiAccessPoints != null) __obj.updateDynamic("wifiAccessPoints")(wifiAccessPoints)
+    __obj.asInstanceOf[GeolocationRequest]
+  }
+}
+

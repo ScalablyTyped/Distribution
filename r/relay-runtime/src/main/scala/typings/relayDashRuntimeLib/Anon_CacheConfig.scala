@@ -13,3 +13,22 @@ trait Anon_CacheConfig[TPayload, TNode, TOperation] extends js.Object {
   var operation: relayDashRuntimeLib.relayDashRuntimeMod.COperationSelector[TNode, TOperation]
 }
 
+object Anon_CacheConfig {
+  @scala.inline
+  def apply[TPayload, TNode, TOperation](
+    operation: relayDashRuntimeLib.relayDashRuntimeMod.COperationSelector[TNode, TOperation],
+    cacheConfig: relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig = null,
+    onCompleted: js.Function0[scala.Unit] = null,
+    onError: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
+    onNext: js.Function1[/* payload */ TPayload, scala.Unit] = null
+  ): Anon_CacheConfig[TPayload, TNode, TOperation] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("operation")(operation)
+    if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig)
+    if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onNext != null) __obj.updateDynamic("onNext")(onNext)
+    __obj.asInstanceOf[Anon_CacheConfig[TPayload, TNode, TOperation]]
+  }
+}
+

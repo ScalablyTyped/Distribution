@@ -9,3 +9,12 @@ trait Anon_Encode extends js.Object {
   var encode: java.lang.String
 }
 
+object Anon_Encode {
+  @scala.inline
+  def apply(encode: java.lang.String): Anon_Encode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encode")(encode)
+    __obj.asInstanceOf[Anon_Encode]
+  }
+}
+

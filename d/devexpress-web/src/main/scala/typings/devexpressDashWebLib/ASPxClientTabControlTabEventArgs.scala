@@ -16,3 +16,12 @@ trait ASPxClientTabControlTabEventArgs extends ASPxClientEventArgs {
   var tab: ASPxClientTab
 }
 
+object ASPxClientTabControlTabEventArgs {
+  @scala.inline
+  def apply(tab: ASPxClientTab): ASPxClientTabControlTabEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tab")(tab)
+    __obj.asInstanceOf[ASPxClientTabControlTabEventArgs]
+  }
+}
+

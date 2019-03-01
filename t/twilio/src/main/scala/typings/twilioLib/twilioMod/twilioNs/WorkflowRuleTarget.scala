@@ -12,3 +12,20 @@ trait WorkflowRuleTarget extends js.Object {
   var timeout: scala.Double
 }
 
+object WorkflowRuleTarget {
+  @scala.inline
+  def apply(
+    expression: java.lang.String,
+    priority: scala.Double,
+    queue: java.lang.String,
+    timeout: scala.Double
+  ): WorkflowRuleTarget = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expression")(expression)
+    __obj.updateDynamic("priority")(priority)
+    __obj.updateDynamic("queue")(queue)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[WorkflowRuleTarget]
+  }
+}
+

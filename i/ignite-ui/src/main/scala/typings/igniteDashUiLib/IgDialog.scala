@@ -274,3 +274,113 @@ trait IgDialog
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgDialog {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igDialog
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animationEnded: AnimationEndedEvent = null,
+    blur: BlurEvent = null,
+    closeAnimation: js.Any = null,
+    closeButtonTitle: java.lang.String = null,
+    closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
+    container: js.Any = null,
+    dialogClass: java.lang.String = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDblclick: js.Any = null,
+    enableHeaderFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: IgFocusEvent = null,
+    footerText: java.lang.String = null,
+    headerText: java.lang.String = null,
+    height: scala.Double | java.lang.String = null,
+    imageClass: java.lang.String = null,
+    language: java.lang.String = null,
+    locale: IgDialogLocale = null,
+    mainElement: stdLib.Element = null,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    maximizeButtonTitle: java.lang.String = null,
+    minHeight: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    minimizeButtonTitle: java.lang.String = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    openAnimation: js.Any = null,
+    pinButtonTitle: java.lang.String = null,
+    pinOnMinimized: js.UndefOr[scala.Boolean] = js.undefined,
+    pinned: js.UndefOr[scala.Boolean] = js.undefined,
+    position: js.Any = null,
+    regional: java.lang.String | js.Object = null,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    restoreButtonTitle: java.lang.String = null,
+    showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    showMaximizeButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showMinimizeButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showPinButton: js.UndefOr[scala.Boolean] = js.undefined,
+    state: java.lang.String = null,
+    stateChanged: StateChangedEvent = null,
+    stateChanging: StateChangingEvent = null,
+    tabIndex: scala.Int | scala.Double = null,
+    temporaryUrl: java.lang.String = null,
+    trackFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    unpinButtonTitle: java.lang.String = null,
+    width: scala.Double | java.lang.String = null,
+    zIndex: scala.Int | scala.Double = null
+  ): IgDialog = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (animationEnded != null) __obj.updateDynamic("animationEnded")(animationEnded)
+    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (closeAnimation != null) __obj.updateDynamic("closeAnimation")(closeAnimation)
+    if (closeButtonTitle != null) __obj.updateDynamic("closeButtonTitle")(closeButtonTitle)
+    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (dialogClass != null) __obj.updateDynamic("dialogClass")(dialogClass)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (enableDblclick != null) __obj.updateDynamic("enableDblclick")(enableDblclick)
+    if (!js.isUndefined(enableHeaderFocus)) __obj.updateDynamic("enableHeaderFocus")(enableHeaderFocus)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (footerText != null) __obj.updateDynamic("footerText")(footerText)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mainElement != null) __obj.updateDynamic("mainElement")(mainElement)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (maximizeButtonTitle != null) __obj.updateDynamic("maximizeButtonTitle")(maximizeButtonTitle)
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (minimizeButtonTitle != null) __obj.updateDynamic("minimizeButtonTitle")(minimizeButtonTitle)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (openAnimation != null) __obj.updateDynamic("openAnimation")(openAnimation)
+    if (pinButtonTitle != null) __obj.updateDynamic("pinButtonTitle")(pinButtonTitle)
+    if (!js.isUndefined(pinOnMinimized)) __obj.updateDynamic("pinOnMinimized")(pinOnMinimized)
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (restoreButtonTitle != null) __obj.updateDynamic("restoreButtonTitle")(restoreButtonTitle)
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
+    if (!js.isUndefined(showMaximizeButton)) __obj.updateDynamic("showMaximizeButton")(showMaximizeButton)
+    if (!js.isUndefined(showMinimizeButton)) __obj.updateDynamic("showMinimizeButton")(showMinimizeButton)
+    if (!js.isUndefined(showPinButton)) __obj.updateDynamic("showPinButton")(showPinButton)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (stateChanged != null) __obj.updateDynamic("stateChanged")(stateChanged)
+    if (stateChanging != null) __obj.updateDynamic("stateChanging")(stateChanging)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (temporaryUrl != null) __obj.updateDynamic("temporaryUrl")(temporaryUrl)
+    if (!js.isUndefined(trackFocus)) __obj.updateDynamic("trackFocus")(trackFocus)
+    if (unpinButtonTitle != null) __obj.updateDynamic("unpinButtonTitle")(unpinButtonTitle)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgDialog]
+  }
+}
+

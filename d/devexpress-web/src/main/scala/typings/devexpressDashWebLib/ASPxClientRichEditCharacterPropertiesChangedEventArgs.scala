@@ -21,3 +21,13 @@ trait ASPxClientRichEditCharacterPropertiesChangedEventArgs extends ASPxClientEv
   var subDocumentId: scala.Double
 }
 
+object ASPxClientRichEditCharacterPropertiesChangedEventArgs {
+  @scala.inline
+  def apply(interval: Interval, subDocumentId: scala.Double): ASPxClientRichEditCharacterPropertiesChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("subDocumentId")(subDocumentId)
+    __obj.asInstanceOf[ASPxClientRichEditCharacterPropertiesChangedEventArgs]
+  }
+}
+

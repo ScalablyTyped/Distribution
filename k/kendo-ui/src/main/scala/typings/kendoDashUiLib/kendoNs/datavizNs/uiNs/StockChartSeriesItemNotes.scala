@@ -12,3 +12,20 @@ trait StockChartSeriesItemNotes extends js.Object {
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StockChartSeriesItemNotes {
+  @scala.inline
+  def apply(
+    icon: StockChartSeriesItemNotesIcon = null,
+    label: StockChartSeriesItemNotesLabel = null,
+    line: StockChartSeriesItemNotesLine = null,
+    position: java.lang.String = null
+  ): StockChartSeriesItemNotes = {
+    val __obj = js.Dynamic.literal()
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[StockChartSeriesItemNotes]
+  }
+}
+

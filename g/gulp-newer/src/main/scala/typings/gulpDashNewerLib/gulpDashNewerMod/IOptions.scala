@@ -20,3 +20,18 @@ trait IOptions extends js.Object {
   var map: js.UndefOr[js.Function1[/* relativePath */ java.lang.String, java.lang.String]] = js.undefined
 }
 
+object IOptions {
+  @scala.inline
+  def apply(
+    dest: java.lang.String,
+    ext: java.lang.String = null,
+    map: js.Function1[/* relativePath */ java.lang.String, java.lang.String] = null
+  ): IOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dest")(dest)
+    if (ext != null) __obj.updateDynamic("ext")(ext)
+    if (map != null) __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

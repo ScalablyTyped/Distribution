@@ -13,3 +13,22 @@ trait CardActionsProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object CardActionsProps {
+  @scala.inline
+  def apply(
+    actAsExpander: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    expandable: js.UndefOr[scala.Boolean] = js.undefined,
+    showExpandableButton: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): CardActionsProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
+    if (!js.isUndefined(showExpandableButton)) __obj.updateDynamic("showExpandableButton")(showExpandableButton)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[CardActionsProps]
+  }
+}
+

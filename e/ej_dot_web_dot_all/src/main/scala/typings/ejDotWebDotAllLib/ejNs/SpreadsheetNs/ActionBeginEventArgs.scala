@@ -38,3 +38,32 @@ trait ActionBeginEventArgs extends js.Object {
   var sortDirection: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActionBeginEventArgs {
+  @scala.inline
+  def apply(
+    afterFormat: js.Any = null,
+    beforeFormat: js.Any = null,
+    colSelected: scala.Int | scala.Double = null,
+    columnName: java.lang.String = null,
+    gotoIdx: scala.Int | scala.Double = null,
+    newSheet: js.UndefOr[scala.Boolean] = js.undefined,
+    range: js.Array[_] = null,
+    reqType: java.lang.String = null,
+    sheetIdx: scala.Int | scala.Double = null,
+    sortDirection: java.lang.String = null
+  ): ActionBeginEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (afterFormat != null) __obj.updateDynamic("afterFormat")(afterFormat)
+    if (beforeFormat != null) __obj.updateDynamic("beforeFormat")(beforeFormat)
+    if (colSelected != null) __obj.updateDynamic("colSelected")(colSelected.asInstanceOf[js.Any])
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (gotoIdx != null) __obj.updateDynamic("gotoIdx")(gotoIdx.asInstanceOf[js.Any])
+    if (!js.isUndefined(newSheet)) __obj.updateDynamic("newSheet")(newSheet)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (reqType != null) __obj.updateDynamic("reqType")(reqType)
+    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection)
+    __obj.asInstanceOf[ActionBeginEventArgs]
+  }
+}
+

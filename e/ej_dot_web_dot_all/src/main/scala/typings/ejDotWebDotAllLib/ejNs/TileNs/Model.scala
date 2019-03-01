@@ -74,3 +74,48 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    allowSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundColor: java.lang.String = null,
+    badge: Badge = null,
+    caption: Caption = null,
+    cssClass: java.lang.String = null,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    height: java.lang.String | scala.Double = null,
+    imageClass: java.lang.String = null,
+    imagePosition: ImagePosition | java.lang.String = null,
+    imageTemplateId: java.lang.String = null,
+    imageUrl: java.lang.String = null,
+    liveTile: LiveTile = null,
+    locale: java.lang.String = null,
+    mouseDown: js.Function1[/* e */ MouseDownEventArgs, scala.Unit] = null,
+    mouseUp: js.Function1[/* e */ MouseUpEventArgs, scala.Unit] = null,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    tileSize: TileSize | java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
+    if (imagePosition != null) __obj.updateDynamic("imagePosition")(imagePosition.asInstanceOf[js.Any])
+    if (imageTemplateId != null) __obj.updateDynamic("imageTemplateId")(imageTemplateId)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (liveTile != null) __obj.updateDynamic("liveTile")(liveTile)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown)
+    if (mouseUp != null) __obj.updateDynamic("mouseUp")(mouseUp)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

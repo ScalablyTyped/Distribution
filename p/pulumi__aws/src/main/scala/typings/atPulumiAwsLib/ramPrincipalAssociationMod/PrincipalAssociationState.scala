@@ -16,3 +16,16 @@ trait PrincipalAssociationState extends js.Object {
   val resourceShareArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object PrincipalAssociationState {
+  @scala.inline
+  def apply(
+    principal: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    resourceShareArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): PrincipalAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
+    if (resourceShareArn != null) __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrincipalAssociationState]
+  }
+}
+

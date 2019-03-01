@@ -10,3 +10,13 @@ trait TokenProvider extends js.Object {
   var enableCache: scala.Boolean
 }
 
+object TokenProvider {
+  @scala.inline
+  def apply(enableCache: scala.Boolean, cacheTTLInSeconds: scala.Int | scala.Double = null): TokenProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enableCache")(enableCache)
+    if (cacheTTLInSeconds != null) __obj.updateDynamic("cacheTTLInSeconds")(cacheTTLInSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TokenProvider]
+  }
+}
+

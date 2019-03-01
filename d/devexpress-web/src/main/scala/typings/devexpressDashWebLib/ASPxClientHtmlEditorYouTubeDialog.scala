@@ -31,3 +31,44 @@ trait ASPxClientHtmlEditorYouTubeDialog extends ASPxClientHtmlEditorEditElementD
   def GetShowVideoNameCheckBox(): ASPxClientCheckBox
 }
 
+object ASPxClientHtmlEditorYouTubeDialog {
+  @scala.inline
+  def apply(
+    GetAllowFullscreenCheckBox: js.Function0[ASPxClientCheckBox],
+    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
+    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetConfidentModeCheckBox: js.Function0[ASPxClientCheckBox],
+    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetShowPlayerControlsCheckBox: js.Function0[ASPxClientCheckBox],
+    GetShowSameVideosCheckBox: js.Function0[ASPxClientCheckBox],
+    GetShowVideoNameCheckBox: js.Function0[ASPxClientCheckBox],
+    GetTopMarginTextBox: js.Function0[ASPxClientTextBox]
+  ): ASPxClientHtmlEditorYouTubeDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetAllowFullscreenCheckBox")(GetAllowFullscreenCheckBox)
+    __obj.updateDynamic("GetBorderColorColorEdit")(GetBorderColorColorEdit)
+    __obj.updateDynamic("GetBorderStyleComboBox")(GetBorderStyleComboBox)
+    __obj.updateDynamic("GetBorderWidthSpinEdit")(GetBorderWidthSpinEdit)
+    __obj.updateDynamic("GetBottomMarginTextBox")(GetBottomMarginTextBox)
+    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
+    __obj.updateDynamic("GetConfidentModeCheckBox")(GetConfidentModeCheckBox)
+    __obj.updateDynamic("GetCssClassNameComboBox")(GetCssClassNameComboBox)
+    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
+    __obj.updateDynamic("GetLeftMarginTextBox")(GetLeftMarginTextBox)
+    __obj.updateDynamic("GetOkButton")(GetOkButton)
+    __obj.updateDynamic("GetRightMarginTextBox")(GetRightMarginTextBox)
+    __obj.updateDynamic("GetShowPlayerControlsCheckBox")(GetShowPlayerControlsCheckBox)
+    __obj.updateDynamic("GetShowSameVideosCheckBox")(GetShowSameVideosCheckBox)
+    __obj.updateDynamic("GetShowVideoNameCheckBox")(GetShowVideoNameCheckBox)
+    __obj.updateDynamic("GetTopMarginTextBox")(GetTopMarginTextBox)
+    __obj.asInstanceOf[ASPxClientHtmlEditorYouTubeDialog]
+  }
+}
+

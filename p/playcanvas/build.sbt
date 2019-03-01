@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "playcanvas"
-version := "0.221-dt-20181017Z-e6c9ee"
+version := "0.221-dt-20181017Z-f62140"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "webvr-api" % "0.0-unknown-dt-20180911Z-24a82b")
+  "org.scalablytyped" %%% "std" % "3.3-6e4388",
+  "org.scalablytyped" %%% "webvr-api" % "0.0-unknown-dt-20180911Z-a8fa92")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

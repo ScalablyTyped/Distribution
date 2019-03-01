@@ -61,3 +61,34 @@ trait User extends js.Object {
   var publicProfile: js.UndefOr[PublicProfile] = js.undefined
 }
 
+object User {
+  @scala.inline
+  def apply(
+    availableAdwordsManagerAccounts: js.Array[AdWordsManagerAccountInfo] = null,
+    certificationStatus: js.Array[Certification] = null,
+    company: CompanyRelation = null,
+    companyVerificationEmail: java.lang.String = null,
+    examStatus: js.Array[ExamStatus] = null,
+    id: java.lang.String = null,
+    internalId: java.lang.String = null,
+    lastAccessTime: java.lang.String = null,
+    primaryEmails: js.Array[java.lang.String] = null,
+    profile: UserProfile = null,
+    publicProfile: PublicProfile = null
+  ): User = {
+    val __obj = js.Dynamic.literal()
+    if (availableAdwordsManagerAccounts != null) __obj.updateDynamic("availableAdwordsManagerAccounts")(availableAdwordsManagerAccounts)
+    if (certificationStatus != null) __obj.updateDynamic("certificationStatus")(certificationStatus)
+    if (company != null) __obj.updateDynamic("company")(company)
+    if (companyVerificationEmail != null) __obj.updateDynamic("companyVerificationEmail")(companyVerificationEmail)
+    if (examStatus != null) __obj.updateDynamic("examStatus")(examStatus)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (internalId != null) __obj.updateDynamic("internalId")(internalId)
+    if (lastAccessTime != null) __obj.updateDynamic("lastAccessTime")(lastAccessTime)
+    if (primaryEmails != null) __obj.updateDynamic("primaryEmails")(primaryEmails)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    if (publicProfile != null) __obj.updateDynamic("publicProfile")(publicProfile)
+    __obj.asInstanceOf[User]
+  }
+}
+

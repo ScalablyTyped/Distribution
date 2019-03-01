@@ -82,3 +82,20 @@ trait IEntity extends js.Object {
   def toXML(): sxmlLib.sxmlMod.XML
 }
 
+object IEntity {
+  @scala.inline
+  def apply(
+    TAG: js.Function0[java.lang.String],
+    construct: js.Function1[sxmlLib.sxmlMod.XML, scala.Unit],
+    key: js.Function0[js.Any],
+    toXML: js.Function0[sxmlLib.sxmlMod.XML]
+  ): IEntity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TAG")(TAG)
+    __obj.updateDynamic("construct")(construct)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("toXML")(toXML)
+    __obj.asInstanceOf[IEntity]
+  }
+}
+

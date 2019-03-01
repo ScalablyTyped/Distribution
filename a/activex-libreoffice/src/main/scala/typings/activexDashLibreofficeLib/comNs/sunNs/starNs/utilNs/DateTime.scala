@@ -28,3 +28,28 @@ trait DateTime extends js.Object {
   var Year: scala.Double
 }
 
+object DateTime {
+  @scala.inline
+  def apply(
+    Day: scala.Double,
+    Hours: scala.Double,
+    IsUTC: scala.Boolean,
+    Minutes: scala.Double,
+    Month: scala.Double,
+    NanoSeconds: scala.Double,
+    Seconds: scala.Double,
+    Year: scala.Double
+  ): DateTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Day")(Day)
+    __obj.updateDynamic("Hours")(Hours)
+    __obj.updateDynamic("IsUTC")(IsUTC)
+    __obj.updateDynamic("Minutes")(Minutes)
+    __obj.updateDynamic("Month")(Month)
+    __obj.updateDynamic("NanoSeconds")(NanoSeconds)
+    __obj.updateDynamic("Seconds")(Seconds)
+    __obj.updateDynamic("Year")(Year)
+    __obj.asInstanceOf[DateTime]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_Async extends js.Object {
   var when: Anon_EAGER
 }
 
+object Anon_Async {
+  @scala.inline
+  def apply(async: Anon_NOWAIT, when: Anon_EAGER): Anon_Async = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("async")(async)
+    __obj.updateDynamic("when")(when)
+    __obj.asInstanceOf[Anon_Async]
+  }
+}
+

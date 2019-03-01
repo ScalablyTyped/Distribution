@@ -37,3 +37,20 @@ trait Relation extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Relation {
+  @scala.inline
+  def apply(
+    formattedType: java.lang.String = null,
+    metadata: FieldMetadata = null,
+    person: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Relation = {
+    val __obj = js.Dynamic.literal()
+    if (formattedType != null) __obj.updateDynamic("formattedType")(formattedType)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (person != null) __obj.updateDynamic("person")(person)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Relation]
+  }
+}
+

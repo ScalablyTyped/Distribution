@@ -236,3 +236,108 @@ trait AmLegend extends js.Object {
   def removeListener(chart: amchartsLib.amchartMod.default, `type`: java.lang.String, handler: js.Any): scala.Unit
 }
 
+object AmLegend {
+  @scala.inline
+  def apply(
+    addListener: js.Function2[
+      java.lang.String, 
+      js.Function1[/* e */ amchartsLib.Anon_ChartDataItem, scala.Unit], 
+      scala.Unit
+    ],
+    align: java.lang.String,
+    autoMargins: scala.Boolean,
+    backgroundAlpha: scala.Double,
+    backgroundColor: java.lang.String,
+    borderAlpha: scala.Double,
+    borderColor: java.lang.String,
+    bottom: scala.Double,
+    color: java.lang.String,
+    data: js.Array[_],
+    equalWidths: scala.Boolean,
+    fontSize: java.lang.String,
+    horizontalGap: scala.Double,
+    labelText: java.lang.String,
+    left: scala.Double,
+    marginBottom: scala.Double,
+    marginLeft: scala.Double,
+    marginRight: scala.Double,
+    marginTop: scala.Double,
+    markerBorderAlpha: scala.Double,
+    markerBorderColor: java.lang.String,
+    markerBorderThickness: scala.Double,
+    markerDisabledColor: java.lang.String,
+    markerLabelGap: scala.Double,
+    markerSize: scala.Double,
+    markerType: java.lang.String,
+    maxColumns: scala.Double,
+    position: java.lang.String,
+    removeListener: js.Function3[amchartsLib.amchartMod.default, java.lang.String, js.Any, scala.Unit],
+    reversedOrder: scala.Boolean,
+    right: scala.Double,
+    rollOverColor: java.lang.String,
+    rollOverGraphAlpha: scala.Double,
+    showEntries: scala.Boolean,
+    spacing: scala.Double,
+    switchColor: java.lang.String,
+    switchType: java.lang.String,
+    switchable: scala.Boolean,
+    textClickEnabled: scala.Boolean,
+    top: scala.Double,
+    useGraphSettings: scala.Boolean,
+    useMarkerColorForLabels: scala.Boolean,
+    valueAlign: java.lang.String,
+    valueText: java.lang.String,
+    valueWidth: scala.Double,
+    verticalGap: scala.Double
+  ): AmLegend = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addListener")(addListener)
+    __obj.updateDynamic("align")(align)
+    __obj.updateDynamic("autoMargins")(autoMargins)
+    __obj.updateDynamic("backgroundAlpha")(backgroundAlpha)
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("borderAlpha")(borderAlpha)
+    __obj.updateDynamic("borderColor")(borderColor)
+    __obj.updateDynamic("bottom")(bottom)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("equalWidths")(equalWidths)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("horizontalGap")(horizontalGap)
+    __obj.updateDynamic("labelText")(labelText)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("marginBottom")(marginBottom)
+    __obj.updateDynamic("marginLeft")(marginLeft)
+    __obj.updateDynamic("marginRight")(marginRight)
+    __obj.updateDynamic("marginTop")(marginTop)
+    __obj.updateDynamic("markerBorderAlpha")(markerBorderAlpha)
+    __obj.updateDynamic("markerBorderColor")(markerBorderColor)
+    __obj.updateDynamic("markerBorderThickness")(markerBorderThickness)
+    __obj.updateDynamic("markerDisabledColor")(markerDisabledColor)
+    __obj.updateDynamic("markerLabelGap")(markerLabelGap)
+    __obj.updateDynamic("markerSize")(markerSize)
+    __obj.updateDynamic("markerType")(markerType)
+    __obj.updateDynamic("maxColumns")(maxColumns)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("removeListener")(removeListener)
+    __obj.updateDynamic("reversedOrder")(reversedOrder)
+    __obj.updateDynamic("right")(right)
+    __obj.updateDynamic("rollOverColor")(rollOverColor)
+    __obj.updateDynamic("rollOverGraphAlpha")(rollOverGraphAlpha)
+    __obj.updateDynamic("showEntries")(showEntries)
+    __obj.updateDynamic("spacing")(spacing)
+    __obj.updateDynamic("switchColor")(switchColor)
+    __obj.updateDynamic("switchType")(switchType)
+    __obj.updateDynamic("switchable")(switchable)
+    __obj.updateDynamic("textClickEnabled")(textClickEnabled)
+    __obj.updateDynamic("top")(top)
+    __obj.updateDynamic("useGraphSettings")(useGraphSettings)
+    __obj.updateDynamic("useMarkerColorForLabels")(useMarkerColorForLabels)
+    __obj.updateDynamic("valueAlign")(valueAlign)
+    __obj.updateDynamic("valueText")(valueText)
+    __obj.updateDynamic("valueWidth")(valueWidth)
+    __obj.updateDynamic("verticalGap")(verticalGap)
+    __obj.asInstanceOf[AmLegend]
+  }
+}
+

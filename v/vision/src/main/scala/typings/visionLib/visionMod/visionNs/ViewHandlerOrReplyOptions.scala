@@ -54,3 +54,38 @@ trait ViewHandlerOrReplyOptions extends js.Object {
   var runtimeOptions: js.UndefOr[RuntimeOptions] = js.undefined
 }
 
+object ViewHandlerOrReplyOptions {
+  @scala.inline
+  def apply(
+    allowAbsolutePaths: js.UndefOr[scala.Boolean] = js.undefined,
+    allowInsecureAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    compileMode: visionLib.visionLibStrings.sync | visionLib.visionLibStrings.async = null,
+    compileOptions: CompileOptions = null,
+    contentType: java.lang.String = null,
+    context: js.Object | (js.Function1[/* request */ hapiLib.hapiMod.Request, js.Object]) = null,
+    encoding: java.lang.String = null,
+    layout: scala.Boolean | java.lang.String = null,
+    layoutKeyword: java.lang.String = null,
+    layoutPath: java.lang.String | js.Array[java.lang.String] = null,
+    path: java.lang.String | js.Array[java.lang.String] = null,
+    relativeTo: java.lang.String = null,
+    runtimeOptions: RuntimeOptions = null
+  ): ViewHandlerOrReplyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowAbsolutePaths)) __obj.updateDynamic("allowAbsolutePaths")(allowAbsolutePaths)
+    if (!js.isUndefined(allowInsecureAccess)) __obj.updateDynamic("allowInsecureAccess")(allowInsecureAccess)
+    if (compileMode != null) __obj.updateDynamic("compileMode")(compileMode.asInstanceOf[js.Any])
+    if (compileOptions != null) __obj.updateDynamic("compileOptions")(compileOptions)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (layoutKeyword != null) __obj.updateDynamic("layoutKeyword")(layoutKeyword)
+    if (layoutPath != null) __obj.updateDynamic("layoutPath")(layoutPath.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
+    if (runtimeOptions != null) __obj.updateDynamic("runtimeOptions")(runtimeOptions)
+    __obj.asInstanceOf[ViewHandlerOrReplyOptions]
+  }
+}
+

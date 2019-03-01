@@ -33,3 +33,34 @@ trait XIndexAlteration extends XConnectionSupplier {
   def dropIndex(table: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, index: java.lang.String): scala.Unit
 }
 
+object XIndexAlteration {
+  @scala.inline
+  def apply(
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    acquire: js.Function0[scala.Unit],
+    addIndex: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    dropIndex: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIndexAlteration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addIndex")(addIndex)
+    __obj.updateDynamic("dropIndex")(dropIndex)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XIndexAlteration]
+  }
+}
+

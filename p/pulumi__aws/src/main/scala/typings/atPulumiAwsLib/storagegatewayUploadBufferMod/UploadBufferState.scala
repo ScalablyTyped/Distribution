@@ -16,3 +16,16 @@ trait UploadBufferState extends js.Object {
   val gatewayArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object UploadBufferState {
+  @scala.inline
+  def apply(
+    diskId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    gatewayArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): UploadBufferState = {
+    val __obj = js.Dynamic.literal()
+    if (diskId != null) __obj.updateDynamic("diskId")(diskId.asInstanceOf[js.Any])
+    if (gatewayArn != null) __obj.updateDynamic("gatewayArn")(gatewayArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UploadBufferState]
+  }
+}
+

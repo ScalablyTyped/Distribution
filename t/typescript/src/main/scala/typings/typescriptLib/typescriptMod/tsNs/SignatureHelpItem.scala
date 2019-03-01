@@ -22,3 +22,26 @@ trait SignatureHelpItem extends js.Object {
   var tags: js.Array[JSDocTagInfo]
 }
 
+object SignatureHelpItem {
+  @scala.inline
+  def apply(
+    documentation: js.Array[SymbolDisplayPart],
+    isVariadic: scala.Boolean,
+    parameters: js.Array[SignatureHelpParameter],
+    prefixDisplayParts: js.Array[SymbolDisplayPart],
+    separatorDisplayParts: js.Array[SymbolDisplayPart],
+    suffixDisplayParts: js.Array[SymbolDisplayPart],
+    tags: js.Array[JSDocTagInfo]
+  ): SignatureHelpItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("documentation")(documentation)
+    __obj.updateDynamic("isVariadic")(isVariadic)
+    __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("prefixDisplayParts")(prefixDisplayParts)
+    __obj.updateDynamic("separatorDisplayParts")(separatorDisplayParts)
+    __obj.updateDynamic("suffixDisplayParts")(suffixDisplayParts)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[SignatureHelpItem]
+  }
+}
+

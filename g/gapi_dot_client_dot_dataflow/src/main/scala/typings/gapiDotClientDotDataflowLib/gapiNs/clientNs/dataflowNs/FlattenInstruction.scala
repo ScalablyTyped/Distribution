@@ -10,3 +10,12 @@ trait FlattenInstruction extends js.Object {
   var inputs: js.UndefOr[js.Array[InstructionInput]] = js.undefined
 }
 
+object FlattenInstruction {
+  @scala.inline
+  def apply(inputs: js.Array[InstructionInput] = null): FlattenInstruction = {
+    val __obj = js.Dynamic.literal()
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    __obj.asInstanceOf[FlattenInstruction]
+  }
+}
+

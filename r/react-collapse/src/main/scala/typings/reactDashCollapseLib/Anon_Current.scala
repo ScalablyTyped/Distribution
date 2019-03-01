@@ -11,3 +11,14 @@ trait Anon_Current extends js.Object {
   var to: scala.Double
 }
 
+object Anon_Current {
+  @scala.inline
+  def apply(current: scala.Double, from: scala.Double, to: scala.Double): Anon_Current = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("current")(current)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Anon_Current]
+  }
+}
+

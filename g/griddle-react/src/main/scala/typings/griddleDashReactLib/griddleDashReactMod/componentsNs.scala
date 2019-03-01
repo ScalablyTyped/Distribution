@@ -12,7 +12,6 @@ object componentsNs extends js.Object {
   class Cell ()
     extends reactLib.reactMod.Component[CellProps, js.Any, js.Any]
   
-  
   trait CellProps extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
     var columnId: js.UndefOr[java.lang.String] = js.undefined
@@ -28,10 +27,9 @@ object componentsNs extends js.Object {
   class ColumnDefinition ()
     extends reactLib.reactMod.Component[ColumnDefinitionProps, js.Any, js.Any]
   
-  
   trait ColumnDefinitionProps
     extends // Allow custom plugin props
-  /* x */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     // TODO: Unused?
     //The number of cells this column should extend. Default is 1.
     var colSpan: js.UndefOr[scala.Double] = js.undefined
@@ -82,9 +80,8 @@ object componentsNs extends js.Object {
   class Filter ()
     extends reactLib.reactMod.Component[FilterProps, js.Any, js.Any]
   
-  
   trait FilterProps
-    extends /* x */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+    extends /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     var className: js.UndefOr[java.lang.String] = js.undefined
     var placeholder: js.UndefOr[java.lang.String] = js.undefined
     var setFilter: js.UndefOr[
@@ -101,10 +98,9 @@ object componentsNs extends js.Object {
   class RowDefinition ()
     extends reactLib.reactMod.Component[RowDefinitionProps, js.Any, js.Any]
   
-  
   trait RowDefinitionProps
     extends // Allow custom plugin props
-  /* x */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     //The column that will be known used to track child data
     //By default this will be "children"
     var childColumnName: js.UndefOr[java.lang.String] = js.undefined
@@ -114,7 +110,6 @@ object componentsNs extends js.Object {
     //if this is not set it will make one up (not efficient)
     var rowKey: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait RowProps extends js.Object {
     var Cell: js.UndefOr[js.Any] = js.undefined
@@ -131,7 +126,6 @@ object componentsNs extends js.Object {
   class Settings ()
     extends reactLib.reactMod.Component[SettingsProps, js.Any, js.Any]
   
-  
   trait SettingsProps extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
     var settingsComponents: js.UndefOr[js.Array[griddleDashReactLib.GriddleComponent[_]]] = js.undefined
@@ -141,7 +135,6 @@ object componentsNs extends js.Object {
   @js.native
   class SettingsToggle ()
     extends reactLib.reactMod.Component[SettingsToggleProps, js.Any, js.Any]
-  
   
   trait SettingsToggleProps extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
@@ -153,7 +146,6 @@ object componentsNs extends js.Object {
   @js.native
   class SettingsWrapper ()
     extends reactLib.reactMod.Component[SettingsWrapperProps, js.Any, js.Any]
-  
   
   trait SettingsWrapperProps extends js.Object {
     var Settings: js.UndefOr[griddleDashReactLib.GriddleComponent[SettingsProps]] = js.undefined
@@ -172,7 +164,6 @@ object componentsNs extends js.Object {
   class TableBody ()
     extends reactLib.reactMod.Component[TableBodyProps, js.Any, js.Any]
   
-  
   trait TableBodyProps extends js.Object {
     var Row: js.UndefOr[js.Any] = js.undefined
     var className: js.UndefOr[java.lang.String] = js.undefined
@@ -188,7 +179,6 @@ object componentsNs extends js.Object {
   class TableHeadingCell ()
     extends reactLib.reactMod.Component[TableHeadingCellProps, js.Any, js.Any]
   
-  
   trait TableHeadingCellProps extends js.Object {
     var className: js.UndefOr[java.lang.String] = js.undefined
     var columnId: js.UndefOr[scala.Double] = js.undefined
@@ -200,13 +190,11 @@ object componentsNs extends js.Object {
     var title: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait TableHeadingProps extends js.Object {
     var TableHeadingCell: js.Any
     var columnIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
     var columnTitles: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   }
-  
   
   trait TableProps extends js.Object {
     var NoResults: js.UndefOr[js.Any] = js.undefined
@@ -216,9 +204,9 @@ object componentsNs extends js.Object {
   }
   
   val SettingsComponents: griddleDashReactLib.griddleDashReactMod.PropertyBag[griddleDashReactLib.GriddleComponent[js.Any]] = js.native
-  val SettingsContainer: js.Function1[/* OriginalComponent */ js.Any, js.Any] = js.native
-  val SettingsToggleContainer: js.Function1[/* OriginalComponent */ js.Any, js.Any] = js.native
-  val SettingsWrapperContainer: js.Function1[/* OriginalComponent */ js.Any, js.Any] = js.native
-  val TableContainer: js.Function1[/* OriginalComponent */ js.Any, js.Any] = js.native
+  def SettingsContainer(OriginalComponent: js.Any): js.Any = js.native
+  def SettingsToggleContainer(OriginalComponent: js.Any): js.Any = js.native
+  def SettingsWrapperContainer(OriginalComponent: js.Any): js.Any = js.native
+  def TableContainer(OriginalComponent: js.Any): js.Any = js.native
 }
 

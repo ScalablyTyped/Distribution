@@ -8,18 +8,36 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FunctionExpressionBuilder extends js.Object {
   def apply(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
   def apply(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     generator: scala.Boolean
   ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
   def apply(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    generator: scala.Boolean,
+    expression: scala.Boolean
+  ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind
+  ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    generator: scala.Boolean
+  ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     generator: scala.Boolean,

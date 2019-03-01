@@ -67,3 +67,38 @@ trait XMimeContentType
   def hasParameter(aName: java.lang.String): scala.Boolean
 }
 
+object XMimeContentType {
+  @scala.inline
+  def apply(
+    FullMediaType: java.lang.String,
+    MediaSubtype: java.lang.String,
+    MediaType: java.lang.String,
+    Parameters: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getFullMediaType: js.Function0[java.lang.String],
+    getMediaSubtype: js.Function0[java.lang.String],
+    getMediaType: js.Function0[java.lang.String],
+    getParameterValue: js.Function1[java.lang.String, java.lang.String],
+    getParameters: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    hasParameter: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMimeContentType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FullMediaType")(FullMediaType)
+    __obj.updateDynamic("MediaSubtype")(MediaSubtype)
+    __obj.updateDynamic("MediaType")(MediaType)
+    __obj.updateDynamic("Parameters")(Parameters)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFullMediaType")(getFullMediaType)
+    __obj.updateDynamic("getMediaSubtype")(getMediaSubtype)
+    __obj.updateDynamic("getMediaType")(getMediaType)
+    __obj.updateDynamic("getParameterValue")(getParameterValue)
+    __obj.updateDynamic("getParameters")(getParameters)
+    __obj.updateDynamic("hasParameter")(hasParameter)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMimeContentType]
+  }
+}
+

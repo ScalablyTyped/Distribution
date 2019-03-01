@@ -14,3 +14,24 @@ trait Options extends js.Object {
   var storageBucket: java.lang.String
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    apiKey: java.lang.String,
+    appId: java.lang.String,
+    databaseURL: java.lang.String,
+    messagingSenderId: java.lang.String,
+    projectId: java.lang.String,
+    storageBucket: java.lang.String
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiKey")(apiKey)
+    __obj.updateDynamic("appId")(appId)
+    __obj.updateDynamic("databaseURL")(databaseURL)
+    __obj.updateDynamic("messagingSenderId")(messagingSenderId)
+    __obj.updateDynamic("projectId")(projectId)
+    __obj.updateDynamic("storageBucket")(storageBucket)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ToggleButton extends ToggleButtonState {
+trait ToggleButton
+  extends ToggleButtonState
+     with jpmLib.sdkPanelMod.PanelPosition
+     with jpmLib.sdkUiToolbarMod.ToolbarItem {
   def click(): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
   @JSName("on")

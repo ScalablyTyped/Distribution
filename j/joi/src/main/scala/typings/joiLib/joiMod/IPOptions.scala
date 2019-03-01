@@ -21,3 +21,23 @@ trait IpOptions extends js.Object {
   var version: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object IPOptions {
+  @scala.inline
+  def apply(cidr: java.lang.String = null, version: js.Array[java.lang.String] = null): IPOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cidr != null) __obj.updateDynamic("cidr")(cidr)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[IPOptions]
+  }
+}
+
+object IpOptions {
+  @scala.inline
+  def apply(cidr: java.lang.String = null, version: java.lang.String | js.Array[java.lang.String] = null): IpOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cidr != null) __obj.updateDynamic("cidr")(cidr)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IpOptions]
+  }
+}
+

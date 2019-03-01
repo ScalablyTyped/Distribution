@@ -67,3 +67,52 @@ trait XGalleryTheme
   def update(): scala.Unit
 }
 
+object XGalleryTheme {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    Name: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getName: js.Function0[java.lang.String],
+    hasElements: js.Function0[scala.Boolean],
+    insertDrawingByIndex: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, 
+      scala.Double, 
+      scala.Double
+    ],
+    insertGraphicByIndex: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic, 
+      scala.Double, 
+      scala.Double
+    ],
+    insertURLByIndex: js.Function2[java.lang.String, scala.Double, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeByIndex: js.Function1[scala.Double, scala.Unit],
+    update: js.Function0[scala.Unit]
+  ): XGalleryTheme = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getByIndex")(getByIndex)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("insertDrawingByIndex")(insertDrawingByIndex)
+    __obj.updateDynamic("insertGraphicByIndex")(insertGraphicByIndex)
+    __obj.updateDynamic("insertURLByIndex")(insertURLByIndex)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeByIndex")(removeByIndex)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[XGalleryTheme]
+  }
+}
+

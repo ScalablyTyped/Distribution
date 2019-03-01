@@ -40,3 +40,25 @@ trait JobDefinitionArgs extends js.Object {
   val `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object JobDefinitionArgs {
+  @scala.inline
+  def apply(
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    containerProperties: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    parameters: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null,
+    retryStrategy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttemptsInput] = null,
+    timeout: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttemptDurationSecondsInput] = null
+  ): JobDefinitionArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (containerProperties != null) __obj.updateDynamic("containerProperties")(containerProperties.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (retryStrategy != null) __obj.updateDynamic("retryStrategy")(retryStrategy.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JobDefinitionArgs]
+  }
+}
+

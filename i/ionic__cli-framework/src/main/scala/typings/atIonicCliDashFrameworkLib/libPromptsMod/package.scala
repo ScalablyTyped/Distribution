@@ -6,11 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libPromptsMod {
-  type PromptQuestion = PromptQuestionConfirm | PromptQuestionCheckbox | PromptQuestionOther
   type PromptType = PromptTypeConfirm | PromptTypeCheckbox | PromptTypeOther
   type PromptTypeCheckbox = atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.checkbox
   type PromptTypeConfirm = atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.confirm
-  type PromptTypeOther = atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.input | atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.password | atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.list
   type PromptValue = PromptValueConfirm | PromptValueCheckbox | PromptValueOther
   type PromptValueCheckbox = js.Array[java.lang.String]
   type PromptValueConfirm = scala.Boolean

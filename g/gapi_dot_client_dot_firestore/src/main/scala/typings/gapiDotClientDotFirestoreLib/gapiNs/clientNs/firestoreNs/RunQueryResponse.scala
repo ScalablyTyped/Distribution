@@ -35,3 +35,20 @@ trait RunQueryResponse extends js.Object {
   var transaction: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RunQueryResponse {
+  @scala.inline
+  def apply(
+    document: Document = null,
+    readTime: java.lang.String = null,
+    skippedResults: scala.Int | scala.Double = null,
+    transaction: java.lang.String = null
+  ): RunQueryResponse = {
+    val __obj = js.Dynamic.literal()
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    if (skippedResults != null) __obj.updateDynamic("skippedResults")(skippedResults.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[RunQueryResponse]
+  }
+}
+

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait KeyObject extends js.Object {
+trait KeyObject extends _KeyLike {
   var asymmetricKeyType: js.UndefOr[KeyType] = js.native
   var symmetricSize: js.UndefOr[scala.Double] = js.native
   var `type`: KeyObjectType = js.native

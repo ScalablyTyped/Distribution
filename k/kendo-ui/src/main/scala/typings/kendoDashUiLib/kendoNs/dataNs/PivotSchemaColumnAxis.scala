@@ -9,3 +9,12 @@ trait PivotSchemaColumnAxis extends js.Object {
   var tuples: js.Array[PivotTupleModel]
 }
 
+object PivotSchemaColumnAxis {
+  @scala.inline
+  def apply(tuples: js.Array[PivotTupleModel]): PivotSchemaColumnAxis = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tuples")(tuples)
+    __obj.asInstanceOf[PivotSchemaColumnAxis]
+  }
+}
+

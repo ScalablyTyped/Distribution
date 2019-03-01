@@ -25,3 +25,18 @@ trait VBAScriptEvent
   var ModuleName: java.lang.String
 }
 
+object VBAScriptEvent {
+  @scala.inline
+  def apply(
+    Identifier: scala.Double,
+    ModuleName: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): VBAScriptEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Identifier")(Identifier)
+    __obj.updateDynamic("ModuleName")(ModuleName)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[VBAScriptEvent]
+  }
+}
+

@@ -19,3 +19,34 @@ trait TimescaleTier extends js.Object {
   var verticalBorderStyle: js.Any
 }
 
+object TimescaleTier {
+  @scala.inline
+  def apply(
+    backgroundColor: js.Any,
+    font: js.Any,
+    fontSize: js.Any,
+    fontWeight: js.Any,
+    horizontalBorderColor: js.Any,
+    horizontalBorderStyle: js.Any,
+    outerBorderColor: js.Any,
+    textColor: js.Any,
+    todayLineColor: js.Any,
+    verticalBorderColor: js.Any,
+    verticalBorderStyle: js.Any
+  ): TimescaleTier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("font")(font)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("fontWeight")(fontWeight)
+    __obj.updateDynamic("horizontalBorderColor")(horizontalBorderColor)
+    __obj.updateDynamic("horizontalBorderStyle")(horizontalBorderStyle)
+    __obj.updateDynamic("outerBorderColor")(outerBorderColor)
+    __obj.updateDynamic("textColor")(textColor)
+    __obj.updateDynamic("todayLineColor")(todayLineColor)
+    __obj.updateDynamic("verticalBorderColor")(verticalBorderColor)
+    __obj.updateDynamic("verticalBorderStyle")(verticalBorderStyle)
+    __obj.asInstanceOf[TimescaleTier]
+  }
+}
+

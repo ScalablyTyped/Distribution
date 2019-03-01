@@ -15,3 +15,13 @@ trait BatchUpdatePresentationResponse extends js.Object {
   var replies: js.UndefOr[js.Array[Response]] = js.undefined
 }
 
+object BatchUpdatePresentationResponse {
+  @scala.inline
+  def apply(presentationId: java.lang.String = null, replies: js.Array[Response] = null): BatchUpdatePresentationResponse = {
+    val __obj = js.Dynamic.literal()
+    if (presentationId != null) __obj.updateDynamic("presentationId")(presentationId)
+    if (replies != null) __obj.updateDynamic("replies")(replies)
+    __obj.asInstanceOf[BatchUpdatePresentationResponse]
+  }
+}
+

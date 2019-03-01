@@ -20,3 +20,34 @@ trait ISPClientPeoplePickerEntity
   var ProviderName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ISPClientPeoplePickerEntity {
+  @scala.inline
+  def apply(
+    MultipleMatches: js.Array[ISPClientPeoplePickerEntity],
+    Description: java.lang.String = null,
+    DisplayText: java.lang.String = null,
+    DomainText: java.lang.String = null,
+    EntityData: Anon_Department = null,
+    EntityType: java.lang.String = null,
+    IsResolved: js.UndefOr[scala.Boolean] = js.undefined,
+    Key: java.lang.String = null,
+    ProviderDisplayName: java.lang.String = null,
+    ProviderName: java.lang.String = null,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): ISPClientPeoplePickerEntity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MultipleMatches")(MultipleMatches)
+    if (Description != null) __obj.updateDynamic("Description")(Description)
+    if (DisplayText != null) __obj.updateDynamic("DisplayText")(DisplayText)
+    if (DomainText != null) __obj.updateDynamic("DomainText")(DomainText)
+    if (EntityData != null) __obj.updateDynamic("EntityData")(EntityData)
+    if (EntityType != null) __obj.updateDynamic("EntityType")(EntityType)
+    if (!js.isUndefined(IsResolved)) __obj.updateDynamic("IsResolved")(IsResolved)
+    if (Key != null) __obj.updateDynamic("Key")(Key)
+    if (ProviderDisplayName != null) __obj.updateDynamic("ProviderDisplayName")(ProviderDisplayName)
+    if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ISPClientPeoplePickerEntity]
+  }
+}
+

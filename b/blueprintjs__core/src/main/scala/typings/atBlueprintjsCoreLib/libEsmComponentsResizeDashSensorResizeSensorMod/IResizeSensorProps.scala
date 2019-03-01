@@ -30,3 +30,16 @@ trait IResizeSensorProps extends js.Object {
   def onResize(entries: js.Array[IResizeEntry]): scala.Unit
 }
 
+object IResizeSensorProps {
+  @scala.inline
+  def apply(
+    onResize: js.Function1[js.Array[IResizeEntry], scala.Unit],
+    observeParents: js.UndefOr[scala.Boolean] = js.undefined
+  ): IResizeSensorProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onResize")(onResize)
+    if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents)
+    __obj.asInstanceOf[IResizeSensorProps]
+  }
+}
+

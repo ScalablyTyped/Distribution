@@ -20,3 +20,18 @@ trait FilterSettings extends js.Object {
   var filterType: js.UndefOr[ejDotWebDotAllLib.ejNs.FilterType | java.lang.String] = js.undefined
 }
 
+object FilterSettings {
+  @scala.inline
+  def apply(
+    allowSearchOnTyping: js.UndefOr[scala.Boolean] = js.undefined,
+    caseSensitiveSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    filterType: ejDotWebDotAllLib.ejNs.FilterType | java.lang.String = null
+  ): FilterSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowSearchOnTyping)) __obj.updateDynamic("allowSearchOnTyping")(allowSearchOnTyping)
+    if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FilterSettings]
+  }
+}
+

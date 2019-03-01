@@ -42,3 +42,32 @@ trait MatchOptions extends Options {
   var timestamps: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object MatchOptions {
+  @scala.inline
+  def apply(
+    annotations: scala.Boolean | js.Array[java.lang.String] = null,
+    bearings: js.Array[Bearing] = null,
+    coordinates: js.Array[Coordinate] = null,
+    generate_hints: js.UndefOr[scala.Boolean] = js.undefined,
+    geometries: java.lang.String = null,
+    hints: js.Array[Hint] = null,
+    overview: java.lang.String = null,
+    radiuses: js.Array[scala.Double] = null,
+    steps: js.UndefOr[scala.Boolean] = js.undefined,
+    timestamps: js.Array[scala.Double] = null
+  ): MatchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (hints != null) __obj.updateDynamic("hints")(hints)
+    if (overview != null) __obj.updateDynamic("overview")(overview)
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps)
+    if (timestamps != null) __obj.updateDynamic("timestamps")(timestamps)
+    __obj.asInstanceOf[MatchOptions]
+  }
+}
+

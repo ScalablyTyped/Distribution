@@ -47,3 +47,30 @@ trait XBitmap
   def hasAlpha(): scala.Boolean
 }
 
+object XBitmap {
+  @scala.inline
+  def apply(
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D,
+    acquire: js.Function0[scala.Unit],
+    getScaledBitmap: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D, 
+      scala.Boolean, 
+      XBitmap
+    ],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D],
+    hasAlpha: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBitmap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Size")(Size)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getScaledBitmap")(getScaledBitmap)
+    __obj.updateDynamic("getSize")(getSize)
+    __obj.updateDynamic("hasAlpha")(hasAlpha)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XBitmap]
+  }
+}
+

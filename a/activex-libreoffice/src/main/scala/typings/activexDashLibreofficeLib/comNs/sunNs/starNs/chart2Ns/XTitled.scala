@@ -16,3 +16,24 @@ trait XTitled
   def setTitleObject(Title: XTitle): scala.Unit
 }
 
+object XTitled {
+  @scala.inline
+  def apply(
+    TitleObject: XTitle,
+    acquire: js.Function0[scala.Unit],
+    getTitleObject: js.Function0[XTitle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTitleObject: js.Function1[XTitle, scala.Unit]
+  ): XTitled = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TitleObject")(TitleObject)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getTitleObject")(getTitleObject)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setTitleObject")(setTitleObject)
+    __obj.asInstanceOf[XTitled]
+  }
+}
+

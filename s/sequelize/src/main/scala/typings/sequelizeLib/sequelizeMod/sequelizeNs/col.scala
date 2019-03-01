@@ -9,3 +9,12 @@ trait col extends js.Object {
   var col: java.lang.String
 }
 
+object col {
+  @scala.inline
+  def apply(col: java.lang.String): col = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("col")(col)
+    __obj.asInstanceOf[col]
+  }
+}
+

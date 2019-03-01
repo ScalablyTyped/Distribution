@@ -11,3 +11,24 @@ trait TreeViewDragendEvent extends TreeViewEvent {
   var sourceNode: js.UndefOr[stdLib.Element] = js.undefined
 }
 
+object TreeViewDragendEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: TreeView,
+    destinationNode: stdLib.Element = null,
+    dropPosition: java.lang.String = null,
+    sourceNode: stdLib.Element = null
+  ): TreeViewDragendEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (destinationNode != null) __obj.updateDynamic("destinationNode")(destinationNode)
+    if (dropPosition != null) __obj.updateDynamic("dropPosition")(dropPosition)
+    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode)
+    __obj.asInstanceOf[TreeViewDragendEvent]
+  }
+}
+

@@ -34,3 +34,26 @@ trait WebhookArgs extends js.Object {
   val targetPipeline: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object WebhookArgs {
+  @scala.inline
+  def apply(
+    authentication: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    filters: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_JsonPathMatchEquals]]
+    ],
+    targetAction: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    targetPipeline: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    authenticationConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedIpRangeSecretToken] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): WebhookArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
+    __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    __obj.updateDynamic("targetAction")(targetAction.asInstanceOf[js.Any])
+    __obj.updateDynamic("targetPipeline")(targetPipeline.asInstanceOf[js.Any])
+    if (authenticationConfiguration != null) __obj.updateDynamic("authenticationConfiguration")(authenticationConfiguration.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebhookArgs]
+  }
+}
+

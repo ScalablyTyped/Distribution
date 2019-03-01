@@ -20,3 +20,38 @@ trait IHashSet[TValue] extends js.Object {
   def values(): js.Array[TValue]
 }
 
+object IHashSet {
+  @scala.inline
+  def apply[TValue](
+    add: js.Function1[TValue, scala.Unit],
+    addAll: js.Function1[js.Array[TValue], scala.Unit],
+    clear: js.Function0[scala.Unit],
+    clone: js.Function0[IHashSet[TValue]],
+    complement: js.Function1[IHashSet[TValue], IHashSet[TValue]],
+    contains: js.Function1[TValue, scala.Boolean],
+    intersection: js.Function1[IHashSet[TValue], IHashSet[TValue]],
+    isEmpty: js.Function0[scala.Boolean],
+    isSubsetOf: js.Function1[IHashSet[TValue], scala.Boolean],
+    remove: js.Function1[TValue, scala.Unit],
+    size: js.Function0[scala.Double],
+    union: js.Function1[IHashSet[TValue], IHashSet[TValue]],
+    values: js.Function0[js.Array[TValue]]
+  ): IHashSet[TValue] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("addAll")(addAll)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("complement")(complement)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("intersection")(intersection)
+    __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.updateDynamic("isSubsetOf")(isSubsetOf)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("union")(union)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[IHashSet[TValue]]
+  }
+}
+

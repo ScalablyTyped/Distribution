@@ -10,16 +10,20 @@ object jsshaLibStrings {
   sealed trait ARRAYBUFFER extends js.Object
   
   @js.native
-  sealed trait B64 extends js.Object
+  sealed trait B64
+    extends jsshaLib.jsshaMod.jsSHANs.StringDataFormat
   
   @js.native
-  sealed trait BYTES extends js.Object
+  sealed trait BYTES
+    extends jsshaLib.jsshaMod.jsSHANs.StringDataFormat
   
   @js.native
-  sealed trait HEX extends js.Object
+  sealed trait HEX
+    extends jsshaLib.jsshaMod.jsSHANs.StringDataFormat
   
   @js.native
-  sealed trait TEXT extends js.Object
+  sealed trait TEXT
+    extends jsshaLib.jsshaMod.jsSHANs.StringDataFormat
   
   @scala.inline
   def ARRAYBUFFER: ARRAYBUFFER = "ARRAYBUFFER".asInstanceOf[ARRAYBUFFER]

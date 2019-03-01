@@ -10,3 +10,12 @@ trait ListThreatListsResponse extends js.Object {
   var threatLists: js.UndefOr[js.Array[ThreatListDescriptor]] = js.undefined
 }
 
+object ListThreatListsResponse {
+  @scala.inline
+  def apply(threatLists: js.Array[ThreatListDescriptor] = null): ListThreatListsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (threatLists != null) __obj.updateDynamic("threatLists")(threatLists)
+    __obj.asInstanceOf[ListThreatListsResponse]
+  }
+}
+

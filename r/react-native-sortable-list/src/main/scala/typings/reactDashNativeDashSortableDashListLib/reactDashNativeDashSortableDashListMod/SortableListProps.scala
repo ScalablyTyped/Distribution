@@ -114,3 +114,57 @@ trait SortableListProps extends js.Object {
   def renderRow(props: RowProps): reactLib.reactMod.Global.JSXNs.Element
 }
 
+object SortableListProps {
+  @scala.inline
+  def apply(
+    data: reactDashNativeDashSortableDashListLib.Data,
+    renderRow: js.Function1[RowProps, reactLib.reactMod.Global.JSXNs.Element],
+    autoscrollAreaSize: scala.Int | scala.Double = null,
+    contentContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    innerContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    manuallyActivateRows: js.UndefOr[scala.Boolean] = js.undefined,
+    onActivateRow: js.Function1[/* key */ reactDashNativeDashSortableDashListLib.DataKey, scala.Unit] = null,
+    onChangeOrder: js.Function1[
+      /* nextOrder */ js.Array[reactDashNativeDashSortableDashListLib.DataKey], 
+      scala.Unit
+    ] = null,
+    onPressRow: js.Function1[/* key */ reactDashNativeDashSortableDashListLib.DataKey, scala.Unit] = null,
+    onReleaseRow: js.Function1[/* key */ reactDashNativeDashSortableDashListLib.DataKey, scala.Unit] = null,
+    order: js.Array[reactDashNativeDashSortableDashListLib.DataKey] = null,
+    refreshControl: reactLib.reactMod.Global.JSXNs.Element = null,
+    renderFooter: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
+    renderHeader: js.Function0[reactLib.reactMod.Global.JSXNs.Element] = null,
+    rowActivationTime: scala.Int | scala.Double = null,
+    scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    showsHorizontalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    showsVerticalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    sortingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): SortableListProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("renderRow")(renderRow)
+    if (autoscrollAreaSize != null) __obj.updateDynamic("autoscrollAreaSize")(autoscrollAreaSize.asInstanceOf[js.Any])
+    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (innerContainerStyle != null) __obj.updateDynamic("innerContainerStyle")(innerContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(manuallyActivateRows)) __obj.updateDynamic("manuallyActivateRows")(manuallyActivateRows)
+    if (onActivateRow != null) __obj.updateDynamic("onActivateRow")(onActivateRow)
+    if (onChangeOrder != null) __obj.updateDynamic("onChangeOrder")(onChangeOrder)
+    if (onPressRow != null) __obj.updateDynamic("onPressRow")(onPressRow)
+    if (onReleaseRow != null) __obj.updateDynamic("onReleaseRow")(onReleaseRow)
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (refreshControl != null) __obj.updateDynamic("refreshControl")(refreshControl)
+    if (renderFooter != null) __obj.updateDynamic("renderFooter")(renderFooter)
+    if (renderHeader != null) __obj.updateDynamic("renderHeader")(renderHeader)
+    if (rowActivationTime != null) __obj.updateDynamic("rowActivationTime")(rowActivationTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled)
+    if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator)
+    if (!js.isUndefined(showsVerticalScrollIndicator)) __obj.updateDynamic("showsVerticalScrollIndicator")(showsVerticalScrollIndicator)
+    if (!js.isUndefined(sortingEnabled)) __obj.updateDynamic("sortingEnabled")(sortingEnabled)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SortableListProps]
+  }
+}
+

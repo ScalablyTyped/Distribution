@@ -18,3 +18,18 @@ trait ControlEvent extends js.Object {
   var aURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL
 }
 
+object ControlEvent {
+  @scala.inline
+  def apply(
+    Event: java.lang.String,
+    aInformation: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    aURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL
+  ): ControlEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Event")(Event)
+    __obj.updateDynamic("aInformation")(aInformation)
+    __obj.updateDynamic("aURL")(aURL)
+    __obj.asInstanceOf[ControlEvent]
+  }
+}
+

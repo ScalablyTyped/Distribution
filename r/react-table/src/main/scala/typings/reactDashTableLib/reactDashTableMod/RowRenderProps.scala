@@ -13,3 +13,13 @@ import scala.scalajs.js.annotation._
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowRenderProps {
+  @scala.inline
+  def apply(isExpanded: js.UndefOr[scala.Boolean] = js.undefined, value: js.Any = null): RowRenderProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[RowRenderProps]
+  }
+}
+

@@ -5,9 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AtrulePreludePlain extends CssNodeCommon {
+trait AtrulePreludePlain
+  extends CssNodeCommon
+     with CssNodePlain {
   var children: js.Array[CssNodePlain]
   @JSName("type")
   var type_AtrulePreludePlain: cssDashTreeLib.cssDashTreeLibStrings.AtrulePrelude
+}
+
+object AtrulePreludePlain {
+  @scala.inline
+  def apply(
+    children: js.Array[CssNodePlain],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.AtrulePrelude,
+    loc: CssLocation = null
+  ): AtrulePreludePlain = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("children")(children)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[AtrulePreludePlain]
+  }
 }
 

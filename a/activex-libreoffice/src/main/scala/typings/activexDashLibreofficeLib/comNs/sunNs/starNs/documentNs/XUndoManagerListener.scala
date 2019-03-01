@@ -89,3 +89,42 @@ trait XUndoManagerListener
   def undoActionAdded(iEvent: UndoManagerEvent): scala.Unit
 }
 
+object XUndoManagerListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    actionRedone: js.Function1[UndoManagerEvent, scala.Unit],
+    actionUndone: js.Function1[UndoManagerEvent, scala.Unit],
+    allActionsCleared: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    cancelledContext: js.Function1[UndoManagerEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    enteredContext: js.Function1[UndoManagerEvent, scala.Unit],
+    enteredHiddenContext: js.Function1[UndoManagerEvent, scala.Unit],
+    leftContext: js.Function1[UndoManagerEvent, scala.Unit],
+    leftHiddenContext: js.Function1[UndoManagerEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    redoActionsCleared: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    release: js.Function0[scala.Unit],
+    resetAll: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    undoActionAdded: js.Function1[UndoManagerEvent, scala.Unit]
+  ): XUndoManagerListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("actionRedone")(actionRedone)
+    __obj.updateDynamic("actionUndone")(actionUndone)
+    __obj.updateDynamic("allActionsCleared")(allActionsCleared)
+    __obj.updateDynamic("cancelledContext")(cancelledContext)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("enteredContext")(enteredContext)
+    __obj.updateDynamic("enteredHiddenContext")(enteredHiddenContext)
+    __obj.updateDynamic("leftContext")(leftContext)
+    __obj.updateDynamic("leftHiddenContext")(leftHiddenContext)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("redoActionsCleared")(redoActionsCleared)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("resetAll")(resetAll)
+    __obj.updateDynamic("undoActionAdded")(undoActionAdded)
+    __obj.asInstanceOf[XUndoManagerListener]
+  }
+}
+

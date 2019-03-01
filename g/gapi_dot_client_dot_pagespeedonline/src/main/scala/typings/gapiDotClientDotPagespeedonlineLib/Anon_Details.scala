@@ -18,3 +18,18 @@ trait Anon_Details extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Details {
+  @scala.inline
+  def apply(
+    details: js.Array[
+      gapiDotClientDotPagespeedonlineLib.gapiNs.clientNs.pagespeedonlineNs.PagespeedApiFormatStringV2
+    ] = null,
+    result: gapiDotClientDotPagespeedonlineLib.gapiNs.clientNs.pagespeedonlineNs.PagespeedApiFormatStringV2 = null
+  ): Anon_Details = {
+    val __obj = js.Dynamic.literal()
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (result != null) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[Anon_Details]
+  }
+}
+

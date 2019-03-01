@@ -31,3 +31,28 @@ trait XDefaultNumberingProvider
   def getDefaultOutlineNumberings(aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess]
 }
 
+object XDefaultNumberingProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDefaultContinuousNumberingLevels: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
+    ],
+    getDefaultOutlineNumberings: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDefaultNumberingProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDefaultContinuousNumberingLevels")(getDefaultContinuousNumberingLevels)
+    __obj.updateDynamic("getDefaultOutlineNumberings")(getDefaultOutlineNumberings)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDefaultNumberingProvider]
+  }
+}
+

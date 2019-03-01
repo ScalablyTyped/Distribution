@@ -79,3 +79,42 @@ trait MemcachedStoreOptions extends js.Object {
   var timeout: scala.Double
 }
 
+object MemcachedStoreOptions {
+  @scala.inline
+  def apply(
+    algorithm: java.lang.String,
+    failOverServers: js.Array[_],
+    failures: scala.Double,
+    idle: scala.Double,
+    keyCompression: scala.Boolean,
+    maxExpiration: scala.Double,
+    maxKeySize: scala.Double,
+    maxValue: scala.Double,
+    poolSize: scala.Double,
+    prefix: java.lang.String,
+    reconnect: scala.Double,
+    remove: scala.Boolean,
+    retries: scala.Double,
+    retry: scala.Double,
+    timeout: scala.Double
+  ): MemcachedStoreOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("algorithm")(algorithm)
+    __obj.updateDynamic("failOverServers")(failOverServers)
+    __obj.updateDynamic("failures")(failures)
+    __obj.updateDynamic("idle")(idle)
+    __obj.updateDynamic("keyCompression")(keyCompression)
+    __obj.updateDynamic("maxExpiration")(maxExpiration)
+    __obj.updateDynamic("maxKeySize")(maxKeySize)
+    __obj.updateDynamic("maxValue")(maxValue)
+    __obj.updateDynamic("poolSize")(poolSize)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("reconnect")(reconnect)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("retries")(retries)
+    __obj.updateDynamic("retry")(retry)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[MemcachedStoreOptions]
+  }
+}
+

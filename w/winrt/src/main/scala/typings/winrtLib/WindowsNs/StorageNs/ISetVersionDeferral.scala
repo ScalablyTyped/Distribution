@@ -9,3 +9,12 @@ trait ISetVersionDeferral extends js.Object {
   def complete(): scala.Unit
 }
 
+object ISetVersionDeferral {
+  @scala.inline
+  def apply(complete: js.Function0[scala.Unit]): ISetVersionDeferral = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complete")(complete)
+    __obj.asInstanceOf[ISetVersionDeferral]
+  }
+}
+

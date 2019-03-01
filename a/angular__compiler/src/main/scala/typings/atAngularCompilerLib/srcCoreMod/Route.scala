@@ -10,3 +10,13 @@ trait Route extends js.Object {
   var loadChildren: js.UndefOr[java.lang.String | Type | js.Any] = js.undefined
 }
 
+object Route {
+  @scala.inline
+  def apply(children: js.Array[Route] = null, loadChildren: java.lang.String | Type | js.Any = null): Route = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (loadChildren != null) __obj.updateDynamic("loadChildren")(loadChildren.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Route]
+  }
+}
+

@@ -9,3 +9,15 @@ trait GridViewRowFocusingEventArgs extends GridViewRowCancelEventArgs {
   val htmlEvent: js.Any
 }
 
+object GridViewRowFocusingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, htmlEvent: js.Any, sender: Control, visibleIndex: scala.Double): GridViewRowFocusingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("sender")(sender)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[GridViewRowFocusingEventArgs]
+  }
+}
+

@@ -41,3 +41,22 @@ trait PaneOptions extends js.Object {
   var startAngle: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PaneOptions {
+  @scala.inline
+  def apply(
+    background: PaneBackground | js.Array[PaneBackground] = null,
+    center: js.Array[scala.Double | java.lang.String] = null,
+    endAngle: scala.Int | scala.Double = null,
+    size: scala.Double | java.lang.String = null,
+    startAngle: scala.Int | scala.Double = null
+  ): PaneOptions = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PaneOptions]
+  }
+}
+

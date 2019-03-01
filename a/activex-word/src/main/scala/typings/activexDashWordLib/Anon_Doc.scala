@@ -9,3 +9,12 @@ trait Anon_Doc extends js.Object {
   val Doc: activexDashWordLib.WordNs.Document
 }
 
+object Anon_Doc {
+  @scala.inline
+  def apply(Doc: activexDashWordLib.WordNs.Document): Anon_Doc = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Doc")(Doc)
+    __obj.asInstanceOf[Anon_Doc]
+  }
+}
+

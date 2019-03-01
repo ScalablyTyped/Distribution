@@ -1184,3 +1184,312 @@ trait RichEditCommands extends js.Object {
   def endUpdate(): scala.Unit
 }
 
+object RichEditCommands {
+  @scala.inline
+  def apply(
+    addSpacingAfterParagraph: AddSpacingAfterParagraphCommand,
+    addSpacingBeforeParagraph: AddSpacingBeforeParagraphCommand,
+    assignShortcut: AssignShortcutCommand,
+    backspace: BackspaceCommand,
+    beginUpdate: js.Function0[scala.Unit],
+    capitalizeEachWordTextCase: CapitalizeEachWordTextCaseCommand,
+    changeCustomNumberingList: ChangeCustomNumberingListCommand,
+    changeFloatingObjectAbsolutePosition: ChangeFloatingObjectAbsolutePositionCommand,
+    changeFloatingObjectAbsoluteSize: ChangeFloatingObjectAbsoluteSizeCommand,
+    changeFloatingObjectAlignmentPosition: ChangeFloatingObjectAlignmentPositionCommand,
+    changeFloatingObjectFillColor: ChangeFloatingObjectFillColorCommand,
+    changeFloatingObjectLockAnchor: ChangeFloatingObjectLockAnchorCommand,
+    changeFloatingObjectLockAspectRatio: ChangeFloatingObjectLockAspectRatioCommand,
+    changeFloatingObjectOutlineColor: ChangeFloatingObjectOutlineColorCommand,
+    changeFloatingObjectOutlineWidth: ChangeFloatingObjectOutlineWidthCommand,
+    changeFloatingObjectRelativePosition: ChangeFloatingObjectRelativePositionCommand,
+    changeFloatingObjectRotation: ChangeFloatingObjectRotationCommand,
+    changeFloatingObjectTextWrapping: ChangeFloatingObjectTextWrappingCommand,
+    changeFontBackColor: ChangeFontBackColorCommand,
+    changeFontBold: ChangeFontBoldCommand,
+    changeFontForeColor: ChangeFontForeColorCommand,
+    changeFontFormatting: ChangeFontFormattingCommand,
+    changeFontItalic: ChangeFontItalicCommand,
+    changeFontName: ChangeFontNameCommand,
+    changeFontSize: ChangeFontSizeCommand,
+    changeFontStrikeout: ChangeFontStrikeoutCommand,
+    changeFontSubscript: ChangeFontSubscriptCommand,
+    changeFontSuperscript: ChangeFontSuperscriptCommand,
+    changeFontUnderline: ChangeFontUnderlineCommand,
+    changeHyperlink: ChangeHyperlinkCommand,
+    changePageColor: ChangePageColorCommand,
+    changePageMargins: ChangePageMarginsCommand,
+    changePageOrientation: ChangePageOrientationCommand,
+    changePageSize: ChangePageSizeCommand,
+    changeParagraphBackColor: ChangeParagraphBackColorCommand,
+    changeParagraphFormatting: ChangeParagraphFormattingCommand,
+    changePictureScale: ChangePictureScaleCommand,
+    changeSectionColumns: ChangeSectionColumnsCommand,
+    changeSectionEqualColumnCount: ChangeSectionEqualColumnCountCommand,
+    changeStyle: ChangeStyleCommand,
+    changeTableBorderRepositoryItem: ChangeTableBorderRepositoryItemCommand,
+    changeTableBordersAndShading: ChangeTableBordersAndShadingCommand,
+    changeTableCellFormatting: ChangeTableCellFormattingCommand,
+    changeTableCellPreferredWidth: ChangeTableCellPreferredWidthCommand,
+    changeTableCellShading: ChangeTableCellShadingCommand,
+    changeTableColumnPreferredWidth: ChangeTableColumnPreferredWidthCommand,
+    changeTableFormatting: ChangeTableFormattingCommand,
+    changeTableLook: ChangeTableLookCommand,
+    changeTableRowPreferredHeight: ChangeTableRowPreferredHeightCommand,
+    changeTableStyle: ChangeTableStyleCommand,
+    changeTabs: ChangeTabsCommand,
+    changeTextBoxContentMargins: ChangeTextBoxContentMarginsCommand,
+    changeTextBoxRelativeSize: ChangeTextBoxRelativeSizeCommand,
+    changeTextBoxResizeShapeToFitText: ChangeTextBoxResizeShapeToFitTextCommand,
+    changeViewType: ChangeViewTypeCommand,
+    clearFormatting: ClearFormattingCommand,
+    closeHeaderFooter: CloseHeaderFooterCommand,
+    continueNumberingList: ContinueNumberingListCommand,
+    copy: CopyCommand,
+    copyContent: CopyContentCommand,
+    createDateField: CreateDateFieldCommand,
+    createField: CreateFieldCommand,
+    createMergeField: CreateMergeFieldCommand,
+    createPageCountField: CreatePageCountFieldCommand,
+    createPageField: CreatePageFieldCommand,
+    createTimeField: CreateTimeFieldCommand,
+    cut: CutCommand,
+    decreaseFontSize: DecreaseFontSizeCommand,
+    decreaseIndent: DecreaseIndentCommand,
+    decrementNumberingIndent: DecrementNumberingIndentCommand,
+    decrementParagraphLeftIndent: DecrementParagraphLeftIndentCommand,
+    delete: DeleteCommand,
+    deleteBookmark: DeleteBookmarkCommand,
+    deleteHyperlink: DeleteHyperlinkCommand,
+    deleteHyperlinks: DeleteHyperlinksCommand,
+    deleteTable: DeleteTableCommand,
+    deleteTableCellsDialog: DeleteTableCellsDialogCommand,
+    deleteTableCellsWithShiftHorizontally: DeleteTableCellsWithShiftHorizontallyCommand,
+    deleteTableCellsWithShiftVertically: DeleteTableCellsWithShiftVerticallyCommand,
+    deleteTableColumns: DeleteTableColumnsCommand,
+    deleteTableRows: DeleteTableRowsCommand,
+    endUpdate: js.Function0[scala.Unit],
+    fileDownload: FileDownloadCommand,
+    fileNew: FileNewCommand,
+    fileOpen: FileOpenCommand,
+    fileOpenDialog: FileOpenDialogCommand,
+    filePrint: FilePrintCommand,
+    fileSave: FileSaveCommand,
+    fileSaveAs: FileSaveAsCommand,
+    fileSaveAsDialog: FileSaveAsDialogCommand,
+    findAll: FindAllCommand,
+    forceSyncWithServer: ForceSyncWithServerCommand,
+    getRtf: GetRtfCommand,
+    goToBookmark: GoToBookmarkCommand,
+    goToDataRecord: GoToDataRecordCommand,
+    goToFirstDataRecord: GoToFirstDataRecordCommand,
+    goToFooter: GoToFooterCommand,
+    goToHeader: GoToHeaderCommand,
+    goToLastDataRecord: GoToLastDataRecordCommand,
+    goToNextDataRecord: GoToNextDataRecordCommand,
+    goToNextHeaderFooter: GoToNextHeaderFooterCommand,
+    goToPreviousDataRecord: GoToPreviousDataRecordCommand,
+    goToPreviousHeaderFooter: GoToPreviousHeaderFooterCommand,
+    hideFindResults: HideFindResultsCommand,
+    increaseFontSize: IncreaseFontSizeCommand,
+    increaseIndent: IncreaseIndentCommand,
+    incrementNumberingIndent: IncrementNumberingIndentCommand,
+    incrementParagraphLeftIndent: IncrementParagraphLeftIndentCommand,
+    insertBookmark: InsertBookmarkCommand,
+    insertColumnBreak: InsertColumnBreakCommand,
+    insertContentFromServer: InsertContentFromServerCommand,
+    insertEquationsCaption: InsertEquationsCaptionCommand,
+    insertFiguresCaption: InsertFiguresCaptionCommand,
+    insertFloatingTextBox: InsertFloatingTextBoxCommand,
+    insertFooter: InsertFooterCommand,
+    insertHeader: InsertHeaderCommand,
+    insertHtml: InsertHtmlCommand,
+    insertHyperlink: InsertHyperlinkCommand,
+    insertLineBreak: InsertLineBreakCommand,
+    insertNonBreakingSpace: InsertNonBreakingSpaceCommand,
+    insertNumeration: InsertNumerationCommand,
+    insertPageBreak: InsertPageBreakCommand,
+    insertParagraph: InsertParagraphCommand,
+    insertPicture: InsertPictureCommand,
+    insertRtf: InsertRtfCommand,
+    insertSectionBreakEvenPage: InsertSectionBreakEvenPageCommand,
+    insertSectionBreakNextPage: InsertSectionBreakNextPageCommand,
+    insertSectionBreakOddPage: InsertSectionBreakOddPageCommand,
+    insertSymbol: InsertSymbolCommand,
+    insertTab: InsertTabCommand,
+    insertTable: InsertTableCommand,
+    insertTableCellWithShiftToTheLeft: InsertTableCellWithShiftToTheLeftCommand,
+    insertTableCellsDialog: InsertTableCellsDialogCommand,
+    insertTableCellsWithShiftToTheVertically: InsertTableCellsWithShiftToTheVerticallyCommand,
+    insertTableColumnToTheLeft: InsertTableColumnToTheLeftCommand,
+    insertTableColumnToTheRight: InsertTableColumnToTheRightCommand,
+    insertTableOfContents: InsertTableOfContentsCommand,
+    insertTableOfEquations: InsertTableOfEquationsCommand,
+    insertTableOfFigures: InsertTableOfFiguresCommand,
+    insertTableOfTables: InsertTableOfTablesCommand,
+    insertTableRowAbove: InsertTableRowAboveCommand,
+    insertTableRowBelow: InsertTableRowBelowCommand,
+    insertTablesCaption: InsertTablesCaptionCommand,
+    insertText: InsertTextCommand,
+    linkHeaderFooterToPrevious: LinkHeaderFooterToPreviousCommand,
+    mailMergeAndDownload: MailMergeAndDownloadCommand,
+    mailMergeAndSaveAs: MailMergeAndSaveAsCommand,
+    mailMergeDialog: MailMergeDialogCommand,
+    makeTextLowerCase: MakeTextLowerCaseCommand,
+    makeTextSentenceCase: MakeTextSentenceCaseCommand
+  ): RichEditCommands = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addSpacingAfterParagraph")(addSpacingAfterParagraph)
+    __obj.updateDynamic("addSpacingBeforeParagraph")(addSpacingBeforeParagraph)
+    __obj.updateDynamic("assignShortcut")(assignShortcut)
+    __obj.updateDynamic("backspace")(backspace)
+    __obj.updateDynamic("beginUpdate")(beginUpdate)
+    __obj.updateDynamic("capitalizeEachWordTextCase")(capitalizeEachWordTextCase)
+    __obj.updateDynamic("changeCustomNumberingList")(changeCustomNumberingList)
+    __obj.updateDynamic("changeFloatingObjectAbsolutePosition")(changeFloatingObjectAbsolutePosition)
+    __obj.updateDynamic("changeFloatingObjectAbsoluteSize")(changeFloatingObjectAbsoluteSize)
+    __obj.updateDynamic("changeFloatingObjectAlignmentPosition")(changeFloatingObjectAlignmentPosition)
+    __obj.updateDynamic("changeFloatingObjectFillColor")(changeFloatingObjectFillColor)
+    __obj.updateDynamic("changeFloatingObjectLockAnchor")(changeFloatingObjectLockAnchor)
+    __obj.updateDynamic("changeFloatingObjectLockAspectRatio")(changeFloatingObjectLockAspectRatio)
+    __obj.updateDynamic("changeFloatingObjectOutlineColor")(changeFloatingObjectOutlineColor)
+    __obj.updateDynamic("changeFloatingObjectOutlineWidth")(changeFloatingObjectOutlineWidth)
+    __obj.updateDynamic("changeFloatingObjectRelativePosition")(changeFloatingObjectRelativePosition)
+    __obj.updateDynamic("changeFloatingObjectRotation")(changeFloatingObjectRotation)
+    __obj.updateDynamic("changeFloatingObjectTextWrapping")(changeFloatingObjectTextWrapping)
+    __obj.updateDynamic("changeFontBackColor")(changeFontBackColor)
+    __obj.updateDynamic("changeFontBold")(changeFontBold)
+    __obj.updateDynamic("changeFontForeColor")(changeFontForeColor)
+    __obj.updateDynamic("changeFontFormatting")(changeFontFormatting)
+    __obj.updateDynamic("changeFontItalic")(changeFontItalic)
+    __obj.updateDynamic("changeFontName")(changeFontName)
+    __obj.updateDynamic("changeFontSize")(changeFontSize)
+    __obj.updateDynamic("changeFontStrikeout")(changeFontStrikeout)
+    __obj.updateDynamic("changeFontSubscript")(changeFontSubscript)
+    __obj.updateDynamic("changeFontSuperscript")(changeFontSuperscript)
+    __obj.updateDynamic("changeFontUnderline")(changeFontUnderline)
+    __obj.updateDynamic("changeHyperlink")(changeHyperlink)
+    __obj.updateDynamic("changePageColor")(changePageColor)
+    __obj.updateDynamic("changePageMargins")(changePageMargins)
+    __obj.updateDynamic("changePageOrientation")(changePageOrientation)
+    __obj.updateDynamic("changePageSize")(changePageSize)
+    __obj.updateDynamic("changeParagraphBackColor")(changeParagraphBackColor)
+    __obj.updateDynamic("changeParagraphFormatting")(changeParagraphFormatting)
+    __obj.updateDynamic("changePictureScale")(changePictureScale)
+    __obj.updateDynamic("changeSectionColumns")(changeSectionColumns)
+    __obj.updateDynamic("changeSectionEqualColumnCount")(changeSectionEqualColumnCount)
+    __obj.updateDynamic("changeStyle")(changeStyle)
+    __obj.updateDynamic("changeTableBorderRepositoryItem")(changeTableBorderRepositoryItem)
+    __obj.updateDynamic("changeTableBordersAndShading")(changeTableBordersAndShading)
+    __obj.updateDynamic("changeTableCellFormatting")(changeTableCellFormatting)
+    __obj.updateDynamic("changeTableCellPreferredWidth")(changeTableCellPreferredWidth)
+    __obj.updateDynamic("changeTableCellShading")(changeTableCellShading)
+    __obj.updateDynamic("changeTableColumnPreferredWidth")(changeTableColumnPreferredWidth)
+    __obj.updateDynamic("changeTableFormatting")(changeTableFormatting)
+    __obj.updateDynamic("changeTableLook")(changeTableLook)
+    __obj.updateDynamic("changeTableRowPreferredHeight")(changeTableRowPreferredHeight)
+    __obj.updateDynamic("changeTableStyle")(changeTableStyle)
+    __obj.updateDynamic("changeTabs")(changeTabs)
+    __obj.updateDynamic("changeTextBoxContentMargins")(changeTextBoxContentMargins)
+    __obj.updateDynamic("changeTextBoxRelativeSize")(changeTextBoxRelativeSize)
+    __obj.updateDynamic("changeTextBoxResizeShapeToFitText")(changeTextBoxResizeShapeToFitText)
+    __obj.updateDynamic("changeViewType")(changeViewType)
+    __obj.updateDynamic("clearFormatting")(clearFormatting)
+    __obj.updateDynamic("closeHeaderFooter")(closeHeaderFooter)
+    __obj.updateDynamic("continueNumberingList")(continueNumberingList)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("copyContent")(copyContent)
+    __obj.updateDynamic("createDateField")(createDateField)
+    __obj.updateDynamic("createField")(createField)
+    __obj.updateDynamic("createMergeField")(createMergeField)
+    __obj.updateDynamic("createPageCountField")(createPageCountField)
+    __obj.updateDynamic("createPageField")(createPageField)
+    __obj.updateDynamic("createTimeField")(createTimeField)
+    __obj.updateDynamic("cut")(cut)
+    __obj.updateDynamic("decreaseFontSize")(decreaseFontSize)
+    __obj.updateDynamic("decreaseIndent")(decreaseIndent)
+    __obj.updateDynamic("decrementNumberingIndent")(decrementNumberingIndent)
+    __obj.updateDynamic("decrementParagraphLeftIndent")(decrementParagraphLeftIndent)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("deleteBookmark")(deleteBookmark)
+    __obj.updateDynamic("deleteHyperlink")(deleteHyperlink)
+    __obj.updateDynamic("deleteHyperlinks")(deleteHyperlinks)
+    __obj.updateDynamic("deleteTable")(deleteTable)
+    __obj.updateDynamic("deleteTableCellsDialog")(deleteTableCellsDialog)
+    __obj.updateDynamic("deleteTableCellsWithShiftHorizontally")(deleteTableCellsWithShiftHorizontally)
+    __obj.updateDynamic("deleteTableCellsWithShiftVertically")(deleteTableCellsWithShiftVertically)
+    __obj.updateDynamic("deleteTableColumns")(deleteTableColumns)
+    __obj.updateDynamic("deleteTableRows")(deleteTableRows)
+    __obj.updateDynamic("endUpdate")(endUpdate)
+    __obj.updateDynamic("fileDownload")(fileDownload)
+    __obj.updateDynamic("fileNew")(fileNew)
+    __obj.updateDynamic("fileOpen")(fileOpen)
+    __obj.updateDynamic("fileOpenDialog")(fileOpenDialog)
+    __obj.updateDynamic("filePrint")(filePrint)
+    __obj.updateDynamic("fileSave")(fileSave)
+    __obj.updateDynamic("fileSaveAs")(fileSaveAs)
+    __obj.updateDynamic("fileSaveAsDialog")(fileSaveAsDialog)
+    __obj.updateDynamic("findAll")(findAll)
+    __obj.updateDynamic("forceSyncWithServer")(forceSyncWithServer)
+    __obj.updateDynamic("getRtf")(getRtf)
+    __obj.updateDynamic("goToBookmark")(goToBookmark)
+    __obj.updateDynamic("goToDataRecord")(goToDataRecord)
+    __obj.updateDynamic("goToFirstDataRecord")(goToFirstDataRecord)
+    __obj.updateDynamic("goToFooter")(goToFooter)
+    __obj.updateDynamic("goToHeader")(goToHeader)
+    __obj.updateDynamic("goToLastDataRecord")(goToLastDataRecord)
+    __obj.updateDynamic("goToNextDataRecord")(goToNextDataRecord)
+    __obj.updateDynamic("goToNextHeaderFooter")(goToNextHeaderFooter)
+    __obj.updateDynamic("goToPreviousDataRecord")(goToPreviousDataRecord)
+    __obj.updateDynamic("goToPreviousHeaderFooter")(goToPreviousHeaderFooter)
+    __obj.updateDynamic("hideFindResults")(hideFindResults)
+    __obj.updateDynamic("increaseFontSize")(increaseFontSize)
+    __obj.updateDynamic("increaseIndent")(increaseIndent)
+    __obj.updateDynamic("incrementNumberingIndent")(incrementNumberingIndent)
+    __obj.updateDynamic("incrementParagraphLeftIndent")(incrementParagraphLeftIndent)
+    __obj.updateDynamic("insertBookmark")(insertBookmark)
+    __obj.updateDynamic("insertColumnBreak")(insertColumnBreak)
+    __obj.updateDynamic("insertContentFromServer")(insertContentFromServer)
+    __obj.updateDynamic("insertEquationsCaption")(insertEquationsCaption)
+    __obj.updateDynamic("insertFiguresCaption")(insertFiguresCaption)
+    __obj.updateDynamic("insertFloatingTextBox")(insertFloatingTextBox)
+    __obj.updateDynamic("insertFooter")(insertFooter)
+    __obj.updateDynamic("insertHeader")(insertHeader)
+    __obj.updateDynamic("insertHtml")(insertHtml)
+    __obj.updateDynamic("insertHyperlink")(insertHyperlink)
+    __obj.updateDynamic("insertLineBreak")(insertLineBreak)
+    __obj.updateDynamic("insertNonBreakingSpace")(insertNonBreakingSpace)
+    __obj.updateDynamic("insertNumeration")(insertNumeration)
+    __obj.updateDynamic("insertPageBreak")(insertPageBreak)
+    __obj.updateDynamic("insertParagraph")(insertParagraph)
+    __obj.updateDynamic("insertPicture")(insertPicture)
+    __obj.updateDynamic("insertRtf")(insertRtf)
+    __obj.updateDynamic("insertSectionBreakEvenPage")(insertSectionBreakEvenPage)
+    __obj.updateDynamic("insertSectionBreakNextPage")(insertSectionBreakNextPage)
+    __obj.updateDynamic("insertSectionBreakOddPage")(insertSectionBreakOddPage)
+    __obj.updateDynamic("insertSymbol")(insertSymbol)
+    __obj.updateDynamic("insertTab")(insertTab)
+    __obj.updateDynamic("insertTable")(insertTable)
+    __obj.updateDynamic("insertTableCellWithShiftToTheLeft")(insertTableCellWithShiftToTheLeft)
+    __obj.updateDynamic("insertTableCellsDialog")(insertTableCellsDialog)
+    __obj.updateDynamic("insertTableCellsWithShiftToTheVertically")(insertTableCellsWithShiftToTheVertically)
+    __obj.updateDynamic("insertTableColumnToTheLeft")(insertTableColumnToTheLeft)
+    __obj.updateDynamic("insertTableColumnToTheRight")(insertTableColumnToTheRight)
+    __obj.updateDynamic("insertTableOfContents")(insertTableOfContents)
+    __obj.updateDynamic("insertTableOfEquations")(insertTableOfEquations)
+    __obj.updateDynamic("insertTableOfFigures")(insertTableOfFigures)
+    __obj.updateDynamic("insertTableOfTables")(insertTableOfTables)
+    __obj.updateDynamic("insertTableRowAbove")(insertTableRowAbove)
+    __obj.updateDynamic("insertTableRowBelow")(insertTableRowBelow)
+    __obj.updateDynamic("insertTablesCaption")(insertTablesCaption)
+    __obj.updateDynamic("insertText")(insertText)
+    __obj.updateDynamic("linkHeaderFooterToPrevious")(linkHeaderFooterToPrevious)
+    __obj.updateDynamic("mailMergeAndDownload")(mailMergeAndDownload)
+    __obj.updateDynamic("mailMergeAndSaveAs")(mailMergeAndSaveAs)
+    __obj.updateDynamic("mailMergeDialog")(mailMergeDialog)
+    __obj.updateDynamic("makeTextLowerCase")(makeTextLowerCase)
+    __obj.updateDynamic("makeTextSentenceCase")(makeTextSentenceCase)
+    __obj.asInstanceOf[RichEditCommands]
+  }
+}
+

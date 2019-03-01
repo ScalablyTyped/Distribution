@@ -12,3 +12,24 @@ trait SaveOptions extends SyncOptions {
   var require: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SaveOptions {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    defaults: java.lang.String = null,
+    method: java.lang.String = null,
+    patch: js.UndefOr[scala.Boolean] = js.undefined,
+    require: js.UndefOr[scala.Boolean] = js.undefined,
+    transacting: knexLib.knexMod.KnexNs.Transaction = null
+  ): SaveOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined(patch)) __obj.updateDynamic("patch")(patch)
+    if (!js.isUndefined(require)) __obj.updateDynamic("require")(require)
+    if (transacting != null) __obj.updateDynamic("transacting")(transacting)
+    __obj.asInstanceOf[SaveOptions]
+  }
+}
+

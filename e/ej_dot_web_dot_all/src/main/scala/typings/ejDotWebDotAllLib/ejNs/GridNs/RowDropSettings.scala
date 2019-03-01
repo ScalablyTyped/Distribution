@@ -24,3 +24,20 @@ trait RowDropSettings extends js.Object {
   var dropTargetID: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowDropSettings {
+  @scala.inline
+  def apply(
+    dragBehavior: DragBehavior | java.lang.String = null,
+    dragMapper: java.lang.String = null,
+    dropMapper: java.lang.String = null,
+    dropTargetID: js.Any = null
+  ): RowDropSettings = {
+    val __obj = js.Dynamic.literal()
+    if (dragBehavior != null) __obj.updateDynamic("dragBehavior")(dragBehavior.asInstanceOf[js.Any])
+    if (dragMapper != null) __obj.updateDynamic("dragMapper")(dragMapper)
+    if (dropMapper != null) __obj.updateDynamic("dropMapper")(dropMapper)
+    if (dropTargetID != null) __obj.updateDynamic("dropTargetID")(dropTargetID)
+    __obj.asInstanceOf[RowDropSettings]
+  }
+}
+

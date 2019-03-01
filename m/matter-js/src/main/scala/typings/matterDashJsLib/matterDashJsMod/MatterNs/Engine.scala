@@ -88,3 +88,32 @@ trait Engine extends js.Object {
   var world: World
 }
 
+object Engine {
+  @scala.inline
+  def apply(
+    broadphase: Grid,
+    constraintIterations: scala.Double,
+    enableSleeping: scala.Boolean,
+    enabled: scala.Boolean,
+    pairs: js.Any,
+    positionIterations: scala.Double,
+    render: Render,
+    timing: IEngineTimingOptions,
+    velocityIterations: scala.Double,
+    world: World
+  ): Engine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("broadphase")(broadphase)
+    __obj.updateDynamic("constraintIterations")(constraintIterations)
+    __obj.updateDynamic("enableSleeping")(enableSleeping)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("pairs")(pairs)
+    __obj.updateDynamic("positionIterations")(positionIterations)
+    __obj.updateDynamic("render")(render)
+    __obj.updateDynamic("timing")(timing)
+    __obj.updateDynamic("velocityIterations")(velocityIterations)
+    __obj.updateDynamic("world")(world)
+    __obj.asInstanceOf[Engine]
+  }
+}
+

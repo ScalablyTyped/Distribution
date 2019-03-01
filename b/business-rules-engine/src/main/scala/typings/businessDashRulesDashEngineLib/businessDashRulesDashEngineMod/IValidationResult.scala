@@ -18,3 +18,32 @@ trait IValidationResult extends js.Object {
   def Remove(index: scala.Double): scala.Unit
 }
 
+object IValidationResult {
+  @scala.inline
+  def apply(
+    Add: js.Function1[IValidationResult, scala.Unit],
+    Children: js.Array[IValidationResult],
+    ErrorCount: scala.Double,
+    ErrorMessage: java.lang.String,
+    HasErrors: scala.Boolean,
+    HasErrorsDirty: scala.Boolean,
+    Name: java.lang.String,
+    Remove: js.Function1[scala.Double, scala.Unit],
+    Optional: IOptional = null,
+    TranslateArgs: js.Array[IErrorTranslateArgs] = null
+  ): IValidationResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Add")(Add)
+    __obj.updateDynamic("Children")(Children)
+    __obj.updateDynamic("ErrorCount")(ErrorCount)
+    __obj.updateDynamic("ErrorMessage")(ErrorMessage)
+    __obj.updateDynamic("HasErrors")(HasErrors)
+    __obj.updateDynamic("HasErrorsDirty")(HasErrorsDirty)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Remove")(Remove)
+    if (Optional != null) __obj.updateDynamic("Optional")(Optional)
+    if (TranslateArgs != null) __obj.updateDynamic("TranslateArgs")(TranslateArgs)
+    __obj.asInstanceOf[IValidationResult]
+  }
+}
+

@@ -14,3 +14,24 @@ trait Anon_IdKinesisFirehoseKinesisStream extends js.Object {
   var schema: Anon_RecordFormatType
 }
 
+object Anon_IdKinesisFirehoseKinesisStream {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    schema: Anon_RecordFormatType,
+    kinesisFirehose: Anon_ResourceArn = null,
+    kinesisStream: Anon_ResourceArn = null,
+    lambda: Anon_ResourceArn = null
+  ): Anon_IdKinesisFirehoseKinesisStream = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("schema")(schema)
+    if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose)
+    if (kinesisStream != null) __obj.updateDynamic("kinesisStream")(kinesisStream)
+    if (lambda != null) __obj.updateDynamic("lambda")(lambda)
+    __obj.asInstanceOf[Anon_IdKinesisFirehoseKinesisStream]
+  }
+}
+

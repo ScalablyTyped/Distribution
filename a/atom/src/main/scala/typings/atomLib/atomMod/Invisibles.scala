@@ -28,3 +28,20 @@ trait Invisibles extends js.Object {
   var tab: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object Invisibles {
+  @scala.inline
+  def apply(
+    cr: scala.Boolean | java.lang.String = null,
+    eol: scala.Boolean | java.lang.String = null,
+    space: scala.Boolean | java.lang.String = null,
+    tab: scala.Boolean | java.lang.String = null
+  ): Invisibles = {
+    val __obj = js.Dynamic.literal()
+    if (cr != null) __obj.updateDynamic("cr")(cr.asInstanceOf[js.Any])
+    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
+    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
+    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Invisibles]
+  }
+}
+

@@ -18,3 +18,18 @@ trait DataFlavor extends js.Object {
   var MimeType: java.lang.String
 }
 
+object DataFlavor {
+  @scala.inline
+  def apply(
+    DataType: activexDashLibreofficeLib.`type`,
+    HumanPresentableName: java.lang.String,
+    MimeType: java.lang.String
+  ): DataFlavor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataType")(DataType)
+    __obj.updateDynamic("HumanPresentableName")(HumanPresentableName)
+    __obj.updateDynamic("MimeType")(MimeType)
+    __obj.asInstanceOf[DataFlavor]
+  }
+}
+

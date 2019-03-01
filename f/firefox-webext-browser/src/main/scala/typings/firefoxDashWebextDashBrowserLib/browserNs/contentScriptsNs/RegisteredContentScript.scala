@@ -11,3 +11,12 @@ trait RegisteredContentScript extends js.Object {
   def unregister(): js.Promise[_]
 }
 
+object RegisteredContentScript {
+  @scala.inline
+  def apply(unregister: js.Function0[js.Promise[_]]): RegisteredContentScript = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("unregister")(unregister)
+    __obj.asInstanceOf[RegisteredContentScript]
+  }
+}
+

@@ -28,3 +28,22 @@ trait AddOptions extends js.Object {
   var programPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AddOptions {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    nodeArgs: js.Array[java.lang.String] = null,
+    nodePath: java.lang.String = null,
+    programArgs: js.Array[java.lang.String] = null,
+    programPath: java.lang.String = null
+  ): AddOptions = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (nodeArgs != null) __obj.updateDynamic("nodeArgs")(nodeArgs)
+    if (nodePath != null) __obj.updateDynamic("nodePath")(nodePath)
+    if (programArgs != null) __obj.updateDynamic("programArgs")(programArgs)
+    if (programPath != null) __obj.updateDynamic("programPath")(programPath)
+    __obj.asInstanceOf[AddOptions]
+  }
+}
+

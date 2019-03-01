@@ -181,3 +181,58 @@ trait ChartData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartData {
+  @scala.inline
+  def apply(
+    axes: ChartAxesData = null,
+    categoryLabelLevel: scala.Int | scala.Double = null,
+    chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any = null,
+    dataLabels: ChartDataLabelsData = null,
+    displayBlanksAs: officeDashJsDashPreviewLib.ExcelNs.ChartDisplayBlanksAs | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotPlotted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Zero | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Interplotted = null,
+    format: ChartAreaFormatData = null,
+    height: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    left: scala.Int | scala.Double = null,
+    legend: ChartLegendData = null,
+    name: java.lang.String = null,
+    pivotOptions: ChartPivotOptionsData = null,
+    plotArea: ChartPlotAreaData = null,
+    plotBy: officeDashJsDashPreviewLib.ExcelNs.ChartPlotBy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Rows | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Columns = null,
+    plotVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    series: js.Array[ChartSeriesData] = null,
+    seriesNameLevel: scala.Int | scala.Double = null,
+    showAllFieldButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    showDataLabelsOverMaximum: js.UndefOr[scala.Boolean] = js.undefined,
+    style: scala.Int | scala.Double = null,
+    title: ChartTitleData = null,
+    top: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): ChartData = {
+    val __obj = js.Dynamic.literal()
+    if (axes != null) __obj.updateDynamic("axes")(axes)
+    if (categoryLabelLevel != null) __obj.updateDynamic("categoryLabelLevel")(categoryLabelLevel.asInstanceOf[js.Any])
+    if (chartType != null) __obj.updateDynamic("chartType")(chartType)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (displayBlanksAs != null) __obj.updateDynamic("displayBlanksAs")(displayBlanksAs.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pivotOptions != null) __obj.updateDynamic("pivotOptions")(pivotOptions)
+    if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea)
+    if (plotBy != null) __obj.updateDynamic("plotBy")(plotBy.asInstanceOf[js.Any])
+    if (!js.isUndefined(plotVisibleOnly)) __obj.updateDynamic("plotVisibleOnly")(plotVisibleOnly)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (seriesNameLevel != null) __obj.updateDynamic("seriesNameLevel")(seriesNameLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAllFieldButtons)) __obj.updateDynamic("showAllFieldButtons")(showAllFieldButtons)
+    if (!js.isUndefined(showDataLabelsOverMaximum)) __obj.updateDynamic("showDataLabelsOverMaximum")(showDataLabelsOverMaximum)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartData]
+  }
+}
+

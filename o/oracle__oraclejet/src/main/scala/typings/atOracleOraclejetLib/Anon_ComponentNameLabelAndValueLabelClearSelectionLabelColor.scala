@@ -29,3 +29,54 @@ trait Anon_ComponentNameLabelAndValueLabelClearSelectionLabelColor extends js.Ob
   var tooltipExpand: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ComponentNameLabelAndValueLabelClearSelectionLabelColor {
+  @scala.inline
+  def apply(
+    componentName: java.lang.String = null,
+    labelAndValue: java.lang.String = null,
+    labelClearSelection: java.lang.String = null,
+    labelColor: java.lang.String = null,
+    labelCountWithTotal: java.lang.String = null,
+    labelDataVisualization: java.lang.String = null,
+    labelInvalidData: java.lang.String = null,
+    labelNoData: java.lang.String = null,
+    labelSize: java.lang.String = null,
+    stateCollapsed: java.lang.String = null,
+    stateDrillable: java.lang.String = null,
+    stateExpanded: java.lang.String = null,
+    stateHidden: java.lang.String = null,
+    stateIsolated: java.lang.String = null,
+    stateMaximized: java.lang.String = null,
+    stateMinimized: java.lang.String = null,
+    stateSelected: java.lang.String = null,
+    stateUnselected: java.lang.String = null,
+    stateVisible: java.lang.String = null,
+    tooltipCollapse: java.lang.String = null,
+    tooltipExpand: java.lang.String = null
+  ): Anon_ComponentNameLabelAndValueLabelClearSelectionLabelColor = {
+    val __obj = js.Dynamic.literal()
+    if (componentName != null) __obj.updateDynamic("componentName")(componentName)
+    if (labelAndValue != null) __obj.updateDynamic("labelAndValue")(labelAndValue)
+    if (labelClearSelection != null) __obj.updateDynamic("labelClearSelection")(labelClearSelection)
+    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
+    if (labelCountWithTotal != null) __obj.updateDynamic("labelCountWithTotal")(labelCountWithTotal)
+    if (labelDataVisualization != null) __obj.updateDynamic("labelDataVisualization")(labelDataVisualization)
+    if (labelInvalidData != null) __obj.updateDynamic("labelInvalidData")(labelInvalidData)
+    if (labelNoData != null) __obj.updateDynamic("labelNoData")(labelNoData)
+    if (labelSize != null) __obj.updateDynamic("labelSize")(labelSize)
+    if (stateCollapsed != null) __obj.updateDynamic("stateCollapsed")(stateCollapsed)
+    if (stateDrillable != null) __obj.updateDynamic("stateDrillable")(stateDrillable)
+    if (stateExpanded != null) __obj.updateDynamic("stateExpanded")(stateExpanded)
+    if (stateHidden != null) __obj.updateDynamic("stateHidden")(stateHidden)
+    if (stateIsolated != null) __obj.updateDynamic("stateIsolated")(stateIsolated)
+    if (stateMaximized != null) __obj.updateDynamic("stateMaximized")(stateMaximized)
+    if (stateMinimized != null) __obj.updateDynamic("stateMinimized")(stateMinimized)
+    if (stateSelected != null) __obj.updateDynamic("stateSelected")(stateSelected)
+    if (stateUnselected != null) __obj.updateDynamic("stateUnselected")(stateUnselected)
+    if (stateVisible != null) __obj.updateDynamic("stateVisible")(stateVisible)
+    if (tooltipCollapse != null) __obj.updateDynamic("tooltipCollapse")(tooltipCollapse)
+    if (tooltipExpand != null) __obj.updateDynamic("tooltipExpand")(tooltipExpand)
+    __obj.asInstanceOf[Anon_ComponentNameLabelAndValueLabelClearSelectionLabelColor]
+  }
+}
+

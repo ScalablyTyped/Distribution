@@ -13,3 +13,22 @@ trait Props extends js.Object {
   var swipeOptions: js.UndefOr[swipeLib.SwipeOptions] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    childCount: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    id: java.lang.String = null,
+    style: Style = null,
+    swipeOptions: swipeLib.SwipeOptions = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (childCount != null) __obj.updateDynamic("childCount")(childCount.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (swipeOptions != null) __obj.updateDynamic("swipeOptions")(swipeOptions)
+    __obj.asInstanceOf[Props]
+  }
+}
+

@@ -10,3 +10,26 @@ trait ErrorVar extends ValidationError {
   var stack: java.lang.String
 }
 
+object ErrorVar {
+  @scala.inline
+  def apply(
+    code: scala.Double,
+    message: js.Any,
+    params: js.Any,
+    stack: java.lang.String,
+    subErrors: js.Any,
+    dataPath: java.lang.String = null,
+    schemaPath: java.lang.String = null
+  ): ErrorVar = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("stack")(stack)
+    __obj.updateDynamic("subErrors")(subErrors)
+    if (dataPath != null) __obj.updateDynamic("dataPath")(dataPath)
+    if (schemaPath != null) __obj.updateDynamic("schemaPath")(schemaPath)
+    __obj.asInstanceOf[ErrorVar]
+  }
+}
+

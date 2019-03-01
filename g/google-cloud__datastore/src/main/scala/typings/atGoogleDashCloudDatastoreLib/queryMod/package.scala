@@ -15,6 +15,5 @@ package object queryMod {
     /* info */ QueryInfo, 
     scala.Unit
   ]
-  type QueryFilterOperator = atGoogleDashCloudDatastoreLib.atGoogleDashCloudDatastoreLibStrings.`<` | atGoogleDashCloudDatastoreLib.atGoogleDashCloudDatastoreLibStrings.`<=` | atGoogleDashCloudDatastoreLib.atGoogleDashCloudDatastoreLibStrings.`=` | atGoogleDashCloudDatastoreLib.atGoogleDashCloudDatastoreLibStrings.`>=` | atGoogleDashCloudDatastoreLib.atGoogleDashCloudDatastoreLibStrings.`>`
   type QueryResult = js.Tuple2[js.Array[js.Object], QueryInfo]
 }

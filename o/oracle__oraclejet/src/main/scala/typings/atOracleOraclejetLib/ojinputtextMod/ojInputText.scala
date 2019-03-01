@@ -13,20 +13,18 @@ trait ojInputText
   var list: java.lang.String = js.native
   var onClearIconChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['clearIcon'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.never | atOracleOraclejetLib.atOracleOraclejetLibStrings.always | atOracleOraclejetLib.atOracleOraclejetLibStrings.conditional
     ], 
     _
   ]) | scala.Null = js.native
   var onConverterChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['converter'] */ js.Any
+      atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter | scala.Null
     ], 
     _
   ]) | scala.Null = js.native
   var onListChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['list'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
   @JSName("onOjAnimateEnd")
@@ -35,7 +33,7 @@ trait ojInputText
   var onOjAnimateStart_ojInputText: (js.Function1[/* event */ atOracleOraclejetLib.ojinputtextMod.ojInputTextNs.ojAnimateStart, _]) | scala.Null = js.native
   var onVirtualKeyboardChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['virtualKeyboard'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.email | atOracleOraclejetLib.atOracleOraclejetLibStrings.number | atOracleOraclejetLib.atOracleOraclejetLibStrings.search | atOracleOraclejetLib.atOracleOraclejetLibStrings.tel | atOracleOraclejetLib.atOracleOraclejetLibStrings.text | atOracleOraclejetLib.atOracleOraclejetLibStrings.url
     ], 
     _
   ]) | scala.Null = js.native
@@ -45,7 +43,7 @@ trait ojInputText
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['clearIcon'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.never | atOracleOraclejetLib.atOracleOraclejetLibStrings.always | atOracleOraclejetLib.atOracleOraclejetLibStrings.conditional
       ], 
       _
     ]
@@ -55,49 +53,7 @@ trait ojInputText
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['clearIcon'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.converterChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['converter'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.converterChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['converter'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.listChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['list'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.listChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['list'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.never | atOracleOraclejetLib.atOracleOraclejetLibStrings.always | atOracleOraclejetLib.atOracleOraclejetLibStrings.conditional
       ], 
       _
     ],
@@ -108,7 +64,7 @@ trait ojInputText
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['virtualKeyboard'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.email | atOracleOraclejetLib.atOracleOraclejetLibStrings.number | atOracleOraclejetLib.atOracleOraclejetLibStrings.search | atOracleOraclejetLib.atOracleOraclejetLibStrings.tel | atOracleOraclejetLib.atOracleOraclejetLibStrings.text | atOracleOraclejetLib.atOracleOraclejetLibStrings.url
       ], 
       _
     ]
@@ -118,8 +74,50 @@ trait ojInputText
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['virtualKeyboard'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.email | atOracleOraclejetLib.atOracleOraclejetLibStrings.number | atOracleOraclejetLib.atOracleOraclejetLibStrings.search | atOracleOraclejetLib.atOracleOraclejetLibStrings.tel | atOracleOraclejetLib.atOracleOraclejetLibStrings.text | atOracleOraclejetLib.atOracleOraclejetLibStrings.url
       ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_converterChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.converterChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter | scala.Null
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_converterChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.converterChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter | scala.Null
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_listChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.listChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_listChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.listChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
       _
     ],
     useCapture: scala.Boolean

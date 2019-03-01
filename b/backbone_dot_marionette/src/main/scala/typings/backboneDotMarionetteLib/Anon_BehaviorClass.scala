@@ -13,3 +13,19 @@ trait Anon_BehaviorClass
   ]
 }
 
+object Anon_BehaviorClass {
+  @scala.inline
+  def apply(
+    behaviorClass: org.scalablytyped.runtime.Instantiable1[
+      /* options */ js.UndefOr[/* options */ js.Any], 
+      backboneDotMarionetteLib.backboneDotMarionetteMod.Behavior
+    ],
+    StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_BehaviorClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("behaviorClass")(behaviorClass)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_BehaviorClass]
+  }
+}
+

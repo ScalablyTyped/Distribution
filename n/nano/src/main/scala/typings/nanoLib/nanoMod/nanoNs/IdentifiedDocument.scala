@@ -9,3 +9,12 @@ trait IdentifiedDocument extends js.Object {
   var _id: java.lang.String
 }
 
+object IdentifiedDocument {
+  @scala.inline
+  def apply(_id: java.lang.String): IdentifiedDocument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_id")(_id)
+    __obj.asInstanceOf[IdentifiedDocument]
+  }
+}
+

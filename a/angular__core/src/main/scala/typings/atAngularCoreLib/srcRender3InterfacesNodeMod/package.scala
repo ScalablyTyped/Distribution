@@ -15,5 +15,4 @@ package object srcRender3InterfacesNodeMod {
   ]
   type PropertyAliasValue = js.Array[scala.Double | java.lang.String]
   type TAttributes = js.Array[java.lang.String | AttributeMarker]
-  type TNodeWithLocalRefs = TContainerNode | TElementNode | TElementContainerNode
 }

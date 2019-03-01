@@ -28,3 +28,34 @@ trait GitItem extends ItemModel {
   var originalObjectId: java.lang.String
 }
 
+object GitItem {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    commitId: java.lang.String,
+    contentMetadata: FileContentMetadata,
+    gitObjectType: GitObjectType,
+    isFolder: scala.Boolean,
+    isSymLink: scala.Boolean,
+    latestProcessedChange: GitCommitRef,
+    objectId: java.lang.String,
+    originalObjectId: java.lang.String,
+    path: java.lang.String,
+    url: java.lang.String
+  ): GitItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("commitId")(commitId)
+    __obj.updateDynamic("contentMetadata")(contentMetadata)
+    __obj.updateDynamic("gitObjectType")(gitObjectType)
+    __obj.updateDynamic("isFolder")(isFolder)
+    __obj.updateDynamic("isSymLink")(isSymLink)
+    __obj.updateDynamic("latestProcessedChange")(latestProcessedChange)
+    __obj.updateDynamic("objectId")(objectId)
+    __obj.updateDynamic("originalObjectId")(originalObjectId)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GitItem]
+  }
+}
+

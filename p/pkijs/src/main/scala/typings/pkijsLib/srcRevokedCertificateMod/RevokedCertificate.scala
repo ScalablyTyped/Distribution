@@ -14,3 +14,24 @@ trait RevokedCertificate extends js.Object {
   def toSchema(): js.Any
 }
 
+object RevokedCertificate {
+  @scala.inline
+  def apply(
+    crlEntryExtensions: pkijsLib.srcExtensionsMod.default,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    revocationDate: pkijsLib.srcTimeMod.default,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    userCertificate: asn1jsLib.asn1jsMod.Integer
+  ): RevokedCertificate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("crlEntryExtensions")(crlEntryExtensions)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("revocationDate")(revocationDate)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.updateDynamic("userCertificate")(userCertificate)
+    __obj.asInstanceOf[RevokedCertificate]
+  }
+}
+

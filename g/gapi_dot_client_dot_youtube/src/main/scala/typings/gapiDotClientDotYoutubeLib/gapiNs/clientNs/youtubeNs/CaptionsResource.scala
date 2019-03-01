@@ -24,3 +24,37 @@ trait CaptionsResource extends js.Object {
   def update(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Caption]
 }
 
+object CaptionsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    download: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Caption]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CaptionListResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Caption]
+    ]
+  ): CaptionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("download")(download)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[CaptionsResource]
+  }
+}
+

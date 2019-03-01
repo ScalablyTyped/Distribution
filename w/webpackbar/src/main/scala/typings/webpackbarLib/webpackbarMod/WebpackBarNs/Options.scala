@@ -28,3 +28,30 @@ trait Options extends js.Object {
   var stream: js.UndefOr[nodeLib.NodeJSNs.WriteStream] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    compiledIn: js.UndefOr[scala.Boolean] = js.undefined,
+    done: js.Function2[
+      /* sharedState */ SharedState, 
+      /* ctx */ webpackbarLib.webpackbarMod.WebpackBar, 
+      scala.Unit
+    ] = null,
+    minimal: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    profile: js.UndefOr[scala.Boolean] = js.undefined,
+    stream: nodeLib.NodeJSNs.WriteStream = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(compiledIn)) __obj.updateDynamic("compiledIn")(compiledIn)
+    if (done != null) __obj.updateDynamic("done")(done)
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile)
+    if (stream != null) __obj.updateDynamic("stream")(stream)
+    __obj.asInstanceOf[Options]
+  }
+}
+

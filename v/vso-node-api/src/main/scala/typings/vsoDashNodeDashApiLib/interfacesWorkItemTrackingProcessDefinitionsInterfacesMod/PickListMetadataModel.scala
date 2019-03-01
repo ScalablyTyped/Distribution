@@ -28,3 +28,21 @@ trait PickListMetadataModel extends js.Object {
   var url: java.lang.String
 }
 
+object PickListMetadataModel {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    isSuggested: scala.Boolean,
+    name: java.lang.String,
+    `type`: java.lang.String,
+    url: java.lang.String
+  ): PickListMetadataModel = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isSuggested")(isSuggested)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[PickListMetadataModel]
+  }
+}
+

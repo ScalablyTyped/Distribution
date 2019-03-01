@@ -9,3 +9,12 @@ trait Anon_IndexString extends js.Object {
   var index: java.lang.String
 }
 
+object Anon_IndexString {
+  @scala.inline
+  def apply(index: java.lang.String): Anon_IndexString = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.asInstanceOf[Anon_IndexString]
+  }
+}
+

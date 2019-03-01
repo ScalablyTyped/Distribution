@@ -30,3 +30,34 @@ trait XLocator
   def getSystemId(): java.lang.String
 }
 
+object XLocator {
+  @scala.inline
+  def apply(
+    ColumnNumber: scala.Double,
+    LineNumber: scala.Double,
+    PublicId: java.lang.String,
+    SystemId: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getColumnNumber: js.Function0[scala.Double],
+    getLineNumber: js.Function0[scala.Double],
+    getPublicId: js.Function0[java.lang.String],
+    getSystemId: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLocator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColumnNumber")(ColumnNumber)
+    __obj.updateDynamic("LineNumber")(LineNumber)
+    __obj.updateDynamic("PublicId")(PublicId)
+    __obj.updateDynamic("SystemId")(SystemId)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getColumnNumber")(getColumnNumber)
+    __obj.updateDynamic("getLineNumber")(getLineNumber)
+    __obj.updateDynamic("getPublicId")(getPublicId)
+    __obj.updateDynamic("getSystemId")(getSystemId)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XLocator]
+  }
+}
+

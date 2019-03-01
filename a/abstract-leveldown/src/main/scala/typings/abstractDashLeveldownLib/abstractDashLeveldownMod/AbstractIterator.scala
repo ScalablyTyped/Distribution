@@ -11,3 +11,18 @@ trait AbstractIterator[K, V] extends AbstractOptions {
   def next(cb: ErrorKeyValueCallback[K, V]): this.type
 }
 
+object AbstractIterator {
+  @scala.inline
+  def apply[K, V](
+    db: AbstractLevelDOWN[K, V],
+    end: js.Function1[ErrorCallback, scala.Unit],
+    next: js.Function1[ErrorKeyValueCallback[K, V], AbstractIterator[K, V]]
+  ): AbstractIterator[K, V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("db")(db)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[AbstractIterator[K, V]]
+  }
+}
+

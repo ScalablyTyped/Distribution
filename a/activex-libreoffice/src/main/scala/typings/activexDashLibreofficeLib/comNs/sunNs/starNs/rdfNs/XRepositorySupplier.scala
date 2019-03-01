@@ -23,3 +23,13 @@ trait XRepositorySupplier extends js.Object {
   def getRDFRepository(): XRepository
 }
 
+object XRepositorySupplier {
+  @scala.inline
+  def apply(RDFRepository: XRepository, getRDFRepository: js.Function0[XRepository]): XRepositorySupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RDFRepository")(RDFRepository)
+    __obj.updateDynamic("getRDFRepository")(getRDFRepository)
+    __obj.asInstanceOf[XRepositorySupplier]
+  }
+}
+

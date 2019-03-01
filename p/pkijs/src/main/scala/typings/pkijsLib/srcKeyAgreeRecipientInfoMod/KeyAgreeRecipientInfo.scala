@@ -17,3 +17,30 @@ trait KeyAgreeRecipientInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object KeyAgreeRecipientInfo {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    keyEncryptionAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    originator: pkijsLib.srcOriginatorIdentifierOrKeyMod.default,
+    recipientCertificate: pkijsLib.srcCertificateMod.default,
+    recipientEncryptedKeys: pkijsLib.srcRecipientEncryptedKeysMod.default,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    version: scala.Double,
+    ukm: asn1jsLib.asn1jsMod.OctetString = null
+  ): KeyAgreeRecipientInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("keyEncryptionAlgorithm")(keyEncryptionAlgorithm)
+    __obj.updateDynamic("originator")(originator)
+    __obj.updateDynamic("recipientCertificate")(recipientCertificate)
+    __obj.updateDynamic("recipientEncryptedKeys")(recipientEncryptedKeys)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.updateDynamic("version")(version)
+    if (ukm != null) __obj.updateDynamic("ukm")(ukm)
+    __obj.asInstanceOf[KeyAgreeRecipientInfo]
+  }
+}
+

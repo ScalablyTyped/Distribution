@@ -14,3 +14,12 @@ trait ClientOptions extends js.Object {
   var watchmanBinaryPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(watchmanBinaryPath: java.lang.String = null): ClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (watchmanBinaryPath != null) __obj.updateDynamic("watchmanBinaryPath")(watchmanBinaryPath)
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

@@ -11,3 +11,13 @@ trait InappproductsBatchResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InappproductsBatchResponse {
+  @scala.inline
+  def apply(entrys: js.Array[InappproductsBatchResponseEntry] = null, kind: java.lang.String = null): InappproductsBatchResponse = {
+    val __obj = js.Dynamic.literal()
+    if (entrys != null) __obj.updateDynamic("entrys")(entrys)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[InappproductsBatchResponse]
+  }
+}
+

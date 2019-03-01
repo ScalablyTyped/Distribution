@@ -66,3 +66,36 @@ trait ClusterIconStyle extends js.Object {
   var width: scala.Double
 }
 
+object ClusterIconStyle {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    url: java.lang.String,
+    width: scala.Double,
+    anchorIcon: js.Array[scala.Double] = null,
+    anchorText: js.Array[scala.Double] = null,
+    backgroundPosition: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    textColor: java.lang.String = null,
+    textDecoration: java.lang.String = null,
+    textSize: scala.Int | scala.Double = null
+  ): ClusterIconStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("width")(width)
+    if (anchorIcon != null) __obj.updateDynamic("anchorIcon")(anchorIcon)
+    if (anchorText != null) __obj.updateDynamic("anchorText")(anchorText)
+    if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration)
+    if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterIconStyle]
+  }
+}
+

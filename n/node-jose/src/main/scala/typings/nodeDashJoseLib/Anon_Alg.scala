@@ -14,3 +14,20 @@ trait Anon_Alg extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Alg {
+  @scala.inline
+  def apply(
+    alg: java.lang.String = null,
+    compact: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: js.Object = null,
+    format: nodeDashJoseLib.nodeDashJoseLibStrings.compact | nodeDashJoseLib.nodeDashJoseLibStrings.flattened = null
+  ): Anon_Alg = {
+    val __obj = js.Dynamic.literal()
+    if (alg != null) __obj.updateDynamic("alg")(alg)
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Alg]
+  }
+}
+

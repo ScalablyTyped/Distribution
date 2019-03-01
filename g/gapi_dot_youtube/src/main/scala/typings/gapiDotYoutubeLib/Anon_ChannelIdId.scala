@@ -32,3 +32,24 @@ trait Anon_ChannelIdId extends js.Object {
   var part: java.lang.String
 }
 
+object Anon_ChannelIdId {
+  @scala.inline
+  def apply(
+    pagetoken: java.lang.String,
+    part: java.lang.String,
+    channelId: java.lang.String = null,
+    id: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    mine: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ChannelIdId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pagetoken")(pagetoken)
+    __obj.updateDynamic("part")(part)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
+    __obj.asInstanceOf[Anon_ChannelIdId]
+  }
+}
+

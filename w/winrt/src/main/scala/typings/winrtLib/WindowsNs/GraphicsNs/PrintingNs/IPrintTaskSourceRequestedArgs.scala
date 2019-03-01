@@ -11,3 +11,18 @@ trait IPrintTaskSourceRequestedArgs extends js.Object {
   def setSource(source: IPrintDocumentSource): scala.Unit
 }
 
+object IPrintTaskSourceRequestedArgs {
+  @scala.inline
+  def apply(
+    deadline: stdLib.Date,
+    getDeferral: js.Function0[PrintTaskSourceRequestedDeferral],
+    setSource: js.Function1[IPrintDocumentSource, scala.Unit]
+  ): IPrintTaskSourceRequestedArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deadline")(deadline)
+    __obj.updateDynamic("getDeferral")(getDeferral)
+    __obj.updateDynamic("setSource")(setSource)
+    __obj.asInstanceOf[IPrintTaskSourceRequestedArgs]
+  }
+}
+

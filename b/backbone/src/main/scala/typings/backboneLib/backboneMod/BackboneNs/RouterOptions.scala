@@ -9,3 +9,12 @@ trait RouterOptions extends js.Object {
   var routes: js.Any
 }
 
+object RouterOptions {
+  @scala.inline
+  def apply(routes: js.Any): RouterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("routes")(routes)
+    __obj.asInstanceOf[RouterOptions]
+  }
+}
+

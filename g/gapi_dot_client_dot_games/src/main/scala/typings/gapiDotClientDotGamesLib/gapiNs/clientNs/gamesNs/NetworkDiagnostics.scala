@@ -30,3 +30,26 @@ trait NetworkDiagnostics extends js.Object {
   var registrationLatencyMillis: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NetworkDiagnostics {
+  @scala.inline
+  def apply(
+    androidNetworkSubtype: scala.Int | scala.Double = null,
+    androidNetworkType: scala.Int | scala.Double = null,
+    iosNetworkType: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    networkOperatorCode: java.lang.String = null,
+    networkOperatorName: java.lang.String = null,
+    registrationLatencyMillis: scala.Int | scala.Double = null
+  ): NetworkDiagnostics = {
+    val __obj = js.Dynamic.literal()
+    if (androidNetworkSubtype != null) __obj.updateDynamic("androidNetworkSubtype")(androidNetworkSubtype.asInstanceOf[js.Any])
+    if (androidNetworkType != null) __obj.updateDynamic("androidNetworkType")(androidNetworkType.asInstanceOf[js.Any])
+    if (iosNetworkType != null) __obj.updateDynamic("iosNetworkType")(iosNetworkType.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (networkOperatorCode != null) __obj.updateDynamic("networkOperatorCode")(networkOperatorCode)
+    if (networkOperatorName != null) __obj.updateDynamic("networkOperatorName")(networkOperatorName)
+    if (registrationLatencyMillis != null) __obj.updateDynamic("registrationLatencyMillis")(registrationLatencyMillis.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkDiagnostics]
+  }
+}
+

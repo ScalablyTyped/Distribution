@@ -32,3 +32,22 @@ trait SelectionSettings extends js.Object {
   ] = js.undefined
 }
 
+object SelectionSettings {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstHighlightMode | java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    `type`: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstHighlightType | java.lang.String = null
+  ): SelectionSettings = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectionSettings]
+  }
+}
+

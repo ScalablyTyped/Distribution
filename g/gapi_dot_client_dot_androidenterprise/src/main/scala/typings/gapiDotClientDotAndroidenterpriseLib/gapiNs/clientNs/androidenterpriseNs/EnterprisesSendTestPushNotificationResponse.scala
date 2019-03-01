@@ -12,3 +12,13 @@ trait EnterprisesSendTestPushNotificationResponse extends js.Object {
   var topicName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EnterprisesSendTestPushNotificationResponse {
+  @scala.inline
+  def apply(messageId: java.lang.String = null, topicName: java.lang.String = null): EnterprisesSendTestPushNotificationResponse = {
+    val __obj = js.Dynamic.literal()
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (topicName != null) __obj.updateDynamic("topicName")(topicName)
+    __obj.asInstanceOf[EnterprisesSendTestPushNotificationResponse]
+  }
+}
+

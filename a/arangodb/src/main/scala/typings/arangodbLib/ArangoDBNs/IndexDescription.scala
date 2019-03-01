@@ -13,3 +13,21 @@ trait IndexDescription[T] extends js.Object {
   var unique: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IndexDescription {
+  @scala.inline
+  def apply[T](
+    fields: js.Array[java.lang.String],
+    `type`: IndexType,
+    deduplicate: js.UndefOr[scala.Boolean] = js.undefined,
+    sparse: js.UndefOr[scala.Boolean] = js.undefined,
+    unique: js.UndefOr[scala.Boolean] = js.undefined
+  ): IndexDescription[T] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(deduplicate)) __obj.updateDynamic("deduplicate")(deduplicate)
+    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse)
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    __obj.asInstanceOf[IndexDescription[T]]
+  }
+}
+

@@ -10,3 +10,16 @@ trait InputGroupAddonProps
   var bsClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InputGroupAddonProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libInputGroupAddonMod.InputGroupAddon] = null,
+    bsClass: java.lang.String = null
+  ): InputGroupAddonProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    __obj.asInstanceOf[InputGroupAddonProps]
+  }
+}
+

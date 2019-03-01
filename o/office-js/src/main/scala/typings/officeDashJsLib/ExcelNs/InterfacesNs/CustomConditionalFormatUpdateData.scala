@@ -23,3 +23,13 @@ trait CustomConditionalFormatUpdateData extends js.Object {
   var rule: js.UndefOr[ConditionalFormatRuleUpdateData] = js.undefined
 }
 
+object CustomConditionalFormatUpdateData {
+  @scala.inline
+  def apply(format: ConditionalRangeFormatUpdateData = null, rule: ConditionalFormatRuleUpdateData = null): CustomConditionalFormatUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[CustomConditionalFormatUpdateData]
+  }
+}
+

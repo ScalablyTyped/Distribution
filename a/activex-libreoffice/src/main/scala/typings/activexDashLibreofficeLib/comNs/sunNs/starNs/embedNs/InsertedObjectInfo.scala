@@ -18,3 +18,16 @@ trait InsertedObjectInfo extends js.Object {
   var Options: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
 }
 
+object InsertedObjectInfo {
+  @scala.inline
+  def apply(
+    Object: XEmbeddedObject,
+    Options: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+  ): InsertedObjectInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Object")(Object)
+    __obj.updateDynamic("Options")(Options)
+    __obj.asInstanceOf[InsertedObjectInfo]
+  }
+}
+

@@ -32,3 +32,24 @@ trait RoyalSliderVisibleOptions extends js.Object {
   var navigateByCenterClick: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RoyalSliderVisibleOptions {
+  @scala.inline
+  def apply(
+    breakpoint: scala.Int | scala.Double = null,
+    breakpointCenterArea: scala.Int | scala.Double = null,
+    center: js.UndefOr[scala.Boolean] = js.undefined,
+    centerArea: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    navigateByCenterClick: js.UndefOr[scala.Boolean] = js.undefined
+  ): RoyalSliderVisibleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
+    if (breakpointCenterArea != null) __obj.updateDynamic("breakpointCenterArea")(breakpointCenterArea.asInstanceOf[js.Any])
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (centerArea != null) __obj.updateDynamic("centerArea")(centerArea.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(navigateByCenterClick)) __obj.updateDynamic("navigateByCenterClick")(navigateByCenterClick)
+    __obj.asInstanceOf[RoyalSliderVisibleOptions]
+  }
+}
+

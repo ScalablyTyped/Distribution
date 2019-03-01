@@ -10,3 +10,16 @@ trait Anon_XY extends js.Object {
   var y: scala.Double | reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValue
 }
 
+object Anon_XY {
+  @scala.inline
+  def apply(
+    x: scala.Double | reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValue,
+    y: scala.Double | reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValue
+  ): Anon_XY = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_XY]
+  }
+}
+

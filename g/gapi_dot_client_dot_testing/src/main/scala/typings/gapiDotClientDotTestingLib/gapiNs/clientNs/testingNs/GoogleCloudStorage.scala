@@ -16,3 +16,12 @@ trait GoogleCloudStorage extends js.Object {
   var gcsPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudStorage {
+  @scala.inline
+  def apply(gcsPath: java.lang.String = null): GoogleCloudStorage = {
+    val __obj = js.Dynamic.literal()
+    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath)
+    __obj.asInstanceOf[GoogleCloudStorage]
+  }
+}
+

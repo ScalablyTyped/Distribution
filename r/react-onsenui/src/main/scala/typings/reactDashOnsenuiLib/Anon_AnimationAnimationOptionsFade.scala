@@ -18,3 +18,28 @@ trait Anon_AnimationAnimationOptionsFade extends js.Object {
   var onPreShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object Anon_AnimationAnimationOptionsFade {
+  @scala.inline
+  def apply(
+    animation: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.fade | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.lift | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.none = null,
+    animationOptions: reactDashOnsenuiLib.reactDashOnsenuiMod.AnimationOptions = null,
+    isOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    onDeviceBackButton: js.Function0[scala.Unit] = null,
+    onPostHide: js.Function0[scala.Unit] = null,
+    onPostShow: js.Function0[scala.Unit] = null,
+    onPreHide: js.Function0[scala.Unit] = null,
+    onPreShow: js.Function0[scala.Unit] = null
+  ): Anon_AnimationAnimationOptionsFade = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (onDeviceBackButton != null) __obj.updateDynamic("onDeviceBackButton")(onDeviceBackButton)
+    if (onPostHide != null) __obj.updateDynamic("onPostHide")(onPostHide)
+    if (onPostShow != null) __obj.updateDynamic("onPostShow")(onPostShow)
+    if (onPreHide != null) __obj.updateDynamic("onPreHide")(onPreHide)
+    if (onPreShow != null) __obj.updateDynamic("onPreShow")(onPreShow)
+    __obj.asInstanceOf[Anon_AnimationAnimationOptionsFade]
+  }
+}
+

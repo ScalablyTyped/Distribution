@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Blending extends js.Object {
+trait Blending extends IsBlending {
   var blendSrcFgWithDstBg: scala.Boolean = js.native
   @JSName("fn")
   var fn_Original: BlendFunction = js.native

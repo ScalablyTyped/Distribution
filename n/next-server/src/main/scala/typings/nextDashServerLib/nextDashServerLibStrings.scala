@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object nextDashServerLibStrings {
   @js.native
-  sealed trait beforeHistoryChange extends js.Object
+  sealed trait beforeHistoryChange
+    extends nextDashServerLib.routerMod.EventName
   
   @js.native
-  sealed trait hashChangeComplete extends js.Object
+  sealed trait hashChangeComplete
+    extends nextDashServerLib.routerMod.EventName
   
   @js.native
-  sealed trait hashChangeStart extends js.Object
+  sealed trait hashChangeStart
+    extends nextDashServerLib.routerMod.EventName
   
   @js.native
-  sealed trait routeChangeComplete extends js.Object
+  sealed trait routeChangeComplete
+    extends nextDashServerLib.routerMod.EventName
   
   @js.native
-  sealed trait routeChangeError extends js.Object
+  sealed trait routeChangeError
+    extends nextDashServerLib.routerMod.EventName
   
   @js.native
-  sealed trait routeChangeStart extends js.Object
+  sealed trait routeChangeStart
+    extends nextDashServerLib.routerMod.EventName
   
   @scala.inline
   def beforeHistoryChange: beforeHistoryChange = "beforeHistoryChange".asInstanceOf[beforeHistoryChange]

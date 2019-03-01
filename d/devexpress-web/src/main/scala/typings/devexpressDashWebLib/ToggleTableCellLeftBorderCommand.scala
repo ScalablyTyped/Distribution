@@ -15,3 +15,13 @@ trait ToggleTableCellLeftBorderCommand extends CommandWithBooleanStateBase {
   def execute(): scala.Boolean
 }
 
+object ToggleTableCellLeftBorderCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[js.Any]): ToggleTableCellLeftBorderCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ToggleTableCellLeftBorderCommand]
+  }
+}
+

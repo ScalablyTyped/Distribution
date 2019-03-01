@@ -9,3 +9,12 @@ trait ISystemConditionFactory extends js.Object {
   def create(conditionType: SystemConditionType): SystemCondition
 }
 
+object ISystemConditionFactory {
+  @scala.inline
+  def apply(create: js.Function1[SystemConditionType, SystemCondition]): ISystemConditionFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.asInstanceOf[ISystemConditionFactory]
+  }
+}
+

@@ -20,3 +20,13 @@ trait ListExecutionsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListExecutionsResponse {
+  @scala.inline
+  def apply(executions: js.Array[Execution] = null, nextPageToken: java.lang.String = null): ListExecutionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (executions != null) __obj.updateDynamic("executions")(executions)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListExecutionsResponse]
+  }
+}
+

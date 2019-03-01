@@ -77,3 +77,84 @@ import scala.scalajs.js.annotation._
   var value: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object NumericInputProps {
+  @scala.inline
+  def apply(
+    addLabelText: java.lang.String = null,
+    componentClass: java.lang.String = null,
+    defaultValue: scala.Double | java.lang.String = null,
+    format: js.Function1[/* value */ scala.Double | scala.Null, java.lang.String] = null,
+    max: BoundsFunctionProp = null,
+    min: BoundsFunctionProp = null,
+    mobile: scala.Boolean | reactDashNumericDashInputLib.reactDashNumericDashInputLibStrings.auto | (js.Function1[
+      /* component */ reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInput, 
+      scala.Boolean
+    ]) = null,
+    noStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    noValidate: scala.Boolean | java.lang.String = null,
+    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLDivElement | reactLib.HTMLInputElement] = null,
+    onChange: js.Function3[
+      /* value */ scala.Double | scala.Null, 
+      /* stringValue */ java.lang.String, 
+      /* input */ reactLib.HTMLInputElement, 
+      scala.Unit
+    ] = null,
+    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[reactLib.HTMLDivElement | reactLib.HTMLInputElement] = null,
+    onInput: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLInputElement] = null,
+    onInvalid: js.Function3[
+      /* error */ java.lang.String, 
+      /* value */ scala.Double | scala.Null, 
+      /* stringValue */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLDivElement | reactLib.HTMLInputElement] = null,
+    onSelect: reactLib.reactMod.ReactNs.ReactEventHandler[reactLib.HTMLInputElement] = null,
+    onValid: js.Function2[
+      /* value */ scala.Double | scala.Null, 
+      /* stringValue */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    parse: js.Function1[/* stringValue */ java.lang.String, scala.Double | scala.Null] = null,
+    precision: scala.Double | (js.Function1[
+      /* component */ reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInput, 
+      js.UndefOr[scala.Double | scala.Null]
+    ]) = null,
+    snap: js.UndefOr[scala.Boolean] = js.undefined,
+    step: scala.Double | (js.Function2[
+      /* component */ reactDashNumericDashInputLib.reactDashNumericDashInputMod.NumericInput, 
+      /* direction */ java.lang.String, 
+      js.UndefOr[scala.Double]
+    ]) = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    style: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties] | scala.Boolean = null,
+    value: scala.Double | java.lang.String = null
+  ): NumericInputProps = {
+    val __obj = js.Dynamic.literal()
+    if (addLabelText != null) __obj.updateDynamic("addLabelText")(addLabelText)
+    if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
+    if (!js.isUndefined(noStyle)) __obj.updateDynamic("noStyle")(noStyle)
+    if (noValidate != null) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onInput != null) __obj.updateDynamic("onInput")(onInput)
+    if (onInvalid != null) __obj.updateDynamic("onInvalid")(onInvalid)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onValid != null) __obj.updateDynamic("onValid")(onValid)
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NumericInputProps]
+  }
+}
+

@@ -52,3 +52,34 @@ trait _Impl extends js.Object {
   var upArrow: scala.Double
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    backspace: scala.Double,
+    deleteKey: scala.Double,
+    delimiter: scala.Double | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false`,
+    downArrow: scala.Double,
+    enter: scala.Double,
+    escape: scala.Double,
+    leftArrow: scala.Double,
+    pageDown: scala.Double,
+    pageUp: scala.Double,
+    rightArrow: scala.Double,
+    upArrow: scala.Double
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backspace")(backspace)
+    __obj.updateDynamic("deleteKey")(deleteKey)
+    __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    __obj.updateDynamic("downArrow")(downArrow)
+    __obj.updateDynamic("enter")(enter)
+    __obj.updateDynamic("escape")(escape)
+    __obj.updateDynamic("leftArrow")(leftArrow)
+    __obj.updateDynamic("pageDown")(pageDown)
+    __obj.updateDynamic("pageUp")(pageUp)
+    __obj.updateDynamic("rightArrow")(rightArrow)
+    __obj.updateDynamic("upArrow")(upArrow)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

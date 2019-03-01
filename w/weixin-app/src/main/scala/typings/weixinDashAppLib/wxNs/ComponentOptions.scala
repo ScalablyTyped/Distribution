@@ -64,3 +64,32 @@ import scala.scalajs.js.annotation._
   var relations: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ComponentRelation[_, _]]] = js.undefined
 }
 
+object ComponentOptions {
+  @scala.inline
+  def apply[Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */](
+    behaviors: Behaviors = null,
+    data: Data = null,
+    externalClasses: js.Array[java.lang.String] = null,
+    lifetimes: stdLib.Partial[Lifetimes] = null,
+    methods: Methods = null,
+    observers: ObserversDefs[Instance] = null,
+    options: stdLib.Partial[weixinDashAppLib.Anon_AddGlobalClass] = null,
+    pageLifetimes: stdLib.Partial[PageLifetimes] = null,
+    properties: Props = null,
+    relations: org.scalablytyped.runtime.StringDictionary[ComponentRelation[_, _]] = null
+  ): ComponentOptions[Instance, Data, Methods, Props, Behaviors] = {
+    val __obj = js.Dynamic.literal()
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (externalClasses != null) __obj.updateDynamic("externalClasses")(externalClasses)
+    if (lifetimes != null) __obj.updateDynamic("lifetimes")(lifetimes)
+    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
+    if (observers != null) __obj.updateDynamic("observers")(observers)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (pageLifetimes != null) __obj.updateDynamic("pageLifetimes")(pageLifetimes)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (relations != null) __obj.updateDynamic("relations")(relations)
+    __obj.asInstanceOf[ComponentOptions[Instance, Data, Methods, Props, Behaviors]]
+  }
+}
+

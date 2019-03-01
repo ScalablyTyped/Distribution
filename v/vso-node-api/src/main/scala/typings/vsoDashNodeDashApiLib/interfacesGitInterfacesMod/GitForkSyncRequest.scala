@@ -26,3 +26,24 @@ trait GitForkSyncRequest extends js.Object {
   var status: GitAsyncOperationStatus
 }
 
+object GitForkSyncRequest {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    detailedStatus: GitForkOperationStatusDetail,
+    operationId: scala.Double,
+    source: GlobalGitRepositoryKey,
+    sourceToTargetRefs: js.Array[SourceToTargetRef],
+    status: GitAsyncOperationStatus
+  ): GitForkSyncRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("detailedStatus")(detailedStatus)
+    __obj.updateDynamic("operationId")(operationId)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("sourceToTargetRefs")(sourceToTargetRefs)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[GitForkSyncRequest]
+  }
+}
+

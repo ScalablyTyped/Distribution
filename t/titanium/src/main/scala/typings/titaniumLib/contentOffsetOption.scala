@@ -15,3 +15,12 @@ trait contentOffsetOption extends js.Object {
   var animated: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object contentOffsetOption {
+  @scala.inline
+  def apply(animated: js.UndefOr[scala.Boolean] = js.undefined): contentOffsetOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    __obj.asInstanceOf[contentOffsetOption]
+  }
+}
+

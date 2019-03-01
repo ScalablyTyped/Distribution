@@ -15,3 +15,13 @@ trait GitSourceContext extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GitSourceContext {
+  @scala.inline
+  def apply(revisionId: java.lang.String = null, url: java.lang.String = null): GitSourceContext = {
+    val __obj = js.Dynamic.literal()
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GitSourceContext]
+  }
+}
+

@@ -13,3 +13,18 @@ trait TimelineHiddenDateOption extends js.Object {
   var start: DateType
 }
 
+object TimelineHiddenDateOption {
+  @scala.inline
+  def apply(
+    end: DateType,
+    start: DateType,
+    repeat: visLib.visLibStrings.daily | visLib.visLibStrings.weekly | visLib.visLibStrings.monthly | visLib.visLibStrings.yearly = null
+  ): TimelineHiddenDateOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimelineHiddenDateOption]
+  }
+}
+

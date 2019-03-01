@@ -41,3 +41,24 @@ trait ASPxClientImageSliderItem extends js.Object {
   var text: java.lang.String
 }
 
+object ASPxClientImageSliderItem {
+  @scala.inline
+  def apply(
+    imageSlider: ASPxClientImageSlider,
+    imageUrl: java.lang.String,
+    index: scala.Double,
+    loaded: scala.Boolean,
+    name: java.lang.String,
+    text: java.lang.String
+  ): ASPxClientImageSliderItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("imageSlider")(imageSlider)
+    __obj.updateDynamic("imageUrl")(imageUrl)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("loaded")(loaded)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ASPxClientImageSliderItem]
+  }
+}
+

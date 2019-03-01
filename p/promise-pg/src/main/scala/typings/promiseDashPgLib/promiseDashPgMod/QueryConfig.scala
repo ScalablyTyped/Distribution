@@ -10,3 +10,20 @@ trait QueryConfig
   var buffer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object QueryConfig {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    buffer: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    values: js.Array[_] = null
+  ): QueryConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[QueryConfig]
+  }
+}
+

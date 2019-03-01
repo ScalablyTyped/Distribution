@@ -29,3 +29,41 @@ trait FileHandler extends XLogHandler {
   ): scala.Unit
 }
 
+object FileHandler {
+  @scala.inline
+  def apply(
+    Encoding: java.lang.String,
+    Formatter: XLogFormatter,
+    Level: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    create: js.Function1[java.lang.String, scala.Unit],
+    createWithSettings: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      scala.Unit
+    ],
+    dispose: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    publish: js.Function1[LogRecord, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): FileHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Encoding")(Encoding)
+    __obj.updateDynamic("Formatter")(Formatter)
+    __obj.updateDynamic("Level")(Level)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createWithSettings")(createWithSettings)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("publish")(publish)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[FileHandler]
+  }
+}
+

@@ -26,3 +26,18 @@ trait BillingAccount extends js.Object {
   var open: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BillingAccount {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    name: java.lang.String = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined
+  ): BillingAccount = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    __obj.asInstanceOf[BillingAccount]
+  }
+}
+

@@ -40,3 +40,28 @@ trait Shadow extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Shadow {
+  @scala.inline
+  def apply(
+    alignment: java.lang.String = null,
+    alpha: scala.Int | scala.Double = null,
+    blurRadius: Dimension = null,
+    color: OpaqueColor = null,
+    propertyState: java.lang.String = null,
+    rotateWithShape: js.UndefOr[scala.Boolean] = js.undefined,
+    transform: AffineTransform = null,
+    `type`: java.lang.String = null
+  ): Shadow = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState)
+    if (!js.isUndefined(rotateWithShape)) __obj.updateDynamic("rotateWithShape")(rotateWithShape)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Shadow]
+  }
+}
+

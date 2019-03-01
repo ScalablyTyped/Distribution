@@ -27,3 +27,20 @@ trait CreateBufferArgs extends js.Object {
   var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object CreateBufferArgs {
+  @scala.inline
+  def apply(
+    byteOrder: scala.Int | scala.Double = null,
+    length: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String | scala.Double = null
+  ): CreateBufferArgs = {
+    val __obj = js.Dynamic.literal()
+    if (byteOrder != null) __obj.updateDynamic("byteOrder")(byteOrder.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateBufferArgs]
+  }
+}
+

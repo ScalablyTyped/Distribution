@@ -53,3 +53,44 @@ trait LineProperties extends js.Object {
   var LineWidth: scala.Double
 }
 
+object LineProperties {
+  @scala.inline
+  def apply(
+    LineCap: LineCap,
+    LineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    LineDash: LineDash,
+    LineDashName: java.lang.String,
+    LineEnd: PolyPolygonBezierCoords,
+    LineEndCenter: scala.Boolean,
+    LineEndName: java.lang.String,
+    LineEndWidth: scala.Double,
+    LineJoint: LineJoint,
+    LineStart: PolyPolygonBezierCoords,
+    LineStartCenter: scala.Boolean,
+    LineStartName: java.lang.String,
+    LineStartWidth: scala.Double,
+    LineStyle: LineStyle,
+    LineTransparence: scala.Double,
+    LineWidth: scala.Double
+  ): LineProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LineCap")(LineCap)
+    __obj.updateDynamic("LineColor")(LineColor)
+    __obj.updateDynamic("LineDash")(LineDash)
+    __obj.updateDynamic("LineDashName")(LineDashName)
+    __obj.updateDynamic("LineEnd")(LineEnd)
+    __obj.updateDynamic("LineEndCenter")(LineEndCenter)
+    __obj.updateDynamic("LineEndName")(LineEndName)
+    __obj.updateDynamic("LineEndWidth")(LineEndWidth)
+    __obj.updateDynamic("LineJoint")(LineJoint)
+    __obj.updateDynamic("LineStart")(LineStart)
+    __obj.updateDynamic("LineStartCenter")(LineStartCenter)
+    __obj.updateDynamic("LineStartName")(LineStartName)
+    __obj.updateDynamic("LineStartWidth")(LineStartWidth)
+    __obj.updateDynamic("LineStyle")(LineStyle)
+    __obj.updateDynamic("LineTransparence")(LineTransparence)
+    __obj.updateDynamic("LineWidth")(LineWidth)
+    __obj.asInstanceOf[LineProperties]
+  }
+}
+

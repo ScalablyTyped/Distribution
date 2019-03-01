@@ -22,3 +22,16 @@ trait ReactHighchartsProps extends js.Object {
   var config: highchartsLib.highchartsMod.HighchartsNs.Options
 }
 
+object ReactHighchartsProps {
+  @scala.inline
+  def apply(
+    config: highchartsLib.highchartsMod.HighchartsNs.Options,
+    callback: js.Function1[/* chart */ highchartsLib.highchartsMod.HighchartsNs.ChartObject, scala.Unit] = null
+  ): ReactHighchartsProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    __obj.asInstanceOf[ReactHighchartsProps]
+  }
+}
+

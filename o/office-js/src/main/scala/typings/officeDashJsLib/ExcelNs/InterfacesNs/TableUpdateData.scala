@@ -72,3 +72,30 @@ trait TableUpdateData extends js.Object {
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableUpdateData {
+  @scala.inline
+  def apply(
+    highlightFirstColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightLastColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    showBandedColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    showBandedRows: js.UndefOr[scala.Boolean] = js.undefined,
+    showFilterButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    showTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    style: java.lang.String = null
+  ): TableUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(highlightFirstColumn)) __obj.updateDynamic("highlightFirstColumn")(highlightFirstColumn)
+    if (!js.isUndefined(highlightLastColumn)) __obj.updateDynamic("highlightLastColumn")(highlightLastColumn)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(showBandedColumns)) __obj.updateDynamic("showBandedColumns")(showBandedColumns)
+    if (!js.isUndefined(showBandedRows)) __obj.updateDynamic("showBandedRows")(showBandedRows)
+    if (!js.isUndefined(showFilterButton)) __obj.updateDynamic("showFilterButton")(showFilterButton)
+    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders)
+    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[TableUpdateData]
+  }
+}
+

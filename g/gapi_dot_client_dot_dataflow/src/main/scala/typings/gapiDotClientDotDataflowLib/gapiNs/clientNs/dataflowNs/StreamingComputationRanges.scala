@@ -12,3 +12,16 @@ trait StreamingComputationRanges extends js.Object {
   var rangeAssignments: js.UndefOr[js.Array[KeyRangeDataDiskAssignment]] = js.undefined
 }
 
+object StreamingComputationRanges {
+  @scala.inline
+  def apply(
+    computationId: java.lang.String = null,
+    rangeAssignments: js.Array[KeyRangeDataDiskAssignment] = null
+  ): StreamingComputationRanges = {
+    val __obj = js.Dynamic.literal()
+    if (computationId != null) __obj.updateDynamic("computationId")(computationId)
+    if (rangeAssignments != null) __obj.updateDynamic("rangeAssignments")(rangeAssignments)
+    __obj.asInstanceOf[StreamingComputationRanges]
+  }
+}
+

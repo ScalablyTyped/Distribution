@@ -60,3 +60,28 @@ trait LogMetric extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogMetric {
+  @scala.inline
+  def apply(
+    bucketOptions: BucketOptions = null,
+    description: java.lang.String = null,
+    filter: java.lang.String = null,
+    labelExtractors: stdLib.Record[java.lang.String, java.lang.String] = null,
+    metricDescriptor: MetricDescriptor = null,
+    name: java.lang.String = null,
+    valueExtractor: java.lang.String = null,
+    version: java.lang.String = null
+  ): LogMetric = {
+    val __obj = js.Dynamic.literal()
+    if (bucketOptions != null) __obj.updateDynamic("bucketOptions")(bucketOptions)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (labelExtractors != null) __obj.updateDynamic("labelExtractors")(labelExtractors)
+    if (metricDescriptor != null) __obj.updateDynamic("metricDescriptor")(metricDescriptor)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (valueExtractor != null) __obj.updateDynamic("valueExtractor")(valueExtractor)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[LogMetric]
+  }
+}
+

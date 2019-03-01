@@ -12,3 +12,20 @@ trait NamedRange extends js.Object {
   def remove(): scala.Unit
 }
 
+object NamedRange {
+  @scala.inline
+  def apply(
+    getId: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getRange: js.Function0[Range],
+    remove: js.Function0[scala.Unit]
+  ): NamedRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getRange")(getRange)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[NamedRange]
+  }
+}
+

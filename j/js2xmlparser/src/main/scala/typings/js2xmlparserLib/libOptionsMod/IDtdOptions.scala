@@ -29,3 +29,20 @@ trait IDtdOptions extends js.Object {
   var sysId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IDtdOptions {
+  @scala.inline
+  def apply(
+    include: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    pubId: java.lang.String = null,
+    sysId: java.lang.String = null
+  ): IDtdOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(include)) __obj.updateDynamic("include")(include)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pubId != null) __obj.updateDynamic("pubId")(pubId)
+    if (sysId != null) __obj.updateDynamic("sysId")(sysId)
+    __obj.asInstanceOf[IDtdOptions]
+  }
+}
+

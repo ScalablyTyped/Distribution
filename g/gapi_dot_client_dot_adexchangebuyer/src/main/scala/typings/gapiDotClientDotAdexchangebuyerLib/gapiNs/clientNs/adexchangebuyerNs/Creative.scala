@@ -91,3 +91,68 @@ trait Creative extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Creative {
+  @scala.inline
+  def apply(
+    HTMLSnippet: java.lang.String = null,
+    accountId: scala.Int | scala.Double = null,
+    adChoicesDestinationUrl: java.lang.String = null,
+    advertiserId: js.Array[java.lang.String] = null,
+    advertiserName: java.lang.String = null,
+    agencyId: java.lang.String = null,
+    apiUploadTimestamp: java.lang.String = null,
+    attribute: js.Array[scala.Double] = null,
+    buyerCreativeId: java.lang.String = null,
+    clickThroughUrl: js.Array[java.lang.String] = null,
+    corrections: js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_Contexts] = null,
+    dealsStatus: java.lang.String = null,
+    detectedDomains: js.Array[java.lang.String] = null,
+    filteringReasons: gapiDotClientDotAdexchangebuyerLib.Anon_Date = null,
+    height: scala.Int | scala.Double = null,
+    impressionTrackingUrl: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    languages: js.Array[java.lang.String] = null,
+    nativeAd: gapiDotClientDotAdexchangebuyerLib.Anon_Advertiser = null,
+    openAuctionStatus: java.lang.String = null,
+    productCategories: js.Array[scala.Double] = null,
+    restrictedCategories: js.Array[scala.Double] = null,
+    sensitiveCategories: js.Array[scala.Double] = null,
+    servingRestrictions: js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_ContextsDisapprovalReasons] = null,
+    vendorType: js.Array[scala.Double] = null,
+    version: scala.Int | scala.Double = null,
+    videoURL: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Creative = {
+    val __obj = js.Dynamic.literal()
+    if (HTMLSnippet != null) __obj.updateDynamic("HTMLSnippet")(HTMLSnippet)
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (adChoicesDestinationUrl != null) __obj.updateDynamic("adChoicesDestinationUrl")(adChoicesDestinationUrl)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
+    if (advertiserName != null) __obj.updateDynamic("advertiserName")(advertiserName)
+    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId)
+    if (apiUploadTimestamp != null) __obj.updateDynamic("apiUploadTimestamp")(apiUploadTimestamp)
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
+    if (buyerCreativeId != null) __obj.updateDynamic("buyerCreativeId")(buyerCreativeId)
+    if (clickThroughUrl != null) __obj.updateDynamic("clickThroughUrl")(clickThroughUrl)
+    if (corrections != null) __obj.updateDynamic("corrections")(corrections)
+    if (dealsStatus != null) __obj.updateDynamic("dealsStatus")(dealsStatus)
+    if (detectedDomains != null) __obj.updateDynamic("detectedDomains")(detectedDomains)
+    if (filteringReasons != null) __obj.updateDynamic("filteringReasons")(filteringReasons)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (impressionTrackingUrl != null) __obj.updateDynamic("impressionTrackingUrl")(impressionTrackingUrl)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (languages != null) __obj.updateDynamic("languages")(languages)
+    if (nativeAd != null) __obj.updateDynamic("nativeAd")(nativeAd)
+    if (openAuctionStatus != null) __obj.updateDynamic("openAuctionStatus")(openAuctionStatus)
+    if (productCategories != null) __obj.updateDynamic("productCategories")(productCategories)
+    if (restrictedCategories != null) __obj.updateDynamic("restrictedCategories")(restrictedCategories)
+    if (sensitiveCategories != null) __obj.updateDynamic("sensitiveCategories")(sensitiveCategories)
+    if (servingRestrictions != null) __obj.updateDynamic("servingRestrictions")(servingRestrictions)
+    if (vendorType != null) __obj.updateDynamic("vendorType")(vendorType)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (videoURL != null) __obj.updateDynamic("videoURL")(videoURL)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Creative]
+  }
+}
+

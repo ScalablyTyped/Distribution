@@ -27,3 +27,25 @@ trait XCipherContext
   def finalizeCipherContextAndDispose(): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XCipherContext {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    convertWithCipherContext: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    finalizeCipherContextAndDispose: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCipherContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("convertWithCipherContext")(convertWithCipherContext)
+    __obj.updateDynamic("finalizeCipherContextAndDispose")(finalizeCipherContextAndDispose)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCipherContext]
+  }
+}
+

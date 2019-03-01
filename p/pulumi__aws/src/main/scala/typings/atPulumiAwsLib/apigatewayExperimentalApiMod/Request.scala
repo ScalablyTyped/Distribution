@@ -18,3 +18,32 @@ trait Request extends js.Object {
   var stageVariables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    httpMethod: java.lang.String,
+    isBase64Encoded: scala.Boolean,
+    path: java.lang.String,
+    pathParameters: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    queryStringParameters: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    requestContext: RequestContext,
+    resource: java.lang.String,
+    stageVariables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("httpMethod")(httpMethod)
+    __obj.updateDynamic("isBase64Encoded")(isBase64Encoded)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("pathParameters")(pathParameters)
+    __obj.updateDynamic("queryStringParameters")(queryStringParameters)
+    __obj.updateDynamic("requestContext")(requestContext)
+    __obj.updateDynamic("resource")(resource)
+    __obj.updateDynamic("stageVariables")(stageVariables)
+    __obj.asInstanceOf[Request]
+  }
+}
+

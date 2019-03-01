@@ -33,3 +33,18 @@ trait Shadow extends js.Object {
   var `shadow-opacity`: scala.Double
 }
 
+object Shadow {
+  @scala.inline
+  def apply(
+    `shadow-blur`: scala.Double,
+    `shadow-color`: Colour,
+    `shadow-offset-x`: scala.Double,
+    `shadow-offset-y`: scala.Double,
+    `shadow-opacity`: scala.Double
+  ): Shadow = {
+    val __obj = js.Dynamic.literal(`shadow-blur` = `shadow-blur`, `shadow-color` = `shadow-color`, `shadow-offset-x` = `shadow-offset-x`, `shadow-offset-y` = `shadow-offset-y`, `shadow-opacity` = `shadow-opacity`)
+  
+    __obj.asInstanceOf[Shadow]
+  }
+}
+

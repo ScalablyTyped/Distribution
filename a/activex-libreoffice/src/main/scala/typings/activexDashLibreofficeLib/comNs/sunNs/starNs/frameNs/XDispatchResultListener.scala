@@ -19,3 +19,22 @@ trait XDispatchResultListener
   def dispatchFinished(Result: DispatchResultEvent): scala.Unit
 }
 
+object XDispatchResultListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    dispatchFinished: js.Function1[DispatchResultEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDispatchResultListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("dispatchFinished")(dispatchFinished)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDispatchResultListener]
+  }
+}
+

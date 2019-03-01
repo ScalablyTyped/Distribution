@@ -41,3 +41,35 @@ trait Result extends js.Object {
   var `type`: npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.git | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.tag | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.version | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.range | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.file | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.directory | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.remote | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.alias
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    raw: java.lang.String,
+    rawSpec: java.lang.String,
+    registry: scala.Boolean,
+    `type`: npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.git | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.tag | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.version | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.range | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.file | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.directory | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.remote | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.alias,
+    escapedName: java.lang.String = null,
+    fetchSpec: java.lang.String = null,
+    gitCommittish: java.lang.String = null,
+    gitRange: java.lang.String = null,
+    hosted: HostedGit = null,
+    name: java.lang.String = null,
+    saveSpec: java.lang.String = null,
+    scope: java.lang.String = null
+  ): Result = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("raw")(raw)
+    __obj.updateDynamic("rawSpec")(rawSpec)
+    __obj.updateDynamic("registry")(registry)
+    if (escapedName != null) __obj.updateDynamic("escapedName")(escapedName)
+    if (fetchSpec != null) __obj.updateDynamic("fetchSpec")(fetchSpec)
+    if (gitCommittish != null) __obj.updateDynamic("gitCommittish")(gitCommittish)
+    if (gitRange != null) __obj.updateDynamic("gitRange")(gitRange)
+    if (hosted != null) __obj.updateDynamic("hosted")(hosted)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (saveSpec != null) __obj.updateDynamic("saveSpec")(saveSpec)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Result]
+  }
+}
+

@@ -14,3 +14,14 @@ trait Settings extends js.Object {
   ] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    buttons: scala.Boolean | js.Array[java.lang.String] | ButtonsSettings | js.Array[ButtonSettings] = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Settings]
+  }
+}
+

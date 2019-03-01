@@ -24,3 +24,20 @@ trait ASPxClientUploadControlValidationErrorTypeConstsStatic extends js.Object {
   var NotAllowedFileExtension: scala.Double
 }
 
+object ASPxClientUploadControlValidationErrorTypeConstsStatic {
+  @scala.inline
+  def apply(
+    FileNameContainsInvalidCharacter: scala.Double,
+    MaxFileCountExceeded: scala.Double,
+    MaxFileSizeExceeded: scala.Double,
+    NotAllowedFileExtension: scala.Double
+  ): ASPxClientUploadControlValidationErrorTypeConstsStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FileNameContainsInvalidCharacter")(FileNameContainsInvalidCharacter)
+    __obj.updateDynamic("MaxFileCountExceeded")(MaxFileCountExceeded)
+    __obj.updateDynamic("MaxFileSizeExceeded")(MaxFileSizeExceeded)
+    __obj.updateDynamic("NotAllowedFileExtension")(NotAllowedFileExtension)
+    __obj.asInstanceOf[ASPxClientUploadControlValidationErrorTypeConstsStatic]
+  }
+}
+

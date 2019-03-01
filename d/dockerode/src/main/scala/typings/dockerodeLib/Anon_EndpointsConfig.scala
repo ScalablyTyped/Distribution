@@ -9,3 +9,12 @@ trait Anon_EndpointsConfig extends js.Object {
   var EndpointsConfig: js.UndefOr[dockerodeLib.dockerodeMod.DockerodeNs.EndpointsConfig] = js.undefined
 }
 
+object Anon_EndpointsConfig {
+  @scala.inline
+  def apply(EndpointsConfig: dockerodeLib.dockerodeMod.DockerodeNs.EndpointsConfig = null): Anon_EndpointsConfig = {
+    val __obj = js.Dynamic.literal()
+    if (EndpointsConfig != null) __obj.updateDynamic("EndpointsConfig")(EndpointsConfig)
+    __obj.asInstanceOf[Anon_EndpointsConfig]
+  }
+}
+

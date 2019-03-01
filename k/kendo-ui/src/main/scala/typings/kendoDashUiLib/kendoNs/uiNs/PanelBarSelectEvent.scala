@@ -9,3 +9,20 @@ trait PanelBarSelectEvent extends PanelBarEvent {
   var item: js.UndefOr[stdLib.Element] = js.undefined
 }
 
+object PanelBarSelectEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: PanelBar,
+    item: stdLib.Element = null
+  ): PanelBarSelectEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (item != null) __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[PanelBarSelectEvent]
+  }
+}
+

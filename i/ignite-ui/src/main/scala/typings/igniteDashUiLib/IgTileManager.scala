@@ -312,3 +312,97 @@ trait IgTileManager
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgTileManager {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTileManager
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animationDuration: scala.Int | scala.Double = null,
+    cols: scala.Int | scala.Double = null,
+    columnHeight: java.lang.String | scala.Double | js.Array[_] = null,
+    columnWidth: java.lang.String | scala.Double | js.Array[_] = null,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    items: js.Object = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    marginLeft: scala.Int | scala.Double = null,
+    marginTop: scala.Int | scala.Double = null,
+    maximizedState: java.lang.String = null,
+    maximizedTileIndex: scala.Int | scala.Double = null,
+    minimizedState: java.lang.String = null,
+    preventMaximizingSelector: java.lang.String = null,
+    rearrangeItems: js.UndefOr[scala.Boolean] = js.undefined,
+    regional: java.lang.String | js.Object = null,
+    rendered: RenderedEvent = null,
+    rendering: RenderingEvent = null,
+    requestType: java.lang.String = null,
+    responseContentType: java.lang.String = null,
+    responseDataKey: java.lang.String = null,
+    responseDataType: java.lang.String = null,
+    rightPanelCols: scala.Int | scala.Double = null,
+    rightPanelTilesHeight: scala.Int | scala.Double = null,
+    rightPanelTilesWidth: scala.Int | scala.Double = null,
+    rows: scala.Int | scala.Double = null,
+    showRightPanelScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    splitterOptions: IgTileManagerSplitterOptions = null,
+    tileMaximized: TileMaximizedEvent = null,
+    tileMaximizing: TileMaximizingEvent = null,
+    tileMinimized: TileMinimizedEvent = null,
+    tileMinimizing: TileMinimizingEvent = null,
+    tileRendered: TileRenderedEvent = null,
+    tileRendering: TileRenderingEvent = null,
+    width: java.lang.String | scala.Double = null
+  ): IgTileManager = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (columnHeight != null) __obj.updateDynamic("columnHeight")(columnHeight.asInstanceOf[js.Any])
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
+    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (maximizedState != null) __obj.updateDynamic("maximizedState")(maximizedState)
+    if (maximizedTileIndex != null) __obj.updateDynamic("maximizedTileIndex")(maximizedTileIndex.asInstanceOf[js.Any])
+    if (minimizedState != null) __obj.updateDynamic("minimizedState")(minimizedState)
+    if (preventMaximizingSelector != null) __obj.updateDynamic("preventMaximizingSelector")(preventMaximizingSelector)
+    if (!js.isUndefined(rearrangeItems)) __obj.updateDynamic("rearrangeItems")(rearrangeItems)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType)
+    if (rightPanelCols != null) __obj.updateDynamic("rightPanelCols")(rightPanelCols.asInstanceOf[js.Any])
+    if (rightPanelTilesHeight != null) __obj.updateDynamic("rightPanelTilesHeight")(rightPanelTilesHeight.asInstanceOf[js.Any])
+    if (rightPanelTilesWidth != null) __obj.updateDynamic("rightPanelTilesWidth")(rightPanelTilesWidth.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRightPanelScroll)) __obj.updateDynamic("showRightPanelScroll")(showRightPanelScroll)
+    if (splitterOptions != null) __obj.updateDynamic("splitterOptions")(splitterOptions)
+    if (tileMaximized != null) __obj.updateDynamic("tileMaximized")(tileMaximized)
+    if (tileMaximizing != null) __obj.updateDynamic("tileMaximizing")(tileMaximizing)
+    if (tileMinimized != null) __obj.updateDynamic("tileMinimized")(tileMinimized)
+    if (tileMinimizing != null) __obj.updateDynamic("tileMinimizing")(tileMinimizing)
+    if (tileRendered != null) __obj.updateDynamic("tileRendered")(tileRendered)
+    if (tileRendering != null) __obj.updateDynamic("tileRendering")(tileRendering)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgTileManager]
+  }
+}
+

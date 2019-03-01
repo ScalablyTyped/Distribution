@@ -57,3 +57,32 @@ trait LoadingObject extends js.Object {
   def toggle(): scala.Unit
 }
 
+object LoadingObject {
+  @scala.inline
+  def apply(
+    active: js.Function0[scala.Boolean],
+    attachMethodsToExternalEvents: js.Function0[scala.Unit],
+    attachOptionsHandlers: js.Function0[scala.Unit],
+    calcZIndex: js.Function0[scala.Double],
+    createOerlay: js.Function0[jqueryDashEasyDashLoadingLib.JQuery],
+    init: js.Function0[scala.Unit],
+    resize: js.Function0[scala.Unit],
+    start: js.Function0[scala.Unit],
+    stop: js.Function0[scala.Unit],
+    toggle: js.Function0[scala.Unit]
+  ): LoadingObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("attachMethodsToExternalEvents")(attachMethodsToExternalEvents)
+    __obj.updateDynamic("attachOptionsHandlers")(attachOptionsHandlers)
+    __obj.updateDynamic("calcZIndex")(calcZIndex)
+    __obj.updateDynamic("createOerlay")(createOerlay)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("resize")(resize)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stop")(stop)
+    __obj.updateDynamic("toggle")(toggle)
+    __obj.asInstanceOf[LoadingObject]
+  }
+}
+

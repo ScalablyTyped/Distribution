@@ -11,3 +11,20 @@ trait RedirectResult
   var location: js.Any
 }
 
+object RedirectResult {
+  @scala.inline
+  def apply(
+    apiController: js.Any,
+    executeAsync: js.Function0[
+      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
+    ],
+    location: js.Any
+  ): RedirectResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiController")(apiController)
+    __obj.updateDynamic("executeAsync")(executeAsync)
+    __obj.updateDynamic("location")(location)
+    __obj.asInstanceOf[RedirectResult]
+  }
+}
+

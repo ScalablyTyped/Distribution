@@ -35,3 +35,30 @@ trait NavigationEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NavigationEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentDate: js.Any = null,
+    currentView: java.lang.String = null,
+    model: Model = null,
+    previousDate: js.Any = null,
+    previousView: java.lang.String = null,
+    requestType: java.lang.String = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): NavigationEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate)
+    if (currentView != null) __obj.updateDynamic("currentView")(currentView)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (previousDate != null) __obj.updateDynamic("previousDate")(previousDate)
+    if (previousView != null) __obj.updateDynamic("previousView")(previousView)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NavigationEventArgs]
+  }
+}
+

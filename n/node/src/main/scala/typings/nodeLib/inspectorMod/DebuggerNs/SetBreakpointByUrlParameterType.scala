@@ -34,3 +34,24 @@ trait SetBreakpointByUrlParameterType extends js.Object {
   var urlRegex: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SetBreakpointByUrlParameterType {
+  @scala.inline
+  def apply(
+    lineNumber: scala.Double,
+    columnNumber: scala.Int | scala.Double = null,
+    condition: java.lang.String = null,
+    scriptHash: java.lang.String = null,
+    url: java.lang.String = null,
+    urlRegex: java.lang.String = null
+  ): SetBreakpointByUrlParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lineNumber")(lineNumber)
+    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (scriptHash != null) __obj.updateDynamic("scriptHash")(scriptHash)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (urlRegex != null) __obj.updateDynamic("urlRegex")(urlRegex)
+    __obj.asInstanceOf[SetBreakpointByUrlParameterType]
+  }
+}
+

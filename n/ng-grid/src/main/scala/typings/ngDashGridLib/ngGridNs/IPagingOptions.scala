@@ -16,3 +16,20 @@ trait IPagingOptions extends js.Object {
   var totalServerItems: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IPagingOptions {
+  @scala.inline
+  def apply(
+    currentPage: scala.Int | scala.Double = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageSizes: js.Array[scala.Double] = null,
+    totalServerItems: scala.Int | scala.Double = null
+  ): IPagingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes)
+    if (totalServerItems != null) __obj.updateDynamic("totalServerItems")(totalServerItems.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPagingOptions]
+  }
+}
+

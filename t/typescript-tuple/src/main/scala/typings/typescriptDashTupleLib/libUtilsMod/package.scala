@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libUtilsMod {
-  type CompareLength[Left /* <: js.Array[_] */, Right /* <: js.Array[_] */] = typescriptDashTupleLib.typescriptDashTupleLibStrings.equal | typescriptDashTupleLib.typescriptDashTupleLibStrings.shorterLeft | typescriptDashTupleLib.typescriptDashTupleLibStrings.shorterRight
   type Concat[Left /* <: js.Array[_] */, Right /* <: js.Array[_] */] = Right | (Prepend[Right, js.Any])
   type ConcatMultiple[TupleSet /* <: js.Array[js.Array[_]] */] = js.Array[js.Any]
   type FillTuple[Tuple /* <: js.Array[_] */, Replacement, Holder /* <: js.Array[_] */] = Holder

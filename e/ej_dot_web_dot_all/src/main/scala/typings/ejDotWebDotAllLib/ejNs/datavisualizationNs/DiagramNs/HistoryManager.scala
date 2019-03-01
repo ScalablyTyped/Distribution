@@ -42,3 +42,32 @@ trait HistoryManager extends js.Object {
   var undoStack: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object HistoryManager {
+  @scala.inline
+  def apply(
+    canPop: js.Any = null,
+    closeGroupAction: js.Any = null,
+    pop: js.Any = null,
+    push: js.Any = null,
+    redo: js.Any = null,
+    redoStack: js.Array[_] = null,
+    stackLimit: scala.Int | scala.Double = null,
+    startGroupAction: js.Any = null,
+    undo: js.Any = null,
+    undoStack: js.Array[_] = null
+  ): HistoryManager = {
+    val __obj = js.Dynamic.literal()
+    if (canPop != null) __obj.updateDynamic("canPop")(canPop)
+    if (closeGroupAction != null) __obj.updateDynamic("closeGroupAction")(closeGroupAction)
+    if (pop != null) __obj.updateDynamic("pop")(pop)
+    if (push != null) __obj.updateDynamic("push")(push)
+    if (redo != null) __obj.updateDynamic("redo")(redo)
+    if (redoStack != null) __obj.updateDynamic("redoStack")(redoStack)
+    if (stackLimit != null) __obj.updateDynamic("stackLimit")(stackLimit.asInstanceOf[js.Any])
+    if (startGroupAction != null) __obj.updateDynamic("startGroupAction")(startGroupAction)
+    if (undo != null) __obj.updateDynamic("undo")(undo)
+    if (undoStack != null) __obj.updateDynamic("undoStack")(undoStack)
+    __obj.asInstanceOf[HistoryManager]
+  }
+}
+

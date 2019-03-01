@@ -219,3 +219,134 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDragAndDropAcrossControl: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDropChild: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDropSibling: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    allowMultiSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCheckParentNode: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeAdd: js.Function1[/* e */ BeforeAddEventArgs, scala.Unit] = null,
+    beforeCollapse: js.Function1[/* e */ BeforeCollapseEventArgs, scala.Unit] = null,
+    beforeCut: js.Function1[/* e */ BeforeCutEventArgs, scala.Unit] = null,
+    beforeDelete: js.Function1[/* e */ BeforeDeleteEventArgs, scala.Unit] = null,
+    beforeEdit: js.Function1[/* e */ BeforeEditEventArgs, scala.Unit] = null,
+    beforeExpand: js.Function1[/* e */ BeforeExpandEventArgs, scala.Unit] = null,
+    beforeLoad: js.Function1[/* e */ BeforeLoadEventArgs, scala.Unit] = null,
+    beforePaste: js.Function1[/* e */ BeforePasteEventArgs, scala.Unit] = null,
+    beforeSelect: js.Function1[/* e */ BeforeSelectEventArgs, scala.Unit] = null,
+    checkedNodes: js.Array[_] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableMultipleExpand: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    expandOn: java.lang.String = null,
+    expandedNodes: js.Array[_] = null,
+    fields: Fields = null,
+    fullRowSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    height: java.lang.String | scala.Double = null,
+    htmlAttributes: js.Any = null,
+    inlineEditValidation: js.Function1[/* e */ InlineEditValidationEventArgs, scala.Unit] = null,
+    keyPress: js.Function1[/* e */ KeyPressEventArgs, scala.Unit] = null,
+    loadError: js.Function1[/* e */ LoadErrorEventArgs, scala.Unit] = null,
+    loadOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
+    loadSuccess: js.Function1[/* e */ LoadSuccessEventArgs, scala.Unit] = null,
+    nodeAdd: js.Function1[/* e */ NodeAddEventArgs, scala.Unit] = null,
+    nodeCheck: js.Function1[/* e */ NodeCheckEventArgs, scala.Unit] = null,
+    nodeClick: js.Function1[/* e */ NodeClickEventArgs, scala.Unit] = null,
+    nodeCollapse: js.Function1[/* e */ NodeCollapseEventArgs, scala.Unit] = null,
+    nodeCut: js.Function1[/* e */ NodeCutEventArgs, scala.Unit] = null,
+    nodeDelete: js.Function1[/* e */ NodeDeleteEventArgs, scala.Unit] = null,
+    nodeDrag: js.Function1[/* e */ NodeDragEventArgs, scala.Unit] = null,
+    nodeDragStart: js.Function1[/* e */ NodeDragStartEventArgs, scala.Unit] = null,
+    nodeDragStop: js.Function1[/* e */ NodeDragStopEventArgs, scala.Unit] = null,
+    nodeDropped: js.Function1[/* e */ NodeDroppedEventArgs, scala.Unit] = null,
+    nodeEdit: js.Function1[/* e */ NodeEditEventArgs, scala.Unit] = null,
+    nodeExpand: js.Function1[/* e */ NodeExpandEventArgs, scala.Unit] = null,
+    nodePaste: js.Function1[/* e */ NodePasteEventArgs, scala.Unit] = null,
+    nodeSelect: js.Function1[/* e */ NodeSelectEventArgs, scala.Unit] = null,
+    nodeUncheck: js.Function1[/* e */ NodeUncheckEventArgs, scala.Unit] = null,
+    nodeUnselect: js.Function1[/* e */ NodeUnselectEventArgs, scala.Unit] = null,
+    ready: js.Function1[/* e */ ReadyEventArgs, scala.Unit] = null,
+    selectedNode: scala.Int | scala.Double = null,
+    selectedNodes: js.Array[_] = null,
+    showCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    sortSettings: SortSettings = null,
+    template: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
+    if (!js.isUndefined(allowDragAndDropAcrossControl)) __obj.updateDynamic("allowDragAndDropAcrossControl")(allowDragAndDropAcrossControl)
+    if (!js.isUndefined(allowDropChild)) __obj.updateDynamic("allowDropChild")(allowDropChild)
+    if (!js.isUndefined(allowDropSibling)) __obj.updateDynamic("allowDropSibling")(allowDropSibling)
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (!js.isUndefined(allowMultiSelection)) __obj.updateDynamic("allowMultiSelection")(allowMultiSelection)
+    if (!js.isUndefined(autoCheck)) __obj.updateDynamic("autoCheck")(autoCheck)
+    if (!js.isUndefined(autoCheckParentNode)) __obj.updateDynamic("autoCheckParentNode")(autoCheckParentNode)
+    if (beforeAdd != null) __obj.updateDynamic("beforeAdd")(beforeAdd)
+    if (beforeCollapse != null) __obj.updateDynamic("beforeCollapse")(beforeCollapse)
+    if (beforeCut != null) __obj.updateDynamic("beforeCut")(beforeCut)
+    if (beforeDelete != null) __obj.updateDynamic("beforeDelete")(beforeDelete)
+    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(beforeEdit)
+    if (beforeExpand != null) __obj.updateDynamic("beforeExpand")(beforeExpand)
+    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(beforeLoad)
+    if (beforePaste != null) __obj.updateDynamic("beforePaste")(beforePaste)
+    if (beforeSelect != null) __obj.updateDynamic("beforeSelect")(beforeSelect)
+    if (checkedNodes != null) __obj.updateDynamic("checkedNodes")(checkedNodes)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enableMultipleExpand)) __obj.updateDynamic("enableMultipleExpand")(enableMultipleExpand)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (expandOn != null) __obj.updateDynamic("expandOn")(expandOn)
+    if (expandedNodes != null) __obj.updateDynamic("expandedNodes")(expandedNodes)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(fullRowSelect)) __obj.updateDynamic("fullRowSelect")(fullRowSelect)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (inlineEditValidation != null) __obj.updateDynamic("inlineEditValidation")(inlineEditValidation)
+    if (keyPress != null) __obj.updateDynamic("keyPress")(keyPress)
+    if (loadError != null) __obj.updateDynamic("loadError")(loadError)
+    if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand)
+    if (loadSuccess != null) __obj.updateDynamic("loadSuccess")(loadSuccess)
+    if (nodeAdd != null) __obj.updateDynamic("nodeAdd")(nodeAdd)
+    if (nodeCheck != null) __obj.updateDynamic("nodeCheck")(nodeCheck)
+    if (nodeClick != null) __obj.updateDynamic("nodeClick")(nodeClick)
+    if (nodeCollapse != null) __obj.updateDynamic("nodeCollapse")(nodeCollapse)
+    if (nodeCut != null) __obj.updateDynamic("nodeCut")(nodeCut)
+    if (nodeDelete != null) __obj.updateDynamic("nodeDelete")(nodeDelete)
+    if (nodeDrag != null) __obj.updateDynamic("nodeDrag")(nodeDrag)
+    if (nodeDragStart != null) __obj.updateDynamic("nodeDragStart")(nodeDragStart)
+    if (nodeDragStop != null) __obj.updateDynamic("nodeDragStop")(nodeDragStop)
+    if (nodeDropped != null) __obj.updateDynamic("nodeDropped")(nodeDropped)
+    if (nodeEdit != null) __obj.updateDynamic("nodeEdit")(nodeEdit)
+    if (nodeExpand != null) __obj.updateDynamic("nodeExpand")(nodeExpand)
+    if (nodePaste != null) __obj.updateDynamic("nodePaste")(nodePaste)
+    if (nodeSelect != null) __obj.updateDynamic("nodeSelect")(nodeSelect)
+    if (nodeUncheck != null) __obj.updateDynamic("nodeUncheck")(nodeUncheck)
+    if (nodeUnselect != null) __obj.updateDynamic("nodeUnselect")(nodeUnselect)
+    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (selectedNode != null) __obj.updateDynamic("selectedNode")(selectedNode.asInstanceOf[js.Any])
+    if (selectedNodes != null) __obj.updateDynamic("selectedNodes")(selectedNodes)
+    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)
+    if (sortSettings != null) __obj.updateDynamic("sortSettings")(sortSettings)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

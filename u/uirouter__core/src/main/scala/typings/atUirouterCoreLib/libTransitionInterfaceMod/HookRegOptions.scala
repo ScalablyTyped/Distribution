@@ -26,3 +26,18 @@ trait HookRegOptions extends js.Object {
   var priority: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HookRegOptions {
+  @scala.inline
+  def apply(
+    bind: js.Any = null,
+    invokeLimit: scala.Int | scala.Double = null,
+    priority: scala.Int | scala.Double = null
+  ): HookRegOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bind != null) __obj.updateDynamic("bind")(bind)
+    if (invokeLimit != null) __obj.updateDynamic("invokeLimit")(invokeLimit.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HookRegOptions]
+  }
+}
+

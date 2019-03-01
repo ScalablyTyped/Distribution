@@ -24,3 +24,25 @@ trait OpenedFileInfo extends js.Object {
   var openRequestId: chromeDashAppsLib.chromeNs.integer
 }
 
+object OpenedFileInfo {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    mode: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_READ, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_READ[keyof chrome-apps.Anon_READ] */ js.Any
+      ]
+    ],
+    openRequestId: chromeDashAppsLib.chromeNs.integer
+  ): OpenedFileInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.updateDynamic("openRequestId")(openRequestId)
+    __obj.asInstanceOf[OpenedFileInfo]
+  }
+}
+

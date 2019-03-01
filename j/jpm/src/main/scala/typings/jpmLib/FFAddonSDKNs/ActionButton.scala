@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ActionButton extends ActionButtonState {
+trait ActionButton
+  extends ActionButtonState
+     with jpmLib.sdkUiToolbarMod.ToolbarItem {
   def click(): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
   @JSName("on")

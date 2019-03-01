@@ -25,3 +25,24 @@ trait HttpRequestContext extends js.Object {
   var userAgent: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HttpRequestContext {
+  @scala.inline
+  def apply(
+    method: java.lang.String = null,
+    referrer: java.lang.String = null,
+    remoteIp: java.lang.String = null,
+    responseStatusCode: scala.Int | scala.Double = null,
+    url: java.lang.String = null,
+    userAgent: java.lang.String = null
+  ): HttpRequestContext = {
+    val __obj = js.Dynamic.literal()
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    if (remoteIp != null) __obj.updateDynamic("remoteIp")(remoteIp)
+    if (responseStatusCode != null) __obj.updateDynamic("responseStatusCode")(responseStatusCode.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    __obj.asInstanceOf[HttpRequestContext]
+  }
+}
+

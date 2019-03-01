@@ -115,3 +115,98 @@ trait CompressOptions extends js.Object {
   var warnings: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CompressOptions {
+  @scala.inline
+  def apply(
+    arguments: js.UndefOr[scala.Boolean] = js.undefined,
+    booleans: js.UndefOr[scala.Boolean] = js.undefined,
+    collapse_vars: js.UndefOr[scala.Boolean] = js.undefined,
+    comparisons: js.UndefOr[scala.Boolean] = js.undefined,
+    conditionals: js.UndefOr[scala.Boolean] = js.undefined,
+    dead_code: js.UndefOr[scala.Boolean] = js.undefined,
+    drop_console: js.UndefOr[scala.Boolean] = js.undefined,
+    drop_debugger: js.UndefOr[scala.Boolean] = js.undefined,
+    evaluate: js.UndefOr[scala.Boolean] = js.undefined,
+    expression: js.UndefOr[scala.Boolean] = js.undefined,
+    global_defs: js.Object = null,
+    hoist_funs: js.UndefOr[scala.Boolean] = js.undefined,
+    hoist_props: js.UndefOr[scala.Boolean] = js.undefined,
+    hoist_vars: js.UndefOr[scala.Boolean] = js.undefined,
+    if_return: js.UndefOr[scala.Boolean] = js.undefined,
+    `inline`: scala.Boolean | InlineFunctions = null,
+    join_vars: js.UndefOr[scala.Boolean] = js.undefined,
+    keep_fargs: js.UndefOr[scala.Boolean] = js.undefined,
+    keep_fnames: js.UndefOr[scala.Boolean] = js.undefined,
+    keep_infinity: js.UndefOr[scala.Boolean] = js.undefined,
+    loops: js.UndefOr[scala.Boolean] = js.undefined,
+    negate_iife: js.UndefOr[scala.Boolean] = js.undefined,
+    passes: scala.Int | scala.Double = null,
+    properties: js.UndefOr[scala.Boolean] = js.undefined,
+    pure_funcs: js.Array[java.lang.String] = null,
+    pure_getters: scala.Boolean | uglifyDashJsLib.uglifyDashJsLibStrings.strict = null,
+    reduce_funcs: js.UndefOr[scala.Boolean] = js.undefined,
+    reduce_vars: js.UndefOr[scala.Boolean] = js.undefined,
+    sequences: js.UndefOr[scala.Boolean] = js.undefined,
+    side_effects: js.UndefOr[scala.Boolean] = js.undefined,
+    switches: js.UndefOr[scala.Boolean] = js.undefined,
+    top_retain: js.UndefOr[scala.Boolean] = js.undefined,
+    toplevel: js.UndefOr[scala.Boolean] = js.undefined,
+    typeofs: js.UndefOr[scala.Boolean] = js.undefined,
+    unsafe: js.UndefOr[scala.Boolean] = js.undefined,
+    unsafe_Function: js.UndefOr[scala.Boolean] = js.undefined,
+    unsafe_comps: js.UndefOr[scala.Boolean] = js.undefined,
+    unsafe_math: js.UndefOr[scala.Boolean] = js.undefined,
+    unsafe_proto: js.UndefOr[scala.Boolean] = js.undefined,
+    unsafe_regexp: js.UndefOr[scala.Boolean] = js.undefined,
+    unsafe_undefined: js.UndefOr[scala.Boolean] = js.undefined,
+    unused: js.UndefOr[scala.Boolean] = js.undefined,
+    warnings: js.UndefOr[scala.Boolean] = js.undefined
+  ): CompressOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(arguments)) __obj.updateDynamic("arguments")(arguments)
+    if (!js.isUndefined(booleans)) __obj.updateDynamic("booleans")(booleans)
+    if (!js.isUndefined(collapse_vars)) __obj.updateDynamic("collapse_vars")(collapse_vars)
+    if (!js.isUndefined(comparisons)) __obj.updateDynamic("comparisons")(comparisons)
+    if (!js.isUndefined(conditionals)) __obj.updateDynamic("conditionals")(conditionals)
+    if (!js.isUndefined(dead_code)) __obj.updateDynamic("dead_code")(dead_code)
+    if (!js.isUndefined(drop_console)) __obj.updateDynamic("drop_console")(drop_console)
+    if (!js.isUndefined(drop_debugger)) __obj.updateDynamic("drop_debugger")(drop_debugger)
+    if (!js.isUndefined(evaluate)) __obj.updateDynamic("evaluate")(evaluate)
+    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression)
+    if (global_defs != null) __obj.updateDynamic("global_defs")(global_defs)
+    if (!js.isUndefined(hoist_funs)) __obj.updateDynamic("hoist_funs")(hoist_funs)
+    if (!js.isUndefined(hoist_props)) __obj.updateDynamic("hoist_props")(hoist_props)
+    if (!js.isUndefined(hoist_vars)) __obj.updateDynamic("hoist_vars")(hoist_vars)
+    if (!js.isUndefined(if_return)) __obj.updateDynamic("if_return")(if_return)
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (!js.isUndefined(join_vars)) __obj.updateDynamic("join_vars")(join_vars)
+    if (!js.isUndefined(keep_fargs)) __obj.updateDynamic("keep_fargs")(keep_fargs)
+    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames)
+    if (!js.isUndefined(keep_infinity)) __obj.updateDynamic("keep_infinity")(keep_infinity)
+    if (!js.isUndefined(loops)) __obj.updateDynamic("loops")(loops)
+    if (!js.isUndefined(negate_iife)) __obj.updateDynamic("negate_iife")(negate_iife)
+    if (passes != null) __obj.updateDynamic("passes")(passes.asInstanceOf[js.Any])
+    if (!js.isUndefined(properties)) __obj.updateDynamic("properties")(properties)
+    if (pure_funcs != null) __obj.updateDynamic("pure_funcs")(pure_funcs)
+    if (pure_getters != null) __obj.updateDynamic("pure_getters")(pure_getters.asInstanceOf[js.Any])
+    if (!js.isUndefined(reduce_funcs)) __obj.updateDynamic("reduce_funcs")(reduce_funcs)
+    if (!js.isUndefined(reduce_vars)) __obj.updateDynamic("reduce_vars")(reduce_vars)
+    if (!js.isUndefined(sequences)) __obj.updateDynamic("sequences")(sequences)
+    if (!js.isUndefined(side_effects)) __obj.updateDynamic("side_effects")(side_effects)
+    if (!js.isUndefined(switches)) __obj.updateDynamic("switches")(switches)
+    if (!js.isUndefined(top_retain)) __obj.updateDynamic("top_retain")(top_retain)
+    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel)
+    if (!js.isUndefined(typeofs)) __obj.updateDynamic("typeofs")(typeofs)
+    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe)
+    if (!js.isUndefined(unsafe_Function)) __obj.updateDynamic("unsafe_Function")(unsafe_Function)
+    if (!js.isUndefined(unsafe_comps)) __obj.updateDynamic("unsafe_comps")(unsafe_comps)
+    if (!js.isUndefined(unsafe_math)) __obj.updateDynamic("unsafe_math")(unsafe_math)
+    if (!js.isUndefined(unsafe_proto)) __obj.updateDynamic("unsafe_proto")(unsafe_proto)
+    if (!js.isUndefined(unsafe_regexp)) __obj.updateDynamic("unsafe_regexp")(unsafe_regexp)
+    if (!js.isUndefined(unsafe_undefined)) __obj.updateDynamic("unsafe_undefined")(unsafe_undefined)
+    if (!js.isUndefined(unused)) __obj.updateDynamic("unused")(unused)
+    if (!js.isUndefined(warnings)) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[CompressOptions]
+  }
+}
+

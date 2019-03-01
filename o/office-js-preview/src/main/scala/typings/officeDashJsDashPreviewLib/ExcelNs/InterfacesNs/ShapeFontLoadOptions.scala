@@ -65,3 +65,26 @@ trait ShapeFontLoadOptions extends js.Object {
   var underline: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ShapeFontLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    color: js.UndefOr[scala.Boolean] = js.undefined,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    size: js.UndefOr[scala.Boolean] = js.undefined,
+    underline: js.UndefOr[scala.Boolean] = js.undefined
+  ): ShapeFontLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline)
+    __obj.asInstanceOf[ShapeFontLoadOptions]
+  }
+}
+

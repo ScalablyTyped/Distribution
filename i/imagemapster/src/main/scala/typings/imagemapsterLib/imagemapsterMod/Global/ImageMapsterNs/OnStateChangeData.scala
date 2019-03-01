@@ -17,3 +17,18 @@ trait OnStateChangeData extends js.Object {
   var state: imagemapsterLib.imagemapsterLibStrings.highlight | imagemapsterLib.imagemapsterLibStrings.select
 }
 
+object OnStateChangeData {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    selected: scala.Boolean,
+    state: imagemapsterLib.imagemapsterLibStrings.highlight | imagemapsterLib.imagemapsterLibStrings.select
+  ): OnStateChangeData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("selected")(selected)
+    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnStateChangeData]
+  }
+}
+

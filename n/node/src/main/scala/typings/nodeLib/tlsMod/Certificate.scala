@@ -32,3 +32,24 @@ trait Certificate extends js.Object {
   var ST: java.lang.String
 }
 
+object Certificate {
+  @scala.inline
+  def apply(
+    C: java.lang.String,
+    CN: java.lang.String,
+    L: java.lang.String,
+    O: java.lang.String,
+    OU: java.lang.String,
+    ST: java.lang.String
+  ): Certificate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("C")(C)
+    __obj.updateDynamic("CN")(CN)
+    __obj.updateDynamic("L")(L)
+    __obj.updateDynamic("O")(O)
+    __obj.updateDynamic("OU")(OU)
+    __obj.updateDynamic("ST")(ST)
+    __obj.asInstanceOf[Certificate]
+  }
+}
+

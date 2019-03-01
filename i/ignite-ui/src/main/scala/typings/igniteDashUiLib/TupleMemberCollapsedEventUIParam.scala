@@ -28,3 +28,22 @@ trait TupleMemberCollapsedEventUIParam extends js.Object {
   var tupleIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TupleMemberCollapsedEventUIParam {
+  @scala.inline
+  def apply(
+    axisName: java.lang.String = null,
+    dataSource: js.Any = null,
+    memberIndex: scala.Int | scala.Double = null,
+    owner: js.Any = null,
+    tupleIndex: scala.Int | scala.Double = null
+  ): TupleMemberCollapsedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (axisName != null) __obj.updateDynamic("axisName")(axisName)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (memberIndex != null) __obj.updateDynamic("memberIndex")(memberIndex.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (tupleIndex != null) __obj.updateDynamic("tupleIndex")(tupleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TupleMemberCollapsedEventUIParam]
+  }
+}
+

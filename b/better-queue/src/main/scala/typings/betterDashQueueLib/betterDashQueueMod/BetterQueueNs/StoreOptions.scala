@@ -11,3 +11,16 @@ trait StoreOptions
   var `type`: java.lang.String
 }
 
+object StoreOptions {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    StringDictionary: // store-specific options
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): StoreOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[StoreOptions]
+  }
+}
+

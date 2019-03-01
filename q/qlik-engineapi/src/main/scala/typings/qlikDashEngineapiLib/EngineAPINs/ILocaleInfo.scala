@@ -108,3 +108,44 @@ trait ILocaleInfo extends js.Object {
   var qTimestampFmt: java.lang.String
 }
 
+object ILocaleInfo {
+  @scala.inline
+  def apply(
+    qBrokenWeeks: scala.Double,
+    qCalendarStrings: ICalenderStrings,
+    qCollation: java.lang.String,
+    qCurrentYear: scala.Double,
+    qDateFmt: java.lang.String,
+    qDecimalSep: java.lang.String,
+    qFirstMonthOfYear: scala.Double,
+    qFirstWeekDay: scala.Boolean,
+    qListSep: java.lang.String,
+    qMoneyDecimalSep: java.lang.String,
+    qMoneyFmt: java.lang.String,
+    qMoneyThousandSep: java.lang.String,
+    qReferenceDay: scala.Double,
+    qThousandSep: java.lang.String,
+    qTimeFmt: java.lang.String,
+    qTimestampFmt: java.lang.String
+  ): ILocaleInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qBrokenWeeks")(qBrokenWeeks)
+    __obj.updateDynamic("qCalendarStrings")(qCalendarStrings)
+    __obj.updateDynamic("qCollation")(qCollation)
+    __obj.updateDynamic("qCurrentYear")(qCurrentYear)
+    __obj.updateDynamic("qDateFmt")(qDateFmt)
+    __obj.updateDynamic("qDecimalSep")(qDecimalSep)
+    __obj.updateDynamic("qFirstMonthOfYear")(qFirstMonthOfYear)
+    __obj.updateDynamic("qFirstWeekDay")(qFirstWeekDay)
+    __obj.updateDynamic("qListSep")(qListSep)
+    __obj.updateDynamic("qMoneyDecimalSep")(qMoneyDecimalSep)
+    __obj.updateDynamic("qMoneyFmt")(qMoneyFmt)
+    __obj.updateDynamic("qMoneyThousandSep")(qMoneyThousandSep)
+    __obj.updateDynamic("qReferenceDay")(qReferenceDay)
+    __obj.updateDynamic("qThousandSep")(qThousandSep)
+    __obj.updateDynamic("qTimeFmt")(qTimeFmt)
+    __obj.updateDynamic("qTimestampFmt")(qTimestampFmt)
+    __obj.asInstanceOf[ILocaleInfo]
+  }
+}
+

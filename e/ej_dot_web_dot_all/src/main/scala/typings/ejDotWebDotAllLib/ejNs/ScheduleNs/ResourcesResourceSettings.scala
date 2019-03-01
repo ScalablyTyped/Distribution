@@ -45,3 +45,30 @@ trait ResourcesResourceSettings extends js.Object {
   var workWeek: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResourcesResourceSettings {
+  @scala.inline
+  def apply(
+    appointmentClass: java.lang.String = null,
+    color: java.lang.String = null,
+    dataSource: js.Any | js.Array[_] = null,
+    end: java.lang.String = null,
+    groupId: java.lang.String = null,
+    id: java.lang.String = null,
+    start: java.lang.String = null,
+    text: java.lang.String = null,
+    workWeek: java.lang.String = null
+  ): ResourcesResourceSettings = {
+    val __obj = js.Dynamic.literal()
+    if (appointmentClass != null) __obj.updateDynamic("appointmentClass")(appointmentClass)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (workWeek != null) __obj.updateDynamic("workWeek")(workWeek)
+    __obj.asInstanceOf[ResourcesResourceSettings]
+  }
+}
+

@@ -44,3 +44,22 @@ trait DataSelectionOptions[T] extends js.Object {
   var `type`: js.UndefOr[js.Any] = js.undefined
 }
 
+object DataSelectionOptions {
+  @scala.inline
+  def apply[T](
+    fields: js.Array[java.lang.String] | js.Any = null,
+    filter: js.Function1[/* item */ T, scala.Boolean] = null,
+    order: java.lang.String | (js.Function2[/* a */ T, /* b */ T, scala.Double]) = null,
+    returnType: visLib.visLibStrings.Array | visLib.visLibStrings.Object = null,
+    `type`: js.Any = null
+  ): DataSelectionOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DataSelectionOptions[T]]
+  }
+}
+

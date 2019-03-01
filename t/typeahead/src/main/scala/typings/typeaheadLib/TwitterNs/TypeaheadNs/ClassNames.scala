@@ -47,3 +47,30 @@ trait ClassNames extends js.Object {
   var suggestion: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClassNames {
+  @scala.inline
+  def apply(
+    cursor: java.lang.String = null,
+    dataset: java.lang.String = null,
+    empty: java.lang.String = null,
+    highlight: java.lang.String = null,
+    hint: java.lang.String = null,
+    input: java.lang.String = null,
+    menu: java.lang.String = null,
+    open: java.lang.String = null,
+    suggestion: java.lang.String = null
+  ): ClassNames = {
+    val __obj = js.Dynamic.literal()
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
+    if (empty != null) __obj.updateDynamic("empty")(empty)
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (hint != null) __obj.updateDynamic("hint")(hint)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (menu != null) __obj.updateDynamic("menu")(menu)
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion)
+    __obj.asInstanceOf[ClassNames]
+  }
+}
+

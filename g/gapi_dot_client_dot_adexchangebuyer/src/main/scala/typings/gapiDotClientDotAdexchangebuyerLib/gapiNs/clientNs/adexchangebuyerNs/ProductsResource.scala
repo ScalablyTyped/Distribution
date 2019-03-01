@@ -12,3 +12,22 @@ trait ProductsResource extends js.Object {
   def search(request: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPqlQuery): gapiDotClientLib.gapiNs.clientNs.Request[GetOffersResponse]
 }
 
+object ProductsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProductId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Product]
+    ],
+    search: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPqlQuery, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetOffersResponse]
+    ]
+  ): ProductsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ProductsResource]
+  }
+}
+

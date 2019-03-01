@@ -11,3 +11,18 @@ trait CacheControlExtensionOptions extends js.Object {
   var stripFormattedExtensions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CacheControlExtensionOptions {
+  @scala.inline
+  def apply(
+    calculateHttpHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultMaxAge: scala.Int | scala.Double = null,
+    stripFormattedExtensions: js.UndefOr[scala.Boolean] = js.undefined
+  ): CacheControlExtensionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(calculateHttpHeaders)) __obj.updateDynamic("calculateHttpHeaders")(calculateHttpHeaders)
+    if (defaultMaxAge != null) __obj.updateDynamic("defaultMaxAge")(defaultMaxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(stripFormattedExtensions)) __obj.updateDynamic("stripFormattedExtensions")(stripFormattedExtensions)
+    __obj.asInstanceOf[CacheControlExtensionOptions]
+  }
+}
+

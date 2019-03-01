@@ -16,3 +16,16 @@ trait PrincipalAssociationArgs extends js.Object {
   val resourceShareArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object PrincipalAssociationArgs {
+  @scala.inline
+  def apply(
+    principal: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    resourceShareArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): PrincipalAssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
+    __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrincipalAssociationArgs]
+  }
+}
+

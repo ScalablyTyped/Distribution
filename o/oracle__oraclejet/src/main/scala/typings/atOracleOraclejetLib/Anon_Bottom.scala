@@ -13,3 +13,22 @@ trait Anon_Bottom extends js.Object {
   var width: scala.Double
 }
 
+object Anon_Bottom {
+  @scala.inline
+  def apply(
+    halign: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.center,
+    height: scala.Double,
+    rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    valign: atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.middle,
+    width: scala.Double
+  ): Anon_Bottom = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("halign")(halign.asInstanceOf[js.Any])
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Anon_Bottom]
+  }
+}
+

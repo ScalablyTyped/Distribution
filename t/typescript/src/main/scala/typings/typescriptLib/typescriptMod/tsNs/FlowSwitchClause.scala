@@ -5,10 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FlowSwitchClause extends FlowNodeBase {
+trait FlowSwitchClause
+  extends FlowNodeBase
+     with FlowNode {
   var antecedent: FlowNode
   var clauseEnd: scala.Double
   var clauseStart: scala.Double
   var switchStatement: SwitchStatement
+}
+
+object FlowSwitchClause {
+  @scala.inline
+  def apply(
+    antecedent: FlowNode,
+    clauseEnd: scala.Double,
+    clauseStart: scala.Double,
+    flags: FlowFlags,
+    switchStatement: SwitchStatement,
+    id: scala.Int | scala.Double = null
+  ): FlowSwitchClause = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("antecedent")(antecedent)
+    __obj.updateDynamic("clauseEnd")(clauseEnd)
+    __obj.updateDynamic("clauseStart")(clauseStart)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("switchStatement")(switchStatement)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowSwitchClause]
+  }
 }
 

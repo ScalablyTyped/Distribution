@@ -20,3 +20,24 @@ trait FetchOptions extends js.Object {
   var struct: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FetchOptions {
+  @scala.inline
+  def apply(
+    bodies: java.lang.String | js.Array[java.lang.String] = null,
+    envelope: js.UndefOr[scala.Boolean] = js.undefined,
+    markSeen: js.UndefOr[scala.Boolean] = js.undefined,
+    modifiers: js.Object = null,
+    size: js.UndefOr[scala.Boolean] = js.undefined,
+    struct: js.UndefOr[scala.Boolean] = js.undefined
+  ): FetchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bodies != null) __obj.updateDynamic("bodies")(bodies.asInstanceOf[js.Any])
+    if (!js.isUndefined(envelope)) __obj.updateDynamic("envelope")(envelope)
+    if (!js.isUndefined(markSeen)) __obj.updateDynamic("markSeen")(markSeen)
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(struct)) __obj.updateDynamic("struct")(struct)
+    __obj.asInstanceOf[FetchOptions]
+  }
+}
+

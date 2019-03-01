@@ -7,10 +7,15 @@ import scala.scalajs.js.annotation._
 
 object vscodeDashLanguageserverDashProtocolLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentSyncKind
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.CompletionTriggerKind
+       with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.FileChangeType
+       with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.MessageType
+       with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentSyncKind
   
   @js.native
   sealed trait `10` extends js.Object
@@ -43,7 +48,11 @@ object vscodeDashLanguageserverDashProtocolLibNumbers {
   sealed trait `19` extends js.Object
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.CompletionTriggerKind
+       with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.FileChangeType
+       with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.MessageType
+       with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentSyncKind
   
   @js.native
   sealed trait `20` extends js.Object
@@ -67,10 +76,14 @@ object vscodeDashLanguageserverDashProtocolLibNumbers {
   sealed trait `26` extends js.Object
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.CompletionTriggerKind
+       with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.FileChangeType
+       with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.MessageType
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.MessageType
   
   @js.native
   sealed trait `5` extends js.Object

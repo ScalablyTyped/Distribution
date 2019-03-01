@@ -15,3 +15,12 @@ trait IContentLibraryList extends js.Object {
   var qItems: IContentLibraryListItem
 }
 
+object IContentLibraryList {
+  @scala.inline
+  def apply(qItems: IContentLibraryListItem): IContentLibraryList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qItems")(qItems)
+    __obj.asInstanceOf[IContentLibraryList]
+  }
+}
+

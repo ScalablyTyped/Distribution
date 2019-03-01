@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object dynogelsLibStrings {
   @js.native
-  sealed trait create extends js.Object
+  sealed trait create
+    extends dynogelsLib.dynogelsMod.LifeCycleAction
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait destroy
+    extends dynogelsLib.dynogelsMod.LifeCycleAction
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update
+    extends dynogelsLib.dynogelsMod.LifeCycleAction
   
   @scala.inline
   def create: create = "create".asInstanceOf[create]

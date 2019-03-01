@@ -43,3 +43,34 @@ trait ASPxClientHtmlEditorEditElementDialog extends ASPxClientHtmlEditorDialogBa
   def GetTopMarginTextBox(): ASPxClientTextBox
 }
 
+object ASPxClientHtmlEditorEditElementDialog {
+  @scala.inline
+  def apply(
+    GetBorderColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetBorderStyleComboBox: js.Function0[ASPxClientComboBox],
+    GetBorderWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
+    GetBottomMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetCssClassNameComboBox: js.Function0[ASPxClientComboBox],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetLeftMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetRightMarginTextBox: js.Function0[ASPxClientTextBox],
+    GetTopMarginTextBox: js.Function0[ASPxClientTextBox]
+  ): ASPxClientHtmlEditorEditElementDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetBorderColorColorEdit")(GetBorderColorColorEdit)
+    __obj.updateDynamic("GetBorderStyleComboBox")(GetBorderStyleComboBox)
+    __obj.updateDynamic("GetBorderWidthSpinEdit")(GetBorderWidthSpinEdit)
+    __obj.updateDynamic("GetBottomMarginTextBox")(GetBottomMarginTextBox)
+    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
+    __obj.updateDynamic("GetCssClassNameComboBox")(GetCssClassNameComboBox)
+    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
+    __obj.updateDynamic("GetLeftMarginTextBox")(GetLeftMarginTextBox)
+    __obj.updateDynamic("GetOkButton")(GetOkButton)
+    __obj.updateDynamic("GetRightMarginTextBox")(GetRightMarginTextBox)
+    __obj.updateDynamic("GetTopMarginTextBox")(GetTopMarginTextBox)
+    __obj.asInstanceOf[ASPxClientHtmlEditorEditElementDialog]
+  }
+}
+

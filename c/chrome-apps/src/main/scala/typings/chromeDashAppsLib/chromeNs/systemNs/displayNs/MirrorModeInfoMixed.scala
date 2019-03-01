@@ -13,3 +13,18 @@ trait MirrorModeInfoMixed extends MirrorModeInfo {
   var mode_MirrorModeInfoMixed: chromeDashAppsLib.chromeDashAppsLibStrings.mixed
 }
 
+object MirrorModeInfoMixed {
+  @scala.inline
+  def apply(
+    mode: chromeDashAppsLib.chromeDashAppsLibStrings.mixed,
+    mirroringDestinationIds: js.Array[java.lang.String] = null,
+    mirroringSourceId: java.lang.String = null
+  ): MirrorModeInfoMixed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mode")(mode)
+    if (mirroringDestinationIds != null) __obj.updateDynamic("mirroringDestinationIds")(mirroringDestinationIds)
+    if (mirroringSourceId != null) __obj.updateDynamic("mirroringSourceId")(mirroringSourceId)
+    __obj.asInstanceOf[MirrorModeInfoMixed]
+  }
+}
+

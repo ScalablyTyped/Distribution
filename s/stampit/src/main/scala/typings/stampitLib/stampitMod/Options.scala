@@ -66,3 +66,50 @@ trait Options extends js.Object {
   var statics: js.UndefOr[js.Object] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    composers: js.Array[stampitLib.Composer] = null,
+    conf: js.Object = null,
+    configuration: js.Object = null,
+    deepConf: js.Object = null,
+    deepConfiguration: js.Object = null,
+    deepProperties: js.Object = null,
+    deepProps: js.Object = null,
+    deepStatics: js.Object = null,
+    init: stampitLib.Init | js.Array[stampitLib.Init] = null,
+    initializers: stampitLib.Init | js.Array[stampitLib.Init] = null,
+    methods: js.Object = null,
+    properties: js.Object = null,
+    propertyDescriptors: js.Object = null,
+    props: js.Object = null,
+    refs: js.Object = null,
+    staticDeepProperties: js.Object = null,
+    staticProperties: js.Object = null,
+    staticPropertyDescriptors: js.Object = null,
+    statics: js.Object = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (composers != null) __obj.updateDynamic("composers")(composers)
+    if (conf != null) __obj.updateDynamic("conf")(conf)
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    if (deepConf != null) __obj.updateDynamic("deepConf")(deepConf)
+    if (deepConfiguration != null) __obj.updateDynamic("deepConfiguration")(deepConfiguration)
+    if (deepProperties != null) __obj.updateDynamic("deepProperties")(deepProperties)
+    if (deepProps != null) __obj.updateDynamic("deepProps")(deepProps)
+    if (deepStatics != null) __obj.updateDynamic("deepStatics")(deepStatics)
+    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
+    if (initializers != null) __obj.updateDynamic("initializers")(initializers.asInstanceOf[js.Any])
+    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (propertyDescriptors != null) __obj.updateDynamic("propertyDescriptors")(propertyDescriptors)
+    if (props != null) __obj.updateDynamic("props")(props)
+    if (refs != null) __obj.updateDynamic("refs")(refs)
+    if (staticDeepProperties != null) __obj.updateDynamic("staticDeepProperties")(staticDeepProperties)
+    if (staticProperties != null) __obj.updateDynamic("staticProperties")(staticProperties)
+    if (staticPropertyDescriptors != null) __obj.updateDynamic("staticPropertyDescriptors")(staticPropertyDescriptors)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    __obj.asInstanceOf[Options]
+  }
+}
+

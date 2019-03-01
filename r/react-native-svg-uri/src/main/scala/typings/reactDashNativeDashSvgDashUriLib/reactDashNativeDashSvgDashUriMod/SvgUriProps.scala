@@ -31,3 +31,22 @@ trait SvgUriProps extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object SvgUriProps {
+  @scala.inline
+  def apply(
+    fill: java.lang.String = null,
+    height: scala.Double | java.lang.String = null,
+    source: reactDashNativeLib.reactDashNativeMod.ImageURISource = null,
+    svgXmlData: java.lang.String = null,
+    width: scala.Double | java.lang.String = null
+  ): SvgUriProps = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (svgXmlData != null) __obj.updateDynamic("svgXmlData")(svgXmlData)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SvgUriProps]
+  }
+}
+

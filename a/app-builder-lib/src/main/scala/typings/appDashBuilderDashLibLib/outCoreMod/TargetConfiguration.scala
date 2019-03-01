@@ -18,3 +18,16 @@ trait TargetConfiguration extends js.Object {
   val target: java.lang.String
 }
 
+object TargetConfiguration {
+  @scala.inline
+  def apply(
+    target: java.lang.String,
+    arch: js.Array[builderDashUtilLib.outArchMod.ArchType] | builderDashUtilLib.outArchMod.ArchType = null
+  ): TargetConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("target")(target)
+    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetConfiguration]
+  }
+}
+

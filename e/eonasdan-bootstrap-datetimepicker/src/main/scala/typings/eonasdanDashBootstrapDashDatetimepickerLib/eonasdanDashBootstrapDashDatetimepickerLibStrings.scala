@@ -13,19 +13,24 @@ object eonasdanDashBootstrapDashDatetimepickerLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.ToolbarPlacement
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.UseCurrent
   
   @js.native
-  sealed trait days extends js.Object
+  sealed trait days
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.ViewMode
   
   @js.native
-  sealed trait decades extends js.Object
+  sealed trait decades
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.ViewMode
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.ToolbarPlacement
   
   @js.native
   sealed trait dpDOTchange extends js.Object
@@ -43,31 +48,38 @@ object eonasdanDashBootstrapDashDatetimepickerLibStrings {
   sealed trait dpDOTupdate extends js.Object
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait hour
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.UseCurrent
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait minute
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.UseCurrent
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.UseCurrent
   
   @js.native
-  sealed trait months extends js.Object
+  sealed trait months
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.ViewMode
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.ToolbarPlacement
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.UseCurrent
   
   @js.native
-  sealed trait years extends js.Object
+  sealed trait years
+    extends eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerMod.ViewMode
   
   @scala.inline
   def DateTimePicker: DateTimePicker = "DateTimePicker".asInstanceOf[DateTimePicker]

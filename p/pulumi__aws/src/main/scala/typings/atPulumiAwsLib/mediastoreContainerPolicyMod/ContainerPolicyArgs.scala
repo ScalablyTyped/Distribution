@@ -16,3 +16,16 @@ trait ContainerPolicyArgs extends js.Object {
   val policy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object ContainerPolicyArgs {
+  @scala.inline
+  def apply(
+    containerName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): ContainerPolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
+    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContainerPolicyArgs]
+  }
+}
+

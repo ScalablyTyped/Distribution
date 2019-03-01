@@ -10,3 +10,13 @@ trait TestToWorkItemLinks extends js.Object {
   var workItems: js.Array[WorkItemReference]
 }
 
+object TestToWorkItemLinks {
+  @scala.inline
+  def apply(test: TestMethod, workItems: js.Array[WorkItemReference]): TestToWorkItemLinks = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("test")(test)
+    __obj.updateDynamic("workItems")(workItems)
+    __obj.asInstanceOf[TestToWorkItemLinks]
+  }
+}
+

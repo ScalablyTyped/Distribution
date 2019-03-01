@@ -11,3 +11,18 @@ trait IUiGridEditConstants extends js.Object {
   var events: uiDashGridLib.Anon_BEGINCELLEDIT
 }
 
+object IUiGridEditConstants {
+  @scala.inline
+  def apply(
+    EDITABLE_CELL_DIRECTIVE: java.lang.String,
+    EDITABLE_CELL_TEMPLATE: java.lang.String,
+    events: uiDashGridLib.Anon_BEGINCELLEDIT
+  ): IUiGridEditConstants = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EDITABLE_CELL_DIRECTIVE")(EDITABLE_CELL_DIRECTIVE)
+    __obj.updateDynamic("EDITABLE_CELL_TEMPLATE")(EDITABLE_CELL_TEMPLATE)
+    __obj.updateDynamic("events")(events)
+    __obj.asInstanceOf[IUiGridEditConstants]
+  }
+}
+

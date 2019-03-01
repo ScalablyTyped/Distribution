@@ -679,3 +679,221 @@ trait IgDataChart
   var zoomTileCacheSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgDataChart {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igDataChart
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animateSeriesWhenAxisRangeChanges: js.UndefOr[scala.Boolean] = js.undefined,
+    assigningCategoryMarkerStyle: AssigningCategoryMarkerStyleEvent = null,
+    assigningCategoryStyle: AssigningCategoryStyleEvent = null,
+    autoMarginHeight: scala.Int | scala.Double = null,
+    autoMarginWidth: scala.Int | scala.Double = null,
+    axes: js.Array[IgDataChartAxes] = null,
+    axisRangeChanged: AxisRangeChangedEvent = null,
+    bottomMargin: scala.Int | scala.Double = null,
+    browserNotSupported: BrowserNotSupportedEvent = null,
+    brushes: js.Any = null,
+    circleMarkerTemplate: js.Any = null,
+    contentHitTestMode: java.lang.String = null,
+    crosshairPoint: IgDataChartCrosshairPoint = null,
+    crosshairVisibility: java.lang.String = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    defaultInteraction: java.lang.String = null,
+    diamondMarkerTemplate: js.Any = null,
+    dragModifier: java.lang.String = null,
+    gridAreaRectChanged: GridAreaRectChangedEvent = null,
+    gridMode: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    hexagonMarkerTemplate: js.Any = null,
+    hexagramMarkerTemplate: js.Any = null,
+    highlightingTransitionDuration: scala.Int | scala.Double = null,
+    horizontalZoomable: js.UndefOr[scala.Boolean] = js.undefined,
+    isHorizontalZoomEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isPagePanningAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    isSquare: js.UndefOr[scala.Boolean] = js.undefined,
+    isSurfaceInteractionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isVerticalZoomEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    leftMargin: scala.Int | scala.Double = null,
+    legend: IgDataChartLegend = null,
+    locale: js.Any = null,
+    markerBrushes: js.Any = null,
+    markerOutlines: js.Any = null,
+    outlines: js.Any = null,
+    overviewPlusDetailPaneVisibility: java.lang.String = null,
+    panModifier: java.lang.String = null,
+    pentagonMarkerTemplate: js.Any = null,
+    pentagramMarkerTemplate: js.Any = null,
+    pixelScalingRatio: scala.Int | scala.Double = null,
+    plotAreaBackground: java.lang.String = null,
+    preferHigherResolutionTiles: js.UndefOr[scala.Boolean] = js.undefined,
+    previewRect: js.Any = null,
+    progressiveLoadStatusChanged: ProgressiveLoadStatusChangedEvent = null,
+    pyramidMarkerTemplate: js.Any = null,
+    refreshCompleted: RefreshCompletedEvent = null,
+    regional: java.lang.String | js.Object = null,
+    responseDataKey: java.lang.String = null,
+    rightMargin: scala.Int | scala.Double = null,
+    series: js.Array[IgDataChartSeries] = null,
+    seriesCursorMouseMove: SeriesCursorMouseMoveEvent = null,
+    seriesMouseEnter: SeriesMouseEnterEvent = null,
+    seriesMouseLeave: SeriesMouseLeaveEvent = null,
+    seriesMouseLeftButtonDown: SeriesMouseLeftButtonDownEvent = null,
+    seriesMouseLeftButtonUp: SeriesMouseLeftButtonUpEvent = null,
+    seriesMouseMove: SeriesMouseMoveEvent = null,
+    size: js.Any = null,
+    squareMarkerTemplate: js.Any = null,
+    subtitle: java.lang.String = null,
+    subtitleBottomMargin: scala.Int | scala.Double = null,
+    subtitleHorizontalAlignment: java.lang.String = null,
+    subtitleLeftMargin: scala.Int | scala.Double = null,
+    subtitleRightMargin: scala.Int | scala.Double = null,
+    subtitleTextColor: js.Any = null,
+    subtitleTextStyle: java.lang.String = null,
+    subtitleTopMargin: scala.Int | scala.Double = null,
+    syncChannel: java.lang.String = null,
+    synchronizeHorizontally: js.UndefOr[scala.Boolean] = js.undefined,
+    synchronizeVertically: js.UndefOr[scala.Boolean] = js.undefined,
+    tetragramMarkerTemplate: js.Any = null,
+    theme: java.lang.String = null,
+    title: java.lang.String = null,
+    titleBottomMargin: scala.Int | scala.Double = null,
+    titleHorizontalAlignment: java.lang.String = null,
+    titleLeftMargin: scala.Int | scala.Double = null,
+    titleRightMargin: scala.Int | scala.Double = null,
+    titleTextColor: js.Any = null,
+    titleTextStyle: java.lang.String = null,
+    titleTopMargin: scala.Int | scala.Double = null,
+    tooltipHidden: TooltipHiddenEvent = null,
+    tooltipHiding: TooltipHidingEvent = null,
+    tooltipShowing: TooltipShowingEvent = null,
+    tooltipShown: TooltipShownEvent = null,
+    topMargin: scala.Int | scala.Double = null,
+    triangleMarkerTemplate: js.Any = null,
+    typicalBasedOn: TypicalBasedOnEvent = null,
+    useTiledZooming: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalZoomable: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String | scala.Double = null,
+    windowPositionHorizontal: scala.Int | scala.Double = null,
+    windowPositionVertical: scala.Int | scala.Double = null,
+    windowRect: js.Any = null,
+    windowRectChanged: WindowRectChangedEvent = null,
+    windowRectMinWidth: scala.Int | scala.Double = null,
+    windowResponse: java.lang.String = null,
+    windowScaleHorizontal: scala.Int | scala.Double = null,
+    windowScaleVertical: scala.Int | scala.Double = null,
+    zoomTileCacheSize: scala.Int | scala.Double = null
+  ): IgDataChart = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(animateSeriesWhenAxisRangeChanges)) __obj.updateDynamic("animateSeriesWhenAxisRangeChanges")(animateSeriesWhenAxisRangeChanges)
+    if (assigningCategoryMarkerStyle != null) __obj.updateDynamic("assigningCategoryMarkerStyle")(assigningCategoryMarkerStyle)
+    if (assigningCategoryStyle != null) __obj.updateDynamic("assigningCategoryStyle")(assigningCategoryStyle)
+    if (autoMarginHeight != null) __obj.updateDynamic("autoMarginHeight")(autoMarginHeight.asInstanceOf[js.Any])
+    if (autoMarginWidth != null) __obj.updateDynamic("autoMarginWidth")(autoMarginWidth.asInstanceOf[js.Any])
+    if (axes != null) __obj.updateDynamic("axes")(axes)
+    if (axisRangeChanged != null) __obj.updateDynamic("axisRangeChanged")(axisRangeChanged)
+    if (bottomMargin != null) __obj.updateDynamic("bottomMargin")(bottomMargin.asInstanceOf[js.Any])
+    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(browserNotSupported)
+    if (brushes != null) __obj.updateDynamic("brushes")(brushes)
+    if (circleMarkerTemplate != null) __obj.updateDynamic("circleMarkerTemplate")(circleMarkerTemplate)
+    if (contentHitTestMode != null) __obj.updateDynamic("contentHitTestMode")(contentHitTestMode)
+    if (crosshairPoint != null) __obj.updateDynamic("crosshairPoint")(crosshairPoint)
+    if (crosshairVisibility != null) __obj.updateDynamic("crosshairVisibility")(crosshairVisibility)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (defaultInteraction != null) __obj.updateDynamic("defaultInteraction")(defaultInteraction)
+    if (diamondMarkerTemplate != null) __obj.updateDynamic("diamondMarkerTemplate")(diamondMarkerTemplate)
+    if (dragModifier != null) __obj.updateDynamic("dragModifier")(dragModifier)
+    if (gridAreaRectChanged != null) __obj.updateDynamic("gridAreaRectChanged")(gridAreaRectChanged)
+    if (gridMode != null) __obj.updateDynamic("gridMode")(gridMode)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hexagonMarkerTemplate != null) __obj.updateDynamic("hexagonMarkerTemplate")(hexagonMarkerTemplate)
+    if (hexagramMarkerTemplate != null) __obj.updateDynamic("hexagramMarkerTemplate")(hexagramMarkerTemplate)
+    if (highlightingTransitionDuration != null) __obj.updateDynamic("highlightingTransitionDuration")(highlightingTransitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalZoomable)) __obj.updateDynamic("horizontalZoomable")(horizontalZoomable)
+    if (!js.isUndefined(isHorizontalZoomEnabled)) __obj.updateDynamic("isHorizontalZoomEnabled")(isHorizontalZoomEnabled)
+    if (!js.isUndefined(isPagePanningAllowed)) __obj.updateDynamic("isPagePanningAllowed")(isPagePanningAllowed)
+    if (!js.isUndefined(isSquare)) __obj.updateDynamic("isSquare")(isSquare)
+    if (!js.isUndefined(isSurfaceInteractionDisabled)) __obj.updateDynamic("isSurfaceInteractionDisabled")(isSurfaceInteractionDisabled)
+    if (!js.isUndefined(isVerticalZoomEnabled)) __obj.updateDynamic("isVerticalZoomEnabled")(isVerticalZoomEnabled)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (leftMargin != null) __obj.updateDynamic("leftMargin")(leftMargin.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (markerBrushes != null) __obj.updateDynamic("markerBrushes")(markerBrushes)
+    if (markerOutlines != null) __obj.updateDynamic("markerOutlines")(markerOutlines)
+    if (outlines != null) __obj.updateDynamic("outlines")(outlines)
+    if (overviewPlusDetailPaneVisibility != null) __obj.updateDynamic("overviewPlusDetailPaneVisibility")(overviewPlusDetailPaneVisibility)
+    if (panModifier != null) __obj.updateDynamic("panModifier")(panModifier)
+    if (pentagonMarkerTemplate != null) __obj.updateDynamic("pentagonMarkerTemplate")(pentagonMarkerTemplate)
+    if (pentagramMarkerTemplate != null) __obj.updateDynamic("pentagramMarkerTemplate")(pentagramMarkerTemplate)
+    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
+    if (plotAreaBackground != null) __obj.updateDynamic("plotAreaBackground")(plotAreaBackground)
+    if (!js.isUndefined(preferHigherResolutionTiles)) __obj.updateDynamic("preferHigherResolutionTiles")(preferHigherResolutionTiles)
+    if (previewRect != null) __obj.updateDynamic("previewRect")(previewRect)
+    if (progressiveLoadStatusChanged != null) __obj.updateDynamic("progressiveLoadStatusChanged")(progressiveLoadStatusChanged)
+    if (pyramidMarkerTemplate != null) __obj.updateDynamic("pyramidMarkerTemplate")(pyramidMarkerTemplate)
+    if (refreshCompleted != null) __obj.updateDynamic("refreshCompleted")(refreshCompleted)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (rightMargin != null) __obj.updateDynamic("rightMargin")(rightMargin.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (seriesCursorMouseMove != null) __obj.updateDynamic("seriesCursorMouseMove")(seriesCursorMouseMove)
+    if (seriesMouseEnter != null) __obj.updateDynamic("seriesMouseEnter")(seriesMouseEnter)
+    if (seriesMouseLeave != null) __obj.updateDynamic("seriesMouseLeave")(seriesMouseLeave)
+    if (seriesMouseLeftButtonDown != null) __obj.updateDynamic("seriesMouseLeftButtonDown")(seriesMouseLeftButtonDown)
+    if (seriesMouseLeftButtonUp != null) __obj.updateDynamic("seriesMouseLeftButtonUp")(seriesMouseLeftButtonUp)
+    if (seriesMouseMove != null) __obj.updateDynamic("seriesMouseMove")(seriesMouseMove)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (squareMarkerTemplate != null) __obj.updateDynamic("squareMarkerTemplate")(squareMarkerTemplate)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    if (subtitleBottomMargin != null) __obj.updateDynamic("subtitleBottomMargin")(subtitleBottomMargin.asInstanceOf[js.Any])
+    if (subtitleHorizontalAlignment != null) __obj.updateDynamic("subtitleHorizontalAlignment")(subtitleHorizontalAlignment)
+    if (subtitleLeftMargin != null) __obj.updateDynamic("subtitleLeftMargin")(subtitleLeftMargin.asInstanceOf[js.Any])
+    if (subtitleRightMargin != null) __obj.updateDynamic("subtitleRightMargin")(subtitleRightMargin.asInstanceOf[js.Any])
+    if (subtitleTextColor != null) __obj.updateDynamic("subtitleTextColor")(subtitleTextColor)
+    if (subtitleTextStyle != null) __obj.updateDynamic("subtitleTextStyle")(subtitleTextStyle)
+    if (subtitleTopMargin != null) __obj.updateDynamic("subtitleTopMargin")(subtitleTopMargin.asInstanceOf[js.Any])
+    if (syncChannel != null) __obj.updateDynamic("syncChannel")(syncChannel)
+    if (!js.isUndefined(synchronizeHorizontally)) __obj.updateDynamic("synchronizeHorizontally")(synchronizeHorizontally)
+    if (!js.isUndefined(synchronizeVertically)) __obj.updateDynamic("synchronizeVertically")(synchronizeVertically)
+    if (tetragramMarkerTemplate != null) __obj.updateDynamic("tetragramMarkerTemplate")(tetragramMarkerTemplate)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleBottomMargin != null) __obj.updateDynamic("titleBottomMargin")(titleBottomMargin.asInstanceOf[js.Any])
+    if (titleHorizontalAlignment != null) __obj.updateDynamic("titleHorizontalAlignment")(titleHorizontalAlignment)
+    if (titleLeftMargin != null) __obj.updateDynamic("titleLeftMargin")(titleLeftMargin.asInstanceOf[js.Any])
+    if (titleRightMargin != null) __obj.updateDynamic("titleRightMargin")(titleRightMargin.asInstanceOf[js.Any])
+    if (titleTextColor != null) __obj.updateDynamic("titleTextColor")(titleTextColor)
+    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle)
+    if (titleTopMargin != null) __obj.updateDynamic("titleTopMargin")(titleTopMargin.asInstanceOf[js.Any])
+    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(tooltipHidden)
+    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(tooltipHiding)
+    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(tooltipShowing)
+    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(tooltipShown)
+    if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
+    if (triangleMarkerTemplate != null) __obj.updateDynamic("triangleMarkerTemplate")(triangleMarkerTemplate)
+    if (typicalBasedOn != null) __obj.updateDynamic("typicalBasedOn")(typicalBasedOn)
+    if (!js.isUndefined(useTiledZooming)) __obj.updateDynamic("useTiledZooming")(useTiledZooming)
+    if (!js.isUndefined(verticalZoomable)) __obj.updateDynamic("verticalZoomable")(verticalZoomable)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (windowPositionHorizontal != null) __obj.updateDynamic("windowPositionHorizontal")(windowPositionHorizontal.asInstanceOf[js.Any])
+    if (windowPositionVertical != null) __obj.updateDynamic("windowPositionVertical")(windowPositionVertical.asInstanceOf[js.Any])
+    if (windowRect != null) __obj.updateDynamic("windowRect")(windowRect)
+    if (windowRectChanged != null) __obj.updateDynamic("windowRectChanged")(windowRectChanged)
+    if (windowRectMinWidth != null) __obj.updateDynamic("windowRectMinWidth")(windowRectMinWidth.asInstanceOf[js.Any])
+    if (windowResponse != null) __obj.updateDynamic("windowResponse")(windowResponse)
+    if (windowScaleHorizontal != null) __obj.updateDynamic("windowScaleHorizontal")(windowScaleHorizontal.asInstanceOf[js.Any])
+    if (windowScaleVertical != null) __obj.updateDynamic("windowScaleVertical")(windowScaleVertical.asInstanceOf[js.Any])
+    if (zoomTileCacheSize != null) __obj.updateDynamic("zoomTileCacheSize")(zoomTileCacheSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgDataChart]
+  }
+}
+

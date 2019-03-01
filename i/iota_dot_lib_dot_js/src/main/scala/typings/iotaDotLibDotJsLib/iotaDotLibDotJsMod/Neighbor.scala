@@ -15,3 +15,26 @@ trait Neighbor extends js.Object {
   var numberOfSentTransactions: scala.Double
 }
 
+object Neighbor {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    connectionType: iotaDotLibDotJsLib.iotaDotLibDotJsLibStrings.udp | iotaDotLibDotJsLib.iotaDotLibDotJsLibStrings.tcp,
+    numberOfAllTransactions: scala.Double,
+    numberOfInvalidTransactions: scala.Double,
+    numberOfNewTransactions: scala.Double,
+    numberOfRandomTransactionRequests: scala.Double,
+    numberOfSentTransactions: scala.Double
+  ): Neighbor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
+    __obj.updateDynamic("numberOfAllTransactions")(numberOfAllTransactions)
+    __obj.updateDynamic("numberOfInvalidTransactions")(numberOfInvalidTransactions)
+    __obj.updateDynamic("numberOfNewTransactions")(numberOfNewTransactions)
+    __obj.updateDynamic("numberOfRandomTransactionRequests")(numberOfRandomTransactionRequests)
+    __obj.updateDynamic("numberOfSentTransactions")(numberOfSentTransactions)
+    __obj.asInstanceOf[Neighbor]
+  }
+}
+

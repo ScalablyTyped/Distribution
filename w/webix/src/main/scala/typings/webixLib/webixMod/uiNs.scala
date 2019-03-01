@@ -61,6 +61,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait abslayoutEventName extends js.Object
+  
   @js.native
   class accordion () extends baseview {
     @JSName("config")
@@ -118,6 +120,8 @@ object uiNs extends js.Object {
     var visibleBatch: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait accordionEventName extends js.Object
   
   @js.native
   class accordionitem () extends baseview {
@@ -178,6 +182,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait accordionitemEventName extends js.Object
+  
   @js.native
   class barcode () extends baseview {
     @JSName("$scope")
@@ -214,6 +220,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait barcodeEventName extends js.Object
   
   @js.native
   class baselayout () extends baseview {
@@ -263,6 +271,8 @@ object uiNs extends js.Object {
     var visibleBatch: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait baselayoutEventName extends js.Object
   
   @js.native
   trait baseview extends js.Object {
@@ -325,6 +335,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait baseviewEventName extends js.Object
+  
   @js.native
   class bullet () extends baseview {
     @JSName("$scope")
@@ -377,6 +389,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait bulletEventName extends js.Object
   
   @js.native
   class button () extends baseview {
@@ -455,6 +469,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait buttonEventName extends js.Object
   
   @js.native
   class calendar () extends baseview {
@@ -545,6 +561,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait calendarEventName extends js.Object
+  
   @js.native
   class carousel () extends baseview {
     @JSName("$scope")
@@ -596,6 +614,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait carouselEventName extends js.Object
   
   @js.native
   class chart () extends baseview {
@@ -762,6 +782,8 @@ object uiNs extends js.Object {
     var yValue: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  trait chartEventName extends js.Object
+  
   @js.native
   class checkbox () extends baseview {
     @JSName("$compareValue")
@@ -872,6 +894,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait checkboxEventName extends js.Object
+  
   @js.native
   class checksuggest () extends baseview {
     @JSName("$enterKey")
@@ -959,6 +983,8 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait checksuggestEventName extends js.Object
+  
   @js.native
   class colorboard () extends baseview {
     @JSName("$scope")
@@ -1009,6 +1035,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait colorboardEventName extends js.Object
   
   @js.native
   class colorpicker () extends baseview {
@@ -1123,6 +1151,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait colorpickerEventName extends js.Object
   
   @js.native
   class combo () extends baseview {
@@ -1240,6 +1270,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait comboEventName extends js.Object
+  
   @js.native
   class context () extends baseview {
     @JSName("$scope")
@@ -1302,6 +1334,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait contextEventName extends js.Object
   
   @js.native
   class contextmenu () extends baseview {
@@ -1574,6 +1608,8 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait contextmenuEventName extends js.Object
+  
   @js.native
   class counter () extends baseview {
     @JSName("$compareValue")
@@ -1688,6 +1724,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait counterEventName extends js.Object
+  
   @js.native
   class dashboard () extends baseview {
     @JSName("$dragPos")
@@ -1768,6 +1806,8 @@ object uiNs extends js.Object {
     var visibleBatch: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait dashboardEventName extends js.Object
   
   @js.native
   class datalayout () extends baseview {
@@ -1886,6 +1926,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait datalayoutEventName extends js.Object
+  
   @js.native
   class datasuggest () extends baseview {
     @JSName("$enterKey")
@@ -1969,6 +2011,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait datasuggestEventName extends js.Object
   
   @js.native
   class datatable () extends baseview {
@@ -2400,6 +2444,8 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait datatableEventName extends js.Object
+  
   @js.native
   class dataview () extends baseview {
     @JSName("$customPrint")
@@ -2620,6 +2666,8 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait dataviewEventName extends js.Object
+  
   @js.native
   class datepicker () extends baseview {
     @JSName("$compareValue")
@@ -2740,6 +2788,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait datepickerEventName extends js.Object
+  
   @js.native
   class daterange () extends baseview {
     @JSName("config")
@@ -2787,6 +2837,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait daterangeEventName extends js.Object
   
   @js.native
   class daterangepicker () extends baseview {
@@ -2906,6 +2958,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait daterangepickerEventName extends js.Object
+  
   @js.native
   class daterangesuggest () extends baseview {
     @JSName("$enterKey")
@@ -2989,6 +3043,8 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait daterangesuggestEventName extends js.Object
+  
   @js.native
   class dbllist () extends baseview {
     @JSName("$$")
@@ -3054,6 +3110,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait dbllistEventName extends js.Object
   
   @js.native
   class excelviewer () extends baseview {
@@ -3447,6 +3505,8 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait excelviewerEventName extends js.Object
+  
   @js.native
   class fieldset () extends baseview {
     @JSName("$scope")
@@ -3480,6 +3540,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait fieldsetEventName extends js.Object
   
   @js.native
   class filemanager () extends baseview {
@@ -3669,6 +3731,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait filemanagerEventName extends js.Object
+  
   @js.native
   class form () extends baseview {
     @JSName("config")
@@ -3762,6 +3826,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait formEventName extends js.Object
+  
   @js.native
   class forminput () extends baseview {
     @JSName("$scope")
@@ -3800,6 +3866,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait forminputEventName extends js.Object
   
   @js.native
   class gage () extends baseview {
@@ -3845,6 +3913,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait gageEventName extends js.Object
   
   @js.native
   class geochart () extends baseview {
@@ -3950,6 +4020,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait geochartEventName extends js.Object
   
   @js.native
   class googleMap () extends baseview {
@@ -4061,6 +4133,8 @@ object uiNs extends js.Object {
     var zoom: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait googleMapEventName extends js.Object
+  
   @js.native
   class gridlayout () extends baseview {
     @JSName("config")
@@ -4122,6 +4196,8 @@ object uiNs extends js.Object {
     var visibleBatch: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait gridlayoutEventName extends js.Object
   
   @js.native
   class gridsuggest () extends baseview {
@@ -4206,6 +4282,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait gridsuggestEventName extends js.Object
   
   @js.native
   class grouplist () extends baseview {
@@ -4439,6 +4517,8 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait grouplistEventName extends js.Object
+  
   @js.native
   class headerlayout () extends baseview {
     @JSName("config")
@@ -4497,6 +4577,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait headerlayoutEventName extends js.Object
+  
   @js.native
   class hint () extends baseview {
     @JSName("$scope")
@@ -4541,6 +4623,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait hintEventName extends js.Object
   
   @js.native
   class htmlform () extends baseview {
@@ -4616,6 +4700,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait htmlformEventName extends js.Object
+  
   @js.native
   class icon () extends baseview {
     @JSName("$compareValue")
@@ -4689,6 +4775,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait iconEventName extends js.Object
+  
   @js.native
   class iframe () extends baseview {
     @JSName("$scope")
@@ -4727,6 +4815,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait iframeEventName extends js.Object
   
   @js.native
   class kanban () extends baseview {
@@ -4857,6 +4947,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait kanbanEventName extends js.Object
+  
   @js.native
   class label () extends baseview {
     @JSName("$compareValue")
@@ -4932,6 +5024,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait labelEventName extends js.Object
+  
   @js.native
   class layout () extends baseview {
     @JSName("config")
@@ -4985,6 +5079,8 @@ object uiNs extends js.Object {
     var visibleBatch: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait layoutEventName extends js.Object
   
   @js.native
   class list () extends baseview {
@@ -5211,6 +5307,8 @@ object uiNs extends js.Object {
     var xCount: js.UndefOr[scala.Double] = js.undefined
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait listEventName extends js.Object
   
   @js.native
   class menu () extends baseview {
@@ -5455,6 +5553,8 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait menuEventName extends js.Object
+  
   @js.native
   class multicombo () extends baseview {
     @JSName("$compareValue")
@@ -5572,6 +5672,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait multicomboEventName extends js.Object
   
   @js.native
   class multiselect () extends baseview {
@@ -5691,6 +5793,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait multiselectEventName extends js.Object
+  
   @js.native
   class multisuggest () extends baseview {
     @JSName("$enterKey")
@@ -5776,6 +5880,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait multisuggestEventName extends js.Object
   
   @js.native
   class multitext () extends baseview {
@@ -5898,6 +6004,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait multitextEventName extends js.Object
+  
   @js.native
   class multiview () extends baseview {
     @JSName("config")
@@ -5950,6 +6058,8 @@ object uiNs extends js.Object {
     var visibleBatch: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait multiviewEventName extends js.Object
   
   @js.native
   class organogram () extends baseview {
@@ -6148,6 +6258,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait organogramEventName extends js.Object
+  
   @js.native
   class pager () extends baseview {
     @JSName("$scope")
@@ -6215,6 +6327,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait pagerEventName extends js.Object
+  
   @js.native
   class panel () extends baseview {
     @JSName("config")
@@ -6258,6 +6372,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait panelEventName extends js.Object
   
   @js.native
   class pdfviewer () extends baseview {
@@ -6321,6 +6437,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait pdfviewerEventName extends js.Object
   
   @js.native
   class pivot () extends baseview {
@@ -6454,6 +6572,8 @@ object uiNs extends js.Object {
     var yScaleWidth: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait pivotEventName extends js.Object
+  
   @js.native
   class popup () extends baseview {
     @JSName("$scope")
@@ -6513,6 +6633,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait popupEventName extends js.Object
   
   @js.native
   class portlet () extends baseview {
@@ -6575,6 +6697,8 @@ object uiNs extends js.Object {
     var visibleBatch: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait portletEventName extends js.Object
   
   @js.native
   class property () extends baseview {
@@ -6680,6 +6804,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait propertyEventName extends js.Object
   
   @js.native
   class proto () extends baseview {
@@ -6814,6 +6940,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait protoEventName extends js.Object
+  
   @js.native
   class querybuilder () extends baseview {
     @JSName("config")
@@ -6870,6 +6998,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait querybuilderEventName extends js.Object
   
   @js.native
   class radio () extends baseview {
@@ -6980,6 +7110,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait radioEventName extends js.Object
   
   @js.native
   class rangechart () extends baseview {
@@ -7148,6 +7280,8 @@ object uiNs extends js.Object {
     var yValue: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  trait rangechartEventName extends js.Object
+  
   @js.native
   class rangeslider () extends baseview {
     @JSName("$compareValue")
@@ -7263,6 +7397,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait rangesliderEventName extends js.Object
+  
   @js.native
   trait resizearea extends js.Object {
     var config: resizeareaConfig = js.native
@@ -7291,6 +7427,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait resizeareaEventName extends js.Object
   
   @js.native
   class resizer () extends baseview {
@@ -7329,6 +7467,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait resizerEventName extends js.Object
   
   @js.native
   class richselect () extends baseview {
@@ -7444,6 +7584,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait richselectEventName extends js.Object
+  
   @js.native
   class richtext () extends baseview {
     @JSName("$$")
@@ -7495,6 +7637,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait richtextEventName extends js.Object
+  
   @js.native
   class scrollview () extends baseview {
     @JSName("$scope")
@@ -7538,6 +7682,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait scrollviewEventName extends js.Object
   
   @js.native
   class search () extends baseview {
@@ -7649,6 +7795,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait searchEventName extends js.Object
   
   @js.native
   class segmented () extends baseview {
@@ -7774,6 +7922,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait segmentedEventName extends js.Object
+  
   @js.native
   class select () extends baseview {
     @JSName("$compareValue")
@@ -7881,6 +8031,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait selectEventName extends js.Object
   
   @js.native
   class sidebar () extends baseview {
@@ -8146,6 +8298,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait sidebarEventName extends js.Object
+  
   @js.native
   class sidemenu () extends baseview {
     @JSName("$scope")
@@ -8203,6 +8357,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait sidemenuEventName extends js.Object
   
   @js.native
   class slider () extends baseview {
@@ -8320,6 +8476,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait sliderEventName extends js.Object
+  
   @js.native
   class spacer () extends baseview {
     @JSName("$scope")
@@ -8345,6 +8503,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait spacerEventName extends js.Object
   
   @js.native
   class spreadsheet () extends baseview {
@@ -8471,6 +8631,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait spreadsheetEventName extends js.Object
   
   @js.native
   class submenu () extends baseview {
@@ -8740,6 +8902,8 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait submenuEventName extends js.Object
+  
   @js.native
   class suggest () extends baseview {
     @JSName("$enterKey")
@@ -8823,6 +8987,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait suggestEventName extends js.Object
   
   @js.native
   class switchButton () extends baseview {
@@ -8939,6 +9105,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait switchButtonEventName extends js.Object
   
   @js.native
   class tabbar () extends baseview {
@@ -9080,6 +9248,8 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait tabbarEventName extends js.Object
+  
   @js.native
   class tabview () extends baseview {
     @JSName("config")
@@ -9125,6 +9295,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait tabviewEventName extends js.Object
   
   @js.native
   class template () extends baseview {
@@ -9187,6 +9359,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait templateEventName extends js.Object
   
   @js.native
   class text () extends baseview {
@@ -9297,6 +9471,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait textEventName extends js.Object
+  
   @js.native
   class textarea () extends baseview {
     @JSName("$compareValue")
@@ -9406,6 +9582,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait textareaEventName extends js.Object
+  
   @js.native
   class toggle () extends baseview {
     @JSName("$compareValue")
@@ -9484,6 +9662,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait toggleEventName extends js.Object
   
   @js.native
   class toolbar () extends baseview {
@@ -9576,6 +9756,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait toolbarEventName extends js.Object
+  
   @js.native
   trait tooltip extends js.Object {
     @JSName("$height")
@@ -9648,6 +9830,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait tooltipEventName extends js.Object
   
   @js.native
   class tree () extends baseview {
@@ -9900,6 +10084,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait treeEventName extends js.Object
+  
   @js.native
   class treemap () extends baseview {
     @JSName("$scope")
@@ -10114,6 +10300,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait treemapEventName extends js.Object
   
   @js.native
   class treetable () extends baseview {
@@ -10539,6 +10727,8 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait treetableEventName extends js.Object
+  
   @js.native
   class unitlist () extends baseview {
     @JSName("$customPrint")
@@ -10764,6 +10954,8 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait unitlistEventName extends js.Object
+  
   @js.native
   class uploader () extends baseview {
     @JSName("$compareValue")
@@ -10870,6 +11062,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait uploaderEventName extends js.Object
+  
   @js.native
   class video () extends baseview {
     @JSName("$scope")
@@ -10899,6 +11093,8 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait videoEventName extends js.Object
+  
   @js.native
   class view () extends baseview {
     @JSName("$scope")
@@ -10924,6 +11120,8 @@ object uiNs extends js.Object {
     var view: js.UndefOr[java.lang.String] = js.undefined
     var width: js.UndefOr[scala.Double] = js.undefined
   }
+  
+  trait viewEventName extends js.Object
   
   @js.native
   trait vscroll extends js.Object {
@@ -11022,6 +11220,8 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait windowEventName extends js.Object
+  
   var scrollSize: scala.Double = js.native
   var zIndexBase: scala.Double = js.native
   def delay(config: js.Any): scala.Unit = js.native
@@ -11090,106 +11290,6 @@ object uiNs extends js.Object {
     
   }
   
-  type abslayoutEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct
-  type accordionEventName = webixLib.webixLibStrings.onAfterCollapse | webixLib.webixLibStrings.onAfterExpand | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct
-  type accordionitemEventName = webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type barcodeEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type baselayoutEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct
-  type baseviewEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct
-  type bulletEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type buttonEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type calendarEventName = webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterDateSelect | webixLib.webixLibStrings.onAfterMonthChange | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterZoom | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeDateSelect | webixLib.webixLibStrings.onBeforeMonthChange | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeZoom | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDateClear | webixLib.webixLibStrings.onDateSelect | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTodaySet | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type carouselEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type chartEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type checkboxEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type checksuggestEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValueSuggest | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
-  type colorboardEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSelect | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type colorpickerEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type comboEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type contextEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
-  type contextmenuEventName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 56 */ java.lang.String
-  type counterEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type dashboardEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct
-  type datalayoutEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onLoadError
-  type datasuggestEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValueSuggest | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
-  type datatableEventName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 89 */ java.lang.String
-  type dataviewEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterDrop | webixLib.webixLibStrings.onAfterDropOrder | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSelect | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeDrag | webixLib.webixLibStrings.onBeforeDragIn | webixLib.webixLibStrings.onBeforeDrop | webixLib.webixLibStrings.onBeforeDropOrder | webixLib.webixLibStrings.onBeforeDropOut | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSelect | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onDragOut | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onItemRender | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onSelectChange | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValidationError | webixLib.webixLibStrings.onValidationSuccess | webixLib.webixLibStrings.onViewResize
-  type datepickerEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type daterangeEventName = webixLib.webixLibStrings.onAfterDateSelect | webixLib.webixLibStrings.onBeforeDateSelect | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDateClear | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onTodaySet
-  type daterangepickerEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type daterangesuggestEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValueSuggest | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
-  type dbllistEventName = webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onLoadError
-  type excelviewerEventName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 89 */ java.lang.String
-  type fieldsetEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type filemanagerEventName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 74 */ java.lang.String
-  type formEventName = webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterValidation | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeValidate | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onSubmit | webixLib.webixLibStrings.onValidationError | webixLib.webixLibStrings.onValidationSuccess | webixLib.webixLibStrings.onValues
-  type forminputEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type gageEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type geochartEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMapError | webixLib.webixLibStrings.onMapReady | webixLib.webixLibStrings.onRegionClick | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type googleMapEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHeatMapRender | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type gridlayoutEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct
-  type gridsuggestEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValueSuggest | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
-  type grouplistEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterDrop | webixLib.webixLibStrings.onAfterDropOrder | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSelect | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeDrag | webixLib.webixLibStrings.onBeforeDragIn | webixLib.webixLibStrings.onBeforeDrop | webixLib.webixLibStrings.onBeforeDropOrder | webixLib.webixLibStrings.onBeforeDropOut | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSelect | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onDragOut | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onItemRender | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onPaste | webixLib.webixLibStrings.onSelectChange | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValidationError | webixLib.webixLibStrings.onValidationSuccess | webixLib.webixLibStrings.onViewResize
-  type headerlayoutEventName = webixLib.webixLibStrings.onAfterCollapse | webixLib.webixLibStrings.onAfterExpand | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct
-  type hintEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterStart | webixLib.webixLibStrings.onBeforeStart | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnd | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onNext | webixLib.webixLibStrings.onPrevious | webixLib.webixLibStrings.onSkip | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type htmlformEventName = webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValues | webixLib.webixLibStrings.onViewResize
-  type iconEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type iframeEventName = webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type kanbanEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterCollapse | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterExpand | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onAfterStatusChange | webixLib.webixLibStrings.onAvatarClick | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBeforeStatusChange | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onListAfterContextMenu | webixLib.webixLibStrings.onListAfterDrop | webixLib.webixLibStrings.onListAfterSelect | webixLib.webixLibStrings.onListBeforeContextMenu | webixLib.webixLibStrings.onListBeforeDrag | webixLib.webixLibStrings.onListBeforeDragIn | webixLib.webixLibStrings.onListBeforeDrop | webixLib.webixLibStrings.onListBeforeSelect | webixLib.webixLibStrings.onListIconClick | webixLib.webixLibStrings.onListItemClick | webixLib.webixLibStrings.onListItemDblClick | webixLib.webixLibStrings.onLoadError
-  type labelEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type layoutEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct
-  type listEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterDrop | webixLib.webixLibStrings.onAfterDropOrder | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSelect | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeDrag | webixLib.webixLibStrings.onBeforeDragIn | webixLib.webixLibStrings.onBeforeDrop | webixLib.webixLibStrings.onBeforeDropOrder | webixLib.webixLibStrings.onBeforeDropOut | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSelect | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onDragOut | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onItemRender | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onPaste | webixLib.webixLibStrings.onSelectChange | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValidationError | webixLib.webixLibStrings.onValidationSuccess | webixLib.webixLibStrings.onViewResize
-  type menuEventName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 51 */ java.lang.String
-  type multicomboEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type multiselectEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type multisuggestEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValueSuggest | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
-  type multitextEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSectionAdd | webixLib.webixLibStrings.onSectionRemove | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type multiviewEventName = webixLib.webixLibStrings.onBeforeBack | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onViewChange
-  type organogramEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterClose | webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterOpen | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSelect | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeClose | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeOpen | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSelect | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemCheck | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onItemRender | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onSelectChange | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type pagerEventName = webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterPageChange | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforePageChange | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type panelEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onViewResize
-  type pdfviewerEventName = webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onDocumentReady | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onPageRender | webixLib.webixLibStrings.onScaleChange | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type pivotEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onApply | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeApply | webixLib.webixLibStrings.onBeforeCancel | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onCancel | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onFilterChange | webixLib.webixLibStrings.onFilterCreate | webixLib.webixLibStrings.onHeaderInit | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onPopup | webixLib.webixLibStrings.onViewInit | webixLib.webixLibStrings.onWebWorkerEnd | webixLib.webixLibStrings.onWebWorkerStart
-  type popupEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
-  type portletEventName = webixLib.webixLibStrings.onAfterPortletMove | webixLib.webixLibStrings.onBeforePortletMove | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct
-  type propertyEventName = webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterEditStart | webixLib.webixLibStrings.onAfterEditStop | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeEditStart | webixLib.webixLibStrings.onBeforeEditStop | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onCheck | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLiveEdit | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type protoEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemRender | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValidationError | webixLib.webixLibStrings.onValidationSuccess | webixLib.webixLibStrings.onViewResize
-  type querybuilderEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onKeySelect
-  type radioEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type rangechartEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRangeChange | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type rangesliderEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSliderDrag | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type resizeareaEventName = webixLib.webixLibStrings.onResize | webixLib.webixLibStrings.onResizeEnd
-  type resizerEventName = webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type richselectEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type richtextEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct
-  type scrollviewEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type searchEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSearchIconClick | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type segmentedEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterTabClick | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeTabClick | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onOptionRemove | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type selectEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type sidebarEventName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 56 */ java.lang.String
-  type sidemenuEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
-  type sliderEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSliderDrag | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type spacerEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type spreadsheetEventName = webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterSelect | webixLib.webixLibStrings.onAfterSheetShow | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeSheetShow | webixLib.webixLibStrings.onBeforeSpan | webixLib.webixLibStrings.onBeforeSplit | webixLib.webixLibStrings.onBeforeValueChange | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onCellChange | webixLib.webixLibStrings.onComponentInit | webixLib.webixLibStrings.onDataParse | webixLib.webixLibStrings.onDataSerialize | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onMathRefresh | webixLib.webixLibStrings.onReset | webixLib.webixLibStrings.onSheetAdd | webixLib.webixLibStrings.onSheetRemove | webixLib.webixLibStrings.onSheetRename | webixLib.webixLibStrings.onStyleSet
-  type submenuEventName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 56 */ java.lang.String
-  type suggestEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValueSuggest | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
-  type switchButtonEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type tabbarEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterTabClick | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeTabClick | webixLib.webixLibStrings.onBeforeTabClose | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onOptionRemove | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type tabviewEventName = webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onDestruct
-  type templateEventName = webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type textEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type textareaEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type toggleEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type toolbarEventName = webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterValidation | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeValidate | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onChange | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onValidationError | webixLib.webixLibStrings.onValidationSuccess | webixLib.webixLibStrings.onValues
-  type tooltipEventName = webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type treeEventName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 56 */ java.lang.String
-  type treemapEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterClose | webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterOpen | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSelect | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeClose | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeOpen | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSelect | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemCheck | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onItemRender | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onPartialRender | webixLib.webixLibStrings.onPaste | webixLib.webixLibStrings.onSelectChange | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValidationError | webixLib.webixLibStrings.onValidationSuccess | webixLib.webixLibStrings.onViewResize
-  type treetableEventName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 94 */ java.lang.String
-  type unitlistEventName = webixLib.webixLibStrings.onAfterAdd | webixLib.webixLibStrings.onAfterContextMenu | webixLib.webixLibStrings.onAfterDelete | webixLib.webixLibStrings.onAfterDrop | webixLib.webixLibStrings.onAfterDropOrder | webixLib.webixLibStrings.onAfterLoad | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onAfterSelect | webixLib.webixLibStrings.onAfterSort | webixLib.webixLibStrings.onBeforeAdd | webixLib.webixLibStrings.onBeforeContextMenu | webixLib.webixLibStrings.onBeforeDelete | webixLib.webixLibStrings.onBeforeDrag | webixLib.webixLibStrings.onBeforeDragIn | webixLib.webixLibStrings.onBeforeDrop | webixLib.webixLibStrings.onBeforeDropOrder | webixLib.webixLibStrings.onBeforeDropOut | webixLib.webixLibStrings.onBeforeLoad | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBeforeSelect | webixLib.webixLibStrings.onBeforeSort | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDataRequest | webixLib.webixLibStrings.onDataUpdate | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onDragOut | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onItemDblClick | webixLib.webixLibStrings.onItemRender | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLoadError | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onMouseMove | webixLib.webixLibStrings.onMouseMoving | webixLib.webixLibStrings.onMouseOut | webixLib.webixLibStrings.onPaste | webixLib.webixLibStrings.onSelectChange | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onValidationError | webixLib.webixLibStrings.onValidationSuccess | webixLib.webixLibStrings.onViewResize
-  type uploaderEventName = webixLib.webixLibStrings.onAfterFileAdd | webixLib.webixLibStrings.onAfterRender | webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeFileAdd | webixLib.webixLibStrings.onBeforeRender | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFileUpload | webixLib.webixLibStrings.onFileUploadError | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onItemClick | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onUploadComplete | webixLib.webixLibStrings.onViewResize
-  type videoEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
-  type viewEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewResize
   type vscrollEventName = webixLib.webixLibStrings.onScroll
-  type windowEventName = webixLib.webixLibStrings.onAfterScroll | webixLib.webixLibStrings.onBeforeShow | webixLib.webixLibStrings.onBindRequest | webixLib.webixLibStrings.onBlur | webixLib.webixLibStrings.onDestruct | webixLib.webixLibStrings.onEnter | webixLib.webixLibStrings.onFocus | webixLib.webixLibStrings.onHide | webixLib.webixLibStrings.onKeyPress | webixLib.webixLibStrings.onLongTouch | webixLib.webixLibStrings.onShow | webixLib.webixLibStrings.onSwipeX | webixLib.webixLibStrings.onSwipeY | webixLib.webixLibStrings.onTimedKeyPress | webixLib.webixLibStrings.onTouchEnd | webixLib.webixLibStrings.onTouchMove | webixLib.webixLibStrings.onTouchStart | webixLib.webixLibStrings.onViewMove | webixLib.webixLibStrings.onViewMoveEnd | webixLib.webixLibStrings.onViewResize
 }
 

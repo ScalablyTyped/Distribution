@@ -10,3 +10,16 @@ trait PendingArgs extends js.Object {
   var status: reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeLibStrings.sending | scala.Null
 }
 
+object PendingArgs {
+  @scala.inline
+  def apply(
+    message: scala.Null,
+    status: reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeLibStrings.sending = null
+  ): PendingArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[PendingArgs]
+  }
+}
+

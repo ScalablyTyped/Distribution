@@ -7,208 +7,284 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSvgLibStrings {
   @js.native
-  sealed trait `100` extends js.Object
+  sealed trait `100`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `200` extends js.Object
+  sealed trait `200`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `300` extends js.Object
+  sealed trait `300`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `400` extends js.Object
+  sealed trait `400`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `500` extends js.Object
+  sealed trait `500`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `600` extends js.Object
+  sealed trait `600`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `700` extends js.Object
+  sealed trait `700`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `800` extends js.Object
+  sealed trait `800`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `900` extends js.Object
+  sealed trait `900`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `after-edge` extends js.Object
+  sealed trait `after-edge`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait align extends js.Object
+  sealed trait align
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextPathMethod
   
   @js.native
-  sealed trait alphabetic extends js.Object
+  sealed trait alphabetic
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextPathSpacing
   
   @js.native
-  sealed trait baseline extends js.Object
+  sealed trait baseline
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
+       with reactDashNativeDashSvgLib.reactDashNativeDashSvgMod._BaselineShift
   
   @js.native
-  sealed trait `before-edge` extends js.Object
+  sealed trait `before-edge`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait bevel
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Linejoin
   
   @js.native
-  sealed trait blink extends js.Object
+  sealed trait blink
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextDecoration
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait bold
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait bolder extends js.Object
+  sealed trait bolder
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait butt
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Linecap
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait central extends js.Object
+  sealed trait central
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait condensed extends js.Object
+  sealed trait condensed
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextAnchor
   
   @js.native
-  sealed trait evenodd extends js.Object
+  sealed trait evenodd
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FillRule
   
   @js.native
-  sealed trait exact extends js.Object
+  sealed trait exact
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextPathSpacing
   
   @js.native
-  sealed trait expanded extends js.Object
+  sealed trait expanded
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @js.native
-  sealed trait `extra-condensed` extends js.Object
+  sealed trait `extra-condensed`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @js.native
-  sealed trait `extra-expanded` extends js.Object
+  sealed trait `extra-expanded`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @js.native
-  sealed trait hanging extends js.Object
+  sealed trait hanging
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait ideographic extends js.Object
+  sealed trait ideographic
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait italic extends js.Object
+  sealed trait italic
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStyle
   
   @js.native
-  sealed trait lighter extends js.Object
+  sealed trait lighter
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait `line-through` extends js.Object
+  sealed trait `line-through`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextDecoration
   
   @js.native
-  sealed trait mathematical extends js.Object
+  sealed trait mathematical
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
+       with reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextAnchor
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait miter
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Linejoin
   
   @js.native
-  sealed trait narrower extends js.Object
+  sealed trait narrower
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontVariantLigatures
+       with reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextDecoration
   
   @js.native
-  sealed trait nonzero extends js.Object
+  sealed trait nonzero
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FillRule
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
+       with reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStyle
+       with reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontVariant
+       with reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontVariantLigatures
+       with reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontWeight
   
   @js.native
-  sealed trait objectBoundingBox extends js.Object
+  sealed trait objectBoundingBox
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Units
   
   @js.native
-  sealed trait oblique extends js.Object
+  sealed trait oblique
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStyle
   
   @js.native
-  sealed trait overline extends js.Object
+  sealed trait overline
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextDecoration
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Linecap
+       with reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Linejoin
   
   @js.native
-  sealed trait `semi-condensed` extends js.Object
+  sealed trait `semi-condensed`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @js.native
-  sealed trait `semi-expanded` extends js.Object
+  sealed trait `semi-expanded`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @js.native
-  sealed trait sharp extends js.Object
+  sealed trait sharp
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextPathMidLine
   
   @js.native
-  sealed trait `small-caps` extends js.Object
+  sealed trait `small-caps`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontVariant
   
   @js.native
-  sealed trait smooth extends js.Object
+  sealed trait smooth
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextPathMidLine
   
   @js.native
-  sealed trait spacing extends js.Object
+  sealed trait spacing
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.LengthAdjust
   
   @js.native
-  sealed trait spacingAndGlyphs extends js.Object
+  sealed trait spacingAndGlyphs
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.LengthAdjust
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Linecap
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextAnchor
   
   @js.native
-  sealed trait stretch extends js.Object
+  sealed trait stretch
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextPathMethod
   
   @js.native
-  sealed trait sub extends js.Object
+  sealed trait sub
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod._BaselineShift
   
   @js.native
-  sealed trait `super` extends js.Object
+  sealed trait `super`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod._BaselineShift
   
   @js.native
-  sealed trait `text-after-edge` extends js.Object
+  sealed trait `text-after-edge`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait `text-before-edge` extends js.Object
+  sealed trait `text-before-edge`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait `text-bottom` extends js.Object
+  sealed trait `text-bottom`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait `text-top` extends js.Object
+  sealed trait `text-top`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.AlignmentBaseline
   
   @js.native
-  sealed trait `ultra-condensed` extends js.Object
+  sealed trait `ultra-condensed`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @js.native
-  sealed trait `ultra-expanded` extends js.Object
+  sealed trait `ultra-expanded`
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @js.native
-  sealed trait underline extends js.Object
+  sealed trait underline
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextDecoration
   
   @js.native
-  sealed trait userSpaceOnUse extends js.Object
+  sealed trait userSpaceOnUse
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.Units
   
   @js.native
-  sealed trait wider extends js.Object
+  sealed trait wider
+    extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.FontStretch
   
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]

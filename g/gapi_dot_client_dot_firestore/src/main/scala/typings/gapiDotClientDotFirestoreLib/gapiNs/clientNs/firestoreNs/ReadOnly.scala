@@ -13,3 +13,12 @@ trait ReadOnly extends js.Object {
   var readTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReadOnly {
+  @scala.inline
+  def apply(readTime: java.lang.String = null): ReadOnly = {
+    val __obj = js.Dynamic.literal()
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    __obj.asInstanceOf[ReadOnly]
+  }
+}
+

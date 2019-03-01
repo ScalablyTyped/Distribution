@@ -19,3 +19,12 @@ trait GeoLocationPolygon extends js.Object {
   var exterior: js.UndefOr[js.Array[GeoLocationPoint]] = js.undefined
 }
 
+object GeoLocationPolygon {
+  @scala.inline
+  def apply(exterior: js.Array[GeoLocationPoint] = null): GeoLocationPolygon = {
+    val __obj = js.Dynamic.literal()
+    if (exterior != null) __obj.updateDynamic("exterior")(exterior)
+    __obj.asInstanceOf[GeoLocationPolygon]
+  }
+}
+

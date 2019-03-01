@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait `Anon_` extends js.Object {
    // = 46,
   var ` `: scala.Double
+   // = 221,
+  var _quote: scala.Double
    // = 187,
   var `,`: scala.Double
    // = 188,
@@ -193,7 +195,7 @@ trait `Anon_` extends js.Object {
   var `[`: scala.Double
    // = 219,
   var `\\`: scala.Double
-  var `\b`: scala.Double
+  var _backslash_b: scala.Double
    // = 9,
   var `\r`: scala.Double
    // = 8,
@@ -201,10 +203,179 @@ trait `Anon_` extends js.Object {
    // = 220,
   var `]`: scala.Double
    // = 191,
-  @JSName("`")
-  var backtick: scala.Double
-   // = 221,
-  @JSName("'")
-  var quote: scala.Double
+  var _backtick: scala.Double
+}
+
+object `Anon_` {
+  @scala.inline
+  def apply(
+    ` `: scala.Double,
+    _quote: scala.Double,
+    `,`: scala.Double,
+    `-`: scala.Double,
+    `.`: scala.Double,
+    `/`: scala.Double,
+    `0`: scala.Double,
+    `1`: scala.Double,
+    `2`: scala.Double,
+    `3`: scala.Double,
+    `4`: scala.Double,
+    `5`: scala.Double,
+    `6`: scala.Double,
+    `7`: scala.Double,
+    `8`: scala.Double,
+    `9`: scala.Double,
+    `;`: scala.Double,
+    `=`: scala.Double,
+    A: scala.Double,
+    ALT: scala.Double,
+    B: scala.Double,
+    BACKSPACE: scala.Double,
+    C: scala.Double,
+    CAPS: scala.Double,
+    CTRL: scala.Double,
+    D: scala.Double,
+    DELETE: scala.Double,
+    DOWN: scala.Double,
+    E: scala.Double,
+    END: scala.Double,
+    ENTER: scala.Double,
+    ESCAPE: scala.Double,
+    F: scala.Double,
+    F1: scala.Double,
+    F10: scala.Double,
+    F11: scala.Double,
+    F12: scala.Double,
+    F2: scala.Double,
+    F3: scala.Double,
+    F4: scala.Double,
+    F5: scala.Double,
+    F6: scala.Double,
+    F7: scala.Double,
+    F8: scala.Double,
+    F9: scala.Double,
+    G: scala.Double,
+    H: scala.Double,
+    HOME: scala.Double,
+    I: scala.Double,
+    INSERT: scala.Double,
+    J: scala.Double,
+    K: scala.Double,
+    L: scala.Double,
+    LEFT: scala.Double,
+    M: scala.Double,
+    N: scala.Double,
+    `NUM*`: scala.Double,
+    `NUM+`: scala.Double,
+    `NUM-LOCK`: scala.Double,
+    NUM0: scala.Double,
+    NUM1: scala.Double,
+    NUM2: scala.Double,
+    NUM3: scala.Double,
+    NUM4: scala.Double,
+    NUM5: scala.Double,
+    NUM6: scala.Double,
+    NUM7: scala.Double,
+    NUM8: scala.Double,
+    NUM9: scala.Double,
+    O: scala.Double,
+    P: scala.Double,
+    `PAGE-DOWN`: scala.Double,
+    `PAGE-UP`: scala.Double,
+    `PAUSE-BREAK`: scala.Double,
+    PRINT: scala.Double,
+    Q: scala.Double,
+    R: scala.Double,
+    RETURN: scala.Double,
+    RIGHT: scala.Double,
+    S: scala.Double,
+    `SCROLL-LOCK`: scala.Double,
+    SHIFT: scala.Double,
+    T: scala.Double,
+    TAB: scala.Double,
+    U: scala.Double,
+    UP: scala.Double,
+    V: scala.Double,
+    W: scala.Double,
+    X: scala.Double,
+    Y: scala.Double,
+    Z: scala.Double,
+    `[`: scala.Double,
+    `\\`: scala.Double,
+    _backslash_b: scala.Double,
+    `\r`: scala.Double,
+    `\t`: scala.Double,
+    `]`: scala.Double,
+    _backtick: scala.Double
+  ): `Anon_` = {
+    val __obj = js.Dynamic.literal(` ` = ` `, _quote = _quote, `,` = `,`, `-` = `-`, `.` = `.`, `/` = `/`, `0` = `0`, `1` = `1`, `2` = `2`, `3` = `3`, `4` = `4`, `5` = `5`, `6` = `6`, `7` = `7`, `8` = `8`, `9` = `9`, `;` = `;`, `=` = `=`, `NUM*` = `NUM*`, `NUM+` = `NUM+`, `NUM-LOCK` = `NUM-LOCK`, `PAGE-DOWN` = `PAGE-DOWN`, `PAGE-UP` = `PAGE-UP`, `PAUSE-BREAK` = `PAUSE-BREAK`, `SCROLL-LOCK` = `SCROLL-LOCK`, `[` = `[`, `\\` = `\\`, _backslash_b = _backslash_b, `\r` = `\r`, `\t` = `\t`, `]` = `]`, _backtick = _backtick)
+    __obj.updateDynamic("A")(A)
+    __obj.updateDynamic("ALT")(ALT)
+    __obj.updateDynamic("B")(B)
+    __obj.updateDynamic("BACKSPACE")(BACKSPACE)
+    __obj.updateDynamic("C")(C)
+    __obj.updateDynamic("CAPS")(CAPS)
+    __obj.updateDynamic("CTRL")(CTRL)
+    __obj.updateDynamic("D")(D)
+    __obj.updateDynamic("DELETE")(DELETE)
+    __obj.updateDynamic("DOWN")(DOWN)
+    __obj.updateDynamic("E")(E)
+    __obj.updateDynamic("END")(END)
+    __obj.updateDynamic("ENTER")(ENTER)
+    __obj.updateDynamic("ESCAPE")(ESCAPE)
+    __obj.updateDynamic("F")(F)
+    __obj.updateDynamic("F1")(F1)
+    __obj.updateDynamic("F10")(F10)
+    __obj.updateDynamic("F11")(F11)
+    __obj.updateDynamic("F12")(F12)
+    __obj.updateDynamic("F2")(F2)
+    __obj.updateDynamic("F3")(F3)
+    __obj.updateDynamic("F4")(F4)
+    __obj.updateDynamic("F5")(F5)
+    __obj.updateDynamic("F6")(F6)
+    __obj.updateDynamic("F7")(F7)
+    __obj.updateDynamic("F8")(F8)
+    __obj.updateDynamic("F9")(F9)
+    __obj.updateDynamic("G")(G)
+    __obj.updateDynamic("H")(H)
+    __obj.updateDynamic("HOME")(HOME)
+    __obj.updateDynamic("I")(I)
+    __obj.updateDynamic("INSERT")(INSERT)
+    __obj.updateDynamic("J")(J)
+    __obj.updateDynamic("K")(K)
+    __obj.updateDynamic("L")(L)
+    __obj.updateDynamic("LEFT")(LEFT)
+    __obj.updateDynamic("M")(M)
+    __obj.updateDynamic("N")(N)
+    __obj.updateDynamic("NUM0")(NUM0)
+    __obj.updateDynamic("NUM1")(NUM1)
+    __obj.updateDynamic("NUM2")(NUM2)
+    __obj.updateDynamic("NUM3")(NUM3)
+    __obj.updateDynamic("NUM4")(NUM4)
+    __obj.updateDynamic("NUM5")(NUM5)
+    __obj.updateDynamic("NUM6")(NUM6)
+    __obj.updateDynamic("NUM7")(NUM7)
+    __obj.updateDynamic("NUM8")(NUM8)
+    __obj.updateDynamic("NUM9")(NUM9)
+    __obj.updateDynamic("O")(O)
+    __obj.updateDynamic("P")(P)
+    __obj.updateDynamic("PRINT")(PRINT)
+    __obj.updateDynamic("Q")(Q)
+    __obj.updateDynamic("R")(R)
+    __obj.updateDynamic("RETURN")(RETURN)
+    __obj.updateDynamic("RIGHT")(RIGHT)
+    __obj.updateDynamic("S")(S)
+    __obj.updateDynamic("SHIFT")(SHIFT)
+    __obj.updateDynamic("T")(T)
+    __obj.updateDynamic("TAB")(TAB)
+    __obj.updateDynamic("U")(U)
+    __obj.updateDynamic("UP")(UP)
+    __obj.updateDynamic("V")(V)
+    __obj.updateDynamic("W")(W)
+    __obj.updateDynamic("X")(X)
+    __obj.updateDynamic("Y")(Y)
+    __obj.updateDynamic("Z")(Z)
+    __obj.asInstanceOf[`Anon_`]
+  }
 }
 

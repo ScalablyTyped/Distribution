@@ -10,3 +10,12 @@ trait Anon_BypassCache extends js.Object {
   var bypassCache: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_BypassCache {
+  @scala.inline
+  def apply(bypassCache: js.UndefOr[scala.Boolean] = js.undefined): Anon_BypassCache = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bypassCache)) __obj.updateDynamic("bypassCache")(bypassCache)
+    __obj.asInstanceOf[Anon_BypassCache]
+  }
+}
+

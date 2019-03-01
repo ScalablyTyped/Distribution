@@ -10,13 +10,16 @@ object broDashFsLibStrings {
   sealed trait ArrayBuffer extends js.Object
   
   @js.native
-  sealed trait BinaryString extends js.Object
+  sealed trait BinaryString
+    extends broDashFsLib.broDashFsMod.TextType
   
   @js.native
-  sealed trait DataURL extends js.Object
+  sealed trait DataURL
+    extends broDashFsLib.broDashFsMod.TextType
   
   @js.native
-  sealed trait Text extends js.Object
+  sealed trait Text
+    extends broDashFsLib.broDashFsMod.TextType
   
   @scala.inline
   def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]

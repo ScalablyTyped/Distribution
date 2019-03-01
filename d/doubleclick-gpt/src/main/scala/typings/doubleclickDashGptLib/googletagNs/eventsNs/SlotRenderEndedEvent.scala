@@ -17,3 +17,30 @@ trait SlotRenderEndedEvent extends js.Object {
   var sourceAgnosticLineItemId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SlotRenderEndedEvent {
+  @scala.inline
+  def apply(
+    isEmpty: scala.Boolean,
+    serviceName: java.lang.String,
+    size: js.Array[scala.Double] | java.lang.String,
+    slot: doubleclickDashGptLib.googletagNs.Slot,
+    advertiserId: scala.Int | scala.Double = null,
+    creativeId: scala.Int | scala.Double = null,
+    lineItemId: scala.Int | scala.Double = null,
+    sourceAgnosticCreativeId: scala.Int | scala.Double = null,
+    sourceAgnosticLineItemId: scala.Int | scala.Double = null
+  ): SlotRenderEndedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.updateDynamic("serviceName")(serviceName)
+    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.updateDynamic("slot")(slot)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId.asInstanceOf[js.Any])
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId.asInstanceOf[js.Any])
+    if (sourceAgnosticCreativeId != null) __obj.updateDynamic("sourceAgnosticCreativeId")(sourceAgnosticCreativeId.asInstanceOf[js.Any])
+    if (sourceAgnosticLineItemId != null) __obj.updateDynamic("sourceAgnosticLineItemId")(sourceAgnosticLineItemId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SlotRenderEndedEvent]
+  }
+}
+

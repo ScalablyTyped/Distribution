@@ -27,3 +27,22 @@ trait HostedFieldsHostedFieldsFieldData extends js.Object {
   var isValid: scala.Boolean
 }
 
+object HostedFieldsHostedFieldsFieldData {
+  @scala.inline
+  def apply(
+    container: stdLib.HTMLElement,
+    isEmpty: scala.Boolean,
+    isFocused: scala.Boolean,
+    isPotentiallyValid: scala.Boolean,
+    isValid: scala.Boolean
+  ): HostedFieldsHostedFieldsFieldData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.updateDynamic("isFocused")(isFocused)
+    __obj.updateDynamic("isPotentiallyValid")(isPotentiallyValid)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.asInstanceOf[HostedFieldsHostedFieldsFieldData]
+  }
+}
+

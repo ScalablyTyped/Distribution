@@ -10,3 +10,13 @@ trait IRequestFileDownloadOptions extends js.Object {
   var url: java.lang.String
 }
 
+object IRequestFileDownloadOptions {
+  @scala.inline
+  def apply(method: RequestMethod, url: java.lang.String): IRequestFileDownloadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[IRequestFileDownloadOptions]
+  }
+}
+

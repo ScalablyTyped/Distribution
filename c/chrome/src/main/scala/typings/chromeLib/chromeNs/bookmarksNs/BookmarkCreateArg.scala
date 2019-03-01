@@ -13,3 +13,20 @@ trait BookmarkCreateArg extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BookmarkCreateArg {
+  @scala.inline
+  def apply(
+    index: scala.Int | scala.Double = null,
+    parentId: java.lang.String = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null
+  ): BookmarkCreateArg = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[BookmarkCreateArg]
+  }
+}
+

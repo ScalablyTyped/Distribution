@@ -13,3 +13,18 @@ trait event extends js.Object {
   def $transfor(wxevent: js.Array[_]): scala.Unit
 }
 
+object event {
+  @scala.inline
+  def apply(
+    $destroy: js.Function0[scala.Unit],
+    $transfor: js.Function1[js.Array[_], scala.Unit],
+    active: scala.Boolean
+  ): event = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$destroy")($destroy)
+    __obj.updateDynamic("$transfor")($transfor)
+    __obj.updateDynamic("active")(active)
+    __obj.asInstanceOf[event]
+  }
+}
+

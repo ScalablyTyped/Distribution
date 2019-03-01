@@ -33,3 +33,24 @@ trait AnimatePropTypeInterface extends js.Object {
   var onLoad: js.UndefOr[victoryLib.Anon_After] = js.undefined
 }
 
+object AnimatePropTypeInterface {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    easing: AnimationEasing = null,
+    onEnd: js.Function0[scala.Unit] = null,
+    onEnter: victoryLib.Anon_After = null,
+    onExit: victoryLib.Anon_Before = null,
+    onLoad: victoryLib.Anon_After = null
+  ): AnimatePropTypeInterface = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    __obj.asInstanceOf[AnimatePropTypeInterface]
+  }
+}
+

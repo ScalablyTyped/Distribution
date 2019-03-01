@@ -141,3 +141,70 @@ trait DrawerProperties extends js.Object {
   var useInteractionManager: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DrawerProperties {
+  @scala.inline
+  def apply(
+    acceptDoubleTap: js.UndefOr[scala.Boolean] = js.undefined,
+    acceptPan: js.UndefOr[scala.Boolean] = js.undefined,
+    acceptPanOnDrawer: js.UndefOr[scala.Boolean] = js.undefined,
+    acceptTap: js.UndefOr[scala.Boolean] = js.undefined,
+    captureGestures: scala.Boolean | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.open | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.closed = null,
+    closedDrawerOffset: js.Function0[scala.Double] | scala.Double = null,
+    content: reactLib.reactMod.ReactNs.ReactNode = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    elevation: scala.Int | scala.Double = null,
+    initializeOpen: scala.Int | scala.Double = null,
+    negotiatePan: js.UndefOr[scala.Boolean] = js.undefined,
+    onClose: js.Function0[scala.Unit] = null,
+    onCloseStart: js.Function0[scala.Unit] = null,
+    onDragStart: js.Function0[scala.Unit] = null,
+    onOpen: js.Function0[scala.Unit] = null,
+    onOpenStart: js.Function0[scala.Unit] = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    openDrawerOffset: (js.Function1[/* viewport */ reactDashNativeLib.reactDashNativeMod.ScaledSize, scala.Double]) | scala.Double = null,
+    panCloseMask: scala.Int | scala.Double = null,
+    panOpenMask: scala.Int | scala.Double = null,
+    panThreshold: scala.Int | scala.Double = null,
+    side: reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.left | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.right | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.top | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.bottom = null,
+    styles: DrawerStyles = null,
+    tapToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    tweenDuration: scala.Int | scala.Double = null,
+    tweenEasing: TweenFunctions = null,
+    tweenHandler: js.Function1[/* ratio */ scala.Double, NestedViewStyles] = null,
+    `type`: reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.displace | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.overlay | reactDashNativeDashDrawerLib.reactDashNativeDashDrawerLibStrings.static = null,
+    useInteractionManager: js.UndefOr[scala.Boolean] = js.undefined
+  ): DrawerProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(acceptDoubleTap)) __obj.updateDynamic("acceptDoubleTap")(acceptDoubleTap)
+    if (!js.isUndefined(acceptPan)) __obj.updateDynamic("acceptPan")(acceptPan)
+    if (!js.isUndefined(acceptPanOnDrawer)) __obj.updateDynamic("acceptPanOnDrawer")(acceptPanOnDrawer)
+    if (!js.isUndefined(acceptTap)) __obj.updateDynamic("acceptTap")(acceptTap)
+    if (captureGestures != null) __obj.updateDynamic("captureGestures")(captureGestures.asInstanceOf[js.Any])
+    if (closedDrawerOffset != null) __obj.updateDynamic("closedDrawerOffset")(closedDrawerOffset.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
+    if (initializeOpen != null) __obj.updateDynamic("initializeOpen")(initializeOpen.asInstanceOf[js.Any])
+    if (!js.isUndefined(negotiatePan)) __obj.updateDynamic("negotiatePan")(negotiatePan)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onCloseStart != null) __obj.updateDynamic("onCloseStart")(onCloseStart)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onOpenStart != null) __obj.updateDynamic("onOpenStart")(onOpenStart)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (openDrawerOffset != null) __obj.updateDynamic("openDrawerOffset")(openDrawerOffset.asInstanceOf[js.Any])
+    if (panCloseMask != null) __obj.updateDynamic("panCloseMask")(panCloseMask.asInstanceOf[js.Any])
+    if (panOpenMask != null) __obj.updateDynamic("panOpenMask")(panOpenMask.asInstanceOf[js.Any])
+    if (panThreshold != null) __obj.updateDynamic("panThreshold")(panThreshold.asInstanceOf[js.Any])
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (!js.isUndefined(tapToClose)) __obj.updateDynamic("tapToClose")(tapToClose)
+    if (tweenDuration != null) __obj.updateDynamic("tweenDuration")(tweenDuration.asInstanceOf[js.Any])
+    if (tweenEasing != null) __obj.updateDynamic("tweenEasing")(tweenEasing)
+    if (tweenHandler != null) __obj.updateDynamic("tweenHandler")(tweenHandler)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(useInteractionManager)) __obj.updateDynamic("useInteractionManager")(useInteractionManager)
+    __obj.asInstanceOf[DrawerProperties]
+  }
+}
+

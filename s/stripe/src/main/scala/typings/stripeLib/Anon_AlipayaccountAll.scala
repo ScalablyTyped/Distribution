@@ -13,3 +13,14 @@ trait Anon_AlipayaccountAll extends js.Object {
   var `object`: stripeLib.stripeLibStrings.all | stripeLib.stripeLibStrings.alipay_account | stripeLib.stripeLibStrings.bitcoin_receiver | stripeLib.stripeLibStrings.card
 }
 
+object Anon_AlipayaccountAll {
+  @scala.inline
+  def apply(
+    `object`: stripeLib.stripeLibStrings.all | stripeLib.stripeLibStrings.alipay_account | stripeLib.stripeLibStrings.bitcoin_receiver | stripeLib.stripeLibStrings.card
+  ): Anon_AlipayaccountAll = {
+    val __obj = js.Dynamic.literal(`object` = `object`.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_AlipayaccountAll]
+  }
+}
+

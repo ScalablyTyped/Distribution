@@ -230,3 +230,174 @@ trait ISemanticColors
   var warningHighlight: java.lang.String
 }
 
+object ISemanticColors {
+  @scala.inline
+  def apply(
+    accentButtonBackground: java.lang.String,
+    accentButtonText: java.lang.String,
+    actionLink: java.lang.String,
+    actionLinkHovered: java.lang.String,
+    blockingBackground: java.lang.String,
+    bodyBackground: java.lang.String,
+    bodyDivider: java.lang.String,
+    bodyFrameBackground: java.lang.String,
+    bodyFrameDivider: java.lang.String,
+    bodyStandoutBackground: java.lang.String,
+    bodySubtext: java.lang.String,
+    bodyText: java.lang.String,
+    bodyTextChecked: java.lang.String,
+    buttonBackground: java.lang.String,
+    buttonBackgroundChecked: java.lang.String,
+    buttonBackgroundCheckedHovered: java.lang.String,
+    buttonBackgroundDisabled: java.lang.String,
+    buttonBackgroundHovered: java.lang.String,
+    buttonBackgroundPressed: java.lang.String,
+    buttonBorder: java.lang.String,
+    buttonBorderDisabled: java.lang.String,
+    buttonText: java.lang.String,
+    buttonTextChecked: java.lang.String,
+    buttonTextCheckedHovered: java.lang.String,
+    buttonTextDisabled: java.lang.String,
+    buttonTextHovered: java.lang.String,
+    buttonTextPressed: java.lang.String,
+    defaultStateBackground: java.lang.String,
+    disabledBackground: java.lang.String,
+    disabledBodySubtext: java.lang.String,
+    disabledBodyText: java.lang.String,
+    disabledSubtext: java.lang.String,
+    disabledText: java.lang.String,
+    errorBackground: java.lang.String,
+    errorText: java.lang.String,
+    focusBorder: java.lang.String,
+    inputBackground: java.lang.String,
+    inputBackgroundChecked: java.lang.String,
+    inputBackgroundCheckedHovered: java.lang.String,
+    inputBorder: java.lang.String,
+    inputBorderHovered: java.lang.String,
+    inputFocusBorderAlt: java.lang.String,
+    inputForegroundChecked: java.lang.String,
+    inputPlaceholderText: java.lang.String,
+    inputText: java.lang.String,
+    inputTextHovered: java.lang.String,
+    link: java.lang.String,
+    linkHovered: java.lang.String,
+    listBackground: java.lang.String,
+    listHeaderBackgroundHovered: java.lang.String,
+    listHeaderBackgroundPressed: java.lang.String,
+    listItemBackgroundChecked: java.lang.String,
+    listItemBackgroundCheckedHovered: java.lang.String,
+    listItemBackgroundHovered: java.lang.String,
+    listText: java.lang.String,
+    listTextColor: java.lang.String,
+    menuBackground: java.lang.String,
+    menuDivider: java.lang.String,
+    menuHeader: java.lang.String,
+    menuIcon: java.lang.String,
+    menuItemBackgroundChecked: java.lang.String,
+    menuItemBackgroundHovered: java.lang.String,
+    menuItemBackgroundPressed: java.lang.String,
+    menuItemText: java.lang.String,
+    menuItemTextHovered: java.lang.String,
+    primaryButtonBackground: java.lang.String,
+    primaryButtonBackgroundDisabled: java.lang.String,
+    primaryButtonBackgroundHovered: java.lang.String,
+    primaryButtonBackgroundPressed: java.lang.String,
+    primaryButtonBorder: java.lang.String,
+    primaryButtonText: java.lang.String,
+    primaryButtonTextDisabled: java.lang.String,
+    primaryButtonTextHovered: java.lang.String,
+    primaryButtonTextPressed: java.lang.String,
+    smallInputBorder: java.lang.String,
+    successBackground: java.lang.String,
+    variantBorder: java.lang.String,
+    variantBorderHovered: java.lang.String,
+    warningBackground: java.lang.String,
+    warningHighlight: java.lang.String,
+    warningText: java.lang.String
+  ): ISemanticColors = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accentButtonBackground")(accentButtonBackground)
+    __obj.updateDynamic("accentButtonText")(accentButtonText)
+    __obj.updateDynamic("actionLink")(actionLink)
+    __obj.updateDynamic("actionLinkHovered")(actionLinkHovered)
+    __obj.updateDynamic("blockingBackground")(blockingBackground)
+    __obj.updateDynamic("bodyBackground")(bodyBackground)
+    __obj.updateDynamic("bodyDivider")(bodyDivider)
+    __obj.updateDynamic("bodyFrameBackground")(bodyFrameBackground)
+    __obj.updateDynamic("bodyFrameDivider")(bodyFrameDivider)
+    __obj.updateDynamic("bodyStandoutBackground")(bodyStandoutBackground)
+    __obj.updateDynamic("bodySubtext")(bodySubtext)
+    __obj.updateDynamic("bodyText")(bodyText)
+    __obj.updateDynamic("bodyTextChecked")(bodyTextChecked)
+    __obj.updateDynamic("buttonBackground")(buttonBackground)
+    __obj.updateDynamic("buttonBackgroundChecked")(buttonBackgroundChecked)
+    __obj.updateDynamic("buttonBackgroundCheckedHovered")(buttonBackgroundCheckedHovered)
+    __obj.updateDynamic("buttonBackgroundDisabled")(buttonBackgroundDisabled)
+    __obj.updateDynamic("buttonBackgroundHovered")(buttonBackgroundHovered)
+    __obj.updateDynamic("buttonBackgroundPressed")(buttonBackgroundPressed)
+    __obj.updateDynamic("buttonBorder")(buttonBorder)
+    __obj.updateDynamic("buttonBorderDisabled")(buttonBorderDisabled)
+    __obj.updateDynamic("buttonText")(buttonText)
+    __obj.updateDynamic("buttonTextChecked")(buttonTextChecked)
+    __obj.updateDynamic("buttonTextCheckedHovered")(buttonTextCheckedHovered)
+    __obj.updateDynamic("buttonTextDisabled")(buttonTextDisabled)
+    __obj.updateDynamic("buttonTextHovered")(buttonTextHovered)
+    __obj.updateDynamic("buttonTextPressed")(buttonTextPressed)
+    __obj.updateDynamic("defaultStateBackground")(defaultStateBackground)
+    __obj.updateDynamic("disabledBackground")(disabledBackground)
+    __obj.updateDynamic("disabledBodySubtext")(disabledBodySubtext)
+    __obj.updateDynamic("disabledBodyText")(disabledBodyText)
+    __obj.updateDynamic("disabledSubtext")(disabledSubtext)
+    __obj.updateDynamic("disabledText")(disabledText)
+    __obj.updateDynamic("errorBackground")(errorBackground)
+    __obj.updateDynamic("errorText")(errorText)
+    __obj.updateDynamic("focusBorder")(focusBorder)
+    __obj.updateDynamic("inputBackground")(inputBackground)
+    __obj.updateDynamic("inputBackgroundChecked")(inputBackgroundChecked)
+    __obj.updateDynamic("inputBackgroundCheckedHovered")(inputBackgroundCheckedHovered)
+    __obj.updateDynamic("inputBorder")(inputBorder)
+    __obj.updateDynamic("inputBorderHovered")(inputBorderHovered)
+    __obj.updateDynamic("inputFocusBorderAlt")(inputFocusBorderAlt)
+    __obj.updateDynamic("inputForegroundChecked")(inputForegroundChecked)
+    __obj.updateDynamic("inputPlaceholderText")(inputPlaceholderText)
+    __obj.updateDynamic("inputText")(inputText)
+    __obj.updateDynamic("inputTextHovered")(inputTextHovered)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("linkHovered")(linkHovered)
+    __obj.updateDynamic("listBackground")(listBackground)
+    __obj.updateDynamic("listHeaderBackgroundHovered")(listHeaderBackgroundHovered)
+    __obj.updateDynamic("listHeaderBackgroundPressed")(listHeaderBackgroundPressed)
+    __obj.updateDynamic("listItemBackgroundChecked")(listItemBackgroundChecked)
+    __obj.updateDynamic("listItemBackgroundCheckedHovered")(listItemBackgroundCheckedHovered)
+    __obj.updateDynamic("listItemBackgroundHovered")(listItemBackgroundHovered)
+    __obj.updateDynamic("listText")(listText)
+    __obj.updateDynamic("listTextColor")(listTextColor)
+    __obj.updateDynamic("menuBackground")(menuBackground)
+    __obj.updateDynamic("menuDivider")(menuDivider)
+    __obj.updateDynamic("menuHeader")(menuHeader)
+    __obj.updateDynamic("menuIcon")(menuIcon)
+    __obj.updateDynamic("menuItemBackgroundChecked")(menuItemBackgroundChecked)
+    __obj.updateDynamic("menuItemBackgroundHovered")(menuItemBackgroundHovered)
+    __obj.updateDynamic("menuItemBackgroundPressed")(menuItemBackgroundPressed)
+    __obj.updateDynamic("menuItemText")(menuItemText)
+    __obj.updateDynamic("menuItemTextHovered")(menuItemTextHovered)
+    __obj.updateDynamic("primaryButtonBackground")(primaryButtonBackground)
+    __obj.updateDynamic("primaryButtonBackgroundDisabled")(primaryButtonBackgroundDisabled)
+    __obj.updateDynamic("primaryButtonBackgroundHovered")(primaryButtonBackgroundHovered)
+    __obj.updateDynamic("primaryButtonBackgroundPressed")(primaryButtonBackgroundPressed)
+    __obj.updateDynamic("primaryButtonBorder")(primaryButtonBorder)
+    __obj.updateDynamic("primaryButtonText")(primaryButtonText)
+    __obj.updateDynamic("primaryButtonTextDisabled")(primaryButtonTextDisabled)
+    __obj.updateDynamic("primaryButtonTextHovered")(primaryButtonTextHovered)
+    __obj.updateDynamic("primaryButtonTextPressed")(primaryButtonTextPressed)
+    __obj.updateDynamic("smallInputBorder")(smallInputBorder)
+    __obj.updateDynamic("successBackground")(successBackground)
+    __obj.updateDynamic("variantBorder")(variantBorder)
+    __obj.updateDynamic("variantBorderHovered")(variantBorderHovered)
+    __obj.updateDynamic("warningBackground")(warningBackground)
+    __obj.updateDynamic("warningHighlight")(warningHighlight)
+    __obj.updateDynamic("warningText")(warningText)
+    __obj.asInstanceOf[ISemanticColors]
+  }
+}
+

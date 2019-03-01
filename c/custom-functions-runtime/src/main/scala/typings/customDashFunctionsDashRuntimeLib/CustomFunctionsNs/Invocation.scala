@@ -22,3 +22,12 @@ trait Invocation extends js.Object {
   var address: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Invocation {
+  @scala.inline
+  def apply(address: java.lang.String = null): Invocation = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    __obj.asInstanceOf[Invocation]
+  }
+}
+

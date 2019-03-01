@@ -20,3 +20,18 @@ trait PromisifyAllOptions extends js.Object {
   var suffix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PromisifyAllOptions {
+  @scala.inline
+  def apply(
+    context: js.Object = null,
+    filter: js.Function1[/* key */ java.lang.String, scala.Boolean] = null,
+    suffix: java.lang.String = null
+  ): PromisifyAllOptions = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    __obj.asInstanceOf[PromisifyAllOptions]
+  }
+}
+

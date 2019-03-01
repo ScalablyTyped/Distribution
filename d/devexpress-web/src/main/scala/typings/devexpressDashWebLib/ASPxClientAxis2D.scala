@@ -26,3 +26,26 @@ trait ASPxClientAxis2D extends ASPxClientAxisBase {
   var strips: js.Array[ASPxClientStrip]
 }
 
+object ASPxClientAxis2D {
+  @scala.inline
+  def apply(
+    axisTitle: ASPxClientAxisTitle,
+    chart: ASPxClientWebChart,
+    constantLines: js.Array[ASPxClientConstantLine],
+    diagram: ASPxClientXYDiagramBase,
+    name: java.lang.String,
+    range: ASPxClientAxisRange,
+    strips: js.Array[ASPxClientStrip]
+  ): ASPxClientAxis2D = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axisTitle")(axisTitle)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("constantLines")(constantLines)
+    __obj.updateDynamic("diagram")(diagram)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("strips")(strips)
+    __obj.asInstanceOf[ASPxClientAxis2D]
+  }
+}
+

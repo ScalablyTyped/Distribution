@@ -10,3 +10,12 @@ trait InstanceGroupManagersListManagedInstancesResponse extends js.Object {
   var managedInstances: js.UndefOr[js.Array[ManagedInstance]] = js.undefined
 }
 
+object InstanceGroupManagersListManagedInstancesResponse {
+  @scala.inline
+  def apply(managedInstances: js.Array[ManagedInstance] = null): InstanceGroupManagersListManagedInstancesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (managedInstances != null) __obj.updateDynamic("managedInstances")(managedInstances)
+    __obj.asInstanceOf[InstanceGroupManagersListManagedInstancesResponse]
+  }
+}
+

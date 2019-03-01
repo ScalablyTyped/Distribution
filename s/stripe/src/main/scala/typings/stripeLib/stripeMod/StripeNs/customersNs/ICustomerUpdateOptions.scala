@@ -44,3 +44,32 @@ trait ICustomerUpdateOptions
   var source: js.UndefOr[stripeLib.stripeMod.StripeNs.sourcesNs.ISourceCreationOptionsExtended] = js.undefined
 }
 
+object ICustomerUpdateOptions {
+  @scala.inline
+  def apply(
+    account_balance: scala.Int | scala.Double = null,
+    coupon: java.lang.String = null,
+    default_source: java.lang.String = null,
+    description: java.lang.String = null,
+    email: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    shipping: stripeLib.stripeMod.StripeNs.IShippingInformation = null,
+    source: stripeLib.stripeMod.StripeNs.sourcesNs.ISourceCreationOptionsExtended = null
+  ): ICustomerUpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
+    if (coupon != null) __obj.updateDynamic("coupon")(coupon)
+    if (default_source != null) __obj.updateDynamic("default_source")(default_source)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICustomerUpdateOptions]
+  }
+}
+

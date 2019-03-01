@@ -38,3 +38,44 @@ trait Metadata extends js.Object {
   var width: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object Metadata {
+  @scala.inline
+  def apply(
+    attachedImages: js.Array[stdLib.Blob],
+    mimeType: java.lang.String,
+    rawTags: js.Array[RawTag],
+    album: java.lang.String = null,
+    artist: java.lang.String = null,
+    comment: java.lang.String = null,
+    copyright: java.lang.String = null,
+    disc: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    duration: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    genre: java.lang.String = null,
+    height: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    language: java.lang.String = null,
+    rotation: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    title: java.lang.String = null,
+    track: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    width: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): Metadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attachedImages")(attachedImages)
+    __obj.updateDynamic("mimeType")(mimeType)
+    __obj.updateDynamic("rawTags")(rawTags)
+    if (album != null) __obj.updateDynamic("album")(album)
+    if (artist != null) __obj.updateDynamic("artist")(artist)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (!js.isUndefined(disc)) __obj.updateDynamic("disc")(disc)
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration)
+    if (genre != null) __obj.updateDynamic("genre")(genre)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Metadata]
+  }
+}
+

@@ -16,3 +16,12 @@ trait GeoStreamWrapper extends js.Object {
   def stream(stream: GeoStream): GeoStream
 }
 
+object GeoStreamWrapper {
+  @scala.inline
+  def apply(stream: js.Function1[GeoStream, GeoStream]): GeoStreamWrapper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stream")(stream)
+    __obj.asInstanceOf[GeoStreamWrapper]
+  }
+}
+

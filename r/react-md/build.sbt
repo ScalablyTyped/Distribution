@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "react-md"
-version := "1.9.3-e34e32"
+version := "1.9.3-0ff6df"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-df7a56",
-  "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-3f7dd7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-3dd766",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-2359a8",
-  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190212Z-130424",
-  "org.scalablytyped" %%% "react-swipeable-views" % "0.12-dt-20180806Z-cc33a4",
-  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-b59ab5",
-  "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-d5f303",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-2b6900",
+  "org.scalablytyped" %%% "csstype" % "2.6.2-481742",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-66c044",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-9e9d73",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-dfd109",
+  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190212Z-35d85e",
+  "org.scalablytyped" %%% "react-swipeable-views" % "0.12-dt-20180806Z-4c2a50",
+  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-f660b8",
+  "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-c52a23",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

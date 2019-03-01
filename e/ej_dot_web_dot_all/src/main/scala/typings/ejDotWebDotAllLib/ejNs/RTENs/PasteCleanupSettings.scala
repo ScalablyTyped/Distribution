@@ -24,3 +24,20 @@ trait PasteCleanupSettings extends js.Object {
   var removeStyles: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PasteCleanupSettings {
+  @scala.inline
+  def apply(
+    cleanCSS: js.UndefOr[scala.Boolean] = js.undefined,
+    cleanElements: js.UndefOr[scala.Boolean] = js.undefined,
+    listConversion: js.UndefOr[scala.Boolean] = js.undefined,
+    removeStyles: js.UndefOr[scala.Boolean] = js.undefined
+  ): PasteCleanupSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cleanCSS)) __obj.updateDynamic("cleanCSS")(cleanCSS)
+    if (!js.isUndefined(cleanElements)) __obj.updateDynamic("cleanElements")(cleanElements)
+    if (!js.isUndefined(listConversion)) __obj.updateDynamic("listConversion")(listConversion)
+    if (!js.isUndefined(removeStyles)) __obj.updateDynamic("removeStyles")(removeStyles)
+    __obj.asInstanceOf[PasteCleanupSettings]
+  }
+}
+

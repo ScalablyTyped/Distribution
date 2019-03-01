@@ -14,3 +14,13 @@ trait ColumnsCommand extends js.Object {
   var `type`: js.UndefOr[UnboundType | java.lang.String] = js.undefined
 }
 
+object ColumnsCommand {
+  @scala.inline
+  def apply(buttonOptions: js.Any = null, `type`: UnboundType | java.lang.String = null): ColumnsCommand = {
+    val __obj = js.Dynamic.literal()
+    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnsCommand]
+  }
+}
+

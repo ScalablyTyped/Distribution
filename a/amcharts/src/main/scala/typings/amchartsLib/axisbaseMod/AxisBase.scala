@@ -148,3 +148,72 @@ trait AxisBase extends js.Object {
   def removeGuide(guide: amchartsLib.guideMod.default): scala.Unit
 }
 
+object AxisBase {
+  @scala.inline
+  def apply(
+    addGuide: js.Function1[amchartsLib.guideMod.default, scala.Unit],
+    autoGridCount: scala.Boolean,
+    axisAlpha: scala.Double,
+    axisColor: java.lang.String,
+    axisThickness: scala.Double,
+    color: java.lang.String,
+    dashLength: scala.Double,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    fontSize: java.lang.String,
+    gridAlpha: scala.Double,
+    gridColor: java.lang.String,
+    gridCount: scala.Double,
+    gridThickness: scala.Double,
+    guides: js.Array[_],
+    ignoreAxisWidth: scala.Boolean,
+    inside: scala.Boolean,
+    labelFrequency: scala.Double,
+    labelRotation: scala.Double,
+    labelsEnabled: scala.Boolean,
+    offset: scala.Double,
+    position: java.lang.String,
+    removeGuide: js.Function1[amchartsLib.guideMod.default, scala.Unit],
+    showFirstLabel: scala.Boolean,
+    showLastLabel: scala.Boolean,
+    tickLength: scala.Double,
+    title: java.lang.String,
+    titleBold: scala.Boolean,
+    titleColor: java.lang.String,
+    titlefontSize: java.lang.String
+  ): AxisBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addGuide")(addGuide)
+    __obj.updateDynamic("autoGridCount")(autoGridCount)
+    __obj.updateDynamic("axisAlpha")(axisAlpha)
+    __obj.updateDynamic("axisColor")(axisColor)
+    __obj.updateDynamic("axisThickness")(axisThickness)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("dashLength")(dashLength)
+    __obj.updateDynamic("fillAlpha")(fillAlpha)
+    __obj.updateDynamic("fillColor")(fillColor)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("gridAlpha")(gridAlpha)
+    __obj.updateDynamic("gridColor")(gridColor)
+    __obj.updateDynamic("gridCount")(gridCount)
+    __obj.updateDynamic("gridThickness")(gridThickness)
+    __obj.updateDynamic("guides")(guides)
+    __obj.updateDynamic("ignoreAxisWidth")(ignoreAxisWidth)
+    __obj.updateDynamic("inside")(inside)
+    __obj.updateDynamic("labelFrequency")(labelFrequency)
+    __obj.updateDynamic("labelRotation")(labelRotation)
+    __obj.updateDynamic("labelsEnabled")(labelsEnabled)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("removeGuide")(removeGuide)
+    __obj.updateDynamic("showFirstLabel")(showFirstLabel)
+    __obj.updateDynamic("showLastLabel")(showLastLabel)
+    __obj.updateDynamic("tickLength")(tickLength)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("titleBold")(titleBold)
+    __obj.updateDynamic("titleColor")(titleColor)
+    __obj.updateDynamic("titlefontSize")(titlefontSize)
+    __obj.asInstanceOf[AxisBase]
+  }
+}
+

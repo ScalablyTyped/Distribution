@@ -43,3 +43,24 @@ trait HTTPOptions extends js.Object {
   var xhrWithCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HTTPOptions {
+  @scala.inline
+  def apply(
+    agent: nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent = null,
+    connectTimeout: scala.Int | scala.Double = null,
+    proxy: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    xhrAsync: js.UndefOr[scala.Boolean] = js.undefined,
+    xhrWithCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): HTTPOptions = {
+    val __obj = js.Dynamic.literal()
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
+    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhrAsync)) __obj.updateDynamic("xhrAsync")(xhrAsync)
+    if (!js.isUndefined(xhrWithCredentials)) __obj.updateDynamic("xhrWithCredentials")(xhrWithCredentials)
+    __obj.asInstanceOf[HTTPOptions]
+  }
+}
+

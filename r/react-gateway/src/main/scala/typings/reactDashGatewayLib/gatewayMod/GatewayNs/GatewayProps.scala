@@ -9,3 +9,12 @@ trait GatewayProps extends js.Object {
   var into: java.lang.String
 }
 
+object GatewayProps {
+  @scala.inline
+  def apply(into: java.lang.String): GatewayProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("into")(into)
+    __obj.asInstanceOf[GatewayProps]
+  }
+}
+

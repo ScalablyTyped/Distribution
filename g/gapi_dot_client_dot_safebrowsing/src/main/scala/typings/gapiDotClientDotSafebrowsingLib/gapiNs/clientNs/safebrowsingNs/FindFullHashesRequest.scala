@@ -19,3 +19,20 @@ trait FindFullHashesRequest extends js.Object {
   var threatInfo: js.UndefOr[ThreatInfo] = js.undefined
 }
 
+object FindFullHashesRequest {
+  @scala.inline
+  def apply(
+    apiClient: ClientInfo = null,
+    client: ClientInfo = null,
+    clientStates: js.Array[java.lang.String] = null,
+    threatInfo: ThreatInfo = null
+  ): FindFullHashesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (apiClient != null) __obj.updateDynamic("apiClient")(apiClient)
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (clientStates != null) __obj.updateDynamic("clientStates")(clientStates)
+    if (threatInfo != null) __obj.updateDynamic("threatInfo")(threatInfo)
+    __obj.asInstanceOf[FindFullHashesRequest]
+  }
+}
+

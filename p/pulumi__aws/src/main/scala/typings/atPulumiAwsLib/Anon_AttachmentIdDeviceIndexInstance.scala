@@ -11,3 +11,18 @@ trait Anon_AttachmentIdDeviceIndexInstance extends js.Object {
   var instance: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_AttachmentIdDeviceIndexInstance {
+  @scala.inline
+  def apply(
+    deviceIndex: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    instance: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    attachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_AttachmentIdDeviceIndexInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceIndex")(deviceIndex.asInstanceOf[js.Any])
+    __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AttachmentIdDeviceIndexInstance]
+  }
+}
+

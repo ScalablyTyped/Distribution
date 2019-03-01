@@ -11,3 +11,18 @@ trait VASTClientCustomStorage
   def setItem(key: java.lang.String, `val`: java.lang.String): scala.Unit
 }
 
+object VASTClientCustomStorage {
+  @scala.inline
+  def apply(
+    getItem: js.Function1[java.lang.String, java.lang.String | scala.Null],
+    setItem: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any | js.Function0[_]] = null
+  ): VASTClientCustomStorage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getItem")(getItem)
+    __obj.updateDynamic("setItem")(setItem)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[VASTClientCustomStorage]
+  }
+}
+

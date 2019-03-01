@@ -25,3 +25,22 @@ trait Anon_Concurrent extends js.Object {
   var sampleInterval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Concurrent {
+  @scala.inline
+  def apply(
+    concurrent: scala.Int | scala.Double = null,
+    maxEventLoopDelay: scala.Int | scala.Double = null,
+    maxHeapUsedBytes: scala.Int | scala.Double = null,
+    maxRssBytes: scala.Int | scala.Double = null,
+    sampleInterval: scala.Int | scala.Double = null
+  ): Anon_Concurrent = {
+    val __obj = js.Dynamic.literal()
+    if (concurrent != null) __obj.updateDynamic("concurrent")(concurrent.asInstanceOf[js.Any])
+    if (maxEventLoopDelay != null) __obj.updateDynamic("maxEventLoopDelay")(maxEventLoopDelay.asInstanceOf[js.Any])
+    if (maxHeapUsedBytes != null) __obj.updateDynamic("maxHeapUsedBytes")(maxHeapUsedBytes.asInstanceOf[js.Any])
+    if (maxRssBytes != null) __obj.updateDynamic("maxRssBytes")(maxRssBytes.asInstanceOf[js.Any])
+    if (sampleInterval != null) __obj.updateDynamic("sampleInterval")(sampleInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Concurrent]
+  }
+}
+

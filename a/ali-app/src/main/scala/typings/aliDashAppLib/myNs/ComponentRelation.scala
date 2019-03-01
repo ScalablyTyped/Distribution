@@ -18,3 +18,21 @@ trait ComponentRelation extends js.Object {
   var unlinked: js.UndefOr[js.Function1[/* target */ Component, scala.Unit]] = js.undefined
 }
 
+object ComponentRelation {
+  @scala.inline
+  def apply(
+    `type`: aliDashAppLib.aliDashAppLibStrings.parent | aliDashAppLib.aliDashAppLibStrings.child | aliDashAppLib.aliDashAppLibStrings.ancestor | aliDashAppLib.aliDashAppLibStrings.descendant,
+    linkChanged: js.Function1[/* target */ Component, scala.Unit] = null,
+    linked: js.Function1[/* target */ Component, scala.Unit] = null,
+    target: java.lang.String = null,
+    unlinked: js.Function1[/* target */ Component, scala.Unit] = null
+  ): ComponentRelation = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (linkChanged != null) __obj.updateDynamic("linkChanged")(linkChanged)
+    if (linked != null) __obj.updateDynamic("linked")(linked)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (unlinked != null) __obj.updateDynamic("unlinked")(unlinked)
+    __obj.asInstanceOf[ComponentRelation]
+  }
+}
+

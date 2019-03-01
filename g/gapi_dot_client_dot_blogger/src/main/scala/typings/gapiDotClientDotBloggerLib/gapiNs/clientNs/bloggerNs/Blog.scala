@@ -34,3 +34,38 @@ trait Blog extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Blog {
+  @scala.inline
+  def apply(
+    customMetaData: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    locale: gapiDotClientDotBloggerLib.Anon_Country = null,
+    name: java.lang.String = null,
+    pages: gapiDotClientDotBloggerLib.Anon_SelfLink = null,
+    posts: gapiDotClientDotBloggerLib.Anon_Items = null,
+    published: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    status: java.lang.String = null,
+    updated: java.lang.String = null,
+    url: java.lang.String = null
+  ): Blog = {
+    val __obj = js.Dynamic.literal()
+    if (customMetaData != null) __obj.updateDynamic("customMetaData")(customMetaData)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pages != null) __obj.updateDynamic("pages")(pages)
+    if (posts != null) __obj.updateDynamic("posts")(posts)
+    if (published != null) __obj.updateDynamic("published")(published)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Blog]
+  }
+}
+

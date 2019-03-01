@@ -16,3 +16,12 @@ trait ASPxClientReportDesignerErrorEventArgs extends ASPxClientEventArgs {
   var Error: js.Object
 }
 
+object ASPxClientReportDesignerErrorEventArgs {
+  @scala.inline
+  def apply(Error: js.Object): ASPxClientReportDesignerErrorEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Error")(Error)
+    __obj.asInstanceOf[ASPxClientReportDesignerErrorEventArgs]
+  }
+}
+

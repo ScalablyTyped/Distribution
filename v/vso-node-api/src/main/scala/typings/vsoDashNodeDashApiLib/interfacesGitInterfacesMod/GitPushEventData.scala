@@ -13,3 +13,22 @@ trait GitPushEventData extends js.Object {
   var repository: GitRepository
 }
 
+object GitPushEventData {
+  @scala.inline
+  def apply(
+    afterId: java.lang.String,
+    beforeId: java.lang.String,
+    branch: java.lang.String,
+    commits: js.Array[GitCommit],
+    repository: GitRepository
+  ): GitPushEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("afterId")(afterId)
+    __obj.updateDynamic("beforeId")(beforeId)
+    __obj.updateDynamic("branch")(branch)
+    __obj.updateDynamic("commits")(commits)
+    __obj.updateDynamic("repository")(repository)
+    __obj.asInstanceOf[GitPushEventData]
+  }
+}
+

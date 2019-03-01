@@ -12,3 +12,12 @@ trait BuildProcess extends js.Object {
   var `type`: scala.Double
 }
 
+object BuildProcess {
+  @scala.inline
+  def apply(`type`: scala.Double): BuildProcess = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[BuildProcess]
+  }
+}
+

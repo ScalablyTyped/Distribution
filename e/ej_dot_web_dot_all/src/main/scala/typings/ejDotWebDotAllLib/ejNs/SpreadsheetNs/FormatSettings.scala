@@ -20,3 +20,18 @@ trait FormatSettings extends js.Object {
   var allowFontFamily: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FormatSettings {
+  @scala.inline
+  def apply(
+    allowCellBorder: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDecimalPlaces: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFontFamily: js.UndefOr[scala.Boolean] = js.undefined
+  ): FormatSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowCellBorder)) __obj.updateDynamic("allowCellBorder")(allowCellBorder)
+    if (!js.isUndefined(allowDecimalPlaces)) __obj.updateDynamic("allowDecimalPlaces")(allowDecimalPlaces)
+    if (!js.isUndefined(allowFontFamily)) __obj.updateDynamic("allowFontFamily")(allowFontFamily)
+    __obj.asInstanceOf[FormatSettings]
+  }
+}
+

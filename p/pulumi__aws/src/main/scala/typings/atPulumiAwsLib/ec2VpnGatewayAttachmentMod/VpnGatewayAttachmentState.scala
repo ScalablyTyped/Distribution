@@ -16,3 +16,16 @@ trait VpnGatewayAttachmentState extends js.Object {
   val vpnGatewayId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object VpnGatewayAttachmentState {
+  @scala.inline
+  def apply(
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): VpnGatewayAttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    if (vpnGatewayId != null) __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpnGatewayAttachmentState]
+  }
+}
+

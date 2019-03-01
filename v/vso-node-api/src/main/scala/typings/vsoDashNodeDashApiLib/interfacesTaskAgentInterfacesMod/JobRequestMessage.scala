@@ -14,3 +14,24 @@ trait JobRequestMessage extends js.Object {
   var timeline: TimelineReference
 }
 
+object JobRequestMessage {
+  @scala.inline
+  def apply(
+    environment: JobEnvironment,
+    jobId: java.lang.String,
+    jobName: java.lang.String,
+    messageType: java.lang.String,
+    plan: TaskOrchestrationPlanReference,
+    timeline: TimelineReference
+  ): JobRequestMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("environment")(environment)
+    __obj.updateDynamic("jobId")(jobId)
+    __obj.updateDynamic("jobName")(jobName)
+    __obj.updateDynamic("messageType")(messageType)
+    __obj.updateDynamic("plan")(plan)
+    __obj.updateDynamic("timeline")(timeline)
+    __obj.asInstanceOf[JobRequestMessage]
+  }
+}
+

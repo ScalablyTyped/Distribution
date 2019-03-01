@@ -13,3 +13,20 @@ trait JSONStorageOptions extends Storage {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JSONStorageOptions {
+  @scala.inline
+  def apply(
+    executed: js.Function0[js.Promise[js.Array[nodeLib.String]]],
+    logMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    unlogMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    path: java.lang.String = null
+  ): JSONStorageOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("executed")(executed)
+    __obj.updateDynamic("logMigration")(logMigration)
+    __obj.updateDynamic("unlogMigration")(unlogMigration)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[JSONStorageOptions]
+  }
+}
+

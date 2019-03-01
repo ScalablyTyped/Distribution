@@ -13,3 +13,19 @@ trait OnMultiChoiceClickListener extends js.Object {
   ): scala.Unit
 }
 
+object OnMultiChoiceClickListener {
+  @scala.inline
+  def apply(
+    onClick: js.Function3[
+      androiduixLib.androidNs.contentNs.DialogInterface, 
+      scala.Double, 
+      scala.Boolean, 
+      scala.Unit
+    ]
+  ): OnMultiChoiceClickListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onClick")(onClick)
+    __obj.asInstanceOf[OnMultiChoiceClickListener]
+  }
+}
+

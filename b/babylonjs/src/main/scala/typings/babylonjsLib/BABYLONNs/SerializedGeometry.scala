@@ -28,3 +28,20 @@ trait SerializedGeometry extends js.Object {
   var positions: stdLib.Float32Array
 }
 
+object SerializedGeometry {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    indices: stdLib.Uint32Array,
+    normals: stdLib.Float32Array,
+    positions: stdLib.Float32Array
+  ): SerializedGeometry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("indices")(indices)
+    __obj.updateDynamic("normals")(normals)
+    __obj.updateDynamic("positions")(positions)
+    __obj.asInstanceOf[SerializedGeometry]
+  }
+}
+

@@ -39,3 +39,25 @@ trait XDataPilotFieldGrouping
   def createNameGroup(aItems: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): XDataPilotField
 }
 
+object XDataPilotFieldGrouping {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createDateGroup: js.Function1[DataPilotFieldGroupInfo, XDataPilotField],
+    createNameGroup: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      XDataPilotField
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataPilotFieldGrouping = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createDateGroup")(createDateGroup)
+    __obj.updateDynamic("createNameGroup")(createNameGroup)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDataPilotFieldGrouping]
+  }
+}
+

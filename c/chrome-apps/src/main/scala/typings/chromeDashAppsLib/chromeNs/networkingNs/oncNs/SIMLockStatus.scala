@@ -14,3 +14,18 @@ trait SIMLockStatus extends js.Object {
   var RetriesLeft: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object SIMLockStatus {
+  @scala.inline
+  def apply(
+    LockEnabled: scala.Boolean,
+    LockType: chromeDashAppsLib.chromeDashAppsLibStrings.`sim-pin` | chromeDashAppsLib.chromeDashAppsLibStrings.`sim-puk` | chromeDashAppsLib.chromeDashAppsLibStrings.Empty,
+    RetriesLeft: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): SIMLockStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LockEnabled")(LockEnabled)
+    __obj.updateDynamic("LockType")(LockType.asInstanceOf[js.Any])
+    if (!js.isUndefined(RetriesLeft)) __obj.updateDynamic("RetriesLeft")(RetriesLeft)
+    __obj.asInstanceOf[SIMLockStatus]
+  }
+}
+

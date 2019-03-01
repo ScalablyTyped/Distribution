@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object inDashAppDashPurchaseLibStrings {
   @js.native
-  sealed trait amazon extends js.Object
+  sealed trait amazon
+    extends inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Service
   
   @js.native
-  sealed trait apple extends js.Object
+  sealed trait apple
+    extends inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Service
   
   @js.native
-  sealed trait google extends js.Object
+  sealed trait google
+    extends inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Service
   
   @js.native
-  sealed trait roku extends js.Object
+  sealed trait roku
+    extends inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Service
   
   @js.native
-  sealed trait unity extends js.Object
+  sealed trait unity
+    extends inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Service
   
   @js.native
-  sealed trait windows extends js.Object
+  sealed trait windows
+    extends inDashAppDashPurchaseLib.inDashAppDashPurchaseMod.Service
   
   @scala.inline
   def amazon: amazon = "amazon".asInstanceOf[amazon]

@@ -20,3 +20,18 @@ trait FQDNOptions extends js.Object {
   var requireTld: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FQDNOptions {
+  @scala.inline
+  def apply(
+    allowTrailingDot: js.UndefOr[scala.Boolean] = js.undefined,
+    allowUnderscores: js.UndefOr[scala.Boolean] = js.undefined,
+    requireTld: js.UndefOr[scala.Boolean] = js.undefined
+  ): FQDNOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowTrailingDot)) __obj.updateDynamic("allowTrailingDot")(allowTrailingDot)
+    if (!js.isUndefined(allowUnderscores)) __obj.updateDynamic("allowUnderscores")(allowUnderscores)
+    if (!js.isUndefined(requireTld)) __obj.updateDynamic("requireTld")(requireTld)
+    __obj.asInstanceOf[FQDNOptions]
+  }
+}
+

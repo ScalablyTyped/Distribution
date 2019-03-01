@@ -10,3 +10,12 @@ trait GroupsRemoveMemberRequest extends js.Object {
   var users: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object GroupsRemoveMemberRequest {
+  @scala.inline
+  def apply(users: js.Array[java.lang.String] = null): GroupsRemoveMemberRequest = {
+    val __obj = js.Dynamic.literal()
+    if (users != null) __obj.updateDynamic("users")(users)
+    __obj.asInstanceOf[GroupsRemoveMemberRequest]
+  }
+}
+

@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object cliDashBoxesLibStrings {
   @js.native
-  sealed trait classic extends js.Object
+  sealed trait classic
+    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait double
+    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
   
   @js.native
-  sealed trait `double-single` extends js.Object
+  sealed trait `double-single`
+    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
   
   @js.native
-  sealed trait single extends js.Object
+  sealed trait single
+    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
   
   @js.native
-  sealed trait `single-double` extends js.Object
+  sealed trait `single-double`
+    extends cliDashBoxesLib.cliDashBoxesMod.boxesNs.BoxNames
   
   @scala.inline
   def classic: classic = "classic".asInstanceOf[classic]

@@ -13,3 +13,20 @@ trait CreateDirectoryRequestedEventOptions
   var recursive: scala.Boolean
 }
 
+object CreateDirectoryRequestedEventOptions {
+  @scala.inline
+  def apply(
+    directoryPath: java.lang.String,
+    fileSystemId: java.lang.String,
+    recursive: scala.Boolean,
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): CreateDirectoryRequestedEventOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("directoryPath")(directoryPath)
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("recursive")(recursive)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.asInstanceOf[CreateDirectoryRequestedEventOptions]
+  }
+}
+

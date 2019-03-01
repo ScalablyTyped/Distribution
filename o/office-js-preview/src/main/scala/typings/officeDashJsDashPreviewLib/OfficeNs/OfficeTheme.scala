@@ -50,3 +50,20 @@ trait OfficeTheme extends js.Object {
   var controlForegroundColor: java.lang.String
 }
 
+object OfficeTheme {
+  @scala.inline
+  def apply(
+    bodyBackgroundColor: java.lang.String,
+    bodyForegroundColor: java.lang.String,
+    controlBackgroundColor: java.lang.String,
+    controlForegroundColor: java.lang.String
+  ): OfficeTheme = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bodyBackgroundColor")(bodyBackgroundColor)
+    __obj.updateDynamic("bodyForegroundColor")(bodyForegroundColor)
+    __obj.updateDynamic("controlBackgroundColor")(controlBackgroundColor)
+    __obj.updateDynamic("controlForegroundColor")(controlForegroundColor)
+    __obj.asInstanceOf[OfficeTheme]
+  }
+}
+

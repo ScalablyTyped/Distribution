@@ -18,3 +18,16 @@ trait SubscriptionDeferralInfo extends js.Object {
   var expectedExpiryTimeMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SubscriptionDeferralInfo {
+  @scala.inline
+  def apply(
+    desiredExpiryTimeMillis: java.lang.String = null,
+    expectedExpiryTimeMillis: java.lang.String = null
+  ): SubscriptionDeferralInfo = {
+    val __obj = js.Dynamic.literal()
+    if (desiredExpiryTimeMillis != null) __obj.updateDynamic("desiredExpiryTimeMillis")(desiredExpiryTimeMillis)
+    if (expectedExpiryTimeMillis != null) __obj.updateDynamic("expectedExpiryTimeMillis")(expectedExpiryTimeMillis)
+    __obj.asInstanceOf[SubscriptionDeferralInfo]
+  }
+}
+

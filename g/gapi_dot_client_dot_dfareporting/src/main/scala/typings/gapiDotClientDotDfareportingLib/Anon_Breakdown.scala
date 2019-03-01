@@ -26,3 +26,26 @@ trait Anon_Breakdown extends js.Object {
   var pivoted: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Breakdown {
+  @scala.inline
+  def apply(
+    breakdown: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.SortedDimension] = null,
+    dateRange: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DateRange = null,
+    dimension: java.lang.String = null,
+    dimensionFilters: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue] = null,
+    metricNames: js.Array[java.lang.String] = null,
+    overlapMetricNames: js.Array[java.lang.String] = null,
+    pivoted: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Breakdown = {
+    val __obj = js.Dynamic.literal()
+    if (breakdown != null) __obj.updateDynamic("breakdown")(breakdown)
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
+    if (overlapMetricNames != null) __obj.updateDynamic("overlapMetricNames")(overlapMetricNames)
+    if (!js.isUndefined(pivoted)) __obj.updateDynamic("pivoted")(pivoted)
+    __obj.asInstanceOf[Anon_Breakdown]
+  }
+}
+

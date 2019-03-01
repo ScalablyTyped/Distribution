@@ -224,3 +224,97 @@ trait _Impl extends js.Object {
   ): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    checkOnRefresh: scala.Boolean,
+    className: semanticDashUiDashVisibilityLib.SemanticUINs.VisibilityNs.ClassNameSettings,
+    context: java.lang.String | semanticDashUiDashVisibilityLib.JQuery,
+    continuous: scala.Boolean,
+    debug: scala.Boolean,
+    duration: scala.Double,
+    error: semanticDashUiDashVisibilityLib.SemanticUINs.VisibilityNs.ErrorSettings,
+    includeMargin: scala.Boolean,
+    initialCheck: scala.Boolean,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    observeChanges: scala.Boolean,
+    offset: scala.Double,
+    onAllLoaded: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onBottomPassed: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onBottomPassedReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onBottomVisible: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onBottomVisibleReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onFixed: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onLoad: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onOffScreen: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onOnScreen: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onPassing: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onPassingReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onRefresh: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onTopPassed: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onTopPassedReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onTopVisible: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onTopVisibleReverse: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onUnfixed: js.Function1[semanticDashUiDashVisibilityLib.JQuery, scala.Unit],
+    onUpdate: js.Function2[
+      semanticDashUiDashVisibilityLib.JQuery, 
+      semanticDashUiDashVisibilityLib.SemanticUINs.VisibilityNs.ElementCalculations, 
+      scala.Unit
+    ],
+    once: scala.Boolean,
+    performance: scala.Boolean,
+    refreshOnLoad: scala.Boolean,
+    refreshOnResize: scala.Boolean,
+    silent: scala.Boolean,
+    throttle: semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibNumbers.`false` | scala.Double,
+    transition: semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibNumbers.`false` | java.lang.String,
+    `type`: semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibNumbers.`false` | semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibStrings.image | semanticDashUiDashVisibilityLib.semanticDashUiDashVisibilityLibStrings.fixed,
+    verbose: scala.Boolean,
+    zIndex: scala.Double
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("checkOnRefresh")(checkOnRefresh)
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.updateDynamic("continuous")(continuous)
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("includeMargin")(includeMargin)
+    __obj.updateDynamic("initialCheck")(initialCheck)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("observeChanges")(observeChanges)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("onAllLoaded")(onAllLoaded)
+    __obj.updateDynamic("onBottomPassed")(onBottomPassed)
+    __obj.updateDynamic("onBottomPassedReverse")(onBottomPassedReverse)
+    __obj.updateDynamic("onBottomVisible")(onBottomVisible)
+    __obj.updateDynamic("onBottomVisibleReverse")(onBottomVisibleReverse)
+    __obj.updateDynamic("onFixed")(onFixed)
+    __obj.updateDynamic("onLoad")(onLoad)
+    __obj.updateDynamic("onOffScreen")(onOffScreen)
+    __obj.updateDynamic("onOnScreen")(onOnScreen)
+    __obj.updateDynamic("onPassing")(onPassing)
+    __obj.updateDynamic("onPassingReverse")(onPassingReverse)
+    __obj.updateDynamic("onRefresh")(onRefresh)
+    __obj.updateDynamic("onTopPassed")(onTopPassed)
+    __obj.updateDynamic("onTopPassedReverse")(onTopPassedReverse)
+    __obj.updateDynamic("onTopVisible")(onTopVisible)
+    __obj.updateDynamic("onTopVisibleReverse")(onTopVisibleReverse)
+    __obj.updateDynamic("onUnfixed")(onUnfixed)
+    __obj.updateDynamic("onUpdate")(onUpdate)
+    __obj.updateDynamic("once")(once)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("refreshOnLoad")(refreshOnLoad)
+    __obj.updateDynamic("refreshOnResize")(refreshOnResize)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
+    __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.updateDynamic("zIndex")(zIndex)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

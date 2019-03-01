@@ -27,3 +27,18 @@ trait DateFormatOptions extends js.Object {
   var timeZone: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DateFormatOptions {
+  @scala.inline
+  def apply(
+    formatType: java.lang.String = null,
+    pattern: java.lang.String = null,
+    timeZone: scala.Int | scala.Double = null
+  ): DateFormatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (formatType != null) __obj.updateDynamic("formatType")(formatType)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DateFormatOptions]
+  }
+}
+

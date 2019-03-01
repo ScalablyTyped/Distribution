@@ -16,3 +16,18 @@ trait StrictPlaceholderLineProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictPlaceholderLineProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    className: java.lang.String = null,
+    length: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.full | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very long`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.long | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.medium | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.short | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very short`) = null
+  ): StrictPlaceholderLineProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictPlaceholderLineProps]
+  }
+}
+

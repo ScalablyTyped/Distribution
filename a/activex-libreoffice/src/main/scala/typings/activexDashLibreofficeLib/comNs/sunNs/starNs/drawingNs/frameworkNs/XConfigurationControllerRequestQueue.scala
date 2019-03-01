@@ -27,3 +27,16 @@ trait XConfigurationControllerRequestQueue extends js.Object {
   def postChangeRequest(xRequest: XConfigurationChangeRequest): scala.Unit
 }
 
+object XConfigurationControllerRequestQueue {
+  @scala.inline
+  def apply(
+    hasPendingRequests: js.Function0[scala.Boolean],
+    postChangeRequest: js.Function1[XConfigurationChangeRequest, scala.Unit]
+  ): XConfigurationControllerRequestQueue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hasPendingRequests")(hasPendingRequests)
+    __obj.updateDynamic("postChangeRequest")(postChangeRequest)
+    __obj.asInstanceOf[XConfigurationControllerRequestQueue]
+  }
+}
+

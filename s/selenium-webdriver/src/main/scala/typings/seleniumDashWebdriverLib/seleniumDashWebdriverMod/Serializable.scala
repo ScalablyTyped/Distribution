@@ -18,3 +18,14 @@ trait Serializable[T] extends js.Object {
   def serialize(): T | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[T]
 }
 
+object Serializable {
+  @scala.inline
+  def apply[T](
+    serialize: js.Function0[T | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[T]]
+  ): Serializable[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("serialize")(serialize)
+    __obj.asInstanceOf[Serializable[T]]
+  }
+}
+

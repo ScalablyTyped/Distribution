@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   var nodeType: java.lang.String
 }
 
+object NodeTypeAttributes {
+  @scala.inline
+  def apply(nodeType: java.lang.String): NodeTypeAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nodeType")(nodeType)
+    __obj.asInstanceOf[NodeTypeAttributes]
+  }
+}
+

@@ -20,3 +20,24 @@ trait IInfoboxEventArgs extends js.Object {
   var targetType: java.lang.String
 }
 
+object IInfoboxEventArgs {
+  @scala.inline
+  def apply(
+    eventName: java.lang.String,
+    pageX: scala.Double,
+    pageY: scala.Double,
+    target: Infobox,
+    targetType: java.lang.String,
+    originalEvent: stdLib.MouseEvent = null
+  ): IInfoboxEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventName")(eventName)
+    __obj.updateDynamic("pageX")(pageX)
+    __obj.updateDynamic("pageY")(pageY)
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("targetType")(targetType)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[IInfoboxEventArgs]
+  }
+}
+

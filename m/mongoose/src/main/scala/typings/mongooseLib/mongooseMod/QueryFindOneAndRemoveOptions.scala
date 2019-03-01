@@ -23,3 +23,24 @@ trait QueryFindOneAndRemoveOptions extends js.Object {
   var strict: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object QueryFindOneAndRemoveOptions {
+  @scala.inline
+  def apply(
+    maxTimeMS: scala.Int | scala.Double = null,
+    projection: js.Any = null,
+    rawResult: js.UndefOr[scala.Boolean] = js.undefined,
+    select: js.Any = null,
+    sort: js.Any = null,
+    strict: scala.Boolean | java.lang.String = null
+  ): QueryFindOneAndRemoveOptions = {
+    val __obj = js.Dynamic.literal()
+    if (maxTimeMS != null) __obj.updateDynamic("maxTimeMS")(maxTimeMS.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (!js.isUndefined(rawResult)) __obj.updateDynamic("rawResult")(rawResult)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueryFindOneAndRemoveOptions]
+  }
+}
+

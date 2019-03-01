@@ -12,3 +12,13 @@ trait CidrBlock extends js.Object {
   var displayName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CidrBlock {
+  @scala.inline
+  def apply(cidrBlock: java.lang.String = null, displayName: java.lang.String = null): CidrBlock = {
+    val __obj = js.Dynamic.literal()
+    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    __obj.asInstanceOf[CidrBlock]
+  }
+}
+

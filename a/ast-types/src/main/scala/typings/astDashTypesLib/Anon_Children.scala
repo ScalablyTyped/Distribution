@@ -17,3 +17,24 @@ trait Anon_Children extends js.Object {
   var openingElement: astDashTypesLib.genKindsMod.JSXOpeningFragmentKind
 }
 
+object Anon_Children {
+  @scala.inline
+  def apply(
+    closingElement: astDashTypesLib.genKindsMod.JSXClosingFragmentKind,
+    openingElement: astDashTypesLib.genKindsMod.JSXOpeningFragmentKind,
+    children: js.Array[
+      astDashTypesLib.genKindsMod.JSXElementKind | astDashTypesLib.genKindsMod.JSXExpressionContainerKind | astDashTypesLib.genKindsMod.JSXFragmentKind | astDashTypesLib.genKindsMod.JSXTextKind | astDashTypesLib.genKindsMod.LiteralKind
+    ] = null,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_Children = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("closingElement")(closingElement)
+    __obj.updateDynamic("openingElement")(openingElement)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_Children]
+  }
+}
+

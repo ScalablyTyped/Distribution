@@ -11,3 +11,18 @@ trait Reference
   var uri: java.lang.String
 }
 
+object Reference {
+  @scala.inline
+  def apply(
+    rel: java.lang.String,
+    uri: java.lang.String,
+    StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Reference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rel")(rel)
+    __obj.updateDynamic("uri")(uri)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Reference]
+  }
+}
+

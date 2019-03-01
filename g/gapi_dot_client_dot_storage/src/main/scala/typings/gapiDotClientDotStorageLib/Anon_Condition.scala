@@ -41,3 +41,18 @@ trait Anon_Condition extends js.Object {
   var role: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Condition {
+  @scala.inline
+  def apply(
+    condition: js.Any = null,
+    members: js.Array[java.lang.String] = null,
+    role: java.lang.String = null
+  ): Anon_Condition = {
+    val __obj = js.Dynamic.literal()
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (members != null) __obj.updateDynamic("members")(members)
+    if (role != null) __obj.updateDynamic("role")(role)
+    __obj.asInstanceOf[Anon_Condition]
+  }
+}
+

@@ -14,3 +14,12 @@ trait Anon_ForceZip64Format extends js.Object {
   var forceZip64Format: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ForceZip64Format {
+  @scala.inline
+  def apply(forceZip64Format: js.UndefOr[scala.Boolean] = js.undefined): Anon_ForceZip64Format = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(forceZip64Format)) __obj.updateDynamic("forceZip64Format")(forceZip64Format)
+    __obj.asInstanceOf[Anon_ForceZip64Format]
+  }
+}
+

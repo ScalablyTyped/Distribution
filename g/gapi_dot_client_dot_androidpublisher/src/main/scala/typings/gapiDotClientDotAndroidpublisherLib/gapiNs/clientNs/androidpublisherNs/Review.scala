@@ -14,3 +14,18 @@ trait Review extends js.Object {
   var reviewId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Review {
+  @scala.inline
+  def apply(
+    authorName: java.lang.String = null,
+    comments: js.Array[Comment] = null,
+    reviewId: java.lang.String = null
+  ): Review = {
+    val __obj = js.Dynamic.literal()
+    if (authorName != null) __obj.updateDynamic("authorName")(authorName)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (reviewId != null) __obj.updateDynamic("reviewId")(reviewId)
+    __obj.asInstanceOf[Review]
+  }
+}
+

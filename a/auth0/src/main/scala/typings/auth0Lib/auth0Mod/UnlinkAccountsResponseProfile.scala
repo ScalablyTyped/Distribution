@@ -16,3 +16,28 @@ trait UnlinkAccountsResponseProfile extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UnlinkAccountsResponseProfile {
+  @scala.inline
+  def apply(
+    email: java.lang.String = null,
+    email_verified: js.UndefOr[scala.Boolean] = js.undefined,
+    family_name: java.lang.String = null,
+    given_name: java.lang.String = null,
+    name: java.lang.String = null,
+    phone_number: java.lang.String = null,
+    phone_verified: js.UndefOr[scala.Boolean] = js.undefined,
+    username: java.lang.String = null
+  ): UnlinkAccountsResponseProfile = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified)
+    if (family_name != null) __obj.updateDynamic("family_name")(family_name)
+    if (given_name != null) __obj.updateDynamic("given_name")(given_name)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number)
+    if (!js.isUndefined(phone_verified)) __obj.updateDynamic("phone_verified")(phone_verified)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[UnlinkAccountsResponseProfile]
+  }
+}
+

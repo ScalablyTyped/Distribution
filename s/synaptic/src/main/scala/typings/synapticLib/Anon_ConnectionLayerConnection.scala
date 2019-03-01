@@ -12,3 +12,12 @@ trait Anon_ConnectionLayerConnection extends js.Object {
   var LayerConnection: Anon_Uid
 }
 
+object Anon_ConnectionLayerConnection {
+  @scala.inline
+  def apply(LayerConnection: Anon_Uid): Anon_ConnectionLayerConnection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LayerConnection")(LayerConnection)
+    __obj.asInstanceOf[Anon_ConnectionLayerConnection]
+  }
+}
+

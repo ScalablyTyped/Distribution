@@ -301,3 +301,158 @@ trait _Impl extends js.Object {
   def onShow(`this`: semanticDashUiDashDropdownLib.JQuery): semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    action: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.activate | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.select | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.combo | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.nothing | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.hide | (js.ThisFunction3[
+      /* this */ semanticDashUiDashDropdownLib.JQuery, 
+      /* text */ java.lang.String, 
+      /* value */ java.lang.String | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false`, 
+      /* element */ semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ]),
+    allowAdditions: scala.Boolean,
+    allowCategorySelection: scala.Boolean,
+    allowReselection: scala.Boolean,
+    allowTab: scala.Boolean,
+    apiSettings: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | semanticDashUiDashApiLib.SemanticUINs.ApiSettings,
+    className: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.ClassNameSettings,
+    context: java.lang.String | semanticDashUiDashDropdownLib.JQuery,
+    debug: scala.Boolean,
+    delay: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.DelaySettings,
+    direction: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.auto | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.upward | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.downward,
+    duration: scala.Double,
+    error: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.ErrorSettings,
+    fields: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.FieldsSettings,
+    filterRemoteData: scala.Boolean,
+    forceSelection: scala.Boolean,
+    fullTextSearch: scala.Boolean | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.exact,
+    glyphWidth: scala.Double,
+    hideAdditions: scala.Boolean,
+    keepOnScreen: scala.Boolean,
+    keys: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.KeySettings,
+    label: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.LabelSettings,
+    `match`: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.both | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.value | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.text,
+    maxSelections: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Double,
+    message: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.MessageSettings,
+    metadata: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.MetadataSettings,
+    minCharacters: scala.Double,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    on: java.lang.String,
+    onAdd: js.Function4[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      java.lang.String, 
+      semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ],
+    onChange: js.Function4[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      java.lang.String, 
+      semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ],
+    onHide: js.Function1[
+      semanticDashUiDashDropdownLib.JQuery, 
+      semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
+    ],
+    onLabelCreate: js.Function3[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      java.lang.String, 
+      semanticDashUiDashDropdownLib.JQuery
+    ],
+    onLabelRemove: js.Function2[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
+    ],
+    onLabelSelect: js.Function2[
+      semanticDashUiDashDropdownLib.JQuery, 
+      semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ],
+    onNoResults: js.Function2[semanticDashUiDashDropdownLib.JQuery, js.Any, scala.Unit],
+    onRemove: js.Function4[
+      semanticDashUiDashDropdownLib.JQuery, 
+      js.Any, 
+      java.lang.String, 
+      semanticDashUiDashDropdownLib.JQuery, 
+      scala.Unit
+    ],
+    onShow: js.Function1[
+      semanticDashUiDashDropdownLib.JQuery, 
+      semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | scala.Unit
+    ],
+    performance: scala.Boolean,
+    placeholder: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.auto | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.value | semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false`,
+    preserveHTML: scala.Boolean,
+    regExp: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.RegExpSettings,
+    saveRemoteData: scala.Boolean,
+    selectOnKeydown: scala.Boolean,
+    selector: semanticDashUiDashDropdownLib.SemanticUINs.DropdownNs.SelectorSettings,
+    showOnFocus: scala.Boolean,
+    silent: scala.Boolean,
+    sortSelect: scala.Boolean,
+    transition: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibStrings.auto | java.lang.String,
+    useLabels: scala.Boolean,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(`match` = `match`.asInstanceOf[js.Any])
+    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    __obj.updateDynamic("allowAdditions")(allowAdditions)
+    __obj.updateDynamic("allowCategorySelection")(allowCategorySelection)
+    __obj.updateDynamic("allowReselection")(allowReselection)
+    __obj.updateDynamic("allowTab")(allowTab)
+    __obj.updateDynamic("apiSettings")(apiSettings.asInstanceOf[js.Any])
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("filterRemoteData")(filterRemoteData)
+    __obj.updateDynamic("forceSelection")(forceSelection)
+    __obj.updateDynamic("fullTextSearch")(fullTextSearch.asInstanceOf[js.Any])
+    __obj.updateDynamic("glyphWidth")(glyphWidth)
+    __obj.updateDynamic("hideAdditions")(hideAdditions)
+    __obj.updateDynamic("keepOnScreen")(keepOnScreen)
+    __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
+    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    __obj.updateDynamic("maxSelections")(maxSelections.asInstanceOf[js.Any])
+    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("minCharacters")(minCharacters)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("onAdd")(onAdd)
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("onHide")(onHide)
+    __obj.updateDynamic("onLabelCreate")(onLabelCreate)
+    __obj.updateDynamic("onLabelRemove")(onLabelRemove)
+    __obj.updateDynamic("onLabelSelect")(onLabelSelect)
+    __obj.updateDynamic("onNoResults")(onNoResults)
+    __obj.updateDynamic("onRemove")(onRemove)
+    __obj.updateDynamic("onShow")(onShow)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    __obj.updateDynamic("preserveHTML")(preserveHTML)
+    __obj.updateDynamic("regExp")(regExp)
+    __obj.updateDynamic("saveRemoteData")(saveRemoteData)
+    __obj.updateDynamic("selectOnKeydown")(selectOnKeydown)
+    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    __obj.updateDynamic("showOnFocus")(showOnFocus)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("sortSelect")(sortSelect)
+    __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    __obj.updateDynamic("useLabels")(useLabels)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

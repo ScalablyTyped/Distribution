@@ -10,3 +10,13 @@ trait Response[T /* <: js.Object */] extends APIResponseSuccess {
   var data_Response: T
 }
 
+object Response {
+  @scala.inline
+  def apply[T /* <: js.Object */](data: T, meta: APIResponseMeta): Response[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("meta")(meta)
+    __obj.asInstanceOf[Response[T]]
+  }
+}
+

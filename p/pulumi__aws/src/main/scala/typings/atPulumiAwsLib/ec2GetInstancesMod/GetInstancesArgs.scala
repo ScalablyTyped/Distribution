@@ -23,3 +23,18 @@ trait GetInstancesArgs extends js.Object {
   val instanceTags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetInstancesArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    instanceStateNames: js.Array[java.lang.String] = null,
+    instanceTags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetInstancesArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (instanceStateNames != null) __obj.updateDynamic("instanceStateNames")(instanceStateNames)
+    if (instanceTags != null) __obj.updateDynamic("instanceTags")(instanceTags)
+    __obj.asInstanceOf[GetInstancesArgs]
+  }
+}
+

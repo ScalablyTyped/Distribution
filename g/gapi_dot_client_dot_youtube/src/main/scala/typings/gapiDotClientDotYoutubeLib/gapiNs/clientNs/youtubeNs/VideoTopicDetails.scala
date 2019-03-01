@@ -20,3 +20,18 @@ trait VideoTopicDetails extends js.Object {
   var topicIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object VideoTopicDetails {
+  @scala.inline
+  def apply(
+    relevantTopicIds: js.Array[java.lang.String] = null,
+    topicCategories: js.Array[java.lang.String] = null,
+    topicIds: js.Array[java.lang.String] = null
+  ): VideoTopicDetails = {
+    val __obj = js.Dynamic.literal()
+    if (relevantTopicIds != null) __obj.updateDynamic("relevantTopicIds")(relevantTopicIds)
+    if (topicCategories != null) __obj.updateDynamic("topicCategories")(topicCategories)
+    if (topicIds != null) __obj.updateDynamic("topicIds")(topicIds)
+    __obj.asInstanceOf[VideoTopicDetails]
+  }
+}
+

@@ -12,3 +12,13 @@ trait LiveChatPollVotedDetails extends js.Object {
   var pollId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LiveChatPollVotedDetails {
+  @scala.inline
+  def apply(itemId: java.lang.String = null, pollId: java.lang.String = null): LiveChatPollVotedDetails = {
+    val __obj = js.Dynamic.literal()
+    if (itemId != null) __obj.updateDynamic("itemId")(itemId)
+    if (pollId != null) __obj.updateDynamic("pollId")(pollId)
+    __obj.asInstanceOf[LiveChatPollVotedDetails]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_Scope extends js.Object {
   var scope: java.lang.String
 }
 
+object Anon_Scope {
+  @scala.inline
+  def apply(scope: java.lang.String): Anon_Scope = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Anon_Scope]
+  }
+}
+

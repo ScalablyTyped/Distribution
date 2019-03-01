@@ -31,3 +31,24 @@ trait SheetsRangeSetting extends js.Object {
   var startCell: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SheetsRangeSetting {
+  @scala.inline
+  def apply(
+    dataSource: js.Any = null,
+    headerStyles: js.Any = null,
+    primaryKey: java.lang.String = null,
+    query: js.Any = null,
+    showHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    startCell: java.lang.String = null
+  ): SheetsRangeSetting = {
+    val __obj = js.Dynamic.literal()
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (headerStyles != null) __obj.updateDynamic("headerStyles")(headerStyles)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
+    if (startCell != null) __obj.updateDynamic("startCell")(startCell)
+    __obj.asInstanceOf[SheetsRangeSetting]
+  }
+}
+

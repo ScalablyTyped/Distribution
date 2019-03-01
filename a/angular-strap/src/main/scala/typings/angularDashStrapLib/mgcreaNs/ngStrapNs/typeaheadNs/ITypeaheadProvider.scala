@@ -9,3 +9,12 @@ trait ITypeaheadProvider extends js.Object {
   var defaults: ITypeaheadOptions
 }
 
+object ITypeaheadProvider {
+  @scala.inline
+  def apply(defaults: ITypeaheadOptions): ITypeaheadProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaults")(defaults)
+    __obj.asInstanceOf[ITypeaheadProvider]
+  }
+}
+

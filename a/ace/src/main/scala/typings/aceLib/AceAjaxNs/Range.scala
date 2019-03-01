@@ -147,3 +147,76 @@ trait Range extends js.Object {
   def toScreenRange(session: IEditSession): Range
 }
 
+object Range {
+  @scala.inline
+  def apply(
+    clipRows: js.Function2[scala.Double, scala.Double, Range],
+    clone: js.Function0[Range],
+    collapseRows: js.Function0[Range],
+    compare: js.Function2[scala.Double, scala.Double, scala.Double],
+    compareEnd: js.Function2[scala.Double, scala.Double, scala.Double],
+    compareInside: js.Function2[scala.Double, scala.Double, scala.Double],
+    comparePoint: js.Function1[Range, scala.Double],
+    compareRange: js.Function1[Range, scala.Double],
+    compareStart: js.Function2[scala.Double, scala.Double, scala.Double],
+    contains: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    containsRange: js.Function1[Range, scala.Boolean],
+    end: Position,
+    endColumn: scala.Double,
+    endRow: scala.Double,
+    extend: js.Function2[scala.Double, scala.Double, Range],
+    fromPoints: js.Function2[Range, Range, Range],
+    inside: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    insideEnd: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    insideStart: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    intersects: js.Function1[Range, scala.Boolean],
+    isEmpty: js.Function0[scala.Boolean],
+    isEnd: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    isEqual: js.Function1[Range, scala.Unit],
+    isMultiLine: js.Function0[scala.Boolean],
+    isStart: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    setEnd: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setStart: js.Function2[scala.Double, scala.Double, scala.Unit],
+    start: Position,
+    startColumn: scala.Double,
+    startRow: scala.Double,
+    toScreenRange: js.Function1[IEditSession, Range],
+    toString: js.Function0[scala.Unit]
+  ): Range = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clipRows")(clipRows)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("collapseRows")(collapseRows)
+    __obj.updateDynamic("compare")(compare)
+    __obj.updateDynamic("compareEnd")(compareEnd)
+    __obj.updateDynamic("compareInside")(compareInside)
+    __obj.updateDynamic("comparePoint")(comparePoint)
+    __obj.updateDynamic("compareRange")(compareRange)
+    __obj.updateDynamic("compareStart")(compareStart)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("containsRange")(containsRange)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("endColumn")(endColumn)
+    __obj.updateDynamic("endRow")(endRow)
+    __obj.updateDynamic("extend")(extend)
+    __obj.updateDynamic("fromPoints")(fromPoints)
+    __obj.updateDynamic("inside")(inside)
+    __obj.updateDynamic("insideEnd")(insideEnd)
+    __obj.updateDynamic("insideStart")(insideStart)
+    __obj.updateDynamic("intersects")(intersects)
+    __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.updateDynamic("isEnd")(isEnd)
+    __obj.updateDynamic("isEqual")(isEqual)
+    __obj.updateDynamic("isMultiLine")(isMultiLine)
+    __obj.updateDynamic("isStart")(isStart)
+    __obj.updateDynamic("setEnd")(setEnd)
+    __obj.updateDynamic("setStart")(setStart)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("startColumn")(startColumn)
+    __obj.updateDynamic("startRow")(startRow)
+    __obj.updateDynamic("toScreenRange")(toScreenRange)
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[Range]
+  }
+}
+

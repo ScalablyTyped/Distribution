@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RANGE_DELETE extends js.Object {
+trait RANGE_DELETE extends RelayMutationConfig {
   var connectionKeys: js.UndefOr[js.Array[relayDashRuntimeLib.Anon_FiltersKey]] = js.undefined
   var connectionName: js.UndefOr[java.lang.String] = js.undefined
   var deletedIDFieldName: java.lang.String | js.Array[java.lang.String]
@@ -13,5 +13,27 @@ trait RANGE_DELETE extends js.Object {
   var parentName: js.UndefOr[java.lang.String] = js.undefined
   var pathToConnection: js.Array[java.lang.String]
   var `type`: relayDashRuntimeLib.relayDashRuntimeLibStrings.RANGE_DELETE
+}
+
+object RANGE_DELETE {
+  @scala.inline
+  def apply(
+    deletedIDFieldName: java.lang.String | js.Array[java.lang.String],
+    pathToConnection: js.Array[java.lang.String],
+    `type`: relayDashRuntimeLib.relayDashRuntimeLibStrings.RANGE_DELETE,
+    connectionKeys: js.Array[relayDashRuntimeLib.Anon_FiltersKey] = null,
+    connectionName: java.lang.String = null,
+    parentID: java.lang.String = null,
+    parentName: java.lang.String = null
+  ): RANGE_DELETE = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("deletedIDFieldName")(deletedIDFieldName.asInstanceOf[js.Any])
+    __obj.updateDynamic("pathToConnection")(pathToConnection)
+    if (connectionKeys != null) __obj.updateDynamic("connectionKeys")(connectionKeys)
+    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
+    if (parentID != null) __obj.updateDynamic("parentID")(parentID)
+    if (parentName != null) __obj.updateDynamic("parentName")(parentName)
+    __obj.asInstanceOf[RANGE_DELETE]
+  }
 }
 

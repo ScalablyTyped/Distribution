@@ -14,3 +14,24 @@ trait Anon_Credit extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Credit {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    proxy: js.Any = null,
+    tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme = null,
+    token: java.lang.String = null
+  ): Anon_Credit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (tilingScheme != null) __obj.updateDynamic("tilingScheme")(tilingScheme)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[Anon_Credit]
+  }
+}
+

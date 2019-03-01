@@ -23,3 +23,13 @@ trait ConditionalRangeFillLoadOptions extends js.Object {
   var color: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConditionalRangeFillLoadOptions {
+  @scala.inline
+  def apply($all: js.UndefOr[scala.Boolean] = js.undefined, color: js.UndefOr[scala.Boolean] = js.undefined): ConditionalRangeFillLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    __obj.asInstanceOf[ConditionalRangeFillLoadOptions]
+  }
+}
+

@@ -11,3 +11,14 @@ trait ResourceList[T /* <: Resource */] extends js.Object {
   var data: js.Array[T]
 }
 
+object ResourceList {
+  @scala.inline
+  def apply[T /* <: Resource */](_dispatcher: asanaLib.Anon_AsanaBaseUrl, _response: asanaLib.Anon_Data[T], data: js.Array[T]): ResourceList[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_dispatcher")(_dispatcher)
+    __obj.updateDynamic("_response")(_response)
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[ResourceList[T]]
+  }
+}
+

@@ -18,3 +18,22 @@ trait AtomMochaOptions extends js.Object {
   var testSuffixes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AtomMochaOptions {
+  @scala.inline
+  def apply(
+    colors: js.UndefOr[scala.Boolean] = js.undefined,
+    globalAtom: js.UndefOr[scala.Boolean] = js.undefined,
+    htmlTitle: java.lang.String = null,
+    reporter: java.lang.String = null,
+    testSuffixes: js.Array[java.lang.String] = null
+  ): AtomMochaOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
+    if (!js.isUndefined(globalAtom)) __obj.updateDynamic("globalAtom")(globalAtom)
+    if (htmlTitle != null) __obj.updateDynamic("htmlTitle")(htmlTitle)
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
+    if (testSuffixes != null) __obj.updateDynamic("testSuffixes")(testSuffixes)
+    __obj.asInstanceOf[AtomMochaOptions]
+  }
+}
+

@@ -11,3 +11,12 @@ trait TreeMapGroupSelectedEventArgs extends js.Object {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object TreeMapGroupSelectedEventArgs {
+  @scala.inline
+  def apply(originalEvent: js.Any = null): TreeMapGroupSelectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[TreeMapGroupSelectedEventArgs]
+  }
+}
+

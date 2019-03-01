@@ -14,3 +14,18 @@ trait VisualObjectRepetition extends js.Object {
   var selector: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.Selector
 }
 
+object VisualObjectRepetition {
+  @scala.inline
+  def apply(
+    objects: org.scalablytyped.runtime.StringDictionary[DataViewRepetitionObjectDescriptor],
+    selector: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.Selector,
+    containerName: java.lang.String = null
+  ): VisualObjectRepetition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("objects")(objects)
+    __obj.updateDynamic("selector")(selector)
+    if (containerName != null) __obj.updateDynamic("containerName")(containerName)
+    __obj.asInstanceOf[VisualObjectRepetition]
+  }
+}
+

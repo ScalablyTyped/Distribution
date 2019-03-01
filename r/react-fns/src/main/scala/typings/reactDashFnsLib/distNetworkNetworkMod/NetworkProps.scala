@@ -10,3 +10,13 @@ trait NetworkProps extends js.Object {
   var online: scala.Boolean
 }
 
+object NetworkProps {
+  @scala.inline
+  def apply(online: scala.Boolean, offlineAt: stdLib.Date = null): NetworkProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("online")(online)
+    if (offlineAt != null) __obj.updateDynamic("offlineAt")(offlineAt)
+    __obj.asInstanceOf[NetworkProps]
+  }
+}
+

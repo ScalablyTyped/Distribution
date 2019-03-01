@@ -14,3 +14,22 @@ trait Anon_Href extends js.Object {
   var route: vueDashRouterLib.typesRouterMod.Route
 }
 
+object Anon_Href {
+  @scala.inline
+  def apply(
+    href: java.lang.String,
+    location: vueDashRouterLib.typesRouterMod.Location,
+    normalizedTo: vueDashRouterLib.typesRouterMod.Location,
+    resolved: vueDashRouterLib.typesRouterMod.Route,
+    route: vueDashRouterLib.typesRouterMod.Route
+  ): Anon_Href = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("href")(href)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("normalizedTo")(normalizedTo)
+    __obj.updateDynamic("resolved")(resolved)
+    __obj.updateDynamic("route")(route)
+    __obj.asInstanceOf[Anon_Href]
+  }
+}
+

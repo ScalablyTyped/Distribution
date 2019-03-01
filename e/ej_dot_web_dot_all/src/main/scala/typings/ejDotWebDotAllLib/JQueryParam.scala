@@ -12,3 +12,12 @@ trait JQueryParam extends js.Object {
   var cancel: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object JQueryParam {
+  @scala.inline
+  def apply(cancel: js.UndefOr[scala.Boolean] = js.undefined): JQueryParam = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    __obj.asInstanceOf[JQueryParam]
+  }
+}
+

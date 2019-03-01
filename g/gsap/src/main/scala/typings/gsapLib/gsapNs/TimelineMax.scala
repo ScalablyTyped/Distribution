@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("gsap.TimelineMax")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- gsapLib.gsapNs.Timeline because Already inherited */ @JSGlobal("gsap.TimelineMax")
 @js.native
 class TimelineMax () extends TimelineLite {
   def this(vars: js.Object) = this()

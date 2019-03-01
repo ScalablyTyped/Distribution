@@ -7,40 +7,40 @@ import scala.scalajs.js.annotation._
 
 object badgenLibStrings {
   @js.native
-  sealed trait black extends js.Object
+  sealed trait black extends ColorPresets
   
   @js.native
-  sealed trait blue extends js.Object
+  sealed trait blue extends ColorPresets
   
   @js.native
-  sealed trait cyan extends js.Object
+  sealed trait cyan extends ColorPresets
   
   @js.native
   sealed trait flat extends js.Object
   
   @js.native
-  sealed trait gray extends js.Object
+  sealed trait gray extends ColorPresets
   
   @js.native
-  sealed trait green extends js.Object
+  sealed trait green extends ColorPresets
   
   @js.native
-  sealed trait grey extends js.Object
+  sealed trait grey extends ColorPresets
   
   @js.native
-  sealed trait orange extends js.Object
+  sealed trait orange extends ColorPresets
   
   @js.native
-  sealed trait pink extends js.Object
+  sealed trait pink extends ColorPresets
   
   @js.native
-  sealed trait purple extends js.Object
+  sealed trait purple extends ColorPresets
   
   @js.native
-  sealed trait red extends js.Object
+  sealed trait red extends ColorPresets
   
   @js.native
-  sealed trait yellow extends js.Object
+  sealed trait yellow extends ColorPresets
   
   @scala.inline
   def black: black = "black".asInstanceOf[black]

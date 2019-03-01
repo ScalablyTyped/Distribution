@@ -14,3 +14,18 @@ trait SkippedDetail extends js.Object {
   var incompatibleDevice: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SkippedDetail {
+  @scala.inline
+  def apply(
+    incompatibleAppVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    incompatibleArchitecture: js.UndefOr[scala.Boolean] = js.undefined,
+    incompatibleDevice: js.UndefOr[scala.Boolean] = js.undefined
+  ): SkippedDetail = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(incompatibleAppVersion)) __obj.updateDynamic("incompatibleAppVersion")(incompatibleAppVersion)
+    if (!js.isUndefined(incompatibleArchitecture)) __obj.updateDynamic("incompatibleArchitecture")(incompatibleArchitecture)
+    if (!js.isUndefined(incompatibleDevice)) __obj.updateDynamic("incompatibleDevice")(incompatibleDevice)
+    __obj.asInstanceOf[SkippedDetail]
+  }
+}
+

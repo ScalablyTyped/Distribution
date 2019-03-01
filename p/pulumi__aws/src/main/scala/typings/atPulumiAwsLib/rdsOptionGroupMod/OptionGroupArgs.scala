@@ -42,3 +42,30 @@ trait OptionGroupArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object OptionGroupArgs {
+  @scala.inline
+  def apply(
+    engineName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    majorEngineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    optionGroupDescription: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    options: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DbSecurityGroupMembershipsOptionName]
+      ]
+    ] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): OptionGroupArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("engineName")(engineName.asInstanceOf[js.Any])
+    __obj.updateDynamic("majorEngineVersion")(majorEngineVersion.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (optionGroupDescription != null) __obj.updateDynamic("optionGroupDescription")(optionGroupDescription.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OptionGroupArgs]
+  }
+}
+

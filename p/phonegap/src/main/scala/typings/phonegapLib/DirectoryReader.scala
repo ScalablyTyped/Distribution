@@ -12,3 +12,18 @@ trait DirectoryReader extends js.Object {
   ): scala.Unit
 }
 
+object DirectoryReader {
+  @scala.inline
+  def apply(
+    readEntries: js.Function2[
+      js.Function1[/* entries */ FileSystemEntry, scala.Unit], 
+      js.Function1[/* error */ FileError, scala.Unit], 
+      scala.Unit
+    ]
+  ): DirectoryReader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("readEntries")(readEntries)
+    __obj.asInstanceOf[DirectoryReader]
+  }
+}
+

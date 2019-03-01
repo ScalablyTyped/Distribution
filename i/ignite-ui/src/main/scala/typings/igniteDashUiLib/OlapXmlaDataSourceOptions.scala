@@ -70,3 +70,45 @@ trait OlapXmlaDataSourceOptions
   var serverUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OlapXmlaDataSourceOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for OlapXmlaDataSourceOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    catalog: java.lang.String = null,
+    columns: java.lang.String = null,
+    cube: java.lang.String = null,
+    discoverProperties: js.Any = null,
+    enableResultCache: js.UndefOr[scala.Boolean] = js.undefined,
+    executeProperties: js.Any = null,
+    filters: java.lang.String = null,
+    isRemote: js.UndefOr[scala.Boolean] = js.undefined,
+    mdxSettings: OlapXmlaDataSourceOptionsMdxSettings = null,
+    measureGroup: java.lang.String = null,
+    measures: java.lang.String = null,
+    requestOptions: OlapXmlaDataSourceOptionsRequestOptions = null,
+    rows: java.lang.String = null,
+    serverUrl: java.lang.String = null
+  ): OlapXmlaDataSourceOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (catalog != null) __obj.updateDynamic("catalog")(catalog)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (cube != null) __obj.updateDynamic("cube")(cube)
+    if (discoverProperties != null) __obj.updateDynamic("discoverProperties")(discoverProperties)
+    if (!js.isUndefined(enableResultCache)) __obj.updateDynamic("enableResultCache")(enableResultCache)
+    if (executeProperties != null) __obj.updateDynamic("executeProperties")(executeProperties)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(isRemote)) __obj.updateDynamic("isRemote")(isRemote)
+    if (mdxSettings != null) __obj.updateDynamic("mdxSettings")(mdxSettings)
+    if (measureGroup != null) __obj.updateDynamic("measureGroup")(measureGroup)
+    if (measures != null) __obj.updateDynamic("measures")(measures)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl)
+    __obj.asInstanceOf[OlapXmlaDataSourceOptions]
+  }
+}
+

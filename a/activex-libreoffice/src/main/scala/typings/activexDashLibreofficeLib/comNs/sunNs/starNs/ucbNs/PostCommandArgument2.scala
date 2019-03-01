@@ -17,3 +17,20 @@ trait PostCommandArgument2 extends PostCommandArgument {
   var Referer: java.lang.String
 }
 
+object PostCommandArgument2 {
+  @scala.inline
+  def apply(
+    MediaType: java.lang.String,
+    Referer: java.lang.String,
+    Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream
+  ): PostCommandArgument2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MediaType")(MediaType)
+    __obj.updateDynamic("Referer")(Referer)
+    __obj.updateDynamic("Sink")(Sink)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[PostCommandArgument2]
+  }
+}
+

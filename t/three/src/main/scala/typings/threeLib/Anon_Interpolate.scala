@@ -12,3 +12,20 @@ trait Anon_Interpolate extends js.Object {
   def tangentSpline(t: scala.Double, p0: scala.Double, p1: scala.Double, p2: scala.Double, p3: scala.Double): scala.Double
 }
 
+object Anon_Interpolate {
+  @scala.inline
+  def apply(
+    interpolate: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
+    tangentCubicBezier: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
+    tangentQuadraticBezier: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
+    tangentSpline: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
+  ): Anon_Interpolate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("interpolate")(interpolate)
+    __obj.updateDynamic("tangentCubicBezier")(tangentCubicBezier)
+    __obj.updateDynamic("tangentQuadraticBezier")(tangentQuadraticBezier)
+    __obj.updateDynamic("tangentSpline")(tangentSpline)
+    __obj.asInstanceOf[Anon_Interpolate]
+  }
+}
+

@@ -39,3 +39,28 @@ trait ListUpdateResponse extends js.Object {
   var threatType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListUpdateResponse {
+  @scala.inline
+  def apply(
+    additions: js.Array[ThreatEntrySet] = null,
+    checksum: Checksum = null,
+    newClientState: java.lang.String = null,
+    platformType: java.lang.String = null,
+    removals: js.Array[ThreatEntrySet] = null,
+    responseType: java.lang.String = null,
+    threatEntryType: java.lang.String = null,
+    threatType: java.lang.String = null
+  ): ListUpdateResponse = {
+    val __obj = js.Dynamic.literal()
+    if (additions != null) __obj.updateDynamic("additions")(additions)
+    if (checksum != null) __obj.updateDynamic("checksum")(checksum)
+    if (newClientState != null) __obj.updateDynamic("newClientState")(newClientState)
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
+    if (removals != null) __obj.updateDynamic("removals")(removals)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType)
+    if (threatType != null) __obj.updateDynamic("threatType")(threatType)
+    __obj.asInstanceOf[ListUpdateResponse]
+  }
+}
+

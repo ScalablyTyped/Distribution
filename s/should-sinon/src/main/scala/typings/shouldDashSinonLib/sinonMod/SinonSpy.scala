@@ -9,3 +9,12 @@ trait SinonSpy extends js.Object {
   var should: ShouldSinonAssertion
 }
 
+object SinonSpy {
+  @scala.inline
+  def apply(should: ShouldSinonAssertion): SinonSpy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("should")(should)
+    __obj.asInstanceOf[SinonSpy]
+  }
+}
+

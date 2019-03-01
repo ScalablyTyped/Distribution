@@ -18,3 +18,13 @@ trait Anon_MainPageSuffix extends js.Object {
   var notFoundPage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_MainPageSuffix {
+  @scala.inline
+  def apply(mainPageSuffix: java.lang.String = null, notFoundPage: java.lang.String = null): Anon_MainPageSuffix = {
+    val __obj = js.Dynamic.literal()
+    if (mainPageSuffix != null) __obj.updateDynamic("mainPageSuffix")(mainPageSuffix)
+    if (notFoundPage != null) __obj.updateDynamic("notFoundPage")(notFoundPage)
+    __obj.asInstanceOf[Anon_MainPageSuffix]
+  }
+}
+

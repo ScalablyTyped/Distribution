@@ -12,3 +12,16 @@ trait ScanContext extends js.Object {
   var trailingContextLineCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScanContext {
+  @scala.inline
+  def apply(
+    leadingContextLineCount: scala.Int | scala.Double = null,
+    trailingContextLineCount: scala.Int | scala.Double = null
+  ): ScanContext = {
+    val __obj = js.Dynamic.literal()
+    if (leadingContextLineCount != null) __obj.updateDynamic("leadingContextLineCount")(leadingContextLineCount.asInstanceOf[js.Any])
+    if (trailingContextLineCount != null) __obj.updateDynamic("trailingContextLineCount")(trailingContextLineCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScanContext]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_Count extends js.Object {
   var cursor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Count {
+  @scala.inline
+  def apply(count: scala.Double, cursor: java.lang.String = null): Anon_Count = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    __obj.asInstanceOf[Anon_Count]
+  }
+}
+

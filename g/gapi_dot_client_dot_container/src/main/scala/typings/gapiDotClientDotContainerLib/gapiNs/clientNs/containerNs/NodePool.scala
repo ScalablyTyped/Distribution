@@ -43,3 +43,32 @@ trait NodePool extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodePool {
+  @scala.inline
+  def apply(
+    autoscaling: NodePoolAutoscaling = null,
+    config: NodeConfig = null,
+    initialNodeCount: scala.Int | scala.Double = null,
+    instanceGroupUrls: js.Array[java.lang.String] = null,
+    management: NodeManagement = null,
+    name: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    status: java.lang.String = null,
+    statusMessage: java.lang.String = null,
+    version: java.lang.String = null
+  ): NodePool = {
+    val __obj = js.Dynamic.literal()
+    if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (initialNodeCount != null) __obj.updateDynamic("initialNodeCount")(initialNodeCount.asInstanceOf[js.Any])
+    if (instanceGroupUrls != null) __obj.updateDynamic("instanceGroupUrls")(instanceGroupUrls)
+    if (management != null) __obj.updateDynamic("management")(management)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[NodePool]
+  }
+}
+

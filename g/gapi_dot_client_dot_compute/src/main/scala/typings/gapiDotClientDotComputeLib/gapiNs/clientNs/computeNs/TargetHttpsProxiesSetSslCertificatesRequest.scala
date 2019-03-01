@@ -10,3 +10,12 @@ trait TargetHttpsProxiesSetSslCertificatesRequest extends js.Object {
   var sslCertificates: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TargetHttpsProxiesSetSslCertificatesRequest {
+  @scala.inline
+  def apply(sslCertificates: js.Array[java.lang.String] = null): TargetHttpsProxiesSetSslCertificatesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (sslCertificates != null) __obj.updateDynamic("sslCertificates")(sslCertificates)
+    __obj.asInstanceOf[TargetHttpsProxiesSetSslCertificatesRequest]
+  }
+}
+

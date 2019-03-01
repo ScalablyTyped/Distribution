@@ -11,3 +11,16 @@ trait ObservableLike[T] extends js.Object {
   var subscribe: js.UndefOr[Subscriber[T]] = js.undefined
 }
 
+object ObservableLike {
+  @scala.inline
+  def apply[T](
+    observable: js.Function0[zenDashObservableLib.zenDashObservableMod.Observable[T] | ObservableLike[T]],
+    subscribe: Subscriber[T] = null
+  ): ObservableLike[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("observable")(observable)
+    if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
+    __obj.asInstanceOf[ObservableLike[T]]
+  }
+}
+

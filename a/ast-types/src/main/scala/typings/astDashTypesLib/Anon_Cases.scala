@@ -13,3 +13,22 @@ trait Anon_Cases extends js.Object {
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
 }
 
+object Anon_Cases {
+  @scala.inline
+  def apply(
+    cases: js.Array[astDashTypesLib.genKindsMod.SwitchCaseKind],
+    discriminant: astDashTypesLib.genKindsMod.ExpressionKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    lexical: js.UndefOr[scala.Boolean] = js.undefined,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_Cases = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cases")(cases)
+    __obj.updateDynamic("discriminant")(discriminant)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (!js.isUndefined(lexical)) __obj.updateDynamic("lexical")(lexical)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_Cases]
+  }
+}
+

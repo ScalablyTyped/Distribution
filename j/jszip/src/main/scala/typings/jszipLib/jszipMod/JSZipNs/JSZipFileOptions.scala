@@ -34,3 +34,32 @@ trait JSZipFileOptions extends js.Object {
   var unixPermissions: js.UndefOr[scala.Double | java.lang.String | scala.Null] = js.undefined
 }
 
+object JSZipFileOptions {
+  @scala.inline
+  def apply(
+    base64: js.UndefOr[scala.Boolean] = js.undefined,
+    binary: js.UndefOr[scala.Boolean] = js.undefined,
+    comment: java.lang.String = null,
+    compression: java.lang.String = null,
+    createFolders: js.UndefOr[scala.Boolean] = js.undefined,
+    date: stdLib.Date = null,
+    dir: js.UndefOr[scala.Boolean] = js.undefined,
+    dosPermissions: scala.Int | scala.Double = null,
+    optimizedBinaryString: js.UndefOr[scala.Boolean] = js.undefined,
+    unixPermissions: scala.Double | java.lang.String = null
+  ): JSZipFileOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(base64)) __obj.updateDynamic("base64")(base64)
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (compression != null) __obj.updateDynamic("compression")(compression)
+    if (!js.isUndefined(createFolders)) __obj.updateDynamic("createFolders")(createFolders)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (!js.isUndefined(dir)) __obj.updateDynamic("dir")(dir)
+    if (dosPermissions != null) __obj.updateDynamic("dosPermissions")(dosPermissions.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizedBinaryString)) __obj.updateDynamic("optimizedBinaryString")(optimizedBinaryString)
+    if (unixPermissions != null) __obj.updateDynamic("unixPermissions")(unixPermissions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSZipFileOptions]
+  }
+}
+

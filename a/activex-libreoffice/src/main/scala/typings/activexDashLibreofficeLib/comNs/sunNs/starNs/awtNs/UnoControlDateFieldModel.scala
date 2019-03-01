@@ -110,3 +110,170 @@ trait UnoControlDateFieldModel extends UnoControlModel {
   var WritingMode: scala.Double
 }
 
+object UnoControlDateFieldModel {
+  @scala.inline
+  def apply(
+    BackgroundColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Border: scala.Double,
+    BorderColor: scala.Double,
+    Date: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    DateFormat: scala.Double,
+    DateMax: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    DateMin: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    DateShowCentury: scala.Boolean,
+    DefaultControl: java.lang.String,
+    Dropdown: scala.Boolean,
+    Enabled: scala.Boolean,
+    FontDescriptor: FontDescriptor,
+    FontEmphasisMark: scala.Double,
+    FontRelief: scala.Double,
+    Height: scala.Double,
+    HelpText: java.lang.String,
+    HelpURL: java.lang.String,
+    HideInactiveSelection: scala.Boolean,
+    MouseWheelBehavior: scala.Double,
+    Name: java.lang.String,
+    PositionX: java.lang.String,
+    PositionY: java.lang.String,
+    Printable: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    ReadOnly: scala.Boolean,
+    Repeat: scala.Boolean,
+    RepeatDelay: scala.Double,
+    ServiceName: java.lang.String,
+    Spin: scala.Boolean,
+    Step: scala.Double,
+    StrictFormat: scala.Boolean,
+    TabIndex: scala.Double,
+    Tabstop: scala.Boolean,
+    Tag: java.lang.String,
+    Text: java.lang.String,
+    TextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    TextLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    VerticalAlign: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.VerticalAlignment,
+    Width: scala.Double,
+    WritingMode: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertiesChangeListener: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    dispose: js.Function0[scala.Unit],
+    firePropertiesChangeEvent: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getServiceName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    read: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectInputStream, scala.Unit],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertiesChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ],
+    write: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectOutputStream, scala.Unit]
+  ): UnoControlDateFieldModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BackgroundColor")(BackgroundColor)
+    __obj.updateDynamic("Border")(Border)
+    __obj.updateDynamic("BorderColor")(BorderColor)
+    __obj.updateDynamic("Date")(Date)
+    __obj.updateDynamic("DateFormat")(DateFormat)
+    __obj.updateDynamic("DateMax")(DateMax)
+    __obj.updateDynamic("DateMin")(DateMin)
+    __obj.updateDynamic("DateShowCentury")(DateShowCentury)
+    __obj.updateDynamic("DefaultControl")(DefaultControl)
+    __obj.updateDynamic("Dropdown")(Dropdown)
+    __obj.updateDynamic("Enabled")(Enabled)
+    __obj.updateDynamic("FontDescriptor")(FontDescriptor)
+    __obj.updateDynamic("FontEmphasisMark")(FontEmphasisMark)
+    __obj.updateDynamic("FontRelief")(FontRelief)
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("HelpText")(HelpText)
+    __obj.updateDynamic("HelpURL")(HelpURL)
+    __obj.updateDynamic("HideInactiveSelection")(HideInactiveSelection)
+    __obj.updateDynamic("MouseWheelBehavior")(MouseWheelBehavior)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("PositionX")(PositionX)
+    __obj.updateDynamic("PositionY")(PositionY)
+    __obj.updateDynamic("Printable")(Printable)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("ReadOnly")(ReadOnly)
+    __obj.updateDynamic("Repeat")(Repeat)
+    __obj.updateDynamic("RepeatDelay")(RepeatDelay)
+    __obj.updateDynamic("ServiceName")(ServiceName)
+    __obj.updateDynamic("Spin")(Spin)
+    __obj.updateDynamic("Step")(Step)
+    __obj.updateDynamic("StrictFormat")(StrictFormat)
+    __obj.updateDynamic("TabIndex")(TabIndex)
+    __obj.updateDynamic("Tabstop")(Tabstop)
+    __obj.updateDynamic("Tag")(Tag)
+    __obj.updateDynamic("Text")(Text)
+    __obj.updateDynamic("TextColor")(TextColor)
+    __obj.updateDynamic("TextLineColor")(TextLineColor)
+    __obj.updateDynamic("VerticalAlign")(VerticalAlign)
+    __obj.updateDynamic("Width")(Width)
+    __obj.updateDynamic("WritingMode")(WritingMode)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("createClone")(createClone)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
+    __obj.updateDynamic("getServiceName")(getServiceName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[UnoControlDateFieldModel]
+  }
+}
+

@@ -10,3 +10,13 @@ trait KeyMapOptions extends js.Object {
   var pc: js.UndefOr[KeyMapPcOptions] = js.undefined
 }
 
+object KeyMapOptions {
+  @scala.inline
+  def apply(mac: KeyMapMacOptions = null, pc: KeyMapPcOptions = null): KeyMapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (mac != null) __obj.updateDynamic("mac")(mac)
+    if (pc != null) __obj.updateDynamic("pc")(pc)
+    __obj.asInstanceOf[KeyMapOptions]
+  }
+}
+

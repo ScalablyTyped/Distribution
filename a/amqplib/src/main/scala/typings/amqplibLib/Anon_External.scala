@@ -10,3 +10,16 @@ trait Anon_External extends js.Object {
   def plain(username: java.lang.String, password: java.lang.String): Anon_MechanismPassword
 }
 
+object Anon_External {
+  @scala.inline
+  def apply(
+    external: js.Function0[Anon_Mechanism],
+    plain: js.Function2[java.lang.String, java.lang.String, Anon_MechanismPassword]
+  ): Anon_External = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("external")(external)
+    __obj.updateDynamic("plain")(plain)
+    __obj.asInstanceOf[Anon_External]
+  }
+}
+

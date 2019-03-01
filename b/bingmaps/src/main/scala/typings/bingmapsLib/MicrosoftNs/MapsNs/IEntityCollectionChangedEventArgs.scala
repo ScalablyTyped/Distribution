@@ -12,3 +12,13 @@ trait IEntityCollectionChangedEventArgs extends js.Object {
   var data: IPrimitive
 }
 
+object IEntityCollectionChangedEventArgs {
+  @scala.inline
+  def apply(collection: EntityCollection, data: IPrimitive): IEntityCollectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collection")(collection)
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[IEntityCollectionChangedEventArgs]
+  }
+}
+

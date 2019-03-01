@@ -39,3 +39,26 @@ trait MusicLibraryOptionsType extends js.Object {
   var success: js.UndefOr[js.Function1[/* param0 */ MusicLibraryResponseType, _]] = js.undefined
 }
 
+object MusicLibraryOptionsType {
+  @scala.inline
+  def apply(
+    allowMultipleSelections: js.UndefOr[scala.Boolean] = js.undefined,
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    autohide: js.UndefOr[scala.Boolean] = js.undefined,
+    cancel: js.Function1[/* param0 */ FailureResponse, _] = null,
+    error: js.Function1[/* param0 */ FailureResponse, _] = null,
+    mediaTypes: scala.Double | js.Array[scala.Double] = null,
+    success: js.Function1[/* param0 */ MusicLibraryResponseType, _] = null
+  ): MusicLibraryOptionsType = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMultipleSelections)) __obj.updateDynamic("allowMultipleSelections")(allowMultipleSelections)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (mediaTypes != null) __obj.updateDynamic("mediaTypes")(mediaTypes.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[MusicLibraryOptionsType]
+  }
+}
+

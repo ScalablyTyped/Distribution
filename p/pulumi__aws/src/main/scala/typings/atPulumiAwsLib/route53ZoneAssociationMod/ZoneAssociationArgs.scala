@@ -20,3 +20,18 @@ trait ZoneAssociationArgs extends js.Object {
   val zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object ZoneAssociationArgs {
+  @scala.inline
+  def apply(
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    vpcRegion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ZoneAssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    if (vpcRegion != null) __obj.updateDynamic("vpcRegion")(vpcRegion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ZoneAssociationArgs]
+  }
+}
+

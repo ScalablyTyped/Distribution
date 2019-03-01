@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CaseClause extends Node {
+trait CaseClause
+  extends Node
+     with CaseOrDefaultClause {
   var expression: Expression = js.native
   @JSName("parent")
   var parent_CaseClause: CaseBlock = js.native

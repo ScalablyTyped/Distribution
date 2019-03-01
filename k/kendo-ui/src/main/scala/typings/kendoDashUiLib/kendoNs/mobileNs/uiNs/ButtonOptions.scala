@@ -14,3 +14,24 @@ trait ButtonOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ButtonOptions {
+  @scala.inline
+  def apply(
+    badge: java.lang.String = null,
+    click: js.Function1[/* e */ ButtonClickEvent, scala.Unit] = null,
+    clickOn: java.lang.String = null,
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    name: java.lang.String = null
+  ): ButtonOptions = {
+    val __obj = js.Dynamic.literal()
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (clickOn != null) __obj.updateDynamic("clickOn")(clickOn)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ButtonOptions]
+  }
+}
+

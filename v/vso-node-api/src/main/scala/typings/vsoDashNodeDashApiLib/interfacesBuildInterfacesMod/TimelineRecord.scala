@@ -94,3 +94,57 @@ trait TimelineRecord extends js.Object {
   var workerName: java.lang.String
 }
 
+object TimelineRecord {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    changeId: scala.Double,
+    currentOperation: java.lang.String,
+    details: TimelineReference,
+    errorCount: scala.Double,
+    finishTime: stdLib.Date,
+    id: java.lang.String,
+    issues: js.Array[Issue],
+    lastModified: stdLib.Date,
+    log: BuildLogReference,
+    name: java.lang.String,
+    order: scala.Double,
+    parentId: java.lang.String,
+    percentComplete: scala.Double,
+    result: TaskResult,
+    resultCode: java.lang.String,
+    startTime: stdLib.Date,
+    state: TimelineRecordState,
+    task: TaskReference,
+    `type`: java.lang.String,
+    url: java.lang.String,
+    warningCount: scala.Double,
+    workerName: java.lang.String
+  ): TimelineRecord = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("changeId")(changeId)
+    __obj.updateDynamic("currentOperation")(currentOperation)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("errorCount")(errorCount)
+    __obj.updateDynamic("finishTime")(finishTime)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("issues")(issues)
+    __obj.updateDynamic("lastModified")(lastModified)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("parentId")(parentId)
+    __obj.updateDynamic("percentComplete")(percentComplete)
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("resultCode")(resultCode)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("task")(task)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("warningCount")(warningCount)
+    __obj.updateDynamic("workerName")(workerName)
+    __obj.asInstanceOf[TimelineRecord]
+  }
+}
+

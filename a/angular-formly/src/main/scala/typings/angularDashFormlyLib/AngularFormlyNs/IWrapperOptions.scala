@@ -21,3 +21,32 @@ trait IWrapperOptions extends js.Object {
   var validateOptions: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
 }
 
+object IWrapperOptions {
+  @scala.inline
+  def apply(
+    apiCheck: org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.Global.Function] = null,
+    apiCheckFunction: java.lang.String = null,
+    apiCheckInstance: js.Any = null,
+    apiCheckOptions: js.Object = null,
+    name: java.lang.String = null,
+    overwriteOk: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null,
+    types: js.Array[java.lang.String] = null,
+    validateOptions: angularLib.angularMod.Global.Function = null
+  ): IWrapperOptions = {
+    val __obj = js.Dynamic.literal()
+    if (apiCheck != null) __obj.updateDynamic("apiCheck")(apiCheck)
+    if (apiCheckFunction != null) __obj.updateDynamic("apiCheckFunction")(apiCheckFunction)
+    if (apiCheckInstance != null) __obj.updateDynamic("apiCheckInstance")(apiCheckInstance)
+    if (apiCheckOptions != null) __obj.updateDynamic("apiCheckOptions")(apiCheckOptions)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(overwriteOk)) __obj.updateDynamic("overwriteOk")(overwriteOk)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (types != null) __obj.updateDynamic("types")(types)
+    if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions)
+    __obj.asInstanceOf[IWrapperOptions]
+  }
+}
+

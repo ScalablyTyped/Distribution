@@ -16,3 +16,13 @@ trait ColumnChooserOpenedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColumnChooserOpenedEventUIParam {
+  @scala.inline
+  def apply(columnChooserElement: java.lang.String = null, owner: js.Any = null): ColumnChooserOpenedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnChooserElement != null) __obj.updateDynamic("columnChooserElement")(columnChooserElement)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ColumnChooserOpenedEventUIParam]
+  }
+}
+

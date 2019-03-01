@@ -145,3 +145,52 @@ trait AriaModalProps extends js.Object {
   def onExit(): js.Any
 }
 
+object AriaModalProps {
+  @scala.inline
+  def apply(
+    onExit: js.Function0[js.Any],
+    alert: js.UndefOr[scala.Boolean] = js.undefined,
+    applicationNode: stdLib.Node | reactLib.Element = null,
+    dialogClass: java.lang.String = null,
+    dialogId: java.lang.String = null,
+    dialogStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    escapeExits: js.UndefOr[scala.Boolean] = js.undefined,
+    focusDialog: js.UndefOr[scala.Boolean] = js.undefined,
+    getApplicationNode: js.Function0[stdLib.Node | reactLib.Element] = null,
+    includeDefaultStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    initialFocus: java.lang.String = null,
+    mounted: js.UndefOr[scala.Boolean] = js.undefined,
+    onEnter: js.Function0[_] = null,
+    titleId: java.lang.String = null,
+    titleText: java.lang.String = null,
+    underlayClass: java.lang.String = null,
+    underlayClickExits: js.UndefOr[scala.Boolean] = js.undefined,
+    underlayColor: java.lang.String = null,
+    underlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    verticallyCenter: js.UndefOr[scala.Boolean] = js.undefined
+  ): AriaModalProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onExit")(onExit)
+    if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert)
+    if (applicationNode != null) __obj.updateDynamic("applicationNode")(applicationNode.asInstanceOf[js.Any])
+    if (dialogClass != null) __obj.updateDynamic("dialogClass")(dialogClass)
+    if (dialogId != null) __obj.updateDynamic("dialogId")(dialogId)
+    if (dialogStyle != null) __obj.updateDynamic("dialogStyle")(dialogStyle)
+    if (!js.isUndefined(escapeExits)) __obj.updateDynamic("escapeExits")(escapeExits)
+    if (!js.isUndefined(focusDialog)) __obj.updateDynamic("focusDialog")(focusDialog)
+    if (getApplicationNode != null) __obj.updateDynamic("getApplicationNode")(getApplicationNode)
+    if (!js.isUndefined(includeDefaultStyles)) __obj.updateDynamic("includeDefaultStyles")(includeDefaultStyles)
+    if (initialFocus != null) __obj.updateDynamic("initialFocus")(initialFocus)
+    if (!js.isUndefined(mounted)) __obj.updateDynamic("mounted")(mounted)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (titleId != null) __obj.updateDynamic("titleId")(titleId)
+    if (titleText != null) __obj.updateDynamic("titleText")(titleText)
+    if (underlayClass != null) __obj.updateDynamic("underlayClass")(underlayClass)
+    if (!js.isUndefined(underlayClickExits)) __obj.updateDynamic("underlayClickExits")(underlayClickExits)
+    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor)
+    if (underlayStyle != null) __obj.updateDynamic("underlayStyle")(underlayStyle)
+    if (!js.isUndefined(verticallyCenter)) __obj.updateDynamic("verticallyCenter")(verticallyCenter)
+    __obj.asInstanceOf[AriaModalProps]
+  }
+}
+

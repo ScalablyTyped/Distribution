@@ -64,3 +64,40 @@ trait IEvent extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IEvent {
+  @scala.inline
+  def apply(
+    startsAt: stdLib.Date,
+    title: java.lang.String,
+    actions: js.Array[IEventAction] = null,
+    allDay: js.UndefOr[scala.Boolean] = js.undefined,
+    color: IEventColor = null,
+    cssClass: java.lang.String = null,
+    deletable: js.UndefOr[scala.Boolean] = js.undefined,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    endsAt: stdLib.Date = null,
+    incrementsBadgeTotal: js.UndefOr[scala.Boolean] = js.undefined,
+    recursOn: java.lang.String = null,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null
+  ): IEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("startsAt")(startsAt)
+    __obj.updateDynamic("title")(title)
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (!js.isUndefined(allDay)) __obj.updateDynamic("allDay")(allDay)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (!js.isUndefined(deletable)) __obj.updateDynamic("deletable")(deletable)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (endsAt != null) __obj.updateDynamic("endsAt")(endsAt)
+    if (!js.isUndefined(incrementsBadgeTotal)) __obj.updateDynamic("incrementsBadgeTotal")(incrementsBadgeTotal)
+    if (recursOn != null) __obj.updateDynamic("recursOn")(recursOn)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IEvent]
+  }
+}
+

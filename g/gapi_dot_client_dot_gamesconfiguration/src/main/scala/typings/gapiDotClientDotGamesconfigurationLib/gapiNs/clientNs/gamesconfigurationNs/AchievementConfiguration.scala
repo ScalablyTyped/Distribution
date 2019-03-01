@@ -35,3 +35,28 @@ trait AchievementConfiguration extends js.Object {
   var token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AchievementConfiguration {
+  @scala.inline
+  def apply(
+    achievementType: java.lang.String = null,
+    draft: AchievementConfigurationDetail = null,
+    id: java.lang.String = null,
+    initialState: java.lang.String = null,
+    kind: java.lang.String = null,
+    published: AchievementConfigurationDetail = null,
+    stepsToUnlock: scala.Int | scala.Double = null,
+    token: java.lang.String = null
+  ): AchievementConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (achievementType != null) __obj.updateDynamic("achievementType")(achievementType)
+    if (draft != null) __obj.updateDynamic("draft")(draft)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (published != null) __obj.updateDynamic("published")(published)
+    if (stepsToUnlock != null) __obj.updateDynamic("stepsToUnlock")(stepsToUnlock.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[AchievementConfiguration]
+  }
+}
+

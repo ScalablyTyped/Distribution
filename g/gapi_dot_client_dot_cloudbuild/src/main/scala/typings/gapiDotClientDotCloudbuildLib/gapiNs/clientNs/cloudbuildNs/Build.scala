@@ -106,3 +106,52 @@ trait Build extends js.Object {
   var timeout: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Build {
+  @scala.inline
+  def apply(
+    buildTriggerId: java.lang.String = null,
+    createTime: java.lang.String = null,
+    finishTime: java.lang.String = null,
+    id: java.lang.String = null,
+    images: js.Array[java.lang.String] = null,
+    logUrl: java.lang.String = null,
+    logsBucket: java.lang.String = null,
+    options: BuildOptions = null,
+    projectId: java.lang.String = null,
+    results: Results = null,
+    secrets: js.Array[Secret] = null,
+    source: Source = null,
+    sourceProvenance: SourceProvenance = null,
+    startTime: java.lang.String = null,
+    status: java.lang.String = null,
+    statusDetail: java.lang.String = null,
+    steps: js.Array[BuildStep] = null,
+    substitutions: stdLib.Record[java.lang.String, java.lang.String] = null,
+    tags: js.Array[java.lang.String] = null,
+    timeout: java.lang.String = null
+  ): Build = {
+    val __obj = js.Dynamic.literal()
+    if (buildTriggerId != null) __obj.updateDynamic("buildTriggerId")(buildTriggerId)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (finishTime != null) __obj.updateDynamic("finishTime")(finishTime)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (images != null) __obj.updateDynamic("images")(images)
+    if (logUrl != null) __obj.updateDynamic("logUrl")(logUrl)
+    if (logsBucket != null) __obj.updateDynamic("logsBucket")(logsBucket)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (results != null) __obj.updateDynamic("results")(results)
+    if (secrets != null) __obj.updateDynamic("secrets")(secrets)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (sourceProvenance != null) __obj.updateDynamic("sourceProvenance")(sourceProvenance)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusDetail != null) __obj.updateDynamic("statusDetail")(statusDetail)
+    if (steps != null) __obj.updateDynamic("steps")(steps)
+    if (substitutions != null) __obj.updateDynamic("substitutions")(substitutions)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[Build]
+  }
+}
+

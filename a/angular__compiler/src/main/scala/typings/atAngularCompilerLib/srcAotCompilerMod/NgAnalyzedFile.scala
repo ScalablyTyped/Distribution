@@ -14,3 +14,24 @@ trait NgAnalyzedFile extends js.Object {
   var pipes: js.Array[atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol]
 }
 
+object NgAnalyzedFile {
+  @scala.inline
+  def apply(
+    directives: js.Array[atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol],
+    exportsNonSourceFiles: scala.Boolean,
+    fileName: java.lang.String,
+    injectables: js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileInjectableMetadata],
+    ngModules: js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileNgModuleMetadata],
+    pipes: js.Array[atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol]
+  ): NgAnalyzedFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("directives")(directives)
+    __obj.updateDynamic("exportsNonSourceFiles")(exportsNonSourceFiles)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("injectables")(injectables)
+    __obj.updateDynamic("ngModules")(ngModules)
+    __obj.updateDynamic("pipes")(pipes)
+    __obj.asInstanceOf[NgAnalyzedFile]
+  }
+}
+

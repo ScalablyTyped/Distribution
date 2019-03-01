@@ -32,3 +32,28 @@ trait XPrimitive2D
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D
 }
 
+object XPrimitive2D {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDecomposition: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashInteropLib.SafeArray[XPrimitive2D]
+    ],
+    getRange: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealRectangle2D
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPrimitive2D = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDecomposition")(getDecomposition)
+    __obj.updateDynamic("getRange")(getRange)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XPrimitive2D]
+  }
+}
+

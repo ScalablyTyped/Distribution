@@ -111,3 +111,57 @@ trait XItemList extends js.Object {
   def setItemTextAndImage(Position: scala.Double, ItemText: java.lang.String, ItemImageURL: java.lang.String): scala.Unit
 }
 
+object XItemList {
+  @scala.inline
+  def apply(
+    AllItems: activexDashInteropLib.SafeArray[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
+    ],
+    ItemCount: scala.Double,
+    addItemListListener: js.Function1[XItemListListener, scala.Unit],
+    getAllItems: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
+      ]
+    ],
+    getItemData: js.Function1[scala.Double, js.Any],
+    getItemImage: js.Function1[scala.Double, java.lang.String],
+    getItemText: js.Function1[scala.Double, java.lang.String],
+    getItemTextAndImage: js.Function1[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
+    ],
+    insertItem: js.Function3[scala.Double, java.lang.String, java.lang.String, scala.Unit],
+    insertItemImage: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    insertItemText: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    removeAllItems: js.Function0[scala.Unit],
+    removeItem: js.Function1[scala.Double, scala.Unit],
+    removeItemListListener: js.Function1[XItemListListener, scala.Unit],
+    setItemData: js.Function2[scala.Double, js.Any, scala.Unit],
+    setItemImage: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setItemText: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setItemTextAndImage: js.Function3[scala.Double, java.lang.String, java.lang.String, scala.Unit]
+  ): XItemList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AllItems")(AllItems)
+    __obj.updateDynamic("ItemCount")(ItemCount)
+    __obj.updateDynamic("addItemListListener")(addItemListListener)
+    __obj.updateDynamic("getAllItems")(getAllItems)
+    __obj.updateDynamic("getItemData")(getItemData)
+    __obj.updateDynamic("getItemImage")(getItemImage)
+    __obj.updateDynamic("getItemText")(getItemText)
+    __obj.updateDynamic("getItemTextAndImage")(getItemTextAndImage)
+    __obj.updateDynamic("insertItem")(insertItem)
+    __obj.updateDynamic("insertItemImage")(insertItemImage)
+    __obj.updateDynamic("insertItemText")(insertItemText)
+    __obj.updateDynamic("removeAllItems")(removeAllItems)
+    __obj.updateDynamic("removeItem")(removeItem)
+    __obj.updateDynamic("removeItemListListener")(removeItemListListener)
+    __obj.updateDynamic("setItemData")(setItemData)
+    __obj.updateDynamic("setItemImage")(setItemImage)
+    __obj.updateDynamic("setItemText")(setItemText)
+    __obj.updateDynamic("setItemTextAndImage")(setItemTextAndImage)
+    __obj.asInstanceOf[XItemList]
+  }
+}
+

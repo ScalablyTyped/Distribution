@@ -12,3 +12,12 @@ trait ReleaseObjectGroupParameterType extends js.Object {
   var objectGroup: java.lang.String
 }
 
+object ReleaseObjectGroupParameterType {
+  @scala.inline
+  def apply(objectGroup: java.lang.String): ReleaseObjectGroupParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("objectGroup")(objectGroup)
+    __obj.asInstanceOf[ReleaseObjectGroupParameterType]
+  }
+}
+

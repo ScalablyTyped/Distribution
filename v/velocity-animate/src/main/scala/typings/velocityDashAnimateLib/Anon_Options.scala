@@ -10,3 +10,16 @@ trait Anon_Options extends js.Object {
   var properties: velocityDashAnimateLib.jqueryNs.velocityNs.Properties
 }
 
+object Anon_Options {
+  @scala.inline
+  def apply(
+    options: velocityDashAnimateLib.jqueryNs.velocityNs.Options,
+    properties: velocityDashAnimateLib.jqueryNs.velocityNs.Properties
+  ): Anon_Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Anon_Options]
+  }
+}
+

@@ -32,3 +32,30 @@ trait DisplayMode extends js.Object {
   var widthInNativePixels: scala.Double
 }
 
+object DisplayMode {
+  @scala.inline
+  def apply(
+    deviceScaleFactor: scala.Double,
+    height: scala.Double,
+    heightInNativePixels: scala.Double,
+    isNative: scala.Boolean,
+    isSelected: scala.Boolean,
+    refreshRate: scala.Double,
+    uiScale: scala.Double,
+    width: scala.Double,
+    widthInNativePixels: scala.Double
+  ): DisplayMode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("heightInNativePixels")(heightInNativePixels)
+    __obj.updateDynamic("isNative")(isNative)
+    __obj.updateDynamic("isSelected")(isSelected)
+    __obj.updateDynamic("refreshRate")(refreshRate)
+    __obj.updateDynamic("uiScale")(uiScale)
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("widthInNativePixels")(widthInNativePixels)
+    __obj.asInstanceOf[DisplayMode]
+  }
+}
+

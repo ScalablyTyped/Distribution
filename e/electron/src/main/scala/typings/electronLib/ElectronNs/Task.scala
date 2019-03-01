@@ -38,3 +38,24 @@ trait Task extends js.Object {
   var title: java.lang.String
 }
 
+object Task {
+  @scala.inline
+  def apply(
+    arguments: java.lang.String,
+    description: java.lang.String,
+    iconIndex: scala.Double,
+    iconPath: java.lang.String,
+    program: java.lang.String,
+    title: java.lang.String
+  ): Task = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arguments")(arguments)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("iconIndex")(iconIndex)
+    __obj.updateDynamic("iconPath")(iconPath)
+    __obj.updateDynamic("program")(program)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Task]
+  }
+}
+

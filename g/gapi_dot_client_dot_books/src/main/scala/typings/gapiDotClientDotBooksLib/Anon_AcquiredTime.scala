@@ -51,3 +51,50 @@ trait Anon_AcquiredTime extends js.Object {
   var userUploadedVolumeInfo: js.UndefOr[Anon_ProcessingState] = js.undefined
 }
 
+object Anon_AcquiredTime {
+  @scala.inline
+  def apply(
+    acquiredTime: java.lang.String = null,
+    acquisitionType: scala.Int | scala.Double = null,
+    copy: Anon_AllowedCharacterCountLimitType = null,
+    entitlementType: scala.Int | scala.Double = null,
+    familySharing: Anon_FamilyRole = null,
+    isFamilySharedFromUser: js.UndefOr[scala.Boolean] = js.undefined,
+    isFamilySharedToUser: js.UndefOr[scala.Boolean] = js.undefined,
+    isFamilySharingAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    isFamilySharingDisabledByFop: js.UndefOr[scala.Boolean] = js.undefined,
+    isInMyBooks: js.UndefOr[scala.Boolean] = js.undefined,
+    isPreordered: js.UndefOr[scala.Boolean] = js.undefined,
+    isPurchased: js.UndefOr[scala.Boolean] = js.undefined,
+    isUploaded: js.UndefOr[scala.Boolean] = js.undefined,
+    readingPosition: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.ReadingPosition = null,
+    rentalPeriod: Anon_EndUtcSec = null,
+    rentalState: java.lang.String = null,
+    review: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.Review = null,
+    updated: java.lang.String = null,
+    userUploadedVolumeInfo: Anon_ProcessingState = null
+  ): Anon_AcquiredTime = {
+    val __obj = js.Dynamic.literal()
+    if (acquiredTime != null) __obj.updateDynamic("acquiredTime")(acquiredTime)
+    if (acquisitionType != null) __obj.updateDynamic("acquisitionType")(acquisitionType.asInstanceOf[js.Any])
+    if (copy != null) __obj.updateDynamic("copy")(copy)
+    if (entitlementType != null) __obj.updateDynamic("entitlementType")(entitlementType.asInstanceOf[js.Any])
+    if (familySharing != null) __obj.updateDynamic("familySharing")(familySharing)
+    if (!js.isUndefined(isFamilySharedFromUser)) __obj.updateDynamic("isFamilySharedFromUser")(isFamilySharedFromUser)
+    if (!js.isUndefined(isFamilySharedToUser)) __obj.updateDynamic("isFamilySharedToUser")(isFamilySharedToUser)
+    if (!js.isUndefined(isFamilySharingAllowed)) __obj.updateDynamic("isFamilySharingAllowed")(isFamilySharingAllowed)
+    if (!js.isUndefined(isFamilySharingDisabledByFop)) __obj.updateDynamic("isFamilySharingDisabledByFop")(isFamilySharingDisabledByFop)
+    if (!js.isUndefined(isInMyBooks)) __obj.updateDynamic("isInMyBooks")(isInMyBooks)
+    if (!js.isUndefined(isPreordered)) __obj.updateDynamic("isPreordered")(isPreordered)
+    if (!js.isUndefined(isPurchased)) __obj.updateDynamic("isPurchased")(isPurchased)
+    if (!js.isUndefined(isUploaded)) __obj.updateDynamic("isUploaded")(isUploaded)
+    if (readingPosition != null) __obj.updateDynamic("readingPosition")(readingPosition)
+    if (rentalPeriod != null) __obj.updateDynamic("rentalPeriod")(rentalPeriod)
+    if (rentalState != null) __obj.updateDynamic("rentalState")(rentalState)
+    if (review != null) __obj.updateDynamic("review")(review)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (userUploadedVolumeInfo != null) __obj.updateDynamic("userUploadedVolumeInfo")(userUploadedVolumeInfo)
+    __obj.asInstanceOf[Anon_AcquiredTime]
+  }
+}
+

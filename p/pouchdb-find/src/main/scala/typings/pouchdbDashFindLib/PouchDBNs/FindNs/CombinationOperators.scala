@@ -20,3 +20,20 @@ trait CombinationOperators extends js.Object {
   var $or: js.UndefOr[js.Array[Selector]] = js.undefined
 }
 
+object CombinationOperators {
+  @scala.inline
+  def apply(
+    $and: js.Array[Selector] = null,
+    $nor: js.Array[Selector] = null,
+    $not: Selector = null,
+    $or: js.Array[Selector] = null
+  ): CombinationOperators = {
+    val __obj = js.Dynamic.literal()
+    if ($and != null) __obj.updateDynamic("$and")($and)
+    if ($nor != null) __obj.updateDynamic("$nor")($nor)
+    if ($not != null) __obj.updateDynamic("$not")($not)
+    if ($or != null) __obj.updateDynamic("$or")($or)
+    __obj.asInstanceOf[CombinationOperators]
+  }
+}
+

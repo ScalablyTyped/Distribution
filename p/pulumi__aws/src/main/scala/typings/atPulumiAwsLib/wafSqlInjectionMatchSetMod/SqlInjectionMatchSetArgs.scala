@@ -22,3 +22,20 @@ trait SqlInjectionMatchSetArgs extends js.Object {
   ] = js.undefined
 }
 
+object SqlInjectionMatchSetArgs {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sqlInjectionMatchTuples: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FieldToMatchTextTransformationAnonDataTypeInput]
+      ]
+    ] = null
+  ): SqlInjectionMatchSetArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sqlInjectionMatchTuples != null) __obj.updateDynamic("sqlInjectionMatchTuples")(sqlInjectionMatchTuples.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SqlInjectionMatchSetArgs]
+  }
+}
+

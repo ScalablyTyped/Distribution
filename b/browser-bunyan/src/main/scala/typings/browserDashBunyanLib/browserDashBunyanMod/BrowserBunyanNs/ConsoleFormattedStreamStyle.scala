@@ -12,3 +12,19 @@ trait ConsoleFormattedStreamStyle extends js.Object {
   var src: java.lang.String
 }
 
+object ConsoleFormattedStreamStyle {
+  @scala.inline
+  def apply(
+    `def`: java.lang.String,
+    levels: stdLib.Partial[ConsoleFormattedStreamLevelStyle],
+    msg: java.lang.String,
+    src: java.lang.String
+  ): ConsoleFormattedStreamStyle = {
+    val __obj = js.Dynamic.literal(`def` = `def`)
+    __obj.updateDynamic("levels")(levels)
+    __obj.updateDynamic("msg")(msg)
+    __obj.updateDynamic("src")(src)
+    __obj.asInstanceOf[ConsoleFormattedStreamStyle]
+  }
+}
+

@@ -7,55 +7,72 @@ import scala.scalajs.js.annotation._
 
 object navermapsLibStrings {
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait bevel
+    extends navermapsLib.naverNs.mapsNs.strokeLineJoinType
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait butt
+    extends navermapsLib.naverNs.mapsNs.strokeLineCapType
   
   @js.native
-  sealed trait dash extends js.Object
+  sealed trait dash
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait dashdot extends js.Object
+  sealed trait dashdot
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait dot extends js.Object
+  sealed trait dot
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait longdash extends js.Object
+  sealed trait longdash
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait longdashdot extends js.Object
+  sealed trait longdashdot
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait longdashdotdot extends js.Object
+  sealed trait longdashdotdot
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait miter
+    extends navermapsLib.naverNs.mapsNs.strokeLineJoinType
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends navermapsLib.naverNs.mapsNs.strokeLineCapType
   
   @js.native
-  sealed trait `round ` extends js.Object
+  sealed trait `round `
+    extends navermapsLib.naverNs.mapsNs.strokeLineJoinType
   
   @js.native
-  sealed trait shortdash extends js.Object
+  sealed trait shortdash
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait shortdashdot extends js.Object
+  sealed trait shortdashdot
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait shortdashdotdot extends js.Object
+  sealed trait shortdashdotdot
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait shortdot extends js.Object
+  sealed trait shortdot
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait solid extends js.Object
+  sealed trait solid
+    extends navermapsLib.naverNs.mapsNs.strokeStyleType
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends navermapsLib.naverNs.mapsNs.strokeLineCapType
   
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]

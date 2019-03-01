@@ -11,3 +11,17 @@ trait ShaderData extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object ShaderData {
+  @scala.inline
+  def apply(
+    `type`: wonderDotJsLib.distEs2015RendererShaderVariableEVariableTypeMod.EVariableType,
+    textureId: java.lang.String = null,
+    value: js.Any = null
+  ): ShaderData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (textureId != null) __obj.updateDynamic("textureId")(textureId)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ShaderData]
+  }
+}
+

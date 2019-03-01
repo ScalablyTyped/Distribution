@@ -9,3 +9,12 @@ trait TableCellRange extends js.Object {
   def getTableCells(): js.Array[TableCell]
 }
 
+object TableCellRange {
+  @scala.inline
+  def apply(getTableCells: js.Function0[js.Array[TableCell]]): TableCellRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getTableCells")(getTableCells)
+    __obj.asInstanceOf[TableCellRange]
+  }
+}
+

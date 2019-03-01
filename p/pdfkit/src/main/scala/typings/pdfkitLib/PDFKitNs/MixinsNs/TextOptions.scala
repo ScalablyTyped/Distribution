@@ -44,3 +44,48 @@ trait TextOptions extends js.Object {
   var wordSpacing: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TextOptions {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    characterSpacing: scala.Int | scala.Double = null,
+    columnGap: scala.Int | scala.Double = null,
+    columns: scala.Int | scala.Double = null,
+    continued: js.UndefOr[scala.Boolean] = js.undefined,
+    ellipsis: scala.Boolean | java.lang.String = null,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    indent: scala.Int | scala.Double = null,
+    lineBreak: js.UndefOr[scala.Boolean] = js.undefined,
+    lineGap: scala.Int | scala.Double = null,
+    link: java.lang.String = null,
+    paragraphGap: scala.Int | scala.Double = null,
+    strike: js.UndefOr[scala.Boolean] = js.undefined,
+    stroke: js.UndefOr[scala.Boolean] = js.undefined,
+    underline: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null,
+    wordSpacing: scala.Int | scala.Double = null
+  ): TextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (characterSpacing != null) __obj.updateDynamic("characterSpacing")(characterSpacing.asInstanceOf[js.Any])
+    if (columnGap != null) __obj.updateDynamic("columnGap")(columnGap.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(continued)) __obj.updateDynamic("continued")(continued)
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (!js.isUndefined(lineBreak)) __obj.updateDynamic("lineBreak")(lineBreak)
+    if (lineGap != null) __obj.updateDynamic("lineGap")(lineGap.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (paragraphGap != null) __obj.updateDynamic("paragraphGap")(paragraphGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(strike)) __obj.updateDynamic("strike")(strike)
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke)
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextOptions]
+  }
+}
+

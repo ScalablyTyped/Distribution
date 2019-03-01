@@ -15,3 +15,12 @@ trait ScaleSpec extends js.Object {
   val replicas: scala.Double
 }
 
+object ScaleSpec {
+  @scala.inline
+  def apply(replicas: scala.Double): ScaleSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("replicas")(replicas)
+    __obj.asInstanceOf[ScaleSpec]
+  }
+}
+

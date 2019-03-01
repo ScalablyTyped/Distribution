@@ -42,3 +42,34 @@ trait IFindNearRouteOptions extends ISpatialFilterOptions {
   var travelMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IFindNearRouteOptions {
+  @scala.inline
+  def apply(
+    spatialFilterType: java.lang.String,
+    avoid: js.Array[java.lang.String] = null,
+    distanceBeforeFirstTurn: scala.Int | scala.Double = null,
+    end: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location = null,
+    heading: scala.Int | scala.Double = null,
+    intersects: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.LocationRect | bingmapsLib.MicrosoftNs.MapsNs.IPrimitive = null,
+    location: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location = null,
+    optimize: java.lang.String = null,
+    radius: scala.Int | scala.Double = null,
+    start: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location = null,
+    travelMode: java.lang.String = null
+  ): IFindNearRouteOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("spatialFilterType")(spatialFilterType)
+    if (avoid != null) __obj.updateDynamic("avoid")(avoid)
+    if (distanceBeforeFirstTurn != null) __obj.updateDynamic("distanceBeforeFirstTurn")(distanceBeforeFirstTurn.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
+    if (intersects != null) __obj.updateDynamic("intersects")(intersects.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (optimize != null) __obj.updateDynamic("optimize")(optimize)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
+    __obj.asInstanceOf[IFindNearRouteOptions]
+  }
+}
+

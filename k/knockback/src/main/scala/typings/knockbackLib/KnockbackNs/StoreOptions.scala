@@ -12,3 +12,15 @@ trait StoreOptions extends js.Object {
   var store: Store
 }
 
+object StoreOptions {
+  @scala.inline
+  def apply(creator: js.Any, factory: Factory, path: java.lang.String, store: Store): StoreOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("creator")(creator)
+    __obj.updateDynamic("factory")(factory)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("store")(store)
+    __obj.asInstanceOf[StoreOptions]
+  }
+}
+

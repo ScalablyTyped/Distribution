@@ -14,3 +14,24 @@ trait Anon_BytesRead extends js.Object {
   var time: java.lang.String
 }
 
+object Anon_BytesRead {
+  @scala.inline
+  def apply(
+    bytesRead: scala.Double,
+    bytesWritten: scala.Double,
+    count: scala.Double,
+    filesCombined: scala.Double,
+    message: java.lang.String,
+    time: java.lang.String
+  ): Anon_BytesRead = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bytesRead")(bytesRead)
+    __obj.updateDynamic("bytesWritten")(bytesWritten)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("filesCombined")(filesCombined)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[Anon_BytesRead]
+  }
+}
+

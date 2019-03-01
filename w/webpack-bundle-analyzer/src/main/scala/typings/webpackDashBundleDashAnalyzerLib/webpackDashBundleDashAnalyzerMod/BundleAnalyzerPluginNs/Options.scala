@@ -79,3 +79,34 @@ trait Options extends js.Object {
   var statsOptions: js.UndefOr[scala.Null | webpackLib.webpackMod.webpackNs.StatsNs.ToJsonOptionsObject] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    analyzerHost: java.lang.String = null,
+    analyzerMode: webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.server | webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.static | webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.disabled = null,
+    analyzerPort: scala.Int | scala.Double = null,
+    defaultSizes: webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.parsed | webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.stat | webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.gzip = null,
+    excludeAssets: ExcludeAssetsPattern | js.Array[ExcludeAssetsPattern] = null,
+    generateStatsFile: js.UndefOr[scala.Boolean] = js.undefined,
+    logLevel: webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.info | webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.warn | webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.error | webpackDashBundleDashAnalyzerLib.webpackDashBundleDashAnalyzerLibStrings.silent = null,
+    openAnalyzer: js.UndefOr[scala.Boolean] = js.undefined,
+    reportFilename: java.lang.String = null,
+    statsFilename: java.lang.String = null,
+    statsOptions: webpackLib.webpackMod.webpackNs.StatsNs.ToJsonOptionsObject = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (analyzerHost != null) __obj.updateDynamic("analyzerHost")(analyzerHost)
+    if (analyzerMode != null) __obj.updateDynamic("analyzerMode")(analyzerMode.asInstanceOf[js.Any])
+    if (analyzerPort != null) __obj.updateDynamic("analyzerPort")(analyzerPort.asInstanceOf[js.Any])
+    if (defaultSizes != null) __obj.updateDynamic("defaultSizes")(defaultSizes.asInstanceOf[js.Any])
+    if (excludeAssets != null) __obj.updateDynamic("excludeAssets")(excludeAssets.asInstanceOf[js.Any])
+    if (!js.isUndefined(generateStatsFile)) __obj.updateDynamic("generateStatsFile")(generateStatsFile)
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(openAnalyzer)) __obj.updateDynamic("openAnalyzer")(openAnalyzer)
+    if (reportFilename != null) __obj.updateDynamic("reportFilename")(reportFilename)
+    if (statsFilename != null) __obj.updateDynamic("statsFilename")(statsFilename)
+    if (statsOptions != null) __obj.updateDynamic("statsOptions")(statsOptions)
+    __obj.asInstanceOf[Options]
+  }
+}
+

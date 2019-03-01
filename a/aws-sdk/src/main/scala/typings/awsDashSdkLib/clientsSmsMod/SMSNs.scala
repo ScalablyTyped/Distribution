@@ -1676,28 +1676,54 @@ object SMSNs extends js.Object {
     var vmManagerId: js.UndefOr[VmManagerId] = js.undefined
   }
   
+  trait _AppLaunchStatus extends js.Object
+  
+  trait _AppReplicationStatus extends js.Object
+  
+  trait _AppStatus extends js.Object
+  
+  trait _ConnectorCapability extends js.Object
+  
+  trait _ConnectorStatus extends js.Object
+  
+  trait _LicenseType extends js.Object
+  
+  trait _OutputFormat extends js.Object
+  
+  trait _ReplicationJobState extends js.Object
+  
+  trait _ReplicationRunState extends js.Object
+  
+  trait _ReplicationRunType extends js.Object
+  
+  trait _ServerCatalogStatus extends js.Object
+  
+  trait _VmManagerType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AmiId = java.lang.String
   type AppDescription = java.lang.String
   type AppId = java.lang.String
   type AppIds = js.Array[AppId]
-  type AppLaunchStatus = awsDashSdkLib.awsDashSdkLibStrings.READY_FOR_CONFIGURATION | awsDashSdkLib.awsDashSdkLibStrings.CONFIGURATION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.CONFIGURATION_INVALID | awsDashSdkLib.awsDashSdkLibStrings.READY_FOR_LAUNCH | awsDashSdkLib.awsDashSdkLibStrings.VALIDATION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.LAUNCH_PENDING | awsDashSdkLib.awsDashSdkLibStrings.LAUNCH_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.LAUNCHED | awsDashSdkLib.awsDashSdkLibStrings.DELTA_LAUNCH_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DELTA_LAUNCH_FAILED | awsDashSdkLib.awsDashSdkLibStrings.LAUNCH_FAILED | awsDashSdkLib.awsDashSdkLibStrings.TERMINATE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.TERMINATE_FAILED | awsDashSdkLib.awsDashSdkLibStrings.TERMINATED | java.lang.String
+  type AppLaunchStatus = _AppLaunchStatus | java.lang.String
   type AppLaunchStatusMessage = java.lang.String
   type AppName = java.lang.String
-  type AppReplicationStatus = awsDashSdkLib.awsDashSdkLibStrings.READY_FOR_CONFIGURATION | awsDashSdkLib.awsDashSdkLibStrings.CONFIGURATION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.CONFIGURATION_INVALID | awsDashSdkLib.awsDashSdkLibStrings.READY_FOR_REPLICATION | awsDashSdkLib.awsDashSdkLibStrings.VALIDATION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.REPLICATION_PENDING | awsDashSdkLib.awsDashSdkLibStrings.REPLICATION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.REPLICATED | awsDashSdkLib.awsDashSdkLibStrings.DELTA_REPLICATION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DELTA_REPLICATED | awsDashSdkLib.awsDashSdkLibStrings.DELTA_REPLICATION_FAILED | awsDashSdkLib.awsDashSdkLibStrings.REPLICATION_FAILED | awsDashSdkLib.awsDashSdkLibStrings.REPLICATION_STOPPING | awsDashSdkLib.awsDashSdkLibStrings.REPLICATION_STOP_FAILED | awsDashSdkLib.awsDashSdkLibStrings.REPLICATION_STOPPED | java.lang.String
+  type AppReplicationStatus = _AppReplicationStatus | java.lang.String
   type AppReplicationStatusMessage = java.lang.String
-  type AppStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED | java.lang.String
+  type AppStatus = _AppStatus | java.lang.String
   type AppStatusMessage = java.lang.String
   type Apps = js.Array[AppSummary]
   type AssociatePublicIpAddress = scala.Boolean
   type BucketName = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientToken = java.lang.String
-  type ConnectorCapability = awsDashSdkLib.awsDashSdkLibStrings.VSPHERE | awsDashSdkLib.awsDashSdkLibStrings.SCVMM | awsDashSdkLib.awsDashSdkLibStrings.`HYPERV-MANAGER` | awsDashSdkLib.awsDashSdkLibStrings.SNAPSHOT_BATCHING | java.lang.String
+  type ConnectorCapability = _ConnectorCapability | java.lang.String
   type ConnectorCapabilityList = js.Array[ConnectorCapability]
   type ConnectorId = java.lang.String
   type ConnectorList = js.Array[Connector]
-  type ConnectorStatus = awsDashSdkLib.awsDashSdkLibStrings.HEALTHY | awsDashSdkLib.awsDashSdkLibStrings.UNHEALTHY | java.lang.String
+  type ConnectorStatus = _ConnectorStatus | java.lang.String
   type ConnectorVersion = java.lang.String
   type Description = java.lang.String
   type EC2KeyName = java.lang.String
@@ -1710,29 +1736,29 @@ object SMSNs extends js.Object {
   type KeyName = java.lang.String
   type KmsKeyId = java.lang.String
   type LaunchOrder = scala.Double
-  type LicenseType = awsDashSdkLib.awsDashSdkLibStrings.AWS | awsDashSdkLib.awsDashSdkLibStrings.BYOL | java.lang.String
+  type LicenseType = _LicenseType | java.lang.String
   type LogicalId = java.lang.String
   type MacAddress = java.lang.String
   type MaxResults = scala.Double
   type NextToken = java.lang.String
   type NumberOfRecentAmisToKeep = scala.Double
-  type OutputFormat = awsDashSdkLib.awsDashSdkLibStrings.JSON | awsDashSdkLib.awsDashSdkLibStrings.YAML | java.lang.String
+  type OutputFormat = _OutputFormat | java.lang.String
   type ReplicationJobId = java.lang.String
   type ReplicationJobList = js.Array[ReplicationJob]
-  type ReplicationJobState = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.PAUSED_ON_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.FAILING | java.lang.String
+  type ReplicationJobState = _ReplicationJobState | java.lang.String
   type ReplicationJobStatusMessage = java.lang.String
   type ReplicationJobTerminated = scala.Boolean
   type ReplicationRunId = java.lang.String
   type ReplicationRunList = js.Array[ReplicationRun]
   type ReplicationRunStage = java.lang.String
   type ReplicationRunStageProgress = java.lang.String
-  type ReplicationRunState = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.MISSED | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
+  type ReplicationRunState = _ReplicationRunState | java.lang.String
   type ReplicationRunStatusMessage = java.lang.String
-  type ReplicationRunType = awsDashSdkLib.awsDashSdkLibStrings.ON_DEMAND | awsDashSdkLib.awsDashSdkLibStrings.AUTOMATIC | java.lang.String
+  type ReplicationRunType = _ReplicationRunType | java.lang.String
   type RoleName = java.lang.String
   type RunOnce = scala.Boolean
   type SecurityGroup = java.lang.String
-  type ServerCatalogStatus = awsDashSdkLib.awsDashSdkLibStrings.NOT_IMPORTED | awsDashSdkLib.awsDashSdkLibStrings.IMPORTING | awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.EXPIRED | java.lang.String
+  type ServerCatalogStatus = _ServerCatalogStatus | java.lang.String
   type ServerGroupId = java.lang.String
   type ServerGroupLaunchConfigurations = js.Array[ServerGroupLaunchConfiguration]
   type ServerGroupName = java.lang.String
@@ -1756,10 +1782,10 @@ object SMSNs extends js.Object {
   type VmId = java.lang.String
   type VmManagerId = java.lang.String
   type VmManagerName = java.lang.String
-  type VmManagerType = awsDashSdkLib.awsDashSdkLibStrings.VSPHERE | awsDashSdkLib.awsDashSdkLibStrings.SCVMM | awsDashSdkLib.awsDashSdkLibStrings.`HYPERV-MANAGER` | java.lang.String
+  type VmManagerType = _VmManagerType | java.lang.String
   type VmName = java.lang.String
   type VmPath = java.lang.String
   type VmServerAddressList = js.Array[VmServerAddress]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-10-24` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

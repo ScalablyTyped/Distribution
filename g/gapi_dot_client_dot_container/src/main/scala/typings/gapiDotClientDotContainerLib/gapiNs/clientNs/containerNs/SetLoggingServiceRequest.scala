@@ -16,3 +16,12 @@ trait SetLoggingServiceRequest extends js.Object {
   var loggingService: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SetLoggingServiceRequest {
+  @scala.inline
+  def apply(loggingService: java.lang.String = null): SetLoggingServiceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (loggingService != null) __obj.updateDynamic("loggingService")(loggingService)
+    __obj.asInstanceOf[SetLoggingServiceRequest]
+  }
+}
+

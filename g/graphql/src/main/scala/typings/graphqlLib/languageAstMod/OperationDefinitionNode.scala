@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OperationDefinitionNode extends js.Object {
+trait OperationDefinitionNode
+  extends ExecutableDefinitionNode
+     with ASTNode
+     with graphqlLib.validationValidationContextMod.NodeWithSelectionSet {
   val directives: js.UndefOr[js.Array[DirectiveNode]] = js.undefined
   val kind: graphqlLib.graphqlLibStrings.OperationDefinition
   val loc: js.UndefOr[Location] = js.undefined
@@ -13,5 +16,28 @@ trait OperationDefinitionNode extends js.Object {
   val operation: OperationTypeNode
   val selectionSet: SelectionSetNode
   val variableDefinitions: js.UndefOr[js.Array[VariableDefinitionNode]] = js.undefined
+}
+
+object OperationDefinitionNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.OperationDefinition,
+    operation: OperationTypeNode,
+    selectionSet: SelectionSetNode,
+    directives: js.Array[DirectiveNode] = null,
+    loc: Location = null,
+    name: NameNode = null,
+    variableDefinitions: js.Array[VariableDefinitionNode] = null
+  ): OperationDefinitionNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("operation")(operation)
+    __obj.updateDynamic("selectionSet")(selectionSet)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (variableDefinitions != null) __obj.updateDynamic("variableDefinitions")(variableDefinitions)
+    __obj.asInstanceOf[OperationDefinitionNode]
+  }
 }
 

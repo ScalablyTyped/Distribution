@@ -33,3 +33,29 @@ trait Runner
   def withUserObject(`object`: js.Any): Runner
 }
 
+object Runner {
+  @scala.inline
+  def apply(
+    withFailureHandler: js.Function1[
+      js.Function2[/* error */ stdLib.Error, /* object */ js.UndefOr[js.Any], scala.Unit], 
+      Runner
+    ],
+    withSuccessHandler: js.Function1[
+      js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], scala.Unit], 
+      Runner
+    ],
+    withUserObject: js.Function1[js.Any, Runner],
+    StringDictionary: /**
+    * Executes the server-side Apps Script function with the corresponding name.
+    */
+  /* functionName */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, scala.Unit]] = null
+  ): Runner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("withFailureHandler")(withFailureHandler)
+    __obj.updateDynamic("withSuccessHandler")(withSuccessHandler)
+    __obj.updateDynamic("withUserObject")(withUserObject)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Runner]
+  }
+}
+

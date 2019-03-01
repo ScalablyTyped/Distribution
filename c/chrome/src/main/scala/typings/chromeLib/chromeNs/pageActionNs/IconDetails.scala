@@ -25,3 +25,20 @@ trait IconDetails extends js.Object {
   var tabId: scala.Double
 }
 
+object IconDetails {
+  @scala.inline
+  def apply(
+    tabId: scala.Double,
+    iconIndex: scala.Int | scala.Double = null,
+    imageData: stdLib.ImageData | org.scalablytyped.runtime.NumberDictionary[stdLib.ImageData] = null,
+    path: js.Any = null
+  ): IconDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabId")(tabId)
+    if (iconIndex != null) __obj.updateDynamic("iconIndex")(iconIndex.asInstanceOf[js.Any])
+    if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[IconDetails]
+  }
+}
+

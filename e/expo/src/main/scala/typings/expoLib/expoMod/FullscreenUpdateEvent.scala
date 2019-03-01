@@ -10,3 +10,13 @@ trait FullscreenUpdateEvent extends js.Object {
   var status: PlaybackStatus
 }
 
+object FullscreenUpdateEvent {
+  @scala.inline
+  def apply(fullscreenUpdate: FullscreenUpdateVariants, status: PlaybackStatus): FullscreenUpdateEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fullscreenUpdate")(fullscreenUpdate)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[FullscreenUpdateEvent]
+  }
+}
+

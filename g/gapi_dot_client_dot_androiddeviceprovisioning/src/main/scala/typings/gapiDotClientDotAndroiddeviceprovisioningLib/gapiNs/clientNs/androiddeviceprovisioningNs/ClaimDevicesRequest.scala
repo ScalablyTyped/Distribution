@@ -10,3 +10,12 @@ trait ClaimDevicesRequest extends js.Object {
   var claims: js.UndefOr[js.Array[PartnerClaim]] = js.undefined
 }
 
+object ClaimDevicesRequest {
+  @scala.inline
+  def apply(claims: js.Array[PartnerClaim] = null): ClaimDevicesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (claims != null) __obj.updateDynamic("claims")(claims)
+    __obj.asInstanceOf[ClaimDevicesRequest]
+  }
+}
+

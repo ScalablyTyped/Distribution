@@ -10,3 +10,13 @@ trait IUpnpSearchResultItem extends js.Object {
   var ipaddress: java.lang.String
 }
 
+object IUpnpSearchResultItem {
+  @scala.inline
+  def apply(id: java.lang.String, ipaddress: java.lang.String): IUpnpSearchResultItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ipaddress")(ipaddress)
+    __obj.asInstanceOf[IUpnpSearchResultItem]
+  }
+}
+

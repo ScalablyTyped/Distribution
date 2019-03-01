@@ -16,3 +16,24 @@ trait SurfaceProps extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SurfaceProps {
+  @scala.inline
+  def apply(
+    children: js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    style: js.Object = null,
+    viewBox: ViewBox = null,
+    width: scala.Int | scala.Double = null
+  ): SurfaceProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SurfaceProps]
+  }
+}
+

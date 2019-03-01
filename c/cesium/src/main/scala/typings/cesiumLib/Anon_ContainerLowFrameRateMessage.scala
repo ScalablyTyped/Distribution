@@ -11,3 +11,18 @@ trait Anon_ContainerLowFrameRateMessage extends js.Object {
   var scene: cesiumLib.cesiumMod.CesiumNs.Scene
 }
 
+object Anon_ContainerLowFrameRateMessage {
+  @scala.inline
+  def apply(
+    container: stdLib.Element | java.lang.String,
+    scene: cesiumLib.cesiumMod.CesiumNs.Scene,
+    lowFrameRateMessage: java.lang.String = null
+  ): Anon_ContainerLowFrameRateMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    __obj.updateDynamic("scene")(scene)
+    if (lowFrameRateMessage != null) __obj.updateDynamic("lowFrameRateMessage")(lowFrameRateMessage)
+    __obj.asInstanceOf[Anon_ContainerLowFrameRateMessage]
+  }
+}
+

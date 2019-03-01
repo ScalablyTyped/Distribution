@@ -17,3 +17,13 @@ trait ImageDetails extends js.Object {
   var quality: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImageDetails {
+  @scala.inline
+  def apply(format: ImageFormat = null, quality: scala.Int | scala.Double = null): ImageDetails = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageDetails]
+  }
+}
+

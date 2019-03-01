@@ -39,3 +39,26 @@ trait InjectDetails extends js.Object {
   var runAt: js.UndefOr[RunAt] = js.undefined
 }
 
+object InjectDetails {
+  @scala.inline
+  def apply(
+    allFrames: js.UndefOr[scala.Boolean] = js.undefined,
+    code: java.lang.String = null,
+    cssOrigin: CSSOrigin = null,
+    file: java.lang.String = null,
+    frameId: scala.Int | scala.Double = null,
+    matchAboutBlank: js.UndefOr[scala.Boolean] = js.undefined,
+    runAt: RunAt = null
+  ): InjectDetails = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (cssOrigin != null) __obj.updateDynamic("cssOrigin")(cssOrigin)
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
+    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank)
+    if (runAt != null) __obj.updateDynamic("runAt")(runAt)
+    __obj.asInstanceOf[InjectDetails]
+  }
+}
+

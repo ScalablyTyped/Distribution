@@ -7,91 +7,120 @@ import scala.scalajs.js.annotation._
 
 object googleDashDriveDashRealtimeDashApiLibStrings {
   @js.native
-  sealed trait EditableString extends js.Object
+  sealed trait EditableString
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.CollaborativeObjectType
   
   @js.native
-  sealed trait List extends js.Object
+  sealed trait List
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.CollaborativeObjectType
   
   @js.native
-  sealed trait Map extends js.Object
+  sealed trait Map
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.CollaborativeObjectType
   
   @js.native
-  sealed trait attribute_changed extends js.Object
+  sealed trait attribute_changed
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait client_error extends js.Object
+  sealed trait client_error
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait collaborator_joined extends js.Object
+  sealed trait collaborator_joined
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait collaborator_left extends js.Object
+  sealed trait collaborator_left
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait concurrent_creation extends js.Object
+  sealed trait concurrent_creation
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait document_save_state_changed extends js.Object
+  sealed trait document_save_state_changed
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait fatal_network_error extends js.Object
+  sealed trait fatal_network_error
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait forbidden extends js.Object
+  sealed trait forbidden
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait invalid_compound_operation extends js.Object
+  sealed trait invalid_compound_operation
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait invalid_element_type extends js.Object
+  sealed trait invalid_element_type
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait invalid_json_syntax extends js.Object
+  sealed trait invalid_json_syntax
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait missing_property extends js.Object
+  sealed trait missing_property
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait no_write_permission extends js.Object
+  sealed trait no_write_permission
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait not_found extends js.Object
+  sealed trait not_found
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait object_changed extends js.Object
+  sealed trait object_changed
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait reference_shifted extends js.Object
+  sealed trait reference_shifted
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait server_error extends js.Object
+  sealed trait server_error
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait text_deleted extends js.Object
+  sealed trait text_deleted
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait text_inserted extends js.Object
+  sealed trait text_inserted
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait token_refresh_required extends js.Object
+  sealed trait token_refresh_required
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait undo_redo_state_changed extends js.Object
+  sealed trait undo_redo_state_changed
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait unexpected_element extends js.Object
+  sealed trait unexpected_element
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
   
   @js.native
-  sealed trait value_changed extends js.Object
+  sealed trait value_changed
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait values_added extends js.Object
+  sealed trait values_added
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait values_removed extends js.Object
+  sealed trait values_removed
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @js.native
-  sealed trait values_set extends js.Object
+  sealed trait values_set
+    extends googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.EventType
   
   @scala.inline
   def EditableString: EditableString = "EditableString".asInstanceOf[EditableString]

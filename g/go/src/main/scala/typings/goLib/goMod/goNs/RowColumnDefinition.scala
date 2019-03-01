@@ -60,3 +60,56 @@ trait RowColumnDefinition extends js.Object {
   def computeEffectiveSpacingTop(): scala.Double
 }
 
+object RowColumnDefinition {
+  @scala.inline
+  def apply(
+    actual: scala.Double,
+    alignment: Spot,
+    background: BrushLike,
+    bind: js.Function1[Binding, scala.Unit],
+    computeEffectiveSpacing: js.Function0[scala.Double],
+    computeEffectiveSpacingTop: js.Function0[scala.Double],
+    coversSeparators: scala.Boolean,
+    height: scala.Double,
+    index: scala.Double,
+    isRow: scala.Boolean,
+    maximum: scala.Double,
+    minimum: scala.Double,
+    panel: Panel,
+    position: scala.Double,
+    separatorDashArray: js.Array[scala.Double],
+    separatorPadding: MarginLike,
+    separatorStroke: BrushLike,
+    separatorStrokeWidth: scala.Double,
+    sizing: EnumValue,
+    stretch: EnumValue,
+    total: scala.Double,
+    width: scala.Double
+  ): RowColumnDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actual")(actual)
+    __obj.updateDynamic("alignment")(alignment)
+    __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    __obj.updateDynamic("bind")(bind)
+    __obj.updateDynamic("computeEffectiveSpacing")(computeEffectiveSpacing)
+    __obj.updateDynamic("computeEffectiveSpacingTop")(computeEffectiveSpacingTop)
+    __obj.updateDynamic("coversSeparators")(coversSeparators)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("isRow")(isRow)
+    __obj.updateDynamic("maximum")(maximum)
+    __obj.updateDynamic("minimum")(minimum)
+    __obj.updateDynamic("panel")(panel)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("separatorDashArray")(separatorDashArray)
+    __obj.updateDynamic("separatorPadding")(separatorPadding.asInstanceOf[js.Any])
+    __obj.updateDynamic("separatorStroke")(separatorStroke.asInstanceOf[js.Any])
+    __obj.updateDynamic("separatorStrokeWidth")(separatorStrokeWidth)
+    __obj.updateDynamic("sizing")(sizing)
+    __obj.updateDynamic("stretch")(stretch)
+    __obj.updateDynamic("total")(total)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[RowColumnDefinition]
+  }
+}
+

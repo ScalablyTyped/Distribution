@@ -18,3 +18,32 @@ trait SessionOptions extends js.Object {
   var unset: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SessionOptions {
+  @scala.inline
+  def apply(
+    secret: java.lang.String | js.Array[java.lang.String],
+    cookie: expressLib.expressMod.eNs.CookieOptions = null,
+    genid: js.Function1[/* req */ expressLib.expressMod.eNs.Request, java.lang.String] = null,
+    name: java.lang.String = null,
+    proxy: js.UndefOr[scala.Boolean] = js.undefined,
+    resave: js.UndefOr[scala.Boolean] = js.undefined,
+    rolling: js.UndefOr[scala.Boolean] = js.undefined,
+    saveUninitialized: js.UndefOr[scala.Boolean] = js.undefined,
+    store: Store | MemoryStore = null,
+    unset: java.lang.String = null
+  ): SessionOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
+    if (genid != null) __obj.updateDynamic("genid")(genid)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(proxy)) __obj.updateDynamic("proxy")(proxy)
+    if (!js.isUndefined(resave)) __obj.updateDynamic("resave")(resave)
+    if (!js.isUndefined(rolling)) __obj.updateDynamic("rolling")(rolling)
+    if (!js.isUndefined(saveUninitialized)) __obj.updateDynamic("saveUninitialized")(saveUninitialized)
+    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
+    if (unset != null) __obj.updateDynamic("unset")(unset)
+    __obj.asInstanceOf[SessionOptions]
+  }
+}
+

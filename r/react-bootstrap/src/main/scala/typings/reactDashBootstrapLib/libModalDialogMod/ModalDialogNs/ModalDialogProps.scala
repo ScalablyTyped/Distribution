@@ -19,3 +19,32 @@ trait ModalDialogProps
   var onHide: js.UndefOr[js.Function] = js.undefined
 }
 
+object ModalDialogProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libModalDialogMod.ModalDialog] = null,
+    bsClass: java.lang.String = null,
+    bsSize: reactDashBootstrapLib.reactDashBootstrapMod.Sizes = null,
+    onEnter: js.Function = null,
+    onEntered: js.Function = null,
+    onEntering: js.Function = null,
+    onExit: js.Function = null,
+    onExited: js.Function = null,
+    onExiting: js.Function = null,
+    onHide: js.Function = null
+  ): ModalDialogProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered)
+    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering)
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
+    if (onExited != null) __obj.updateDynamic("onExited")(onExited)
+    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    __obj.asInstanceOf[ModalDialogProps]
+  }
+}
+

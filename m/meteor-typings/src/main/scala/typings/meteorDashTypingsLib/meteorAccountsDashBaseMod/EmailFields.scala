@@ -24,3 +24,28 @@ trait EmailFields extends js.Object {
   ] = js.undefined
 }
 
+object EmailFields {
+  @scala.inline
+  def apply(
+    from: js.Function0[java.lang.String] = null,
+    html: js.Function2[
+      /* user */ meteorDashTypingsLib.MeteorNs.User, 
+      /* url */ java.lang.String, 
+      java.lang.String
+    ] = null,
+    subject: js.Function1[/* user */ meteorDashTypingsLib.MeteorNs.User, java.lang.String] = null,
+    text: js.Function2[
+      /* user */ meteorDashTypingsLib.MeteorNs.User, 
+      /* url */ java.lang.String, 
+      java.lang.String
+    ] = null
+  ): EmailFields = {
+    val __obj = js.Dynamic.literal()
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[EmailFields]
+  }
+}
+

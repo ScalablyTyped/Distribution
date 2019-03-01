@@ -69,3 +69,26 @@ trait RouteOptionsAccess extends js.Object {
   var strategy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RouteOptionsAccess {
+  @scala.inline
+  def apply(
+    access: RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject] = null,
+    entity: RouteOptionsAccessEntity = null,
+    mode: hapiLib.hapiLibStrings.required | hapiLib.hapiLibStrings.optional | hapiLib.hapiLibStrings.`try` = null,
+    payload: hapiLib.hapiLibNumbers.`false` | hapiLib.hapiLibStrings.required | hapiLib.hapiLibStrings.optional = null,
+    scope: RouteOptionsAccessScope = null,
+    strategies: js.Array[java.lang.String] = null,
+    strategy: java.lang.String = null
+  ): RouteOptionsAccess = {
+    val __obj = js.Dynamic.literal()
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (entity != null) __obj.updateDynamic("entity")(entity)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (strategies != null) __obj.updateDynamic("strategies")(strategies)
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    __obj.asInstanceOf[RouteOptionsAccess]
+  }
+}
+

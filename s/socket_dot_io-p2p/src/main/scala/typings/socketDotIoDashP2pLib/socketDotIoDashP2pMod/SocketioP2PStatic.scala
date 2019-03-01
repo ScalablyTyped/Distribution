@@ -32,3 +32,42 @@ trait SocketioP2PStatic extends js.Object {
   def upgrade(): scala.Unit
 }
 
+object SocketioP2PStatic {
+  @scala.inline
+  def apply(
+    binarySlice: js.Function3[js.Array[_], scala.Double, js.Function0[scala.Unit], scala.Unit],
+    cb: js.Function0[scala.Unit],
+    decoder: js.Any,
+    defaultOps: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.DefaultOps,
+    disconnect: js.Function0[scala.Unit],
+    emit: js.Function2[js.Any, js.Any, scala.Unit],
+    numConnectedClients: scala.Double,
+    on: js.Function2[java.lang.String, js.Function1[/* data */ js.Any, scala.Unit], scala.Unit],
+    opts: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.P2POptions,
+    peerOpts: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.PeerOpts,
+    setupPeerEvents: js.Function1[js.Any, scala.Unit],
+    socket: js.Any,
+    upgrade: js.Function0[scala.Unit],
+    usePeerConnection: scala.Boolean,
+    useSockets: scala.Boolean
+  ): SocketioP2PStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("binarySlice")(binarySlice)
+    __obj.updateDynamic("cb")(cb)
+    __obj.updateDynamic("decoder")(decoder)
+    __obj.updateDynamic("defaultOps")(defaultOps)
+    __obj.updateDynamic("disconnect")(disconnect)
+    __obj.updateDynamic("emit")(emit)
+    __obj.updateDynamic("numConnectedClients")(numConnectedClients)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("opts")(opts)
+    __obj.updateDynamic("peerOpts")(peerOpts)
+    __obj.updateDynamic("setupPeerEvents")(setupPeerEvents)
+    __obj.updateDynamic("socket")(socket)
+    __obj.updateDynamic("upgrade")(upgrade)
+    __obj.updateDynamic("usePeerConnection")(usePeerConnection)
+    __obj.updateDynamic("useSockets")(useSockets)
+    __obj.asInstanceOf[SocketioP2PStatic]
+  }
+}
+

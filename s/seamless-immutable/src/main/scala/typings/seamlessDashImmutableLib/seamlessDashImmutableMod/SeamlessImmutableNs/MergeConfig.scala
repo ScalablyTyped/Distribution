@@ -13,3 +13,18 @@ trait MergeConfig extends js.Object {
   ] = js.undefined
 }
 
+object MergeConfig {
+  @scala.inline
+  def apply(
+    deep: js.UndefOr[scala.Boolean] = js.undefined,
+    merger: js.Function3[/* a */ js.Any, /* b */ js.Any, /* config */ js.Any, _] = null,
+    mode: seamlessDashImmutableLib.seamlessDashImmutableLibStrings.replace | seamlessDashImmutableLib.seamlessDashImmutableLibStrings.merge = null
+  ): MergeConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
+    if (merger != null) __obj.updateDynamic("merger")(merger)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MergeConfig]
+  }
+}
+

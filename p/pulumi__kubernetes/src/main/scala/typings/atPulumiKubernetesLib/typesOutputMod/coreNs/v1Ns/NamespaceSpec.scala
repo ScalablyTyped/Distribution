@@ -16,3 +16,12 @@ trait NamespaceSpec extends js.Object {
   val finalizers: js.Array[java.lang.String]
 }
 
+object NamespaceSpec {
+  @scala.inline
+  def apply(finalizers: js.Array[java.lang.String]): NamespaceSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("finalizers")(finalizers)
+    __obj.asInstanceOf[NamespaceSpec]
+  }
+}
+

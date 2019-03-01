@@ -10,3 +10,16 @@ trait TfvcCheckinEventData extends js.Object {
   var project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference
 }
 
+object TfvcCheckinEventData {
+  @scala.inline
+  def apply(
+    changeset: TfvcChangeset,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference
+  ): TfvcCheckinEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeset")(changeset)
+    __obj.updateDynamic("project")(project)
+    __obj.asInstanceOf[TfvcCheckinEventData]
+  }
+}
+

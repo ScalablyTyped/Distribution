@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val CustomizerContext: reactLib.reactMod.ReactNs.Context[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
+  val CustomizerContext: reactLib.reactMod.ReactNs.Context[atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext] = js.native
   val DATA_IS_SCROLLABLE_ATTRIBUTE: /* data-is-scrollable */ java.lang.String = js.native
   val DATA_PORTAL_ATTRIBUTE: /* data-portal-element */ java.lang.String = js.native
   val IsFocusVisibleClassName: /* ms-Fabric--isFocusVisible */ java.lang.String = js.native
@@ -202,6 +202,8 @@ object ^ extends js.Object {
   def isIOS(): scala.Boolean = js.native
   def isMac(): scala.Boolean = js.native
   def isMac(reset: scala.Boolean): scala.Boolean = js.native
+  def isVirtualElement(element: atUifabricUtilitiesLib.libDomIVirtualElementMod.IVirtualElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ scala.Boolean = js.native
+  def isVirtualElement(element: reactLib.HTMLElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ scala.Boolean = js.native
   def mapEnumByName[T](
     theEnum: js.Any,
     callback: js.Function2[
@@ -221,19 +223,29 @@ object ^ extends js.Object {
   ): T = js.native
   def mergeAriaAttributeValues(ariaAttributes: js.UndefOr[java.lang.String]*): js.UndefOr[java.lang.String] = js.native
   def mergeCustomizations(
-    props: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerProps,
-    parentContext: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext
-  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
-  def mergeSettings(): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
-  def mergeSettings(oldSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
+    props: atUifabricUtilitiesLib.libCustomizationsCustomizerDotTypesMod.ICustomizerProps,
+    parentContext: atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext
+  ): atUifabricUtilitiesLib.libCustomizationsCustomizerContextMod.ICustomizerContext = js.native
+  def mergeScopedSettings(): atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings = js.native
+  def mergeScopedSettings(oldSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings): atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings = js.native
+  def mergeScopedSettings(
+    oldSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings,
+    newSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings
+  ): atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings = js.native
+  def mergeScopedSettings(
+    oldSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings,
+    newSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettingsFunction
+  ): atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings = js.native
+  def mergeSettings(): atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings = js.native
+  def mergeSettings(oldSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings): atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings = js.native
   def mergeSettings(
-    oldSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings,
-    newSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings
-  ): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
+    oldSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings,
+    newSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings
+  ): atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings = js.native
   def mergeSettings(
-    oldSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings,
-    newSettings: atUifabricUtilitiesLib.libCustomizationsMod.SettingsFunction
-  ): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
+    oldSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings,
+    newSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettingsFunction
+  ): atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings = js.native
   def nullRender(): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def portalContainsElement(target: reactLib.HTMLElement): scala.Boolean = js.native
   def portalContainsElement(target: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Boolean = js.native
@@ -314,12 +326,12 @@ object ^ extends js.Object {
   def warnDeprecations[P](
     componentName: java.lang.String,
     props: P,
-    deprecationMap: atUifabricUtilitiesLib.libWarnMod.ISettingsMap[P]
+    deprecationMap: atUifabricUtilitiesLib.libWarnWarnMod.ISettingsMap[P]
   ): scala.Unit = js.native
   def warnMutuallyExclusive[P](
     componentName: java.lang.String,
     props: P,
-    exclusiveMap: atUifabricUtilitiesLib.libWarnMod.ISettingsMap[P]
+    exclusiveMap: atUifabricUtilitiesLib.libWarnWarnMod.ISettingsMap[P]
   ): scala.Unit = js.native
 }
 

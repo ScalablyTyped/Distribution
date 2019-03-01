@@ -72,3 +72,40 @@ trait DirectionsRequest extends js.Object {
   var waypoints: js.UndefOr[js.Array[DirectionsWaypoint]] = js.undefined
 }
 
+object DirectionsRequest {
+  @scala.inline
+  def apply(
+    avoidFerries: js.UndefOr[scala.Boolean] = js.undefined,
+    avoidHighways: js.UndefOr[scala.Boolean] = js.undefined,
+    avoidTolls: js.UndefOr[scala.Boolean] = js.undefined,
+    destination: java.lang.String | LatLng | LatLngLiteral | Place = null,
+    drivingOptions: DrivingOptions = null,
+    durationInTraffic: js.UndefOr[scala.Boolean] = js.undefined,
+    optimizeWaypoints: js.UndefOr[scala.Boolean] = js.undefined,
+    origin: java.lang.String | LatLng | LatLngLiteral | Place = null,
+    provideRouteAlternatives: js.UndefOr[scala.Boolean] = js.undefined,
+    region: java.lang.String = null,
+    transitOptions: TransitOptions = null,
+    travelMode: TravelMode = null,
+    unitSystem: UnitSystem = null,
+    waypoints: js.Array[DirectionsWaypoint] = null
+  ): DirectionsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(avoidFerries)) __obj.updateDynamic("avoidFerries")(avoidFerries)
+    if (!js.isUndefined(avoidHighways)) __obj.updateDynamic("avoidHighways")(avoidHighways)
+    if (!js.isUndefined(avoidTolls)) __obj.updateDynamic("avoidTolls")(avoidTolls)
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (drivingOptions != null) __obj.updateDynamic("drivingOptions")(drivingOptions)
+    if (!js.isUndefined(durationInTraffic)) __obj.updateDynamic("durationInTraffic")(durationInTraffic)
+    if (!js.isUndefined(optimizeWaypoints)) __obj.updateDynamic("optimizeWaypoints")(optimizeWaypoints)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (!js.isUndefined(provideRouteAlternatives)) __obj.updateDynamic("provideRouteAlternatives")(provideRouteAlternatives)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (transitOptions != null) __obj.updateDynamic("transitOptions")(transitOptions)
+    if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
+    if (unitSystem != null) __obj.updateDynamic("unitSystem")(unitSystem)
+    if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints)
+    __obj.asInstanceOf[DirectionsRequest]
+  }
+}
+

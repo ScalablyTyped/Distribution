@@ -24,3 +24,18 @@ trait ListViewAnimationProperties extends js.Object {
   var position: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListViewAnimationProperties {
+  @scala.inline
+  def apply(
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    animationStyle: scala.Int | scala.Double = null,
+    position: scala.Int | scala.Double = null
+  ): ListViewAnimationProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (animationStyle != null) __obj.updateDynamic("animationStyle")(animationStyle.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListViewAnimationProperties]
+  }
+}
+

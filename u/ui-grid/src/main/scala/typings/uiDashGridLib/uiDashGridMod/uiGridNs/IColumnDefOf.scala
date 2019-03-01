@@ -218,3 +218,163 @@ trait IColumnDefOf[TEntity]
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object IColumnDefOf {
+  @scala.inline
+  def apply[TEntity](
+    aggregationHideLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    aggregationType: scala.Double | angularLib.angularMod.Global.Function = null,
+    allowCellFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    cellClass: java.lang.String | ICellClassGetter[TEntity] = null,
+    cellEditableCondition: js.Any | uiDashGridLib.Anon_Scope = null,
+    cellFilter: java.lang.String = null,
+    cellTemplate: java.lang.String = null,
+    cellTooltip: scala.Boolean | java.lang.String | ICellTooltipGetter[TEntity] = null,
+    customTreeAggregationFinalizerFn: js.Function1[
+      /* aggregation */ uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.IGridTreeBaseAggregationObject, 
+      scala.Unit
+    ] = null,
+    customTreeAggregationFn: js.Function4[
+      /* aggregation */ uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.IGridTreeBaseAggregationObject, 
+      /* fieldValue */ js.Any, 
+      /* numValue */ scala.Double, 
+      /* row */ IGridRowOf[TEntity], 
+      scala.Unit
+    ] = null,
+    defaultSort: ISortInfo = null,
+    displayName: java.lang.String = null,
+    editDropdownFilter: java.lang.String = null,
+    editDropdownIdLabel: java.lang.String = null,
+    editDropdownOptionsArray: js.Array[uiDashGridLib.uiDashGridMod.uiGridNs.editNs.IEditDropdown] = null,
+    editDropdownRowEntityOptionsArrayPath: java.lang.String = null,
+    editDropdownValueLabel: java.lang.String = null,
+    editFileChooserCallback: js.Function3[
+      /* gridRow */ IGridRowOf[TEntity], 
+      /* gridCol */ IGridColumnOf[TEntity], 
+      /* files */ stdLib.FileList, 
+      scala.Unit
+    ] = null,
+    editModelField: java.lang.String = null,
+    editableCellTemplate: java.lang.String = null,
+    enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCellEditOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnMenus: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnMoving: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGrouping: js.UndefOr[scala.Boolean] = js.undefined,
+    enableHiding: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePinning: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterPdfAlign: java.lang.String = null,
+    exporterSuppressExport: js.UndefOr[scala.Boolean] = js.undefined,
+    field: java.lang.String = null,
+    filter: IFilterOptions = null,
+    filterCellFiltered: js.UndefOr[scala.Boolean] = js.undefined,
+    filterHeaderTemplate: java.lang.String = null,
+    filters: js.Array[IFilterOptions] = null,
+    footerCellClass: java.lang.String | IHeaderFooterCellClassGetter[TEntity] = null,
+    footerCellFilter: java.lang.String = null,
+    footerCellTemplate: java.lang.String = null,
+    grouping: uiDashGridLib.Anon_GroupPriority = null,
+    groupingShowAggregationMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    groupingShowGroupingMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    headerCellClass: java.lang.String | IHeaderFooterCellClassGetter[TEntity] = null,
+    headerCellFilter: java.lang.String = null,
+    headerCellTemplate: java.lang.String = null,
+    headerTooltip: scala.Boolean | java.lang.String | IHeaderTooltipGetter[TEntity] = null,
+    maxWidth: scala.Int | scala.Double = null,
+    menuItems: js.Array[IMenuItem] = null,
+    minWidth: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    pinnedLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    pinnedRight: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: ISortInfo = null,
+    sortCellFiltered: js.UndefOr[scala.Boolean] = js.undefined,
+    sortDirectionCycle: js.Array[scala.Null | java.lang.String] = null,
+    sortingAlgorithm: js.Function5[
+      /* a */ js.Any, 
+      /* b */ js.Any, 
+      /* rowA */ IGridRowOf[TEntity], 
+      /* rowB */ IGridRowOf[TEntity], 
+      /* direction */ java.lang.String, 
+      scala.Double
+    ] = null,
+    suppressRemoveSort: js.UndefOr[scala.Boolean] = js.undefined,
+    treeAggregationLabel: java.lang.String = null,
+    treeAggregationType: java.lang.String = null,
+    treeAggregationUpdateEntity: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Double | java.lang.String = null
+  ): IColumnDefOf[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(aggregationHideLabel)) __obj.updateDynamic("aggregationHideLabel")(aggregationHideLabel)
+    if (aggregationType != null) __obj.updateDynamic("aggregationType")(aggregationType.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowCellFocus)) __obj.updateDynamic("allowCellFocus")(allowCellFocus)
+    if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass.asInstanceOf[js.Any])
+    if (cellEditableCondition != null) __obj.updateDynamic("cellEditableCondition")(cellEditableCondition.asInstanceOf[js.Any])
+    if (cellFilter != null) __obj.updateDynamic("cellFilter")(cellFilter)
+    if (cellTemplate != null) __obj.updateDynamic("cellTemplate")(cellTemplate)
+    if (cellTooltip != null) __obj.updateDynamic("cellTooltip")(cellTooltip.asInstanceOf[js.Any])
+    if (customTreeAggregationFinalizerFn != null) __obj.updateDynamic("customTreeAggregationFinalizerFn")(customTreeAggregationFinalizerFn)
+    if (customTreeAggregationFn != null) __obj.updateDynamic("customTreeAggregationFn")(customTreeAggregationFn)
+    if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (editDropdownFilter != null) __obj.updateDynamic("editDropdownFilter")(editDropdownFilter)
+    if (editDropdownIdLabel != null) __obj.updateDynamic("editDropdownIdLabel")(editDropdownIdLabel)
+    if (editDropdownOptionsArray != null) __obj.updateDynamic("editDropdownOptionsArray")(editDropdownOptionsArray)
+    if (editDropdownRowEntityOptionsArrayPath != null) __obj.updateDynamic("editDropdownRowEntityOptionsArrayPath")(editDropdownRowEntityOptionsArrayPath)
+    if (editDropdownValueLabel != null) __obj.updateDynamic("editDropdownValueLabel")(editDropdownValueLabel)
+    if (editFileChooserCallback != null) __obj.updateDynamic("editFileChooserCallback")(editFileChooserCallback)
+    if (editModelField != null) __obj.updateDynamic("editModelField")(editModelField)
+    if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate)
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
+    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus)
+    if (!js.isUndefined(enableColumnMenu)) __obj.updateDynamic("enableColumnMenu")(enableColumnMenu)
+    if (!js.isUndefined(enableColumnMenus)) __obj.updateDynamic("enableColumnMenus")(enableColumnMenus)
+    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving)
+    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing)
+    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering)
+    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping)
+    if (!js.isUndefined(enableHiding)) __obj.updateDynamic("enableHiding")(enableHiding)
+    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning)
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting)
+    if (exporterPdfAlign != null) __obj.updateDynamic("exporterPdfAlign")(exporterPdfAlign)
+    if (!js.isUndefined(exporterSuppressExport)) __obj.updateDynamic("exporterSuppressExport")(exporterSuppressExport)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (!js.isUndefined(filterCellFiltered)) __obj.updateDynamic("filterCellFiltered")(filterCellFiltered)
+    if (filterHeaderTemplate != null) __obj.updateDynamic("filterHeaderTemplate")(filterHeaderTemplate)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (footerCellClass != null) __obj.updateDynamic("footerCellClass")(footerCellClass.asInstanceOf[js.Any])
+    if (footerCellFilter != null) __obj.updateDynamic("footerCellFilter")(footerCellFilter)
+    if (footerCellTemplate != null) __obj.updateDynamic("footerCellTemplate")(footerCellTemplate)
+    if (grouping != null) __obj.updateDynamic("grouping")(grouping)
+    if (!js.isUndefined(groupingShowAggregationMenu)) __obj.updateDynamic("groupingShowAggregationMenu")(groupingShowAggregationMenu)
+    if (!js.isUndefined(groupingShowGroupingMenu)) __obj.updateDynamic("groupingShowGroupingMenu")(groupingShowGroupingMenu)
+    if (headerCellClass != null) __obj.updateDynamic("headerCellClass")(headerCellClass.asInstanceOf[js.Any])
+    if (headerCellFilter != null) __obj.updateDynamic("headerCellFilter")(headerCellFilter)
+    if (headerCellTemplate != null) __obj.updateDynamic("headerCellTemplate")(headerCellTemplate)
+    if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems)
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(pinnedLeft)) __obj.updateDynamic("pinnedLeft")(pinnedLeft)
+    if (!js.isUndefined(pinnedRight)) __obj.updateDynamic("pinnedRight")(pinnedRight)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(sortCellFiltered)) __obj.updateDynamic("sortCellFiltered")(sortCellFiltered)
+    if (sortDirectionCycle != null) __obj.updateDynamic("sortDirectionCycle")(sortDirectionCycle)
+    if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(sortingAlgorithm)
+    if (!js.isUndefined(suppressRemoveSort)) __obj.updateDynamic("suppressRemoveSort")(suppressRemoveSort)
+    if (treeAggregationLabel != null) __obj.updateDynamic("treeAggregationLabel")(treeAggregationLabel)
+    if (treeAggregationType != null) __obj.updateDynamic("treeAggregationType")(treeAggregationType)
+    if (!js.isUndefined(treeAggregationUpdateEntity)) __obj.updateDynamic("treeAggregationUpdateEntity")(treeAggregationUpdateEntity)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IColumnDefOf[TEntity]]
+  }
+}
+

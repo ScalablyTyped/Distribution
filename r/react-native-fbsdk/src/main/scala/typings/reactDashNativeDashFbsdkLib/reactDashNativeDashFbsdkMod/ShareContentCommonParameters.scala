@@ -25,3 +25,20 @@ trait ShareContentCommonParameters extends js.Object {
   var ref: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ShareContentCommonParameters {
+  @scala.inline
+  def apply(
+    hashtag: java.lang.String = null,
+    peopleIds: js.Array[java.lang.String] = null,
+    placeId: java.lang.String = null,
+    ref: java.lang.String = null
+  ): ShareContentCommonParameters = {
+    val __obj = js.Dynamic.literal()
+    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag)
+    if (peopleIds != null) __obj.updateDynamic("peopleIds")(peopleIds)
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[ShareContentCommonParameters]
+  }
+}
+

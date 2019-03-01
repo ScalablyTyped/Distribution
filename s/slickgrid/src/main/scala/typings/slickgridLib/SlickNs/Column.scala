@@ -109,3 +109,60 @@ trait Column[T /* <: SlickData */] extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Column {
+  @scala.inline
+  def apply[T /* <: SlickData */](
+    asyncPostRender: js.Function4[
+      /* cellNode */ js.Any, 
+      /* row */ js.Any, 
+      /* dataContext */ js.Any, 
+      /* colDef */ js.Any, 
+      scala.Unit
+    ] = null,
+    behavior: js.Any = null,
+    cannotTriggerInsert: js.UndefOr[scala.Boolean] = js.undefined,
+    cssClass: java.lang.String = null,
+    defaultSortAsc: js.UndefOr[scala.Boolean] = js.undefined,
+    editor: js.Any = null,
+    field: java.lang.String = null,
+    focusable: js.UndefOr[scala.Boolean] = js.undefined,
+    formatter: Formatter[T] = null,
+    header: Header = null,
+    headerCssClass: java.lang.String = null,
+    id: java.lang.String = null,
+    maxWidth: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    rerenderOnResize: js.UndefOr[scala.Boolean] = js.undefined,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    sortable: js.UndefOr[scala.Boolean] = js.undefined,
+    toolTip: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Column[T] = {
+    val __obj = js.Dynamic.literal()
+    if (asyncPostRender != null) __obj.updateDynamic("asyncPostRender")(asyncPostRender)
+    if (behavior != null) __obj.updateDynamic("behavior")(behavior)
+    if (!js.isUndefined(cannotTriggerInsert)) __obj.updateDynamic("cannotTriggerInsert")(cannotTriggerInsert)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (!js.isUndefined(defaultSortAsc)) __obj.updateDynamic("defaultSortAsc")(defaultSortAsc)
+    if (editor != null) __obj.updateDynamic("editor")(editor)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (headerCssClass != null) __obj.updateDynamic("headerCssClass")(headerCssClass)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(rerenderOnResize)) __obj.updateDynamic("rerenderOnResize")(rerenderOnResize)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Column[T]]
+  }
+}
+

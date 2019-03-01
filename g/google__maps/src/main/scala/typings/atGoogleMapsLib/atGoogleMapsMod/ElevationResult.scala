@@ -22,3 +22,14 @@ trait ElevationResult extends js.Object {
   var resolution: scala.Double
 }
 
+object ElevationResult {
+  @scala.inline
+  def apply(elevation: scala.Double, location: LatLngLiteral, resolution: scala.Double): ElevationResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("elevation")(elevation)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("resolution")(resolution)
+    __obj.asInstanceOf[ElevationResult]
+  }
+}
+

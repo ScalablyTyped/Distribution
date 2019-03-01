@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSvgDashChartsLibStrings {
   @js.native
-  sealed trait BOTH extends js.Object
+  sealed trait BOTH
+    extends reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.GridDirection
   
   @js.native
-  sealed trait HORIZONTAL extends js.Object
+  sealed trait HORIZONTAL
+    extends reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.GridDirection
   
   @js.native
-  sealed trait VERTICAL extends js.Object
+  sealed trait VERTICAL
+    extends reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsMod.GridDirection
   
   @scala.inline
   def BOTH: BOTH = "BOTH".asInstanceOf[BOTH]

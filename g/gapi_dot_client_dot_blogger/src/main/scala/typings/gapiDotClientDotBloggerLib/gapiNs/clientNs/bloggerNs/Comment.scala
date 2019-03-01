@@ -30,3 +30,34 @@ trait Comment extends js.Object {
   var updated: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Comment {
+  @scala.inline
+  def apply(
+    author: gapiDotClientDotBloggerLib.Anon_DisplayName = null,
+    blog: gapiDotClientDotBloggerLib.Anon_Id = null,
+    content: java.lang.String = null,
+    id: java.lang.String = null,
+    inReplyTo: gapiDotClientDotBloggerLib.Anon_Id = null,
+    kind: java.lang.String = null,
+    post: gapiDotClientDotBloggerLib.Anon_Id = null,
+    published: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    status: java.lang.String = null,
+    updated: java.lang.String = null
+  ): Comment = {
+    val __obj = js.Dynamic.literal()
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (blog != null) __obj.updateDynamic("blog")(blog)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (post != null) __obj.updateDynamic("post")(post)
+    if (published != null) __obj.updateDynamic("published")(published)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    __obj.asInstanceOf[Comment]
+  }
+}
+

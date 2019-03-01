@@ -7,100 +7,132 @@ import scala.scalajs.js.annotation._
 
 object ansiDashEscapeDashSequencesLibStrings {
   @js.native
-  sealed trait `bg-black` extends js.Object
+  sealed trait `bg-black`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait `bg-blue` extends js.Object
+  sealed trait `bg-blue`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait `bg-cyan` extends js.Object
+  sealed trait `bg-cyan`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait `bg-gray` extends js.Object
+  sealed trait `bg-gray`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait `bg-green` extends js.Object
+  sealed trait `bg-green`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait `bg-grey` extends js.Object
+  sealed trait `bg-grey`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait `bg-magenta` extends js.Object
+  sealed trait `bg-magenta`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait `bg-red` extends js.Object
+  sealed trait `bg-red`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait `bg-white` extends js.Object
+  sealed trait `bg-white`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait `bg-yellow` extends js.Object
+  sealed trait `bg-yellow`
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait black extends js.Object
+  sealed trait black
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait blue extends js.Object
+  sealed trait blue
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait bold
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait cyan extends js.Object
+  sealed trait cyan
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait font2 extends js.Object
+  sealed trait font2
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait font3 extends js.Object
+  sealed trait font3
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait font4 extends js.Object
+  sealed trait font4
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait font5 extends js.Object
+  sealed trait font5
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait font6 extends js.Object
+  sealed trait font6
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait fontDefault extends js.Object
+  sealed trait fontDefault
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait gray extends js.Object
+  sealed trait gray
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait green extends js.Object
+  sealed trait green
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait grey extends js.Object
+  sealed trait grey
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait imageNegative extends js.Object
+  sealed trait imageNegative
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait imagePositive extends js.Object
+  sealed trait imagePositive
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait italic extends js.Object
+  sealed trait italic
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait magenta extends js.Object
+  sealed trait magenta
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait red extends js.Object
+  sealed trait red
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait reset
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait underline extends js.Object
+  sealed trait underline
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait white extends js.Object
+  sealed trait white
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @js.native
-  sealed trait yellow extends js.Object
+  sealed trait yellow
+    extends ansiDashEscapeDashSequencesLib.ansiDashEscapeDashSequencesMod.Style
   
   @scala.inline
   def `bg-black`: `bg-black` = "bg-black".asInstanceOf[`bg-black`]

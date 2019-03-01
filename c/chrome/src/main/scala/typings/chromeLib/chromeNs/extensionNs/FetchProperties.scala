@@ -12,3 +12,13 @@ trait FetchProperties extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FetchProperties {
+  @scala.inline
+  def apply(`type`: java.lang.String = null, windowId: scala.Int | scala.Double = null): FetchProperties = {
+    val __obj = js.Dynamic.literal()
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FetchProperties]
+  }
+}
+

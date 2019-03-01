@@ -11,3 +11,18 @@ trait Password extends js.Object {
   var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password
 }
 
+object Password {
+  @scala.inline
+  def apply(
+    copyable: scala.Boolean,
+    editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password,
+    renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password
+  ): Password = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("copyable")(copyable)
+    __obj.updateDynamic("editor")(editor)
+    __obj.updateDynamic("renderer")(renderer)
+    __obj.asInstanceOf[Password]
+  }
+}
+

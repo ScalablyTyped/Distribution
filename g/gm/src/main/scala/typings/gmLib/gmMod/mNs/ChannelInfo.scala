@@ -11,3 +11,14 @@ trait ChannelInfo[T] extends js.Object {
   var Red: T
 }
 
+object ChannelInfo {
+  @scala.inline
+  def apply[T](Blue: T, Green: T, Red: T): ChannelInfo[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Blue")(Blue.asInstanceOf[js.Any])
+    __obj.updateDynamic("Green")(Green.asInstanceOf[js.Any])
+    __obj.updateDynamic("Red")(Red.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChannelInfo[T]]
+  }
+}
+

@@ -16,3 +16,20 @@ trait IGeoXmlSummaryMetadata extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IGeoXmlSummaryMetadata {
+  @scala.inline
+  def apply(
+    bounds: LocationRect = null,
+    description: java.lang.String = null,
+    metadata: IDictionary[_] = null,
+    title: java.lang.String = null
+  ): IGeoXmlSummaryMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[IGeoXmlSummaryMetadata]
+  }
+}
+

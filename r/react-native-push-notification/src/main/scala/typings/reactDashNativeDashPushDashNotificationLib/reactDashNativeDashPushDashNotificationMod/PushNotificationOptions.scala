@@ -16,3 +16,24 @@ trait PushNotificationOptions extends js.Object {
   var senderID: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PushNotificationOptions {
+  @scala.inline
+  def apply(
+    onNotification: js.Function1[/* notification */ PushNotification, scala.Unit] = null,
+    onRegister: js.Function1[/* token */ reactDashNativeDashPushDashNotificationLib.Anon_Os, scala.Unit] = null,
+    permissions: PushNotificationPermissions = null,
+    popInitialNotification: js.UndefOr[scala.Boolean] = js.undefined,
+    requestPermissions: js.UndefOr[scala.Boolean] = js.undefined,
+    senderID: java.lang.String = null
+  ): PushNotificationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (onNotification != null) __obj.updateDynamic("onNotification")(onNotification)
+    if (onRegister != null) __obj.updateDynamic("onRegister")(onRegister)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (!js.isUndefined(popInitialNotification)) __obj.updateDynamic("popInitialNotification")(popInitialNotification)
+    if (!js.isUndefined(requestPermissions)) __obj.updateDynamic("requestPermissions")(requestPermissions)
+    if (senderID != null) __obj.updateDynamic("senderID")(senderID)
+    __obj.asInstanceOf[PushNotificationOptions]
+  }
+}
+

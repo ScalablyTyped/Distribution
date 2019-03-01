@@ -27,3 +27,20 @@ trait ChromeArgOptions extends js.Object {
   var userDataDir: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChromeArgOptions {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    devtools: js.UndefOr[scala.Boolean] = js.undefined,
+    headless: js.UndefOr[scala.Boolean] = js.undefined,
+    userDataDir: java.lang.String = null
+  ): ChromeArgOptions = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools)
+    if (!js.isUndefined(headless)) __obj.updateDynamic("headless")(headless)
+    if (userDataDir != null) __obj.updateDynamic("userDataDir")(userDataDir)
+    __obj.asInstanceOf[ChromeArgOptions]
+  }
+}
+

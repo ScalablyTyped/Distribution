@@ -9,3 +9,12 @@ trait calendarsSettings extends js.Object {
   var standard: standardSettings
 }
 
+object calendarsSettings {
+  @scala.inline
+  def apply(standard: standardSettings): calendarsSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("standard")(standard)
+    __obj.asInstanceOf[calendarsSettings]
+  }
+}
+

@@ -22,3 +22,26 @@ trait Group extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Group {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    members: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    selfLink: java.lang.String = null
+  ): Group = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (members != null) __obj.updateDynamic("members")(members)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Group]
+  }
+}
+

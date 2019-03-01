@@ -10,3 +10,13 @@ trait Anon_BurstLimit extends js.Object {
   var rateLimit: scala.Double
 }
 
+object Anon_BurstLimit {
+  @scala.inline
+  def apply(burstLimit: scala.Double, rateLimit: scala.Double): Anon_BurstLimit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("burstLimit")(burstLimit)
+    __obj.updateDynamic("rateLimit")(rateLimit)
+    __obj.asInstanceOf[Anon_BurstLimit]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Settings extends js.Object {
   var rowReorder: js.UndefOr[RowReorderSettings] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(rowReorder: RowReorderSettings = null): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (rowReorder != null) __obj.updateDynamic("rowReorder")(rowReorder)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

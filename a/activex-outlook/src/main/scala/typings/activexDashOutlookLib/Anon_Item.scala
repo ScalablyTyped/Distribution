@@ -9,3 +9,12 @@ trait Anon_Item extends js.Object {
   val Item: js.Any
 }
 
+object Anon_Item {
+  @scala.inline
+  def apply(Item: js.Any): Anon_Item = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Item")(Item)
+    __obj.asInstanceOf[Anon_Item]
+  }
+}
+

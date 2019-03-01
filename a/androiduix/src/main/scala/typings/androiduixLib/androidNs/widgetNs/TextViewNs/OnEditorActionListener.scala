@@ -13,3 +13,19 @@ trait OnEditorActionListener extends js.Object {
   ): scala.Boolean
 }
 
+object OnEditorActionListener {
+  @scala.inline
+  def apply(
+    onEditorAction: js.Function3[
+      androiduixLib.androidNs.widgetNs.TextView, 
+      scala.Double, 
+      androiduixLib.androidNs.viewNs.KeyEvent, 
+      scala.Boolean
+    ]
+  ): OnEditorActionListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onEditorAction")(onEditorAction)
+    __obj.asInstanceOf[OnEditorActionListener]
+  }
+}
+

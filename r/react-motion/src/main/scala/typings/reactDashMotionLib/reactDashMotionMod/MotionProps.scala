@@ -32,3 +32,20 @@ trait MotionProps extends js.Object {
   var style: Style
 }
 
+object MotionProps {
+  @scala.inline
+  def apply(
+    style: Style,
+    children: js.Function1[/* interpolatedStyle */ PlainStyle, reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    defaultStyle: PlainStyle = null,
+    onRest: js.Function0[scala.Unit] = null
+  ): MotionProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("style")(style)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
+    if (onRest != null) __obj.updateDynamic("onRest")(onRest)
+    __obj.asInstanceOf[MotionProps]
+  }
+}
+

@@ -833,9 +833,17 @@ object MigrationHubNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[PutResourceAttributesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _ApplicationStatus extends js.Object
+  
+  trait _ResourceAttributeType extends js.Object
+  
+  trait _Status extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ApplicationId = java.lang.String
-  type ApplicationStatus = awsDashSdkLib.awsDashSdkLibStrings.NOT_STARTED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | java.lang.String
+  type ApplicationStatus = _ApplicationStatus | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ConfigurationId = java.lang.String
   type CreatedArtifactDescription = java.lang.String
@@ -855,13 +863,13 @@ object MigrationHubNs extends js.Object {
   type ProgressUpdateStream = java.lang.String
   type ProgressUpdateStreamSummaryList = js.Array[ProgressUpdateStreamSummary]
   type ResourceAttributeList = js.Array[ResourceAttribute]
-  type ResourceAttributeType = awsDashSdkLib.awsDashSdkLibStrings.IPV4_ADDRESS | awsDashSdkLib.awsDashSdkLibStrings.IPV6_ADDRESS | awsDashSdkLib.awsDashSdkLibStrings.MAC_ADDRESS | awsDashSdkLib.awsDashSdkLibStrings.FQDN | awsDashSdkLib.awsDashSdkLibStrings.VM_MANAGER_ID | awsDashSdkLib.awsDashSdkLibStrings.VM_MANAGED_OBJECT_REFERENCE | awsDashSdkLib.awsDashSdkLibStrings.VM_NAME | awsDashSdkLib.awsDashSdkLibStrings.VM_PATH | awsDashSdkLib.awsDashSdkLibStrings.BIOS_ID | awsDashSdkLib.awsDashSdkLibStrings.MOTHERBOARD_SERIAL_NUMBER | java.lang.String
+  type ResourceAttributeType = _ResourceAttributeType | java.lang.String
   type ResourceAttributeValue = java.lang.String
   type ResourceName = java.lang.String
-  type Status = awsDashSdkLib.awsDashSdkLibStrings.NOT_STARTED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | java.lang.String
+  type Status = _Status | java.lang.String
   type StatusDetail = java.lang.String
   type Token = java.lang.String
   type UpdateDateTime = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-05-31` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

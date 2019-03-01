@@ -68,3 +68,42 @@ trait GraphDataItem extends js.Object {
   var y: scala.Double
 }
 
+object GraphDataItem {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    bullet: java.lang.String,
+    bulletSize: scala.Double,
+    category: java.lang.String,
+    color: java.lang.String,
+    customBullet: java.lang.String,
+    dataContext: js.Object,
+    description: java.lang.String,
+    fillColors: js.Array[_],
+    percents: js.Object,
+    serialDataItem: amchartsLib.serialdataitemMod.default,
+    url: java.lang.String,
+    values: js.Object,
+    x: scala.Double,
+    y: scala.Double
+  ): GraphDataItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alpha")(alpha)
+    __obj.updateDynamic("bullet")(bullet)
+    __obj.updateDynamic("bulletSize")(bulletSize)
+    __obj.updateDynamic("category")(category)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("customBullet")(customBullet)
+    __obj.updateDynamic("dataContext")(dataContext)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("fillColors")(fillColors)
+    __obj.updateDynamic("percents")(percents)
+    __obj.updateDynamic("serialDataItem")(serialDataItem)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("values")(values)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[GraphDataItem]
+  }
+}
+

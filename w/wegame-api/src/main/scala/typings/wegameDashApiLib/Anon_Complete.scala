@@ -31,3 +31,28 @@ trait Anon_Complete extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Complete {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    name: java.lang.String,
+    url: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    formData: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    header: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    success: js.Function1[/* res */ Anon_DataStatusCode, scala.Unit] = null
+  ): Anon_Complete = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("url")(url)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (formData != null) __obj.updateDynamic("formData")(formData)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_Complete]
+  }
+}
+

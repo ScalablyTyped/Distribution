@@ -11,3 +11,12 @@ trait RenderSuccessEventArgs extends js.Object {
   var args: js.UndefOr[js.Any] = js.undefined
 }
 
+object RenderSuccessEventArgs {
+  @scala.inline
+  def apply(args: js.Any = null): RenderSuccessEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    __obj.asInstanceOf[RenderSuccessEventArgs]
+  }
+}
+

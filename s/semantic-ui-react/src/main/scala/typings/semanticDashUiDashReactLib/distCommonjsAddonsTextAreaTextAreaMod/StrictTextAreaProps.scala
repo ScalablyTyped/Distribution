@@ -44,3 +44,34 @@ trait StrictTextAreaProps extends js.Object {
   var value: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object StrictTextAreaProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
+      /* data */ TextAreaProps, 
+      scala.Unit
+    ] = null,
+    onInput: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
+      /* data */ TextAreaProps, 
+      scala.Unit
+    ] = null,
+    rows: scala.Double | java.lang.String = null,
+    style: js.Object = null,
+    value: scala.Double | java.lang.String = null
+  ): StrictTextAreaProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onInput != null) __obj.updateDynamic("onInput")(onInput)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictTextAreaProps]
+  }
+}
+

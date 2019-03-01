@@ -60,3 +60,42 @@ trait ICandleChartOptions extends IChartOptions {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object ICandleChartOptions {
+  @scala.inline
+  def apply(
+    axisX: ICandleChartAxis = null,
+    axisY: ICandleChartAxis = null,
+    candleWickWidth: scala.Double | java.lang.String = null,
+    candleWidth: scala.Double | java.lang.String = null,
+    chartPadding: IChartPadding | scala.Double = null,
+    classNames: ICandleChartClasses = null,
+    fullWidth: scala.Boolean | java.lang.String = null,
+    height: scala.Double | java.lang.String = null,
+    hight: scala.Double | java.lang.String = null,
+    low: scala.Double | java.lang.String = null,
+    plugins: js.Array[_] = null,
+    reverseData: js.UndefOr[scala.Boolean] = js.undefined,
+    useOneThirdAsCandleWickWidth: scala.Boolean | java.lang.String = null,
+    useStepLengthAsCandleWidth: scala.Boolean | java.lang.String = null,
+    width: scala.Double | java.lang.String = null
+  ): ICandleChartOptions = {
+    val __obj = js.Dynamic.literal()
+    if (axisX != null) __obj.updateDynamic("axisX")(axisX)
+    if (axisY != null) __obj.updateDynamic("axisY")(axisY)
+    if (candleWickWidth != null) __obj.updateDynamic("candleWickWidth")(candleWickWidth.asInstanceOf[js.Any])
+    if (candleWidth != null) __obj.updateDynamic("candleWidth")(candleWidth.asInstanceOf[js.Any])
+    if (chartPadding != null) __obj.updateDynamic("chartPadding")(chartPadding.asInstanceOf[js.Any])
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames)
+    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hight != null) __obj.updateDynamic("hight")(hight.asInstanceOf[js.Any])
+    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData)
+    if (useOneThirdAsCandleWickWidth != null) __obj.updateDynamic("useOneThirdAsCandleWickWidth")(useOneThirdAsCandleWickWidth.asInstanceOf[js.Any])
+    if (useStepLengthAsCandleWidth != null) __obj.updateDynamic("useStepLengthAsCandleWidth")(useStepLengthAsCandleWidth.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICandleChartOptions]
+  }
+}
+

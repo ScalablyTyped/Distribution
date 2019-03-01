@@ -13,3 +13,12 @@ trait CreateCollectdTimeSeriesResponse extends js.Object {
   var payloadErrors: js.UndefOr[js.Array[CollectdPayloadError]] = js.undefined
 }
 
+object CreateCollectdTimeSeriesResponse {
+  @scala.inline
+  def apply(payloadErrors: js.Array[CollectdPayloadError] = null): CreateCollectdTimeSeriesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (payloadErrors != null) __obj.updateDynamic("payloadErrors")(payloadErrors)
+    __obj.asInstanceOf[CreateCollectdTimeSeriesResponse]
+  }
+}
+

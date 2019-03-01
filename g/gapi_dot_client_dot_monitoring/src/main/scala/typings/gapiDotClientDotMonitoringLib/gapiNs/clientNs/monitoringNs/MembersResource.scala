@@ -10,3 +10,17 @@ trait MembersResource extends js.Object {
   def list(request: gapiDotClientDotMonitoringLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListGroupMembersResponse]
 }
 
+object MembersResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListGroupMembersResponse]
+    ]
+  ): MembersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[MembersResource]
+  }
+}
+

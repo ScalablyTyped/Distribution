@@ -92,3 +92,76 @@ trait Policy extends js.Object {
   var wifiConfigsLockdownEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Policy {
+  @scala.inline
+  def apply(
+    addUserDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    adjustVolumeDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    applications: js.Array[ApplicationPolicy] = null,
+    autoTimeRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    blockApplicationsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    cameraDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    complianceRules: js.Array[ComplianceRule] = null,
+    debuggingFeaturesAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultPermissionPolicy: java.lang.String = null,
+    factoryResetDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    frpAdminEmails: js.Array[java.lang.String] = null,
+    funDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    installUnknownSourcesAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    keyguardDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maximumTimeToLock: java.lang.String = null,
+    modifyAccountsDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    networkEscapeHatchEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    openNetworkConfiguration: stdLib.Record[java.lang.String, _] = null,
+    passwordRequirements: PasswordRequirements = null,
+    persistentPreferredActivities: js.Array[PersistentPreferredActivity] = null,
+    removeUserDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    safeBootDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    screenCaptureDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    statusBarDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    statusReportingSettings: StatusReportingSettings = null,
+    stayOnPluggedModes: js.Array[java.lang.String] = null,
+    systemUpdate: SystemUpdate = null,
+    unmuteMicrophoneDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    version: java.lang.String = null,
+    wifiConfigDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    wifiConfigsLockdownEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): Policy = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addUserDisabled)) __obj.updateDynamic("addUserDisabled")(addUserDisabled)
+    if (!js.isUndefined(adjustVolumeDisabled)) __obj.updateDynamic("adjustVolumeDisabled")(adjustVolumeDisabled)
+    if (applications != null) __obj.updateDynamic("applications")(applications)
+    if (!js.isUndefined(autoTimeRequired)) __obj.updateDynamic("autoTimeRequired")(autoTimeRequired)
+    if (!js.isUndefined(blockApplicationsEnabled)) __obj.updateDynamic("blockApplicationsEnabled")(blockApplicationsEnabled)
+    if (!js.isUndefined(cameraDisabled)) __obj.updateDynamic("cameraDisabled")(cameraDisabled)
+    if (complianceRules != null) __obj.updateDynamic("complianceRules")(complianceRules)
+    if (!js.isUndefined(debuggingFeaturesAllowed)) __obj.updateDynamic("debuggingFeaturesAllowed")(debuggingFeaturesAllowed)
+    if (defaultPermissionPolicy != null) __obj.updateDynamic("defaultPermissionPolicy")(defaultPermissionPolicy)
+    if (!js.isUndefined(factoryResetDisabled)) __obj.updateDynamic("factoryResetDisabled")(factoryResetDisabled)
+    if (frpAdminEmails != null) __obj.updateDynamic("frpAdminEmails")(frpAdminEmails)
+    if (!js.isUndefined(funDisabled)) __obj.updateDynamic("funDisabled")(funDisabled)
+    if (!js.isUndefined(installUnknownSourcesAllowed)) __obj.updateDynamic("installUnknownSourcesAllowed")(installUnknownSourcesAllowed)
+    if (!js.isUndefined(keyguardDisabled)) __obj.updateDynamic("keyguardDisabled")(keyguardDisabled)
+    if (maximumTimeToLock != null) __obj.updateDynamic("maximumTimeToLock")(maximumTimeToLock)
+    if (!js.isUndefined(modifyAccountsDisabled)) __obj.updateDynamic("modifyAccountsDisabled")(modifyAccountsDisabled)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(networkEscapeHatchEnabled)) __obj.updateDynamic("networkEscapeHatchEnabled")(networkEscapeHatchEnabled)
+    if (openNetworkConfiguration != null) __obj.updateDynamic("openNetworkConfiguration")(openNetworkConfiguration)
+    if (passwordRequirements != null) __obj.updateDynamic("passwordRequirements")(passwordRequirements)
+    if (persistentPreferredActivities != null) __obj.updateDynamic("persistentPreferredActivities")(persistentPreferredActivities)
+    if (!js.isUndefined(removeUserDisabled)) __obj.updateDynamic("removeUserDisabled")(removeUserDisabled)
+    if (!js.isUndefined(safeBootDisabled)) __obj.updateDynamic("safeBootDisabled")(safeBootDisabled)
+    if (!js.isUndefined(screenCaptureDisabled)) __obj.updateDynamic("screenCaptureDisabled")(screenCaptureDisabled)
+    if (!js.isUndefined(statusBarDisabled)) __obj.updateDynamic("statusBarDisabled")(statusBarDisabled)
+    if (statusReportingSettings != null) __obj.updateDynamic("statusReportingSettings")(statusReportingSettings)
+    if (stayOnPluggedModes != null) __obj.updateDynamic("stayOnPluggedModes")(stayOnPluggedModes)
+    if (systemUpdate != null) __obj.updateDynamic("systemUpdate")(systemUpdate)
+    if (!js.isUndefined(unmuteMicrophoneDisabled)) __obj.updateDynamic("unmuteMicrophoneDisabled")(unmuteMicrophoneDisabled)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (!js.isUndefined(wifiConfigDisabled)) __obj.updateDynamic("wifiConfigDisabled")(wifiConfigDisabled)
+    if (!js.isUndefined(wifiConfigsLockdownEnabled)) __obj.updateDynamic("wifiConfigsLockdownEnabled")(wifiConfigsLockdownEnabled)
+    __obj.asInstanceOf[Policy]
+  }
+}
+

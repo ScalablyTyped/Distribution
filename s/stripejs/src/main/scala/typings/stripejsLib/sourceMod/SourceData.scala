@@ -61,3 +61,37 @@ trait SourceData extends js.Object {
   var usage: stripejsLib.stripejsLibStrings.reusable | stripejsLib.stripejsLibStrings.single_use
 }
 
+object SourceData {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    flow: stripejsLib.stripejsLibStrings.redirect | stripejsLib.stripejsLibStrings.receiver | stripejsLib.stripejsLibStrings.code_verification | stripejsLib.stripejsLibStrings.none,
+    `type`: paymentOptions,
+    usage: stripejsLib.stripejsLibStrings.reusable | stripejsLib.stripejsLibStrings.single_use,
+    mandate: Mandate = null,
+    metadata: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    owner: stripejsLib.customerMod.Customer = null,
+    receiver: Receiver = null,
+    redirect: Redirect = null,
+    statement_descriptor: java.lang.String = null,
+    three_d_secure_2_eap: js.Any = null,
+    token: stripejsLib.tokenMod.Token = null
+  ): SourceData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
+    __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
+    if (mandate != null) __obj.updateDynamic("mandate")(mandate)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (receiver != null) __obj.updateDynamic("receiver")(receiver)
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (three_d_secure_2_eap != null) __obj.updateDynamic("three_d_secure_2_eap")(three_d_secure_2_eap)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[SourceData]
+  }
+}
+

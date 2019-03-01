@@ -13,3 +13,13 @@ trait PageLifetimes extends js.Object {
   def show(): scala.Unit
 }
 
+object PageLifetimes {
+  @scala.inline
+  def apply(hide: js.Function0[scala.Unit], show: js.Function0[scala.Unit]): PageLifetimes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[PageLifetimes]
+  }
+}
+

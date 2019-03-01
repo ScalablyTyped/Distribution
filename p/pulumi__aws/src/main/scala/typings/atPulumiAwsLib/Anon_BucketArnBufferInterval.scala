@@ -16,3 +16,28 @@ trait Anon_BucketArnBufferInterval extends js.Object {
   var roleArn: java.lang.String
 }
 
+object Anon_BucketArnBufferInterval {
+  @scala.inline
+  def apply(
+    bucketArn: java.lang.String,
+    cloudwatchLoggingOptions: Anon_EnabledLogGroupName,
+    roleArn: java.lang.String,
+    bufferInterval: scala.Int | scala.Double = null,
+    bufferSize: scala.Int | scala.Double = null,
+    compressionFormat: java.lang.String = null,
+    kmsKeyArn: java.lang.String = null,
+    prefix: java.lang.String = null
+  ): Anon_BucketArnBufferInterval = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucketArn")(bucketArn)
+    __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions)
+    __obj.updateDynamic("roleArn")(roleArn)
+    if (bufferInterval != null) __obj.updateDynamic("bufferInterval")(bufferInterval.asInstanceOf[js.Any])
+    if (bufferSize != null) __obj.updateDynamic("bufferSize")(bufferSize.asInstanceOf[js.Any])
+    if (compressionFormat != null) __obj.updateDynamic("compressionFormat")(compressionFormat)
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[Anon_BucketArnBufferInterval]
+  }
+}
+

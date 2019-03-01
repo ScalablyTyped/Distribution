@@ -29,3 +29,20 @@ trait StackTrace extends js.Object {
   var parentId: js.UndefOr[StackTraceId] = js.undefined
 }
 
+object StackTrace {
+  @scala.inline
+  def apply(
+    callFrames: js.Array[CallFrame],
+    description: java.lang.String = null,
+    parent: StackTrace = null,
+    parentId: StackTraceId = null
+  ): StackTrace = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callFrames")(callFrames)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    __obj.asInstanceOf[StackTrace]
+  }
+}
+

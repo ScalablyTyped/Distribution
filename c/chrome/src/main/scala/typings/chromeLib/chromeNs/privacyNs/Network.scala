@@ -13,3 +13,18 @@ trait Network extends js.Object {
   var webRTCNonProxiedUdpEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
 }
 
+object Network {
+  @scala.inline
+  def apply(
+    networkPredictionEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
+    webRTCMultipleRoutesEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
+    webRTCNonProxiedUdpEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
+  ): Network = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("networkPredictionEnabled")(networkPredictionEnabled)
+    __obj.updateDynamic("webRTCMultipleRoutesEnabled")(webRTCMultipleRoutesEnabled)
+    __obj.updateDynamic("webRTCNonProxiedUdpEnabled")(webRTCNonProxiedUdpEnabled)
+    __obj.asInstanceOf[Network]
+  }
+}
+

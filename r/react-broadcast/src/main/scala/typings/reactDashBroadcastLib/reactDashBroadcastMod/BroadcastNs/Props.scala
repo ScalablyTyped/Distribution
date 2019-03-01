@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
   var value: T
 }
 
+object Props {
+  @scala.inline
+  def apply[T](channel: java.lang.String, children: reactLib.reactMod.ReactNs.ReactNode, value: T): Props[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props[T]]
+  }
+}
+

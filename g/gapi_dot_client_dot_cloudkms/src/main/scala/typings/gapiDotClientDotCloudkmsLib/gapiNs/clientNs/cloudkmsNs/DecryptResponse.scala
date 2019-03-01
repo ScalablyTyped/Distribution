@@ -10,3 +10,12 @@ trait DecryptResponse extends js.Object {
   var plaintext: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DecryptResponse {
+  @scala.inline
+  def apply(plaintext: java.lang.String = null): DecryptResponse = {
+    val __obj = js.Dynamic.literal()
+    if (plaintext != null) __obj.updateDynamic("plaintext")(plaintext)
+    __obj.asInstanceOf[DecryptResponse]
+  }
+}
+

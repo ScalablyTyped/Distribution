@@ -20,3 +20,42 @@ trait FiltersResource extends js.Object {
   def update(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId): gapiDotClientLib.gapiNs.clientNs.Request[Filter]
 }
 
+object FiltersResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Filters]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsFilterId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Filter]
+    ]
+  ): FiltersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[FiltersResource]
+  }
+}
+

@@ -41,3 +41,24 @@ trait FloatingObjectTextWrappingSettings extends js.Object {
   var topDistance: scala.Double
 }
 
+object FloatingObjectTextWrappingSettings {
+  @scala.inline
+  def apply(
+    bottomDistance: scala.Double,
+    floatingObjectTextWrapSide: js.Any,
+    floatingObjectTextWrapType: js.Any,
+    leftDistance: scala.Double,
+    rightDistance: scala.Double,
+    topDistance: scala.Double
+  ): FloatingObjectTextWrappingSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottomDistance")(bottomDistance)
+    __obj.updateDynamic("floatingObjectTextWrapSide")(floatingObjectTextWrapSide)
+    __obj.updateDynamic("floatingObjectTextWrapType")(floatingObjectTextWrapType)
+    __obj.updateDynamic("leftDistance")(leftDistance)
+    __obj.updateDynamic("rightDistance")(rightDistance)
+    __obj.updateDynamic("topDistance")(topDistance)
+    __obj.asInstanceOf[FloatingObjectTextWrappingSettings]
+  }
+}
+

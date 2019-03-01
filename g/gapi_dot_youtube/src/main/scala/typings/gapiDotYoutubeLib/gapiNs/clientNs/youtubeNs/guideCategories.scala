@@ -14,3 +14,19 @@ trait guideCategories extends js.Object {
   ]
 }
 
+object guideCategories {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotYoutubeLib.Anon_Hl, 
+      gapiLib.gapiNs.clientNs.HttpRequest[
+        gapiDotYoutubeLib.GoogleApiYouTubePageInfo[gapiDotYoutubeLib.GoogleApiYouTubeGuideCategoryResource]
+      ]
+    ]
+  ): guideCategories = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[guideCategories]
+  }
+}
+

@@ -88,3 +88,36 @@ trait ReplOptions extends js.Object {
   var writer: js.UndefOr[REPLWriter] = js.undefined
 }
 
+object ReplOptions {
+  @scala.inline
+  def apply(
+    breakEvalOnSigint: js.UndefOr[scala.Boolean] = js.undefined,
+    completer: nodeLib.readlineMod.Completer | nodeLib.readlineMod.AsyncCompleter = null,
+    eval: REPLEval = null,
+    ignoreUndefined: js.UndefOr[scala.Boolean] = js.undefined,
+    input: nodeLib.NodeJSNs.ReadableStream = null,
+    output: nodeLib.NodeJSNs.WritableStream = null,
+    prompt: java.lang.String = null,
+    replMode: js.Symbol = null,
+    terminal: js.UndefOr[scala.Boolean] = js.undefined,
+    useColors: js.UndefOr[scala.Boolean] = js.undefined,
+    useGlobal: js.UndefOr[scala.Boolean] = js.undefined,
+    writer: REPLWriter = null
+  ): ReplOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(breakEvalOnSigint)) __obj.updateDynamic("breakEvalOnSigint")(breakEvalOnSigint)
+    if (completer != null) __obj.updateDynamic("completer")(completer.asInstanceOf[js.Any])
+    if (eval != null) __obj.updateDynamic("eval")(eval)
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (replMode != null) __obj.updateDynamic("replMode")(replMode)
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal)
+    if (!js.isUndefined(useColors)) __obj.updateDynamic("useColors")(useColors)
+    if (!js.isUndefined(useGlobal)) __obj.updateDynamic("useGlobal")(useGlobal)
+    if (writer != null) __obj.updateDynamic("writer")(writer)
+    __obj.asInstanceOf[ReplOptions]
+  }
+}
+

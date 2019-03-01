@@ -10,3 +10,13 @@ trait FlashPoint extends js.Object {
   var y: scala.Double
 }
 
+object FlashPoint {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): FlashPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[FlashPoint]
+  }
+}
+

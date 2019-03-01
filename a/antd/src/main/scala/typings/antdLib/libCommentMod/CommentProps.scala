@@ -26,3 +26,30 @@ trait CommentProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object CommentProps {
+  @scala.inline
+  def apply(
+    content: reactLib.reactMod.ReactNs.ReactNode,
+    actions: js.Array[reactLib.reactMod.ReactNs.ReactNode] = null,
+    author: reactLib.reactMod.ReactNs.ReactNode = null,
+    avatar: reactLib.reactMod.ReactNs.ReactNode = null,
+    children: js.Any = null,
+    className: java.lang.String = null,
+    datetime: reactLib.reactMod.ReactNs.ReactNode = null,
+    prefixCls: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): CommentProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (datetime != null) __obj.updateDynamic("datetime")(datetime.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[CommentProps]
+  }
+}
+

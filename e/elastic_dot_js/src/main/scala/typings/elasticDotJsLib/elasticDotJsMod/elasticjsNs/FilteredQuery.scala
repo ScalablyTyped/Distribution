@@ -50,3 +50,28 @@ trait FilteredQuery extends Query {
   def toJSON(): js.Any
 }
 
+object FilteredQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, FilteredQuery],
+    cache: js.Function1[scala.Boolean, FilteredQuery],
+    cacheKey: js.Function1[java.lang.String, FilteredQuery],
+    filter: js.Function1[js.Object, FilteredQuery],
+    query: js.Function1[js.Object, FilteredQuery],
+    strategy: js.Function1[java.lang.String, FilteredQuery],
+    toJSON: js.Function0[js.Any]
+  ): FilteredQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("strategy")(strategy)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[FilteredQuery]
+  }
+}
+

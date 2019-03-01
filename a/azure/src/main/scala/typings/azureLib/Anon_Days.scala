@@ -10,3 +10,13 @@ trait Anon_Days extends js.Object {
   var Enabled: scala.Boolean
 }
 
+object Anon_Days {
+  @scala.inline
+  def apply(Days: scala.Double, Enabled: scala.Boolean): Anon_Days = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Days")(Days)
+    __obj.updateDynamic("Enabled")(Enabled)
+    __obj.asInstanceOf[Anon_Days]
+  }
+}
+

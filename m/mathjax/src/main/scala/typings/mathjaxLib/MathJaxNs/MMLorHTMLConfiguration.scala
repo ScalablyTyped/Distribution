@@ -19,3 +19,12 @@ trait MMLorHTMLConfiguration extends js.Object {
   var prefer: js.UndefOr[BrowserPreference] = js.undefined
 }
 
+object MMLorHTMLConfiguration {
+  @scala.inline
+  def apply(prefer: BrowserPreference = null): MMLorHTMLConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (prefer != null) __obj.updateDynamic("prefer")(prefer)
+    __obj.asInstanceOf[MMLorHTMLConfiguration]
+  }
+}
+

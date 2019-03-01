@@ -9,3 +9,17 @@ trait Anon_ExtraArgument extends js.Object {
   def withExtraArgument[E](extraArgument: E): reduxDashThunkLib.reduxDashThunkMod.ThunkMiddleware[js.Object, reduxLib.reduxMod.AnyAction, E]
 }
 
+object Anon_ExtraArgument {
+  @scala.inline
+  def apply(
+    withExtraArgument: js.Function1[
+      js.Any, 
+      reduxDashThunkLib.reduxDashThunkMod.ThunkMiddleware[js.Object, reduxLib.reduxMod.AnyAction, js.Any]
+    ]
+  ): Anon_ExtraArgument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("withExtraArgument")(withExtraArgument)
+    __obj.asInstanceOf[Anon_ExtraArgument]
+  }
+}
+

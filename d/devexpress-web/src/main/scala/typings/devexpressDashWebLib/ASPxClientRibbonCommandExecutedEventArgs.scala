@@ -21,3 +21,14 @@ trait ASPxClientRibbonCommandExecutedEventArgs extends ASPxClientProcessingModeE
   var parameter: java.lang.String
 }
 
+object ASPxClientRibbonCommandExecutedEventArgs {
+  @scala.inline
+  def apply(item: ASPxClientRibbonItem, parameter: java.lang.String, processOnServer: scala.Boolean): ASPxClientRibbonCommandExecutedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("parameter")(parameter)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[ASPxClientRibbonCommandExecutedEventArgs]
+  }
+}
+

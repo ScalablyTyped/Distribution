@@ -41,3 +41,28 @@ trait Rule extends js.Object {
   var value: js.UndefOr[js.Function1[/* x */ java.lang.String, java.lang.String]] = js.undefined
 }
 
+object Rule {
+  @scala.inline
+  def apply(
+    error: mooLib.mooLibNumbers.`true` = null,
+    lineBreaks: js.UndefOr[scala.Boolean] = js.undefined,
+    `match`: stdLib.RegExp | java.lang.String | js.Array[java.lang.String] = null,
+    next: java.lang.String = null,
+    pop: scala.Int | scala.Double = null,
+    push: java.lang.String = null,
+    `type`: TypeMapper = null,
+    value: js.Function1[/* x */ java.lang.String, java.lang.String] = null
+  ): Rule = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(lineBreaks)) __obj.updateDynamic("lineBreaks")(lineBreaks)
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (pop != null) __obj.updateDynamic("pop")(pop.asInstanceOf[js.Any])
+    if (push != null) __obj.updateDynamic("push")(push)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Rule]
+  }
+}
+

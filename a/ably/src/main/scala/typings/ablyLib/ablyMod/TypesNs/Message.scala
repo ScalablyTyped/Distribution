@@ -16,3 +16,28 @@ trait Message extends js.Object {
   var timestamp: scala.Double
 }
 
+object Message {
+  @scala.inline
+  def apply(
+    clientId: java.lang.String,
+    connectionId: java.lang.String,
+    data: js.Any,
+    encoding: java.lang.String,
+    extras: js.Any,
+    id: java.lang.String,
+    name: java.lang.String,
+    timestamp: scala.Double
+  ): Message = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("connectionId")(connectionId)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("encoding")(encoding)
+    __obj.updateDynamic("extras")(extras)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[Message]
+  }
+}
+

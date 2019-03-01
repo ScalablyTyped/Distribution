@@ -14,3 +14,18 @@ trait ThreatListDescriptor extends js.Object {
   var threatType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ThreatListDescriptor {
+  @scala.inline
+  def apply(
+    platformType: java.lang.String = null,
+    threatEntryType: java.lang.String = null,
+    threatType: java.lang.String = null
+  ): ThreatListDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
+    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType)
+    if (threatType != null) __obj.updateDynamic("threatType")(threatType)
+    __obj.asInstanceOf[ThreatListDescriptor]
+  }
+}
+

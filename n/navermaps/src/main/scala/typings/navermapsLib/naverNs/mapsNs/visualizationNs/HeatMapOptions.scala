@@ -13,3 +13,22 @@ trait HeatMapOptions extends js.Object {
   var radius: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HeatMapOptions {
+  @scala.inline
+  def apply(
+    data: js.Array[navermapsLib.naverNs.mapsNs.LatLng] | js.Array[navermapsLib.naverNs.mapsNs.PointArrayLiteral] | js.Array[WeightedLocation],
+    map: navermapsLib.naverNs.mapsNs.Map,
+    colorMap: SpectrumStyle = null,
+    opacity: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null
+  ): HeatMapOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("map")(map)
+    if (colorMap != null) __obj.updateDynamic("colorMap")(colorMap)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeatMapOptions]
+  }
+}
+

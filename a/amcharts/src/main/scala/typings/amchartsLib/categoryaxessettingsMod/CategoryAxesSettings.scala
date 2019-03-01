@@ -136,3 +136,60 @@ trait CategoryAxesSettings extends js.Object {
   var tickLength: scala.Double
 }
 
+object CategoryAxesSettings {
+  @scala.inline
+  def apply(
+    autoGridCount: scala.Boolean,
+    axisAlpha: scala.Double,
+    axisColor: java.lang.String,
+    axisHeight: scala.Double,
+    axisThickness: scala.Double,
+    color: java.lang.String,
+    dashLength: scala.Double,
+    dateFormats: js.Array[_],
+    equalSpacing: scala.Boolean,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    fontSize: java.lang.String,
+    gridAlpha: scala.Double,
+    gridColor: java.lang.String,
+    gridCount: scala.Double,
+    gridThickness: scala.Double,
+    groupToPeriods: js.Array[_],
+    inside: scala.Boolean,
+    labelRotation: scala.Double,
+    maxSeries: scala.Double,
+    minPeriod: java.lang.String,
+    position: java.lang.String,
+    startOnAxis: scala.Boolean,
+    tickLength: scala.Double
+  ): CategoryAxesSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoGridCount")(autoGridCount)
+    __obj.updateDynamic("axisAlpha")(axisAlpha)
+    __obj.updateDynamic("axisColor")(axisColor)
+    __obj.updateDynamic("axisHeight")(axisHeight)
+    __obj.updateDynamic("axisThickness")(axisThickness)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("dashLength")(dashLength)
+    __obj.updateDynamic("dateFormats")(dateFormats)
+    __obj.updateDynamic("equalSpacing")(equalSpacing)
+    __obj.updateDynamic("fillAlpha")(fillAlpha)
+    __obj.updateDynamic("fillColor")(fillColor)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("gridAlpha")(gridAlpha)
+    __obj.updateDynamic("gridColor")(gridColor)
+    __obj.updateDynamic("gridCount")(gridCount)
+    __obj.updateDynamic("gridThickness")(gridThickness)
+    __obj.updateDynamic("groupToPeriods")(groupToPeriods)
+    __obj.updateDynamic("inside")(inside)
+    __obj.updateDynamic("labelRotation")(labelRotation)
+    __obj.updateDynamic("maxSeries")(maxSeries)
+    __obj.updateDynamic("minPeriod")(minPeriod)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("startOnAxis")(startOnAxis)
+    __obj.updateDynamic("tickLength")(tickLength)
+    __obj.asInstanceOf[CategoryAxesSettings]
+  }
+}
+

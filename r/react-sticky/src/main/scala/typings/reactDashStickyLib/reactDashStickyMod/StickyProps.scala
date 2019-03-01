@@ -20,3 +20,36 @@ trait StickyProps extends js.Object {
   def children(args: StickyChildArgs): reactLib.reactMod.ReactNs.ReactElement[_]
 }
 
+object StickyProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[StickyChildArgs, reactLib.reactMod.ReactNs.ReactElement[_]],
+    bottomOffset: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    disableCompensation: js.UndefOr[scala.Boolean] = js.undefined,
+    disableHardwareAcceleration: js.UndefOr[scala.Boolean] = js.undefined,
+    isActive: js.UndefOr[scala.Boolean] = js.undefined,
+    onStickyStateChange: js.Function1[/* isSticky */ scala.Boolean, scala.Unit] = null,
+    relative: js.UndefOr[scala.Boolean] = js.undefined,
+    stickyClassName: java.lang.String = null,
+    stickyStyle: js.Any = null,
+    style: js.Any = null,
+    topOffset: scala.Int | scala.Double = null
+  ): StickyProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    if (bottomOffset != null) __obj.updateDynamic("bottomOffset")(bottomOffset.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disableCompensation)) __obj.updateDynamic("disableCompensation")(disableCompensation)
+    if (!js.isUndefined(disableHardwareAcceleration)) __obj.updateDynamic("disableHardwareAcceleration")(disableHardwareAcceleration)
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive)
+    if (onStickyStateChange != null) __obj.updateDynamic("onStickyStateChange")(onStickyStateChange)
+    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
+    if (stickyClassName != null) __obj.updateDynamic("stickyClassName")(stickyClassName)
+    if (stickyStyle != null) __obj.updateDynamic("stickyStyle")(stickyStyle)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (topOffset != null) __obj.updateDynamic("topOffset")(topOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StickyProps]
+  }
+}
+

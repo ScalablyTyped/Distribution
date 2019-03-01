@@ -17,3 +17,18 @@ import scala.scalajs.js.annotation._
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LinkProps {
+  @scala.inline
+  def apply(
+    AnchorHTMLAttributes: reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement] = null,
+    ButtonPropsCommon: ButtonPropsCommon = null,
+    color: reactDashFoundationLib.enumsMod.ButtonColors = null
+  ): LinkProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, AnchorHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, ButtonPropsCommon)
+    if (color != null) __obj.updateDynamic("color")(color)
+    __obj.asInstanceOf[LinkProps]
+  }
+}
+

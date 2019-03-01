@@ -86,3 +86,48 @@ trait VictoryZoomContainerProps extends VictoryContainerProps {
   var zoomDomain: js.UndefOr[DomainPropType] = js.undefined
 }
 
+object VictoryZoomContainerProps {
+  @scala.inline
+  def apply(
+    allowPan: js.UndefOr[scala.Boolean] = js.undefined,
+    allowZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    brushStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    clipContainerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    defaultBrushArea: victoryLib.victoryLibStrings.all | victoryLib.victoryLibStrings.none | victoryLib.victoryLibStrings.disable = null,
+    desc: java.lang.String = null,
+    disable: js.UndefOr[scala.Boolean] = js.undefined,
+    downsample: scala.Double | scala.Boolean = null,
+    events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
+    height: scala.Int | scala.Double = null,
+    minimumZoom: CursorData = null,
+    onZoomDomainChange: js.Function2[/* domain */ DomainPropType, /* props */ VictoryZoomContainerProps, scala.Unit] = null,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    title: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    zoomDimension: victoryLib.victoryLibStrings.x | victoryLib.victoryLibStrings.y = null,
+    zoomDomain: DomainPropType = null
+  ): VictoryZoomContainerProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowPan)) __obj.updateDynamic("allowPan")(allowPan)
+    if (!js.isUndefined(allowZoom)) __obj.updateDynamic("allowZoom")(allowZoom)
+    if (brushStyle != null) __obj.updateDynamic("brushStyle")(brushStyle)
+    if (clipContainerComponent != null) __obj.updateDynamic("clipContainerComponent")(clipContainerComponent)
+    if (defaultBrushArea != null) __obj.updateDynamic("defaultBrushArea")(defaultBrushArea.asInstanceOf[js.Any])
+    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (downsample != null) __obj.updateDynamic("downsample")(downsample.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (minimumZoom != null) __obj.updateDynamic("minimumZoom")(minimumZoom)
+    if (onZoomDomainChange != null) __obj.updateDynamic("onZoomDomainChange")(onZoomDomainChange)
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zoomDimension != null) __obj.updateDynamic("zoomDimension")(zoomDimension.asInstanceOf[js.Any])
+    if (zoomDomain != null) __obj.updateDynamic("zoomDomain")(zoomDomain.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryZoomContainerProps]
+  }
+}
+

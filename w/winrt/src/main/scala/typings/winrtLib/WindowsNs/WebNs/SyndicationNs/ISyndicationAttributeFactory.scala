@@ -13,3 +13,14 @@ trait ISyndicationAttributeFactory extends js.Object {
   ): SyndicationAttribute
 }
 
+object ISyndicationAttributeFactory {
+  @scala.inline
+  def apply(
+    createSyndicationAttribute: js.Function3[java.lang.String, java.lang.String, java.lang.String, SyndicationAttribute]
+  ): ISyndicationAttributeFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createSyndicationAttribute")(createSyndicationAttribute)
+    __obj.asInstanceOf[ISyndicationAttributeFactory]
+  }
+}
+

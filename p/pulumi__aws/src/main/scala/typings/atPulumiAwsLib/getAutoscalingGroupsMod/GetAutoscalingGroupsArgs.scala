@@ -12,3 +12,12 @@ trait GetAutoscalingGroupsArgs extends js.Object {
   val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
 }
 
+object GetAutoscalingGroupsArgs {
+  @scala.inline
+  def apply(filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null): GetAutoscalingGroupsArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    __obj.asInstanceOf[GetAutoscalingGroupsArgs]
+  }
+}
+

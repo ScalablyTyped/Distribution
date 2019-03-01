@@ -26,3 +26,40 @@ trait RSAPrivateKey extends js.Object {
   def toSchema(): js.Any
 }
 
+object RSAPrivateKey {
+  @scala.inline
+  def apply(
+    coefficient: asn1jsLib.asn1jsMod.Integer,
+    exponent1: asn1jsLib.asn1jsMod.Integer,
+    exponent2: asn1jsLib.asn1jsMod.Integer,
+    fromJSON: js.Function1[stdLib.JsonWebKey, scala.Unit],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    modulus: asn1jsLib.asn1jsMod.Integer,
+    prime1: asn1jsLib.asn1jsMod.Integer,
+    prime2: asn1jsLib.asn1jsMod.Integer,
+    privateExponent: asn1jsLib.asn1jsMod.Integer,
+    publicExponent: asn1jsLib.asn1jsMod.Integer,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    version: scala.Double,
+    otherPrimeInfos: js.Array[pkijsLib.srcOtherPrimeInfoMod.default] = null
+  ): RSAPrivateKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coefficient")(coefficient)
+    __obj.updateDynamic("exponent1")(exponent1)
+    __obj.updateDynamic("exponent2")(exponent2)
+    __obj.updateDynamic("fromJSON")(fromJSON)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("modulus")(modulus)
+    __obj.updateDynamic("prime1")(prime1)
+    __obj.updateDynamic("prime2")(prime2)
+    __obj.updateDynamic("privateExponent")(privateExponent)
+    __obj.updateDynamic("publicExponent")(publicExponent)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.updateDynamic("version")(version)
+    if (otherPrimeInfos != null) __obj.updateDynamic("otherPrimeInfos")(otherPrimeInfos)
+    __obj.asInstanceOf[RSAPrivateKey]
+  }
+}
+

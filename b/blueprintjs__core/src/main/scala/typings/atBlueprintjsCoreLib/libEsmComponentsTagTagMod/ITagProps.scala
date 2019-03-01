@@ -83,3 +83,47 @@ import scala.scalajs.js.annotation._
   var round: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ITagProps {
+  @scala.inline
+  def apply(
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement] = null,
+    IIntentProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps = null,
+    IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
+    interactive: js.UndefOr[scala.Boolean] = js.undefined,
+    large: js.UndefOr[scala.Boolean] = js.undefined,
+    minimal: js.UndefOr[scala.Boolean] = js.undefined,
+    multiline: js.UndefOr[scala.Boolean] = js.undefined,
+    onClick: js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onRemove: js.Function2[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement, reactLib.NativeMouseEvent], 
+      /* tagProps */ ITagProps, 
+      scala.Unit
+    ] = null,
+    rightIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
+    round: js.UndefOr[scala.Boolean] = js.undefined
+  ): ITagProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, IIntentProps)
+    js.Dynamic.global.Object.assign(__obj, IProps)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
+    __obj.asInstanceOf[ITagProps]
+  }
+}
+

@@ -44,3 +44,30 @@ trait GetStreamResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetStreamResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    closedShards: js.Array[java.lang.String],
+    creationTimestamp: scala.Double,
+    id: java.lang.String,
+    openShards: js.Array[java.lang.String],
+    retentionPeriod: scala.Double,
+    shardLevelMetrics: js.Array[java.lang.String],
+    status: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetStreamResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("closedShards")(closedShards)
+    __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("openShards")(openShards)
+    __obj.updateDynamic("retentionPeriod")(retentionPeriod)
+    __obj.updateDynamic("shardLevelMetrics")(shardLevelMetrics)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetStreamResult]
+  }
+}
+

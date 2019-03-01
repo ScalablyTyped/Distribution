@@ -19,3 +19,26 @@ trait config extends js.Object {
   var webhook: js.UndefOr[telebotLib.Anon_Cert] = js.undefined
 }
 
+object config {
+  @scala.inline
+  def apply(
+    token: java.lang.String,
+    allowedUpdates: js.Array[java.lang.String] = null,
+    pluginConfig: js.Any = null,
+    pluginFolder: java.lang.String = null,
+    polling: telebotLib.Anon_Interval = null,
+    usePlugins: js.Array[java.lang.String] = null,
+    webhook: telebotLib.Anon_Cert = null
+  ): config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("token")(token)
+    if (allowedUpdates != null) __obj.updateDynamic("allowedUpdates")(allowedUpdates)
+    if (pluginConfig != null) __obj.updateDynamic("pluginConfig")(pluginConfig)
+    if (pluginFolder != null) __obj.updateDynamic("pluginFolder")(pluginFolder)
+    if (polling != null) __obj.updateDynamic("polling")(polling)
+    if (usePlugins != null) __obj.updateDynamic("usePlugins")(usePlugins)
+    if (webhook != null) __obj.updateDynamic("webhook")(webhook)
+    __obj.asInstanceOf[config]
+  }
+}
+

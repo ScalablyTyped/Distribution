@@ -13,3 +13,22 @@ trait Anon_Mp4 extends js.Object {
   var webp_size: java.lang.String
 }
 
+object Anon_Mp4 {
+  @scala.inline
+  def apply(
+    mp4: java.lang.String,
+    mp4_size: java.lang.String,
+    size: java.lang.String,
+    webp: java.lang.String,
+    webp_size: java.lang.String
+  ): Anon_Mp4 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mp4")(mp4)
+    __obj.updateDynamic("mp4_size")(mp4_size)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("webp")(webp)
+    __obj.updateDynamic("webp_size")(webp_size)
+    __obj.asInstanceOf[Anon_Mp4]
+  }
+}
+

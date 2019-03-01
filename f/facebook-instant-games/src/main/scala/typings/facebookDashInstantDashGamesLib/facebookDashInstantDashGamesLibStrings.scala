@@ -7,106 +7,140 @@ import scala.scalajs.js.annotation._
 
 object facebookDashInstantDashGamesLibStrings {
   @js.native
-  sealed trait ADS_FREQUENT_LOAD extends js.Object
+  sealed trait ADS_FREQUENT_LOAD
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait ADS_NOT_LOADED extends js.Object
+  sealed trait ADS_NOT_LOADED
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait ADS_NO_FILL extends js.Object
+  sealed trait ADS_NO_FILL
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait ADS_TOO_MANY_INSTANCES extends js.Object
+  sealed trait ADS_TOO_MANY_INSTANCES
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait ANALYTICS_POST_EXCEPTION extends js.Object
+  sealed trait ANALYTICS_POST_EXCEPTION
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait ANDROID extends js.Object
+  sealed trait ANDROID
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Platform
   
   @js.native
-  sealed trait CHALLENGE extends js.Object
+  sealed trait CHALLENGE
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Intent
   
   @js.native
-  sealed trait CLIENT_REQUIRES_UPDATE extends js.Object
+  sealed trait CLIENT_REQUIRES_UPDATE
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait CLIENT_UNSUPPORTED_OPERATION extends js.Object
+  sealed trait CLIENT_UNSUPPORTED_OPERATION
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait CUSTOM extends js.Object
+  sealed trait CUSTOM
+    extends facebookDashInstantDashGamesLib.FBInstantNs.UpdateAction
   
   @js.native
-  sealed trait GROUP extends js.Object
+  sealed trait GROUP
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Type
   
   @js.native
-  sealed trait INCLUDE_EXISTING_CHALLENGES extends js.Object
+  sealed trait INCLUDE_EXISTING_CHALLENGES
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ContextFilter
   
   @js.native
-  sealed trait INVALID_OPERATION extends js.Object
+  sealed trait INVALID_OPERATION
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait INVALID_PARAM extends js.Object
+  sealed trait INVALID_PARAM
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait INVITE extends js.Object
+  sealed trait INVITE
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Intent
   
   @js.native
-  sealed trait IOS extends js.Object
+  sealed trait IOS
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Platform
   
   @js.native
-  sealed trait LEADERBOARD extends js.Object
+  sealed trait LEADERBOARD
+    extends facebookDashInstantDashGamesLib.FBInstantNs.UpdateAction
   
   @js.native
-  sealed trait LEADERBOARD_NOT_FOUND extends js.Object
+  sealed trait LEADERBOARD_NOT_FOUND
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait LEADERBOARD_WRONG_CONTEXT extends js.Object
+  sealed trait LEADERBOARD_WRONG_CONTEXT
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait MOBILE_WEB extends js.Object
+  sealed trait MOBILE_WEB
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Platform
   
   @js.native
-  sealed trait NETWORK_FAILURE extends js.Object
+  sealed trait NETWORK_FAILURE
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait NEW_CONTEXT_ONLY extends js.Object
+  sealed trait NEW_CONTEXT_ONLY
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ContextFilter
   
   @js.native
-  sealed trait NEW_PLAYERS_ONLY extends js.Object
+  sealed trait NEW_PLAYERS_ONLY
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ContextFilter
   
   @js.native
-  sealed trait PENDING_REQUEST extends js.Object
+  sealed trait PENDING_REQUEST
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Type
   
   @js.native
-  sealed trait RATE_LIMITED extends js.Object
+  sealed trait RATE_LIMITED
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait REQUEST extends js.Object
+  sealed trait REQUEST
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Intent
   
   @js.native
-  sealed trait SAME_CONTEXT extends js.Object
+  sealed trait SAME_CONTEXT
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait SHARE extends js.Object
+  sealed trait SHARE
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Intent
   
   @js.native
-  sealed trait SOLO extends js.Object
+  sealed trait SOLO
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Type
   
   @js.native
-  sealed trait THREAD extends js.Object
+  sealed trait THREAD
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Type
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait USER_INPUT extends js.Object
+  sealed trait USER_INPUT
+    extends facebookDashInstantDashGamesLib.FBInstantNs.ErrorCodeType
   
   @js.native
-  sealed trait WEB extends js.Object
+  sealed trait WEB
+    extends facebookDashInstantDashGamesLib.FBInstantNs.Platform
   
   @scala.inline
   def ADS_FREQUENT_LOAD: ADS_FREQUENT_LOAD = "ADS_FREQUENT_LOAD".asInstanceOf[ADS_FREQUENT_LOAD]

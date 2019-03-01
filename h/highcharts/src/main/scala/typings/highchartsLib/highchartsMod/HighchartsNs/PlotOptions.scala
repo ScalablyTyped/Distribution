@@ -39,3 +39,58 @@ trait PlotOptions extends js.Object {
   var waterfall: js.UndefOr[WaterFallChart] = js.undefined
 }
 
+object PlotOptions {
+  @scala.inline
+  def apply(
+    area: AreaChart = null,
+    arearange: AreaRangeChart = null,
+    areaspline: AreaSplineChart = null,
+    areasplinerange: AreaSplineRangeChart = null,
+    bar: BarChart = null,
+    boxplot: BoxPlotChart = null,
+    bubble: BubbleChart = null,
+    column: ColumnChart = null,
+    columnrange: ColumnRangeChart = null,
+    errorbar: ErrorBarChart = null,
+    funnel: FunnelChart = null,
+    gauge: GaugeChart = null,
+    heatmap: HeatMapChart = null,
+    line: LineChart = null,
+    pie: PieChart = null,
+    polygon: PolygonChart = null,
+    pyramid: PyramidChart = null,
+    scatter: ScatterChart = null,
+    series: SeriesChart = null,
+    solidgauge: SolidGaugeChart = null,
+    spline: SplineChart = null,
+    treemap: TreeMapChart = null,
+    waterfall: WaterFallChart = null
+  ): PlotOptions = {
+    val __obj = js.Dynamic.literal()
+    if (area != null) __obj.updateDynamic("area")(area)
+    if (arearange != null) __obj.updateDynamic("arearange")(arearange)
+    if (areaspline != null) __obj.updateDynamic("areaspline")(areaspline)
+    if (areasplinerange != null) __obj.updateDynamic("areasplinerange")(areasplinerange)
+    if (bar != null) __obj.updateDynamic("bar")(bar)
+    if (boxplot != null) __obj.updateDynamic("boxplot")(boxplot)
+    if (bubble != null) __obj.updateDynamic("bubble")(bubble)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (columnrange != null) __obj.updateDynamic("columnrange")(columnrange)
+    if (errorbar != null) __obj.updateDynamic("errorbar")(errorbar)
+    if (funnel != null) __obj.updateDynamic("funnel")(funnel)
+    if (gauge != null) __obj.updateDynamic("gauge")(gauge)
+    if (heatmap != null) __obj.updateDynamic("heatmap")(heatmap)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (pie != null) __obj.updateDynamic("pie")(pie)
+    if (polygon != null) __obj.updateDynamic("polygon")(polygon)
+    if (pyramid != null) __obj.updateDynamic("pyramid")(pyramid)
+    if (scatter != null) __obj.updateDynamic("scatter")(scatter)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (solidgauge != null) __obj.updateDynamic("solidgauge")(solidgauge)
+    if (spline != null) __obj.updateDynamic("spline")(spline)
+    if (treemap != null) __obj.updateDynamic("treemap")(treemap)
+    if (waterfall != null) __obj.updateDynamic("waterfall")(waterfall)
+    __obj.asInstanceOf[PlotOptions]
+  }
+}
+

@@ -13,3 +13,22 @@ trait AgentArtifactDefinition extends js.Object {
   var version: java.lang.String
 }
 
+object AgentArtifactDefinition {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    artifactType: AgentArtifactType,
+    details: java.lang.String,
+    name: java.lang.String,
+    version: java.lang.String
+  ): AgentArtifactDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alias")(alias)
+    __obj.updateDynamic("artifactType")(artifactType)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[AgentArtifactDefinition]
+  }
+}
+

@@ -42,3 +42,69 @@ trait MailMessage extends XMailMessage {
   ): scala.Unit
 }
 
+object MailMessage {
+  @scala.inline
+  def apply(
+    Attachments: activexDashInteropLib.SafeArray[MailAttachment],
+    BccRecipients: activexDashInteropLib.SafeArray[java.lang.String],
+    Body: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
+    CcRecipients: activexDashInteropLib.SafeArray[java.lang.String],
+    Recipients: activexDashInteropLib.SafeArray[java.lang.String],
+    ReplyToAddress: java.lang.String,
+    SenderAddress: java.lang.String,
+    SenderName: java.lang.String,
+    Subject: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addAttachment: js.Function1[MailAttachment, scala.Unit],
+    addBccRecipient: js.Function1[java.lang.String, scala.Unit],
+    addCcRecipient: js.Function1[java.lang.String, scala.Unit],
+    addRecipient: js.Function1[java.lang.String, scala.Unit],
+    create: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
+      scala.Unit
+    ],
+    createWithAttachment: js.Function5[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
+      MailAttachment, 
+      scala.Unit
+    ],
+    getAttachments: js.Function0[activexDashInteropLib.SafeArray[MailAttachment]],
+    getBccRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getCcRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getRecipients: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): MailMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Attachments")(Attachments)
+    __obj.updateDynamic("BccRecipients")(BccRecipients)
+    __obj.updateDynamic("Body")(Body)
+    __obj.updateDynamic("CcRecipients")(CcRecipients)
+    __obj.updateDynamic("Recipients")(Recipients)
+    __obj.updateDynamic("ReplyToAddress")(ReplyToAddress)
+    __obj.updateDynamic("SenderAddress")(SenderAddress)
+    __obj.updateDynamic("SenderName")(SenderName)
+    __obj.updateDynamic("Subject")(Subject)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addAttachment")(addAttachment)
+    __obj.updateDynamic("addBccRecipient")(addBccRecipient)
+    __obj.updateDynamic("addCcRecipient")(addCcRecipient)
+    __obj.updateDynamic("addRecipient")(addRecipient)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createWithAttachment")(createWithAttachment)
+    __obj.updateDynamic("getAttachments")(getAttachments)
+    __obj.updateDynamic("getBccRecipients")(getBccRecipients)
+    __obj.updateDynamic("getCcRecipients")(getCcRecipients)
+    __obj.updateDynamic("getRecipients")(getRecipients)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[MailMessage]
+  }
+}
+

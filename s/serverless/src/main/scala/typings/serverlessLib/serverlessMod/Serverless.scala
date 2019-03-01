@@ -21,3 +21,42 @@ trait Serverless extends js.Object {
   def setProvider(name: java.lang.String, provider: serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced): scala.Null
 }
 
+object Serverless {
+  @scala.inline
+  def apply(
+    cli: serverlessLib.Anon_Log,
+    config: serverlessLib.serverlessMod.ServerlessNs.Config,
+    getProvider: js.Function1[java.lang.String, serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced],
+    getVersion: js.Function0[java.lang.String],
+    init: js.Function0[js.Promise[_]],
+    pluginManager: serverlessLib.classesPluginManagerMod.namespaced,
+    run: js.Function0[js.Promise[_]],
+    serverlessDirPath: java.lang.String,
+    service: serverlessLib.classesServiceMod.namespaced,
+    setProvider: js.Function2[
+      java.lang.String, 
+      serverlessLib.pluginsAwsProviderAwsProviderMod.namespaced, 
+      scala.Null
+    ],
+    utils: serverlessLib.classesUtilsMod.namespaced,
+    version: java.lang.String,
+    yamlParser: serverlessLib.classesYamlParserMod.namespaced
+  ): Serverless = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cli")(cli)
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("getProvider")(getProvider)
+    __obj.updateDynamic("getVersion")(getVersion)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("pluginManager")(pluginManager)
+    __obj.updateDynamic("run")(run)
+    __obj.updateDynamic("serverlessDirPath")(serverlessDirPath)
+    __obj.updateDynamic("service")(service)
+    __obj.updateDynamic("setProvider")(setProvider)
+    __obj.updateDynamic("utils")(utils)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("yamlParser")(yamlParser)
+    __obj.asInstanceOf[Serverless]
+  }
+}
+

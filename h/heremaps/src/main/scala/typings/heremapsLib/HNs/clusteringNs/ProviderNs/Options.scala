@@ -19,3 +19,20 @@ trait Options extends js.Object {
   var theme: js.UndefOr[heremapsLib.HNs.clusteringNs.ITheme] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    clusteringOptions: ClusteringOptions = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    theme: heremapsLib.HNs.clusteringNs.ITheme = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (clusteringOptions != null) __obj.updateDynamic("clusteringOptions")(clusteringOptions)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[Options]
+  }
+}
+

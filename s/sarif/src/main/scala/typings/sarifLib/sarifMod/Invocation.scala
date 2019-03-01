@@ -115,3 +115,64 @@ trait Invocation extends js.Object {
   var workingDirectory: js.UndefOr[ArtifactLocation] = js.undefined
 }
 
+object Invocation {
+  @scala.inline
+  def apply(
+    account: java.lang.String = null,
+    arguments: js.Array[java.lang.String] = null,
+    attachments: js.Array[Attachment] = null,
+    commandLine: java.lang.String = null,
+    configurationNotifications: js.Array[Notification] = null,
+    endTimeUtc: java.lang.String = null,
+    environmentVariables: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    executableLocation: ArtifactLocation = null,
+    exitCode: scala.Int | scala.Double = null,
+    exitCodeDescription: java.lang.String = null,
+    exitSignalName: java.lang.String = null,
+    exitSignalNumber: scala.Int | scala.Double = null,
+    machine: java.lang.String = null,
+    processId: scala.Int | scala.Double = null,
+    processStartFailureMessage: java.lang.String = null,
+    properties: PropertyBag = null,
+    reportingConfigurationOverrides: js.Array[ReportingConfigurationOverride] = null,
+    responseFiles: js.Array[ArtifactLocation] = null,
+    startTimeUtc: java.lang.String = null,
+    stderr: ArtifactLocation = null,
+    stdin: ArtifactLocation = null,
+    stdout: ArtifactLocation = null,
+    stdoutStderr: ArtifactLocation = null,
+    toolExecutionSuccessful: js.UndefOr[scala.Boolean] = js.undefined,
+    toolNotifications: js.Array[Notification] = null,
+    workingDirectory: ArtifactLocation = null
+  ): Invocation = {
+    val __obj = js.Dynamic.literal()
+    if (account != null) __obj.updateDynamic("account")(account)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
+    if (configurationNotifications != null) __obj.updateDynamic("configurationNotifications")(configurationNotifications)
+    if (endTimeUtc != null) __obj.updateDynamic("endTimeUtc")(endTimeUtc)
+    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables)
+    if (executableLocation != null) __obj.updateDynamic("executableLocation")(executableLocation)
+    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode.asInstanceOf[js.Any])
+    if (exitCodeDescription != null) __obj.updateDynamic("exitCodeDescription")(exitCodeDescription)
+    if (exitSignalName != null) __obj.updateDynamic("exitSignalName")(exitSignalName)
+    if (exitSignalNumber != null) __obj.updateDynamic("exitSignalNumber")(exitSignalNumber.asInstanceOf[js.Any])
+    if (machine != null) __obj.updateDynamic("machine")(machine)
+    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
+    if (processStartFailureMessage != null) __obj.updateDynamic("processStartFailureMessage")(processStartFailureMessage)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (reportingConfigurationOverrides != null) __obj.updateDynamic("reportingConfigurationOverrides")(reportingConfigurationOverrides)
+    if (responseFiles != null) __obj.updateDynamic("responseFiles")(responseFiles)
+    if (startTimeUtc != null) __obj.updateDynamic("startTimeUtc")(startTimeUtc)
+    if (stderr != null) __obj.updateDynamic("stderr")(stderr)
+    if (stdin != null) __obj.updateDynamic("stdin")(stdin)
+    if (stdout != null) __obj.updateDynamic("stdout")(stdout)
+    if (stdoutStderr != null) __obj.updateDynamic("stdoutStderr")(stdoutStderr)
+    if (!js.isUndefined(toolExecutionSuccessful)) __obj.updateDynamic("toolExecutionSuccessful")(toolExecutionSuccessful)
+    if (toolNotifications != null) __obj.updateDynamic("toolNotifications")(toolNotifications)
+    if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory)
+    __obj.asInstanceOf[Invocation]
+  }
+}
+

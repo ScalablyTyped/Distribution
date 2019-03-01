@@ -11,3 +11,18 @@ trait WitOption extends js.Object {
   var logger: js.UndefOr[nodeDashWitLib.nodeDashWitMod.logNs.Logger] = js.undefined
 }
 
+object WitOption {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    actions: js.Any = null,
+    logger: nodeDashWitLib.nodeDashWitMod.logNs.Logger = null
+  ): WitOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessToken")(accessToken)
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    __obj.asInstanceOf[WitOption]
+  }
+}
+

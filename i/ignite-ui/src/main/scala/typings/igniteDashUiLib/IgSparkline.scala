@@ -321,3 +321,127 @@ trait IgSparkline
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgSparkline {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igSparkline
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    brush: java.lang.String = null,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    displayNormalRangeInFront: js.UndefOr[scala.Boolean] = js.undefined,
+    displayType: java.lang.String = null,
+    firstMarkerBrush: java.lang.String = null,
+    firstMarkerSize: scala.Int | scala.Double = null,
+    firstMarkerVisibility: java.lang.String = null,
+    formatLabel: js.Any = null,
+    height: java.lang.String | scala.Double = null,
+    hideTooltip: HideTooltipEvent = null,
+    highMarkerBrush: java.lang.String = null,
+    highMarkerSize: scala.Int | scala.Double = null,
+    highMarkerVisibility: java.lang.String = null,
+    horizontalAxisBrush: java.lang.String = null,
+    horizontalAxisLabel: js.Any = null,
+    horizontalAxisVisibility: java.lang.String = null,
+    labelMemberPath: java.lang.String = null,
+    lastMarkerBrush: java.lang.String = null,
+    lastMarkerSize: scala.Int | scala.Double = null,
+    lastMarkerVisibility: java.lang.String = null,
+    lineThickness: scala.Int | scala.Double = null,
+    lowMarkerBrush: java.lang.String = null,
+    lowMarkerSize: scala.Int | scala.Double = null,
+    lowMarkerVisibility: java.lang.String = null,
+    markerBrush: java.lang.String = null,
+    markerSize: scala.Int | scala.Double = null,
+    markerVisibility: java.lang.String = null,
+    maxRecCount: scala.Int | scala.Double = null,
+    negativeBrush: java.lang.String = null,
+    negativeMarkerBrush: java.lang.String = null,
+    negativeMarkerSize: scala.Int | scala.Double = null,
+    negativeMarkerVisibility: java.lang.String = null,
+    normalRangeFill: java.lang.String = null,
+    normalRangeMaximum: scala.Int | scala.Double = null,
+    normalRangeMinimum: scala.Int | scala.Double = null,
+    normalRangeVisibility: java.lang.String = null,
+    pixelScalingRatio: scala.Int | scala.Double = null,
+    responseDataKey: java.lang.String = null,
+    responseTotalRecCountKey: java.lang.String = null,
+    tooltipTemplate: java.lang.String = null,
+    trendLineBrush: java.lang.String = null,
+    trendLinePeriod: scala.Int | scala.Double = null,
+    trendLineThickness: scala.Int | scala.Double = null,
+    trendLineType: java.lang.String = null,
+    unknownValuePlotting: java.lang.String = null,
+    updateTooltip: UpdateTooltipEvent = null,
+    valueMemberPath: java.lang.String = null,
+    verticalAxisBrush: java.lang.String = null,
+    verticalAxisLabel: js.Any = null,
+    verticalAxisVisibility: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): IgSparkline = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (brush != null) __obj.updateDynamic("brush")(brush)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (!js.isUndefined(displayNormalRangeInFront)) __obj.updateDynamic("displayNormalRangeInFront")(displayNormalRangeInFront)
+    if (displayType != null) __obj.updateDynamic("displayType")(displayType)
+    if (firstMarkerBrush != null) __obj.updateDynamic("firstMarkerBrush")(firstMarkerBrush)
+    if (firstMarkerSize != null) __obj.updateDynamic("firstMarkerSize")(firstMarkerSize.asInstanceOf[js.Any])
+    if (firstMarkerVisibility != null) __obj.updateDynamic("firstMarkerVisibility")(firstMarkerVisibility)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
+    if (highMarkerBrush != null) __obj.updateDynamic("highMarkerBrush")(highMarkerBrush)
+    if (highMarkerSize != null) __obj.updateDynamic("highMarkerSize")(highMarkerSize.asInstanceOf[js.Any])
+    if (highMarkerVisibility != null) __obj.updateDynamic("highMarkerVisibility")(highMarkerVisibility)
+    if (horizontalAxisBrush != null) __obj.updateDynamic("horizontalAxisBrush")(horizontalAxisBrush)
+    if (horizontalAxisLabel != null) __obj.updateDynamic("horizontalAxisLabel")(horizontalAxisLabel)
+    if (horizontalAxisVisibility != null) __obj.updateDynamic("horizontalAxisVisibility")(horizontalAxisVisibility)
+    if (labelMemberPath != null) __obj.updateDynamic("labelMemberPath")(labelMemberPath)
+    if (lastMarkerBrush != null) __obj.updateDynamic("lastMarkerBrush")(lastMarkerBrush)
+    if (lastMarkerSize != null) __obj.updateDynamic("lastMarkerSize")(lastMarkerSize.asInstanceOf[js.Any])
+    if (lastMarkerVisibility != null) __obj.updateDynamic("lastMarkerVisibility")(lastMarkerVisibility)
+    if (lineThickness != null) __obj.updateDynamic("lineThickness")(lineThickness.asInstanceOf[js.Any])
+    if (lowMarkerBrush != null) __obj.updateDynamic("lowMarkerBrush")(lowMarkerBrush)
+    if (lowMarkerSize != null) __obj.updateDynamic("lowMarkerSize")(lowMarkerSize.asInstanceOf[js.Any])
+    if (lowMarkerVisibility != null) __obj.updateDynamic("lowMarkerVisibility")(lowMarkerVisibility)
+    if (markerBrush != null) __obj.updateDynamic("markerBrush")(markerBrush)
+    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (markerVisibility != null) __obj.updateDynamic("markerVisibility")(markerVisibility)
+    if (maxRecCount != null) __obj.updateDynamic("maxRecCount")(maxRecCount.asInstanceOf[js.Any])
+    if (negativeBrush != null) __obj.updateDynamic("negativeBrush")(negativeBrush)
+    if (negativeMarkerBrush != null) __obj.updateDynamic("negativeMarkerBrush")(negativeMarkerBrush)
+    if (negativeMarkerSize != null) __obj.updateDynamic("negativeMarkerSize")(negativeMarkerSize.asInstanceOf[js.Any])
+    if (negativeMarkerVisibility != null) __obj.updateDynamic("negativeMarkerVisibility")(negativeMarkerVisibility)
+    if (normalRangeFill != null) __obj.updateDynamic("normalRangeFill")(normalRangeFill)
+    if (normalRangeMaximum != null) __obj.updateDynamic("normalRangeMaximum")(normalRangeMaximum.asInstanceOf[js.Any])
+    if (normalRangeMinimum != null) __obj.updateDynamic("normalRangeMinimum")(normalRangeMinimum.asInstanceOf[js.Any])
+    if (normalRangeVisibility != null) __obj.updateDynamic("normalRangeVisibility")(normalRangeVisibility)
+    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (trendLineBrush != null) __obj.updateDynamic("trendLineBrush")(trendLineBrush)
+    if (trendLinePeriod != null) __obj.updateDynamic("trendLinePeriod")(trendLinePeriod.asInstanceOf[js.Any])
+    if (trendLineThickness != null) __obj.updateDynamic("trendLineThickness")(trendLineThickness.asInstanceOf[js.Any])
+    if (trendLineType != null) __obj.updateDynamic("trendLineType")(trendLineType)
+    if (unknownValuePlotting != null) __obj.updateDynamic("unknownValuePlotting")(unknownValuePlotting)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath)
+    if (verticalAxisBrush != null) __obj.updateDynamic("verticalAxisBrush")(verticalAxisBrush)
+    if (verticalAxisLabel != null) __obj.updateDynamic("verticalAxisLabel")(verticalAxisLabel)
+    if (verticalAxisVisibility != null) __obj.updateDynamic("verticalAxisVisibility")(verticalAxisVisibility)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgSparkline]
+  }
+}
+

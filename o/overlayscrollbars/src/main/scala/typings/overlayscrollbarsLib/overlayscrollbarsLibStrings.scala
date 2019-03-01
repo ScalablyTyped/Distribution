@@ -7,91 +7,128 @@ import scala.scalajs.js.annotation._
 
 object overlayscrollbarsLibStrings {
   @js.native
-  sealed trait a extends js.Object
+  sealed trait a
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.VisibilityBehavior
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.VisibilityBehavior
   
   @js.native
-  sealed trait b extends js.Object
+  sealed trait b
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ResizeBehavior
   
   @js.native
-  sealed trait begin extends js.Object
+  sealed trait begin
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior
   
   @js.native
-  sealed trait both extends js.Object
+  sealed trait both
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ResizeBehavior
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior
   
   @js.native
-  sealed trait h extends js.Object
+  sealed trait h
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowBehavior
+       with overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ResizeBehavior
+       with overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.VisibilityBehavior
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hidden
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowBehavior
+       with overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.VisibilityBehavior
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ResizeBehavior
   
   @js.native
-  sealed trait ifneeded extends js.Object
+  sealed trait ifneeded
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior
   
   @js.native
-  sealed trait l extends js.Object
+  sealed trait l
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior
   
   @js.native
-  sealed trait leave extends js.Object
+  sealed trait leave
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait m
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait move
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior
   
   @js.native
-  sealed trait n extends js.Object
+  sealed trait n
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior
+       with overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ResizeBehavior
   
   @js.native
-  sealed trait nearest extends js.Object
+  sealed trait nearest
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.BlockBehavior
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait never
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior
+       with overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ScrollBehavior
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ResizeBehavior
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior
+       with overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowBehavior
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scroll
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.AutoHideBehavior
+       with overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowBehavior
   
   @js.native
-  sealed trait v extends js.Object
+  sealed trait v
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ResizeBehavior
+       with overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.VisibilityBehavior
   
   @js.native
-  sealed trait `v-h` extends js.Object
+  sealed trait `v-h`
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowBehavior
   
   @js.native
-  sealed trait `v-s` extends js.Object
+  sealed trait `v-s`
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowBehavior
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.ResizeBehavior
   
   @js.native
-  sealed trait visible extends js.Object
+  sealed trait visible
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.VisibilityBehavior
   
   @js.native
-  sealed trait `visible-hidden` extends js.Object
+  sealed trait `visible-hidden`
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowBehavior
   
   @js.native
-  sealed trait `visible-scroll` extends js.Object
+  sealed trait `visible-scroll`
+    extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.OverflowBehavior
   
   @scala.inline
   def a: a = "a".asInstanceOf[a]

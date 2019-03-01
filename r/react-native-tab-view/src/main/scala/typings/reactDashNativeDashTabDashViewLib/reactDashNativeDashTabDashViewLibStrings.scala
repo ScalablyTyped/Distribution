@@ -10,19 +10,24 @@ object reactDashNativeDashTabDashViewLibStrings {
   sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait dragging extends js.Object
+  sealed trait dragging
+    extends reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.PageScrollState
   
   @js.native
-  sealed trait idle extends js.Object
+  sealed trait idle
+    extends reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.PageScrollState
   
   @js.native
-  sealed trait position extends js.Object
+  sealed trait position
+    extends reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SubscriptionName
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait reset
+    extends reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SubscriptionName
   
   @js.native
-  sealed trait settling extends js.Object
+  sealed trait settling
+    extends reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.PageScrollState
   
   @js.native
   sealed trait top extends js.Object

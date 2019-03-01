@@ -44,3 +44,24 @@ trait Options extends js.Object {
   var whitelist: js.UndefOr[js.Array[WhitelistOption] | WhitelistOption] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    binaryDirs: js.Array[java.lang.String] = null,
+    importType: webpackDashNodeDashExternalsLib.webpackDashNodeDashExternalsLibStrings.`var` | webpackDashNodeDashExternalsLib.webpackDashNodeDashExternalsLibStrings.`this` | webpackDashNodeDashExternalsLib.webpackDashNodeDashExternalsLibStrings.commonjs | webpackDashNodeDashExternalsLib.webpackDashNodeDashExternalsLibStrings.amd | webpackDashNodeDashExternalsLib.webpackDashNodeDashExternalsLibStrings.umd = null,
+    includeAbsolutePaths: js.UndefOr[scala.Boolean] = js.undefined,
+    modulesDir: java.lang.String = null,
+    modulesFromFile: js.UndefOr[scala.Boolean] = js.undefined,
+    whitelist: js.Array[WhitelistOption] | WhitelistOption = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (binaryDirs != null) __obj.updateDynamic("binaryDirs")(binaryDirs)
+    if (importType != null) __obj.updateDynamic("importType")(importType.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAbsolutePaths)) __obj.updateDynamic("includeAbsolutePaths")(includeAbsolutePaths)
+    if (modulesDir != null) __obj.updateDynamic("modulesDir")(modulesDir)
+    if (!js.isUndefined(modulesFromFile)) __obj.updateDynamic("modulesFromFile")(modulesFromFile)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

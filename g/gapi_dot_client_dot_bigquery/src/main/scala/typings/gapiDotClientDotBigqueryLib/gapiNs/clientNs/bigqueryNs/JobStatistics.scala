@@ -25,3 +25,26 @@ trait JobStatistics extends js.Object {
   var totalBytesProcessed: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JobStatistics {
+  @scala.inline
+  def apply(
+    creationTime: java.lang.String = null,
+    endTime: java.lang.String = null,
+    extract: JobStatistics4 = null,
+    load: JobStatistics3 = null,
+    query: JobStatistics2 = null,
+    startTime: java.lang.String = null,
+    totalBytesProcessed: java.lang.String = null
+  ): JobStatistics = {
+    val __obj = js.Dynamic.literal()
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (extract != null) __obj.updateDynamic("extract")(extract)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed)
+    __obj.asInstanceOf[JobStatistics]
+  }
+}
+

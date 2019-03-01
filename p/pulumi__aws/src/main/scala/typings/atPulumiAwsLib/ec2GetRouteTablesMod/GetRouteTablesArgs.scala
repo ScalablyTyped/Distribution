@@ -21,3 +21,18 @@ trait GetRouteTablesArgs extends js.Object {
   val vpcId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetRouteTablesArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    vpcId: java.lang.String = null
+  ): GetRouteTablesArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId)
+    __obj.asInstanceOf[GetRouteTablesArgs]
+  }
+}
+

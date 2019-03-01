@@ -18,3 +18,18 @@ trait DataSourceFilter extends js.Object {
   var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.undefined
 }
 
+object DataSourceFilter {
+  @scala.inline
+  def apply(
+    fieldCaption: java.lang.String = null,
+    fieldName: java.lang.String = null,
+    filterItems: DataSourceFiltersFilterItems = null
+  ): DataSourceFilter = {
+    val __obj = js.Dynamic.literal()
+    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems)
+    __obj.asInstanceOf[DataSourceFilter]
+  }
+}
+

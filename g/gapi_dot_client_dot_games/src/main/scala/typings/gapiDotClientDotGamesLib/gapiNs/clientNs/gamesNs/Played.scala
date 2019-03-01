@@ -14,3 +14,18 @@ trait Played extends js.Object {
   var timeMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Played {
+  @scala.inline
+  def apply(
+    autoMatched: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    timeMillis: java.lang.String = null
+  ): Played = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (timeMillis != null) __obj.updateDynamic("timeMillis")(timeMillis)
+    __obj.asInstanceOf[Played]
+  }
+}
+

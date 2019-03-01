@@ -10,10 +10,12 @@ object reactDashAutosuggestLibStrings {
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait container extends js.Object
+  sealed trait container
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
-  sealed trait containerOpen extends js.Object
+  sealed trait containerOpen
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
   sealed trait down extends js.Object
@@ -28,7 +30,8 @@ object reactDashAutosuggestLibStrings {
   sealed trait `escape-pressed` extends js.Object
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait input
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
   sealed trait `input-changed` extends js.Object
@@ -37,43 +40,54 @@ object reactDashAutosuggestLibStrings {
   sealed trait `input-focused` extends js.Object
   
   @js.native
-  sealed trait inputFocused extends js.Object
+  sealed trait inputFocused
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
-  sealed trait inputOpen extends js.Object
+  sealed trait inputOpen
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
-  sealed trait sectionContainer extends js.Object
+  sealed trait sectionContainer
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
-  sealed trait sectionContainerFirst extends js.Object
+  sealed trait sectionContainerFirst
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
-  sealed trait sectionTitle extends js.Object
+  sealed trait sectionTitle
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
-  sealed trait suggestion extends js.Object
+  sealed trait suggestion
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
   sealed trait `suggestion-selected` extends js.Object
   
   @js.native
-  sealed trait suggestionFirst extends js.Object
+  sealed trait suggestionFirst
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
-  sealed trait suggestionHighlighted extends js.Object
+  sealed trait suggestionHighlighted
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
   sealed trait `suggestions-revealed` extends js.Object
   
   @js.native
-  sealed trait suggestionsContainer extends js.Object
+  sealed trait suggestionsContainer
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
-  sealed trait suggestionsContainerOpen extends js.Object
+  sealed trait suggestionsContainerOpen
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
-  sealed trait suggestionsList extends js.Object
+  sealed trait suggestionsList
+    extends reactDashAutosuggestLib.reactDashAutosuggestMod.AutosuggestNs.ThemeKey
   
   @js.native
   sealed trait `type` extends js.Object

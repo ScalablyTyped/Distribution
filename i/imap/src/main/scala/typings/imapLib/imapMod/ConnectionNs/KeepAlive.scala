@@ -14,3 +14,18 @@ trait KeepAlive extends js.Object {
   var interval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object KeepAlive {
+  @scala.inline
+  def apply(
+    forceNoop: js.UndefOr[scala.Boolean] = js.undefined,
+    idleInterval: scala.Int | scala.Double = null,
+    interval: scala.Int | scala.Double = null
+  ): KeepAlive = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(forceNoop)) __obj.updateDynamic("forceNoop")(forceNoop)
+    if (idleInterval != null) __obj.updateDynamic("idleInterval")(idleInterval.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeepAlive]
+  }
+}
+

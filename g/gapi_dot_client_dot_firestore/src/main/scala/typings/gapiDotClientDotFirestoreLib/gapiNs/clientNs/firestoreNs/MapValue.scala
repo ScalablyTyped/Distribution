@@ -17,3 +17,12 @@ trait MapValue extends js.Object {
   var fields: js.UndefOr[stdLib.Record[java.lang.String, Value]] = js.undefined
 }
 
+object MapValue {
+  @scala.inline
+  def apply(fields: stdLib.Record[java.lang.String, Value] = null): MapValue = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[MapValue]
+  }
+}
+

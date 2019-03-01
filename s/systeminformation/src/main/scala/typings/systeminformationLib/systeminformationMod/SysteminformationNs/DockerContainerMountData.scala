@@ -14,3 +14,24 @@ trait DockerContainerMountData extends js.Object {
   var Type: java.lang.String
 }
 
+object DockerContainerMountData {
+  @scala.inline
+  def apply(
+    Destination: java.lang.String,
+    Mode: java.lang.String,
+    Propagation: java.lang.String,
+    RW: scala.Boolean,
+    Source: java.lang.String,
+    Type: java.lang.String
+  ): DockerContainerMountData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Destination")(Destination)
+    __obj.updateDynamic("Mode")(Mode)
+    __obj.updateDynamic("Propagation")(Propagation)
+    __obj.updateDynamic("RW")(RW)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("Type")(Type)
+    __obj.asInstanceOf[DockerContainerMountData]
+  }
+}
+

@@ -9,3 +9,12 @@ trait MetadataParam extends js.Object {
   var metadata: js.Any
 }
 
+object MetadataParam {
+  @scala.inline
+  def apply(metadata: js.Any): MetadataParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[MetadataParam]
+  }
+}
+

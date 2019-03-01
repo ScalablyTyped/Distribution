@@ -123,3 +123,56 @@ trait _Impl extends js.Object {
   def onUnstick(`this`: semanticDashUiDashStickyLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    bottomOffset: scala.Double,
+    className: semanticDashUiDashStickyLib.SemanticUINs.StickyNs.ClassNameSettings,
+    context: semanticDashUiDashStickyLib.semanticDashUiDashStickyLibNumbers.`false` | java.lang.String | semanticDashUiDashStickyLib.JQuery,
+    debug: scala.Boolean,
+    error: semanticDashUiDashStickyLib.SemanticUINs.StickyNs.ErrorSettings,
+    jitter: scala.Double,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    observeChanges: scala.Boolean,
+    offset: scala.Double,
+    onBottom: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onReposition: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onScroll: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onStick: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onTop: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    onUnstick: js.Function1[semanticDashUiDashStickyLib.JQuery, scala.Unit],
+    performance: scala.Boolean,
+    pushing: scala.Boolean,
+    scrollContext: java.lang.String | semanticDashUiDashStickyLib.JQuery,
+    setSize: scala.Boolean,
+    silent: scala.Boolean,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottomOffset")(bottomOffset)
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("jitter")(jitter)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("observeChanges")(observeChanges)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("onBottom")(onBottom)
+    __obj.updateDynamic("onReposition")(onReposition)
+    __obj.updateDynamic("onScroll")(onScroll)
+    __obj.updateDynamic("onStick")(onStick)
+    __obj.updateDynamic("onTop")(onTop)
+    __obj.updateDynamic("onUnstick")(onUnstick)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("pushing")(pushing)
+    __obj.updateDynamic("scrollContext")(scrollContext.asInstanceOf[js.Any])
+    __obj.updateDynamic("setSize")(setSize)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

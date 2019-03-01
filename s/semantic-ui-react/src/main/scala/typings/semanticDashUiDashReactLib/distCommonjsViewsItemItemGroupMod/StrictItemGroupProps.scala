@@ -30,3 +30,30 @@ trait StrictItemGroupProps extends js.Object {
   var unstackable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StrictItemGroupProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    divided: js.UndefOr[scala.Boolean] = js.undefined,
+    items: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[semanticDashUiDashReactLib.distCommonjsViewsItemItemMod.ItemProps] = null,
+    link: js.UndefOr[scala.Boolean] = js.undefined,
+    relaxed: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null,
+    unstackable: js.UndefOr[scala.Boolean] = js.undefined
+  ): StrictItemGroupProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(divided)) __obj.updateDynamic("divided")(divided)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link)
+    if (relaxed != null) __obj.updateDynamic("relaxed")(relaxed.asInstanceOf[js.Any])
+    if (!js.isUndefined(unstackable)) __obj.updateDynamic("unstackable")(unstackable)
+    __obj.asInstanceOf[StrictItemGroupProps]
+  }
+}
+

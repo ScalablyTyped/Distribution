@@ -20,3 +20,36 @@ trait ISignatureSettings extends js.Object {
   def Clone(): ISignatureSettings
 }
 
+object ISignatureSettings {
+  @scala.inline
+  def apply(
+    AdditionalInfo: java.lang.String,
+    Clone: js.Function0[ISignatureSettings],
+    FreeFormTextPropertyID: scala.Double,
+    IsFreeFormTextPrompted: scala.Boolean,
+    IsRequired: scala.Boolean,
+    IsSeparateSignatureObject: scala.Boolean,
+    ManifestationPropertyID: scala.Double,
+    PromptInfoType: mfilesLib.MFilesNs.MFSignaturePromptInfoType,
+    SignatureIdentifier: java.lang.String,
+    SignaturePromptInfoFixed: ISignaturePromptInfo,
+    SignaturePromptInfoMetadataBased: ISignaturePromptInfoMetadataBased,
+    SignaturePromptInfoSelectable: ISignaturePromptInfoSelectable
+  ): ISignatureSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AdditionalInfo")(AdditionalInfo)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("FreeFormTextPropertyID")(FreeFormTextPropertyID)
+    __obj.updateDynamic("IsFreeFormTextPrompted")(IsFreeFormTextPrompted)
+    __obj.updateDynamic("IsRequired")(IsRequired)
+    __obj.updateDynamic("IsSeparateSignatureObject")(IsSeparateSignatureObject)
+    __obj.updateDynamic("ManifestationPropertyID")(ManifestationPropertyID)
+    __obj.updateDynamic("PromptInfoType")(PromptInfoType)
+    __obj.updateDynamic("SignatureIdentifier")(SignatureIdentifier)
+    __obj.updateDynamic("SignaturePromptInfoFixed")(SignaturePromptInfoFixed)
+    __obj.updateDynamic("SignaturePromptInfoMetadataBased")(SignaturePromptInfoMetadataBased)
+    __obj.updateDynamic("SignaturePromptInfoSelectable")(SignaturePromptInfoSelectable)
+    __obj.asInstanceOf[ISignatureSettings]
+  }
+}
+

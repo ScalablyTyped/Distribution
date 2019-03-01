@@ -13,3 +13,22 @@ trait OtherRevocationInfoFormat extends js.Object {
   def toSchema(): js.Any
 }
 
+object OtherRevocationInfoFormat {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    otherRevInfo: js.Any,
+    otherRevInfoFormat: java.lang.String,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): OtherRevocationInfoFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("otherRevInfo")(otherRevInfo)
+    __obj.updateDynamic("otherRevInfoFormat")(otherRevInfoFormat)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.asInstanceOf[OtherRevocationInfoFormat]
+  }
+}
+

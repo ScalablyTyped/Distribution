@@ -11,3 +11,14 @@ trait Anon_OrganizationArn extends js.Object {
   var topicArn: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_OrganizationArn {
+  @scala.inline
+  def apply(organizationArn: java.lang.String, position: scala.Double, topicArn: java.lang.String = null): Anon_OrganizationArn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("organizationArn")(organizationArn)
+    __obj.updateDynamic("position")(position)
+    if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn)
+    __obj.asInstanceOf[Anon_OrganizationArn]
+  }
+}
+

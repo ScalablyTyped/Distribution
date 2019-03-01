@@ -10,3 +10,16 @@ trait Anon_ResRulesArray extends js.Object {
   var rules: js.Array[aliDashOssLib.aliDashOssMod.OSSNs.CORSRule]
 }
 
+object Anon_ResRulesArray {
+  @scala.inline
+  def apply(
+    res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse,
+    rules: js.Array[aliDashOssLib.aliDashOssMod.OSSNs.CORSRule]
+  ): Anon_ResRulesArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("res")(res)
+    __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[Anon_ResRulesArray]
+  }
+}
+

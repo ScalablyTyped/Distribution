@@ -16,3 +16,16 @@ trait DescribeOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double | js.Function0[scala.Unit]] = js.undefined
 }
 
+object DescribeOptions {
+  @scala.inline
+  def apply(
+    skip: scala.Boolean | js.Function0[scala.Unit] = null,
+    timeout: scala.Double | js.Function0[scala.Unit] = null
+  ): DescribeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DescribeOptions]
+  }
+}
+

@@ -15,3 +15,20 @@ trait XXMLExtractor
   def extract(aStream: XInputStream): XInputStream
 }
 
+object XXMLExtractor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    extract: js.Function1[XInputStream, XInputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XXMLExtractor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("extract")(extract)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XXMLExtractor]
+  }
+}
+

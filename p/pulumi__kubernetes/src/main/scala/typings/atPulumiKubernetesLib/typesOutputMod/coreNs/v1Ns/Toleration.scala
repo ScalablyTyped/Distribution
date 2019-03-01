@@ -41,3 +41,22 @@ trait Toleration extends js.Object {
   val value: java.lang.String
 }
 
+object Toleration {
+  @scala.inline
+  def apply(
+    effect: java.lang.String,
+    key: java.lang.String,
+    operator: java.lang.String,
+    tolerationSeconds: scala.Double,
+    value: java.lang.String
+  ): Toleration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("effect")(effect)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("operator")(operator)
+    __obj.updateDynamic("tolerationSeconds")(tolerationSeconds)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Toleration]
+  }
+}
+

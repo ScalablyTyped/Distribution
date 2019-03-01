@@ -18,3 +18,16 @@ trait Mandate extends js.Object {
   ] = js.undefined
 }
 
+object Mandate {
+  @scala.inline
+  def apply(
+    acceptance: Acceptance = null,
+    notification_method: stripejsLib.stripejsLibStrings.email | stripejsLib.stripejsLibStrings.manual | stripejsLib.stripejsLibStrings.none = null
+  ): Mandate = {
+    val __obj = js.Dynamic.literal()
+    if (acceptance != null) __obj.updateDynamic("acceptance")(acceptance)
+    if (notification_method != null) __obj.updateDynamic("notification_method")(notification_method.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Mandate]
+  }
+}
+

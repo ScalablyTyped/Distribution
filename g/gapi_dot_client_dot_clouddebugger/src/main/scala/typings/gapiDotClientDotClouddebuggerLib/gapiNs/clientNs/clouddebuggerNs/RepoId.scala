@@ -12,3 +12,13 @@ trait RepoId extends js.Object {
   var uid: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RepoId {
+  @scala.inline
+  def apply(projectRepoId: ProjectRepoId = null, uid: java.lang.String = null): RepoId = {
+    val __obj = js.Dynamic.literal()
+    if (projectRepoId != null) __obj.updateDynamic("projectRepoId")(projectRepoId)
+    if (uid != null) __obj.updateDynamic("uid")(uid)
+    __obj.asInstanceOf[RepoId]
+  }
+}
+

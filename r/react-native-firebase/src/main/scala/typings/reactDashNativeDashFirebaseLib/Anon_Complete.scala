@@ -17,3 +17,18 @@ trait Anon_Complete[T] extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Complete {
+  @scala.inline
+  def apply[T](
+    complete: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.Handler[T] = null,
+    error: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.ErrorHandler = null,
+    next: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.Handler[T] = null
+  ): Anon_Complete[T] = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (next != null) __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[Anon_Complete[T]]
+  }
+}
+

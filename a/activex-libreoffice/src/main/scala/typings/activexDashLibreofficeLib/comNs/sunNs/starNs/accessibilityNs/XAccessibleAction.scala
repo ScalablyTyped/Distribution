@@ -52,3 +52,28 @@ trait XAccessibleAction
   def getAccessibleActionKeyBinding(nIndex: scala.Double): XAccessibleKeyBinding
 }
 
+object XAccessibleAction {
+  @scala.inline
+  def apply(
+    AccessibleActionCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    doAccessibleAction: js.Function1[scala.Double, scala.Boolean],
+    getAccessibleActionCount: js.Function0[scala.Double],
+    getAccessibleActionDescription: js.Function1[scala.Double, java.lang.String],
+    getAccessibleActionKeyBinding: js.Function1[scala.Double, XAccessibleKeyBinding],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessibleActionCount")(AccessibleActionCount)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("doAccessibleAction")(doAccessibleAction)
+    __obj.updateDynamic("getAccessibleActionCount")(getAccessibleActionCount)
+    __obj.updateDynamic("getAccessibleActionDescription")(getAccessibleActionDescription)
+    __obj.updateDynamic("getAccessibleActionKeyBinding")(getAccessibleActionKeyBinding)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAccessibleAction]
+  }
+}
+

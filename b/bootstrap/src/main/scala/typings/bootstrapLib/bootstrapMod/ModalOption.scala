@@ -33,3 +33,20 @@ trait ModalOption extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ModalOption {
+  @scala.inline
+  def apply(
+    backdrop: scala.Boolean | bootstrapLib.bootstrapLibStrings.static = null,
+    focus: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    show: js.UndefOr[scala.Boolean] = js.undefined
+  ): ModalOption = {
+    val __obj = js.Dynamic.literal()
+    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[ModalOption]
+  }
+}
+

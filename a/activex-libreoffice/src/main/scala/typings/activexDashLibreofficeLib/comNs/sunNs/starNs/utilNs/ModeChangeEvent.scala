@@ -21,3 +21,13 @@ trait ModeChangeEvent
   var NewMode: java.lang.String
 }
 
+object ModeChangeEvent {
+  @scala.inline
+  def apply(NewMode: java.lang.String, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): ModeChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NewMode")(NewMode)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[ModeChangeEvent]
+  }
+}
+

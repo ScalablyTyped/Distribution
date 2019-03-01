@@ -25,3 +25,30 @@ trait XShapeArranger
   def setInFrontOf(xShapes: XShapes, xShape: XShape): scala.Unit
 }
 
+object XShapeArranger {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    arrange: js.Function2[XShapes, Arrangement, scala.Unit],
+    bringToFront: js.Function2[XShapes, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    reverseOrder: js.Function1[XShapes, scala.Unit],
+    sendToBack: js.Function2[XShapes, scala.Double, scala.Unit],
+    setBehindShape: js.Function2[XShapes, XShape, scala.Unit],
+    setInFrontOf: js.Function2[XShapes, XShape, scala.Unit]
+  ): XShapeArranger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("arrange")(arrange)
+    __obj.updateDynamic("bringToFront")(bringToFront)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("reverseOrder")(reverseOrder)
+    __obj.updateDynamic("sendToBack")(sendToBack)
+    __obj.updateDynamic("setBehindShape")(setBehindShape)
+    __obj.updateDynamic("setInFrontOf")(setInFrontOf)
+    __obj.asInstanceOf[XShapeArranger]
+  }
+}
+

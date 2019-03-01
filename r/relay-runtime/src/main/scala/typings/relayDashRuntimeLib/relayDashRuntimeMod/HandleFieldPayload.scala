@@ -19,3 +19,22 @@ trait HandleFieldPayload extends js.Object {
   var handleKey: java.lang.String
 }
 
+object HandleFieldPayload {
+  @scala.inline
+  def apply(
+    args: Variables,
+    dataID: DataID,
+    fieldKey: java.lang.String,
+    handle: java.lang.String,
+    handleKey: java.lang.String
+  ): HandleFieldPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("dataID")(dataID)
+    __obj.updateDynamic("fieldKey")(fieldKey)
+    __obj.updateDynamic("handle")(handle)
+    __obj.updateDynamic("handleKey")(handleKey)
+    __obj.asInstanceOf[HandleFieldPayload]
+  }
+}
+

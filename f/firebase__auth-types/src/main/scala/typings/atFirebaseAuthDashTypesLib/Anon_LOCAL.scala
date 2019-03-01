@@ -11,3 +11,18 @@ trait Anon_LOCAL extends js.Object {
   var SESSION: atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.Persistence
 }
 
+object Anon_LOCAL {
+  @scala.inline
+  def apply(
+    LOCAL: atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.Persistence,
+    NONE: atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.Persistence,
+    SESSION: atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.Persistence
+  ): Anon_LOCAL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LOCAL")(LOCAL)
+    __obj.updateDynamic("NONE")(NONE)
+    __obj.updateDynamic("SESSION")(SESSION)
+    __obj.asInstanceOf[Anon_LOCAL]
+  }
+}
+

@@ -10,3 +10,12 @@ trait cssClasses
   var UPGRADED: atMaterialTabsLib.atMaterialTabsLibStrings.`mdc-tab-bar-upgraded`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(UPGRADED: atMaterialTabsLib.atMaterialTabsLibStrings.`mdc-tab-bar-upgraded`): cssClasses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("UPGRADED")(UPGRADED)
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

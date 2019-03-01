@@ -37,3 +37,20 @@ trait NoteTagLoadOptions extends js.Object {
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NoteTagLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    status: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined
+  ): NoteTagLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NoteTagLoadOptions]
+  }
+}
+

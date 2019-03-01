@@ -53,3 +53,37 @@ trait FetchBlobResponse extends js.Object {
   def text(): java.lang.String | js.Promise[_]
 }
 
+object FetchBlobResponse {
+  @scala.inline
+  def apply(
+    base64: js.Function0[js.Any],
+    blob: js.Function2[java.lang.String, scala.Double, js.Promise[PolyfillBlob]],
+    data: js.Any,
+    flush: js.Function0[scala.Unit],
+    json: js.Function0[js.Any],
+    path: js.Function0[java.lang.String],
+    readFile: js.Function1[rnDashFetchDashBlobLib.Encoding, js.Promise[_] | scala.Null],
+    readStream: js.Function1[rnDashFetchDashBlobLib.Encoding, RNFetchBlobStream | scala.Null],
+    respInfo: RNFetchBlobResponseInfo,
+    session: js.Function1[java.lang.String, RNFetchBlobSession | scala.Null],
+    taskId: java.lang.String,
+    text: js.Function0[java.lang.String | js.Promise[_]],
+    `type`: rnDashFetchDashBlobLib.rnDashFetchDashBlobLibStrings.base64 | rnDashFetchDashBlobLib.rnDashFetchDashBlobLibStrings.path | rnDashFetchDashBlobLib.rnDashFetchDashBlobLibStrings.utf8
+  ): FetchBlobResponse = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("base64")(base64)
+    __obj.updateDynamic("blob")(blob)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("json")(json)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("readFile")(readFile)
+    __obj.updateDynamic("readStream")(readStream)
+    __obj.updateDynamic("respInfo")(respInfo)
+    __obj.updateDynamic("session")(session)
+    __obj.updateDynamic("taskId")(taskId)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[FetchBlobResponse]
+  }
+}
+

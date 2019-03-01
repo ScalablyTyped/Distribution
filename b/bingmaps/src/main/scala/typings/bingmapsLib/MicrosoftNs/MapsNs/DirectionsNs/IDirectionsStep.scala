@@ -38,3 +38,42 @@ trait IDirectionsStep extends js.Object {
   var warnings: js.Array[IDirectionsStepWarning]
 }
 
+object IDirectionsStep {
+  @scala.inline
+  def apply(
+    childItineraryItems: js.Array[IDirectionsStep],
+    coordinate: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    distance: java.lang.String,
+    durationInSeconds: scala.Double,
+    formattedText: java.lang.String,
+    isImageRoadShield: scala.Boolean,
+    maneuver: java.lang.String,
+    postIntersectionHints: js.Array[java.lang.String],
+    preIntersectionHints: js.Array[java.lang.String],
+    startStopName: java.lang.String,
+    transitLine: ITransitLine,
+    transitStepIcon: java.lang.String,
+    transitStopId: java.lang.String,
+    transitTerminus: java.lang.String,
+    warnings: js.Array[IDirectionsStepWarning]
+  ): IDirectionsStep = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("childItineraryItems")(childItineraryItems)
+    __obj.updateDynamic("coordinate")(coordinate)
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("durationInSeconds")(durationInSeconds)
+    __obj.updateDynamic("formattedText")(formattedText)
+    __obj.updateDynamic("isImageRoadShield")(isImageRoadShield)
+    __obj.updateDynamic("maneuver")(maneuver)
+    __obj.updateDynamic("postIntersectionHints")(postIntersectionHints)
+    __obj.updateDynamic("preIntersectionHints")(preIntersectionHints)
+    __obj.updateDynamic("startStopName")(startStopName)
+    __obj.updateDynamic("transitLine")(transitLine)
+    __obj.updateDynamic("transitStepIcon")(transitStepIcon)
+    __obj.updateDynamic("transitStopId")(transitStopId)
+    __obj.updateDynamic("transitTerminus")(transitTerminus)
+    __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[IDirectionsStep]
+  }
+}
+

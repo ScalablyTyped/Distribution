@@ -19,3 +19,34 @@ trait IFontStyles extends js.Object {
   var xxLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
 }
 
+object IFontStyles {
+  @scala.inline
+  def apply(
+    large: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    medium: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    mediumPlus: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    mega: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    small: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    smallPlus: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    superLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    tiny: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    xLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    xSmall: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    xxLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
+  ): IFontStyles = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("large")(large)
+    __obj.updateDynamic("medium")(medium)
+    __obj.updateDynamic("mediumPlus")(mediumPlus)
+    __obj.updateDynamic("mega")(mega)
+    __obj.updateDynamic("small")(small)
+    __obj.updateDynamic("smallPlus")(smallPlus)
+    __obj.updateDynamic("superLarge")(superLarge)
+    __obj.updateDynamic("tiny")(tiny)
+    __obj.updateDynamic("xLarge")(xLarge)
+    __obj.updateDynamic("xSmall")(xSmall)
+    __obj.updateDynamic("xxLarge")(xxLarge)
+    __obj.asInstanceOf[IFontStyles]
+  }
+}
+

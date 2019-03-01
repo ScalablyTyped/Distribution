@@ -44,3 +44,28 @@ trait TouchBackendOptions extends js.Object {
   var touchSlop: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TouchBackendOptions {
+  @scala.inline
+  def apply(
+    delay: scala.Int | scala.Double = null,
+    delayMouseStart: scala.Int | scala.Double = null,
+    delayTouchStart: scala.Int | scala.Double = null,
+    enableKeyboardEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    enableMouseEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreContextMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollAngleRanges: js.Array[reactDashDndDashTouchDashBackendLib.Anon_End] = null,
+    touchSlop: scala.Int | scala.Double = null
+  ): TouchBackendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (delayMouseStart != null) __obj.updateDynamic("delayMouseStart")(delayMouseStart.asInstanceOf[js.Any])
+    if (delayTouchStart != null) __obj.updateDynamic("delayTouchStart")(delayTouchStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKeyboardEvents)) __obj.updateDynamic("enableKeyboardEvents")(enableKeyboardEvents)
+    if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents)
+    if (!js.isUndefined(ignoreContextMenu)) __obj.updateDynamic("ignoreContextMenu")(ignoreContextMenu)
+    if (scrollAngleRanges != null) __obj.updateDynamic("scrollAngleRanges")(scrollAngleRanges)
+    if (touchSlop != null) __obj.updateDynamic("touchSlop")(touchSlop.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TouchBackendOptions]
+  }
+}
+

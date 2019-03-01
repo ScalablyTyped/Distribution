@@ -36,3 +36,26 @@ trait Anon_ChannelIdChannelTitleDescriptionPublishedAtResourceId extends js.Obje
   var title: java.lang.String
 }
 
+object Anon_ChannelIdChannelTitleDescriptionPublishedAtResourceId {
+  @scala.inline
+  def apply(
+    channelId: java.lang.String,
+    channelTitle: java.lang.String,
+    description: java.lang.String,
+    publishedAt: java.lang.String,
+    resourceId: Anon_ChannelIdKindString,
+    thumbnails: GoogleApiYouTubeThumbnailResource,
+    title: java.lang.String
+  ): Anon_ChannelIdChannelTitleDescriptionPublishedAtResourceId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channelId")(channelId)
+    __obj.updateDynamic("channelTitle")(channelTitle)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("publishedAt")(publishedAt)
+    __obj.updateDynamic("resourceId")(resourceId)
+    __obj.updateDynamic("thumbnails")(thumbnails)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_ChannelIdChannelTitleDescriptionPublishedAtResourceId]
+  }
+}
+

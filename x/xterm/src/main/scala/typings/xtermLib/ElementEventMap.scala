@@ -10,3 +10,13 @@ trait ElementEventMap extends js.Object {
   var fullscreenerror: Event
 }
 
+object ElementEventMap {
+  @scala.inline
+  def apply(fullscreenchange: Event, fullscreenerror: Event): ElementEventMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fullscreenchange")(fullscreenchange)
+    __obj.updateDynamic("fullscreenerror")(fullscreenerror)
+    __obj.asInstanceOf[ElementEventMap]
+  }
+}
+

@@ -15,3 +15,20 @@ trait Credentials extends js.Object {
   var token: java.lang.String
 }
 
+object Credentials {
+  @scala.inline
+  def apply(
+    provider: Provider | bellLib.bellLibStrings.custom,
+    query: StringLikeMap,
+    token: java.lang.String,
+    profile: js.Object = null
+  ): Credentials = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("token")(token)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    __obj.asInstanceOf[Credentials]
+  }
+}
+

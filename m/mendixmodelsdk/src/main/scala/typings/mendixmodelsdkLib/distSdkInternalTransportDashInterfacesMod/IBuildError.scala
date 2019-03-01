@@ -11,3 +11,14 @@ trait IBuildError extends js.Object {
   var severity: java.lang.String
 }
 
+object IBuildError {
+  @scala.inline
+  def apply(details: java.lang.String, message: java.lang.String, severity: java.lang.String): IBuildError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("severity")(severity)
+    __obj.asInstanceOf[IBuildError]
+  }
+}
+

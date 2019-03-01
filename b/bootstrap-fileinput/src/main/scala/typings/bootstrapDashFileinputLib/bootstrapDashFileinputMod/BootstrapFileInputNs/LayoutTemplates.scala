@@ -126,3 +126,40 @@ trait LayoutTemplates extends js.Object {
   var progress: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LayoutTemplates {
+  @scala.inline
+  def apply(
+    actionDelete: java.lang.String = null,
+    actionUpload: java.lang.String = null,
+    actions: java.lang.String = null,
+    btnBrowse: java.lang.String = null,
+    btnDefault: java.lang.String = null,
+    btnLink: java.lang.String = null,
+    caption: java.lang.String = null,
+    footer: java.lang.String = null,
+    icon: java.lang.String = null,
+    main1: java.lang.String = null,
+    main2: java.lang.String = null,
+    modal: java.lang.String = null,
+    preview: java.lang.String = null,
+    progress: java.lang.String = null
+  ): LayoutTemplates = {
+    val __obj = js.Dynamic.literal()
+    if (actionDelete != null) __obj.updateDynamic("actionDelete")(actionDelete)
+    if (actionUpload != null) __obj.updateDynamic("actionUpload")(actionUpload)
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (btnBrowse != null) __obj.updateDynamic("btnBrowse")(btnBrowse)
+    if (btnDefault != null) __obj.updateDynamic("btnDefault")(btnDefault)
+    if (btnLink != null) __obj.updateDynamic("btnLink")(btnLink)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (footer != null) __obj.updateDynamic("footer")(footer)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (main1 != null) __obj.updateDynamic("main1")(main1)
+    if (main2 != null) __obj.updateDynamic("main2")(main2)
+    if (modal != null) __obj.updateDynamic("modal")(modal)
+    if (preview != null) __obj.updateDynamic("preview")(preview)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    __obj.asInstanceOf[LayoutTemplates]
+  }
+}
+

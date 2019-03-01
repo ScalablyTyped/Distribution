@@ -20,3 +20,36 @@ trait EXT_disjoint_timer_query extends js.Object {
   def queryCounterEXT(query: WebGLQuery, target: scala.Double): scala.Unit
 }
 
+object EXT_disjoint_timer_query {
+  @scala.inline
+  def apply(
+    GPU_DISJOINT_EXT: scala.Double,
+    QUERY_COUNTER_BITS_EXT: scala.Double,
+    QUERY_RESULT_AVAILABLE_EXT: scala.Double,
+    QUERY_RESULT_EXT: scala.Double,
+    TIMESTAMP_EXT: scala.Double,
+    TIME_ELAPSED_EXT: scala.Double,
+    beginQueryEXT: js.Function2[scala.Double, WebGLQuery, scala.Unit],
+    createQueryEXT: js.Function0[WebGLQuery],
+    deleteQueryEXT: js.Function1[WebGLQuery, scala.Unit],
+    endQueryEXT: js.Function1[scala.Double, scala.Unit],
+    getQueryObjectEXT: js.Function2[WebGLQuery, scala.Double, js.Any],
+    queryCounterEXT: js.Function2[WebGLQuery, scala.Double, scala.Unit]
+  ): EXT_disjoint_timer_query = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GPU_DISJOINT_EXT")(GPU_DISJOINT_EXT)
+    __obj.updateDynamic("QUERY_COUNTER_BITS_EXT")(QUERY_COUNTER_BITS_EXT)
+    __obj.updateDynamic("QUERY_RESULT_AVAILABLE_EXT")(QUERY_RESULT_AVAILABLE_EXT)
+    __obj.updateDynamic("QUERY_RESULT_EXT")(QUERY_RESULT_EXT)
+    __obj.updateDynamic("TIMESTAMP_EXT")(TIMESTAMP_EXT)
+    __obj.updateDynamic("TIME_ELAPSED_EXT")(TIME_ELAPSED_EXT)
+    __obj.updateDynamic("beginQueryEXT")(beginQueryEXT)
+    __obj.updateDynamic("createQueryEXT")(createQueryEXT)
+    __obj.updateDynamic("deleteQueryEXT")(deleteQueryEXT)
+    __obj.updateDynamic("endQueryEXT")(endQueryEXT)
+    __obj.updateDynamic("getQueryObjectEXT")(getQueryObjectEXT)
+    __obj.updateDynamic("queryCounterEXT")(queryCounterEXT)
+    __obj.asInstanceOf[EXT_disjoint_timer_query]
+  }
+}
+

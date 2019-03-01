@@ -22,3 +22,18 @@ trait SignatureInformation extends js.Object {
   var parameters: js.UndefOr[js.Array[ParameterInformation]] = js.undefined
 }
 
+object SignatureInformation {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    documentation: java.lang.String | MarkupContent = null,
+    parameters: js.Array[ParameterInformation] = null
+  ): SignatureInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.asInstanceOf[SignatureInformation]
+  }
+}
+

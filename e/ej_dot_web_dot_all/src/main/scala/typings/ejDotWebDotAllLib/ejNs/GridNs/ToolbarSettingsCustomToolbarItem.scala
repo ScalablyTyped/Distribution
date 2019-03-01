@@ -14,3 +14,13 @@ trait ToolbarSettingsCustomToolbarItem extends js.Object {
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ToolbarSettingsCustomToolbarItem {
+  @scala.inline
+  def apply(templateID: java.lang.String = null, tooltip: java.lang.String = null): ToolbarSettingsCustomToolbarItem = {
+    val __obj = js.Dynamic.literal()
+    if (templateID != null) __obj.updateDynamic("templateID")(templateID)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[ToolbarSettingsCustomToolbarItem]
+  }
+}
+

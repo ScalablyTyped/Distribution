@@ -10,3 +10,16 @@ trait Anon_CommandBarSelection extends js.Object {
   val Selection: activexDashOutlookLib.OutlookNs.Selection
 }
 
+object Anon_CommandBarSelection {
+  @scala.inline
+  def apply(
+    CommandBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
+    Selection: activexDashOutlookLib.OutlookNs.Selection
+  ): Anon_CommandBarSelection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CommandBar")(CommandBar)
+    __obj.updateDynamic("Selection")(Selection)
+    __obj.asInstanceOf[Anon_CommandBarSelection]
+  }
+}
+

@@ -19,3 +19,39 @@ trait IPlayReadySecureStopServiceRequest extends IPlayReadyServiceRequest {
   var updateTime: stdLib.Date
 }
 
+object IPlayReadySecureStopServiceRequest {
+  @scala.inline
+  def apply(
+    beginServiceRequest: js.Function0[winrtDashUwpLib.WindowsNs.FoundationNs.IAsyncAction],
+    challengeCustomData: java.lang.String,
+    generateManualEnablingChallenge: js.Function0[PlayReadySoapMessage],
+    nextServiceRequest: js.Function0[IPlayReadyServiceRequest],
+    processManualEnablingResponse: js.Function1[js.Array[scala.Double], winrtDashUwpLib.WindowsNs.WinRTError],
+    protectionSystem: java.lang.String,
+    publisherCertificate: scala.Double,
+    responseCustomData: java.lang.String,
+    sessionID: java.lang.String,
+    startTime: stdLib.Date,
+    stopped: scala.Boolean,
+    `type`: java.lang.String,
+    updateTime: stdLib.Date,
+    uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri
+  ): IPlayReadySecureStopServiceRequest = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("beginServiceRequest")(beginServiceRequest)
+    __obj.updateDynamic("challengeCustomData")(challengeCustomData)
+    __obj.updateDynamic("generateManualEnablingChallenge")(generateManualEnablingChallenge)
+    __obj.updateDynamic("nextServiceRequest")(nextServiceRequest)
+    __obj.updateDynamic("processManualEnablingResponse")(processManualEnablingResponse)
+    __obj.updateDynamic("protectionSystem")(protectionSystem)
+    __obj.updateDynamic("publisherCertificate")(publisherCertificate)
+    __obj.updateDynamic("responseCustomData")(responseCustomData)
+    __obj.updateDynamic("sessionID")(sessionID)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("stopped")(stopped)
+    __obj.updateDynamic("updateTime")(updateTime)
+    __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[IPlayReadySecureStopServiceRequest]
+  }
+}
+

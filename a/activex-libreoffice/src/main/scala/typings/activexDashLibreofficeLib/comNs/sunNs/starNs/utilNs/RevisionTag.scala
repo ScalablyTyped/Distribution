@@ -22,3 +22,20 @@ trait RevisionTag extends js.Object {
   var TimeStamp: DateTime
 }
 
+object RevisionTag {
+  @scala.inline
+  def apply(
+    Author: java.lang.String,
+    Comment: java.lang.String,
+    Identifier: java.lang.String,
+    TimeStamp: DateTime
+  ): RevisionTag = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Author")(Author)
+    __obj.updateDynamic("Comment")(Comment)
+    __obj.updateDynamic("Identifier")(Identifier)
+    __obj.updateDynamic("TimeStamp")(TimeStamp)
+    __obj.asInstanceOf[RevisionTag]
+  }
+}
+

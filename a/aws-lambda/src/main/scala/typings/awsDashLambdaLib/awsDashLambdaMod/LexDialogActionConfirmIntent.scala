@@ -5,10 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LexDialogActionConfirmIntent extends LexDialogActionBase {
+trait LexDialogActionConfirmIntent
+  extends LexDialogActionBase
+     with LexDialogAction {
   var intentName: java.lang.String
   var slots: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]
   @JSName("type")
   var type_LexDialogActionConfirmIntent: awsDashLambdaLib.awsDashLambdaLibStrings.ConfirmIntent
+}
+
+object LexDialogActionConfirmIntent {
+  @scala.inline
+  def apply(
+    intentName: java.lang.String,
+    slots: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null],
+    `type`: awsDashLambdaLib.awsDashLambdaLibStrings.ConfirmIntent,
+    message: awsDashLambdaLib.Anon_Content = null,
+    responseCard: awsDashLambdaLib.Anon_Applicationvndamazonawscardgeneric = null
+  ): LexDialogActionConfirmIntent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("intentName")(intentName)
+    __obj.updateDynamic("slots")(slots)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
+    __obj.asInstanceOf[LexDialogActionConfirmIntent]
+  }
 }
 

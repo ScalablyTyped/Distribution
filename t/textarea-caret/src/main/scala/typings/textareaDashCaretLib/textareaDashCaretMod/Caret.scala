@@ -11,3 +11,14 @@ trait Caret extends js.Object {
   var top: scala.Double
 }
 
+object Caret {
+  @scala.inline
+  def apply(height: scala.Double, left: scala.Double, top: scala.Double): Caret = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[Caret]
+  }
+}
+

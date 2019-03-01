@@ -25,3 +25,18 @@ trait SerializeJSOptions extends js.Object {
   var unsafe: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SerializeJSOptions {
+  @scala.inline
+  def apply(
+    isJSON: js.UndefOr[scala.Boolean] = js.undefined,
+    space: java.lang.String | scala.Double = null,
+    unsafe: js.UndefOr[scala.Boolean] = js.undefined
+  ): SerializeJSOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isJSON)) __obj.updateDynamic("isJSON")(isJSON)
+    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe)) __obj.updateDynamic("unsafe")(unsafe)
+    __obj.asInstanceOf[SerializeJSOptions]
+  }
+}
+

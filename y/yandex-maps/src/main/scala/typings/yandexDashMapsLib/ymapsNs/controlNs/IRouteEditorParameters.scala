@@ -11,3 +11,18 @@ trait IRouteEditorParameters extends js.Object {
   var state: js.UndefOr[js.Object] = js.undefined
 }
 
+object IRouteEditorParameters {
+  @scala.inline
+  def apply(
+    data: yandexDashMapsLib.Anon_Image = null,
+    options: IBaseButtonParametersOptions = null,
+    state: js.Object = null
+  ): IRouteEditorParameters = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[IRouteEditorParameters]
+  }
+}
+

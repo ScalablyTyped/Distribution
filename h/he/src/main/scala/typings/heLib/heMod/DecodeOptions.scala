@@ -25,3 +25,16 @@ trait DecodeOptions extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DecodeOptions {
+  @scala.inline
+  def apply(
+    isAttributeValue: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined
+  ): DecodeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isAttributeValue)) __obj.updateDynamic("isAttributeValue")(isAttributeValue)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[DecodeOptions]
+  }
+}
+

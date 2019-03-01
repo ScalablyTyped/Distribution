@@ -119,3 +119,54 @@ trait FilterTableOptions extends js.Object {
   var visibleClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FilterTableOptions {
+  @scala.inline
+  def apply(
+    autofocus: js.UndefOr[scala.Boolean] = js.undefined,
+    callback: js.Function2[/* term */ java.lang.String, /* table */ jqueryDotFiltertableLib.JQuery, scala.Unit] = null,
+    containerClass: java.lang.String = null,
+    containerTag: java.lang.String = null,
+    hideTFootOnFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightClass: java.lang.String = null,
+    ignoreColumns: js.Array[scala.Double] = null,
+    inputName: java.lang.String = null,
+    inputSelector: java.lang.String = null,
+    inputType: java.lang.String = null,
+    label: java.lang.String = null,
+    minChars: scala.Int | scala.Double = null,
+    minRows: scala.Int | scala.Double = null,
+    placeholder: java.lang.String = null,
+    preventReturnKey: js.UndefOr[scala.Boolean] = js.undefined,
+    quickList: js.Array[java.lang.String] = null,
+    quickListClass: java.lang.String = null,
+    quickListClear: java.lang.String = null,
+    quickListGroupTag: java.lang.String = null,
+    quickListTag: java.lang.String = null,
+    visibleClass: java.lang.String = null
+  ): FilterTableOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
+    if (containerTag != null) __obj.updateDynamic("containerTag")(containerTag)
+    if (!js.isUndefined(hideTFootOnFilter)) __obj.updateDynamic("hideTFootOnFilter")(hideTFootOnFilter)
+    if (highlightClass != null) __obj.updateDynamic("highlightClass")(highlightClass)
+    if (ignoreColumns != null) __obj.updateDynamic("ignoreColumns")(ignoreColumns)
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (inputSelector != null) __obj.updateDynamic("inputSelector")(inputSelector)
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (minChars != null) __obj.updateDynamic("minChars")(minChars.asInstanceOf[js.Any])
+    if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(preventReturnKey)) __obj.updateDynamic("preventReturnKey")(preventReturnKey)
+    if (quickList != null) __obj.updateDynamic("quickList")(quickList)
+    if (quickListClass != null) __obj.updateDynamic("quickListClass")(quickListClass)
+    if (quickListClear != null) __obj.updateDynamic("quickListClear")(quickListClear)
+    if (quickListGroupTag != null) __obj.updateDynamic("quickListGroupTag")(quickListGroupTag)
+    if (quickListTag != null) __obj.updateDynamic("quickListTag")(quickListTag)
+    if (visibleClass != null) __obj.updateDynamic("visibleClass")(visibleClass)
+    __obj.asInstanceOf[FilterTableOptions]
+  }
+}
+

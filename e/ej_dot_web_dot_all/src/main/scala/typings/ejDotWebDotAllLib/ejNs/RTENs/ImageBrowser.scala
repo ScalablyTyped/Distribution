@@ -17,3 +17,18 @@ trait ImageBrowser extends js.Object {
   var filePath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImageBrowser {
+  @scala.inline
+  def apply(
+    ajaxAction: java.lang.String = null,
+    extensionAllow: java.lang.String = null,
+    filePath: java.lang.String = null
+  ): ImageBrowser = {
+    val __obj = js.Dynamic.literal()
+    if (ajaxAction != null) __obj.updateDynamic("ajaxAction")(ajaxAction)
+    if (extensionAllow != null) __obj.updateDynamic("extensionAllow")(extensionAllow)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    __obj.asInstanceOf[ImageBrowser]
+  }
+}
+

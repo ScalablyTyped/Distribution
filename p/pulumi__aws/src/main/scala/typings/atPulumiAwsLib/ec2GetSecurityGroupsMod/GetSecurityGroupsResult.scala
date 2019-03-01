@@ -22,3 +22,20 @@ trait GetSecurityGroupsResult extends js.Object {
   val vpcIds: js.Array[java.lang.String]
 }
 
+object GetSecurityGroupsResult {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    ids: js.Array[java.lang.String],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpcIds: js.Array[java.lang.String]
+  ): GetSecurityGroupsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ids")(ids)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("vpcIds")(vpcIds)
+    __obj.asInstanceOf[GetSecurityGroupsResult]
+  }
+}
+

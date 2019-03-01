@@ -24,3 +24,28 @@ trait Insert extends js.Object {
   var utility: js.UndefOr[js.Array[stdLib.Record[java.lang.String, scala.Double]]] = js.undefined
 }
 
+object Insert {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    modelType: java.lang.String = null,
+    sourceModel: java.lang.String = null,
+    storageDataLocation: java.lang.String = null,
+    storagePMMLLocation: java.lang.String = null,
+    storagePMMLModelLocation: java.lang.String = null,
+    trainingInstances: js.Array[gapiDotClientDotPredictionLib.Anon_CsvInstanceOutput] = null,
+    utility: js.Array[stdLib.Record[java.lang.String, scala.Double]] = null
+  ): Insert = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modelType != null) __obj.updateDynamic("modelType")(modelType)
+    if (sourceModel != null) __obj.updateDynamic("sourceModel")(sourceModel)
+    if (storageDataLocation != null) __obj.updateDynamic("storageDataLocation")(storageDataLocation)
+    if (storagePMMLLocation != null) __obj.updateDynamic("storagePMMLLocation")(storagePMMLLocation)
+    if (storagePMMLModelLocation != null) __obj.updateDynamic("storagePMMLModelLocation")(storagePMMLModelLocation)
+    if (trainingInstances != null) __obj.updateDynamic("trainingInstances")(trainingInstances)
+    if (utility != null) __obj.updateDynamic("utility")(utility)
+    __obj.asInstanceOf[Insert]
+  }
+}
+

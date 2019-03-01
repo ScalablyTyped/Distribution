@@ -26,3 +26,20 @@ trait MethodSettingsState extends js.Object {
   val stageName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object MethodSettingsState {
+  @scala.inline
+  def apply(
+    methodPath: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null,
+    settings: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CacheDataEncryptedCacheTtlInSeconds] = null,
+    stageName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): MethodSettingsState = {
+    val __obj = js.Dynamic.literal()
+    if (methodPath != null) __obj.updateDynamic("methodPath")(methodPath.asInstanceOf[js.Any])
+    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MethodSettingsState]
+  }
+}
+

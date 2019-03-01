@@ -10,3 +10,13 @@ trait DataTableData extends js.Object {
   var rows: js.Array[Row]
 }
 
+object DataTableData {
+  @scala.inline
+  def apply(cols: js.Array[Column], rows: js.Array[Row]): DataTableData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cols")(cols)
+    __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[DataTableData]
+  }
+}
+

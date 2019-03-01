@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object eslintLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends eslintLib.eslintMod.LinterNs.Severity
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends eslintLib.eslintMod.LinterNs.Severity
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends eslintLib.eslintMod.LinterNs.Severity
   
   @js.native
   sealed trait `2015` extends js.Object

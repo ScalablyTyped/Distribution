@@ -10,3 +10,12 @@ trait BatchWriteSpansRequest extends js.Object {
   var spans: js.UndefOr[js.Array[Span]] = js.undefined
 }
 
+object BatchWriteSpansRequest {
+  @scala.inline
+  def apply(spans: js.Array[Span] = null): BatchWriteSpansRequest = {
+    val __obj = js.Dynamic.literal()
+    if (spans != null) __obj.updateDynamic("spans")(spans)
+    __obj.asInstanceOf[BatchWriteSpansRequest]
+  }
+}
+

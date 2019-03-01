@@ -12,3 +12,22 @@ trait GetAllFrameResultDetails extends GetFrameResultDetails {
   var processId: scala.Double
 }
 
+object GetAllFrameResultDetails {
+  @scala.inline
+  def apply(
+    errorOccurred: scala.Boolean,
+    frameId: scala.Double,
+    parentFrameId: scala.Double,
+    processId: scala.Double,
+    url: java.lang.String
+  ): GetAllFrameResultDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorOccurred")(errorOccurred)
+    __obj.updateDynamic("frameId")(frameId)
+    __obj.updateDynamic("parentFrameId")(parentFrameId)
+    __obj.updateDynamic("processId")(processId)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GetAllFrameResultDetails]
+  }
+}
+

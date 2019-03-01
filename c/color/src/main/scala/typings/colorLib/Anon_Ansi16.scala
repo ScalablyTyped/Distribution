@@ -23,3 +23,42 @@ trait Anon_Ansi16 extends js.Object {
   val xyz: colorDashConvertLib.Anon_3ChannelsLab with colorDashConvertLib.routeMod.routeNs.xyz with colorLib.colorLibStrings.Anon_Ansi16
 }
 
+object Anon_Ansi16 {
+  @scala.inline
+  def apply(
+    ansi16: colorDashConvertLib.Anon_1Ansi16 with colorDashConvertLib.routeMod.routeNs.ansi16 with colorLib.colorLibStrings.Anon_Ansi16,
+    ansi256: colorDashConvertLib.Anon_1Ansi256 with colorDashConvertLib.routeMod.routeNs.ansi256 with colorLib.colorLibStrings.Anon_Ansi16,
+    apple: colorDashConvertLib.Anon_3Apple with colorDashConvertLib.routeMod.routeNs.apple with colorLib.colorLibStrings.Anon_Ansi16,
+    cmyk: colorDashConvertLib.Anon_4 with colorDashConvertLib.routeMod.routeNs.cmyk with colorLib.colorLibStrings.Anon_Ansi16,
+    gray: colorDashConvertLib.Anon_1ChannelsCmyk with colorDashConvertLib.routeMod.routeNs.gray with colorLib.colorLibStrings.Anon_Ansi16,
+    hcg: colorDashConvertLib.Anon_3C with colorDashConvertLib.routeMod.routeNs.hcg with colorLib.colorLibStrings.Anon_Ansi16,
+    hex: colorDashConvertLib.Anon_1 with colorDashConvertLib.routeMod.routeNs.hex with colorLib.colorLibStrings.Anon_Ansi16,
+    hsl: colorDashConvertLib.Anon_3Channels with colorDashConvertLib.routeMod.routeNs.hsl with colorLib.colorLibStrings.Anon_Ansi16,
+    hsv: colorDashConvertLib.Anon_3Ansi16 with colorDashConvertLib.routeMod.routeNs.hsv with colorLib.colorLibStrings.Anon_Ansi16,
+    hwb: colorDashConvertLib.Anon_3ChannelsHcg with colorDashConvertLib.routeMod.routeNs.hwb with colorLib.colorLibStrings.Anon_Ansi16,
+    keyword: colorDashConvertLib.Anon_1Channels with colorDashConvertLib.routeMod.routeNs.keyword with colorLib.colorLibStrings.Anon_Ansi16,
+    lab: colorDashConvertLib.Anon_3ChannelsLabLabels with colorDashConvertLib.routeMod.routeNs.lab with colorLib.colorLibStrings.Anon_Ansi16,
+    lch: colorDashConvertLib.Anon_3ChannelsLabLabelsLch with colorDashConvertLib.routeMod.routeNs.lch with colorLib.colorLibStrings.Anon_Ansi16,
+    rgb: colorDashConvertLib.Anon_3 with colorDashConvertLib.routeMod.routeNs.rgb with colorLib.colorLibStrings.Anon_Ansi16,
+    xyz: colorDashConvertLib.Anon_3ChannelsLab with colorDashConvertLib.routeMod.routeNs.xyz with colorLib.colorLibStrings.Anon_Ansi16
+  ): Anon_Ansi16 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ansi16")(ansi16)
+    __obj.updateDynamic("ansi256")(ansi256)
+    __obj.updateDynamic("apple")(apple)
+    __obj.updateDynamic("cmyk")(cmyk)
+    __obj.updateDynamic("gray")(gray)
+    __obj.updateDynamic("hcg")(hcg)
+    __obj.updateDynamic("hex")(hex)
+    __obj.updateDynamic("hsl")(hsl)
+    __obj.updateDynamic("hsv")(hsv)
+    __obj.updateDynamic("hwb")(hwb)
+    __obj.updateDynamic("keyword")(keyword)
+    __obj.updateDynamic("lab")(lab)
+    __obj.updateDynamic("lch")(lch)
+    __obj.updateDynamic("rgb")(rgb)
+    __obj.updateDynamic("xyz")(xyz)
+    __obj.asInstanceOf[Anon_Ansi16]
+  }
+}
+

@@ -14,3 +14,18 @@ trait ListResponse extends js.Object {
   var maximumKeyCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListResponse {
+  @scala.inline
+  def apply(
+    items: js.Array[GetResponse] = null,
+    kind: java.lang.String = null,
+    maximumKeyCount: scala.Int | scala.Double = null
+  ): ListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maximumKeyCount != null) __obj.updateDynamic("maximumKeyCount")(maximumKeyCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListResponse]
+  }
+}
+

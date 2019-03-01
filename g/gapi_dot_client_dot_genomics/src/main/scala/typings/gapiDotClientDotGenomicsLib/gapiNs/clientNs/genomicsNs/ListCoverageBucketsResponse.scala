@@ -28,3 +28,18 @@ trait ListCoverageBucketsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListCoverageBucketsResponse {
+  @scala.inline
+  def apply(
+    bucketWidth: java.lang.String = null,
+    coverageBuckets: js.Array[CoverageBucket] = null,
+    nextPageToken: java.lang.String = null
+  ): ListCoverageBucketsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (bucketWidth != null) __obj.updateDynamic("bucketWidth")(bucketWidth)
+    if (coverageBuckets != null) __obj.updateDynamic("coverageBuckets")(coverageBuckets)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListCoverageBucketsResponse]
+  }
+}
+

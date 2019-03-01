@@ -45,3 +45,30 @@ trait RelayUptime extends js.Object {
   ] = js.undefined
 }
 
+object RelayUptime {
+  @scala.inline
+  def apply(
+    fingerprint: java.lang.String,
+    flags: org.scalablytyped.runtime.StringDictionary[
+      stdLib.Partial[
+        stdLib.Record[
+          onionooLib.onionooLibStrings.`1_week` | onionooLib.onionooLibStrings.`1_month` | onionooLib.onionooLibStrings.`6_months` | onionooLib.onionooLibStrings.`1_year` | onionooLib.onionooLibStrings.`5_years`, 
+          Histogram
+        ]
+      ]
+    ] = null,
+    uptime: stdLib.Partial[
+      stdLib.Record[
+        onionooLib.onionooLibStrings.`1_week` | onionooLib.onionooLibStrings.`1_month` | onionooLib.onionooLibStrings.`6_months` | onionooLib.onionooLibStrings.`1_year` | onionooLib.onionooLibStrings.`5_years`, 
+        Histogram
+      ]
+    ] = null
+  ): RelayUptime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fingerprint")(fingerprint)
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (uptime != null) __obj.updateDynamic("uptime")(uptime)
+    __obj.asInstanceOf[RelayUptime]
+  }
+}
+

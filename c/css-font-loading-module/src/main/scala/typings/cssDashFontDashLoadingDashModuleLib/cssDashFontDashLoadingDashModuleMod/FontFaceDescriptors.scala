@@ -14,3 +14,24 @@ trait FontFaceDescriptors extends js.Object {
   var weight: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FontFaceDescriptors {
+  @scala.inline
+  def apply(
+    featureSettings: java.lang.String = null,
+    stretch: java.lang.String = null,
+    style: java.lang.String = null,
+    unicodeRange: java.lang.String = null,
+    variant: java.lang.String = null,
+    weight: java.lang.String = null
+  ): FontFaceDescriptors = {
+    val __obj = js.Dynamic.literal()
+    if (featureSettings != null) __obj.updateDynamic("featureSettings")(featureSettings)
+    if (stretch != null) __obj.updateDynamic("stretch")(stretch)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange)
+    if (variant != null) __obj.updateDynamic("variant")(variant)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[FontFaceDescriptors]
+  }
+}
+

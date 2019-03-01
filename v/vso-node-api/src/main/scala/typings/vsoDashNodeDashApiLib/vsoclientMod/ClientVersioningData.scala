@@ -16,3 +16,13 @@ trait ClientVersioningData extends js.Object {
   var requestUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientVersioningData {
+  @scala.inline
+  def apply(apiVersion: java.lang.String = null, requestUrl: java.lang.String = null): ClientVersioningData = {
+    val __obj = js.Dynamic.literal()
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
+    __obj.asInstanceOf[ClientVersioningData]
+  }
+}
+

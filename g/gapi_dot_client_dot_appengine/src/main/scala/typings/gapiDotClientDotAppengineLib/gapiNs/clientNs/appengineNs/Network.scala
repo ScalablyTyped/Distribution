@@ -28,3 +28,20 @@ trait Network extends js.Object {
   var subnetworkName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Network {
+  @scala.inline
+  def apply(
+    forwardedPorts: js.Array[java.lang.String] = null,
+    instanceTag: java.lang.String = null,
+    name: java.lang.String = null,
+    subnetworkName: java.lang.String = null
+  ): Network = {
+    val __obj = js.Dynamic.literal()
+    if (forwardedPorts != null) __obj.updateDynamic("forwardedPorts")(forwardedPorts)
+    if (instanceTag != null) __obj.updateDynamic("instanceTag")(instanceTag)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (subnetworkName != null) __obj.updateDynamic("subnetworkName")(subnetworkName)
+    __obj.asInstanceOf[Network]
+  }
+}
+

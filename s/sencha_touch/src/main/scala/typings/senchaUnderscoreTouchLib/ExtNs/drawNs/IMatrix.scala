@@ -298,3 +298,182 @@ trait IMatrix
   ] = js.undefined
 }
 
+object IMatrix {
+  @scala.inline
+  def apply(
+    a: scala.Int | scala.Double = null,
+    alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    append: js.Function6[
+      /* xx */ js.UndefOr[scala.Double], 
+      /* xy */ js.UndefOr[scala.Double], 
+      /* yx */ js.UndefOr[scala.Double], 
+      /* yy */ js.UndefOr[scala.Double], 
+      /* dx */ js.UndefOr[scala.Double], 
+      /* dy */ js.UndefOr[scala.Double], 
+      IMatrix
+    ] = null,
+    appendMatrix: js.Function1[/* matrix */ js.UndefOr[IMatrix], IMatrix] = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    clone: js.Function0[IMatrix] = null,
+    config: js.Any = null,
+    destroy: js.Function0[scala.Unit] = null,
+    equals: js.Function1[/* matrix */ js.UndefOr[IMatrix], scala.Boolean] = null,
+    extend: java.lang.String = null,
+    flipX: js.Function0[IMatrix] = null,
+    flipY: js.Function0[IMatrix] = null,
+    getDX: js.Function0[scala.Double] = null,
+    getDY: js.Function0[scala.Double] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getScaleX: js.Function0[scala.Double] = null,
+    getScaleY: js.Function0[scala.Double] = null,
+    getXX: js.Function0[scala.Double] = null,
+    getXY: js.Function0[scala.Double] = null,
+    getYX: js.Function0[scala.Double] = null,
+    getYY: js.Function0[scala.Double] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    inverse: js.Function1[/* target */ js.UndefOr[IMatrix], IMatrix] = null,
+    isIdentity: js.Function0[scala.Boolean] = null,
+    mixins: js.Any = null,
+    multiply: js.Function1[/* matrix */ js.UndefOr[IMatrix], IMatrix] = null,
+    platformConfig: js.Any = null,
+    prepend: js.Function6[
+      /* xx */ js.UndefOr[scala.Double], 
+      /* xy */ js.UndefOr[scala.Double], 
+      /* yx */ js.UndefOr[scala.Double], 
+      /* yy */ js.UndefOr[scala.Double], 
+      /* dx */ js.UndefOr[scala.Double], 
+      /* dy */ js.UndefOr[scala.Double], 
+      IMatrix
+    ] = null,
+    prependMatrix: js.Function1[/* matrix */ js.UndefOr[IMatrix], IMatrix] = null,
+    reset: js.Function0[IMatrix] = null,
+    rotate: js.Function4[
+      /* angle */ js.UndefOr[scala.Double], 
+      /* rcx */ js.UndefOr[js.Any], 
+      /* rcy */ js.UndefOr[js.Any], 
+      /* prepend */ js.UndefOr[scala.Boolean], 
+      IMatrix
+    ] = null,
+    rotateFromVector: js.Function3[
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* prepend */ js.UndefOr[scala.Boolean], 
+      IMatrix
+    ] = null,
+    scale: js.Function5[
+      /* sx */ js.UndefOr[scala.Double], 
+      /* sy */ js.UndefOr[scala.Double], 
+      /* scx */ js.UndefOr[scala.Double], 
+      /* scy */ js.UndefOr[scala.Double], 
+      /* prepend */ js.UndefOr[scala.Boolean], 
+      IMatrix
+    ] = null,
+    self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
+    set: js.Function6[
+      /* xx */ js.UndefOr[scala.Double], 
+      /* xy */ js.UndefOr[scala.Double], 
+      /* yx */ js.UndefOr[scala.Double], 
+      /* yy */ js.UndefOr[scala.Double], 
+      /* dx */ js.UndefOr[scala.Double], 
+      /* dy */ js.UndefOr[scala.Double], 
+      IMatrix
+    ] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    skewX: js.Function1[/* angle */ js.UndefOr[scala.Double], IMatrix] = null,
+    skewY: js.Function1[/* angle */ js.UndefOr[scala.Double], IMatrix] = null,
+    split: js.Function0[_] = null,
+    statics: js.Any = null,
+    toArray: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    toContext: js.Function1[/* ctx */ js.UndefOr[js.Any], IMatrix] = null,
+    toString: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    toSvg: js.Function0[java.lang.String] = null,
+    toVerticalArray: js.Function0[_] = null,
+    transformBBox: js.Function3[
+      /* bbox */ js.UndefOr[js.Any], 
+      /* radius */ js.UndefOr[scala.Double], 
+      /* target */ js.UndefOr[js.Any], 
+      _
+    ] = null,
+    transformList: js.Function1[
+      /* list */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
+      senchaUnderscoreTouchLib.ExtNs.Array
+    ] = null,
+    transformPoint: js.Function1[
+      /* point */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
+      senchaUnderscoreTouchLib.ExtNs.Array
+    ] = null,
+    translate: js.Function3[
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* prepend */ js.UndefOr[scala.Boolean], 
+      IMatrix
+    ] = null,
+    uses: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    x: js.Function2[/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], scala.Double] = null,
+    y: js.Function2[/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], scala.Double] = null
+  ): IMatrix = {
+    val __obj = js.Dynamic.literal()
+    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (append != null) __obj.updateDynamic("append")(append)
+    if (appendMatrix != null) __obj.updateDynamic("appendMatrix")(appendMatrix)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (clone != null) __obj.updateDynamic("clone")(clone)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (equals != null) __obj.updateDynamic("equals")(equals)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (flipX != null) __obj.updateDynamic("flipX")(flipX)
+    if (flipY != null) __obj.updateDynamic("flipY")(flipY)
+    if (getDX != null) __obj.updateDynamic("getDX")(getDX)
+    if (getDY != null) __obj.updateDynamic("getDY")(getDY)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getScaleX != null) __obj.updateDynamic("getScaleX")(getScaleX)
+    if (getScaleY != null) __obj.updateDynamic("getScaleY")(getScaleY)
+    if (getXX != null) __obj.updateDynamic("getXX")(getXX)
+    if (getXY != null) __obj.updateDynamic("getXY")(getXY)
+    if (getYX != null) __obj.updateDynamic("getYX")(getYX)
+    if (getYY != null) __obj.updateDynamic("getYY")(getYY)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (inverse != null) __obj.updateDynamic("inverse")(inverse)
+    if (isIdentity != null) __obj.updateDynamic("isIdentity")(isIdentity)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (multiply != null) __obj.updateDynamic("multiply")(multiply)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (prepend != null) __obj.updateDynamic("prepend")(prepend)
+    if (prependMatrix != null) __obj.updateDynamic("prependMatrix")(prependMatrix)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate)
+    if (rotateFromVector != null) __obj.updateDynamic("rotateFromVector")(rotateFromVector)
+    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (skewX != null) __obj.updateDynamic("skewX")(skewX)
+    if (skewY != null) __obj.updateDynamic("skewY")(skewY)
+    if (split != null) __obj.updateDynamic("split")(split)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (toArray != null) __obj.updateDynamic("toArray")(toArray)
+    if (toContext != null) __obj.updateDynamic("toContext")(toContext)
+    if (toString != null) __obj.updateDynamic("toString")(toString)
+    if (toSvg != null) __obj.updateDynamic("toSvg")(toSvg)
+    if (toVerticalArray != null) __obj.updateDynamic("toVerticalArray")(toVerticalArray)
+    if (transformBBox != null) __obj.updateDynamic("transformBBox")(transformBBox)
+    if (transformList != null) __obj.updateDynamic("transformList")(transformList)
+    if (transformPoint != null) __obj.updateDynamic("transformPoint")(transformPoint)
+    if (translate != null) __obj.updateDynamic("translate")(translate)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (x != null) __obj.updateDynamic("x")(x)
+    if (y != null) __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[IMatrix]
+  }
+}
+

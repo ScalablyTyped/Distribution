@@ -11,3 +11,14 @@ trait Anon_Add extends js.Object {
   var update: scala.Double
 }
 
+object Anon_Add {
+  @scala.inline
+  def apply(add: scala.Double, delete: scala.Double, update: scala.Double): Anon_Add = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Anon_Add]
+  }
+}
+

@@ -12,3 +12,14 @@ trait Anon_PrivateKey extends js.Object {
   var subject: java.lang.String
 }
 
+object Anon_PrivateKey {
+  @scala.inline
+  def apply(privateKey: java.lang.String, publicKey: java.lang.String, subject: java.lang.String): Anon_PrivateKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("privateKey")(privateKey)
+    __obj.updateDynamic("publicKey")(publicKey)
+    __obj.updateDynamic("subject")(subject)
+    __obj.asInstanceOf[Anon_PrivateKey]
+  }
+}
+

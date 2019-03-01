@@ -16,3 +16,28 @@ trait ZoomifyOptions extends js.Object {
   var url: java.lang.String
 }
 
+object ZoomifyOptions {
+  @scala.inline
+  def apply(
+    size: openlayersLib.openlayersMod.Size,
+    url: java.lang.String,
+    attributions: openlayersLib.openlayersMod.AttributionLike = null,
+    cacheSize: scala.Int | scala.Double = null,
+    crossOrigin: java.lang.String = null,
+    logo: java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions = null,
+    reprojectionErrorThreshold: scala.Int | scala.Double = null,
+    tierSizeCalculation: java.lang.String = null
+  ): ZoomifyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("url")(url)
+    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
+    if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
+    if (tierSizeCalculation != null) __obj.updateDynamic("tierSizeCalculation")(tierSizeCalculation)
+    __obj.asInstanceOf[ZoomifyOptions]
+  }
+}
+

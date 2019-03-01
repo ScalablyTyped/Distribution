@@ -11,3 +11,16 @@ trait CommandLineSwitches
   var raw: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CommandLineSwitches {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    raw: js.Array[java.lang.String] = null
+  ): CommandLineSwitches = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[CommandLineSwitches]
+  }
+}
+

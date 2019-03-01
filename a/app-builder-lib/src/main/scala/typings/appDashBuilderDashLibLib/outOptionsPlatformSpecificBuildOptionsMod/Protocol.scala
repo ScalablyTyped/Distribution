@@ -23,3 +23,18 @@ trait Protocol extends js.Object {
   val schemes: js.Array[java.lang.String]
 }
 
+object Protocol {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    schemes: js.Array[java.lang.String],
+    role: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Editor | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Viewer | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Shell | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.None = null
+  ): Protocol = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("schemes")(schemes)
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Protocol]
+  }
+}
+

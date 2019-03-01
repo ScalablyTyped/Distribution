@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait _PlainJSONArray
   extends stdLib.Array[PlainJSONValue]
+     with _PlainJSONValue
 

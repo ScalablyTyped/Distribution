@@ -25,3 +25,30 @@ trait LocalNotificationOptions extends js.Object {
   var title: java.lang.String
 }
 
+object LocalNotificationOptions {
+  @scala.inline
+  def apply(
+    buildId: jpushDashReactDashNativeLib.jpushDashReactDashNativeLibNumbers.`1` | jpushDashReactDashNativeLib.jpushDashReactDashNativeLibNumbers.`2`,
+    content: java.lang.String,
+    fireTime: scala.Double,
+    id: scala.Double,
+    title: java.lang.String,
+    badge: scala.Int | scala.Double = null,
+    extra: jpushDashReactDashNativeLib.ExtraData = null,
+    soundName: java.lang.String = null,
+    subtitle: java.lang.String = null
+  ): LocalNotificationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildId")(buildId.asInstanceOf[js.Any])
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("fireTime")(fireTime)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("title")(title)
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (extra != null) __obj.updateDynamic("extra")(extra)
+    if (soundName != null) __obj.updateDynamic("soundName")(soundName)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    __obj.asInstanceOf[LocalNotificationOptions]
+  }
+}
+

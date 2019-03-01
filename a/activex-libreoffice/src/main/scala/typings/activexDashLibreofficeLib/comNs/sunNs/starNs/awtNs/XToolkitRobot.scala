@@ -17,3 +17,22 @@ trait XToolkitRobot extends js.Object {
   def mouseRelease(aMouseEvent: MouseEvent): scala.Unit
 }
 
+object XToolkitRobot {
+  @scala.inline
+  def apply(
+    keyPress: js.Function1[KeyEvent, scala.Unit],
+    keyRelease: js.Function1[KeyEvent, scala.Unit],
+    mouseMove: js.Function1[MouseEvent, scala.Unit],
+    mousePress: js.Function1[MouseEvent, scala.Unit],
+    mouseRelease: js.Function1[MouseEvent, scala.Unit]
+  ): XToolkitRobot = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyPress")(keyPress)
+    __obj.updateDynamic("keyRelease")(keyRelease)
+    __obj.updateDynamic("mouseMove")(mouseMove)
+    __obj.updateDynamic("mousePress")(mousePress)
+    __obj.updateDynamic("mouseRelease")(mouseRelease)
+    __obj.asInstanceOf[XToolkitRobot]
+  }
+}
+

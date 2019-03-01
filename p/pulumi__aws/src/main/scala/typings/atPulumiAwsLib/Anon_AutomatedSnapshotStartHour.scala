@@ -9,3 +9,12 @@ trait Anon_AutomatedSnapshotStartHour extends js.Object {
   var automatedSnapshotStartHour: scala.Double
 }
 
+object Anon_AutomatedSnapshotStartHour {
+  @scala.inline
+  def apply(automatedSnapshotStartHour: scala.Double): Anon_AutomatedSnapshotStartHour = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("automatedSnapshotStartHour")(automatedSnapshotStartHour)
+    __obj.asInstanceOf[Anon_AutomatedSnapshotStartHour]
+  }
+}
+

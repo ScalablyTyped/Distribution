@@ -11,3 +11,14 @@ trait Anon_ColorStyle extends js.Object {
   var width: java.lang.String
 }
 
+object Anon_ColorStyle {
+  @scala.inline
+  def apply(color: java.lang.String, style: java.lang.String, width: java.lang.String): Anon_ColorStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Anon_ColorStyle]
+  }
+}
+

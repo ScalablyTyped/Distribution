@@ -14,3 +14,27 @@ trait BlogsResource extends js.Object {
   def listByUser(request: gapiDotClientDotBloggerLib.Anon_AltFetchUserInfo): gapiDotClientLib.gapiNs.clientNs.Request[BlogList]
 }
 
+object BlogsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Blog]
+    ],
+    getByUrl: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Blog]
+    ],
+    listByUser: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltFetchUserInfo, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BlogList]
+    ]
+  ): BlogsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getByUrl")(getByUrl)
+    __obj.updateDynamic("listByUser")(listByUser)
+    __obj.asInstanceOf[BlogsResource]
+  }
+}
+

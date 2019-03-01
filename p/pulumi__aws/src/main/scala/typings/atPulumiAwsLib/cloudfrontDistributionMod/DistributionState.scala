@@ -180,3 +180,82 @@ trait DistributionState extends js.Object {
   val webAclId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object DistributionState {
+  @scala.inline
+  def apply(
+    activeTrustedSigners: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    aliases: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cacheBehaviors: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+      ]
+    ] = null,
+    callerReference: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    comment: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customErrorResponses: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ErrorCachingMinTtlErrorCode]
+      ]
+    ] = null,
+    defaultCacheBehavior: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl] = null,
+    defaultRootObject: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    etag: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hostedZoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    httpVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    inProgressValidationBatches: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    isIpv6Enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    lastModifiedTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    loggingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketIncludeCookiesPrefix] = null,
+    orderedCacheBehaviors: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+      ]
+    ] = null,
+    origins: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CustomHeadersCustomOriginConfig]
+      ]
+    ] = null,
+    priceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    restrictions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_GeoRestrictionAnonLocationsRestrictionType] = null,
+    retainOnDelete: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    viewerCertificate: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcmCertificateArnCloudfrontDefaultCertificate] = null,
+    webAclId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): DistributionState = {
+    val __obj = js.Dynamic.literal()
+    if (activeTrustedSigners != null) __obj.updateDynamic("activeTrustedSigners")(activeTrustedSigners.asInstanceOf[js.Any])
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (cacheBehaviors != null) __obj.updateDynamic("cacheBehaviors")(cacheBehaviors.asInstanceOf[js.Any])
+    if (callerReference != null) __obj.updateDynamic("callerReference")(callerReference.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (customErrorResponses != null) __obj.updateDynamic("customErrorResponses")(customErrorResponses.asInstanceOf[js.Any])
+    if (defaultCacheBehavior != null) __obj.updateDynamic("defaultCacheBehavior")(defaultCacheBehavior.asInstanceOf[js.Any])
+    if (defaultRootObject != null) __obj.updateDynamic("defaultRootObject")(defaultRootObject.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
+    if (hostedZoneId != null) __obj.updateDynamic("hostedZoneId")(hostedZoneId.asInstanceOf[js.Any])
+    if (httpVersion != null) __obj.updateDynamic("httpVersion")(httpVersion.asInstanceOf[js.Any])
+    if (inProgressValidationBatches != null) __obj.updateDynamic("inProgressValidationBatches")(inProgressValidationBatches.asInstanceOf[js.Any])
+    if (isIpv6Enabled != null) __obj.updateDynamic("isIpv6Enabled")(isIpv6Enabled.asInstanceOf[js.Any])
+    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime.asInstanceOf[js.Any])
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
+    if (orderedCacheBehaviors != null) __obj.updateDynamic("orderedCacheBehaviors")(orderedCacheBehaviors.asInstanceOf[js.Any])
+    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    if (priceClass != null) __obj.updateDynamic("priceClass")(priceClass.asInstanceOf[js.Any])
+    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
+    if (retainOnDelete != null) __obj.updateDynamic("retainOnDelete")(retainOnDelete.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (viewerCertificate != null) __obj.updateDynamic("viewerCertificate")(viewerCertificate.asInstanceOf[js.Any])
+    if (webAclId != null) __obj.updateDynamic("webAclId")(webAclId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DistributionState]
+  }
+}
+

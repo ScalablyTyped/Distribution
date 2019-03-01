@@ -5,9 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NonNullTypeNode extends js.Object {
+trait NonNullTypeNode
+  extends ASTNode
+     with TypeNode {
   val kind: graphqlLib.graphqlLibStrings.NonNullType
   val loc: js.UndefOr[Location] = js.undefined
   val `type`: NamedTypeNode | ListTypeNode
+}
+
+object NonNullTypeNode {
+  @scala.inline
+  def apply(
+    kind: graphqlLib.graphqlLibStrings.NonNullType,
+    `type`: NamedTypeNode | ListTypeNode,
+    loc: Location = null
+  ): NonNullTypeNode = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("kind")(kind)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[NonNullTypeNode]
+  }
 }
 

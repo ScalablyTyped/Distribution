@@ -46,3 +46,48 @@ trait DialogContext extends js.Object {
   def setType(dialogType: java.lang.String): scala.Unit
 }
 
+object DialogContext {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    enableButtons: js.Function1[scala.Boolean, scala.Unit],
+    getButton: js.Function1[java.lang.String, jqueryLib.JQuery[stdLib.HTMLElement]],
+    getData: js.Function1[java.lang.String, js.Any],
+    getModal: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalBody: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalContent: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalDialog: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalFooter: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getModalHeader: js.Function0[jqueryLib.JQuery[stdLib.HTMLElement]],
+    getTitle: js.Function0[java.lang.String],
+    open: js.Function0[scala.Unit],
+    realize: js.Function0[scala.Unit],
+    setClosable: js.Function1[scala.Boolean, scala.Unit],
+    setData: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setMessage: js.Function1[java.lang.String, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit],
+    setType: js.Function1[java.lang.String, scala.Unit]
+  ): DialogContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("enableButtons")(enableButtons)
+    __obj.updateDynamic("getButton")(getButton)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("getModal")(getModal)
+    __obj.updateDynamic("getModalBody")(getModalBody)
+    __obj.updateDynamic("getModalContent")(getModalContent)
+    __obj.updateDynamic("getModalDialog")(getModalDialog)
+    __obj.updateDynamic("getModalFooter")(getModalFooter)
+    __obj.updateDynamic("getModalHeader")(getModalHeader)
+    __obj.updateDynamic("getTitle")(getTitle)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("realize")(realize)
+    __obj.updateDynamic("setClosable")(setClosable)
+    __obj.updateDynamic("setData")(setData)
+    __obj.updateDynamic("setMessage")(setMessage)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("setType")(setType)
+    __obj.asInstanceOf[DialogContext]
+  }
+}
+

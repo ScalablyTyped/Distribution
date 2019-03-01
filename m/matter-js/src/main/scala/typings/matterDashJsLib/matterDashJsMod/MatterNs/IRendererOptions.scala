@@ -38,3 +38,20 @@ trait IRendererOptions extends js.Object {
   var wireframes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IRendererOptions {
+  @scala.inline
+  def apply(
+    hasBounds: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    wireframes: js.UndefOr[scala.Boolean] = js.undefined
+  ): IRendererOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hasBounds)) __obj.updateDynamic("hasBounds")(hasBounds)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(wireframes)) __obj.updateDynamic("wireframes")(wireframes)
+    __obj.asInstanceOf[IRendererOptions]
+  }
+}
+

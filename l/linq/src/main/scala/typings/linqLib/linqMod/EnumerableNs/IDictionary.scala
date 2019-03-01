@@ -16,3 +16,28 @@ trait IDictionary[TKey, TValue] extends js.Object {
   def toEnumerable(): IEnumerable[linqLib.Anon_KeyValue[TKey, TValue]]
 }
 
+object IDictionary {
+  @scala.inline
+  def apply[TKey, TValue](
+    add: js.Function2[TKey, TValue, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    contains: js.Function1[TKey, scala.Boolean],
+    count: js.Function0[scala.Double],
+    get: js.Function1[TKey, TValue],
+    remove: js.Function1[TKey, scala.Unit],
+    set: js.Function2[TKey, TValue, scala.Boolean],
+    toEnumerable: js.Function0[IEnumerable[linqLib.Anon_KeyValue[TKey, TValue]]]
+  ): IDictionary[TKey, TValue] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("toEnumerable")(toEnumerable)
+    __obj.asInstanceOf[IDictionary[TKey, TValue]]
+  }
+}
+

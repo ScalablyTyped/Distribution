@@ -65,3 +65,28 @@ trait NotebookCollectionLoadOptions extends js.Object {
   var sections: js.UndefOr[SectionCollectionLoadOptions] = js.undefined
 }
 
+object NotebookCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    baseUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    clientUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    isVirtual: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    sectionGroups: SectionGroupCollectionLoadOptions = null,
+    sections: SectionCollectionLoadOptions = null
+  ): NotebookCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(baseUrl)) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isVirtual)) __obj.updateDynamic("isVirtual")(isVirtual)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (sectionGroups != null) __obj.updateDynamic("sectionGroups")(sectionGroups)
+    if (sections != null) __obj.updateDynamic("sections")(sections)
+    __obj.asInstanceOf[NotebookCollectionLoadOptions]
+  }
+}
+

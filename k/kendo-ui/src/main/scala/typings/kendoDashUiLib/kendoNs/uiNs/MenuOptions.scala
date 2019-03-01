@@ -23,3 +23,42 @@ trait MenuOptions extends js.Object {
   var select: js.UndefOr[js.Function1[/* e */ MenuSelectEvent, scala.Unit]] = js.undefined
 }
 
+object MenuOptions {
+  @scala.inline
+  def apply(
+    activate: js.Function1[/* e */ MenuActivateEvent, scala.Unit] = null,
+    animation: scala.Boolean | MenuAnimation = null,
+    close: js.Function1[/* e */ MenuCloseEvent, scala.Unit] = null,
+    closeOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    dataSource: js.Any = null,
+    deactivate: js.Function1[/* e */ MenuDeactivateEvent, scala.Unit] = null,
+    direction: java.lang.String = null,
+    hoverDelay: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    open: js.Function1[/* e */ MenuOpenEvent, scala.Unit] = null,
+    openOnClick: scala.Boolean | MenuOpenOnClick = null,
+    orientation: java.lang.String = null,
+    popupCollision: java.lang.String = null,
+    scrollable: scala.Boolean | MenuScrollable = null,
+    select: js.Function1[/* e */ MenuSelectEvent, scala.Unit] = null
+  ): MenuOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activate != null) __obj.updateDynamic("activate")(activate)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (deactivate != null) __obj.updateDynamic("deactivate")(deactivate)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (hoverDelay != null) __obj.updateDynamic("hoverDelay")(hoverDelay.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (openOnClick != null) __obj.updateDynamic("openOnClick")(openOnClick.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (popupCollision != null) __obj.updateDynamic("popupCollision")(popupCollision)
+    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select)
+    __obj.asInstanceOf[MenuOptions]
+  }
+}
+

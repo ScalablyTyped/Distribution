@@ -20,3 +20,18 @@ trait HeadersSortedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object HeadersSortedEventUIParam {
+  @scala.inline
+  def apply(
+    appliedLevelSortDirections: js.Array[_] = null,
+    levelSortDirections: js.Array[_] = null,
+    owner: js.Any = null
+  ): HeadersSortedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (appliedLevelSortDirections != null) __obj.updateDynamic("appliedLevelSortDirections")(appliedLevelSortDirections)
+    if (levelSortDirections != null) __obj.updateDynamic("levelSortDirections")(levelSortDirections)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[HeadersSortedEventUIParam]
+  }
+}
+

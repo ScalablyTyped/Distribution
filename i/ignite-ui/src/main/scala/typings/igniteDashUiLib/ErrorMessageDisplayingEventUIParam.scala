@@ -16,3 +16,13 @@ trait ErrorMessageDisplayingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ErrorMessageDisplayingEventUIParam {
+  @scala.inline
+  def apply(errorMessage: js.Any = null, owner: js.Any = null): ErrorMessageDisplayingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ErrorMessageDisplayingEventUIParam]
+  }
+}
+

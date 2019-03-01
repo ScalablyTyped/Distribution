@@ -20,3 +20,18 @@ trait ColorMappingCollection extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ColorMappingCollection {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    label: ColorMappingCollectionLabel = null,
+    value: scala.Int | scala.Double = null
+  ): ColorMappingCollection = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColorMappingCollection]
+  }
+}
+

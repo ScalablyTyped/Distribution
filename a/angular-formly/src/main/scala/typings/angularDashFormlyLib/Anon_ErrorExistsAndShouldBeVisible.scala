@@ -28,3 +28,18 @@ trait Anon_ErrorExistsAndShouldBeVisible extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ErrorExistsAndShouldBeVisible {
+  @scala.inline
+  def apply(
+    errorExistsAndShouldBeVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    messages: org.scalablytyped.runtime.StringDictionary[angularDashFormlyLib.AngularFormlyNs.IExpressionFunction | java.lang.String] = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ErrorExistsAndShouldBeVisible = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(errorExistsAndShouldBeVisible)) __obj.updateDynamic("errorExistsAndShouldBeVisible")(errorExistsAndShouldBeVisible)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[Anon_ErrorExistsAndShouldBeVisible]
+  }
+}
+

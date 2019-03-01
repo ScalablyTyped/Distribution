@@ -22,3 +22,26 @@ trait IInvocator extends js.Object {
   var workflow: js.UndefOr[IWorkflowInfo] = js.undefined
 }
 
+object IInvocator {
+  @scala.inline
+  def apply(
+    cmsBaseUrl: java.lang.String,
+    documentIds: js.Array[java.lang.String],
+    editSessionToken: java.lang.String,
+    autosave: js.UndefOr[scala.Boolean] = js.undefined,
+    heartbeat: scala.Int | scala.Double = null,
+    user: IUserInfo = null,
+    workflow: IWorkflowInfo = null
+  ): IInvocator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cmsBaseUrl")(cmsBaseUrl)
+    __obj.updateDynamic("documentIds")(documentIds)
+    __obj.updateDynamic("editSessionToken")(editSessionToken)
+    if (!js.isUndefined(autosave)) __obj.updateDynamic("autosave")(autosave)
+    if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user)
+    if (workflow != null) __obj.updateDynamic("workflow")(workflow)
+    __obj.asInstanceOf[IInvocator]
+  }
+}
+

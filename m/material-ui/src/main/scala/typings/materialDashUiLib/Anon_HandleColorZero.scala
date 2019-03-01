@@ -18,3 +18,32 @@ trait Anon_HandleColorZero extends js.Object {
   var trackSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_HandleColorZero {
+  @scala.inline
+  def apply(
+    handleColorZero: java.lang.String = null,
+    handleFillColor: java.lang.String = null,
+    handleSize: scala.Int | scala.Double = null,
+    handleSizeActive: scala.Int | scala.Double = null,
+    handleSizeDisabled: scala.Int | scala.Double = null,
+    rippleColor: java.lang.String = null,
+    selectionColor: java.lang.String = null,
+    trackColor: java.lang.String = null,
+    trackColorSelected: java.lang.String = null,
+    trackSize: scala.Int | scala.Double = null
+  ): Anon_HandleColorZero = {
+    val __obj = js.Dynamic.literal()
+    if (handleColorZero != null) __obj.updateDynamic("handleColorZero")(handleColorZero)
+    if (handleFillColor != null) __obj.updateDynamic("handleFillColor")(handleFillColor)
+    if (handleSize != null) __obj.updateDynamic("handleSize")(handleSize.asInstanceOf[js.Any])
+    if (handleSizeActive != null) __obj.updateDynamic("handleSizeActive")(handleSizeActive.asInstanceOf[js.Any])
+    if (handleSizeDisabled != null) __obj.updateDynamic("handleSizeDisabled")(handleSizeDisabled.asInstanceOf[js.Any])
+    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor)
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
+    if (trackColor != null) __obj.updateDynamic("trackColor")(trackColor)
+    if (trackColorSelected != null) __obj.updateDynamic("trackColorSelected")(trackColorSelected)
+    if (trackSize != null) __obj.updateDynamic("trackSize")(trackSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_HandleColorZero]
+  }
+}
+

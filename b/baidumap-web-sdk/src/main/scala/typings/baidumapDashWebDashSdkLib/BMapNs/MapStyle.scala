@@ -10,3 +10,13 @@ trait MapStyle extends js.Object {
   var style: java.lang.String
 }
 
+object MapStyle {
+  @scala.inline
+  def apply(features: js.Array[_], style: java.lang.String): MapStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("features")(features)
+    __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[MapStyle]
+  }
+}
+

@@ -1707,6 +1707,8 @@ object ElasticTranscoderNs extends js.Object {
     var Message: js.UndefOr[String] = js.undefined
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccessControl = java.lang.String
   type AccessControls = js.Array[AccessControl]
@@ -1806,6 +1808,6 @@ object ElasticTranscoderNs extends js.Object {
   type WatermarkSizingPolicy = java.lang.String
   type ZeroTo255String = java.lang.String
   type ZeroTo512String = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2012-09-25` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

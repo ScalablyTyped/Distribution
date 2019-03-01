@@ -17,3 +17,13 @@ trait Anon_Lines extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Lines {
+  @scala.inline
+  def apply(lines: js.Array[c3Lib.c3Mod.LineOptions] = null, show: js.UndefOr[scala.Boolean] = js.undefined): Anon_Lines = {
+    val __obj = js.Dynamic.literal()
+    if (lines != null) __obj.updateDynamic("lines")(lines)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[Anon_Lines]
+  }
+}
+

@@ -10,3 +10,22 @@ trait WithRedisOptions extends GeneralOptions {
   var redis: CompatibleRedisClient
 }
 
+object WithRedisOptions {
+  @scala.inline
+  def apply(
+    interval: scala.Double,
+    maxInInterval: scala.Double,
+    redis: CompatibleRedisClient,
+    minDifference: scala.Int | scala.Double = null,
+    namespace: java.lang.String = null
+  ): WithRedisOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("maxInInterval")(maxInInterval)
+    __obj.updateDynamic("redis")(redis)
+    if (minDifference != null) __obj.updateDynamic("minDifference")(minDifference.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    __obj.asInstanceOf[WithRedisOptions]
+  }
+}
+

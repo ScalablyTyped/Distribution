@@ -19,3 +19,34 @@ trait Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientIdClientSe
   var userInfoEndpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientIdClientSecret {
+  @scala.inline
+  def apply(
+    authorizationEndpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    clientId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    clientSecret: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    issuer: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    tokenEndpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    userInfoEndpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    authenticationRequestExtraParams: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    onUnauthenticatedRequest: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    scope: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sessionCookieName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sessionTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientIdClientSecret = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorizationEndpoint")(authorizationEndpoint.asInstanceOf[js.Any])
+    __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    __obj.updateDynamic("tokenEndpoint")(tokenEndpoint.asInstanceOf[js.Any])
+    __obj.updateDynamic("userInfoEndpoint")(userInfoEndpoint.asInstanceOf[js.Any])
+    if (authenticationRequestExtraParams != null) __obj.updateDynamic("authenticationRequestExtraParams")(authenticationRequestExtraParams.asInstanceOf[js.Any])
+    if (onUnauthenticatedRequest != null) __obj.updateDynamic("onUnauthenticatedRequest")(onUnauthenticatedRequest.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (sessionCookieName != null) __obj.updateDynamic("sessionCookieName")(sessionCookieName.asInstanceOf[js.Any])
+    if (sessionTimeout != null) __obj.updateDynamic("sessionTimeout")(sessionTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientIdClientSecret]
+  }
+}
+

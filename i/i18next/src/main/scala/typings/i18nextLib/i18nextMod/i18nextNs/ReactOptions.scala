@@ -34,3 +34,22 @@ trait ReactOptions extends js.Object {
   var wait_FReactOptions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReactOptions {
+  @scala.inline
+  def apply(
+    bindI18n: java.lang.String | i18nextLib.i18nextLibNumbers.`false` = null,
+    bindStore: java.lang.String | i18nextLib.i18nextLibNumbers.`false` = null,
+    defaultTransParent: java.lang.String = null,
+    nsMode: i18nextLib.i18nextLibStrings.default | i18nextLib.i18nextLibStrings.fallback = null,
+    wait: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReactOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bindI18n != null) __obj.updateDynamic("bindI18n")(bindI18n.asInstanceOf[js.Any])
+    if (bindStore != null) __obj.updateDynamic("bindStore")(bindStore.asInstanceOf[js.Any])
+    if (defaultTransParent != null) __obj.updateDynamic("defaultTransParent")(defaultTransParent)
+    if (nsMode != null) __obj.updateDynamic("nsMode")(nsMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    __obj.asInstanceOf[ReactOptions]
+  }
+}
+

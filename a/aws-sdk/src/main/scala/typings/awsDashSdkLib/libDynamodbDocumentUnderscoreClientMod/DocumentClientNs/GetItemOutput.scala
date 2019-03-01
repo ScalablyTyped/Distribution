@@ -16,3 +16,13 @@ trait GetItemOutput extends js.Object {
   var Item: js.UndefOr[AttributeMap] = js.undefined
 }
 
+object GetItemOutput {
+  @scala.inline
+  def apply(ConsumedCapacity: ConsumedCapacity = null, Item: AttributeMap = null): GetItemOutput = {
+    val __obj = js.Dynamic.literal()
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
+    if (Item != null) __obj.updateDynamic("Item")(Item)
+    __obj.asInstanceOf[GetItemOutput]
+  }
+}
+

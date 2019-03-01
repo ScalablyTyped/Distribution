@@ -9,3 +9,17 @@ trait LocalResolver extends js.Object {
   def getLocal(name: java.lang.String): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
 }
 
+object LocalResolver {
+  @scala.inline
+  def apply(
+    getLocal: js.Function1[
+      java.lang.String, 
+      atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
+    ]
+  ): LocalResolver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getLocal")(getLocal)
+    __obj.asInstanceOf[LocalResolver]
+  }
+}
+

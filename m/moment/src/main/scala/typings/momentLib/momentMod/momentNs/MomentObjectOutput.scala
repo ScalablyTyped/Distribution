@@ -17,3 +17,26 @@ trait MomentObjectOutput extends js.Object {
   var years: scala.Double
 }
 
+object MomentObjectOutput {
+  @scala.inline
+  def apply(
+    date: scala.Double,
+    hours: scala.Double,
+    milliseconds: scala.Double,
+    minutes: scala.Double,
+    months: scala.Double,
+    seconds: scala.Double,
+    years: scala.Double
+  ): MomentObjectOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("hours")(hours)
+    __obj.updateDynamic("milliseconds")(milliseconds)
+    __obj.updateDynamic("minutes")(minutes)
+    __obj.updateDynamic("months")(months)
+    __obj.updateDynamic("seconds")(seconds)
+    __obj.updateDynamic("years")(years)
+    __obj.asInstanceOf[MomentObjectOutput]
+  }
+}
+

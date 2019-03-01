@@ -13,3 +13,12 @@ trait ListDeviceConfigVersionsResponse extends js.Object {
   var deviceConfigs: js.UndefOr[js.Array[DeviceConfig]] = js.undefined
 }
 
+object ListDeviceConfigVersionsResponse {
+  @scala.inline
+  def apply(deviceConfigs: js.Array[DeviceConfig] = null): ListDeviceConfigVersionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (deviceConfigs != null) __obj.updateDynamic("deviceConfigs")(deviceConfigs)
+    __obj.asInstanceOf[ListDeviceConfigVersionsResponse]
+  }
+}
+

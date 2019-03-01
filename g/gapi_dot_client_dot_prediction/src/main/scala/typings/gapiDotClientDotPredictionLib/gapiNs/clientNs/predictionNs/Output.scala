@@ -20,3 +20,24 @@ trait Output extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Output {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    outputLabel: java.lang.String = null,
+    outputMulti: js.Array[gapiDotClientDotPredictionLib.Anon_Label] = null,
+    outputValue: java.lang.String = null,
+    selfLink: java.lang.String = null
+  ): Output = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (outputLabel != null) __obj.updateDynamic("outputLabel")(outputLabel)
+    if (outputMulti != null) __obj.updateDynamic("outputMulti")(outputMulti)
+    if (outputValue != null) __obj.updateDynamic("outputValue")(outputValue)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Output]
+  }
+}
+

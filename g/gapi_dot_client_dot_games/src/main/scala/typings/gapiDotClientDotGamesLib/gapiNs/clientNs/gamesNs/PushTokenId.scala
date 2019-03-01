@@ -12,3 +12,13 @@ trait PushTokenId extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PushTokenId {
+  @scala.inline
+  def apply(ios: gapiDotClientDotGamesLib.Anon_Apnsdevicetoken = null, kind: java.lang.String = null): PushTokenId = {
+    val __obj = js.Dynamic.literal()
+    if (ios != null) __obj.updateDynamic("ios")(ios)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[PushTokenId]
+  }
+}
+

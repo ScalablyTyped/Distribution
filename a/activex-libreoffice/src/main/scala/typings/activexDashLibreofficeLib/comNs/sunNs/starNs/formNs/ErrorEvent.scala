@@ -16,3 +16,13 @@ trait ErrorEvent
   var Reason: js.Any
 }
 
+object ErrorEvent {
+  @scala.inline
+  def apply(Reason: js.Any, Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): ErrorEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Reason")(Reason)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[ErrorEvent]
+  }
+}
+

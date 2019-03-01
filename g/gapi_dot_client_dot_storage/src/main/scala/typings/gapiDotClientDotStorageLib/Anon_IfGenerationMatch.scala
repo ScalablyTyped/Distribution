@@ -13,3 +13,12 @@ trait Anon_IfGenerationMatch extends js.Object {
   var ifGenerationMatch: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_IfGenerationMatch {
+  @scala.inline
+  def apply(ifGenerationMatch: java.lang.String = null): Anon_IfGenerationMatch = {
+    val __obj = js.Dynamic.literal()
+    if (ifGenerationMatch != null) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch)
+    __obj.asInstanceOf[Anon_IfGenerationMatch]
+  }
+}
+

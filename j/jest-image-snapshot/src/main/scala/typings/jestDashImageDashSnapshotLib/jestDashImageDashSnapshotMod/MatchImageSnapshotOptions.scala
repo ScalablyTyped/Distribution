@@ -54,3 +54,30 @@ trait MatchImageSnapshotOptions extends js.Object {
   var updatePassedSnapshot: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MatchImageSnapshotOptions {
+  @scala.inline
+  def apply(
+    customDiffConfig: PixelmatchOptions = null,
+    customDiffDir: java.lang.String = null,
+    customSnapshotIdentifier: java.lang.String = null,
+    customSnapshotsDir: java.lang.String = null,
+    diffDirection: jestDashImageDashSnapshotLib.jestDashImageDashSnapshotLibStrings.horizontal | jestDashImageDashSnapshotLib.jestDashImageDashSnapshotLibStrings.vertical = null,
+    failureThreshold: scala.Int | scala.Double = null,
+    failureThresholdType: jestDashImageDashSnapshotLib.jestDashImageDashSnapshotLibStrings.pixel | jestDashImageDashSnapshotLib.jestDashImageDashSnapshotLibStrings.percent = null,
+    noColors: js.UndefOr[scala.Boolean] = js.undefined,
+    updatePassedSnapshot: js.UndefOr[scala.Boolean] = js.undefined
+  ): MatchImageSnapshotOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customDiffConfig != null) __obj.updateDynamic("customDiffConfig")(customDiffConfig)
+    if (customDiffDir != null) __obj.updateDynamic("customDiffDir")(customDiffDir)
+    if (customSnapshotIdentifier != null) __obj.updateDynamic("customSnapshotIdentifier")(customSnapshotIdentifier)
+    if (customSnapshotsDir != null) __obj.updateDynamic("customSnapshotsDir")(customSnapshotsDir)
+    if (diffDirection != null) __obj.updateDynamic("diffDirection")(diffDirection.asInstanceOf[js.Any])
+    if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
+    if (failureThresholdType != null) __obj.updateDynamic("failureThresholdType")(failureThresholdType.asInstanceOf[js.Any])
+    if (!js.isUndefined(noColors)) __obj.updateDynamic("noColors")(noColors)
+    if (!js.isUndefined(updatePassedSnapshot)) __obj.updateDynamic("updatePassedSnapshot")(updatePassedSnapshot)
+    __obj.asInstanceOf[MatchImageSnapshotOptions]
+  }
+}
+

@@ -11,3 +11,18 @@ trait InvalidBootstrapFileException
   var BootstrapFileURL: java.lang.String
 }
 
+object InvalidBootstrapFileException {
+  @scala.inline
+  def apply(
+    BootstrapFileURL: java.lang.String,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): InvalidBootstrapFileException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BootstrapFileURL")(BootstrapFileURL)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[InvalidBootstrapFileException]
+  }
+}
+

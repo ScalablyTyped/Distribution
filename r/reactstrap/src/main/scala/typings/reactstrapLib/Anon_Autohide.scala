@@ -17,3 +17,30 @@ trait Anon_Autohide extends js.Object {
   var target: java.lang.String | reactLib.HTMLElement
 }
 
+object Anon_Autohide {
+  @scala.inline
+  def apply(
+    target: java.lang.String | reactLib.HTMLElement,
+    autohide: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    container: java.lang.String | reactLib.HTMLElement = null,
+    cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
+    delay: scala.Double | Anon_Hide = null,
+    innerClassName: java.lang.String = null,
+    modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
+    placement: popperDotJsLib.popperDotJsMod.Placement = null
+  ): Anon_Autohide = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (innerClassName != null) __obj.updateDynamic("innerClassName")(innerClassName)
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    __obj.asInstanceOf[Anon_Autohide]
+  }
+}
+

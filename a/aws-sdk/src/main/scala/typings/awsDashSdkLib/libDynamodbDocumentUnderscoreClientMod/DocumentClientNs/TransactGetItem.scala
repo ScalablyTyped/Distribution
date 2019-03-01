@@ -12,3 +12,12 @@ trait TransactGetItem extends js.Object {
   var Get: Get
 }
 
+object TransactGetItem {
+  @scala.inline
+  def apply(Get: Get): TransactGetItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Get")(Get)
+    __obj.asInstanceOf[TransactGetItem]
+  }
+}
+

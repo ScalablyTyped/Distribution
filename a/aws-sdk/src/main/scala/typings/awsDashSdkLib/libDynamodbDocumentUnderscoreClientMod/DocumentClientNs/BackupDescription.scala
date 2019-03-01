@@ -20,3 +20,18 @@ trait BackupDescription extends js.Object {
   var SourceTableFeatureDetails: js.UndefOr[SourceTableFeatureDetails] = js.undefined
 }
 
+object BackupDescription {
+  @scala.inline
+  def apply(
+    BackupDetails: BackupDetails = null,
+    SourceTableDetails: SourceTableDetails = null,
+    SourceTableFeatureDetails: SourceTableFeatureDetails = null
+  ): BackupDescription = {
+    val __obj = js.Dynamic.literal()
+    if (BackupDetails != null) __obj.updateDynamic("BackupDetails")(BackupDetails)
+    if (SourceTableDetails != null) __obj.updateDynamic("SourceTableDetails")(SourceTableDetails)
+    if (SourceTableFeatureDetails != null) __obj.updateDynamic("SourceTableFeatureDetails")(SourceTableFeatureDetails)
+    __obj.asInstanceOf[BackupDescription]
+  }
+}
+

@@ -11,3 +11,14 @@ trait Cookie extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Cookie {
+  @scala.inline
+  def apply(name: java.lang.String = null, options: CookieOptions = null, value: java.lang.String = null): Cookie = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Cookie]
+  }
+}
+

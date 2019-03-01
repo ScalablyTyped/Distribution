@@ -25,3 +25,46 @@ trait Anon_1067 extends js.Object {
   var perfectFourth: polishedLib.polishedLibNumbers.`1DOT333`
 }
 
+object Anon_1067 {
+  @scala.inline
+  def apply(
+    augFourth: polishedLib.polishedLibNumbers.`1DOT414`,
+    doubleOctave: polishedLib.polishedLibNumbers.`4`,
+    goldenSection: polishedLib.polishedLibNumbers.`1DOT618`,
+    majorEleventh: polishedLib.polishedLibNumbers.`2DOT667`,
+    majorSecond: polishedLib.polishedLibNumbers.`1DOT125`,
+    majorSeventh: polishedLib.polishedLibNumbers.`1DOT875`,
+    majorSixth: polishedLib.polishedLibNumbers.`1DOT667`,
+    majorTenth: polishedLib.polishedLibNumbers.`2DOT5`,
+    majorThird: polishedLib.polishedLibNumbers.`1DOT25`,
+    majorTwelfth: polishedLib.polishedLibNumbers.`3`,
+    minorSecond: polishedLib.polishedLibNumbers.`1DOT067`,
+    minorSeventh: polishedLib.polishedLibNumbers.`1DOT778`,
+    minorSixth: polishedLib.polishedLibNumbers.`1DOT6`,
+    minorThird: polishedLib.polishedLibNumbers.`1DOT2`,
+    octave: polishedLib.polishedLibNumbers.`2`,
+    perfectFifth: polishedLib.polishedLibNumbers.`1DOT5`,
+    perfectFourth: polishedLib.polishedLibNumbers.`1DOT333`
+  ): Anon_1067 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("augFourth")(augFourth)
+    __obj.updateDynamic("doubleOctave")(doubleOctave)
+    __obj.updateDynamic("goldenSection")(goldenSection)
+    __obj.updateDynamic("majorEleventh")(majorEleventh)
+    __obj.updateDynamic("majorSecond")(majorSecond)
+    __obj.updateDynamic("majorSeventh")(majorSeventh)
+    __obj.updateDynamic("majorSixth")(majorSixth)
+    __obj.updateDynamic("majorTenth")(majorTenth)
+    __obj.updateDynamic("majorThird")(majorThird)
+    __obj.updateDynamic("majorTwelfth")(majorTwelfth)
+    __obj.updateDynamic("minorSecond")(minorSecond)
+    __obj.updateDynamic("minorSeventh")(minorSeventh)
+    __obj.updateDynamic("minorSixth")(minorSixth)
+    __obj.updateDynamic("minorThird")(minorThird)
+    __obj.updateDynamic("octave")(octave)
+    __obj.updateDynamic("perfectFifth")(perfectFifth)
+    __obj.updateDynamic("perfectFourth")(perfectFourth)
+    __obj.asInstanceOf[Anon_1067]
+  }
+}
+

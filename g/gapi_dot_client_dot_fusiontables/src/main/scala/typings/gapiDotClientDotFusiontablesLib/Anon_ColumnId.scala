@@ -12,3 +12,13 @@ trait Anon_ColumnId extends js.Object {
   var tableIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ColumnId {
+  @scala.inline
+  def apply(columnId: scala.Int | scala.Double = null, tableIndex: scala.Int | scala.Double = null): Anon_ColumnId = {
+    val __obj = js.Dynamic.literal()
+    if (columnId != null) __obj.updateDynamic("columnId")(columnId.asInstanceOf[js.Any])
+    if (tableIndex != null) __obj.updateDynamic("tableIndex")(tableIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ColumnId]
+  }
+}
+

@@ -29,3 +29,24 @@ trait FlagIconOptions extends js.Object {
   var useCssModules: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FlagIconOptions {
+  @scala.inline
+  def apply(
+    customCodes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    themeStyles: org.scalablytyped.runtime.StringDictionary[
+      (csstypeLib.csstypeMod.Properties[
+        java.lang.String | reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssLibNumbers.`0`
+      ]) with (csstypeLib.csstypeMod.PropertiesHyphen[
+        java.lang.String | reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssLibNumbers.`0`
+      ])
+    ] = null,
+    useCssModules: js.UndefOr[scala.Boolean] = js.undefined
+  ): FlagIconOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customCodes != null) __obj.updateDynamic("customCodes")(customCodes)
+    if (themeStyles != null) __obj.updateDynamic("themeStyles")(themeStyles)
+    if (!js.isUndefined(useCssModules)) __obj.updateDynamic("useCssModules")(useCssModules)
+    __obj.asInstanceOf[FlagIconOptions]
+  }
+}
+

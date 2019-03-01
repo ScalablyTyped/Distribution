@@ -12,3 +12,13 @@ trait UrlCrawlErrorCount extends js.Object {
   var timestamp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UrlCrawlErrorCount {
+  @scala.inline
+  def apply(count: java.lang.String = null, timestamp: java.lang.String = null): UrlCrawlErrorCount = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[UrlCrawlErrorCount]
+  }
+}
+

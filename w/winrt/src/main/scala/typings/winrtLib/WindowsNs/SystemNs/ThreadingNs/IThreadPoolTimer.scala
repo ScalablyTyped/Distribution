@@ -11,3 +11,14 @@ trait IThreadPoolTimer extends js.Object {
   def cancel(): scala.Unit
 }
 
+object IThreadPoolTimer {
+  @scala.inline
+  def apply(cancel: js.Function0[scala.Unit], delay: scala.Double, period: scala.Double): IThreadPoolTimer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("delay")(delay)
+    __obj.updateDynamic("period")(period)
+    __obj.asInstanceOf[IThreadPoolTimer]
+  }
+}
+

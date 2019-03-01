@@ -27,3 +27,18 @@ trait Anon_Position extends js.Object {
   var theme: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.ButtonStatesTheme] = js.undefined
 }
 
+object Anon_Position {
+  @scala.inline
+  def apply(
+    position: highchartsLib.highchartsMod.HighchartsNs.Position = null,
+    relativeTo: java.lang.String = null,
+    theme: highchartsLib.highchartsMod.HighchartsNs.ButtonStatesTheme = null
+  ): Anon_Position = {
+    val __obj = js.Dynamic.literal()
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[Anon_Position]
+  }
+}
+

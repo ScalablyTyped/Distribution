@@ -12,3 +12,18 @@ trait ScannerException
   var Error: ScanError
 }
 
+object ScannerException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Error: ScanError,
+    Message: java.lang.String
+  ): ScannerException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Error")(Error)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[ScannerException]
+  }
+}
+

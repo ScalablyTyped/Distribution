@@ -14,3 +14,18 @@ trait ApproximateProgress extends js.Object {
   var remainingTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApproximateProgress {
+  @scala.inline
+  def apply(
+    percentComplete: scala.Int | scala.Double = null,
+    position: Position = null,
+    remainingTime: java.lang.String = null
+  ): ApproximateProgress = {
+    val __obj = js.Dynamic.literal()
+    if (percentComplete != null) __obj.updateDynamic("percentComplete")(percentComplete.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (remainingTime != null) __obj.updateDynamic("remainingTime")(remainingTime)
+    __obj.asInstanceOf[ApproximateProgress]
+  }
+}
+

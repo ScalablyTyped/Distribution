@@ -19,3 +19,34 @@ trait ContractFieldMetadata extends js.Object {
   var typeInfo: js.UndefOr[ContractMetadata] = js.undefined
 }
 
+object ContractFieldMetadata {
+  @scala.inline
+  def apply(
+    dictionaryKeyEnumType: ContractEnumMetadata = null,
+    dictionaryKeyIsDate: js.UndefOr[scala.Boolean] = js.undefined,
+    dictionaryValueEnumType: ContractEnumMetadata = null,
+    dictionaryValueFieldInfo: ContractFieldMetadata = null,
+    dictionaryValueIsDate: js.UndefOr[scala.Boolean] = js.undefined,
+    dictionaryValueTypeInfo: ContractMetadata = null,
+    enumType: ContractEnumMetadata = null,
+    isArray: js.UndefOr[scala.Boolean] = js.undefined,
+    isDate: js.UndefOr[scala.Boolean] = js.undefined,
+    isDictionary: js.UndefOr[scala.Boolean] = js.undefined,
+    typeInfo: ContractMetadata = null
+  ): ContractFieldMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (dictionaryKeyEnumType != null) __obj.updateDynamic("dictionaryKeyEnumType")(dictionaryKeyEnumType)
+    if (!js.isUndefined(dictionaryKeyIsDate)) __obj.updateDynamic("dictionaryKeyIsDate")(dictionaryKeyIsDate)
+    if (dictionaryValueEnumType != null) __obj.updateDynamic("dictionaryValueEnumType")(dictionaryValueEnumType)
+    if (dictionaryValueFieldInfo != null) __obj.updateDynamic("dictionaryValueFieldInfo")(dictionaryValueFieldInfo)
+    if (!js.isUndefined(dictionaryValueIsDate)) __obj.updateDynamic("dictionaryValueIsDate")(dictionaryValueIsDate)
+    if (dictionaryValueTypeInfo != null) __obj.updateDynamic("dictionaryValueTypeInfo")(dictionaryValueTypeInfo)
+    if (enumType != null) __obj.updateDynamic("enumType")(enumType)
+    if (!js.isUndefined(isArray)) __obj.updateDynamic("isArray")(isArray)
+    if (!js.isUndefined(isDate)) __obj.updateDynamic("isDate")(isDate)
+    if (!js.isUndefined(isDictionary)) __obj.updateDynamic("isDictionary")(isDictionary)
+    if (typeInfo != null) __obj.updateDynamic("typeInfo")(typeInfo)
+    __obj.asInstanceOf[ContractFieldMetadata]
+  }
+}
+

@@ -83,3 +83,48 @@ trait HasherStatic extends js.Object {
   def stop(): scala.Unit
 }
 
+object HasherStatic {
+  @scala.inline
+  def apply(
+    VERSION: java.lang.String,
+    appendHash: java.lang.String,
+    changed: signalsLib.signalsMod.signalsNs.Signal[_],
+    dispose: js.Function0[scala.Unit],
+    getBaseURL: js.Function0[java.lang.String],
+    getHash: js.Function0[java.lang.String],
+    getHashAsArray: js.Function0[js.Array[java.lang.String]],
+    getURL: js.Function0[java.lang.String],
+    init: js.Function0[scala.Unit],
+    initialized: signalsLib.signalsMod.signalsNs.Signal[_],
+    isActive: js.Function0[scala.Boolean],
+    prependHash: java.lang.String,
+    replaceHash: js.Function1[/* repeated */ java.lang.String, scala.Unit],
+    separator: java.lang.String,
+    setHash: js.Function1[/* repeated */ java.lang.String, scala.Unit],
+    stop: js.Function0[scala.Unit],
+    stopped: signalsLib.signalsMod.signalsNs.Signal[_],
+    toString: js.Function0[java.lang.String]
+  ): HasherStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("VERSION")(VERSION)
+    __obj.updateDynamic("appendHash")(appendHash)
+    __obj.updateDynamic("changed")(changed)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getBaseURL")(getBaseURL)
+    __obj.updateDynamic("getHash")(getHash)
+    __obj.updateDynamic("getHashAsArray")(getHashAsArray)
+    __obj.updateDynamic("getURL")(getURL)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("initialized")(initialized)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("prependHash")(prependHash)
+    __obj.updateDynamic("replaceHash")(replaceHash)
+    __obj.updateDynamic("separator")(separator)
+    __obj.updateDynamic("setHash")(setHash)
+    __obj.updateDynamic("stop")(stop)
+    __obj.updateDynamic("stopped")(stopped)
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[HasherStatic]
+  }
+}
+

@@ -10,3 +10,13 @@ trait AuthStateChangeData extends js.Object {
   var oldState: AuthStates
 }
 
+object AuthStateChangeData {
+  @scala.inline
+  def apply(newState: AuthStates, oldState: AuthStates): AuthStateChangeData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newState")(newState)
+    __obj.updateDynamic("oldState")(oldState)
+    __obj.asInstanceOf[AuthStateChangeData]
+  }
+}
+

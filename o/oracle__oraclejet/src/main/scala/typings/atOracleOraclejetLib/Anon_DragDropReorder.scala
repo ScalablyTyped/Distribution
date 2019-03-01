@@ -11,3 +11,18 @@ trait Anon_DragDropReorder extends js.Object {
   var reorder: Anon_DisabledEnabled
 }
 
+object Anon_DragDropReorder {
+  @scala.inline
+  def apply(
+    reorder: Anon_DisabledEnabled,
+    drag: Anon_ItemsAnonDataTypesDragDragEnd = null,
+    drop: Anon_ItemsAnonDataTypesDragEnterDragLeaveDragOver = null
+  ): Anon_DragDropReorder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reorder")(reorder)
+    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (drop != null) __obj.updateDynamic("drop")(drop)
+    __obj.asInstanceOf[Anon_DragDropReorder]
+  }
+}
+

@@ -104,6 +104,8 @@ object MobileAnalyticsNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type Double = scala.Double
@@ -114,6 +116,6 @@ object MobileAnalyticsNs extends js.Object {
   type String0to1000Chars = java.lang.String
   type String10Chars = java.lang.String
   type String50Chars = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2014-06-05` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

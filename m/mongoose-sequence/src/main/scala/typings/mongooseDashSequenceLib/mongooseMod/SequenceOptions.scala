@@ -17,3 +17,22 @@ trait SequenceOptions extends js.Object {
   var reference_fields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object SequenceOptions {
+  @scala.inline
+  def apply(
+    inc_field: java.lang.String,
+    collection_name: java.lang.String = null,
+    disable_hooks: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    reference_fields: js.Array[java.lang.String] = null
+  ): SequenceOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inc_field")(inc_field)
+    if (collection_name != null) __obj.updateDynamic("collection_name")(collection_name)
+    if (!js.isUndefined(disable_hooks)) __obj.updateDynamic("disable_hooks")(disable_hooks)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (reference_fields != null) __obj.updateDynamic("reference_fields")(reference_fields)
+    __obj.asInstanceOf[SequenceOptions]
+  }
+}
+

@@ -52,3 +52,36 @@ trait XStatusbarItem extends js.Object {
   def repaint(): scala.Unit
 }
 
+object XStatusbarItem {
+  @scala.inline
+  def apply(
+    AccessibleName: java.lang.String,
+    Command: java.lang.String,
+    HelpText: java.lang.String,
+    ItemId: scala.Double,
+    ItemRect: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    Offset: scala.Double,
+    QuickHelpText: java.lang.String,
+    Style: scala.Double,
+    Text: java.lang.String,
+    Visible: scala.Boolean,
+    Width: scala.Double,
+    repaint: js.Function0[scala.Unit]
+  ): XStatusbarItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessibleName")(AccessibleName)
+    __obj.updateDynamic("Command")(Command)
+    __obj.updateDynamic("HelpText")(HelpText)
+    __obj.updateDynamic("ItemId")(ItemId)
+    __obj.updateDynamic("ItemRect")(ItemRect)
+    __obj.updateDynamic("Offset")(Offset)
+    __obj.updateDynamic("QuickHelpText")(QuickHelpText)
+    __obj.updateDynamic("Style")(Style)
+    __obj.updateDynamic("Text")(Text)
+    __obj.updateDynamic("Visible")(Visible)
+    __obj.updateDynamic("Width")(Width)
+    __obj.updateDynamic("repaint")(repaint)
+    __obj.asInstanceOf[XStatusbarItem]
+  }
+}
+

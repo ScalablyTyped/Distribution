@@ -11,3 +11,12 @@ trait IReadOptions extends js.Object {
   var ifNoneMatch: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IReadOptions {
+  @scala.inline
+  def apply(ifNoneMatch: java.lang.String = null): IReadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ifNoneMatch != null) __obj.updateDynamic("ifNoneMatch")(ifNoneMatch)
+    __obj.asInstanceOf[IReadOptions]
+  }
+}
+

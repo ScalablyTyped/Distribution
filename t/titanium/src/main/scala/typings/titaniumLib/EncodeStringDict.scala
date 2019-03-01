@@ -35,3 +35,24 @@ trait EncodeStringDict extends js.Object {
   var sourcePosition: js.UndefOr[scala.Double] = js.undefined
 }
 
+object EncodeStringDict {
+  @scala.inline
+  def apply(
+    dest: titaniumLib.TitaniumNs.Buffer,
+    source: java.lang.String,
+    charset: java.lang.String = null,
+    destPosition: scala.Int | scala.Double = null,
+    sourceLength: scala.Int | scala.Double = null,
+    sourcePosition: scala.Int | scala.Double = null
+  ): EncodeStringDict = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dest")(dest)
+    __obj.updateDynamic("source")(source)
+    if (charset != null) __obj.updateDynamic("charset")(charset)
+    if (destPosition != null) __obj.updateDynamic("destPosition")(destPosition.asInstanceOf[js.Any])
+    if (sourceLength != null) __obj.updateDynamic("sourceLength")(sourceLength.asInstanceOf[js.Any])
+    if (sourcePosition != null) __obj.updateDynamic("sourcePosition")(sourcePosition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EncodeStringDict]
+  }
+}
+

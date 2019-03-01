@@ -43,3 +43,40 @@ trait Product extends js.Object {
   var workDetailsUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Product {
+  @scala.inline
+  def apply(
+    appVersion: js.Array[AppVersion] = null,
+    authorName: java.lang.String = null,
+    availableTracks: js.Array[java.lang.String] = null,
+    detailsUrl: java.lang.String = null,
+    distributionChannel: java.lang.String = null,
+    iconUrl: java.lang.String = null,
+    kind: java.lang.String = null,
+    productId: java.lang.String = null,
+    productPricing: java.lang.String = null,
+    requiresContainerApp: js.UndefOr[scala.Boolean] = js.undefined,
+    signingCertificate: ProductSigningCertificate = null,
+    smallIconUrl: java.lang.String = null,
+    title: java.lang.String = null,
+    workDetailsUrl: java.lang.String = null
+  ): Product = {
+    val __obj = js.Dynamic.literal()
+    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
+    if (authorName != null) __obj.updateDynamic("authorName")(authorName)
+    if (availableTracks != null) __obj.updateDynamic("availableTracks")(availableTracks)
+    if (detailsUrl != null) __obj.updateDynamic("detailsUrl")(detailsUrl)
+    if (distributionChannel != null) __obj.updateDynamic("distributionChannel")(distributionChannel)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (productPricing != null) __obj.updateDynamic("productPricing")(productPricing)
+    if (!js.isUndefined(requiresContainerApp)) __obj.updateDynamic("requiresContainerApp")(requiresContainerApp)
+    if (signingCertificate != null) __obj.updateDynamic("signingCertificate")(signingCertificate)
+    if (smallIconUrl != null) __obj.updateDynamic("smallIconUrl")(smallIconUrl)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (workDetailsUrl != null) __obj.updateDynamic("workDetailsUrl")(workDetailsUrl)
+    __obj.asInstanceOf[Product]
+  }
+}
+

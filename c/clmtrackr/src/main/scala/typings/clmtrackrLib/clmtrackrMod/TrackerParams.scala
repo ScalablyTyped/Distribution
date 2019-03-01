@@ -20,3 +20,24 @@ trait TrackerParams extends js.Object {
   var useWebGL: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TrackerParams {
+  @scala.inline
+  def apply(
+    constantVelocity: js.UndefOr[scala.Boolean] = js.undefined,
+    faceDetection: clmtrackrLib.Anon_UseWebWorkers = null,
+    scoreThreshold: scala.Int | scala.Double = null,
+    searchWindow: scala.Int | scala.Double = null,
+    stopOnConvergence: js.UndefOr[scala.Boolean] = js.undefined,
+    useWebGL: js.UndefOr[scala.Boolean] = js.undefined
+  ): TrackerParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(constantVelocity)) __obj.updateDynamic("constantVelocity")(constantVelocity)
+    if (faceDetection != null) __obj.updateDynamic("faceDetection")(faceDetection)
+    if (scoreThreshold != null) __obj.updateDynamic("scoreThreshold")(scoreThreshold.asInstanceOf[js.Any])
+    if (searchWindow != null) __obj.updateDynamic("searchWindow")(searchWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnConvergence)) __obj.updateDynamic("stopOnConvergence")(stopOnConvergence)
+    if (!js.isUndefined(useWebGL)) __obj.updateDynamic("useWebGL")(useWebGL)
+    __obj.asInstanceOf[TrackerParams]
+  }
+}
+

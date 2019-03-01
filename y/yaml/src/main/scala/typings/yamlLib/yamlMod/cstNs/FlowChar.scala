@@ -11,3 +11,18 @@ trait FlowChar extends js.Object {
   var origOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FlowChar {
+  @scala.inline
+  def apply(
+    char: yamlLib.yamlLibStrings.`{` | yamlLib.yamlLibStrings.`}` | yamlLib.yamlLibStrings.`[` | yamlLib.yamlLibStrings.`]` | yamlLib.yamlLibStrings.`,` | yamlLib.yamlLibStrings.`?` | yamlLib.yamlLibStrings.`:`,
+    offset: scala.Double,
+    origOffset: scala.Int | scala.Double = null
+  ): FlowChar = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("char")(char.asInstanceOf[js.Any])
+    __obj.updateDynamic("offset")(offset)
+    if (origOffset != null) __obj.updateDynamic("origOffset")(origOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowChar]
+  }
+}
+

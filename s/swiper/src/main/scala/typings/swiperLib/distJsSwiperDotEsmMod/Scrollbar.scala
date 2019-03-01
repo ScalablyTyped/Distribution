@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Scrollbar")
 @js.native
-class Scrollbar () extends js.Object {
+class Scrollbar ()
+  extends swiperLib.swiperMod.SwiperModule {
   /**
     * HTMLElement of Scrollbar draggable handler element
     */

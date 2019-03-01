@@ -11,3 +11,14 @@ trait Anon_Factory extends js.Object {
   def factory(): js.Any
 }
 
+object Anon_Factory {
+  @scala.inline
+  def apply(factory: js.Function0[js.Any], imports: js.Array[_] = null, providers: js.Array[_] = null): Anon_Factory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("factory")(factory)
+    if (imports != null) __obj.updateDynamic("imports")(imports)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    __obj.asInstanceOf[Anon_Factory]
+  }
+}
+

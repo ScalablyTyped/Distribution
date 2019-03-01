@@ -13,3 +13,22 @@ trait Anon_Driver extends js.Object {
   def setDefaultService(service: seleniumDashWebdriverLib.remoteMod.DriverService): scala.Unit
 }
 
+object Anon_Driver {
+  @scala.inline
+  def apply(
+    Driver: Anon_CreateSessionOptconfig,
+    Options: Anon_Capabilities,
+    ServiceBuilder: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.chromeMod.ServiceBuilder],
+    getDefaultService: js.Function0[seleniumDashWebdriverLib.remoteMod.DriverService],
+    setDefaultService: js.Function1[seleniumDashWebdriverLib.remoteMod.DriverService, scala.Unit]
+  ): Anon_Driver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Driver")(Driver)
+    __obj.updateDynamic("Options")(Options)
+    __obj.updateDynamic("ServiceBuilder")(ServiceBuilder)
+    __obj.updateDynamic("getDefaultService")(getDefaultService)
+    __obj.updateDynamic("setDefaultService")(setDefaultService)
+    __obj.asInstanceOf[Anon_Driver]
+  }
+}
+

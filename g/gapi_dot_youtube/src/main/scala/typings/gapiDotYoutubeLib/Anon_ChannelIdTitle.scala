@@ -16,3 +16,13 @@ trait Anon_ChannelIdTitle extends js.Object {
   var title: java.lang.String
 }
 
+object Anon_ChannelIdTitle {
+  @scala.inline
+  def apply(channelId: java.lang.String, title: java.lang.String): Anon_ChannelIdTitle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channelId")(channelId)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_ChannelIdTitle]
+  }
+}
+

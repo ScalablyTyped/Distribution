@@ -20,3 +20,24 @@ trait SoftwareInfo extends js.Object {
   var securityPatchLevel: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SoftwareInfo {
+  @scala.inline
+  def apply(
+    androidBuildNumber: java.lang.String = null,
+    androidBuildTime: java.lang.String = null,
+    androidVersion: java.lang.String = null,
+    bootloaderVersion: java.lang.String = null,
+    deviceKernelVersion: java.lang.String = null,
+    securityPatchLevel: java.lang.String = null
+  ): SoftwareInfo = {
+    val __obj = js.Dynamic.literal()
+    if (androidBuildNumber != null) __obj.updateDynamic("androidBuildNumber")(androidBuildNumber)
+    if (androidBuildTime != null) __obj.updateDynamic("androidBuildTime")(androidBuildTime)
+    if (androidVersion != null) __obj.updateDynamic("androidVersion")(androidVersion)
+    if (bootloaderVersion != null) __obj.updateDynamic("bootloaderVersion")(bootloaderVersion)
+    if (deviceKernelVersion != null) __obj.updateDynamic("deviceKernelVersion")(deviceKernelVersion)
+    if (securityPatchLevel != null) __obj.updateDynamic("securityPatchLevel")(securityPatchLevel)
+    __obj.asInstanceOf[SoftwareInfo]
+  }
+}
+

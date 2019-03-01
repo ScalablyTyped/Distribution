@@ -10,3 +10,12 @@ trait Anon_TextSnippet extends js.Object {
   var textSnippet: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_TextSnippet {
+  @scala.inline
+  def apply(textSnippet: java.lang.String = null): Anon_TextSnippet = {
+    val __obj = js.Dynamic.literal()
+    if (textSnippet != null) __obj.updateDynamic("textSnippet")(textSnippet)
+    __obj.asInstanceOf[Anon_TextSnippet]
+  }
+}
+

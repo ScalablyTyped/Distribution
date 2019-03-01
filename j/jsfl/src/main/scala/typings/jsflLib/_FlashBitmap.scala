@@ -13,3 +13,22 @@ trait _FlashBitmap extends js.Object {
   var width: js.Any
 }
 
+object _FlashBitmap {
+  @scala.inline
+  def apply(
+    bits: js.Any,
+    depth: js.Any,
+    height: js.Any,
+    width: js.Any,
+    cTab: js.Array[java.lang.String] = null
+  ): _FlashBitmap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bits")(bits)
+    __obj.updateDynamic("depth")(depth)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    if (cTab != null) __obj.updateDynamic("cTab")(cTab)
+    __obj.asInstanceOf[_FlashBitmap]
+  }
+}
+

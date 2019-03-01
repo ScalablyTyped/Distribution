@@ -37,3 +37,22 @@ trait IBackgroundUploadProperties extends js.Object {
   var stream_input: js.UndefOr[winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream] = js.undefined
 }
 
+object IBackgroundUploadProperties {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    file_input: js.Any = null,
+    file_name: java.lang.String = null,
+    overwrite: java.lang.String = null,
+    stream_input: winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream = null
+  ): IBackgroundUploadProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (file_input != null) __obj.updateDynamic("file_input")(file_input)
+    if (file_name != null) __obj.updateDynamic("file_name")(file_name)
+    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite)
+    if (stream_input != null) __obj.updateDynamic("stream_input")(stream_input)
+    __obj.asInstanceOf[IBackgroundUploadProperties]
+  }
+}
+

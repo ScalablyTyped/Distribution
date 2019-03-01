@@ -12,3 +12,20 @@ trait SkyAtmosphere extends js.Object {
   def isDestroyed(): scala.Boolean
 }
 
+object SkyAtmosphere {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    ellipsoid: Ellipsoid,
+    isDestroyed: js.Function0[scala.Boolean],
+    show: scala.Boolean
+  ): SkyAtmosphere = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("ellipsoid")(ellipsoid)
+    __obj.updateDynamic("isDestroyed")(isDestroyed)
+    __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[SkyAtmosphere]
+  }
+}
+

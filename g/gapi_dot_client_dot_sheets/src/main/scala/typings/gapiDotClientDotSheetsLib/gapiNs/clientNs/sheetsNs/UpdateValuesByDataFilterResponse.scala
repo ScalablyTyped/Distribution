@@ -24,3 +24,24 @@ trait UpdateValuesByDataFilterResponse extends js.Object {
   var updatedRows: js.UndefOr[scala.Double] = js.undefined
 }
 
+object UpdateValuesByDataFilterResponse {
+  @scala.inline
+  def apply(
+    dataFilter: DataFilter = null,
+    updatedCells: scala.Int | scala.Double = null,
+    updatedColumns: scala.Int | scala.Double = null,
+    updatedData: ValueRange = null,
+    updatedRange: java.lang.String = null,
+    updatedRows: scala.Int | scala.Double = null
+  ): UpdateValuesByDataFilterResponse = {
+    val __obj = js.Dynamic.literal()
+    if (dataFilter != null) __obj.updateDynamic("dataFilter")(dataFilter)
+    if (updatedCells != null) __obj.updateDynamic("updatedCells")(updatedCells.asInstanceOf[js.Any])
+    if (updatedColumns != null) __obj.updateDynamic("updatedColumns")(updatedColumns.asInstanceOf[js.Any])
+    if (updatedData != null) __obj.updateDynamic("updatedData")(updatedData)
+    if (updatedRange != null) __obj.updateDynamic("updatedRange")(updatedRange)
+    if (updatedRows != null) __obj.updateDynamic("updatedRows")(updatedRows.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UpdateValuesByDataFilterResponse]
+  }
+}
+

@@ -20,3 +20,42 @@ trait AdvertiserGroupsResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[AdvertiserGroup]
 }
 
+object AdvertiserGroupsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdvertiserGroup]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdvertiserGroup]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsIds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdvertiserGroupsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdvertiserGroup]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdvertiserGroup]
+    ]
+  ): AdvertiserGroupsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[AdvertiserGroupsResource]
+  }
+}
+

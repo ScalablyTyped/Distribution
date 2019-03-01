@@ -33,3 +33,26 @@ trait Point extends js.Object {
   var stringValue: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Point {
+  @scala.inline
+  def apply(
+    boolValue: js.UndefOr[scala.Boolean] = js.undefined,
+    distributionValue: PointDistribution = null,
+    doubleValue: scala.Int | scala.Double = null,
+    end: java.lang.String = null,
+    int64Value: java.lang.String = null,
+    start: java.lang.String = null,
+    stringValue: java.lang.String = null
+  ): Point = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
+    if (distributionValue != null) __obj.updateDynamic("distributionValue")(distributionValue)
+    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (int64Value != null) __obj.updateDynamic("int64Value")(int64Value)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    __obj.asInstanceOf[Point]
+  }
+}
+

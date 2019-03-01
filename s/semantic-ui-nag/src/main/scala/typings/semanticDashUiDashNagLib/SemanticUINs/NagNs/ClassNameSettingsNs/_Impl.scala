@@ -16,3 +16,13 @@ trait _Impl extends js.Object {
   var fixed: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(bottom: java.lang.String, fixed: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottom")(bottom)
+    __obj.updateDynamic("fixed")(fixed)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

@@ -12,3 +12,19 @@ trait IconButtonAccessoryDescriptor extends js.Object {
   def onClick(): scala.Unit
 }
 
+object IconButtonAccessoryDescriptor {
+  @scala.inline
+  def apply(
+    iconUrl: java.lang.String,
+    onClick: js.Function0[scala.Unit],
+    `type`: inboxsdkLib.inboxsdkLibStrings.ICON_BUTTON,
+    iconClass: java.lang.String = null
+  ): IconButtonAccessoryDescriptor = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("iconUrl")(iconUrl)
+    __obj.updateDynamic("onClick")(onClick)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    __obj.asInstanceOf[IconButtonAccessoryDescriptor]
+  }
+}
+

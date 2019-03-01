@@ -36,3 +36,26 @@ trait ListItemObject extends js.Object {
   var version: scala.Double
 }
 
+object ListItemObject {
+  @scala.inline
+  def apply(
+    createdTime: stdLib.Date,
+    id: java.lang.String,
+    updatedTime: stdLib.Date,
+    value: java.lang.String,
+    version: scala.Double,
+    href: java.lang.String = null,
+    status: ListItemObjectStatus = null
+  ): ListItemObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createdTime")(createdTime)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("updatedTime")(updatedTime)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("version")(version)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[ListItemObject]
+  }
+}
+

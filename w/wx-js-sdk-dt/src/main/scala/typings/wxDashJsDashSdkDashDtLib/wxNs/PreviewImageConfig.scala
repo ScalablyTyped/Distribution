@@ -19,3 +19,24 @@ trait PreviewImageConfig extends WxBaseRequestConfig {
   var urls: js.Array[java.lang.String]
 }
 
+object PreviewImageConfig {
+  @scala.inline
+  def apply(
+    current: java.lang.String,
+    urls: js.Array[java.lang.String],
+    cancel: js.Function0[scala.Unit] = null,
+    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
+    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
+    success: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null
+  ): PreviewImageConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("current")(current)
+    __obj.updateDynamic("urls")(urls)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[PreviewImageConfig]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonLinksOneHopDoesNotContain extends js.Object {
   var enumValues: Anon_LinksOneHopDoesNotContain
 }
 
+object Anon_EnumValuesAnonLinksOneHopDoesNotContain {
+  @scala.inline
+  def apply(enumValues: Anon_LinksOneHopDoesNotContain): Anon_EnumValuesAnonLinksOneHopDoesNotContain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonLinksOneHopDoesNotContain]
+  }
+}
+

@@ -20,3 +20,18 @@ trait ListBeaconsResponse extends js.Object {
   var totalCount: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListBeaconsResponse {
+  @scala.inline
+  def apply(
+    beacons: js.Array[Beacon] = null,
+    nextPageToken: java.lang.String = null,
+    totalCount: java.lang.String = null
+  ): ListBeaconsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (beacons != null) __obj.updateDynamic("beacons")(beacons)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount)
+    __obj.asInstanceOf[ListBeaconsResponse]
+  }
+}
+

@@ -46,3 +46,22 @@ trait Outcome extends js.Object {
   var summary: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Outcome {
+  @scala.inline
+  def apply(
+    failureDetail: FailureDetail = null,
+    inconclusiveDetail: InconclusiveDetail = null,
+    skippedDetail: SkippedDetail = null,
+    successDetail: SuccessDetail = null,
+    summary: java.lang.String = null
+  ): Outcome = {
+    val __obj = js.Dynamic.literal()
+    if (failureDetail != null) __obj.updateDynamic("failureDetail")(failureDetail)
+    if (inconclusiveDetail != null) __obj.updateDynamic("inconclusiveDetail")(inconclusiveDetail)
+    if (skippedDetail != null) __obj.updateDynamic("skippedDetail")(skippedDetail)
+    if (successDetail != null) __obj.updateDynamic("successDetail")(successDetail)
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    __obj.asInstanceOf[Outcome]
+  }
+}
+

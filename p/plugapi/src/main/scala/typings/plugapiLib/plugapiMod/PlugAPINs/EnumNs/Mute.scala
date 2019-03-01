@@ -11,3 +11,18 @@ trait Mute extends js.Object {
   var SHORT: plugapiLib.plugapiLibStrings.s
 }
 
+object Mute {
+  @scala.inline
+  def apply(
+    LONG: plugapiLib.plugapiLibStrings.l,
+    MEDIUM: plugapiLib.plugapiLibStrings.m,
+    SHORT: plugapiLib.plugapiLibStrings.s
+  ): Mute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LONG")(LONG)
+    __obj.updateDynamic("MEDIUM")(MEDIUM)
+    __obj.updateDynamic("SHORT")(SHORT)
+    __obj.asInstanceOf[Mute]
+  }
+}
+

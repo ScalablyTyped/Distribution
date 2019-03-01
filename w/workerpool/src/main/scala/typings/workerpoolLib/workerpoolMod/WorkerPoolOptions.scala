@@ -21,3 +21,20 @@ trait WorkerPoolOptions extends js.Object {
   var minWorkers: js.UndefOr[scala.Double | workerpoolLib.workerpoolLibStrings.max] = js.undefined
 }
 
+object WorkerPoolOptions {
+  @scala.inline
+  def apply(
+    forkArgs: js.Array[java.lang.String] = null,
+    forkOpts: nodeLib.childUnderscoreProcessMod.ForkOptions = null,
+    maxWorkers: scala.Int | scala.Double = null,
+    minWorkers: scala.Double | workerpoolLib.workerpoolLibStrings.max = null
+  ): WorkerPoolOptions = {
+    val __obj = js.Dynamic.literal()
+    if (forkArgs != null) __obj.updateDynamic("forkArgs")(forkArgs)
+    if (forkOpts != null) __obj.updateDynamic("forkOpts")(forkOpts)
+    if (maxWorkers != null) __obj.updateDynamic("maxWorkers")(maxWorkers.asInstanceOf[js.Any])
+    if (minWorkers != null) __obj.updateDynamic("minWorkers")(minWorkers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorkerPoolOptions]
+  }
+}
+

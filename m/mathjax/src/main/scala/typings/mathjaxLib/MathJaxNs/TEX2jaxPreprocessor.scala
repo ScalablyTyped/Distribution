@@ -84,3 +84,30 @@ trait TEX2jaxPreprocessor extends js.Object {
   var skipTags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TEX2jaxPreprocessor {
+  @scala.inline
+  def apply(
+    balanceBraces: js.UndefOr[scala.Boolean] = js.undefined,
+    displayMath: js.Any = null,
+    ignoreClass: java.lang.String = null,
+    inlineMath: js.Any = null,
+    preview: js.Any = null,
+    processClass: java.lang.String = null,
+    processEnvironments: js.UndefOr[scala.Boolean] = js.undefined,
+    processEscapes: js.UndefOr[scala.Boolean] = js.undefined,
+    skipTags: js.Array[java.lang.String] = null
+  ): TEX2jaxPreprocessor = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(balanceBraces)) __obj.updateDynamic("balanceBraces")(balanceBraces)
+    if (displayMath != null) __obj.updateDynamic("displayMath")(displayMath)
+    if (ignoreClass != null) __obj.updateDynamic("ignoreClass")(ignoreClass)
+    if (inlineMath != null) __obj.updateDynamic("inlineMath")(inlineMath)
+    if (preview != null) __obj.updateDynamic("preview")(preview)
+    if (processClass != null) __obj.updateDynamic("processClass")(processClass)
+    if (!js.isUndefined(processEnvironments)) __obj.updateDynamic("processEnvironments")(processEnvironments)
+    if (!js.isUndefined(processEscapes)) __obj.updateDynamic("processEscapes")(processEscapes)
+    if (skipTags != null) __obj.updateDynamic("skipTags")(skipTags)
+    __obj.asInstanceOf[TEX2jaxPreprocessor]
+  }
+}
+

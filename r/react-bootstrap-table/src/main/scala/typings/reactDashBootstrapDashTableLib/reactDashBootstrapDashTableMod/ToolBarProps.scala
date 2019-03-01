@@ -16,3 +16,16 @@ trait ToolBarProps extends js.Object {
   var event: reactDashBootstrapDashTableLib.Anon_CloseInsertModal
 }
 
+object ToolBarProps {
+  @scala.inline
+  def apply(
+    components: ButtonGroupProps with reactDashBootstrapDashTableLib.Anon_BtnGroup,
+    event: reactDashBootstrapDashTableLib.Anon_CloseInsertModal
+  ): ToolBarProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("components")(components)
+    __obj.updateDynamic("event")(event)
+    __obj.asInstanceOf[ToolBarProps]
+  }
+}
+

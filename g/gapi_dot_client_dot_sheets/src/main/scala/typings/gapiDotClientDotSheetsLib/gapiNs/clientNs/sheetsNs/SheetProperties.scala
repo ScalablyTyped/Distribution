@@ -46,3 +46,28 @@ trait SheetProperties extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SheetProperties {
+  @scala.inline
+  def apply(
+    gridProperties: GridProperties = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    index: scala.Int | scala.Double = null,
+    rightToLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    sheetId: scala.Int | scala.Double = null,
+    sheetType: java.lang.String = null,
+    tabColor: Color = null,
+    title: java.lang.String = null
+  ): SheetProperties = {
+    val __obj = js.Dynamic.literal()
+    if (gridProperties != null) __obj.updateDynamic("gridProperties")(gridProperties)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft)
+    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (sheetType != null) __obj.updateDynamic("sheetType")(sheetType)
+    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[SheetProperties]
+  }
+}
+

@@ -15,3 +15,12 @@ trait BackgroundRepeatProps extends js.Object {
   var backgroundRepeat: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BackgroundRepeatProperty]] = js.undefined
 }
 
+object BackgroundRepeatProps {
+  @scala.inline
+  def apply(backgroundRepeat: ResponsiveValue[csstypeLib.csstypeMod.BackgroundRepeatProperty] = null): BackgroundRepeatProps = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundRepeat != null) __obj.updateDynamic("backgroundRepeat")(backgroundRepeat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundRepeatProps]
+  }
+}
+

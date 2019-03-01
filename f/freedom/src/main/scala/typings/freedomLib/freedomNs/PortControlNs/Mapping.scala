@@ -17,3 +17,30 @@ trait Mapping extends js.Object {
   var timeoutId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Mapping {
+  @scala.inline
+  def apply(
+    externalPort: scala.Double,
+    internalIp: java.lang.String,
+    internalPort: scala.Double,
+    lifetime: scala.Double,
+    protocol: java.lang.String,
+    errInfo: java.lang.String = null,
+    externalIp: java.lang.String = null,
+    nonce: js.Array[scala.Double] = null,
+    timeoutId: scala.Int | scala.Double = null
+  ): Mapping = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("externalPort")(externalPort)
+    __obj.updateDynamic("internalIp")(internalIp)
+    __obj.updateDynamic("internalPort")(internalPort)
+    __obj.updateDynamic("lifetime")(lifetime)
+    __obj.updateDynamic("protocol")(protocol)
+    if (errInfo != null) __obj.updateDynamic("errInfo")(errInfo)
+    if (externalIp != null) __obj.updateDynamic("externalIp")(externalIp)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (timeoutId != null) __obj.updateDynamic("timeoutId")(timeoutId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Mapping]
+  }
+}
+

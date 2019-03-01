@@ -40,3 +40,26 @@ trait Model extends js.Object {
   var width: js.UndefOr[js.Any] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    colorMappingCollection: js.Array[ColorMappingCollection] = null,
+    height: js.Any = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    legendMode: ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.LegendMode | java.lang.String = null,
+    orientation: ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.LegendOrientation | java.lang.String = null,
+    showLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.Any = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (colorMappingCollection != null) __obj.updateDynamic("colorMappingCollection")(colorMappingCollection)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (legendMode != null) __obj.updateDynamic("legendMode")(legendMode.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Model]
+  }
+}
+

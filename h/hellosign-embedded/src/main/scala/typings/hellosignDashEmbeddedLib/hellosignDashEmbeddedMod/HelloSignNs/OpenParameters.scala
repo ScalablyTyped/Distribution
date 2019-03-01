@@ -73,3 +73,38 @@ trait OpenParameters extends js.Object {
   var whiteLabelingOptions: js.UndefOr[js.Object] = js.undefined
 }
 
+object OpenParameters {
+  @scala.inline
+  def apply(
+    allowCancel: js.UndefOr[scala.Boolean] = js.undefined,
+    container: stdLib.Element = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    hideHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    messageListener: js.Function1[/* eventData */ MessageEvent, scala.Unit] = null,
+    redirectUrl: java.lang.String = null,
+    requester: java.lang.String = null,
+    skipDomainVerification: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null,
+    userCulture: java.lang.String = null,
+    uxVersion: scala.Int | scala.Double = null,
+    whiteLabelingOptions: js.Object = null
+  ): OpenParameters = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowCancel)) __obj.updateDynamic("allowCancel")(allowCancel)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideHeader)) __obj.updateDynamic("hideHeader")(hideHeader)
+    if (messageListener != null) __obj.updateDynamic("messageListener")(messageListener)
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
+    if (requester != null) __obj.updateDynamic("requester")(requester)
+    if (!js.isUndefined(skipDomainVerification)) __obj.updateDynamic("skipDomainVerification")(skipDomainVerification)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (userCulture != null) __obj.updateDynamic("userCulture")(userCulture)
+    if (uxVersion != null) __obj.updateDynamic("uxVersion")(uxVersion.asInstanceOf[js.Any])
+    if (whiteLabelingOptions != null) __obj.updateDynamic("whiteLabelingOptions")(whiteLabelingOptions)
+    __obj.asInstanceOf[OpenParameters]
+  }
+}
+

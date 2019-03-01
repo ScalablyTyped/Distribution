@@ -10,3 +10,12 @@ trait IGridRow extends js.Object {
   var enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridRow {
+  @scala.inline
+  def apply(enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined): IGridRow = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
+    __obj.asInstanceOf[IGridRow]
+  }
+}
+

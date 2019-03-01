@@ -12,3 +12,13 @@ trait Anon_Multipart extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Multipart {
+  @scala.inline
+  def apply(multipart: js.UndefOr[scala.Boolean] = js.undefined, path: java.lang.String = null): Anon_Multipart = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(multipart)) __obj.updateDynamic("multipart")(multipart)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Anon_Multipart]
+  }
+}
+

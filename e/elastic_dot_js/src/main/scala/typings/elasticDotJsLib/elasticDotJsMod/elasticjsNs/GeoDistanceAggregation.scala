@@ -67,3 +67,36 @@ trait GeoDistanceAggregation extends Aggregation {
   def unit(unit: java.lang.String): GeoDistanceAggregation
 }
 
+object GeoDistanceAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, GeoDistanceAggregation],
+    aggregation: js.Function1[Aggregation, GeoDistanceAggregation],
+    center: js.Function1[GeoPoint, GeoDistanceAggregation],
+    distanceType: js.Function1[java.lang.String, GeoDistanceAggregation],
+    field: js.Function1[java.lang.String, GeoDistanceAggregation],
+    keyed: js.Function1[scala.Boolean, GeoDistanceAggregation],
+    origin: js.Function1[GeoPoint, GeoDistanceAggregation],
+    point: js.Function1[GeoPoint, GeoDistanceAggregation],
+    range: js.Function3[java.lang.String, java.lang.String, java.lang.String, GeoDistanceAggregation],
+    toJSON: js.Function0[js.Any],
+    unit: js.Function1[java.lang.String, GeoDistanceAggregation]
+  ): GeoDistanceAggregation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("agg")(agg)
+    __obj.updateDynamic("aggregation")(aggregation)
+    __obj.updateDynamic("center")(center)
+    __obj.updateDynamic("distanceType")(distanceType)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("keyed")(keyed)
+    __obj.updateDynamic("origin")(origin)
+    __obj.updateDynamic("point")(point)
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[GeoDistanceAggregation]
+  }
+}
+

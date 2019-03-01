@@ -12,3 +12,20 @@ trait Anon_Department extends js.Object {
   var Title: java.lang.String
 }
 
+object Anon_Department {
+  @scala.inline
+  def apply(
+    Department: java.lang.String,
+    Email: java.lang.String,
+    MobilePhone: java.lang.String,
+    Title: java.lang.String
+  ): Anon_Department = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Department")(Department)
+    __obj.updateDynamic("Email")(Email)
+    __obj.updateDynamic("MobilePhone")(MobilePhone)
+    __obj.updateDynamic("Title")(Title)
+    __obj.asInstanceOf[Anon_Department]
+  }
+}
+

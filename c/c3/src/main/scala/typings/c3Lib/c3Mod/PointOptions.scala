@@ -18,3 +18,20 @@ trait PointOptions extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PointOptions {
+  @scala.inline
+  def apply(
+    focus: c3Lib.Anon_ExpandAnonEnabledR = null,
+    r: scala.Double | (js.Function1[/* d */ js.Any, scala.Double]) = null,
+    select: c3Lib.Anon_R = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined
+  ): PointOptions = {
+    val __obj = js.Dynamic.literal()
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[PointOptions]
+  }
+}
+

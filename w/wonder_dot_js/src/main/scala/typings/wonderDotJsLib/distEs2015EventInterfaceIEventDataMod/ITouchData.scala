@@ -20,3 +20,36 @@ trait ITouchData extends js.Object {
   var target: stdLib.HTMLElement
 }
 
+object ITouchData {
+  @scala.inline
+  def apply(
+    clientX: scala.Double,
+    clientY: scala.Double,
+    force: scala.Double,
+    identifier: scala.Double,
+    pageX: scala.Double,
+    pageY: scala.Double,
+    radiusX: scala.Double,
+    radiusY: scala.Double,
+    rotationAngle: scala.Double,
+    screenX: scala.Double,
+    screenY: scala.Double,
+    target: stdLib.HTMLElement
+  ): ITouchData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientX")(clientX)
+    __obj.updateDynamic("clientY")(clientY)
+    __obj.updateDynamic("force")(force)
+    __obj.updateDynamic("identifier")(identifier)
+    __obj.updateDynamic("pageX")(pageX)
+    __obj.updateDynamic("pageY")(pageY)
+    __obj.updateDynamic("radiusX")(radiusX)
+    __obj.updateDynamic("radiusY")(radiusY)
+    __obj.updateDynamic("rotationAngle")(rotationAngle)
+    __obj.updateDynamic("screenX")(screenX)
+    __obj.updateDynamic("screenY")(screenY)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ITouchData]
+  }
+}
+

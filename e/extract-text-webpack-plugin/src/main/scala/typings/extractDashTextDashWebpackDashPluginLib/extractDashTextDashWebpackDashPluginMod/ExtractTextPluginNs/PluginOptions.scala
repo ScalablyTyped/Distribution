@@ -16,3 +16,20 @@ trait PluginOptions extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PluginOptions {
+  @scala.inline
+  def apply(
+    filename: java.lang.String,
+    allChunks: js.UndefOr[scala.Boolean] = js.undefined,
+    disable: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null
+  ): PluginOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(allChunks)) __obj.updateDynamic("allChunks")(allChunks)
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[PluginOptions]
+  }
+}
+

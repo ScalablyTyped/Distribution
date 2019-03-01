@@ -12,3 +12,18 @@ trait ojMessageSettableProperties
   var translations: atOracleOraclejetLib.Anon_Categories
 }
 
+object ojMessageSettableProperties {
+  @scala.inline
+  def apply(
+    displayOptions: atOracleOraclejetLib.ojmessageMod.ojMessageNs.DisplayOptions,
+    message: atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message,
+    translations: atOracleOraclejetLib.Anon_Categories
+  ): ojMessageSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayOptions")(displayOptions)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("translations")(translations)
+    __obj.asInstanceOf[ojMessageSettableProperties]
+  }
+}
+

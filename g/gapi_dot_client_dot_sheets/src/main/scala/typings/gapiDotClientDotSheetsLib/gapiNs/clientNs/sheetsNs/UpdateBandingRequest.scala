@@ -16,3 +16,13 @@ trait UpdateBandingRequest extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UpdateBandingRequest {
+  @scala.inline
+  def apply(bandedRange: BandedRange = null, fields: java.lang.String = null): UpdateBandingRequest = {
+    val __obj = js.Dynamic.literal()
+    if (bandedRange != null) __obj.updateDynamic("bandedRange")(bandedRange)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[UpdateBandingRequest]
+  }
+}
+

@@ -45,3 +45,46 @@ trait FloodlightConfiguration extends js.Object {
   var userDefinedVariableConfigurations: js.UndefOr[js.Array[UserDefinedVariableConfiguration]] = js.undefined
 }
 
+object FloodlightConfiguration {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    advertiserId: java.lang.String = null,
+    advertiserIdDimensionValue: DimensionValue = null,
+    analyticsDataSharingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    exposureToConversionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    firstDayOfWeek: java.lang.String = null,
+    id: java.lang.String = null,
+    idDimensionValue: DimensionValue = null,
+    inAppAttributionTrackingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    lookbackConfiguration: LookbackConfiguration = null,
+    naturalSearchConversionAttributionOption: java.lang.String = null,
+    omnitureSettings: OmnitureSettings = null,
+    subaccountId: java.lang.String = null,
+    tagSettings: TagSettings = null,
+    thirdPartyAuthenticationTokens: js.Array[ThirdPartyAuthenticationToken] = null,
+    userDefinedVariableConfigurations: js.Array[UserDefinedVariableConfiguration] = null
+  ): FloodlightConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
+    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue)
+    if (!js.isUndefined(analyticsDataSharingEnabled)) __obj.updateDynamic("analyticsDataSharingEnabled")(analyticsDataSharingEnabled)
+    if (!js.isUndefined(exposureToConversionEnabled)) __obj.updateDynamic("exposureToConversionEnabled")(exposureToConversionEnabled)
+    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue)
+    if (!js.isUndefined(inAppAttributionTrackingEnabled)) __obj.updateDynamic("inAppAttributionTrackingEnabled")(inAppAttributionTrackingEnabled)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lookbackConfiguration != null) __obj.updateDynamic("lookbackConfiguration")(lookbackConfiguration)
+    if (naturalSearchConversionAttributionOption != null) __obj.updateDynamic("naturalSearchConversionAttributionOption")(naturalSearchConversionAttributionOption)
+    if (omnitureSettings != null) __obj.updateDynamic("omnitureSettings")(omnitureSettings)
+    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId)
+    if (tagSettings != null) __obj.updateDynamic("tagSettings")(tagSettings)
+    if (thirdPartyAuthenticationTokens != null) __obj.updateDynamic("thirdPartyAuthenticationTokens")(thirdPartyAuthenticationTokens)
+    if (userDefinedVariableConfigurations != null) __obj.updateDynamic("userDefinedVariableConfigurations")(userDefinedVariableConfigurations)
+    __obj.asInstanceOf[FloodlightConfiguration]
+  }
+}
+

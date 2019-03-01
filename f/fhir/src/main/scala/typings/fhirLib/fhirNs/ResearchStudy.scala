@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Investigation to increase healthcare-related patient-independent knowledge
   */
-trait ResearchStudy extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ResearchStudy extends DomainResource {
   /**
     * Contains extended information for property 'description'.
     */
@@ -101,5 +102,86 @@ trait ResearchStudy extends DomainResource {
     * Name for this study
     */
   var title: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object ResearchStudy {
+  @scala.inline
+  def apply(
+    status: code,
+    _description: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _title: Element = null,
+    arm: js.Array[ResearchStudyArm] = null,
+    category: js.Array[CodeableConcept] = null,
+    contact: js.Array[ContactDetail] = null,
+    contained: js.Array[Resource] = null,
+    description: markdown = null,
+    enrollment: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    focus: js.Array[CodeableConcept] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    jurisdiction: js.Array[CodeableConcept] = null,
+    keyword: js.Array[CodeableConcept] = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    note: js.Array[Annotation] = null,
+    partOf: js.Array[Reference] = null,
+    period: Period = null,
+    principalInvestigator: Reference = null,
+    protocol: js.Array[Reference] = null,
+    reasonStopped: CodeableConcept = null,
+    relatedArtifact: js.Array[RelatedArtifact] = null,
+    resourceType: code = null,
+    site: js.Array[Reference] = null,
+    sponsor: Reference = null,
+    text: Narrative = null,
+    title: java.lang.String = null
+  ): ResearchStudy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_title != null) __obj.updateDynamic("_title")(_title)
+    if (arm != null) __obj.updateDynamic("arm")(arm)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (enrollment != null) __obj.updateDynamic("enrollment")(enrollment)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
+    if (keyword != null) __obj.updateDynamic("keyword")(keyword)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (partOf != null) __obj.updateDynamic("partOf")(partOf)
+    if (period != null) __obj.updateDynamic("period")(period)
+    if (principalInvestigator != null) __obj.updateDynamic("principalInvestigator")(principalInvestigator)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (reasonStopped != null) __obj.updateDynamic("reasonStopped")(reasonStopped)
+    if (relatedArtifact != null) __obj.updateDynamic("relatedArtifact")(relatedArtifact)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (site != null) __obj.updateDynamic("site")(site)
+    if (sponsor != null) __obj.updateDynamic("sponsor")(sponsor)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ResearchStudy]
+  }
 }
 

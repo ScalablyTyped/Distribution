@@ -48,3 +48,22 @@ trait IMouseConstraintDefinition extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IMouseConstraintDefinition {
+  @scala.inline
+  def apply(
+    body: Body = null,
+    collisionFilter: ICollisionFilter = null,
+    constraint: Constraint = null,
+    mouse: Mouse = null,
+    `type`: java.lang.String = null
+  ): IMouseConstraintDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (collisionFilter != null) __obj.updateDynamic("collisionFilter")(collisionFilter)
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
+    if (mouse != null) __obj.updateDynamic("mouse")(mouse)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IMouseConstraintDefinition]
+  }
+}
+

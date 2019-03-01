@@ -15,3 +15,26 @@ trait DelegationOptions extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DelegationOptions {
+  @scala.inline
+  def apply(
+    grant_type: java.lang.String,
+    api_type: java.lang.String = null,
+    client_id: java.lang.String = null,
+    id_token: java.lang.String = null,
+    refresh_token: java.lang.String = null,
+    scope: java.lang.String = null,
+    target: java.lang.String = null
+  ): DelegationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("grant_type")(grant_type)
+    if (api_type != null) __obj.updateDynamic("api_type")(api_type)
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
+    if (id_token != null) __obj.updateDynamic("id_token")(id_token)
+    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[DelegationOptions]
+  }
+}
+

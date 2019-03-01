@@ -28,3 +28,14 @@ trait IDataTableEx extends js.Object {
   var qName: java.lang.String
 }
 
+object IDataTableEx {
+  @scala.inline
+  def apply(qFields: js.Array[IDataField], qFormatSpec: java.lang.String, qName: java.lang.String): IDataTableEx = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFields")(qFields)
+    __obj.updateDynamic("qFormatSpec")(qFormatSpec)
+    __obj.updateDynamic("qName")(qName)
+    __obj.asInstanceOf[IDataTableEx]
+  }
+}
+

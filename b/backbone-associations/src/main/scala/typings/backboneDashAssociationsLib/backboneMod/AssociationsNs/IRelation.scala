@@ -27,3 +27,27 @@ trait IRelation extends js.Object {
   var `type`: java.lang.String
 }
 
+object IRelation {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    relatedModel: java.lang.String | org.scalablytyped.runtime.Instantiable0[AssociatedModel],
+    `type`: java.lang.String,
+    collectionType: java.lang.String | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.Collection[js.Any]] = null,
+    isTransient: js.UndefOr[scala.Boolean] = js.undefined,
+    map: js.Function1[/* repeated */ js.Any, _] = null,
+    remoteKey: java.lang.String = null,
+    serialize: js.Array[java.lang.String] = null
+  ): IRelation = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("relatedModel")(relatedModel.asInstanceOf[js.Any])
+    if (collectionType != null) __obj.updateDynamic("collectionType")(collectionType.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTransient)) __obj.updateDynamic("isTransient")(isTransient)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (remoteKey != null) __obj.updateDynamic("remoteKey")(remoteKey)
+    if (serialize != null) __obj.updateDynamic("serialize")(serialize)
+    __obj.asInstanceOf[IRelation]
+  }
+}
+

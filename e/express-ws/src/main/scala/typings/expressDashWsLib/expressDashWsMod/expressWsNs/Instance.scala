@@ -11,3 +11,18 @@ trait Instance extends js.Object {
   def getWss(): wsLib.wsMod.Server
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    app: Application,
+    applyTo: js.Function1[RouterLike, scala.Unit],
+    getWss: js.Function0[wsLib.wsMod.Server]
+  ): Instance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app")(app)
+    __obj.updateDynamic("applyTo")(applyTo)
+    __obj.updateDynamic("getWss")(getWss)
+    __obj.asInstanceOf[Instance]
+  }
+}
+

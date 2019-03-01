@@ -12,3 +12,20 @@ trait IELangDBDelegates extends js.Object {
   var selectHandler: js.Function
 }
 
+object IELangDBDelegates {
+  @scala.inline
+  def apply(
+    insertHandler: js.Function,
+    modifyHandler: js.Function,
+    removeHandler: js.Function,
+    selectHandler: js.Function
+  ): IELangDBDelegates = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insertHandler")(insertHandler)
+    __obj.updateDynamic("modifyHandler")(modifyHandler)
+    __obj.updateDynamic("removeHandler")(removeHandler)
+    __obj.updateDynamic("selectHandler")(selectHandler)
+    __obj.asInstanceOf[IELangDBDelegates]
+  }
+}
+

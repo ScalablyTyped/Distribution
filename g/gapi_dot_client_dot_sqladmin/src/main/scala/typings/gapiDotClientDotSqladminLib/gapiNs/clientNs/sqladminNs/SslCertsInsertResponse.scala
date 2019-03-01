@@ -19,3 +19,20 @@ trait SslCertsInsertResponse extends js.Object {
   var serverCaCert: js.UndefOr[SslCert] = js.undefined
 }
 
+object SslCertsInsertResponse {
+  @scala.inline
+  def apply(
+    clientCert: SslCertDetail = null,
+    kind: java.lang.String = null,
+    operation: Operation = null,
+    serverCaCert: SslCert = null
+  ): SslCertsInsertResponse = {
+    val __obj = js.Dynamic.literal()
+    if (clientCert != null) __obj.updateDynamic("clientCert")(clientCert)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (serverCaCert != null) __obj.updateDynamic("serverCaCert")(serverCaCert)
+    __obj.asInstanceOf[SslCertsInsertResponse]
+  }
+}
+

@@ -34,3 +34,40 @@ trait Anon_CanResume extends js.Object {
   var url: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta] = js.undefined
 }
 
+object Anon_CanResume {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    canResume: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.BooleanDelta = null,
+    danger: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta = null,
+    endTime: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta = null,
+    error: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta = null,
+    exists: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.BooleanDelta = null,
+    fileSize: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DoubleDelta = null,
+    filename: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta = null,
+    mime: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta = null,
+    paused: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.BooleanDelta = null,
+    startTime: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta = null,
+    state: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta = null,
+    totalBytes: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DoubleDelta = null,
+    url: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta = null
+  ): Anon_CanResume = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (canResume != null) __obj.updateDynamic("canResume")(canResume)
+    if (danger != null) __obj.updateDynamic("danger")(danger)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (exists != null) __obj.updateDynamic("exists")(exists)
+    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (mime != null) __obj.updateDynamic("mime")(mime)
+    if (paused != null) __obj.updateDynamic("paused")(paused)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (totalBytes != null) __obj.updateDynamic("totalBytes")(totalBytes)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_CanResume]
+  }
+}
+

@@ -16,3 +16,15 @@ trait InterfaceContributions extends js.Object {
   var tdd: scala.Nothing
 }
 
+object InterfaceContributions {
+  @scala.inline
+  def apply(bdd: scala.Nothing, exports: scala.Nothing, qunit: scala.Nothing, tdd: scala.Nothing): InterfaceContributions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bdd")(bdd)
+    __obj.updateDynamic("exports")(exports)
+    __obj.updateDynamic("qunit")(qunit)
+    __obj.updateDynamic("tdd")(tdd)
+    __obj.asInstanceOf[InterfaceContributions]
+  }
+}
+

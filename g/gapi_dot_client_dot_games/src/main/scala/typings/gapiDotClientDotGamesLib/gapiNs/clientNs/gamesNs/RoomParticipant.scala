@@ -48,3 +48,32 @@ trait RoomParticipant extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RoomParticipant {
+  @scala.inline
+  def apply(
+    autoMatched: js.UndefOr[scala.Boolean] = js.undefined,
+    autoMatchedPlayer: AnonymousPlayer = null,
+    capabilities: js.Array[java.lang.String] = null,
+    clientAddress: RoomClientAddress = null,
+    connected: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    leaveReason: java.lang.String = null,
+    player: Player = null,
+    status: java.lang.String = null
+  ): RoomParticipant = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched)
+    if (autoMatchedPlayer != null) __obj.updateDynamic("autoMatchedPlayer")(autoMatchedPlayer)
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress)
+    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (leaveReason != null) __obj.updateDynamic("leaveReason")(leaveReason)
+    if (player != null) __obj.updateDynamic("player")(player)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[RoomParticipant]
+  }
+}
+

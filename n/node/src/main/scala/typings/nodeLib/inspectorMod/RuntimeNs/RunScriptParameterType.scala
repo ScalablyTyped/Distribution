@@ -43,3 +43,28 @@ trait RunScriptParameterType extends js.Object {
   var silent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RunScriptParameterType {
+  @scala.inline
+  def apply(
+    scriptId: ScriptId,
+    awaitPromise: js.UndefOr[scala.Boolean] = js.undefined,
+    executionContextId: js.UndefOr[ExecutionContextId] = js.undefined,
+    generatePreview: js.UndefOr[scala.Boolean] = js.undefined,
+    includeCommandLineAPI: js.UndefOr[scala.Boolean] = js.undefined,
+    objectGroup: java.lang.String = null,
+    returnByValue: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined
+  ): RunScriptParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scriptId")(scriptId)
+    if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
+    if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
+    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
+    if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI)
+    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)
+    if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    __obj.asInstanceOf[RunScriptParameterType]
+  }
+}
+

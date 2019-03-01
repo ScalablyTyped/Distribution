@@ -28,3 +28,26 @@ trait XDataDefinitionSupplier
   ): XTablesSupplier
 }
 
+object XDataDefinitionSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDataDefinitionByConnection: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection, XTablesSupplier],
+    getDataDefinitionByURL: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XTablesSupplier
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataDefinitionSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDataDefinitionByConnection")(getDataDefinitionByConnection)
+    __obj.updateDynamic("getDataDefinitionByURL")(getDataDefinitionByURL)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDataDefinitionSupplier]
+  }
+}
+

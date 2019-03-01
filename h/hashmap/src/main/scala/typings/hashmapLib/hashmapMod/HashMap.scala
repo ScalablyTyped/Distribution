@@ -89,3 +89,41 @@ trait HashMap[TKey, TValue] extends js.Object {
   def values(): js.Array[TValue]
 }
 
+object HashMap {
+  @scala.inline
+  def apply[TKey, TValue](
+    clear: js.Function0[HashMap[TKey, TValue]],
+    clone: js.Function0[HashMap[TKey, TValue]],
+    copy: js.Function1[HashMap[TKey, TValue], HashMap[TKey, TValue]],
+    count: js.Function0[scala.Double],
+    forEach: js.Function1[
+      js.Function2[/* value */ TValue, /* key */ TKey, scala.Unit], 
+      HashMap[TKey, TValue]
+    ],
+    get: js.Function1[TKey, TValue],
+    has: js.Function1[TKey, scala.Boolean],
+    keys: js.Function0[js.Array[TKey]],
+    multi: js.Function1[/* repeated */ TKey | TValue, HashMap[TKey, TValue]],
+    remove: js.Function1[TKey, HashMap[TKey, TValue]],
+    search: js.Function1[TValue, TKey],
+    set: js.Function2[TKey, TValue, HashMap[TKey, TValue]],
+    values: js.Function0[js.Array[TValue]]
+  ): HashMap[TKey, TValue] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("forEach")(forEach)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("has")(has)
+    __obj.updateDynamic("keys")(keys)
+    __obj.updateDynamic("multi")(multi)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[HashMap[TKey, TValue]]
+  }
+}
+

@@ -11,3 +11,14 @@ trait ReflectionGroupObject extends js.Object {
   var title: java.lang.String
 }
 
+object ReflectionGroupObject {
+  @scala.inline
+  def apply(kind: scala.Double, title: java.lang.String, children: js.Array[scala.Double] = null): ReflectionGroupObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("title")(title)
+    if (children != null) __obj.updateDynamic("children")(children)
+    __obj.asInstanceOf[ReflectionGroupObject]
+  }
+}
+

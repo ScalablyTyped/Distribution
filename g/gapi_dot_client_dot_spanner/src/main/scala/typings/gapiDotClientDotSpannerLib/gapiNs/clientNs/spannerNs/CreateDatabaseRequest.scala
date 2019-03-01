@@ -23,3 +23,13 @@ trait CreateDatabaseRequest extends js.Object {
   var extraStatements: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CreateDatabaseRequest {
+  @scala.inline
+  def apply(createStatement: java.lang.String = null, extraStatements: js.Array[java.lang.String] = null): CreateDatabaseRequest = {
+    val __obj = js.Dynamic.literal()
+    if (createStatement != null) __obj.updateDynamic("createStatement")(createStatement)
+    if (extraStatements != null) __obj.updateDynamic("extraStatements")(extraStatements)
+    __obj.asInstanceOf[CreateDatabaseRequest]
+  }
+}
+

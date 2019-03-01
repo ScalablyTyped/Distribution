@@ -23,3 +23,16 @@ import scala.scalajs.js.annotation._
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object ThumbnailProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    ImgHTMLAttributes: reactLib.reactMod.ReactNs.ImgHTMLAttributes[reactLib.HTMLImageElement] = null
+  ): ThumbnailProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, ImgHTMLAttributes)
+    __obj.asInstanceOf[ThumbnailProps]
+  }
+}
+

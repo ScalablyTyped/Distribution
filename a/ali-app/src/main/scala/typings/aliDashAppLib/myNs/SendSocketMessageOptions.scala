@@ -17,3 +17,22 @@ trait SendSocketMessageOptions
   var isBuffer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SendSocketMessageOptions {
+  @scala.inline
+  def apply(
+    data: java.lang.String | stdLib.ArrayBuffer,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    isBuffer: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): SendSocketMessageOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(isBuffer)) __obj.updateDynamic("isBuffer")(isBuffer)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[SendSocketMessageOptions]
+  }
+}
+

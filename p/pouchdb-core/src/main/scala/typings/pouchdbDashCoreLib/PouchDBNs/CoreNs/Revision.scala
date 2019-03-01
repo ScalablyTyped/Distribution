@@ -9,3 +9,12 @@ trait Revision[Content /* <: js.Object */] extends js.Object {
   var ok: Document[Content] with RevisionIdMeta
 }
 
+object Revision {
+  @scala.inline
+  def apply[Content /* <: js.Object */](ok: Document[Content] with RevisionIdMeta): Revision[Content] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Revision[Content]]
+  }
+}
+

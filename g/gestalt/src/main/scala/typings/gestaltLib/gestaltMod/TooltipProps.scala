@@ -18,3 +18,24 @@ trait TooltipProps extends js.Object {
   def onDismiss(): scala.Unit
 }
 
+object TooltipProps {
+  @scala.inline
+  def apply(
+    anchor: js.Any,
+    onDismiss: js.Function0[scala.Unit],
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    idealDirection: gestaltLib.gestaltLibStrings.up | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.down | gestaltLib.gestaltLibStrings.left = null,
+    positionRelativeToAnchor: js.UndefOr[scala.Boolean] = js.undefined,
+    size: gestaltLib.gestaltLibStrings.xs | gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg | gestaltLib.gestaltLibStrings.xl = null
+  ): TooltipProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("anchor")(anchor)
+    __obj.updateDynamic("onDismiss")(onDismiss)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (idealDirection != null) __obj.updateDynamic("idealDirection")(idealDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(positionRelativeToAnchor)) __obj.updateDynamic("positionRelativeToAnchor")(positionRelativeToAnchor)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TooltipProps]
+  }
+}
+

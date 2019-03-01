@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object activexDashExcelLibStrings {
   @js.native
-  sealed trait `'` extends js.Object
+  sealed trait _quote extends js.Object
   
   @js.native
   sealed trait Activate extends js.Object
@@ -421,7 +421,7 @@ object activexDashExcelLibStrings {
   sealed trait WorkbookSync extends js.Object
   
   @js.native
-  sealed trait `^` extends js.Object
+  sealed trait `_backtick^_backtick` extends js.Object
   
   @js.native
   sealed trait cNames extends js.Object
@@ -475,7 +475,7 @@ object activexDashExcelLibStrings {
   sealed trait y extends js.Object
   
   @scala.inline
-  def `'`: `'` = "'".asInstanceOf[`'`]
+  def _quote: _quote = "'".asInstanceOf[_quote]
   @scala.inline
   def Activate: Activate = "Activate".asInstanceOf[Activate]
   @scala.inline
@@ -751,7 +751,7 @@ object activexDashExcelLibStrings {
   @scala.inline
   def WorkbookSync: WorkbookSync = "WorkbookSync".asInstanceOf[WorkbookSync]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def cNames: cNames = "cNames".asInstanceOf[cNames]
   @scala.inline

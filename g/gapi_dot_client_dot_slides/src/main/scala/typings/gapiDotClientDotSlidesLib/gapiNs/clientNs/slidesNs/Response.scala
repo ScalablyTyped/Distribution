@@ -36,3 +36,34 @@ trait Response extends js.Object {
   var replaceAllText: js.UndefOr[ReplaceAllTextResponse] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    createImage: CreateImageResponse = null,
+    createLine: CreateLineResponse = null,
+    createShape: CreateShapeResponse = null,
+    createSheetsChart: CreateSheetsChartResponse = null,
+    createSlide: CreateSlideResponse = null,
+    createTable: CreateTableResponse = null,
+    createVideo: CreateVideoResponse = null,
+    duplicateObject: DuplicateObjectResponse = null,
+    replaceAllShapesWithImage: ReplaceAllShapesWithImageResponse = null,
+    replaceAllShapesWithSheetsChart: ReplaceAllShapesWithSheetsChartResponse = null,
+    replaceAllText: ReplaceAllTextResponse = null
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    if (createImage != null) __obj.updateDynamic("createImage")(createImage)
+    if (createLine != null) __obj.updateDynamic("createLine")(createLine)
+    if (createShape != null) __obj.updateDynamic("createShape")(createShape)
+    if (createSheetsChart != null) __obj.updateDynamic("createSheetsChart")(createSheetsChart)
+    if (createSlide != null) __obj.updateDynamic("createSlide")(createSlide)
+    if (createTable != null) __obj.updateDynamic("createTable")(createTable)
+    if (createVideo != null) __obj.updateDynamic("createVideo")(createVideo)
+    if (duplicateObject != null) __obj.updateDynamic("duplicateObject")(duplicateObject)
+    if (replaceAllShapesWithImage != null) __obj.updateDynamic("replaceAllShapesWithImage")(replaceAllShapesWithImage)
+    if (replaceAllShapesWithSheetsChart != null) __obj.updateDynamic("replaceAllShapesWithSheetsChart")(replaceAllShapesWithSheetsChart)
+    if (replaceAllText != null) __obj.updateDynamic("replaceAllText")(replaceAllText)
+    __obj.asInstanceOf[Response]
+  }
+}
+

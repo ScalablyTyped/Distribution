@@ -19,3 +19,18 @@ trait Anon_Populate extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Populate {
+  @scala.inline
+  def apply(
+    tabs: js.Array[scala.Double] | scala.Double,
+    populate: js.UndefOr[scala.Boolean] = js.undefined,
+    windowId: scala.Int | scala.Double = null
+  ): Anon_Populate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
+    if (!js.isUndefined(populate)) __obj.updateDynamic("populate")(populate)
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Populate]
+  }
+}
+

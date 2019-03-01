@@ -12,3 +12,12 @@ trait Base64Options extends js.Object {
   var paddingRequired: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Base64Options {
+  @scala.inline
+  def apply(paddingRequired: js.UndefOr[scala.Boolean] = js.undefined): Base64Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(paddingRequired)) __obj.updateDynamic("paddingRequired")(paddingRequired)
+    __obj.asInstanceOf[Base64Options]
+  }
+}
+

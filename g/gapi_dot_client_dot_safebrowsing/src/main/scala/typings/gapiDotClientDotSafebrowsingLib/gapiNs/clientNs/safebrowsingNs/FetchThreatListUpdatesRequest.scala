@@ -12,3 +12,13 @@ trait FetchThreatListUpdatesRequest extends js.Object {
   var listUpdateRequests: js.UndefOr[js.Array[ListUpdateRequest]] = js.undefined
 }
 
+object FetchThreatListUpdatesRequest {
+  @scala.inline
+  def apply(client: ClientInfo = null, listUpdateRequests: js.Array[ListUpdateRequest] = null): FetchThreatListUpdatesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (listUpdateRequests != null) __obj.updateDynamic("listUpdateRequests")(listUpdateRequests)
+    __obj.asInstanceOf[FetchThreatListUpdatesRequest]
+  }
+}
+

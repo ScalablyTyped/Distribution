@@ -15,3 +15,26 @@ trait BounceOptions[T] extends js.Object {
   var to: T
 }
 
+object BounceOptions {
+  @scala.inline
+  def apply[T](
+    from: T,
+    to: T,
+    bounces: scala.Int | scala.Double = null,
+    delay: scala.Int | scala.Double = null,
+    duration: scala.Int | scala.Double = null,
+    easing: java.lang.String = null,
+    stiffness: scala.Int | scala.Double = null
+  ): BounceOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (bounces != null) __obj.updateDynamic("bounces")(bounces.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BounceOptions[T]]
+  }
+}
+

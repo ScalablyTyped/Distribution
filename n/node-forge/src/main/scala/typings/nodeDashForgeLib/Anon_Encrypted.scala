@@ -10,3 +10,13 @@ trait Anon_Encrypted extends js.Object {
   var safeBags: js.Array[nodeDashForgeLib.nodeDashForgeMod.pkcs12Ns.Bag]
 }
 
+object Anon_Encrypted {
+  @scala.inline
+  def apply(encrypted: scala.Boolean, safeBags: js.Array[nodeDashForgeLib.nodeDashForgeMod.pkcs12Ns.Bag]): Anon_Encrypted = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encrypted")(encrypted)
+    __obj.updateDynamic("safeBags")(safeBags)
+    __obj.asInstanceOf[Anon_Encrypted]
+  }
+}
+

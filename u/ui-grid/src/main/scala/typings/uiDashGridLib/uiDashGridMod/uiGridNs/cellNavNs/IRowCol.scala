@@ -22,3 +22,20 @@ trait IRowCol[TEntity] extends js.Object {
   def getIntersectionValueRaw(): java.lang.String | stdLib.Number | js.Object
 }
 
+object IRowCol {
+  @scala.inline
+  def apply[TEntity](
+    col: uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity],
+    getIntersectionValueFiltered: js.Function0[java.lang.String | stdLib.Number | js.Object],
+    getIntersectionValueRaw: js.Function0[java.lang.String | stdLib.Number | js.Object],
+    row: uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity]
+  ): IRowCol[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("col")(col)
+    __obj.updateDynamic("getIntersectionValueFiltered")(getIntersectionValueFiltered)
+    __obj.updateDynamic("getIntersectionValueRaw")(getIntersectionValueRaw)
+    __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[IRowCol[TEntity]]
+  }
+}
+

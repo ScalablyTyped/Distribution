@@ -15,3 +15,26 @@ trait LocalizeProps extends js.Object {
   var value: java.lang.String | scala.Double | js.Object
 }
 
+object LocalizeProps {
+  @scala.inline
+  def apply(
+    value: java.lang.String | scala.Double | js.Object,
+    className: java.lang.String = null,
+    dangerousHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    dateFormat: java.lang.String = null,
+    options: js.Object = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+  ): LocalizeProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(dangerousHTML)) __obj.updateDynamic("dangerousHTML")(dangerousHTML)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocalizeProps]
+  }
+}
+

@@ -16,3 +16,16 @@ trait VpcEndpointRouteTableAssociationState extends js.Object {
   val vpcEndpointId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object VpcEndpointRouteTableAssociationState {
+  @scala.inline
+  def apply(
+    routeTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcEndpointId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): VpcEndpointRouteTableAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (routeTableId != null) __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
+    if (vpcEndpointId != null) __obj.updateDynamic("vpcEndpointId")(vpcEndpointId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcEndpointRouteTableAssociationState]
+  }
+}
+

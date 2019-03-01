@@ -24,3 +24,22 @@ trait SSLHealthCheck extends js.Object {
   var response: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SSLHealthCheck {
+  @scala.inline
+  def apply(
+    port: scala.Int | scala.Double = null,
+    portName: java.lang.String = null,
+    proxyHeader: java.lang.String = null,
+    request: java.lang.String = null,
+    response: java.lang.String = null
+  ): SSLHealthCheck = {
+    val __obj = js.Dynamic.literal()
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (portName != null) __obj.updateDynamic("portName")(portName)
+    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (response != null) __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[SSLHealthCheck]
+  }
+}
+

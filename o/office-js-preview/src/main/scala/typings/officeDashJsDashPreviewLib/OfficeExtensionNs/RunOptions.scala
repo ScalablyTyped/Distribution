@@ -18,3 +18,16 @@ trait RunOptions[T] extends js.Object {
   var session: js.UndefOr[RequestUrlAndHeaderInfo | T] = js.undefined
 }
 
+object RunOptions {
+  @scala.inline
+  def apply[T](
+    previousObjects: ClientObject | js.Array[ClientObject] | ClientRequestContext = null,
+    session: RequestUrlAndHeaderInfo | T = null
+  ): RunOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (previousObjects != null) __obj.updateDynamic("previousObjects")(previousObjects.asInstanceOf[js.Any])
+    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RunOptions[T]]
+  }
+}
+

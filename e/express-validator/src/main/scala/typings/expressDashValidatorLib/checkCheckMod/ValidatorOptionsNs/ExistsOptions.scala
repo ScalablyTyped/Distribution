@@ -17,3 +17,16 @@ trait ExistsOptions extends js.Object {
   var checkNull: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ExistsOptions {
+  @scala.inline
+  def apply(
+    checkFalsy: js.UndefOr[scala.Boolean] = js.undefined,
+    checkNull: js.UndefOr[scala.Boolean] = js.undefined
+  ): ExistsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checkFalsy)) __obj.updateDynamic("checkFalsy")(checkFalsy)
+    if (!js.isUndefined(checkNull)) __obj.updateDynamic("checkNull")(checkNull)
+    __obj.asInstanceOf[ExistsOptions]
+  }
+}
+

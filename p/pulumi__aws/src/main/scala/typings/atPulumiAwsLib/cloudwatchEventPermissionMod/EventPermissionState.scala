@@ -24,3 +24,20 @@ trait EventPermissionState extends js.Object {
   val statementId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object EventPermissionState {
+  @scala.inline
+  def apply(
+    action: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    condition: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyTypeValue] = null,
+    principal: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    statementId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): EventPermissionState = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
+    if (statementId != null) __obj.updateDynamic("statementId")(statementId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventPermissionState]
+  }
+}
+

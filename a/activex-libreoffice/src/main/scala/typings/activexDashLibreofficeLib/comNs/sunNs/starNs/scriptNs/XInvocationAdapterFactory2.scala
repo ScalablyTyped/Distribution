@@ -20,3 +20,24 @@ trait XInvocationAdapterFactory2
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XInvocationAdapterFactory2 {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createAdapter: js.Function2[
+      XInvocation, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.`type`], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInvocationAdapterFactory2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createAdapter")(createAdapter)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XInvocationAdapterFactory2]
+  }
+}
+

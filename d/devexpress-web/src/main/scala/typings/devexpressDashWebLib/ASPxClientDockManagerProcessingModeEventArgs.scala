@@ -21,3 +21,14 @@ trait ASPxClientDockManagerProcessingModeEventArgs extends ASPxClientProcessingM
   var zone: ASPxClientDockZone
 }
 
+object ASPxClientDockManagerProcessingModeEventArgs {
+  @scala.inline
+  def apply(panel: ASPxClientDockPanel, processOnServer: scala.Boolean, zone: ASPxClientDockZone): ASPxClientDockManagerProcessingModeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("panel")(panel)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[ASPxClientDockManagerProcessingModeEventArgs]
+  }
+}
+

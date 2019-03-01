@@ -11,3 +11,18 @@ trait DeletedRecordsInfo extends js.Object {
   var latestDateCovered: java.lang.String
 }
 
+object DeletedRecordsInfo {
+  @scala.inline
+  def apply(
+    deletedRecords: jsforceLib.Anon_DeletedDate,
+    earliestDateAvailable: java.lang.String,
+    latestDateCovered: java.lang.String
+  ): DeletedRecordsInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deletedRecords")(deletedRecords)
+    __obj.updateDynamic("earliestDateAvailable")(earliestDateAvailable)
+    __obj.updateDynamic("latestDateCovered")(latestDateCovered)
+    __obj.asInstanceOf[DeletedRecordsInfo]
+  }
+}
+

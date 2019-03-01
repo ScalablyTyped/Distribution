@@ -10,3 +10,13 @@ trait PlaylistItemParam extends js.Object {
   var item: js.Any
 }
 
+object PlaylistItemParam {
+  @scala.inline
+  def apply(index: scala.Double, item: js.Any): PlaylistItemParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[PlaylistItemParam]
+  }
+}
+

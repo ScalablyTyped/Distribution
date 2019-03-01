@@ -17,3 +17,30 @@ trait ClientUserValue extends js.Object {
   var title: java.lang.String
 }
 
+object ClientUserValue {
+  @scala.inline
+  def apply(
+    department: java.lang.String,
+    displayStr: java.lang.String,
+    email: java.lang.String,
+    jobTitle: java.lang.String,
+    lookupId: scala.Double,
+    lookupValue: java.lang.String,
+    picture: java.lang.String,
+    sip: java.lang.String,
+    title: java.lang.String
+  ): ClientUserValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("department")(department)
+    __obj.updateDynamic("displayStr")(displayStr)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("jobTitle")(jobTitle)
+    __obj.updateDynamic("lookupId")(lookupId)
+    __obj.updateDynamic("lookupValue")(lookupValue)
+    __obj.updateDynamic("picture")(picture)
+    __obj.updateDynamic("sip")(sip)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ClientUserValue]
+  }
+}
+

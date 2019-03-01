@@ -51,3 +51,32 @@ trait Anon_BrowserName
   var specs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_BrowserName {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    browserName: java.lang.String = null,
+    count: scala.Int | scala.Double = null,
+    exclude: js.Array[java.lang.String] = null,
+    logName: java.lang.String = null,
+    maxInstances: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    seleniumAddress: java.lang.String = null,
+    shardTestFiles: js.UndefOr[scala.Boolean] = js.undefined,
+    specs: js.Array[java.lang.String] = null
+  ): Anon_BrowserName = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (browserName != null) __obj.updateDynamic("browserName")(browserName)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (logName != null) __obj.updateDynamic("logName")(logName)
+    if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (seleniumAddress != null) __obj.updateDynamic("seleniumAddress")(seleniumAddress)
+    if (!js.isUndefined(shardTestFiles)) __obj.updateDynamic("shardTestFiles")(shardTestFiles)
+    if (specs != null) __obj.updateDynamic("specs")(specs)
+    __obj.asInstanceOf[Anon_BrowserName]
+  }
+}
+

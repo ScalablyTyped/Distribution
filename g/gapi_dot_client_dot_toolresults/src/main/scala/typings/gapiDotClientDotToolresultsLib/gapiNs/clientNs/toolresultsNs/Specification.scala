@@ -10,3 +10,12 @@ trait Specification extends js.Object {
   var androidTest: js.UndefOr[AndroidTest] = js.undefined
 }
 
+object Specification {
+  @scala.inline
+  def apply(androidTest: AndroidTest = null): Specification = {
+    val __obj = js.Dynamic.literal()
+    if (androidTest != null) __obj.updateDynamic("androidTest")(androidTest)
+    __obj.asInstanceOf[Specification]
+  }
+}
+

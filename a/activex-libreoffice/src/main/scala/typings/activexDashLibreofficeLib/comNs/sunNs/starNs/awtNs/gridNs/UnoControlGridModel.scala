@@ -176,3 +176,168 @@ trait UnoControlGridModel
   var VerticalAlign: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.VerticalAlignment
 }
 
+object UnoControlGridModel {
+  @scala.inline
+  def apply(
+    ActiveSelectionBackgroundColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ActiveSelectionTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ColumnHeaderHeight: scala.Double,
+    ColumnModel: XGridColumnModel,
+    DefaultControl: java.lang.String,
+    FontDescriptor: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontDescriptor,
+    FontEmphasisMark: scala.Double,
+    FontRelief: scala.Double,
+    GridDataModel: XGridDataModel,
+    GridLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    HScroll: scala.Boolean,
+    HeaderBackgroundColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    HeaderTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Height: scala.Double,
+    HelpText: java.lang.String,
+    HelpURL: java.lang.String,
+    InactiveSelectionBackgroundColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    InactiveSelectionTextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Name: java.lang.String,
+    PositionX: java.lang.String,
+    PositionY: java.lang.String,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RowBackgroundColors: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
+    RowHeaderWidth: scala.Double,
+    RowHeight: scala.Double,
+    SelectionModel: activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.SelectionType,
+    ServiceName: java.lang.String,
+    ShowColumnHeader: scala.Boolean,
+    ShowRowHeader: scala.Boolean,
+    Step: scala.Double,
+    TabIndex: scala.Double,
+    Tabstop: scala.Boolean,
+    Tag: java.lang.String,
+    TextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    TextLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    UseGridLines: scala.Boolean,
+    VScroll: scala.Boolean,
+    VerticalAlign: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.VerticalAlignment,
+    Width: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertiesChangeListener: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    dispose: js.Function0[scala.Unit],
+    firePropertiesChangeEvent: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getServiceName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    read: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectInputStream, scala.Unit],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertiesChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ],
+    write: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectOutputStream, scala.Unit]
+  ): UnoControlGridModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveSelectionBackgroundColor")(ActiveSelectionBackgroundColor)
+    __obj.updateDynamic("ActiveSelectionTextColor")(ActiveSelectionTextColor)
+    __obj.updateDynamic("ColumnHeaderHeight")(ColumnHeaderHeight)
+    __obj.updateDynamic("ColumnModel")(ColumnModel)
+    __obj.updateDynamic("DefaultControl")(DefaultControl)
+    __obj.updateDynamic("FontDescriptor")(FontDescriptor)
+    __obj.updateDynamic("FontEmphasisMark")(FontEmphasisMark)
+    __obj.updateDynamic("FontRelief")(FontRelief)
+    __obj.updateDynamic("GridDataModel")(GridDataModel)
+    __obj.updateDynamic("GridLineColor")(GridLineColor)
+    __obj.updateDynamic("HScroll")(HScroll)
+    __obj.updateDynamic("HeaderBackgroundColor")(HeaderBackgroundColor)
+    __obj.updateDynamic("HeaderTextColor")(HeaderTextColor)
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("HelpText")(HelpText)
+    __obj.updateDynamic("HelpURL")(HelpURL)
+    __obj.updateDynamic("InactiveSelectionBackgroundColor")(InactiveSelectionBackgroundColor)
+    __obj.updateDynamic("InactiveSelectionTextColor")(InactiveSelectionTextColor)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("PositionX")(PositionX)
+    __obj.updateDynamic("PositionY")(PositionY)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RowBackgroundColors")(RowBackgroundColors)
+    __obj.updateDynamic("RowHeaderWidth")(RowHeaderWidth)
+    __obj.updateDynamic("RowHeight")(RowHeight)
+    __obj.updateDynamic("SelectionModel")(SelectionModel)
+    __obj.updateDynamic("ServiceName")(ServiceName)
+    __obj.updateDynamic("ShowColumnHeader")(ShowColumnHeader)
+    __obj.updateDynamic("ShowRowHeader")(ShowRowHeader)
+    __obj.updateDynamic("Step")(Step)
+    __obj.updateDynamic("TabIndex")(TabIndex)
+    __obj.updateDynamic("Tabstop")(Tabstop)
+    __obj.updateDynamic("Tag")(Tag)
+    __obj.updateDynamic("TextColor")(TextColor)
+    __obj.updateDynamic("TextLineColor")(TextLineColor)
+    __obj.updateDynamic("UseGridLines")(UseGridLines)
+    __obj.updateDynamic("VScroll")(VScroll)
+    __obj.updateDynamic("VerticalAlign")(VerticalAlign)
+    __obj.updateDynamic("Width")(Width)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("createClone")(createClone)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
+    __obj.updateDynamic("getServiceName")(getServiceName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[UnoControlGridModel]
+  }
+}
+

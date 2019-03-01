@@ -32,3 +32,52 @@ trait IDatePickerProps extends js.Object {
   var use12Hours: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IDatePickerProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    date: js.Any = null,
+    defaultDate: js.Any = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    formatDay: js.Function2[/* day */ scala.Double, /* date */ js.UndefOr[js.Any], _] = null,
+    formatMonth: js.Function2[/* month */ scala.Double, /* date */ js.UndefOr[js.Any], _] = null,
+    itemStyle: js.Any = null,
+    locale: js.Any = null,
+    maxDate: js.Any = null,
+    minDate: js.Any = null,
+    minuteStep: scala.Int | scala.Double = null,
+    mode: java.lang.String = null,
+    onDateChange: js.Function1[/* date */ js.Any, scala.Unit] = null,
+    onScrollChange: js.Function3[/* date */ js.Any, /* vals */ js.Any, /* index */ scala.Double, scala.Unit] = null,
+    onValueChange: js.Function2[/* vals */ js.Any, /* index */ scala.Double, scala.Unit] = null,
+    pickerPrefixCls: java.lang.String = null,
+    prefixCls: java.lang.String = null,
+    rootNativeProps: js.Object = null,
+    style: js.Any = null,
+    use12Hours: js.UndefOr[scala.Boolean] = js.undefined
+  ): IDatePickerProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (formatDay != null) __obj.updateDynamic("formatDay")(formatDay)
+    if (formatMonth != null) __obj.updateDynamic("formatMonth")(formatMonth)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (onDateChange != null) __obj.updateDynamic("onDateChange")(onDateChange)
+    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(onScrollChange)
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange)
+    if (pickerPrefixCls != null) __obj.updateDynamic("pickerPrefixCls")(pickerPrefixCls)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (rootNativeProps != null) __obj.updateDynamic("rootNativeProps")(rootNativeProps)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(use12Hours)) __obj.updateDynamic("use12Hours")(use12Hours)
+    __obj.asInstanceOf[IDatePickerProps]
+  }
+}
+

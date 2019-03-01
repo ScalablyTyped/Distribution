@@ -24,3 +24,18 @@ trait SocketProperties extends js.Object {
   var persistent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SocketProperties {
+  @scala.inline
+  def apply(
+    bufferSize: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    name: java.lang.String = null,
+    persistent: js.UndefOr[scala.Boolean] = js.undefined
+  ): SocketProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    __obj.asInstanceOf[SocketProperties]
+  }
+}
+

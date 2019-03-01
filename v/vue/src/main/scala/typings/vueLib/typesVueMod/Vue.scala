@@ -41,7 +41,7 @@ trait Vue extends js.Object {
   @JSName("$root")
   val $root: Vue = js.native
   @JSName("$scopedSlots")
-  val $scopedSlots: org.scalablytyped.runtime.StringDictionary[js.UndefOr[vueLib.typesVnodeMod.ScopedSlot]] = js.native
+  val $scopedSlots: org.scalablytyped.runtime.StringDictionary[js.UndefOr[vueLib.typesVnodeMod.NormalizedScopedSlot]] = js.native
   @JSName("$set")
   var $set_Original: vueLib.Anon_Array = js.native
   @JSName("$slots")

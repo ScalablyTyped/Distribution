@@ -51,3 +51,28 @@ trait PathFinderOpts extends js.Object {
   var swampCost: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PathFinderOpts {
+  @scala.inline
+  def apply(
+    flee: js.UndefOr[scala.Boolean] = js.undefined,
+    heuristicWeight: scala.Int | scala.Double = null,
+    maxCost: scala.Int | scala.Double = null,
+    maxOps: scala.Int | scala.Double = null,
+    maxRooms: scala.Int | scala.Double = null,
+    plainCost: scala.Int | scala.Double = null,
+    roomCallback: js.Function1[/* roomName */ java.lang.String, scala.Boolean | CostMatrix] = null,
+    swampCost: scala.Int | scala.Double = null
+  ): PathFinderOpts = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(flee)) __obj.updateDynamic("flee")(flee)
+    if (heuristicWeight != null) __obj.updateDynamic("heuristicWeight")(heuristicWeight.asInstanceOf[js.Any])
+    if (maxCost != null) __obj.updateDynamic("maxCost")(maxCost.asInstanceOf[js.Any])
+    if (maxOps != null) __obj.updateDynamic("maxOps")(maxOps.asInstanceOf[js.Any])
+    if (maxRooms != null) __obj.updateDynamic("maxRooms")(maxRooms.asInstanceOf[js.Any])
+    if (plainCost != null) __obj.updateDynamic("plainCost")(plainCost.asInstanceOf[js.Any])
+    if (roomCallback != null) __obj.updateDynamic("roomCallback")(roomCallback)
+    if (swampCost != null) __obj.updateDynamic("swampCost")(swampCost.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PathFinderOpts]
+  }
+}
+

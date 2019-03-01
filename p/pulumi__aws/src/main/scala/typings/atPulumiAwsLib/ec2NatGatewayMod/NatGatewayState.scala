@@ -32,3 +32,24 @@ trait NatGatewayState extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object NatGatewayState {
+  @scala.inline
+  def apply(
+    allocationId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publicIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): NatGatewayState = {
+    val __obj = js.Dynamic.literal()
+    if (allocationId != null) __obj.updateDynamic("allocationId")(allocationId.asInstanceOf[js.Any])
+    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
+    if (publicIp != null) __obj.updateDynamic("publicIp")(publicIp.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NatGatewayState]
+  }
+}
+

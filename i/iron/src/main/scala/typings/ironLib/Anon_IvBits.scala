@@ -10,3 +10,13 @@ trait Anon_IvBits extends js.Object {
   var keyBits: scala.Double
 }
 
+object Anon_IvBits {
+  @scala.inline
+  def apply(ivBits: scala.Double, keyBits: scala.Double): Anon_IvBits = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ivBits")(ivBits)
+    __obj.updateDynamic("keyBits")(keyBits)
+    __obj.asInstanceOf[Anon_IvBits]
+  }
+}
+

@@ -26,3 +26,57 @@ trait DevicesResource extends js.Object {
   def updateMetadataAsync(request: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object DevicesResource {
+  @scala.inline
+  def apply(
+    claim: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ClaimDeviceResponse]
+    ],
+    claimAsync: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    findByIdentifier: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FindDevicesByDeviceIdentifierResponse]
+    ],
+    findByOwner: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FindDevicesByOwnerResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Device]
+    ],
+    metadata: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeviceMetadata]
+    ],
+    unclaim: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    unclaimAsync: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    updateMetadataAsync: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): DevicesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("claim")(claim)
+    __obj.updateDynamic("claimAsync")(claimAsync)
+    __obj.updateDynamic("findByIdentifier")(findByIdentifier)
+    __obj.updateDynamic("findByOwner")(findByOwner)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("unclaim")(unclaim)
+    __obj.updateDynamic("unclaimAsync")(unclaimAsync)
+    __obj.updateDynamic("updateMetadataAsync")(updateMetadataAsync)
+    __obj.asInstanceOf[DevicesResource]
+  }
+}
+

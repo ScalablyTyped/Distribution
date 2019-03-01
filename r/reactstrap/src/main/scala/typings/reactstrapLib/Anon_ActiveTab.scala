@@ -12,3 +12,20 @@ trait Anon_ActiveTab extends js.Object {
   var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
 }
 
+object Anon_ActiveTab {
+  @scala.inline
+  def apply(
+    activeTab: scala.Double | java.lang.String = null,
+    className: java.lang.String = null,
+    cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
+    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+  ): Anon_ActiveTab = {
+    val __obj = js.Dynamic.literal()
+    if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ActiveTab]
+  }
+}
+

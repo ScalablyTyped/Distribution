@@ -32,3 +32,24 @@ trait GroupedColumnsChangedEventUIParam extends js.Object {
   var triggeredBy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GroupedColumnsChangedEventUIParam {
+  @scala.inline
+  def apply(
+    grid: js.Any = null,
+    groupedColumns: js.Array[_] = null,
+    key: java.lang.String = null,
+    layout: js.Any = null,
+    owner: js.Any = null,
+    triggeredBy: java.lang.String = null
+  ): GroupedColumnsChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (triggeredBy != null) __obj.updateDynamic("triggeredBy")(triggeredBy)
+    __obj.asInstanceOf[GroupedColumnsChangedEventUIParam]
+  }
+}
+

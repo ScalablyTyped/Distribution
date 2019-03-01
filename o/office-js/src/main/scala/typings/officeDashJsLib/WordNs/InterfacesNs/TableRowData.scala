@@ -90,3 +90,34 @@ trait TableRowData extends js.Object {
   ] = js.undefined
 }
 
+object TableRowData {
+  @scala.inline
+  def apply(
+    cellCount: scala.Int | scala.Double = null,
+    cells: js.Array[TableCellData] = null,
+    font: FontData = null,
+    horizontalAlignment: officeDashJsLib.WordNs.Alignment | officeDashJsLib.officeDashJsLibStrings.Mixed | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Centered | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justified = null,
+    isHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    parentTable: TableData = null,
+    preferredHeight: scala.Int | scala.Double = null,
+    rowIndex: scala.Int | scala.Double = null,
+    shadingColor: java.lang.String = null,
+    values: js.Array[js.Array[java.lang.String]] = null,
+    verticalAlignment: officeDashJsLib.WordNs.VerticalAlignment | officeDashJsLib.officeDashJsLibStrings.Mixed | officeDashJsLib.officeDashJsLibStrings.Top | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Bottom = null
+  ): TableRowData = {
+    val __obj = js.Dynamic.literal()
+    if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (preferredHeight != null) __obj.updateDynamic("preferredHeight")(preferredHeight.asInstanceOf[js.Any])
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
+    if (values != null) __obj.updateDynamic("values")(values)
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableRowData]
+  }
+}
+

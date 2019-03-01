@@ -16,3 +16,13 @@ trait DescribeBudgetsResponse extends js.Object {
   var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 
+object DescribeBudgetsResponse {
+  @scala.inline
+  def apply(Budgets: Budgets = null, NextToken: GenericString = null): DescribeBudgetsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (Budgets != null) __obj.updateDynamic("Budgets")(Budgets)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    __obj.asInstanceOf[DescribeBudgetsResponse]
+  }
+}
+

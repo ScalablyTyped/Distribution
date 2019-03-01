@@ -855,21 +855,21 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def mkdtemp(
-    prefix: java.lang.String,
-    options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      nodeLib.Buffer | (/* folder */ java.lang.String), 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
   def mkdtemp(prefix: java.lang.String, options: java.lang.String): js.Promise[java.lang.String] = js.native
   def mkdtemp(
     prefix: java.lang.String,
     options: java.lang.String,
     callback: js.Function2[
       (/* err */ nodeLib.NodeJSNs.ErrnoException) | (/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException]), 
+      nodeLib.Buffer | (/* folder */ java.lang.String), 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def mkdtemp(
+    prefix: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
       nodeLib.Buffer | (/* folder */ java.lang.String), 
       scala.Unit
     ]
@@ -912,6 +912,11 @@ object ^ extends js.Object {
       /* folder */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
+  ): scala.Unit = js.native
+  def mkdtemp(
+    prefix: java.lang.String,
+    options: nodeLib.BufferEncoding,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def mkdtemp(
     prefix: java.lang.String,
@@ -1484,19 +1489,19 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def readdir(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
+    options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
+      /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def readdir(
     path: nodeLib.fsMod.PathLike,
-    options: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
+      (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1553,6 +1558,15 @@ object ^ extends js.Object {
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* files */ js.Array[nodeLib.fsMod.Dirent], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def readdir(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.BufferEncoding,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1630,19 +1644,19 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def readlink(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
+    options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      nodeLib.Buffer | (/* linkString */ java.lang.String), 
+      /* linkString */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def readlink(
     path: nodeLib.fsMod.PathLike,
-    options: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* linkString */ java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* linkString */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1685,6 +1699,15 @@ object ^ extends js.Object {
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* linkString */ java.lang.String | nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def readlink(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.BufferEncoding,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* linkString */ java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1756,19 +1779,19 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def realpath(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
+    options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
+      /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def realpath(
     path: nodeLib.fsMod.PathLike,
-    options: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
+      nodeLib.Buffer | (/* resolvedPath */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1811,6 +1834,15 @@ object ^ extends js.Object {
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def realpath(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.BufferEncoding,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* resolvedPath */ java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1997,6 +2029,12 @@ object ^ extends js.Object {
     path: nodeLib.fsMod.PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
+  def symlink(
+    target: nodeLib.fsMod.PathLike,
+    path: nodeLib.fsMod.PathLike,
+    `type`: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Asynchronous symlink(2) - Create a new symbolic link to an existing file.
     * @param target A path to an existing file. If a URL is provided, it must use the `file:` protocol.
@@ -2007,7 +2045,7 @@ object ^ extends js.Object {
   def symlink(
     target: nodeLib.fsMod.PathLike,
     path: nodeLib.fsMod.PathLike,
-    `type`: nodeLib.fsMod.symlinkNs.Type | js.UndefOr[scala.Nothing],
+    `type`: nodeLib.fsMod.symlinkNs.Type,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def symlink(
@@ -2253,11 +2291,6 @@ object ^ extends js.Object {
     filename: nodeLib.fsMod.PathLike,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, _]
   ): nodeLib.fsMod.FSWatcher = js.native
-  def watch(
-    filename: nodeLib.fsMod.PathLike,
-    options: nodeLib.BufferEncoding | js.UndefOr[scala.Nothing],
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
-  ): nodeLib.fsMod.FSWatcher = js.native
   def watch(filename: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.FSWatcher = js.native
   def watch(
     filename: nodeLib.fsMod.PathLike,
@@ -2267,6 +2300,11 @@ object ^ extends js.Object {
       /* filename */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
+  ): nodeLib.fsMod.FSWatcher = js.native
+  def watch(
+    filename: nodeLib.fsMod.PathLike,
+    options: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
   ): nodeLib.fsMod.FSWatcher = js.native
   /**
     * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
@@ -2318,6 +2356,11 @@ object ^ extends js.Object {
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
   ): nodeLib.fsMod.FSWatcher = js.native
   def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): nodeLib.fsMod.FSWatcher = js.native
+  def watch(
+    filename: nodeLib.fsMod.PathLike,
+    options: nodeLib.BufferEncoding,
+    listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
+  ): nodeLib.fsMod.FSWatcher = js.native
   def watch(
     filename: nodeLib.fsMod.PathLike,
     options: scala.Null,

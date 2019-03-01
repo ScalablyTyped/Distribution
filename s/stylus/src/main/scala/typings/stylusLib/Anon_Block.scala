@@ -14,3 +14,24 @@ trait Anon_Block extends js.Object {
   var nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
 }
 
+object Anon_Block {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    block: stylusLib.stylusMod.StylusNs.NodesNs.Block,
+    column: scala.Double,
+    filename: java.lang.String,
+    lineno: scala.Double,
+    nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
+  ): Anon_Block = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("__type")(__type)
+    __obj.updateDynamic("block")(block)
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("filename")(filename)
+    __obj.updateDynamic("lineno")(lineno)
+    __obj.updateDynamic("nodes")(nodes)
+    __obj.asInstanceOf[Anon_Block]
+  }
+}
+

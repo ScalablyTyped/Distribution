@@ -35,3 +35,20 @@ trait PodSecurityPolicyList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object PodSecurityPolicyList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`,
+    items: js.Array[PodSecurityPolicy],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicyList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): PodSecurityPolicyList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[PodSecurityPolicyList]
+  }
+}
+

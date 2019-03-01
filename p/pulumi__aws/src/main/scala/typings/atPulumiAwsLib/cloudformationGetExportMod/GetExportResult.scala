@@ -20,3 +20,14 @@ trait GetExportResult extends js.Object {
   val value: java.lang.String
 }
 
+object GetExportResult {
+  @scala.inline
+  def apply(exportingStackId: java.lang.String, id: java.lang.String, value: java.lang.String): GetExportResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exportingStackId")(exportingStackId)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[GetExportResult]
+  }
+}
+

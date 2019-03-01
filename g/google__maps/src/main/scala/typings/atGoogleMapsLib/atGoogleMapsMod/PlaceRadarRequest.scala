@@ -52,3 +52,30 @@ trait PlaceRadarRequest extends js.Object {
   var `type`: js.UndefOr[AddressType] = js.undefined
 }
 
+object PlaceRadarRequest {
+  @scala.inline
+  def apply(
+    location: LatLng,
+    radius: scala.Double,
+    keyword: java.lang.String = null,
+    language: java.lang.String = null,
+    maxprice: scala.Int | scala.Double = null,
+    minprice: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    opennow: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: AddressType = null
+  ): PlaceRadarRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    __obj.updateDynamic("radius")(radius)
+    if (keyword != null) __obj.updateDynamic("keyword")(keyword)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (maxprice != null) __obj.updateDynamic("maxprice")(maxprice.asInstanceOf[js.Any])
+    if (minprice != null) __obj.updateDynamic("minprice")(minprice.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(opennow)) __obj.updateDynamic("opennow")(opennow)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PlaceRadarRequest]
+  }
+}
+

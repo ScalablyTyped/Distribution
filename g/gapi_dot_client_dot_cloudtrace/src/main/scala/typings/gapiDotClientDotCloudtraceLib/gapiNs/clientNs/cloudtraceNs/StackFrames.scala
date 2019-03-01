@@ -16,3 +16,13 @@ trait StackFrames extends js.Object {
   var frame: js.UndefOr[js.Array[StackFrame]] = js.undefined
 }
 
+object StackFrames {
+  @scala.inline
+  def apply(droppedFramesCount: scala.Int | scala.Double = null, frame: js.Array[StackFrame] = null): StackFrames = {
+    val __obj = js.Dynamic.literal()
+    if (droppedFramesCount != null) __obj.updateDynamic("droppedFramesCount")(droppedFramesCount.asInstanceOf[js.Any])
+    if (frame != null) __obj.updateDynamic("frame")(frame)
+    __obj.asInstanceOf[StackFrames]
+  }
+}
+

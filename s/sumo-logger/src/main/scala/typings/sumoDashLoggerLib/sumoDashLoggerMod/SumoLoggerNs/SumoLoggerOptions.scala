@@ -66,3 +66,36 @@ trait SumoLoggerOptions extends js.Object {
   def onSuccess(): scala.Unit
 }
 
+object SumoLoggerOptions {
+  @scala.inline
+  def apply(
+    endpoint: java.lang.String,
+    onError: js.Function0[scala.Unit],
+    onSuccess: js.Function0[scala.Unit],
+    clientUrl: java.lang.String = null,
+    graphite: js.UndefOr[scala.Boolean] = js.undefined,
+    hostName: java.lang.String = null,
+    interval: scala.Int | scala.Double = null,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    sendErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    sessionKey: java.lang.String = null,
+    sourceCategory: java.lang.String = null,
+    sourceName: java.lang.String = null
+  ): SumoLoggerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endpoint")(endpoint)
+    __obj.updateDynamic("onError")(onError)
+    __obj.updateDynamic("onSuccess")(onSuccess)
+    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl)
+    if (!js.isUndefined(graphite)) __obj.updateDynamic("graphite")(graphite)
+    if (hostName != null) __obj.updateDynamic("hostName")(hostName)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(sendErrors)) __obj.updateDynamic("sendErrors")(sendErrors)
+    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)
+    if (sourceCategory != null) __obj.updateDynamic("sourceCategory")(sourceCategory)
+    if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName)
+    __obj.asInstanceOf[SumoLoggerOptions]
+  }
+}
+

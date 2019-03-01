@@ -9,3 +9,12 @@ trait Anon_Render extends js.Object {
   var render: reactLib.reactMod.ReactNs.ReactNode
 }
 
+object Anon_Render {
+  @scala.inline
+  def apply(render: reactLib.reactMod.ReactNs.ReactNode): Anon_Render = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Render]
+  }
+}
+

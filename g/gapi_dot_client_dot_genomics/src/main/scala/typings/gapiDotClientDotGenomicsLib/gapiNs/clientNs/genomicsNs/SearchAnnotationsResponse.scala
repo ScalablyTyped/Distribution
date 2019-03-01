@@ -16,3 +16,13 @@ trait SearchAnnotationsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchAnnotationsResponse {
+  @scala.inline
+  def apply(annotations: js.Array[Annotation] = null, nextPageToken: java.lang.String = null): SearchAnnotationsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[SearchAnnotationsResponse]
+  }
+}
+

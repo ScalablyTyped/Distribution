@@ -24,3 +24,20 @@ trait EnableNetworkEmulationOptions extends js.Object {
   var uploadThroughput: js.UndefOr[scala.Double] = js.undefined
 }
 
+object EnableNetworkEmulationOptions {
+  @scala.inline
+  def apply(
+    downloadThroughput: scala.Int | scala.Double = null,
+    latency: scala.Int | scala.Double = null,
+    offline: js.UndefOr[scala.Boolean] = js.undefined,
+    uploadThroughput: scala.Int | scala.Double = null
+  ): EnableNetworkEmulationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (downloadThroughput != null) __obj.updateDynamic("downloadThroughput")(downloadThroughput.asInstanceOf[js.Any])
+    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
+    if (!js.isUndefined(offline)) __obj.updateDynamic("offline")(offline)
+    if (uploadThroughput != null) __obj.updateDynamic("uploadThroughput")(uploadThroughput.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EnableNetworkEmulationOptions]
+  }
+}
+

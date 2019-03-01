@@ -18,3 +18,28 @@ trait AutocompletionRequest extends js.Object {
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AutocompletionRequest {
+  @scala.inline
+  def apply(
+    input: java.lang.String,
+    bounds: googlemapsLib.googleNs.mapsNs.LatLngBounds | googlemapsLib.googleNs.mapsNs.LatLngBoundsLiteral = null,
+    componentRestrictions: ComponentRestrictions = null,
+    location: googlemapsLib.googleNs.mapsNs.LatLng = null,
+    offset: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null,
+    sessionToken: AutocompleteSessionToken = null,
+    types: js.Array[java.lang.String] = null
+  ): AutocompletionRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (componentRestrictions != null) __obj.updateDynamic("componentRestrictions")(componentRestrictions)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[AutocompletionRequest]
+  }
+}
+

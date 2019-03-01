@@ -16,3 +16,20 @@ trait JobStatus extends js.Object {
   var substate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JobStatus {
+  @scala.inline
+  def apply(
+    details: java.lang.String = null,
+    state: java.lang.String = null,
+    stateStartTime: java.lang.String = null,
+    substate: java.lang.String = null
+  ): JobStatus = {
+    val __obj = js.Dynamic.literal()
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (stateStartTime != null) __obj.updateDynamic("stateStartTime")(stateStartTime)
+    if (substate != null) __obj.updateDynamic("substate")(substate)
+    __obj.asInstanceOf[JobStatus]
+  }
+}
+

@@ -15,3 +15,12 @@ trait ArtistsTopTracksResponse extends js.Object {
   var tracks: js.Array[TrackObjectFull]
 }
 
+object ArtistsTopTracksResponse {
+  @scala.inline
+  def apply(tracks: js.Array[TrackObjectFull]): ArtistsTopTracksResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tracks")(tracks)
+    __obj.asInstanceOf[ArtistsTopTracksResponse]
+  }
+}
+

@@ -33,3 +33,14 @@ trait IMediaTypeResource extends js.Object {
   def getAllowedTypes(mediaId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 
+object IMediaTypeResource {
+  @scala.inline
+  def apply(
+    getAllowedTypes: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
+  ): IMediaTypeResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAllowedTypes")(getAllowedTypes)
+    __obj.asInstanceOf[IMediaTypeResource]
+  }
+}
+

@@ -33,3 +33,22 @@ trait Company extends js.Object {
   var ownerEmails: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Company {
+  @scala.inline
+  def apply(
+    adminEmails: js.Array[java.lang.String] = null,
+    companyId: java.lang.String = null,
+    companyName: java.lang.String = null,
+    name: java.lang.String = null,
+    ownerEmails: js.Array[java.lang.String] = null
+  ): Company = {
+    val __obj = js.Dynamic.literal()
+    if (adminEmails != null) __obj.updateDynamic("adminEmails")(adminEmails)
+    if (companyId != null) __obj.updateDynamic("companyId")(companyId)
+    if (companyName != null) __obj.updateDynamic("companyName")(companyName)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (ownerEmails != null) __obj.updateDynamic("ownerEmails")(ownerEmails)
+    __obj.asInstanceOf[Company]
+  }
+}
+

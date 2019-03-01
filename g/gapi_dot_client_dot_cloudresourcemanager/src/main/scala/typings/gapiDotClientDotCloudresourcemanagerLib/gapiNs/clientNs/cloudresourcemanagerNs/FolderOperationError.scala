@@ -10,3 +10,12 @@ trait FolderOperationError extends js.Object {
   var errorMessageId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FolderOperationError {
+  @scala.inline
+  def apply(errorMessageId: java.lang.String = null): FolderOperationError = {
+    val __obj = js.Dynamic.literal()
+    if (errorMessageId != null) __obj.updateDynamic("errorMessageId")(errorMessageId)
+    __obj.asInstanceOf[FolderOperationError]
+  }
+}
+

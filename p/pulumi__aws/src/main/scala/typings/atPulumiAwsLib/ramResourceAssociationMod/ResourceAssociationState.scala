@@ -16,3 +16,16 @@ trait ResourceAssociationState extends js.Object {
   val resourceShareArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ResourceAssociationState {
+  @scala.inline
+  def apply(
+    resourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    resourceShareArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ResourceAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
+    if (resourceShareArn != null) __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceAssociationState]
+  }
+}
+

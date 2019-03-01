@@ -44,3 +44,22 @@ trait DocumentLoadOptions extends js.Object {
   var saved: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DocumentLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    allowCloseOnUntitled: js.UndefOr[scala.Boolean] = js.undefined,
+    body: BodyLoadOptions = null,
+    properties: DocumentPropertiesLoadOptions = null,
+    saved: js.UndefOr[scala.Boolean] = js.undefined
+  ): DocumentLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(allowCloseOnUntitled)) __obj.updateDynamic("allowCloseOnUntitled")(allowCloseOnUntitled)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved)
+    __obj.asInstanceOf[DocumentLoadOptions]
+  }
+}
+

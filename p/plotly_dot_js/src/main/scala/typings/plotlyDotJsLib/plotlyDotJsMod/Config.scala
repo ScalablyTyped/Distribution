@@ -80,3 +80,70 @@ trait Config extends js.Object {
   var topojsonURL: java.lang.String
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    autosizable: scala.Boolean,
+    displayModeBar: plotlyDotJsLib.plotlyDotJsLibStrings.hover | scala.Boolean,
+    displaylogo: scala.Boolean,
+    doubleClick: plotlyDotJsLib.plotlyDotJsLibStrings.`reset+autosize` | plotlyDotJsLib.plotlyDotJsLibStrings.reset | plotlyDotJsLib.plotlyDotJsLibStrings.autosize | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`,
+    editable: scala.Boolean,
+    edits: stdLib.Partial[Edits],
+    fillFrame: scala.Boolean,
+    frameMargins: scala.Double,
+    globalTransforms: js.Array[_],
+    linkText: java.lang.String,
+    locale: java.lang.String,
+    logging: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibNumbers.`0` | plotlyDotJsLib.plotlyDotJsLibNumbers.`1` | plotlyDotJsLib.plotlyDotJsLibNumbers.`2`,
+    mapboxAccessToken: java.lang.String,
+    modeBarButtons: js.Array[js.Array[ModeBarDefaultButtons]] | js.Array[js.Array[ModeBarButton]] | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`,
+    modeBarButtonsToAdd: js.Array[ModeBarDefaultButtons] | js.Array[ModeBarButton],
+    modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons],
+    plotGlPixelRatio: scala.Double,
+    queueLength: scala.Double,
+    responsive: scala.Boolean,
+    scrollZoom: scala.Boolean,
+    sendData: scala.Boolean,
+    setBackground: java.lang.String | plotlyDotJsLib.plotlyDotJsLibStrings.opaque | plotlyDotJsLib.plotlyDotJsLibStrings.transparent,
+    showAxisDragHandles: scala.Boolean,
+    showAxisRangeEntryBoxes: scala.Boolean,
+    showLink: scala.Boolean,
+    showSources: scala.Boolean,
+    showTips: scala.Boolean,
+    staticPlot: scala.Boolean,
+    topojsonURL: java.lang.String
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autosizable")(autosizable)
+    __obj.updateDynamic("displayModeBar")(displayModeBar.asInstanceOf[js.Any])
+    __obj.updateDynamic("displaylogo")(displaylogo)
+    __obj.updateDynamic("doubleClick")(doubleClick.asInstanceOf[js.Any])
+    __obj.updateDynamic("editable")(editable)
+    __obj.updateDynamic("edits")(edits)
+    __obj.updateDynamic("fillFrame")(fillFrame)
+    __obj.updateDynamic("frameMargins")(frameMargins)
+    __obj.updateDynamic("globalTransforms")(globalTransforms)
+    __obj.updateDynamic("linkText")(linkText)
+    __obj.updateDynamic("locale")(locale)
+    __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    __obj.updateDynamic("mapboxAccessToken")(mapboxAccessToken)
+    __obj.updateDynamic("modeBarButtons")(modeBarButtons.asInstanceOf[js.Any])
+    __obj.updateDynamic("modeBarButtonsToAdd")(modeBarButtonsToAdd.asInstanceOf[js.Any])
+    __obj.updateDynamic("modeBarButtonsToRemove")(modeBarButtonsToRemove)
+    __obj.updateDynamic("plotGlPixelRatio")(plotGlPixelRatio)
+    __obj.updateDynamic("queueLength")(queueLength)
+    __obj.updateDynamic("responsive")(responsive)
+    __obj.updateDynamic("scrollZoom")(scrollZoom)
+    __obj.updateDynamic("sendData")(sendData)
+    __obj.updateDynamic("setBackground")(setBackground.asInstanceOf[js.Any])
+    __obj.updateDynamic("showAxisDragHandles")(showAxisDragHandles)
+    __obj.updateDynamic("showAxisRangeEntryBoxes")(showAxisRangeEntryBoxes)
+    __obj.updateDynamic("showLink")(showLink)
+    __obj.updateDynamic("showSources")(showSources)
+    __obj.updateDynamic("showTips")(showTips)
+    __obj.updateDynamic("staticPlot")(staticPlot)
+    __obj.updateDynamic("topojsonURL")(topojsonURL)
+    __obj.asInstanceOf[Config]
+  }
+}
+

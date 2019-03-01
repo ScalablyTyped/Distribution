@@ -50,3 +50,30 @@ trait ParagraphStyle extends js.Object {
   var spacingMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ParagraphStyle {
+  @scala.inline
+  def apply(
+    alignment: java.lang.String = null,
+    direction: java.lang.String = null,
+    indentEnd: Dimension = null,
+    indentFirstLine: Dimension = null,
+    indentStart: Dimension = null,
+    lineSpacing: scala.Int | scala.Double = null,
+    spaceAbove: Dimension = null,
+    spaceBelow: Dimension = null,
+    spacingMode: java.lang.String = null
+  ): ParagraphStyle = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (indentEnd != null) __obj.updateDynamic("indentEnd")(indentEnd)
+    if (indentFirstLine != null) __obj.updateDynamic("indentFirstLine")(indentFirstLine)
+    if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart)
+    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
+    if (spaceAbove != null) __obj.updateDynamic("spaceAbove")(spaceAbove)
+    if (spaceBelow != null) __obj.updateDynamic("spaceBelow")(spaceBelow)
+    if (spacingMode != null) __obj.updateDynamic("spacingMode")(spacingMode)
+    __obj.asInstanceOf[ParagraphStyle]
+  }
+}
+

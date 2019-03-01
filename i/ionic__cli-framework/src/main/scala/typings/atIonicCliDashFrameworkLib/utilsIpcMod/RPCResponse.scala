@@ -14,3 +14,23 @@ trait RPCResponse[R /* <: RPCRequest[_, _] */, D /* <: js.Object */] extends js.
   var `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`rpc-response`
 }
 
+object RPCResponse {
+  @scala.inline
+  def apply[R /* <: RPCRequest[_, _] */, D /* <: js.Object */](
+    data: D,
+    id: java.lang.String,
+    procedure: /* import warning: ImportType.apply Failed type conversion: R['procedure'] */ js.Any,
+    request: R,
+    `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`rpc-response`,
+    err: js.Any = null
+  ): RPCResponse[R, D] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("procedure")(procedure)
+    __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (err != null) __obj.updateDynamic("err")(err)
+    __obj.asInstanceOf[RPCResponse[R, D]]
+  }
+}
+

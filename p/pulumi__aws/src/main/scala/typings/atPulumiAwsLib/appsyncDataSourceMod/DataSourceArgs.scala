@@ -44,3 +44,29 @@ trait DataSourceArgs extends js.Object {
   val `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object DataSourceArgs {
+  @scala.inline
+  def apply(
+    apiId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dynamodbConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_RegionTableName] = null,
+    elasticsearchConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EndpointRegion] = null,
+    httpConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EndpointInput] = null,
+    lambdaConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FunctionArnInput] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    serviceRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): DataSourceArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dynamodbConfig != null) __obj.updateDynamic("dynamodbConfig")(dynamodbConfig.asInstanceOf[js.Any])
+    if (elasticsearchConfig != null) __obj.updateDynamic("elasticsearchConfig")(elasticsearchConfig.asInstanceOf[js.Any])
+    if (httpConfig != null) __obj.updateDynamic("httpConfig")(httpConfig.asInstanceOf[js.Any])
+    if (lambdaConfig != null) __obj.updateDynamic("lambdaConfig")(lambdaConfig.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (serviceRoleArn != null) __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataSourceArgs]
+  }
+}
+

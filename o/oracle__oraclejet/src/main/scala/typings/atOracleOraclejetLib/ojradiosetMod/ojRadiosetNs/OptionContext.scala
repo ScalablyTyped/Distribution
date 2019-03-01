@@ -12,3 +12,14 @@ trait OptionContext[D] extends js.Object {
   var index: scala.Double
 }
 
+object OptionContext {
+  @scala.inline
+  def apply[D](component: stdLib.Element, data: D, index: scala.Double): OptionContext[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("component")(component)
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("index")(index)
+    __obj.asInstanceOf[OptionContext[D]]
+  }
+}
+

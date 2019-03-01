@@ -22,3 +22,37 @@ trait VpnTunnelsResource extends js.Object {
   def list(request: gapiDotClientDotComputeLib.Anon_AltFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[VpnTunnelList]
 }
 
+object VpnTunnelsResource {
+  @scala.inline
+  def apply(
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VpnTunnelAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdUserIp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionUserIp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VpnTunnel]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VpnTunnelList]
+    ]
+  ): VpnTunnelsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[VpnTunnelsResource]
+  }
+}
+

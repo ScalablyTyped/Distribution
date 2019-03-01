@@ -18,3 +18,31 @@ trait LayerParser
      with activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XActiveDataSink
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XInitialization
 
+object LayerParser {
+  @scala.inline
+  def apply(
+    InputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    acquire: js.Function0[scala.Unit],
+    getInputStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readData: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.configurationNs.backendNs.XLayerHandler, 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    setInputStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit]
+  ): LayerParser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("InputStream")(InputStream)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getInputStream")(getInputStream)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("readData")(readData)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setInputStream")(setInputStream)
+    __obj.asInstanceOf[LayerParser]
+  }
+}
+

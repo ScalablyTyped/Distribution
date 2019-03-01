@@ -21,3 +21,26 @@ trait SpyAnd extends js.Object {
   def throwError(msg: java.lang.String): Spy
 }
 
+object SpyAnd {
+  @scala.inline
+  def apply(
+    callFake: js.Function1[js.Function, Spy],
+    callThrough: js.Function0[Spy],
+    identity: java.lang.String,
+    returnValue: js.Function1[js.Any, Spy],
+    returnValues: js.Function1[/* repeated */ js.Any, Spy],
+    stub: js.Function0[Spy],
+    throwError: js.Function1[java.lang.String, Spy]
+  ): SpyAnd = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callFake")(callFake)
+    __obj.updateDynamic("callThrough")(callThrough)
+    __obj.updateDynamic("identity")(identity)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.updateDynamic("returnValues")(returnValues)
+    __obj.updateDynamic("stub")(stub)
+    __obj.updateDynamic("throwError")(throwError)
+    __obj.asInstanceOf[SpyAnd]
+  }
+}
+

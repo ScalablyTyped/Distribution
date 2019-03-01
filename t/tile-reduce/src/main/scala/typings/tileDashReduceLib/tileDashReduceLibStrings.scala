@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object tileDashReduceLibStrings {
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends tileDashReduceLib.TileReduceNs.Types
   
   @js.native
-  sealed trait map extends js.Object
+  sealed trait map
+    extends tileDashReduceLib.TileReduceNs.Types
   
   @js.native
-  sealed trait reduce extends js.Object
+  sealed trait reduce
+    extends tileDashReduceLib.TileReduceNs.Types
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends tileDashReduceLib.TileReduceNs.Types
   
   @scala.inline
   def end: end = "end".asInstanceOf[end]

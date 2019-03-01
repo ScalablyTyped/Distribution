@@ -16,3 +16,28 @@ trait DoubleArray extends js.Object {
   def traverse(parent: scala.Double, code: scala.Double): scala.Double
 }
 
+object DoubleArray {
+  @scala.inline
+  def apply(
+    bc: BaseAndCheck,
+    calc: js.Function0[doublearrayLib.Anon_All],
+    commonPrefixSearch: js.Function1[java.lang.String, KeyValue],
+    contain: js.Function1[java.lang.String, scala.Boolean],
+    dump: js.Function0[java.lang.String],
+    lookup: js.Function1[java.lang.String, scala.Double],
+    size: js.Function0[scala.Double],
+    traverse: js.Function2[scala.Double, scala.Double, scala.Double]
+  ): DoubleArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bc")(bc)
+    __obj.updateDynamic("calc")(calc)
+    __obj.updateDynamic("commonPrefixSearch")(commonPrefixSearch)
+    __obj.updateDynamic("contain")(contain)
+    __obj.updateDynamic("dump")(dump)
+    __obj.updateDynamic("lookup")(lookup)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("traverse")(traverse)
+    __obj.asInstanceOf[DoubleArray]
+  }
+}
+

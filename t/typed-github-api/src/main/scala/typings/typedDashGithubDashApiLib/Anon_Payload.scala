@@ -12,3 +12,20 @@ trait Anon_Payload extends js.Object {
   var verified: scala.Boolean
 }
 
+object Anon_Payload {
+  @scala.inline
+  def apply(
+    payload: java.lang.String,
+    reason: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.valid,
+    signature: java.lang.String,
+    verified: scala.Boolean
+  ): Anon_Payload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("payload")(payload)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("signature")(signature)
+    __obj.updateDynamic("verified")(verified)
+    __obj.asInstanceOf[Anon_Payload]
+  }
+}
+

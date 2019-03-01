@@ -140,3 +140,44 @@ trait GeocoderOptions extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GeocoderOptions {
+  @scala.inline
+  def apply(
+    attribution: java.lang.String = null,
+    autocomplete: js.UndefOr[scala.Boolean] = js.undefined,
+    bounds: leafletLib.leafletMod.LatLngBounds | scala.Boolean = null,
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: leafletLib.leafletMod.LatLng | scala.Boolean = null,
+    fullWidth: scala.Double | scala.Boolean = null,
+    layers: java.lang.String | js.Array[_] = null,
+    markers: leafletLib.leafletMod.MarkerOptions | scala.Boolean = null,
+    panToPoint: js.UndefOr[scala.Boolean] = js.undefined,
+    params: js.Object = null,
+    place: js.UndefOr[scala.Boolean] = js.undefined,
+    placeholder: java.lang.String = null,
+    polygonIcon: scala.Boolean | java.lang.String = null,
+    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PositionString */ js.Any = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null
+  ): GeocoderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (fullWidth != null) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
+    if (!js.isUndefined(panToPoint)) __obj.updateDynamic("panToPoint")(panToPoint)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (!js.isUndefined(place)) __obj.updateDynamic("place")(place)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (polygonIcon != null) __obj.updateDynamic("polygonIcon")(polygonIcon.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GeocoderOptions]
+  }
+}
+

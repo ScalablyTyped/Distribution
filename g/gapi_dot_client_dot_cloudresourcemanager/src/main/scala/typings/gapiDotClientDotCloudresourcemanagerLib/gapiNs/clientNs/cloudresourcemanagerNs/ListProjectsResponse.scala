@@ -27,3 +27,13 @@ trait ListProjectsResponse extends js.Object {
   var projects: js.UndefOr[js.Array[Project]] = js.undefined
 }
 
+object ListProjectsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, projects: js.Array[Project] = null): ListProjectsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (projects != null) __obj.updateDynamic("projects")(projects)
+    __obj.asInstanceOf[ListProjectsResponse]
+  }
+}
+

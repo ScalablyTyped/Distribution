@@ -52,3 +52,34 @@ trait Locale extends js.Object {
   var weekLabel: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Locale {
+  @scala.inline
+  def apply(
+    applyLabel: java.lang.String = null,
+    cancelLabel: java.lang.String = null,
+    customRangeLabel: java.lang.String = null,
+    daysOfWeek: js.Array[java.lang.String] = null,
+    firstDay: scala.Int | scala.Double = null,
+    format: java.lang.String = null,
+    fromLabel: java.lang.String = null,
+    monthNames: js.Array[java.lang.String] = null,
+    separator: java.lang.String = null,
+    toLabel: java.lang.String = null,
+    weekLabel: java.lang.String = null
+  ): Locale = {
+    val __obj = js.Dynamic.literal()
+    if (applyLabel != null) __obj.updateDynamic("applyLabel")(applyLabel)
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
+    if (customRangeLabel != null) __obj.updateDynamic("customRangeLabel")(customRangeLabel)
+    if (daysOfWeek != null) __obj.updateDynamic("daysOfWeek")(daysOfWeek)
+    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (fromLabel != null) __obj.updateDynamic("fromLabel")(fromLabel)
+    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (toLabel != null) __obj.updateDynamic("toLabel")(toLabel)
+    if (weekLabel != null) __obj.updateDynamic("weekLabel")(weekLabel)
+    __obj.asInstanceOf[Locale]
+  }
+}
+

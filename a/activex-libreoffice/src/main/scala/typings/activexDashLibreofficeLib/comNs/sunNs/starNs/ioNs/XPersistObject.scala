@@ -56,3 +56,26 @@ trait XPersistObject
   def write(OutStream: XObjectOutputStream): scala.Unit
 }
 
+object XPersistObject {
+  @scala.inline
+  def apply(
+    ServiceName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getServiceName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    read: js.Function1[XObjectInputStream, scala.Unit],
+    release: js.Function0[scala.Unit],
+    write: js.Function1[XObjectOutputStream, scala.Unit]
+  ): XPersistObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ServiceName")(ServiceName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getServiceName")(getServiceName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[XPersistObject]
+  }
+}
+

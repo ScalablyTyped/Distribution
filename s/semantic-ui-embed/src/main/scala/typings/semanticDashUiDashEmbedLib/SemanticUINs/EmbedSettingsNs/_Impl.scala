@@ -133,3 +133,64 @@ trait _Impl extends js.Object {
   def onPlaceholderDisplay(`this`: semanticDashUiDashEmbedLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    autoplay: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.auto | scala.Boolean,
+    brandedUI: scala.Boolean,
+    className: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ClassNameSettings,
+    color: java.lang.String,
+    debug: scala.Boolean,
+    error: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ErrorSettings,
+    hd: scala.Boolean,
+    icon: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
+    id: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
+    metadata: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.MetadataSettings,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onCreate: js.Function2[semanticDashUiDashEmbedLib.JQuery, java.lang.String, scala.Unit],
+    onDisplay: js.Function1[semanticDashUiDashEmbedLib.JQuery, scala.Unit],
+    onEmbed: js.Function2[
+      semanticDashUiDashEmbedLib.JQuery, 
+      semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings, 
+      semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings
+    ],
+    onPlaceholderDisplay: js.Function1[semanticDashUiDashEmbedLib.JQuery, scala.Unit],
+    parameters: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.ParametersSettings,
+    performance: scala.Boolean,
+    selector: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.SelectorSettings,
+    silent: scala.Boolean,
+    source: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
+    templates: semanticDashUiDashEmbedLib.SemanticUINs.EmbedNs.TemplatesSettings,
+    url: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
+    __obj.updateDynamic("brandedUI")(brandedUI)
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("hd")(hd)
+    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("onCreate")(onCreate)
+    __obj.updateDynamic("onDisplay")(onDisplay)
+    __obj.updateDynamic("onEmbed")(onEmbed)
+    __obj.updateDynamic("onPlaceholderDisplay")(onPlaceholderDisplay)
+    __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
+    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

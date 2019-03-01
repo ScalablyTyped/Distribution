@@ -21,3 +21,13 @@ trait AppointmentPropertyNames extends js.Object {
   var Pattern: java.lang.String
 }
 
+object AppointmentPropertyNames {
+  @scala.inline
+  def apply(Normal: java.lang.String, Pattern: java.lang.String): AppointmentPropertyNames = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Normal")(Normal)
+    __obj.updateDynamic("Pattern")(Pattern)
+    __obj.asInstanceOf[AppointmentPropertyNames]
+  }
+}
+

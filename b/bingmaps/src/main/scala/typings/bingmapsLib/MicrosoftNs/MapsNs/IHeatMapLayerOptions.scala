@@ -43,3 +43,24 @@ trait IHeatMapLayerOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IHeatMapLayerOptions {
+  @scala.inline
+  def apply(
+    colorGradient: IDictionary[java.lang.String] = null,
+    intensity: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null,
+    unit: bingmapsLib.bingmapsLibStrings.meters | bingmapsLib.bingmapsLibStrings.pixel = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): IHeatMapLayerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (colorGradient != null) __obj.updateDynamic("colorGradient")(colorGradient)
+    if (intensity != null) __obj.updateDynamic("intensity")(intensity.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[IHeatMapLayerOptions]
+  }
+}
+

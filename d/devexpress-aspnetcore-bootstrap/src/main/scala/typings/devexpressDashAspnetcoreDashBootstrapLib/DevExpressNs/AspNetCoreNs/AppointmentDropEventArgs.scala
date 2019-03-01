@@ -11,3 +11,20 @@ trait AppointmentDropEventArgs extends EventArgs {
   val operation: BootstrapSchedulerAppointmentOperation
 }
 
+object AppointmentDropEventArgs {
+  @scala.inline
+  def apply(
+    dragInformation: js.Array[BootstrapSchedulerAppointmentDragInfo],
+    handled: scala.Boolean,
+    operation: BootstrapSchedulerAppointmentOperation,
+    sender: Control
+  ): AppointmentDropEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dragInformation")(dragInformation)
+    __obj.updateDynamic("handled")(handled)
+    __obj.updateDynamic("operation")(operation)
+    __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[AppointmentDropEventArgs]
+  }
+}
+

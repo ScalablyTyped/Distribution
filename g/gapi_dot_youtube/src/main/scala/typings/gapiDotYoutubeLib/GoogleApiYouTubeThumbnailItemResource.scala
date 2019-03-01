@@ -20,3 +20,14 @@ trait GoogleApiYouTubeThumbnailItemResource extends js.Object {
   var width: scala.Double
 }
 
+object GoogleApiYouTubeThumbnailItemResource {
+  @scala.inline
+  def apply(height: scala.Double, url: java.lang.String, width: scala.Double): GoogleApiYouTubeThumbnailItemResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[GoogleApiYouTubeThumbnailItemResource]
+  }
+}
+

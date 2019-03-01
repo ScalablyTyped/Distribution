@@ -20,3 +20,16 @@ trait DistanceOptions extends js.Object {
   ] = js.undefined
 }
 
+object DistanceOptions {
+  @scala.inline
+  def apply(
+    geoSystem: rethinkdbLib.rethinkdbLibStrings.WGS84 | rethinkdbLib.rethinkdbLibStrings.unit_sphere = null,
+    unit: rethinkdbLib.rethinkdbLibStrings.m | rethinkdbLib.rethinkdbLibStrings.km | rethinkdbLib.rethinkdbLibStrings.mi | rethinkdbLib.rethinkdbLibStrings.nm | rethinkdbLib.rethinkdbLibStrings.ft = null
+  ): DistanceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (geoSystem != null) __obj.updateDynamic("geoSystem")(geoSystem.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DistanceOptions]
+  }
+}
+

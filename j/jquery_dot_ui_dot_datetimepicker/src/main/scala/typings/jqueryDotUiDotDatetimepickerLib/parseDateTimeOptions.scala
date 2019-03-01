@@ -13,3 +13,22 @@ trait parseDateTimeOptions extends js.Object {
   var timeSettings: java.lang.String
 }
 
+object parseDateTimeOptions {
+  @scala.inline
+  def apply(
+    dateFormat: java.lang.String,
+    dateSettings: java.lang.String,
+    dateTimeString: java.lang.String,
+    timeFormat: java.lang.String,
+    timeSettings: java.lang.String
+  ): parseDateTimeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dateFormat")(dateFormat)
+    __obj.updateDynamic("dateSettings")(dateSettings)
+    __obj.updateDynamic("dateTimeString")(dateTimeString)
+    __obj.updateDynamic("timeFormat")(timeFormat)
+    __obj.updateDynamic("timeSettings")(timeSettings)
+    __obj.asInstanceOf[parseDateTimeOptions]
+  }
+}
+

@@ -24,3 +24,20 @@ trait UpdateNotificationRequest extends js.Object {
   var OldNotification: Notification
 }
 
+object UpdateNotificationRequest {
+  @scala.inline
+  def apply(
+    AccountId: AccountId,
+    BudgetName: BudgetName,
+    NewNotification: Notification,
+    OldNotification: Notification
+  ): UpdateNotificationRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccountId")(AccountId)
+    __obj.updateDynamic("BudgetName")(BudgetName)
+    __obj.updateDynamic("NewNotification")(NewNotification)
+    __obj.updateDynamic("OldNotification")(OldNotification)
+    __obj.asInstanceOf[UpdateNotificationRequest]
+  }
+}
+

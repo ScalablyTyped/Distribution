@@ -11,3 +11,18 @@ trait IStringData extends js.Object {
   def Clone(): IStringData
 }
 
+object IStringData {
+  @scala.inline
+  def apply(
+    AsString: java.lang.String,
+    Clone: js.Function0[IStringData],
+    StringDataType: mfilesLib.MFilesNs.MFStringDataType
+  ): IStringData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AsString")(AsString)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("StringDataType")(StringDataType)
+    __obj.asInstanceOf[IStringData]
+  }
+}
+

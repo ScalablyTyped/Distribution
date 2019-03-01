@@ -13,3 +13,12 @@ trait VerifyOptions extends js.Object {
   var checkServerIdentity: js.UndefOr[CheckServerIdentityCallback] = js.undefined
 }
 
+object VerifyOptions {
+  @scala.inline
+  def apply(checkServerIdentity: CheckServerIdentityCallback = null): VerifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity)
+    __obj.asInstanceOf[VerifyOptions]
+  }
+}
+

@@ -14,3 +14,18 @@ trait PublicKeyCertificate extends js.Object {
   var x509Details: js.UndefOr[X509CertificateDetails] = js.undefined
 }
 
+object PublicKeyCertificate {
+  @scala.inline
+  def apply(
+    certificate: java.lang.String = null,
+    format: java.lang.String = null,
+    x509Details: X509CertificateDetails = null
+  ): PublicKeyCertificate = {
+    val __obj = js.Dynamic.literal()
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (x509Details != null) __obj.updateDynamic("x509Details")(x509Details)
+    __obj.asInstanceOf[PublicKeyCertificate]
+  }
+}
+

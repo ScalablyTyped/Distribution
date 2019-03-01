@@ -29,3 +29,28 @@ trait NotifyBLECharacteristicValueChangeOptions
   var state: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NotifyBLECharacteristicValueChangeOptions {
+  @scala.inline
+  def apply(
+    characteristicId: java.lang.String,
+    deviceId: java.lang.String,
+    serviceId: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    descriptorId: java.lang.String = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    state: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): NotifyBLECharacteristicValueChangeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("characteristicId")(characteristicId)
+    __obj.updateDynamic("deviceId")(deviceId)
+    __obj.updateDynamic("serviceId")(serviceId)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (descriptorId != null) __obj.updateDynamic("descriptorId")(descriptorId)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[NotifyBLECharacteristicValueChangeOptions]
+  }
+}
+

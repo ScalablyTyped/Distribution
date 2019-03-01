@@ -12,3 +12,33 @@ trait SFCBlock extends SFCCustomBlock {
   var src: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SFCBlock {
+  @scala.inline
+  def apply(
+    attrs: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | atVueComponentDashCompilerDashUtilsLib.atVueComponentDashCompilerDashUtilsLibNumbers.`true`
+    ],
+    content: java.lang.String,
+    end: scala.Double,
+    start: scala.Double,
+    `type`: java.lang.String,
+    lang: java.lang.String = null,
+    map: atVueComponentDashCompilerDashUtilsLib.distTypesMod.RawSourceMap = null,
+    module: java.lang.String | scala.Boolean = null,
+    scoped: js.UndefOr[scala.Boolean] = js.undefined,
+    src: java.lang.String = null
+  ): SFCBlock = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("attrs")(attrs)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped)
+    if (src != null) __obj.updateDynamic("src")(src)
+    __obj.asInstanceOf[SFCBlock]
+  }
+}
+

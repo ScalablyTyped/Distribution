@@ -28,3 +28,22 @@ trait DropDownItemSelectingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DropDownItemSelectingEventUIParam {
+  @scala.inline
+  def apply(
+    editor: js.Any = null,
+    editorInput: js.Any = null,
+    item: js.Any = null,
+    list: js.Any = null,
+    owner: js.Any = null
+  ): DropDownItemSelectingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (editor != null) __obj.updateDynamic("editor")(editor)
+    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DropDownItemSelectingEventUIParam]
+  }
+}
+

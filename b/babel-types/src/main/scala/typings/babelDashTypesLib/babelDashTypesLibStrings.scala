@@ -679,7 +679,7 @@ object babelDashTypesLibStrings {
   sealed trait `^=` extends js.Object
   
   @js.native
-  sealed trait `^` extends js.Object
+  sealed trait `_backtick^_backtick` extends js.Object
   
   @js.native
   sealed trait const extends js.Object
@@ -1193,7 +1193,7 @@ object babelDashTypesLibStrings {
   @scala.inline
   def `^=`: `^=` = "^=".asInstanceOf[`^=`]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def const: const = "const".asInstanceOf[const]
   @scala.inline

@@ -36,3 +36,18 @@ trait Disk extends js.Object {
   var sizeGb: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Disk {
+  @scala.inline
+  def apply(
+    diskType: java.lang.String = null,
+    mountPoint: java.lang.String = null,
+    sizeGb: scala.Int | scala.Double = null
+  ): Disk = {
+    val __obj = js.Dynamic.literal()
+    if (diskType != null) __obj.updateDynamic("diskType")(diskType)
+    if (mountPoint != null) __obj.updateDynamic("mountPoint")(mountPoint)
+    if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Disk]
+  }
+}
+

@@ -48,3 +48,42 @@ trait Anon_AltBucketDelimiter extends js.Object {
   var versions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_AltBucketDelimiter {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String,
+    alt: java.lang.String = null,
+    delimiter: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prefix: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    projection: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null,
+    userProject: java.lang.String = null,
+    versions: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AltBucketDelimiter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucket")(bucket)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    if (!js.isUndefined(versions)) __obj.updateDynamic("versions")(versions)
+    __obj.asInstanceOf[Anon_AltBucketDelimiter]
+  }
+}
+

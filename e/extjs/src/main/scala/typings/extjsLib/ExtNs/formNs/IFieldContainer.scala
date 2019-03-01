@@ -189,3 +189,80 @@ import scala.scalajs.js.annotation._
   var unsetActiveError: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object IFieldContainer {
+  @scala.inline
+  def apply(
+    IContainer: extjsLib.ExtNs.containerNs.IContainer = null,
+    IFieldAncestor: IFieldAncestor = null,
+    ILabelable: ILabelable = null,
+    combineErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    combineLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    componentCls: java.lang.String = null,
+    componentLayout: js.Any = null,
+    getActiveError: js.Function0[java.lang.String] = null,
+    getActiveErrors: js.Function0[extjsLib.ExtNs.Array] = null,
+    getCombinedErrors: js.Function1[/* invalidFields */ js.UndefOr[extjsLib.ExtNs.Array], extjsLib.ExtNs.Array] = null,
+    getFieldLabel: js.Function0[java.lang.String] = null,
+    getInputId: js.Function0[java.lang.String] = null,
+    getLabelWidth: js.Function0[scala.Double] = null,
+    getLabelableRenderData: js.Function0[_] = null,
+    getSubTplMarkup: js.Function0[java.lang.String] = null,
+    hasActiveError: js.Function0[scala.Boolean] = null,
+    hasVisibleLabel: js.Function0[scala.Boolean] = null,
+    initFieldAncestor: js.Function0[scala.Unit] = null,
+    initLabelable: js.Function0[scala.Unit] = null,
+    initRenderData: js.Function0[_] = null,
+    invalidCls: java.lang.String = null,
+    labelConnector: java.lang.String = null,
+    maskOnDisable: js.UndefOr[scala.Boolean] = js.undefined,
+    onAdd: js.Function1[/* labelable */ js.UndefOr[ILabelable], scala.Unit] = null,
+    onFieldValidityChange: js.Function2[
+      /* field */ js.UndefOr[extjsLib.ExtNs.formNs.fieldNs.IField], 
+      /* valid */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    onRemove: js.Function1[/* labelable */ js.UndefOr[ILabelable], scala.Unit] = null,
+    setActiveError: js.Function1[/* msg */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setActiveErrors: js.Function1[/* errors */ js.UndefOr[extjsLib.ExtNs.Array], scala.Unit] = null,
+    setFieldDefaults: js.Function1[/* defaults */ js.UndefOr[js.Any], scala.Unit] = null,
+    setFieldLabel: js.Function1[/* label */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    trimLabelSeparator: js.Function0[java.lang.String] = null,
+    unsetActiveError: js.Function0[scala.Unit] = null
+  ): IFieldContainer = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    js.Dynamic.global.Object.assign(__obj, IFieldAncestor)
+    js.Dynamic.global.Object.assign(__obj, ILabelable)
+    if (!js.isUndefined(combineErrors)) __obj.updateDynamic("combineErrors")(combineErrors)
+    if (!js.isUndefined(combineLabels)) __obj.updateDynamic("combineLabels")(combineLabels)
+    if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls)
+    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (getActiveError != null) __obj.updateDynamic("getActiveError")(getActiveError)
+    if (getActiveErrors != null) __obj.updateDynamic("getActiveErrors")(getActiveErrors)
+    if (getCombinedErrors != null) __obj.updateDynamic("getCombinedErrors")(getCombinedErrors)
+    if (getFieldLabel != null) __obj.updateDynamic("getFieldLabel")(getFieldLabel)
+    if (getInputId != null) __obj.updateDynamic("getInputId")(getInputId)
+    if (getLabelWidth != null) __obj.updateDynamic("getLabelWidth")(getLabelWidth)
+    if (getLabelableRenderData != null) __obj.updateDynamic("getLabelableRenderData")(getLabelableRenderData)
+    if (getSubTplMarkup != null) __obj.updateDynamic("getSubTplMarkup")(getSubTplMarkup)
+    if (hasActiveError != null) __obj.updateDynamic("hasActiveError")(hasActiveError)
+    if (hasVisibleLabel != null) __obj.updateDynamic("hasVisibleLabel")(hasVisibleLabel)
+    if (initFieldAncestor != null) __obj.updateDynamic("initFieldAncestor")(initFieldAncestor)
+    if (initLabelable != null) __obj.updateDynamic("initLabelable")(initLabelable)
+    if (initRenderData != null) __obj.updateDynamic("initRenderData")(initRenderData)
+    if (invalidCls != null) __obj.updateDynamic("invalidCls")(invalidCls)
+    if (labelConnector != null) __obj.updateDynamic("labelConnector")(labelConnector)
+    if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
+    if (onFieldValidityChange != null) __obj.updateDynamic("onFieldValidityChange")(onFieldValidityChange)
+    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (setActiveError != null) __obj.updateDynamic("setActiveError")(setActiveError)
+    if (setActiveErrors != null) __obj.updateDynamic("setActiveErrors")(setActiveErrors)
+    if (setFieldDefaults != null) __obj.updateDynamic("setFieldDefaults")(setFieldDefaults)
+    if (setFieldLabel != null) __obj.updateDynamic("setFieldLabel")(setFieldLabel)
+    if (trimLabelSeparator != null) __obj.updateDynamic("trimLabelSeparator")(trimLabelSeparator)
+    if (unsetActiveError != null) __obj.updateDynamic("unsetActiveError")(unsetActiveError)
+    __obj.asInstanceOf[IFieldContainer]
+  }
+}
+

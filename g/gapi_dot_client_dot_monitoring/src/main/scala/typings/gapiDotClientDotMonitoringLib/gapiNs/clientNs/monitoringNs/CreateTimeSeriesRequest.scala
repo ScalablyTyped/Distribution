@@ -14,3 +14,12 @@ trait CreateTimeSeriesRequest extends js.Object {
   var timeSeries: js.UndefOr[js.Array[TimeSeries]] = js.undefined
 }
 
+object CreateTimeSeriesRequest {
+  @scala.inline
+  def apply(timeSeries: js.Array[TimeSeries] = null): CreateTimeSeriesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (timeSeries != null) __obj.updateDynamic("timeSeries")(timeSeries)
+    __obj.asInstanceOf[CreateTimeSeriesRequest]
+  }
+}
+

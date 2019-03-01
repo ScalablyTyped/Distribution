@@ -44,3 +44,24 @@ trait ISelectInfo extends js.Object {
   var qTextSearch: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ISelectInfo {
+  @scala.inline
+  def apply(
+    qContinuousRangeInfo: js.Array[IRange],
+    qNumberFormat: IFieldAttributes,
+    qRangeHi: scala.Double,
+    qRangeInfo: js.Array[INxRangeSelectInfo],
+    qRangeLo: scala.Double,
+    qTextSearch: java.lang.String = null
+  ): ISelectInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qContinuousRangeInfo")(qContinuousRangeInfo)
+    __obj.updateDynamic("qNumberFormat")(qNumberFormat)
+    __obj.updateDynamic("qRangeHi")(qRangeHi)
+    __obj.updateDynamic("qRangeInfo")(qRangeInfo)
+    __obj.updateDynamic("qRangeLo")(qRangeLo)
+    if (qTextSearch != null) __obj.updateDynamic("qTextSearch")(qTextSearch)
+    __obj.asInstanceOf[ISelectInfo]
+  }
+}
+

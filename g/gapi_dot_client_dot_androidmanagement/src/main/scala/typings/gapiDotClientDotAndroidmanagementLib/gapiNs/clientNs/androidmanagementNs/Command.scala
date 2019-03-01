@@ -21,3 +21,22 @@ trait Command extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Command {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    duration: java.lang.String = null,
+    newPassword: java.lang.String = null,
+    resetPasswordFlags: js.Array[java.lang.String] = null,
+    `type`: java.lang.String = null
+  ): Command = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (duration != null) __obj.updateDynamic("duration")(duration)
+    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword)
+    if (resetPasswordFlags != null) __obj.updateDynamic("resetPasswordFlags")(resetPasswordFlags)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Command]
+  }
+}
+

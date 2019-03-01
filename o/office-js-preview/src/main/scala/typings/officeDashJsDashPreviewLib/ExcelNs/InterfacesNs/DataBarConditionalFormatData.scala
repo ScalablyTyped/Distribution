@@ -70,3 +70,28 @@ trait DataBarConditionalFormatData extends js.Object {
   var upperBoundRule: js.UndefOr[officeDashJsDashPreviewLib.ExcelNs.ConditionalDataBarRule] = js.undefined
 }
 
+object DataBarConditionalFormatData {
+  @scala.inline
+  def apply(
+    axisColor: java.lang.String = null,
+    axisFormat: officeDashJsDashPreviewLib.ExcelNs.ConditionalDataBarAxisFormat | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellMidPoint = null,
+    barDirection: officeDashJsDashPreviewLib.ExcelNs.ConditionalDataBarDirection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Context | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LeftToRight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RightToLeft = null,
+    lowerBoundRule: officeDashJsDashPreviewLib.ExcelNs.ConditionalDataBarRule = null,
+    negativeFormat: ConditionalDataBarNegativeFormatData = null,
+    positiveFormat: ConditionalDataBarPositiveFormatData = null,
+    showDataBarOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    upperBoundRule: officeDashJsDashPreviewLib.ExcelNs.ConditionalDataBarRule = null
+  ): DataBarConditionalFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (axisColor != null) __obj.updateDynamic("axisColor")(axisColor)
+    if (axisFormat != null) __obj.updateDynamic("axisFormat")(axisFormat.asInstanceOf[js.Any])
+    if (barDirection != null) __obj.updateDynamic("barDirection")(barDirection.asInstanceOf[js.Any])
+    if (lowerBoundRule != null) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule)
+    if (negativeFormat != null) __obj.updateDynamic("negativeFormat")(negativeFormat)
+    if (positiveFormat != null) __obj.updateDynamic("positiveFormat")(positiveFormat)
+    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly)
+    if (upperBoundRule != null) __obj.updateDynamic("upperBoundRule")(upperBoundRule)
+    __obj.asInstanceOf[DataBarConditionalFormatData]
+  }
+}
+

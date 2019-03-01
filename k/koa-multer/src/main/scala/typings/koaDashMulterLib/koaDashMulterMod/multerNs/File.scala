@@ -26,3 +26,30 @@ trait File extends js.Object {
   var size: scala.Double
 }
 
+object File {
+  @scala.inline
+  def apply(
+    buffer: nodeLib.Buffer,
+    destination: java.lang.String,
+    encoding: java.lang.String,
+    fieldname: java.lang.String,
+    filename: java.lang.String,
+    mimetype: java.lang.String,
+    originalname: java.lang.String,
+    path: java.lang.String,
+    size: scala.Double
+  ): File = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buffer")(buffer)
+    __obj.updateDynamic("destination")(destination)
+    __obj.updateDynamic("encoding")(encoding)
+    __obj.updateDynamic("fieldname")(fieldname)
+    __obj.updateDynamic("filename")(filename)
+    __obj.updateDynamic("mimetype")(mimetype)
+    __obj.updateDynamic("originalname")(originalname)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[File]
+  }
+}
+

@@ -45,3 +45,36 @@ trait SubscriptionPurchase extends js.Object {
   var userCancellationTimeMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SubscriptionPurchase {
+  @scala.inline
+  def apply(
+    autoRenewing: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelReason: scala.Int | scala.Double = null,
+    countryCode: java.lang.String = null,
+    developerPayload: java.lang.String = null,
+    expiryTimeMillis: java.lang.String = null,
+    kind: java.lang.String = null,
+    orderId: java.lang.String = null,
+    paymentState: scala.Int | scala.Double = null,
+    priceAmountMicros: java.lang.String = null,
+    priceCurrencyCode: java.lang.String = null,
+    startTimeMillis: java.lang.String = null,
+    userCancellationTimeMillis: java.lang.String = null
+  ): SubscriptionPurchase = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoRenewing)) __obj.updateDynamic("autoRenewing")(autoRenewing)
+    if (cancelReason != null) __obj.updateDynamic("cancelReason")(cancelReason.asInstanceOf[js.Any])
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload)
+    if (expiryTimeMillis != null) __obj.updateDynamic("expiryTimeMillis")(expiryTimeMillis)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (orderId != null) __obj.updateDynamic("orderId")(orderId)
+    if (paymentState != null) __obj.updateDynamic("paymentState")(paymentState.asInstanceOf[js.Any])
+    if (priceAmountMicros != null) __obj.updateDynamic("priceAmountMicros")(priceAmountMicros)
+    if (priceCurrencyCode != null) __obj.updateDynamic("priceCurrencyCode")(priceCurrencyCode)
+    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis)
+    if (userCancellationTimeMillis != null) __obj.updateDynamic("userCancellationTimeMillis")(userCancellationTimeMillis)
+    __obj.asInstanceOf[SubscriptionPurchase]
+  }
+}
+

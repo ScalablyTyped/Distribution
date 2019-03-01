@@ -55,3 +55,42 @@ trait MDCChipAdapter extends js.Object {
   def setStyleProperty(propertyName: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object MDCChipAdapter {
+  @scala.inline
+  def apply(
+    addClass: js.Function1[java.lang.String, scala.Unit],
+    addClassToLeadingIcon: js.Function1[java.lang.String, scala.Unit],
+    deregisterEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    deregisterTrailingIconInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    eventTargetHasClass: js.Function2[stdLib.EventTarget, java.lang.String, scala.Boolean],
+    getComputedStyleValue: js.Function1[java.lang.String, java.lang.String],
+    hasClass: js.Function1[java.lang.String, scala.Boolean],
+    notifyInteraction: js.Function0[scala.Unit],
+    notifyRemoval: js.Function0[scala.Unit],
+    notifyTrailingIconInteraction: js.Function0[scala.Unit],
+    registerEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    registerTrailingIconInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    removeClass: js.Function1[java.lang.String, scala.Unit],
+    removeClassFromLeadingIcon: js.Function1[java.lang.String, scala.Unit],
+    setStyleProperty: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): MDCChipAdapter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addClass")(addClass)
+    __obj.updateDynamic("addClassToLeadingIcon")(addClassToLeadingIcon)
+    __obj.updateDynamic("deregisterEventHandler")(deregisterEventHandler)
+    __obj.updateDynamic("deregisterTrailingIconInteractionHandler")(deregisterTrailingIconInteractionHandler)
+    __obj.updateDynamic("eventTargetHasClass")(eventTargetHasClass)
+    __obj.updateDynamic("getComputedStyleValue")(getComputedStyleValue)
+    __obj.updateDynamic("hasClass")(hasClass)
+    __obj.updateDynamic("notifyInteraction")(notifyInteraction)
+    __obj.updateDynamic("notifyRemoval")(notifyRemoval)
+    __obj.updateDynamic("notifyTrailingIconInteraction")(notifyTrailingIconInteraction)
+    __obj.updateDynamic("registerEventHandler")(registerEventHandler)
+    __obj.updateDynamic("registerTrailingIconInteractionHandler")(registerTrailingIconInteractionHandler)
+    __obj.updateDynamic("removeClass")(removeClass)
+    __obj.updateDynamic("removeClassFromLeadingIcon")(removeClassFromLeadingIcon)
+    __obj.updateDynamic("setStyleProperty")(setStyleProperty)
+    __obj.asInstanceOf[MDCChipAdapter]
+  }
+}
+

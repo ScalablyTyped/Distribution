@@ -28,3 +28,16 @@ trait DOMQuad extends js.Object {
   var p4: DOMPoint
 }
 
+object DOMQuad {
+  @scala.inline
+  def apply(bounds: DOMRectReadOnly, p1: DOMPoint, p2: DOMPoint, p3: DOMPoint, p4: DOMPoint): DOMQuad = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("p1")(p1)
+    __obj.updateDynamic("p2")(p2)
+    __obj.updateDynamic("p3")(p3)
+    __obj.updateDynamic("p4")(p4)
+    __obj.asInstanceOf[DOMQuad]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_String extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_String {
+  @scala.inline
+  def apply(`type`: webidl2Lib.webidl2LibStrings.string, value: java.lang.String): Anon_String = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_String]
+  }
+}
+

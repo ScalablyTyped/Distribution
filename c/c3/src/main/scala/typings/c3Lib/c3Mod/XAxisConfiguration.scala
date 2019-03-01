@@ -58,3 +58,34 @@ trait XAxisConfiguration extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object XAxisConfiguration {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String] = null,
+    extent: js.Array[scala.Double] | js.Function0[js.Array[scala.Double]] = null,
+    height: scala.Int | scala.Double = null,
+    label: java.lang.String | c3Lib.Anon_Position = null,
+    localtime: js.UndefOr[scala.Boolean] = js.undefined,
+    max: java.lang.String | scala.Double | stdLib.Date = null,
+    min: java.lang.String | scala.Double | stdLib.Date = null,
+    padding: c3Lib.Anon_Left = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    tick: XTickConfiguration = null,
+    `type`: java.lang.String = null
+  ): XAxisConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (!js.isUndefined(localtime)) __obj.updateDynamic("localtime")(localtime)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (tick != null) __obj.updateDynamic("tick")(tick)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[XAxisConfiguration]
+  }
+}
+

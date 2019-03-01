@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object StackNs extends js.Object {
   /**
-       * True if the provided value is a Stack
-       */
-  def isStack(maybeStack: js.Any): scala.Boolean = js.native
+    * True if the provided value is a Stack
+    */
+  def isStack(maybeStack: js.Any): /* is immutable.immutable.Stack<any> */ scala.Boolean = js.native
   /**
-       * Creates a new Stack containing `values`.
-       */
+    * Creates a new Stack containing `values`.
+    */
   def of[T](values: T*): immutableLib.immutableMod.Stack[T] = js.native
 }
 

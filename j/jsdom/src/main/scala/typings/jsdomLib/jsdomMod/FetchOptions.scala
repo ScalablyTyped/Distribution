@@ -14,3 +14,20 @@ trait FetchOptions extends js.Object {
   var referrer: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FetchOptions {
+  @scala.inline
+  def apply(
+    accept: java.lang.String = null,
+    cookieJar: CookieJar = null,
+    element: stdLib.HTMLScriptElement | stdLib.HTMLLinkElement | stdLib.HTMLIFrameElement | stdLib.HTMLImageElement = null,
+    referrer: java.lang.String = null
+  ): FetchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (cookieJar != null) __obj.updateDynamic("cookieJar")(cookieJar)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    __obj.asInstanceOf[FetchOptions]
+  }
+}
+

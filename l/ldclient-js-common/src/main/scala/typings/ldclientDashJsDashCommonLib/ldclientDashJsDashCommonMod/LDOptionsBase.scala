@@ -138,3 +138,46 @@ trait LDOptionsBase extends js.Object {
   var useReport: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LDOptionsBase {
+  @scala.inline
+  def apply(
+    allAttributesPrivate: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFrequentDuplicateEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    baseUrl: java.lang.String = null,
+    bootstrap: ldclientDashJsDashCommonLib.ldclientDashJsDashCommonLibStrings.localStorage | LDFlagSet = null,
+    evaluationReasons: js.UndefOr[scala.Boolean] = js.undefined,
+    eventsUrl: java.lang.String = null,
+    flushInterval: scala.Int | scala.Double = null,
+    logger: LDLogger = null,
+    privateAttributeNames: js.Array[java.lang.String] = null,
+    samplingInterval: scala.Int | scala.Double = null,
+    sendEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    sendEventsOnlyForVariation: js.UndefOr[scala.Boolean] = js.undefined,
+    sendLDHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    streamReconnectDelay: scala.Int | scala.Double = null,
+    streamUrl: java.lang.String = null,
+    streaming: js.UndefOr[scala.Boolean] = js.undefined,
+    useReport: js.UndefOr[scala.Boolean] = js.undefined
+  ): LDOptionsBase = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allAttributesPrivate)) __obj.updateDynamic("allAttributesPrivate")(allAttributesPrivate)
+    if (!js.isUndefined(allowFrequentDuplicateEvents)) __obj.updateDynamic("allowFrequentDuplicateEvents")(allowFrequentDuplicateEvents)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (bootstrap != null) __obj.updateDynamic("bootstrap")(bootstrap.asInstanceOf[js.Any])
+    if (!js.isUndefined(evaluationReasons)) __obj.updateDynamic("evaluationReasons")(evaluationReasons)
+    if (eventsUrl != null) __obj.updateDynamic("eventsUrl")(eventsUrl)
+    if (flushInterval != null) __obj.updateDynamic("flushInterval")(flushInterval.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (privateAttributeNames != null) __obj.updateDynamic("privateAttributeNames")(privateAttributeNames)
+    if (samplingInterval != null) __obj.updateDynamic("samplingInterval")(samplingInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(sendEvents)) __obj.updateDynamic("sendEvents")(sendEvents)
+    if (!js.isUndefined(sendEventsOnlyForVariation)) __obj.updateDynamic("sendEventsOnlyForVariation")(sendEventsOnlyForVariation)
+    if (!js.isUndefined(sendLDHeaders)) __obj.updateDynamic("sendLDHeaders")(sendLDHeaders)
+    if (streamReconnectDelay != null) __obj.updateDynamic("streamReconnectDelay")(streamReconnectDelay.asInstanceOf[js.Any])
+    if (streamUrl != null) __obj.updateDynamic("streamUrl")(streamUrl)
+    if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming)
+    if (!js.isUndefined(useReport)) __obj.updateDynamic("useReport")(useReport)
+    __obj.asInstanceOf[LDOptionsBase]
+  }
+}
+

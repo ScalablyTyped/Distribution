@@ -11,3 +11,14 @@ trait AgentRefreshMessage extends js.Object {
   var timeout: js.Any
 }
 
+object AgentRefreshMessage {
+  @scala.inline
+  def apply(agentId: scala.Double, targetVersion: java.lang.String, timeout: js.Any): AgentRefreshMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("agentId")(agentId)
+    __obj.updateDynamic("targetVersion")(targetVersion)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[AgentRefreshMessage]
+  }
+}
+

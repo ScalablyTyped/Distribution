@@ -25,3 +25,20 @@ trait MenuItemProps[T /* <: reactLib.HTMLElement */]
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object MenuItemProps {
+  @scala.inline
+  def apply[T /* <: reactLib.HTMLElement */](
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[T] = null,
+    tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null,
+    text: java.lang.String = null,
+    value: js.Any = null
+  ): MenuItemProps[T] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[MenuItemProps[T]]
+  }
+}
+

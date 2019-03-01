@@ -16,3 +16,13 @@ trait RemovalOptions extends js.Object {
   var since: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RemovalOptions {
+  @scala.inline
+  def apply(originTypes: OriginTypes = null, since: scala.Int | scala.Double = null): RemovalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (originTypes != null) __obj.updateDynamic("originTypes")(originTypes)
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RemovalOptions]
+  }
+}
+

@@ -46,3 +46,20 @@ trait ApplicationData extends js.Object {
   var iterativeCalculation: js.UndefOr[IterativeCalculationData] = js.undefined
 }
 
+object ApplicationData {
+  @scala.inline
+  def apply(
+    calculationEngineVersion: scala.Int | scala.Double = null,
+    calculationMode: officeDashJsDashPreviewLib.ExcelNs.CalculationMode | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutomaticExceptTables | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Manual = null,
+    calculationState: officeDashJsDashPreviewLib.ExcelNs.CalculationState | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Done | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Calculating | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Pending = null,
+    iterativeCalculation: IterativeCalculationData = null
+  ): ApplicationData = {
+    val __obj = js.Dynamic.literal()
+    if (calculationEngineVersion != null) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion.asInstanceOf[js.Any])
+    if (calculationMode != null) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
+    if (calculationState != null) __obj.updateDynamic("calculationState")(calculationState.asInstanceOf[js.Any])
+    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation)
+    __obj.asInstanceOf[ApplicationData]
+  }
+}
+

@@ -175,3 +175,88 @@ trait ClusterState extends js.Object {
   ] = js.undefined
 }
 
+object ClusterState {
+  @scala.inline
+  def apply(
+    allowVersionUpgrade: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    automatedSnapshotRetentionPeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bucketName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterParameterGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterPublicKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterRevisionNumber: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterSecurityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    clusterSubnetGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    databaseName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dnsName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    elasticIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enableLogging: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    encrypted: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enhancedVpcRouting: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    finalSnapshotIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    iamRoles: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    logging: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketNameEnableS3KeyPrefix] = null,
+    masterPassword: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    masterUsername: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    nodeType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    numberOfNodes: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    ownerAccount: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    preferredMaintenanceWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publiclyAccessible: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    s3KeyPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    skipFinalSnapshot: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    snapshotClusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    snapshotCopy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DestinationRegionGrantName] = null,
+    snapshotIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): ClusterState = {
+    val __obj = js.Dynamic.literal()
+    if (allowVersionUpgrade != null) __obj.updateDynamic("allowVersionUpgrade")(allowVersionUpgrade.asInstanceOf[js.Any])
+    if (automatedSnapshotRetentionPeriod != null) __obj.updateDynamic("automatedSnapshotRetentionPeriod")(automatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
+    if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
+    if (clusterParameterGroupName != null) __obj.updateDynamic("clusterParameterGroupName")(clusterParameterGroupName.asInstanceOf[js.Any])
+    if (clusterPublicKey != null) __obj.updateDynamic("clusterPublicKey")(clusterPublicKey.asInstanceOf[js.Any])
+    if (clusterRevisionNumber != null) __obj.updateDynamic("clusterRevisionNumber")(clusterRevisionNumber.asInstanceOf[js.Any])
+    if (clusterSecurityGroups != null) __obj.updateDynamic("clusterSecurityGroups")(clusterSecurityGroups.asInstanceOf[js.Any])
+    if (clusterSubnetGroupName != null) __obj.updateDynamic("clusterSubnetGroupName")(clusterSubnetGroupName.asInstanceOf[js.Any])
+    if (clusterType != null) __obj.updateDynamic("clusterType")(clusterType.asInstanceOf[js.Any])
+    if (clusterVersion != null) __obj.updateDynamic("clusterVersion")(clusterVersion.asInstanceOf[js.Any])
+    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
+    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
+    if (elasticIp != null) __obj.updateDynamic("elasticIp")(elasticIp.asInstanceOf[js.Any])
+    if (enableLogging != null) __obj.updateDynamic("enableLogging")(enableLogging.asInstanceOf[js.Any])
+    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (enhancedVpcRouting != null) __obj.updateDynamic("enhancedVpcRouting")(enhancedVpcRouting.asInstanceOf[js.Any])
+    if (finalSnapshotIdentifier != null) __obj.updateDynamic("finalSnapshotIdentifier")(finalSnapshotIdentifier.asInstanceOf[js.Any])
+    if (iamRoles != null) __obj.updateDynamic("iamRoles")(iamRoles.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (masterPassword != null) __obj.updateDynamic("masterPassword")(masterPassword.asInstanceOf[js.Any])
+    if (masterUsername != null) __obj.updateDynamic("masterUsername")(masterUsername.asInstanceOf[js.Any])
+    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
+    if (numberOfNodes != null) __obj.updateDynamic("numberOfNodes")(numberOfNodes.asInstanceOf[js.Any])
+    if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
+    if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
+    if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
+    if (skipFinalSnapshot != null) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.asInstanceOf[js.Any])
+    if (snapshotClusterIdentifier != null) __obj.updateDynamic("snapshotClusterIdentifier")(snapshotClusterIdentifier.asInstanceOf[js.Any])
+    if (snapshotCopy != null) __obj.updateDynamic("snapshotCopy")(snapshotCopy.asInstanceOf[js.Any])
+    if (snapshotIdentifier != null) __obj.updateDynamic("snapshotIdentifier")(snapshotIdentifier.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterState]
+  }
+}
+

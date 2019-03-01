@@ -23,3 +23,20 @@ trait AccessConfig extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccessConfig {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    natIP: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): AccessConfig = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (natIP != null) __obj.updateDynamic("natIP")(natIP)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AccessConfig]
+  }
+}
+

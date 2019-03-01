@@ -10,3 +10,13 @@ trait Price extends js.Object {
   var warnings: js.UndefOr[js.Array[coinbaseLib.Anon_Id]] = js.undefined
 }
 
+object Price {
+  @scala.inline
+  def apply(data: coinbaseLib.Anon_Amount, warnings: js.Array[coinbaseLib.Anon_Id] = null): Price = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[Price]
+  }
+}
+

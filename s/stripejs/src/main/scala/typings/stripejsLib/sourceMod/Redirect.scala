@@ -32,3 +32,20 @@ trait Redirect extends js.Object {
   var url: java.lang.String
 }
 
+object Redirect {
+  @scala.inline
+  def apply(
+    return_url: java.lang.String,
+    status: stripejsLib.stripejsLibStrings.pending | stripejsLib.stripejsLibStrings.succeeded | stripejsLib.stripejsLibStrings.not_required | stripejsLib.stripejsLibStrings.failed,
+    url: java.lang.String,
+    failure_reason: stripejsLib.stripejsLibStrings.user_abort | stripejsLib.stripejsLibStrings.declined | stripejsLib.stripejsLibStrings.processing_error = null
+  ): Redirect = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("return_url")(return_url)
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.updateDynamic("url")(url)
+    if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Redirect]
+  }
+}
+

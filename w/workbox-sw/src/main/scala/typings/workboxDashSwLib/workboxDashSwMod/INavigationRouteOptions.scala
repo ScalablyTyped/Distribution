@@ -17,3 +17,13 @@ trait INavigationRouteOptions extends js.Object {
   var whitelist: js.Array[stdLib.RegExp]
 }
 
+object INavigationRouteOptions {
+  @scala.inline
+  def apply(blacklist: js.Array[stdLib.RegExp], whitelist: js.Array[stdLib.RegExp]): INavigationRouteOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blacklist")(blacklist)
+    __obj.updateDynamic("whitelist")(whitelist)
+    __obj.asInstanceOf[INavigationRouteOptions]
+  }
+}
+

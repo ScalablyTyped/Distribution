@@ -18,3 +18,22 @@ trait FileConsumer extends js.Object {
   ): js.Any
 }
 
+object FileConsumer {
+  @scala.inline
+  def apply(
+    consume: js.Function4[
+      java.lang.String, 
+      fsDashExtraDashPLib.fsDashExtraDashPMod.Stats, 
+      java.lang.String, 
+      js.Array[java.lang.String], 
+      js.Any
+    ],
+    isIncludeDir: js.UndefOr[scala.Boolean] = js.undefined
+  ): FileConsumer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("consume")(consume)
+    if (!js.isUndefined(isIncludeDir)) __obj.updateDynamic("isIncludeDir")(isIncludeDir)
+    __obj.asInstanceOf[FileConsumer]
+  }
+}
+

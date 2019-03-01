@@ -422,3 +422,163 @@ trait IgMapSeries
   var volumeMemberPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgMapSeries {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgMapSeries
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    angleMemberPath: scala.Int | scala.Double = null,
+    brush: java.lang.String = null,
+    clipSeriesToBounds: js.UndefOr[scala.Boolean] = js.undefined,
+    closeMemberPath: java.lang.String = null,
+    colorMemberPath: java.lang.String = null,
+    colorScale: js.Any = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    databaseSource: java.lang.String = null,
+    discreteLegendItemTemplate: js.Any = null,
+    fillMemberPath: java.lang.String = null,
+    fillScale: js.Any = null,
+    heatMaximum: scala.Int | scala.Double = null,
+    heatMinimum: scala.Int | scala.Double = null,
+    highMemberPath: java.lang.String = null,
+    ignoreFirst: scala.Int | scala.Double = null,
+    labelMemberPath: java.lang.String = null,
+    latitudeMemberPath: java.lang.String = null,
+    legendItemBadgeTemplate: js.Any = null,
+    legendItemTemplate: js.Any = null,
+    longPeriod: scala.Int | scala.Double = null,
+    longitudeMemberPath: java.lang.String = null,
+    lowMemberPath: java.lang.String = null,
+    markerBrush: java.lang.String = null,
+    markerCollisionAvoidance: java.lang.String = null,
+    markerOutline: java.lang.String = null,
+    markerTemplate: js.Any = null,
+    markerType: java.lang.String = null,
+    maximumMarkers: scala.Int | scala.Double = null,
+    mouseOverEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    negativeBrush: java.lang.String = null,
+    openMemberPath: java.lang.String = null,
+    outline: java.lang.String = null,
+    period: scala.Int | scala.Double = null,
+    progressiveLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    radiusMemberPath: java.lang.String = null,
+    radiusScale: js.Any = null,
+    remove: js.UndefOr[scala.Boolean] = js.undefined,
+    resolution: scala.Int | scala.Double = null,
+    responseDataKey: java.lang.String = null,
+    shapeDataSource: java.lang.String = null,
+    shapeFilterResolution: scala.Int | scala.Double = null,
+    shapeMemberPath: java.lang.String = null,
+    shapeStyle: js.Any = null,
+    shapeStyleSelector: js.Any = null,
+    shortPeriod: scala.Int | scala.Double = null,
+    showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    splineType: java.lang.String = null,
+    stiffness: scala.Int | scala.Double = null,
+    thickness: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    transitionDuration: scala.Int | scala.Double = null,
+    trendLineBrush: java.lang.String = null,
+    trendLinePeriod: scala.Int | scala.Double = null,
+    trendLineThickness: scala.Int | scala.Double = null,
+    trendLineType: java.lang.String = null,
+    trendLineZIndex: scala.Int | scala.Double = null,
+    triangleVertexMemberPath1: java.lang.String = null,
+    triangleVertexMemberPath2: java.lang.String = null,
+    triangleVertexMemberPath3: java.lang.String = null,
+    trianglesSource: js.Any = null,
+    triangulationDataSource: java.lang.String = null,
+    `type`: java.lang.String = null,
+    unknownValuePlotting: java.lang.String = null,
+    useBruteForce: js.UndefOr[scala.Boolean] = js.undefined,
+    useCartesianInterpolation: js.UndefOr[scala.Boolean] = js.undefined,
+    useSquareCutoffStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    valueMemberPath: java.lang.String = null,
+    valueResolver: js.Any = null,
+    visibleFromScale: scala.Int | scala.Double = null,
+    volumeMemberPath: java.lang.String = null
+  ): IgMapSeries = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (angleMemberPath != null) __obj.updateDynamic("angleMemberPath")(angleMemberPath.asInstanceOf[js.Any])
+    if (brush != null) __obj.updateDynamic("brush")(brush)
+    if (!js.isUndefined(clipSeriesToBounds)) __obj.updateDynamic("clipSeriesToBounds")(clipSeriesToBounds)
+    if (closeMemberPath != null) __obj.updateDynamic("closeMemberPath")(closeMemberPath)
+    if (colorMemberPath != null) __obj.updateDynamic("colorMemberPath")(colorMemberPath)
+    if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (databaseSource != null) __obj.updateDynamic("databaseSource")(databaseSource)
+    if (discreteLegendItemTemplate != null) __obj.updateDynamic("discreteLegendItemTemplate")(discreteLegendItemTemplate)
+    if (fillMemberPath != null) __obj.updateDynamic("fillMemberPath")(fillMemberPath)
+    if (fillScale != null) __obj.updateDynamic("fillScale")(fillScale)
+    if (heatMaximum != null) __obj.updateDynamic("heatMaximum")(heatMaximum.asInstanceOf[js.Any])
+    if (heatMinimum != null) __obj.updateDynamic("heatMinimum")(heatMinimum.asInstanceOf[js.Any])
+    if (highMemberPath != null) __obj.updateDynamic("highMemberPath")(highMemberPath)
+    if (ignoreFirst != null) __obj.updateDynamic("ignoreFirst")(ignoreFirst.asInstanceOf[js.Any])
+    if (labelMemberPath != null) __obj.updateDynamic("labelMemberPath")(labelMemberPath)
+    if (latitudeMemberPath != null) __obj.updateDynamic("latitudeMemberPath")(latitudeMemberPath)
+    if (legendItemBadgeTemplate != null) __obj.updateDynamic("legendItemBadgeTemplate")(legendItemBadgeTemplate)
+    if (legendItemTemplate != null) __obj.updateDynamic("legendItemTemplate")(legendItemTemplate)
+    if (longPeriod != null) __obj.updateDynamic("longPeriod")(longPeriod.asInstanceOf[js.Any])
+    if (longitudeMemberPath != null) __obj.updateDynamic("longitudeMemberPath")(longitudeMemberPath)
+    if (lowMemberPath != null) __obj.updateDynamic("lowMemberPath")(lowMemberPath)
+    if (markerBrush != null) __obj.updateDynamic("markerBrush")(markerBrush)
+    if (markerCollisionAvoidance != null) __obj.updateDynamic("markerCollisionAvoidance")(markerCollisionAvoidance)
+    if (markerOutline != null) __obj.updateDynamic("markerOutline")(markerOutline)
+    if (markerTemplate != null) __obj.updateDynamic("markerTemplate")(markerTemplate)
+    if (markerType != null) __obj.updateDynamic("markerType")(markerType)
+    if (maximumMarkers != null) __obj.updateDynamic("maximumMarkers")(maximumMarkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseOverEnabled)) __obj.updateDynamic("mouseOverEnabled")(mouseOverEnabled)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (negativeBrush != null) __obj.updateDynamic("negativeBrush")(negativeBrush)
+    if (openMemberPath != null) __obj.updateDynamic("openMemberPath")(openMemberPath)
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressiveLoad)) __obj.updateDynamic("progressiveLoad")(progressiveLoad)
+    if (radiusMemberPath != null) __obj.updateDynamic("radiusMemberPath")(radiusMemberPath)
+    if (radiusScale != null) __obj.updateDynamic("radiusScale")(radiusScale)
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (shapeDataSource != null) __obj.updateDynamic("shapeDataSource")(shapeDataSource)
+    if (shapeFilterResolution != null) __obj.updateDynamic("shapeFilterResolution")(shapeFilterResolution.asInstanceOf[js.Any])
+    if (shapeMemberPath != null) __obj.updateDynamic("shapeMemberPath")(shapeMemberPath)
+    if (shapeStyle != null) __obj.updateDynamic("shapeStyle")(shapeStyle)
+    if (shapeStyleSelector != null) __obj.updateDynamic("shapeStyleSelector")(shapeStyleSelector)
+    if (shortPeriod != null) __obj.updateDynamic("shortPeriod")(shortPeriod.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
+    if (splineType != null) __obj.updateDynamic("splineType")(splineType)
+    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (trendLineBrush != null) __obj.updateDynamic("trendLineBrush")(trendLineBrush)
+    if (trendLinePeriod != null) __obj.updateDynamic("trendLinePeriod")(trendLinePeriod.asInstanceOf[js.Any])
+    if (trendLineThickness != null) __obj.updateDynamic("trendLineThickness")(trendLineThickness.asInstanceOf[js.Any])
+    if (trendLineType != null) __obj.updateDynamic("trendLineType")(trendLineType)
+    if (trendLineZIndex != null) __obj.updateDynamic("trendLineZIndex")(trendLineZIndex.asInstanceOf[js.Any])
+    if (triangleVertexMemberPath1 != null) __obj.updateDynamic("triangleVertexMemberPath1")(triangleVertexMemberPath1)
+    if (triangleVertexMemberPath2 != null) __obj.updateDynamic("triangleVertexMemberPath2")(triangleVertexMemberPath2)
+    if (triangleVertexMemberPath3 != null) __obj.updateDynamic("triangleVertexMemberPath3")(triangleVertexMemberPath3)
+    if (trianglesSource != null) __obj.updateDynamic("trianglesSource")(trianglesSource)
+    if (triangulationDataSource != null) __obj.updateDynamic("triangulationDataSource")(triangulationDataSource)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unknownValuePlotting != null) __obj.updateDynamic("unknownValuePlotting")(unknownValuePlotting)
+    if (!js.isUndefined(useBruteForce)) __obj.updateDynamic("useBruteForce")(useBruteForce)
+    if (!js.isUndefined(useCartesianInterpolation)) __obj.updateDynamic("useCartesianInterpolation")(useCartesianInterpolation)
+    if (!js.isUndefined(useSquareCutoffStyle)) __obj.updateDynamic("useSquareCutoffStyle")(useSquareCutoffStyle)
+    if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath)
+    if (valueResolver != null) __obj.updateDynamic("valueResolver")(valueResolver)
+    if (visibleFromScale != null) __obj.updateDynamic("visibleFromScale")(visibleFromScale.asInstanceOf[js.Any])
+    if (volumeMemberPath != null) __obj.updateDynamic("volumeMemberPath")(volumeMemberPath)
+    __obj.asInstanceOf[IgMapSeries]
+  }
+}
+

@@ -20,3 +20,14 @@ trait LocalSecondaryIndexInfo extends js.Object {
   var Projection: js.UndefOr[Projection] = js.undefined
 }
 
+object LocalSecondaryIndexInfo {
+  @scala.inline
+  def apply(IndexName: IndexName = null, KeySchema: KeySchema = null, Projection: Projection = null): LocalSecondaryIndexInfo = {
+    val __obj = js.Dynamic.literal()
+    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
+    if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema)
+    if (Projection != null) __obj.updateDynamic("Projection")(Projection)
+    __obj.asInstanceOf[LocalSecondaryIndexInfo]
+  }
+}
+

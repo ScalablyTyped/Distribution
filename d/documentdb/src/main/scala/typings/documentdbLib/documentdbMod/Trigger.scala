@@ -12,3 +12,22 @@ trait Trigger extends UserScriptable {
   var triggerType: js.UndefOr[TriggerType] = js.undefined
 }
 
+object Trigger {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    triggerOperation: TriggerOperation,
+    body: UserFunction = null,
+    serverScript: UserFunction = null,
+    triggerType: TriggerType = null
+  ): Trigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("triggerOperation")(triggerOperation)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (serverScript != null) __obj.updateDynamic("serverScript")(serverScript.asInstanceOf[js.Any])
+    if (triggerType != null) __obj.updateDynamic("triggerType")(triggerType)
+    __obj.asInstanceOf[Trigger]
+  }
+}
+

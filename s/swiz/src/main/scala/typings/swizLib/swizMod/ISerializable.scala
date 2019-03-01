@@ -9,3 +9,12 @@ trait ISerializable extends js.Object {
   def getSerializerType(): java.lang.String
 }
 
+object ISerializable {
+  @scala.inline
+  def apply(getSerializerType: js.Function0[java.lang.String]): ISerializable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getSerializerType")(getSerializerType)
+    __obj.asInstanceOf[ISerializable]
+  }
+}
+

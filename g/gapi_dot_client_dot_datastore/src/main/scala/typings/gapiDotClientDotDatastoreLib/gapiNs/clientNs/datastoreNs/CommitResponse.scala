@@ -18,3 +18,13 @@ trait CommitResponse extends js.Object {
   var mutationResults: js.UndefOr[js.Array[MutationResult]] = js.undefined
 }
 
+object CommitResponse {
+  @scala.inline
+  def apply(indexUpdates: scala.Int | scala.Double = null, mutationResults: js.Array[MutationResult] = null): CommitResponse = {
+    val __obj = js.Dynamic.literal()
+    if (indexUpdates != null) __obj.updateDynamic("indexUpdates")(indexUpdates.asInstanceOf[js.Any])
+    if (mutationResults != null) __obj.updateDynamic("mutationResults")(mutationResults)
+    __obj.asInstanceOf[CommitResponse]
+  }
+}
+

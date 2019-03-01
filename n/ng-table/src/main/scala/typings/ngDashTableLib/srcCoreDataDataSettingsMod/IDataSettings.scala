@@ -11,3 +11,18 @@ trait IDataSettings extends js.Object {
   var applySort: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IDataSettings {
+  @scala.inline
+  def apply(
+    applyFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    applyPaging: js.UndefOr[scala.Boolean] = js.undefined,
+    applySort: js.UndefOr[scala.Boolean] = js.undefined
+  ): IDataSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(applyFilter)) __obj.updateDynamic("applyFilter")(applyFilter)
+    if (!js.isUndefined(applyPaging)) __obj.updateDynamic("applyPaging")(applyPaging)
+    if (!js.isUndefined(applySort)) __obj.updateDynamic("applySort")(applySort)
+    __obj.asInstanceOf[IDataSettings]
+  }
+}
+

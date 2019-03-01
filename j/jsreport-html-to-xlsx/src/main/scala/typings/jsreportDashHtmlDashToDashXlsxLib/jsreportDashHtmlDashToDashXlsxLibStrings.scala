@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation._
 
 object jsreportDashHtmlDashToDashXlsxLibStrings {
   @js.native
-  sealed trait chrome extends js.Object
+  sealed trait chrome
+    extends jsreportDashHtmlDashToDashXlsxLib.jsreportDashHtmlDashToDashXlsxMod.jsreportDashCoreMod.htmlEngine
   
   @js.native
   sealed trait `html-to-xlsx` extends js.Object
   
   @js.native
-  sealed trait phantom extends js.Object
+  sealed trait phantom
+    extends jsreportDashHtmlDashToDashXlsxLib.jsreportDashHtmlDashToDashXlsxMod.jsreportDashCoreMod.htmlEngine
   
   @scala.inline
   def chrome: chrome = "chrome".asInstanceOf[chrome]

@@ -10,3 +10,12 @@ trait ResourceUtilizationReport extends js.Object {
   var cpuTime: js.UndefOr[js.Array[CPUTime]] = js.undefined
 }
 
+object ResourceUtilizationReport {
+  @scala.inline
+  def apply(cpuTime: js.Array[CPUTime] = null): ResourceUtilizationReport = {
+    val __obj = js.Dynamic.literal()
+    if (cpuTime != null) __obj.updateDynamic("cpuTime")(cpuTime)
+    __obj.asInstanceOf[ResourceUtilizationReport]
+  }
+}
+

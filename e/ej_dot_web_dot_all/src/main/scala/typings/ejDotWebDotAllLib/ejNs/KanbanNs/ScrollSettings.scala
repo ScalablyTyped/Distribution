@@ -20,3 +20,18 @@ trait ScrollSettings extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object ScrollSettings {
+  @scala.inline
+  def apply(
+    allowFreezeSwimlane: js.UndefOr[scala.Boolean] = js.undefined,
+    height: java.lang.String | scala.Double = null,
+    width: java.lang.String | scala.Double = null
+  ): ScrollSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowFreezeSwimlane)) __obj.updateDynamic("allowFreezeSwimlane")(allowFreezeSwimlane)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScrollSettings]
+  }
+}
+

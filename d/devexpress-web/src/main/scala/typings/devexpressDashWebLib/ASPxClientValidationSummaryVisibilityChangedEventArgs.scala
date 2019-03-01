@@ -16,3 +16,12 @@ trait ASPxClientValidationSummaryVisibilityChangedEventArgs extends ASPxClientEv
   var visible: scala.Boolean
 }
 
+object ASPxClientValidationSummaryVisibilityChangedEventArgs {
+  @scala.inline
+  def apply(visible: scala.Boolean): ASPxClientValidationSummaryVisibilityChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ASPxClientValidationSummaryVisibilityChangedEventArgs]
+  }
+}
+

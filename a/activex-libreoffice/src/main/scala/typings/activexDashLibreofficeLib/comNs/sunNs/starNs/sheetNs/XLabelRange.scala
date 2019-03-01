@@ -27,3 +27,30 @@ trait XLabelRange
   def setLabelArea(aLabelArea: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress): scala.Unit
 }
 
+object XLabelRange {
+  @scala.inline
+  def apply(
+    DataArea: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    LabelArea: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    acquire: js.Function0[scala.Unit],
+    getDataArea: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    getLabelArea: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDataArea: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
+    setLabelArea: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
+  ): XLabelRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataArea")(DataArea)
+    __obj.updateDynamic("LabelArea")(LabelArea)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDataArea")(getDataArea)
+    __obj.updateDynamic("getLabelArea")(getLabelArea)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDataArea")(setDataArea)
+    __obj.updateDynamic("setLabelArea")(setLabelArea)
+    __obj.asInstanceOf[XLabelRange]
+  }
+}
+

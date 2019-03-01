@@ -84,3 +84,66 @@ trait Configuration extends js.Object {
   var watchOptions: js.UndefOr[webpackLib.webpackMod.webpackNs.OptionsNs.WatchOptions] = js.undefined
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    amd: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    bail: js.UndefOr[scala.Boolean] = js.undefined,
+    cache: scala.Boolean | js.Object = null,
+    context: java.lang.String = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    devtool: webpackLib.webpackMod.webpackNs.OptionsNs.Devtool = null,
+    entry: java.lang.String | js.Array[java.lang.String] | Entry | EntryFunc = null,
+    externals: ExternalsElement | js.Array[ExternalsElement] = null,
+    mode: webpackLib.webpackLibStrings.development | webpackLib.webpackLibStrings.production | webpackLib.webpackLibStrings.none = null,
+    module: Module = null,
+    name: java.lang.String = null,
+    node: Node | webpackLib.webpackLibNumbers.`false` = null,
+    optimization: webpackLib.webpackMod.webpackNs.OptionsNs.Optimization = null,
+    output: Output = null,
+    parallelism: scala.Int | scala.Double = null,
+    performance: webpackLib.webpackMod.webpackNs.OptionsNs.Performance | webpackLib.webpackLibNumbers.`false` = null,
+    plugins: js.Array[Plugin] = null,
+    profile: js.UndefOr[scala.Boolean] = js.undefined,
+    recordsInputPath: java.lang.String = null,
+    recordsOutputPath: java.lang.String = null,
+    recordsPath: java.lang.String = null,
+    resolve: Resolve = null,
+    resolveLoader: ResolveLoader = null,
+    stats: webpackLib.webpackMod.webpackNs.OptionsNs.Stats = null,
+    target: webpackLib.webpackLibStrings.web | webpackLib.webpackLibStrings.webworker | webpackLib.webpackLibStrings.node | webpackLib.webpackLibStrings.`async-node` | webpackLib.webpackLibStrings.`node-webkit` | webpackLib.webpackLibStrings.atom | webpackLib.webpackLibStrings.electron | webpackLib.webpackLibStrings.`electron-renderer` | webpackLib.webpackLibStrings.`electron-main` | (js.Function1[/* compiler */ js.UndefOr[js.Any], scala.Unit]) = null,
+    watch: js.UndefOr[scala.Boolean] = js.undefined,
+    watchOptions: webpackLib.webpackMod.webpackNs.OptionsNs.WatchOptions = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    if (amd != null) __obj.updateDynamic("amd")(amd)
+    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (devtool != null) __obj.updateDynamic("devtool")(devtool.asInstanceOf[js.Any])
+    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
+    if (externals != null) __obj.updateDynamic("externals")(externals.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (optimization != null) __obj.updateDynamic("optimization")(optimization)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism.asInstanceOf[js.Any])
+    if (performance != null) __obj.updateDynamic("performance")(performance.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile)
+    if (recordsInputPath != null) __obj.updateDynamic("recordsInputPath")(recordsInputPath)
+    if (recordsOutputPath != null) __obj.updateDynamic("recordsOutputPath")(recordsOutputPath)
+    if (recordsPath != null) __obj.updateDynamic("recordsPath")(recordsPath)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (resolveLoader != null) __obj.updateDynamic("resolveLoader")(resolveLoader)
+    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

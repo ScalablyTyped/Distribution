@@ -10,3 +10,13 @@ trait AlertOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AlertOptions {
+  @scala.inline
+  def apply(messages: AlertMessages = null, name: java.lang.String = null): AlertOptions = {
+    val __obj = js.Dynamic.literal()
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AlertOptions]
+  }
+}
+

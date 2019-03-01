@@ -103,3 +103,64 @@ trait Release extends js.Object {
   var variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
 }
 
+object Release {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    artifacts: js.Array[Artifact],
+    comment: java.lang.String,
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdOn: stdLib.Date,
+    definitionSnapshotRevision: scala.Double,
+    description: java.lang.String,
+    environments: js.Array[ReleaseEnvironment],
+    id: scala.Double,
+    keepForever: scala.Boolean,
+    logsContainerUrl: java.lang.String,
+    modifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    modifiedOn: stdLib.Date,
+    name: java.lang.String,
+    poolName: java.lang.String,
+    projectReference: ProjectReference,
+    properties: js.Any,
+    reason: ReleaseReason,
+    releaseDefinition: ReleaseDefinitionShallowReference,
+    releaseNameFormat: java.lang.String,
+    status: ReleaseStatus,
+    tags: js.Array[java.lang.String],
+    triggeringArtifactAlias: java.lang.String,
+    url: java.lang.String,
+    variableGroups: js.Array[VariableGroup],
+    variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue]
+  ): Release = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("artifacts")(artifacts)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("createdOn")(createdOn)
+    __obj.updateDynamic("definitionSnapshotRevision")(definitionSnapshotRevision)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("environments")(environments)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("keepForever")(keepForever)
+    __obj.updateDynamic("logsContainerUrl")(logsContainerUrl)
+    __obj.updateDynamic("modifiedBy")(modifiedBy)
+    __obj.updateDynamic("modifiedOn")(modifiedOn)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("poolName")(poolName)
+    __obj.updateDynamic("projectReference")(projectReference)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("releaseDefinition")(releaseDefinition)
+    __obj.updateDynamic("releaseNameFormat")(releaseNameFormat)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("triggeringArtifactAlias")(triggeringArtifactAlias)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("variableGroups")(variableGroups)
+    __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[Release]
+  }
+}
+

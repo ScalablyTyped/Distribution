@@ -19,3 +19,24 @@ trait AuthResponse extends js.Object {
   var userID: java.lang.String
 }
 
+object AuthResponse {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    expiresIn: scala.Double,
+    signedRequest: java.lang.String,
+    userID: java.lang.String,
+    grantedScopes: java.lang.String = null,
+    reauthorize_required_in: scala.Int | scala.Double = null
+  ): AuthResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessToken")(accessToken)
+    __obj.updateDynamic("expiresIn")(expiresIn)
+    __obj.updateDynamic("signedRequest")(signedRequest)
+    __obj.updateDynamic("userID")(userID)
+    if (grantedScopes != null) __obj.updateDynamic("grantedScopes")(grantedScopes)
+    if (reauthorize_required_in != null) __obj.updateDynamic("reauthorize_required_in")(reauthorize_required_in.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthResponse]
+  }
+}
+

@@ -7,31 +7,38 @@ import scala.scalajs.js.annotation._
 
 object slideoutLibStrings {
   @js.native
-  sealed trait beforeclose extends js.Object
+  sealed trait beforeclose
+    extends slideoutLib.slideoutMod.SlideoutNs.Events
   
   @js.native
-  sealed trait beforeopen extends js.Object
+  sealed trait beforeopen
+    extends slideoutLib.slideoutMod.SlideoutNs.Events
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait close
+    extends slideoutLib.slideoutMod.SlideoutNs.Events
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open
+    extends slideoutLib.slideoutMod.SlideoutNs.Events
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait translate extends js.Object
+  sealed trait translate
+    extends slideoutLib.slideoutMod.SlideoutNs.Events
   
   @js.native
-  sealed trait translateend extends js.Object
+  sealed trait translateend
+    extends slideoutLib.slideoutMod.SlideoutNs.Events
   
   @js.native
-  sealed trait translatestart extends js.Object
+  sealed trait translatestart
+    extends slideoutLib.slideoutMod.SlideoutNs.Events
   
   @scala.inline
   def beforeclose: beforeclose = "beforeclose".asInstanceOf[beforeclose]

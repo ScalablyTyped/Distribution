@@ -30,3 +30,13 @@ trait TextHit extends js.Object {
   var IsLeadingEdge: scala.Boolean
 }
 
+object TextHit {
+  @scala.inline
+  def apply(EntryIndex: scala.Double, IsLeadingEdge: scala.Boolean): TextHit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EntryIndex")(EntryIndex)
+    __obj.updateDynamic("IsLeadingEdge")(IsLeadingEdge)
+    __obj.asInstanceOf[TextHit]
+  }
+}
+

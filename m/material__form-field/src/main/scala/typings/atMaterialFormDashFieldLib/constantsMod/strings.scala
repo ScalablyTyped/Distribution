@@ -10,3 +10,14 @@ trait strings
   var LABEL_SELECTOR: atMaterialFormDashFieldLib.atMaterialFormDashFieldLibStrings.`DOTmdc-form-field > label`
 }
 
+object strings {
+  @scala.inline
+  def apply(
+    LABEL_SELECTOR: atMaterialFormDashFieldLib.atMaterialFormDashFieldLibStrings.`DOTmdc-form-field > label`
+  ): strings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LABEL_SELECTOR")(LABEL_SELECTOR)
+    __obj.asInstanceOf[strings]
+  }
+}
+

@@ -26,3 +26,27 @@ trait Anon_Newline extends js.Object {
   var space: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_NewLine {
+  @scala.inline
+  def apply(newLine: java.lang.String = null): Anon_NewLine = {
+    val __obj = js.Dynamic.literal()
+    if (newLine != null) __obj.updateDynamic("newLine")(newLine)
+    __obj.asInstanceOf[Anon_NewLine]
+  }
+}
+
+object Anon_Newline {
+  @scala.inline
+  def apply(
+    newline: js.UndefOr[scala.Boolean] = js.undefined,
+    replacer: adoneLib.adoneNs.dataNs.jsonNs.INs.Replacer = null,
+    space: java.lang.String = null
+  ): Anon_Newline = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(newline)) __obj.updateDynamic("newline")(newline)
+    if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
+    if (space != null) __obj.updateDynamic("space")(space)
+    __obj.asInstanceOf[Anon_Newline]
+  }
+}
+

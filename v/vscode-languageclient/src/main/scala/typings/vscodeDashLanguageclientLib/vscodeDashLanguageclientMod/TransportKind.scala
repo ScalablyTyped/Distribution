@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-sealed trait TransportKind extends js.Object
+sealed trait TransportKind extends Transport
 
 @JSImport("vscode-languageclient", "TransportKind")
 @js.native

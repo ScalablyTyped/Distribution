@@ -21,3 +21,22 @@ trait VideoAbuseReport extends js.Object {
   var videoId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VideoAbuseReport {
+  @scala.inline
+  def apply(
+    comments: java.lang.String = null,
+    language: java.lang.String = null,
+    reasonId: java.lang.String = null,
+    secondaryReasonId: java.lang.String = null,
+    videoId: java.lang.String = null
+  ): VideoAbuseReport = {
+    val __obj = js.Dynamic.literal()
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (reasonId != null) __obj.updateDynamic("reasonId")(reasonId)
+    if (secondaryReasonId != null) __obj.updateDynamic("secondaryReasonId")(secondaryReasonId)
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    __obj.asInstanceOf[VideoAbuseReport]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_DocSyncEventType extends js.Object {
   val SyncEventType: activexDashOfficeLib.OfficeNs.MsoSyncEventType
 }
 
+object Anon_DocSyncEventType {
+  @scala.inline
+  def apply(
+    Doc: activexDashWordLib.WordNs.Document,
+    SyncEventType: activexDashOfficeLib.OfficeNs.MsoSyncEventType
+  ): Anon_DocSyncEventType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Doc")(Doc)
+    __obj.updateDynamic("SyncEventType")(SyncEventType)
+    __obj.asInstanceOf[Anon_DocSyncEventType]
+  }
+}
+

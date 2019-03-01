@@ -79,3 +79,46 @@ trait Options extends js.Object {
   var watch: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    compiler: idyllDashCompilerLib.idyllDashCompilerMod.Options = null,
+    components: js.UndefOr[scala.Boolean] = js.undefined,
+    css: java.lang.String = null,
+    datasets: java.lang.String = null,
+    defaultComponents: js.UndefOr[scala.Boolean] = js.undefined,
+    inputConfig: idyllLib.Anon_Compiler = null,
+    inputFile: java.lang.String = null,
+    layout: java.lang.String = null,
+    minify: js.UndefOr[scala.Boolean] = js.undefined,
+    output: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    ssr: js.UndefOr[scala.Boolean] = js.undefined,
+    temp: java.lang.String = null,
+    template: java.lang.String = null,
+    theme: java.lang.String = null,
+    transform: js.Array[java.lang.String] = null,
+    watch: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (compiler != null) __obj.updateDynamic("compiler")(compiler)
+    if (!js.isUndefined(components)) __obj.updateDynamic("components")(components)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (datasets != null) __obj.updateDynamic("datasets")(datasets)
+    if (!js.isUndefined(defaultComponents)) __obj.updateDynamic("defaultComponents")(defaultComponents)
+    if (inputConfig != null) __obj.updateDynamic("inputConfig")(inputConfig)
+    if (inputFile != null) __obj.updateDynamic("inputFile")(inputFile)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr)
+    if (temp != null) __obj.updateDynamic("temp")(temp)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[Options]
+  }
+}
+

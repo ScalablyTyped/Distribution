@@ -12,5 +12,5 @@ package object sassMod {
     /* done */ js.Function1[/* data */ ImporterReturnType, scala.Unit], 
     ImporterReturnType | scala.Unit
   ]
-  type ImporterReturnType = sassLib.Anon_File | sassLib.Anon_Contents | nodeLib.Error | scala.Null
+  type ImporterReturnType = _ImporterReturnType | nodeLib.Error | scala.Null
 }

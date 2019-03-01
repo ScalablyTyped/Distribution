@@ -20,3 +20,24 @@ trait MenuItem extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MenuItem {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    style: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): MenuItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[MenuItem]
+  }
+}
+

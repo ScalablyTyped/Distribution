@@ -33,3 +33,30 @@ trait ClearDataTypeSet extends js.Object {
   var webSQL: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClearDataTypeSet {
+  @scala.inline
+  def apply(
+    appcache: js.UndefOr[scala.Boolean] = js.undefined,
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    cookies: js.UndefOr[scala.Boolean] = js.undefined,
+    fileSystems: js.UndefOr[scala.Boolean] = js.undefined,
+    indexedDB: js.UndefOr[scala.Boolean] = js.undefined,
+    localStorage: js.UndefOr[scala.Boolean] = js.undefined,
+    persistentCookies: js.UndefOr[scala.Boolean] = js.undefined,
+    sessionCookies: js.UndefOr[scala.Boolean] = js.undefined,
+    webSQL: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClearDataTypeSet = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(appcache)) __obj.updateDynamic("appcache")(appcache)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(cookies)) __obj.updateDynamic("cookies")(cookies)
+    if (!js.isUndefined(fileSystems)) __obj.updateDynamic("fileSystems")(fileSystems)
+    if (!js.isUndefined(indexedDB)) __obj.updateDynamic("indexedDB")(indexedDB)
+    if (!js.isUndefined(localStorage)) __obj.updateDynamic("localStorage")(localStorage)
+    if (!js.isUndefined(persistentCookies)) __obj.updateDynamic("persistentCookies")(persistentCookies)
+    if (!js.isUndefined(sessionCookies)) __obj.updateDynamic("sessionCookies")(sessionCookies)
+    if (!js.isUndefined(webSQL)) __obj.updateDynamic("webSQL")(webSQL)
+    __obj.asInstanceOf[ClearDataTypeSet]
+  }
+}
+

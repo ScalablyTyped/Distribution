@@ -76,3 +76,18 @@ trait Anon_Formatter extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Formatter {
+  @scala.inline
+  def apply(
+    formatter: js.Function | java.lang.String = null,
+    position: java.lang.String = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Formatter = {
+    val __obj = js.Dynamic.literal()
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[Anon_Formatter]
+  }
+}
+

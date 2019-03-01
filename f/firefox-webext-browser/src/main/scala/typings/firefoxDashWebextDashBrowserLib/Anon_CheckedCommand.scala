@@ -70,3 +70,44 @@ trait Anon_CheckedCommand extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_CheckedCommand {
+  @scala.inline
+  def apply(
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    command: java.lang.String = null,
+    contexts: js.Array[firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType] = null,
+    documentUrlPatterns: js.Array[java.lang.String] = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    icons: org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null,
+    id: java.lang.String = null,
+    onclick: js.Function2[
+      /* info */ firefoxDashWebextDashBrowserLib.browserNs.menusNs.OnClickData, 
+      /* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab, 
+      scala.Unit
+    ] = null,
+    parentId: scala.Double | java.lang.String = null,
+    targetUrlPatterns: js.Array[java.lang.String] = null,
+    title: java.lang.String = null,
+    `type`: firefoxDashWebextDashBrowserLib.browserNs.menusNs.ItemType = null,
+    viewTypes: js.Array[firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType] = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_CheckedCommand = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (command != null) __obj.updateDynamic("command")(command)
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
+    if (documentUrlPatterns != null) __obj.updateDynamic("documentUrlPatterns")(documentUrlPatterns)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (targetUrlPatterns != null) __obj.updateDynamic("targetUrlPatterns")(targetUrlPatterns)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (viewTypes != null) __obj.updateDynamic("viewTypes")(viewTypes)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[Anon_CheckedCommand]
+  }
+}
+

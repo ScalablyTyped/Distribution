@@ -15,3 +15,12 @@ trait Resetable extends js.Object {
   def reset(): this.type
 }
 
+object Resetable {
+  @scala.inline
+  def apply(reset: js.Function0[Resetable]): Resetable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reset")(reset)
+    __obj.asInstanceOf[Resetable]
+  }
+}
+

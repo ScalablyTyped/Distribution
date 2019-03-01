@@ -24,3 +24,20 @@ trait BuildResourceUsage extends js.Object {
   var xamlControllers: scala.Double
 }
 
+object BuildResourceUsage {
+  @scala.inline
+  def apply(
+    distributedTaskAgents: scala.Double,
+    paidPrivateAgentSlots: scala.Double,
+    totalUsage: scala.Double,
+    xamlControllers: scala.Double
+  ): BuildResourceUsage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("distributedTaskAgents")(distributedTaskAgents)
+    __obj.updateDynamic("paidPrivateAgentSlots")(paidPrivateAgentSlots)
+    __obj.updateDynamic("totalUsage")(totalUsage)
+    __obj.updateDynamic("xamlControllers")(xamlControllers)
+    __obj.asInstanceOf[BuildResourceUsage]
+  }
+}
+

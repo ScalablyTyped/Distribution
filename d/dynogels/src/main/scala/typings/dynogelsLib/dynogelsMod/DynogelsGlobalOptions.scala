@@ -10,3 +10,12 @@ trait DynogelsGlobalOptions extends js.Object {
   var $dynogels: dynogelsLib.Anon_PollingInterval
 }
 
+object DynogelsGlobalOptions {
+  @scala.inline
+  def apply($dynogels: dynogelsLib.Anon_PollingInterval): DynogelsGlobalOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$dynogels")($dynogels)
+    __obj.asInstanceOf[DynogelsGlobalOptions]
+  }
+}
+

@@ -11,3 +11,17 @@ trait LexDialogActionBase extends js.Object {
   var `type`: awsDashLambdaLib.awsDashLambdaLibStrings.Close | awsDashLambdaLib.awsDashLambdaLibStrings.ElicitIntent | awsDashLambdaLib.awsDashLambdaLibStrings.ElicitSlot | awsDashLambdaLib.awsDashLambdaLibStrings.ConfirmIntent
 }
 
+object LexDialogActionBase {
+  @scala.inline
+  def apply(
+    `type`: awsDashLambdaLib.awsDashLambdaLibStrings.Close | awsDashLambdaLib.awsDashLambdaLibStrings.ElicitIntent | awsDashLambdaLib.awsDashLambdaLibStrings.ElicitSlot | awsDashLambdaLib.awsDashLambdaLibStrings.ConfirmIntent,
+    message: awsDashLambdaLib.Anon_Content = null,
+    responseCard: awsDashLambdaLib.Anon_Applicationvndamazonawscardgeneric = null
+  ): LexDialogActionBase = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (responseCard != null) __obj.updateDynamic("responseCard")(responseCard)
+    __obj.asInstanceOf[LexDialogActionBase]
+  }
+}
+

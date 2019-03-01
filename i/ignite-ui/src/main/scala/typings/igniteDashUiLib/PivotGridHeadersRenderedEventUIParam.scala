@@ -20,3 +20,14 @@ trait PivotGridHeadersRenderedEventUIParam extends js.Object {
   var table: js.UndefOr[stdLib.Element] = js.undefined
 }
 
+object PivotGridHeadersRenderedEventUIParam {
+  @scala.inline
+  def apply(grid: js.Any = null, owner: js.Any = null, table: stdLib.Element = null): PivotGridHeadersRenderedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (table != null) __obj.updateDynamic("table")(table)
+    __obj.asInstanceOf[PivotGridHeadersRenderedEventUIParam]
+  }
+}
+

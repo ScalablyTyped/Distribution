@@ -31,3 +31,22 @@ trait PackageConfig extends js.Object {
   var meta: js.UndefOr[ConfigMeta] = js.undefined
 }
 
+object PackageConfig {
+  @scala.inline
+  def apply(
+    defaultExtension: scala.Boolean | java.lang.String = null,
+    format: ModuleFormat = null,
+    main: java.lang.String = null,
+    map: ConfigMap = null,
+    meta: ConfigMeta = null
+  ): PackageConfig = {
+    val __obj = js.Dynamic.literal()
+    if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (main != null) __obj.updateDynamic("main")(main)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    __obj.asInstanceOf[PackageConfig]
+  }
+}
+

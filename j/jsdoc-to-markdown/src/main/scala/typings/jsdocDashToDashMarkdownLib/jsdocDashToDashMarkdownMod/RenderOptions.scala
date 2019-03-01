@@ -69,3 +69,42 @@ trait RenderOptions extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RenderOptions {
+  @scala.inline
+  def apply(
+    data: js.Array[js.Object] = null,
+    exampleLang: java.lang.String = null,
+    globalIndexFormat: StyleListFormat = null,
+    headingDepth: scala.Int | scala.Double = null,
+    helper: java.lang.String | js.Array[java.lang.String] = null,
+    memberIndexFormat: MemberIndexFormat = null,
+    moduleIndexFormat: StyleListFormat = null,
+    nameFormat: java.lang.String = null,
+    noGfm: js.UndefOr[scala.Boolean] = js.undefined,
+    paramListFormat: RenderListFormat = null,
+    partial: java.lang.String | js.Array[java.lang.String] = null,
+    plugin: java.lang.String | js.Array[java.lang.String] = null,
+    propertyListFormat: RenderListFormat = null,
+    seperators: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null
+  ): RenderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (exampleLang != null) __obj.updateDynamic("exampleLang")(exampleLang)
+    if (globalIndexFormat != null) __obj.updateDynamic("globalIndexFormat")(globalIndexFormat)
+    if (headingDepth != null) __obj.updateDynamic("headingDepth")(headingDepth.asInstanceOf[js.Any])
+    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
+    if (memberIndexFormat != null) __obj.updateDynamic("memberIndexFormat")(memberIndexFormat)
+    if (moduleIndexFormat != null) __obj.updateDynamic("moduleIndexFormat")(moduleIndexFormat)
+    if (nameFormat != null) __obj.updateDynamic("nameFormat")(nameFormat)
+    if (!js.isUndefined(noGfm)) __obj.updateDynamic("noGfm")(noGfm)
+    if (paramListFormat != null) __obj.updateDynamic("paramListFormat")(paramListFormat)
+    if (partial != null) __obj.updateDynamic("partial")(partial.asInstanceOf[js.Any])
+    if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
+    if (propertyListFormat != null) __obj.updateDynamic("propertyListFormat")(propertyListFormat)
+    if (!js.isUndefined(seperators)) __obj.updateDynamic("seperators")(seperators)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[RenderOptions]
+  }
+}
+

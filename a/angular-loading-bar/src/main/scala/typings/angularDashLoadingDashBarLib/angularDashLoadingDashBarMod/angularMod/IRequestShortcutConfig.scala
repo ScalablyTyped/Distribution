@@ -12,3 +12,12 @@ trait IRequestShortcutConfig extends js.Object {
   var ignoreLoadingBar: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IRequestShortcutConfig {
+  @scala.inline
+  def apply(ignoreLoadingBar: js.UndefOr[scala.Boolean] = js.undefined): IRequestShortcutConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignoreLoadingBar)) __obj.updateDynamic("ignoreLoadingBar")(ignoreLoadingBar)
+    __obj.asInstanceOf[IRequestShortcutConfig]
+  }
+}
+

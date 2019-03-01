@@ -20,3 +20,18 @@ trait NavigatorOptions extends js.Object {
   var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
 }
 
+object NavigatorOptions {
+  @scala.inline
+  def apply(
+    animation: java.lang.String = null,
+    animationOptions: java.lang.String = null,
+    callback: coreDashJsLib.Function = null
+  ): NavigatorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    __obj.asInstanceOf[NavigatorOptions]
+  }
+}
+

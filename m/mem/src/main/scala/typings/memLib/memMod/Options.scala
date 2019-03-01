@@ -11,3 +11,18 @@ trait Options extends js.Object {
   var maxAge: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    cache: js.Any = null,
+    cacheKey: js.Function1[/* repeated */ js.Any, java.lang.String] = null,
+    maxAge: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -20,3 +20,18 @@ trait MissingPropertiesException
   var Properties: activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object MissingPropertiesException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Properties: activexDashInteropLib.SafeArray[java.lang.String]
+  ): MissingPropertiesException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("Properties")(Properties)
+    __obj.asInstanceOf[MissingPropertiesException]
+  }
+}
+

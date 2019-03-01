@@ -18,3 +18,13 @@ trait ZXCVBNFeedback extends js.Object {
   var warning: java.lang.String
 }
 
+object ZXCVBNFeedback {
+  @scala.inline
+  def apply(suggestions: js.Array[java.lang.String], warning: java.lang.String): ZXCVBNFeedback = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("suggestions")(suggestions)
+    __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[ZXCVBNFeedback]
+  }
+}
+

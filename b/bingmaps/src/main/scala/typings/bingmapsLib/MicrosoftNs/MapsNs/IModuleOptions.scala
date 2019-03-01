@@ -18,3 +18,18 @@ trait IModuleOptions extends js.Object {
   var errorCallback: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object IModuleOptions {
+  @scala.inline
+  def apply(
+    callback: js.Function0[scala.Unit] = null,
+    credentials: java.lang.String = null,
+    errorCallback: js.Function0[scala.Unit] = null
+  ): IModuleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)
+    __obj.asInstanceOf[IModuleOptions]
+  }
+}
+

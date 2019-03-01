@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 object dompurifyLibStrings {
   @js.native
-  sealed trait afterSanitizeAttributes extends js.Object
+  sealed trait afterSanitizeAttributes extends HookName
   
   @js.native
-  sealed trait afterSanitizeElements extends js.Object
+  sealed trait afterSanitizeElements extends HookName
   
   @js.native
-  sealed trait afterSanitizeShadowDOM extends js.Object
+  sealed trait afterSanitizeShadowDOM extends HookName
   
   @js.native
-  sealed trait beforeSanitizeAttributes extends js.Object
+  sealed trait beforeSanitizeAttributes extends HookName
   
   @js.native
-  sealed trait beforeSanitizeElements extends js.Object
+  sealed trait beforeSanitizeElements extends HookName
   
   @js.native
-  sealed trait beforeSanitizeShadowDOM extends js.Object
+  sealed trait beforeSanitizeShadowDOM extends HookName
   
   @js.native
-  sealed trait uponSanitizeAttribute extends js.Object
+  sealed trait uponSanitizeAttribute extends HookName
   
   @js.native
-  sealed trait uponSanitizeElement extends js.Object
+  sealed trait uponSanitizeElement extends HookName
   
   @js.native
-  sealed trait uponSanitizeShadowNode extends js.Object
+  sealed trait uponSanitizeShadowNode extends HookName
   
   @scala.inline
   def afterSanitizeAttributes: afterSanitizeAttributes = "afterSanitizeAttributes".asInstanceOf[afterSanitizeAttributes]

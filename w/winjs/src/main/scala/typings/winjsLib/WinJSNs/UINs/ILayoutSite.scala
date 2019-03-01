@@ -40,3 +40,26 @@ trait ILayoutSite extends js.Object {
   var viewportSize: js.Any
 }
 
+object ILayoutSite {
+  @scala.inline
+  def apply(
+    animationsDisabled: scala.Boolean,
+    itemSurface: stdLib.HTMLElement,
+    rtl: scala.Boolean,
+    scrollbarPos: scala.Double,
+    surface: stdLib.HTMLElement,
+    viewport: stdLib.HTMLElement,
+    viewportSize: js.Any
+  ): ILayoutSite = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animationsDisabled")(animationsDisabled)
+    __obj.updateDynamic("itemSurface")(itemSurface)
+    __obj.updateDynamic("rtl")(rtl)
+    __obj.updateDynamic("scrollbarPos")(scrollbarPos)
+    __obj.updateDynamic("surface")(surface)
+    __obj.updateDynamic("viewport")(viewport)
+    __obj.updateDynamic("viewportSize")(viewportSize)
+    __obj.asInstanceOf[ILayoutSite]
+  }
+}
+

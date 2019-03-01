@@ -42,3 +42,27 @@ trait TestMatricesResource extends js.Object {
   def get(request: gapiDotClientDotTestingLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
 }
 
+object TestMatricesResource {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[
+      gapiDotClientDotTestingLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CancelTestMatrixResponse]
+    ],
+    create: js.Function1[
+      gapiDotClientDotTestingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
+    ],
+    get: js.Function1[
+      gapiDotClientDotTestingLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
+    ]
+  ): TestMatricesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[TestMatricesResource]
+  }
+}
+

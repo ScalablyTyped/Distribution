@@ -80,3 +80,42 @@ trait XFilePreview
   def setShowState(bShowState: scala.Boolean): scala.Boolean
 }
 
+object XFilePreview {
+  @scala.inline
+  def apply(
+    AvailableHeight: scala.Double,
+    AvailableWidth: scala.Double,
+    ShowState: scala.Boolean,
+    SupportedImageFormats: activexDashInteropLib.SafeArray[scala.Double],
+    TargetColorDepth: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    acquire: js.Function0[scala.Unit],
+    getAvailableHeight: js.Function0[scala.Double],
+    getAvailableWidth: js.Function0[scala.Double],
+    getShowState: js.Function0[scala.Boolean],
+    getSupportedImageFormats: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getTargetColorDepth: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setImage: js.Function2[scala.Double, js.Any, scala.Unit],
+    setShowState: js.Function1[scala.Boolean, scala.Boolean]
+  ): XFilePreview = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AvailableHeight")(AvailableHeight)
+    __obj.updateDynamic("AvailableWidth")(AvailableWidth)
+    __obj.updateDynamic("ShowState")(ShowState)
+    __obj.updateDynamic("SupportedImageFormats")(SupportedImageFormats)
+    __obj.updateDynamic("TargetColorDepth")(TargetColorDepth)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAvailableHeight")(getAvailableHeight)
+    __obj.updateDynamic("getAvailableWidth")(getAvailableWidth)
+    __obj.updateDynamic("getShowState")(getShowState)
+    __obj.updateDynamic("getSupportedImageFormats")(getSupportedImageFormats)
+    __obj.updateDynamic("getTargetColorDepth")(getTargetColorDepth)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setImage")(setImage)
+    __obj.updateDynamic("setShowState")(setShowState)
+    __obj.asInstanceOf[XFilePreview]
+  }
+}
+

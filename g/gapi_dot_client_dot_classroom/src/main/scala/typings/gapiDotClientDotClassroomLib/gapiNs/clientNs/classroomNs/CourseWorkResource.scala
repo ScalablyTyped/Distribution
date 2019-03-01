@@ -111,3 +111,44 @@ trait CourseWorkResource extends js.Object {
   def patch(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[CourseWork]
 }
 
+object CourseWorkResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CourseWork]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CourseWork]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkStates, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListCourseWorkResponse]
+    ],
+    modifyAssignees: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CourseWork]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CourseWork]
+    ],
+    studentSubmissions: StudentSubmissionsResource
+  ): CourseWorkResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("modifyAssignees")(modifyAssignees)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("studentSubmissions")(studentSubmissions)
+    __obj.asInstanceOf[CourseWorkResource]
+  }
+}
+

@@ -15,3 +15,26 @@ trait Anon_HashKeyName extends js.Object {
   var writeCapacity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_HashKeyName {
+  @scala.inline
+  def apply(
+    hashKey: java.lang.String,
+    name: java.lang.String,
+    projectionType: java.lang.String,
+    nonKeyAttributes: js.Array[java.lang.String] = null,
+    rangeKey: java.lang.String = null,
+    readCapacity: scala.Int | scala.Double = null,
+    writeCapacity: scala.Int | scala.Double = null
+  ): Anon_HashKeyName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hashKey")(hashKey)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("projectionType")(projectionType)
+    if (nonKeyAttributes != null) __obj.updateDynamic("nonKeyAttributes")(nonKeyAttributes)
+    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey)
+    if (readCapacity != null) __obj.updateDynamic("readCapacity")(readCapacity.asInstanceOf[js.Any])
+    if (writeCapacity != null) __obj.updateDynamic("writeCapacity")(writeCapacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_HashKeyName]
+  }
+}
+

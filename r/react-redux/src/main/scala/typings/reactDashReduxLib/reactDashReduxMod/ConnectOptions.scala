@@ -58,3 +58,26 @@ trait ConnectOptions extends js.Object {
   var withRef: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConnectOptions {
+  @scala.inline
+  def apply(
+    context: reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null,
+    getDisplayName: js.Function1[/* componentName */ java.lang.String, java.lang.String] = null,
+    methodName: java.lang.String = null,
+    renderCountProp: java.lang.String = null,
+    shouldHandleStateChanges: js.UndefOr[scala.Boolean] = js.undefined,
+    storeKey: java.lang.String = null,
+    withRef: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConnectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (getDisplayName != null) __obj.updateDynamic("getDisplayName")(getDisplayName)
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
+    if (renderCountProp != null) __obj.updateDynamic("renderCountProp")(renderCountProp)
+    if (!js.isUndefined(shouldHandleStateChanges)) __obj.updateDynamic("shouldHandleStateChanges")(shouldHandleStateChanges)
+    if (storeKey != null) __obj.updateDynamic("storeKey")(storeKey)
+    if (!js.isUndefined(withRef)) __obj.updateDynamic("withRef")(withRef)
+    __obj.asInstanceOf[ConnectOptions]
+  }
+}
+

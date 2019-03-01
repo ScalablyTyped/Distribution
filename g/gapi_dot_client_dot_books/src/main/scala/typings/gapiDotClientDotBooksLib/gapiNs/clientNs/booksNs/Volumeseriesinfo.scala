@@ -15,3 +15,20 @@ trait Volumeseriesinfo extends js.Object {
   var volumeSeries: js.UndefOr[js.Array[gapiDotClientDotBooksLib.Anon_Issue]] = js.undefined
 }
 
+object Volumeseriesinfo {
+  @scala.inline
+  def apply(
+    bookDisplayNumber: java.lang.String = null,
+    kind: java.lang.String = null,
+    shortSeriesBookTitle: java.lang.String = null,
+    volumeSeries: js.Array[gapiDotClientDotBooksLib.Anon_Issue] = null
+  ): Volumeseriesinfo = {
+    val __obj = js.Dynamic.literal()
+    if (bookDisplayNumber != null) __obj.updateDynamic("bookDisplayNumber")(bookDisplayNumber)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (shortSeriesBookTitle != null) __obj.updateDynamic("shortSeriesBookTitle")(shortSeriesBookTitle)
+    if (volumeSeries != null) __obj.updateDynamic("volumeSeries")(volumeSeries)
+    __obj.asInstanceOf[Volumeseriesinfo]
+  }
+}
+

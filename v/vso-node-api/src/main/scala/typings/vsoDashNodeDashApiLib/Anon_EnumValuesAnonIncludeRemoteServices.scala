@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonIncludeRemoteServices extends js.Object {
   var enumValues: Anon_IncludeRemoteServices
 }
 
+object Anon_EnumValuesAnonIncludeRemoteServices {
+  @scala.inline
+  def apply(enumValues: Anon_IncludeRemoteServices): Anon_EnumValuesAnonIncludeRemoteServices = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonIncludeRemoteServices]
+  }
+}
+

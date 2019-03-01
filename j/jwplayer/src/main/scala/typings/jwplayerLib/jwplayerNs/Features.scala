@@ -11,3 +11,14 @@ trait Features extends js.Object {
   var iframe: scala.Boolean
 }
 
+object Features {
+  @scala.inline
+  def apply(flash: scala.Boolean, flashVersion: scala.Double, iframe: scala.Boolean): Features = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("flash")(flash)
+    __obj.updateDynamic("flashVersion")(flashVersion)
+    __obj.updateDynamic("iframe")(iframe)
+    __obj.asInstanceOf[Features]
+  }
+}
+

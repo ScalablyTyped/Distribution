@@ -49,3 +49,24 @@ trait Variable extends js.Object {
   var varTableIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Variable {
+  @scala.inline
+  def apply(
+    members: js.Array[Variable] = null,
+    name: java.lang.String = null,
+    status: StatusMessage = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null,
+    varTableIndex: scala.Int | scala.Double = null
+  ): Variable = {
+    val __obj = js.Dynamic.literal()
+    if (members != null) __obj.updateDynamic("members")(members)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (varTableIndex != null) __obj.updateDynamic("varTableIndex")(varTableIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Variable]
+  }
+}
+

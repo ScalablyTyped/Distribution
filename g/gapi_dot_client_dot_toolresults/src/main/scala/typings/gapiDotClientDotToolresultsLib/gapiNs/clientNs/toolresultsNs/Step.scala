@@ -131,3 +131,40 @@ trait Step extends js.Object {
   var toolExecutionStep: js.UndefOr[ToolExecutionStep] = js.undefined
 }
 
+object Step {
+  @scala.inline
+  def apply(
+    completionTime: Timestamp = null,
+    creationTime: Timestamp = null,
+    description: java.lang.String = null,
+    deviceUsageDuration: Duration = null,
+    dimensionValue: js.Array[StepDimensionValueEntry] = null,
+    hasImages: js.UndefOr[scala.Boolean] = js.undefined,
+    labels: js.Array[StepLabelsEntry] = null,
+    name: java.lang.String = null,
+    outcome: Outcome = null,
+    runDuration: Duration = null,
+    state: java.lang.String = null,
+    stepId: java.lang.String = null,
+    testExecutionStep: TestExecutionStep = null,
+    toolExecutionStep: ToolExecutionStep = null
+  ): Step = {
+    val __obj = js.Dynamic.literal()
+    if (completionTime != null) __obj.updateDynamic("completionTime")(completionTime)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (deviceUsageDuration != null) __obj.updateDynamic("deviceUsageDuration")(deviceUsageDuration)
+    if (dimensionValue != null) __obj.updateDynamic("dimensionValue")(dimensionValue)
+    if (!js.isUndefined(hasImages)) __obj.updateDynamic("hasImages")(hasImages)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    if (runDuration != null) __obj.updateDynamic("runDuration")(runDuration)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (stepId != null) __obj.updateDynamic("stepId")(stepId)
+    if (testExecutionStep != null) __obj.updateDynamic("testExecutionStep")(testExecutionStep)
+    if (toolExecutionStep != null) __obj.updateDynamic("toolExecutionStep")(toolExecutionStep)
+    __obj.asInstanceOf[Step]
+  }
+}
+

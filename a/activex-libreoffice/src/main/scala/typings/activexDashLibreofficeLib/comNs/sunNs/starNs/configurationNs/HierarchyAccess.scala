@@ -34,3 +34,81 @@ trait HierarchyAccess
   override def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
 }
 
+object HierarchyAccess {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    acquire: js.Function0[scala.Unit],
+    addContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getExactName: js.Function1[java.lang.String, java.lang.String],
+    getProperties: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+    ],
+    getPropertyByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    getPropertyDefault: js.Function1[java.lang.String, js.Any],
+    getPropertyDefaults: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getPropertyState: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState
+    ],
+    getPropertyStates: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
+    ],
+    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    hasPropertyByName: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    setAllPropertiesToDefault: js.Function0[scala.Unit],
+    setPropertiesToDefault: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setPropertyToDefault: js.Function1[java.lang.String, scala.Unit]
+  ): HierarchyAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementNames")(ElementNames)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("Properties")(Properties)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addContainerListener")(addContainerListener)
+    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
+    __obj.updateDynamic("getByName")(getByName)
+    __obj.updateDynamic("getElementNames")(getElementNames)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getExactName")(getExactName)
+    __obj.updateDynamic("getProperties")(getProperties)
+    __obj.updateDynamic("getPropertyByName")(getPropertyByName)
+    __obj.updateDynamic("getPropertyDefault")(getPropertyDefault)
+    __obj.updateDynamic("getPropertyDefaults")(getPropertyDefaults)
+    __obj.updateDynamic("getPropertyState")(getPropertyState)
+    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
+    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
+    __obj.updateDynamic("hasByName")(hasByName)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("hasPropertyByName")(hasPropertyByName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
+    __obj.updateDynamic("setAllPropertiesToDefault")(setAllPropertiesToDefault)
+    __obj.updateDynamic("setPropertiesToDefault")(setPropertiesToDefault)
+    __obj.updateDynamic("setPropertyToDefault")(setPropertyToDefault)
+    __obj.asInstanceOf[HierarchyAccess]
+  }
+}
+

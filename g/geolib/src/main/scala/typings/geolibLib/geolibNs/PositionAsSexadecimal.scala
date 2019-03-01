@@ -10,3 +10,13 @@ trait PositionAsSexadecimal extends js.Object {
   var longitude: java.lang.String
 }
 
+object PositionAsSexadecimal {
+  @scala.inline
+  def apply(latitude: java.lang.String, longitude: java.lang.String): PositionAsSexadecimal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    __obj.asInstanceOf[PositionAsSexadecimal]
+  }
+}
+

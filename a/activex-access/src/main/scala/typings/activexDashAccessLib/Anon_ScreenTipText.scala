@@ -10,3 +10,13 @@ trait Anon_ScreenTipText extends js.Object {
   val SourceObject: js.Any
 }
 
+object Anon_ScreenTipText {
+  @scala.inline
+  def apply(ScreenTipText: js.Any, SourceObject: js.Any): Anon_ScreenTipText = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ScreenTipText")(ScreenTipText)
+    __obj.updateDynamic("SourceObject")(SourceObject)
+    __obj.asInstanceOf[Anon_ScreenTipText]
+  }
+}
+

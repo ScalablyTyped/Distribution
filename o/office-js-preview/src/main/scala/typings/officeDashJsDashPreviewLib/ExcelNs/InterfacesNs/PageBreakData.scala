@@ -25,3 +25,13 @@ trait PageBreakData extends js.Object {
   var rowIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PageBreakData {
+  @scala.inline
+  def apply(columnIndex: scala.Int | scala.Double = null, rowIndex: scala.Int | scala.Double = null): PageBreakData = {
+    val __obj = js.Dynamic.literal()
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PageBreakData]
+  }
+}
+

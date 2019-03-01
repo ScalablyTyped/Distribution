@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object gapiDotCalendarLibStrings {
   @js.native
-  sealed trait accepted extends js.Object
+  sealed trait accepted
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AttendeeResponseStatus
   
   @js.native
-  sealed trait agenda extends js.Object
+  sealed trait agenda
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.NotificationType
   
   @js.native
   sealed trait `calendar#aclRule` extends js.Object
@@ -34,118 +36,158 @@ object gapiDotCalendarLibStrings {
   sealed trait `calendar#freeBusy` extends js.Object
   
   @js.native
-  sealed trait cancelled extends js.Object
+  sealed trait cancelled
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventStatus
   
   @js.native
-  sealed trait chip extends js.Object
+  sealed trait chip
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.GadgetDisplayMode
   
   @js.native
-  sealed trait confidential extends js.Object
+  sealed trait confidential
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventVisibility
   
   @js.native
-  sealed trait confirmed extends js.Object
+  sealed trait confirmed
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventStatus
   
   @js.native
-  sealed trait declined extends js.Object
+  sealed trait declined
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AttendeeResponseStatus
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventVisibility
+       with gapiDotCalendarLib.gapiNs.clientNs.calendarNs.ScopeType
   
   @js.native
-  sealed trait domain extends js.Object
+  sealed trait domain
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.ScopeType
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.ReminderMethod
   
   @js.native
-  sealed trait eventCancellation extends js.Object
+  sealed trait eventCancellation
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.NotificationType
   
   @js.native
-  sealed trait eventChange extends js.Object
+  sealed trait eventChange
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.NotificationType
   
   @js.native
-  sealed trait eventCreation extends js.Object
+  sealed trait eventCreation
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.NotificationType
   
   @js.native
-  sealed trait eventResponse extends js.Object
+  sealed trait eventResponse
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.NotificationType
   
   @js.native
-  sealed trait freeBusyReader extends js.Object
+  sealed trait freeBusyReader
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AccessRoleWithoutNone
   
   @js.native
-  sealed trait group extends js.Object
+  sealed trait group
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.ScopeType
   
   @js.native
-  sealed trait iCalUID extends js.Object
+  sealed trait iCalUID
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.SyncToken
   
   @js.native
-  sealed trait icon extends js.Object
+  sealed trait icon
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.GadgetDisplayMode
   
   @js.native
-  sealed trait needsAction extends js.Object
+  sealed trait needsAction
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AttendeeResponseStatus
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AccessRole
   
   @js.native
-  sealed trait opaque extends js.Object
+  sealed trait opaque
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventTransparency
   
   @js.native
-  sealed trait orderBy extends js.Object
+  sealed trait orderBy
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.SyncToken
   
   @js.native
-  sealed trait owner extends js.Object
+  sealed trait owner
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AccessRoleWithoutNone
   
   @js.native
-  sealed trait popup extends js.Object
+  sealed trait popup
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.ReminderMethod
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait `private`
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventVisibility
   
   @js.native
-  sealed trait privateExtendedProperty extends js.Object
+  sealed trait privateExtendedProperty
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.SyncToken
   
   @js.native
-  sealed trait public extends js.Object
+  sealed trait public
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventVisibility
   
   @js.native
-  sealed trait q extends js.Object
+  sealed trait q
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.SyncToken
   
   @js.native
-  sealed trait reader extends js.Object
+  sealed trait reader
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AccessRoleWithoutNone
   
   @js.native
-  sealed trait sharedExtendedProperty extends js.Object
+  sealed trait sharedExtendedProperty
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.SyncToken
   
   @js.native
-  sealed trait sms extends js.Object
+  sealed trait sms
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.ReminderMethod
   
   @js.native
-  sealed trait startTime extends js.Object
+  sealed trait startTime
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventsOrder
   
   @js.native
-  sealed trait tentative extends js.Object
+  sealed trait tentative
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AttendeeResponseStatus
+       with gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventStatus
   
   @js.native
-  sealed trait timeMax extends js.Object
+  sealed trait timeMax
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.SyncToken
   
   @js.native
-  sealed trait timeMin extends js.Object
+  sealed trait timeMin
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.SyncToken
   
   @js.native
-  sealed trait transparent extends js.Object
+  sealed trait transparent
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventTransparency
   
   @js.native
-  sealed trait updated extends js.Object
+  sealed trait updated
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.EventsOrder
   
   @js.native
-  sealed trait updatedMin extends js.Object
+  sealed trait updatedMin
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.SyncToken
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.ScopeType
   
   @js.native
-  sealed trait writer extends js.Object
+  sealed trait writer
+    extends gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AccessRoleWithoutNone
   
   @scala.inline
   def accepted: accepted = "accepted".asInstanceOf[accepted]

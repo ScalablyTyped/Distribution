@@ -18,8 +18,6 @@ package object expressDashWinstonMod {
     /* err */ nodeLib.Error, 
     js.Object
   ]
-  type ErrorLoggerOptions = ErrorLoggerOptionsWithTransports | ErrorLoggerOptionsWithWinstonInstance
-  type LoggerOptions = LoggerOptionsWithTransports | LoggerOptionsWithWinstonInstance
   type RequestFilter = js.Function2[/* req */ FilterRequest, /* propName */ java.lang.String, js.Any]
   type ResponseFilter = js.Function2[/* res */ FilterResponse, /* propName */ java.lang.String, js.Any]
   type RouteFilter = js.Function2[

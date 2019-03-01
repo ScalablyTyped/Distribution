@@ -12,3 +12,20 @@ trait UpdateIntentRequest extends js.Object {
   var updateMask: js.UndefOr[js.Any] = js.undefined
 }
 
+object UpdateIntentRequest {
+  @scala.inline
+  def apply(
+    intent: Intent,
+    intentView: IntentView = null,
+    languageCode: java.lang.String = null,
+    updateMask: js.Any = null
+  ): UpdateIntentRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("intent")(intent)
+    if (intentView != null) __obj.updateDynamic("intentView")(intentView)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    __obj.asInstanceOf[UpdateIntentRequest]
+  }
+}
+

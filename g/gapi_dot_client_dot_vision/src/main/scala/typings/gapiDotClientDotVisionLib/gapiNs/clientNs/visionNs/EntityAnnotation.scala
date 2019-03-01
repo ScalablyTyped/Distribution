@@ -55,3 +55,30 @@ trait EntityAnnotation extends js.Object {
   var topicality: js.UndefOr[scala.Double] = js.undefined
 }
 
+object EntityAnnotation {
+  @scala.inline
+  def apply(
+    boundingPoly: BoundingPoly = null,
+    confidence: scala.Int | scala.Double = null,
+    description: java.lang.String = null,
+    locale: java.lang.String = null,
+    locations: js.Array[LocationInfo] = null,
+    mid: java.lang.String = null,
+    properties: js.Array[Property] = null,
+    score: scala.Int | scala.Double = null,
+    topicality: scala.Int | scala.Double = null
+  ): EntityAnnotation = {
+    val __obj = js.Dynamic.literal()
+    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly)
+    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (mid != null) __obj.updateDynamic("mid")(mid)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    if (topicality != null) __obj.updateDynamic("topicality")(topicality.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EntityAnnotation]
+  }
+}
+

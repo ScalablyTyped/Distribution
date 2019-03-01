@@ -16,3 +16,13 @@ trait SearchReadGroupSetsResponse extends js.Object {
   var readGroupSets: js.UndefOr[js.Array[ReadGroupSet]] = js.undefined
 }
 
+object SearchReadGroupSetsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, readGroupSets: js.Array[ReadGroupSet] = null): SearchReadGroupSetsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (readGroupSets != null) __obj.updateDynamic("readGroupSets")(readGroupSets)
+    __obj.asInstanceOf[SearchReadGroupSetsResponse]
+  }
+}
+

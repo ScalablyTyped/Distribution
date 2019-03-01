@@ -16,3 +16,13 @@ trait PageSettings extends js.Object {
   var paperSize: js.UndefOr[PaperSize | java.lang.String] = js.undefined
 }
 
+object PageSettings {
+  @scala.inline
+  def apply(orientation: Orientation | java.lang.String = null, paperSize: PaperSize | java.lang.String = null): PageSettings = {
+    val __obj = js.Dynamic.literal()
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (paperSize != null) __obj.updateDynamic("paperSize")(paperSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PageSettings]
+  }
+}
+

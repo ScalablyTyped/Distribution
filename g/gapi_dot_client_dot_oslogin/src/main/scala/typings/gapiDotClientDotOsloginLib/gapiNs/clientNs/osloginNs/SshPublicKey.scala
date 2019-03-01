@@ -21,3 +21,18 @@ trait SshPublicKey extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SshPublicKey {
+  @scala.inline
+  def apply(
+    expirationTimeUsec: java.lang.String = null,
+    fingerprint: java.lang.String = null,
+    key: java.lang.String = null
+  ): SshPublicKey = {
+    val __obj = js.Dynamic.literal()
+    if (expirationTimeUsec != null) __obj.updateDynamic("expirationTimeUsec")(expirationTimeUsec)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[SshPublicKey]
+  }
+}
+

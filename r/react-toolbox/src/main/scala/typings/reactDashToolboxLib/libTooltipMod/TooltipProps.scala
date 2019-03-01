@@ -58,3 +58,37 @@ trait TooltipProps
   var tooltipShowOnClick: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TooltipProps {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Additional attributes passed to composed component.
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    className: java.lang.String = null,
+    onClick: coreDashJsLib.Function = null,
+    onMouseEnter: coreDashJsLib.Function = null,
+    onMouseLeave: coreDashJsLib.Function = null,
+    theme: TooltipTheme = null,
+    tooltip: reactLib.reactMod.ReactNs.ReactNode = null,
+    tooltipDelay: scala.Int | scala.Double = null,
+    tooltipHideOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltipPosition: reactDashToolboxLib.reactDashToolboxLibStrings.bottom | reactDashToolboxLib.reactDashToolboxLibStrings.top | reactDashToolboxLib.reactDashToolboxLibStrings.left | reactDashToolboxLib.reactDashToolboxLibStrings.right | reactDashToolboxLib.reactDashToolboxLibStrings.horizontal | reactDashToolboxLib.reactDashToolboxLibStrings.vertical = null,
+    tooltipShowOnClick: js.UndefOr[scala.Boolean] = js.undefined
+  ): TooltipProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
+    if (tooltipDelay != null) __obj.updateDynamic("tooltipDelay")(tooltipDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipHideOnClick)) __obj.updateDynamic("tooltipHideOnClick")(tooltipHideOnClick)
+    if (tooltipPosition != null) __obj.updateDynamic("tooltipPosition")(tooltipPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltipShowOnClick)) __obj.updateDynamic("tooltipShowOnClick")(tooltipShowOnClick)
+    __obj.asInstanceOf[TooltipProps]
+  }
+}
+

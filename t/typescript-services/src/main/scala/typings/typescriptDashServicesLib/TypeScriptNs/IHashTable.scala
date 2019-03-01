@@ -25,3 +25,40 @@ trait IHashTable[T] extends js.Object {
   ): scala.Boolean
 }
 
+object IHashTable {
+  @scala.inline
+  def apply[T](
+    add: js.Function2[java.lang.String, T, scala.Boolean],
+    addOrUpdate: js.Function2[java.lang.String, T, scala.Boolean],
+    count: js.Function0[scala.Double],
+    every: js.Function2[
+      js.Function3[/* k */ java.lang.String, /* value */ T, /* context */ js.Any, scala.Unit], 
+      js.Any, 
+      scala.Boolean
+    ],
+    getAllKeys: js.Function0[js.Array[java.lang.String]],
+    lookup: js.Function1[java.lang.String, T],
+    map: js.Function2[
+      js.Function3[/* k */ java.lang.String, /* value */ T, /* context */ js.Any, scala.Unit], 
+      js.Any, 
+      scala.Unit
+    ],
+    some: js.Function2[
+      js.Function3[/* k */ java.lang.String, /* value */ T, /* context */ js.Any, scala.Unit], 
+      js.Any, 
+      scala.Boolean
+    ]
+  ): IHashTable[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("addOrUpdate")(addOrUpdate)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("every")(every)
+    __obj.updateDynamic("getAllKeys")(getAllKeys)
+    __obj.updateDynamic("lookup")(lookup)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("some")(some)
+    __obj.asInstanceOf[IHashTable[T]]
+  }
+}
+

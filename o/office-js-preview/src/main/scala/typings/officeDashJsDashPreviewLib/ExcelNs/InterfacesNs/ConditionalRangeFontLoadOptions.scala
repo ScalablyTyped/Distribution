@@ -51,3 +51,24 @@ trait ConditionalRangeFontLoadOptions extends js.Object {
   var underline: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConditionalRangeFontLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    color: js.UndefOr[scala.Boolean] = js.undefined,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    strikethrough: js.UndefOr[scala.Boolean] = js.undefined,
+    underline: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConditionalRangeFontLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough)
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline)
+    __obj.asInstanceOf[ConditionalRangeFontLoadOptions]
+  }
+}
+

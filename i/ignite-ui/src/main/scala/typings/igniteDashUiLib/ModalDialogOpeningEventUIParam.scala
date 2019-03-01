@@ -16,3 +16,13 @@ trait ModalDialogOpeningEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ModalDialogOpeningEventUIParam {
+  @scala.inline
+  def apply(modalDialogElement: java.lang.String = null, owner: js.Any = null): ModalDialogOpeningEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ModalDialogOpeningEventUIParam]
+  }
+}
+

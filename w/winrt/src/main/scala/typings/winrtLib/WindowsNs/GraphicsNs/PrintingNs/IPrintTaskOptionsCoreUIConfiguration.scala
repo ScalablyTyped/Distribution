@@ -9,3 +9,12 @@ trait IPrintTaskOptionsCoreUIConfiguration extends js.Object {
   var displayedOptions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String]
 }
 
+object IPrintTaskOptionsCoreUIConfiguration {
+  @scala.inline
+  def apply(displayedOptions: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String]): IPrintTaskOptionsCoreUIConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayedOptions")(displayedOptions)
+    __obj.asInstanceOf[IPrintTaskOptionsCoreUIConfiguration]
+  }
+}
+

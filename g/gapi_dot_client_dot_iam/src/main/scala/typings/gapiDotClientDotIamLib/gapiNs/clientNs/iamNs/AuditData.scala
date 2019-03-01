@@ -10,3 +10,12 @@ trait AuditData extends js.Object {
   var policyDelta: js.UndefOr[PolicyDelta] = js.undefined
 }
 
+object AuditData {
+  @scala.inline
+  def apply(policyDelta: PolicyDelta = null): AuditData = {
+    val __obj = js.Dynamic.literal()
+    if (policyDelta != null) __obj.updateDynamic("policyDelta")(policyDelta)
+    __obj.asInstanceOf[AuditData]
+  }
+}
+

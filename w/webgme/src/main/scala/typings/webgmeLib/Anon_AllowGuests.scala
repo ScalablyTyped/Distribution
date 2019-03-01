@@ -45,3 +45,30 @@ trait Anon_AllowGuests extends js.Object {
   var salts: scala.Double
 }
 
+object Anon_AllowGuests {
+  @scala.inline
+  def apply(
+    allowGuests: scala.Boolean,
+    allowUserRegistration: scala.Boolean,
+    authorizer: Anon_Options,
+    enable: scala.Boolean,
+    guestAccount: java.lang.String,
+    jwt: Anon_Algorithm,
+    logInUrl: java.lang.String,
+    logOutUrl: java.lang.String,
+    salts: scala.Double
+  ): Anon_AllowGuests = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowGuests")(allowGuests)
+    __obj.updateDynamic("allowUserRegistration")(allowUserRegistration)
+    __obj.updateDynamic("authorizer")(authorizer)
+    __obj.updateDynamic("enable")(enable)
+    __obj.updateDynamic("guestAccount")(guestAccount)
+    __obj.updateDynamic("jwt")(jwt)
+    __obj.updateDynamic("logInUrl")(logInUrl)
+    __obj.updateDynamic("logOutUrl")(logOutUrl)
+    __obj.updateDynamic("salts")(salts)
+    __obj.asInstanceOf[Anon_AllowGuests]
+  }
+}
+

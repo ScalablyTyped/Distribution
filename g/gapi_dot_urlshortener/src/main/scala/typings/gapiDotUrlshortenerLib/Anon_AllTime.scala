@@ -28,3 +28,22 @@ trait Anon_AllTime extends js.Object {
   var week: GoogleApiUrlShortenerUrlResourceAnalyticsObject
 }
 
+object Anon_AllTime {
+  @scala.inline
+  def apply(
+    allTime: GoogleApiUrlShortenerUrlResourceAnalyticsObject,
+    day: GoogleApiUrlShortenerUrlResourceAnalyticsObject,
+    month: GoogleApiUrlShortenerUrlResourceAnalyticsObject,
+    twoHours: GoogleApiUrlShortenerUrlResourceAnalyticsObject,
+    week: GoogleApiUrlShortenerUrlResourceAnalyticsObject
+  ): Anon_AllTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allTime")(allTime)
+    __obj.updateDynamic("day")(day)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("twoHours")(twoHours)
+    __obj.updateDynamic("week")(week)
+    __obj.asInstanceOf[Anon_AllTime]
+  }
+}
+

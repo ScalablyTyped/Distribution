@@ -16,3 +16,13 @@ trait ListTagsOfResourceInput extends js.Object {
   var ResourceArn: ResourceArnString
 }
 
+object ListTagsOfResourceInput {
+  @scala.inline
+  def apply(ResourceArn: ResourceArnString, NextToken: NextTokenString = null): ListTagsOfResourceInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ResourceArn")(ResourceArn)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    __obj.asInstanceOf[ListTagsOfResourceInput]
+  }
+}
+

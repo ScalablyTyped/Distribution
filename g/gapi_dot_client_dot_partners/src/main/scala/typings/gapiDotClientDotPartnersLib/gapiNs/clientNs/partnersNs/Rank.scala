@@ -12,3 +12,13 @@ trait Rank extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Rank {
+  @scala.inline
+  def apply(`type`: java.lang.String = null, value: scala.Int | scala.Double = null): Rank = {
+    val __obj = js.Dynamic.literal()
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Rank]
+  }
+}
+

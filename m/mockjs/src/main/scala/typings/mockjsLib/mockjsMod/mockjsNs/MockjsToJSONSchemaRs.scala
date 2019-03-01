@@ -15,3 +15,25 @@ trait MockjsToJSONSchemaRs extends js.Object {
   var `type`: S
 }
 
+object MockjsToJSONSchemaRs {
+  @scala.inline
+  def apply(
+    path: js.Array[S],
+    rule: js.Object,
+    template: js.Any,
+    `type`: S,
+    items: js.Array[MockjsToJSONSchemaRs] = null,
+    name: S = null,
+    properties: js.Array[MockjsToJSONSchemaRs] = null
+  ): MockjsToJSONSchemaRs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("rule")(rule)
+    __obj.updateDynamic("template")(template)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[MockjsToJSONSchemaRs]
+  }
+}
+

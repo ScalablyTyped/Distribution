@@ -20,3 +20,14 @@ trait MousedownEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object MousedownEventUIParam {
+  @scala.inline
+  def apply(editorInput: js.Any = null, element: js.Any = null, owner: js.Any = null): MousedownEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[MousedownEventUIParam]
+  }
+}
+

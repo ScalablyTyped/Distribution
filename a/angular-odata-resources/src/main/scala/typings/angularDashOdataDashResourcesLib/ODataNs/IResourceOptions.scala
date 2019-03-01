@@ -17,3 +17,18 @@ trait IResourceOptions extends js.Object {
   var stripTrailingSlashes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IResourceOptions {
+  @scala.inline
+  def apply(
+    isodatav4: js.UndefOr[scala.Boolean] = js.undefined,
+    odata: angularDashOdataDashResourcesLib.Anon_Method = null,
+    stripTrailingSlashes: js.UndefOr[scala.Boolean] = js.undefined
+  ): IResourceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isodatav4)) __obj.updateDynamic("isodatav4")(isodatav4)
+    if (odata != null) __obj.updateDynamic("odata")(odata)
+    if (!js.isUndefined(stripTrailingSlashes)) __obj.updateDynamic("stripTrailingSlashes")(stripTrailingSlashes)
+    __obj.asInstanceOf[IResourceOptions]
+  }
+}
+

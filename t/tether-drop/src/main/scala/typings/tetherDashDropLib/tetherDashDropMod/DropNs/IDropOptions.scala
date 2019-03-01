@@ -32,3 +32,48 @@ trait IDropOptions extends js.Object {
   var tetherOptions: js.UndefOr[tetherLib.tetherMod.TetherNs.ITetherOptions] = js.undefined
 }
 
+object IDropOptions {
+  @scala.inline
+  def apply(
+    beforeClose: js.Function2[
+      /* event */ stdLib.Event, 
+      /* drop */ tetherDashDropLib.tetherDashDropMod.Drop, 
+      scala.Boolean
+    ] = null,
+    blurDelay: scala.Int | scala.Double = null,
+    classes: java.lang.String = null,
+    closeDelay: scala.Int | scala.Double = null,
+    constrainToScrollParent: js.UndefOr[scala.Boolean] = js.undefined,
+    constrainToWindow: js.UndefOr[scala.Boolean] = js.undefined,
+    content: stdLib.Element | java.lang.String | (js.Function1[/* drop */ js.UndefOr[tetherDashDropLib.tetherDashDropMod.Drop], java.lang.String]) | (js.Function1[/* drop */ js.UndefOr[tetherDashDropLib.tetherDashDropMod.Drop], stdLib.Element]) = null,
+    focusDelay: scala.Int | scala.Double = null,
+    hoverCloseDelay: scala.Int | scala.Double = null,
+    hoverOpenDelay: scala.Int | scala.Double = null,
+    openDelay: scala.Int | scala.Double = null,
+    openOn: java.lang.String = null,
+    position: java.lang.String = null,
+    remove: js.UndefOr[scala.Boolean] = js.undefined,
+    target: stdLib.Element = null,
+    tetherOptions: tetherLib.tetherMod.TetherNs.ITetherOptions = null
+  ): IDropOptions = {
+    val __obj = js.Dynamic.literal()
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (blurDelay != null) __obj.updateDynamic("blurDelay")(blurDelay.asInstanceOf[js.Any])
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (closeDelay != null) __obj.updateDynamic("closeDelay")(closeDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainToScrollParent)) __obj.updateDynamic("constrainToScrollParent")(constrainToScrollParent)
+    if (!js.isUndefined(constrainToWindow)) __obj.updateDynamic("constrainToWindow")(constrainToWindow)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (focusDelay != null) __obj.updateDynamic("focusDelay")(focusDelay.asInstanceOf[js.Any])
+    if (hoverCloseDelay != null) __obj.updateDynamic("hoverCloseDelay")(hoverCloseDelay.asInstanceOf[js.Any])
+    if (hoverOpenDelay != null) __obj.updateDynamic("hoverOpenDelay")(hoverOpenDelay.asInstanceOf[js.Any])
+    if (openDelay != null) __obj.updateDynamic("openDelay")(openDelay.asInstanceOf[js.Any])
+    if (openOn != null) __obj.updateDynamic("openOn")(openOn)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (tetherOptions != null) __obj.updateDynamic("tetherOptions")(tetherOptions)
+    __obj.asInstanceOf[IDropOptions]
+  }
+}
+

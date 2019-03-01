@@ -22,13 +22,16 @@ object parse5LibStrings {
   sealed trait `#text` extends js.Object
   
   @js.native
-  sealed trait `limited-quirks` extends js.Object
+  sealed trait `limited-quirks`
+    extends parse5Lib.parse5Mod.DocumentMode
   
   @js.native
-  sealed trait `no-quirks` extends js.Object
+  sealed trait `no-quirks`
+    extends parse5Lib.parse5Mod.DocumentMode
   
   @js.native
-  sealed trait quirks extends js.Object
+  sealed trait quirks
+    extends parse5Lib.parse5Mod.DocumentMode
   
   @scala.inline
   def `#comment`: `#comment` = "#comment".asInstanceOf[`#comment`]

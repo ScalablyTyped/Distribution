@@ -38,3 +38,26 @@ trait LabelSettings extends js.Object {
   var previous: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LabelSettings {
+  @scala.inline
+  def apply(
+    cancel: java.lang.String = null,
+    current: java.lang.String = null,
+    finish: java.lang.String = null,
+    loading: java.lang.String = null,
+    next: java.lang.String = null,
+    pagination: java.lang.String = null,
+    previous: java.lang.String = null
+  ): LabelSettings = {
+    val __obj = js.Dynamic.literal()
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (current != null) __obj.updateDynamic("current")(current)
+    if (finish != null) __obj.updateDynamic("finish")(finish)
+    if (loading != null) __obj.updateDynamic("loading")(loading)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (pagination != null) __obj.updateDynamic("pagination")(pagination)
+    if (previous != null) __obj.updateDynamic("previous")(previous)
+    __obj.asInstanceOf[LabelSettings]
+  }
+}
+

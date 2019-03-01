@@ -12,3 +12,12 @@ trait GetSavedFileListData extends js.Object {
   var fileList: js.Array[File]
 }
 
+object GetSavedFileListData {
+  @scala.inline
+  def apply(fileList: js.Array[File]): GetSavedFileListData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileList")(fileList)
+    __obj.asInstanceOf[GetSavedFileListData]
+  }
+}
+

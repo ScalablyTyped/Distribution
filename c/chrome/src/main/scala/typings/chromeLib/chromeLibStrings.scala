@@ -25,10 +25,12 @@ object chromeLibStrings {
   sealed trait complete extends js.Object
   
   @js.native
-  sealed trait csp_report extends js.Object
+  sealed trait csp_report
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait currentTab extends js.Object
+  sealed trait currentTab
+    extends chromeLib.chromeNs.omniboxNs.OnInputEnteredDisposition
   
   @js.native
   sealed trait detect_important_content extends js.Object
@@ -37,13 +39,16 @@ object chromeLibStrings {
   sealed trait devtools extends js.Object
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait font
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait incognito_session_only extends js.Object
+  sealed trait incognito_session_only
+    extends chromeLib.chromeNs.contentSettingsNs.ScopeEnum
   
   @js.native
   sealed trait left extends js.Object
@@ -52,67 +57,80 @@ object chromeLibStrings {
   sealed trait loading extends js.Object
   
   @js.native
-  sealed trait main_frame extends js.Object
+  sealed trait main_frame
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait media extends js.Object
+  sealed trait media
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait mixed extends js.Object
   
   @js.native
-  sealed trait newBackgroundTab extends js.Object
+  sealed trait newBackgroundTab
+    extends chromeLib.chromeNs.omniboxNs.OnInputEnteredDisposition
   
   @js.native
-  sealed trait newForegroundTab extends js.Object
+  sealed trait newForegroundTab
+    extends chromeLib.chromeNs.omniboxNs.OnInputEnteredDisposition
   
   @js.native
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait off extends js.Object
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait other
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait panel extends js.Object
   
   @js.native
-  sealed trait ping extends js.Object
+  sealed trait ping
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait popup extends js.Object
   
   @js.native
-  sealed trait regular extends js.Object
+  sealed trait regular
+    extends chromeLib.chromeNs.contentSettingsNs.ScopeEnum
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait script
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait session_only extends js.Object
   
   @js.native
-  sealed trait stylesheet extends js.Object
+  sealed trait stylesheet
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait sub_frame extends js.Object
+  sealed trait sub_frame
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait websocket extends js.Object
+  sealed trait websocket
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
-  sealed trait xmlhttprequest extends js.Object
+  sealed trait xmlhttprequest
+    extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @scala.inline
   def allow: allow = "allow".asInstanceOf[allow]

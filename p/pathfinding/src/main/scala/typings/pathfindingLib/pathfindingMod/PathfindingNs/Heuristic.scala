@@ -9,3 +9,12 @@ trait Heuristic extends js.Object {
   var heuristic: js.UndefOr[js.Function2[/* dx */ scala.Double, /* dy */ scala.Double, scala.Double]] = js.undefined
 }
 
+object Heuristic {
+  @scala.inline
+  def apply(heuristic: js.Function2[/* dx */ scala.Double, /* dy */ scala.Double, scala.Double] = null): Heuristic = {
+    val __obj = js.Dynamic.literal()
+    if (heuristic != null) __obj.updateDynamic("heuristic")(heuristic)
+    __obj.asInstanceOf[Heuristic]
+  }
+}
+

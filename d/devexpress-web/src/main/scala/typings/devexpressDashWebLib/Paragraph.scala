@@ -46,3 +46,26 @@ trait Paragraph extends js.Object {
   var styleName: java.lang.String
 }
 
+object Paragraph {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    interval: Interval,
+    length: scala.Double,
+    listIndex: scala.Double,
+    listLevelIndex: scala.Double,
+    start: scala.Double,
+    styleName: java.lang.String
+  ): Paragraph = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("listIndex")(listIndex)
+    __obj.updateDynamic("listLevelIndex")(listLevelIndex)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("styleName")(styleName)
+    __obj.asInstanceOf[Paragraph]
+  }
+}
+

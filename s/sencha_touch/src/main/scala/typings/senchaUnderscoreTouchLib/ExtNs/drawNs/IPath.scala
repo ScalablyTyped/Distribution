@@ -215,3 +215,145 @@ trait IPath
   var transform: js.UndefOr[js.Function1[/* matrix */ js.UndefOr[IMatrix], scala.Unit]] = js.undefined
 }
 
+object IPath {
+  @scala.inline
+  def apply(
+    alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    arc: js.Function6[
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* radius */ js.UndefOr[scala.Double], 
+      /* startAngle */ js.UndefOr[scala.Double], 
+      /* endAngle */ js.UndefOr[scala.Double], 
+      /* anticlockwise */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    arcSvg: js.Function7[
+      /* rx */ js.UndefOr[scala.Double], 
+      /* ry */ js.UndefOr[scala.Double], 
+      /* rotation */ js.UndefOr[scala.Double], 
+      /* fA */ js.UndefOr[scala.Double], 
+      /* fS */ js.UndefOr[scala.Double], 
+      /* x2 */ js.UndefOr[scala.Double], 
+      /* y2 */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    arcTo: js.Function7[
+      /* x1 */ js.UndefOr[scala.Double], 
+      /* y1 */ js.UndefOr[scala.Double], 
+      /* x2 */ js.UndefOr[scala.Double], 
+      /* y2 */ js.UndefOr[scala.Double], 
+      /* rx */ js.UndefOr[scala.Double], 
+      /* ry */ js.UndefOr[scala.Double], 
+      /* rotation */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    bezierCurveTo: js.Function6[
+      /* cx1 */ js.UndefOr[scala.Double], 
+      /* cy1 */ js.UndefOr[scala.Double], 
+      /* cx2 */ js.UndefOr[scala.Double], 
+      /* cy2 */ js.UndefOr[scala.Double], 
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    clear: js.Function0[scala.Unit] = null,
+    clone: js.Function0[IPath] = null,
+    closePath: js.Function0[scala.Unit] = null,
+    config: js.Any = null,
+    destroy: js.Function0[scala.Unit] = null,
+    ellipse: js.Function8[
+      /* cx */ js.UndefOr[scala.Double], 
+      /* cy */ js.UndefOr[scala.Double], 
+      /* radiusX */ js.UndefOr[scala.Double], 
+      /* radiusY */ js.UndefOr[scala.Double], 
+      /* rotation */ js.UndefOr[scala.Double], 
+      /* startAngle */ js.UndefOr[scala.Double], 
+      /* endAngle */ js.UndefOr[scala.Double], 
+      /* anticlockwise */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    extend: java.lang.String = null,
+    fromStripes: js.Function1[/* stripes */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    fromSvgString: js.Function1[/* pathString */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    getDimension: js.Function1[/* target */ js.UndefOr[js.Any], _] = null,
+    getDimensionWithTransform: js.Function2[/* matrix */ js.UndefOr[IMatrix], /* target */ js.UndefOr[js.Any], _] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    isPointInPath: js.Function2[/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], scala.Boolean] = null,
+    lineTo: js.Function2[/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], scala.Unit] = null,
+    mixins: js.Any = null,
+    moveTo: js.Function2[/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], scala.Unit] = null,
+    platformConfig: js.Any = null,
+    quadraticCurveTo: js.Function4[
+      /* cx */ js.UndefOr[scala.Double], 
+      /* cy */ js.UndefOr[scala.Double], 
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    rect: js.Function4[
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* width */ js.UndefOr[scala.Double], 
+      /* height */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    toString: js.Function0[java.lang.String] = null,
+    toStripes: js.Function1[
+      /* target */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
+      senchaUnderscoreTouchLib.ExtNs.Array
+    ] = null,
+    transform: js.Function1[/* matrix */ js.UndefOr[IMatrix], scala.Unit] = null,
+    uses: senchaUnderscoreTouchLib.ExtNs.Array = null
+  ): IPath = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (arc != null) __obj.updateDynamic("arc")(arc)
+    if (arcSvg != null) __obj.updateDynamic("arcSvg")(arcSvg)
+    if (arcTo != null) __obj.updateDynamic("arcTo")(arcTo)
+    if (bezierCurveTo != null) __obj.updateDynamic("bezierCurveTo")(bezierCurveTo)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (clone != null) __obj.updateDynamic("clone")(clone)
+    if (closePath != null) __obj.updateDynamic("closePath")(closePath)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (ellipse != null) __obj.updateDynamic("ellipse")(ellipse)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (fromStripes != null) __obj.updateDynamic("fromStripes")(fromStripes)
+    if (fromSvgString != null) __obj.updateDynamic("fromSvgString")(fromSvgString)
+    if (getDimension != null) __obj.updateDynamic("getDimension")(getDimension)
+    if (getDimensionWithTransform != null) __obj.updateDynamic("getDimensionWithTransform")(getDimensionWithTransform)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (isPointInPath != null) __obj.updateDynamic("isPointInPath")(isPointInPath)
+    if (lineTo != null) __obj.updateDynamic("lineTo")(lineTo)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (moveTo != null) __obj.updateDynamic("moveTo")(moveTo)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (quadraticCurveTo != null) __obj.updateDynamic("quadraticCurveTo")(quadraticCurveTo)
+    if (rect != null) __obj.updateDynamic("rect")(rect)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (toString != null) __obj.updateDynamic("toString")(toString)
+    if (toStripes != null) __obj.updateDynamic("toStripes")(toStripes)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IPath]
+  }
+}
+

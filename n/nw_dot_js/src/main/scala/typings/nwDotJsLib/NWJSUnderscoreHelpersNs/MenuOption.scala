@@ -15,3 +15,12 @@ trait MenuOption extends js.Object {
   var `type`: java.lang.String
 }
 
+object MenuOption {
+  @scala.inline
+  def apply(`type`: java.lang.String): MenuOption = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[MenuOption]
+  }
+}
+

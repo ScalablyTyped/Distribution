@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object d3DashTipLibStrings {
   @js.native
-  sealed trait e extends js.Object
+  sealed trait e
+    extends d3DashTipLib.d3Mod.TooltipDirection
   
   @js.native
-  sealed trait n extends js.Object
+  sealed trait n
+    extends d3DashTipLib.d3Mod.TooltipDirection
   
   @js.native
-  sealed trait ne extends js.Object
+  sealed trait ne
+    extends d3DashTipLib.d3Mod.TooltipDirection
   
   @js.native
-  sealed trait nw extends js.Object
+  sealed trait nw
+    extends d3DashTipLib.d3Mod.TooltipDirection
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s
+    extends d3DashTipLib.d3Mod.TooltipDirection
   
   @js.native
-  sealed trait se extends js.Object
+  sealed trait se
+    extends d3DashTipLib.d3Mod.TooltipDirection
   
   @js.native
-  sealed trait sw extends js.Object
+  sealed trait sw
+    extends d3DashTipLib.d3Mod.TooltipDirection
   
   @js.native
-  sealed trait w extends js.Object
+  sealed trait w
+    extends d3DashTipLib.d3Mod.TooltipDirection
   
   @scala.inline
   def e: e = "e".asInstanceOf[e]

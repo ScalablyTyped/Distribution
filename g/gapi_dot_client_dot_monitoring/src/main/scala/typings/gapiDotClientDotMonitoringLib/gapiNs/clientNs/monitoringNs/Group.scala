@@ -24,3 +24,22 @@ trait Group extends js.Object {
   var parentName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Group {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    filter: java.lang.String = null,
+    isCluster: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    parentName: java.lang.String = null
+  ): Group = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (!js.isUndefined(isCluster)) __obj.updateDynamic("isCluster")(isCluster)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parentName != null) __obj.updateDynamic("parentName")(parentName)
+    __obj.asInstanceOf[Group]
+  }
+}
+

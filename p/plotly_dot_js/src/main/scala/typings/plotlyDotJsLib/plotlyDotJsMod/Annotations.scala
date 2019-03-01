@@ -225,3 +225,94 @@ trait Annotations extends Label {
   var yshift: scala.Double
 }
 
+object Annotations {
+  @scala.inline
+  def apply(
+    align: plotlyDotJsLib.plotlyDotJsLibStrings.left | plotlyDotJsLib.plotlyDotJsLibStrings.center | plotlyDotJsLib.plotlyDotJsLibStrings.right,
+    arrowcolor: java.lang.String,
+    arrowhead: scala.Double,
+    arrowside: plotlyDotJsLib.plotlyDotJsLibStrings.end | plotlyDotJsLib.plotlyDotJsLibStrings.start,
+    arrowsize: scala.Double,
+    arrowwidth: scala.Double,
+    ax: scala.Double,
+    axref: plotlyDotJsLib.plotlyDotJsLibStrings.pixel,
+    ay: scala.Double,
+    ayref: plotlyDotJsLib.plotlyDotJsLibStrings.pixel,
+    bgcolor: java.lang.String,
+    bordercolor: java.lang.String,
+    borderpad: scala.Double,
+    borderwidth: scala.Double,
+    captureevents: scala.Boolean,
+    clicktoshow: plotlyDotJsLib.plotlyDotJsLibNumbers.`false` | plotlyDotJsLib.plotlyDotJsLibStrings.onoff | plotlyDotJsLib.plotlyDotJsLibStrings.onout,
+    font: stdLib.Partial[Font],
+    height: scala.Double,
+    hoverlabel: stdLib.Partial[Label],
+    hovertext: java.lang.String,
+    opacity: scala.Double,
+    showarrow: scala.Boolean,
+    standoff: scala.Double,
+    startarrowhead: scala.Double,
+    startarrowsize: scala.Double,
+    startstandoff: scala.Double,
+    text: java.lang.String,
+    textangle: java.lang.String,
+    valign: plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom,
+    visible: scala.Boolean,
+    width: scala.Double,
+    x: scala.Double | java.lang.String,
+    xanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.left | plotlyDotJsLib.plotlyDotJsLibStrings.center | plotlyDotJsLib.plotlyDotJsLibStrings.right,
+    xclick: js.Any,
+    xref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.x,
+    xshift: scala.Double,
+    y: scala.Double | java.lang.String,
+    yanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom,
+    yclick: js.Any,
+    yref: plotlyDotJsLib.plotlyDotJsLibStrings.paper | plotlyDotJsLib.plotlyDotJsLibStrings.y,
+    yshift: scala.Double
+  ): Annotations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    __obj.updateDynamic("arrowcolor")(arrowcolor)
+    __obj.updateDynamic("arrowhead")(arrowhead)
+    __obj.updateDynamic("arrowside")(arrowside.asInstanceOf[js.Any])
+    __obj.updateDynamic("arrowsize")(arrowsize)
+    __obj.updateDynamic("arrowwidth")(arrowwidth)
+    __obj.updateDynamic("ax")(ax)
+    __obj.updateDynamic("axref")(axref)
+    __obj.updateDynamic("ay")(ay)
+    __obj.updateDynamic("ayref")(ayref)
+    __obj.updateDynamic("bgcolor")(bgcolor)
+    __obj.updateDynamic("bordercolor")(bordercolor)
+    __obj.updateDynamic("borderpad")(borderpad)
+    __obj.updateDynamic("borderwidth")(borderwidth)
+    __obj.updateDynamic("captureevents")(captureevents)
+    __obj.updateDynamic("clicktoshow")(clicktoshow.asInstanceOf[js.Any])
+    __obj.updateDynamic("font")(font)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("hoverlabel")(hoverlabel)
+    __obj.updateDynamic("hovertext")(hovertext)
+    __obj.updateDynamic("opacity")(opacity)
+    __obj.updateDynamic("showarrow")(showarrow)
+    __obj.updateDynamic("standoff")(standoff)
+    __obj.updateDynamic("startarrowhead")(startarrowhead)
+    __obj.updateDynamic("startarrowsize")(startarrowsize)
+    __obj.updateDynamic("startstandoff")(startstandoff)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("textangle")(textangle)
+    __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
+    __obj.updateDynamic("visible")(visible)
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
+    __obj.updateDynamic("xclick")(xclick)
+    __obj.updateDynamic("xref")(xref.asInstanceOf[js.Any])
+    __obj.updateDynamic("xshift")(xshift)
+    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.updateDynamic("yanchor")(yanchor.asInstanceOf[js.Any])
+    __obj.updateDynamic("yclick")(yclick)
+    __obj.updateDynamic("yref")(yref.asInstanceOf[js.Any])
+    __obj.updateDynamic("yshift")(yshift)
+    __obj.asInstanceOf[Annotations]
+  }
+}
+

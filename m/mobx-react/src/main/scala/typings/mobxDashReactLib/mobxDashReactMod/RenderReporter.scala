@@ -9,3 +9,12 @@ trait RenderReporter extends js.Object {
   def on(handler: js.Function1[/* data */ IRenderEvent, scala.Unit]): scala.Unit
 }
 
+object RenderReporter {
+  @scala.inline
+  def apply(on: js.Function1[js.Function1[/* data */ IRenderEvent, scala.Unit], scala.Unit]): RenderReporter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[RenderReporter]
+  }
+}
+

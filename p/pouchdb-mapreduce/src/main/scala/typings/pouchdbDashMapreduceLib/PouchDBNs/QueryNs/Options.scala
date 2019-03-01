@@ -51,3 +51,44 @@ trait Options[Content /* <: js.Object */, Reduction] extends js.Object {
   var startkey: js.UndefOr[js.Any] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[Content /* <: js.Object */, Reduction](
+    attachments: js.UndefOr[scala.Boolean] = js.undefined,
+    binary: js.UndefOr[scala.Boolean] = js.undefined,
+    conflicts: js.UndefOr[scala.Boolean] = js.undefined,
+    descending: js.UndefOr[scala.Boolean] = js.undefined,
+    endkey: js.Any = null,
+    group: js.UndefOr[scala.Boolean] = js.undefined,
+    group_level: scala.Int | scala.Double = null,
+    include_docs: js.UndefOr[scala.Boolean] = js.undefined,
+    inclusive_end: js.UndefOr[scala.Boolean] = js.undefined,
+    key: js.Any = null,
+    keys: js.Array[_] = null,
+    limit: scala.Int | scala.Double = null,
+    reduce: (pouchdbDashMapreduceLib.PouchDBNs.Reducer[Content, Reduction]) | pouchdbDashMapreduceLib.PouchDBNs.BuiltInReducers | scala.Boolean = null,
+    skip: scala.Int | scala.Double = null,
+    stale: pouchdbDashMapreduceLib.pouchdbDashMapreduceLibStrings.ok | pouchdbDashMapreduceLib.pouchdbDashMapreduceLibStrings.update_after = null,
+    startkey: js.Any = null
+  ): Options[Content, Reduction] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
+    if (endkey != null) __obj.updateDynamic("endkey")(endkey)
+    if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
+    if (group_level != null) __obj.updateDynamic("group_level")(group_level.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
+    if (!js.isUndefined(inclusive_end)) __obj.updateDynamic("inclusive_end")(inclusive_end)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (reduce != null) __obj.updateDynamic("reduce")(reduce.asInstanceOf[js.Any])
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (stale != null) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
+    if (startkey != null) __obj.updateDynamic("startkey")(startkey)
+    __obj.asInstanceOf[Options[Content, Reduction]]
+  }
+}
+

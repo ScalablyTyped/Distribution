@@ -13,3 +13,22 @@ trait ReadLineOptions extends js.Object {
   var terminal: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReadLineOptions {
+  @scala.inline
+  def apply(
+    input: nodeLib.NodeJSNs.ReadableStream,
+    completer: Completer = null,
+    historySize: scala.Int | scala.Double = null,
+    output: nodeLib.NodeJSNs.WritableStream = null,
+    terminal: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReadLineOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    if (completer != null) __obj.updateDynamic("completer")(completer)
+    if (historySize != null) __obj.updateDynamic("historySize")(historySize.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal)
+    __obj.asInstanceOf[ReadLineOptions]
+  }
+}
+

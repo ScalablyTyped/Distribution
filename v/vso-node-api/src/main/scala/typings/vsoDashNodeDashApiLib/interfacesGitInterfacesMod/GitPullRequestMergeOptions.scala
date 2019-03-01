@@ -12,3 +12,12 @@ trait GitPullRequestMergeOptions extends js.Object {
   var disableRenames: scala.Boolean
 }
 
+object GitPullRequestMergeOptions {
+  @scala.inline
+  def apply(disableRenames: scala.Boolean): GitPullRequestMergeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disableRenames")(disableRenames)
+    __obj.asInstanceOf[GitPullRequestMergeOptions]
+  }
+}
+

@@ -34,3 +34,54 @@ import scala.scalajs.js.annotation._
   var value: js.UndefOr[java.lang.String | scala.Double | scala.Boolean] = js.undefined
 }
 
+object SwitchBaseProps {
+  @scala.inline
+  def apply(
+    checkedIcon: reactLib.reactMod.ReactNs.ReactNode,
+    icon: reactLib.reactMod.ReactNs.ReactNode,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    checked: scala.Boolean | java.lang.String = null,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SwitchBaseClassKey]] = null,
+    defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
+    disableRipple: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    inputProps: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] = null,
+    inputRef: reactLib.reactMod.ReactNs.Ref[_] = null,
+    name: java.lang.String = null,
+    onChange: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
+      /* checked */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tabIndex: scala.Int | scala.Double = null,
+    value: java.lang.String | scala.Double | scala.Boolean = null
+  ): SwitchBaseProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkedIcon")(checkedIcon.asInstanceOf[js.Any])
+    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
+    if (!js.isUndefined(disableRipple)) __obj.updateDynamic("disableRipple")(disableRipple)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SwitchBaseProps]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_Collection extends js.Object {
   var monkInstance: monkLib.monkMod.IMonkManager
 }
 
+object Anon_Collection {
+  @scala.inline
+  def apply(collection: monkLib.monkMod.ICollection[_], monkInstance: monkLib.monkMod.IMonkManager): Anon_Collection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collection")(collection)
+    __obj.updateDynamic("monkInstance")(monkInstance)
+    __obj.asInstanceOf[Anon_Collection]
+  }
+}
+

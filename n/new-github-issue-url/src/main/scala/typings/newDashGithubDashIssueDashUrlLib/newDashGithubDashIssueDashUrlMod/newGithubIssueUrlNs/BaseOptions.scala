@@ -49,3 +49,26 @@ trait BaseOptions extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BaseOptions {
+  @scala.inline
+  def apply(
+    assignee: java.lang.String = null,
+    body: java.lang.String = null,
+    labels: js.Array[java.lang.String] = null,
+    milestone: java.lang.String = null,
+    projects: js.Array[java.lang.String] = null,
+    template: java.lang.String = null,
+    title: java.lang.String = null
+  ): BaseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (assignee != null) __obj.updateDynamic("assignee")(assignee)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (milestone != null) __obj.updateDynamic("milestone")(milestone)
+    if (projects != null) __obj.updateDynamic("projects")(projects)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[BaseOptions]
+  }
+}
+

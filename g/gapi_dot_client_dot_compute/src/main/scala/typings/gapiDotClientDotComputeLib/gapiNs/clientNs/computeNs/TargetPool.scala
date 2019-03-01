@@ -64,3 +64,36 @@ trait TargetPool extends js.Object {
   var sessionAffinity: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TargetPool {
+  @scala.inline
+  def apply(
+    backupPool: java.lang.String = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    failoverRatio: scala.Int | scala.Double = null,
+    healthChecks: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    instances: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    region: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    sessionAffinity: java.lang.String = null
+  ): TargetPool = {
+    val __obj = js.Dynamic.literal()
+    if (backupPool != null) __obj.updateDynamic("backupPool")(backupPool)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (failoverRatio != null) __obj.updateDynamic("failoverRatio")(failoverRatio.asInstanceOf[js.Any])
+    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (instances != null) __obj.updateDynamic("instances")(instances)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (sessionAffinity != null) __obj.updateDynamic("sessionAffinity")(sessionAffinity)
+    __obj.asInstanceOf[TargetPool]
+  }
+}
+

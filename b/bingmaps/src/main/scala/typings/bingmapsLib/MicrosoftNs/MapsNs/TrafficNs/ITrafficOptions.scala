@@ -19,3 +19,20 @@ trait ITrafficOptions extends js.Object {
   var opacity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ITrafficOptions {
+  @scala.inline
+  def apply(
+    flowVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    incidentsVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    legendVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    opacity: scala.Int | scala.Double = null
+  ): ITrafficOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(flowVisible)) __obj.updateDynamic("flowVisible")(flowVisible)
+    if (!js.isUndefined(incidentsVisible)) __obj.updateDynamic("incidentsVisible")(incidentsVisible)
+    if (!js.isUndefined(legendVisible)) __obj.updateDynamic("legendVisible")(legendVisible)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITrafficOptions]
+  }
+}
+

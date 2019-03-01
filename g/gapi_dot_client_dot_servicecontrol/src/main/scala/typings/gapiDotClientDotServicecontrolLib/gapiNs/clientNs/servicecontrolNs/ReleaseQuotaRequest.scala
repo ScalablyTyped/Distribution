@@ -16,3 +16,13 @@ trait ReleaseQuotaRequest extends js.Object {
   var serviceConfigId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReleaseQuotaRequest {
+  @scala.inline
+  def apply(releaseOperation: QuotaOperation = null, serviceConfigId: java.lang.String = null): ReleaseQuotaRequest = {
+    val __obj = js.Dynamic.literal()
+    if (releaseOperation != null) __obj.updateDynamic("releaseOperation")(releaseOperation)
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    __obj.asInstanceOf[ReleaseQuotaRequest]
+  }
+}
+

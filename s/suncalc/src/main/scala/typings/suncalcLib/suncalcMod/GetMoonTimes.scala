@@ -12,3 +12,15 @@ trait GetMoonTimes extends js.Object {
   var set: stdLib.Date
 }
 
+object GetMoonTimes {
+  @scala.inline
+  def apply(alwaysDown: scala.Boolean, alwaysUp: scala.Boolean, rise: stdLib.Date, set: stdLib.Date): GetMoonTimes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alwaysDown")(alwaysDown)
+    __obj.updateDynamic("alwaysUp")(alwaysUp)
+    __obj.updateDynamic("rise")(rise)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[GetMoonTimes]
+  }
+}
+

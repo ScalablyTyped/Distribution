@@ -38,3 +38,70 @@ import scala.scalajs.js.annotation._
   var y: Y
 }
 
+object PresentationAttributes {
+  @scala.inline
+  def apply[X, Y](
+    angle: scala.Double,
+    colorInterpolation: java.lang.String,
+    colorProfile: java.lang.String,
+    colorRendering: java.lang.String,
+    dx: scala.Double,
+    dy: scala.Double,
+    fill: java.lang.String,
+    fillOpacity: scala.Double | java.lang.String,
+    fontSize: scala.Double | java.lang.String,
+    fontSizeAdjust: scala.Double | java.lang.String,
+    fontWeight: rechartsLib.rechartsLibStrings.normal | rechartsLib.rechartsLibStrings.bold | rechartsLib.rechartsLibStrings.bolder | rechartsLib.rechartsLibStrings.lighter | rechartsLib.rechartsLibNumbers.`100` | rechartsLib.rechartsLibNumbers.`200` | rechartsLib.rechartsLibNumbers.`300` | rechartsLib.rechartsLibNumbers.`400` | rechartsLib.rechartsLibNumbers.`500` | rechartsLib.rechartsLibNumbers.`600` | rechartsLib.rechartsLibNumbers.`700` | rechartsLib.rechartsLibNumbers.`800` | rechartsLib.rechartsLibNumbers.`900` | rechartsLib.rechartsLibStrings.inherit,
+    height: scala.Double,
+    imageRendering: rechartsLib.rechartsLibStrings.auto | rechartsLib.rechartsLibStrings.optimizeSpeed | rechartsLib.rechartsLibStrings.optimizeQuality | rechartsLib.rechartsLibStrings.inherit,
+    kerning: scala.Double | java.lang.String,
+    opacity: scala.Double | java.lang.String,
+    r: scala.Double,
+    shapeRendering: rechartsLib.rechartsLibStrings.auto | rechartsLib.rechartsLibStrings.optimizeSpeed | rechartsLib.rechartsLibStrings.crispEdges | rechartsLib.rechartsLibStrings.geometricPrecision | rechartsLib.rechartsLibStrings.inherit,
+    stopOpacity: scala.Double | java.lang.String,
+    stroke: scala.Double | java.lang.String,
+    strokeDashoffset: scala.Double | java.lang.String,
+    strokeMiterlimit: scala.Double | java.lang.String,
+    strokeOpacity: scala.Double | java.lang.String,
+    strokeWidth: scala.Double | java.lang.String,
+    style: js.Object,
+    textRendering: rechartsLib.rechartsLibStrings.auto | rechartsLib.rechartsLibStrings.optimizeSpeed | rechartsLib.rechartsLibStrings.optimizeLegibility | rechartsLib.rechartsLibStrings.geometricPrecision | rechartsLib.rechartsLibStrings.inherit,
+    width: scala.Double,
+    wordSpacing: scala.Double | java.lang.String,
+    x: X,
+    y: Y
+  ): PresentationAttributes[X, Y] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("colorInterpolation")(colorInterpolation)
+    __obj.updateDynamic("colorProfile")(colorProfile)
+    __obj.updateDynamic("colorRendering")(colorRendering)
+    __obj.updateDynamic("dx")(dx)
+    __obj.updateDynamic("dy")(dy)
+    __obj.updateDynamic("fill")(fill)
+    __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    __obj.updateDynamic("fontSizeAdjust")(fontSizeAdjust.asInstanceOf[js.Any])
+    __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
+    __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
+    __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    __obj.updateDynamic("r")(r)
+    __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
+    __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
+    __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    __obj.updateDynamic("strokeDashoffset")(strokeDashoffset.asInstanceOf[js.Any])
+    __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
+    __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("textRendering")(textRendering.asInstanceOf[js.Any])
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
+    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PresentationAttributes[X, Y]]
+  }
+}
+

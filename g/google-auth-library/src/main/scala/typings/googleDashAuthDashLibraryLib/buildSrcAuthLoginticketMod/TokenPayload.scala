@@ -111,3 +111,44 @@ trait TokenPayload extends js.Object {
   var sub: java.lang.String
 }
 
+object TokenPayload {
+  @scala.inline
+  def apply(
+    aud: java.lang.String,
+    exp: scala.Double,
+    iat: scala.Double,
+    iss: java.lang.String,
+    sub: java.lang.String,
+    at_hash: java.lang.String = null,
+    azp: java.lang.String = null,
+    email: java.lang.String = null,
+    email_verified: js.UndefOr[scala.Boolean] = js.undefined,
+    family_name: java.lang.String = null,
+    given_name: java.lang.String = null,
+    hd: java.lang.String = null,
+    name: java.lang.String = null,
+    nonce: java.lang.String = null,
+    picture: java.lang.String = null,
+    profile: java.lang.String = null
+  ): TokenPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aud")(aud)
+    __obj.updateDynamic("exp")(exp)
+    __obj.updateDynamic("iat")(iat)
+    __obj.updateDynamic("iss")(iss)
+    __obj.updateDynamic("sub")(sub)
+    if (at_hash != null) __obj.updateDynamic("at_hash")(at_hash)
+    if (azp != null) __obj.updateDynamic("azp")(azp)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified)
+    if (family_name != null) __obj.updateDynamic("family_name")(family_name)
+    if (given_name != null) __obj.updateDynamic("given_name")(given_name)
+    if (hd != null) __obj.updateDynamic("hd")(hd)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (picture != null) __obj.updateDynamic("picture")(picture)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    __obj.asInstanceOf[TokenPayload]
+  }
+}
+

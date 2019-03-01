@@ -10,3 +10,13 @@ trait EditorImageBrowserSchemaModel extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EditorImageBrowserSchemaModel {
+  @scala.inline
+  def apply(fields: EditorImageBrowserSchemaModelFields = null, id: java.lang.String = null): EditorImageBrowserSchemaModel = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[EditorImageBrowserSchemaModel]
+  }
+}
+

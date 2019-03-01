@@ -12,3 +12,16 @@ trait TargetVpnGatewaysScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object TargetVpnGatewaysScopedList {
+  @scala.inline
+  def apply(
+    targetVpnGateways: js.Array[TargetVpnGateway] = null,
+    warning: gapiDotClientDotComputeLib.Anon_Code = null
+  ): TargetVpnGatewaysScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (targetVpnGateways != null) __obj.updateDynamic("targetVpnGateways")(targetVpnGateways)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[TargetVpnGatewaysScopedList]
+  }
+}
+

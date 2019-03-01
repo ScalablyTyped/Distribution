@@ -9,3 +9,12 @@ trait Anon_Window extends js.Object {
   var window: vscodeDashLanguageserverLib.libMainMod.RemoteWindow
 }
 
+object Anon_Window {
+  @scala.inline
+  def apply(window: vscodeDashLanguageserverLib.libMainMod.RemoteWindow): Anon_Window = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[Anon_Window]
+  }
+}
+

@@ -11,3 +11,18 @@ trait ICustomSwitch extends js.Object {
   var options: valueOrfunc[ICustomControlOption]
 }
 
+object ICustomSwitch {
+  @scala.inline
+  def apply(
+    component: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.switch,
+    defaultValue: scala.Boolean,
+    options: valueOrfunc[ICustomControlOption]
+  ): ICustomSwitch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("component")(component)
+    __obj.updateDynamic("defaultValue")(defaultValue)
+    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICustomSwitch]
+  }
+}
+

@@ -11,3 +11,28 @@ trait XAutoStyleFamily
   def insertStyle(Values: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues): XAutoStyle
 }
 
+object XAutoStyleFamily {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    insertStyle: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, XAutoStyle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAutoStyleFamily = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createEnumeration")(createEnumeration)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("insertStyle")(insertStyle)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAutoStyleFamily]
+  }
+}
+

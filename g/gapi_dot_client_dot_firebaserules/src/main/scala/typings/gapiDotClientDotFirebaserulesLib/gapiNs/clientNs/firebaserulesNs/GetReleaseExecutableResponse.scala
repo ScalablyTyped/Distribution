@@ -18,3 +18,22 @@ trait GetReleaseExecutableResponse extends js.Object {
   var updateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetReleaseExecutableResponse {
+  @scala.inline
+  def apply(
+    executable: java.lang.String = null,
+    executableVersion: java.lang.String = null,
+    language: java.lang.String = null,
+    rulesetName: java.lang.String = null,
+    updateTime: java.lang.String = null
+  ): GetReleaseExecutableResponse = {
+    val __obj = js.Dynamic.literal()
+    if (executable != null) __obj.updateDynamic("executable")(executable)
+    if (executableVersion != null) __obj.updateDynamic("executableVersion")(executableVersion)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (rulesetName != null) __obj.updateDynamic("rulesetName")(rulesetName)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    __obj.asInstanceOf[GetReleaseExecutableResponse]
+  }
+}
+

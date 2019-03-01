@@ -12,3 +12,13 @@ trait CellAddress extends js.Object {
   var r: scala.Double
 }
 
+object CellAddress {
+  @scala.inline
+  def apply(c: scala.Double, r: scala.Double): CellAddress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("c")(c)
+    __obj.updateDynamic("r")(r)
+    __obj.asInstanceOf[CellAddress]
+  }
+}
+

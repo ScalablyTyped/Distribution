@@ -80,3 +80,41 @@ trait IOverlayableProps extends IOverlayLifecycleProps {
   var usePortal: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IOverlayableProps {
+  @scala.inline
+  def apply(
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    canEscapeKeyClose: js.UndefOr[scala.Boolean] = js.undefined,
+    enforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
+    onClose: js.Function1[
+      /* event */ js.UndefOr[reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]], 
+      scala.Unit
+    ] = null,
+    onClosed: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
+    onClosing: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
+    onOpened: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
+    onOpening: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
+    portalClassName: java.lang.String = null,
+    portalContainer: reactLib.HTMLElement = null,
+    transitionDuration: scala.Int | scala.Double = null,
+    usePortal: js.UndefOr[scala.Boolean] = js.undefined
+  ): IOverlayableProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(canEscapeKeyClose)) __obj.updateDynamic("canEscapeKeyClose")(canEscapeKeyClose)
+    if (!js.isUndefined(enforceFocus)) __obj.updateDynamic("enforceFocus")(enforceFocus)
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
+    if (onClosing != null) __obj.updateDynamic("onClosing")(onClosing)
+    if (onOpened != null) __obj.updateDynamic("onOpened")(onOpened)
+    if (onOpening != null) __obj.updateDynamic("onOpening")(onOpening)
+    if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName)
+    if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal)
+    __obj.asInstanceOf[IOverlayableProps]
+  }
+}
+

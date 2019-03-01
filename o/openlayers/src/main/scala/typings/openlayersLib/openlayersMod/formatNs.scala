@@ -730,6 +730,8 @@ object formatNs extends js.Object {
     def readProjection(source: stdLib.Node): openlayersLib.openlayersMod.projNs.Projection = js.native
   }
   
+  trait IGCZ extends js.Object
+  
   /**
     * @classdesc
     * Abstract base class; normally only used for creating subclasses and not
@@ -2257,9 +2259,5 @@ object formatNs extends js.Object {
   type GeoJSONFeatureCollection = stdLib.JSON
   type GeoJSONGeometry = stdLib.JSON
   type GeoJSONGeometryCollection = stdLib.JSON
-  /**
-    * IGC altitude/z. One of 'barometric', 'gps', 'none'.
-    */
-  type IGCZ = openlayersLib.openlayersLibStrings.barometric | openlayersLib.openlayersLibStrings.gps | openlayersLib.openlayersLibStrings.none
 }
 

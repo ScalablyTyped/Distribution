@@ -35,3 +35,29 @@ trait XSubmission
   def submitWithInteraction(aHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler): scala.Unit
 }
 
+object XSubmission {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addSubmissionVetoListener: js.Function1[XSubmissionVetoListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSubmissionVetoListener: js.Function1[XSubmissionVetoListener, scala.Unit],
+    submit: js.Function0[scala.Unit],
+    submitWithInteraction: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      scala.Unit
+    ]
+  ): XSubmission = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addSubmissionVetoListener")(addSubmissionVetoListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeSubmissionVetoListener")(removeSubmissionVetoListener)
+    __obj.updateDynamic("submit")(submit)
+    __obj.updateDynamic("submitWithInteraction")(submitWithInteraction)
+    __obj.asInstanceOf[XSubmission]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Mappings extends js.Object {
   var JSXElement: jscodeshiftLib.srcCollectionsJSXElementMod.MappingMethods
 }
 
+object Mappings {
+  @scala.inline
+  def apply(JSXElement: jscodeshiftLib.srcCollectionsJSXElementMod.MappingMethods): Mappings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("JSXElement")(JSXElement)
+    __obj.asInstanceOf[Mappings]
+  }
+}
+

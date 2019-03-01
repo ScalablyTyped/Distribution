@@ -51,3 +51,38 @@ trait IServerConfig extends IConfig {
   var keepaliveInterval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IServerConfig {
+  @scala.inline
+  def apply(
+    httpServer: nodeLib.httpMod.Server | nodeLib.httpsMod.Server | (js.Array[nodeLib.httpMod.Server | nodeLib.httpsMod.Server]),
+    assembleFragments: js.UndefOr[scala.Boolean] = js.undefined,
+    autoAcceptConnections: js.UndefOr[scala.Boolean] = js.undefined,
+    closeTimeout: scala.Int | scala.Double = null,
+    disableNagleAlgorithm: js.UndefOr[scala.Boolean] = js.undefined,
+    dropConnectionOnKeepaliveTimeout: js.UndefOr[scala.Boolean] = js.undefined,
+    fragmentOutgoingMessages: js.UndefOr[scala.Boolean] = js.undefined,
+    fragmentationThreshold: scala.Int | scala.Double = null,
+    keepalive: js.UndefOr[scala.Boolean] = js.undefined,
+    keepaliveGracePeriod: scala.Int | scala.Double = null,
+    keepaliveInterval: scala.Int | scala.Double = null,
+    maxReceivedFrameSize: scala.Int | scala.Double = null,
+    maxReceivedMessageSize: scala.Int | scala.Double = null
+  ): IServerConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("httpServer")(httpServer.asInstanceOf[js.Any])
+    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments)
+    if (!js.isUndefined(autoAcceptConnections)) __obj.updateDynamic("autoAcceptConnections")(autoAcceptConnections)
+    if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableNagleAlgorithm)) __obj.updateDynamic("disableNagleAlgorithm")(disableNagleAlgorithm)
+    if (!js.isUndefined(dropConnectionOnKeepaliveTimeout)) __obj.updateDynamic("dropConnectionOnKeepaliveTimeout")(dropConnectionOnKeepaliveTimeout)
+    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages)
+    if (fragmentationThreshold != null) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive)
+    if (keepaliveGracePeriod != null) __obj.updateDynamic("keepaliveGracePeriod")(keepaliveGracePeriod.asInstanceOf[js.Any])
+    if (keepaliveInterval != null) __obj.updateDynamic("keepaliveInterval")(keepaliveInterval.asInstanceOf[js.Any])
+    if (maxReceivedFrameSize != null) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.asInstanceOf[js.Any])
+    if (maxReceivedMessageSize != null) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IServerConfig]
+  }
+}
+

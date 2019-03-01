@@ -18,3 +18,20 @@ trait XControlNotificationListener
   def controlEvent(Event: ControlEvent): scala.Unit
 }
 
+object XControlNotificationListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    controlEvent: js.Function1[ControlEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XControlNotificationListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("controlEvent")(controlEvent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XControlNotificationListener]
+  }
+}
+

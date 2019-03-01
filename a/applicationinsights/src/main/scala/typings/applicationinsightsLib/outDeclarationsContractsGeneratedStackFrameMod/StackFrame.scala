@@ -28,3 +28,22 @@ trait StackFrame extends js.Object {
   var method: java.lang.String
 }
 
+object StackFrame {
+  @scala.inline
+  def apply(
+    assembly: java.lang.String,
+    fileName: java.lang.String,
+    level: scala.Double,
+    line: scala.Double,
+    method: java.lang.String
+  ): StackFrame = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("assembly")(assembly)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("method")(method)
+    __obj.asInstanceOf[StackFrame]
+  }
+}
+

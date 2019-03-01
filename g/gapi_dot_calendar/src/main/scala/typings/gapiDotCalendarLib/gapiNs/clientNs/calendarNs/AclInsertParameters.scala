@@ -12,3 +12,14 @@ trait AclInsertParameters extends js.Object {
   var scope: gapiDotCalendarLib.Anon_TypeValue
 }
 
+object AclInsertParameters {
+  @scala.inline
+  def apply(calendarId: java.lang.String, role: AccessRole, scope: gapiDotCalendarLib.Anon_TypeValue): AclInsertParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calendarId")(calendarId)
+    __obj.updateDynamic("role")(role)
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[AclInsertParameters]
+  }
+}
+

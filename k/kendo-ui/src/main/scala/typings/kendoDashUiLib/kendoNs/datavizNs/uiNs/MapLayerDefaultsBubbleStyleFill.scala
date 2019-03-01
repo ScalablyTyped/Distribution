@@ -10,3 +10,13 @@ trait MapLayerDefaultsBubbleStyleFill extends js.Object {
   var opacity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MapLayerDefaultsBubbleStyleFill {
+  @scala.inline
+  def apply(color: java.lang.String = null, opacity: scala.Int | scala.Double = null): MapLayerDefaultsBubbleStyleFill = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapLayerDefaultsBubbleStyleFill]
+  }
+}
+

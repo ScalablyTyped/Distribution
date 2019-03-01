@@ -45,3 +45,46 @@ trait GraphicObjectShape
   var Transparency: scala.Double
 }
 
+object GraphicObjectShape {
+  @scala.inline
+  def apply(
+    AdjustBlue: scala.Double,
+    AdjustContrast: scala.Double,
+    AdjustGreen: scala.Double,
+    AdjustLuminance: scala.Double,
+    AdjustRed: scala.Double,
+    Gamma: scala.Double,
+    Graphic: activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
+    GraphicColorMode: ColorMode,
+    GraphicObjectFillBitmap: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XBitmap,
+    GraphicStreamURL: java.lang.String,
+    GraphicURL: java.lang.String,
+    ImageMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer,
+    RotationDescriptor: RotationDescriptor = null,
+    ShadowProperties: ShadowProperties = null,
+    Shape: Shape = null,
+    Transparency: scala.Double,
+    Text: Text = null
+  ): GraphicObjectShape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AdjustBlue")(AdjustBlue)
+    __obj.updateDynamic("AdjustContrast")(AdjustContrast)
+    __obj.updateDynamic("AdjustGreen")(AdjustGreen)
+    __obj.updateDynamic("AdjustLuminance")(AdjustLuminance)
+    __obj.updateDynamic("AdjustRed")(AdjustRed)
+    __obj.updateDynamic("Gamma")(Gamma)
+    __obj.updateDynamic("Graphic")(Graphic)
+    __obj.updateDynamic("GraphicColorMode")(GraphicColorMode)
+    __obj.updateDynamic("GraphicObjectFillBitmap")(GraphicObjectFillBitmap)
+    __obj.updateDynamic("GraphicStreamURL")(GraphicStreamURL)
+    __obj.updateDynamic("GraphicURL")(GraphicURL)
+    __obj.updateDynamic("ImageMap")(ImageMap)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
+    __obj.updateDynamic("Transparency")(Transparency)
+    js.Dynamic.global.Object.assign(__obj, Text)
+    __obj.asInstanceOf[GraphicObjectShape]
+  }
+}
+

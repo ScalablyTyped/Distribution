@@ -10,3 +10,12 @@ trait ISemanticFilter extends js.Object {
   var whereItems: js.UndefOr[js.Object] = js.undefined
 }
 
+object ISemanticFilter {
+  @scala.inline
+  def apply(whereItems: js.Object = null): ISemanticFilter = {
+    val __obj = js.Dynamic.literal()
+    if (whereItems != null) __obj.updateDynamic("whereItems")(whereItems)
+    __obj.asInstanceOf[ISemanticFilter]
+  }
+}
+

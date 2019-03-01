@@ -33,3 +33,24 @@ trait LContext extends js.Object {
   var nodeIndex: scala.Double
 }
 
+object LContext {
+  @scala.inline
+  def apply(
+    lView: atAngularCoreLib.srcRender3InterfacesViewMod.LView,
+    native: atAngularCoreLib.srcRender3InterfacesRendererMod.RElement,
+    nodeIndex: scala.Double,
+    component: js.Object = null,
+    directives: js.Array[_] = null,
+    localRefs: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): LContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lView")(lView)
+    __obj.updateDynamic("native")(native)
+    __obj.updateDynamic("nodeIndex")(nodeIndex)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (localRefs != null) __obj.updateDynamic("localRefs")(localRefs)
+    __obj.asInstanceOf[LContext]
+  }
+}
+

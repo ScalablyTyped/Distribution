@@ -30,3 +30,18 @@ trait TopBottomConditionalFormatLoadOptions extends js.Object {
   var rule: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TopBottomConditionalFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ConditionalRangeFormatLoadOptions = null,
+    rule: js.UndefOr[scala.Boolean] = js.undefined
+  ): TopBottomConditionalFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(rule)) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[TopBottomConditionalFormatLoadOptions]
+  }
+}
+

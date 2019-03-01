@@ -12,3 +12,20 @@ trait AadOauthTokenRequest extends js.Object {
   var token: java.lang.String
 }
 
+object AadOauthTokenRequest {
+  @scala.inline
+  def apply(
+    refresh: scala.Boolean,
+    resource: java.lang.String,
+    tenantId: java.lang.String,
+    token: java.lang.String
+  ): AadOauthTokenRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("refresh")(refresh)
+    __obj.updateDynamic("resource")(resource)
+    __obj.updateDynamic("tenantId")(tenantId)
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[AadOauthTokenRequest]
+  }
+}
+

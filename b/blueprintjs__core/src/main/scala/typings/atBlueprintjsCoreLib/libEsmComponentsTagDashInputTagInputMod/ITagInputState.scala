@@ -11,3 +11,14 @@ trait ITagInputState extends js.Object {
   var isInputFocused: scala.Boolean
 }
 
+object ITagInputState {
+  @scala.inline
+  def apply(activeIndex: scala.Double, inputValue: java.lang.String, isInputFocused: scala.Boolean): ITagInputState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activeIndex")(activeIndex)
+    __obj.updateDynamic("inputValue")(inputValue)
+    __obj.updateDynamic("isInputFocused")(isInputFocused)
+    __obj.asInstanceOf[ITagInputState]
+  }
+}
+

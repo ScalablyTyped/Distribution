@@ -44,3 +44,28 @@ trait IEditableOptions extends js.Object {
   var theme: java.lang.String
 }
 
+object IEditableOptions {
+  @scala.inline
+  def apply(
+    activate: java.lang.String,
+    activationEvent: java.lang.String,
+    blurElem: java.lang.String,
+    blurForm: java.lang.String,
+    buttons: java.lang.String,
+    icon_set: java.lang.String,
+    isDisabled: scala.Boolean,
+    theme: java.lang.String
+  ): IEditableOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activate")(activate)
+    __obj.updateDynamic("activationEvent")(activationEvent)
+    __obj.updateDynamic("blurElem")(blurElem)
+    __obj.updateDynamic("blurForm")(blurForm)
+    __obj.updateDynamic("buttons")(buttons)
+    __obj.updateDynamic("icon_set")(icon_set)
+    __obj.updateDynamic("isDisabled")(isDisabled)
+    __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[IEditableOptions]
+  }
+}
+

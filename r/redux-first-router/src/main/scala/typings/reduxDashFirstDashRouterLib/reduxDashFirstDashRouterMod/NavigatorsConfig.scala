@@ -23,3 +23,32 @@ trait NavigatorsConfig[TKeys, TState] extends js.Object {
   def patchNavigators(navigators: Navigators[TState]): scala.Unit
 }
 
+object NavigatorsConfig {
+  @scala.inline
+  def apply[TKeys, TState](
+    actionToNavigation: js.Function4[
+      Navigators[TState], 
+      js.Object, 
+      Nullable[NavigationAction], 
+      Nullable[Route[TKeys, TState]], 
+      js.Object
+    ],
+    navigationToAction: js.Function4[
+      Navigators[TState], 
+      reduxLib.reduxMod.Store[TState, reduxLib.reduxMod.AnyAction], 
+      RoutesMap[TKeys, TState], 
+      js.Object, 
+      reduxDashFirstDashRouterLib.Anon_Action
+    ],
+    navigators: Navigators[TState],
+    patchNavigators: js.Function1[Navigators[TState], scala.Unit]
+  ): NavigatorsConfig[TKeys, TState] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actionToNavigation")(actionToNavigation)
+    __obj.updateDynamic("navigationToAction")(navigationToAction)
+    __obj.updateDynamic("navigators")(navigators)
+    __obj.updateDynamic("patchNavigators")(patchNavigators)
+    __obj.asInstanceOf[NavigatorsConfig[TKeys, TState]]
+  }
+}
+

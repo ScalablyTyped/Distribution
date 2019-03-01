@@ -29,3 +29,24 @@ trait ExtensionCategory extends js.Object {
   var parentCategoryName: java.lang.String
 }
 
+object ExtensionCategory {
+  @scala.inline
+  def apply(
+    associatedProducts: js.Array[java.lang.String],
+    categoryId: scala.Double,
+    categoryName: java.lang.String,
+    language: java.lang.String,
+    languageTitles: js.Array[CategoryLanguageTitle],
+    parentCategoryName: java.lang.String
+  ): ExtensionCategory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("associatedProducts")(associatedProducts)
+    __obj.updateDynamic("categoryId")(categoryId)
+    __obj.updateDynamic("categoryName")(categoryName)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("languageTitles")(languageTitles)
+    __obj.updateDynamic("parentCategoryName")(parentCategoryName)
+    __obj.asInstanceOf[ExtensionCategory]
+  }
+}
+

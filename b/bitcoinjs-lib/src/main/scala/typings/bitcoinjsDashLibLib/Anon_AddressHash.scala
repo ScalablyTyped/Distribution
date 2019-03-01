@@ -15,3 +15,26 @@ trait Anon_AddressHash extends js.Object {
   var witness: js.Array[nodeLib.Buffer]
 }
 
+object Anon_AddressHash {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    hash: nodeLib.Buffer,
+    input: nodeLib.Buffer,
+    output: nodeLib.Buffer,
+    pubkey: nodeLib.Buffer,
+    signature: nodeLib.Buffer,
+    witness: js.Array[nodeLib.Buffer]
+  ): Anon_AddressHash = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("input")(input)
+    __obj.updateDynamic("output")(output)
+    __obj.updateDynamic("pubkey")(pubkey)
+    __obj.updateDynamic("signature")(signature)
+    __obj.updateDynamic("witness")(witness)
+    __obj.asInstanceOf[Anon_AddressHash]
+  }
+}
+

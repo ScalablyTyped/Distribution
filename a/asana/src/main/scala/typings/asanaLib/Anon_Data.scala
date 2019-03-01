@@ -10,3 +10,13 @@ trait Anon_Data[T /* <: asanaLib.asanaMod.asanaNs.resourcesNs.Resource */] exten
   var next_page: js.UndefOr[asanaLib.asanaMod.asanaNs.resourcesNs.NextPage] = js.undefined
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply[T /* <: asanaLib.asanaMod.asanaNs.resourcesNs.Resource */](data: js.Array[T], next_page: asanaLib.asanaMod.asanaNs.resourcesNs.NextPage = null): Anon_Data[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (next_page != null) __obj.updateDynamic("next_page")(next_page)
+    __obj.asInstanceOf[Anon_Data[T]]
+  }
+}
+

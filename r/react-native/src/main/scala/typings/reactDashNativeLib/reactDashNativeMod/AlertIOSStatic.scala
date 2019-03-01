@@ -76,7 +76,15 @@ trait AlertIOSStatic extends js.Object {
     callbackOrButtons: js.Array[AlertIOSButton],
     `type`: AlertType,
     defaultValue: java.lang.String,
-    keyboardType: KeyboardType | KeyboardTypeIOS
+    keyboardType: KeyboardType
+  ): scala.Unit = js.native
+  def prompt(
+    title: java.lang.String,
+    message: java.lang.String,
+    callbackOrButtons: js.Array[AlertIOSButton],
+    `type`: AlertType,
+    defaultValue: java.lang.String,
+    keyboardType: KeyboardTypeIOS
   ): scala.Unit = js.native
   def prompt(
     title: java.lang.String,
@@ -102,7 +110,15 @@ trait AlertIOSStatic extends js.Object {
     callbackOrButtons: js.Function1[/* value */ java.lang.String, scala.Unit],
     `type`: AlertType,
     defaultValue: java.lang.String,
-    keyboardType: KeyboardType | KeyboardTypeIOS
+    keyboardType: KeyboardType
+  ): scala.Unit = js.native
+  def prompt(
+    title: java.lang.String,
+    message: java.lang.String,
+    callbackOrButtons: js.Function1[/* value */ java.lang.String, scala.Unit],
+    `type`: AlertType,
+    defaultValue: java.lang.String,
+    keyboardType: KeyboardTypeIOS
   ): scala.Unit = js.native
 }
 

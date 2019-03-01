@@ -44,3 +44,26 @@ trait CandidateWindowParameterProperties extends js.Object {
   var windowPosition: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CandidateWindowParameterProperties {
+  @scala.inline
+  def apply(
+    auxiliaryText: java.lang.String = null,
+    auxiliaryTextVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    cursorVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    pageSize: scala.Int | scala.Double = null,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    windowPosition: java.lang.String = null
+  ): CandidateWindowParameterProperties = {
+    val __obj = js.Dynamic.literal()
+    if (auxiliaryText != null) __obj.updateDynamic("auxiliaryText")(auxiliaryText)
+    if (!js.isUndefined(auxiliaryTextVisible)) __obj.updateDynamic("auxiliaryTextVisible")(auxiliaryTextVisible)
+    if (!js.isUndefined(cursorVisible)) __obj.updateDynamic("cursorVisible")(cursorVisible)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (windowPosition != null) __obj.updateDynamic("windowPosition")(windowPosition)
+    __obj.asInstanceOf[CandidateWindowParameterProperties]
+  }
+}
+

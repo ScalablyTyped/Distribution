@@ -10,31 +10,41 @@ object antdLibNumbers {
   sealed trait `0` extends js.Object
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends antdLib.libListMod.ColumnCount
   
   @js.native
-  sealed trait `12` extends js.Object
+  sealed trait `12`
+    extends antdLib.libListMod.ColumnCount
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends antdLib.libListMod.ColumnCount
   
   @js.native
-  sealed trait `24` extends js.Object
+  sealed trait `24`
+    extends antdLib.libListMod.ColumnCount
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends antdLib.libListMod.ColumnCount
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends antdLib.libListMod.ColumnCount
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends antdLib.libListMod.ColumnCount
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends antdLib.libListMod.ColumnCount
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends antdLib.libTreeDirectoryTreeMod.ExpandAction
+       with antdLib.libStatisticUtilsMod._Formatter
   
   @js.native
   sealed trait `true` extends js.Object

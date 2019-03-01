@@ -13,3 +13,22 @@ trait RadiusPacket extends js.Object {
   var raw_attributes: js.Array[js.Array[_]]
 }
 
+object RadiusPacket {
+  @scala.inline
+  def apply(
+    attributes: js.Any,
+    code: java.lang.String,
+    identifier: scala.Double,
+    length: scala.Double,
+    raw_attributes: js.Array[js.Array[_]]
+  ): RadiusPacket = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attributes")(attributes)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("identifier")(identifier)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("raw_attributes")(raw_attributes)
+    __obj.asInstanceOf[RadiusPacket]
+  }
+}
+

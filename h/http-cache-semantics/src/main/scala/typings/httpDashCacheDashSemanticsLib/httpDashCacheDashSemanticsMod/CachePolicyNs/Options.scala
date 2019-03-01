@@ -43,3 +43,22 @@ trait Options extends js.Object {
   var trustServerDate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    cacheHeuristic: scala.Int | scala.Double = null,
+    ignoreCargoCult: js.UndefOr[scala.Boolean] = js.undefined,
+    immutableMinTimeToLive: scala.Int | scala.Double = null,
+    shared: js.UndefOr[scala.Boolean] = js.undefined,
+    trustServerDate: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (cacheHeuristic != null) __obj.updateDynamic("cacheHeuristic")(cacheHeuristic.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreCargoCult)) __obj.updateDynamic("ignoreCargoCult")(ignoreCargoCult)
+    if (immutableMinTimeToLive != null) __obj.updateDynamic("immutableMinTimeToLive")(immutableMinTimeToLive.asInstanceOf[js.Any])
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
+    if (!js.isUndefined(trustServerDate)) __obj.updateDynamic("trustServerDate")(trustServerDate)
+    __obj.asInstanceOf[Options]
+  }
+}
+

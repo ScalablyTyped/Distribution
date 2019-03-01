@@ -12,3 +12,20 @@ trait StockChartPlotArea extends js.Object {
   var opacity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StockChartPlotArea {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: StockChartPlotAreaBorder = null,
+    margin: scala.Double | js.Any = null,
+    opacity: scala.Int | scala.Double = null
+  ): StockChartPlotArea = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StockChartPlotArea]
+  }
+}
+

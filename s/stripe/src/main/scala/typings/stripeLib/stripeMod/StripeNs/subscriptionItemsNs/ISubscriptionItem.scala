@@ -32,3 +32,23 @@ trait ISubscriptionItem
   var quantity: scala.Double
 }
 
+object ISubscriptionItem {
+  @scala.inline
+  def apply(
+    created: scala.Double,
+    id: java.lang.String,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.subscription_item,
+    plan: stripeLib.stripeMod.StripeNs.plansNs.IPlan,
+    quantity: scala.Double
+  ): ISubscriptionItem = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("plan")(plan)
+    __obj.updateDynamic("quantity")(quantity)
+    __obj.asInstanceOf[ISubscriptionItem]
+  }
+}
+

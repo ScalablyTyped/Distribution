@@ -18,3 +18,22 @@ trait AppRestrictionsSchemaRestrictionRestrictionValue extends js.Object {
   var valueString: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppRestrictionsSchemaRestrictionRestrictionValue {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String = null,
+    valueBool: js.UndefOr[scala.Boolean] = js.undefined,
+    valueInteger: scala.Int | scala.Double = null,
+    valueMultiselect: js.Array[java.lang.String] = null,
+    valueString: java.lang.String = null
+  ): AppRestrictionsSchemaRestrictionRestrictionValue = {
+    val __obj = js.Dynamic.literal()
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(valueBool)) __obj.updateDynamic("valueBool")(valueBool)
+    if (valueInteger != null) __obj.updateDynamic("valueInteger")(valueInteger.asInstanceOf[js.Any])
+    if (valueMultiselect != null) __obj.updateDynamic("valueMultiselect")(valueMultiselect)
+    if (valueString != null) __obj.updateDynamic("valueString")(valueString)
+    __obj.asInstanceOf[AppRestrictionsSchemaRestrictionRestrictionValue]
+  }
+}
+

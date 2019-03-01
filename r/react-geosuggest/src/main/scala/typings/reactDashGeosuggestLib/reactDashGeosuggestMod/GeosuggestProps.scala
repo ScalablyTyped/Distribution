@@ -61,3 +61,95 @@ import scala.scalajs.js.annotation._
   var types: js.UndefOr[js.Array[QueryType]] = js.undefined
 }
 
+object GeosuggestProps {
+  @scala.inline
+  def apply(
+    autoActivateFirstSuggest: js.UndefOr[scala.Boolean] = js.undefined,
+    autoComplete: java.lang.String = null,
+    bounds: googlemapsLib.googleNs.mapsNs.LatLngBounds = null,
+    className: java.lang.String = null,
+    country: java.lang.String | js.Array[java.lang.String] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fixtures: js.Array[Fixture] = null,
+    getSuggestLabel: js.Function1[
+      /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction, 
+      java.lang.String
+    ] = null,
+    googleMaps: reactDashGeosuggestLib.Anon_Adsense = null,
+    highlightMatch: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreTab: js.UndefOr[scala.Boolean] = js.undefined,
+    initialValue: java.lang.String = null,
+    inputClassName: java.lang.String = null,
+    label: java.lang.String = null,
+    location: googlemapsLib.googleNs.mapsNs.LatLng = null,
+    maxFixtures: scala.Int | scala.Double = null,
+    minLength: scala.Int | scala.Double = null,
+    onActivateSuggest: js.Function1[/* suggest */ Suggest, scala.Unit] = null,
+    onBlur: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    onChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    onFocus: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    onKeyDown: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onKeyPress: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onSuggestNoResults: js.Function1[/* userInput */ java.lang.String, scala.Unit] = null,
+    onSuggestSelect: js.Function1[/* suggest */ Suggest, scala.Unit] = null,
+    onUpdateSuggests: js.Function2[/* suggests */ js.Any, /* activeSuggest */ js.Any, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    queryDelay: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null,
+    renderSuggestItem: js.Function1[
+      /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction, 
+      _
+    ] = null,
+    skipSuggest: js.Function1[
+      /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction, 
+      scala.Boolean
+    ] = null,
+    style: Styles = null,
+    suggestItemActiveClassName: java.lang.String = null,
+    suggestItemClassName: java.lang.String = null,
+    suggestsClassName: java.lang.String = null,
+    suggestsHiddenClassName: java.lang.String = null,
+    types: js.Array[QueryType] = null
+  ): GeosuggestProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoActivateFirstSuggest)) __obj.updateDynamic("autoActivateFirstSuggest")(autoActivateFirstSuggest)
+    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (fixtures != null) __obj.updateDynamic("fixtures")(fixtures)
+    if (getSuggestLabel != null) __obj.updateDynamic("getSuggestLabel")(getSuggestLabel)
+    if (googleMaps != null) __obj.updateDynamic("googleMaps")(googleMaps)
+    if (!js.isUndefined(highlightMatch)) __obj.updateDynamic("highlightMatch")(highlightMatch)
+    if (!js.isUndefined(ignoreTab)) __obj.updateDynamic("ignoreTab")(ignoreTab)
+    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue)
+    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (maxFixtures != null) __obj.updateDynamic("maxFixtures")(maxFixtures.asInstanceOf[js.Any])
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (onActivateSuggest != null) __obj.updateDynamic("onActivateSuggest")(onActivateSuggest)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (onSuggestNoResults != null) __obj.updateDynamic("onSuggestNoResults")(onSuggestNoResults)
+    if (onSuggestSelect != null) __obj.updateDynamic("onSuggestSelect")(onSuggestSelect)
+    if (onUpdateSuggests != null) __obj.updateDynamic("onUpdateSuggests")(onUpdateSuggests)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (queryDelay != null) __obj.updateDynamic("queryDelay")(queryDelay.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (renderSuggestItem != null) __obj.updateDynamic("renderSuggestItem")(renderSuggestItem)
+    if (skipSuggest != null) __obj.updateDynamic("skipSuggest")(skipSuggest)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (suggestItemActiveClassName != null) __obj.updateDynamic("suggestItemActiveClassName")(suggestItemActiveClassName)
+    if (suggestItemClassName != null) __obj.updateDynamic("suggestItemClassName")(suggestItemClassName)
+    if (suggestsClassName != null) __obj.updateDynamic("suggestsClassName")(suggestsClassName)
+    if (suggestsHiddenClassName != null) __obj.updateDynamic("suggestsHiddenClassName")(suggestsHiddenClassName)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[GeosuggestProps]
+  }
+}
+

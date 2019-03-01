@@ -32,3 +32,24 @@ trait DrawerTheme extends js.Object {
   var wrapper: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DrawerTheme {
+  @scala.inline
+  def apply(
+    active: java.lang.String = null,
+    content: java.lang.String = null,
+    drawer: java.lang.String = null,
+    left: java.lang.String = null,
+    right: java.lang.String = null,
+    wrapper: java.lang.String = null
+  ): DrawerTheme = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (drawer != null) __obj.updateDynamic("drawer")(drawer)
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (right != null) __obj.updateDynamic("right")(right)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    __obj.asInstanceOf[DrawerTheme]
+  }
+}
+

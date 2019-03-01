@@ -26,3 +26,20 @@ trait DeploymentConfigArgs extends js.Object {
   ] = js.undefined
 }
 
+object DeploymentConfigArgs {
+  @scala.inline
+  def apply(
+    deploymentConfigName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    computePlatform: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    minimumHealthyHosts: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeValueInput] = null,
+    trafficRoutingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TimeBasedCanaryTimeBasedLinear] = null
+  ): DeploymentConfigArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deploymentConfigName")(deploymentConfigName.asInstanceOf[js.Any])
+    if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
+    if (minimumHealthyHosts != null) __obj.updateDynamic("minimumHealthyHosts")(minimumHealthyHosts.asInstanceOf[js.Any])
+    if (trafficRoutingConfig != null) __obj.updateDynamic("trafficRoutingConfig")(trafficRoutingConfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeploymentConfigArgs]
+  }
+}
+

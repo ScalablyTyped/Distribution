@@ -15,3 +15,12 @@ trait Resolver extends js.Object {
   def get(container: Container, key: js.Any): js.Any
 }
 
+object Resolver {
+  @scala.inline
+  def apply(get: js.Function2[Container, js.Any, js.Any]): Resolver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[Resolver]
+  }
+}
+

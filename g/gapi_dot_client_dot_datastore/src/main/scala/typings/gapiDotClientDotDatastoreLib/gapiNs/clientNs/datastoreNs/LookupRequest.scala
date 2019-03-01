@@ -12,3 +12,13 @@ trait LookupRequest extends js.Object {
   var readOptions: js.UndefOr[ReadOptions] = js.undefined
 }
 
+object LookupRequest {
+  @scala.inline
+  def apply(keys: js.Array[Key] = null, readOptions: ReadOptions = null): LookupRequest = {
+    val __obj = js.Dynamic.literal()
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (readOptions != null) __obj.updateDynamic("readOptions")(readOptions)
+    __obj.asInstanceOf[LookupRequest]
+  }
+}
+

@@ -154,3 +154,52 @@ trait QueryParameters extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QueryParameters {
+  @scala.inline
+  def apply(
+    as: java.lang.String = null,
+    as_name: java.lang.String = null,
+    contact: java.lang.String = null,
+    country: java.lang.String = null,
+    family: java.lang.String = null,
+    fields: js.Array[java.lang.String] = null,
+    first_seen_days: java.lang.String = null,
+    flag: java.lang.String = null,
+    host_name: java.lang.String = null,
+    last_seen_days: java.lang.String = null,
+    limit: scala.Int | scala.Double = null,
+    lookup: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
+    order: java.lang.String = null,
+    os: java.lang.String = null,
+    recommended_version: js.UndefOr[scala.Boolean] = js.undefined,
+    running: js.UndefOr[scala.Boolean] = js.undefined,
+    search: java.lang.String = null,
+    `type`: onionooLib.onionooLibStrings.relay | onionooLib.onionooLibStrings.bridge = null,
+    version: java.lang.String = null
+  ): QueryParameters = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (as_name != null) __obj.updateDynamic("as_name")(as_name)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (family != null) __obj.updateDynamic("family")(family)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (first_seen_days != null) __obj.updateDynamic("first_seen_days")(first_seen_days)
+    if (flag != null) __obj.updateDynamic("flag")(flag)
+    if (host_name != null) __obj.updateDynamic("host_name")(host_name)
+    if (last_seen_days != null) __obj.updateDynamic("last_seen_days")(last_seen_days)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (lookup != null) __obj.updateDynamic("lookup")(lookup)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (os != null) __obj.updateDynamic("os")(os)
+    if (!js.isUndefined(recommended_version)) __obj.updateDynamic("recommended_version")(recommended_version)
+    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running)
+    if (search != null) __obj.updateDynamic("search")(search)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[QueryParameters]
+  }
+}
+

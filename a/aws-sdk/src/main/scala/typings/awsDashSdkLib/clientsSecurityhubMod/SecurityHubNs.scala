@@ -2183,16 +2183,46 @@ object SecurityHubNs extends js.Object {
   
   trait UpdateInsightResponse extends js.Object
   
+  trait _AwsIamAccessKeyStatus extends js.Object
+  
+  trait _ComplianceStatus extends js.Object
+  
+  trait _MalwareState extends js.Object
+  
+  trait _MalwareType extends js.Object
+  
+  trait _NetworkDirection extends js.Object
+  
+  trait _Partition extends js.Object
+  
+  trait _RecordState extends js.Object
+  
+  trait _SortOrder extends js.Object
+  
+  trait _StandardsStatus extends js.Object
+  
+  trait _StringFilterComparison extends js.Object
+  
+  trait _ThreatIntelIndicatorCategory extends js.Object
+  
+  trait _ThreatIntelIndicatorType extends js.Object
+  
+  trait _VerificationState extends js.Object
+  
+  trait _WorkflowState extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccountDetailsList = js.Array[AccountDetails]
   type AccountId = java.lang.String
   type AccountIdList = js.Array[NonEmptyString]
   type ArnList = js.Array[NonEmptyString]
-  type AwsIamAccessKeyStatus = awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Inactive | java.lang.String
+  type AwsIamAccessKeyStatus = _AwsIamAccessKeyStatus | java.lang.String
   type AwsSecurityFindingList = js.Array[AwsSecurityFinding]
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ComplianceStatus = awsDashSdkLib.awsDashSdkLibStrings.PASSED | awsDashSdkLib.awsDashSdkLibStrings.WARNING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.NOT_AVAILABLE | java.lang.String
+  type ComplianceStatus = _ComplianceStatus | java.lang.String
   type DateFilterList = js.Array[DateFilter]
   type DateRangeUnit = awsDashSdkLib.awsDashSdkLibStrings.DAYS | java.lang.String
   type Double = scala.Double
@@ -2204,38 +2234,38 @@ object SecurityHubNs extends js.Object {
   type IpFilterList = js.Array[IpFilter]
   type KeywordFilterList = js.Array[KeywordFilter]
   type MalwareList = js.Array[Malware]
-  type MalwareState = awsDashSdkLib.awsDashSdkLibStrings.OBSERVED | awsDashSdkLib.awsDashSdkLibStrings.REMOVAL_FAILED | awsDashSdkLib.awsDashSdkLibStrings.REMOVED | java.lang.String
-  type MalwareType = awsDashSdkLib.awsDashSdkLibStrings.ADWARE | awsDashSdkLib.awsDashSdkLibStrings.BLENDED_THREAT | awsDashSdkLib.awsDashSdkLibStrings.BOTNET_AGENT | awsDashSdkLib.awsDashSdkLibStrings.COIN_MINER | awsDashSdkLib.awsDashSdkLibStrings.EXPLOIT_KIT | awsDashSdkLib.awsDashSdkLibStrings.KEYLOGGER | awsDashSdkLib.awsDashSdkLibStrings.MACRO | awsDashSdkLib.awsDashSdkLibStrings.POTENTIALLY_UNWANTED | awsDashSdkLib.awsDashSdkLibStrings.SPYWARE | awsDashSdkLib.awsDashSdkLibStrings.RANSOMWARE | awsDashSdkLib.awsDashSdkLibStrings.REMOTE_ACCESS | awsDashSdkLib.awsDashSdkLibStrings.ROOTKIT | awsDashSdkLib.awsDashSdkLibStrings.TROJAN | awsDashSdkLib.awsDashSdkLibStrings.VIRUS | awsDashSdkLib.awsDashSdkLibStrings.WORM | java.lang.String
+  type MalwareState = _MalwareState | java.lang.String
+  type MalwareType = _MalwareType | java.lang.String
   type MapFilterComparison = awsDashSdkLib.awsDashSdkLibStrings.CONTAINS | java.lang.String
   type MapFilterList = js.Array[MapFilter]
   type MaxResults = scala.Double
   type MemberList = js.Array[Member]
-  type NetworkDirection = awsDashSdkLib.awsDashSdkLibStrings.IN | awsDashSdkLib.awsDashSdkLibStrings.OUT | java.lang.String
+  type NetworkDirection = _NetworkDirection | java.lang.String
   type NextToken = java.lang.String
   type NonEmptyString = java.lang.String
   type NumberFilterList = js.Array[NumberFilter]
-  type Partition = awsDashSdkLib.awsDashSdkLibStrings.aws | awsDashSdkLib.awsDashSdkLibStrings.`aws-cn` | awsDashSdkLib.awsDashSdkLibStrings.`aws-us-gov` | java.lang.String
+  type Partition = _Partition | java.lang.String
   type ProductSubscriptionArnList = js.Array[NonEmptyString]
-  type RecordState = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.ARCHIVED | java.lang.String
+  type RecordState = _RecordState | java.lang.String
   type RelatedFindingList = js.Array[RelatedFinding]
   type ResourceList = js.Array[Resource]
   type ResultList = js.Array[Result]
   type SortCriteria = js.Array[SortCriterion]
-  type SortOrder = awsDashSdkLib.awsDashSdkLibStrings.asc | awsDashSdkLib.awsDashSdkLibStrings.desc | java.lang.String
-  type StandardsStatus = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.READY | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type SortOrder = _SortOrder | java.lang.String
+  type StandardsStatus = _StandardsStatus | java.lang.String
   type StandardsSubscriptionArns = js.Array[NonEmptyString]
   type StandardsSubscriptionRequests = js.Array[StandardsSubscriptionRequest]
   type StandardsSubscriptions = js.Array[StandardsSubscription]
-  type StringFilterComparison = awsDashSdkLib.awsDashSdkLibStrings.EQUALS | awsDashSdkLib.awsDashSdkLibStrings.CONTAINS | awsDashSdkLib.awsDashSdkLibStrings.PREFIX | java.lang.String
+  type StringFilterComparison = _StringFilterComparison | java.lang.String
   type StringFilterList = js.Array[StringFilter]
   type StringList = js.Array[NonEmptyString]
-  type ThreatIntelIndicatorCategory = awsDashSdkLib.awsDashSdkLibStrings.BACKDOOR | awsDashSdkLib.awsDashSdkLibStrings.CARD_STEALER | awsDashSdkLib.awsDashSdkLibStrings.COMMAND_AND_CONTROL | awsDashSdkLib.awsDashSdkLibStrings.DROP_SITE | awsDashSdkLib.awsDashSdkLibStrings.EXPLOIT_SITE | awsDashSdkLib.awsDashSdkLibStrings.KEYLOGGER | java.lang.String
+  type ThreatIntelIndicatorCategory = _ThreatIntelIndicatorCategory | java.lang.String
   type ThreatIntelIndicatorList = js.Array[ThreatIntelIndicator]
-  type ThreatIntelIndicatorType = awsDashSdkLib.awsDashSdkLibStrings.DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.EMAIL_ADDRESS | awsDashSdkLib.awsDashSdkLibStrings.HASH_MD5 | awsDashSdkLib.awsDashSdkLibStrings.HASH_SHA1 | awsDashSdkLib.awsDashSdkLibStrings.HASH_SHA256 | awsDashSdkLib.awsDashSdkLibStrings.HASH_SHA512 | awsDashSdkLib.awsDashSdkLibStrings.IPV4_ADDRESS | awsDashSdkLib.awsDashSdkLibStrings.IPV6_ADDRESS | awsDashSdkLib.awsDashSdkLibStrings.MUTEX | awsDashSdkLib.awsDashSdkLibStrings.PROCESS | awsDashSdkLib.awsDashSdkLibStrings.URL | java.lang.String
+  type ThreatIntelIndicatorType = _ThreatIntelIndicatorType | java.lang.String
   type Timestamp = stdLib.Date
   type TypeList = js.Array[NonEmptyString]
-  type VerificationState = awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | awsDashSdkLib.awsDashSdkLibStrings.TRUE_POSITIVE | awsDashSdkLib.awsDashSdkLibStrings.FALSE_POSITIVE | awsDashSdkLib.awsDashSdkLibStrings.BENIGN_POSITIVE | java.lang.String
-  type WorkflowState = awsDashSdkLib.awsDashSdkLibStrings.NEW | awsDashSdkLib.awsDashSdkLibStrings.ASSIGNED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DEFERRED | awsDashSdkLib.awsDashSdkLibStrings.RESOLVED | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-10-26` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type VerificationState = _VerificationState | java.lang.String
+  type WorkflowState = _WorkflowState | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

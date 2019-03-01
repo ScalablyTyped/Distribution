@@ -40,3 +40,28 @@ trait LogRecord extends js.Object {
   var ThreadID: java.lang.String
 }
 
+object LogRecord {
+  @scala.inline
+  def apply(
+    Level: scala.Double,
+    LogTime: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    LoggerName: java.lang.String,
+    Message: java.lang.String,
+    SequenceNumber: scala.Double,
+    SourceClassName: java.lang.String,
+    SourceMethodName: java.lang.String,
+    ThreadID: java.lang.String
+  ): LogRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Level")(Level)
+    __obj.updateDynamic("LogTime")(LogTime)
+    __obj.updateDynamic("LoggerName")(LoggerName)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("SequenceNumber")(SequenceNumber)
+    __obj.updateDynamic("SourceClassName")(SourceClassName)
+    __obj.updateDynamic("SourceMethodName")(SourceMethodName)
+    __obj.updateDynamic("ThreadID")(ThreadID)
+    __obj.asInstanceOf[LogRecord]
+  }
+}
+

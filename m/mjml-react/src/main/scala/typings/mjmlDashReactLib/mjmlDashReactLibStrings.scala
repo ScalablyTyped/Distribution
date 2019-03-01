@@ -10,7 +10,8 @@ object mjmlDashReactLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends mjmlDashReactLib.mjmlDashReactMod.utilsNs.TextAlignment
   
   @js.native
   sealed trait dribbble extends js.Object
@@ -49,7 +50,8 @@ object mjmlDashReactLibStrings {
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait inherit
+    extends mjmlDashReactLib.mjmlDashReactMod.utilsNs.TextAlignment
   
   @js.native
   sealed trait initial extends js.Object
@@ -58,10 +60,12 @@ object mjmlDashReactLibStrings {
   sealed trait instagram extends js.Object
   
   @js.native
-  sealed trait justify extends js.Object
+  sealed trait justify
+    extends mjmlDashReactLib.mjmlDashReactMod.utilsNs.TextAlignment
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends mjmlDashReactLib.mjmlDashReactMod.utilsNs.TextAlignment
   
   @js.native
   sealed trait linkedin extends js.Object
@@ -82,7 +86,8 @@ object mjmlDashReactLibStrings {
   sealed trait `pinterest-noshare` extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends mjmlDashReactLib.mjmlDashReactMod.utilsNs.TextAlignment
   
   @js.native
   sealed trait rtl extends js.Object

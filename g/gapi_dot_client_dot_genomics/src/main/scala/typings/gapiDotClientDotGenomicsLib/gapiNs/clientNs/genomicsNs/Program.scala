@@ -24,3 +24,22 @@ trait Program extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Program {
+  @scala.inline
+  def apply(
+    commandLine: java.lang.String = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    prevProgramId: java.lang.String = null,
+    version: java.lang.String = null
+  ): Program = {
+    val __obj = js.Dynamic.literal()
+    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (prevProgramId != null) __obj.updateDynamic("prevProgramId")(prevProgramId)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Program]
+  }
+}
+

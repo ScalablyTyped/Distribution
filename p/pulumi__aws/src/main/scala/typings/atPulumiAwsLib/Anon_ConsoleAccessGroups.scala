@@ -14,3 +14,20 @@ trait Anon_ConsoleAccessGroups extends js.Object {
   var username: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_ConsoleAccessGroups {
+  @scala.inline
+  def apply(
+    password: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    username: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    consoleAccess: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    groups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): Anon_ConsoleAccessGroups = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (consoleAccess != null) __obj.updateDynamic("consoleAccess")(consoleAccess.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ConsoleAccessGroups]
+  }
+}
+

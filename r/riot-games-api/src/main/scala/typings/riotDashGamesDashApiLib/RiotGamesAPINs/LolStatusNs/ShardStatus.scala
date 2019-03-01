@@ -14,3 +14,24 @@ trait ShardStatus extends js.Object {
   var slug: java.lang.String
 }
 
+object ShardStatus {
+  @scala.inline
+  def apply(
+    hostname: java.lang.String,
+    locales: js.Array[java.lang.String],
+    name: java.lang.String,
+    region_tag: java.lang.String,
+    services: js.Array[Service],
+    slug: java.lang.String
+  ): ShardStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hostname")(hostname)
+    __obj.updateDynamic("locales")(locales)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("region_tag")(region_tag)
+    __obj.updateDynamic("services")(services)
+    __obj.updateDynamic("slug")(slug)
+    __obj.asInstanceOf[ShardStatus]
+  }
+}
+

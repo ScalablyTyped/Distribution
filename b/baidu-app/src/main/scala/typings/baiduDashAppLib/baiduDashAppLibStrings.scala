@@ -13,13 +13,16 @@ object baiduDashAppLibStrings {
   sealed trait `#ffffff` extends js.Object
   
   @js.native
-  sealed trait `2g` extends js.Object
+  sealed trait `2g`
+    extends baiduDashAppLib.swanNs.networkType
   
   @js.native
-  sealed trait `3g` extends js.Object
+  sealed trait `3g`
+    extends baiduDashAppLib.swanNs.networkType
   
   @js.native
-  sealed trait `4g` extends js.Object
+  sealed trait `4g`
+    extends baiduDashAppLib.swanNs.networkType
   
   @js.native
   sealed trait Component extends js.Object
@@ -34,10 +37,12 @@ object baiduDashAppLibStrings {
   sealed trait HEAD extends js.Object
   
   @js.native
-  sealed trait `HMAC-SHA256` extends js.Object
+  sealed trait `HMAC-SHA256`
+    extends baiduDashAppLib.swanNs.PaymentSignType
   
   @js.native
-  sealed trait MD5 extends js.Object
+  sealed trait MD5
+    extends baiduDashAppLib.swanNs.PaymentSignType
   
   @js.native
   sealed trait OPTIONS extends js.Object
@@ -52,40 +57,51 @@ object baiduDashAppLibStrings {
   sealed trait RecordPropsDefinition extends js.Object
   
   @js.native
-  sealed trait album extends js.Object
+  sealed trait album
+    extends baiduDashAppLib.swanNs.ImageSourceType
+       with baiduDashAppLib.swanNs.VideoSourceType
   
   @js.native
   sealed trait ancestor extends js.Object
   
   @js.native
-  sealed trait animationend extends js.Object
+  sealed trait animationend
+    extends baiduDashAppLib.swanNs.TransitionEventType
   
   @js.native
-  sealed trait animationiteration extends js.Object
+  sealed trait animationiteration
+    extends baiduDashAppLib.swanNs.TransitionEventType
   
   @js.native
-  sealed trait animationstart extends js.Object
+  sealed trait animationstart
+    extends baiduDashAppLib.swanNs.TransitionEventType
   
   @js.native
-  sealed trait back extends js.Object
+  sealed trait back
+    extends baiduDashAppLib.swanNs.CameraDevice
   
   @js.native
-  sealed trait barCode extends js.Object
+  sealed trait barCode
+    extends baiduDashAppLib.swanNs.scanType
   
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait bevel
+    extends baiduDashAppLib.swanNs.LineJoinType
   
   @js.native
   sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait butt
+    extends baiduDashAppLib.swanNs.LineCapType
   
   @js.native
   sealed trait button extends js.Object
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera
+    extends baiduDashAppLib.swanNs.ImageSourceType
+       with baiduDashAppLib.swanNs.VideoSourceType
   
   @js.native
   sealed trait center extends js.Object
@@ -94,7 +110,8 @@ object baiduDashAppLibStrings {
   sealed trait child extends js.Object
   
   @js.native
-  sealed trait compressed extends js.Object
+  sealed trait compressed
+    extends baiduDashAppLib.swanNs.ImageSizeType
   
   @js.native
   sealed trait descendant extends js.Object
@@ -106,16 +123,20 @@ object baiduDashAppLibStrings {
   sealed trait docx extends js.Object
   
   @js.native
-  sealed trait ease extends js.Object
+  sealed trait ease
+    extends baiduDashAppLib.swanNs.TimingFunction
   
   @js.native
-  sealed trait `ease-in` extends js.Object
+  sealed trait `ease-in`
+    extends baiduDashAppLib.swanNs.TimingFunction
   
   @js.native
-  sealed trait `ease-in-out` extends js.Object
+  sealed trait `ease-in-out`
+    extends baiduDashAppLib.swanNs.TimingFunction
   
   @js.native
-  sealed trait `ease-out` extends js.Object
+  sealed trait `ease-out`
+    extends baiduDashAppLib.swanNs.TimingFunction
   
   @js.native
   sealed trait easeIn extends js.Object
@@ -130,10 +151,12 @@ object baiduDashAppLibStrings {
   sealed trait `false` extends js.Object
   
   @js.native
-  sealed trait form extends js.Object
+  sealed trait form
+    extends baiduDashAppLib.swanNs.EventType
   
   @js.native
-  sealed trait front extends js.Object
+  sealed trait front
+    extends baiduDashAppLib.swanNs.CameraDevice
   
   @js.native
   sealed trait game extends js.Object
@@ -142,19 +165,22 @@ object baiduDashAppLibStrings {
   sealed trait gcj02 extends js.Object
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait input
+    extends baiduDashAppLib.swanNs.EventType
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends baiduDashAppLib.swanNs.TimingFunction
   
   @js.native
   sealed trait loading extends js.Object
   
   @js.native
-  sealed trait longpress extends js.Object
+  sealed trait longpress
+    extends baiduDashAppLib.swanNs.EventType
   
   @js.native
   sealed trait menu extends js.Object
@@ -163,10 +189,12 @@ object baiduDashAppLibStrings {
   sealed trait middle extends js.Object
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait miter
+    extends baiduDashAppLib.swanNs.LineJoinType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends baiduDashAppLib.swanNs.networkType
   
   @js.native
   sealed trait normal extends js.Object
@@ -175,7 +203,8 @@ object baiduDashAppLibStrings {
   sealed trait ok extends js.Object
   
   @js.native
-  sealed trait original extends js.Object
+  sealed trait original
+    extends baiduDashAppLib.swanNs.ImageSizeType
   
   @js.native
   sealed trait parent extends js.Object
@@ -190,76 +219,99 @@ object baiduDashAppLibStrings {
   sealed trait pptx extends js.Object
   
   @js.native
-  sealed trait qrCode extends js.Object
+  sealed trait qrCode
+    extends baiduDashAppLib.swanNs.scanType
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends baiduDashAppLib.swanNs.LineCapType
+       with baiduDashAppLib.swanNs.LineJoinType
   
   @js.native
-  sealed trait scopeDOTaddress extends js.Object
+  sealed trait scopeDOTaddress
+    extends baiduDashAppLib.swanNs.Scope
   
   @js.native
-  sealed trait scopeDOTinvoiceTitle extends js.Object
+  sealed trait scopeDOTinvoiceTitle
+    extends baiduDashAppLib.swanNs.Scope
   
   @js.native
-  sealed trait scopeDOTrecord extends js.Object
+  sealed trait scopeDOTrecord
+    extends baiduDashAppLib.swanNs.Scope
   
   @js.native
-  sealed trait scopeDOTuserInfo extends js.Object
+  sealed trait scopeDOTuserInfo
+    extends baiduDashAppLib.swanNs.Scope
   
   @js.native
-  sealed trait scopeDOTuserLocation extends js.Object
+  sealed trait scopeDOTuserLocation
+    extends baiduDashAppLib.swanNs.Scope
   
   @js.native
-  sealed trait scopeDOTwerun extends js.Object
+  sealed trait scopeDOTwerun
+    extends baiduDashAppLib.swanNs.Scope
   
   @js.native
-  sealed trait scopeDOTwritePhotosAlbum extends js.Object
+  sealed trait scopeDOTwritePhotosAlbum
+    extends baiduDashAppLib.swanNs.Scope
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scroll
+    extends baiduDashAppLib.swanNs.EventType
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends baiduDashAppLib.swanNs.LineCapType
   
   @js.native
-  sealed trait `step-end` extends js.Object
+  sealed trait `step-end`
+    extends baiduDashAppLib.swanNs.TimingFunction
   
   @js.native
-  sealed trait `step-start` extends js.Object
+  sealed trait `step-start`
+    extends baiduDashAppLib.swanNs.TimingFunction
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends baiduDashAppLib.swanNs.EventType
   
   @js.native
   sealed trait success extends js.Object
   
-  @js.native
-  sealed trait tap extends js.Object
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - baiduDashAppLib.swanNs.EventType because Already inherited */ @js.native
+  sealed trait tap
+    extends baiduDashAppLib.swanNs.TouchEventType
   
   @js.native
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait touchcancel extends js.Object
+  sealed trait touchcancel
+    extends baiduDashAppLib.swanNs.TouchEventType
   
   @js.native
-  sealed trait touchend extends js.Object
+  sealed trait touchend
+    extends baiduDashAppLib.swanNs.TouchEventType
   
   @js.native
-  sealed trait touchforcechange extends js.Object
+  sealed trait touchforcechange
+    extends baiduDashAppLib.swanNs.TouchEventType
   
   @js.native
-  sealed trait touchmove extends js.Object
+  sealed trait touchmove
+    extends baiduDashAppLib.swanNs.TouchEventType
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchstart
+    extends baiduDashAppLib.swanNs.TouchEventType
   
   @js.native
-  sealed trait transitionend extends js.Object
+  sealed trait transitionend
+    extends baiduDashAppLib.swanNs.TransitionEventType
   
   @js.native
   sealed trait `true` extends js.Object
@@ -268,13 +320,15 @@ object baiduDashAppLibStrings {
   sealed trait ui extends js.Object
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends baiduDashAppLib.swanNs.networkType
   
   @js.native
   sealed trait wgs84 extends js.Object
   
   @js.native
-  sealed trait wifi extends js.Object
+  sealed trait wifi
+    extends baiduDashAppLib.swanNs.networkType
   
   @js.native
   sealed trait xls extends js.Object

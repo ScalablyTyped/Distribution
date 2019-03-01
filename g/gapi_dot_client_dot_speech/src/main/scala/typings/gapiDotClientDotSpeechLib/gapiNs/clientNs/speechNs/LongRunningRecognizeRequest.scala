@@ -15,3 +15,13 @@ trait LongRunningRecognizeRequest extends js.Object {
   var config: js.UndefOr[RecognitionConfig] = js.undefined
 }
 
+object LongRunningRecognizeRequest {
+  @scala.inline
+  def apply(audio: RecognitionAudio = null, config: RecognitionConfig = null): LongRunningRecognizeRequest = {
+    val __obj = js.Dynamic.literal()
+    if (audio != null) __obj.updateDynamic("audio")(audio)
+    if (config != null) __obj.updateDynamic("config")(config)
+    __obj.asInstanceOf[LongRunningRecognizeRequest]
+  }
+}
+

@@ -43,3 +43,31 @@ trait IgPivotGridGridOptions
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgPivotGridGridOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotGridGridOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    alternateRowStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    caption: java.lang.String = null,
+    defaultColumnWidth: java.lang.String | scala.Double = null,
+    enableHoverStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    features: IgPivotGridGridOptionsFeatures = null,
+    fixedHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null
+  ): IgPivotGridGridOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(alternateRowStyles)) __obj.updateDynamic("alternateRowStyles")(alternateRowStyles)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableHoverStyles)) __obj.updateDynamic("enableHoverStyles")(enableHoverStyles)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (!js.isUndefined(fixedHeaders)) __obj.updateDynamic("fixedHeaders")(fixedHeaders)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgPivotGridGridOptions]
+  }
+}
+

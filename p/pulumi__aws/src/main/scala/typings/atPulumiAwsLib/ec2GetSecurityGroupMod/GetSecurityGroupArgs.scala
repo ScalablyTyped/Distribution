@@ -30,3 +30,22 @@ trait GetSecurityGroupArgs extends js.Object {
   val vpcId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetSecurityGroupArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    vpcId: java.lang.String = null
+  ): GetSecurityGroupArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId)
+    __obj.asInstanceOf[GetSecurityGroupArgs]
+  }
+}
+

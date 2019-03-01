@@ -9,3 +9,12 @@ trait CordovaPlugins extends js.Object {
   var Keyboard: cordovaDashIonicLib.IonicNs.Keyboard
 }
 
+object CordovaPlugins {
+  @scala.inline
+  def apply(Keyboard: cordovaDashIonicLib.IonicNs.Keyboard): CordovaPlugins = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Keyboard")(Keyboard)
+    __obj.asInstanceOf[CordovaPlugins]
+  }
+}
+

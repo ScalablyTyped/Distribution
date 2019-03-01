@@ -99,3 +99,66 @@ trait Dosage extends Element {
   var timing: js.UndefOr[Timing] = js.undefined
 }
 
+object Dosage {
+  @scala.inline
+  def apply(
+    _asNeededBoolean: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _patientInstruction: Element = null,
+    _sequence: Element = null,
+    _text: Element = null,
+    additionalInstruction: js.Array[CodeableConcept] = null,
+    asNeededBoolean: js.UndefOr[scala.Boolean] = js.undefined,
+    asNeededCodeableConcept: CodeableConcept = null,
+    doseQuantity: Quantity = null,
+    doseRange: Range = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    maxDosePerAdministration: Quantity = null,
+    maxDosePerLifetime: Quantity = null,
+    maxDosePerPeriod: Ratio = null,
+    method: CodeableConcept = null,
+    patientInstruction: java.lang.String = null,
+    rateQuantity: Quantity = null,
+    rateRange: Range = null,
+    rateRatio: Ratio = null,
+    route: CodeableConcept = null,
+    sequence: js.UndefOr[integer] = js.undefined,
+    site: CodeableConcept = null,
+    text: java.lang.String = null,
+    timing: Timing = null
+  ): Dosage = {
+    val __obj = js.Dynamic.literal()
+    if (_asNeededBoolean != null) __obj.updateDynamic("_asNeededBoolean")(_asNeededBoolean)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_patientInstruction != null) __obj.updateDynamic("_patientInstruction")(_patientInstruction)
+    if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence)
+    if (_text != null) __obj.updateDynamic("_text")(_text)
+    if (additionalInstruction != null) __obj.updateDynamic("additionalInstruction")(additionalInstruction)
+    if (!js.isUndefined(asNeededBoolean)) __obj.updateDynamic("asNeededBoolean")(asNeededBoolean)
+    if (asNeededCodeableConcept != null) __obj.updateDynamic("asNeededCodeableConcept")(asNeededCodeableConcept)
+    if (doseQuantity != null) __obj.updateDynamic("doseQuantity")(doseQuantity)
+    if (doseRange != null) __obj.updateDynamic("doseRange")(doseRange)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxDosePerAdministration != null) __obj.updateDynamic("maxDosePerAdministration")(maxDosePerAdministration)
+    if (maxDosePerLifetime != null) __obj.updateDynamic("maxDosePerLifetime")(maxDosePerLifetime)
+    if (maxDosePerPeriod != null) __obj.updateDynamic("maxDosePerPeriod")(maxDosePerPeriod)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (patientInstruction != null) __obj.updateDynamic("patientInstruction")(patientInstruction)
+    if (rateQuantity != null) __obj.updateDynamic("rateQuantity")(rateQuantity)
+    if (rateRange != null) __obj.updateDynamic("rateRange")(rateRange)
+    if (rateRatio != null) __obj.updateDynamic("rateRatio")(rateRatio)
+    if (route != null) __obj.updateDynamic("route")(route)
+    if (!js.isUndefined(sequence)) __obj.updateDynamic("sequence")(sequence)
+    if (site != null) __obj.updateDynamic("site")(site)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (timing != null) __obj.updateDynamic("timing")(timing)
+    __obj.asInstanceOf[Dosage]
+  }
+}
+

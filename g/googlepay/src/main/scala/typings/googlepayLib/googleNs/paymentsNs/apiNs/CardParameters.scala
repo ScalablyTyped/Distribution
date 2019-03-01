@@ -13,3 +13,22 @@ trait CardParameters extends js.Object {
   var billingAddressRequired: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CardParameters {
+  @scala.inline
+  def apply(
+    allowedAuthMethods: js.Array[AllowedAuthMethod],
+    allowedCardNetworks: js.Array[AllowedCardNetwork],
+    allowPrepaidCards: js.UndefOr[scala.Boolean] = js.undefined,
+    billingAddressParameters: BillingAddressParameters = null,
+    billingAddressRequired: js.UndefOr[scala.Boolean] = js.undefined
+  ): CardParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowedAuthMethods")(allowedAuthMethods)
+    __obj.updateDynamic("allowedCardNetworks")(allowedCardNetworks)
+    if (!js.isUndefined(allowPrepaidCards)) __obj.updateDynamic("allowPrepaidCards")(allowPrepaidCards)
+    if (billingAddressParameters != null) __obj.updateDynamic("billingAddressParameters")(billingAddressParameters)
+    if (!js.isUndefined(billingAddressRequired)) __obj.updateDynamic("billingAddressRequired")(billingAddressRequired)
+    __obj.asInstanceOf[CardParameters]
+  }
+}
+

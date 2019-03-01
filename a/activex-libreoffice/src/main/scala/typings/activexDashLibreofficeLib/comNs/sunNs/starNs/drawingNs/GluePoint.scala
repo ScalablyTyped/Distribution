@@ -23,3 +23,20 @@ trait GluePoint extends js.Object {
   var PositionAbsolute: scala.Boolean
 }
 
+object GluePoint {
+  @scala.inline
+  def apply(
+    Alignment: scala.Double,
+    EscapeDirection: scala.Double,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    PositionAbsolute: scala.Boolean
+  ): GluePoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Alignment")(Alignment)
+    __obj.updateDynamic("EscapeDirection")(EscapeDirection)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("PositionAbsolute")(PositionAbsolute)
+    __obj.asInstanceOf[GluePoint]
+  }
+}
+

@@ -19,3 +19,13 @@ trait Sentiment extends js.Object {
   var score: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Sentiment {
+  @scala.inline
+  def apply(magnitude: scala.Int | scala.Double = null, score: scala.Int | scala.Double = null): Sentiment = {
+    val __obj = js.Dynamic.literal()
+    if (magnitude != null) __obj.updateDynamic("magnitude")(magnitude.asInstanceOf[js.Any])
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Sentiment]
+  }
+}
+

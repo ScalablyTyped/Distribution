@@ -37,3 +37,36 @@ trait XPageCursor
   def jumpToStartOfPage(): scala.Boolean
 }
 
+object XPageCursor {
+  @scala.inline
+  def apply(
+    Page: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getPage: js.Function0[scala.Double],
+    jumpToEndOfPage: js.Function0[scala.Boolean],
+    jumpToFirstPage: js.Function0[scala.Boolean],
+    jumpToLastPage: js.Function0[scala.Boolean],
+    jumpToNextPage: js.Function0[scala.Boolean],
+    jumpToPage: js.Function1[scala.Double, scala.Boolean],
+    jumpToPreviousPage: js.Function0[scala.Boolean],
+    jumpToStartOfPage: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPageCursor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Page")(Page)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getPage")(getPage)
+    __obj.updateDynamic("jumpToEndOfPage")(jumpToEndOfPage)
+    __obj.updateDynamic("jumpToFirstPage")(jumpToFirstPage)
+    __obj.updateDynamic("jumpToLastPage")(jumpToLastPage)
+    __obj.updateDynamic("jumpToNextPage")(jumpToNextPage)
+    __obj.updateDynamic("jumpToPage")(jumpToPage)
+    __obj.updateDynamic("jumpToPreviousPage")(jumpToPreviousPage)
+    __obj.updateDynamic("jumpToStartOfPage")(jumpToStartOfPage)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XPageCursor]
+  }
+}
+

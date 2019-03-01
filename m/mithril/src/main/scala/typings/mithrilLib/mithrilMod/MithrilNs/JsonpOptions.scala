@@ -18,3 +18,22 @@ trait JsonpOptions extends js.Object {
   var `type`: js.UndefOr[org.scalablytyped.runtime.Instantiable1[/* o */ js.Any, js.Any]] = js.undefined
 }
 
+object JsonpOptions {
+  @scala.inline
+  def apply(
+    background: js.UndefOr[scala.Boolean] = js.undefined,
+    callbackKey: java.lang.String = null,
+    callbackName: java.lang.String = null,
+    data: js.Any = null,
+    `type`: org.scalablytyped.runtime.Instantiable1[/* o */ js.Any, js.Any] = null
+  ): JsonpOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
+    if (callbackKey != null) __obj.updateDynamic("callbackKey")(callbackKey)
+    if (callbackName != null) __obj.updateDynamic("callbackName")(callbackName)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[JsonpOptions]
+  }
+}
+

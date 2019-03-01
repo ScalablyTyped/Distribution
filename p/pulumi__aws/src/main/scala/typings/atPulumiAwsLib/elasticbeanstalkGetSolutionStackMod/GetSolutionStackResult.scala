@@ -16,3 +16,13 @@ trait GetSolutionStackResult extends js.Object {
   val name: java.lang.String
 }
 
+object GetSolutionStackResult {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String): GetSolutionStackResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[GetSolutionStackResult]
+  }
+}
+

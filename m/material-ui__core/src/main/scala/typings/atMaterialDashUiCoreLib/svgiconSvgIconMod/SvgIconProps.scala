@@ -24,3 +24,34 @@ import scala.scalajs.js.annotation._
   var viewBox: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SvgIconProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SvgIconClassKey]] = null,
+    color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.action | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.disabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error = null,
+    component: reactLib.reactMod.ReactNs.ReactType[SvgIconProps] = null,
+    fontSize: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.small | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.large = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    nativeColor: java.lang.String = null,
+    shapeRendering: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    titleAccess: java.lang.String = null,
+    viewBox: java.lang.String = null
+  ): SvgIconProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (nativeColor != null) __obj.updateDynamic("nativeColor")(nativeColor)
+    if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (titleAccess != null) __obj.updateDynamic("titleAccess")(titleAccess)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    __obj.asInstanceOf[SvgIconProps]
+  }
+}
+

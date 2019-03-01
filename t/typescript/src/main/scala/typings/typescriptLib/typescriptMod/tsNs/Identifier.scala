@@ -7,7 +7,18 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typescriptLib.typescriptMod.tsNs.Declaration because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined _declarationBrand */ @js.native
-trait Identifier extends PrimaryExpression {
+trait Identifier
+  extends PrimaryExpression
+     with BindingName
+     with BindingOrAssignmentElementTarget
+     with DeclarationName
+     with EntityName
+     with EntityNameExpression
+     with JSDocNamespaceBody
+     with JsxTagNameExpression
+     with ModuleName
+     with PropertyName
+     with _BindingOrAssignmentElement {
   var _declarationBrand: js.Any = js.native
   /**
     * Prefer to use `id.unescapedText`. (Note: This is available only in services, not internally to the TypeScript compiler.)

@@ -9,3 +9,12 @@ trait KnockoutSubscription extends js.Object {
   var deferUpdates: scala.Boolean
 }
 
+object KnockoutSubscription {
+  @scala.inline
+  def apply(deferUpdates: scala.Boolean): KnockoutSubscription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deferUpdates")(deferUpdates)
+    __obj.asInstanceOf[KnockoutSubscription]
+  }
+}
+

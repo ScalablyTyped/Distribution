@@ -22,3 +22,13 @@ trait LocalVolumeSource extends js.Object {
   val path: java.lang.String
 }
 
+object LocalVolumeSource {
+  @scala.inline
+  def apply(fsType: java.lang.String, path: java.lang.String): LocalVolumeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fsType")(fsType)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[LocalVolumeSource]
+  }
+}
+

@@ -39,3 +39,26 @@ trait CertificateArgs extends js.Object {
   val validationMethod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object CertificateArgs {
+  @scala.inline
+  def apply(
+    certificateBody: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificateChain: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subjectAlternativeNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    validationMethod: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): CertificateArgs = {
+    val __obj = js.Dynamic.literal()
+    if (certificateBody != null) __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
+    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (subjectAlternativeNames != null) __obj.updateDynamic("subjectAlternativeNames")(subjectAlternativeNames.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (validationMethod != null) __obj.updateDynamic("validationMethod")(validationMethod.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CertificateArgs]
+  }
+}
+

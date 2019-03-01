@@ -12,3 +12,18 @@ trait CanLoad extends js.Object {
   ): rxjsLib.rxjsMod.Observable[scala.Boolean] | js.Promise[scala.Boolean] | scala.Boolean
 }
 
+object CanLoad {
+  @scala.inline
+  def apply(
+    canLoad: js.Function2[
+      atAngularRouterLib.srcConfigMod.Route, 
+      js.Array[atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSegment], 
+      rxjsLib.rxjsMod.Observable[scala.Boolean] | js.Promise[scala.Boolean] | scala.Boolean
+    ]
+  ): CanLoad = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canLoad")(canLoad)
+    __obj.asInstanceOf[CanLoad]
+  }
+}
+

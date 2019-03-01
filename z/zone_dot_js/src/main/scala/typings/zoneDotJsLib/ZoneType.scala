@@ -26,3 +26,15 @@ trait ZoneType extends js.Object {
   def assertZonePatched(): scala.Unit
 }
 
+object ZoneType {
+  @scala.inline
+  def apply(assertZonePatched: js.Function0[scala.Unit], current: Zone, root: Zone, currentTask: Task = null): ZoneType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("assertZonePatched")(assertZonePatched)
+    __obj.updateDynamic("current")(current)
+    __obj.updateDynamic("root")(root)
+    if (currentTask != null) __obj.updateDynamic("currentTask")(currentTask)
+    __obj.asInstanceOf[ZoneType]
+  }
+}
+

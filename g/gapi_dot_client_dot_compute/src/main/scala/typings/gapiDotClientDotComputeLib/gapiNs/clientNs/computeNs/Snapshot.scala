@@ -74,3 +74,46 @@ trait Snapshot extends js.Object {
   var storageBytesStatus: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Snapshot {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    diskSizeGb: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    labelFingerprint: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    licenses: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    snapshotEncryptionKey: CustomerEncryptionKey = null,
+    sourceDisk: java.lang.String = null,
+    sourceDiskEncryptionKey: CustomerEncryptionKey = null,
+    sourceDiskId: java.lang.String = null,
+    status: java.lang.String = null,
+    storageBytes: java.lang.String = null,
+    storageBytesStatus: java.lang.String = null
+  ): Snapshot = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (licenses != null) __obj.updateDynamic("licenses")(licenses)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (snapshotEncryptionKey != null) __obj.updateDynamic("snapshotEncryptionKey")(snapshotEncryptionKey)
+    if (sourceDisk != null) __obj.updateDynamic("sourceDisk")(sourceDisk)
+    if (sourceDiskEncryptionKey != null) __obj.updateDynamic("sourceDiskEncryptionKey")(sourceDiskEncryptionKey)
+    if (sourceDiskId != null) __obj.updateDynamic("sourceDiskId")(sourceDiskId)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (storageBytes != null) __obj.updateDynamic("storageBytes")(storageBytes)
+    if (storageBytesStatus != null) __obj.updateDynamic("storageBytesStatus")(storageBytesStatus)
+    __obj.asInstanceOf[Snapshot]
+  }
+}
+

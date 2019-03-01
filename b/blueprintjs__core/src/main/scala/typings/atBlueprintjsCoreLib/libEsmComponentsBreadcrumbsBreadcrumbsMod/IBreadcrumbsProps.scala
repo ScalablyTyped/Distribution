@@ -63,3 +63,36 @@ trait IBreadcrumbsProps
   var popoverProps: js.UndefOr[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = js.undefined
 }
 
+object IBreadcrumbsProps {
+  @scala.inline
+  def apply(
+    items: js.Array[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps],
+    breadcrumbRenderer: js.Function1[
+      /* props */ atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps, 
+      reactLib.reactMod.Global.JSXNs.Element
+    ] = null,
+    className: java.lang.String = null,
+    collapseFrom: atBlueprintjsCoreLib.libEsmCommonBoundaryMod.Boundary = null,
+    currentBreadcrumbRenderer: js.Function1[
+      /* props */ atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps, 
+      reactLib.reactMod.Global.JSXNs.Element
+    ] = null,
+    minVisibleItems: scala.Int | scala.Double = null,
+    overflowListProps: stdLib.Partial[
+      atBlueprintjsCoreLib.libEsmComponentsOverflowDashListOverflowListMod.IOverflowListProps[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps]
+    ] = null,
+    popoverProps: atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps = null
+  ): IBreadcrumbsProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    if (breadcrumbRenderer != null) __obj.updateDynamic("breadcrumbRenderer")(breadcrumbRenderer)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom)
+    if (currentBreadcrumbRenderer != null) __obj.updateDynamic("currentBreadcrumbRenderer")(currentBreadcrumbRenderer)
+    if (minVisibleItems != null) __obj.updateDynamic("minVisibleItems")(minVisibleItems.asInstanceOf[js.Any])
+    if (overflowListProps != null) __obj.updateDynamic("overflowListProps")(overflowListProps)
+    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps)
+    __obj.asInstanceOf[IBreadcrumbsProps]
+  }
+}
+

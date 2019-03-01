@@ -19,3 +19,13 @@ trait OfflineOperationSuccessCallbackObject extends js.Object {
   var logicalName: java.lang.String
 }
 
+object OfflineOperationSuccessCallbackObject {
+  @scala.inline
+  def apply(id: java.lang.String, logicalName: java.lang.String): OfflineOperationSuccessCallbackObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("logicalName")(logicalName)
+    __obj.asInstanceOf[OfflineOperationSuccessCallbackObject]
+  }
+}
+

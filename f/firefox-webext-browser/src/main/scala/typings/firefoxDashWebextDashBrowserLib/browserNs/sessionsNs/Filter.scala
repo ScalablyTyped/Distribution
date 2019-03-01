@@ -14,3 +14,12 @@ trait Filter extends js.Object {
   var maxResults: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Filter {
+  @scala.inline
+  def apply(maxResults: scala.Int | scala.Double = null): Filter = {
+    val __obj = js.Dynamic.literal()
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Filter]
+  }
+}
+

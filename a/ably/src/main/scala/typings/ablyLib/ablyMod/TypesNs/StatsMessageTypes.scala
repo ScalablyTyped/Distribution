@@ -11,3 +11,14 @@ trait StatsMessageTypes extends js.Object {
   var presence: StatsMessageCount
 }
 
+object StatsMessageTypes {
+  @scala.inline
+  def apply(all: StatsMessageCount, messages: StatsMessageCount, presence: StatsMessageCount): StatsMessageTypes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("all")(all)
+    __obj.updateDynamic("messages")(messages)
+    __obj.updateDynamic("presence")(presence)
+    __obj.asInstanceOf[StatsMessageTypes]
+  }
+}
+

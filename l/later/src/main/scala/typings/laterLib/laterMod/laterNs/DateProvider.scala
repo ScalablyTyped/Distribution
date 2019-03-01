@@ -76,3 +76,40 @@ trait DateProvider extends js.Object {
   def prevRollover(d: stdLib.Date, `val`: scala.Double, constraint: Modifier, period: TimePeriod): stdLib.Date
 }
 
+object DateProvider {
+  @scala.inline
+  def apply(
+    UTC: js.Function0[scala.Unit],
+    localTime: js.Function0[scala.Unit],
+    next: js.Function6[
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      stdLib.Date
+    ],
+    nextRollover: js.Function4[stdLib.Date, scala.Double, Modifier, TimePeriod, stdLib.Date],
+    prev: js.Function6[
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[scala.Double], 
+      stdLib.Date
+    ],
+    prevRollover: js.Function4[stdLib.Date, scala.Double, Modifier, TimePeriod, stdLib.Date]
+  ): DateProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("UTC")(UTC)
+    __obj.updateDynamic("localTime")(localTime)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("nextRollover")(nextRollover)
+    __obj.updateDynamic("prev")(prev)
+    __obj.updateDynamic("prevRollover")(prevRollover)
+    __obj.asInstanceOf[DateProvider]
+  }
+}
+

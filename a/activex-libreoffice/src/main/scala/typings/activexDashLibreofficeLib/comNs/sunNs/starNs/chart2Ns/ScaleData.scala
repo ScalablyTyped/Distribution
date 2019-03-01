@@ -55,3 +55,34 @@ trait ScaleData extends js.Object {
   var TimeIncrement: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.TimeIncrement
 }
 
+object ScaleData {
+  @scala.inline
+  def apply(
+    AutoDateAxis: scala.Boolean,
+    AxisType: scala.Double,
+    Categories: activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XLabeledDataSequence,
+    IncrementData: IncrementData,
+    Maximum: js.Any,
+    Minimum: js.Any,
+    Orientation: AxisOrientation,
+    Origin: js.Any,
+    Scaling: XScaling,
+    ShiftedCategoryPosition: scala.Boolean,
+    TimeIncrement: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.TimeIncrement
+  ): ScaleData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoDateAxis")(AutoDateAxis)
+    __obj.updateDynamic("AxisType")(AxisType)
+    __obj.updateDynamic("Categories")(Categories)
+    __obj.updateDynamic("IncrementData")(IncrementData)
+    __obj.updateDynamic("Maximum")(Maximum)
+    __obj.updateDynamic("Minimum")(Minimum)
+    __obj.updateDynamic("Orientation")(Orientation)
+    __obj.updateDynamic("Origin")(Origin)
+    __obj.updateDynamic("Scaling")(Scaling)
+    __obj.updateDynamic("ShiftedCategoryPosition")(ShiftedCategoryPosition)
+    __obj.updateDynamic("TimeIncrement")(TimeIncrement)
+    __obj.asInstanceOf[ScaleData]
+  }
+}
+

@@ -1,0 +1,20 @@
+package typings
+package driftlessLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Args extends js.Object {
+  var customClearTimeout: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
+}
+
+object Anon_Args {
+  @scala.inline
+  def apply(customClearTimeout: js.Function1[/* repeated */ js.Any, scala.Unit] = null): Anon_Args = {
+    val __obj = js.Dynamic.literal()
+    if (customClearTimeout != null) __obj.updateDynamic("customClearTimeout")(customClearTimeout)
+    __obj.asInstanceOf[Anon_Args]
+  }
+}
+

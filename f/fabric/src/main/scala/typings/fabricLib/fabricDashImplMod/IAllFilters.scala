@@ -29,3 +29,48 @@ trait IAllFilters extends js.Object {
   var Tint: fabricLib.Anon_FromObjectObjectOptionsAnonColorOpacity
 }
 
+object IAllFilters {
+  @scala.inline
+  def apply(
+    BaseFilter: fabricLib.Anon_Options,
+    BlendColor: fabricLib.Anon_FromObject,
+    BlendImage: fabricLib.Anon_FromObjectObject,
+    Brightness: fabricLib.Anon_FromObjectObjectOptions,
+    ColorMatrix: fabricLib.Anon_FromObjectObjectOptionsAnonMatrix,
+    Convolute: fabricLib.Anon_FromObjectObjectOptionsAnonMatrixOpaque,
+    GradientTransparency: fabricLib.Anon_FromObjectObjectOptionsAnonThreshold,
+    Grayscale: fabricLib.Anon_FromObjectObjectOptionsAny,
+    Invert: fabricLib.Anon_FromObjectObjectOptionsAnyIInvertFilter,
+    Mask: fabricLib.Anon_FromObjectObjectOptionsAnonChannel,
+    Multiply: fabricLib.Anon_FromObjectObjectOptionsAnonColor,
+    Noise: fabricLib.Anon_FromObjectObjectOptionsAnonNoise,
+    Pixelate: fabricLib.Anon_FromObjectObjectOptionsAnonBlocksize,
+    RemoveWhite: fabricLib.Anon_FromObjectObjectOptionsAnonDistance,
+    Resize: fabricLib.Anon_FromObjectObjectOptionsAnyIResizeFilter,
+    Sepia: fabricLib.Anon_FromObjectObjectOptionsAnyISepiaFilter,
+    Sepia2: fabricLib.Anon_FromObjectObjectOptionsAnyISepia2Filter,
+    Tint: fabricLib.Anon_FromObjectObjectOptionsAnonColorOpacity
+  ): IAllFilters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BaseFilter")(BaseFilter)
+    __obj.updateDynamic("BlendColor")(BlendColor)
+    __obj.updateDynamic("BlendImage")(BlendImage)
+    __obj.updateDynamic("Brightness")(Brightness)
+    __obj.updateDynamic("ColorMatrix")(ColorMatrix)
+    __obj.updateDynamic("Convolute")(Convolute)
+    __obj.updateDynamic("GradientTransparency")(GradientTransparency)
+    __obj.updateDynamic("Grayscale")(Grayscale)
+    __obj.updateDynamic("Invert")(Invert)
+    __obj.updateDynamic("Mask")(Mask)
+    __obj.updateDynamic("Multiply")(Multiply)
+    __obj.updateDynamic("Noise")(Noise)
+    __obj.updateDynamic("Pixelate")(Pixelate)
+    __obj.updateDynamic("RemoveWhite")(RemoveWhite)
+    __obj.updateDynamic("Resize")(Resize)
+    __obj.updateDynamic("Sepia")(Sepia)
+    __obj.updateDynamic("Sepia2")(Sepia2)
+    __obj.updateDynamic("Tint")(Tint)
+    __obj.asInstanceOf[IAllFilters]
+  }
+}
+

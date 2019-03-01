@@ -25,3 +25,24 @@ trait IDLTypeDescription extends js.Object {
   var union: scala.Boolean
 }
 
+object IDLTypeDescription {
+  @scala.inline
+  def apply(
+    idlType: java.lang.String | IDLTypeDescription | js.Array[IDLTypeDescription],
+    nullable: scala.Boolean,
+    sequence: scala.Boolean,
+    union: scala.Boolean,
+    generic: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): IDLTypeDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("idlType")(idlType.asInstanceOf[js.Any])
+    __obj.updateDynamic("nullable")(nullable)
+    __obj.updateDynamic("sequence")(sequence)
+    __obj.updateDynamic("union")(union)
+    if (generic != null) __obj.updateDynamic("generic")(generic)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IDLTypeDescription]
+  }
+}
+

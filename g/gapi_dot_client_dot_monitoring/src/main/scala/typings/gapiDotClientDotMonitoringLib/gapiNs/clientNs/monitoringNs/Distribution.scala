@@ -33,3 +33,24 @@ trait Distribution extends js.Object {
   var sumOfSquaredDeviation: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Distribution {
+  @scala.inline
+  def apply(
+    bucketCounts: js.Array[java.lang.String] = null,
+    bucketOptions: BucketOptions = null,
+    count: java.lang.String = null,
+    mean: scala.Int | scala.Double = null,
+    range: Range = null,
+    sumOfSquaredDeviation: scala.Int | scala.Double = null
+  ): Distribution = {
+    val __obj = js.Dynamic.literal()
+    if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts)
+    if (bucketOptions != null) __obj.updateDynamic("bucketOptions")(bucketOptions)
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (sumOfSquaredDeviation != null) __obj.updateDynamic("sumOfSquaredDeviation")(sumOfSquaredDeviation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Distribution]
+  }
+}
+

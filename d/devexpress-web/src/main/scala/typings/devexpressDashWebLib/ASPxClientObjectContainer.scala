@@ -106,3 +106,82 @@ trait ASPxClientObjectContainer extends ASPxClientControl {
   def Zoom(percent: scala.Double): scala.Unit
 }
 
+object ASPxClientObjectContainer {
+  @scala.inline
+  def apply(
+    AdjustControl: js.Function0[scala.Unit],
+    Back: js.Function0[scala.Unit],
+    FlashScriptCommand: ASPxClientEvent[ASPxClientFlashScriptCommandEventHandler[ASPxClientObjectContainer]],
+    Forward: js.Function0[scala.Unit],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetParentControl: js.Function0[js.Object],
+    GetVariable: js.Function1[java.lang.String, java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    GotoFrame: js.Function1[scala.Double, scala.Unit],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    IsPlaying: js.Function0[scala.Boolean],
+    LoadMovie: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    Pan: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    PercentLoaded: js.Function0[java.lang.String],
+    Play: js.Function0[scala.Unit],
+    QTPlay: js.Function0[scala.Unit],
+    QTRewind: js.Function0[scala.Unit],
+    QTStep: js.Function1[scala.Double, scala.Unit],
+    QTStopPlay: js.Function0[scala.Unit],
+    Rewind: js.Function0[scala.Unit],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetVariable: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    SetZoomRect: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    StopPlay: js.Function0[scala.Unit],
+    TotalFrames: js.Function0[scala.Double],
+    Zoom: js.Function1[scala.Double, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientObjectContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AdjustControl")(AdjustControl)
+    __obj.updateDynamic("Back")(Back)
+    __obj.updateDynamic("FlashScriptCommand")(FlashScriptCommand)
+    __obj.updateDynamic("Forward")(Forward)
+    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
+    __obj.updateDynamic("GetHeight")(GetHeight)
+    __obj.updateDynamic("GetMainElement")(GetMainElement)
+    __obj.updateDynamic("GetParentControl")(GetParentControl)
+    __obj.updateDynamic("GetVariable")(GetVariable)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("GetWidth")(GetWidth)
+    __obj.updateDynamic("GotoFrame")(GotoFrame)
+    __obj.updateDynamic("InCallback")(InCallback)
+    __obj.updateDynamic("Init")(Init)
+    __obj.updateDynamic("IsPlaying")(IsPlaying)
+    __obj.updateDynamic("LoadMovie")(LoadMovie)
+    __obj.updateDynamic("Pan")(Pan)
+    __obj.updateDynamic("PercentLoaded")(PercentLoaded)
+    __obj.updateDynamic("Play")(Play)
+    __obj.updateDynamic("QTPlay")(QTPlay)
+    __obj.updateDynamic("QTRewind")(QTRewind)
+    __obj.updateDynamic("QTStep")(QTStep)
+    __obj.updateDynamic("QTStopPlay")(QTStopPlay)
+    __obj.updateDynamic("Rewind")(Rewind)
+    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
+    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
+    __obj.updateDynamic("SetHeight")(SetHeight)
+    __obj.updateDynamic("SetVariable")(SetVariable)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("SetWidth")(SetWidth)
+    __obj.updateDynamic("SetZoomRect")(SetZoomRect)
+    __obj.updateDynamic("StopPlay")(StopPlay)
+    __obj.updateDynamic("TotalFrames")(TotalFrames)
+    __obj.updateDynamic("Zoom")(Zoom)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientObjectContainer]
+  }
+}
+

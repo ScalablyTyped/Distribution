@@ -14,3 +14,24 @@ trait AddMeta extends js.Object {
   def use(handler: AddMetaMiddleware): AddMeta
 }
 
+object AddMeta {
+  @scala.inline
+  def apply(
+    action: js.Any,
+    end: js.Function1[js.Function0[scala.Unit], js.UndefOr[scala.Nothing]],
+    pattern: Pattern,
+    plugin: PluginDefinition,
+    schema: js.Any,
+    use: js.Function1[AddMetaMiddleware, AddMeta]
+  ): AddMeta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("pattern")(pattern)
+    __obj.updateDynamic("plugin")(plugin)
+    __obj.updateDynamic("schema")(schema)
+    __obj.updateDynamic("use")(use)
+    __obj.asInstanceOf[AddMeta]
+  }
+}
+

@@ -34,3 +34,35 @@ trait XScenario
   def setScenarioComment(aScenarioComment: java.lang.String): scala.Unit
 }
 
+object XScenario {
+  @scala.inline
+  def apply(
+    IsScenario: scala.Boolean,
+    ScenarioComment: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addRanges: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress], 
+      scala.Unit
+    ],
+    apply: js.Function0[scala.Unit],
+    getIsScenario: js.Function0[scala.Boolean],
+    getScenarioComment: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setScenarioComment: js.Function1[java.lang.String, scala.Unit]
+  ): XScenario = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IsScenario")(IsScenario)
+    __obj.updateDynamic("ScenarioComment")(ScenarioComment)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addRanges")(addRanges)
+    __obj.updateDynamic("apply")(apply)
+    __obj.updateDynamic("getIsScenario")(getIsScenario)
+    __obj.updateDynamic("getScenarioComment")(getScenarioComment)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setScenarioComment")(setScenarioComment)
+    __obj.asInstanceOf[XScenario]
+  }
+}
+

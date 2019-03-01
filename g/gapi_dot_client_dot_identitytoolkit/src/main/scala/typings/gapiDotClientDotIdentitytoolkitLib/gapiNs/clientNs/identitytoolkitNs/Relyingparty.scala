@@ -38,3 +38,42 @@ trait Relyingparty extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Relyingparty {
+  @scala.inline
+  def apply(
+    androidInstallApp: js.UndefOr[scala.Boolean] = js.undefined,
+    androidMinimumVersion: java.lang.String = null,
+    androidPackageName: java.lang.String = null,
+    canHandleCodeInApp: js.UndefOr[scala.Boolean] = js.undefined,
+    captchaResp: java.lang.String = null,
+    challenge: java.lang.String = null,
+    continueUrl: java.lang.String = null,
+    email: java.lang.String = null,
+    iOSAppStoreId: java.lang.String = null,
+    iOSBundleId: java.lang.String = null,
+    idToken: java.lang.String = null,
+    kind: java.lang.String = null,
+    newEmail: java.lang.String = null,
+    requestType: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Relyingparty = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(androidInstallApp)) __obj.updateDynamic("androidInstallApp")(androidInstallApp)
+    if (androidMinimumVersion != null) __obj.updateDynamic("androidMinimumVersion")(androidMinimumVersion)
+    if (androidPackageName != null) __obj.updateDynamic("androidPackageName")(androidPackageName)
+    if (!js.isUndefined(canHandleCodeInApp)) __obj.updateDynamic("canHandleCodeInApp")(canHandleCodeInApp)
+    if (captchaResp != null) __obj.updateDynamic("captchaResp")(captchaResp)
+    if (challenge != null) __obj.updateDynamic("challenge")(challenge)
+    if (continueUrl != null) __obj.updateDynamic("continueUrl")(continueUrl)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (iOSAppStoreId != null) __obj.updateDynamic("iOSAppStoreId")(iOSAppStoreId)
+    if (iOSBundleId != null) __obj.updateDynamic("iOSBundleId")(iOSBundleId)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (newEmail != null) __obj.updateDynamic("newEmail")(newEmail)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Relyingparty]
+  }
+}
+

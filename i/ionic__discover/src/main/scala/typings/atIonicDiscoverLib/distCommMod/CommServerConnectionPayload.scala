@@ -10,3 +10,13 @@ trait CommServerConnectionPayload extends js.Object {
   var event: atIonicDiscoverLib.atIonicDiscoverLibStrings.connect
 }
 
+object CommServerConnectionPayload {
+  @scala.inline
+  def apply(device: java.lang.String, event: atIonicDiscoverLib.atIonicDiscoverLibStrings.connect): CommServerConnectionPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("device")(device)
+    __obj.updateDynamic("event")(event)
+    __obj.asInstanceOf[CommServerConnectionPayload]
+  }
+}
+

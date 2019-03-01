@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ProceduralRenderer3 extends js.Object {
+trait ProceduralRenderer3 extends Renderer3 {
   /**
     * This property is allowed to be null / undefined,
     * in which case the view engine won't call it.

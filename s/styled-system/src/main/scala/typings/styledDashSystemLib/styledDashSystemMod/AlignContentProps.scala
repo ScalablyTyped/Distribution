@@ -15,3 +15,12 @@ trait AlignContentProps extends js.Object {
   var alignContent: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.AlignContentProperty]] = js.undefined
 }
 
+object AlignContentProps {
+  @scala.inline
+  def apply(alignContent: ResponsiveValue[csstypeLib.csstypeMod.AlignContentProperty] = null): AlignContentProps = {
+    val __obj = js.Dynamic.literal()
+    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AlignContentProps]
+  }
+}
+

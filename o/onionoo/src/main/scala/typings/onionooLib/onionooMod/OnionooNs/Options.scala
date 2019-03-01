@@ -18,3 +18,16 @@ trait Options extends js.Object {
   var cache: js.UndefOr[gotLib.gotMod.gotNs.Cache | onionooLib.onionooLibNumbers.`false`] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String = null,
+    cache: gotLib.gotMod.gotNs.Cache | onionooLib.onionooLibNumbers.`false` = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

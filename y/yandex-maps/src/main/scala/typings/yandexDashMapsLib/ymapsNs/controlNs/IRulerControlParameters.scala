@@ -11,3 +11,18 @@ trait IRulerControlParameters extends js.Object {
   var state: js.UndefOr[js.Object] = js.undefined
 }
 
+object IRulerControlParameters {
+  @scala.inline
+  def apply(
+    data: js.Object = null,
+    options: yandexDashMapsLib.Anon_AdjustMapMarginPosition = null,
+    state: js.Object = null
+  ): IRulerControlParameters = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[IRulerControlParameters]
+  }
+}
+

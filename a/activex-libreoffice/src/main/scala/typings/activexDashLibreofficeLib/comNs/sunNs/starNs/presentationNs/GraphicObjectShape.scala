@@ -15,3 +15,16 @@ trait GraphicObjectShape
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.GraphicObjectShape
      with Shape
 
+object GraphicObjectShape {
+  @scala.inline
+  def apply(
+    GraphicObjectShape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.GraphicObjectShape = null,
+    Shape: Shape = null
+  ): GraphicObjectShape = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, GraphicObjectShape)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
+    __obj.asInstanceOf[GraphicObjectShape]
+  }
+}
+

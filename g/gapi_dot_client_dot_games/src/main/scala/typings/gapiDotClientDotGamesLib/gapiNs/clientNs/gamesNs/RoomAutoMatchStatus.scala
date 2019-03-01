@@ -12,3 +12,13 @@ trait RoomAutoMatchStatus extends js.Object {
   var waitEstimateSeconds: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RoomAutoMatchStatus {
+  @scala.inline
+  def apply(kind: java.lang.String = null, waitEstimateSeconds: scala.Int | scala.Double = null): RoomAutoMatchStatus = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (waitEstimateSeconds != null) __obj.updateDynamic("waitEstimateSeconds")(waitEstimateSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoomAutoMatchStatus]
+  }
+}
+

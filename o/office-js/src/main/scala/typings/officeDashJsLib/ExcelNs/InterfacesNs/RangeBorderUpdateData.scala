@@ -34,3 +34,18 @@ trait RangeBorderUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object RangeBorderUpdateData {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    style: officeDashJsLib.ExcelNs.BorderLineStyle | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Continuous | officeDashJsLib.officeDashJsLibStrings.Dash | officeDashJsLib.officeDashJsLibStrings.DashDot | officeDashJsLib.officeDashJsLibStrings.DashDotDot | officeDashJsLib.officeDashJsLibStrings.Dot | officeDashJsLib.officeDashJsLibStrings.Double | officeDashJsLib.officeDashJsLibStrings.SlantDashDot = null,
+    weight: officeDashJsLib.ExcelNs.BorderWeight | officeDashJsLib.officeDashJsLibStrings.Hairline | officeDashJsLib.officeDashJsLibStrings.Thin | officeDashJsLib.officeDashJsLibStrings.Medium | officeDashJsLib.officeDashJsLibStrings.Thick = null
+  ): RangeBorderUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RangeBorderUpdateData]
+  }
+}
+

@@ -18,3 +18,32 @@ trait SparklineValueAxisItemTitle extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SparklineValueAxisItemTitle {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: SparklineValueAxisItemTitleBorder = null,
+    color: java.lang.String = null,
+    font: java.lang.String = null,
+    margin: scala.Double | js.Any = null,
+    padding: scala.Double | js.Any = null,
+    position: java.lang.String = null,
+    rotation: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): SparklineValueAxisItemTitle = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[SparklineValueAxisItemTitle]
+  }
+}
+

@@ -50,3 +50,26 @@ trait CryptoKey extends js.Object {
   var rotationPeriod: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CryptoKey {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    name: java.lang.String = null,
+    nextRotationTime: java.lang.String = null,
+    primary: CryptoKeyVersion = null,
+    purpose: java.lang.String = null,
+    rotationPeriod: java.lang.String = null
+  ): CryptoKey = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nextRotationTime != null) __obj.updateDynamic("nextRotationTime")(nextRotationTime)
+    if (primary != null) __obj.updateDynamic("primary")(primary)
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (rotationPeriod != null) __obj.updateDynamic("rotationPeriod")(rotationPeriod)
+    __obj.asInstanceOf[CryptoKey]
+  }
+}
+

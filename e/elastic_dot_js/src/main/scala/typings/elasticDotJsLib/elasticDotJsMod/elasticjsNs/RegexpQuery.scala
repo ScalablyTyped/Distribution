@@ -67,3 +67,28 @@ trait RegexpQuery extends Query {
   def value(p: java.lang.String): RegexpQuery
 }
 
+object RegexpQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, RegexpQuery],
+    field: js.Function1[java.lang.String, RegexpQuery],
+    flags: js.Function1[java.lang.String, RegexpQuery],
+    flagsValue: js.Function1[java.lang.String, RegexpQuery],
+    rewrite: js.Function1[java.lang.String, RegexpQuery],
+    toJSON: js.Function0[js.Any],
+    value: js.Function1[java.lang.String, RegexpQuery]
+  ): RegexpQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("flagsValue")(flagsValue)
+    __obj.updateDynamic("rewrite")(rewrite)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[RegexpQuery]
+  }
+}
+

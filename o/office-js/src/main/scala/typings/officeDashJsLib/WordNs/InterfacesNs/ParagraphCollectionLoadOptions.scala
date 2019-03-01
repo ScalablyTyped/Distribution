@@ -212,3 +212,70 @@ trait ParagraphCollectionLoadOptions extends js.Object {
   var text: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ParagraphCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    alignment: js.UndefOr[scala.Boolean] = js.undefined,
+    firstLineIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    font: FontLoadOptions = null,
+    isLastParagraph: js.UndefOr[scala.Boolean] = js.undefined,
+    isListItem: js.UndefOr[scala.Boolean] = js.undefined,
+    leftIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    lineSpacing: js.UndefOr[scala.Boolean] = js.undefined,
+    lineUnitAfter: js.UndefOr[scala.Boolean] = js.undefined,
+    lineUnitBefore: js.UndefOr[scala.Boolean] = js.undefined,
+    list: ListLoadOptions = null,
+    listItem: ListItemLoadOptions = null,
+    listItemOrNullObject: ListItemLoadOptions = null,
+    listOrNullObject: ListLoadOptions = null,
+    outlineLevel: js.UndefOr[scala.Boolean] = js.undefined,
+    parentBody: BodyLoadOptions = null,
+    parentContentControl: ContentControlLoadOptions = null,
+    parentContentControlOrNullObject: ContentControlLoadOptions = null,
+    parentTable: TableLoadOptions = null,
+    parentTableCell: TableCellLoadOptions = null,
+    parentTableCellOrNullObject: TableCellLoadOptions = null,
+    parentTableOrNullObject: TableLoadOptions = null,
+    rightIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    spaceAfter: js.UndefOr[scala.Boolean] = js.undefined,
+    spaceBefore: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    styleBuiltIn: js.UndefOr[scala.Boolean] = js.undefined,
+    tableNestingLevel: js.UndefOr[scala.Boolean] = js.undefined,
+    text: js.UndefOr[scala.Boolean] = js.undefined
+  ): ParagraphCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(alignment)) __obj.updateDynamic("alignment")(alignment)
+    if (!js.isUndefined(firstLineIndent)) __obj.updateDynamic("firstLineIndent")(firstLineIndent)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(isLastParagraph)) __obj.updateDynamic("isLastParagraph")(isLastParagraph)
+    if (!js.isUndefined(isListItem)) __obj.updateDynamic("isListItem")(isListItem)
+    if (!js.isUndefined(leftIndent)) __obj.updateDynamic("leftIndent")(leftIndent)
+    if (!js.isUndefined(lineSpacing)) __obj.updateDynamic("lineSpacing")(lineSpacing)
+    if (!js.isUndefined(lineUnitAfter)) __obj.updateDynamic("lineUnitAfter")(lineUnitAfter)
+    if (!js.isUndefined(lineUnitBefore)) __obj.updateDynamic("lineUnitBefore")(lineUnitBefore)
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (listItem != null) __obj.updateDynamic("listItem")(listItem)
+    if (listItemOrNullObject != null) __obj.updateDynamic("listItemOrNullObject")(listItemOrNullObject)
+    if (listOrNullObject != null) __obj.updateDynamic("listOrNullObject")(listOrNullObject)
+    if (!js.isUndefined(outlineLevel)) __obj.updateDynamic("outlineLevel")(outlineLevel)
+    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
+    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
+    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
+    if (!js.isUndefined(rightIndent)) __obj.updateDynamic("rightIndent")(rightIndent)
+    if (!js.isUndefined(spaceAfter)) __obj.updateDynamic("spaceAfter")(spaceAfter)
+    if (!js.isUndefined(spaceBefore)) __obj.updateDynamic("spaceBefore")(spaceBefore)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(styleBuiltIn)) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (!js.isUndefined(tableNestingLevel)) __obj.updateDynamic("tableNestingLevel")(tableNestingLevel)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ParagraphCollectionLoadOptions]
+  }
+}
+

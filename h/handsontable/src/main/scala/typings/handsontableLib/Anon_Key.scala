@@ -9,3 +9,12 @@ trait Anon_Key extends js.Object {
   var key: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(key: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

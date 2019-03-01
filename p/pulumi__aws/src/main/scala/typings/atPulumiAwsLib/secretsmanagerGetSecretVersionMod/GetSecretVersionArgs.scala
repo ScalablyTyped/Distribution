@@ -20,3 +20,18 @@ trait GetSecretVersionArgs extends js.Object {
   val versionStage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetSecretVersionArgs {
+  @scala.inline
+  def apply(
+    secretId: java.lang.String,
+    versionId: java.lang.String = null,
+    versionStage: java.lang.String = null
+  ): GetSecretVersionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("secretId")(secretId)
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId)
+    if (versionStage != null) __obj.updateDynamic("versionStage")(versionStage)
+    __obj.asInstanceOf[GetSecretVersionArgs]
+  }
+}
+

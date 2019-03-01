@@ -34,3 +34,68 @@ trait MessagesResource extends js.Object {
   def untrash(request: gapiDotClientDotGmailLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Message]
 }
 
+object MessagesResource {
+  @scala.inline
+  def apply(
+    attachments: AttachmentsResource,
+    batchDelete: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    batchModify: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsFormatId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    `import`: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltDeleted, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltDeletedFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsIncludeSpamTrashKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListMessagesResponse]
+    ],
+    modify: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    send: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    trash: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    untrash: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ]
+  ): MessagesResource = {
+    val __obj = js.Dynamic.literal(`import` = `import`)
+    __obj.updateDynamic("attachments")(attachments)
+    __obj.updateDynamic("batchDelete")(batchDelete)
+    __obj.updateDynamic("batchModify")(batchModify)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("modify")(modify)
+    __obj.updateDynamic("send")(send)
+    __obj.updateDynamic("trash")(trash)
+    __obj.updateDynamic("untrash")(untrash)
+    __obj.asInstanceOf[MessagesResource]
+  }
+}
+

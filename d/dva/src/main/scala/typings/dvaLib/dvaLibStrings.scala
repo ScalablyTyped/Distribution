@@ -10,16 +10,20 @@ object dvaLibStrings {
   sealed trait matchPath extends js.Object
   
   @js.native
-  sealed trait takeEvery extends js.Object
+  sealed trait takeEvery
+    extends dvaLib.dvaMod.EffectType
   
   @js.native
-  sealed trait takeLatest extends js.Object
+  sealed trait takeLatest
+    extends dvaLib.dvaMod.EffectType
   
   @js.native
-  sealed trait throttle extends js.Object
+  sealed trait throttle
+    extends dvaLib.dvaMod.EffectType
   
   @js.native
-  sealed trait watcher extends js.Object
+  sealed trait watcher
+    extends dvaLib.dvaMod.EffectType
   
   @scala.inline
   def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]

@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
   var fixedToTop: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object INavbarProps {
+  @scala.inline
+  def apply(
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
+    fixedToTop: js.UndefOr[scala.Boolean] = js.undefined
+  ): INavbarProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, IProps)
+    if (!js.isUndefined(fixedToTop)) __obj.updateDynamic("fixedToTop")(fixedToTop)
+    __obj.asInstanceOf[INavbarProps]
+  }
+}
+

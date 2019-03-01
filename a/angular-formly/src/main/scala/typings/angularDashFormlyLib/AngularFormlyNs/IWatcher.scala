@@ -27,3 +27,27 @@ trait IWatcher extends js.Object {
   ): scala.Unit
 }
 
+object IWatcher {
+  @scala.inline
+  def apply(
+    listener: js.Function5[
+      java.lang.String, 
+      js.Any, 
+      js.Any, 
+      ITemplateScope, 
+      angularLib.angularMod.Global.Function, 
+      scala.Unit
+    ],
+    deep: js.UndefOr[scala.Boolean] = js.undefined,
+    expression: java.lang.String | angularDashFormlyLib.Anon_Field = null,
+    `type`: java.lang.String = null
+  ): IWatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("listener")(listener)
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
+    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IWatcher]
+  }
+}
+

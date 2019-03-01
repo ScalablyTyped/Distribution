@@ -17,3 +17,30 @@ trait Option extends js.Object {
   var stylesheetPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    compositor: BuiltinCompositors | Compositor = null,
+    compositorOptions: CompositorOption = null,
+    layout: BuiltinLayouts | LayoutFunc = null,
+    layoutOptions: LayoutOption = null,
+    spritePath: java.lang.String = null,
+    src: js.Array[java.lang.String] = null,
+    stylesheet: BuiltinStylesheetFormats | StylesheetFunc | java.lang.String = null,
+    stylesheetOptions: StylesheetOption = null,
+    stylesheetPath: java.lang.String = null
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    if (compositor != null) __obj.updateDynamic("compositor")(compositor.asInstanceOf[js.Any])
+    if (compositorOptions != null) __obj.updateDynamic("compositorOptions")(compositorOptions)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (layoutOptions != null) __obj.updateDynamic("layoutOptions")(layoutOptions)
+    if (spritePath != null) __obj.updateDynamic("spritePath")(spritePath)
+    if (src != null) __obj.updateDynamic("src")(src)
+    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
+    if (stylesheetOptions != null) __obj.updateDynamic("stylesheetOptions")(stylesheetOptions)
+    if (stylesheetPath != null) __obj.updateDynamic("stylesheetPath")(stylesheetPath)
+    __obj.asInstanceOf[Option]
+  }
+}
+

@@ -14,3 +14,24 @@ trait Anon_BaseUrl extends js.Object {
   var update: js.UndefOr[Anon_Url] = js.undefined
 }
 
+object Anon_BaseUrl {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String = null,
+    create: Anon_Url = null,
+    destroy: Anon_Url = null,
+    idAttr: java.lang.String = null,
+    read: Anon_Url = null,
+    update: Anon_Url = null
+  ): Anon_BaseUrl = {
+    val __obj = js.Dynamic.literal()
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (idAttr != null) __obj.updateDynamic("idAttr")(idAttr)
+    if (read != null) __obj.updateDynamic("read")(read)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Anon_BaseUrl]
+  }
+}
+

@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object emscriptenLibStrings {
   @js.native
-  sealed trait NODE extends js.Object
+  sealed trait NODE
+    extends emscriptenLib.ModuleNs.EnvironmentType
   
   @js.native
-  sealed trait SHELL extends js.Object
+  sealed trait SHELL
+    extends emscriptenLib.ModuleNs.EnvironmentType
   
   @js.native
-  sealed trait WEB extends js.Object
+  sealed trait WEB
+    extends emscriptenLib.ModuleNs.EnvironmentType
   
   @js.native
-  sealed trait WORKER extends js.Object
+  sealed trait WORKER
+    extends emscriptenLib.ModuleNs.EnvironmentType
   
   @scala.inline
   def NODE: NODE = "NODE".asInstanceOf[NODE]

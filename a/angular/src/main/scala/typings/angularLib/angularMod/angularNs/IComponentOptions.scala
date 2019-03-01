@@ -64,3 +64,26 @@ trait IComponentOptions extends js.Object {
   var transclude: js.UndefOr[scala.Boolean | org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }
 
+object IComponentOptions {
+  @scala.inline
+  def apply(
+    bindings: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    controller: java.lang.String | Injectable[IControllerConstructor] = null,
+    controllerAs: java.lang.String = null,
+    require: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    template: java.lang.String | (Injectable[js.Function1[/* repeated */ _, java.lang.String]]) = null,
+    templateUrl: java.lang.String | (Injectable[js.Function1[/* repeated */ _, java.lang.String]]) = null,
+    transclude: scala.Boolean | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): IComponentOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (require != null) __obj.updateDynamic("require")(require)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (transclude != null) __obj.updateDynamic("transclude")(transclude.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IComponentOptions]
+  }
+}
+

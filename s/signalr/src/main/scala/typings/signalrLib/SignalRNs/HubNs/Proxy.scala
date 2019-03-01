@@ -33,3 +33,28 @@ trait Proxy extends js.Object {
   def on(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Proxy
 }
 
+object Proxy {
+  @scala.inline
+  def apply(
+    connection: Connection,
+    hasSubscriptions: js.Function0[scala.Boolean],
+    hubName: java.lang.String,
+    init: js.Function2[Connection, java.lang.String, scala.Unit],
+    invoke: js.Function2[java.lang.String, /* repeated */ js.Any, jqueryLib.JQueryPromise[_]],
+    off: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], Proxy],
+    on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], Proxy],
+    state: js.Any
+  ): Proxy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.updateDynamic("hasSubscriptions")(hasSubscriptions)
+    __obj.updateDynamic("hubName")(hubName)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("invoke")(invoke)
+    __obj.updateDynamic("off")(off)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Proxy]
+  }
+}
+

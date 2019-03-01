@@ -7,121 +7,173 @@ import scala.scalajs.js.annotation._
 
 object coinbaseLibStrings {
   @js.native
-  sealed trait account extends js.Object
+  sealed trait account
+    extends coinbaseLib.coinbaseMod.ResourceType
   
   @js.native
-  sealed trait ach_bank_account extends js.Object
+  sealed trait ach_bank_account
+    extends coinbaseLib.coinbaseMod.PaymentMethodType
   
   @js.native
-  sealed trait address extends js.Object
+  sealed trait address
+    extends coinbaseLib.coinbaseMod.ResourceType
   
   @js.native
-  sealed trait bank_wire extends js.Object
+  sealed trait bank_wire
+    extends coinbaseLib.coinbaseMod.PaymentMethodType
   
   @js.native
-  sealed trait buy extends js.Object
+  sealed trait buy
+    extends coinbaseLib.coinbaseMod.ResourceType
+       with coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait canceled extends js.Object
+  sealed trait canceled
+    extends coinbaseLib.coinbaseMod.BuyStatus
+       with coinbaseLib.coinbaseMod.DepositStatus
+       with coinbaseLib.coinbaseMod.SellStatus
+       with coinbaseLib.coinbaseMod.TransactionStatus
+       with coinbaseLib.coinbaseMod.WithdrawalStatus
   
   @js.native
-  sealed trait completed extends js.Object
+  sealed trait completed
+    extends coinbaseLib.coinbaseMod.BuyStatus
+       with coinbaseLib.coinbaseMod.DepositStatus
+       with coinbaseLib.coinbaseMod.SellStatus
+       with coinbaseLib.coinbaseMod.TransactionStatus
+       with coinbaseLib.coinbaseMod.WithdrawalStatus
   
   @js.native
-  sealed trait created extends js.Object
+  sealed trait created
+    extends coinbaseLib.coinbaseMod.BuyStatus
+       with coinbaseLib.coinbaseMod.DepositStatus
+       with coinbaseLib.coinbaseMod.SellStatus
+       with coinbaseLib.coinbaseMod.WithdrawalStatus
   
   @js.native
-  sealed trait credit_card extends js.Object
+  sealed trait credit_card
+    extends coinbaseLib.coinbaseMod.PaymentMethodType
   
   @js.native
-  sealed trait deposit extends js.Object
+  sealed trait deposit
+    extends coinbaseLib.coinbaseMod.ResourceType
   
   @js.native
-  sealed trait eft_bank_account extends js.Object
+  sealed trait eft_bank_account
+    extends coinbaseLib.coinbaseMod.PaymentMethodType
   
   @js.native
-  sealed trait exchange_deposit extends js.Object
+  sealed trait exchange_deposit
+    extends coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait exchange_withdrawal extends js.Object
+  sealed trait exchange_withdrawal
+    extends coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait expired extends js.Object
+  sealed trait expired
+    extends coinbaseLib.coinbaseMod.TransactionStatus
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends coinbaseLib.coinbaseMod.TransactionStatus
   
   @js.native
-  sealed trait fiat extends js.Object
+  sealed trait fiat
+    extends coinbaseLib.coinbaseMod.AccountType
   
   @js.native
-  sealed trait fiat_account extends js.Object
+  sealed trait fiat_account
+    extends coinbaseLib.coinbaseMod.PaymentMethodType
   
   @js.native
-  sealed trait fiat_deposit extends js.Object
+  sealed trait fiat_deposit
+    extends coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait fiat_withdrawal extends js.Object
+  sealed trait fiat_withdrawal
+    extends coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait ideal_bank_account extends js.Object
+  sealed trait ideal_bank_account
+    extends coinbaseLib.coinbaseMod.PaymentMethodType
   
   @js.native
-  sealed trait interac extends js.Object
+  sealed trait interac
+    extends coinbaseLib.coinbaseMod.PaymentMethodType
   
   @js.native
-  sealed trait multisig extends js.Object
+  sealed trait multisig
+    extends coinbaseLib.coinbaseMod.AccountType
   
   @js.native
-  sealed trait multisig_vault extends js.Object
+  sealed trait multisig_vault
+    extends coinbaseLib.coinbaseMod.AccountType
   
   @js.native
-  sealed trait payment_method extends js.Object
+  sealed trait payment_method
+    extends coinbaseLib.coinbaseMod.ResourceType
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends coinbaseLib.coinbaseMod.TransactionStatus
   
   @js.native
-  sealed trait request extends js.Object
+  sealed trait request
+    extends coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait secure3d_card extends js.Object
+  sealed trait secure3d_card
+    extends coinbaseLib.coinbaseMod.PaymentMethodType
   
   @js.native
-  sealed trait sell extends js.Object
+  sealed trait sell
+    extends coinbaseLib.coinbaseMod.ResourceType
+       with coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait send extends js.Object
+  sealed trait send
+    extends coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait sepa_bank_account extends js.Object
+  sealed trait sepa_bank_account
+    extends coinbaseLib.coinbaseMod.PaymentMethodType
   
   @js.native
-  sealed trait transaction extends js.Object
+  sealed trait transaction
+    extends coinbaseLib.coinbaseMod.ResourceType
   
   @js.native
-  sealed trait transfer extends js.Object
+  sealed trait transfer
+    extends coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user
+    extends coinbaseLib.coinbaseMod.ResourceType
   
   @js.native
-  sealed trait vault extends js.Object
+  sealed trait vault
+    extends coinbaseLib.coinbaseMod.AccountType
   
   @js.native
-  sealed trait vault_withdrawal extends js.Object
+  sealed trait vault_withdrawal
+    extends coinbaseLib.coinbaseMod.TransactionType
   
   @js.native
-  sealed trait waiting_for_clearing extends js.Object
+  sealed trait waiting_for_clearing
+    extends coinbaseLib.coinbaseMod.TransactionStatus
   
   @js.native
-  sealed trait waiting_for_signature extends js.Object
+  sealed trait waiting_for_signature
+    extends coinbaseLib.coinbaseMod.TransactionStatus
   
   @js.native
-  sealed trait wallet extends js.Object
+  sealed trait wallet
+    extends coinbaseLib.coinbaseMod.AccountType
   
   @js.native
-  sealed trait withdrawal extends js.Object
+  sealed trait withdrawal
+    extends coinbaseLib.coinbaseMod.ResourceType
   
   @scala.inline
   def account: account = "account".asInstanceOf[account]

@@ -12,3 +12,20 @@ trait VRFieldOfView extends js.Object {
   val upDegrees: scala.Double
 }
 
+object VRFieldOfView {
+  @scala.inline
+  def apply(
+    downDegrees: scala.Double,
+    leftDegrees: scala.Double,
+    rightDegrees: scala.Double,
+    upDegrees: scala.Double
+  ): VRFieldOfView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("downDegrees")(downDegrees)
+    __obj.updateDynamic("leftDegrees")(leftDegrees)
+    __obj.updateDynamic("rightDegrees")(rightDegrees)
+    __obj.updateDynamic("upDegrees")(upDegrees)
+    __obj.asInstanceOf[VRFieldOfView]
+  }
+}
+

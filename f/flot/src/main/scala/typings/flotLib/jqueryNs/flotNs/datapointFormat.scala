@@ -13,3 +13,22 @@ trait datapointFormat extends js.Object {
   var y: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object datapointFormat {
+  @scala.inline
+  def apply(
+    number: scala.Boolean,
+    required: scala.Boolean,
+    defaultValue: scala.Int | scala.Double = null,
+    x: js.UndefOr[scala.Boolean] = js.undefined,
+    y: js.UndefOr[scala.Boolean] = js.undefined
+  ): datapointFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("number")(number)
+    __obj.updateDynamic("required")(required)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x)
+    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[datapointFormat]
+  }
+}
+

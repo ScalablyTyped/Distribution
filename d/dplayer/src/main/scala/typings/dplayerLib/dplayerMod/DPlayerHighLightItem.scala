@@ -10,3 +10,13 @@ trait DPlayerHighLightItem extends js.Object {
   var time: scala.Double
 }
 
+object DPlayerHighLightItem {
+  @scala.inline
+  def apply(text: java.lang.String, time: scala.Double): DPlayerHighLightItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[DPlayerHighLightItem]
+  }
+}
+

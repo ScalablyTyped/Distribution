@@ -12,3 +12,13 @@ trait Comment extends js.Object {
   var userComment: js.UndefOr[UserComment] = js.undefined
 }
 
+object Comment {
+  @scala.inline
+  def apply(developerComment: DeveloperComment = null, userComment: UserComment = null): Comment = {
+    val __obj = js.Dynamic.literal()
+    if (developerComment != null) __obj.updateDynamic("developerComment")(developerComment)
+    if (userComment != null) __obj.updateDynamic("userComment")(userComment)
+    __obj.asInstanceOf[Comment]
+  }
+}
+

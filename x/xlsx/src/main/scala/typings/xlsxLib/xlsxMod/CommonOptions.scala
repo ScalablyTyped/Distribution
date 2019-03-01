@@ -31,3 +31,20 @@ trait CommonOptions extends js.Object {
   var cellStyles: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CommonOptions {
+  @scala.inline
+  def apply(
+    WTF: js.UndefOr[scala.Boolean] = js.undefined,
+    bookVBA: js.UndefOr[scala.Boolean] = js.undefined,
+    cellDates: js.UndefOr[scala.Boolean] = js.undefined,
+    cellStyles: js.UndefOr[scala.Boolean] = js.undefined
+  ): CommonOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF)
+    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA)
+    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates)
+    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles)
+    __obj.asInstanceOf[CommonOptions]
+  }
+}
+

@@ -29,3 +29,40 @@ trait IToastOptions extends js.Object {
   var toastClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IToastOptions {
+  @scala.inline
+  def apply(
+    autoWrap: js.UndefOr[scala.Boolean] = js.undefined,
+    bindToController: js.UndefOr[scala.Boolean] = js.undefined,
+    controller: java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor] = null,
+    controllerAs: java.lang.String = null,
+    hideDelay: scala.Double | angularDashMaterialLib.angularDashMaterialLibNumbers.`false` = null,
+    locals: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    parent: java.lang.String | stdLib.Element | angularLib.JQuery = null,
+    position: java.lang.String = null,
+    preserveScope: js.UndefOr[scala.Boolean] = js.undefined,
+    resolve: ResolveObject = null,
+    scope: angularLib.angularMod.angularNs.IScope = null,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null,
+    toastClass: java.lang.String = null
+  ): IToastOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoWrap)) __obj.updateDynamic("autoWrap")(autoWrap)
+    if (!js.isUndefined(bindToController)) __obj.updateDynamic("bindToController")(bindToController)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
+    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(preserveScope)) __obj.updateDynamic("preserveScope")(preserveScope)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (toastClass != null) __obj.updateDynamic("toastClass")(toastClass)
+    __obj.asInstanceOf[IToastOptions]
+  }
+}
+

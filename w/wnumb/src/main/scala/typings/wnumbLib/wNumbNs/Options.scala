@@ -61,3 +61,34 @@ trait Options extends js.Object {
   var undo: js.UndefOr[js.Function1[/* value */ scala.Double, scala.Double]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    decimals: scala.Int | scala.Double = null,
+    decoder: js.Function1[/* value */ scala.Double, scala.Double] = null,
+    edit: js.Function1[/* value */ scala.Double, scala.Double] = null,
+    encoder: js.Function1[/* value */ scala.Double, scala.Double] = null,
+    mark: java.lang.String = null,
+    negative: java.lang.String = null,
+    negativeBefore: java.lang.String = null,
+    postfix: java.lang.String = null,
+    prefix: java.lang.String = null,
+    thousand: java.lang.String = null,
+    undo: js.Function1[/* value */ scala.Double, scala.Double] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (decoder != null) __obj.updateDynamic("decoder")(decoder)
+    if (edit != null) __obj.updateDynamic("edit")(edit)
+    if (encoder != null) __obj.updateDynamic("encoder")(encoder)
+    if (mark != null) __obj.updateDynamic("mark")(mark)
+    if (negative != null) __obj.updateDynamic("negative")(negative)
+    if (negativeBefore != null) __obj.updateDynamic("negativeBefore")(negativeBefore)
+    if (postfix != null) __obj.updateDynamic("postfix")(postfix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (thousand != null) __obj.updateDynamic("thousand")(thousand)
+    if (undo != null) __obj.updateDynamic("undo")(undo)
+    __obj.asInstanceOf[Options]
+  }
+}
+

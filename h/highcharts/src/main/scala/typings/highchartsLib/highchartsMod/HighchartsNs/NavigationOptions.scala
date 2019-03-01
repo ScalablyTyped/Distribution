@@ -36,3 +36,20 @@ trait NavigationOptions extends js.Object {
   var menuStyle: js.UndefOr[js.Object] = js.undefined
 }
 
+object NavigationOptions {
+  @scala.inline
+  def apply(
+    buttonOptions: Button = null,
+    menuItemHoverStyle: js.Object = null,
+    menuItemStyle: js.Object = null,
+    menuStyle: js.Object = null
+  ): NavigationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions)
+    if (menuItemHoverStyle != null) __obj.updateDynamic("menuItemHoverStyle")(menuItemHoverStyle)
+    if (menuItemStyle != null) __obj.updateDynamic("menuItemStyle")(menuItemStyle)
+    if (menuStyle != null) __obj.updateDynamic("menuStyle")(menuStyle)
+    __obj.asInstanceOf[NavigationOptions]
+  }
+}
+

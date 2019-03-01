@@ -10,3 +10,13 @@ trait Anon_Off extends js.Object {
   var on: java.lang.String
 }
 
+object Anon_Off {
+  @scala.inline
+  def apply(off: java.lang.String, on: java.lang.String): Anon_Off = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("off")(off)
+    __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[Anon_Off]
+  }
+}
+

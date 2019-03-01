@@ -10,3 +10,13 @@ trait Anon_Component extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Component {
+  @scala.inline
+  def apply(component: java.lang.String = null, template: java.lang.String = null): Anon_Component = {
+    val __obj = js.Dynamic.literal()
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[Anon_Component]
+  }
+}
+

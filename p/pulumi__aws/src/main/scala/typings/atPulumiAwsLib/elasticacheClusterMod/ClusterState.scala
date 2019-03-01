@@ -154,3 +154,66 @@ trait ClusterState extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object ClusterState {
+  @scala.inline
+  def apply(
+    applyImmediately: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    availabilityZones: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    azMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cacheNodes: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AddressAvailabilityZone]]
+    ] = null,
+    clusterAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    configurationEndpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engine: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    maintenanceWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    nodeType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    notificationTopicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    numCacheNodes: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    parameterGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    preferredAvailabilityZones: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    replicationGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    securityGroupNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    snapshotArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    snapshotName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    snapshotRetentionLimit: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    snapshotWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ClusterState = {
+    val __obj = js.Dynamic.literal()
+    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
+    if (azMode != null) __obj.updateDynamic("azMode")(azMode.asInstanceOf[js.Any])
+    if (cacheNodes != null) __obj.updateDynamic("cacheNodes")(cacheNodes.asInstanceOf[js.Any])
+    if (clusterAddress != null) __obj.updateDynamic("clusterAddress")(clusterAddress.asInstanceOf[js.Any])
+    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
+    if (configurationEndpoint != null) __obj.updateDynamic("configurationEndpoint")(configurationEndpoint.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (maintenanceWindow != null) __obj.updateDynamic("maintenanceWindow")(maintenanceWindow.asInstanceOf[js.Any])
+    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
+    if (notificationTopicArn != null) __obj.updateDynamic("notificationTopicArn")(notificationTopicArn.asInstanceOf[js.Any])
+    if (numCacheNodes != null) __obj.updateDynamic("numCacheNodes")(numCacheNodes.asInstanceOf[js.Any])
+    if (parameterGroupName != null) __obj.updateDynamic("parameterGroupName")(parameterGroupName.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (preferredAvailabilityZones != null) __obj.updateDynamic("preferredAvailabilityZones")(preferredAvailabilityZones.asInstanceOf[js.Any])
+    if (replicationGroupId != null) __obj.updateDynamic("replicationGroupId")(replicationGroupId.asInstanceOf[js.Any])
+    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
+    if (securityGroupNames != null) __obj.updateDynamic("securityGroupNames")(securityGroupNames.asInstanceOf[js.Any])
+    if (snapshotArns != null) __obj.updateDynamic("snapshotArns")(snapshotArns.asInstanceOf[js.Any])
+    if (snapshotName != null) __obj.updateDynamic("snapshotName")(snapshotName.asInstanceOf[js.Any])
+    if (snapshotRetentionLimit != null) __obj.updateDynamic("snapshotRetentionLimit")(snapshotRetentionLimit.asInstanceOf[js.Any])
+    if (snapshotWindow != null) __obj.updateDynamic("snapshotWindow")(snapshotWindow.asInstanceOf[js.Any])
+    if (subnetGroupName != null) __obj.updateDynamic("subnetGroupName")(subnetGroupName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterState]
+  }
+}
+

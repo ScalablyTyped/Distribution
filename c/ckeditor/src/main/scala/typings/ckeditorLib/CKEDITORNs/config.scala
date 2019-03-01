@@ -273,3 +273,318 @@ trait config extends js.Object {
   var wsc_width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object config {
+  @scala.inline
+  def apply(
+    allowedContent: scala.Boolean | ckeditorLib.CKEDITORNs.filterNs.allowedContentRules = null,
+    autoEmbed_widget: java.lang.String | (js.Function1[/* url */ java.lang.String, java.lang.String]) = null,
+    autoGrow_bottomSpace: scala.Int | scala.Double = null,
+    autoGrow_maxHeight: scala.Int | scala.Double = null,
+    autoGrow_minHeight: scala.Int | scala.Double = null,
+    autoGrow_onStartup: js.UndefOr[scala.Boolean] = js.undefined,
+    autoUpdateElement: js.UndefOr[scala.Boolean] = js.undefined,
+    baseFloatZIndex: scala.Int | scala.Double = null,
+    baseHref: java.lang.String = null,
+    basicEntities: js.UndefOr[scala.Boolean] = js.undefined,
+    blockedKeystrokes: js.Array[scala.Double] = null,
+    bodyClass: java.lang.String = null,
+    bodyId: java.lang.String = null,
+    browserContextMenuOnCtrl: js.UndefOr[scala.Boolean] = js.undefined,
+    clipboard_defaultContentType: ckeditorLib.ckeditorLibStrings.html | ckeditorLib.ckeditorLibStrings.text = null,
+    clipboard_notificationDuration: scala.Int | scala.Double = null,
+    cloudServices_tokenUrl: java.lang.String = null,
+    cloudServices_uploadUrl: java.lang.String = null,
+    coceSnippet_theme: java.lang.String = null,
+    codeSnippetGeshi_url: java.lang.String = null,
+    codeSnippet_codeClass: java.lang.String = null,
+    codeSnippet_languages: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    colorButton_backStyle: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    colorButton_colors: java.lang.String = null,
+    colorButton_colorsPerRow: scala.Int | scala.Double = null,
+    colorButton_enableAutomatic: js.UndefOr[scala.Boolean] = js.undefined,
+    colorButton_enableMore: js.UndefOr[scala.Boolean] = js.undefined,
+    colorButton_foreStyle: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    colorButton_normalizeBackground: js.UndefOr[scala.Boolean] = js.undefined,
+    contentsCss: java.lang.String | js.Array[java.lang.String] = null,
+    contentsLangDirection: java.lang.String = null,
+    contentsLanguage: java.lang.String = null,
+    copyFormatting_allowRules: java.lang.String = null,
+    copyFormatting_allowedContexts: scala.Boolean | js.Array[java.lang.String] = null,
+    copyFormatting_keystrokeCopy: scala.Int | scala.Double = null,
+    copyFormatting_keystrokePaste: scala.Int | scala.Double = null,
+    copyFormatting_outerCursor: js.UndefOr[scala.Boolean] = js.undefined,
+    coreStyles_bold: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    coreStyles_italic: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    coreStyles_strike: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    coreStyles_subscript: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    coreStyles_superscript: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    coreStyles_underline: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    customConfig: java.lang.String = null,
+    dataIndentationChars: java.lang.String = null,
+    defaultLanguage: java.lang.String = null,
+    devtools_styles: java.lang.String = null,
+    devtools_textCallback: js.Function4[
+      /* editor */ editor, 
+      /* dialog */ dialog, 
+      /* element */ ckeditorLib.CKEDITORNs.domNs.element, 
+      /* tabName */ java.lang.String, 
+      java.lang.String
+    ] = null,
+    dialog_backgroundCoverColor: java.lang.String = null,
+    dialog_backgroundCoverOpacity: scala.Int | scala.Double = null,
+    dialog_buttonsOrder: java.lang.String = null,
+    dialog_magnetDistance: scala.Int | scala.Double = null,
+    dialog_noConfirmCancel: js.UndefOr[scala.Boolean] = js.undefined,
+    dialog_startupFocusTab: js.UndefOr[scala.Boolean] = js.undefined,
+    disableNativeObjectResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    disableNativeReadonlyStyling: js.UndefOr[scala.Boolean] = js.undefined,
+    disableNativeSpellChecker: js.UndefOr[scala.Boolean] = js.undefined,
+    disableNativeTableHandles: js.UndefOr[scala.Boolean] = js.undefined,
+    disallowedContent: ckeditorLib.CKEDITORNs.filterNs.disallowedContentRules = null,
+    div_wrapTable: js.UndefOr[scala.Boolean] = js.undefined,
+    docType: java.lang.String = null,
+    easyimage_class: java.lang.String = null,
+    easyimage_defaultStyle: java.lang.String = null,
+    easyimage_styles: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    easyimage_toolbar: js.Array[java.lang.String] | java.lang.String = null,
+    emailProtection: java.lang.String = null,
+    embed_provider: java.lang.String = null,
+    enableTabKeyTools: js.UndefOr[scala.Boolean] = js.undefined,
+    enterMode: scala.Int | scala.Double = null,
+    entities: js.UndefOr[scala.Boolean] = js.undefined,
+    entities_additional: java.lang.String = null,
+    entities_greek: js.UndefOr[scala.Boolean] = js.undefined,
+    entities_latin: js.UndefOr[scala.Boolean] = js.undefined,
+    entities_processNumerical: scala.Boolean | java.lang.String = null,
+    extraAllowedContent: ckeditorLib.CKEDITORNs.filterNs.allowedContentRules = null,
+    extraPlugins: java.lang.String = null,
+    fileTools_defaultFileName: java.lang.String = null,
+    fileTools_requestHeaders: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    filebrowserBrowseUrl: java.lang.String = null,
+    filebrowserFlashBrowseUrl: java.lang.String = null,
+    filebrowserFlashUploadUrl: java.lang.String = null,
+    filebrowserImageBrowseLinkUrl: java.lang.String = null,
+    filebrowserImageBrowseUrl: java.lang.String = null,
+    filebrowserImageUploadUrl: java.lang.String = null,
+    filebrowserUploadMethod: java.lang.String = null,
+    filebrowserUploadUrl: java.lang.String = null,
+    filebrowserWindowFeatures: java.lang.String = null,
+    filebrowserWindowHeight: scala.Double | java.lang.String = null,
+    filebrowserWindowWidth: scala.Double | java.lang.String = null,
+    fillEmptyBlocks: scala.Boolean | (js.Function1[/* element */ ckeditorLib.CKEDITORNs.htmlParserNs.element, scala.Boolean]) = null,
+    find_highlight: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    flashAddEmbedTag: js.UndefOr[scala.Boolean] = js.undefined,
+    flashConvertOnEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    flashEmbedTagOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    floatSpaceDockedOffsetX: scala.Int | scala.Double = null,
+    floatSpaceDockedOffsetY: scala.Int | scala.Double = null,
+    floatSpacePinnedOffsetX: scala.Int | scala.Double = null,
+    floatSpacePinnedOffsetY: scala.Int | scala.Double = null,
+    floatSpacePreferRight: js.UndefOr[scala.Boolean] = js.undefined,
+    fontSize_defaultLabel: java.lang.String = null,
+    fontSize_sizes: java.lang.String = null,
+    fontSize_style: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    font_defaultLabel: java.lang.String = null,
+    font_names: java.lang.String = null,
+    font_style: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    forceEnterMode: js.UndefOr[scala.Boolean] = js.undefined,
+    forcePasteAsPlainText: js.UndefOr[scala.Boolean] = js.undefined,
+    forceSimpleAmpersand: js.UndefOr[scala.Boolean] = js.undefined,
+    format_address: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_div: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_h1: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_h2: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_h3: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_h4: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_h5: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_h6: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_p: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_pre: ckeditorLib.CKEDITORNs.configNs.styleObject = null,
+    format_tags: java.lang.String = null,
+    fullPage: js.UndefOr[scala.Boolean] = js.undefined,
+    grayt_autoStartup: js.UndefOr[scala.Boolean] = js.undefined,
+    height: java.lang.String | scala.Double = null,
+    htmlEncodeOutput: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreEmptyParagraph: js.UndefOr[scala.Boolean] = js.undefined,
+    image2_alignClasses: js.Array[java.lang.String] = null,
+    image2_altRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    image2_captionedClass: java.lang.String = null,
+    image2_disableResizer: js.UndefOr[scala.Boolean] = js.undefined,
+    image2_prefillDimensions: js.UndefOr[scala.Boolean] = js.undefined,
+    imageUploadUrl: java.lang.String = null,
+    image_prefillDimensions: js.UndefOr[scala.Boolean] = js.undefined,
+    image_previewText: java.lang.String = null,
+    image_removeLinkByEmptyUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    indentClasses: js.Array[java.lang.String] = null,
+    indentOffset: scala.Int | scala.Double = null,
+    indentUnit: java.lang.String = null,
+    jqueryOverrideVal: js.UndefOr[scala.Boolean] = js.undefined,
+    justifyClasses: js.Array[java.lang.String] = null,
+    keystrokes: js.Array[js.Tuple2[scala.Double, java.lang.String]] = null,
+    language: java.lang.String = null,
+    language_list: js.Array[java.lang.String] = null,
+    linkJavaScriptLinksAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    linkShowAdvancedTab: js.UndefOr[scala.Boolean] = js.undefined,
+    linkShowTargetTab: js.UndefOr[scala.Boolean] = js.undefined,
+    magicline_color: java.lang.String = null,
+    magicline_everywhere: js.UndefOr[scala.Boolean] = js.undefined,
+    magicline_holdDistance: scala.Int | scala.Double = null,
+    magicline_keystrokeNext: scala.Int | scala.Double = null,
+    magicline_keystrokePrevious: scala.Int | scala.Double = null,
+    magicline_tabuList: js.Array[java.lang.String] = null
+  ): config = {
+    val __obj = js.Dynamic.literal()
+    if (allowedContent != null) __obj.updateDynamic("allowedContent")(allowedContent.asInstanceOf[js.Any])
+    if (autoEmbed_widget != null) __obj.updateDynamic("autoEmbed_widget")(autoEmbed_widget.asInstanceOf[js.Any])
+    if (autoGrow_bottomSpace != null) __obj.updateDynamic("autoGrow_bottomSpace")(autoGrow_bottomSpace.asInstanceOf[js.Any])
+    if (autoGrow_maxHeight != null) __obj.updateDynamic("autoGrow_maxHeight")(autoGrow_maxHeight.asInstanceOf[js.Any])
+    if (autoGrow_minHeight != null) __obj.updateDynamic("autoGrow_minHeight")(autoGrow_minHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoGrow_onStartup)) __obj.updateDynamic("autoGrow_onStartup")(autoGrow_onStartup)
+    if (!js.isUndefined(autoUpdateElement)) __obj.updateDynamic("autoUpdateElement")(autoUpdateElement)
+    if (baseFloatZIndex != null) __obj.updateDynamic("baseFloatZIndex")(baseFloatZIndex.asInstanceOf[js.Any])
+    if (baseHref != null) __obj.updateDynamic("baseHref")(baseHref)
+    if (!js.isUndefined(basicEntities)) __obj.updateDynamic("basicEntities")(basicEntities)
+    if (blockedKeystrokes != null) __obj.updateDynamic("blockedKeystrokes")(blockedKeystrokes)
+    if (bodyClass != null) __obj.updateDynamic("bodyClass")(bodyClass)
+    if (bodyId != null) __obj.updateDynamic("bodyId")(bodyId)
+    if (!js.isUndefined(browserContextMenuOnCtrl)) __obj.updateDynamic("browserContextMenuOnCtrl")(browserContextMenuOnCtrl)
+    if (clipboard_defaultContentType != null) __obj.updateDynamic("clipboard_defaultContentType")(clipboard_defaultContentType.asInstanceOf[js.Any])
+    if (clipboard_notificationDuration != null) __obj.updateDynamic("clipboard_notificationDuration")(clipboard_notificationDuration.asInstanceOf[js.Any])
+    if (cloudServices_tokenUrl != null) __obj.updateDynamic("cloudServices_tokenUrl")(cloudServices_tokenUrl)
+    if (cloudServices_uploadUrl != null) __obj.updateDynamic("cloudServices_uploadUrl")(cloudServices_uploadUrl)
+    if (coceSnippet_theme != null) __obj.updateDynamic("coceSnippet_theme")(coceSnippet_theme)
+    if (codeSnippetGeshi_url != null) __obj.updateDynamic("codeSnippetGeshi_url")(codeSnippetGeshi_url)
+    if (codeSnippet_codeClass != null) __obj.updateDynamic("codeSnippet_codeClass")(codeSnippet_codeClass)
+    if (codeSnippet_languages != null) __obj.updateDynamic("codeSnippet_languages")(codeSnippet_languages)
+    if (colorButton_backStyle != null) __obj.updateDynamic("colorButton_backStyle")(colorButton_backStyle)
+    if (colorButton_colors != null) __obj.updateDynamic("colorButton_colors")(colorButton_colors)
+    if (colorButton_colorsPerRow != null) __obj.updateDynamic("colorButton_colorsPerRow")(colorButton_colorsPerRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorButton_enableAutomatic)) __obj.updateDynamic("colorButton_enableAutomatic")(colorButton_enableAutomatic)
+    if (!js.isUndefined(colorButton_enableMore)) __obj.updateDynamic("colorButton_enableMore")(colorButton_enableMore)
+    if (colorButton_foreStyle != null) __obj.updateDynamic("colorButton_foreStyle")(colorButton_foreStyle)
+    if (!js.isUndefined(colorButton_normalizeBackground)) __obj.updateDynamic("colorButton_normalizeBackground")(colorButton_normalizeBackground)
+    if (contentsCss != null) __obj.updateDynamic("contentsCss")(contentsCss.asInstanceOf[js.Any])
+    if (contentsLangDirection != null) __obj.updateDynamic("contentsLangDirection")(contentsLangDirection)
+    if (contentsLanguage != null) __obj.updateDynamic("contentsLanguage")(contentsLanguage)
+    if (copyFormatting_allowRules != null) __obj.updateDynamic("copyFormatting_allowRules")(copyFormatting_allowRules)
+    if (copyFormatting_allowedContexts != null) __obj.updateDynamic("copyFormatting_allowedContexts")(copyFormatting_allowedContexts.asInstanceOf[js.Any])
+    if (copyFormatting_keystrokeCopy != null) __obj.updateDynamic("copyFormatting_keystrokeCopy")(copyFormatting_keystrokeCopy.asInstanceOf[js.Any])
+    if (copyFormatting_keystrokePaste != null) __obj.updateDynamic("copyFormatting_keystrokePaste")(copyFormatting_keystrokePaste.asInstanceOf[js.Any])
+    if (!js.isUndefined(copyFormatting_outerCursor)) __obj.updateDynamic("copyFormatting_outerCursor")(copyFormatting_outerCursor)
+    if (coreStyles_bold != null) __obj.updateDynamic("coreStyles_bold")(coreStyles_bold)
+    if (coreStyles_italic != null) __obj.updateDynamic("coreStyles_italic")(coreStyles_italic)
+    if (coreStyles_strike != null) __obj.updateDynamic("coreStyles_strike")(coreStyles_strike)
+    if (coreStyles_subscript != null) __obj.updateDynamic("coreStyles_subscript")(coreStyles_subscript)
+    if (coreStyles_superscript != null) __obj.updateDynamic("coreStyles_superscript")(coreStyles_superscript)
+    if (coreStyles_underline != null) __obj.updateDynamic("coreStyles_underline")(coreStyles_underline)
+    if (customConfig != null) __obj.updateDynamic("customConfig")(customConfig)
+    if (dataIndentationChars != null) __obj.updateDynamic("dataIndentationChars")(dataIndentationChars)
+    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage)
+    if (devtools_styles != null) __obj.updateDynamic("devtools_styles")(devtools_styles)
+    if (devtools_textCallback != null) __obj.updateDynamic("devtools_textCallback")(devtools_textCallback)
+    if (dialog_backgroundCoverColor != null) __obj.updateDynamic("dialog_backgroundCoverColor")(dialog_backgroundCoverColor)
+    if (dialog_backgroundCoverOpacity != null) __obj.updateDynamic("dialog_backgroundCoverOpacity")(dialog_backgroundCoverOpacity.asInstanceOf[js.Any])
+    if (dialog_buttonsOrder != null) __obj.updateDynamic("dialog_buttonsOrder")(dialog_buttonsOrder)
+    if (dialog_magnetDistance != null) __obj.updateDynamic("dialog_magnetDistance")(dialog_magnetDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(dialog_noConfirmCancel)) __obj.updateDynamic("dialog_noConfirmCancel")(dialog_noConfirmCancel)
+    if (!js.isUndefined(dialog_startupFocusTab)) __obj.updateDynamic("dialog_startupFocusTab")(dialog_startupFocusTab)
+    if (!js.isUndefined(disableNativeObjectResizing)) __obj.updateDynamic("disableNativeObjectResizing")(disableNativeObjectResizing)
+    if (!js.isUndefined(disableNativeReadonlyStyling)) __obj.updateDynamic("disableNativeReadonlyStyling")(disableNativeReadonlyStyling)
+    if (!js.isUndefined(disableNativeSpellChecker)) __obj.updateDynamic("disableNativeSpellChecker")(disableNativeSpellChecker)
+    if (!js.isUndefined(disableNativeTableHandles)) __obj.updateDynamic("disableNativeTableHandles")(disableNativeTableHandles)
+    if (disallowedContent != null) __obj.updateDynamic("disallowedContent")(disallowedContent.asInstanceOf[js.Any])
+    if (!js.isUndefined(div_wrapTable)) __obj.updateDynamic("div_wrapTable")(div_wrapTable)
+    if (docType != null) __obj.updateDynamic("docType")(docType)
+    if (easyimage_class != null) __obj.updateDynamic("easyimage_class")(easyimage_class)
+    if (easyimage_defaultStyle != null) __obj.updateDynamic("easyimage_defaultStyle")(easyimage_defaultStyle)
+    if (easyimage_styles != null) __obj.updateDynamic("easyimage_styles")(easyimage_styles)
+    if (easyimage_toolbar != null) __obj.updateDynamic("easyimage_toolbar")(easyimage_toolbar.asInstanceOf[js.Any])
+    if (emailProtection != null) __obj.updateDynamic("emailProtection")(emailProtection)
+    if (embed_provider != null) __obj.updateDynamic("embed_provider")(embed_provider)
+    if (!js.isUndefined(enableTabKeyTools)) __obj.updateDynamic("enableTabKeyTools")(enableTabKeyTools)
+    if (enterMode != null) __obj.updateDynamic("enterMode")(enterMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities)
+    if (entities_additional != null) __obj.updateDynamic("entities_additional")(entities_additional)
+    if (!js.isUndefined(entities_greek)) __obj.updateDynamic("entities_greek")(entities_greek)
+    if (!js.isUndefined(entities_latin)) __obj.updateDynamic("entities_latin")(entities_latin)
+    if (entities_processNumerical != null) __obj.updateDynamic("entities_processNumerical")(entities_processNumerical.asInstanceOf[js.Any])
+    if (extraAllowedContent != null) __obj.updateDynamic("extraAllowedContent")(extraAllowedContent.asInstanceOf[js.Any])
+    if (extraPlugins != null) __obj.updateDynamic("extraPlugins")(extraPlugins)
+    if (fileTools_defaultFileName != null) __obj.updateDynamic("fileTools_defaultFileName")(fileTools_defaultFileName)
+    if (fileTools_requestHeaders != null) __obj.updateDynamic("fileTools_requestHeaders")(fileTools_requestHeaders)
+    if (filebrowserBrowseUrl != null) __obj.updateDynamic("filebrowserBrowseUrl")(filebrowserBrowseUrl)
+    if (filebrowserFlashBrowseUrl != null) __obj.updateDynamic("filebrowserFlashBrowseUrl")(filebrowserFlashBrowseUrl)
+    if (filebrowserFlashUploadUrl != null) __obj.updateDynamic("filebrowserFlashUploadUrl")(filebrowserFlashUploadUrl)
+    if (filebrowserImageBrowseLinkUrl != null) __obj.updateDynamic("filebrowserImageBrowseLinkUrl")(filebrowserImageBrowseLinkUrl)
+    if (filebrowserImageBrowseUrl != null) __obj.updateDynamic("filebrowserImageBrowseUrl")(filebrowserImageBrowseUrl)
+    if (filebrowserImageUploadUrl != null) __obj.updateDynamic("filebrowserImageUploadUrl")(filebrowserImageUploadUrl)
+    if (filebrowserUploadMethod != null) __obj.updateDynamic("filebrowserUploadMethod")(filebrowserUploadMethod)
+    if (filebrowserUploadUrl != null) __obj.updateDynamic("filebrowserUploadUrl")(filebrowserUploadUrl)
+    if (filebrowserWindowFeatures != null) __obj.updateDynamic("filebrowserWindowFeatures")(filebrowserWindowFeatures)
+    if (filebrowserWindowHeight != null) __obj.updateDynamic("filebrowserWindowHeight")(filebrowserWindowHeight.asInstanceOf[js.Any])
+    if (filebrowserWindowWidth != null) __obj.updateDynamic("filebrowserWindowWidth")(filebrowserWindowWidth.asInstanceOf[js.Any])
+    if (fillEmptyBlocks != null) __obj.updateDynamic("fillEmptyBlocks")(fillEmptyBlocks.asInstanceOf[js.Any])
+    if (find_highlight != null) __obj.updateDynamic("find_highlight")(find_highlight)
+    if (!js.isUndefined(flashAddEmbedTag)) __obj.updateDynamic("flashAddEmbedTag")(flashAddEmbedTag)
+    if (!js.isUndefined(flashConvertOnEdit)) __obj.updateDynamic("flashConvertOnEdit")(flashConvertOnEdit)
+    if (!js.isUndefined(flashEmbedTagOnly)) __obj.updateDynamic("flashEmbedTagOnly")(flashEmbedTagOnly)
+    if (floatSpaceDockedOffsetX != null) __obj.updateDynamic("floatSpaceDockedOffsetX")(floatSpaceDockedOffsetX.asInstanceOf[js.Any])
+    if (floatSpaceDockedOffsetY != null) __obj.updateDynamic("floatSpaceDockedOffsetY")(floatSpaceDockedOffsetY.asInstanceOf[js.Any])
+    if (floatSpacePinnedOffsetX != null) __obj.updateDynamic("floatSpacePinnedOffsetX")(floatSpacePinnedOffsetX.asInstanceOf[js.Any])
+    if (floatSpacePinnedOffsetY != null) __obj.updateDynamic("floatSpacePinnedOffsetY")(floatSpacePinnedOffsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(floatSpacePreferRight)) __obj.updateDynamic("floatSpacePreferRight")(floatSpacePreferRight)
+    if (fontSize_defaultLabel != null) __obj.updateDynamic("fontSize_defaultLabel")(fontSize_defaultLabel)
+    if (fontSize_sizes != null) __obj.updateDynamic("fontSize_sizes")(fontSize_sizes)
+    if (fontSize_style != null) __obj.updateDynamic("fontSize_style")(fontSize_style)
+    if (font_defaultLabel != null) __obj.updateDynamic("font_defaultLabel")(font_defaultLabel)
+    if (font_names != null) __obj.updateDynamic("font_names")(font_names)
+    if (font_style != null) __obj.updateDynamic("font_style")(font_style)
+    if (!js.isUndefined(forceEnterMode)) __obj.updateDynamic("forceEnterMode")(forceEnterMode)
+    if (!js.isUndefined(forcePasteAsPlainText)) __obj.updateDynamic("forcePasteAsPlainText")(forcePasteAsPlainText)
+    if (!js.isUndefined(forceSimpleAmpersand)) __obj.updateDynamic("forceSimpleAmpersand")(forceSimpleAmpersand)
+    if (format_address != null) __obj.updateDynamic("format_address")(format_address)
+    if (format_div != null) __obj.updateDynamic("format_div")(format_div)
+    if (format_h1 != null) __obj.updateDynamic("format_h1")(format_h1)
+    if (format_h2 != null) __obj.updateDynamic("format_h2")(format_h2)
+    if (format_h3 != null) __obj.updateDynamic("format_h3")(format_h3)
+    if (format_h4 != null) __obj.updateDynamic("format_h4")(format_h4)
+    if (format_h5 != null) __obj.updateDynamic("format_h5")(format_h5)
+    if (format_h6 != null) __obj.updateDynamic("format_h6")(format_h6)
+    if (format_p != null) __obj.updateDynamic("format_p")(format_p)
+    if (format_pre != null) __obj.updateDynamic("format_pre")(format_pre)
+    if (format_tags != null) __obj.updateDynamic("format_tags")(format_tags)
+    if (!js.isUndefined(fullPage)) __obj.updateDynamic("fullPage")(fullPage)
+    if (!js.isUndefined(grayt_autoStartup)) __obj.updateDynamic("grayt_autoStartup")(grayt_autoStartup)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(htmlEncodeOutput)) __obj.updateDynamic("htmlEncodeOutput")(htmlEncodeOutput)
+    if (!js.isUndefined(ignoreEmptyParagraph)) __obj.updateDynamic("ignoreEmptyParagraph")(ignoreEmptyParagraph)
+    if (image2_alignClasses != null) __obj.updateDynamic("image2_alignClasses")(image2_alignClasses)
+    if (!js.isUndefined(image2_altRequired)) __obj.updateDynamic("image2_altRequired")(image2_altRequired)
+    if (image2_captionedClass != null) __obj.updateDynamic("image2_captionedClass")(image2_captionedClass)
+    if (!js.isUndefined(image2_disableResizer)) __obj.updateDynamic("image2_disableResizer")(image2_disableResizer)
+    if (!js.isUndefined(image2_prefillDimensions)) __obj.updateDynamic("image2_prefillDimensions")(image2_prefillDimensions)
+    if (imageUploadUrl != null) __obj.updateDynamic("imageUploadUrl")(imageUploadUrl)
+    if (!js.isUndefined(image_prefillDimensions)) __obj.updateDynamic("image_prefillDimensions")(image_prefillDimensions)
+    if (image_previewText != null) __obj.updateDynamic("image_previewText")(image_previewText)
+    if (!js.isUndefined(image_removeLinkByEmptyUrl)) __obj.updateDynamic("image_removeLinkByEmptyUrl")(image_removeLinkByEmptyUrl)
+    if (indentClasses != null) __obj.updateDynamic("indentClasses")(indentClasses)
+    if (indentOffset != null) __obj.updateDynamic("indentOffset")(indentOffset.asInstanceOf[js.Any])
+    if (indentUnit != null) __obj.updateDynamic("indentUnit")(indentUnit)
+    if (!js.isUndefined(jqueryOverrideVal)) __obj.updateDynamic("jqueryOverrideVal")(jqueryOverrideVal)
+    if (justifyClasses != null) __obj.updateDynamic("justifyClasses")(justifyClasses)
+    if (keystrokes != null) __obj.updateDynamic("keystrokes")(keystrokes)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (language_list != null) __obj.updateDynamic("language_list")(language_list)
+    if (!js.isUndefined(linkJavaScriptLinksAllowed)) __obj.updateDynamic("linkJavaScriptLinksAllowed")(linkJavaScriptLinksAllowed)
+    if (!js.isUndefined(linkShowAdvancedTab)) __obj.updateDynamic("linkShowAdvancedTab")(linkShowAdvancedTab)
+    if (!js.isUndefined(linkShowTargetTab)) __obj.updateDynamic("linkShowTargetTab")(linkShowTargetTab)
+    if (magicline_color != null) __obj.updateDynamic("magicline_color")(magicline_color)
+    if (!js.isUndefined(magicline_everywhere)) __obj.updateDynamic("magicline_everywhere")(magicline_everywhere)
+    if (magicline_holdDistance != null) __obj.updateDynamic("magicline_holdDistance")(magicline_holdDistance.asInstanceOf[js.Any])
+    if (magicline_keystrokeNext != null) __obj.updateDynamic("magicline_keystrokeNext")(magicline_keystrokeNext.asInstanceOf[js.Any])
+    if (magicline_keystrokePrevious != null) __obj.updateDynamic("magicline_keystrokePrevious")(magicline_keystrokePrevious.asInstanceOf[js.Any])
+    if (magicline_tabuList != null) __obj.updateDynamic("magicline_tabuList")(magicline_tabuList)
+    __obj.asInstanceOf[config]
+  }
+}
+

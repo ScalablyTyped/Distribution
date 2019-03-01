@@ -19,3 +19,20 @@ trait BillingInfo extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BillingInfo {
+  @scala.inline
+  def apply(
+    accountId: scala.Int | scala.Double = null,
+    accountName: java.lang.String = null,
+    billingId: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null
+  ): BillingInfo = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (accountName != null) __obj.updateDynamic("accountName")(accountName)
+    if (billingId != null) __obj.updateDynamic("billingId")(billingId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[BillingInfo]
+  }
+}
+

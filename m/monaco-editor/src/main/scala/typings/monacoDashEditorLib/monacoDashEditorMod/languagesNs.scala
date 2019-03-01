@@ -966,6 +966,8 @@ object languagesNs extends js.Object {
   @js.native
   sealed trait SymbolKind extends js.Object
   
+  trait TextEdit extends js.Object
+  
   trait TokensProvider extends js.Object {
     /**
       * The initial state of a language. Will be the state passed in to tokenize the first line.
@@ -1875,6 +1877,5 @@ object languagesNs extends js.Object {
   type ProviderResult[T] = js.UndefOr[
     T | scala.Null | (monacoDashEditorLib.monacoDashEditorMod.Thenable[js.UndefOr[T | scala.Null]])
   ]
-  type TextEdit = monacoDashEditorLib.Anon_Eol | monacoDashEditorLib.Anon_EolRange
 }
 

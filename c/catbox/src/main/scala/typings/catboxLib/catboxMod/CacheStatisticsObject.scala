@@ -20,3 +20,24 @@ trait CacheStatisticsObject extends js.Object {
   var stales: scala.Double
 }
 
+object CacheStatisticsObject {
+  @scala.inline
+  def apply(
+    errors: scala.Double,
+    generates: scala.Double,
+    gets: scala.Double,
+    hits: scala.Double,
+    sets: scala.Double,
+    stales: scala.Double
+  ): CacheStatisticsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errors")(errors)
+    __obj.updateDynamic("generates")(generates)
+    __obj.updateDynamic("gets")(gets)
+    __obj.updateDynamic("hits")(hits)
+    __obj.updateDynamic("sets")(sets)
+    __obj.updateDynamic("stales")(stales)
+    __obj.asInstanceOf[CacheStatisticsObject]
+  }
+}
+

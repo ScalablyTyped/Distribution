@@ -15,3 +15,12 @@ trait BorderRadiusProps[TLength] extends js.Object {
   var borderRadius: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BorderRadiusProperty[TLength]]] = js.undefined
 }
 
+object BorderRadiusProps {
+  @scala.inline
+  def apply[TLength](borderRadius: ResponsiveValue[csstypeLib.csstypeMod.BorderRadiusProperty[TLength]] = null): BorderRadiusProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BorderRadiusProps[TLength]]
+  }
+}
+

@@ -39,3 +39,22 @@ trait FontConfigElement extends js.Object {
   ] = js.undefined
 }
 
+object FontConfigElement {
+  @scala.inline
+  def apply(
+    family: java.lang.String = null,
+    src: java.lang.String = null,
+    style: stripejsLib.stripejsLibStrings.normal | stripejsLib.stripejsLibStrings.italic | stripejsLib.stripejsLibStrings.oblique = null,
+    unicodeRange: java.lang.String = null,
+    weight: stripejsLib.stripejsLibStrings.initial | stripejsLib.stripejsLibStrings.inherit | stripejsLib.stripejsLibStrings.bold | stripejsLib.stripejsLibStrings.bolder | stripejsLib.stripejsLibStrings.lighter | stripejsLib.stripejsLibStrings.normal | stripejsLib.stripejsLibStrings.revert | stripejsLib.stripejsLibStrings.unset = null
+  ): FontConfigElement = {
+    val __obj = js.Dynamic.literal()
+    if (family != null) __obj.updateDynamic("family")(family)
+    if (src != null) __obj.updateDynamic("src")(src)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange)
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FontConfigElement]
+  }
+}
+

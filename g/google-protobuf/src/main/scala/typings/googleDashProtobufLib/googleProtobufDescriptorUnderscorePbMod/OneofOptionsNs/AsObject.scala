@@ -11,3 +11,16 @@ trait AsObject extends js.Object {
   ]
 }
 
+object AsObject {
+  @scala.inline
+  def apply(
+    uninterpretedOptionList: js.Array[
+      googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.UninterpretedOptionNs.AsObject
+    ]
+  ): AsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("uninterpretedOptionList")(uninterpretedOptionList)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

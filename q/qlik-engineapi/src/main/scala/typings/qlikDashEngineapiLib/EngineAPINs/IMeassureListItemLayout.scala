@@ -14,3 +14,14 @@ trait IMeassureListItemLayout extends IGenericBaseLayout {
   var qMeta_IMeassureListItemLayout: INxMetaTitleDescriptionTag
 }
 
+object IMeassureListItemLayout {
+  @scala.inline
+  def apply(qData: scala.Null, qInfo: INxInfo, qMeta: INxMetaTitleDescriptionTag): IMeassureListItemLayout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qData")(qData)
+    __obj.updateDynamic("qInfo")(qInfo)
+    __obj.updateDynamic("qMeta")(qMeta)
+    __obj.asInstanceOf[IMeassureListItemLayout]
+  }
+}
+

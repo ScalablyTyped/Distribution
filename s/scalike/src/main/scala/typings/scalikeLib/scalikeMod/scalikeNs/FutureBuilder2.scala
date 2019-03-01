@@ -13,3 +13,22 @@ trait FutureBuilder2[A, B, C] extends js.Object {
   def run[D](f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Future[D]
 }
 
+object FutureBuilder2 {
+  @scala.inline
+  def apply[A, B, C](
+    chain: js.Function1[Future[js.Any], FutureBuilder3[A, B, C, js.Any]],
+    oa: js.Any,
+    ob: js.Any,
+    oc: js.Any,
+    run: js.Function1[js.Function3[/* a */ A, /* b */ B, /* c */ C, js.Any], Future[js.Any]]
+  ): FutureBuilder2[A, B, C] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("oa")(oa)
+    __obj.updateDynamic("ob")(ob)
+    __obj.updateDynamic("oc")(oc)
+    __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[FutureBuilder2[A, B, C]]
+  }
+}
+

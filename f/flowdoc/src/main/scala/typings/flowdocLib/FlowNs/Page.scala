@@ -14,3 +14,23 @@ trait Page
   var type_Page: flowdocLib.flowdocLibStrings.PAGE
 }
 
+object Page {
+  @scala.inline
+  def apply(
+    backgroundColor: Color,
+    children: js.Array[Screen | Image | Rectangle | Ellipse | Diamond],
+    id: java.lang.String,
+    name: java.lang.String,
+    `type`: flowdocLib.flowdocLibStrings.PAGE,
+    startNodeID: java.lang.String = null
+  ): Page = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    if (startNodeID != null) __obj.updateDynamic("startNodeID")(startNodeID)
+    __obj.asInstanceOf[Page]
+  }
+}
+

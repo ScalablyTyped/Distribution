@@ -20,3 +20,28 @@ trait TouchableProps extends js.Object {
   def onTouch(args: gestaltLib.Anon_EventHTMLDivElementKeyboardEvent): scala.Unit
 }
 
+object TouchableProps {
+  @scala.inline
+  def apply(
+    onTouch: js.Function1[gestaltLib.Anon_EventHTMLDivElementKeyboardEvent, scala.Unit],
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    fullHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseCursor: gestaltLib.gestaltLibStrings.copy | gestaltLib.gestaltLibStrings.grab | gestaltLib.gestaltLibStrings.grabbing | gestaltLib.gestaltLibStrings.move | gestaltLib.gestaltLibStrings.noDrop | gestaltLib.gestaltLibStrings.pointer | gestaltLib.gestaltLibStrings.zoomIn | gestaltLib.gestaltLibStrings.zoomOut = null,
+    onMouseEnter: js.Function1[/* args */ gestaltLib.Anon_EventHTMLDivElement, scala.Unit] = null,
+    onMouseLeave: js.Function1[/* args */ gestaltLib.Anon_EventHTMLDivElement, scala.Unit] = null,
+    shape: gestaltLib.gestaltLibStrings.square | gestaltLib.gestaltLibStrings.rounded | gestaltLib.gestaltLibStrings.pill | gestaltLib.gestaltLibStrings.circle | gestaltLib.gestaltLibStrings.roundedTop | gestaltLib.gestaltLibStrings.roundedBottom | gestaltLib.gestaltLibStrings.roundedLeft | gestaltLib.gestaltLibStrings.roundedRight = null
+  ): TouchableProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onTouch")(onTouch)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullHeight)) __obj.updateDynamic("fullHeight")(fullHeight)
+    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
+    if (mouseCursor != null) __obj.updateDynamic("mouseCursor")(mouseCursor.asInstanceOf[js.Any])
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TouchableProps]
+  }
+}
+

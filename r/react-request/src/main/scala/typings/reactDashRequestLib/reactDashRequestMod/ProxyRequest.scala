@@ -10,3 +10,13 @@ trait ProxyRequest extends js.Object {
   var res: stdLib.Response
 }
 
+object ProxyRequest {
+  @scala.inline
+  def apply(requestKey: java.lang.String, res: stdLib.Response): ProxyRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("requestKey")(requestKey)
+    __obj.updateDynamic("res")(res)
+    __obj.asInstanceOf[ProxyRequest]
+  }
+}
+

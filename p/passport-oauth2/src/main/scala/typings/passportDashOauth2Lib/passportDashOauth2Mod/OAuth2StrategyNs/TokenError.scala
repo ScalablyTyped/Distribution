@@ -12,3 +12,20 @@ trait TokenError
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TokenError {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    status: scala.Double,
+    stack: java.lang.String = null,
+    uri: java.lang.String = null
+  ): TokenError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("status")(status)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[TokenError]
+  }
+}
+

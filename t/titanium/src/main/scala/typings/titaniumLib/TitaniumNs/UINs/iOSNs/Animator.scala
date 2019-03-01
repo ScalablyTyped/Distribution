@@ -68,3 +68,64 @@ trait Animator
   def updateItemUsingCurrentState(item: js.Any): scala.Unit
 }
 
+object Animator {
+  @scala.inline
+  def apply(
+    addBehavior: js.Function1[titaniumLib.TitaniumNs.Proxy, scala.Unit],
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    behaviors: js.Array[titaniumLib.TitaniumNs.Proxy],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBehaviors: js.Function0[js.Array[titaniumLib.TitaniumNs.Proxy]],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getReferenceView: js.Function0[titaniumLib.TitaniumNs.UINs.View],
+    getRunning: js.Function0[scala.Boolean],
+    referenceView: titaniumLib.TitaniumNs.UINs.View,
+    removeAllBehaviors: js.Function0[scala.Unit],
+    removeBehavior: js.Function1[titaniumLib.TitaniumNs.Proxy, scala.Unit],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    running: scala.Boolean,
+    setBehaviors: js.Function1[js.Array[titaniumLib.TitaniumNs.Proxy], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setReferenceView: js.Function1[js.Any, scala.Unit],
+    startAnimator: js.Function0[scala.Unit],
+    stopAnimator: js.Function0[scala.Unit],
+    updateItemUsingCurrentState: js.Function1[js.Any, scala.Unit],
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): Animator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addBehavior")(addBehavior)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("behaviors")(behaviors)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBehaviors")(getBehaviors)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getReferenceView")(getReferenceView)
+    __obj.updateDynamic("getRunning")(getRunning)
+    __obj.updateDynamic("referenceView")(referenceView)
+    __obj.updateDynamic("removeAllBehaviors")(removeAllBehaviors)
+    __obj.updateDynamic("removeBehavior")(removeBehavior)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("running")(running)
+    __obj.updateDynamic("setBehaviors")(setBehaviors)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("setReferenceView")(setReferenceView)
+    __obj.updateDynamic("startAnimator")(startAnimator)
+    __obj.updateDynamic("stopAnimator")(stopAnimator)
+    __obj.updateDynamic("updateItemUsingCurrentState")(updateItemUsingCurrentState)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[Animator]
+  }
+}
+

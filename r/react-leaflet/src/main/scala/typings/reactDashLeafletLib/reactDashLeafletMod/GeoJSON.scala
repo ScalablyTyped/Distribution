@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-leaflet", "GeoJSON")
 @js.native
-class GeoJSON[P /* <: GeoJSONProps */, E /* <: leafletLib.leafletMod.GeoJSON[_] */] () extends Path[P, E]
+class GeoJSON[P /* <: GeoJSONProps */, E /* <: leafletLib.leafletMod.GeoJSON[_] */] () extends FeatureGroup[P, E]
 

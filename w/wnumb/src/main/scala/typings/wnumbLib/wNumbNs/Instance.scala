@@ -16,3 +16,16 @@ trait Instance extends js.Object {
   def to(`val`: scala.Double): java.lang.String
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    from: js.Function1[java.lang.String, scala.Double],
+    to: js.Function1[scala.Double, java.lang.String]
+  ): Instance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Instance]
+  }
+}
+

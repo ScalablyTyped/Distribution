@@ -24,3 +24,20 @@ trait OnXHRLoadEventUIParam extends js.Object {
   var xhr: js.UndefOr[js.Any] = js.undefined
 }
 
+object OnXHRLoadEventUIParam {
+  @scala.inline
+  def apply(
+    fileId: scala.Int | scala.Double = null,
+    fileInfo: js.Any = null,
+    owner: js.Any = null,
+    xhr: js.Any = null
+  ): OnXHRLoadEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
+    if (fileInfo != null) __obj.updateDynamic("fileInfo")(fileInfo)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[OnXHRLoadEventUIParam]
+  }
+}
+

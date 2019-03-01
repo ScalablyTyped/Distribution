@@ -33,3 +33,16 @@ trait SegmentsEdges extends js.Object {
   var `segment-weights`: java.lang.String
 }
 
+object SegmentsEdges {
+  @scala.inline
+  def apply(
+    `edge-distances`: cytoscapeLib.cytoscapeLibStrings.intersection | cytoscapeLib.cytoscapeLibStrings.`segment-weights` | cytoscapeLib.cytoscapeLibStrings.`node-position`,
+    `segment-distances`: java.lang.String,
+    `segment-weights`: java.lang.String
+  ): SegmentsEdges = {
+    val __obj = js.Dynamic.literal(`edge-distances` = `edge-distances`.asInstanceOf[js.Any], `segment-distances` = `segment-distances`, `segment-weights` = `segment-weights`)
+  
+    __obj.asInstanceOf[SegmentsEdges]
+  }
+}
+

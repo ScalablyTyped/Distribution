@@ -12,3 +12,12 @@ trait DeleteGlobalSecondaryIndexAction extends js.Object {
   var IndexName: IndexName
 }
 
+object DeleteGlobalSecondaryIndexAction {
+  @scala.inline
+  def apply(IndexName: IndexName): DeleteGlobalSecondaryIndexAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IndexName")(IndexName)
+    __obj.asInstanceOf[DeleteGlobalSecondaryIndexAction]
+  }
+}
+

@@ -13,3 +13,22 @@ trait ReadfileParams extends js.Object {
   var success: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_Data, scala.Unit]] = js.undefined
 }
 
+object ReadfileParams {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    encoding: FileContentEncoding = null,
+    fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
+    success: js.Function1[/* res */ wegameDashApiLib.Anon_Data, scala.Unit] = null
+  ): ReadfileParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ReadfileParams]
+  }
+}
+

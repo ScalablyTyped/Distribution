@@ -96,3 +96,54 @@ trait TouchSpinOptions extends js.Object {
   var verticalupclass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TouchSpinOptions {
+  @scala.inline
+  def apply(
+    boostat: scala.Int | scala.Double = null,
+    booster: js.UndefOr[scala.Boolean] = js.undefined,
+    buttondown_class: java.lang.String = null,
+    buttonup_class: java.lang.String = null,
+    decimals: scala.Int | scala.Double = null,
+    forcestepdivisibility: java.lang.String = null,
+    initval: scala.Double | java.lang.String = null,
+    max: scala.Int | scala.Double = null,
+    maxboostedstep: scala.Double | scala.Boolean = null,
+    min: scala.Int | scala.Double = null,
+    mousewheel: js.UndefOr[scala.Boolean] = js.undefined,
+    postfix: java.lang.String = null,
+    postfix_extraclass: java.lang.String = null,
+    prefix: java.lang.String = null,
+    prefix_extraclass: java.lang.String = null,
+    step: scala.Int | scala.Double = null,
+    stepinterval: scala.Int | scala.Double = null,
+    stepintervaldelay: scala.Int | scala.Double = null,
+    verticalbuttons: js.UndefOr[scala.Boolean] = js.undefined,
+    verticaldownclass: java.lang.String = null,
+    verticalupclass: java.lang.String = null
+  ): TouchSpinOptions = {
+    val __obj = js.Dynamic.literal()
+    if (boostat != null) __obj.updateDynamic("boostat")(boostat.asInstanceOf[js.Any])
+    if (!js.isUndefined(booster)) __obj.updateDynamic("booster")(booster)
+    if (buttondown_class != null) __obj.updateDynamic("buttondown_class")(buttondown_class)
+    if (buttonup_class != null) __obj.updateDynamic("buttonup_class")(buttonup_class)
+    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (forcestepdivisibility != null) __obj.updateDynamic("forcestepdivisibility")(forcestepdivisibility)
+    if (initval != null) __obj.updateDynamic("initval")(initval.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxboostedstep != null) __obj.updateDynamic("maxboostedstep")(maxboostedstep.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(mousewheel)) __obj.updateDynamic("mousewheel")(mousewheel)
+    if (postfix != null) __obj.updateDynamic("postfix")(postfix)
+    if (postfix_extraclass != null) __obj.updateDynamic("postfix_extraclass")(postfix_extraclass)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefix_extraclass != null) __obj.updateDynamic("prefix_extraclass")(prefix_extraclass)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (stepinterval != null) __obj.updateDynamic("stepinterval")(stepinterval.asInstanceOf[js.Any])
+    if (stepintervaldelay != null) __obj.updateDynamic("stepintervaldelay")(stepintervaldelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(verticalbuttons)) __obj.updateDynamic("verticalbuttons")(verticalbuttons)
+    if (verticaldownclass != null) __obj.updateDynamic("verticaldownclass")(verticaldownclass)
+    if (verticalupclass != null) __obj.updateDynamic("verticalupclass")(verticalupclass)
+    __obj.asInstanceOf[TouchSpinOptions]
+  }
+}
+

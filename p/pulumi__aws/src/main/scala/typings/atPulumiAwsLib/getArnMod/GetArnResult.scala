@@ -34,3 +34,24 @@ trait GetArnResult extends js.Object {
   val service: java.lang.String
 }
 
+object GetArnResult {
+  @scala.inline
+  def apply(
+    account: java.lang.String,
+    id: java.lang.String,
+    partition: java.lang.String,
+    region: java.lang.String,
+    resource: java.lang.String,
+    service: java.lang.String
+  ): GetArnResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("account")(account)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("partition")(partition)
+    __obj.updateDynamic("region")(region)
+    __obj.updateDynamic("resource")(resource)
+    __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[GetArnResult]
+  }
+}
+

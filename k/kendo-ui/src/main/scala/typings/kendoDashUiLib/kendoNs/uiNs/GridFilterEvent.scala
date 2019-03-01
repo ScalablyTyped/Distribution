@@ -10,3 +10,22 @@ trait GridFilterEvent extends GridEvent {
   var filter: js.UndefOr[js.Any] = js.undefined
 }
 
+object GridFilterEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Grid,
+    field: java.lang.String = null,
+    filter: js.Any = null
+  ): GridFilterEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    __obj.asInstanceOf[GridFilterEvent]
+  }
+}
+

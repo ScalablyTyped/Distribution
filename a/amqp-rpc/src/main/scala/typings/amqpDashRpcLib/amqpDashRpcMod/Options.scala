@@ -15,3 +15,26 @@ trait Options extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    conn_options: js.Any = null,
+    connection: js.Any = null,
+    exchange: java.lang.String = null,
+    exchangeInstance: js.Any = null,
+    exchange_options: amqpDashRpcLib.Anon_AutoDelete = null,
+    ipml_options: amqpDashRpcLib.Anon_DefaultExchangeName = null,
+    url: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (conn_options != null) __obj.updateDynamic("conn_options")(conn_options)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (exchange != null) __obj.updateDynamic("exchange")(exchange)
+    if (exchangeInstance != null) __obj.updateDynamic("exchangeInstance")(exchangeInstance)
+    if (exchange_options != null) __obj.updateDynamic("exchange_options")(exchange_options)
+    if (ipml_options != null) __obj.updateDynamic("ipml_options")(ipml_options)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Options]
+  }
+}
+

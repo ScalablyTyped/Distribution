@@ -24,3 +24,20 @@ trait SendData extends js.Object {
   var Location: java.lang.String
 }
 
+object SendData {
+  @scala.inline
+  def apply(
+    Bucket: java.lang.String,
+    ETag: java.lang.String,
+    Key: java.lang.String,
+    Location: java.lang.String
+  ): SendData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Bucket")(Bucket)
+    __obj.updateDynamic("ETag")(ETag)
+    __obj.updateDynamic("Key")(Key)
+    __obj.updateDynamic("Location")(Location)
+    __obj.asInstanceOf[SendData]
+  }
+}
+

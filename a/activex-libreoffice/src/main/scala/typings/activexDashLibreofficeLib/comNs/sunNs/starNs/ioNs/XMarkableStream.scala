@@ -35,3 +35,28 @@ trait XMarkableStream
   def offsetToMark(nMark: scala.Double): scala.Double
 }
 
+object XMarkableStream {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createMark: js.Function0[scala.Double],
+    deleteMark: js.Function1[scala.Double, scala.Unit],
+    jumpToFurthest: js.Function0[scala.Unit],
+    jumpToMark: js.Function1[scala.Double, scala.Unit],
+    offsetToMark: js.Function1[scala.Double, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMarkableStream = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createMark")(createMark)
+    __obj.updateDynamic("deleteMark")(deleteMark)
+    __obj.updateDynamic("jumpToFurthest")(jumpToFurthest)
+    __obj.updateDynamic("jumpToMark")(jumpToMark)
+    __obj.updateDynamic("offsetToMark")(offsetToMark)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMarkableStream]
+  }
+}
+

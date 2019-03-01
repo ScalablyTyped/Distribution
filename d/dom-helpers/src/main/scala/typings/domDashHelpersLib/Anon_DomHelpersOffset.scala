@@ -9,3 +9,12 @@ trait Anon_DomHelpersOffset extends js.Object {
   val DomHelpersOffsetNs: js.Any
 }
 
+object Anon_DomHelpersOffset {
+  @scala.inline
+  def apply(DomHelpersOffsetNs: js.Any): Anon_DomHelpersOffset = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DomHelpersOffsetNs")(DomHelpersOffsetNs)
+    __obj.asInstanceOf[Anon_DomHelpersOffset]
+  }
+}
+

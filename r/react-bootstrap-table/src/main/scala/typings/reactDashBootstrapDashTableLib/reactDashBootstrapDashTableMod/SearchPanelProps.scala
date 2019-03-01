@@ -32,3 +32,24 @@ trait SearchPanelProps extends js.Object {
   def search(searchText: java.lang.String): scala.Unit
 }
 
+object SearchPanelProps {
+  @scala.inline
+  def apply(
+    clearBtn: reactLib.reactMod.ReactNs.ReactElement[_],
+    clearBtnClick: js.Function0[scala.Unit],
+    defaultValue: java.lang.String,
+    placeholder: java.lang.String,
+    search: js.Function1[java.lang.String, scala.Unit],
+    searchField: reactLib.reactMod.ReactNs.ReactElement[_]
+  ): SearchPanelProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearBtn")(clearBtn)
+    __obj.updateDynamic("clearBtnClick")(clearBtnClick)
+    __obj.updateDynamic("defaultValue")(defaultValue)
+    __obj.updateDynamic("placeholder")(placeholder)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("searchField")(searchField)
+    __obj.asInstanceOf[SearchPanelProps]
+  }
+}
+

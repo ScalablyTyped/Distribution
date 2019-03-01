@@ -38,3 +38,20 @@ trait ImagePropsAndroid extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImagePropsAndroid {
+  @scala.inline
+  def apply(
+    fadeDuration: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    resizeMethod: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.resize | reactDashNativeLib.reactDashNativeLibStrings.scale = null,
+    width: scala.Int | scala.Double = null
+  ): ImagePropsAndroid = {
+    val __obj = js.Dynamic.literal()
+    if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (resizeMethod != null) __obj.updateDynamic("resizeMethod")(resizeMethod.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImagePropsAndroid]
+  }
+}
+

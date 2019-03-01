@@ -90,3 +90,34 @@ trait ContentControlUpdateData extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContentControlUpdateData {
+  @scala.inline
+  def apply(
+    appearance: officeDashJsDashPreviewLib.WordNs.ContentControlAppearance | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BoundingBox | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Tags | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Hidden = null,
+    cannotDelete: js.UndefOr[scala.Boolean] = js.undefined,
+    cannotEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    font: FontUpdateData = null,
+    placeholderText: java.lang.String = null,
+    removeWhenEdited: js.UndefOr[scala.Boolean] = js.undefined,
+    style: java.lang.String = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    tag: java.lang.String = null,
+    title: java.lang.String = null
+  ): ContentControlUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
+    if (!js.isUndefined(cannotDelete)) __obj.updateDynamic("cannotDelete")(cannotDelete)
+    if (!js.isUndefined(cannotEdit)) __obj.updateDynamic("cannotEdit")(cannotEdit)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText)
+    if (!js.isUndefined(removeWhenEdited)) __obj.updateDynamic("removeWhenEdited")(removeWhenEdited)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ContentControlUpdateData]
+  }
+}
+

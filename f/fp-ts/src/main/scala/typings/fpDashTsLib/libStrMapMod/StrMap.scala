@@ -22,7 +22,7 @@ class StrMap[A] protected () extends js.Object {
     */
   def filterMap[B](f: js.Function1[/* a */ A, fpDashTsLib.libOptionMod.Option[B]]): StrMap[B] = js.native
   /**
-    * Use {@link filterMapWithKey} instead
+    * Use `filterMapWithKey` instead
     * @since 1.12.0
     * @deprecated
     */
@@ -32,7 +32,7 @@ class StrMap[A] protected () extends js.Object {
     */
   def filterMapWithKey[B](f: js.Function2[/* i */ java.lang.String, /* a */ A, fpDashTsLib.libOptionMod.Option[B]]): StrMap[B] = js.native
   /**
-    * Use {@link filterWithKey} instead
+    * Use `filterWithKey` instead
     * @since 1.12.0
     * @deprecated
     */
@@ -65,7 +65,7 @@ class StrMap[A] protected () extends js.Object {
     */
   def partitionMap[RL, RR](f: js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[RL, RR]]): fpDashTsLib.libCompactableMod.Separated[StrMap[RL], StrMap[RR]] = js.native
   /**
-    * Use {@link partitionMapWithKey} instead
+    * Use `partitionMapWithKey` instead
     * @since 1.12.0
     * @deprecated
     */
@@ -75,7 +75,7 @@ class StrMap[A] protected () extends js.Object {
     */
   def partitionMapWithKey[RL, RR](f: js.Function2[/* i */ java.lang.String, /* a */ A, fpDashTsLib.libEitherMod.Either[RL, RR]]): fpDashTsLib.libCompactableMod.Separated[StrMap[RL], StrMap[RR]] = js.native
   /**
-    * Use {@link partitionWithKey} instead
+    * Use `partitionWithKey` instead
     * @since 1.12.0
     * @deprecated
     */

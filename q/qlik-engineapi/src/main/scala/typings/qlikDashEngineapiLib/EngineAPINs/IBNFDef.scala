@@ -102,3 +102,44 @@ trait IBNFDef extends js.Object {
   var qStr: java.lang.String
 }
 
+object IBNFDef {
+  @scala.inline
+  def apply(
+    qBnf: js.Array[scala.Double],
+    qFG: FunctionGroupType,
+    qHelpId: scala.Double,
+    qMT: MTType,
+    qName: java.lang.String,
+    qNbr: scala.Double,
+    qPNbr: scala.Double,
+    qStr: java.lang.String,
+    qAggrFunc: js.UndefOr[scala.Boolean] = js.undefined,
+    qBnfLiteral: js.UndefOr[scala.Boolean] = js.undefined,
+    qControlStatement: js.UndefOr[scala.Boolean] = js.undefined,
+    qDepr: js.UndefOr[scala.Boolean] = js.undefined,
+    qFieldFlag: js.UndefOr[scala.Boolean] = js.undefined,
+    qIsBnfRule: js.UndefOr[scala.Boolean] = js.undefined,
+    qQvFunc: js.UndefOr[scala.Boolean] = js.undefined,
+    qScriptStatement: js.UndefOr[scala.Boolean] = js.undefined
+  ): IBNFDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qBnf")(qBnf)
+    __obj.updateDynamic("qFG")(qFG)
+    __obj.updateDynamic("qHelpId")(qHelpId)
+    __obj.updateDynamic("qMT")(qMT)
+    __obj.updateDynamic("qName")(qName)
+    __obj.updateDynamic("qNbr")(qNbr)
+    __obj.updateDynamic("qPNbr")(qPNbr)
+    __obj.updateDynamic("qStr")(qStr)
+    if (!js.isUndefined(qAggrFunc)) __obj.updateDynamic("qAggrFunc")(qAggrFunc)
+    if (!js.isUndefined(qBnfLiteral)) __obj.updateDynamic("qBnfLiteral")(qBnfLiteral)
+    if (!js.isUndefined(qControlStatement)) __obj.updateDynamic("qControlStatement")(qControlStatement)
+    if (!js.isUndefined(qDepr)) __obj.updateDynamic("qDepr")(qDepr)
+    if (!js.isUndefined(qFieldFlag)) __obj.updateDynamic("qFieldFlag")(qFieldFlag)
+    if (!js.isUndefined(qIsBnfRule)) __obj.updateDynamic("qIsBnfRule")(qIsBnfRule)
+    if (!js.isUndefined(qQvFunc)) __obj.updateDynamic("qQvFunc")(qQvFunc)
+    if (!js.isUndefined(qScriptStatement)) __obj.updateDynamic("qScriptStatement")(qScriptStatement)
+    __obj.asInstanceOf[IBNFDef]
+  }
+}
+

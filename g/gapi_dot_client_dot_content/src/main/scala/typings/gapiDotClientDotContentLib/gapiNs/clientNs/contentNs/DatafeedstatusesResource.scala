@@ -13,3 +13,27 @@ trait DatafeedstatusesResource extends js.Object {
   def list(request: gapiDotClientDotContentLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[DatafeedstatusesListResponse]
 }
 
+object DatafeedstatusesResource {
+  @scala.inline
+  def apply(
+    custombatch: js.Function1[
+      gapiDotClientDotContentLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedstatusesCustomBatchResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltCountry, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedStatus]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DatafeedstatusesListResponse]
+    ]
+  ): DatafeedstatusesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custombatch")(custombatch)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[DatafeedstatusesResource]
+  }
+}
+

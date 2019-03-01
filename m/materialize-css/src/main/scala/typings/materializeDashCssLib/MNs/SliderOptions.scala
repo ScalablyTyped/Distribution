@@ -28,3 +28,15 @@ trait SliderOptions extends js.Object {
   var interval: scala.Double
 }
 
+object SliderOptions {
+  @scala.inline
+  def apply(duration: scala.Double, height: scala.Double, indicators: scala.Boolean, interval: scala.Double): SliderOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("indicators")(indicators)
+    __obj.updateDynamic("interval")(interval)
+    __obj.asInstanceOf[SliderOptions]
+  }
+}
+

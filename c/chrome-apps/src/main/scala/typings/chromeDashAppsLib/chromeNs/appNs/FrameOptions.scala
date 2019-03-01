@@ -22,3 +22,15 @@ trait FrameOptions extends js.Object {
   var `type`: chromeDashAppsLib.chromeDashAppsLibStrings.none
 }
 
+object FrameOptions {
+  @scala.inline
+  def apply(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.none,
+    alphaEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): FrameOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (!js.isUndefined(alphaEnabled)) __obj.updateDynamic("alphaEnabled")(alphaEnabled)
+    __obj.asInstanceOf[FrameOptions]
+  }
+}
+

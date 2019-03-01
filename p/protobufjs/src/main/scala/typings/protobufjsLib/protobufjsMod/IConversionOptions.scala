@@ -36,3 +36,28 @@ trait IConversionOptions extends js.Object {
   var oneofs: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IConversionOptions {
+  @scala.inline
+  def apply(
+    arrays: js.UndefOr[scala.Boolean] = js.undefined,
+    bytes: js.Function = null,
+    defaults: js.UndefOr[scala.Boolean] = js.undefined,
+    enums: js.Function = null,
+    json: js.UndefOr[scala.Boolean] = js.undefined,
+    longs: js.Function = null,
+    objects: js.UndefOr[scala.Boolean] = js.undefined,
+    oneofs: js.UndefOr[scala.Boolean] = js.undefined
+  ): IConversionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(arrays)) __obj.updateDynamic("arrays")(arrays)
+    if (bytes != null) __obj.updateDynamic("bytes")(bytes)
+    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults)
+    if (enums != null) __obj.updateDynamic("enums")(enums)
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
+    if (longs != null) __obj.updateDynamic("longs")(longs)
+    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects)
+    if (!js.isUndefined(oneofs)) __obj.updateDynamic("oneofs")(oneofs)
+    __obj.asInstanceOf[IConversionOptions]
+  }
+}
+

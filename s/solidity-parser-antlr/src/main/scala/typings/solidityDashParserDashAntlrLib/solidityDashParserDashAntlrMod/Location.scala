@@ -10,3 +10,13 @@ trait Location extends js.Object {
   var start: LineColumn
 }
 
+object Location {
+  @scala.inline
+  def apply(end: LineColumn, start: LineColumn): Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Location]
+  }
+}
+

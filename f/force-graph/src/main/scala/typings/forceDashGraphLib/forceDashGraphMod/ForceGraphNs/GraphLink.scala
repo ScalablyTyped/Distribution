@@ -11,3 +11,19 @@ trait GraphLink extends GraphEntity {
   var `type`: java.lang.String
 }
 
+object GraphLink {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    source: java.lang.String | GraphNode,
+    target: java.lang.String | GraphNode,
+    `type`: java.lang.String
+  ): GraphLink = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GraphLink]
+  }
+}
+

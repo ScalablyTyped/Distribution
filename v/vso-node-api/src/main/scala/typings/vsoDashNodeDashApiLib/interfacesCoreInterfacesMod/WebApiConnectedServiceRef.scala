@@ -10,3 +10,13 @@ trait WebApiConnectedServiceRef extends js.Object {
   var url: java.lang.String
 }
 
+object WebApiConnectedServiceRef {
+  @scala.inline
+  def apply(id: java.lang.String, url: java.lang.String): WebApiConnectedServiceRef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WebApiConnectedServiceRef]
+  }
+}
+

@@ -22,3 +22,37 @@ trait TargetInstancesResource extends js.Object {
   def list(request: gapiDotClientDotComputeLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[TargetInstanceList]
 }
 
+object TargetInstancesResource {
+  @scala.inline
+  def apply(
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetInstanceAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetInstance, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserTargetInstance, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetInstance]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetInstanceList]
+    ]
+  ): TargetInstancesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[TargetInstancesResource]
+  }
+}
+

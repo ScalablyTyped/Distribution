@@ -32,3 +32,22 @@ trait IgPivotDataSelectorMethods extends js.Object {
   def update(): scala.Unit
 }
 
+object IgPivotDataSelectorMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    update: js.Function0[scala.Unit]
+  ): IgPivotDataSelectorMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[IgPivotDataSelectorMethods]
+  }
+}
+

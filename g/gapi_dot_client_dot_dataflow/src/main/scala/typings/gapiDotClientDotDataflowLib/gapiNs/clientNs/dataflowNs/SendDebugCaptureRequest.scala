@@ -16,3 +16,20 @@ trait SendDebugCaptureRequest extends js.Object {
   var workerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SendDebugCaptureRequest {
+  @scala.inline
+  def apply(
+    componentId: java.lang.String = null,
+    data: java.lang.String = null,
+    location: java.lang.String = null,
+    workerId: java.lang.String = null
+  ): SendDebugCaptureRequest = {
+    val __obj = js.Dynamic.literal()
+    if (componentId != null) __obj.updateDynamic("componentId")(componentId)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    __obj.asInstanceOf[SendDebugCaptureRequest]
+  }
+}
+

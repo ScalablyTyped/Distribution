@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A grouping of people or organizations with a common purpose
   */
-trait Organization extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Organization extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */
@@ -61,5 +62,66 @@ trait Organization extends DomainResource {
     * Kind of organization
     */
   var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+}
+
+object Organization {
+  @scala.inline
+  def apply(
+    _active: Element = null,
+    _alias: js.Array[Element] = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _name: Element = null,
+    _resourceType: Element = null,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    address: js.Array[Address] = null,
+    alias: js.Array[java.lang.String] = null,
+    contact: js.Array[OrganizationContact] = null,
+    contained: js.Array[Resource] = null,
+    endpoint: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    name: java.lang.String = null,
+    partOf: Reference = null,
+    resourceType: code = null,
+    telecom: js.Array[ContactPoint] = null,
+    text: Narrative = null,
+    `type`: js.Array[CodeableConcept] = null
+  ): Organization = {
+    val __obj = js.Dynamic.literal()
+    if (_active != null) __obj.updateDynamic("_active")(_active)
+    if (_alias != null) __obj.updateDynamic("_alias")(_alias)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (partOf != null) __obj.updateDynamic("partOf")(partOf)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (telecom != null) __obj.updateDynamic("telecom")(telecom)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Organization]
+  }
 }
 

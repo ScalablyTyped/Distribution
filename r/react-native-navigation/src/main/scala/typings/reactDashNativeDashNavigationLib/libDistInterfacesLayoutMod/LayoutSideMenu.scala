@@ -29,3 +29,22 @@ trait LayoutSideMenu extends js.Object {
   var right: js.UndefOr[LayoutStackChildren] = js.undefined
 }
 
+object LayoutSideMenu {
+  @scala.inline
+  def apply(
+    center: Layout[js.Object],
+    id: java.lang.String = null,
+    left: LayoutStackChildren = null,
+    options: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options = null,
+    right: LayoutStackChildren = null
+  ): LayoutSideMenu = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("center")(center)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (right != null) __obj.updateDynamic("right")(right)
+    __obj.asInstanceOf[LayoutSideMenu]
+  }
+}
+

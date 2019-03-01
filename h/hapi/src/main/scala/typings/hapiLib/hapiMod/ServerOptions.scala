@@ -152,3 +152,48 @@ trait ServerOptions extends js.Object {
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    app: ServerOptionsApp = null,
+    autoListen: js.UndefOr[scala.Boolean] = js.undefined,
+    cache: CacheProvider[catboxLib.catboxMod.ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache] = null,
+    compression: scala.Boolean | ServerOptionsCompression = null,
+    debug: hapiLib.hapiLibNumbers.`false` | hapiLib.Anon_False = null,
+    host: java.lang.String = null,
+    listener: nodeLib.httpMod.Server = null,
+    load: hapiLib.Anon_Concurrent = null,
+    mime: mimosLib.mimosMod.MimosOptions = null,
+    plugins: PluginSpecificConfiguration = null,
+    port: scala.Double | java.lang.String = null,
+    query: hapiLib.Anon_Parser = null,
+    router: hapiLib.Anon_IsCaseSensitive = null,
+    routes: RouteOptions = null,
+    state: hapiLib.Anon_Base64 = null,
+    tls: scala.Boolean | nodeLib.httpsMod.ServerOptions = null,
+    uri: java.lang.String = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (app != null) __obj.updateDynamic("app")(app)
+    if (!js.isUndefined(autoListen)) __obj.updateDynamic("autoListen")(autoListen)
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (listener != null) __obj.updateDynamic("listener")(listener)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (mime != null) __obj.updateDynamic("mime")(mime)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (router != null) __obj.updateDynamic("router")(router)
+    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

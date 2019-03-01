@@ -10,3 +10,13 @@ trait Anon_ItemsReturnValueHttpMethod extends js.Object {
   /** The number of items retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueHttpMethod {
+  @scala.inline
+  def apply(items: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpMethod, returnValue: scala.Double): Anon_ItemsReturnValueHttpMethod = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ItemsReturnValueHttpMethod]
+  }
+}
+

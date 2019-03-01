@@ -13,3 +13,13 @@ trait LocalizedLabel extends js.Object {
   var LanguageCode: scala.Double
 }
 
+object LocalizedLabel {
+  @scala.inline
+  def apply(Label: java.lang.String, LanguageCode: scala.Double): LocalizedLabel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Label")(Label)
+    __obj.updateDynamic("LanguageCode")(LanguageCode)
+    __obj.asInstanceOf[LocalizedLabel]
+  }
+}
+

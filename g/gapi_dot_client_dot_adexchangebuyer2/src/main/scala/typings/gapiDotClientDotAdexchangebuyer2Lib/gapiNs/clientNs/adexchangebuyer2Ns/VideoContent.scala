@@ -10,3 +10,12 @@ trait VideoContent extends js.Object {
   var videoUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VideoContent {
+  @scala.inline
+  def apply(videoUrl: java.lang.String = null): VideoContent = {
+    val __obj = js.Dynamic.literal()
+    if (videoUrl != null) __obj.updateDynamic("videoUrl")(videoUrl)
+    __obj.asInstanceOf[VideoContent]
+  }
+}
+

@@ -36,3 +36,28 @@ trait Anon_ActivitiesCustomRichMediaEvents extends js.Object {
   var reachByFrequencyMetricNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_ActivitiesCustomRichMediaEvents {
+  @scala.inline
+  def apply(
+    activities: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.Activities = null,
+    customRichMediaEvents: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.CustomRichMediaEvents = null,
+    dateRange: gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DateRange = null,
+    dimensionFilters: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue] = null,
+    dimensions: js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.SortedDimension] = null,
+    enableAllDimensionCombinations: js.UndefOr[scala.Boolean] = js.undefined,
+    metricNames: js.Array[java.lang.String] = null,
+    reachByFrequencyMetricNames: js.Array[java.lang.String] = null
+  ): Anon_ActivitiesCustomRichMediaEvents = {
+    val __obj = js.Dynamic.literal()
+    if (activities != null) __obj.updateDynamic("activities")(activities)
+    if (customRichMediaEvents != null) __obj.updateDynamic("customRichMediaEvents")(customRichMediaEvents)
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (!js.isUndefined(enableAllDimensionCombinations)) __obj.updateDynamic("enableAllDimensionCombinations")(enableAllDimensionCombinations)
+    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames)
+    if (reachByFrequencyMetricNames != null) __obj.updateDynamic("reachByFrequencyMetricNames")(reachByFrequencyMetricNames)
+    __obj.asInstanceOf[Anon_ActivitiesCustomRichMediaEvents]
+  }
+}
+

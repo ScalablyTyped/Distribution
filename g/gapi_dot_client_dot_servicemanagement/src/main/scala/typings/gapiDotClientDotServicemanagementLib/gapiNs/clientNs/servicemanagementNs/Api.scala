@@ -48,3 +48,26 @@ trait Api extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Api {
+  @scala.inline
+  def apply(
+    methods: js.Array[Method] = null,
+    mixins: js.Array[Mixin] = null,
+    name: java.lang.String = null,
+    options: js.Array[Option] = null,
+    sourceContext: SourceContext = null,
+    syntax: java.lang.String = null,
+    version: java.lang.String = null
+  ): Api = {
+    val __obj = js.Dynamic.literal()
+    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext)
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Api]
+  }
+}
+

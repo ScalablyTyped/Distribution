@@ -13,3 +13,22 @@ trait PublishInRequest extends js.Object {
   var socket: socketclusterDashServerLib.scserversocketMod.namespaced
 }
 
+object PublishInRequest {
+  @scala.inline
+  def apply(
+    socket: socketclusterDashServerLib.scserversocketMod.namespaced,
+    ackData: js.Any = null,
+    authTokenExpiredError: nodeLib.Error = null,
+    channel: java.lang.String = null,
+    data: js.Any = null
+  ): PublishInRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("socket")(socket)
+    if (ackData != null) __obj.updateDynamic("ackData")(ackData)
+    if (authTokenExpiredError != null) __obj.updateDynamic("authTokenExpiredError")(authTokenExpiredError)
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[PublishInRequest]
+  }
+}
+

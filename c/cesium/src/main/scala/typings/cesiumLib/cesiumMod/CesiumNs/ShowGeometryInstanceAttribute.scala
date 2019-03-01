@@ -12,3 +12,20 @@ trait ShowGeometryInstanceAttribute extends js.Object {
   var value: stdLib.Uint8Array
 }
 
+object ShowGeometryInstanceAttribute {
+  @scala.inline
+  def apply(
+    componentDatatype: ComponentDatatype,
+    componentsPerAttribute: scala.Double,
+    normalize: scala.Boolean,
+    value: stdLib.Uint8Array
+  ): ShowGeometryInstanceAttribute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("componentDatatype")(componentDatatype)
+    __obj.updateDynamic("componentsPerAttribute")(componentsPerAttribute)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ShowGeometryInstanceAttribute]
+  }
+}
+

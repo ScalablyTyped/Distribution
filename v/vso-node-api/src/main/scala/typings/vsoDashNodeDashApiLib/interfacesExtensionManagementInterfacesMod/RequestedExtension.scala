@@ -28,3 +28,22 @@ trait RequestedExtension extends js.Object {
   var requestCount: scala.Double
 }
 
+object RequestedExtension {
+  @scala.inline
+  def apply(
+    extensionName: java.lang.String,
+    extensionRequests: js.Array[ExtensionRequest],
+    publisherDisplayName: java.lang.String,
+    publisherName: java.lang.String,
+    requestCount: scala.Double
+  ): RequestedExtension = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extensionName")(extensionName)
+    __obj.updateDynamic("extensionRequests")(extensionRequests)
+    __obj.updateDynamic("publisherDisplayName")(publisherDisplayName)
+    __obj.updateDynamic("publisherName")(publisherName)
+    __obj.updateDynamic("requestCount")(requestCount)
+    __obj.asInstanceOf[RequestedExtension]
+  }
+}
+

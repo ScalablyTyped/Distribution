@@ -22,3 +22,13 @@ trait InstanceMoveRequest extends js.Object {
   var targetInstance: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstanceMoveRequest {
+  @scala.inline
+  def apply(destinationZone: java.lang.String = null, targetInstance: java.lang.String = null): InstanceMoveRequest = {
+    val __obj = js.Dynamic.literal()
+    if (destinationZone != null) __obj.updateDynamic("destinationZone")(destinationZone)
+    if (targetInstance != null) __obj.updateDynamic("targetInstance")(targetInstance)
+    __obj.asInstanceOf[InstanceMoveRequest]
+  }
+}
+

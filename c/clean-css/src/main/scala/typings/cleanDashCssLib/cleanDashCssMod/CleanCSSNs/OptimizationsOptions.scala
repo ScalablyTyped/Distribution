@@ -13,3 +13,13 @@ trait OptimizationsOptions extends js.Object {
   var `2`: js.UndefOr[cleanDashCssLib.Anon_AllMergeAdjacentRules] = js.undefined
 }
 
+object OptimizationsOptions {
+  @scala.inline
+  def apply(`1`: cleanDashCssLib.Anon_All = null, `2`: cleanDashCssLib.Anon_AllMergeAdjacentRules = null): OptimizationsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (`1` != null) __obj.updateDynamic("1")(`1`)
+    if (`2` != null) __obj.updateDynamic("2")(`2`)
+    __obj.asInstanceOf[OptimizationsOptions]
+  }
+}
+

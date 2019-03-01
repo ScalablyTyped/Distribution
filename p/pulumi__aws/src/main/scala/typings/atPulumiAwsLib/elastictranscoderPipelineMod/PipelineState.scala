@@ -53,3 +53,34 @@ trait PipelineState extends js.Object {
   ] = js.undefined
 }
 
+object PipelineState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    awsKmsKeyArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    contentConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketStorageClassInput] = null,
+    contentConfigPermissions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AccessesGrantee]]] = null,
+    inputBucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    notifications: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CompletedError] = null,
+    outputBucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    role: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    thumbnailConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketStorageClassInput] = null,
+    thumbnailConfigPermissions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AccessesGrantee]]] = null
+  ): PipelineState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (awsKmsKeyArn != null) __obj.updateDynamic("awsKmsKeyArn")(awsKmsKeyArn.asInstanceOf[js.Any])
+    if (contentConfig != null) __obj.updateDynamic("contentConfig")(contentConfig.asInstanceOf[js.Any])
+    if (contentConfigPermissions != null) __obj.updateDynamic("contentConfigPermissions")(contentConfigPermissions.asInstanceOf[js.Any])
+    if (inputBucket != null) __obj.updateDynamic("inputBucket")(inputBucket.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notifications != null) __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
+    if (outputBucket != null) __obj.updateDynamic("outputBucket")(outputBucket.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (thumbnailConfig != null) __obj.updateDynamic("thumbnailConfig")(thumbnailConfig.asInstanceOf[js.Any])
+    if (thumbnailConfigPermissions != null) __obj.updateDynamic("thumbnailConfigPermissions")(thumbnailConfigPermissions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PipelineState]
+  }
+}
+

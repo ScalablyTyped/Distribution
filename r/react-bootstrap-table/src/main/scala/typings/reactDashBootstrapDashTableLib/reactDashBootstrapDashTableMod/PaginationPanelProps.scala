@@ -42,3 +42,28 @@ trait PaginationPanelProps extends js.Object {
   def toggleDropDown(): scala.Unit
 }
 
+object PaginationPanelProps {
+  @scala.inline
+  def apply(
+    changePage: js.Function1[scala.Double, scala.Unit],
+    changeSizePerPage: js.Function1[scala.Double, scala.Unit],
+    components: reactDashBootstrapDashTableLib.Anon_PageList,
+    currPage: scala.Double,
+    pageStartIndex: scala.Double,
+    sizePerPage: scala.Double,
+    sizePerPageList: SizePerPageList,
+    toggleDropDown: js.Function0[scala.Unit]
+  ): PaginationPanelProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changePage")(changePage)
+    __obj.updateDynamic("changeSizePerPage")(changeSizePerPage)
+    __obj.updateDynamic("components")(components)
+    __obj.updateDynamic("currPage")(currPage)
+    __obj.updateDynamic("pageStartIndex")(pageStartIndex)
+    __obj.updateDynamic("sizePerPage")(sizePerPage)
+    __obj.updateDynamic("sizePerPageList")(sizePerPageList.asInstanceOf[js.Any])
+    __obj.updateDynamic("toggleDropDown")(toggleDropDown)
+    __obj.asInstanceOf[PaginationPanelProps]
+  }
+}
+

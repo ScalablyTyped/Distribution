@@ -16,3 +16,13 @@ trait SidebarTheme extends js.Object {
   var pinned: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SidebarTheme {
+  @scala.inline
+  def apply(clipped: java.lang.String = null, pinned: java.lang.String = null): SidebarTheme = {
+    val __obj = js.Dynamic.literal()
+    if (clipped != null) __obj.updateDynamic("clipped")(clipped)
+    if (pinned != null) __obj.updateDynamic("pinned")(pinned)
+    __obj.asInstanceOf[SidebarTheme]
+  }
+}
+

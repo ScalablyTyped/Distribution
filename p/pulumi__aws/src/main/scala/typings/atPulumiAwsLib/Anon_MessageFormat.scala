@@ -11,3 +11,14 @@ trait Anon_MessageFormat extends js.Object {
   var targetArn: java.lang.String
 }
 
+object Anon_MessageFormat {
+  @scala.inline
+  def apply(roleArn: java.lang.String, targetArn: java.lang.String, messageFormat: java.lang.String = null): Anon_MessageFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("roleArn")(roleArn)
+    __obj.updateDynamic("targetArn")(targetArn)
+    if (messageFormat != null) __obj.updateDynamic("messageFormat")(messageFormat)
+    __obj.asInstanceOf[Anon_MessageFormat]
+  }
+}
+

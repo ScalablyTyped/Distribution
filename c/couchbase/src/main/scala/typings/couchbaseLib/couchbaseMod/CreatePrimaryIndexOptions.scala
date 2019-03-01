@@ -20,3 +20,18 @@ trait CreatePrimaryIndexOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreatePrimaryIndexOptions {
+  @scala.inline
+  def apply(
+    deferred: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreIfExists: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null
+  ): CreatePrimaryIndexOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
+    if (!js.isUndefined(ignoreIfExists)) __obj.updateDynamic("ignoreIfExists")(ignoreIfExists)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[CreatePrimaryIndexOptions]
+  }
+}
+

@@ -17,3 +17,28 @@ trait ParsedCommandLine extends js.Object {
   var wildcardDirectories: js.UndefOr[MapLike[WatchDirectoryFlags]] = js.undefined
 }
 
+object ParsedCommandLine {
+  @scala.inline
+  def apply(
+    errors: js.Array[Diagnostic],
+    fileNames: js.Array[java.lang.String],
+    options: CompilerOptions,
+    compileOnSave: js.UndefOr[scala.Boolean] = js.undefined,
+    projectReferences: js.Array[ProjectReference] = null,
+    raw: js.Any = null,
+    typeAcquisition: TypeAcquisition = null,
+    wildcardDirectories: MapLike[WatchDirectoryFlags] = null
+  ): ParsedCommandLine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errors")(errors)
+    __obj.updateDynamic("fileNames")(fileNames)
+    __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(compileOnSave)) __obj.updateDynamic("compileOnSave")(compileOnSave)
+    if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (typeAcquisition != null) __obj.updateDynamic("typeAcquisition")(typeAcquisition)
+    if (wildcardDirectories != null) __obj.updateDynamic("wildcardDirectories")(wildcardDirectories)
+    __obj.asInstanceOf[ParsedCommandLine]
+  }
+}
+

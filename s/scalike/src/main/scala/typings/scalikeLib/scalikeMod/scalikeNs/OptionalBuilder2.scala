@@ -13,3 +13,22 @@ trait OptionalBuilder2[A, B, C] extends js.Object {
   def run[D](f: js.Function3[/* a */ A, /* b */ B, /* c */ C, D]): Optional[D]
 }
 
+object OptionalBuilder2 {
+  @scala.inline
+  def apply[A, B, C](
+    chain: js.Function1[Optional[js.Any], OptionalBuilder3[A, B, C, js.Any]],
+    oa: js.Any,
+    ob: js.Any,
+    oc: js.Any,
+    run: js.Function1[js.Function3[/* a */ A, /* b */ B, /* c */ C, js.Any], Optional[js.Any]]
+  ): OptionalBuilder2[A, B, C] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("oa")(oa)
+    __obj.updateDynamic("ob")(ob)
+    __obj.updateDynamic("oc")(oc)
+    __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[OptionalBuilder2[A, B, C]]
+  }
+}
+

@@ -7,58 +7,76 @@ import scala.scalajs.js.annotation._
 
 object morrisDotJsLibStrings {
   @js.native
-  sealed trait `10min` extends js.Object
+  sealed trait `10min`
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait `10sec` extends js.Object
+  sealed trait `10sec`
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait `15min` extends js.Object
+  sealed trait `15min`
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait `15sec` extends js.Object
+  sealed trait `15sec`
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait `30min` extends js.Object
+  sealed trait `30min`
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait `30sec` extends js.Object
+  sealed trait `30sec`
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait `5min` extends js.Object
+  sealed trait `5min`
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait `5sec` extends js.Object
+  sealed trait `5sec`
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends morrisDotJsLib.morrisNs.AutoAlways
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends morrisDotJsLib.morrisNs.AutoAlways
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait decade extends js.Object
+  sealed trait decade
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait hour
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait minute
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait second extends js.Object
+  sealed trait second
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week
+    extends morrisDotJsLib.morrisNs.Interval
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends morrisDotJsLib.morrisNs.Interval
   
   @scala.inline
   def `10min`: `10min` = "10min".asInstanceOf[`10min`]

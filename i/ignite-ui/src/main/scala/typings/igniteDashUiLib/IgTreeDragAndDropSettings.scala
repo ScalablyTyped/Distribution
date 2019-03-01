@@ -138,3 +138,59 @@ trait IgTreeDragAndDropSettings
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgTreeDragAndDropSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgTreeDragAndDropSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    containment: scala.Boolean | java.lang.String | js.Object | js.Array[_] = null,
+    copyAfterMarkup: java.lang.String = null,
+    copyBeforeMarkup: java.lang.String = null,
+    copyBetweenMarkup: java.lang.String = null,
+    copyToMarkup: java.lang.String = null,
+    customDropValidation: js.Function = null,
+    dragAndDropMode: java.lang.String = null,
+    dragOpacity: scala.Int | scala.Double = null,
+    dragStartDelay: scala.Int | scala.Double = null,
+    expandDelay: scala.Int | scala.Double = null,
+    expandOnDragOver: js.UndefOr[scala.Boolean] = js.undefined,
+    helper: js.Function | java.lang.String = null,
+    invalidMoveToMarkup: java.lang.String = null,
+    moveAfterMarkup: java.lang.String = null,
+    moveBeforeMarkup: java.lang.String = null,
+    moveBetweenMarkup: java.lang.String = null,
+    moveToMarkup: java.lang.String = null,
+    revert: js.UndefOr[scala.Boolean] = js.undefined,
+    revertDuration: scala.Int | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): IgTreeDragAndDropSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowDrop)) __obj.updateDynamic("allowDrop")(allowDrop)
+    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
+    if (copyAfterMarkup != null) __obj.updateDynamic("copyAfterMarkup")(copyAfterMarkup)
+    if (copyBeforeMarkup != null) __obj.updateDynamic("copyBeforeMarkup")(copyBeforeMarkup)
+    if (copyBetweenMarkup != null) __obj.updateDynamic("copyBetweenMarkup")(copyBetweenMarkup)
+    if (copyToMarkup != null) __obj.updateDynamic("copyToMarkup")(copyToMarkup)
+    if (customDropValidation != null) __obj.updateDynamic("customDropValidation")(customDropValidation)
+    if (dragAndDropMode != null) __obj.updateDynamic("dragAndDropMode")(dragAndDropMode)
+    if (dragOpacity != null) __obj.updateDynamic("dragOpacity")(dragOpacity.asInstanceOf[js.Any])
+    if (dragStartDelay != null) __obj.updateDynamic("dragStartDelay")(dragStartDelay.asInstanceOf[js.Any])
+    if (expandDelay != null) __obj.updateDynamic("expandDelay")(expandDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandOnDragOver)) __obj.updateDynamic("expandOnDragOver")(expandOnDragOver)
+    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
+    if (invalidMoveToMarkup != null) __obj.updateDynamic("invalidMoveToMarkup")(invalidMoveToMarkup)
+    if (moveAfterMarkup != null) __obj.updateDynamic("moveAfterMarkup")(moveAfterMarkup)
+    if (moveBeforeMarkup != null) __obj.updateDynamic("moveBeforeMarkup")(moveBeforeMarkup)
+    if (moveBetweenMarkup != null) __obj.updateDynamic("moveBetweenMarkup")(moveBetweenMarkup)
+    if (moveToMarkup != null) __obj.updateDynamic("moveToMarkup")(moveToMarkup)
+    if (!js.isUndefined(revert)) __obj.updateDynamic("revert")(revert)
+    if (revertDuration != null) __obj.updateDynamic("revertDuration")(revertDuration.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgTreeDragAndDropSettings]
+  }
+}
+

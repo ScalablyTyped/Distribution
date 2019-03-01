@@ -25,3 +25,18 @@ trait IGoogleAnalyticsInitializeOptions extends js.Object {
   def hitFilter(params: stdLib.URLSearchParams): scala.Unit
 }
 
+object IGoogleAnalyticsInitializeOptions {
+  @scala.inline
+  def apply(
+    cacheName: java.lang.String,
+    hitFilter: js.Function1[stdLib.URLSearchParams, scala.Unit],
+    parameterOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): IGoogleAnalyticsInitializeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cacheName")(cacheName)
+    __obj.updateDynamic("hitFilter")(hitFilter)
+    __obj.updateDynamic("parameterOverrides")(parameterOverrides)
+    __obj.asInstanceOf[IGoogleAnalyticsInitializeOptions]
+  }
+}
+

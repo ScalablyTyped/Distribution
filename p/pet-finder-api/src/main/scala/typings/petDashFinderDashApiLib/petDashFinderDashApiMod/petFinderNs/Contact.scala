@@ -16,3 +16,28 @@ trait Contact extends js.Object {
   var zip: java.lang.String
 }
 
+object Contact {
+  @scala.inline
+  def apply(
+    address1: java.lang.String,
+    address2: java.lang.String,
+    city: java.lang.String,
+    email: java.lang.String,
+    fax: java.lang.String,
+    phone: java.lang.String,
+    state: java.lang.String,
+    zip: java.lang.String
+  ): Contact = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address1")(address1)
+    __obj.updateDynamic("address2")(address2)
+    __obj.updateDynamic("city")(city)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("fax")(fax)
+    __obj.updateDynamic("phone")(phone)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("zip")(zip)
+    __obj.asInstanceOf[Contact]
+  }
+}
+

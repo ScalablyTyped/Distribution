@@ -24,3 +24,24 @@ trait XClipboardOwner
   ): scala.Unit
 }
 
+object XClipboardOwner {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    lostOwnership: js.Function2[
+      XClipboard, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XClipboardOwner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("lostOwnership")(lostOwnership)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XClipboardOwner]
+  }
+}
+

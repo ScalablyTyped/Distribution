@@ -85,3 +85,44 @@ trait MarkerOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MarkerOptions {
+  @scala.inline
+  def apply(
+    position: LatLng | LatLngLiteral,
+    anchorPoint: Point = null,
+    animation: Animation = null,
+    clickable: js.UndefOr[scala.Boolean] = js.undefined,
+    cursor: java.lang.String = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String | Icon | Symbol = null,
+    label: java.lang.String | MarkerLabel = null,
+    map: Map | StreetViewPanorama = null,
+    opacity: scala.Int | scala.Double = null,
+    optimized: js.UndefOr[scala.Boolean] = js.undefined,
+    place: Place = null,
+    shape: MarkerShape = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): MarkerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimized)) __obj.updateDynamic("optimized")(optimized)
+    if (place != null) __obj.updateDynamic("place")(place)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MarkerOptions]
+  }
+}
+

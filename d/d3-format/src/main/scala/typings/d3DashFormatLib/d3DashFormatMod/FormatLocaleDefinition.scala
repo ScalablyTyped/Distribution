@@ -33,3 +33,24 @@ trait FormatLocaleDefinition extends js.Object {
   var thousands: java.lang.String
 }
 
+object FormatLocaleDefinition {
+  @scala.inline
+  def apply(
+    currency: js.Tuple2[java.lang.String, java.lang.String],
+    decimal: java.lang.String,
+    grouping: js.Array[scala.Double],
+    thousands: java.lang.String,
+    numerals: js.Array[java.lang.String] = null,
+    percent: java.lang.String = null
+  ): FormatLocaleDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("decimal")(decimal)
+    __obj.updateDynamic("grouping")(grouping)
+    __obj.updateDynamic("thousands")(thousands)
+    if (numerals != null) __obj.updateDynamic("numerals")(numerals)
+    if (percent != null) __obj.updateDynamic("percent")(percent)
+    __obj.asInstanceOf[FormatLocaleDefinition]
+  }
+}
+

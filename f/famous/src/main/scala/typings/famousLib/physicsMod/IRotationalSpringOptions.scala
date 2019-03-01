@@ -15,3 +15,28 @@ trait IRotationalSpringOptions extends IForceOptions {
   var `type`: js.UndefOr[js.Function2[/* dist */ js.Any, /* rMax */ js.Any, scala.Double]] = js.undefined
 }
 
+object IRotationalSpringOptions {
+  @scala.inline
+  def apply(
+    anchor: famousLib.mathMod.Quaternion = null,
+    damping: scala.Int | scala.Double = null,
+    dampingRatio: scala.Int | scala.Double = null,
+    max: scala.Int | scala.Double = null,
+    period: scala.Int | scala.Double = null,
+    stiffness: scala.Int | scala.Double = null,
+    targets: js.Array[_] = null,
+    `type`: js.Function2[/* dist */ js.Any, /* rMax */ js.Any, scala.Double] = null
+  ): IRotationalSpringOptions = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
+    if (dampingRatio != null) __obj.updateDynamic("dampingRatio")(dampingRatio.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IRotationalSpringOptions]
+  }
+}
+

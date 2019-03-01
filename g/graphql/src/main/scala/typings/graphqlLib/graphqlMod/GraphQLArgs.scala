@@ -19,3 +19,28 @@ trait GraphQLArgs extends js.Object {
   var variableValues: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object GraphQLArgs {
+  @scala.inline
+  def apply(
+    schema: graphqlLib.typeSchemaMod.GraphQLSchema,
+    source: graphqlLib.languageSourceMod.Source | java.lang.String,
+    contextValue: js.Any = null,
+    fieldResolver: graphqlLib.tsutilsMaybeMod.Maybe[
+      graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+    ] = null,
+    operationName: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null,
+    rootValue: js.Any = null,
+    variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): GraphQLArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("schema")(schema)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (contextValue != null) __obj.updateDynamic("contextValue")(contextValue)
+    if (fieldResolver != null) __obj.updateDynamic("fieldResolver")(fieldResolver.asInstanceOf[js.Any])
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
+    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
+    if (variableValues != null) __obj.updateDynamic("variableValues")(variableValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GraphQLArgs]
+  }
+}
+

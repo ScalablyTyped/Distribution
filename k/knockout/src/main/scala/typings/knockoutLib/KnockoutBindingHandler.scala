@@ -41,3 +41,45 @@ trait KnockoutBindingHandler[E /* <: stdLib.Node */, V, VM]
   ] = js.undefined
 }
 
+object KnockoutBindingHandler {
+  @scala.inline
+  def apply[E /* <: stdLib.Node */, V, VM](
+    StringDictionary: /* s */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    after: js.Array[java.lang.String] = null,
+    init: js.Function5[
+      /* element */ E, 
+      /* valueAccessor */ js.Function0[V], 
+      /* allBindingsAccessor */ KnockoutAllBindingsAccessor, 
+      /* viewModel */ VM, 
+      /* bindingContext */ KnockoutBindingContext, 
+      scala.Unit | Anon_ControlsDescendantBindings
+    ] = null,
+    options: js.Any = null,
+    preprocess: js.Function3[
+      /* value */ java.lang.String, 
+      /* name */ java.lang.String, 
+      /* addBindingCallback */ js.UndefOr[
+        js.Function2[/* name */ java.lang.String, /* value */ java.lang.String, scala.Unit]
+      ], 
+      java.lang.String
+    ] = null,
+    update: js.Function5[
+      /* element */ E, 
+      /* valueAccessor */ js.Function0[V], 
+      /* allBindingsAccessor */ KnockoutAllBindingsAccessor, 
+      /* viewModel */ VM, 
+      /* bindingContext */ KnockoutBindingContext, 
+      scala.Unit
+    ] = null
+  ): KnockoutBindingHandler[E, V, VM] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[KnockoutBindingHandler[E, V, VM]]
+  }
+}
+

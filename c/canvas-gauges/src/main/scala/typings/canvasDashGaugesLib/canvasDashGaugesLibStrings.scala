@@ -7,49 +7,65 @@ import scala.scalajs.js.annotation._
 
 object canvasDashGaugesLibStrings {
   @js.native
-  sealed trait `100` extends js.Object
+  sealed trait `100`
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait `200` extends js.Object
+  sealed trait `200`
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait `300` extends js.Object
+  sealed trait `300`
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait `400` extends js.Object
+  sealed trait `400`
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait `500` extends js.Object
+  sealed trait `500`
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait `600` extends js.Object
+  sealed trait `600`
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait `700` extends js.Object
+  sealed trait `700`
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait `800` extends js.Object
+  sealed trait `800`
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait `900` extends js.Object
+  sealed trait `900`
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait bold
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait bolder extends js.Object
+  sealed trait bolder
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait italic extends js.Object
+  sealed trait italic
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontStyle
   
   @js.native
-  sealed trait lighter extends js.Object
+  sealed trait lighter
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontStyle
+       with canvasDashGaugesLib.CanvasGaugesNs.FontWeight
   
   @js.native
-  sealed trait oblique extends js.Object
+  sealed trait oblique
+    extends canvasDashGaugesLib.CanvasGaugesNs.FontStyle
   
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]

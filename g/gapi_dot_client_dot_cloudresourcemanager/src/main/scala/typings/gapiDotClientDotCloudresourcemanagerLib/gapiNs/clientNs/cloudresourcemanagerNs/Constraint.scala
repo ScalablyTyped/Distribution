@@ -34,3 +34,26 @@ trait Constraint extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Constraint {
+  @scala.inline
+  def apply(
+    booleanConstraint: js.Any = null,
+    constraintDefault: java.lang.String = null,
+    description: java.lang.String = null,
+    displayName: java.lang.String = null,
+    listConstraint: ListConstraint = null,
+    name: java.lang.String = null,
+    version: scala.Int | scala.Double = null
+  ): Constraint = {
+    val __obj = js.Dynamic.literal()
+    if (booleanConstraint != null) __obj.updateDynamic("booleanConstraint")(booleanConstraint)
+    if (constraintDefault != null) __obj.updateDynamic("constraintDefault")(constraintDefault)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (listConstraint != null) __obj.updateDynamic("listConstraint")(listConstraint)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Constraint]
+  }
+}
+

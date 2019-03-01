@@ -17,3 +17,12 @@ trait IEnigmaClass extends js.Object {
   def create(config: enigmaDotJsLib.enigmaJSNs.IConfig): enigmaDotJsLib.enigmaJSNs.ISession
 }
 
+object IEnigmaClass {
+  @scala.inline
+  def apply(create: js.Function1[enigmaDotJsLib.enigmaJSNs.IConfig, enigmaDotJsLib.enigmaJSNs.ISession]): IEnigmaClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.asInstanceOf[IEnigmaClass]
+  }
+}
+

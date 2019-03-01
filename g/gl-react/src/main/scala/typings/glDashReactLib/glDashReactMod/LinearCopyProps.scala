@@ -9,3 +9,12 @@ trait LinearCopyProps extends js.Object {
   var children: js.UndefOr[js.Any] = js.undefined
 }
 
+object LinearCopyProps {
+  @scala.inline
+  def apply(children: js.Any = null): LinearCopyProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    __obj.asInstanceOf[LinearCopyProps]
+  }
+}
+

@@ -30,3 +30,42 @@ trait ShippingsettingsResource extends js.Object {
   def update(request: gapiDotClientDotContentLib.Anon_AccountIdAltDryRun): gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings]
 }
 
+object ShippingsettingsResource {
+  @scala.inline
+  def apply(
+    custombatch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ShippingsettingsCustomBatchResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings]
+    ],
+    getsupportedcarriers: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFieldsKeyMerchantId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ShippingsettingsGetSupportedCarriersResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ShippingsettingsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings]
+    ],
+    update: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings]
+    ]
+  ): ShippingsettingsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custombatch")(custombatch)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getsupportedcarriers")(getsupportedcarriers)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ShippingsettingsResource]
+  }
+}
+

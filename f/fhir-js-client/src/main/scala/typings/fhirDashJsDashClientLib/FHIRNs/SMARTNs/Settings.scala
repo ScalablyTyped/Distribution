@@ -25,3 +25,13 @@ trait Settings extends js.Object {
   var replaceBrowserHistory: scala.Boolean
 }
 
+object Settings {
+  @scala.inline
+  def apply(fullSessionStorageSupport: scala.Boolean, replaceBrowserHistory: scala.Boolean): Settings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fullSessionStorageSupport")(fullSessionStorageSupport)
+    __obj.updateDynamic("replaceBrowserHistory")(replaceBrowserHistory)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

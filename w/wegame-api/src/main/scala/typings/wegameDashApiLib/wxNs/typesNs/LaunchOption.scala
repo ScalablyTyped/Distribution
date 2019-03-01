@@ -25,3 +25,15 @@ trait LaunchOption extends js.Object {
   var shareTicket: java.lang.String
 }
 
+object LaunchOption {
+  @scala.inline
+  def apply(isSticky: scala.Boolean, query: js.Any, scene: scala.Double, shareTicket: java.lang.String): LaunchOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isSticky")(isSticky)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("scene")(scene)
+    __obj.updateDynamic("shareTicket")(shareTicket)
+    __obj.asInstanceOf[LaunchOption]
+  }
+}
+

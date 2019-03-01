@@ -24,3 +24,18 @@ trait ListActiveBreakpointsResponse extends js.Object {
   var waitExpired: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ListActiveBreakpointsResponse {
+  @scala.inline
+  def apply(
+    breakpoints: js.Array[Breakpoint] = null,
+    nextWaitToken: java.lang.String = null,
+    waitExpired: js.UndefOr[scala.Boolean] = js.undefined
+  ): ListActiveBreakpointsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
+    if (nextWaitToken != null) __obj.updateDynamic("nextWaitToken")(nextWaitToken)
+    if (!js.isUndefined(waitExpired)) __obj.updateDynamic("waitExpired")(waitExpired)
+    __obj.asInstanceOf[ListActiveBreakpointsResponse]
+  }
+}
+

@@ -42,3 +42,28 @@ trait AssociationArgs extends js.Object {
   ] = js.undefined
 }
 
+object AssociationArgs {
+  @scala.inline
+  def apply(
+    associationName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    documentVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    outputLocation: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_S3BucketNameS3KeyPrefix] = null,
+    parameters: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    scheduleExpression: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]] = null
+  ): AssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    if (associationName != null) __obj.updateDynamic("associationName")(associationName.asInstanceOf[js.Any])
+    if (documentVersion != null) __obj.updateDynamic("documentVersion")(documentVersion.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (outputLocation != null) __obj.updateDynamic("outputLocation")(outputLocation.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (scheduleExpression != null) __obj.updateDynamic("scheduleExpression")(scheduleExpression.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AssociationArgs]
+  }
+}
+

@@ -20,3 +20,13 @@ trait ProductsApproveRequest extends js.Object {
   var approvedPermissions: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProductsApproveRequest {
+  @scala.inline
+  def apply(approvalUrlInfo: ApprovalUrlInfo = null, approvedPermissions: java.lang.String = null): ProductsApproveRequest = {
+    val __obj = js.Dynamic.literal()
+    if (approvalUrlInfo != null) __obj.updateDynamic("approvalUrlInfo")(approvalUrlInfo)
+    if (approvedPermissions != null) __obj.updateDynamic("approvedPermissions")(approvedPermissions)
+    __obj.asInstanceOf[ProductsApproveRequest]
+  }
+}
+

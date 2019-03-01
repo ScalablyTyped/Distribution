@@ -14,3 +14,12 @@ trait IAccordionConfig extends js.Object {
   var closeOthers: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IAccordionConfig {
+  @scala.inline
+  def apply(closeOthers: js.UndefOr[scala.Boolean] = js.undefined): IAccordionConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(closeOthers)) __obj.updateDynamic("closeOthers")(closeOthers)
+    __obj.asInstanceOf[IAccordionConfig]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_FdIsatty extends js.Object {
   def isatty(fd: scala.Double): scala.Boolean
 }
 
+object Anon_FdIsatty {
+  @scala.inline
+  def apply(
+    ReadStream: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.ttyNs.ReadStream],
+    WriteStream: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.ttyNs.WriteStream],
+    isatty: js.Function1[scala.Double, scala.Boolean]
+  ): Anon_FdIsatty = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ReadStream")(ReadStream)
+    __obj.updateDynamic("WriteStream")(WriteStream)
+    __obj.updateDynamic("isatty")(isatty)
+    __obj.asInstanceOf[Anon_FdIsatty]
+  }
+}
+

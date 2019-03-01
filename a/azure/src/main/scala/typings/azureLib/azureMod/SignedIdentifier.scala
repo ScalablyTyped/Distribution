@@ -10,3 +10,13 @@ trait SignedIdentifier extends js.Object {
   var Id: java.lang.String
 }
 
+object SignedIdentifier {
+  @scala.inline
+  def apply(AccessPolicy: SharedAccessPolicy, Id: java.lang.String): SignedIdentifier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessPolicy")(AccessPolicy)
+    __obj.updateDynamic("Id")(Id)
+    __obj.asInstanceOf[SignedIdentifier]
+  }
+}
+

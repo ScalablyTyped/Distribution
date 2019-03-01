@@ -33,3 +33,22 @@ trait BarItemType extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BarItemType {
+  @scala.inline
+  def apply(
+    accessibilityLabel: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    image: java.lang.String | titaniumLib.TitaniumNs.Blob | titaniumLib.TitaniumNs.FilesystemNs.File = null,
+    title: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): BarItemType = {
+    val __obj = js.Dynamic.literal()
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BarItemType]
+  }
+}
+

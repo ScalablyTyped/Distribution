@@ -10,3 +10,12 @@ trait SignJwtRequest extends js.Object {
   var payload: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SignJwtRequest {
+  @scala.inline
+  def apply(payload: java.lang.String = null): SignJwtRequest = {
+    val __obj = js.Dynamic.literal()
+    if (payload != null) __obj.updateDynamic("payload")(payload)
+    __obj.asInstanceOf[SignJwtRequest]
+  }
+}
+

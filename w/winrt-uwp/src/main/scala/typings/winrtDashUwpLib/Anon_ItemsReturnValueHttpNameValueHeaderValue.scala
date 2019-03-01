@@ -10,3 +10,16 @@ trait Anon_ItemsReturnValueHttpNameValueHeaderValue extends js.Object {
   /** The number of HttpNameValueHeaderValue items retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueHttpNameValueHeaderValue {
+  @scala.inline
+  def apply(
+    items: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpNameValueHeaderValue,
+    returnValue: scala.Double
+  ): Anon_ItemsReturnValueHttpNameValueHeaderValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ItemsReturnValueHttpNameValueHeaderValue]
+  }
+}
+

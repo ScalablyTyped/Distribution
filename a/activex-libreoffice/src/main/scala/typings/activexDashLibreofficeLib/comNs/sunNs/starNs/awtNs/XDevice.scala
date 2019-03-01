@@ -44,3 +44,36 @@ trait XDevice
   def getInfo(): DeviceInfo
 }
 
+object XDevice {
+  @scala.inline
+  def apply(
+    FontDescriptors: activexDashInteropLib.SafeArray[FontDescriptor],
+    Info: DeviceInfo,
+    acquire: js.Function0[scala.Unit],
+    createBitmap: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, XBitmap],
+    createDevice: js.Function2[scala.Double, scala.Double, XDevice],
+    createDisplayBitmap: js.Function1[XBitmap, XDisplayBitmap],
+    createGraphics: js.Function0[XGraphics],
+    getFont: js.Function1[FontDescriptor, XFont],
+    getFontDescriptors: js.Function0[activexDashInteropLib.SafeArray[FontDescriptor]],
+    getInfo: js.Function0[DeviceInfo],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDevice = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FontDescriptors")(FontDescriptors)
+    __obj.updateDynamic("Info")(Info)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createBitmap")(createBitmap)
+    __obj.updateDynamic("createDevice")(createDevice)
+    __obj.updateDynamic("createDisplayBitmap")(createDisplayBitmap)
+    __obj.updateDynamic("createGraphics")(createGraphics)
+    __obj.updateDynamic("getFont")(getFont)
+    __obj.updateDynamic("getFontDescriptors")(getFontDescriptors)
+    __obj.updateDynamic("getInfo")(getInfo)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDevice]
+  }
+}
+

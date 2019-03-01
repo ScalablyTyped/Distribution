@@ -29,3 +29,26 @@ trait NodeCutEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeCutEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    keyCode: scala.Int | scala.Double = null,
+    model: Model = null,
+    parentDetails: js.Any = null,
+    parentElement: js.Any = null,
+    `type`: java.lang.String = null
+  ): NodeCutEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (parentDetails != null) __obj.updateDynamic("parentDetails")(parentDetails)
+    if (parentElement != null) __obj.updateDynamic("parentElement")(parentElement)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodeCutEventArgs]
+  }
+}
+

@@ -37,19 +37,23 @@ object chromaDashJsLibStrings {
   sealed trait gl extends js.Object
   
   @js.native
-  sealed trait hcl extends js.Object
+  sealed trait hcl
+    extends chromaDashJsLib.chromaDashJsMod.chromaNs.InterpolationMode
   
   @js.native
   sealed trait hex extends js.Object
   
   @js.native
-  sealed trait hsi extends js.Object
+  sealed trait hsi
+    extends chromaDashJsLib.chromaDashJsMod.chromaNs.InterpolationMode
   
   @js.native
-  sealed trait hsl extends js.Object
+  sealed trait hsl
+    extends chromaDashJsLib.chromaDashJsMod.chromaNs.InterpolationMode
   
   @js.native
-  sealed trait hsv extends js.Object
+  sealed trait hsv
+    extends chromaDashJsLib.chromaDashJsMod.chromaNs.InterpolationMode
   
   @js.native
   sealed trait k extends js.Object
@@ -58,10 +62,12 @@ object chromaDashJsLibStrings {
   sealed trait l extends js.Object
   
   @js.native
-  sealed trait lab extends js.Object
+  sealed trait lab
+    extends chromaDashJsLib.chromaDashJsMod.chromaNs.InterpolationMode
   
   @js.native
-  sealed trait lch extends js.Object
+  sealed trait lch
+    extends chromaDashJsLib.chromaDashJsMod.chromaNs.InterpolationMode
   
   @js.native
   sealed trait lighten extends js.Object
@@ -82,7 +88,8 @@ object chromaDashJsLibStrings {
   sealed trait q extends js.Object
   
   @js.native
-  sealed trait rgb extends js.Object
+  sealed trait rgb
+    extends chromaDashJsLib.chromaDashJsMod.chromaNs.InterpolationMode
   
   @js.native
   sealed trait rgba extends js.Object

@@ -12,3 +12,20 @@ trait InitializeOptions extends js.Object {
   var updateMethod: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InitializeOptions {
+  @scala.inline
+  def apply(
+    app: expressLib.expressMod.eNs.Express,
+    sequelize: sequelizeLib.sequelizeMod.sequelizeNs.Sequelize,
+    base: java.lang.String = null,
+    updateMethod: java.lang.String = null
+  ): InitializeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app")(app)
+    __obj.updateDynamic("sequelize")(sequelize)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (updateMethod != null) __obj.updateDynamic("updateMethod")(updateMethod)
+    __obj.asInstanceOf[InitializeOptions]
+  }
+}
+

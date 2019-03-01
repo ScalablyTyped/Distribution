@@ -74,3 +74,38 @@ trait OutputJax extends js.Object {
   def preTranslate(state: js.Any): scala.Unit
 }
 
+object OutputJax {
+  @scala.inline
+  def apply(
+    Register: js.Function1[java.lang.String, scala.Unit],
+    Remove: js.Function1[js.Any, scala.Unit],
+    Translate: js.Function2[js.Any, js.Any, ElementJax],
+    Zoom: js.Function5[js.Any, js.Any, js.Any, scala.Double, scala.Double, ZoomStruct],
+    directory: java.lang.String,
+    fontDir: java.lang.String,
+    getJaxFromMath: js.Function1[js.Any, ElementJax],
+    id: java.lang.String,
+    imageDir: java.lang.String,
+    postTranslate: js.Function1[js.Any, scala.Unit],
+    preProcess: js.Function1[js.Any, scala.Unit],
+    preTranslate: js.Function1[js.Any, scala.Unit],
+    version: java.lang.String
+  ): OutputJax = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Register")(Register)
+    __obj.updateDynamic("Remove")(Remove)
+    __obj.updateDynamic("Translate")(Translate)
+    __obj.updateDynamic("Zoom")(Zoom)
+    __obj.updateDynamic("directory")(directory)
+    __obj.updateDynamic("fontDir")(fontDir)
+    __obj.updateDynamic("getJaxFromMath")(getJaxFromMath)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("imageDir")(imageDir)
+    __obj.updateDynamic("postTranslate")(postTranslate)
+    __obj.updateDynamic("preProcess")(preProcess)
+    __obj.updateDynamic("preTranslate")(preTranslate)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[OutputJax]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Identifier extends js.Object {
   var value: scala.Double
 }
 
+object Identifier {
+  @scala.inline
+  def apply(value: scala.Double): Identifier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Identifier]
+  }
+}
+

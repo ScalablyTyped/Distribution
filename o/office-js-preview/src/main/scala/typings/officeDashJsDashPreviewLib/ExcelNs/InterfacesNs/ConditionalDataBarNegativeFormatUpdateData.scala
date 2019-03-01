@@ -38,3 +38,20 @@ trait ConditionalDataBarNegativeFormatUpdateData extends js.Object {
   var matchPositiveFillColor: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConditionalDataBarNegativeFormatUpdateData {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String = null,
+    fillColor: java.lang.String = null,
+    matchPositiveBorderColor: js.UndefOr[scala.Boolean] = js.undefined,
+    matchPositiveFillColor: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConditionalDataBarNegativeFormatUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (!js.isUndefined(matchPositiveBorderColor)) __obj.updateDynamic("matchPositiveBorderColor")(matchPositiveBorderColor)
+    if (!js.isUndefined(matchPositiveFillColor)) __obj.updateDynamic("matchPositiveFillColor")(matchPositiveFillColor)
+    __obj.asInstanceOf[ConditionalDataBarNegativeFormatUpdateData]
+  }
+}
+

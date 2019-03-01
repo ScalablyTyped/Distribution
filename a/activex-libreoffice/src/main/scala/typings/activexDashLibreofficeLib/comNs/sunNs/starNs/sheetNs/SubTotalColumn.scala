@@ -16,3 +16,13 @@ trait SubTotalColumn extends js.Object {
   var Function: GeneralFunction
 }
 
+object SubTotalColumn {
+  @scala.inline
+  def apply(Column: scala.Double, Function: GeneralFunction): SubTotalColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Column")(Column)
+    __obj.updateDynamic("Function")(Function)
+    __obj.asInstanceOf[SubTotalColumn]
+  }
+}
+

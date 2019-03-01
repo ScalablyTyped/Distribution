@@ -17,3 +17,20 @@ trait MangoResponse[D] extends js.Object {
   var warning: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MangoResponse {
+  @scala.inline
+  def apply[D](
+    docs: js.Array[D],
+    bookmark: java.lang.String = null,
+    execution_stats: MangoExecutionStats = null,
+    warning: java.lang.String = null
+  ): MangoResponse[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("docs")(docs)
+    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark)
+    if (execution_stats != null) __obj.updateDynamic("execution_stats")(execution_stats)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[MangoResponse[D]]
+  }
+}
+

@@ -10,3 +10,13 @@ trait NavigateOptions[TState] extends js.Object {
   var state: js.UndefOr[TState] = js.undefined
 }
 
+object NavigateOptions {
+  @scala.inline
+  def apply[TState](replace: js.UndefOr[scala.Boolean] = js.undefined, state: TState = null): NavigateOptions[TState] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NavigateOptions[TState]]
+  }
+}
+

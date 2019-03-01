@@ -13,3 +13,12 @@ trait BatchCreateAnnotationsResponse extends js.Object {
   var entries: js.UndefOr[js.Array[Entry]] = js.undefined
 }
 
+object BatchCreateAnnotationsResponse {
+  @scala.inline
+  def apply(entries: js.Array[Entry] = null): BatchCreateAnnotationsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (entries != null) __obj.updateDynamic("entries")(entries)
+    __obj.asInstanceOf[BatchCreateAnnotationsResponse]
+  }
+}
+

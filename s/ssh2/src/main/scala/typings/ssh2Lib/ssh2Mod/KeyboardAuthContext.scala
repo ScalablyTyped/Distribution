@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait KeyboardAuthContext extends AuthContextBase {
+trait KeyboardAuthContext
+  extends AuthContextBase
+     with AuthContext {
   /** The method of authentication. */
   @JSName("method")
   var method_KeyboardAuthContext: ssh2Lib.ssh2LibStrings.`keyboard-interactive` = js.native

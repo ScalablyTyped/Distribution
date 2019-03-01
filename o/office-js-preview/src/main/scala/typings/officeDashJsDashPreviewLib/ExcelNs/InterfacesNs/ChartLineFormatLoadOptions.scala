@@ -37,3 +37,20 @@ trait ChartLineFormatLoadOptions extends js.Object {
   var weight: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartLineFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    color: js.UndefOr[scala.Boolean] = js.undefined,
+    lineStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    weight: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartLineFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(lineStyle)) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[ChartLineFormatLoadOptions]
+  }
+}
+

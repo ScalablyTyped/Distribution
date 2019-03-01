@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when instant messaging and presence subsystems (UC) are offline
 		*/
-trait UCDisconnected extends js.Object
+trait UCDisconnected
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent
 

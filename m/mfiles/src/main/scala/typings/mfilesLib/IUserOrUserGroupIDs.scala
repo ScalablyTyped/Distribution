@@ -15,3 +15,26 @@ trait IUserOrUserGroupIDs extends js.Object {
   def Remove(Index: scala.Double): scala.Unit
 }
 
+object IUserOrUserGroupIDs {
+  @scala.inline
+  def apply(
+    Add: js.Function2[scala.Double, IUserOrUserGroupID, scala.Unit],
+    Clone: js.Function0[IUserOrUserGroupIDs],
+    Count: scala.Double,
+    GetUserOrUserGroupID: js.Function2[scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType, IUserOrUserGroupID],
+    GetUserOrUserGroupIDIndex: js.Function2[scala.Double, mfilesLib.MFilesNs.MFUserOrUserGroupType, scala.Double],
+    Item: js.Function1[scala.Double, IUserOrUserGroupID],
+    Remove: js.Function1[scala.Double, scala.Unit]
+  ): IUserOrUserGroupIDs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Add")(Add)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("GetUserOrUserGroupID")(GetUserOrUserGroupID)
+    __obj.updateDynamic("GetUserOrUserGroupIDIndex")(GetUserOrUserGroupIDIndex)
+    __obj.updateDynamic("Item")(Item)
+    __obj.updateDynamic("Remove")(Remove)
+    __obj.asInstanceOf[IUserOrUserGroupIDs]
+  }
+}
+

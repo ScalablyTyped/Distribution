@@ -11,3 +11,18 @@ trait Summary[T] extends js.Object {
   var `type`: js.UndefOr[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTypeSummary] = js.undefined
 }
 
+object Summary {
+  @scala.inline
+  def apply[T](
+    metadata: js.Any,
+    symbol: T,
+    `type`: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTypeSummary = null
+  ): Summary[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Summary[T]]
+  }
+}
+

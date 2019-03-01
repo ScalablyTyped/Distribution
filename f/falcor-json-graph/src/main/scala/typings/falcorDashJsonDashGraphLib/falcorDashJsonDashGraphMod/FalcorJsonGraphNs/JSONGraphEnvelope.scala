@@ -14,3 +14,14 @@ trait JSONGraphEnvelope extends js.Object {
   var paths: js.UndefOr[js.Array[PathSet]] = js.undefined
 }
 
+object JSONGraphEnvelope {
+  @scala.inline
+  def apply(jsonGraph: JSONGraph, invalidate: js.Array[PathSet] = null, paths: js.Array[PathSet] = null): JSONGraphEnvelope = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jsonGraph")(jsonGraph)
+    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate)
+    if (paths != null) __obj.updateDynamic("paths")(paths)
+    __obj.asInstanceOf[JSONGraphEnvelope]
+  }
+}
+

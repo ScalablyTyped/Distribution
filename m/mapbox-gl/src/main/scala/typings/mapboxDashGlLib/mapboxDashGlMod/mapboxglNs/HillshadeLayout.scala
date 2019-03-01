@@ -11,3 +11,14 @@ trait HillshadeLayout extends js.Object {
   ] = js.undefined
 }
 
+object HillshadeLayout {
+  @scala.inline
+  def apply(
+    visibility: mapboxDashGlLib.mapboxDashGlLibStrings.visible | mapboxDashGlLib.mapboxDashGlLibStrings.none = null
+  ): HillshadeLayout = {
+    val __obj = js.Dynamic.literal()
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HillshadeLayout]
+  }
+}
+

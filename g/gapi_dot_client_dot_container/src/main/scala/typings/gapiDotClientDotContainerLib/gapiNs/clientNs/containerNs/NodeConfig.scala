@@ -115,3 +115,36 @@ trait NodeConfig extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object NodeConfig {
+  @scala.inline
+  def apply(
+    accelerators: js.Array[AcceleratorConfig] = null,
+    diskSizeGb: scala.Int | scala.Double = null,
+    imageType: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    localSsdCount: scala.Int | scala.Double = null,
+    machineType: java.lang.String = null,
+    metadata: stdLib.Record[java.lang.String, java.lang.String] = null,
+    minCpuPlatform: java.lang.String = null,
+    oauthScopes: js.Array[java.lang.String] = null,
+    preemptible: js.UndefOr[scala.Boolean] = js.undefined,
+    serviceAccount: java.lang.String = null,
+    tags: js.Array[java.lang.String] = null
+  ): NodeConfig = {
+    val __obj = js.Dynamic.literal()
+    if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators)
+    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
+    if (imageType != null) __obj.updateDynamic("imageType")(imageType)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (localSsdCount != null) __obj.updateDynamic("localSsdCount")(localSsdCount.asInstanceOf[js.Any])
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform)
+    if (oauthScopes != null) __obj.updateDynamic("oauthScopes")(oauthScopes)
+    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible)
+    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[NodeConfig]
+  }
+}
+

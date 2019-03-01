@@ -11,3 +11,14 @@ trait Anon_ProjectId extends js.Object {
   var writeKey: java.lang.String
 }
 
+object Anon_ProjectId {
+  @scala.inline
+  def apply(projectId: java.lang.String, writeKey: java.lang.String, requestType: java.lang.String = null): Anon_ProjectId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("projectId")(projectId)
+    __obj.updateDynamic("writeKey")(writeKey)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    __obj.asInstanceOf[Anon_ProjectId]
+  }
+}
+

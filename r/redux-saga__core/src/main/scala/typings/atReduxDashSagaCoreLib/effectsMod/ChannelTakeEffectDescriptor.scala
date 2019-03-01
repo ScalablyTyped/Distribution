@@ -11,3 +11,18 @@ trait ChannelTakeEffectDescriptor[T] extends js.Object {
   var pattern: js.UndefOr[atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Pattern[T]] = js.undefined
 }
 
+object ChannelTakeEffectDescriptor {
+  @scala.inline
+  def apply[T](
+    channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
+    maybe: js.UndefOr[scala.Boolean] = js.undefined,
+    pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Pattern[T] = null
+  ): ChannelTakeEffectDescriptor[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    if (!js.isUndefined(maybe)) __obj.updateDynamic("maybe")(maybe)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChannelTakeEffectDescriptor[T]]
+  }
+}
+

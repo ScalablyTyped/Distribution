@@ -11,3 +11,14 @@ trait CustomTestBaseResult extends js.Object {
   var status: scala.Double
 }
 
+object CustomTestBaseResult {
+  @scala.inline
+  def apply(data: java.lang.String, headers: Headers, status: scala.Double): CustomTestBaseResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[CustomTestBaseResult]
+  }
+}
+

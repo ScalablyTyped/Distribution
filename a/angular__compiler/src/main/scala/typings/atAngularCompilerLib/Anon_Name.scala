@@ -11,3 +11,17 @@ trait Anon_Name extends js.Object {
   var `type`: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTypeMetadata
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    pure: scala.Boolean,
+    `type`: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTypeMetadata
+  ): Anon_Name = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("pure")(pure)
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

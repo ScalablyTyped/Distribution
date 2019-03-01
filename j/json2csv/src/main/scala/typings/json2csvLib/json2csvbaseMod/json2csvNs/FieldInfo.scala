@@ -11,3 +11,18 @@ trait FieldInfo[T] extends js.Object {
   var value: js.UndefOr[java.lang.String | FieldValueCallback[T]] = js.undefined
 }
 
+object FieldInfo {
+  @scala.inline
+  def apply[T](
+    label: java.lang.String,
+    default: java.lang.String = null,
+    value: java.lang.String | FieldValueCallback[T] = null
+  ): FieldInfo[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FieldInfo[T]]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_BucketAccessRoleArn extends js.Object {
   var bucketAccessRoleArn: java.lang.String
 }
 
+object Anon_BucketAccessRoleArn {
+  @scala.inline
+  def apply(bucketAccessRoleArn: java.lang.String): Anon_BucketAccessRoleArn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucketAccessRoleArn")(bucketAccessRoleArn)
+    __obj.asInstanceOf[Anon_BucketAccessRoleArn]
+  }
+}
+

@@ -9,3 +9,12 @@ trait IROOM_ADD extends js.Object {
   var room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom
 }
 
+object IROOM_ADD {
+  @scala.inline
+  def apply(room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom): IROOM_ADD = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[IROOM_ADD]
+  }
+}
+

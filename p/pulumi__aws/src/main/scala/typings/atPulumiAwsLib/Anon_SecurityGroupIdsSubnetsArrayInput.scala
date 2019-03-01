@@ -10,3 +10,16 @@ trait Anon_SecurityGroupIdsSubnetsArrayInput extends js.Object {
   var subnets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
 }
 
+object Anon_SecurityGroupIdsSubnetsArrayInput {
+  @scala.inline
+  def apply(
+    securityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    subnets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+  ): Anon_SecurityGroupIdsSubnetsArrayInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
+    __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_SecurityGroupIdsSubnetsArrayInput]
+  }
+}
+

@@ -20,3 +20,20 @@ trait AjaxRequestFailureEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AjaxRequestFailureEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    message: java.lang.String = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): AjaxRequestFailureEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AjaxRequestFailureEventArgs]
+  }
+}
+

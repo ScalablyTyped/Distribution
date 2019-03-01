@@ -18,3 +18,22 @@ trait Anon_CaseSensitiveField extends js.Object {
   var searchString: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_CaseSensitiveField {
+  @scala.inline
+  def apply(
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    field: java.lang.String = null,
+    fieldIndex: scala.Int | scala.Double = null,
+    replaceString: java.lang.String = null,
+    searchString: java.lang.String = null
+  ): Anon_CaseSensitiveField = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (fieldIndex != null) __obj.updateDynamic("fieldIndex")(fieldIndex.asInstanceOf[js.Any])
+    if (replaceString != null) __obj.updateDynamic("replaceString")(replaceString)
+    if (searchString != null) __obj.updateDynamic("searchString")(searchString)
+    __obj.asInstanceOf[Anon_CaseSensitiveField]
+  }
+}
+

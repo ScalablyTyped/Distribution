@@ -64,3 +64,50 @@ trait frame extends js.Object {
   def toBuffer(nullMask: scala.Boolean): nodeLib.Buffer
 }
 
+object frame {
+  @scala.inline
+  def apply(
+    addData: js.Function1[IBufferList, scala.Boolean],
+    binaryPayload: nodeLib.Buffer,
+    closeStatus: scala.Double,
+    config: IConfig,
+    fin: scala.Boolean,
+    frameHeader: nodeLib.Buffer,
+    frameTooLarge: scala.Boolean,
+    invalidCloseFrameLength: scala.Boolean,
+    length: scala.Double,
+    mask: scala.Double,
+    maskBytes: nodeLib.Buffer,
+    maxReceivedFrameSize: scala.Double,
+    opcode: scala.Double,
+    protocolError: scala.Boolean,
+    rsv1: scala.Boolean,
+    rsv2: scala.Boolean,
+    rsv3: scala.Boolean,
+    throwAwayPayload: js.Function1[IBufferList, scala.Boolean],
+    toBuffer: js.Function1[scala.Boolean, nodeLib.Buffer]
+  ): frame = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addData")(addData)
+    __obj.updateDynamic("binaryPayload")(binaryPayload)
+    __obj.updateDynamic("closeStatus")(closeStatus)
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("fin")(fin)
+    __obj.updateDynamic("frameHeader")(frameHeader)
+    __obj.updateDynamic("frameTooLarge")(frameTooLarge)
+    __obj.updateDynamic("invalidCloseFrameLength")(invalidCloseFrameLength)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("mask")(mask)
+    __obj.updateDynamic("maskBytes")(maskBytes)
+    __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize)
+    __obj.updateDynamic("opcode")(opcode)
+    __obj.updateDynamic("protocolError")(protocolError)
+    __obj.updateDynamic("rsv1")(rsv1)
+    __obj.updateDynamic("rsv2")(rsv2)
+    __obj.updateDynamic("rsv3")(rsv3)
+    __obj.updateDynamic("throwAwayPayload")(throwAwayPayload)
+    __obj.updateDynamic("toBuffer")(toBuffer)
+    __obj.asInstanceOf[frame]
+  }
+}
+

@@ -17,3 +17,26 @@ trait MigrationStep extends js.Object {
   def up(db: mongodbLib.mongodbMod.Db, cb: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit
 }
 
+object MigrationStep {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    up: js.Function2[
+      mongodbLib.mongodbMod.Db, 
+      js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+      scala.Unit
+    ],
+    down: js.Function2[
+      /* db */ mongodbLib.mongodbMod.Db, 
+      /* cb */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+      scala.Unit
+    ] = null
+  ): MigrationStep = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("up")(up)
+    if (down != null) __obj.updateDynamic("down")(down)
+    __obj.asInstanceOf[MigrationStep]
+  }
+}
+

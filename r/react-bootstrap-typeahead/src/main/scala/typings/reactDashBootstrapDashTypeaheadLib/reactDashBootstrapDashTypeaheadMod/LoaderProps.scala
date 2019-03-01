@@ -9,3 +9,12 @@ trait LoaderProps extends js.Object {
   var bsSize: TypeaheadBsSizes
 }
 
+object LoaderProps {
+  @scala.inline
+  def apply(bsSize: TypeaheadBsSizes): LoaderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bsSize")(bsSize)
+    __obj.asInstanceOf[LoaderProps]
+  }
+}
+

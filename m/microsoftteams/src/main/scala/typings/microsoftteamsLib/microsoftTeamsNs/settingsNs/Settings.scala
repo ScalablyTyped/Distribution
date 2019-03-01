@@ -29,3 +29,22 @@ trait Settings extends js.Object {
   var websiteUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    contentUrl: java.lang.String,
+    entityId: java.lang.String,
+    removeUrl: java.lang.String = null,
+    suggestedDisplayName: java.lang.String = null,
+    websiteUrl: java.lang.String = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentUrl")(contentUrl)
+    __obj.updateDynamic("entityId")(entityId)
+    if (removeUrl != null) __obj.updateDynamic("removeUrl")(removeUrl)
+    if (suggestedDisplayName != null) __obj.updateDynamic("suggestedDisplayName")(suggestedDisplayName)
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

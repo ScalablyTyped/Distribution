@@ -11,3 +11,18 @@ trait Observer[Ev] extends js.Object {
   def next(event: Ev): js.Any
 }
 
+object Observer {
+  @scala.inline
+  def apply[Ev](
+    complete: js.Function0[js.Any],
+    error: js.Function1[js.Any, js.Any],
+    next: js.Function1[Ev, js.Any]
+  ): Observer[Ev] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[Observer[Ev]]
+  }
+}
+

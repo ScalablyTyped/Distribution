@@ -12,3 +12,20 @@ trait WriteOptions extends js.Object {
   var rightHanded: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WriteOptions {
+  @scala.inline
+  def apply(
+    dataProjection: openlayersLib.openlayersMod.ProjectionLike,
+    decimals: scala.Int | scala.Double = null,
+    featureProjection: openlayersLib.openlayersMod.ProjectionLike = null,
+    rightHanded: js.UndefOr[scala.Boolean] = js.undefined
+  ): WriteOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataProjection")(dataProjection.asInstanceOf[js.Any])
+    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (featureProjection != null) __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightHanded)) __obj.updateDynamic("rightHanded")(rightHanded)
+    __obj.asInstanceOf[WriteOptions]
+  }
+}
+

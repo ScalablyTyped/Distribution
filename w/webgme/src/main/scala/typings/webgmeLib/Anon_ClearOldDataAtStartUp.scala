@@ -41,3 +41,24 @@ trait Anon_ClearOldDataAtStartUp extends js.Object {
   var workerRefreshInterval: scala.Double
 }
 
+object Anon_ClearOldDataAtStartUp {
+  @scala.inline
+  def apply(
+    clearOldDataAtStartUp: scala.Boolean,
+    clearOutputTimeout: scala.Double,
+    enable: scala.Boolean,
+    labelJobs: java.lang.String,
+    workerRefreshInterval: scala.Double,
+    nonce: java.lang.String = null
+  ): Anon_ClearOldDataAtStartUp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearOldDataAtStartUp")(clearOldDataAtStartUp)
+    __obj.updateDynamic("clearOutputTimeout")(clearOutputTimeout)
+    __obj.updateDynamic("enable")(enable)
+    __obj.updateDynamic("labelJobs")(labelJobs)
+    __obj.updateDynamic("workerRefreshInterval")(workerRefreshInterval)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    __obj.asInstanceOf[Anon_ClearOldDataAtStartUp]
+  }
+}
+

@@ -13,3 +13,12 @@ trait FlexBasisProps[TLength] extends js.Object {
   var flexBasis: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.FlexBasisProperty[TLength]]] = js.undefined
 }
 
+object FlexBasisProps {
+  @scala.inline
+  def apply[TLength](flexBasis: ResponsiveValue[csstypeLib.csstypeMod.FlexBasisProperty[TLength]] = null): FlexBasisProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (flexBasis != null) __obj.updateDynamic("flexBasis")(flexBasis.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlexBasisProps[TLength]]
+  }
+}
+

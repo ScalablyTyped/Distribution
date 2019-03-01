@@ -23,3 +23,20 @@ trait NumberFormatProperties extends js.Object {
   var Type: scala.Double
 }
 
+object NumberFormatProperties {
+  @scala.inline
+  def apply(
+    Comment: java.lang.String,
+    FormatString: java.lang.String,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Type: scala.Double
+  ): NumberFormatProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Comment")(Comment)
+    __obj.updateDynamic("FormatString")(FormatString)
+    __obj.updateDynamic("Locale")(Locale)
+    __obj.updateDynamic("Type")(Type)
+    __obj.asInstanceOf[NumberFormatProperties]
+  }
+}
+

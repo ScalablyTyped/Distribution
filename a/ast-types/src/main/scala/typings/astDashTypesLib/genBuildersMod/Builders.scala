@@ -535,7 +535,7 @@ trait Builders
   def bigIntLiteral(value: java.lang.String): astDashTypesLib.genNodesMod.BigIntLiteral = js.native
   def bigIntLiteral(value: scala.Double): astDashTypesLib.genNodesMod.BigIntLiteral = js.native
   def binaryExpression(
-    operator: astDashTypesLib.astDashTypesLibStrings.`==` | astDashTypesLib.astDashTypesLibStrings.`!=` | astDashTypesLib.astDashTypesLibStrings.`===` | astDashTypesLib.astDashTypesLibStrings.`!==` | astDashTypesLib.astDashTypesLibStrings.`<` | astDashTypesLib.astDashTypesLibStrings.`<=` | astDashTypesLib.astDashTypesLibStrings.`>` | astDashTypesLib.astDashTypesLibStrings.`>=` | astDashTypesLib.astDashTypesLibStrings.`<<` | astDashTypesLib.astDashTypesLibStrings.`>>` | astDashTypesLib.astDashTypesLibStrings.`>>>` | astDashTypesLib.astDashTypesLibStrings.`+` | astDashTypesLib.astDashTypesLibStrings.`-` | astDashTypesLib.astDashTypesLibStrings.`*` | astDashTypesLib.astDashTypesLibStrings.`/` | astDashTypesLib.astDashTypesLibStrings.`%` | astDashTypesLib.astDashTypesLibStrings.`**` | astDashTypesLib.astDashTypesLibStrings.`&` | astDashTypesLib.astDashTypesLibStrings.`|` | astDashTypesLib.astDashTypesLibStrings.`^` | astDashTypesLib.astDashTypesLibStrings.in | astDashTypesLib.astDashTypesLibStrings.instanceof,
+    operator: astDashTypesLib.astDashTypesLibStrings.`==` | astDashTypesLib.astDashTypesLibStrings.`!=` | astDashTypesLib.astDashTypesLibStrings.`===` | astDashTypesLib.astDashTypesLibStrings.`!==` | astDashTypesLib.astDashTypesLibStrings.`<` | astDashTypesLib.astDashTypesLibStrings.`<=` | astDashTypesLib.astDashTypesLibStrings.`>` | astDashTypesLib.astDashTypesLibStrings.`>=` | astDashTypesLib.astDashTypesLibStrings.`<<` | astDashTypesLib.astDashTypesLibStrings.`>>` | astDashTypesLib.astDashTypesLibStrings.`>>>` | astDashTypesLib.astDashTypesLibStrings.`+` | astDashTypesLib.astDashTypesLibStrings.`-` | astDashTypesLib.astDashTypesLibStrings.`*` | astDashTypesLib.astDashTypesLibStrings.`/` | astDashTypesLib.astDashTypesLibStrings.`%` | astDashTypesLib.astDashTypesLibStrings.`**` | astDashTypesLib.astDashTypesLibStrings.`&` | astDashTypesLib.astDashTypesLibStrings.`|` | astDashTypesLib.astDashTypesLibStrings.`_backtick^_backtick` | astDashTypesLib.astDashTypesLibStrings.in | astDashTypesLib.astDashTypesLibStrings.instanceof,
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.BinaryExpression = js.native
@@ -617,12 +617,15 @@ trait Builders
     body: astDashTypesLib.genKindsMod.ClassBodyKind,
     superClass: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.ClassDeclaration = js.native
+  def classExpression(id: astDashTypesLib.genKindsMod.IdentifierKind, body: astDashTypesLib.genKindsMod.ClassBodyKind): astDashTypesLib.genNodesMod.ClassExpression = js.native
   def classExpression(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
-    body: astDashTypesLib.genKindsMod.ClassBodyKind
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    body: astDashTypesLib.genKindsMod.ClassBodyKind,
+    superClass: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.ClassExpression = js.native
+  def classExpression(id: js.UndefOr[scala.Nothing], body: astDashTypesLib.genKindsMod.ClassBodyKind): astDashTypesLib.genNodesMod.ClassExpression = js.native
   def classExpression(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: js.UndefOr[scala.Nothing],
     body: astDashTypesLib.genKindsMod.ClassBodyKind,
     superClass: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.ClassExpression = js.native
@@ -766,67 +769,6 @@ trait Builders
     key: astDashTypesLib.genKindsMod.PrivateNameKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.ClassPrivateProperty = js.native
-  def classProperty(key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind,
-    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind,
-    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind,
-    staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind,
-    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind,
-    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind,
-    staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind,
-    typeAnnotation: scala.Null,
-    staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: scala.Null,
-    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: scala.Null,
-    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind,
-    staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: scala.Null,
-    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: scala.Null,
-    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind,
-    staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def classProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: scala.Null,
-    typeAnnotation: scala.Null,
-    staticParam: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
   def classProperty(key: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.ClassProperty = js.native
   def classProperty(key: astDashTypesLib.genKindsMod.ExpressionKind, value: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.ClassProperty = js.native
   def classProperty(
@@ -881,6 +823,122 @@ trait Builders
   ): astDashTypesLib.genNodesMod.ClassProperty = js.native
   def classProperty(
     key: astDashTypesLib.genKindsMod.ExpressionKind,
+    value: scala.Null,
+    typeAnnotation: scala.Null,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(key: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(key: astDashTypesLib.genKindsMod.IdentifierKind, value: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: scala.Null,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: scala.Null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: scala.Null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: scala.Null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: scala.Null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: scala.Null,
+    typeAnnotation: scala.Null,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(key: astDashTypesLib.genKindsMod.LiteralKind): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(key: astDashTypesLib.genKindsMod.LiteralKind, value: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: scala.Null,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: scala.Null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: scala.Null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: scala.Null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: scala.Null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind,
+    staticParam: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def classProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
     value: scala.Null,
     typeAnnotation: scala.Null,
     staticParam: scala.Boolean
@@ -1007,9 +1065,10 @@ trait Builders
     extendsParam: js.Array[astDashTypesLib.genKindsMod.InterfaceExtendsKind]
   ): astDashTypesLib.genNodesMod.DeclareInterface = js.native
   def declareModule(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNodesMod.DeclareModule = js.native
+  def declareModule(id: astDashTypesLib.genKindsMod.LiteralKind, body: astDashTypesLib.genKindsMod.BlockStatementKind): astDashTypesLib.genNodesMod.DeclareModule = js.native
   def declareModuleExports(typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind): astDashTypesLib.genNodesMod.DeclareModuleExports = js.native
   def declareOpaqueType(id: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.DeclareOpaqueType = js.native
   def declareOpaqueType(
@@ -1114,9 +1173,10 @@ trait Builders
   ): astDashTypesLib.genNodesMod.ExportNamedDeclaration = js.native
   def exportNamespaceSpecifier(exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.ExportNamespaceSpecifier = js.native
   def exportSpecifier(
-    local: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    local: astDashTypesLib.genKindsMod.IdentifierKind,
     exported: astDashTypesLib.genKindsMod.IdentifierKind
   ): astDashTypesLib.genNodesMod.ExportSpecifier = js.native
+  def exportSpecifier(local: js.UndefOr[scala.Nothing], exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.ExportSpecifier = js.native
   def exportSpecifier(local: scala.Null, exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.ExportSpecifier = js.native
   def expressionStatement(expression: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.ExpressionStatement = js.native
   def file(program: astDashTypesLib.genKindsMod.ProgramKind): astDashTypesLib.genNodesMod.File = js.native
@@ -1242,18 +1302,36 @@ trait Builders
     expression: scala.Boolean
   ): astDashTypesLib.genNodesMod.FunctionDeclaration = js.native
   def functionExpression(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
   def functionExpression(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     generator: scala.Boolean
   ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
   def functionExpression(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    generator: scala.Boolean,
+    expression: scala.Boolean
+  ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
+  def functionExpression(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind
+  ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
+  def functionExpression(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    generator: scala.Boolean
+  ): astDashTypesLib.genNodesMod.FunctionExpression = js.native
+  def functionExpression(
+    id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     generator: scala.Boolean,
@@ -1637,21 +1715,6 @@ trait Builders
   @JSName("objectMethod")
   def objectMethod_get(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
-    body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
-  @JSName("objectMethod")
-  def objectMethod_get(
-    kind: astDashTypesLib.astDashTypesLibStrings.get,
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
-    body: astDashTypesLib.genKindsMod.BlockStatementKind,
-    computed: scala.Boolean
-  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
-  @JSName("objectMethod")
-  def objectMethod_get(
-    kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
@@ -1665,16 +1728,31 @@ trait Builders
     computed: scala.Boolean
   ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
   @JSName("objectMethod")
-  def objectMethod_method(
-    kind: astDashTypesLib.astDashTypesLibStrings.method,
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
+  def objectMethod_get(
+    kind: astDashTypesLib.astDashTypesLibStrings.get,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
   @JSName("objectMethod")
-  def objectMethod_method(
-    kind: astDashTypesLib.astDashTypesLibStrings.method,
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
+  def objectMethod_get(
+    kind: astDashTypesLib.astDashTypesLibStrings.get,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    computed: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: astDashTypesLib.astDashTypesLibStrings.get,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind
+  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_get(
+    kind: astDashTypesLib.astDashTypesLibStrings.get,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
@@ -1695,16 +1773,31 @@ trait Builders
     computed: scala.Boolean
   ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
   @JSName("objectMethod")
-  def objectMethod_set(
-    kind: astDashTypesLib.astDashTypesLibStrings.set,
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
+  def objectMethod_method(
+    kind: astDashTypesLib.astDashTypesLibStrings.method,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
   @JSName("objectMethod")
-  def objectMethod_set(
-    kind: astDashTypesLib.astDashTypesLibStrings.set,
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
+  def objectMethod_method(
+    kind: astDashTypesLib.astDashTypesLibStrings.method,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    computed: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: astDashTypesLib.astDashTypesLibStrings.method,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind
+  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_method(
+    kind: astDashTypesLib.astDashTypesLibStrings.method,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
@@ -1720,6 +1813,36 @@ trait Builders
   def objectMethod_set(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    computed: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: astDashTypesLib.astDashTypesLibStrings.set,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind
+  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: astDashTypesLib.astDashTypesLibStrings.set,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    computed: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: astDashTypesLib.astDashTypesLibStrings.set,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind
+  ): astDashTypesLib.genNodesMod.ObjectMethod = js.native
+  @JSName("objectMethod")
+  def objectMethod_set(
+    kind: astDashTypesLib.astDashTypesLibStrings.set,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     computed: scala.Boolean
@@ -1729,14 +1852,12 @@ trait Builders
       astDashTypesLib.genKindsMod.PropertyKind | astDashTypesLib.genKindsMod.PropertyPatternKind | astDashTypesLib.genKindsMod.SpreadPropertyPatternKind | astDashTypesLib.genKindsMod.SpreadPropertyKind | astDashTypesLib.genKindsMod.ObjectPropertyKind | astDashTypesLib.genKindsMod.RestPropertyKind
     ]
   ): astDashTypesLib.genNodesMod.ObjectPattern = js.native
-  def objectProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.ObjectProperty = js.native
-  def objectProperty(
-    key: astDashTypesLib.genKindsMod.ExpressionKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.ObjectProperty = js.native
+  def objectProperty(key: astDashTypesLib.genKindsMod.ExpressionKind, value: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.ObjectProperty = js.native
+  def objectProperty(key: astDashTypesLib.genKindsMod.ExpressionKind, value: astDashTypesLib.genKindsMod.PatternKind): astDashTypesLib.genNodesMod.ObjectProperty = js.native
+  def objectProperty(key: astDashTypesLib.genKindsMod.IdentifierKind, value: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.ObjectProperty = js.native
+  def objectProperty(key: astDashTypesLib.genKindsMod.IdentifierKind, value: astDashTypesLib.genKindsMod.PatternKind): astDashTypesLib.genNodesMod.ObjectProperty = js.native
+  def objectProperty(key: astDashTypesLib.genKindsMod.LiteralKind, value: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.ObjectProperty = js.native
+  def objectProperty(key: astDashTypesLib.genKindsMod.LiteralKind, value: astDashTypesLib.genKindsMod.PatternKind): astDashTypesLib.genNodesMod.ObjectProperty = js.native
   def objectTypeAnnotation(
     properties: js.Array[
       astDashTypesLib.genKindsMod.ObjectTypePropertyKind | astDashTypesLib.genKindsMod.ObjectTypeSpreadPropertyKind
@@ -1769,7 +1890,12 @@ trait Builders
     method: scala.Boolean
   ): astDashTypesLib.genNodesMod.ObjectTypeInternalSlot = js.native
   def objectTypeProperty(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.FlowTypeKind,
+    optional: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ObjectTypeProperty = js.native
+  def objectTypeProperty(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
     value: astDashTypesLib.genKindsMod.FlowTypeKind,
     optional: scala.Boolean
   ): astDashTypesLib.genNodesMod.ObjectTypeProperty = js.native
@@ -1832,46 +1958,116 @@ trait Builders
   def parenthesizedExpression(expression: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNodesMod.ParenthesizedExpression = js.native
   def privateName(id: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNodesMod.PrivateName = js.native
   def program(body: js.Array[astDashTypesLib.genKindsMod.StatementKind]): astDashTypesLib.genNodesMod.Program = js.native
-  def propertyPattern(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    pattern: astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.PropertyPattern = js.native
   def propertyPattern(key: astDashTypesLib.genKindsMod.ExpressionKind, pattern: astDashTypesLib.genKindsMod.PatternKind): astDashTypesLib.genNodesMod.PropertyPattern = js.native
-  @JSName("property")
-  def property_get(
-    kind: astDashTypesLib.astDashTypesLibStrings.get,
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
-  ): astDashTypesLib.genNodesMod.Property = js.native
+  def propertyPattern(key: astDashTypesLib.genKindsMod.IdentifierKind, pattern: astDashTypesLib.genKindsMod.PatternKind): astDashTypesLib.genNodesMod.PropertyPattern = js.native
+  def propertyPattern(key: astDashTypesLib.genKindsMod.LiteralKind, pattern: astDashTypesLib.genKindsMod.PatternKind): astDashTypesLib.genNodesMod.PropertyPattern = js.native
   @JSName("property")
   def property_get(
     kind: astDashTypesLib.astDashTypesLibStrings.get,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
+    value: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.Property = js.native
   @JSName("property")
-  def property_init(
-    kind: astDashTypesLib.astDashTypesLibStrings.init,
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
+  def property_get(
+    kind: astDashTypesLib.astDashTypesLibStrings.get,
+    key: astDashTypesLib.genKindsMod.ExpressionKind,
+    value: astDashTypesLib.genKindsMod.PatternKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_get(
+    kind: astDashTypesLib.astDashTypesLibStrings.get,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_get(
+    kind: astDashTypesLib.astDashTypesLibStrings.get,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.PatternKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_get(
+    kind: astDashTypesLib.astDashTypesLibStrings.get,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_get(
+    kind: astDashTypesLib.astDashTypesLibStrings.get,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.PatternKind
   ): astDashTypesLib.genNodesMod.Property = js.native
   @JSName("property")
   def property_init(
     kind: astDashTypesLib.astDashTypesLibStrings.init,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
+    value: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.Property = js.native
   @JSName("property")
-  def property_set(
-    kind: astDashTypesLib.astDashTypesLibStrings.set,
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
+  def property_init(
+    kind: astDashTypesLib.astDashTypesLibStrings.init,
+    key: astDashTypesLib.genKindsMod.ExpressionKind,
+    value: astDashTypesLib.genKindsMod.PatternKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_init(
+    kind: astDashTypesLib.astDashTypesLibStrings.init,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_init(
+    kind: astDashTypesLib.astDashTypesLibStrings.init,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.PatternKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_init(
+    kind: astDashTypesLib.astDashTypesLibStrings.init,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_init(
+    kind: astDashTypesLib.astDashTypesLibStrings.init,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.PatternKind
   ): astDashTypesLib.genNodesMod.Property = js.native
   @JSName("property")
   def property_set(
     kind: astDashTypesLib.astDashTypesLibStrings.set,
     key: astDashTypesLib.genKindsMod.ExpressionKind,
-    value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind
+    value: astDashTypesLib.genKindsMod.ExpressionKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_set(
+    kind: astDashTypesLib.astDashTypesLibStrings.set,
+    key: astDashTypesLib.genKindsMod.ExpressionKind,
+    value: astDashTypesLib.genKindsMod.PatternKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_set(
+    kind: astDashTypesLib.astDashTypesLibStrings.set,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_set(
+    kind: astDashTypesLib.astDashTypesLibStrings.set,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.PatternKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_set(
+    kind: astDashTypesLib.astDashTypesLibStrings.set,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.ExpressionKind
+  ): astDashTypesLib.genNodesMod.Property = js.native
+  @JSName("property")
+  def property_set(
+    kind: astDashTypesLib.astDashTypesLibStrings.set,
+    key: astDashTypesLib.genKindsMod.LiteralKind,
+    value: astDashTypesLib.genKindsMod.PatternKind
   ): astDashTypesLib.genNodesMod.Property = js.native
   def qualifiedTypeIdentifier(
     qualification: astDashTypesLib.genKindsMod.IdentifierKind,
@@ -1975,16 +2171,27 @@ trait Builders
     ]
   ): astDashTypesLib.genNodesMod.TSConstructorType = js.native
   def tsDeclareFunction(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind]
   ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.NoopKind
   ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  def tsDeclareFunction(id: js.UndefOr[scala.Nothing], params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  def tsDeclareFunction(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    returnType: astDashTypesLib.genKindsMod.NoopKind
+  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  def tsDeclareFunction(
+    id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
@@ -2101,12 +2308,12 @@ trait Builders
   def tsImportType(argument: astDashTypesLib.genKindsMod.StringLiteralKind): astDashTypesLib.genNodesMod.TSImportType = js.native
   def tsImportType(
     argument: astDashTypesLib.genKindsMod.StringLiteralKind,
-    qualifier: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
-    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind
+    qualifier: astDashTypesLib.genKindsMod.IdentifierKind
   ): astDashTypesLib.genNodesMod.TSImportType = js.native
   def tsImportType(
     argument: astDashTypesLib.genKindsMod.StringLiteralKind,
-    qualifier: astDashTypesLib.genKindsMod.IdentifierKind
+    qualifier: astDashTypesLib.genKindsMod.IdentifierKind,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind
   ): astDashTypesLib.genNodesMod.TSImportType = js.native
   def tsImportType(
     argument: astDashTypesLib.genKindsMod.StringLiteralKind,
@@ -2115,6 +2322,11 @@ trait Builders
   def tsImportType(
     argument: astDashTypesLib.genKindsMod.StringLiteralKind,
     qualifier: astDashTypesLib.genKindsMod.TSQualifiedNameKind,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind
+  ): astDashTypesLib.genNodesMod.TSImportType = js.native
+  def tsImportType(
+    argument: astDashTypesLib.genKindsMod.StringLiteralKind,
+    qualifier: js.UndefOr[scala.Nothing],
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind
   ): astDashTypesLib.genNodesMod.TSImportType = js.native
   def tsIndexSignature(parameters: js.Array[astDashTypesLib.genKindsMod.IdentifierKind]): astDashTypesLib.genNodesMod.TSIndexSignature = js.native
@@ -2240,9 +2452,8 @@ trait Builders
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
   ): astDashTypesLib.genNodesMod.TSTypeAliasDeclaration = js.native
-  def tsTypeAnnotation(
-    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeKind
-  ): astDashTypesLib.genNodesMod.TSTypeAnnotation = js.native
+  def tsTypeAnnotation(typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind): astDashTypesLib.genNodesMod.TSTypeAnnotation = js.native
+  def tsTypeAnnotation(typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind): astDashTypesLib.genNodesMod.TSTypeAnnotation = js.native
   def tsTypeAssertion(
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind,
     expression: astDashTypesLib.genKindsMod.ExpressionKind
@@ -2254,12 +2465,17 @@ trait Builders
   ): astDashTypesLib.genNodesMod.TSTypeLiteral = js.native
   def tsTypeOperator(operator: java.lang.String): astDashTypesLib.genNodesMod.TSTypeOperator = js.native
   def tsTypeParameter(name: java.lang.String): astDashTypesLib.genNodesMod.TSTypeParameter = js.native
+  def tsTypeParameter(name: java.lang.String, constraint: astDashTypesLib.genKindsMod.TSTypeKind): astDashTypesLib.genNodesMod.TSTypeParameter = js.native
   def tsTypeParameter(
     name: java.lang.String,
-    constraint: astDashTypesLib.genKindsMod.TSTypeKind | js.UndefOr[scala.Nothing],
+    constraint: astDashTypesLib.genKindsMod.TSTypeKind,
     defaultParam: astDashTypesLib.genKindsMod.TSTypeKind
   ): astDashTypesLib.genNodesMod.TSTypeParameter = js.native
-  def tsTypeParameter(name: java.lang.String, constraint: astDashTypesLib.genKindsMod.TSTypeKind): astDashTypesLib.genNodesMod.TSTypeParameter = js.native
+  def tsTypeParameter(
+    name: java.lang.String,
+    constraint: js.UndefOr[scala.Nothing],
+    defaultParam: astDashTypesLib.genKindsMod.TSTypeKind
+  ): astDashTypesLib.genNodesMod.TSTypeParameter = js.native
   def tsTypeParameterDeclaration(params: js.Array[astDashTypesLib.genKindsMod.TSTypeParameterKind]): astDashTypesLib.genNodesMod.TSTypeParameterDeclaration = js.native
   def tsTypeParameterInstantiation(params: js.Array[astDashTypesLib.genKindsMod.TSTypeKind]): astDashTypesLib.genNodesMod.TSTypeParameterInstantiation = js.native
   def tsTypePredicate(

@@ -25,3 +25,18 @@ trait SearchDijkstraOptions extends js.Object {
   var weight: js.UndefOr[WeightFn] = js.undefined
 }
 
+object SearchDijkstraOptions {
+  @scala.inline
+  def apply(
+    root: Selector | CollectionArgument,
+    directed: js.UndefOr[scala.Boolean] = js.undefined,
+    weight: WeightFn = null
+  ): SearchDijkstraOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[SearchDijkstraOptions]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_2Dismantle extends js.Object {
   var dismantle: screepsLib.screepsLibNumbers.`2`
 }
 
+object Anon_2Dismantle {
+  @scala.inline
+  def apply(dismantle: screepsLib.screepsLibNumbers.`2`): Anon_2Dismantle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dismantle")(dismantle)
+    __obj.asInstanceOf[Anon_2Dismantle]
+  }
+}
+

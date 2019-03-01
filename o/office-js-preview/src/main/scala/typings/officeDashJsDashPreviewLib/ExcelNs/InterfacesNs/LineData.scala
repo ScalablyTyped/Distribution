@@ -119,3 +119,36 @@ trait LineData extends js.Object {
   var isEndConnected: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LineData {
+  @scala.inline
+  def apply(
+    beginArrowHeadLength: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadLength | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Short | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Long = null,
+    beginArrowHeadStyle: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Stealth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Oval | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Open = null,
+    beginArrowHeadWidth: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Narrow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wide = null,
+    beginConnectedSite: scala.Int | scala.Double = null,
+    connectorType: officeDashJsDashPreviewLib.ExcelNs.ConnectorType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Straight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Elbow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Curve = null,
+    endArrowHeadLength: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadLength | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Short | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Long = null,
+    endArrowHeadStyle: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Stealth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Oval | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Open = null,
+    endArrowHeadWidth: officeDashJsDashPreviewLib.ExcelNs.ArrowHeadWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Narrow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wide = null,
+    endConnectedSite: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    isBeginConnected: js.UndefOr[scala.Boolean] = js.undefined,
+    isEndConnected: js.UndefOr[scala.Boolean] = js.undefined
+  ): LineData = {
+    val __obj = js.Dynamic.literal()
+    if (beginArrowHeadLength != null) __obj.updateDynamic("beginArrowHeadLength")(beginArrowHeadLength.asInstanceOf[js.Any])
+    if (beginArrowHeadStyle != null) __obj.updateDynamic("beginArrowHeadStyle")(beginArrowHeadStyle.asInstanceOf[js.Any])
+    if (beginArrowHeadWidth != null) __obj.updateDynamic("beginArrowHeadWidth")(beginArrowHeadWidth.asInstanceOf[js.Any])
+    if (beginConnectedSite != null) __obj.updateDynamic("beginConnectedSite")(beginConnectedSite.asInstanceOf[js.Any])
+    if (connectorType != null) __obj.updateDynamic("connectorType")(connectorType.asInstanceOf[js.Any])
+    if (endArrowHeadLength != null) __obj.updateDynamic("endArrowHeadLength")(endArrowHeadLength.asInstanceOf[js.Any])
+    if (endArrowHeadStyle != null) __obj.updateDynamic("endArrowHeadStyle")(endArrowHeadStyle.asInstanceOf[js.Any])
+    if (endArrowHeadWidth != null) __obj.updateDynamic("endArrowHeadWidth")(endArrowHeadWidth.asInstanceOf[js.Any])
+    if (endConnectedSite != null) __obj.updateDynamic("endConnectedSite")(endConnectedSite.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isBeginConnected)) __obj.updateDynamic("isBeginConnected")(isBeginConnected)
+    if (!js.isUndefined(isEndConnected)) __obj.updateDynamic("isEndConnected")(isEndConnected)
+    __obj.asInstanceOf[LineData]
+  }
+}
+

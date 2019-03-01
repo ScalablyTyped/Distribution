@@ -29,3 +29,20 @@ trait Settings extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    openAsHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    openAtLogin: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (!js.isUndefined(openAsHidden)) __obj.updateDynamic("openAsHidden")(openAsHidden)
+    if (!js.isUndefined(openAtLogin)) __obj.updateDynamic("openAtLogin")(openAtLogin)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

@@ -9,3 +9,12 @@ trait URI2HKT2[L, A] extends js.Object {
   var IOEither: fpDashTsLib.libIOEitherMod.IOEither[L, A]
 }
 
+object URI2HKT2 {
+  @scala.inline
+  def apply[L, A](IOEither: fpDashTsLib.libIOEitherMod.IOEither[L, A]): URI2HKT2[L, A] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IOEither")(IOEither)
+    __obj.asInstanceOf[URI2HKT2[L, A]]
+  }
+}
+

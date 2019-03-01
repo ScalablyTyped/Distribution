@@ -28,3 +28,18 @@ trait MarkerOptions extends js.Object {
   var zIndexOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MarkerOptions {
+  @scala.inline
+  def apply(
+    icon: leafletLib.leafletMod.Icon[leafletLib.leafletMod.IconOptions] | leafletLib.leafletMod.DivIcon = null,
+    repeatMode: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndexOffset: scala.Int | scala.Double = null
+  ): MarkerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(repeatMode)) __obj.updateDynamic("repeatMode")(repeatMode)
+    if (zIndexOffset != null) __obj.updateDynamic("zIndexOffset")(zIndexOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MarkerOptions]
+  }
+}
+

@@ -35,3 +35,42 @@ trait UploadOptions extends js.Object {
   var url: java.lang.String
 }
 
+object UploadOptions {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    beforeStart: js.Function0[scala.Unit] = null,
+    complete: js.Function1[/* data */ js.UndefOr[js.Any], scala.Unit] = null,
+    data: js.Any = null,
+    dest: java.lang.String = null,
+    error: js.Function3[
+      /* xhr */ js.UndefOr[js.Any], 
+      /* state */ js.UndefOr[js.Any], 
+      /* error */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    extensions: js.Any = null,
+    isBtn: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function3[
+      /* data */ js.UndefOr[js.Any], 
+      /* state */ js.UndefOr[js.Any], 
+      /* xhr */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    `type`: java.lang.String = null
+  ): UploadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (beforeStart != null) __obj.updateDynamic("beforeStart")(beforeStart)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (!js.isUndefined(isBtn)) __obj.updateDynamic("isBtn")(isBtn)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[UploadOptions]
+  }
+}
+

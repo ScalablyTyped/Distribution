@@ -11,3 +11,14 @@ trait ResponseInit extends js.Object {
   var statusText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResponseInit {
+  @scala.inline
+  def apply(status: scala.Double, headers: HeaderInit = null, statusText: java.lang.String = null): ResponseInit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    __obj.asInstanceOf[ResponseInit]
+  }
+}
+

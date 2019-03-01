@@ -10,3 +10,17 @@ trait DimensionsResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltFields): gapiDotClientLib.gapiNs.clientNs.Request[Metadata]
 }
 
+object DimensionsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Metadata]
+    ]
+  ): DimensionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[DimensionsResource]
+  }
+}
+

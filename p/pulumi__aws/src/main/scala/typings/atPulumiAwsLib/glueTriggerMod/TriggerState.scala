@@ -40,3 +40,28 @@ trait TriggerState extends js.Object {
   val `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object TriggerState {
+  @scala.inline
+  def apply(
+    actions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArgumentsJobName]]
+    ] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    predicate: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ConditionsLogical] = null,
+    schedule: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): TriggerState = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (predicate != null) __obj.updateDynamic("predicate")(predicate.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TriggerState]
+  }
+}
+

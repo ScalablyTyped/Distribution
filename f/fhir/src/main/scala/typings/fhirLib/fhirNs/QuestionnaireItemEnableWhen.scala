@@ -107,3 +107,72 @@ trait QuestionnaireItemEnableWhen extends BackboneElement {
   var question: java.lang.String
 }
 
+object QuestionnaireItemEnableWhen {
+  @scala.inline
+  def apply(
+    question: java.lang.String,
+    _answerBoolean: Element = null,
+    _answerDate: Element = null,
+    _answerDateTime: Element = null,
+    _answerDecimal: Element = null,
+    _answerInteger: Element = null,
+    _answerString: Element = null,
+    _answerTime: Element = null,
+    _answerUri: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _hasAnswer: Element = null,
+    _id: Element = null,
+    _question: Element = null,
+    answerAttachment: Attachment = null,
+    answerBoolean: js.UndefOr[scala.Boolean] = js.undefined,
+    answerCoding: Coding = null,
+    answerDate: date = null,
+    answerDateTime: dateTime = null,
+    answerDecimal: js.UndefOr[decimal] = js.undefined,
+    answerInteger: js.UndefOr[integer] = js.undefined,
+    answerQuantity: Quantity = null,
+    answerReference: Reference = null,
+    answerString: java.lang.String = null,
+    answerTime: time = null,
+    answerUri: uri = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    hasAnswer: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null
+  ): QuestionnaireItemEnableWhen = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("question")(question)
+    if (_answerBoolean != null) __obj.updateDynamic("_answerBoolean")(_answerBoolean)
+    if (_answerDate != null) __obj.updateDynamic("_answerDate")(_answerDate)
+    if (_answerDateTime != null) __obj.updateDynamic("_answerDateTime")(_answerDateTime)
+    if (_answerDecimal != null) __obj.updateDynamic("_answerDecimal")(_answerDecimal)
+    if (_answerInteger != null) __obj.updateDynamic("_answerInteger")(_answerInteger)
+    if (_answerString != null) __obj.updateDynamic("_answerString")(_answerString)
+    if (_answerTime != null) __obj.updateDynamic("_answerTime")(_answerTime)
+    if (_answerUri != null) __obj.updateDynamic("_answerUri")(_answerUri)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_hasAnswer != null) __obj.updateDynamic("_hasAnswer")(_hasAnswer)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_question != null) __obj.updateDynamic("_question")(_question)
+    if (answerAttachment != null) __obj.updateDynamic("answerAttachment")(answerAttachment)
+    if (!js.isUndefined(answerBoolean)) __obj.updateDynamic("answerBoolean")(answerBoolean)
+    if (answerCoding != null) __obj.updateDynamic("answerCoding")(answerCoding)
+    if (answerDate != null) __obj.updateDynamic("answerDate")(answerDate)
+    if (answerDateTime != null) __obj.updateDynamic("answerDateTime")(answerDateTime)
+    if (!js.isUndefined(answerDecimal)) __obj.updateDynamic("answerDecimal")(answerDecimal)
+    if (!js.isUndefined(answerInteger)) __obj.updateDynamic("answerInteger")(answerInteger)
+    if (answerQuantity != null) __obj.updateDynamic("answerQuantity")(answerQuantity)
+    if (answerReference != null) __obj.updateDynamic("answerReference")(answerReference)
+    if (answerString != null) __obj.updateDynamic("answerString")(answerString)
+    if (answerTime != null) __obj.updateDynamic("answerTime")(answerTime)
+    if (answerUri != null) __obj.updateDynamic("answerUri")(answerUri)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (!js.isUndefined(hasAnswer)) __obj.updateDynamic("hasAnswer")(hasAnswer)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    __obj.asInstanceOf[QuestionnaireItemEnableWhen]
+  }
+}
+

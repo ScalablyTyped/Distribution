@@ -93,3 +93,88 @@ trait Anon_Alt extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Alt {
+  @scala.inline
+  def apply(
+    q: java.lang.String,
+    alt: java.lang.String = null,
+    c2coff: java.lang.String = null,
+    cr: java.lang.String = null,
+    cx: java.lang.String = null,
+    dateRestrict: java.lang.String = null,
+    exactTerms: java.lang.String = null,
+    excludeTerms: java.lang.String = null,
+    fields: java.lang.String = null,
+    fileType: java.lang.String = null,
+    filter: java.lang.String = null,
+    gl: java.lang.String = null,
+    googlehost: java.lang.String = null,
+    highRange: java.lang.String = null,
+    hl: java.lang.String = null,
+    hq: java.lang.String = null,
+    imgColorType: java.lang.String = null,
+    imgDominantColor: java.lang.String = null,
+    imgSize: java.lang.String = null,
+    imgType: java.lang.String = null,
+    key: java.lang.String = null,
+    linkSite: java.lang.String = null,
+    lowRange: java.lang.String = null,
+    lr: java.lang.String = null,
+    num: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    orTerms: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    relatedSite: java.lang.String = null,
+    rights: java.lang.String = null,
+    safe: java.lang.String = null,
+    searchType: java.lang.String = null,
+    siteSearch: java.lang.String = null,
+    siteSearchFilter: java.lang.String = null,
+    sort: java.lang.String = null,
+    start: scala.Int | scala.Double = null,
+    userIp: java.lang.String = null
+  ): Anon_Alt = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("q")(q)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (c2coff != null) __obj.updateDynamic("c2coff")(c2coff)
+    if (cr != null) __obj.updateDynamic("cr")(cr)
+    if (cx != null) __obj.updateDynamic("cx")(cx)
+    if (dateRestrict != null) __obj.updateDynamic("dateRestrict")(dateRestrict)
+    if (exactTerms != null) __obj.updateDynamic("exactTerms")(exactTerms)
+    if (excludeTerms != null) __obj.updateDynamic("excludeTerms")(excludeTerms)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (gl != null) __obj.updateDynamic("gl")(gl)
+    if (googlehost != null) __obj.updateDynamic("googlehost")(googlehost)
+    if (highRange != null) __obj.updateDynamic("highRange")(highRange)
+    if (hl != null) __obj.updateDynamic("hl")(hl)
+    if (hq != null) __obj.updateDynamic("hq")(hq)
+    if (imgColorType != null) __obj.updateDynamic("imgColorType")(imgColorType)
+    if (imgDominantColor != null) __obj.updateDynamic("imgDominantColor")(imgDominantColor)
+    if (imgSize != null) __obj.updateDynamic("imgSize")(imgSize)
+    if (imgType != null) __obj.updateDynamic("imgType")(imgType)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (linkSite != null) __obj.updateDynamic("linkSite")(linkSite)
+    if (lowRange != null) __obj.updateDynamic("lowRange")(lowRange)
+    if (lr != null) __obj.updateDynamic("lr")(lr)
+    if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (orTerms != null) __obj.updateDynamic("orTerms")(orTerms)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (relatedSite != null) __obj.updateDynamic("relatedSite")(relatedSite)
+    if (rights != null) __obj.updateDynamic("rights")(rights)
+    if (safe != null) __obj.updateDynamic("safe")(safe)
+    if (searchType != null) __obj.updateDynamic("searchType")(searchType)
+    if (siteSearch != null) __obj.updateDynamic("siteSearch")(siteSearch)
+    if (siteSearchFilter != null) __obj.updateDynamic("siteSearchFilter")(siteSearchFilter)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_Alt]
+  }
+}
+

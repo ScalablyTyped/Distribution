@@ -17,3 +17,26 @@ trait Implementation extends js.Object {
   ): scala.Unit
 }
 
+object Implementation {
+  @scala.inline
+  def apply(
+    bind: js.Function3[java.lang.String, scala.Double, js.Function0[scala.Unit], scala.Unit],
+    destroy: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    getInfo: js.Function1[js.Function1[/* socketInfo */ SocketInfo, scala.Unit], scala.Unit],
+    sendTo: js.Function4[
+      stdLib.ArrayBuffer, 
+      java.lang.String, 
+      scala.Double, 
+      js.Function1[/* bytesWritten */ scala.Double, scala.Unit], 
+      scala.Unit
+    ]
+  ): Implementation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bind")(bind)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getInfo")(getInfo)
+    __obj.updateDynamic("sendTo")(sendTo)
+    __obj.asInstanceOf[Implementation]
+  }
+}
+

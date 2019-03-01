@@ -37,3 +37,32 @@ trait ProductsResource extends js.Object {
   def update(request: gapiDotClientDotManufacturersLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Product]
 }
 
+object ProductsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotManufacturersLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotManufacturersLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Product]
+    ],
+    list: js.Function1[
+      gapiDotClientDotManufacturersLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListProductsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotManufacturersLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Product]
+    ]
+  ): ProductsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ProductsResource]
+  }
+}
+

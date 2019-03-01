@@ -47,3 +47,29 @@ trait SchemaTypeOptions[Type] extends js.Object {
   var validate: js.UndefOr[js.Function1[/* value */ Type, scala.Boolean]] = js.undefined
 }
 
+object SchemaTypeOptions {
+  @scala.inline
+  def apply[Type](
+    `type`: SchemaTypeConstructor,
+    choices: js.Array[Type] = null,
+    default: Type = null,
+    `match`: stdLib.RegExp = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    unique: js.UndefOr[scala.Boolean] = js.undefined,
+    validate: js.Function1[/* value */ Type, scala.Boolean] = null
+  ): SchemaTypeOptions[Type] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (choices != null) __obj.updateDynamic("choices")(choices)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[SchemaTypeOptions[Type]]
+  }
+}
+

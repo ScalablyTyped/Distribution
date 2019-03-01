@@ -9,3 +9,12 @@ trait Setoid[A] extends js.Object {
   def equals(x: A, y: A): scala.Boolean
 }
 
+object Setoid {
+  @scala.inline
+  def apply[A](equals: js.Function2[A, A, scala.Boolean]): Setoid[A] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("equals")(equals)
+    __obj.asInstanceOf[Setoid[A]]
+  }
+}
+

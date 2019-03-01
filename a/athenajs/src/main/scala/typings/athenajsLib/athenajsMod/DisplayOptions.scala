@@ -13,3 +13,21 @@ trait DisplayOptions extends js.Object {
   var width: scala.Double
 }
 
+object DisplayOptions {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    name: java.lang.String,
+    `type`: java.lang.String,
+    width: scala.Double,
+    layers: js.Array[scala.Boolean] = null
+  ): DisplayOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("width")(width)
+    if (layers != null) __obj.updateDynamic("layers")(layers)
+    __obj.asInstanceOf[DisplayOptions]
+  }
+}
+

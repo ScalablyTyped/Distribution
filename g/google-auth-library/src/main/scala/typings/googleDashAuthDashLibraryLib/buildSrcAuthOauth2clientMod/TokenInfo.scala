@@ -56,3 +56,26 @@ trait TokenInfo extends js.Object {
   var user_id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TokenInfo {
+  @scala.inline
+  def apply(
+    aud: java.lang.String,
+    expiry_date: scala.Double,
+    scopes: js.Array[java.lang.String],
+    access_type: java.lang.String = null,
+    azp: java.lang.String = null,
+    sub: java.lang.String = null,
+    user_id: java.lang.String = null
+  ): TokenInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aud")(aud)
+    __obj.updateDynamic("expiry_date")(expiry_date)
+    __obj.updateDynamic("scopes")(scopes)
+    if (access_type != null) __obj.updateDynamic("access_type")(access_type)
+    if (azp != null) __obj.updateDynamic("azp")(azp)
+    if (sub != null) __obj.updateDynamic("sub")(sub)
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id)
+    __obj.asInstanceOf[TokenInfo]
+  }
+}
+

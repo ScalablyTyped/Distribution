@@ -10,3 +10,16 @@ trait UpdateDraftBodyAction extends js.Object {
   def setUpdateType(updateType: UpdateDraftBodyType): UpdateDraftBodyAction
 }
 
+object UpdateDraftBodyAction {
+  @scala.inline
+  def apply(
+    addUpdateContent: js.Function2[java.lang.String, ContentType, UpdateDraftBodyAction],
+    setUpdateType: js.Function1[UpdateDraftBodyType, UpdateDraftBodyAction]
+  ): UpdateDraftBodyAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addUpdateContent")(addUpdateContent)
+    __obj.updateDynamic("setUpdateType")(setUpdateType)
+    __obj.asInstanceOf[UpdateDraftBodyAction]
+  }
+}
+

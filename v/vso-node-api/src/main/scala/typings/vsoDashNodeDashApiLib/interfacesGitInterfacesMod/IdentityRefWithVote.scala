@@ -25,3 +25,40 @@ trait IdentityRefWithVote
   var votedFor: js.Array[IdentityRefWithVote]
 }
 
+object IdentityRefWithVote {
+  @scala.inline
+  def apply(
+    directoryAlias: java.lang.String,
+    displayName: java.lang.String,
+    id: java.lang.String,
+    imageUrl: java.lang.String,
+    inactive: scala.Boolean,
+    isAadIdentity: scala.Boolean,
+    isContainer: scala.Boolean,
+    isRequired: scala.Boolean,
+    profileUrl: java.lang.String,
+    reviewerUrl: java.lang.String,
+    uniqueName: java.lang.String,
+    url: java.lang.String,
+    vote: scala.Double,
+    votedFor: js.Array[IdentityRefWithVote]
+  ): IdentityRefWithVote = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("directoryAlias")(directoryAlias)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("imageUrl")(imageUrl)
+    __obj.updateDynamic("inactive")(inactive)
+    __obj.updateDynamic("isAadIdentity")(isAadIdentity)
+    __obj.updateDynamic("isContainer")(isContainer)
+    __obj.updateDynamic("isRequired")(isRequired)
+    __obj.updateDynamic("profileUrl")(profileUrl)
+    __obj.updateDynamic("reviewerUrl")(reviewerUrl)
+    __obj.updateDynamic("uniqueName")(uniqueName)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("vote")(vote)
+    __obj.updateDynamic("votedFor")(votedFor)
+    __obj.asInstanceOf[IdentityRefWithVote]
+  }
+}
+

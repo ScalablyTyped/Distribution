@@ -291,3 +291,24 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MediaObjectSectionProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    alignment: reactDashFoundationLib.enumsMod.HorizontalAlignments = null,
+    isBottom: js.UndefOr[scala.Boolean] = js.undefined,
+    isMain: js.UndefOr[scala.Boolean] = js.undefined,
+    isMiddle: js.UndefOr[scala.Boolean] = js.undefined
+  ): MediaObjectSectionProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (!js.isUndefined(isBottom)) __obj.updateDynamic("isBottom")(isBottom)
+    if (!js.isUndefined(isMain)) __obj.updateDynamic("isMain")(isMain)
+    if (!js.isUndefined(isMiddle)) __obj.updateDynamic("isMiddle")(isMiddle)
+    __obj.asInstanceOf[MediaObjectSectionProps]
+  }
+}
+

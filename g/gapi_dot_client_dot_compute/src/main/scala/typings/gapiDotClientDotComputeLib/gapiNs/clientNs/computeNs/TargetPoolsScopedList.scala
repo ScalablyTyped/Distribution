@@ -12,3 +12,13 @@ trait TargetPoolsScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object TargetPoolsScopedList {
+  @scala.inline
+  def apply(targetPools: js.Array[TargetPool] = null, warning: gapiDotClientDotComputeLib.Anon_Code = null): TargetPoolsScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (targetPools != null) __obj.updateDynamic("targetPools")(targetPools)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[TargetPoolsScopedList]
+  }
+}
+

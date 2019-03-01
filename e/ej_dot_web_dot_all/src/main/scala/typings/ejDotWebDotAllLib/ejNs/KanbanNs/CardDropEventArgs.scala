@@ -29,3 +29,26 @@ trait CardDropEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CardDropEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    draggedElement: js.Any = null,
+    draggedParent: js.Any = null,
+    model: js.Any = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): CardDropEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (draggedElement != null) __obj.updateDynamic("draggedElement")(draggedElement)
+    if (draggedParent != null) __obj.updateDynamic("draggedParent")(draggedParent)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CardDropEventArgs]
+  }
+}
+

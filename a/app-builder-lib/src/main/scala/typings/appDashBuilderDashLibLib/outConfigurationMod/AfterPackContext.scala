@@ -14,3 +14,24 @@ trait AfterPackContext extends js.Object {
   val targets: js.Array[appDashBuilderDashLibLib.outCoreMod.Target]
 }
 
+object AfterPackContext {
+  @scala.inline
+  def apply(
+    appOutDir: java.lang.String,
+    arch: builderDashUtilLib.outArchMod.Arch,
+    electronPlatformName: java.lang.String,
+    outDir: java.lang.String,
+    packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
+    targets: js.Array[appDashBuilderDashLibLib.outCoreMod.Target]
+  ): AfterPackContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appOutDir")(appOutDir)
+    __obj.updateDynamic("arch")(arch)
+    __obj.updateDynamic("electronPlatformName")(electronPlatformName)
+    __obj.updateDynamic("outDir")(outDir)
+    __obj.updateDynamic("packager")(packager)
+    __obj.updateDynamic("targets")(targets)
+    __obj.asInstanceOf[AfterPackContext]
+  }
+}
+

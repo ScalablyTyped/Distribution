@@ -16,13 +16,16 @@ object reactDashOnsenuiLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialPosition
   
   @js.native
-  sealed trait `bottom left` extends js.Object
+  sealed trait `bottom left`
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialPosition
   
   @js.native
-  sealed trait `bottom right` extends js.Object
+  sealed trait `bottom right`
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialPosition
   
   @js.native
   sealed trait center extends js.Object
@@ -37,10 +40,12 @@ object reactDashOnsenuiLibStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialDirection
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait fade
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod._NavigatorAnimationTypes
   
   @js.native
   sealed trait fall extends js.Object
@@ -58,10 +63,13 @@ object reactDashOnsenuiLibStrings {
   sealed trait landscape extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialDirection
+       with reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialPosition
   
   @js.native
-  sealed trait lift extends js.Object
+  sealed trait lift
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod._NavigatorAnimationTypes
   
   @js.native
   sealed trait max extends js.Object
@@ -70,7 +78,8 @@ object reactDashOnsenuiLibStrings {
   sealed trait min extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod._NavigatorAnimationTypes
   
   @js.native
   sealed trait overlay extends js.Object
@@ -82,10 +91,13 @@ object reactDashOnsenuiLibStrings {
   sealed trait preaction extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialDirection
+       with reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialPosition
   
   @js.native
-  sealed trait slide extends js.Object
+  sealed trait slide
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod._NavigatorAnimationTypes
   
   @js.native
   sealed trait split extends js.Object
@@ -97,16 +109,20 @@ object reactDashOnsenuiLibStrings {
   sealed trait style extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialPosition
   
   @js.native
-  sealed trait `top left` extends js.Object
+  sealed trait `top left`
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialPosition
   
   @js.native
-  sealed trait `top right` extends js.Object
+  sealed trait `top right`
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialPosition
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends reactDashOnsenuiLib.reactDashOnsenuiMod.SpeedDialDirection
   
   @js.native
   sealed trait vertical extends js.Object

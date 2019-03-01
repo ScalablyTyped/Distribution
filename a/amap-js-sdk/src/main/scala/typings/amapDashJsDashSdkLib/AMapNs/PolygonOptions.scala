@@ -19,3 +19,34 @@ trait PolygonOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PolygonOptions {
+  @scala.inline
+  def apply(
+    extData: js.Any = null,
+    fillColor: java.lang.String = null,
+    fillOpacity: scala.Int | scala.Double = null,
+    map: Map = null,
+    path: js.Array[LngLat] | js.Array[js.Array[LngLat]] = null,
+    strokeColor: java.lang.String = null,
+    strokeDasharray: js.Array[scala.Double] = null,
+    strokeOpacity: scala.Int | scala.Double = null,
+    strokeStyle: java.lang.String = null,
+    strokeWeight: scala.Int | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): PolygonOptions = {
+    val __obj = js.Dynamic.literal()
+    if (extData != null) __obj.updateDynamic("extData")(extData)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray)
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolygonOptions]
+  }
+}
+

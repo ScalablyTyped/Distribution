@@ -86,3 +86,44 @@ trait IgGridSummariesMethods extends js.Object {
   def toggleSummariesRows(isToShow: scala.Boolean, isInternalCall: scala.Boolean): scala.Unit
 }
 
+object IgGridSummariesMethods {
+  @scala.inline
+  def apply(
+    calculateSummaries: js.Function0[scala.Unit],
+    calculateSummaryColumn: js.Function4[java.lang.String, js.Array[_], js.Object, js.Object, scala.Unit],
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    changeRegional: js.Function0[scala.Unit],
+    clearAllFooterIcons: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    isSummariesRowsHidden: js.Function0[scala.Unit],
+    selectCheckBox: js.Function2[js.Object, scala.Boolean, scala.Unit],
+    showHideDialog: js.Function1[js.Object, scala.Unit],
+    summariesFor: js.Function1[js.Object, scala.Unit],
+    summaryCollection: js.Function0[scala.Unit],
+    toggleCheckstate: js.Function1[js.Object, scala.Unit],
+    toggleDropDown: js.Function2[java.lang.String, js.Object, scala.Unit],
+    toggleSummariesRows: js.Function2[scala.Boolean, scala.Boolean, scala.Unit]
+  ): IgGridSummariesMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calculateSummaries")(calculateSummaries)
+    __obj.updateDynamic("calculateSummaryColumn")(calculateSummaryColumn)
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("changeRegional")(changeRegional)
+    __obj.updateDynamic("clearAllFooterIcons")(clearAllFooterIcons)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("isSummariesRowsHidden")(isSummariesRowsHidden)
+    __obj.updateDynamic("selectCheckBox")(selectCheckBox)
+    __obj.updateDynamic("showHideDialog")(showHideDialog)
+    __obj.updateDynamic("summariesFor")(summariesFor)
+    __obj.updateDynamic("summaryCollection")(summaryCollection)
+    __obj.updateDynamic("toggleCheckstate")(toggleCheckstate)
+    __obj.updateDynamic("toggleDropDown")(toggleDropDown)
+    __obj.updateDynamic("toggleSummariesRows")(toggleSummariesRows)
+    __obj.asInstanceOf[IgGridSummariesMethods]
+  }
+}
+

@@ -25,3 +25,20 @@ trait KanbanFilter extends js.Object {
   def searchCards(searchString: java.lang.String): scala.Unit
 }
 
+object KanbanFilter {
+  @scala.inline
+  def apply(
+    clearFilter: js.Function0[scala.Unit],
+    clearSearch: js.Function0[scala.Unit],
+    filterCards: js.Function0[scala.Unit],
+    searchCards: js.Function1[java.lang.String, scala.Unit]
+  ): KanbanFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearFilter")(clearFilter)
+    __obj.updateDynamic("clearSearch")(clearSearch)
+    __obj.updateDynamic("filterCards")(filterCards)
+    __obj.updateDynamic("searchCards")(searchCards)
+    __obj.asInstanceOf[KanbanFilter]
+  }
+}
+

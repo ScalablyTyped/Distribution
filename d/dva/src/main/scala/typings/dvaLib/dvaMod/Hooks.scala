@@ -18,3 +18,28 @@ trait Hooks extends js.Object {
   var onStateChange: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object Hooks {
+  @scala.inline
+  def apply(
+    extraEnhancers: js.Array[reduxLib.reduxMod.StoreEnhancer[_, js.Object]] = null,
+    extraReducers: reduxLib.reduxMod.ReducersMapObject[_, reduxLib.reduxMod.Action[_]] = null,
+    onAction: onActionFunc | js.Array[onActionFunc] = null,
+    onEffect: js.Function0[scala.Unit] = null,
+    onError: js.Function2[/* e */ nodeLib.Error, /* dispatch */ reduxLib.reduxMod.Dispatch[_], scala.Unit] = null,
+    onHmr: js.Function0[scala.Unit] = null,
+    onReducer: ReducerEnhancer = null,
+    onStateChange: js.Function0[scala.Unit] = null
+  ): Hooks = {
+    val __obj = js.Dynamic.literal()
+    if (extraEnhancers != null) __obj.updateDynamic("extraEnhancers")(extraEnhancers)
+    if (extraReducers != null) __obj.updateDynamic("extraReducers")(extraReducers)
+    if (onAction != null) __obj.updateDynamic("onAction")(onAction.asInstanceOf[js.Any])
+    if (onEffect != null) __obj.updateDynamic("onEffect")(onEffect)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onHmr != null) __obj.updateDynamic("onHmr")(onHmr)
+    if (onReducer != null) __obj.updateDynamic("onReducer")(onReducer)
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    __obj.asInstanceOf[Hooks]
+  }
+}
+

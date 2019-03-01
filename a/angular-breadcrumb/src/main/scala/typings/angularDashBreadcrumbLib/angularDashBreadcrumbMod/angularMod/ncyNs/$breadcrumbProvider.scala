@@ -12,3 +12,12 @@ trait $breadcrumbProvider extends js.Object {
   def setOptions(options: breadcrumbProviderOptions): scala.Unit
 }
 
+object $breadcrumbProvider {
+  @scala.inline
+  def apply(setOptions: js.Function1[breadcrumbProviderOptions, scala.Unit]): $breadcrumbProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setOptions")(setOptions)
+    __obj.asInstanceOf[$breadcrumbProvider]
+  }
+}
+

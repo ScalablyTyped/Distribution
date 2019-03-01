@@ -17,3 +17,30 @@ trait HeapStatistics extends js.Object {
   var usedHeapSize: scala.Double
 }
 
+object HeapStatistics {
+  @scala.inline
+  def apply(
+    doesZapGarbage: scala.Boolean,
+    heapSizeLimit: scala.Double,
+    mallocedMemory: scala.Double,
+    peakMallocedMemory: scala.Double,
+    totalAvailableSize: scala.Double,
+    totalHeapSize: scala.Double,
+    totalHeapSizeExecutable: scala.Double,
+    totalPhysicalSize: scala.Double,
+    usedHeapSize: scala.Double
+  ): HeapStatistics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("doesZapGarbage")(doesZapGarbage)
+    __obj.updateDynamic("heapSizeLimit")(heapSizeLimit)
+    __obj.updateDynamic("mallocedMemory")(mallocedMemory)
+    __obj.updateDynamic("peakMallocedMemory")(peakMallocedMemory)
+    __obj.updateDynamic("totalAvailableSize")(totalAvailableSize)
+    __obj.updateDynamic("totalHeapSize")(totalHeapSize)
+    __obj.updateDynamic("totalHeapSizeExecutable")(totalHeapSizeExecutable)
+    __obj.updateDynamic("totalPhysicalSize")(totalPhysicalSize)
+    __obj.updateDynamic("usedHeapSize")(usedHeapSize)
+    __obj.asInstanceOf[HeapStatistics]
+  }
+}
+

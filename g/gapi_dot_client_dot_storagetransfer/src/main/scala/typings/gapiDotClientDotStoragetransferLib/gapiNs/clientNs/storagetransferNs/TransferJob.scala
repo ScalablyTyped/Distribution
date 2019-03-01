@@ -42,3 +42,30 @@ trait TransferJob extends js.Object {
   var transferSpec: js.UndefOr[TransferSpec] = js.undefined
 }
 
+object TransferJob {
+  @scala.inline
+  def apply(
+    creationTime: java.lang.String = null,
+    deletionTime: java.lang.String = null,
+    description: java.lang.String = null,
+    lastModificationTime: java.lang.String = null,
+    name: java.lang.String = null,
+    projectId: java.lang.String = null,
+    schedule: Schedule = null,
+    status: java.lang.String = null,
+    transferSpec: TransferSpec = null
+  ): TransferJob = {
+    val __obj = js.Dynamic.literal()
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (deletionTime != null) __obj.updateDynamic("deletionTime")(deletionTime)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (lastModificationTime != null) __obj.updateDynamic("lastModificationTime")(lastModificationTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (transferSpec != null) __obj.updateDynamic("transferSpec")(transferSpec)
+    __obj.asInstanceOf[TransferJob]
+  }
+}
+

@@ -41,3 +41,25 @@ trait IgGridCellMergingColumnSetting
   var mergeStrategy: js.UndefOr[java.lang.String | js.Function] = js.undefined
 }
 
+object IgGridCellMergingColumnSetting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridCellMergingColumnSetting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    mergeOn: java.lang.String = null,
+    mergeStrategy: java.lang.String | js.Function = null
+  ): IgGridCellMergingColumnSetting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (mergeOn != null) __obj.updateDynamic("mergeOn")(mergeOn)
+    if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgGridCellMergingColumnSetting]
+  }
+}
+

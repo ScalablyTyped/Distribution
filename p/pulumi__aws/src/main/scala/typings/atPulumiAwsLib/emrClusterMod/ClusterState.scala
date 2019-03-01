@@ -131,3 +131,72 @@ trait ClusterState extends js.Object {
   val visibleToAllUsers: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 
+object ClusterState {
+  @scala.inline
+  def apply(
+    additionalInfo: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    applications: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    autoscalingRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bootstrapActions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArgsName]]] = null,
+    clusterState: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    configurations: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    configurationsJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    coreInstanceCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    coreInstanceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customAmiId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ebsRootVolumeSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    ec2Attributes: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AdditionalMasterSecurityGroupsAdditionalSlaveSecurityGroups] = null,
+    instanceGroups: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutoscalingPolicyBidPrice]]
+    ] = null,
+    keepJobFlowAliveWhenNoSteps: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    kerberosAttributes: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AdDomainJoinPasswordAdDomainJoinUser] = null,
+    logUri: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    masterInstanceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    masterPublicDns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    releaseLabel: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    scaleDownBehavior: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityConfiguration: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    serviceRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    steps: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionOnFailureHadoopJarStep]
+      ]
+    ] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    terminationProtection: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    visibleToAllUsers: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): ClusterState = {
+    val __obj = js.Dynamic.literal()
+    if (additionalInfo != null) __obj.updateDynamic("additionalInfo")(additionalInfo.asInstanceOf[js.Any])
+    if (applications != null) __obj.updateDynamic("applications")(applications.asInstanceOf[js.Any])
+    if (autoscalingRole != null) __obj.updateDynamic("autoscalingRole")(autoscalingRole.asInstanceOf[js.Any])
+    if (bootstrapActions != null) __obj.updateDynamic("bootstrapActions")(bootstrapActions.asInstanceOf[js.Any])
+    if (clusterState != null) __obj.updateDynamic("clusterState")(clusterState.asInstanceOf[js.Any])
+    if (configurations != null) __obj.updateDynamic("configurations")(configurations.asInstanceOf[js.Any])
+    if (configurationsJson != null) __obj.updateDynamic("configurationsJson")(configurationsJson.asInstanceOf[js.Any])
+    if (coreInstanceCount != null) __obj.updateDynamic("coreInstanceCount")(coreInstanceCount.asInstanceOf[js.Any])
+    if (coreInstanceType != null) __obj.updateDynamic("coreInstanceType")(coreInstanceType.asInstanceOf[js.Any])
+    if (customAmiId != null) __obj.updateDynamic("customAmiId")(customAmiId.asInstanceOf[js.Any])
+    if (ebsRootVolumeSize != null) __obj.updateDynamic("ebsRootVolumeSize")(ebsRootVolumeSize.asInstanceOf[js.Any])
+    if (ec2Attributes != null) __obj.updateDynamic("ec2Attributes")(ec2Attributes.asInstanceOf[js.Any])
+    if (instanceGroups != null) __obj.updateDynamic("instanceGroups")(instanceGroups.asInstanceOf[js.Any])
+    if (keepJobFlowAliveWhenNoSteps != null) __obj.updateDynamic("keepJobFlowAliveWhenNoSteps")(keepJobFlowAliveWhenNoSteps.asInstanceOf[js.Any])
+    if (kerberosAttributes != null) __obj.updateDynamic("kerberosAttributes")(kerberosAttributes.asInstanceOf[js.Any])
+    if (logUri != null) __obj.updateDynamic("logUri")(logUri.asInstanceOf[js.Any])
+    if (masterInstanceType != null) __obj.updateDynamic("masterInstanceType")(masterInstanceType.asInstanceOf[js.Any])
+    if (masterPublicDns != null) __obj.updateDynamic("masterPublicDns")(masterPublicDns.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (releaseLabel != null) __obj.updateDynamic("releaseLabel")(releaseLabel.asInstanceOf[js.Any])
+    if (scaleDownBehavior != null) __obj.updateDynamic("scaleDownBehavior")(scaleDownBehavior.asInstanceOf[js.Any])
+    if (securityConfiguration != null) __obj.updateDynamic("securityConfiguration")(securityConfiguration.asInstanceOf[js.Any])
+    if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
+    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (terminationProtection != null) __obj.updateDynamic("terminationProtection")(terminationProtection.asInstanceOf[js.Any])
+    if (visibleToAllUsers != null) __obj.updateDynamic("visibleToAllUsers")(visibleToAllUsers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterState]
+  }
+}
+

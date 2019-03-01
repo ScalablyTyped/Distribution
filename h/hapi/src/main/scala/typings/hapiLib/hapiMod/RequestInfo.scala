@@ -30,3 +30,34 @@ trait RequestInfo extends js.Object {
   var responded: scala.Double
 }
 
+object RequestInfo {
+  @scala.inline
+  def apply(
+    acceptEncoding: java.lang.String,
+    completed: scala.Double,
+    cors: hapiLib.Anon_IsOriginMatch,
+    host: java.lang.String,
+    hostname: java.lang.String,
+    id: java.lang.String,
+    received: scala.Double,
+    referrer: java.lang.String,
+    remoteAddress: java.lang.String,
+    remotePort: java.lang.String,
+    responded: scala.Double
+  ): RequestInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acceptEncoding")(acceptEncoding)
+    __obj.updateDynamic("completed")(completed)
+    __obj.updateDynamic("cors")(cors)
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("hostname")(hostname)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("received")(received)
+    __obj.updateDynamic("referrer")(referrer)
+    __obj.updateDynamic("remoteAddress")(remoteAddress)
+    __obj.updateDynamic("remotePort")(remotePort)
+    __obj.updateDynamic("responded")(responded)
+    __obj.asInstanceOf[RequestInfo]
+  }
+}
+

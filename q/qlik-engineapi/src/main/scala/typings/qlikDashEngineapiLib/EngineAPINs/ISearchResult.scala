@@ -28,3 +28,18 @@ trait ISearchResult extends js.Object {
   var qTotalNumberOfGroups: scala.Double
 }
 
+object ISearchResult {
+  @scala.inline
+  def apply(
+    qSearchGroupArray: ISearchGroup,
+    qSearchTerms: js.Array[java.lang.String],
+    qTotalNumberOfGroups: scala.Double
+  ): ISearchResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qSearchGroupArray")(qSearchGroupArray)
+    __obj.updateDynamic("qSearchTerms")(qSearchTerms)
+    __obj.updateDynamic("qTotalNumberOfGroups")(qTotalNumberOfGroups)
+    __obj.asInstanceOf[ISearchResult]
+  }
+}
+

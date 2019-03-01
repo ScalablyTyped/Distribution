@@ -27,3 +27,15 @@ trait EnvironmentTextureInfo extends js.Object {
   var width: scala.Double
 }
 
+object EnvironmentTextureInfo {
+  @scala.inline
+  def apply(irradiance: js.Any, specular: js.Any, version: scala.Double, width: scala.Double): EnvironmentTextureInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("irradiance")(irradiance)
+    __obj.updateDynamic("specular")(specular)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[EnvironmentTextureInfo]
+  }
+}
+

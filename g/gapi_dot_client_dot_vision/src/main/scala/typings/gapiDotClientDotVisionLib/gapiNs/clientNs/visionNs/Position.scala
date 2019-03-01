@@ -14,3 +14,18 @@ trait Position extends js.Object {
   var z: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Position {
+  @scala.inline
+  def apply(
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null
+  ): Position = {
+    val __obj = js.Dynamic.literal()
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Position]
+  }
+}
+

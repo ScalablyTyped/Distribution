@@ -16,3 +16,16 @@ trait DataSourceFiltersFilterItems extends js.Object {
   var values: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object DataSourceFiltersFilterItems {
+  @scala.inline
+  def apply(
+    filterType: ejDotWebDotAllLib.ejNs.PivotAnalysisNs.FilterType | java.lang.String = null,
+    values: js.Array[_] = null
+  ): DataSourceFiltersFilterItems = {
+    val __obj = js.Dynamic.literal()
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[DataSourceFiltersFilterItems]
+  }
+}
+

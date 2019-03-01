@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("FederatedCredential")
 @js.native
-class FederatedCredential protected () extends SiteBoundCredential {
+class FederatedCredential protected ()
+  extends SiteBoundCredential
+     with Credential {
   def this(data: FederatedCredentialData) = this()
   /**
     * The credential’s federated identity provider’s protocol (e.g.

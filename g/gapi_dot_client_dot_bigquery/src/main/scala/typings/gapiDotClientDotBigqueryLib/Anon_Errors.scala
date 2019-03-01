@@ -12,3 +12,16 @@ trait Anon_Errors extends js.Object {
   var index: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Errors {
+  @scala.inline
+  def apply(
+    errors: js.Array[gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.ErrorProto] = null,
+    index: scala.Int | scala.Double = null
+  ): Anon_Errors = {
+    val __obj = js.Dynamic.literal()
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Errors]
+  }
+}
+

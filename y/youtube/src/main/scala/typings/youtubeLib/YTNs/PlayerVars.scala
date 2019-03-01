@@ -95,3 +95,54 @@ trait PlayerVars extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PlayerVars {
+  @scala.inline
+  def apply(
+    autohide: AutoHide = null,
+    autoplay: AutoPlay = null,
+    cc_load_policy: ClosedCaptionsLoadPolicy = null,
+    color: ProgressBarColor = null,
+    controls: Controls = null,
+    disablekb: KeyboardControls = null,
+    enablejsapi: JsApi = null,
+    end: scala.Int | scala.Double = null,
+    fs: FullscreenButton = null,
+    hl: java.lang.String = null,
+    iv_load_policy: IvLoadPolicy = null,
+    list: java.lang.String = null,
+    listType: ListType = null,
+    loop: Loop = null,
+    modestbranding: ModestBranding = null,
+    origin: java.lang.String = null,
+    playlist: java.lang.String = null,
+    playsinline: PlaysInline = null,
+    rel: RelatedVideos = null,
+    showinfo: ShowInfo = null,
+    start: scala.Int | scala.Double = null
+  ): PlayerVars = {
+    val __obj = js.Dynamic.literal()
+    if (autohide != null) __obj.updateDynamic("autohide")(autohide)
+    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay)
+    if (cc_load_policy != null) __obj.updateDynamic("cc_load_policy")(cc_load_policy)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (controls != null) __obj.updateDynamic("controls")(controls)
+    if (disablekb != null) __obj.updateDynamic("disablekb")(disablekb)
+    if (enablejsapi != null) __obj.updateDynamic("enablejsapi")(enablejsapi)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (hl != null) __obj.updateDynamic("hl")(hl)
+    if (iv_load_policy != null) __obj.updateDynamic("iv_load_policy")(iv_load_policy)
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
+    if (loop != null) __obj.updateDynamic("loop")(loop)
+    if (modestbranding != null) __obj.updateDynamic("modestbranding")(modestbranding)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (playlist != null) __obj.updateDynamic("playlist")(playlist)
+    if (playsinline != null) __obj.updateDynamic("playsinline")(playsinline)
+    if (rel != null) __obj.updateDynamic("rel")(rel)
+    if (showinfo != null) __obj.updateDynamic("showinfo")(showinfo)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayerVars]
+  }
+}
+

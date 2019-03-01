@@ -30,3 +30,58 @@ trait IUserInformationStatics extends js.Object {
   ): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SetAccountPictureResult]
 }
 
+object IUserInformationStatics {
+  @scala.inline
+  def apply(
+    accountPictureChangeEnabled: scala.Boolean,
+    getAccountPicture: js.Function1[AccountPictureKind, winrtLib.WindowsNs.StorageNs.IStorageFile],
+    getDisplayNameAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]],
+    getDomainNameAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]],
+    getFirstNameAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]],
+    getLastNameAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]],
+    getPrincipalNameAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]],
+    getSessionInitiationProtocolUriAsync: js.Function0[
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.FoundationNs.Uri]
+    ],
+    nameAccessAllowed: scala.Boolean,
+    onaccountpicturechanged: js.Any,
+    setAccountPictureAsync: js.Function1[
+      winrtLib.WindowsNs.StorageNs.IStorageFile, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SetAccountPictureResult]
+    ],
+    setAccountPictureFromStreamAsync: js.Function1[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SetAccountPictureResult]
+    ],
+    setAccountPicturesAsync: js.Function3[
+      winrtLib.WindowsNs.StorageNs.IStorageFile, 
+      winrtLib.WindowsNs.StorageNs.IStorageFile, 
+      winrtLib.WindowsNs.StorageNs.IStorageFile, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SetAccountPictureResult]
+    ],
+    setAccountPicturesFromStreamsAsync: js.Function3[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SetAccountPictureResult]
+    ]
+  ): IUserInformationStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accountPictureChangeEnabled")(accountPictureChangeEnabled)
+    __obj.updateDynamic("getAccountPicture")(getAccountPicture)
+    __obj.updateDynamic("getDisplayNameAsync")(getDisplayNameAsync)
+    __obj.updateDynamic("getDomainNameAsync")(getDomainNameAsync)
+    __obj.updateDynamic("getFirstNameAsync")(getFirstNameAsync)
+    __obj.updateDynamic("getLastNameAsync")(getLastNameAsync)
+    __obj.updateDynamic("getPrincipalNameAsync")(getPrincipalNameAsync)
+    __obj.updateDynamic("getSessionInitiationProtocolUriAsync")(getSessionInitiationProtocolUriAsync)
+    __obj.updateDynamic("nameAccessAllowed")(nameAccessAllowed)
+    __obj.updateDynamic("onaccountpicturechanged")(onaccountpicturechanged)
+    __obj.updateDynamic("setAccountPictureAsync")(setAccountPictureAsync)
+    __obj.updateDynamic("setAccountPictureFromStreamAsync")(setAccountPictureFromStreamAsync)
+    __obj.updateDynamic("setAccountPicturesAsync")(setAccountPicturesAsync)
+    __obj.updateDynamic("setAccountPicturesFromStreamsAsync")(setAccountPicturesFromStreamsAsync)
+    __obj.asInstanceOf[IUserInformationStatics]
+  }
+}
+

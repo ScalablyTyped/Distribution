@@ -40,3 +40,28 @@ trait CheckBoxStateChangedEventUIParam extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CheckBoxStateChangedEventUIParam {
+  @scala.inline
+  def apply(
+    grid: js.Any = null,
+    isHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    owner: js.Any = null,
+    row: java.lang.String = null,
+    rowIndex: scala.Int | scala.Double = null,
+    rowKey: java.lang.String = null,
+    rowSelector: java.lang.String = null,
+    state: java.lang.String = null
+  ): CheckBoxStateChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
+    if (rowSelector != null) __obj.updateDynamic("rowSelector")(rowSelector)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[CheckBoxStateChangedEventUIParam]
+  }
+}
+

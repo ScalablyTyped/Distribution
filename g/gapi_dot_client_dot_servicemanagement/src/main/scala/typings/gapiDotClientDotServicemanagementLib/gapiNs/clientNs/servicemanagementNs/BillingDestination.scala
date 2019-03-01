@@ -18,3 +18,13 @@ trait BillingDestination extends js.Object {
   var monitoredResource: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BillingDestination {
+  @scala.inline
+  def apply(metrics: js.Array[java.lang.String] = null, monitoredResource: java.lang.String = null): BillingDestination = {
+    val __obj = js.Dynamic.literal()
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (monitoredResource != null) __obj.updateDynamic("monitoredResource")(monitoredResource)
+    __obj.asInstanceOf[BillingDestination]
+  }
+}
+

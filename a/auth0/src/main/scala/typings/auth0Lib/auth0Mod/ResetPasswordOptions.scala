@@ -11,3 +11,14 @@ trait ResetPasswordOptions extends js.Object {
   var password: java.lang.String
 }
 
+object ResetPasswordOptions {
+  @scala.inline
+  def apply(connection: java.lang.String, email: java.lang.String, password: java.lang.String): ResetPasswordOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("password")(password)
+    __obj.asInstanceOf[ResetPasswordOptions]
+  }
+}
+

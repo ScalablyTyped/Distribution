@@ -11,3 +11,14 @@ trait Anon_InsideInvalidate extends js.Object {
   ] = js.undefined
 }
 
+object Anon_InsideInvalidate {
+  @scala.inline
+  def apply(
+    invalidate: atomLib.atomLibStrings.never | atomLib.atomLibStrings.surround | atomLib.atomLibStrings.overlap | atomLib.atomLibStrings.inside | atomLib.atomLibStrings.touch = null
+  ): Anon_InsideInvalidate = {
+    val __obj = js.Dynamic.literal()
+    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_InsideInvalidate]
+  }
+}
+

@@ -14,3 +14,18 @@ trait ConfigFile extends js.Object {
   var fileType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConfigFile {
+  @scala.inline
+  def apply(
+    fileContents: java.lang.String = null,
+    filePath: java.lang.String = null,
+    fileType: java.lang.String = null
+  ): ConfigFile = {
+    val __obj = js.Dynamic.literal()
+    if (fileContents != null) __obj.updateDynamic("fileContents")(fileContents)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType)
+    __obj.asInstanceOf[ConfigFile]
+  }
+}
+

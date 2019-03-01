@@ -16,3 +16,20 @@ trait CreateAnimationOptions extends js.Object {
   var transformOrigin: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateAnimationOptions {
+  @scala.inline
+  def apply(
+    delay: scala.Int | scala.Double = null,
+    duration: scala.Int | scala.Double = null,
+    timingFunction: TimingFunction = null,
+    transformOrigin: java.lang.String = null
+  ): CreateAnimationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction)
+    if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin)
+    __obj.asInstanceOf[CreateAnimationOptions]
+  }
+}
+

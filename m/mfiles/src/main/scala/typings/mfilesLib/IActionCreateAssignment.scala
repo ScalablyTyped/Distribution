@@ -15,3 +15,26 @@ trait IActionCreateAssignment extends js.Object {
   def Clone(): IActionCreateAssignment
 }
 
+object IActionCreateAssignment {
+  @scala.inline
+  def apply(
+    AssignedTo: IUserOrUserGroupIDExs,
+    Clone: js.Function0[IActionCreateAssignment],
+    Deadline: scala.Boolean,
+    DeadlineInDays: scala.Double,
+    Description: java.lang.String,
+    MonitoredBy: IUserOrUserGroupIDExs,
+    Title: java.lang.String
+  ): IActionCreateAssignment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AssignedTo")(AssignedTo)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Deadline")(Deadline)
+    __obj.updateDynamic("DeadlineInDays")(DeadlineInDays)
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("MonitoredBy")(MonitoredBy)
+    __obj.updateDynamic("Title")(Title)
+    __obj.asInstanceOf[IActionCreateAssignment]
+  }
+}
+

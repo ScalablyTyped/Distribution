@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EnumType extends js.Object {
+trait EnumType extends IDLRootType {
   /** A list of extended attributes. */
   var extAttrs: js.Array[ExtendedAttributes]
   /** The enum's name. */
@@ -13,5 +13,21 @@ trait EnumType extends js.Object {
   var `type`: webidl2Lib.webidl2LibStrings.enum
   /** An array of values (strings). */
   var values: js.Array[webidl2Lib.Anon_String]
+}
+
+object EnumType {
+  @scala.inline
+  def apply(
+    extAttrs: js.Array[ExtendedAttributes],
+    name: java.lang.String,
+    `type`: webidl2Lib.webidl2LibStrings.enum,
+    values: js.Array[webidl2Lib.Anon_String]
+  ): EnumType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("extAttrs")(extAttrs)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[EnumType]
+  }
 }
 

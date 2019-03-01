@@ -25,3 +25,27 @@ trait Request extends js.Object {
   def is(types: js.Array[java.lang.String]): java.lang.String | oauth2DashServerLib.oauth2DashServerLibNumbers.`false`
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    get: js.Function1[java.lang.String, js.UndefOr[_]],
+    is: js.Function1[
+      js.Array[java.lang.String], 
+      java.lang.String | oauth2DashServerLib.oauth2DashServerLibNumbers.`false`
+    ],
+    body: js.Any = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    method: java.lang.String = null,
+    query: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("is")(is)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[Request]
+  }
+}
+

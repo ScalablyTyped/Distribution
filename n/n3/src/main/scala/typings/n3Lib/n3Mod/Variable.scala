@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("n3", "Variable")
 @js.native
 class Variable protected ()
-  extends rdfDashJsLib.rdfDashJsMod.Variable {
+  extends rdfDashJsLib.rdfDashJsMod.Variable
+     with Quad_Graph
+     with Quad_Object
+     with Quad_Predicate
+     with Quad_Subject
+     with Term {
   def this(name: java.lang.String) = this()
   val id: java.lang.String = js.native
   /**

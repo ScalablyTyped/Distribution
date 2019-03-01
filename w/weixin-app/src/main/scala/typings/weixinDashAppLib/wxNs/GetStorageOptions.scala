@@ -14,3 +14,20 @@ trait GetStorageOptions
   def success_MGetStorageOptions(res: weixinDashAppLib.Anon_Data): scala.Unit
 }
 
+object GetStorageOptions {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    success: js.Function1[weixinDashAppLib.Anon_Data, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): GetStorageOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[GetStorageOptions]
+  }
+}
+

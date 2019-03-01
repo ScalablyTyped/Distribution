@@ -23,3 +23,18 @@ trait IChain extends js.Object {
   var pathLength: scala.Double
 }
 
+object IChain {
+  @scala.inline
+  def apply(
+    links: js.Array[IChainLink],
+    pathLength: scala.Double,
+    endless: js.UndefOr[scala.Boolean] = js.undefined
+  ): IChain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("links")(links)
+    __obj.updateDynamic("pathLength")(pathLength)
+    if (!js.isUndefined(endless)) __obj.updateDynamic("endless")(endless)
+    __obj.asInstanceOf[IChain]
+  }
+}
+

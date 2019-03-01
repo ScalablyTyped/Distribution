@@ -114,3 +114,57 @@ trait IVideo extends js.Object {
   var width: scala.Double
 }
 
+object IVideo {
+  @scala.inline
+  def apply(
+    bitrate: scala.Double,
+    comments_count: scala.Double,
+    comments_enabled: scala.Boolean,
+    created_time: java.lang.String,
+    description: java.lang.String,
+    duration: scala.Double,
+    from: IUserInfo,
+    height: scala.Double,
+    id: java.lang.String,
+    is_embeddable: scala.Boolean,
+    link: java.lang.String,
+    name: java.lang.String,
+    parent_id: java.lang.String,
+    picture: java.lang.String,
+    shared_with: ISharedWith,
+    size: scala.Double,
+    source: java.lang.String,
+    tags_count: scala.Double,
+    tags_enabled: scala.Boolean,
+    `type`: java.lang.String,
+    updated_time: java.lang.String,
+    upload_location: java.lang.String,
+    width: scala.Double
+  ): IVideo = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bitrate")(bitrate)
+    __obj.updateDynamic("comments_count")(comments_count)
+    __obj.updateDynamic("comments_enabled")(comments_enabled)
+    __obj.updateDynamic("created_time")(created_time)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("is_embeddable")(is_embeddable)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parent_id")(parent_id)
+    __obj.updateDynamic("picture")(picture)
+    __obj.updateDynamic("shared_with")(shared_with)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("tags_count")(tags_count)
+    __obj.updateDynamic("tags_enabled")(tags_enabled)
+    __obj.updateDynamic("updated_time")(updated_time)
+    __obj.updateDynamic("upload_location")(upload_location)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[IVideo]
+  }
+}
+

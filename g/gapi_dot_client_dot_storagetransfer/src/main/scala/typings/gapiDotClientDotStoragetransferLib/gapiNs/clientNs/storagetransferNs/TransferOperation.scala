@@ -32,3 +32,30 @@ trait TransferOperation extends js.Object {
   var transferSpec: js.UndefOr[TransferSpec] = js.undefined
 }
 
+object TransferOperation {
+  @scala.inline
+  def apply(
+    counters: TransferCounters = null,
+    endTime: java.lang.String = null,
+    errorBreakdowns: js.Array[ErrorSummary] = null,
+    name: java.lang.String = null,
+    projectId: java.lang.String = null,
+    startTime: java.lang.String = null,
+    status: java.lang.String = null,
+    transferJobName: java.lang.String = null,
+    transferSpec: TransferSpec = null
+  ): TransferOperation = {
+    val __obj = js.Dynamic.literal()
+    if (counters != null) __obj.updateDynamic("counters")(counters)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (errorBreakdowns != null) __obj.updateDynamic("errorBreakdowns")(errorBreakdowns)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (transferJobName != null) __obj.updateDynamic("transferJobName")(transferJobName)
+    if (transferSpec != null) __obj.updateDynamic("transferSpec")(transferSpec)
+    __obj.asInstanceOf[TransferOperation]
+  }
+}
+

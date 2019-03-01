@@ -20,3 +20,20 @@ trait DialogText extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DialogText {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    size: java.lang.String = null,
+    status: java.lang.String = null,
+    title: java.lang.String = null
+  ): DialogText = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[DialogText]
+  }
+}
+

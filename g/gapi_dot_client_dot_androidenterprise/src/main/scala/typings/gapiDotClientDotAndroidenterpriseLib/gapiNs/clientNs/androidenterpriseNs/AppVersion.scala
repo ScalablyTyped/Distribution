@@ -17,3 +17,18 @@ trait AppVersion extends js.Object {
   var versionString: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppVersion {
+  @scala.inline
+  def apply(
+    track: java.lang.String = null,
+    versionCode: scala.Int | scala.Double = null,
+    versionString: java.lang.String = null
+  ): AppVersion = {
+    val __obj = js.Dynamic.literal()
+    if (track != null) __obj.updateDynamic("track")(track)
+    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode.asInstanceOf[js.Any])
+    if (versionString != null) __obj.updateDynamic("versionString")(versionString)
+    __obj.asInstanceOf[AppVersion]
+  }
+}
+

@@ -55,3 +55,34 @@ trait Config extends js.Object {
   var videoSupport: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    imXSSprotection: js.UndefOr[scala.Boolean] = js.undefined,
+    micRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    progressTone: js.UndefOr[scala.Boolean] = js.undefined,
+    progressToneCountry: java.lang.String = null,
+    showDebugInfo: js.UndefOr[scala.Boolean] = js.undefined,
+    showFlashSettings: js.UndefOr[scala.Boolean] = js.undefined,
+    swfContainer: java.lang.String = null,
+    useFlashOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    useRTCOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    videoConstraints: VideoSettings | scala.Boolean = null,
+    videoSupport: js.UndefOr[scala.Boolean] = js.undefined
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(imXSSprotection)) __obj.updateDynamic("imXSSprotection")(imXSSprotection)
+    if (!js.isUndefined(micRequired)) __obj.updateDynamic("micRequired")(micRequired)
+    if (!js.isUndefined(progressTone)) __obj.updateDynamic("progressTone")(progressTone)
+    if (progressToneCountry != null) __obj.updateDynamic("progressToneCountry")(progressToneCountry)
+    if (!js.isUndefined(showDebugInfo)) __obj.updateDynamic("showDebugInfo")(showDebugInfo)
+    if (!js.isUndefined(showFlashSettings)) __obj.updateDynamic("showFlashSettings")(showFlashSettings)
+    if (swfContainer != null) __obj.updateDynamic("swfContainer")(swfContainer)
+    if (!js.isUndefined(useFlashOnly)) __obj.updateDynamic("useFlashOnly")(useFlashOnly)
+    if (!js.isUndefined(useRTCOnly)) __obj.updateDynamic("useRTCOnly")(useRTCOnly)
+    if (videoConstraints != null) __obj.updateDynamic("videoConstraints")(videoConstraints.asInstanceOf[js.Any])
+    if (!js.isUndefined(videoSupport)) __obj.updateDynamic("videoSupport")(videoSupport)
+    __obj.asInstanceOf[Config]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Anon_Html extends js.Object {
   var public: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Html {
+  @scala.inline
+  def apply(
+    html: js.Any = null,
+    json: js.Any = null,
+    logger: Anon_Error = null,
+    public: java.lang.String = null
+  ): Anon_Html = {
+    val __obj = js.Dynamic.literal()
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (json != null) __obj.updateDynamic("json")(json)
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (public != null) __obj.updateDynamic("public")(public)
+    __obj.asInstanceOf[Anon_Html]
+  }
+}
+

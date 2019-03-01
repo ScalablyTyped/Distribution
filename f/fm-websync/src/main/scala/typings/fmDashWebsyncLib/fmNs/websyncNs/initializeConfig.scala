@@ -105,3 +105,40 @@ trait initializeConfig extends js.Object {
   var urls: js.UndefOr[js.Any] = js.undefined
 }
 
+object initializeConfig {
+  @scala.inline
+  def apply(
+    autoDisconnect: js.UndefOr[scala.Boolean] = js.undefined,
+    backoffInterval: scala.Int | scala.Double = null,
+    clientFrameUrl: java.lang.String = null,
+    key: java.lang.String = null,
+    onComplete: js.Function1[/* args */ baseArgs, scala.Unit] = null,
+    onFailure: js.Function1[/* args */ initializeFailureArgs, scala.Unit] = null,
+    onSuccess: js.Function1[/* args */ baseArgs, scala.Unit] = null,
+    quiet: js.UndefOr[scala.Boolean] = js.undefined,
+    requestUrl: java.lang.String = null,
+    retries: scala.Int | scala.Double = null,
+    stream: js.Any = null,
+    timeout: scala.Int | scala.Double = null,
+    token: java.lang.String = null,
+    urls: js.Any = null
+  ): initializeConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoDisconnect)) __obj.updateDynamic("autoDisconnect")(autoDisconnect)
+    if (backoffInterval != null) __obj.updateDynamic("backoffInterval")(backoffInterval.asInstanceOf[js.Any])
+    if (clientFrameUrl != null) __obj.updateDynamic("clientFrameUrl")(clientFrameUrl)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
+    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[initializeConfig]
+  }
+}
+

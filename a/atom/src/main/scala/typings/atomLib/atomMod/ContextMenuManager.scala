@@ -10,3 +10,17 @@ trait ContextMenuManager extends js.Object {
   def add(itemsBySelector: org.scalablytyped.runtime.StringDictionary[js.Array[ContextMenuOptions]]): Disposable
 }
 
+object ContextMenuManager {
+  @scala.inline
+  def apply(
+    add: js.Function1[
+      org.scalablytyped.runtime.StringDictionary[js.Array[ContextMenuOptions]], 
+      Disposable
+    ]
+  ): ContextMenuManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.asInstanceOf[ContextMenuManager]
+  }
+}
+

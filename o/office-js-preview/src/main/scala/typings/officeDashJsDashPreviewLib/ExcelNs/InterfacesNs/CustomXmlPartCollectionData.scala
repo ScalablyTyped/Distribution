@@ -10,3 +10,12 @@ trait CustomXmlPartCollectionData extends js.Object {
   var items: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
 }
 
+object CustomXmlPartCollectionData {
+  @scala.inline
+  def apply(items: js.Array[CustomXmlPartData] = null): CustomXmlPartCollectionData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[CustomXmlPartCollectionData]
+  }
+}
+

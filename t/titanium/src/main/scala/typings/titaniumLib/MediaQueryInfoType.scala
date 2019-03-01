@@ -19,3 +19,16 @@ trait MediaQueryInfoType extends js.Object {
   var value: js.UndefOr[scala.Double | java.lang.String | scala.Boolean] = js.undefined
 }
 
+object MediaQueryInfoType {
+  @scala.inline
+  def apply(
+    exact: js.UndefOr[scala.Boolean] = js.undefined,
+    value: scala.Double | java.lang.String | scala.Boolean = null
+  ): MediaQueryInfoType = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaQueryInfoType]
+  }
+}
+

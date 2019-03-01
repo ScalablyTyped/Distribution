@@ -28,3 +28,22 @@ trait GitItemDescriptor extends js.Object {
   var versionType: GitVersionType
 }
 
+object GitItemDescriptor {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    recursionLevel: VersionControlRecursionType,
+    version: java.lang.String,
+    versionOptions: GitVersionOptions,
+    versionType: GitVersionType
+  ): GitItemDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("recursionLevel")(recursionLevel)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("versionOptions")(versionOptions)
+    __obj.updateDynamic("versionType")(versionType)
+    __obj.asInstanceOf[GitItemDescriptor]
+  }
+}
+

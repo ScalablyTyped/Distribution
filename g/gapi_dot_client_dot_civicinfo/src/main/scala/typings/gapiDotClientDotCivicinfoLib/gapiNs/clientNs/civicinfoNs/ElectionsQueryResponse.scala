@@ -12,3 +12,13 @@ trait ElectionsQueryResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ElectionsQueryResponse {
+  @scala.inline
+  def apply(elections: js.Array[Election] = null, kind: java.lang.String = null): ElectionsQueryResponse = {
+    val __obj = js.Dynamic.literal()
+    if (elections != null) __obj.updateDynamic("elections")(elections)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[ElectionsQueryResponse]
+  }
+}
+

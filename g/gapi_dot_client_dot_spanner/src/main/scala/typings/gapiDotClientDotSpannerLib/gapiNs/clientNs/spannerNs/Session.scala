@@ -27,3 +27,20 @@ trait Session extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Session {
+  @scala.inline
+  def apply(
+    approximateLastUseTime: java.lang.String = null,
+    createTime: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    name: java.lang.String = null
+  ): Session = {
+    val __obj = js.Dynamic.literal()
+    if (approximateLastUseTime != null) __obj.updateDynamic("approximateLastUseTime")(approximateLastUseTime)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Session]
+  }
+}
+

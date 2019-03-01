@@ -12,3 +12,14 @@ trait FoldingRangeParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object FoldingRangeParams {
+  @scala.inline
+  def apply(
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): FoldingRangeParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("textDocument")(textDocument)
+    __obj.asInstanceOf[FoldingRangeParams]
+  }
+}
+

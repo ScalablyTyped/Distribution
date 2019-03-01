@@ -20,3 +20,22 @@ trait MockjsRandomColor extends js.Object {
   def rgba(): S
 }
 
+object MockjsRandomColor {
+  @scala.inline
+  def apply(
+    color: js.Function0[S],
+    hex: js.Function0[S],
+    hsl: js.Function0[S],
+    rgb: js.Function0[S],
+    rgba: js.Function0[S]
+  ): MockjsRandomColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("hex")(hex)
+    __obj.updateDynamic("hsl")(hsl)
+    __obj.updateDynamic("rgb")(rgb)
+    __obj.updateDynamic("rgba")(rgba)
+    __obj.asInstanceOf[MockjsRandomColor]
+  }
+}
+

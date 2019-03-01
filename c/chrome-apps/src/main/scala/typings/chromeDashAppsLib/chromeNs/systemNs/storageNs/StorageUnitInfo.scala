@@ -33,3 +33,26 @@ trait StorageUnitInfo extends js.Object {
   ]
 }
 
+object StorageUnitInfo {
+  @scala.inline
+  def apply(
+    capacity: chromeDashAppsLib.chromeNs.integer,
+    id: java.lang.String,
+    name: java.lang.String,
+    `type`: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_FIXED, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FIXED[keyof chrome-apps.Anon_FIXED] */ js.Any
+      ]
+    ]
+  ): StorageUnitInfo = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("capacity")(capacity)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[StorageUnitInfo]
+  }
+}
+

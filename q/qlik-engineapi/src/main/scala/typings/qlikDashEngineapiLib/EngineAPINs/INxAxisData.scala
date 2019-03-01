@@ -15,3 +15,12 @@ trait INxAxisData extends js.Object {
   var qAxis: js.Array[INxAxisTicks]
 }
 
+object INxAxisData {
+  @scala.inline
+  def apply(qAxis: js.Array[INxAxisTicks]): INxAxisData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qAxis")(qAxis)
+    __obj.asInstanceOf[INxAxisData]
+  }
+}
+

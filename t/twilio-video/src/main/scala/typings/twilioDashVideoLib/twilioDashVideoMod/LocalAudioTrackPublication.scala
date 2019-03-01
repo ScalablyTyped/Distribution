@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio-video", "LocalAudioTrackPublication")
 @js.native
-class LocalAudioTrackPublication () extends LocalTrackPublication {
+class LocalAudioTrackPublication ()
+  extends LocalTrackPublication
+     with AudioTrackPublication {
   @JSName("kind")
   var kind_LocalAudioTrackPublication: twilioDashVideoLib.twilioDashVideoLibStrings.audio = js.native
   @JSName("track")

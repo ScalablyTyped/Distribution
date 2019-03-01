@@ -24,3 +24,20 @@ trait WorkItemNextStateOnTransition extends js.Object {
   var stateOnTransition: java.lang.String
 }
 
+object WorkItemNextStateOnTransition {
+  @scala.inline
+  def apply(
+    errorCode: java.lang.String,
+    id: scala.Double,
+    message: java.lang.String,
+    stateOnTransition: java.lang.String
+  ): WorkItemNextStateOnTransition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorCode")(errorCode)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("stateOnTransition")(stateOnTransition)
+    __obj.asInstanceOf[WorkItemNextStateOnTransition]
+  }
+}
+

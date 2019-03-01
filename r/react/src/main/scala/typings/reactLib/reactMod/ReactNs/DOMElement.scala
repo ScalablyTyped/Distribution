@@ -10,3 +10,19 @@ trait DOMElement[P /* <: HTMLAttributes[T] | SVGAttributes[T] */, T /* <: reactL
   var ref: LegacyRef[T]
 }
 
+object DOMElement {
+  @scala.inline
+  def apply[P /* <: HTMLAttributes[T] | SVGAttributes[T] */, T /* <: reactLib.Element */](
+    props: P,
+    ref: LegacyRef[T],
+    `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify T */ js.Any,
+    key: Key = null
+  ): DOMElement[P, T] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DOMElement[P, T]]
+  }
+}
+

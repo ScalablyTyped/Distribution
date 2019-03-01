@@ -20,3 +20,24 @@ trait RewriteResponse extends js.Object {
   var totalBytesRewritten: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RewriteResponse {
+  @scala.inline
+  def apply(
+    done: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    objectSize: java.lang.String = null,
+    resource: Object = null,
+    rewriteToken: java.lang.String = null,
+    totalBytesRewritten: java.lang.String = null
+  ): RewriteResponse = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (objectSize != null) __obj.updateDynamic("objectSize")(objectSize)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (rewriteToken != null) __obj.updateDynamic("rewriteToken")(rewriteToken)
+    if (totalBytesRewritten != null) __obj.updateDynamic("totalBytesRewritten")(totalBytesRewritten)
+    __obj.asInstanceOf[RewriteResponse]
+  }
+}
+

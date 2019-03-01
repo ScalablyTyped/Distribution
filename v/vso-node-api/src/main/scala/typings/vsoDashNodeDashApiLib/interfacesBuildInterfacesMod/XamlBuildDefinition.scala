@@ -50,3 +50,55 @@ trait XamlBuildDefinition extends DefinitionReference {
   var triggerType: DefinitionTriggerType
 }
 
+object XamlBuildDefinition {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    batchSize: scala.Double,
+    buildArgs: java.lang.String,
+    continuousIntegrationQuietPeriod: scala.Double,
+    controller: BuildController,
+    createdDate: stdLib.Date,
+    createdOn: stdLib.Date,
+    defaultDropLocation: java.lang.String,
+    description: java.lang.String,
+    id: scala.Double,
+    lastBuild: XamlBuildReference,
+    name: java.lang.String,
+    path: java.lang.String,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference,
+    queueStatus: DefinitionQueueStatus,
+    repository: BuildRepository,
+    revision: scala.Double,
+    supportedReasons: BuildReason,
+    triggerType: DefinitionTriggerType,
+    `type`: DefinitionType,
+    uri: java.lang.String,
+    url: java.lang.String
+  ): XamlBuildDefinition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("batchSize")(batchSize)
+    __obj.updateDynamic("buildArgs")(buildArgs)
+    __obj.updateDynamic("continuousIntegrationQuietPeriod")(continuousIntegrationQuietPeriod)
+    __obj.updateDynamic("controller")(controller)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("createdOn")(createdOn)
+    __obj.updateDynamic("defaultDropLocation")(defaultDropLocation)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("lastBuild")(lastBuild)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("queueStatus")(queueStatus)
+    __obj.updateDynamic("repository")(repository)
+    __obj.updateDynamic("revision")(revision)
+    __obj.updateDynamic("supportedReasons")(supportedReasons)
+    __obj.updateDynamic("triggerType")(triggerType)
+    __obj.updateDynamic("uri")(uri)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[XamlBuildDefinition]
+  }
+}
+

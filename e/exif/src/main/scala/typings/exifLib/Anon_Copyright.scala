@@ -21,3 +21,38 @@ trait Anon_Copyright extends js.Object {
   var YResolution: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Copyright {
+  @scala.inline
+  def apply(
+    Copyright: java.lang.String = null,
+    ExifOffset: scala.Int | scala.Double = null,
+    ImageHeight: scala.Int | scala.Double = null,
+    ImageWidth: scala.Int | scala.Double = null,
+    Make: java.lang.String = null,
+    Model: java.lang.String = null,
+    ModifyDate: java.lang.String = null,
+    Orientation: scala.Int | scala.Double = null,
+    ResolutionUnit: scala.Int | scala.Double = null,
+    Software: java.lang.String = null,
+    XResolution: scala.Int | scala.Double = null,
+    YCbCrPositioning: scala.Int | scala.Double = null,
+    YResolution: scala.Int | scala.Double = null
+  ): Anon_Copyright = {
+    val __obj = js.Dynamic.literal()
+    if (Copyright != null) __obj.updateDynamic("Copyright")(Copyright)
+    if (ExifOffset != null) __obj.updateDynamic("ExifOffset")(ExifOffset.asInstanceOf[js.Any])
+    if (ImageHeight != null) __obj.updateDynamic("ImageHeight")(ImageHeight.asInstanceOf[js.Any])
+    if (ImageWidth != null) __obj.updateDynamic("ImageWidth")(ImageWidth.asInstanceOf[js.Any])
+    if (Make != null) __obj.updateDynamic("Make")(Make)
+    if (Model != null) __obj.updateDynamic("Model")(Model)
+    if (ModifyDate != null) __obj.updateDynamic("ModifyDate")(ModifyDate)
+    if (Orientation != null) __obj.updateDynamic("Orientation")(Orientation.asInstanceOf[js.Any])
+    if (ResolutionUnit != null) __obj.updateDynamic("ResolutionUnit")(ResolutionUnit.asInstanceOf[js.Any])
+    if (Software != null) __obj.updateDynamic("Software")(Software)
+    if (XResolution != null) __obj.updateDynamic("XResolution")(XResolution.asInstanceOf[js.Any])
+    if (YCbCrPositioning != null) __obj.updateDynamic("YCbCrPositioning")(YCbCrPositioning.asInstanceOf[js.Any])
+    if (YResolution != null) __obj.updateDynamic("YResolution")(YResolution.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Copyright]
+  }
+}
+

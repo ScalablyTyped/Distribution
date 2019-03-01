@@ -14,3 +14,14 @@ trait UploadProgressCallbackResult extends js.Object {
   var totalBytesSent: scala.Double
 }
 
+object UploadProgressCallbackResult {
+  @scala.inline
+  def apply(jobId: scala.Double, totalBytesExpectedToSend: scala.Double, totalBytesSent: scala.Double): UploadProgressCallbackResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jobId")(jobId)
+    __obj.updateDynamic("totalBytesExpectedToSend")(totalBytesExpectedToSend)
+    __obj.updateDynamic("totalBytesSent")(totalBytesSent)
+    __obj.asInstanceOf[UploadProgressCallbackResult]
+  }
+}
+

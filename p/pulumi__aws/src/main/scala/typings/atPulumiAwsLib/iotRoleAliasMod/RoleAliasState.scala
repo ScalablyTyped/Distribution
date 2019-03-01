@@ -20,3 +20,18 @@ trait RoleAliasState extends js.Object {
   val roleArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RoleAliasState {
+  @scala.inline
+  def apply(
+    alias: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    credentialDuration: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RoleAliasState = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (credentialDuration != null) __obj.updateDynamic("credentialDuration")(credentialDuration.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoleAliasState]
+  }
+}
+

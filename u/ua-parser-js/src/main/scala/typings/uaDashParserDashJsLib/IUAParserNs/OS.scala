@@ -10,3 +10,13 @@ trait OS extends js.Object {
   var VERSION: java.lang.String
 }
 
+object OS {
+  @scala.inline
+  def apply(NAME: java.lang.String, VERSION: java.lang.String): OS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NAME")(NAME)
+    __obj.updateDynamic("VERSION")(VERSION)
+    __obj.asInstanceOf[OS]
+  }
+}
+

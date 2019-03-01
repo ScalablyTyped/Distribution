@@ -37,3 +37,44 @@ trait ISplitter
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ISplitter {
+  @scala.inline
+  def apply(
+    IComponent: extjsLib.ExtNs.IComponent = null,
+    baseCls: java.lang.String = null,
+    beforeDestroy: js.Function0[scala.Unit] = null,
+    collapseOnDblClick: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseTarget: js.Any = null,
+    collapsedCls: java.lang.String = null,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultSplitMax: scala.Int | scala.Double = null,
+    defaultSplitMin: scala.Int | scala.Double = null,
+    getTrackerConfig: js.Function0[scala.Unit] = null,
+    onRender: js.Function0[scala.Unit] = null,
+    orientation: java.lang.String = null,
+    performCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    renderTpl: js.Any = null,
+    setSize: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    size: scala.Int | scala.Double = null
+  ): ISplitter = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy)
+    if (!js.isUndefined(collapseOnDblClick)) __obj.updateDynamic("collapseOnDblClick")(collapseOnDblClick)
+    if (collapseTarget != null) __obj.updateDynamic("collapseTarget")(collapseTarget)
+    if (collapsedCls != null) __obj.updateDynamic("collapsedCls")(collapsedCls)
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (defaultSplitMax != null) __obj.updateDynamic("defaultSplitMax")(defaultSplitMax.asInstanceOf[js.Any])
+    if (defaultSplitMin != null) __obj.updateDynamic("defaultSplitMin")(defaultSplitMin.asInstanceOf[js.Any])
+    if (getTrackerConfig != null) __obj.updateDynamic("getTrackerConfig")(getTrackerConfig)
+    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (!js.isUndefined(performCollapse)) __obj.updateDynamic("performCollapse")(performCollapse)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (setSize != null) __obj.updateDynamic("setSize")(setSize)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISplitter]
+  }
+}
+

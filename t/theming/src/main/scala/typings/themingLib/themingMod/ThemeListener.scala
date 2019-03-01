@@ -12,3 +12,20 @@ trait ThemeListener[C /* <: java.lang.String */] extends js.Object {
   def unsubscribe(context: ContextWithTheme[C], id: SubscriptionId): scala.Unit
 }
 
+object ThemeListener {
+  @scala.inline
+  def apply[C /* <: java.lang.String */](
+    contextTypes: reactLib.reactMod.ReactNs.ValidationMap[C],
+    initial: js.Function1[ContextWithTheme[C], Theme],
+    subscribe: js.Function2[ContextWithTheme[C], js.Function1[/* theme */ Theme, scala.Unit], SubscriptionId],
+    unsubscribe: js.Function2[ContextWithTheme[C], SubscriptionId, scala.Unit]
+  ): ThemeListener[C] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contextTypes")(contextTypes)
+    __obj.updateDynamic("initial")(initial)
+    __obj.updateDynamic("subscribe")(subscribe)
+    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    __obj.asInstanceOf[ThemeListener[C]]
+  }
+}
+

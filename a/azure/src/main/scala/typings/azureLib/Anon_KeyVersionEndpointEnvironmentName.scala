@@ -10,3 +10,16 @@ trait Anon_KeyVersionEndpointEnvironmentName
   var VersionEndpointEnvironmentName: java.lang.String
 }
 
+object Anon_KeyVersionEndpointEnvironmentName {
+  @scala.inline
+  def apply(
+    VersionEndpointEnvironmentName: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Anon_KeyVersionEndpointEnvironmentName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("VersionEndpointEnvironmentName")(VersionEndpointEnvironmentName)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_KeyVersionEndpointEnvironmentName]
+  }
+}
+

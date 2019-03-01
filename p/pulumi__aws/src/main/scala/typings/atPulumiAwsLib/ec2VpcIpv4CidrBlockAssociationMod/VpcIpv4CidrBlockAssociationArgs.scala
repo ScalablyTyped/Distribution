@@ -16,3 +16,16 @@ trait VpcIpv4CidrBlockAssociationArgs extends js.Object {
   val vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object VpcIpv4CidrBlockAssociationArgs {
+  @scala.inline
+  def apply(
+    cidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): VpcIpv4CidrBlockAssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
+    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcIpv4CidrBlockAssociationArgs]
+  }
+}
+

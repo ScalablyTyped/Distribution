@@ -43,3 +43,23 @@ trait IgGridGroupByColumnSettingsSummaries
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridGroupByColumnSettingsSummaries {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridGroupByColumnSettingsSummaries
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    customSummary: java.lang.String | js.Function = null,
+    summaryFunction: java.lang.String = null,
+    text: java.lang.String = null
+  ): IgGridGroupByColumnSettingsSummaries = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (customSummary != null) __obj.updateDynamic("customSummary")(customSummary.asInstanceOf[js.Any])
+    if (summaryFunction != null) __obj.updateDynamic("summaryFunction")(summaryFunction)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[IgGridGroupByColumnSettingsSummaries]
+  }
+}
+

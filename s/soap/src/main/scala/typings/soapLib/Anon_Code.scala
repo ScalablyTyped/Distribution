@@ -11,3 +11,14 @@ trait Anon_Code extends js.Object {
   var statusCode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Code {
+  @scala.inline
+  def apply(Code: Anon_Subcode, Reason: Anon_Text, statusCode: scala.Int | scala.Double = null): Anon_Code = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Code")(Code)
+    __obj.updateDynamic("Reason")(Reason)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Code]
+  }
+}
+

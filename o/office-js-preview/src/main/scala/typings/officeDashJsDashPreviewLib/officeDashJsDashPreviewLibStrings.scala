@@ -7,6 +7,45 @@ import scala.scalajs.js.annotation._
 
 object officeDashJsDashPreviewLibStrings {
   @js.native
+  sealed trait `3DArea` extends js.Object
+  
+  @js.native
+  sealed trait `3DAreaStacked` extends js.Object
+  
+  @js.native
+  sealed trait `3DAreaStacked100` extends js.Object
+  
+  @js.native
+  sealed trait `3DBarClustered` extends js.Object
+  
+  @js.native
+  sealed trait `3DBarStacked` extends js.Object
+  
+  @js.native
+  sealed trait `3DBarStacked100` extends js.Object
+  
+  @js.native
+  sealed trait `3DColumn` extends js.Object
+  
+  @js.native
+  sealed trait `3DColumnClustered` extends js.Object
+  
+  @js.native
+  sealed trait `3DColumnStacked` extends js.Object
+  
+  @js.native
+  sealed trait `3DColumnStacked100` extends js.Object
+  
+  @js.native
+  sealed trait `3DLine` extends js.Object
+  
+  @js.native
+  sealed trait `3DPie` extends js.Object
+  
+  @js.native
+  sealed trait `3DPieExploded` extends js.Object
+  
+  @js.native
   sealed trait A3 extends js.Object
   
   @js.native
@@ -25,10 +64,67 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Absolute extends js.Object
   
   @js.native
+  sealed trait AccentBorderCallout1 extends js.Object
+  
+  @js.native
+  sealed trait AccentBorderCallout2 extends js.Object
+  
+  @js.native
+  sealed trait AccentBorderCallout3 extends js.Object
+  
+  @js.native
+  sealed trait AccentCallout1 extends js.Object
+  
+  @js.native
+  sealed trait AccentCallout2 extends js.Object
+  
+  @js.native
+  sealed trait AccentCallout3 extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonBackPrevious extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonBeginning extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonBlank extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonDocument extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonEnd extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonForwardNext extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonHelp extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonHome extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonInformation extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonMovie extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonReturn extends js.Object
+  
+  @js.native
+  sealed trait ActionButtonSound extends js.Object
+  
+  @js.native
   sealed trait Address extends js.Object
   
   @js.native
   sealed trait After extends js.Object
+  
+  @js.native
+  sealed trait Aiueo extends js.Object
   
   @js.native
   sealed trait Albers extends js.Object
@@ -91,6 +187,27 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Arabic extends js.Object
   
   @js.native
+  sealed trait Arabic1 extends js.Object
+  
+  @js.native
+  sealed trait Arabic2 extends js.Object
+  
+  @js.native
+  sealed trait ArabicLZ extends js.Object
+  
+  @js.native
+  sealed trait Arc extends js.Object
+  
+  @js.native
+  sealed trait Area extends js.Object
+  
+  @js.native
+  sealed trait AreaStacked extends js.Object
+  
+  @js.native
+  sealed trait AreaStacked100 extends js.Object
+  
+  @js.native
   sealed trait Array extends js.Object
   
   @js.native
@@ -148,6 +265,18 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Banner extends js.Object
   
   @js.native
+  sealed trait BarClustered extends js.Object
+  
+  @js.native
+  sealed trait BarOfPie extends js.Object
+  
+  @js.native
+  sealed trait BarStacked extends js.Object
+  
+  @js.native
+  sealed trait BarStacked100 extends js.Object
+  
+  @js.native
   sealed trait Before extends js.Object
   
   @js.native
@@ -160,10 +289,22 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait BelowAverage extends js.Object
   
   @js.native
+  sealed trait BentArrow extends js.Object
+  
+  @js.native
+  sealed trait BentUpArrow extends js.Object
+  
+  @js.native
   sealed trait BestFit extends js.Object
   
   @js.native
   sealed trait Between extends js.Object
+  
+  @js.native
+  sealed trait Bevel extends js.Object
+  
+  @js.native
+  sealed trait Bibliography extends js.Object
   
   @js.native
   sealed trait Billions extends js.Object
@@ -181,10 +322,25 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Blanks extends js.Object
   
   @js.native
+  sealed trait BlockArc extends js.Object
+  
+  @js.native
   sealed trait Bmp extends js.Object
   
   @js.native
+  sealed trait BookTitle extends js.Object
+  
+  @js.native
   sealed trait Boolean extends js.Object
+  
+  @js.native
+  sealed trait BorderCallout1 extends js.Object
+  
+  @js.native
+  sealed trait BorderCallout2 extends js.Object
+  
+  @js.native
+  sealed trait BorderCallout3 extends js.Object
   
   @js.native
   sealed trait Both extends js.Object
@@ -202,10 +358,25 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait BoundingBox extends js.Object
   
   @js.native
+  sealed trait Boxwhisker extends js.Object
+  
+  @js.native
+  sealed trait BracePair extends js.Object
+  
+  @js.native
+  sealed trait BracketPair extends js.Object
+  
+  @js.native
   sealed trait BringForward extends js.Object
   
   @js.native
   sealed trait BringToFront extends js.Object
+  
+  @js.native
+  sealed trait Bubble extends js.Object
+  
+  @js.native
+  sealed trait Bubble3DEffect extends js.Object
   
   @js.native
   sealed trait BuildingBlockGallery extends js.Object
@@ -218,6 +389,24 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Callout extends js.Object
+  
+  @js.native
+  sealed trait Callout1 extends js.Object
+  
+  @js.native
+  sealed trait Callout2 extends js.Object
+  
+  @js.native
+  sealed trait Callout3 extends js.Object
+  
+  @js.native
+  sealed trait Can extends js.Object
+  
+  @js.native
+  sealed trait Caption extends js.Object
+  
+  @js.native
+  sealed trait Cardtext extends js.Object
   
   @js.native
   sealed trait Category extends js.Object
@@ -262,6 +451,15 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait ChartDeleted extends js.Object
   
   @js.native
+  sealed trait ChartPlus extends js.Object
+  
+  @js.native
+  sealed trait ChartStar extends js.Object
+  
+  @js.native
+  sealed trait ChartX extends js.Object
+  
+  @js.native
   sealed trait CheckBox extends js.Object
   
   @js.native
@@ -271,13 +469,49 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Checkmark extends js.Object
   
   @js.native
+  sealed trait Chevron extends js.Object
+  
+  @js.native
+  sealed trait ChiManSty extends js.Object
+  
+  @js.native
+  sealed trait ChnDbNum1 extends js.Object
+  
+  @js.native
+  sealed trait ChnDbNum2 extends js.Object
+  
+  @js.native
+  sealed trait ChnDbNum3 extends js.Object
+  
+  @js.native
+  sealed trait ChnDbNum4 extends js.Object
+  
+  @js.native
+  sealed trait Chord extends js.Object
+  
+  @js.native
+  sealed trait Chosung extends js.Object
+  
+  @js.native
   sealed trait Circle extends js.Object
+  
+  @js.native
+  sealed trait Circlenum extends js.Object
+  
+  @js.native
+  sealed trait CircularArrow extends js.Object
   
   @js.native
   sealed trait City extends js.Object
   
   @js.native
   sealed trait Clip extends js.Object
+  
+  @js.native
+  sealed trait Cloud extends js.Object
+  
+  @js.native
+  sealed trait CloudCallout extends js.Object
   
   @js.native
   sealed trait ColorScale extends js.Object
@@ -298,10 +532,19 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Column extends js.Object
   
   @js.native
+  sealed trait ColumnClustered extends js.Object
+  
+  @js.native
   sealed trait ColumnDeleted extends js.Object
   
   @js.native
   sealed trait ColumnInserted extends js.Object
+  
+  @js.native
+  sealed trait ColumnStacked extends js.Object
+  
+  @js.native
+  sealed trait ColumnStacked100 extends js.Object
   
   @js.native
   sealed trait Columns extends js.Object
@@ -320,6 +563,27 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait ConditionalFormats extends js.Object
+  
+  @js.native
+  sealed trait ConeBarClustered extends js.Object
+  
+  @js.native
+  sealed trait ConeBarStacked extends js.Object
+  
+  @js.native
+  sealed trait ConeBarStacked100 extends js.Object
+  
+  @js.native
+  sealed trait ConeCol extends js.Object
+  
+  @js.native
+  sealed trait ConeColClustered extends js.Object
+  
+  @js.native
+  sealed trait ConeColStacked extends js.Object
+  
+  @js.native
+  sealed trait ConeColStacked100 extends js.Object
   
   @js.native
   sealed trait Constants extends js.Object
@@ -364,6 +628,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Corner extends js.Object
   
   @js.native
+  sealed trait CornerTabs extends js.Object
+  
+  @js.native
   sealed trait Count extends js.Object
   
   @js.native
@@ -388,13 +655,58 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Csheet extends js.Object
   
   @js.native
+  sealed trait Cube extends js.Object
+  
+  @js.native
   sealed trait CurrentSize extends js.Object
   
   @js.native
   sealed trait Curve extends js.Object
   
   @js.native
+  sealed trait CurvedDownArrow extends js.Object
+  
+  @js.native
+  sealed trait CurvedLeftArrow extends js.Object
+  
+  @js.native
+  sealed trait CurvedRightArrow extends js.Object
+  
+  @js.native
+  sealed trait CurvedUpArrow extends js.Object
+  
+  @js.native
   sealed trait Custom extends js.Object
+  
+  @js.native
+  sealed trait CylinderBarClustered extends js.Object
+  
+  @js.native
+  sealed trait CylinderBarStacked extends js.Object
+  
+  @js.native
+  sealed trait CylinderBarStacked100 extends js.Object
+  
+  @js.native
+  sealed trait CylinderCol extends js.Object
+  
+  @js.native
+  sealed trait CylinderColClustered extends js.Object
+  
+  @js.native
+  sealed trait CylinderColStacked extends js.Object
+  
+  @js.native
+  sealed trait CylinderColStacked100 extends js.Object
+  
+  @js.native
+  sealed trait DAiueo extends js.Object
+  
+  @js.native
+  sealed trait DArabic extends js.Object
+  
+  @js.native
+  sealed trait DIroha extends js.Object
   
   @js.native
   sealed trait Dash extends js.Object
@@ -466,6 +778,24 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Days extends js.Object
   
   @js.native
+  sealed trait DbChar extends js.Object
+  
+  @js.native
+  sealed trait DbNum1 extends js.Object
+  
+  @js.native
+  sealed trait DbNum2 extends js.Object
+  
+  @js.native
+  sealed trait DbNum3 extends js.Object
+  
+  @js.native
+  sealed trait DbNum4 extends js.Object
+  
+  @js.native
+  sealed trait Decagon extends js.Object
+  
+  @js.native
   sealed trait Decimal extends js.Object
   
   @js.native
@@ -476,6 +806,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait DiagonalDown extends js.Object
+  
+  @js.native
+  sealed trait DiagonalStripe extends js.Object
   
   @js.native
   sealed trait DiagonalUp extends js.Object
@@ -496,7 +829,13 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Distributed extends js.Object
   
   @js.native
+  sealed trait Dodecagon extends js.Object
+  
+  @js.native
   sealed trait Done extends js.Object
+  
+  @js.native
+  sealed trait Donut extends js.Object
   
   @js.native
   sealed trait Dot extends js.Object
@@ -544,7 +883,19 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait DoubleWave extends js.Object
   
   @js.native
+  sealed trait Doughnut extends js.Object
+  
+  @js.native
+  sealed trait DoughnutExploded extends js.Object
+  
+  @js.native
   sealed trait Down extends js.Object
+  
+  @js.native
+  sealed trait DownArrow extends js.Object
+  
+  @js.native
+  sealed trait DownArrowCallout extends js.Object
   
   @js.native
   sealed trait DownThenOver extends js.Object
@@ -580,10 +931,22 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Elbow extends js.Object
   
   @js.native
+  sealed trait Ellipse extends js.Object
+  
+  @js.native
+  sealed trait EllipseRibbon extends js.Object
+  
+  @js.native
+  sealed trait EllipseRibbon2 extends js.Object
+  
+  @js.native
   sealed trait Ellipsis extends js.Object
   
   @js.native
   sealed trait Emf extends js.Object
+  
+  @js.native
+  sealed trait Emphasis extends js.Object
   
   @js.native
   sealed trait Empty extends js.Object
@@ -593,6 +956,12 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait EndSheet extends js.Object
+  
+  @js.native
+  sealed trait EndnoteReference extends js.Object
+  
+  @js.native
+  sealed trait EndnoteText extends js.Object
   
   @js.native
   sealed trait EndsWith extends js.Object
@@ -784,6 +1153,96 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Float extends js.Object
   
   @js.native
+  sealed trait FlowChartAlternateProcess extends js.Object
+  
+  @js.native
+  sealed trait FlowChartCollate extends js.Object
+  
+  @js.native
+  sealed trait FlowChartConnector extends js.Object
+  
+  @js.native
+  sealed trait FlowChartDecision extends js.Object
+  
+  @js.native
+  sealed trait FlowChartDelay extends js.Object
+  
+  @js.native
+  sealed trait FlowChartDisplay extends js.Object
+  
+  @js.native
+  sealed trait FlowChartDocument extends js.Object
+  
+  @js.native
+  sealed trait FlowChartExtract extends js.Object
+  
+  @js.native
+  sealed trait FlowChartInputOutput extends js.Object
+  
+  @js.native
+  sealed trait FlowChartInternalStorage extends js.Object
+  
+  @js.native
+  sealed trait FlowChartMagneticDisk extends js.Object
+  
+  @js.native
+  sealed trait FlowChartMagneticDrum extends js.Object
+  
+  @js.native
+  sealed trait FlowChartMagneticTape extends js.Object
+  
+  @js.native
+  sealed trait FlowChartManualInput extends js.Object
+  
+  @js.native
+  sealed trait FlowChartManualOperation extends js.Object
+  
+  @js.native
+  sealed trait FlowChartMerge extends js.Object
+  
+  @js.native
+  sealed trait FlowChartMultidocument extends js.Object
+  
+  @js.native
+  sealed trait FlowChartOfflineStorage extends js.Object
+  
+  @js.native
+  sealed trait FlowChartOffpageConnector extends js.Object
+  
+  @js.native
+  sealed trait FlowChartOnlineStorage extends js.Object
+  
+  @js.native
+  sealed trait FlowChartOr extends js.Object
+  
+  @js.native
+  sealed trait FlowChartPredefinedProcess extends js.Object
+  
+  @js.native
+  sealed trait FlowChartPreparation extends js.Object
+  
+  @js.native
+  sealed trait FlowChartProcess extends js.Object
+  
+  @js.native
+  sealed trait FlowChartPunchedCard extends js.Object
+  
+  @js.native
+  sealed trait FlowChartPunchedTape extends js.Object
+  
+  @js.native
+  sealed trait FlowChartSort extends js.Object
+  
+  @js.native
+  sealed trait FlowChartSummingJunction extends js.Object
+  
+  @js.native
+  sealed trait FlowChartTerminator extends js.Object
+  
+  @js.native
+  sealed trait FoldedCorner extends js.Object
+  
+  @js.native
   sealed trait Folio extends js.Object
   
   @js.native
@@ -791,6 +1250,12 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Footer extends js.Object
+  
+  @js.native
+  sealed trait FootnoteReference extends js.Object
+  
+  @js.native
+  sealed trait FootnoteText extends js.Object
   
   @js.native
   sealed trait Formats extends js.Object
@@ -820,13 +1285,40 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait FourTrafficLights extends js.Object
   
   @js.native
+  sealed trait Frame extends js.Object
+  
+  @js.native
   sealed trait Full extends js.Object
   
   @js.native
   sealed trait FullRebuild extends js.Object
   
   @js.native
+  sealed trait Funnel extends js.Object
+  
+  @js.native
+  sealed trait GB1 extends js.Object
+  
+  @js.native
+  sealed trait GB2 extends js.Object
+  
+  @js.native
+  sealed trait GB3 extends js.Object
+  
+  @js.native
+  sealed trait GB4 extends js.Object
+  
+  @js.native
   sealed trait GIF extends js.Object
+  
+  @js.native
+  sealed trait Ganada extends js.Object
+  
+  @js.native
+  sealed trait Gear6 extends js.Object
+  
+  @js.native
+  sealed trait Gear9 extends js.Object
   
   @js.native
   sealed trait General extends js.Object
@@ -877,6 +1369,153 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Grid extends js.Object
   
   @js.native
+  sealed trait GridTable1Light extends js.Object
+  
+  @js.native
+  sealed trait GridTable1Light_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait GridTable1Light_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait GridTable1Light_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait GridTable1Light_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait GridTable1Light_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait GridTable1Light_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait GridTable2 extends js.Object
+  
+  @js.native
+  sealed trait GridTable2_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait GridTable2_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait GridTable2_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait GridTable2_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait GridTable2_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait GridTable2_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait GridTable3 extends js.Object
+  
+  @js.native
+  sealed trait GridTable3_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait GridTable3_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait GridTable3_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait GridTable3_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait GridTable3_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait GridTable3_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait GridTable4 extends js.Object
+  
+  @js.native
+  sealed trait GridTable4_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait GridTable4_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait GridTable4_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait GridTable4_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait GridTable4_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait GridTable4_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait GridTable5Dark extends js.Object
+  
+  @js.native
+  sealed trait GridTable5Dark_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait GridTable5Dark_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait GridTable5Dark_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait GridTable5Dark_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait GridTable5Dark_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait GridTable5Dark_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait GridTable6Colorful extends js.Object
+  
+  @js.native
+  sealed trait GridTable6Colorful_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait GridTable6Colorful_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait GridTable6Colorful_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait GridTable6Colorful_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait GridTable6Colorful_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait GridTable6Colorful_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait GridTable7Colorful extends js.Object
+  
+  @js.native
+  sealed trait GridTable7Colorful_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait GridTable7Colorful_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait GridTable7Colorful_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait GridTable7Colorful_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait GridTable7Colorful_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait GridTable7Colorful_Accent6 extends js.Object
+  
+  @js.native
   sealed trait Group extends js.Object
   
   @js.native
@@ -886,10 +1525,58 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Hairline extends js.Object
   
   @js.native
+  sealed trait HalfFrame extends js.Object
+  
+  @js.native
   sealed trait Header extends js.Object
   
   @js.native
+  sealed trait Heading1 extends js.Object
+  
+  @js.native
+  sealed trait Heading2 extends js.Object
+  
+  @js.native
+  sealed trait Heading3 extends js.Object
+  
+  @js.native
+  sealed trait Heading4 extends js.Object
+  
+  @js.native
+  sealed trait Heading5 extends js.Object
+  
+  @js.native
+  sealed trait Heading6 extends js.Object
+  
+  @js.native
+  sealed trait Heading7 extends js.Object
+  
+  @js.native
+  sealed trait Heading8 extends js.Object
+  
+  @js.native
+  sealed trait Heading9 extends js.Object
+  
+  @js.native
+  sealed trait Heart extends js.Object
+  
+  @js.native
   sealed trait Heavy extends js.Object
+  
+  @js.native
+  sealed trait Hebrew1 extends js.Object
+  
+  @js.native
+  sealed trait Hebrew2 extends js.Object
+  
+  @js.native
+  sealed trait Heptagon extends js.Object
+  
+  @js.native
+  sealed trait Hex extends js.Object
+  
+  @js.native
+  sealed trait Hexagon extends js.Object
   
   @js.native
   sealed trait Hidden extends js.Object
@@ -901,10 +1588,28 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait HighestValue extends js.Object
   
   @js.native
+  sealed trait Hindi1 extends js.Object
+  
+  @js.native
+  sealed trait Hindi2 extends js.Object
+  
+  @js.native
+  sealed trait Hindi3 extends js.Object
+  
+  @js.native
+  sealed trait Histogram extends js.Object
+  
+  @js.native
   sealed trait Hollow extends js.Object
   
   @js.native
+  sealed trait HomePlate extends js.Object
+  
+  @js.native
   sealed trait Horizontal extends js.Object
+  
+  @js.native
+  sealed trait HorizontalScroll extends js.Object
   
   @js.native
   sealed trait Hour extends js.Object
@@ -920,6 +1625,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Hundreds extends js.Object
+  
+  @js.native
+  sealed trait Hyperlink extends js.Object
   
   @js.native
   sealed trait Hyperlinks extends js.Object
@@ -979,10 +1687,28 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Integer extends js.Object
   
   @js.native
+  sealed trait IntenseEmphasis extends js.Object
+  
+  @js.native
+  sealed trait IntenseQuote extends js.Object
+  
+  @js.native
+  sealed trait IntenseReference extends js.Object
+  
+  @js.native
   sealed trait Interplotted extends js.Object
   
   @js.native
   sealed trait Invalid extends js.Object
+  
+  @js.native
+  sealed trait Iroha extends js.Object
+  
+  @js.native
+  sealed trait IrregularSeal1 extends js.Object
+  
+  @js.native
+  sealed trait IrregularSeal2 extends js.Object
   
   @js.native
   sealed trait JPEG extends js.Object
@@ -998,6 +1724,30 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait JustifyLow extends js.Object
+  
+  @js.native
+  sealed trait KorDbNum1 extends js.Object
+  
+  @js.native
+  sealed trait KorDbNum2 extends js.Object
+  
+  @js.native
+  sealed trait KorDbNum3 extends js.Object
+  
+  @js.native
+  sealed trait KorDbNum4 extends js.Object
+  
+  @js.native
+  sealed trait LCGreek extends js.Object
+  
+  @js.native
+  sealed trait LCLetter extends js.Object
+  
+  @js.native
+  sealed trait LCRoman extends js.Object
+  
+  @js.native
+  sealed trait LCRus extends js.Object
   
   @js.native
   sealed trait LTR extends js.Object
@@ -1027,7 +1777,40 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Left extends js.Object
   
   @js.native
+  sealed trait LeftArrow extends js.Object
+  
+  @js.native
+  sealed trait LeftArrowCallout extends js.Object
+  
+  @js.native
+  sealed trait LeftBrace extends js.Object
+  
+  @js.native
+  sealed trait LeftBracket extends js.Object
+  
+  @js.native
+  sealed trait LeftCircularArrow extends js.Object
+  
+  @js.native
+  sealed trait LeftRightArrow extends js.Object
+  
+  @js.native
+  sealed trait LeftRightArrowCallout extends js.Object
+  
+  @js.native
+  sealed trait LeftRightCircularArrow extends js.Object
+  
+  @js.native
+  sealed trait LeftRightRibbon extends js.Object
+  
+  @js.native
+  sealed trait LeftRightUpArrow extends js.Object
+  
+  @js.native
   sealed trait LeftToRight extends js.Object
+  
+  @js.native
+  sealed trait LeftUpArrow extends js.Object
   
   @js.native
   sealed trait Legal extends js.Object
@@ -1060,7 +1843,31 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait LightVertical extends js.Object
   
   @js.native
+  sealed trait LightningBolt extends js.Object
+  
+  @js.native
+  sealed trait Lim extends js.Object
+  
+  @js.native
   sealed trait Line extends js.Object
+  
+  @js.native
+  sealed trait LineInverse extends js.Object
+  
+  @js.native
+  sealed trait LineMarkers extends js.Object
+  
+  @js.native
+  sealed trait LineMarkersStacked extends js.Object
+  
+  @js.native
+  sealed trait LineMarkersStacked100 extends js.Object
+  
+  @js.native
+  sealed trait LineStacked extends js.Object
+  
+  @js.native
+  sealed trait LineStacked100 extends js.Object
   
   @js.native
   sealed trait Linear extends js.Object
@@ -1079,6 +1886,156 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait List extends js.Object
+  
+  @js.native
+  sealed trait ListParagraph extends js.Object
+  
+  @js.native
+  sealed trait ListTable1Light extends js.Object
+  
+  @js.native
+  sealed trait ListTable1Light_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait ListTable1Light_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait ListTable1Light_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait ListTable1Light_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait ListTable1Light_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait ListTable1Light_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait ListTable2 extends js.Object
+  
+  @js.native
+  sealed trait ListTable2_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait ListTable2_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait ListTable2_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait ListTable2_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait ListTable2_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait ListTable2_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait ListTable3 extends js.Object
+  
+  @js.native
+  sealed trait ListTable3_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait ListTable3_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait ListTable3_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait ListTable3_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait ListTable3_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait ListTable3_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait ListTable4 extends js.Object
+  
+  @js.native
+  sealed trait ListTable4_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait ListTable4_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait ListTable4_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait ListTable4_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait ListTable4_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait ListTable4_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait ListTable5Dark extends js.Object
+  
+  @js.native
+  sealed trait ListTable5Dark_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait ListTable5Dark_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait ListTable5Dark_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait ListTable5Dark_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait ListTable5Dark_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait ListTable5Dark_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait ListTable6Colorful extends js.Object
+  
+  @js.native
+  sealed trait ListTable6Colorful_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait ListTable6Colorful_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait ListTable6Colorful_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait ListTable6Colorful_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait ListTable6Colorful_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait ListTable6Colorful_Accent6 extends js.Object
+  
+  @js.native
+  sealed trait ListTable7Colorful extends js.Object
+  
+  @js.native
+  sealed trait ListTable7Colorful_Accent1 extends js.Object
+  
+  @js.native
+  sealed trait ListTable7Colorful_Accent2 extends js.Object
+  
+  @js.native
+  sealed trait ListTable7Colorful_Accent3 extends js.Object
+  
+  @js.native
+  sealed trait ListTable7Colorful_Accent4 extends js.Object
+  
+  @js.native
+  sealed trait ListTable7Colorful_Accent5 extends js.Object
+  
+  @js.native
+  sealed trait ListTable7Colorful_Accent6 extends js.Object
   
   @js.native
   sealed trait Local extends js.Object
@@ -1127,6 +2084,24 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Manual extends js.Object
+  
+  @js.native
+  sealed trait MathDivide extends js.Object
+  
+  @js.native
+  sealed trait MathEqual extends js.Object
+  
+  @js.native
+  sealed trait MathMinus extends js.Object
+  
+  @js.native
+  sealed trait MathMultiply extends js.Object
+  
+  @js.native
+  sealed trait MathNotEqual extends js.Object
+  
+  @js.native
+  sealed trait MathPlus extends js.Object
   
   @js.native
   sealed trait Max extends js.Object
@@ -1216,6 +2191,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Months extends js.Object
   
   @js.native
+  sealed trait Moon extends js.Object
+  
+  @js.native
   sealed trait MovingAverage extends js.Object
   
   @js.native
@@ -1246,10 +2224,19 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait NoFill extends js.Object
   
   @js.native
+  sealed trait NoSmoking extends js.Object
+  
+  @js.native
+  sealed trait NoSpacing extends js.Object
+  
+  @js.native
   sealed trait NonBlanks extends js.Object
   
   @js.native
   sealed trait NonErrors extends js.Object
+  
+  @js.native
+  sealed trait NonIsoscelesTrapezoid extends js.Object
   
   @js.native
   sealed trait None extends js.Object
@@ -1273,7 +2260,13 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait NotPlotted extends js.Object
   
   @js.native
+  sealed trait NotchedRightArrow extends js.Object
+  
+  @js.native
   sealed trait Note extends js.Object
+  
+  @js.native
+  sealed trait NumInDash extends js.Object
   
   @js.native
   sealed trait Number extends js.Object
@@ -1283,6 +2276,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait NumbersText extends js.Object
+  
+  @js.native
+  sealed trait Octagon extends js.Object
   
   @js.native
   sealed trait OddAndEven extends js.Object
@@ -1307,6 +2303,12 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Or extends js.Object
+  
+  @js.native
+  sealed trait Ordinal extends js.Object
+  
+  @js.native
+  sealed trait Ordtext extends js.Object
   
   @js.native
   sealed trait OriginalSize extends js.Object
@@ -1354,6 +2356,12 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Paper11x17 extends js.Object
   
   @js.native
+  sealed trait Parallelogram extends js.Object
+  
+  @js.native
+  sealed trait Pareto extends js.Object
+  
+  @js.native
   sealed trait Pattern extends js.Object
   
   @js.native
@@ -1361,6 +2369,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Pending extends js.Object
+  
+  @js.native
+  sealed trait Pentagon extends js.Object
   
   @js.native
   sealed trait Percent extends js.Object
@@ -1408,10 +2419,37 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait PictureAndTexture extends js.Object
   
   @js.native
+  sealed trait Pie extends js.Object
+  
+  @js.native
+  sealed trait PieExploded extends js.Object
+  
+  @js.native
+  sealed trait PieOfPie extends js.Object
+  
+  @js.native
+  sealed trait PieWedge extends js.Object
+  
+  @js.native
   sealed trait PinYin extends js.Object
   
   @js.native
   sealed trait Plain extends js.Object
+  
+  @js.native
+  sealed trait PlainTable1 extends js.Object
+  
+  @js.native
+  sealed trait PlainTable2 extends js.Object
+  
+  @js.native
+  sealed trait PlainTable3 extends js.Object
+  
+  @js.native
+  sealed trait PlainTable4 extends js.Object
+  
+  @js.native
+  sealed trait PlainTable5 extends js.Object
   
   @js.native
   sealed trait PlainText extends js.Object
@@ -1421,6 +2459,12 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait PlainTextParagraph extends js.Object
+  
+  @js.native
+  sealed trait Plaque extends js.Object
+  
+  @js.native
+  sealed trait PlaqueTabs extends js.Object
   
   @js.native
   sealed trait Plus extends js.Object
@@ -1456,13 +2500,52 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Prompt extends js.Object
   
   @js.native
+  sealed trait PyramidBarClustered extends js.Object
+  
+  @js.native
+  sealed trait PyramidBarStacked extends js.Object
+  
+  @js.native
+  sealed trait PyramidBarStacked100 extends js.Object
+  
+  @js.native
+  sealed trait PyramidCol extends js.Object
+  
+  @js.native
+  sealed trait PyramidColClustered extends js.Object
+  
+  @js.native
+  sealed trait PyramidColStacked extends js.Object
+  
+  @js.native
+  sealed trait PyramidColStacked100 extends js.Object
+  
+  @js.native
+  sealed trait QuadArrow extends js.Object
+  
+  @js.native
+  sealed trait QuadArrowCallout extends js.Object
+  
+  @js.native
   sealed trait Quatro extends js.Object
   
   @js.native
   sealed trait Question extends js.Object
   
   @js.native
+  sealed trait Quote extends js.Object
+  
+  @js.native
   sealed trait RTL extends js.Object
+  
+  @js.native
+  sealed trait Radar extends js.Object
+  
+  @js.native
+  sealed trait RadarFilled extends js.Object
+  
+  @js.native
+  sealed trait RadarMarkers extends js.Object
   
   @js.native
   sealed trait Range extends js.Object
@@ -1480,7 +2563,13 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Recalculate extends js.Object
   
   @js.native
+  sealed trait Rectangle extends js.Object
+  
+  @js.native
   sealed trait RectangularGradient extends js.Object
+  
+  @js.native
+  sealed trait RegionMap extends js.Object
   
   @js.native
   sealed trait Remote extends js.Object
@@ -1493,6 +2582,12 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Replace extends js.Object
+  
+  @js.native
+  sealed trait Ribbon extends js.Object
+  
+  @js.native
+  sealed trait Ribbon2 extends js.Object
   
   @js.native
   sealed trait RichText extends js.Object
@@ -1519,13 +2614,40 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Right extends js.Object
   
   @js.native
+  sealed trait RightArrow extends js.Object
+  
+  @js.native
+  sealed trait RightArrowCallout extends js.Object
+  
+  @js.native
+  sealed trait RightBrace extends js.Object
+  
+  @js.native
+  sealed trait RightBracket extends js.Object
+  
+  @js.native
   sealed trait RightToLeft extends js.Object
+  
+  @js.native
+  sealed trait RightTriangle extends js.Object
   
   @js.native
   sealed trait Robinson extends js.Object
   
   @js.native
+  sealed trait Round1Rectangle extends js.Object
+  
+  @js.native
+  sealed trait Round2DiagonalRectangle extends js.Object
+  
+  @js.native
+  sealed trait Round2SameRectangle extends js.Object
+  
+  @js.native
   sealed trait RoundDot extends js.Object
+  
+  @js.native
+  sealed trait RoundRectangle extends js.Object
   
   @js.native
   sealed trait Row extends js.Object
@@ -1553,6 +2675,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Save extends js.Object
+  
+  @js.native
+  sealed trait SbChar extends js.Object
   
   @js.native
   sealed trait ScaleFromBottomRight extends js.Object
@@ -1639,6 +2764,21 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait SlantDashDot extends js.Object
   
   @js.native
+  sealed trait SmileyFace extends js.Object
+  
+  @js.native
+  sealed trait Snip1Rectangle extends js.Object
+  
+  @js.native
+  sealed trait Snip2DiagonalRectangle extends js.Object
+  
+  @js.native
+  sealed trait Snip2SameRectangle extends js.Object
+  
+  @js.native
+  sealed trait SnipRoundRectangle extends js.Object
+  
+  @js.native
   sealed trait Solid extends js.Object
   
   @js.native
@@ -1660,6 +2800,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait SquareDot extends js.Object
   
   @js.native
+  sealed trait SquareTabs extends js.Object
+  
+  @js.native
   sealed trait StDev extends js.Object
   
   @js.native
@@ -1673,6 +2816,36 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Star extends js.Object
+  
+  @js.native
+  sealed trait Star10 extends js.Object
+  
+  @js.native
+  sealed trait Star12 extends js.Object
+  
+  @js.native
+  sealed trait Star16 extends js.Object
+  
+  @js.native
+  sealed trait Star24 extends js.Object
+  
+  @js.native
+  sealed trait Star32 extends js.Object
+  
+  @js.native
+  sealed trait Star4 extends js.Object
+  
+  @js.native
+  sealed trait Star5 extends js.Object
+  
+  @js.native
+  sealed trait Star6 extends js.Object
+  
+  @js.native
+  sealed trait Star7 extends js.Object
+  
+  @js.native
+  sealed trait Star8 extends js.Object
   
   @js.native
   sealed trait Start extends js.Object
@@ -1690,6 +2863,18 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Stealth extends js.Object
   
   @js.native
+  sealed trait StockHLC extends js.Object
+  
+  @js.native
+  sealed trait StockOHLC extends js.Object
+  
+  @js.native
+  sealed trait StockVHLC extends js.Object
+  
+  @js.native
+  sealed trait StockVOHLC extends js.Object
+  
+  @js.native
   sealed trait Stop extends js.Object
   
   @js.native
@@ -1699,13 +2884,49 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait String extends js.Object
   
   @js.native
+  sealed trait StripedRightArrow extends js.Object
+  
+  @js.native
   sealed trait StrokeCount extends js.Object
+  
+  @js.native
+  sealed trait Strong extends js.Object
+  
+  @js.native
+  sealed trait Subtitle extends js.Object
+  
+  @js.native
+  sealed trait SubtleEmphasis extends js.Object
+  
+  @js.native
+  sealed trait SubtleReference extends js.Object
   
   @js.native
   sealed trait Sum extends js.Object
   
   @js.native
+  sealed trait Sun extends js.Object
+  
+  @js.native
+  sealed trait Sunburst extends js.Object
+  
+  @js.native
+  sealed trait Surface extends js.Object
+  
+  @js.native
+  sealed trait SurfaceTopView extends js.Object
+  
+  @js.native
+  sealed trait SurfaceTopViewWireframe extends js.Object
+  
+  @js.native
+  sealed trait SurfaceWireframe extends js.Object
+  
+  @js.native
   sealed trait Svg extends js.Object
+  
+  @js.native
+  sealed trait SwooshArrow extends js.Object
   
   @js.native
   sealed trait SystemDash extends js.Object
@@ -1735,6 +2956,12 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait TableFiltered extends js.Object
   
   @js.native
+  sealed trait TableGrid extends js.Object
+  
+  @js.native
+  sealed trait TableGridLight extends js.Object
+  
+  @js.native
   sealed trait TableSelectionChanged extends js.Object
   
   @js.native
@@ -1753,6 +2980,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait TaskRemoved extends js.Object
   
   @js.native
+  sealed trait Teardrop extends js.Object
+  
+  @js.native
   sealed trait TenMillions extends js.Object
   
   @js.native
@@ -1769,6 +2999,12 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait TextLength extends js.Object
+  
+  @js.native
+  sealed trait Thai1 extends js.Object
+  
+  @js.native
+  sealed trait Thai2 extends js.Object
   
   @js.native
   sealed trait ThaiDistributed extends js.Object
@@ -1888,6 +3124,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Time extends js.Object
   
   @js.native
+  sealed trait Title extends js.Object
+  
+  @js.native
   sealed trait ToDo extends js.Object
   
   @js.native
@@ -1895,6 +3134,36 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait ToDoPriority2 extends js.Object
+  
+  @js.native
+  sealed trait Toc1 extends js.Object
+  
+  @js.native
+  sealed trait Toc2 extends js.Object
+  
+  @js.native
+  sealed trait Toc3 extends js.Object
+  
+  @js.native
+  sealed trait Toc4 extends js.Object
+  
+  @js.native
+  sealed trait Toc5 extends js.Object
+  
+  @js.native
+  sealed trait Toc6 extends js.Object
+  
+  @js.native
+  sealed trait Toc7 extends js.Object
+  
+  @js.native
+  sealed trait Toc8 extends js.Object
+  
+  @js.native
+  sealed trait Toc9 extends js.Object
+  
+  @js.native
+  sealed trait TocHeading extends js.Object
   
   @js.native
   sealed trait Today extends js.Object
@@ -1913,6 +3182,24 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait TopPercent extends js.Object
+  
+  @js.native
+  sealed trait TpeDbNum1 extends js.Object
+  
+  @js.native
+  sealed trait TpeDbNum2 extends js.Object
+  
+  @js.native
+  sealed trait TpeDbNum3 extends js.Object
+  
+  @js.native
+  sealed trait TpeDbNum4 extends js.Object
+  
+  @js.native
+  sealed trait Trapezoid extends js.Object
+  
+  @js.native
+  sealed trait Treemap extends js.Object
   
   @js.native
   sealed trait Triangle extends js.Object
@@ -1945,6 +3232,18 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait TwoStdDevBelowAverage extends js.Object
   
   @js.native
+  sealed trait UCGreek extends js.Object
+  
+  @js.native
+  sealed trait UCLetter extends js.Object
+  
+  @js.native
+  sealed trait UCRoman extends js.Object
+  
+  @js.native
+  sealed trait UCRus extends js.Object
+  
+  @js.native
   sealed trait UNKNOWN extends js.Object
   
   @js.native
@@ -1966,10 +3265,25 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Up extends js.Object
   
   @js.native
+  sealed trait UpArrow extends js.Object
+  
+  @js.native
+  sealed trait UpArrowCallout extends js.Object
+  
+  @js.native
+  sealed trait UpDownArrow extends js.Object
+  
+  @js.native
+  sealed trait UpDownArrowCallout extends js.Object
+  
+  @js.native
   sealed trait UpperLetter extends js.Object
   
   @js.native
   sealed trait UpperRoman extends js.Object
+  
+  @js.native
+  sealed trait UturnArrow extends js.Object
   
   @js.native
   sealed trait Value extends js.Object
@@ -1990,6 +3304,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Vertical270 extends js.Object
   
   @js.native
+  sealed trait VerticalScroll extends js.Object
+  
+  @js.native
   sealed trait VeryHidden extends js.Object
   
   @js.native
@@ -1997,6 +3314,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Warning extends js.Object
+  
+  @js.native
+  sealed trait Waterfall extends js.Object
   
   @js.native
   sealed trait Wave extends js.Object
@@ -2018,6 +3338,15 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Website extends js.Object
+  
+  @js.native
+  sealed trait WedgeEllipseCallout extends js.Object
+  
+  @js.native
+  sealed trait WedgeRRectCallout extends js.Object
+  
+  @js.native
+  sealed trait WedgeRectCallout extends js.Object
   
   @js.native
   sealed trait Whole extends js.Object
@@ -2083,6 +3412,21 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait X extends js.Object
   
   @js.native
+  sealed trait XYScatter extends js.Object
+  
+  @js.native
+  sealed trait XYScatterLines extends js.Object
+  
+  @js.native
+  sealed trait XYScatterLinesNoMarkers extends js.Object
+  
+  @js.native
+  sealed trait XYScatterSmooth extends js.Object
+  
+  @js.native
+  sealed trait XYScatterSmoothNoMarkers extends js.Object
+  
+  @js.native
   sealed trait Year extends js.Object
   
   @js.native
@@ -2098,11 +3442,46 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Zero extends js.Object
   
   @js.native
+  sealed trait Zodiac1 extends js.Object
+  
+  @js.native
+  sealed trait Zodiac2 extends js.Object
+  
+  @js.native
+  sealed trait Zodiac3 extends js.Object
+  
+  @js.native
   sealed trait edit extends js.Object
   
   @js.native
   sealed trait read extends js.Object
   
+  @scala.inline
+  def `3DArea`: `3DArea` = "3DArea".asInstanceOf[`3DArea`]
+  @scala.inline
+  def `3DAreaStacked`: `3DAreaStacked` = "3DAreaStacked".asInstanceOf[`3DAreaStacked`]
+  @scala.inline
+  def `3DAreaStacked100`: `3DAreaStacked100` = "3DAreaStacked100".asInstanceOf[`3DAreaStacked100`]
+  @scala.inline
+  def `3DBarClustered`: `3DBarClustered` = "3DBarClustered".asInstanceOf[`3DBarClustered`]
+  @scala.inline
+  def `3DBarStacked`: `3DBarStacked` = "3DBarStacked".asInstanceOf[`3DBarStacked`]
+  @scala.inline
+  def `3DBarStacked100`: `3DBarStacked100` = "3DBarStacked100".asInstanceOf[`3DBarStacked100`]
+  @scala.inline
+  def `3DColumn`: `3DColumn` = "3DColumn".asInstanceOf[`3DColumn`]
+  @scala.inline
+  def `3DColumnClustered`: `3DColumnClustered` = "3DColumnClustered".asInstanceOf[`3DColumnClustered`]
+  @scala.inline
+  def `3DColumnStacked`: `3DColumnStacked` = "3DColumnStacked".asInstanceOf[`3DColumnStacked`]
+  @scala.inline
+  def `3DColumnStacked100`: `3DColumnStacked100` = "3DColumnStacked100".asInstanceOf[`3DColumnStacked100`]
+  @scala.inline
+  def `3DLine`: `3DLine` = "3DLine".asInstanceOf[`3DLine`]
+  @scala.inline
+  def `3DPie`: `3DPie` = "3DPie".asInstanceOf[`3DPie`]
+  @scala.inline
+  def `3DPieExploded`: `3DPieExploded` = "3DPieExploded".asInstanceOf[`3DPieExploded`]
   @scala.inline
   def A3: A3 = "A3".asInstanceOf[A3]
   @scala.inline
@@ -2116,9 +3495,47 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Absolute: Absolute = "Absolute".asInstanceOf[Absolute]
   @scala.inline
+  def AccentBorderCallout1: AccentBorderCallout1 = "AccentBorderCallout1".asInstanceOf[AccentBorderCallout1]
+  @scala.inline
+  def AccentBorderCallout2: AccentBorderCallout2 = "AccentBorderCallout2".asInstanceOf[AccentBorderCallout2]
+  @scala.inline
+  def AccentBorderCallout3: AccentBorderCallout3 = "AccentBorderCallout3".asInstanceOf[AccentBorderCallout3]
+  @scala.inline
+  def AccentCallout1: AccentCallout1 = "AccentCallout1".asInstanceOf[AccentCallout1]
+  @scala.inline
+  def AccentCallout2: AccentCallout2 = "AccentCallout2".asInstanceOf[AccentCallout2]
+  @scala.inline
+  def AccentCallout3: AccentCallout3 = "AccentCallout3".asInstanceOf[AccentCallout3]
+  @scala.inline
+  def ActionButtonBackPrevious: ActionButtonBackPrevious = "ActionButtonBackPrevious".asInstanceOf[ActionButtonBackPrevious]
+  @scala.inline
+  def ActionButtonBeginning: ActionButtonBeginning = "ActionButtonBeginning".asInstanceOf[ActionButtonBeginning]
+  @scala.inline
+  def ActionButtonBlank: ActionButtonBlank = "ActionButtonBlank".asInstanceOf[ActionButtonBlank]
+  @scala.inline
+  def ActionButtonDocument: ActionButtonDocument = "ActionButtonDocument".asInstanceOf[ActionButtonDocument]
+  @scala.inline
+  def ActionButtonEnd: ActionButtonEnd = "ActionButtonEnd".asInstanceOf[ActionButtonEnd]
+  @scala.inline
+  def ActionButtonForwardNext: ActionButtonForwardNext = "ActionButtonForwardNext".asInstanceOf[ActionButtonForwardNext]
+  @scala.inline
+  def ActionButtonHelp: ActionButtonHelp = "ActionButtonHelp".asInstanceOf[ActionButtonHelp]
+  @scala.inline
+  def ActionButtonHome: ActionButtonHome = "ActionButtonHome".asInstanceOf[ActionButtonHome]
+  @scala.inline
+  def ActionButtonInformation: ActionButtonInformation = "ActionButtonInformation".asInstanceOf[ActionButtonInformation]
+  @scala.inline
+  def ActionButtonMovie: ActionButtonMovie = "ActionButtonMovie".asInstanceOf[ActionButtonMovie]
+  @scala.inline
+  def ActionButtonReturn: ActionButtonReturn = "ActionButtonReturn".asInstanceOf[ActionButtonReturn]
+  @scala.inline
+  def ActionButtonSound: ActionButtonSound = "ActionButtonSound".asInstanceOf[ActionButtonSound]
+  @scala.inline
   def Address: Address = "Address".asInstanceOf[Address]
   @scala.inline
   def After: After = "After".asInstanceOf[After]
+  @scala.inline
+  def Aiueo: Aiueo = "Aiueo".asInstanceOf[Aiueo]
   @scala.inline
   def Albers: Albers = "Albers".asInstanceOf[Albers]
   @scala.inline
@@ -2160,6 +3577,20 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Arabic: Arabic = "Arabic".asInstanceOf[Arabic]
   @scala.inline
+  def Arabic1: Arabic1 = "Arabic1".asInstanceOf[Arabic1]
+  @scala.inline
+  def Arabic2: Arabic2 = "Arabic2".asInstanceOf[Arabic2]
+  @scala.inline
+  def ArabicLZ: ArabicLZ = "ArabicLZ".asInstanceOf[ArabicLZ]
+  @scala.inline
+  def Arc: Arc = "Arc".asInstanceOf[Arc]
+  @scala.inline
+  def Area: Area = "Area".asInstanceOf[Area]
+  @scala.inline
+  def AreaStacked: AreaStacked = "AreaStacked".asInstanceOf[AreaStacked]
+  @scala.inline
+  def AreaStacked100: AreaStacked100 = "AreaStacked100".asInstanceOf[AreaStacked100]
+  @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
   @scala.inline
   def Arrow: Arrow = "Arrow".asInstanceOf[Arrow]
@@ -2198,6 +3629,14 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Banner: Banner = "Banner".asInstanceOf[Banner]
   @scala.inline
+  def BarClustered: BarClustered = "BarClustered".asInstanceOf[BarClustered]
+  @scala.inline
+  def BarOfPie: BarOfPie = "BarOfPie".asInstanceOf[BarOfPie]
+  @scala.inline
+  def BarStacked: BarStacked = "BarStacked".asInstanceOf[BarStacked]
+  @scala.inline
+  def BarStacked100: BarStacked100 = "BarStacked100".asInstanceOf[BarStacked100]
+  @scala.inline
   def Before: Before = "Before".asInstanceOf[Before]
   @scala.inline
   def Beginning: Beginning = "Beginning".asInstanceOf[Beginning]
@@ -2206,9 +3645,17 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def BelowAverage: BelowAverage = "BelowAverage".asInstanceOf[BelowAverage]
   @scala.inline
+  def BentArrow: BentArrow = "BentArrow".asInstanceOf[BentArrow]
+  @scala.inline
+  def BentUpArrow: BentUpArrow = "BentUpArrow".asInstanceOf[BentUpArrow]
+  @scala.inline
   def BestFit: BestFit = "BestFit".asInstanceOf[BestFit]
   @scala.inline
   def Between: Between = "Between".asInstanceOf[Between]
+  @scala.inline
+  def Bevel: Bevel = "Bevel".asInstanceOf[Bevel]
+  @scala.inline
+  def Bibliography: Bibliography = "Bibliography".asInstanceOf[Bibliography]
   @scala.inline
   def Billions: Billions = "Billions".asInstanceOf[Billions]
   @scala.inline
@@ -2220,9 +3667,19 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Blanks: Blanks = "Blanks".asInstanceOf[Blanks]
   @scala.inline
+  def BlockArc: BlockArc = "BlockArc".asInstanceOf[BlockArc]
+  @scala.inline
   def Bmp: Bmp = "Bmp".asInstanceOf[Bmp]
   @scala.inline
+  def BookTitle: BookTitle = "BookTitle".asInstanceOf[BookTitle]
+  @scala.inline
   def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
+  @scala.inline
+  def BorderCallout1: BorderCallout1 = "BorderCallout1".asInstanceOf[BorderCallout1]
+  @scala.inline
+  def BorderCallout2: BorderCallout2 = "BorderCallout2".asInstanceOf[BorderCallout2]
+  @scala.inline
+  def BorderCallout3: BorderCallout3 = "BorderCallout3".asInstanceOf[BorderCallout3]
   @scala.inline
   def Both: Both = "Both".asInstanceOf[Both]
   @scala.inline
@@ -2234,9 +3691,19 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def BoundingBox: BoundingBox = "BoundingBox".asInstanceOf[BoundingBox]
   @scala.inline
+  def Boxwhisker: Boxwhisker = "Boxwhisker".asInstanceOf[Boxwhisker]
+  @scala.inline
+  def BracePair: BracePair = "BracePair".asInstanceOf[BracePair]
+  @scala.inline
+  def BracketPair: BracketPair = "BracketPair".asInstanceOf[BracketPair]
+  @scala.inline
   def BringForward: BringForward = "BringForward".asInstanceOf[BringForward]
   @scala.inline
   def BringToFront: BringToFront = "BringToFront".asInstanceOf[BringToFront]
+  @scala.inline
+  def Bubble: Bubble = "Bubble".asInstanceOf[Bubble]
+  @scala.inline
+  def Bubble3DEffect: Bubble3DEffect = "Bubble3DEffect".asInstanceOf[Bubble3DEffect]
   @scala.inline
   def BuildingBlockGallery: BuildingBlockGallery = "BuildingBlockGallery".asInstanceOf[BuildingBlockGallery]
   @scala.inline
@@ -2245,6 +3712,18 @@ object officeDashJsDashPreviewLibStrings {
   def Calculating: Calculating = "Calculating".asInstanceOf[Calculating]
   @scala.inline
   def Callout: Callout = "Callout".asInstanceOf[Callout]
+  @scala.inline
+  def Callout1: Callout1 = "Callout1".asInstanceOf[Callout1]
+  @scala.inline
+  def Callout2: Callout2 = "Callout2".asInstanceOf[Callout2]
+  @scala.inline
+  def Callout3: Callout3 = "Callout3".asInstanceOf[Callout3]
+  @scala.inline
+  def Can: Can = "Can".asInstanceOf[Can]
+  @scala.inline
+  def Caption: Caption = "Caption".asInstanceOf[Caption]
+  @scala.inline
+  def Cardtext: Cardtext = "Cardtext".asInstanceOf[Cardtext]
   @scala.inline
   def Category: Category = "Category".asInstanceOf[Category]
   @scala.inline
@@ -2274,17 +3753,47 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def ChartDeleted: ChartDeleted = "ChartDeleted".asInstanceOf[ChartDeleted]
   @scala.inline
+  def ChartPlus: ChartPlus = "ChartPlus".asInstanceOf[ChartPlus]
+  @scala.inline
+  def ChartStar: ChartStar = "ChartStar".asInstanceOf[ChartStar]
+  @scala.inline
+  def ChartX: ChartX = "ChartX".asInstanceOf[ChartX]
+  @scala.inline
   def CheckBox: CheckBox = "CheckBox".asInstanceOf[CheckBox]
   @scala.inline
   def Checker: Checker = "Checker".asInstanceOf[Checker]
   @scala.inline
   def Checkmark: Checkmark = "Checkmark".asInstanceOf[Checkmark]
   @scala.inline
+  def Chevron: Chevron = "Chevron".asInstanceOf[Chevron]
+  @scala.inline
+  def ChiManSty: ChiManSty = "ChiManSty".asInstanceOf[ChiManSty]
+  @scala.inline
+  def ChnDbNum1: ChnDbNum1 = "ChnDbNum1".asInstanceOf[ChnDbNum1]
+  @scala.inline
+  def ChnDbNum2: ChnDbNum2 = "ChnDbNum2".asInstanceOf[ChnDbNum2]
+  @scala.inline
+  def ChnDbNum3: ChnDbNum3 = "ChnDbNum3".asInstanceOf[ChnDbNum3]
+  @scala.inline
+  def ChnDbNum4: ChnDbNum4 = "ChnDbNum4".asInstanceOf[ChnDbNum4]
+  @scala.inline
+  def Chord: Chord = "Chord".asInstanceOf[Chord]
+  @scala.inline
+  def Chosung: Chosung = "Chosung".asInstanceOf[Chosung]
+  @scala.inline
   def Circle: Circle = "Circle".asInstanceOf[Circle]
+  @scala.inline
+  def Circlenum: Circlenum = "Circlenum".asInstanceOf[Circlenum]
+  @scala.inline
+  def CircularArrow: CircularArrow = "CircularArrow".asInstanceOf[CircularArrow]
   @scala.inline
   def City: City = "City".asInstanceOf[City]
   @scala.inline
   def Clip: Clip = "Clip".asInstanceOf[Clip]
+  @scala.inline
+  def Cloud: Cloud = "Cloud".asInstanceOf[Cloud]
+  @scala.inline
+  def CloudCallout: CloudCallout = "CloudCallout".asInstanceOf[CloudCallout]
   @scala.inline
   def ColorScale: ColorScale = "ColorScale".asInstanceOf[ColorScale]
   @scala.inline
@@ -2298,9 +3807,15 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Column: Column = "Column".asInstanceOf[Column]
   @scala.inline
+  def ColumnClustered: ColumnClustered = "ColumnClustered".asInstanceOf[ColumnClustered]
+  @scala.inline
   def ColumnDeleted: ColumnDeleted = "ColumnDeleted".asInstanceOf[ColumnDeleted]
   @scala.inline
   def ColumnInserted: ColumnInserted = "ColumnInserted".asInstanceOf[ColumnInserted]
+  @scala.inline
+  def ColumnStacked: ColumnStacked = "ColumnStacked".asInstanceOf[ColumnStacked]
+  @scala.inline
+  def ColumnStacked100: ColumnStacked100 = "ColumnStacked100".asInstanceOf[ColumnStacked100]
   @scala.inline
   def Columns: Columns = "Columns".asInstanceOf[Columns]
   @scala.inline
@@ -2313,6 +3828,20 @@ object officeDashJsDashPreviewLibStrings {
   def Completed: Completed = "Completed".asInstanceOf[Completed]
   @scala.inline
   def ConditionalFormats: ConditionalFormats = "ConditionalFormats".asInstanceOf[ConditionalFormats]
+  @scala.inline
+  def ConeBarClustered: ConeBarClustered = "ConeBarClustered".asInstanceOf[ConeBarClustered]
+  @scala.inline
+  def ConeBarStacked: ConeBarStacked = "ConeBarStacked".asInstanceOf[ConeBarStacked]
+  @scala.inline
+  def ConeBarStacked100: ConeBarStacked100 = "ConeBarStacked100".asInstanceOf[ConeBarStacked100]
+  @scala.inline
+  def ConeCol: ConeCol = "ConeCol".asInstanceOf[ConeCol]
+  @scala.inline
+  def ConeColClustered: ConeColClustered = "ConeColClustered".asInstanceOf[ConeColClustered]
+  @scala.inline
+  def ConeColStacked: ConeColStacked = "ConeColStacked".asInstanceOf[ConeColStacked]
+  @scala.inline
+  def ConeColStacked100: ConeColStacked100 = "ConeColStacked100".asInstanceOf[ConeColStacked100]
   @scala.inline
   def Constants: Constants = "Constants".asInstanceOf[Constants]
   @scala.inline
@@ -2342,6 +3871,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Corner: Corner = "Corner".asInstanceOf[Corner]
   @scala.inline
+  def CornerTabs: CornerTabs = "CornerTabs".asInstanceOf[CornerTabs]
+  @scala.inline
   def Count: Count = "Count".asInstanceOf[Count]
   @scala.inline
   def CountNumbers: CountNumbers = "CountNumbers".asInstanceOf[CountNumbers]
@@ -2358,11 +3889,41 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Csheet: Csheet = "Csheet".asInstanceOf[Csheet]
   @scala.inline
+  def Cube: Cube = "Cube".asInstanceOf[Cube]
+  @scala.inline
   def CurrentSize: CurrentSize = "CurrentSize".asInstanceOf[CurrentSize]
   @scala.inline
   def Curve: Curve = "Curve".asInstanceOf[Curve]
   @scala.inline
+  def CurvedDownArrow: CurvedDownArrow = "CurvedDownArrow".asInstanceOf[CurvedDownArrow]
+  @scala.inline
+  def CurvedLeftArrow: CurvedLeftArrow = "CurvedLeftArrow".asInstanceOf[CurvedLeftArrow]
+  @scala.inline
+  def CurvedRightArrow: CurvedRightArrow = "CurvedRightArrow".asInstanceOf[CurvedRightArrow]
+  @scala.inline
+  def CurvedUpArrow: CurvedUpArrow = "CurvedUpArrow".asInstanceOf[CurvedUpArrow]
+  @scala.inline
   def Custom: Custom = "Custom".asInstanceOf[Custom]
+  @scala.inline
+  def CylinderBarClustered: CylinderBarClustered = "CylinderBarClustered".asInstanceOf[CylinderBarClustered]
+  @scala.inline
+  def CylinderBarStacked: CylinderBarStacked = "CylinderBarStacked".asInstanceOf[CylinderBarStacked]
+  @scala.inline
+  def CylinderBarStacked100: CylinderBarStacked100 = "CylinderBarStacked100".asInstanceOf[CylinderBarStacked100]
+  @scala.inline
+  def CylinderCol: CylinderCol = "CylinderCol".asInstanceOf[CylinderCol]
+  @scala.inline
+  def CylinderColClustered: CylinderColClustered = "CylinderColClustered".asInstanceOf[CylinderColClustered]
+  @scala.inline
+  def CylinderColStacked: CylinderColStacked = "CylinderColStacked".asInstanceOf[CylinderColStacked]
+  @scala.inline
+  def CylinderColStacked100: CylinderColStacked100 = "CylinderColStacked100".asInstanceOf[CylinderColStacked100]
+  @scala.inline
+  def DAiueo: DAiueo = "DAiueo".asInstanceOf[DAiueo]
+  @scala.inline
+  def DArabic: DArabic = "DArabic".asInstanceOf[DArabic]
+  @scala.inline
+  def DIroha: DIroha = "DIroha".asInstanceOf[DIroha]
   @scala.inline
   def Dash: Dash = "Dash".asInstanceOf[Dash]
   @scala.inline
@@ -2410,6 +3971,18 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Days: Days = "Days".asInstanceOf[Days]
   @scala.inline
+  def DbChar: DbChar = "DbChar".asInstanceOf[DbChar]
+  @scala.inline
+  def DbNum1: DbNum1 = "DbNum1".asInstanceOf[DbNum1]
+  @scala.inline
+  def DbNum2: DbNum2 = "DbNum2".asInstanceOf[DbNum2]
+  @scala.inline
+  def DbNum3: DbNum3 = "DbNum3".asInstanceOf[DbNum3]
+  @scala.inline
+  def DbNum4: DbNum4 = "DbNum4".asInstanceOf[DbNum4]
+  @scala.inline
+  def Decagon: Decagon = "Decagon".asInstanceOf[Decagon]
+  @scala.inline
   def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
   @scala.inline
   def Default: Default = "Default".asInstanceOf[Default]
@@ -2417,6 +3990,8 @@ object officeDashJsDashPreviewLibStrings {
   def Descending: Descending = "Descending".asInstanceOf[Descending]
   @scala.inline
   def DiagonalDown: DiagonalDown = "DiagonalDown".asInstanceOf[DiagonalDown]
+  @scala.inline
+  def DiagonalStripe: DiagonalStripe = "DiagonalStripe".asInstanceOf[DiagonalStripe]
   @scala.inline
   def DiagonalUp: DiagonalUp = "DiagonalUp".asInstanceOf[DiagonalUp]
   @scala.inline
@@ -2430,7 +4005,11 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Distributed: Distributed = "Distributed".asInstanceOf[Distributed]
   @scala.inline
+  def Dodecagon: Dodecagon = "Dodecagon".asInstanceOf[Dodecagon]
+  @scala.inline
   def Done: Done = "Done".asInstanceOf[Done]
+  @scala.inline
+  def Donut: Donut = "Donut".asInstanceOf[Donut]
   @scala.inline
   def Dot: Dot = "Dot".asInstanceOf[Dot]
   @scala.inline
@@ -2462,7 +4041,15 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def DoubleWave: DoubleWave = "DoubleWave".asInstanceOf[DoubleWave]
   @scala.inline
+  def Doughnut: Doughnut = "Doughnut".asInstanceOf[Doughnut]
+  @scala.inline
+  def DoughnutExploded: DoughnutExploded = "DoughnutExploded".asInstanceOf[DoughnutExploded]
+  @scala.inline
   def Down: Down = "Down".asInstanceOf[Down]
+  @scala.inline
+  def DownArrow: DownArrow = "DownArrow".asInstanceOf[DownArrow]
+  @scala.inline
+  def DownArrowCallout: DownArrowCallout = "DownArrowCallout".asInstanceOf[DownArrowCallout]
   @scala.inline
   def DownThenOver: DownThenOver = "DownThenOver".asInstanceOf[DownThenOver]
   @scala.inline
@@ -2486,15 +4073,27 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Elbow: Elbow = "Elbow".asInstanceOf[Elbow]
   @scala.inline
+  def Ellipse: Ellipse = "Ellipse".asInstanceOf[Ellipse]
+  @scala.inline
+  def EllipseRibbon: EllipseRibbon = "EllipseRibbon".asInstanceOf[EllipseRibbon]
+  @scala.inline
+  def EllipseRibbon2: EllipseRibbon2 = "EllipseRibbon2".asInstanceOf[EllipseRibbon2]
+  @scala.inline
   def Ellipsis: Ellipsis = "Ellipsis".asInstanceOf[Ellipsis]
   @scala.inline
   def Emf: Emf = "Emf".asInstanceOf[Emf]
+  @scala.inline
+  def Emphasis: Emphasis = "Emphasis".asInstanceOf[Emphasis]
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def End: End = "End".asInstanceOf[End]
   @scala.inline
   def EndSheet: EndSheet = "EndSheet".asInstanceOf[EndSheet]
+  @scala.inline
+  def EndnoteReference: EndnoteReference = "EndnoteReference".asInstanceOf[EndnoteReference]
+  @scala.inline
+  def EndnoteText: EndnoteText = "EndnoteText".asInstanceOf[EndnoteText]
   @scala.inline
   def EndsWith: EndsWith = "EndsWith".asInstanceOf[EndsWith]
   @scala.inline
@@ -2622,11 +4221,75 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Float: Float = "Float".asInstanceOf[Float]
   @scala.inline
+  def FlowChartAlternateProcess: FlowChartAlternateProcess = "FlowChartAlternateProcess".asInstanceOf[FlowChartAlternateProcess]
+  @scala.inline
+  def FlowChartCollate: FlowChartCollate = "FlowChartCollate".asInstanceOf[FlowChartCollate]
+  @scala.inline
+  def FlowChartConnector: FlowChartConnector = "FlowChartConnector".asInstanceOf[FlowChartConnector]
+  @scala.inline
+  def FlowChartDecision: FlowChartDecision = "FlowChartDecision".asInstanceOf[FlowChartDecision]
+  @scala.inline
+  def FlowChartDelay: FlowChartDelay = "FlowChartDelay".asInstanceOf[FlowChartDelay]
+  @scala.inline
+  def FlowChartDisplay: FlowChartDisplay = "FlowChartDisplay".asInstanceOf[FlowChartDisplay]
+  @scala.inline
+  def FlowChartDocument: FlowChartDocument = "FlowChartDocument".asInstanceOf[FlowChartDocument]
+  @scala.inline
+  def FlowChartExtract: FlowChartExtract = "FlowChartExtract".asInstanceOf[FlowChartExtract]
+  @scala.inline
+  def FlowChartInputOutput: FlowChartInputOutput = "FlowChartInputOutput".asInstanceOf[FlowChartInputOutput]
+  @scala.inline
+  def FlowChartInternalStorage: FlowChartInternalStorage = "FlowChartInternalStorage".asInstanceOf[FlowChartInternalStorage]
+  @scala.inline
+  def FlowChartMagneticDisk: FlowChartMagneticDisk = "FlowChartMagneticDisk".asInstanceOf[FlowChartMagneticDisk]
+  @scala.inline
+  def FlowChartMagneticDrum: FlowChartMagneticDrum = "FlowChartMagneticDrum".asInstanceOf[FlowChartMagneticDrum]
+  @scala.inline
+  def FlowChartMagneticTape: FlowChartMagneticTape = "FlowChartMagneticTape".asInstanceOf[FlowChartMagneticTape]
+  @scala.inline
+  def FlowChartManualInput: FlowChartManualInput = "FlowChartManualInput".asInstanceOf[FlowChartManualInput]
+  @scala.inline
+  def FlowChartManualOperation: FlowChartManualOperation = "FlowChartManualOperation".asInstanceOf[FlowChartManualOperation]
+  @scala.inline
+  def FlowChartMerge: FlowChartMerge = "FlowChartMerge".asInstanceOf[FlowChartMerge]
+  @scala.inline
+  def FlowChartMultidocument: FlowChartMultidocument = "FlowChartMultidocument".asInstanceOf[FlowChartMultidocument]
+  @scala.inline
+  def FlowChartOfflineStorage: FlowChartOfflineStorage = "FlowChartOfflineStorage".asInstanceOf[FlowChartOfflineStorage]
+  @scala.inline
+  def FlowChartOffpageConnector: FlowChartOffpageConnector = "FlowChartOffpageConnector".asInstanceOf[FlowChartOffpageConnector]
+  @scala.inline
+  def FlowChartOnlineStorage: FlowChartOnlineStorage = "FlowChartOnlineStorage".asInstanceOf[FlowChartOnlineStorage]
+  @scala.inline
+  def FlowChartOr: FlowChartOr = "FlowChartOr".asInstanceOf[FlowChartOr]
+  @scala.inline
+  def FlowChartPredefinedProcess: FlowChartPredefinedProcess = "FlowChartPredefinedProcess".asInstanceOf[FlowChartPredefinedProcess]
+  @scala.inline
+  def FlowChartPreparation: FlowChartPreparation = "FlowChartPreparation".asInstanceOf[FlowChartPreparation]
+  @scala.inline
+  def FlowChartProcess: FlowChartProcess = "FlowChartProcess".asInstanceOf[FlowChartProcess]
+  @scala.inline
+  def FlowChartPunchedCard: FlowChartPunchedCard = "FlowChartPunchedCard".asInstanceOf[FlowChartPunchedCard]
+  @scala.inline
+  def FlowChartPunchedTape: FlowChartPunchedTape = "FlowChartPunchedTape".asInstanceOf[FlowChartPunchedTape]
+  @scala.inline
+  def FlowChartSort: FlowChartSort = "FlowChartSort".asInstanceOf[FlowChartSort]
+  @scala.inline
+  def FlowChartSummingJunction: FlowChartSummingJunction = "FlowChartSummingJunction".asInstanceOf[FlowChartSummingJunction]
+  @scala.inline
+  def FlowChartTerminator: FlowChartTerminator = "FlowChartTerminator".asInstanceOf[FlowChartTerminator]
+  @scala.inline
+  def FoldedCorner: FoldedCorner = "FoldedCorner".asInstanceOf[FoldedCorner]
+  @scala.inline
   def Folio: Folio = "Folio".asInstanceOf[Folio]
   @scala.inline
   def FontColor: FontColor = "FontColor".asInstanceOf[FontColor]
   @scala.inline
   def Footer: Footer = "Footer".asInstanceOf[Footer]
+  @scala.inline
+  def FootnoteReference: FootnoteReference = "FootnoteReference".asInstanceOf[FootnoteReference]
+  @scala.inline
+  def FootnoteText: FootnoteText = "FootnoteText".asInstanceOf[FootnoteText]
   @scala.inline
   def Formats: Formats = "Formats".asInstanceOf[Formats]
   @scala.inline
@@ -2646,11 +4309,29 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def FourTrafficLights: FourTrafficLights = "FourTrafficLights".asInstanceOf[FourTrafficLights]
   @scala.inline
+  def Frame: Frame = "Frame".asInstanceOf[Frame]
+  @scala.inline
   def Full: Full = "Full".asInstanceOf[Full]
   @scala.inline
   def FullRebuild: FullRebuild = "FullRebuild".asInstanceOf[FullRebuild]
   @scala.inline
+  def Funnel: Funnel = "Funnel".asInstanceOf[Funnel]
+  @scala.inline
+  def GB1: GB1 = "GB1".asInstanceOf[GB1]
+  @scala.inline
+  def GB2: GB2 = "GB2".asInstanceOf[GB2]
+  @scala.inline
+  def GB3: GB3 = "GB3".asInstanceOf[GB3]
+  @scala.inline
+  def GB4: GB4 = "GB4".asInstanceOf[GB4]
+  @scala.inline
   def GIF: GIF = "GIF".asInstanceOf[GIF]
+  @scala.inline
+  def Ganada: Ganada = "Ganada".asInstanceOf[Ganada]
+  @scala.inline
+  def Gear6: Gear6 = "Gear6".asInstanceOf[Gear6]
+  @scala.inline
+  def Gear9: Gear9 = "Gear9".asInstanceOf[Gear9]
   @scala.inline
   def General: General = "General".asInstanceOf[General]
   @scala.inline
@@ -2684,15 +4365,145 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Grid: Grid = "Grid".asInstanceOf[Grid]
   @scala.inline
+  def GridTable1Light: GridTable1Light = "GridTable1Light".asInstanceOf[GridTable1Light]
+  @scala.inline
+  def GridTable1Light_Accent1: GridTable1Light_Accent1 = "GridTable1Light_Accent1".asInstanceOf[GridTable1Light_Accent1]
+  @scala.inline
+  def GridTable1Light_Accent2: GridTable1Light_Accent2 = "GridTable1Light_Accent2".asInstanceOf[GridTable1Light_Accent2]
+  @scala.inline
+  def GridTable1Light_Accent3: GridTable1Light_Accent3 = "GridTable1Light_Accent3".asInstanceOf[GridTable1Light_Accent3]
+  @scala.inline
+  def GridTable1Light_Accent4: GridTable1Light_Accent4 = "GridTable1Light_Accent4".asInstanceOf[GridTable1Light_Accent4]
+  @scala.inline
+  def GridTable1Light_Accent5: GridTable1Light_Accent5 = "GridTable1Light_Accent5".asInstanceOf[GridTable1Light_Accent5]
+  @scala.inline
+  def GridTable1Light_Accent6: GridTable1Light_Accent6 = "GridTable1Light_Accent6".asInstanceOf[GridTable1Light_Accent6]
+  @scala.inline
+  def GridTable2: GridTable2 = "GridTable2".asInstanceOf[GridTable2]
+  @scala.inline
+  def GridTable2_Accent1: GridTable2_Accent1 = "GridTable2_Accent1".asInstanceOf[GridTable2_Accent1]
+  @scala.inline
+  def GridTable2_Accent2: GridTable2_Accent2 = "GridTable2_Accent2".asInstanceOf[GridTable2_Accent2]
+  @scala.inline
+  def GridTable2_Accent3: GridTable2_Accent3 = "GridTable2_Accent3".asInstanceOf[GridTable2_Accent3]
+  @scala.inline
+  def GridTable2_Accent4: GridTable2_Accent4 = "GridTable2_Accent4".asInstanceOf[GridTable2_Accent4]
+  @scala.inline
+  def GridTable2_Accent5: GridTable2_Accent5 = "GridTable2_Accent5".asInstanceOf[GridTable2_Accent5]
+  @scala.inline
+  def GridTable2_Accent6: GridTable2_Accent6 = "GridTable2_Accent6".asInstanceOf[GridTable2_Accent6]
+  @scala.inline
+  def GridTable3: GridTable3 = "GridTable3".asInstanceOf[GridTable3]
+  @scala.inline
+  def GridTable3_Accent1: GridTable3_Accent1 = "GridTable3_Accent1".asInstanceOf[GridTable3_Accent1]
+  @scala.inline
+  def GridTable3_Accent2: GridTable3_Accent2 = "GridTable3_Accent2".asInstanceOf[GridTable3_Accent2]
+  @scala.inline
+  def GridTable3_Accent3: GridTable3_Accent3 = "GridTable3_Accent3".asInstanceOf[GridTable3_Accent3]
+  @scala.inline
+  def GridTable3_Accent4: GridTable3_Accent4 = "GridTable3_Accent4".asInstanceOf[GridTable3_Accent4]
+  @scala.inline
+  def GridTable3_Accent5: GridTable3_Accent5 = "GridTable3_Accent5".asInstanceOf[GridTable3_Accent5]
+  @scala.inline
+  def GridTable3_Accent6: GridTable3_Accent6 = "GridTable3_Accent6".asInstanceOf[GridTable3_Accent6]
+  @scala.inline
+  def GridTable4: GridTable4 = "GridTable4".asInstanceOf[GridTable4]
+  @scala.inline
+  def GridTable4_Accent1: GridTable4_Accent1 = "GridTable4_Accent1".asInstanceOf[GridTable4_Accent1]
+  @scala.inline
+  def GridTable4_Accent2: GridTable4_Accent2 = "GridTable4_Accent2".asInstanceOf[GridTable4_Accent2]
+  @scala.inline
+  def GridTable4_Accent3: GridTable4_Accent3 = "GridTable4_Accent3".asInstanceOf[GridTable4_Accent3]
+  @scala.inline
+  def GridTable4_Accent4: GridTable4_Accent4 = "GridTable4_Accent4".asInstanceOf[GridTable4_Accent4]
+  @scala.inline
+  def GridTable4_Accent5: GridTable4_Accent5 = "GridTable4_Accent5".asInstanceOf[GridTable4_Accent5]
+  @scala.inline
+  def GridTable4_Accent6: GridTable4_Accent6 = "GridTable4_Accent6".asInstanceOf[GridTable4_Accent6]
+  @scala.inline
+  def GridTable5Dark: GridTable5Dark = "GridTable5Dark".asInstanceOf[GridTable5Dark]
+  @scala.inline
+  def GridTable5Dark_Accent1: GridTable5Dark_Accent1 = "GridTable5Dark_Accent1".asInstanceOf[GridTable5Dark_Accent1]
+  @scala.inline
+  def GridTable5Dark_Accent2: GridTable5Dark_Accent2 = "GridTable5Dark_Accent2".asInstanceOf[GridTable5Dark_Accent2]
+  @scala.inline
+  def GridTable5Dark_Accent3: GridTable5Dark_Accent3 = "GridTable5Dark_Accent3".asInstanceOf[GridTable5Dark_Accent3]
+  @scala.inline
+  def GridTable5Dark_Accent4: GridTable5Dark_Accent4 = "GridTable5Dark_Accent4".asInstanceOf[GridTable5Dark_Accent4]
+  @scala.inline
+  def GridTable5Dark_Accent5: GridTable5Dark_Accent5 = "GridTable5Dark_Accent5".asInstanceOf[GridTable5Dark_Accent5]
+  @scala.inline
+  def GridTable5Dark_Accent6: GridTable5Dark_Accent6 = "GridTable5Dark_Accent6".asInstanceOf[GridTable5Dark_Accent6]
+  @scala.inline
+  def GridTable6Colorful: GridTable6Colorful = "GridTable6Colorful".asInstanceOf[GridTable6Colorful]
+  @scala.inline
+  def GridTable6Colorful_Accent1: GridTable6Colorful_Accent1 = "GridTable6Colorful_Accent1".asInstanceOf[GridTable6Colorful_Accent1]
+  @scala.inline
+  def GridTable6Colorful_Accent2: GridTable6Colorful_Accent2 = "GridTable6Colorful_Accent2".asInstanceOf[GridTable6Colorful_Accent2]
+  @scala.inline
+  def GridTable6Colorful_Accent3: GridTable6Colorful_Accent3 = "GridTable6Colorful_Accent3".asInstanceOf[GridTable6Colorful_Accent3]
+  @scala.inline
+  def GridTable6Colorful_Accent4: GridTable6Colorful_Accent4 = "GridTable6Colorful_Accent4".asInstanceOf[GridTable6Colorful_Accent4]
+  @scala.inline
+  def GridTable6Colorful_Accent5: GridTable6Colorful_Accent5 = "GridTable6Colorful_Accent5".asInstanceOf[GridTable6Colorful_Accent5]
+  @scala.inline
+  def GridTable6Colorful_Accent6: GridTable6Colorful_Accent6 = "GridTable6Colorful_Accent6".asInstanceOf[GridTable6Colorful_Accent6]
+  @scala.inline
+  def GridTable7Colorful: GridTable7Colorful = "GridTable7Colorful".asInstanceOf[GridTable7Colorful]
+  @scala.inline
+  def GridTable7Colorful_Accent1: GridTable7Colorful_Accent1 = "GridTable7Colorful_Accent1".asInstanceOf[GridTable7Colorful_Accent1]
+  @scala.inline
+  def GridTable7Colorful_Accent2: GridTable7Colorful_Accent2 = "GridTable7Colorful_Accent2".asInstanceOf[GridTable7Colorful_Accent2]
+  @scala.inline
+  def GridTable7Colorful_Accent3: GridTable7Colorful_Accent3 = "GridTable7Colorful_Accent3".asInstanceOf[GridTable7Colorful_Accent3]
+  @scala.inline
+  def GridTable7Colorful_Accent4: GridTable7Colorful_Accent4 = "GridTable7Colorful_Accent4".asInstanceOf[GridTable7Colorful_Accent4]
+  @scala.inline
+  def GridTable7Colorful_Accent5: GridTable7Colorful_Accent5 = "GridTable7Colorful_Accent5".asInstanceOf[GridTable7Colorful_Accent5]
+  @scala.inline
+  def GridTable7Colorful_Accent6: GridTable7Colorful_Accent6 = "GridTable7Colorful_Accent6".asInstanceOf[GridTable7Colorful_Accent6]
+  @scala.inline
   def Group: Group = "Group".asInstanceOf[Group]
   @scala.inline
   def GrowthTrend: GrowthTrend = "GrowthTrend".asInstanceOf[GrowthTrend]
   @scala.inline
   def Hairline: Hairline = "Hairline".asInstanceOf[Hairline]
   @scala.inline
+  def HalfFrame: HalfFrame = "HalfFrame".asInstanceOf[HalfFrame]
+  @scala.inline
   def Header: Header = "Header".asInstanceOf[Header]
   @scala.inline
+  def Heading1: Heading1 = "Heading1".asInstanceOf[Heading1]
+  @scala.inline
+  def Heading2: Heading2 = "Heading2".asInstanceOf[Heading2]
+  @scala.inline
+  def Heading3: Heading3 = "Heading3".asInstanceOf[Heading3]
+  @scala.inline
+  def Heading4: Heading4 = "Heading4".asInstanceOf[Heading4]
+  @scala.inline
+  def Heading5: Heading5 = "Heading5".asInstanceOf[Heading5]
+  @scala.inline
+  def Heading6: Heading6 = "Heading6".asInstanceOf[Heading6]
+  @scala.inline
+  def Heading7: Heading7 = "Heading7".asInstanceOf[Heading7]
+  @scala.inline
+  def Heading8: Heading8 = "Heading8".asInstanceOf[Heading8]
+  @scala.inline
+  def Heading9: Heading9 = "Heading9".asInstanceOf[Heading9]
+  @scala.inline
+  def Heart: Heart = "Heart".asInstanceOf[Heart]
+  @scala.inline
   def Heavy: Heavy = "Heavy".asInstanceOf[Heavy]
+  @scala.inline
+  def Hebrew1: Hebrew1 = "Hebrew1".asInstanceOf[Hebrew1]
+  @scala.inline
+  def Hebrew2: Hebrew2 = "Hebrew2".asInstanceOf[Hebrew2]
+  @scala.inline
+  def Heptagon: Heptagon = "Heptagon".asInstanceOf[Heptagon]
+  @scala.inline
+  def Hex: Hex = "Hex".asInstanceOf[Hex]
+  @scala.inline
+  def Hexagon: Hexagon = "Hexagon".asInstanceOf[Hexagon]
   @scala.inline
   def Hidden: Hidden = "Hidden".asInstanceOf[Hidden]
   @scala.inline
@@ -2700,9 +4511,21 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def HighestValue: HighestValue = "HighestValue".asInstanceOf[HighestValue]
   @scala.inline
+  def Hindi1: Hindi1 = "Hindi1".asInstanceOf[Hindi1]
+  @scala.inline
+  def Hindi2: Hindi2 = "Hindi2".asInstanceOf[Hindi2]
+  @scala.inline
+  def Hindi3: Hindi3 = "Hindi3".asInstanceOf[Hindi3]
+  @scala.inline
+  def Histogram: Histogram = "Histogram".asInstanceOf[Histogram]
+  @scala.inline
   def Hollow: Hollow = "Hollow".asInstanceOf[Hollow]
   @scala.inline
+  def HomePlate: HomePlate = "HomePlate".asInstanceOf[HomePlate]
+  @scala.inline
   def Horizontal: Horizontal = "Horizontal".asInstanceOf[Horizontal]
+  @scala.inline
+  def HorizontalScroll: HorizontalScroll = "HorizontalScroll".asInstanceOf[HorizontalScroll]
   @scala.inline
   def Hour: Hour = "Hour".asInstanceOf[Hour]
   @scala.inline
@@ -2713,6 +4536,8 @@ object officeDashJsDashPreviewLibStrings {
   def HundredThousands: HundredThousands = "HundredThousands".asInstanceOf[HundredThousands]
   @scala.inline
   def Hundreds: Hundreds = "Hundreds".asInstanceOf[Hundreds]
+  @scala.inline
+  def Hyperlink: Hyperlink = "Hyperlink".asInstanceOf[Hyperlink]
   @scala.inline
   def Hyperlinks: Hyperlinks = "Hyperlinks".asInstanceOf[Hyperlinks]
   @scala.inline
@@ -2752,9 +4577,21 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Integer: Integer = "Integer".asInstanceOf[Integer]
   @scala.inline
+  def IntenseEmphasis: IntenseEmphasis = "IntenseEmphasis".asInstanceOf[IntenseEmphasis]
+  @scala.inline
+  def IntenseQuote: IntenseQuote = "IntenseQuote".asInstanceOf[IntenseQuote]
+  @scala.inline
+  def IntenseReference: IntenseReference = "IntenseReference".asInstanceOf[IntenseReference]
+  @scala.inline
   def Interplotted: Interplotted = "Interplotted".asInstanceOf[Interplotted]
   @scala.inline
   def Invalid: Invalid = "Invalid".asInstanceOf[Invalid]
+  @scala.inline
+  def Iroha: Iroha = "Iroha".asInstanceOf[Iroha]
+  @scala.inline
+  def IrregularSeal1: IrregularSeal1 = "IrregularSeal1".asInstanceOf[IrregularSeal1]
+  @scala.inline
+  def IrregularSeal2: IrregularSeal2 = "IrregularSeal2".asInstanceOf[IrregularSeal2]
   @scala.inline
   def JPEG: JPEG = "JPEG".asInstanceOf[JPEG]
   @scala.inline
@@ -2765,6 +4602,22 @@ object officeDashJsDashPreviewLibStrings {
   def Justify: Justify = "Justify".asInstanceOf[Justify]
   @scala.inline
   def JustifyLow: JustifyLow = "JustifyLow".asInstanceOf[JustifyLow]
+  @scala.inline
+  def KorDbNum1: KorDbNum1 = "KorDbNum1".asInstanceOf[KorDbNum1]
+  @scala.inline
+  def KorDbNum2: KorDbNum2 = "KorDbNum2".asInstanceOf[KorDbNum2]
+  @scala.inline
+  def KorDbNum3: KorDbNum3 = "KorDbNum3".asInstanceOf[KorDbNum3]
+  @scala.inline
+  def KorDbNum4: KorDbNum4 = "KorDbNum4".asInstanceOf[KorDbNum4]
+  @scala.inline
+  def LCGreek: LCGreek = "LCGreek".asInstanceOf[LCGreek]
+  @scala.inline
+  def LCLetter: LCLetter = "LCLetter".asInstanceOf[LCLetter]
+  @scala.inline
+  def LCRoman: LCRoman = "LCRoman".asInstanceOf[LCRoman]
+  @scala.inline
+  def LCRus: LCRus = "LCRus".asInstanceOf[LCRus]
   @scala.inline
   def LTR: LTR = "LTR".asInstanceOf[LTR]
   @scala.inline
@@ -2784,7 +4637,29 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Left: Left = "Left".asInstanceOf[Left]
   @scala.inline
+  def LeftArrow: LeftArrow = "LeftArrow".asInstanceOf[LeftArrow]
+  @scala.inline
+  def LeftArrowCallout: LeftArrowCallout = "LeftArrowCallout".asInstanceOf[LeftArrowCallout]
+  @scala.inline
+  def LeftBrace: LeftBrace = "LeftBrace".asInstanceOf[LeftBrace]
+  @scala.inline
+  def LeftBracket: LeftBracket = "LeftBracket".asInstanceOf[LeftBracket]
+  @scala.inline
+  def LeftCircularArrow: LeftCircularArrow = "LeftCircularArrow".asInstanceOf[LeftCircularArrow]
+  @scala.inline
+  def LeftRightArrow: LeftRightArrow = "LeftRightArrow".asInstanceOf[LeftRightArrow]
+  @scala.inline
+  def LeftRightArrowCallout: LeftRightArrowCallout = "LeftRightArrowCallout".asInstanceOf[LeftRightArrowCallout]
+  @scala.inline
+  def LeftRightCircularArrow: LeftRightCircularArrow = "LeftRightCircularArrow".asInstanceOf[LeftRightCircularArrow]
+  @scala.inline
+  def LeftRightRibbon: LeftRightRibbon = "LeftRightRibbon".asInstanceOf[LeftRightRibbon]
+  @scala.inline
+  def LeftRightUpArrow: LeftRightUpArrow = "LeftRightUpArrow".asInstanceOf[LeftRightUpArrow]
+  @scala.inline
   def LeftToRight: LeftToRight = "LeftToRight".asInstanceOf[LeftToRight]
+  @scala.inline
+  def LeftUpArrow: LeftUpArrow = "LeftUpArrow".asInstanceOf[LeftUpArrow]
   @scala.inline
   def Legal: Legal = "Legal".asInstanceOf[Legal]
   @scala.inline
@@ -2806,7 +4681,23 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def LightVertical: LightVertical = "LightVertical".asInstanceOf[LightVertical]
   @scala.inline
+  def LightningBolt: LightningBolt = "LightningBolt".asInstanceOf[LightningBolt]
+  @scala.inline
+  def Lim: Lim = "Lim".asInstanceOf[Lim]
+  @scala.inline
   def Line: Line = "Line".asInstanceOf[Line]
+  @scala.inline
+  def LineInverse: LineInverse = "LineInverse".asInstanceOf[LineInverse]
+  @scala.inline
+  def LineMarkers: LineMarkers = "LineMarkers".asInstanceOf[LineMarkers]
+  @scala.inline
+  def LineMarkersStacked: LineMarkersStacked = "LineMarkersStacked".asInstanceOf[LineMarkersStacked]
+  @scala.inline
+  def LineMarkersStacked100: LineMarkersStacked100 = "LineMarkersStacked100".asInstanceOf[LineMarkersStacked100]
+  @scala.inline
+  def LineStacked: LineStacked = "LineStacked".asInstanceOf[LineStacked]
+  @scala.inline
+  def LineStacked100: LineStacked100 = "LineStacked100".asInstanceOf[LineStacked100]
   @scala.inline
   def Linear: Linear = "Linear".asInstanceOf[Linear]
   @scala.inline
@@ -2819,6 +4710,106 @@ object officeDashJsDashPreviewLibStrings {
   def LinkedEntityMapIcon: LinkedEntityMapIcon = "LinkedEntityMapIcon".asInstanceOf[LinkedEntityMapIcon]
   @scala.inline
   def List: List = "List".asInstanceOf[List]
+  @scala.inline
+  def ListParagraph: ListParagraph = "ListParagraph".asInstanceOf[ListParagraph]
+  @scala.inline
+  def ListTable1Light: ListTable1Light = "ListTable1Light".asInstanceOf[ListTable1Light]
+  @scala.inline
+  def ListTable1Light_Accent1: ListTable1Light_Accent1 = "ListTable1Light_Accent1".asInstanceOf[ListTable1Light_Accent1]
+  @scala.inline
+  def ListTable1Light_Accent2: ListTable1Light_Accent2 = "ListTable1Light_Accent2".asInstanceOf[ListTable1Light_Accent2]
+  @scala.inline
+  def ListTable1Light_Accent3: ListTable1Light_Accent3 = "ListTable1Light_Accent3".asInstanceOf[ListTable1Light_Accent3]
+  @scala.inline
+  def ListTable1Light_Accent4: ListTable1Light_Accent4 = "ListTable1Light_Accent4".asInstanceOf[ListTable1Light_Accent4]
+  @scala.inline
+  def ListTable1Light_Accent5: ListTable1Light_Accent5 = "ListTable1Light_Accent5".asInstanceOf[ListTable1Light_Accent5]
+  @scala.inline
+  def ListTable1Light_Accent6: ListTable1Light_Accent6 = "ListTable1Light_Accent6".asInstanceOf[ListTable1Light_Accent6]
+  @scala.inline
+  def ListTable2: ListTable2 = "ListTable2".asInstanceOf[ListTable2]
+  @scala.inline
+  def ListTable2_Accent1: ListTable2_Accent1 = "ListTable2_Accent1".asInstanceOf[ListTable2_Accent1]
+  @scala.inline
+  def ListTable2_Accent2: ListTable2_Accent2 = "ListTable2_Accent2".asInstanceOf[ListTable2_Accent2]
+  @scala.inline
+  def ListTable2_Accent3: ListTable2_Accent3 = "ListTable2_Accent3".asInstanceOf[ListTable2_Accent3]
+  @scala.inline
+  def ListTable2_Accent4: ListTable2_Accent4 = "ListTable2_Accent4".asInstanceOf[ListTable2_Accent4]
+  @scala.inline
+  def ListTable2_Accent5: ListTable2_Accent5 = "ListTable2_Accent5".asInstanceOf[ListTable2_Accent5]
+  @scala.inline
+  def ListTable2_Accent6: ListTable2_Accent6 = "ListTable2_Accent6".asInstanceOf[ListTable2_Accent6]
+  @scala.inline
+  def ListTable3: ListTable3 = "ListTable3".asInstanceOf[ListTable3]
+  @scala.inline
+  def ListTable3_Accent1: ListTable3_Accent1 = "ListTable3_Accent1".asInstanceOf[ListTable3_Accent1]
+  @scala.inline
+  def ListTable3_Accent2: ListTable3_Accent2 = "ListTable3_Accent2".asInstanceOf[ListTable3_Accent2]
+  @scala.inline
+  def ListTable3_Accent3: ListTable3_Accent3 = "ListTable3_Accent3".asInstanceOf[ListTable3_Accent3]
+  @scala.inline
+  def ListTable3_Accent4: ListTable3_Accent4 = "ListTable3_Accent4".asInstanceOf[ListTable3_Accent4]
+  @scala.inline
+  def ListTable3_Accent5: ListTable3_Accent5 = "ListTable3_Accent5".asInstanceOf[ListTable3_Accent5]
+  @scala.inline
+  def ListTable3_Accent6: ListTable3_Accent6 = "ListTable3_Accent6".asInstanceOf[ListTable3_Accent6]
+  @scala.inline
+  def ListTable4: ListTable4 = "ListTable4".asInstanceOf[ListTable4]
+  @scala.inline
+  def ListTable4_Accent1: ListTable4_Accent1 = "ListTable4_Accent1".asInstanceOf[ListTable4_Accent1]
+  @scala.inline
+  def ListTable4_Accent2: ListTable4_Accent2 = "ListTable4_Accent2".asInstanceOf[ListTable4_Accent2]
+  @scala.inline
+  def ListTable4_Accent3: ListTable4_Accent3 = "ListTable4_Accent3".asInstanceOf[ListTable4_Accent3]
+  @scala.inline
+  def ListTable4_Accent4: ListTable4_Accent4 = "ListTable4_Accent4".asInstanceOf[ListTable4_Accent4]
+  @scala.inline
+  def ListTable4_Accent5: ListTable4_Accent5 = "ListTable4_Accent5".asInstanceOf[ListTable4_Accent5]
+  @scala.inline
+  def ListTable4_Accent6: ListTable4_Accent6 = "ListTable4_Accent6".asInstanceOf[ListTable4_Accent6]
+  @scala.inline
+  def ListTable5Dark: ListTable5Dark = "ListTable5Dark".asInstanceOf[ListTable5Dark]
+  @scala.inline
+  def ListTable5Dark_Accent1: ListTable5Dark_Accent1 = "ListTable5Dark_Accent1".asInstanceOf[ListTable5Dark_Accent1]
+  @scala.inline
+  def ListTable5Dark_Accent2: ListTable5Dark_Accent2 = "ListTable5Dark_Accent2".asInstanceOf[ListTable5Dark_Accent2]
+  @scala.inline
+  def ListTable5Dark_Accent3: ListTable5Dark_Accent3 = "ListTable5Dark_Accent3".asInstanceOf[ListTable5Dark_Accent3]
+  @scala.inline
+  def ListTable5Dark_Accent4: ListTable5Dark_Accent4 = "ListTable5Dark_Accent4".asInstanceOf[ListTable5Dark_Accent4]
+  @scala.inline
+  def ListTable5Dark_Accent5: ListTable5Dark_Accent5 = "ListTable5Dark_Accent5".asInstanceOf[ListTable5Dark_Accent5]
+  @scala.inline
+  def ListTable5Dark_Accent6: ListTable5Dark_Accent6 = "ListTable5Dark_Accent6".asInstanceOf[ListTable5Dark_Accent6]
+  @scala.inline
+  def ListTable6Colorful: ListTable6Colorful = "ListTable6Colorful".asInstanceOf[ListTable6Colorful]
+  @scala.inline
+  def ListTable6Colorful_Accent1: ListTable6Colorful_Accent1 = "ListTable6Colorful_Accent1".asInstanceOf[ListTable6Colorful_Accent1]
+  @scala.inline
+  def ListTable6Colorful_Accent2: ListTable6Colorful_Accent2 = "ListTable6Colorful_Accent2".asInstanceOf[ListTable6Colorful_Accent2]
+  @scala.inline
+  def ListTable6Colorful_Accent3: ListTable6Colorful_Accent3 = "ListTable6Colorful_Accent3".asInstanceOf[ListTable6Colorful_Accent3]
+  @scala.inline
+  def ListTable6Colorful_Accent4: ListTable6Colorful_Accent4 = "ListTable6Colorful_Accent4".asInstanceOf[ListTable6Colorful_Accent4]
+  @scala.inline
+  def ListTable6Colorful_Accent5: ListTable6Colorful_Accent5 = "ListTable6Colorful_Accent5".asInstanceOf[ListTable6Colorful_Accent5]
+  @scala.inline
+  def ListTable6Colorful_Accent6: ListTable6Colorful_Accent6 = "ListTable6Colorful_Accent6".asInstanceOf[ListTable6Colorful_Accent6]
+  @scala.inline
+  def ListTable7Colorful: ListTable7Colorful = "ListTable7Colorful".asInstanceOf[ListTable7Colorful]
+  @scala.inline
+  def ListTable7Colorful_Accent1: ListTable7Colorful_Accent1 = "ListTable7Colorful_Accent1".asInstanceOf[ListTable7Colorful_Accent1]
+  @scala.inline
+  def ListTable7Colorful_Accent2: ListTable7Colorful_Accent2 = "ListTable7Colorful_Accent2".asInstanceOf[ListTable7Colorful_Accent2]
+  @scala.inline
+  def ListTable7Colorful_Accent3: ListTable7Colorful_Accent3 = "ListTable7Colorful_Accent3".asInstanceOf[ListTable7Colorful_Accent3]
+  @scala.inline
+  def ListTable7Colorful_Accent4: ListTable7Colorful_Accent4 = "ListTable7Colorful_Accent4".asInstanceOf[ListTable7Colorful_Accent4]
+  @scala.inline
+  def ListTable7Colorful_Accent5: ListTable7Colorful_Accent5 = "ListTable7Colorful_Accent5".asInstanceOf[ListTable7Colorful_Accent5]
+  @scala.inline
+  def ListTable7Colorful_Accent6: ListTable7Colorful_Accent6 = "ListTable7Colorful_Accent6".asInstanceOf[ListTable7Colorful_Accent6]
   @scala.inline
   def Local: Local = "Local".asInstanceOf[Local]
   @scala.inline
@@ -2851,6 +4842,18 @@ object officeDashJsDashPreviewLibStrings {
   def MainDoc: MainDoc = "MainDoc".asInstanceOf[MainDoc]
   @scala.inline
   def Manual: Manual = "Manual".asInstanceOf[Manual]
+  @scala.inline
+  def MathDivide: MathDivide = "MathDivide".asInstanceOf[MathDivide]
+  @scala.inline
+  def MathEqual: MathEqual = "MathEqual".asInstanceOf[MathEqual]
+  @scala.inline
+  def MathMinus: MathMinus = "MathMinus".asInstanceOf[MathMinus]
+  @scala.inline
+  def MathMultiply: MathMultiply = "MathMultiply".asInstanceOf[MathMultiply]
+  @scala.inline
+  def MathNotEqual: MathNotEqual = "MathNotEqual".asInstanceOf[MathNotEqual]
+  @scala.inline
+  def MathPlus: MathPlus = "MathPlus".asInstanceOf[MathPlus]
   @scala.inline
   def Max: Max = "Max".asInstanceOf[Max]
   @scala.inline
@@ -2910,6 +4913,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Months: Months = "Months".asInstanceOf[Months]
   @scala.inline
+  def Moon: Moon = "Moon".asInstanceOf[Moon]
+  @scala.inline
   def MovingAverage: MovingAverage = "MovingAverage".asInstanceOf[MovingAverage]
   @scala.inline
   def Narrow: Narrow = "Narrow".asInstanceOf[Narrow]
@@ -2930,9 +4935,15 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def NoFill: NoFill = "NoFill".asInstanceOf[NoFill]
   @scala.inline
+  def NoSmoking: NoSmoking = "NoSmoking".asInstanceOf[NoSmoking]
+  @scala.inline
+  def NoSpacing: NoSpacing = "NoSpacing".asInstanceOf[NoSpacing]
+  @scala.inline
   def NonBlanks: NonBlanks = "NonBlanks".asInstanceOf[NonBlanks]
   @scala.inline
   def NonErrors: NonErrors = "NonErrors".asInstanceOf[NonErrors]
+  @scala.inline
+  def NonIsoscelesTrapezoid: NonIsoscelesTrapezoid = "NonIsoscelesTrapezoid".asInstanceOf[NonIsoscelesTrapezoid]
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
@@ -2948,13 +4959,19 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def NotPlotted: NotPlotted = "NotPlotted".asInstanceOf[NotPlotted]
   @scala.inline
+  def NotchedRightArrow: NotchedRightArrow = "NotchedRightArrow".asInstanceOf[NotchedRightArrow]
+  @scala.inline
   def Note: Note = "Note".asInstanceOf[Note]
+  @scala.inline
+  def NumInDash: NumInDash = "NumInDash".asInstanceOf[NumInDash]
   @scala.inline
   def Number: Number = "Number".asInstanceOf[Number]
   @scala.inline
   def Numbers: Numbers = "Numbers".asInstanceOf[Numbers]
   @scala.inline
   def NumbersText: NumbersText = "NumbersText".asInstanceOf[NumbersText]
+  @scala.inline
+  def Octagon: Octagon = "Octagon".asInstanceOf[Octagon]
   @scala.inline
   def OddAndEven: OddAndEven = "OddAndEven".asInstanceOf[OddAndEven]
   @scala.inline
@@ -2971,6 +4988,10 @@ object officeDashJsDashPreviewLibStrings {
   def Open: Open = "Open".asInstanceOf[Open]
   @scala.inline
   def Or: Or = "Or".asInstanceOf[Or]
+  @scala.inline
+  def Ordinal: Ordinal = "Ordinal".asInstanceOf[Ordinal]
+  @scala.inline
+  def Ordtext: Ordtext = "Ordtext".asInstanceOf[Ordtext]
   @scala.inline
   def OriginalSize: OriginalSize = "OriginalSize".asInstanceOf[OriginalSize]
   @scala.inline
@@ -3002,11 +5023,17 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Paper11x17: Paper11x17 = "Paper11x17".asInstanceOf[Paper11x17]
   @scala.inline
+  def Parallelogram: Parallelogram = "Parallelogram".asInstanceOf[Parallelogram]
+  @scala.inline
+  def Pareto: Pareto = "Pareto".asInstanceOf[Pareto]
+  @scala.inline
   def Pattern: Pattern = "Pattern".asInstanceOf[Pattern]
   @scala.inline
   def Pdf: Pdf = "Pdf".asInstanceOf[Pdf]
   @scala.inline
   def Pending: Pending = "Pending".asInstanceOf[Pending]
+  @scala.inline
+  def Pentagon: Pentagon = "Pentagon".asInstanceOf[Pentagon]
   @scala.inline
   def Percent: Percent = "Percent".asInstanceOf[Percent]
   @scala.inline
@@ -3038,15 +5065,37 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def PictureAndTexture: PictureAndTexture = "PictureAndTexture".asInstanceOf[PictureAndTexture]
   @scala.inline
+  def Pie: Pie = "Pie".asInstanceOf[Pie]
+  @scala.inline
+  def PieExploded: PieExploded = "PieExploded".asInstanceOf[PieExploded]
+  @scala.inline
+  def PieOfPie: PieOfPie = "PieOfPie".asInstanceOf[PieOfPie]
+  @scala.inline
+  def PieWedge: PieWedge = "PieWedge".asInstanceOf[PieWedge]
+  @scala.inline
   def PinYin: PinYin = "PinYin".asInstanceOf[PinYin]
   @scala.inline
   def Plain: Plain = "Plain".asInstanceOf[Plain]
+  @scala.inline
+  def PlainTable1: PlainTable1 = "PlainTable1".asInstanceOf[PlainTable1]
+  @scala.inline
+  def PlainTable2: PlainTable2 = "PlainTable2".asInstanceOf[PlainTable2]
+  @scala.inline
+  def PlainTable3: PlainTable3 = "PlainTable3".asInstanceOf[PlainTable3]
+  @scala.inline
+  def PlainTable4: PlainTable4 = "PlainTable4".asInstanceOf[PlainTable4]
+  @scala.inline
+  def PlainTable5: PlainTable5 = "PlainTable5".asInstanceOf[PlainTable5]
   @scala.inline
   def PlainText: PlainText = "PlainText".asInstanceOf[PlainText]
   @scala.inline
   def PlainTextInline: PlainTextInline = "PlainTextInline".asInstanceOf[PlainTextInline]
   @scala.inline
   def PlainTextParagraph: PlainTextParagraph = "PlainTextParagraph".asInstanceOf[PlainTextParagraph]
+  @scala.inline
+  def Plaque: Plaque = "Plaque".asInstanceOf[Plaque]
+  @scala.inline
+  def PlaqueTabs: PlaqueTabs = "PlaqueTabs".asInstanceOf[PlaqueTabs]
   @scala.inline
   def Plus: Plus = "Plus".asInstanceOf[Plus]
   @scala.inline
@@ -3070,11 +5119,37 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Prompt: Prompt = "Prompt".asInstanceOf[Prompt]
   @scala.inline
+  def PyramidBarClustered: PyramidBarClustered = "PyramidBarClustered".asInstanceOf[PyramidBarClustered]
+  @scala.inline
+  def PyramidBarStacked: PyramidBarStacked = "PyramidBarStacked".asInstanceOf[PyramidBarStacked]
+  @scala.inline
+  def PyramidBarStacked100: PyramidBarStacked100 = "PyramidBarStacked100".asInstanceOf[PyramidBarStacked100]
+  @scala.inline
+  def PyramidCol: PyramidCol = "PyramidCol".asInstanceOf[PyramidCol]
+  @scala.inline
+  def PyramidColClustered: PyramidColClustered = "PyramidColClustered".asInstanceOf[PyramidColClustered]
+  @scala.inline
+  def PyramidColStacked: PyramidColStacked = "PyramidColStacked".asInstanceOf[PyramidColStacked]
+  @scala.inline
+  def PyramidColStacked100: PyramidColStacked100 = "PyramidColStacked100".asInstanceOf[PyramidColStacked100]
+  @scala.inline
+  def QuadArrow: QuadArrow = "QuadArrow".asInstanceOf[QuadArrow]
+  @scala.inline
+  def QuadArrowCallout: QuadArrowCallout = "QuadArrowCallout".asInstanceOf[QuadArrowCallout]
+  @scala.inline
   def Quatro: Quatro = "Quatro".asInstanceOf[Quatro]
   @scala.inline
   def Question: Question = "Question".asInstanceOf[Question]
   @scala.inline
+  def Quote: Quote = "Quote".asInstanceOf[Quote]
+  @scala.inline
   def RTL: RTL = "RTL".asInstanceOf[RTL]
+  @scala.inline
+  def Radar: Radar = "Radar".asInstanceOf[Radar]
+  @scala.inline
+  def RadarFilled: RadarFilled = "RadarFilled".asInstanceOf[RadarFilled]
+  @scala.inline
+  def RadarMarkers: RadarMarkers = "RadarMarkers".asInstanceOf[RadarMarkers]
   @scala.inline
   def Range: Range = "Range".asInstanceOf[Range]
   @scala.inline
@@ -3086,7 +5161,11 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Recalculate: Recalculate = "Recalculate".asInstanceOf[Recalculate]
   @scala.inline
+  def Rectangle: Rectangle = "Rectangle".asInstanceOf[Rectangle]
+  @scala.inline
   def RectangularGradient: RectangularGradient = "RectangularGradient".asInstanceOf[RectangularGradient]
+  @scala.inline
+  def RegionMap: RegionMap = "RegionMap".asInstanceOf[RegionMap]
   @scala.inline
   def Remote: Remote = "Remote".asInstanceOf[Remote]
   @scala.inline
@@ -3095,6 +5174,10 @@ object officeDashJsDashPreviewLibStrings {
   def RepeatingSection: RepeatingSection = "RepeatingSection".asInstanceOf[RepeatingSection]
   @scala.inline
   def Replace: Replace = "Replace".asInstanceOf[Replace]
+  @scala.inline
+  def Ribbon: Ribbon = "Ribbon".asInstanceOf[Ribbon]
+  @scala.inline
+  def Ribbon2: Ribbon2 = "Ribbon2".asInstanceOf[Ribbon2]
   @scala.inline
   def RichText: RichText = "RichText".asInstanceOf[RichText]
   @scala.inline
@@ -3112,11 +5195,29 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Right: Right = "Right".asInstanceOf[Right]
   @scala.inline
+  def RightArrow: RightArrow = "RightArrow".asInstanceOf[RightArrow]
+  @scala.inline
+  def RightArrowCallout: RightArrowCallout = "RightArrowCallout".asInstanceOf[RightArrowCallout]
+  @scala.inline
+  def RightBrace: RightBrace = "RightBrace".asInstanceOf[RightBrace]
+  @scala.inline
+  def RightBracket: RightBracket = "RightBracket".asInstanceOf[RightBracket]
+  @scala.inline
   def RightToLeft: RightToLeft = "RightToLeft".asInstanceOf[RightToLeft]
+  @scala.inline
+  def RightTriangle: RightTriangle = "RightTriangle".asInstanceOf[RightTriangle]
   @scala.inline
   def Robinson: Robinson = "Robinson".asInstanceOf[Robinson]
   @scala.inline
+  def Round1Rectangle: Round1Rectangle = "Round1Rectangle".asInstanceOf[Round1Rectangle]
+  @scala.inline
+  def Round2DiagonalRectangle: Round2DiagonalRectangle = "Round2DiagonalRectangle".asInstanceOf[Round2DiagonalRectangle]
+  @scala.inline
+  def Round2SameRectangle: Round2SameRectangle = "Round2SameRectangle".asInstanceOf[Round2SameRectangle]
+  @scala.inline
   def RoundDot: RoundDot = "RoundDot".asInstanceOf[RoundDot]
+  @scala.inline
+  def RoundRectangle: RoundRectangle = "RoundRectangle".asInstanceOf[RoundRectangle]
   @scala.inline
   def Row: Row = "Row".asInstanceOf[Row]
   @scala.inline
@@ -3135,6 +5236,8 @@ object officeDashJsDashPreviewLibStrings {
   def SameDataValidation: SameDataValidation = "SameDataValidation".asInstanceOf[SameDataValidation]
   @scala.inline
   def Save: Save = "Save".asInstanceOf[Save]
+  @scala.inline
+  def SbChar: SbChar = "SbChar".asInstanceOf[SbChar]
   @scala.inline
   def ScaleFromBottomRight: ScaleFromBottomRight = "ScaleFromBottomRight".asInstanceOf[ScaleFromBottomRight]
   @scala.inline
@@ -3192,6 +5295,16 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def SlantDashDot: SlantDashDot = "SlantDashDot".asInstanceOf[SlantDashDot]
   @scala.inline
+  def SmileyFace: SmileyFace = "SmileyFace".asInstanceOf[SmileyFace]
+  @scala.inline
+  def Snip1Rectangle: Snip1Rectangle = "Snip1Rectangle".asInstanceOf[Snip1Rectangle]
+  @scala.inline
+  def Snip2DiagonalRectangle: Snip2DiagonalRectangle = "Snip2DiagonalRectangle".asInstanceOf[Snip2DiagonalRectangle]
+  @scala.inline
+  def Snip2SameRectangle: Snip2SameRectangle = "Snip2SameRectangle".asInstanceOf[Snip2SameRectangle]
+  @scala.inline
+  def SnipRoundRectangle: SnipRoundRectangle = "SnipRoundRectangle".asInstanceOf[SnipRoundRectangle]
+  @scala.inline
   def Solid: Solid = "Solid".asInstanceOf[Solid]
   @scala.inline
   def SplitByCustomSplit: SplitByCustomSplit = "SplitByCustomSplit".asInstanceOf[SplitByCustomSplit]
@@ -3206,6 +5319,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def SquareDot: SquareDot = "SquareDot".asInstanceOf[SquareDot]
   @scala.inline
+  def SquareTabs: SquareTabs = "SquareTabs".asInstanceOf[SquareTabs]
+  @scala.inline
   def StDev: StDev = "StDev".asInstanceOf[StDev]
   @scala.inline
   def StError: StError = "StError".asInstanceOf[StError]
@@ -3215,6 +5330,26 @@ object officeDashJsDashPreviewLibStrings {
   def StandardDeviationP: StandardDeviationP = "StandardDeviationP".asInstanceOf[StandardDeviationP]
   @scala.inline
   def Star: Star = "Star".asInstanceOf[Star]
+  @scala.inline
+  def Star10: Star10 = "Star10".asInstanceOf[Star10]
+  @scala.inline
+  def Star12: Star12 = "Star12".asInstanceOf[Star12]
+  @scala.inline
+  def Star16: Star16 = "Star16".asInstanceOf[Star16]
+  @scala.inline
+  def Star24: Star24 = "Star24".asInstanceOf[Star24]
+  @scala.inline
+  def Star32: Star32 = "Star32".asInstanceOf[Star32]
+  @scala.inline
+  def Star4: Star4 = "Star4".asInstanceOf[Star4]
+  @scala.inline
+  def Star5: Star5 = "Star5".asInstanceOf[Star5]
+  @scala.inline
+  def Star6: Star6 = "Star6".asInstanceOf[Star6]
+  @scala.inline
+  def Star7: Star7 = "Star7".asInstanceOf[Star7]
+  @scala.inline
+  def Star8: Star8 = "Star8".asInstanceOf[Star8]
   @scala.inline
   def Start: Start = "Start".asInstanceOf[Start]
   @scala.inline
@@ -3226,17 +5361,49 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Stealth: Stealth = "Stealth".asInstanceOf[Stealth]
   @scala.inline
+  def StockHLC: StockHLC = "StockHLC".asInstanceOf[StockHLC]
+  @scala.inline
+  def StockOHLC: StockOHLC = "StockOHLC".asInstanceOf[StockOHLC]
+  @scala.inline
+  def StockVHLC: StockVHLC = "StockVHLC".asInstanceOf[StockVHLC]
+  @scala.inline
+  def StockVOHLC: StockVOHLC = "StockVOHLC".asInstanceOf[StockVOHLC]
+  @scala.inline
   def Stop: Stop = "Stop".asInstanceOf[Stop]
   @scala.inline
   def Straight: Straight = "Straight".asInstanceOf[Straight]
   @scala.inline
   def String: String = "String".asInstanceOf[String]
   @scala.inline
+  def StripedRightArrow: StripedRightArrow = "StripedRightArrow".asInstanceOf[StripedRightArrow]
+  @scala.inline
   def StrokeCount: StrokeCount = "StrokeCount".asInstanceOf[StrokeCount]
+  @scala.inline
+  def Strong: Strong = "Strong".asInstanceOf[Strong]
+  @scala.inline
+  def Subtitle: Subtitle = "Subtitle".asInstanceOf[Subtitle]
+  @scala.inline
+  def SubtleEmphasis: SubtleEmphasis = "SubtleEmphasis".asInstanceOf[SubtleEmphasis]
+  @scala.inline
+  def SubtleReference: SubtleReference = "SubtleReference".asInstanceOf[SubtleReference]
   @scala.inline
   def Sum: Sum = "Sum".asInstanceOf[Sum]
   @scala.inline
+  def Sun: Sun = "Sun".asInstanceOf[Sun]
+  @scala.inline
+  def Sunburst: Sunburst = "Sunburst".asInstanceOf[Sunburst]
+  @scala.inline
+  def Surface: Surface = "Surface".asInstanceOf[Surface]
+  @scala.inline
+  def SurfaceTopView: SurfaceTopView = "SurfaceTopView".asInstanceOf[SurfaceTopView]
+  @scala.inline
+  def SurfaceTopViewWireframe: SurfaceTopViewWireframe = "SurfaceTopViewWireframe".asInstanceOf[SurfaceTopViewWireframe]
+  @scala.inline
+  def SurfaceWireframe: SurfaceWireframe = "SurfaceWireframe".asInstanceOf[SurfaceWireframe]
+  @scala.inline
   def Svg: Svg = "Svg".asInstanceOf[Svg]
+  @scala.inline
+  def SwooshArrow: SwooshArrow = "SwooshArrow".asInstanceOf[SwooshArrow]
   @scala.inline
   def SystemDash: SystemDash = "SystemDash".asInstanceOf[SystemDash]
   @scala.inline
@@ -3256,6 +5423,10 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def TableFiltered: TableFiltered = "TableFiltered".asInstanceOf[TableFiltered]
   @scala.inline
+  def TableGrid: TableGrid = "TableGrid".asInstanceOf[TableGrid]
+  @scala.inline
+  def TableGridLight: TableGridLight = "TableGridLight".asInstanceOf[TableGridLight]
+  @scala.inline
   def TableSelectionChanged: TableSelectionChanged = "TableSelectionChanged".asInstanceOf[TableSelectionChanged]
   @scala.inline
   def Tabloid: Tabloid = "Tabloid".asInstanceOf[Tabloid]
@@ -3268,6 +5439,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def TaskRemoved: TaskRemoved = "TaskRemoved".asInstanceOf[TaskRemoved]
   @scala.inline
+  def Teardrop: Teardrop = "Teardrop".asInstanceOf[Teardrop]
+  @scala.inline
   def TenMillions: TenMillions = "TenMillions".asInstanceOf[TenMillions]
   @scala.inline
   def TenThousands: TenThousands = "TenThousands".asInstanceOf[TenThousands]
@@ -3279,6 +5452,10 @@ object officeDashJsDashPreviewLibStrings {
   def TextAxis: TextAxis = "TextAxis".asInstanceOf[TextAxis]
   @scala.inline
   def TextLength: TextLength = "TextLength".asInstanceOf[TextLength]
+  @scala.inline
+  def Thai1: Thai1 = "Thai1".asInstanceOf[Thai1]
+  @scala.inline
+  def Thai2: Thai2 = "Thai2".asInstanceOf[Thai2]
   @scala.inline
   def ThaiDistributed: ThaiDistributed = "ThaiDistributed".asInstanceOf[ThaiDistributed]
   @scala.inline
@@ -3358,11 +5535,33 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Time: Time = "Time".asInstanceOf[Time]
   @scala.inline
+  def Title: Title = "Title".asInstanceOf[Title]
+  @scala.inline
   def ToDo: ToDo = "ToDo".asInstanceOf[ToDo]
   @scala.inline
   def ToDoPriority1: ToDoPriority1 = "ToDoPriority1".asInstanceOf[ToDoPriority1]
   @scala.inline
   def ToDoPriority2: ToDoPriority2 = "ToDoPriority2".asInstanceOf[ToDoPriority2]
+  @scala.inline
+  def Toc1: Toc1 = "Toc1".asInstanceOf[Toc1]
+  @scala.inline
+  def Toc2: Toc2 = "Toc2".asInstanceOf[Toc2]
+  @scala.inline
+  def Toc3: Toc3 = "Toc3".asInstanceOf[Toc3]
+  @scala.inline
+  def Toc4: Toc4 = "Toc4".asInstanceOf[Toc4]
+  @scala.inline
+  def Toc5: Toc5 = "Toc5".asInstanceOf[Toc5]
+  @scala.inline
+  def Toc6: Toc6 = "Toc6".asInstanceOf[Toc6]
+  @scala.inline
+  def Toc7: Toc7 = "Toc7".asInstanceOf[Toc7]
+  @scala.inline
+  def Toc8: Toc8 = "Toc8".asInstanceOf[Toc8]
+  @scala.inline
+  def Toc9: Toc9 = "Toc9".asInstanceOf[Toc9]
+  @scala.inline
+  def TocHeading: TocHeading = "TocHeading".asInstanceOf[TocHeading]
   @scala.inline
   def Today: Today = "Today".asInstanceOf[Today]
   @scala.inline
@@ -3375,6 +5574,18 @@ object officeDashJsDashPreviewLibStrings {
   def TopItems: TopItems = "TopItems".asInstanceOf[TopItems]
   @scala.inline
   def TopPercent: TopPercent = "TopPercent".asInstanceOf[TopPercent]
+  @scala.inline
+  def TpeDbNum1: TpeDbNum1 = "TpeDbNum1".asInstanceOf[TpeDbNum1]
+  @scala.inline
+  def TpeDbNum2: TpeDbNum2 = "TpeDbNum2".asInstanceOf[TpeDbNum2]
+  @scala.inline
+  def TpeDbNum3: TpeDbNum3 = "TpeDbNum3".asInstanceOf[TpeDbNum3]
+  @scala.inline
+  def TpeDbNum4: TpeDbNum4 = "TpeDbNum4".asInstanceOf[TpeDbNum4]
+  @scala.inline
+  def Trapezoid: Trapezoid = "Trapezoid".asInstanceOf[Trapezoid]
+  @scala.inline
+  def Treemap: Treemap = "Treemap".asInstanceOf[Treemap]
   @scala.inline
   def Triangle: Triangle = "Triangle".asInstanceOf[Triangle]
   @scala.inline
@@ -3396,6 +5607,14 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def TwoStdDevBelowAverage: TwoStdDevBelowAverage = "TwoStdDevBelowAverage".asInstanceOf[TwoStdDevBelowAverage]
   @scala.inline
+  def UCGreek: UCGreek = "UCGreek".asInstanceOf[UCGreek]
+  @scala.inline
+  def UCLetter: UCLetter = "UCLetter".asInstanceOf[UCLetter]
+  @scala.inline
+  def UCRoman: UCRoman = "UCRoman".asInstanceOf[UCRoman]
+  @scala.inline
+  def UCRus: UCRus = "UCRus".asInstanceOf[UCRus]
+  @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   @scala.inline
   def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
@@ -3410,9 +5629,19 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Up: Up = "Up".asInstanceOf[Up]
   @scala.inline
+  def UpArrow: UpArrow = "UpArrow".asInstanceOf[UpArrow]
+  @scala.inline
+  def UpArrowCallout: UpArrowCallout = "UpArrowCallout".asInstanceOf[UpArrowCallout]
+  @scala.inline
+  def UpDownArrow: UpDownArrow = "UpDownArrow".asInstanceOf[UpDownArrow]
+  @scala.inline
+  def UpDownArrowCallout: UpDownArrowCallout = "UpDownArrowCallout".asInstanceOf[UpDownArrowCallout]
+  @scala.inline
   def UpperLetter: UpperLetter = "UpperLetter".asInstanceOf[UpperLetter]
   @scala.inline
   def UpperRoman: UpperRoman = "UpperRoman".asInstanceOf[UpperRoman]
+  @scala.inline
+  def UturnArrow: UturnArrow = "UturnArrow".asInstanceOf[UturnArrow]
   @scala.inline
   def Value: Value = "Value".asInstanceOf[Value]
   @scala.inline
@@ -3426,11 +5655,15 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Vertical270: Vertical270 = "Vertical270".asInstanceOf[Vertical270]
   @scala.inline
+  def VerticalScroll: VerticalScroll = "VerticalScroll".asInstanceOf[VerticalScroll]
+  @scala.inline
   def VeryHidden: VeryHidden = "VeryHidden".asInstanceOf[VeryHidden]
   @scala.inline
   def Visible: Visible = "Visible".asInstanceOf[Visible]
   @scala.inline
   def Warning: Warning = "Warning".asInstanceOf[Warning]
+  @scala.inline
+  def Waterfall: Waterfall = "Waterfall".asInstanceOf[Waterfall]
   @scala.inline
   def Wave: Wave = "Wave".asInstanceOf[Wave]
   @scala.inline
@@ -3445,6 +5678,12 @@ object officeDashJsDashPreviewLibStrings {
   def WavyHeavy: WavyHeavy = "WavyHeavy".asInstanceOf[WavyHeavy]
   @scala.inline
   def Website: Website = "Website".asInstanceOf[Website]
+  @scala.inline
+  def WedgeEllipseCallout: WedgeEllipseCallout = "WedgeEllipseCallout".asInstanceOf[WedgeEllipseCallout]
+  @scala.inline
+  def WedgeRRectCallout: WedgeRRectCallout = "WedgeRRectCallout".asInstanceOf[WedgeRRectCallout]
+  @scala.inline
+  def WedgeRectCallout: WedgeRectCallout = "WedgeRectCallout".asInstanceOf[WedgeRectCallout]
   @scala.inline
   def Whole: Whole = "Whole".asInstanceOf[Whole]
   @scala.inline
@@ -3488,6 +5727,16 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   @scala.inline
+  def XYScatter: XYScatter = "XYScatter".asInstanceOf[XYScatter]
+  @scala.inline
+  def XYScatterLines: XYScatterLines = "XYScatterLines".asInstanceOf[XYScatterLines]
+  @scala.inline
+  def XYScatterLinesNoMarkers: XYScatterLinesNoMarkers = "XYScatterLinesNoMarkers".asInstanceOf[XYScatterLinesNoMarkers]
+  @scala.inline
+  def XYScatterSmooth: XYScatterSmooth = "XYScatterSmooth".asInstanceOf[XYScatterSmooth]
+  @scala.inline
+  def XYScatterSmoothNoMarkers: XYScatterSmoothNoMarkers = "XYScatterSmoothNoMarkers".asInstanceOf[XYScatterSmoothNoMarkers]
+  @scala.inline
   def Year: Year = "Year".asInstanceOf[Year]
   @scala.inline
   def YearToDate: YearToDate = "YearToDate".asInstanceOf[YearToDate]
@@ -3497,6 +5746,12 @@ object officeDashJsDashPreviewLibStrings {
   def Yesterday: Yesterday = "Yesterday".asInstanceOf[Yesterday]
   @scala.inline
   def Zero: Zero = "Zero".asInstanceOf[Zero]
+  @scala.inline
+  def Zodiac1: Zodiac1 = "Zodiac1".asInstanceOf[Zodiac1]
+  @scala.inline
+  def Zodiac2: Zodiac2 = "Zodiac2".asInstanceOf[Zodiac2]
+  @scala.inline
+  def Zodiac3: Zodiac3 = "Zodiac3".asInstanceOf[Zodiac3]
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   @scala.inline

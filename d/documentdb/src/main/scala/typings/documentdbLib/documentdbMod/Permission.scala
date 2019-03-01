@@ -12,3 +12,14 @@ trait Permission extends UniqueId {
   var resource: java.lang.String
 }
 
+object Permission {
+  @scala.inline
+  def apply(id: java.lang.String, permissionMode: PermissionMode, resource: java.lang.String): Permission = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("permissionMode")(permissionMode)
+    __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[Permission]
+  }
+}
+

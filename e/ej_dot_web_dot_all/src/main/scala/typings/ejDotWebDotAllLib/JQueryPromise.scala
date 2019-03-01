@@ -12,3 +12,12 @@ trait JQueryPromise[T] extends js.Object {
   var cancel: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object JQueryPromise {
+  @scala.inline
+  def apply[T](cancel: js.UndefOr[scala.Boolean] = js.undefined): JQueryPromise[T] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    __obj.asInstanceOf[JQueryPromise[T]]
+  }
+}
+

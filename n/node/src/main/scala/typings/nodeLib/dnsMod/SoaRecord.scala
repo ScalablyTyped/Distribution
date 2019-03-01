@@ -15,3 +15,26 @@ trait SoaRecord extends js.Object {
   var serial: scala.Double
 }
 
+object SoaRecord {
+  @scala.inline
+  def apply(
+    expire: scala.Double,
+    hostmaster: java.lang.String,
+    minttl: scala.Double,
+    nsname: java.lang.String,
+    refresh: scala.Double,
+    retry: scala.Double,
+    serial: scala.Double
+  ): SoaRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expire")(expire)
+    __obj.updateDynamic("hostmaster")(hostmaster)
+    __obj.updateDynamic("minttl")(minttl)
+    __obj.updateDynamic("nsname")(nsname)
+    __obj.updateDynamic("refresh")(refresh)
+    __obj.updateDynamic("retry")(retry)
+    __obj.updateDynamic("serial")(serial)
+    __obj.asInstanceOf[SoaRecord]
+  }
+}
+

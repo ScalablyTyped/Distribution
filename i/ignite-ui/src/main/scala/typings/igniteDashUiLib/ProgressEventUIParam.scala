@@ -20,3 +20,18 @@ trait ProgressEventUIParam extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProgressEventUIParam {
+  @scala.inline
+  def apply(
+    currentTime: scala.Int | scala.Double = null,
+    duration: scala.Int | scala.Double = null,
+    source: java.lang.String = null
+  ): ProgressEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[ProgressEventUIParam]
+  }
+}
+

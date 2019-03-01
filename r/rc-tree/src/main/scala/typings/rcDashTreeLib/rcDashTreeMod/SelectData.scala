@@ -12,3 +12,20 @@ trait SelectData extends js.Object {
   var selectedNodes: js.Array[InternalTreeNode]
 }
 
+object SelectData {
+  @scala.inline
+  def apply(
+    event: rcDashTreeLib.rcDashTreeLibStrings.select,
+    node: InternalTreeNode,
+    selected: scala.Boolean,
+    selectedNodes: js.Array[InternalTreeNode]
+  ): SelectData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("node")(node)
+    __obj.updateDynamic("selected")(selected)
+    __obj.updateDynamic("selectedNodes")(selectedNodes)
+    __obj.asInstanceOf[SelectData]
+  }
+}
+

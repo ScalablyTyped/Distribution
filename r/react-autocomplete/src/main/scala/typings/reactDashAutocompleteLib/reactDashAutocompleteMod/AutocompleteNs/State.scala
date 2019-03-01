@@ -22,3 +22,22 @@ trait State extends js.Object {
   var menuWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object State {
+  @scala.inline
+  def apply(
+    isOpen: scala.Boolean,
+    highlightedIndex: scala.Int | scala.Double = null,
+    menuLeft: scala.Int | scala.Double = null,
+    menuTop: scala.Int | scala.Double = null,
+    menuWidth: scala.Int | scala.Double = null
+  ): State = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isOpen")(isOpen)
+    if (highlightedIndex != null) __obj.updateDynamic("highlightedIndex")(highlightedIndex.asInstanceOf[js.Any])
+    if (menuLeft != null) __obj.updateDynamic("menuLeft")(menuLeft.asInstanceOf[js.Any])
+    if (menuTop != null) __obj.updateDynamic("menuTop")(menuTop.asInstanceOf[js.Any])
+    if (menuWidth != null) __obj.updateDynamic("menuWidth")(menuWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[State]
+  }
+}
+

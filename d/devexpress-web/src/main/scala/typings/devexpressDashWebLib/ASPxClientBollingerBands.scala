@@ -21,3 +21,22 @@ trait ASPxClientBollingerBands extends ASPxClientIndicator {
   var valueLevel: java.lang.String
 }
 
+object ASPxClientBollingerBands {
+  @scala.inline
+  def apply(
+    chart: ASPxClientWebChart,
+    name: java.lang.String,
+    pointsCount: scala.Double,
+    series: ASPxClientSeries,
+    valueLevel: java.lang.String
+  ): ASPxClientBollingerBands = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("pointsCount")(pointsCount)
+    __obj.updateDynamic("series")(series)
+    __obj.updateDynamic("valueLevel")(valueLevel)
+    __obj.asInstanceOf[ASPxClientBollingerBands]
+  }
+}
+

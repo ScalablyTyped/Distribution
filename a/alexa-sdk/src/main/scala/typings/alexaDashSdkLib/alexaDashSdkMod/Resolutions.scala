@@ -9,3 +9,12 @@ trait Resolutions extends js.Object {
   var resolutionsPerAuthority: js.Array[Resolution]
 }
 
+object Resolutions {
+  @scala.inline
+  def apply(resolutionsPerAuthority: js.Array[Resolution]): Resolutions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resolutionsPerAuthority")(resolutionsPerAuthority)
+    __obj.asInstanceOf[Resolutions]
+  }
+}
+

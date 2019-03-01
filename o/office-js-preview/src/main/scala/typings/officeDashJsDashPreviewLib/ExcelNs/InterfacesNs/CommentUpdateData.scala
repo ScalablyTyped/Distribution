@@ -17,3 +17,12 @@ trait CommentUpdateData extends js.Object {
   var content: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommentUpdateData {
+  @scala.inline
+  def apply(content: java.lang.String = null): CommentUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    __obj.asInstanceOf[CommentUpdateData]
+  }
+}
+

@@ -21,3 +21,18 @@ trait LayoutStack extends js.Object {
   var options: js.UndefOr[reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options] = js.undefined
 }
 
+object LayoutStack {
+  @scala.inline
+  def apply(
+    children: js.Array[LayoutStackChildren] = null,
+    id: java.lang.String = null,
+    options: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options = null
+  ): LayoutStack = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[LayoutStack]
+  }
+}
+

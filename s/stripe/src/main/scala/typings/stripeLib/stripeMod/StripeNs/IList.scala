@@ -29,3 +29,21 @@ trait IList[T] extends js.Object {
   var url: java.lang.String
 }
 
+object IList {
+  @scala.inline
+  def apply[T](
+    data: js.Array[T],
+    has_more: scala.Boolean,
+    `object`: java.lang.String,
+    url: java.lang.String,
+    total_count: scala.Int | scala.Double = null
+  ): IList[T] = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("has_more")(has_more)
+    __obj.updateDynamic("url")(url)
+    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IList[T]]
+  }
+}
+

@@ -25,3 +25,46 @@ trait TestResult extends js.Object {
   var testResults: js.Array[AssertionResult]
 }
 
+object TestResult {
+  @scala.inline
+  def apply(
+    leaks: scala.Boolean,
+    numFailingTests: scala.Double,
+    numPassingTests: scala.Double,
+    numPendingTests: scala.Double,
+    openHandles: js.Array[stdLib.Error],
+    perfStats: jestDashCliLib.Anon_End,
+    skipped: scala.Boolean,
+    snapshot: jestDashCliLib.Anon_Added,
+    sourceMaps: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    testFilePath: java.lang.String,
+    testResults: js.Array[AssertionResult],
+    console: ConsoleBuffer = null,
+    coverage: RawCoverage = null,
+    displayName: java.lang.String = null,
+    failureMessage: java.lang.String = null,
+    memoryUsage: scala.Int | scala.Double = null,
+    testExecError: SerializableError = null
+  ): TestResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("leaks")(leaks)
+    __obj.updateDynamic("numFailingTests")(numFailingTests)
+    __obj.updateDynamic("numPassingTests")(numPassingTests)
+    __obj.updateDynamic("numPendingTests")(numPendingTests)
+    __obj.updateDynamic("openHandles")(openHandles)
+    __obj.updateDynamic("perfStats")(perfStats)
+    __obj.updateDynamic("skipped")(skipped)
+    __obj.updateDynamic("snapshot")(snapshot)
+    __obj.updateDynamic("sourceMaps")(sourceMaps)
+    __obj.updateDynamic("testFilePath")(testFilePath)
+    __obj.updateDynamic("testResults")(testResults)
+    if (console != null) __obj.updateDynamic("console")(console)
+    if (coverage != null) __obj.updateDynamic("coverage")(coverage)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (failureMessage != null) __obj.updateDynamic("failureMessage")(failureMessage)
+    if (memoryUsage != null) __obj.updateDynamic("memoryUsage")(memoryUsage.asInstanceOf[js.Any])
+    if (testExecError != null) __obj.updateDynamic("testExecError")(testExecError)
+    __obj.asInstanceOf[TestResult]
+  }
+}
+

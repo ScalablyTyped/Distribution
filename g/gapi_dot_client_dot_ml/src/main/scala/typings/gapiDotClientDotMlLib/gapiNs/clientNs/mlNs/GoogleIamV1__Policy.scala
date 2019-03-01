@@ -31,3 +31,22 @@ trait GoogleIamV1__Policy extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GoogleIamV1__Policy {
+  @scala.inline
+  def apply(
+    auditConfigs: js.Array[GoogleIamV1__AuditConfig] = null,
+    bindings: js.Array[GoogleIamV1__Binding] = null,
+    etag: java.lang.String = null,
+    iamOwned: js.UndefOr[scala.Boolean] = js.undefined,
+    version: scala.Int | scala.Double = null
+  ): GoogleIamV1__Policy = {
+    val __obj = js.Dynamic.literal()
+    if (auditConfigs != null) __obj.updateDynamic("auditConfigs")(auditConfigs)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (!js.isUndefined(iamOwned)) __obj.updateDynamic("iamOwned")(iamOwned)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GoogleIamV1__Policy]
+  }
+}
+

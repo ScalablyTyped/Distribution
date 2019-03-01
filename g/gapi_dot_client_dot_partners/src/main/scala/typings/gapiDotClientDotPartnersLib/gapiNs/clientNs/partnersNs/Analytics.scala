@@ -25,3 +25,20 @@ trait Analytics extends js.Object {
   var searchViews: js.UndefOr[AnalyticsDataPoint] = js.undefined
 }
 
+object Analytics {
+  @scala.inline
+  def apply(
+    contacts: AnalyticsDataPoint = null,
+    eventDate: Date = null,
+    profileViews: AnalyticsDataPoint = null,
+    searchViews: AnalyticsDataPoint = null
+  ): Analytics = {
+    val __obj = js.Dynamic.literal()
+    if (contacts != null) __obj.updateDynamic("contacts")(contacts)
+    if (eventDate != null) __obj.updateDynamic("eventDate")(eventDate)
+    if (profileViews != null) __obj.updateDynamic("profileViews")(profileViews)
+    if (searchViews != null) __obj.updateDynamic("searchViews")(searchViews)
+    __obj.asInstanceOf[Analytics]
+  }
+}
+

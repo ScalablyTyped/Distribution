@@ -15,3 +15,13 @@ trait PathRule extends js.Object {
   var service: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PathRule {
+  @scala.inline
+  def apply(paths: js.Array[java.lang.String] = null, service: java.lang.String = null): PathRule = {
+    val __obj = js.Dynamic.literal()
+    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (service != null) __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[PathRule]
+  }
+}
+

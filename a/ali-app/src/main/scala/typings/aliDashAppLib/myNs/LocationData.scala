@@ -55,3 +55,38 @@ trait LocationData extends js.Object {
   var streetNumber: js.UndefOr[aliDashAppLib.Anon_Number] = js.undefined
 }
 
+object LocationData {
+  @scala.inline
+  def apply(
+    accuracy: java.lang.String,
+    horizontalAccuracy: java.lang.String,
+    latitude: java.lang.String,
+    longitude: java.lang.String,
+    city: java.lang.String = null,
+    cityAdcode: java.lang.String = null,
+    country: java.lang.String = null,
+    countryCode: java.lang.String = null,
+    district: java.lang.String = null,
+    districtAdcode: java.lang.String = null,
+    pois: js.Array[aliDashAppLib.Anon_Address] = null,
+    province: java.lang.String = null,
+    streetNumber: aliDashAppLib.Anon_Number = null
+  ): LocationData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accuracy")(accuracy)
+    __obj.updateDynamic("horizontalAccuracy")(horizontalAccuracy)
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    if (city != null) __obj.updateDynamic("city")(city)
+    if (cityAdcode != null) __obj.updateDynamic("cityAdcode")(cityAdcode)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (district != null) __obj.updateDynamic("district")(district)
+    if (districtAdcode != null) __obj.updateDynamic("districtAdcode")(districtAdcode)
+    if (pois != null) __obj.updateDynamic("pois")(pois)
+    if (province != null) __obj.updateDynamic("province")(province)
+    if (streetNumber != null) __obj.updateDynamic("streetNumber")(streetNumber)
+    __obj.asInstanceOf[LocationData]
+  }
+}
+

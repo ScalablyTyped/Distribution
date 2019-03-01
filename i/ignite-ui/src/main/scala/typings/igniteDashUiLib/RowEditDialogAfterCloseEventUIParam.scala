@@ -16,3 +16,13 @@ trait RowEditDialogAfterCloseEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowEditDialogAfterCloseEventUIParam {
+  @scala.inline
+  def apply(dialogElement: js.Any = null, owner: js.Any = null): RowEditDialogAfterCloseEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (dialogElement != null) __obj.updateDynamic("dialogElement")(dialogElement)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[RowEditDialogAfterCloseEventUIParam]
+  }
+}
+

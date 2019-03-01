@@ -56,3 +56,36 @@ trait GetTransitGatewayResult extends js.Object {
   val vpnEcmpSupport: java.lang.String
 }
 
+object GetTransitGatewayResult {
+  @scala.inline
+  def apply(
+    amazonSideAsn: scala.Double,
+    arn: java.lang.String,
+    associationDefaultRouteTableId: java.lang.String,
+    autoAcceptSharedAttachments: java.lang.String,
+    defaultRouteTableAssociation: java.lang.String,
+    defaultRouteTablePropagation: java.lang.String,
+    description: java.lang.String,
+    dnsSupport: java.lang.String,
+    ownerId: java.lang.String,
+    propagationDefaultRouteTableId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpnEcmpSupport: java.lang.String
+  ): GetTransitGatewayResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amazonSideAsn")(amazonSideAsn)
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("associationDefaultRouteTableId")(associationDefaultRouteTableId)
+    __obj.updateDynamic("autoAcceptSharedAttachments")(autoAcceptSharedAttachments)
+    __obj.updateDynamic("defaultRouteTableAssociation")(defaultRouteTableAssociation)
+    __obj.updateDynamic("defaultRouteTablePropagation")(defaultRouteTablePropagation)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("dnsSupport")(dnsSupport)
+    __obj.updateDynamic("ownerId")(ownerId)
+    __obj.updateDynamic("propagationDefaultRouteTableId")(propagationDefaultRouteTableId)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("vpnEcmpSupport")(vpnEcmpSupport)
+    __obj.asInstanceOf[GetTransitGatewayResult]
+  }
+}
+

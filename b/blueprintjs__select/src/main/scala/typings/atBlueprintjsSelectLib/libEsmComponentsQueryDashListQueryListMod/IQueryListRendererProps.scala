@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in 'activeItem' | 'filteredItems' | 'query' ]: @blueprintjs/select.@blueprintjs/select/lib/esm/components/query-list/queryList.IQueryListState<@blueprintjs/select.@blueprintjs/select/lib/esm/components/query-list/queryList.IQueryListState<T>>[P]} */ @js.native
 trait IQueryListRendererProps[T]
-  extends IQueryListState[T]
-     with atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps {
+  extends atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps {
   /**
     * Keyboard handler for up/down arrow keys to shift the active item.
     * Attach this handler to any element that should support this interaction.

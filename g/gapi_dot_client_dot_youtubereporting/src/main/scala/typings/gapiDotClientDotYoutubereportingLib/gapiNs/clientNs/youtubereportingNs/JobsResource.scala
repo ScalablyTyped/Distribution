@@ -17,3 +17,34 @@ trait JobsResource extends js.Object {
   def list(request: gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ListJobsResponse]
 }
 
+object JobsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Job]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Job]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListJobsResponse]
+    ],
+    reports: ReportsResource
+  ): JobsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("reports")(reports)
+    __obj.asInstanceOf[JobsResource]
+  }
+}
+

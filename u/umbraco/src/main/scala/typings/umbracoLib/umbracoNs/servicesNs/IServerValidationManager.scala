@@ -165,3 +165,38 @@ trait IServerValidationManager extends js.Object {
   ): scala.Unit
 }
 
+object IServerValidationManager {
+  @scala.inline
+  def apply(
+    addFieldError: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    addPropertyError: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    executeAndClearAllSubscriptions: js.Function0[scala.Unit],
+    getFieldCallbacks: js.Function1[java.lang.String, js.Any],
+    getFieldError: js.Function1[java.lang.String, java.lang.String],
+    getPropertyCallbacks: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    getPropertyError: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    hasFieldError: js.Function1[java.lang.String, scala.Boolean],
+    hasPropertyError: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    removePropertyError: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    reset: js.Function0[scala.Unit],
+    subscribe: js.Function3[java.lang.String, java.lang.String, angularLib.angularMod.Global.Function, scala.Unit]
+  ): IServerValidationManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addFieldError")(addFieldError)
+    __obj.updateDynamic("addPropertyError")(addPropertyError)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("executeAndClearAllSubscriptions")(executeAndClearAllSubscriptions)
+    __obj.updateDynamic("getFieldCallbacks")(getFieldCallbacks)
+    __obj.updateDynamic("getFieldError")(getFieldError)
+    __obj.updateDynamic("getPropertyCallbacks")(getPropertyCallbacks)
+    __obj.updateDynamic("getPropertyError")(getPropertyError)
+    __obj.updateDynamic("hasFieldError")(hasFieldError)
+    __obj.updateDynamic("hasPropertyError")(hasPropertyError)
+    __obj.updateDynamic("removePropertyError")(removePropertyError)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("subscribe")(subscribe)
+    __obj.asInstanceOf[IServerValidationManager]
+  }
+}
+

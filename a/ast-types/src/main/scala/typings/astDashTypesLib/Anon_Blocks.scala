@@ -13,3 +13,22 @@ trait Anon_Blocks extends js.Object {
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
 }
 
+object Anon_Blocks {
+  @scala.inline
+  def apply(
+    blocks: js.Array[astDashTypesLib.genKindsMod.ComprehensionBlockKind],
+    body: astDashTypesLib.genKindsMod.ExpressionKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    filter: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_Blocks = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blocks")(blocks)
+    __obj.updateDynamic("body")(body)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_Blocks]
+  }
+}
+

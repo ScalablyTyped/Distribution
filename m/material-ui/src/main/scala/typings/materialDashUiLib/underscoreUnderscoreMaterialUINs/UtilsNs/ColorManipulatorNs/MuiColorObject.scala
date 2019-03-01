@@ -10,3 +10,12 @@ trait MuiColorObject extends js.Object {
   var values: js.Array[scala.Double]
 }
 
+object MuiColorObject {
+  @scala.inline
+  def apply(`type`: java.lang.String, values: js.Array[scala.Double]): MuiColorObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[MuiColorObject]
+  }
+}
+

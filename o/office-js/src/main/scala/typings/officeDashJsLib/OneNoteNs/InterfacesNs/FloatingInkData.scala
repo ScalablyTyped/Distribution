@@ -23,3 +23,13 @@ trait FloatingInkData extends js.Object {
   var inkStrokes: js.UndefOr[js.Array[InkStrokeData]] = js.undefined
 }
 
+object FloatingInkData {
+  @scala.inline
+  def apply(id: java.lang.String = null, inkStrokes: js.Array[InkStrokeData] = null): FloatingInkData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inkStrokes != null) __obj.updateDynamic("inkStrokes")(inkStrokes)
+    __obj.asInstanceOf[FloatingInkData]
+  }
+}
+

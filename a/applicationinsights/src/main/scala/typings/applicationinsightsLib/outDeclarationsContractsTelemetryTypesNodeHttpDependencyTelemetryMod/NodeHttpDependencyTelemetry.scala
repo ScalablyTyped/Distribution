@@ -17,3 +17,24 @@ trait NodeHttpDependencyTelemetry
   var request: nodeLib.httpMod.ClientRequest
 }
 
+object NodeHttpDependencyTelemetry {
+  @scala.inline
+  def apply(
+    options: java.lang.String | httpRequestOptions,
+    request: nodeLib.httpMod.ClientRequest,
+    contextObjects: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    time: stdLib.Date = null
+  ): NodeHttpDependencyTelemetry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    __obj.updateDynamic("request")(request)
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
+    if (time != null) __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[NodeHttpDependencyTelemetry]
+  }
+}
+

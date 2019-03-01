@@ -54,3 +54,38 @@ trait IBalanceTransaction
   var `type`: java.lang.String
 }
 
+object IBalanceTransaction {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    available_on: scala.Double,
+    created: scala.Double,
+    currency: java.lang.String,
+    fee: scala.Double,
+    fee_details: js.Array[stripeLib.Anon_Amount],
+    id: java.lang.String,
+    net: scala.Double,
+    `object`: java.lang.String,
+    source: java.lang.String | stripeLib.stripeMod.StripeNs.IResourceObject,
+    source_transfers: stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.transfersNs.ITransfer],
+    status: java.lang.String,
+    `type`: java.lang.String,
+    description: java.lang.String = null
+  ): IBalanceTransaction = {
+    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("available_on")(available_on)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("fee")(fee)
+    __obj.updateDynamic("fee_details")(fee_details)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("net")(net)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("source_transfers")(source_transfers)
+    __obj.updateDynamic("status")(status)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[IBalanceTransaction]
+  }
+}
+

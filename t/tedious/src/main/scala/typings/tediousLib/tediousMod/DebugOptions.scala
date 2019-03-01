@@ -24,3 +24,20 @@ trait DebugOptions extends js.Object {
   var token: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DebugOptions {
+  @scala.inline
+  def apply(
+    data: js.UndefOr[scala.Boolean] = js.undefined,
+    packet: js.UndefOr[scala.Boolean] = js.undefined,
+    payload: js.UndefOr[scala.Boolean] = js.undefined,
+    token: js.UndefOr[scala.Boolean] = js.undefined
+  ): DebugOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(data)) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(packet)) __obj.updateDynamic("packet")(packet)
+    if (!js.isUndefined(payload)) __obj.updateDynamic("payload")(payload)
+    if (!js.isUndefined(token)) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[DebugOptions]
+  }
+}
+

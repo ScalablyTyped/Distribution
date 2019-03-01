@@ -13,3 +13,22 @@ trait Tab extends js.Object {
   var variables: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Tab {
+  @scala.inline
+  def apply(
+    endpoint: java.lang.String,
+    query: java.lang.String,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    responses: js.Array[java.lang.String] = null,
+    variables: java.lang.String = null
+  ): Tab = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endpoint")(endpoint)
+    __obj.updateDynamic("query")(query)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (responses != null) __obj.updateDynamic("responses")(responses)
+    if (variables != null) __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[Tab]
+  }
+}
+

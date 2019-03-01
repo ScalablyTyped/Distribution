@@ -24,3 +24,44 @@ trait VanillaModalConfig extends js.Object {
   var transitions: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VanillaModalConfig {
+  @scala.inline
+  def apply(
+    `class`: java.lang.String = null,
+    clickOutside: js.UndefOr[scala.Boolean] = js.undefined,
+    close: java.lang.String = null,
+    closeKeys: js.Array[scala.Double] | js.Array[js.UndefOr[scala.Nothing]] | scala.Boolean = null,
+    loadClass: java.lang.String = null,
+    modal: java.lang.String | stdLib.HTMLElement = null,
+    modalContent: java.lang.String = null,
+    modalInner: java.lang.String = null,
+    onBeforeClose: js.Function0[js.UndefOr[scala.Nothing]] = null,
+    onBeforeOpen: js.Function0[js.UndefOr[scala.Nothing]] = null,
+    onClose: js.Function0[js.UndefOr[scala.Nothing]] = null,
+    onOpen: js.Function0[js.UndefOr[scala.Nothing]] = null,
+    open: java.lang.String = null,
+    page: java.lang.String = null,
+    transitionEnd: js.Function0[js.UndefOr[scala.Nothing]] = null,
+    transitions: java.lang.String = null
+  ): VanillaModalConfig = {
+    val __obj = js.Dynamic.literal()
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (!js.isUndefined(clickOutside)) __obj.updateDynamic("clickOutside")(clickOutside)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (closeKeys != null) __obj.updateDynamic("closeKeys")(closeKeys.asInstanceOf[js.Any])
+    if (loadClass != null) __obj.updateDynamic("loadClass")(loadClass)
+    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (modalContent != null) __obj.updateDynamic("modalContent")(modalContent)
+    if (modalInner != null) __obj.updateDynamic("modalInner")(modalInner)
+    if (onBeforeClose != null) __obj.updateDynamic("onBeforeClose")(onBeforeClose)
+    if (onBeforeOpen != null) __obj.updateDynamic("onBeforeOpen")(onBeforeOpen)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (page != null) __obj.updateDynamic("page")(page)
+    if (transitionEnd != null) __obj.updateDynamic("transitionEnd")(transitionEnd)
+    if (transitions != null) __obj.updateDynamic("transitions")(transitions)
+    __obj.asInstanceOf[VanillaModalConfig]
+  }
+}
+

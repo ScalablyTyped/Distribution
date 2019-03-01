@@ -13,3 +13,22 @@ trait Anon_ALERTPRIMARYSECONDARY extends js.Object {
   var WARNING: reactDashFoundationLib.enumsMod.ButtonColors
 }
 
+object Anon_ALERTPRIMARYSECONDARY {
+  @scala.inline
+  def apply(
+    ALERT: reactDashFoundationLib.enumsMod.ButtonColors,
+    PRIMARY: reactDashFoundationLib.enumsMod.ButtonColors,
+    SECONDARY: reactDashFoundationLib.enumsMod.ButtonColors,
+    SUCCESS: reactDashFoundationLib.enumsMod.ButtonColors,
+    WARNING: reactDashFoundationLib.enumsMod.ButtonColors
+  ): Anon_ALERTPRIMARYSECONDARY = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ALERT")(ALERT)
+    __obj.updateDynamic("PRIMARY")(PRIMARY)
+    __obj.updateDynamic("SECONDARY")(SECONDARY)
+    __obj.updateDynamic("SUCCESS")(SUCCESS)
+    __obj.updateDynamic("WARNING")(WARNING)
+    __obj.asInstanceOf[Anon_ALERTPRIMARYSECONDARY]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_Percent extends js.Object {
   var Percent: scala.Double
 }
 
+object Anon_Percent {
+  @scala.inline
+  def apply(Percent: scala.Double): Anon_Percent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Percent")(Percent)
+    __obj.asInstanceOf[Anon_Percent]
+  }
+}
+

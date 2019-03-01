@@ -43,3 +43,22 @@ trait ModalOptions extends js.Object {
   var modal: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ModalOptions {
+  @scala.inline
+  def apply(
+    bgclose: js.UndefOr[scala.Boolean] = js.undefined,
+    center: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    minScrollHeight: scala.Int | scala.Double = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined
+  ): ModalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bgclose)) __obj.updateDynamic("bgclose")(bgclose)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (minScrollHeight != null) __obj.updateDynamic("minScrollHeight")(minScrollHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    __obj.asInstanceOf[ModalOptions]
+  }
+}
+

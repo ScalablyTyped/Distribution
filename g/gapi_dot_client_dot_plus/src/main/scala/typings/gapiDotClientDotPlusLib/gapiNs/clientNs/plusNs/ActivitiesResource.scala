@@ -14,3 +14,27 @@ trait ActivitiesResource extends js.Object {
   def search(request: gapiDotClientDotPlusLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[ActivityFeed]
 }
 
+object ActivitiesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotPlusLib.Anon_ActivityId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Activity]
+    ],
+    list: js.Function1[
+      gapiDotClientDotPlusLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ActivityFeed]
+    ],
+    search: js.Function1[
+      gapiDotClientDotPlusLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ActivityFeed]
+    ]
+  ): ActivitiesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ActivitiesResource]
+  }
+}
+

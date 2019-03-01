@@ -33,3 +33,30 @@ trait XStarBasicModuleInfo
   def getSource(): java.lang.String
 }
 
+object XStarBasicModuleInfo {
+  @scala.inline
+  def apply(
+    Language: java.lang.String,
+    Name: java.lang.String,
+    Source: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getLanguage: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getSource: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStarBasicModuleInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Language")(Language)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLanguage")(getLanguage)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getSource")(getSource)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStarBasicModuleInfo]
+  }
+}
+

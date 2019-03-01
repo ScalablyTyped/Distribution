@@ -24,3 +24,20 @@ trait SuccessHiddenEventUIParam extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SuccessHiddenEventUIParam {
+  @scala.inline
+  def apply(
+    fieldOptions: js.Any = null,
+    message: java.lang.String = null,
+    owner: js.Any = null,
+    target: java.lang.String = null
+  ): SuccessHiddenEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (fieldOptions != null) __obj.updateDynamic("fieldOptions")(fieldOptions)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[SuccessHiddenEventUIParam]
+  }
+}
+

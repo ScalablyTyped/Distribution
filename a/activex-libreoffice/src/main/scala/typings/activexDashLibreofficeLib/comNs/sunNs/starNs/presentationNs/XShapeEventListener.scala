@@ -24,3 +24,26 @@ trait XShapeEventListener
   ): scala.Unit
 }
 
+object XShapeEventListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    click: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.MouseEvent, 
+      scala.Unit
+    ],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XShapeEventListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("click")(click)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XShapeEventListener]
+  }
+}
+

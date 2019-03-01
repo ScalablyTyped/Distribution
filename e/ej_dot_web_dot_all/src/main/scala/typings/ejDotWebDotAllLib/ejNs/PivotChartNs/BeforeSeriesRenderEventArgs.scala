@@ -11,3 +11,12 @@ trait BeforeSeriesRenderEventArgs extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
 }
 
+object BeforeSeriesRenderEventArgs {
+  @scala.inline
+  def apply(data: js.Any = null): BeforeSeriesRenderEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[BeforeSeriesRenderEventArgs]
+  }
+}
+

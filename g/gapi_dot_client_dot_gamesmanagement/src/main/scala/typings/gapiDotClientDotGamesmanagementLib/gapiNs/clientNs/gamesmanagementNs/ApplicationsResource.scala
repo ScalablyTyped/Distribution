@@ -10,3 +10,17 @@ trait ApplicationsResource extends js.Object {
   def listHidden(request: gapiDotClientDotGamesmanagementLib.Anon_AltApplicationId): gapiDotClientLib.gapiNs.clientNs.Request[HiddenPlayerList]
 }
 
+object ApplicationsResource {
+  @scala.inline
+  def apply(
+    listHidden: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_AltApplicationId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[HiddenPlayerList]
+    ]
+  ): ApplicationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("listHidden")(listHidden)
+    __obj.asInstanceOf[ApplicationsResource]
+  }
+}
+

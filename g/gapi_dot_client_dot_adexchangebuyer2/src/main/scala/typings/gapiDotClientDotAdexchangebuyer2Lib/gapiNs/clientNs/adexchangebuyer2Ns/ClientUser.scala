@@ -28,3 +28,20 @@ trait ClientUser extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientUser {
+  @scala.inline
+  def apply(
+    clientAccountId: java.lang.String = null,
+    email: java.lang.String = null,
+    status: java.lang.String = null,
+    userId: java.lang.String = null
+  ): ClientUser = {
+    val __obj = js.Dynamic.literal()
+    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[ClientUser]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_FiltersKey extends js.Object {
   var key: java.lang.String
 }
 
+object Anon_FiltersKey {
+  @scala.inline
+  def apply(key: java.lang.String, filters: relayDashRuntimeLib.relayDashRuntimeMod.Variables = null): Anon_FiltersKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    __obj.asInstanceOf[Anon_FiltersKey]
+  }
+}
+

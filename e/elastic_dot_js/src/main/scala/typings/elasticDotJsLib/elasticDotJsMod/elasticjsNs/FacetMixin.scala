@@ -44,3 +44,28 @@ trait FacetMixin extends js.Object {
   def toJSON(): js.Any
 }
 
+object FacetMixin {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cacheFilter: js.Function1[scala.Boolean, FacetMixin],
+    facetFilter: js.Function1[js.Object, FacetMixin],
+    global: js.Function1[scala.Boolean, FacetMixin],
+    mode: js.Function1[java.lang.String, FacetMixin],
+    nested: js.Function1[java.lang.String, FacetMixin],
+    scope: js.Function1[java.lang.String, FacetMixin],
+    toJSON: js.Function0[js.Any]
+  ): FacetMixin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cacheFilter")(cacheFilter)
+    __obj.updateDynamic("facetFilter")(facetFilter)
+    __obj.updateDynamic("global")(global)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("nested")(nested)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[FacetMixin]
+  }
+}
+

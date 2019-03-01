@@ -11,3 +11,14 @@ trait FieldMetadata extends js.Object {
   var verified: scala.Boolean
 }
 
+object FieldMetadata {
+  @scala.inline
+  def apply(primary: scala.Boolean, source: Source, verified: scala.Boolean): FieldMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("primary")(primary)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("verified")(verified)
+    __obj.asInstanceOf[FieldMetadata]
+  }
+}
+

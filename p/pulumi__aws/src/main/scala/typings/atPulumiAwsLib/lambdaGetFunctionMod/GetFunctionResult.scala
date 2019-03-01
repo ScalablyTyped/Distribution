@@ -92,3 +92,54 @@ trait GetFunctionResult extends js.Object {
   val vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
 }
 
+object GetFunctionResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    deadLetterConfig: atPulumiAwsLib.Anon_TargetArn,
+    description: java.lang.String,
+    environment: atPulumiAwsLib.Anon_KeyVariablesString,
+    handler: java.lang.String,
+    id: java.lang.String,
+    invokeArn: java.lang.String,
+    kmsKeyArn: java.lang.String,
+    lastModified: java.lang.String,
+    layers: js.Array[java.lang.String],
+    memorySize: scala.Double,
+    qualifiedArn: java.lang.String,
+    reservedConcurrentExecutions: scala.Double,
+    role: java.lang.String,
+    runtime: java.lang.String,
+    sourceCodeHash: java.lang.String,
+    sourceCodeSize: scala.Double,
+    timeout: scala.Double,
+    tracingConfig: atPulumiAwsLib.Anon_Mode,
+    version: java.lang.String,
+    vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
+  ): GetFunctionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("deadLetterConfig")(deadLetterConfig)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("environment")(environment)
+    __obj.updateDynamic("handler")(handler)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("invokeArn")(invokeArn)
+    __obj.updateDynamic("kmsKeyArn")(kmsKeyArn)
+    __obj.updateDynamic("lastModified")(lastModified)
+    __obj.updateDynamic("layers")(layers)
+    __obj.updateDynamic("memorySize")(memorySize)
+    __obj.updateDynamic("qualifiedArn")(qualifiedArn)
+    __obj.updateDynamic("reservedConcurrentExecutions")(reservedConcurrentExecutions)
+    __obj.updateDynamic("role")(role)
+    __obj.updateDynamic("runtime")(runtime)
+    __obj.updateDynamic("sourceCodeHash")(sourceCodeHash)
+    __obj.updateDynamic("sourceCodeSize")(sourceCodeSize)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.updateDynamic("tracingConfig")(tracingConfig)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("vpcConfig")(vpcConfig)
+    __obj.asInstanceOf[GetFunctionResult]
+  }
+}
+

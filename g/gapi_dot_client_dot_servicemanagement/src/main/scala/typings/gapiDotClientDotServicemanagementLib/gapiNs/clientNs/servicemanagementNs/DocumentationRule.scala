@@ -24,3 +24,18 @@ trait DocumentationRule extends js.Object {
   var selector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DocumentationRule {
+  @scala.inline
+  def apply(
+    deprecationDescription: java.lang.String = null,
+    description: java.lang.String = null,
+    selector: java.lang.String = null
+  ): DocumentationRule = {
+    val __obj = js.Dynamic.literal()
+    if (deprecationDescription != null) __obj.updateDynamic("deprecationDescription")(deprecationDescription)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[DocumentationRule]
+  }
+}
+

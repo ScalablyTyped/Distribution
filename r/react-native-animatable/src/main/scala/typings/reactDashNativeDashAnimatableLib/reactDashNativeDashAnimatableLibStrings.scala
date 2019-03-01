@@ -16,100 +16,348 @@ object reactDashNativeDashAnimatableLibStrings {
   sealed trait `alternate-reverse` extends js.Object
   
   @js.native
-  sealed trait ease extends js.Object
+  sealed trait bounce
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in` extends js.Object
+  sealed trait bounceIn
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-back` extends js.Object
+  sealed trait bounceInDown
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-circ` extends js.Object
+  sealed trait bounceInLeft
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-cubic` extends js.Object
+  sealed trait bounceInRight
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-expo` extends js.Object
+  sealed trait bounceInUp
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-out` extends js.Object
+  sealed trait bounceOut
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-out-back` extends js.Object
+  sealed trait bounceOutDown
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-out-circ` extends js.Object
+  sealed trait bounceOutLeft
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-out-cubic` extends js.Object
+  sealed trait bounceOutRight
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-out-expo` extends js.Object
+  sealed trait bounceOutUp
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
-  sealed trait `ease-in-out-quad` extends js.Object
+  sealed trait ease extends Easing
   
   @js.native
-  sealed trait `ease-in-out-quart` extends js.Object
+  sealed trait `ease-in` extends Easing
   
   @js.native
-  sealed trait `ease-in-out-quint` extends js.Object
+  sealed trait `ease-in-back` extends Easing
   
   @js.native
-  sealed trait `ease-in-out-sine` extends js.Object
+  sealed trait `ease-in-circ` extends Easing
   
   @js.native
-  sealed trait `ease-in-quad` extends js.Object
+  sealed trait `ease-in-cubic` extends Easing
   
   @js.native
-  sealed trait `ease-in-quart` extends js.Object
+  sealed trait `ease-in-expo` extends Easing
   
   @js.native
-  sealed trait `ease-in-quint` extends js.Object
+  sealed trait `ease-in-out` extends Easing
   
   @js.native
-  sealed trait `ease-in-sine` extends js.Object
+  sealed trait `ease-in-out-back` extends Easing
   
   @js.native
-  sealed trait `ease-out` extends js.Object
+  sealed trait `ease-in-out-circ` extends Easing
   
   @js.native
-  sealed trait `ease-out-back` extends js.Object
+  sealed trait `ease-in-out-cubic` extends Easing
   
   @js.native
-  sealed trait `ease-out-circ` extends js.Object
+  sealed trait `ease-in-out-expo` extends Easing
   
   @js.native
-  sealed trait `ease-out-cubic` extends js.Object
+  sealed trait `ease-in-out-quad` extends Easing
   
   @js.native
-  sealed trait `ease-out-expo` extends js.Object
+  sealed trait `ease-in-out-quart` extends Easing
   
   @js.native
-  sealed trait `ease-out-quad` extends js.Object
+  sealed trait `ease-in-out-quint` extends Easing
   
   @js.native
-  sealed trait `ease-out-quart` extends js.Object
+  sealed trait `ease-in-out-sine` extends Easing
   
   @js.native
-  sealed trait `ease-out-quint` extends js.Object
+  sealed trait `ease-in-quad` extends Easing
   
   @js.native
-  sealed trait `ease-out-sine` extends js.Object
+  sealed trait `ease-in-quart` extends Easing
+  
+  @js.native
+  sealed trait `ease-in-quint` extends Easing
+  
+  @js.native
+  sealed trait `ease-in-sine` extends Easing
+  
+  @js.native
+  sealed trait `ease-out` extends Easing
+  
+  @js.native
+  sealed trait `ease-out-back` extends Easing
+  
+  @js.native
+  sealed trait `ease-out-circ` extends Easing
+  
+  @js.native
+  sealed trait `ease-out-cubic` extends Easing
+  
+  @js.native
+  sealed trait `ease-out-expo` extends Easing
+  
+  @js.native
+  sealed trait `ease-out-quad` extends Easing
+  
+  @js.native
+  sealed trait `ease-out-quart` extends Easing
+  
+  @js.native
+  sealed trait `ease-out-quint` extends Easing
+  
+  @js.native
+  sealed trait `ease-out-sine` extends Easing
+  
+  @js.native
+  sealed trait fadeIn
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeInDown
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeInDownBig
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeInLeft
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeInLeftBig
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeInRight
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeInRightBig
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeInUp
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeInUpBig
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeOut
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeOutDown
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeOutDownBig
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeOutLeft
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeOutLeftBig
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeOutRight
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeOutRightBig
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeOutUp
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait fadeOutUpBig
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait flash
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait flipInX
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait flipInY
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait flipOutX
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait flipOutY
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @js.native
   sealed trait infinite extends js.Object
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait jello
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait lightSpeedIn
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait lightSpeedOut
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait linear extends Easing
   
   @js.native
   sealed trait normal extends js.Object
   
   @js.native
+  sealed trait pulse
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
   sealed trait reverse extends js.Object
+  
+  @js.native
+  sealed trait rotate
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait rubberBand
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait shake
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait slideInDown
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait slideInLeft
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait slideInRight
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait slideInUp
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait slideOutDown
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait slideOutLeft
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait slideOutRight
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait slideOutUp
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait swing
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait tada
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait wobble
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomIn
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomInDown
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomInLeft
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomInRight
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomInUp
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomOut
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomOutDown
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomOutLeft
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomOutRight
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
+  
+  @js.native
+  sealed trait zoomOutUp
+    extends reactDashNativeDashAnimatableLib.reactDashNativeDashAnimatableMod.Animation
   
   @scala.inline
   def AnimatableAnimationMethods: AnimatableAnimationMethods = "AnimatableAnimationMethods".asInstanceOf[AnimatableAnimationMethods]
@@ -117,6 +365,28 @@ object reactDashNativeDashAnimatableLibStrings {
   def alternate: alternate = "alternate".asInstanceOf[alternate]
   @scala.inline
   def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
+  @scala.inline
+  def bounce: bounce = "bounce".asInstanceOf[bounce]
+  @scala.inline
+  def bounceIn: bounceIn = "bounceIn".asInstanceOf[bounceIn]
+  @scala.inline
+  def bounceInDown: bounceInDown = "bounceInDown".asInstanceOf[bounceInDown]
+  @scala.inline
+  def bounceInLeft: bounceInLeft = "bounceInLeft".asInstanceOf[bounceInLeft]
+  @scala.inline
+  def bounceInRight: bounceInRight = "bounceInRight".asInstanceOf[bounceInRight]
+  @scala.inline
+  def bounceInUp: bounceInUp = "bounceInUp".asInstanceOf[bounceInUp]
+  @scala.inline
+  def bounceOut: bounceOut = "bounceOut".asInstanceOf[bounceOut]
+  @scala.inline
+  def bounceOutDown: bounceOutDown = "bounceOutDown".asInstanceOf[bounceOutDown]
+  @scala.inline
+  def bounceOutLeft: bounceOutLeft = "bounceOutLeft".asInstanceOf[bounceOutLeft]
+  @scala.inline
+  def bounceOutRight: bounceOutRight = "bounceOutRight".asInstanceOf[bounceOutRight]
+  @scala.inline
+  def bounceOutUp: bounceOutUp = "bounceOutUp".asInstanceOf[bounceOutUp]
   @scala.inline
   def ease: ease = "ease".asInstanceOf[ease]
   @scala.inline
@@ -174,12 +444,114 @@ object reactDashNativeDashAnimatableLibStrings {
   @scala.inline
   def `ease-out-sine`: `ease-out-sine` = "ease-out-sine".asInstanceOf[`ease-out-sine`]
   @scala.inline
+  def fadeIn: fadeIn = "fadeIn".asInstanceOf[fadeIn]
+  @scala.inline
+  def fadeInDown: fadeInDown = "fadeInDown".asInstanceOf[fadeInDown]
+  @scala.inline
+  def fadeInDownBig: fadeInDownBig = "fadeInDownBig".asInstanceOf[fadeInDownBig]
+  @scala.inline
+  def fadeInLeft: fadeInLeft = "fadeInLeft".asInstanceOf[fadeInLeft]
+  @scala.inline
+  def fadeInLeftBig: fadeInLeftBig = "fadeInLeftBig".asInstanceOf[fadeInLeftBig]
+  @scala.inline
+  def fadeInRight: fadeInRight = "fadeInRight".asInstanceOf[fadeInRight]
+  @scala.inline
+  def fadeInRightBig: fadeInRightBig = "fadeInRightBig".asInstanceOf[fadeInRightBig]
+  @scala.inline
+  def fadeInUp: fadeInUp = "fadeInUp".asInstanceOf[fadeInUp]
+  @scala.inline
+  def fadeInUpBig: fadeInUpBig = "fadeInUpBig".asInstanceOf[fadeInUpBig]
+  @scala.inline
+  def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
+  @scala.inline
+  def fadeOutDown: fadeOutDown = "fadeOutDown".asInstanceOf[fadeOutDown]
+  @scala.inline
+  def fadeOutDownBig: fadeOutDownBig = "fadeOutDownBig".asInstanceOf[fadeOutDownBig]
+  @scala.inline
+  def fadeOutLeft: fadeOutLeft = "fadeOutLeft".asInstanceOf[fadeOutLeft]
+  @scala.inline
+  def fadeOutLeftBig: fadeOutLeftBig = "fadeOutLeftBig".asInstanceOf[fadeOutLeftBig]
+  @scala.inline
+  def fadeOutRight: fadeOutRight = "fadeOutRight".asInstanceOf[fadeOutRight]
+  @scala.inline
+  def fadeOutRightBig: fadeOutRightBig = "fadeOutRightBig".asInstanceOf[fadeOutRightBig]
+  @scala.inline
+  def fadeOutUp: fadeOutUp = "fadeOutUp".asInstanceOf[fadeOutUp]
+  @scala.inline
+  def fadeOutUpBig: fadeOutUpBig = "fadeOutUpBig".asInstanceOf[fadeOutUpBig]
+  @scala.inline
+  def flash: flash = "flash".asInstanceOf[flash]
+  @scala.inline
+  def flipInX: flipInX = "flipInX".asInstanceOf[flipInX]
+  @scala.inline
+  def flipInY: flipInY = "flipInY".asInstanceOf[flipInY]
+  @scala.inline
+  def flipOutX: flipOutX = "flipOutX".asInstanceOf[flipOutX]
+  @scala.inline
+  def flipOutY: flipOutY = "flipOutY".asInstanceOf[flipOutY]
+  @scala.inline
   def infinite: infinite = "infinite".asInstanceOf[infinite]
+  @scala.inline
+  def jello: jello = "jello".asInstanceOf[jello]
+  @scala.inline
+  def lightSpeedIn: lightSpeedIn = "lightSpeedIn".asInstanceOf[lightSpeedIn]
+  @scala.inline
+  def lightSpeedOut: lightSpeedOut = "lightSpeedOut".asInstanceOf[lightSpeedOut]
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
+  def pulse: pulse = "pulse".asInstanceOf[pulse]
+  @scala.inline
   def reverse: reverse = "reverse".asInstanceOf[reverse]
+  @scala.inline
+  def rotate: rotate = "rotate".asInstanceOf[rotate]
+  @scala.inline
+  def rubberBand: rubberBand = "rubberBand".asInstanceOf[rubberBand]
+  @scala.inline
+  def shake: shake = "shake".asInstanceOf[shake]
+  @scala.inline
+  def slideInDown: slideInDown = "slideInDown".asInstanceOf[slideInDown]
+  @scala.inline
+  def slideInLeft: slideInLeft = "slideInLeft".asInstanceOf[slideInLeft]
+  @scala.inline
+  def slideInRight: slideInRight = "slideInRight".asInstanceOf[slideInRight]
+  @scala.inline
+  def slideInUp: slideInUp = "slideInUp".asInstanceOf[slideInUp]
+  @scala.inline
+  def slideOutDown: slideOutDown = "slideOutDown".asInstanceOf[slideOutDown]
+  @scala.inline
+  def slideOutLeft: slideOutLeft = "slideOutLeft".asInstanceOf[slideOutLeft]
+  @scala.inline
+  def slideOutRight: slideOutRight = "slideOutRight".asInstanceOf[slideOutRight]
+  @scala.inline
+  def slideOutUp: slideOutUp = "slideOutUp".asInstanceOf[slideOutUp]
+  @scala.inline
+  def swing: swing = "swing".asInstanceOf[swing]
+  @scala.inline
+  def tada: tada = "tada".asInstanceOf[tada]
+  @scala.inline
+  def wobble: wobble = "wobble".asInstanceOf[wobble]
+  @scala.inline
+  def zoomIn: zoomIn = "zoomIn".asInstanceOf[zoomIn]
+  @scala.inline
+  def zoomInDown: zoomInDown = "zoomInDown".asInstanceOf[zoomInDown]
+  @scala.inline
+  def zoomInLeft: zoomInLeft = "zoomInLeft".asInstanceOf[zoomInLeft]
+  @scala.inline
+  def zoomInRight: zoomInRight = "zoomInRight".asInstanceOf[zoomInRight]
+  @scala.inline
+  def zoomInUp: zoomInUp = "zoomInUp".asInstanceOf[zoomInUp]
+  @scala.inline
+  def zoomOut: zoomOut = "zoomOut".asInstanceOf[zoomOut]
+  @scala.inline
+  def zoomOutDown: zoomOutDown = "zoomOutDown".asInstanceOf[zoomOutDown]
+  @scala.inline
+  def zoomOutLeft: zoomOutLeft = "zoomOutLeft".asInstanceOf[zoomOutLeft]
+  @scala.inline
+  def zoomOutRight: zoomOutRight = "zoomOutRight".asInstanceOf[zoomOutRight]
+  @scala.inline
+  def zoomOutUp: zoomOutUp = "zoomOutUp".asInstanceOf[zoomOutUp]
 }
 

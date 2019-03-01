@@ -25,3 +25,33 @@ trait NavigationContainerProps[S, O] extends js.Object {
   var uriPrefix: js.UndefOr[java.lang.String | stdLib.RegExp] = js.undefined
 }
 
+object NavigationContainerProps {
+  @scala.inline
+  def apply[S, O](
+    navigation: NavigationScreenProp[S, NavigationParams] = null,
+    navigationOptions: O = null,
+    onNavigationStateChange: js.Function3[
+      /* prevNavigationState */ NavigationState, 
+      /* nextNavigationState */ NavigationState, 
+      /* action */ NavigationAction, 
+      js.UndefOr[scala.Unit | scala.Null]
+    ] = null,
+    persistenceKey: java.lang.String = null,
+    renderLoadingExperimental: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
+    screenProps: js.Any = null,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    uriPrefix: java.lang.String | stdLib.RegExp = null
+  ): NavigationContainerProps[S, O] = {
+    val __obj = js.Dynamic.literal()
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
+    if (navigationOptions != null) __obj.updateDynamic("navigationOptions")(navigationOptions.asInstanceOf[js.Any])
+    if (onNavigationStateChange != null) __obj.updateDynamic("onNavigationStateChange")(onNavigationStateChange)
+    if (persistenceKey != null) __obj.updateDynamic("persistenceKey")(persistenceKey)
+    if (renderLoadingExperimental != null) __obj.updateDynamic("renderLoadingExperimental")(renderLoadingExperimental.asInstanceOf[js.Any])
+    if (screenProps != null) __obj.updateDynamic("screenProps")(screenProps)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (uriPrefix != null) __obj.updateDynamic("uriPrefix")(uriPrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NavigationContainerProps[S, O]]
+  }
+}
+

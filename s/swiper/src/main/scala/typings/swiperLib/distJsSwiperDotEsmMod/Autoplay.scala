@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Autoplay")
 @js.native
-class Autoplay () extends js.Object {
+class Autoplay ()
+  extends swiperLib.swiperMod.SwiperModule {
   // Properties
   /**
     * Whether autoplay enabled and running

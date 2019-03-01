@@ -43,3 +43,26 @@ trait XAnimationListener
   def repeat(Node: XAnimationNode, Repeat: scala.Double): scala.Unit
 }
 
+object XAnimationListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    beginEvent: js.Function1[XAnimationNode, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    endEvent: js.Function1[XAnimationNode, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    repeat: js.Function2[XAnimationNode, scala.Double, scala.Unit]
+  ): XAnimationListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("beginEvent")(beginEvent)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("endEvent")(endEvent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("repeat")(repeat)
+    __obj.asInstanceOf[XAnimationListener]
+  }
+}
+

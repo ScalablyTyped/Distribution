@@ -107,3 +107,37 @@ trait ServiceSpec extends js.Object {
   val `type`: java.lang.String
 }
 
+object ServiceSpec {
+  @scala.inline
+  def apply(
+    clusterIP: java.lang.String,
+    externalIPs: js.Array[java.lang.String],
+    externalName: java.lang.String,
+    externalTrafficPolicy: java.lang.String,
+    healthCheckNodePort: scala.Double,
+    loadBalancerIP: java.lang.String,
+    loadBalancerSourceRanges: js.Array[java.lang.String],
+    ports: js.Array[ServicePort],
+    publishNotReadyAddresses: scala.Boolean,
+    selector: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    sessionAffinity: java.lang.String,
+    sessionAffinityConfig: SessionAffinityConfig,
+    `type`: java.lang.String
+  ): ServiceSpec = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("clusterIP")(clusterIP)
+    __obj.updateDynamic("externalIPs")(externalIPs)
+    __obj.updateDynamic("externalName")(externalName)
+    __obj.updateDynamic("externalTrafficPolicy")(externalTrafficPolicy)
+    __obj.updateDynamic("healthCheckNodePort")(healthCheckNodePort)
+    __obj.updateDynamic("loadBalancerIP")(loadBalancerIP)
+    __obj.updateDynamic("loadBalancerSourceRanges")(loadBalancerSourceRanges)
+    __obj.updateDynamic("ports")(ports)
+    __obj.updateDynamic("publishNotReadyAddresses")(publishNotReadyAddresses)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("sessionAffinity")(sessionAffinity)
+    __obj.updateDynamic("sessionAffinityConfig")(sessionAffinityConfig)
+    __obj.asInstanceOf[ServiceSpec]
+  }
+}
+

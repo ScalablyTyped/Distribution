@@ -30,3 +30,28 @@ trait AppRestrictionsSchemaRestriction extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppRestrictionsSchemaRestriction {
+  @scala.inline
+  def apply(
+    defaultValue: AppRestrictionsSchemaRestrictionRestrictionValue = null,
+    description: java.lang.String = null,
+    entry: js.Array[java.lang.String] = null,
+    entryValue: js.Array[java.lang.String] = null,
+    key: java.lang.String = null,
+    nestedRestriction: js.Array[AppRestrictionsSchemaRestriction] = null,
+    restrictionType: java.lang.String = null,
+    title: java.lang.String = null
+  ): AppRestrictionsSchemaRestriction = {
+    val __obj = js.Dynamic.literal()
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (entry != null) __obj.updateDynamic("entry")(entry)
+    if (entryValue != null) __obj.updateDynamic("entryValue")(entryValue)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (nestedRestriction != null) __obj.updateDynamic("nestedRestriction")(nestedRestriction)
+    if (restrictionType != null) __obj.updateDynamic("restrictionType")(restrictionType)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[AppRestrictionsSchemaRestriction]
+  }
+}
+

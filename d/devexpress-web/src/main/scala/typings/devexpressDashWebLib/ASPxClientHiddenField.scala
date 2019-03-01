@@ -59,3 +59,62 @@ trait ASPxClientHiddenField extends ASPxClientControl {
   def Set(propertyName: java.lang.String, propertyValue: js.Object): scala.Unit
 }
 
+object ASPxClientHiddenField {
+  @scala.inline
+  def apply(
+    Add: js.Function2[java.lang.String, js.Object, scala.Unit],
+    AdjustControl: js.Function0[scala.Unit],
+    BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientHiddenField]],
+    CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientHiddenField]],
+    Clear: js.Function0[scala.Unit],
+    Contains: js.Function1[java.lang.String, scala.Boolean],
+    EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientHiddenField]],
+    Get: js.Function1[java.lang.String, js.Object],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetParentControl: js.Function0[js.Object],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    PerformCallback: js.Function1[java.lang.String, scala.Unit],
+    Remove: js.Function1[java.lang.String, scala.Unit],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    Set: js.Function2[java.lang.String, js.Object, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    name: java.lang.String
+  ): ASPxClientHiddenField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Add")(Add)
+    __obj.updateDynamic("AdjustControl")(AdjustControl)
+    __obj.updateDynamic("BeginCallback")(BeginCallback)
+    __obj.updateDynamic("CallbackError")(CallbackError)
+    __obj.updateDynamic("Clear")(Clear)
+    __obj.updateDynamic("Contains")(Contains)
+    __obj.updateDynamic("EndCallback")(EndCallback)
+    __obj.updateDynamic("Get")(Get)
+    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
+    __obj.updateDynamic("GetHeight")(GetHeight)
+    __obj.updateDynamic("GetMainElement")(GetMainElement)
+    __obj.updateDynamic("GetParentControl")(GetParentControl)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("GetWidth")(GetWidth)
+    __obj.updateDynamic("InCallback")(InCallback)
+    __obj.updateDynamic("Init")(Init)
+    __obj.updateDynamic("PerformCallback")(PerformCallback)
+    __obj.updateDynamic("Remove")(Remove)
+    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
+    __obj.updateDynamic("Set")(Set)
+    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
+    __obj.updateDynamic("SetHeight")(SetHeight)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("SetWidth")(SetWidth)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientHiddenField]
+  }
+}
+

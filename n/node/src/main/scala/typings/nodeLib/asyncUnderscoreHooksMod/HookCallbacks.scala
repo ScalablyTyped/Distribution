@@ -46,3 +46,28 @@ trait HookCallbacks extends js.Object {
   var promiseResolve: js.UndefOr[js.Function1[/* asyncId */ scala.Double, scala.Unit]] = js.undefined
 }
 
+object HookCallbacks {
+  @scala.inline
+  def apply(
+    after: js.Function1[/* asyncId */ scala.Double, scala.Unit] = null,
+    before: js.Function1[/* asyncId */ scala.Double, scala.Unit] = null,
+    destroy: js.Function1[/* asyncId */ scala.Double, scala.Unit] = null,
+    init: js.Function4[
+      /* asyncId */ scala.Double, 
+      /* type */ java.lang.String, 
+      /* triggerAsyncId */ scala.Double, 
+      /* resource */ js.Object, 
+      scala.Unit
+    ] = null,
+    promiseResolve: js.Function1[/* asyncId */ scala.Double, scala.Unit] = null
+  ): HookCallbacks = {
+    val __obj = js.Dynamic.literal()
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (promiseResolve != null) __obj.updateDynamic("promiseResolve")(promiseResolve)
+    __obj.asInstanceOf[HookCallbacks]
+  }
+}
+

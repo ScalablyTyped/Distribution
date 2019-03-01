@@ -14,3 +14,24 @@ trait Anon_FileInput extends js.Object {
   var root: java.lang.String
 }
 
+object Anon_FileInput {
+  @scala.inline
+  def apply(
+    fileInput: java.lang.String,
+    placeholderInput: java.lang.String,
+    preview: java.lang.String,
+    removeButton: java.lang.String,
+    removeFile: java.lang.String,
+    root: java.lang.String
+  ): Anon_FileInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileInput")(fileInput)
+    __obj.updateDynamic("placeholderInput")(placeholderInput)
+    __obj.updateDynamic("preview")(preview)
+    __obj.updateDynamic("removeButton")(removeButton)
+    __obj.updateDynamic("removeFile")(removeFile)
+    __obj.updateDynamic("root")(root)
+    __obj.asInstanceOf[Anon_FileInput]
+  }
+}
+

@@ -18,3 +18,20 @@ trait ISubscriptionItemDeleteOptions
   var proration_date: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ISubscriptionItemDeleteOptions {
+  @scala.inline
+  def apply(
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    prorate: js.UndefOr[scala.Boolean] = js.undefined,
+    proration_date: scala.Int | scala.Double = null
+  ): ISubscriptionItemDeleteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate)
+    if (proration_date != null) __obj.updateDynamic("proration_date")(proration_date.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISubscriptionItemDeleteOptions]
+  }
+}
+

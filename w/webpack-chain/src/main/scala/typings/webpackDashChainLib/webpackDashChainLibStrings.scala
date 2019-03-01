@@ -7,124 +7,162 @@ import scala.scalajs.js.annotation._
 
 object webpackDashChainLibStrings {
   @js.native
-  sealed trait `#@cheap-eval-source-map` extends js.Object
+  sealed trait `#@cheap-eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#@cheap-module-eval-source-map` extends js.Object
+  sealed trait `#@cheap-module-eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#@cheap-module-source-map` extends js.Object
+  sealed trait `#@cheap-module-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#@cheap-source-map` extends js.Object
+  sealed trait `#@cheap-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#@eval` extends js.Object
+  sealed trait `#@eval`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#@eval-source-map` extends js.Object
+  sealed trait `#@eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#@hidden-source-map` extends js.Object
+  sealed trait `#@hidden-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#@inline-source-map` extends js.Object
+  sealed trait `#@inline-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#@nosources-source-map` extends js.Object
+  sealed trait `#@nosources-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#@source-map` extends js.Object
+  sealed trait `#@source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#cheap-eval-source-map` extends js.Object
+  sealed trait `#cheap-eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#cheap-module-eval-source-map` extends js.Object
+  sealed trait `#cheap-module-eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#cheap-module-source-map` extends js.Object
+  sealed trait `#cheap-module-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#cheap-source-map` extends js.Object
+  sealed trait `#cheap-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#eval` extends js.Object
+  sealed trait `#eval`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#eval-source-map` extends js.Object
+  sealed trait `#eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#hidden-source-map` extends js.Object
+  sealed trait `#hidden-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#inline-source-map` extends js.Object
+  sealed trait `#inline-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#nosources-source-map` extends js.Object
+  sealed trait `#nosources-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `#source-map` extends js.Object
+  sealed trait `#source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@cheap-eval-source-map` extends js.Object
+  sealed trait `@cheap-eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@cheap-module-eval-source-map` extends js.Object
+  sealed trait `@cheap-module-eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@cheap-module-source-map` extends js.Object
+  sealed trait `@cheap-module-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@cheap-source-map` extends js.Object
+  sealed trait `@cheap-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@eval` extends js.Object
+  sealed trait `@eval`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@eval-source-map` extends js.Object
+  sealed trait `@eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@hidden-source-map` extends js.Object
+  sealed trait `@hidden-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@inline-source-map` extends js.Object
+  sealed trait `@inline-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@nosources-source-map` extends js.Object
+  sealed trait `@nosources-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `@source-map` extends js.Object
+  sealed trait `@source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `cheap-eval-source-map` extends js.Object
+  sealed trait `cheap-eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `cheap-module-eval-source-map` extends js.Object
+  sealed trait `cheap-module-eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `cheap-module-source-map` extends js.Object
+  sealed trait `cheap-module-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `cheap-source-map` extends js.Object
+  sealed trait `cheap-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait eval extends js.Object
+  sealed trait eval
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `eval-source-map` extends js.Object
+  sealed trait `eval-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
-  sealed trait `hidden-source-map` extends js.Object
+  sealed trait `hidden-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
   sealed trait info extends js.Object
   
   @js.native
-  sealed trait `inline-source-map` extends js.Object
+  sealed trait `inline-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
   sealed trait multiple extends js.Object
@@ -133,7 +171,8 @@ object webpackDashChainLibStrings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait `nosources-source-map` extends js.Object
+  sealed trait `nosources-source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
   sealed trait post extends js.Object
@@ -145,7 +184,8 @@ object webpackDashChainLibStrings {
   sealed trait single extends js.Object
   
   @js.native
-  sealed trait `source-map` extends js.Object
+  sealed trait `source-map`
+    extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
   sealed trait warning extends js.Object

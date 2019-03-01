@@ -25,3 +25,40 @@ import scala.scalajs.js.annotation._
   var zeroMinWidth: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GridProps {
+  @scala.inline
+  def apply(
+    alignContent: GridContentAlignment = null,
+    alignItems: GridItemsAlignment = null,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[GridClassKey]] = null,
+    component: java.lang.String | (reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Omit[GridProps, StrippedProps]]) = null,
+    container: js.UndefOr[scala.Boolean] = js.undefined,
+    direction: GridDirection = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    item: js.UndefOr[scala.Boolean] = js.undefined,
+    justify: GridJustification = null,
+    spacing: GridSpacing = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    wrap: GridWrap = null,
+    zeroMinWidth: js.UndefOr[scala.Boolean] = js.undefined
+  ): GridProps = {
+    val __obj = js.Dynamic.literal()
+    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent)
+    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(item)) __obj.updateDynamic("item")(item)
+    if (justify != null) __obj.updateDynamic("justify")(justify)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (wrap != null) __obj.updateDynamic("wrap")(wrap)
+    if (!js.isUndefined(zeroMinWidth)) __obj.updateDynamic("zeroMinWidth")(zeroMinWidth)
+    __obj.asInstanceOf[GridProps]
+  }
+}
+

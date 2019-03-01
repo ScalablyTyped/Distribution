@@ -24,3 +24,28 @@ trait Anon_Android extends js.Object {
   var yandex: scala.Boolean | Anon_BackgroundString
 }
 
+object Anon_Android {
+  @scala.inline
+  def apply(
+    android: scala.Boolean | Anon_Background,
+    appleIcon: scala.Boolean | Anon_Background,
+    appleStartup: scala.Boolean | Anon_Background,
+    coast: scala.Boolean | Anon_Background,
+    favicons: scala.Boolean,
+    firefox: scala.Boolean | Anon_Background,
+    windows: scala.Boolean | Anon_BackgroundString,
+    yandex: scala.Boolean | Anon_BackgroundString
+  ): Anon_Android = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
+    __obj.updateDynamic("appleIcon")(appleIcon.asInstanceOf[js.Any])
+    __obj.updateDynamic("appleStartup")(appleStartup.asInstanceOf[js.Any])
+    __obj.updateDynamic("coast")(coast.asInstanceOf[js.Any])
+    __obj.updateDynamic("favicons")(favicons)
+    __obj.updateDynamic("firefox")(firefox.asInstanceOf[js.Any])
+    __obj.updateDynamic("windows")(windows.asInstanceOf[js.Any])
+    __obj.updateDynamic("yandex")(yandex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Android]
+  }
+}
+

@@ -15,3 +15,13 @@ trait ListLogMetricsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListLogMetricsResponse {
+  @scala.inline
+  def apply(metrics: js.Array[LogMetric] = null, nextPageToken: java.lang.String = null): ListLogMetricsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListLogMetricsResponse]
+  }
+}
+

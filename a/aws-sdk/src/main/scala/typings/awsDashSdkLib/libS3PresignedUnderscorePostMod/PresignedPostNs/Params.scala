@@ -32,3 +32,22 @@ trait Params extends js.Object {
   var Fields: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object Params {
+  @scala.inline
+  def apply(
+    Bucket: java.lang.String = null,
+    Conditions: js.Array[
+      org.scalablytyped.runtime.StringDictionary[_] | (js.Tuple3[java.lang.String, _, _])
+    ] = null,
+    Expires: scala.Int | scala.Double = null,
+    Fields: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Params = {
+    val __obj = js.Dynamic.literal()
+    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket)
+    if (Conditions != null) __obj.updateDynamic("Conditions")(Conditions)
+    if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
+    if (Fields != null) __obj.updateDynamic("Fields")(Fields)
+    __obj.asInstanceOf[Params]
+  }
+}
+

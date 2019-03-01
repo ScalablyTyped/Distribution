@@ -61,3 +61,36 @@ trait AosOptions extends js.Object {
   var useClassNames: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AosOptions {
+  @scala.inline
+  def apply(
+    anchorPlacement: anchorPlacementOptions = null,
+    animatedClassName: java.lang.String = null,
+    delay: scala.Int | scala.Double = null,
+    disable: aosLib.aosLibStrings.phone | aosLib.aosLibStrings.tablet | aosLib.aosLibStrings.mobile | scala.Boolean | js.Function0[scala.Boolean] = null,
+    duration: scala.Int | scala.Double = null,
+    easing: easingOptions = null,
+    initClassName: java.lang.String = null,
+    mirror: js.UndefOr[scala.Boolean] = js.undefined,
+    offset: scala.Int | scala.Double = null,
+    once: js.UndefOr[scala.Boolean] = js.undefined,
+    startEvent: java.lang.String = null,
+    useClassNames: js.UndefOr[scala.Boolean] = js.undefined
+  ): AosOptions = {
+    val __obj = js.Dynamic.literal()
+    if (anchorPlacement != null) __obj.updateDynamic("anchorPlacement")(anchorPlacement)
+    if (animatedClassName != null) __obj.updateDynamic("animatedClassName")(animatedClassName)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (disable != null) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (initClassName != null) __obj.updateDynamic("initClassName")(initClassName)
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
+    if (startEvent != null) __obj.updateDynamic("startEvent")(startEvent)
+    if (!js.isUndefined(useClassNames)) __obj.updateDynamic("useClassNames")(useClassNames)
+    __obj.asInstanceOf[AosOptions]
+  }
+}
+

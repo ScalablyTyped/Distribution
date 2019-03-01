@@ -28,5 +28,12 @@ trait ICanvasAnimation[T] extends js.Object {
   	 * @chainable
   	 */
   def fxRemove(`object`: Object): T = js.native
+  /**
+  	 * Same as {@link fabric.Canvas.prototype.straightenObject}, but animated
+  	 * @param {fabric.Object} object Object to straighten
+  	 * @return {fabric.Canvas} thisArg
+  	 * @chainable
+  	 */
+  def fxStraightenObject(`object`: Object): T = js.native
 }
 

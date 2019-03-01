@@ -12,3 +12,20 @@ trait ConnectionArguments extends js.Object {
   var last: js.UndefOr[scala.Double | scala.Null] = js.undefined
 }
 
+object ConnectionArguments {
+  @scala.inline
+  def apply(
+    after: ConnectionCursor = null,
+    before: ConnectionCursor = null,
+    first: scala.Int | scala.Double = null,
+    last: scala.Int | scala.Double = null
+  ): ConnectionArguments = {
+    val __obj = js.Dynamic.literal()
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
+    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectionArguments]
+  }
+}
+

@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 object wicgDashMediasessionLibStrings {
   @js.native
-  sealed trait nexttrack extends js.Object
+  sealed trait nexttrack extends MediaSessionAction
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none extends MediaSessionPlaybackState
   
   @js.native
-  sealed trait pause extends js.Object
+  sealed trait pause extends MediaSessionAction
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait paused extends MediaSessionPlaybackState
   
   @js.native
-  sealed trait play extends js.Object
+  sealed trait play extends MediaSessionAction
   
   @js.native
-  sealed trait playing extends js.Object
+  sealed trait playing extends MediaSessionPlaybackState
   
   @js.native
-  sealed trait previoustrack extends js.Object
+  sealed trait previoustrack extends MediaSessionAction
   
   @js.native
-  sealed trait seekbackward extends js.Object
+  sealed trait seekbackward extends MediaSessionAction
   
   @js.native
-  sealed trait seekforward extends js.Object
+  sealed trait seekforward extends MediaSessionAction
   
   @scala.inline
   def nexttrack: nexttrack = "nexttrack".asInstanceOf[nexttrack]

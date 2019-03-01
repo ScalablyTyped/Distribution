@@ -16,3 +16,13 @@ trait DetectedLanguage extends js.Object {
   var languageCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DetectedLanguage {
+  @scala.inline
+  def apply(confidence: scala.Int | scala.Double = null, languageCode: java.lang.String = null): DetectedLanguage = {
+    val __obj = js.Dynamic.literal()
+    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    __obj.asInstanceOf[DetectedLanguage]
+  }
+}
+

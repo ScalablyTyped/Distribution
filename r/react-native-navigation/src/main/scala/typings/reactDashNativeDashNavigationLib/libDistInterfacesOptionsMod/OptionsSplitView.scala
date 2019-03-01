@@ -30,3 +30,20 @@ trait OptionsSplitView extends js.Object {
   ] = js.undefined
 }
 
+object OptionsSplitView {
+  @scala.inline
+  def apply(
+    displayMode: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.auto | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.visible | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.hidden | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.overlay = null,
+    maxWidth: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    primaryEdge: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.leading | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.trailing = null
+  ): OptionsSplitView = {
+    val __obj = js.Dynamic.literal()
+    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (primaryEdge != null) __obj.updateDynamic("primaryEdge")(primaryEdge.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OptionsSplitView]
+  }
+}
+

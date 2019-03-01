@@ -83,3 +83,38 @@ trait PlotBands extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PlotBands {
+  @scala.inline
+  def apply(
+    borderColor: Color = null,
+    borderWidth: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    color: Color = null,
+    events: MousePlotEvents = null,
+    from: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    innerRadius: scala.Double | java.lang.String = null,
+    label: PlotLabel = null,
+    outerRadius: scala.Double | java.lang.String = null,
+    thickness: scala.Double | java.lang.String = null,
+    to: scala.Int | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): PlotBands = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
+    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlotBands]
+  }
+}
+

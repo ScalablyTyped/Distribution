@@ -16,3 +16,28 @@ trait IDeviceWatcher extends js.Object {
   def stop(): scala.Unit
 }
 
+object IDeviceWatcher {
+  @scala.inline
+  def apply(
+    onadded: js.Any,
+    onenumerationcompleted: js.Any,
+    onremoved: js.Any,
+    onstopped: js.Any,
+    onupdated: js.Any,
+    start: js.Function0[scala.Unit],
+    status: DeviceWatcherStatus,
+    stop: js.Function0[scala.Unit]
+  ): IDeviceWatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onadded")(onadded)
+    __obj.updateDynamic("onenumerationcompleted")(onenumerationcompleted)
+    __obj.updateDynamic("onremoved")(onremoved)
+    __obj.updateDynamic("onstopped")(onstopped)
+    __obj.updateDynamic("onupdated")(onupdated)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[IDeviceWatcher]
+  }
+}
+

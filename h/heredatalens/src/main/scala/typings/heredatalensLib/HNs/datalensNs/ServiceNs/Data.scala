@@ -16,3 +16,13 @@ trait Data extends js.Object {
   var rows: js.Array[js.Array[_]]
 }
 
+object Data {
+  @scala.inline
+  def apply(columns: js.Array[java.lang.String], rows: js.Array[js.Array[_]]): Data = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columns")(columns)
+    __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[Data]
+  }
+}
+

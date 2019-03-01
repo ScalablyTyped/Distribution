@@ -11,3 +11,14 @@ trait ByteRange extends js.Object {
   var valid: scala.Boolean
 }
 
+object ByteRange {
+  @scala.inline
+  def apply(from: scala.Double, to: scala.Double, valid: scala.Boolean): ByteRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("to")(to)
+    __obj.updateDynamic("valid")(valid)
+    __obj.asInstanceOf[ByteRange]
+  }
+}
+

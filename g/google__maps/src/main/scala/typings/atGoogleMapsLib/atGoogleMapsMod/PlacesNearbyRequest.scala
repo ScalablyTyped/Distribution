@@ -68,3 +68,34 @@ trait PlacesNearbyRequest extends js.Object {
   var `type`: js.UndefOr[AddressType] = js.undefined
 }
 
+object PlacesNearbyRequest {
+  @scala.inline
+  def apply(
+    location: LatLng,
+    keyword: java.lang.String = null,
+    language: Language = null,
+    maxprice: scala.Int | scala.Double = null,
+    minprice: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    opennow: js.UndefOr[scala.Boolean] = js.undefined,
+    pagetoken: java.lang.String = null,
+    radius: scala.Int | scala.Double = null,
+    rankby: PlacesNearbyRanking = null,
+    `type`: AddressType = null
+  ): PlacesNearbyRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (keyword != null) __obj.updateDynamic("keyword")(keyword)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (maxprice != null) __obj.updateDynamic("maxprice")(maxprice.asInstanceOf[js.Any])
+    if (minprice != null) __obj.updateDynamic("minprice")(minprice.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(opennow)) __obj.updateDynamic("opennow")(opennow)
+    if (pagetoken != null) __obj.updateDynamic("pagetoken")(pagetoken)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (rankby != null) __obj.updateDynamic("rankby")(rankby)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PlacesNearbyRequest]
+  }
+}
+

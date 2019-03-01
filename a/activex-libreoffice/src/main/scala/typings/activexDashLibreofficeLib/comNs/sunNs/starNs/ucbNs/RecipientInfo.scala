@@ -56,3 +56,38 @@ trait RecipientInfo extends js.Object {
   var VIMPostOfficePath: java.lang.String
 }
 
+object RecipientInfo {
+  @scala.inline
+  def apply(
+    BCC: java.lang.String,
+    CC: java.lang.String,
+    Newsgroups: java.lang.String,
+    Password: java.lang.String,
+    ProtocolErrorNumber: scala.Double,
+    ProtocolErrorString: java.lang.String,
+    ProtocolType: java.lang.String,
+    SendTries: scala.Double,
+    Server: java.lang.String,
+    State: OutgoingMessageState,
+    To: java.lang.String,
+    Username: java.lang.String,
+    VIMPostOfficePath: java.lang.String
+  ): RecipientInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BCC")(BCC)
+    __obj.updateDynamic("CC")(CC)
+    __obj.updateDynamic("Newsgroups")(Newsgroups)
+    __obj.updateDynamic("Password")(Password)
+    __obj.updateDynamic("ProtocolErrorNumber")(ProtocolErrorNumber)
+    __obj.updateDynamic("ProtocolErrorString")(ProtocolErrorString)
+    __obj.updateDynamic("ProtocolType")(ProtocolType)
+    __obj.updateDynamic("SendTries")(SendTries)
+    __obj.updateDynamic("Server")(Server)
+    __obj.updateDynamic("State")(State)
+    __obj.updateDynamic("To")(To)
+    __obj.updateDynamic("Username")(Username)
+    __obj.updateDynamic("VIMPostOfficePath")(VIMPostOfficePath)
+    __obj.asInstanceOf[RecipientInfo]
+  }
+}
+

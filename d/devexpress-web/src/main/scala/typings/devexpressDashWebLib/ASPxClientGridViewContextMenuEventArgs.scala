@@ -36,3 +36,22 @@ trait ASPxClientGridViewContextMenuEventArgs extends ASPxClientEventArgs {
   var showBrowserMenu: scala.Boolean
 }
 
+object ASPxClientGridViewContextMenuEventArgs {
+  @scala.inline
+  def apply(
+    htmlEvent: js.Object,
+    index: scala.Double,
+    menu: js.Object,
+    objectType: java.lang.String,
+    showBrowserMenu: scala.Boolean
+  ): ASPxClientGridViewContextMenuEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("menu")(menu)
+    __obj.updateDynamic("objectType")(objectType)
+    __obj.updateDynamic("showBrowserMenu")(showBrowserMenu)
+    __obj.asInstanceOf[ASPxClientGridViewContextMenuEventArgs]
+  }
+}
+

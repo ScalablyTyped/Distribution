@@ -13,3 +13,22 @@ trait Anon_DisabledEInputId extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DisabledEInputId {
+  @scala.inline
+  def apply(
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    inputId: java.lang.String = null,
+    modifier: java.lang.String = null,
+    onChange: js.Function1[/* e */ reactLib.Event, scala.Unit] = null,
+    value: java.lang.String = null
+  ): Anon_DisabledEInputId = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (inputId != null) __obj.updateDynamic("inputId")(inputId)
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_DisabledEInputId]
+  }
+}
+

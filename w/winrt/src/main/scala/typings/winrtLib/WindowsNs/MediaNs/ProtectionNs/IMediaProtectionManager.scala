@@ -12,3 +12,20 @@ trait IMediaProtectionManager extends js.Object {
   var properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
 }
 
+object IMediaProtectionManager {
+  @scala.inline
+  def apply(
+    oncomponentloadfailed: js.Any,
+    onrebootneeded: js.Any,
+    onservicerequested: js.Any,
+    properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
+  ): IMediaProtectionManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("oncomponentloadfailed")(oncomponentloadfailed)
+    __obj.updateDynamic("onrebootneeded")(onrebootneeded)
+    __obj.updateDynamic("onservicerequested")(onservicerequested)
+    __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[IMediaProtectionManager]
+  }
+}
+

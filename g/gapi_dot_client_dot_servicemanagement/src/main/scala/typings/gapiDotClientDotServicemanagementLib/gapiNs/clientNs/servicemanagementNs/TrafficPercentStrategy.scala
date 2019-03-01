@@ -14,3 +14,12 @@ trait TrafficPercentStrategy extends js.Object {
   var percentages: js.UndefOr[stdLib.Record[java.lang.String, scala.Double]] = js.undefined
 }
 
+object TrafficPercentStrategy {
+  @scala.inline
+  def apply(percentages: stdLib.Record[java.lang.String, scala.Double] = null): TrafficPercentStrategy = {
+    val __obj = js.Dynamic.literal()
+    if (percentages != null) __obj.updateDynamic("percentages")(percentages)
+    __obj.asInstanceOf[TrafficPercentStrategy]
+  }
+}
+

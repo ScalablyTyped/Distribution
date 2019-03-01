@@ -19,3 +19,13 @@ trait GradientColorRef extends js.Object {
   var offset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GradientColorRef {
+  @scala.inline
+  def apply(color: java.lang.String = null, offset: scala.Int | scala.Double = null): GradientColorRef = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GradientColorRef]
+  }
+}
+

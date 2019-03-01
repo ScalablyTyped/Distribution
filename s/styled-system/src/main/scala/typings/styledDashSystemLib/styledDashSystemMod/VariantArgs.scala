@@ -11,3 +11,13 @@ trait VariantArgs extends js.Object {
   var prop: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VariantArgs {
+  @scala.inline
+  def apply(key: java.lang.String = null, prop: java.lang.String = null): VariantArgs = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (prop != null) __obj.updateDynamic("prop")(prop)
+    __obj.asInstanceOf[VariantArgs]
+  }
+}
+

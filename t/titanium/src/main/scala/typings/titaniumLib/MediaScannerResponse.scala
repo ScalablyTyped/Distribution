@@ -20,3 +20,13 @@ trait MediaScannerResponse extends js.Object {
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MediaScannerResponse {
+  @scala.inline
+  def apply(path: java.lang.String = null, uri: java.lang.String = null): MediaScannerResponse = {
+    val __obj = js.Dynamic.literal()
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[MediaScannerResponse]
+  }
+}
+

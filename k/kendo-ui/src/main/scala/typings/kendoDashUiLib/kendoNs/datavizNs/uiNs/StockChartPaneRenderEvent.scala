@@ -11,3 +11,24 @@ trait StockChartPaneRenderEvent extends StockChartEvent {
   var pane: js.UndefOr[StockChart] = js.undefined
 }
 
+object StockChartPaneRenderEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: StockChart,
+    index: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    pane: StockChart = null
+  ): StockChartPaneRenderEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pane != null) __obj.updateDynamic("pane")(pane)
+    __obj.asInstanceOf[StockChartPaneRenderEvent]
+  }
+}
+

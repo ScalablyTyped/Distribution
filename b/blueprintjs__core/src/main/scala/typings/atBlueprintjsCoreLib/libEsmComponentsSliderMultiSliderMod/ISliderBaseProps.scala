@@ -64,3 +64,35 @@ trait ISliderBaseProps
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ISliderBaseProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    labelPrecision: scala.Int | scala.Double = null,
+    labelRenderer: scala.Boolean | (js.Function1[
+      /* value */ scala.Double, 
+      java.lang.String | reactLib.reactMod.Global.JSXNs.Element
+    ]) = null,
+    labelStepSize: scala.Int | scala.Double = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    showTrackFill: js.UndefOr[scala.Boolean] = js.undefined,
+    stepSize: scala.Int | scala.Double = null,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): ISliderBaseProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (labelPrecision != null) __obj.updateDynamic("labelPrecision")(labelPrecision.asInstanceOf[js.Any])
+    if (labelRenderer != null) __obj.updateDynamic("labelRenderer")(labelRenderer.asInstanceOf[js.Any])
+    if (labelStepSize != null) __obj.updateDynamic("labelStepSize")(labelStepSize.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(showTrackFill)) __obj.updateDynamic("showTrackFill")(showTrackFill)
+    if (stepSize != null) __obj.updateDynamic("stepSize")(stepSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[ISliderBaseProps]
+  }
+}
+

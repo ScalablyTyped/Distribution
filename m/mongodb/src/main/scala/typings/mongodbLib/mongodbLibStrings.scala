@@ -37,10 +37,11 @@ object mongodbLibStrings {
   sealed trait UpdateQuery extends js.Object
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends mongodbLib.mongodbMod.ProfilingLevel
   
   @js.native
-  sealed trait available extends js.Object
+  sealed trait available extends ReadConcernLevel
   
   @js.native
   sealed trait date extends js.Object
@@ -49,25 +50,27 @@ object mongodbLibStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait linearizable extends js.Object
+  sealed trait linearizable extends ReadConcernLevel
   
   @js.native
-  sealed trait local extends js.Object
+  sealed trait local extends ReadConcernLevel
   
   @js.native
-  sealed trait majority extends js.Object
+  sealed trait majority extends ReadConcernLevel
   
   @js.native
   sealed trait moderate extends js.Object
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends mongodbLib.mongodbMod.ProfilingLevel
   
   @js.native
-  sealed trait slow_only extends js.Object
+  sealed trait slow_only
+    extends mongodbLib.mongodbMod.ProfilingLevel
   
   @js.native
-  sealed trait snapshot extends js.Object
+  sealed trait snapshot extends ReadConcernLevel
   
   @js.native
   sealed trait strict extends js.Object

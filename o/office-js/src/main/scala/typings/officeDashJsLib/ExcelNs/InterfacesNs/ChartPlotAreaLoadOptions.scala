@@ -86,3 +86,34 @@ trait ChartPlotAreaLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartPlotAreaLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartPlotAreaFormatLoadOptions = null,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
+    insideHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    insideLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    insideTop: js.UndefOr[scala.Boolean] = js.undefined,
+    insideWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    left: js.UndefOr[scala.Boolean] = js.undefined,
+    position: js.UndefOr[scala.Boolean] = js.undefined,
+    top: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartPlotAreaLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(insideHeight)) __obj.updateDynamic("insideHeight")(insideHeight)
+    if (!js.isUndefined(insideLeft)) __obj.updateDynamic("insideLeft")(insideLeft)
+    if (!js.isUndefined(insideTop)) __obj.updateDynamic("insideTop")(insideTop)
+    if (!js.isUndefined(insideWidth)) __obj.updateDynamic("insideWidth")(insideWidth)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ChartPlotAreaLoadOptions]
+  }
+}
+

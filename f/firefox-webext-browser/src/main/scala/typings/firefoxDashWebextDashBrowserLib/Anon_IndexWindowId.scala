@@ -12,3 +12,13 @@ trait Anon_IndexWindowId extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_IndexWindowId {
+  @scala.inline
+  def apply(index: scala.Double, windowId: scala.Int | scala.Double = null): Anon_IndexWindowId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_IndexWindowId]
+  }
+}
+

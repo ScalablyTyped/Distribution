@@ -16,3 +16,13 @@ trait TooltipSettingsAnimation extends js.Object {
   var speed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TooltipSettingsAnimation {
+  @scala.inline
+  def apply(effect: Effect | java.lang.String = null, speed: scala.Int | scala.Double = null): TooltipSettingsAnimation = {
+    val __obj = js.Dynamic.literal()
+    if (effect != null) __obj.updateDynamic("effect")(effect.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TooltipSettingsAnimation]
+  }
+}
+

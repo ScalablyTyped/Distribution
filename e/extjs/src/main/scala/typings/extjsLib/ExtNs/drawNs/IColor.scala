@@ -50,3 +50,64 @@ trait IColor
   var toString_FIColor: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
 }
 
+object IColor {
+  @scala.inline
+  def apply(
+    alias: extjsLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    extend: java.lang.String = null,
+    getBlue: js.Function0[scala.Double] = null,
+    getDarker: js.Function1[/* factor */ js.UndefOr[scala.Double], _] = null,
+    getGrayscale: js.Function0[scala.Double] = null,
+    getGreen: js.Function0[scala.Double] = null,
+    getHSL: js.Function0[extjsLib.ExtNs.Array] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getLighter: js.Function1[/* factor */ js.UndefOr[scala.Double], _] = null,
+    getRGB: js.Function0[extjsLib.ExtNs.Array] = null,
+    getRed: js.Function0[scala.Double] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IColor] = null,
+    lightnessFactor: scala.Int | scala.Double = null,
+    mixins: js.Any = null,
+    requires: extjsLib.ExtNs.Array = null,
+    self: extjsLib.ExtNs.IClass = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    toString: js.Function0[java.lang.String] = null,
+    uses: extjsLib.ExtNs.Array = null
+  ): IColor = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (getBlue != null) __obj.updateDynamic("getBlue")(getBlue)
+    if (getDarker != null) __obj.updateDynamic("getDarker")(getDarker)
+    if (getGrayscale != null) __obj.updateDynamic("getGrayscale")(getGrayscale)
+    if (getGreen != null) __obj.updateDynamic("getGreen")(getGreen)
+    if (getHSL != null) __obj.updateDynamic("getHSL")(getHSL)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getLighter != null) __obj.updateDynamic("getLighter")(getLighter)
+    if (getRGB != null) __obj.updateDynamic("getRGB")(getRGB)
+    if (getRed != null) __obj.updateDynamic("getRed")(getRed)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (lightnessFactor != null) __obj.updateDynamic("lightnessFactor")(lightnessFactor.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (toString != null) __obj.updateDynamic("toString")(toString)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IColor]
+  }
+}
+

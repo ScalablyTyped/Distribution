@@ -11,3 +11,18 @@ trait Anon_CheckEncodingFlags extends js.Object {
   var flags: js.UndefOr[adoneLib.adoneNs.fsNs.INs.Flag] = js.undefined
 }
 
+object Anon_CheckEncodingFlags {
+  @scala.inline
+  def apply(
+    check: adoneLib.adoneLibNumbers.`true`,
+    encoding: adoneLib.adoneNs.fsNs.INs.Encoding = null,
+    flags: adoneLib.adoneNs.fsNs.INs.Flag = null
+  ): Anon_CheckEncodingFlags = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("check")(check)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    __obj.asInstanceOf[Anon_CheckEncodingFlags]
+  }
+}
+

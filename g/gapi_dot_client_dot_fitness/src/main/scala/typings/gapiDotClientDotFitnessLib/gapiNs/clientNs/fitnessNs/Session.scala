@@ -30,3 +30,30 @@ trait Session extends js.Object {
   var startTimeMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Session {
+  @scala.inline
+  def apply(
+    activeTimeMillis: java.lang.String = null,
+    activityType: scala.Int | scala.Double = null,
+    application: Application = null,
+    description: java.lang.String = null,
+    endTimeMillis: java.lang.String = null,
+    id: java.lang.String = null,
+    modifiedTimeMillis: java.lang.String = null,
+    name: java.lang.String = null,
+    startTimeMillis: java.lang.String = null
+  ): Session = {
+    val __obj = js.Dynamic.literal()
+    if (activeTimeMillis != null) __obj.updateDynamic("activeTimeMillis")(activeTimeMillis)
+    if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
+    if (application != null) __obj.updateDynamic("application")(application)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifiedTimeMillis != null) __obj.updateDynamic("modifiedTimeMillis")(modifiedTimeMillis)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis)
+    __obj.asInstanceOf[Session]
+  }
+}
+

@@ -31,3 +31,14 @@ trait Schedule extends js.Object {
   var startTimeOfDay: js.UndefOr[TimeOfDay] = js.undefined
 }
 
+object Schedule {
+  @scala.inline
+  def apply(scheduleEndDate: Date = null, scheduleStartDate: Date = null, startTimeOfDay: TimeOfDay = null): Schedule = {
+    val __obj = js.Dynamic.literal()
+    if (scheduleEndDate != null) __obj.updateDynamic("scheduleEndDate")(scheduleEndDate)
+    if (scheduleStartDate != null) __obj.updateDynamic("scheduleStartDate")(scheduleStartDate)
+    if (startTimeOfDay != null) __obj.updateDynamic("startTimeOfDay")(startTimeOfDay)
+    __obj.asInstanceOf[Schedule]
+  }
+}
+

@@ -48,3 +48,26 @@ trait XDataSource
   def setLoginTimeout(seconds: scala.Double): scala.Unit
 }
 
+object XDataSource {
+  @scala.inline
+  def apply(
+    LoginTimeout: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getConnection: js.Function2[java.lang.String, java.lang.String, XConnection],
+    getLoginTimeout: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setLoginTimeout: js.Function1[scala.Double, scala.Unit]
+  ): XDataSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LoginTimeout")(LoginTimeout)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getConnection")(getConnection)
+    __obj.updateDynamic("getLoginTimeout")(getLoginTimeout)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setLoginTimeout")(setLoginTimeout)
+    __obj.asInstanceOf[XDataSource]
+  }
+}
+

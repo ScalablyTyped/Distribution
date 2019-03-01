@@ -47,3 +47,38 @@ trait DrawTicksEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DrawTicksEventArgs {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    element: js.Any = null,
+    index: scala.Int | scala.Double = null,
+    model: js.Any = null,
+    `object`: js.Any = null,
+    pointerValue: scala.Int | scala.Double = null,
+    position: js.Any = null,
+    scaleElement: js.Any = null,
+    scaleIndex: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DrawTicksEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (pointerValue != null) __obj.updateDynamic("pointerValue")(pointerValue.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DrawTicksEventArgs]
+  }
+}
+

@@ -76,3 +76,40 @@ trait TimepickerOptions extends js.Object {
   def onSelect(`this`: Modal, hour: scala.Double, minute: scala.Double): scala.Unit
 }
 
+object TimepickerOptions {
+  @scala.inline
+  def apply(
+    autoClose: scala.Boolean,
+    container: java.lang.String,
+    defaultTime: java.lang.String,
+    duration: scala.Double,
+    fromNow: scala.Double,
+    i18n: stdLib.Partial[InternationalizationOptions],
+    onCloseEnd: js.Function2[Modal, stdLib.Element, scala.Unit],
+    onCloseStart: js.Function2[Modal, stdLib.Element, scala.Unit],
+    onOpenEnd: js.Function2[Modal, stdLib.Element, scala.Unit],
+    onOpenStart: js.Function2[Modal, stdLib.Element, scala.Unit],
+    onSelect: js.Function3[Modal, scala.Double, scala.Double, scala.Unit],
+    showClearBtn: scala.Boolean,
+    twelveHour: scala.Boolean,
+    vibrate: scala.Boolean
+  ): TimepickerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoClose")(autoClose)
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("defaultTime")(defaultTime)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("fromNow")(fromNow)
+    __obj.updateDynamic("i18n")(i18n)
+    __obj.updateDynamic("onCloseEnd")(onCloseEnd)
+    __obj.updateDynamic("onCloseStart")(onCloseStart)
+    __obj.updateDynamic("onOpenEnd")(onOpenEnd)
+    __obj.updateDynamic("onOpenStart")(onOpenStart)
+    __obj.updateDynamic("onSelect")(onSelect)
+    __obj.updateDynamic("showClearBtn")(showClearBtn)
+    __obj.updateDynamic("twelveHour")(twelveHour)
+    __obj.updateDynamic("vibrate")(vibrate)
+    __obj.asInstanceOf[TimepickerOptions]
+  }
+}
+

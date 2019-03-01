@@ -48,3 +48,32 @@ trait Anon_AudioStreams extends js.Object {
   var videoStreams: js.Array[Anon_AspectRatio]
 }
 
+object Anon_AudioStreams {
+  @scala.inline
+  def apply(
+    audioStreams: js.Array[Anon_BitrateBps],
+    bitrateBps: scala.Double,
+    container: java.lang.String,
+    creationTime: java.lang.String,
+    durationMs: scala.Double,
+    fileName: java.lang.String,
+    fileSize: scala.Double,
+    fileType: java.lang.String,
+    recordingLocation: Anon_Elevation,
+    videoStreams: js.Array[Anon_AspectRatio]
+  ): Anon_AudioStreams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audioStreams")(audioStreams)
+    __obj.updateDynamic("bitrateBps")(bitrateBps)
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("creationTime")(creationTime)
+    __obj.updateDynamic("durationMs")(durationMs)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("fileSize")(fileSize)
+    __obj.updateDynamic("fileType")(fileType)
+    __obj.updateDynamic("recordingLocation")(recordingLocation)
+    __obj.updateDynamic("videoStreams")(videoStreams)
+    __obj.asInstanceOf[Anon_AudioStreams]
+  }
+}
+

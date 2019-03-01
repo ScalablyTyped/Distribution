@@ -52,3 +52,33 @@ trait IDevice extends js.Object {
   var `type`: java.lang.String
 }
 
+object IDevice {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    ip: java.lang.String,
+    language: java.lang.String,
+    locale: java.lang.String,
+    model: java.lang.String,
+    network: scala.Double,
+    oemName: java.lang.String,
+    os: java.lang.String,
+    osversion: java.lang.String,
+    resolution: java.lang.String,
+    `type`: java.lang.String
+  ): IDevice = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ip")(ip)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("locale")(locale)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("network")(network)
+    __obj.updateDynamic("oemName")(oemName)
+    __obj.updateDynamic("os")(os)
+    __obj.updateDynamic("osversion")(osversion)
+    __obj.updateDynamic("resolution")(resolution)
+    __obj.asInstanceOf[IDevice]
+  }
+}
+

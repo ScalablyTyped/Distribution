@@ -32,3 +32,30 @@ trait GetZoneResult extends js.Object {
   val zoneId: java.lang.String
 }
 
+object GetZoneResult {
+  @scala.inline
+  def apply(
+    callerReference: java.lang.String,
+    comment: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    nameServers: js.Array[java.lang.String],
+    resourceRecordSetCount: scala.Double,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpcId: java.lang.String,
+    zoneId: java.lang.String
+  ): GetZoneResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callerReference")(callerReference)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("nameServers")(nameServers)
+    __obj.updateDynamic("resourceRecordSetCount")(resourceRecordSetCount)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("vpcId")(vpcId)
+    __obj.updateDynamic("zoneId")(zoneId)
+    __obj.asInstanceOf[GetZoneResult]
+  }
+}
+

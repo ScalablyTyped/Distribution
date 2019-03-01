@@ -14,3 +14,14 @@ trait Anon_Hit extends js.Object {
   var score: scala.Double
 }
 
+object Anon_Hit {
+  @scala.inline
+  def apply(hit: js.Array[java.lang.String], label: scala.Double, score: scala.Double): Anon_Hit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hit")(hit)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("score")(score)
+    __obj.asInstanceOf[Anon_Hit]
+  }
+}
+

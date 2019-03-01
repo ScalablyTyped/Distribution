@@ -37,3 +37,20 @@ trait TableBorderLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableBorderLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    color: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableBorderLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[TableBorderLoadOptions]
+  }
+}
+

@@ -20,3 +20,13 @@ trait NonResourceAttributes extends js.Object {
   val verb: java.lang.String
 }
 
+object NonResourceAttributes {
+  @scala.inline
+  def apply(path: java.lang.String, verb: java.lang.String): NonResourceAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("verb")(verb)
+    __obj.asInstanceOf[NonResourceAttributes]
+  }
+}
+

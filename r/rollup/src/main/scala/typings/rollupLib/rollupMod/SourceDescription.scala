@@ -10,3 +10,13 @@ trait SourceDescription extends js.Object {
   var map: js.UndefOr[java.lang.String | RawSourceMap] = js.undefined
 }
 
+object SourceDescription {
+  @scala.inline
+  def apply(code: java.lang.String, map: java.lang.String | RawSourceMap = null): SourceDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SourceDescription]
+  }
+}
+

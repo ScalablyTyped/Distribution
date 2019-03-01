@@ -61,3 +61,18 @@ trait RateLimits extends js.Object {
   var maxTasksDispatchedPerSecond: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RateLimits {
+  @scala.inline
+  def apply(
+    maxBurstSize: scala.Int | scala.Double = null,
+    maxConcurrentTasks: scala.Int | scala.Double = null,
+    maxTasksDispatchedPerSecond: scala.Int | scala.Double = null
+  ): RateLimits = {
+    val __obj = js.Dynamic.literal()
+    if (maxBurstSize != null) __obj.updateDynamic("maxBurstSize")(maxBurstSize.asInstanceOf[js.Any])
+    if (maxConcurrentTasks != null) __obj.updateDynamic("maxConcurrentTasks")(maxConcurrentTasks.asInstanceOf[js.Any])
+    if (maxTasksDispatchedPerSecond != null) __obj.updateDynamic("maxTasksDispatchedPerSecond")(maxTasksDispatchedPerSecond.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RateLimits]
+  }
+}
+

@@ -5,5 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WebGLRenderer extends js.Object
+trait WebGLRenderer extends Renderer
 

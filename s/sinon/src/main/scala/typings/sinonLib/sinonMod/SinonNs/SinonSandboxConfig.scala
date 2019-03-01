@@ -30,3 +30,20 @@ trait SinonSandboxConfig extends js.Object {
   var useFakeTimers: scala.Boolean | stdLib.Partial[SinonFakeTimersConfig]
 }
 
+object SinonSandboxConfig {
+  @scala.inline
+  def apply(
+    properties: js.Array[java.lang.String],
+    useFakeServer: scala.Boolean | SinonFakeServer,
+    useFakeTimers: scala.Boolean | stdLib.Partial[SinonFakeTimersConfig],
+    injectInto: js.Object = null
+  ): SinonSandboxConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("useFakeServer")(useFakeServer.asInstanceOf[js.Any])
+    __obj.updateDynamic("useFakeTimers")(useFakeTimers.asInstanceOf[js.Any])
+    if (injectInto != null) __obj.updateDynamic("injectInto")(injectInto)
+    __obj.asInstanceOf[SinonSandboxConfig]
+  }
+}
+

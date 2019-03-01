@@ -14,3 +14,20 @@ trait Anon_DisplayReasonText extends js.Object {
   ] = js.undefined
 }
 
+object Anon_DisplayReasonText {
+  @scala.inline
+  def apply(
+    displayReasonText: java.lang.String = null,
+    onError: js.Function1[/* message */ java.lang.String, scala.Unit] = null,
+    onSuccess: js.Function0[scala.Unit] = null,
+    transferDisplayType: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.KnuddelTransferDisplayType = null
+  ): Anon_DisplayReasonText = {
+    val __obj = js.Dynamic.literal()
+    if (displayReasonText != null) __obj.updateDynamic("displayReasonText")(displayReasonText)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (transferDisplayType != null) __obj.updateDynamic("transferDisplayType")(transferDisplayType)
+    __obj.asInstanceOf[Anon_DisplayReasonText]
+  }
+}
+

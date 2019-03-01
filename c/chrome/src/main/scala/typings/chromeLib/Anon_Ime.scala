@@ -17,3 +17,12 @@ trait Anon_Ime extends js.Object {
   val imeNs: Anon_CallbackClearComposition
 }
 
+object Anon_Ime {
+  @scala.inline
+  def apply(imeNs: Anon_CallbackClearComposition): Anon_Ime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("imeNs")(imeNs)
+    __obj.asInstanceOf[Anon_Ime]
+  }
+}
+

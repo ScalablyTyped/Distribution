@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object polyfillDashServiceLibStrings {
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends polyfillDashServiceLib.polyfillDashServiceMod.PolyfillFlag
   
   @js.native
-  sealed trait gated extends js.Object
+  sealed trait gated
+    extends polyfillDashServiceLib.polyfillDashServiceMod.PolyfillFlag
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait ignore
+    extends polyfillDashServiceLib.polyfillDashServiceMod.Unknown
   
   @js.native
-  sealed trait polyfill extends js.Object
+  sealed trait polyfill
+    extends polyfillDashServiceLib.polyfillDashServiceMod.Unknown
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

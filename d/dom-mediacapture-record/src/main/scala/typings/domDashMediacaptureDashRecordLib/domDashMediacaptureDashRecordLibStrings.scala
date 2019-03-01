@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object domDashMediacaptureDashRecordLibStrings {
   @js.native
-  sealed trait inactive extends js.Object
+  sealed trait inactive extends RecordingState
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait paused extends RecordingState
   
   @js.native
-  sealed trait recording extends js.Object
+  sealed trait recording extends RecordingState
   
   @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]

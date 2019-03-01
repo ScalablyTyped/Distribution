@@ -12,3 +12,20 @@ trait Anon_FirstTangent extends js.Object {
   var times: js.Array[scala.Double]
 }
 
+object Anon_FirstTangent {
+  @scala.inline
+  def apply(
+    points: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian3],
+    times: js.Array[scala.Double],
+    firstTangent: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = null,
+    lastTangent: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = null
+  ): Anon_FirstTangent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("points")(points)
+    __obj.updateDynamic("times")(times)
+    if (firstTangent != null) __obj.updateDynamic("firstTangent")(firstTangent)
+    if (lastTangent != null) __obj.updateDynamic("lastTangent")(lastTangent)
+    __obj.asInstanceOf[Anon_FirstTangent]
+  }
+}
+

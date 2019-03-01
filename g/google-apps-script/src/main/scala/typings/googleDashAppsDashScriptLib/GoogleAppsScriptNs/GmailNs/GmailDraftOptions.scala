@@ -42,3 +42,28 @@ trait GmailDraftOptions extends js.Object {
   var replyTo: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GmailDraftOptions {
+  @scala.inline
+  def apply(
+    attachments: js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource] = null,
+    bcc: java.lang.String = null,
+    cc: java.lang.String = null,
+    from: java.lang.String = null,
+    htmlBody: java.lang.String = null,
+    inlineImages: org.scalablytyped.runtime.StringDictionary[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource] = null,
+    name: java.lang.String = null,
+    replyTo: java.lang.String = null
+  ): GmailDraftOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
+    if (cc != null) __obj.updateDynamic("cc")(cc)
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (htmlBody != null) __obj.updateDynamic("htmlBody")(htmlBody)
+    if (inlineImages != null) __obj.updateDynamic("inlineImages")(inlineImages)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo)
+    __obj.asInstanceOf[GmailDraftOptions]
+  }
+}
+

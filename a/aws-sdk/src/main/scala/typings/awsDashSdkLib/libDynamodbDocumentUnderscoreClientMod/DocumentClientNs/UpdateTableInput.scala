@@ -36,3 +36,26 @@ trait UpdateTableInput extends js.Object {
   var TableName: TableName
 }
 
+object UpdateTableInput {
+  @scala.inline
+  def apply(
+    TableName: TableName,
+    AttributeDefinitions: AttributeDefinitions = null,
+    BillingMode: BillingMode = null,
+    GlobalSecondaryIndexUpdates: GlobalSecondaryIndexUpdateList = null,
+    ProvisionedThroughput: ProvisionedThroughput = null,
+    SSESpecification: SSESpecification = null,
+    StreamSpecification: StreamSpecification = null
+  ): UpdateTableInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TableName")(TableName)
+    if (AttributeDefinitions != null) __obj.updateDynamic("AttributeDefinitions")(AttributeDefinitions)
+    if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
+    if (GlobalSecondaryIndexUpdates != null) __obj.updateDynamic("GlobalSecondaryIndexUpdates")(GlobalSecondaryIndexUpdates)
+    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)
+    if (SSESpecification != null) __obj.updateDynamic("SSESpecification")(SSESpecification)
+    if (StreamSpecification != null) __obj.updateDynamic("StreamSpecification")(StreamSpecification)
+    __obj.asInstanceOf[UpdateTableInput]
+  }
+}
+

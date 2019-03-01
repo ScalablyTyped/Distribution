@@ -64,3 +64,127 @@ trait InstancesResource extends js.Object {
   def stop(request: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object InstancesResource {
+  @scala.inline
+  def apply(
+    addAccessConfig: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstance, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceAggregatedList]
+    ],
+    attachDisk: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    deleteAccessConfig: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AccessConfig, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    detachDisk: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltDeviceName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Instance]
+    ],
+    getSerialPortOutput: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKeyOauthtokenPort, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SerialPortOutput]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceList]
+    ],
+    reset: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setDiskAutoDelete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltAutoDelete, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setLabels: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMachineResources: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMachineType: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMetadata: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setMinCpuPlatform: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setScheduling: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setServiceAccount: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setTags: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    start: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    startWithEncryptionKey: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    stop: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): InstancesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addAccessConfig")(addAccessConfig)
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("attachDisk")(attachDisk)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("deleteAccessConfig")(deleteAccessConfig)
+    __obj.updateDynamic("detachDisk")(detachDisk)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getSerialPortOutput")(getSerialPortOutput)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("setDiskAutoDelete")(setDiskAutoDelete)
+    __obj.updateDynamic("setLabels")(setLabels)
+    __obj.updateDynamic("setMachineResources")(setMachineResources)
+    __obj.updateDynamic("setMachineType")(setMachineType)
+    __obj.updateDynamic("setMetadata")(setMetadata)
+    __obj.updateDynamic("setMinCpuPlatform")(setMinCpuPlatform)
+    __obj.updateDynamic("setScheduling")(setScheduling)
+    __obj.updateDynamic("setServiceAccount")(setServiceAccount)
+    __obj.updateDynamic("setTags")(setTags)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("startWithEncryptionKey")(startWithEncryptionKey)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[InstancesResource]
+  }
+}
+

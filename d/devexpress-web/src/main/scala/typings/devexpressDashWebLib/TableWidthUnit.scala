@@ -21,3 +21,12 @@ trait TableWidthUnit extends js.Object {
   var value: scala.Double
 }
 
+object TableWidthUnit {
+  @scala.inline
+  def apply(`type`: js.Any, value: scala.Double): TableWidthUnit = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[TableWidthUnit]
+  }
+}
+

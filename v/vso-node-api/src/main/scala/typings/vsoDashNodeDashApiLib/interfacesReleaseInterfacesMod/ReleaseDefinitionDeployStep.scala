@@ -12,3 +12,13 @@ trait ReleaseDefinitionDeployStep extends ReleaseDefinitionEnvironmentStep {
   var tasks: js.Array[WorkflowTask]
 }
 
+object ReleaseDefinitionDeployStep {
+  @scala.inline
+  def apply(id: scala.Double, tasks: js.Array[WorkflowTask]): ReleaseDefinitionDeployStep = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("tasks")(tasks)
+    __obj.asInstanceOf[ReleaseDefinitionDeployStep]
+  }
+}
+

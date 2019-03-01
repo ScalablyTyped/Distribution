@@ -12,3 +12,13 @@ trait PopupDetails extends js.Object {
   var tabId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PopupDetails {
+  @scala.inline
+  def apply(popup: java.lang.String, tabId: scala.Int | scala.Double = null): PopupDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("popup")(popup)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PopupDetails]
+  }
+}
+

@@ -23,3 +23,22 @@ trait DownloadEndEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DownloadEndEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    fileName: java.lang.String = null,
+    model: js.Any = null,
+    status: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DownloadEndEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DownloadEndEventArgs]
+  }
+}
+

@@ -12,3 +12,32 @@ trait StructuredSource extends js.Object {
   def rangeToLocation(range: js.Tuple2[scala.Double, scala.Double]): structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourceLocation
 }
 
+object StructuredSource {
+  @scala.inline
+  def apply(
+    indexToPosition: js.Function1[
+      scala.Double, 
+      structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourcePosition
+    ],
+    locationToRange: js.Function1[
+      structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourceLocation, 
+      js.Tuple2[scala.Double, scala.Double]
+    ],
+    positionToIndex: js.Function1[
+      structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourcePosition, 
+      scala.Double
+    ],
+    rangeToLocation: js.Function1[
+      js.Tuple2[scala.Double, scala.Double], 
+      structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourceLocation
+    ]
+  ): StructuredSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("indexToPosition")(indexToPosition)
+    __obj.updateDynamic("locationToRange")(locationToRange)
+    __obj.updateDynamic("positionToIndex")(positionToIndex)
+    __obj.updateDynamic("rangeToLocation")(rangeToLocation)
+    __obj.asInstanceOf[StructuredSource]
+  }
+}
+

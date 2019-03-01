@@ -206,3 +206,139 @@ trait IContextItem
   var wrapsComponent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IContextItem {
+  @scala.inline
+  def apply(
+    addCls: js.Function1[/* newCls */ js.UndefOr[js.Any], scala.Unit] = null,
+    alias: extjsLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    block: js.Function2[
+      /* layout */ js.UndefOr[ILayout], 
+      /* propName */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ] = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    clearMarginCache: js.Function0[scala.Unit] = null,
+    config: js.Any = null,
+    domBlock: js.Function2[
+      /* layout */ js.UndefOr[ILayout], 
+      /* propName */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ] = null,
+    extend: java.lang.String = null,
+    flush: js.Function0[scala.Unit] = null,
+    getBorderInfo: js.Function0[_] = null,
+    getClassList: js.Function0[scala.Unit] = null,
+    getDomProp: js.Function1[/* propName */ js.UndefOr[java.lang.String], _] = null,
+    getEl: js.Function2[/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any], IContextItem] = null,
+    getFrameInfo: js.Function0[_] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getMarginInfo: js.Function0[_] = null,
+    getPaddingInfo: js.Function0[_] = null,
+    getProp: js.Function1[/* propName */ js.UndefOr[java.lang.String], _] = null,
+    getStyle: js.Function1[/* styleName */ js.UndefOr[java.lang.String], _] = null,
+    getStyles: js.Function2[
+      /* styleNames */ js.UndefOr[extjsLib.ExtNs.Array], 
+      /* altNames */ js.UndefOr[extjsLib.ExtNs.Array], 
+      _
+    ] = null,
+    hasDomProp: js.Function1[/* propName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    hasProp: js.Function1[/* propName */ js.UndefOr[java.lang.String], scala.Boolean] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IContextItem] = null,
+    invalidate: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    mixins: js.Any = null,
+    recoverProp: js.Function3[
+      /* propName */ js.UndefOr[java.lang.String], 
+      /* oldProps */ js.UndefOr[js.Any], 
+      /* oldDirty */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    removeCls: js.Function1[/* removeCls */ js.UndefOr[js.Any], scala.Unit] = null,
+    removeEl: js.Function2[/* nameOrEl */ js.UndefOr[js.Any], /* owner */ js.UndefOr[js.Any], scala.Unit] = null,
+    requires: extjsLib.ExtNs.Array = null,
+    self: extjsLib.ExtNs.IClass = null,
+    setAttribute: js.Function2[/* name */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    setContentHeight: js.Function2[/* height */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any], scala.Unit] = null,
+    setContentSize: js.Function3[
+      /* width */ js.UndefOr[js.Any], 
+      /* height */ js.UndefOr[js.Any], 
+      /* measured */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    setContentWidth: js.Function2[/* width */ js.UndefOr[js.Any], /* measured */ js.UndefOr[js.Any], scala.Unit] = null,
+    setHeight: js.Function2[
+      /* height */ js.UndefOr[scala.Double], 
+      /* dirty */ js.UndefOr[scala.Boolean], 
+      scala.Double
+    ] = null,
+    setProp: js.Function3[
+      /* propName */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* dirty */ js.UndefOr[scala.Boolean], 
+      scala.Double
+    ] = null,
+    setWidth: js.Function2[
+      /* width */ js.UndefOr[scala.Double], 
+      /* dirty */ js.UndefOr[scala.Boolean], 
+      scala.Double
+    ] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    state: js.Any = null,
+    statics: js.Any = null,
+    uses: extjsLib.ExtNs.Array = null,
+    wrapsComponent: js.UndefOr[scala.Boolean] = js.undefined
+  ): IContextItem = {
+    val __obj = js.Dynamic.literal()
+    if (addCls != null) __obj.updateDynamic("addCls")(addCls)
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (block != null) __obj.updateDynamic("block")(block)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (clearMarginCache != null) __obj.updateDynamic("clearMarginCache")(clearMarginCache)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (domBlock != null) __obj.updateDynamic("domBlock")(domBlock)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (flush != null) __obj.updateDynamic("flush")(flush)
+    if (getBorderInfo != null) __obj.updateDynamic("getBorderInfo")(getBorderInfo)
+    if (getClassList != null) __obj.updateDynamic("getClassList")(getClassList)
+    if (getDomProp != null) __obj.updateDynamic("getDomProp")(getDomProp)
+    if (getEl != null) __obj.updateDynamic("getEl")(getEl)
+    if (getFrameInfo != null) __obj.updateDynamic("getFrameInfo")(getFrameInfo)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getMarginInfo != null) __obj.updateDynamic("getMarginInfo")(getMarginInfo)
+    if (getPaddingInfo != null) __obj.updateDynamic("getPaddingInfo")(getPaddingInfo)
+    if (getProp != null) __obj.updateDynamic("getProp")(getProp)
+    if (getStyle != null) __obj.updateDynamic("getStyle")(getStyle)
+    if (getStyles != null) __obj.updateDynamic("getStyles")(getStyles)
+    if (hasDomProp != null) __obj.updateDynamic("hasDomProp")(hasDomProp)
+    if (hasProp != null) __obj.updateDynamic("hasProp")(hasProp)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (recoverProp != null) __obj.updateDynamic("recoverProp")(recoverProp)
+    if (removeCls != null) __obj.updateDynamic("removeCls")(removeCls)
+    if (removeEl != null) __obj.updateDynamic("removeEl")(removeEl)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (setAttribute != null) __obj.updateDynamic("setAttribute")(setAttribute)
+    if (setContentHeight != null) __obj.updateDynamic("setContentHeight")(setContentHeight)
+    if (setContentSize != null) __obj.updateDynamic("setContentSize")(setContentSize)
+    if (setContentWidth != null) __obj.updateDynamic("setContentWidth")(setContentWidth)
+    if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight)
+    if (setProp != null) __obj.updateDynamic("setProp")(setProp)
+    if (setWidth != null) __obj.updateDynamic("setWidth")(setWidth)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (!js.isUndefined(wrapsComponent)) __obj.updateDynamic("wrapsComponent")(wrapsComponent)
+    __obj.asInstanceOf[IContextItem]
+  }
+}
+

@@ -33,3 +33,34 @@ trait Anon_AltFieldsKeyOauthtokenPathPrettyPrint extends js.Object {
   var variableId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltFieldsKeyOauthtokenPathPrettyPrint {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    tagId: java.lang.String = null,
+    triggerId: java.lang.String = null,
+    userIp: java.lang.String = null,
+    variableId: java.lang.String = null
+  ): Anon_AltFieldsKeyOauthtokenPathPrettyPrint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (tagId != null) __obj.updateDynamic("tagId")(tagId)
+    if (triggerId != null) __obj.updateDynamic("triggerId")(triggerId)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (variableId != null) __obj.updateDynamic("variableId")(variableId)
+    __obj.asInstanceOf[Anon_AltFieldsKeyOauthtokenPathPrettyPrint]
+  }
+}
+

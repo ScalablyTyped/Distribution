@@ -12,3 +12,13 @@ trait ListAvailableOrgPolicyConstraintsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListAvailableOrgPolicyConstraintsResponse {
+  @scala.inline
+  def apply(constraints: js.Array[Constraint] = null, nextPageToken: java.lang.String = null): ListAvailableOrgPolicyConstraintsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListAvailableOrgPolicyConstraintsResponse]
+  }
+}
+

@@ -7,94 +7,132 @@ import scala.scalajs.js.annotation._
 
 object qlikDashVisualizationextensionsLibStrings {
   @js.native
-  sealed trait A extends js.Object
+  sealed trait A
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
+       with qlikDashVisualizationextensionsLib.BackendAPINs.SortIndicatorType
+       with qlikDashVisualizationextensionsLib.BackendAPINs.StateType
   
   @js.native
-  sealed trait ANALYSIS extends js.Object
+  sealed trait ANALYSIS
+    extends qlikDashVisualizationextensionsLib.NavigationAPINs.NavigationModeType
   
   @js.native
-  sealed trait Add extends js.Object
+  sealed trait Add
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.PatchType
   
   @js.native
-  sealed trait C extends js.Object
+  sealed trait C
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.GroupingType
   
   @js.native
-  sealed trait CONFIRM extends js.Object
+  sealed trait CONFIRM
+    extends qlikDashVisualizationextensionsLib.ExtensionAPINs.SelectionModeType
   
   @js.native
-  sealed trait D extends js.Object
+  sealed trait D
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.DimensionType
+       with qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
+       with qlikDashVisualizationextensionsLib.BackendAPINs.SortIndicatorType
+       with qlikDashVisualizationextensionsLib.BackendAPINs.StateType
   
   @js.native
-  sealed trait EDIT extends js.Object
+  sealed trait EDIT
+    extends qlikDashVisualizationextensionsLib.NavigationAPINs.NavigationModeType
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends qlikDashVisualizationextensionsLib.ExtensionAPINs.ExpressionType
   
   @js.native
-  sealed trait F extends js.Object
+  sealed trait F
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
   
   @js.native
-  sealed trait H extends js.Object
+  sealed trait H
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.GroupingType
   
   @js.native
-  sealed trait I extends js.Object
+  sealed trait I
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
   
   @js.native
-  sealed trait IV extends js.Object
+  sealed trait IV
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait L
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.StateType
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait M
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
   
   @js.native
-  sealed trait N extends js.Object
+  sealed trait N
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.DimensionType
+       with qlikDashVisualizationextensionsLib.BackendAPINs.GroupingType
+       with qlikDashVisualizationextensionsLib.BackendAPINs.SortIndicatorType
   
   @js.native
-  sealed trait NOCURRENTSHEET extends js.Object
+  sealed trait NOCURRENTSHEET
+    extends qlikDashVisualizationextensionsLib.NavigationAPINs.NavigationErrorType
   
   @js.native
-  sealed trait NOSUCHSHEET extends js.Object
+  sealed trait NOSUCHSHEET
+    extends qlikDashVisualizationextensionsLib.NavigationAPINs.NavigationErrorType
   
   @js.native
-  sealed trait NOSUCHSTORY extends js.Object
+  sealed trait NOSUCHSTORY
+    extends qlikDashVisualizationextensionsLib.NavigationAPINs.NavigationErrorType
   
   @js.native
-  sealed trait O extends js.Object
+  sealed trait O
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.StateType
   
   @js.native
-  sealed trait QUICK extends js.Object
+  sealed trait QUICK
+    extends qlikDashVisualizationextensionsLib.ExtensionAPINs.SelectionModeType
   
   @js.native
-  sealed trait R extends js.Object
+  sealed trait R
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
   
   @js.native
-  sealed trait Remove extends js.Object
+  sealed trait Remove
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.PatchType
   
   @js.native
-  sealed trait Replace extends js.Object
+  sealed trait Replace
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.PatchType
   
   @js.native
-  sealed trait S extends js.Object
+  sealed trait S
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.StateType
   
   @js.native
-  sealed trait T extends js.Object
+  sealed trait T
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.DimensionType
+       with qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
   
   @js.native
-  sealed trait TS extends js.Object
+  sealed trait TS
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
   
   @js.native
-  sealed trait U extends js.Object
+  sealed trait U
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.FieldAttributesType
   
   @js.native
-  sealed trait X extends js.Object
+  sealed trait X
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.StateType
   
   @js.native
-  sealed trait XL extends js.Object
+  sealed trait XL
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.StateType
   
   @js.native
-  sealed trait XS extends js.Object
+  sealed trait XS
+    extends qlikDashVisualizationextensionsLib.BackendAPINs.StateType
   
   @js.native
   sealed trait accordion extends js.Object
@@ -103,13 +141,15 @@ object qlikDashVisualizationextensionsLibStrings {
   sealed trait addons extends js.Object
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends qlikDashVisualizationextensionsLib.ExtensionAPINs.ExpressionType
   
   @js.native
   sealed trait analysis extends js.Object
   
   @js.native
-  sealed trait barchart extends js.Object
+  sealed trait barchart
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
   sealed trait button extends js.Object
@@ -130,7 +170,8 @@ object qlikDashVisualizationextensionsLibStrings {
   sealed trait `color-picker` extends js.Object
   
   @js.native
-  sealed trait combochart extends js.Object
+  sealed trait combochart
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
   sealed trait dimensions extends js.Object
@@ -142,19 +183,23 @@ object qlikDashVisualizationextensionsLibStrings {
   sealed trait edit extends js.Object
   
   @js.native
-  sealed trait extension extends js.Object
+  sealed trait extension
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
-  sealed trait gauge extends js.Object
+  sealed trait gauge
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
   sealed trait items extends js.Object
   
   @js.native
-  sealed trait kpi extends js.Object
+  sealed trait kpi
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
-  sealed trait linechart extends js.Object
+  sealed trait linechart
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
   sealed trait link extends js.Object
@@ -166,19 +211,23 @@ object qlikDashVisualizationextensionsLibStrings {
   sealed trait media extends js.Object
   
   @js.native
-  sealed trait optional extends js.Object
+  sealed trait optional
+    extends qlikDashVisualizationextensionsLib.ExtensionAPINs.ExpressionType
   
   @js.native
-  sealed trait piechart extends js.Object
+  sealed trait piechart
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
-  sealed trait `pivot-table` extends js.Object
+  sealed trait `pivot-table`
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
   sealed trait radiobuttons extends js.Object
   
   @js.native
-  sealed trait scatterplot extends js.Object
+  sealed trait scatterplot
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
   sealed trait settings extends js.Object
@@ -193,7 +242,8 @@ object qlikDashVisualizationextensionsLibStrings {
   sealed trait switch extends js.Object
   
   @js.native
-  sealed trait table extends js.Object
+  sealed trait table
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @js.native
   sealed trait text extends js.Object
@@ -202,7 +252,8 @@ object qlikDashVisualizationextensionsLibStrings {
   sealed trait textarea extends js.Object
   
   @js.native
-  sealed trait treemap extends js.Object
+  sealed trait treemap
+    extends qlikDashVisualizationextensionsLib.VisualizationAPINs.VisualizationType
   
   @scala.inline
   def A: A = "A".asInstanceOf[A]

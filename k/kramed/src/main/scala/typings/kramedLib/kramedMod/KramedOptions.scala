@@ -61,3 +61,39 @@ trait KramedOptions extends js.Object {
   var tables: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object KramedOptions {
+  @scala.inline
+  def apply(
+    breaks: js.UndefOr[scala.Boolean] = js.undefined,
+    gfm: js.UndefOr[scala.Boolean] = js.undefined,
+    highlight: js.Function3[
+      /* code */ java.lang.String, 
+      /* lang */ java.lang.String, 
+      /* callback */ js.UndefOr[js.Function0[scala.Unit]], 
+      java.lang.String
+    ] = null,
+    langPrefix: java.lang.String = null,
+    pedantic: js.UndefOr[scala.Boolean] = js.undefined,
+    renderer: KramedRenderer = null,
+    sanitize: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    smartLists: js.UndefOr[scala.Boolean] = js.undefined,
+    smartypants: js.UndefOr[scala.Boolean] = js.undefined,
+    tables: js.UndefOr[scala.Boolean] = js.undefined
+  ): KramedOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks)
+    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm)
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix)
+    if (!js.isUndefined(pedantic)) __obj.updateDynamic("pedantic")(pedantic)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(smartLists)) __obj.updateDynamic("smartLists")(smartLists)
+    if (!js.isUndefined(smartypants)) __obj.updateDynamic("smartypants")(smartypants)
+    if (!js.isUndefined(tables)) __obj.updateDynamic("tables")(tables)
+    __obj.asInstanceOf[KramedOptions]
+  }
+}
+

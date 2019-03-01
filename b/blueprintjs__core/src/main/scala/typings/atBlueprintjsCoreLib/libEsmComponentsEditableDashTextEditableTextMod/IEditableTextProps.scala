@@ -70,3 +70,50 @@ trait IEditableTextProps
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IEditableTextProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    confirmOnEnterKey: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultValue: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    isEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    maxLength: scala.Int | scala.Double = null,
+    maxLines: scala.Int | scala.Double = null,
+    minLines: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    multiline: js.UndefOr[scala.Boolean] = js.undefined,
+    onCancel: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
+    onChange: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
+    onConfirm: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
+    onEdit: js.Function1[/* value */ java.lang.String, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    selectAllOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): IEditableTextProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(confirmOnEnterKey)) __obj.updateDynamic("confirmOnEnterKey")(confirmOnEnterKey)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (!js.isUndefined(isEditing)) __obj.updateDynamic("isEditing")(isEditing)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (maxLines != null) __obj.updateDynamic("maxLines")(maxLines.asInstanceOf[js.Any])
+    if (minLines != null) __obj.updateDynamic("minLines")(minLines.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onConfirm != null) __obj.updateDynamic("onConfirm")(onConfirm)
+    if (onEdit != null) __obj.updateDynamic("onEdit")(onEdit)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(selectAllOnFocus)) __obj.updateDynamic("selectAllOnFocus")(selectAllOnFocus)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IEditableTextProps]
+  }
+}
+

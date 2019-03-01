@@ -10,3 +10,16 @@ trait Anon_HtmlType extends js.Object {
   var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLButtonElement]] = js.undefined
 }
 
+object Anon_HtmlType {
+  @scala.inline
+  def apply(
+    htmlType: antdLib.libButtonButtonMod.ButtonHTMLType = null,
+    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLButtonElement] = null
+  ): Anon_HtmlType = {
+    val __obj = js.Dynamic.literal()
+    if (htmlType != null) __obj.updateDynamic("htmlType")(htmlType)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    __obj.asInstanceOf[Anon_HtmlType]
+  }
+}
+

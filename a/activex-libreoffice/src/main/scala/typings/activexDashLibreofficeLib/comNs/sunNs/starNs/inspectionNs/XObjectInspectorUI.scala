@@ -92,3 +92,32 @@ trait XObjectInspectorUI extends js.Object {
   def showPropertyUI(PropertyName: java.lang.String): scala.Unit
 }
 
+object XObjectInspectorUI {
+  @scala.inline
+  def apply(
+    enablePropertyUI: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    enablePropertyUIElements: js.Function3[java.lang.String, scala.Double, scala.Boolean, scala.Unit],
+    getPropertyControl: js.Function1[java.lang.String, XPropertyControl],
+    hidePropertyUI: js.Function1[java.lang.String, scala.Unit],
+    rebuildPropertyUI: js.Function1[java.lang.String, scala.Unit],
+    registerControlObserver: js.Function1[XPropertyControlObserver, scala.Unit],
+    revokeControlObserver: js.Function1[XPropertyControlObserver, scala.Unit],
+    setHelpSectionText: js.Function1[java.lang.String, scala.Unit],
+    showCategory: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
+    showPropertyUI: js.Function1[java.lang.String, scala.Unit]
+  ): XObjectInspectorUI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enablePropertyUI")(enablePropertyUI)
+    __obj.updateDynamic("enablePropertyUIElements")(enablePropertyUIElements)
+    __obj.updateDynamic("getPropertyControl")(getPropertyControl)
+    __obj.updateDynamic("hidePropertyUI")(hidePropertyUI)
+    __obj.updateDynamic("rebuildPropertyUI")(rebuildPropertyUI)
+    __obj.updateDynamic("registerControlObserver")(registerControlObserver)
+    __obj.updateDynamic("revokeControlObserver")(revokeControlObserver)
+    __obj.updateDynamic("setHelpSectionText")(setHelpSectionText)
+    __obj.updateDynamic("showCategory")(showCategory)
+    __obj.updateDynamic("showPropertyUI")(showPropertyUI)
+    __obj.asInstanceOf[XObjectInspectorUI]
+  }
+}
+

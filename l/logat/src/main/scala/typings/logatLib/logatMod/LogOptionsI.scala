@@ -11,3 +11,18 @@ trait LogOptionsI extends js.Object {
   var logMethod: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LogOptionsI {
+  @scala.inline
+  def apply(
+    logFileName: java.lang.String = null,
+    logLevel: scala.Int | scala.Double = null,
+    logMethod: scala.Int | scala.Double = null
+  ): LogOptionsI = {
+    val __obj = js.Dynamic.literal()
+    if (logFileName != null) __obj.updateDynamic("logFileName")(logFileName)
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (logMethod != null) __obj.updateDynamic("logMethod")(logMethod.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogOptionsI]
+  }
+}
+

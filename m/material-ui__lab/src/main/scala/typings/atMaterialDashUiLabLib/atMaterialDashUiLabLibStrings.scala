@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDashUiLabLibStrings {
   @js.native
-  sealed trait actions extends js.Object
+  sealed trait actions
+    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
   
   @js.native
-  sealed trait actionsClosed extends js.Object
+  sealed trait actionsClosed
+    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
   
   @js.native
-  sealed trait activated extends js.Object
+  sealed trait activated
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait bottom extends js.Object
@@ -25,52 +28,67 @@ object atMaterialDashUiLabLibStrings {
   sealed trait `bottom-start` extends js.Object
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button
+    extends atMaterialDashUiLabLib.speeddialactionSpeedDialActionMod.SpeedDialActionClassKey
   
   @js.native
-  sealed trait buttonClosed extends js.Object
+  sealed trait buttonClosed
+    extends atMaterialDashUiLabLib.speeddialactionSpeedDialActionMod.SpeedDialActionClassKey
   
   @js.native
-  sealed trait container extends js.Object
+  sealed trait container
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
-  sealed trait directionDown extends js.Object
+  sealed trait directionDown
+    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
   
   @js.native
-  sealed trait directionLeft extends js.Object
+  sealed trait directionLeft
+    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
   
   @js.native
-  sealed trait directionRight extends js.Object
+  sealed trait directionRight
+    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
   
   @js.native
-  sealed trait directionUp extends js.Object
+  sealed trait directionUp
+    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait disabled
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait down extends js.Object
   
   @js.native
-  sealed trait fab extends js.Object
+  sealed trait fab
+    extends atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
   
   @js.native
-  sealed trait focused extends js.Object
+  sealed trait focused
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
-  sealed trait icon extends js.Object
+  sealed trait icon
+    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
-  sealed trait iconOpen extends js.Object
+  sealed trait iconOpen
+    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
-  sealed trait iconWithOpenIconOpen extends js.Object
+  sealed trait iconWithOpenIconOpen
+    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
-  sealed trait jumped extends js.Object
+  sealed trait jumped
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
-  sealed trait label extends js.Object
+  sealed trait label
+    extends atMaterialDashUiLabLib.togglebuttonToggleButtonMod._ToggleButtonClassKey
   
   @js.native
   sealed trait left extends js.Object
@@ -82,13 +100,16 @@ object atMaterialDashUiLabLibStrings {
   sealed trait `left-start` extends js.Object
   
   @js.native
-  sealed trait ol extends js.Object
+  sealed trait ol
+    extends atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsClassKey
   
   @js.native
-  sealed trait openIcon extends js.Object
+  sealed trait openIcon
+    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
-  sealed trait openIconOpen extends js.Object
+  sealed trait openIconOpen
+    extends atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
   
   @js.native
   sealed trait right extends js.Object
@@ -100,22 +121,34 @@ object atMaterialDashUiLabLibStrings {
   sealed trait `right-start` extends js.Object
   
   @js.native
-  sealed trait root extends js.Object
+  sealed trait root
+    extends atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsClassKey
+       with atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
+       with atMaterialDashUiLabLib.speeddialactionSpeedDialActionMod.SpeedDialActionClassKey
+       with atMaterialDashUiLabLib.speeddialSpeedDialMod.SpeedDialClassKey
+       with atMaterialDashUiLabLib.speeddialiconSpeedDialIconMod.SpeedDialIconClassKey
+       with atMaterialDashUiLabLib.togglebuttongroupToggleButtonGroupMod.ToggleButtonGroupClassKey
   
   @js.native
-  sealed trait selected extends js.Object
+  sealed trait selected
+    extends atMaterialDashUiLabLib.togglebuttongroupToggleButtonGroupMod.ToggleButtonGroupClassKey
+       with atMaterialDashUiLabLib.togglebuttonToggleButtonMod._ToggleButtonClassKey
   
   @js.native
-  sealed trait separator extends js.Object
+  sealed trait separator
+    extends atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsClassKey
   
   @js.native
-  sealed trait thumb extends js.Object
+  sealed trait thumb
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
-  sealed trait thumbIcon extends js.Object
+  sealed trait thumbIcon
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
-  sealed trait thumbIconWrapper extends js.Object
+  sealed trait thumbIconWrapper
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait top extends js.Object
@@ -127,19 +160,23 @@ object atMaterialDashUiLabLibStrings {
   sealed trait `top-start` extends js.Object
   
   @js.native
-  sealed trait track extends js.Object
+  sealed trait track
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
-  sealed trait trackAfter extends js.Object
+  sealed trait trackAfter
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
-  sealed trait trackBefore extends js.Object
+  sealed trait trackBefore
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @js.native
   sealed trait up extends js.Object
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends atMaterialDashUiLabLib.sliderSliderMod.SliderClassKey
   
   @scala.inline
   def actions: actions = "actions".asInstanceOf[actions]

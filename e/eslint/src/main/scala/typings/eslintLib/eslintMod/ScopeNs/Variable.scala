@@ -12,3 +12,20 @@ trait Variable extends js.Object {
   var references: js.Array[Reference]
 }
 
+object Variable {
+  @scala.inline
+  def apply(
+    defs: js.Array[Definition],
+    identifiers: js.Array[estreeLib.estreeMod.Identifier],
+    name: java.lang.String,
+    references: js.Array[Reference]
+  ): Variable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defs")(defs)
+    __obj.updateDynamic("identifiers")(identifiers)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("references")(references)
+    __obj.asInstanceOf[Variable]
+  }
+}
+

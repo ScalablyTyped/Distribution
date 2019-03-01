@@ -9,3 +9,12 @@ trait Anon_QBnfHash extends js.Object {
   var qBnfHash: java.lang.String
 }
 
+object Anon_QBnfHash {
+  @scala.inline
+  def apply(qBnfHash: java.lang.String): Anon_QBnfHash = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qBnfHash")(qBnfHash)
+    __obj.asInstanceOf[Anon_QBnfHash]
+  }
+}
+

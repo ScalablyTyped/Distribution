@@ -20,3 +20,26 @@ trait Options extends js.Object {
   var start: scala.Double
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    start: scala.Double,
+    duration: scala.Int | scala.Double = null,
+    easing: js.Function4[
+      /* currentTime */ scala.Double, 
+      /* beginningTime */ scala.Double, 
+      /* changeInValue */ scala.Double, 
+      /* duration */ scala.Double, 
+      scala.Double
+    ] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    __obj.asInstanceOf[Options]
+  }
+}
+

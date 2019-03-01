@@ -50,21 +50,21 @@ trait Client extends js.Object {
   def endCoverage(intent: java.lang.String, path: java.lang.String): scala.Unit = js.native
   def executeAsyncScript(
     script: java.lang.String,
-    args: js.Array[java.lang.String | js.Object | scala.Double | scala.Boolean]
+    args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
   ): scala.Unit = js.native
   @JSName("executeAsyncScript")
   def executeAsyncScript_Any(
     script: java.lang.String,
-    args: js.Array[java.lang.String | js.Object | scala.Double | scala.Boolean]
+    args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
   ): js.Any = js.native
   def executeScript(
     script: java.lang.String,
-    args: js.Array[java.lang.String | js.Object | scala.Double | scala.Boolean]
+    args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
   ): scala.Unit = js.native
   @JSName("executeScript")
   def executeScript_Any(
     script: java.lang.String,
-    args: js.Array[java.lang.String | js.Object | scala.Double | scala.Boolean]
+    args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
   ): js.Any = js.native
   def findElement(using: java.lang.String, value: java.lang.String): java.lang.String = js.native
   def findElementFromElement(using: java.lang.String, value: java.lang.String): java.lang.String = js.native

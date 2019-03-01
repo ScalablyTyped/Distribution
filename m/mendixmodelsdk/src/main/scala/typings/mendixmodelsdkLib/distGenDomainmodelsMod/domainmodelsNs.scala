@@ -63,6 +63,8 @@ object domainmodelsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var child: Entity | IEntity = js.native
     var childConnection: mendixmodelsdkLib.distCommonMod.commonNs.IPoint = js.native
+    @JSName("containerAsDomainModel")
+    val containerAsDomainModel_Association: DomainModel = js.native
     var parentConnection: mendixmodelsdkLib.distCommonMod.commonNs.IPoint = js.native
   }
   
@@ -170,12 +172,16 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IBinaryAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class BinaryAttributeType protected () extends AttributeType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAttribute")
+    val containerAsAttribute_BinaryAttributeType: Attribute = js.native
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IBooleanAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class BooleanAttributeType protected () extends AttributeType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAttribute")
+    val containerAsAttribute_BooleanAttributeType: Attribute = js.native
   }
   
   /**
@@ -185,6 +191,8 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ICalculatedValue because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class CalculatedValue protected () extends ValueType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAttribute")
+    val containerAsAttribute_CalculatedValue: Attribute = js.native
     var microflow: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow | scala.Null = js.native
     val microflowQualifiedName: java.lang.String | scala.Null = js.native
     var passEntity: scala.Boolean = js.native
@@ -196,6 +204,8 @@ object domainmodelsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var child: IEntity = js.native
     val childQualifiedName: java.lang.String = js.native
+    @JSName("containerAsDomainModel")
+    val containerAsDomainModel_CrossAssociation: DomainModel = js.native
   }
   
   /**
@@ -211,6 +221,8 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IDateTimeAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class DateTimeAttributeType protected () extends AttributeType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAttribute")
+    val containerAsAttribute_DateTimeAttributeType: Attribute = js.native
     var localizeDate: scala.Boolean = js.native
   }
   
@@ -250,6 +262,8 @@ object domainmodelsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule) = this()
     val annotations: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[Annotation] = js.native
     val associations: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[Association | IAssociation] = js.native
+    @JSName("containerAsModule")
+    val containerAsModule_DomainModel: mendixmodelsdkLib.distGenProjectsMod.projectsNs.Module = js.native
     val crossAssociations: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[CrossAssociation | ICrossAssociation] = js.native
     var documentation: java.lang.String = js.native
     val entities: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[Entity | IEntity] = js.native
@@ -328,6 +342,8 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEnumerationAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName, asLoaded, load, load, load, load */ @js.native
   class EnumerationAttributeType protected () extends AttributeType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAttribute")
+    val containerAsAttribute_EnumerationAttributeType: Attribute = js.native
     var enumeration: mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration = js.native
     val enumerationQualifiedName: java.lang.String = js.native
   }
@@ -382,6 +398,8 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IGeneralization because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined generalization, generalizationQualifiedName, asLoaded, load, load, load, load */ @js.native
   class Generalization protected () extends GeneralizationBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsEntity")
+    val containerAsEntity_Generalization: Entity = js.native
     var generalization: IEntity = js.native
     val generalizationQualifiedName: java.lang.String = js.native
   }
@@ -400,6 +418,8 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IHashedStringAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class HashedStringAttributeType protected () extends AttributeType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAttribute")
+    val containerAsAttribute_HashedStringAttributeType: Attribute = js.native
   }
   
   /**
@@ -723,6 +743,8 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.INoGeneralization because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined persistable, asLoaded, load, load, load, load */ @js.native
   class NoGeneralization protected () extends GeneralizationBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsEntity")
+    val containerAsEntity_NoGeneralization: Entity = js.native
     var hasChangedBy: scala.Boolean = js.native
     var hasChangedDate: scala.Boolean = js.native
     var hasCreatedDate: scala.Boolean = js.native
@@ -734,6 +756,8 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.INumericAttributeTypeBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   abstract class NumericAttributeTypeBase protected () extends AttributeType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAttribute")
+    val containerAsAttribute_NumericAttributeTypeBase: Attribute = js.native
   }
   
   @js.native
@@ -782,6 +806,8 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IStoredValue because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class StoredValue protected () extends ValueType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAttribute")
+    val containerAsAttribute_StoredValue: Attribute = js.native
     var defaultValue: java.lang.String = js.native
   }
   
@@ -789,6 +815,8 @@ object domainmodelsNs extends js.Object {
   - mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IStringAttributeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class StringAttributeType protected () extends AttributeType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsAttribute")
+    val containerAsAttribute_StringAttributeType: Attribute = js.native
     var length: scala.Double = js.native
   }
   

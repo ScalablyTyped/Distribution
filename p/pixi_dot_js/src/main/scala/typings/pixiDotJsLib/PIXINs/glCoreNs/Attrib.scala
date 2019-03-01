@@ -13,3 +13,22 @@ trait Attrib extends js.Object {
   var stride: scala.Double
 }
 
+object Attrib {
+  @scala.inline
+  def apply(
+    attribute: pixiDotJsLib.Anon_Location,
+    buffer: stdLib.ArrayBuffer,
+    normalized: scala.Boolean,
+    start: scala.Double,
+    stride: scala.Double
+  ): Attrib = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attribute")(attribute)
+    __obj.updateDynamic("buffer")(buffer)
+    __obj.updateDynamic("normalized")(normalized)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stride")(stride)
+    __obj.asInstanceOf[Attrib]
+  }
+}
+

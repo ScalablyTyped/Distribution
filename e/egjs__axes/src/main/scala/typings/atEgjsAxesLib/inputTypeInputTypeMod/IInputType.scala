@@ -18,3 +18,32 @@ trait IInputType extends js.Object {
   def mapAxes(axes: js.Array[java.lang.String]): js.Any
 }
 
+object IInputType {
+  @scala.inline
+  def apply(
+    axes: js.Array[java.lang.String],
+    connect: js.Function1[IInputTypeObserver, IInputType],
+    destroy: js.Function0[js.Any],
+    disconnect: js.Function0[js.Any],
+    element: stdLib.HTMLElement,
+    mapAxes: js.Function1[js.Array[java.lang.String], js.Any],
+    disable: js.Function0[_] = null,
+    enable: js.Function0[_] = null,
+    hammer: js.Any = null,
+    isEnable: js.Function0[scala.Boolean] = null
+  ): IInputType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axes")(axes)
+    __obj.updateDynamic("connect")(connect)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("disconnect")(disconnect)
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("mapAxes")(mapAxes)
+    if (disable != null) __obj.updateDynamic("disable")(disable)
+    if (enable != null) __obj.updateDynamic("enable")(enable)
+    if (hammer != null) __obj.updateDynamic("hammer")(hammer)
+    if (isEnable != null) __obj.updateDynamic("isEnable")(isEnable)
+    __obj.asInstanceOf[IInputType]
+  }
+}
+

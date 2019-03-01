@@ -40,3 +40,28 @@ trait GetMountTargetResult extends js.Object {
   val subnetId: java.lang.String
 }
 
+object GetMountTargetResult {
+  @scala.inline
+  def apply(
+    dnsName: java.lang.String,
+    fileSystemArn: java.lang.String,
+    fileSystemId: java.lang.String,
+    id: java.lang.String,
+    ipAddress: java.lang.String,
+    networkInterfaceId: java.lang.String,
+    securityGroups: js.Array[java.lang.String],
+    subnetId: java.lang.String
+  ): GetMountTargetResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dnsName")(dnsName)
+    __obj.updateDynamic("fileSystemArn")(fileSystemArn)
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ipAddress")(ipAddress)
+    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
+    __obj.updateDynamic("securityGroups")(securityGroups)
+    __obj.updateDynamic("subnetId")(subnetId)
+    __obj.asInstanceOf[GetMountTargetResult]
+  }
+}
+

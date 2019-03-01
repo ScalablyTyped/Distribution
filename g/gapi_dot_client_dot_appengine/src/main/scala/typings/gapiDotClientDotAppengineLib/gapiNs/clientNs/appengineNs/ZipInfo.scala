@@ -18,3 +18,13 @@ trait ZipInfo extends js.Object {
   var sourceUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ZipInfo {
+  @scala.inline
+  def apply(filesCount: scala.Int | scala.Double = null, sourceUrl: java.lang.String = null): ZipInfo = {
+    val __obj = js.Dynamic.literal()
+    if (filesCount != null) __obj.updateDynamic("filesCount")(filesCount.asInstanceOf[js.Any])
+    if (sourceUrl != null) __obj.updateDynamic("sourceUrl")(sourceUrl)
+    __obj.asInstanceOf[ZipInfo]
+  }
+}
+

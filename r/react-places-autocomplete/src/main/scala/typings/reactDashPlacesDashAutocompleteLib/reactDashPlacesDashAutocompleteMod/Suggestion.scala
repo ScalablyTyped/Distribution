@@ -17,3 +17,30 @@ trait Suggestion extends js.Object {
   var types: js.Array[java.lang.String]
 }
 
+object Suggestion {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    description: java.lang.String,
+    formattedSuggestion: reactDashPlacesDashAutocompleteLib.Anon_MainText,
+    id: java.lang.String,
+    index: scala.Double,
+    matchedSubstrings: js.Array[googlemapsLib.googleNs.mapsNs.placesNs.PredictionSubstring],
+    placeId: java.lang.String,
+    terms: js.Array[googlemapsLib.googleNs.mapsNs.placesNs.PredictionTerm],
+    types: js.Array[java.lang.String]
+  ): Suggestion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("formattedSuggestion")(formattedSuggestion)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("matchedSubstrings")(matchedSubstrings)
+    __obj.updateDynamic("placeId")(placeId)
+    __obj.updateDynamic("terms")(terms)
+    __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[Suggestion]
+  }
+}
+

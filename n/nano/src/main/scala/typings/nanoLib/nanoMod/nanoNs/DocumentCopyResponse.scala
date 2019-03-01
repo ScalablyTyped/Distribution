@@ -15,3 +15,14 @@ trait DocumentCopyResponse extends js.Object {
   var rev: java.lang.String
 }
 
+object DocumentCopyResponse {
+  @scala.inline
+  def apply(id: java.lang.String, ok: scala.Boolean, rev: java.lang.String): DocumentCopyResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ok")(ok)
+    __obj.updateDynamic("rev")(rev)
+    __obj.asInstanceOf[DocumentCopyResponse]
+  }
+}
+

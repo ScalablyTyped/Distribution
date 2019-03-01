@@ -36,3 +36,16 @@ trait RemoteConfig extends js.Object {
   var parameters: js.UndefOr[stdLib.Record[java.lang.String, RemoteConfigParameter]] = js.undefined
 }
 
+object RemoteConfig {
+  @scala.inline
+  def apply(
+    conditions: js.Array[RemoteConfigCondition] = null,
+    parameters: stdLib.Record[java.lang.String, RemoteConfigParameter] = null
+  ): RemoteConfig = {
+    val __obj = js.Dynamic.literal()
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.asInstanceOf[RemoteConfig]
+  }
+}
+

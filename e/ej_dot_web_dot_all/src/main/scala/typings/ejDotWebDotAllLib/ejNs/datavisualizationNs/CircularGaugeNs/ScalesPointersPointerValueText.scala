@@ -36,3 +36,26 @@ trait ScalesPointersPointerValueText extends js.Object {
   var showValue: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ScalesPointersPointerValueText {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    autoAngle: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    distance: scala.Int | scala.Double = null,
+    font: ScalesPointersPointerValueTextFont = null,
+    opacity: scala.Int | scala.Double = null,
+    showValue: js.UndefOr[scala.Boolean] = js.undefined
+  ): ScalesPointersPointerValueText = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoAngle)) __obj.updateDynamic("autoAngle")(autoAngle)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue)
+    __obj.asInstanceOf[ScalesPointersPointerValueText]
+  }
+}
+

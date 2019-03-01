@@ -41,3 +41,20 @@ trait CommentData extends js.Object {
   var replies: js.UndefOr[js.Array[CommentReplyData]] = js.undefined
 }
 
+object CommentData {
+  @scala.inline
+  def apply(
+    content: java.lang.String = null,
+    id: java.lang.String = null,
+    isParent: js.UndefOr[scala.Boolean] = js.undefined,
+    replies: js.Array[CommentReplyData] = null
+  ): CommentData = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isParent)) __obj.updateDynamic("isParent")(isParent)
+    if (replies != null) __obj.updateDynamic("replies")(replies)
+    __obj.asInstanceOf[CommentData]
+  }
+}
+

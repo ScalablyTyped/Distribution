@@ -26,3 +26,42 @@ import scala.scalajs.js.annotation._
   var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
 }
 
+object SpeedDialProps {
+  @scala.inline
+  def apply(
+    ariaLabel: java.lang.String,
+    icon: reactLib.reactMod.ReactNs.ReactNode,
+    open: scala.Boolean,
+    ButtonProps: stdLib.Partial[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps] = null,
+    TransitionComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = null,
+    TransitionProps: reactDashTransitionDashGroupLib.transitionMod.TransitionProps = null,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SpeedDialClassKey]] = null,
+    direction: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.up | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.down | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.left | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.right = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    onClose: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
+    openIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null
+  ): SpeedDialProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ariaLabel")(ariaLabel)
+    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    __obj.updateDynamic("open")(open)
+    if (ButtonProps != null) __obj.updateDynamic("ButtonProps")(ButtonProps)
+    if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])
+    if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (openIcon != null) __obj.updateDynamic("openIcon")(openIcon.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpeedDialProps]
+  }
+}
+

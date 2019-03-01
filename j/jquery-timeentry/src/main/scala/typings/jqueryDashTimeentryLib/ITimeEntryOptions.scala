@@ -151,3 +151,60 @@ trait ITimeEntryOptions extends ITimeEntryRegionalOptions {
   var useMouseWheel: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ITimeEntryOptions {
+  @scala.inline
+  def apply(
+    ampmNames: js.Array[java.lang.String] = null,
+    ampmPrefix: java.lang.String = null,
+    appendText: java.lang.String = null,
+    beforeSetTime: js.Function = null,
+    beforeShow: js.Function = null,
+    defaultTime: stdLib.Date | scala.Double | java.lang.String = null,
+    initialField: scala.Int | scala.Double = null,
+    maxTime: stdLib.Date | scala.Double | js.Array[scala.Double] | java.lang.String = null,
+    minTime: stdLib.Date | scala.Double | js.Array[scala.Double] | java.lang.String = null,
+    noSeparatorEntry: js.UndefOr[scala.Boolean] = js.undefined,
+    separator: java.lang.String = null,
+    show24Hours: js.UndefOr[scala.Boolean] = js.undefined,
+    showSeconds: js.UndefOr[scala.Boolean] = js.undefined,
+    spinnerBigImage: java.lang.String = null,
+    spinnerBigSize: js.Array[scala.Double] = null,
+    spinnerImage: java.lang.String = null,
+    spinnerIncDecOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    spinnerRepeat: js.Array[scala.Double] = null,
+    spinnerSize: js.Array[scala.Double] = null,
+    spinnerTexts: js.Array[java.lang.String] = null,
+    tabToExit: js.UndefOr[scala.Boolean] = js.undefined,
+    timeSteps: js.Array[scala.Double] = null,
+    unlimitedHours: js.UndefOr[scala.Boolean] = js.undefined,
+    useMouseWheel: js.UndefOr[scala.Boolean] = js.undefined
+  ): ITimeEntryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ampmNames != null) __obj.updateDynamic("ampmNames")(ampmNames)
+    if (ampmPrefix != null) __obj.updateDynamic("ampmPrefix")(ampmPrefix)
+    if (appendText != null) __obj.updateDynamic("appendText")(appendText)
+    if (beforeSetTime != null) __obj.updateDynamic("beforeSetTime")(beforeSetTime)
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (defaultTime != null) __obj.updateDynamic("defaultTime")(defaultTime.asInstanceOf[js.Any])
+    if (initialField != null) __obj.updateDynamic("initialField")(initialField.asInstanceOf[js.Any])
+    if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime.asInstanceOf[js.Any])
+    if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(noSeparatorEntry)) __obj.updateDynamic("noSeparatorEntry")(noSeparatorEntry)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(show24Hours)) __obj.updateDynamic("show24Hours")(show24Hours)
+    if (!js.isUndefined(showSeconds)) __obj.updateDynamic("showSeconds")(showSeconds)
+    if (spinnerBigImage != null) __obj.updateDynamic("spinnerBigImage")(spinnerBigImage)
+    if (spinnerBigSize != null) __obj.updateDynamic("spinnerBigSize")(spinnerBigSize)
+    if (spinnerImage != null) __obj.updateDynamic("spinnerImage")(spinnerImage)
+    if (!js.isUndefined(spinnerIncDecOnly)) __obj.updateDynamic("spinnerIncDecOnly")(spinnerIncDecOnly)
+    if (spinnerRepeat != null) __obj.updateDynamic("spinnerRepeat")(spinnerRepeat)
+    if (spinnerSize != null) __obj.updateDynamic("spinnerSize")(spinnerSize)
+    if (spinnerTexts != null) __obj.updateDynamic("spinnerTexts")(spinnerTexts)
+    if (!js.isUndefined(tabToExit)) __obj.updateDynamic("tabToExit")(tabToExit)
+    if (timeSteps != null) __obj.updateDynamic("timeSteps")(timeSteps)
+    if (!js.isUndefined(unlimitedHours)) __obj.updateDynamic("unlimitedHours")(unlimitedHours)
+    if (!js.isUndefined(useMouseWheel)) __obj.updateDynamic("useMouseWheel")(useMouseWheel)
+    __obj.asInstanceOf[ITimeEntryOptions]
+  }
+}
+

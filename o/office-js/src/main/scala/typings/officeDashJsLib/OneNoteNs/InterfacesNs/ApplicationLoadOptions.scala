@@ -23,3 +23,13 @@ trait ApplicationLoadOptions extends js.Object {
   var notebooks: js.UndefOr[NotebookCollectionLoadOptions] = js.undefined
 }
 
+object ApplicationLoadOptions {
+  @scala.inline
+  def apply($all: js.UndefOr[scala.Boolean] = js.undefined, notebooks: NotebookCollectionLoadOptions = null): ApplicationLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks)
+    __obj.asInstanceOf[ApplicationLoadOptions]
+  }
+}
+

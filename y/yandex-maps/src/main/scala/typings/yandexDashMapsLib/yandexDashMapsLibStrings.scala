@@ -22,40 +22,52 @@ object yandexDashMapsLibStrings {
   sealed trait `cluster#balloonTwoColumns` extends js.Object
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends yandexDashMapsLib.ymapsNs.ControlSetKey
   
   @js.native
-  sealed trait `default#circle` extends js.Object
+  sealed trait `default#circle`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `default#geoObject` extends js.Object
+  sealed trait `default#geoObject`
+    extends yandexDashMapsLib.ymapsNs._InteractivityModelKey
   
   @js.native
-  sealed trait `default#layer` extends js.Object
+  sealed trait `default#layer`
+    extends yandexDashMapsLib.ymapsNs._InteractivityModelKey
   
   @js.native
-  sealed trait `default#opaque` extends js.Object
+  sealed trait `default#opaque`
+    extends yandexDashMapsLib.ymapsNs._InteractivityModelKey
   
   @js.native
-  sealed trait `default#pin` extends js.Object
+  sealed trait `default#pin`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `default#placemark` extends js.Object
+  sealed trait `default#placemark`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `default#polygon` extends js.Object
+  sealed trait `default#polygon`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `default#polyline` extends js.Object
+  sealed trait `default#polyline`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `default#rectangle` extends js.Object
+  sealed trait `default#rectangle`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `default#silent` extends js.Object
+  sealed trait `default#silent`
+    extends yandexDashMapsLib.ymapsNs._InteractivityModelKey
   
   @js.native
-  sealed trait `default#transparent` extends js.Object
+  sealed trait `default#transparent`
+    extends yandexDashMapsLib.ymapsNs._InteractivityModelKey
   
   @js.native
   sealed trait district extends js.Object
@@ -64,43 +76,54 @@ object yandexDashMapsLibStrings {
   sealed trait evenOdd extends js.Object
   
   @js.native
-  sealed trait fullscreenControl extends js.Object
+  sealed trait fullscreenControl
+    extends yandexDashMapsLib.ymapsNs.ControlSingleKey
   
   @js.native
-  sealed trait geolocationControl extends js.Object
+  sealed trait geolocationControl
+    extends yandexDashMapsLib.ymapsNs.ControlSingleKey
   
   @js.native
   sealed trait hidden extends js.Object
   
   @js.native
-  sealed trait `hotspot#circle` extends js.Object
+  sealed trait `hotspot#circle`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `hotspot#placemark` extends js.Object
+  sealed trait `hotspot#placemark`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `hotspot#polygon` extends js.Object
+  sealed trait `hotspot#polygon`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `hotspot#polyline` extends js.Object
+  sealed trait `hotspot#polyline`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `hotspot#rectangle` extends js.Object
+  sealed trait `hotspot#rectangle`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
   sealed trait house extends js.Object
   
   @js.native
-  sealed trait `html#balloon` extends js.Object
+  sealed trait `html#balloon`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `html#hint` extends js.Object
+  sealed trait `html#hint`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `html#placemark` extends js.Object
+  sealed trait `html#placemark`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
-  sealed trait `html#rectangle` extends js.Object
+  sealed trait `html#rectangle`
+    extends yandexDashMapsLib.ymapsNs._OverlayKey
   
   @js.native
   sealed trait ifNull extends js.Object
@@ -112,7 +135,8 @@ object yandexDashMapsLibStrings {
   sealed trait large extends js.Object
   
   @js.native
-  sealed trait largeMapDefaultSet extends js.Object
+  sealed trait largeMapDefaultSet
+    extends yandexDashMapsLib.ymapsNs.ControlSetKey
   
   @js.native
   sealed trait latlong extends js.Object
@@ -133,7 +157,8 @@ object yandexDashMapsLibStrings {
   sealed trait medium extends js.Object
   
   @js.native
-  sealed trait mediumMapDefaultSet extends js.Object
+  sealed trait mediumMapDefaultSet
+    extends yandexDashMapsLib.ymapsNs.ControlSetKey
   
   @js.native
   sealed trait metro extends js.Object
@@ -151,13 +176,16 @@ object yandexDashMapsLibStrings {
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait routeEditor extends js.Object
+  sealed trait routeEditor
+    extends yandexDashMapsLib.ymapsNs.ControlSingleKey
   
   @js.native
-  sealed trait rulerControl extends js.Object
+  sealed trait rulerControl
+    extends yandexDashMapsLib.ymapsNs.ControlSingleKey
   
   @js.native
-  sealed trait searchControl extends js.Object
+  sealed trait searchControl
+    extends yandexDashMapsLib.ymapsNs.ControlSingleKey
   
   @js.native
   sealed trait selectable extends js.Object
@@ -172,7 +200,8 @@ object yandexDashMapsLibStrings {
   sealed trait small extends js.Object
   
   @js.native
-  sealed trait smallMapDefaultSet extends js.Object
+  sealed trait smallMapDefaultSet
+    extends yandexDashMapsLib.ymapsNs.ControlSetKey
   
   @js.native
   sealed trait static extends js.Object
@@ -190,10 +219,12 @@ object yandexDashMapsLibStrings {
   sealed trait tile extends js.Object
   
   @js.native
-  sealed trait trafficControl extends js.Object
+  sealed trait trafficControl
+    extends yandexDashMapsLib.ymapsNs.ControlSingleKey
   
   @js.native
-  sealed trait typeSelector extends js.Object
+  sealed trait typeSelector
+    extends yandexDashMapsLib.ymapsNs.ControlSingleKey
   
   @js.native
   sealed trait visible extends js.Object
@@ -217,7 +248,8 @@ object yandexDashMapsLibStrings {
   sealed trait `yandex#search` extends js.Object
   
   @js.native
-  sealed trait zoomControl extends js.Object
+  sealed trait zoomControl
+    extends yandexDashMapsLib.ymapsNs.ControlSingleKey
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

@@ -14,3 +14,18 @@ trait RouteOptions extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RouteOptions {
+  @scala.inline
+  def apply(
+    replace: js.UndefOr[scala.Boolean] = js.undefined,
+    state: js.Any = null,
+    title: java.lang.String = null
+  ): RouteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[RouteOptions]
+  }
+}
+

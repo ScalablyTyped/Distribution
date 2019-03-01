@@ -16,3 +16,13 @@ trait ASPxClientHtmlEditorTableColumnPropertiesCommandArguments extends ASPxClie
   var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
 }
 
+object ASPxClientHtmlEditorTableColumnPropertiesCommandArguments {
+  @scala.inline
+  def apply(selectedElement: js.Object, styleSettings: ASPxClientHtmlEditorCommandStyleSettings): ASPxClientHtmlEditorTableColumnPropertiesCommandArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("selectedElement")(selectedElement)
+    __obj.updateDynamic("styleSettings")(styleSettings)
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableColumnPropertiesCommandArguments]
+  }
+}
+

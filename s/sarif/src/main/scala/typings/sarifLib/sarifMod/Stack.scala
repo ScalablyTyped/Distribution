@@ -21,3 +21,14 @@ trait Stack extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object Stack {
+  @scala.inline
+  def apply(frames: js.Array[StackFrame], message: Message = null, properties: PropertyBag = null): Stack = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frames")(frames)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Stack]
+  }
+}
+

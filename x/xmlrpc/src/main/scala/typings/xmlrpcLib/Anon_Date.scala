@@ -11,3 +11,18 @@ trait Anon_Date extends js.Object {
   def setOpts(opts: xmlrpcLib.xmlrpcMod.DateFormatterOptions): scala.Unit
 }
 
+object Anon_Date {
+  @scala.inline
+  def apply(
+    decodeIso8601: js.Function1[java.lang.String, stdLib.Date],
+    encodeIso8601: js.Function1[stdLib.Date, java.lang.String],
+    setOpts: js.Function1[xmlrpcLib.xmlrpcMod.DateFormatterOptions, scala.Unit]
+  ): Anon_Date = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decodeIso8601")(decodeIso8601)
+    __obj.updateDynamic("encodeIso8601")(encodeIso8601)
+    __obj.updateDynamic("setOpts")(setOpts)
+    __obj.asInstanceOf[Anon_Date]
+  }
+}
+

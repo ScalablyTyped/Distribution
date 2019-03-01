@@ -23,3 +23,24 @@ trait XSignatureVerifyResultListener
   ): scala.Unit
 }
 
+object XSignatureVerifyResultListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    signatureVerified: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.cryptoNs.SecurityOperationStatus, 
+      scala.Unit
+    ]
+  ): XSignatureVerifyResultListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("signatureVerified")(signatureVerified)
+    __obj.asInstanceOf[XSignatureVerifyResultListener]
+  }
+}
+

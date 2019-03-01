@@ -10,3 +10,13 @@ trait IUriRuntimeClassWithAbsoluteCanonicalUri extends js.Object {
   var displayIri: java.lang.String
 }
 
+object IUriRuntimeClassWithAbsoluteCanonicalUri {
+  @scala.inline
+  def apply(absoluteCanonicalUri: java.lang.String, displayIri: java.lang.String): IUriRuntimeClassWithAbsoluteCanonicalUri = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("absoluteCanonicalUri")(absoluteCanonicalUri)
+    __obj.updateDynamic("displayIri")(displayIri)
+    __obj.asInstanceOf[IUriRuntimeClassWithAbsoluteCanonicalUri]
+  }
+}
+

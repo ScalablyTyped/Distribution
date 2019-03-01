@@ -12,3 +12,13 @@ trait StrictDropdownDividerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StrictDropdownDividerProps {
+  @scala.inline
+  def apply(as: js.Any = null, className: java.lang.String = null): StrictDropdownDividerProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (className != null) __obj.updateDynamic("className")(className)
+    __obj.asInstanceOf[StrictDropdownDividerProps]
+  }
+}
+

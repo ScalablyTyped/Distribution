@@ -16,3 +16,28 @@ trait Options extends js.Object {
   var size: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    d: java.lang.String = null,
+    default: java.lang.String = null,
+    f: java.lang.String = null,
+    forcedefault: java.lang.String = null,
+    r: java.lang.String = null,
+    rating: java.lang.String = null,
+    s: java.lang.String = null,
+    size: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (d != null) __obj.updateDynamic("d")(d)
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (f != null) __obj.updateDynamic("f")(f)
+    if (forcedefault != null) __obj.updateDynamic("forcedefault")(forcedefault)
+    if (r != null) __obj.updateDynamic("r")(r)
+    if (rating != null) __obj.updateDynamic("rating")(rating)
+    if (s != null) __obj.updateDynamic("s")(s)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Options]
+  }
+}
+

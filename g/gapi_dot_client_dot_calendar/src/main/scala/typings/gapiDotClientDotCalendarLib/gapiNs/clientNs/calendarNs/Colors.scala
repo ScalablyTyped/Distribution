@@ -22,3 +22,20 @@ trait Colors extends js.Object {
   var updated: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Colors {
+  @scala.inline
+  def apply(
+    calendar: stdLib.Record[java.lang.String, ColorDefinition] = null,
+    event: stdLib.Record[java.lang.String, ColorDefinition] = null,
+    kind: java.lang.String = null,
+    updated: java.lang.String = null
+  ): Colors = {
+    val __obj = js.Dynamic.literal()
+    if (calendar != null) __obj.updateDynamic("calendar")(calendar)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    __obj.asInstanceOf[Colors]
+  }
+}
+

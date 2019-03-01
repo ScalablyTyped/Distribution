@@ -10,3 +10,17 @@ trait BlogUserInfosResource extends js.Object {
   def get(request: gapiDotClientDotBloggerLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[BlogUserInfo]
 }
 
+object BlogUserInfosResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BlogUserInfo]
+    ]
+  ): BlogUserInfosResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[BlogUserInfosResource]
+  }
+}
+

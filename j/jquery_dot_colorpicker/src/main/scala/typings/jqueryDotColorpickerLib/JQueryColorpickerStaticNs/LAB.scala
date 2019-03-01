@@ -11,3 +11,14 @@ trait LAB extends js.Object {
   var l: scala.Double
 }
 
+object LAB {
+  @scala.inline
+  def apply(a: scala.Double, b: scala.Double, l: scala.Double): LAB = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("a")(a)
+    __obj.updateDynamic("b")(b)
+    __obj.updateDynamic("l")(l)
+    __obj.asInstanceOf[LAB]
+  }
+}
+

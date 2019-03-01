@@ -63,3 +63,47 @@ trait ParameterDefinition extends Element {
   var use: code
 }
 
+object ParameterDefinition {
+  @scala.inline
+  def apply(
+    `type`: code,
+    use: code,
+    _documentation: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _max: Element = null,
+    _min: Element = null,
+    _name: Element = null,
+    _type: Element = null,
+    _use: Element = null,
+    documentation: java.lang.String = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    max: java.lang.String = null,
+    min: js.UndefOr[integer] = js.undefined,
+    name: code = null,
+    profile: Reference = null
+  ): ParameterDefinition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("use")(use)
+    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_max != null) __obj.updateDynamic("_max")(_max)
+    if (_min != null) __obj.updateDynamic("_min")(_min)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (_use != null) __obj.updateDynamic("_use")(_use)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    __obj.asInstanceOf[ParameterDefinition]
+  }
+}
+

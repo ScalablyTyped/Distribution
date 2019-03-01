@@ -66,3 +66,43 @@ trait XSimpleTabController
   ): scala.Unit
 }
 
+object XSimpleTabController {
+  @scala.inline
+  def apply(
+    ActiveTabID: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    activateTab: js.Function1[scala.Double, scala.Unit],
+    addTabListener: js.Function1[XTabListener, scala.Unit],
+    getActiveTabID: js.Function0[scala.Double],
+    getTabProps: js.Function1[
+      scala.Double, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue]
+    ],
+    insertTab: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTab: js.Function1[scala.Double, scala.Unit],
+    removeTabListener: js.Function1[XTabListener, scala.Unit],
+    setTabProps: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      scala.Unit
+    ]
+  ): XSimpleTabController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveTabID")(ActiveTabID)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("activateTab")(activateTab)
+    __obj.updateDynamic("addTabListener")(addTabListener)
+    __obj.updateDynamic("getActiveTabID")(getActiveTabID)
+    __obj.updateDynamic("getTabProps")(getTabProps)
+    __obj.updateDynamic("insertTab")(insertTab)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeTab")(removeTab)
+    __obj.updateDynamic("removeTabListener")(removeTabListener)
+    __obj.updateDynamic("setTabProps")(setTabProps)
+    __obj.asInstanceOf[XSimpleTabController]
+  }
+}
+

@@ -20,3 +20,24 @@ trait Device extends js.Object {
   var vendorIdentifier: java.lang.String
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    appIdentifier: java.lang.String,
+    appVersion: java.lang.String,
+    model: java.lang.String,
+    productType: java.lang.String,
+    systemVersion: java.lang.String,
+    vendorIdentifier: java.lang.String
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appIdentifier")(appIdentifier)
+    __obj.updateDynamic("appVersion")(appVersion)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("productType")(productType)
+    __obj.updateDynamic("systemVersion")(systemVersion)
+    __obj.updateDynamic("vendorIdentifier")(vendorIdentifier)
+    __obj.asInstanceOf[Device]
+  }
+}
+

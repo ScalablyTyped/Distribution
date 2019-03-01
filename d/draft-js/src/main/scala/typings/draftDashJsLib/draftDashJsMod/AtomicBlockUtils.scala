@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AtomicBlockUtils ()
   extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ModifierNs.AtomicBlockUtils
 
+/* static members */
 @JSImport("draft-js", "AtomicBlockUtils")
 @js.native
 object AtomicBlockUtils extends js.Object {

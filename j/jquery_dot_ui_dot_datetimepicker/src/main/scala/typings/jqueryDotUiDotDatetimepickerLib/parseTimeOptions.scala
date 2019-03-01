@@ -11,3 +11,14 @@ trait parseTimeOptions extends js.Object {
   var time: java.lang.String
 }
 
+object parseTimeOptions {
+  @scala.inline
+  def apply(format: java.lang.String, time: java.lang.String, options: DateTimePickerOptions = null): parseTimeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("time")(time)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[parseTimeOptions]
+  }
+}
+

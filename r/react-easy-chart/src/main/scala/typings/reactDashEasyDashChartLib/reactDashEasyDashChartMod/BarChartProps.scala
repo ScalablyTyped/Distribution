@@ -54,3 +54,60 @@ trait BarChartProps extends js.Object {
   var yTickNumber: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BarChartProps {
+  @scala.inline
+  def apply(
+    data: js.Array[BarData],
+    axes: js.UndefOr[scala.Boolean] = js.undefined,
+    axisLabels: reactDashEasyDashChartLib.Anon_X = null,
+    barWidth: scala.Int | scala.Double = null,
+    clickHandler: js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent, _] = null,
+    colorBars: js.UndefOr[scala.Boolean] = js.undefined,
+    datePattern: java.lang.String = null,
+    grid: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    interpolate: java.lang.String = null,
+    lineData: js.Array[LineData] = null,
+    margin: reactDashEasyDashChartLib.Anon_Bottom = null,
+    mouseMoveHandler: js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent, _] = null,
+    mouseOutHandler: js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent, _] = null,
+    mouseOverHandler: js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent, _] = null,
+    tickTimeDisplayFormat: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    xDomainRange: js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[java.lang.String] = null,
+    xTickNumber: scala.Int | scala.Double = null,
+    xType: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null,
+    y2Type: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null,
+    yAxisOrientRight: js.UndefOr[scala.Boolean] = js.undefined,
+    yDomainRange: js.Array[scala.Double] = null,
+    yTickNumber: scala.Int | scala.Double = null
+  ): BarChartProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
+    if (axisLabels != null) __obj.updateDynamic("axisLabels")(axisLabels)
+    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
+    if (clickHandler != null) __obj.updateDynamic("clickHandler")(clickHandler)
+    if (!js.isUndefined(colorBars)) __obj.updateDynamic("colorBars")(colorBars)
+    if (datePattern != null) __obj.updateDynamic("datePattern")(datePattern)
+    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate)
+    if (lineData != null) __obj.updateDynamic("lineData")(lineData)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (mouseMoveHandler != null) __obj.updateDynamic("mouseMoveHandler")(mouseMoveHandler)
+    if (mouseOutHandler != null) __obj.updateDynamic("mouseOutHandler")(mouseOutHandler)
+    if (mouseOverHandler != null) __obj.updateDynamic("mouseOverHandler")(mouseOverHandler)
+    if (tickTimeDisplayFormat != null) __obj.updateDynamic("tickTimeDisplayFormat")(tickTimeDisplayFormat)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (xDomainRange != null) __obj.updateDynamic("xDomainRange")(xDomainRange.asInstanceOf[js.Any])
+    if (xTickNumber != null) __obj.updateDynamic("xTickNumber")(xTickNumber.asInstanceOf[js.Any])
+    if (xType != null) __obj.updateDynamic("xType")(xType.asInstanceOf[js.Any])
+    if (y2Type != null) __obj.updateDynamic("y2Type")(y2Type.asInstanceOf[js.Any])
+    if (!js.isUndefined(yAxisOrientRight)) __obj.updateDynamic("yAxisOrientRight")(yAxisOrientRight)
+    if (yDomainRange != null) __obj.updateDynamic("yDomainRange")(yDomainRange)
+    if (yTickNumber != null) __obj.updateDynamic("yTickNumber")(yTickNumber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BarChartProps]
+  }
+}
+

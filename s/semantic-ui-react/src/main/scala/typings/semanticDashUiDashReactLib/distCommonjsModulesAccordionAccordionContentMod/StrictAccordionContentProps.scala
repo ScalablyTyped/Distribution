@@ -18,3 +18,22 @@ trait StrictAccordionContentProps extends js.Object {
   var content: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent] = js.undefined
 }
 
+object StrictAccordionContentProps {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null
+  ): StrictAccordionContentProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictAccordionContentProps]
+  }
+}
+

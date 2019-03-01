@@ -33,3 +33,24 @@ trait Options extends js.Object {
   var systemvars: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    defaults: scala.Boolean | java.lang.String = null,
+    expand: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    safe: scala.Boolean | java.lang.String = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    systemvars: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (safe != null) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(systemvars)) __obj.updateDynamic("systemvars")(systemvars)
+    __obj.asInstanceOf[Options]
+  }
+}
+

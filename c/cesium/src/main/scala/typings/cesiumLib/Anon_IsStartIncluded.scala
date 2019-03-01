@@ -12,3 +12,20 @@ trait Anon_IsStartIncluded extends js.Object {
   var stop: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.JulianDate] = js.undefined
 }
 
+object Anon_IsStartIncluded {
+  @scala.inline
+  def apply(
+    isStartIncluded: js.UndefOr[scala.Boolean] = js.undefined,
+    isStopIncluded: js.UndefOr[scala.Boolean] = js.undefined,
+    start: cesiumLib.cesiumMod.CesiumNs.JulianDate = null,
+    stop: cesiumLib.cesiumMod.CesiumNs.JulianDate = null
+  ): Anon_IsStartIncluded = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isStartIncluded)) __obj.updateDynamic("isStartIncluded")(isStartIncluded)
+    if (!js.isUndefined(isStopIncluded)) __obj.updateDynamic("isStopIncluded")(isStopIncluded)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[Anon_IsStartIncluded]
+  }
+}
+

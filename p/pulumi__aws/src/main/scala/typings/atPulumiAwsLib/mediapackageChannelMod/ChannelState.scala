@@ -30,3 +30,24 @@ trait ChannelState extends js.Object {
   ] = js.undefined
 }
 
+object ChannelState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    channelId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hlsIngests: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IngestEndpointsAnonPasswordUrl]
+      ]
+    ] = null
+  ): ChannelState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (hlsIngests != null) __obj.updateDynamic("hlsIngests")(hlsIngests.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChannelState]
+  }
+}
+

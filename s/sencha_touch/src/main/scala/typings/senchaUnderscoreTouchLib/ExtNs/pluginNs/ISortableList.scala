@@ -25,3 +25,22 @@ trait ISortableList
   var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
 }
 
+object ISortableList {
+  @scala.inline
+  def apply(
+    IComponent: senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    getHandleSelector: js.Function0[java.lang.String] = null,
+    getList: js.Function0[_] = null,
+    setHandleSelector: js.Function1[/* handleSelector */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setList: js.Function1[/* list */ js.UndefOr[js.Any], scala.Unit] = null
+  ): ISortableList = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (getHandleSelector != null) __obj.updateDynamic("getHandleSelector")(getHandleSelector)
+    if (getList != null) __obj.updateDynamic("getList")(getList)
+    if (setHandleSelector != null) __obj.updateDynamic("setHandleSelector")(setHandleSelector)
+    if (setList != null) __obj.updateDynamic("setList")(setList)
+    __obj.asInstanceOf[ISortableList]
+  }
+}
+

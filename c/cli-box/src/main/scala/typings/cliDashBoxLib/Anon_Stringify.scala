@@ -9,3 +9,12 @@ trait Anon_Stringify extends js.Object {
   var stringify: cliDashBoxLib.cliDashBoxLibNumbers.`true`
 }
 
+object Anon_Stringify {
+  @scala.inline
+  def apply(stringify: cliDashBoxLib.cliDashBoxLibNumbers.`true`): Anon_Stringify = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stringify")(stringify)
+    __obj.asInstanceOf[Anon_Stringify]
+  }
+}
+

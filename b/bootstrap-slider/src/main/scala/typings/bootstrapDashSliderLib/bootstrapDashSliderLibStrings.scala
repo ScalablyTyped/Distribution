@@ -13,7 +13,7 @@ object bootstrapDashSliderLibStrings {
   sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change extends SliderEventType
   
   @js.native
   sealed trait left extends js.Object
@@ -28,19 +28,19 @@ object bootstrapDashSliderLibStrings {
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait slide extends js.Object
+  sealed trait slide extends SliderEventType
   
   @js.native
-  sealed trait slideDisabled extends js.Object
+  sealed trait slideDisabled extends SliderEventType
   
   @js.native
-  sealed trait slideEnabled extends js.Object
+  sealed trait slideEnabled extends SliderEventType
   
   @js.native
-  sealed trait slideStart extends js.Object
+  sealed trait slideStart extends SliderEventType
   
   @js.native
-  sealed trait slideStop extends js.Object
+  sealed trait slideStop extends SliderEventType
   
   @js.native
   sealed trait top extends js.Object

@@ -21,3 +21,20 @@ trait BreakLocation extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BreakLocation {
+  @scala.inline
+  def apply(
+    lineNumber: scala.Double,
+    scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId,
+    columnNumber: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): BreakLocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lineNumber")(lineNumber)
+    __obj.updateDynamic("scriptId")(scriptId)
+    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BreakLocation]
+  }
+}
+

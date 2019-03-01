@@ -12,3 +12,20 @@ import scala.scalajs.js.annotation._
   var scope: js.UndefOr[Scope] = js.undefined
 }
 
+object TraverseOptions {
+  @scala.inline
+  def apply[S](
+    enter: VisitNodeFunction[S, Node] = null,
+    exit: VisitNodeFunction[S, Node] = null,
+    noScope: js.UndefOr[scala.Boolean] = js.undefined,
+    scope: Scope = null
+  ): TraverseOptions[S] = {
+    val __obj = js.Dynamic.literal()
+    if (enter != null) __obj.updateDynamic("enter")(enter)
+    if (exit != null) __obj.updateDynamic("exit")(exit)
+    if (!js.isUndefined(noScope)) __obj.updateDynamic("noScope")(noScope)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[TraverseOptions[S]]
+  }
+}
+

@@ -9,3 +9,12 @@ trait TextData extends js.Object {
   var renderText: js.Any
 }
 
+object TextData {
+  @scala.inline
+  def apply(renderText: js.Any): TextData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderText")(renderText)
+    __obj.asInstanceOf[TextData]
+  }
+}
+

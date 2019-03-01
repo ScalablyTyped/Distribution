@@ -20,3 +20,24 @@ trait Anon_Actcaller extends js.Object {
   var undead: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Actcaller {
+  @scala.inline
+  def apply(
+    act_caller: js.UndefOr[scala.Boolean] = js.undefined,
+    callpoint: js.UndefOr[scala.Boolean] = js.undefined,
+    fragile: js.UndefOr[scala.Boolean] = js.undefined,
+    print: Anon_Options = null,
+    short_logs: js.UndefOr[scala.Boolean] = js.undefined,
+    undead: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Actcaller = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(act_caller)) __obj.updateDynamic("act_caller")(act_caller)
+    if (!js.isUndefined(callpoint)) __obj.updateDynamic("callpoint")(callpoint)
+    if (!js.isUndefined(fragile)) __obj.updateDynamic("fragile")(fragile)
+    if (print != null) __obj.updateDynamic("print")(print)
+    if (!js.isUndefined(short_logs)) __obj.updateDynamic("short_logs")(short_logs)
+    if (!js.isUndefined(undead)) __obj.updateDynamic("undead")(undead)
+    __obj.asInstanceOf[Anon_Actcaller]
+  }
+}
+

@@ -31,3 +31,22 @@ trait Options extends js.Object {
   var threshold: js.UndefOr[scala.Double | java.lang.String | scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    append: js.UndefOr[scala.Boolean] = js.undefined,
+    extension: java.lang.String = null,
+    gzipOptions: nodeLib.zlibMod.ZlibOptions = null,
+    preExtension: java.lang.String = null,
+    threshold: scala.Double | java.lang.String | scala.Boolean = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (gzipOptions != null) __obj.updateDynamic("gzipOptions")(gzipOptions)
+    if (preExtension != null) __obj.updateDynamic("preExtension")(preExtension)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

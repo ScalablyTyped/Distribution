@@ -62,3 +62,33 @@ trait SecurityGroupRuleArgs extends js.Object {
   val `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object SecurityGroupRuleArgs {
+  @scala.inline
+  def apply(
+    fromPort: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    securityGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    toPort: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    cidrBlocks: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipv6CidrBlocks: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    prefixListIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    self: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    sourceSecurityGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): SecurityGroupRuleArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
+    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    __obj.updateDynamic("securityGroupId")(securityGroupId.asInstanceOf[js.Any])
+    __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
+    if (cidrBlocks != null) __obj.updateDynamic("cidrBlocks")(cidrBlocks.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (ipv6CidrBlocks != null) __obj.updateDynamic("ipv6CidrBlocks")(ipv6CidrBlocks.asInstanceOf[js.Any])
+    if (prefixListIds != null) __obj.updateDynamic("prefixListIds")(prefixListIds.asInstanceOf[js.Any])
+    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
+    if (sourceSecurityGroupId != null) __obj.updateDynamic("sourceSecurityGroupId")(sourceSecurityGroupId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SecurityGroupRuleArgs]
+  }
+}
+

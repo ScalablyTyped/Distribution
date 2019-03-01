@@ -62,3 +62,51 @@ trait TransferInfo extends js.Object {
   var value: chromeDashAppsLib.chromeNs.integer
 }
 
+object TransferInfo {
+  @scala.inline
+  def apply(
+    direction: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_IN, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_IN[keyof chrome-apps.Anon_IN] */ js.Any
+      ]
+    ],
+    index: chromeDashAppsLib.chromeNs.integer,
+    recipient: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_DEVICE, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DEVICE[keyof chrome-apps.Anon_DEVICE] */ js.Any
+      ]
+    ],
+    request: chromeDashAppsLib.chromeNs.integer,
+    requestType: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_CLASS, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CLASS[keyof chrome-apps.Anon_CLASS] */ js.Any
+      ]
+    ],
+    value: chromeDashAppsLib.chromeNs.integer,
+    data: stdLib.ArrayBuffer = null,
+    length: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    timeout: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): TransferInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length)
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[TransferInfo]
+  }
+}
+

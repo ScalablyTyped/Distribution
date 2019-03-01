@@ -12,3 +12,20 @@ trait QueryResult[T] extends js.Object {
   var totalSize: scala.Double
 }
 
+object QueryResult {
+  @scala.inline
+  def apply[T](
+    done: scala.Boolean,
+    records: js.Array[T],
+    totalSize: scala.Double,
+    nextRecordsUrl: java.lang.String = null
+  ): QueryResult[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("done")(done)
+    __obj.updateDynamic("records")(records)
+    __obj.updateDynamic("totalSize")(totalSize)
+    if (nextRecordsUrl != null) __obj.updateDynamic("nextRecordsUrl")(nextRecordsUrl)
+    __obj.asInstanceOf[QueryResult[T]]
+  }
+}
+

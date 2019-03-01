@@ -13,3 +13,17 @@ trait SearchResource extends js.Object {
   def list(request: gapiDotClientDotYoutubeLib.Anon_AltChannelIdChannelType): gapiDotClientLib.gapiNs.clientNs.Request[SearchListResponse]
 }
 
+object SearchResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltChannelIdChannelType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchListResponse]
+    ]
+  ): SearchResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[SearchResource]
+  }
+}
+

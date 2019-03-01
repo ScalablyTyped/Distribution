@@ -10,3 +10,13 @@ trait SwitchMessages extends js.Object {
   var unchecked: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SwitchMessages {
+  @scala.inline
+  def apply(checked: java.lang.String = null, unchecked: java.lang.String = null): SwitchMessages = {
+    val __obj = js.Dynamic.literal()
+    if (checked != null) __obj.updateDynamic("checked")(checked)
+    if (unchecked != null) __obj.updateDynamic("unchecked")(unchecked)
+    __obj.asInstanceOf[SwitchMessages]
+  }
+}
+

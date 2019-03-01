@@ -14,3 +14,24 @@ trait ReadDirOptions extends js.Object {
   var versionTag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReadDirOptions {
+  @scala.inline
+  def apply(
+    contentHash: java.lang.String = null,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    httpCache: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: js.Any = null,
+    removed: js.UndefOr[scala.Boolean] = js.undefined,
+    versionTag: java.lang.String = null
+  ): ReadDirOptions = {
+    val __obj = js.Dynamic.literal()
+    if (contentHash != null) __obj.updateDynamic("contentHash")(contentHash)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache)
+    if (limit != null) __obj.updateDynamic("limit")(limit)
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed)
+    if (versionTag != null) __obj.updateDynamic("versionTag")(versionTag)
+    __obj.asInstanceOf[ReadDirOptions]
+  }
+}
+

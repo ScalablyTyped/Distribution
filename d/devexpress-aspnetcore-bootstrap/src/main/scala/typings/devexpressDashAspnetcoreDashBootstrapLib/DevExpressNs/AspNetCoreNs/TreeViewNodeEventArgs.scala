@@ -9,3 +9,13 @@ trait TreeViewNodeEventArgs extends EventArgs {
   val node: BootstrapTreeViewNode
 }
 
+object TreeViewNodeEventArgs {
+  @scala.inline
+  def apply(node: BootstrapTreeViewNode, sender: Control): TreeViewNodeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("node")(node)
+    __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[TreeViewNodeEventArgs]
+  }
+}
+

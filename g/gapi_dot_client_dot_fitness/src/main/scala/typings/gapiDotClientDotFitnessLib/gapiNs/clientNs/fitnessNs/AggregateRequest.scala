@@ -40,3 +40,28 @@ trait AggregateRequest extends js.Object {
   var startTimeMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AggregateRequest {
+  @scala.inline
+  def apply(
+    aggregateBy: js.Array[AggregateBy] = null,
+    bucketByActivitySegment: BucketByActivity = null,
+    bucketByActivityType: BucketByActivity = null,
+    bucketBySession: BucketBySession = null,
+    bucketByTime: BucketByTime = null,
+    endTimeMillis: java.lang.String = null,
+    filteredDataQualityStandard: js.Array[java.lang.String] = null,
+    startTimeMillis: java.lang.String = null
+  ): AggregateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (aggregateBy != null) __obj.updateDynamic("aggregateBy")(aggregateBy)
+    if (bucketByActivitySegment != null) __obj.updateDynamic("bucketByActivitySegment")(bucketByActivitySegment)
+    if (bucketByActivityType != null) __obj.updateDynamic("bucketByActivityType")(bucketByActivityType)
+    if (bucketBySession != null) __obj.updateDynamic("bucketBySession")(bucketBySession)
+    if (bucketByTime != null) __obj.updateDynamic("bucketByTime")(bucketByTime)
+    if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis)
+    if (filteredDataQualityStandard != null) __obj.updateDynamic("filteredDataQualityStandard")(filteredDataQualityStandard)
+    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis)
+    __obj.asInstanceOf[AggregateRequest]
+  }
+}
+

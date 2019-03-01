@@ -38,3 +38,24 @@ trait Frame extends js.Object {
   var traces: js.Array[scala.Double]
 }
 
+object Frame {
+  @scala.inline
+  def apply(
+    baseframe: java.lang.String,
+    data: js.Array[Data],
+    group: java.lang.String,
+    layout: stdLib.Partial[Layout],
+    name: java.lang.String,
+    traces: js.Array[scala.Double]
+  ): Frame = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseframe")(baseframe)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("layout")(layout)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("traces")(traces)
+    __obj.asInstanceOf[Frame]
+  }
+}
+

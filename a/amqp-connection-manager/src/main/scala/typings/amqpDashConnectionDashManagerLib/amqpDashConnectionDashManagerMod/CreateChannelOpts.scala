@@ -22,3 +22,18 @@ trait CreateChannelOpts extends js.Object {
   var setup: js.UndefOr[SetupFunc] = js.undefined
 }
 
+object CreateChannelOpts {
+  @scala.inline
+  def apply(
+    json: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    setup: SetupFunc = null
+  ): CreateChannelOpts = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (setup != null) __obj.updateDynamic("setup")(setup.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateChannelOpts]
+  }
+}
+

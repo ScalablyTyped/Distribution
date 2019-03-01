@@ -20,3 +20,26 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object TextProps {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    capHeight: java.lang.String = null,
+    lineHeight: java.lang.String = null,
+    scaleToFit: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.Object = null,
+    textAnchor: rechartsLib.rechartsLibStrings.start | rechartsLib.rechartsLibStrings.middle | rechartsLib.rechartsLibStrings.end | rechartsLib.rechartsLibStrings.inherit = null,
+    verticalAnchor: rechartsLib.rechartsLibStrings.start | rechartsLib.rechartsLibStrings.middle | rechartsLib.rechartsLibStrings.end = null
+  ): TextProps = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight)
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight)
+    if (!js.isUndefined(scaleToFit)) __obj.updateDynamic("scaleToFit")(scaleToFit)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
+    if (verticalAnchor != null) __obj.updateDynamic("verticalAnchor")(verticalAnchor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextProps]
+  }
+}
+

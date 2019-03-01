@@ -37,3 +37,20 @@ trait DataValidationUpdateData extends js.Object {
   var rule: js.UndefOr[officeDashJsDashPreviewLib.ExcelNs.DataValidationRule] = js.undefined
 }
 
+object DataValidationUpdateData {
+  @scala.inline
+  def apply(
+    errorAlert: officeDashJsDashPreviewLib.ExcelNs.DataValidationErrorAlert = null,
+    ignoreBlanks: js.UndefOr[scala.Boolean] = js.undefined,
+    prompt: officeDashJsDashPreviewLib.ExcelNs.DataValidationPrompt = null,
+    rule: officeDashJsDashPreviewLib.ExcelNs.DataValidationRule = null
+  ): DataValidationUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (errorAlert != null) __obj.updateDynamic("errorAlert")(errorAlert)
+    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[DataValidationUpdateData]
+  }
+}
+

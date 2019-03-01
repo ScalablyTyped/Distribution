@@ -11,3 +11,14 @@ trait CalendarDayProperties extends js.Object {
   var isToday: scala.Boolean
 }
 
+object CalendarDayProperties {
+  @scala.inline
+  def apply(isAdjacentMonth: scala.Boolean, isInactive: scala.Boolean, isToday: scala.Boolean): CalendarDayProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isAdjacentMonth")(isAdjacentMonth)
+    __obj.updateDynamic("isInactive")(isInactive)
+    __obj.updateDynamic("isToday")(isToday)
+    __obj.asInstanceOf[CalendarDayProperties]
+  }
+}
+

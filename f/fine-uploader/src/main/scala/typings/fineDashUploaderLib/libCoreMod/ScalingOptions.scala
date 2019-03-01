@@ -66,3 +66,28 @@ trait ScalingOptions extends js.Object {
   var sizes: js.UndefOr[SizeOptions] = js.undefined
 }
 
+object ScalingOptions {
+  @scala.inline
+  def apply(
+    customResizer: CustomResizerCallBack = null,
+    defaultQuality: scala.Int | scala.Double = null,
+    defaultType: java.lang.String = null,
+    failureText: java.lang.String = null,
+    includeExif: js.UndefOr[scala.Boolean] = js.undefined,
+    orient: js.UndefOr[scala.Boolean] = js.undefined,
+    sendOriginal: js.UndefOr[scala.Boolean] = js.undefined,
+    sizes: SizeOptions = null
+  ): ScalingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customResizer != null) __obj.updateDynamic("customResizer")(customResizer)
+    if (defaultQuality != null) __obj.updateDynamic("defaultQuality")(defaultQuality.asInstanceOf[js.Any])
+    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
+    if (failureText != null) __obj.updateDynamic("failureText")(failureText)
+    if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif)
+    if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient)
+    if (!js.isUndefined(sendOriginal)) __obj.updateDynamic("sendOriginal")(sendOriginal)
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
+    __obj.asInstanceOf[ScalingOptions]
+  }
+}
+

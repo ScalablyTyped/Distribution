@@ -12,3 +12,20 @@ trait NxDataPage extends js.Object {
   var qTails: js.Array[NxGroupTail]
 }
 
+object NxDataPage {
+  @scala.inline
+  def apply(
+    qArea: Rect,
+    qIsReduced: scala.Boolean,
+    qMatrix: js.Array[NxCellRows],
+    qTails: js.Array[NxGroupTail]
+  ): NxDataPage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qArea")(qArea)
+    __obj.updateDynamic("qIsReduced")(qIsReduced)
+    __obj.updateDynamic("qMatrix")(qMatrix)
+    __obj.updateDynamic("qTails")(qTails)
+    __obj.asInstanceOf[NxDataPage]
+  }
+}
+

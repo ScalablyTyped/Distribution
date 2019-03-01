@@ -10,3 +10,12 @@ trait MessageOptions extends js.Object {
   var includeTlsChannelId: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MessageOptions {
+  @scala.inline
+  def apply(includeTlsChannelId: js.UndefOr[scala.Boolean] = js.undefined): MessageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeTlsChannelId)) __obj.updateDynamic("includeTlsChannelId")(includeTlsChannelId)
+    __obj.asInstanceOf[MessageOptions]
+  }
+}
+

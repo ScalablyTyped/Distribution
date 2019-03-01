@@ -28,3 +28,22 @@ trait EditSettingsEditItem extends js.Object {
   var validationRules: js.UndefOr[js.Any] = js.undefined
 }
 
+object EditSettingsEditItem {
+  @scala.inline
+  def apply(
+    defaultValue: java.lang.String | scala.Double = null,
+    editParams: js.Any = null,
+    editType: EditingType | java.lang.String = null,
+    field: java.lang.String = null,
+    validationRules: js.Any = null
+  ): EditSettingsEditItem = {
+    val __obj = js.Dynamic.literal()
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (editParams != null) __obj.updateDynamic("editParams")(editParams)
+    if (editType != null) __obj.updateDynamic("editType")(editType.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    __obj.asInstanceOf[EditSettingsEditItem]
+  }
+}
+

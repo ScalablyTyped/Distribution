@@ -18,3 +18,12 @@ trait SetLocationsRequest extends js.Object {
   var locations: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object SetLocationsRequest {
+  @scala.inline
+  def apply(locations: js.Array[java.lang.String] = null): SetLocationsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    __obj.asInstanceOf[SetLocationsRequest]
+  }
+}
+

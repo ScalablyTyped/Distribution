@@ -157,3 +157,66 @@ trait IEnvironmentHelperOptions extends js.Object {
   var toneMappingEnabled: scala.Boolean
 }
 
+object IEnvironmentHelperOptions {
+  @scala.inline
+  def apply(
+    backgroundYRotation: scala.Double,
+    cameraContrast: scala.Double,
+    cameraExposure: scala.Double,
+    createGround: scala.Boolean,
+    createSkybox: scala.Boolean,
+    enableGroundMirror: scala.Boolean,
+    enableGroundShadow: scala.Boolean,
+    environmentTexture: java.lang.String | BaseTexture,
+    groundColor: Color3,
+    groundMirrorAmount: scala.Double,
+    groundMirrorBlurKernel: scala.Double,
+    groundMirrorFallOffDistance: scala.Double,
+    groundMirrorFresnelWeight: scala.Double,
+    groundMirrorSizeRatio: scala.Double,
+    groundMirrorTextureType: scala.Double,
+    groundOpacity: scala.Double,
+    groundShadowLevel: scala.Double,
+    groundSize: scala.Double,
+    groundTexture: java.lang.String | BaseTexture,
+    groundYBias: scala.Double,
+    rootPosition: Vector3,
+    setupImageProcessing: scala.Boolean,
+    sizeAuto: scala.Boolean,
+    skyboxColor: Color3,
+    skyboxSize: scala.Double,
+    skyboxTexture: java.lang.String | BaseTexture,
+    toneMappingEnabled: scala.Boolean
+  ): IEnvironmentHelperOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundYRotation")(backgroundYRotation)
+    __obj.updateDynamic("cameraContrast")(cameraContrast)
+    __obj.updateDynamic("cameraExposure")(cameraExposure)
+    __obj.updateDynamic("createGround")(createGround)
+    __obj.updateDynamic("createSkybox")(createSkybox)
+    __obj.updateDynamic("enableGroundMirror")(enableGroundMirror)
+    __obj.updateDynamic("enableGroundShadow")(enableGroundShadow)
+    __obj.updateDynamic("environmentTexture")(environmentTexture.asInstanceOf[js.Any])
+    __obj.updateDynamic("groundColor")(groundColor)
+    __obj.updateDynamic("groundMirrorAmount")(groundMirrorAmount)
+    __obj.updateDynamic("groundMirrorBlurKernel")(groundMirrorBlurKernel)
+    __obj.updateDynamic("groundMirrorFallOffDistance")(groundMirrorFallOffDistance)
+    __obj.updateDynamic("groundMirrorFresnelWeight")(groundMirrorFresnelWeight)
+    __obj.updateDynamic("groundMirrorSizeRatio")(groundMirrorSizeRatio)
+    __obj.updateDynamic("groundMirrorTextureType")(groundMirrorTextureType)
+    __obj.updateDynamic("groundOpacity")(groundOpacity)
+    __obj.updateDynamic("groundShadowLevel")(groundShadowLevel)
+    __obj.updateDynamic("groundSize")(groundSize)
+    __obj.updateDynamic("groundTexture")(groundTexture.asInstanceOf[js.Any])
+    __obj.updateDynamic("groundYBias")(groundYBias)
+    __obj.updateDynamic("rootPosition")(rootPosition)
+    __obj.updateDynamic("setupImageProcessing")(setupImageProcessing)
+    __obj.updateDynamic("sizeAuto")(sizeAuto)
+    __obj.updateDynamic("skyboxColor")(skyboxColor)
+    __obj.updateDynamic("skyboxSize")(skyboxSize)
+    __obj.updateDynamic("skyboxTexture")(skyboxTexture.asInstanceOf[js.Any])
+    __obj.updateDynamic("toneMappingEnabled")(toneMappingEnabled)
+    __obj.asInstanceOf[IEnvironmentHelperOptions]
+  }
+}
+

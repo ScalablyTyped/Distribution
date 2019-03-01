@@ -18,3 +18,26 @@ trait IInstruction extends js.Object {
   ] = js.undefined
 }
 
+object IInstruction {
+  @scala.inline
+  def apply(
+    distance: scala.Double,
+    time: scala.Double,
+    direction: java.lang.String = null,
+    exit: scala.Int | scala.Double = null,
+    road: java.lang.String = null,
+    text: scala.Int | scala.Double = null,
+    `type`: leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.Straight | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.SlightRight | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.Right | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.SharpRight | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.TurnAround | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.SharpLeft | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.Left | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.SlightLeft | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.WaypointReached | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.Roundabout | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.StartAt | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.DestinationReached | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.EnterAgainstAllowedDirection | leafletDashRoutingDashMachineLib.leafletDashRoutingDashMachineLibStrings.LeaveAgainstAllowedDirection = null
+  ): IInstruction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("time")(time)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
+    if (road != null) __obj.updateDynamic("road")(road)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IInstruction]
+  }
+}
+

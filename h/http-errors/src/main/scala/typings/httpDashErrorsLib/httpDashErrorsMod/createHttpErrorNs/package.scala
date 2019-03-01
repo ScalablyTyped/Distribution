@@ -12,7 +12,7 @@ package object createHttpErrorNs {
   ]
   type HttpErrorConstructor = org.scalablytyped.runtime.Instantiable1[/* msg */ js.UndefOr[/* msg */ java.lang.String], HttpError]
   type NamedConstructors = httpDashErrorsLib.Anon_Code with (stdLib.Record[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ java.lang.String, 
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ js.Any, 
     HttpErrorConstructor
   ])
 }

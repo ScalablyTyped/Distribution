@@ -16,3 +16,20 @@ trait PlayerLeaderboardScoreListResponse extends js.Object {
   var player: js.UndefOr[Player] = js.undefined
 }
 
+object PlayerLeaderboardScoreListResponse {
+  @scala.inline
+  def apply(
+    items: js.Array[PlayerLeaderboardScore] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    player: Player = null
+  ): PlayerLeaderboardScoreListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (player != null) __obj.updateDynamic("player")(player)
+    __obj.asInstanceOf[PlayerLeaderboardScoreListResponse]
+  }
+}
+

@@ -47,3 +47,22 @@ trait RenderOptions extends js.Object {
   var RenderDevice: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XDevice
 }
 
+object RenderOptions {
+  @scala.inline
+  def apply(
+    IsFirstPage: scala.Boolean,
+    IsLastPage: scala.Boolean,
+    IsSkipEmptyPages: scala.Boolean,
+    PageRange: java.lang.String,
+    RenderDevice: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XDevice
+  ): RenderOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IsFirstPage")(IsFirstPage)
+    __obj.updateDynamic("IsLastPage")(IsLastPage)
+    __obj.updateDynamic("IsSkipEmptyPages")(IsSkipEmptyPages)
+    __obj.updateDynamic("PageRange")(PageRange)
+    __obj.updateDynamic("RenderDevice")(RenderDevice)
+    __obj.asInstanceOf[RenderOptions]
+  }
+}
+

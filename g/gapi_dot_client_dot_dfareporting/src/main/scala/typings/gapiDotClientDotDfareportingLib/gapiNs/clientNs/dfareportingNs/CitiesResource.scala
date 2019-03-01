@@ -10,3 +10,17 @@ trait CitiesResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltCountryDartIds): gapiDotClientLib.gapiNs.clientNs.Request[CitiesListResponse]
 }
 
+object CitiesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCountryDartIds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CitiesListResponse]
+    ]
+  ): CitiesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[CitiesResource]
+  }
+}
+

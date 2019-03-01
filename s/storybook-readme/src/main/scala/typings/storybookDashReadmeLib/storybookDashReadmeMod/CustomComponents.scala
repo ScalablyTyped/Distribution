@@ -10,3 +10,16 @@ trait CustomComponents extends js.Object {
   def PreviewComponent(props: storybookDashReadmeLib.Anon_Children): reactLib.reactMod.Global.JSXNs.Element
 }
 
+object CustomComponents {
+  @scala.inline
+  def apply(
+    FooterComponent: js.Function1[storybookDashReadmeLib.Anon_Children, reactLib.reactMod.Global.JSXNs.Element],
+    PreviewComponent: js.Function1[storybookDashReadmeLib.Anon_Children, reactLib.reactMod.Global.JSXNs.Element]
+  ): CustomComponents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FooterComponent")(FooterComponent)
+    __obj.updateDynamic("PreviewComponent")(PreviewComponent)
+    __obj.asInstanceOf[CustomComponents]
+  }
+}
+

@@ -24,3 +24,18 @@ trait PersistentPreferredActivity extends js.Object {
   var receiverActivity: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PersistentPreferredActivity {
+  @scala.inline
+  def apply(
+    actions: js.Array[java.lang.String] = null,
+    categories: js.Array[java.lang.String] = null,
+    receiverActivity: java.lang.String = null
+  ): PersistentPreferredActivity = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (receiverActivity != null) __obj.updateDynamic("receiverActivity")(receiverActivity)
+    __obj.asInstanceOf[PersistentPreferredActivity]
+  }
+}
+

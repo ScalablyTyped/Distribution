@@ -37,3 +37,20 @@ trait ImageUpdateData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImageUpdateData {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    hyperlink: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ImageUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageUpdateData]
+  }
+}
+

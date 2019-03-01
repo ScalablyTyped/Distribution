@@ -30,3 +30,56 @@ trait StockChartValueAxisItem extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StockChartValueAxisItem {
+  @scala.inline
+  def apply(
+    axisCrossingValue: js.Any | stdLib.Date = null,
+    background: java.lang.String = null,
+    color: java.lang.String = null,
+    crosshair: StockChartValueAxisItemCrosshair = null,
+    labels: StockChartValueAxisItemLabels = null,
+    line: StockChartValueAxisItemLine = null,
+    majorGridLines: StockChartValueAxisItemMajorGridLines = null,
+    majorTicks: StockChartValueAxisItemMajorTicks = null,
+    majorUnit: scala.Int | scala.Double = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    minorGridLines: StockChartValueAxisItemMinorGridLines = null,
+    minorTicks: StockChartValueAxisItemMinorTicks = null,
+    minorUnit: scala.Int | scala.Double = null,
+    name: js.Any = null,
+    narrowRange: js.UndefOr[scala.Boolean] = js.undefined,
+    notes: StockChartValueAxisItemNotes = null,
+    pane: java.lang.String = null,
+    plotBands: js.Array[StockChartValueAxisItemPlotBand] = null,
+    reverse: js.UndefOr[scala.Boolean] = js.undefined,
+    title: StockChartValueAxisItemTitle = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): StockChartValueAxisItem = {
+    val __obj = js.Dynamic.literal()
+    if (axisCrossingValue != null) __obj.updateDynamic("axisCrossingValue")(axisCrossingValue.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (majorGridLines != null) __obj.updateDynamic("majorGridLines")(majorGridLines)
+    if (majorTicks != null) __obj.updateDynamic("majorTicks")(majorTicks)
+    if (majorUnit != null) __obj.updateDynamic("majorUnit")(majorUnit.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minorGridLines != null) __obj.updateDynamic("minorGridLines")(minorGridLines)
+    if (minorTicks != null) __obj.updateDynamic("minorTicks")(minorTicks)
+    if (minorUnit != null) __obj.updateDynamic("minorUnit")(minorUnit.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(narrowRange)) __obj.updateDynamic("narrowRange")(narrowRange)
+    if (notes != null) __obj.updateDynamic("notes")(notes)
+    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (plotBands != null) __obj.updateDynamic("plotBands")(plotBands)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[StockChartValueAxisItem]
+  }
+}
+

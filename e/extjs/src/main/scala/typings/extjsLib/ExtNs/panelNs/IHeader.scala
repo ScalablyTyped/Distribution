@@ -68,3 +68,58 @@ trait IHeader
   var titlePosition: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IHeader {
+  @scala.inline
+  def apply(
+    IContainer: extjsLib.ExtNs.containerNs.IContainer = null,
+    addTool: js.Function1[/* tool */ js.UndefOr[js.Any], scala.Unit] = null,
+    addUIClsToElement: js.Function1[/* cls */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterLayout: js.Function0[scala.Unit] = null,
+    beforeLayout: js.Function0[scala.Unit] = null,
+    componentLayout: js.Any = null,
+    defaultType: java.lang.String = null,
+    getTools: js.Function0[extjsLib.ExtNs.Array] = null,
+    glyph: js.Any = null,
+    icon: java.lang.String = null,
+    iconCls: java.lang.String = null,
+    isHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    onAdd: js.Function2[/* component */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], scala.Unit] = null,
+    removeUIClsFromElement: js.Function1[/* cls */ js.UndefOr[js.Any], scala.Unit] = null,
+    renderTpl: js.Any = null,
+    setGlyph: js.Function1[/* glyph */ js.UndefOr[js.Any], scala.Unit] = null,
+    setIcon: js.Function1[/* icon */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setIconCls: js.Function1[/* cls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setTitle: js.Function1[/* title */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    shrinkWrap: js.Any = null,
+    title: java.lang.String = null,
+    titleAlign: java.lang.String = null,
+    titlePosition: scala.Int | scala.Double = null
+  ): IHeader = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (addTool != null) __obj.updateDynamic("addTool")(addTool)
+    if (addUIClsToElement != null) __obj.updateDynamic("addUIClsToElement")(addUIClsToElement)
+    if (afterLayout != null) __obj.updateDynamic("afterLayout")(afterLayout)
+    if (beforeLayout != null) __obj.updateDynamic("beforeLayout")(beforeLayout)
+    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
+    if (getTools != null) __obj.updateDynamic("getTools")(getTools)
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
+    if (removeUIClsFromElement != null) __obj.updateDynamic("removeUIClsFromElement")(removeUIClsFromElement)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (setGlyph != null) __obj.updateDynamic("setGlyph")(setGlyph)
+    if (setIcon != null) __obj.updateDynamic("setIcon")(setIcon)
+    if (setIconCls != null) __obj.updateDynamic("setIconCls")(setIconCls)
+    if (setTitle != null) __obj.updateDynamic("setTitle")(setTitle)
+    if (shrinkWrap != null) __obj.updateDynamic("shrinkWrap")(shrinkWrap)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign)
+    if (titlePosition != null) __obj.updateDynamic("titlePosition")(titlePosition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IHeader]
+  }
+}
+

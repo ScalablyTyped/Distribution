@@ -10,3 +10,13 @@ trait IAnimation extends js.Object {
   var enabled: scala.Boolean
 }
 
+object IAnimation {
+  @scala.inline
+  def apply(duration: scala.Double, enabled: scala.Boolean): IAnimation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[IAnimation]
+  }
+}
+

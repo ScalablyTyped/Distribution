@@ -49,3 +49,24 @@ trait XJavaVM
   def isVMStarted(): scala.Boolean
 }
 
+object XJavaVM {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getJavaVM: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], js.Any],
+    isVMEnabled: js.Function0[scala.Boolean],
+    isVMStarted: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XJavaVM = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getJavaVM")(getJavaVM)
+    __obj.updateDynamic("isVMEnabled")(isVMEnabled)
+    __obj.updateDynamic("isVMStarted")(isVMStarted)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XJavaVM]
+  }
+}
+

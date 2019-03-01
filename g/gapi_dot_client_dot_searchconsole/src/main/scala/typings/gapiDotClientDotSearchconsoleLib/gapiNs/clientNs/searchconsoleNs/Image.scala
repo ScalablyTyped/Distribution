@@ -15,3 +15,13 @@ trait Image extends js.Object {
   var mimeType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Image {
+  @scala.inline
+  def apply(data: java.lang.String = null, mimeType: java.lang.String = null): Image = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    __obj.asInstanceOf[Image]
+  }
+}
+

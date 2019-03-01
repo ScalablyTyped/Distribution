@@ -32,3 +32,25 @@ trait IgComboMultiSelection
   var showCheckboxes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgComboMultiSelection {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgComboMultiSelection
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    addWithKeyModifier: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    itemSeparator: java.lang.String = null,
+    showCheckboxes: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgComboMultiSelection = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(addWithKeyModifier)) __obj.updateDynamic("addWithKeyModifier")(addWithKeyModifier)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (itemSeparator != null) __obj.updateDynamic("itemSeparator")(itemSeparator)
+    if (!js.isUndefined(showCheckboxes)) __obj.updateDynamic("showCheckboxes")(showCheckboxes)
+    __obj.asInstanceOf[IgComboMultiSelection]
+  }
+}
+

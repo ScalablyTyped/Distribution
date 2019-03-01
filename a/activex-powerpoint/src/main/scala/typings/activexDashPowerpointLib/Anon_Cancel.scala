@@ -10,3 +10,13 @@ trait Anon_Cancel extends js.Object {
   val Pres: activexDashPowerpointLib.PowerPointNs.Presentation
 }
 
+object Anon_Cancel {
+  @scala.inline
+  def apply(Cancel: scala.Boolean, Pres: activexDashPowerpointLib.PowerPointNs.Presentation): Anon_Cancel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("Pres")(Pres)
+    __obj.asInstanceOf[Anon_Cancel]
+  }
+}
+

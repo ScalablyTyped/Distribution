@@ -20,3 +20,32 @@ trait HeaderProps extends js.Object {
   var yearSelectTotal: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HeaderProps {
+  @scala.inline
+  def apply(
+    value: js.Any,
+    fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: js.Any = null,
+    onTypeChange: js.Function1[/* type */ java.lang.String, scala.Unit] = null,
+    onValueChange: js.Function1[/* value */ momentLib.momentMod.momentNs.Moment, scala.Unit] = null,
+    prefixCls: java.lang.String = null,
+    `type`: java.lang.String = null,
+    validRange: js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment] = null,
+    yearSelectOffset: scala.Int | scala.Double = null,
+    yearSelectTotal: scala.Int | scala.Double = null
+  ): HeaderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (onTypeChange != null) __obj.updateDynamic("onTypeChange")(onTypeChange)
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (validRange != null) __obj.updateDynamic("validRange")(validRange)
+    if (yearSelectOffset != null) __obj.updateDynamic("yearSelectOffset")(yearSelectOffset.asInstanceOf[js.Any])
+    if (yearSelectTotal != null) __obj.updateDynamic("yearSelectTotal")(yearSelectTotal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeaderProps]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_MaxLength extends js.Object {
   var messageTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_MaxLength {
+  @scala.inline
+  def apply(maxLength: scala.Double, messageTemplate: java.lang.String = null): Anon_MaxLength = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxLength")(maxLength)
+    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate)
+    __obj.asInstanceOf[Anon_MaxLength]
+  }
+}
+

@@ -62,3 +62,30 @@ trait PlotLabel extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PlotLabel {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    rotation: scala.Int | scala.Double = null,
+    style: CSSObject = null,
+    text: java.lang.String = null,
+    textAlign: java.lang.String = null,
+    useHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlign: java.lang.String = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): PlotLabel = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlotLabel]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ProjectDetailsResultBase extends js.Object {
   val `type`: js.UndefOr[ionicLib.definitionsMod.ProjectType] = js.undefined
 }
 
+object ProjectDetailsResultBase {
+  @scala.inline
+  def apply(errors: js.Array[ProjectDetailsError], `type`: ionicLib.definitionsMod.ProjectType = null): ProjectDetailsResultBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errors")(errors)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ProjectDetailsResultBase]
+  }
+}
+

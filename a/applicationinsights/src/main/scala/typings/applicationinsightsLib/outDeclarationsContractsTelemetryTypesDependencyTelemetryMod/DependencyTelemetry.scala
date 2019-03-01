@@ -39,3 +39,34 @@ trait DependencyTelemetry
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DependencyTelemetry {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    dependencyTypeName: java.lang.String,
+    duration: scala.Double,
+    name: java.lang.String,
+    resultCode: java.lang.String | scala.Double,
+    success: scala.Boolean,
+    contextObjects: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    target: java.lang.String = null,
+    time: stdLib.Date = null
+  ): DependencyTelemetry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("dependencyTypeName")(dependencyTypeName)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("resultCode")(resultCode.asInstanceOf[js.Any])
+    __obj.updateDynamic("success")(success)
+    if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (tagOverrides != null) __obj.updateDynamic("tagOverrides")(tagOverrides)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (time != null) __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[DependencyTelemetry]
+  }
+}
+

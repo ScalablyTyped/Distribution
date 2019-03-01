@@ -28,3 +28,22 @@ trait Cubehelix extends js.Object {
   def start(s: scala.Double): Cubehelix
 }
 
+object Cubehelix {
+  @scala.inline
+  def apply(
+    gamma: js.Function1[scala.Double, Cubehelix],
+    lightness: js.Function1[js.Array[scala.Double], Cubehelix],
+    rotations: js.Function1[scala.Double, Cubehelix],
+    scale: js.Function0[Scale[Color]],
+    start: js.Function1[scala.Double, Cubehelix]
+  ): Cubehelix = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gamma")(gamma)
+    __obj.updateDynamic("lightness")(lightness)
+    __obj.updateDynamic("rotations")(rotations)
+    __obj.updateDynamic("scale")(scale)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Cubehelix]
+  }
+}
+

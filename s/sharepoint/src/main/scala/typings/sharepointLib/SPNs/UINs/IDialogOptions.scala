@@ -40,3 +40,42 @@ trait IDialogOptions extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IDialogOptions {
+  @scala.inline
+  def apply(
+    allowMaximize: js.UndefOr[scala.Boolean] = js.undefined,
+    args: js.Any = null,
+    autoSize: js.UndefOr[scala.Boolean] = js.undefined,
+    autoSizeStartWidth: scala.Int | scala.Double = null,
+    dialogReturnValueCallback: DialogReturnValueCallback = null,
+    height: scala.Int | scala.Double = null,
+    html: stdLib.HTMLElement = null,
+    includeScrollBarPadding: js.UndefOr[scala.Boolean] = js.undefined,
+    showClose: js.UndefOr[scala.Boolean] = js.undefined,
+    showMaximized: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    url: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): IDialogOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMaximize)) __obj.updateDynamic("allowMaximize")(allowMaximize)
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize)
+    if (autoSizeStartWidth != null) __obj.updateDynamic("autoSizeStartWidth")(autoSizeStartWidth.asInstanceOf[js.Any])
+    if (dialogReturnValueCallback != null) __obj.updateDynamic("dialogReturnValueCallback")(dialogReturnValueCallback)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (!js.isUndefined(includeScrollBarPadding)) __obj.updateDynamic("includeScrollBarPadding")(includeScrollBarPadding)
+    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose)
+    if (!js.isUndefined(showMaximized)) __obj.updateDynamic("showMaximized")(showMaximized)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDialogOptions]
+  }
+}
+

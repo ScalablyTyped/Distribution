@@ -15,3 +15,13 @@ trait TextContent extends js.Object {
   var textElements: js.UndefOr[js.Array[TextElement]] = js.undefined
 }
 
+object TextContent {
+  @scala.inline
+  def apply(lists: stdLib.Record[java.lang.String, List] = null, textElements: js.Array[TextElement] = null): TextContent = {
+    val __obj = js.Dynamic.literal()
+    if (lists != null) __obj.updateDynamic("lists")(lists)
+    if (textElements != null) __obj.updateDynamic("textElements")(textElements)
+    __obj.asInstanceOf[TextContent]
+  }
+}
+

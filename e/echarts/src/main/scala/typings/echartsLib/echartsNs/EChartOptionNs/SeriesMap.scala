@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map
   */
-trait SeriesMap extends js.Object {
+trait SeriesMap extends Series {
   /**
     * Used to scale aspect of geo.
     *
@@ -501,5 +501,80 @@ trait SeriesMap extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.zoom
     */
   var zoom: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesMap {
+  @scala.inline
+  def apply(
+    aspectScale: scala.Int | scala.Double = null,
+    bottom: scala.Double | java.lang.String = null,
+    boundingCoords: js.Array[_] = null,
+    center: js.Array[_] = null,
+    data: js.Array[scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesMapNs.DataObject] = null,
+    datasetIndex: scala.Int | scala.Double = null,
+    geoIndex: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_AreaColorEmphasis = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEmphasis = null,
+    layoutCenter: js.Array[_] = null,
+    layoutSize: scala.Double | java.lang.String = null,
+    left: scala.Double | java.lang.String = null,
+    map: java.lang.String = null,
+    mapValueCalculation: java.lang.String = null,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdData = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
+    name: java.lang.String = null,
+    nameMap: js.Object = null,
+    right: scala.Double | java.lang.String = null,
+    roam: scala.Boolean | java.lang.String = null,
+    scaleLimit: echartsLib.Anon_Max = null,
+    selectedMode: scala.Boolean | java.lang.String = null,
+    seriesLayoutBy: java.lang.String = null,
+    showLegendSymbol: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    top: scala.Double | java.lang.String = null,
+    `type`: java.lang.String = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null,
+    zoom: scala.Int | scala.Double = null
+  ): SeriesMap = {
+    val __obj = js.Dynamic.literal()
+    if (aspectScale != null) __obj.updateDynamic("aspectScale")(aspectScale.asInstanceOf[js.Any])
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (boundingCoords != null) __obj.updateDynamic("boundingCoords")(boundingCoords)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
+    if (geoIndex != null) __obj.updateDynamic("geoIndex")(geoIndex.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (layoutCenter != null) __obj.updateDynamic("layoutCenter")(layoutCenter)
+    if (layoutSize != null) __obj.updateDynamic("layoutSize")(layoutSize.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (mapValueCalculation != null) __obj.updateDynamic("mapValueCalculation")(mapValueCalculation)
+    if (markArea != null) __obj.updateDynamic("markArea")(markArea)
+    if (markLine != null) __obj.updateDynamic("markLine")(markLine)
+    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nameMap != null) __obj.updateDynamic("nameMap")(nameMap)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (roam != null) __obj.updateDynamic("roam")(roam.asInstanceOf[js.Any])
+    if (scaleLimit != null) __obj.updateDynamic("scaleLimit")(scaleLimit)
+    if (selectedMode != null) __obj.updateDynamic("selectedMode")(selectedMode.asInstanceOf[js.Any])
+    if (seriesLayoutBy != null) __obj.updateDynamic("seriesLayoutBy")(seriesLayoutBy)
+    if (!js.isUndefined(showLegendSymbol)) __obj.updateDynamic("showLegendSymbol")(showLegendSymbol)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesMap]
+  }
 }
 

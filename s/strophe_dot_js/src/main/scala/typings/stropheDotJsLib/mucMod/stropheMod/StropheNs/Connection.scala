@@ -9,3 +9,12 @@ trait Connection extends js.Object {
   var muc: stropheDotJsLib.mucMod.stropheMod.StropheNs.MUCNs.Plugin
 }
 
+object Connection {
+  @scala.inline
+  def apply(muc: stropheDotJsLib.mucMod.stropheMod.StropheNs.MUCNs.Plugin): Connection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("muc")(muc)
+    __obj.asInstanceOf[Connection]
+  }
+}
+

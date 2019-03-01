@@ -341,3 +341,133 @@ trait IgTextEditor
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgTextEditor {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTextEditor
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowNullValue: js.UndefOr[scala.Boolean] = js.undefined,
+    blur: BlurEvent = null,
+    buttonType: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    dropDownAnimationDuration: scala.Int | scala.Double = null,
+    dropDownAttachedToBody: js.UndefOr[scala.Boolean] = js.undefined,
+    dropDownItemSelected: DropDownItemSelectedEvent = null,
+    dropDownItemSelecting: DropDownItemSelectingEvent = null,
+    dropDownListClosed: DropDownListClosedEvent = null,
+    dropDownListClosing: DropDownListClosingEvent = null,
+    dropDownListOpened: DropDownListOpenedEvent = null,
+    dropDownListOpening: DropDownListOpeningEvent = null,
+    dropDownOnReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    dropDownOrientation: java.lang.String = null,
+    excludeKeys: java.lang.String = null,
+    focus: IgFocusEvent = null,
+    height: java.lang.String | scala.Double = null,
+    includeKeys: java.lang.String = null,
+    inputName: java.lang.String = null,
+    isLimitedToListValues: js.UndefOr[scala.Boolean] = js.undefined,
+    keydown: KeydownEvent = null,
+    keypress: KeypressEvent = null,
+    keyup: KeyupEvent = null,
+    language: java.lang.String = null,
+    listItemHoverDuration: scala.Int | scala.Double = null,
+    listItems: js.Array[_] = null,
+    listWidth: scala.Int | scala.Double = null,
+    locale: js.Any = null,
+    maxLength: scala.Int | scala.Double = null,
+    mousedown: MousedownEvent = null,
+    mousemove: MousemoveEvent = null,
+    mouseout: MouseoutEvent = null,
+    mouseover: MouseoverEvent = null,
+    mouseup: MouseupEvent = null,
+    nullValue: java.lang.String | scala.Double = null,
+    placeHolder: java.lang.String = null,
+    preventSubmitOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    regional: java.lang.String | js.Object = null,
+    rendered: RenderedEvent = null,
+    rendering: RenderingEvent = null,
+    revertIfNotValid: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionOnFocus: java.lang.String = null,
+    spinWrapAround: js.UndefOr[scala.Boolean] = js.undefined,
+    suppressKeyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    suppressNotifications: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null,
+    textAlign: java.lang.String = null,
+    textChanged: TextChangedEvent = null,
+    textMode: java.lang.String = null,
+    toLower: js.UndefOr[scala.Boolean] = js.undefined,
+    toUpper: js.UndefOr[scala.Boolean] = js.undefined,
+    validatorOptions: js.Any = null,
+    value: js.Any = null,
+    valueChanged: ValueChangedEvent = null,
+    valueChanging: ValueChangingEvent = null,
+    visibleItemsCount: scala.Int | scala.Double = null,
+    width: java.lang.String | scala.Double = null
+  ): IgTextEditor = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowNullValue)) __obj.updateDynamic("allowNullValue")(allowNullValue)
+    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (dropDownAnimationDuration != null) __obj.updateDynamic("dropDownAnimationDuration")(dropDownAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropDownAttachedToBody)) __obj.updateDynamic("dropDownAttachedToBody")(dropDownAttachedToBody)
+    if (dropDownItemSelected != null) __obj.updateDynamic("dropDownItemSelected")(dropDownItemSelected)
+    if (dropDownItemSelecting != null) __obj.updateDynamic("dropDownItemSelecting")(dropDownItemSelecting)
+    if (dropDownListClosed != null) __obj.updateDynamic("dropDownListClosed")(dropDownListClosed)
+    if (dropDownListClosing != null) __obj.updateDynamic("dropDownListClosing")(dropDownListClosing)
+    if (dropDownListOpened != null) __obj.updateDynamic("dropDownListOpened")(dropDownListOpened)
+    if (dropDownListOpening != null) __obj.updateDynamic("dropDownListOpening")(dropDownListOpening)
+    if (!js.isUndefined(dropDownOnReadOnly)) __obj.updateDynamic("dropDownOnReadOnly")(dropDownOnReadOnly)
+    if (dropDownOrientation != null) __obj.updateDynamic("dropDownOrientation")(dropDownOrientation)
+    if (excludeKeys != null) __obj.updateDynamic("excludeKeys")(excludeKeys)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (includeKeys != null) __obj.updateDynamic("includeKeys")(includeKeys)
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (!js.isUndefined(isLimitedToListValues)) __obj.updateDynamic("isLimitedToListValues")(isLimitedToListValues)
+    if (keydown != null) __obj.updateDynamic("keydown")(keydown)
+    if (keypress != null) __obj.updateDynamic("keypress")(keypress)
+    if (keyup != null) __obj.updateDynamic("keyup")(keyup)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (listItemHoverDuration != null) __obj.updateDynamic("listItemHoverDuration")(listItemHoverDuration.asInstanceOf[js.Any])
+    if (listItems != null) __obj.updateDynamic("listItems")(listItems)
+    if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (mousedown != null) __obj.updateDynamic("mousedown")(mousedown)
+    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
+    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
+    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (mouseup != null) __obj.updateDynamic("mouseup")(mouseup)
+    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
+    if (!js.isUndefined(preventSubmitOnEnter)) __obj.updateDynamic("preventSubmitOnEnter")(preventSubmitOnEnter)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (!js.isUndefined(revertIfNotValid)) __obj.updateDynamic("revertIfNotValid")(revertIfNotValid)
+    if (selectionOnFocus != null) __obj.updateDynamic("selectionOnFocus")(selectionOnFocus)
+    if (!js.isUndefined(spinWrapAround)) __obj.updateDynamic("spinWrapAround")(spinWrapAround)
+    if (!js.isUndefined(suppressKeyboard)) __obj.updateDynamic("suppressKeyboard")(suppressKeyboard)
+    if (!js.isUndefined(suppressNotifications)) __obj.updateDynamic("suppressNotifications")(suppressNotifications)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (textChanged != null) __obj.updateDynamic("textChanged")(textChanged)
+    if (textMode != null) __obj.updateDynamic("textMode")(textMode)
+    if (!js.isUndefined(toLower)) __obj.updateDynamic("toLower")(toLower)
+    if (!js.isUndefined(toUpper)) __obj.updateDynamic("toUpper")(toUpper)
+    if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (valueChanged != null) __obj.updateDynamic("valueChanged")(valueChanged)
+    if (valueChanging != null) __obj.updateDynamic("valueChanging")(valueChanging)
+    if (visibleItemsCount != null) __obj.updateDynamic("visibleItemsCount")(visibleItemsCount.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgTextEditor]
+  }
+}
+

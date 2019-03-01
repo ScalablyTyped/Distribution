@@ -29,3 +29,30 @@ trait ShareToUserConfig extends WxBaseMenuRequestConfig {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ShareToUserConfig {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[scala.Unit] = null,
+    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
+    desc: java.lang.String = null,
+    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
+    imgUrl: java.lang.String = null,
+    link: java.lang.String = null,
+    success: js.Function0[scala.Unit] = null,
+    title: java.lang.String = null,
+    trigger: js.Function0[scala.Unit] = null
+  ): ShareToUserConfig = {
+    val __obj = js.Dynamic.literal()
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (imgUrl != null) __obj.updateDynamic("imgUrl")(imgUrl)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    __obj.asInstanceOf[ShareToUserConfig]
+  }
+}
+

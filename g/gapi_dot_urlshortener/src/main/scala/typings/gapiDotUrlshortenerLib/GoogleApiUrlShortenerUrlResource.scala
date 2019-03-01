@@ -32,3 +32,24 @@ trait GoogleApiUrlShortenerUrlResource extends js.Object {
   var status: java.lang.String
 }
 
+object GoogleApiUrlShortenerUrlResource {
+  @scala.inline
+  def apply(
+    analytics: Anon_AllTime,
+    created: java.lang.String,
+    id: java.lang.String,
+    kind: java.lang.String,
+    longUrl: java.lang.String,
+    status: java.lang.String
+  ): GoogleApiUrlShortenerUrlResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("analytics")(analytics)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("longUrl")(longUrl)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[GoogleApiUrlShortenerUrlResource]
+  }
+}
+

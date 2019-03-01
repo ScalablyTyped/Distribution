@@ -21,3 +21,18 @@ trait DropOptions extends LoggingOptions {
   var cascade: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DropOptions {
+  @scala.inline
+  def apply(
+    benchmark: js.UndefOr[scala.Boolean] = js.undefined,
+    cascade: js.UndefOr[scala.Boolean] = js.undefined,
+    logging: scala.Boolean | js.Function = null
+  ): DropOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DropOptions]
+  }
+}
+

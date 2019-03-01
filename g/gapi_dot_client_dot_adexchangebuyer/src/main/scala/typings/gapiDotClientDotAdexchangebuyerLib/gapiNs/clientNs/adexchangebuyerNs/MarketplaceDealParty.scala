@@ -12,3 +12,13 @@ trait MarketplaceDealParty extends js.Object {
   var seller: js.UndefOr[Seller] = js.undefined
 }
 
+object MarketplaceDealParty {
+  @scala.inline
+  def apply(buyer: Buyer = null, seller: Seller = null): MarketplaceDealParty = {
+    val __obj = js.Dynamic.literal()
+    if (buyer != null) __obj.updateDynamic("buyer")(buyer)
+    if (seller != null) __obj.updateDynamic("seller")(seller)
+    __obj.asInstanceOf[MarketplaceDealParty]
+  }
+}
+

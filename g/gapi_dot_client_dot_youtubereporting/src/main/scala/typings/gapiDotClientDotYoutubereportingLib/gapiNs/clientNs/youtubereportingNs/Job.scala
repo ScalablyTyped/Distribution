@@ -29,3 +29,24 @@ trait Job extends js.Object {
   var systemManaged: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Job {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    expireTime: java.lang.String = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    reportTypeId: java.lang.String = null,
+    systemManaged: js.UndefOr[scala.Boolean] = js.undefined
+  ): Job = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (reportTypeId != null) __obj.updateDynamic("reportTypeId")(reportTypeId)
+    if (!js.isUndefined(systemManaged)) __obj.updateDynamic("systemManaged")(systemManaged)
+    __obj.asInstanceOf[Job]
+  }
+}
+

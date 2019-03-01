@@ -14,3 +14,24 @@ trait TestAttachment extends js.Object {
   var url: java.lang.String
 }
 
+object TestAttachment {
+  @scala.inline
+  def apply(
+    attachmentType: AttachmentType,
+    comment: java.lang.String,
+    createdDate: stdLib.Date,
+    fileName: java.lang.String,
+    id: scala.Double,
+    url: java.lang.String
+  ): TestAttachment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attachmentType")(attachmentType)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TestAttachment]
+  }
+}
+

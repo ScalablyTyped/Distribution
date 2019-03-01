@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait JSHandle extends js.Object {
+trait JSHandle extends SerializableOrJSHandle {
   /**
     * Returns a ElementHandle
     */
@@ -33,5 +33,26 @@ trait JSHandle extends js.Object {
     * @throws The method will throw if the referenced object is not stringifiable.
     */
   def jsonValue(): js.Promise[_]
+}
+
+object JSHandle {
+  @scala.inline
+  def apply(
+    asElement: js.Function0[ElementHandle[stdLib.Element] | scala.Null],
+    dispose: js.Function0[js.Promise[scala.Unit]],
+    executionContext: js.Function0[ExecutionContext],
+    getProperties: js.Function0[js.Promise[stdLib.Map[java.lang.String, JSHandle]]],
+    getProperty: js.Function1[java.lang.String, js.Promise[JSHandle]],
+    jsonValue: js.Function0[js.Promise[_]]
+  ): JSHandle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("asElement")(asElement)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("executionContext")(executionContext)
+    __obj.updateDynamic("getProperties")(getProperties)
+    __obj.updateDynamic("getProperty")(getProperty)
+    __obj.updateDynamic("jsonValue")(jsonValue)
+    __obj.asInstanceOf[JSHandle]
+  }
 }
 

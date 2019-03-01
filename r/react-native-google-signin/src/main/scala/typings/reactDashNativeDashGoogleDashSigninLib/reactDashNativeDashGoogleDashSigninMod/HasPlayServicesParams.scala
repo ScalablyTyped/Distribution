@@ -14,3 +14,12 @@ trait HasPlayServicesParams extends js.Object {
   var showPlayServicesUpdateDialog: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HasPlayServicesParams {
+  @scala.inline
+  def apply(showPlayServicesUpdateDialog: js.UndefOr[scala.Boolean] = js.undefined): HasPlayServicesParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showPlayServicesUpdateDialog)) __obj.updateDynamic("showPlayServicesUpdateDialog")(showPlayServicesUpdateDialog)
+    __obj.asInstanceOf[HasPlayServicesParams]
+  }
+}
+

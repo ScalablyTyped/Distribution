@@ -40,3 +40,28 @@ trait ApiResourceLocation extends js.Object {
   var routeTemplate: java.lang.String
 }
 
+object ApiResourceLocation {
+  @scala.inline
+  def apply(
+    area: java.lang.String,
+    id: java.lang.String,
+    maxVersion: java.lang.String,
+    minVersion: java.lang.String,
+    releasedVersion: java.lang.String,
+    resourceName: java.lang.String,
+    resourceVersion: scala.Double,
+    routeTemplate: java.lang.String
+  ): ApiResourceLocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("area")(area)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("maxVersion")(maxVersion)
+    __obj.updateDynamic("minVersion")(minVersion)
+    __obj.updateDynamic("releasedVersion")(releasedVersion)
+    __obj.updateDynamic("resourceName")(resourceName)
+    __obj.updateDynamic("resourceVersion")(resourceVersion)
+    __obj.updateDynamic("routeTemplate")(routeTemplate)
+    __obj.asInstanceOf[ApiResourceLocation]
+  }
+}
+

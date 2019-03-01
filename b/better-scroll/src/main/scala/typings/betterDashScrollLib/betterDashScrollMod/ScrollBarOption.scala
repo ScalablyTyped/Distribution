@@ -9,3 +9,12 @@ trait ScrollBarOption extends js.Object {
   var fade: scala.Boolean
 }
 
+object ScrollBarOption {
+  @scala.inline
+  def apply(fade: scala.Boolean): ScrollBarOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fade")(fade)
+    __obj.asInstanceOf[ScrollBarOption]
+  }
+}
+

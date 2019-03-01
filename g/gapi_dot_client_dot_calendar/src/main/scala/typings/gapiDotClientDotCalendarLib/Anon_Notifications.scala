@@ -12,3 +12,14 @@ trait Anon_Notifications extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Notifications {
+  @scala.inline
+  def apply(
+    notifications: js.Array[gapiDotClientDotCalendarLib.gapiNs.clientNs.calendarNs.CalendarNotification] = null
+  ): Anon_Notifications = {
+    val __obj = js.Dynamic.literal()
+    if (notifications != null) __obj.updateDynamic("notifications")(notifications)
+    __obj.asInstanceOf[Anon_Notifications]
+  }
+}
+

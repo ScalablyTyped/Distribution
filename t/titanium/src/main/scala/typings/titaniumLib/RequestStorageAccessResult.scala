@@ -23,3 +23,18 @@ trait RequestStorageAccessResult extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RequestStorageAccessResult {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    error: java.lang.String = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): RequestStorageAccessResult = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[RequestStorageAccessResult]
+  }
+}
+

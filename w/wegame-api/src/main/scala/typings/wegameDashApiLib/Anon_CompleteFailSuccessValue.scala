@@ -15,3 +15,20 @@ trait Anon_CompleteFailSuccessValue extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_CompleteFailSuccessValue {
+  @scala.inline
+  def apply(
+    value: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    success: js.Function0[scala.Unit] = null
+  ): Anon_CompleteFailSuccessValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_CompleteFailSuccessValue]
+  }
+}
+

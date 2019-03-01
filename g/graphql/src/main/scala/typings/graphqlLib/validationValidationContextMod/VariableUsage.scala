@@ -11,3 +11,17 @@ trait VariableUsage extends js.Object {
   val `type`: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLInputType]
 }
 
+object VariableUsage {
+  @scala.inline
+  def apply(
+    defaultValue: graphqlLib.tsutilsMaybeMod.Maybe[_],
+    node: graphqlLib.languageAstMod.VariableNode,
+    `type`: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLInputType]
+  ): VariableUsage = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[VariableUsage]
+  }
+}
+

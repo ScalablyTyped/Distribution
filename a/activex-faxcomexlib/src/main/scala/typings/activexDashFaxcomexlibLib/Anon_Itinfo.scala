@@ -11,3 +11,14 @@ trait Anon_Itinfo extends js.Object {
   var pptinfo: js.UndefOr[scala.Nothing]
 }
 
+object Anon_Itinfo {
+  @scala.inline
+  def apply(itinfo: scala.Double, lcid: scala.Double, pptinfo: js.UndefOr[scala.Nothing] = js.undefined): Anon_Itinfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("itinfo")(itinfo)
+    __obj.updateDynamic("lcid")(lcid)
+    if (!js.isUndefined(pptinfo)) __obj.updateDynamic("pptinfo")(pptinfo)
+    __obj.asInstanceOf[Anon_Itinfo]
+  }
+}
+

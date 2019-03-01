@@ -16,3 +16,24 @@ trait UserProfile extends js.Object {
   var userId: java.lang.String
 }
 
+object UserProfile {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    userId: java.lang.String,
+    imageData: java.lang.String = null,
+    status: scala.Int | scala.Double = null,
+    timestamp: scala.Int | scala.Double = null,
+    url: java.lang.String = null
+  ): UserProfile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("userId")(userId)
+    if (imageData != null) __obj.updateDynamic("imageData")(imageData)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[UserProfile]
+  }
+}
+

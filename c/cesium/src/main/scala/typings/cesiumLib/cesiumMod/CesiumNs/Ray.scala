@@ -10,3 +10,13 @@ trait Ray extends js.Object {
   var origin: Cartesian3
 }
 
+object Ray {
+  @scala.inline
+  def apply(direction: Cartesian3, origin: Cartesian3): Ray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("direction")(direction)
+    __obj.updateDynamic("origin")(origin)
+    __obj.asInstanceOf[Ray]
+  }
+}
+

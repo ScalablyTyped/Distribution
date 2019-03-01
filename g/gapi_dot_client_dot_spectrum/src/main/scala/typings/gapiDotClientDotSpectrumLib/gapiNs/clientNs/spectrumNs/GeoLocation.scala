@@ -22,3 +22,18 @@ trait GeoLocation extends js.Object {
   var region: js.UndefOr[GeoLocationPolygon] = js.undefined
 }
 
+object GeoLocation {
+  @scala.inline
+  def apply(
+    confidence: scala.Int | scala.Double = null,
+    point: GeoLocationEllipse = null,
+    region: GeoLocationPolygon = null
+  ): GeoLocation = {
+    val __obj = js.Dynamic.literal()
+    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (point != null) __obj.updateDynamic("point")(point)
+    if (region != null) __obj.updateDynamic("region")(region)
+    __obj.asInstanceOf[GeoLocation]
+  }
+}
+

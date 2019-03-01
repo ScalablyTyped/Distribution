@@ -13,3 +13,18 @@ trait ConnectOptions extends js.Object {
   var webSqlDbSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ConnectOptions {
+  @scala.inline
+  def apply(
+    onUpgrade: js.Function1[/* rawDb */ lovefieldLib.lovefieldMod.lfNs.rawNs.BackStore, js.Promise[scala.Unit]] = null,
+    storeType: DataStoreType = null,
+    webSqlDbSize: scala.Int | scala.Double = null
+  ): ConnectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (onUpgrade != null) __obj.updateDynamic("onUpgrade")(onUpgrade)
+    if (storeType != null) __obj.updateDynamic("storeType")(storeType)
+    if (webSqlDbSize != null) __obj.updateDynamic("webSqlDbSize")(webSqlDbSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectOptions]
+  }
+}
+

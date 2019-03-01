@@ -10,3 +10,13 @@ trait SparklinesCurveProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object SparklinesCurveProps {
+  @scala.inline
+  def apply(color: java.lang.String = null, style: reactLib.reactMod.ReactNs.CSSProperties = null): SparklinesCurveProps = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[SparklinesCurveProps]
+  }
+}
+

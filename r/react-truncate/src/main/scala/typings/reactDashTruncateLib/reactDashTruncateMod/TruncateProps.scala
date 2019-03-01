@@ -13,3 +13,22 @@ trait TruncateProps
   var trimWhitespace: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TruncateProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[Truncate] = null,
+    ellipsis: reactLib.reactMod.ReactNs.ReactNode = null,
+    lines: scala.Double | reactDashTruncateLib.reactDashTruncateLibNumbers.`false` = null,
+    onTruncate: js.Function1[/* isTruncated */ scala.Boolean, scala.Unit] = null,
+    trimWhitespace: js.UndefOr[scala.Boolean] = js.undefined
+  ): TruncateProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (onTruncate != null) __obj.updateDynamic("onTruncate")(onTruncate)
+    if (!js.isUndefined(trimWhitespace)) __obj.updateDynamic("trimWhitespace")(trimWhitespace)
+    __obj.asInstanceOf[TruncateProps]
+  }
+}
+

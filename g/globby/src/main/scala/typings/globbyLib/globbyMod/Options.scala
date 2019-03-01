@@ -35,3 +35,16 @@ import scala.scalajs.js.annotation._
   var gitignore: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    expandDirectories: globbyLib.ExpandDirectoriesOption = null,
+    gitignore: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (expandDirectories != null) __obj.updateDynamic("expandDirectories")(expandDirectories.asInstanceOf[js.Any])
+    if (!js.isUndefined(gitignore)) __obj.updateDynamic("gitignore")(gitignore)
+    __obj.asInstanceOf[Options]
+  }
+}
+

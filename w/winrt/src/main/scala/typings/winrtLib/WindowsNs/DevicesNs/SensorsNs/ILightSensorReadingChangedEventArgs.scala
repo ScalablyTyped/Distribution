@@ -9,3 +9,12 @@ trait ILightSensorReadingChangedEventArgs extends js.Object {
   var reading: LightSensorReading
 }
 
+object ILightSensorReadingChangedEventArgs {
+  @scala.inline
+  def apply(reading: LightSensorReading): ILightSensorReadingChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reading")(reading)
+    __obj.asInstanceOf[ILightSensorReadingChangedEventArgs]
+  }
+}
+

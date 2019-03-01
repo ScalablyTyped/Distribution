@@ -14,3 +14,18 @@ trait Anon_MapUniqueKey extends js.Object {
   var targetMapUniqueKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_MapUniqueKey {
+  @scala.inline
+  def apply(
+    mapUniqueKey: java.lang.String,
+    targetIndex: scala.Int | scala.Double = null,
+    targetMapUniqueKey: java.lang.String = null
+  ): Anon_MapUniqueKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
+    if (targetIndex != null) __obj.updateDynamic("targetIndex")(targetIndex.asInstanceOf[js.Any])
+    if (targetMapUniqueKey != null) __obj.updateDynamic("targetMapUniqueKey")(targetMapUniqueKey)
+    __obj.asInstanceOf[Anon_MapUniqueKey]
+  }
+}
+

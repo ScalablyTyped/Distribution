@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 object fbLibStrings {
   @js.native
-  sealed trait connected extends js.Object
+  sealed trait connected extends LoginStatus
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete extends ApiMethod
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get extends ApiMethod
   
   @js.native
-  sealed trait not_authorized extends js.Object
+  sealed trait not_authorized extends LoginStatus
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post extends ApiMethod
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown extends LoginStatus
   
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]

@@ -18,3 +18,22 @@ trait Vcard extends js.Object {
   var tel: js.UndefOr[VcardTelephone] = js.undefined
 }
 
+object Vcard {
+  @scala.inline
+  def apply(
+    adr: VcardAddress = null,
+    email: VcardTypedText = null,
+    fn: java.lang.String = null,
+    org: VcardTypedText = null,
+    tel: VcardTelephone = null
+  ): Vcard = {
+    val __obj = js.Dynamic.literal()
+    if (adr != null) __obj.updateDynamic("adr")(adr)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (fn != null) __obj.updateDynamic("fn")(fn)
+    if (org != null) __obj.updateDynamic("org")(org)
+    if (tel != null) __obj.updateDynamic("tel")(tel)
+    __obj.asInstanceOf[Vcard]
+  }
+}
+

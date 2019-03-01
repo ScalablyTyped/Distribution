@@ -17,3 +17,22 @@ trait User extends js.Object {
   def getIdentities(): js.Any
 }
 
+object User {
+  @scala.inline
+  def apply(
+    accessTokens: js.Any,
+    getIdentities: js.Function0[js.Any],
+    level: java.lang.String,
+    mobileServiceAuthenticationToken: java.lang.String,
+    userId: java.lang.String
+  ): User = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessTokens")(accessTokens)
+    __obj.updateDynamic("getIdentities")(getIdentities)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("mobileServiceAuthenticationToken")(mobileServiceAuthenticationToken)
+    __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[User]
+  }
+}
+

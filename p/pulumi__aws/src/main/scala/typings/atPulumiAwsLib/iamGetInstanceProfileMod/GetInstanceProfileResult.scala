@@ -37,3 +37,26 @@ trait GetInstanceProfileResult extends js.Object {
   val roleName: java.lang.String
 }
 
+object GetInstanceProfileResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    createDate: java.lang.String,
+    id: java.lang.String,
+    path: java.lang.String,
+    roleArn: java.lang.String,
+    roleId: java.lang.String,
+    roleName: java.lang.String
+  ): GetInstanceProfileResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("createDate")(createDate)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("roleArn")(roleArn)
+    __obj.updateDynamic("roleId")(roleId)
+    __obj.updateDynamic("roleName")(roleName)
+    __obj.asInstanceOf[GetInstanceProfileResult]
+  }
+}
+

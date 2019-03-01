@@ -12,3 +12,20 @@ trait CRLDistributionPoints extends js.Object {
   def toSchema(): js.Any
 }
 
+object CRLDistributionPoints {
+  @scala.inline
+  def apply(
+    distributionPoints: js.Array[pkijsLib.srcDistributionPointMod.default],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): CRLDistributionPoints = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("distributionPoints")(distributionPoints)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.asInstanceOf[CRLDistributionPoints]
+  }
+}
+

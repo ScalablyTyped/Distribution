@@ -48,3 +48,24 @@ trait IDialogOptions extends js.Object {
   var windowClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IDialogOptions {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    backdrop: scala.Boolean | java.lang.String = null,
+    backdropClass: java.lang.String = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    size: java.lang.String = null,
+    windowClass: java.lang.String = null
+  ): IDialogOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
+    if (backdropClass != null) __obj.updateDynamic("backdropClass")(backdropClass)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (windowClass != null) __obj.updateDynamic("windowClass")(windowClass)
+    __obj.asInstanceOf[IDialogOptions]
+  }
+}
+

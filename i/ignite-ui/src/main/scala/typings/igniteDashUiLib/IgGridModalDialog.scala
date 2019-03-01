@@ -85,3 +85,55 @@ trait IgGridModalDialog
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgGridModalDialog {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridModalDialog
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animationDuration: scala.Int | scala.Double = null,
+    buttonApplyDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    buttonCancelClick: ButtonCancelClickEvent = null,
+    buttonOKClick: ButtonOKClickEvent = null,
+    closeModalDialogOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    modalDialogClosed: ModalDialogClosedEvent = null,
+    modalDialogClosing: ModalDialogClosingEvent = null,
+    modalDialogContentsRendered: ModalDialogContentsRenderedEvent = null,
+    modalDialogContentsRendering: ModalDialogContentsRenderingEvent = null,
+    modalDialogHeight: scala.Int | scala.Double = null,
+    modalDialogMoving: ModalDialogMovingEvent = null,
+    modalDialogOpened: ModalDialogOpenedEvent = null,
+    modalDialogOpening: ModalDialogOpeningEvent = null,
+    modalDialogWidth: scala.Int | scala.Double = null,
+    regional: java.lang.String | js.Object = null,
+    renderFooterButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null
+  ): IgGridModalDialog = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(buttonApplyDisabled)) __obj.updateDynamic("buttonApplyDisabled")(buttonApplyDisabled)
+    if (buttonCancelClick != null) __obj.updateDynamic("buttonCancelClick")(buttonCancelClick)
+    if (buttonOKClick != null) __obj.updateDynamic("buttonOKClick")(buttonOKClick)
+    if (!js.isUndefined(closeModalDialogOnEnter)) __obj.updateDynamic("closeModalDialogOnEnter")(closeModalDialogOnEnter)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (modalDialogClosed != null) __obj.updateDynamic("modalDialogClosed")(modalDialogClosed)
+    if (modalDialogClosing != null) __obj.updateDynamic("modalDialogClosing")(modalDialogClosing)
+    if (modalDialogContentsRendered != null) __obj.updateDynamic("modalDialogContentsRendered")(modalDialogContentsRendered)
+    if (modalDialogContentsRendering != null) __obj.updateDynamic("modalDialogContentsRendering")(modalDialogContentsRendering)
+    if (modalDialogHeight != null) __obj.updateDynamic("modalDialogHeight")(modalDialogHeight.asInstanceOf[js.Any])
+    if (modalDialogMoving != null) __obj.updateDynamic("modalDialogMoving")(modalDialogMoving)
+    if (modalDialogOpened != null) __obj.updateDynamic("modalDialogOpened")(modalDialogOpened)
+    if (modalDialogOpening != null) __obj.updateDynamic("modalDialogOpening")(modalDialogOpening)
+    if (modalDialogWidth != null) __obj.updateDynamic("modalDialogWidth")(modalDialogWidth.asInstanceOf[js.Any])
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderFooterButtons)) __obj.updateDynamic("renderFooterButtons")(renderFooterButtons)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgGridModalDialog]
+  }
+}
+

@@ -16,3 +16,20 @@ trait ListDataPointChangesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListDataPointChangesResponse {
+  @scala.inline
+  def apply(
+    dataSourceId: java.lang.String = null,
+    deletedDataPoint: js.Array[DataPoint] = null,
+    insertedDataPoint: js.Array[DataPoint] = null,
+    nextPageToken: java.lang.String = null
+  ): ListDataPointChangesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId)
+    if (deletedDataPoint != null) __obj.updateDynamic("deletedDataPoint")(deletedDataPoint)
+    if (insertedDataPoint != null) __obj.updateDynamic("insertedDataPoint")(insertedDataPoint)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListDataPointChangesResponse]
+  }
+}
+

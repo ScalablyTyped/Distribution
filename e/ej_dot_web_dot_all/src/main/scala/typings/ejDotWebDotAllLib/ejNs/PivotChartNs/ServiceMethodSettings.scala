@@ -24,3 +24,20 @@ trait ServiceMethodSettings extends js.Object {
   var paging: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServiceMethodSettings {
+  @scala.inline
+  def apply(
+    drillDown: java.lang.String = null,
+    exportPivotChart: java.lang.String = null,
+    initialize: java.lang.String = null,
+    paging: java.lang.String = null
+  ): ServiceMethodSettings = {
+    val __obj = js.Dynamic.literal()
+    if (drillDown != null) __obj.updateDynamic("drillDown")(drillDown)
+    if (exportPivotChart != null) __obj.updateDynamic("exportPivotChart")(exportPivotChart)
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (paging != null) __obj.updateDynamic("paging")(paging)
+    __obj.asInstanceOf[ServiceMethodSettings]
+  }
+}
+

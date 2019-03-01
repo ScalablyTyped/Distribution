@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashPushDashNotificationLibStrings {
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.RepeatType
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.PriorityType
   
   @js.native
-  sealed trait high extends js.Object
+  sealed trait high
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.PriorityType
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait hour
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.RepeatType
   
   @js.native
-  sealed trait low extends js.Object
+  sealed trait low
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.PriorityType
   
   @js.native
-  sealed trait max extends js.Object
+  sealed trait max
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.PriorityType
   
   @js.native
-  sealed trait min extends js.Object
+  sealed trait min
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.PriorityType
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait minute
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.RepeatType
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.RepeatType
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week
+    extends reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationMod.RepeatType
   
   @scala.inline
   def day: day = "day".asInstanceOf[day]

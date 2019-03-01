@@ -24,3 +24,20 @@ trait _Impl extends js.Object {
   var readOnly: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    checked: java.lang.String,
+    disabled: java.lang.String,
+    radio: java.lang.String,
+    readOnly: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checked")(checked)
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("radio")(radio)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

@@ -20,3 +20,20 @@ trait AjaxLoadEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AjaxLoadEventArgs {
+  @scala.inline
+  def apply(
+    URL: java.lang.String = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    `type`: java.lang.String = null
+  ): AjaxLoadEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (URL != null) __obj.updateDynamic("URL")(URL)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AjaxLoadEventArgs]
+  }
+}
+

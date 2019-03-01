@@ -20,3 +20,13 @@ trait GoogleDatastoreAdminV1beta1EntityFilter extends js.Object {
   var namespaceIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object GoogleDatastoreAdminV1beta1EntityFilter {
+  @scala.inline
+  def apply(kinds: js.Array[java.lang.String] = null, namespaceIds: js.Array[java.lang.String] = null): GoogleDatastoreAdminV1beta1EntityFilter = {
+    val __obj = js.Dynamic.literal()
+    if (kinds != null) __obj.updateDynamic("kinds")(kinds)
+    if (namespaceIds != null) __obj.updateDynamic("namespaceIds")(namespaceIds)
+    __obj.asInstanceOf[GoogleDatastoreAdminV1beta1EntityFilter]
+  }
+}
+

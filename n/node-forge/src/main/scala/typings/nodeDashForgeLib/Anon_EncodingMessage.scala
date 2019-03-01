@@ -12,3 +12,20 @@ trait Anon_EncodingMessage extends js.Object {
   var signature: nodeLib.Buffer | stdLib.Uint8Array | nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer | java.lang.String
 }
 
+object Anon_EncodingMessage {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String,
+    message: java.lang.String,
+    publicKey: nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer,
+    signature: nodeLib.Buffer | stdLib.Uint8Array | nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer | java.lang.String
+  ): Anon_EncodingMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encoding")(encoding)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_EncodingMessage]
+  }
+}
+

@@ -169,3 +169,88 @@ trait XSlideShowController extends js.Object {
   def stopSound(): scala.Unit
 }
 
+object XSlideShowController {
+  @scala.inline
+  def apply(
+    AlwaysOnTop: scala.Boolean,
+    CurrentSlide: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage,
+    CurrentSlideIndex: scala.Double,
+    MouseVisible: scala.Boolean,
+    NextSlideIndex: scala.Double,
+    PenColor: scala.Double,
+    PenWidth: scala.Double,
+    SlideCount: scala.Double,
+    SlideShow: XSlideShow,
+    UsePen: scala.Boolean,
+    activate: js.Function0[scala.Unit],
+    addSlideShowListener: js.Function1[XSlideShowListener, scala.Unit],
+    blankScreen: js.Function1[scala.Double, scala.Unit],
+    deactivate: js.Function0[scala.Unit],
+    getCurrentSlide: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage],
+    getCurrentSlideIndex: js.Function0[scala.Double],
+    getNextSlideIndex: js.Function0[scala.Double],
+    getSlideByIndex: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage],
+    getSlideCount: js.Function0[scala.Double],
+    getSlideShow: js.Function0[XSlideShow],
+    gotoBookmark: js.Function1[java.lang.String, scala.Unit],
+    gotoFirstSlide: js.Function0[scala.Unit],
+    gotoLastSlide: js.Function0[scala.Unit],
+    gotoNextEffect: js.Function0[scala.Unit],
+    gotoNextSlide: js.Function0[scala.Unit],
+    gotoPreviousEffect: js.Function0[scala.Unit],
+    gotoPreviousSlide: js.Function0[scala.Unit],
+    gotoSlide: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage, scala.Unit],
+    gotoSlideIndex: js.Function1[scala.Double, scala.Unit],
+    isActive: js.Function0[scala.Boolean],
+    isEndless: js.Function0[scala.Boolean],
+    isFullScreen: js.Function0[scala.Boolean],
+    isPaused: js.Function0[scala.Boolean],
+    isRunning: js.Function0[scala.Boolean],
+    pause: js.Function0[scala.Unit],
+    removeSlideShowListener: js.Function1[XSlideShowListener, scala.Unit],
+    resume: js.Function0[scala.Unit],
+    stopSound: js.Function0[scala.Unit]
+  ): XSlideShowController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AlwaysOnTop")(AlwaysOnTop)
+    __obj.updateDynamic("CurrentSlide")(CurrentSlide)
+    __obj.updateDynamic("CurrentSlideIndex")(CurrentSlideIndex)
+    __obj.updateDynamic("MouseVisible")(MouseVisible)
+    __obj.updateDynamic("NextSlideIndex")(NextSlideIndex)
+    __obj.updateDynamic("PenColor")(PenColor)
+    __obj.updateDynamic("PenWidth")(PenWidth)
+    __obj.updateDynamic("SlideCount")(SlideCount)
+    __obj.updateDynamic("SlideShow")(SlideShow)
+    __obj.updateDynamic("UsePen")(UsePen)
+    __obj.updateDynamic("activate")(activate)
+    __obj.updateDynamic("addSlideShowListener")(addSlideShowListener)
+    __obj.updateDynamic("blankScreen")(blankScreen)
+    __obj.updateDynamic("deactivate")(deactivate)
+    __obj.updateDynamic("getCurrentSlide")(getCurrentSlide)
+    __obj.updateDynamic("getCurrentSlideIndex")(getCurrentSlideIndex)
+    __obj.updateDynamic("getNextSlideIndex")(getNextSlideIndex)
+    __obj.updateDynamic("getSlideByIndex")(getSlideByIndex)
+    __obj.updateDynamic("getSlideCount")(getSlideCount)
+    __obj.updateDynamic("getSlideShow")(getSlideShow)
+    __obj.updateDynamic("gotoBookmark")(gotoBookmark)
+    __obj.updateDynamic("gotoFirstSlide")(gotoFirstSlide)
+    __obj.updateDynamic("gotoLastSlide")(gotoLastSlide)
+    __obj.updateDynamic("gotoNextEffect")(gotoNextEffect)
+    __obj.updateDynamic("gotoNextSlide")(gotoNextSlide)
+    __obj.updateDynamic("gotoPreviousEffect")(gotoPreviousEffect)
+    __obj.updateDynamic("gotoPreviousSlide")(gotoPreviousSlide)
+    __obj.updateDynamic("gotoSlide")(gotoSlide)
+    __obj.updateDynamic("gotoSlideIndex")(gotoSlideIndex)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("isEndless")(isEndless)
+    __obj.updateDynamic("isFullScreen")(isFullScreen)
+    __obj.updateDynamic("isPaused")(isPaused)
+    __obj.updateDynamic("isRunning")(isRunning)
+    __obj.updateDynamic("pause")(pause)
+    __obj.updateDynamic("removeSlideShowListener")(removeSlideShowListener)
+    __obj.updateDynamic("resume")(resume)
+    __obj.updateDynamic("stopSound")(stopSound)
+    __obj.asInstanceOf[XSlideShowController]
+  }
+}
+

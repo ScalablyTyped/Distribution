@@ -28,3 +28,22 @@ trait ILogLevel extends js.Object {
   var warn: workboxDashSwLib.workboxDashSwLibNumbers.`2`
 }
 
+object ILogLevel {
+  @scala.inline
+  def apply(
+    debug: workboxDashSwLib.workboxDashSwLibNumbers.`0`,
+    error: workboxDashSwLib.workboxDashSwLibNumbers.`3`,
+    log: workboxDashSwLib.workboxDashSwLibNumbers.`1`,
+    silent: workboxDashSwLib.workboxDashSwLibNumbers.`4`,
+    warn: workboxDashSwLib.workboxDashSwLibNumbers.`2`
+  ): ILogLevel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("warn")(warn)
+    __obj.asInstanceOf[ILogLevel]
+  }
+}
+

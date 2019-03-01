@@ -12,3 +12,20 @@ trait Anon_Color extends js.Object {
   var styles: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
 }
 
+object Anon_Color {
+  @scala.inline
+  def apply(
+    colors: org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Tuple2[scala.Double, scala.Double]]],
+    custom: js.Symbol,
+    defaultOptions: nodeLib.utilMod.InspectOptions,
+    styles: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+  ): Anon_Color = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("colors")(colors)
+    __obj.updateDynamic("custom")(custom)
+    __obj.updateDynamic("defaultOptions")(defaultOptions)
+    __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[Anon_Color]
+  }
+}
+

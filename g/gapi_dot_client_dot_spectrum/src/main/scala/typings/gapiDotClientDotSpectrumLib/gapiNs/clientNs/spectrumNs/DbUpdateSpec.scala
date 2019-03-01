@@ -13,3 +13,12 @@ trait DbUpdateSpec extends js.Object {
   var databases: js.UndefOr[js.Array[DatabaseSpec]] = js.undefined
 }
 
+object DbUpdateSpec {
+  @scala.inline
+  def apply(databases: js.Array[DatabaseSpec] = null): DbUpdateSpec = {
+    val __obj = js.Dynamic.literal()
+    if (databases != null) __obj.updateDynamic("databases")(databases)
+    __obj.asInstanceOf[DbUpdateSpec]
+  }
+}
+

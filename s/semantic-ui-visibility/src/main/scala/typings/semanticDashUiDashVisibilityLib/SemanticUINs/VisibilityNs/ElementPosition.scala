@@ -12,3 +12,20 @@ trait ElementPosition extends js.Object {
   var width: scala.Double
 }
 
+object ElementPosition {
+  @scala.inline
+  def apply(
+    fits: scala.Boolean,
+    height: scala.Double,
+    offset: jqueryLib.JQueryCoordinates,
+    width: scala.Double
+  ): ElementPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fits")(fits)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ElementPosition]
+  }
+}
+

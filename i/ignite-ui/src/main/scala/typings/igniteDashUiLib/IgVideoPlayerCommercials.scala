@@ -37,3 +37,27 @@ trait IgVideoPlayerCommercials
   var showBookmarks: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgVideoPlayerCommercials {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgVideoPlayerCommercials
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    adMessage: IgVideoPlayerCommercialsAdMessage = null,
+    alwaysPlayCommercials: js.UndefOr[scala.Boolean] = js.undefined,
+    embeddedCommercials: js.Array[IgVideoPlayerCommercialsEmbeddedCommercial] = null,
+    linkedCommercials: js.Array[IgVideoPlayerCommercialsLinkedCommercial] = null,
+    showBookmarks: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgVideoPlayerCommercials = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (adMessage != null) __obj.updateDynamic("adMessage")(adMessage)
+    if (!js.isUndefined(alwaysPlayCommercials)) __obj.updateDynamic("alwaysPlayCommercials")(alwaysPlayCommercials)
+    if (embeddedCommercials != null) __obj.updateDynamic("embeddedCommercials")(embeddedCommercials)
+    if (linkedCommercials != null) __obj.updateDynamic("linkedCommercials")(linkedCommercials)
+    if (!js.isUndefined(showBookmarks)) __obj.updateDynamic("showBookmarks")(showBookmarks)
+    __obj.asInstanceOf[IgVideoPlayerCommercials]
+  }
+}
+

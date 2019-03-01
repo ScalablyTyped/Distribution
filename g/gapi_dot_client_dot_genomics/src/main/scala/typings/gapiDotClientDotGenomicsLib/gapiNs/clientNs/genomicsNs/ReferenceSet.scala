@@ -42,3 +42,28 @@ trait ReferenceSet extends js.Object {
   var sourceUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReferenceSet {
+  @scala.inline
+  def apply(
+    assemblyId: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    md5checksum: java.lang.String = null,
+    ncbiTaxonId: scala.Int | scala.Double = null,
+    referenceIds: js.Array[java.lang.String] = null,
+    sourceAccessions: js.Array[java.lang.String] = null,
+    sourceUri: java.lang.String = null
+  ): ReferenceSet = {
+    val __obj = js.Dynamic.literal()
+    if (assemblyId != null) __obj.updateDynamic("assemblyId")(assemblyId)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (md5checksum != null) __obj.updateDynamic("md5checksum")(md5checksum)
+    if (ncbiTaxonId != null) __obj.updateDynamic("ncbiTaxonId")(ncbiTaxonId.asInstanceOf[js.Any])
+    if (referenceIds != null) __obj.updateDynamic("referenceIds")(referenceIds)
+    if (sourceAccessions != null) __obj.updateDynamic("sourceAccessions")(sourceAccessions)
+    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri)
+    __obj.asInstanceOf[ReferenceSet]
+  }
+}
+

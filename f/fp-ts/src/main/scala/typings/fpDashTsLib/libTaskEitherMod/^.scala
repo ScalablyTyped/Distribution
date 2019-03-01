@@ -30,7 +30,7 @@ object ^ extends js.Object {
   def getApplyMonoid[L, A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libTaskEitherMod.TaskEither[L, A]] = js.native
   def getApplySemigroup[L, A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTaskEitherMod.TaskEither[L, A]] = js.native
   def getSemigroup[L, A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTaskEitherMod.TaskEither[L, A]] = js.native
-  def left[L, A](fa: fpDashTsLib.libTaskMod.Task[L]): fpDashTsLib.libTaskEitherMod.TaskEither[L, A] = js.native
+  def left[L, A](fl: fpDashTsLib.libTaskMod.Task[L]): fpDashTsLib.libTaskEitherMod.TaskEither[L, A] = js.native
   def right[L, A](fa: fpDashTsLib.libTaskMod.Task[A]): fpDashTsLib.libTaskEitherMod.TaskEither[L, A] = js.native
   def taskify[L, R](
     f: js.Function1[

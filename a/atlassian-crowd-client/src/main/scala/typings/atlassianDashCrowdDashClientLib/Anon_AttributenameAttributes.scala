@@ -14,3 +14,25 @@ trait Anon_AttributenameAttributes extends js.Object {
   ): js.Promise[atlassianDashCrowdDashClientLib.libModelsAttributesMod.namespaced]
 }
 
+object Anon_AttributenameAttributes {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      java.lang.String, 
+      js.Promise[atlassianDashCrowdDashClientLib.libModelsAttributesMod.namespaced]
+    ],
+    remove: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]],
+    set: js.Function2[
+      java.lang.String, 
+      atlassianDashCrowdDashClientLib.libModelsAttributesMod.namespaced, 
+      js.Promise[atlassianDashCrowdDashClientLib.libModelsAttributesMod.namespaced]
+    ]
+  ): Anon_AttributenameAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[Anon_AttributenameAttributes]
+  }
+}
+

@@ -11,3 +11,18 @@ trait ArcGaugeColor extends js.Object {
   var to: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ArcGaugeColor {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    from: scala.Int | scala.Double = null,
+    to: scala.Int | scala.Double = null
+  ): ArcGaugeColor = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ArcGaugeColor]
+  }
+}
+

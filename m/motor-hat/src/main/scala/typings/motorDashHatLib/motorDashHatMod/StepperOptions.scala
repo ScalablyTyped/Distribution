@@ -49,3 +49,32 @@ trait StepperOptions extends js.Object {
   ] = js.undefined
 }
 
+object StepperOptions {
+  @scala.inline
+  def apply(
+    pins: motorDashHatLib.Anon_W1,
+    pwm: js.Object,
+    current: scala.Int | scala.Double = null,
+    frequency: scala.Int | scala.Double = null,
+    microsteps: motorDashHatLib.motorDashHatLibNumbers.`8` | motorDashHatLib.motorDashHatLibNumbers.`16` = null,
+    pps: scala.Int | scala.Double = null,
+    rpm: scala.Int | scala.Double = null,
+    sps: scala.Int | scala.Double = null,
+    steps: scala.Int | scala.Double = null,
+    style: motorDashHatLib.motorDashHatLibStrings.single | motorDashHatLib.motorDashHatLibStrings.double | motorDashHatLib.motorDashHatLibStrings.interleaved | motorDashHatLib.motorDashHatLibStrings.microstep = null
+  ): StepperOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pins")(pins)
+    __obj.updateDynamic("pwm")(pwm)
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
+    if (microsteps != null) __obj.updateDynamic("microsteps")(microsteps.asInstanceOf[js.Any])
+    if (pps != null) __obj.updateDynamic("pps")(pps.asInstanceOf[js.Any])
+    if (rpm != null) __obj.updateDynamic("rpm")(rpm.asInstanceOf[js.Any])
+    if (sps != null) __obj.updateDynamic("sps")(sps.asInstanceOf[js.Any])
+    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StepperOptions]
+  }
+}
+

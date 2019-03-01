@@ -15,3 +15,24 @@ trait ValidatorOptions extends js.Object {
   var min: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ValidatorOptions {
+  @scala.inline
+  def apply(
+    converter: atOracleOraclejetLib.ojvalidationDashNumberMod.NumberConverter = null,
+    hint: atOracleOraclejetLib.Anon_ExactInRange = null,
+    max: scala.Int | scala.Double = null,
+    messageDetail: atOracleOraclejetLib.Anon_ExactRangeOverflowRangeUnderflow = null,
+    messageSummary: atOracleOraclejetLib.Anon_RangeOverflowRangeUnderflow = null,
+    min: scala.Int | scala.Double = null
+  ): ValidatorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (converter != null) __obj.updateDynamic("converter")(converter)
+    if (hint != null) __obj.updateDynamic("hint")(hint)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)
+    if (messageSummary != null) __obj.updateDynamic("messageSummary")(messageSummary)
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValidatorOptions]
+  }
+}
+

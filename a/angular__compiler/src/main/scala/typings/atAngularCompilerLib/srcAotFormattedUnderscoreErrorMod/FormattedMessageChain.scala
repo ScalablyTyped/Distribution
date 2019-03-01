@@ -11,3 +11,14 @@ trait FormattedMessageChain extends js.Object {
   var position: js.UndefOr[Position] = js.undefined
 }
 
+object FormattedMessageChain {
+  @scala.inline
+  def apply(message: java.lang.String, next: FormattedMessageChain = null, position: Position = null): FormattedMessageChain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[FormattedMessageChain]
+  }
+}
+

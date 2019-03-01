@@ -11,3 +11,18 @@ trait UploadValidation extends js.Object {
   var minFileSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object UploadValidation {
+  @scala.inline
+  def apply(
+    allowedExtensions: js.Any = null,
+    maxFileSize: scala.Int | scala.Double = null,
+    minFileSize: scala.Int | scala.Double = null
+  ): UploadValidation = {
+    val __obj = js.Dynamic.literal()
+    if (allowedExtensions != null) __obj.updateDynamic("allowedExtensions")(allowedExtensions)
+    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
+    if (minFileSize != null) __obj.updateDynamic("minFileSize")(minFileSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UploadValidation]
+  }
+}
+

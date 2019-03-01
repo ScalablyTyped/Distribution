@@ -52,3 +52,36 @@ trait Legend extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Legend {
+  @scala.inline
+  def apply(
+    alignment: LegendAlignment | java.lang.String = null,
+    border: LegendBorder = null,
+    fill: java.lang.String = null,
+    font: LegendFont = null,
+    itemPadding: scala.Int | scala.Double = null,
+    itemStyle: LegendItemStyle = null,
+    opacity: scala.Int | scala.Double = null,
+    position: LegendPosition | java.lang.String = null,
+    shape: LegendShape | java.lang.String = null,
+    size: LegendSize = null,
+    toggleVisibility: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): Legend = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (itemPadding != null) __obj.updateDynamic("itemPadding")(itemPadding.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(toggleVisibility)) __obj.updateDynamic("toggleVisibility")(toggleVisibility)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[Legend]
+  }
+}
+

@@ -158,3 +158,54 @@ trait ChartDataLabelLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartDataLabelLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    autoText: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartDataLabelFormatLoadOptions = null,
+    formula: js.UndefOr[scala.Boolean] = js.undefined,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    left: js.UndefOr[scala.Boolean] = js.undefined,
+    numberFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    position: js.UndefOr[scala.Boolean] = js.undefined,
+    separator: js.UndefOr[scala.Boolean] = js.undefined,
+    showBubbleSize: js.UndefOr[scala.Boolean] = js.undefined,
+    showCategoryName: js.UndefOr[scala.Boolean] = js.undefined,
+    showLegendKey: js.UndefOr[scala.Boolean] = js.undefined,
+    showPercentage: js.UndefOr[scala.Boolean] = js.undefined,
+    showSeriesName: js.UndefOr[scala.Boolean] = js.undefined,
+    showValue: js.UndefOr[scala.Boolean] = js.undefined,
+    text: js.UndefOr[scala.Boolean] = js.undefined,
+    textOrientation: js.UndefOr[scala.Boolean] = js.undefined,
+    top: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartDataLabelLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(formula)) __obj.updateDynamic("formula")(formula)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(showBubbleSize)) __obj.updateDynamic("showBubbleSize")(showBubbleSize)
+    if (!js.isUndefined(showCategoryName)) __obj.updateDynamic("showCategoryName")(showCategoryName)
+    if (!js.isUndefined(showLegendKey)) __obj.updateDynamic("showLegendKey")(showLegendKey)
+    if (!js.isUndefined(showPercentage)) __obj.updateDynamic("showPercentage")(showPercentage)
+    if (!js.isUndefined(showSeriesName)) __obj.updateDynamic("showSeriesName")(showSeriesName)
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation)
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ChartDataLabelLoadOptions]
+  }
+}
+

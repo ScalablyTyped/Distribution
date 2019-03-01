@@ -27,3 +27,38 @@ trait VRExperienceHelperOptions extends WebVROptions {
   var laserToggle: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object VRExperienceHelperOptions {
+  @scala.inline
+  def apply(
+    controllerMeshes: js.UndefOr[scala.Boolean] = js.undefined,
+    createDeviceOrientationCamera: js.UndefOr[scala.Boolean] = js.undefined,
+    createFallbackVRDeviceOrientationFreeCamera: js.UndefOr[scala.Boolean] = js.undefined,
+    customVRButton: stdLib.HTMLButtonElement = null,
+    defaultHeight: scala.Int | scala.Double = null,
+    defaultLightingOnControllers: js.UndefOr[scala.Boolean] = js.undefined,
+    displayName: java.lang.String = null,
+    floorMeshes: js.Array[Mesh] = null,
+    laserToggle: js.UndefOr[scala.Boolean] = js.undefined,
+    positionScale: scala.Int | scala.Double = null,
+    rayLength: scala.Int | scala.Double = null,
+    trackPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    useCustomVRButton: js.UndefOr[scala.Boolean] = js.undefined
+  ): VRExperienceHelperOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(controllerMeshes)) __obj.updateDynamic("controllerMeshes")(controllerMeshes)
+    if (!js.isUndefined(createDeviceOrientationCamera)) __obj.updateDynamic("createDeviceOrientationCamera")(createDeviceOrientationCamera)
+    if (!js.isUndefined(createFallbackVRDeviceOrientationFreeCamera)) __obj.updateDynamic("createFallbackVRDeviceOrientationFreeCamera")(createFallbackVRDeviceOrientationFreeCamera)
+    if (customVRButton != null) __obj.updateDynamic("customVRButton")(customVRButton)
+    if (defaultHeight != null) __obj.updateDynamic("defaultHeight")(defaultHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultLightingOnControllers)) __obj.updateDynamic("defaultLightingOnControllers")(defaultLightingOnControllers)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (floorMeshes != null) __obj.updateDynamic("floorMeshes")(floorMeshes)
+    if (!js.isUndefined(laserToggle)) __obj.updateDynamic("laserToggle")(laserToggle)
+    if (positionScale != null) __obj.updateDynamic("positionScale")(positionScale.asInstanceOf[js.Any])
+    if (rayLength != null) __obj.updateDynamic("rayLength")(rayLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackPosition)) __obj.updateDynamic("trackPosition")(trackPosition)
+    if (!js.isUndefined(useCustomVRButton)) __obj.updateDynamic("useCustomVRButton")(useCustomVRButton)
+    __obj.asInstanceOf[VRExperienceHelperOptions]
+  }
+}
+

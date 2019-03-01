@@ -32,3 +32,24 @@ trait CloneOptions extends js.Object {
   var relatedLinkComment: java.lang.String
 }
 
+object CloneOptions {
+  @scala.inline
+  def apply(
+    cloneRequirements: scala.Boolean,
+    copyAllSuites: scala.Boolean,
+    copyAncestorHierarchy: scala.Boolean,
+    destinationWorkItemType: java.lang.String,
+    overrideParameters: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    relatedLinkComment: java.lang.String
+  ): CloneOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cloneRequirements")(cloneRequirements)
+    __obj.updateDynamic("copyAllSuites")(copyAllSuites)
+    __obj.updateDynamic("copyAncestorHierarchy")(copyAncestorHierarchy)
+    __obj.updateDynamic("destinationWorkItemType")(destinationWorkItemType)
+    __obj.updateDynamic("overrideParameters")(overrideParameters)
+    __obj.updateDynamic("relatedLinkComment")(relatedLinkComment)
+    __obj.asInstanceOf[CloneOptions]
+  }
+}
+

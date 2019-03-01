@@ -9,3 +9,12 @@ trait Anon_WeekNumber extends js.Object {
   var weekNumber: java.lang.String
 }
 
+object Anon_WeekNumber {
+  @scala.inline
+  def apply(weekNumber: java.lang.String): Anon_WeekNumber = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("weekNumber")(weekNumber)
+    __obj.asInstanceOf[Anon_WeekNumber]
+  }
+}
+

@@ -20,3 +20,14 @@ trait GoogleApiYouTubePageInfo[T] extends js.Object {
   var kind: java.lang.String
 }
 
+object GoogleApiYouTubePageInfo {
+  @scala.inline
+  def apply[T](etag: java.lang.String, items: js.Array[T], kind: java.lang.String): GoogleApiYouTubePageInfo[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[GoogleApiYouTubePageInfo[T]]
+  }
+}
+

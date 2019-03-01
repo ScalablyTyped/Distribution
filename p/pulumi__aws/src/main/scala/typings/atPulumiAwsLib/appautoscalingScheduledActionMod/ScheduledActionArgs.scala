@@ -40,3 +40,28 @@ trait ScheduledActionArgs extends js.Object {
   val startTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ScheduledActionArgs {
+  @scala.inline
+  def apply(
+    resourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    serviceNamespace: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    endTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    scalableDimension: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    scalableTargetAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MaxCapacityMinCapacity] = null,
+    schedule: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    startTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ScheduledActionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    __obj.updateDynamic("serviceNamespace")(serviceNamespace.asInstanceOf[js.Any])
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (scalableDimension != null) __obj.updateDynamic("scalableDimension")(scalableDimension.asInstanceOf[js.Any])
+    if (scalableTargetAction != null) __obj.updateDynamic("scalableTargetAction")(scalableTargetAction.asInstanceOf[js.Any])
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScheduledActionArgs]
+  }
+}
+

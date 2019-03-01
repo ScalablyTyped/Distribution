@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait MessagePort extends EventTarget {
+trait MessagePort
+  extends EventTarget
+     with _MessageEventSource
+     with _Transferable {
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | scala.Null = js.native
   var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | scala.Null = js.native
   @JSName("addEventListener")

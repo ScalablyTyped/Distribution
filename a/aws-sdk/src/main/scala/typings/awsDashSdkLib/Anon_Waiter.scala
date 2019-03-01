@@ -10,3 +10,12 @@ trait Anon_Waiter extends js.Object {
   var $waiter: js.UndefOr[awsDashSdkLib.libServiceMod.WaiterConfiguration] = js.undefined
 }
 
+object Anon_Waiter {
+  @scala.inline
+  def apply($waiter: awsDashSdkLib.libServiceMod.WaiterConfiguration = null): Anon_Waiter = {
+    val __obj = js.Dynamic.literal()
+    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter)
+    __obj.asInstanceOf[Anon_Waiter]
+  }
+}
+

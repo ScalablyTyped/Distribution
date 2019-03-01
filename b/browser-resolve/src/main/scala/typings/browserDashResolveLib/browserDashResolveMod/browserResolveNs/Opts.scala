@@ -14,3 +14,14 @@ trait Opts extends js.Object {
   var modules: js.UndefOr[js.Any] = js.undefined
 }
 
+object Opts {
+  @scala.inline
+  def apply(browser: java.lang.String = null, filename: java.lang.String = null, modules: js.Any = null): Opts = {
+    val __obj = js.Dynamic.literal()
+    if (browser != null) __obj.updateDynamic("browser")(browser)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (modules != null) __obj.updateDynamic("modules")(modules)
+    __obj.asInstanceOf[Opts]
+  }
+}
+

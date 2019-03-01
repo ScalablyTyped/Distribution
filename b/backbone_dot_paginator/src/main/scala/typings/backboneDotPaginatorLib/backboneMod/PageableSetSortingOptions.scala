@@ -13,3 +13,18 @@ trait PageableSetSortingOptions[TModel /* <: backboneLib.backboneMod.Model */] e
   ] = js.undefined
 }
 
+object PageableSetSortingOptions {
+  @scala.inline
+  def apply[TModel /* <: backboneLib.backboneMod.Model */](
+    full: js.UndefOr[scala.Boolean] = js.undefined,
+    side: java.lang.String = null,
+    sortValue: js.Function2[/* model */ TModel, /* sortKey */ java.lang.String, _ | java.lang.String] = null
+  ): PageableSetSortingOptions[TModel] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
+    if (side != null) __obj.updateDynamic("side")(side)
+    if (sortValue != null) __obj.updateDynamic("sortValue")(sortValue)
+    __obj.asInstanceOf[PageableSetSortingOptions[TModel]]
+  }
+}
+

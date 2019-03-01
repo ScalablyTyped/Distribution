@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BlankNode extends js.Object {
+trait BlankNode
+  extends Quad_Graph
+     with Quad_Object
+     with Quad_Subject
+     with Term {
   /**
     * Contains the constant "BlankNode".
     */
@@ -22,5 +26,20 @@ trait BlankNode extends js.Object {
     * @return True if and only if other has termType "BlankNode" and the same `value`.
     */
   def equals(other: Term): scala.Boolean
+}
+
+object BlankNode {
+  @scala.inline
+  def apply(
+    equals: js.Function1[Term, scala.Boolean],
+    termType: rdfDashJsLib.rdfDashJsLibStrings.BlankNode,
+    value: java.lang.String
+  ): BlankNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("termType")(termType)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[BlankNode]
+  }
 }
 

@@ -20,3 +20,24 @@ trait ocrDrivingLicenseOptions
   var unified_valid_period: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ocrDrivingLicenseOptions {
+  @scala.inline
+  def apply(
+    image: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    detect_direction: js.UndefOr[scala.Boolean] = js.undefined,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[/* res */ ocrDrivingLicenseResponse, scala.Unit] = null,
+    unified_valid_period: js.UndefOr[scala.Boolean] = js.undefined
+  ): ocrDrivingLicenseOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("image")(image)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (!js.isUndefined(unified_valid_period)) __obj.updateDynamic("unified_valid_period")(unified_valid_period)
+    __obj.asInstanceOf[ocrDrivingLicenseOptions]
+  }
+}
+

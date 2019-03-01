@@ -22,3 +22,18 @@ trait TransferOptions extends js.Object {
   var overwriteObjectsAlreadyExistingInSink: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TransferOptions {
+  @scala.inline
+  def apply(
+    deleteObjectsFromSourceAfterTransfer: js.UndefOr[scala.Boolean] = js.undefined,
+    deleteObjectsUniqueInSink: js.UndefOr[scala.Boolean] = js.undefined,
+    overwriteObjectsAlreadyExistingInSink: js.UndefOr[scala.Boolean] = js.undefined
+  ): TransferOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deleteObjectsFromSourceAfterTransfer)) __obj.updateDynamic("deleteObjectsFromSourceAfterTransfer")(deleteObjectsFromSourceAfterTransfer)
+    if (!js.isUndefined(deleteObjectsUniqueInSink)) __obj.updateDynamic("deleteObjectsUniqueInSink")(deleteObjectsUniqueInSink)
+    if (!js.isUndefined(overwriteObjectsAlreadyExistingInSink)) __obj.updateDynamic("overwriteObjectsAlreadyExistingInSink")(overwriteObjectsAlreadyExistingInSink)
+    __obj.asInstanceOf[TransferOptions]
+  }
+}
+

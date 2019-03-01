@@ -13,3 +13,22 @@ trait Anon_HostKey extends js.Object {
   var tracer: zipkinLib.zipkinMod.zipkinNs.Tracer
 }
 
+object Anon_HostKey {
+  @scala.inline
+  def apply(
+    port: scala.Double,
+    tracer: zipkinLib.zipkinMod.zipkinNs.Tracer,
+    host: java.lang.String = null,
+    serverTags: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    serviceName: java.lang.String = null
+  ): Anon_HostKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("tracer")(tracer)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (serverTags != null) __obj.updateDynamic("serverTags")(serverTags)
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    __obj.asInstanceOf[Anon_HostKey]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Result extends js.Object {
   var spritemap: org.scalablytyped.runtime.StringDictionary[audiospriteLib.Anon_End]
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    resources: js.Array[java.lang.String],
+    spritemap: org.scalablytyped.runtime.StringDictionary[audiospriteLib.Anon_End],
+    autoplay: java.lang.String = null
+  ): Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resources")(resources)
+    __obj.updateDynamic("spritemap")(spritemap)
+    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay)
+    __obj.asInstanceOf[Result]
+  }
+}
+

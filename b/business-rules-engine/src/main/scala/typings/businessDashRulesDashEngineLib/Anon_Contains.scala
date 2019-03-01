@@ -29,3 +29,54 @@ trait Anon_Contains extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Contains {
+  @scala.inline
+  def apply(
+    contains: java.lang.String,
+    creditcard: java.lang.String,
+    custom: java.lang.String,
+    date: java.lang.String,
+    dateISO: java.lang.String,
+    digits: java.lang.String,
+    email: java.lang.String,
+    equalTo: java.lang.String,
+    mask: java.lang.String,
+    max: java.lang.String,
+    maxlength: java.lang.String,
+    min: java.lang.String,
+    minlength: java.lang.String,
+    number: java.lang.String,
+    range: java.lang.String,
+    rangelength: java.lang.String,
+    remote: java.lang.String,
+    required: java.lang.String,
+    signedDigits: java.lang.String,
+    step: java.lang.String,
+    url: java.lang.String
+  ): Anon_Contains = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("creditcard")(creditcard)
+    __obj.updateDynamic("custom")(custom)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("dateISO")(dateISO)
+    __obj.updateDynamic("digits")(digits)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("equalTo")(equalTo)
+    __obj.updateDynamic("mask")(mask)
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("maxlength")(maxlength)
+    __obj.updateDynamic("min")(min)
+    __obj.updateDynamic("minlength")(minlength)
+    __obj.updateDynamic("number")(number)
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("rangelength")(rangelength)
+    __obj.updateDynamic("remote")(remote)
+    __obj.updateDynamic("required")(required)
+    __obj.updateDynamic("signedDigits")(signedDigits)
+    __obj.updateDynamic("step")(step)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_Contains]
+  }
+}
+

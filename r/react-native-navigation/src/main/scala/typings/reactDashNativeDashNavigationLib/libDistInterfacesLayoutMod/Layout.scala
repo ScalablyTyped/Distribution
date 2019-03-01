@@ -36,3 +36,26 @@ trait Layout[P] extends js.Object {
   var topTabs: js.UndefOr[TopTabs] = js.undefined
 }
 
+object Layout {
+  @scala.inline
+  def apply[P](
+    bottomTabs: LayoutBottomTabs = null,
+    component: LayoutComponent[P] = null,
+    externalComponent: ExternalComponent = null,
+    sideMenu: LayoutSideMenu = null,
+    splitView: LayoutSplitView = null,
+    stack: LayoutStack = null,
+    topTabs: TopTabs = null
+  ): Layout[P] = {
+    val __obj = js.Dynamic.literal()
+    if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (externalComponent != null) __obj.updateDynamic("externalComponent")(externalComponent)
+    if (sideMenu != null) __obj.updateDynamic("sideMenu")(sideMenu)
+    if (splitView != null) __obj.updateDynamic("splitView")(splitView)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (topTabs != null) __obj.updateDynamic("topTabs")(topTabs)
+    __obj.asInstanceOf[Layout[P]]
+  }
+}
+

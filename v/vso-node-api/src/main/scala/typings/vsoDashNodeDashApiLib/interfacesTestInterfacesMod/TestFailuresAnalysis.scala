@@ -12,3 +12,20 @@ trait TestFailuresAnalysis extends js.Object {
   var previousContext: TestResultsContext
 }
 
+object TestFailuresAnalysis {
+  @scala.inline
+  def apply(
+    existingFailures: TestFailureDetails,
+    fixedTests: TestFailureDetails,
+    newFailures: TestFailureDetails,
+    previousContext: TestResultsContext
+  ): TestFailuresAnalysis = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("existingFailures")(existingFailures)
+    __obj.updateDynamic("fixedTests")(fixedTests)
+    __obj.updateDynamic("newFailures")(newFailures)
+    __obj.updateDynamic("previousContext")(previousContext)
+    __obj.asInstanceOf[TestFailuresAnalysis]
+  }
+}
+

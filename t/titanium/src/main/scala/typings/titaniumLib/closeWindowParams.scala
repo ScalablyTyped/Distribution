@@ -23,3 +23,18 @@ trait closeWindowParams extends js.Object {
   var animated: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object closeWindowParams {
+  @scala.inline
+  def apply(
+    activityEnterAnimation: scala.Int | scala.Double = null,
+    activityExitAnimation: scala.Int | scala.Double = null,
+    animated: js.UndefOr[scala.Boolean] = js.undefined
+  ): closeWindowParams = {
+    val __obj = js.Dynamic.literal()
+    if (activityEnterAnimation != null) __obj.updateDynamic("activityEnterAnimation")(activityEnterAnimation.asInstanceOf[js.Any])
+    if (activityExitAnimation != null) __obj.updateDynamic("activityExitAnimation")(activityExitAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    __obj.asInstanceOf[closeWindowParams]
+  }
+}
+

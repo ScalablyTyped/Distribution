@@ -80,3 +80,60 @@ trait Props extends js.Object {
   var shouldFocus: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    appearance: atAtlaskitSingleDashSelectLib.atAtlaskitSingleDashSelectLibStrings.default | atAtlaskitSingleDashSelectLib.atAtlaskitSingleDashSelectLibStrings.subtle = null,
+    defaultSelected: ItemType = null,
+    droplistShouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined,
+    hasAutocomplete: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    invalidMessage: reactLib.reactMod.ReactNs.ReactNode = null,
+    isDefaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isFirstChild: js.UndefOr[scala.Boolean] = js.undefined,
+    isInvalid: js.UndefOr[scala.Boolean] = js.undefined,
+    isRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    items: js.Array[GroupType] = null,
+    label: java.lang.String = null,
+    maxHeight: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    noMatchesFound: java.lang.String = null,
+    onFilterChange: js.Function1[/* filter */ java.lang.String, scala.Unit] = null,
+    onOpenChange: js.Function1[/* change */ atAtlaskitSingleDashSelectLib.Anon_Event, scala.Unit] = null,
+    onSelected: js.Function1[/* item */ ItemType, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    position: java.lang.String = null,
+    shouldFitContainer: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldFlip: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldFocus: js.UndefOr[scala.Boolean] = js.undefined
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
+    if (defaultSelected != null) __obj.updateDynamic("defaultSelected")(defaultSelected)
+    if (!js.isUndefined(droplistShouldFitContainer)) __obj.updateDynamic("droplistShouldFitContainer")(droplistShouldFitContainer)
+    if (!js.isUndefined(hasAutocomplete)) __obj.updateDynamic("hasAutocomplete")(hasAutocomplete)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (invalidMessage != null) __obj.updateDynamic("invalidMessage")(invalidMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDefaultOpen)) __obj.updateDynamic("isDefaultOpen")(isDefaultOpen)
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
+    if (!js.isUndefined(isFirstChild)) __obj.updateDynamic("isFirstChild")(isFirstChild)
+    if (!js.isUndefined(isInvalid)) __obj.updateDynamic("isInvalid")(isInvalid)
+    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (noMatchesFound != null) __obj.updateDynamic("noMatchesFound")(noMatchesFound)
+    if (onFilterChange != null) __obj.updateDynamic("onFilterChange")(onFilterChange)
+    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(onOpenChange)
+    if (onSelected != null) __obj.updateDynamic("onSelected")(onSelected)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(shouldFitContainer)) __obj.updateDynamic("shouldFitContainer")(shouldFitContainer)
+    if (!js.isUndefined(shouldFlip)) __obj.updateDynamic("shouldFlip")(shouldFlip)
+    if (!js.isUndefined(shouldFocus)) __obj.updateDynamic("shouldFocus")(shouldFocus)
+    __obj.asInstanceOf[Props]
+  }
+}
+

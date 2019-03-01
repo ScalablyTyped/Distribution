@@ -13,3 +13,12 @@ trait PageCloseOptions extends js.Object {
   var runBeforeUnload: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PageCloseOptions {
+  @scala.inline
+  def apply(runBeforeUnload: js.UndefOr[scala.Boolean] = js.undefined): PageCloseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(runBeforeUnload)) __obj.updateDynamic("runBeforeUnload")(runBeforeUnload)
+    __obj.asInstanceOf[PageCloseOptions]
+  }
+}
+

@@ -18,3 +18,30 @@ trait ContentProviderProxy
      with XContentProvider
      with XParameterizedContentProvider
 
+object ContentProviderProxy {
+  @scala.inline
+  def apply(
+    ContentProvider: XContentProvider,
+    acquire: js.Function0[scala.Unit],
+    compareContentIds: js.Function2[XContentIdentifier, XContentIdentifier, scala.Double],
+    deregisterInstance: js.Function2[java.lang.String, java.lang.String, XContentProvider],
+    getContentProvider: js.Function0[XContentProvider],
+    queryContent: js.Function1[XContentIdentifier, XContent],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerInstance: js.Function3[java.lang.String, java.lang.String, scala.Boolean, XContentProvider],
+    release: js.Function0[scala.Unit]
+  ): ContentProviderProxy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ContentProvider")(ContentProvider)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("compareContentIds")(compareContentIds)
+    __obj.updateDynamic("deregisterInstance")(deregisterInstance)
+    __obj.updateDynamic("getContentProvider")(getContentProvider)
+    __obj.updateDynamic("queryContent")(queryContent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerInstance")(registerInstance)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[ContentProviderProxy]
+  }
+}
+

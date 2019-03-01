@@ -10,3 +10,16 @@ trait Anon_CwdFilename extends js.Object {
   var filter: js.UndefOr[js.Function1[/* filename */ java.lang.String, scala.Boolean]] = js.undefined
 }
 
+object Anon_CwdFilename {
+  @scala.inline
+  def apply(
+    cwd: java.lang.String = null,
+    filter: js.Function1[/* filename */ java.lang.String, scala.Boolean] = null
+  ): Anon_CwdFilename = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    __obj.asInstanceOf[Anon_CwdFilename]
+  }
+}
+

@@ -21,3 +21,13 @@ trait ChartExportOptions extends js.Object {
   var SizeMode: java.lang.String
 }
 
+object ChartExportOptions {
+  @scala.inline
+  def apply(AutomaticPageLayout: scala.Boolean, SizeMode: java.lang.String): ChartExportOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutomaticPageLayout")(AutomaticPageLayout)
+    __obj.updateDynamic("SizeMode")(SizeMode)
+    __obj.asInstanceOf[ChartExportOptions]
+  }
+}
+

@@ -28,3 +28,24 @@ trait BuildOptionDefinition extends BuildOptionDefinitionReference {
   var ordinal: scala.Double
 }
 
+object BuildOptionDefinition {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    groups: js.Array[BuildOptionGroupDefinition],
+    id: java.lang.String,
+    inputs: js.Array[BuildOptionInputDefinition],
+    name: java.lang.String,
+    ordinal: scala.Double
+  ): BuildOptionDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("groups")(groups)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("inputs")(inputs)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("ordinal")(ordinal)
+    __obj.asInstanceOf[BuildOptionDefinition]
+  }
+}
+

@@ -10,3 +10,12 @@ trait TestPermissionsRequest extends js.Object {
   var permissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TestPermissionsRequest {
+  @scala.inline
+  def apply(permissions: js.Array[java.lang.String] = null): TestPermissionsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[TestPermissionsRequest]
+  }
+}
+

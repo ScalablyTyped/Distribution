@@ -16,3 +16,22 @@ trait JwtAuthOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object JwtAuthOptions {
+  @scala.inline
+  def apply(
+    decodedPropertyName: java.lang.String,
+    secret: java.lang.String | JwtSecretFunc,
+    callback: js.UndefOr[scala.Boolean] = js.undefined,
+    handshake: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null
+  ): JwtAuthOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decodedPropertyName")(decodedPropertyName)
+    __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    if (!js.isUndefined(callback)) __obj.updateDynamic("callback")(callback)
+    if (!js.isUndefined(handshake)) __obj.updateDynamic("handshake")(handshake)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JwtAuthOptions]
+  }
+}
+

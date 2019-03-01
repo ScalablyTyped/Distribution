@@ -12,3 +12,20 @@ trait DeploymentAuthorizationInfo extends js.Object {
   var vstsAccessTokenKey: java.lang.String
 }
 
+object DeploymentAuthorizationInfo {
+  @scala.inline
+  def apply(
+    authorizationHeaderFor: AuthorizationHeaderFor,
+    resources: js.Array[java.lang.String],
+    tenantId: java.lang.String,
+    vstsAccessTokenKey: java.lang.String
+  ): DeploymentAuthorizationInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorizationHeaderFor")(authorizationHeaderFor)
+    __obj.updateDynamic("resources")(resources)
+    __obj.updateDynamic("tenantId")(tenantId)
+    __obj.updateDynamic("vstsAccessTokenKey")(vstsAccessTokenKey)
+    __obj.asInstanceOf[DeploymentAuthorizationInfo]
+  }
+}
+

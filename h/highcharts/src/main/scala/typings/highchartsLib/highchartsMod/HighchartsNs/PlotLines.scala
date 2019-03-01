@@ -57,3 +57,30 @@ trait PlotLines extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PlotLines {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    color: java.lang.String | Gradient = null,
+    dashStyle: java.lang.String = null,
+    events: MousePlotEvents = null,
+    id: java.lang.String = null,
+    label: PlotLabel = null,
+    value: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): PlotLines = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlotLines]
+  }
+}
+

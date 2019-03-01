@@ -10,3 +10,24 @@ trait EditorChangeLinkedList extends EditorChange {
   var next: js.UndefOr[EditorChangeLinkedList] = js.undefined
 }
 
+object EditorChangeLinkedList {
+  @scala.inline
+  def apply(
+    from: Position,
+    text: js.Array[java.lang.String],
+    to: Position,
+    next: EditorChangeLinkedList = null,
+    origin: java.lang.String = null,
+    removed: js.Array[java.lang.String] = null
+  ): EditorChangeLinkedList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("to")(to)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (removed != null) __obj.updateDynamic("removed")(removed)
+    __obj.asInstanceOf[EditorChangeLinkedList]
+  }
+}
+

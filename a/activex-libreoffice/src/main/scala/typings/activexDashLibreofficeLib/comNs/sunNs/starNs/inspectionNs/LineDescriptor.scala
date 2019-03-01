@@ -123,3 +123,38 @@ trait LineDescriptor extends js.Object {
   var SecondaryButtonImageURL: java.lang.String
 }
 
+object LineDescriptor {
+  @scala.inline
+  def apply(
+    Category: java.lang.String,
+    Control: XPropertyControl,
+    DisplayName: java.lang.String,
+    HasPrimaryButton: scala.Boolean,
+    HasSecondaryButton: scala.Boolean,
+    HelpURL: java.lang.String,
+    IndentLevel: scala.Double,
+    PrimaryButtonId: java.lang.String,
+    PrimaryButtonImage: activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
+    PrimaryButtonImageURL: java.lang.String,
+    SecondaryButtonId: java.lang.String,
+    SecondaryButtonImage: activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
+    SecondaryButtonImageURL: java.lang.String
+  ): LineDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Category")(Category)
+    __obj.updateDynamic("Control")(Control)
+    __obj.updateDynamic("DisplayName")(DisplayName)
+    __obj.updateDynamic("HasPrimaryButton")(HasPrimaryButton)
+    __obj.updateDynamic("HasSecondaryButton")(HasSecondaryButton)
+    __obj.updateDynamic("HelpURL")(HelpURL)
+    __obj.updateDynamic("IndentLevel")(IndentLevel)
+    __obj.updateDynamic("PrimaryButtonId")(PrimaryButtonId)
+    __obj.updateDynamic("PrimaryButtonImage")(PrimaryButtonImage)
+    __obj.updateDynamic("PrimaryButtonImageURL")(PrimaryButtonImageURL)
+    __obj.updateDynamic("SecondaryButtonId")(SecondaryButtonId)
+    __obj.updateDynamic("SecondaryButtonImage")(SecondaryButtonImage)
+    __obj.updateDynamic("SecondaryButtonImageURL")(SecondaryButtonImageURL)
+    __obj.asInstanceOf[LineDescriptor]
+  }
+}
+

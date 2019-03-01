@@ -25,3 +25,22 @@ trait AutoscalingEvent extends js.Object {
   var time: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AutoscalingEvent {
+  @scala.inline
+  def apply(
+    currentNumWorkers: java.lang.String = null,
+    description: StructuredMessage = null,
+    eventType: java.lang.String = null,
+    targetNumWorkers: java.lang.String = null,
+    time: java.lang.String = null
+  ): AutoscalingEvent = {
+    val __obj = js.Dynamic.literal()
+    if (currentNumWorkers != null) __obj.updateDynamic("currentNumWorkers")(currentNumWorkers)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (eventType != null) __obj.updateDynamic("eventType")(eventType)
+    if (targetNumWorkers != null) __obj.updateDynamic("targetNumWorkers")(targetNumWorkers)
+    if (time != null) __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[AutoscalingEvent]
+  }
+}
+

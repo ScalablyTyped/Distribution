@@ -6308,24 +6308,138 @@ object SageMakerNs extends js.Object {
     var WorkteamName: WorkteamName
   }
   
+  trait _AlgorithmSortBy extends js.Object
+  
+  trait _AlgorithmStatus extends js.Object
+  
+  trait _AssemblyType extends js.Object
+  
+  trait _BatchStrategy extends js.Object
+  
+  trait _BooleanOperator extends js.Object
+  
+  trait _CodeRepositorySortBy extends js.Object
+  
+  trait _CodeRepositorySortOrder extends js.Object
+  
+  trait _CompilationJobStatus extends js.Object
+  
+  trait _CompressionType extends js.Object
+  
+  trait _ContentClassifier extends js.Object
+  
+  trait _DetailedAlgorithmStatus extends js.Object
+  
+  trait _DetailedModelPackageStatus extends js.Object
+  
+  trait _DirectInternetAccess extends js.Object
+  
+  trait _EndpointConfigSortKey extends js.Object
+  
+  trait _EndpointSortKey extends js.Object
+  
+  trait _EndpointStatus extends js.Object
+  
+  trait _Framework extends js.Object
+  
+  trait _HyperParameterTuningJobObjectiveType extends js.Object
+  
+  trait _HyperParameterTuningJobSortByOptions extends js.Object
+  
+  trait _HyperParameterTuningJobStatus extends js.Object
+  
+  trait _HyperParameterTuningJobWarmStartType extends js.Object
+  
+  trait _InstanceType extends js.Object
+  
+  trait _LabelingJobStatus extends js.Object
+  
+  trait _ListCompilationJobsSortBy extends js.Object
+  
+  trait _ListWorkteamsSortByOptions extends js.Object
+  
+  trait _ModelPackageSortBy extends js.Object
+  
+  trait _ModelPackageStatus extends js.Object
+  
+  trait _ModelSortKey extends js.Object
+  
+  trait _NotebookInstanceAcceleratorType extends js.Object
+  
+  trait _NotebookInstanceLifecycleConfigSortKey extends js.Object
+  
+  trait _NotebookInstanceLifecycleConfigSortOrder extends js.Object
+  
+  trait _NotebookInstanceSortKey extends js.Object
+  
+  trait _NotebookInstanceSortOrder extends js.Object
+  
+  trait _NotebookInstanceStatus extends js.Object
+  
+  trait _ObjectiveStatus extends js.Object
+  
+  trait _Operator extends js.Object
+  
+  trait _OrderKey extends js.Object
+  
+  trait _ParameterType extends js.Object
+  
+  trait _ProductionVariantAcceleratorType extends js.Object
+  
+  trait _ProductionVariantInstanceType extends js.Object
+  
+  trait _RecordWrapper extends js.Object
+  
+  trait _S3DataDistribution extends js.Object
+  
+  trait _S3DataType extends js.Object
+  
+  trait _SearchSortOrder extends js.Object
+  
+  trait _SecondaryStatus extends js.Object
+  
+  trait _SortBy extends js.Object
+  
+  trait _SortOrder extends js.Object
+  
+  trait _SplitType extends js.Object
+  
+  trait _TargetDevice extends js.Object
+  
+  trait _TrainingInputMode extends js.Object
+  
+  trait _TrainingInstanceType extends js.Object
+  
+  trait _TrainingJobEarlyStoppingType extends js.Object
+  
+  trait _TrainingJobSortByOptions extends js.Object
+  
+  trait _TrainingJobStatus extends js.Object
+  
+  trait _TransformInstanceType extends js.Object
+  
+  trait _TransformJobStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Accept = java.lang.String
   type AccountId = java.lang.String
   type AdditionalCodeRepositoryNamesOrUrls = js.Array[CodeRepositoryNameOrUrl]
   type AlgorithmArn = java.lang.String
   type AlgorithmImage = java.lang.String
-  type AlgorithmSortBy = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | java.lang.String
-  type AlgorithmStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Deleting | java.lang.String
+  type AlgorithmSortBy = _AlgorithmSortBy | java.lang.String
+  type AlgorithmStatus = _AlgorithmStatus | java.lang.String
   type AlgorithmStatusItemList = js.Array[AlgorithmStatusItem]
   type AlgorithmSummaryList = js.Array[AlgorithmSummary]
   type AlgorithmValidationProfiles = js.Array[AlgorithmValidationProfile]
   type ArnOrName = java.lang.String
-  type AssemblyType = awsDashSdkLib.awsDashSdkLibStrings.None | awsDashSdkLib.awsDashSdkLibStrings.Line | java.lang.String
+  type AssemblyType = _AssemblyType | java.lang.String
   type AttributeName = java.lang.String
   type AttributeNames = js.Array[AttributeName]
-  type BatchStrategy = awsDashSdkLib.awsDashSdkLibStrings.MultiRecord | awsDashSdkLib.awsDashSdkLibStrings.SingleRecord | java.lang.String
+  type BatchStrategy = _BatchStrategy | java.lang.String
   type Boolean = scala.Boolean
-  type BooleanOperator = awsDashSdkLib.awsDashSdkLibStrings.And | awsDashSdkLib.awsDashSdkLibStrings.Or | java.lang.String
+  type BooleanOperator = _BooleanOperator | java.lang.String
   type Branch = java.lang.String
   type CategoricalParameterRanges = js.Array[CategoricalParameterRange]
   type Cents = scala.Double
@@ -6337,20 +6451,20 @@ object SageMakerNs extends js.Object {
   type CodeRepositoryContains = java.lang.String
   type CodeRepositoryNameContains = java.lang.String
   type CodeRepositoryNameOrUrl = java.lang.String
-  type CodeRepositorySortBy = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | awsDashSdkLib.awsDashSdkLibStrings.LastModifiedTime | java.lang.String
-  type CodeRepositorySortOrder = awsDashSdkLib.awsDashSdkLibStrings.Ascending | awsDashSdkLib.awsDashSdkLibStrings.Descending | java.lang.String
+  type CodeRepositorySortBy = _CodeRepositorySortBy | java.lang.String
+  type CodeRepositorySortOrder = _CodeRepositorySortOrder | java.lang.String
   type CodeRepositorySummaryList = js.Array[CodeRepositorySummary]
   type CognitoClientId = java.lang.String
   type CognitoUserGroup = java.lang.String
   type CognitoUserPool = java.lang.String
   type CompilationJobArn = java.lang.String
-  type CompilationJobStatus = awsDashSdkLib.awsDashSdkLibStrings.INPROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.STARTING | awsDashSdkLib.awsDashSdkLibStrings.STOPPING | awsDashSdkLib.awsDashSdkLibStrings.STOPPED | java.lang.String
+  type CompilationJobStatus = _CompilationJobStatus | java.lang.String
   type CompilationJobSummaries = js.Array[CompilationJobSummary]
-  type CompressionType = awsDashSdkLib.awsDashSdkLibStrings.None | awsDashSdkLib.awsDashSdkLibStrings.Gzip | java.lang.String
+  type CompressionType = _CompressionType | java.lang.String
   type CompressionTypes = js.Array[CompressionType]
   type ContainerDefinitionList = js.Array[ContainerDefinition]
   type ContainerHostname = java.lang.String
-  type ContentClassifier = awsDashSdkLib.awsDashSdkLibStrings.FreeOfPersonallyIdentifiableInformation | awsDashSdkLib.awsDashSdkLibStrings.FreeOfAdultContent | java.lang.String
+  type ContentClassifier = _ContentClassifier | java.lang.String
   type ContentClassifiers = js.Array[ContentClassifier]
   type ContentType = java.lang.String
   type ContentTypes = js.Array[ContentType]
@@ -6359,9 +6473,9 @@ object SageMakerNs extends js.Object {
   type DataInputConfig = java.lang.String
   type DeployedImages = js.Array[DeployedImage]
   type DesiredWeightAndCapacityList = js.Array[DesiredWeightAndCapacity]
-  type DetailedAlgorithmStatus = awsDashSdkLib.awsDashSdkLibStrings.NotStarted | awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
-  type DetailedModelPackageStatus = awsDashSdkLib.awsDashSdkLibStrings.NotStarted | awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
-  type DirectInternetAccess = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Disabled | java.lang.String
+  type DetailedAlgorithmStatus = _DetailedAlgorithmStatus | java.lang.String
+  type DetailedModelPackageStatus = _DetailedModelPackageStatus | java.lang.String
+  type DirectInternetAccess = _DirectInternetAccess | java.lang.String
   type DisassociateAdditionalCodeRepositories = scala.Boolean
   type DisassociateDefaultCodeRepository = scala.Boolean
   type DisassociateNotebookInstanceAcceleratorTypes = scala.Boolean
@@ -6371,12 +6485,12 @@ object SageMakerNs extends js.Object {
   type EndpointConfigArn = java.lang.String
   type EndpointConfigName = java.lang.String
   type EndpointConfigNameContains = java.lang.String
-  type EndpointConfigSortKey = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | java.lang.String
+  type EndpointConfigSortKey = _EndpointConfigSortKey | java.lang.String
   type EndpointConfigSummaryList = js.Array[EndpointConfigSummary]
   type EndpointName = java.lang.String
   type EndpointNameContains = java.lang.String
-  type EndpointSortKey = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | awsDashSdkLib.awsDashSdkLibStrings.Status | java.lang.String
-  type EndpointStatus = awsDashSdkLib.awsDashSdkLibStrings.OutOfService | awsDashSdkLib.awsDashSdkLibStrings.Creating | awsDashSdkLib.awsDashSdkLibStrings.Updating | awsDashSdkLib.awsDashSdkLibStrings.SystemUpdating | awsDashSdkLib.awsDashSdkLibStrings.RollingBack | awsDashSdkLib.awsDashSdkLibStrings.InService | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type EndpointSortKey = _EndpointSortKey | java.lang.String
+  type EndpointStatus = _EndpointStatus | java.lang.String
   type EndpointSummaryList = js.Array[EndpointSummary]
   type EntityDescription = java.lang.String
   type EntityName = java.lang.String
@@ -6387,24 +6501,24 @@ object SageMakerNs extends js.Object {
   type FilterValue = java.lang.String
   type FinalMetricDataList = js.Array[MetricData]
   type Float = scala.Double
-  type Framework = awsDashSdkLib.awsDashSdkLibStrings.TENSORFLOW | awsDashSdkLib.awsDashSdkLibStrings.MXNET | awsDashSdkLib.awsDashSdkLibStrings.ONNX | awsDashSdkLib.awsDashSdkLibStrings.PYTORCH | awsDashSdkLib.awsDashSdkLibStrings.XGBOOST | java.lang.String
+  type Framework = _Framework | java.lang.String
   type GitConfigUrl = java.lang.String
   type HyperParameterSpecifications = js.Array[HyperParameterSpecification]
   type HyperParameterTrainingJobSummaries = js.Array[HyperParameterTrainingJobSummary]
   type HyperParameterTuningJobArn = java.lang.String
   type HyperParameterTuningJobName = java.lang.String
-  type HyperParameterTuningJobObjectiveType = awsDashSdkLib.awsDashSdkLibStrings.Maximize | awsDashSdkLib.awsDashSdkLibStrings.Minimize | java.lang.String
+  type HyperParameterTuningJobObjectiveType = _HyperParameterTuningJobObjectiveType | java.lang.String
   type HyperParameterTuningJobObjectives = js.Array[HyperParameterTuningJobObjective]
-  type HyperParameterTuningJobSortByOptions = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.Status | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | java.lang.String
-  type HyperParameterTuningJobStatus = awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Stopped | awsDashSdkLib.awsDashSdkLibStrings.Stopping | java.lang.String
+  type HyperParameterTuningJobSortByOptions = _HyperParameterTuningJobSortByOptions | java.lang.String
+  type HyperParameterTuningJobStatus = _HyperParameterTuningJobStatus | java.lang.String
   type HyperParameterTuningJobStrategyType = awsDashSdkLib.awsDashSdkLibStrings.Bayesian | java.lang.String
   type HyperParameterTuningJobSummaries = js.Array[HyperParameterTuningJobSummary]
-  type HyperParameterTuningJobWarmStartType = awsDashSdkLib.awsDashSdkLibStrings.IdenticalDataAndAlgorithm | awsDashSdkLib.awsDashSdkLibStrings.TransferLearning | java.lang.String
+  type HyperParameterTuningJobWarmStartType = _HyperParameterTuningJobWarmStartType | java.lang.String
   type Image = java.lang.String
   type ImageDigest = java.lang.String
   type InputDataConfig = js.Array[Channel]
   type InputModes = js.Array[TrainingInputMode]
-  type InstanceType = awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOTmedium | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt3DOTmedium | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt3DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt3DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt3DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT10xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT12xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT24xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT9xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT18xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5dDOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5dDOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5dDOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5dDOT9xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5dDOT18xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT16xlarge | java.lang.String
+  type InstanceType = _InstanceType | java.lang.String
   type IntegerParameterRanges = js.Array[IntegerParameterRange]
   type JobReferenceCode = java.lang.String
   type JobReferenceCodeContains = java.lang.String
@@ -6415,14 +6529,14 @@ object SageMakerNs extends js.Object {
   type LabelingJobArn = java.lang.String
   type LabelingJobForWorkteamSummaryList = js.Array[LabelingJobForWorkteamSummary]
   type LabelingJobName = java.lang.String
-  type LabelingJobStatus = awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Stopped | java.lang.String
+  type LabelingJobStatus = _LabelingJobStatus | java.lang.String
   type LabelingJobSummaryList = js.Array[LabelingJobSummary]
   type LambdaFunctionArn = java.lang.String
   type LastModifiedTime = stdLib.Date
-  type ListCompilationJobsSortBy = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | awsDashSdkLib.awsDashSdkLibStrings.Status | java.lang.String
+  type ListCompilationJobsSortBy = _ListCompilationJobsSortBy | java.lang.String
   type ListLabelingJobsForWorkteamSortByOptions = awsDashSdkLib.awsDashSdkLibStrings.CreationTime | java.lang.String
   type ListTagsMaxResults = scala.Double
-  type ListWorkteamsSortByOptions = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreateDate | java.lang.String
+  type ListWorkteamsSortByOptions = _ListWorkteamsSortByOptions | java.lang.String
   type MaxConcurrentTaskCount = scala.Double
   type MaxConcurrentTransforms = scala.Double
   type MaxHumanLabeledObjectCount = scala.Double
@@ -6442,18 +6556,18 @@ object SageMakerNs extends js.Object {
   type ModelNameContains = java.lang.String
   type ModelPackageArn = java.lang.String
   type ModelPackageContainerDefinitionList = js.Array[ModelPackageContainerDefinition]
-  type ModelPackageSortBy = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | java.lang.String
-  type ModelPackageStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Deleting | java.lang.String
+  type ModelPackageSortBy = _ModelPackageSortBy | java.lang.String
+  type ModelPackageStatus = _ModelPackageStatus | java.lang.String
   type ModelPackageStatusItemList = js.Array[ModelPackageStatusItem]
   type ModelPackageSummaryList = js.Array[ModelPackageSummary]
   type ModelPackageValidationProfiles = js.Array[ModelPackageValidationProfile]
-  type ModelSortKey = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | java.lang.String
+  type ModelSortKey = _ModelSortKey | java.lang.String
   type ModelSummaryList = js.Array[ModelSummary]
   type NameContains = java.lang.String
   type NestedFiltersList = js.Array[NestedFilters]
   type NetworkInterfaceId = java.lang.String
   type NextToken = java.lang.String
-  type NotebookInstanceAcceleratorType = awsDashSdkLib.awsDashSdkLibStrings.mlDOTeia1DOTmedium | awsDashSdkLib.awsDashSdkLibStrings.mlDOTeia1DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTeia1DOTxlarge | java.lang.String
+  type NotebookInstanceAcceleratorType = _NotebookInstanceAcceleratorType | java.lang.String
   type NotebookInstanceAcceleratorTypes = js.Array[NotebookInstanceAcceleratorType]
   type NotebookInstanceArn = java.lang.String
   type NotebookInstanceLifecycleConfigArn = java.lang.String
@@ -6461,39 +6575,39 @@ object SageMakerNs extends js.Object {
   type NotebookInstanceLifecycleConfigList = js.Array[NotebookInstanceLifecycleHook]
   type NotebookInstanceLifecycleConfigName = java.lang.String
   type NotebookInstanceLifecycleConfigNameContains = java.lang.String
-  type NotebookInstanceLifecycleConfigSortKey = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | awsDashSdkLib.awsDashSdkLibStrings.LastModifiedTime | java.lang.String
-  type NotebookInstanceLifecycleConfigSortOrder = awsDashSdkLib.awsDashSdkLibStrings.Ascending | awsDashSdkLib.awsDashSdkLibStrings.Descending | java.lang.String
+  type NotebookInstanceLifecycleConfigSortKey = _NotebookInstanceLifecycleConfigSortKey | java.lang.String
+  type NotebookInstanceLifecycleConfigSortOrder = _NotebookInstanceLifecycleConfigSortOrder | java.lang.String
   type NotebookInstanceLifecycleConfigSummaryList = js.Array[NotebookInstanceLifecycleConfigSummary]
   type NotebookInstanceName = java.lang.String
   type NotebookInstanceNameContains = java.lang.String
-  type NotebookInstanceSortKey = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | awsDashSdkLib.awsDashSdkLibStrings.Status | java.lang.String
-  type NotebookInstanceSortOrder = awsDashSdkLib.awsDashSdkLibStrings.Ascending | awsDashSdkLib.awsDashSdkLibStrings.Descending | java.lang.String
-  type NotebookInstanceStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.InService | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Stopped | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Updating | java.lang.String
+  type NotebookInstanceSortKey = _NotebookInstanceSortKey | java.lang.String
+  type NotebookInstanceSortOrder = _NotebookInstanceSortOrder | java.lang.String
+  type NotebookInstanceStatus = _NotebookInstanceStatus | java.lang.String
   type NotebookInstanceSummaryList = js.Array[NotebookInstanceSummary]
   type NotebookInstanceUrl = java.lang.String
   type NotebookInstanceVolumeSizeInGB = scala.Double
   type NumberOfHumanWorkersPerDataObject = scala.Double
-  type ObjectiveStatus = awsDashSdkLib.awsDashSdkLibStrings.Succeeded | awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type ObjectiveStatus = _ObjectiveStatus | java.lang.String
   type ObjectiveStatusCounter = scala.Double
-  type Operator = awsDashSdkLib.awsDashSdkLibStrings.Equals | awsDashSdkLib.awsDashSdkLibStrings.NotEquals | awsDashSdkLib.awsDashSdkLibStrings.GreaterThan | awsDashSdkLib.awsDashSdkLibStrings.GreaterThanOrEqualTo | awsDashSdkLib.awsDashSdkLibStrings.LessThan | awsDashSdkLib.awsDashSdkLibStrings.LessThanOrEqualTo | awsDashSdkLib.awsDashSdkLibStrings.Contains | java.lang.String
-  type OrderKey = awsDashSdkLib.awsDashSdkLibStrings.Ascending | awsDashSdkLib.awsDashSdkLibStrings.Descending | java.lang.String
+  type Operator = _Operator | java.lang.String
+  type OrderKey = _OrderKey | java.lang.String
   type PaginationToken = java.lang.String
   type ParameterKey = java.lang.String
   type ParameterName = java.lang.String
-  type ParameterType = awsDashSdkLib.awsDashSdkLibStrings.Integer | awsDashSdkLib.awsDashSdkLibStrings.Continuous | awsDashSdkLib.awsDashSdkLibStrings.Categorical | awsDashSdkLib.awsDashSdkLibStrings.FreeText | java.lang.String
+  type ParameterType = _ParameterType | java.lang.String
   type ParameterValue = java.lang.String
   type ParameterValues = js.Array[ParameterValue]
   type ParentHyperParameterTuningJobs = js.Array[ParentHyperParameterTuningJob]
   type ProductId = java.lang.String
   type ProductListings = js.Array[String]
-  type ProductionVariantAcceleratorType = awsDashSdkLib.awsDashSdkLibStrings.mlDOTeia1DOTmedium | awsDashSdkLib.awsDashSdkLibStrings.mlDOTeia1DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTeia1DOTxlarge | java.lang.String
-  type ProductionVariantInstanceType = awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOTmedium | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTt2DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT10xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT12xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT24xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT9xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT18xlarge | java.lang.String
+  type ProductionVariantAcceleratorType = _ProductionVariantAcceleratorType | java.lang.String
+  type ProductionVariantInstanceType = _ProductionVariantInstanceType | java.lang.String
   type ProductionVariantList = js.Array[ProductionVariant]
   type ProductionVariantSummaryList = js.Array[ProductionVariantSummary]
   type PropertyNameHint = java.lang.String
   type PropertyNameSuggestionList = js.Array[PropertyNameSuggestion]
   type RealtimeInferenceInstanceTypes = js.Array[ProductionVariantInstanceType]
-  type RecordWrapper = awsDashSdkLib.awsDashSdkLibStrings.None | awsDashSdkLib.awsDashSdkLibStrings.RecordIO | java.lang.String
+  type RecordWrapper = _RecordWrapper | java.lang.String
   type RenderingErrorList = js.Array[RenderingError]
   type ResourceArn = java.lang.String
   type ResourcePropertyName = java.lang.String
@@ -6501,23 +6615,23 @@ object SageMakerNs extends js.Object {
   type ResponseMIMEType = java.lang.String
   type ResponseMIMETypes = js.Array[ResponseMIMEType]
   type RoleArn = java.lang.String
-  type S3DataDistribution = awsDashSdkLib.awsDashSdkLibStrings.FullyReplicated | awsDashSdkLib.awsDashSdkLibStrings.ShardedByS3Key | java.lang.String
-  type S3DataType = awsDashSdkLib.awsDashSdkLibStrings.ManifestFile | awsDashSdkLib.awsDashSdkLibStrings.S3Prefix | awsDashSdkLib.awsDashSdkLibStrings.AugmentedManifestFile | java.lang.String
+  type S3DataDistribution = _S3DataDistribution | java.lang.String
+  type S3DataType = _S3DataType | java.lang.String
   type S3Uri = java.lang.String
   type SearchExpressionList = js.Array[SearchExpression]
   type SearchResultsList = js.Array[SearchRecord]
-  type SearchSortOrder = awsDashSdkLib.awsDashSdkLibStrings.Ascending | awsDashSdkLib.awsDashSdkLibStrings.Descending | java.lang.String
-  type SecondaryStatus = awsDashSdkLib.awsDashSdkLibStrings.Starting | awsDashSdkLib.awsDashSdkLibStrings.LaunchingMLInstances | awsDashSdkLib.awsDashSdkLibStrings.PreparingTrainingStack | awsDashSdkLib.awsDashSdkLibStrings.Downloading | awsDashSdkLib.awsDashSdkLibStrings.DownloadingTrainingImage | awsDashSdkLib.awsDashSdkLibStrings.Training | awsDashSdkLib.awsDashSdkLibStrings.Uploading | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Stopped | awsDashSdkLib.awsDashSdkLibStrings.MaxRuntimeExceeded | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type SearchSortOrder = _SearchSortOrder | java.lang.String
+  type SecondaryStatus = _SecondaryStatus | java.lang.String
   type SecondaryStatusTransitions = js.Array[SecondaryStatusTransition]
   type SecretArn = java.lang.String
   type SecurityGroupId = java.lang.String
   type SecurityGroupIds = js.Array[SecurityGroupId]
   type Seed = scala.Double
   type SessionExpirationDurationInSeconds = scala.Double
-  type SortBy = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | awsDashSdkLib.awsDashSdkLibStrings.Status | java.lang.String
-  type SortOrder = awsDashSdkLib.awsDashSdkLibStrings.Ascending | awsDashSdkLib.awsDashSdkLibStrings.Descending | java.lang.String
+  type SortBy = _SortBy | java.lang.String
+  type SortOrder = _SortOrder | java.lang.String
   type SourceAlgorithmList = js.Array[SourceAlgorithm]
-  type SplitType = awsDashSdkLib.awsDashSdkLibStrings.None | awsDashSdkLib.awsDashSdkLibStrings.Line | awsDashSdkLib.awsDashSdkLibStrings.RecordIO | awsDashSdkLib.awsDashSdkLibStrings.TFRecord | java.lang.String
+  type SplitType = _SplitType | java.lang.String
   type StatusMessage = java.lang.String
   type String = java.lang.String
   type String200 = java.lang.String
@@ -6529,7 +6643,7 @@ object SageMakerNs extends js.Object {
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
-  type TargetDevice = awsDashSdkLib.awsDashSdkLibStrings.ml_m4 | awsDashSdkLib.awsDashSdkLibStrings.ml_m5 | awsDashSdkLib.awsDashSdkLibStrings.ml_c4 | awsDashSdkLib.awsDashSdkLibStrings.ml_c5 | awsDashSdkLib.awsDashSdkLibStrings.ml_p2 | awsDashSdkLib.awsDashSdkLibStrings.ml_p3 | awsDashSdkLib.awsDashSdkLibStrings.jetson_tx1 | awsDashSdkLib.awsDashSdkLibStrings.jetson_tx2 | awsDashSdkLib.awsDashSdkLibStrings.rasp3b | awsDashSdkLib.awsDashSdkLibStrings.deeplens | java.lang.String
+  type TargetDevice = _TargetDevice | java.lang.String
   type TaskAvailabilityLifetimeInSeconds = scala.Double
   type TaskCount = scala.Double
   type TaskDescription = java.lang.String
@@ -6541,25 +6655,25 @@ object SageMakerNs extends js.Object {
   type TemplateContent = java.lang.String
   type TenthFractionsOfACent = scala.Double
   type Timestamp = stdLib.Date
-  type TrainingInputMode = awsDashSdkLib.awsDashSdkLibStrings.Pipe | awsDashSdkLib.awsDashSdkLibStrings.File | java.lang.String
+  type TrainingInputMode = _TrainingInputMode | java.lang.String
   type TrainingInstanceCount = scala.Double
-  type TrainingInstanceType = awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT10xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT12xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT24xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT9xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT18xlarge | java.lang.String
+  type TrainingInstanceType = _TrainingInstanceType | java.lang.String
   type TrainingInstanceTypes = js.Array[TrainingInstanceType]
   type TrainingJobArn = java.lang.String
-  type TrainingJobEarlyStoppingType = awsDashSdkLib.awsDashSdkLibStrings.Off | awsDashSdkLib.awsDashSdkLibStrings.Auto | java.lang.String
+  type TrainingJobEarlyStoppingType = _TrainingJobEarlyStoppingType | java.lang.String
   type TrainingJobName = java.lang.String
-  type TrainingJobSortByOptions = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.CreationTime | awsDashSdkLib.awsDashSdkLibStrings.Status | awsDashSdkLib.awsDashSdkLibStrings.FinalObjectiveMetricValue | java.lang.String
-  type TrainingJobStatus = awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Stopped | java.lang.String
+  type TrainingJobSortByOptions = _TrainingJobSortByOptions | java.lang.String
+  type TrainingJobStatus = _TrainingJobStatus | java.lang.String
   type TrainingJobStatusCounter = scala.Double
   type TrainingJobSummaries = js.Array[TrainingJobSummary]
   type TransformEnvironmentKey = java.lang.String
   type TransformEnvironmentValue = java.lang.String
   type TransformInstanceCount = scala.Double
-  type TransformInstanceType = awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT10xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm4DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc4DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp2DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT8xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTp3DOT16xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT9xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTc5DOT18xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOTxlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT2xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT4xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT12xlarge | awsDashSdkLib.awsDashSdkLibStrings.mlDOTm5DOT24xlarge | java.lang.String
+  type TransformInstanceType = _TransformInstanceType | java.lang.String
   type TransformInstanceTypes = js.Array[TransformInstanceType]
   type TransformJobArn = java.lang.String
   type TransformJobName = java.lang.String
-  type TransformJobStatus = awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Stopped | java.lang.String
+  type TransformJobStatus = _TransformJobStatus | java.lang.String
   type TransformJobSummaries = js.Array[TransformJobSummary]
   type Url = java.lang.String
   type VariantName = java.lang.String
@@ -6569,6 +6683,6 @@ object SageMakerNs extends js.Object {
   type WorkteamArn = java.lang.String
   type WorkteamName = java.lang.String
   type Workteams = js.Array[Workteam]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-07-24` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -33,3 +33,34 @@ trait IdentitytoolkitRelyingpartyVerifyAssertionRequest extends js.Object {
   var sessionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartyVerifyAssertionRequest {
+  @scala.inline
+  def apply(
+    autoCreate: js.UndefOr[scala.Boolean] = js.undefined,
+    delegatedProjectNumber: java.lang.String = null,
+    idToken: java.lang.String = null,
+    instanceId: java.lang.String = null,
+    pendingIdToken: java.lang.String = null,
+    postBody: java.lang.String = null,
+    requestUri: java.lang.String = null,
+    returnIdpCredential: js.UndefOr[scala.Boolean] = js.undefined,
+    returnRefreshToken: js.UndefOr[scala.Boolean] = js.undefined,
+    returnSecureToken: js.UndefOr[scala.Boolean] = js.undefined,
+    sessionId: java.lang.String = null
+  ): IdentitytoolkitRelyingpartyVerifyAssertionRequest = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate)
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (pendingIdToken != null) __obj.updateDynamic("pendingIdToken")(pendingIdToken)
+    if (postBody != null) __obj.updateDynamic("postBody")(postBody)
+    if (requestUri != null) __obj.updateDynamic("requestUri")(requestUri)
+    if (!js.isUndefined(returnIdpCredential)) __obj.updateDynamic("returnIdpCredential")(returnIdpCredential)
+    if (!js.isUndefined(returnRefreshToken)) __obj.updateDynamic("returnRefreshToken")(returnRefreshToken)
+    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken)
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyAssertionRequest]
+  }
+}
+

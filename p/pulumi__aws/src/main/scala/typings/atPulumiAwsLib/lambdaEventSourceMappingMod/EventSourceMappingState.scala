@@ -56,3 +56,36 @@ trait EventSourceMappingState extends js.Object {
   val uuid: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object EventSourceMappingState {
+  @scala.inline
+  def apply(
+    batchSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    eventSourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    functionArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    functionName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    lastModified: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    lastProcessingResult: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    startingPosition: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    startingPositionTimestamp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    state: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    stateTransitionReason: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    uuid: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): EventSourceMappingState = {
+    val __obj = js.Dynamic.literal()
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (eventSourceArn != null) __obj.updateDynamic("eventSourceArn")(eventSourceArn.asInstanceOf[js.Any])
+    if (functionArn != null) __obj.updateDynamic("functionArn")(functionArn.asInstanceOf[js.Any])
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
+    if (lastProcessingResult != null) __obj.updateDynamic("lastProcessingResult")(lastProcessingResult.asInstanceOf[js.Any])
+    if (startingPosition != null) __obj.updateDynamic("startingPosition")(startingPosition.asInstanceOf[js.Any])
+    if (startingPositionTimestamp != null) __obj.updateDynamic("startingPositionTimestamp")(startingPositionTimestamp.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (stateTransitionReason != null) __obj.updateDynamic("stateTransitionReason")(stateTransitionReason.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventSourceMappingState]
+  }
+}
+

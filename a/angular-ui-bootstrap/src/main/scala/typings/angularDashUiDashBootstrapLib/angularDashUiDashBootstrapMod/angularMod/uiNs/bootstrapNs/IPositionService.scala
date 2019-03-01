@@ -16,3 +16,16 @@ trait IPositionService extends js.Object {
   def position(element: angularLib.JQuery): IPositionCoordinates
 }
 
+object IPositionService {
+  @scala.inline
+  def apply(
+    offset: js.Function1[angularLib.JQuery, IPositionCoordinates],
+    position: js.Function1[angularLib.JQuery, IPositionCoordinates]
+  ): IPositionService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[IPositionService]
+  }
+}
+

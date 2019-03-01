@@ -36,3 +36,30 @@ trait DataStoreOptions extends js.Object {
   var timestampData: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataStoreOptions {
+  @scala.inline
+  def apply(
+    afterSerialization: js.Function1[/* line */ java.lang.String, java.lang.String] = null,
+    autoload: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeDeserialization: js.Function1[/* line */ java.lang.String, java.lang.String] = null,
+    corruptAlertThreshold: scala.Int | scala.Double = null,
+    filename: java.lang.String = null,
+    inMemoryOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    nodeWebkitAppName: js.UndefOr[scala.Boolean] = js.undefined,
+    onload: js.Function1[/* error */ nodeLib.Error, _] = null,
+    timestampData: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataStoreOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterSerialization != null) __obj.updateDynamic("afterSerialization")(afterSerialization)
+    if (!js.isUndefined(autoload)) __obj.updateDynamic("autoload")(autoload)
+    if (beforeDeserialization != null) __obj.updateDynamic("beforeDeserialization")(beforeDeserialization)
+    if (corruptAlertThreshold != null) __obj.updateDynamic("corruptAlertThreshold")(corruptAlertThreshold.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(inMemoryOnly)) __obj.updateDynamic("inMemoryOnly")(inMemoryOnly)
+    if (!js.isUndefined(nodeWebkitAppName)) __obj.updateDynamic("nodeWebkitAppName")(nodeWebkitAppName)
+    if (onload != null) __obj.updateDynamic("onload")(onload)
+    if (!js.isUndefined(timestampData)) __obj.updateDynamic("timestampData")(timestampData)
+    __obj.asInstanceOf[DataStoreOptions]
+  }
+}
+

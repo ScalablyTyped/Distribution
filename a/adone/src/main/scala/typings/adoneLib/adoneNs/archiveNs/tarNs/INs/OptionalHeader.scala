@@ -13,3 +13,12 @@ import scala.scalajs.js.annotation._
   var name: java.lang.String
 }
 
+object OptionalHeader {
+  @scala.inline
+  def apply(name: java.lang.String): OptionalHeader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[OptionalHeader]
+  }
+}
+

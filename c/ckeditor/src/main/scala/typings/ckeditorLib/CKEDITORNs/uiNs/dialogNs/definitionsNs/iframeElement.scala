@@ -12,3 +12,20 @@ trait iframeElement extends js.Object {
   var width: java.lang.String
 }
 
+object iframeElement {
+  @scala.inline
+  def apply(
+    height: java.lang.String,
+    src: java.lang.String,
+    width: java.lang.String,
+    onContentLoad: js.Function0[scala.Unit] = null
+  ): iframeElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("width")(width)
+    if (onContentLoad != null) __obj.updateDynamic("onContentLoad")(onContentLoad)
+    __obj.asInstanceOf[iframeElement]
+  }
+}
+

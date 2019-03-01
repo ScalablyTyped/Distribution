@@ -45,3 +45,58 @@ trait ReactNativePhotoViewProps extends js.Object {
   var source: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageSourcePropType] = js.undefined
 }
 
+object ReactNativePhotoViewProps {
+  @scala.inline
+  def apply(
+    androidScaleType: reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.center | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.centerCrop | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.centerInside | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.fitCenter | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.fitStart | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.fitEnd | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.fitXY = null,
+    androidZoomTransitionDuration: scala.Int | scala.Double = null,
+    fadeDuration: scala.Int | scala.Double = null,
+    loadingIndicatorSource: reactDashNativeLib.reactDashNativeMod.ImageSourcePropType = null,
+    maximumZoomScale: scala.Int | scala.Double = null,
+    minimumZoomScale: scala.Int | scala.Double = null,
+    onLoad: js.Function0[scala.Unit] = null,
+    onLoadEnd: js.Function0[scala.Unit] = null,
+    onLoadStart: js.Function0[scala.Unit] = null,
+    onProgress: js.Function2[/* loaded */ scala.Double, /* total */ scala.Double, scala.Unit] = null,
+    onScale: js.Function2[
+      /* scale */ scala.Double, 
+      /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]], 
+      scala.Unit
+    ] = null,
+    onTap: js.Function2[
+      /* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, 
+      /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]], 
+      scala.Unit
+    ] = null,
+    onViewTap: js.Function2[
+      /* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, 
+      /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]], 
+      scala.Unit
+    ] = null,
+    scale: scala.Int | scala.Double = null,
+    showsHorizontalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    showsVerticalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    source: reactDashNativeLib.reactDashNativeMod.ImageSourcePropType = null
+  ): ReactNativePhotoViewProps = {
+    val __obj = js.Dynamic.literal()
+    if (androidScaleType != null) __obj.updateDynamic("androidScaleType")(androidScaleType.asInstanceOf[js.Any])
+    if (androidZoomTransitionDuration != null) __obj.updateDynamic("androidZoomTransitionDuration")(androidZoomTransitionDuration.asInstanceOf[js.Any])
+    if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
+    if (loadingIndicatorSource != null) __obj.updateDynamic("loadingIndicatorSource")(loadingIndicatorSource.asInstanceOf[js.Any])
+    if (maximumZoomScale != null) __obj.updateDynamic("maximumZoomScale")(maximumZoomScale.asInstanceOf[js.Any])
+    if (minimumZoomScale != null) __obj.updateDynamic("minimumZoomScale")(minimumZoomScale.asInstanceOf[js.Any])
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(onLoadEnd)
+    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(onLoadStart)
+    if (onProgress != null) __obj.updateDynamic("onProgress")(onProgress)
+    if (onScale != null) __obj.updateDynamic("onScale")(onScale)
+    if (onTap != null) __obj.updateDynamic("onTap")(onTap)
+    if (onViewTap != null) __obj.updateDynamic("onViewTap")(onViewTap)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator)
+    if (!js.isUndefined(showsVerticalScrollIndicator)) __obj.updateDynamic("showsVerticalScrollIndicator")(showsVerticalScrollIndicator)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReactNativePhotoViewProps]
+  }
+}
+

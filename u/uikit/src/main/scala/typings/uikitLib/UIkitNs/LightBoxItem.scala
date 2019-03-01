@@ -10,3 +10,12 @@ trait LightBoxItem extends js.Object {
   var `type`: java.lang.String
 }
 
+object LightBoxItem {
+  @scala.inline
+  def apply(source: java.lang.String, `type`: java.lang.String): LightBoxItem = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[LightBoxItem]
+  }
+}
+

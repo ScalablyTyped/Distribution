@@ -37,3 +37,20 @@ trait ConditionalFormatRuleLoadOptions extends js.Object {
   var formulaR1C1: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConditionalFormatRuleLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    formula: js.UndefOr[scala.Boolean] = js.undefined,
+    formulaLocal: js.UndefOr[scala.Boolean] = js.undefined,
+    formulaR1C1: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConditionalFormatRuleLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(formula)) __obj.updateDynamic("formula")(formula)
+    if (!js.isUndefined(formulaLocal)) __obj.updateDynamic("formulaLocal")(formulaLocal)
+    if (!js.isUndefined(formulaR1C1)) __obj.updateDynamic("formulaR1C1")(formulaR1C1)
+    __obj.asInstanceOf[ConditionalFormatRuleLoadOptions]
+  }
+}
+

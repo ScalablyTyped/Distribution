@@ -41,3 +41,24 @@ trait ASPxClientDashboardItemDataDimension extends js.Object {
   def Format(value: js.Object): java.lang.String
 }
 
+object ASPxClientDashboardItemDataDimension {
+  @scala.inline
+  def apply(
+    DataMember: java.lang.String,
+    DateTimeGroupInterval: java.lang.String,
+    Format: js.Function1[js.Object, java.lang.String],
+    Id: java.lang.String,
+    Name: java.lang.String,
+    TextGroupInterval: java.lang.String
+  ): ASPxClientDashboardItemDataDimension = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataMember")(DataMember)
+    __obj.updateDynamic("DateTimeGroupInterval")(DateTimeGroupInterval)
+    __obj.updateDynamic("Format")(Format)
+    __obj.updateDynamic("Id")(Id)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("TextGroupInterval")(TextGroupInterval)
+    __obj.asInstanceOf[ASPxClientDashboardItemDataDimension]
+  }
+}
+

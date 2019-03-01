@@ -61,3 +61,38 @@ trait Layout extends js.Object {
   var y: scala.Double
 }
 
+object Layout {
+  @scala.inline
+  def apply(
+    h: scala.Double,
+    w: scala.Double,
+    x: scala.Double,
+    y: scala.Double,
+    i: java.lang.String = null,
+    isDraggable: js.UndefOr[scala.Boolean] = js.undefined,
+    isResizable: js.UndefOr[scala.Boolean] = js.undefined,
+    maxH: scala.Int | scala.Double = null,
+    maxW: scala.Int | scala.Double = null,
+    minH: scala.Int | scala.Double = null,
+    minW: scala.Int | scala.Double = null,
+    moved: js.UndefOr[scala.Boolean] = js.undefined,
+    static: js.UndefOr[scala.Boolean] = js.undefined
+  ): Layout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("w")(w)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    if (i != null) __obj.updateDynamic("i")(i)
+    if (!js.isUndefined(isDraggable)) __obj.updateDynamic("isDraggable")(isDraggable)
+    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable)
+    if (maxH != null) __obj.updateDynamic("maxH")(maxH.asInstanceOf[js.Any])
+    if (maxW != null) __obj.updateDynamic("maxW")(maxW.asInstanceOf[js.Any])
+    if (minH != null) __obj.updateDynamic("minH")(minH.asInstanceOf[js.Any])
+    if (minW != null) __obj.updateDynamic("minW")(minW.asInstanceOf[js.Any])
+    if (!js.isUndefined(moved)) __obj.updateDynamic("moved")(moved)
+    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static)
+    __obj.asInstanceOf[Layout]
+  }
+}
+

@@ -13,3 +13,16 @@ trait AcsTokenResponse
   var WrapAccessTokenExpiresIn: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary[java.lang.String]
 }
 
+object AcsTokenResponse {
+  @scala.inline
+  def apply(
+    WrapAccessToken: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary[java.lang.String],
+    WrapAccessTokenExpiresIn: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary[java.lang.String]
+  ): AcsTokenResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("WrapAccessToken")(WrapAccessToken)
+    __obj.updateDynamic("WrapAccessTokenExpiresIn")(WrapAccessTokenExpiresIn)
+    __obj.asInstanceOf[AcsTokenResponse]
+  }
+}
+

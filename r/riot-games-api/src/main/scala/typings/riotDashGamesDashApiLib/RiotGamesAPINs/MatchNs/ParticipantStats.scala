@@ -71,3 +71,138 @@ trait ParticipantStats extends js.Object {
   var winner: scala.Boolean
 }
 
+object ParticipantStats {
+  @scala.inline
+  def apply(
+    assists: scala.Double,
+    champLevel: scala.Double,
+    combatPlayerScore: scala.Double,
+    deaths: scala.Double,
+    doubleKills: scala.Double,
+    firstBloodAssist: scala.Boolean,
+    firstBloodKill: scala.Boolean,
+    firstInhibitorAssist: scala.Boolean,
+    firstInhibitorKill: scala.Boolean,
+    firstTowerAssist: scala.Boolean,
+    firstTowerKill: scala.Boolean,
+    goldEarned: scala.Double,
+    goldSpent: scala.Double,
+    inhibitorKills: scala.Double,
+    item0: scala.Double,
+    item1: scala.Double,
+    item2: scala.Double,
+    item3: scala.Double,
+    item4: scala.Double,
+    item5: scala.Double,
+    item6: scala.Double,
+    killingSprees: scala.Double,
+    kills: scala.Double,
+    largestCriticalStrike: scala.Double,
+    largestKillingSpree: scala.Double,
+    largestMultiKill: scala.Double,
+    magicDamageDealt: scala.Double,
+    magicDamageDealtToChampions: scala.Double,
+    magicDamageTaken: scala.Double,
+    minionsKilled: scala.Double,
+    neutralMinionsKilled: scala.Double,
+    neutralMinionsKilledEnemyJungle: scala.Double,
+    neutralMinionsKilledTeamJungle: scala.Double,
+    nodeCapture: scala.Double,
+    nodeCaptureAssist: scala.Double,
+    nodeNeutralize: scala.Double,
+    nodeNeutralizeAssist: scala.Double,
+    objectivePlayerScore: scala.Double,
+    pentaKills: scala.Double,
+    physicalDamageDealt: scala.Double,
+    physicalDamageDealtToChampions: scala.Double,
+    physicalDamageTaken: scala.Double,
+    quadraKills: scala.Double,
+    sightWardsBoughtInGame: scala.Double,
+    teamObjective: scala.Double,
+    totalDamageDealt: scala.Double,
+    totalDamageDealtToChampions: scala.Double,
+    totalDamageTaken: scala.Double,
+    totalHeal: scala.Double,
+    totalPlayerScore: scala.Double,
+    totalScoreRank: scala.Double,
+    totalTimeCrowdControlDealt: scala.Double,
+    totalUnitsHealed: scala.Double,
+    towerKills: scala.Double,
+    tripleKills: scala.Double,
+    trueDamageDealt: scala.Double,
+    trueDamageDealtToChampions: scala.Double,
+    trueDamageTaken: scala.Double,
+    unrealKills: scala.Double,
+    visionWardsBoughtInGame: scala.Double,
+    wardsKilled: scala.Double,
+    wardsPlaced: scala.Double,
+    winner: scala.Boolean
+  ): ParticipantStats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("assists")(assists)
+    __obj.updateDynamic("champLevel")(champLevel)
+    __obj.updateDynamic("combatPlayerScore")(combatPlayerScore)
+    __obj.updateDynamic("deaths")(deaths)
+    __obj.updateDynamic("doubleKills")(doubleKills)
+    __obj.updateDynamic("firstBloodAssist")(firstBloodAssist)
+    __obj.updateDynamic("firstBloodKill")(firstBloodKill)
+    __obj.updateDynamic("firstInhibitorAssist")(firstInhibitorAssist)
+    __obj.updateDynamic("firstInhibitorKill")(firstInhibitorKill)
+    __obj.updateDynamic("firstTowerAssist")(firstTowerAssist)
+    __obj.updateDynamic("firstTowerKill")(firstTowerKill)
+    __obj.updateDynamic("goldEarned")(goldEarned)
+    __obj.updateDynamic("goldSpent")(goldSpent)
+    __obj.updateDynamic("inhibitorKills")(inhibitorKills)
+    __obj.updateDynamic("item0")(item0)
+    __obj.updateDynamic("item1")(item1)
+    __obj.updateDynamic("item2")(item2)
+    __obj.updateDynamic("item3")(item3)
+    __obj.updateDynamic("item4")(item4)
+    __obj.updateDynamic("item5")(item5)
+    __obj.updateDynamic("item6")(item6)
+    __obj.updateDynamic("killingSprees")(killingSprees)
+    __obj.updateDynamic("kills")(kills)
+    __obj.updateDynamic("largestCriticalStrike")(largestCriticalStrike)
+    __obj.updateDynamic("largestKillingSpree")(largestKillingSpree)
+    __obj.updateDynamic("largestMultiKill")(largestMultiKill)
+    __obj.updateDynamic("magicDamageDealt")(magicDamageDealt)
+    __obj.updateDynamic("magicDamageDealtToChampions")(magicDamageDealtToChampions)
+    __obj.updateDynamic("magicDamageTaken")(magicDamageTaken)
+    __obj.updateDynamic("minionsKilled")(minionsKilled)
+    __obj.updateDynamic("neutralMinionsKilled")(neutralMinionsKilled)
+    __obj.updateDynamic("neutralMinionsKilledEnemyJungle")(neutralMinionsKilledEnemyJungle)
+    __obj.updateDynamic("neutralMinionsKilledTeamJungle")(neutralMinionsKilledTeamJungle)
+    __obj.updateDynamic("nodeCapture")(nodeCapture)
+    __obj.updateDynamic("nodeCaptureAssist")(nodeCaptureAssist)
+    __obj.updateDynamic("nodeNeutralize")(nodeNeutralize)
+    __obj.updateDynamic("nodeNeutralizeAssist")(nodeNeutralizeAssist)
+    __obj.updateDynamic("objectivePlayerScore")(objectivePlayerScore)
+    __obj.updateDynamic("pentaKills")(pentaKills)
+    __obj.updateDynamic("physicalDamageDealt")(physicalDamageDealt)
+    __obj.updateDynamic("physicalDamageDealtToChampions")(physicalDamageDealtToChampions)
+    __obj.updateDynamic("physicalDamageTaken")(physicalDamageTaken)
+    __obj.updateDynamic("quadraKills")(quadraKills)
+    __obj.updateDynamic("sightWardsBoughtInGame")(sightWardsBoughtInGame)
+    __obj.updateDynamic("teamObjective")(teamObjective)
+    __obj.updateDynamic("totalDamageDealt")(totalDamageDealt)
+    __obj.updateDynamic("totalDamageDealtToChampions")(totalDamageDealtToChampions)
+    __obj.updateDynamic("totalDamageTaken")(totalDamageTaken)
+    __obj.updateDynamic("totalHeal")(totalHeal)
+    __obj.updateDynamic("totalPlayerScore")(totalPlayerScore)
+    __obj.updateDynamic("totalScoreRank")(totalScoreRank)
+    __obj.updateDynamic("totalTimeCrowdControlDealt")(totalTimeCrowdControlDealt)
+    __obj.updateDynamic("totalUnitsHealed")(totalUnitsHealed)
+    __obj.updateDynamic("towerKills")(towerKills)
+    __obj.updateDynamic("tripleKills")(tripleKills)
+    __obj.updateDynamic("trueDamageDealt")(trueDamageDealt)
+    __obj.updateDynamic("trueDamageDealtToChampions")(trueDamageDealtToChampions)
+    __obj.updateDynamic("trueDamageTaken")(trueDamageTaken)
+    __obj.updateDynamic("unrealKills")(unrealKills)
+    __obj.updateDynamic("visionWardsBoughtInGame")(visionWardsBoughtInGame)
+    __obj.updateDynamic("wardsKilled")(wardsKilled)
+    __obj.updateDynamic("wardsPlaced")(wardsPlaced)
+    __obj.updateDynamic("winner")(winner)
+    __obj.asInstanceOf[ParticipantStats]
+  }
+}
+

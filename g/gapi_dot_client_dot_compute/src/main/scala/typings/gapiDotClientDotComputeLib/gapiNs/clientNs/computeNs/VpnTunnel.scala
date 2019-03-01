@@ -52,3 +52,46 @@ trait VpnTunnel extends js.Object {
   var targetVpnGateway: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VpnTunnel {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    detailedStatus: java.lang.String = null,
+    id: java.lang.String = null,
+    ikeVersion: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    localTrafficSelector: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    peerIp: java.lang.String = null,
+    region: java.lang.String = null,
+    remoteTrafficSelector: js.Array[java.lang.String] = null,
+    router: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    sharedSecret: java.lang.String = null,
+    sharedSecretHash: java.lang.String = null,
+    status: java.lang.String = null,
+    targetVpnGateway: java.lang.String = null
+  ): VpnTunnel = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (detailedStatus != null) __obj.updateDynamic("detailedStatus")(detailedStatus)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (ikeVersion != null) __obj.updateDynamic("ikeVersion")(ikeVersion.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (localTrafficSelector != null) __obj.updateDynamic("localTrafficSelector")(localTrafficSelector)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (peerIp != null) __obj.updateDynamic("peerIp")(peerIp)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (remoteTrafficSelector != null) __obj.updateDynamic("remoteTrafficSelector")(remoteTrafficSelector)
+    if (router != null) __obj.updateDynamic("router")(router)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (sharedSecret != null) __obj.updateDynamic("sharedSecret")(sharedSecret)
+    if (sharedSecretHash != null) __obj.updateDynamic("sharedSecretHash")(sharedSecretHash)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (targetVpnGateway != null) __obj.updateDynamic("targetVpnGateway")(targetVpnGateway)
+    __obj.asInstanceOf[VpnTunnel]
+  }
+}
+

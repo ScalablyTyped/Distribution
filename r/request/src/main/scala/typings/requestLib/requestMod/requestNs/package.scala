@@ -13,7 +13,6 @@ package object requestNs {
   type OptionsWithUrl = UrlOptions with CoreOptions
   type RequestCallback = js.Function3[/* error */ js.Any, /* response */ Response, /* body */ js.Any, scala.Unit]
   type RequestResponse = Response
-  type RequiredUriUrl = UriOptions | UrlOptions
   // aliases for backwards compatibility
   type ResponseRequest = Request
 }

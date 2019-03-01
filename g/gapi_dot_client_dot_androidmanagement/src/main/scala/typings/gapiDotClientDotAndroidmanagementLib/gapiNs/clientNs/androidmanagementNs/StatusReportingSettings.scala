@@ -20,3 +20,24 @@ trait StatusReportingSettings extends js.Object {
   var softwareInfoEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StatusReportingSettings {
+  @scala.inline
+  def apply(
+    displayInfoEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    hardwareStatusEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    memoryInfoEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    networkInfoEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    powerManagementEventsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    softwareInfoEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): StatusReportingSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(displayInfoEnabled)) __obj.updateDynamic("displayInfoEnabled")(displayInfoEnabled)
+    if (!js.isUndefined(hardwareStatusEnabled)) __obj.updateDynamic("hardwareStatusEnabled")(hardwareStatusEnabled)
+    if (!js.isUndefined(memoryInfoEnabled)) __obj.updateDynamic("memoryInfoEnabled")(memoryInfoEnabled)
+    if (!js.isUndefined(networkInfoEnabled)) __obj.updateDynamic("networkInfoEnabled")(networkInfoEnabled)
+    if (!js.isUndefined(powerManagementEventsEnabled)) __obj.updateDynamic("powerManagementEventsEnabled")(powerManagementEventsEnabled)
+    if (!js.isUndefined(softwareInfoEnabled)) __obj.updateDynamic("softwareInfoEnabled")(softwareInfoEnabled)
+    __obj.asInstanceOf[StatusReportingSettings]
+  }
+}
+

@@ -14,3 +14,18 @@ trait ParameterOptions extends js.Object {
   var scale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ParameterOptions {
+  @scala.inline
+  def apply(
+    length: scala.Double | tediousLib.tediousLibStrings.max = null,
+    precision: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null
+  ): ParameterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParameterOptions]
+  }
+}
+

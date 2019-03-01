@@ -26,3 +26,18 @@ trait CloneOptions extends js.Object {
   var onlyEnumerable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CloneOptions {
+  @scala.inline
+  def apply(
+    deep: js.UndefOr[scala.Boolean] = js.undefined,
+    nonPlainObjects: js.UndefOr[scala.Boolean] = js.undefined,
+    onlyEnumerable: js.UndefOr[scala.Boolean] = js.undefined
+  ): CloneOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
+    if (!js.isUndefined(nonPlainObjects)) __obj.updateDynamic("nonPlainObjects")(nonPlainObjects)
+    if (!js.isUndefined(onlyEnumerable)) __obj.updateDynamic("onlyEnumerable")(onlyEnumerable)
+    __obj.asInstanceOf[CloneOptions]
+  }
+}
+

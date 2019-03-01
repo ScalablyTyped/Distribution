@@ -9,3 +9,12 @@ trait Anon_DefaultRetention extends js.Object {
   var defaultRetention: Anon_DaysMode
 }
 
+object Anon_DefaultRetention {
+  @scala.inline
+  def apply(defaultRetention: Anon_DaysMode): Anon_DefaultRetention = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultRetention")(defaultRetention)
+    __obj.asInstanceOf[Anon_DefaultRetention]
+  }
+}
+

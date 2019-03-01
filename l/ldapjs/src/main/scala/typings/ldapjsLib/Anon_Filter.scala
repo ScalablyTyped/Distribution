@@ -9,3 +9,12 @@ trait Anon_Filter extends js.Object {
   var filter: ldapjsLib.ldapjsMod.Filter
 }
 
+object Anon_Filter {
+  @scala.inline
+  def apply(filter: ldapjsLib.ldapjsMod.Filter): Anon_Filter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filter")(filter)
+    __obj.asInstanceOf[Anon_Filter]
+  }
+}
+

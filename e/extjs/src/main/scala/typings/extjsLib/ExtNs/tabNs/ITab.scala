@@ -29,3 +29,44 @@ trait ITab
   var setClosable: js.UndefOr[js.Function1[/* closable */ js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
 }
 
+object ITab {
+  @scala.inline
+  def apply(
+    IButton: extjsLib.ExtNs.buttonNs.IButton = null,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    activeCls: java.lang.String = null,
+    baseCls: java.lang.String = null,
+    closable: js.UndefOr[scala.Boolean] = js.undefined,
+    closableCls: java.lang.String = null,
+    closeText: java.lang.String = null,
+    disable: js.Function1[/* silent */ js.UndefOr[js.Any], scala.Unit] = null,
+    disabledCls: java.lang.String = null,
+    enable: js.Function1[/* silent */ js.UndefOr[js.Any], scala.Unit] = null,
+    getTemplateArgs: js.Function0[_] = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    isTab: js.UndefOr[scala.Boolean] = js.undefined,
+    scale: js.Any = null,
+    setCard: js.Function1[/* card */ js.UndefOr[extjsLib.ExtNs.IComponent], scala.Unit] = null,
+    setClosable: js.Function1[/* closable */ js.UndefOr[scala.Boolean], scala.Unit] = null
+  ): ITab = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IButton)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
+    if (closableCls != null) __obj.updateDynamic("closableCls")(closableCls)
+    if (closeText != null) __obj.updateDynamic("closeText")(closeText)
+    if (disable != null) __obj.updateDynamic("disable")(disable)
+    if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls)
+    if (enable != null) __obj.updateDynamic("enable")(enable)
+    if (getTemplateArgs != null) __obj.updateDynamic("getTemplateArgs")(getTemplateArgs)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (!js.isUndefined(isTab)) __obj.updateDynamic("isTab")(isTab)
+    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (setCard != null) __obj.updateDynamic("setCard")(setCard)
+    if (setClosable != null) __obj.updateDynamic("setClosable")(setClosable)
+    __obj.asInstanceOf[ITab]
+  }
+}
+

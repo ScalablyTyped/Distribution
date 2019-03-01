@@ -70,3 +70,36 @@ trait AttachedDisk extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AttachedDisk {
+  @scala.inline
+  def apply(
+    autoDelete: js.UndefOr[scala.Boolean] = js.undefined,
+    boot: js.UndefOr[scala.Boolean] = js.undefined,
+    deviceName: java.lang.String = null,
+    diskEncryptionKey: CustomerEncryptionKey = null,
+    index: scala.Int | scala.Double = null,
+    initializeParams: AttachedDiskInitializeParams = null,
+    interface: java.lang.String = null,
+    kind: java.lang.String = null,
+    licenses: js.Array[java.lang.String] = null,
+    mode: java.lang.String = null,
+    source: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): AttachedDisk = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete)
+    if (!js.isUndefined(boot)) __obj.updateDynamic("boot")(boot)
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
+    if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (initializeParams != null) __obj.updateDynamic("initializeParams")(initializeParams)
+    if (interface != null) __obj.updateDynamic("interface")(interface)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (licenses != null) __obj.updateDynamic("licenses")(licenses)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AttachedDisk]
+  }
+}
+

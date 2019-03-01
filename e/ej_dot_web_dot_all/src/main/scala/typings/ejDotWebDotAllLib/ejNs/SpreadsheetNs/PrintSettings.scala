@@ -20,3 +20,18 @@ trait PrintSettings extends js.Object {
   var allowPrinting: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PrintSettings {
+  @scala.inline
+  def apply(
+    allowPageSetup: js.UndefOr[scala.Boolean] = js.undefined,
+    allowPageSize: js.UndefOr[scala.Boolean] = js.undefined,
+    allowPrinting: js.UndefOr[scala.Boolean] = js.undefined
+  ): PrintSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowPageSetup)) __obj.updateDynamic("allowPageSetup")(allowPageSetup)
+    if (!js.isUndefined(allowPageSize)) __obj.updateDynamic("allowPageSize")(allowPageSize)
+    if (!js.isUndefined(allowPrinting)) __obj.updateDynamic("allowPrinting")(allowPrinting)
+    __obj.asInstanceOf[PrintSettings]
+  }
+}
+

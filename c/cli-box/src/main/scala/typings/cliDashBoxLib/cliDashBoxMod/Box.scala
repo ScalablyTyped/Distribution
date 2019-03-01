@@ -11,3 +11,18 @@ trait Box extends js.Object {
   def stringify(): java.lang.String
 }
 
+object Box {
+  @scala.inline
+  def apply(
+    options: cliDashBoxLib.Anon_Fullscreen,
+    settings: cliDashBoxLib.Anon_Height,
+    stringify: js.Function0[java.lang.String]
+  ): Box = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("settings")(settings)
+    __obj.updateDynamic("stringify")(stringify)
+    __obj.asInstanceOf[Box]
+  }
+}
+

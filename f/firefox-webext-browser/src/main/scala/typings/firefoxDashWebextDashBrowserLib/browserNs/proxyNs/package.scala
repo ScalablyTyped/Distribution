@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object proxyNs {
-  /** The type of proxy to use. */
-  type _ProxyConfigProxyType = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.none | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.autoDetect | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.system | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.manual | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.autoConfig
   type _ProxyOnRequestEvent[T] = firefoxDashWebextDashBrowserLib.WebExtEventBase[
     js.Function3[
       /* callback */ T, 

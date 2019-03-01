@@ -32,3 +32,25 @@ trait IgGridTooltipsColumnSettings
   var maxWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgGridTooltipsColumnSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridTooltipsColumnSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowTooltips: js.UndefOr[scala.Boolean] = js.undefined,
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    maxWidth: scala.Int | scala.Double = null
+  ): IgGridTooltipsColumnSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowTooltips)) __obj.updateDynamic("allowTooltips")(allowTooltips)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgGridTooltipsColumnSettings]
+  }
+}
+

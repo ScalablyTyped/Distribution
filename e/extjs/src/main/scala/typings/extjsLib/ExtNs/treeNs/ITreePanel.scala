@@ -122,3 +122,86 @@ trait ITreePanel
   var useArrows: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ITreePanel {
+  @scala.inline
+  def apply(
+    ITable: extjsLib.ExtNs.panelNs.ITable = null,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseAll: js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    collapseNode: js.Function4[
+      /* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
+      /* deep */ js.UndefOr[scala.Boolean], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    deferRowRender: js.UndefOr[scala.Boolean] = js.undefined,
+    displayField: java.lang.String = null,
+    expandAll: js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    expandNode: js.Function4[
+      /* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
+      /* deep */ js.UndefOr[scala.Boolean], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    expandPath: js.Function5[
+      /* path */ js.UndefOr[java.lang.String], 
+      /* field */ js.UndefOr[java.lang.String], 
+      /* separator */ js.UndefOr[java.lang.String], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    folderSort: js.UndefOr[scala.Boolean] = js.undefined,
+    getChecked: js.Function0[extjsLib.ExtNs.Array] = null,
+    getRootNode: js.Function0[extjsLib.ExtNs.dataNs.INodeInterface] = null,
+    hideHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    lines: js.UndefOr[scala.Boolean] = js.undefined,
+    root: js.Any = null,
+    rootVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    rowLines: js.UndefOr[scala.Boolean] = js.undefined,
+    selType: java.lang.String = null,
+    selectPath: js.Function5[
+      /* path */ js.UndefOr[java.lang.String], 
+      /* field */ js.UndefOr[java.lang.String], 
+      /* separator */ js.UndefOr[java.lang.String], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    setRootNode: js.Function1[/* root */ js.UndefOr[js.Any], extjsLib.ExtNs.dataNs.INodeInterface] = null,
+    singleExpand: js.UndefOr[scala.Boolean] = js.undefined,
+    store: extjsLib.ExtNs.dataNs.ITreeStore = null,
+    useArrows: js.UndefOr[scala.Boolean] = js.undefined,
+    viewType: java.lang.String = null
+  ): ITreePanel = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ITable)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (collapseAll != null) __obj.updateDynamic("collapseAll")(collapseAll)
+    if (collapseNode != null) __obj.updateDynamic("collapseNode")(collapseNode)
+    if (!js.isUndefined(deferRowRender)) __obj.updateDynamic("deferRowRender")(deferRowRender)
+    if (displayField != null) __obj.updateDynamic("displayField")(displayField)
+    if (expandAll != null) __obj.updateDynamic("expandAll")(expandAll)
+    if (expandNode != null) __obj.updateDynamic("expandNode")(expandNode)
+    if (expandPath != null) __obj.updateDynamic("expandPath")(expandPath)
+    if (!js.isUndefined(folderSort)) __obj.updateDynamic("folderSort")(folderSort)
+    if (getChecked != null) __obj.updateDynamic("getChecked")(getChecked)
+    if (getRootNode != null) __obj.updateDynamic("getRootNode")(getRootNode)
+    if (!js.isUndefined(hideHeaders)) __obj.updateDynamic("hideHeaders")(hideHeaders)
+    if (!js.isUndefined(lines)) __obj.updateDynamic("lines")(lines)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (!js.isUndefined(rootVisible)) __obj.updateDynamic("rootVisible")(rootVisible)
+    if (!js.isUndefined(rowLines)) __obj.updateDynamic("rowLines")(rowLines)
+    if (selType != null) __obj.updateDynamic("selType")(selType)
+    if (selectPath != null) __obj.updateDynamic("selectPath")(selectPath)
+    if (setRootNode != null) __obj.updateDynamic("setRootNode")(setRootNode)
+    if (!js.isUndefined(singleExpand)) __obj.updateDynamic("singleExpand")(singleExpand)
+    if (store != null) __obj.updateDynamic("store")(store)
+    if (!js.isUndefined(useArrows)) __obj.updateDynamic("useArrows")(useArrows)
+    if (viewType != null) __obj.updateDynamic("viewType")(viewType)
+    __obj.asInstanceOf[ITreePanel]
+  }
+}
+

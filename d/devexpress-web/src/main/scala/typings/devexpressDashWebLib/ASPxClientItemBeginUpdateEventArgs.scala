@@ -16,3 +16,12 @@ trait ASPxClientItemBeginUpdateEventArgs extends ASPxClientEventArgs {
   var ItemName: java.lang.String
 }
 
+object ASPxClientItemBeginUpdateEventArgs {
+  @scala.inline
+  def apply(ItemName: java.lang.String): ASPxClientItemBeginUpdateEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ItemName")(ItemName)
+    __obj.asInstanceOf[ASPxClientItemBeginUpdateEventArgs]
+  }
+}
+

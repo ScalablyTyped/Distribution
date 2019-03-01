@@ -12,3 +12,13 @@ trait UploadData extends js.Object {
   var file: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UploadData {
+  @scala.inline
+  def apply(bytes: stdLib.ArrayBuffer = null, file: java.lang.String = null): UploadData = {
+    val __obj = js.Dynamic.literal()
+    if (bytes != null) __obj.updateDynamic("bytes")(bytes)
+    if (file != null) __obj.updateDynamic("file")(file)
+    __obj.asInstanceOf[UploadData]
+  }
+}
+

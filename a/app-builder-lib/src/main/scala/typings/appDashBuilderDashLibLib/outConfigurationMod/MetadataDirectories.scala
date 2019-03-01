@@ -24,3 +24,18 @@ trait MetadataDirectories extends js.Object {
   val output: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object MetadataDirectories {
+  @scala.inline
+  def apply(
+    app: java.lang.String = null,
+    buildResources: java.lang.String = null,
+    output: java.lang.String = null
+  ): MetadataDirectories = {
+    val __obj = js.Dynamic.literal()
+    if (app != null) __obj.updateDynamic("app")(app)
+    if (buildResources != null) __obj.updateDynamic("buildResources")(buildResources)
+    if (output != null) __obj.updateDynamic("output")(output)
+    __obj.asInstanceOf[MetadataDirectories]
+  }
+}
+

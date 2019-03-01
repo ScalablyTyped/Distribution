@@ -9,3 +9,12 @@ trait Anon_Async extends js.Object {
   var async: reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectLibNumbers.`true`
 }
 
+object Anon_Async {
+  @scala.inline
+  def apply(async: reactDashVirtualizedDashSelectLib.reactDashVirtualizedDashSelectLibNumbers.`true`): Anon_Async = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("async")(async)
+    __obj.asInstanceOf[Anon_Async]
+  }
+}
+

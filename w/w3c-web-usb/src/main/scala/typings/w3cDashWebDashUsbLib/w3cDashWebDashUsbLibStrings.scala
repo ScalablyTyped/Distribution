@@ -7,55 +7,55 @@ import scala.scalajs.js.annotation._
 
 object w3cDashWebDashUsbLibStrings {
   @js.native
-  sealed trait babble extends js.Object
+  sealed trait babble extends USBTransferStatus
   
   @js.native
-  sealed trait bulk extends js.Object
+  sealed trait bulk extends USBEndpointType
   
   @js.native
-  sealed trait `class` extends js.Object
+  sealed trait `class` extends USBRequestType
   
   @js.native
   sealed trait connect extends js.Object
   
   @js.native
-  sealed trait device extends js.Object
+  sealed trait device extends USBRecipient
   
   @js.native
   sealed trait disconnect extends js.Object
   
   @js.native
-  sealed trait endpoint extends js.Object
+  sealed trait endpoint extends USBRecipient
   
   @js.native
-  sealed trait in extends js.Object
+  sealed trait in extends USBDirection
   
   @js.native
-  sealed trait interface extends js.Object
+  sealed trait interface extends USBRecipient
   
   @js.native
-  sealed trait interrupt extends js.Object
+  sealed trait interrupt extends USBEndpointType
   
   @js.native
-  sealed trait isochronous extends js.Object
+  sealed trait isochronous extends USBEndpointType
   
   @js.native
-  sealed trait ok extends js.Object
+  sealed trait ok extends USBTransferStatus
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait other extends USBRecipient
   
   @js.native
-  sealed trait out extends js.Object
+  sealed trait out extends USBDirection
   
   @js.native
-  sealed trait stall extends js.Object
+  sealed trait stall extends USBTransferStatus
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard extends USBRequestType
   
   @js.native
-  sealed trait vendor extends js.Object
+  sealed trait vendor extends USBRequestType
   
   @scala.inline
   def babble: babble = "babble".asInstanceOf[babble]

@@ -39,3 +39,26 @@ trait GroupLicense extends js.Object {
   var productId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GroupLicense {
+  @scala.inline
+  def apply(
+    acquisitionKind: java.lang.String = null,
+    approval: java.lang.String = null,
+    kind: java.lang.String = null,
+    numProvisioned: scala.Int | scala.Double = null,
+    numPurchased: scala.Int | scala.Double = null,
+    permissions: java.lang.String = null,
+    productId: java.lang.String = null
+  ): GroupLicense = {
+    val __obj = js.Dynamic.literal()
+    if (acquisitionKind != null) __obj.updateDynamic("acquisitionKind")(acquisitionKind)
+    if (approval != null) __obj.updateDynamic("approval")(approval)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (numProvisioned != null) __obj.updateDynamic("numProvisioned")(numProvisioned.asInstanceOf[js.Any])
+    if (numPurchased != null) __obj.updateDynamic("numPurchased")(numPurchased.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    __obj.asInstanceOf[GroupLicense]
+  }
+}
+

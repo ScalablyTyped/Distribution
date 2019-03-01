@@ -41,3 +41,30 @@ trait Props extends js.Object {
   var top: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String = null,
+    bottomBoundary: scala.Double | java.lang.String = null,
+    enableTransforms: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    innerZ: scala.Double | java.lang.String = null,
+    onStateChange: js.Function1[/* status */ Status, scala.Unit] = null,
+    releasedClass: java.lang.String = null,
+    shouldFreeze: js.Function0[scala.Boolean] = null,
+    top: scala.Double | java.lang.String = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
+    if (bottomBoundary != null) __obj.updateDynamic("bottomBoundary")(bottomBoundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTransforms)) __obj.updateDynamic("enableTransforms")(enableTransforms)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (innerZ != null) __obj.updateDynamic("innerZ")(innerZ.asInstanceOf[js.Any])
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (releasedClass != null) __obj.updateDynamic("releasedClass")(releasedClass)
+    if (shouldFreeze != null) __obj.updateDynamic("shouldFreeze")(shouldFreeze)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props]
+  }
+}
+

@@ -14,3 +14,12 @@ trait SetDeviceProperties extends js.Object {
   var level: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object SetDeviceProperties {
+  @scala.inline
+  def apply(level: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined): SetDeviceProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level)
+    __obj.asInstanceOf[SetDeviceProperties]
+  }
+}
+

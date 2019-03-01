@@ -10,3 +10,13 @@ trait IndentOptions extends js.Object {
   var indentStart: scala.Boolean
 }
 
+object IndentOptions {
+  @scala.inline
+  def apply(exclude: ExclusionRange | js.Array[ExclusionRange], indentStart: scala.Boolean): IndentOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    __obj.updateDynamic("indentStart")(indentStart)
+    __obj.asInstanceOf[IndentOptions]
+  }
+}
+

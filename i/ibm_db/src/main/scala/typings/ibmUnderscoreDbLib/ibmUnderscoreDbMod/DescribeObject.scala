@@ -13,3 +13,22 @@ trait DescribeObject extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DescribeObject {
+  @scala.inline
+  def apply(
+    database: java.lang.String,
+    column: java.lang.String = null,
+    schema: java.lang.String = null,
+    table: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DescribeObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("database")(database)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (table != null) __obj.updateDynamic("table")(table)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DescribeObject]
+  }
+}
+

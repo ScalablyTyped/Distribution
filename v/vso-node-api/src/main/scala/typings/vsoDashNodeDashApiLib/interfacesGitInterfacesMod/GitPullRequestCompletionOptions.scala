@@ -36,3 +36,26 @@ trait GitPullRequestCompletionOptions extends js.Object {
   var triggeredByAutoComplete: scala.Boolean
 }
 
+object GitPullRequestCompletionOptions {
+  @scala.inline
+  def apply(
+    bypassPolicy: scala.Boolean,
+    bypassReason: java.lang.String,
+    deleteSourceBranch: scala.Boolean,
+    mergeCommitMessage: java.lang.String,
+    squashMerge: scala.Boolean,
+    transitionWorkItems: scala.Boolean,
+    triggeredByAutoComplete: scala.Boolean
+  ): GitPullRequestCompletionOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bypassPolicy")(bypassPolicy)
+    __obj.updateDynamic("bypassReason")(bypassReason)
+    __obj.updateDynamic("deleteSourceBranch")(deleteSourceBranch)
+    __obj.updateDynamic("mergeCommitMessage")(mergeCommitMessage)
+    __obj.updateDynamic("squashMerge")(squashMerge)
+    __obj.updateDynamic("transitionWorkItems")(transitionWorkItems)
+    __obj.updateDynamic("triggeredByAutoComplete")(triggeredByAutoComplete)
+    __obj.asInstanceOf[GitPullRequestCompletionOptions]
+  }
+}
+

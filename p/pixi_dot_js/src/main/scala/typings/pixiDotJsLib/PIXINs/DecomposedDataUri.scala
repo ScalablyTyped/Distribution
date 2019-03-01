@@ -15,3 +15,15 @@ trait DecomposedDataUri extends js.Object {
   var subType: java.lang.String
 }
 
+object DecomposedDataUri {
+  @scala.inline
+  def apply(data: js.Any, encoding: java.lang.String, mediaType: java.lang.String, subType: java.lang.String): DecomposedDataUri = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("encoding")(encoding)
+    __obj.updateDynamic("mediaType")(mediaType)
+    __obj.updateDynamic("subType")(subType)
+    __obj.asInstanceOf[DecomposedDataUri]
+  }
+}
+

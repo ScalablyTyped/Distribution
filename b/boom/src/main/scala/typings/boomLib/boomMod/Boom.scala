@@ -29,3 +29,30 @@ trait Boom[Data]
   def reformat(): java.lang.String
 }
 
+object Boom {
+  @scala.inline
+  def apply[Data](
+    data: Data,
+    isBoom: scala.Boolean,
+    isServer: scala.Boolean,
+    message: java.lang.String,
+    name: java.lang.String,
+    output: boomLib.boomMod.BoomNs.Output,
+    reformat: js.Function0[java.lang.String],
+    isMissing: js.UndefOr[scala.Boolean] = js.undefined,
+    stack: java.lang.String = null
+  ): Boom[Data] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("isBoom")(isBoom)
+    __obj.updateDynamic("isServer")(isServer)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("output")(output)
+    __obj.updateDynamic("reformat")(reformat)
+    if (!js.isUndefined(isMissing)) __obj.updateDynamic("isMissing")(isMissing)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[Boom[Data]]
+  }
+}
+

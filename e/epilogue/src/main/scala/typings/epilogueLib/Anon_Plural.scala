@@ -10,3 +10,13 @@ trait Anon_Plural extends js.Object {
   var singular: java.lang.String
 }
 
+object Anon_Plural {
+  @scala.inline
+  def apply(plural: java.lang.String, singular: java.lang.String): Anon_Plural = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("plural")(plural)
+    __obj.updateDynamic("singular")(singular)
+    __obj.asInstanceOf[Anon_Plural]
+  }
+}
+

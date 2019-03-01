@@ -31,3 +31,28 @@ trait SslCertificate extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SslCertificate {
+  @scala.inline
+  def apply(
+    certificate: java.lang.String = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    privateKey: java.lang.String = null,
+    selfLink: java.lang.String = null
+  ): SslCertificate = {
+    val __obj = js.Dynamic.literal()
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[SslCertificate]
+  }
+}
+

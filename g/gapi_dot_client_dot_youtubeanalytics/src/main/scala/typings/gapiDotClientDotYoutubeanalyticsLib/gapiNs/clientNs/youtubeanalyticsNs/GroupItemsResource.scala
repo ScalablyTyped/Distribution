@@ -14,3 +14,27 @@ trait GroupItemsResource extends js.Object {
   def list(request: gapiDotClientDotYoutubeanalyticsLib.Anon_AltFieldsGroupId): gapiDotClientLib.gapiNs.clientNs.Request[GroupItemListResponse]
 }
 
+object GroupItemsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeanalyticsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeanalyticsLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GroupItem]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeanalyticsLib.Anon_AltFieldsGroupId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GroupItemListResponse]
+    ]
+  ): GroupItemsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[GroupItemsResource]
+  }
+}
+

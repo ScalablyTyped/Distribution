@@ -27,3 +27,30 @@ trait IgGridModalDialogMethods extends js.Object {
   def openModalDialog(): scala.Unit
 }
 
+object IgGridModalDialogMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    closeModalDialog: js.Function2[js.Object, js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getCaptionButtonContainer: js.Function0[scala.Unit],
+    getContent: js.Function0[scala.Unit],
+    getFooter: js.Function0[scala.Unit],
+    openModalDialog: js.Function0[scala.Unit]
+  ): IgGridModalDialogMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("closeModalDialog")(closeModalDialog)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getCaptionButtonContainer")(getCaptionButtonContainer)
+    __obj.updateDynamic("getContent")(getContent)
+    __obj.updateDynamic("getFooter")(getFooter)
+    __obj.updateDynamic("openModalDialog")(openModalDialog)
+    __obj.asInstanceOf[IgGridModalDialogMethods]
+  }
+}
+

@@ -23,3 +23,26 @@ trait IQuickTip
   var unregister: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
 }
 
+object IQuickTip {
+  @scala.inline
+  def apply(
+    IToolTip: extjsLib.ExtNs.tipNs.IToolTip = null,
+    cancelShow: js.Function1[/* el */ js.UndefOr[js.Any], scala.Unit] = null,
+    interceptTitles: js.UndefOr[scala.Boolean] = js.undefined,
+    register: js.Function1[/* config */ js.UndefOr[js.Any], scala.Unit] = null,
+    target: js.Any = null,
+    title: java.lang.String = null,
+    unregister: js.Function1[/* el */ js.UndefOr[js.Any], scala.Unit] = null
+  ): IQuickTip = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IToolTip)
+    if (cancelShow != null) __obj.updateDynamic("cancelShow")(cancelShow)
+    if (!js.isUndefined(interceptTitles)) __obj.updateDynamic("interceptTitles")(interceptTitles)
+    if (register != null) __obj.updateDynamic("register")(register)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (unregister != null) __obj.updateDynamic("unregister")(unregister)
+    __obj.asInstanceOf[IQuickTip]
+  }
+}
+

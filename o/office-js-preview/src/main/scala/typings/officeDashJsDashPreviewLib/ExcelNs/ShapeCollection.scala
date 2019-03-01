@@ -31,7 +31,7 @@ class ShapeCollection ()
     * @param geometricShapeType Represents the geometric type of the shape. See Excel.GeometricShapeType for details.
     */
   def addGeometricShape(
-    geometricShapeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 177 */ java.lang.String
+    geometricShapeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 177 */ js.Any
   ): Shape = js.native
   /**
     *

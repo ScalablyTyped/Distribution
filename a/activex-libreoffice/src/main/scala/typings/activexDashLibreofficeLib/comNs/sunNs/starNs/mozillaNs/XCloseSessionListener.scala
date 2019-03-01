@@ -15,3 +15,20 @@ trait XCloseSessionListener
   def sessionClosed(sessionData: js.Any): scala.Unit
 }
 
+object XCloseSessionListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    sessionClosed: js.Function1[js.Any, scala.Unit]
+  ): XCloseSessionListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("sessionClosed")(sessionClosed)
+    __obj.asInstanceOf[XCloseSessionListener]
+  }
+}
+

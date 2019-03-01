@@ -71,3 +71,26 @@ trait StrokeAttributes extends js.Object {
   var StrokeWidth: scala.Double
 }
 
+object StrokeAttributes {
+  @scala.inline
+  def apply(
+    DashArray: activexDashInteropLib.SafeArray[scala.Double],
+    EndCapType: scala.Double,
+    JoinType: scala.Double,
+    LineArray: activexDashInteropLib.SafeArray[scala.Double],
+    MiterLimit: scala.Double,
+    StartCapType: scala.Double,
+    StrokeWidth: scala.Double
+  ): StrokeAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DashArray")(DashArray)
+    __obj.updateDynamic("EndCapType")(EndCapType)
+    __obj.updateDynamic("JoinType")(JoinType)
+    __obj.updateDynamic("LineArray")(LineArray)
+    __obj.updateDynamic("MiterLimit")(MiterLimit)
+    __obj.updateDynamic("StartCapType")(StartCapType)
+    __obj.updateDynamic("StrokeWidth")(StrokeWidth)
+    __obj.asInstanceOf[StrokeAttributes]
+  }
+}
+

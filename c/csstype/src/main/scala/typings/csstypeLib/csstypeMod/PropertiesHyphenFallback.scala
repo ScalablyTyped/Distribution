@@ -42,3 +42,20 @@ import scala.scalajs.js.annotation._
   var `vector-effect`: js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]] = js.undefined
 }
 
+object PropertiesHyphenFallback {
+  @scala.inline
+  def apply[TLength](
+    ObsoletePropertiesHyphenFallback: ObsoletePropertiesHyphenFallback[TLength] = null,
+    StandardPropertiesHyphenFallback: StandardPropertiesHyphenFallback[TLength] = null,
+    SvgPropertiesHyphenFallback: SvgPropertiesHyphenFallback[TLength] = null,
+    VendorPropertiesHyphenFallback: VendorPropertiesHyphenFallback[TLength] = null
+  ): PropertiesHyphenFallback[TLength] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ObsoletePropertiesHyphenFallback)
+    js.Dynamic.global.Object.assign(__obj, StandardPropertiesHyphenFallback)
+    js.Dynamic.global.Object.assign(__obj, SvgPropertiesHyphenFallback)
+    js.Dynamic.global.Object.assign(__obj, VendorPropertiesHyphenFallback)
+    __obj.asInstanceOf[PropertiesHyphenFallback[TLength]]
+  }
+}
+

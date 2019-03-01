@@ -13,3 +13,21 @@ trait Anon_Buffer extends js.Object {
   def string(): java.lang.String
 }
 
+object Anon_Buffer {
+  @scala.inline
+  def apply(
+    buffer: js.Function0[nodeLib.Buffer],
+    geometry: js.Function0[scala.Null | mysqlLib.mysqlMod.GeometryType],
+    length: scala.Double,
+    string: js.Function0[java.lang.String],
+    `type`: java.lang.String
+  ): Anon_Buffer = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("buffer")(buffer)
+    __obj.updateDynamic("geometry")(geometry)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("string")(string)
+    __obj.asInstanceOf[Anon_Buffer]
+  }
+}
+

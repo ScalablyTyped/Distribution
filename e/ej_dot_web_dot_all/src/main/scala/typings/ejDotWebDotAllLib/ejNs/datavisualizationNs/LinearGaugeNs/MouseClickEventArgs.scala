@@ -44,3 +44,36 @@ trait MouseClickEventArgs extends js.Object {
   var `type`: js.UndefOr[js.Any] = js.undefined
 }
 
+object MouseClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    markerPointerElement: js.Any = null,
+    markerPointerIndex: scala.Int | scala.Double = null,
+    markerPointerValue: scala.Int | scala.Double = null,
+    model: js.Any = null,
+    `object`: js.Any = null,
+    position: js.Any = null,
+    scaleElement: js.Any = null,
+    scaleIndex: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    `type`: js.Any = null
+  ): MouseClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (markerPointerElement != null) __obj.updateDynamic("markerPointerElement")(markerPointerElement)
+    if (markerPointerIndex != null) __obj.updateDynamic("markerPointerIndex")(markerPointerIndex.asInstanceOf[js.Any])
+    if (markerPointerValue != null) __obj.updateDynamic("markerPointerValue")(markerPointerValue.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[MouseClickEventArgs]
+  }
+}
+

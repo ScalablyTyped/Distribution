@@ -15,3 +15,26 @@ trait DomEventRegisterData extends js.Object {
   var target: js.UndefOr[wonderDotJsLib.distEs2015CoreEntityObjectEntityObjectMod.EntityObject] = js.undefined
 }
 
+object DomEventRegisterData {
+  @scala.inline
+  def apply(
+    domHandler: js.Function,
+    eventData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Hash<any> */ js.Any,
+    handler: js.Function,
+    originHandler: js.Function,
+    priority: scala.Double,
+    dom: stdLib.HTMLElement = null,
+    target: wonderDotJsLib.distEs2015CoreEntityObjectEntityObjectMod.EntityObject = null
+  ): DomEventRegisterData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domHandler")(domHandler)
+    __obj.updateDynamic("eventData")(eventData)
+    __obj.updateDynamic("handler")(handler)
+    __obj.updateDynamic("originHandler")(originHandler)
+    __obj.updateDynamic("priority")(priority)
+    if (dom != null) __obj.updateDynamic("dom")(dom)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[DomEventRegisterData]
+  }
+}
+

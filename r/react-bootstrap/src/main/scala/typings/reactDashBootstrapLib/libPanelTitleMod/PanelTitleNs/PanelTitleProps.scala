@@ -12,3 +12,20 @@ trait PanelTitleProps
   var toggle: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PanelTitleProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libPanelTitleMod.PanelTitle] = null,
+    bsClass: java.lang.String = null,
+    componentClass: java.lang.String = null,
+    toggle: js.UndefOr[scala.Boolean] = js.undefined
+  ): PanelTitleProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass)
+    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
+    __obj.asInstanceOf[PanelTitleProps]
+  }
+}
+

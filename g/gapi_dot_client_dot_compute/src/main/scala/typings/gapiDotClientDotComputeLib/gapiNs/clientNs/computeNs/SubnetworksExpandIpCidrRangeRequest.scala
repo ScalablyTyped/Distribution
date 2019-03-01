@@ -13,3 +13,12 @@ trait SubnetworksExpandIpCidrRangeRequest extends js.Object {
   var ipCidrRange: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SubnetworksExpandIpCidrRangeRequest {
+  @scala.inline
+  def apply(ipCidrRange: java.lang.String = null): SubnetworksExpandIpCidrRangeRequest = {
+    val __obj = js.Dynamic.literal()
+    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange)
+    __obj.asInstanceOf[SubnetworksExpandIpCidrRangeRequest]
+  }
+}
+

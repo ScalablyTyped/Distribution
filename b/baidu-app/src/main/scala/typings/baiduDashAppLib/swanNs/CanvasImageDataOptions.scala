@@ -19,3 +19,28 @@ trait CanvasImageDataOptions
   var y: scala.Double
 }
 
+object CanvasImageDataOptions {
+  @scala.inline
+  def apply(
+    canvasId: java.lang.String,
+    height: scala.Double,
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): CanvasImageDataOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canvasId")(canvasId)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[CanvasImageDataOptions]
+  }
+}
+

@@ -43,3 +43,26 @@ trait SyncOptions extends js.Object {
   var searchPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SyncOptions {
+  @scala.inline
+  def apply(
+    alter: js.UndefOr[scala.Boolean] = js.undefined,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    hooks: js.UndefOr[scala.Boolean] = js.undefined,
+    logging: js.Function | scala.Boolean = null,
+    `match`: stdLib.RegExp = null,
+    schema: java.lang.String = null,
+    searchPath: java.lang.String = null
+  ): SyncOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alter)) __obj.updateDynamic("alter")(alter)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
+    __obj.asInstanceOf[SyncOptions]
+  }
+}
+

@@ -12,3 +12,15 @@ trait Anon_ContentSize extends js.Object {
   var text: java.lang.String
 }
 
+object Anon_ContentSize {
+  @scala.inline
+  def apply(contentSize: Anon_Height, eventCount: scala.Double, target: scala.Double, text: java.lang.String): Anon_ContentSize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentSize")(contentSize)
+    __obj.updateDynamic("eventCount")(eventCount)
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Anon_ContentSize]
+  }
+}
+

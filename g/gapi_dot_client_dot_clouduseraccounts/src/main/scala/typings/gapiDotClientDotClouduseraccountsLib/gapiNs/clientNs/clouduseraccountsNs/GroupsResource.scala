@@ -26,3 +26,57 @@ trait GroupsResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
 }
 
+object GroupsResource {
+  @scala.inline
+  def apply(
+    addMember: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Group]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GroupList]
+    ],
+    removeMember: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsGroupName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
+    ]
+  ): GroupsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addMember")(addMember)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("removeMember")(removeMember)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.asInstanceOf[GroupsResource]
+  }
+}
+

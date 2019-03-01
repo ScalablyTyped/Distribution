@@ -18,3 +18,22 @@ trait Anon_Background extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Background {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: java.lang.String = null,
+    text: java.lang.String = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null
+  ): Anon_Background = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_Background]
+  }
+}
+

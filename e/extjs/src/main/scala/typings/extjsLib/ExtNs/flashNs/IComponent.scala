@@ -35,3 +35,48 @@ trait IComponent
   var wmode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IComponent {
+  @scala.inline
+  def apply(
+    EXPRESS_INSTALL_URL: java.lang.String = null,
+    IComponent: extjsLib.ExtNs.IComponent = null,
+    afterRender: js.Function0[scala.Unit] = null,
+    backgroundColor: java.lang.String = null,
+    beforeDestroy: js.Function0[scala.Unit] = null,
+    expressInstall: js.UndefOr[scala.Boolean] = js.undefined,
+    flashAttributes: js.Any = null,
+    flashParams: js.Any = null,
+    flashVars: js.Any = null,
+    flashVersion: java.lang.String = null,
+    getSwfId: js.Function0[scala.Unit] = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    renderTpl: js.Any = null,
+    swf: extjsLib.ExtNs.IElement = null,
+    swfHeight: js.Any = null,
+    swfWidth: js.Any = null,
+    url: java.lang.String = null,
+    wmode: java.lang.String = null
+  ): IComponent = {
+    val __obj = js.Dynamic.literal()
+    if (EXPRESS_INSTALL_URL != null) __obj.updateDynamic("EXPRESS_INSTALL_URL")(EXPRESS_INSTALL_URL)
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy)
+    if (!js.isUndefined(expressInstall)) __obj.updateDynamic("expressInstall")(expressInstall)
+    if (flashAttributes != null) __obj.updateDynamic("flashAttributes")(flashAttributes)
+    if (flashParams != null) __obj.updateDynamic("flashParams")(flashParams)
+    if (flashVars != null) __obj.updateDynamic("flashVars")(flashVars)
+    if (flashVersion != null) __obj.updateDynamic("flashVersion")(flashVersion)
+    if (getSwfId != null) __obj.updateDynamic("getSwfId")(getSwfId)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (swf != null) __obj.updateDynamic("swf")(swf)
+    if (swfHeight != null) __obj.updateDynamic("swfHeight")(swfHeight)
+    if (swfWidth != null) __obj.updateDynamic("swfWidth")(swfWidth)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (wmode != null) __obj.updateDynamic("wmode")(wmode)
+    __obj.asInstanceOf[IComponent]
+  }
+}
+

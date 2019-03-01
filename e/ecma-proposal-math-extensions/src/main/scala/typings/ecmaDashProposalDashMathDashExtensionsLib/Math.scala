@@ -64,3 +64,26 @@ trait Math extends js.Object {
   ): scala.Double
 }
 
+object Math {
+  @scala.inline
+  def apply(
+    DEG_PER_RAD: scala.Double,
+    RAD_PER_DEG: scala.Double,
+    clamp: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
+    degrees: js.Function1[scala.Double, scala.Double],
+    fscale: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
+    radians: js.Function1[scala.Double, scala.Double],
+    scale: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double]
+  ): Math = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DEG_PER_RAD")(DEG_PER_RAD)
+    __obj.updateDynamic("RAD_PER_DEG")(RAD_PER_DEG)
+    __obj.updateDynamic("clamp")(clamp)
+    __obj.updateDynamic("degrees")(degrees)
+    __obj.updateDynamic("fscale")(fscale)
+    __obj.updateDynamic("radians")(radians)
+    __obj.updateDynamic("scale")(scale)
+    __obj.asInstanceOf[Math]
+  }
+}
+

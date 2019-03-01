@@ -14,3 +14,14 @@ trait GetOobConfirmationCodeResponse extends js.Object {
   var oobCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetOobConfirmationCodeResponse {
+  @scala.inline
+  def apply(email: java.lang.String = null, kind: java.lang.String = null, oobCode: java.lang.String = null): GetOobConfirmationCodeResponse = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode)
+    __obj.asInstanceOf[GetOobConfirmationCodeResponse]
+  }
+}
+

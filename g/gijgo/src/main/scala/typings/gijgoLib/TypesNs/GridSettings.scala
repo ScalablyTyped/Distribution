@@ -128,3 +128,169 @@ trait GridSettings[Entity] extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GridSettings {
+  @scala.inline
+  def apply[Entity](
+    autoGenerateColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    autoLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeEmptyRowInsert: js.Function2[/* e */ js.Any, /* $row */ gijgoLib.JQuery, _] = null,
+    bodyRowHeight: java.lang.String = null,
+    cellDataBound: js.Function5[
+      /* e */ js.Any, 
+      /* $wrapper */ gijgoLib.JQuery, 
+      /* id */ java.lang.String, 
+      /* column */ GridColumn, 
+      /* record */ Entity, 
+      _
+    ] = null,
+    cellDataChanged: js.Function6[
+      /* e */ js.Any, 
+      /* $cell */ gijgoLib.JQuery, 
+      /* column */ GridColumn, 
+      /* record */ Entity, 
+      /* oldValue */ js.Any, 
+      /* newValue */ js.Any, 
+      _
+    ] = null,
+    columnHide: js.Function2[/* e */ js.Any, /* column */ GridColumn, _] = null,
+    columnReorder: js.UndefOr[scala.Boolean] = js.undefined,
+    columnShow: js.Function2[/* e */ js.Any, /* column */ GridColumn, _] = null,
+    columns: js.Array[GridColumn] = null,
+    dataBinding: js.Function2[/* e */ js.Any, /* records */ js.Array[Entity], _] = null,
+    dataBound: js.Function3[/* e */ js.Any, /* records */ js.Array[Entity], /* totalRecords */ scala.Double, _] = null,
+    dataFiltered: js.Function2[/* e */ js.Any, /* records */ js.Array[Entity], _] = null,
+    dataSource: js.Any = null,
+    defaultColumnSettings: GridColumn = null,
+    destroying: js.Function1[/* e */ js.Any, _] = null,
+    detailCollapse: js.Function3[/* e */ js.Any, /* detailWrapper */ gijgoLib.JQuery, /* id */ java.lang.String, _] = null,
+    detailExpand: js.Function3[/* e */ js.Any, /* detailWrapper */ gijgoLib.JQuery, /* id */ java.lang.String, _] = null,
+    detailTemplate: java.lang.String = null,
+    fixedHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    fontSize: java.lang.String = null,
+    grouping: GridGrouping = null,
+    headerFilter: GridHeaderFilter = null,
+    headerRowHeight: java.lang.String = null,
+    icons: GridIcons = null,
+    iconsLibrary: java.lang.String = null,
+    initialized: js.Function1[/* e */ js.Any, _] = null,
+    inlineEditing: GridInlineEditing = null,
+    keepExpandedRows: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: java.lang.String = null,
+    mapping: js.Any = null,
+    minWidth: scala.Int | scala.Double = null,
+    notFoundText: java.lang.String = null,
+    optimisticPersistence: GridOptimisticPersistence = null,
+    orderNumberField: java.lang.String = null,
+    pageChanging: js.Function2[/* e */ js.Any, /* newPage */ scala.Double, _] = null,
+    pageSizeChange: js.Function2[/* e */ js.Any, /* newPage */ scala.Double, _] = null,
+    pager: GridPager = null,
+    paramNames: GridParamNames = null,
+    params: js.Any = null,
+    primaryKey: java.lang.String = null,
+    resizableColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    resize: js.Function3[/* e */ js.Any, /* newWidth */ scala.Double, /* oldWidth */ scala.Double, _] = null,
+    resizeCheckInterval: scala.Int | scala.Double = null,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    rowDataBound: js.Function4[
+      /* e */ js.Any, 
+      /* $row */ gijgoLib.JQuery, 
+      /* id */ java.lang.String, 
+      /* record */ Entity, 
+      _
+    ] = null,
+    rowDataChanged: js.Function3[/* e */ js.Any, /* id */ java.lang.String, /* record */ Entity, _] = null,
+    rowRemoving: js.Function4[
+      /* e */ js.Any, 
+      /* $row */ gijgoLib.JQuery, 
+      /* id */ java.lang.String, 
+      /* record */ Entity, 
+      _
+    ] = null,
+    rowReorder: js.UndefOr[scala.Boolean] = js.undefined,
+    rowReorderColumn: java.lang.String = null,
+    rowSelect: js.Function4[
+      /* e */ js.Any, 
+      /* $row */ gijgoLib.JQuery, 
+      /* id */ java.lang.String, 
+      /* record */ Entity, 
+      _
+    ] = null,
+    rowUnselect: js.Function4[
+      /* e */ js.Any, 
+      /* $row */ gijgoLib.JQuery, 
+      /* id */ java.lang.String, 
+      /* record */ Entity, 
+      _
+    ] = null,
+    selectionMethod: java.lang.String = null,
+    selectionType: java.lang.String = null,
+    showHiddenColumnsAsDetails: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    toolbarTemplate: java.lang.String = null,
+    uiLibrary: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): GridSettings[Entity] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoGenerateColumns)) __obj.updateDynamic("autoGenerateColumns")(autoGenerateColumns)
+    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
+    if (beforeEmptyRowInsert != null) __obj.updateDynamic("beforeEmptyRowInsert")(beforeEmptyRowInsert)
+    if (bodyRowHeight != null) __obj.updateDynamic("bodyRowHeight")(bodyRowHeight)
+    if (cellDataBound != null) __obj.updateDynamic("cellDataBound")(cellDataBound)
+    if (cellDataChanged != null) __obj.updateDynamic("cellDataChanged")(cellDataChanged)
+    if (columnHide != null) __obj.updateDynamic("columnHide")(columnHide)
+    if (!js.isUndefined(columnReorder)) __obj.updateDynamic("columnReorder")(columnReorder)
+    if (columnShow != null) __obj.updateDynamic("columnShow")(columnShow)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataFiltered != null) __obj.updateDynamic("dataFiltered")(dataFiltered)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (defaultColumnSettings != null) __obj.updateDynamic("defaultColumnSettings")(defaultColumnSettings)
+    if (destroying != null) __obj.updateDynamic("destroying")(destroying)
+    if (detailCollapse != null) __obj.updateDynamic("detailCollapse")(detailCollapse)
+    if (detailExpand != null) __obj.updateDynamic("detailExpand")(detailExpand)
+    if (detailTemplate != null) __obj.updateDynamic("detailTemplate")(detailTemplate)
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
+    if (grouping != null) __obj.updateDynamic("grouping")(grouping)
+    if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter)
+    if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight)
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary)
+    if (initialized != null) __obj.updateDynamic("initialized")(initialized)
+    if (inlineEditing != null) __obj.updateDynamic("inlineEditing")(inlineEditing)
+    if (!js.isUndefined(keepExpandedRows)) __obj.updateDynamic("keepExpandedRows")(keepExpandedRows)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping)
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (notFoundText != null) __obj.updateDynamic("notFoundText")(notFoundText)
+    if (optimisticPersistence != null) __obj.updateDynamic("optimisticPersistence")(optimisticPersistence)
+    if (orderNumberField != null) __obj.updateDynamic("orderNumberField")(orderNumberField)
+    if (pageChanging != null) __obj.updateDynamic("pageChanging")(pageChanging)
+    if (pageSizeChange != null) __obj.updateDynamic("pageSizeChange")(pageSizeChange)
+    if (pager != null) __obj.updateDynamic("pager")(pager)
+    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns)
+    if (resize != null) __obj.updateDynamic("resize")(resize)
+    if (resizeCheckInterval != null) __obj.updateDynamic("resizeCheckInterval")(resizeCheckInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (rowDataBound != null) __obj.updateDynamic("rowDataBound")(rowDataBound)
+    if (rowDataChanged != null) __obj.updateDynamic("rowDataChanged")(rowDataChanged)
+    if (rowRemoving != null) __obj.updateDynamic("rowRemoving")(rowRemoving)
+    if (!js.isUndefined(rowReorder)) __obj.updateDynamic("rowReorder")(rowReorder)
+    if (rowReorderColumn != null) __obj.updateDynamic("rowReorderColumn")(rowReorderColumn)
+    if (rowSelect != null) __obj.updateDynamic("rowSelect")(rowSelect)
+    if (rowUnselect != null) __obj.updateDynamic("rowUnselect")(rowUnselect)
+    if (selectionMethod != null) __obj.updateDynamic("selectionMethod")(selectionMethod)
+    if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType)
+    if (!js.isUndefined(showHiddenColumnsAsDetails)) __obj.updateDynamic("showHiddenColumnsAsDetails")(showHiddenColumnsAsDetails)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (toolbarTemplate != null) __obj.updateDynamic("toolbarTemplate")(toolbarTemplate)
+    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridSettings[Entity]]
+  }
+}
+

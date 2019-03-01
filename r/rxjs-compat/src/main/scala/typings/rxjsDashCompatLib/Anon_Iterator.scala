@@ -11,3 +11,18 @@ trait Anon_Iterator extends js.Object {
   var rxSubscriber: java.lang.String | js.Symbol
 }
 
+object Anon_Iterator {
+  @scala.inline
+  def apply(
+    iterator: js.Symbol,
+    observable: java.lang.String | js.Symbol,
+    rxSubscriber: java.lang.String | js.Symbol
+  ): Anon_Iterator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iterator")(iterator)
+    __obj.updateDynamic("observable")(observable.asInstanceOf[js.Any])
+    __obj.updateDynamic("rxSubscriber")(rxSubscriber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Iterator]
+  }
+}
+

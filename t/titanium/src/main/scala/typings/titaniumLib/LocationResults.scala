@@ -31,3 +31,22 @@ trait LocationResults extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LocationResults {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    coords: LocationCoordinates = null,
+    error: java.lang.String = null,
+    provider: LocationProviderDict = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): LocationResults = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (coords != null) __obj.updateDynamic("coords")(coords)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[LocationResults]
+  }
+}
+

@@ -16,3 +16,22 @@ trait Element extends ParentNode {
   def matches(selectors: java.lang.String): scala.Boolean
 }
 
+object Element {
+  @scala.inline
+  def apply(
+    append: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit],
+    children: stdLib.HTMLCollection,
+    closest: js.Function1[java.lang.String, Element | scala.Null],
+    matches: js.Function1[java.lang.String, scala.Boolean],
+    prepend: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit]
+  ): Element = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("append")(append)
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("closest")(closest)
+    __obj.updateDynamic("matches")(matches)
+    __obj.updateDynamic("prepend")(prepend)
+    __obj.asInstanceOf[Element]
+  }
+}
+

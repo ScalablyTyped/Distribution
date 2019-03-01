@@ -116,3 +116,66 @@ trait Scale extends js.Object {
   var ticks: js.UndefOr[js.Array[ScalesTick]] = js.undefined
 }
 
+object Scale {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    border: ScalesBorder = null,
+    customLabels: js.Array[ScalesCustomLabel] = null,
+    direction: Direction | java.lang.String = null,
+    indicators: js.Array[ScalesIndicator] = null,
+    labels: js.Array[ScalesLabel] = null,
+    majorIntervalValue: scala.Int | scala.Double = null,
+    maximum: scala.Int | scala.Double = null,
+    minimum: scala.Int | scala.Double = null,
+    minorIntervalValue: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    pointerCap: ScalesPointerCap = null,
+    pointers: js.Array[ScalesPointer] = null,
+    radius: scala.Int | scala.Double = null,
+    ranges: js.Array[ScalesRange] = null,
+    shadowOffset: scala.Int | scala.Double = null,
+    showIndicators: js.UndefOr[scala.Boolean] = js.undefined,
+    showLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    showPointers: js.UndefOr[scala.Boolean] = js.undefined,
+    showRanges: js.UndefOr[scala.Boolean] = js.undefined,
+    showScaleBar: js.UndefOr[scala.Boolean] = js.undefined,
+    showTicks: js.UndefOr[scala.Boolean] = js.undefined,
+    size: scala.Int | scala.Double = null,
+    startAngle: scala.Int | scala.Double = null,
+    subGauges: js.Array[ScalesSubGauge] = null,
+    sweepAngle: scala.Int | scala.Double = null,
+    ticks: js.Array[ScalesTick] = null
+  ): Scale = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (customLabels != null) __obj.updateDynamic("customLabels")(customLabels)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (indicators != null) __obj.updateDynamic("indicators")(indicators)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (majorIntervalValue != null) __obj.updateDynamic("majorIntervalValue")(majorIntervalValue.asInstanceOf[js.Any])
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (minorIntervalValue != null) __obj.updateDynamic("minorIntervalValue")(minorIntervalValue.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (pointerCap != null) __obj.updateDynamic("pointerCap")(pointerCap)
+    if (pointers != null) __obj.updateDynamic("pointers")(pointers)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIndicators)) __obj.updateDynamic("showIndicators")(showIndicators)
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels)
+    if (!js.isUndefined(showPointers)) __obj.updateDynamic("showPointers")(showPointers)
+    if (!js.isUndefined(showRanges)) __obj.updateDynamic("showRanges")(showRanges)
+    if (!js.isUndefined(showScaleBar)) __obj.updateDynamic("showScaleBar")(showScaleBar)
+    if (!js.isUndefined(showTicks)) __obj.updateDynamic("showTicks")(showTicks)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (subGauges != null) __obj.updateDynamic("subGauges")(subGauges)
+    if (sweepAngle != null) __obj.updateDynamic("sweepAngle")(sweepAngle.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    __obj.asInstanceOf[Scale]
+  }
+}
+

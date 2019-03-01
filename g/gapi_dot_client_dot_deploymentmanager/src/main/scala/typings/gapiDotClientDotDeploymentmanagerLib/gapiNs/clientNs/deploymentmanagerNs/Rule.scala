@@ -25,3 +25,26 @@ trait Rule extends js.Object {
   var permissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Rule {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    conditions: js.Array[Condition] = null,
+    description: java.lang.String = null,
+    ins: js.Array[java.lang.String] = null,
+    logConfigs: js.Array[LogConfig] = null,
+    notIns: js.Array[java.lang.String] = null,
+    permissions: js.Array[java.lang.String] = null
+  ): Rule = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (ins != null) __obj.updateDynamic("ins")(ins)
+    if (logConfigs != null) __obj.updateDynamic("logConfigs")(logConfigs)
+    if (notIns != null) __obj.updateDynamic("notIns")(notIns)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[Rule]
+  }
+}
+

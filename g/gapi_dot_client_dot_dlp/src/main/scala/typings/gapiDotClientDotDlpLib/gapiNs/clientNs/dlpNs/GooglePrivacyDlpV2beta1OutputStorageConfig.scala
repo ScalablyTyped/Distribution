@@ -51,3 +51,16 @@ trait GooglePrivacyDlpV2beta1OutputStorageConfig extends js.Object {
   var table: js.UndefOr[GooglePrivacyDlpV2beta1BigQueryTable] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1OutputStorageConfig {
+  @scala.inline
+  def apply(
+    storagePath: GooglePrivacyDlpV2beta1CloudStoragePath = null,
+    table: GooglePrivacyDlpV2beta1BigQueryTable = null
+  ): GooglePrivacyDlpV2beta1OutputStorageConfig = {
+    val __obj = js.Dynamic.literal()
+    if (storagePath != null) __obj.updateDynamic("storagePath")(storagePath)
+    if (table != null) __obj.updateDynamic("table")(table)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1OutputStorageConfig]
+  }
+}
+

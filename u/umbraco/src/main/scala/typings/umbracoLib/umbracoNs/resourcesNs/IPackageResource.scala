@@ -61,3 +61,21 @@ trait IPackageResource extends js.Object {
   def installFiles(`package`: java.lang.String): scala.Unit
 }
 
+object IPackageResource {
+  @scala.inline
+  def apply(
+    cleanUp: js.Function1[java.lang.String, scala.Unit],
+    fetch: js.Function1[java.lang.String, java.lang.String],
+    `import`: js.Function1[java.lang.String, scala.Double],
+    installData: js.Function1[java.lang.String, scala.Unit],
+    installFiles: js.Function1[java.lang.String, scala.Unit]
+  ): IPackageResource = {
+    val __obj = js.Dynamic.literal(`import` = `import`)
+    __obj.updateDynamic("cleanUp")(cleanUp)
+    __obj.updateDynamic("fetch")(fetch)
+    __obj.updateDynamic("installData")(installData)
+    __obj.updateDynamic("installFiles")(installFiles)
+    __obj.asInstanceOf[IPackageResource]
+  }
+}
+

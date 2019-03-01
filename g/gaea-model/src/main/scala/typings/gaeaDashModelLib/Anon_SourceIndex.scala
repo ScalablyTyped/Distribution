@@ -16,3 +16,20 @@ trait Anon_SourceIndex extends js.Object {
   var targetParentMapUniqueKey: java.lang.String
 }
 
+object Anon_SourceIndex {
+  @scala.inline
+  def apply(
+    sourceIndex: scala.Double,
+    sourceParentMapUniqueKey: java.lang.String,
+    targetIndex: scala.Double,
+    targetParentMapUniqueKey: java.lang.String
+  ): Anon_SourceIndex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sourceIndex")(sourceIndex)
+    __obj.updateDynamic("sourceParentMapUniqueKey")(sourceParentMapUniqueKey)
+    __obj.updateDynamic("targetIndex")(targetIndex)
+    __obj.updateDynamic("targetParentMapUniqueKey")(targetParentMapUniqueKey)
+    __obj.asInstanceOf[Anon_SourceIndex]
+  }
+}
+

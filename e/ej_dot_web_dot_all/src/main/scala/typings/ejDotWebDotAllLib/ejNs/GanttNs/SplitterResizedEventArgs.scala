@@ -26,3 +26,24 @@ trait SplitterResizedEventArgs extends js.Object {
   var prevSplitterPosition: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SplitterResizedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentSplitterPosition: java.lang.String = null,
+    customSplitterPosition: java.lang.String = null,
+    isOnResize: js.UndefOr[scala.Boolean] = js.undefined,
+    isSplitterIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    prevSplitterPosition: java.lang.String = null
+  ): SplitterResizedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentSplitterPosition != null) __obj.updateDynamic("currentSplitterPosition")(currentSplitterPosition)
+    if (customSplitterPosition != null) __obj.updateDynamic("customSplitterPosition")(customSplitterPosition)
+    if (!js.isUndefined(isOnResize)) __obj.updateDynamic("isOnResize")(isOnResize)
+    if (!js.isUndefined(isSplitterIndex)) __obj.updateDynamic("isSplitterIndex")(isSplitterIndex)
+    if (prevSplitterPosition != null) __obj.updateDynamic("prevSplitterPosition")(prevSplitterPosition)
+    __obj.asInstanceOf[SplitterResizedEventArgs]
+  }
+}
+

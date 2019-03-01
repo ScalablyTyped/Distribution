@@ -54,3 +54,42 @@ trait XNamedRange
   def setType(nType: scala.Double): scala.Unit
 }
 
+object XNamedRange {
+  @scala.inline
+  def apply(
+    Content: java.lang.String,
+    Name: java.lang.String,
+    ReferencePosition: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    Type: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getContent: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getReferencePosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
+    getType: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setContent: js.Function1[java.lang.String, scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setReferencePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
+    setType: js.Function1[scala.Double, scala.Unit]
+  ): XNamedRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Content")(Content)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("ReferencePosition")(ReferencePosition)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getContent")(getContent)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getReferencePosition")(getReferencePosition)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setContent")(setContent)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setReferencePosition")(setReferencePosition)
+    __obj.updateDynamic("setType")(setType)
+    __obj.asInstanceOf[XNamedRange]
+  }
+}
+

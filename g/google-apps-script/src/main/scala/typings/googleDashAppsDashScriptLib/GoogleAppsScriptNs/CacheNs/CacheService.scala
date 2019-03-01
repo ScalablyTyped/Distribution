@@ -11,3 +11,18 @@ trait CacheService extends js.Object {
   def getUserCache(): Cache
 }
 
+object CacheService {
+  @scala.inline
+  def apply(
+    getDocumentCache: js.Function0[Cache],
+    getScriptCache: js.Function0[Cache],
+    getUserCache: js.Function0[Cache]
+  ): CacheService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getDocumentCache")(getDocumentCache)
+    __obj.updateDynamic("getScriptCache")(getScriptCache)
+    __obj.updateDynamic("getUserCache")(getUserCache)
+    __obj.asInstanceOf[CacheService]
+  }
+}
+

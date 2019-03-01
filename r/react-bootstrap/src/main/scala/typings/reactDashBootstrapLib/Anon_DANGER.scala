@@ -12,3 +12,20 @@ trait Anon_DANGER extends js.Object {
   var WARNING: java.lang.String
 }
 
+object Anon_DANGER {
+  @scala.inline
+  def apply(
+    DANGER: java.lang.String,
+    INFO: java.lang.String,
+    SUCCESS: java.lang.String,
+    WARNING: java.lang.String
+  ): Anon_DANGER = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DANGER")(DANGER)
+    __obj.updateDynamic("INFO")(INFO)
+    __obj.updateDynamic("SUCCESS")(SUCCESS)
+    __obj.updateDynamic("WARNING")(WARNING)
+    __obj.asInstanceOf[Anon_DANGER]
+  }
+}
+

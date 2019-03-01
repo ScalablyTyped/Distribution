@@ -27,3 +27,28 @@ trait Anon_Boundary extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Boundary {
+  @scala.inline
+  def apply(
+    boundary: js.Array[js.Array[Anon_Latitude]] = null,
+    cachePolicy: java.lang.String = null,
+    countryCode: java.lang.String = null,
+    latitude: scala.Int | scala.Double = null,
+    longitude: scala.Int | scala.Double = null,
+    mapType: java.lang.String = null,
+    viewport: Anon_Hi = null,
+    zoom: scala.Int | scala.Double = null
+  ): Anon_Boundary = {
+    val __obj = js.Dynamic.literal()
+    if (boundary != null) __obj.updateDynamic("boundary")(boundary)
+    if (cachePolicy != null) __obj.updateDynamic("cachePolicy")(cachePolicy)
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    if (mapType != null) __obj.updateDynamic("mapType")(mapType)
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Boundary]
+  }
+}
+

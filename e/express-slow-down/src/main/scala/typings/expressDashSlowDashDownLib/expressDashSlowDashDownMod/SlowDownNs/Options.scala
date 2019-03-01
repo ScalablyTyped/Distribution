@@ -71,3 +71,43 @@ trait Options extends js.Object {
   var windowMs: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    delayAfter: scala.Int | scala.Double = null,
+    delayMs: scala.Int | scala.Double = null,
+    keyGenerator: js.Function2[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* res */ expressLib.expressMod.eNs.Response, 
+      java.lang.String
+    ] = null,
+    onLimitReached: js.Function3[
+      /* req */ RequestWithSlowDown, 
+      /* res */ expressLib.expressMod.eNs.Response, 
+      Options, 
+      scala.Unit
+    ] = null,
+    skip: js.Function2[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* res */ expressLib.expressMod.eNs.Response, 
+      scala.Boolean
+    ] = null,
+    skipFailedRequests: js.UndefOr[scala.Boolean] = js.undefined,
+    skipSuccessfulRequests: js.UndefOr[scala.Boolean] = js.undefined,
+    store: Store = null,
+    windowMs: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (delayAfter != null) __obj.updateDynamic("delayAfter")(delayAfter.asInstanceOf[js.Any])
+    if (delayMs != null) __obj.updateDynamic("delayMs")(delayMs.asInstanceOf[js.Any])
+    if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(keyGenerator)
+    if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(onLimitReached)
+    if (skip != null) __obj.updateDynamic("skip")(skip)
+    if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests)
+    if (!js.isUndefined(skipSuccessfulRequests)) __obj.updateDynamic("skipSuccessfulRequests")(skipSuccessfulRequests)
+    if (store != null) __obj.updateDynamic("store")(store)
+    if (windowMs != null) __obj.updateDynamic("windowMs")(windowMs.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

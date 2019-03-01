@@ -13,3 +13,13 @@ trait VisualRepresentation extends js.Object {
   var Flavor: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.DataFlavor
 }
 
+object VisualRepresentation {
+  @scala.inline
+  def apply(Data: js.Any, Flavor: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.DataFlavor): VisualRepresentation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Data")(Data)
+    __obj.updateDynamic("Flavor")(Flavor)
+    __obj.asInstanceOf[VisualRepresentation]
+  }
+}
+

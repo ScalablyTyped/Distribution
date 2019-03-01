@@ -15,3 +15,17 @@ trait Source
   */
 /* path */ org.scalablytyped.runtime.StringDictionary[cleanDashCssLib.Anon_SourceMap]
 
+object Source {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Path to file
+    */
+  /* path */ org.scalablytyped.runtime.StringDictionary[cleanDashCssLib.Anon_SourceMap] = null
+  ): Source = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Source]
+  }
+}
+

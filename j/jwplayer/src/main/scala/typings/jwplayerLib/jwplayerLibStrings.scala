@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object jwplayerLibStrings {
   @js.native
-  sealed trait adBlock extends js.Object
+  sealed trait adBlock
+    extends jwplayerLib.jwplayerNs.NoParamEvent
   
   @js.native
   sealed trait adClick extends js.Object
@@ -58,10 +59,12 @@ object jwplayerLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait beforeComplete extends js.Object
+  sealed trait beforeComplete
+    extends jwplayerLib.jwplayerNs.NoParamEvent
   
   @js.native
-  sealed trait beforePlay extends js.Object
+  sealed trait beforePlay
+    extends jwplayerLib.jwplayerNs.NoParamEvent
   
   @js.native
   sealed trait buffer extends js.Object
@@ -82,13 +85,15 @@ object jwplayerLibStrings {
   sealed trait cast extends js.Object
   
   @js.native
-  sealed trait complete extends js.Object
+  sealed trait complete
+    extends jwplayerLib.jwplayerNs.NoParamEvent
   
   @js.native
   sealed trait controls extends js.Object
   
   @js.native
-  sealed trait displayClick extends js.Object
+  sealed trait displayClick
+    extends jwplayerLib.jwplayerNs.NoParamEvent
   
   @js.native
   sealed trait error extends js.Object
@@ -145,7 +150,8 @@ object jwplayerLibStrings {
   sealed trait playlist extends js.Object
   
   @js.native
-  sealed trait playlistComplete extends js.Object
+  sealed trait playlistComplete
+    extends jwplayerLib.jwplayerNs.NoParamEvent
   
   @js.native
   sealed trait playlistItem extends js.Object
@@ -160,7 +166,8 @@ object jwplayerLibStrings {
   sealed trait ready extends js.Object
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait remove
+    extends jwplayerLib.jwplayerNs.NoParamEvent
   
   @js.native
   sealed trait resize extends js.Object
@@ -169,7 +176,8 @@ object jwplayerLibStrings {
   sealed trait seek extends js.Object
   
   @js.native
-  sealed trait seeked extends js.Object
+  sealed trait seeked
+    extends jwplayerLib.jwplayerNs.NoParamEvent
   
   @js.native
   sealed trait setupError extends js.Object

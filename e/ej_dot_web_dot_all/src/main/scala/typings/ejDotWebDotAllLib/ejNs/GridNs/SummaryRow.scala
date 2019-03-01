@@ -31,3 +31,24 @@ trait SummaryRow extends js.Object {
   var titleColumn: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SummaryRow {
+  @scala.inline
+  def apply(
+    showCaptionSummary: js.UndefOr[scala.Boolean] = js.undefined,
+    showGroupSummary: js.UndefOr[scala.Boolean] = js.undefined,
+    showTotalSummary: js.UndefOr[scala.Boolean] = js.undefined,
+    summaryColumns: js.Array[SummaryRowsSummaryColumn] = null,
+    title: java.lang.String = null,
+    titleColumn: java.lang.String = null
+  ): SummaryRow = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showCaptionSummary)) __obj.updateDynamic("showCaptionSummary")(showCaptionSummary)
+    if (!js.isUndefined(showGroupSummary)) __obj.updateDynamic("showGroupSummary")(showGroupSummary)
+    if (!js.isUndefined(showTotalSummary)) __obj.updateDynamic("showTotalSummary")(showTotalSummary)
+    if (summaryColumns != null) __obj.updateDynamic("summaryColumns")(summaryColumns)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleColumn != null) __obj.updateDynamic("titleColumn")(titleColumn)
+    __obj.asInstanceOf[SummaryRow]
+  }
+}
+

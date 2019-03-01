@@ -28,3 +28,22 @@ trait WorksheetProperties extends js.Object {
   var tabColor: js.UndefOr[Color] = js.undefined
 }
 
+object WorksheetProperties {
+  @scala.inline
+  def apply(
+    defaultRowHeight: scala.Int | scala.Double = null,
+    dyDescent: scala.Int | scala.Double = null,
+    outlineLevelCol: scala.Int | scala.Double = null,
+    outlineLevelRow: scala.Int | scala.Double = null,
+    tabColor: Color = null
+  ): WorksheetProperties = {
+    val __obj = js.Dynamic.literal()
+    if (defaultRowHeight != null) __obj.updateDynamic("defaultRowHeight")(defaultRowHeight.asInstanceOf[js.Any])
+    if (dyDescent != null) __obj.updateDynamic("dyDescent")(dyDescent.asInstanceOf[js.Any])
+    if (outlineLevelCol != null) __obj.updateDynamic("outlineLevelCol")(outlineLevelCol.asInstanceOf[js.Any])
+    if (outlineLevelRow != null) __obj.updateDynamic("outlineLevelRow")(outlineLevelRow.asInstanceOf[js.Any])
+    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
+    __obj.asInstanceOf[WorksheetProperties]
+  }
+}
+

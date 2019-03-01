@@ -14,3 +14,24 @@ trait appFrameworkCssMatrix extends js.Object {
   var f: scala.Double
 }
 
+object appFrameworkCssMatrix {
+  @scala.inline
+  def apply(
+    a: scala.Double,
+    b: scala.Double,
+    c: scala.Double,
+    d: scala.Double,
+    e: scala.Double,
+    f: scala.Double
+  ): appFrameworkCssMatrix = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("a")(a)
+    __obj.updateDynamic("b")(b)
+    __obj.updateDynamic("c")(c)
+    __obj.updateDynamic("d")(d)
+    __obj.updateDynamic("e")(e)
+    __obj.updateDynamic("f")(f)
+    __obj.asInstanceOf[appFrameworkCssMatrix]
+  }
+}
+

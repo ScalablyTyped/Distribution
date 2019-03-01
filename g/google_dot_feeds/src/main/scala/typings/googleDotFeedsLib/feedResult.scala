@@ -11,3 +11,14 @@ trait feedResult extends js.Object {
   var xmlDocument: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object feedResult {
+  @scala.inline
+  def apply(feed: feedJSON, error: feedError = null, xmlDocument: java.lang.String = null): feedResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("feed")(feed)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (xmlDocument != null) __obj.updateDynamic("xmlDocument")(xmlDocument)
+    __obj.asInstanceOf[feedResult]
+  }
+}
+

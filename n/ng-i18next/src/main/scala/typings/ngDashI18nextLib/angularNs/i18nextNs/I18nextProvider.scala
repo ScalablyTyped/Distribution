@@ -9,3 +9,12 @@ trait I18nextProvider extends js.Object {
   var options: js.Any
 }
 
+object I18nextProvider {
+  @scala.inline
+  def apply(options: js.Any): I18nextProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[I18nextProvider]
+  }
+}
+

@@ -61,3 +61,34 @@ trait ClusterInstanceArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object ClusterInstanceArgs {
+  @scala.inline
+  def apply(
+    clusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    instanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    applyImmediately: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    autoMinorVersionUpgrade: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engine: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    identifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    identifierPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    preferredMaintenanceWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    promotionTier: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ClusterInstanceArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
+    __obj.updateDynamic("instanceClass")(instanceClass.asInstanceOf[js.Any])
+    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
+    if (identifierPrefix != null) __obj.updateDynamic("identifierPrefix")(identifierPrefix.asInstanceOf[js.Any])
+    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
+    if (promotionTier != null) __obj.updateDynamic("promotionTier")(promotionTier.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterInstanceArgs]
+  }
+}
+

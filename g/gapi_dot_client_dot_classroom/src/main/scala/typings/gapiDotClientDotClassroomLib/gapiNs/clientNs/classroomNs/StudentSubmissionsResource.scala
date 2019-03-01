@@ -152,3 +152,46 @@ trait StudentSubmissionsResource extends js.Object {
   def turnIn(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 
+object StudentSubmissionsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListStudentSubmissionsResponse]
+    ],
+    modifyAttachments: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
+    ],
+    reclaim: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    `return`: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    turnIn: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ]
+  ): StudentSubmissionsResource = {
+    val __obj = js.Dynamic.literal(`return` = `return`)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("modifyAttachments")(modifyAttachments)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("reclaim")(reclaim)
+    __obj.updateDynamic("turnIn")(turnIn)
+    __obj.asInstanceOf[StudentSubmissionsResource]
+  }
+}
+

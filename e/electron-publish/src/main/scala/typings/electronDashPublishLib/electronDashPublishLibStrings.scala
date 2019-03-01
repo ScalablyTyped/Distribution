@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object electronDashPublishLibStrings {
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends electronDashPublishLib.electronDashPublishMod.PublishPolicy
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait never
+    extends electronDashPublishLib.electronDashPublishMod.PublishPolicy
   
   @js.native
-  sealed trait onTag extends js.Object
+  sealed trait onTag
+    extends electronDashPublishLib.electronDashPublishMod.PublishPolicy
   
   @js.native
-  sealed trait onTagOrDraft extends js.Object
+  sealed trait onTagOrDraft
+    extends electronDashPublishLib.electronDashPublishMod.PublishPolicy
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

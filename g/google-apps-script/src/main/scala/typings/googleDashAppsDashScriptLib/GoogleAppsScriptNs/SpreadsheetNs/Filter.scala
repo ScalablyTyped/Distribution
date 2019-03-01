@@ -17,3 +17,24 @@ trait Filter extends js.Object {
   def sort(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ascending: scala.Boolean): Filter
 }
 
+object Filter {
+  @scala.inline
+  def apply(
+    getColumnFilterCriteria: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, FilterCriteria],
+    getRange: js.Function0[Range],
+    remove: js.Function0[scala.Unit],
+    removeColumnFilterCriteria: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, Filter],
+    setColumnFilterCriteria: js.Function2[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, FilterCriteria, Filter],
+    sort: js.Function2[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean, Filter]
+  ): Filter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getColumnFilterCriteria")(getColumnFilterCriteria)
+    __obj.updateDynamic("getRange")(getRange)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removeColumnFilterCriteria")(removeColumnFilterCriteria)
+    __obj.updateDynamic("setColumnFilterCriteria")(setColumnFilterCriteria)
+    __obj.updateDynamic("sort")(sort)
+    __obj.asInstanceOf[Filter]
+  }
+}
+

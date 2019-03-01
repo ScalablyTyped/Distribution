@@ -9,3 +9,12 @@ trait WebGLUniformLocation extends js.Object {
   val __WebGLUniformLocation: scala.Unit
 }
 
+object WebGLUniformLocation {
+  @scala.inline
+  def apply(__WebGLUniformLocation: scala.Unit): WebGLUniformLocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("__WebGLUniformLocation")(__WebGLUniformLocation)
+    __obj.asInstanceOf[WebGLUniformLocation]
+  }
+}
+

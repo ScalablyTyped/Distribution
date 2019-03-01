@@ -16,3 +16,20 @@ trait Location extends js.Object {
   var zipCode: java.lang.String
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    city: java.lang.String,
+    coordinates: Coordinates,
+    zipCode: java.lang.String
+  ): Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("city")(city)
+    __obj.updateDynamic("coordinates")(coordinates)
+    __obj.updateDynamic("zipCode")(zipCode)
+    __obj.asInstanceOf[Location]
+  }
+}
+

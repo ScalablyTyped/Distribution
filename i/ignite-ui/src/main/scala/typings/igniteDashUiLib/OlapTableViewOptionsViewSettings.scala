@@ -34,3 +34,25 @@ trait OlapTableViewOptionsViewSettings
   var isParentInFrontForRows: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OlapTableViewOptionsViewSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for OlapTableViewOptionsViewSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    compactColumnHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    compactRowHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    isParentInFrontForColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    isParentInFrontForRows: js.UndefOr[scala.Boolean] = js.undefined
+  ): OlapTableViewOptionsViewSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(compactColumnHeaders)) __obj.updateDynamic("compactColumnHeaders")(compactColumnHeaders)
+    if (!js.isUndefined(compactRowHeaders)) __obj.updateDynamic("compactRowHeaders")(compactRowHeaders)
+    if (!js.isUndefined(isParentInFrontForColumns)) __obj.updateDynamic("isParentInFrontForColumns")(isParentInFrontForColumns)
+    if (!js.isUndefined(isParentInFrontForRows)) __obj.updateDynamic("isParentInFrontForRows")(isParentInFrontForRows)
+    __obj.asInstanceOf[OlapTableViewOptionsViewSettings]
+  }
+}
+

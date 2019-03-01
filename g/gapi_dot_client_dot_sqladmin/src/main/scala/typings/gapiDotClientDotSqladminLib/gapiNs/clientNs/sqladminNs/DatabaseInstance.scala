@@ -89,3 +89,62 @@ trait DatabaseInstance extends js.Object {
   var suspensionReason: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object DatabaseInstance {
+  @scala.inline
+  def apply(
+    backendType: java.lang.String = null,
+    connectionName: java.lang.String = null,
+    currentDiskSize: java.lang.String = null,
+    databaseVersion: java.lang.String = null,
+    etag: java.lang.String = null,
+    failoverReplica: gapiDotClientDotSqladminLib.Anon_Available = null,
+    gceZone: java.lang.String = null,
+    instanceType: java.lang.String = null,
+    ipAddresses: js.Array[IpMapping] = null,
+    ipv6Address: java.lang.String = null,
+    kind: java.lang.String = null,
+    masterInstanceName: java.lang.String = null,
+    maxDiskSize: java.lang.String = null,
+    name: java.lang.String = null,
+    onPremisesConfiguration: OnPremisesConfiguration = null,
+    project: java.lang.String = null,
+    region: java.lang.String = null,
+    replicaConfiguration: ReplicaConfiguration = null,
+    replicaNames: js.Array[java.lang.String] = null,
+    selfLink: java.lang.String = null,
+    serverCaCert: SslCert = null,
+    serviceAccountEmailAddress: java.lang.String = null,
+    settings: Settings = null,
+    state: java.lang.String = null,
+    suspensionReason: js.Array[java.lang.String] = null
+  ): DatabaseInstance = {
+    val __obj = js.Dynamic.literal()
+    if (backendType != null) __obj.updateDynamic("backendType")(backendType)
+    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
+    if (currentDiskSize != null) __obj.updateDynamic("currentDiskSize")(currentDiskSize)
+    if (databaseVersion != null) __obj.updateDynamic("databaseVersion")(databaseVersion)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (failoverReplica != null) __obj.updateDynamic("failoverReplica")(failoverReplica)
+    if (gceZone != null) __obj.updateDynamic("gceZone")(gceZone)
+    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType)
+    if (ipAddresses != null) __obj.updateDynamic("ipAddresses")(ipAddresses)
+    if (ipv6Address != null) __obj.updateDynamic("ipv6Address")(ipv6Address)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (masterInstanceName != null) __obj.updateDynamic("masterInstanceName")(masterInstanceName)
+    if (maxDiskSize != null) __obj.updateDynamic("maxDiskSize")(maxDiskSize)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onPremisesConfiguration != null) __obj.updateDynamic("onPremisesConfiguration")(onPremisesConfiguration)
+    if (project != null) __obj.updateDynamic("project")(project)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (replicaConfiguration != null) __obj.updateDynamic("replicaConfiguration")(replicaConfiguration)
+    if (replicaNames != null) __obj.updateDynamic("replicaNames")(replicaNames)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (serverCaCert != null) __obj.updateDynamic("serverCaCert")(serverCaCert)
+    if (serviceAccountEmailAddress != null) __obj.updateDynamic("serviceAccountEmailAddress")(serviceAccountEmailAddress)
+    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (suspensionReason != null) __obj.updateDynamic("suspensionReason")(suspensionReason)
+    __obj.asInstanceOf[DatabaseInstance]
+  }
+}
+

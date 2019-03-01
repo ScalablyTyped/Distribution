@@ -16,3 +16,28 @@ trait DropdownClasses extends js.Object {
   var unsearchable: scala.Boolean
 }
 
+object DropdownClasses {
+  @scala.inline
+  def apply(
+    disabled: scala.Boolean,
+    loading: scala.Boolean,
+    open: scala.Boolean,
+    rtl: scala.Boolean,
+    searchable: scala.Boolean,
+    searching: scala.Boolean,
+    single: scala.Boolean,
+    unsearchable: scala.Boolean
+  ): DropdownClasses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("loading")(loading)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("rtl")(rtl)
+    __obj.updateDynamic("searchable")(searchable)
+    __obj.updateDynamic("searching")(searching)
+    __obj.updateDynamic("single")(single)
+    __obj.updateDynamic("unsearchable")(unsearchable)
+    __obj.asInstanceOf[DropdownClasses]
+  }
+}
+

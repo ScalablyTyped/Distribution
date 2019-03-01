@@ -41,3 +41,26 @@ trait Rollout extends js.Object {
   var trafficPercentStrategy: js.UndefOr[TrafficPercentStrategy] = js.undefined
 }
 
+object Rollout {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    createdBy: java.lang.String = null,
+    deleteServiceStrategy: js.Any = null,
+    rolloutId: java.lang.String = null,
+    serviceName: java.lang.String = null,
+    status: java.lang.String = null,
+    trafficPercentStrategy: TrafficPercentStrategy = null
+  ): Rollout = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)
+    if (deleteServiceStrategy != null) __obj.updateDynamic("deleteServiceStrategy")(deleteServiceStrategy)
+    if (rolloutId != null) __obj.updateDynamic("rolloutId")(rolloutId)
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (trafficPercentStrategy != null) __obj.updateDynamic("trafficPercentStrategy")(trafficPercentStrategy)
+    __obj.asInstanceOf[Rollout]
+  }
+}
+

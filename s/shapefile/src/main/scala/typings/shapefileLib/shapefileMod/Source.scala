@@ -11,3 +11,18 @@ trait Source[RecordType] extends js.Object {
   def read(): js.Promise[shapefileLib.Anon_Done[RecordType]]
 }
 
+object Source {
+  @scala.inline
+  def apply[RecordType](
+    bbox: js.Array[scala.Double],
+    cancel: js.Function0[js.Promise[scala.Unit]],
+    read: js.Function0[js.Promise[shapefileLib.Anon_Done[RecordType]]]
+  ): Source[RecordType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bbox")(bbox)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("read")(read)
+    __obj.asInstanceOf[Source[RecordType]]
+  }
+}
+

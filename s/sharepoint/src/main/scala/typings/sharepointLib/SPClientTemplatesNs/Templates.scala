@@ -24,3 +24,26 @@ trait Templates extends js.Object {
   var View: js.UndefOr[RenderCallback | java.lang.String] = js.undefined
 }
 
+object Templates {
+  @scala.inline
+  def apply(
+    Body: RenderCallback | java.lang.String = null,
+    Fields: FieldTemplates = null,
+    Footer: SingleTemplateCallback | java.lang.String = null,
+    Group: GroupCallback | java.lang.String = null,
+    Header: SingleTemplateCallback | java.lang.String = null,
+    Item: ItemCallback | java.lang.String = null,
+    View: RenderCallback | java.lang.String = null
+  ): Templates = {
+    val __obj = js.Dynamic.literal()
+    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
+    if (Fields != null) __obj.updateDynamic("Fields")(Fields)
+    if (Footer != null) __obj.updateDynamic("Footer")(Footer.asInstanceOf[js.Any])
+    if (Group != null) __obj.updateDynamic("Group")(Group.asInstanceOf[js.Any])
+    if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
+    if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
+    if (View != null) __obj.updateDynamic("View")(View.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Templates]
+  }
+}
+

@@ -50,3 +50,24 @@ trait MeetingSuggestion extends js.Object {
   var subject: java.lang.String
 }
 
+object MeetingSuggestion {
+  @scala.inline
+  def apply(
+    attendees: js.Array[EmailUser],
+    end: java.lang.String,
+    location: java.lang.String,
+    meetingString: java.lang.String,
+    start: java.lang.String,
+    subject: java.lang.String
+  ): MeetingSuggestion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attendees")(attendees)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("meetingString")(meetingString)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("subject")(subject)
+    __obj.asInstanceOf[MeetingSuggestion]
+  }
+}
+

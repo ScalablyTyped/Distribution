@@ -13,3 +13,12 @@ trait IOptions extends js.Object {
   var optimizeMemory: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IOptions {
+  @scala.inline
+  def apply(optimizeMemory: js.UndefOr[scala.Boolean] = js.undefined): IOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(optimizeMemory)) __obj.updateDynamic("optimizeMemory")(optimizeMemory)
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

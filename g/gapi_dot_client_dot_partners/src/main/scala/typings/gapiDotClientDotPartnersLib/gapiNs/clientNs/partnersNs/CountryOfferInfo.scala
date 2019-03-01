@@ -16,3 +16,20 @@ trait CountryOfferInfo extends js.Object {
   var spendXAmount: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CountryOfferInfo {
+  @scala.inline
+  def apply(
+    getYAmount: java.lang.String = null,
+    offerCountryCode: java.lang.String = null,
+    offerType: java.lang.String = null,
+    spendXAmount: java.lang.String = null
+  ): CountryOfferInfo = {
+    val __obj = js.Dynamic.literal()
+    if (getYAmount != null) __obj.updateDynamic("getYAmount")(getYAmount)
+    if (offerCountryCode != null) __obj.updateDynamic("offerCountryCode")(offerCountryCode)
+    if (offerType != null) __obj.updateDynamic("offerType")(offerType)
+    if (spendXAmount != null) __obj.updateDynamic("spendXAmount")(spendXAmount)
+    __obj.asInstanceOf[CountryOfferInfo]
+  }
+}
+

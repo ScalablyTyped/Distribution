@@ -23,3 +23,22 @@ trait XDigestContext
   def updateDigest(aData: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): scala.Unit
 }
 
+object XDigestContext {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    finalizeDigestAndDispose: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateDigest: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+  ): XDigestContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("finalizeDigestAndDispose")(finalizeDigestAndDispose)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("updateDigest")(updateDigest)
+    __obj.asInstanceOf[XDigestContext]
+  }
+}
+

@@ -21,3 +21,20 @@ trait Options extends js.Object {
   var spellcheck: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    postProcessors: js.Array[PostProcessor] = null,
+    smartquotes: js.UndefOr[scala.Boolean] = js.undefined,
+    spellcheck: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (postProcessors != null) __obj.updateDynamic("postProcessors")(postProcessors)
+    if (!js.isUndefined(smartquotes)) __obj.updateDynamic("smartquotes")(smartquotes)
+    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck)
+    __obj.asInstanceOf[Options]
+  }
+}
+

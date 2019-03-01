@@ -28,3 +28,25 @@ trait OlapFlatDataSourceOptionsMetadataCube
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OlapFlatDataSourceOptionsMetadataCube {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for OlapFlatDataSourceOptionsMetadataCube
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    caption: java.lang.String = null,
+    dimensions: js.Array[OlapFlatDataSourceOptionsMetadataCubeDimension] = null,
+    measuresDimension: OlapFlatDataSourceOptionsMetadataCubeMeasuresDimension = null,
+    name: java.lang.String = null
+  ): OlapFlatDataSourceOptionsMetadataCube = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (measuresDimension != null) __obj.updateDynamic("measuresDimension")(measuresDimension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[OlapFlatDataSourceOptionsMetadataCube]
+  }
+}
+

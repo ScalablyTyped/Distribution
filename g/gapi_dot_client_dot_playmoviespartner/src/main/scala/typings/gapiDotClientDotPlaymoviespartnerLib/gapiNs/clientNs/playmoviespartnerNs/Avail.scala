@@ -197,3 +197,78 @@ trait Avail extends js.Object {
   var workType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Avail {
+  @scala.inline
+  def apply(
+    altId: java.lang.String = null,
+    availId: java.lang.String = null,
+    captionExemption: java.lang.String = null,
+    captionIncluded: js.UndefOr[scala.Boolean] = js.undefined,
+    contentId: java.lang.String = null,
+    displayName: java.lang.String = null,
+    encodeId: java.lang.String = null,
+    end: java.lang.String = null,
+    episodeAltId: java.lang.String = null,
+    episodeNumber: java.lang.String = null,
+    episodeTitleInternalAlias: java.lang.String = null,
+    formatProfile: java.lang.String = null,
+    licenseType: java.lang.String = null,
+    pphNames: js.Array[java.lang.String] = null,
+    priceType: java.lang.String = null,
+    priceValue: java.lang.String = null,
+    productId: java.lang.String = null,
+    ratingReason: java.lang.String = null,
+    ratingSystem: java.lang.String = null,
+    ratingValue: java.lang.String = null,
+    releaseDate: java.lang.String = null,
+    seasonAltId: java.lang.String = null,
+    seasonNumber: java.lang.String = null,
+    seasonTitleInternalAlias: java.lang.String = null,
+    seriesAltId: java.lang.String = null,
+    seriesTitleInternalAlias: java.lang.String = null,
+    start: java.lang.String = null,
+    storeLanguage: java.lang.String = null,
+    suppressionLiftDate: java.lang.String = null,
+    territory: java.lang.String = null,
+    titleInternalAlias: java.lang.String = null,
+    videoId: java.lang.String = null,
+    workType: java.lang.String = null
+  ): Avail = {
+    val __obj = js.Dynamic.literal()
+    if (altId != null) __obj.updateDynamic("altId")(altId)
+    if (availId != null) __obj.updateDynamic("availId")(availId)
+    if (captionExemption != null) __obj.updateDynamic("captionExemption")(captionExemption)
+    if (!js.isUndefined(captionIncluded)) __obj.updateDynamic("captionIncluded")(captionIncluded)
+    if (contentId != null) __obj.updateDynamic("contentId")(contentId)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (encodeId != null) __obj.updateDynamic("encodeId")(encodeId)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (episodeAltId != null) __obj.updateDynamic("episodeAltId")(episodeAltId)
+    if (episodeNumber != null) __obj.updateDynamic("episodeNumber")(episodeNumber)
+    if (episodeTitleInternalAlias != null) __obj.updateDynamic("episodeTitleInternalAlias")(episodeTitleInternalAlias)
+    if (formatProfile != null) __obj.updateDynamic("formatProfile")(formatProfile)
+    if (licenseType != null) __obj.updateDynamic("licenseType")(licenseType)
+    if (pphNames != null) __obj.updateDynamic("pphNames")(pphNames)
+    if (priceType != null) __obj.updateDynamic("priceType")(priceType)
+    if (priceValue != null) __obj.updateDynamic("priceValue")(priceValue)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (ratingReason != null) __obj.updateDynamic("ratingReason")(ratingReason)
+    if (ratingSystem != null) __obj.updateDynamic("ratingSystem")(ratingSystem)
+    if (ratingValue != null) __obj.updateDynamic("ratingValue")(ratingValue)
+    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate)
+    if (seasonAltId != null) __obj.updateDynamic("seasonAltId")(seasonAltId)
+    if (seasonNumber != null) __obj.updateDynamic("seasonNumber")(seasonNumber)
+    if (seasonTitleInternalAlias != null) __obj.updateDynamic("seasonTitleInternalAlias")(seasonTitleInternalAlias)
+    if (seriesAltId != null) __obj.updateDynamic("seriesAltId")(seriesAltId)
+    if (seriesTitleInternalAlias != null) __obj.updateDynamic("seriesTitleInternalAlias")(seriesTitleInternalAlias)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (storeLanguage != null) __obj.updateDynamic("storeLanguage")(storeLanguage)
+    if (suppressionLiftDate != null) __obj.updateDynamic("suppressionLiftDate")(suppressionLiftDate)
+    if (territory != null) __obj.updateDynamic("territory")(territory)
+    if (titleInternalAlias != null) __obj.updateDynamic("titleInternalAlias")(titleInternalAlias)
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (workType != null) __obj.updateDynamic("workType")(workType)
+    __obj.asInstanceOf[Avail]
+  }
+}
+

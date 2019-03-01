@@ -24,3 +24,28 @@ trait RequestOptions extends js.Object {
   var validate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    authority: java.lang.String = null,
+    headers: Headers = null,
+    method: java.lang.String = null,
+    payload: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Stream | js.Object = null,
+    remoteAddress: java.lang.String = null,
+    simulate: shotLib.Anon_Close = null,
+    validate: js.UndefOr[scala.Boolean] = js.undefined
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (authority != null) __obj.updateDynamic("authority")(authority)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (remoteAddress != null) __obj.updateDynamic("remoteAddress")(remoteAddress)
+    if (simulate != null) __obj.updateDynamic("simulate")(simulate)
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

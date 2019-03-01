@@ -14,3 +14,27 @@ trait SubscriptionsResource extends js.Object {
   def list(request: gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsForChannelId): gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionListResponse]
 }
 
+object SubscriptionsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsForChannelId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionListResponse]
+    ]
+  ): SubscriptionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[SubscriptionsResource]
+  }
+}
+

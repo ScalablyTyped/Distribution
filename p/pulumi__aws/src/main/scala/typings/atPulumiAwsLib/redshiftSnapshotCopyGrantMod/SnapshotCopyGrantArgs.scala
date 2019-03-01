@@ -20,3 +20,18 @@ trait SnapshotCopyGrantArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object SnapshotCopyGrantArgs {
+  @scala.inline
+  def apply(
+    snapshotCopyGrantName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): SnapshotCopyGrantArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("snapshotCopyGrantName")(snapshotCopyGrantName.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotCopyGrantArgs]
+  }
+}
+

@@ -11,3 +11,14 @@ trait Result extends js.Object {
   var parameterValues: js.Array[scala.Double]
 }
 
+object Result {
+  @scala.inline
+  def apply(iterations: scala.Double, parameterError: scala.Double, parameterValues: js.Array[scala.Double]): Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iterations")(iterations)
+    __obj.updateDynamic("parameterError")(parameterError)
+    __obj.updateDynamic("parameterValues")(parameterValues)
+    __obj.asInstanceOf[Result]
+  }
+}
+

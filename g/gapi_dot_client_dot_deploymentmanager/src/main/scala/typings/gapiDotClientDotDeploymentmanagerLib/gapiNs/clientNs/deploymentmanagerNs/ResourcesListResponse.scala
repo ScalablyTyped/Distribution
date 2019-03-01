@@ -12,3 +12,13 @@ trait ResourcesListResponse extends js.Object {
   var resources: js.UndefOr[js.Array[Resource]] = js.undefined
 }
 
+object ResourcesListResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, resources: js.Array[Resource] = null): ResourcesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    __obj.asInstanceOf[ResourcesListResponse]
+  }
+}
+

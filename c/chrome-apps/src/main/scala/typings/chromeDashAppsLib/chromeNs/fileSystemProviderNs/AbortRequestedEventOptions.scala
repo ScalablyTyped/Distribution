@@ -11,3 +11,18 @@ trait AbortRequestedEventOptions
   var operationRequestId: chromeDashAppsLib.chromeNs.integer
 }
 
+object AbortRequestedEventOptions {
+  @scala.inline
+  def apply(
+    fileSystemId: java.lang.String,
+    operationRequestId: chromeDashAppsLib.chromeNs.integer,
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): AbortRequestedEventOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("operationRequestId")(operationRequestId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.asInstanceOf[AbortRequestedEventOptions]
+  }
+}
+

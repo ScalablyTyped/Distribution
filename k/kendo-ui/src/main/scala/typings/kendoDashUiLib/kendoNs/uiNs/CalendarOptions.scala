@@ -26,3 +26,48 @@ trait CalendarOptions extends js.Object {
   var weekNumber: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CalendarOptions {
+  @scala.inline
+  def apply(
+    change: js.Function1[/* e */ CalendarEvent, scala.Unit] = null,
+    culture: java.lang.String = null,
+    dates: js.Any = null,
+    depth: java.lang.String = null,
+    disableDates: js.Any | js.Function = null,
+    footer: scala.Boolean | java.lang.String | js.Function = null,
+    format: java.lang.String = null,
+    max: stdLib.Date = null,
+    messages: CalendarMessages = null,
+    min: stdLib.Date = null,
+    month: CalendarMonth = null,
+    name: java.lang.String = null,
+    navigate: js.Function1[/* e */ CalendarEvent, scala.Unit] = null,
+    selectDates: js.Any = null,
+    selectable: java.lang.String = null,
+    start: java.lang.String = null,
+    value: stdLib.Date = null,
+    weekNumber: js.UndefOr[scala.Boolean] = js.undefined
+  ): CalendarOptions = {
+    val __obj = js.Dynamic.literal()
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (dates != null) __obj.updateDynamic("dates")(dates)
+    if (depth != null) __obj.updateDynamic("depth")(depth)
+    if (disableDates != null) __obj.updateDynamic("disableDates")(disableDates.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (min != null) __obj.updateDynamic("min")(min)
+    if (month != null) __obj.updateDynamic("month")(month)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
+    if (selectDates != null) __obj.updateDynamic("selectDates")(selectDates)
+    if (selectable != null) __obj.updateDynamic("selectable")(selectable)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber)
+    __obj.asInstanceOf[CalendarOptions]
+  }
+}
+

@@ -34,3 +34,32 @@ trait ConfigsResource extends js.Object {
   def submit(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object ConfigsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Service]
+    ],
+    get: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Service]
+    ],
+    list: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListServiceConfigsResponse]
+    ],
+    submit: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): ConfigsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("submit")(submit)
+    __obj.asInstanceOf[ConfigsResource]
+  }
+}
+

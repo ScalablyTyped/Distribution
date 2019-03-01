@@ -39,3 +39,18 @@ trait MalformedDataException
   var ErrorDetails: js.Any
 }
 
+object MalformedDataException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrorDetails: js.Any,
+    Message: java.lang.String
+  ): MalformedDataException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("ErrorDetails")(ErrorDetails)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[MalformedDataException]
+  }
+}
+

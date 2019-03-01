@@ -17,3 +17,16 @@ trait Anon_ValueSetArrayCodeActionKind extends js.Object {
   ]
 }
 
+object Anon_ValueSetArrayCodeActionKind {
+  @scala.inline
+  def apply(
+    valueSet: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind
+    ]
+  ): Anon_ValueSetArrayCodeActionKind = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("valueSet")(valueSet)
+    __obj.asInstanceOf[Anon_ValueSetArrayCodeActionKind]
+  }
+}
+

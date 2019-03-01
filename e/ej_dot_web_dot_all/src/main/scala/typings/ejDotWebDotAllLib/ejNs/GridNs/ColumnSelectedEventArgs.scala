@@ -35,3 +35,30 @@ trait ColumnSelectedEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColumnSelectedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    column: js.Any = null,
+    columnIndex: scala.Int | scala.Double = null,
+    headerCell: js.Any = null,
+    model: js.Any = null,
+    prevColumnHeaderCell: js.Any = null,
+    previousColumnIndex: scala.Int | scala.Double = null,
+    selectedColumnsIndex: js.Array[_] = null,
+    `type`: java.lang.String = null
+  ): ColumnSelectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (headerCell != null) __obj.updateDynamic("headerCell")(headerCell)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (prevColumnHeaderCell != null) __obj.updateDynamic("prevColumnHeaderCell")(prevColumnHeaderCell)
+    if (previousColumnIndex != null) __obj.updateDynamic("previousColumnIndex")(previousColumnIndex.asInstanceOf[js.Any])
+    if (selectedColumnsIndex != null) __obj.updateDynamic("selectedColumnsIndex")(selectedColumnsIndex)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ColumnSelectedEventArgs]
+  }
+}
+

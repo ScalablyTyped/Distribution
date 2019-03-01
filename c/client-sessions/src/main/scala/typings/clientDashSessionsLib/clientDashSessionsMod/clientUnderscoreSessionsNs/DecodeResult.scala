@@ -11,3 +11,14 @@ trait DecodeResult extends js.Object {
   var duration: scala.Double
 }
 
+object DecodeResult {
+  @scala.inline
+  def apply(content: js.Any, createdAt: scala.Double, duration: scala.Double): DecodeResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("createdAt")(createdAt)
+    __obj.updateDynamic("duration")(duration)
+    __obj.asInstanceOf[DecodeResult]
+  }
+}
+

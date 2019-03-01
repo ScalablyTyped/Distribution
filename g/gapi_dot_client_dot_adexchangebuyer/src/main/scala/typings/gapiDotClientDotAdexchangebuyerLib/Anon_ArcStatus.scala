@@ -14,3 +14,18 @@ trait Anon_ArcStatus extends js.Object {
   var webPropertyId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ArcStatus {
+  @scala.inline
+  def apply(
+    arcStatus: java.lang.String = null,
+    dealId: java.lang.String = null,
+    webPropertyId: scala.Int | scala.Double = null
+  ): Anon_ArcStatus = {
+    val __obj = js.Dynamic.literal()
+    if (arcStatus != null) __obj.updateDynamic("arcStatus")(arcStatus)
+    if (dealId != null) __obj.updateDynamic("dealId")(dealId)
+    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ArcStatus]
+  }
+}
+

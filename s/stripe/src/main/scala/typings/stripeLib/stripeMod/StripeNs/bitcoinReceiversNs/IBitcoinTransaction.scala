@@ -26,3 +26,25 @@ trait IBitcoinTransaction
   var receiver: java.lang.String
 }
 
+object IBitcoinTransaction {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    bitcoin_amount: scala.Double,
+    created: scala.Double,
+    currency: java.lang.String,
+    id: java.lang.String,
+    `object`: java.lang.String,
+    receiver: java.lang.String
+  ): IBitcoinTransaction = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("bitcoin_amount")(bitcoin_amount)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("receiver")(receiver)
+    __obj.asInstanceOf[IBitcoinTransaction]
+  }
+}
+

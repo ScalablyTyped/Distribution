@@ -24,3 +24,20 @@ trait DescribeNotificationsForBudgetRequest extends js.Object {
   var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 
+object DescribeNotificationsForBudgetRequest {
+  @scala.inline
+  def apply(
+    AccountId: AccountId,
+    BudgetName: BudgetName,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: GenericString = null
+  ): DescribeNotificationsForBudgetRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccountId")(AccountId)
+    __obj.updateDynamic("BudgetName")(BudgetName)
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    __obj.asInstanceOf[DescribeNotificationsForBudgetRequest]
+  }
+}
+

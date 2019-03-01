@@ -38,3 +38,28 @@ trait MediaUpload extends js.Object {
   var uploadService: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MediaUpload {
+  @scala.inline
+  def apply(
+    completeNotification: js.UndefOr[scala.Boolean] = js.undefined,
+    dropzone: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maxSize: java.lang.String = null,
+    mimeTypes: js.Array[java.lang.String] = null,
+    progressNotification: js.UndefOr[scala.Boolean] = js.undefined,
+    startNotification: js.UndefOr[scala.Boolean] = js.undefined,
+    uploadService: java.lang.String = null
+  ): MediaUpload = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(completeNotification)) __obj.updateDynamic("completeNotification")(completeNotification)
+    if (dropzone != null) __obj.updateDynamic("dropzone")(dropzone)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize)
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
+    if (!js.isUndefined(progressNotification)) __obj.updateDynamic("progressNotification")(progressNotification)
+    if (!js.isUndefined(startNotification)) __obj.updateDynamic("startNotification")(startNotification)
+    if (uploadService != null) __obj.updateDynamic("uploadService")(uploadService)
+    __obj.asInstanceOf[MediaUpload]
+  }
+}
+

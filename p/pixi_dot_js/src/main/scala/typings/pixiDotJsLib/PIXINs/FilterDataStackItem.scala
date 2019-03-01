@@ -11,3 +11,14 @@ trait FilterDataStackItem extends js.Object {
   var renderTarget: RenderTarget
 }
 
+object FilterDataStackItem {
+  @scala.inline
+  def apply(bounds: Rectangle, filter: js.Array[_], renderTarget: RenderTarget): FilterDataStackItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("renderTarget")(renderTarget)
+    __obj.asInstanceOf[FilterDataStackItem]
+  }
+}
+

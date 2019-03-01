@@ -20,3 +20,36 @@ trait IDropdownOptions extends js.Object {
   var trigger: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IDropdownOptions {
+  @scala.inline
+  def apply(
+    animation: java.lang.String = null,
+    container: java.lang.String | scala.Boolean = null,
+    delay: scala.Double | angularDashStrapLib.Anon_Hide = null,
+    html: js.UndefOr[scala.Boolean] = js.undefined,
+    onBeforeHide: js.Function1[/* dropdown */ IDropdown, scala.Unit] = null,
+    onBeforeShow: js.Function1[/* dropdown */ IDropdown, scala.Unit] = null,
+    onHide: js.Function1[/* dropdown */ IDropdown, scala.Unit] = null,
+    onShow: js.Function1[/* dropdown */ IDropdown, scala.Unit] = null,
+    placement: java.lang.String = null,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null,
+    trigger: java.lang.String = null
+  ): IDropdownOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    __obj.asInstanceOf[IDropdownOptions]
+  }
+}
+

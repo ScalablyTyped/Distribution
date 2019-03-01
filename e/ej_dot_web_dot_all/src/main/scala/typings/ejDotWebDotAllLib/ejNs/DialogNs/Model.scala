@@ -182,3 +182,122 @@ trait Model extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    actionButtonClick: js.Function1[/* e */ ActionButtonClickEventArgs, scala.Unit] = null,
+    actionButtons: js.Array[java.lang.String] = null,
+    ajaxError: js.Function1[/* e */ AjaxErrorEventArgs, scala.Unit] = null,
+    ajaxSettings: AjaxSettings = null,
+    ajaxSuccess: js.Function1[/* e */ AjaxSuccessEventArgs, scala.Unit] = null,
+    allowDraggable: js.UndefOr[scala.Boolean] = js.undefined,
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    animation: js.Any = null,
+    backgroundScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeClose: js.Function1[/* e */ BeforeCloseEventArgs, scala.Unit] = null,
+    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
+    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
+    collapse: js.Function1[/* e */ CollapseEventArgs, scala.Unit] = null,
+    containment: java.lang.String = null,
+    contentLoad: js.Function1[/* e */ ContentLoadEventArgs, scala.Unit] = null,
+    contentType: java.lang.String = null,
+    contentUrl: java.lang.String = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    drag: js.Function1[/* e */ DragEventArgs, scala.Unit] = null,
+    dragStart: js.Function1[/* e */ DragStartEventArgs, scala.Unit] = null,
+    dragStop: js.Function1[/* e */ DragStopEventArgs, scala.Unit] = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableModal: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableResize: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    expand: js.Function1[/* e */ ExpandEventArgs, scala.Unit] = null,
+    faviconCSS: java.lang.String = null,
+    footerTemplateId: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    htmlAttributes: js.Any = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: java.lang.String = null,
+    maxHeight: java.lang.String | scala.Double = null,
+    maxWidth: java.lang.String | scala.Double = null,
+    minHeight: java.lang.String | scala.Double = null,
+    minWidth: java.lang.String | scala.Double = null,
+    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    position: js.Any = null,
+    resize: js.Function1[/* e */ ResizeEventArgs, scala.Unit] = null,
+    resizeStart: js.Function1[/* e */ ResizeStartEventArgs, scala.Unit] = null,
+    resizeStop: js.Function1[/* e */ ResizeStopEventArgs, scala.Unit] = null,
+    showFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    showOnInit: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    target: java.lang.String = null,
+    title: java.lang.String = null,
+    tooltip: js.Any = null,
+    width: java.lang.String | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (actionButtonClick != null) __obj.updateDynamic("actionButtonClick")(actionButtonClick)
+    if (actionButtons != null) __obj.updateDynamic("actionButtons")(actionButtons)
+    if (ajaxError != null) __obj.updateDynamic("ajaxError")(ajaxError)
+    if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings)
+    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(ajaxSuccess)
+    if (!js.isUndefined(allowDraggable)) __obj.updateDynamic("allowDraggable")(allowDraggable)
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(backgroundScroll)) __obj.updateDynamic("backgroundScroll")(backgroundScroll)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (containment != null) __obj.updateDynamic("containment")(containment)
+    if (contentLoad != null) __obj.updateDynamic("contentLoad")(contentLoad)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
+    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enableModal)) __obj.updateDynamic("enableModal")(enableModal)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (faviconCSS != null) __obj.updateDynamic("faviconCSS")(faviconCSS)
+    if (footerTemplateId != null) __obj.updateDynamic("footerTemplateId")(footerTemplateId)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (resize != null) __obj.updateDynamic("resize")(resize)
+    if (resizeStart != null) __obj.updateDynamic("resizeStart")(resizeStart)
+    if (resizeStop != null) __obj.updateDynamic("resizeStop")(resizeStop)
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
+    if (!js.isUndefined(showOnInit)) __obj.updateDynamic("showOnInit")(showOnInit)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

@@ -15,3 +15,13 @@ trait NodeInitializationAction extends js.Object {
   var executionTimeout: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeInitializationAction {
+  @scala.inline
+  def apply(executableFile: java.lang.String = null, executionTimeout: java.lang.String = null): NodeInitializationAction = {
+    val __obj = js.Dynamic.literal()
+    if (executableFile != null) __obj.updateDynamic("executableFile")(executableFile)
+    if (executionTimeout != null) __obj.updateDynamic("executionTimeout")(executionTimeout)
+    __obj.asInstanceOf[NodeInitializationAction]
+  }
+}
+

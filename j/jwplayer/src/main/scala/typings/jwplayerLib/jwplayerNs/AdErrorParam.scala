@@ -10,3 +10,13 @@ trait AdErrorParam extends js.Object {
   var tag: java.lang.String
 }
 
+object AdErrorParam {
+  @scala.inline
+  def apply(message: java.lang.String, tag: java.lang.String): AdErrorParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[AdErrorParam]
+  }
+}
+

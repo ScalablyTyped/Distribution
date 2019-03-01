@@ -29,3 +29,24 @@ trait MDCLineRippleAdapter extends js.Object {
   def setStyle(propertyName: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object MDCLineRippleAdapter {
+  @scala.inline
+  def apply(
+    addClass: js.Function1[java.lang.String, scala.Unit],
+    deregisterEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    hasClass: js.Function1[java.lang.String, scala.Boolean],
+    registerEventHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    removeClass: js.Function1[java.lang.String, scala.Unit],
+    setStyle: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): MDCLineRippleAdapter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addClass")(addClass)
+    __obj.updateDynamic("deregisterEventHandler")(deregisterEventHandler)
+    __obj.updateDynamic("hasClass")(hasClass)
+    __obj.updateDynamic("registerEventHandler")(registerEventHandler)
+    __obj.updateDynamic("removeClass")(removeClass)
+    __obj.updateDynamic("setStyle")(setStyle)
+    __obj.asInstanceOf[MDCLineRippleAdapter]
+  }
+}
+

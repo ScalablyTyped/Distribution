@@ -12,3 +12,20 @@ trait Anon_Leading extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_Leading {
+  @scala.inline
+  def apply(
+    value: java.lang.String,
+    leading: js.UndefOr[scala.Boolean] = js.undefined,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    trailing: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Leading = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing)
+    __obj.asInstanceOf[Anon_Leading]
+  }
+}
+

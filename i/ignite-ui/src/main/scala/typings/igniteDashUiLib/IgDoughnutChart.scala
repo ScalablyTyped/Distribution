@@ -174,3 +174,71 @@ trait IgDoughnutChart
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgDoughnutChart {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igDoughnutChart
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowSliceExplosion: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSliceSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    browserNotSupported: BrowserNotSupportedEvent = null,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    hideTooltip: HideTooltipEvent = null,
+    holeDimensionsChanged: HoleDimensionsChangedEvent = null,
+    innerExtent: scala.Int | scala.Double = null,
+    isSurfaceInteractionDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maxRecCount: scala.Int | scala.Double = null,
+    pixelScalingRatio: scala.Int | scala.Double = null,
+    responseDataKey: java.lang.String = null,
+    responseTotalRecCountKey: java.lang.String = null,
+    selectedStyle: js.Any = null,
+    series: js.Array[IgDoughnutChartSeries] = null,
+    sliceClick: SliceClickEvent = null,
+    tooltipHidden: TooltipHiddenEvent = null,
+    tooltipHiding: TooltipHidingEvent = null,
+    tooltipShowing: TooltipShowingEvent = null,
+    tooltipShown: TooltipShownEvent = null,
+    tooltipTemplate: java.lang.String = null,
+    updateTooltip: UpdateTooltipEvent = null,
+    width: java.lang.String | scala.Double = null
+  ): IgDoughnutChart = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowSliceExplosion)) __obj.updateDynamic("allowSliceExplosion")(allowSliceExplosion)
+    if (!js.isUndefined(allowSliceSelection)) __obj.updateDynamic("allowSliceSelection")(allowSliceSelection)
+    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(browserNotSupported)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
+    if (holeDimensionsChanged != null) __obj.updateDynamic("holeDimensionsChanged")(holeDimensionsChanged)
+    if (innerExtent != null) __obj.updateDynamic("innerExtent")(innerExtent.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSurfaceInteractionDisabled)) __obj.updateDynamic("isSurfaceInteractionDisabled")(isSurfaceInteractionDisabled)
+    if (maxRecCount != null) __obj.updateDynamic("maxRecCount")(maxRecCount.asInstanceOf[js.Any])
+    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
+    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (sliceClick != null) __obj.updateDynamic("sliceClick")(sliceClick)
+    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(tooltipHidden)
+    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(tooltipHiding)
+    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(tooltipShowing)
+    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(tooltipShown)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgDoughnutChart]
+  }
+}
+

@@ -19,3 +19,13 @@ trait CertificateRawData extends js.Object {
   var publicCertificate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CertificateRawData {
+  @scala.inline
+  def apply(privateKey: java.lang.String = null, publicCertificate: java.lang.String = null): CertificateRawData = {
+    val __obj = js.Dynamic.literal()
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey)
+    if (publicCertificate != null) __obj.updateDynamic("publicCertificate")(publicCertificate)
+    __obj.asInstanceOf[CertificateRawData]
+  }
+}
+

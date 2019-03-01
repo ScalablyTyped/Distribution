@@ -33,3 +33,37 @@ trait EventsResource extends js.Object {
   def resetMultipleForAllPlayers(request: gapiDotClientDotGamesmanagementLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object EventsResource {
+  @scala.inline
+  def apply(
+    reset: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_AltEventId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    resetAll: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    resetAllForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    resetForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_AltEventId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    resetMultipleForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): EventsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("resetAll")(resetAll)
+    __obj.updateDynamic("resetAllForAllPlayers")(resetAllForAllPlayers)
+    __obj.updateDynamic("resetForAllPlayers")(resetForAllPlayers)
+    __obj.updateDynamic("resetMultipleForAllPlayers")(resetMultipleForAllPlayers)
+    __obj.asInstanceOf[EventsResource]
+  }
+}
+

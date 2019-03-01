@@ -10,3 +10,12 @@ trait Anon_Property extends js.Object {
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.topojson
 }
 
+object Anon_Property {
+  @scala.inline
+  def apply(`type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.topojson, property: java.lang.String = null): Anon_Property = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (property != null) __obj.updateDynamic("property")(property)
+    __obj.asInstanceOf[Anon_Property]
+  }
+}
+

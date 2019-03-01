@@ -14,3 +14,20 @@ trait NavigationBarTitle extends js.Object {
   var title: java.lang.String
 }
 
+object NavigationBarTitle {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    ellipsizeMode: reactDashNativeDashNavbarLib.reactDashNativeDashNavbarLibStrings.head | reactDashNativeDashNavbarLib.reactDashNativeDashNavbarLibStrings.middle | reactDashNativeDashNavbarLib.reactDashNativeDashNavbarLibStrings.tail | reactDashNativeDashNavbarLib.reactDashNativeDashNavbarLibStrings.clip = null,
+    numberOfLines: scala.Int | scala.Double = null,
+    tintColor: java.lang.String = null
+  ): NavigationBarTitle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
+    if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
+    __obj.asInstanceOf[NavigationBarTitle]
+  }
+}
+

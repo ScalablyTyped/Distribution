@@ -12,3 +12,20 @@ trait SizedColumnProps extends js.Object {
   def getColumnWidth(): scala.Double
 }
 
+object SizedColumnProps {
+  @scala.inline
+  def apply(
+    adjustedWidth: scala.Double,
+    columnWidth: scala.Double,
+    getColumnWidth: js.Function0[scala.Double],
+    registerChild: js.Any
+  ): SizedColumnProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adjustedWidth")(adjustedWidth)
+    __obj.updateDynamic("columnWidth")(columnWidth)
+    __obj.updateDynamic("getColumnWidth")(getColumnWidth)
+    __obj.updateDynamic("registerChild")(registerChild)
+    __obj.asInstanceOf[SizedColumnProps]
+  }
+}
+

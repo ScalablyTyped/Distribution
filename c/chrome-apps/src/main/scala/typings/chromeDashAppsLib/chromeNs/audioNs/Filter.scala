@@ -20,3 +20,13 @@ trait Filter extends js.Object {
   var streamTypes: js.UndefOr[js.Array[StreamType]] = js.undefined
 }
 
+object Filter {
+  @scala.inline
+  def apply(isActive: js.UndefOr[scala.Boolean] = js.undefined, streamTypes: js.Array[StreamType] = null): Filter = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive)
+    if (streamTypes != null) __obj.updateDynamic("streamTypes")(streamTypes)
+    __obj.asInstanceOf[Filter]
+  }
+}
+

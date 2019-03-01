@@ -182,3 +182,52 @@ trait XConfigurationController
   def update(): scala.Unit
 }
 
+object XConfigurationController {
+  @scala.inline
+  def apply(
+    CurrentConfiguration: XConfiguration,
+    RequestedConfiguration: XConfiguration,
+    addConfigurationChangeListener: js.Function3[XConfigurationChangeListener, java.lang.String, js.Any, scala.Unit],
+    addResourceFactory: js.Function2[java.lang.String, XResourceFactory, scala.Unit],
+    getCurrentConfiguration: js.Function0[XConfiguration],
+    getRequestedConfiguration: js.Function0[XConfiguration],
+    getResource: js.Function1[XResourceId, XResource],
+    getResourceFactory: js.Function1[java.lang.String, XResourceFactory],
+    hasPendingRequests: js.Function0[scala.Boolean],
+    lock: js.Function0[scala.Unit],
+    notifyEvent: js.Function1[ConfigurationChangeEvent, scala.Unit],
+    postChangeRequest: js.Function1[XConfigurationChangeRequest, scala.Unit],
+    removeConfigurationChangeListener: js.Function1[XConfigurationChangeListener, scala.Unit],
+    removeResourceFactoryForReference: js.Function1[XResourceFactory, scala.Unit],
+    removeResourceFactoryForURL: js.Function1[java.lang.String, scala.Unit],
+    requestResourceActivation: js.Function2[XResourceId, ResourceActivationMode, scala.Unit],
+    requestResourceDeactivation: js.Function1[XResourceId, scala.Unit],
+    restoreConfiguration: js.Function1[XConfiguration, scala.Unit],
+    unlock: js.Function0[scala.Unit],
+    update: js.Function0[scala.Unit]
+  ): XConfigurationController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CurrentConfiguration")(CurrentConfiguration)
+    __obj.updateDynamic("RequestedConfiguration")(RequestedConfiguration)
+    __obj.updateDynamic("addConfigurationChangeListener")(addConfigurationChangeListener)
+    __obj.updateDynamic("addResourceFactory")(addResourceFactory)
+    __obj.updateDynamic("getCurrentConfiguration")(getCurrentConfiguration)
+    __obj.updateDynamic("getRequestedConfiguration")(getRequestedConfiguration)
+    __obj.updateDynamic("getResource")(getResource)
+    __obj.updateDynamic("getResourceFactory")(getResourceFactory)
+    __obj.updateDynamic("hasPendingRequests")(hasPendingRequests)
+    __obj.updateDynamic("lock")(lock)
+    __obj.updateDynamic("notifyEvent")(notifyEvent)
+    __obj.updateDynamic("postChangeRequest")(postChangeRequest)
+    __obj.updateDynamic("removeConfigurationChangeListener")(removeConfigurationChangeListener)
+    __obj.updateDynamic("removeResourceFactoryForReference")(removeResourceFactoryForReference)
+    __obj.updateDynamic("removeResourceFactoryForURL")(removeResourceFactoryForURL)
+    __obj.updateDynamic("requestResourceActivation")(requestResourceActivation)
+    __obj.updateDynamic("requestResourceDeactivation")(requestResourceDeactivation)
+    __obj.updateDynamic("restoreConfiguration")(restoreConfiguration)
+    __obj.updateDynamic("unlock")(unlock)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[XConfigurationController]
+  }
+}
+

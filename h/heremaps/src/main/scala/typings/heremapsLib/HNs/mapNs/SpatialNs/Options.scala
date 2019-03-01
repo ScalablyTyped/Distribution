@@ -30,3 +30,28 @@ trait Options extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    arrows: heremapsLib.HNs.mapNs.ArrowStyle | heremapsLib.HNs.mapNs.ArrowStyleNs.Options = null,
+    data: js.Any = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    provider: heremapsLib.HNs.mapNs.providerNs.Provider = null,
+    style: heremapsLib.HNs.mapNs.SpatialStyle | heremapsLib.HNs.mapNs.SpatialStyleNs.Options = null,
+    visibility: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (arrows != null) __obj.updateDynamic("arrows")(arrows.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

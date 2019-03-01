@@ -11,3 +11,14 @@ trait WorkItemBehaviorField extends js.Object {
   var url: java.lang.String
 }
 
+object WorkItemBehaviorField {
+  @scala.inline
+  def apply(behaviorFieldId: java.lang.String, id: java.lang.String, url: java.lang.String): WorkItemBehaviorField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("behaviorFieldId")(behaviorFieldId)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WorkItemBehaviorField]
+  }
+}
+

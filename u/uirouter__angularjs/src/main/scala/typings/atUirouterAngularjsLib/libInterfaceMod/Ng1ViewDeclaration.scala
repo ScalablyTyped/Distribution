@@ -247,3 +247,42 @@ trait Ng1ViewDeclaration
   var templateUrl: js.UndefOr[java.lang.String | angularLib.angularMod.Global.Function] = js.undefined
 }
 
+object Ng1ViewDeclaration {
+  @scala.inline
+  def apply(
+    $context: atUirouterCoreLib.libViewInterfaceMod.ViewContext = null,
+    $name: java.lang.String = null,
+    $type: java.lang.String = null,
+    $uiViewContextAnchor: java.lang.String = null,
+    $uiViewName: java.lang.String = null,
+    bindings: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    component: java.lang.String = null,
+    componentProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
+    controller: atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String = null,
+    controllerAs: java.lang.String = null,
+    controllerProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
+    resolveAs: java.lang.String = null,
+    template: angularLib.angularMod.Global.Function | java.lang.String = null,
+    templateProvider: atUirouterCoreLib.libCommonCommonMod.IInjectable = null,
+    templateUrl: java.lang.String | angularLib.angularMod.Global.Function = null
+  ): Ng1ViewDeclaration = {
+    val __obj = js.Dynamic.literal()
+    if ($context != null) __obj.updateDynamic("$context")($context)
+    if ($name != null) __obj.updateDynamic("$name")($name)
+    if ($type != null) __obj.updateDynamic("$type")($type)
+    if ($uiViewContextAnchor != null) __obj.updateDynamic("$uiViewContextAnchor")($uiViewContextAnchor)
+    if ($uiViewName != null) __obj.updateDynamic("$uiViewName")($uiViewName)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (componentProvider != null) __obj.updateDynamic("componentProvider")(componentProvider.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (controllerProvider != null) __obj.updateDynamic("controllerProvider")(controllerProvider.asInstanceOf[js.Any])
+    if (resolveAs != null) __obj.updateDynamic("resolveAs")(resolveAs)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateProvider != null) __obj.updateDynamic("templateProvider")(templateProvider.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ng1ViewDeclaration]
+  }
+}
+

@@ -18,3 +18,22 @@ trait WorkspaceProposalHistory extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WorkspaceProposalHistory {
+  @scala.inline
+  def apply(
+    comment: WorkspaceProposalHistoryComment = null,
+    createdBy: WorkspaceProposalUser = null,
+    createdTimestamp: Timestamp = null,
+    statusChange: WorkspaceProposalHistoryStatusChange = null,
+    `type`: java.lang.String = null
+  ): WorkspaceProposalHistory = {
+    val __obj = js.Dynamic.literal()
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)
+    if (createdTimestamp != null) __obj.updateDynamic("createdTimestamp")(createdTimestamp)
+    if (statusChange != null) __obj.updateDynamic("statusChange")(statusChange)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[WorkspaceProposalHistory]
+  }
+}
+

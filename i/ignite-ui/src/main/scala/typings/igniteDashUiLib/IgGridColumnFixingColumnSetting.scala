@@ -32,3 +32,25 @@ trait IgGridColumnFixingColumnSetting
   var isFixed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgGridColumnFixingColumnSetting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridColumnFixingColumnSetting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowFixing: js.UndefOr[scala.Boolean] = js.undefined,
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    isFixed: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgGridColumnFixingColumnSetting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowFixing)) __obj.updateDynamic("allowFixing")(allowFixing)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed)
+    __obj.asInstanceOf[IgGridColumnFixingColumnSetting]
+  }
+}
+

@@ -25,3 +25,26 @@ trait RequestAuth extends js.Object {
   var strategy: java.lang.String
 }
 
+object RequestAuth {
+  @scala.inline
+  def apply(
+    artifacts: js.Object,
+    credentials: AuthCredentials,
+    error: nodeLib.Error,
+    isAuthenticated: scala.Boolean,
+    isAuthorized: scala.Boolean,
+    mode: java.lang.String,
+    strategy: java.lang.String
+  ): RequestAuth = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifacts")(artifacts)
+    __obj.updateDynamic("credentials")(credentials)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
+    __obj.updateDynamic("isAuthorized")(isAuthorized)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("strategy")(strategy)
+    __obj.asInstanceOf[RequestAuth]
+  }
+}
+

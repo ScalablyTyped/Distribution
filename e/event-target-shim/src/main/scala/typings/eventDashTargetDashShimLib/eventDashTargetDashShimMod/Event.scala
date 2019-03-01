@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Event extends js.Object {
+trait Event
+  extends eventDashTargetDashShimLib.eventDashTargetDashShimMod.EventTargetNs._EventData[js.Any, js.Any, js.Any] {
   /**
     * Constant of AT_TARGET.
     */

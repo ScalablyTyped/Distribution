@@ -13,3 +13,12 @@ trait DocumentMask extends js.Object {
   var fieldPaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object DocumentMask {
+  @scala.inline
+  def apply(fieldPaths: js.Array[java.lang.String] = null): DocumentMask = {
+    val __obj = js.Dynamic.literal()
+    if (fieldPaths != null) __obj.updateDynamic("fieldPaths")(fieldPaths)
+    __obj.asInstanceOf[DocumentMask]
+  }
+}
+

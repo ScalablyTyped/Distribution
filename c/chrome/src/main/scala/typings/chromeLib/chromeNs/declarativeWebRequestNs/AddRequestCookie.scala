@@ -9,3 +9,12 @@ trait AddRequestCookie extends js.Object {
   var cookie: RequestCookie
 }
 
+object AddRequestCookie {
+  @scala.inline
+  def apply(cookie: RequestCookie): AddRequestCookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cookie")(cookie)
+    __obj.asInstanceOf[AddRequestCookie]
+  }
+}
+

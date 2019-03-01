@@ -15,3 +15,12 @@ trait InitializeError extends js.Object {
   var retry: scala.Boolean
 }
 
+object InitializeError {
+  @scala.inline
+  def apply(retry: scala.Boolean): InitializeError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("retry")(retry)
+    __obj.asInstanceOf[InitializeError]
+  }
+}
+

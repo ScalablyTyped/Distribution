@@ -12,3 +12,13 @@ trait LinkOutSuggestion extends js.Object {
   var url: java.lang.String
 }
 
+object LinkOutSuggestion {
+  @scala.inline
+  def apply(title: java.lang.String, url: java.lang.String): LinkOutSuggestion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[LinkOutSuggestion]
+  }
+}
+

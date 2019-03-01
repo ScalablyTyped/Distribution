@@ -12,3 +12,19 @@ trait APIResponseErrorError extends js.Object {
   var `type`: java.lang.String
 }
 
+object APIResponseErrorError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    `type`: java.lang.String,
+    details: js.Array[APIResponseErrorDetails] = null,
+    link: java.lang.String = null
+  ): APIResponseErrorError = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("message")(message)
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (link != null) __obj.updateDynamic("link")(link)
+    __obj.asInstanceOf[APIResponseErrorError]
+  }
+}
+

@@ -13,3 +13,21 @@ trait SchemaDescription extends js.Object {
   var `type`: java.lang.String
 }
 
+object SchemaDescription {
+  @scala.inline
+  def apply(
+    fields: js.Object,
+    label: java.lang.String,
+    meta: js.Object,
+    tests: js.Array[java.lang.String],
+    `type`: java.lang.String
+  ): SchemaDescription = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("tests")(tests)
+    __obj.asInstanceOf[SchemaDescription]
+  }
+}
+

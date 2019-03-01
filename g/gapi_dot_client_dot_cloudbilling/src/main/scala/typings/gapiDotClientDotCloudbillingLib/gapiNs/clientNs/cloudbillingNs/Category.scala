@@ -25,3 +25,20 @@ trait Category extends js.Object {
   var usageType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Category {
+  @scala.inline
+  def apply(
+    resourceFamily: java.lang.String = null,
+    resourceGroup: java.lang.String = null,
+    serviceDisplayName: java.lang.String = null,
+    usageType: java.lang.String = null
+  ): Category = {
+    val __obj = js.Dynamic.literal()
+    if (resourceFamily != null) __obj.updateDynamic("resourceFamily")(resourceFamily)
+    if (resourceGroup != null) __obj.updateDynamic("resourceGroup")(resourceGroup)
+    if (serviceDisplayName != null) __obj.updateDynamic("serviceDisplayName")(serviceDisplayName)
+    if (usageType != null) __obj.updateDynamic("usageType")(usageType)
+    __obj.asInstanceOf[Category]
+  }
+}
+

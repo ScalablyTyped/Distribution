@@ -22,3 +22,26 @@ trait ExecutionStageSummary extends js.Object {
   var outputSource: js.UndefOr[js.Array[StageSource]] = js.undefined
 }
 
+object ExecutionStageSummary {
+  @scala.inline
+  def apply(
+    componentSource: js.Array[ComponentSource] = null,
+    componentTransform: js.Array[ComponentTransform] = null,
+    id: java.lang.String = null,
+    inputSource: js.Array[StageSource] = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    outputSource: js.Array[StageSource] = null
+  ): ExecutionStageSummary = {
+    val __obj = js.Dynamic.literal()
+    if (componentSource != null) __obj.updateDynamic("componentSource")(componentSource)
+    if (componentTransform != null) __obj.updateDynamic("componentTransform")(componentTransform)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inputSource != null) __obj.updateDynamic("inputSource")(inputSource)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (outputSource != null) __obj.updateDynamic("outputSource")(outputSource)
+    __obj.asInstanceOf[ExecutionStageSummary]
+  }
+}
+

@@ -301,10 +301,14 @@ object ResourceGroupsTaggingAPINs extends js.Object {
     var FailedResourcesMap: js.UndefOr[FailedResourcesMap] = js.undefined
   }
   
+  trait _ErrorCode extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AmazonResourceType = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ErrorCode = awsDashSdkLib.awsDashSdkLibStrings.InternalServiceException | awsDashSdkLib.awsDashSdkLibStrings.InvalidParameterException | java.lang.String
+  type ErrorCode = _ErrorCode | java.lang.String
   type ErrorMessage = java.lang.String
   type PaginationToken = java.lang.String
   type ResourceARN = java.lang.String
@@ -322,6 +326,6 @@ object ResourceGroupsTaggingAPINs extends js.Object {
   type TagValueList = js.Array[TagValue]
   type TagValuesOutputList = js.Array[TagValue]
   type TagsPerPage = scala.Double
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-01-26` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

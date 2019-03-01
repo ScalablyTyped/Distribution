@@ -13,3 +13,22 @@ trait OriginalURLParsed extends js.Object {
   var scheme: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.https | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.http
 }
 
+object OriginalURLParsed {
+  @scala.inline
+  def apply(
+    fragment: java.lang.String,
+    host: java.lang.String,
+    path: java.lang.String,
+    query: URLQuery,
+    scheme: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.https | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.http
+  ): OriginalURLParsed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fragment")(fragment)
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OriginalURLParsed]
+  }
+}
+

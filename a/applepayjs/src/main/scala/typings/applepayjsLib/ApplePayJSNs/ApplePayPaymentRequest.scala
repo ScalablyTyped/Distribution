@@ -68,3 +68,40 @@ trait ApplePayPaymentRequest extends js.Object {
   var total: ApplePayLineItem
 }
 
+object ApplePayPaymentRequest {
+  @scala.inline
+  def apply(
+    countryCode: java.lang.String,
+    currencyCode: java.lang.String,
+    merchantCapabilities: js.Array[ApplePayMerchantCapability],
+    supportedNetworks: js.Array[java.lang.String],
+    total: ApplePayLineItem,
+    applicationData: java.lang.String = null,
+    billingContact: ApplePayPaymentContact = null,
+    lineItems: js.Array[ApplePayLineItem] = null,
+    requiredBillingContactFields: js.Array[ApplePayContactField] = null,
+    requiredShippingContactFields: js.Array[ApplePayContactField] = null,
+    shippingContact: ApplePayPaymentContact = null,
+    shippingMethods: js.Array[ApplePayShippingMethod] = null,
+    shippingType: ApplePayShippingType = null,
+    supportedCountries: js.Array[java.lang.String] = null
+  ): ApplePayPaymentRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("countryCode")(countryCode)
+    __obj.updateDynamic("currencyCode")(currencyCode)
+    __obj.updateDynamic("merchantCapabilities")(merchantCapabilities)
+    __obj.updateDynamic("supportedNetworks")(supportedNetworks)
+    __obj.updateDynamic("total")(total)
+    if (applicationData != null) __obj.updateDynamic("applicationData")(applicationData)
+    if (billingContact != null) __obj.updateDynamic("billingContact")(billingContact)
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
+    if (requiredBillingContactFields != null) __obj.updateDynamic("requiredBillingContactFields")(requiredBillingContactFields)
+    if (requiredShippingContactFields != null) __obj.updateDynamic("requiredShippingContactFields")(requiredShippingContactFields)
+    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact)
+    if (shippingMethods != null) __obj.updateDynamic("shippingMethods")(shippingMethods)
+    if (shippingType != null) __obj.updateDynamic("shippingType")(shippingType)
+    if (supportedCountries != null) __obj.updateDynamic("supportedCountries")(supportedCountries)
+    __obj.asInstanceOf[ApplePayPaymentRequest]
+  }
+}
+

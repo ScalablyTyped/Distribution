@@ -10,3 +10,12 @@ trait GooglePrivacyDlpV2beta1TableLocation extends js.Object {
   var rowIndex: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1TableLocation {
+  @scala.inline
+  def apply(rowIndex: java.lang.String = null): GooglePrivacyDlpV2beta1TableLocation = {
+    val __obj = js.Dynamic.literal()
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1TableLocation]
+  }
+}
+

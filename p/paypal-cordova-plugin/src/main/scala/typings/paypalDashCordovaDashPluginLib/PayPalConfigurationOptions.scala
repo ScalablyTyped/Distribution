@@ -119,3 +119,42 @@ trait PayPalConfigurationOptions extends js.Object {
   var sandboxUserPin: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PayPalConfigurationOptions {
+  @scala.inline
+  def apply(
+    acceptCreditCards: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultUserEmail: java.lang.String = null,
+    defaultUserPhoneCountryCode: java.lang.String = null,
+    defaultUserPhoneNumber: java.lang.String = null,
+    disableBlurWhenBackgrounding: js.UndefOr[scala.Boolean] = js.undefined,
+    forceDefaultsInSandbox: js.UndefOr[scala.Boolean] = js.undefined,
+    languageOrLocale: java.lang.String = null,
+    merchantName: java.lang.String = null,
+    merchantPrivacyPolicyURL: java.lang.String = null,
+    merchantUserAgreementURL: java.lang.String = null,
+    payPalShippingAddressOption: scala.Int | scala.Double = null,
+    presentingInPopover: js.UndefOr[scala.Boolean] = js.undefined,
+    rememberUser: js.UndefOr[scala.Boolean] = js.undefined,
+    sandboxUserPassword: java.lang.String = null,
+    sandboxUserPin: java.lang.String = null
+  ): PayPalConfigurationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(acceptCreditCards)) __obj.updateDynamic("acceptCreditCards")(acceptCreditCards)
+    if (defaultUserEmail != null) __obj.updateDynamic("defaultUserEmail")(defaultUserEmail)
+    if (defaultUserPhoneCountryCode != null) __obj.updateDynamic("defaultUserPhoneCountryCode")(defaultUserPhoneCountryCode)
+    if (defaultUserPhoneNumber != null) __obj.updateDynamic("defaultUserPhoneNumber")(defaultUserPhoneNumber)
+    if (!js.isUndefined(disableBlurWhenBackgrounding)) __obj.updateDynamic("disableBlurWhenBackgrounding")(disableBlurWhenBackgrounding)
+    if (!js.isUndefined(forceDefaultsInSandbox)) __obj.updateDynamic("forceDefaultsInSandbox")(forceDefaultsInSandbox)
+    if (languageOrLocale != null) __obj.updateDynamic("languageOrLocale")(languageOrLocale)
+    if (merchantName != null) __obj.updateDynamic("merchantName")(merchantName)
+    if (merchantPrivacyPolicyURL != null) __obj.updateDynamic("merchantPrivacyPolicyURL")(merchantPrivacyPolicyURL)
+    if (merchantUserAgreementURL != null) __obj.updateDynamic("merchantUserAgreementURL")(merchantUserAgreementURL)
+    if (payPalShippingAddressOption != null) __obj.updateDynamic("payPalShippingAddressOption")(payPalShippingAddressOption.asInstanceOf[js.Any])
+    if (!js.isUndefined(presentingInPopover)) __obj.updateDynamic("presentingInPopover")(presentingInPopover)
+    if (!js.isUndefined(rememberUser)) __obj.updateDynamic("rememberUser")(rememberUser)
+    if (sandboxUserPassword != null) __obj.updateDynamic("sandboxUserPassword")(sandboxUserPassword)
+    if (sandboxUserPin != null) __obj.updateDynamic("sandboxUserPin")(sandboxUserPin)
+    __obj.asInstanceOf[PayPalConfigurationOptions]
+  }
+}
+

@@ -35,3 +35,26 @@ trait ExportSettings extends js.Object {
   var `type`: js.UndefOr[ExportingType | java.lang.String] = js.undefined
 }
 
+object ExportSettings {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    angle: scala.Int | scala.Double = null,
+    filename: java.lang.String = null,
+    mode: ExportingMode | java.lang.String = null,
+    multipleExport: js.UndefOr[scala.Boolean] = js.undefined,
+    orientation: ExportingOrientation | java.lang.String = null,
+    `type`: ExportingType | java.lang.String = null
+  ): ExportSettings = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(multipleExport)) __obj.updateDynamic("multipleExport")(multipleExport)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExportSettings]
+  }
+}
+

@@ -12,3 +12,14 @@ trait SegmentOpts extends js.Object {
   var integrations: js.UndefOr[js.Any] = js.undefined
 }
 
+object SegmentOpts {
+  @scala.inline
+  def apply(anonymousId: java.lang.String = null, context: js.Object = null, integrations: js.Any = null): SegmentOpts = {
+    val __obj = js.Dynamic.literal()
+    if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (integrations != null) __obj.updateDynamic("integrations")(integrations)
+    __obj.asInstanceOf[SegmentOpts]
+  }
+}
+

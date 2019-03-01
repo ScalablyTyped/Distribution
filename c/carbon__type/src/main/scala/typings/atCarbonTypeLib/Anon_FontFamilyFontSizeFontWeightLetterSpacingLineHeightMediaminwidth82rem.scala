@@ -15,3 +15,24 @@ trait Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth82rem
   var lineHeight: java.lang.String
 }
 
+object Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth82rem {
+  @scala.inline
+  def apply(
+    `@media (min-width: 82rem)`: Anon_FontSizeLineHeight,
+    `@media (min-width: 99rem)`: Anon_FontSize,
+    fontFamily: java.lang.String,
+    fontSize: java.lang.String,
+    fontWeight: scala.Double,
+    letterSpacing: scala.Double,
+    lineHeight: java.lang.String
+  ): Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth82rem = {
+    val __obj = js.Dynamic.literal(`@media (min-width: 82rem)` = `@media (min-width: 82rem)`, `@media (min-width: 99rem)` = `@media (min-width: 99rem)`)
+    __obj.updateDynamic("fontFamily")(fontFamily)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("fontWeight")(fontWeight)
+    __obj.updateDynamic("letterSpacing")(letterSpacing)
+    __obj.updateDynamic("lineHeight")(lineHeight)
+    __obj.asInstanceOf[Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth82rem]
+  }
+}
+

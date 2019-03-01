@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HTMLCanvasElement extends HTMLElement {
+trait HTMLCanvasElement
+  extends HTMLElement
+     with CanvasImageSource
+     with TexImageSource {
   /**
     * Gets or sets the height of a canvas element on a document.
     */
@@ -15,6 +18,16 @@ trait HTMLCanvasElement extends HTMLElement {
     * Gets or sets the width of a canvas element on a document.
     */
   var width: scala.Double = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
   def getContext(contextId: java.lang.String): CanvasRenderingContext2D | WebGLRenderingContext | scala.Null = js.native
   def getContext(contextId: java.lang.String, contextAttributes: js.Object): CanvasRenderingContext2D | WebGLRenderingContext | scala.Null = js.native
   /**
@@ -33,6 +46,16 @@ trait HTMLCanvasElement extends HTMLElement {
   def getContext_webgl(contextId: stdLib.stdLibStrings.webgl): WebGLRenderingContext | scala.Null = js.native
   @JSName("getContext")
   def getContext_webgl(contextId: stdLib.stdLibStrings.webgl, contextAttributes: WebGLContextAttributes): WebGLRenderingContext | scala.Null = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): scala.Unit = js.native
   def toBlob(callback: BlobCallback): scala.Unit = js.native
   def toBlob(callback: BlobCallback, `type`: java.lang.String): scala.Unit = js.native
   def toBlob(callback: BlobCallback, `type`: java.lang.String, quality: js.Any): scala.Unit = js.native

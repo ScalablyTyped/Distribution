@@ -11,3 +11,18 @@ trait Anon_DateTimeFormats extends js.Object {
   var numberFormats: js.UndefOr[vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormats] = js.undefined
 }
 
+object Anon_DateTimeFormats {
+  @scala.inline
+  def apply(
+    dateTimeFormats: vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormats = null,
+    messages: vueDashI18nLib.vueDashI18nMod.VueI18nNs.LocaleMessages = null,
+    numberFormats: vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormats = null
+  ): Anon_DateTimeFormats = {
+    val __obj = js.Dynamic.literal()
+    if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats)
+    __obj.asInstanceOf[Anon_DateTimeFormats]
+  }
+}
+

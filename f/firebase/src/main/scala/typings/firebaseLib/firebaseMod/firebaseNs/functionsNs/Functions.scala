@@ -10,3 +10,16 @@ trait Functions extends js.Object {
   def useFunctionsEmulator(url: java.lang.String): scala.Unit
 }
 
+object Functions {
+  @scala.inline
+  def apply(
+    httpsCallable: js.Function1[java.lang.String, HttpsCallable],
+    useFunctionsEmulator: js.Function1[java.lang.String, scala.Unit]
+  ): Functions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("httpsCallable")(httpsCallable)
+    __obj.updateDynamic("useFunctionsEmulator")(useFunctionsEmulator)
+    __obj.asInstanceOf[Functions]
+  }
+}
+

@@ -20,3 +20,13 @@ trait SetParagraphLevelCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object SetParagraphLevelCommand {
+  @scala.inline
+  def apply(execute: js.Function1[scala.Double, scala.Boolean], getState: js.Function0[js.Any]): SetParagraphLevelCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[SetParagraphLevelCommand]
+  }
+}
+

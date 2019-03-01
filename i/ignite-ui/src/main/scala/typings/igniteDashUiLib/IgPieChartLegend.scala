@@ -32,3 +32,25 @@ trait IgPieChartLegend
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgPieChartLegend {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPieChartLegend
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    element: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): IgPieChartLegend = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgPieChartLegend]
+  }
+}
+

@@ -31,3 +31,36 @@ trait XSheetAnnotation
   def setIsVisible(bIsVisible: scala.Boolean): scala.Unit
 }
 
+object XSheetAnnotation {
+  @scala.inline
+  def apply(
+    Author: java.lang.String,
+    Date: java.lang.String,
+    IsVisible: scala.Boolean,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress,
+    acquire: js.Function0[scala.Unit],
+    getAuthor: js.Function0[java.lang.String],
+    getDate: js.Function0[java.lang.String],
+    getIsVisible: js.Function0[scala.Boolean],
+    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setIsVisible: js.Function1[scala.Boolean, scala.Unit]
+  ): XSheetAnnotation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Author")(Author)
+    __obj.updateDynamic("Date")(Date)
+    __obj.updateDynamic("IsVisible")(IsVisible)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAuthor")(getAuthor)
+    __obj.updateDynamic("getDate")(getDate)
+    __obj.updateDynamic("getIsVisible")(getIsVisible)
+    __obj.updateDynamic("getPosition")(getPosition)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setIsVisible")(setIsVisible)
+    __obj.asInstanceOf[XSheetAnnotation]
+  }
+}
+

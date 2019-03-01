@@ -86,3 +86,34 @@ trait NamedItemCollectionLoadOptions extends js.Object {
   var worksheetOrNullObject: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 
+object NamedItemCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    arrayValues: NamedItemArrayValuesLoadOptions = null,
+    comment: js.UndefOr[scala.Boolean] = js.undefined,
+    formula: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    scope: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    worksheet: WorksheetLoadOptions = null,
+    worksheetOrNullObject: WorksheetLoadOptions = null
+  ): NamedItemCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues)
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment)
+    if (!js.isUndefined(formula)) __obj.updateDynamic("formula")(formula)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(scope)) __obj.updateDynamic("scope")(scope)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
+    if (worksheetOrNullObject != null) __obj.updateDynamic("worksheetOrNullObject")(worksheetOrNullObject)
+    __obj.asInstanceOf[NamedItemCollectionLoadOptions]
+  }
+}
+

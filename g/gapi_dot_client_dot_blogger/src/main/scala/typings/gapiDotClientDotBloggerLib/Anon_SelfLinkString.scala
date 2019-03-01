@@ -10,3 +10,12 @@ trait Anon_SelfLinkString extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_SelfLinkString {
+  @scala.inline
+  def apply(selfLink: java.lang.String = null): Anon_SelfLinkString = {
+    val __obj = js.Dynamic.literal()
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Anon_SelfLinkString]
+  }
+}
+

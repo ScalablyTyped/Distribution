@@ -44,3 +44,24 @@ trait ListLogEntriesRequest extends js.Object {
   var resourceNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ListLogEntriesRequest {
+  @scala.inline
+  def apply(
+    filter: java.lang.String = null,
+    orderBy: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    projectIds: js.Array[java.lang.String] = null,
+    resourceNames: js.Array[java.lang.String] = null
+  ): ListLogEntriesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (projectIds != null) __obj.updateDynamic("projectIds")(projectIds)
+    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames)
+    __obj.asInstanceOf[ListLogEntriesRequest]
+  }
+}
+

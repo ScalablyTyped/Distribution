@@ -17,3 +17,30 @@ trait BootboxService extends js.Object {
   def setLocale(name: java.lang.String): scala.Unit
 }
 
+object BootboxService {
+  @scala.inline
+  def apply(
+    addLocale: js.Function2[java.lang.String, bootboxLib.BootboxLocaleValues, scala.Unit],
+    alert: js.Function1[java.lang.String, js.Promise[_]],
+    confirm: js.Function1[java.lang.String, js.Promise[_]],
+    customDialog: js.Function1[NgBootboxDialog, scala.Unit],
+    hideAll: js.Function0[scala.Unit],
+    prompt: js.Function1[java.lang.String, js.Promise[_]],
+    removeLocale: js.Function1[java.lang.String, scala.Unit],
+    setDefaults: js.Function1[bootboxLib.BootboxDefaultOptions, scala.Unit],
+    setLocale: js.Function1[java.lang.String, scala.Unit]
+  ): BootboxService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addLocale")(addLocale)
+    __obj.updateDynamic("alert")(alert)
+    __obj.updateDynamic("confirm")(confirm)
+    __obj.updateDynamic("customDialog")(customDialog)
+    __obj.updateDynamic("hideAll")(hideAll)
+    __obj.updateDynamic("prompt")(prompt)
+    __obj.updateDynamic("removeLocale")(removeLocale)
+    __obj.updateDynamic("setDefaults")(setDefaults)
+    __obj.updateDynamic("setLocale")(setLocale)
+    __obj.asInstanceOf[BootboxService]
+  }
+}
+

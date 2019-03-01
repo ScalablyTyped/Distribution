@@ -12,8 +12,9 @@ object DocumentPickerNs extends js.Object {
     var `type`: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  trait Response extends js.Object
+  
   def getDocumentAsync(): js.Promise[Response] = js.native
   def getDocumentAsync(options: Options): js.Promise[Response] = js.native
-  type Response = expoLib.Anon_Name | expoLib.Anon_Cancel
 }
 

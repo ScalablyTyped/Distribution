@@ -12,3 +12,14 @@ trait DidOpenTextDocumentParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentItem
 }
 
+object DidOpenTextDocumentParams {
+  @scala.inline
+  def apply(
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentItem
+  ): DidOpenTextDocumentParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("textDocument")(textDocument)
+    __obj.asInstanceOf[DidOpenTextDocumentParams]
+  }
+}
+

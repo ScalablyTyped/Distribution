@@ -31,3 +31,24 @@ trait ISpatialFilterOptions extends js.Object {
   var start: js.UndefOr[java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location] = js.undefined
 }
 
+object ISpatialFilterOptions {
+  @scala.inline
+  def apply(
+    spatialFilterType: java.lang.String,
+    end: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location = null,
+    intersects: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.LocationRect | bingmapsLib.MicrosoftNs.MapsNs.IPrimitive = null,
+    location: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location = null,
+    radius: scala.Int | scala.Double = null,
+    start: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location = null
+  ): ISpatialFilterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("spatialFilterType")(spatialFilterType)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (intersects != null) __obj.updateDynamic("intersects")(intersects.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISpatialFilterOptions]
+  }
+}
+

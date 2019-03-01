@@ -28,3 +28,18 @@ trait CommitRequest extends js.Object {
   var transactionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommitRequest {
+  @scala.inline
+  def apply(
+    mutations: js.Array[Mutation] = null,
+    singleUseTransaction: TransactionOptions = null,
+    transactionId: java.lang.String = null
+  ): CommitRequest = {
+    val __obj = js.Dynamic.literal()
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
+    if (singleUseTransaction != null) __obj.updateDynamic("singleUseTransaction")(singleUseTransaction)
+    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId)
+    __obj.asInstanceOf[CommitRequest]
+  }
+}
+

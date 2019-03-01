@@ -145,3 +145,60 @@ trait Config extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    api_host: java.lang.String = null,
+    app_host: java.lang.String = null,
+    autotrack: js.UndefOr[scala.Boolean] = js.undefined,
+    cdn: java.lang.String = null,
+    cookie_expiration: scala.Int | scala.Double = null,
+    cookie_name: java.lang.String = null,
+    cross_subdomain_cookie: js.UndefOr[scala.Boolean] = js.undefined,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_cookie: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_persistence: js.UndefOr[scala.Boolean] = js.undefined,
+    img: js.UndefOr[scala.Boolean] = js.undefined,
+    ip: js.UndefOr[scala.Boolean] = js.undefined,
+    loaded: js.Function1[/* lib */ mixpanelLib.Mixpanel, scala.Unit] = null,
+    persistence: mixpanelLib.mixpanelLibStrings.localStorage | mixpanelLib.mixpanelLibStrings.cookie = null,
+    persistence_name: java.lang.String = null,
+    property_blacklist: js.Array[java.lang.String] = null,
+    save_referrer: js.UndefOr[scala.Boolean] = js.undefined,
+    secure_cookie: js.UndefOr[scala.Boolean] = js.undefined,
+    store_google: js.UndefOr[scala.Boolean] = js.undefined,
+    test: js.UndefOr[scala.Boolean] = js.undefined,
+    track_links_timeout: scala.Int | scala.Double = null,
+    track_pageview: js.UndefOr[scala.Boolean] = js.undefined,
+    upgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (api_host != null) __obj.updateDynamic("api_host")(api_host)
+    if (app_host != null) __obj.updateDynamic("app_host")(app_host)
+    if (!js.isUndefined(autotrack)) __obj.updateDynamic("autotrack")(autotrack)
+    if (cdn != null) __obj.updateDynamic("cdn")(cdn)
+    if (cookie_expiration != null) __obj.updateDynamic("cookie_expiration")(cookie_expiration.asInstanceOf[js.Any])
+    if (cookie_name != null) __obj.updateDynamic("cookie_name")(cookie_name)
+    if (!js.isUndefined(cross_subdomain_cookie)) __obj.updateDynamic("cross_subdomain_cookie")(cross_subdomain_cookie)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(disable_cookie)) __obj.updateDynamic("disable_cookie")(disable_cookie)
+    if (!js.isUndefined(disable_persistence)) __obj.updateDynamic("disable_persistence")(disable_persistence)
+    if (!js.isUndefined(img)) __obj.updateDynamic("img")(img)
+    if (!js.isUndefined(ip)) __obj.updateDynamic("ip")(ip)
+    if (loaded != null) __obj.updateDynamic("loaded")(loaded)
+    if (persistence != null) __obj.updateDynamic("persistence")(persistence.asInstanceOf[js.Any])
+    if (persistence_name != null) __obj.updateDynamic("persistence_name")(persistence_name)
+    if (property_blacklist != null) __obj.updateDynamic("property_blacklist")(property_blacklist)
+    if (!js.isUndefined(save_referrer)) __obj.updateDynamic("save_referrer")(save_referrer)
+    if (!js.isUndefined(secure_cookie)) __obj.updateDynamic("secure_cookie")(secure_cookie)
+    if (!js.isUndefined(store_google)) __obj.updateDynamic("store_google")(store_google)
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
+    if (track_links_timeout != null) __obj.updateDynamic("track_links_timeout")(track_links_timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(track_pageview)) __obj.updateDynamic("track_pageview")(track_pageview)
+    if (!js.isUndefined(upgrade)) __obj.updateDynamic("upgrade")(upgrade)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[Config]
+  }
+}
+

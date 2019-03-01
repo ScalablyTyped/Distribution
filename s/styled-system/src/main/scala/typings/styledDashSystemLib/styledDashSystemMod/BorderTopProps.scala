@@ -15,3 +15,12 @@ trait BorderTopProps[TLength] extends js.Object {
   var borderTop: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BorderTopProperty[TLength]]] = js.undefined
 }
 
+object BorderTopProps {
+  @scala.inline
+  def apply[TLength](borderTop: ResponsiveValue[csstypeLib.csstypeMod.BorderTopProperty[TLength]] = null): BorderTopProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BorderTopProps[TLength]]
+  }
+}
+

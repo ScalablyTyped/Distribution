@@ -30,3 +30,22 @@ trait Opts extends js.Object {
   var split: js.UndefOr[js.Any] = js.undefined
 }
 
+object Opts {
+  @scala.inline
+  def apply(
+    blocking: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    encoding: java.lang.String = null,
+    size: js.Any = null,
+    split: js.Any = null
+  ): Opts = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (split != null) __obj.updateDynamic("split")(split)
+    __obj.asInstanceOf[Opts]
+  }
+}
+

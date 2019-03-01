@@ -40,3 +40,13 @@ trait NamedDatabaseObject extends js.Object {
   var Type: scala.Double
 }
 
+object NamedDatabaseObject {
+  @scala.inline
+  def apply(Name: java.lang.String, Type: scala.Double): NamedDatabaseObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Type")(Type)
+    __obj.asInstanceOf[NamedDatabaseObject]
+  }
+}
+

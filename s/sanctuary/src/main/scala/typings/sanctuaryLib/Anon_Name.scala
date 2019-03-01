@@ -11,3 +11,18 @@ trait Anon_Name extends js.Object {
   var version: NonNegativeInteger
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    namespace: sanctuaryLib.sanctuaryMod.Maybe[java.lang.String],
+    version: NonNegativeInteger
+  ): Anon_Name = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

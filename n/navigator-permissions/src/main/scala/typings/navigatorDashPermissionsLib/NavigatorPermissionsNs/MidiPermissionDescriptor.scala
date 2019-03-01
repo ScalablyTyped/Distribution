@@ -14,3 +14,16 @@ trait MidiPermissionDescriptor
   var sysex: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MidiPermissionDescriptor {
+  @scala.inline
+  def apply(
+    name: navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.midi,
+    sysex: js.UndefOr[scala.Boolean] = js.undefined
+  ): MidiPermissionDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(sysex)) __obj.updateDynamic("sysex")(sysex)
+    __obj.asInstanceOf[MidiPermissionDescriptor]
+  }
+}
+

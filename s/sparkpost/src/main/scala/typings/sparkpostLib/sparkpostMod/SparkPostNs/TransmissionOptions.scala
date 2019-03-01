@@ -24,3 +24,28 @@ trait TransmissionOptions extends js.Object {
   var transactional: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TransmissionOptions {
+  @scala.inline
+  def apply(
+    click_tracking: js.UndefOr[scala.Boolean] = js.undefined,
+    inline_css: js.UndefOr[scala.Boolean] = js.undefined,
+    ip_pool: java.lang.String = null,
+    open_tracking: js.UndefOr[scala.Boolean] = js.undefined,
+    sandbox: js.UndefOr[scala.Boolean] = js.undefined,
+    skip_suppression: js.UndefOr[scala.Boolean] = js.undefined,
+    start_time: java.lang.String = null,
+    transactional: js.UndefOr[scala.Boolean] = js.undefined
+  ): TransmissionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(click_tracking)) __obj.updateDynamic("click_tracking")(click_tracking)
+    if (!js.isUndefined(inline_css)) __obj.updateDynamic("inline_css")(inline_css)
+    if (ip_pool != null) __obj.updateDynamic("ip_pool")(ip_pool)
+    if (!js.isUndefined(open_tracking)) __obj.updateDynamic("open_tracking")(open_tracking)
+    if (!js.isUndefined(sandbox)) __obj.updateDynamic("sandbox")(sandbox)
+    if (!js.isUndefined(skip_suppression)) __obj.updateDynamic("skip_suppression")(skip_suppression)
+    if (start_time != null) __obj.updateDynamic("start_time")(start_time)
+    if (!js.isUndefined(transactional)) __obj.updateDynamic("transactional")(transactional)
+    __obj.asInstanceOf[TransmissionOptions]
+  }
+}
+

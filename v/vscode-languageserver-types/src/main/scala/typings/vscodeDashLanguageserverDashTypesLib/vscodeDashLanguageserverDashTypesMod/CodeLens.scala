@@ -22,3 +22,14 @@ trait CodeLens extends js.Object {
   var range: Range
 }
 
+object CodeLens {
+  @scala.inline
+  def apply(range: Range, command: Command = null, data: js.Any = null): CodeLens = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("range")(range)
+    if (command != null) __obj.updateDynamic("command")(command)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[CodeLens]
+  }
+}
+

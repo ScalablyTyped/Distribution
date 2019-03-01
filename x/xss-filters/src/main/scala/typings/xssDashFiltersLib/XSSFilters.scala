@@ -38,3 +38,72 @@ trait XSSFilters extends js.Object {
   def uriQueryInUnQuotedAttr(s: java.lang.String): java.lang.String
 }
 
+object XSSFilters {
+  @scala.inline
+  def apply(
+    inDoubleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    inHTMLComment: js.Function1[java.lang.String, java.lang.String],
+    inHTMLData: js.Function1[java.lang.String, java.lang.String],
+    inSingleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    inUnQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriComponentInDoubleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriComponentInHTMLComment: js.Function1[java.lang.String, java.lang.String],
+    uriComponentInHTMLData: js.Function1[java.lang.String, java.lang.String],
+    uriComponentInSingleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriComponentInUnQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriFragmentInDoubleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriFragmentInHTMLComment: js.Function1[java.lang.String, java.lang.String],
+    uriFragmentInHTMLData: js.Function1[java.lang.String, java.lang.String],
+    uriFragmentInSingleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriFragmentInUnQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriInDoubleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriInHTMLComment: js.Function1[java.lang.String, java.lang.String],
+    uriInHTMLData: js.Function1[java.lang.String, java.lang.String],
+    uriInSingleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriInUnQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriPathInDoubleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriPathInHTMLComment: js.Function1[java.lang.String, java.lang.String],
+    uriPathInHTMLData: js.Function1[java.lang.String, java.lang.String],
+    uriPathInSingleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriPathInUnQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriQueryInDoubleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriQueryInHTMLComment: js.Function1[java.lang.String, java.lang.String],
+    uriQueryInHTMLData: js.Function1[java.lang.String, java.lang.String],
+    uriQueryInSingleQuotedAttr: js.Function1[java.lang.String, java.lang.String],
+    uriQueryInUnQuotedAttr: js.Function1[java.lang.String, java.lang.String]
+  ): XSSFilters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inDoubleQuotedAttr")(inDoubleQuotedAttr)
+    __obj.updateDynamic("inHTMLComment")(inHTMLComment)
+    __obj.updateDynamic("inHTMLData")(inHTMLData)
+    __obj.updateDynamic("inSingleQuotedAttr")(inSingleQuotedAttr)
+    __obj.updateDynamic("inUnQuotedAttr")(inUnQuotedAttr)
+    __obj.updateDynamic("uriComponentInDoubleQuotedAttr")(uriComponentInDoubleQuotedAttr)
+    __obj.updateDynamic("uriComponentInHTMLComment")(uriComponentInHTMLComment)
+    __obj.updateDynamic("uriComponentInHTMLData")(uriComponentInHTMLData)
+    __obj.updateDynamic("uriComponentInSingleQuotedAttr")(uriComponentInSingleQuotedAttr)
+    __obj.updateDynamic("uriComponentInUnQuotedAttr")(uriComponentInUnQuotedAttr)
+    __obj.updateDynamic("uriFragmentInDoubleQuotedAttr")(uriFragmentInDoubleQuotedAttr)
+    __obj.updateDynamic("uriFragmentInHTMLComment")(uriFragmentInHTMLComment)
+    __obj.updateDynamic("uriFragmentInHTMLData")(uriFragmentInHTMLData)
+    __obj.updateDynamic("uriFragmentInSingleQuotedAttr")(uriFragmentInSingleQuotedAttr)
+    __obj.updateDynamic("uriFragmentInUnQuotedAttr")(uriFragmentInUnQuotedAttr)
+    __obj.updateDynamic("uriInDoubleQuotedAttr")(uriInDoubleQuotedAttr)
+    __obj.updateDynamic("uriInHTMLComment")(uriInHTMLComment)
+    __obj.updateDynamic("uriInHTMLData")(uriInHTMLData)
+    __obj.updateDynamic("uriInSingleQuotedAttr")(uriInSingleQuotedAttr)
+    __obj.updateDynamic("uriInUnQuotedAttr")(uriInUnQuotedAttr)
+    __obj.updateDynamic("uriPathInDoubleQuotedAttr")(uriPathInDoubleQuotedAttr)
+    __obj.updateDynamic("uriPathInHTMLComment")(uriPathInHTMLComment)
+    __obj.updateDynamic("uriPathInHTMLData")(uriPathInHTMLData)
+    __obj.updateDynamic("uriPathInSingleQuotedAttr")(uriPathInSingleQuotedAttr)
+    __obj.updateDynamic("uriPathInUnQuotedAttr")(uriPathInUnQuotedAttr)
+    __obj.updateDynamic("uriQueryInDoubleQuotedAttr")(uriQueryInDoubleQuotedAttr)
+    __obj.updateDynamic("uriQueryInHTMLComment")(uriQueryInHTMLComment)
+    __obj.updateDynamic("uriQueryInHTMLData")(uriQueryInHTMLData)
+    __obj.updateDynamic("uriQueryInSingleQuotedAttr")(uriQueryInSingleQuotedAttr)
+    __obj.updateDynamic("uriQueryInUnQuotedAttr")(uriQueryInUnQuotedAttr)
+    __obj.asInstanceOf[XSSFilters]
+  }
+}
+

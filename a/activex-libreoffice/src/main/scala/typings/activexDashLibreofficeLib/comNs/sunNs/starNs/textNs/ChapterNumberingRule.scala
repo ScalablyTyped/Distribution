@@ -27,3 +27,40 @@ trait ChapterNumberingRule
   var HeadingStyleName: java.lang.String
 }
 
+object ChapterNumberingRule {
+  @scala.inline
+  def apply(
+    Alignment: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.HorizontalAlignment,
+    BulletFontName: java.lang.String,
+    BulletId: scala.Double,
+    CharStyleName: java.lang.String,
+    GraphicURL: java.lang.String,
+    HeadingStyleName: java.lang.String,
+    Insertion: scala.Double,
+    NumberingType: scala.Double,
+    ParentNumbering: scala.Double,
+    Prefix: java.lang.String,
+    StartWith: scala.Double,
+    Suffix: java.lang.String,
+    TextMarginDistance: scala.Double,
+    TextNumberingDistance: scala.Double
+  ): ChapterNumberingRule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Alignment")(Alignment)
+    __obj.updateDynamic("BulletFontName")(BulletFontName)
+    __obj.updateDynamic("BulletId")(BulletId)
+    __obj.updateDynamic("CharStyleName")(CharStyleName)
+    __obj.updateDynamic("GraphicURL")(GraphicURL)
+    __obj.updateDynamic("HeadingStyleName")(HeadingStyleName)
+    __obj.updateDynamic("Insertion")(Insertion)
+    __obj.updateDynamic("NumberingType")(NumberingType)
+    __obj.updateDynamic("ParentNumbering")(ParentNumbering)
+    __obj.updateDynamic("Prefix")(Prefix)
+    __obj.updateDynamic("StartWith")(StartWith)
+    __obj.updateDynamic("Suffix")(Suffix)
+    __obj.updateDynamic("TextMarginDistance")(TextMarginDistance)
+    __obj.updateDynamic("TextNumberingDistance")(TextNumberingDistance)
+    __obj.asInstanceOf[ChapterNumberingRule]
+  }
+}
+

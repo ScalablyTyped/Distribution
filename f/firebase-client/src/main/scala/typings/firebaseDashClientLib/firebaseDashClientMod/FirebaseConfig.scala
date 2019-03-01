@@ -16,3 +16,13 @@ trait FirebaseConfig extends js.Object {
   var url: java.lang.String
 }
 
+object FirebaseConfig {
+  @scala.inline
+  def apply(auth: java.lang.String, url: java.lang.String): FirebaseConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("auth")(auth)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[FirebaseConfig]
+  }
+}
+

@@ -15,3 +15,26 @@ trait Anon_AutoClose extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AutoClose {
+  @scala.inline
+  def apply(
+    autoClose: js.UndefOr[scala.Boolean] = js.undefined,
+    encoding: java.lang.String = null,
+    end: scala.Int | scala.Double = null,
+    fd: scala.Int | scala.Double = null,
+    flags: java.lang.String = null,
+    mode: scala.Int | scala.Double = null,
+    start: scala.Int | scala.Double = null
+  ): Anon_AutoClose = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AutoClose]
+  }
+}
+

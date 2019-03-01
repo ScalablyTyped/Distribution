@@ -10,3 +10,12 @@ trait CreateVideoResponse extends js.Object {
   var objectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateVideoResponse {
+  @scala.inline
+  def apply(objectId: java.lang.String = null): CreateVideoResponse = {
+    val __obj = js.Dynamic.literal()
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    __obj.asInstanceOf[CreateVideoResponse]
+  }
+}
+

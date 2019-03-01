@@ -12,3 +12,20 @@ trait Anon_Callee extends js.Object {
   var `object`: astDashTypesLib.genKindsMod.ExpressionKind | scala.Null
 }
 
+object Anon_Callee {
+  @scala.inline
+  def apply(
+    callee: astDashTypesLib.genKindsMod.ExpressionKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    `object`: astDashTypesLib.genKindsMod.ExpressionKind = null
+  ): Anon_Callee = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callee")(callee)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    __obj.asInstanceOf[Anon_Callee]
+  }
+}
+

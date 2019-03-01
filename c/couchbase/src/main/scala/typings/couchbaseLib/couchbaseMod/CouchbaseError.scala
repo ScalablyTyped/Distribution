@@ -24,3 +24,20 @@ trait CouchbaseError
   var responseBody: js.UndefOr[js.Any] = js.undefined
 }
 
+object CouchbaseError {
+  @scala.inline
+  def apply(
+    code: errors = null,
+    innerError: CouchbaseError = null,
+    responseBody: js.Any = null,
+    stack: java.lang.String = null
+  ): CouchbaseError = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (innerError != null) __obj.updateDynamic("innerError")(innerError)
+    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[CouchbaseError]
+  }
+}
+

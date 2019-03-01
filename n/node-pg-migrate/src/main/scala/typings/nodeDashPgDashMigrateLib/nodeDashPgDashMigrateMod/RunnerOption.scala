@@ -26,3 +26,48 @@ trait RunnerOption extends js.Object {
   var timestamp: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RunnerOption {
+  @scala.inline
+  def apply(
+    count: scala.Double,
+    databaseUrl: java.lang.String | ClientConfig,
+    dir: java.lang.String,
+    direction: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.up | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.down,
+    ignorePattern: java.lang.String,
+    migrationsTable: java.lang.String,
+    checkOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    createMigrationsSchema: js.UndefOr[scala.Boolean] = js.undefined,
+    createSchema: js.UndefOr[scala.Boolean] = js.undefined,
+    dryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    fake: js.UndefOr[scala.Boolean] = js.undefined,
+    file: java.lang.String = null,
+    log: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    migrationsSchema: java.lang.String = null,
+    noLock: js.UndefOr[scala.Boolean] = js.undefined,
+    schema: java.lang.String = null,
+    singleTransaction: js.UndefOr[scala.Boolean] = js.undefined,
+    timestamp: js.UndefOr[scala.Boolean] = js.undefined
+  ): RunnerOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("databaseUrl")(databaseUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("dir")(dir)
+    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    __obj.updateDynamic("ignorePattern")(ignorePattern)
+    __obj.updateDynamic("migrationsTable")(migrationsTable)
+    if (!js.isUndefined(checkOrder)) __obj.updateDynamic("checkOrder")(checkOrder)
+    if (!js.isUndefined(createMigrationsSchema)) __obj.updateDynamic("createMigrationsSchema")(createMigrationsSchema)
+    if (!js.isUndefined(createSchema)) __obj.updateDynamic("createSchema")(createSchema)
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
+    if (!js.isUndefined(fake)) __obj.updateDynamic("fake")(fake)
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (log != null) __obj.updateDynamic("log")(log)
+    if (migrationsSchema != null) __obj.updateDynamic("migrationsSchema")(migrationsSchema)
+    if (!js.isUndefined(noLock)) __obj.updateDynamic("noLock")(noLock)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (!js.isUndefined(singleTransaction)) __obj.updateDynamic("singleTransaction")(singleTransaction)
+    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[RunnerOption]
+  }
+}
+

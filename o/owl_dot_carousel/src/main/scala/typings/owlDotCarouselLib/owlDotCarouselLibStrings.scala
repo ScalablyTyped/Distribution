@@ -7,82 +7,108 @@ import scala.scalajs.js.annotation._
 
 object owlDotCarouselLibStrings {
   @js.native
-  sealed trait addDOTowlDOTcarousel extends js.Object
+  sealed trait addDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait changeDOTowlDOTcarousel extends js.Object
+  sealed trait changeDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait changedDOTowlDOTcarousel extends js.Object
+  sealed trait changedDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
   sealed trait destroy extends js.Object
   
   @js.native
-  sealed trait destroyDOTowlDOTcarousel extends js.Object
+  sealed trait destroyDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait dragDOTowlDOTcarousel extends js.Object
+  sealed trait dragDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait draggedDOTowlDOTcarousel extends js.Object
+  sealed trait draggedDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait initializeDOTowlDOTcarousel extends js.Object
+  sealed trait initializeDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait initializedDOTowlDOTcarousel extends js.Object
+  sealed trait initializedDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait loadDOTowlDOTlazy extends js.Object
+  sealed trait loadDOTowlDOTlazy
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait loadedDOTowlDOTlazy extends js.Object
+  sealed trait loadedDOTowlDOTlazy
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait nextDOTowlDOTcarousel extends js.Object
+  sealed trait nextDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait playDOTowlDOTautoplay extends js.Object
+  sealed trait playDOTowlDOTautoplay
+    extends owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait playDOTowlDOTvideo extends js.Object
+  sealed trait playDOTowlDOTvideo
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait prevDOTowlDOTcarousel extends js.Object
+  sealed trait prevDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait refreshDOTowlDOTcarousel extends js.Object
+  sealed trait refreshDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
+       with owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait refreshedDOTowlDOTcarousel extends js.Object
+  sealed trait refreshedDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait removeDOTowlDOTcarousel extends js.Object
+  sealed trait removeDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait replaceDOTowlDOTcarousel extends js.Object
+  sealed trait replaceDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait resizeDOTowlDOTcarousel extends js.Object
+  sealed trait resizeDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait resizedDOTowlDOTcarousel extends js.Object
+  sealed trait resizedDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait stopDOTowlDOTautoplay extends js.Object
+  sealed trait stopDOTowlDOTautoplay
+    extends owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait stopDOTowlDOTvideo extends js.Object
+  sealed trait stopDOTowlDOTvideo
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait toDOTowlDOTcarousel extends js.Object
+  sealed trait toDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.TriggerEvent
   
   @js.native
-  sealed trait translateDOTowlDOTcarousel extends js.Object
+  sealed trait translateDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @js.native
-  sealed trait translatedDOTowlDOTcarousel extends js.Object
+  sealed trait translatedDOTowlDOTcarousel
+    extends owlDotCarouselLib.OwlCarouselNs.OnEvent
   
   @scala.inline
   def addDOTowlDOTcarousel: addDOTowlDOTcarousel = "add.owl.carousel".asInstanceOf[addDOTowlDOTcarousel]

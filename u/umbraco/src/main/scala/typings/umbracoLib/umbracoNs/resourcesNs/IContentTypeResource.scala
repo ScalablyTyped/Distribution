@@ -45,3 +45,16 @@ trait IContentTypeResource extends js.Object {
   def getAllowedTypes(contentId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 
+object IContentTypeResource {
+  @scala.inline
+  def apply(
+    getAllPropertyTypeAliases: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getAllowedTypes: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
+  ): IContentTypeResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAllPropertyTypeAliases")(getAllPropertyTypeAliases)
+    __obj.updateDynamic("getAllowedTypes")(getAllowedTypes)
+    __obj.asInstanceOf[IContentTypeResource]
+  }
+}
+

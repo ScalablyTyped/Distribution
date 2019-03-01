@@ -11,3 +11,18 @@ trait Anon_HeadersUri extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_HeadersUri {
+  @scala.inline
+  def apply(
+    headers: googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.Headers = null,
+    uri: java.lang.String = null,
+    url: java.lang.String = null
+  ): Anon_HeadersUri = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_HeadersUri]
+  }
+}
+

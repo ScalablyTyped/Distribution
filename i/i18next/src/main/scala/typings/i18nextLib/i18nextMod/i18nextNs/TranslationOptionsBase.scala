@@ -64,3 +64,40 @@ trait TranslationOptionsBase extends js.Object {
   var returnObjects: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TranslationOptionsBase {
+  @scala.inline
+  def apply(
+    context: js.Any = null,
+    count: scala.Int | scala.Double = null,
+    defaultValue: js.Any = null,
+    fallbackLng: FallbackLng = null,
+    interpolation: InterpolationOptions = null,
+    joinArrays: java.lang.String = null,
+    keySeparator: java.lang.String = null,
+    lng: java.lang.String = null,
+    lngs: js.Array[java.lang.String] = null,
+    ns: java.lang.String | js.Array[java.lang.String] = null,
+    nsSeparator: java.lang.String = null,
+    postProcess: java.lang.String | js.Array[java.lang.String] = null,
+    replace: js.Any = null,
+    returnObjects: js.UndefOr[scala.Boolean] = js.undefined
+  ): TranslationOptionsBase = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (fallbackLng != null) __obj.updateDynamic("fallbackLng")(fallbackLng.asInstanceOf[js.Any])
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (joinArrays != null) __obj.updateDynamic("joinArrays")(joinArrays)
+    if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator)
+    if (lng != null) __obj.updateDynamic("lng")(lng)
+    if (lngs != null) __obj.updateDynamic("lngs")(lngs)
+    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
+    if (nsSeparator != null) __obj.updateDynamic("nsSeparator")(nsSeparator)
+    if (postProcess != null) __obj.updateDynamic("postProcess")(postProcess.asInstanceOf[js.Any])
+    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (!js.isUndefined(returnObjects)) __obj.updateDynamic("returnObjects")(returnObjects)
+    __obj.asInstanceOf[TranslationOptionsBase]
+  }
+}
+

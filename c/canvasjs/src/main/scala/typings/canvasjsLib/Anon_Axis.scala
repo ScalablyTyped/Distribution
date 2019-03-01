@@ -11,3 +11,18 @@ trait Anon_Axis extends js.Object {
   var stripline: this.type
 }
 
+object Anon_Axis {
+  @scala.inline
+  def apply(
+    axis: canvasjsLib.canvasjsMod.CanvasJSNs.ChartAxisYOptions,
+    chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart,
+    stripline: Anon_Axis
+  ): Anon_Axis = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axis")(axis)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("stripline")(stripline)
+    __obj.asInstanceOf[Anon_Axis]
+  }
+}
+

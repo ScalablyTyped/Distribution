@@ -26,3 +26,24 @@ trait ItemRenderingEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ItemRenderingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    items: js.Any = null,
+    model: js.Any = null,
+    `object`: js.Any = null,
+    `type`: java.lang.String = null
+  ): ItemRenderingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ItemRenderingEventArgs]
+  }
+}
+

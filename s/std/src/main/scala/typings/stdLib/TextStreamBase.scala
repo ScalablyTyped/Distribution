@@ -22,3 +22,14 @@ trait TextStreamBase extends js.Object {
   def Close(): scala.Unit
 }
 
+object TextStreamBase {
+  @scala.inline
+  def apply(Close: js.Function0[scala.Unit], Column: scala.Double, Line: scala.Double): TextStreamBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Close")(Close)
+    __obj.updateDynamic("Column")(Column)
+    __obj.updateDynamic("Line")(Line)
+    __obj.asInstanceOf[TextStreamBase]
+  }
+}
+

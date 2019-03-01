@@ -37,3 +37,22 @@ trait LegendNavigationOptions extends js.Object {
   var style: js.UndefOr[CSSObject] = js.undefined
 }
 
+object LegendNavigationOptions {
+  @scala.inline
+  def apply(
+    activeColor: java.lang.String = null,
+    animation: scala.Boolean | Animation = null,
+    arrowSize: scala.Int | scala.Double = null,
+    inactiveColor: java.lang.String = null,
+    style: CSSObject = null
+  ): LegendNavigationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activeColor != null) __obj.updateDynamic("activeColor")(activeColor)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (arrowSize != null) __obj.updateDynamic("arrowSize")(arrowSize.asInstanceOf[js.Any])
+    if (inactiveColor != null) __obj.updateDynamic("inactiveColor")(inactiveColor)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[LegendNavigationOptions]
+  }
+}
+

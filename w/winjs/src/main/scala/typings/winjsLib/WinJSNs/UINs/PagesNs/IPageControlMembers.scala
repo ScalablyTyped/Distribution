@@ -60,3 +60,29 @@ trait IPageControlMembers extends js.Object {
   ] = js.undefined
 }
 
+object IPageControlMembers {
+  @scala.inline
+  def apply(
+    error: js.Function1[/* err */ js.Any, _] = null,
+    init: js.Function2[/* element */ stdLib.HTMLElement, /* options */ js.Any, _] = null,
+    load: js.Function1[/* uri */ java.lang.String, _] = null,
+    processed: js.Function2[/* element */ stdLib.HTMLElement, /* options */ js.Any, _] = null,
+    ready: js.Function2[/* element */ stdLib.HTMLElement, /* options */ js.Any, _] = null,
+    render: js.Function3[
+      /* element */ stdLib.HTMLElement, 
+      /* options */ js.Any, 
+      /* loadResult */ winjsLib.WinJSNs.Promise[_], 
+      scala.Unit
+    ] = null
+  ): IPageControlMembers = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (processed != null) __obj.updateDynamic("processed")(processed)
+    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (render != null) __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[IPageControlMembers]
+  }
+}
+

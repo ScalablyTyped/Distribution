@@ -21,3 +21,13 @@ trait ASPxClientHtmlEditorBeforePasteEventArgs extends ASPxClientEventArgs {
   var html: java.lang.String
 }
 
+object ASPxClientHtmlEditorBeforePasteEventArgs {
+  @scala.inline
+  def apply(commandName: java.lang.String, html: java.lang.String): ASPxClientHtmlEditorBeforePasteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commandName")(commandName)
+    __obj.updateDynamic("html")(html)
+    __obj.asInstanceOf[ASPxClientHtmlEditorBeforePasteEventArgs]
+  }
+}
+

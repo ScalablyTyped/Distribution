@@ -16,3 +16,13 @@ trait ListGlobalTablesOutput extends js.Object {
   var LastEvaluatedGlobalTableName: js.UndefOr[TableName] = js.undefined
 }
 
+object ListGlobalTablesOutput {
+  @scala.inline
+  def apply(GlobalTables: GlobalTableList = null, LastEvaluatedGlobalTableName: TableName = null): ListGlobalTablesOutput = {
+    val __obj = js.Dynamic.literal()
+    if (GlobalTables != null) __obj.updateDynamic("GlobalTables")(GlobalTables)
+    if (LastEvaluatedGlobalTableName != null) __obj.updateDynamic("LastEvaluatedGlobalTableName")(LastEvaluatedGlobalTableName)
+    __obj.asInstanceOf[ListGlobalTablesOutput]
+  }
+}
+

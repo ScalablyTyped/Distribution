@@ -14,3 +14,21 @@ trait LocationsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
 }
 
+object LocationsResource {
+  @scala.inline
+  def apply(
+    jobs: JobsResource,
+    templates: TemplatesResource,
+    workerMessages: js.Function1[
+      gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyLocationOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
+    ]
+  ): LocationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jobs")(jobs)
+    __obj.updateDynamic("templates")(templates)
+    __obj.updateDynamic("workerMessages")(workerMessages)
+    __obj.asInstanceOf[LocationsResource]
+  }
+}
+

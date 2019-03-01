@@ -20,3 +20,14 @@ trait DayChangingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DayChangingEventUIParam {
+  @scala.inline
+  def apply(currentSelectedDate: js.Any = null, newSelectedDate: js.Any = null, owner: js.Any = null): DayChangingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (currentSelectedDate != null) __obj.updateDynamic("currentSelectedDate")(currentSelectedDate)
+    if (newSelectedDate != null) __obj.updateDynamic("newSelectedDate")(newSelectedDate)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DayChangingEventUIParam]
+  }
+}
+

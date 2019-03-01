@@ -10,3 +10,16 @@ trait RequirePeerFunctionOptions extends js.Object {
   var optional: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RequirePeerFunctionOptions {
+  @scala.inline
+  def apply(
+    dontThrow: js.UndefOr[scala.Boolean] = js.undefined,
+    optional: js.UndefOr[scala.Boolean] = js.undefined
+  ): RequirePeerFunctionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dontThrow)) __obj.updateDynamic("dontThrow")(dontThrow)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[RequirePeerFunctionOptions]
+  }
+}
+

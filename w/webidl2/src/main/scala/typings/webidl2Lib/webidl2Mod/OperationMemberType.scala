@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OperationMemberType extends js.Object {
+trait OperationMemberType
+  extends IDLInterfaceMemberType
+     with IDLNamespaceMemberType {
   /** An array of arguments for the operation. */
   var arguments: js.Array[Argument]
   /** True if a deleter operation. */
@@ -25,5 +27,33 @@ trait OperationMemberType extends js.Object {
   /** True if a stringifier operation. */
   var stringifier: scala.Boolean
   var `type`: webidl2Lib.webidl2LibStrings.operation
+}
+
+object OperationMemberType {
+  @scala.inline
+  def apply(
+    arguments: js.Array[Argument],
+    deleter: scala.Boolean,
+    extAttrs: js.Array[ExtendedAttributes],
+    getter: scala.Boolean,
+    setter: scala.Boolean,
+    static: scala.Boolean,
+    stringifier: scala.Boolean,
+    `type`: webidl2Lib.webidl2LibStrings.operation,
+    idlType: IDLTypeDescription = null,
+    name: java.lang.String = null
+  ): OperationMemberType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("arguments")(arguments)
+    __obj.updateDynamic("deleter")(deleter)
+    __obj.updateDynamic("extAttrs")(extAttrs)
+    __obj.updateDynamic("getter")(getter)
+    __obj.updateDynamic("setter")(setter)
+    __obj.updateDynamic("static")(static)
+    __obj.updateDynamic("stringifier")(stringifier)
+    if (idlType != null) __obj.updateDynamic("idlType")(idlType)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[OperationMemberType]
+  }
 }
 

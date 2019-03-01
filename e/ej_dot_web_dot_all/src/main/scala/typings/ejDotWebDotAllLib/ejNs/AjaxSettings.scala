@@ -14,3 +14,24 @@ trait AjaxSettings extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AjaxSettings {
+  @scala.inline
+  def apply(
+    cache: scala.Boolean,
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    contentType: js.Any = null,
+    data: js.Any = null,
+    dataType: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): AjaxSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AjaxSettings]
+  }
+}
+

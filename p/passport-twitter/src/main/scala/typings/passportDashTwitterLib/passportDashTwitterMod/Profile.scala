@@ -15,3 +15,34 @@ trait Profile
   var username_Profile: java.lang.String
 }
 
+object Profile {
+  @scala.inline
+  def apply(
+    _accessLevel: java.lang.String,
+    _json: js.Any,
+    _raw: java.lang.String,
+    displayName: java.lang.String,
+    gender: java.lang.String,
+    id: java.lang.String,
+    provider: java.lang.String,
+    username: java.lang.String,
+    emails: js.Array[passportLib.Anon_Type] = null,
+    name: passportLib.Anon_FamilyName = null,
+    photos: js.Array[passportLib.Anon_Value] = null
+  ): Profile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_accessLevel")(_accessLevel)
+    __obj.updateDynamic("_json")(_json)
+    __obj.updateDynamic("_raw")(_raw)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("gender")(gender)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("provider")(provider)
+    __obj.updateDynamic("username")(username)
+    if (emails != null) __obj.updateDynamic("emails")(emails)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (photos != null) __obj.updateDynamic("photos")(photos)
+    __obj.asInstanceOf[Profile]
+  }
+}
+

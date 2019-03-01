@@ -9,3 +9,12 @@ trait IWebUINavigatedEventArgs extends js.Object {
   var navigatedOperation: WebUINavigatedOperation
 }
 
+object IWebUINavigatedEventArgs {
+  @scala.inline
+  def apply(navigatedOperation: WebUINavigatedOperation): IWebUINavigatedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("navigatedOperation")(navigatedOperation)
+    __obj.asInstanceOf[IWebUINavigatedEventArgs]
+  }
+}
+

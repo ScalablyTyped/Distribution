@@ -13,3 +13,20 @@ trait TryNextPlugin extends js.Object {
   def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
 }
 
+object TryNextPlugin {
+  @scala.inline
+  def apply(
+    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    source: java.lang.String,
+    target: java.lang.String,
+    message: java.lang.String = null
+  ): TryNextPlugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apply")(apply)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("target")(target)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[TryNextPlugin]
+  }
+}
+

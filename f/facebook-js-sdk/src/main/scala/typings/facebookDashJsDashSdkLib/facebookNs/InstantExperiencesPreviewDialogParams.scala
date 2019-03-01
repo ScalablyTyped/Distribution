@@ -12,3 +12,22 @@ trait InstantExperiencesPreviewDialogParams extends DialogParams {
   var method: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.canvas_preview
 }
 
+object InstantExperiencesPreviewDialogParams {
+  @scala.inline
+  def apply(
+    canvas_id: java.lang.String,
+    display: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.popup,
+    method: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.canvas_preview,
+    app_id: java.lang.String = null,
+    redirect_uri: java.lang.String = null
+  ): InstantExperiencesPreviewDialogParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canvas_id")(canvas_id)
+    __obj.updateDynamic("display")(display)
+    __obj.updateDynamic("method")(method)
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    __obj.asInstanceOf[InstantExperiencesPreviewDialogParams]
+  }
+}
+

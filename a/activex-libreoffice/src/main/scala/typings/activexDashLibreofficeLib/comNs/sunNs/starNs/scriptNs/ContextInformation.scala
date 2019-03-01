@@ -39,3 +39,26 @@ trait ContextInformation extends js.Object {
   var StartLine: scala.Double
 }
 
+object ContextInformation {
+  @scala.inline
+  def apply(
+    EndColumn: scala.Double,
+    EndLine: scala.Double,
+    LocalVariableNames: activexDashInteropLib.SafeArray[java.lang.String],
+    Name: java.lang.String,
+    SourceCode: java.lang.String,
+    StartColumn: scala.Double,
+    StartLine: scala.Double
+  ): ContextInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EndColumn")(EndColumn)
+    __obj.updateDynamic("EndLine")(EndLine)
+    __obj.updateDynamic("LocalVariableNames")(LocalVariableNames)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("SourceCode")(SourceCode)
+    __obj.updateDynamic("StartColumn")(StartColumn)
+    __obj.updateDynamic("StartLine")(StartLine)
+    __obj.asInstanceOf[ContextInformation]
+  }
+}
+

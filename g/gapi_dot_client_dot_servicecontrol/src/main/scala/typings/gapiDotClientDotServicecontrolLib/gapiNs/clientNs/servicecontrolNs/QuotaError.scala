@@ -18,3 +18,18 @@ trait QuotaError extends js.Object {
   var subject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QuotaError {
+  @scala.inline
+  def apply(
+    code: java.lang.String = null,
+    description: java.lang.String = null,
+    subject: java.lang.String = null
+  ): QuotaError = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    __obj.asInstanceOf[QuotaError]
+  }
+}
+

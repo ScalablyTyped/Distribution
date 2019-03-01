@@ -12,3 +12,17 @@ trait ActiveXObjectNameMap extends js.Object {
   var lnkfile: activexDashAccessLib.AccWizObjectsNs.WizShellLinkA
 }
 
+object ActiveXObjectNameMap {
+  @scala.inline
+  def apply(
+    `ACCWIZ.FieldListCtrl`: activexDashAccessLib.AccWizObjectsNs.FieldList,
+    `ACCWIZ.ImexGridCtrl`: activexDashAccessLib.AccWizObjectsNs.ImexGrid,
+    `Access.Application`: activexDashAccessLib.AccessNs.Application,
+    lnkfile: activexDashAccessLib.AccWizObjectsNs.WizShellLinkA
+  ): ActiveXObjectNameMap = {
+    val __obj = js.Dynamic.literal(`ACCWIZ.FieldListCtrl` = `ACCWIZ.FieldListCtrl`, `ACCWIZ.ImexGridCtrl` = `ACCWIZ.ImexGridCtrl`, `Access.Application` = `Access.Application`)
+    __obj.updateDynamic("lnkfile")(lnkfile)
+    __obj.asInstanceOf[ActiveXObjectNameMap]
+  }
+}
+

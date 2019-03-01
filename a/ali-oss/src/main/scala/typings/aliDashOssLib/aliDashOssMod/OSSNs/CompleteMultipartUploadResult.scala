@@ -13,3 +13,22 @@ trait CompleteMultipartUploadResult extends js.Object {
   var res: NormalSuccessResponse
 }
 
+object CompleteMultipartUploadResult {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String,
+    data: js.Object,
+    etag: java.lang.String,
+    name: java.lang.String,
+    res: NormalSuccessResponse
+  ): CompleteMultipartUploadResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucket")(bucket)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("res")(res)
+    __obj.asInstanceOf[CompleteMultipartUploadResult]
+  }
+}
+

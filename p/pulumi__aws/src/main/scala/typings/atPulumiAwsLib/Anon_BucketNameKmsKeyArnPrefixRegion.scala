@@ -13,3 +13,22 @@ trait Anon_BucketNameKmsKeyArnPrefixRegion extends js.Object {
   var syncFormat: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object Anon_BucketNameKmsKeyArnPrefixRegion {
+  @scala.inline
+  def apply(
+    bucketName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    region: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    kmsKeyArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    syncFormat: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_BucketNameKmsKeyArnPrefixRegion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
+    __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (syncFormat != null) __obj.updateDynamic("syncFormat")(syncFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BucketNameKmsKeyArnPrefixRegion]
+  }
+}
+

@@ -63,3 +63,24 @@ trait HeaderFooterUpdateData extends js.Object {
   var rightHeader: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HeaderFooterUpdateData {
+  @scala.inline
+  def apply(
+    centerFooter: java.lang.String = null,
+    centerHeader: java.lang.String = null,
+    leftFooter: java.lang.String = null,
+    leftHeader: java.lang.String = null,
+    rightFooter: java.lang.String = null,
+    rightHeader: java.lang.String = null
+  ): HeaderFooterUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (centerFooter != null) __obj.updateDynamic("centerFooter")(centerFooter)
+    if (centerHeader != null) __obj.updateDynamic("centerHeader")(centerHeader)
+    if (leftFooter != null) __obj.updateDynamic("leftFooter")(leftFooter)
+    if (leftHeader != null) __obj.updateDynamic("leftHeader")(leftHeader)
+    if (rightFooter != null) __obj.updateDynamic("rightFooter")(rightFooter)
+    if (rightHeader != null) __obj.updateDynamic("rightHeader")(rightHeader)
+    __obj.asInstanceOf[HeaderFooterUpdateData]
+  }
+}
+

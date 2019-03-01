@@ -14,3 +14,21 @@ trait SelectionModel extends js.Object {
   ]
 }
 
+object SelectionModel {
+  @scala.inline
+  def apply(
+    initialX: scala.Double,
+    initialY: scala.Double,
+    model: stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModel[
+      stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
+      stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
+    ]
+  ): SelectionModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("initialX")(initialX)
+    __obj.updateDynamic("initialY")(initialY)
+    __obj.updateDynamic("model")(model)
+    __obj.asInstanceOf[SelectionModel]
+  }
+}
+

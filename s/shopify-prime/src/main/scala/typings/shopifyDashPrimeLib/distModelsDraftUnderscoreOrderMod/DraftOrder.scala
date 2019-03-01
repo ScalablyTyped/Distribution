@@ -113,3 +113,68 @@ trait DraftOrder
   var updated_at: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DraftOrder {
+  @scala.inline
+  def apply(
+    applied_discount: shopifyDashPrimeLib.distModelsAppliedUnderscoreDiscountMod.AppliedDiscount,
+    billing_address: shopifyDashPrimeLib.distModelsAddressMod.Address,
+    currency: java.lang.String,
+    customer: shopifyDashPrimeLib.distModelsCustomerMod.Customer,
+    email: java.lang.String,
+    invoice_url: java.lang.String,
+    line_items: js.Array[shopifyDashPrimeLib.distModelsDraftUnderscoreLineUnderscoreItemMod.DraftLineItem],
+    metafields: js.Array[shopifyDashPrimeLib.distModelsMetaUnderscoreFieldMod.MetaField],
+    name: java.lang.String,
+    note: java.lang.String,
+    note_attributes: js.Array[shopifyDashPrimeLib.distModelsNoteUnderscoreAttributeMod.NoteAttribute],
+    shipping_address: shopifyDashPrimeLib.distModelsAddressMod.Address,
+    shipping_line: shopifyDashPrimeLib.distModelsShippingUnderscoreLineMod.ShippingLine,
+    status: java.lang.String,
+    tags: java.lang.String,
+    tax_lines: js.Array[shopifyDashPrimeLib.distModelsTaxUnderscoreLineMod.TaxLine],
+    admin_graphql_api_id: java.lang.String = null,
+    completed_at: java.lang.String = null,
+    created_at: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    invoice_sent_at: java.lang.String = null,
+    order_id: scala.Int | scala.Double = null,
+    subtotal_price: scala.Int | scala.Double = null,
+    tax_exempt: js.UndefOr[scala.Boolean] = js.undefined,
+    taxes_included: js.UndefOr[scala.Boolean] = js.undefined,
+    total_price: scala.Int | scala.Double = null,
+    total_tax: scala.Int | scala.Double = null,
+    updated_at: java.lang.String = null
+  ): DraftOrder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applied_discount")(applied_discount)
+    __obj.updateDynamic("billing_address")(billing_address)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("customer")(customer)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("invoice_url")(invoice_url)
+    __obj.updateDynamic("line_items")(line_items)
+    __obj.updateDynamic("metafields")(metafields)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("note")(note)
+    __obj.updateDynamic("note_attributes")(note_attributes)
+    __obj.updateDynamic("shipping_address")(shipping_address)
+    __obj.updateDynamic("shipping_line")(shipping_line)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("tax_lines")(tax_lines)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (completed_at != null) __obj.updateDynamic("completed_at")(completed_at)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (invoice_sent_at != null) __obj.updateDynamic("invoice_sent_at")(invoice_sent_at)
+    if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
+    if (subtotal_price != null) __obj.updateDynamic("subtotal_price")(subtotal_price.asInstanceOf[js.Any])
+    if (!js.isUndefined(tax_exempt)) __obj.updateDynamic("tax_exempt")(tax_exempt)
+    if (!js.isUndefined(taxes_included)) __obj.updateDynamic("taxes_included")(taxes_included)
+    if (total_price != null) __obj.updateDynamic("total_price")(total_price.asInstanceOf[js.Any])
+    if (total_tax != null) __obj.updateDynamic("total_tax")(total_tax.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[DraftOrder]
+  }
+}
+

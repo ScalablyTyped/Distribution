@@ -11,3 +11,18 @@ trait Anon_AllowEmpty extends js.Object {
   var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
 }
 
+object Anon_AllowEmpty {
+  @scala.inline
+  def apply(
+    allowEmpty: scala.Boolean,
+    referers: js.Array[java.lang.String],
+    res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
+  ): Anon_AllowEmpty = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowEmpty")(allowEmpty)
+    __obj.updateDynamic("referers")(referers)
+    __obj.updateDynamic("res")(res)
+    __obj.asInstanceOf[Anon_AllowEmpty]
+  }
+}
+

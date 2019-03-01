@@ -9,3 +9,12 @@ trait SharedTokenObject extends js.Object {
   var key: java.lang.String
 }
 
+object SharedTokenObject {
+  @scala.inline
+  def apply(key: java.lang.String): SharedTokenObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[SharedTokenObject]
+  }
+}
+

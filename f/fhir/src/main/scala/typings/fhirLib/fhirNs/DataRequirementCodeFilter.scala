@@ -47,3 +47,40 @@ trait DataRequirementCodeFilter extends Element {
   var valueSetString: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataRequirementCodeFilter {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _path: Element = null,
+    _valueCode: js.Array[Element] = null,
+    _valueSetString: Element = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    valueCode: js.Array[code] = null,
+    valueCodeableConcept: js.Array[CodeableConcept] = null,
+    valueCoding: js.Array[Coding] = null,
+    valueSetReference: Reference = null,
+    valueSetString: java.lang.String = null
+  ): DataRequirementCodeFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_path != null) __obj.updateDynamic("_path")(_path)
+    if (_valueCode != null) __obj.updateDynamic("_valueCode")(_valueCode)
+    if (_valueSetString != null) __obj.updateDynamic("_valueSetString")(_valueSetString)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (valueCode != null) __obj.updateDynamic("valueCode")(valueCode)
+    if (valueCodeableConcept != null) __obj.updateDynamic("valueCodeableConcept")(valueCodeableConcept)
+    if (valueCoding != null) __obj.updateDynamic("valueCoding")(valueCoding)
+    if (valueSetReference != null) __obj.updateDynamic("valueSetReference")(valueSetReference)
+    if (valueSetString != null) __obj.updateDynamic("valueSetString")(valueSetString)
+    __obj.asInstanceOf[DataRequirementCodeFilter]
+  }
+}
+

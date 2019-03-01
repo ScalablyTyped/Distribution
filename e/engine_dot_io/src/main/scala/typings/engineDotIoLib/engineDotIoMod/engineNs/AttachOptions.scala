@@ -31,3 +31,25 @@ trait AttachOptions extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AttachOptions {
+  @scala.inline
+  def apply(
+    destroyUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    destroyUpgradeTimeout: scala.Int | scala.Double = null,
+    handlePreflightRequest: scala.Boolean | (js.Function3[
+      /* server */ Server, 
+      /* req */ nodeLib.httpMod.IncomingMessage, 
+      /* res */ nodeLib.httpMod.ServerResponse, 
+      scala.Unit
+    ]) = null,
+    path: java.lang.String = null
+  ): AttachOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(destroyUpgrade)) __obj.updateDynamic("destroyUpgrade")(destroyUpgrade)
+    if (destroyUpgradeTimeout != null) __obj.updateDynamic("destroyUpgradeTimeout")(destroyUpgradeTimeout.asInstanceOf[js.Any])
+    if (handlePreflightRequest != null) __obj.updateDynamic("handlePreflightRequest")(handlePreflightRequest.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[AttachOptions]
+  }
+}
+

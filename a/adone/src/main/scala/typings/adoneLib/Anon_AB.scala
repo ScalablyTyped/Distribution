@@ -58,3 +58,36 @@ trait Anon_AB extends js.Object {
   def toRadian(a: scala.Double): scala.Double
 }
 
+object Anon_AB {
+  @scala.inline
+  def apply(
+    EPSILON: scala.Double,
+    INs: js.Any,
+    equals: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    mat2Ns: Anon_AAddAdjoint,
+    mat2dNs: Anon_AAddB,
+    mat3Ns: Anon_AAddAdjointB,
+    mat4Ns: Anon_AAddAdjointAspect,
+    quatNs: Anon_AAddAxis,
+    toRadian: js.Function1[scala.Double, scala.Double],
+    vec2Ns: Anon_AAdd,
+    vec3Ns: Anon_AAddAngle,
+    vec4Ns: Anon_AAddArg
+  ): Anon_AB = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EPSILON")(EPSILON)
+    __obj.updateDynamic("INs")(INs)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("mat2Ns")(mat2Ns)
+    __obj.updateDynamic("mat2dNs")(mat2dNs)
+    __obj.updateDynamic("mat3Ns")(mat3Ns)
+    __obj.updateDynamic("mat4Ns")(mat4Ns)
+    __obj.updateDynamic("quatNs")(quatNs)
+    __obj.updateDynamic("toRadian")(toRadian)
+    __obj.updateDynamic("vec2Ns")(vec2Ns)
+    __obj.updateDynamic("vec3Ns")(vec3Ns)
+    __obj.updateDynamic("vec4Ns")(vec4Ns)
+    __obj.asInstanceOf[Anon_AB]
+  }
+}
+

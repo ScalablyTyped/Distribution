@@ -103,3 +103,58 @@ trait _Impl extends js.Object {
   def onHide(`this`: semanticDashUiDashNagLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    animation: semanticDashUiDashNagLib.SemanticUINs.NagNs.AnimationSettings,
+    className: semanticDashUiDashNagLib.SemanticUINs.NagNs.ClassNameSettings,
+    context: semanticDashUiDashNagLib.semanticDashUiDashNagLibNumbers.`false` | java.lang.String | semanticDashUiDashNagLib.JQuery,
+    debug: scala.Boolean,
+    detachable: scala.Boolean,
+    displayTime: scala.Double,
+    domain: semanticDashUiDashNagLib.semanticDashUiDashNagLibNumbers.`false` | java.lang.String,
+    easing: java.lang.String,
+    error: semanticDashUiDashNagLib.SemanticUINs.NagNs.ErrorSettings,
+    expires: scala.Double,
+    key: js.Any,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onHide: js.Function1[semanticDashUiDashNagLib.JQuery, scala.Unit],
+    path: java.lang.String,
+    performance: scala.Boolean,
+    persist: scala.Boolean,
+    selector: semanticDashUiDashNagLib.SemanticUINs.NagNs.SelectorSettings,
+    silent: scala.Boolean,
+    speed: scala.Double,
+    storageMethod: semanticDashUiDashNagLib.semanticDashUiDashNagLibStrings.cookie | semanticDashUiDashNagLib.semanticDashUiDashNagLibStrings.localstorage | semanticDashUiDashNagLib.semanticDashUiDashNagLibStrings.sessionstorage,
+    value: js.Any,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("detachable")(detachable)
+    __obj.updateDynamic("displayTime")(displayTime)
+    __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    __obj.updateDynamic("easing")(easing)
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("expires")(expires)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("onHide")(onHide)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("persist")(persist)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("speed")(speed)
+    __obj.updateDynamic("storageMethod")(storageMethod.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

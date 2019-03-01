@@ -29,3 +29,26 @@ trait IScheme extends js.Object {
   var spacing: atUifabricStylingLib.libInterfacesISpacingMod.ISpacing
 }
 
+object IScheme {
+  @scala.inline
+  def apply(
+    disableGlobalClassNames: scala.Boolean,
+    effects: atUifabricStylingLib.libInterfacesIEffectsMod.IEffects,
+    fonts: atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles,
+    isInverted: scala.Boolean,
+    palette: atUifabricStylingLib.libInterfacesIPaletteMod.IPalette,
+    semanticColors: atUifabricStylingLib.libInterfacesISemanticColorsMod.ISemanticColors,
+    spacing: atUifabricStylingLib.libInterfacesISpacingMod.ISpacing
+  ): IScheme = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disableGlobalClassNames")(disableGlobalClassNames)
+    __obj.updateDynamic("effects")(effects)
+    __obj.updateDynamic("fonts")(fonts)
+    __obj.updateDynamic("isInverted")(isInverted)
+    __obj.updateDynamic("palette")(palette)
+    __obj.updateDynamic("semanticColors")(semanticColors)
+    __obj.updateDynamic("spacing")(spacing)
+    __obj.asInstanceOf[IScheme]
+  }
+}
+

@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 object lolexLibStrings {
   @js.native
-  sealed trait Date extends js.Object
+  sealed trait Date extends FakeMethod
   
   @js.native
-  sealed trait clearImmediate extends js.Object
+  sealed trait clearImmediate extends FakeMethod
   
   @js.native
-  sealed trait clearInterval extends js.Object
+  sealed trait clearInterval extends FakeMethod
   
   @js.native
-  sealed trait clearTimeout extends js.Object
+  sealed trait clearTimeout extends FakeMethod
   
   @js.native
-  sealed trait hrtime extends js.Object
+  sealed trait hrtime extends FakeMethod
   
   @js.native
-  sealed trait nextTick extends js.Object
+  sealed trait nextTick extends FakeMethod
   
   @js.native
-  sealed trait setImmediate extends js.Object
+  sealed trait setImmediate extends FakeMethod
   
   @js.native
-  sealed trait setInterval extends js.Object
+  sealed trait setInterval extends FakeMethod
   
   @js.native
-  sealed trait setTimeout extends js.Object
+  sealed trait setTimeout extends FakeMethod
   
   @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]

@@ -14,3 +14,12 @@ trait BatchDeletePhotosRequest extends js.Object {
   var photoIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object BatchDeletePhotosRequest {
+  @scala.inline
+  def apply(photoIds: js.Array[java.lang.String] = null): BatchDeletePhotosRequest = {
+    val __obj = js.Dynamic.literal()
+    if (photoIds != null) __obj.updateDynamic("photoIds")(photoIds)
+    __obj.asInstanceOf[BatchDeletePhotosRequest]
+  }
+}
+

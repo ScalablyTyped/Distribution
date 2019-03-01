@@ -14,7 +14,7 @@ trait FormatSpecifier extends js.Object {
     * '^' - Forces the field to be centered within the available space.
     * '=' - Like '>', but with any sign and symbol to the left of any padding.
     */
-  var align: d3DashFormatLib.d3DashFormatLibStrings.`>` | d3DashFormatLib.d3DashFormatLibStrings.`<` | d3DashFormatLib.d3DashFormatLibStrings.`^` | d3DashFormatLib.d3DashFormatLibStrings.`=`
+  var align: d3DashFormatLib.d3DashFormatLibStrings.`>` | d3DashFormatLib.d3DashFormatLibStrings.`<` | d3DashFormatLib.d3DashFormatLibStrings.`_backtick^_backtick` | d3DashFormatLib.d3DashFormatLibStrings.`=`
   /**
     * The comma (,) option enables the use of a group separator, such as a comma for thousands.
     */
@@ -86,5 +86,35 @@ trait FormatSpecifier extends js.Object {
     * The zero (0) option enables zero-padding; this implicitly sets fill to 0 and align to =.
     */
   var zero: scala.Boolean
+}
+
+object FormatSpecifier {
+  @scala.inline
+  def apply(
+    align: d3DashFormatLib.d3DashFormatLibStrings.`>` | d3DashFormatLib.d3DashFormatLibStrings.`<` | d3DashFormatLib.d3DashFormatLibStrings.`_backtick^_backtick` | d3DashFormatLib.d3DashFormatLibStrings.`=`,
+    comma: scala.Boolean,
+    fill: java.lang.String,
+    sign: d3DashFormatLib.d3DashFormatLibStrings.`-` | d3DashFormatLib.d3DashFormatLibStrings.`+` | d3DashFormatLib.d3DashFormatLibStrings.`(` | (d3DashFormatLib.d3DashFormatLibStrings.` `),
+    symbol: d3DashFormatLib.d3DashFormatLibStrings.DOLLAR | d3DashFormatLib.d3DashFormatLibStrings.`#` | d3DashFormatLib.d3DashFormatLibStrings.Empty,
+    toString: js.Function0[java.lang.String],
+    trim: scala.Boolean,
+    `type`: d3DashFormatLib.d3DashFormatLibStrings.e | d3DashFormatLib.d3DashFormatLibStrings.f | d3DashFormatLib.d3DashFormatLibStrings.g | d3DashFormatLib.d3DashFormatLibStrings.r | d3DashFormatLib.d3DashFormatLibStrings.s | d3DashFormatLib.d3DashFormatLibStrings.`%` | d3DashFormatLib.d3DashFormatLibStrings.p | d3DashFormatLib.d3DashFormatLibStrings.b | d3DashFormatLib.d3DashFormatLibStrings.o | d3DashFormatLib.d3DashFormatLibStrings.d | d3DashFormatLib.d3DashFormatLibStrings.x | d3DashFormatLib.d3DashFormatLibStrings.X | d3DashFormatLib.d3DashFormatLibStrings.c | d3DashFormatLib.d3DashFormatLibStrings.Empty | d3DashFormatLib.d3DashFormatLibStrings.n,
+    zero: scala.Boolean,
+    precision: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): FormatSpecifier = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    __obj.updateDynamic("comma")(comma)
+    __obj.updateDynamic("fill")(fill)
+    __obj.updateDynamic("sign")(sign.asInstanceOf[js.Any])
+    __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("trim")(trim)
+    __obj.updateDynamic("zero")(zero)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormatSpecifier]
+  }
 }
 

@@ -25,3 +25,20 @@ trait EngineOptions extends js.Object {
   var transpilerOptions: js.UndefOr[js.Object] = js.undefined
 }
 
+object EngineOptions {
+  @scala.inline
+  def apply(
+    callGc: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultHookTimeout: scala.Int | scala.Double = null,
+    defaultTimeout: scala.Int | scala.Double = null,
+    transpilerOptions: js.Object = null
+  ): EngineOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(callGc)) __obj.updateDynamic("callGc")(callGc)
+    if (defaultHookTimeout != null) __obj.updateDynamic("defaultHookTimeout")(defaultHookTimeout.asInstanceOf[js.Any])
+    if (defaultTimeout != null) __obj.updateDynamic("defaultTimeout")(defaultTimeout.asInstanceOf[js.Any])
+    if (transpilerOptions != null) __obj.updateDynamic("transpilerOptions")(transpilerOptions)
+    __obj.asInstanceOf[EngineOptions]
+  }
+}
+

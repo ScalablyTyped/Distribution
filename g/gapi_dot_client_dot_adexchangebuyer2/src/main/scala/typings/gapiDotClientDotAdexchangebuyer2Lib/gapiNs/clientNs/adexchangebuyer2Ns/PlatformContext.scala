@@ -10,3 +10,12 @@ trait PlatformContext extends js.Object {
   var platforms: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object PlatformContext {
+  @scala.inline
+  def apply(platforms: js.Array[java.lang.String] = null): PlatformContext = {
+    val __obj = js.Dynamic.literal()
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
+    __obj.asInstanceOf[PlatformContext]
+  }
+}
+

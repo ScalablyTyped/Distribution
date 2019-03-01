@@ -53,3 +53,36 @@ trait UpdateItemInput extends js.Object {
   var UpdateExpression: js.UndefOr[UpdateExpression] = js.undefined
 }
 
+object UpdateItemInput {
+  @scala.inline
+  def apply(
+    Key: Key,
+    TableName: TableName,
+    AttributeUpdates: AttributeUpdates = null,
+    ConditionExpression: ConditionExpression = null,
+    ConditionalOperator: ConditionalOperator = null,
+    Expected: ExpectedAttributeMap = null,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
+    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = null,
+    ReturnValues: ReturnValue = null,
+    UpdateExpression: UpdateExpression = null
+  ): UpdateItemInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Key")(Key)
+    __obj.updateDynamic("TableName")(TableName)
+    if (AttributeUpdates != null) __obj.updateDynamic("AttributeUpdates")(AttributeUpdates)
+    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
+    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
+    if (Expected != null) __obj.updateDynamic("Expected")(Expected)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
+    if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])
+    if (ReturnValues != null) __obj.updateDynamic("ReturnValues")(ReturnValues.asInstanceOf[js.Any])
+    if (UpdateExpression != null) __obj.updateDynamic("UpdateExpression")(UpdateExpression)
+    __obj.asInstanceOf[UpdateItemInput]
+  }
+}
+

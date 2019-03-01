@@ -30,3 +30,18 @@ trait ChartAxesData extends js.Object {
   var valueAxis: js.UndefOr[ChartAxisData] = js.undefined
 }
 
+object ChartAxesData {
+  @scala.inline
+  def apply(
+    categoryAxis: ChartAxisData = null,
+    seriesAxis: ChartAxisData = null,
+    valueAxis: ChartAxisData = null
+  ): ChartAxesData = {
+    val __obj = js.Dynamic.literal()
+    if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis)
+    if (seriesAxis != null) __obj.updateDynamic("seriesAxis")(seriesAxis)
+    if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis)
+    __obj.asInstanceOf[ChartAxesData]
+  }
+}
+

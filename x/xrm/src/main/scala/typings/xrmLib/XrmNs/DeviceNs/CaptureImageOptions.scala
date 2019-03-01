@@ -31,3 +31,22 @@ trait CaptureImageOptions extends js.Object {
   var width: scala.Double
 }
 
+object CaptureImageOptions {
+  @scala.inline
+  def apply(
+    allowEdit: scala.Boolean,
+    height: scala.Double,
+    preferFrontCamera: scala.Boolean,
+    quality: scala.Double,
+    width: scala.Double
+  ): CaptureImageOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowEdit")(allowEdit)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("preferFrontCamera")(preferFrontCamera)
+    __obj.updateDynamic("quality")(quality)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[CaptureImageOptions]
+  }
+}
+

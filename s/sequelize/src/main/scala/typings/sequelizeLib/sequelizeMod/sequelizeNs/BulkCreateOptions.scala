@@ -35,3 +35,34 @@ trait BulkCreateOptions
   var updateOnDuplicate: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object BulkCreateOptions {
+  @scala.inline
+  def apply(
+    benchmark: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: js.Array[java.lang.String] = null,
+    hooks: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
+    individualHooks: js.UndefOr[scala.Boolean] = js.undefined,
+    logging: scala.Boolean | js.Function = null,
+    returning: js.UndefOr[scala.Boolean] = js.undefined,
+    searchPath: java.lang.String = null,
+    transaction: Transaction = null,
+    updateOnDuplicate: js.Array[java.lang.String] = null,
+    validate: js.UndefOr[scala.Boolean] = js.undefined
+  ): BulkCreateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
+    if (!js.isUndefined(ignoreDuplicates)) __obj.updateDynamic("ignoreDuplicates")(ignoreDuplicates)
+    if (!js.isUndefined(individualHooks)) __obj.updateDynamic("individualHooks")(individualHooks)
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning)
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (updateOnDuplicate != null) __obj.updateDynamic("updateOnDuplicate")(updateOnDuplicate)
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[BulkCreateOptions]
+  }
+}
+

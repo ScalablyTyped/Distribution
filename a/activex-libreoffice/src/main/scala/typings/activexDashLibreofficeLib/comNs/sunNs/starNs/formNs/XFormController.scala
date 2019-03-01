@@ -17,3 +17,50 @@ trait XFormController
   def removeActivateListener(l: XFormControllerListener): scala.Unit
 }
 
+object XFormController {
+  @scala.inline
+  def apply(
+    Container: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer,
+    Controls: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl],
+    CurrentControl: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl,
+    acquire: js.Function0[scala.Unit],
+    activateFirst: js.Function0[scala.Unit],
+    activateLast: js.Function0[scala.Unit],
+    activateTabOrder: js.Function0[scala.Unit],
+    addActivateListener: js.Function1[XFormControllerListener, scala.Unit],
+    autoTabOrder: js.Function0[scala.Unit],
+    getContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer],
+    getControls: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl]
+    ],
+    getCurrentControl: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl],
+    getModel: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeActivateListener: js.Function1[XFormControllerListener, scala.Unit],
+    setContainer: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlContainer, scala.Unit],
+    setModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XTabControllerModel, scala.Unit]
+  ): XFormController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Container")(Container)
+    __obj.updateDynamic("Controls")(Controls)
+    __obj.updateDynamic("CurrentControl")(CurrentControl)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("activateFirst")(activateFirst)
+    __obj.updateDynamic("activateLast")(activateLast)
+    __obj.updateDynamic("activateTabOrder")(activateTabOrder)
+    __obj.updateDynamic("addActivateListener")(addActivateListener)
+    __obj.updateDynamic("autoTabOrder")(autoTabOrder)
+    __obj.updateDynamic("getContainer")(getContainer)
+    __obj.updateDynamic("getControls")(getControls)
+    __obj.updateDynamic("getCurrentControl")(getCurrentControl)
+    __obj.updateDynamic("getModel")(getModel)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeActivateListener")(removeActivateListener)
+    __obj.updateDynamic("setContainer")(setContainer)
+    __obj.updateDynamic("setModel")(setModel)
+    __obj.asInstanceOf[XFormController]
+  }
+}
+

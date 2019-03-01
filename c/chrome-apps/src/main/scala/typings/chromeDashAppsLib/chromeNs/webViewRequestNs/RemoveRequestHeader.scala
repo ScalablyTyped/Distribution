@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.webViewRequest.RemoveRequestHeader")
 @js.native
-class RemoveRequestHeader protected () extends js.Object {
+class RemoveRequestHeader protected () extends OnRequestActions {
   def this(parameters: RemoveRequestHeaderParams) = this()
   val instanceType: java.lang.String = js.native
   val typeGuard: chromeDashAppsLib.chromeDashAppsLibStrings.RemoveRequestHeader = js.native

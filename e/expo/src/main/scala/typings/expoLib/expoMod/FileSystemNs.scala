@@ -36,6 +36,10 @@ object FileSystemNs extends js.Object {
     def savable(): PauseResult = js.native
   }
   
+  trait EncodingType extends js.Object
+  
+  trait FileInfo extends js.Object
+  
   trait PauseResult extends js.Object {
     var fileUri: java.lang.String
     var options: expoLib.Anon_Md5Boolean_1357212231
@@ -94,7 +98,5 @@ object FileSystemNs extends js.Object {
   def writeAsStringAsync(fileUri: java.lang.String, contents: java.lang.String): js.Promise[scala.Unit] = js.native
   def writeAsStringAsync(fileUri: java.lang.String, contents: java.lang.String, options: WritingOptions): js.Promise[scala.Unit] = js.native
   type DownloadProgressCallback = js.Function1[/* data */ DownloadProgressData, scala.Unit]
-  type EncodingType = expoLib.expoLibStrings.utf8 | expoLib.expoLibStrings.base64
-  type FileInfo = expoLib.Anon_Exists | expoLib.Anon_ExistsFalse
 }
 

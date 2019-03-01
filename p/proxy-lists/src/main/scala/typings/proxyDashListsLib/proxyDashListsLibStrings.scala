@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation._
 
 object proxyDashListsLibStrings {
   @js.native
-  sealed trait anonymous extends js.Object
+  sealed trait anonymous
+    extends proxyDashListsLib.proxyDashListsMod.AnonymityLevel
   
   @js.native
   sealed trait data extends js.Object
   
   @js.native
-  sealed trait elite extends js.Object
+  sealed trait elite
+    extends proxyDashListsLib.proxyDashListsMod.AnonymityLevel
   
   @js.native
   sealed trait end extends js.Object
@@ -22,31 +24,38 @@ object proxyDashListsLibStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait http extends js.Object
+  sealed trait http
+    extends proxyDashListsLib.proxyDashListsMod.Protocol
   
   @js.native
-  sealed trait https extends js.Object
+  sealed trait https
+    extends proxyDashListsLib.proxyDashListsMod.Protocol
   
   @js.native
-  sealed trait ipv4 extends js.Object
+  sealed trait ipv4
+    extends proxyDashListsLib.proxyDashListsMod.IPType
   
   @js.native
-  sealed trait ipv6 extends js.Object
+  sealed trait ipv6
+    extends proxyDashListsLib.proxyDashListsMod.IPType
   
   @js.native
   sealed trait loose extends js.Object
   
   @js.native
-  sealed trait socks4 extends js.Object
+  sealed trait socks4
+    extends proxyDashListsLib.proxyDashListsMod.Protocol
   
   @js.native
-  sealed trait socks5 extends js.Object
+  sealed trait socks5
+    extends proxyDashListsLib.proxyDashListsMod.Protocol
   
   @js.native
   sealed trait strict extends js.Object
   
   @js.native
-  sealed trait transparent extends js.Object
+  sealed trait transparent
+    extends proxyDashListsLib.proxyDashListsMod.AnonymityLevel
   
   @scala.inline
   def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]

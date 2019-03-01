@@ -7,79 +7,104 @@ import scala.scalajs.js.annotation._
 
 object d3DashGraphvizLibStrings {
   @js.native
-  sealed trait circo extends js.Object
+  sealed trait circo
+    extends d3DashGraphvizLib.d3DashGraphvizMod.Engine
   
   @js.native
-  sealed trait dataExtractEnd extends js.Object
+  sealed trait dataExtractEnd
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait dataProcessEnd extends js.Object
+  sealed trait dataProcessEnd
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait dataProcessPass1End extends js.Object
+  sealed trait dataProcessPass1End
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait dataProcessPass2End extends js.Object
+  sealed trait dataProcessPass2End
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait dot extends js.Object
+  sealed trait dot
+    extends d3DashGraphvizLib.d3DashGraphvizMod.Engine
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait fdp extends js.Object
+  sealed trait fdp
+    extends d3DashGraphvizLib.d3DashGraphvizMod.Engine
   
   @js.native
-  sealed trait id extends js.Object
+  sealed trait id
+    extends d3DashGraphvizLib.d3DashGraphvizMod.KeyMode
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait index
+    extends d3DashGraphvizLib.d3DashGraphvizMod.KeyMode
   
   @js.native
-  sealed trait initEnd extends js.Object
+  sealed trait initEnd
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait layoutEnd extends js.Object
+  sealed trait layoutEnd
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait layoutStart extends js.Object
+  sealed trait layoutStart
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait neato extends js.Object
+  sealed trait neato
+    extends d3DashGraphvizLib.d3DashGraphvizMod.Engine
   
   @js.native
-  sealed trait osage extends js.Object
+  sealed trait osage
+    extends d3DashGraphvizLib.d3DashGraphvizMod.Engine
   
   @js.native
-  sealed trait patchwork extends js.Object
+  sealed trait patchwork
+    extends d3DashGraphvizLib.d3DashGraphvizMod.Engine
   
   @js.native
-  sealed trait renderEnd extends js.Object
+  sealed trait renderEnd
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait renderStart extends js.Object
+  sealed trait renderStart
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait restoreEnd extends js.Object
+  sealed trait restoreEnd
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait `tag-index` extends js.Object
+  sealed trait `tag-index`
+    extends d3DashGraphvizLib.d3DashGraphvizMod.KeyMode
   
   @js.native
-  sealed trait title extends js.Object
+  sealed trait title
+    extends d3DashGraphvizLib.d3DashGraphvizMod.KeyMode
   
   @js.native
-  sealed trait transitionEnd extends js.Object
+  sealed trait transitionEnd
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait transitionStart extends js.Object
+  sealed trait transitionStart
+    extends d3DashGraphvizLib.d3DashGraphvizMod._TypeNames
   
   @js.native
-  sealed trait twopi extends js.Object
+  sealed trait twopi
+    extends d3DashGraphvizLib.d3DashGraphvizMod.Engine
   
   @scala.inline
   def circo: circo = "circo".asInstanceOf[circo]

@@ -15,3 +15,24 @@ trait Update[State] extends js.Object {
   var tag: reactDashReconcilerLib.reactDashReconcilerLibNumbers.`0` | reactDashReconcilerLib.reactDashReconcilerLibNumbers.`1` | reactDashReconcilerLib.reactDashReconcilerLibNumbers.`2` | reactDashReconcilerLib.reactDashReconcilerLibNumbers.`3`
 }
 
+object Update {
+  @scala.inline
+  def apply[State](
+    expirationTime: ExpirationTime,
+    payload: js.Any,
+    tag: reactDashReconcilerLib.reactDashReconcilerLibNumbers.`0` | reactDashReconcilerLib.reactDashReconcilerLibNumbers.`1` | reactDashReconcilerLib.reactDashReconcilerLibNumbers.`2` | reactDashReconcilerLib.reactDashReconcilerLibNumbers.`3`,
+    callback: js.Function0[_] = null,
+    next: Update[State] = null,
+    nextEffect: Update[State] = null
+  ): Update[State] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expirationTime")(expirationTime)
+    __obj.updateDynamic("payload")(payload)
+    __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (nextEffect != null) __obj.updateDynamic("nextEffect")(nextEffect)
+    __obj.asInstanceOf[Update[State]]
+  }
+}
+

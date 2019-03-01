@@ -21,3 +21,18 @@ trait AutoFillSettings extends js.Object {
   var enable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AutoFillSettings {
+  @scala.inline
+  def apply(
+    columns: java.lang.String | js.Array[scala.Double],
+    alwaysAsk: js.UndefOr[scala.Boolean] = js.undefined,
+    enable: js.UndefOr[scala.Boolean] = js.undefined
+  ): AutoFillSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (!js.isUndefined(alwaysAsk)) __obj.updateDynamic("alwaysAsk")(alwaysAsk)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    __obj.asInstanceOf[AutoFillSettings]
+  }
+}
+

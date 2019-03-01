@@ -7,19 +7,23 @@ import scala.scalajs.js.annotation._
 
 object normalizeDashScrollDashLeftLibStrings {
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends normalizeDashScrollDashLeftLib.normalizeDashScrollDashLeftMod.ScrollType
   
   @js.native
-  sealed trait indeterminate extends js.Object
+  sealed trait indeterminate
+    extends normalizeDashScrollDashLeftLib.normalizeDashScrollDashLeftMod.ScrollType
   
   @js.native
   sealed trait ltr extends js.Object
   
   @js.native
-  sealed trait negative extends js.Object
+  sealed trait negative
+    extends normalizeDashScrollDashLeftLib.normalizeDashScrollDashLeftMod.ScrollType
   
   @js.native
-  sealed trait reverse extends js.Object
+  sealed trait reverse
+    extends normalizeDashScrollDashLeftLib.normalizeDashScrollDashLeftMod.ScrollType
   
   @js.native
   sealed trait rtl extends js.Object

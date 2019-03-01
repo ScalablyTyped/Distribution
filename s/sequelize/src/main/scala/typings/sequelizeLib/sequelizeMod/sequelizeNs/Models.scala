@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 trait Models
   extends /* index */ org.scalablytyped.runtime.StringDictionary[Model[_, _]]
 
+object Models {
+  @scala.inline
+  def apply(StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[Model[_, _]] = null): Models = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Models]
+  }
+}
+

@@ -12,3 +12,13 @@ trait MemoryInfo extends js.Object {
   var totalRam: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MemoryInfo {
+  @scala.inline
+  def apply(totalInternalStorage: java.lang.String = null, totalRam: java.lang.String = null): MemoryInfo = {
+    val __obj = js.Dynamic.literal()
+    if (totalInternalStorage != null) __obj.updateDynamic("totalInternalStorage")(totalInternalStorage)
+    if (totalRam != null) __obj.updateDynamic("totalRam")(totalRam)
+    __obj.asInstanceOf[MemoryInfo]
+  }
+}
+

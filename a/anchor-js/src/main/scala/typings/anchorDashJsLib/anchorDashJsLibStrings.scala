@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object anchorDashJsLibStrings {
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends anchorDashJsLib.anchorDashJsMod.anchorjsNs.AnchorVisibility
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait hover
+    extends anchorDashJsLib.anchorDashJsMod.anchorjsNs.AnchorVisibility
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends anchorDashJsLib.anchorDashJsMod.anchorjsNs.AnchorPlacement
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends anchorDashJsLib.anchorDashJsMod.anchorjsNs.AnchorPlacement
   
   @js.native
-  sealed trait touch extends js.Object
+  sealed trait touch
+    extends anchorDashJsLib.anchorDashJsMod.anchorjsNs.AnchorVisibility
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

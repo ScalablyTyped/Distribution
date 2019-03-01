@@ -76,3 +76,44 @@ trait TextDocumentClientCapabilities extends js.Object {
   var synchronization: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DidSave] = js.undefined
 }
 
+object TextDocumentClientCapabilities {
+  @scala.inline
+  def apply(
+    codeAction: vscodeDashLanguageserverDashProtocolLib.Anon_CodeActionLiteralSupport = null,
+    codeLens: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    completion: vscodeDashLanguageserverDashProtocolLib.Anon_CompletionItem = null,
+    definition: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationLinkSupport = null,
+    documentHighlight: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    documentLink: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    documentSymbol: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationHierarchicalDocumentSymbolSupport = null,
+    formatting: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    hover: vscodeDashLanguageserverDashProtocolLib.Anon_ContentFormat = null,
+    onTypeFormatting: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    publishDiagnostics: vscodeDashLanguageserverDashProtocolLib.Anon_RelatedInformation = null,
+    rangeFormatting: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    references: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    rename: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationPrepareSupport = null,
+    signatureHelp: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationSignatureInformation = null,
+    synchronization: vscodeDashLanguageserverDashProtocolLib.Anon_DidSave = null
+  ): TextDocumentClientCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (codeAction != null) __obj.updateDynamic("codeAction")(codeAction)
+    if (codeLens != null) __obj.updateDynamic("codeLens")(codeLens)
+    if (completion != null) __obj.updateDynamic("completion")(completion)
+    if (definition != null) __obj.updateDynamic("definition")(definition)
+    if (documentHighlight != null) __obj.updateDynamic("documentHighlight")(documentHighlight)
+    if (documentLink != null) __obj.updateDynamic("documentLink")(documentLink)
+    if (documentSymbol != null) __obj.updateDynamic("documentSymbol")(documentSymbol)
+    if (formatting != null) __obj.updateDynamic("formatting")(formatting)
+    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (onTypeFormatting != null) __obj.updateDynamic("onTypeFormatting")(onTypeFormatting)
+    if (publishDiagnostics != null) __obj.updateDynamic("publishDiagnostics")(publishDiagnostics)
+    if (rangeFormatting != null) __obj.updateDynamic("rangeFormatting")(rangeFormatting)
+    if (references != null) __obj.updateDynamic("references")(references)
+    if (rename != null) __obj.updateDynamic("rename")(rename)
+    if (signatureHelp != null) __obj.updateDynamic("signatureHelp")(signatureHelp)
+    if (synchronization != null) __obj.updateDynamic("synchronization")(synchronization)
+    __obj.asInstanceOf[TextDocumentClientCapabilities]
+  }
+}
+

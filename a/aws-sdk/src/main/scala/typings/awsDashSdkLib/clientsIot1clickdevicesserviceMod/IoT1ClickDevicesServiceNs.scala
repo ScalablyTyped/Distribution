@@ -539,6 +539,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
   
   trait UpdateDeviceStateResponse extends js.Object
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type MaxResults = scala.Double
@@ -551,6 +553,6 @@ object IoT1ClickDevicesServiceNs extends js.Object {
   type __string = java.lang.String
   type __stringMin12Max40 = java.lang.String
   type __timestampIso8601 = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-05-14` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

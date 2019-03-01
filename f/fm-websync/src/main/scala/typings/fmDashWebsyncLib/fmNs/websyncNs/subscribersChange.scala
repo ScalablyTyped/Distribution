@@ -16,3 +16,12 @@ trait subscribersChange extends js.Object {
   var `type`: java.lang.String
 }
 
+object subscribersChange {
+  @scala.inline
+  def apply(clients: js.Array[subscribedClient], `type`: java.lang.String): subscribersChange = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("clients")(clients)
+    __obj.asInstanceOf[subscribersChange]
+  }
+}
+

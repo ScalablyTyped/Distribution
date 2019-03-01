@@ -24,3 +24,40 @@ trait FontAwesomeProps
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FontAwesomeProps {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    Intermediate: reactDashFontawesomeLib.reactDashFontawesomeMod.Intermediate = null,
+    ariaLabel: java.lang.String = null,
+    border: js.UndefOr[scala.Boolean] = js.undefined,
+    cssModule: js.Any = null,
+    fixedWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    flip: FontAwesomeFlip = null,
+    inverse: js.UndefOr[scala.Boolean] = js.undefined,
+    pulse: js.UndefOr[scala.Boolean] = js.undefined,
+    rotate: scala.Int | scala.Double = null,
+    size: FontAwesomeSize = null,
+    spin: js.UndefOr[scala.Boolean] = js.undefined,
+    stack: FontAwesomeStack = null,
+    tag: java.lang.String = null
+  ): FontAwesomeProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    js.Dynamic.global.Object.assign(__obj, Intermediate)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth)
+    if (flip != null) __obj.updateDynamic("flip")(flip)
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse)
+    if (!js.isUndefined(pulse)) __obj.updateDynamic("pulse")(pulse)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[FontAwesomeProps]
+  }
+}
+

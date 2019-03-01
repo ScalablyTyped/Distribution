@@ -19,3 +19,28 @@ trait GetListenerResult extends js.Object {
   val sslPolicy: java.lang.String
 }
 
+object GetListenerResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    certificateArn: java.lang.String,
+    defaultActions: js.Array[atPulumiAwsLib.Anon_AuthenticateCognitos],
+    id: java.lang.String,
+    loadBalancerArn: java.lang.String,
+    port: scala.Double,
+    protocol: java.lang.String,
+    sslPolicy: java.lang.String
+  ): GetListenerResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("certificateArn")(certificateArn)
+    __obj.updateDynamic("defaultActions")(defaultActions)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("loadBalancerArn")(loadBalancerArn)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("protocol")(protocol)
+    __obj.updateDynamic("sslPolicy")(sslPolicy)
+    __obj.asInstanceOf[GetListenerResult]
+  }
+}
+

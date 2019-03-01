@@ -24,3 +24,20 @@ trait CommonSeriesOptionsMarkerDataLabelConnectorLine extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CommonSeriesOptionsMarkerDataLabelConnectorLine {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    height: java.lang.String = null,
+    `type`: ConnectorLineType | java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): CommonSeriesOptionsMarkerDataLabelConnectorLine = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommonSeriesOptionsMarkerDataLabelConnectorLine]
+  }
+}
+

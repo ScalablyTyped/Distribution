@@ -20,3 +20,20 @@ trait ReportType extends js.Object {
   var systemManaged: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReportType {
+  @scala.inline
+  def apply(
+    deprecateTime: java.lang.String = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    systemManaged: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReportType = {
+    val __obj = js.Dynamic.literal()
+    if (deprecateTime != null) __obj.updateDynamic("deprecateTime")(deprecateTime)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(systemManaged)) __obj.updateDynamic("systemManaged")(systemManaged)
+    __obj.asInstanceOf[ReportType]
+  }
+}
+

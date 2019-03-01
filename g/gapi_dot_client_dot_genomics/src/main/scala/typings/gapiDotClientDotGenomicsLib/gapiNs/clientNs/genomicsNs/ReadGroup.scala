@@ -43,3 +43,32 @@ trait ReadGroup extends js.Object {
   var sampleId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReadGroup {
+  @scala.inline
+  def apply(
+    datasetId: java.lang.String = null,
+    description: java.lang.String = null,
+    experiment: Experiment = null,
+    id: java.lang.String = null,
+    info: stdLib.Record[java.lang.String, js.Array[_]] = null,
+    name: java.lang.String = null,
+    predictedInsertSize: scala.Int | scala.Double = null,
+    programs: js.Array[Program] = null,
+    referenceSetId: java.lang.String = null,
+    sampleId: java.lang.String = null
+  ): ReadGroup = {
+    val __obj = js.Dynamic.literal()
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (experiment != null) __obj.updateDynamic("experiment")(experiment)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (predictedInsertSize != null) __obj.updateDynamic("predictedInsertSize")(predictedInsertSize.asInstanceOf[js.Any])
+    if (programs != null) __obj.updateDynamic("programs")(programs)
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
+    if (sampleId != null) __obj.updateDynamic("sampleId")(sampleId)
+    __obj.asInstanceOf[ReadGroup]
+  }
+}
+

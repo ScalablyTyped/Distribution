@@ -20,3 +20,12 @@ trait IOnChanges extends js.Object {
   def $onChanges(onChangesObj: IOnChangesObject): scala.Unit
 }
 
+object IOnChanges {
+  @scala.inline
+  def apply($onChanges: js.Function1[IOnChangesObject, scala.Unit]): IOnChanges = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$onChanges")($onChanges)
+    __obj.asInstanceOf[IOnChanges]
+  }
+}
+

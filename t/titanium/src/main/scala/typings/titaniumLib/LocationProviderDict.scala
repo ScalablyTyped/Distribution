@@ -23,3 +23,18 @@ trait LocationProviderDict extends js.Object {
   var power: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LocationProviderDict {
+  @scala.inline
+  def apply(
+    accuracy: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    power: scala.Int | scala.Double = null
+  ): LocationProviderDict = {
+    val __obj = js.Dynamic.literal()
+    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (power != null) __obj.updateDynamic("power")(power.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocationProviderDict]
+  }
+}
+

@@ -20,3 +20,15 @@ trait ClickOptions
   var multiple: scala.Boolean
 }
 
+object ClickOptions {
+  @scala.inline
+  def apply(force: scala.Boolean, log: scala.Boolean, multiple: scala.Boolean, timeout: scala.Double): ClickOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("force")(force)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("multiple")(multiple)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[ClickOptions]
+  }
+}
+

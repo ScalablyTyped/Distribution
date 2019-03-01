@@ -11,3 +11,27 @@ trait ClassBody extends Node {
   var type_ClassBody: babelDashTypesLib.babelDashTypesLibStrings.ClassBody
 }
 
+object ClassBody {
+  @scala.inline
+  def apply(
+    body: js.Array[ClassMethod | ClassProperty],
+    end: scala.Double,
+    loc: SourceLocation,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.ClassBody,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): ClassBody = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("loc")(loc)
+    __obj.updateDynamic("start")(start)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[ClassBody]
+  }
+}
+

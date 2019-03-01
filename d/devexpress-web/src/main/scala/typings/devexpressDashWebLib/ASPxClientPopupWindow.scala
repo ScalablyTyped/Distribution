@@ -80,3 +80,42 @@ trait ASPxClientPopupWindow extends js.Object {
   def SetHeaderText(value: java.lang.String): scala.Unit
 }
 
+object ASPxClientPopupWindow {
+  @scala.inline
+  def apply(
+    GetFooterImageUrl: js.Function0[java.lang.String],
+    GetFooterNavigateUrl: js.Function0[java.lang.String],
+    GetFooterText: js.Function0[java.lang.String],
+    GetHeaderImageUrl: js.Function0[java.lang.String],
+    GetHeaderNavigateUrl: js.Function0[java.lang.String],
+    GetHeaderText: js.Function0[java.lang.String],
+    SetFooterImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetFooterNavigateUrl: js.Function1[java.lang.String, scala.Unit],
+    SetFooterText: js.Function1[java.lang.String, scala.Unit],
+    SetHeaderImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetHeaderNavigateUrl: js.Function1[java.lang.String, scala.Unit],
+    SetHeaderText: js.Function1[java.lang.String, scala.Unit],
+    index: scala.Double,
+    name: java.lang.String,
+    popupControl: ASPxClientPopupControl
+  ): ASPxClientPopupWindow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetFooterImageUrl")(GetFooterImageUrl)
+    __obj.updateDynamic("GetFooterNavigateUrl")(GetFooterNavigateUrl)
+    __obj.updateDynamic("GetFooterText")(GetFooterText)
+    __obj.updateDynamic("GetHeaderImageUrl")(GetHeaderImageUrl)
+    __obj.updateDynamic("GetHeaderNavigateUrl")(GetHeaderNavigateUrl)
+    __obj.updateDynamic("GetHeaderText")(GetHeaderText)
+    __obj.updateDynamic("SetFooterImageUrl")(SetFooterImageUrl)
+    __obj.updateDynamic("SetFooterNavigateUrl")(SetFooterNavigateUrl)
+    __obj.updateDynamic("SetFooterText")(SetFooterText)
+    __obj.updateDynamic("SetHeaderImageUrl")(SetHeaderImageUrl)
+    __obj.updateDynamic("SetHeaderNavigateUrl")(SetHeaderNavigateUrl)
+    __obj.updateDynamic("SetHeaderText")(SetHeaderText)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("popupControl")(popupControl)
+    __obj.asInstanceOf[ASPxClientPopupWindow]
+  }
+}
+

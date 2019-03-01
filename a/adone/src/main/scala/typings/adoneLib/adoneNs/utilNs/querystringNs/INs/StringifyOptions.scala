@@ -26,3 +26,40 @@ trait StringifyOptions extends js.Object {
   var strictNullHandling: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StringifyOptions {
+  @scala.inline
+  def apply(
+    addQueryPrefix: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDots: js.UndefOr[scala.Boolean] = js.undefined,
+    arrayFormat: adoneLib.adoneLibStrings.indices | adoneLib.adoneLibStrings.brackets | adoneLib.adoneLibStrings.repeat = null,
+    delimiter: java.lang.String = null,
+    encode: js.UndefOr[scala.Boolean] = js.undefined,
+    encodeValuesOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    encoder: js.Function1[/* str */ java.lang.String, _] = null,
+    filter: (js.Array[java.lang.String | scala.Double]) | (js.Function2[/* prefix */ java.lang.String, /* value */ js.Any, _]) = null,
+    format: adoneLib.adoneLibStrings.RFC1738 | adoneLib.adoneLibStrings.RFC3986 = null,
+    indices: js.UndefOr[scala.Boolean] = js.undefined,
+    serializeDate: js.Function1[/* d */ stdLib.Date, java.lang.String] = null,
+    skipNulls: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = null,
+    strictNullHandling: js.UndefOr[scala.Boolean] = js.undefined
+  ): StringifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addQueryPrefix)) __obj.updateDynamic("addQueryPrefix")(addQueryPrefix)
+    if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots)
+    if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode)
+    if (!js.isUndefined(encodeValuesOnly)) __obj.updateDynamic("encodeValuesOnly")(encodeValuesOnly)
+    if (encoder != null) __obj.updateDynamic("encoder")(encoder)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(indices)) __obj.updateDynamic("indices")(indices)
+    if (serializeDate != null) __obj.updateDynamic("serializeDate")(serializeDate)
+    if (!js.isUndefined(skipNulls)) __obj.updateDynamic("skipNulls")(skipNulls)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(strictNullHandling)) __obj.updateDynamic("strictNullHandling")(strictNullHandling)
+    __obj.asInstanceOf[StringifyOptions]
+  }
+}
+

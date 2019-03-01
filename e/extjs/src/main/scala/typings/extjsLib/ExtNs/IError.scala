@@ -18,3 +18,18 @@ trait IError extends js.Object {
   var toString_FIError: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
 }
 
+object IError {
+  @scala.inline
+  def apply(
+    ignore: js.UndefOr[scala.Boolean] = js.undefined,
+    notify: js.UndefOr[scala.Boolean] = js.undefined,
+    toString: js.Function0[java.lang.String] = null
+  ): IError = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify)
+    if (toString != null) __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[IError]
+  }
+}
+

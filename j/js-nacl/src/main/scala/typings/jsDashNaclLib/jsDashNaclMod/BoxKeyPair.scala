@@ -10,3 +10,13 @@ trait BoxKeyPair extends js.Object {
   var boxSk: BoxSecretKey
 }
 
+object BoxKeyPair {
+  @scala.inline
+  def apply(boxPk: BoxPublicKey, boxSk: BoxSecretKey): BoxKeyPair = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boxPk")(boxPk)
+    __obj.updateDynamic("boxSk")(boxSk)
+    __obj.asInstanceOf[BoxKeyPair]
+  }
+}
+

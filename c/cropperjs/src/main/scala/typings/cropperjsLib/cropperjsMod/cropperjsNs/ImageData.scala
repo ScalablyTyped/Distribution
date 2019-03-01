@@ -48,3 +48,32 @@ trait ImageData extends js.Object {
   var width: scala.Double
 }
 
+object ImageData {
+  @scala.inline
+  def apply(
+    aspectRatio: scala.Double,
+    height: scala.Double,
+    left: scala.Double,
+    naturalHeight: scala.Double,
+    naturalWidth: scala.Double,
+    rotate: scala.Double,
+    scaleX: scala.Double,
+    scaleY: scala.Double,
+    top: scala.Double,
+    width: scala.Double
+  ): ImageData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aspectRatio")(aspectRatio)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("naturalHeight")(naturalHeight)
+    __obj.updateDynamic("naturalWidth")(naturalWidth)
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("scaleX")(scaleX)
+    __obj.updateDynamic("scaleY")(scaleY)
+    __obj.updateDynamic("top")(top)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ImageData]
+  }
+}
+

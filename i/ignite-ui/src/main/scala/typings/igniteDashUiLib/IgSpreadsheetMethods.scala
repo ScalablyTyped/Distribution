@@ -103,3 +103,52 @@ trait IgSpreadsheetMethods extends js.Object {
   def styleUpdated(): scala.Unit
 }
 
+object IgSpreadsheetMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    executeAction: js.Function1[js.Object, scala.Boolean],
+    exportVisualData: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    getActivePane: js.Function0[js.Object],
+    getActiveSelection: js.Function0[js.Object],
+    getActiveSelectionCellRangeFormat: js.Function0[js.Object],
+    getActiveTable: js.Function0[js.Object],
+    getCellEditMode: js.Function0[js.Object],
+    getIsInEditMode: js.Function0[scala.Boolean],
+    getIsRenamingWorksheet: js.Function0[scala.Boolean],
+    getPanes: js.Function0[scala.Unit],
+    showFilterDialogForTable: js.Function2[js.Object, js.Object, scala.Unit],
+    showFilterDialogForWorksheet: js.Function2[scala.Double, js.Object, scala.Unit],
+    showTopOrBottomDialogForTable: js.Function1[js.Object, scala.Unit],
+    showTopOrBottomDialogForWorksheet: js.Function1[scala.Double, scala.Unit],
+    styleUpdated: js.Function0[scala.Unit]
+  ): IgSpreadsheetMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("executeAction")(executeAction)
+    __obj.updateDynamic("exportVisualData")(exportVisualData)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("getActivePane")(getActivePane)
+    __obj.updateDynamic("getActiveSelection")(getActiveSelection)
+    __obj.updateDynamic("getActiveSelectionCellRangeFormat")(getActiveSelectionCellRangeFormat)
+    __obj.updateDynamic("getActiveTable")(getActiveTable)
+    __obj.updateDynamic("getCellEditMode")(getCellEditMode)
+    __obj.updateDynamic("getIsInEditMode")(getIsInEditMode)
+    __obj.updateDynamic("getIsRenamingWorksheet")(getIsRenamingWorksheet)
+    __obj.updateDynamic("getPanes")(getPanes)
+    __obj.updateDynamic("showFilterDialogForTable")(showFilterDialogForTable)
+    __obj.updateDynamic("showFilterDialogForWorksheet")(showFilterDialogForWorksheet)
+    __obj.updateDynamic("showTopOrBottomDialogForTable")(showTopOrBottomDialogForTable)
+    __obj.updateDynamic("showTopOrBottomDialogForWorksheet")(showTopOrBottomDialogForWorksheet)
+    __obj.updateDynamic("styleUpdated")(styleUpdated)
+    __obj.asInstanceOf[IgSpreadsheetMethods]
+  }
+}
+

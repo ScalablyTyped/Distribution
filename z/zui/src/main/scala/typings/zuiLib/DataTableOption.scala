@@ -32,3 +32,60 @@ trait DataTableOption extends js.Object {
   var storage: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataTableOption {
+  @scala.inline
+  def apply(
+    afterLoad: js.Function1[/* event */ AfterLoadEvent, scala.Unit] = null,
+    checkByClickRow: js.UndefOr[scala.Boolean] = js.undefined,
+    checkable: js.UndefOr[scala.Boolean] = js.undefined,
+    checkedClass: java.lang.String = null,
+    checksChanged: js.Function1[/* event */ ChecksChangeEvent, scala.Unit] = null,
+    colHover: js.UndefOr[scala.Boolean] = js.undefined,
+    fixCellHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    fixedHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    fixedHeaderOffset: scala.Int | scala.Double = null,
+    fixedLeftWidth: java.lang.String = null,
+    fixedRightWidth: java.lang.String = null,
+    flexHeadDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    minColWidth: scala.Int | scala.Double = null,
+    minFixedLeftWidth: scala.Int | scala.Double = null,
+    minFixedRightWidth: scala.Int | scala.Double = null,
+    minFlexAreaWidth: scala.Int | scala.Double = null,
+    ready: js.Function0[scala.Unit] = null,
+    rowHover: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollPos: java.lang.String = null,
+    selectable: scala.Boolean | js.Object = null,
+    sizeChanged: js.Function1[/* event */ SizeChangeEvent, scala.Unit] = null,
+    sort: js.Function1[/* event */ SortEvent, scala.Unit] = null,
+    sortable: js.UndefOr[scala.Boolean] = js.undefined,
+    storage: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataTableOption = {
+    val __obj = js.Dynamic.literal()
+    if (afterLoad != null) __obj.updateDynamic("afterLoad")(afterLoad)
+    if (!js.isUndefined(checkByClickRow)) __obj.updateDynamic("checkByClickRow")(checkByClickRow)
+    if (!js.isUndefined(checkable)) __obj.updateDynamic("checkable")(checkable)
+    if (checkedClass != null) __obj.updateDynamic("checkedClass")(checkedClass)
+    if (checksChanged != null) __obj.updateDynamic("checksChanged")(checksChanged)
+    if (!js.isUndefined(colHover)) __obj.updateDynamic("colHover")(colHover)
+    if (!js.isUndefined(fixCellHeight)) __obj.updateDynamic("fixCellHeight")(fixCellHeight)
+    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
+    if (fixedHeaderOffset != null) __obj.updateDynamic("fixedHeaderOffset")(fixedHeaderOffset.asInstanceOf[js.Any])
+    if (fixedLeftWidth != null) __obj.updateDynamic("fixedLeftWidth")(fixedLeftWidth)
+    if (fixedRightWidth != null) __obj.updateDynamic("fixedRightWidth")(fixedRightWidth)
+    if (!js.isUndefined(flexHeadDrag)) __obj.updateDynamic("flexHeadDrag")(flexHeadDrag)
+    if (minColWidth != null) __obj.updateDynamic("minColWidth")(minColWidth.asInstanceOf[js.Any])
+    if (minFixedLeftWidth != null) __obj.updateDynamic("minFixedLeftWidth")(minFixedLeftWidth.asInstanceOf[js.Any])
+    if (minFixedRightWidth != null) __obj.updateDynamic("minFixedRightWidth")(minFixedRightWidth.asInstanceOf[js.Any])
+    if (minFlexAreaWidth != null) __obj.updateDynamic("minFlexAreaWidth")(minFlexAreaWidth.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover)
+    if (scrollPos != null) __obj.updateDynamic("scrollPos")(scrollPos)
+    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (sizeChanged != null) __obj.updateDynamic("sizeChanged")(sizeChanged)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (!js.isUndefined(storage)) __obj.updateDynamic("storage")(storage)
+    __obj.asInstanceOf[DataTableOption]
+  }
+}
+

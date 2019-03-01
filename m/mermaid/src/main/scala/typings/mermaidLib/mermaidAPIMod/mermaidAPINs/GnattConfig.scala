@@ -58,3 +58,32 @@ trait GnattConfig extends js.Object {
   var topPadding: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GnattConfig {
+  @scala.inline
+  def apply(
+    axisFormat: java.lang.String = null,
+    barGap: scala.Int | scala.Double = null,
+    barHeight: scala.Int | scala.Double = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    gridLineStartPadding: scala.Int | scala.Double = null,
+    leftPadding: scala.Int | scala.Double = null,
+    numberSectionStyles: scala.Int | scala.Double = null,
+    titleTopMargin: scala.Int | scala.Double = null,
+    topPadding: scala.Int | scala.Double = null
+  ): GnattConfig = {
+    val __obj = js.Dynamic.literal()
+    if (axisFormat != null) __obj.updateDynamic("axisFormat")(axisFormat)
+    if (barGap != null) __obj.updateDynamic("barGap")(barGap.asInstanceOf[js.Any])
+    if (barHeight != null) __obj.updateDynamic("barHeight")(barHeight.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (gridLineStartPadding != null) __obj.updateDynamic("gridLineStartPadding")(gridLineStartPadding.asInstanceOf[js.Any])
+    if (leftPadding != null) __obj.updateDynamic("leftPadding")(leftPadding.asInstanceOf[js.Any])
+    if (numberSectionStyles != null) __obj.updateDynamic("numberSectionStyles")(numberSectionStyles.asInstanceOf[js.Any])
+    if (titleTopMargin != null) __obj.updateDynamic("titleTopMargin")(titleTopMargin.asInstanceOf[js.Any])
+    if (topPadding != null) __obj.updateDynamic("topPadding")(topPadding.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GnattConfig]
+  }
+}
+

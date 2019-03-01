@@ -120,3 +120,47 @@ trait MatchQuery extends Query {
   def zeroTermsQuery(q: java.lang.String): MatchQuery
 }
 
+object MatchQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    analyzer: js.Function1[java.lang.String, MatchQuery],
+    boost: js.Function1[stdLib.Number, MatchQuery],
+    cutoffFrequency: js.Function1[stdLib.Number, MatchQuery],
+    fuzziness: js.Function1[scala.Double, MatchQuery],
+    fuzzyRewrite: js.Function1[java.lang.String, MatchQuery],
+    fuzzyTranspositions: js.Function1[scala.Boolean, MatchQuery],
+    lenient: js.Function1[scala.Boolean, MatchQuery],
+    maxExpansions: js.Function1[scala.Double, MatchQuery],
+    minimumShouldMatch: js.Function1[scala.Double, MatchQuery],
+    operator: js.Function1[java.lang.String, MatchQuery],
+    prefixLength: js.Function1[scala.Double, MatchQuery],
+    query: js.Function1[java.lang.String, MatchQuery],
+    rewrite: js.Function1[java.lang.String, MatchQuery],
+    slop: js.Function1[scala.Double, MatchQuery],
+    toJSON: js.Function0[js.Any],
+    `type`: js.Function1[java.lang.String, MatchQuery],
+    zeroTermsQuery: js.Function1[java.lang.String, MatchQuery]
+  ): MatchQuery = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("analyzer")(analyzer)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("cutoffFrequency")(cutoffFrequency)
+    __obj.updateDynamic("fuzziness")(fuzziness)
+    __obj.updateDynamic("fuzzyRewrite")(fuzzyRewrite)
+    __obj.updateDynamic("fuzzyTranspositions")(fuzzyTranspositions)
+    __obj.updateDynamic("lenient")(lenient)
+    __obj.updateDynamic("maxExpansions")(maxExpansions)
+    __obj.updateDynamic("minimumShouldMatch")(minimumShouldMatch)
+    __obj.updateDynamic("operator")(operator)
+    __obj.updateDynamic("prefixLength")(prefixLength)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("rewrite")(rewrite)
+    __obj.updateDynamic("slop")(slop)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("zeroTermsQuery")(zeroTermsQuery)
+    __obj.asInstanceOf[MatchQuery]
+  }
+}
+

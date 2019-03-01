@@ -10,3 +10,14 @@ trait cssClasses
   var OUTLINE_NOTCHED: atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineLibStrings.`mdc-notched-outline--notched`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    OUTLINE_NOTCHED: atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineLibStrings.`mdc-notched-outline--notched`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("OUTLINE_NOTCHED")(OUTLINE_NOTCHED)
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

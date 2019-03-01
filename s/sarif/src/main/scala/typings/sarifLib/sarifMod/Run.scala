@@ -95,3 +95,52 @@ trait Run extends js.Object {
   var versionControlProvenance: js.UndefOr[js.Array[VersionControlDetails]] = js.undefined
 }
 
+object Run {
+  @scala.inline
+  def apply(
+    tool: Tool,
+    aggregateIds: js.Array[RunAutomationDetails] = null,
+    artifacts: js.Array[Artifact] = null,
+    baselineInstanceGuid: java.lang.String = null,
+    columnKind: sarifLib.sarifMod.RunNs.columnKind = null,
+    conversion: Conversion = null,
+    defaultFileEncoding: java.lang.String = null,
+    defaultSourceLanguage: java.lang.String = null,
+    externalPropertyFiles: ExternalPropertyFiles = null,
+    graphs: org.scalablytyped.runtime.StringDictionary[Graph] = null,
+    id: RunAutomationDetails = null,
+    invocations: js.Array[Invocation] = null,
+    logicalLocations: js.Array[LogicalLocation] = null,
+    markdownMessageMimeType: java.lang.String = null,
+    newlineSequences: js.Array[java.lang.String] = null,
+    originalUriBaseIds: org.scalablytyped.runtime.StringDictionary[ArtifactLocation] = null,
+    properties: PropertyBag = null,
+    redactionToken: java.lang.String = null,
+    results: js.Array[Result] = null,
+    versionControlProvenance: js.Array[VersionControlDetails] = null
+  ): Run = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tool")(tool)
+    if (aggregateIds != null) __obj.updateDynamic("aggregateIds")(aggregateIds)
+    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
+    if (baselineInstanceGuid != null) __obj.updateDynamic("baselineInstanceGuid")(baselineInstanceGuid)
+    if (columnKind != null) __obj.updateDynamic("columnKind")(columnKind)
+    if (conversion != null) __obj.updateDynamic("conversion")(conversion)
+    if (defaultFileEncoding != null) __obj.updateDynamic("defaultFileEncoding")(defaultFileEncoding)
+    if (defaultSourceLanguage != null) __obj.updateDynamic("defaultSourceLanguage")(defaultSourceLanguage)
+    if (externalPropertyFiles != null) __obj.updateDynamic("externalPropertyFiles")(externalPropertyFiles)
+    if (graphs != null) __obj.updateDynamic("graphs")(graphs)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (invocations != null) __obj.updateDynamic("invocations")(invocations)
+    if (logicalLocations != null) __obj.updateDynamic("logicalLocations")(logicalLocations)
+    if (markdownMessageMimeType != null) __obj.updateDynamic("markdownMessageMimeType")(markdownMessageMimeType)
+    if (newlineSequences != null) __obj.updateDynamic("newlineSequences")(newlineSequences)
+    if (originalUriBaseIds != null) __obj.updateDynamic("originalUriBaseIds")(originalUriBaseIds)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (redactionToken != null) __obj.updateDynamic("redactionToken")(redactionToken)
+    if (results != null) __obj.updateDynamic("results")(results)
+    if (versionControlProvenance != null) __obj.updateDynamic("versionControlProvenance")(versionControlProvenance)
+    __obj.asInstanceOf[Run]
+  }
+}
+

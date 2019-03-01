@@ -16,3 +16,20 @@ trait SetMatcher extends Matcher {
   def deepEquals(expected: nodeLib.Set[_]): Matcher
 }
 
+object SetMatcher {
+  @scala.inline
+  def apply(
+    and: js.Function1[Matcher, Matcher],
+    contains: js.Function1[nodeLib.Set[_], Matcher],
+    deepEquals: js.Function1[nodeLib.Set[_], Matcher],
+    or: js.Function1[Matcher, Matcher]
+  ): SetMatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("deepEquals")(deepEquals)
+    __obj.updateDynamic("or")(or)
+    __obj.asInstanceOf[SetMatcher]
+  }
+}
+

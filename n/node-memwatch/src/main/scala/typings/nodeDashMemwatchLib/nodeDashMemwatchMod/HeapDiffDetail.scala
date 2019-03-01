@@ -13,3 +13,20 @@ trait HeapDiffDetail extends js.Object {
   var what: java.lang.String
 }
 
+object HeapDiffDetail {
+  @scala.inline
+  def apply(
+    `+`: scala.Double,
+    `-`: scala.Double,
+    size: java.lang.String,
+    size_bytes: scala.Double,
+    what: java.lang.String
+  ): HeapDiffDetail = {
+    val __obj = js.Dynamic.literal(`+` = `+`, `-` = `-`)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("size_bytes")(size_bytes)
+    __obj.updateDynamic("what")(what)
+    __obj.asInstanceOf[HeapDiffDetail]
+  }
+}
+

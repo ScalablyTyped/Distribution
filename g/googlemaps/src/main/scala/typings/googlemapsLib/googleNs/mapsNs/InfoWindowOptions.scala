@@ -48,3 +48,24 @@ trait InfoWindowOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object InfoWindowOptions {
+  @scala.inline
+  def apply(
+    content: java.lang.String | stdLib.Node = null,
+    disableAutoPan: js.UndefOr[scala.Boolean] = js.undefined,
+    maxWidth: scala.Int | scala.Double = null,
+    pixelOffset: Size = null,
+    position: LatLng | LatLngLiteral = null,
+    zIndex: scala.Int | scala.Double = null
+  ): InfoWindowOptions = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAutoPan)) __obj.updateDynamic("disableAutoPan")(disableAutoPan)
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InfoWindowOptions]
+  }
+}
+

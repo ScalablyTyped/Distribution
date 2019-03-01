@@ -23,3 +23,14 @@ trait CoverageRange extends js.Object {
   var startOffset: scala.Double
 }
 
+object CoverageRange {
+  @scala.inline
+  def apply(count: scala.Double, endOffset: scala.Double, startOffset: scala.Double): CoverageRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("endOffset")(endOffset)
+    __obj.updateDynamic("startOffset")(startOffset)
+    __obj.asInstanceOf[CoverageRange]
+  }
+}
+

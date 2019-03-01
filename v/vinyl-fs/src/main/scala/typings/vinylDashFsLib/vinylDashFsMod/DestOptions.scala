@@ -35,3 +35,26 @@ trait DestOptions extends js.Object {
   var useJunctions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DestOptions {
+  @scala.inline
+  def apply(
+    cwd: java.lang.String = null,
+    dirMode: scala.Double | java.lang.String = null,
+    mode: scala.Double | java.lang.String = null,
+    overwrite: js.UndefOr[scala.Boolean] = js.undefined,
+    relativeSymlinks: js.UndefOr[scala.Boolean] = js.undefined,
+    sourcemaps: vinylDashFsLib.vinylDashFsLibNumbers.`true` | java.lang.String = null,
+    useJunctions: js.UndefOr[scala.Boolean] = js.undefined
+  ): DestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (dirMode != null) __obj.updateDynamic("dirMode")(dirMode.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (!js.isUndefined(relativeSymlinks)) __obj.updateDynamic("relativeSymlinks")(relativeSymlinks)
+    if (sourcemaps != null) __obj.updateDynamic("sourcemaps")(sourcemaps.asInstanceOf[js.Any])
+    if (!js.isUndefined(useJunctions)) __obj.updateDynamic("useJunctions")(useJunctions)
+    __obj.asInstanceOf[DestOptions]
+  }
+}
+

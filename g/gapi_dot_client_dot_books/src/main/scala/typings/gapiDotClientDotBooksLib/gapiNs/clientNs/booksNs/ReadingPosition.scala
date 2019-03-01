@@ -22,3 +22,26 @@ trait ReadingPosition extends js.Object {
   var volumeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReadingPosition {
+  @scala.inline
+  def apply(
+    epubCfiPosition: java.lang.String = null,
+    gbImagePosition: java.lang.String = null,
+    gbTextPosition: java.lang.String = null,
+    kind: java.lang.String = null,
+    pdfPosition: java.lang.String = null,
+    updated: java.lang.String = null,
+    volumeId: java.lang.String = null
+  ): ReadingPosition = {
+    val __obj = js.Dynamic.literal()
+    if (epubCfiPosition != null) __obj.updateDynamic("epubCfiPosition")(epubCfiPosition)
+    if (gbImagePosition != null) __obj.updateDynamic("gbImagePosition")(gbImagePosition)
+    if (gbTextPosition != null) __obj.updateDynamic("gbTextPosition")(gbTextPosition)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (pdfPosition != null) __obj.updateDynamic("pdfPosition")(pdfPosition)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    __obj.asInstanceOf[ReadingPosition]
+  }
+}
+

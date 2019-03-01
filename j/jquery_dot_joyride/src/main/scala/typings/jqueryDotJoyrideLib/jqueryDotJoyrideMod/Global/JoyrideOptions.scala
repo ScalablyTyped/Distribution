@@ -198,3 +198,93 @@ trait JoyrideOptions extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JoyrideOptions {
+  @scala.inline
+  def apply(
+    autoStart: js.UndefOr[scala.Boolean] = js.undefined,
+    cookieDomain: js.Any = null,
+    cookieMonster: js.UndefOr[scala.Boolean] = js.undefined,
+    cookieName: java.lang.String = null,
+    cookiePath: js.Any = null,
+    expose: js.UndefOr[scala.Boolean] = js.undefined,
+    localStorage: js.UndefOr[scala.Boolean] = js.undefined,
+    localStorageKey: java.lang.String = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    nextButton: js.UndefOr[scala.Boolean] = js.undefined,
+    nubPosition: js.Any = null,
+    pauseAfter: js.Array[_] = null,
+    postExposeCallback: js.Function3[
+      /* index */ scala.Double, 
+      /* nextTip */ JQuery, 
+      /* el */ js.UndefOr[JQuery], 
+      scala.Unit
+    ] = null,
+    postRideCallback: js.Function3[
+      /* index */ scala.Double, 
+      /* currentTip */ JQuery, 
+      /* isAborted */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    postStepCallback: js.Function3[
+      /* index */ scala.Double, 
+      /* currentTip */ JQuery, 
+      /* isAborted */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    preRideCallback: js.Function3[
+      /* index */ scala.Double, 
+      /* currentTip */ JQuery, 
+      /* el */ js.UndefOr[JQuery], 
+      scala.Unit
+    ] = null,
+    preStepCallback: js.Function3[
+      /* index */ scala.Double, 
+      /* nextTip */ JQuery, 
+      /* el */ js.UndefOr[JQuery], 
+      scala.Unit
+    ] = null,
+    scroll: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollSpeed: scala.Int | scala.Double = null,
+    startOffset: scala.Int | scala.Double = null,
+    startTimerOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    template: JoyrideTemplate = null,
+    timer: scala.Int | scala.Double = null,
+    tipAnimation: java.lang.String = null,
+    tipAnimationFadeSpeed: scala.Int | scala.Double = null,
+    tipContainer: stdLib.HTMLElement = null,
+    tipLocation: java.lang.String = null,
+    version: java.lang.String = null
+  ): JoyrideOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
+    if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain)
+    if (!js.isUndefined(cookieMonster)) __obj.updateDynamic("cookieMonster")(cookieMonster)
+    if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName)
+    if (cookiePath != null) __obj.updateDynamic("cookiePath")(cookiePath)
+    if (!js.isUndefined(expose)) __obj.updateDynamic("expose")(expose)
+    if (!js.isUndefined(localStorage)) __obj.updateDynamic("localStorage")(localStorage)
+    if (localStorageKey != null) __obj.updateDynamic("localStorageKey")(localStorageKey)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (!js.isUndefined(nextButton)) __obj.updateDynamic("nextButton")(nextButton)
+    if (nubPosition != null) __obj.updateDynamic("nubPosition")(nubPosition)
+    if (pauseAfter != null) __obj.updateDynamic("pauseAfter")(pauseAfter)
+    if (postExposeCallback != null) __obj.updateDynamic("postExposeCallback")(postExposeCallback)
+    if (postRideCallback != null) __obj.updateDynamic("postRideCallback")(postRideCallback)
+    if (postStepCallback != null) __obj.updateDynamic("postStepCallback")(postStepCallback)
+    if (preRideCallback != null) __obj.updateDynamic("preRideCallback")(preRideCallback)
+    if (preStepCallback != null) __obj.updateDynamic("preStepCallback")(preStepCallback)
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
+    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(startTimerOnClick)) __obj.updateDynamic("startTimerOnClick")(startTimerOnClick)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
+    if (tipAnimation != null) __obj.updateDynamic("tipAnimation")(tipAnimation)
+    if (tipAnimationFadeSpeed != null) __obj.updateDynamic("tipAnimationFadeSpeed")(tipAnimationFadeSpeed.asInstanceOf[js.Any])
+    if (tipContainer != null) __obj.updateDynamic("tipContainer")(tipContainer)
+    if (tipLocation != null) __obj.updateDynamic("tipLocation")(tipLocation)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[JoyrideOptions]
+  }
+}
+

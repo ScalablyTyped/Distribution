@@ -20,3 +20,21 @@ trait Anon_CallbackHostname extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackHostname {
+  @scala.inline
+  def apply(
+    resolve: js.Function2[
+      java.lang.String, 
+      js.Function1[
+        /* resolveInfo */ chromeDashAppsLib.chromeNs.dnsNs.ResolveCallbackResolveInfo, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): Anon_CallbackHostname = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resolve")(resolve)
+    __obj.asInstanceOf[Anon_CallbackHostname]
+  }
+}
+

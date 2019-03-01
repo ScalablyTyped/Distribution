@@ -10,3 +10,13 @@ trait Anon_Locations extends js.Object {
   var restrictionType: java.lang.String
 }
 
+object Anon_Locations {
+  @scala.inline
+  def apply(restrictionType: java.lang.String, locations: js.Array[java.lang.String] = null): Anon_Locations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("restrictionType")(restrictionType)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    __obj.asInstanceOf[Anon_Locations]
+  }
+}
+

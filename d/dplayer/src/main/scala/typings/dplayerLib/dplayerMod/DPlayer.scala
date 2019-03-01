@@ -23,3 +23,42 @@ trait DPlayer extends js.Object {
   def volume(percentage: scala.Double, nostorage: scala.Boolean, nonotice: scala.Boolean): scala.Unit
 }
 
+object DPlayer {
+  @scala.inline
+  def apply(
+    danmaku: Danmaku,
+    destroy: js.Function0[scala.Unit],
+    events: js.Any,
+    fullScreen: FullScreen,
+    notice: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
+    on: js.Function2[DPlayerEvents, js.Function0[scala.Unit], scala.Unit],
+    pause: js.Function0[scala.Unit],
+    play: js.Function0[scala.Unit],
+    seek: js.Function1[scala.Double, scala.Unit],
+    speed: js.Function1[scala.Double, scala.Unit],
+    switchQuality: js.Function1[scala.Double, scala.Unit],
+    switchVideo: js.Function2[DPlayerVideo, DPlayerDanmaku, scala.Unit],
+    toggle: js.Function0[scala.Unit],
+    video: stdLib.HTMLVideoElement,
+    volume: js.Function3[scala.Double, scala.Boolean, scala.Boolean, scala.Unit]
+  ): DPlayer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("danmaku")(danmaku)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("fullScreen")(fullScreen)
+    __obj.updateDynamic("notice")(notice)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("pause")(pause)
+    __obj.updateDynamic("play")(play)
+    __obj.updateDynamic("seek")(seek)
+    __obj.updateDynamic("speed")(speed)
+    __obj.updateDynamic("switchQuality")(switchQuality)
+    __obj.updateDynamic("switchVideo")(switchVideo)
+    __obj.updateDynamic("toggle")(toggle)
+    __obj.updateDynamic("video")(video)
+    __obj.updateDynamic("volume")(volume)
+    __obj.asInstanceOf[DPlayer]
+  }
+}
+

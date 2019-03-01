@@ -116,3 +116,64 @@ trait MetricAlarmArgs extends js.Object {
   val unit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object MetricAlarmArgs {
+  @scala.inline
+  def apply(
+    comparisonOperator: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    evaluationPeriods: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    threshold: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    actionsEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    alarmActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.snsTopicMod.Topic]
+      ]
+    ] = null,
+    alarmDescription: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    datapointsToAlarm: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    dimensions: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    evaluateLowSampleCountPercentiles: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    extendedStatistic: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    insufficientDataActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.snsTopicMod.Topic]
+      ]
+    ] = null,
+    metricName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    metricQueries: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ExpressionId]]] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    okActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.snsTopicMod.Topic]
+      ]
+    ] = null,
+    period: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    statistic: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    treatMissingData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    unit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): MetricAlarmArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("comparisonOperator")(comparisonOperator.asInstanceOf[js.Any])
+    __obj.updateDynamic("evaluationPeriods")(evaluationPeriods.asInstanceOf[js.Any])
+    __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (actionsEnabled != null) __obj.updateDynamic("actionsEnabled")(actionsEnabled.asInstanceOf[js.Any])
+    if (alarmActions != null) __obj.updateDynamic("alarmActions")(alarmActions.asInstanceOf[js.Any])
+    if (alarmDescription != null) __obj.updateDynamic("alarmDescription")(alarmDescription.asInstanceOf[js.Any])
+    if (datapointsToAlarm != null) __obj.updateDynamic("datapointsToAlarm")(datapointsToAlarm.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (evaluateLowSampleCountPercentiles != null) __obj.updateDynamic("evaluateLowSampleCountPercentiles")(evaluateLowSampleCountPercentiles.asInstanceOf[js.Any])
+    if (extendedStatistic != null) __obj.updateDynamic("extendedStatistic")(extendedStatistic.asInstanceOf[js.Any])
+    if (insufficientDataActions != null) __obj.updateDynamic("insufficientDataActions")(insufficientDataActions.asInstanceOf[js.Any])
+    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
+    if (metricQueries != null) __obj.updateDynamic("metricQueries")(metricQueries.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (okActions != null) __obj.updateDynamic("okActions")(okActions.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (statistic != null) __obj.updateDynamic("statistic")(statistic.asInstanceOf[js.Any])
+    if (treatMissingData != null) __obj.updateDynamic("treatMissingData")(treatMissingData.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MetricAlarmArgs]
+  }
+}
+

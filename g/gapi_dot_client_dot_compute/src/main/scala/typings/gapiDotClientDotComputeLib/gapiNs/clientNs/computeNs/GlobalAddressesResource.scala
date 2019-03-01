@@ -16,3 +16,32 @@ trait GlobalAddressesResource extends js.Object {
   def list(request: gapiDotClientDotComputeLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[AddressList]
 }
 
+object GlobalAddressesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AddressAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AddressAltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Address]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AddressList]
+    ]
+  ): GlobalAddressesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[GlobalAddressesResource]
+  }
+}
+

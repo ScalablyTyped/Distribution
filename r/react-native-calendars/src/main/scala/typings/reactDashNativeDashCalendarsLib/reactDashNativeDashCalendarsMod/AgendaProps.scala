@@ -120,3 +120,66 @@ trait AgendaProps[TItem] extends js.Object {
   def rowHasChanged(r1: TItem, r2: TItem): scala.Boolean
 }
 
+object AgendaProps {
+  @scala.inline
+  def apply[TItem](
+    renderEmptyDate: js.Function0[reactLib.reactMod.ReactNs.ReactNode],
+    renderItem: js.Function2[TItem, scala.Boolean, reactLib.reactMod.ReactNs.ReactNode],
+    rowHasChanged: js.Function2[TItem, TItem, scala.Boolean],
+    displayLoadingIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    firstDay: scala.Int | scala.Double = null,
+    futureScrollRange: scala.Int | scala.Double = null,
+    hideKnob: js.UndefOr[scala.Boolean] = js.undefined,
+    items: AgendaItemsMap[TItem] = null,
+    loadItemsForMonth: js.Function1[/* date */ DateObject, scala.Unit] = null,
+    maxDate: TCalendarDate = null,
+    minDate: TCalendarDate = null,
+    monthFormat: java.lang.String = null,
+    onCalendarToggled: js.Function1[/* calendarOpened */ scala.Boolean, scala.Unit] = null,
+    onDayChange: DateCallbackHandler = null,
+    onDayPress: DateCallbackHandler = null,
+    onRefresh: js.Function0[scala.Unit] = null,
+    pastScrollRange: scala.Int | scala.Double = null,
+    refreshControl: reactLib.reactMod.ReactNs.ReactNode = null,
+    refreshing: js.UndefOr[scala.Boolean] = js.undefined,
+    renderDay: js.Function2[
+      /* date */ js.UndefOr[DateObject], 
+      /* item */ TItem, 
+      reactLib.reactMod.ReactNs.ReactNode
+    ] = null,
+    renderEmptyData: js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null,
+    renderKnob: js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null,
+    selected: TCalendarDate = null,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    theme: AgendaThemeStyle = null
+  ): AgendaProps[TItem] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderEmptyDate")(renderEmptyDate)
+    __obj.updateDynamic("renderItem")(renderItem)
+    __obj.updateDynamic("rowHasChanged")(rowHasChanged)
+    if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator)
+    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
+    if (futureScrollRange != null) __obj.updateDynamic("futureScrollRange")(futureScrollRange.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideKnob)) __obj.updateDynamic("hideKnob")(hideKnob)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (loadItemsForMonth != null) __obj.updateDynamic("loadItemsForMonth")(loadItemsForMonth)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat)
+    if (onCalendarToggled != null) __obj.updateDynamic("onCalendarToggled")(onCalendarToggled)
+    if (onDayChange != null) __obj.updateDynamic("onDayChange")(onDayChange)
+    if (onDayPress != null) __obj.updateDynamic("onDayPress")(onDayPress)
+    if (onRefresh != null) __obj.updateDynamic("onRefresh")(onRefresh)
+    if (pastScrollRange != null) __obj.updateDynamic("pastScrollRange")(pastScrollRange.asInstanceOf[js.Any])
+    if (refreshControl != null) __obj.updateDynamic("refreshControl")(refreshControl.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing)
+    if (renderDay != null) __obj.updateDynamic("renderDay")(renderDay)
+    if (renderEmptyData != null) __obj.updateDynamic("renderEmptyData")(renderEmptyData)
+    if (renderKnob != null) __obj.updateDynamic("renderKnob")(renderKnob)
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[AgendaProps[TItem]]
+  }
+}
+

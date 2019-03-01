@@ -16,3 +16,16 @@ trait DebounceOptions extends js.Object {
   var trailing: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DebounceOptions {
+  @scala.inline
+  def apply(
+    leading: js.UndefOr[scala.Boolean] = js.undefined,
+    trailing: js.UndefOr[scala.Boolean] = js.undefined
+  ): DebounceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading)
+    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing)
+    __obj.asInstanceOf[DebounceOptions]
+  }
+}
+

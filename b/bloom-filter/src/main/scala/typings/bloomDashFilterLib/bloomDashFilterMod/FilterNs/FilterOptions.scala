@@ -12,3 +12,20 @@ trait FilterOptions extends js.Object {
   var vData: nodeLib.Buffer
 }
 
+object FilterOptions {
+  @scala.inline
+  def apply(
+    nHashFuncs: scala.Double,
+    vData: nodeLib.Buffer,
+    nFlags: scala.Int | scala.Double = null,
+    nTweak: scala.Int | scala.Double = null
+  ): FilterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nHashFuncs")(nHashFuncs)
+    __obj.updateDynamic("vData")(vData)
+    if (nFlags != null) __obj.updateDynamic("nFlags")(nFlags.asInstanceOf[js.Any])
+    if (nTweak != null) __obj.updateDynamic("nTweak")(nTweak.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FilterOptions]
+  }
+}
+

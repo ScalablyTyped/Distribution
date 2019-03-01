@@ -11,3 +11,14 @@ trait PopoverOptions extends js.Object {
   var link: js.UndefOr[popoverLinkDef] = js.undefined
 }
 
+object PopoverOptions {
+  @scala.inline
+  def apply(air: popoverAirDef = null, image: popoverImageDef = null, link: popoverLinkDef = null): PopoverOptions = {
+    val __obj = js.Dynamic.literal()
+    if (air != null) __obj.updateDynamic("air")(air)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (link != null) __obj.updateDynamic("link")(link)
+    __obj.asInstanceOf[PopoverOptions]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Results extends js.Object {
   var images: js.UndefOr[js.Array[BuiltImage]] = js.undefined
 }
 
+object Results {
+  @scala.inline
+  def apply(buildStepImages: js.Array[java.lang.String] = null, images: js.Array[BuiltImage] = null): Results = {
+    val __obj = js.Dynamic.literal()
+    if (buildStepImages != null) __obj.updateDynamic("buildStepImages")(buildStepImages)
+    if (images != null) __obj.updateDynamic("images")(images)
+    __obj.asInstanceOf[Results]
+  }
+}
+

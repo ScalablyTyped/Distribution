@@ -28,3 +28,22 @@ trait ProvisionedThroughputDescription extends js.Object {
   var WriteCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined
 }
 
+object ProvisionedThroughputDescription {
+  @scala.inline
+  def apply(
+    LastDecreaseDateTime: _Date = null,
+    LastIncreaseDateTime: _Date = null,
+    NumberOfDecreasesToday: js.UndefOr[PositiveLongObject] = js.undefined,
+    ReadCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined,
+    WriteCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined
+  ): ProvisionedThroughputDescription = {
+    val __obj = js.Dynamic.literal()
+    if (LastDecreaseDateTime != null) __obj.updateDynamic("LastDecreaseDateTime")(LastDecreaseDateTime)
+    if (LastIncreaseDateTime != null) __obj.updateDynamic("LastIncreaseDateTime")(LastIncreaseDateTime)
+    if (!js.isUndefined(NumberOfDecreasesToday)) __obj.updateDynamic("NumberOfDecreasesToday")(NumberOfDecreasesToday)
+    if (!js.isUndefined(ReadCapacityUnits)) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits)
+    if (!js.isUndefined(WriteCapacityUnits)) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits)
+    __obj.asInstanceOf[ProvisionedThroughputDescription]
+  }
+}
+

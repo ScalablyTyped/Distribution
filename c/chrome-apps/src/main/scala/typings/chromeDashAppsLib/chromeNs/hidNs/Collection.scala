@@ -14,3 +14,18 @@ trait Collection extends js.Object {
   var usagePage: chromeDashAppsLib.chromeNs.integer
 }
 
+object Collection {
+  @scala.inline
+  def apply(
+    reportIds: js.Array[chromeDashAppsLib.chromeNs.integer],
+    usage: chromeDashAppsLib.chromeNs.integer,
+    usagePage: chromeDashAppsLib.chromeNs.integer
+  ): Collection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reportIds")(reportIds)
+    __obj.updateDynamic("usage")(usage)
+    __obj.updateDynamic("usagePage")(usagePage)
+    __obj.asInstanceOf[Collection]
+  }
+}
+

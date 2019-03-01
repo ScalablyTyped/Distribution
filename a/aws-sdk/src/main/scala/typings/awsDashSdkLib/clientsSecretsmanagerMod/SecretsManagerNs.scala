@@ -1073,6 +1073,8 @@ object SecretsManagerNs extends js.Object {
     var Name: js.UndefOr[SecretNameType] = js.undefined
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AutomaticallyRotateAfterDaysType = scala.Double
   type BooleanType = scala.Boolean
@@ -1116,6 +1118,6 @@ object SecretsManagerNs extends js.Object {
   type TagKeyType = java.lang.String
   type TagListType = js.Array[Tag]
   type TagValueType = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-10-17` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -12,3 +12,12 @@ trait AuthenticatorResponse extends js.Object {
   val clientDataJSON: stdLib.ArrayBuffer
 }
 
+object AuthenticatorResponse {
+  @scala.inline
+  def apply(clientDataJSON: stdLib.ArrayBuffer): AuthenticatorResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientDataJSON")(clientDataJSON)
+    __obj.asInstanceOf[AuthenticatorResponse]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_Brandname extends js.Object {
   var email: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Brandname {
+  @scala.inline
+  def apply(
+    brand_name: java.lang.String = null,
+    display_phone: paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Phone = null,
+    email: java.lang.String = null
+  ): Anon_Brandname = {
+    val __obj = js.Dynamic.literal()
+    if (brand_name != null) __obj.updateDynamic("brand_name")(brand_name)
+    if (display_phone != null) __obj.updateDynamic("display_phone")(display_phone)
+    if (email != null) __obj.updateDynamic("email")(email)
+    __obj.asInstanceOf[Anon_Brandname]
+  }
+}
+

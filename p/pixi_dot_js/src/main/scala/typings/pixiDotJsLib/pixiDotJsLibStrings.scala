@@ -10,10 +10,12 @@ object pixiDotJsLibStrings {
   sealed trait UniformDataMap extends js.Object
   
   @js.native
-  sealed trait added extends js.Object
+  sealed trait added
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPixiEvents
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
   sealed trait complete extends js.Object
@@ -37,46 +39,60 @@ object pixiDotJsLibStrings {
   sealed trait loaded extends js.Object
   
   @js.native
-  sealed trait mousedown extends js.Object
+  sealed trait mousedown
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
-  sealed trait mousemove extends js.Object
+  sealed trait mousemove
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
-  sealed trait mouseout extends js.Object
+  sealed trait mouseout
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
-  sealed trait mouseover extends js.Object
+  sealed trait mouseover
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
-  sealed trait mouseup extends js.Object
+  sealed trait mouseup
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
-  sealed trait mouseupoutside extends js.Object
+  sealed trait mouseupoutside
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
-  sealed trait pointercancel extends js.Object
+  sealed trait pointercancel
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPointerEvents
   
   @js.native
-  sealed trait pointerdown extends js.Object
+  sealed trait pointerdown
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPointerEvents
   
   @js.native
-  sealed trait pointermove extends js.Object
+  sealed trait pointermove
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPointerEvents
   
   @js.native
-  sealed trait pointerout extends js.Object
+  sealed trait pointerout
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPointerEvents
   
   @js.native
-  sealed trait pointerover extends js.Object
+  sealed trait pointerover
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPointerEvents
   
   @js.native
-  sealed trait pointertap extends js.Object
+  sealed trait pointertap
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPointerEvents
   
   @js.native
-  sealed trait pointerup extends js.Object
+  sealed trait pointerup
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPointerEvents
   
   @js.native
-  sealed trait pointerupoutside extends js.Object
+  sealed trait pointerupoutside
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPointerEvents
   
   @js.native
   sealed trait postrender extends js.Object
@@ -88,40 +104,51 @@ object pixiDotJsLibStrings {
   sealed trait progress extends js.Object
   
   @js.native
-  sealed trait removed extends js.Object
+  sealed trait removed
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionPixiEvents
   
   @js.native
-  sealed trait rightclick extends js.Object
+  sealed trait rightclick
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
-  sealed trait rightdown extends js.Object
+  sealed trait rightdown
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
-  sealed trait rightup extends js.Object
+  sealed trait rightup
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
-  sealed trait rightupoutside extends js.Object
+  sealed trait rightupoutside
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionMouseEvents
   
   @js.native
   sealed trait start extends js.Object
   
   @js.native
-  sealed trait tap extends js.Object
+  sealed trait tap
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionTouchEvents
   
   @js.native
-  sealed trait touchcancel extends js.Object
+  sealed trait touchcancel
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionTouchEvents
   
   @js.native
-  sealed trait touchend extends js.Object
+  sealed trait touchend
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionTouchEvents
   
   @js.native
-  sealed trait touchendoutside extends js.Object
+  sealed trait touchendoutside
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionTouchEvents
   
   @js.native
-  sealed trait touchmove extends js.Object
+  sealed trait touchmove
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionTouchEvents
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchstart
+    extends pixiDotJsLib.PIXINs.interactionNs.InteractionTouchEvents
   
   @js.native
   sealed trait update extends js.Object

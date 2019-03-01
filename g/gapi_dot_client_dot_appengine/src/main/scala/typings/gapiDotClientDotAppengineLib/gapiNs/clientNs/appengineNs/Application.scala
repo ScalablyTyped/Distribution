@@ -46,3 +46,38 @@ trait Application extends js.Object {
   var servingStatus: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Application {
+  @scala.inline
+  def apply(
+    authDomain: java.lang.String = null,
+    codeBucket: java.lang.String = null,
+    defaultBucket: java.lang.String = null,
+    defaultCookieExpiration: java.lang.String = null,
+    defaultHostname: java.lang.String = null,
+    dispatchRules: js.Array[UrlDispatchRule] = null,
+    featureSettings: FeatureSettings = null,
+    gcrDomain: java.lang.String = null,
+    iap: IdentityAwareProxy = null,
+    id: java.lang.String = null,
+    locationId: java.lang.String = null,
+    name: java.lang.String = null,
+    servingStatus: java.lang.String = null
+  ): Application = {
+    val __obj = js.Dynamic.literal()
+    if (authDomain != null) __obj.updateDynamic("authDomain")(authDomain)
+    if (codeBucket != null) __obj.updateDynamic("codeBucket")(codeBucket)
+    if (defaultBucket != null) __obj.updateDynamic("defaultBucket")(defaultBucket)
+    if (defaultCookieExpiration != null) __obj.updateDynamic("defaultCookieExpiration")(defaultCookieExpiration)
+    if (defaultHostname != null) __obj.updateDynamic("defaultHostname")(defaultHostname)
+    if (dispatchRules != null) __obj.updateDynamic("dispatchRules")(dispatchRules)
+    if (featureSettings != null) __obj.updateDynamic("featureSettings")(featureSettings)
+    if (gcrDomain != null) __obj.updateDynamic("gcrDomain")(gcrDomain)
+    if (iap != null) __obj.updateDynamic("iap")(iap)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (servingStatus != null) __obj.updateDynamic("servingStatus")(servingStatus)
+    __obj.asInstanceOf[Application]
+  }
+}
+

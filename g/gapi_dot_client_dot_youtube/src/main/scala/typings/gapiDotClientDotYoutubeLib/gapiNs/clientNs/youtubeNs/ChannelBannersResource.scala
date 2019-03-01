@@ -18,3 +18,17 @@ trait ChannelBannersResource extends js.Object {
   def insert(request: gapiDotClientDotYoutubeLib.Anon_AltChannelIdFields): gapiDotClientLib.gapiNs.clientNs.Request[ChannelBannerResource]
 }
 
+object ChannelBannersResource {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltChannelIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ChannelBannerResource]
+    ]
+  ): ChannelBannersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.asInstanceOf[ChannelBannersResource]
+  }
+}
+

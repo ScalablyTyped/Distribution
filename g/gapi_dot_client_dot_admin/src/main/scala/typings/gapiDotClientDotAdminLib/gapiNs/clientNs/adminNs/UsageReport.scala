@@ -18,3 +18,22 @@ trait UsageReport extends js.Object {
   var parameters: js.UndefOr[js.Array[gapiDotClientDotAdminLib.Anon_BoolValueDatetimeValue]] = js.undefined
 }
 
+object UsageReport {
+  @scala.inline
+  def apply(
+    date: java.lang.String = null,
+    entity: gapiDotClientDotAdminLib.Anon_CustomerId = null,
+    etag: java.lang.String = null,
+    kind: java.lang.String = null,
+    parameters: js.Array[gapiDotClientDotAdminLib.Anon_BoolValueDatetimeValue] = null
+  ): UsageReport = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (entity != null) __obj.updateDynamic("entity")(entity)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.asInstanceOf[UsageReport]
+  }
+}
+

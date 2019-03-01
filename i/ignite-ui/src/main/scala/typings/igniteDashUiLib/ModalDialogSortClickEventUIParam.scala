@@ -20,3 +20,18 @@ trait ModalDialogSortClickEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ModalDialogSortClickEventUIParam {
+  @scala.inline
+  def apply(
+    columnKey: java.lang.String = null,
+    modalDialogElement: java.lang.String = null,
+    owner: js.Any = null
+  ): ModalDialogSortClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (modalDialogElement != null) __obj.updateDynamic("modalDialogElement")(modalDialogElement)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ModalDialogSortClickEventUIParam]
+  }
+}
+

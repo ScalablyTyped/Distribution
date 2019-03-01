@@ -27,3 +27,24 @@ trait ASyncConstructorOptions extends js.Object {
   ] = js.undefined
 }
 
+object ASyncConstructorOptions {
+  @scala.inline
+  def apply(
+    async: ternLib.ternLibNumbers.`true`,
+    getFile: js.Function2[
+      /* filename */ java.lang.String, 
+      /* callback */ js.Function2[
+        /* error */ js.UndefOr[stdLib.Error], 
+        /* content */ js.UndefOr[java.lang.String], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ] = null
+  ): ASyncConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("async")(async)
+    if (getFile != null) __obj.updateDynamic("getFile")(getFile)
+    __obj.asInstanceOf[ASyncConstructorOptions]
+  }
+}
+

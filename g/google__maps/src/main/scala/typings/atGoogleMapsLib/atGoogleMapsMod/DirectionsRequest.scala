@@ -123,3 +123,42 @@ trait DirectionsRequest extends js.Object {
   var waypoints: js.UndefOr[js.Array[LatLng]] = js.undefined
 }
 
+object DirectionsRequest {
+  @scala.inline
+  def apply(
+    destination: LatLng,
+    origin: LatLng,
+    alternatives: js.UndefOr[scala.Boolean] = js.undefined,
+    arrival_time: stdLib.Date | scala.Double = null,
+    avoid: js.Array[TravelRestriction] = null,
+    departure_time: stdLib.Date | scala.Double = null,
+    language: Language = null,
+    mode: TravelMode = null,
+    optimize: js.UndefOr[scala.Boolean] = js.undefined,
+    region: java.lang.String = null,
+    traffic_model: TrafficModel = null,
+    transit_mode: js.Array[TransitMode] = null,
+    transit_routing_preference: TransitRoutingPreference = null,
+    units: UnitSystem = null,
+    waypoints: js.Array[LatLng] = null
+  ): DirectionsRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (!js.isUndefined(alternatives)) __obj.updateDynamic("alternatives")(alternatives)
+    if (arrival_time != null) __obj.updateDynamic("arrival_time")(arrival_time.asInstanceOf[js.Any])
+    if (avoid != null) __obj.updateDynamic("avoid")(avoid)
+    if (departure_time != null) __obj.updateDynamic("departure_time")(departure_time.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (!js.isUndefined(optimize)) __obj.updateDynamic("optimize")(optimize)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (traffic_model != null) __obj.updateDynamic("traffic_model")(traffic_model)
+    if (transit_mode != null) __obj.updateDynamic("transit_mode")(transit_mode)
+    if (transit_routing_preference != null) __obj.updateDynamic("transit_routing_preference")(transit_routing_preference)
+    if (units != null) __obj.updateDynamic("units")(units)
+    if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints)
+    __obj.asInstanceOf[DirectionsRequest]
+  }
+}
+

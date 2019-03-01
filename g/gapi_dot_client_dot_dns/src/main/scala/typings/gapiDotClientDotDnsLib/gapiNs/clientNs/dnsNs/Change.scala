@@ -20,3 +20,24 @@ trait Change extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Change {
+  @scala.inline
+  def apply(
+    additions: js.Array[ResourceRecordSet] = null,
+    deletions: js.Array[ResourceRecordSet] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    startTime: java.lang.String = null,
+    status: java.lang.String = null
+  ): Change = {
+    val __obj = js.Dynamic.literal()
+    if (additions != null) __obj.updateDynamic("additions")(additions)
+    if (deletions != null) __obj.updateDynamic("deletions")(deletions)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Change]
+  }
+}
+

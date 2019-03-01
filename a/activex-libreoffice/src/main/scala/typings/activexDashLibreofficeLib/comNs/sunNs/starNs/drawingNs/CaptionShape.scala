@@ -51,3 +51,48 @@ trait CaptionShape
   var CornerRadius: scala.Double
 }
 
+object CaptionShape {
+  @scala.inline
+  def apply(
+    CaptionAngle: scala.Double,
+    CaptionEscapeAbsolute: scala.Double,
+    CaptionEscapeDirection: scala.Double,
+    CaptionEscapeRelative: scala.Double,
+    CaptionGap: scala.Double,
+    CaptionIsEscapeRelative: scala.Boolean,
+    CaptionIsFitLineLength: scala.Boolean,
+    CaptionIsFixedAngle: scala.Boolean,
+    CaptionLineLength: scala.Double,
+    CaptionPoint: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    CaptionType: scala.Double,
+    CornerRadius: scala.Double,
+    FillProperties: FillProperties = null,
+    LineProperties: LineProperties = null,
+    RotationDescriptor: RotationDescriptor = null,
+    ShadowProperties: ShadowProperties = null,
+    Shape: Shape = null,
+    Text: Text = null
+  ): CaptionShape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CaptionAngle")(CaptionAngle)
+    __obj.updateDynamic("CaptionEscapeAbsolute")(CaptionEscapeAbsolute)
+    __obj.updateDynamic("CaptionEscapeDirection")(CaptionEscapeDirection)
+    __obj.updateDynamic("CaptionEscapeRelative")(CaptionEscapeRelative)
+    __obj.updateDynamic("CaptionGap")(CaptionGap)
+    __obj.updateDynamic("CaptionIsEscapeRelative")(CaptionIsEscapeRelative)
+    __obj.updateDynamic("CaptionIsFitLineLength")(CaptionIsFitLineLength)
+    __obj.updateDynamic("CaptionIsFixedAngle")(CaptionIsFixedAngle)
+    __obj.updateDynamic("CaptionLineLength")(CaptionLineLength)
+    __obj.updateDynamic("CaptionPoint")(CaptionPoint)
+    __obj.updateDynamic("CaptionType")(CaptionType)
+    __obj.updateDynamic("CornerRadius")(CornerRadius)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, FillProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
+    js.Dynamic.global.Object.assign(__obj, Text)
+    __obj.asInstanceOf[CaptionShape]
+  }
+}
+

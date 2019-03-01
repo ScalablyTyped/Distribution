@@ -12,3 +12,13 @@ trait Anon_Date extends js.Object {
   var reasons: js.UndefOr[js.Array[Anon_FilteringCount]] = js.undefined
 }
 
+object Anon_Date {
+  @scala.inline
+  def apply(date: java.lang.String = null, reasons: js.Array[Anon_FilteringCount] = null): Anon_Date = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (reasons != null) __obj.updateDynamic("reasons")(reasons)
+    __obj.asInstanceOf[Anon_Date]
+  }
+}
+

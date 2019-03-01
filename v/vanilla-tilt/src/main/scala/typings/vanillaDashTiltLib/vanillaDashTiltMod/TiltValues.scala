@@ -24,3 +24,15 @@ trait TiltValues extends js.Object {
   var tiltY: scala.Double
 }
 
+object TiltValues {
+  @scala.inline
+  def apply(percentageX: scala.Double, percentageY: scala.Double, tiltX: scala.Double, tiltY: scala.Double): TiltValues = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("percentageX")(percentageX)
+    __obj.updateDynamic("percentageY")(percentageY)
+    __obj.updateDynamic("tiltX")(tiltX)
+    __obj.updateDynamic("tiltY")(tiltY)
+    __obj.asInstanceOf[TiltValues]
+  }
+}
+

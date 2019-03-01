@@ -16,3 +16,13 @@ trait AliasProgrammaticPair extends js.Object {
   var ProgrammaticName: java.lang.String
 }
 
+object AliasProgrammaticPair {
+  @scala.inline
+  def apply(Alias: java.lang.String, ProgrammaticName: java.lang.String): AliasProgrammaticPair = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Alias")(Alias)
+    __obj.updateDynamic("ProgrammaticName")(ProgrammaticName)
+    __obj.asInstanceOf[AliasProgrammaticPair]
+  }
+}
+

@@ -49,3 +49,53 @@ trait `Anon_` extends js.Object {
   var `@>`: js.Any
 }
 
+object `Anon_` {
+  @scala.inline
+  def apply(
+    `!..`: js.Tuple2[scala.Double, scala.Double],
+    $between: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[stdLib.Date, stdLib.Date]),
+    $contained: js.Any,
+    $contains: js.Any,
+    $gt: scala.Double | java.lang.String | stdLib.Date,
+    $gte: scala.Double | java.lang.String | stdLib.Date,
+    $iLike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
+    $ilike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
+    $in: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.sequelizeNs.literal,
+    $like: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
+    $lt: scala.Double | java.lang.String | stdLib.Date,
+    $lte: scala.Double | java.lang.String | stdLib.Date,
+    $ne: java.lang.String | scala.Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.sequelize.WhereLogic */ js.Object),
+    $not: scala.Boolean | java.lang.String | scala.Double | sequelizeLib.sequelizeMod.sequelizeNs.AnyWhereOptions,
+    $notBetween: js.Tuple2[scala.Double, scala.Double],
+    $notILike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
+    $notIn: (js.Array[java.lang.String | scala.Double]) | sequelizeLib.sequelizeMod.sequelizeNs.literal,
+    $notLike: java.lang.String | sequelizeLib.sequelizeMod.sequelizeNs.WherePGStatement,
+    $overlap: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, java.lang.String]),
+    `&&`: js.Tuple2[scala.Double, scala.Double],
+    `..`: js.Tuple2[scala.Double, scala.Double],
+    `<@`: js.Any,
+    `@>`: js.Any
+  ): `Anon_` = {
+    val __obj = js.Dynamic.literal(`!..` = `!..`, `&&` = `&&`, `..` = `..`, `<@` = `<@`, `@>` = `@>`)
+    __obj.updateDynamic("$between")($between.asInstanceOf[js.Any])
+    __obj.updateDynamic("$contained")($contained)
+    __obj.updateDynamic("$contains")($contains)
+    __obj.updateDynamic("$gt")($gt.asInstanceOf[js.Any])
+    __obj.updateDynamic("$gte")($gte.asInstanceOf[js.Any])
+    __obj.updateDynamic("$iLike")($iLike.asInstanceOf[js.Any])
+    __obj.updateDynamic("$ilike")($ilike.asInstanceOf[js.Any])
+    __obj.updateDynamic("$in")($in.asInstanceOf[js.Any])
+    __obj.updateDynamic("$like")($like.asInstanceOf[js.Any])
+    __obj.updateDynamic("$lt")($lt.asInstanceOf[js.Any])
+    __obj.updateDynamic("$lte")($lte.asInstanceOf[js.Any])
+    __obj.updateDynamic("$ne")($ne.asInstanceOf[js.Any])
+    __obj.updateDynamic("$not")($not.asInstanceOf[js.Any])
+    __obj.updateDynamic("$notBetween")($notBetween)
+    __obj.updateDynamic("$notILike")($notILike.asInstanceOf[js.Any])
+    __obj.updateDynamic("$notIn")($notIn.asInstanceOf[js.Any])
+    __obj.updateDynamic("$notLike")($notLike.asInstanceOf[js.Any])
+    __obj.updateDynamic("$overlap")($overlap.asInstanceOf[js.Any])
+    __obj.asInstanceOf[`Anon_`]
+  }
+}
+

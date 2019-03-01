@@ -66,3 +66,38 @@ trait Anon_AnimationPolicy extends js.Object {
   val virtualKeyboard: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting
 }
 
+object Anon_AnimationPolicy {
+  @scala.inline
+  def apply(
+    animationPolicy: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    autoclick: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    caretHighlight: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    cursorHighlight: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    focusHighlight: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    highContrast: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    largeCursor: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    screenMagnifier: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    selectToSpeak: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    spokenFeedback: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    stickyKeys: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    switchAccess: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
+    virtualKeyboard: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting
+  ): Anon_AnimationPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animationPolicy")(animationPolicy)
+    __obj.updateDynamic("autoclick")(autoclick)
+    __obj.updateDynamic("caretHighlight")(caretHighlight)
+    __obj.updateDynamic("cursorHighlight")(cursorHighlight)
+    __obj.updateDynamic("focusHighlight")(focusHighlight)
+    __obj.updateDynamic("highContrast")(highContrast)
+    __obj.updateDynamic("largeCursor")(largeCursor)
+    __obj.updateDynamic("screenMagnifier")(screenMagnifier)
+    __obj.updateDynamic("selectToSpeak")(selectToSpeak)
+    __obj.updateDynamic("spokenFeedback")(spokenFeedback)
+    __obj.updateDynamic("stickyKeys")(stickyKeys)
+    __obj.updateDynamic("switchAccess")(switchAccess)
+    __obj.updateDynamic("virtualKeyboard")(virtualKeyboard)
+    __obj.asInstanceOf[Anon_AnimationPolicy]
+  }
+}
+

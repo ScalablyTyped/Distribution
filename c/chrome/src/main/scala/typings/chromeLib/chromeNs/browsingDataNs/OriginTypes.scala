@@ -14,3 +14,18 @@ trait OriginTypes extends js.Object {
   var unprotectedWeb: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OriginTypes {
+  @scala.inline
+  def apply(
+    extension: js.UndefOr[scala.Boolean] = js.undefined,
+    protectedWeb: js.UndefOr[scala.Boolean] = js.undefined,
+    unprotectedWeb: js.UndefOr[scala.Boolean] = js.undefined
+  ): OriginTypes = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(extension)) __obj.updateDynamic("extension")(extension)
+    if (!js.isUndefined(protectedWeb)) __obj.updateDynamic("protectedWeb")(protectedWeb)
+    if (!js.isUndefined(unprotectedWeb)) __obj.updateDynamic("unprotectedWeb")(unprotectedWeb)
+    __obj.asInstanceOf[OriginTypes]
+  }
+}
+

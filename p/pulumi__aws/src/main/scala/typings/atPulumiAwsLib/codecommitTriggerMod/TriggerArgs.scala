@@ -15,3 +15,18 @@ trait TriggerArgs extends js.Object {
   ]
 }
 
+object TriggerArgs {
+  @scala.inline
+  def apply(
+    repositoryName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    triggers: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BranchesCustomData]]
+    ]
+  ): TriggerArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
+    __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TriggerArgs]
+  }
+}
+

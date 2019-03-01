@@ -13,3 +13,22 @@ trait Anon_AttributeName extends js.Object {
   var vertexShaderSource: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AttributeName {
+  @scala.inline
+  def apply(
+    attributeName: java.lang.String,
+    fragmentShaderSource: java.lang.String = null,
+    glslDatatype: java.lang.String = null,
+    renderState: cesiumLib.cesiumMod.CesiumNs.RenderState = null,
+    vertexShaderSource: java.lang.String = null
+  ): Anon_AttributeName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attributeName")(attributeName)
+    if (fragmentShaderSource != null) __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource)
+    if (glslDatatype != null) __obj.updateDynamic("glslDatatype")(glslDatatype)
+    if (renderState != null) __obj.updateDynamic("renderState")(renderState)
+    if (vertexShaderSource != null) __obj.updateDynamic("vertexShaderSource")(vertexShaderSource)
+    __obj.asInstanceOf[Anon_AttributeName]
+  }
+}
+

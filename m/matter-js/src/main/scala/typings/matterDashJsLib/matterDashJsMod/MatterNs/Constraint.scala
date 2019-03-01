@@ -100,3 +100,33 @@ trait Constraint extends js.Object {
   var `type`: java.lang.String
 }
 
+object Constraint {
+  @scala.inline
+  def apply(
+    bodyA: Body,
+    bodyB: Body,
+    damping: scala.Double,
+    id: scala.Double,
+    label: java.lang.String,
+    length: scala.Double,
+    pointA: Vector,
+    pointB: Vector,
+    render: IConstraintRenderDefinition,
+    stiffness: scala.Double,
+    `type`: java.lang.String
+  ): Constraint = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bodyA")(bodyA)
+    __obj.updateDynamic("bodyB")(bodyB)
+    __obj.updateDynamic("damping")(damping)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("pointA")(pointA)
+    __obj.updateDynamic("pointB")(pointB)
+    __obj.updateDynamic("render")(render)
+    __obj.updateDynamic("stiffness")(stiffness)
+    __obj.asInstanceOf[Constraint]
+  }
+}
+

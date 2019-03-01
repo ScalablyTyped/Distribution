@@ -10,3 +10,13 @@ trait PortBinding extends js.Object {
   var HostPort: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PortBinding {
+  @scala.inline
+  def apply(HostIp: java.lang.String = null, HostPort: java.lang.String = null): PortBinding = {
+    val __obj = js.Dynamic.literal()
+    if (HostIp != null) __obj.updateDynamic("HostIp")(HostIp)
+    if (HostPort != null) __obj.updateDynamic("HostPort")(HostPort)
+    __obj.asInstanceOf[PortBinding]
+  }
+}
+

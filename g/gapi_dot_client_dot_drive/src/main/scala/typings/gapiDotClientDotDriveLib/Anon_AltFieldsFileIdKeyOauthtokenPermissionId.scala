@@ -43,3 +43,38 @@ trait Anon_AltFieldsFileIdKeyOauthtokenPermissionId extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltFieldsFileIdKeyOauthtokenPermissionId {
+  @scala.inline
+  def apply(
+    fileId: java.lang.String,
+    permissionId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    removeExpiration: js.UndefOr[scala.Boolean] = js.undefined,
+    supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined,
+    transferOwnership: js.UndefOr[scala.Boolean] = js.undefined,
+    useDomainAdminAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    userIp: java.lang.String = null
+  ): Anon_AltFieldsFileIdKeyOauthtokenPermissionId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileId")(fileId)
+    __obj.updateDynamic("permissionId")(permissionId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (!js.isUndefined(removeExpiration)) __obj.updateDynamic("removeExpiration")(removeExpiration)
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)
+    if (!js.isUndefined(transferOwnership)) __obj.updateDynamic("transferOwnership")(transferOwnership)
+    if (!js.isUndefined(useDomainAdminAccess)) __obj.updateDynamic("useDomainAdminAccess")(useDomainAdminAccess)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltFieldsFileIdKeyOauthtokenPermissionId]
+  }
+}
+

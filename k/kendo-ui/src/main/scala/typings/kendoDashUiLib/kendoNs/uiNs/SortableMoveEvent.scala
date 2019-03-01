@@ -12,3 +12,26 @@ trait SortableMoveEvent extends SortableEvent {
   var target: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
 }
 
+object SortableMoveEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Sortable,
+    draggableEvent: js.Any = null,
+    item: kendoDashUiLib.JQuery = null,
+    list: Sortable = null,
+    target: kendoDashUiLib.JQuery = null
+  ): SortableMoveEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[SortableMoveEvent]
+  }
+}
+

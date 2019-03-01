@@ -23,3 +23,45 @@ trait ojLedGaugeSettableProperties extends dvtBaseGaugeSettableProperties {
   var visualEffects: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
 }
 
+object ojLedGaugeSettableProperties {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String,
+    color: java.lang.String,
+    label: atOracleOraclejetLib.Anon_Style,
+    max: scala.Double,
+    metricLabel: atOracleOraclejetLib.Anon_AutoBillionConverterMillionNone,
+    min: scala.Double,
+    rotation: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`90` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`180` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`270` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0`,
+    size: scala.Double,
+    svgClassName: java.lang.String,
+    svgStyle: js.Object,
+    thresholds: js.Array[atOracleOraclejetLib.ojgaugeMod.ojLedGaugeNs.Threshold],
+    tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext,
+    trackResize: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValue,
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.arrow | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.star | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.circle,
+    visualEffects: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    value: scala.Int | scala.Double = null
+  ): ojLedGaugeSettableProperties = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("borderColor")(borderColor)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("metricLabel")(metricLabel)
+    __obj.updateDynamic("min")(min)
+    __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("svgClassName")(svgClassName)
+    __obj.updateDynamic("svgStyle")(svgStyle)
+    __obj.updateDynamic("thresholds")(thresholds)
+    __obj.updateDynamic("tooltip")(tooltip)
+    __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
+    __obj.updateDynamic("translations")(translations)
+    __obj.updateDynamic("visualEffects")(visualEffects.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ojLedGaugeSettableProperties]
+  }
+}
+

@@ -63,3 +63,30 @@ trait DataPilotFieldGroupInfo extends js.Object {
   var Step: scala.Double
 }
 
+object DataPilotFieldGroupInfo {
+  @scala.inline
+  def apply(
+    End: scala.Double,
+    GroupBy: scala.Double,
+    Groups: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    HasAutoEnd: scala.Boolean,
+    HasAutoStart: scala.Boolean,
+    HasDateValues: scala.Boolean,
+    SourceField: XDataPilotField,
+    Start: scala.Double,
+    Step: scala.Double
+  ): DataPilotFieldGroupInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("End")(End)
+    __obj.updateDynamic("GroupBy")(GroupBy)
+    __obj.updateDynamic("Groups")(Groups)
+    __obj.updateDynamic("HasAutoEnd")(HasAutoEnd)
+    __obj.updateDynamic("HasAutoStart")(HasAutoStart)
+    __obj.updateDynamic("HasDateValues")(HasDateValues)
+    __obj.updateDynamic("SourceField")(SourceField)
+    __obj.updateDynamic("Start")(Start)
+    __obj.updateDynamic("Step")(Step)
+    __obj.asInstanceOf[DataPilotFieldGroupInfo]
+  }
+}
+

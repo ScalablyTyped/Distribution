@@ -52,3 +52,40 @@ trait GetVpcEndpointResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetVpcEndpointResult {
+  @scala.inline
+  def apply(
+    cidrBlocks: js.Array[java.lang.String],
+    dnsEntries: js.Array[atPulumiAwsLib.Anon_DnsName],
+    id: java.lang.String,
+    networkInterfaceIds: js.Array[java.lang.String],
+    policy: java.lang.String,
+    prefixListId: java.lang.String,
+    privateDnsEnabled: scala.Boolean,
+    routeTableIds: js.Array[java.lang.String],
+    securityGroupIds: js.Array[java.lang.String],
+    serviceName: java.lang.String,
+    state: java.lang.String,
+    subnetIds: js.Array[java.lang.String],
+    vpcEndpointType: java.lang.String,
+    vpcId: java.lang.String
+  ): GetVpcEndpointResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cidrBlocks")(cidrBlocks)
+    __obj.updateDynamic("dnsEntries")(dnsEntries)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("networkInterfaceIds")(networkInterfaceIds)
+    __obj.updateDynamic("policy")(policy)
+    __obj.updateDynamic("prefixListId")(prefixListId)
+    __obj.updateDynamic("privateDnsEnabled")(privateDnsEnabled)
+    __obj.updateDynamic("routeTableIds")(routeTableIds)
+    __obj.updateDynamic("securityGroupIds")(securityGroupIds)
+    __obj.updateDynamic("serviceName")(serviceName)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("subnetIds")(subnetIds)
+    __obj.updateDynamic("vpcEndpointType")(vpcEndpointType)
+    __obj.updateDynamic("vpcId")(vpcId)
+    __obj.asInstanceOf[GetVpcEndpointResult]
+  }
+}
+

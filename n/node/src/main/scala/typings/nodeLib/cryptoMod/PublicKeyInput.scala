@@ -11,3 +11,18 @@ trait PublicKeyInput extends js.Object {
   var `type`: js.UndefOr[nodeLib.nodeLibStrings.pkcs1 | nodeLib.nodeLibStrings.spki] = js.undefined
 }
 
+object PublicKeyInput {
+  @scala.inline
+  def apply(
+    key: java.lang.String | nodeLib.Buffer,
+    format: KeyFormat = null,
+    `type`: nodeLib.nodeLibStrings.pkcs1 | nodeLib.nodeLibStrings.spki = null
+  ): PublicKeyInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PublicKeyInput]
+  }
+}
+

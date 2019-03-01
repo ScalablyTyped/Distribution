@@ -17,3 +17,32 @@ trait ProtocolHandler
   extends XDispatchProvider
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XInitialization
 
+object ProtocolHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryDispatch: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      java.lang.String, 
+      scala.Double, 
+      XDispatch
+    ],
+    queryDispatches: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DispatchDescriptor], 
+      activexDashInteropLib.SafeArray[XDispatch]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): ProtocolHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("queryDispatch")(queryDispatch)
+    __obj.updateDynamic("queryDispatches")(queryDispatches)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[ProtocolHandler]
+  }
+}
+

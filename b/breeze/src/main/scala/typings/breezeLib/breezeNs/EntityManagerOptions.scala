@@ -15,3 +15,26 @@ trait EntityManagerOptions extends js.Object {
   var validationOptions: js.UndefOr[ValidationOptions] = js.undefined
 }
 
+object EntityManagerOptions {
+  @scala.inline
+  def apply(
+    dataService: DataService = null,
+    keyGeneratorCtor: js.Function = null,
+    metadataStore: MetadataStore = null,
+    queryOptions: QueryOptions = null,
+    saveOptions: SaveOptions = null,
+    serviceName: java.lang.String = null,
+    validationOptions: ValidationOptions = null
+  ): EntityManagerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (dataService != null) __obj.updateDynamic("dataService")(dataService)
+    if (keyGeneratorCtor != null) __obj.updateDynamic("keyGeneratorCtor")(keyGeneratorCtor)
+    if (metadataStore != null) __obj.updateDynamic("metadataStore")(metadataStore)
+    if (queryOptions != null) __obj.updateDynamic("queryOptions")(queryOptions)
+    if (saveOptions != null) __obj.updateDynamic("saveOptions")(saveOptions)
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    if (validationOptions != null) __obj.updateDynamic("validationOptions")(validationOptions)
+    __obj.asInstanceOf[EntityManagerOptions]
+  }
+}
+

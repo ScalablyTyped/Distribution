@@ -18,3 +18,22 @@ trait VideoAbuseReportReasonListResponse extends js.Object {
   var visitorId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VideoAbuseReportReasonListResponse {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    eventId: java.lang.String = null,
+    items: js.Array[VideoAbuseReportReason] = null,
+    kind: java.lang.String = null,
+    visitorId: java.lang.String = null
+  ): VideoAbuseReportReasonListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId)
+    __obj.asInstanceOf[VideoAbuseReportReasonListResponse]
+  }
+}
+

@@ -20,3 +20,13 @@ trait ISpinnerService extends js.Object {
   def stop(key: java.lang.String): scala.Unit
 }
 
+object ISpinnerService {
+  @scala.inline
+  def apply(spin: js.Function1[java.lang.String, scala.Unit], stop: js.Function1[java.lang.String, scala.Unit]): ISpinnerService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("spin")(spin)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[ISpinnerService]
+  }
+}
+

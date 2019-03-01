@@ -15,3 +15,12 @@ trait MountedDataDisk extends js.Object {
   var dataDisk: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MountedDataDisk {
+  @scala.inline
+  def apply(dataDisk: java.lang.String = null): MountedDataDisk = {
+    val __obj = js.Dynamic.literal()
+    if (dataDisk != null) __obj.updateDynamic("dataDisk")(dataDisk)
+    __obj.asInstanceOf[MountedDataDisk]
+  }
+}
+

@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object workboxDashWebpackDashPluginLibStrings {
   @js.native
-  sealed trait cacheFirst extends js.Object
+  sealed trait cacheFirst
+    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
   
   @js.native
-  sealed trait cacheOnly extends js.Object
+  sealed trait cacheOnly
+    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
   
   @js.native
   sealed trait cdn extends js.Object
@@ -22,13 +24,16 @@ object workboxDashWebpackDashPluginLibStrings {
   sealed trait local extends js.Object
   
   @js.native
-  sealed trait networkFirst extends js.Object
+  sealed trait networkFirst
+    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
   
   @js.native
-  sealed trait networkOnly extends js.Object
+  sealed trait networkOnly
+    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
   
   @js.native
-  sealed trait staleWhileRevalidate extends js.Object
+  sealed trait staleWhileRevalidate
+    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
   
   @scala.inline
   def cacheFirst: cacheFirst = "cacheFirst".asInstanceOf[cacheFirst]

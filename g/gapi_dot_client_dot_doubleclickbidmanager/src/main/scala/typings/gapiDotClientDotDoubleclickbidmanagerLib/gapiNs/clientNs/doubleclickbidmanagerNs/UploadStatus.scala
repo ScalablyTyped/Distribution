@@ -12,3 +12,13 @@ trait UploadStatus extends js.Object {
   var rowStatus: js.UndefOr[js.Array[RowStatus]] = js.undefined
 }
 
+object UploadStatus {
+  @scala.inline
+  def apply(errors: js.Array[java.lang.String] = null, rowStatus: js.Array[RowStatus] = null): UploadStatus = {
+    val __obj = js.Dynamic.literal()
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (rowStatus != null) __obj.updateDynamic("rowStatus")(rowStatus)
+    __obj.asInstanceOf[UploadStatus]
+  }
+}
+

@@ -12,3 +12,12 @@ trait DataUriOptions extends js.Object {
   var paddingRequired: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataUriOptions {
+  @scala.inline
+  def apply(paddingRequired: js.UndefOr[scala.Boolean] = js.undefined): DataUriOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(paddingRequired)) __obj.updateDynamic("paddingRequired")(paddingRequired)
+    __obj.asInstanceOf[DataUriOptions]
+  }
+}
+

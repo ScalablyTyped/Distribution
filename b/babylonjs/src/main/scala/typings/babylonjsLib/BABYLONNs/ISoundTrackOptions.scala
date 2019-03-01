@@ -19,3 +19,13 @@ trait ISoundTrackOptions extends js.Object {
   var volume: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ISoundTrackOptions {
+  @scala.inline
+  def apply(mainTrack: js.UndefOr[scala.Boolean] = js.undefined, volume: scala.Int | scala.Double = null): ISoundTrackOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(mainTrack)) __obj.updateDynamic("mainTrack")(mainTrack)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISoundTrackOptions]
+  }
+}
+

@@ -30,3 +30,14 @@ trait Symbol extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Symbol {
+  @scala.inline
+  def apply(boundingBox: BoundingPoly = null, property: TextProperty = null, text: java.lang.String = null): Symbol = {
+    val __obj = js.Dynamic.literal()
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox)
+    if (property != null) __obj.updateDynamic("property")(property)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Symbol]
+  }
+}
+

@@ -93,3 +93,28 @@ trait UtilColor extends js.Object {
   def scale(): ColorScale
 }
 
+object UtilColor {
+  @scala.inline
+  def apply(
+    HSVtoRGB: js.Function3[scala.Double, scala.Double, scala.Double, js.Any],
+    RGBtoHSV: js.Function3[scala.Double, scala.Double, scala.Double, js.Any],
+    darken: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    format: js.Function2[js.Any, java.lang.String, java.lang.String],
+    lighten: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    map: js.Function2[js.Array[java.lang.String], scala.Double, js.Array[java.lang.String]],
+    rgb: js.Function1[java.lang.String, js.Any],
+    scale: js.Function0[ColorScale]
+  ): UtilColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("HSVtoRGB")(HSVtoRGB)
+    __obj.updateDynamic("RGBtoHSV")(RGBtoHSV)
+    __obj.updateDynamic("darken")(darken)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("lighten")(lighten)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("rgb")(rgb)
+    __obj.updateDynamic("scale")(scale)
+    __obj.asInstanceOf[UtilColor]
+  }
+}
+

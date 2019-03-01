@@ -19,3 +19,34 @@ trait ModelAnimation extends js.Object {
   var update: Event
 }
 
+object ModelAnimation {
+  @scala.inline
+  def apply(
+    delay: scala.Double,
+    loop: ModelAnimationLoop,
+    name: java.lang.String,
+    removeOnStop: scala.Boolean,
+    reverse: scala.Boolean,
+    speedup: scala.Double,
+    start: Event,
+    startTime: JulianDate,
+    stop: Event,
+    stopTime: JulianDate,
+    update: Event
+  ): ModelAnimation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delay")(delay)
+    __obj.updateDynamic("loop")(loop)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("removeOnStop")(removeOnStop)
+    __obj.updateDynamic("reverse")(reverse)
+    __obj.updateDynamic("speedup")(speedup)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("stop")(stop)
+    __obj.updateDynamic("stopTime")(stopTime)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ModelAnimation]
+  }
+}
+

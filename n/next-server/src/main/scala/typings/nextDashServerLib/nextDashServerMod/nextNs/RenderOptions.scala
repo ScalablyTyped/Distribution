@@ -13,3 +13,22 @@ trait RenderOptions extends js.Object {
   var staticMarkup: scala.Boolean
 }
 
+object RenderOptions {
+  @scala.inline
+  def apply(
+    buildId: java.lang.String,
+    distDir: java.lang.String,
+    generateETags: scala.Boolean,
+    staticMarkup: scala.Boolean,
+    runtimeConfig: stdLib.Record[_, _] = null
+  ): RenderOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildId")(buildId)
+    __obj.updateDynamic("distDir")(distDir)
+    __obj.updateDynamic("generateETags")(generateETags)
+    __obj.updateDynamic("staticMarkup")(staticMarkup)
+    if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig)
+    __obj.asInstanceOf[RenderOptions]
+  }
+}
+

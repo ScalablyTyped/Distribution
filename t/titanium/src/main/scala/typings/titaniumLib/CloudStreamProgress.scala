@@ -19,3 +19,13 @@ trait CloudStreamProgress extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CloudStreamProgress {
+  @scala.inline
+  def apply(progress: scala.Int | scala.Double = null, url: java.lang.String = null): CloudStreamProgress = {
+    val __obj = js.Dynamic.literal()
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[CloudStreamProgress]
+  }
+}
+

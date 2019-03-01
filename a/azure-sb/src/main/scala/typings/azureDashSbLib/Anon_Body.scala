@@ -12,3 +12,20 @@ trait Anon_Body extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Body {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    expiry: java.lang.String = null,
+    headers: js.Any = null,
+    tags: js.Array[java.lang.String] = null
+  ): Anon_Body = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    if (expiry != null) __obj.updateDynamic("expiry")(expiry)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[Anon_Body]
+  }
+}
+

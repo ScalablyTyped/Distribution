@@ -12,3 +12,13 @@ trait ModifyMessageRequest extends js.Object {
   var removeLabelIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ModifyMessageRequest {
+  @scala.inline
+  def apply(addLabelIds: js.Array[java.lang.String] = null, removeLabelIds: js.Array[java.lang.String] = null): ModifyMessageRequest = {
+    val __obj = js.Dynamic.literal()
+    if (addLabelIds != null) __obj.updateDynamic("addLabelIds")(addLabelIds)
+    if (removeLabelIds != null) __obj.updateDynamic("removeLabelIds")(removeLabelIds)
+    __obj.asInstanceOf[ModifyMessageRequest]
+  }
+}
+

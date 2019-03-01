@@ -35,3 +35,24 @@ trait WxConfig extends js.Object {
   var timestamp: scala.Double
 }
 
+object WxConfig {
+  @scala.inline
+  def apply(
+    appId: java.lang.String,
+    jsApiList: js.Array[java.lang.String],
+    nonceStr: java.lang.String,
+    signature: java.lang.String,
+    timestamp: scala.Double,
+    debug: js.UndefOr[scala.Boolean] = js.undefined
+  ): WxConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appId")(appId)
+    __obj.updateDynamic("jsApiList")(jsApiList)
+    __obj.updateDynamic("nonceStr")(nonceStr)
+    __obj.updateDynamic("signature")(signature)
+    __obj.updateDynamic("timestamp")(timestamp)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    __obj.asInstanceOf[WxConfig]
+  }
+}
+

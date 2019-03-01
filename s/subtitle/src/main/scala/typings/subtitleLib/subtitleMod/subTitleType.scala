@@ -12,3 +12,20 @@ trait subTitleType extends js.Object {
   var text: java.lang.String
 }
 
+object subTitleType {
+  @scala.inline
+  def apply(
+    end: scala.Double | java.lang.String,
+    start: scala.Double | java.lang.String,
+    text: java.lang.String,
+    setting: java.lang.String = null
+  ): subTitleType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.updateDynamic("text")(text)
+    if (setting != null) __obj.updateDynamic("setting")(setting)
+    __obj.asInstanceOf[subTitleType]
+  }
+}
+

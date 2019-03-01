@@ -139,3 +139,118 @@ import scala.scalajs.js.annotation._
   var useForeground: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ButtonProps {
+  @scala.inline
+  def apply(
+    TouchableComponent: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    ViewComponent: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = null,
+    accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
+    accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityHint: java.lang.String = null,
+    accessibilityIgnoresInvertColors: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityLabel: java.lang.String = null,
+    accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
+    accessibilityRole: reactDashNativeLib.reactDashNativeMod.AccessibilityRole = null,
+    accessibilityStates: js.Array[reactDashNativeLib.reactDashNativeMod.AccessibilityState] = null,
+    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessible: js.UndefOr[scala.Boolean] = js.undefined,
+    activeOpacity: scala.Int | scala.Double = null,
+    background: reactDashNativeLib.BackgroundPropType = null,
+    buttonStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    delayLongPress: scala.Int | scala.Double = null,
+    delayPressIn: scala.Int | scala.Double = null,
+    delayPressOut: scala.Int | scala.Double = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    disabledTitleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    hitSlop: reactDashNativeLib.reactDashNativeMod.Insets = null,
+    icon: IconNode = null,
+    iconContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    iconRight: js.UndefOr[scala.Boolean] = js.undefined,
+    importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
+    linearGradientProps: js.Object = null,
+    loading: js.UndefOr[scala.Boolean] = js.undefined,
+    loadingProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any = null,
+    loadingStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    onAccessibilityTap: js.Function0[scala.Unit] = null,
+    onLayout: js.Function1[/* event */ reactDashNativeLib.reactDashNativeMod.LayoutChangeEvent, scala.Unit] = null,
+    onLongPress: js.Function1[
+      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
+      scala.Unit
+    ] = null,
+    onMagicTap: js.Function0[scala.Unit] = null,
+    onPress: js.Function1[
+      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
+      scala.Unit
+    ] = null,
+    onPressIn: js.Function1[
+      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
+      scala.Unit
+    ] = null,
+    onPressOut: js.Function1[
+      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
+      scala.Unit
+    ] = null,
+    pressRetentionOffset: reactDashNativeLib.reactDashNativeMod.Insets = null,
+    raised: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    testID: java.lang.String = null,
+    title: java.lang.String = null,
+    titleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    `type`: reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.solid | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.clear | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.outline = null,
+    useForeground: js.UndefOr[scala.Boolean] = js.undefined
+  ): ButtonProps = {
+    val __obj = js.Dynamic.literal()
+    if (TouchableComponent != null) __obj.updateDynamic("TouchableComponent")(TouchableComponent)
+    if (ViewComponent != null) __obj.updateDynamic("ViewComponent")(ViewComponent)
+    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
+    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint)
+    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors)
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
+    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
+    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole)
+    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates)
+    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
+    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
+    if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
+    if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle.asInstanceOf[js.Any])
+    if (disabledTitleStyle != null) __obj.updateDynamic("disabledTitleStyle")(disabledTitleStyle.asInstanceOf[js.Any])
+    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconContainerStyle != null) __obj.updateDynamic("iconContainerStyle")(iconContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(iconRight)) __obj.updateDynamic("iconRight")(iconRight)
+    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (linearGradientProps != null) __obj.updateDynamic("linearGradientProps")(linearGradientProps)
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
+    if (loadingProps != null) __obj.updateDynamic("loadingProps")(loadingProps)
+    if (loadingStyle != null) __obj.updateDynamic("loadingStyle")(loadingStyle.asInstanceOf[js.Any])
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
+    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(onPressIn)
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(onPressOut)
+    if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset)
+    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps)
+    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(useForeground)) __obj.updateDynamic("useForeground")(useForeground)
+    __obj.asInstanceOf[ButtonProps]
+  }
+}
+

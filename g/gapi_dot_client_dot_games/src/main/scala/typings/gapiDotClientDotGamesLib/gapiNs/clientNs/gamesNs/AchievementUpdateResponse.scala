@@ -26,3 +26,24 @@ trait AchievementUpdateResponse extends js.Object {
   var updateOccurred: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AchievementUpdateResponse {
+  @scala.inline
+  def apply(
+    achievementId: java.lang.String = null,
+    currentState: java.lang.String = null,
+    currentSteps: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    newlyUnlocked: js.UndefOr[scala.Boolean] = js.undefined,
+    updateOccurred: js.UndefOr[scala.Boolean] = js.undefined
+  ): AchievementUpdateResponse = {
+    val __obj = js.Dynamic.literal()
+    if (achievementId != null) __obj.updateDynamic("achievementId")(achievementId)
+    if (currentState != null) __obj.updateDynamic("currentState")(currentState)
+    if (currentSteps != null) __obj.updateDynamic("currentSteps")(currentSteps.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked)
+    if (!js.isUndefined(updateOccurred)) __obj.updateDynamic("updateOccurred")(updateOccurred)
+    __obj.asInstanceOf[AchievementUpdateResponse]
+  }
+}
+

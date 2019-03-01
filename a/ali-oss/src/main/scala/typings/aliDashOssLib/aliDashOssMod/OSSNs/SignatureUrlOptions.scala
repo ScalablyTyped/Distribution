@@ -18,3 +18,24 @@ trait SignatureUrlOptions extends js.Object {
   var response: js.UndefOr[ResponseHeaderType] = js.undefined
 }
 
+object SignatureUrlOptions {
+  @scala.inline
+  def apply(
+    `Content-Type`: java.lang.String = null,
+    callback: ObjectCallback = null,
+    expires: scala.Int | scala.Double = null,
+    method: HTTPMethods = null,
+    process: java.lang.String = null,
+    response: ResponseHeaderType = null
+  ): SignatureUrlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (`Content-Type` != null) __obj.updateDynamic("Content-Type")(`Content-Type`)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (process != null) __obj.updateDynamic("process")(process)
+    if (response != null) __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[SignatureUrlOptions]
+  }
+}
+

@@ -30,3 +30,47 @@ trait ImagesResource extends js.Object {
   def setLabels(request: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserResource): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object ImagesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsImage, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    deprecate: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsImage, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsImageKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Image]
+    ],
+    getFromFamily: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFamily, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Image]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsForceCreate, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ImageList]
+    ],
+    setLabels: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserResource, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): ImagesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("deprecate")(deprecate)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getFromFamily")(getFromFamily)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("setLabels")(setLabels)
+    __obj.asInstanceOf[ImagesResource]
+  }
+}
+

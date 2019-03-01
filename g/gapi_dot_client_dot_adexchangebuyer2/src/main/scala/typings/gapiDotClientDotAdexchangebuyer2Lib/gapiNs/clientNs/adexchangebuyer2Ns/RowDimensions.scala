@@ -10,3 +10,12 @@ trait RowDimensions extends js.Object {
   var timeInterval: js.UndefOr[TimeInterval] = js.undefined
 }
 
+object RowDimensions {
+  @scala.inline
+  def apply(timeInterval: TimeInterval = null): RowDimensions = {
+    val __obj = js.Dynamic.literal()
+    if (timeInterval != null) __obj.updateDynamic("timeInterval")(timeInterval)
+    __obj.asInstanceOf[RowDimensions]
+  }
+}
+

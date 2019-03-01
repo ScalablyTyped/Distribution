@@ -16,7 +16,4 @@ package object WebMidiNs {
     * ID.
     */
   type MIDIOutputMap = stdLib.Map[java.lang.String, MIDIOutput]
-  type MIDIPortConnectionState = webmidiLib.webmidiLibStrings.open | webmidiLib.webmidiLibStrings.closed | webmidiLib.webmidiLibStrings.pending
-  type MIDIPortDeviceState = webmidiLib.webmidiLibStrings.disconnected | webmidiLib.webmidiLibStrings.connected
-  type MIDIPortType = webmidiLib.webmidiLibStrings.input | webmidiLib.webmidiLibStrings.output
 }

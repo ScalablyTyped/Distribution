@@ -17,3 +17,30 @@ trait SchedulerMessagesRecurrenceEditor extends js.Object {
   var yearly: js.UndefOr[SchedulerMessagesRecurrenceEditorYearly] = js.undefined
 }
 
+object SchedulerMessagesRecurrenceEditor {
+  @scala.inline
+  def apply(
+    daily: SchedulerMessagesRecurrenceEditorDaily = null,
+    end: SchedulerMessagesRecurrenceEditorEnd = null,
+    frequencies: SchedulerMessagesRecurrenceEditorFrequencies = null,
+    monthly: SchedulerMessagesRecurrenceEditorMonthly = null,
+    offsetPositions: SchedulerMessagesRecurrenceEditorOffsetPositions = null,
+    recurrenceEditorTitle: java.lang.String = null,
+    weekdays: SchedulerMessagesRecurrenceEditorWeekdays = null,
+    weekly: SchedulerMessagesRecurrenceEditorWeekly = null,
+    yearly: SchedulerMessagesRecurrenceEditorYearly = null
+  ): SchedulerMessagesRecurrenceEditor = {
+    val __obj = js.Dynamic.literal()
+    if (daily != null) __obj.updateDynamic("daily")(daily)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (frequencies != null) __obj.updateDynamic("frequencies")(frequencies)
+    if (monthly != null) __obj.updateDynamic("monthly")(monthly)
+    if (offsetPositions != null) __obj.updateDynamic("offsetPositions")(offsetPositions)
+    if (recurrenceEditorTitle != null) __obj.updateDynamic("recurrenceEditorTitle")(recurrenceEditorTitle)
+    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays)
+    if (weekly != null) __obj.updateDynamic("weekly")(weekly)
+    if (yearly != null) __obj.updateDynamic("yearly")(yearly)
+    __obj.asInstanceOf[SchedulerMessagesRecurrenceEditor]
+  }
+}
+

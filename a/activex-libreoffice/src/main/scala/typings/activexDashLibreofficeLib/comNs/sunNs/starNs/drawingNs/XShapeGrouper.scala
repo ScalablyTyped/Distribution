@@ -26,3 +26,22 @@ trait XShapeGrouper
   def ungroup(aGroup: XShapeGroup): scala.Unit
 }
 
+object XShapeGrouper {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    group: js.Function1[XShapes, XShapeGroup],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    ungroup: js.Function1[XShapeGroup, scala.Unit]
+  ): XShapeGrouper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("ungroup")(ungroup)
+    __obj.asInstanceOf[XShapeGrouper]
+  }
+}
+

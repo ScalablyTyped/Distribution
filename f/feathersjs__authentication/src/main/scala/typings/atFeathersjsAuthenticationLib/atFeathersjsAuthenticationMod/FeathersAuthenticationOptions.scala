@@ -16,3 +16,28 @@ trait FeathersAuthenticationOptions extends js.Object {
   var session: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FeathersAuthenticationOptions {
+  @scala.inline
+  def apply(
+    cookie: atFeathersjsAuthenticationLib.Anon_Enabled = null,
+    entity: java.lang.String = null,
+    header: java.lang.String = null,
+    jwt: atFeathersjsAuthenticationLib.Anon_Algorithm = null,
+    passReqToCallback: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    service: java.lang.String = null,
+    session: js.UndefOr[scala.Boolean] = js.undefined
+  ): FeathersAuthenticationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
+    if (entity != null) __obj.updateDynamic("entity")(entity)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (jwt != null) __obj.updateDynamic("jwt")(jwt)
+    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session)
+    __obj.asInstanceOf[FeathersAuthenticationOptions]
+  }
+}
+

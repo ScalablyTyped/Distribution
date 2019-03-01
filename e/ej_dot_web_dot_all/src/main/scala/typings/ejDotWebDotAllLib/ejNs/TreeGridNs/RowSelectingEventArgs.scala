@@ -29,3 +29,26 @@ trait RowSelectingEventArgs extends js.Object {
   var targetRow: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowSelectingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    previousData: js.Any = null,
+    previousIndex: java.lang.String = null,
+    previousTreeGridRow: js.Any = null,
+    recordIndex: java.lang.String = null,
+    targetRow: js.Any = null
+  ): RowSelectingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (previousData != null) __obj.updateDynamic("previousData")(previousData)
+    if (previousIndex != null) __obj.updateDynamic("previousIndex")(previousIndex)
+    if (previousTreeGridRow != null) __obj.updateDynamic("previousTreeGridRow")(previousTreeGridRow)
+    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex)
+    if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow)
+    __obj.asInstanceOf[RowSelectingEventArgs]
+  }
+}
+

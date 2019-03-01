@@ -10,3 +10,12 @@ trait SslCertsCreateEphemeralRequest extends js.Object {
   var public_key: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SslCertsCreateEphemeralRequest {
+  @scala.inline
+  def apply(public_key: java.lang.String = null): SslCertsCreateEphemeralRequest = {
+    val __obj = js.Dynamic.literal()
+    if (public_key != null) __obj.updateDynamic("public_key")(public_key)
+    __obj.asInstanceOf[SslCertsCreateEphemeralRequest]
+  }
+}
+

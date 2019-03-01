@@ -24,3 +24,20 @@ trait FrequencyRange extends js.Object {
   var stopHz: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FrequencyRange {
+  @scala.inline
+  def apply(
+    channelId: java.lang.String = null,
+    maxPowerDBm: scala.Int | scala.Double = null,
+    startHz: scala.Int | scala.Double = null,
+    stopHz: scala.Int | scala.Double = null
+  ): FrequencyRange = {
+    val __obj = js.Dynamic.literal()
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (maxPowerDBm != null) __obj.updateDynamic("maxPowerDBm")(maxPowerDBm.asInstanceOf[js.Any])
+    if (startHz != null) __obj.updateDynamic("startHz")(startHz.asInstanceOf[js.Any])
+    if (stopHz != null) __obj.updateDynamic("stopHz")(stopHz.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FrequencyRange]
+  }
+}
+

@@ -92,3 +92,68 @@ trait ActionCompleteEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActionCompleteEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    columnName: java.lang.String = null,
+    columnSortDirection: java.lang.String = null,
+    columnType: java.lang.String = null,
+    currentFilterObject: js.Any = null,
+    currentFilteringColumn: java.lang.String = null,
+    currentPage: scala.Int | scala.Double = null,
+    data: js.Any = null,
+    dataSource: js.Any = null,
+    endIndex: scala.Int | scala.Double = null,
+    filterCollection: js.Any = null,
+    filtermodel: js.Any = null,
+    foreignKeyData: js.Any = null,
+    isCustomFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    originalEventType: java.lang.String = null,
+    previousPage: scala.Int | scala.Double = null,
+    primaryKey: java.lang.String = null,
+    primaryKeyValue: java.lang.String = null,
+    requestType: java.lang.String = null,
+    row: js.Any = null,
+    rowData: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null,
+    selectedRow: scala.Int | scala.Double = null,
+    startIndex: scala.Int | scala.Double = null,
+    target: js.Any = null,
+    tr: js.Any = null,
+    `type`: java.lang.String = null
+  ): ActionCompleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (columnSortDirection != null) __obj.updateDynamic("columnSortDirection")(columnSortDirection)
+    if (columnType != null) __obj.updateDynamic("columnType")(columnType)
+    if (currentFilterObject != null) __obj.updateDynamic("currentFilterObject")(currentFilterObject)
+    if (currentFilteringColumn != null) __obj.updateDynamic("currentFilteringColumn")(currentFilteringColumn)
+    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
+    if (filterCollection != null) __obj.updateDynamic("filterCollection")(filterCollection)
+    if (filtermodel != null) __obj.updateDynamic("filtermodel")(filtermodel)
+    if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData)
+    if (!js.isUndefined(isCustomFilter)) __obj.updateDynamic("isCustomFilter")(isCustomFilter)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (originalEventType != null) __obj.updateDynamic("originalEventType")(originalEventType)
+    if (previousPage != null) __obj.updateDynamic("previousPage")(previousPage.asInstanceOf[js.Any])
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (primaryKeyValue != null) __obj.updateDynamic("primaryKeyValue")(primaryKeyValue)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (selectedRow != null) __obj.updateDynamic("selectedRow")(selectedRow.asInstanceOf[js.Any])
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (tr != null) __obj.updateDynamic("tr")(tr)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ActionCompleteEventArgs]
+  }
+}
+

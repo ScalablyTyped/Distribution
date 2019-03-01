@@ -15,3 +15,13 @@ trait JobReference extends js.Object {
   var projectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JobReference {
+  @scala.inline
+  def apply(jobId: java.lang.String = null, projectId: java.lang.String = null): JobReference = {
+    val __obj = js.Dynamic.literal()
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    __obj.asInstanceOf[JobReference]
+  }
+}
+

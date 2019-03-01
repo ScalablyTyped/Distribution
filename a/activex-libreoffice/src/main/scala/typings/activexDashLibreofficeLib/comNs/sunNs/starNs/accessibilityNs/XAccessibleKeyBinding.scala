@@ -39,3 +39,27 @@ trait XAccessibleKeyBinding
   def getAccessibleKeyBindingCount(): scala.Double
 }
 
+object XAccessibleKeyBinding {
+  @scala.inline
+  def apply(
+    AccessibleKeyBindingCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getAccessibleKeyBinding: js.Function1[
+      scala.Double, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyStroke]
+    ],
+    getAccessibleKeyBindingCount: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessibleKeyBinding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessibleKeyBindingCount")(AccessibleKeyBindingCount)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAccessibleKeyBinding")(getAccessibleKeyBinding)
+    __obj.updateDynamic("getAccessibleKeyBindingCount")(getAccessibleKeyBindingCount)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAccessibleKeyBinding]
+  }
+}
+

@@ -89,3 +89,44 @@ trait ParsedMail extends js.Object {
   var to: AddressObject
 }
 
+object ParsedMail {
+  @scala.inline
+  def apply(
+    from: AddressObject,
+    headers: Headers,
+    html: java.lang.String | scala.Boolean,
+    subject: java.lang.String,
+    text: java.lang.String,
+    textAsHtml: java.lang.String,
+    to: AddressObject,
+    attachments: js.Array[Attachment] = null,
+    bcc: AddressObject = null,
+    cc: AddressObject = null,
+    date: stdLib.Date = null,
+    inReplyTo: java.lang.String = null,
+    messageId: java.lang.String = null,
+    priority: mailparserLib.mailparserLibStrings.normal | mailparserLib.mailparserLibStrings.low | mailparserLib.mailparserLibStrings.high = null,
+    references: js.Array[java.lang.String] = null,
+    replyTo: AddressObject = null
+  ): ParsedMail = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    __obj.updateDynamic("subject")(subject)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("textAsHtml")(textAsHtml)
+    __obj.updateDynamic("to")(to)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
+    if (cc != null) __obj.updateDynamic("cc")(cc)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references)
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo)
+    __obj.asInstanceOf[ParsedMail]
+  }
+}
+

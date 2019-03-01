@@ -12,3 +12,12 @@ trait _Impl extends js.Object {
   var validate: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(validate: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

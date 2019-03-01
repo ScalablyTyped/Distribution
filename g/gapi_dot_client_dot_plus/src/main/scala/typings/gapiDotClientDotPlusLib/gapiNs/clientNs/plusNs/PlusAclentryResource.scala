@@ -22,3 +22,14 @@ trait PlusAclentryResource extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PlusAclentryResource {
+  @scala.inline
+  def apply(displayName: java.lang.String = null, id: java.lang.String = null, `type`: java.lang.String = null): PlusAclentryResource = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PlusAclentryResource]
+  }
+}
+

@@ -29,3 +29,22 @@ trait LanguageMapProtocol extends js.Object {
   ): LanguageDefinition
 }
 
+object LanguageMapProtocol {
+  @scala.inline
+  def apply(
+    extend: js.Function2[java.lang.String, LanguageDefinition, LanguageDefinition],
+    insertBefore: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      LanguageDefinition, 
+      LanguageDefinition, 
+      LanguageDefinition
+    ]
+  ): LanguageMapProtocol = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extend")(extend)
+    __obj.updateDynamic("insertBefore")(insertBefore)
+    __obj.asInstanceOf[LanguageMapProtocol]
+  }
+}
+

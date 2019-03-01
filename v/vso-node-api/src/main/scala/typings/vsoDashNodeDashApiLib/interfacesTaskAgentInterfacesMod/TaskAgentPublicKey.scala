@@ -16,3 +16,13 @@ trait TaskAgentPublicKey extends js.Object {
   var modulus: js.Array[scala.Double]
 }
 
+object TaskAgentPublicKey {
+  @scala.inline
+  def apply(exponent: js.Array[scala.Double], modulus: js.Array[scala.Double]): TaskAgentPublicKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exponent")(exponent)
+    __obj.updateDynamic("modulus")(modulus)
+    __obj.asInstanceOf[TaskAgentPublicKey]
+  }
+}
+

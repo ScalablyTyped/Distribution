@@ -15,3 +15,13 @@ trait UndoCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object UndoCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): UndoCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[UndoCommand]
+  }
+}
+

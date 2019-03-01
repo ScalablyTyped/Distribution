@@ -18,3 +18,28 @@ trait WorkSheet extends Sheet {
   var `!rows`: js.UndefOr[js.Array[RowInfo]] = js.undefined
 }
 
+object WorkSheet {
+  @scala.inline
+  def apply(
+    `!autofilter`: AutoFilterInfo = null,
+    `!cols`: js.Array[ColInfo] = null,
+    `!margins`: MarginInfo = null,
+    `!merges`: js.Array[Range] = null,
+    `!protect`: ProtectInfo = null,
+    `!ref`: java.lang.String = null,
+    `!rows`: js.Array[RowInfo] = null,
+    `!type`: SheetType = null
+  ): WorkSheet = {
+    val __obj = js.Dynamic.literal()
+    if (`!autofilter` != null) __obj.updateDynamic("!autofilter")(`!autofilter`)
+    if (`!cols` != null) __obj.updateDynamic("!cols")(`!cols`)
+    if (`!margins` != null) __obj.updateDynamic("!margins")(`!margins`)
+    if (`!merges` != null) __obj.updateDynamic("!merges")(`!merges`)
+    if (`!protect` != null) __obj.updateDynamic("!protect")(`!protect`)
+    if (`!ref` != null) __obj.updateDynamic("!ref")(`!ref`)
+    if (`!rows` != null) __obj.updateDynamic("!rows")(`!rows`)
+    if (`!type` != null) __obj.updateDynamic("!type")(`!type`)
+    __obj.asInstanceOf[WorkSheet]
+  }
+}
+

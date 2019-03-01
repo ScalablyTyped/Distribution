@@ -71,7 +71,7 @@ trait Anon_CallBackCallback extends js.Object {
   def componentWillUnmount(): scala.Unit = js.native
   def forceUpdate(): scala.Unit = js.native
   def forceUpdate(callBack: js.Function0[scala.Unit]): scala.Unit = js.native
-  def render(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def render(): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderHotkeys(): reactLib.reactMod.ReactNs.ReactElement[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysMod.IHotkeysProps] = js.native
   def setState[K /* <: scala.Nothing */](
     state: js.Function2[

@@ -39,3 +39,18 @@ trait DateTimeDataValidation extends js.Object {
   var operator: DataValidationOperator | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Between | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotBetween | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EqualTo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotEqualTo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GreaterThan | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LessThan | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GreaterThanOrEqualTo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LessThanOrEqualTo
 }
 
+object DateTimeDataValidation {
+  @scala.inline
+  def apply(
+    formula1: java.lang.String | stdLib.Date | Range,
+    operator: DataValidationOperator | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Between | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotBetween | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EqualTo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotEqualTo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GreaterThan | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LessThan | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GreaterThanOrEqualTo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LessThanOrEqualTo,
+    formula2: java.lang.String | stdLib.Date | Range = null
+  ): DateTimeDataValidation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("formula1")(formula1.asInstanceOf[js.Any])
+    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (formula2 != null) __obj.updateDynamic("formula2")(formula2.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DateTimeDataValidation]
+  }
+}
+

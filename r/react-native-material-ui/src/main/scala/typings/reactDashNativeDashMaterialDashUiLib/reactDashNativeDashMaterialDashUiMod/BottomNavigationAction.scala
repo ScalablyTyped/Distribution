@@ -15,3 +15,26 @@ trait BottomNavigationAction extends js.Object {
   var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_Active] = js.undefined
 }
 
+object BottomNavigationAction {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    icon: reactLib.reactMod.Global.JSXNs.Element | java.lang.String,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    label: java.lang.String = null,
+    onPress: js.Function0[scala.Unit] = null,
+    style: reactDashNativeDashMaterialDashUiLib.Anon_Active = null
+  ): BottomNavigationAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[BottomNavigationAction]
+  }
+}
+

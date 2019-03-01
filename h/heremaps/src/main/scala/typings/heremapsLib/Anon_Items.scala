@@ -10,3 +10,13 @@ trait Anon_Items extends js.Object {
   var next: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Items {
+  @scala.inline
+  def apply(items: js.Array[_] = null, next: java.lang.String = null): Anon_Items = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (next != null) __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[Anon_Items]
+  }
+}
+

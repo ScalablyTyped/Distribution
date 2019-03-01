@@ -17,3 +17,30 @@ trait Anon_AutoTypeObfuscationOptions extends js.Object {
   var Signatures: Anon_FileMagic
 }
 
+object Anon_AutoTypeObfuscationOptions {
+  @scala.inline
+  def apply(
+    AutoTypeObfuscationOptions: Anon_None,
+    CipherId: Anon_Aes,
+    CompressionAlgorithm: Anon_GZip,
+    CrsAlgorithm: Anon_ArcFourVariant,
+    Defaults: Anon_HistoryMaxItems,
+    ErrorCodes: Anon_BadSignature,
+    Icons: Anon_Apple,
+    KdfId: Anon_AesArgon2,
+    Signatures: Anon_FileMagic
+  ): Anon_AutoTypeObfuscationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoTypeObfuscationOptions")(AutoTypeObfuscationOptions)
+    __obj.updateDynamic("CipherId")(CipherId)
+    __obj.updateDynamic("CompressionAlgorithm")(CompressionAlgorithm)
+    __obj.updateDynamic("CrsAlgorithm")(CrsAlgorithm)
+    __obj.updateDynamic("Defaults")(Defaults)
+    __obj.updateDynamic("ErrorCodes")(ErrorCodes)
+    __obj.updateDynamic("Icons")(Icons)
+    __obj.updateDynamic("KdfId")(KdfId)
+    __obj.updateDynamic("Signatures")(Signatures)
+    __obj.asInstanceOf[Anon_AutoTypeObfuscationOptions]
+  }
+}
+

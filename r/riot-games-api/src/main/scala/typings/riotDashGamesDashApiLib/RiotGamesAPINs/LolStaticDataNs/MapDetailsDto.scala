@@ -12,3 +12,20 @@ trait MapDetailsDto extends js.Object {
   var unpurchasableItemList: js.Array[scala.Double]
 }
 
+object MapDetailsDto {
+  @scala.inline
+  def apply(
+    image: ImageDto,
+    mapId: scala.Double,
+    mapName: java.lang.String,
+    unpurchasableItemList: js.Array[scala.Double]
+  ): MapDetailsDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("mapId")(mapId)
+    __obj.updateDynamic("mapName")(mapName)
+    __obj.updateDynamic("unpurchasableItemList")(unpurchasableItemList)
+    __obj.asInstanceOf[MapDetailsDto]
+  }
+}
+

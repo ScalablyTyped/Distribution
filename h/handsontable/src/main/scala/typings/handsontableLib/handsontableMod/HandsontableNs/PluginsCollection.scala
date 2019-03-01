@@ -42,3 +42,78 @@ trait PluginsCollection extends js.Object {
   var trimRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TrimRows
 }
 
+object PluginsCollection {
+  @scala.inline
+  def apply(
+    autoColumnSize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.AutoColumnSize,
+    autoRowSize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.AutoRowSize,
+    autofill: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Autofill,
+    bindRowsWithHeaders: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.BindRowsWithHeaders,
+    collapsibleColumns: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.CollapsibleColumns,
+    columnSorting: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ColumnSorting,
+    columnSummary: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ColumnSummary,
+    comments: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Comments,
+    contextMenu: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu,
+    copyPaste: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.CopyPaste,
+    dragToScroll: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DragToScroll,
+    dropdownMenu: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.DropdownMenu,
+    exportFile: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ExportFile,
+    filters: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Filters,
+    formulas: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Formulas,
+    ganttChart: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.GanttChart,
+    headerTooltips: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.HeaderTooltips,
+    hiddenColumns: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.HiddenColumns,
+    hiddenRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.HiddenRows,
+    manualColumnFreeze: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualColumnFreeze,
+    manualColumnMove: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualColumnMove,
+    manualColumnResize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualColumnResize,
+    manualRowMove: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualRowMove,
+    manualRowResize: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ManualRowResize,
+    mergeCells: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MergeCells,
+    multiColumnSorting: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MultiColumnSorting,
+    multipleSelectionHandles: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MultipleSelectionHandles,
+    nestedHeaders: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.NestedHeaders,
+    nestedRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.NestedRows,
+    observeChanges: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ObserveChanges,
+    search: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Search,
+    touchScroll: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TouchScroll,
+    trimRows: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.TrimRows
+  ): PluginsCollection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoColumnSize")(autoColumnSize)
+    __obj.updateDynamic("autoRowSize")(autoRowSize)
+    __obj.updateDynamic("autofill")(autofill)
+    __obj.updateDynamic("bindRowsWithHeaders")(bindRowsWithHeaders)
+    __obj.updateDynamic("collapsibleColumns")(collapsibleColumns)
+    __obj.updateDynamic("columnSorting")(columnSorting)
+    __obj.updateDynamic("columnSummary")(columnSummary)
+    __obj.updateDynamic("comments")(comments)
+    __obj.updateDynamic("contextMenu")(contextMenu)
+    __obj.updateDynamic("copyPaste")(copyPaste)
+    __obj.updateDynamic("dragToScroll")(dragToScroll)
+    __obj.updateDynamic("dropdownMenu")(dropdownMenu)
+    __obj.updateDynamic("exportFile")(exportFile)
+    __obj.updateDynamic("filters")(filters)
+    __obj.updateDynamic("formulas")(formulas)
+    __obj.updateDynamic("ganttChart")(ganttChart)
+    __obj.updateDynamic("headerTooltips")(headerTooltips)
+    __obj.updateDynamic("hiddenColumns")(hiddenColumns)
+    __obj.updateDynamic("hiddenRows")(hiddenRows)
+    __obj.updateDynamic("manualColumnFreeze")(manualColumnFreeze)
+    __obj.updateDynamic("manualColumnMove")(manualColumnMove)
+    __obj.updateDynamic("manualColumnResize")(manualColumnResize)
+    __obj.updateDynamic("manualRowMove")(manualRowMove)
+    __obj.updateDynamic("manualRowResize")(manualRowResize)
+    __obj.updateDynamic("mergeCells")(mergeCells)
+    __obj.updateDynamic("multiColumnSorting")(multiColumnSorting)
+    __obj.updateDynamic("multipleSelectionHandles")(multipleSelectionHandles)
+    __obj.updateDynamic("nestedHeaders")(nestedHeaders)
+    __obj.updateDynamic("nestedRows")(nestedRows)
+    __obj.updateDynamic("observeChanges")(observeChanges)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("touchScroll")(touchScroll)
+    __obj.updateDynamic("trimRows")(trimRows)
+    __obj.asInstanceOf[PluginsCollection]
+  }
+}
+

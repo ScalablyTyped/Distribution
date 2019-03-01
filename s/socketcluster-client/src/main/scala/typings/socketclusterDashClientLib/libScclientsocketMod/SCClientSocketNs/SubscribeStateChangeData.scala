@@ -12,3 +12,20 @@ trait SubscribeStateChangeData extends js.Object {
   var subscriptionOptions: scDashChannelLib.scDashChannelMod.SCChannelOptions
 }
 
+object SubscribeStateChangeData {
+  @scala.inline
+  def apply(
+    channel: java.lang.String,
+    newState: scDashChannelLib.scDashChannelMod.ChannelState,
+    oldState: scDashChannelLib.scDashChannelMod.ChannelState,
+    subscriptionOptions: scDashChannelLib.scDashChannelMod.SCChannelOptions
+  ): SubscribeStateChangeData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("newState")(newState)
+    __obj.updateDynamic("oldState")(oldState)
+    __obj.updateDynamic("subscriptionOptions")(subscriptionOptions)
+    __obj.asInstanceOf[SubscribeStateChangeData]
+  }
+}
+

@@ -28,3 +28,22 @@ trait OptionsAnimations extends js.Object {
   var showModal: js.UndefOr[OptionsAnimationProperties] = js.undefined
 }
 
+object OptionsAnimations {
+  @scala.inline
+  def apply(
+    dismissModal: OptionsAnimationProperties = null,
+    pop: OptionsAnimationSeparate = null,
+    push: OptionsAnimationSeparate = null,
+    setRoot: OptionsAnimationProperties = null,
+    showModal: OptionsAnimationProperties = null
+  ): OptionsAnimations = {
+    val __obj = js.Dynamic.literal()
+    if (dismissModal != null) __obj.updateDynamic("dismissModal")(dismissModal)
+    if (pop != null) __obj.updateDynamic("pop")(pop)
+    if (push != null) __obj.updateDynamic("push")(push)
+    if (setRoot != null) __obj.updateDynamic("setRoot")(setRoot)
+    if (showModal != null) __obj.updateDynamic("showModal")(showModal)
+    __obj.asInstanceOf[OptionsAnimations]
+  }
+}
+

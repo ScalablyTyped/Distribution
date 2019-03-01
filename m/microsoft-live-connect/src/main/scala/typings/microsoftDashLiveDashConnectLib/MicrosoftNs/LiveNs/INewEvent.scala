@@ -67,3 +67,30 @@ trait INewEvent extends js.Object {
   var visibility: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object INewEvent {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    name: java.lang.String,
+    start_time: js.Any,
+    availability: java.lang.String = null,
+    end_time: js.Any = null,
+    is_all_day_event: js.UndefOr[scala.Boolean] = js.undefined,
+    location: java.lang.String = null,
+    reminder_time: scala.Int | scala.Double = null,
+    visibility: java.lang.String = null
+  ): INewEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("start_time")(start_time)
+    if (availability != null) __obj.updateDynamic("availability")(availability)
+    if (end_time != null) __obj.updateDynamic("end_time")(end_time)
+    if (!js.isUndefined(is_all_day_event)) __obj.updateDynamic("is_all_day_event")(is_all_day_event)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (reminder_time != null) __obj.updateDynamic("reminder_time")(reminder_time.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    __obj.asInstanceOf[INewEvent]
+  }
+}
+

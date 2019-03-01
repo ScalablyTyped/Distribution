@@ -12,3 +12,13 @@ trait AccountUser extends js.Object {
   var emailAddress: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccountUser {
+  @scala.inline
+  def apply(admin: js.UndefOr[scala.Boolean] = js.undefined, emailAddress: java.lang.String = null): AccountUser = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin)
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
+    __obj.asInstanceOf[AccountUser]
+  }
+}
+

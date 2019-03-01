@@ -15,3 +15,14 @@ trait DatabaseSessionResponse extends js.Object {
   var userCtx: js.Any
 }
 
+object DatabaseSessionResponse {
+  @scala.inline
+  def apply(info: js.Any, ok: scala.Boolean, userCtx: js.Any): DatabaseSessionResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("ok")(ok)
+    __obj.updateDynamic("userCtx")(userCtx)
+    __obj.asInstanceOf[DatabaseSessionResponse]
+  }
+}
+

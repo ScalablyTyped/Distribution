@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object spotifyDashWebDashPlaybackDashSdkLibStrings {
   @js.native
-  sealed trait account_error extends js.Object
+  sealed trait account_error
+    extends spotifyDashWebDashPlaybackDashSdkLib.SpotifyNs.ErrorTypes
   
   @js.native
   sealed trait ad extends js.Object
@@ -16,19 +17,22 @@ object spotifyDashWebDashPlaybackDashSdkLibStrings {
   sealed trait audio extends js.Object
   
   @js.native
-  sealed trait authentication_error extends js.Object
+  sealed trait authentication_error
+    extends spotifyDashWebDashPlaybackDashSdkLib.SpotifyNs.ErrorTypes
   
   @js.native
   sealed trait episode extends js.Object
   
   @js.native
-  sealed trait initialization_error extends js.Object
+  sealed trait initialization_error
+    extends spotifyDashWebDashPlaybackDashSdkLib.SpotifyNs.ErrorTypes
   
   @js.native
   sealed trait not_ready extends js.Object
   
   @js.native
-  sealed trait playback_error extends js.Object
+  sealed trait playback_error
+    extends spotifyDashWebDashPlaybackDashSdkLib.SpotifyNs.ErrorTypes
   
   @js.native
   sealed trait player_state_changed extends js.Object

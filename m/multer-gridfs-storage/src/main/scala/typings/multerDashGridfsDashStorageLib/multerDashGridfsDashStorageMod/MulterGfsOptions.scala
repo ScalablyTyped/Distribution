@@ -15,3 +15,18 @@ trait MulterGfsOptions extends js.Object {
   ] = js.undefined
 }
 
+object MulterGfsOptions {
+  @scala.inline
+  def apply(
+    file: js.Function2[
+      /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
+      /* file */ multerDashGridfsDashStorageLib.multerDashGridfsDashStorageMod.Global.ExpressNs.MulterNs.File, 
+      _
+    ] = null
+  ): MulterGfsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (file != null) __obj.updateDynamic("file")(file)
+    __obj.asInstanceOf[MulterGfsOptions]
+  }
+}
+

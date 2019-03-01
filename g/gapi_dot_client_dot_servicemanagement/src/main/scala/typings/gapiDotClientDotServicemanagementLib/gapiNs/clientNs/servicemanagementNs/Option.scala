@@ -22,3 +22,13 @@ trait Option extends js.Object {
   var value: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(name: java.lang.String = null, value: stdLib.Record[java.lang.String, _] = null): Option = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Option]
+  }
+}
+

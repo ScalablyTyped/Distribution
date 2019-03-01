@@ -114,3 +114,88 @@ trait XEmbeddedObject
   def update(): scala.Unit
 }
 
+object XEmbeddedObject {
+  @scala.inline
+  def apply(
+    ClassID: activexDashInteropLib.SafeArray[scala.Double],
+    ClassName: java.lang.String,
+    ClientSite: XEmbeddedClient,
+    Component: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable,
+    CurrentState: scala.Double,
+    ReachableStates: activexDashInteropLib.SafeArray[scala.Double],
+    SupportedVerbs: activexDashInteropLib.SafeArray[VerbDescriptor],
+    acquire: js.Function0[scala.Unit],
+    addCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener, scala.Unit],
+    addStateChangeListener: js.Function1[XStateChangeListener, scala.Unit],
+    changeState: js.Function1[scala.Double, scala.Unit],
+    close: js.Function1[scala.Boolean, scala.Unit],
+    doVerb: js.Function1[scala.Double, scala.Unit],
+    getClassID: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getClassName: js.Function0[java.lang.String],
+    getClientSite: js.Function0[XEmbeddedClient],
+    getComponent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable],
+    getCurrentState: js.Function0[scala.Double],
+    getMapUnit: js.Function1[scala.Double, scala.Double],
+    getPreferredVisualRepresentation: js.Function1[scala.Double, VisualRepresentation],
+    getReachableStates: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getStatus: js.Function1[scala.Double, scala.Double],
+    getSupportedVerbs: js.Function0[activexDashInteropLib.SafeArray[VerbDescriptor]],
+    getVisualAreaSize: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeCloseListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseListener, scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener, scala.Unit],
+    removeStateChangeListener: js.Function1[XStateChangeListener, scala.Unit],
+    setClassInfo: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      java.lang.String, 
+      scala.Unit
+    ],
+    setClientSite: js.Function1[XEmbeddedClient, scala.Unit],
+    setContainerName: js.Function1[java.lang.String, scala.Unit],
+    setUpdateMode: js.Function1[scala.Double, scala.Unit],
+    setVisualAreaSize: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit],
+    update: js.Function0[scala.Unit]
+  ): XEmbeddedObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ClassID")(ClassID)
+    __obj.updateDynamic("ClassName")(ClassName)
+    __obj.updateDynamic("ClientSite")(ClientSite)
+    __obj.updateDynamic("Component")(Component)
+    __obj.updateDynamic("CurrentState")(CurrentState)
+    __obj.updateDynamic("ReachableStates")(ReachableStates)
+    __obj.updateDynamic("SupportedVerbs")(SupportedVerbs)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addCloseListener")(addCloseListener)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addStateChangeListener")(addStateChangeListener)
+    __obj.updateDynamic("changeState")(changeState)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("doVerb")(doVerb)
+    __obj.updateDynamic("getClassID")(getClassID)
+    __obj.updateDynamic("getClassName")(getClassName)
+    __obj.updateDynamic("getClientSite")(getClientSite)
+    __obj.updateDynamic("getComponent")(getComponent)
+    __obj.updateDynamic("getCurrentState")(getCurrentState)
+    __obj.updateDynamic("getMapUnit")(getMapUnit)
+    __obj.updateDynamic("getPreferredVisualRepresentation")(getPreferredVisualRepresentation)
+    __obj.updateDynamic("getReachableStates")(getReachableStates)
+    __obj.updateDynamic("getStatus")(getStatus)
+    __obj.updateDynamic("getSupportedVerbs")(getSupportedVerbs)
+    __obj.updateDynamic("getVisualAreaSize")(getVisualAreaSize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeCloseListener")(removeCloseListener)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removeStateChangeListener")(removeStateChangeListener)
+    __obj.updateDynamic("setClassInfo")(setClassInfo)
+    __obj.updateDynamic("setClientSite")(setClientSite)
+    __obj.updateDynamic("setContainerName")(setContainerName)
+    __obj.updateDynamic("setUpdateMode")(setUpdateMode)
+    __obj.updateDynamic("setVisualAreaSize")(setVisualAreaSize)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[XEmbeddedObject]
+  }
+}
+

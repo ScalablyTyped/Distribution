@@ -27,3 +27,15 @@ trait RelaySummary extends js.Object {
   var r: scala.Boolean
 }
 
+object RelaySummary {
+  @scala.inline
+  def apply(a: js.Array[java.lang.String], f: java.lang.String, n: java.lang.String, r: scala.Boolean): RelaySummary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("a")(a)
+    __obj.updateDynamic("f")(f)
+    __obj.updateDynamic("n")(n)
+    __obj.updateDynamic("r")(r)
+    __obj.asInstanceOf[RelaySummary]
+  }
+}
+

@@ -38,3 +38,46 @@ trait XRegion
   def xOrRegion(Region: XRegion): scala.Unit
 }
 
+object XRegion {
+  @scala.inline
+  def apply(
+    Bounds: Rectangle,
+    Rectangles: activexDashInteropLib.SafeArray[Rectangle],
+    acquire: js.Function0[scala.Unit],
+    clear: js.Function0[scala.Unit],
+    excludeRectangle: js.Function1[Rectangle, scala.Unit],
+    excludeRegion: js.Function1[XRegion, scala.Unit],
+    getBounds: js.Function0[Rectangle],
+    getRectangles: js.Function0[activexDashInteropLib.SafeArray[Rectangle]],
+    intersectRectangle: js.Function1[Rectangle, scala.Unit],
+    intersectRegion: js.Function1[XRegion, scala.Unit],
+    move: js.Function2[scala.Double, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    unionRectangle: js.Function1[Rectangle, scala.Unit],
+    unionRegion: js.Function1[XRegion, scala.Unit],
+    xOrRectangle: js.Function1[Rectangle, scala.Unit],
+    xOrRegion: js.Function1[XRegion, scala.Unit]
+  ): XRegion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Bounds")(Bounds)
+    __obj.updateDynamic("Rectangles")(Rectangles)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("excludeRectangle")(excludeRectangle)
+    __obj.updateDynamic("excludeRegion")(excludeRegion)
+    __obj.updateDynamic("getBounds")(getBounds)
+    __obj.updateDynamic("getRectangles")(getRectangles)
+    __obj.updateDynamic("intersectRectangle")(intersectRectangle)
+    __obj.updateDynamic("intersectRegion")(intersectRegion)
+    __obj.updateDynamic("move")(move)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("unionRectangle")(unionRectangle)
+    __obj.updateDynamic("unionRegion")(unionRegion)
+    __obj.updateDynamic("xOrRectangle")(xOrRectangle)
+    __obj.updateDynamic("xOrRegion")(xOrRegion)
+    __obj.asInstanceOf[XRegion]
+  }
+}
+

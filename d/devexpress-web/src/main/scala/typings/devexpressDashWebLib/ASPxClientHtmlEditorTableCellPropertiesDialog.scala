@@ -15,3 +15,26 @@ trait ASPxClientHtmlEditorTableCellPropertiesDialog extends ASPxClientHtmlEditor
   def GetApplyToAllCellsCheckBox(): ASPxClientCheckBox
 }
 
+object ASPxClientHtmlEditorTableCellPropertiesDialog {
+  @scala.inline
+  def apply(
+    GetApplyToAllCellsCheckBox: js.Function0[ASPxClientCheckBox],
+    GetBackgroundColorColorEdit: js.Function0[ASPxClientColorEdit],
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetHorizontalAlignmentComboBox: js.Function0[ASPxClientComboBox],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetVerticalAlignmentComboBox: js.Function0[ASPxClientComboBox]
+  ): ASPxClientHtmlEditorTableCellPropertiesDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetApplyToAllCellsCheckBox")(GetApplyToAllCellsCheckBox)
+    __obj.updateDynamic("GetBackgroundColorColorEdit")(GetBackgroundColorColorEdit)
+    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
+    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
+    __obj.updateDynamic("GetHorizontalAlignmentComboBox")(GetHorizontalAlignmentComboBox)
+    __obj.updateDynamic("GetOkButton")(GetOkButton)
+    __obj.updateDynamic("GetVerticalAlignmentComboBox")(GetVerticalAlignmentComboBox)
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesDialog]
+  }
+}
+

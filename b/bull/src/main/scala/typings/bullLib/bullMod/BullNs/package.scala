@@ -18,8 +18,6 @@ package object BullNs {
   type EventCallback = js.Function0[scala.Unit]
   type FailedEventCallback[T] = js.Function2[/* job */ Job[T], /* error */ nodeLib.Error, scala.Unit]
   type JobId = scala.Double | java.lang.String
-  type JobStatus = bullLib.bullLibStrings.completed | bullLib.bullLibStrings.waiting | bullLib.bullLibStrings.active | bullLib.bullLibStrings.delayed | bullLib.bullLibStrings.failed
-  type JobStatusClean = bullLib.bullLibStrings.completed | bullLib.bullLibStrings.wait | bullLib.bullLibStrings.active | bullLib.bullLibStrings.delayed | bullLib.bullLibStrings.failed
   type ProgressEventCallback[T] = js.Function2[/* job */ Job[T], /* progress */ js.Any, scala.Unit]
   type RemovedEventCallback[T] = js.Function1[/* job */ Job[T], scala.Unit]
   type StalledEventCallback[T] = js.Function1[/* job */ Job[T], scala.Unit]

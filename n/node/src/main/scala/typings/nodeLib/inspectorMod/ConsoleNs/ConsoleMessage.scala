@@ -35,3 +35,24 @@ trait ConsoleMessage extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConsoleMessage {
+  @scala.inline
+  def apply(
+    level: java.lang.String,
+    source: java.lang.String,
+    text: java.lang.String,
+    column: scala.Int | scala.Double = null,
+    line: scala.Int | scala.Double = null,
+    url: java.lang.String = null
+  ): ConsoleMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("text")(text)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ConsoleMessage]
+  }
+}
+

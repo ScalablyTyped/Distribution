@@ -16,3 +16,12 @@ trait ASPxClientChartDesignerSaveCommandExecuteEventArgs extends ASPxClientEvent
   var handled: scala.Boolean
 }
 
+object ASPxClientChartDesignerSaveCommandExecuteEventArgs {
+  @scala.inline
+  def apply(handled: scala.Boolean): ASPxClientChartDesignerSaveCommandExecuteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handled")(handled)
+    __obj.asInstanceOf[ASPxClientChartDesignerSaveCommandExecuteEventArgs]
+  }
+}
+

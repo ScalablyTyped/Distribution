@@ -12,3 +12,15 @@ trait JsonRPCRequest extends js.Object {
   var params: js.Array[_]
 }
 
+object JsonRPCRequest {
+  @scala.inline
+  def apply(id: scala.Double, jsonrpc: java.lang.String, method: java.lang.String, params: js.Array[_]): JsonRPCRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("jsonrpc")(jsonrpc)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[JsonRPCRequest]
+  }
+}
+

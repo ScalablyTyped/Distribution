@@ -33,3 +33,24 @@ trait Events extends js.Object {
   var onStateChange: js.UndefOr[PlayerEventHandler[OnStateChangeEvent]] = js.undefined
 }
 
+object Events {
+  @scala.inline
+  def apply(
+    onApiChange: PlayerEventHandler[PlayerEvent] = null,
+    onError: PlayerEventHandler[OnErrorEvent] = null,
+    onPlaybackQualityChange: PlayerEventHandler[OnPlaybackQualityChangeEvent] = null,
+    onPlaybackRateChange: PlayerEventHandler[OnPlaybackRateChangeEvent] = null,
+    onReady: PlayerEventHandler[PlayerEvent] = null,
+    onStateChange: PlayerEventHandler[OnStateChangeEvent] = null
+  ): Events = {
+    val __obj = js.Dynamic.literal()
+    if (onApiChange != null) __obj.updateDynamic("onApiChange")(onApiChange)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onPlaybackQualityChange != null) __obj.updateDynamic("onPlaybackQualityChange")(onPlaybackQualityChange)
+    if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(onPlaybackRateChange)
+    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    __obj.asInstanceOf[Events]
+  }
+}
+

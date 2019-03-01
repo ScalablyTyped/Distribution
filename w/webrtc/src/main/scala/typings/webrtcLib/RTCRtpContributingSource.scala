@@ -13,3 +13,13 @@ trait RTCRtpContributingSource extends js.Object {
   val voiceActivityFlag: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RTCRtpContributingSource {
+  @scala.inline
+  def apply(source: scala.Double, voiceActivityFlag: js.UndefOr[scala.Boolean] = js.undefined): RTCRtpContributingSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    if (!js.isUndefined(voiceActivityFlag)) __obj.updateDynamic("voiceActivityFlag")(voiceActivityFlag)
+    __obj.asInstanceOf[RTCRtpContributingSource]
+  }
+}
+

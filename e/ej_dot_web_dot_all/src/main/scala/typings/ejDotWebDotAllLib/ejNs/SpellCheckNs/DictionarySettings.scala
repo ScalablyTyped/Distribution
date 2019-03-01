@@ -14,3 +14,13 @@ trait DictionarySettings extends js.Object {
   var dictionaryUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DictionarySettings {
+  @scala.inline
+  def apply(customDictionaryUrl: java.lang.String = null, dictionaryUrl: java.lang.String = null): DictionarySettings = {
+    val __obj = js.Dynamic.literal()
+    if (customDictionaryUrl != null) __obj.updateDynamic("customDictionaryUrl")(customDictionaryUrl)
+    if (dictionaryUrl != null) __obj.updateDynamic("dictionaryUrl")(dictionaryUrl)
+    __obj.asInstanceOf[DictionarySettings]
+  }
+}
+

@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object stormDashReactDashDiagramsLibStrings {
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link
+    extends stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntityType
   
   @js.native
-  sealed trait node extends js.Object
+  sealed trait node
+    extends stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntityType
   
   @js.native
-  sealed trait point extends js.Object
+  sealed trait point
+    extends stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntityType
   
   @js.native
-  sealed trait port extends js.Object
+  sealed trait port
+    extends stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntityType
   
   @scala.inline
   def link: link = "link".asInstanceOf[link]

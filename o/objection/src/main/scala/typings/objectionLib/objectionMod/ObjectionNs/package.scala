@@ -73,7 +73,6 @@ package object ObjectionNs {
     /* relationName */ java.lang.String, 
     scala.Unit
   ]
-  type ValidationErrorType = objectionLib.objectionLibStrings.ModelValidation | objectionLib.objectionLibStrings.RelationExpression | objectionLib.objectionLibStrings.UnallowedRelation | objectionLib.objectionLibStrings.InvalidGraph
   //
   // Partial revision of
   // https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/knex/index.d.ts,

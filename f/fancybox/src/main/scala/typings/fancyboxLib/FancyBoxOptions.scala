@@ -273,3 +273,132 @@ trait FancyBoxOptions extends js.Object {
   var zoomOpacity: js.UndefOr[fancyboxLib.fancyboxLibStrings.auto | scala.Boolean] = js.undefined
 }
 
+object FancyBoxOptions {
+  @scala.inline
+  def apply(
+    afterClose: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
+    afterLoad: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
+    afterShow: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
+    ajax: FancyBoxAjaxOption = null,
+    animationDuration: scala.Int | scala.Double = null,
+    animationEffect: scala.Boolean | fancyboxLib.fancyboxLibStrings.zoom | fancyboxLib.fancyboxLibStrings.fade | fancyboxLib.fancyboxLibStrings.`zoom-in-out` = null,
+    arrows: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    backFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    baseClass: java.lang.String = null,
+    baseTpl: java.lang.String = null,
+    beforeClose: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
+    beforeLoad: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
+    beforeShow: js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, scala.Unit] = null,
+    btnTpl: FancyBoxButtonTemplateOptions = null,
+    buttons: js.Array[
+      fancyboxLib.fancyboxLibStrings.zoom | fancyboxLib.fancyboxLibStrings.share | fancyboxLib.fancyboxLibStrings.slideShow | fancyboxLib.fancyboxLibStrings.fullScreen | fancyboxLib.fancyboxLibStrings.download | fancyboxLib.fancyboxLibStrings.thumbs | fancyboxLib.fancyboxLibStrings.close
+    ] = null,
+    caption: java.lang.String | (js.Function2[/* instance */ FancyBoxInstance, /* current */ FancyBoxSlide, java.lang.String]) = null,
+    clickContent: FancyBoxInteractions = null,
+    clickOutside: FancyBoxInteractions = null,
+    clickSlide: FancyBoxInteractions = null,
+    closeExisting: js.UndefOr[scala.Boolean] = js.undefined,
+    dblclickContent: FancyBoxInteractions = null,
+    dblclickOutside: FancyBoxInteractions = null,
+    dblclickSlide: FancyBoxInteractions = null,
+    defaultType: fancyboxLib.fancyboxLibStrings.image | fancyboxLib.fancyboxLibStrings.`inline` | fancyboxLib.fancyboxLibStrings.ajax | fancyboxLib.fancyboxLibStrings.iframe | fancyboxLib.fancyboxLibStrings.html = null,
+    errorTpl: java.lang.String = null,
+    fullScreen: Anon_Autostart = null,
+    gutter: scala.Int | scala.Double = null,
+    hash: js.Any = null,
+    hideScrollbar: js.UndefOr[scala.Boolean] = js.undefined,
+    i18n: FancyBoxInternationalizationOptions = null,
+    idleTime: scala.Int | scala.Double = null,
+    iframe: FancyBoxIframeSettings = null,
+    image: FancyBoxImageOption = null,
+    infobar: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    lang: java.lang.String = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    media: FancyBoxPlainObject = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    onActivate: js.Function1[/* instance */ FancyBoxInstance, scala.Unit] = null,
+    onDeactivate: js.Function1[/* instance */ FancyBoxInstance, scala.Unit] = null,
+    onInit: js.Function1[/* instance */ FancyBoxInstance, scala.Unit] = null,
+    parentEl: java.lang.String = null,
+    preventCaptionOverlap: js.UndefOr[scala.Boolean] = js.undefined,
+    protect: js.UndefOr[scala.Boolean] = js.undefined,
+    slideClass: java.lang.String = null,
+    slideShow: Anon_AutoStart = null,
+    smallBtn: scala.Boolean | fancyboxLib.fancyboxLibStrings.auto = null,
+    spinnerTpl: java.lang.String = null,
+    thumbs: FancyThumbsOptions = null,
+    toolbar: scala.Boolean | fancyboxLib.fancyboxLibStrings.auto = null,
+    touch: FancyBoxTouchOptions | fancyboxLib.fancyboxLibNumbers.`false` = null,
+    transitionDuration: scala.Int | scala.Double = null,
+    transitionEffect: fancyboxLib.fancyboxLibStrings.fade | fancyboxLib.fancyboxLibStrings.slide | fancyboxLib.fancyboxLibStrings.circular | fancyboxLib.fancyboxLibStrings.tube | fancyboxLib.fancyboxLibStrings.`zoom-in-out` | fancyboxLib.fancyboxLibStrings.rotate | scala.Boolean = null,
+    trapFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    video: FancyBoxVideoOptions = null,
+    wheel: fancyboxLib.fancyboxLibStrings.auto | fancyboxLib.fancyboxLibNumbers.`false` = null,
+    zoomOpacity: fancyboxLib.fancyboxLibStrings.auto | scala.Boolean = null
+  ): FancyBoxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (afterLoad != null) __obj.updateDynamic("afterLoad")(afterLoad)
+    if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow)
+    if (ajax != null) __obj.updateDynamic("ajax")(ajax)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationEffect != null) __obj.updateDynamic("animationEffect")(animationEffect.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(backFocus)) __obj.updateDynamic("backFocus")(backFocus)
+    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
+    if (baseTpl != null) __obj.updateDynamic("baseTpl")(baseTpl)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeLoad != null) __obj.updateDynamic("beforeLoad")(beforeLoad)
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (btnTpl != null) __obj.updateDynamic("btnTpl")(btnTpl)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
+    if (clickContent != null) __obj.updateDynamic("clickContent")(clickContent.asInstanceOf[js.Any])
+    if (clickOutside != null) __obj.updateDynamic("clickOutside")(clickOutside.asInstanceOf[js.Any])
+    if (clickSlide != null) __obj.updateDynamic("clickSlide")(clickSlide.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeExisting)) __obj.updateDynamic("closeExisting")(closeExisting)
+    if (dblclickContent != null) __obj.updateDynamic("dblclickContent")(dblclickContent.asInstanceOf[js.Any])
+    if (dblclickOutside != null) __obj.updateDynamic("dblclickOutside")(dblclickOutside.asInstanceOf[js.Any])
+    if (dblclickSlide != null) __obj.updateDynamic("dblclickSlide")(dblclickSlide.asInstanceOf[js.Any])
+    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType.asInstanceOf[js.Any])
+    if (errorTpl != null) __obj.updateDynamic("errorTpl")(errorTpl)
+    if (fullScreen != null) __obj.updateDynamic("fullScreen")(fullScreen)
+    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (!js.isUndefined(hideScrollbar)) __obj.updateDynamic("hideScrollbar")(hideScrollbar)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
+    if (idleTime != null) __obj.updateDynamic("idleTime")(idleTime.asInstanceOf[js.Any])
+    if (iframe != null) __obj.updateDynamic("iframe")(iframe)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (!js.isUndefined(infobar)) __obj.updateDynamic("infobar")(infobar)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (media != null) __obj.updateDynamic("media")(media)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (onActivate != null) __obj.updateDynamic("onActivate")(onActivate)
+    if (onDeactivate != null) __obj.updateDynamic("onDeactivate")(onDeactivate)
+    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl)
+    if (!js.isUndefined(preventCaptionOverlap)) __obj.updateDynamic("preventCaptionOverlap")(preventCaptionOverlap)
+    if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
+    if (slideClass != null) __obj.updateDynamic("slideClass")(slideClass)
+    if (slideShow != null) __obj.updateDynamic("slideShow")(slideShow)
+    if (smallBtn != null) __obj.updateDynamic("smallBtn")(smallBtn.asInstanceOf[js.Any])
+    if (spinnerTpl != null) __obj.updateDynamic("spinnerTpl")(spinnerTpl)
+    if (thumbs != null) __obj.updateDynamic("thumbs")(thumbs)
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
+    if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (transitionEffect != null) __obj.updateDynamic("transitionEffect")(transitionEffect.asInstanceOf[js.Any])
+    if (!js.isUndefined(trapFocus)) __obj.updateDynamic("trapFocus")(trapFocus)
+    if (video != null) __obj.updateDynamic("video")(video)
+    if (wheel != null) __obj.updateDynamic("wheel")(wheel.asInstanceOf[js.Any])
+    if (zoomOpacity != null) __obj.updateDynamic("zoomOpacity")(zoomOpacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FancyBoxOptions]
+  }
+}
+

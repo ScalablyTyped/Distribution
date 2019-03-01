@@ -12,11 +12,11 @@ class Intersection () extends js.Object {
   /**
   	 * Appends a point to intersection
   	 */
-  def appendPoint(point: Point): scala.Unit = js.native
+  def appendPoint(point: Point): Intersection = js.native
   /**
   	 * Appends points to intersection
   	 */
-  def appendPoints(points: js.Array[Point]): scala.Unit = js.native
+  def appendPoints(points: js.Array[Point]): Intersection = js.native
 }
 
 /* static members */

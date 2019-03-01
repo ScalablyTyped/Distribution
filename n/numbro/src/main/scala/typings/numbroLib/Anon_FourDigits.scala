@@ -12,3 +12,20 @@ trait Anon_FourDigits extends js.Object {
   var fullWithTwoDecimalsNoCurrency: numbroLib.numbroMod.numbroNs.Format
 }
 
+object Anon_FourDigits {
+  @scala.inline
+  def apply(
+    fourDigits: numbroLib.numbroMod.numbroNs.Format,
+    fullWithNoDecimals: numbroLib.numbroMod.numbroNs.Format,
+    fullWithTwoDecimals: numbroLib.numbroMod.numbroNs.Format,
+    fullWithTwoDecimalsNoCurrency: numbroLib.numbroMod.numbroNs.Format
+  ): Anon_FourDigits = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fourDigits")(fourDigits)
+    __obj.updateDynamic("fullWithNoDecimals")(fullWithNoDecimals)
+    __obj.updateDynamic("fullWithTwoDecimals")(fullWithTwoDecimals)
+    __obj.updateDynamic("fullWithTwoDecimalsNoCurrency")(fullWithTwoDecimalsNoCurrency)
+    __obj.asInstanceOf[Anon_FourDigits]
+  }
+}
+

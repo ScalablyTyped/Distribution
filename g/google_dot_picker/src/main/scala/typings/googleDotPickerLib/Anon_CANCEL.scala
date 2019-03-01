@@ -10,3 +10,13 @@ trait Anon_CANCEL extends js.Object {
   var PICKED: java.lang.String
 }
 
+object Anon_CANCEL {
+  @scala.inline
+  def apply(CANCEL: java.lang.String, PICKED: java.lang.String): Anon_CANCEL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CANCEL")(CANCEL)
+    __obj.updateDynamic("PICKED")(PICKED)
+    __obj.asInstanceOf[Anon_CANCEL]
+  }
+}
+

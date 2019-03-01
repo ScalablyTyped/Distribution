@@ -48,3 +48,32 @@ trait Notification extends js.Object {
   var timeUtc: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Notification {
+  @scala.inline
+  def apply(
+    message: Message,
+    exception: Exception = null,
+    id: java.lang.String = null,
+    level: sarifLib.sarifMod.NotificationNs.level = null,
+    physicalLocation: PhysicalLocation = null,
+    properties: PropertyBag = null,
+    ruleId: java.lang.String = null,
+    ruleIndex: scala.Int | scala.Double = null,
+    threadId: scala.Int | scala.Double = null,
+    timeUtc: java.lang.String = null
+  ): Notification = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    if (exception != null) __obj.updateDynamic("exception")(exception)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (level != null) __obj.updateDynamic("level")(level)
+    if (physicalLocation != null) __obj.updateDynamic("physicalLocation")(physicalLocation)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)
+    if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
+    if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
+    if (timeUtc != null) __obj.updateDynamic("timeUtc")(timeUtc)
+    __obj.asInstanceOf[Notification]
+  }
+}
+

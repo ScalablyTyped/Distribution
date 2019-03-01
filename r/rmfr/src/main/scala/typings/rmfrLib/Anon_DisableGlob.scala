@@ -12,3 +12,16 @@ trait Anon_DisableGlob extends js.Object {
   ] = js.undefined
 }
 
+object Anon_DisableGlob {
+  @scala.inline
+  def apply(
+    disableGlob: js.UndefOr[scala.Nothing] = js.undefined,
+    glob: (js.UndefOr[globLib.globMod.GNs.IOptions | rmfrLib.rmfrLibNumbers.`false`]) | rmfrLib.rmfrLibNumbers.`true` = null
+  ): Anon_DisableGlob = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disableGlob)) __obj.updateDynamic("disableGlob")(disableGlob)
+    if (glob != null) __obj.updateDynamic("glob")(glob.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_DisableGlob]
+  }
+}
+

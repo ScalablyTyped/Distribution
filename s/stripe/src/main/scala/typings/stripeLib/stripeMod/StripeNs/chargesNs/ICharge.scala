@@ -168,3 +168,83 @@ trait ICharge
   var transfer_group: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object ICharge {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    amount_refunded: scala.Double,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    captured: scala.Boolean,
+    created: scala.Double,
+    currency: java.lang.String,
+    fraud_details: stripeLib.Anon_Fraudulent,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.charge,
+    paid: scala.Boolean,
+    refunded: scala.Boolean,
+    refunds: IChargeRefunds,
+    source: stripeLib.stripeMod.StripeNs.cardsNs.ICard | stripeLib.stripeMod.StripeNs.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.StripeNs.bankAccountsNs.IBankAccount,
+    status: stripeLib.stripeLibStrings.succeeded | stripeLib.stripeLibStrings.pending | stripeLib.stripeLibStrings.failed,
+    application: java.lang.String | stripeLib.stripeMod.StripeNs.applicationsNs.IApplication = null,
+    application_fee: java.lang.String | stripeLib.stripeMod.StripeNs.applicationFeesNs.IApplicationFee = null,
+    customer: java.lang.String | stripeLib.stripeMod.StripeNs.customersNs.ICustomer = null,
+    description: java.lang.String = null,
+    destination: java.lang.String | stripeLib.stripeMod.StripeNs.accountsNs.IAccount = null,
+    dispute: stripeLib.stripeMod.StripeNs.disputesNs.IDispute = null,
+    failure_code: java.lang.String = null,
+    failure_message: java.lang.String = null,
+    invoice: java.lang.String | stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice = null,
+    on_behalf_of: java.lang.String = null,
+    order: java.lang.String | stripeLib.stripeMod.StripeNs.ordersNs.IOrder = null,
+    outcome: IOutcome = null,
+    receipt_email: java.lang.String = null,
+    receipt_number: java.lang.String = null,
+    review: java.lang.String | stripeLib.stripeMod.StripeNs.reviewsNs.IReview = null,
+    shipping: stripeLib.stripeMod.StripeNs.IShippingInformation = null,
+    source_transfer: java.lang.String | stripeLib.stripeMod.StripeNs.transfersNs.ITransfer = null,
+    statement_descriptor: java.lang.String = null,
+    transfer: java.lang.String | stripeLib.stripeMod.StripeNs.transfersNs.ITransfer = null,
+    transfer_group: java.lang.String = null
+  ): ICharge = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("amount_refunded")(amount_refunded)
+    __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
+    __obj.updateDynamic("captured")(captured)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("fraud_details")(fraud_details)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("paid")(paid)
+    __obj.updateDynamic("refunded")(refunded)
+    __obj.updateDynamic("refunds")(refunds)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (dispute != null) __obj.updateDynamic("dispute")(dispute)
+    if (failure_code != null) __obj.updateDynamic("failure_code")(failure_code)
+    if (failure_message != null) __obj.updateDynamic("failure_message")(failure_message)
+    if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])
+    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
+    if (receipt_number != null) __obj.updateDynamic("receipt_number")(receipt_number)
+    if (review != null) __obj.updateDynamic("review")(review.asInstanceOf[js.Any])
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (source_transfer != null) __obj.updateDynamic("source_transfer")(source_transfer.asInstanceOf[js.Any])
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (transfer != null) __obj.updateDynamic("transfer")(transfer.asInstanceOf[js.Any])
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
+    __obj.asInstanceOf[ICharge]
+  }
+}
+

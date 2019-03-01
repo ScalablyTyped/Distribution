@@ -15,3 +15,26 @@ trait BackTopProps extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BackTopProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[_] = null,
+    prefixCls: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    target: js.Function0[reactLib.HTMLElement | stdLib.Window] = null,
+    visibilityHeight: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): BackTopProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (visibilityHeight != null) __obj.updateDynamic("visibilityHeight")(visibilityHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[BackTopProps]
+  }
+}
+

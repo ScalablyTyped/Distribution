@@ -10,3 +10,13 @@ trait ResponsiveObject extends js.Object {
   var settings: reactDashSlickLib.reactDashSlickLibStrings.unslick | Settings
 }
 
+object ResponsiveObject {
+  @scala.inline
+  def apply(breakpoint: scala.Double, settings: reactDashSlickLib.reactDashSlickLibStrings.unslick | Settings): ResponsiveObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("breakpoint")(breakpoint)
+    __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResponsiveObject]
+  }
+}
+

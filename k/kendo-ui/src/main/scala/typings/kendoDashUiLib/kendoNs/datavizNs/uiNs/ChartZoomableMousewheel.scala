@@ -9,3 +9,12 @@ trait ChartZoomableMousewheel extends js.Object {
   var lock: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChartZoomableMousewheel {
+  @scala.inline
+  def apply(lock: java.lang.String = null): ChartZoomableMousewheel = {
+    val __obj = js.Dynamic.literal()
+    if (lock != null) __obj.updateDynamic("lock")(lock)
+    __obj.asInstanceOf[ChartZoomableMousewheel]
+  }
+}
+

@@ -23,3 +23,24 @@ trait XProtectable
   def unprotect(aPassword: java.lang.String): scala.Unit
 }
 
+object XProtectable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    isProtected: js.Function0[scala.Boolean],
+    protect: js.Function1[java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    unprotect: js.Function1[java.lang.String, scala.Unit]
+  ): XProtectable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("isProtected")(isProtected)
+    __obj.updateDynamic("protect")(protect)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("unprotect")(unprotect)
+    __obj.asInstanceOf[XProtectable]
+  }
+}
+

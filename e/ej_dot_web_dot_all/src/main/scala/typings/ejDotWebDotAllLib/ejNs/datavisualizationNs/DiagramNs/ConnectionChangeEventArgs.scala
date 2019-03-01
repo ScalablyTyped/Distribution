@@ -23,3 +23,22 @@ trait ConnectionChangeEventArgs extends js.Object {
   var port: js.UndefOr[js.Any] = js.undefined
 }
 
+object ConnectionChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    connection: java.lang.String = null,
+    diagramId: java.lang.String = null,
+    element: js.Any = null,
+    port: js.Any = null
+  ): ConnectionChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (port != null) __obj.updateDynamic("port")(port)
+    __obj.asInstanceOf[ConnectionChangeEventArgs]
+  }
+}
+

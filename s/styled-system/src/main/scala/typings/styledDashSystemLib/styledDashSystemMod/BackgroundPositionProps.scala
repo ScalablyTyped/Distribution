@@ -15,3 +15,14 @@ trait BackgroundPositionProps[TLength] extends js.Object {
   var backgroundPosition: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BackgroundPositionProperty[TLength]]] = js.undefined
 }
 
+object BackgroundPositionProps {
+  @scala.inline
+  def apply[TLength](
+    backgroundPosition: ResponsiveValue[csstypeLib.csstypeMod.BackgroundPositionProperty[TLength]] = null
+  ): BackgroundPositionProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundPositionProps[TLength]]
+  }
+}
+

@@ -20,3 +20,36 @@ trait Anon_AccessibleReorderAfterItem extends js.Object {
   var selectedLabel: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccessibleReorderAfterItem {
+  @scala.inline
+  def apply(
+    accessibleReorderAfterItem: java.lang.String = null,
+    accessibleReorderBeforeItem: java.lang.String = null,
+    accessibleReorderTouchInstructionText: java.lang.String = null,
+    labelCut: java.lang.String = null,
+    labelPasteAfter: java.lang.String = null,
+    labelPasteBefore: java.lang.String = null,
+    labelRemove: java.lang.String = null,
+    msgFetchingData: java.lang.String = null,
+    msgNoData: java.lang.String = null,
+    overflowItemLabel: java.lang.String = null,
+    removeCueText: java.lang.String = null,
+    selectedLabel: java.lang.String = null
+  ): Anon_AccessibleReorderAfterItem = {
+    val __obj = js.Dynamic.literal()
+    if (accessibleReorderAfterItem != null) __obj.updateDynamic("accessibleReorderAfterItem")(accessibleReorderAfterItem)
+    if (accessibleReorderBeforeItem != null) __obj.updateDynamic("accessibleReorderBeforeItem")(accessibleReorderBeforeItem)
+    if (accessibleReorderTouchInstructionText != null) __obj.updateDynamic("accessibleReorderTouchInstructionText")(accessibleReorderTouchInstructionText)
+    if (labelCut != null) __obj.updateDynamic("labelCut")(labelCut)
+    if (labelPasteAfter != null) __obj.updateDynamic("labelPasteAfter")(labelPasteAfter)
+    if (labelPasteBefore != null) __obj.updateDynamic("labelPasteBefore")(labelPasteBefore)
+    if (labelRemove != null) __obj.updateDynamic("labelRemove")(labelRemove)
+    if (msgFetchingData != null) __obj.updateDynamic("msgFetchingData")(msgFetchingData)
+    if (msgNoData != null) __obj.updateDynamic("msgNoData")(msgNoData)
+    if (overflowItemLabel != null) __obj.updateDynamic("overflowItemLabel")(overflowItemLabel)
+    if (removeCueText != null) __obj.updateDynamic("removeCueText")(removeCueText)
+    if (selectedLabel != null) __obj.updateDynamic("selectedLabel")(selectedLabel)
+    __obj.asInstanceOf[Anon_AccessibleReorderAfterItem]
+  }
+}
+

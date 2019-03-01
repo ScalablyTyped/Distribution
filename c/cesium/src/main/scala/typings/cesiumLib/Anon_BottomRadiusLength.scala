@@ -13,3 +13,22 @@ trait Anon_BottomRadiusLength extends js.Object {
   var topRadius: scala.Double
 }
 
+object Anon_BottomRadiusLength {
+  @scala.inline
+  def apply(
+    bottomRadius: scala.Double,
+    length: scala.Double,
+    topRadius: scala.Double,
+    numberOfVerticalLines: scala.Int | scala.Double = null,
+    slices: scala.Int | scala.Double = null
+  ): Anon_BottomRadiusLength = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottomRadius")(bottomRadius)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("topRadius")(topRadius)
+    if (numberOfVerticalLines != null) __obj.updateDynamic("numberOfVerticalLines")(numberOfVerticalLines.asInstanceOf[js.Any])
+    if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BottomRadiusLength]
+  }
+}
+

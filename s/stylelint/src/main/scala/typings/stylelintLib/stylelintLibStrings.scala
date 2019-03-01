@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object stylelintLibStrings {
   @js.native
-  sealed trait compact extends js.Object
+  sealed trait compact
+    extends stylelintLib.stylelintMod.FormatterType
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json
+    extends stylelintLib.stylelintMod.FormatterType
   
   @js.native
-  sealed trait less extends js.Object
+  sealed trait less
+    extends stylelintLib.stylelintMod.SyntaxType
   
   @js.native
-  sealed trait sass extends js.Object
+  sealed trait sass
+    extends stylelintLib.stylelintMod.SyntaxType
   
   @js.native
-  sealed trait scss extends js.Object
+  sealed trait scss
+    extends stylelintLib.stylelintMod.SyntaxType
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends stylelintLib.stylelintMod.FormatterType
   
   @js.native
-  sealed trait sugarss extends js.Object
+  sealed trait sugarss
+    extends stylelintLib.stylelintMod.SyntaxType
   
   @js.native
-  sealed trait verbose extends js.Object
+  sealed trait verbose
+    extends stylelintLib.stylelintMod.FormatterType
   
   @scala.inline
   def compact: compact = "compact".asInstanceOf[compact]

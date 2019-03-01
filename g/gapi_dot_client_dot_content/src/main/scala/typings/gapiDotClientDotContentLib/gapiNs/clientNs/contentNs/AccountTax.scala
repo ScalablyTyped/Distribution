@@ -14,3 +14,18 @@ trait AccountTax extends js.Object {
   var rules: js.UndefOr[js.Array[AccountTaxTaxRule]] = js.undefined
 }
 
+object AccountTax {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    kind: java.lang.String = null,
+    rules: js.Array[AccountTaxTaxRule] = null
+  ): AccountTax = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[AccountTax]
+  }
+}
+

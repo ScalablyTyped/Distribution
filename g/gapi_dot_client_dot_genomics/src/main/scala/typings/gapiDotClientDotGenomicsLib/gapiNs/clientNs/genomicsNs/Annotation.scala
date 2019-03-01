@@ -55,3 +55,36 @@ trait Annotation extends js.Object {
   var variant: js.UndefOr[VariantAnnotation] = js.undefined
 }
 
+object Annotation {
+  @scala.inline
+  def apply(
+    annotationSetId: java.lang.String = null,
+    end: java.lang.String = null,
+    id: java.lang.String = null,
+    info: stdLib.Record[java.lang.String, js.Array[_]] = null,
+    name: java.lang.String = null,
+    referenceId: java.lang.String = null,
+    referenceName: java.lang.String = null,
+    reverseStrand: js.UndefOr[scala.Boolean] = js.undefined,
+    start: java.lang.String = null,
+    transcript: Transcript = null,
+    `type`: java.lang.String = null,
+    variant: VariantAnnotation = null
+  ): Annotation = {
+    val __obj = js.Dynamic.literal()
+    if (annotationSetId != null) __obj.updateDynamic("annotationSetId")(annotationSetId)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (referenceId != null) __obj.updateDynamic("referenceId")(referenceId)
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
+    if (!js.isUndefined(reverseStrand)) __obj.updateDynamic("reverseStrand")(reverseStrand)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (transcript != null) __obj.updateDynamic("transcript")(transcript)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (variant != null) __obj.updateDynamic("variant")(variant)
+    __obj.asInstanceOf[Annotation]
+  }
+}
+

@@ -16,3 +16,28 @@ trait JSONAPIErrorOptions extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JSONAPIErrorOptions {
+  @scala.inline
+  def apply(
+    code: java.lang.String = null,
+    detail: java.lang.String = null,
+    id: java.lang.String = null,
+    links: jsonapiDashSerializerLib.Anon_About = null,
+    meta: js.Any = null,
+    source: jsonapiDashSerializerLib.Anon_Parameter = null,
+    status: java.lang.String = null,
+    title: java.lang.String = null
+  ): JSONAPIErrorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (links != null) __obj.updateDynamic("links")(links)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[JSONAPIErrorOptions]
+  }
+}
+

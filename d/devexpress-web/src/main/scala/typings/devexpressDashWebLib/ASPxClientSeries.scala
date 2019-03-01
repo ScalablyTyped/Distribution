@@ -131,3 +131,64 @@ trait ASPxClientSeries extends ASPxClientWebChartElementNamed {
   var visible: scala.Boolean
 }
 
+object ASPxClientSeries {
+  @scala.inline
+  def apply(
+    actualCrosshairEnabled: scala.Boolean,
+    actualCrosshairLabelVisibility: scala.Boolean,
+    argumentScaleType: java.lang.String,
+    axisX: java.lang.String,
+    axisY: java.lang.String,
+    chart: ASPxClientWebChart,
+    color: java.lang.String,
+    crosshairLabelPattern: java.lang.String,
+    crosshairValueItems: js.Array[ASPxClientCrosshairValueItem],
+    fibonacciIndicators: js.Array[ASPxClientFibonacciIndicator],
+    groupedElementsPattern: java.lang.String,
+    indicators: js.Array[ASPxClientIndicator],
+    label: ASPxClientSeriesLabel,
+    name: java.lang.String,
+    pane: java.lang.String,
+    points: js.Array[ASPxClientSeriesPoint],
+    regressionLines: js.Array[ASPxClientRegressionLine],
+    stackedGroup: java.lang.String,
+    titles: js.Array[ASPxClientSeriesTitle],
+    toolTipEnabled: scala.Boolean,
+    toolTipImage: java.lang.String,
+    toolTipText: java.lang.String,
+    trendLines: js.Array[ASPxClientTrendLine],
+    valueScaleType: java.lang.String,
+    viewType: java.lang.String,
+    visible: scala.Boolean
+  ): ASPxClientSeries = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actualCrosshairEnabled")(actualCrosshairEnabled)
+    __obj.updateDynamic("actualCrosshairLabelVisibility")(actualCrosshairLabelVisibility)
+    __obj.updateDynamic("argumentScaleType")(argumentScaleType)
+    __obj.updateDynamic("axisX")(axisX)
+    __obj.updateDynamic("axisY")(axisY)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("crosshairLabelPattern")(crosshairLabelPattern)
+    __obj.updateDynamic("crosshairValueItems")(crosshairValueItems)
+    __obj.updateDynamic("fibonacciIndicators")(fibonacciIndicators)
+    __obj.updateDynamic("groupedElementsPattern")(groupedElementsPattern)
+    __obj.updateDynamic("indicators")(indicators)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("pane")(pane)
+    __obj.updateDynamic("points")(points)
+    __obj.updateDynamic("regressionLines")(regressionLines)
+    __obj.updateDynamic("stackedGroup")(stackedGroup)
+    __obj.updateDynamic("titles")(titles)
+    __obj.updateDynamic("toolTipEnabled")(toolTipEnabled)
+    __obj.updateDynamic("toolTipImage")(toolTipImage)
+    __obj.updateDynamic("toolTipText")(toolTipText)
+    __obj.updateDynamic("trendLines")(trendLines)
+    __obj.updateDynamic("valueScaleType")(valueScaleType)
+    __obj.updateDynamic("viewType")(viewType)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ASPxClientSeries]
+  }
+}
+

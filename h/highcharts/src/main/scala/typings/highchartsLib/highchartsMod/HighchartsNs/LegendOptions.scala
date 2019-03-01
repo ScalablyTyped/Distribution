@@ -224,3 +224,84 @@ trait LegendOptions extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LegendOptions {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    backgroundColor: java.lang.String | Gradient = null,
+    borderColor: java.lang.String | Gradient = null,
+    borderRadius: scala.Int | scala.Double = null,
+    borderWidth: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    floating: js.UndefOr[scala.Boolean] = js.undefined,
+    itemDistance: scala.Int | scala.Double = null,
+    itemHiddenStyle: CSSObject = null,
+    itemHoverStyle: CSSObject = null,
+    itemMarginBottom: scala.Int | scala.Double = null,
+    itemMarginTop: scala.Int | scala.Double = null,
+    itemStyle: CSSObject = null,
+    itemWidth: scala.Int | scala.Double = null,
+    labelFormat: java.lang.String = null,
+    labelFormatter: js.Function0[java.lang.String] = null,
+    layout: java.lang.String = null,
+    lineHeight: scala.Int | scala.Double = null,
+    margin: scala.Int | scala.Double = null,
+    maxHeight: scala.Int | scala.Double = null,
+    navigation: LegendNavigationOptions = null,
+    padding: scala.Int | scala.Double = null,
+    reversed: js.UndefOr[scala.Boolean] = js.undefined,
+    rtl: js.UndefOr[scala.Boolean] = js.undefined,
+    shadow: scala.Boolean | Shadow = null,
+    style: CSSObject = null,
+    symbolHeight: scala.Int | scala.Double = null,
+    symbolPadding: scala.Int | scala.Double = null,
+    symbolRadius: scala.Int | scala.Double = null,
+    symbolWidth: scala.Int | scala.Double = null,
+    title: LegendTitleOptions = null,
+    useHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlign: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): LegendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
+    if (itemDistance != null) __obj.updateDynamic("itemDistance")(itemDistance.asInstanceOf[js.Any])
+    if (itemHiddenStyle != null) __obj.updateDynamic("itemHiddenStyle")(itemHiddenStyle)
+    if (itemHoverStyle != null) __obj.updateDynamic("itemHoverStyle")(itemHoverStyle)
+    if (itemMarginBottom != null) __obj.updateDynamic("itemMarginBottom")(itemMarginBottom.asInstanceOf[js.Any])
+    if (itemMarginTop != null) __obj.updateDynamic("itemMarginTop")(itemMarginTop.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
+    if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat)
+    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (symbolHeight != null) __obj.updateDynamic("symbolHeight")(symbolHeight.asInstanceOf[js.Any])
+    if (symbolPadding != null) __obj.updateDynamic("symbolPadding")(symbolPadding.asInstanceOf[js.Any])
+    if (symbolRadius != null) __obj.updateDynamic("symbolRadius")(symbolRadius.asInstanceOf[js.Any])
+    if (symbolWidth != null) __obj.updateDynamic("symbolWidth")(symbolWidth.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LegendOptions]
+  }
+}
+

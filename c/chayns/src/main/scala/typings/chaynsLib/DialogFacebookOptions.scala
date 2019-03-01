@@ -14,3 +14,24 @@ trait DialogFacebookOptions extends js.Object {
   var title: java.lang.String
 }
 
+object DialogFacebookOptions {
+  @scala.inline
+  def apply(
+    preSelected: js.Array[scala.Double],
+    title: java.lang.String,
+    button: js.Array[DialogFacebookButton] = null,
+    message: java.lang.String = null,
+    multiselect: scala.Int | scala.Double = null,
+    quickfind: scala.Int | scala.Double = null
+  ): DialogFacebookOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("preSelected")(preSelected)
+    __obj.updateDynamic("title")(title)
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (multiselect != null) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
+    if (quickfind != null) __obj.updateDynamic("quickfind")(quickfind.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogFacebookOptions]
+  }
+}
+

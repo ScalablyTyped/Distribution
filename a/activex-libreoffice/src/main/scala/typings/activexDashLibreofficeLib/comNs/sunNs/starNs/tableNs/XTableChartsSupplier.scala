@@ -20,3 +20,22 @@ trait XTableChartsSupplier
   def getCharts(): XTableCharts
 }
 
+object XTableChartsSupplier {
+  @scala.inline
+  def apply(
+    Charts: XTableCharts,
+    acquire: js.Function0[scala.Unit],
+    getCharts: js.Function0[XTableCharts],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTableChartsSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Charts")(Charts)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCharts")(getCharts)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTableChartsSupplier]
+  }
+}
+

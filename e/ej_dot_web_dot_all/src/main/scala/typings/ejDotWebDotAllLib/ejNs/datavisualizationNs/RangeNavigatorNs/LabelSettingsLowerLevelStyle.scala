@@ -15,3 +15,13 @@ trait LabelSettingsLowerLevelStyle extends js.Object {
   var horizontalAlignment: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LabelSettingsLowerLevelStyle {
+  @scala.inline
+  def apply(font: LabelSettingsLowerLevelStyleFont = null, horizontalAlignment: java.lang.String = null): LabelSettingsLowerLevelStyle = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    __obj.asInstanceOf[LabelSettingsLowerLevelStyle]
+  }
+}
+

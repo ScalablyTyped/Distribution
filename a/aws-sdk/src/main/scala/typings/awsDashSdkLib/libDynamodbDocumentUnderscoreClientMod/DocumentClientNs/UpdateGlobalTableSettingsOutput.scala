@@ -16,3 +16,13 @@ trait UpdateGlobalTableSettingsOutput extends js.Object {
   var ReplicaSettings: js.UndefOr[ReplicaSettingsDescriptionList] = js.undefined
 }
 
+object UpdateGlobalTableSettingsOutput {
+  @scala.inline
+  def apply(GlobalTableName: TableName = null, ReplicaSettings: ReplicaSettingsDescriptionList = null): UpdateGlobalTableSettingsOutput = {
+    val __obj = js.Dynamic.literal()
+    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName)
+    if (ReplicaSettings != null) __obj.updateDynamic("ReplicaSettings")(ReplicaSettings)
+    __obj.asInstanceOf[UpdateGlobalTableSettingsOutput]
+  }
+}
+

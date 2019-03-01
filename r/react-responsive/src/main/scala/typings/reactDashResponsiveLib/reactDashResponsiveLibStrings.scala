@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object reactDashResponsiveLibStrings {
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
-  sealed trait aural extends js.Object
+  sealed trait aural
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
-  sealed trait braille extends js.Object
+  sealed trait braille
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
-  sealed trait embossed extends js.Object
+  sealed trait embossed
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
-  sealed trait grid extends js.Object
+  sealed trait grid
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
-  sealed trait handheld extends js.Object
+  sealed trait handheld
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
   sealed trait interlace extends js.Object
@@ -34,22 +40,27 @@ object reactDashResponsiveLibStrings {
   sealed trait portrait extends js.Object
   
   @js.native
-  sealed trait print extends js.Object
+  sealed trait print
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
   sealed trait progressive extends js.Object
   
   @js.native
-  sealed trait projection extends js.Object
+  sealed trait projection
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
-  sealed trait screen extends js.Object
+  sealed trait screen
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
-  sealed trait tty extends js.Object
+  sealed trait tty
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @js.native
-  sealed trait tv extends js.Object
+  sealed trait tv
+    extends reactDashResponsiveLib.reactDashResponsiveMod.MediaQueryType
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

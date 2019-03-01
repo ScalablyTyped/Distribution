@@ -139,3 +139,34 @@ trait JSTreeStaticDefaultsCore extends js.Object {
   def error(): js.Any
 }
 
+object JSTreeStaticDefaultsCore {
+  @scala.inline
+  def apply(
+    error: js.Function0[js.Any],
+    animation: js.Any = null,
+    check_callback: js.Any = null,
+    data: js.Any = null,
+    dblclick_toggle: js.UndefOr[scala.Boolean] = js.undefined,
+    expand_selected_onload: js.UndefOr[scala.Boolean] = js.undefined,
+    force_text: js.UndefOr[scala.Boolean] = js.undefined,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    strings: js.Any = null,
+    themes: JSTreeStaticDefaultsCoreThemes = null,
+    worker: js.UndefOr[scala.Boolean] = js.undefined
+  ): JSTreeStaticDefaultsCore = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (check_callback != null) __obj.updateDynamic("check_callback")(check_callback)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(dblclick_toggle)) __obj.updateDynamic("dblclick_toggle")(dblclick_toggle)
+    if (!js.isUndefined(expand_selected_onload)) __obj.updateDynamic("expand_selected_onload")(expand_selected_onload)
+    if (!js.isUndefined(force_text)) __obj.updateDynamic("force_text")(force_text)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (strings != null) __obj.updateDynamic("strings")(strings)
+    if (themes != null) __obj.updateDynamic("themes")(themes)
+    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker)
+    __obj.asInstanceOf[JSTreeStaticDefaultsCore]
+  }
+}
+

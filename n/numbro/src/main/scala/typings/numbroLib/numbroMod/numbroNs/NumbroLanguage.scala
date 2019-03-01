@@ -19,3 +19,34 @@ trait NumbroLanguage extends js.Object {
   def ordinal(num: scala.Double): java.lang.String
 }
 
+object NumbroLanguage {
+  @scala.inline
+  def apply(
+    abbreviations: numbroLib.Anon_Billion,
+    currency: numbroLib.Anon_Code,
+    delimiters: numbroLib.Anon_Decimal,
+    formats: numbroLib.Anon_FourDigits,
+    languageTag: java.lang.String,
+    ordinal: js.Function1[scala.Double, java.lang.String],
+    byteFormat: Format = null,
+    currencyFormat: Format = null,
+    defaults: Format = null,
+    ordinalFormat: Format = null,
+    percentageFormat: Format = null
+  ): NumbroLanguage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abbreviations")(abbreviations)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("delimiters")(delimiters)
+    __obj.updateDynamic("formats")(formats)
+    __obj.updateDynamic("languageTag")(languageTag)
+    __obj.updateDynamic("ordinal")(ordinal)
+    if (byteFormat != null) __obj.updateDynamic("byteFormat")(byteFormat)
+    if (currencyFormat != null) __obj.updateDynamic("currencyFormat")(currencyFormat)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (ordinalFormat != null) __obj.updateDynamic("ordinalFormat")(ordinalFormat)
+    if (percentageFormat != null) __obj.updateDynamic("percentageFormat")(percentageFormat)
+    __obj.asInstanceOf[NumbroLanguage]
+  }
+}
+

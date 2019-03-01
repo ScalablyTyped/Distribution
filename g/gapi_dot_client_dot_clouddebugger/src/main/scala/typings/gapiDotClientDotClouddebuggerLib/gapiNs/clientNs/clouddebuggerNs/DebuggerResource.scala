@@ -9,3 +9,12 @@ trait DebuggerResource extends js.Object {
   var debuggees: DebuggeesResource
 }
 
+object DebuggerResource {
+  @scala.inline
+  def apply(debuggees: DebuggeesResource): DebuggerResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("debuggees")(debuggees)
+    __obj.asInstanceOf[DebuggerResource]
+  }
+}
+

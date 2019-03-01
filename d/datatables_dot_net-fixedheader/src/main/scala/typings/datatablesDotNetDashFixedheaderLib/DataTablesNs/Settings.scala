@@ -12,3 +12,12 @@ trait Settings extends js.Object {
   var fixedHeader: js.UndefOr[scala.Boolean | FixedHeaderSettings] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(fixedHeader: scala.Boolean | FixedHeaderSettings = null): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (fixedHeader != null) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Settings]
+  }
+}
+

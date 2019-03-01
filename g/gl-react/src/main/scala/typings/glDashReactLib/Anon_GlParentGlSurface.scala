@@ -10,3 +10,13 @@ trait Anon_GlParentGlSurface extends js.Object {
   var glSurface: js.Any
 }
 
+object Anon_GlParentGlSurface {
+  @scala.inline
+  def apply(glParent: js.Any, glSurface: js.Any): Anon_GlParentGlSurface = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("glParent")(glParent)
+    __obj.updateDynamic("glSurface")(glSurface)
+    __obj.asInstanceOf[Anon_GlParentGlSurface]
+  }
+}
+

@@ -10,3 +10,12 @@ trait CommitResponse extends js.Object {
   var commitTimestamp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommitResponse {
+  @scala.inline
+  def apply(commitTimestamp: java.lang.String = null): CommitResponse = {
+    val __obj = js.Dynamic.literal()
+    if (commitTimestamp != null) __obj.updateDynamic("commitTimestamp")(commitTimestamp)
+    __obj.asInstanceOf[CommitResponse]
+  }
+}
+

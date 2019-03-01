@@ -17,3 +17,12 @@ trait AcknowledgeTaskRequest extends js.Object {
   var scheduleTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AcknowledgeTaskRequest {
+  @scala.inline
+  def apply(scheduleTime: java.lang.String = null): AcknowledgeTaskRequest = {
+    val __obj = js.Dynamic.literal()
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    __obj.asInstanceOf[AcknowledgeTaskRequest]
+  }
+}
+

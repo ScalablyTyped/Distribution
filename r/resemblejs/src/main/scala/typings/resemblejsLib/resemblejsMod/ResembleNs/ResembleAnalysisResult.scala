@@ -12,3 +12,15 @@ trait ResembleAnalysisResult extends js.Object {
   var red: scala.Double
 }
 
+object ResembleAnalysisResult {
+  @scala.inline
+  def apply(blue: scala.Double, brightness: scala.Double, green: scala.Double, red: scala.Double): ResembleAnalysisResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blue")(blue)
+    __obj.updateDynamic("brightness")(brightness)
+    __obj.updateDynamic("green")(green)
+    __obj.updateDynamic("red")(red)
+    __obj.asInstanceOf[ResembleAnalysisResult]
+  }
+}
+

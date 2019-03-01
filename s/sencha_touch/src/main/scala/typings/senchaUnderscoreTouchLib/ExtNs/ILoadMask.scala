@@ -63,3 +63,46 @@ trait ILoadMask extends IMask {
   var store: js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IStore] = js.undefined
 }
 
+object ILoadMask {
+  @scala.inline
+  def apply(
+    IMask: IMask = null,
+    bindStore: js.Function1[/* store */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IStore], scala.Unit] = null,
+    cls: java.lang.String = null,
+    getCls: js.Function0[java.lang.String] = null,
+    getIndicator: js.Function0[scala.Boolean] = null,
+    getMessage: js.Function0[java.lang.String] = null,
+    getMessageCls: js.Function0[java.lang.String] = null,
+    indicator: js.UndefOr[scala.Boolean] = js.undefined,
+    message: java.lang.String = null,
+    messageCls: java.lang.String = null,
+    msg: java.lang.String = null,
+    msgCls: java.lang.String = null,
+    setCls: js.Function1[/* cls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setIndicator: js.Function1[/* indicator */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setMessage: js.Function1[/* message */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setMessageCls: js.Function1[/* messageCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    store: senchaUnderscoreTouchLib.ExtNs.dataNs.IStore = null
+  ): ILoadMask = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IMask)
+    if (bindStore != null) __obj.updateDynamic("bindStore")(bindStore)
+    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (getCls != null) __obj.updateDynamic("getCls")(getCls)
+    if (getIndicator != null) __obj.updateDynamic("getIndicator")(getIndicator)
+    if (getMessage != null) __obj.updateDynamic("getMessage")(getMessage)
+    if (getMessageCls != null) __obj.updateDynamic("getMessageCls")(getMessageCls)
+    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (messageCls != null) __obj.updateDynamic("messageCls")(messageCls)
+    if (msg != null) __obj.updateDynamic("msg")(msg)
+    if (msgCls != null) __obj.updateDynamic("msgCls")(msgCls)
+    if (setCls != null) __obj.updateDynamic("setCls")(setCls)
+    if (setIndicator != null) __obj.updateDynamic("setIndicator")(setIndicator)
+    if (setMessage != null) __obj.updateDynamic("setMessage")(setMessage)
+    if (setMessageCls != null) __obj.updateDynamic("setMessageCls")(setMessageCls)
+    if (store != null) __obj.updateDynamic("store")(store)
+    __obj.asInstanceOf[ILoadMask]
+  }
+}
+

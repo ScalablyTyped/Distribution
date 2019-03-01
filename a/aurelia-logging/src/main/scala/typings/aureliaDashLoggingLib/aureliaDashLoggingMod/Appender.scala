@@ -36,3 +36,20 @@ trait Appender extends js.Object {
   def warn(logger: Logger, rest: js.Any*): scala.Unit
 }
 
+object Appender {
+  @scala.inline
+  def apply(
+    debug: js.Function2[Logger, /* repeated */ js.Any, scala.Unit],
+    error: js.Function2[Logger, /* repeated */ js.Any, scala.Unit],
+    info: js.Function2[Logger, /* repeated */ js.Any, scala.Unit],
+    warn: js.Function2[Logger, /* repeated */ js.Any, scala.Unit]
+  ): Appender = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("warn")(warn)
+    __obj.asInstanceOf[Appender]
+  }
+}
+

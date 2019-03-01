@@ -116,3 +116,58 @@ trait OptionsTopBar extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OptionsTopBar {
+  @scala.inline
+  def apply(
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    backButton: OptionsTopBarBackButton = null,
+    background: OptionsTopBarBackground = null,
+    barStyle: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.default | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.black = null,
+    borderColor: Color = null,
+    borderHeight: js.UndefOr[AndroidDensityNumber] = js.undefined,
+    buttonColor: Color = null,
+    drawBehind: js.UndefOr[scala.Boolean] = js.undefined,
+    elevation: js.UndefOr[AndroidDensityNumber] = js.undefined,
+    height: js.UndefOr[AndroidDensityNumber] = js.undefined,
+    hideNavBarOnFocusSearchBar: js.UndefOr[scala.Boolean] = js.undefined,
+    hideOnScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    largeTitle: OptionsTopBarLargeTitle = null,
+    leftButtons: js.Array[OptionsTopBarButton] = null,
+    noBorder: js.UndefOr[scala.Boolean] = js.undefined,
+    rightButtons: js.Array[OptionsTopBarButton] = null,
+    searchBar: js.UndefOr[scala.Boolean] = js.undefined,
+    searchBarHiddenWhenScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    searchBarPlaceholder: java.lang.String = null,
+    subtitle: OptionsTopBarSubtitle = null,
+    testID: java.lang.String = null,
+    title: OptionsTopBarTitle = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): OptionsTopBar = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (backButton != null) __obj.updateDynamic("backButton")(backButton)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (!js.isUndefined(borderHeight)) __obj.updateDynamic("borderHeight")(borderHeight)
+    if (buttonColor != null) __obj.updateDynamic("buttonColor")(buttonColor)
+    if (!js.isUndefined(drawBehind)) __obj.updateDynamic("drawBehind")(drawBehind)
+    if (!js.isUndefined(elevation)) __obj.updateDynamic("elevation")(elevation)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(hideNavBarOnFocusSearchBar)) __obj.updateDynamic("hideNavBarOnFocusSearchBar")(hideNavBarOnFocusSearchBar)
+    if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll)
+    if (largeTitle != null) __obj.updateDynamic("largeTitle")(largeTitle)
+    if (leftButtons != null) __obj.updateDynamic("leftButtons")(leftButtons)
+    if (!js.isUndefined(noBorder)) __obj.updateDynamic("noBorder")(noBorder)
+    if (rightButtons != null) __obj.updateDynamic("rightButtons")(rightButtons)
+    if (!js.isUndefined(searchBar)) __obj.updateDynamic("searchBar")(searchBar)
+    if (!js.isUndefined(searchBarHiddenWhenScrolling)) __obj.updateDynamic("searchBarHiddenWhenScrolling")(searchBarHiddenWhenScrolling)
+    if (searchBarPlaceholder != null) __obj.updateDynamic("searchBarPlaceholder")(searchBarPlaceholder)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[OptionsTopBar]
+  }
+}
+

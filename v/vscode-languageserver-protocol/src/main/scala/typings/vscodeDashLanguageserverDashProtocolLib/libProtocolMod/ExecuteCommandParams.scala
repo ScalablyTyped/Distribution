@@ -16,3 +16,13 @@ trait ExecuteCommandParams extends js.Object {
   var command: java.lang.String
 }
 
+object ExecuteCommandParams {
+  @scala.inline
+  def apply(command: java.lang.String, arguments: js.Array[_] = null): ExecuteCommandParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("command")(command)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    __obj.asInstanceOf[ExecuteCommandParams]
+  }
+}
+

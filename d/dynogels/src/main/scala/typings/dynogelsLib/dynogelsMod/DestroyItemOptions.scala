@@ -16,3 +16,28 @@ trait DestroyItemOptions extends js.Object {
   var ReturnValues: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnValue] = js.undefined
 }
 
+object DestroyItemOptions {
+  @scala.inline
+  def apply(
+    ConditionExpression: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionExpression = null,
+    ConditionalOperator: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionalOperator = null,
+    Expected: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ExpectedAttributeMap = null,
+    ExpressionAttributeNames: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ExpressionAttributeNameMap = null,
+    ExpressionAttributeValues: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    ReturnConsumedCapacity: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnConsumedCapacity = null,
+    ReturnItemCollectionMetrics: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnItemCollectionMetrics = null,
+    ReturnValues: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ReturnValue = null
+  ): DestroyItemOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
+    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
+    if (Expected != null) __obj.updateDynamic("Expected")(Expected)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
+    if (ReturnItemCollectionMetrics != null) __obj.updateDynamic("ReturnItemCollectionMetrics")(ReturnItemCollectionMetrics.asInstanceOf[js.Any])
+    if (ReturnValues != null) __obj.updateDynamic("ReturnValues")(ReturnValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DestroyItemOptions]
+  }
+}
+

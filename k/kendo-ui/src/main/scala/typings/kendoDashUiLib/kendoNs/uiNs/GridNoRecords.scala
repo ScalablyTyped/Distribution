@@ -9,3 +9,12 @@ trait GridNoRecords extends js.Object {
   var template: js.UndefOr[java.lang.String | js.Function] = js.undefined
 }
 
+object GridNoRecords {
+  @scala.inline
+  def apply(template: java.lang.String | js.Function = null): GridNoRecords = {
+    val __obj = js.Dynamic.literal()
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridNoRecords]
+  }
+}
+

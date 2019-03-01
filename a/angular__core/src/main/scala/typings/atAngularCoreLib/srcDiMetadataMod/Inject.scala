@@ -12,3 +12,12 @@ trait Inject extends js.Object {
   var token: js.Any
 }
 
+object Inject {
+  @scala.inline
+  def apply(token: js.Any): Inject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[Inject]
+  }
+}
+

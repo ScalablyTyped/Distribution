@@ -25,3 +25,30 @@ trait XMenuProxy
   def removeMenuProxyListener(xListener: XMenuProxyListener): scala.Unit
 }
 
+object XMenuProxy {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addMenuProxyListener: js.Function1[XMenuProxyListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    executeMenuItem: js.Function1[scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeMenuProxyListener: js.Function1[XMenuProxyListener, scala.Unit]
+  ): XMenuProxy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addMenuProxyListener")(addMenuProxyListener)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("executeMenuItem")(executeMenuItem)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removeMenuProxyListener")(removeMenuProxyListener)
+    __obj.asInstanceOf[XMenuProxy]
+  }
+}
+

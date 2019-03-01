@@ -30,3 +30,20 @@ trait Tracing extends js.Object {
   def enable(): scala.Unit
 }
 
+object Tracing {
+  @scala.inline
+  def apply(
+    categories: java.lang.String,
+    disable: js.Function0[scala.Unit],
+    enable: js.Function0[scala.Unit],
+    enabled: scala.Boolean
+  ): Tracing = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("categories")(categories)
+    __obj.updateDynamic("disable")(disable)
+    __obj.updateDynamic("enable")(enable)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[Tracing]
+  }
+}
+

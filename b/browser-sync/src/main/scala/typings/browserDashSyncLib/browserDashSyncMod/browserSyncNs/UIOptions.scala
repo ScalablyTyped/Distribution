@@ -12,3 +12,13 @@ trait UIOptions extends js.Object {
   var weinre: js.UndefOr[browserDashSyncLib.Anon_Port] = js.undefined
 }
 
+object UIOptions {
+  @scala.inline
+  def apply(port: scala.Int | scala.Double = null, weinre: browserDashSyncLib.Anon_Port = null): UIOptions = {
+    val __obj = js.Dynamic.literal()
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (weinre != null) __obj.updateDynamic("weinre")(weinre)
+    __obj.asInstanceOf[UIOptions]
+  }
+}
+

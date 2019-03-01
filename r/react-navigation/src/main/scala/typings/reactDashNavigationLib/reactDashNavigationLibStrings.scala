@@ -49,10 +49,12 @@ object reactDashNavigationLibStrings {
   sealed trait `Navigation/URI` extends js.Object
   
   @js.native
-  sealed trait action extends js.Object
+  sealed trait action
+    extends reactDashNavigationLib.reactDashNavigationMod.EventType
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends reactDashNavigationLib.reactDashNavigationMod.SafeAreaViewForceInsetValue
   
   @js.native
   sealed trait bottom extends js.Object
@@ -67,19 +69,23 @@ object reactDashNavigationLibStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait didBlur extends js.Object
+  sealed trait didBlur
+    extends reactDashNavigationLib.reactDashNavigationMod.EventType
   
   @js.native
-  sealed trait didFocus extends js.Object
+  sealed trait didFocus
+    extends reactDashNavigationLib.reactDashNavigationMod.EventType
   
   @js.native
   sealed trait `fade-in-place` extends js.Object
   
   @js.native
-  sealed trait float extends js.Object
+  sealed trait float
+    extends reactDashNavigationLib.reactDashNavigationMod.HeaderMode
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends reactDashNavigationLib.reactDashNavigationMod.NavigationGestureDirection
   
   @js.native
   sealed trait initialRoute extends js.Object
@@ -94,10 +100,12 @@ object reactDashNavigationLibStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait `locked-closed` extends js.Object
+  sealed trait `locked-closed`
+    extends reactDashNavigationLib.reactDashNavigationMod.DrawerLockMode
   
   @js.native
-  sealed trait `locked-open` extends js.Object
+  sealed trait `locked-open`
+    extends reactDashNavigationLib.reactDashNavigationMod.DrawerLockMode
   
   @js.native
   sealed trait modal extends js.Object
@@ -106,25 +114,31 @@ object reactDashNavigationLibStrings {
   sealed trait navigation extends js.Object
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait never
+    extends reactDashNavigationLib.reactDashNavigationMod.SafeAreaViewForceInsetValue
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashNavigationLib.reactDashNavigationMod.HeaderMode
   
   @js.native
-  sealed trait `react-navigation/DRAWER` extends js.Object
+  sealed trait `react-navigation/DRAWER`
+    extends reactDashNavigationLib.reactDashNavigationMod.NavigatorType
   
   @js.native
-  sealed trait `react-navigation/STACK` extends js.Object
+  sealed trait `react-navigation/STACK`
+    extends reactDashNavigationLib.reactDashNavigationMod.NavigatorType
   
   @js.native
-  sealed trait `react-navigation/TABS` extends js.Object
+  sealed trait `react-navigation/TABS`
+    extends reactDashNavigationLib.reactDashNavigationMod.NavigatorType
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait screen extends js.Object
+  sealed trait screen
+    extends reactDashNavigationLib.reactDashNavigationMod.HeaderMode
   
   @js.native
   sealed trait top extends js.Object
@@ -133,16 +147,20 @@ object reactDashNavigationLibStrings {
   sealed trait uikit extends js.Object
   
   @js.native
-  sealed trait unlocked extends js.Object
+  sealed trait unlocked
+    extends reactDashNavigationLib.reactDashNavigationMod.DrawerLockMode
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends reactDashNavigationLib.reactDashNavigationMod.NavigationGestureDirection
   
   @js.native
-  sealed trait willBlur extends js.Object
+  sealed trait willBlur
+    extends reactDashNavigationLib.reactDashNavigationMod.EventType
   
   @js.native
-  sealed trait willFocus extends js.Object
+  sealed trait willFocus
+    extends reactDashNavigationLib.reactDashNavigationMod.EventType
   
   @scala.inline
   def `Navigation/BACK`: `Navigation/BACK` = "Navigation/BACK".asInstanceOf[`Navigation/BACK`]

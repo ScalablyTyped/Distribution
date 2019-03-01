@@ -14,3 +14,24 @@ trait FiveRatingSet
   var twoBars: Icon
 }
 
+object FiveRatingSet {
+  @scala.inline
+  def apply(
+    fourBars: Icon,
+    noBars: Icon,
+    oneBar: Icon,
+    threeBars: Icon,
+    twoBars: Icon,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
+  ): FiveRatingSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fourBars")(fourBars)
+    __obj.updateDynamic("noBars")(noBars)
+    __obj.updateDynamic("oneBar")(oneBar)
+    __obj.updateDynamic("threeBars")(threeBars)
+    __obj.updateDynamic("twoBars")(twoBars)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[FiveRatingSet]
+  }
+}
+

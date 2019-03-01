@@ -14,3 +14,14 @@ trait Index extends js.Object {
   var offset: scala.Double
 }
 
+object Index {
+  @scala.inline
+  def apply(column: scala.Double, line: scala.Double, offset: scala.Double): Index = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("offset")(offset)
+    __obj.asInstanceOf[Index]
+  }
+}
+

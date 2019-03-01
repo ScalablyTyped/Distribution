@@ -25,3 +25,22 @@ trait Options extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    emitError: js.UndefOr[scala.Boolean] = js.undefined,
+    exclude: js.Function1[/* instance */ PackageInstanceProperties, scala.Boolean] = null,
+    showHelp: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(emitError)) __obj.updateDynamic("emitError")(emitError)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (!js.isUndefined(showHelp)) __obj.updateDynamic("showHelp")(showHelp)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[Options]
+  }
+}
+

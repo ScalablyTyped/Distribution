@@ -13,7 +13,7 @@ class IO[A] protected () extends js.Object {
   val _URI: URI = js.native
   def ap[B](fab: IO[js.Function1[/* a */ A, B]]): IO[B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     */
   def `ap_`[B, C](`this`: IO[js.Function1[/* b */ B, C]], fb: IO[B]): IO[C] = js.native
   /**

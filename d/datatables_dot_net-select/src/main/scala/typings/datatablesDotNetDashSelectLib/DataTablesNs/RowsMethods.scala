@@ -16,3 +16,13 @@ trait RowsMethods extends js.Object {
   def select(): Api
 }
 
+object RowsMethods {
+  @scala.inline
+  def apply(deselect: js.Function0[Api], select: js.Function0[Api]): RowsMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deselect")(deselect)
+    __obj.updateDynamic("select")(select)
+    __obj.asInstanceOf[RowsMethods]
+  }
+}
+

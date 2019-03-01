@@ -31,3 +31,14 @@ trait IImageInfo extends js.Object {
   var width: scala.Double
 }
 
+object IImageInfo {
+  @scala.inline
+  def apply(height: scala.Double, source: java.lang.String, `type`: java.lang.String, width: scala.Double): IImageInfo = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[IImageInfo]
+  }
+}
+

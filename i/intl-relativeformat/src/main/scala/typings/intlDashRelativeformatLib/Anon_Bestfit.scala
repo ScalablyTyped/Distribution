@@ -27,3 +27,16 @@ trait Anon_Bestfit extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Bestfit {
+  @scala.inline
+  def apply(
+    style: (intlDashRelativeformatLib.intlDashRelativeformatLibStrings.`best fit`) | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.numeric = null,
+    units: intlDashRelativeformatLib.intlDashRelativeformatLibStrings.second | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.`second-short` | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.minute | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.`minute-short` | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.hour | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.`hour-short` | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.day | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.`day-short` | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.month | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.`month-short` | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.year | intlDashRelativeformatLib.intlDashRelativeformatLibStrings.`year-short` = null
+  ): Anon_Bestfit = {
+    val __obj = js.Dynamic.literal()
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Bestfit]
+  }
+}
+

@@ -10,3 +10,12 @@ trait PlaylistStatus extends js.Object {
   var privacyStatus: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PlaylistStatus {
+  @scala.inline
+  def apply(privacyStatus: java.lang.String = null): PlaylistStatus = {
+    val __obj = js.Dynamic.literal()
+    if (privacyStatus != null) __obj.updateDynamic("privacyStatus")(privacyStatus)
+    __obj.asInstanceOf[PlaylistStatus]
+  }
+}
+

@@ -33,3 +33,20 @@ trait IGridOptions extends js.Object {
   var enableCellEditOnFocus: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(
+    cellEditableCondition: js.Any | uiDashGridLib.Anon_Scope = null,
+    editableCellTemplate: java.lang.String = null,
+    enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCellEditOnFocus: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cellEditableCondition != null) __obj.updateDynamic("cellEditableCondition")(cellEditableCondition.asInstanceOf[js.Any])
+    if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate)
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
+    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

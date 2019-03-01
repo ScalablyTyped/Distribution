@@ -12,3 +12,12 @@ trait Anon_Zerobased extends js.Object {
   var zerobased: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Zerobased {
+  @scala.inline
+  def apply(zerobased: js.UndefOr[scala.Boolean] = js.undefined): Anon_Zerobased = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(zerobased)) __obj.updateDynamic("zerobased")(zerobased)
+    __obj.asInstanceOf[Anon_Zerobased]
+  }
+}
+

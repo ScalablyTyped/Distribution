@@ -15,3 +15,12 @@ trait LimitRangeSpec extends js.Object {
   val limits: js.Array[LimitRangeItem]
 }
 
+object LimitRangeSpec {
+  @scala.inline
+  def apply(limits: js.Array[LimitRangeItem]): LimitRangeSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("limits")(limits)
+    __obj.asInstanceOf[LimitRangeSpec]
+  }
+}
+

@@ -24,3 +24,44 @@ trait Anon_FILTERACCEPT extends js.Object {
   val SHOW_TEXT: scala.Double
 }
 
+object Anon_FILTERACCEPT {
+  @scala.inline
+  def apply(
+    FILTER_ACCEPT: scala.Double,
+    FILTER_REJECT: scala.Double,
+    FILTER_SKIP: scala.Double,
+    SHOW_ALL: scala.Double,
+    SHOW_ATTRIBUTE: scala.Double,
+    SHOW_CDATA_SECTION: scala.Double,
+    SHOW_COMMENT: scala.Double,
+    SHOW_DOCUMENT: scala.Double,
+    SHOW_DOCUMENT_FRAGMENT: scala.Double,
+    SHOW_DOCUMENT_TYPE: scala.Double,
+    SHOW_ELEMENT: scala.Double,
+    SHOW_ENTITY: scala.Double,
+    SHOW_ENTITY_REFERENCE: scala.Double,
+    SHOW_NOTATION: scala.Double,
+    SHOW_PROCESSING_INSTRUCTION: scala.Double,
+    SHOW_TEXT: scala.Double
+  ): Anon_FILTERACCEPT = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FILTER_ACCEPT")(FILTER_ACCEPT)
+    __obj.updateDynamic("FILTER_REJECT")(FILTER_REJECT)
+    __obj.updateDynamic("FILTER_SKIP")(FILTER_SKIP)
+    __obj.updateDynamic("SHOW_ALL")(SHOW_ALL)
+    __obj.updateDynamic("SHOW_ATTRIBUTE")(SHOW_ATTRIBUTE)
+    __obj.updateDynamic("SHOW_CDATA_SECTION")(SHOW_CDATA_SECTION)
+    __obj.updateDynamic("SHOW_COMMENT")(SHOW_COMMENT)
+    __obj.updateDynamic("SHOW_DOCUMENT")(SHOW_DOCUMENT)
+    __obj.updateDynamic("SHOW_DOCUMENT_FRAGMENT")(SHOW_DOCUMENT_FRAGMENT)
+    __obj.updateDynamic("SHOW_DOCUMENT_TYPE")(SHOW_DOCUMENT_TYPE)
+    __obj.updateDynamic("SHOW_ELEMENT")(SHOW_ELEMENT)
+    __obj.updateDynamic("SHOW_ENTITY")(SHOW_ENTITY)
+    __obj.updateDynamic("SHOW_ENTITY_REFERENCE")(SHOW_ENTITY_REFERENCE)
+    __obj.updateDynamic("SHOW_NOTATION")(SHOW_NOTATION)
+    __obj.updateDynamic("SHOW_PROCESSING_INSTRUCTION")(SHOW_PROCESSING_INSTRUCTION)
+    __obj.updateDynamic("SHOW_TEXT")(SHOW_TEXT)
+    __obj.asInstanceOf[Anon_FILTERACCEPT]
+  }
+}
+

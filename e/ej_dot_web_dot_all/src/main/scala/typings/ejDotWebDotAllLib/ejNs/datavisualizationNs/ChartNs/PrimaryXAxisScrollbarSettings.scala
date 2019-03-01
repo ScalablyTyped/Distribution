@@ -23,3 +23,20 @@ trait PrimaryXAxisScrollbarSettings extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PrimaryXAxisScrollbarSettings {
+  @scala.inline
+  def apply(
+    canResize: js.UndefOr[scala.Boolean] = js.undefined,
+    pointsLength: scala.Int | scala.Double = null,
+    range: PrimaryXAxisScrollbarSettingsRange = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): PrimaryXAxisScrollbarSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canResize)) __obj.updateDynamic("canResize")(canResize)
+    if (pointsLength != null) __obj.updateDynamic("pointsLength")(pointsLength.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[PrimaryXAxisScrollbarSettings]
+  }
+}
+

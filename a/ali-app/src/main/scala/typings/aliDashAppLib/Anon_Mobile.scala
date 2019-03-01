@@ -11,3 +11,13 @@ trait Anon_Mobile extends js.Object {
   var name: java.lang.String
 }
 
+object Anon_Mobile {
+  @scala.inline
+  def apply(mobile: java.lang.String, name: java.lang.String): Anon_Mobile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mobile")(mobile)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_Mobile]
+  }
+}
+

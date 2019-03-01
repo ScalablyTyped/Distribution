@@ -17,3 +17,19 @@ trait VariableMultipliersServerExecutionOptions extends ServerTargetExecutionOpt
   var multipliers: js.Array[java.lang.String]
 }
 
+object VariableMultipliersServerExecutionOptions {
+  @scala.inline
+  def apply(
+    continueOnError: scala.Boolean,
+    maxConcurrency: scala.Double,
+    multipliers: js.Array[java.lang.String],
+    `type`: scala.Double
+  ): VariableMultipliersServerExecutionOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("continueOnError")(continueOnError)
+    __obj.updateDynamic("maxConcurrency")(maxConcurrency)
+    __obj.updateDynamic("multipliers")(multipliers)
+    __obj.asInstanceOf[VariableMultipliersServerExecutionOptions]
+  }
+}
+

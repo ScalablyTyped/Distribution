@@ -65,3 +65,24 @@ trait IVariable
   def setNxProperties(qProperties: INxVariableProperties): js.Promise[scala.Unit]
 }
 
+object IVariable {
+  @scala.inline
+  def apply(
+    forceContent: js.Function2[java.lang.String, scala.Double, js.Promise[scala.Unit]],
+    getContent: js.Function0[js.Promise[IAlfaNumString]],
+    getNxProperties: js.Function0[js.Promise[INxVariableProperties]],
+    getRawContent: js.Function0[js.Promise[java.lang.String]],
+    setContent: js.Function2[java.lang.String, scala.Boolean, js.Promise[scala.Boolean]],
+    setNxProperties: js.Function1[INxVariableProperties, js.Promise[scala.Unit]]
+  ): IVariable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("forceContent")(forceContent)
+    __obj.updateDynamic("getContent")(getContent)
+    __obj.updateDynamic("getNxProperties")(getNxProperties)
+    __obj.updateDynamic("getRawContent")(getRawContent)
+    __obj.updateDynamic("setContent")(setContent)
+    __obj.updateDynamic("setNxProperties")(setNxProperties)
+    __obj.asInstanceOf[IVariable]
+  }
+}
+

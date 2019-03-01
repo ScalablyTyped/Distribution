@@ -19,3 +19,24 @@ trait XSheetConditionalEntry
   def setStyleName(aStyleName: java.lang.String): scala.Unit
 }
 
+object XSheetConditionalEntry {
+  @scala.inline
+  def apply(
+    StyleName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getStyleName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setStyleName: js.Function1[java.lang.String, scala.Unit]
+  ): XSheetConditionalEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("StyleName")(StyleName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getStyleName")(getStyleName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setStyleName")(setStyleName)
+    __obj.asInstanceOf[XSheetConditionalEntry]
+  }
+}
+

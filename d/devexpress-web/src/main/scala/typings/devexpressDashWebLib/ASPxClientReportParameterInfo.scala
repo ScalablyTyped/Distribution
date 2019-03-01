@@ -21,3 +21,13 @@ trait ASPxClientReportParameterInfo extends js.Object {
   var Value: js.Object
 }
 
+object ASPxClientReportParameterInfo {
+  @scala.inline
+  def apply(Path: java.lang.String, Value: js.Object): ASPxClientReportParameterInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Path")(Path)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[ASPxClientReportParameterInfo]
+  }
+}
+

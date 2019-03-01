@@ -33,3 +33,20 @@ trait RendererType2 extends js.Object {
   var styles: js.Array[java.lang.String | js.Array[_]]
 }
 
+object RendererType2 {
+  @scala.inline
+  def apply(
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    encapsulation: atAngularCoreLib.srcMetadataViewMod.ViewEncapsulation,
+    id: java.lang.String,
+    styles: js.Array[java.lang.String | js.Array[_]]
+  ): RendererType2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("encapsulation")(encapsulation)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[RendererType2]
+  }
+}
+

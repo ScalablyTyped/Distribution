@@ -10,3 +10,12 @@ trait InstancesTruncateLogRequest extends js.Object {
   var truncateLogContext: js.UndefOr[TruncateLogContext] = js.undefined
 }
 
+object InstancesTruncateLogRequest {
+  @scala.inline
+  def apply(truncateLogContext: TruncateLogContext = null): InstancesTruncateLogRequest = {
+    val __obj = js.Dynamic.literal()
+    if (truncateLogContext != null) __obj.updateDynamic("truncateLogContext")(truncateLogContext)
+    __obj.asInstanceOf[InstancesTruncateLogRequest]
+  }
+}
+

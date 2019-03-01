@@ -23,3 +23,18 @@ trait UriHelper extends js.Object {
   def encodePayload(uri: java.lang.String): js.Array[scala.Double]
 }
 
+object UriHelper {
+  @scala.inline
+  def apply(
+    decodePayload: js.Function1[js.Any, java.lang.String],
+    encodePayload: js.Function1[java.lang.String, js.Array[scala.Double]],
+    protocols: js.Array[java.lang.String]
+  ): UriHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decodePayload")(decodePayload)
+    __obj.updateDynamic("encodePayload")(encodePayload)
+    __obj.updateDynamic("protocols")(protocols)
+    __obj.asInstanceOf[UriHelper]
+  }
+}
+

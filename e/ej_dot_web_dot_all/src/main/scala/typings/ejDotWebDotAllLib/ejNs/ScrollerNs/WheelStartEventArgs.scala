@@ -23,3 +23,22 @@ trait WheelStartEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WheelStartEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    originalEvent: js.Any = null,
+    scrollData: js.Any = null,
+    `type`: java.lang.String = null
+  ): WheelStartEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    if (scrollData != null) __obj.updateDynamic("scrollData")(scrollData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[WheelStartEventArgs]
+  }
+}
+

@@ -10,3 +10,12 @@ trait XDataSourceMetaData extends js.Object {
   def supportsQueriesInFrom(): scala.Boolean
 }
 
+object XDataSourceMetaData {
+  @scala.inline
+  def apply(supportsQueriesInFrom: js.Function0[scala.Boolean]): XDataSourceMetaData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("supportsQueriesInFrom")(supportsQueriesInFrom)
+    __obj.asInstanceOf[XDataSourceMetaData]
+  }
+}
+

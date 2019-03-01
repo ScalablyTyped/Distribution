@@ -34,3 +34,20 @@ trait MemOptions extends js.Object {
   var maxAge: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MemOptions {
+  @scala.inline
+  def apply(
+    cache: pDashMemoizeLib.pDashMemoizeMod.pMemoizeNs.Cache[java.lang.String, _] = null,
+    cacheKey: js.Function1[/* repeated */ js.Any, java.lang.String] = null,
+    cachePromiseRejection: js.UndefOr[scala.Boolean] = js.undefined,
+    maxAge: scala.Int | scala.Double = null
+  ): MemOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey)
+    if (!js.isUndefined(cachePromiseRejection)) __obj.updateDynamic("cachePromiseRejection")(cachePromiseRejection)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MemOptions]
+  }
+}
+

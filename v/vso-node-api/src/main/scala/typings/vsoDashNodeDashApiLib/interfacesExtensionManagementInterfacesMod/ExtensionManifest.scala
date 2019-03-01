@@ -60,3 +60,38 @@ trait ExtensionManifest extends js.Object {
   var serviceInstanceType: java.lang.String
 }
 
+object ExtensionManifest {
+  @scala.inline
+  def apply(
+    baseUri: java.lang.String,
+    constraints: js.Array[ContributionConstraint],
+    contributionTypes: js.Array[ContributionType],
+    contributions: js.Array[Contribution],
+    demands: js.Array[java.lang.String],
+    eventCallbacks: ExtensionEventCallbackCollection,
+    fallbackBaseUri: java.lang.String,
+    language: java.lang.String,
+    licensing: ExtensionLicensing,
+    manifestVersion: scala.Double,
+    restrictedTo: js.Array[java.lang.String],
+    scopes: js.Array[java.lang.String],
+    serviceInstanceType: java.lang.String
+  ): ExtensionManifest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseUri")(baseUri)
+    __obj.updateDynamic("constraints")(constraints)
+    __obj.updateDynamic("contributionTypes")(contributionTypes)
+    __obj.updateDynamic("contributions")(contributions)
+    __obj.updateDynamic("demands")(demands)
+    __obj.updateDynamic("eventCallbacks")(eventCallbacks)
+    __obj.updateDynamic("fallbackBaseUri")(fallbackBaseUri)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("licensing")(licensing)
+    __obj.updateDynamic("manifestVersion")(manifestVersion)
+    __obj.updateDynamic("restrictedTo")(restrictedTo)
+    __obj.updateDynamic("scopes")(scopes)
+    __obj.updateDynamic("serviceInstanceType")(serviceInstanceType)
+    __obj.asInstanceOf[ExtensionManifest]
+  }
+}
+

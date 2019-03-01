@@ -21,3 +21,20 @@ trait XMimeContentTypeFactory
   def createMimeContentType(aContentType: java.lang.String): XMimeContentType
 }
 
+object XMimeContentTypeFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createMimeContentType: js.Function1[java.lang.String, XMimeContentType],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMimeContentTypeFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createMimeContentType")(createMimeContentType)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMimeContentTypeFactory]
+  }
+}
+

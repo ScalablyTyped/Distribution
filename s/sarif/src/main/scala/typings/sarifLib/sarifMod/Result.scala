@@ -122,3 +122,66 @@ trait Result extends js.Object {
   var workItemUris: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    message: Message,
+    analysisTarget: ArtifactLocation = null,
+    attachments: js.Array[Attachment] = null,
+    baselineState: sarifLib.sarifMod.ResultNs.baselineState = null,
+    codeFlows: js.Array[CodeFlow] = null,
+    correlationGuid: java.lang.String = null,
+    fingerprints: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    fixes: js.Array[Fix] = null,
+    graphTraversals: js.Array[GraphTraversal] = null,
+    graphs: org.scalablytyped.runtime.StringDictionary[Graph] = null,
+    hostedViewerUri: java.lang.String = null,
+    instanceGuid: java.lang.String = null,
+    kind: sarifLib.sarifMod.ResultNs.kind = null,
+    level: sarifLib.sarifMod.ResultNs.level = null,
+    locations: js.Array[Location] = null,
+    occurrenceCount: scala.Int | scala.Double = null,
+    partialFingerprints: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    properties: PropertyBag = null,
+    provenance: ResultProvenance = null,
+    rank: scala.Int | scala.Double = null,
+    relatedLocations: js.Array[Location] = null,
+    ruleExtensionIndex: scala.Int | scala.Double = null,
+    ruleId: java.lang.String = null,
+    ruleIndex: scala.Int | scala.Double = null,
+    stacks: js.Array[Stack] = null,
+    suppressionStates: js.Array[sarifLib.sarifMod.ResultNs.suppressionStates] = null,
+    workItemUris: js.Array[java.lang.String] = null
+  ): Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    if (analysisTarget != null) __obj.updateDynamic("analysisTarget")(analysisTarget)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (baselineState != null) __obj.updateDynamic("baselineState")(baselineState)
+    if (codeFlows != null) __obj.updateDynamic("codeFlows")(codeFlows)
+    if (correlationGuid != null) __obj.updateDynamic("correlationGuid")(correlationGuid)
+    if (fingerprints != null) __obj.updateDynamic("fingerprints")(fingerprints)
+    if (fixes != null) __obj.updateDynamic("fixes")(fixes)
+    if (graphTraversals != null) __obj.updateDynamic("graphTraversals")(graphTraversals)
+    if (graphs != null) __obj.updateDynamic("graphs")(graphs)
+    if (hostedViewerUri != null) __obj.updateDynamic("hostedViewerUri")(hostedViewerUri)
+    if (instanceGuid != null) __obj.updateDynamic("instanceGuid")(instanceGuid)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (level != null) __obj.updateDynamic("level")(level)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (occurrenceCount != null) __obj.updateDynamic("occurrenceCount")(occurrenceCount.asInstanceOf[js.Any])
+    if (partialFingerprints != null) __obj.updateDynamic("partialFingerprints")(partialFingerprints)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (provenance != null) __obj.updateDynamic("provenance")(provenance)
+    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
+    if (relatedLocations != null) __obj.updateDynamic("relatedLocations")(relatedLocations)
+    if (ruleExtensionIndex != null) __obj.updateDynamic("ruleExtensionIndex")(ruleExtensionIndex.asInstanceOf[js.Any])
+    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)
+    if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
+    if (stacks != null) __obj.updateDynamic("stacks")(stacks)
+    if (suppressionStates != null) __obj.updateDynamic("suppressionStates")(suppressionStates)
+    if (workItemUris != null) __obj.updateDynamic("workItemUris")(workItemUris)
+    __obj.asInstanceOf[Result]
+  }
+}
+

@@ -24,6 +24,37 @@ trait Events extends js.Object {
 @js.native
 class events () extends js.Object
 
+object Events {
+  @scala.inline
+  def apply(
+    accessRole: AccessRole,
+    defaultReminders: js.Array[gapiDotCalendarLib.Anon_Method],
+    description: java.lang.String,
+    etag: etag,
+    items: js.Array[Event],
+    kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#events`,
+    summary: java.lang.String,
+    timeZone: java.lang.String,
+    updated: datetime,
+    nextPageToken: java.lang.String = null,
+    nextSyncToken: java.lang.String = null
+  ): Events = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessRole")(accessRole)
+    __obj.updateDynamic("defaultReminders")(defaultReminders)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("summary")(summary)
+    __obj.updateDynamic("timeZone")(timeZone)
+    __obj.updateDynamic("updated")(updated)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken)
+    __obj.asInstanceOf[Events]
+  }
+}
+
 /* static members */
 @JSGlobal("gapi.client.calendar.events")
 @js.native

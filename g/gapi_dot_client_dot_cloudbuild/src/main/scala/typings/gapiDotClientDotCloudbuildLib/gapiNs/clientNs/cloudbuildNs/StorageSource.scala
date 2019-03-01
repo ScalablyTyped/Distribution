@@ -26,3 +26,18 @@ trait StorageSource extends js.Object {
   var `object`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StorageSource {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String = null,
+    generation: java.lang.String = null,
+    `object`: java.lang.String = null
+  ): StorageSource = {
+    val __obj = js.Dynamic.literal()
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket)
+    if (generation != null) __obj.updateDynamic("generation")(generation)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    __obj.asInstanceOf[StorageSource]
+  }
+}
+

@@ -37,3 +37,32 @@ trait Location extends js.Object {
   var sortingCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    addressLine: js.Array[java.lang.String] = null,
+    administrativeArea: java.lang.String = null,
+    dependentLocality: java.lang.String = null,
+    languageCode: java.lang.String = null,
+    latLng: LatLng = null,
+    locality: java.lang.String = null,
+    postalCode: java.lang.String = null,
+    regionCode: java.lang.String = null,
+    sortingCode: java.lang.String = null
+  ): Location = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (addressLine != null) __obj.updateDynamic("addressLine")(addressLine)
+    if (administrativeArea != null) __obj.updateDynamic("administrativeArea")(administrativeArea)
+    if (dependentLocality != null) __obj.updateDynamic("dependentLocality")(dependentLocality)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (latLng != null) __obj.updateDynamic("latLng")(latLng)
+    if (locality != null) __obj.updateDynamic("locality")(locality)
+    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode)
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
+    if (sortingCode != null) __obj.updateDynamic("sortingCode")(sortingCode)
+    __obj.asInstanceOf[Location]
+  }
+}
+

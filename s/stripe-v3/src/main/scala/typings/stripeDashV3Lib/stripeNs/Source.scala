@@ -18,3 +18,32 @@ trait Source extends js.Object {
   var three_d_secure: js.UndefOr[stripeDashV3Lib.Anon_Authenticated] = js.undefined
 }
 
+object Source {
+  @scala.inline
+  def apply(
+    client_secret: java.lang.String,
+    created: scala.Double,
+    currency: java.lang.String,
+    id: java.lang.String,
+    owner: stripeDashV3Lib.Anon_Address,
+    card: Card = null,
+    redirect: stripeDashV3Lib.Anon_Status = null,
+    sepa_debit: stripeDashV3Lib.Anon_Bankcode = null,
+    status: java.lang.String = null,
+    three_d_secure: stripeDashV3Lib.Anon_Authenticated = null
+  ): Source = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client_secret")(client_secret)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("owner")(owner)
+    if (card != null) __obj.updateDynamic("card")(card)
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (three_d_secure != null) __obj.updateDynamic("three_d_secure")(three_d_secure)
+    __obj.asInstanceOf[Source]
+  }
+}
+

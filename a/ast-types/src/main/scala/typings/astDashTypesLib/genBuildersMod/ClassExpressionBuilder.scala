@@ -7,12 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ClassExpressionBuilder extends js.Object {
+  def apply(id: astDashTypesLib.genKindsMod.IdentifierKind, body: astDashTypesLib.genKindsMod.ClassBodyKind): astDashTypesLib.genNodesMod.ClassExpression = js.native
   def apply(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
-    body: astDashTypesLib.genKindsMod.ClassBodyKind
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    body: astDashTypesLib.genKindsMod.ClassBodyKind,
+    superClass: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.ClassExpression = js.native
+  def apply(id: js.UndefOr[scala.Nothing], body: astDashTypesLib.genKindsMod.ClassBodyKind): astDashTypesLib.genNodesMod.ClassExpression = js.native
   def apply(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: js.UndefOr[scala.Nothing],
     body: astDashTypesLib.genKindsMod.ClassBodyKind,
     superClass: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.ClassExpression = js.native

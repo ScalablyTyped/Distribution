@@ -29,3 +29,20 @@ trait ListAnalyticsResponse extends js.Object {
   var responseMetadata: js.UndefOr[ResponseMetadata] = js.undefined
 }
 
+object ListAnalyticsResponse {
+  @scala.inline
+  def apply(
+    analytics: js.Array[Analytics] = null,
+    analyticsSummary: AnalyticsSummary = null,
+    nextPageToken: java.lang.String = null,
+    responseMetadata: ResponseMetadata = null
+  ): ListAnalyticsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (analytics != null) __obj.updateDynamic("analytics")(analytics)
+    if (analyticsSummary != null) __obj.updateDynamic("analyticsSummary")(analyticsSummary)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    __obj.asInstanceOf[ListAnalyticsResponse]
+  }
+}
+

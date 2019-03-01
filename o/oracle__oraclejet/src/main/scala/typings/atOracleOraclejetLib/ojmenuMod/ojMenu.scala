@@ -10,9 +10,7 @@ trait ojMenu
   extends atOracleOraclejetLib.atOracleOraclejetMod.baseComponent[ojMenuSettableProperties] {
   var disabled: scala.Boolean = js.native
   var onDisabledChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['disabled'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
     _
   ]) | scala.Null = js.native
   var onOjAction: (js.Function1[/* event */ atOracleOraclejetLib.ojmenuMod.ojMenuNs.ojAction, _]) | scala.Null = js.native
@@ -22,52 +20,27 @@ trait ojMenu
   var onOjClose: (js.Function1[/* event */ atOracleOraclejetLib.ojmenuMod.ojMenuNs.ojClose, _]) | scala.Null = js.native
   var onOjOpen: (js.Function1[/* event */ atOracleOraclejetLib.ojmenuMod.ojMenuNs.ojOpen, _]) | scala.Null = js.native
   var onOpenOptionsChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['openOptions'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojmenuMod.ojMenuNs.OpenOptions], 
     _
   ]) | scala.Null = js.native
   var openOptions: atOracleOraclejetLib.ojmenuMod.ojMenuNs.OpenOptions = js.native
   @JSName("translations")
   var translations_ojMenu: atOracleOraclejetLib.Anon_AriaFocusSkipLink = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_disabledChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['disabled'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
       _
     ]
   ): scala.Unit = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_disabledChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabledChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['disabled'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.openOptionsChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['openOptions'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.openOptionsChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['openOptions'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
       _
     ],
     useCapture: scala.Boolean
@@ -182,6 +155,25 @@ trait ojMenu
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.ojmenuMod.ojMenuNs.ojOpen, 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_openOptionsChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.openOptionsChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojmenuMod.ojMenuNs.OpenOptions], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_openOptionsChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.openOptionsChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojmenuMod.ojMenuNs.OpenOptions], 
       _
     ],
     useCapture: scala.Boolean

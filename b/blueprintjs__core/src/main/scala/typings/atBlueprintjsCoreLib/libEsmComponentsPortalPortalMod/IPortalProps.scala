@@ -18,3 +18,18 @@ trait IPortalProps
   var onChildrenMount: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object IPortalProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    container: reactLib.HTMLElement = null,
+    onChildrenMount: js.Function0[scala.Unit] = null
+  ): IPortalProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (onChildrenMount != null) __obj.updateDynamic("onChildrenMount")(onChildrenMount)
+    __obj.asInstanceOf[IPortalProps]
+  }
+}
+

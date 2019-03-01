@@ -16,3 +16,16 @@ trait VpcEndpointServiceAllowedPrincipleArgs extends js.Object {
   val vpcEndpointServiceId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object VpcEndpointServiceAllowedPrincipleArgs {
+  @scala.inline
+  def apply(
+    principalArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    vpcEndpointServiceId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): VpcEndpointServiceAllowedPrincipleArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("principalArn")(principalArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("vpcEndpointServiceId")(vpcEndpointServiceId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcEndpointServiceAllowedPrincipleArgs]
+  }
+}
+

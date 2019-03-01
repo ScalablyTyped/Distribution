@@ -750,3 +750,126 @@ trait Anon_AccessibilityFeatures extends js.Object {
   def loadTimes(): chromeDashAppsLib.chromeNs.deprecatedButUsable
 }
 
+object Anon_AccessibilityFeatures {
+  @scala.inline
+  def apply(
+    Event: Anon_Event,
+    accessibilityFeaturesNs: Anon_AnimationPolicy,
+    alarmsNs: Anon_Alarm,
+    appNs: Anon_Runtime,
+    audioNs: Anon_Callback,
+    bluetoothLowEnergyNs: Anon_Advertisement,
+    bluetoothNs: Anon_AdapterInfo,
+    bluetoothSocketNs: Anon_Address,
+    browserNs: Anon_CallbackOpenTab,
+    certificateProviderNs: Anon_CallbackCertificates,
+    clipboardNs: Anon_AdditionalItems,
+    commandsNs: Anon_CallbackCommands,
+    contextMenusNs: Anon_ACTIONMENUTOPLEVELLIMIT,
+    csi: js.Function0[Anon_OnloadT],
+    desktopCaptureNs: Anon_CallbackCancelChooseDesktopMedia,
+    diagnosticsNs: Anon_CallbackOptions,
+    displaySourceNs: Anon_AuthenticationMethod,
+    dnsNs: Anon_CallbackHostname,
+    documentScanNs: Anon_CallbackOptionsResult,
+    enterpriseNs: Anon_DeviceAttributes,
+    eventsNs: js.Any,
+    experimental: js.Any,
+    extensionTypesNs: Anon_Internal,
+    fileBrowserHandlerNs: Anon_CallbackDetails,
+    fileSystemNs: Anon_CallbackChildChangeType,
+    fileSystemProviderNs: Anon_ActionsCallback,
+    gcmNs: Anon_CallbackError,
+    hidNs: Anon_CallbackConnect,
+    i18nNs: Anon_CallbackDetectLanguage,
+    identityNs: Anon_Account,
+    idleNs: Anon_CallbackDetectionIntervalInSeconds,
+    instanceIDNs: Anon_CallbackCreationTime,
+    loadTimes: js.Function0[chromeDashAppsLib.chromeNs.deprecatedButUsable],
+    managementNs: Anon_CallbackExtensionDisabledReason,
+    mdnsNs: Anon_CallbackForceDiscovery,
+    mediaGalleriesNs: Anon_AddGalleryWatch,
+    networkingNs: Anon_Config,
+    notificationsNs: Anon_ButtonIndex,
+    permissionsNs: Anon_CallbackContains,
+    platformKeysNs: Anon_CallbackCertificateClientCertificateType,
+    powerNs: Anon_Level,
+    printerProviderNs: Anon_Capabilities,
+    runtimeNs: Anon_Application,
+    serial: chromeDashAppsLib.chromeNs.deprecated,
+    signedInDevicesNs: Anon_CallbackDevices,
+    socketsNs: Anon_TcpTcpServer,
+    storageNs: Anon_AreaName,
+    syncFileSystemNs: Anon_CallbackConflictResolutionPolicy,
+    systemNs: Anon_Cpu,
+    ttsNs: Anon_CallbackGetVoices,
+    typesNs: js.Any,
+    usbNs: Anon_AlternateSetting,
+    virtualKeyboardNs: Anon_CallbackRestrictFeatures,
+    vpnProviderNs: Anon_CallbackCreateConfig,
+    wallpaperNs: Anon_CallbackDetailsSetWallpaper,
+    webRequestNs: js.Any,
+    webViewRequestNs: Anon_AddRequestCookie
+  ): Anon_AccessibilityFeatures = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Event")(Event)
+    __obj.updateDynamic("accessibilityFeaturesNs")(accessibilityFeaturesNs)
+    __obj.updateDynamic("alarmsNs")(alarmsNs)
+    __obj.updateDynamic("appNs")(appNs)
+    __obj.updateDynamic("audioNs")(audioNs)
+    __obj.updateDynamic("bluetoothLowEnergyNs")(bluetoothLowEnergyNs)
+    __obj.updateDynamic("bluetoothNs")(bluetoothNs)
+    __obj.updateDynamic("bluetoothSocketNs")(bluetoothSocketNs)
+    __obj.updateDynamic("browserNs")(browserNs)
+    __obj.updateDynamic("certificateProviderNs")(certificateProviderNs)
+    __obj.updateDynamic("clipboardNs")(clipboardNs)
+    __obj.updateDynamic("commandsNs")(commandsNs)
+    __obj.updateDynamic("contextMenusNs")(contextMenusNs)
+    __obj.updateDynamic("csi")(csi)
+    __obj.updateDynamic("desktopCaptureNs")(desktopCaptureNs)
+    __obj.updateDynamic("diagnosticsNs")(diagnosticsNs)
+    __obj.updateDynamic("displaySourceNs")(displaySourceNs)
+    __obj.updateDynamic("dnsNs")(dnsNs)
+    __obj.updateDynamic("documentScanNs")(documentScanNs)
+    __obj.updateDynamic("enterpriseNs")(enterpriseNs)
+    __obj.updateDynamic("eventsNs")(eventsNs)
+    __obj.updateDynamic("experimental")(experimental)
+    __obj.updateDynamic("extensionTypesNs")(extensionTypesNs)
+    __obj.updateDynamic("fileBrowserHandlerNs")(fileBrowserHandlerNs)
+    __obj.updateDynamic("fileSystemNs")(fileSystemNs)
+    __obj.updateDynamic("fileSystemProviderNs")(fileSystemProviderNs)
+    __obj.updateDynamic("gcmNs")(gcmNs)
+    __obj.updateDynamic("hidNs")(hidNs)
+    __obj.updateDynamic("i18nNs")(i18nNs)
+    __obj.updateDynamic("identityNs")(identityNs)
+    __obj.updateDynamic("idleNs")(idleNs)
+    __obj.updateDynamic("instanceIDNs")(instanceIDNs)
+    __obj.updateDynamic("loadTimes")(loadTimes)
+    __obj.updateDynamic("managementNs")(managementNs)
+    __obj.updateDynamic("mdnsNs")(mdnsNs)
+    __obj.updateDynamic("mediaGalleriesNs")(mediaGalleriesNs)
+    __obj.updateDynamic("networkingNs")(networkingNs)
+    __obj.updateDynamic("notificationsNs")(notificationsNs)
+    __obj.updateDynamic("permissionsNs")(permissionsNs)
+    __obj.updateDynamic("platformKeysNs")(platformKeysNs)
+    __obj.updateDynamic("powerNs")(powerNs)
+    __obj.updateDynamic("printerProviderNs")(printerProviderNs)
+    __obj.updateDynamic("runtimeNs")(runtimeNs)
+    __obj.updateDynamic("serial")(serial)
+    __obj.updateDynamic("signedInDevicesNs")(signedInDevicesNs)
+    __obj.updateDynamic("socketsNs")(socketsNs)
+    __obj.updateDynamic("storageNs")(storageNs)
+    __obj.updateDynamic("syncFileSystemNs")(syncFileSystemNs)
+    __obj.updateDynamic("systemNs")(systemNs)
+    __obj.updateDynamic("ttsNs")(ttsNs)
+    __obj.updateDynamic("typesNs")(typesNs)
+    __obj.updateDynamic("usbNs")(usbNs)
+    __obj.updateDynamic("virtualKeyboardNs")(virtualKeyboardNs)
+    __obj.updateDynamic("vpnProviderNs")(vpnProviderNs)
+    __obj.updateDynamic("wallpaperNs")(wallpaperNs)
+    __obj.updateDynamic("webRequestNs")(webRequestNs)
+    __obj.updateDynamic("webViewRequestNs")(webViewRequestNs)
+    __obj.asInstanceOf[Anon_AccessibilityFeatures]
+  }
+}
+

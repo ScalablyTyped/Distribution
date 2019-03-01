@@ -107,3 +107,73 @@ trait Fiber extends js.Object {
   var updateQueue: UpdateQueue[_] | scala.Null
 }
 
+object Fiber {
+  @scala.inline
+  def apply(
+    childExpirationTime: ExpirationTime,
+    effectTag: SideEffectTag,
+    elementType: js.Any,
+    expirationTime: ExpirationTime,
+    index: scala.Double,
+    memoizedProps: js.Any,
+    memoizedState: js.Any,
+    mode: TypeOfMode,
+    pendingProps: js.Any,
+    stateNode: js.Any,
+    tag: WorkTag,
+    `type`: js.Any,
+    _debugID: scala.Int | scala.Double = null,
+    _debugIsCurrentlyTiming: js.UndefOr[scala.Boolean] = js.undefined,
+    _debugOwner: Fiber = null,
+    _debugSource: Source = null,
+    actualDuration: scala.Int | scala.Double = null,
+    actualStartTime: scala.Int | scala.Double = null,
+    alternate: Fiber = null,
+    child: Fiber = null,
+    firstContextDependency: ContextDependency[_] = null,
+    firstEffect: Fiber = null,
+    key: java.lang.String = null,
+    lastEffect: Fiber = null,
+    nextEffect: Fiber = null,
+    ref: ((js.Function1[/* handle */ js.Any, scala.Unit]) with reactDashReconcilerLib.Anon_StringRef) | RefObject = null,
+    `return`: Fiber = null,
+    selfBaseDuration: scala.Int | scala.Double = null,
+    sibling: Fiber = null,
+    treeBaseDuration: scala.Int | scala.Double = null,
+    updateQueue: UpdateQueue[_] = null
+  ): Fiber = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("childExpirationTime")(childExpirationTime)
+    __obj.updateDynamic("effectTag")(effectTag)
+    __obj.updateDynamic("elementType")(elementType)
+    __obj.updateDynamic("expirationTime")(expirationTime)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("memoizedProps")(memoizedProps)
+    __obj.updateDynamic("memoizedState")(memoizedState)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("pendingProps")(pendingProps)
+    __obj.updateDynamic("stateNode")(stateNode)
+    __obj.updateDynamic("tag")(tag)
+    if (_debugID != null) __obj.updateDynamic("_debugID")(_debugID.asInstanceOf[js.Any])
+    if (!js.isUndefined(_debugIsCurrentlyTiming)) __obj.updateDynamic("_debugIsCurrentlyTiming")(_debugIsCurrentlyTiming)
+    if (_debugOwner != null) __obj.updateDynamic("_debugOwner")(_debugOwner)
+    if (_debugSource != null) __obj.updateDynamic("_debugSource")(_debugSource)
+    if (actualDuration != null) __obj.updateDynamic("actualDuration")(actualDuration.asInstanceOf[js.Any])
+    if (actualStartTime != null) __obj.updateDynamic("actualStartTime")(actualStartTime.asInstanceOf[js.Any])
+    if (alternate != null) __obj.updateDynamic("alternate")(alternate)
+    if (child != null) __obj.updateDynamic("child")(child)
+    if (firstContextDependency != null) __obj.updateDynamic("firstContextDependency")(firstContextDependency)
+    if (firstEffect != null) __obj.updateDynamic("firstEffect")(firstEffect)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (lastEffect != null) __obj.updateDynamic("lastEffect")(lastEffect)
+    if (nextEffect != null) __obj.updateDynamic("nextEffect")(nextEffect)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (`return` != null) __obj.updateDynamic("return")(`return`)
+    if (selfBaseDuration != null) __obj.updateDynamic("selfBaseDuration")(selfBaseDuration.asInstanceOf[js.Any])
+    if (sibling != null) __obj.updateDynamic("sibling")(sibling)
+    if (treeBaseDuration != null) __obj.updateDynamic("treeBaseDuration")(treeBaseDuration.asInstanceOf[js.Any])
+    if (updateQueue != null) __obj.updateDynamic("updateQueue")(updateQueue)
+    __obj.asInstanceOf[Fiber]
+  }
+}
+

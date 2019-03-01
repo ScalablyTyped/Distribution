@@ -54,3 +54,34 @@ trait JQueryTinyCarouselOptions extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object JQueryTinyCarouselOptions {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    axis: java.lang.String = null,
+    callback: js.Function2[/* element */ stdLib.HTMLElement, /* index */ scala.Double, scala.Unit] = null,
+    controls: js.UndefOr[scala.Boolean] = js.undefined,
+    display: scala.Int | scala.Double = null,
+    duration: scala.Int | scala.Double = null,
+    interval: js.UndefOr[scala.Boolean] = js.undefined,
+    intervaltime: scala.Int | scala.Double = null,
+    pager: js.UndefOr[scala.Boolean] = js.undefined,
+    rewind: js.UndefOr[scala.Boolean] = js.undefined,
+    start: scala.Int | scala.Double = null
+  ): JQueryTinyCarouselOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval)
+    if (intervaltime != null) __obj.updateDynamic("intervaltime")(intervaltime.asInstanceOf[js.Any])
+    if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager)
+    if (!js.isUndefined(rewind)) __obj.updateDynamic("rewind")(rewind)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryTinyCarouselOptions]
+  }
+}
+

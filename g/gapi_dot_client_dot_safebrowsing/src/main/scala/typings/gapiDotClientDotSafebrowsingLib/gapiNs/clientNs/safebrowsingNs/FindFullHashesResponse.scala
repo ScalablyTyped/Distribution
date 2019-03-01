@@ -21,3 +21,18 @@ trait FindFullHashesResponse extends js.Object {
   var negativeCacheDuration: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FindFullHashesResponse {
+  @scala.inline
+  def apply(
+    matches: js.Array[ThreatMatch] = null,
+    minimumWaitDuration: java.lang.String = null,
+    negativeCacheDuration: java.lang.String = null
+  ): FindFullHashesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (matches != null) __obj.updateDynamic("matches")(matches)
+    if (minimumWaitDuration != null) __obj.updateDynamic("minimumWaitDuration")(minimumWaitDuration)
+    if (negativeCacheDuration != null) __obj.updateDynamic("negativeCacheDuration")(negativeCacheDuration)
+    __obj.asInstanceOf[FindFullHashesResponse]
+  }
+}
+

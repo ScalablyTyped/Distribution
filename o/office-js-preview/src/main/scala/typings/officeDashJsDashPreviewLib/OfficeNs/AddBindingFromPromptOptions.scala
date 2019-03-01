@@ -30,3 +30,20 @@ trait AddBindingFromPromptOptions extends js.Object {
   var sampleData: js.UndefOr[TableData] = js.undefined
 }
 
+object AddBindingFromPromptOptions {
+  @scala.inline
+  def apply(
+    asyncContext: js.Any = null,
+    id: java.lang.String = null,
+    promptText: java.lang.String = null,
+    sampleData: TableData = null
+  ): AddBindingFromPromptOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (promptText != null) __obj.updateDynamic("promptText")(promptText)
+    if (sampleData != null) __obj.updateDynamic("sampleData")(sampleData)
+    __obj.asInstanceOf[AddBindingFromPromptOptions]
+  }
+}
+

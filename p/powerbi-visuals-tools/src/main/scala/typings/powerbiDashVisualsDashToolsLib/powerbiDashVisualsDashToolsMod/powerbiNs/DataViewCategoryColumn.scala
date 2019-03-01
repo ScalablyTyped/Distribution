@@ -16,3 +16,24 @@ trait DataViewCategoryColumn extends DataViewCategoricalColumn {
   var values: js.Array[PrimitiveValue]
 }
 
+object DataViewCategoryColumn {
+  @scala.inline
+  def apply(
+    source: DataViewMetadataColumn,
+    values: js.Array[PrimitiveValue],
+    identity: js.Array[DataViewScopeIdentity] = null,
+    identityFields: js.Array[
+      powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr
+    ] = null,
+    objects: js.Array[DataViewObjects] = null
+  ): DataViewCategoryColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("values")(values)
+    if (identity != null) __obj.updateDynamic("identity")(identity)
+    if (identityFields != null) __obj.updateDynamic("identityFields")(identityFields)
+    if (objects != null) __obj.updateDynamic("objects")(objects)
+    __obj.asInstanceOf[DataViewCategoryColumn]
+  }
+}
+

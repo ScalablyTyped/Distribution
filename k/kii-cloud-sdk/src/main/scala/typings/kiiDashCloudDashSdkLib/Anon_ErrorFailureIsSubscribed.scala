@@ -14,3 +14,16 @@ trait Anon_ErrorFailureIsSubscribed[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.Ki
   ): js.Any
 }
 
+object Anon_ErrorFailureIsSubscribed {
+  @scala.inline
+  def apply[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket | kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic */](
+    failure: js.Function1[stdLib.Error, js.Any],
+    success: js.Function3[kiiDashCloudDashSdkLib.KiiCloudNs.KiiPushSubscription, T, scala.Boolean, js.Any]
+  ): Anon_ErrorFailureIsSubscribed[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failure")(failure)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_ErrorFailureIsSubscribed[T]]
+  }
+}
+

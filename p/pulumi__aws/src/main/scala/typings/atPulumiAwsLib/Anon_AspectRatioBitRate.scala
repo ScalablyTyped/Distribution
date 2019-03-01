@@ -21,3 +21,38 @@ trait Anon_AspectRatioBitRate extends js.Object {
   var sizingPolicy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AspectRatioBitRate {
+  @scala.inline
+  def apply(
+    aspectRatio: java.lang.String = null,
+    bitRate: java.lang.String = null,
+    codec: java.lang.String = null,
+    displayAspectRatio: java.lang.String = null,
+    fixedGop: java.lang.String = null,
+    frameRate: java.lang.String = null,
+    keyframesMaxDist: java.lang.String = null,
+    maxFrameRate: java.lang.String = null,
+    maxHeight: java.lang.String = null,
+    maxWidth: java.lang.String = null,
+    paddingPolicy: java.lang.String = null,
+    resolution: java.lang.String = null,
+    sizingPolicy: java.lang.String = null
+  ): Anon_AspectRatioBitRate = {
+    val __obj = js.Dynamic.literal()
+    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio)
+    if (bitRate != null) __obj.updateDynamic("bitRate")(bitRate)
+    if (codec != null) __obj.updateDynamic("codec")(codec)
+    if (displayAspectRatio != null) __obj.updateDynamic("displayAspectRatio")(displayAspectRatio)
+    if (fixedGop != null) __obj.updateDynamic("fixedGop")(fixedGop)
+    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate)
+    if (keyframesMaxDist != null) __obj.updateDynamic("keyframesMaxDist")(keyframesMaxDist)
+    if (maxFrameRate != null) __obj.updateDynamic("maxFrameRate")(maxFrameRate)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight)
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth)
+    if (paddingPolicy != null) __obj.updateDynamic("paddingPolicy")(paddingPolicy)
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution)
+    if (sizingPolicy != null) __obj.updateDynamic("sizingPolicy")(sizingPolicy)
+    __obj.asInstanceOf[Anon_AspectRatioBitRate]
+  }
+}
+

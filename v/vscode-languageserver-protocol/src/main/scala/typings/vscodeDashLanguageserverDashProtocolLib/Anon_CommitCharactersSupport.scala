@@ -38,3 +38,24 @@ trait Anon_CommitCharactersSupport extends js.Object {
   var snippetSupport: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_CommitCharactersSupport {
+  @scala.inline
+  def apply(
+    commitCharactersSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    deprecatedSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    documentationFormat: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.MarkupKind
+    ] = null,
+    preselectSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    snippetSupport: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_CommitCharactersSupport = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(commitCharactersSupport)) __obj.updateDynamic("commitCharactersSupport")(commitCharactersSupport)
+    if (!js.isUndefined(deprecatedSupport)) __obj.updateDynamic("deprecatedSupport")(deprecatedSupport)
+    if (documentationFormat != null) __obj.updateDynamic("documentationFormat")(documentationFormat)
+    if (!js.isUndefined(preselectSupport)) __obj.updateDynamic("preselectSupport")(preselectSupport)
+    if (!js.isUndefined(snippetSupport)) __obj.updateDynamic("snippetSupport")(snippetSupport)
+    __obj.asInstanceOf[Anon_CommitCharactersSupport]
+  }
+}
+

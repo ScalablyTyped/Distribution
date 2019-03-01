@@ -18,3 +18,30 @@ trait Anon_CommentsComputedKeyLocOptional extends js.Object {
   var typeParameters: js.UndefOr[astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind | scala.Null] = js.undefined
 }
 
+object Anon_CommentsComputedKeyLocOptional {
+  @scala.inline
+  def apply(
+    key: astDashTypesLib.genKindsMod.ExpressionKind,
+    parameters: js.Array[
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+    ],
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    computed: js.UndefOr[scala.Boolean] = js.undefined,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    optional: js.UndefOr[scala.Boolean] = js.undefined,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): Anon_CommentsComputedKeyLocOptional = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("parameters")(parameters)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[Anon_CommentsComputedKeyLocOptional]
+  }
+}
+

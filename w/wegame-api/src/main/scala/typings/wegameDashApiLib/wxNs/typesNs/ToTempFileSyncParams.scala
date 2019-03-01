@@ -42,3 +42,28 @@ trait ToTempFileSyncParams extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ToTempFileSyncParams {
+  @scala.inline
+  def apply(
+    destHeight: scala.Int | scala.Double = null,
+    destWidth: scala.Int | scala.Double = null,
+    fileType: wegameDashApiLib.wegameDashApiLibStrings.jpg | wegameDashApiLib.wegameDashApiLibStrings.png = null,
+    height: scala.Int | scala.Double = null,
+    quality: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): ToTempFileSyncParams = {
+    val __obj = js.Dynamic.literal()
+    if (destHeight != null) __obj.updateDynamic("destHeight")(destHeight.asInstanceOf[js.Any])
+    if (destWidth != null) __obj.updateDynamic("destWidth")(destWidth.asInstanceOf[js.Any])
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToTempFileSyncParams]
+  }
+}
+

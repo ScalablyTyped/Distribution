@@ -45,3 +45,30 @@ trait Anon_Bottom extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Bottom {
+  @scala.inline
+  def apply(
+    event: js.Any = null,
+    flex: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null,
+    keydown: js.UndefOr[scala.Boolean] = js.undefined,
+    position: juiLib.juiLibStrings.top | juiLib.juiLibStrings.bottom = null,
+    tpl: js.Any = null,
+    value: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_Bottom = {
+    val __obj = js.Dynamic.literal()
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(keydown)) __obj.updateDynamic("keydown")(keydown)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Bottom]
+  }
+}
+

@@ -20,3 +20,20 @@ trait DragMoveEventArgs extends js.Object {
   var model: js.UndefOr[js.Any] = js.undefined
 }
 
+object DragMoveEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    dragTarget: js.Any = null,
+    draggedElementData: js.Any = null,
+    model: js.Any = null
+  ): DragMoveEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (dragTarget != null) __obj.updateDynamic("dragTarget")(dragTarget)
+    if (draggedElementData != null) __obj.updateDynamic("draggedElementData")(draggedElementData)
+    if (model != null) __obj.updateDynamic("model")(model)
+    __obj.asInstanceOf[DragMoveEventArgs]
+  }
+}
+

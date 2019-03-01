@@ -13,3 +13,12 @@ trait NetworkInfoFilterSSID extends js.Object {
   var SSID: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NetworkInfoFilterSSID {
+  @scala.inline
+  def apply(SSID: java.lang.String = null): NetworkInfoFilterSSID = {
+    val __obj = js.Dynamic.literal()
+    if (SSID != null) __obj.updateDynamic("SSID")(SSID)
+    __obj.asInstanceOf[NetworkInfoFilterSSID]
+  }
+}
+

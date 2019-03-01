@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ContentState ()
   extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentState
 
+/* static members */
 @JSImport("draft-js", "ContentState")
 @js.native
 object ContentState extends js.Object {

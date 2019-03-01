@@ -12,3 +12,15 @@ trait VRFov extends js.Object {
   var upTan: scala.Double
 }
 
+object VRFov {
+  @scala.inline
+  def apply(downTan: scala.Double, leftTan: scala.Double, rightTan: scala.Double, upTan: scala.Double): VRFov = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("downTan")(downTan)
+    __obj.updateDynamic("leftTan")(leftTan)
+    __obj.updateDynamic("rightTan")(rightTan)
+    __obj.updateDynamic("upTan")(upTan)
+    __obj.asInstanceOf[VRFov]
+  }
+}
+

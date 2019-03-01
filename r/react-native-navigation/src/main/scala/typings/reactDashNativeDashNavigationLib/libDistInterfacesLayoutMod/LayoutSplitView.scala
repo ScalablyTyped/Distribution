@@ -25,3 +25,20 @@ trait LayoutSplitView extends js.Object {
   var options: js.UndefOr[reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options] = js.undefined
 }
 
+object LayoutSplitView {
+  @scala.inline
+  def apply(
+    detail: Layout[js.Object] = null,
+    id: java.lang.String = null,
+    master: Layout[js.Object] = null,
+    options: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options = null
+  ): LayoutSplitView = {
+    val __obj = js.Dynamic.literal()
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (master != null) __obj.updateDynamic("master")(master)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[LayoutSplitView]
+  }
+}
+

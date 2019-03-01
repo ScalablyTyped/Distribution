@@ -20,3 +20,14 @@ trait Anon_Elevation extends js.Object {
   var longitude: scala.Double
 }
 
+object Anon_Elevation {
+  @scala.inline
+  def apply(elevation: scala.Double, latitude: scala.Double, longitude: scala.Double): Anon_Elevation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("elevation")(elevation)
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    __obj.asInstanceOf[Anon_Elevation]
+  }
+}
+

@@ -121,3 +121,54 @@ trait NanoScrollerOptions extends js.Object {
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NanoScrollerOptions {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String = null,
+    alwaysVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    contentClass: java.lang.String = null,
+    destroy: js.UndefOr[scala.Boolean] = js.undefined,
+    disableResize: js.UndefOr[scala.Boolean] = js.undefined,
+    enabledClass: java.lang.String = null,
+    flash: js.UndefOr[scala.Boolean] = js.undefined,
+    flashDelay: scala.Int | scala.Double = null,
+    flashedClass: java.lang.String = null,
+    iOSNativeScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    paneClass: java.lang.String = null,
+    preventPageScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    scroll: nanoscrollerLib.nanoscrollerLibStrings.top | nanoscrollerLib.nanoscrollerLibStrings.bottom = null,
+    scrollBottom: scala.Int | scala.Double = null,
+    scrollTo: nanoscrollerLib.JQuery = null,
+    scrollTop: scala.Int | scala.Double = null,
+    sliderClass: java.lang.String = null,
+    sliderMaxHeight: scala.Int | scala.Double = null,
+    sliderMinHeight: scala.Int | scala.Double = null,
+    stop: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null
+  ): NanoScrollerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
+    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible)
+    if (contentClass != null) __obj.updateDynamic("contentClass")(contentClass)
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(disableResize)) __obj.updateDynamic("disableResize")(disableResize)
+    if (enabledClass != null) __obj.updateDynamic("enabledClass")(enabledClass)
+    if (!js.isUndefined(flash)) __obj.updateDynamic("flash")(flash)
+    if (flashDelay != null) __obj.updateDynamic("flashDelay")(flashDelay.asInstanceOf[js.Any])
+    if (flashedClass != null) __obj.updateDynamic("flashedClass")(flashedClass)
+    if (!js.isUndefined(iOSNativeScrolling)) __obj.updateDynamic("iOSNativeScrolling")(iOSNativeScrolling)
+    if (paneClass != null) __obj.updateDynamic("paneClass")(paneClass)
+    if (!js.isUndefined(preventPageScrolling)) __obj.updateDynamic("preventPageScrolling")(preventPageScrolling)
+    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
+    if (scrollBottom != null) __obj.updateDynamic("scrollBottom")(scrollBottom.asInstanceOf[js.Any])
+    if (scrollTo != null) __obj.updateDynamic("scrollTo")(scrollTo)
+    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    if (sliderClass != null) __obj.updateDynamic("sliderClass")(sliderClass)
+    if (sliderMaxHeight != null) __obj.updateDynamic("sliderMaxHeight")(sliderMaxHeight.asInstanceOf[js.Any])
+    if (sliderMinHeight != null) __obj.updateDynamic("sliderMinHeight")(sliderMinHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(stop)) __obj.updateDynamic("stop")(stop)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NanoScrollerOptions]
+  }
+}
+

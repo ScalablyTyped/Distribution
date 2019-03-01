@@ -19,3 +19,22 @@ trait LineLayout extends js.Object {
   ] = js.undefined
 }
 
+object LineLayout {
+  @scala.inline
+  def apply(
+    `line-cap`: mapboxDashGlLib.mapboxDashGlLibStrings.butt | mapboxDashGlLib.mapboxDashGlLibStrings.round | mapboxDashGlLib.mapboxDashGlLibStrings.square = null,
+    `line-join`: mapboxDashGlLib.mapboxDashGlLibStrings.bevel | mapboxDashGlLib.mapboxDashGlLibStrings.round | mapboxDashGlLib.mapboxDashGlLibStrings.miter | Expression = null,
+    `line-miter-limit`: scala.Double | Expression = null,
+    `line-round-limit`: scala.Double | Expression = null,
+    visibility: mapboxDashGlLib.mapboxDashGlLibStrings.visible | mapboxDashGlLib.mapboxDashGlLibStrings.none = null
+  ): LineLayout = {
+    val __obj = js.Dynamic.literal()
+    if (`line-cap` != null) __obj.updateDynamic("line-cap")(`line-cap`.asInstanceOf[js.Any])
+    if (`line-join` != null) __obj.updateDynamic("line-join")(`line-join`.asInstanceOf[js.Any])
+    if (`line-miter-limit` != null) __obj.updateDynamic("line-miter-limit")(`line-miter-limit`.asInstanceOf[js.Any])
+    if (`line-round-limit` != null) __obj.updateDynamic("line-round-limit")(`line-round-limit`.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LineLayout]
+  }
+}
+

@@ -10,3 +10,13 @@ trait RenderSuggestionParams extends js.Object {
   var query: java.lang.String
 }
 
+object RenderSuggestionParams {
+  @scala.inline
+  def apply(isHighlighted: scala.Boolean, query: java.lang.String): RenderSuggestionParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isHighlighted")(isHighlighted)
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[RenderSuggestionParams]
+  }
+}
+

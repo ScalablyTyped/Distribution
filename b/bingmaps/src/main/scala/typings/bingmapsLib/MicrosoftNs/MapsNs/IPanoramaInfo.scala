@@ -10,3 +10,12 @@ trait IPanoramaInfo extends js.Object {
   var cd: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IPanoramaInfo {
+  @scala.inline
+  def apply(cd: java.lang.String = null): IPanoramaInfo = {
+    val __obj = js.Dynamic.literal()
+    if (cd != null) __obj.updateDynamic("cd")(cd)
+    __obj.asInstanceOf[IPanoramaInfo]
+  }
+}
+

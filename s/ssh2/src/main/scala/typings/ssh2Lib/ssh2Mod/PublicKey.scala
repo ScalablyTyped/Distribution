@@ -12,3 +12,13 @@ trait PublicKey extends js.Object {
   var data: nodeLib.Buffer
 }
 
+object PublicKey {
+  @scala.inline
+  def apply(algo: java.lang.String, data: nodeLib.Buffer): PublicKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("algo")(algo)
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[PublicKey]
+  }
+}
+

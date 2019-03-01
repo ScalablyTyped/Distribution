@@ -32,3 +32,24 @@ trait ResizeInfo extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ResizeInfo {
+  @scala.inline
+  def apply(
+    blob: stdLib.File | stdLib.Blob = null,
+    height: scala.Int | scala.Double = null,
+    image: stdLib.HTMLImageElement = null,
+    sourceCanvas: stdLib.HTMLCanvasElement = null,
+    targetCanvas: stdLib.HTMLCanvasElement = null,
+    width: scala.Int | scala.Double = null
+  ): ResizeInfo = {
+    val __obj = js.Dynamic.literal()
+    if (blob != null) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (sourceCanvas != null) __obj.updateDynamic("sourceCanvas")(sourceCanvas)
+    if (targetCanvas != null) __obj.updateDynamic("targetCanvas")(targetCanvas)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResizeInfo]
+  }
+}
+

@@ -18,3 +18,13 @@ trait GoogleCloudVideointelligenceV1_VideoSegment extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1_VideoSegment {
+  @scala.inline
+  def apply(endTime: java.lang.String = null, startTime: java.lang.String = null): GoogleCloudVideointelligenceV1_VideoSegment = {
+    val __obj = js.Dynamic.literal()
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1_VideoSegment]
+  }
+}
+

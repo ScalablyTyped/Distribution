@@ -18,3 +18,19 @@ trait AnimationStyleMetadata extends AnimationMetadata {
   ])
 }
 
+object AnimationStyleMetadata {
+  @scala.inline
+  def apply(
+    styles: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]) | (js.Array[
+      (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]) | atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`
+    ]),
+    `type`: AnimationMetadataType,
+    offset: scala.Int | scala.Double = null
+  ): AnimationStyleMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnimationStyleMetadata]
+  }
+}
+

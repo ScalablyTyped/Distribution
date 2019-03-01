@@ -14,3 +14,14 @@ trait FullKeybindingMatchEvent extends js.Object {
   var keystrokes: java.lang.String
 }
 
+object FullKeybindingMatchEvent {
+  @scala.inline
+  def apply(binding: KeyBinding, keyboardEventTarget: stdLib.Element, keystrokes: java.lang.String): FullKeybindingMatchEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("binding")(binding)
+    __obj.updateDynamic("keyboardEventTarget")(keyboardEventTarget)
+    __obj.updateDynamic("keystrokes")(keystrokes)
+    __obj.asInstanceOf[FullKeybindingMatchEvent]
+  }
+}
+

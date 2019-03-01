@@ -37,3 +37,20 @@ trait HyperlinkData extends js.Object {
   var subAddress: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HyperlinkData {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    description: java.lang.String = null,
+    extraInfo: java.lang.String = null,
+    subAddress: java.lang.String = null
+  ): HyperlinkData = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (extraInfo != null) __obj.updateDynamic("extraInfo")(extraInfo)
+    if (subAddress != null) __obj.updateDynamic("subAddress")(subAddress)
+    __obj.asInstanceOf[HyperlinkData]
+  }
+}
+

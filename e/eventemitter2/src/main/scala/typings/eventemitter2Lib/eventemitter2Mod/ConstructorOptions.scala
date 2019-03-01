@@ -33,3 +33,22 @@ trait ConstructorOptions extends js.Object {
   var wildcard: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConstructorOptions {
+  @scala.inline
+  def apply(
+    delimiter: java.lang.String = null,
+    maxListeners: scala.Int | scala.Double = null,
+    newListener: js.UndefOr[scala.Boolean] = js.undefined,
+    verboseMemoryLeak: js.UndefOr[scala.Boolean] = js.undefined,
+    wildcard: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (maxListeners != null) __obj.updateDynamic("maxListeners")(maxListeners.asInstanceOf[js.Any])
+    if (!js.isUndefined(newListener)) __obj.updateDynamic("newListener")(newListener)
+    if (!js.isUndefined(verboseMemoryLeak)) __obj.updateDynamic("verboseMemoryLeak")(verboseMemoryLeak)
+    if (!js.isUndefined(wildcard)) __obj.updateDynamic("wildcard")(wildcard)
+    __obj.asInstanceOf[ConstructorOptions]
+  }
+}
+

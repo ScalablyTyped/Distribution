@@ -67,3 +67,114 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   def apply(compiler: webpackLib.webpackMod.Compiler): scala.Unit
 }
 
+object ForkTsCheckerWebpackPlugin {
+  @scala.inline
+  def apply(
+    apply: js.Function1[webpackLib.webpackMod.Compiler, scala.Unit],
+    async: js.Any,
+    checkDone: js.Any,
+    checkSyntacticErrors: js.Any,
+    colors: js.Any,
+    compilationDone: js.Any,
+    compiler: js.Any,
+    compilerOptions: js.Any,
+    computeContextPath: js.Any,
+    createDoneCallback: js.Any,
+    createEmitCallback: js.Any,
+    createNoopEmitCallback: js.Any,
+    diagnostics: js.Any,
+    doneCallback: js.Any,
+    emitCallback: js.Any,
+    formatter: js.Any,
+    handleServiceExit: js.Any,
+    handleServiceMessage: js.Any,
+    ignoreDiagnostics: js.Any,
+    ignoreLints: js.Any,
+    isWatching: js.Any,
+    killService: js.Any,
+    lints: js.Any,
+    logger: js.Any,
+    memoryLimit: js.Any,
+    options: stdLib.Partial[Options],
+    pluginCompile: js.Any,
+    pluginDone: js.Any,
+    pluginEmit: js.Any,
+    pluginStart: js.Any,
+    pluginStop: js.Any,
+    registerCustomHooks: js.Any,
+    reportFiles: js.Any,
+    silent: js.Any,
+    spawnService: js.Any,
+    tsconfig: js.Any,
+    tslintAutoFix: js.Any,
+    tslintVersion: js.Any,
+    typescriptVersion: js.Any,
+    useColors: js.Any,
+    vue: js.Any,
+    watch: js.Any,
+    watchPaths: js.Any,
+    workersNumber: js.Any,
+    cancellationToken: js.Any = null,
+    elapsed: js.Any = null,
+    service: js.Any = null,
+    started: js.Any = null,
+    tsconfigPath: js.Any = null,
+    tslint: js.Any = null,
+    tslintPath: js.Any = null
+  ): ForkTsCheckerWebpackPlugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apply")(apply)
+    __obj.updateDynamic("async")(async)
+    __obj.updateDynamic("checkDone")(checkDone)
+    __obj.updateDynamic("checkSyntacticErrors")(checkSyntacticErrors)
+    __obj.updateDynamic("colors")(colors)
+    __obj.updateDynamic("compilationDone")(compilationDone)
+    __obj.updateDynamic("compiler")(compiler)
+    __obj.updateDynamic("compilerOptions")(compilerOptions)
+    __obj.updateDynamic("computeContextPath")(computeContextPath)
+    __obj.updateDynamic("createDoneCallback")(createDoneCallback)
+    __obj.updateDynamic("createEmitCallback")(createEmitCallback)
+    __obj.updateDynamic("createNoopEmitCallback")(createNoopEmitCallback)
+    __obj.updateDynamic("diagnostics")(diagnostics)
+    __obj.updateDynamic("doneCallback")(doneCallback)
+    __obj.updateDynamic("emitCallback")(emitCallback)
+    __obj.updateDynamic("formatter")(formatter)
+    __obj.updateDynamic("handleServiceExit")(handleServiceExit)
+    __obj.updateDynamic("handleServiceMessage")(handleServiceMessage)
+    __obj.updateDynamic("ignoreDiagnostics")(ignoreDiagnostics)
+    __obj.updateDynamic("ignoreLints")(ignoreLints)
+    __obj.updateDynamic("isWatching")(isWatching)
+    __obj.updateDynamic("killService")(killService)
+    __obj.updateDynamic("lints")(lints)
+    __obj.updateDynamic("logger")(logger)
+    __obj.updateDynamic("memoryLimit")(memoryLimit)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("pluginCompile")(pluginCompile)
+    __obj.updateDynamic("pluginDone")(pluginDone)
+    __obj.updateDynamic("pluginEmit")(pluginEmit)
+    __obj.updateDynamic("pluginStart")(pluginStart)
+    __obj.updateDynamic("pluginStop")(pluginStop)
+    __obj.updateDynamic("registerCustomHooks")(registerCustomHooks)
+    __obj.updateDynamic("reportFiles")(reportFiles)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("spawnService")(spawnService)
+    __obj.updateDynamic("tsconfig")(tsconfig)
+    __obj.updateDynamic("tslintAutoFix")(tslintAutoFix)
+    __obj.updateDynamic("tslintVersion")(tslintVersion)
+    __obj.updateDynamic("typescriptVersion")(typescriptVersion)
+    __obj.updateDynamic("useColors")(useColors)
+    __obj.updateDynamic("vue")(vue)
+    __obj.updateDynamic("watch")(watch)
+    __obj.updateDynamic("watchPaths")(watchPaths)
+    __obj.updateDynamic("workersNumber")(workersNumber)
+    if (cancellationToken != null) __obj.updateDynamic("cancellationToken")(cancellationToken)
+    if (elapsed != null) __obj.updateDynamic("elapsed")(elapsed)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (started != null) __obj.updateDynamic("started")(started)
+    if (tsconfigPath != null) __obj.updateDynamic("tsconfigPath")(tsconfigPath)
+    if (tslint != null) __obj.updateDynamic("tslint")(tslint)
+    if (tslintPath != null) __obj.updateDynamic("tslintPath")(tslintPath)
+    __obj.asInstanceOf[ForkTsCheckerWebpackPlugin]
+  }
+}
+

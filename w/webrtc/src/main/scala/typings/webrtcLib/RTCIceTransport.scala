@@ -20,3 +20,30 @@ trait RTCIceTransport extends js.Object {
   def getSelectedCandidatePair(): stdLib.RTCIceCandidatePair | scala.Null
 }
 
+object RTCIceTransport {
+  @scala.inline
+  def apply(
+    gatheringState: stdLib.RTCIceGatheringState,
+    getLocalCandidates: js.Function0[js.Array[stdLib.RTCIceCandidate]],
+    getLocalParameters: js.Function0[RTCIceParameters | scala.Null],
+    getRemoteCandidates: js.Function0[js.Array[stdLib.RTCIceCandidate]],
+    getRemoteParameters: js.Function0[RTCIceParameters | scala.Null],
+    getSelectedCandidatePair: js.Function0[stdLib.RTCIceCandidatePair | scala.Null],
+    ongatheringstatechange: IceTransportEventHandler,
+    onselectedcandidatepairchange: IceTransportEventHandler,
+    onstatechange: IceTransportEventHandler
+  ): RTCIceTransport = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("gatheringState")(gatheringState)
+    __obj.updateDynamic("getLocalCandidates")(getLocalCandidates)
+    __obj.updateDynamic("getLocalParameters")(getLocalParameters)
+    __obj.updateDynamic("getRemoteCandidates")(getRemoteCandidates)
+    __obj.updateDynamic("getRemoteParameters")(getRemoteParameters)
+    __obj.updateDynamic("getSelectedCandidatePair")(getSelectedCandidatePair)
+    __obj.updateDynamic("ongatheringstatechange")(ongatheringstatechange.asInstanceOf[js.Any])
+    __obj.updateDynamic("onselectedcandidatepairchange")(onselectedcandidatepairchange.asInstanceOf[js.Any])
+    __obj.updateDynamic("onstatechange")(onstatechange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RTCIceTransport]
+  }
+}
+

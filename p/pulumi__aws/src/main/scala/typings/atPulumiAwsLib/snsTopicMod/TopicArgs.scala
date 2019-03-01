@@ -80,3 +80,48 @@ trait TopicArgs extends js.Object {
   val sqsSuccessFeedbackSampleRate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object TopicArgs {
+  @scala.inline
+  def apply(
+    applicationFailureFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    applicationSuccessFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    applicationSuccessFeedbackSampleRate: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    deliveryPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    displayName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    httpFailureFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    httpSuccessFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    httpSuccessFeedbackSampleRate: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    kmsMasterKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    lambdaFailureFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    lambdaSuccessFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    lambdaSuccessFeedbackSampleRate: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sqsFailureFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sqsSuccessFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sqsSuccessFeedbackSampleRate: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): TopicArgs = {
+    val __obj = js.Dynamic.literal()
+    if (applicationFailureFeedbackRoleArn != null) __obj.updateDynamic("applicationFailureFeedbackRoleArn")(applicationFailureFeedbackRoleArn.asInstanceOf[js.Any])
+    if (applicationSuccessFeedbackRoleArn != null) __obj.updateDynamic("applicationSuccessFeedbackRoleArn")(applicationSuccessFeedbackRoleArn.asInstanceOf[js.Any])
+    if (applicationSuccessFeedbackSampleRate != null) __obj.updateDynamic("applicationSuccessFeedbackSampleRate")(applicationSuccessFeedbackSampleRate.asInstanceOf[js.Any])
+    if (deliveryPolicy != null) __obj.updateDynamic("deliveryPolicy")(deliveryPolicy.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (httpFailureFeedbackRoleArn != null) __obj.updateDynamic("httpFailureFeedbackRoleArn")(httpFailureFeedbackRoleArn.asInstanceOf[js.Any])
+    if (httpSuccessFeedbackRoleArn != null) __obj.updateDynamic("httpSuccessFeedbackRoleArn")(httpSuccessFeedbackRoleArn.asInstanceOf[js.Any])
+    if (httpSuccessFeedbackSampleRate != null) __obj.updateDynamic("httpSuccessFeedbackSampleRate")(httpSuccessFeedbackSampleRate.asInstanceOf[js.Any])
+    if (kmsMasterKeyId != null) __obj.updateDynamic("kmsMasterKeyId")(kmsMasterKeyId.asInstanceOf[js.Any])
+    if (lambdaFailureFeedbackRoleArn != null) __obj.updateDynamic("lambdaFailureFeedbackRoleArn")(lambdaFailureFeedbackRoleArn.asInstanceOf[js.Any])
+    if (lambdaSuccessFeedbackRoleArn != null) __obj.updateDynamic("lambdaSuccessFeedbackRoleArn")(lambdaSuccessFeedbackRoleArn.asInstanceOf[js.Any])
+    if (lambdaSuccessFeedbackSampleRate != null) __obj.updateDynamic("lambdaSuccessFeedbackSampleRate")(lambdaSuccessFeedbackSampleRate.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (sqsFailureFeedbackRoleArn != null) __obj.updateDynamic("sqsFailureFeedbackRoleArn")(sqsFailureFeedbackRoleArn.asInstanceOf[js.Any])
+    if (sqsSuccessFeedbackRoleArn != null) __obj.updateDynamic("sqsSuccessFeedbackRoleArn")(sqsSuccessFeedbackRoleArn.asInstanceOf[js.Any])
+    if (sqsSuccessFeedbackSampleRate != null) __obj.updateDynamic("sqsSuccessFeedbackSampleRate")(sqsSuccessFeedbackSampleRate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TopicArgs]
+  }
+}
+

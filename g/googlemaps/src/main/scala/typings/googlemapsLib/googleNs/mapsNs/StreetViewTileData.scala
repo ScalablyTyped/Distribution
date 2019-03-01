@@ -12,3 +12,20 @@ trait StreetViewTileData extends js.Object {
   def getTileUrl(pano: java.lang.String, tileZoom: scala.Double, tileX: scala.Double, tileY: scala.Double): java.lang.String
 }
 
+object StreetViewTileData {
+  @scala.inline
+  def apply(
+    getTileUrl: js.Function4[java.lang.String, scala.Double, scala.Double, scala.Double, java.lang.String],
+    centerHeading: scala.Int | scala.Double = null,
+    tileSize: Size = null,
+    worldSize: Size = null
+  ): StreetViewTileData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getTileUrl")(getTileUrl)
+    if (centerHeading != null) __obj.updateDynamic("centerHeading")(centerHeading.asInstanceOf[js.Any])
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize)
+    if (worldSize != null) __obj.updateDynamic("worldSize")(worldSize)
+    __obj.asInstanceOf[StreetViewTileData]
+  }
+}
+

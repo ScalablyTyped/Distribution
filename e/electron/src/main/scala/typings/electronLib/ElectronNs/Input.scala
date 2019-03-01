@@ -40,3 +40,27 @@ trait Input extends js.Object {
   var `type`: java.lang.String
 }
 
+object Input {
+  @scala.inline
+  def apply(
+    alt: scala.Boolean,
+    code: java.lang.String,
+    control: scala.Boolean,
+    isAutoRepeat: scala.Boolean,
+    key: java.lang.String,
+    meta: scala.Boolean,
+    shift: scala.Boolean,
+    `type`: java.lang.String
+  ): Input = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("alt")(alt)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("control")(control)
+    __obj.updateDynamic("isAutoRepeat")(isAutoRepeat)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("shift")(shift)
+    __obj.asInstanceOf[Input]
+  }
+}
+

@@ -198,3 +198,130 @@ import scala.scalajs.js.annotation._
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object IHtmlEditor {
+  @scala.inline
+  def apply(
+    IField: extjsLib.ExtNs.formNs.fieldNs.IField = null,
+    IFieldContainer: IFieldContainer = null,
+    afterIFrameTpl: js.Any = null,
+    afterTextAreaTpl: js.Any = null,
+    batchChanges: js.Function1[/* fn */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeIFrameTpl: js.Any = null,
+    beforeReset: js.Function0[scala.Unit] = null,
+    beforeTextAreaTpl: js.Any = null,
+    buttonTips: js.Any = null,
+    checkChange: js.Function0[scala.Unit] = null,
+    checkDirty: js.Function0[scala.Unit] = null,
+    cleanHtml: js.Function1[/* html */ js.UndefOr[java.lang.String], java.lang.String] = null,
+    clearInvalid: js.Function0[scala.Unit] = null,
+    componentLayout: js.Any = null,
+    createLinkText: java.lang.String = null,
+    defaultButtonUI: java.lang.String = null,
+    defaultLinkValue: java.lang.String = null,
+    defaultValue: java.lang.String = null,
+    enableAlignments: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColors: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFont: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFontSize: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    enableLinks: js.UndefOr[scala.Boolean] = js.undefined,
+    enableLists: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSourceEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    execCmd: js.Function2[/* cmd */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    extractFileInput: js.Function0[stdLib.HTMLElement] = null,
+    focus: js.Function2[
+      /* selectText */ js.UndefOr[js.Any], 
+      /* delay */ js.UndefOr[js.Any], 
+      extjsLib.ExtNs.IComponent
+    ] = null,
+    fontFamilies: extjsLib.ExtNs.Array = null,
+    getDocMarkup: js.Function0[scala.Unit] = null,
+    getErrors: js.Function1[/* value */ js.UndefOr[js.Any], extjsLib.ExtNs.Array] = null,
+    getModelData: js.Function0[_] = null,
+    getName: js.Function0[java.lang.String] = null,
+    getSubmitData: js.Function0[_] = null,
+    getToolbar: js.Function0[extjsLib.ExtNs.toolbarNs.IToolbar] = null,
+    getValue: js.Function0[_] = null,
+    iframeAttrTpl: js.Any = null,
+    initField: js.Function0[scala.Unit] = null,
+    initValue: js.Function0[scala.Unit] = null,
+    insertAtCursor: js.Function1[/* text */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    isDirty: js.Function0[scala.Boolean] = null,
+    isEqual: js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], scala.Boolean] = null,
+    isFileUpload: js.Function0[scala.Boolean] = null,
+    isValid: js.Function0[scala.Boolean] = null,
+    markInvalid: js.Function1[/* errors */ js.UndefOr[js.Any], scala.Unit] = null,
+    maskOnDisable: js.UndefOr[scala.Boolean] = js.undefined,
+    pushValue: js.Function0[scala.Unit] = null,
+    relayCmd: js.Function2[/* cmd */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    reset: js.Function0[scala.Unit] = null,
+    resetOriginalValue: js.Function0[scala.Unit] = null,
+    setReadOnly: js.Function1[/* readOnly */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
+    syncValue: js.Function0[scala.Unit] = null,
+    toggleSourceEdit: js.Function1[/* sourceEditMode */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    transformOriginalValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
+    updateToolbar: js.Function0[scala.Unit] = null
+  ): IHtmlEditor = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IField)
+    js.Dynamic.global.Object.assign(__obj, IFieldContainer)
+    if (afterIFrameTpl != null) __obj.updateDynamic("afterIFrameTpl")(afterIFrameTpl)
+    if (afterTextAreaTpl != null) __obj.updateDynamic("afterTextAreaTpl")(afterTextAreaTpl)
+    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges)
+    if (beforeIFrameTpl != null) __obj.updateDynamic("beforeIFrameTpl")(beforeIFrameTpl)
+    if (beforeReset != null) __obj.updateDynamic("beforeReset")(beforeReset)
+    if (beforeTextAreaTpl != null) __obj.updateDynamic("beforeTextAreaTpl")(beforeTextAreaTpl)
+    if (buttonTips != null) __obj.updateDynamic("buttonTips")(buttonTips)
+    if (checkChange != null) __obj.updateDynamic("checkChange")(checkChange)
+    if (checkDirty != null) __obj.updateDynamic("checkDirty")(checkDirty)
+    if (cleanHtml != null) __obj.updateDynamic("cleanHtml")(cleanHtml)
+    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(clearInvalid)
+    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (createLinkText != null) __obj.updateDynamic("createLinkText")(createLinkText)
+    if (defaultButtonUI != null) __obj.updateDynamic("defaultButtonUI")(defaultButtonUI)
+    if (defaultLinkValue != null) __obj.updateDynamic("defaultLinkValue")(defaultLinkValue)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(enableAlignments)) __obj.updateDynamic("enableAlignments")(enableAlignments)
+    if (!js.isUndefined(enableColors)) __obj.updateDynamic("enableColors")(enableColors)
+    if (!js.isUndefined(enableFont)) __obj.updateDynamic("enableFont")(enableFont)
+    if (!js.isUndefined(enableFontSize)) __obj.updateDynamic("enableFontSize")(enableFontSize)
+    if (!js.isUndefined(enableFormat)) __obj.updateDynamic("enableFormat")(enableFormat)
+    if (!js.isUndefined(enableLinks)) __obj.updateDynamic("enableLinks")(enableLinks)
+    if (!js.isUndefined(enableLists)) __obj.updateDynamic("enableLists")(enableLists)
+    if (!js.isUndefined(enableSourceEdit)) __obj.updateDynamic("enableSourceEdit")(enableSourceEdit)
+    if (execCmd != null) __obj.updateDynamic("execCmd")(execCmd)
+    if (extractFileInput != null) __obj.updateDynamic("extractFileInput")(extractFileInput)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (fontFamilies != null) __obj.updateDynamic("fontFamilies")(fontFamilies)
+    if (getDocMarkup != null) __obj.updateDynamic("getDocMarkup")(getDocMarkup)
+    if (getErrors != null) __obj.updateDynamic("getErrors")(getErrors)
+    if (getModelData != null) __obj.updateDynamic("getModelData")(getModelData)
+    if (getName != null) __obj.updateDynamic("getName")(getName)
+    if (getSubmitData != null) __obj.updateDynamic("getSubmitData")(getSubmitData)
+    if (getToolbar != null) __obj.updateDynamic("getToolbar")(getToolbar)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (iframeAttrTpl != null) __obj.updateDynamic("iframeAttrTpl")(iframeAttrTpl)
+    if (initField != null) __obj.updateDynamic("initField")(initField)
+    if (initValue != null) __obj.updateDynamic("initValue")(initValue)
+    if (insertAtCursor != null) __obj.updateDynamic("insertAtCursor")(insertAtCursor)
+    if (isDirty != null) __obj.updateDynamic("isDirty")(isDirty)
+    if (isEqual != null) __obj.updateDynamic("isEqual")(isEqual)
+    if (isFileUpload != null) __obj.updateDynamic("isFileUpload")(isFileUpload)
+    if (isValid != null) __obj.updateDynamic("isValid")(isValid)
+    if (markInvalid != null) __obj.updateDynamic("markInvalid")(markInvalid)
+    if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable)
+    if (pushValue != null) __obj.updateDynamic("pushValue")(pushValue)
+    if (relayCmd != null) __obj.updateDynamic("relayCmd")(relayCmd)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(resetOriginalValue)
+    if (setReadOnly != null) __obj.updateDynamic("setReadOnly")(setReadOnly)
+    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (syncValue != null) __obj.updateDynamic("syncValue")(syncValue)
+    if (toggleSourceEdit != null) __obj.updateDynamic("toggleSourceEdit")(toggleSourceEdit)
+    if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(transformOriginalValue)
+    if (updateToolbar != null) __obj.updateDynamic("updateToolbar")(updateToolbar)
+    __obj.asInstanceOf[IHtmlEditor]
+  }
+}
+

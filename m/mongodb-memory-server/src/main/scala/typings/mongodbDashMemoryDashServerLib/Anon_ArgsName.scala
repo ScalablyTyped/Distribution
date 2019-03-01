@@ -10,3 +10,13 @@ trait Anon_ArgsName extends js.Object {
   def removeCallback(args: js.Any*): js.Any
 }
 
+object Anon_ArgsName {
+  @scala.inline
+  def apply(name: java.lang.String, removeCallback: js.Function1[/* repeated */ js.Any, js.Any]): Anon_ArgsName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("removeCallback")(removeCallback)
+    __obj.asInstanceOf[Anon_ArgsName]
+  }
+}
+

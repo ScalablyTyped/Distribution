@@ -66,3 +66,30 @@ trait options extends js.Object {
   var track: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object options {
+  @scala.inline
+  def apply(
+    dir: java.lang.String = null,
+    limit: stdLib.Number = null,
+    mode: stdLib.Number = null,
+    name: java.lang.String = null,
+    prefix: java.lang.String = null,
+    recursive: js.UndefOr[scala.Boolean] = js.undefined,
+    suffix: java.lang.String = null,
+    template: java.lang.String = null,
+    track: js.UndefOr[scala.Boolean] = js.undefined
+  ): options = {
+    val __obj = js.Dynamic.literal()
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (limit != null) __obj.updateDynamic("limit")(limit)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(track)) __obj.updateDynamic("track")(track)
+    __obj.asInstanceOf[options]
+  }
+}
+

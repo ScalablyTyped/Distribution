@@ -11,3 +11,18 @@ trait Anon_DataResources extends js.Object {
   var readWriteType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DataResources {
+  @scala.inline
+  def apply(
+    dataResources: js.Array[Anon_Type] = null,
+    includeManagementEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    readWriteType: java.lang.String = null
+  ): Anon_DataResources = {
+    val __obj = js.Dynamic.literal()
+    if (dataResources != null) __obj.updateDynamic("dataResources")(dataResources)
+    if (!js.isUndefined(includeManagementEvents)) __obj.updateDynamic("includeManagementEvents")(includeManagementEvents)
+    if (readWriteType != null) __obj.updateDynamic("readWriteType")(readWriteType)
+    __obj.asInstanceOf[Anon_DataResources]
+  }
+}
+

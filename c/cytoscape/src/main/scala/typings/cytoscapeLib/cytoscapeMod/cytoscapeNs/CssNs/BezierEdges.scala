@@ -43,3 +43,17 @@ trait BezierEdges extends js.Object {
   var `edge-distances`: scala.Double
 }
 
+object BezierEdges {
+  @scala.inline
+  def apply(
+    `control-point-distance`: scala.Double,
+    `control-point-step-size`: scala.Double,
+    `control-point-weight`: scala.Double,
+    `edge-distances`: scala.Double
+  ): BezierEdges = {
+    val __obj = js.Dynamic.literal(`control-point-distance` = `control-point-distance`, `control-point-step-size` = `control-point-step-size`, `control-point-weight` = `control-point-weight`, `edge-distances` = `edge-distances`)
+  
+    __obj.asInstanceOf[BezierEdges]
+  }
+}
+

@@ -12,3 +12,20 @@ trait ParticipantTimelineData extends js.Object {
   var zeroToTen: scala.Double
 }
 
+object ParticipantTimelineData {
+  @scala.inline
+  def apply(
+    tenToTwenty: scala.Double,
+    thirtyToEnd: scala.Double,
+    twentyToThirty: scala.Double,
+    zeroToTen: scala.Double
+  ): ParticipantTimelineData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tenToTwenty")(tenToTwenty)
+    __obj.updateDynamic("thirtyToEnd")(thirtyToEnd)
+    __obj.updateDynamic("twentyToThirty")(twentyToThirty)
+    __obj.updateDynamic("zeroToTen")(zeroToTen)
+    __obj.asInstanceOf[ParticipantTimelineData]
+  }
+}
+

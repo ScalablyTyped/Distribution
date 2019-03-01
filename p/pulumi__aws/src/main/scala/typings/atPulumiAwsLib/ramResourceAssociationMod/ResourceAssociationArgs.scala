@@ -16,3 +16,16 @@ trait ResourceAssociationArgs extends js.Object {
   val resourceShareArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object ResourceAssociationArgs {
+  @scala.inline
+  def apply(
+    resourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    resourceShareArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): ResourceAssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceAssociationArgs]
+  }
+}
+

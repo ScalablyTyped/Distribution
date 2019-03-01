@@ -55,3 +55,30 @@ trait ClientOptions extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    callback: js.Function2[/* error */ stdLib.Error, /* metrics */ js.Any, scala.Unit] = null,
+    host: java.lang.String = null,
+    interval: scala.Int | scala.Double = null,
+    maxPacketSize: scala.Int | scala.Double = null,
+    port: scala.Int | scala.Double = null,
+    prefix: java.lang.String = null,
+    suffix: java.lang.String = null,
+    `type`: graphiteDashUdpLib.graphiteDashUdpLibStrings.udp4 | graphiteDashUdpLib.graphiteDashUdpLibStrings.udp6 = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (maxPacketSize != null) __obj.updateDynamic("maxPacketSize")(maxPacketSize.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_Size extends js.Object {
   var size: Anon_Large
 }
 
+object Anon_Size {
+  @scala.inline
+  def apply(size: Anon_Large): Anon_Size = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Anon_Size]
+  }
+}
+

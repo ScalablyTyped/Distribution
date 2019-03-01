@@ -14,3 +14,24 @@ trait AdTimeParam extends js.Object {
   var tag: java.lang.String
 }
 
+object AdTimeParam {
+  @scala.inline
+  def apply(
+    client: jwplayerLib.jwplayerLibStrings.vast | jwplayerLib.jwplayerLibStrings.googima,
+    creativetype: java.lang.String,
+    duration: scala.Double,
+    position: scala.Double,
+    sequence: scala.Double,
+    tag: java.lang.String
+  ): AdTimeParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    __obj.updateDynamic("creativetype")(creativetype)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("sequence")(sequence)
+    __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[AdTimeParam]
+  }
+}
+

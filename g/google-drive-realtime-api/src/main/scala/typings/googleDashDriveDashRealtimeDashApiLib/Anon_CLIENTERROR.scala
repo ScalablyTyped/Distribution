@@ -53,3 +53,38 @@ trait Anon_CLIENTERROR extends js.Object {
   var UNEXPECTED_ELEMENT: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
 }
 
+object Anon_CLIENTERROR {
+  @scala.inline
+  def apply(
+    CLIENT_ERROR: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    CONCURRENT_CREATION: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    FATAL_NETWORK_ERROR: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    FORBIDDEN: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    INVALID_COMPOUND_OPERATION: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    INVALID_ELEMENT_TYPE: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    INVALID_JSON_SYNTAX: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    MISSING_PROPERTY: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    NOT_FOUND: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    NO_WRITE_PERMISSION: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    SERVER_ERROR: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    TOKEN_REFRESH_REQUIRED: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType,
+    UNEXPECTED_ELEMENT: googleDashDriveDashRealtimeDashApiLib.gapiNs.driveNs.realtimeNs.ErrorType
+  ): Anon_CLIENTERROR = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CLIENT_ERROR")(CLIENT_ERROR)
+    __obj.updateDynamic("CONCURRENT_CREATION")(CONCURRENT_CREATION)
+    __obj.updateDynamic("FATAL_NETWORK_ERROR")(FATAL_NETWORK_ERROR)
+    __obj.updateDynamic("FORBIDDEN")(FORBIDDEN)
+    __obj.updateDynamic("INVALID_COMPOUND_OPERATION")(INVALID_COMPOUND_OPERATION)
+    __obj.updateDynamic("INVALID_ELEMENT_TYPE")(INVALID_ELEMENT_TYPE)
+    __obj.updateDynamic("INVALID_JSON_SYNTAX")(INVALID_JSON_SYNTAX)
+    __obj.updateDynamic("MISSING_PROPERTY")(MISSING_PROPERTY)
+    __obj.updateDynamic("NOT_FOUND")(NOT_FOUND)
+    __obj.updateDynamic("NO_WRITE_PERMISSION")(NO_WRITE_PERMISSION)
+    __obj.updateDynamic("SERVER_ERROR")(SERVER_ERROR)
+    __obj.updateDynamic("TOKEN_REFRESH_REQUIRED")(TOKEN_REFRESH_REQUIRED)
+    __obj.updateDynamic("UNEXPECTED_ELEMENT")(UNEXPECTED_ELEMENT)
+    __obj.asInstanceOf[Anon_CLIENTERROR]
+  }
+}
+

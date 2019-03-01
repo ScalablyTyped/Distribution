@@ -16,3 +16,12 @@ trait ASPxClientFileManagerItemsDeletedEventArgs extends ASPxClientEventArgs {
   var items: js.Array[ASPxClientFileManagerItem]
 }
 
+object ASPxClientFileManagerItemsDeletedEventArgs {
+  @scala.inline
+  def apply(items: js.Array[ASPxClientFileManagerItem]): ASPxClientFileManagerItemsDeletedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[ASPxClientFileManagerItemsDeletedEventArgs]
+  }
+}
+

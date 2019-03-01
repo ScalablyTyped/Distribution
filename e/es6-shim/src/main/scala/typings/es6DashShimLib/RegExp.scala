@@ -21,3 +21,12 @@ trait RegExp extends js.Object {
   var flags: java.lang.String
 }
 
+object RegExp {
+  @scala.inline
+  def apply(flags: java.lang.String): RegExp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("flags")(flags)
+    __obj.asInstanceOf[RegExp]
+  }
+}
+

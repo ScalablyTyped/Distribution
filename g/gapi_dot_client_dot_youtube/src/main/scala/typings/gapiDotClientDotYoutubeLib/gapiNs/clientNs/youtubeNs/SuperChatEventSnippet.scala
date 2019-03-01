@@ -24,3 +24,28 @@ trait SuperChatEventSnippet extends js.Object {
   var supporterDetails: js.UndefOr[ChannelProfileDetails] = js.undefined
 }
 
+object SuperChatEventSnippet {
+  @scala.inline
+  def apply(
+    amountMicros: java.lang.String = null,
+    channelId: java.lang.String = null,
+    commentText: java.lang.String = null,
+    createdAt: java.lang.String = null,
+    currency: java.lang.String = null,
+    displayString: java.lang.String = null,
+    messageType: scala.Int | scala.Double = null,
+    supporterDetails: ChannelProfileDetails = null
+  ): SuperChatEventSnippet = {
+    val __obj = js.Dynamic.literal()
+    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (commentText != null) __obj.updateDynamic("commentText")(commentText)
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (displayString != null) __obj.updateDynamic("displayString")(displayString)
+    if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
+    if (supporterDetails != null) __obj.updateDynamic("supporterDetails")(supporterDetails)
+    __obj.asInstanceOf[SuperChatEventSnippet]
+  }
+}
+

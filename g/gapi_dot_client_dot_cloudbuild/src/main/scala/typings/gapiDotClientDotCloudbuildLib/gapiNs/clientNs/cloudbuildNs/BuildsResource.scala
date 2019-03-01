@@ -32,3 +32,32 @@ trait BuildsResource extends js.Object {
   def list(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ListBuildsResponse]
 }
 
+object BuildsResource {
+  @scala.inline
+  def apply(
+    cancel: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Build]
+    ],
+    create: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Build]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListBuildsResponse]
+    ]
+  ): BuildsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[BuildsResource]
+  }
+}
+

@@ -14,3 +14,12 @@ trait ILifecycle extends js.Object {
   def getInstance[T](resolver: IResolver): T
 }
 
+object ILifecycle {
+  @scala.inline
+  def apply(getInstance: js.Function1[IResolver, js.Any]): ILifecycle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getInstance")(getInstance)
+    __obj.asInstanceOf[ILifecycle]
+  }
+}
+

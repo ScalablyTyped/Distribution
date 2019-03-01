@@ -15,3 +15,13 @@ trait SyncWorkspaceResponse extends js.Object {
   var syncStatus: js.UndefOr[SyncStatus] = js.undefined
 }
 
+object SyncWorkspaceResponse {
+  @scala.inline
+  def apply(mergeConflict: js.Array[MergeConflict] = null, syncStatus: SyncStatus = null): SyncWorkspaceResponse = {
+    val __obj = js.Dynamic.literal()
+    if (mergeConflict != null) __obj.updateDynamic("mergeConflict")(mergeConflict)
+    if (syncStatus != null) __obj.updateDynamic("syncStatus")(syncStatus)
+    __obj.asInstanceOf[SyncWorkspaceResponse]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_BumpMap extends js.Object {
   var bumpScale: threeLib.threeDashCoreMod.IUniform
 }
 
+object Anon_BumpMap {
+  @scala.inline
+  def apply(bumpMap: threeLib.threeDashCoreMod.IUniform, bumpScale: threeLib.threeDashCoreMod.IUniform): Anon_BumpMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bumpMap")(bumpMap)
+    __obj.updateDynamic("bumpScale")(bumpScale)
+    __obj.asInstanceOf[Anon_BumpMap]
+  }
+}
+

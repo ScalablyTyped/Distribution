@@ -55,3 +55,33 @@ trait PaymentMethod extends Resource {
   var `type`: PaymentMethodType
 }
 
+object PaymentMethod {
+  @scala.inline
+  def apply(
+    allow_buy: scala.Boolean,
+    allow_sell: scala.Boolean,
+    currency: java.lang.String,
+    instant_buy: scala.Boolean,
+    instant_sell: scala.Boolean,
+    name: java.lang.String,
+    primary_buy: scala.Boolean,
+    primary_sell: scala.Boolean,
+    resource: coinbaseLib.coinbaseLibStrings.payment_method,
+    `type`: PaymentMethodType,
+    limits: PaymentMethodLimits = null
+  ): PaymentMethod = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("allow_buy")(allow_buy)
+    __obj.updateDynamic("allow_sell")(allow_sell)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("instant_buy")(instant_buy)
+    __obj.updateDynamic("instant_sell")(instant_sell)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("primary_buy")(primary_buy)
+    __obj.updateDynamic("primary_sell")(primary_sell)
+    __obj.updateDynamic("resource")(resource)
+    if (limits != null) __obj.updateDynamic("limits")(limits)
+    __obj.asInstanceOf[PaymentMethod]
+  }
+}
+

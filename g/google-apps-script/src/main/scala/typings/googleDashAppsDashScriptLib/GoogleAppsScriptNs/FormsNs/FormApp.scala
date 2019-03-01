@@ -24,3 +24,44 @@ trait FormApp extends js.Object {
   def openByUrl(url: java.lang.String): Form
 }
 
+object FormApp {
+  @scala.inline
+  def apply(
+    Alignment: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Alignment */ js.Any,
+    DestinationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DestinationType */ js.Any,
+    FeedbackType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FeedbackType */ js.Any,
+    ItemType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemType */ js.Any,
+    PageNavigationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageNavigationType */ js.Any,
+    create: js.Function1[java.lang.String, Form],
+    createCheckboxGridValidation: js.Function0[CheckboxGridValidationBuilder],
+    createCheckboxValidation: js.Function0[CheckboxValidationBuilder],
+    createFeedback: js.Function0[QuizFeedbackBuilder],
+    createGridValidation: js.Function0[GridValidationBuilder],
+    createParagraphTextValidation: js.Function0[ParagraphTextValidationBuilder],
+    createTextValidation: js.Function0[TextValidationBuilder],
+    getActiveForm: js.Function0[Form],
+    getUi: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Ui],
+    openById: js.Function1[java.lang.String, Form],
+    openByUrl: js.Function1[java.lang.String, Form]
+  ): FormApp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Alignment")(Alignment)
+    __obj.updateDynamic("DestinationType")(DestinationType)
+    __obj.updateDynamic("FeedbackType")(FeedbackType)
+    __obj.updateDynamic("ItemType")(ItemType)
+    __obj.updateDynamic("PageNavigationType")(PageNavigationType)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createCheckboxGridValidation")(createCheckboxGridValidation)
+    __obj.updateDynamic("createCheckboxValidation")(createCheckboxValidation)
+    __obj.updateDynamic("createFeedback")(createFeedback)
+    __obj.updateDynamic("createGridValidation")(createGridValidation)
+    __obj.updateDynamic("createParagraphTextValidation")(createParagraphTextValidation)
+    __obj.updateDynamic("createTextValidation")(createTextValidation)
+    __obj.updateDynamic("getActiveForm")(getActiveForm)
+    __obj.updateDynamic("getUi")(getUi)
+    __obj.updateDynamic("openById")(openById)
+    __obj.updateDynamic("openByUrl")(openByUrl)
+    __obj.asInstanceOf[FormApp]
+  }
+}
+

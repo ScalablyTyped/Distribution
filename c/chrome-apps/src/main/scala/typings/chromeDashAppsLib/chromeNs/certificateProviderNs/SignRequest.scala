@@ -22,3 +22,20 @@ trait SignRequest extends js.Object {
   var signRequestId: chromeDashAppsLib.chromeNs.integer
 }
 
+object SignRequest {
+  @scala.inline
+  def apply(
+    certificate: stdLib.ArrayBuffer,
+    digest: stdLib.ArrayBuffer,
+    hash: Hash,
+    signRequestId: chromeDashAppsLib.chromeNs.integer
+  ): SignRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("certificate")(certificate)
+    __obj.updateDynamic("digest")(digest)
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("signRequestId")(signRequestId)
+    __obj.asInstanceOf[SignRequest]
+  }
+}
+

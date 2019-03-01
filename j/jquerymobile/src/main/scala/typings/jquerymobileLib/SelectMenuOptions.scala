@@ -21,3 +21,38 @@ trait SelectMenuOptions extends js.Object {
   var theme: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SelectMenuOptions {
+  @scala.inline
+  def apply(
+    hidePlaceholderMenuItems: scala.Boolean,
+    corners: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    iconpos: java.lang.String = null,
+    iconshadow: js.UndefOr[scala.Boolean] = js.undefined,
+    initSelector: java.lang.String = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    mini: js.UndefOr[scala.Boolean] = js.undefined,
+    nativeMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    overlayTheme: java.lang.String = null,
+    preventFocusZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    shadow: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: java.lang.String = null
+  ): SelectMenuOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hidePlaceholderMenuItems")(hidePlaceholderMenuItems)
+    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconpos != null) __obj.updateDynamic("iconpos")(iconpos)
+    if (!js.isUndefined(iconshadow)) __obj.updateDynamic("iconshadow")(iconshadow)
+    if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini)
+    if (!js.isUndefined(nativeMenu)) __obj.updateDynamic("nativeMenu")(nativeMenu)
+    if (overlayTheme != null) __obj.updateDynamic("overlayTheme")(overlayTheme)
+    if (!js.isUndefined(preventFocusZoom)) __obj.updateDynamic("preventFocusZoom")(preventFocusZoom)
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[SelectMenuOptions]
+  }
+}
+

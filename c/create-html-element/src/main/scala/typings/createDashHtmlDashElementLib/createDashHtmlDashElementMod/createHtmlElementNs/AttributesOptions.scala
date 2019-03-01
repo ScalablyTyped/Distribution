@@ -11,3 +11,14 @@ trait AttributesOptions extends js.Object {
   ] = js.undefined
 }
 
+object AttributesOptions {
+  @scala.inline
+  def apply(
+    attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double | js.Array[java.lang.String]] = null
+  ): AttributesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    __obj.asInstanceOf[AttributesOptions]
+  }
+}
+

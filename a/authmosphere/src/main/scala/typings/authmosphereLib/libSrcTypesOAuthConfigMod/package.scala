@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 package object libSrcTypesOAuthConfigMod {
   type AuthorizationCodeGrantConfig = CredentialsConfig with GrantConfigBase with authmosphereLib.Anon_Code
   type ClientCredentialsGrantConfig = CredentialsConfig with GrantConfigBase
-  type CredentialsConfig = CredentialsDirConfig | CredentialsClientConfig
   type CredentialsPasswordConfig = CredentialsDirConfig | CredentialsUserClientConfig
   type CredentialsUserClientConfig = CredentialsClientConfig with CredentialsUserConfig
   type OAuthConfig = ClientCredentialsGrantConfig | AuthorizationCodeGrantConfig | PasswordCredentialsGrantConfig | RefreshGrantConfig

@@ -11,3 +11,18 @@ trait Anon_CommentsElementType extends js.Object {
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
 }
 
+object Anon_CommentsElementType {
+  @scala.inline
+  def apply(
+    elementType: astDashTypesLib.genKindsMod.FlowTypeKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsElementType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("elementType")(elementType)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsElementType]
+  }
+}
+

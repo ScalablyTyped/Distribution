@@ -5,8 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Text extends js.Object {
+trait Text
+  extends markedLib.markedMod.markedNs.Token {
   var text: java.lang.String
   var `type`: markedLib.markedLibStrings.text
+}
+
+object Text {
+  @scala.inline
+  def apply(text: java.lang.String, `type`: markedLib.markedLibStrings.text): Text = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Text]
+  }
 }
 

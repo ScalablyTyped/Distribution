@@ -16,3 +16,15 @@ trait ZipCelXCell extends js.Object {
   var value: java.lang.String | scala.Double
 }
 
+object ZipCelXCell {
+  @scala.inline
+  def apply(
+    `type`: zipcelxLib.zipcelxLibStrings.string | zipcelxLib.zipcelxLibStrings.number,
+    value: java.lang.String | scala.Double
+  ): ZipCelXCell = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ZipCelXCell]
+  }
+}
+

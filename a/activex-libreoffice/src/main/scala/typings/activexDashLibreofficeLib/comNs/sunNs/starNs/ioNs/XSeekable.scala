@@ -43,3 +43,28 @@ trait XSeekable
   def seek(location: scala.Double): scala.Unit
 }
 
+object XSeekable {
+  @scala.inline
+  def apply(
+    Length: scala.Double,
+    Position: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getLength: js.Function0[scala.Double],
+    getPosition: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    seek: js.Function1[scala.Double, scala.Unit]
+  ): XSeekable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Length")(Length)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLength")(getLength)
+    __obj.updateDynamic("getPosition")(getPosition)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("seek")(seek)
+    __obj.asInstanceOf[XSeekable]
+  }
+}
+

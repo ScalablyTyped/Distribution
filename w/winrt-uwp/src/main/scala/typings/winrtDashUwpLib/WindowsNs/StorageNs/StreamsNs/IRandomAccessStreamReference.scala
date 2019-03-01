@@ -14,3 +14,16 @@ trait IRandomAccessStreamReference extends js.Object {
   def openReadAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]
 }
 
+object IRandomAccessStreamReference {
+  @scala.inline
+  def apply(
+    openReadAsync: js.Function0[
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]
+    ]
+  ): IRandomAccessStreamReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("openReadAsync")(openReadAsync)
+    __obj.asInstanceOf[IRandomAccessStreamReference]
+  }
+}
+

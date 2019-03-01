@@ -49,7 +49,7 @@ trait IOverflowListProps[T]
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
   ] = js.undefined
   /**
     * Callback invoked to render the overflowed items. Unlike
@@ -65,5 +65,34 @@ trait IOverflowListProps[T]
     * Remember to set a `key` on the rendered element!
     */
   def visibleItemRenderer(item: T, index: scala.Double): reactLib.reactMod.ReactNs.ReactChild
+}
+
+object IOverflowListProps {
+  @scala.inline
+  def apply[T](
+    items: js.Array[T],
+    overflowRenderer: js.Function1[js.Array[T], reactLib.reactMod.ReactNs.ReactNode],
+    visibleItemRenderer: js.Function2[T, scala.Double, reactLib.reactMod.ReactNs.ReactChild],
+    className: java.lang.String = null,
+    collapseFrom: atBlueprintjsCoreLib.libEsmCommonBoundaryMod.Boundary = null,
+    minVisibleItems: scala.Int | scala.Double = null,
+    observeParents: js.UndefOr[scala.Boolean] = js.undefined,
+    onOverflow: js.Function1[/* overflowItems */ js.Array[T], scala.Unit] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null
+  ): IOverflowListProps[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("overflowRenderer")(overflowRenderer)
+    __obj.updateDynamic("visibleItemRenderer")(visibleItemRenderer)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom)
+    if (minVisibleItems != null) __obj.updateDynamic("minVisibleItems")(minVisibleItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(observeParents)) __obj.updateDynamic("observeParents")(observeParents)
+    if (onOverflow != null) __obj.updateDynamic("onOverflow")(onOverflow)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    __obj.asInstanceOf[IOverflowListProps[T]]
+  }
 }
 

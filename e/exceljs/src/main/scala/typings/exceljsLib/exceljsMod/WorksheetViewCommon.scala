@@ -38,3 +38,26 @@ trait WorksheetViewCommon extends js.Object {
   var zoomScaleNormal: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WorksheetViewCommon {
+  @scala.inline
+  def apply(
+    activeCell: java.lang.String = null,
+    rightToLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    showGridLines: js.UndefOr[scala.Boolean] = js.undefined,
+    showRowColHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    showRuler: js.UndefOr[scala.Boolean] = js.undefined,
+    zoomScale: scala.Int | scala.Double = null,
+    zoomScaleNormal: scala.Int | scala.Double = null
+  ): WorksheetViewCommon = {
+    val __obj = js.Dynamic.literal()
+    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell)
+    if (!js.isUndefined(rightToLeft)) __obj.updateDynamic("rightToLeft")(rightToLeft)
+    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines)
+    if (!js.isUndefined(showRowColHeaders)) __obj.updateDynamic("showRowColHeaders")(showRowColHeaders)
+    if (!js.isUndefined(showRuler)) __obj.updateDynamic("showRuler")(showRuler)
+    if (zoomScale != null) __obj.updateDynamic("zoomScale")(zoomScale.asInstanceOf[js.Any])
+    if (zoomScaleNormal != null) __obj.updateDynamic("zoomScaleNormal")(zoomScaleNormal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetViewCommon]
+  }
+}
+

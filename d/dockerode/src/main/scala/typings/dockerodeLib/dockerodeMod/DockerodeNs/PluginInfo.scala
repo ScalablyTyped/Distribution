@@ -14,3 +14,24 @@ trait PluginInfo extends js.Object {
   var Settings: PluginSettings
 }
 
+object PluginInfo {
+  @scala.inline
+  def apply(
+    Config: PluginConfig,
+    Enabled: scala.Boolean,
+    Name: java.lang.String,
+    Settings: PluginSettings,
+    Id: java.lang.String = null,
+    PluginReference: java.lang.String = null
+  ): PluginInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Config")(Config)
+    __obj.updateDynamic("Enabled")(Enabled)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Settings")(Settings)
+    if (Id != null) __obj.updateDynamic("Id")(Id)
+    if (PluginReference != null) __obj.updateDynamic("PluginReference")(PluginReference)
+    __obj.asInstanceOf[PluginInfo]
+  }
+}
+

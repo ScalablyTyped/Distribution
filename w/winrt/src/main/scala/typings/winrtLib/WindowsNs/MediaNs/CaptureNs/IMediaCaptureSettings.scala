@@ -13,3 +13,22 @@ trait IMediaCaptureSettings extends js.Object {
   var videoDeviceId: java.lang.String
 }
 
+object IMediaCaptureSettings {
+  @scala.inline
+  def apply(
+    audioDeviceId: java.lang.String,
+    photoCaptureSource: PhotoCaptureSource,
+    streamingCaptureMode: StreamingCaptureMode,
+    videoDeviceCharacteristic: VideoDeviceCharacteristic,
+    videoDeviceId: java.lang.String
+  ): IMediaCaptureSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audioDeviceId")(audioDeviceId)
+    __obj.updateDynamic("photoCaptureSource")(photoCaptureSource)
+    __obj.updateDynamic("streamingCaptureMode")(streamingCaptureMode)
+    __obj.updateDynamic("videoDeviceCharacteristic")(videoDeviceCharacteristic)
+    __obj.updateDynamic("videoDeviceId")(videoDeviceId)
+    __obj.asInstanceOf[IMediaCaptureSettings]
+  }
+}
+

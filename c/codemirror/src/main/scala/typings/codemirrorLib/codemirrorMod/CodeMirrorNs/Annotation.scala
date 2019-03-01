@@ -16,3 +16,20 @@ trait Annotation extends js.Object {
   var to: js.UndefOr[Position] = js.undefined
 }
 
+object Annotation {
+  @scala.inline
+  def apply(
+    from: Position,
+    message: java.lang.String = null,
+    severity: java.lang.String = null,
+    to: Position = null
+  ): Annotation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Annotation]
+  }
+}
+

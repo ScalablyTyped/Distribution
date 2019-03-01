@@ -12,3 +12,12 @@ trait PlayerEvent extends js.Object {
   var target: Player
 }
 
+object PlayerEvent {
+  @scala.inline
+  def apply(target: Player): PlayerEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[PlayerEvent]
+  }
+}
+

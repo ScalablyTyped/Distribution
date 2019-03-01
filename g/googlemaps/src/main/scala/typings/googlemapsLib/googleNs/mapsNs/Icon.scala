@@ -38,3 +38,24 @@ trait Icon extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Icon {
+  @scala.inline
+  def apply(
+    anchor: Point = null,
+    labelOrigin: Point = null,
+    origin: Point = null,
+    scaledSize: Size = null,
+    size: Size = null,
+    url: java.lang.String = null
+  ): Icon = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (labelOrigin != null) __obj.updateDynamic("labelOrigin")(labelOrigin)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (scaledSize != null) __obj.updateDynamic("scaledSize")(scaledSize)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Icon]
+  }
+}
+

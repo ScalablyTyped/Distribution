@@ -12,3 +12,13 @@ trait SslCertDetail extends js.Object {
   var certPrivateKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SslCertDetail {
+  @scala.inline
+  def apply(certInfo: SslCert = null, certPrivateKey: java.lang.String = null): SslCertDetail = {
+    val __obj = js.Dynamic.literal()
+    if (certInfo != null) __obj.updateDynamic("certInfo")(certInfo)
+    if (certPrivateKey != null) __obj.updateDynamic("certPrivateKey")(certPrivateKey)
+    __obj.asInstanceOf[SslCertDetail]
+  }
+}
+

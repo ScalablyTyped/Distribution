@@ -14,3 +14,18 @@ trait GamesPlayerLevelResource extends js.Object {
   var minExperiencePoints: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GamesPlayerLevelResource {
+  @scala.inline
+  def apply(
+    level: scala.Int | scala.Double = null,
+    maxExperiencePoints: java.lang.String = null,
+    minExperiencePoints: java.lang.String = null
+  ): GamesPlayerLevelResource = {
+    val __obj = js.Dynamic.literal()
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (maxExperiencePoints != null) __obj.updateDynamic("maxExperiencePoints")(maxExperiencePoints)
+    if (minExperiencePoints != null) __obj.updateDynamic("minExperiencePoints")(minExperiencePoints)
+    __obj.asInstanceOf[GamesPlayerLevelResource]
+  }
+}
+

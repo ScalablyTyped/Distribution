@@ -15,3 +15,12 @@ trait DebugInstanceRequest extends js.Object {
   var sshKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DebugInstanceRequest {
+  @scala.inline
+  def apply(sshKey: java.lang.String = null): DebugInstanceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (sshKey != null) __obj.updateDynamic("sshKey")(sshKey)
+    __obj.asInstanceOf[DebugInstanceRequest]
+  }
+}
+

@@ -14,3 +14,24 @@ trait WorkerOptions extends js.Object {
   var workerData: js.UndefOr[js.Any] = js.undefined
 }
 
+object WorkerOptions {
+  @scala.inline
+  def apply(
+    eval: js.UndefOr[scala.Boolean] = js.undefined,
+    execArgv: js.Array[java.lang.String] = null,
+    stderr: js.UndefOr[scala.Boolean] = js.undefined,
+    stdin: js.UndefOr[scala.Boolean] = js.undefined,
+    stdout: js.UndefOr[scala.Boolean] = js.undefined,
+    workerData: js.Any = null
+  ): WorkerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval)
+    if (execArgv != null) __obj.updateDynamic("execArgv")(execArgv)
+    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr)
+    if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin)
+    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout)
+    if (workerData != null) __obj.updateDynamic("workerData")(workerData)
+    __obj.asInstanceOf[WorkerOptions]
+  }
+}
+

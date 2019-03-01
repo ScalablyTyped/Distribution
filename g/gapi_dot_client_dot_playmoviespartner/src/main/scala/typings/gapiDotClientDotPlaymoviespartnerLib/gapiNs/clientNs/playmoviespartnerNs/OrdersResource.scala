@@ -22,3 +22,22 @@ trait OrdersResource extends js.Object {
   def list(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListOrdersResponse]
 }
 
+object OrdersResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Order]
+    ],
+    list: js.Function1[
+      gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListOrdersResponse]
+    ]
+  ): OrdersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[OrdersResource]
+  }
+}
+

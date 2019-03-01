@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
 trait IOptionsMetadata
   extends /* x */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
 
+object IOptionsMetadata {
+  @scala.inline
+  def apply(
+    StringDictionary: /* x */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double] = null
+  ): IOptionsMetadata = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IOptionsMetadata]
+  }
+}
+

@@ -16,3 +16,20 @@ trait ItemEvent
   var Selected: scala.Double
 }
 
+object ItemEvent {
+  @scala.inline
+  def apply(
+    Highlighted: scala.Double,
+    ItemId: scala.Double,
+    Selected: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ItemEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Highlighted")(Highlighted)
+    __obj.updateDynamic("ItemId")(ItemId)
+    __obj.updateDynamic("Selected")(Selected)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[ItemEvent]
+  }
+}
+

@@ -14,3 +14,18 @@ trait Anon_Panel extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Panel {
+  @scala.inline
+  def apply(
+    panel: java.lang.String = null,
+    tabId: scala.Int | scala.Double = null,
+    windowId: scala.Int | scala.Double = null
+  ): Anon_Panel = {
+    val __obj = js.Dynamic.literal()
+    if (panel != null) __obj.updateDynamic("panel")(panel)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Panel]
+  }
+}
+

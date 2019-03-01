@@ -11,3 +11,16 @@ trait Anon_Ariaexpanded extends js.Object {
   var ref: js.UndefOr[js.Function1[/* element */ reactLib.HTMLElement, scala.Unit]] = js.undefined
 }
 
+object Anon_Ariaexpanded {
+  @scala.inline
+  def apply(
+    `aria-expanded`: scala.Boolean,
+    `aria-haspopup`: reactDashOverlaysLib.reactDashOverlaysLibNumbers.`true`,
+    ref: js.Function1[/* element */ reactLib.HTMLElement, scala.Unit] = null
+  ): Anon_Ariaexpanded = {
+    val __obj = js.Dynamic.literal(`aria-expanded` = `aria-expanded`, `aria-haspopup` = `aria-haspopup`)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[Anon_Ariaexpanded]
+  }
+}
+

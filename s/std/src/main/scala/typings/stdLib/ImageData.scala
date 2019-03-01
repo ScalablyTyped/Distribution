@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImageData extends js.Object {
+trait ImageData
+  extends ImageBitmapSource
+     with TexImageSource {
   /**
     * Returns the one-dimensional array containing the data in RGBA order, as integers in the
     * range 0 to 255.

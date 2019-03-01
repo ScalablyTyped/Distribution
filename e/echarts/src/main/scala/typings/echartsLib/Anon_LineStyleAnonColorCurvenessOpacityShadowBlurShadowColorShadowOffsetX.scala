@@ -12,3 +12,12 @@ trait Anon_LineStyleAnonColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX 
   var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX] = js.undefined
 }
 
+object Anon_LineStyleAnonColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX {
+  @scala.inline
+  def apply(lineStyle: Anon_ColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX = null): Anon_LineStyleAnonColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX = {
+    val __obj = js.Dynamic.literal()
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    __obj.asInstanceOf[Anon_LineStyleAnonColorCurvenessOpacityShadowBlurShadowColorShadowOffsetX]
+  }
+}
+

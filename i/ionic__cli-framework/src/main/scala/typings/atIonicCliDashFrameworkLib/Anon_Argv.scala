@@ -11,3 +11,14 @@ trait Anon_Argv[N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, 
   var namespace: N
 }
 
+object Anon_Argv {
+  @scala.inline
+  def apply[N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */](argv: js.Array[java.lang.String], env: nodeLib.NodeJSNs.ProcessEnv, namespace: N): Anon_Argv[N] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("argv")(argv)
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Argv[N]]
+  }
+}
+

@@ -14,5 +14,4 @@ package object colorDashSupportLib {
     ], 
     colorDashSupportLib.colorDashSupportLibNumbers.`false` | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ColorSupportResult */ js.Any)
   ]
-  type ColorSupportLevel = colorDashSupportLib.colorDashSupportLibNumbers.`0` | colorDashSupportLib.colorDashSupportLibNumbers.`1` | colorDashSupportLib.colorDashSupportLibNumbers.`2` | colorDashSupportLib.colorDashSupportLibNumbers.`3`
 }

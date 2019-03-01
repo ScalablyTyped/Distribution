@@ -15,3 +15,13 @@ trait IMemberGroupPickerOptions extends js.Object {
   var multiPicker: scala.Boolean
 }
 
+object IMemberGroupPickerOptions {
+  @scala.inline
+  def apply(callback: angularLib.angularMod.Global.Function, multiPicker: scala.Boolean): IMemberGroupPickerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("multiPicker")(multiPicker)
+    __obj.asInstanceOf[IMemberGroupPickerOptions]
+  }
+}
+

@@ -48,3 +48,28 @@ trait CardinalityAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object CardinalityAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    field: js.Function1[java.lang.String, CardinalityAggregation],
+    lang: js.Function1[java.lang.String, CardinalityAggregation],
+    params: js.Function1[js.Object, CardinalityAggregation],
+    precisionThreshold: js.Function1[scala.Double, CardinalityAggregation],
+    rehash: js.Function1[scala.Boolean, CardinalityAggregation],
+    script: js.Function1[java.lang.String, CardinalityAggregation],
+    toJSON: js.Function0[js.Any]
+  ): CardinalityAggregation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("precisionThreshold")(precisionThreshold)
+    __obj.updateDynamic("rehash")(rehash)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[CardinalityAggregation]
+  }
+}
+

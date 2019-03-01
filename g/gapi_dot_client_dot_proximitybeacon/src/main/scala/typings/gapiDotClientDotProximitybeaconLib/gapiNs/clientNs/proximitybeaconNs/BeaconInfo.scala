@@ -17,3 +17,18 @@ trait BeaconInfo extends js.Object {
   var beaconName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeaconInfo {
+  @scala.inline
+  def apply(
+    advertisedId: AdvertisedId = null,
+    attachments: js.Array[AttachmentInfo] = null,
+    beaconName: java.lang.String = null
+  ): BeaconInfo = {
+    val __obj = js.Dynamic.literal()
+    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName)
+    __obj.asInstanceOf[BeaconInfo]
+  }
+}
+

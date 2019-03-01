@@ -20,3 +20,28 @@ trait Anon_DocumentMutationId extends js.Object {
   var variables: js.Any
 }
 
+object Anon_DocumentMutationId {
+  @scala.inline
+  def apply(
+    document: graphqlLib.languageAstMod.DocumentNode,
+    mutationId: java.lang.String,
+    updateQueries: org.scalablytyped.runtime.StringDictionary[apolloDashClientLib.dataStoreMod.QueryWithUpdater],
+    variables: js.Any,
+    optimisticResponse: js.Object | js.Function = null,
+    update: js.Function2[
+      /* proxy */ apolloDashCacheLib.libTypesDataProxyMod.DataProxy, 
+      /* mutationResult */ js.Object, 
+      scala.Unit
+    ] = null
+  ): Anon_DocumentMutationId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("document")(document)
+    __obj.updateDynamic("mutationId")(mutationId)
+    __obj.updateDynamic("updateQueries")(updateQueries)
+    __obj.updateDynamic("variables")(variables)
+    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Anon_DocumentMutationId]
+  }
+}
+

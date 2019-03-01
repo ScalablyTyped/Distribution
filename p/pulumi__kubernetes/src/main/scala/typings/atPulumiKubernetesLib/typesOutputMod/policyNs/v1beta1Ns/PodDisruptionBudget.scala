@@ -35,3 +35,22 @@ trait PodDisruptionBudget extends js.Object {
   val status: PodDisruptionBudgetStatus
 }
 
+object PodDisruptionBudget {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodDisruptionBudget,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: PodDisruptionBudgetSpec,
+    status: PodDisruptionBudgetStatus
+  ): PodDisruptionBudget = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[PodDisruptionBudget]
+  }
+}
+

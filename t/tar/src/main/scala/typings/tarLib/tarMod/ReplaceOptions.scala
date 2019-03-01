@@ -82,3 +82,44 @@ trait ReplaceOptions extends js.Object {
   var sync: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReplaceOptions {
+  @scala.inline
+  def apply(
+    file: java.lang.String,
+    C: java.lang.String = null,
+    L: js.UndefOr[scala.Boolean] = js.undefined,
+    cwd: java.lang.String = null,
+    filter: js.Function2[/* path */ java.lang.String, /* stat */ FileStat, scala.Boolean] = null,
+    follow: js.UndefOr[scala.Boolean] = js.undefined,
+    gzip: scala.Boolean | nodeLib.zlibMod.ZlibOptions = null,
+    h: js.UndefOr[scala.Boolean] = js.undefined,
+    maxReadSize: scala.Int | scala.Double = null,
+    noDirRecurse: js.UndefOr[scala.Boolean] = js.undefined,
+    noPax: js.UndefOr[scala.Boolean] = js.undefined,
+    onwarn: js.Function2[/* message */ java.lang.String, /* data */ nodeLib.Buffer, scala.Unit] = null,
+    prefix: java.lang.String = null,
+    preservePaths: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    sync: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReplaceOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("file")(file)
+    if (C != null) __obj.updateDynamic("C")(C)
+    if (!js.isUndefined(L)) __obj.updateDynamic("L")(L)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)
+    if (gzip != null) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
+    if (!js.isUndefined(h)) __obj.updateDynamic("h")(h)
+    if (maxReadSize != null) __obj.updateDynamic("maxReadSize")(maxReadSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDirRecurse)) __obj.updateDynamic("noDirRecurse")(noDirRecurse)
+    if (!js.isUndefined(noPax)) __obj.updateDynamic("noPax")(noPax)
+    if (onwarn != null) __obj.updateDynamic("onwarn")(onwarn)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(preservePaths)) __obj.updateDynamic("preservePaths")(preservePaths)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    __obj.asInstanceOf[ReplaceOptions]
+  }
+}
+

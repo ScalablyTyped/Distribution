@@ -108,3 +108,62 @@ trait ICheckOptions extends js.Object {
   var uncheckedRadioClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ICheckOptions {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String = null,
+    checkboxClass: java.lang.String = null,
+    checkedCheckboxClass: java.lang.String = null,
+    checkedClass: java.lang.String = null,
+    checkedRadioClass: java.lang.String = null,
+    cursor: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledCheckboxClass: java.lang.String = null,
+    disabledClass: java.lang.String = null,
+    disabledRadioClass: java.lang.String = null,
+    enabledCheckboxClass: java.lang.String = null,
+    enabledClass: java.lang.String = null,
+    enabledRadioClass: java.lang.String = null,
+    focusClass: java.lang.String = null,
+    handle: java.lang.String = null,
+    hoverClass: java.lang.String = null,
+    increaseArea: java.lang.String = null,
+    inheritClass: js.UndefOr[scala.Boolean] = js.undefined,
+    inheritID: js.UndefOr[scala.Boolean] = js.undefined,
+    insert: java.lang.String = null,
+    labelHover: js.UndefOr[scala.Boolean] = js.undefined,
+    labelHoverClass: java.lang.String = null,
+    radioClass: java.lang.String = null,
+    uncheckedCheckboxClass: java.lang.String = null,
+    uncheckedClass: java.lang.String = null,
+    uncheckedRadioClass: java.lang.String = null
+  ): ICheckOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
+    if (checkboxClass != null) __obj.updateDynamic("checkboxClass")(checkboxClass)
+    if (checkedCheckboxClass != null) __obj.updateDynamic("checkedCheckboxClass")(checkedCheckboxClass)
+    if (checkedClass != null) __obj.updateDynamic("checkedClass")(checkedClass)
+    if (checkedRadioClass != null) __obj.updateDynamic("checkedRadioClass")(checkedRadioClass)
+    if (!js.isUndefined(cursor)) __obj.updateDynamic("cursor")(cursor)
+    if (disabledCheckboxClass != null) __obj.updateDynamic("disabledCheckboxClass")(disabledCheckboxClass)
+    if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass)
+    if (disabledRadioClass != null) __obj.updateDynamic("disabledRadioClass")(disabledRadioClass)
+    if (enabledCheckboxClass != null) __obj.updateDynamic("enabledCheckboxClass")(enabledCheckboxClass)
+    if (enabledClass != null) __obj.updateDynamic("enabledClass")(enabledClass)
+    if (enabledRadioClass != null) __obj.updateDynamic("enabledRadioClass")(enabledRadioClass)
+    if (focusClass != null) __obj.updateDynamic("focusClass")(focusClass)
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (hoverClass != null) __obj.updateDynamic("hoverClass")(hoverClass)
+    if (increaseArea != null) __obj.updateDynamic("increaseArea")(increaseArea)
+    if (!js.isUndefined(inheritClass)) __obj.updateDynamic("inheritClass")(inheritClass)
+    if (!js.isUndefined(inheritID)) __obj.updateDynamic("inheritID")(inheritID)
+    if (insert != null) __obj.updateDynamic("insert")(insert)
+    if (!js.isUndefined(labelHover)) __obj.updateDynamic("labelHover")(labelHover)
+    if (labelHoverClass != null) __obj.updateDynamic("labelHoverClass")(labelHoverClass)
+    if (radioClass != null) __obj.updateDynamic("radioClass")(radioClass)
+    if (uncheckedCheckboxClass != null) __obj.updateDynamic("uncheckedCheckboxClass")(uncheckedCheckboxClass)
+    if (uncheckedClass != null) __obj.updateDynamic("uncheckedClass")(uncheckedClass)
+    if (uncheckedRadioClass != null) __obj.updateDynamic("uncheckedRadioClass")(uncheckedRadioClass)
+    __obj.asInstanceOf[ICheckOptions]
+  }
+}
+

@@ -62,3 +62,62 @@ trait MarketplaceDeal extends js.Object {
   var webPropertyCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MarketplaceDeal {
+  @scala.inline
+  def apply(
+    buyerPrivateData: PrivateData = null,
+    creationTimeMs: java.lang.String = null,
+    creativePreApprovalPolicy: java.lang.String = null,
+    creativeSafeFrameCompatibility: java.lang.String = null,
+    dealId: java.lang.String = null,
+    dealServingMetadata: DealServingMetadata = null,
+    deliveryControl: DeliveryControl = null,
+    externalDealId: java.lang.String = null,
+    flightEndTimeMs: java.lang.String = null,
+    flightStartTimeMs: java.lang.String = null,
+    inventoryDescription: java.lang.String = null,
+    isRfpTemplate: js.UndefOr[scala.Boolean] = js.undefined,
+    isSetupComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    lastUpdateTimeMs: java.lang.String = null,
+    name: java.lang.String = null,
+    productId: java.lang.String = null,
+    productRevisionNumber: java.lang.String = null,
+    programmaticCreativeSource: java.lang.String = null,
+    proposalId: java.lang.String = null,
+    sellerContacts: js.Array[ContactInformation] = null,
+    sharedTargetings: js.Array[SharedTargeting] = null,
+    syndicationProduct: java.lang.String = null,
+    terms: DealTerms = null,
+    webPropertyCode: java.lang.String = null
+  ): MarketplaceDeal = {
+    val __obj = js.Dynamic.literal()
+    if (buyerPrivateData != null) __obj.updateDynamic("buyerPrivateData")(buyerPrivateData)
+    if (creationTimeMs != null) __obj.updateDynamic("creationTimeMs")(creationTimeMs)
+    if (creativePreApprovalPolicy != null) __obj.updateDynamic("creativePreApprovalPolicy")(creativePreApprovalPolicy)
+    if (creativeSafeFrameCompatibility != null) __obj.updateDynamic("creativeSafeFrameCompatibility")(creativeSafeFrameCompatibility)
+    if (dealId != null) __obj.updateDynamic("dealId")(dealId)
+    if (dealServingMetadata != null) __obj.updateDynamic("dealServingMetadata")(dealServingMetadata)
+    if (deliveryControl != null) __obj.updateDynamic("deliveryControl")(deliveryControl)
+    if (externalDealId != null) __obj.updateDynamic("externalDealId")(externalDealId)
+    if (flightEndTimeMs != null) __obj.updateDynamic("flightEndTimeMs")(flightEndTimeMs)
+    if (flightStartTimeMs != null) __obj.updateDynamic("flightStartTimeMs")(flightStartTimeMs)
+    if (inventoryDescription != null) __obj.updateDynamic("inventoryDescription")(inventoryDescription)
+    if (!js.isUndefined(isRfpTemplate)) __obj.updateDynamic("isRfpTemplate")(isRfpTemplate)
+    if (!js.isUndefined(isSetupComplete)) __obj.updateDynamic("isSetupComplete")(isSetupComplete)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastUpdateTimeMs != null) __obj.updateDynamic("lastUpdateTimeMs")(lastUpdateTimeMs)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (productRevisionNumber != null) __obj.updateDynamic("productRevisionNumber")(productRevisionNumber)
+    if (programmaticCreativeSource != null) __obj.updateDynamic("programmaticCreativeSource")(programmaticCreativeSource)
+    if (proposalId != null) __obj.updateDynamic("proposalId")(proposalId)
+    if (sellerContacts != null) __obj.updateDynamic("sellerContacts")(sellerContacts)
+    if (sharedTargetings != null) __obj.updateDynamic("sharedTargetings")(sharedTargetings)
+    if (syndicationProduct != null) __obj.updateDynamic("syndicationProduct")(syndicationProduct)
+    if (terms != null) __obj.updateDynamic("terms")(terms)
+    if (webPropertyCode != null) __obj.updateDynamic("webPropertyCode")(webPropertyCode)
+    __obj.asInstanceOf[MarketplaceDeal]
+  }
+}
+

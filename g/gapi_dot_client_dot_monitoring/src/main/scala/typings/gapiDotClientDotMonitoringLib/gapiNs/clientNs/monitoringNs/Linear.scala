@@ -14,3 +14,18 @@ trait Linear extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Linear {
+  @scala.inline
+  def apply(
+    numFiniteBuckets: scala.Int | scala.Double = null,
+    offset: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): Linear = {
+    val __obj = js.Dynamic.literal()
+    if (numFiniteBuckets != null) __obj.updateDynamic("numFiniteBuckets")(numFiniteBuckets.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Linear]
+  }
+}
+

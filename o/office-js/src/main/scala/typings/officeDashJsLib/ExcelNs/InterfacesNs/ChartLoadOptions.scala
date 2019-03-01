@@ -181,3 +181,60 @@ trait ChartLoadOptions extends js.Object {
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 
+object ChartLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    axes: ChartAxesLoadOptions = null,
+    categoryLabelLevel: js.UndefOr[scala.Boolean] = js.undefined,
+    chartType: js.UndefOr[scala.Boolean] = js.undefined,
+    dataLabels: ChartDataLabelsLoadOptions = null,
+    displayBlanksAs: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartAreaFormatLoadOptions = null,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    left: js.UndefOr[scala.Boolean] = js.undefined,
+    legend: ChartLegendLoadOptions = null,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    plotArea: ChartPlotAreaLoadOptions = null,
+    plotBy: js.UndefOr[scala.Boolean] = js.undefined,
+    plotVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    series: ChartSeriesCollectionLoadOptions = null,
+    seriesNameLevel: js.UndefOr[scala.Boolean] = js.undefined,
+    showAllFieldButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    showDataLabelsOverMaximum: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    title: ChartTitleLoadOptions = null,
+    top: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined,
+    worksheet: WorksheetLoadOptions = null
+  ): ChartLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (axes != null) __obj.updateDynamic("axes")(axes)
+    if (!js.isUndefined(categoryLabelLevel)) __obj.updateDynamic("categoryLabelLevel")(categoryLabelLevel)
+    if (!js.isUndefined(chartType)) __obj.updateDynamic("chartType")(chartType)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (!js.isUndefined(displayBlanksAs)) __obj.updateDynamic("displayBlanksAs")(displayBlanksAs)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea)
+    if (!js.isUndefined(plotBy)) __obj.updateDynamic("plotBy")(plotBy)
+    if (!js.isUndefined(plotVisibleOnly)) __obj.updateDynamic("plotVisibleOnly")(plotVisibleOnly)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (!js.isUndefined(seriesNameLevel)) __obj.updateDynamic("seriesNameLevel")(seriesNameLevel)
+    if (!js.isUndefined(showAllFieldButtons)) __obj.updateDynamic("showAllFieldButtons")(showAllFieldButtons)
+    if (!js.isUndefined(showDataLabelsOverMaximum)) __obj.updateDynamic("showDataLabelsOverMaximum")(showDataLabelsOverMaximum)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
+    __obj.asInstanceOf[ChartLoadOptions]
+  }
+}
+

@@ -24,3 +24,28 @@ trait IPlaceResult extends js.Object {
   var name: java.lang.String
 }
 
+object IPlaceResult {
+  @scala.inline
+  def apply(
+    address: bingmapsLib.MicrosoftNs.MapsNs.IAddress,
+    bestView: bingmapsLib.MicrosoftNs.MapsNs.LocationRect,
+    entityType: java.lang.String,
+    location: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    locations: js.Array[IGeocodeLocation],
+    matchCode: java.lang.String | MatchCode,
+    matchConfidence: java.lang.String | MatchConfidence,
+    name: java.lang.String
+  ): IPlaceResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("bestView")(bestView)
+    __obj.updateDynamic("entityType")(entityType)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("locations")(locations)
+    __obj.updateDynamic("matchCode")(matchCode.asInstanceOf[js.Any])
+    __obj.updateDynamic("matchConfidence")(matchConfidence.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[IPlaceResult]
+  }
+}
+

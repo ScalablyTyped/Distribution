@@ -13,3 +13,12 @@ trait SymbolConstructor extends js.Object {
   val toStringTag: js.Symbol
 }
 
+object SymbolConstructor {
+  @scala.inline
+  def apply(toStringTag: js.Symbol): SymbolConstructor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toStringTag")(toStringTag)
+    __obj.asInstanceOf[SymbolConstructor]
+  }
+}
+

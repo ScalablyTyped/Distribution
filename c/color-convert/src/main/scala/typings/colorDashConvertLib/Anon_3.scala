@@ -23,3 +23,42 @@ trait Anon_3 extends js.Object {
   def xyz(rgb: colorDashConvertLib.conversionsMod.RGB): colorDashConvertLib.conversionsMod.XYZ
 }
 
+object Anon_3 {
+  @scala.inline
+  def apply(
+    ansi16: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.ANSI16],
+    ansi256: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.ANSI256],
+    apple: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.APPLE],
+    channels: colorDashConvertLib.colorDashConvertLibNumbers.`3`,
+    cmyk: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.CMYK],
+    gray: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.GRAY],
+    hcg: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.HCG],
+    hex: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.HEX],
+    hsl: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.HSL],
+    hsv: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.HSV],
+    hwb: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.HWB],
+    keyword: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.KEYWORD],
+    lab: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.LAB],
+    labels: colorDashConvertLib.colorDashConvertLibStrings.rgb,
+    xyz: js.Function1[colorDashConvertLib.conversionsMod.RGB, colorDashConvertLib.conversionsMod.XYZ]
+  ): Anon_3 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ansi16")(ansi16)
+    __obj.updateDynamic("ansi256")(ansi256)
+    __obj.updateDynamic("apple")(apple)
+    __obj.updateDynamic("channels")(channels)
+    __obj.updateDynamic("cmyk")(cmyk)
+    __obj.updateDynamic("gray")(gray)
+    __obj.updateDynamic("hcg")(hcg)
+    __obj.updateDynamic("hex")(hex)
+    __obj.updateDynamic("hsl")(hsl)
+    __obj.updateDynamic("hsv")(hsv)
+    __obj.updateDynamic("hwb")(hwb)
+    __obj.updateDynamic("keyword")(keyword)
+    __obj.updateDynamic("lab")(lab)
+    __obj.updateDynamic("labels")(labels)
+    __obj.updateDynamic("xyz")(xyz)
+    __obj.asInstanceOf[Anon_3]
+  }
+}
+

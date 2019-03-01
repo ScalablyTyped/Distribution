@@ -12,3 +12,13 @@ trait StoreLayoutClustersListResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StoreLayoutClustersListResponse {
+  @scala.inline
+  def apply(cluster: js.Array[StoreCluster] = null, kind: java.lang.String = null): StoreLayoutClustersListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[StoreLayoutClustersListResponse]
+  }
+}
+

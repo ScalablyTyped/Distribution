@@ -10,3 +10,13 @@ trait ENGINE extends js.Object {
   var VERSION: java.lang.String
 }
 
+object ENGINE {
+  @scala.inline
+  def apply(NAME: java.lang.String, VERSION: java.lang.String): ENGINE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NAME")(NAME)
+    __obj.updateDynamic("VERSION")(VERSION)
+    __obj.asInstanceOf[ENGINE]
+  }
+}
+

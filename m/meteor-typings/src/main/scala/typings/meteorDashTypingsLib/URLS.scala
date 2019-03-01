@@ -11,3 +11,18 @@ trait URLS extends js.Object {
   def verifyEmail(token: java.lang.String): java.lang.String
 }
 
+object URLS {
+  @scala.inline
+  def apply(
+    enrollAccount: js.Function1[java.lang.String, java.lang.String],
+    resetPassword: js.Function1[java.lang.String, java.lang.String],
+    verifyEmail: js.Function1[java.lang.String, java.lang.String]
+  ): URLS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enrollAccount")(enrollAccount)
+    __obj.updateDynamic("resetPassword")(resetPassword)
+    __obj.updateDynamic("verifyEmail")(verifyEmail)
+    __obj.asInstanceOf[URLS]
+  }
+}
+

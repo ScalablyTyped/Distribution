@@ -12,3 +12,14 @@ trait ReferenceObject extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReferenceObject {
+  @scala.inline
+  def apply(svgClassName: java.lang.String = null, svgStyle: js.Object = null, value: java.lang.String = null): ReferenceObject = {
+    val __obj = js.Dynamic.literal()
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ReferenceObject]
+  }
+}
+

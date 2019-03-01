@@ -88,3 +88,13 @@ trait ResolvePolicy extends js.Object {
   var when: js.UndefOr[PolicyWhen] = js.undefined
 }
 
+object ResolvePolicy {
+  @scala.inline
+  def apply(async: PolicyAsync = null, when: PolicyWhen = null): ResolvePolicy = {
+    val __obj = js.Dynamic.literal()
+    if (async != null) __obj.updateDynamic("async")(async)
+    if (when != null) __obj.updateDynamic("when")(when)
+    __obj.asInstanceOf[ResolvePolicy]
+  }
+}
+

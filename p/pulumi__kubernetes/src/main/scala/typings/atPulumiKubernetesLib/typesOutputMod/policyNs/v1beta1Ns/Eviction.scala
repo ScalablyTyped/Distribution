@@ -35,3 +35,20 @@ trait Eviction extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
 }
 
+object Eviction {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    deleteOptions: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.DeleteOptions,
+    kind: java.lang.String,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
+  ): Eviction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("deleteOptions")(deleteOptions)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[Eviction]
+  }
+}
+

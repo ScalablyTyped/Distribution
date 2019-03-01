@@ -65,3 +65,65 @@ trait CollectionViewOptions[TModel /* <: backboneLib.backboneMod.Model */, TColl
   ] = js.undefined
 }
 
+object CollectionViewOptions {
+  @scala.inline
+  def apply[TModel /* <: backboneLib.backboneMod.Model */, TCollection /* <: backboneLib.backboneMod.Collection[TModel] */](
+    attributes: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    behaviors: js.Array[Behavior] = null,
+    childView: (js.Function1[/* model */ TModel, backboneDotMarionetteLib.Anon_ClassProperties]) | backboneDotMarionetteLib.Anon_ClassProperties = null,
+    childViewEventPrefix: java.lang.String | backboneDotMarionetteLib.backboneDotMarionetteLibNumbers.`false` = null,
+    childViewEvents: EventsHash = null,
+    childViewOptions: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel] = null,
+    childViewTriggers: EventsHash = null,
+    className: java.lang.String = null,
+    collection: backboneLib.backboneMod.BackboneNs.Collection[_] = null,
+    collectionEvents: EventsHash = null,
+    el: js.Any = null,
+    emptyView: js.Function0[backboneDotMarionetteLib.Anon_ClassProperties] | backboneDotMarionetteLib.Anon_ClassProperties = null,
+    emptyViewOptions: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel] = null,
+    events: EventsHash = null,
+    filter: js.Function3[
+      /* child */ js.UndefOr[TModel], 
+      /* index */ js.UndefOr[scala.Double], 
+      /* collection */ js.UndefOr[TCollection], 
+      scala.Boolean
+    ] = null,
+    id: java.lang.String = null,
+    model: TModel = null,
+    modelEvents: EventsHash = null,
+    reorderOnSort: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.UndefOr[scala.Boolean] = js.undefined,
+    tagName: java.lang.String = null,
+    triggers: EventsHash = null,
+    ui: js.Any = null,
+    viewComparator: java.lang.String | (js.Function1[/* element */ TModel, scala.Double | java.lang.String]) | (js.Function2[/* compare */ TModel, /* to */ js.UndefOr[TModel], scala.Double]) = null
+  ): CollectionViewOptions[TModel, TCollection] = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
+    if (childView != null) __obj.updateDynamic("childView")(childView.asInstanceOf[js.Any])
+    if (childViewEventPrefix != null) __obj.updateDynamic("childViewEventPrefix")(childViewEventPrefix.asInstanceOf[js.Any])
+    if (childViewEvents != null) __obj.updateDynamic("childViewEvents")(childViewEvents)
+    if (childViewOptions != null) __obj.updateDynamic("childViewOptions")(childViewOptions.asInstanceOf[js.Any])
+    if (childViewTriggers != null) __obj.updateDynamic("childViewTriggers")(childViewTriggers)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (collection != null) __obj.updateDynamic("collection")(collection)
+    if (collectionEvents != null) __obj.updateDynamic("collectionEvents")(collectionEvents)
+    if (el != null) __obj.updateDynamic("el")(el)
+    if (emptyView != null) __obj.updateDynamic("emptyView")(emptyView.asInstanceOf[js.Any])
+    if (emptyViewOptions != null) __obj.updateDynamic("emptyViewOptions")(emptyViewOptions.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (modelEvents != null) __obj.updateDynamic("modelEvents")(modelEvents)
+    if (!js.isUndefined(reorderOnSort)) __obj.updateDynamic("reorderOnSort")(reorderOnSort)
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (triggers != null) __obj.updateDynamic("triggers")(triggers)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (viewComparator != null) __obj.updateDynamic("viewComparator")(viewComparator.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CollectionViewOptions[TModel, TCollection]]
+  }
+}
+

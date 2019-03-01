@@ -22,3 +22,14 @@ trait WebViewNativeConfig extends js.Object {
   var viewManager: js.UndefOr[js.Object] = js.undefined
 }
 
+object WebViewNativeConfig {
+  @scala.inline
+  def apply(component: js.Any = null, props: js.Object = null, viewManager: js.Object = null): WebViewNativeConfig = {
+    val __obj = js.Dynamic.literal()
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (props != null) __obj.updateDynamic("props")(props)
+    if (viewManager != null) __obj.updateDynamic("viewManager")(viewManager)
+    __obj.asInstanceOf[WebViewNativeConfig]
+  }
+}
+

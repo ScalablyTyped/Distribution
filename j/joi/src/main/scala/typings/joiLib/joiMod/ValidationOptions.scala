@@ -49,3 +49,30 @@ trait ValidationOptions extends js.Object {
   var stripUnknown: js.UndefOr[scala.Boolean | joiLib.Anon_Arrays] = js.undefined
 }
 
+object ValidationOptions {
+  @scala.inline
+  def apply(
+    abortEarly: js.UndefOr[scala.Boolean] = js.undefined,
+    allowUnknown: js.UndefOr[scala.Boolean] = js.undefined,
+    context: Context = null,
+    convert: js.UndefOr[scala.Boolean] = js.undefined,
+    language: LanguageRootOptions = null,
+    noDefaults: js.UndefOr[scala.Boolean] = js.undefined,
+    presence: joiLib.joiLibStrings.optional | joiLib.joiLibStrings.required | joiLib.joiLibStrings.forbidden = null,
+    skipFunctions: js.UndefOr[scala.Boolean] = js.undefined,
+    stripUnknown: scala.Boolean | joiLib.Anon_Arrays = null
+  ): ValidationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(abortEarly)) __obj.updateDynamic("abortEarly")(abortEarly)
+    if (!js.isUndefined(allowUnknown)) __obj.updateDynamic("allowUnknown")(allowUnknown)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (!js.isUndefined(noDefaults)) __obj.updateDynamic("noDefaults")(noDefaults)
+    if (presence != null) __obj.updateDynamic("presence")(presence.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipFunctions)) __obj.updateDynamic("skipFunctions")(skipFunctions)
+    if (stripUnknown != null) __obj.updateDynamic("stripUnknown")(stripUnknown.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValidationOptions]
+  }
+}
+

@@ -16,3 +16,20 @@ trait Anon_ChildrenInnerPropsIsFocused extends js.Object {
   var isRtl: scala.Boolean
 }
 
+object Anon_ChildrenInnerPropsIsFocused {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    innerProps: js.Any,
+    isFocused: scala.Boolean,
+    isRtl: scala.Boolean
+  ): Anon_ChildrenInnerPropsIsFocused = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("innerProps")(innerProps)
+    __obj.updateDynamic("isFocused")(isFocused)
+    __obj.updateDynamic("isRtl")(isRtl)
+    __obj.asInstanceOf[Anon_ChildrenInnerPropsIsFocused]
+  }
+}
+

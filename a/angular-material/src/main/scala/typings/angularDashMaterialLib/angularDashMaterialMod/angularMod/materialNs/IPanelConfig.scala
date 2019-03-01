@@ -46,3 +46,66 @@ trait IPanelConfig extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IPanelConfig {
+  @scala.inline
+  def apply(
+    animation: IPanelAnimation = null,
+    attachTo: java.lang.String | angularLib.JQuery | stdLib.Element = null,
+    bindToController: js.UndefOr[scala.Boolean] = js.undefined,
+    clickOutsideToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    controller: java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor] = null,
+    controllerAs: java.lang.String = null,
+    disableParentScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    escapeToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    focusOnOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    locals: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    onCloseSuccess: js.Function2[/* panel */ IPanelRef, /* closeReason */ java.lang.String, _] = null,
+    onDomAdded: js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit] = null,
+    onDomRemoved: js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit] = null,
+    onOpenComplete: js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit] = null,
+    onRemoving: js.Function1[/* repeated */ js.Any, js.Thenable[scala.Unit] | scala.Unit] = null,
+    origin: java.lang.String | angularLib.JQuery | stdLib.Element = null,
+    panelClass: java.lang.String = null,
+    position: IPanelPosition = null,
+    propagateContainerEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    resolve: ResolveObject = null,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null,
+    trapFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): IPanelConfig = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(bindToController)) __obj.updateDynamic("bindToController")(bindToController)
+    if (!js.isUndefined(clickOutsideToClose)) __obj.updateDynamic("clickOutsideToClose")(clickOutsideToClose)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (!js.isUndefined(disableParentScroll)) __obj.updateDynamic("disableParentScroll")(disableParentScroll)
+    if (!js.isUndefined(escapeToClose)) __obj.updateDynamic("escapeToClose")(escapeToClose)
+    if (!js.isUndefined(focusOnOpen)) __obj.updateDynamic("focusOnOpen")(focusOnOpen)
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (onCloseSuccess != null) __obj.updateDynamic("onCloseSuccess")(onCloseSuccess)
+    if (onDomAdded != null) __obj.updateDynamic("onDomAdded")(onDomAdded)
+    if (onDomRemoved != null) __obj.updateDynamic("onDomRemoved")(onDomRemoved)
+    if (onOpenComplete != null) __obj.updateDynamic("onOpenComplete")(onOpenComplete)
+    if (onRemoving != null) __obj.updateDynamic("onRemoving")(onRemoving)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (panelClass != null) __obj.updateDynamic("panelClass")(panelClass)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(propagateContainerEvents)) __obj.updateDynamic("propagateContainerEvents")(propagateContainerEvents)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (!js.isUndefined(trapFocus)) __obj.updateDynamic("trapFocus")(trapFocus)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPanelConfig]
+  }
+}
+

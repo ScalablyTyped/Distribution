@@ -13,3 +13,12 @@ trait GetSupportedLanguagesRequest extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetSupportedLanguagesRequest {
+  @scala.inline
+  def apply(target: java.lang.String = null): GetSupportedLanguagesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[GetSupportedLanguagesRequest]
+  }
+}
+

@@ -206,6 +206,8 @@ object metadataNs extends js.Object {
     var virtual: scala.Boolean
   }
   
+  trait caching extends js.Object
+  
   var Metadata: MetadataStatic = js.native
   @js.native
   object IndexType extends js.Object {
@@ -232,6 +234,5 @@ object metadataNs extends js.Object {
   
   type MaterializedView = DataCollection
   type MetadataCallback[T] = js.Function2[/* err */ js.Any, /* retVal */ T, scala.Unit]
-  type caching = cassandraDashDriverLib.cassandraDashDriverLibStrings.all | cassandraDashDriverLib.cassandraDashDriverLibStrings.keys_only | cassandraDashDriverLib.cassandraDashDriverLibStrings.rows_only | cassandraDashDriverLib.cassandraDashDriverLibStrings.none
 }
 

@@ -5,11 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DirectTcpipChannelInfo extends js.Object {
+trait DirectTcpipChannelInfo extends ChannelOpenInfo {
   var data: TcpipChannelData
   var packetSize: scala.Double
   var sender: scala.Double
   var `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`direct-tcpip`
   var window: scala.Double
+}
+
+object DirectTcpipChannelInfo {
+  @scala.inline
+  def apply(
+    data: TcpipChannelData,
+    packetSize: scala.Double,
+    sender: scala.Double,
+    `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`direct-tcpip`,
+    window: scala.Double
+  ): DirectTcpipChannelInfo = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("packetSize")(packetSize)
+    __obj.updateDynamic("sender")(sender)
+    __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[DirectTcpipChannelInfo]
+  }
 }
 

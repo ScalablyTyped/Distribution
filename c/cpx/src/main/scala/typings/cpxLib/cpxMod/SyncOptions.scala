@@ -18,3 +18,22 @@ trait SyncOptions extends js.Object {
   var update: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SyncOptions {
+  @scala.inline
+  def apply(
+    clean: js.UndefOr[scala.Boolean] = js.undefined,
+    dereference: js.UndefOr[scala.Boolean] = js.undefined,
+    includeEmptyDirs: js.UndefOr[scala.Boolean] = js.undefined,
+    preserve: js.UndefOr[scala.Boolean] = js.undefined,
+    update: js.UndefOr[scala.Boolean] = js.undefined
+  ): SyncOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean)
+    if (!js.isUndefined(dereference)) __obj.updateDynamic("dereference")(dereference)
+    if (!js.isUndefined(includeEmptyDirs)) __obj.updateDynamic("includeEmptyDirs")(includeEmptyDirs)
+    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve)
+    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[SyncOptions]
+  }
+}
+

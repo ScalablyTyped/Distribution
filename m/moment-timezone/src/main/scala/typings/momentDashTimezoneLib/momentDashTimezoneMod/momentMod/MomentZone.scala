@@ -17,3 +17,30 @@ trait MomentZone extends js.Object {
   def utcOffset(timestamp: scala.Double): scala.Double
 }
 
+object MomentZone {
+  @scala.inline
+  def apply(
+    abbr: js.Function1[scala.Double, java.lang.String],
+    abbrs: js.Array[java.lang.String],
+    name: java.lang.String,
+    offset: js.Function1[scala.Double, scala.Double],
+    offsets: js.Array[scala.Double],
+    parse: js.Function1[scala.Double, scala.Double],
+    population: scala.Double,
+    untils: js.Array[scala.Double],
+    utcOffset: js.Function1[scala.Double, scala.Double]
+  ): MomentZone = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abbr")(abbr)
+    __obj.updateDynamic("abbrs")(abbrs)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("offsets")(offsets)
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("population")(population)
+    __obj.updateDynamic("untils")(untils)
+    __obj.updateDynamic("utcOffset")(utcOffset)
+    __obj.asInstanceOf[MomentZone]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_Classes extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Classes {
+  @scala.inline
+  def apply(
+    classes: js.Array[java.lang.String] = null,
+    ids: js.Array[java.lang.String] = null,
+    tags: js.Array[java.lang.String] = null
+  ): Anon_Classes = {
+    val __obj = js.Dynamic.literal()
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[Anon_Classes]
+  }
+}
+

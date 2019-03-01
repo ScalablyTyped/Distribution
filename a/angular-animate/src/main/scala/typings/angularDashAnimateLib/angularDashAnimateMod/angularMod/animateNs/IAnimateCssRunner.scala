@@ -18,3 +18,13 @@ trait IAnimateCssRunner extends js.Object {
   def start(): IAnimateCssRunnerStart
 }
 
+object IAnimateCssRunner {
+  @scala.inline
+  def apply(end: js.Function0[scala.Unit], start: js.Function0[IAnimateCssRunnerStart]): IAnimateCssRunner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[IAnimateCssRunner]
+  }
+}
+

@@ -11,3 +11,14 @@ trait RowHeaderStyle extends js.Object {
   var outerBorderColor: js.Any
 }
 
+object RowHeaderStyle {
+  @scala.inline
+  def apply(backgroundColor: js.Any, innerBorderColor: js.Any, outerBorderColor: js.Any): RowHeaderStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("innerBorderColor")(innerBorderColor)
+    __obj.updateDynamic("outerBorderColor")(outerBorderColor)
+    __obj.asInstanceOf[RowHeaderStyle]
+  }
+}
+

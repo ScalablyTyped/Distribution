@@ -12,3 +12,20 @@ trait IGyrometer extends js.Object {
   def getCurrentReading(): GyrometerReading
 }
 
+object IGyrometer {
+  @scala.inline
+  def apply(
+    getCurrentReading: js.Function0[GyrometerReading],
+    minimumReportInterval: scala.Double,
+    onreadingchanged: js.Any,
+    reportInterval: scala.Double
+  ): IGyrometer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCurrentReading")(getCurrentReading)
+    __obj.updateDynamic("minimumReportInterval")(minimumReportInterval)
+    __obj.updateDynamic("onreadingchanged")(onreadingchanged)
+    __obj.updateDynamic("reportInterval")(reportInterval)
+    __obj.asInstanceOf[IGyrometer]
+  }
+}
+

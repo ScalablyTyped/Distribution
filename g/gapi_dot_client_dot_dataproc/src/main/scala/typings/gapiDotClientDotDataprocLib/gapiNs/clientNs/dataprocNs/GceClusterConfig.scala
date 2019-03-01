@@ -66,3 +66,28 @@ trait GceClusterConfig extends js.Object {
   var zoneUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GceClusterConfig {
+  @scala.inline
+  def apply(
+    internalIpOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    metadata: stdLib.Record[java.lang.String, java.lang.String] = null,
+    networkUri: java.lang.String = null,
+    serviceAccount: java.lang.String = null,
+    serviceAccountScopes: js.Array[java.lang.String] = null,
+    subnetworkUri: java.lang.String = null,
+    tags: js.Array[java.lang.String] = null,
+    zoneUri: java.lang.String = null
+  ): GceClusterConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(internalIpOnly)) __obj.updateDynamic("internalIpOnly")(internalIpOnly)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (networkUri != null) __obj.updateDynamic("networkUri")(networkUri)
+    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount)
+    if (serviceAccountScopes != null) __obj.updateDynamic("serviceAccountScopes")(serviceAccountScopes)
+    if (subnetworkUri != null) __obj.updateDynamic("subnetworkUri")(subnetworkUri)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (zoneUri != null) __obj.updateDynamic("zoneUri")(zoneUri)
+    __obj.asInstanceOf[GceClusterConfig]
+  }
+}
+

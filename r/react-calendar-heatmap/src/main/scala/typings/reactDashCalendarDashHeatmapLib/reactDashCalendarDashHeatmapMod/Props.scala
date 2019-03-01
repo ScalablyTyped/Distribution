@@ -26,3 +26,48 @@ trait Props extends js.Object {
   var weekdayLabels: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    values: js.Array[_],
+    classForValue: js.Function1[/* value */ js.Any, _] = null,
+    endDate: java.lang.String | scala.Double | stdLib.Date = null,
+    gutterSize: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    monthLabels: js.Array[java.lang.String] = null,
+    numDays: scala.Int | scala.Double = null,
+    onClick: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    onMouseLeave: js.Function2[/* e */ js.Any, /* value */ js.Any, scala.Unit] = null,
+    onMouseOver: js.Function2[/* e */ js.Any, /* value */ js.Any, scala.Unit] = null,
+    showMonthLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    showOutOfRangeDays: js.UndefOr[scala.Boolean] = js.undefined,
+    showWeekdayLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    startDate: java.lang.String | scala.Double | stdLib.Date = null,
+    titleForValue: js.Function1[/* value */ js.Any, _] = null,
+    tooltipDataAttrs: js.Object = null,
+    transformDayElement: js.Function3[/* rect */ js.Any, /* value */ js.Any, /* index */ scala.Double, _] = null,
+    weekdayLabels: js.Array[java.lang.String] = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("values")(values)
+    if (classForValue != null) __obj.updateDynamic("classForValue")(classForValue)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (gutterSize != null) __obj.updateDynamic("gutterSize")(gutterSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (monthLabels != null) __obj.updateDynamic("monthLabels")(monthLabels)
+    if (numDays != null) __obj.updateDynamic("numDays")(numDays.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
+    if (!js.isUndefined(showMonthLabels)) __obj.updateDynamic("showMonthLabels")(showMonthLabels)
+    if (!js.isUndefined(showOutOfRangeDays)) __obj.updateDynamic("showOutOfRangeDays")(showOutOfRangeDays)
+    if (!js.isUndefined(showWeekdayLabels)) __obj.updateDynamic("showWeekdayLabels")(showWeekdayLabels)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (titleForValue != null) __obj.updateDynamic("titleForValue")(titleForValue)
+    if (tooltipDataAttrs != null) __obj.updateDynamic("tooltipDataAttrs")(tooltipDataAttrs)
+    if (transformDayElement != null) __obj.updateDynamic("transformDayElement")(transformDayElement)
+    if (weekdayLabels != null) __obj.updateDynamic("weekdayLabels")(weekdayLabels)
+    __obj.asInstanceOf[Props]
+  }
+}
+

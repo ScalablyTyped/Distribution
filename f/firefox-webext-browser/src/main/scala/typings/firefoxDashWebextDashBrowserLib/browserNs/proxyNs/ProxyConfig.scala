@@ -32,3 +32,34 @@ trait ProxyConfig extends js.Object {
   var ssl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProxyConfig {
+  @scala.inline
+  def apply(
+    autoConfigUrl: java.lang.String = null,
+    autoLogin: js.UndefOr[scala.Boolean] = js.undefined,
+    ftp: java.lang.String = null,
+    http: java.lang.String = null,
+    httpProxyAll: js.UndefOr[scala.Boolean] = js.undefined,
+    passthrough: java.lang.String = null,
+    proxyDNS: js.UndefOr[scala.Boolean] = js.undefined,
+    proxyType: _ProxyConfigProxyType = null,
+    socks: java.lang.String = null,
+    socksVersion: scala.Int | scala.Double = null,
+    ssl: java.lang.String = null
+  ): ProxyConfig = {
+    val __obj = js.Dynamic.literal()
+    if (autoConfigUrl != null) __obj.updateDynamic("autoConfigUrl")(autoConfigUrl)
+    if (!js.isUndefined(autoLogin)) __obj.updateDynamic("autoLogin")(autoLogin)
+    if (ftp != null) __obj.updateDynamic("ftp")(ftp)
+    if (http != null) __obj.updateDynamic("http")(http)
+    if (!js.isUndefined(httpProxyAll)) __obj.updateDynamic("httpProxyAll")(httpProxyAll)
+    if (passthrough != null) __obj.updateDynamic("passthrough")(passthrough)
+    if (!js.isUndefined(proxyDNS)) __obj.updateDynamic("proxyDNS")(proxyDNS)
+    if (proxyType != null) __obj.updateDynamic("proxyType")(proxyType)
+    if (socks != null) __obj.updateDynamic("socks")(socks)
+    if (socksVersion != null) __obj.updateDynamic("socksVersion")(socksVersion.asInstanceOf[js.Any])
+    if (ssl != null) __obj.updateDynamic("ssl")(ssl)
+    __obj.asInstanceOf[ProxyConfig]
+  }
+}
+

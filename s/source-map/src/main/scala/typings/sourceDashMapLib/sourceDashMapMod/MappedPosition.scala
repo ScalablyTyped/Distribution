@@ -12,3 +12,15 @@ trait MappedPosition extends js.Object {
   var source: java.lang.String
 }
 
+object MappedPosition {
+  @scala.inline
+  def apply(column: scala.Double, line: scala.Double, source: java.lang.String, name: java.lang.String = null): MappedPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("source")(source)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[MappedPosition]
+  }
+}
+

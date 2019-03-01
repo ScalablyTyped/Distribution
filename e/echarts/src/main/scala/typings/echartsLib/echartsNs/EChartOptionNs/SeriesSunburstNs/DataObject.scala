@@ -153,3 +153,32 @@ trait DataObject extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DataObject {
+  @scala.inline
+  def apply(
+    children: js.Array[DataObject] = null,
+    downplay: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null,
+    highlight: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle = null,
+    link: java.lang.String = null,
+    name: java.lang.String = null,
+    target: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): DataObject = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (downplay != null) __obj.updateDynamic("downplay")(downplay)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataObject]
+  }
+}
+

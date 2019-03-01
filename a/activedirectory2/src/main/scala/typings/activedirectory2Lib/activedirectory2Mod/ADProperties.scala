@@ -23,3 +23,33 @@ trait ADProperties extends js.Object {
   var username: java.lang.String
 }
 
+object ADProperties {
+  @scala.inline
+  def apply(
+    baseDN: java.lang.String,
+    password: java.lang.String,
+    url: java.lang.String,
+    username: java.lang.String,
+    attributes: activedirectory2Lib.Anon_Cn = null,
+    entryParser: js.Function3[
+      /* entry */ js.Object, 
+      /* raw */ java.lang.String, 
+      /* cb */ js.Function1[/* entry */ js.Object, scala.Unit], 
+      scala.Unit
+    ] = null,
+    pageSize: activedirectory2Lib.activedirectory2LibNumbers.`1000` = null,
+    referrals: activedirectory2Lib.Anon_Enabled = null
+  ): ADProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseDN")(baseDN)
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("username")(username)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (entryParser != null) __obj.updateDynamic("entryParser")(entryParser)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize)
+    if (referrals != null) __obj.updateDynamic("referrals")(referrals)
+    __obj.asInstanceOf[ADProperties]
+  }
+}
+

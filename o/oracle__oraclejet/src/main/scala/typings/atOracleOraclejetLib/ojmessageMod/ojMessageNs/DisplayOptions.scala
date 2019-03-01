@@ -12,3 +12,14 @@ trait DisplayOptions extends js.Object {
   ] = js.undefined
 }
 
+object DisplayOptions {
+  @scala.inline
+  def apply(
+    category: atOracleOraclejetLib.atOracleOraclejetLibStrings.header | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto = null
+  ): DisplayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DisplayOptions]
+  }
+}
+

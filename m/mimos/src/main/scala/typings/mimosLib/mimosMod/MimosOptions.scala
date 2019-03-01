@@ -14,3 +14,12 @@ trait MimosOptions extends js.Object {
   var `override`: org.scalablytyped.runtime.StringDictionary[MimosOptionsValue]
 }
 
+object MimosOptions {
+  @scala.inline
+  def apply(`override`: org.scalablytyped.runtime.StringDictionary[MimosOptionsValue]): MimosOptions = {
+    val __obj = js.Dynamic.literal(`override` = `override`)
+  
+    __obj.asInstanceOf[MimosOptions]
+  }
+}
+

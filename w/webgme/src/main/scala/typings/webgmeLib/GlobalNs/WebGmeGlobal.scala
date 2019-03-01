@@ -20,3 +20,36 @@ trait WebGmeGlobal extends js.Object {
   def getConfig(): webgmeLib.GmeConfigNs.GmeConfig
 }
 
+object WebGmeGlobal {
+  @scala.inline
+  def apply(
+    getConfig: js.Function0[webgmeLib.GmeConfigNs.GmeConfig],
+    gmeConfig: webgmeLib.GmeConfigNs.GmeConfig,
+    GitHubVersion: java.lang.String = null,
+    KeyboardManager: KeyboardManager = null,
+    LayoutManager: webgmeLib.GmePanelNs.LayoutManager = null,
+    NpmVersion: java.lang.String = null,
+    PanelManager: webgmeLib.GmePanelNs.PanelManager = null,
+    State: State = null,
+    Toolbar: webgmeLib.ToolbarNs.Toolbar = null,
+    history: History = null,
+    userInfo: UserInfo = null,
+    version: java.lang.String = null
+  ): WebGmeGlobal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getConfig")(getConfig)
+    __obj.updateDynamic("gmeConfig")(gmeConfig)
+    if (GitHubVersion != null) __obj.updateDynamic("GitHubVersion")(GitHubVersion)
+    if (KeyboardManager != null) __obj.updateDynamic("KeyboardManager")(KeyboardManager)
+    if (LayoutManager != null) __obj.updateDynamic("LayoutManager")(LayoutManager)
+    if (NpmVersion != null) __obj.updateDynamic("NpmVersion")(NpmVersion)
+    if (PanelManager != null) __obj.updateDynamic("PanelManager")(PanelManager)
+    if (State != null) __obj.updateDynamic("State")(State)
+    if (Toolbar != null) __obj.updateDynamic("Toolbar")(Toolbar)
+    if (history != null) __obj.updateDynamic("history")(history)
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[WebGmeGlobal]
+  }
+}
+

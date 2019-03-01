@@ -10,3 +10,21 @@ trait Foldable3[F /* <: fpDashTsLib.libHKTMod.URIS3 */] extends js.Object {
   def reduce[U, L, A, B](fa: fpDashTsLib.libHKTMod.Type3[F, U, L, A], b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B
 }
 
+object Foldable3 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
+    URI: F,
+    reduce: js.Function3[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Any, 
+      js.Function2[js.Any, js.Any, js.Any], 
+      js.Any
+    ]
+  ): Foldable3[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("reduce")(reduce)
+    __obj.asInstanceOf[Foldable3[F]]
+  }
+}
+

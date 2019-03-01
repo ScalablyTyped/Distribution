@@ -14,3 +14,18 @@ trait ExecOptions extends js.Object {
   var x11: js.UndefOr[scala.Boolean | scala.Double | X11Options] = js.undefined
 }
 
+object ExecOptions {
+  @scala.inline
+  def apply(
+    env: js.Any = null,
+    pty: ssh2Lib.ssh2LibNumbers.`true` | PseudoTtyOptions = null,
+    x11: scala.Boolean | scala.Double | X11Options = null
+  ): ExecOptions = {
+    val __obj = js.Dynamic.literal()
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (pty != null) __obj.updateDynamic("pty")(pty.asInstanceOf[js.Any])
+    if (x11 != null) __obj.updateDynamic("x11")(x11.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExecOptions]
+  }
+}
+

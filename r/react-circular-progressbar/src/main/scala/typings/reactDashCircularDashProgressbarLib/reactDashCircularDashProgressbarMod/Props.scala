@@ -18,3 +18,32 @@ trait Props extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    percentage: scala.Double,
+    background: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundPadding: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    classes: ProgressbarClasses = null,
+    counterClockwise: js.UndefOr[scala.Boolean] = js.undefined,
+    initialAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    strokeWidth: scala.Int | scala.Double = null,
+    styles: ProgressbarStyles = null,
+    text: java.lang.String = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("percentage")(percentage)
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
+    if (backgroundPadding != null) __obj.updateDynamic("backgroundPadding")(backgroundPadding.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (!js.isUndefined(counterClockwise)) __obj.updateDynamic("counterClockwise")(counterClockwise)
+    if (!js.isUndefined(initialAnimation)) __obj.updateDynamic("initialAnimation")(initialAnimation)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Props]
+  }
+}
+

@@ -10,3 +10,12 @@ trait HistoryTransactionOptions extends js.Object {
   var selectionsMarkerLayer: js.UndefOr[MarkerLayer] = js.undefined
 }
 
+object HistoryTransactionOptions {
+  @scala.inline
+  def apply(selectionsMarkerLayer: MarkerLayer = null): HistoryTransactionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (selectionsMarkerLayer != null) __obj.updateDynamic("selectionsMarkerLayer")(selectionsMarkerLayer)
+    __obj.asInstanceOf[HistoryTransactionOptions]
+  }
+}
+

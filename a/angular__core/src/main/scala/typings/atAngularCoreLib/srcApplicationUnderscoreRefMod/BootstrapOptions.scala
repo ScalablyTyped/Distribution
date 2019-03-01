@@ -18,3 +18,14 @@ trait BootstrapOptions extends js.Object {
   ] = js.undefined
 }
 
+object BootstrapOptions {
+  @scala.inline
+  def apply(
+    ngZone: atAngularCoreLib.srcZoneNgUnderscoreZoneMod.NgZone | atAngularCoreLib.atAngularCoreLibStrings.zoneDOTjs | atAngularCoreLib.atAngularCoreLibStrings.noop = null
+  ): BootstrapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ngZone != null) __obj.updateDynamic("ngZone")(ngZone.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapOptions]
+  }
+}
+

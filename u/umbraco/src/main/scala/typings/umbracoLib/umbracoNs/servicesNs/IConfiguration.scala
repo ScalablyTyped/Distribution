@@ -15,3 +15,20 @@ trait IConfiguration extends js.Object {
   var toolbar: js.Array[java.lang.String]
 }
 
+object IConfiguration {
+  @scala.inline
+  def apply(
+    dimensions: IDimension,
+    maxImageSize: scala.Double,
+    stylesheets: js.Array[java.lang.String],
+    toolbar: js.Array[java.lang.String]
+  ): IConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dimensions")(dimensions)
+    __obj.updateDynamic("maxImageSize")(maxImageSize)
+    __obj.updateDynamic("stylesheets")(stylesheets)
+    __obj.updateDynamic("toolbar")(toolbar)
+    __obj.asInstanceOf[IConfiguration]
+  }
+}
+

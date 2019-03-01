@@ -72,3 +72,38 @@ trait Span extends js.Object {
   var timeEvents: js.UndefOr[TimeEvents] = js.undefined
 }
 
+object Span {
+  @scala.inline
+  def apply(
+    attributes: Attributes = null,
+    childSpanCount: scala.Int | scala.Double = null,
+    displayName: TruncatableString = null,
+    endTime: java.lang.String = null,
+    links: Links = null,
+    name: java.lang.String = null,
+    parentSpanId: java.lang.String = null,
+    sameProcessAsParentSpan: js.UndefOr[scala.Boolean] = js.undefined,
+    spanId: java.lang.String = null,
+    stackTrace: StackTrace = null,
+    startTime: java.lang.String = null,
+    status: Status = null,
+    timeEvents: TimeEvents = null
+  ): Span = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (childSpanCount != null) __obj.updateDynamic("childSpanCount")(childSpanCount.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (links != null) __obj.updateDynamic("links")(links)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parentSpanId != null) __obj.updateDynamic("parentSpanId")(parentSpanId)
+    if (!js.isUndefined(sameProcessAsParentSpan)) __obj.updateDynamic("sameProcessAsParentSpan")(sameProcessAsParentSpan)
+    if (spanId != null) __obj.updateDynamic("spanId")(spanId)
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (timeEvents != null) __obj.updateDynamic("timeEvents")(timeEvents)
+    __obj.asInstanceOf[Span]
+  }
+}
+

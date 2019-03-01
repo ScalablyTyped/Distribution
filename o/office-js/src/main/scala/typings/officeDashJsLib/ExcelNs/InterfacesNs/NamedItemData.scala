@@ -69,3 +69,28 @@ trait NamedItemData extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NamedItemData {
+  @scala.inline
+  def apply(
+    arrayValues: NamedItemArrayValuesData = null,
+    comment: java.lang.String = null,
+    formula: js.Any = null,
+    name: java.lang.String = null,
+    scope: officeDashJsLib.ExcelNs.NamedItemScope | officeDashJsLib.officeDashJsLibStrings.Worksheet | officeDashJsLib.officeDashJsLibStrings.Workbook = null,
+    `type`: officeDashJsLib.ExcelNs.NamedItemType | officeDashJsLib.officeDashJsLibStrings.String | officeDashJsLib.officeDashJsLibStrings.Integer | officeDashJsLib.officeDashJsLibStrings.Double | officeDashJsLib.officeDashJsLibStrings.Boolean | officeDashJsLib.officeDashJsLibStrings.Range | officeDashJsLib.officeDashJsLibStrings.Error | officeDashJsLib.officeDashJsLibStrings.Array = null,
+    value: js.Any = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): NamedItemData = {
+    val __obj = js.Dynamic.literal()
+    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (formula != null) __obj.updateDynamic("formula")(formula)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[NamedItemData]
+  }
+}
+

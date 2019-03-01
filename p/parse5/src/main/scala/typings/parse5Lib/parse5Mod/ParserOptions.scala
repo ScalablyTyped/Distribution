@@ -32,3 +32,18 @@ trait ParserOptions extends js.Object {
   var treeAdapter: js.UndefOr[TreeAdapter] = js.undefined
 }
 
+object ParserOptions {
+  @scala.inline
+  def apply(
+    scriptingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceCodeLocationInfo: js.UndefOr[scala.Boolean] = js.undefined,
+    treeAdapter: TreeAdapter = null
+  ): ParserOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(scriptingEnabled)) __obj.updateDynamic("scriptingEnabled")(scriptingEnabled)
+    if (!js.isUndefined(sourceCodeLocationInfo)) __obj.updateDynamic("sourceCodeLocationInfo")(sourceCodeLocationInfo)
+    if (treeAdapter != null) __obj.updateDynamic("treeAdapter")(treeAdapter)
+    __obj.asInstanceOf[ParserOptions]
+  }
+}
+

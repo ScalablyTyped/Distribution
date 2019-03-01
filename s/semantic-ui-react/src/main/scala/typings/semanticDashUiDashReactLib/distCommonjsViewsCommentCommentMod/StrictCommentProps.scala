@@ -18,3 +18,22 @@ trait StrictCommentProps extends js.Object {
   var content: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent] = js.undefined
 }
 
+object StrictCommentProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null
+  ): StrictCommentProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictCommentProps]
+  }
+}
+

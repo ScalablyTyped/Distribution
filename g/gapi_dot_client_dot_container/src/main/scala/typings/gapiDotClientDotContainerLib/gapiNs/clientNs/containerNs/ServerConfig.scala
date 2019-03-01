@@ -18,3 +18,22 @@ trait ServerConfig extends js.Object {
   var validNodeVersions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ServerConfig {
+  @scala.inline
+  def apply(
+    defaultClusterVersion: java.lang.String = null,
+    defaultImageType: java.lang.String = null,
+    validImageTypes: js.Array[java.lang.String] = null,
+    validMasterVersions: js.Array[java.lang.String] = null,
+    validNodeVersions: js.Array[java.lang.String] = null
+  ): ServerConfig = {
+    val __obj = js.Dynamic.literal()
+    if (defaultClusterVersion != null) __obj.updateDynamic("defaultClusterVersion")(defaultClusterVersion)
+    if (defaultImageType != null) __obj.updateDynamic("defaultImageType")(defaultImageType)
+    if (validImageTypes != null) __obj.updateDynamic("validImageTypes")(validImageTypes)
+    if (validMasterVersions != null) __obj.updateDynamic("validMasterVersions")(validMasterVersions)
+    if (validNodeVersions != null) __obj.updateDynamic("validNodeVersions")(validNodeVersions)
+    __obj.asInstanceOf[ServerConfig]
+  }
+}
+

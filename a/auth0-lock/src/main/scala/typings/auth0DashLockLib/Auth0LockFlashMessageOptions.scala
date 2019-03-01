@@ -10,3 +10,15 @@ trait Auth0LockFlashMessageOptions extends js.Object {
   var `type`: auth0DashLockLib.auth0DashLockLibStrings.success | auth0DashLockLib.auth0DashLockLibStrings.error
 }
 
+object Auth0LockFlashMessageOptions {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    `type`: auth0DashLockLib.auth0DashLockLibStrings.success | auth0DashLockLib.auth0DashLockLibStrings.error
+  ): Auth0LockFlashMessageOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Auth0LockFlashMessageOptions]
+  }
+}
+

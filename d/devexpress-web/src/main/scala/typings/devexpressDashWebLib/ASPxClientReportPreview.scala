@@ -36,3 +36,22 @@ trait ASPxClientReportPreview extends js.Object {
   var zoom: js.Any
 }
 
+object ASPxClientReportPreview {
+  @scala.inline
+  def apply(
+    documentBuilding: js.Any,
+    pageIndex: js.Any,
+    pages: js.Any,
+    showMultipagePreview: js.Any,
+    zoom: js.Any
+  ): ASPxClientReportPreview = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("documentBuilding")(documentBuilding)
+    __obj.updateDynamic("pageIndex")(pageIndex)
+    __obj.updateDynamic("pages")(pages)
+    __obj.updateDynamic("showMultipagePreview")(showMultipagePreview)
+    __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[ASPxClientReportPreview]
+  }
+}
+

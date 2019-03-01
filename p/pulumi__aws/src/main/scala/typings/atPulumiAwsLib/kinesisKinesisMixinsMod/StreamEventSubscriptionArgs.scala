@@ -27,3 +27,18 @@ trait StreamEventSubscriptionArgs extends js.Object {
   val startingPositionTimestamp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StreamEventSubscriptionArgs {
+  @scala.inline
+  def apply(
+    startingPosition: atPulumiAwsLib.atPulumiAwsLibStrings.TRIM_HORIZON | atPulumiAwsLib.atPulumiAwsLibStrings.LATEST | atPulumiAwsLib.atPulumiAwsLibStrings.AT_TIMESTAMP,
+    batchSize: scala.Int | scala.Double = null,
+    startingPositionTimestamp: java.lang.String = null
+  ): StreamEventSubscriptionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("startingPosition")(startingPosition.asInstanceOf[js.Any])
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (startingPositionTimestamp != null) __obj.updateDynamic("startingPositionTimestamp")(startingPositionTimestamp)
+    __obj.asInstanceOf[StreamEventSubscriptionArgs]
+  }
+}
+

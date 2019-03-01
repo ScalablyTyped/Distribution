@@ -24,3 +24,20 @@ trait RouteTablePropagationState extends js.Object {
   val transitGatewayRouteTableId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RouteTablePropagationState {
+  @scala.inline
+  def apply(
+    resourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    resourceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RouteTablePropagationState = {
+    val __obj = js.Dynamic.literal()
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
+    if (transitGatewayAttachmentId != null) __obj.updateDynamic("transitGatewayAttachmentId")(transitGatewayAttachmentId.asInstanceOf[js.Any])
+    if (transitGatewayRouteTableId != null) __obj.updateDynamic("transitGatewayRouteTableId")(transitGatewayRouteTableId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteTablePropagationState]
+  }
+}
+

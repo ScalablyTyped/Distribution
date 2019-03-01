@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object stompitLibStrings {
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends stompitLib.libClientMod.ClientNs.Ack
   
   @js.native
-  sealed trait client extends js.Object
+  sealed trait client
+    extends stompitLib.libClientMod.ClientNs.Ack
   
   @js.native
-  sealed trait `client-individual` extends js.Object
+  sealed trait `client-individual`
+    extends stompitLib.libClientMod.ClientNs.Ack
   
   @js.native
   sealed trait connect extends js.Object

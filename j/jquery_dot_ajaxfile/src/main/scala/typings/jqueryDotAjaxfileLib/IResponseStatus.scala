@@ -11,3 +11,14 @@ trait IResponseStatus extends js.Object {
   var text: java.lang.String
 }
 
+object IResponseStatus {
+  @scala.inline
+  def apply(code: scala.Double, isSuccess: scala.Boolean, text: java.lang.String): IResponseStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("isSuccess")(isSuccess)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[IResponseStatus]
+  }
+}
+

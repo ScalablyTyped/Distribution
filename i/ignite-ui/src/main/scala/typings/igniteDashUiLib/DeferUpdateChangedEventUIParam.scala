@@ -16,3 +16,13 @@ trait DeferUpdateChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DeferUpdateChangedEventUIParam {
+  @scala.inline
+  def apply(deferUpdate: js.UndefOr[scala.Boolean] = js.undefined, owner: js.Any = null): DeferUpdateChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deferUpdate)) __obj.updateDynamic("deferUpdate")(deferUpdate)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DeferUpdateChangedEventUIParam]
+  }
+}
+

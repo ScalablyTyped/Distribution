@@ -32,3 +32,32 @@ trait DeviceInfo extends js.Object {
   var Width: scala.Double
 }
 
+object DeviceInfo {
+  @scala.inline
+  def apply(
+    BitsPerPixel: scala.Double,
+    BottomInset: scala.Double,
+    Capabilities: scala.Double,
+    Height: scala.Double,
+    LeftInset: scala.Double,
+    PixelPerMeterX: scala.Double,
+    PixelPerMeterY: scala.Double,
+    RightInset: scala.Double,
+    TopInset: scala.Double,
+    Width: scala.Double
+  ): DeviceInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BitsPerPixel")(BitsPerPixel)
+    __obj.updateDynamic("BottomInset")(BottomInset)
+    __obj.updateDynamic("Capabilities")(Capabilities)
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("LeftInset")(LeftInset)
+    __obj.updateDynamic("PixelPerMeterX")(PixelPerMeterX)
+    __obj.updateDynamic("PixelPerMeterY")(PixelPerMeterY)
+    __obj.updateDynamic("RightInset")(RightInset)
+    __obj.updateDynamic("TopInset")(TopInset)
+    __obj.updateDynamic("Width")(Width)
+    __obj.asInstanceOf[DeviceInfo]
+  }
+}
+

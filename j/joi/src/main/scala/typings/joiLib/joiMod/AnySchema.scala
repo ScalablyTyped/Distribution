@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait AnySchema extends JoiObject {
+trait AnySchema
+  extends _Schema
+     with JoiObject {
   var schemaType: js.UndefOr[Types | java.lang.String] = js.native
   /**
     * Whitelists a value

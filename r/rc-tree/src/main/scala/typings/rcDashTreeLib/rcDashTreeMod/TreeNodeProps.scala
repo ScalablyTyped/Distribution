@@ -34,3 +34,24 @@ trait TreeNodeProps extends js.Object {
   var title: js.UndefOr[java.lang.String | reactLib.reactMod.Global.JSXNs.Element] = js.undefined
 }
 
+object TreeNodeProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    disableCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: reactLib.reactMod.Global.JSXNs.Element | (js.Function1[/* props */ InternalTreeNodeProps, reactLib.reactMod.Global.JSXNs.Element]) = null,
+    isLeaf: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null
+  ): TreeNodeProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disableCheckbox)) __obj.updateDynamic("disableCheckbox")(disableCheckbox)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLeaf)) __obj.updateDynamic("isLeaf")(isLeaf)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TreeNodeProps]
+  }
+}
+

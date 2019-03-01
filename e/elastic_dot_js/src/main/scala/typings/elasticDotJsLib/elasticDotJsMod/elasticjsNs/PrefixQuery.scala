@@ -49,3 +49,24 @@ trait PrefixQuery extends Query {
   def value(p: java.lang.String): PrefixQuery
 }
 
+object PrefixQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, PrefixQuery],
+    field: js.Function1[java.lang.String, PrefixQuery],
+    rewrite: js.Function1[java.lang.String, PrefixQuery],
+    toJSON: js.Function0[js.Any],
+    value: js.Function1[java.lang.String, PrefixQuery]
+  ): PrefixQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("rewrite")(rewrite)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PrefixQuery]
+  }
+}
+

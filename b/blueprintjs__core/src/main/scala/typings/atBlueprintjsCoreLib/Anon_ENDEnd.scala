@@ -11,3 +11,18 @@ trait Anon_ENDEnd extends js.Object {
   var START: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.start
 }
 
+object Anon_ENDEnd {
+  @scala.inline
+  def apply(
+    END: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.end,
+    FULL: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.full,
+    START: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.start
+  ): Anon_ENDEnd = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("END")(END)
+    __obj.updateDynamic("FULL")(FULL)
+    __obj.updateDynamic("START")(START)
+    __obj.asInstanceOf[Anon_ENDEnd]
+  }
+}
+

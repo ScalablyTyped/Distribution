@@ -28,3 +28,26 @@ trait LiveBroadcast extends js.Object {
   var status: js.UndefOr[LiveBroadcastStatus] = js.undefined
 }
 
+object LiveBroadcast {
+  @scala.inline
+  def apply(
+    contentDetails: LiveBroadcastContentDetails = null,
+    etag: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    snippet: LiveBroadcastSnippet = null,
+    statistics: LiveBroadcastStatistics = null,
+    status: LiveBroadcastStatus = null
+  ): LiveBroadcast = {
+    val __obj = js.Dynamic.literal()
+    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (statistics != null) __obj.updateDynamic("statistics")(statistics)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[LiveBroadcast]
+  }
+}
+

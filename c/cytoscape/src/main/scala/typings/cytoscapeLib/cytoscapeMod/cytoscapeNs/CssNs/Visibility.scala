@@ -32,3 +32,19 @@ trait Visibility extends js.Object {
   var `z-index`: scala.Double
 }
 
+object Visibility {
+  @scala.inline
+  def apply(
+    display: cytoscapeLib.cytoscapeLibStrings.none | cytoscapeLib.cytoscapeLibStrings.displayed,
+    opacity: scala.Double,
+    visibility: cytoscapeLib.cytoscapeLibStrings.none | cytoscapeLib.cytoscapeLibStrings.visible,
+    `z-index`: scala.Double
+  ): Visibility = {
+    val __obj = js.Dynamic.literal(`z-index` = `z-index`)
+    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    __obj.updateDynamic("opacity")(opacity)
+    __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Visibility]
+  }
+}
+

@@ -62,3 +62,42 @@ trait WaitOnOptions extends js.Object {
   var window: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WaitOnOptions {
+  @scala.inline
+  def apply(
+    resources: js.Array[java.lang.String],
+    auth: WaitOnAuth = null,
+    delay: scala.Int | scala.Double = null,
+    followAllRedirects: js.UndefOr[scala.Boolean] = js.undefined,
+    followRedirect: js.UndefOr[scala.Boolean] = js.undefined,
+    headers: stdLib.Record[java.lang.String, _] = null,
+    httpSignature: HttpSignature = null,
+    interval: scala.Int | scala.Double = null,
+    log: js.UndefOr[scala.Boolean] = js.undefined,
+    reverse: js.UndefOr[scala.Boolean] = js.undefined,
+    strictSSL: js.UndefOr[scala.Boolean] = js.undefined,
+    tcpTimeout: scala.Int | scala.Double = null,
+    timeout: scala.Int | scala.Double = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined,
+    window: scala.Int | scala.Double = null
+  ): WaitOnOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resources")(resources)
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(followAllRedirects)) __obj.updateDynamic("followAllRedirects")(followAllRedirects)
+    if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (httpSignature != null) __obj.updateDynamic("httpSignature")(httpSignature)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(log)) __obj.updateDynamic("log")(log)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL)
+    if (tcpTimeout != null) __obj.updateDynamic("tcpTimeout")(tcpTimeout.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WaitOnOptions]
+  }
+}
+

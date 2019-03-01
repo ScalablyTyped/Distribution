@@ -15,3 +15,13 @@ trait GoogleCloudVideointelligenceV1_SafeSearchAnnotation extends js.Object {
   var time: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1_SafeSearchAnnotation {
+  @scala.inline
+  def apply(adult: java.lang.String = null, time: java.lang.String = null): GoogleCloudVideointelligenceV1_SafeSearchAnnotation = {
+    val __obj = js.Dynamic.literal()
+    if (adult != null) __obj.updateDynamic("adult")(adult)
+    if (time != null) __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1_SafeSearchAnnotation]
+  }
+}
+

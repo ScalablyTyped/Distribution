@@ -28,3 +28,20 @@ trait ResponseSettings extends js.Object {
   var varyEtag: scala.Boolean
 }
 
+object ResponseSettings {
+  @scala.inline
+  def apply(
+    passThrough: scala.Boolean,
+    stringify: hapiLib.hapiMod.JsonNs.StringifyArguments,
+    ttl: scala.Double,
+    varyEtag: scala.Boolean
+  ): ResponseSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("passThrough")(passThrough)
+    __obj.updateDynamic("stringify")(stringify)
+    __obj.updateDynamic("ttl")(ttl)
+    __obj.updateDynamic("varyEtag")(varyEtag)
+    __obj.asInstanceOf[ResponseSettings]
+  }
+}
+

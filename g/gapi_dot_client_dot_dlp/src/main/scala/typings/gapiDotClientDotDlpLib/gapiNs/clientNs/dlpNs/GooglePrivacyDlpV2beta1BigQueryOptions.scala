@@ -15,3 +15,16 @@ trait GooglePrivacyDlpV2beta1BigQueryOptions extends js.Object {
   var tableReference: js.UndefOr[GooglePrivacyDlpV2beta1BigQueryTable] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1BigQueryOptions {
+  @scala.inline
+  def apply(
+    identifyingFields: js.Array[GooglePrivacyDlpV2beta1FieldId] = null,
+    tableReference: GooglePrivacyDlpV2beta1BigQueryTable = null
+  ): GooglePrivacyDlpV2beta1BigQueryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (identifyingFields != null) __obj.updateDynamic("identifyingFields")(identifyingFields)
+    if (tableReference != null) __obj.updateDynamic("tableReference")(tableReference)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1BigQueryOptions]
+  }
+}
+

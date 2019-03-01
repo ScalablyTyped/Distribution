@@ -47,3 +47,34 @@ trait XTolerantMultiPropertySet
   ): activexDashInteropLib.SafeArray[SetPropertyTolerantFailed]
 }
 
+object XTolerantMultiPropertySet {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDirectPropertyValuesTolerant: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[GetDirectPropertyTolerantResult]
+    ],
+    getPropertyValuesTolerant: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[GetPropertyTolerantResult]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPropertyValuesTolerant: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      activexDashInteropLib.SafeArray[SetPropertyTolerantFailed]
+    ]
+  ): XTolerantMultiPropertySet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDirectPropertyValuesTolerant")(getDirectPropertyValuesTolerant)
+    __obj.updateDynamic("getPropertyValuesTolerant")(getPropertyValuesTolerant)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setPropertyValuesTolerant")(setPropertyValuesTolerant)
+    __obj.asInstanceOf[XTolerantMultiPropertySet]
+  }
+}
+

@@ -31,3 +31,22 @@ trait ShapeProperties extends js.Object {
   var shape_background_fill: ShapePropertiesShapeBackgroundFill
 }
 
+object ShapeProperties {
+  @scala.inline
+  def apply(
+    content_alignment: ContentAlignment,
+    link: Link,
+    outline: Outline,
+    shadow: Shadow,
+    shape_background_fill: ShapePropertiesShapeBackgroundFill
+  ): ShapeProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content_alignment")(content_alignment)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("outline")(outline)
+    __obj.updateDynamic("shadow")(shadow)
+    __obj.updateDynamic("shape_background_fill")(shape_background_fill)
+    __obj.asInstanceOf[ShapeProperties]
+  }
+}
+

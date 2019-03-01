@@ -36,3 +36,26 @@ trait Data extends js.Object {
   var y: scala.Double
 }
 
+object Data {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    rotate: scala.Double,
+    scaleX: scala.Double,
+    scaleY: scala.Double,
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): Data = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("scaleX")(scaleX)
+    __obj.updateDynamic("scaleY")(scaleY)
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Data]
+  }
+}
+

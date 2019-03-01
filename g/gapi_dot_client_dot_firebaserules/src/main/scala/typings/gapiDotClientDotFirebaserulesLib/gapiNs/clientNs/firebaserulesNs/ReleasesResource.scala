@@ -53,3 +53,42 @@ trait ReleasesResource extends js.Object {
   def update(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Release]
 }
 
+object ReleasesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Release]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Release]
+    ],
+    getExecutable: js.Function1[
+      gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetReleaseExecutableResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListReleasesResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotFirebaserulesLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Release]
+    ]
+  ): ReleasesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getExecutable")(getExecutable)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ReleasesResource]
+  }
+}
+

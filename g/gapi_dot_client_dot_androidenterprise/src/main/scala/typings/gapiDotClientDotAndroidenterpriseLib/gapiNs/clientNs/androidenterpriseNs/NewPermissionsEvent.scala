@@ -17,3 +17,18 @@ trait NewPermissionsEvent extends js.Object {
   var requestedPermissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object NewPermissionsEvent {
+  @scala.inline
+  def apply(
+    approvedPermissions: js.Array[java.lang.String] = null,
+    productId: java.lang.String = null,
+    requestedPermissions: js.Array[java.lang.String] = null
+  ): NewPermissionsEvent = {
+    val __obj = js.Dynamic.literal()
+    if (approvedPermissions != null) __obj.updateDynamic("approvedPermissions")(approvedPermissions)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (requestedPermissions != null) __obj.updateDynamic("requestedPermissions")(requestedPermissions)
+    __obj.asInstanceOf[NewPermissionsEvent]
+  }
+}
+

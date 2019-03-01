@@ -22,3 +22,16 @@ trait LiveStreamContentDetails extends js.Object {
   var isReusable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LiveStreamContentDetails {
+  @scala.inline
+  def apply(
+    closedCaptionsIngestionUrl: java.lang.String = null,
+    isReusable: js.UndefOr[scala.Boolean] = js.undefined
+  ): LiveStreamContentDetails = {
+    val __obj = js.Dynamic.literal()
+    if (closedCaptionsIngestionUrl != null) __obj.updateDynamic("closedCaptionsIngestionUrl")(closedCaptionsIngestionUrl)
+    if (!js.isUndefined(isReusable)) __obj.updateDynamic("isReusable")(isReusable)
+    __obj.asInstanceOf[LiveStreamContentDetails]
+  }
+}
+

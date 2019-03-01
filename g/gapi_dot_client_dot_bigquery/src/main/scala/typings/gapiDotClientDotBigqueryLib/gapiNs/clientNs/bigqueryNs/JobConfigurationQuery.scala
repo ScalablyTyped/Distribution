@@ -90,3 +90,52 @@ trait JobConfigurationQuery extends js.Object {
   var writeDisposition: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JobConfigurationQuery {
+  @scala.inline
+  def apply(
+    allowLargeResults: js.UndefOr[scala.Boolean] = js.undefined,
+    createDisposition: java.lang.String = null,
+    defaultDataset: DatasetReference = null,
+    destinationEncryptionConfiguration: EncryptionConfiguration = null,
+    destinationTable: TableReference = null,
+    flattenResults: js.UndefOr[scala.Boolean] = js.undefined,
+    maximumBillingTier: scala.Int | scala.Double = null,
+    maximumBytesBilled: java.lang.String = null,
+    parameterMode: java.lang.String = null,
+    preserveNulls: js.UndefOr[scala.Boolean] = js.undefined,
+    priority: java.lang.String = null,
+    query: java.lang.String = null,
+    queryParameters: js.Array[QueryParameter] = null,
+    schemaUpdateOptions: js.Array[java.lang.String] = null,
+    tableDefinitions: stdLib.Record[java.lang.String, ExternalDataConfiguration] = null,
+    timePartitioning: TimePartitioning = null,
+    useLegacySql: js.UndefOr[scala.Boolean] = js.undefined,
+    useQueryCache: js.UndefOr[scala.Boolean] = js.undefined,
+    userDefinedFunctionResources: js.Array[UserDefinedFunctionResource] = null,
+    writeDisposition: java.lang.String = null
+  ): JobConfigurationQuery = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowLargeResults)) __obj.updateDynamic("allowLargeResults")(allowLargeResults)
+    if (createDisposition != null) __obj.updateDynamic("createDisposition")(createDisposition)
+    if (defaultDataset != null) __obj.updateDynamic("defaultDataset")(defaultDataset)
+    if (destinationEncryptionConfiguration != null) __obj.updateDynamic("destinationEncryptionConfiguration")(destinationEncryptionConfiguration)
+    if (destinationTable != null) __obj.updateDynamic("destinationTable")(destinationTable)
+    if (!js.isUndefined(flattenResults)) __obj.updateDynamic("flattenResults")(flattenResults)
+    if (maximumBillingTier != null) __obj.updateDynamic("maximumBillingTier")(maximumBillingTier.asInstanceOf[js.Any])
+    if (maximumBytesBilled != null) __obj.updateDynamic("maximumBytesBilled")(maximumBytesBilled)
+    if (parameterMode != null) __obj.updateDynamic("parameterMode")(parameterMode)
+    if (!js.isUndefined(preserveNulls)) __obj.updateDynamic("preserveNulls")(preserveNulls)
+    if (priority != null) __obj.updateDynamic("priority")(priority)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters)
+    if (schemaUpdateOptions != null) __obj.updateDynamic("schemaUpdateOptions")(schemaUpdateOptions)
+    if (tableDefinitions != null) __obj.updateDynamic("tableDefinitions")(tableDefinitions)
+    if (timePartitioning != null) __obj.updateDynamic("timePartitioning")(timePartitioning)
+    if (!js.isUndefined(useLegacySql)) __obj.updateDynamic("useLegacySql")(useLegacySql)
+    if (!js.isUndefined(useQueryCache)) __obj.updateDynamic("useQueryCache")(useQueryCache)
+    if (userDefinedFunctionResources != null) __obj.updateDynamic("userDefinedFunctionResources")(userDefinedFunctionResources)
+    if (writeDisposition != null) __obj.updateDynamic("writeDisposition")(writeDisposition)
+    __obj.asInstanceOf[JobConfigurationQuery]
+  }
+}
+

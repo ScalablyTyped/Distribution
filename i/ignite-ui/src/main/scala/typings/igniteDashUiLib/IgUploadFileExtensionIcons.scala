@@ -24,3 +24,23 @@ trait IgUploadFileExtensionIcons
   var ext: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object IgUploadFileExtensionIcons {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgUploadFileExtensionIcons
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    css: java.lang.String = null,
+    `def`: js.UndefOr[scala.Boolean] = js.undefined,
+    ext: js.Array[_] = null
+  ): IgUploadFileExtensionIcons = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (!js.isUndefined(`def`)) __obj.updateDynamic("def")(`def`)
+    if (ext != null) __obj.updateDynamic("ext")(ext)
+    __obj.asInstanceOf[IgUploadFileExtensionIcons]
+  }
+}
+

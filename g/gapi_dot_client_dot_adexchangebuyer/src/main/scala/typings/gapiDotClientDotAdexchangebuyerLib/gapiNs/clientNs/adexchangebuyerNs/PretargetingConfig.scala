@@ -72,3 +72,64 @@ trait PretargetingConfig extends js.Object {
   var videoPlayerSizes: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_AspectRatio]] = js.undefined
 }
 
+object PretargetingConfig {
+  @scala.inline
+  def apply(
+    billingId: java.lang.String = null,
+    configId: java.lang.String = null,
+    configName: java.lang.String = null,
+    creativeType: js.Array[java.lang.String] = null,
+    dimensions: js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_HeightWidth] = null,
+    excludedContentLabels: js.Array[java.lang.String] = null,
+    excludedGeoCriteriaIds: js.Array[java.lang.String] = null,
+    excludedPlacements: js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_Token] = null,
+    excludedUserLists: js.Array[java.lang.String] = null,
+    excludedVerticals: js.Array[java.lang.String] = null,
+    geoCriteriaIds: js.Array[java.lang.String] = null,
+    isActive: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    languages: js.Array[java.lang.String] = null,
+    minimumViewabilityDecile: scala.Int | scala.Double = null,
+    mobileCarriers: js.Array[java.lang.String] = null,
+    mobileDevices: js.Array[java.lang.String] = null,
+    mobileOperatingSystemVersions: js.Array[java.lang.String] = null,
+    placements: js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_Token] = null,
+    platforms: js.Array[java.lang.String] = null,
+    supportedCreativeAttributes: js.Array[java.lang.String] = null,
+    userIdentifierDataRequired: js.Array[java.lang.String] = null,
+    userLists: js.Array[java.lang.String] = null,
+    vendorTypes: js.Array[java.lang.String] = null,
+    verticals: js.Array[java.lang.String] = null,
+    videoPlayerSizes: js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_AspectRatio] = null
+  ): PretargetingConfig = {
+    val __obj = js.Dynamic.literal()
+    if (billingId != null) __obj.updateDynamic("billingId")(billingId)
+    if (configId != null) __obj.updateDynamic("configId")(configId)
+    if (configName != null) __obj.updateDynamic("configName")(configName)
+    if (creativeType != null) __obj.updateDynamic("creativeType")(creativeType)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (excludedContentLabels != null) __obj.updateDynamic("excludedContentLabels")(excludedContentLabels)
+    if (excludedGeoCriteriaIds != null) __obj.updateDynamic("excludedGeoCriteriaIds")(excludedGeoCriteriaIds)
+    if (excludedPlacements != null) __obj.updateDynamic("excludedPlacements")(excludedPlacements)
+    if (excludedUserLists != null) __obj.updateDynamic("excludedUserLists")(excludedUserLists)
+    if (excludedVerticals != null) __obj.updateDynamic("excludedVerticals")(excludedVerticals)
+    if (geoCriteriaIds != null) __obj.updateDynamic("geoCriteriaIds")(geoCriteriaIds)
+    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (languages != null) __obj.updateDynamic("languages")(languages)
+    if (minimumViewabilityDecile != null) __obj.updateDynamic("minimumViewabilityDecile")(minimumViewabilityDecile.asInstanceOf[js.Any])
+    if (mobileCarriers != null) __obj.updateDynamic("mobileCarriers")(mobileCarriers)
+    if (mobileDevices != null) __obj.updateDynamic("mobileDevices")(mobileDevices)
+    if (mobileOperatingSystemVersions != null) __obj.updateDynamic("mobileOperatingSystemVersions")(mobileOperatingSystemVersions)
+    if (placements != null) __obj.updateDynamic("placements")(placements)
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
+    if (supportedCreativeAttributes != null) __obj.updateDynamic("supportedCreativeAttributes")(supportedCreativeAttributes)
+    if (userIdentifierDataRequired != null) __obj.updateDynamic("userIdentifierDataRequired")(userIdentifierDataRequired)
+    if (userLists != null) __obj.updateDynamic("userLists")(userLists)
+    if (vendorTypes != null) __obj.updateDynamic("vendorTypes")(vendorTypes)
+    if (verticals != null) __obj.updateDynamic("verticals")(verticals)
+    if (videoPlayerSizes != null) __obj.updateDynamic("videoPlayerSizes")(videoPlayerSizes)
+    __obj.asInstanceOf[PretargetingConfig]
+  }
+}
+

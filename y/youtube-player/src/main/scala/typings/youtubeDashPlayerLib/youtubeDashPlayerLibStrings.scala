@@ -10,22 +10,27 @@ object youtubeDashPlayerLibStrings {
   sealed trait Options extends js.Object
   
   @js.native
-  sealed trait apiChange extends js.Object
+  sealed trait apiChange
+    extends youtubeDashPlayerLib.distEventNamesMod.EventType
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends youtubeDashPlayerLib.distEventNamesMod.EventType
   
   @js.native
-  sealed trait playbackQualityChange extends js.Object
+  sealed trait playbackQualityChange
+    extends youtubeDashPlayerLib.distEventNamesMod.EventType
   
   @js.native
-  sealed trait playbackRateChange extends js.Object
+  sealed trait playbackRateChange
+    extends youtubeDashPlayerLib.distEventNamesMod.EventType
   
   @js.native
   sealed trait playlist extends js.Object
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait ready
+    extends youtubeDashPlayerLib.distEventNamesMod.EventType
   
   @js.native
   sealed trait red extends js.Object
@@ -34,13 +39,15 @@ object youtubeDashPlayerLibStrings {
   sealed trait search extends js.Object
   
   @js.native
-  sealed trait stateChange extends js.Object
+  sealed trait stateChange
+    extends youtubeDashPlayerLib.distEventNamesMod.EventType
   
   @js.native
   sealed trait user_uploads extends js.Object
   
   @js.native
-  sealed trait volumeChange extends js.Object
+  sealed trait volumeChange
+    extends youtubeDashPlayerLib.distEventNamesMod.EventType
   
   @js.native
   sealed trait white extends js.Object

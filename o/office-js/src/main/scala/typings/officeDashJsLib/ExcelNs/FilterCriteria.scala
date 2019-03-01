@@ -77,3 +77,28 @@ trait FilterCriteria extends js.Object {
   var values: js.UndefOr[js.Array[java.lang.String | FilterDatetime]] = js.undefined
 }
 
+object FilterCriteria {
+  @scala.inline
+  def apply(
+    filterOn: FilterOn | officeDashJsLib.officeDashJsLibStrings.BottomItems | officeDashJsLib.officeDashJsLibStrings.BottomPercent | officeDashJsLib.officeDashJsLibStrings.CellColor | officeDashJsLib.officeDashJsLibStrings.Dynamic | officeDashJsLib.officeDashJsLibStrings.FontColor | officeDashJsLib.officeDashJsLibStrings.Values | officeDashJsLib.officeDashJsLibStrings.TopItems | officeDashJsLib.officeDashJsLibStrings.TopPercent | officeDashJsLib.officeDashJsLibStrings.Icon | officeDashJsLib.officeDashJsLibStrings.Custom,
+    color: java.lang.String = null,
+    criterion1: java.lang.String = null,
+    criterion2: java.lang.String = null,
+    dynamicCriteria: DynamicFilterCriteria | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.AboveAverage | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodApril | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodAugust | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodDecember | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodFebruray | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodJanuary | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodJuly | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodJune | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodMarch | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodMay | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodNovember | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodOctober | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodQuarter1 | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodQuarter2 | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodQuarter3 | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodQuarter4 | officeDashJsLib.officeDashJsLibStrings.AllDatesInPeriodSeptember | officeDashJsLib.officeDashJsLibStrings.BelowAverage | officeDashJsLib.officeDashJsLibStrings.LastMonth | officeDashJsLib.officeDashJsLibStrings.LastQuarter | officeDashJsLib.officeDashJsLibStrings.LastWeek | officeDashJsLib.officeDashJsLibStrings.LastYear | officeDashJsLib.officeDashJsLibStrings.NextMonth | officeDashJsLib.officeDashJsLibStrings.NextQuarter | officeDashJsLib.officeDashJsLibStrings.NextWeek | officeDashJsLib.officeDashJsLibStrings.NextYear | officeDashJsLib.officeDashJsLibStrings.ThisMonth | officeDashJsLib.officeDashJsLibStrings.ThisQuarter | officeDashJsLib.officeDashJsLibStrings.ThisWeek | officeDashJsLib.officeDashJsLibStrings.ThisYear | officeDashJsLib.officeDashJsLibStrings.Today | officeDashJsLib.officeDashJsLibStrings.Tomorrow | officeDashJsLib.officeDashJsLibStrings.YearToDate | officeDashJsLib.officeDashJsLibStrings.Yesterday = null,
+    icon: Icon = null,
+    operator: FilterOperator | officeDashJsLib.officeDashJsLibStrings.And | officeDashJsLib.officeDashJsLibStrings.Or = null,
+    values: js.Array[java.lang.String | FilterDatetime] = null
+  ): FilterCriteria = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filterOn")(filterOn.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (criterion1 != null) __obj.updateDynamic("criterion1")(criterion1)
+    if (criterion2 != null) __obj.updateDynamic("criterion2")(criterion2)
+    if (dynamicCriteria != null) __obj.updateDynamic("dynamicCriteria")(dynamicCriteria.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[FilterCriteria]
+  }
+}
+

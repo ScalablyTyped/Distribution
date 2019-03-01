@@ -34,3 +34,64 @@ trait QueryObj extends js.Object {
   def update(changes: js.Object, callback: CbCallback): scala.Unit
 }
 
+object QueryObj {
+  @scala.inline
+  def apply(
+    OR: js.Array[Query],
+    URI: java.lang.String,
+    addFilterToQuery: js.Function4[QueryObj, QueryConditions, java.lang.String, QueryValue, scala.Unit],
+    addSortToQuery: js.Function3[QueryObj, QuerySortDirections, java.lang.String, scala.Unit],
+    ascending: js.Function1[java.lang.String, scala.Unit],
+    columns: js.Function1[js.Array[java.lang.String], scala.Unit],
+    descending: js.Function1[java.lang.String, scala.Unit],
+    endpoint: java.lang.String,
+    equalTo: js.Function2[java.lang.String, QueryValue, scala.Unit],
+    fetch: js.Function1[CbCallback, scala.Unit],
+    greaterThan: js.Function2[java.lang.String, QueryValue, scala.Unit],
+    greaterThanEqualTo: js.Function2[java.lang.String, QueryValue, scala.Unit],
+    lessThan: js.Function2[java.lang.String, QueryValue, scala.Unit],
+    lessThanEqualTo: js.Function2[java.lang.String, QueryValue, scala.Unit],
+    limit: scala.Double,
+    matches: js.Function2[java.lang.String, stdLib.RegExp, scala.Unit],
+    notEqualTo: js.Function2[java.lang.String, QueryValue, scala.Unit],
+    offset: scala.Double,
+    or: js.Function1[QueryObj, scala.Unit],
+    query: Query,
+    remove: js.Function1[CbCallback, scala.Unit],
+    setPage: js.Function2[scala.Double, scala.Double, scala.Unit],
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    update: js.Function2[js.Object, CbCallback, scala.Unit],
+    user: APIUser
+  ): QueryObj = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("OR")(OR)
+    __obj.updateDynamic("URI")(URI)
+    __obj.updateDynamic("addFilterToQuery")(addFilterToQuery)
+    __obj.updateDynamic("addSortToQuery")(addSortToQuery)
+    __obj.updateDynamic("ascending")(ascending)
+    __obj.updateDynamic("columns")(columns)
+    __obj.updateDynamic("descending")(descending)
+    __obj.updateDynamic("endpoint")(endpoint)
+    __obj.updateDynamic("equalTo")(equalTo)
+    __obj.updateDynamic("fetch")(fetch)
+    __obj.updateDynamic("greaterThan")(greaterThan)
+    __obj.updateDynamic("greaterThanEqualTo")(greaterThanEqualTo)
+    __obj.updateDynamic("lessThan")(lessThan)
+    __obj.updateDynamic("lessThanEqualTo")(lessThanEqualTo)
+    __obj.updateDynamic("limit")(limit)
+    __obj.updateDynamic("matches")(matches)
+    __obj.updateDynamic("notEqualTo")(notEqualTo)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("or")(or)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("setPage")(setPage)
+    __obj.updateDynamic("systemKey")(systemKey)
+    __obj.updateDynamic("systemSecret")(systemSecret)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[QueryObj]
+  }
+}
+

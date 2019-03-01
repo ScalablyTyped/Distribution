@@ -25,3 +25,22 @@ trait GitTreeRef extends js.Object {
   var url: java.lang.String
 }
 
+object GitTreeRef {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    objectId: java.lang.String,
+    size: scala.Double,
+    treeEntries: js.Array[GitTreeEntryRef],
+    url: java.lang.String
+  ): GitTreeRef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("objectId")(objectId)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("treeEntries")(treeEntries)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GitTreeRef]
+  }
+}
+

@@ -173,3 +173,89 @@ trait IgTreeGridHiding
   var multiColumnHiding: js.UndefOr[MultiColumnHidingEvent] = js.undefined
 }
 
+object IgTreeGridHiding {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTreeGridHiding
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columnChooserAnimationDuration: scala.Int | scala.Double = null,
+    columnChooserButtonApplyClick: ColumnChooserButtonApplyClickEvent = null,
+    columnChooserButtonApplyText: java.lang.String = null,
+    columnChooserButtonCancelText: java.lang.String = null,
+    columnChooserButtonResetClick: ColumnChooserButtonResetClickEvent = null,
+    columnChooserCaptionText: java.lang.String = null,
+    columnChooserClosed: ColumnChooserClosedEvent = null,
+    columnChooserClosing: ColumnChooserClosingEvent = null,
+    columnChooserContainment: java.lang.String = null,
+    columnChooserContentsRendered: ColumnChooserContentsRenderedEvent = null,
+    columnChooserContentsRendering: ColumnChooserContentsRenderingEvent = null,
+    columnChooserDisplayText: java.lang.String = null,
+    columnChooserHeight: java.lang.String = null,
+    columnChooserHideOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    columnChooserHideText: java.lang.String = null,
+    columnChooserMoving: ColumnChooserMovingEvent = null,
+    columnChooserOpened: ColumnChooserOpenedEvent = null,
+    columnChooserOpening: ColumnChooserOpeningEvent = null,
+    columnChooserResetButtonLabel: java.lang.String = null,
+    columnChooserShowText: java.lang.String = null,
+    columnChooserWidth: java.lang.String = null,
+    columnHidden: ColumnHiddenEvent = null,
+    columnHideText: java.lang.String = null,
+    columnHiding: ColumnHidingEvent = null,
+    columnHidingRefused: ColumnHidingRefusedEvent = null,
+    columnSettings: js.Array[IgGridHidingColumnSetting] = null,
+    columnShowing: ColumnShowingEvent = null,
+    columnShowingRefused: ColumnShowingRefusedEvent = null,
+    columnShown: ColumnShownEvent = null,
+    dialogWidget: java.lang.String = null,
+    dropDownAnimationDuration: scala.Int | scala.Double = null,
+    hiddenColumnIndicatorHeaderWidth: scala.Int | scala.Double = null,
+    hiddenColumnIndicatorTooltipText: java.lang.String = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: IgGridHidingLocale = null,
+    multiColumnHiding: MultiColumnHidingEvent = null
+  ): IgTreeGridHiding = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnChooserAnimationDuration != null) __obj.updateDynamic("columnChooserAnimationDuration")(columnChooserAnimationDuration.asInstanceOf[js.Any])
+    if (columnChooserButtonApplyClick != null) __obj.updateDynamic("columnChooserButtonApplyClick")(columnChooserButtonApplyClick)
+    if (columnChooserButtonApplyText != null) __obj.updateDynamic("columnChooserButtonApplyText")(columnChooserButtonApplyText)
+    if (columnChooserButtonCancelText != null) __obj.updateDynamic("columnChooserButtonCancelText")(columnChooserButtonCancelText)
+    if (columnChooserButtonResetClick != null) __obj.updateDynamic("columnChooserButtonResetClick")(columnChooserButtonResetClick)
+    if (columnChooserCaptionText != null) __obj.updateDynamic("columnChooserCaptionText")(columnChooserCaptionText)
+    if (columnChooserClosed != null) __obj.updateDynamic("columnChooserClosed")(columnChooserClosed)
+    if (columnChooserClosing != null) __obj.updateDynamic("columnChooserClosing")(columnChooserClosing)
+    if (columnChooserContainment != null) __obj.updateDynamic("columnChooserContainment")(columnChooserContainment)
+    if (columnChooserContentsRendered != null) __obj.updateDynamic("columnChooserContentsRendered")(columnChooserContentsRendered)
+    if (columnChooserContentsRendering != null) __obj.updateDynamic("columnChooserContentsRendering")(columnChooserContentsRendering)
+    if (columnChooserDisplayText != null) __obj.updateDynamic("columnChooserDisplayText")(columnChooserDisplayText)
+    if (columnChooserHeight != null) __obj.updateDynamic("columnChooserHeight")(columnChooserHeight)
+    if (!js.isUndefined(columnChooserHideOnClick)) __obj.updateDynamic("columnChooserHideOnClick")(columnChooserHideOnClick)
+    if (columnChooserHideText != null) __obj.updateDynamic("columnChooserHideText")(columnChooserHideText)
+    if (columnChooserMoving != null) __obj.updateDynamic("columnChooserMoving")(columnChooserMoving)
+    if (columnChooserOpened != null) __obj.updateDynamic("columnChooserOpened")(columnChooserOpened)
+    if (columnChooserOpening != null) __obj.updateDynamic("columnChooserOpening")(columnChooserOpening)
+    if (columnChooserResetButtonLabel != null) __obj.updateDynamic("columnChooserResetButtonLabel")(columnChooserResetButtonLabel)
+    if (columnChooserShowText != null) __obj.updateDynamic("columnChooserShowText")(columnChooserShowText)
+    if (columnChooserWidth != null) __obj.updateDynamic("columnChooserWidth")(columnChooserWidth)
+    if (columnHidden != null) __obj.updateDynamic("columnHidden")(columnHidden)
+    if (columnHideText != null) __obj.updateDynamic("columnHideText")(columnHideText)
+    if (columnHiding != null) __obj.updateDynamic("columnHiding")(columnHiding)
+    if (columnHidingRefused != null) __obj.updateDynamic("columnHidingRefused")(columnHidingRefused)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (columnShowing != null) __obj.updateDynamic("columnShowing")(columnShowing)
+    if (columnShowingRefused != null) __obj.updateDynamic("columnShowingRefused")(columnShowingRefused)
+    if (columnShown != null) __obj.updateDynamic("columnShown")(columnShown)
+    if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
+    if (dropDownAnimationDuration != null) __obj.updateDynamic("dropDownAnimationDuration")(dropDownAnimationDuration.asInstanceOf[js.Any])
+    if (hiddenColumnIndicatorHeaderWidth != null) __obj.updateDynamic("hiddenColumnIndicatorHeaderWidth")(hiddenColumnIndicatorHeaderWidth.asInstanceOf[js.Any])
+    if (hiddenColumnIndicatorTooltipText != null) __obj.updateDynamic("hiddenColumnIndicatorTooltipText")(hiddenColumnIndicatorTooltipText)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (multiColumnHiding != null) __obj.updateDynamic("multiColumnHiding")(multiColumnHiding)
+    __obj.asInstanceOf[IgTreeGridHiding]
+  }
+}
+

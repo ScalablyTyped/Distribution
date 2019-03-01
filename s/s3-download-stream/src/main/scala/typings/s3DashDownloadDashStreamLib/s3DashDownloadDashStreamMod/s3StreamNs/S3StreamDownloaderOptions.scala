@@ -12,3 +12,20 @@ trait S3StreamDownloaderOptions extends js.Object {
   var params: awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRequest
 }
 
+object S3StreamDownloaderOptions {
+  @scala.inline
+  def apply(
+    client: awsDashSdkLib.awsDashSdkMod.S3,
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRequest,
+    chunkSize: java.lang.String = null,
+    concurrency: scala.Int | scala.Double = null
+  ): S3StreamDownloaderOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("params")(params)
+    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize)
+    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    __obj.asInstanceOf[S3StreamDownloaderOptions]
+  }
+}
+

@@ -5,8 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ListDeleteOp extends js.Object {
+trait ListDeleteOp extends Op {
   var ld: js.Any
   var p: Path
+}
+
+object ListDeleteOp {
+  @scala.inline
+  def apply(ld: js.Any, p: Path): ListDeleteOp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ld")(ld)
+    __obj.updateDynamic("p")(p)
+    __obj.asInstanceOf[ListDeleteOp]
+  }
 }
 

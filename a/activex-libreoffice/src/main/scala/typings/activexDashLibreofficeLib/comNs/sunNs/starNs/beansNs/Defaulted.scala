@@ -23,3 +23,13 @@ trait Defaulted[T] extends js.Object {
   var Value: T
 }
 
+object Defaulted {
+  @scala.inline
+  def apply[T](IsDefaulted: scala.Boolean, Value: T): Defaulted[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IsDefaulted")(IsDefaulted)
+    __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Defaulted[T]]
+  }
+}
+

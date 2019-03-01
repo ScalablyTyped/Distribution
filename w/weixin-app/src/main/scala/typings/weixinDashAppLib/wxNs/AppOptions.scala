@@ -45,3 +45,24 @@ trait AppOptions extends js.Object {
   var onUnlaunch: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object AppOptions {
+  @scala.inline
+  def apply(
+    globalData: js.Object = null,
+    onError: js.Function1[/* msg */ java.lang.String, scala.Unit] = null,
+    onHide: js.Function0[scala.Unit] = null,
+    onLaunch: js.Function1[/* option */ LaunchOptions, scala.Unit] = null,
+    onShow: js.Function1[/* option */ LaunchOptions, scala.Unit] = null,
+    onUnlaunch: js.Function0[scala.Unit] = null
+  ): AppOptions = {
+    val __obj = js.Dynamic.literal()
+    if (globalData != null) __obj.updateDynamic("globalData")(globalData)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onLaunch != null) __obj.updateDynamic("onLaunch")(onLaunch)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onUnlaunch != null) __obj.updateDynamic("onUnlaunch")(onUnlaunch)
+    __obj.asInstanceOf[AppOptions]
+  }
+}
+

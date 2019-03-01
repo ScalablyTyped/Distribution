@@ -39,3 +39,26 @@ trait ConfigurationTemplateState extends js.Object {
   val solutionStackName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ConfigurationTemplateState {
+  @scala.inline
+  def apply(
+    application: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    environmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    settings: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameNamespaceResource]]
+    ] = null,
+    solutionStackName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ConfigurationTemplateState = {
+    val __obj = js.Dynamic.literal()
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (environmentId != null) __obj.updateDynamic("environmentId")(environmentId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (solutionStackName != null) __obj.updateDynamic("solutionStackName")(solutionStackName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConfigurationTemplateState]
+  }
+}
+

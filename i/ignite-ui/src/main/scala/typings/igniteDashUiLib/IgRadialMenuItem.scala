@@ -270,3 +270,119 @@ trait IgRadialMenuItem
   var wedgeSpan: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgRadialMenuItem {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgRadialMenuItem
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    autoRotateChildren: js.UndefOr[scala.Boolean] = js.undefined,
+    autoUpdateRecentItem: js.UndefOr[scala.Boolean] = js.undefined,
+    checkBehavior: java.lang.String = null,
+    checked: js.Any = null,
+    checkedHighlightBrush: java.lang.String = null,
+    childItemPlacement: java.lang.String = null,
+    click: js.Any = null,
+    closed: js.Any = null,
+    color: js.Any = null,
+    colorChanged: js.Any = null,
+    colorWellClick: js.Any = null,
+    foreground: java.lang.String = null,
+    groupName: java.lang.String = null,
+    header: js.Any = null,
+    highlightBrush: java.lang.String = null,
+    iconUri: java.lang.String = null,
+    innerAreaFill: java.lang.String = null,
+    innerAreaHotTrackFill: java.lang.String = null,
+    innerAreaHotTrackStroke: java.lang.String = null,
+    innerAreaStroke: java.lang.String = null,
+    innerAreaStrokeThickness: scala.Int | scala.Double = null,
+    isChecked: js.UndefOr[scala.Boolean] = js.undefined,
+    isEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isToolTipEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    opened: js.Any = null,
+    outerRingButtonFill: java.lang.String = null,
+    outerRingButtonForeground: java.lang.String = null,
+    outerRingButtonHotTrackFill: java.lang.String = null,
+    outerRingButtonHotTrackForeground: java.lang.String = null,
+    outerRingButtonHotTrackStroke: java.lang.String = null,
+    outerRingButtonStroke: java.lang.String = null,
+    outerRingButtonStrokeThickness: scala.Int | scala.Double = null,
+    pendingValue: js.Any = null,
+    pendingValueChanged: js.Any = null,
+    pendingValueNeedleBrush: java.lang.String = null,
+    recentItemName: java.lang.String = null,
+    reserveFirstSlice: js.UndefOr[scala.Boolean] = js.undefined,
+    smallIncrement: scala.Int | scala.Double = null,
+    tickBrush: java.lang.String = null,
+    ticks: js.Any = null,
+    toolTip: js.Any = null,
+    trackEndColor: js.Any = null,
+    trackStartColor: js.Any = null,
+    `type`: java.lang.String = null,
+    unchecked: js.Any = null,
+    value: scala.Int | scala.Double = null,
+    valueChanged: js.Any = null,
+    valueNeedleBrush: java.lang.String = null,
+    wedgeIndex: scala.Int | scala.Double = null,
+    wedgeSpan: scala.Int | scala.Double = null
+  ): IgRadialMenuItem = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(autoRotateChildren)) __obj.updateDynamic("autoRotateChildren")(autoRotateChildren)
+    if (!js.isUndefined(autoUpdateRecentItem)) __obj.updateDynamic("autoUpdateRecentItem")(autoUpdateRecentItem)
+    if (checkBehavior != null) __obj.updateDynamic("checkBehavior")(checkBehavior)
+    if (checked != null) __obj.updateDynamic("checked")(checked)
+    if (checkedHighlightBrush != null) __obj.updateDynamic("checkedHighlightBrush")(checkedHighlightBrush)
+    if (childItemPlacement != null) __obj.updateDynamic("childItemPlacement")(childItemPlacement)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (closed != null) __obj.updateDynamic("closed")(closed)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colorChanged != null) __obj.updateDynamic("colorChanged")(colorChanged)
+    if (colorWellClick != null) __obj.updateDynamic("colorWellClick")(colorWellClick)
+    if (foreground != null) __obj.updateDynamic("foreground")(foreground)
+    if (groupName != null) __obj.updateDynamic("groupName")(groupName)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (highlightBrush != null) __obj.updateDynamic("highlightBrush")(highlightBrush)
+    if (iconUri != null) __obj.updateDynamic("iconUri")(iconUri)
+    if (innerAreaFill != null) __obj.updateDynamic("innerAreaFill")(innerAreaFill)
+    if (innerAreaHotTrackFill != null) __obj.updateDynamic("innerAreaHotTrackFill")(innerAreaHotTrackFill)
+    if (innerAreaHotTrackStroke != null) __obj.updateDynamic("innerAreaHotTrackStroke")(innerAreaHotTrackStroke)
+    if (innerAreaStroke != null) __obj.updateDynamic("innerAreaStroke")(innerAreaStroke)
+    if (innerAreaStrokeThickness != null) __obj.updateDynamic("innerAreaStrokeThickness")(innerAreaStrokeThickness.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked)
+    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled)
+    if (!js.isUndefined(isToolTipEnabled)) __obj.updateDynamic("isToolTipEnabled")(isToolTipEnabled)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (opened != null) __obj.updateDynamic("opened")(opened)
+    if (outerRingButtonFill != null) __obj.updateDynamic("outerRingButtonFill")(outerRingButtonFill)
+    if (outerRingButtonForeground != null) __obj.updateDynamic("outerRingButtonForeground")(outerRingButtonForeground)
+    if (outerRingButtonHotTrackFill != null) __obj.updateDynamic("outerRingButtonHotTrackFill")(outerRingButtonHotTrackFill)
+    if (outerRingButtonHotTrackForeground != null) __obj.updateDynamic("outerRingButtonHotTrackForeground")(outerRingButtonHotTrackForeground)
+    if (outerRingButtonHotTrackStroke != null) __obj.updateDynamic("outerRingButtonHotTrackStroke")(outerRingButtonHotTrackStroke)
+    if (outerRingButtonStroke != null) __obj.updateDynamic("outerRingButtonStroke")(outerRingButtonStroke)
+    if (outerRingButtonStrokeThickness != null) __obj.updateDynamic("outerRingButtonStrokeThickness")(outerRingButtonStrokeThickness.asInstanceOf[js.Any])
+    if (pendingValue != null) __obj.updateDynamic("pendingValue")(pendingValue)
+    if (pendingValueChanged != null) __obj.updateDynamic("pendingValueChanged")(pendingValueChanged)
+    if (pendingValueNeedleBrush != null) __obj.updateDynamic("pendingValueNeedleBrush")(pendingValueNeedleBrush)
+    if (recentItemName != null) __obj.updateDynamic("recentItemName")(recentItemName)
+    if (!js.isUndefined(reserveFirstSlice)) __obj.updateDynamic("reserveFirstSlice")(reserveFirstSlice)
+    if (smallIncrement != null) __obj.updateDynamic("smallIncrement")(smallIncrement.asInstanceOf[js.Any])
+    if (tickBrush != null) __obj.updateDynamic("tickBrush")(tickBrush)
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (trackEndColor != null) __obj.updateDynamic("trackEndColor")(trackEndColor)
+    if (trackStartColor != null) __obj.updateDynamic("trackStartColor")(trackStartColor)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unchecked != null) __obj.updateDynamic("unchecked")(unchecked)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueChanged != null) __obj.updateDynamic("valueChanged")(valueChanged)
+    if (valueNeedleBrush != null) __obj.updateDynamic("valueNeedleBrush")(valueNeedleBrush)
+    if (wedgeIndex != null) __obj.updateDynamic("wedgeIndex")(wedgeIndex.asInstanceOf[js.Any])
+    if (wedgeSpan != null) __obj.updateDynamic("wedgeSpan")(wedgeSpan.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgRadialMenuItem]
+  }
+}
+

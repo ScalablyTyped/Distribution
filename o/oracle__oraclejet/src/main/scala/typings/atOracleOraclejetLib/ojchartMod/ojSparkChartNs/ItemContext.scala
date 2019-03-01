@@ -15,3 +15,24 @@ trait ItemContext extends js.Object {
   var value: scala.Double
 }
 
+object ItemContext {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String,
+    color: java.lang.String,
+    date: stdLib.Date,
+    high: scala.Double,
+    low: scala.Double,
+    value: scala.Double
+  ): ItemContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("borderColor")(borderColor)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("high")(high)
+    __obj.updateDynamic("low")(low)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ItemContext]
+  }
+}
+

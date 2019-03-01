@@ -19,3 +19,20 @@ trait FloatingConfig extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FloatingConfig {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    colorText: java.lang.String = null,
+    icon: java.lang.String = null,
+    text: java.lang.String = null
+  ): FloatingConfig = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colorText != null) __obj.updateDynamic("colorText")(colorText)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[FloatingConfig]
+  }
+}
+

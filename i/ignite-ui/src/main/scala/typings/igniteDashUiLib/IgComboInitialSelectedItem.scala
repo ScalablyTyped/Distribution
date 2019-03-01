@@ -22,3 +22,21 @@ trait IgComboInitialSelectedItem
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgComboInitialSelectedItem {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgComboInitialSelectedItem
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    index: scala.Int | scala.Double = null,
+    value: js.Any = null
+  ): IgComboInitialSelectedItem = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IgComboInitialSelectedItem]
+  }
+}
+

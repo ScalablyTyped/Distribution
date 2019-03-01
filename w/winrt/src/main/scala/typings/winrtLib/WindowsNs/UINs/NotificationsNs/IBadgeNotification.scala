@@ -10,3 +10,13 @@ trait IBadgeNotification extends js.Object {
   var expirationTime: stdLib.Date
 }
 
+object IBadgeNotification {
+  @scala.inline
+  def apply(content: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, expirationTime: stdLib.Date): IBadgeNotification = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("expirationTime")(expirationTime)
+    __obj.asInstanceOf[IBadgeNotification]
+  }
+}
+

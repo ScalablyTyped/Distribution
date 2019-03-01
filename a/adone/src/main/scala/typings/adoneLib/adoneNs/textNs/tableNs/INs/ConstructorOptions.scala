@@ -11,3 +11,13 @@ import scala.scalajs.js.annotation._
   var style: js.UndefOr[stdLib.Partial[StyleOptions]] = js.undefined
 }
 
+object ConstructorOptions {
+  @scala.inline
+  def apply(chars: stdLib.Partial[CharsOptions] = null, style: stdLib.Partial[StyleOptions] = null): ConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chars != null) __obj.updateDynamic("chars")(chars)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ConstructorOptions]
+  }
+}
+

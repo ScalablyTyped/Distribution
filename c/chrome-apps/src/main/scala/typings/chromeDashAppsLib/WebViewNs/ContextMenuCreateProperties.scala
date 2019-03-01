@@ -63,3 +63,39 @@ trait ContextMenuCreateProperties extends js.Object {
   ] = js.undefined
 }
 
+object ContextMenuCreateProperties {
+  @scala.inline
+  def apply(
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    contexts: js.Array[_] = null,
+    documentUrlPatterns: js.Array[_] = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    onclick: js.Function1[/* info */ js.Any, scala.Unit] = null,
+    parentId: chromeDashAppsLib.chromeNs.integer | java.lang.String = null,
+    targetUrlPatterns: js.Array[_] = null,
+    title: java.lang.String = null,
+    `type`: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_CHECKBOX, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHECKBOX[keyof chrome-apps.Anon_CHECKBOX] */ js.Any
+      ]
+    ] = null
+  ): ContextMenuCreateProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
+    if (documentUrlPatterns != null) __obj.updateDynamic("documentUrlPatterns")(documentUrlPatterns)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (targetUrlPatterns != null) __obj.updateDynamic("targetUrlPatterns")(targetUrlPatterns)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContextMenuCreateProperties]
+  }
+}
+

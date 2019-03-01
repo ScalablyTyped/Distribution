@@ -50,3 +50,38 @@ trait Window extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Window {
+  @scala.inline
+  def apply(
+    alwaysOnTop: scala.Boolean,
+    focused: scala.Boolean,
+    incognito: scala.Boolean,
+    height: scala.Int | scala.Double = null,
+    id: scala.Int | scala.Double = null,
+    left: scala.Int | scala.Double = null,
+    sessionId: java.lang.String = null,
+    state: WindowState = null,
+    tabs: js.Array[firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab] = null,
+    title: java.lang.String = null,
+    top: scala.Int | scala.Double = null,
+    `type`: WindowType = null,
+    width: scala.Int | scala.Double = null
+  ): Window = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alwaysOnTop")(alwaysOnTop)
+    __obj.updateDynamic("focused")(focused)
+    __obj.updateDynamic("incognito")(incognito)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (tabs != null) __obj.updateDynamic("tabs")(tabs)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Window]
+  }
+}
+

@@ -13,3 +13,13 @@ trait Anon_Pattern extends js.Object {
   var threshold: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Pattern {
+  @scala.inline
+  def apply(pattern: js.Array[java.lang.String] = null, threshold: js.Any = null): Anon_Pattern = {
+    val __obj = js.Dynamic.literal()
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold)
+    __obj.asInstanceOf[Anon_Pattern]
+  }
+}
+

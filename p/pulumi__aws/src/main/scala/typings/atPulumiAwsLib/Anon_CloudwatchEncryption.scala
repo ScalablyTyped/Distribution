@@ -11,3 +11,18 @@ trait Anon_CloudwatchEncryption extends js.Object {
   var s3Encryption: Anon_KmsKeyArn
 }
 
+object Anon_CloudwatchEncryption {
+  @scala.inline
+  def apply(
+    cloudwatchEncryption: Anon_CloudwatchEncryptionMode,
+    jobBookmarksEncryption: Anon_JobBookmarksEncryptionMode,
+    s3Encryption: Anon_KmsKeyArn
+  ): Anon_CloudwatchEncryption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cloudwatchEncryption")(cloudwatchEncryption)
+    __obj.updateDynamic("jobBookmarksEncryption")(jobBookmarksEncryption)
+    __obj.updateDynamic("s3Encryption")(s3Encryption)
+    __obj.asInstanceOf[Anon_CloudwatchEncryption]
+  }
+}
+

@@ -12,3 +12,14 @@ trait Message extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Message {
+  @scala.inline
+  def apply(binary: stdLib.Blob = null, buffer: stdLib.ArrayBuffer = null, text: java.lang.String = null): Message = {
+    val __obj = js.Dynamic.literal()
+    if (binary != null) __obj.updateDynamic("binary")(binary)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Message]
+  }
+}
+

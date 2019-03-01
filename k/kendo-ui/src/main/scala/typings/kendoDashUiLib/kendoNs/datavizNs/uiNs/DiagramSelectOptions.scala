@@ -9,3 +9,12 @@ trait DiagramSelectOptions extends js.Object {
   var addToSelection: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DiagramSelectOptions {
+  @scala.inline
+  def apply(addToSelection: js.UndefOr[scala.Boolean] = js.undefined): DiagramSelectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addToSelection)) __obj.updateDynamic("addToSelection")(addToSelection)
+    __obj.asInstanceOf[DiagramSelectOptions]
+  }
+}
+

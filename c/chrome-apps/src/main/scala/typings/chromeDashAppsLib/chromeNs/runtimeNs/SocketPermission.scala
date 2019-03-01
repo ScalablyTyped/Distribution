@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SocketPermission extends js.Object {
+trait SocketPermission extends Permission {
   /**
     * **Possible values includes:**
     * 'tcp-connect',
@@ -17,5 +17,14 @@ trait SocketPermission extends js.Object {
     * 'network-state'
     */
   var socket: js.Array[java.lang.String]
+}
+
+object SocketPermission {
+  @scala.inline
+  def apply(socket: js.Array[java.lang.String]): SocketPermission = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("socket")(socket)
+    __obj.asInstanceOf[SocketPermission]
+  }
 }
 

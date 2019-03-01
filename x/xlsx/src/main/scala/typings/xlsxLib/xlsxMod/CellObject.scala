@@ -33,3 +33,34 @@ trait CellObject extends js.Object {
   var z: js.UndefOr[NumberFormat] = js.undefined
 }
 
+object CellObject {
+  @scala.inline
+  def apply(
+    t: ExcelDataType,
+    F: java.lang.String = null,
+    c: js.Array[Comment] = null,
+    f: java.lang.String = null,
+    h: java.lang.String = null,
+    l: Hyperlink = null,
+    r: js.Any = null,
+    s: js.Any = null,
+    v: java.lang.String | scala.Double | scala.Boolean | stdLib.Date = null,
+    w: java.lang.String = null,
+    z: NumberFormat = null
+  ): CellObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("t")(t)
+    if (F != null) __obj.updateDynamic("F")(F)
+    if (c != null) __obj.updateDynamic("c")(c)
+    if (f != null) __obj.updateDynamic("f")(f)
+    if (h != null) __obj.updateDynamic("h")(h)
+    if (l != null) __obj.updateDynamic("l")(l)
+    if (r != null) __obj.updateDynamic("r")(r)
+    if (s != null) __obj.updateDynamic("s")(s)
+    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
+    if (w != null) __obj.updateDynamic("w")(w)
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CellObject]
+  }
+}
+

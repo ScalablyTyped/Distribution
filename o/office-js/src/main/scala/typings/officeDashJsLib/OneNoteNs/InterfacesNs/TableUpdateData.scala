@@ -16,3 +16,12 @@ trait TableUpdateData extends js.Object {
   var borderVisible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableUpdateData {
+  @scala.inline
+  def apply(borderVisible: js.UndefOr[scala.Boolean] = js.undefined): TableUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible)
+    __obj.asInstanceOf[TableUpdateData]
+  }
+}
+

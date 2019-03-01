@@ -17,3 +17,18 @@ trait Anon_Date extends js.Object {
   var timeZone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Date {
+  @scala.inline
+  def apply(
+    date: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.date = null,
+    dateTime: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.datetime = null,
+    timeZone: java.lang.String = null
+  ): Anon_Date = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    __obj.asInstanceOf[Anon_Date]
+  }
+}
+

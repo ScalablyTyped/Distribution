@@ -11,3 +11,18 @@ trait PortMapping extends js.Object {
   var protocol: js.UndefOr[Protocol] = js.undefined
 }
 
+object PortMapping {
+  @scala.inline
+  def apply(
+    containerPort: scala.Int | scala.Double = null,
+    hostPort: scala.Int | scala.Double = null,
+    protocol: Protocol = null
+  ): PortMapping = {
+    val __obj = js.Dynamic.literal()
+    if (containerPort != null) __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
+    if (hostPort != null) __obj.updateDynamic("hostPort")(hostPort.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    __obj.asInstanceOf[PortMapping]
+  }
+}
+

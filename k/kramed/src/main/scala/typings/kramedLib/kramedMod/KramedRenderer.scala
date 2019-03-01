@@ -27,3 +27,50 @@ trait KramedRenderer extends js.Object {
   def text(text: java.lang.String): java.lang.String
 }
 
+object KramedRenderer {
+  @scala.inline
+  def apply(
+    blockquote: js.Function1[java.lang.String, java.lang.String],
+    br: js.Function0[java.lang.String],
+    code: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    codespan: js.Function1[java.lang.String, java.lang.String],
+    del: js.Function1[java.lang.String, java.lang.String],
+    em: js.Function1[java.lang.String, java.lang.String],
+    heading: js.Function3[java.lang.String, scala.Double, java.lang.String, java.lang.String],
+    hr: js.Function0[java.lang.String],
+    html: js.Function1[java.lang.String, java.lang.String],
+    image: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
+    link: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
+    list: js.Function2[java.lang.String, scala.Boolean, java.lang.String],
+    listitem: js.Function1[java.lang.String, java.lang.String],
+    paragraph: js.Function1[java.lang.String, java.lang.String],
+    strong: js.Function1[java.lang.String, java.lang.String],
+    table: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    tablecell: js.Function2[java.lang.String, kramedLib.Anon_Align, java.lang.String],
+    tablerow: js.Function1[java.lang.String, java.lang.String],
+    text: js.Function1[java.lang.String, java.lang.String]
+  ): KramedRenderer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blockquote")(blockquote)
+    __obj.updateDynamic("br")(br)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("codespan")(codespan)
+    __obj.updateDynamic("del")(del)
+    __obj.updateDynamic("em")(em)
+    __obj.updateDynamic("heading")(heading)
+    __obj.updateDynamic("hr")(hr)
+    __obj.updateDynamic("html")(html)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("listitem")(listitem)
+    __obj.updateDynamic("paragraph")(paragraph)
+    __obj.updateDynamic("strong")(strong)
+    __obj.updateDynamic("table")(table)
+    __obj.updateDynamic("tablecell")(tablecell)
+    __obj.updateDynamic("tablerow")(tablerow)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[KramedRenderer]
+  }
+}
+

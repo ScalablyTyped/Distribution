@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object emberDashTestingDashHelpersLibStrings {
   @js.native
-  sealed trait keydown extends js.Object
+  sealed trait keydown extends KeyEventType
   
   @js.native
-  sealed trait keypress extends js.Object
+  sealed trait keypress extends KeyEventType
   
   @js.native
-  sealed trait keyup extends js.Object
+  sealed trait keyup extends KeyEventType
   
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]

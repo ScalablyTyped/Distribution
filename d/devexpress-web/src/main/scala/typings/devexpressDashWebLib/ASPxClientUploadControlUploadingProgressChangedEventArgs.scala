@@ -51,3 +51,28 @@ trait ASPxClientUploadControlUploadingProgressChangedEventArgs extends ASPxClien
   var uploadedContentLength: scala.Double
 }
 
+object ASPxClientUploadControlUploadingProgressChangedEventArgs {
+  @scala.inline
+  def apply(
+    currentFileContentLength: scala.Double,
+    currentFileName: java.lang.String,
+    currentFileProgress: scala.Double,
+    currentFileUploadedContentLength: scala.Double,
+    fileCount: scala.Double,
+    progress: scala.Double,
+    totalContentLength: scala.Double,
+    uploadedContentLength: scala.Double
+  ): ASPxClientUploadControlUploadingProgressChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentFileContentLength")(currentFileContentLength)
+    __obj.updateDynamic("currentFileName")(currentFileName)
+    __obj.updateDynamic("currentFileProgress")(currentFileProgress)
+    __obj.updateDynamic("currentFileUploadedContentLength")(currentFileUploadedContentLength)
+    __obj.updateDynamic("fileCount")(fileCount)
+    __obj.updateDynamic("progress")(progress)
+    __obj.updateDynamic("totalContentLength")(totalContentLength)
+    __obj.updateDynamic("uploadedContentLength")(uploadedContentLength)
+    __obj.asInstanceOf[ASPxClientUploadControlUploadingProgressChangedEventArgs]
+  }
+}
+

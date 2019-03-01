@@ -115,3 +115,53 @@ trait Options extends js.Object {
   var warningClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allowOverMax: js.UndefOr[scala.Boolean] = js.undefined,
+    alwaysShow: js.UndefOr[scala.Boolean] = js.undefined,
+    appendToParent: js.UndefOr[scala.Boolean] = js.undefined,
+    customMaxAttribute: java.lang.String = null,
+    limitReachedClass: java.lang.String = null,
+    message: java.lang.String | (js.Function2[/* currentText */ java.lang.String, /* maxLength */ stdLib.Number, java.lang.String]) = null,
+    placement: java.lang.String | PlacementOptions | (js.Function3[
+      /* currentInput */ bootstrapDashMaxlengthLib.JQuery, 
+      /* maxLengthIndicator */ bootstrapDashMaxlengthLib.JQuery, 
+      /* currentInputPosition */ PositionParam, 
+      scala.Unit
+    ]) = null,
+    postText: java.lang.String = null,
+    preText: java.lang.String = null,
+    separator: java.lang.String = null,
+    showCharsTyped: js.UndefOr[scala.Boolean] = js.undefined,
+    showMaxLength: js.UndefOr[scala.Boolean] = js.undefined,
+    showOnReady: js.UndefOr[scala.Boolean] = js.undefined,
+    threshold: stdLib.Number = null,
+    twoCharLinebreak: js.UndefOr[scala.Boolean] = js.undefined,
+    utf8: js.UndefOr[scala.Boolean] = js.undefined,
+    validate: js.UndefOr[scala.Boolean] = js.undefined,
+    warningClass: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowOverMax)) __obj.updateDynamic("allowOverMax")(allowOverMax)
+    if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow)
+    if (!js.isUndefined(appendToParent)) __obj.updateDynamic("appendToParent")(appendToParent)
+    if (customMaxAttribute != null) __obj.updateDynamic("customMaxAttribute")(customMaxAttribute)
+    if (limitReachedClass != null) __obj.updateDynamic("limitReachedClass")(limitReachedClass)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (postText != null) __obj.updateDynamic("postText")(postText)
+    if (preText != null) __obj.updateDynamic("preText")(preText)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(showCharsTyped)) __obj.updateDynamic("showCharsTyped")(showCharsTyped)
+    if (!js.isUndefined(showMaxLength)) __obj.updateDynamic("showMaxLength")(showMaxLength)
+    if (!js.isUndefined(showOnReady)) __obj.updateDynamic("showOnReady")(showOnReady)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold)
+    if (!js.isUndefined(twoCharLinebreak)) __obj.updateDynamic("twoCharLinebreak")(twoCharLinebreak)
+    if (!js.isUndefined(utf8)) __obj.updateDynamic("utf8")(utf8)
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    if (warningClass != null) __obj.updateDynamic("warningClass")(warningClass)
+    __obj.asInstanceOf[Options]
+  }
+}
+

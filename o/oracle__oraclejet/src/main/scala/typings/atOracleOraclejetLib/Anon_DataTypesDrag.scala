@@ -14,3 +14,24 @@ trait Anon_DataTypesDrag extends js.Object {
   def linkStyle(param0: js.Object): scala.Unit
 }
 
+object Anon_DataTypesDrag {
+  @scala.inline
+  def apply(
+    dataTypes: java.lang.String | js.Array[java.lang.String],
+    drag: js.Function1[stdLib.Event, scala.Unit],
+    dragEnd: js.Function1[stdLib.Event, scala.Unit],
+    dragStart: js.Function2[stdLib.Event, js.Object, scala.Unit],
+    linkStyle: js.Function1[js.Object, scala.Unit],
+    selector: java.lang.String
+  ): Anon_DataTypesDrag = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataTypes")(dataTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("drag")(drag)
+    __obj.updateDynamic("dragEnd")(dragEnd)
+    __obj.updateDynamic("dragStart")(dragStart)
+    __obj.updateDynamic("linkStyle")(linkStyle)
+    __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[Anon_DataTypesDrag]
+  }
+}
+

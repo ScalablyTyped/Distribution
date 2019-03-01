@@ -19,3 +19,13 @@ trait ITableViewCtlSaveInfo extends js.Object {
   var qSourceView: ITableViewSaveInfo
 }
 
+object ITableViewCtlSaveInfo {
+  @scala.inline
+  def apply(qInternalView: ITableViewSaveInfo, qSourceView: ITableViewSaveInfo): ITableViewCtlSaveInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qInternalView")(qInternalView)
+    __obj.updateDynamic("qSourceView")(qSourceView)
+    __obj.asInstanceOf[ITableViewCtlSaveInfo]
+  }
+}
+

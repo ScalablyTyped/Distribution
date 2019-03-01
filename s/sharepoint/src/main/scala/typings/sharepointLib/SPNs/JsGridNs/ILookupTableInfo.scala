@@ -14,3 +14,22 @@ trait ILookupTableInfo extends js.Object {
   var showText: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ILookupTableInfo {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    lookup: js.Array[ILookupInfo],
+    limitToList: js.UndefOr[scala.Boolean] = js.undefined,
+    showImage: js.UndefOr[scala.Boolean] = js.undefined,
+    showText: js.UndefOr[scala.Boolean] = js.undefined
+  ): ILookupTableInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("lookup")(lookup)
+    if (!js.isUndefined(limitToList)) __obj.updateDynamic("limitToList")(limitToList)
+    if (!js.isUndefined(showImage)) __obj.updateDynamic("showImage")(showImage)
+    if (!js.isUndefined(showText)) __obj.updateDynamic("showText")(showText)
+    __obj.asInstanceOf[ILookupTableInfo]
+  }
+}
+

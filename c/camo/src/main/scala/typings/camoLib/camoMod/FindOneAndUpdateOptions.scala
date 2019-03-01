@@ -14,3 +14,12 @@ trait FindOneAndUpdateOptions extends js.Object {
   var upsert: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FindOneAndUpdateOptions {
+  @scala.inline
+  def apply(upsert: js.UndefOr[scala.Boolean] = js.undefined): FindOneAndUpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert)
+    __obj.asInstanceOf[FindOneAndUpdateOptions]
+  }
+}
+

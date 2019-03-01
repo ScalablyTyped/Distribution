@@ -17,3 +17,18 @@ trait ToolbarSettingsCustomToolbarItem extends js.Object {
   var tooltipText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ToolbarSettingsCustomToolbarItem {
+  @scala.inline
+  def apply(
+    templateID: java.lang.String = null,
+    text: java.lang.String = null,
+    tooltipText: java.lang.String = null
+  ): ToolbarSettingsCustomToolbarItem = {
+    val __obj = js.Dynamic.literal()
+    if (templateID != null) __obj.updateDynamic("templateID")(templateID)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (tooltipText != null) __obj.updateDynamic("tooltipText")(tooltipText)
+    __obj.asInstanceOf[ToolbarSettingsCustomToolbarItem]
+  }
+}
+

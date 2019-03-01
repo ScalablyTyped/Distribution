@@ -14,3 +14,24 @@ trait TransformObject extends js.Object {
   var source: java.lang.String
 }
 
+object TransformObject {
+  @scala.inline
+  def apply(
+    deps: org.scalablytyped.runtime.StringDictionary[js.Any],
+    entry: scala.Boolean,
+    expose: java.lang.String,
+    file: java.lang.String,
+    id: java.lang.String,
+    source: java.lang.String
+  ): TransformObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deps")(deps)
+    __obj.updateDynamic("entry")(entry)
+    __obj.updateDynamic("expose")(expose)
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[TransformObject]
+  }
+}
+

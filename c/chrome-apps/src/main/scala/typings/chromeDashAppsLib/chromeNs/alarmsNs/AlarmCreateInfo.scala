@@ -14,3 +14,18 @@ trait AlarmCreateInfo extends js.Object {
   var when: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object AlarmCreateInfo {
+  @scala.inline
+  def apply(
+    delayInMinutes: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    periodInMinutes: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    when: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): AlarmCreateInfo = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(delayInMinutes)) __obj.updateDynamic("delayInMinutes")(delayInMinutes)
+    if (!js.isUndefined(periodInMinutes)) __obj.updateDynamic("periodInMinutes")(periodInMinutes)
+    if (!js.isUndefined(when)) __obj.updateDynamic("when")(when)
+    __obj.asInstanceOf[AlarmCreateInfo]
+  }
+}
+

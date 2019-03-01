@@ -12,3 +12,12 @@ trait CommandManager extends js.Object {
   var commands: js.UndefOr[CommandManagerCommands] = js.undefined
 }
 
+object CommandManager {
+  @scala.inline
+  def apply(commands: CommandManagerCommands = null): CommandManager = {
+    val __obj = js.Dynamic.literal()
+    if (commands != null) __obj.updateDynamic("commands")(commands)
+    __obj.asInstanceOf[CommandManager]
+  }
+}
+

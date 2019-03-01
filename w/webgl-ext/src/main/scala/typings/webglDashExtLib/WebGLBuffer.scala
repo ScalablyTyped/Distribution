@@ -9,3 +9,12 @@ trait WebGLBuffer extends js.Object {
   val __WebGLBuffer: scala.Unit
 }
 
+object WebGLBuffer {
+  @scala.inline
+  def apply(__WebGLBuffer: scala.Unit): WebGLBuffer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("__WebGLBuffer")(__WebGLBuffer)
+    __obj.asInstanceOf[WebGLBuffer]
+  }
+}
+

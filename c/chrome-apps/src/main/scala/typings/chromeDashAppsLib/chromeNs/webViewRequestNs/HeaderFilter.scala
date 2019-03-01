@@ -24,3 +24,28 @@ trait HeaderFilter extends js.Object {
   var valueSuffix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HeaderFilter {
+  @scala.inline
+  def apply(
+    nameContains: java.lang.String | js.Array[java.lang.String] = null,
+    nameEquals: java.lang.String = null,
+    namePrefix: java.lang.String = null,
+    nameSuffix: java.lang.String = null,
+    valueContains: java.lang.String | js.Array[java.lang.String] = null,
+    valueEquals: java.lang.String = null,
+    valuePrefix: java.lang.String = null,
+    valueSuffix: java.lang.String = null
+  ): HeaderFilter = {
+    val __obj = js.Dynamic.literal()
+    if (nameContains != null) __obj.updateDynamic("nameContains")(nameContains.asInstanceOf[js.Any])
+    if (nameEquals != null) __obj.updateDynamic("nameEquals")(nameEquals)
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix)
+    if (nameSuffix != null) __obj.updateDynamic("nameSuffix")(nameSuffix)
+    if (valueContains != null) __obj.updateDynamic("valueContains")(valueContains.asInstanceOf[js.Any])
+    if (valueEquals != null) __obj.updateDynamic("valueEquals")(valueEquals)
+    if (valuePrefix != null) __obj.updateDynamic("valuePrefix")(valuePrefix)
+    if (valueSuffix != null) __obj.updateDynamic("valueSuffix")(valueSuffix)
+    __obj.asInstanceOf[HeaderFilter]
+  }
+}
+

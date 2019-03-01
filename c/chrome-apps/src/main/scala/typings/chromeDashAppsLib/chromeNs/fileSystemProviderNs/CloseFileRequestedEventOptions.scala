@@ -11,3 +11,18 @@ trait CloseFileRequestedEventOptions
   var openRequestId: chromeDashAppsLib.chromeNs.integer
 }
 
+object CloseFileRequestedEventOptions {
+  @scala.inline
+  def apply(
+    fileSystemId: java.lang.String,
+    openRequestId: chromeDashAppsLib.chromeNs.integer,
+    requestId: chromeDashAppsLib.chromeNs.integer
+  ): CloseFileRequestedEventOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("openRequestId")(openRequestId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.asInstanceOf[CloseFileRequestedEventOptions]
+  }
+}
+

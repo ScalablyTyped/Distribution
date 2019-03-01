@@ -11,3 +11,18 @@ trait RetentionSettings extends js.Object {
   var maximumEnvironmentRetentionPolicy: EnvironmentRetentionPolicy
 }
 
+object RetentionSettings {
+  @scala.inline
+  def apply(
+    daysToKeepDeletedReleases: scala.Double,
+    defaultEnvironmentRetentionPolicy: EnvironmentRetentionPolicy,
+    maximumEnvironmentRetentionPolicy: EnvironmentRetentionPolicy
+  ): RetentionSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("daysToKeepDeletedReleases")(daysToKeepDeletedReleases)
+    __obj.updateDynamic("defaultEnvironmentRetentionPolicy")(defaultEnvironmentRetentionPolicy)
+    __obj.updateDynamic("maximumEnvironmentRetentionPolicy")(maximumEnvironmentRetentionPolicy)
+    __obj.asInstanceOf[RetentionSettings]
+  }
+}
+

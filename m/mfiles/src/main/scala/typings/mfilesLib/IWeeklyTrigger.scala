@@ -10,3 +10,13 @@ trait IWeeklyTrigger extends js.Object {
   var WeeksInterval: scala.Double
 }
 
+object IWeeklyTrigger {
+  @scala.inline
+  def apply(DaysOfTheWeek: mfilesLib.MFilesNs.MFTriggerWeekDay, WeeksInterval: scala.Double): IWeeklyTrigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DaysOfTheWeek")(DaysOfTheWeek)
+    __obj.updateDynamic("WeeksInterval")(WeeksInterval)
+    __obj.asInstanceOf[IWeeklyTrigger]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Anon_CENTER extends js.Object {
   var RIGHT: reactDashMdLib.reactDashMdLibStrings.right
 }
 
+object Anon_CENTER {
+  @scala.inline
+  def apply(
+    CENTER: reactDashMdLib.reactDashMdLibStrings.center,
+    INNER_LEFT: reactDashMdLib.reactDashMdLibStrings.`inner left`,
+    INNER_RIGHT: reactDashMdLib.reactDashMdLibStrings.`inner right`,
+    LEFT: reactDashMdLib.reactDashMdLibStrings.left,
+    RIGHT: reactDashMdLib.reactDashMdLibStrings.right
+  ): Anon_CENTER = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CENTER")(CENTER)
+    __obj.updateDynamic("INNER_LEFT")(INNER_LEFT)
+    __obj.updateDynamic("INNER_RIGHT")(INNER_RIGHT)
+    __obj.updateDynamic("LEFT")(LEFT)
+    __obj.updateDynamic("RIGHT")(RIGHT)
+    __obj.asInstanceOf[Anon_CENTER]
+  }
+}
+

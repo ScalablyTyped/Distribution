@@ -10,3 +10,13 @@ trait Anon_CancelMoveTo extends js.Object {
   val MoveTo: activexDashOutlookLib.OutlookNs.Folder
 }
 
+object Anon_CancelMoveTo {
+  @scala.inline
+  def apply(Cancel: scala.Boolean, MoveTo: activexDashOutlookLib.OutlookNs.Folder): Anon_CancelMoveTo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("MoveTo")(MoveTo)
+    __obj.asInstanceOf[Anon_CancelMoveTo]
+  }
+}
+

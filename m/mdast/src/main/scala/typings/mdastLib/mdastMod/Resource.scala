@@ -10,3 +10,13 @@ trait Resource extends js.Object {
   var url: java.lang.String
 }
 
+object Resource {
+  @scala.inline
+  def apply(url: java.lang.String, title: java.lang.String = null): Resource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Resource]
+  }
+}
+

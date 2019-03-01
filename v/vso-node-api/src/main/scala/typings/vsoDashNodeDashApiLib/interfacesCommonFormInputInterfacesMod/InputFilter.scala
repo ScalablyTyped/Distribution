@@ -12,3 +12,12 @@ trait InputFilter extends js.Object {
   var conditions: js.Array[InputFilterCondition]
 }
 
+object InputFilter {
+  @scala.inline
+  def apply(conditions: js.Array[InputFilterCondition]): InputFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.asInstanceOf[InputFilter]
+  }
+}
+

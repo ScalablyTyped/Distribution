@@ -9,3 +9,12 @@ trait TypeContainer extends js.Object {
   var `type`: TypeObject
 }
 
+object TypeContainer {
+  @scala.inline
+  def apply(`type`: TypeObject): TypeContainer = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[TypeContainer]
+  }
+}
+

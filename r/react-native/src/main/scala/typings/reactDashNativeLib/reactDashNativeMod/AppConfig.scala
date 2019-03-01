@@ -11,3 +11,14 @@ trait AppConfig extends js.Object {
   var run: js.UndefOr[Runnable] = js.undefined
 }
 
+object AppConfig {
+  @scala.inline
+  def apply(appKey: java.lang.String, component: ComponentProvider = null, run: Runnable = null): AppConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appKey")(appKey)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (run != null) __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[AppConfig]
+  }
+}
+

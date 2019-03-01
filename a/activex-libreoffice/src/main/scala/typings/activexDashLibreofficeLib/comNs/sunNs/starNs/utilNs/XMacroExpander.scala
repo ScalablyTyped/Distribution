@@ -20,3 +20,20 @@ trait XMacroExpander
   def expandMacros(exp: java.lang.String): java.lang.String
 }
 
+object XMacroExpander {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    expandMacros: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMacroExpander = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("expandMacros")(expandMacros)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMacroExpander]
+  }
+}
+

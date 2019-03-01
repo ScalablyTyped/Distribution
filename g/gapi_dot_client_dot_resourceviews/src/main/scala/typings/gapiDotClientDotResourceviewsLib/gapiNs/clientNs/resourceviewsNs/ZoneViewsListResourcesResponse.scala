@@ -14,3 +14,18 @@ trait ZoneViewsListResourcesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ZoneViewsListResourcesResponse {
+  @scala.inline
+  def apply(
+    items: js.Array[ListResourceResponseItem] = null,
+    network: java.lang.String = null,
+    nextPageToken: java.lang.String = null
+  ): ZoneViewsListResourcesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ZoneViewsListResourcesResponse]
+  }
+}
+

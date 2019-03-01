@@ -31,3 +31,24 @@ trait NameClashResolveRequest
   var TargetFolderURL: java.lang.String
 }
 
+object NameClashResolveRequest {
+  @scala.inline
+  def apply(
+    ClashingName: java.lang.String,
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    ProposedNewName: java.lang.String,
+    TargetFolderURL: java.lang.String
+  ): NameClashResolveRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ClashingName")(ClashingName)
+    __obj.updateDynamic("Classification")(Classification)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("ProposedNewName")(ProposedNewName)
+    __obj.updateDynamic("TargetFolderURL")(TargetFolderURL)
+    __obj.asInstanceOf[NameClashResolveRequest]
+  }
+}
+

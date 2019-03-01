@@ -16,3 +16,20 @@ trait OrdersRefundRequest extends js.Object {
   var reasonText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OrdersRefundRequest {
+  @scala.inline
+  def apply(
+    amount: Price = null,
+    operationId: java.lang.String = null,
+    reason: java.lang.String = null,
+    reasonText: java.lang.String = null
+  ): OrdersRefundRequest = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText)
+    __obj.asInstanceOf[OrdersRefundRequest]
+  }
+}
+

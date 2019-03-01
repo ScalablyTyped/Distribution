@@ -19,3 +19,31 @@ trait FilterDialog
   ): scala.Unit
 }
 
+object FilterDialog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createDefault: js.Function0[scala.Unit],
+    createWithQuery: js.Function3[
+      XSingleSelectQueryComposer, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      scala.Unit
+    ],
+    execute: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): FilterDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createDefault")(createDefault)
+    __obj.updateDynamic("createWithQuery")(createWithQuery)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.asInstanceOf[FilterDialog]
+  }
+}
+

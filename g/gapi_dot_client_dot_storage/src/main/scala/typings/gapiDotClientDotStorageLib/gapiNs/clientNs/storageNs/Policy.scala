@@ -20,3 +20,20 @@ trait Policy extends js.Object {
   var resourceId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Policy {
+  @scala.inline
+  def apply(
+    bindings: js.Array[gapiDotClientDotStorageLib.Anon_Condition] = null,
+    etag: java.lang.String = null,
+    kind: java.lang.String = null,
+    resourceId: java.lang.String = null
+  ): Policy = {
+    val __obj = js.Dynamic.literal()
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
+    __obj.asInstanceOf[Policy]
+  }
+}
+

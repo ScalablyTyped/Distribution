@@ -28,3 +28,18 @@ trait PeeringConnectionOptionsState extends js.Object {
   val vpcPeeringConnectionId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object PeeringConnectionOptionsState {
+  @scala.inline
+  def apply(
+    accepter: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    requester: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
+    vpcPeeringConnectionId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): PeeringConnectionOptionsState = {
+    val __obj = js.Dynamic.literal()
+    if (accepter != null) __obj.updateDynamic("accepter")(accepter.asInstanceOf[js.Any])
+    if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
+    if (vpcPeeringConnectionId != null) __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PeeringConnectionOptionsState]
+  }
+}
+

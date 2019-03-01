@@ -18,3 +18,30 @@ trait Anon_Array extends js.Object {
   var undefined: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<undefined> */ js.Any
 }
 
+object Anon_Array {
+  @scala.inline
+  def apply(
+    Date: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<Date> */ js.Any,
+    RegExp: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<RegExp> */ js.Any,
+    array: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<Array<any>> */ js.Any,
+    boolean: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<boolean> */ js.Any,
+    function: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<Function> */ js.Any,
+    `null`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<null> */ js.Any,
+    number: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<number> */ js.Any,
+    `object`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<{[key: string] : any}> */ js.Any,
+    string: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<string> */ js.Any,
+    undefined: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_ast-types/lib/types.Type<undefined> */ js.Any
+  ): Anon_Array = {
+    val __obj = js.Dynamic.literal(`null` = `null`, `object` = `object`)
+    __obj.updateDynamic("Date")(Date)
+    __obj.updateDynamic("RegExp")(RegExp)
+    __obj.updateDynamic("array")(array)
+    __obj.updateDynamic("boolean")(boolean)
+    __obj.updateDynamic("function")(function)
+    __obj.updateDynamic("number")(number)
+    __obj.updateDynamic("string")(string)
+    __obj.updateDynamic("undefined")(undefined)
+    __obj.asInstanceOf[Anon_Array]
+  }
+}
+

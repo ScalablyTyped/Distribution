@@ -16,3 +16,20 @@ trait ContainOptions extends js.Object {
   var part: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ContainOptions {
+  @scala.inline
+  def apply(
+    deep: js.UndefOr[scala.Boolean] = js.undefined,
+    once: js.UndefOr[scala.Boolean] = js.undefined,
+    only: js.UndefOr[scala.Boolean] = js.undefined,
+    part: js.UndefOr[scala.Boolean] = js.undefined
+  ): ContainOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep)
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only)
+    if (!js.isUndefined(part)) __obj.updateDynamic("part")(part)
+    __obj.asInstanceOf[ContainOptions]
+  }
+}
+

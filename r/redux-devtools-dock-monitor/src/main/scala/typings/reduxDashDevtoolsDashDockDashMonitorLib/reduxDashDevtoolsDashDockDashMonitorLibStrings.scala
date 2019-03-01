@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 object reduxDashDevtoolsDashDockDashMonitorLibStrings {
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom extends DockPosition
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left extends DockPosition
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right extends DockPosition
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top extends DockPosition
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

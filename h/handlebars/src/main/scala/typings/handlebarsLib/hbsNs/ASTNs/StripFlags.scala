@@ -10,3 +10,13 @@ trait StripFlags extends js.Object {
   var open: scala.Boolean
 }
 
+object StripFlags {
+  @scala.inline
+  def apply(close: scala.Boolean, open: scala.Boolean): StripFlags = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("open")(open)
+    __obj.asInstanceOf[StripFlags]
+  }
+}
+

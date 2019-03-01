@@ -26,3 +26,30 @@ trait AssociationSession extends js.Object {
   var websiteUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AssociationSession {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    productCodes: js.Array[java.lang.String] = null,
+    redirectUrl: java.lang.String = null,
+    status: java.lang.String = null,
+    userLocale: java.lang.String = null,
+    websiteLocale: java.lang.String = null,
+    websiteUrl: java.lang.String = null
+  ): AssociationSession = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (productCodes != null) __obj.updateDynamic("productCodes")(productCodes)
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (userLocale != null) __obj.updateDynamic("userLocale")(userLocale)
+    if (websiteLocale != null) __obj.updateDynamic("websiteLocale")(websiteLocale)
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    __obj.asInstanceOf[AssociationSession]
+  }
+}
+

@@ -47,3 +47,26 @@ trait AndroidVersion extends js.Object {
   var versionString: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AndroidVersion {
+  @scala.inline
+  def apply(
+    apiLevel: scala.Int | scala.Double = null,
+    codeName: java.lang.String = null,
+    distribution: Distribution = null,
+    id: java.lang.String = null,
+    releaseDate: Date = null,
+    tags: js.Array[java.lang.String] = null,
+    versionString: java.lang.String = null
+  ): AndroidVersion = {
+    val __obj = js.Dynamic.literal()
+    if (apiLevel != null) __obj.updateDynamic("apiLevel")(apiLevel.asInstanceOf[js.Any])
+    if (codeName != null) __obj.updateDynamic("codeName")(codeName)
+    if (distribution != null) __obj.updateDynamic("distribution")(distribution)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (releaseDate != null) __obj.updateDynamic("releaseDate")(releaseDate)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (versionString != null) __obj.updateDynamic("versionString")(versionString)
+    __obj.asInstanceOf[AndroidVersion]
+  }
+}
+

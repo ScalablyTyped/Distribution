@@ -35,3 +35,36 @@ trait Comment extends js.Object {
   var resolved: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Comment {
+  @scala.inline
+  def apply(
+    anchor: java.lang.String = null,
+    author: User = null,
+    content: java.lang.String = null,
+    createdTime: java.lang.String = null,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    htmlContent: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    modifiedTime: java.lang.String = null,
+    quotedFileContent: gapiDotClientDotDriveLib.Anon_MimeType = null,
+    replies: js.Array[Reply] = null,
+    resolved: js.UndefOr[scala.Boolean] = js.undefined
+  ): Comment = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime)
+    if (quotedFileContent != null) __obj.updateDynamic("quotedFileContent")(quotedFileContent)
+    if (replies != null) __obj.updateDynamic("replies")(replies)
+    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved)
+    __obj.asInstanceOf[Comment]
+  }
+}
+

@@ -17,3 +17,13 @@ trait ScrubberItem extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ScrubberItem {
+  @scala.inline
+  def apply(icon: NativeImage = null, label: java.lang.String = null): ScrubberItem = {
+    val __obj = js.Dynamic.literal()
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[ScrubberItem]
+  }
+}
+

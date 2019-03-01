@@ -544,3 +544,183 @@ trait Options extends js.Object {
   var unmaskAsNumber: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    alias: java.lang.String = null,
+    allowMinus: js.UndefOr[scala.Boolean] = js.undefined,
+    alternatormarker: java.lang.String = null,
+    autoGroup: js.UndefOr[scala.Boolean] = js.undefined,
+    autoUnmask: js.UndefOr[scala.Boolean] = js.undefined,
+    casing: Casing = null,
+    clearIncomplete: js.UndefOr[scala.Boolean] = js.undefined,
+    clearMaskOnLostFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    colorMask: js.UndefOr[scala.Boolean] = js.undefined,
+    decimalProtect: js.UndefOr[scala.Boolean] = js.undefined,
+    digits: java.lang.String = null,
+    digitsOptional: js.UndefOr[scala.Boolean] = js.undefined,
+    disablePredictiveText: js.UndefOr[scala.Boolean] = js.undefined,
+    enforceDigitsOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
+    escapeChar: java.lang.String = null,
+    greedy: js.UndefOr[scala.Boolean] = js.undefined,
+    groupSeparator: java.lang.String = null,
+    groupSize: scala.Int | scala.Double = null,
+    groupmarker: Range = null,
+    ignorables: js.Array[scala.Double] = null,
+    importDataAttributes: js.UndefOr[scala.Boolean] = js.undefined,
+    inputFormat: java.lang.String = null,
+    inputType: inputmaskLib.inputmaskLibStrings.text | inputmaskLib.inputmaskLibStrings.number = null,
+    inputmode: InputMode = null,
+    insertMode: js.UndefOr[scala.Boolean] = js.undefined,
+    integerDigits: java.lang.String = null,
+    integerOptional: js.UndefOr[scala.Boolean] = js.undefined,
+    isComplete: js.Function2[/* buffer */ js.Array[java.lang.String], /* opts */ Options, scala.Boolean] = null,
+    jitMasking: js.UndefOr[scala.Boolean] = js.undefined,
+    keepStatic: js.UndefOr[scala.Boolean] = js.undefined,
+    mask: java.lang.String | js.Array[java.lang.String] | (js.Function1[Options, java.lang.String | js.Array[java.lang.String]]) = null,
+    max: java.lang.String = null,
+    min: java.lang.String = null,
+    negationSymbol: inputmaskLib.Anon_Back = null,
+    noValuePatching: js.UndefOr[scala.Boolean] = js.undefined,
+    nullable: js.UndefOr[scala.Boolean] = js.undefined,
+    numericInput: js.UndefOr[scala.Boolean] = js.undefined,
+    onBeforeMask: js.Function2[/* initialValue */ java.lang.String, /* opts */ Options, java.lang.String] = null,
+    onBeforePaste: js.Function2[/* pastedValue */ java.lang.String, /* opts */ Options, java.lang.String] = null,
+    onBeforeWrite: js.Function4[
+      /* event */ stdLib.KeyboardEvent, 
+      /* buffer */ js.Array[java.lang.String], 
+      /* caretPos */ scala.Double, 
+      /* opts */ Options, 
+      CommandObject
+    ] = null,
+    onKeyDown: js.Function4[
+      /* event */ stdLib.KeyboardEvent, 
+      /* buffer */ js.Array[java.lang.String], 
+      /* caretPos */ scala.Double, 
+      /* opts */ Options, 
+      scala.Unit
+    ] = null,
+    onKeyValidation: js.Function2[/* key */ scala.Double, /* result */ scala.Boolean, scala.Unit] = null,
+    onUnMask: js.Function2[
+      /* maskedValue */ java.lang.String, 
+      /* unmaskedValue */ java.lang.String, 
+      java.lang.String
+    ] = null,
+    oncleared: js.Function0[scala.Unit] = null,
+    oncomplete: js.Function0[scala.Unit] = null,
+    onincomplete: js.Function0[scala.Unit] = null,
+    optionalmarker: Range = null,
+    outputFormat: java.lang.String = null,
+    placeholder: java.lang.String = null,
+    positionCaretOnClick: PositionCaretOnClick = null,
+    positionCaretOnTab: js.UndefOr[scala.Boolean] = js.undefined,
+    postValidation: js.Function4[
+      /* buffer */ js.Array[java.lang.String], 
+      /* pos */ scala.Double, 
+      /* currentResult */ CommandObject, 
+      /* opts */ Options, 
+      scala.Boolean | CommandObject
+    ] = null,
+    preValidation: js.Function5[
+      /* buffer */ js.Array[java.lang.String], 
+      /* pos */ scala.Double, 
+      /* char */ java.lang.String, 
+      /* isSelection */ scala.Boolean, 
+      /* opts */ Options, 
+      scala.Boolean | CommandObject
+    ] = null,
+    prefix: java.lang.String = null,
+    quantifiermarker: Range = null,
+    radixPoint: java.lang.String = null,
+    regex: java.lang.String = null,
+    removeMaskOnSubmit: js.UndefOr[scala.Boolean] = js.undefined,
+    repeat: scala.Double | java.lang.String = null,
+    rightAlign: js.UndefOr[scala.Boolean] = js.undefined,
+    shiftPositions: js.UndefOr[scala.Boolean] = js.undefined,
+    showMaskOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    showMaskOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    skipOptionalPartCharacter: java.lang.String = null,
+    staticDefinitionSymbol: java.lang.String = null,
+    step: scala.Int | scala.Double = null,
+    suffix: java.lang.String = null,
+    supportsInputType: js.Array[java.lang.String] = null,
+    tabThrough: js.UndefOr[scala.Boolean] = js.undefined,
+    undoOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
+    unmaskAsNumber: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (!js.isUndefined(allowMinus)) __obj.updateDynamic("allowMinus")(allowMinus)
+    if (alternatormarker != null) __obj.updateDynamic("alternatormarker")(alternatormarker)
+    if (!js.isUndefined(autoGroup)) __obj.updateDynamic("autoGroup")(autoGroup)
+    if (!js.isUndefined(autoUnmask)) __obj.updateDynamic("autoUnmask")(autoUnmask)
+    if (casing != null) __obj.updateDynamic("casing")(casing)
+    if (!js.isUndefined(clearIncomplete)) __obj.updateDynamic("clearIncomplete")(clearIncomplete)
+    if (!js.isUndefined(clearMaskOnLostFocus)) __obj.updateDynamic("clearMaskOnLostFocus")(clearMaskOnLostFocus)
+    if (!js.isUndefined(colorMask)) __obj.updateDynamic("colorMask")(colorMask)
+    if (!js.isUndefined(decimalProtect)) __obj.updateDynamic("decimalProtect")(decimalProtect)
+    if (digits != null) __obj.updateDynamic("digits")(digits)
+    if (!js.isUndefined(digitsOptional)) __obj.updateDynamic("digitsOptional")(digitsOptional)
+    if (!js.isUndefined(disablePredictiveText)) __obj.updateDynamic("disablePredictiveText")(disablePredictiveText)
+    if (!js.isUndefined(enforceDigitsOnBlur)) __obj.updateDynamic("enforceDigitsOnBlur")(enforceDigitsOnBlur)
+    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar)
+    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy)
+    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator)
+    if (groupSize != null) __obj.updateDynamic("groupSize")(groupSize.asInstanceOf[js.Any])
+    if (groupmarker != null) __obj.updateDynamic("groupmarker")(groupmarker.asInstanceOf[js.Any])
+    if (ignorables != null) __obj.updateDynamic("ignorables")(ignorables)
+    if (!js.isUndefined(importDataAttributes)) __obj.updateDynamic("importDataAttributes")(importDataAttributes)
+    if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat)
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
+    if (inputmode != null) __obj.updateDynamic("inputmode")(inputmode)
+    if (!js.isUndefined(insertMode)) __obj.updateDynamic("insertMode")(insertMode)
+    if (integerDigits != null) __obj.updateDynamic("integerDigits")(integerDigits)
+    if (!js.isUndefined(integerOptional)) __obj.updateDynamic("integerOptional")(integerOptional)
+    if (isComplete != null) __obj.updateDynamic("isComplete")(isComplete)
+    if (!js.isUndefined(jitMasking)) __obj.updateDynamic("jitMasking")(jitMasking)
+    if (!js.isUndefined(keepStatic)) __obj.updateDynamic("keepStatic")(keepStatic)
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (min != null) __obj.updateDynamic("min")(min)
+    if (negationSymbol != null) __obj.updateDynamic("negationSymbol")(negationSymbol)
+    if (!js.isUndefined(noValuePatching)) __obj.updateDynamic("noValuePatching")(noValuePatching)
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable)
+    if (!js.isUndefined(numericInput)) __obj.updateDynamic("numericInput")(numericInput)
+    if (onBeforeMask != null) __obj.updateDynamic("onBeforeMask")(onBeforeMask)
+    if (onBeforePaste != null) __obj.updateDynamic("onBeforePaste")(onBeforePaste)
+    if (onBeforeWrite != null) __obj.updateDynamic("onBeforeWrite")(onBeforeWrite)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyValidation != null) __obj.updateDynamic("onKeyValidation")(onKeyValidation)
+    if (onUnMask != null) __obj.updateDynamic("onUnMask")(onUnMask)
+    if (oncleared != null) __obj.updateDynamic("oncleared")(oncleared)
+    if (oncomplete != null) __obj.updateDynamic("oncomplete")(oncomplete)
+    if (onincomplete != null) __obj.updateDynamic("onincomplete")(onincomplete)
+    if (optionalmarker != null) __obj.updateDynamic("optionalmarker")(optionalmarker.asInstanceOf[js.Any])
+    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (positionCaretOnClick != null) __obj.updateDynamic("positionCaretOnClick")(positionCaretOnClick)
+    if (!js.isUndefined(positionCaretOnTab)) __obj.updateDynamic("positionCaretOnTab")(positionCaretOnTab)
+    if (postValidation != null) __obj.updateDynamic("postValidation")(postValidation)
+    if (preValidation != null) __obj.updateDynamic("preValidation")(preValidation)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (quantifiermarker != null) __obj.updateDynamic("quantifiermarker")(quantifiermarker.asInstanceOf[js.Any])
+    if (radixPoint != null) __obj.updateDynamic("radixPoint")(radixPoint)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    if (!js.isUndefined(removeMaskOnSubmit)) __obj.updateDynamic("removeMaskOnSubmit")(removeMaskOnSubmit)
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(rightAlign)) __obj.updateDynamic("rightAlign")(rightAlign)
+    if (!js.isUndefined(shiftPositions)) __obj.updateDynamic("shiftPositions")(shiftPositions)
+    if (!js.isUndefined(showMaskOnFocus)) __obj.updateDynamic("showMaskOnFocus")(showMaskOnFocus)
+    if (!js.isUndefined(showMaskOnHover)) __obj.updateDynamic("showMaskOnHover")(showMaskOnHover)
+    if (skipOptionalPartCharacter != null) __obj.updateDynamic("skipOptionalPartCharacter")(skipOptionalPartCharacter)
+    if (staticDefinitionSymbol != null) __obj.updateDynamic("staticDefinitionSymbol")(staticDefinitionSymbol)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (supportsInputType != null) __obj.updateDynamic("supportsInputType")(supportsInputType)
+    if (!js.isUndefined(tabThrough)) __obj.updateDynamic("tabThrough")(tabThrough)
+    if (!js.isUndefined(undoOnEscape)) __obj.updateDynamic("undoOnEscape")(undoOnEscape)
+    if (!js.isUndefined(unmaskAsNumber)) __obj.updateDynamic("unmaskAsNumber")(unmaskAsNumber)
+    __obj.asInstanceOf[Options]
+  }
+}
+

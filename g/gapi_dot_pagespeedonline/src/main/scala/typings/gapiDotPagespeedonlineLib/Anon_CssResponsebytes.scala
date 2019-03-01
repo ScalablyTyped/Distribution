@@ -60,3 +60,38 @@ trait Anon_CssResponsebytes extends js.Object {
   var totalRequestBytes: java.lang.String
 }
 
+object Anon_CssResponsebytes {
+  @scala.inline
+  def apply(
+    cssResponsebytes: java.lang.String,
+    flashResponseBytes: java.lang.String,
+    htmlResponseBytes: java.lang.String,
+    imageResponseBytes: java.lang.String,
+    javascriptResponsebytes: java.lang.String,
+    numberCssResources: scala.Double,
+    numberHosts: scala.Double,
+    numberJsResources: scala.Double,
+    numberResources: scala.Double,
+    numberStaticResources: scala.Double,
+    otherResponsebytes: java.lang.String,
+    textResponseBytes: java.lang.String,
+    totalRequestBytes: java.lang.String
+  ): Anon_CssResponsebytes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cssResponsebytes")(cssResponsebytes)
+    __obj.updateDynamic("flashResponseBytes")(flashResponseBytes)
+    __obj.updateDynamic("htmlResponseBytes")(htmlResponseBytes)
+    __obj.updateDynamic("imageResponseBytes")(imageResponseBytes)
+    __obj.updateDynamic("javascriptResponsebytes")(javascriptResponsebytes)
+    __obj.updateDynamic("numberCssResources")(numberCssResources)
+    __obj.updateDynamic("numberHosts")(numberHosts)
+    __obj.updateDynamic("numberJsResources")(numberJsResources)
+    __obj.updateDynamic("numberResources")(numberResources)
+    __obj.updateDynamic("numberStaticResources")(numberStaticResources)
+    __obj.updateDynamic("otherResponsebytes")(otherResponsebytes)
+    __obj.updateDynamic("textResponseBytes")(textResponseBytes)
+    __obj.updateDynamic("totalRequestBytes")(totalRequestBytes)
+    __obj.asInstanceOf[Anon_CssResponsebytes]
+  }
+}
+

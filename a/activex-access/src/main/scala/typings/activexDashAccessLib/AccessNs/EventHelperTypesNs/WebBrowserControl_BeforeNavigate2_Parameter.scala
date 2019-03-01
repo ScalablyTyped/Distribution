@@ -15,3 +15,26 @@ trait WebBrowserControl_BeforeNavigate2_Parameter extends js.Object {
   val pDisp: js.Any
 }
 
+object WebBrowserControl_BeforeNavigate2_Parameter {
+  @scala.inline
+  def apply(
+    Cancel: scala.Boolean,
+    Headers: js.Any,
+    PostData: js.Any,
+    URL: java.lang.String,
+    flags: scala.Double,
+    pDisp: js.Any,
+    TargetFrameName: java.lang.String = null
+  ): WebBrowserControl_BeforeNavigate2_Parameter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("Headers")(Headers)
+    __obj.updateDynamic("PostData")(PostData)
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("pDisp")(pDisp)
+    if (TargetFrameName != null) __obj.updateDynamic("TargetFrameName")(TargetFrameName)
+    __obj.asInstanceOf[WebBrowserControl_BeforeNavigate2_Parameter]
+  }
+}
+

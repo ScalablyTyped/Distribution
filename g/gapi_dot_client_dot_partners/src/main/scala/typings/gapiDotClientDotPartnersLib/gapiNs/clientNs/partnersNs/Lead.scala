@@ -42,3 +42,42 @@ trait Lead extends js.Object {
   var websiteUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Lead {
+  @scala.inline
+  def apply(
+    adwordsCustomerId: java.lang.String = null,
+    comments: java.lang.String = null,
+    createTime: java.lang.String = null,
+    email: java.lang.String = null,
+    familyName: java.lang.String = null,
+    givenName: java.lang.String = null,
+    gpsMotivations: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    languageCode: java.lang.String = null,
+    marketingOptIn: js.UndefOr[scala.Boolean] = js.undefined,
+    minMonthlyBudget: Money = null,
+    phoneNumber: java.lang.String = null,
+    state: java.lang.String = null,
+    `type`: java.lang.String = null,
+    websiteUrl: java.lang.String = null
+  ): Lead = {
+    val __obj = js.Dynamic.literal()
+    if (adwordsCustomerId != null) __obj.updateDynamic("adwordsCustomerId")(adwordsCustomerId)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName)
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName)
+    if (gpsMotivations != null) __obj.updateDynamic("gpsMotivations")(gpsMotivations)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (!js.isUndefined(marketingOptIn)) __obj.updateDynamic("marketingOptIn")(marketingOptIn)
+    if (minMonthlyBudget != null) __obj.updateDynamic("minMonthlyBudget")(minMonthlyBudget)
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    __obj.asInstanceOf[Lead]
+  }
+}
+

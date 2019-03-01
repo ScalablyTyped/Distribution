@@ -37,3 +37,31 @@ trait ExpressBrute extends js.Object {
   def reset(ip: java.lang.String, key: java.lang.String, next: js.Function): expressLib.expressMod.eNs.RequestHandler
 }
 
+object ExpressBrute {
+  @scala.inline
+  def apply(
+    getMiddleware: js.Function1[
+      expressDashBruteLib.expressDashBruteMod.ExpressBruteNs.Middleware, 
+      expressLib.expressMod.eNs.RequestHandler
+    ],
+    prevent: js.Function3[
+      expressLib.expressMod.eNs.Request, 
+      expressLib.expressMod.eNs.Response, 
+      js.Function, 
+      expressLib.expressMod.eNs.RequestHandler
+    ],
+    reset: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      js.Function, 
+      expressLib.expressMod.eNs.RequestHandler
+    ]
+  ): ExpressBrute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getMiddleware")(getMiddleware)
+    __obj.updateDynamic("prevent")(prevent)
+    __obj.updateDynamic("reset")(reset)
+    __obj.asInstanceOf[ExpressBrute]
+  }
+}
+

@@ -25,3 +25,13 @@ trait Transaction extends js.Object {
   var readTimestamp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Transaction {
+  @scala.inline
+  def apply(id: java.lang.String = null, readTimestamp: java.lang.String = null): Transaction = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (readTimestamp != null) __obj.updateDynamic("readTimestamp")(readTimestamp)
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

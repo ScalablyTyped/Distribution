@@ -30,3 +30,36 @@ trait KosModel[T] extends js.Object {
   ] = js.undefined
 }
 
+object KosModel {
+  @scala.inline
+  def apply[T](
+    asyncs: org.scalablytyped.runtime.StringDictionary[
+      js.Function3[
+        /* dispatch */ KosDispatch, 
+        /* getState */ GetKosState[T], 
+        /* action */ Action[_], 
+        scala.Unit
+      ]
+    ],
+    initial: T,
+    namespace: java.lang.String,
+    reducers: org.scalablytyped.runtime.StringDictionary[
+      js.Function2[/* state */ T, /* hasPayload */ kosDashCoreLib.Anon_Payload[T], scala.Unit]
+    ],
+    getAsync: js.Function1[
+      /* key */ java.lang.String, 
+      js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[_]], scala.Unit]
+    ] = null,
+    setup: js.Function2[/* dispatch */ KosDispatch, /* getState */ GetKosState[T], scala.Unit] = null
+  ): KosModel[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("asyncs")(asyncs)
+    __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("reducers")(reducers)
+    if (getAsync != null) __obj.updateDynamic("getAsync")(getAsync)
+    if (setup != null) __obj.updateDynamic("setup")(setup)
+    __obj.asInstanceOf[KosModel[T]]
+  }
+}
+

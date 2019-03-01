@@ -17,3 +17,12 @@ trait UploadRawData extends js.Object {
   var `type`: java.lang.String
 }
 
+object UploadRawData {
+  @scala.inline
+  def apply(bytes: nodeLib.Buffer, `type`: java.lang.String): UploadRawData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bytes")(bytes)
+    __obj.asInstanceOf[UploadRawData]
+  }
+}
+

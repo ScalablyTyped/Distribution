@@ -18,3 +18,13 @@ trait ServeStaticOptions extends js.Object {
   var index: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object ServeStaticOptions {
+  @scala.inline
+  def apply(contentType: java.lang.String = null, index: scala.Boolean | java.lang.String = null): ServeStaticOptions = {
+    val __obj = js.Dynamic.literal()
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServeStaticOptions]
+  }
+}
+

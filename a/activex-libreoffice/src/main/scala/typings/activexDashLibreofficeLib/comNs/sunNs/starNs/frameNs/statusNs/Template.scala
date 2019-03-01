@@ -16,3 +16,13 @@ trait Template extends js.Object {
   var Value: scala.Double
 }
 
+object Template {
+  @scala.inline
+  def apply(StyleName: java.lang.String, Value: scala.Double): Template = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("StyleName")(StyleName)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[Template]
+  }
+}
+

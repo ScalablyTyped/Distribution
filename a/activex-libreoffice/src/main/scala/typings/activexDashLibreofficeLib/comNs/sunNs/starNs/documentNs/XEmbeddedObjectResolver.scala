@@ -12,3 +12,20 @@ trait XEmbeddedObjectResolver
   def resolveEmbeddedObjectURL(aURL: java.lang.String): java.lang.String
 }
 
+object XEmbeddedObjectResolver {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    resolveEmbeddedObjectURL: js.Function1[java.lang.String, java.lang.String]
+  ): XEmbeddedObjectResolver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("resolveEmbeddedObjectURL")(resolveEmbeddedObjectURL)
+    __obj.asInstanceOf[XEmbeddedObjectResolver]
+  }
+}
+

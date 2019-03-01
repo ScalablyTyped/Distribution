@@ -12,3 +12,20 @@ trait PaySignCenterOptions
   var signStr: java.lang.String
 }
 
+object PaySignCenterOptions {
+  @scala.inline
+  def apply(
+    signStr: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): PaySignCenterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("signStr")(signStr)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[PaySignCenterOptions]
+  }
+}
+

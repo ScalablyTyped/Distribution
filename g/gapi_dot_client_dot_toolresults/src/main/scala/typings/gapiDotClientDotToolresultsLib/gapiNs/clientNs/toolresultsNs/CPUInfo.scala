@@ -14,3 +14,18 @@ trait CPUInfo extends js.Object {
   var numberOfCores: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CPUInfo {
+  @scala.inline
+  def apply(
+    cpuProcessor: java.lang.String = null,
+    cpuSpeedInGhz: scala.Int | scala.Double = null,
+    numberOfCores: scala.Int | scala.Double = null
+  ): CPUInfo = {
+    val __obj = js.Dynamic.literal()
+    if (cpuProcessor != null) __obj.updateDynamic("cpuProcessor")(cpuProcessor)
+    if (cpuSpeedInGhz != null) __obj.updateDynamic("cpuSpeedInGhz")(cpuSpeedInGhz.asInstanceOf[js.Any])
+    if (numberOfCores != null) __obj.updateDynamic("numberOfCores")(numberOfCores.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CPUInfo]
+  }
+}
+

@@ -24,3 +24,18 @@ trait ASPxClientSideParametersModel extends js.Object {
   def submit(): scala.Unit
 }
 
+object ASPxClientSideParametersModel {
+  @scala.inline
+  def apply(
+    serializeParameters: js.Function0[scala.Unit],
+    submit: js.Function0[scala.Unit],
+    tabInfo: ASPxClientDocumentPreviewTab
+  ): ASPxClientSideParametersModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("serializeParameters")(serializeParameters)
+    __obj.updateDynamic("submit")(submit)
+    __obj.updateDynamic("tabInfo")(tabInfo)
+    __obj.asInstanceOf[ASPxClientSideParametersModel]
+  }
+}
+

@@ -16,3 +16,28 @@ trait RenderProps[T] extends js.Object {
   var url: java.lang.String
 }
 
+object RenderProps {
+  @scala.inline
+  def apply[T](
+    failed: scala.Boolean,
+    fetching: scala.Boolean,
+    requestKey: java.lang.String,
+    requestName: java.lang.String,
+    url: java.lang.String,
+    data: T = null,
+    error: stdLib.Error = null,
+    response: stdLib.Response = null
+  ): RenderProps[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failed")(failed)
+    __obj.updateDynamic("fetching")(fetching)
+    __obj.updateDynamic("requestKey")(requestKey)
+    __obj.updateDynamic("requestName")(requestName)
+    __obj.updateDynamic("url")(url)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (response != null) __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[RenderProps[T]]
+  }
+}
+

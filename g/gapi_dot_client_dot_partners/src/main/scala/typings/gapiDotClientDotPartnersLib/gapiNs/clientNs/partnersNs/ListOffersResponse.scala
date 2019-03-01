@@ -14,3 +14,18 @@ trait ListOffersResponse extends js.Object {
   var responseMetadata: js.UndefOr[ResponseMetadata] = js.undefined
 }
 
+object ListOffersResponse {
+  @scala.inline
+  def apply(
+    availableOffers: js.Array[AvailableOffer] = null,
+    noOfferReason: java.lang.String = null,
+    responseMetadata: ResponseMetadata = null
+  ): ListOffersResponse = {
+    val __obj = js.Dynamic.literal()
+    if (availableOffers != null) __obj.updateDynamic("availableOffers")(availableOffers)
+    if (noOfferReason != null) __obj.updateDynamic("noOfferReason")(noOfferReason)
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    __obj.asInstanceOf[ListOffersResponse]
+  }
+}
+

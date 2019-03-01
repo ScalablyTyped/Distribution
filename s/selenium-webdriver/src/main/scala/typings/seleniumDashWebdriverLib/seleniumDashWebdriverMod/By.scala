@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("selenium-webdriver", "By")
 @js.native
-class By protected () extends js.Object {
+class By protected () extends _Locator {
   /**
     * @param {string} using the name of the location strategy to use.
     * @param {string} value the value to search for.

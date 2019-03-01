@@ -12,3 +12,13 @@ trait GooglePrivacyDlpV2beta1PartitionId extends js.Object {
   var projectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1PartitionId {
+  @scala.inline
+  def apply(namespaceId: java.lang.String = null, projectId: java.lang.String = null): GooglePrivacyDlpV2beta1PartitionId = {
+    val __obj = js.Dynamic.literal()
+    if (namespaceId != null) __obj.updateDynamic("namespaceId")(namespaceId)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1PartitionId]
+  }
+}
+

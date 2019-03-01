@@ -16,3 +16,12 @@ trait PhysicsVortexEventData extends js.Object {
   var cylinder: Mesh
 }
 
+object PhysicsVortexEventData {
+  @scala.inline
+  def apply(cylinder: Mesh): PhysicsVortexEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cylinder")(cylinder)
+    __obj.asInstanceOf[PhysicsVortexEventData]
+  }
+}
+

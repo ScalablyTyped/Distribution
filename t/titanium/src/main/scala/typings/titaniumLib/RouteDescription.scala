@@ -19,3 +19,13 @@ trait RouteDescription extends js.Object {
   var outputs: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object RouteDescription {
+  @scala.inline
+  def apply(inputs: js.Array[_] = null, outputs: js.Array[_] = null): RouteDescription = {
+    val __obj = js.Dynamic.literal()
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    __obj.asInstanceOf[RouteDescription]
+  }
+}
+

@@ -47,3 +47,32 @@ trait ScalesLabel extends js.Object {
   var unitTextPlacement: js.UndefOr[UnitTextPlacement | java.lang.String] = js.undefined
 }
 
+object ScalesLabel {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    distanceFromScale: ScalesLabelsDistanceFromScale = null,
+    font: ScalesLabelsFont = null,
+    includeFirstValue: js.UndefOr[scala.Boolean] = js.undefined,
+    opacity: scala.Int | scala.Double = null,
+    placement: PointerPlacement | java.lang.String = null,
+    textColor: java.lang.String = null,
+    `type`: ScaleType | java.lang.String = null,
+    unitText: java.lang.String = null,
+    unitTextPlacement: UnitTextPlacement | java.lang.String = null
+  ): ScalesLabel = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(includeFirstValue)) __obj.updateDynamic("includeFirstValue")(includeFirstValue)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (unitText != null) __obj.updateDynamic("unitText")(unitText)
+    if (unitTextPlacement != null) __obj.updateDynamic("unitTextPlacement")(unitTextPlacement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScalesLabel]
+  }
+}
+

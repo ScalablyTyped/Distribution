@@ -13,3 +13,12 @@ trait CordovaAppVersionPlugin extends js.Object {
   def getAppVersion(): java.lang.String
 }
 
+object CordovaAppVersionPlugin {
+  @scala.inline
+  def apply(getAppVersion: js.Function0[java.lang.String]): CordovaAppVersionPlugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAppVersion")(getAppVersion)
+    __obj.asInstanceOf[CordovaAppVersionPlugin]
+  }
+}
+

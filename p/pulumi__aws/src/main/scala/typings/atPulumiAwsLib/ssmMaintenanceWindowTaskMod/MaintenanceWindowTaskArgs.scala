@@ -57,3 +57,36 @@ trait MaintenanceWindowTaskArgs extends js.Object {
   val windowId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object MaintenanceWindowTaskArgs {
+  @scala.inline
+  def apply(
+    maxConcurrency: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    maxErrors: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    serviceRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    targets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]],
+    taskArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    taskType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    windowId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    loggingInfo: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_S3BucketNameS3BucketPrefixS3Region] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    priority: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    taskParameters: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameValuesArray]]] = null
+  ): MaintenanceWindowTaskArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
+    __obj.updateDynamic("maxErrors")(maxErrors.asInstanceOf[js.Any])
+    __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    __obj.updateDynamic("taskArn")(taskArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])
+    __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (loggingInfo != null) __obj.updateDynamic("loggingInfo")(loggingInfo.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (taskParameters != null) __obj.updateDynamic("taskParameters")(taskParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MaintenanceWindowTaskArgs]
+  }
+}
+

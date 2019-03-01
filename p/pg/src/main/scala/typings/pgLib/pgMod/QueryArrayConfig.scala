@@ -9,3 +9,20 @@ trait QueryArrayConfig extends QueryConfig {
   var rowMode: pgLib.pgLibStrings.array
 }
 
+object QueryArrayConfig {
+  @scala.inline
+  def apply(
+    rowMode: pgLib.pgLibStrings.array,
+    text: java.lang.String,
+    name: java.lang.String = null,
+    values: js.Array[_] = null
+  ): QueryArrayConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rowMode")(rowMode)
+    __obj.updateDynamic("text")(text)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[QueryArrayConfig]
+  }
+}
+

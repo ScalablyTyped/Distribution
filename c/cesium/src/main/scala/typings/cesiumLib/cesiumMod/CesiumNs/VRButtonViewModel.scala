@@ -15,3 +15,26 @@ trait VRButtonViewModel extends js.Object {
   def isDestroyed(): scala.Boolean
 }
 
+object VRButtonViewModel {
+  @scala.inline
+  def apply(
+    command: Command,
+    destroy: js.Function0[scala.Unit],
+    isDestroyed: js.Function0[scala.Boolean],
+    isVREnabled: scala.Boolean,
+    isVRMode: scala.Boolean,
+    tooltip: java.lang.String,
+    vrElement: stdLib.Element
+  ): VRButtonViewModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("isDestroyed")(isDestroyed)
+    __obj.updateDynamic("isVREnabled")(isVREnabled)
+    __obj.updateDynamic("isVRMode")(isVRMode)
+    __obj.updateDynamic("tooltip")(tooltip)
+    __obj.updateDynamic("vrElement")(vrElement)
+    __obj.asInstanceOf[VRButtonViewModel]
+  }
+}
+

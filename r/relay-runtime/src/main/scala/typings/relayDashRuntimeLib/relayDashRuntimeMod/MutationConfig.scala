@@ -33,3 +33,38 @@ trait MutationConfig[T /* <: OperationBase */] extends js.Object {
   var variables: /* import warning: ImportType.apply Failed type conversion: T['variables'] */ js.Any
 }
 
+object MutationConfig {
+  @scala.inline
+  def apply[T /* <: OperationBase */](
+    mutation: GraphQLTaggedNode,
+    variables: /* import warning: ImportType.apply Failed type conversion: T['variables'] */ js.Any,
+    configs: js.Array[RelayMutationConfig] = null,
+    onCompleted: js.Function2[
+      /* import warning: ImportType.apply Failed type conversion: T['response'] */ /* response */ js.Any, 
+      /* errors */ js.UndefOr[js.Array[PayloadError] | scala.Null], 
+      scala.Unit
+    ] = null,
+    onError: js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit] = null,
+    optimisticResponse: /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any = null,
+    optimisticUpdater: SelectorStoreUpdater[
+      /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
+    ] = null,
+    updater: SelectorStoreUpdater[
+      /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
+    ] = null,
+    uploadables: UploadableMap = null
+  ): MutationConfig[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mutation")(mutation.asInstanceOf[js.Any])
+    __obj.updateDynamic("variables")(variables)
+    if (configs != null) __obj.updateDynamic("configs")(configs)
+    if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse)
+    if (optimisticUpdater != null) __obj.updateDynamic("optimisticUpdater")(optimisticUpdater)
+    if (updater != null) __obj.updateDynamic("updater")(updater)
+    if (uploadables != null) __obj.updateDynamic("uploadables")(uploadables)
+    __obj.asInstanceOf[MutationConfig[T]]
+  }
+}
+

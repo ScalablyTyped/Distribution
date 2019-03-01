@@ -17,3 +17,27 @@ trait HintOptions extends js.Object {
   ): scala.Unit
 }
 
+object HintOptions {
+  @scala.inline
+  def apply(
+    `match`: stdLib.RegExp,
+    search: js.Function2[
+      java.lang.String, 
+      js.Function1[/* plausibleItems */ js.Array[java.lang.String], scala.Unit], 
+      scala.Unit
+    ],
+    content: js.Function1[/* item */ java.lang.String, htmlElement | jqueryLib.JQueryNs.Node] = null,
+    mentions: js.Array[java.lang.String] = null,
+    template: js.Function1[/* item */ java.lang.String, htmlElement] = null,
+    words: js.Array[java.lang.String] = null
+  ): HintOptions = {
+    val __obj = js.Dynamic.literal(`match` = `match`)
+    __obj.updateDynamic("search")(search)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (mentions != null) __obj.updateDynamic("mentions")(mentions)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (words != null) __obj.updateDynamic("words")(words)
+    __obj.asInstanceOf[HintOptions]
+  }
+}
+

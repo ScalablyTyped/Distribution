@@ -29,3 +29,20 @@ trait GetFileTreeOptions[RE, DE] extends js.Object {
   val walkerOptions: js.UndefOr[WalkerOptions] = js.undefined
 }
 
+object GetFileTreeOptions {
+  @scala.inline
+  def apply[RE, DE](
+    onDirectoryNode: js.Function1[/* node */ DirectoryNode, DirectoryNode with DE] = null,
+    onError: js.Function1[/* err */ nodeLib.Error, scala.Unit] = null,
+    onFileNode: js.Function1[/* node */ RegularFileNode, RegularFileNode with RE] = null,
+    walkerOptions: WalkerOptions = null
+  ): GetFileTreeOptions[RE, DE] = {
+    val __obj = js.Dynamic.literal()
+    if (onDirectoryNode != null) __obj.updateDynamic("onDirectoryNode")(onDirectoryNode)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onFileNode != null) __obj.updateDynamic("onFileNode")(onFileNode)
+    if (walkerOptions != null) __obj.updateDynamic("walkerOptions")(walkerOptions)
+    __obj.asInstanceOf[GetFileTreeOptions[RE, DE]]
+  }
+}
+

@@ -38,3 +38,32 @@ trait BookmarkTreeNode extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BookmarkTreeNode {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    title: java.lang.String,
+    children: js.Array[BookmarkTreeNode] = null,
+    dateAdded: scala.Int | scala.Double = null,
+    dateGroupModified: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null,
+    parentId: java.lang.String = null,
+    `type`: BookmarkTreeNodeType = null,
+    unmodifiable: BookmarkTreeNodeUnmodifiable = null,
+    url: java.lang.String = null
+  ): BookmarkTreeNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("title")(title)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (dateAdded != null) __obj.updateDynamic("dateAdded")(dateAdded.asInstanceOf[js.Any])
+    if (dateGroupModified != null) __obj.updateDynamic("dateGroupModified")(dateGroupModified.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unmodifiable != null) __obj.updateDynamic("unmodifiable")(unmodifiable)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[BookmarkTreeNode]
+  }
+}
+

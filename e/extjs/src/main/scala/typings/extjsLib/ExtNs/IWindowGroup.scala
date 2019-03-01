@@ -64,3 +64,66 @@ trait IWindowGroup extends IBase {
   var unregister: js.UndefOr[js.Function1[/* comp */ js.UndefOr[IComponent], scala.Unit]] = js.undefined
 }
 
+object IWindowGroup {
+  @scala.inline
+  def apply(
+    alias: Array = null,
+    alternateClassName: js.Any = null,
+    bringToFront: js.Function1[/* comp */ js.UndefOr[js.Any], scala.Boolean] = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    each: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    eachBottomUp: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    eachTopDown: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    extend: java.lang.String = null,
+    get: js.Function1[/* id */ js.UndefOr[js.Any], IComponent] = null,
+    getActive: js.Function0[IComponent] = null,
+    getBy: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Array] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    hideAll: js.Function0[scala.Unit] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IWindowGroup] = null,
+    mixins: js.Any = null,
+    register: js.Function1[/* comp */ js.UndefOr[IComponent], scala.Unit] = null,
+    requires: Array = null,
+    self: IClass = null,
+    sendToBack: js.Function1[/* comp */ js.UndefOr[js.Any], IComponent] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    unregister: js.Function1[/* comp */ js.UndefOr[IComponent], scala.Unit] = null,
+    uses: Array = null
+  ): IWindowGroup = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (bringToFront != null) __obj.updateDynamic("bringToFront")(bringToFront)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (each != null) __obj.updateDynamic("each")(each)
+    if (eachBottomUp != null) __obj.updateDynamic("eachBottomUp")(eachBottomUp)
+    if (eachTopDown != null) __obj.updateDynamic("eachTopDown")(eachTopDown)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (getActive != null) __obj.updateDynamic("getActive")(getActive)
+    if (getBy != null) __obj.updateDynamic("getBy")(getBy)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (hideAll != null) __obj.updateDynamic("hideAll")(hideAll)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (register != null) __obj.updateDynamic("register")(register)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (sendToBack != null) __obj.updateDynamic("sendToBack")(sendToBack)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (unregister != null) __obj.updateDynamic("unregister")(unregister)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IWindowGroup]
+  }
+}
+

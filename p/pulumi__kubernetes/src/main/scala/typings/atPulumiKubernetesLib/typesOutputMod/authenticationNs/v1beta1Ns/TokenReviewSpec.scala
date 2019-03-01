@@ -22,3 +22,13 @@ trait TokenReviewSpec extends js.Object {
   val token: java.lang.String
 }
 
+object TokenReviewSpec {
+  @scala.inline
+  def apply(audiences: js.Array[java.lang.String], token: java.lang.String): TokenReviewSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audiences")(audiences)
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[TokenReviewSpec]
+  }
+}
+

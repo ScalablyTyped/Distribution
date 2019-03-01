@@ -3439,6 +3439,26 @@ object CloudFrontNs extends js.Object {
     var SSLSupportMethod: js.UndefOr[SSLSupportMethod] = js.undefined
   }
   
+  trait _CertificateSource extends js.Object
+  
+  trait _EventType extends js.Object
+  
+  trait _GeoRestrictionType extends js.Object
+  
+  trait _HttpVersion extends js.Object
+  
+  trait _ItemSelection extends js.Object
+  
+  trait _Method extends js.Object
+  
+  trait _MinimumProtocolVersion extends js.Object
+  
+  trait _OriginProtocolPolicy extends js.Object
+  
+  trait _PriceClass extends js.Object
+  
+  trait _SSLSupportMethod extends js.Object
+  
   trait _Signer extends js.Object {
     /**
       * An AWS account that is included in the TrustedSigners complex type for this RTMP distribution. Valid values include:    self, which is the AWS account used to create the distribution.   An AWS account number.  
@@ -3449,6 +3469,12 @@ object CloudFrontNs extends js.Object {
       */
     var KeyPairIds: js.UndefOr[KeyPairIds] = js.undefined
   }
+  
+  trait _SslProtocol extends js.Object
+  
+  trait _ViewerProtocolPolicy extends js.Object
+  
+  trait _apiVersion extends js.Object
   
   val TypesNs: this.type = js.native
   @JSName("Signer")
@@ -3489,7 +3515,7 @@ object CloudFrontNs extends js.Object {
   type AliasList = js.Array[java.lang.String]
   type AwsAccountNumberList = js.Array[java.lang.String]
   type CacheBehaviorList = js.Array[CacheBehavior]
-  type CertificateSource = awsDashSdkLib.awsDashSdkLibStrings.cloudfront | awsDashSdkLib.awsDashSdkLibStrings.iam | awsDashSdkLib.awsDashSdkLibStrings.acm | java.lang.String
+  type CertificateSource = _CertificateSource | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CloudFrontOriginAccessIdentitySummaryList = js.Array[CloudFrontOriginAccessIdentitySummary]
   type ContentTypeProfileList = js.Array[ContentTypeProfile]
@@ -3497,37 +3523,37 @@ object CloudFrontNs extends js.Object {
   type CustomErrorResponseList = js.Array[CustomErrorResponse]
   type DistributionSummaryList = js.Array[DistributionSummary]
   type EncryptionEntityList = js.Array[EncryptionEntity]
-  type EventType = awsDashSdkLib.awsDashSdkLibStrings.`viewer-request` | awsDashSdkLib.awsDashSdkLibStrings.`viewer-response` | awsDashSdkLib.awsDashSdkLibStrings.`origin-request` | awsDashSdkLib.awsDashSdkLibStrings.`origin-response` | java.lang.String
+  type EventType = _EventType | java.lang.String
   type FieldLevelEncryptionProfileSummaryList = js.Array[FieldLevelEncryptionProfileSummary]
   type FieldLevelEncryptionSummaryList = js.Array[FieldLevelEncryptionSummary]
   type FieldPatternList = js.Array[java.lang.String]
   type Format = awsDashSdkLib.awsDashSdkLibStrings.URLEncoded | java.lang.String
-  type GeoRestrictionType = awsDashSdkLib.awsDashSdkLibStrings.blacklist | awsDashSdkLib.awsDashSdkLibStrings.whitelist | awsDashSdkLib.awsDashSdkLibStrings.none | java.lang.String
+  type GeoRestrictionType = _GeoRestrictionType | java.lang.String
   type HeaderList = js.Array[java.lang.String]
-  type HttpVersion = awsDashSdkLib.awsDashSdkLibStrings.http1DOT1 | awsDashSdkLib.awsDashSdkLibStrings.http2 | java.lang.String
+  type HttpVersion = _HttpVersion | java.lang.String
   type InvalidationSummaryList = js.Array[InvalidationSummary]
-  type ItemSelection = awsDashSdkLib.awsDashSdkLibStrings.none | awsDashSdkLib.awsDashSdkLibStrings.whitelist | awsDashSdkLib.awsDashSdkLibStrings.all | java.lang.String
+  type ItemSelection = _ItemSelection | java.lang.String
   type KeyPairIdList = js.Array[java.lang.String]
   type LambdaFunctionARN = java.lang.String
   type LambdaFunctionAssociationList = js.Array[LambdaFunctionAssociation]
   type LocationList = js.Array[java.lang.String]
-  type Method = awsDashSdkLib.awsDashSdkLibStrings.GET | awsDashSdkLib.awsDashSdkLibStrings.HEAD | awsDashSdkLib.awsDashSdkLibStrings.POST | awsDashSdkLib.awsDashSdkLibStrings.PUT | awsDashSdkLib.awsDashSdkLibStrings.PATCH | awsDashSdkLib.awsDashSdkLibStrings.OPTIONS | awsDashSdkLib.awsDashSdkLibStrings.DELETE | java.lang.String
+  type Method = _Method | java.lang.String
   type MethodsList = js.Array[Method]
-  type MinimumProtocolVersion = awsDashSdkLib.awsDashSdkLibStrings.SSLv3 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1_2016 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1DOT1_2016 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1DOT2_2018 | java.lang.String
+  type MinimumProtocolVersion = _MinimumProtocolVersion | java.lang.String
   type OriginCustomHeadersList = js.Array[OriginCustomHeader]
   type OriginGroupList = js.Array[OriginGroup]
   type OriginGroupMemberList = js.Array[OriginGroupMember]
   type OriginList = js.Array[Origin]
-  type OriginProtocolPolicy = awsDashSdkLib.awsDashSdkLibStrings.`http-only` | awsDashSdkLib.awsDashSdkLibStrings.`match-viewer` | awsDashSdkLib.awsDashSdkLibStrings.`https-only` | java.lang.String
+  type OriginProtocolPolicy = _OriginProtocolPolicy | java.lang.String
   type PathList = js.Array[java.lang.String]
-  type PriceClass = awsDashSdkLib.awsDashSdkLibStrings.PriceClass_100 | awsDashSdkLib.awsDashSdkLibStrings.PriceClass_200 | awsDashSdkLib.awsDashSdkLibStrings.PriceClass_All | java.lang.String
+  type PriceClass = _PriceClass | java.lang.String
   type PublicKeySummaryList = js.Array[PublicKeySummary]
   type QueryArgProfileList = js.Array[QueryArgProfile]
   type QueryStringCacheKeysList = js.Array[java.lang.String]
   type ResourceARN = java.lang.String
-  type SSLSupportMethod = awsDashSdkLib.awsDashSdkLibStrings.`sni-only` | awsDashSdkLib.awsDashSdkLibStrings.vip | java.lang.String
+  type SSLSupportMethod = _SSLSupportMethod | java.lang.String
   type SignerList = js.Array[_Signer]
-  type SslProtocol = awsDashSdkLib.awsDashSdkLibStrings.SSLv3 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1DOT1 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1DOT2 | java.lang.String
+  type SslProtocol = _SslProtocol | java.lang.String
   type SslProtocolsList = js.Array[SslProtocol]
   type StatusCodeList = js.Array[integer]
   type StreamingDistributionSummaryList = js.Array[StreamingDistributionSummary]
@@ -3535,8 +3561,8 @@ object CloudFrontNs extends js.Object {
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
-  type ViewerProtocolPolicy = awsDashSdkLib.awsDashSdkLibStrings.`allow-all` | awsDashSdkLib.awsDashSdkLibStrings.`https-only` | awsDashSdkLib.awsDashSdkLibStrings.`redirect-to-https` | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-05-12` | awsDashSdkLib.awsDashSdkLibStrings.`2013-11-11` | awsDashSdkLib.awsDashSdkLibStrings.`2014-05-31` | awsDashSdkLib.awsDashSdkLibStrings.`2014-10-21` | awsDashSdkLib.awsDashSdkLibStrings.`2014-11-06` | awsDashSdkLib.awsDashSdkLibStrings.`2015-04-17` | awsDashSdkLib.awsDashSdkLibStrings.`2015-07-27` | awsDashSdkLib.awsDashSdkLibStrings.`2015-09-17` | awsDashSdkLib.awsDashSdkLibStrings.`2016-01-13` | awsDashSdkLib.awsDashSdkLibStrings.`2016-01-28` | awsDashSdkLib.awsDashSdkLibStrings.`2016-08-01` | awsDashSdkLib.awsDashSdkLibStrings.`2016-08-20` | awsDashSdkLib.awsDashSdkLibStrings.`2016-09-07` | awsDashSdkLib.awsDashSdkLibStrings.`2016-09-29` | awsDashSdkLib.awsDashSdkLibStrings.`2016-11-25` | awsDashSdkLib.awsDashSdkLibStrings.`2017-03-25` | awsDashSdkLib.awsDashSdkLibStrings.`2017-10-30` | awsDashSdkLib.awsDashSdkLibStrings.`2018-06-18` | awsDashSdkLib.awsDashSdkLibStrings.`2018-11-05` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type ViewerProtocolPolicy = _ViewerProtocolPolicy | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type integer = scala.Double
   type long = scala.Double
   type timestamp = stdLib.Date

@@ -143,3 +143,80 @@ trait Options extends js.Object {
   var win32metadata: js.UndefOr[Win32Metadata] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    dir: java.lang.String,
+    afterCopy: js.Array[onCompleteFn] = null,
+    afterExtract: js.Array[onCompleteFn] = null,
+    afterPrune: js.Array[onCompleteFn] = null,
+    all: js.UndefOr[scala.Boolean] = js.undefined,
+    appBundleId: java.lang.String = null,
+    appCategoryType: java.lang.String = null,
+    appCopyright: java.lang.String = null,
+    appVersion: java.lang.String = null,
+    arch: arch | js.Array[arch] = null,
+    asar: scala.Boolean | AsarOptions = null,
+    buildVersion: java.lang.String = null,
+    darwinDarkModeSupport: js.UndefOr[scala.Boolean] = js.undefined,
+    derefSymlinks: js.UndefOr[scala.Boolean] = js.undefined,
+    download: ElectronDownloadOptions = null,
+    electronVersion: java.lang.String = null,
+    executableName: java.lang.String = null,
+    extendInfo: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    extraResource: java.lang.String | js.Array[java.lang.String] = null,
+    helperBundleId: java.lang.String = null,
+    icon: java.lang.String = null,
+    ignore: stdLib.RegExp | js.Array[stdLib.RegExp] | ignoreFunction = null,
+    name: java.lang.String = null,
+    osxNotarize: ElectronNotarizeOptions = null,
+    osxSign: scala.Boolean | ElectronOsXSignOptions = null,
+    out: java.lang.String = null,
+    overwrite: js.UndefOr[scala.Boolean] = js.undefined,
+    platform: platform = null,
+    prebuiltAsar: java.lang.String = null,
+    protocols: js.Array[electronDashPackagerLib.Anon_Name] = null,
+    prune: js.UndefOr[scala.Boolean] = js.undefined,
+    quiet: js.UndefOr[scala.Boolean] = js.undefined,
+    tmpdir: java.lang.String | electronDashPackagerLib.electronDashPackagerLibNumbers.`false` = null,
+    win32metadata: Win32Metadata = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dir")(dir)
+    if (afterCopy != null) __obj.updateDynamic("afterCopy")(afterCopy)
+    if (afterExtract != null) __obj.updateDynamic("afterExtract")(afterExtract)
+    if (afterPrune != null) __obj.updateDynamic("afterPrune")(afterPrune)
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
+    if (appBundleId != null) __obj.updateDynamic("appBundleId")(appBundleId)
+    if (appCategoryType != null) __obj.updateDynamic("appCategoryType")(appCategoryType)
+    if (appCopyright != null) __obj.updateDynamic("appCopyright")(appCopyright)
+    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
+    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
+    if (asar != null) __obj.updateDynamic("asar")(asar.asInstanceOf[js.Any])
+    if (buildVersion != null) __obj.updateDynamic("buildVersion")(buildVersion)
+    if (!js.isUndefined(darwinDarkModeSupport)) __obj.updateDynamic("darwinDarkModeSupport")(darwinDarkModeSupport)
+    if (!js.isUndefined(derefSymlinks)) __obj.updateDynamic("derefSymlinks")(derefSymlinks)
+    if (download != null) __obj.updateDynamic("download")(download)
+    if (electronVersion != null) __obj.updateDynamic("electronVersion")(electronVersion)
+    if (executableName != null) __obj.updateDynamic("executableName")(executableName)
+    if (extendInfo != null) __obj.updateDynamic("extendInfo")(extendInfo.asInstanceOf[js.Any])
+    if (extraResource != null) __obj.updateDynamic("extraResource")(extraResource.asInstanceOf[js.Any])
+    if (helperBundleId != null) __obj.updateDynamic("helperBundleId")(helperBundleId)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (osxNotarize != null) __obj.updateDynamic("osxNotarize")(osxNotarize)
+    if (osxSign != null) __obj.updateDynamic("osxSign")(osxSign.asInstanceOf[js.Any])
+    if (out != null) __obj.updateDynamic("out")(out)
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (prebuiltAsar != null) __obj.updateDynamic("prebuiltAsar")(prebuiltAsar)
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
+    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune)
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (tmpdir != null) __obj.updateDynamic("tmpdir")(tmpdir.asInstanceOf[js.Any])
+    if (win32metadata != null) __obj.updateDynamic("win32metadata")(win32metadata)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -26,3 +26,57 @@ trait UsersResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
 }
 
+object UsersResource {
+  @scala.inline
+  def apply(
+    addPublicKey: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[User]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UserList]
+    ],
+    removePublicKey: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotClouduseraccountsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
+    ]
+  ): UsersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addPublicKey")(addPublicKey)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("removePublicKey")(removePublicKey)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.asInstanceOf[UsersResource]
+  }
+}
+

@@ -60,3 +60,36 @@ trait Anon_BottomEvent extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_BottomEvent {
+  @scala.inline
+  def apply(
+    bottom: java.lang.String | scala.Double = null,
+    event: js.Any = null,
+    height: scala.Int | scala.Double = null,
+    left: java.lang.String | scala.Double = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    modalIndex: scala.Int | scala.Double = null,
+    move: js.UndefOr[scala.Boolean] = js.undefined,
+    resize: js.UndefOr[scala.Boolean] = js.undefined,
+    right: java.lang.String | scala.Double = null,
+    top: java.lang.String | scala.Double = null,
+    tpl: js.Any = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_BottomEvent = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (modalIndex != null) __obj.updateDynamic("modalIndex")(modalIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(move)) __obj.updateDynamic("move")(move)
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BottomEvent]
+  }
+}
+

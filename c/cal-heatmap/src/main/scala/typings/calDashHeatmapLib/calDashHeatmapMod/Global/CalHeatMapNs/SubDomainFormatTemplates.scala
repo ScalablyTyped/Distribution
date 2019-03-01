@@ -12,3 +12,13 @@ trait SubDomainFormatTemplates extends js.Object {
   var filled: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SubDomainFormatTemplates {
+  @scala.inline
+  def apply(empty: java.lang.String = null, filled: java.lang.String = null): SubDomainFormatTemplates = {
+    val __obj = js.Dynamic.literal()
+    if (empty != null) __obj.updateDynamic("empty")(empty)
+    if (filled != null) __obj.updateDynamic("filled")(filled)
+    __obj.asInstanceOf[SubDomainFormatTemplates]
+  }
+}
+

@@ -13,3 +13,22 @@ trait ICollapseOptions extends js.Object {
   var startCollapsed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ICollapseOptions {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String = null,
+    allowMultiple: js.UndefOr[scala.Boolean] = js.undefined,
+    animation: java.lang.String = null,
+    disallowToggle: js.UndefOr[scala.Boolean] = js.undefined,
+    startCollapsed: js.UndefOr[scala.Boolean] = js.undefined
+  ): ICollapseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(disallowToggle)) __obj.updateDynamic("disallowToggle")(disallowToggle)
+    if (!js.isUndefined(startCollapsed)) __obj.updateDynamic("startCollapsed")(startCollapsed)
+    __obj.asInstanceOf[ICollapseOptions]
+  }
+}
+

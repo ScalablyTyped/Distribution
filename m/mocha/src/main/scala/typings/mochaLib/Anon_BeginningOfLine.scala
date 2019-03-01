@@ -28,3 +28,22 @@ trait Anon_BeginningOfLine extends js.Object {
   def show(): scala.Unit
 }
 
+object Anon_BeginningOfLine {
+  @scala.inline
+  def apply(
+    CR: js.Function0[scala.Unit],
+    beginningOfLine: js.Function0[scala.Unit],
+    deleteLine: js.Function0[scala.Unit],
+    hide: js.Function0[scala.Unit],
+    show: js.Function0[scala.Unit]
+  ): Anon_BeginningOfLine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CR")(CR)
+    __obj.updateDynamic("beginningOfLine")(beginningOfLine)
+    __obj.updateDynamic("deleteLine")(deleteLine)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[Anon_BeginningOfLine]
+  }
+}
+

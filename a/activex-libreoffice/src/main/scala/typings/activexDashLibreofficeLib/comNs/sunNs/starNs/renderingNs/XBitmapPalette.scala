@@ -58,3 +58,39 @@ trait XBitmapPalette
   ): scala.Boolean
 }
 
+object XBitmapPalette {
+  @scala.inline
+  def apply(
+    ColorSpace: XColorSpace,
+    NumberOfEntries: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getColorSpace: js.Function0[XColorSpace],
+    getIndex: js.Function2[
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent]], 
+      scala.Double, 
+      scala.Boolean
+    ],
+    getNumberOfEntries: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setIndex: js.Function3[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ColorComponent], 
+      scala.Boolean, 
+      scala.Double, 
+      scala.Boolean
+    ]
+  ): XBitmapPalette = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColorSpace")(ColorSpace)
+    __obj.updateDynamic("NumberOfEntries")(NumberOfEntries)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getColorSpace")(getColorSpace)
+    __obj.updateDynamic("getIndex")(getIndex)
+    __obj.updateDynamic("getNumberOfEntries")(getNumberOfEntries)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setIndex")(setIndex)
+    __obj.asInstanceOf[XBitmapPalette]
+  }
+}
+

@@ -35,3 +35,22 @@ trait ClassnamesConfigurations extends js.Object {
   var vertical: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClassnamesConfigurations {
+  @scala.inline
+  def apply(
+    divider: java.lang.String = null,
+    inset: java.lang.String = null,
+    panel: java.lang.String = null,
+    selected: java.lang.String = null,
+    vertical: java.lang.String = null
+  ): ClassnamesConfigurations = {
+    val __obj = js.Dynamic.literal()
+    if (divider != null) __obj.updateDynamic("divider")(divider)
+    if (inset != null) __obj.updateDynamic("inset")(inset)
+    if (panel != null) __obj.updateDynamic("panel")(panel)
+    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[ClassnamesConfigurations]
+  }
+}
+

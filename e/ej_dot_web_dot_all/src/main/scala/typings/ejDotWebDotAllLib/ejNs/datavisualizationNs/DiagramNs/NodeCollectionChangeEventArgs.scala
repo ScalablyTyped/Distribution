@@ -23,3 +23,22 @@ trait NodeCollectionChangeEventArgs extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeCollectionChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    changeType: java.lang.String = null,
+    diagramId: java.lang.String = null,
+    element: js.Any = null,
+    state: java.lang.String = null
+  ): NodeCollectionChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[NodeCollectionChangeEventArgs]
+  }
+}
+

@@ -14,3 +14,12 @@ trait Context extends js.Object {
   var rules: js.UndefOr[js.Array[ContextRule]] = js.undefined
 }
 
+object Context {
+  @scala.inline
+  def apply(rules: js.Array[ContextRule] = null): Context = {
+    val __obj = js.Dynamic.literal()
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[Context]
+  }
+}
+

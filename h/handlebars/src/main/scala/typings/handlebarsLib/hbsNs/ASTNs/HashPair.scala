@@ -10,3 +10,14 @@ trait HashPair extends Node {
   var value: Expression
 }
 
+object HashPair {
+  @scala.inline
+  def apply(key: java.lang.String, loc: SourceLocation, `type`: java.lang.String, value: Expression): HashPair = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("loc")(loc)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[HashPair]
+  }
+}
+

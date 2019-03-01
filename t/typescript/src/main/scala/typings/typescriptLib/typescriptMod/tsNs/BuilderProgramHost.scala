@@ -21,3 +21,18 @@ trait BuilderProgramHost extends js.Object {
   def useCaseSensitiveFileNames(): scala.Boolean
 }
 
+object BuilderProgramHost {
+  @scala.inline
+  def apply(
+    useCaseSensitiveFileNames: js.Function0[scala.Boolean],
+    createHash: js.Function1[/* data */ java.lang.String, java.lang.String] = null,
+    writeFile: WriteFileCallback = null
+  ): BuilderProgramHost = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("useCaseSensitiveFileNames")(useCaseSensitiveFileNames)
+    if (createHash != null) __obj.updateDynamic("createHash")(createHash)
+    if (writeFile != null) __obj.updateDynamic("writeFile")(writeFile)
+    __obj.asInstanceOf[BuilderProgramHost]
+  }
+}
+

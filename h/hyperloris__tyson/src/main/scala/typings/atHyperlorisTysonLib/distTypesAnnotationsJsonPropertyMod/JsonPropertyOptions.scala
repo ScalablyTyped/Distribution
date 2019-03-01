@@ -40,3 +40,22 @@ trait JsonPropertyOptions extends js.Object {
   var `type`: js.UndefOr[atHyperlorisTysonLib.distTypesReflectTypeTokenMod.ClassType[_] | js.Array[_]] = js.undefined
 }
 
+object JsonPropertyOptions {
+  @scala.inline
+  def apply(
+    access: Access = null,
+    ignoreType: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: atHyperlorisTysonLib.distTypesReflectTypeTokenMod.ClassType[_] | js.Array[_] = null
+  ): JsonPropertyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (access != null) __obj.updateDynamic("access")(access)
+    if (!js.isUndefined(ignoreType)) __obj.updateDynamic("ignoreType")(ignoreType)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JsonPropertyOptions]
+  }
+}
+

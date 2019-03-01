@@ -44,3 +44,30 @@ trait XDropTargetListener
   def dropActionChanged(dtde: DropTargetDragEvent): scala.Unit
 }
 
+object XDropTargetListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    dragEnter: js.Function1[DropTargetDragEnterEvent, scala.Unit],
+    dragExit: js.Function1[DropTargetEvent, scala.Unit],
+    dragOver: js.Function1[DropTargetDragEvent, scala.Unit],
+    drop: js.Function1[DropTargetDropEvent, scala.Unit],
+    dropActionChanged: js.Function1[DropTargetDragEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDropTargetListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("dragEnter")(dragEnter)
+    __obj.updateDynamic("dragExit")(dragExit)
+    __obj.updateDynamic("dragOver")(dragOver)
+    __obj.updateDynamic("drop")(drop)
+    __obj.updateDynamic("dropActionChanged")(dropActionChanged)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDropTargetListener]
+  }
+}
+

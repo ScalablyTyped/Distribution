@@ -16,3 +16,13 @@ trait ListBackupsOutput extends js.Object {
   var LastEvaluatedBackupArn: js.UndefOr[BackupArn] = js.undefined
 }
 
+object ListBackupsOutput {
+  @scala.inline
+  def apply(BackupSummaries: BackupSummaries = null, LastEvaluatedBackupArn: BackupArn = null): ListBackupsOutput = {
+    val __obj = js.Dynamic.literal()
+    if (BackupSummaries != null) __obj.updateDynamic("BackupSummaries")(BackupSummaries)
+    if (LastEvaluatedBackupArn != null) __obj.updateDynamic("LastEvaluatedBackupArn")(LastEvaluatedBackupArn)
+    __obj.asInstanceOf[ListBackupsOutput]
+  }
+}
+

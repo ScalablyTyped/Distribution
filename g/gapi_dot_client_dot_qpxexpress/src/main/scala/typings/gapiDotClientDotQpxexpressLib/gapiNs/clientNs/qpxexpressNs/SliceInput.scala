@@ -33,3 +33,34 @@ trait SliceInput extends js.Object {
   var prohibitedCarrier: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object SliceInput {
+  @scala.inline
+  def apply(
+    alliance: java.lang.String = null,
+    date: java.lang.String = null,
+    destination: java.lang.String = null,
+    kind: java.lang.String = null,
+    maxConnectionDuration: scala.Int | scala.Double = null,
+    maxStops: scala.Int | scala.Double = null,
+    origin: java.lang.String = null,
+    permittedCarrier: js.Array[java.lang.String] = null,
+    permittedDepartureTime: TimeOfDayRange = null,
+    preferredCabin: java.lang.String = null,
+    prohibitedCarrier: js.Array[java.lang.String] = null
+  ): SliceInput = {
+    val __obj = js.Dynamic.literal()
+    if (alliance != null) __obj.updateDynamic("alliance")(alliance)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maxConnectionDuration != null) __obj.updateDynamic("maxConnectionDuration")(maxConnectionDuration.asInstanceOf[js.Any])
+    if (maxStops != null) __obj.updateDynamic("maxStops")(maxStops.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (permittedCarrier != null) __obj.updateDynamic("permittedCarrier")(permittedCarrier)
+    if (permittedDepartureTime != null) __obj.updateDynamic("permittedDepartureTime")(permittedDepartureTime)
+    if (preferredCabin != null) __obj.updateDynamic("preferredCabin")(preferredCabin)
+    if (prohibitedCarrier != null) __obj.updateDynamic("prohibitedCarrier")(prohibitedCarrier)
+    __obj.asInstanceOf[SliceInput]
+  }
+}
+

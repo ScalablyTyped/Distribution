@@ -29,3 +29,18 @@ trait TimepickerOptions extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TimepickerOptions {
+  @scala.inline
+  def apply(
+    end: scala.Int | scala.Double = null,
+    format: java.lang.String = null,
+    start: scala.Int | scala.Double = null
+  ): TimepickerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimepickerOptions]
+  }
+}
+

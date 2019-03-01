@@ -93,3 +93,40 @@ trait ChartAxisOptions extends js.Object {
   var viewportMinimum: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartAxisOptions {
+  @scala.inline
+  def apply(
+    lineColor: java.lang.String = null,
+    lineDashType: canvasjsLib.DashType = null,
+    lineThickness: scala.Int | scala.Double = null,
+    margin: scala.Int | scala.Double = null,
+    maximum: scala.Int | scala.Double = null,
+    minimum: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    titleFontColor: java.lang.String = null,
+    titleFontFamily: java.lang.String = null,
+    titleFontSize: scala.Int | scala.Double = null,
+    titleFontStyle: java.lang.String = null,
+    titleFontWeight: java.lang.String = null,
+    viewportMaximum: scala.Int | scala.Double = null,
+    viewportMinimum: scala.Int | scala.Double = null
+  ): ChartAxisOptions = {
+    val __obj = js.Dynamic.literal()
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineDashType != null) __obj.updateDynamic("lineDashType")(lineDashType)
+    if (lineThickness != null) __obj.updateDynamic("lineThickness")(lineThickness.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleFontColor != null) __obj.updateDynamic("titleFontColor")(titleFontColor)
+    if (titleFontFamily != null) __obj.updateDynamic("titleFontFamily")(titleFontFamily)
+    if (titleFontSize != null) __obj.updateDynamic("titleFontSize")(titleFontSize.asInstanceOf[js.Any])
+    if (titleFontStyle != null) __obj.updateDynamic("titleFontStyle")(titleFontStyle)
+    if (titleFontWeight != null) __obj.updateDynamic("titleFontWeight")(titleFontWeight)
+    if (viewportMaximum != null) __obj.updateDynamic("viewportMaximum")(viewportMaximum.asInstanceOf[js.Any])
+    if (viewportMinimum != null) __obj.updateDynamic("viewportMinimum")(viewportMinimum.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartAxisOptions]
+  }
+}
+

@@ -47,3 +47,26 @@ trait DynamicLinkInfo extends js.Object {
   var socialMetaTagInfo: js.UndefOr[SocialMetaTagInfo] = js.undefined
 }
 
+object DynamicLinkInfo {
+  @scala.inline
+  def apply(
+    analyticsInfo: AnalyticsInfo = null,
+    androidInfo: AndroidInfo = null,
+    dynamicLinkDomain: java.lang.String = null,
+    iosInfo: IosInfo = null,
+    link: java.lang.String = null,
+    navigationInfo: NavigationInfo = null,
+    socialMetaTagInfo: SocialMetaTagInfo = null
+  ): DynamicLinkInfo = {
+    val __obj = js.Dynamic.literal()
+    if (analyticsInfo != null) __obj.updateDynamic("analyticsInfo")(analyticsInfo)
+    if (androidInfo != null) __obj.updateDynamic("androidInfo")(androidInfo)
+    if (dynamicLinkDomain != null) __obj.updateDynamic("dynamicLinkDomain")(dynamicLinkDomain)
+    if (iosInfo != null) __obj.updateDynamic("iosInfo")(iosInfo)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (navigationInfo != null) __obj.updateDynamic("navigationInfo")(navigationInfo)
+    if (socialMetaTagInfo != null) __obj.updateDynamic("socialMetaTagInfo")(socialMetaTagInfo)
+    __obj.asInstanceOf[DynamicLinkInfo]
+  }
+}
+

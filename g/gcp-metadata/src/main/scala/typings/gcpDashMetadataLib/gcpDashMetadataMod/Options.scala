@@ -11,3 +11,18 @@ trait Options extends js.Object {
   var property: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    headers: nodeLib.httpMod.OutgoingHttpHeaders = null,
+    params: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    property: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (property != null) __obj.updateDynamic("property")(property)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -26,3 +26,46 @@ trait DevicesResource extends js.Object {
   def patch(request: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Device]
 }
 
+object DevicesResource {
+  @scala.inline
+  def apply(
+    configVersions: ConfigVersionsResource,
+    create: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Device]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Device]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackDeviceIds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDevicesResponse]
+    ],
+    modifyCloudToDeviceConfig: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeviceConfig]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Device]
+    ],
+    states: StatesResource
+  ): DevicesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configVersions")(configVersions)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("modifyCloudToDeviceConfig")(modifyCloudToDeviceConfig)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("states")(states)
+    __obj.asInstanceOf[DevicesResource]
+  }
+}
+

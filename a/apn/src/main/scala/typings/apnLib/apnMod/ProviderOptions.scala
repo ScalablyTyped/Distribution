@@ -44,3 +44,30 @@ trait ProviderOptions extends js.Object {
   var token: js.UndefOr[ProviderToken] = js.undefined
 }
 
+object ProviderOptions {
+  @scala.inline
+  def apply(
+    ca: js.Array[java.lang.String | nodeLib.Buffer] = null,
+    cert: java.lang.String | nodeLib.Buffer = null,
+    connectionRetryLimit: scala.Int | scala.Double = null,
+    key: java.lang.String | nodeLib.Buffer = null,
+    passphrase: java.lang.String = null,
+    pfx: java.lang.String | nodeLib.Buffer = null,
+    production: js.UndefOr[scala.Boolean] = js.undefined,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    token: ProviderToken = null
+  ): ProviderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ca != null) __obj.updateDynamic("ca")(ca)
+    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (connectionRetryLimit != null) __obj.updateDynamic("connectionRetryLimit")(connectionRetryLimit.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
+    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[ProviderOptions]
+  }
+}
+

@@ -26,3 +26,24 @@ trait ResizeEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResizeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    nextPane: js.Any = null,
+    prevPane: js.Any = null,
+    splitbarIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): ResizeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (nextPane != null) __obj.updateDynamic("nextPane")(nextPane)
+    if (prevPane != null) __obj.updateDynamic("prevPane")(prevPane)
+    if (splitbarIndex != null) __obj.updateDynamic("splitbarIndex")(splitbarIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ResizeEventArgs]
+  }
+}
+

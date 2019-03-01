@@ -26,3 +26,20 @@ trait RowMetadata[T] extends js.Object {
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RowMetadata {
+  @scala.inline
+  def apply[T](
+    columns: /* import warning: ImportType.apply Failed type conversion: {[index: string] : slickgrid.Slick.ColumnMetadata<T>, [index: number] : slickgrid.Slick.ColumnMetadata<T>} */ js.Any = null,
+    cssClasses: java.lang.String = null,
+    focusable: js.UndefOr[scala.Boolean] = js.undefined,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined
+  ): RowMetadata[T] = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (cssClasses != null) __obj.updateDynamic("cssClasses")(cssClasses)
+    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    __obj.asInstanceOf[RowMetadata[T]]
+  }
+}
+

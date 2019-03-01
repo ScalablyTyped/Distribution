@@ -61,3 +61,30 @@ trait XPackageTypeInfo extends js.Object {
   def getShortDescription(): java.lang.String
 }
 
+object XPackageTypeInfo {
+  @scala.inline
+  def apply(
+    Description: java.lang.String,
+    FileFilter: java.lang.String,
+    MediaType: java.lang.String,
+    ShortDescription: java.lang.String,
+    getDescription: js.Function0[java.lang.String],
+    getFileFilter: js.Function0[java.lang.String],
+    getIcon: js.Function2[scala.Boolean, scala.Boolean, js.Any],
+    getMediaType: js.Function0[java.lang.String],
+    getShortDescription: js.Function0[java.lang.String]
+  ): XPackageTypeInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("FileFilter")(FileFilter)
+    __obj.updateDynamic("MediaType")(MediaType)
+    __obj.updateDynamic("ShortDescription")(ShortDescription)
+    __obj.updateDynamic("getDescription")(getDescription)
+    __obj.updateDynamic("getFileFilter")(getFileFilter)
+    __obj.updateDynamic("getIcon")(getIcon)
+    __obj.updateDynamic("getMediaType")(getMediaType)
+    __obj.updateDynamic("getShortDescription")(getShortDescription)
+    __obj.asInstanceOf[XPackageTypeInfo]
+  }
+}
+

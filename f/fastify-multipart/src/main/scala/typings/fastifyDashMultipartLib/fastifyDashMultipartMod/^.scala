@@ -7,7 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fastify-multipart", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def apply(): scala.Unit = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[
+      fastifyLib.fastifyMod.fastifyNs.Plugin[
+        nodeLib.httpMod.Server, 
+        nodeLib.httpMod.IncomingMessage, 
+        nodeLib.httpMod.ServerResponse, 
+        fastifyDashMultipartLib.Anon_Limits
+      ]
+    ]
 

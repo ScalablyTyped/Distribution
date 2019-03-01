@@ -13,3 +13,12 @@ trait Anon_Bits extends js.Object {
   var bits: scala.Double
 }
 
+object Anon_Bits {
+  @scala.inline
+  def apply(bits: scala.Double): Anon_Bits = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bits")(bits)
+    __obj.asInstanceOf[Anon_Bits]
+  }
+}
+

@@ -14,3 +14,24 @@ trait NetConnectionsData extends js.Object {
   var state: java.lang.String
 }
 
+object NetConnectionsData {
+  @scala.inline
+  def apply(
+    localaddress: java.lang.String,
+    localport: java.lang.String,
+    peeraddress: java.lang.String,
+    peerport: java.lang.String,
+    protocol: java.lang.String,
+    state: java.lang.String
+  ): NetConnectionsData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("localaddress")(localaddress)
+    __obj.updateDynamic("localport")(localport)
+    __obj.updateDynamic("peeraddress")(peeraddress)
+    __obj.updateDynamic("peerport")(peerport)
+    __obj.updateDynamic("protocol")(protocol)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[NetConnectionsData]
+  }
+}
+

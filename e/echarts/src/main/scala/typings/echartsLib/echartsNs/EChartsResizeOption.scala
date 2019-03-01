@@ -20,3 +20,18 @@ trait EChartsResizeOption extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object EChartsResizeOption {
+  @scala.inline
+  def apply(
+    height: scala.Double | java.lang.String = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Double | java.lang.String = null
+  ): EChartsResizeOption = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EChartsResizeOption]
+  }
+}
+

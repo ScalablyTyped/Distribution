@@ -35,3 +35,22 @@ trait XMetadatable extends XURI {
   def ensureMetadataReference(): scala.Unit
 }
 
+object XMetadatable {
+  @scala.inline
+  def apply(
+    LocalName: java.lang.String,
+    MetadataReference: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair,
+    Namespace: java.lang.String,
+    StringValue: java.lang.String,
+    ensureMetadataReference: js.Function0[scala.Unit]
+  ): XMetadatable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LocalName")(LocalName)
+    __obj.updateDynamic("MetadataReference")(MetadataReference)
+    __obj.updateDynamic("Namespace")(Namespace)
+    __obj.updateDynamic("StringValue")(StringValue)
+    __obj.updateDynamic("ensureMetadataReference")(ensureMetadataReference)
+    __obj.asInstanceOf[XMetadatable]
+  }
+}
+

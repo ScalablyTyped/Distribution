@@ -13,3 +13,17 @@ trait Anon_Parser extends js.Object {
   def parser(raw: hapiLib.hapiMod.UtilNs.Dictionary[java.lang.String]): hapiLib.hapiMod.UtilNs.Dictionary[_]
 }
 
+object Anon_Parser {
+  @scala.inline
+  def apply(
+    parser: js.Function1[
+      hapiLib.hapiMod.UtilNs.Dictionary[java.lang.String], 
+      hapiLib.hapiMod.UtilNs.Dictionary[_]
+    ]
+  ): Anon_Parser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parser")(parser)
+    __obj.asInstanceOf[Anon_Parser]
+  }
+}
+

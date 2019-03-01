@@ -12,3 +12,20 @@ trait Anon_BorderRadius extends js.Object {
   var svgStyle: js.UndefOr[js.Object] = js.undefined
 }
 
+object Anon_BorderRadius {
+  @scala.inline
+  def apply(
+    borderRadius: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    svgClassName: java.lang.String = null,
+    svgStyle: js.Object = null
+  ): Anon_BorderRadius = {
+    val __obj = js.Dynamic.literal()
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
+    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)
+    __obj.asInstanceOf[Anon_BorderRadius]
+  }
+}
+

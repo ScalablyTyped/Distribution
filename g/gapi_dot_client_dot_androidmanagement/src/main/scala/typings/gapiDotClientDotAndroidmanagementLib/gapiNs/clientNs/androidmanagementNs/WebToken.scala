@@ -19,3 +19,20 @@ trait WebToken extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WebToken {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    parentFrameUrl: java.lang.String = null,
+    permissions: js.Array[java.lang.String] = null,
+    value: java.lang.String = null
+  ): WebToken = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parentFrameUrl != null) __obj.updateDynamic("parentFrameUrl")(parentFrameUrl)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[WebToken]
+  }
+}
+

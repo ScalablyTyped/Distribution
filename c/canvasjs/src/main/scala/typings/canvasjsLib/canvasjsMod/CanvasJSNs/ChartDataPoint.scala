@@ -40,3 +40,84 @@ trait ChartDataPoint extends ChartDataCommon {
   var z: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartDataPoint {
+  @scala.inline
+  def apply(
+    click: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    color: java.lang.String = null,
+    exploded: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    indexLabel: java.lang.String = null,
+    indexLabelBackgroundColor: java.lang.String = null,
+    indexLabelFontColor: java.lang.String = null,
+    indexLabelFontFamily: java.lang.String = null,
+    indexLabelFontSize: scala.Int | scala.Double = null,
+    indexLabelFontStyle: java.lang.String = null,
+    indexLabelFontWeight: java.lang.String = null,
+    indexLabelFormatter: js.Function1[/* e */ canvasjsLib.Anon_ChartDataPoint, java.lang.String] = null,
+    indexLabelLineColor: java.lang.String = null,
+    indexLabelLineDashType: canvasjsLib.DashType = null,
+    indexLabelLineThickness: scala.Int | scala.Double = null,
+    indexLabelOrientation: java.lang.String = null,
+    indexLabelPlacement: java.lang.String = null,
+    label: java.lang.String = null,
+    legendMarkerBorderColor: java.lang.String = null,
+    legendMarkerBorderThickness: scala.Int | scala.Double = null,
+    legendMarkerColor: java.lang.String = null,
+    legendMarkerType: java.lang.String = null,
+    legendText: java.lang.String = null,
+    markerBorderColor: java.lang.String = null,
+    markerBorderThickness: scala.Int | scala.Double = null,
+    markerColor: java.lang.String = null,
+    markerSize: scala.Int | scala.Double = null,
+    markerType: java.lang.String = null,
+    mousemove: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    mouseout: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    mouseover: js.Function1[/* event */ ChartEvent, scala.Unit] = null,
+    name: java.lang.String = null,
+    toolTipContent: java.lang.String = null,
+    x: scala.Double | stdLib.Date = null,
+    y: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null
+  ): ChartDataPoint = {
+    val __obj = js.Dynamic.literal()
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(exploded)) __obj.updateDynamic("exploded")(exploded)
+    if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled)
+    if (indexLabel != null) __obj.updateDynamic("indexLabel")(indexLabel)
+    if (indexLabelBackgroundColor != null) __obj.updateDynamic("indexLabelBackgroundColor")(indexLabelBackgroundColor)
+    if (indexLabelFontColor != null) __obj.updateDynamic("indexLabelFontColor")(indexLabelFontColor)
+    if (indexLabelFontFamily != null) __obj.updateDynamic("indexLabelFontFamily")(indexLabelFontFamily)
+    if (indexLabelFontSize != null) __obj.updateDynamic("indexLabelFontSize")(indexLabelFontSize.asInstanceOf[js.Any])
+    if (indexLabelFontStyle != null) __obj.updateDynamic("indexLabelFontStyle")(indexLabelFontStyle)
+    if (indexLabelFontWeight != null) __obj.updateDynamic("indexLabelFontWeight")(indexLabelFontWeight)
+    if (indexLabelFormatter != null) __obj.updateDynamic("indexLabelFormatter")(indexLabelFormatter)
+    if (indexLabelLineColor != null) __obj.updateDynamic("indexLabelLineColor")(indexLabelLineColor)
+    if (indexLabelLineDashType != null) __obj.updateDynamic("indexLabelLineDashType")(indexLabelLineDashType)
+    if (indexLabelLineThickness != null) __obj.updateDynamic("indexLabelLineThickness")(indexLabelLineThickness.asInstanceOf[js.Any])
+    if (indexLabelOrientation != null) __obj.updateDynamic("indexLabelOrientation")(indexLabelOrientation)
+    if (indexLabelPlacement != null) __obj.updateDynamic("indexLabelPlacement")(indexLabelPlacement)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (legendMarkerBorderColor != null) __obj.updateDynamic("legendMarkerBorderColor")(legendMarkerBorderColor)
+    if (legendMarkerBorderThickness != null) __obj.updateDynamic("legendMarkerBorderThickness")(legendMarkerBorderThickness.asInstanceOf[js.Any])
+    if (legendMarkerColor != null) __obj.updateDynamic("legendMarkerColor")(legendMarkerColor)
+    if (legendMarkerType != null) __obj.updateDynamic("legendMarkerType")(legendMarkerType)
+    if (legendText != null) __obj.updateDynamic("legendText")(legendText)
+    if (markerBorderColor != null) __obj.updateDynamic("markerBorderColor")(markerBorderColor)
+    if (markerBorderThickness != null) __obj.updateDynamic("markerBorderThickness")(markerBorderThickness.asInstanceOf[js.Any])
+    if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor)
+    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (markerType != null) __obj.updateDynamic("markerType")(markerType)
+    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove)
+    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout)
+    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (toolTipContent != null) __obj.updateDynamic("toolTipContent")(toolTipContent)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartDataPoint]
+  }
+}
+

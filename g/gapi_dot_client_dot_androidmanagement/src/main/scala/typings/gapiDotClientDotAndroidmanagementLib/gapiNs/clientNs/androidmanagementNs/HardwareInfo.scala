@@ -36,3 +36,40 @@ trait HardwareInfo extends js.Object {
   var skinThrottlingTemperatures: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object HardwareInfo {
+  @scala.inline
+  def apply(
+    batteryShutdownTemperatures: js.Array[scala.Double] = null,
+    batteryThrottlingTemperatures: js.Array[scala.Double] = null,
+    brand: java.lang.String = null,
+    cpuShutdownTemperatures: js.Array[scala.Double] = null,
+    cpuThrottlingTemperatures: js.Array[scala.Double] = null,
+    deviceBasebandVersion: java.lang.String = null,
+    gpuShutdownTemperatures: js.Array[scala.Double] = null,
+    gpuThrottlingTemperatures: js.Array[scala.Double] = null,
+    hardware: java.lang.String = null,
+    manufacturer: java.lang.String = null,
+    model: java.lang.String = null,
+    serialNumber: java.lang.String = null,
+    skinShutdownTemperatures: js.Array[scala.Double] = null,
+    skinThrottlingTemperatures: js.Array[scala.Double] = null
+  ): HardwareInfo = {
+    val __obj = js.Dynamic.literal()
+    if (batteryShutdownTemperatures != null) __obj.updateDynamic("batteryShutdownTemperatures")(batteryShutdownTemperatures)
+    if (batteryThrottlingTemperatures != null) __obj.updateDynamic("batteryThrottlingTemperatures")(batteryThrottlingTemperatures)
+    if (brand != null) __obj.updateDynamic("brand")(brand)
+    if (cpuShutdownTemperatures != null) __obj.updateDynamic("cpuShutdownTemperatures")(cpuShutdownTemperatures)
+    if (cpuThrottlingTemperatures != null) __obj.updateDynamic("cpuThrottlingTemperatures")(cpuThrottlingTemperatures)
+    if (deviceBasebandVersion != null) __obj.updateDynamic("deviceBasebandVersion")(deviceBasebandVersion)
+    if (gpuShutdownTemperatures != null) __obj.updateDynamic("gpuShutdownTemperatures")(gpuShutdownTemperatures)
+    if (gpuThrottlingTemperatures != null) __obj.updateDynamic("gpuThrottlingTemperatures")(gpuThrottlingTemperatures)
+    if (hardware != null) __obj.updateDynamic("hardware")(hardware)
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber)
+    if (skinShutdownTemperatures != null) __obj.updateDynamic("skinShutdownTemperatures")(skinShutdownTemperatures)
+    if (skinThrottlingTemperatures != null) __obj.updateDynamic("skinThrottlingTemperatures")(skinThrottlingTemperatures)
+    __obj.asInstanceOf[HardwareInfo]
+  }
+}
+

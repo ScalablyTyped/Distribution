@@ -23,3 +23,18 @@ trait ServingRestriction extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServingRestriction {
+  @scala.inline
+  def apply(
+    contexts: js.Array[ServingContext] = null,
+    disapprovalReasons: js.Array[Disapproval] = null,
+    status: java.lang.String = null
+  ): ServingRestriction = {
+    val __obj = js.Dynamic.literal()
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
+    if (disapprovalReasons != null) __obj.updateDynamic("disapprovalReasons")(disapprovalReasons)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[ServingRestriction]
+  }
+}
+

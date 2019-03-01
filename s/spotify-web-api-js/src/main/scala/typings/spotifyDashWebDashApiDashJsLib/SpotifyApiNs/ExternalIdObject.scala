@@ -17,3 +17,14 @@ trait ExternalIdObject extends js.Object {
   var upc: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExternalIdObject {
+  @scala.inline
+  def apply(ean: java.lang.String = null, isrc: java.lang.String = null, upc: java.lang.String = null): ExternalIdObject = {
+    val __obj = js.Dynamic.literal()
+    if (ean != null) __obj.updateDynamic("ean")(ean)
+    if (isrc != null) __obj.updateDynamic("isrc")(isrc)
+    if (upc != null) __obj.updateDynamic("upc")(upc)
+    __obj.asInstanceOf[ExternalIdObject]
+  }
+}
+

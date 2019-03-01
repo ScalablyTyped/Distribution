@@ -31,3 +31,23 @@ trait AmqpConnectionManagerOptions extends js.Object {
   var reconnectTimeInSeconds: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AmqpConnectionManagerOptions {
+  @scala.inline
+  def apply(
+    connectionOptions: nodeLib.tlsMod.SecureContextOptions = null,
+    findServers: (js.Function1[
+      /* callback */ js.Function1[/* urls */ java.lang.String | js.Array[java.lang.String], scala.Unit], 
+      scala.Unit
+    ]) | (js.Function0[js.Promise[java.lang.String | js.Array[java.lang.String]]]) = null,
+    heartbeatIntervalInSeconds: scala.Int | scala.Double = null,
+    reconnectTimeInSeconds: scala.Int | scala.Double = null
+  ): AmqpConnectionManagerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (connectionOptions != null) __obj.updateDynamic("connectionOptions")(connectionOptions)
+    if (findServers != null) __obj.updateDynamic("findServers")(findServers.asInstanceOf[js.Any])
+    if (heartbeatIntervalInSeconds != null) __obj.updateDynamic("heartbeatIntervalInSeconds")(heartbeatIntervalInSeconds.asInstanceOf[js.Any])
+    if (reconnectTimeInSeconds != null) __obj.updateDynamic("reconnectTimeInSeconds")(reconnectTimeInSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AmqpConnectionManagerOptions]
+  }
+}
+

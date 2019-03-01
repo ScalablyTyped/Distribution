@@ -17,3 +17,30 @@ trait IRowConfig extends js.Object {
   def beforeSelectionChangeCallback(): scala.Unit
 }
 
+object IRowConfig {
+  @scala.inline
+  def apply(
+    afterSelectionChangeCallback: js.Function0[scala.Unit],
+    beforeSelectionChangeCallback: js.Function0[scala.Unit],
+    enableCellSelection: scala.Boolean,
+    enableRowSelection: scala.Boolean,
+    jqueryUITheme: scala.Boolean,
+    rowClasses: js.Array[java.lang.String],
+    rowHeight: scala.Double,
+    selectWithCheckboxOnly: scala.Boolean,
+    selectedItems: js.Array[_]
+  ): IRowConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("afterSelectionChangeCallback")(afterSelectionChangeCallback)
+    __obj.updateDynamic("beforeSelectionChangeCallback")(beforeSelectionChangeCallback)
+    __obj.updateDynamic("enableCellSelection")(enableCellSelection)
+    __obj.updateDynamic("enableRowSelection")(enableRowSelection)
+    __obj.updateDynamic("jqueryUITheme")(jqueryUITheme)
+    __obj.updateDynamic("rowClasses")(rowClasses)
+    __obj.updateDynamic("rowHeight")(rowHeight)
+    __obj.updateDynamic("selectWithCheckboxOnly")(selectWithCheckboxOnly)
+    __obj.updateDynamic("selectedItems")(selectedItems)
+    __obj.asInstanceOf[IRowConfig]
+  }
+}
+

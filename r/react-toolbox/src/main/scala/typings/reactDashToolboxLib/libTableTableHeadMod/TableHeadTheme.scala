@@ -12,3 +12,12 @@ trait TableHeadTheme extends js.Object {
   var checkboxCell: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableHeadTheme {
+  @scala.inline
+  def apply(checkboxCell: java.lang.String = null): TableHeadTheme = {
+    val __obj = js.Dynamic.literal()
+    if (checkboxCell != null) __obj.updateDynamic("checkboxCell")(checkboxCell)
+    __obj.asInstanceOf[TableHeadTheme]
+  }
+}
+

@@ -73,3 +73,64 @@ trait ITokenPayload extends js.Object {
   var ver: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITokenPayload {
+  @scala.inline
+  def apply(
+    acr: passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.`0` | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.`1` = null,
+    aio: java.lang.String = null,
+    amr: js.Array[java.lang.String] = null,
+    appid: java.lang.String = null,
+    appidacr: passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.`0` | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.`1` | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.`2` = null,
+    aud: java.lang.String = null,
+    azp: java.lang.String = null,
+    azpacr: passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.`0` | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.`1` | passportDashAzureDashAdLib.passportDashAzureDashAdLibStrings.`2` = null,
+    exp: scala.Int | scala.Double = null,
+    groups: java.lang.String | js.Array[java.lang.String] = null,
+    hasgroups: passportDashAzureDashAdLib.passportDashAzureDashAdLibNumbers.`true` = null,
+    iat: scala.Int | scala.Double = null,
+    iss: java.lang.String = null,
+    name: java.lang.String = null,
+    nbf: scala.Int | scala.Double = null,
+    oid: java.lang.String = null,
+    preferred_name: java.lang.String = null,
+    rh: java.lang.String = null,
+    roles: java.lang.String = null,
+    scp: java.lang.String = null,
+    sub: java.lang.String = null,
+    tid: java.lang.String = null,
+    unique_name: java.lang.String = null,
+    upn: java.lang.String = null,
+    uti: java.lang.String = null,
+    ver: java.lang.String = null
+  ): ITokenPayload = {
+    val __obj = js.Dynamic.literal()
+    if (acr != null) __obj.updateDynamic("acr")(acr.asInstanceOf[js.Any])
+    if (aio != null) __obj.updateDynamic("aio")(aio)
+    if (amr != null) __obj.updateDynamic("amr")(amr)
+    if (appid != null) __obj.updateDynamic("appid")(appid)
+    if (appidacr != null) __obj.updateDynamic("appidacr")(appidacr.asInstanceOf[js.Any])
+    if (aud != null) __obj.updateDynamic("aud")(aud)
+    if (azp != null) __obj.updateDynamic("azp")(azp)
+    if (azpacr != null) __obj.updateDynamic("azpacr")(azpacr.asInstanceOf[js.Any])
+    if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
+    if (hasgroups != null) __obj.updateDynamic("hasgroups")(hasgroups)
+    if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
+    if (iss != null) __obj.updateDynamic("iss")(iss)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nbf != null) __obj.updateDynamic("nbf")(nbf.asInstanceOf[js.Any])
+    if (oid != null) __obj.updateDynamic("oid")(oid)
+    if (preferred_name != null) __obj.updateDynamic("preferred_name")(preferred_name)
+    if (rh != null) __obj.updateDynamic("rh")(rh)
+    if (roles != null) __obj.updateDynamic("roles")(roles)
+    if (scp != null) __obj.updateDynamic("scp")(scp)
+    if (sub != null) __obj.updateDynamic("sub")(sub)
+    if (tid != null) __obj.updateDynamic("tid")(tid)
+    if (unique_name != null) __obj.updateDynamic("unique_name")(unique_name)
+    if (upn != null) __obj.updateDynamic("upn")(upn)
+    if (uti != null) __obj.updateDynamic("uti")(uti)
+    if (ver != null) __obj.updateDynamic("ver")(ver)
+    __obj.asInstanceOf[ITokenPayload]
+  }
+}
+

@@ -40,3 +40,28 @@ trait BarFormatOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BarFormatOptions {
+  @scala.inline
+  def apply(
+    base: scala.Int | scala.Double = null,
+    colorNegative: java.lang.String = null,
+    colorPositive: java.lang.String = null,
+    drawZeroLine: js.UndefOr[scala.Boolean] = js.undefined,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    showValue: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): BarFormatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (colorNegative != null) __obj.updateDynamic("colorNegative")(colorNegative)
+    if (colorPositive != null) __obj.updateDynamic("colorPositive")(colorPositive)
+    if (!js.isUndefined(drawZeroLine)) __obj.updateDynamic("drawZeroLine")(drawZeroLine)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BarFormatOptions]
+  }
+}
+

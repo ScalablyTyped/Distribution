@@ -22,3 +22,13 @@ trait Anon_01AnonLabel extends js.Object {
   var `1`: js.UndefOr[Anon_Label] = js.undefined
 }
 
+object Anon_01AnonLabel {
+  @scala.inline
+  def apply(`0`: Anon_Label = null, `1`: Anon_Label = null): Anon_01AnonLabel = {
+    val __obj = js.Dynamic.literal()
+    if (`0` != null) __obj.updateDynamic("0")(`0`)
+    if (`1` != null) __obj.updateDynamic("1")(`1`)
+    __obj.asInstanceOf[Anon_01AnonLabel]
+  }
+}
+

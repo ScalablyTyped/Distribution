@@ -35,3 +35,30 @@ trait NodeEditEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeEditEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    id: java.lang.String = null,
+    model: Model = null,
+    newText: java.lang.String = null,
+    nodeDetails: js.Any = null,
+    oldText: java.lang.String = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): NodeEditEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (newText != null) __obj.updateDynamic("newText")(newText)
+    if (nodeDetails != null) __obj.updateDynamic("nodeDetails")(nodeDetails)
+    if (oldText != null) __obj.updateDynamic("oldText")(oldText)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodeEditEventArgs]
+  }
+}
+

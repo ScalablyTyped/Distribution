@@ -15,3 +15,13 @@ trait ISize extends js.Object {
   var w: scala.Double
 }
 
+object ISize {
+  @scala.inline
+  def apply(h: scala.Double, w: scala.Double): ISize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("w")(w)
+    __obj.asInstanceOf[ISize]
+  }
+}
+

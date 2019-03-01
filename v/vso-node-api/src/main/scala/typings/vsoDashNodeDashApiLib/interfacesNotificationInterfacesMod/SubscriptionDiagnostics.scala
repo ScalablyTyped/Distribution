@@ -12,3 +12,12 @@ trait SubscriptionDiagnostics extends js.Object {
   var notificationTracing: NotificationTracing
 }
 
+object SubscriptionDiagnostics {
+  @scala.inline
+  def apply(notificationTracing: NotificationTracing): SubscriptionDiagnostics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("notificationTracing")(notificationTracing)
+    __obj.asInstanceOf[SubscriptionDiagnostics]
+  }
+}
+

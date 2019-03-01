@@ -39,3 +39,46 @@ trait NotyOptions extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NotyOptions {
+  @scala.inline
+  def apply(
+    animation: NotyAnimationOptions = null,
+    buttons: js.Any = null,
+    callback: NotyCallbackOptions = null,
+    closeWith: js.Array[
+      jqueryDotNotyLib.jqueryDotNotyLibStrings.click | jqueryDotNotyLib.jqueryDotNotyLibStrings.button | jqueryDotNotyLib.jqueryDotNotyLibStrings.hover | jqueryDotNotyLib.jqueryDotNotyLibStrings.backdrop
+    ] = null,
+    dismissQueue: js.UndefOr[scala.Boolean] = js.undefined,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    killer: js.UndefOr[scala.Boolean] = js.undefined,
+    layout: java.lang.String = null,
+    maxVisible: scala.Int | scala.Double = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    progressBar: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    text: java.lang.String = null,
+    theme: java.lang.String = null,
+    timeout: js.Any = null,
+    `type`: java.lang.String = null
+  ): NotyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (closeWith != null) __obj.updateDynamic("closeWith")(closeWith)
+    if (!js.isUndefined(dismissQueue)) __obj.updateDynamic("dismissQueue")(dismissQueue)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (!js.isUndefined(killer)) __obj.updateDynamic("killer")(killer)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (maxVisible != null) __obj.updateDynamic("maxVisible")(maxVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NotyOptions]
+  }
+}
+

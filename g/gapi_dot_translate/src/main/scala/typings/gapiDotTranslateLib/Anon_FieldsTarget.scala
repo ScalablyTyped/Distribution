@@ -16,3 +16,13 @@ trait Anon_FieldsTarget extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_FieldsTarget {
+  @scala.inline
+  def apply(fields: java.lang.String = null, target: java.lang.String = null): Anon_FieldsTarget = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[Anon_FieldsTarget]
+  }
+}
+

@@ -11,3 +11,14 @@ trait MemberUpdateData extends js.Object {
   var vars: js.UndefOr[js.Object] = js.undefined
 }
 
+object MemberUpdateData {
+  @scala.inline
+  def apply(name: java.lang.String, subscribed: scala.Boolean, vars: js.Object = null): MemberUpdateData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("subscribed")(subscribed)
+    if (vars != null) __obj.updateDynamic("vars")(vars)
+    __obj.asInstanceOf[MemberUpdateData]
+  }
+}
+

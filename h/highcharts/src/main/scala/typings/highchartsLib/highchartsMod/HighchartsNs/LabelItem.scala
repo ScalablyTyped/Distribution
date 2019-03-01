@@ -10,3 +10,13 @@ trait LabelItem extends js.Object {
   var style: CSSObject
 }
 
+object LabelItem {
+  @scala.inline
+  def apply(html: java.lang.String, style: CSSObject): LabelItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("html")(html)
+    __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[LabelItem]
+  }
+}
+

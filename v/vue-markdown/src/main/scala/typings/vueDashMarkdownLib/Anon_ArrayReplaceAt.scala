@@ -24,3 +24,44 @@ trait Anon_ArrayReplaceAt extends js.Object {
   var unescapeMd: js.Any
 }
 
+object Anon_ArrayReplaceAt {
+  @scala.inline
+  def apply(
+    arrayReplaceAt: js.Any,
+    assign: js.Any,
+    escapeHtml: js.Any,
+    escapeRE: js.Any,
+    fromCodePoint: js.Any,
+    has: js.Any,
+    isMdAsciiPunct: js.Any,
+    isPunctChar: js.Any,
+    isSpace: js.Any,
+    isString: js.Any,
+    isValidEntityCode: js.Any,
+    isWhiteSpace: js.Any,
+    lib: Anon_Mdurl,
+    normalizeReference: js.Any,
+    unescapeAll: js.Any,
+    unescapeMd: js.Any
+  ): Anon_ArrayReplaceAt = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arrayReplaceAt")(arrayReplaceAt)
+    __obj.updateDynamic("assign")(assign)
+    __obj.updateDynamic("escapeHtml")(escapeHtml)
+    __obj.updateDynamic("escapeRE")(escapeRE)
+    __obj.updateDynamic("fromCodePoint")(fromCodePoint)
+    __obj.updateDynamic("has")(has)
+    __obj.updateDynamic("isMdAsciiPunct")(isMdAsciiPunct)
+    __obj.updateDynamic("isPunctChar")(isPunctChar)
+    __obj.updateDynamic("isSpace")(isSpace)
+    __obj.updateDynamic("isString")(isString)
+    __obj.updateDynamic("isValidEntityCode")(isValidEntityCode)
+    __obj.updateDynamic("isWhiteSpace")(isWhiteSpace)
+    __obj.updateDynamic("lib")(lib)
+    __obj.updateDynamic("normalizeReference")(normalizeReference)
+    __obj.updateDynamic("unescapeAll")(unescapeAll)
+    __obj.updateDynamic("unescapeMd")(unescapeMd)
+    __obj.asInstanceOf[Anon_ArrayReplaceAt]
+  }
+}
+

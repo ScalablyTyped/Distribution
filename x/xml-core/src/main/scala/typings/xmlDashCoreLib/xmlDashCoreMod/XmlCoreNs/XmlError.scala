@@ -13,3 +13,22 @@ trait XmlError
   val prefix: java.lang.String
 }
 
+object XmlError {
+  @scala.inline
+  def apply(
+    code: scala.Double,
+    message: java.lang.String,
+    name: java.lang.String,
+    prefix: java.lang.String,
+    stack: js.Any
+  ): XmlError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[XmlError]
+  }
+}
+

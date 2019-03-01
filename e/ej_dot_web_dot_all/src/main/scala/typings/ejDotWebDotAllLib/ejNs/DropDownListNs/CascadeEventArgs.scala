@@ -26,3 +26,24 @@ trait CascadeEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CascadeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cascadeModel: js.Any = null,
+    cascadeValue: java.lang.String = null,
+    model: js.Any = null,
+    requiresDefaultFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null
+  ): CascadeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cascadeModel != null) __obj.updateDynamic("cascadeModel")(cascadeModel)
+    if (cascadeValue != null) __obj.updateDynamic("cascadeValue")(cascadeValue)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(requiresDefaultFilter)) __obj.updateDynamic("requiresDefaultFilter")(requiresDefaultFilter)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CascadeEventArgs]
+  }
+}
+

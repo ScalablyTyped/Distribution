@@ -12,3 +12,13 @@ trait CreateOrdersRequest extends js.Object {
   var webPropertyCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateOrdersRequest {
+  @scala.inline
+  def apply(proposals: js.Array[Proposal] = null, webPropertyCode: java.lang.String = null): CreateOrdersRequest = {
+    val __obj = js.Dynamic.literal()
+    if (proposals != null) __obj.updateDynamic("proposals")(proposals)
+    if (webPropertyCode != null) __obj.updateDynamic("webPropertyCode")(webPropertyCode)
+    __obj.asInstanceOf[CreateOrdersRequest]
+  }
+}
+

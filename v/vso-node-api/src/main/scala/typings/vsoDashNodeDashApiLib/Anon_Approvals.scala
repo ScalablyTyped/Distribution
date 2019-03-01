@@ -15,3 +15,26 @@ trait Anon_Approvals extends js.Object {
   var variables: scala.Double
 }
 
+object Anon_Approvals {
+  @scala.inline
+  def apply(
+    approvals: scala.Double,
+    artifacts: scala.Double,
+    environments: scala.Double,
+    manualInterventions: scala.Double,
+    none: scala.Double,
+    tags: scala.Double,
+    variables: scala.Double
+  ): Anon_Approvals = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("approvals")(approvals)
+    __obj.updateDynamic("artifacts")(artifacts)
+    __obj.updateDynamic("environments")(environments)
+    __obj.updateDynamic("manualInterventions")(manualInterventions)
+    __obj.updateDynamic("none")(none)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[Anon_Approvals]
+  }
+}
+

@@ -13,3 +13,15 @@ trait HSVA extends js.Object {
   var v: scala.Double
 }
 
+object HSVA {
+  @scala.inline
+  def apply(h: scala.Double, s: scala.Double, v: scala.Double, a: scala.Int | scala.Double = null): HSVA = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("s")(s)
+    __obj.updateDynamic("v")(v)
+    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HSVA]
+  }
+}
+

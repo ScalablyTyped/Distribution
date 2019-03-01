@@ -43,3 +43,53 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object SelectProps {
+  @scala.inline
+  def apply(
+    IconComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    MenuProps: stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps] = null,
+    SelectDisplayProps: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[SelectClassKey]] = null,
+    displayEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    input: reactLib.reactMod.ReactNs.ReactNode = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    native: js.UndefOr[scala.Boolean] = js.undefined,
+    onClose: js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit] = null,
+    onOpen: js.Function1[/* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], scala.Unit] = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    renderValue: js.Function1[
+      /* value */ js.UndefOr[
+        (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
+      ], 
+      reactLib.reactMod.ReactNs.ReactNode
+    ] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    value: (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object = null,
+    variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled = null
+  ): SelectProps = {
+    val __obj = js.Dynamic.literal()
+    if (IconComponent != null) __obj.updateDynamic("IconComponent")(IconComponent.asInstanceOf[js.Any])
+    if (MenuProps != null) __obj.updateDynamic("MenuProps")(MenuProps)
+    if (SelectDisplayProps != null) __obj.updateDynamic("SelectDisplayProps")(SelectDisplayProps)
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (!js.isUndefined(displayEmpty)) __obj.updateDynamic("displayEmpty")(displayEmpty)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (renderValue != null) __obj.updateDynamic("renderValue")(renderValue)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectProps]
+  }
+}
+

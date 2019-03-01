@@ -23,3 +23,18 @@ trait ImageContext extends js.Object {
   var latLongRect: js.UndefOr[LatLongRect] = js.undefined
 }
 
+object ImageContext {
+  @scala.inline
+  def apply(
+    cropHintsParams: CropHintsParams = null,
+    languageHints: js.Array[java.lang.String] = null,
+    latLongRect: LatLongRect = null
+  ): ImageContext = {
+    val __obj = js.Dynamic.literal()
+    if (cropHintsParams != null) __obj.updateDynamic("cropHintsParams")(cropHintsParams)
+    if (languageHints != null) __obj.updateDynamic("languageHints")(languageHints)
+    if (latLongRect != null) __obj.updateDynamic("latLongRect")(latLongRect)
+    __obj.asInstanceOf[ImageContext]
+  }
+}
+

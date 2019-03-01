@@ -9,3 +9,12 @@ trait TokenAuthData extends js.Object {
   var token: java.lang.String
 }
 
+object TokenAuthData {
+  @scala.inline
+  def apply(token: java.lang.String): TokenAuthData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[TokenAuthData]
+  }
+}
+

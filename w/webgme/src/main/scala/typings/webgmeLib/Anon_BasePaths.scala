@@ -30,3 +30,14 @@ trait Anon_BasePaths extends js.Object {
   var monitorTimeout: scala.Double
 }
 
+object Anon_BasePaths {
+  @scala.inline
+  def apply(basePaths: js.Array[java.lang.String], enable: scala.Boolean, monitorTimeout: scala.Double): Anon_BasePaths = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("basePaths")(basePaths)
+    __obj.updateDynamic("enable")(enable)
+    __obj.updateDynamic("monitorTimeout")(monitorTimeout)
+    __obj.asInstanceOf[Anon_BasePaths]
+  }
+}
+

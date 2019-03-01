@@ -14,3 +14,13 @@ trait AfterServiceInvokeEventArgs extends js.Object {
   var element: js.UndefOr[js.Any] = js.undefined
 }
 
+object AfterServiceInvokeEventArgs {
+  @scala.inline
+  def apply(customObject: js.Any = null, element: js.Any = null): AfterServiceInvokeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
+    if (element != null) __obj.updateDynamic("element")(element)
+    __obj.asInstanceOf[AfterServiceInvokeEventArgs]
+  }
+}
+

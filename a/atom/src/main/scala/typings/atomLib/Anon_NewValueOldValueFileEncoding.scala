@@ -10,3 +10,13 @@ trait Anon_NewValueOldValueFileEncoding extends js.Object {
   var oldValue: js.UndefOr[atomLib.atomMod.FileEncoding] = js.undefined
 }
 
+object Anon_NewValueOldValueFileEncoding {
+  @scala.inline
+  def apply(newValue: atomLib.atomMod.FileEncoding, oldValue: atomLib.atomMod.FileEncoding = null): Anon_NewValueOldValueFileEncoding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newValue")(newValue)
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    __obj.asInstanceOf[Anon_NewValueOldValueFileEncoding]
+  }
+}
+

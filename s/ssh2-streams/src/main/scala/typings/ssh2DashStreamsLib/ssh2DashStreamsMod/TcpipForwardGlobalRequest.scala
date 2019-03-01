@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TcpipForwardGlobalRequest extends js.Object {
+trait TcpipForwardGlobalRequest extends _GlobalRequest {
   /**
     * The IP address to start/stop binding to.
     */
@@ -14,5 +14,15 @@ trait TcpipForwardGlobalRequest extends js.Object {
     * The port to start/stop binding to.
     */
   var bindPort: scala.Double
+}
+
+object TcpipForwardGlobalRequest {
+  @scala.inline
+  def apply(bindAddr: java.lang.String, bindPort: scala.Double): TcpipForwardGlobalRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bindAddr")(bindAddr)
+    __obj.updateDynamic("bindPort")(bindPort)
+    __obj.asInstanceOf[TcpipForwardGlobalRequest]
+  }
 }
 

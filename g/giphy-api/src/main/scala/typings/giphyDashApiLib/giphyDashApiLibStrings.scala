@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation._
 
 object giphyDashApiLibStrings {
   @js.native
-  sealed trait g extends js.Object
+  sealed trait g extends Rating
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait html extends Format
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json extends Format
   
   @js.native
-  sealed trait pg extends js.Object
+  sealed trait pg extends Rating
   
   @js.native
-  sealed trait `pg-13` extends js.Object
+  sealed trait `pg-13` extends Rating
   
   @js.native
-  sealed trait r extends js.Object
+  sealed trait r extends Rating
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y extends Rating
   
   @scala.inline
   def g: g = "g".asInstanceOf[g]

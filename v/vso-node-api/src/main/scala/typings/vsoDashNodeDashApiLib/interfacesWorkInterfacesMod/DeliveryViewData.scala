@@ -28,3 +28,26 @@ trait DeliveryViewData extends PlanViewData {
   var teams: js.Array[TimelineTeamData]
 }
 
+object DeliveryViewData {
+  @scala.inline
+  def apply(
+    childIdToParentIdMap: org.scalablytyped.runtime.NumberDictionary[scala.Double],
+    criteriaStatus: TimelineCriteriaStatus,
+    endDate: stdLib.Date,
+    id: java.lang.String,
+    revision: scala.Double,
+    startDate: stdLib.Date,
+    teams: js.Array[TimelineTeamData]
+  ): DeliveryViewData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("childIdToParentIdMap")(childIdToParentIdMap)
+    __obj.updateDynamic("criteriaStatus")(criteriaStatus)
+    __obj.updateDynamic("endDate")(endDate)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("revision")(revision)
+    __obj.updateDynamic("startDate")(startDate)
+    __obj.updateDynamic("teams")(teams)
+    __obj.asInstanceOf[DeliveryViewData]
+  }
+}
+

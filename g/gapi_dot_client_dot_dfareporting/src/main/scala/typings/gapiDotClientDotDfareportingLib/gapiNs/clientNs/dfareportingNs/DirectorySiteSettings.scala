@@ -22,3 +22,26 @@ trait DirectorySiteSettings extends js.Object {
   var videoActiveViewOptOut: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DirectorySiteSettings {
+  @scala.inline
+  def apply(
+    activeViewOptOut: js.UndefOr[scala.Boolean] = js.undefined,
+    dfpSettings: DfpSettings = null,
+    instreamVideoPlacementAccepted: js.UndefOr[scala.Boolean] = js.undefined,
+    interstitialPlacementAccepted: js.UndefOr[scala.Boolean] = js.undefined,
+    nielsenOcrOptOut: js.UndefOr[scala.Boolean] = js.undefined,
+    verificationTagOptOut: js.UndefOr[scala.Boolean] = js.undefined,
+    videoActiveViewOptOut: js.UndefOr[scala.Boolean] = js.undefined
+  ): DirectorySiteSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(activeViewOptOut)) __obj.updateDynamic("activeViewOptOut")(activeViewOptOut)
+    if (dfpSettings != null) __obj.updateDynamic("dfpSettings")(dfpSettings)
+    if (!js.isUndefined(instreamVideoPlacementAccepted)) __obj.updateDynamic("instreamVideoPlacementAccepted")(instreamVideoPlacementAccepted)
+    if (!js.isUndefined(interstitialPlacementAccepted)) __obj.updateDynamic("interstitialPlacementAccepted")(interstitialPlacementAccepted)
+    if (!js.isUndefined(nielsenOcrOptOut)) __obj.updateDynamic("nielsenOcrOptOut")(nielsenOcrOptOut)
+    if (!js.isUndefined(verificationTagOptOut)) __obj.updateDynamic("verificationTagOptOut")(verificationTagOptOut)
+    if (!js.isUndefined(videoActiveViewOptOut)) __obj.updateDynamic("videoActiveViewOptOut")(videoActiveViewOptOut)
+    __obj.asInstanceOf[DirectorySiteSettings]
+  }
+}
+

@@ -10,3 +10,22 @@ trait ListBoxDragstartEvent extends ListBoxEvent {
   var items: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
 }
 
+object ListBoxDragstartEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: ListBox,
+    draggableEvent: js.Any = null,
+    items: kendoDashUiLib.JQuery = null
+  ): ListBoxDragstartEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (draggableEvent != null) __obj.updateDynamic("draggableEvent")(draggableEvent)
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[ListBoxDragstartEvent]
+  }
+}
+

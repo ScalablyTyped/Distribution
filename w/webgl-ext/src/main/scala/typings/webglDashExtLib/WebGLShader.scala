@@ -9,3 +9,12 @@ trait WebGLShader extends js.Object {
   val __WebGLShader: scala.Unit
 }
 
+object WebGLShader {
+  @scala.inline
+  def apply(__WebGLShader: scala.Unit): WebGLShader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("__WebGLShader")(__WebGLShader)
+    __obj.asInstanceOf[WebGLShader]
+  }
+}
+

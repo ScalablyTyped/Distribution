@@ -19,3 +19,12 @@ trait Anon_Access extends js.Object {
   def access(request: hapiLib.hapiMod.Request): scala.Boolean
 }
 
+object Anon_Access {
+  @scala.inline
+  def apply(access: js.Function1[hapiLib.hapiMod.Request, scala.Boolean]): Anon_Access = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("access")(access)
+    __obj.asInstanceOf[Anon_Access]
+  }
+}
+

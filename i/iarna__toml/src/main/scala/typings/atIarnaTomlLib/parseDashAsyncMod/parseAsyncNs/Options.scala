@@ -10,3 +10,12 @@ trait Options extends js.Object {
   var blocksize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(blocksize: scala.Int | scala.Double = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (blocksize != null) __obj.updateDynamic("blocksize")(blocksize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

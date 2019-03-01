@@ -12,3 +12,20 @@ trait AttachmentParams extends js.Object {
   var knownLength: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AttachmentParams {
+  @scala.inline
+  def apply(
+    data: java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.ReadWriteStream,
+    contentType: java.lang.String = null,
+    filename: java.lang.String = null,
+    knownLength: scala.Int | scala.Double = null
+  ): AttachmentParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (knownLength != null) __obj.updateDynamic("knownLength")(knownLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AttachmentParams]
+  }
+}
+

@@ -19,3 +19,13 @@ trait LocalizableContent extends js.Object {
   var localizations: LocalizationsDict
 }
 
+object LocalizableContent {
+  @scala.inline
+  def apply(default: java.lang.String, localizations: LocalizationsDict): LocalizableContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("default")(default)
+    __obj.updateDynamic("localizations")(localizations)
+    __obj.asInstanceOf[LocalizableContent]
+  }
+}
+

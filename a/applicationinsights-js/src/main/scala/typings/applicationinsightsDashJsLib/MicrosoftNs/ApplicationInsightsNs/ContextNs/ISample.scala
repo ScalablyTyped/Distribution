@@ -12,3 +12,12 @@ trait ISample extends js.Object {
   var sampleRate: scala.Double
 }
 
+object ISample {
+  @scala.inline
+  def apply(sampleRate: scala.Double): ISample = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sampleRate")(sampleRate)
+    __obj.asInstanceOf[ISample]
+  }
+}
+

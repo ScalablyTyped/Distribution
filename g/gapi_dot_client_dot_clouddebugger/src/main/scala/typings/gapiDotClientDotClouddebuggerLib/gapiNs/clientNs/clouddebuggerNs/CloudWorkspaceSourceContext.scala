@@ -15,3 +15,13 @@ trait CloudWorkspaceSourceContext extends js.Object {
   var workspaceId: js.UndefOr[CloudWorkspaceId] = js.undefined
 }
 
+object CloudWorkspaceSourceContext {
+  @scala.inline
+  def apply(snapshotId: java.lang.String = null, workspaceId: CloudWorkspaceId = null): CloudWorkspaceSourceContext = {
+    val __obj = js.Dynamic.literal()
+    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId)
+    if (workspaceId != null) __obj.updateDynamic("workspaceId")(workspaceId)
+    __obj.asInstanceOf[CloudWorkspaceSourceContext]
+  }
+}
+

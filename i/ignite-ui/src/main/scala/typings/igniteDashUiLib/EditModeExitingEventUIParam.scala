@@ -28,3 +28,22 @@ trait EditModeExitingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object EditModeExitingEventUIParam {
+  @scala.inline
+  def apply(
+    acceptChanges: js.UndefOr[scala.Boolean] = js.undefined,
+    canCancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cell: java.lang.String = null,
+    editText: java.lang.String = null,
+    owner: js.Any = null
+  ): EditModeExitingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(acceptChanges)) __obj.updateDynamic("acceptChanges")(acceptChanges)
+    if (!js.isUndefined(canCancel)) __obj.updateDynamic("canCancel")(canCancel)
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (editText != null) __obj.updateDynamic("editText")(editText)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[EditModeExitingEventUIParam]
+  }
+}
+

@@ -59,3 +59,26 @@ trait CompressOptions extends js.Object {
   var size_hint: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CompressOptions {
+  @scala.inline
+  def apply(
+    dictionary: nodeLib.Buffer = null,
+    disable_literal_context_modeling: js.UndefOr[scala.Boolean] = js.undefined,
+    lgblock: scala.Int | scala.Double = null,
+    lgwin: scala.Int | scala.Double = null,
+    mode: scala.Int | scala.Double = null,
+    quality: scala.Int | scala.Double = null,
+    size_hint: scala.Int | scala.Double = null
+  ): CompressOptions = {
+    val __obj = js.Dynamic.literal()
+    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary)
+    if (!js.isUndefined(disable_literal_context_modeling)) __obj.updateDynamic("disable_literal_context_modeling")(disable_literal_context_modeling)
+    if (lgblock != null) __obj.updateDynamic("lgblock")(lgblock.asInstanceOf[js.Any])
+    if (lgwin != null) __obj.updateDynamic("lgwin")(lgwin.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (size_hint != null) __obj.updateDynamic("size_hint")(size_hint.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompressOptions]
+  }
+}
+

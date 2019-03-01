@@ -10,3 +10,13 @@ trait ColorTheme extends js.Object {
   var light: java.lang.String
 }
 
+object ColorTheme {
+  @scala.inline
+  def apply(dark: java.lang.String, light: java.lang.String): ColorTheme = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dark")(dark)
+    __obj.updateDynamic("light")(light)
+    __obj.asInstanceOf[ColorTheme]
+  }
+}
+

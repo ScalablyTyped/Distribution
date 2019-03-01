@@ -14,3 +14,21 @@ trait Bifunctor[F] extends js.Object {
   ): fpDashTsLib.libHKTMod.HKT2[F, M, B]
 }
 
+object Bifunctor {
+  @scala.inline
+  def apply[F](
+    URI: F,
+    bimap: js.Function3[
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
+    ]
+  ): Bifunctor[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("bimap")(bimap)
+    __obj.asInstanceOf[Bifunctor[F]]
+  }
+}
+

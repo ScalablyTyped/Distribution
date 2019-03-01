@@ -29,3 +29,26 @@ trait CellContextEventArgs extends js.Object {
   var uniqueName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellContextEventArgs {
+  @scala.inline
+  def apply(
+    args: js.Any = null,
+    cellPosition: java.lang.String = null,
+    cellType: java.lang.String = null,
+    cellValue: java.lang.String = null,
+    rawdata: js.Any = null,
+    role: java.lang.String = null,
+    uniqueName: java.lang.String = null
+  ): CellContextEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (cellPosition != null) __obj.updateDynamic("cellPosition")(cellPosition)
+    if (cellType != null) __obj.updateDynamic("cellType")(cellType)
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
+    if (rawdata != null) __obj.updateDynamic("rawdata")(rawdata)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName)
+    __obj.asInstanceOf[CellContextEventArgs]
+  }
+}
+

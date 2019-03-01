@@ -22,3 +22,18 @@ trait SignatureHelp extends js.Object {
   var signatures: js.Array[SignatureInformation]
 }
 
+object SignatureHelp {
+  @scala.inline
+  def apply(
+    signatures: js.Array[SignatureInformation],
+    activeParameter: scala.Int | scala.Double = null,
+    activeSignature: scala.Int | scala.Double = null
+  ): SignatureHelp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("signatures")(signatures)
+    if (activeParameter != null) __obj.updateDynamic("activeParameter")(activeParameter.asInstanceOf[js.Any])
+    if (activeSignature != null) __obj.updateDynamic("activeSignature")(activeSignature.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SignatureHelp]
+  }
+}
+

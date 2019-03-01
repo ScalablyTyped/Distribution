@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object vexdbLibStrings {
   @js.native
-  sealed trait awards extends js.Object
+  sealed trait awards
+    extends vexdbLib.vexdbMod.Endpoint
   
   @js.native
-  sealed trait events extends js.Object
+  sealed trait events
+    extends vexdbLib.vexdbMod.Endpoint
   
   @js.native
   sealed trait fetch extends js.Object
@@ -19,22 +21,27 @@ object vexdbLibStrings {
   sealed trait item extends js.Object
   
   @js.native
-  sealed trait matches extends js.Object
+  sealed trait matches
+    extends vexdbLib.vexdbMod.Endpoint
   
   @js.native
   sealed trait prefetch extends js.Object
   
   @js.native
-  sealed trait rankings extends js.Object
+  sealed trait rankings
+    extends vexdbLib.vexdbMod.Endpoint
   
   @js.native
-  sealed trait season_rankings extends js.Object
+  sealed trait season_rankings
+    extends vexdbLib.vexdbMod.Endpoint
   
   @js.native
-  sealed trait skills extends js.Object
+  sealed trait skills
+    extends vexdbLib.vexdbMod.Endpoint
   
   @js.native
-  sealed trait teams extends js.Object
+  sealed trait teams
+    extends vexdbLib.vexdbMod.Endpoint
   
   @scala.inline
   def awards: awards = "awards".asInstanceOf[awards]

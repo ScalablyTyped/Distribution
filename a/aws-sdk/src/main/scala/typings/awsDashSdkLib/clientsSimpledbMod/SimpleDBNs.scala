@@ -473,6 +473,8 @@ object SimpleDBNs extends js.Object {
     var Value: js.UndefOr[String] = js.undefined
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AttributeList = js.Array[Attribute]
   type AttributeNameList = js.Array[String]
@@ -487,6 +489,6 @@ object SimpleDBNs extends js.Object {
   type ReplaceableAttributeList = js.Array[ReplaceableAttribute]
   type ReplaceableItemList = js.Array[ReplaceableItem]
   type String = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2009-04-15` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

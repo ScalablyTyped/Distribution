@@ -13,10 +13,12 @@ object sharpLibNumbers {
   sealed trait `2` extends js.Object
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends sharpLib.sharpMod.sharpNs.Channels
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends sharpLib.sharpMod.sharpNs.Channels
   
   @js.native
   sealed trait `false` extends js.Object

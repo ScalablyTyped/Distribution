@@ -21,3 +21,26 @@ trait TableOptions extends Options {
   var sources: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object TableOptions {
+  @scala.inline
+  def apply(
+    bearings: js.Array[Bearing] = null,
+    coordinates: js.Array[Coordinate] = null,
+    destinations: js.Array[scala.Double] = null,
+    generate_hints: js.UndefOr[scala.Boolean] = js.undefined,
+    hints: js.Array[Hint] = null,
+    radiuses: js.Array[Radius] = null,
+    sources: js.Array[scala.Double] = null
+  ): TableOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
+    if (destinations != null) __obj.updateDynamic("destinations")(destinations)
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
+    if (hints != null) __obj.updateDynamic("hints")(hints)
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    __obj.asInstanceOf[TableOptions]
+  }
+}
+

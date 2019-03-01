@@ -27,3 +27,26 @@ trait screen extends js.Object {
   var work_area: nwDotJsLib.Anon_Height
 }
 
+object screen {
+  @scala.inline
+  def apply(
+    bounds: nwDotJsLib.Anon_Height,
+    id: scala.Double,
+    isBuiltIn: scala.Boolean,
+    rotation: scala.Double,
+    scaleFactor: scala.Double,
+    touchSupport: scala.Double,
+    work_area: nwDotJsLib.Anon_Height
+  ): screen = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isBuiltIn")(isBuiltIn)
+    __obj.updateDynamic("rotation")(rotation)
+    __obj.updateDynamic("scaleFactor")(scaleFactor)
+    __obj.updateDynamic("touchSupport")(touchSupport)
+    __obj.updateDynamic("work_area")(work_area)
+    __obj.asInstanceOf[screen]
+  }
+}
+

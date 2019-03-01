@@ -12,3 +12,12 @@ trait DescribeGlobalTableOutput extends js.Object {
   var GlobalTableDescription: js.UndefOr[GlobalTableDescription] = js.undefined
 }
 
+object DescribeGlobalTableOutput {
+  @scala.inline
+  def apply(GlobalTableDescription: GlobalTableDescription = null): DescribeGlobalTableOutput = {
+    val __obj = js.Dynamic.literal()
+    if (GlobalTableDescription != null) __obj.updateDynamic("GlobalTableDescription")(GlobalTableDescription)
+    __obj.asInstanceOf[DescribeGlobalTableOutput]
+  }
+}
+

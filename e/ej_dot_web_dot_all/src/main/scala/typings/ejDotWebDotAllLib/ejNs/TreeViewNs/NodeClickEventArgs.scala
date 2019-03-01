@@ -29,3 +29,26 @@ trait NodeClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentElement: js.Any = null,
+    event: js.Any = null,
+    id: java.lang.String = null,
+    model: Model = null,
+    parentId: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): NodeClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodeClickEventArgs]
+  }
+}
+

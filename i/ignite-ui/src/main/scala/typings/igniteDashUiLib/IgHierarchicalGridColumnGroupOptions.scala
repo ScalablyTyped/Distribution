@@ -33,3 +33,23 @@ trait IgHierarchicalGridColumnGroupOptions
   var hidden: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgHierarchicalGridColumnGroupOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgHierarchicalGridColumnGroupOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowGroupCollapsing: js.UndefOr[scala.Boolean] = js.undefined,
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    hidden: java.lang.String = null
+  ): IgHierarchicalGridColumnGroupOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowGroupCollapsing)) __obj.updateDynamic("allowGroupCollapsing")(allowGroupCollapsing)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
+    __obj.asInstanceOf[IgHierarchicalGridColumnGroupOptions]
+  }
+}
+

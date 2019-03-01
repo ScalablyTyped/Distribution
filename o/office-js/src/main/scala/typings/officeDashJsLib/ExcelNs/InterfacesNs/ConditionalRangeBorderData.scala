@@ -34,3 +34,18 @@ trait ConditionalRangeBorderData extends js.Object {
   ] = js.undefined
 }
 
+object ConditionalRangeBorderData {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    sideIndex: officeDashJsLib.ExcelNs.ConditionalRangeBorderIndex | officeDashJsLib.officeDashJsLibStrings.EdgeTop | officeDashJsLib.officeDashJsLibStrings.EdgeBottom | officeDashJsLib.officeDashJsLibStrings.EdgeLeft | officeDashJsLib.officeDashJsLibStrings.EdgeRight = null,
+    style: officeDashJsLib.ExcelNs.ConditionalRangeBorderLineStyle | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Continuous | officeDashJsLib.officeDashJsLibStrings.Dash | officeDashJsLib.officeDashJsLibStrings.DashDot | officeDashJsLib.officeDashJsLibStrings.DashDotDot | officeDashJsLib.officeDashJsLibStrings.Dot = null
+  ): ConditionalRangeBorderData = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (sideIndex != null) __obj.updateDynamic("sideIndex")(sideIndex.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConditionalRangeBorderData]
+  }
+}
+

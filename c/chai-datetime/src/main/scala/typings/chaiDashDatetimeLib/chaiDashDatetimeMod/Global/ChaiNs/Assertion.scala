@@ -22,3 +22,36 @@ trait Assertion extends js.Object {
   ): Assertion
 }
 
+object Assertion {
+  @scala.inline
+  def apply(
+    afterDate: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
+    afterTime: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
+    beforeDate: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
+    beforeTime: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
+    equalDate: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
+    equalTime: js.Function1[chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, Assertion],
+    withinDate: js.Function2[
+      chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, 
+      chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, 
+      Assertion
+    ],
+    withinTime: js.Function2[
+      chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, 
+      chaiDashDatetimeLib.chaiDashDatetimeMod.Global.Date, 
+      Assertion
+    ]
+  ): Assertion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("afterDate")(afterDate)
+    __obj.updateDynamic("afterTime")(afterTime)
+    __obj.updateDynamic("beforeDate")(beforeDate)
+    __obj.updateDynamic("beforeTime")(beforeTime)
+    __obj.updateDynamic("equalDate")(equalDate)
+    __obj.updateDynamic("equalTime")(equalTime)
+    __obj.updateDynamic("withinDate")(withinDate)
+    __obj.updateDynamic("withinTime")(withinTime)
+    __obj.asInstanceOf[Assertion]
+  }
+}
+

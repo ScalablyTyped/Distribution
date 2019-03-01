@@ -12,3 +12,15 @@ trait ShardsResponse extends js.Object {
   var total: scala.Double
 }
 
+object ShardsResponse {
+  @scala.inline
+  def apply(failed: scala.Double, skipped: scala.Double, successful: scala.Double, total: scala.Double): ShardsResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failed")(failed)
+    __obj.updateDynamic("skipped")(skipped)
+    __obj.updateDynamic("successful")(successful)
+    __obj.updateDynamic("total")(total)
+    __obj.asInstanceOf[ShardsResponse]
+  }
+}
+

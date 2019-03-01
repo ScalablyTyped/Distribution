@@ -14,3 +14,24 @@ trait Transform extends js.Object {
   def transformer(`this`: World, arg: java.lang.String*): js.Any
 }
 
+object Transform {
+  @scala.inline
+  def apply(
+    regexp: stdLib.RegExp,
+    transformer: js.Function2[World, /* repeated */ java.lang.String, js.Any],
+    name: java.lang.String = null,
+    preferForRegexpMatch: js.UndefOr[scala.Boolean] = js.undefined,
+    typeName: java.lang.String = null,
+    useForSnippets: js.UndefOr[scala.Boolean] = js.undefined
+  ): Transform = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("regexp")(regexp)
+    __obj.updateDynamic("transformer")(transformer)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(preferForRegexpMatch)) __obj.updateDynamic("preferForRegexpMatch")(preferForRegexpMatch)
+    if (typeName != null) __obj.updateDynamic("typeName")(typeName)
+    if (!js.isUndefined(useForSnippets)) __obj.updateDynamic("useForSnippets")(useForSnippets)
+    __obj.asInstanceOf[Transform]
+  }
+}
+

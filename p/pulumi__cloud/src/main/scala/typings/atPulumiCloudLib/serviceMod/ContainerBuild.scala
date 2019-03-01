@@ -32,3 +32,20 @@ trait ContainerBuild extends js.Object {
   var dockerfile: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContainerBuild {
+  @scala.inline
+  def apply(
+    args: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    cacheFrom: scala.Boolean | CacheFrom = null,
+    context: java.lang.String = null,
+    dockerfile: java.lang.String = null
+  ): ContainerBuild = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (cacheFrom != null) __obj.updateDynamic("cacheFrom")(cacheFrom.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (dockerfile != null) __obj.updateDynamic("dockerfile")(dockerfile)
+    __obj.asInstanceOf[ContainerBuild]
+  }
+}
+

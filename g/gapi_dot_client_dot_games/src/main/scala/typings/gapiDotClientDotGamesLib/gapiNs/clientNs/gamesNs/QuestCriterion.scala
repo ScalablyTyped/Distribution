@@ -26,3 +26,22 @@ trait QuestCriterion extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QuestCriterion {
+  @scala.inline
+  def apply(
+    completionContribution: QuestContribution = null,
+    currentContribution: QuestContribution = null,
+    eventId: java.lang.String = null,
+    initialPlayerProgress: QuestContribution = null,
+    kind: java.lang.String = null
+  ): QuestCriterion = {
+    val __obj = js.Dynamic.literal()
+    if (completionContribution != null) __obj.updateDynamic("completionContribution")(completionContribution)
+    if (currentContribution != null) __obj.updateDynamic("currentContribution")(currentContribution)
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
+    if (initialPlayerProgress != null) __obj.updateDynamic("initialPlayerProgress")(initialPlayerProgress)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[QuestCriterion]
+  }
+}
+

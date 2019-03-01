@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   var returnFocus: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DeactivateOptions {
+  @scala.inline
+  def apply(returnFocus: js.UndefOr[scala.Boolean] = js.undefined): DeactivateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus)
+    __obj.asInstanceOf[DeactivateOptions]
+  }
+}
+

@@ -24,3 +24,20 @@ trait RadioButtonTheme extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RadioButtonTheme {
+  @scala.inline
+  def apply(
+    disabled: java.lang.String = null,
+    field: java.lang.String = null,
+    input: java.lang.String = null,
+    text: java.lang.String = null
+  ): RadioButtonTheme = {
+    val __obj = js.Dynamic.literal()
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[RadioButtonTheme]
+  }
+}
+

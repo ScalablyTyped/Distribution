@@ -52,3 +52,42 @@ trait InstanceState extends js.Object {
   val username: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object InstanceState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    blueprintId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bundleId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cpuCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    createdAt: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipv6Address: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    isStaticIp: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    keyPairName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateIpAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publicIpAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ramSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    userData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    username: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): InstanceState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (blueprintId != null) __obj.updateDynamic("blueprintId")(blueprintId.asInstanceOf[js.Any])
+    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
+    if (cpuCount != null) __obj.updateDynamic("cpuCount")(cpuCount.asInstanceOf[js.Any])
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
+    if (ipv6Address != null) __obj.updateDynamic("ipv6Address")(ipv6Address.asInstanceOf[js.Any])
+    if (isStaticIp != null) __obj.updateDynamic("isStaticIp")(isStaticIp.asInstanceOf[js.Any])
+    if (keyPairName != null) __obj.updateDynamic("keyPairName")(keyPairName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (privateIpAddress != null) __obj.updateDynamic("privateIpAddress")(privateIpAddress.asInstanceOf[js.Any])
+    if (publicIpAddress != null) __obj.updateDynamic("publicIpAddress")(publicIpAddress.asInstanceOf[js.Any])
+    if (ramSize != null) __obj.updateDynamic("ramSize")(ramSize.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstanceState]
+  }
+}
+

@@ -52,3 +52,60 @@ trait XDateField
   def setStrictFormat(bStrict: scala.Boolean): scala.Unit
 }
 
+object XDateField {
+  @scala.inline
+  def apply(
+    Date: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    First: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    Last: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    Max: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    Min: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    acquire: js.Function0[scala.Unit],
+    getDate: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getFirst: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getLast: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getMax: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getMin: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    isEmpty: js.Function0[scala.Boolean],
+    isLongFormat: js.Function0[scala.Boolean],
+    isStrictFormat: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDate: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setEmpty: js.Function0[scala.Unit],
+    setFirst: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setLast: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setLongFormat: js.Function1[scala.Boolean, scala.Unit],
+    setMax: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setMin: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setStrictFormat: js.Function1[scala.Boolean, scala.Unit]
+  ): XDateField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Date")(Date)
+    __obj.updateDynamic("First")(First)
+    __obj.updateDynamic("Last")(Last)
+    __obj.updateDynamic("Max")(Max)
+    __obj.updateDynamic("Min")(Min)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDate")(getDate)
+    __obj.updateDynamic("getFirst")(getFirst)
+    __obj.updateDynamic("getLast")(getLast)
+    __obj.updateDynamic("getMax")(getMax)
+    __obj.updateDynamic("getMin")(getMin)
+    __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.updateDynamic("isLongFormat")(isLongFormat)
+    __obj.updateDynamic("isStrictFormat")(isStrictFormat)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDate")(setDate)
+    __obj.updateDynamic("setEmpty")(setEmpty)
+    __obj.updateDynamic("setFirst")(setFirst)
+    __obj.updateDynamic("setLast")(setLast)
+    __obj.updateDynamic("setLongFormat")(setLongFormat)
+    __obj.updateDynamic("setMax")(setMax)
+    __obj.updateDynamic("setMin")(setMin)
+    __obj.updateDynamic("setStrictFormat")(setStrictFormat)
+    __obj.asInstanceOf[XDateField]
+  }
+}
+

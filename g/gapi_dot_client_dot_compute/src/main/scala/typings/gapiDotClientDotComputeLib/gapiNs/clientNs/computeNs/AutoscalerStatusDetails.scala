@@ -12,3 +12,13 @@ trait AutoscalerStatusDetails extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AutoscalerStatusDetails {
+  @scala.inline
+  def apply(message: java.lang.String = null, `type`: java.lang.String = null): AutoscalerStatusDetails = {
+    val __obj = js.Dynamic.literal()
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AutoscalerStatusDetails]
+  }
+}
+

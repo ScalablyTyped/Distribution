@@ -13,3 +13,12 @@ trait GetOrderNotesResponse extends js.Object {
   var notes: js.UndefOr[js.Array[MarketplaceNote]] = js.undefined
 }
 
+object GetOrderNotesResponse {
+  @scala.inline
+  def apply(notes: js.Array[MarketplaceNote] = null): GetOrderNotesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (notes != null) __obj.updateDynamic("notes")(notes)
+    __obj.asInstanceOf[GetOrderNotesResponse]
+  }
+}
+

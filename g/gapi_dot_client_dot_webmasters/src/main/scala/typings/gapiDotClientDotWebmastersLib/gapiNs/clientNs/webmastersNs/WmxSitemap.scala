@@ -26,3 +26,30 @@ trait WmxSitemap extends js.Object {
   var warnings: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WmxSitemap {
+  @scala.inline
+  def apply(
+    contents: js.Array[WmxSitemapContent] = null,
+    errors: java.lang.String = null,
+    isPending: js.UndefOr[scala.Boolean] = js.undefined,
+    isSitemapsIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    lastDownloaded: java.lang.String = null,
+    lastSubmitted: java.lang.String = null,
+    path: java.lang.String = null,
+    `type`: java.lang.String = null,
+    warnings: java.lang.String = null
+  ): WmxSitemap = {
+    val __obj = js.Dynamic.literal()
+    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (!js.isUndefined(isPending)) __obj.updateDynamic("isPending")(isPending)
+    if (!js.isUndefined(isSitemapsIndex)) __obj.updateDynamic("isSitemapsIndex")(isSitemapsIndex)
+    if (lastDownloaded != null) __obj.updateDynamic("lastDownloaded")(lastDownloaded)
+    if (lastSubmitted != null) __obj.updateDynamic("lastSubmitted")(lastSubmitted)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[WmxSitemap]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Measurements and simple assertions
   */
-trait Observation extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Observation extends DomainResource {
   /**
     * Contains extended information for property 'comment'.
     */
@@ -169,5 +170,120 @@ trait Observation extends DomainResource {
     * Actual result
     */
   var valueTime: js.UndefOr[time] = js.undefined
+}
+
+object Observation {
+  @scala.inline
+  def apply(
+    code: CodeableConcept,
+    status: code,
+    _comment: Element = null,
+    _effectiveDateTime: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _issued: Element = null,
+    _language: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _valueBoolean: Element = null,
+    _valueDateTime: Element = null,
+    _valueString: Element = null,
+    _valueTime: Element = null,
+    basedOn: js.Array[Reference] = null,
+    bodySite: CodeableConcept = null,
+    category: js.Array[CodeableConcept] = null,
+    comment: java.lang.String = null,
+    component: js.Array[ObservationComponent] = null,
+    contained: js.Array[Resource] = null,
+    context: Reference = null,
+    dataAbsentReason: CodeableConcept = null,
+    device: Reference = null,
+    effectiveDateTime: dateTime = null,
+    effectivePeriod: Period = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    interpretation: CodeableConcept = null,
+    issued: instant = null,
+    language: code = null,
+    meta: Meta = null,
+    method: CodeableConcept = null,
+    modifierExtension: js.Array[Extension] = null,
+    performer: js.Array[Reference] = null,
+    referenceRange: js.Array[ObservationReferenceRange] = null,
+    related: js.Array[ObservationRelated] = null,
+    resourceType: code = null,
+    specimen: Reference = null,
+    subject: Reference = null,
+    text: Narrative = null,
+    valueAttachment: Attachment = null,
+    valueBoolean: js.UndefOr[scala.Boolean] = js.undefined,
+    valueCodeableConcept: CodeableConcept = null,
+    valueDateTime: dateTime = null,
+    valuePeriod: Period = null,
+    valueQuantity: Quantity = null,
+    valueRange: Range = null,
+    valueRatio: Ratio = null,
+    valueSampledData: SampledData = null,
+    valueString: java.lang.String = null,
+    valueTime: time = null
+  ): Observation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("status")(status)
+    if (_comment != null) __obj.updateDynamic("_comment")(_comment)
+    if (_effectiveDateTime != null) __obj.updateDynamic("_effectiveDateTime")(_effectiveDateTime)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_issued != null) __obj.updateDynamic("_issued")(_issued)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_valueBoolean != null) __obj.updateDynamic("_valueBoolean")(_valueBoolean)
+    if (_valueDateTime != null) __obj.updateDynamic("_valueDateTime")(_valueDateTime)
+    if (_valueString != null) __obj.updateDynamic("_valueString")(_valueString)
+    if (_valueTime != null) __obj.updateDynamic("_valueTime")(_valueTime)
+    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn)
+    if (bodySite != null) __obj.updateDynamic("bodySite")(bodySite)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (dataAbsentReason != null) __obj.updateDynamic("dataAbsentReason")(dataAbsentReason)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (effectiveDateTime != null) __obj.updateDynamic("effectiveDateTime")(effectiveDateTime)
+    if (effectivePeriod != null) __obj.updateDynamic("effectivePeriod")(effectivePeriod)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (interpretation != null) __obj.updateDynamic("interpretation")(interpretation)
+    if (issued != null) __obj.updateDynamic("issued")(issued)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (performer != null) __obj.updateDynamic("performer")(performer)
+    if (referenceRange != null) __obj.updateDynamic("referenceRange")(referenceRange)
+    if (related != null) __obj.updateDynamic("related")(related)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (specimen != null) __obj.updateDynamic("specimen")(specimen)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (valueAttachment != null) __obj.updateDynamic("valueAttachment")(valueAttachment)
+    if (!js.isUndefined(valueBoolean)) __obj.updateDynamic("valueBoolean")(valueBoolean)
+    if (valueCodeableConcept != null) __obj.updateDynamic("valueCodeableConcept")(valueCodeableConcept)
+    if (valueDateTime != null) __obj.updateDynamic("valueDateTime")(valueDateTime)
+    if (valuePeriod != null) __obj.updateDynamic("valuePeriod")(valuePeriod)
+    if (valueQuantity != null) __obj.updateDynamic("valueQuantity")(valueQuantity)
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    if (valueRatio != null) __obj.updateDynamic("valueRatio")(valueRatio)
+    if (valueSampledData != null) __obj.updateDynamic("valueSampledData")(valueSampledData)
+    if (valueString != null) __obj.updateDynamic("valueString")(valueString)
+    if (valueTime != null) __obj.updateDynamic("valueTime")(valueTime)
+    __obj.asInstanceOf[Observation]
+  }
 }
 

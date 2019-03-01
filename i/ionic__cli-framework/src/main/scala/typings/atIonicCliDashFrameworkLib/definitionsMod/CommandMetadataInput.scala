@@ -12,3 +12,20 @@ trait CommandMetadataInput extends js.Object {
   var validators: js.UndefOr[js.Array[Validator]] = js.undefined
 }
 
+object CommandMetadataInput {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    summary: java.lang.String,
+    `private`: js.UndefOr[scala.Boolean] = js.undefined,
+    validators: js.Array[Validator] = null
+  ): CommandMetadataInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("summary")(summary)
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    if (validators != null) __obj.updateDynamic("validators")(validators)
+    __obj.asInstanceOf[CommandMetadataInput]
+  }
+}
+

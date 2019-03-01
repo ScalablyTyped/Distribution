@@ -11,3 +11,24 @@ trait MapShapeMouseLeaveEvent extends MapEvent {
   var shape: js.UndefOr[kendoDashUiLib.kendoNs.drawingNs.Element] = js.undefined
 }
 
+object MapShapeMouseLeaveEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Map,
+    layer: kendoDashUiLib.kendoNs.datavizNs.mapNs.layerNs.Shape = null,
+    originalEvent: js.Any = null,
+    shape: kendoDashUiLib.kendoNs.drawingNs.Element = null
+  ): MapShapeMouseLeaveEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (layer != null) __obj.updateDynamic("layer")(layer)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    __obj.asInstanceOf[MapShapeMouseLeaveEvent]
+  }
+}
+

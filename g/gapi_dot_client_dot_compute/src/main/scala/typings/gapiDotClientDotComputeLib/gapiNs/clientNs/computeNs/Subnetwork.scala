@@ -52,3 +52,36 @@ trait Subnetwork extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Subnetwork {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    gatewayAddress: java.lang.String = null,
+    id: java.lang.String = null,
+    ipCidrRange: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    network: java.lang.String = null,
+    privateIpGoogleAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    region: java.lang.String = null,
+    secondaryIpRanges: js.Array[SubnetworkSecondaryRange] = null,
+    selfLink: java.lang.String = null
+  ): Subnetwork = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (gatewayAddress != null) __obj.updateDynamic("gatewayAddress")(gatewayAddress)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (!js.isUndefined(privateIpGoogleAccess)) __obj.updateDynamic("privateIpGoogleAccess")(privateIpGoogleAccess)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (secondaryIpRanges != null) __obj.updateDynamic("secondaryIpRanges")(secondaryIpRanges)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Subnetwork]
+  }
+}
+

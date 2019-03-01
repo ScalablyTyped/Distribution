@@ -241,10 +241,12 @@ object activexDashAccessLibStrings {
   sealed trait ItemRemoved extends js.Object
   
   @js.native
-  sealed trait `Jet 2DOTx` extends js.Object
+  sealed trait `Jet 2DOTx`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
-  sealed trait `Jet 3DOTx` extends js.Object
+  sealed trait `Jet 3DOTx`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
   sealed trait KeyAscii extends js.Object
@@ -268,7 +270,8 @@ object activexDashAccessLibStrings {
   sealed trait LostFocus extends js.Object
   
   @js.native
-  sealed trait `Microsoft Access (default)` extends js.Object
+  sealed trait `Microsoft Access (default)`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
   sealed trait MouseDown extends js.Object
@@ -295,7 +298,8 @@ object activexDashAccessLibStrings {
   sealed trait NotInList extends js.Object
   
   @js.native
-  sealed trait `ODBC Database` extends js.Object
+  sealed trait `ODBC Database`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
   sealed trait OnConnect extends js.Object
@@ -313,16 +317,20 @@ object activexDashAccessLibStrings {
   sealed trait Paint extends js.Object
   
   @js.native
-  sealed trait `Paradox 3DOTx` extends js.Object
+  sealed trait `Paradox 3DOTx`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
-  sealed trait `Paradox 4DOTx` extends js.Object
+  sealed trait `Paradox 4DOTx`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
-  sealed trait `Paradox 5DOTx` extends js.Object
+  sealed trait `Paradox 5DOTx`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
-  sealed trait `Paradox 7DOTx` extends js.Object
+  sealed trait `Paradox 7DOTx`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
   sealed trait PivotTableChange extends js.Object
@@ -439,7 +447,8 @@ object activexDashAccessLibStrings {
   sealed trait ViewChange extends js.Object
   
   @js.native
-  sealed trait WSS extends js.Object
+  sealed trait WSS
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
   sealed trait X extends js.Object
@@ -457,13 +466,16 @@ object activexDashAccessLibStrings {
   sealed trait chartObject extends js.Object
   
   @js.native
-  sealed trait `dBase 5DOT0` extends js.Object
+  sealed trait `dBase 5DOT0`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
-  sealed trait `dBase III` extends js.Object
+  sealed trait `dBase III`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
-  sealed trait `dBase IV` extends js.Object
+  sealed trait `dBase IV`
+    extends activexDashAccessLib.AccessNs.DatabaseType
   
   @js.native
   sealed trait drawObject extends js.Object

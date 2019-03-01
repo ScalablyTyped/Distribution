@@ -22,3 +22,32 @@ trait ProofreadingResult extends js.Object {
   var xProofreader: XProofreader
 }
 
+object ProofreadingResult {
+  @scala.inline
+  def apply(
+    aDocumentIdentifier: java.lang.String,
+    aErrors: activexDashInteropLib.SafeArray[SingleProofreadingError],
+    aLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    aProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    aText: java.lang.String,
+    nBehindEndOfSentencePosition: scala.Double,
+    nStartOfNextSentencePosition: scala.Double,
+    nStartOfSentencePosition: scala.Double,
+    xFlatParagraph: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XFlatParagraph,
+    xProofreader: XProofreader
+  ): ProofreadingResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aDocumentIdentifier")(aDocumentIdentifier)
+    __obj.updateDynamic("aErrors")(aErrors)
+    __obj.updateDynamic("aLocale")(aLocale)
+    __obj.updateDynamic("aProperties")(aProperties)
+    __obj.updateDynamic("aText")(aText)
+    __obj.updateDynamic("nBehindEndOfSentencePosition")(nBehindEndOfSentencePosition)
+    __obj.updateDynamic("nStartOfNextSentencePosition")(nStartOfNextSentencePosition)
+    __obj.updateDynamic("nStartOfSentencePosition")(nStartOfSentencePosition)
+    __obj.updateDynamic("xFlatParagraph")(xFlatParagraph)
+    __obj.updateDynamic("xProofreader")(xProofreader)
+    __obj.asInstanceOf[ProofreadingResult]
+  }
+}
+

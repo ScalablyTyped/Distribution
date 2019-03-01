@@ -21,3 +21,13 @@ trait AwsS3Data extends js.Object {
   var bucketName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AwsS3Data {
+  @scala.inline
+  def apply(awsAccessKey: AwsAccessKey = null, bucketName: java.lang.String = null): AwsS3Data = {
+    val __obj = js.Dynamic.literal()
+    if (awsAccessKey != null) __obj.updateDynamic("awsAccessKey")(awsAccessKey)
+    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName)
+    __obj.asInstanceOf[AwsS3Data]
+  }
+}
+

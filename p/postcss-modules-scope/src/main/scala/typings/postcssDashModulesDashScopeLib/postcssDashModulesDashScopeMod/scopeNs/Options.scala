@@ -16,3 +16,19 @@ trait Options extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    generateScopedName: js.Function3[
+      /* exportedName */ java.lang.String, 
+      /* path */ java.lang.String, 
+      /* css */ java.lang.String, 
+      java.lang.String
+    ] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (generateScopedName != null) __obj.updateDynamic("generateScopedName")(generateScopedName)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -105,3 +105,36 @@ trait RangeFormatData extends js.Object {
   var wrapText: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RangeFormatData {
+  @scala.inline
+  def apply(
+    borders: js.Array[RangeBorderData] = null,
+    columnWidth: scala.Int | scala.Double = null,
+    fill: RangeFillData = null,
+    font: RangeFontData = null,
+    horizontalAlignment: officeDashJsLib.ExcelNs.HorizontalAlignment | officeDashJsLib.officeDashJsLibStrings.General | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Fill | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.CenterAcrossSelection | officeDashJsLib.officeDashJsLibStrings.Distributed = null,
+    protection: FormatProtectionData = null,
+    rowHeight: scala.Int | scala.Double = null,
+    textOrientation: scala.Int | scala.Double = null,
+    useStandardHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    useStandardWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: officeDashJsLib.ExcelNs.VerticalAlignment | officeDashJsLib.officeDashJsLibStrings.Top | officeDashJsLib.officeDashJsLibStrings.Center | officeDashJsLib.officeDashJsLibStrings.Bottom | officeDashJsLib.officeDashJsLibStrings.Justify | officeDashJsLib.officeDashJsLibStrings.Distributed = null,
+    wrapText: js.UndefOr[scala.Boolean] = js.undefined
+  ): RangeFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (borders != null) __obj.updateDynamic("borders")(borders)
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStandardHeight)) __obj.updateDynamic("useStandardHeight")(useStandardHeight)
+    if (!js.isUndefined(useStandardWidth)) __obj.updateDynamic("useStandardWidth")(useStandardWidth)
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText)
+    __obj.asInstanceOf[RangeFormatData]
+  }
+}
+

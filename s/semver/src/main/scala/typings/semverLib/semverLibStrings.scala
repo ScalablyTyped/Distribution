@@ -7,58 +7,75 @@ import scala.scalajs.js.annotation._
 
 object semverLibStrings {
   @js.native
-  sealed trait `!=` extends js.Object
+  sealed trait `!=`
+    extends semverLib.semverMod.Operator
   
   @js.native
-  sealed trait `!==` extends js.Object
+  sealed trait `!==`
+    extends semverLib.semverMod.Operator
   
   @js.native
   sealed trait `2DOT0DOT0` extends js.Object
   
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends semverLib.semverMod.Operator
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends semverLib.semverMod.Operator
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait `=`
+    extends semverLib.semverMod.Operator
   
   @js.native
-  sealed trait `==` extends js.Object
+  sealed trait `==`
+    extends semverLib.semverMod.Operator
   
   @js.native
-  sealed trait `===` extends js.Object
+  sealed trait `===`
+    extends semverLib.semverMod.Operator
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends semverLib.semverMod.Operator
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends semverLib.semverMod.Operator
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends semverLib.semverMod.Operator
   
   @js.native
-  sealed trait major extends js.Object
+  sealed trait major
+    extends semverLib.semverMod.ReleaseType
   
   @js.native
-  sealed trait minor extends js.Object
+  sealed trait minor
+    extends semverLib.semverMod.ReleaseType
   
   @js.native
-  sealed trait patch extends js.Object
+  sealed trait patch
+    extends semverLib.semverMod.ReleaseType
   
   @js.native
-  sealed trait premajor extends js.Object
+  sealed trait premajor
+    extends semverLib.semverMod.ReleaseType
   
   @js.native
-  sealed trait preminor extends js.Object
+  sealed trait preminor
+    extends semverLib.semverMod.ReleaseType
   
   @js.native
-  sealed trait prepatch extends js.Object
+  sealed trait prepatch
+    extends semverLib.semverMod.ReleaseType
   
   @js.native
-  sealed trait prerelease extends js.Object
+  sealed trait prerelease
+    extends semverLib.semverMod.ReleaseType
   
   @scala.inline
   def `!=`: `!=` = "!=".asInstanceOf[`!=`]

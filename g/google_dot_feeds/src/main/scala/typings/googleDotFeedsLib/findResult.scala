@@ -11,3 +11,14 @@ trait findResult extends js.Object {
   var xmlDocument: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object findResult {
+  @scala.inline
+  def apply(findEntries: js.Array[findEntry], error: feedError = null, xmlDocument: java.lang.String = null): findResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("findEntries")(findEntries)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (xmlDocument != null) __obj.updateDynamic("xmlDocument")(xmlDocument)
+    __obj.asInstanceOf[findResult]
+  }
+}
+

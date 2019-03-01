@@ -10,3 +10,20 @@ trait IsReadyToPayRequest extends ApiVersion {
   var existingPaymentMethodRequired: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IsReadyToPayRequest {
+  @scala.inline
+  def apply(
+    allowedPaymentMethods: js.Array[PaymentMethod],
+    apiVersion: scala.Double,
+    apiVersionMinor: scala.Double,
+    existingPaymentMethodRequired: js.UndefOr[scala.Boolean] = js.undefined
+  ): IsReadyToPayRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowedPaymentMethods")(allowedPaymentMethods)
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("apiVersionMinor")(apiVersionMinor)
+    if (!js.isUndefined(existingPaymentMethodRequired)) __obj.updateDynamic("existingPaymentMethodRequired")(existingPaymentMethodRequired)
+    __obj.asInstanceOf[IsReadyToPayRequest]
+  }
+}
+

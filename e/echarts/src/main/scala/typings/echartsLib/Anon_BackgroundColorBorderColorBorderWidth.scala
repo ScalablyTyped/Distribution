@@ -268,3 +268,28 @@ trait Anon_BackgroundColorBorderColorBorderWidth extends js.Object {
   var textStyle: js.UndefOr[Anon_ColorFontFamily] = js.undefined
 }
 
+object Anon_BackgroundColorBorderColorBorderWidth {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    extraCssText: java.lang.String = null,
+    formatter: js.Function | java.lang.String = null,
+    padding: scala.Int | scala.Double = null,
+    position: js.Array[_] | java.lang.String = null,
+    textStyle: Anon_ColorFontFamily = null
+  ): Anon_BackgroundColorBorderColorBorderWidth = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (extraCssText != null) __obj.updateDynamic("extraCssText")(extraCssText)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    __obj.asInstanceOf[Anon_BackgroundColorBorderColorBorderWidth]
+  }
+}
+

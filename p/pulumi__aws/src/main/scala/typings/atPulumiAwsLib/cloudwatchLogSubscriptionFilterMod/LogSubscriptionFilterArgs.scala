@@ -32,3 +32,24 @@ trait LogSubscriptionFilterArgs extends js.Object {
   val roleArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object LogSubscriptionFilterArgs {
+  @scala.inline
+  def apply(
+    destinationArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    filterPattern: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    logGroup: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.cloudwatchLogGroupMod.LogGroup],
+    distribution: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): LogSubscriptionFilterArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinationArn")(destinationArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("filterPattern")(filterPattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("logGroup")(logGroup.asInstanceOf[js.Any])
+    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogSubscriptionFilterArgs]
+  }
+}
+

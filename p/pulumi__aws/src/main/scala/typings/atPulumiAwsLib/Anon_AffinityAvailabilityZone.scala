@@ -14,3 +14,24 @@ trait Anon_AffinityAvailabilityZone extends js.Object {
   var tenancy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AffinityAvailabilityZone {
+  @scala.inline
+  def apply(
+    affinity: java.lang.String = null,
+    availabilityZone: java.lang.String = null,
+    groupName: java.lang.String = null,
+    hostId: java.lang.String = null,
+    spreadDomain: java.lang.String = null,
+    tenancy: java.lang.String = null
+  ): Anon_AffinityAvailabilityZone = {
+    val __obj = js.Dynamic.literal()
+    if (affinity != null) __obj.updateDynamic("affinity")(affinity)
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone)
+    if (groupName != null) __obj.updateDynamic("groupName")(groupName)
+    if (hostId != null) __obj.updateDynamic("hostId")(hostId)
+    if (spreadDomain != null) __obj.updateDynamic("spreadDomain")(spreadDomain)
+    if (tenancy != null) __obj.updateDynamic("tenancy")(tenancy)
+    __obj.asInstanceOf[Anon_AffinityAvailabilityZone]
+  }
+}
+

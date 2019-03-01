@@ -19,3 +19,13 @@ trait IDatabase extends js.Object {
   var qName: java.lang.String
 }
 
+object IDatabase {
+  @scala.inline
+  def apply(qIsDefault: scala.Boolean, qName: java.lang.String): IDatabase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qIsDefault")(qIsDefault)
+    __obj.updateDynamic("qName")(qName)
+    __obj.asInstanceOf[IDatabase]
+  }
+}
+

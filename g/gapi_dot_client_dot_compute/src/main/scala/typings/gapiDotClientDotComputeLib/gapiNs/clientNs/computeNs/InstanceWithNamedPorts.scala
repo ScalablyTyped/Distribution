@@ -14,3 +14,18 @@ trait InstanceWithNamedPorts extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstanceWithNamedPorts {
+  @scala.inline
+  def apply(
+    instance: java.lang.String = null,
+    namedPorts: js.Array[NamedPort] = null,
+    status: java.lang.String = null
+  ): InstanceWithNamedPorts = {
+    val __obj = js.Dynamic.literal()
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (namedPorts != null) __obj.updateDynamic("namedPorts")(namedPorts)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[InstanceWithNamedPorts]
+  }
+}
+

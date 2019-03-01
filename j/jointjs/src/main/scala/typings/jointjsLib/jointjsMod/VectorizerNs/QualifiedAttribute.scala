@@ -10,3 +10,13 @@ trait QualifiedAttribute extends js.Object {
   var ns: java.lang.String | scala.Null
 }
 
+object QualifiedAttribute {
+  @scala.inline
+  def apply(local: java.lang.String, ns: java.lang.String = null): QualifiedAttribute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("local")(local)
+    if (ns != null) __obj.updateDynamic("ns")(ns)
+    __obj.asInstanceOf[QualifiedAttribute]
+  }
+}
+

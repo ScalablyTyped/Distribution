@@ -13,3 +13,12 @@ trait VideoProperties extends js.Object {
   var outline: js.UndefOr[Outline] = js.undefined
 }
 
+object VideoProperties {
+  @scala.inline
+  def apply(outline: Outline = null): VideoProperties = {
+    val __obj = js.Dynamic.literal()
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    __obj.asInstanceOf[VideoProperties]
+  }
+}
+

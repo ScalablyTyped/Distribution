@@ -16,3 +16,21 @@ trait IUsageRecordSummaries
   var object_IUsageRecordSummaries: stripeLib.stripeLibStrings.list
 }
 
+object IUsageRecordSummaries {
+  @scala.inline
+  def apply(
+    data: js.Array[IUsageRecordSummariesItem],
+    has_more: scala.Boolean,
+    `object`: stripeLib.stripeLibStrings.list,
+    url: java.lang.String,
+    total_count: scala.Int | scala.Double = null
+  ): IUsageRecordSummaries = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("has_more")(has_more)
+    __obj.updateDynamic("url")(url)
+    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IUsageRecordSummaries]
+  }
+}
+

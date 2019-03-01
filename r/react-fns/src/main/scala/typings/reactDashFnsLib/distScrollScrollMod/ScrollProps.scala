@@ -10,3 +10,13 @@ trait ScrollProps extends js.Object {
   var y: scala.Double
 }
 
+object ScrollProps {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): ScrollProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[ScrollProps]
+  }
+}
+

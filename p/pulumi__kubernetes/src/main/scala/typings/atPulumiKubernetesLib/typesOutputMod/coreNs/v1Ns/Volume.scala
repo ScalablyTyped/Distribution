@@ -148,3 +148,68 @@ trait Volume extends js.Object {
   val vsphereVolume: VsphereVirtualDiskVolumeSource
 }
 
+object Volume {
+  @scala.inline
+  def apply(
+    awsElasticBlockStore: AWSElasticBlockStoreVolumeSource,
+    azureDisk: AzureDiskVolumeSource,
+    azureFile: AzureFileVolumeSource,
+    cephfs: CephFSVolumeSource,
+    cinder: CinderVolumeSource,
+    configMap: ConfigMapVolumeSource,
+    downwardAPI: DownwardAPIVolumeSource,
+    emptyDir: EmptyDirVolumeSource,
+    fc: FCVolumeSource,
+    flexVolume: FlexVolumeSource,
+    flocker: FlockerVolumeSource,
+    gcePersistentDisk: GCEPersistentDiskVolumeSource,
+    gitRepo: GitRepoVolumeSource,
+    glusterfs: GlusterfsVolumeSource,
+    hostPath: HostPathVolumeSource,
+    iscsi: ISCSIVolumeSource,
+    name: java.lang.String,
+    nfs: NFSVolumeSource,
+    persistentVolumeClaim: PersistentVolumeClaimVolumeSource,
+    photonPersistentDisk: PhotonPersistentDiskVolumeSource,
+    portworxVolume: PortworxVolumeSource,
+    projected: ProjectedVolumeSource,
+    quobyte: QuobyteVolumeSource,
+    rbd: RBDVolumeSource,
+    scaleIO: ScaleIOVolumeSource,
+    secret: SecretVolumeSource,
+    storageos: StorageOSVolumeSource,
+    vsphereVolume: VsphereVirtualDiskVolumeSource
+  ): Volume = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("awsElasticBlockStore")(awsElasticBlockStore)
+    __obj.updateDynamic("azureDisk")(azureDisk)
+    __obj.updateDynamic("azureFile")(azureFile)
+    __obj.updateDynamic("cephfs")(cephfs)
+    __obj.updateDynamic("cinder")(cinder)
+    __obj.updateDynamic("configMap")(configMap)
+    __obj.updateDynamic("downwardAPI")(downwardAPI)
+    __obj.updateDynamic("emptyDir")(emptyDir)
+    __obj.updateDynamic("fc")(fc)
+    __obj.updateDynamic("flexVolume")(flexVolume)
+    __obj.updateDynamic("flocker")(flocker)
+    __obj.updateDynamic("gcePersistentDisk")(gcePersistentDisk)
+    __obj.updateDynamic("gitRepo")(gitRepo)
+    __obj.updateDynamic("glusterfs")(glusterfs)
+    __obj.updateDynamic("hostPath")(hostPath)
+    __obj.updateDynamic("iscsi")(iscsi)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("nfs")(nfs)
+    __obj.updateDynamic("persistentVolumeClaim")(persistentVolumeClaim)
+    __obj.updateDynamic("photonPersistentDisk")(photonPersistentDisk)
+    __obj.updateDynamic("portworxVolume")(portworxVolume)
+    __obj.updateDynamic("projected")(projected)
+    __obj.updateDynamic("quobyte")(quobyte)
+    __obj.updateDynamic("rbd")(rbd)
+    __obj.updateDynamic("scaleIO")(scaleIO)
+    __obj.updateDynamic("secret")(secret)
+    __obj.updateDynamic("storageos")(storageos)
+    __obj.updateDynamic("vsphereVolume")(vsphereVolume)
+    __obj.asInstanceOf[Volume]
+  }
+}
+

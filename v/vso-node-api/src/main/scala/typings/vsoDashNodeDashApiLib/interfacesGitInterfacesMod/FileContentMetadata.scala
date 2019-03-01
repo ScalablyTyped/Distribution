@@ -15,3 +15,26 @@ trait FileContentMetadata extends js.Object {
   var vsLink: java.lang.String
 }
 
+object FileContentMetadata {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String,
+    encoding: scala.Double,
+    extension: java.lang.String,
+    fileName: java.lang.String,
+    isBinary: scala.Boolean,
+    isImage: scala.Boolean,
+    vsLink: java.lang.String
+  ): FileContentMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("encoding")(encoding)
+    __obj.updateDynamic("extension")(extension)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("isBinary")(isBinary)
+    __obj.updateDynamic("isImage")(isImage)
+    __obj.updateDynamic("vsLink")(vsLink)
+    __obj.asInstanceOf[FileContentMetadata]
+  }
+}
+

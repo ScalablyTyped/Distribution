@@ -29,3 +29,24 @@ trait CheckinArgument extends js.Object {
   var VersionComment: java.lang.String
 }
 
+object CheckinArgument {
+  @scala.inline
+  def apply(
+    MajorVersion: scala.Boolean,
+    MimeType: java.lang.String,
+    NewTitle: java.lang.String,
+    SourceURL: java.lang.String,
+    TargetURL: java.lang.String,
+    VersionComment: java.lang.String
+  ): CheckinArgument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MajorVersion")(MajorVersion)
+    __obj.updateDynamic("MimeType")(MimeType)
+    __obj.updateDynamic("NewTitle")(NewTitle)
+    __obj.updateDynamic("SourceURL")(SourceURL)
+    __obj.updateDynamic("TargetURL")(TargetURL)
+    __obj.updateDynamic("VersionComment")(VersionComment)
+    __obj.asInstanceOf[CheckinArgument]
+  }
+}
+

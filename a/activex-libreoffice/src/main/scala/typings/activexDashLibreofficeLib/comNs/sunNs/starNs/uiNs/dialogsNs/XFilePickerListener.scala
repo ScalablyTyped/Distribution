@@ -45,3 +45,30 @@ trait XFilePickerListener
   def helpRequested(aEvent: FilePickerEvent): java.lang.String
 }
 
+object XFilePickerListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    controlStateChanged: js.Function1[FilePickerEvent, scala.Unit],
+    dialogSizeChanged: js.Function0[scala.Unit],
+    directoryChanged: js.Function1[FilePickerEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    fileSelectionChanged: js.Function1[FilePickerEvent, scala.Unit],
+    helpRequested: js.Function1[FilePickerEvent, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFilePickerListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("controlStateChanged")(controlStateChanged)
+    __obj.updateDynamic("dialogSizeChanged")(dialogSizeChanged)
+    __obj.updateDynamic("directoryChanged")(directoryChanged)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("fileSelectionChanged")(fileSelectionChanged)
+    __obj.updateDynamic("helpRequested")(helpRequested)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFilePickerListener]
+  }
+}
+

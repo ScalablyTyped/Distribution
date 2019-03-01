@@ -39,3 +39,28 @@ trait Move extends ShortMove {
   var san: java.lang.String
 }
 
+object Move {
+  @scala.inline
+  def apply(
+    color: chessDotJsLib.chessDotJsLibStrings.b | chessDotJsLib.chessDotJsLibStrings.w,
+    flags: java.lang.String,
+    from: Square,
+    piece: chessDotJsLib.chessDotJsLibStrings.p | chessDotJsLib.chessDotJsLibStrings.n | chessDotJsLib.chessDotJsLibStrings.b | chessDotJsLib.chessDotJsLibStrings.r | chessDotJsLib.chessDotJsLibStrings.q | chessDotJsLib.chessDotJsLibStrings.k,
+    san: java.lang.String,
+    to: Square,
+    captured: chessDotJsLib.chessDotJsLibStrings.p | chessDotJsLib.chessDotJsLibStrings.n | chessDotJsLib.chessDotJsLibStrings.b | chessDotJsLib.chessDotJsLibStrings.r | chessDotJsLib.chessDotJsLibStrings.q = null,
+    promotion: chessDotJsLib.chessDotJsLibStrings.n | chessDotJsLib.chessDotJsLibStrings.b | chessDotJsLib.chessDotJsLibStrings.r | chessDotJsLib.chessDotJsLibStrings.q = null
+  ): Move = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("piece")(piece.asInstanceOf[js.Any])
+    __obj.updateDynamic("san")(san)
+    __obj.updateDynamic("to")(to)
+    if (captured != null) __obj.updateDynamic("captured")(captured.asInstanceOf[js.Any])
+    if (promotion != null) __obj.updateDynamic("promotion")(promotion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Move]
+  }
+}
+

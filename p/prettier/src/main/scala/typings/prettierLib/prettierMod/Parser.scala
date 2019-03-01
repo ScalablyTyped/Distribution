@@ -20,3 +20,29 @@ trait Parser extends js.Object {
   ): AST
 }
 
+object Parser {
+  @scala.inline
+  def apply(
+    astFormat: java.lang.String,
+    locEnd: js.Function1[js.Any, scala.Double],
+    locStart: js.Function1[js.Any, scala.Double],
+    parse: js.Function3[
+      java.lang.String, 
+      org.scalablytyped.runtime.StringDictionary[Parser], 
+      ParserOptions, 
+      AST
+    ],
+    hasPragma: js.Function1[/* text */ java.lang.String, scala.Boolean] = null,
+    preprocess: js.Function2[/* text */ java.lang.String, /* options */ ParserOptions, java.lang.String] = null
+  ): Parser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("astFormat")(astFormat)
+    __obj.updateDynamic("locEnd")(locEnd)
+    __obj.updateDynamic("locStart")(locStart)
+    __obj.updateDynamic("parse")(parse)
+    if (hasPragma != null) __obj.updateDynamic("hasPragma")(hasPragma)
+    if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
+    __obj.asInstanceOf[Parser]
+  }
+}
+

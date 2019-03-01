@@ -15,3 +15,26 @@ trait ClearfixProps
   var visibleXsBlock: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClearfixProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libClearfixMod.Clearfix] = null,
+    bsClass: java.lang.String = null,
+    componentClass: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    visibleLgBlock: js.UndefOr[scala.Boolean] = js.undefined,
+    visibleMdBlock: js.UndefOr[scala.Boolean] = js.undefined,
+    visibleSmBlock: js.UndefOr[scala.Boolean] = js.undefined,
+    visibleXsBlock: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClearfixProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(visibleLgBlock)) __obj.updateDynamic("visibleLgBlock")(visibleLgBlock)
+    if (!js.isUndefined(visibleMdBlock)) __obj.updateDynamic("visibleMdBlock")(visibleMdBlock)
+    if (!js.isUndefined(visibleSmBlock)) __obj.updateDynamic("visibleSmBlock")(visibleSmBlock)
+    if (!js.isUndefined(visibleXsBlock)) __obj.updateDynamic("visibleXsBlock")(visibleXsBlock)
+    __obj.asInstanceOf[ClearfixProps]
+  }
+}
+

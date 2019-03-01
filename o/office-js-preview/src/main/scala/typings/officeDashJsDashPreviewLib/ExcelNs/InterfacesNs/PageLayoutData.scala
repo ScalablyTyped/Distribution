@@ -181,3 +181,52 @@ trait PageLayoutData extends js.Object {
   var zoom: js.UndefOr[officeDashJsDashPreviewLib.ExcelNs.PageLayoutZoomOptions] = js.undefined
 }
 
+object PageLayoutData {
+  @scala.inline
+  def apply(
+    blackAndWhite: js.UndefOr[scala.Boolean] = js.undefined,
+    bottomMargin: scala.Int | scala.Double = null,
+    centerHorizontally: js.UndefOr[scala.Boolean] = js.undefined,
+    centerVertically: js.UndefOr[scala.Boolean] = js.undefined,
+    draftMode: js.UndefOr[scala.Boolean] = js.undefined,
+    firstPageNumber: scala.Double | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Empty = null,
+    footerMargin: scala.Int | scala.Double = null,
+    headerMargin: scala.Int | scala.Double = null,
+    headersFooters: HeaderFooterGroupData = null,
+    leftMargin: scala.Int | scala.Double = null,
+    orientation: officeDashJsDashPreviewLib.ExcelNs.PageOrientation | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Portrait | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Landscape = null,
+    paperSize: officeDashJsDashPreviewLib.ExcelNs.PaperType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Letter | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LetterSmall | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Tabloid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ledger | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Legal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Statement | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Executive | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.A3 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.A4 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.A4Small | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.A5 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.B4 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.B5 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Folio | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Quatro | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Paper10x14 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Paper11x17 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Note | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Envelope9 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Envelope10 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Envelope11 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Envelope12 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Envelope14 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Csheet | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dsheet | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Esheet | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeDL | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeC5 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeC3 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeC4 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeC6 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeC65 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeB4 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeB5 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeB6 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeItaly | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopeMonarch | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EnvelopePersonal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FanfoldUS | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FanfoldStdGerman | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FanfoldLegalGerman = null,
+    printComments: officeDashJsDashPreviewLib.ExcelNs.PrintComments | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NoComments | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EndSheet | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.InPlace = null,
+    printErrors: officeDashJsDashPreviewLib.ExcelNs.PrintErrorType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AsDisplayed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Blank | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotAvailable = null,
+    printGridlines: js.UndefOr[scala.Boolean] = js.undefined,
+    printHeadings: js.UndefOr[scala.Boolean] = js.undefined,
+    printOrder: officeDashJsDashPreviewLib.ExcelNs.PrintOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DownThenOver | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.OverThenDown = null,
+    rightMargin: scala.Int | scala.Double = null,
+    topMargin: scala.Int | scala.Double = null,
+    zoom: officeDashJsDashPreviewLib.ExcelNs.PageLayoutZoomOptions = null
+  ): PageLayoutData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(blackAndWhite)) __obj.updateDynamic("blackAndWhite")(blackAndWhite)
+    if (bottomMargin != null) __obj.updateDynamic("bottomMargin")(bottomMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerHorizontally)) __obj.updateDynamic("centerHorizontally")(centerHorizontally)
+    if (!js.isUndefined(centerVertically)) __obj.updateDynamic("centerVertically")(centerVertically)
+    if (!js.isUndefined(draftMode)) __obj.updateDynamic("draftMode")(draftMode)
+    if (firstPageNumber != null) __obj.updateDynamic("firstPageNumber")(firstPageNumber.asInstanceOf[js.Any])
+    if (footerMargin != null) __obj.updateDynamic("footerMargin")(footerMargin.asInstanceOf[js.Any])
+    if (headerMargin != null) __obj.updateDynamic("headerMargin")(headerMargin.asInstanceOf[js.Any])
+    if (headersFooters != null) __obj.updateDynamic("headersFooters")(headersFooters)
+    if (leftMargin != null) __obj.updateDynamic("leftMargin")(leftMargin.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (paperSize != null) __obj.updateDynamic("paperSize")(paperSize.asInstanceOf[js.Any])
+    if (printComments != null) __obj.updateDynamic("printComments")(printComments.asInstanceOf[js.Any])
+    if (printErrors != null) __obj.updateDynamic("printErrors")(printErrors.asInstanceOf[js.Any])
+    if (!js.isUndefined(printGridlines)) __obj.updateDynamic("printGridlines")(printGridlines)
+    if (!js.isUndefined(printHeadings)) __obj.updateDynamic("printHeadings")(printHeadings)
+    if (printOrder != null) __obj.updateDynamic("printOrder")(printOrder.asInstanceOf[js.Any])
+    if (rightMargin != null) __obj.updateDynamic("rightMargin")(rightMargin.asInstanceOf[js.Any])
+    if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[PageLayoutData]
+  }
+}
+

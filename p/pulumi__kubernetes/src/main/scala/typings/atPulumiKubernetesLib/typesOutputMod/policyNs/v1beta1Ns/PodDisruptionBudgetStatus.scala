@@ -47,3 +47,24 @@ trait PodDisruptionBudgetStatus extends js.Object {
   val observedGeneration: scala.Double
 }
 
+object PodDisruptionBudgetStatus {
+  @scala.inline
+  def apply(
+    currentHealthy: scala.Double,
+    desiredHealthy: scala.Double,
+    disruptedPods: js.Object,
+    disruptionsAllowed: scala.Double,
+    expectedPods: scala.Double,
+    observedGeneration: scala.Double
+  ): PodDisruptionBudgetStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentHealthy")(currentHealthy)
+    __obj.updateDynamic("desiredHealthy")(desiredHealthy)
+    __obj.updateDynamic("disruptedPods")(disruptedPods)
+    __obj.updateDynamic("disruptionsAllowed")(disruptionsAllowed)
+    __obj.updateDynamic("expectedPods")(expectedPods)
+    __obj.updateDynamic("observedGeneration")(observedGeneration)
+    __obj.asInstanceOf[PodDisruptionBudgetStatus]
+  }
+}
+

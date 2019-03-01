@@ -11,3 +11,18 @@ trait IPropertyValueIconClue extends js.Object {
   def Clone(): IPropertyValueIconClue
 }
 
+object IPropertyValueIconClue {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IPropertyValueIconClue],
+    PropertyDef: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double,
+    ValueListItem: scala.Double
+  ): IPropertyValueIconClue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("PropertyDef")(PropertyDef.asInstanceOf[js.Any])
+    __obj.updateDynamic("ValueListItem")(ValueListItem)
+    __obj.asInstanceOf[IPropertyValueIconClue]
+  }
+}
+

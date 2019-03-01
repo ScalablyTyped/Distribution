@@ -24,3 +24,32 @@ trait XCustomShapeEngine
   def render(): XShape
 }
 
+object XCustomShapeEngine {
+  @scala.inline
+  def apply(
+    Interaction: activexDashInteropLib.SafeArray[XCustomShapeHandle],
+    LineGeometry: PolyPolygonBezierCoords,
+    TextBounds: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    acquire: js.Function0[scala.Unit],
+    getInteraction: js.Function0[activexDashInteropLib.SafeArray[XCustomShapeHandle]],
+    getLineGeometry: js.Function0[PolyPolygonBezierCoords],
+    getTextBounds: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    render: js.Function0[XShape]
+  ): XCustomShapeEngine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Interaction")(Interaction)
+    __obj.updateDynamic("LineGeometry")(LineGeometry)
+    __obj.updateDynamic("TextBounds")(TextBounds)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getInteraction")(getInteraction)
+    __obj.updateDynamic("getLineGeometry")(getLineGeometry)
+    __obj.updateDynamic("getTextBounds")(getTextBounds)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[XCustomShapeEngine]
+  }
+}
+

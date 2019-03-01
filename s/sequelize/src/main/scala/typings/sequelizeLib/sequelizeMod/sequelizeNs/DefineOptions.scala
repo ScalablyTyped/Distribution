@@ -161,3 +161,74 @@ trait DefineOptions[TInstance] extends js.Object {
   var version: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object DefineOptions {
+  @scala.inline
+  def apply[TInstance](
+    charset: java.lang.String = null,
+    classMethods: js.Object = null,
+    collate: java.lang.String = null,
+    comment: java.lang.String = null,
+    createdAt: java.lang.String | scala.Boolean = null,
+    defaultScope: AnyFindOptions = null,
+    deletedAt: java.lang.String | scala.Boolean = null,
+    engine: java.lang.String = null,
+    freezeTableName: js.UndefOr[scala.Boolean] = js.undefined,
+    getterMethods: DefineGetterMethodsOptions = null,
+    hasTrigger: js.UndefOr[scala.Boolean] = js.undefined,
+    hooks: HooksDefineOptions[TInstance] = null,
+    indexes: js.Array[DefineIndexesOptions] = null,
+    initialAutoIncrement: java.lang.String = null,
+    instanceMethods: js.Object = null,
+    name: DefineNameOptions = null,
+    omitNull: js.UndefOr[scala.Boolean] = js.undefined,
+    paranoid: js.UndefOr[scala.Boolean] = js.undefined,
+    rejectOnError: scala.Boolean | nodeLib.Error = null,
+    rowFormat: java.lang.String = null,
+    schema: java.lang.String = null,
+    schemaDelimiter: java.lang.String = null,
+    scopes: DefineScopeOptions = null,
+    setterMethods: DefineSetterMethodsOptions = null,
+    tableName: java.lang.String = null,
+    timestamps: js.UndefOr[scala.Boolean] = js.undefined,
+    underscored: js.UndefOr[scala.Boolean] = js.undefined,
+    underscoredAll: js.UndefOr[scala.Boolean] = js.undefined,
+    updatedAt: java.lang.String | scala.Boolean = null,
+    validate: DefineValidateOptions = null,
+    version: scala.Boolean | java.lang.String = null
+  ): DefineOptions[TInstance] = {
+    val __obj = js.Dynamic.literal()
+    if (charset != null) __obj.updateDynamic("charset")(charset)
+    if (classMethods != null) __obj.updateDynamic("classMethods")(classMethods)
+    if (collate != null) __obj.updateDynamic("collate")(collate)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
+    if (defaultScope != null) __obj.updateDynamic("defaultScope")(defaultScope)
+    if (deletedAt != null) __obj.updateDynamic("deletedAt")(deletedAt.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine)
+    if (!js.isUndefined(freezeTableName)) __obj.updateDynamic("freezeTableName")(freezeTableName)
+    if (getterMethods != null) __obj.updateDynamic("getterMethods")(getterMethods)
+    if (!js.isUndefined(hasTrigger)) __obj.updateDynamic("hasTrigger")(hasTrigger)
+    if (hooks != null) __obj.updateDynamic("hooks")(hooks)
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
+    if (initialAutoIncrement != null) __obj.updateDynamic("initialAutoIncrement")(initialAutoIncrement)
+    if (instanceMethods != null) __obj.updateDynamic("instanceMethods")(instanceMethods)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(omitNull)) __obj.updateDynamic("omitNull")(omitNull)
+    if (!js.isUndefined(paranoid)) __obj.updateDynamic("paranoid")(paranoid)
+    if (rejectOnError != null) __obj.updateDynamic("rejectOnError")(rejectOnError.asInstanceOf[js.Any])
+    if (rowFormat != null) __obj.updateDynamic("rowFormat")(rowFormat)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (schemaDelimiter != null) __obj.updateDynamic("schemaDelimiter")(schemaDelimiter)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (setterMethods != null) __obj.updateDynamic("setterMethods")(setterMethods)
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps)
+    if (!js.isUndefined(underscored)) __obj.updateDynamic("underscored")(underscored)
+    if (!js.isUndefined(underscoredAll)) __obj.updateDynamic("underscoredAll")(underscoredAll)
+    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefineOptions[TInstance]]
+  }
+}
+

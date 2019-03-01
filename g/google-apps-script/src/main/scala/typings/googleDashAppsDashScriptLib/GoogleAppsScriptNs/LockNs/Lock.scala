@@ -12,3 +12,20 @@ trait Lock extends js.Object {
   def waitLock(timeoutInMillis: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit
 }
 
+object Lock {
+  @scala.inline
+  def apply(
+    hasLock: js.Function0[scala.Boolean],
+    releaseLock: js.Function0[scala.Unit],
+    tryLock: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
+    waitLock: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit]
+  ): Lock = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hasLock")(hasLock)
+    __obj.updateDynamic("releaseLock")(releaseLock)
+    __obj.updateDynamic("tryLock")(tryLock)
+    __obj.updateDynamic("waitLock")(waitLock)
+    __obj.asInstanceOf[Lock]
+  }
+}
+

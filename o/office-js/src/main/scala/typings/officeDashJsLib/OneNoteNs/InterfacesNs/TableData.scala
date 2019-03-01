@@ -44,3 +44,22 @@ trait TableData extends js.Object {
   var rows: js.UndefOr[js.Array[TableRowData]] = js.undefined
 }
 
+object TableData {
+  @scala.inline
+  def apply(
+    borderVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    columnCount: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    rowCount: scala.Int | scala.Double = null,
+    rows: js.Array[TableRowData] = null
+  ): TableData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible)
+    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[TableData]
+  }
+}
+

@@ -10,31 +10,40 @@ object builderDashUtilLibStrings {
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait arm64 extends js.Object
+  sealed trait arm64
+    extends builderDashUtilLib.outArchMod.ArchType
   
   @js.native
-  sealed trait armv7l extends js.Object
+  sealed trait armv7l
+    extends builderDashUtilLib.outArchMod.ArchType
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends builderDashUtilLib.outLogMod.LogLevel
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends builderDashUtilLib.outLogMod.LogLevel
   
   @js.native
-  sealed trait ia32 extends js.Object
+  sealed trait ia32
+    extends builderDashUtilLib.outArchMod.ArchType
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends builderDashUtilLib.outLogMod.LogLevel
   
   @js.native
-  sealed trait notice extends js.Object
+  sealed trait notice
+    extends builderDashUtilLib.outLogMod.LogLevel
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends builderDashUtilLib.outLogMod.LogLevel
   
   @js.native
-  sealed trait x64 extends js.Object
+  sealed trait x64
+    extends builderDashUtilLib.outArchMod.ArchType
   
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]

@@ -16,3 +16,13 @@ trait TransactGetItemsInput extends js.Object {
   var TransactItems: TransactGetItemList
 }
 
+object TransactGetItemsInput {
+  @scala.inline
+  def apply(TransactItems: TransactGetItemList, ReturnConsumedCapacity: ReturnConsumedCapacity = null): TransactGetItemsInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TransactItems")(TransactItems)
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TransactGetItemsInput]
+  }
+}
+

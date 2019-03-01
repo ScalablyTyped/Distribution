@@ -12,3 +12,13 @@ trait ListQueriesResponse extends js.Object {
   var queries: js.UndefOr[js.Array[Query]] = js.undefined
 }
 
+object ListQueriesResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, queries: js.Array[Query] = null): ListQueriesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (queries != null) __obj.updateDynamic("queries")(queries)
+    __obj.asInstanceOf[ListQueriesResponse]
+  }
+}
+

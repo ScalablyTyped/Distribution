@@ -16,3 +16,13 @@ trait Dependency extends js.Object {
   var scope: java.lang.String
 }
 
+object Dependency {
+  @scala.inline
+  def apply(event: java.lang.String, scope: java.lang.String): Dependency = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Dependency]
+  }
+}
+

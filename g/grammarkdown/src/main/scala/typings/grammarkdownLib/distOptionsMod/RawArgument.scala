@@ -12,3 +12,15 @@ trait RawArgument extends js.Object {
   var value: js.Any
 }
 
+object RawArgument {
+  @scala.inline
+  def apply(formattedKey: java.lang.String, option: KnownOption, rawKey: java.lang.String, value: js.Any): RawArgument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("formattedKey")(formattedKey)
+    __obj.updateDynamic("option")(option)
+    __obj.updateDynamic("rawKey")(rawKey)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[RawArgument]
+  }
+}
+

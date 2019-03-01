@@ -39,3 +39,22 @@ trait HTMLElement extends js.Object {
   def webkitRequestFullscreen(): scala.Unit
 }
 
+object HTMLElement {
+  @scala.inline
+  def apply(
+    exitPointerLock: js.Function0[scala.Unit],
+    exitrequestFullscreen: js.Function0[scala.Unit],
+    requestFullscreen: js.Function0[js.Promise[scala.Unit]],
+    requestPointerLock: js.Function0[scala.Unit],
+    webkitRequestFullscreen: js.Function0[scala.Unit]
+  ): HTMLElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exitPointerLock")(exitPointerLock)
+    __obj.updateDynamic("exitrequestFullscreen")(exitrequestFullscreen)
+    __obj.updateDynamic("requestFullscreen")(requestFullscreen)
+    __obj.updateDynamic("requestPointerLock")(requestPointerLock)
+    __obj.updateDynamic("webkitRequestFullscreen")(webkitRequestFullscreen)
+    __obj.asInstanceOf[HTMLElement]
+  }
+}
+

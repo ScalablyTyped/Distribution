@@ -26,3 +26,22 @@ trait RequestParameters extends js.Object {
   var url: java.lang.String
 }
 
+object RequestParameters {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    collectResourceTiming: js.UndefOr[scala.Boolean] = js.undefined,
+    credentials: mapboxDashGlLib.mapboxDashGlLibStrings.`same-origin` | mapboxDashGlLib.mapboxDashGlLibStrings.include = null,
+    headers: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    method: mapboxDashGlLib.mapboxDashGlLibStrings.GET | mapboxDashGlLib.mapboxDashGlLibStrings.POST | mapboxDashGlLib.mapboxDashGlLibStrings.PUT = null
+  ): RequestParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(collectResourceTiming)) __obj.updateDynamic("collectResourceTiming")(collectResourceTiming)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestParameters]
+  }
+}
+

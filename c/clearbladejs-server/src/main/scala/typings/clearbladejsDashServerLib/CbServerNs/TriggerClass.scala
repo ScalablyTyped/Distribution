@@ -10,3 +10,16 @@ trait TriggerClass extends js.Object {
   def Fetch(name: java.lang.String, callback: CbCallback): scala.Unit
 }
 
+object TriggerClass {
+  @scala.inline
+  def apply(
+    Create: js.Function3[java.lang.String, TriggerCreateOptions, CbCallback, scala.Unit],
+    Fetch: js.Function2[java.lang.String, CbCallback, scala.Unit]
+  ): TriggerClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Create")(Create)
+    __obj.updateDynamic("Fetch")(Fetch)
+    __obj.asInstanceOf[TriggerClass]
+  }
+}
+

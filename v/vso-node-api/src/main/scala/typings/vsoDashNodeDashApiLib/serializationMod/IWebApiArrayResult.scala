@@ -10,3 +10,13 @@ trait IWebApiArrayResult extends js.Object {
   var value: js.Array[_]
 }
 
+object IWebApiArrayResult {
+  @scala.inline
+  def apply(count: scala.Double, value: js.Array[_]): IWebApiArrayResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IWebApiArrayResult]
+  }
+}
+

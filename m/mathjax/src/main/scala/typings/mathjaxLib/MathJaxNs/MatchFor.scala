@@ -14,3 +14,18 @@ trait MatchFor extends js.Object {
   var SVG: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MatchFor {
+  @scala.inline
+  def apply(
+    `HTML-CSS`: js.UndefOr[scala.Boolean] = js.undefined,
+    NativeMML: js.UndefOr[scala.Boolean] = js.undefined,
+    SVG: js.UndefOr[scala.Boolean] = js.undefined
+  ): MatchFor = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(`HTML-CSS`)) __obj.updateDynamic("HTML-CSS")(`HTML-CSS`)
+    if (!js.isUndefined(NativeMML)) __obj.updateDynamic("NativeMML")(NativeMML)
+    if (!js.isUndefined(SVG)) __obj.updateDynamic("SVG")(SVG)
+    __obj.asInstanceOf[MatchFor]
+  }
+}
+

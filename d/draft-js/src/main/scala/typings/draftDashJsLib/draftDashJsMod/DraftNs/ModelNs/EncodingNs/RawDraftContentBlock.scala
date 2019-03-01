@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * A plain object representation of a ContentBlock, with all style and entity
-             * attribution repackaged as range objects.
-             */
-
+  * A plain object representation of a ContentBlock, with all style and entity
+  * attribution repackaged as range objects.
+  */
 trait RawDraftContentBlock extends js.Object {
   var data: js.UndefOr[js.Object] = js.undefined
   var depth: scala.Double
@@ -18,5 +17,27 @@ trait RawDraftContentBlock extends js.Object {
   var key: java.lang.String
   var text: java.lang.String
   var `type`: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType
+}
+
+object RawDraftContentBlock {
+  @scala.inline
+  def apply(
+    depth: scala.Double,
+    entityRanges: js.Array[RawDraftEntityRange],
+    inlineStyleRanges: js.Array[RawDraftInlineStyleRange],
+    key: java.lang.String,
+    text: java.lang.String,
+    `type`: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType,
+    data: js.Object = null
+  ): RawDraftContentBlock = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("depth")(depth)
+    __obj.updateDynamic("entityRanges")(entityRanges)
+    __obj.updateDynamic("inlineStyleRanges")(inlineStyleRanges)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("text")(text)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[RawDraftContentBlock]
+  }
 }
 

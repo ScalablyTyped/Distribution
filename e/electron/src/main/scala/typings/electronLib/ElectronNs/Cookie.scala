@@ -47,3 +47,30 @@ trait Cookie extends js.Object {
   var value: java.lang.String
 }
 
+object Cookie {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    value: java.lang.String,
+    domain: java.lang.String = null,
+    expirationDate: scala.Int | scala.Double = null,
+    hostOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    httpOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    session: js.UndefOr[scala.Boolean] = js.undefined
+  ): Cookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(hostOnly)) __obj.updateDynamic("hostOnly")(hostOnly)
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session)
+    __obj.asInstanceOf[Cookie]
+  }
+}
+

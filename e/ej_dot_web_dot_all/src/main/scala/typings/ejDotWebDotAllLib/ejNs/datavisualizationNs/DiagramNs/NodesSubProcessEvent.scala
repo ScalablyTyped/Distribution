@@ -31,3 +31,24 @@ trait NodesSubProcessEvent extends js.Object {
   var trigger: js.UndefOr[BPMNTriggers | java.lang.String] = js.undefined
 }
 
+object NodesSubProcessEvent {
+  @scala.inline
+  def apply(
+    event: BPMNEvents | java.lang.String = null,
+    labels: js.Array[_] = null,
+    name: java.lang.String = null,
+    offset: js.Any = null,
+    ports: js.Array[_] = null,
+    trigger: BPMNTriggers | java.lang.String = null
+  ): NodesSubProcessEvent = {
+    val __obj = js.Dynamic.literal()
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (ports != null) __obj.updateDynamic("ports")(ports)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodesSubProcessEvent]
+  }
+}
+

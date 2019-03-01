@@ -32,3 +32,20 @@ trait AndroidDevice extends js.Object {
   var orientation: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AndroidDevice {
+  @scala.inline
+  def apply(
+    androidModelId: java.lang.String = null,
+    androidVersionId: java.lang.String = null,
+    locale: java.lang.String = null,
+    orientation: java.lang.String = null
+  ): AndroidDevice = {
+    val __obj = js.Dynamic.literal()
+    if (androidModelId != null) __obj.updateDynamic("androidModelId")(androidModelId)
+    if (androidVersionId != null) __obj.updateDynamic("androidVersionId")(androidVersionId)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    __obj.asInstanceOf[AndroidDevice]
+  }
+}
+

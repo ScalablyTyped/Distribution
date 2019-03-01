@@ -10,3 +10,13 @@ trait PaymentMethodData extends js.Object {
   var supportedMethods: java.lang.String | js.Array[java.lang.String]
 }
 
+object PaymentMethodData {
+  @scala.inline
+  def apply(supportedMethods: java.lang.String | js.Array[java.lang.String], data: js.Any = null): PaymentMethodData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("supportedMethods")(supportedMethods.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[PaymentMethodData]
+  }
+}
+

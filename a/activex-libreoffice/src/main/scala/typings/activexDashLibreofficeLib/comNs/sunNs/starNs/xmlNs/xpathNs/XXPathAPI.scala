@@ -89,3 +89,65 @@ trait XXPathAPI
   def unregisterNS(prefix: java.lang.String, url: java.lang.String): scala.Unit
 }
 
+object XXPathAPI {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    eval: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
+      java.lang.String, 
+      XXPathObject
+    ],
+    evalNS: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
+      XXPathObject
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerExtension: js.Function1[java.lang.String, scala.Unit],
+    registerExtensionInstance: js.Function1[XXPathExtension, scala.Unit],
+    registerNS: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    release: js.Function0[scala.Unit],
+    selectNodeList: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList
+    ],
+    selectNodeListNS: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList
+    ],
+    selectSingleNode: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode
+    ],
+    selectSingleNodeNS: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNode
+    ],
+    unregisterNS: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): XXPathAPI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("eval")(eval)
+    __obj.updateDynamic("evalNS")(evalNS)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerExtension")(registerExtension)
+    __obj.updateDynamic("registerExtensionInstance")(registerExtensionInstance)
+    __obj.updateDynamic("registerNS")(registerNS)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("selectNodeList")(selectNodeList)
+    __obj.updateDynamic("selectNodeListNS")(selectNodeListNS)
+    __obj.updateDynamic("selectSingleNode")(selectSingleNode)
+    __obj.updateDynamic("selectSingleNodeNS")(selectSingleNodeNS)
+    __obj.updateDynamic("unregisterNS")(unregisterNS)
+    __obj.asInstanceOf[XXPathAPI]
+  }
+}
+

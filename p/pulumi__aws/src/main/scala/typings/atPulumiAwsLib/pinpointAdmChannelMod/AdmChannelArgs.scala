@@ -24,3 +24,20 @@ trait AdmChannelArgs extends js.Object {
   val enabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 
+object AdmChannelArgs {
+  @scala.inline
+  def apply(
+    applicationId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    clientId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    clientSecret: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): AdmChannelArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
+    __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AdmChannelArgs]
+  }
+}
+

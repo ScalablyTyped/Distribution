@@ -14,3 +14,12 @@ trait RegionViewOptions extends js.Object {
   var preventDestroy: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RegionViewOptions {
+  @scala.inline
+  def apply(preventDestroy: js.UndefOr[scala.Boolean] = js.undefined): RegionViewOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(preventDestroy)) __obj.updateDynamic("preventDestroy")(preventDestroy)
+    __obj.asInstanceOf[RegionViewOptions]
+  }
+}
+

@@ -35,3 +35,24 @@ trait GetAvailabilityZoneResult extends js.Object {
   val zoneId: java.lang.String
 }
 
+object GetAvailabilityZoneResult {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    nameSuffix: java.lang.String,
+    region: java.lang.String,
+    state: java.lang.String,
+    zoneId: java.lang.String
+  ): GetAvailabilityZoneResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("nameSuffix")(nameSuffix)
+    __obj.updateDynamic("region")(region)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("zoneId")(zoneId)
+    __obj.asInstanceOf[GetAvailabilityZoneResult]
+  }
+}
+

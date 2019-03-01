@@ -11,3 +11,12 @@ trait INDStartResult extends js.Object {
   var mediaStreamSource: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSource
 }
 
+object INDStartResult {
+  @scala.inline
+  def apply(mediaStreamSource: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSource): INDStartResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mediaStreamSource")(mediaStreamSource)
+    __obj.asInstanceOf[INDStartResult]
+  }
+}
+

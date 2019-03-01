@@ -28,3 +28,32 @@ trait File extends js.Object {
   var urls: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_ApiUrl] = js.undefined
 }
 
+object File {
+  @scala.inline
+  def apply(
+    dateRange: DateRange = null,
+    etag: java.lang.String = null,
+    fileName: java.lang.String = null,
+    format: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    lastModifiedTime: java.lang.String = null,
+    reportId: java.lang.String = null,
+    status: java.lang.String = null,
+    urls: gapiDotClientDotDfareportingLib.Anon_ApiUrl = null
+  ): File = {
+    val __obj = js.Dynamic.literal()
+    if (dateRange != null) __obj.updateDynamic("dateRange")(dateRange)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime)
+    if (reportId != null) __obj.updateDynamic("reportId")(reportId)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[File]
+  }
+}
+

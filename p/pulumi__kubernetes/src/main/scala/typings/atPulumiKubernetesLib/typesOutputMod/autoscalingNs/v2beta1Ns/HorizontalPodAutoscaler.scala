@@ -41,3 +41,22 @@ trait HorizontalPodAutoscaler extends js.Object {
   val status: HorizontalPodAutoscalerStatus
 }
 
+object HorizontalPodAutoscaler {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscaler,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: HorizontalPodAutoscalerSpec,
+    status: HorizontalPodAutoscalerStatus
+  ): HorizontalPodAutoscaler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[HorizontalPodAutoscaler]
+  }
+}
+

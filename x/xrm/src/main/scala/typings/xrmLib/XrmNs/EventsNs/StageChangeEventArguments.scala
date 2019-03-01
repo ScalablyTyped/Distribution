@@ -21,3 +21,16 @@ trait StageChangeEventArguments extends js.Object {
   def getStage(): xrmLib.XrmNs.ProcessFlowNs.Stage
 }
 
+object StageChangeEventArguments {
+  @scala.inline
+  def apply(
+    getDirection: js.Function0[xrmLib.XrmNs.ProcessFlowNs.StageChangeDirection],
+    getStage: js.Function0[xrmLib.XrmNs.ProcessFlowNs.Stage]
+  ): StageChangeEventArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getDirection")(getDirection)
+    __obj.updateDynamic("getStage")(getStage)
+    __obj.asInstanceOf[StageChangeEventArguments]
+  }
+}
+

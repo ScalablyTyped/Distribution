@@ -27,3 +27,34 @@ trait Anon_AuthorizationError extends js.Object {
   ]
 }
 
+object Anon_AuthorizationError {
+  @scala.inline
+  def apply(
+    AuthorizationError: org.scalablytyped.runtime.Instantiable4[
+      /* message */ js.UndefOr[java.lang.String], 
+      /* code */ java.lang.String, 
+      /* uri */ js.UndefOr[/* uri */ java.lang.String], 
+      /* status */ js.UndefOr[/* status */ scala.Double], 
+      passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.AuthorizationError
+    ],
+    InternalOAuthError: org.scalablytyped.runtime.Instantiable2[
+      /* message */ java.lang.String, 
+      /* err */ js.Any, 
+      passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.InternalOAuthError
+    ],
+    TokenError: org.scalablytyped.runtime.Instantiable4[
+      /* message */ js.UndefOr[java.lang.String], 
+      /* code */ java.lang.String, 
+      /* uri */ js.UndefOr[/* uri */ java.lang.String], 
+      /* status */ js.UndefOr[/* status */ scala.Double], 
+      passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.TokenError
+    ]
+  ): Anon_AuthorizationError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AuthorizationError")(AuthorizationError)
+    __obj.updateDynamic("InternalOAuthError")(InternalOAuthError)
+    __obj.updateDynamic("TokenError")(TokenError)
+    __obj.asInstanceOf[Anon_AuthorizationError]
+  }
+}
+

@@ -45,3 +45,70 @@ trait Props[T]
   ] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply[T](
+    bemBlock: java.lang.String = null,
+    bemNamespace: java.lang.String = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    dateStates: js.Array[DateState] = null,
+    defaultState: java.lang.String = null,
+    disableNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    firstOfWeek: scala.Int | scala.Double = null,
+    helpMessage: java.lang.String = null,
+    initialDate: stdLib.Date = null,
+    initialFromValue: js.UndefOr[scala.Boolean] = js.undefined,
+    initialMonth: scala.Int | scala.Double = null,
+    initialRange: js.Object = null,
+    initialYear: scala.Int | scala.Double = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    maximumDate: stdLib.Date = null,
+    minimumDate: stdLib.Date = null,
+    numberOfCalendars: scala.Int | scala.Double = null,
+    onHighlightDate: js.Function1[/* date */ stdLib.Date, scala.Unit] = null,
+    onHighlightRange: js.Function1[/* date */ stdLib.Date, scala.Unit] = null,
+    onSelect: js.Function1[/* value */ OnSelectCallbackParam, scala.Unit] = null,
+    onSelectStart: js.Function1[/* value */ momentDashRangeLib.momentDashRangeMod.MomentRangeExtends, scala.Unit] = null,
+    paginationArrowComponent: (reactLib.reactMod.ReactNs.ComponentClass[PaginationArrowProps[js.Object], reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[PaginationArrowProps[js.Object]] = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[T] = null,
+    selectedLabel: java.lang.String = null,
+    selectionType: reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.single | reactDashDaterangeDashPickerLib.reactDashDaterangeDashPickerLibStrings.range = null,
+    showLegend: js.UndefOr[scala.Boolean] = js.undefined,
+    singleDateRange: js.UndefOr[scala.Boolean] = js.undefined,
+    stateDefinitions: StateDefinitions = null,
+    value: momentDashRangeLib.momentDashRangeMod.MomentRangeExtends | momentDashRangeLib.momentDashRangeMod.DateRange | momentLib.momentMod.momentNs.Moment = null
+  ): Props[T] = {
+    val __obj = js.Dynamic.literal()
+    if (bemBlock != null) __obj.updateDynamic("bemBlock")(bemBlock)
+    if (bemNamespace != null) __obj.updateDynamic("bemNamespace")(bemNamespace)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (dateStates != null) __obj.updateDynamic("dateStates")(dateStates)
+    if (defaultState != null) __obj.updateDynamic("defaultState")(defaultState)
+    if (!js.isUndefined(disableNavigation)) __obj.updateDynamic("disableNavigation")(disableNavigation)
+    if (firstOfWeek != null) __obj.updateDynamic("firstOfWeek")(firstOfWeek.asInstanceOf[js.Any])
+    if (helpMessage != null) __obj.updateDynamic("helpMessage")(helpMessage)
+    if (initialDate != null) __obj.updateDynamic("initialDate")(initialDate)
+    if (!js.isUndefined(initialFromValue)) __obj.updateDynamic("initialFromValue")(initialFromValue)
+    if (initialMonth != null) __obj.updateDynamic("initialMonth")(initialMonth.asInstanceOf[js.Any])
+    if (initialRange != null) __obj.updateDynamic("initialRange")(initialRange)
+    if (initialYear != null) __obj.updateDynamic("initialYear")(initialYear.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (maximumDate != null) __obj.updateDynamic("maximumDate")(maximumDate)
+    if (minimumDate != null) __obj.updateDynamic("minimumDate")(minimumDate)
+    if (numberOfCalendars != null) __obj.updateDynamic("numberOfCalendars")(numberOfCalendars.asInstanceOf[js.Any])
+    if (onHighlightDate != null) __obj.updateDynamic("onHighlightDate")(onHighlightDate)
+    if (onHighlightRange != null) __obj.updateDynamic("onHighlightRange")(onHighlightRange)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onSelectStart != null) __obj.updateDynamic("onSelectStart")(onSelectStart)
+    if (paginationArrowComponent != null) __obj.updateDynamic("paginationArrowComponent")(paginationArrowComponent.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (selectedLabel != null) __obj.updateDynamic("selectedLabel")(selectedLabel)
+    if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLegend)) __obj.updateDynamic("showLegend")(showLegend)
+    if (!js.isUndefined(singleDateRange)) __obj.updateDynamic("singleDateRange")(singleDateRange)
+    if (stateDefinitions != null) __obj.updateDynamic("stateDefinitions")(stateDefinitions)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props[T]]
+  }
+}
+

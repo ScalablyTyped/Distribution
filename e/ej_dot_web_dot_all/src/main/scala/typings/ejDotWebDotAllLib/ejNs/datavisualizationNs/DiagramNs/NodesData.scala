@@ -16,3 +16,16 @@ trait NodesData extends js.Object {
   var `type`: js.UndefOr[BPMNDataObjects | java.lang.String] = js.undefined
 }
 
+object NodesData {
+  @scala.inline
+  def apply(
+    collection: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: BPMNDataObjects | java.lang.String = null
+  ): NodesData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(collection)) __obj.updateDynamic("collection")(collection)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodesData]
+  }
+}
+

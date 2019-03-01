@@ -133,3 +133,71 @@ trait IgHtmlEditor
   var workspaceResized: js.UndefOr[WorkspaceResizedEvent] = js.undefined
 }
 
+object IgHtmlEditor {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igHtmlEditor
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    actionExecuted: ActionExecutedEvent = null,
+    actionExecuting: ActionExecutingEvent = null,
+    copy: CopyEvent = null,
+    customToolbars: js.Array[_] = null,
+    cut: CutEvent = null,
+    height: java.lang.String | scala.Double = null,
+    inputName: java.lang.String = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    paste: PasteEvent = null,
+    redo: RedoEvent = null,
+    regional: java.lang.String | js.Object = null,
+    rendered: RenderedEvent = null,
+    rendering: RenderingEvent = null,
+    showCopyPasteToolbar: js.UndefOr[scala.Boolean] = js.undefined,
+    showFormattingToolbar: js.UndefOr[scala.Boolean] = js.undefined,
+    showInsertObjectToolbar: js.UndefOr[scala.Boolean] = js.undefined,
+    showTextToolbar: js.UndefOr[scala.Boolean] = js.undefined,
+    toolbarCollapsed: ToolbarCollapsedEvent = null,
+    toolbarCollapsing: ToolbarCollapsingEvent = null,
+    toolbarExpanded: ToolbarExpandedEvent = null,
+    toolbarExpanding: ToolbarExpandingEvent = null,
+    toolbarSettings: js.Array[_] = null,
+    undo: UndoEvent = null,
+    value: java.lang.String = null,
+    width: java.lang.String | scala.Double = null,
+    workspaceResized: WorkspaceResizedEvent = null
+  ): IgHtmlEditor = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (actionExecuted != null) __obj.updateDynamic("actionExecuted")(actionExecuted)
+    if (actionExecuting != null) __obj.updateDynamic("actionExecuting")(actionExecuting)
+    if (copy != null) __obj.updateDynamic("copy")(copy)
+    if (customToolbars != null) __obj.updateDynamic("customToolbars")(customToolbars)
+    if (cut != null) __obj.updateDynamic("cut")(cut)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (paste != null) __obj.updateDynamic("paste")(paste)
+    if (redo != null) __obj.updateDynamic("redo")(redo)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (rendering != null) __obj.updateDynamic("rendering")(rendering)
+    if (!js.isUndefined(showCopyPasteToolbar)) __obj.updateDynamic("showCopyPasteToolbar")(showCopyPasteToolbar)
+    if (!js.isUndefined(showFormattingToolbar)) __obj.updateDynamic("showFormattingToolbar")(showFormattingToolbar)
+    if (!js.isUndefined(showInsertObjectToolbar)) __obj.updateDynamic("showInsertObjectToolbar")(showInsertObjectToolbar)
+    if (!js.isUndefined(showTextToolbar)) __obj.updateDynamic("showTextToolbar")(showTextToolbar)
+    if (toolbarCollapsed != null) __obj.updateDynamic("toolbarCollapsed")(toolbarCollapsed)
+    if (toolbarCollapsing != null) __obj.updateDynamic("toolbarCollapsing")(toolbarCollapsing)
+    if (toolbarExpanded != null) __obj.updateDynamic("toolbarExpanded")(toolbarExpanded)
+    if (toolbarExpanding != null) __obj.updateDynamic("toolbarExpanding")(toolbarExpanding)
+    if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings)
+    if (undo != null) __obj.updateDynamic("undo")(undo)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (workspaceResized != null) __obj.updateDynamic("workspaceResized")(workspaceResized)
+    __obj.asInstanceOf[IgHtmlEditor]
+  }
+}
+

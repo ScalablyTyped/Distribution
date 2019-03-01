@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object forceDashGraphLibStrings {
   @js.native
-  sealed trait bu extends js.Object
+  sealed trait bu
+    extends forceDashGraphLib.forceDashGraphMod.ForceGraphNs.DagMode
   
   @js.native
   sealed trait center extends js.Object
@@ -19,19 +20,24 @@ object forceDashGraphLibStrings {
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait lr extends js.Object
+  sealed trait lr
+    extends forceDashGraphLib.forceDashGraphMod.ForceGraphNs.DagMode
   
   @js.native
-  sealed trait radialin extends js.Object
+  sealed trait radialin
+    extends forceDashGraphLib.forceDashGraphMod.ForceGraphNs.DagMode
   
   @js.native
-  sealed trait radialout extends js.Object
+  sealed trait radialout
+    extends forceDashGraphLib.forceDashGraphMod.ForceGraphNs.DagMode
   
   @js.native
-  sealed trait rl extends js.Object
+  sealed trait rl
+    extends forceDashGraphLib.forceDashGraphMod.ForceGraphNs.DagMode
   
   @js.native
-  sealed trait td extends js.Object
+  sealed trait td
+    extends forceDashGraphLib.forceDashGraphMod.ForceGraphNs.DagMode
   
   @scala.inline
   def bu: bu = "bu".asInstanceOf[bu]

@@ -12,3 +12,19 @@ trait Anon_BodyCommentsLoc extends js.Object {
   var `object`: astDashTypesLib.genKindsMod.ExpressionKind
 }
 
+object Anon_BodyCommentsLoc {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.StatementKind,
+    `object`: astDashTypesLib.genKindsMod.ExpressionKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_BodyCommentsLoc = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("body")(body)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_BodyCommentsLoc]
+  }
+}
+

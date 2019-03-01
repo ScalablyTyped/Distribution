@@ -12,3 +12,16 @@ trait TableDataInsertAllResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableDataInsertAllResponse {
+  @scala.inline
+  def apply(
+    insertErrors: js.Array[gapiDotClientDotBigqueryLib.Anon_Errors] = null,
+    kind: java.lang.String = null
+  ): TableDataInsertAllResponse = {
+    val __obj = js.Dynamic.literal()
+    if (insertErrors != null) __obj.updateDynamic("insertErrors")(insertErrors)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[TableDataInsertAllResponse]
+  }
+}
+

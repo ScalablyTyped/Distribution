@@ -19,3 +19,13 @@ trait RetrieveMultipleResult extends js.Object {
   var nextLink: java.lang.String
 }
 
+object RetrieveMultipleResult {
+  @scala.inline
+  def apply(entities: js.Array[_], nextLink: java.lang.String): RetrieveMultipleResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entities")(entities)
+    __obj.updateDynamic("nextLink")(nextLink)
+    __obj.asInstanceOf[RetrieveMultipleResult]
+  }
+}
+

@@ -29,3 +29,24 @@ trait XTerminateListener
   def queryTermination(Event: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject): scala.Unit
 }
 
+object XTerminateListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    notifyTermination: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryTermination: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XTerminateListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("notifyTermination")(notifyTermination)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("queryTermination")(queryTermination)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTerminateListener]
+  }
+}
+

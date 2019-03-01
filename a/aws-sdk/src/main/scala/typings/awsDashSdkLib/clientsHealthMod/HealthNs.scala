@@ -573,6 +573,14 @@ object HealthNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[DescribeEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
+  trait _entityStatusCode extends js.Object
+  
+  trait _eventStatusCode extends js.Object
+  
+  trait _eventTypeCategory extends js.Object
+  
   trait eventMetadata
     extends /* key */ org.scalablytyped.runtime.StringDictionary[metadataValue]
   
@@ -593,14 +601,14 @@ object HealthNs extends js.Object {
   type EventTypeList = js.Array[EventType]
   type accountId = java.lang.String
   type aggregateValue = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-08-04` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type availabilityZone = java.lang.String
   type availabilityZones = js.Array[availabilityZone]
   type count = scala.Double
   type dateTimeRangeList = js.Array[DateTimeRange]
   type entityArn = java.lang.String
   type entityArnList = js.Array[entityArn]
-  type entityStatusCode = awsDashSdkLib.awsDashSdkLibStrings.IMPAIRED | awsDashSdkLib.awsDashSdkLibStrings.UNIMPAIRED | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | java.lang.String
+  type entityStatusCode = _entityStatusCode | java.lang.String
   type entityStatusCodeList = js.Array[entityStatusCode]
   type entityUrl = java.lang.String
   type entityValue = java.lang.String
@@ -609,10 +617,10 @@ object HealthNs extends js.Object {
   type eventArn = java.lang.String
   type eventArnList = js.Array[eventArn]
   type eventDescription = java.lang.String
-  type eventStatusCode = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.closed | awsDashSdkLib.awsDashSdkLibStrings.upcoming | java.lang.String
+  type eventStatusCode = _eventStatusCode | java.lang.String
   type eventStatusCodeList = js.Array[eventStatusCode]
   type eventType = java.lang.String
-  type eventTypeCategory = awsDashSdkLib.awsDashSdkLibStrings.issue | awsDashSdkLib.awsDashSdkLibStrings.accountNotification | awsDashSdkLib.awsDashSdkLibStrings.scheduledChange | java.lang.String
+  type eventTypeCategory = _eventTypeCategory | java.lang.String
   type eventTypeCategoryList = js.Array[eventTypeCategory]
   type eventTypeCode = java.lang.String
   type eventTypeList = js.Array[eventType]

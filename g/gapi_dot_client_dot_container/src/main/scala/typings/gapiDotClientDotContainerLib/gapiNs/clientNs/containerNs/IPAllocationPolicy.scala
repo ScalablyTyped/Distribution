@@ -101,3 +101,34 @@ trait IPAllocationPolicy extends js.Object {
   var useIpAliases: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IPAllocationPolicy {
+  @scala.inline
+  def apply(
+    clusterIpv4Cidr: java.lang.String = null,
+    clusterIpv4CidrBlock: java.lang.String = null,
+    clusterSecondaryRangeName: java.lang.String = null,
+    createSubnetwork: js.UndefOr[scala.Boolean] = js.undefined,
+    nodeIpv4Cidr: java.lang.String = null,
+    nodeIpv4CidrBlock: java.lang.String = null,
+    servicesIpv4Cidr: java.lang.String = null,
+    servicesIpv4CidrBlock: java.lang.String = null,
+    servicesSecondaryRangeName: java.lang.String = null,
+    subnetworkName: java.lang.String = null,
+    useIpAliases: js.UndefOr[scala.Boolean] = js.undefined
+  ): IPAllocationPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (clusterIpv4Cidr != null) __obj.updateDynamic("clusterIpv4Cidr")(clusterIpv4Cidr)
+    if (clusterIpv4CidrBlock != null) __obj.updateDynamic("clusterIpv4CidrBlock")(clusterIpv4CidrBlock)
+    if (clusterSecondaryRangeName != null) __obj.updateDynamic("clusterSecondaryRangeName")(clusterSecondaryRangeName)
+    if (!js.isUndefined(createSubnetwork)) __obj.updateDynamic("createSubnetwork")(createSubnetwork)
+    if (nodeIpv4Cidr != null) __obj.updateDynamic("nodeIpv4Cidr")(nodeIpv4Cidr)
+    if (nodeIpv4CidrBlock != null) __obj.updateDynamic("nodeIpv4CidrBlock")(nodeIpv4CidrBlock)
+    if (servicesIpv4Cidr != null) __obj.updateDynamic("servicesIpv4Cidr")(servicesIpv4Cidr)
+    if (servicesIpv4CidrBlock != null) __obj.updateDynamic("servicesIpv4CidrBlock")(servicesIpv4CidrBlock)
+    if (servicesSecondaryRangeName != null) __obj.updateDynamic("servicesSecondaryRangeName")(servicesSecondaryRangeName)
+    if (subnetworkName != null) __obj.updateDynamic("subnetworkName")(subnetworkName)
+    if (!js.isUndefined(useIpAliases)) __obj.updateDynamic("useIpAliases")(useIpAliases)
+    __obj.asInstanceOf[IPAllocationPolicy]
+  }
+}
+

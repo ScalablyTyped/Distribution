@@ -24,3 +24,20 @@ trait Options[T] extends js.Object {
   var one: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[T](
+    accX: scala.Int | scala.Double = null,
+    accY: scala.Int | scala.Double = null,
+    data: T = null,
+    one: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options[T] = {
+    val __obj = js.Dynamic.literal()
+    if (accX != null) __obj.updateDynamic("accX")(accX.asInstanceOf[js.Any])
+    if (accY != null) __obj.updateDynamic("accY")(accY.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(one)) __obj.updateDynamic("one")(one)
+    __obj.asInstanceOf[Options[T]]
+  }
+}
+

@@ -47,3 +47,44 @@ trait Configuration extends js.Object {
   var version: java.lang.String
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    background: java.lang.String,
+    dir: java.lang.String,
+    display: faviconsLib.faviconsLibStrings.fullscreen | faviconsLib.faviconsLibStrings.standalone | faviconsLib.faviconsLibStrings.`minimal-ui` | faviconsLib.faviconsLibStrings.browser,
+    icons: stdLib.Partial[faviconsLib.Anon_Android],
+    lang: java.lang.String,
+    logging: scala.Boolean,
+    orientation: faviconsLib.faviconsLibStrings.any | faviconsLib.faviconsLibStrings.natural | faviconsLib.faviconsLibStrings.portrait | faviconsLib.faviconsLibStrings.landscape,
+    path: java.lang.String,
+    pixel_art: scala.Boolean,
+    start_url: java.lang.String,
+    theme_color: java.lang.String,
+    version: java.lang.String,
+    appDescription: java.lang.String = null,
+    appName: java.lang.String = null,
+    developerName: java.lang.String = null,
+    developerURL: java.lang.String = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("background")(background)
+    __obj.updateDynamic("dir")(dir)
+    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    __obj.updateDynamic("icons")(icons)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("logging")(logging)
+    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("pixel_art")(pixel_art)
+    __obj.updateDynamic("start_url")(start_url)
+    __obj.updateDynamic("theme_color")(theme_color)
+    __obj.updateDynamic("version")(version)
+    if (appDescription != null) __obj.updateDynamic("appDescription")(appDescription)
+    if (appName != null) __obj.updateDynamic("appName")(appName)
+    if (developerName != null) __obj.updateDynamic("developerName")(developerName)
+    if (developerURL != null) __obj.updateDynamic("developerURL")(developerURL)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

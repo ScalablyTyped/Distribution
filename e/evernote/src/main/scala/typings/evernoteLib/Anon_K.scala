@@ -11,3 +11,18 @@ trait Anon_K extends js.Object {
   var trashCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_K {
+  @scala.inline
+  def apply(
+    notebookCounts: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
+    tagCounts: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
+    trashCount: scala.Int | scala.Double = null
+  ): Anon_K = {
+    val __obj = js.Dynamic.literal()
+    if (notebookCounts != null) __obj.updateDynamic("notebookCounts")(notebookCounts)
+    if (tagCounts != null) __obj.updateDynamic("tagCounts")(tagCounts)
+    if (trashCount != null) __obj.updateDynamic("trashCount")(trashCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_K]
+  }
+}
+

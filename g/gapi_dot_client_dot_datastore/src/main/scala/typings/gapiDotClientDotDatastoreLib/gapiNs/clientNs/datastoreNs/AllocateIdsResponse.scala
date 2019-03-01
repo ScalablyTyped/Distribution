@@ -13,3 +13,12 @@ trait AllocateIdsResponse extends js.Object {
   var keys: js.UndefOr[js.Array[Key]] = js.undefined
 }
 
+object AllocateIdsResponse {
+  @scala.inline
+  def apply(keys: js.Array[Key] = null): AllocateIdsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    __obj.asInstanceOf[AllocateIdsResponse]
+  }
+}
+

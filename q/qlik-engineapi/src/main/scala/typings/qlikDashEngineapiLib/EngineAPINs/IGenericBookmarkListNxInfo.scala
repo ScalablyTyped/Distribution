@@ -13,3 +13,13 @@ trait IGenericBookmarkListNxInfo extends INxInfo {
   var qType_IGenericBookmarkListNxInfo: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.BookmarkList
 }
 
+object IGenericBookmarkListNxInfo {
+  @scala.inline
+  def apply(qType: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.BookmarkList, qId: java.lang.String = null): IGenericBookmarkListNxInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qType")(qType)
+    if (qId != null) __obj.updateDynamic("qId")(qId)
+    __obj.asInstanceOf[IGenericBookmarkListNxInfo]
+  }
+}
+

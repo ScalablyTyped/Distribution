@@ -25,3 +25,22 @@ trait SQLException
   var SQLState: java.lang.String
 }
 
+object SQLException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrorCode: scala.Double,
+    Message: java.lang.String,
+    NextException: js.Any,
+    SQLState: java.lang.String
+  ): SQLException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("ErrorCode")(ErrorCode)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("NextException")(NextException)
+    __obj.updateDynamic("SQLState")(SQLState)
+    __obj.asInstanceOf[SQLException]
+  }
+}
+

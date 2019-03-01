@@ -18,3 +18,22 @@ trait Param extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Param {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    comment: java.lang.String = null,
+    contentType: java.lang.String = null,
+    fileName: java.lang.String = null,
+    value: java.lang.String = null
+  ): Param = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Param]
+  }
+}
+

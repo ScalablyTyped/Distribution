@@ -14,3 +14,18 @@ trait GamesAchievementIncrement extends js.Object {
   var steps: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GamesAchievementIncrement {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    requestId: java.lang.String = null,
+    steps: scala.Int | scala.Double = null
+  ): GamesAchievementIncrement = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GamesAchievementIncrement]
+  }
+}
+

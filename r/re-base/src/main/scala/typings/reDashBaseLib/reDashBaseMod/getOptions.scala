@@ -24,3 +24,18 @@ trait getOptions extends js.Object {
   var withRefs: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object getOptions {
+  @scala.inline
+  def apply(
+    query: js.Function0[scala.Unit] = null,
+    withIds: js.UndefOr[scala.Boolean] = js.undefined,
+    withRefs: js.UndefOr[scala.Boolean] = js.undefined
+  ): getOptions = {
+    val __obj = js.Dynamic.literal()
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds)
+    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs)
+    __obj.asInstanceOf[getOptions]
+  }
+}
+

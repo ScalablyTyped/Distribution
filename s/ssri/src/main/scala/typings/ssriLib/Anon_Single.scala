@@ -10,3 +10,13 @@ trait Anon_Single extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Single {
+  @scala.inline
+  def apply(single: ssriLib.ssriLibNumbers.`true`, strict: js.UndefOr[scala.Boolean] = js.undefined): Anon_Single = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("single")(single)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[Anon_Single]
+  }
+}
+

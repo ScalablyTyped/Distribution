@@ -12,3 +12,12 @@ trait TableRowProperties extends js.Object {
   var min_row_height: Dimension
 }
 
+object TableRowProperties {
+  @scala.inline
+  def apply(min_row_height: Dimension): TableRowProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("min_row_height")(min_row_height)
+    __obj.asInstanceOf[TableRowProperties]
+  }
+}
+

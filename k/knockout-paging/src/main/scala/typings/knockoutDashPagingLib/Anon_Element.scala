@@ -10,3 +10,16 @@ trait Anon_Element extends js.Object {
   def writeValue(element: stdLib.HTMLElement, value: js.Any): scala.Unit
 }
 
+object Anon_Element {
+  @scala.inline
+  def apply(
+    readValue: js.Function1[stdLib.HTMLElement, js.Any],
+    writeValue: js.Function2[stdLib.HTMLElement, js.Any, scala.Unit]
+  ): Anon_Element = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("readValue")(readValue)
+    __obj.updateDynamic("writeValue")(writeValue)
+    __obj.asInstanceOf[Anon_Element]
+  }
+}
+

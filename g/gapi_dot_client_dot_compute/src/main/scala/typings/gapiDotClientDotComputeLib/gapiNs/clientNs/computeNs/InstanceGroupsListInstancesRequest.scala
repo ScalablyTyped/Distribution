@@ -13,3 +13,12 @@ trait InstanceGroupsListInstancesRequest extends js.Object {
   var instanceState: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstanceGroupsListInstancesRequest {
+  @scala.inline
+  def apply(instanceState: java.lang.String = null): InstanceGroupsListInstancesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (instanceState != null) __obj.updateDynamic("instanceState")(instanceState)
+    __obj.asInstanceOf[InstanceGroupsListInstancesRequest]
+  }
+}
+

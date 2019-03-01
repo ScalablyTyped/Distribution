@@ -29,3 +29,30 @@ trait PollingLocation extends js.Object {
   var voterServices: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PollingLocation {
+  @scala.inline
+  def apply(
+    address: SimpleAddressType = null,
+    endDate: java.lang.String = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    notes: java.lang.String = null,
+    pollingHours: java.lang.String = null,
+    sources: js.Array[Source] = null,
+    startDate: java.lang.String = null,
+    voterServices: java.lang.String = null
+  ): PollingLocation = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (notes != null) __obj.updateDynamic("notes")(notes)
+    if (pollingHours != null) __obj.updateDynamic("pollingHours")(pollingHours)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (voterServices != null) __obj.updateDynamic("voterServices")(voterServices)
+    __obj.asInstanceOf[PollingLocation]
+  }
+}
+

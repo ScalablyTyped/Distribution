@@ -10,3 +10,17 @@ trait UserEventsResource extends js.Object {
   def log(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[LogUserEventResponse]
 }
 
+object UserEventsResource {
+  @scala.inline
+  def apply(
+    log: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LogUserEventResponse]
+    ]
+  ): UserEventsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("log")(log)
+    __obj.asInstanceOf[UserEventsResource]
+  }
+}
+

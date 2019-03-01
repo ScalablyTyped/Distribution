@@ -15,3 +15,20 @@ trait Anon_CANCELLED extends js.Object {
   var SUCCEEDED: scala.Double
 }
 
+object Anon_CANCELLED {
+  @scala.inline
+  def apply(
+    CANCELLED: scala.Double,
+    NOTRANSITION: scala.Double,
+    PENDING: scala.Double,
+    SUCCEEDED: scala.Double
+  ): Anon_CANCELLED = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CANCELLED")(CANCELLED)
+    __obj.updateDynamic("NOTRANSITION")(NOTRANSITION)
+    __obj.updateDynamic("PENDING")(PENDING)
+    __obj.updateDynamic("SUCCEEDED")(SUCCEEDED)
+    __obj.asInstanceOf[Anon_CANCELLED]
+  }
+}
+

@@ -13,3 +13,22 @@ trait StackFrame extends js.Object {
   var methodName: java.lang.String
 }
 
+object StackFrame {
+  @scala.inline
+  def apply(
+    className: java.lang.String,
+    fileName: java.lang.String,
+    lineNumber: scala.Double,
+    methodName: java.lang.String,
+    columnNumber: scala.Int | scala.Double = null
+  ): StackFrame = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("lineNumber")(lineNumber)
+    __obj.updateDynamic("methodName")(methodName)
+    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StackFrame]
+  }
+}
+

@@ -51,3 +51,30 @@ trait PumpCallbackArgs extends js.Object {
   var totalBytesProcessed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PumpCallbackArgs {
+  @scala.inline
+  def apply(
+    buffer: titaniumLib.TitaniumNs.Buffer = null,
+    bytesProcessed: scala.Int | scala.Double = null,
+    code: scala.Int | scala.Double = null,
+    error: java.lang.String = null,
+    errorDescription: java.lang.String = null,
+    errorState: scala.Int | scala.Double = null,
+    source: titaniumLib.TitaniumNs.IOStream = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined,
+    totalBytesProcessed: scala.Int | scala.Double = null
+  ): PumpCallbackArgs = {
+    val __obj = js.Dynamic.literal()
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (bytesProcessed != null) __obj.updateDynamic("bytesProcessed")(bytesProcessed.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription)
+    if (errorState != null) __obj.updateDynamic("errorState")(errorState.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (totalBytesProcessed != null) __obj.updateDynamic("totalBytesProcessed")(totalBytesProcessed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PumpCallbackArgs]
+  }
+}
+

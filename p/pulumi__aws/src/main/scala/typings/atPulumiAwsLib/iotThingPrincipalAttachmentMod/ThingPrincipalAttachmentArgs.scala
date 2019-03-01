@@ -16,3 +16,16 @@ trait ThingPrincipalAttachmentArgs extends js.Object {
   val thing: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object ThingPrincipalAttachmentArgs {
+  @scala.inline
+  def apply(
+    principal: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN],
+    thing: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): ThingPrincipalAttachmentArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
+    __obj.updateDynamic("thing")(thing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThingPrincipalAttachmentArgs]
+  }
+}
+

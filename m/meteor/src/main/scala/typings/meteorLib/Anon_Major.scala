@@ -12,3 +12,15 @@ trait Anon_Major extends js.Object {
   var patch: java.lang.String
 }
 
+object Anon_Major {
+  @scala.inline
+  def apply(major: java.lang.String, minor: java.lang.String, name: java.lang.String, patch: java.lang.String): Anon_Major = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("major")(major)
+    __obj.updateDynamic("minor")(minor)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("patch")(patch)
+    __obj.asInstanceOf[Anon_Major]
+  }
+}
+

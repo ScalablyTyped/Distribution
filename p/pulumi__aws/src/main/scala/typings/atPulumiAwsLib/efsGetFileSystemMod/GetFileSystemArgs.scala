@@ -17,3 +17,18 @@ trait GetFileSystemArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetFileSystemArgs {
+  @scala.inline
+  def apply(
+    creationToken: java.lang.String = null,
+    fileSystemId: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetFileSystemArgs = {
+    val __obj = js.Dynamic.literal()
+    if (creationToken != null) __obj.updateDynamic("creationToken")(creationToken)
+    if (fileSystemId != null) __obj.updateDynamic("fileSystemId")(fileSystemId)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetFileSystemArgs]
+  }
+}
+

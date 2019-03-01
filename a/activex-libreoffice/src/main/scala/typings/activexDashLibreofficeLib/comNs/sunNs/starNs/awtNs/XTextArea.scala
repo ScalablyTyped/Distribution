@@ -14,3 +14,22 @@ trait XTextArea
   def getTextLines(): java.lang.String
 }
 
+object XTextArea {
+  @scala.inline
+  def apply(
+    TextLines: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getTextLines: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextArea = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TextLines")(TextLines)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getTextLines")(getTextLines)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTextArea]
+  }
+}
+

@@ -52,3 +52,26 @@ trait BadgeProps extends js.Object {
   var value: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object BadgeProps {
+  @scala.inline
+  def apply(
+    Component: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    badgeStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    onPress: js.Function0[scala.Unit] = null,
+    status: reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.primary | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.success | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.warning | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.error = null,
+    textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    value: reactLib.reactMod.ReactNs.ReactNode = null
+  ): BadgeProps = {
+    val __obj = js.Dynamic.literal()
+    if (Component != null) __obj.updateDynamic("Component")(Component)
+    if (badgeStyle != null) __obj.updateDynamic("badgeStyle")(badgeStyle.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BadgeProps]
+  }
+}
+

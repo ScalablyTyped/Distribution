@@ -12,3 +12,12 @@ trait MessageAddedEventDataType extends js.Object {
   var message: ConsoleMessage
 }
 
+object MessageAddedEventDataType {
+  @scala.inline
+  def apply(message: ConsoleMessage): MessageAddedEventDataType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[MessageAddedEventDataType]
+  }
+}
+

@@ -20,3 +20,22 @@ trait ColInfo extends js.Object {
   var wpx: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ColInfo {
+  @scala.inline
+  def apply(
+    MDW: scala.Int | scala.Double = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    wch: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    wpx: scala.Int | scala.Double = null
+  ): ColInfo = {
+    val __obj = js.Dynamic.literal()
+    if (MDW != null) __obj.updateDynamic("MDW")(MDW.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (wch != null) __obj.updateDynamic("wch")(wch.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wpx != null) __obj.updateDynamic("wpx")(wpx.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColInfo]
+  }
+}
+

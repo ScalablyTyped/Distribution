@@ -10,3 +10,13 @@ trait Anon_Host extends js.Object {
   var port: scala.Double
 }
 
+object Anon_Host {
+  @scala.inline
+  def apply(host: zipkinLib.zipkinMod.zipkinNs.InetAddress, port: scala.Double): Anon_Host = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("port")(port)
+    __obj.asInstanceOf[Anon_Host]
+  }
+}
+

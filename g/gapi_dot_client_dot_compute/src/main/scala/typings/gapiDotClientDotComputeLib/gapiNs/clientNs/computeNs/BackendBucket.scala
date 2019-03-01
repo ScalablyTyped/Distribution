@@ -28,3 +28,28 @@ trait BackendBucket extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BackendBucket {
+  @scala.inline
+  def apply(
+    bucketName: java.lang.String = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    enableCdn: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    selfLink: java.lang.String = null
+  ): BackendBucket = {
+    val __obj = js.Dynamic.literal()
+    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(enableCdn)) __obj.updateDynamic("enableCdn")(enableCdn)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[BackendBucket]
+  }
+}
+

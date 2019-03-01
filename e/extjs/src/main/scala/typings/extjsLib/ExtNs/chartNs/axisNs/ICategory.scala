@@ -12,3 +12,80 @@ trait ICategory extends IAxis {
   var categoryNames: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ICategory {
+  @scala.inline
+  def apply(
+    adjustEnd: js.UndefOr[scala.Boolean] = js.undefined,
+    alias: extjsLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    calculateCategoryCount: js.UndefOr[scala.Boolean] = js.undefined,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    categoryNames: java.lang.String = null,
+    config: js.Any = null,
+    dashSize: scala.Int | scala.Double = null,
+    drawAxis: js.Function1[/* init */ js.UndefOr[js.Any], scala.Unit] = null,
+    drawGrid: js.Function0[scala.Unit] = null,
+    drawLabel: js.Function0[scala.Unit] = null,
+    extend: java.lang.String = null,
+    fields: extjsLib.ExtNs.Array = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    grid: js.Any = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], ICategory] = null,
+    label: extjsLib.ExtNs.chartNs.ILabel = null,
+    length: scala.Int | scala.Double = null,
+    majorTickSteps: scala.Int | scala.Double = null,
+    minorTickSteps: scala.Int | scala.Double = null,
+    mixins: js.Any = null,
+    position: java.lang.String = null,
+    requires: extjsLib.ExtNs.Array = null,
+    self: extjsLib.ExtNs.IClass = null,
+    setTitle: js.Function1[/* title */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    title: java.lang.String = null,
+    uses: extjsLib.ExtNs.Array = null,
+    width: scala.Int | scala.Double = null
+  ): ICategory = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(adjustEnd)) __obj.updateDynamic("adjustEnd")(adjustEnd)
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (!js.isUndefined(calculateCategoryCount)) __obj.updateDynamic("calculateCategoryCount")(calculateCategoryCount)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (categoryNames != null) __obj.updateDynamic("categoryNames")(categoryNames)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (dashSize != null) __obj.updateDynamic("dashSize")(dashSize.asInstanceOf[js.Any])
+    if (drawAxis != null) __obj.updateDynamic("drawAxis")(drawAxis)
+    if (drawGrid != null) __obj.updateDynamic("drawGrid")(drawGrid)
+    if (drawLabel != null) __obj.updateDynamic("drawLabel")(drawLabel)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (majorTickSteps != null) __obj.updateDynamic("majorTickSteps")(majorTickSteps.asInstanceOf[js.Any])
+    if (minorTickSteps != null) __obj.updateDynamic("minorTickSteps")(minorTickSteps.asInstanceOf[js.Any])
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (setTitle != null) __obj.updateDynamic("setTitle")(setTitle)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICategory]
+  }
+}
+

@@ -14,3 +14,22 @@ trait IxMonad3[F /* <: fpDashTsLib.libHKTMod.URIS3 */] extends js.Object {
   def iof[I, A](a: A): fpDashTsLib.libHKTMod.Type3[F, I, I, A]
 }
 
+object IxMonad3 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
+    URI: F,
+    ichain: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    iof: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]]
+  ): IxMonad3[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("ichain")(ichain)
+    __obj.updateDynamic("iof")(iof)
+    __obj.asInstanceOf[IxMonad3[F]]
+  }
+}
+

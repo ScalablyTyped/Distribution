@@ -48,3 +48,28 @@ trait ChipsOptions extends js.Object {
   def onChipSelect(`this`: Chips, element: stdLib.Element, chip: stdLib.Element): scala.Unit
 }
 
+object ChipsOptions {
+  @scala.inline
+  def apply(
+    autocompleteOptions: stdLib.Partial[AutocompleteOptions],
+    data: js.Array[ChipData],
+    limit: scala.Double,
+    onChipAdd: js.Function3[Chips, stdLib.Element, stdLib.Element, scala.Unit],
+    onChipDelete: js.Function3[Chips, stdLib.Element, stdLib.Element, scala.Unit],
+    onChipSelect: js.Function3[Chips, stdLib.Element, stdLib.Element, scala.Unit],
+    placeholder: java.lang.String,
+    secondaryPlaceholder: java.lang.String
+  ): ChipsOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autocompleteOptions")(autocompleteOptions)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("limit")(limit)
+    __obj.updateDynamic("onChipAdd")(onChipAdd)
+    __obj.updateDynamic("onChipDelete")(onChipDelete)
+    __obj.updateDynamic("onChipSelect")(onChipSelect)
+    __obj.updateDynamic("placeholder")(placeholder)
+    __obj.updateDynamic("secondaryPlaceholder")(secondaryPlaceholder)
+    __obj.asInstanceOf[ChipsOptions]
+  }
+}
+

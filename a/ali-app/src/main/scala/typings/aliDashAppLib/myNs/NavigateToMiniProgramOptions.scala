@@ -29,3 +29,26 @@ trait NavigateToMiniProgramOptions
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NavigateToMiniProgramOptions {
+  @scala.inline
+  def apply(
+    appId: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    envVersion: aliDashAppLib.aliDashAppLibStrings.develop | aliDashAppLib.aliDashAppLibStrings.trial | aliDashAppLib.aliDashAppLibStrings.release | java.lang.String = null,
+    extraData: js.Any = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    path: java.lang.String = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): NavigateToMiniProgramOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appId")(appId)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (envVersion != null) __obj.updateDynamic("envVersion")(envVersion.asInstanceOf[js.Any])
+    if (extraData != null) __obj.updateDynamic("extraData")(extraData)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[NavigateToMiniProgramOptions]
+  }
+}
+

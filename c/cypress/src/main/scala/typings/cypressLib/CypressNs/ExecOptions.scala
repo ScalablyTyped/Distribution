@@ -27,3 +27,15 @@ trait ExecOptions
   var failOnNonZeroExit: scala.Boolean
 }
 
+object ExecOptions {
+  @scala.inline
+  def apply(env: js.Object, failOnNonZeroExit: scala.Boolean, log: scala.Boolean, timeout: scala.Double): ExecOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("failOnNonZeroExit")(failOnNonZeroExit)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[ExecOptions]
+  }
+}
+

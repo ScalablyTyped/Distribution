@@ -57,3 +57,32 @@ trait PhotoGalleryOptionsType extends js.Object {
   var success: js.UndefOr[js.Function1[/* param0 */ CameraMediaItemType, _]] = js.undefined
 }
 
+object PhotoGalleryOptionsType {
+  @scala.inline
+  def apply(
+    allowEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowMultiple: js.UndefOr[scala.Boolean] = js.undefined,
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowDirection: scala.Int | scala.Double = null,
+    autohide: js.UndefOr[scala.Boolean] = js.undefined,
+    cancel: js.Function1[/* param0 */ FailureResponse, _] = null,
+    error: js.Function1[/* param0 */ FailureResponse, _] = null,
+    mediaTypes: js.Array[java.lang.String] = null,
+    popoverView: titaniumLib.TitaniumNs.UINs.View = null,
+    success: js.Function1[/* param0 */ CameraMediaItemType, _] = null
+  ): PhotoGalleryOptionsType = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (arrowDirection != null) __obj.updateDynamic("arrowDirection")(arrowDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (mediaTypes != null) __obj.updateDynamic("mediaTypes")(mediaTypes)
+    if (popoverView != null) __obj.updateDynamic("popoverView")(popoverView)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[PhotoGalleryOptionsType]
+  }
+}
+

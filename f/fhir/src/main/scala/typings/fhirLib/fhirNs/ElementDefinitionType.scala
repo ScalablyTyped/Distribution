@@ -51,3 +51,42 @@ trait ElementDefinitionType extends Element {
   var versioning: js.UndefOr[code] = js.undefined
 }
 
+object ElementDefinitionType {
+  @scala.inline
+  def apply(
+    code: uri,
+    _aggregation: js.Array[Element] = null,
+    _code: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _profile: Element = null,
+    _targetProfile: Element = null,
+    _versioning: Element = null,
+    aggregation: js.Array[code] = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    profile: uri = null,
+    targetProfile: uri = null,
+    versioning: code = null
+  ): ElementDefinitionType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    if (_aggregation != null) __obj.updateDynamic("_aggregation")(_aggregation)
+    if (_code != null) __obj.updateDynamic("_code")(_code)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_profile != null) __obj.updateDynamic("_profile")(_profile)
+    if (_targetProfile != null) __obj.updateDynamic("_targetProfile")(_targetProfile)
+    if (_versioning != null) __obj.updateDynamic("_versioning")(_versioning)
+    if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    if (targetProfile != null) __obj.updateDynamic("targetProfile")(targetProfile)
+    if (versioning != null) __obj.updateDynamic("versioning")(versioning)
+    __obj.asInstanceOf[ElementDefinitionType]
+  }
+}
+

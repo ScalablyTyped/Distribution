@@ -46,3 +46,38 @@ trait Room extends js.Object {
   var variant: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Room {
+  @scala.inline
+  def apply(
+    applicationId: java.lang.String = null,
+    autoMatchingCriteria: RoomAutoMatchingCriteria = null,
+    autoMatchingStatus: RoomAutoMatchStatus = null,
+    creationDetails: RoomModification = null,
+    description: java.lang.String = null,
+    inviterId: java.lang.String = null,
+    kind: java.lang.String = null,
+    lastUpdateDetails: RoomModification = null,
+    participants: js.Array[RoomParticipant] = null,
+    roomId: java.lang.String = null,
+    roomStatusVersion: scala.Int | scala.Double = null,
+    status: java.lang.String = null,
+    variant: scala.Int | scala.Double = null
+  ): Room = {
+    val __obj = js.Dynamic.literal()
+    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId)
+    if (autoMatchingCriteria != null) __obj.updateDynamic("autoMatchingCriteria")(autoMatchingCriteria)
+    if (autoMatchingStatus != null) __obj.updateDynamic("autoMatchingStatus")(autoMatchingStatus)
+    if (creationDetails != null) __obj.updateDynamic("creationDetails")(creationDetails)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (inviterId != null) __obj.updateDynamic("inviterId")(inviterId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastUpdateDetails != null) __obj.updateDynamic("lastUpdateDetails")(lastUpdateDetails)
+    if (participants != null) __obj.updateDynamic("participants")(participants)
+    if (roomId != null) __obj.updateDynamic("roomId")(roomId)
+    if (roomStatusVersion != null) __obj.updateDynamic("roomStatusVersion")(roomStatusVersion.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Room]
+  }
+}
+

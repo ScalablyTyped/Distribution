@@ -7,31 +7,38 @@ import scala.scalajs.js.annotation._
 
 object azureDashSbLibStrings {
   @js.native
-  sealed trait activity extends js.Object
+  sealed trait activity
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
   sealed trait adm extends js.Object
   
   @js.native
-  sealed trait alert extends js.Object
+  sealed trait alert
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
   sealed trait apns extends js.Object
   
   @js.native
-  sealed trait attention extends js.Object
+  sealed trait attention
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
-  sealed trait available extends js.Object
+  sealed trait available
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
-  sealed trait away extends js.Object
+  sealed trait away
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
-  sealed trait busy extends js.Object
+  sealed trait busy
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
   sealed trait gcm extends js.Object
@@ -40,34 +47,43 @@ object azureDashSbLibStrings {
   sealed trait mpns extends js.Object
   
   @js.native
-  sealed trait newMessage extends js.Object
+  sealed trait newMessage
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait paused
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
-  sealed trait playing extends js.Object
+  sealed trait playing
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
-  sealed trait unavailable extends js.Object
+  sealed trait unavailable
+    extends azureDashSbLib.libWnsserviceMod.badges
   
   @js.native
   sealed trait wns extends js.Object
   
   @js.native
-  sealed trait `wns/badge` extends js.Object
+  sealed trait `wns/badge`
+    extends azureDashSbLib.libWnsserviceMod.types
   
   @js.native
-  sealed trait `wns/raw` extends js.Object
+  sealed trait `wns/raw`
+    extends azureDashSbLib.libWnsserviceMod.types
   
   @js.native
-  sealed trait `wns/tile` extends js.Object
+  sealed trait `wns/tile`
+    extends azureDashSbLib.libWnsserviceMod.types
   
   @js.native
-  sealed trait `wns/toast` extends js.Object
+  sealed trait `wns/toast`
+    extends azureDashSbLib.libWnsserviceMod.types
   
   @scala.inline
   def activity: activity = "activity".asInstanceOf[activity]

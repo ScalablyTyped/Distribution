@@ -12,3 +12,20 @@ trait SocketError
   def isTransportError(): scala.Boolean
 }
 
+object SocketError {
+  @scala.inline
+  def apply(
+    isApplicationError: js.Function0[scala.Boolean],
+    isProtocolError: js.Function0[scala.Boolean],
+    isTransportError: js.Function0[scala.Boolean],
+    stack: java.lang.String = null
+  ): SocketError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isApplicationError")(isApplicationError)
+    __obj.updateDynamic("isProtocolError")(isProtocolError)
+    __obj.updateDynamic("isTransportError")(isTransportError)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[SocketError]
+  }
+}
+

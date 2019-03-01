@@ -75,3 +75,45 @@ trait IProductCreationOptions
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IProductCreationOptions {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: ProductType,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    attributes: js.Array[java.lang.String] = null,
+    caption: java.lang.String = null,
+    deactivate_on: js.Array[java.lang.String] = null,
+    description: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    images: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    package_dimensions: IPackageDimensions = null,
+    shippable: js.UndefOr[scala.Boolean] = js.undefined,
+    statement_descriptor: java.lang.String = null,
+    unit_label: java.lang.String = null,
+    url: java.lang.String = null
+  ): IProductCreationOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (deactivate_on != null) __obj.updateDynamic("deactivate_on")(deactivate_on)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (images != null) __obj.updateDynamic("images")(images)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (package_dimensions != null) __obj.updateDynamic("package_dimensions")(package_dimensions)
+    if (!js.isUndefined(shippable)) __obj.updateDynamic("shippable")(shippable)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (unit_label != null) __obj.updateDynamic("unit_label")(unit_label)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[IProductCreationOptions]
+  }
+}
+

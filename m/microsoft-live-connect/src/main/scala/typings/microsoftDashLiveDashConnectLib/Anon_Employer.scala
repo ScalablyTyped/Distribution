@@ -9,3 +9,12 @@ trait Anon_Employer extends js.Object {
   var employer: Anon_Name
 }
 
+object Anon_Employer {
+  @scala.inline
+  def apply(employer: Anon_Name): Anon_Employer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("employer")(employer)
+    __obj.asInstanceOf[Anon_Employer]
+  }
+}
+

@@ -15,3 +15,23 @@ trait IgButtonLink
   var title: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgButtonLink {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgButtonLink
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    href: js.Any = null,
+    target: js.Any = null,
+    title: js.Any = null
+  ): IgButtonLink = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[IgButtonLink]
+  }
+}
+

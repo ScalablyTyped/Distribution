@@ -26,3 +26,20 @@ trait BootstrapClientMenuItemClickEventArgs extends ASPxClientProcessingModeEven
   var item: BootstrapClientMenuItem
 }
 
+object BootstrapClientMenuItemClickEventArgs {
+  @scala.inline
+  def apply(
+    htmlElement: js.Object,
+    htmlEvent: js.Object,
+    item: BootstrapClientMenuItem,
+    processOnServer: scala.Boolean
+  ): BootstrapClientMenuItemClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("htmlElement")(htmlElement)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[BootstrapClientMenuItemClickEventArgs]
+  }
+}
+

@@ -29,3 +29,20 @@ trait Account extends js.Object {
   var Stocks: scala.Double
 }
 
+object Account {
+  @scala.inline
+  def apply(
+    Balance: scala.Double,
+    FrozenBalance: scala.Double,
+    FrozenStocks: scala.Double,
+    Stocks: scala.Double
+  ): Account = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Balance")(Balance)
+    __obj.updateDynamic("FrozenBalance")(FrozenBalance)
+    __obj.updateDynamic("FrozenStocks")(FrozenStocks)
+    __obj.updateDynamic("Stocks")(Stocks)
+    __obj.asInstanceOf[Account]
+  }
+}
+

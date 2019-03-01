@@ -52,3 +52,48 @@ trait DataViewMetadataColumn extends js.Object {
   var `type`: js.UndefOr[ValueTypeDescriptor] = js.undefined
 }
 
+object DataViewMetadataColumn {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    aggregates: DataViewColumnAggregates = null,
+    discourageAggregationAcrossGroups: js.UndefOr[scala.Boolean] = js.undefined,
+    expr: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr = null,
+    format: java.lang.String = null,
+    groupName: PrimitiveValue = null,
+    identityExprs: js.Array[
+      powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr
+    ] = null,
+    index: scala.Int | scala.Double = null,
+    isMeasure: js.UndefOr[scala.Boolean] = js.undefined,
+    kpi: DataViewKpiColumnMetadata = null,
+    objects: DataViewObjects = null,
+    parameter: js.Object = null,
+    queryName: java.lang.String = null,
+    roles: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    sort: SortDirection = null,
+    sortOrder: scala.Int | scala.Double = null,
+    `type`: ValueTypeDescriptor = null
+  ): DataViewMetadataColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates)
+    if (!js.isUndefined(discourageAggregationAcrossGroups)) __obj.updateDynamic("discourageAggregationAcrossGroups")(discourageAggregationAcrossGroups)
+    if (expr != null) __obj.updateDynamic("expr")(expr)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
+    if (identityExprs != null) __obj.updateDynamic("identityExprs")(identityExprs)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(isMeasure)) __obj.updateDynamic("isMeasure")(isMeasure)
+    if (kpi != null) __obj.updateDynamic("kpi")(kpi)
+    if (objects != null) __obj.updateDynamic("objects")(objects)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
+    if (queryName != null) __obj.updateDynamic("queryName")(queryName)
+    if (roles != null) __obj.updateDynamic("roles")(roles)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DataViewMetadataColumn]
+  }
+}
+

@@ -161,3 +161,118 @@ trait IField
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object IField {
+  @scala.inline
+  def apply(
+    IDecorator: senchaUnderscoreTouchLib.ExtNs.IDecorator = null,
+    baseCls: java.lang.String = null,
+    clearIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    component: js.Any = null,
+    fieldCls: java.lang.String = null,
+    fieldLabel: java.lang.String = null,
+    getBaseCls: js.Function0[java.lang.String] = null,
+    getClearIcon: js.Function0[scala.Boolean] = null,
+    getInputCls: js.Function0[java.lang.String] = null,
+    getInputType: js.Function0[java.lang.String] = null,
+    getLabel: js.Function0[java.lang.String] = null,
+    getLabelAlign: js.Function0[java.lang.String] = null,
+    getLabelCls: js.Function0[java.lang.String] = null,
+    getLabelWidth: js.Function0[_] = null,
+    getLabelWrap: js.Function0[scala.Boolean] = null,
+    getName: js.Function0[java.lang.String] = null,
+    getRequired: js.Function0[scala.Boolean] = null,
+    getRequiredCls: js.Function0[java.lang.String] = null,
+    getTabIndex: js.Function0[scala.Double] = null,
+    getValue: js.Function0[_] = null,
+    inputCls: java.lang.String = null,
+    inputType: java.lang.String = null,
+    isDirty: js.Function0[scala.Boolean] = null,
+    isField: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    labelAlign: java.lang.String = null,
+    labelCls: java.lang.String = null,
+    labelEl: senchaUnderscoreTouchLib.ExtNs.IElement = null,
+    labelWidth: js.Any = null,
+    labelWrap: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    originalValue: js.Any = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    requiredCls: java.lang.String = null,
+    reset: js.Function0[IField] = null,
+    resetOriginalValue: js.Function0[scala.Unit] = null,
+    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setClearIcon: js.Function1[/* clearIcon */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setInputCls: js.Function1[/* inputCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setInputType: js.Function1[/* inputType */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setLabel: js.Function1[/* label */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setLabelAlign: js.Function1[/* labelAlign */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setLabelCls: js.Function1[/* labelCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setLabelWidth: js.Function1[/* labelWidth */ js.UndefOr[js.Any], scala.Unit] = null,
+    setLabelWrap: js.Function1[/* labelWrap */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setName: js.Function1[/* name */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setRequired: js.Function1[/* required */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setRequiredCls: js.Function1[/* requiredCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setTabIndex: js.Function1[/* tabIndex */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    tabIndex: scala.Int | scala.Double = null,
+    useClearIcon: java.lang.String = null,
+    value: js.Any = null
+  ): IField = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IDecorator)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (!js.isUndefined(clearIcon)) __obj.updateDynamic("clearIcon")(clearIcon)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (fieldCls != null) __obj.updateDynamic("fieldCls")(fieldCls)
+    if (fieldLabel != null) __obj.updateDynamic("fieldLabel")(fieldLabel)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
+    if (getClearIcon != null) __obj.updateDynamic("getClearIcon")(getClearIcon)
+    if (getInputCls != null) __obj.updateDynamic("getInputCls")(getInputCls)
+    if (getInputType != null) __obj.updateDynamic("getInputType")(getInputType)
+    if (getLabel != null) __obj.updateDynamic("getLabel")(getLabel)
+    if (getLabelAlign != null) __obj.updateDynamic("getLabelAlign")(getLabelAlign)
+    if (getLabelCls != null) __obj.updateDynamic("getLabelCls")(getLabelCls)
+    if (getLabelWidth != null) __obj.updateDynamic("getLabelWidth")(getLabelWidth)
+    if (getLabelWrap != null) __obj.updateDynamic("getLabelWrap")(getLabelWrap)
+    if (getName != null) __obj.updateDynamic("getName")(getName)
+    if (getRequired != null) __obj.updateDynamic("getRequired")(getRequired)
+    if (getRequiredCls != null) __obj.updateDynamic("getRequiredCls")(getRequiredCls)
+    if (getTabIndex != null) __obj.updateDynamic("getTabIndex")(getTabIndex)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (inputCls != null) __obj.updateDynamic("inputCls")(inputCls)
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
+    if (isDirty != null) __obj.updateDynamic("isDirty")(isDirty)
+    if (!js.isUndefined(isField)) __obj.updateDynamic("isField")(isField)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign)
+    if (labelCls != null) __obj.updateDynamic("labelCls")(labelCls)
+    if (labelEl != null) __obj.updateDynamic("labelEl")(labelEl)
+    if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth)
+    if (!js.isUndefined(labelWrap)) __obj.updateDynamic("labelWrap")(labelWrap)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (requiredCls != null) __obj.updateDynamic("requiredCls")(requiredCls)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(resetOriginalValue)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
+    if (setClearIcon != null) __obj.updateDynamic("setClearIcon")(setClearIcon)
+    if (setInputCls != null) __obj.updateDynamic("setInputCls")(setInputCls)
+    if (setInputType != null) __obj.updateDynamic("setInputType")(setInputType)
+    if (setLabel != null) __obj.updateDynamic("setLabel")(setLabel)
+    if (setLabelAlign != null) __obj.updateDynamic("setLabelAlign")(setLabelAlign)
+    if (setLabelCls != null) __obj.updateDynamic("setLabelCls")(setLabelCls)
+    if (setLabelWidth != null) __obj.updateDynamic("setLabelWidth")(setLabelWidth)
+    if (setLabelWrap != null) __obj.updateDynamic("setLabelWrap")(setLabelWrap)
+    if (setName != null) __obj.updateDynamic("setName")(setName)
+    if (setRequired != null) __obj.updateDynamic("setRequired")(setRequired)
+    if (setRequiredCls != null) __obj.updateDynamic("setRequiredCls")(setRequiredCls)
+    if (setTabIndex != null) __obj.updateDynamic("setTabIndex")(setTabIndex)
+    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (useClearIcon != null) __obj.updateDynamic("useClearIcon")(useClearIcon)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IField]
+  }
+}
+

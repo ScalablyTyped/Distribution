@@ -36,3 +36,29 @@ trait IgPivotDataSelectorDataSourceOptions
   var xmlaOptions: js.UndefOr[IgPivotDataSelectorDataSourceOptionsXmlaOptions] = js.undefined
 }
 
+object IgPivotDataSelectorDataSourceOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotDataSelectorDataSourceOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columns: java.lang.String = null,
+    filters: java.lang.String = null,
+    flatDataOptions: IgPivotDataSelectorDataSourceOptionsFlatDataOptions = null,
+    measures: java.lang.String = null,
+    rows: java.lang.String = null,
+    xmlaOptions: IgPivotDataSelectorDataSourceOptionsXmlaOptions = null
+  ): IgPivotDataSelectorDataSourceOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (flatDataOptions != null) __obj.updateDynamic("flatDataOptions")(flatDataOptions)
+    if (measures != null) __obj.updateDynamic("measures")(measures)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (xmlaOptions != null) __obj.updateDynamic("xmlaOptions")(xmlaOptions)
+    __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptions]
+  }
+}
+

@@ -142,3 +142,88 @@ trait Model extends js.Object {
   var yName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    Click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    axisLineSettings: AxisLineSettings = null,
+    background: java.lang.String = null,
+    border: Border = null,
+    dataSource: js.Any = null,
+    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
+    enableCanvasRendering: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGroupSeparator: js.UndefOr[scala.Boolean] = js.undefined,
+    endPointColor: java.lang.String = null,
+    fill: java.lang.String = null,
+    highPointColor: java.lang.String = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    loaded: js.Function1[/* e */ LoadedEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    lowPointColor: java.lang.String = null,
+    markerSettings: MarkerSettings = null,
+    negativePointColor: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    padding: scala.Int | scala.Double = null,
+    palette: java.lang.String = null,
+    pointRegionMouseClick: js.Function1[/* e */ PointRegionMouseClickEventArgs, scala.Unit] = null,
+    pointRegionMouseMove: js.Function1[/* e */ PointRegionMouseMoveEventArgs, scala.Unit] = null,
+    rangeBandSettings: RangeBandSettings = null,
+    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
+    seriesRendering: js.Function1[/* e */ SeriesRenderingEventArgs, scala.Unit] = null,
+    size: Size = null,
+    sparklineMouseLeave: js.Function1[/* e */ SparklineMouseLeaveEventArgs, scala.Unit] = null,
+    sparklineMouseMove: js.Function1[/* e */ SparklineMouseMoveEventArgs, scala.Unit] = null,
+    startPointColor: java.lang.String = null,
+    stroke: java.lang.String = null,
+    theme: ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.Theme | java.lang.String = null,
+    tooltip: Tooltip = null,
+    tooltipInitialize: js.Function1[/* e */ TooltipInitializeEventArgs, scala.Unit] = null,
+    `type`: ejDotWebDotAllLib.ejNs.datavisualizationNs.SparklineNs.Type | java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    xName: java.lang.String = null,
+    yName: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (Click != null) __obj.updateDynamic("Click")(Click)
+    if (axisLineSettings != null) __obj.updateDynamic("axisLineSettings")(axisLineSettings)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
+    if (!js.isUndefined(enableCanvasRendering)) __obj.updateDynamic("enableCanvasRendering")(enableCanvasRendering)
+    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator)
+    if (endPointColor != null) __obj.updateDynamic("endPointColor")(endPointColor)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (highPointColor != null) __obj.updateDynamic("highPointColor")(highPointColor)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loaded != null) __obj.updateDynamic("loaded")(loaded)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (lowPointColor != null) __obj.updateDynamic("lowPointColor")(lowPointColor)
+    if (markerSettings != null) __obj.updateDynamic("markerSettings")(markerSettings)
+    if (negativePointColor != null) __obj.updateDynamic("negativePointColor")(negativePointColor)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (palette != null) __obj.updateDynamic("palette")(palette)
+    if (pointRegionMouseClick != null) __obj.updateDynamic("pointRegionMouseClick")(pointRegionMouseClick)
+    if (pointRegionMouseMove != null) __obj.updateDynamic("pointRegionMouseMove")(pointRegionMouseMove)
+    if (rangeBandSettings != null) __obj.updateDynamic("rangeBandSettings")(rangeBandSettings)
+    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
+    if (seriesRendering != null) __obj.updateDynamic("seriesRendering")(seriesRendering)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (sparklineMouseLeave != null) __obj.updateDynamic("sparklineMouseLeave")(sparklineMouseLeave)
+    if (sparklineMouseMove != null) __obj.updateDynamic("sparklineMouseMove")(sparklineMouseMove)
+    if (startPointColor != null) __obj.updateDynamic("startPointColor")(startPointColor)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltipInitialize != null) __obj.updateDynamic("tooltipInitialize")(tooltipInitialize)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (xName != null) __obj.updateDynamic("xName")(xName)
+    if (yName != null) __obj.updateDynamic("yName")(yName)
+    __obj.asInstanceOf[Model]
+  }
+}
+

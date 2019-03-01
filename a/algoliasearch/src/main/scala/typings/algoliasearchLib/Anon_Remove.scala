@@ -13,3 +13,12 @@ trait Anon_Remove extends js.Object {
   var remove: js.Array[java.lang.String]
 }
 
+object Anon_Remove {
+  @scala.inline
+  def apply(remove: js.Array[java.lang.String]): Anon_Remove = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[Anon_Remove]
+  }
+}
+

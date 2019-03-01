@@ -13,3 +13,16 @@ trait ReceivedRequest extends js.Object {
   var url: java.lang.String
 }
 
+object ReceivedRequest {
+  @scala.inline
+  def apply(
+    method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method,
+    url: java.lang.String
+  ): ReceivedRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ReceivedRequest]
+  }
+}
+

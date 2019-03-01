@@ -24,3 +24,20 @@ trait ImageEditorStatic extends js.Object {
   ): scala.Unit
 }
 
+object ImageEditorStatic {
+  @scala.inline
+  def apply(
+    cropImage: js.Function4[
+      java.lang.String, 
+      ImageCropData, 
+      js.Function1[/* uri */ java.lang.String, scala.Unit], 
+      js.Function1[/* error */ js.Object, scala.Unit], 
+      scala.Unit
+    ]
+  ): ImageEditorStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cropImage")(cropImage)
+    __obj.asInstanceOf[ImageEditorStatic]
+  }
+}
+

@@ -10,3 +10,12 @@ trait RTCRtpCodecCapability extends js.Object {
   var mimeType: java.lang.String
 }
 
+object RTCRtpCodecCapability {
+  @scala.inline
+  def apply(mimeType: java.lang.String): RTCRtpCodecCapability = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mimeType")(mimeType)
+    __obj.asInstanceOf[RTCRtpCodecCapability]
+  }
+}
+

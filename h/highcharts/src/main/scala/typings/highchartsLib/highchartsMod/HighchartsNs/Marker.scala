@@ -33,3 +33,30 @@ trait Marker extends MarkerState {
   var width: js.UndefOr[scala.Double | scala.Null] = js.undefined
 }
 
+object Marker {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fillColor: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    lineColor: java.lang.String | Gradient = null,
+    lineWidth: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null,
+    states: highchartsLib.Anon_HoverSelect = null,
+    symbol: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Marker = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (states != null) __obj.updateDynamic("states")(states)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Marker]
+  }
+}
+

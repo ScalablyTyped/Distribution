@@ -22,3 +22,47 @@ trait CalendarListResource extends js.Object {
   def watch(request: gapiDotClientDotCalendarLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Channel]
 }
 
+object CalendarListResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CalendarListEntry]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltColorRgbFormat, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CalendarListEntry]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CalendarList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarIdColorRgbFormat, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CalendarListEntry]
+    ],
+    update: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltCalendarIdColorRgbFormat, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CalendarListEntry]
+    ],
+    watch: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
+    ]
+  ): CalendarListResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[CalendarListResource]
+  }
+}
+

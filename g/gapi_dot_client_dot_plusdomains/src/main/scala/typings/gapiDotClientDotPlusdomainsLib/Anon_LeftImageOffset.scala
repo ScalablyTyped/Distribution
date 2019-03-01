@@ -12,3 +12,13 @@ trait Anon_LeftImageOffset extends js.Object {
   var topImageOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_LeftImageOffset {
+  @scala.inline
+  def apply(leftImageOffset: scala.Int | scala.Double = null, topImageOffset: scala.Int | scala.Double = null): Anon_LeftImageOffset = {
+    val __obj = js.Dynamic.literal()
+    if (leftImageOffset != null) __obj.updateDynamic("leftImageOffset")(leftImageOffset.asInstanceOf[js.Any])
+    if (topImageOffset != null) __obj.updateDynamic("topImageOffset")(topImageOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_LeftImageOffset]
+  }
+}
+

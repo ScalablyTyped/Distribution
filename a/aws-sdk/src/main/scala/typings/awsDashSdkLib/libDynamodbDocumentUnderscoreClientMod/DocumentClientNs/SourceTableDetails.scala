@@ -44,3 +44,30 @@ trait SourceTableDetails extends js.Object {
   var TableSizeBytes: js.UndefOr[Long] = js.undefined
 }
 
+object SourceTableDetails {
+  @scala.inline
+  def apply(
+    KeySchema: KeySchema,
+    ProvisionedThroughput: ProvisionedThroughput,
+    TableCreationDateTime: TableCreationDateTime,
+    TableId: TableId,
+    TableName: TableName,
+    BillingMode: BillingMode = null,
+    ItemCount: js.UndefOr[ItemCount] = js.undefined,
+    TableArn: TableArn = null,
+    TableSizeBytes: js.UndefOr[Long] = js.undefined
+  ): SourceTableDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("KeySchema")(KeySchema)
+    __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)
+    __obj.updateDynamic("TableCreationDateTime")(TableCreationDateTime)
+    __obj.updateDynamic("TableId")(TableId)
+    __obj.updateDynamic("TableName")(TableName)
+    if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount)
+    if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn)
+    if (!js.isUndefined(TableSizeBytes)) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes)
+    __obj.asInstanceOf[SourceTableDetails]
+  }
+}
+

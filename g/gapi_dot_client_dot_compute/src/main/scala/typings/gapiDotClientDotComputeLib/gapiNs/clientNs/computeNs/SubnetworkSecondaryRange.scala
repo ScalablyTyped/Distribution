@@ -18,3 +18,13 @@ trait SubnetworkSecondaryRange extends js.Object {
   var rangeName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SubnetworkSecondaryRange {
+  @scala.inline
+  def apply(ipCidrRange: java.lang.String = null, rangeName: java.lang.String = null): SubnetworkSecondaryRange = {
+    val __obj = js.Dynamic.literal()
+    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange)
+    if (rangeName != null) __obj.updateDynamic("rangeName")(rangeName)
+    __obj.asInstanceOf[SubnetworkSecondaryRange]
+  }
+}
+

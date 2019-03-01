@@ -27,10 +27,6 @@ package object fhirNs {
     */
   type Money = Quantity
   /**
-    * Reference to a sub-type of ResourceBase. This is needed for stricter object literal typing introduced in TypeScript 1.6.
-    */
-  type Resource = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 118 */ js.Any
-  /**
     * A fixed quantity (no comparator)
     */
   type SimpleQuantity = Quantity

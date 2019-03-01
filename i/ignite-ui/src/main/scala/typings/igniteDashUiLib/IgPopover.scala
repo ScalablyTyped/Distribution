@@ -150,3 +150,63 @@ trait IgPopover
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object IgPopover {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igPopover
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animationDuration: scala.Int | scala.Double = null,
+    appendTo: java.lang.String | js.Object = null,
+    closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
+    containment: js.Any = null,
+    contentTemplate: java.lang.String | js.Function = null,
+    direction: java.lang.String = null,
+    directionPriority: js.Array[_] = null,
+    headerTemplate: IgPopoverHeaderTemplate = null,
+    height: scala.Double | java.lang.String = null,
+    hidden: HiddenEvent = null,
+    hiding: HidingEvent = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    maxHeight: scala.Double | java.lang.String = null,
+    maxWidth: scala.Double | java.lang.String = null,
+    minWidth: scala.Double | java.lang.String = null,
+    position: java.lang.String = null,
+    regional: java.lang.String | js.Object = null,
+    selectors: java.lang.String = null,
+    showOn: java.lang.String = null,
+    showing: ShowingEvent = null,
+    shown: ShownEvent = null,
+    width: scala.Double | java.lang.String = null
+  ): IgPopover = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur)
+    if (containment != null) __obj.updateDynamic("containment")(containment)
+    if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (directionPriority != null) __obj.updateDynamic("directionPriority")(directionPriority)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
+    if (hiding != null) __obj.updateDynamic("hiding")(hiding)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    if (showOn != null) __obj.updateDynamic("showOn")(showOn)
+    if (showing != null) __obj.updateDynamic("showing")(showing)
+    if (shown != null) __obj.updateDynamic("shown")(shown)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgPopover]
+  }
+}
+

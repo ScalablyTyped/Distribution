@@ -18,3 +18,32 @@ trait ContactGroup extends js.Object {
   def setName(name: java.lang.String): ContactGroup
 }
 
+object ContactGroup {
+  @scala.inline
+  def apply(
+    addContact: js.Function1[Contact, ContactGroup],
+    deleteGroup: js.Function0[scala.Unit],
+    getContacts: js.Function0[js.Array[Contact]],
+    getGroupName: js.Function0[java.lang.String],
+    getId: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    isSystemGroup: js.Function0[scala.Boolean],
+    removeContact: js.Function1[Contact, ContactGroup],
+    setGroupName: js.Function1[java.lang.String, scala.Unit],
+    setName: js.Function1[java.lang.String, ContactGroup]
+  ): ContactGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addContact")(addContact)
+    __obj.updateDynamic("deleteGroup")(deleteGroup)
+    __obj.updateDynamic("getContacts")(getContacts)
+    __obj.updateDynamic("getGroupName")(getGroupName)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("isSystemGroup")(isSystemGroup)
+    __obj.updateDynamic("removeContact")(removeContact)
+    __obj.updateDynamic("setGroupName")(setGroupName)
+    __obj.updateDynamic("setName")(setName)
+    __obj.asInstanceOf[ContactGroup]
+  }
+}
+

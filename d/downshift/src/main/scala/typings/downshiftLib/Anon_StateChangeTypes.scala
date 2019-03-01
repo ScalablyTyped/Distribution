@@ -9,3 +9,12 @@ trait Anon_StateChangeTypes extends js.Object {
   var stateChangeTypes: Anon_BlurButton
 }
 
+object Anon_StateChangeTypes {
+  @scala.inline
+  def apply(stateChangeTypes: Anon_BlurButton): Anon_StateChangeTypes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stateChangeTypes")(stateChangeTypes)
+    __obj.asInstanceOf[Anon_StateChangeTypes]
+  }
+}
+

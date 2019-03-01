@@ -10,3 +10,16 @@ trait Motion extends js.Object {
   def animateOut(element: js.Object, animation: js.Any, cb: js.Function): scala.Unit
 }
 
+object Motion {
+  @scala.inline
+  def apply(
+    animateIn: js.Function3[js.Object, js.Any, js.Function, scala.Unit],
+    animateOut: js.Function3[js.Object, js.Any, js.Function, scala.Unit]
+  ): Motion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animateIn")(animateIn)
+    __obj.updateDynamic("animateOut")(animateOut)
+    __obj.asInstanceOf[Motion]
+  }
+}
+

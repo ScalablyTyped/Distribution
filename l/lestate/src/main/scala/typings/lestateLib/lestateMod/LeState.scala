@@ -13,3 +13,22 @@ trait LeState extends js.Object {
   def set(newValue: js.Object): js.Array[lestateLib.Anon_Id]
 }
 
+object LeState {
+  @scala.inline
+  def apply(
+    createListener: js.Function1[lestateLib.Anon_Force, scala.Unit],
+    get: js.Function0[js.Any],
+    getDescription: js.Function0[js.Object],
+    insert: js.Function1[js.Object, scala.Unit],
+    set: js.Function1[js.Object, js.Array[lestateLib.Anon_Id]]
+  ): LeState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createListener")(createListener)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getDescription")(getDescription)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[LeState]
+  }
+}
+

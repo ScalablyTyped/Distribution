@@ -18,3 +18,32 @@ trait VaultOptions extends js.Object {
   var tv4: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
 }
 
+object VaultOptions {
+  @scala.inline
+  def apply(
+    Promise: stdLib.PromiseConstructor = null,
+    apiVersion: java.lang.String = null,
+    commands: js.Array[nodeDashVaultLib.Anon_Method] = null,
+    debug: js.Function1[/* repeated */ js.Any, _] = null,
+    endpoint: java.lang.String = null,
+    mustache: mustacheLib.mustacheMod.MustacheStatic = null,
+    `request-promise`: js.Any = null,
+    requestOptions: requestLib.requestMod.requestNs.CoreOptions = null,
+    token: java.lang.String = null,
+    tv4: js.Function1[/* repeated */ js.Any, _] = null
+  ): VaultOptions = {
+    val __obj = js.Dynamic.literal()
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
+    if (commands != null) __obj.updateDynamic("commands")(commands)
+    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (mustache != null) __obj.updateDynamic("mustache")(mustache)
+    if (`request-promise` != null) __obj.updateDynamic("request-promise")(`request-promise`)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (tv4 != null) __obj.updateDynamic("tv4")(tv4)
+    __obj.asInstanceOf[VaultOptions]
+  }
+}
+

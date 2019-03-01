@@ -34,3 +34,24 @@ trait TransactionOptions extends js.Object {
   var rollback: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TransactionOptions {
+  @scala.inline
+  def apply(
+    adapter: anyDashDbLib.anyDashDbMod.Adapter = null,
+    autoRollback: js.UndefOr[scala.Boolean] = js.undefined,
+    begin: java.lang.String = null,
+    callback: js.Function2[/* error */ nodeLib.Error, /* transaction */ Transaction, scala.Unit] = null,
+    commit: java.lang.String = null,
+    rollback: java.lang.String = null
+  ): TransactionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (adapter != null) __obj.updateDynamic("adapter")(adapter)
+    if (!js.isUndefined(autoRollback)) __obj.updateDynamic("autoRollback")(autoRollback)
+    if (begin != null) __obj.updateDynamic("begin")(begin)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (commit != null) __obj.updateDynamic("commit")(commit)
+    if (rollback != null) __obj.updateDynamic("rollback")(rollback)
+    __obj.asInstanceOf[TransactionOptions]
+  }
+}
+

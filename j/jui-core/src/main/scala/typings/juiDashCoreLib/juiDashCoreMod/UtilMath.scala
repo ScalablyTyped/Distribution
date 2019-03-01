@@ -58,3 +58,46 @@ trait UtilMath extends js.Object {
   def round(num: scala.Double, fixed: scala.Double): scala.Double
 }
 
+object UtilMath {
+  @scala.inline
+  def apply(
+    angle: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
+    degree: js.Function1[scala.Double, scala.Double],
+    div: js.Function2[scala.Double, scala.Double, scala.Double],
+    interpolateNumber: js.Function2[scala.Double, scala.Double, js.Function0[scala.Unit]],
+    interpolateRound: js.Function2[scala.Double, scala.Double, js.Function0[scala.Unit]],
+    inverseMatrix3d: js.Function1[js.Array[_], js.Array[_]],
+    matrix: js.Function2[js.Array[js.Any], js.Array[js.Any], js.Array[js.Any]],
+    matrix3d: js.Function2[js.Array[js.Any], js.Array[js.Any], js.Array[js.Any]],
+    minus: js.Function2[scala.Double, scala.Double, scala.Double],
+    multi: js.Function2[scala.Double, scala.Double, scala.Double],
+    nice: js.Function4[scala.Double, scala.Double, scala.Double, scala.Boolean, js.Any],
+    plus: js.Function2[scala.Double, scala.Double, scala.Double],
+    radian: js.Function1[scala.Double, scala.Double],
+    remain: js.Function2[scala.Double, scala.Double, scala.Double],
+    resize: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, js.Any],
+    rotate: js.Function3[scala.Double, scala.Double, scala.Double, js.Any],
+    round: js.Function2[scala.Double, scala.Double, scala.Double]
+  ): UtilMath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("degree")(degree)
+    __obj.updateDynamic("div")(div)
+    __obj.updateDynamic("interpolateNumber")(interpolateNumber)
+    __obj.updateDynamic("interpolateRound")(interpolateRound)
+    __obj.updateDynamic("inverseMatrix3d")(inverseMatrix3d)
+    __obj.updateDynamic("matrix")(matrix)
+    __obj.updateDynamic("matrix3d")(matrix3d)
+    __obj.updateDynamic("minus")(minus)
+    __obj.updateDynamic("multi")(multi)
+    __obj.updateDynamic("nice")(nice)
+    __obj.updateDynamic("plus")(plus)
+    __obj.updateDynamic("radian")(radian)
+    __obj.updateDynamic("remain")(remain)
+    __obj.updateDynamic("resize")(resize)
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("round")(round)
+    __obj.asInstanceOf[UtilMath]
+  }
+}
+

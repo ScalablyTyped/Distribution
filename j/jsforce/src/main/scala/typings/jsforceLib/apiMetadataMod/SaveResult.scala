@@ -10,3 +10,13 @@ trait SaveResult extends js.Object {
   var success: scala.Boolean
 }
 
+object SaveResult {
+  @scala.inline
+  def apply(fullName: java.lang.String, success: scala.Boolean): SaveResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fullName")(fullName)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[SaveResult]
+  }
+}
+

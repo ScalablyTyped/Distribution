@@ -10,3 +10,13 @@ trait HistoryOptions extends js.Object {
   var limit: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HistoryOptions {
+  @scala.inline
+  def apply(httpCache: js.UndefOr[scala.Boolean] = js.undefined, limit: scala.Int | scala.Double = null): HistoryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HistoryOptions]
+  }
+}
+

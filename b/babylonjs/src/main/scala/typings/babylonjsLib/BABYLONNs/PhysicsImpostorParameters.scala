@@ -36,3 +36,24 @@ trait PhysicsImpostorParameters extends js.Object {
   var restitution: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PhysicsImpostorParameters {
+  @scala.inline
+  def apply(
+    mass: scala.Double,
+    disableBidirectionalTransformation: js.UndefOr[scala.Boolean] = js.undefined,
+    friction: scala.Int | scala.Double = null,
+    ignoreParent: js.UndefOr[scala.Boolean] = js.undefined,
+    nativeOptions: js.Any = null,
+    restitution: scala.Int | scala.Double = null
+  ): PhysicsImpostorParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mass")(mass)
+    if (!js.isUndefined(disableBidirectionalTransformation)) __obj.updateDynamic("disableBidirectionalTransformation")(disableBidirectionalTransformation)
+    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreParent)) __obj.updateDynamic("ignoreParent")(ignoreParent)
+    if (nativeOptions != null) __obj.updateDynamic("nativeOptions")(nativeOptions)
+    if (restitution != null) __obj.updateDynamic("restitution")(restitution.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhysicsImpostorParameters]
+  }
+}
+

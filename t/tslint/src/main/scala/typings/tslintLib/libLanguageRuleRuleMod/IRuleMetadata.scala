@@ -66,3 +66,37 @@ trait IRuleMetadata extends js.Object {
   var typescriptOnly: scala.Boolean
 }
 
+object IRuleMetadata {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    options: js.Any,
+    optionsDescription: java.lang.String,
+    ruleName: java.lang.String,
+    `type`: RuleType,
+    typescriptOnly: scala.Boolean,
+    codeExamples: js.Array[ICodeExample] = null,
+    deprecationMessage: java.lang.String = null,
+    descriptionDetails: java.lang.String = null,
+    hasFix: js.UndefOr[scala.Boolean] = js.undefined,
+    optionExamples: (js.Array[tslintLib.tslintLibNumbers.`true` | js.Array[_]]) | js.Array[java.lang.String] = null,
+    rationale: java.lang.String = null,
+    requiresTypeInfo: js.UndefOr[scala.Boolean] = js.undefined
+  ): IRuleMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("optionsDescription")(optionsDescription)
+    __obj.updateDynamic("ruleName")(ruleName)
+    __obj.updateDynamic("typescriptOnly")(typescriptOnly)
+    if (codeExamples != null) __obj.updateDynamic("codeExamples")(codeExamples)
+    if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage)
+    if (descriptionDetails != null) __obj.updateDynamic("descriptionDetails")(descriptionDetails)
+    if (!js.isUndefined(hasFix)) __obj.updateDynamic("hasFix")(hasFix)
+    if (optionExamples != null) __obj.updateDynamic("optionExamples")(optionExamples.asInstanceOf[js.Any])
+    if (rationale != null) __obj.updateDynamic("rationale")(rationale)
+    if (!js.isUndefined(requiresTypeInfo)) __obj.updateDynamic("requiresTypeInfo")(requiresTypeInfo)
+    __obj.asInstanceOf[IRuleMetadata]
+  }
+}
+

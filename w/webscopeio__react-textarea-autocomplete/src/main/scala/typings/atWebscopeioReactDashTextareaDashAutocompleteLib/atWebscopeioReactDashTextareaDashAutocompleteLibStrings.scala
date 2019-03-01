@@ -7,25 +7,28 @@ import scala.scalajs.js.annotation._
 
 object atWebscopeioReactDashTextareaDashAutocompleteLibStrings {
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod._CaretPositionType
   
   @js.native
-  sealed trait next extends js.Object
+  sealed trait next
+    extends atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod._CaretPositionType
   
   @js.native
-  sealed trait onBlur extends js.Object
+  sealed trait onBlur extends PickedAttributes
   
   @js.native
-  sealed trait onChange extends js.Object
+  sealed trait onChange extends PickedAttributes
   
   @js.native
-  sealed trait onSelect extends js.Object
+  sealed trait onSelect extends PickedAttributes
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends atWebscopeioReactDashTextareaDashAutocompleteLib.atWebscopeioReactDashTextareaDashAutocompleteMod._CaretPositionType
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait value extends PickedAttributes
   
   @scala.inline
   def end: end = "end".asInstanceOf[end]

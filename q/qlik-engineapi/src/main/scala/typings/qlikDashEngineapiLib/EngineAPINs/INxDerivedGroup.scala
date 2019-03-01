@@ -29,3 +29,20 @@ trait INxDerivedGroup extends js.Object {
   var qName: java.lang.String
 }
 
+object INxDerivedGroup {
+  @scala.inline
+  def apply(
+    qFieldDefs: js.Array[java.lang.String],
+    qGrouping: NxGrpType,
+    qId: java.lang.String,
+    qName: java.lang.String
+  ): INxDerivedGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFieldDefs")(qFieldDefs)
+    __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
+    __obj.updateDynamic("qId")(qId)
+    __obj.updateDynamic("qName")(qName)
+    __obj.asInstanceOf[INxDerivedGroup]
+  }
+}
+

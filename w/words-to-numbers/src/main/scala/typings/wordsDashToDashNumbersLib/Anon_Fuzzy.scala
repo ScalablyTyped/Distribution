@@ -9,3 +9,12 @@ trait Anon_Fuzzy extends js.Object {
   var fuzzy: scala.Boolean
 }
 
+object Anon_Fuzzy {
+  @scala.inline
+  def apply(fuzzy: scala.Boolean): Anon_Fuzzy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fuzzy")(fuzzy)
+    __obj.asInstanceOf[Anon_Fuzzy]
+  }
+}
+

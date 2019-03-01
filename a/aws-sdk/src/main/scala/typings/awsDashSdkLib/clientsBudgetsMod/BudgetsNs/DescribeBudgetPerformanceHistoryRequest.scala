@@ -16,3 +16,22 @@ trait DescribeBudgetPerformanceHistoryRequest extends js.Object {
   var TimePeriod: js.UndefOr[TimePeriod] = js.undefined
 }
 
+object DescribeBudgetPerformanceHistoryRequest {
+  @scala.inline
+  def apply(
+    AccountId: AccountId,
+    BudgetName: BudgetName,
+    MaxResults: js.UndefOr[MaxResults] = js.undefined,
+    NextToken: GenericString = null,
+    TimePeriod: TimePeriod = null
+  ): DescribeBudgetPerformanceHistoryRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccountId")(AccountId)
+    __obj.updateDynamic("BudgetName")(BudgetName)
+    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (TimePeriod != null) __obj.updateDynamic("TimePeriod")(TimePeriod)
+    __obj.asInstanceOf[DescribeBudgetPerformanceHistoryRequest]
+  }
+}
+

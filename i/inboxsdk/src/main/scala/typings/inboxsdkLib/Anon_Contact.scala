@@ -9,3 +9,12 @@ trait Anon_Contact extends js.Object {
   var contact: inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact
 }
 
+object Anon_Contact {
+  @scala.inline
+  def apply(contact: inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact): Anon_Contact = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contact")(contact)
+    __obj.asInstanceOf[Anon_Contact]
+  }
+}
+

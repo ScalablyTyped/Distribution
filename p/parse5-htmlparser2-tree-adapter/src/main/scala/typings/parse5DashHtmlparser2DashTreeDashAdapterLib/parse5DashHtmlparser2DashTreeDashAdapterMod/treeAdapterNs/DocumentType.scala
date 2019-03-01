@@ -36,3 +36,34 @@ trait DocumentType extends Node {
   var `x-systemId`: java.lang.String
 }
 
+object DocumentType {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    name: parse5DashHtmlparser2DashTreeDashAdapterLib.parse5DashHtmlparser2DashTreeDashAdapterLibStrings.`!doctype`,
+    next: Node,
+    nextSibling: Node,
+    nodeType: scala.Double,
+    parent: ParentNode,
+    parentNode: ParentNode,
+    prev: Node,
+    previousSibling: Node,
+    `type`: parse5DashHtmlparser2DashTreeDashAdapterLib.parse5DashHtmlparser2DashTreeDashAdapterLibStrings.directive,
+    `x-name`: java.lang.String,
+    `x-publicId`: java.lang.String,
+    `x-systemId`: java.lang.String
+  ): DocumentType = {
+    val __obj = js.Dynamic.literal(`type` = `type`, `x-name` = `x-name`, `x-publicId` = `x-publicId`, `x-systemId` = `x-systemId`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("nextSibling")(nextSibling)
+    __obj.updateDynamic("nodeType")(nodeType)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("parentNode")(parentNode)
+    __obj.updateDynamic("prev")(prev)
+    __obj.updateDynamic("previousSibling")(previousSibling)
+    __obj.asInstanceOf[DocumentType]
+  }
+}
+

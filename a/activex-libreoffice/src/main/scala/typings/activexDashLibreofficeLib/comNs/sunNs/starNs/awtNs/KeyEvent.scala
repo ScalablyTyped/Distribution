@@ -26,3 +26,22 @@ trait KeyEvent extends InputEvent {
   var KeyFunc: scala.Double
 }
 
+object KeyEvent {
+  @scala.inline
+  def apply(
+    KeyChar: java.lang.String,
+    KeyCode: scala.Double,
+    KeyFunc: scala.Double,
+    Modifiers: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): KeyEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("KeyChar")(KeyChar)
+    __obj.updateDynamic("KeyCode")(KeyCode)
+    __obj.updateDynamic("KeyFunc")(KeyFunc)
+    __obj.updateDynamic("Modifiers")(Modifiers)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[KeyEvent]
+  }
+}
+

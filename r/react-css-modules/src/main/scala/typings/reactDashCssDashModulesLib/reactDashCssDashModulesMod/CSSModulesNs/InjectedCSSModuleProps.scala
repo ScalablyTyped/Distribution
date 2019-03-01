@@ -12,3 +12,12 @@ trait InjectedCSSModuleProps extends js.Object {
   var styles: js.UndefOr[reactDashCssDashModulesLib.StylesObject] = js.undefined
 }
 
+object InjectedCSSModuleProps {
+  @scala.inline
+  def apply(styles: reactDashCssDashModulesLib.StylesObject = null): InjectedCSSModuleProps = {
+    val __obj = js.Dynamic.literal()
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[InjectedCSSModuleProps]
+  }
+}
+

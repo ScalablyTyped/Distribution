@@ -34,3 +34,34 @@ trait XTextRange
   def setString(aString: java.lang.String): scala.Unit
 }
 
+object XTextRange {
+  @scala.inline
+  def apply(
+    End: XTextRange,
+    Start: XTextRange,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getEnd: js.Function0[XTextRange],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): XTextRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("End")(End)
+    __obj.updateDynamic("Start")(Start)
+    __obj.updateDynamic("String")(String)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getEnd")(getEnd)
+    __obj.updateDynamic("getStart")(getStart)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setString")(setString)
+    __obj.asInstanceOf[XTextRange]
+  }
+}
+

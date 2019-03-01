@@ -10,3 +10,13 @@ trait Anon_PDocumentPfCancel extends js.Object {
   var pfCancel: scala.Boolean
 }
 
+object Anon_PDocumentPfCancel {
+  @scala.inline
+  def apply(pDocument: activexDashInfopathLib.InfoPathNs._XDocument, pfCancel: scala.Boolean): Anon_PDocumentPfCancel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pDocument")(pDocument)
+    __obj.updateDynamic("pfCancel")(pfCancel)
+    __obj.asInstanceOf[Anon_PDocumentPfCancel]
+  }
+}
+

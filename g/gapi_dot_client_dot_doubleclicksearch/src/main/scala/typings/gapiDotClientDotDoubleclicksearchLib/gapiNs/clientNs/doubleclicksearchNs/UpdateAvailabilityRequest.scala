@@ -10,3 +10,12 @@ trait UpdateAvailabilityRequest extends js.Object {
   var availabilities: js.UndefOr[js.Array[Availability]] = js.undefined
 }
 
+object UpdateAvailabilityRequest {
+  @scala.inline
+  def apply(availabilities: js.Array[Availability] = null): UpdateAvailabilityRequest = {
+    val __obj = js.Dynamic.literal()
+    if (availabilities != null) __obj.updateDynamic("availabilities")(availabilities)
+    __obj.asInstanceOf[UpdateAvailabilityRequest]
+  }
+}
+

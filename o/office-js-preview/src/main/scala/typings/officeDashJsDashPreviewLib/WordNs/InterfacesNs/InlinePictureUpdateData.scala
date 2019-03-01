@@ -51,3 +51,24 @@ trait InlinePictureUpdateData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object InlinePictureUpdateData {
+  @scala.inline
+  def apply(
+    altTextDescription: java.lang.String = null,
+    altTextTitle: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    hyperlink: java.lang.String = null,
+    lockAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): InlinePictureUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (altTextDescription != null) __obj.updateDynamic("altTextDescription")(altTextDescription)
+    if (altTextTitle != null) __obj.updateDynamic("altTextTitle")(altTextTitle)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InlinePictureUpdateData]
+  }
+}
+

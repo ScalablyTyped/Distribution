@@ -32,3 +32,24 @@ trait RequestOptions extends js.Object {
   var path: java.lang.String
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    body: js.Any = null,
+    callback: js.Function0[_] = null,
+    headers: js.Any = null,
+    method: java.lang.String = null,
+    params: js.Any = null
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

@@ -44,3 +44,18 @@ trait RequestMetadata extends js.Object {
   var callerSuppliedUserAgent: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RequestMetadata {
+  @scala.inline
+  def apply(
+    callerIp: java.lang.String = null,
+    callerNetwork: java.lang.String = null,
+    callerSuppliedUserAgent: java.lang.String = null
+  ): RequestMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (callerIp != null) __obj.updateDynamic("callerIp")(callerIp)
+    if (callerNetwork != null) __obj.updateDynamic("callerNetwork")(callerNetwork)
+    if (callerSuppliedUserAgent != null) __obj.updateDynamic("callerSuppliedUserAgent")(callerSuppliedUserAgent)
+    __obj.asInstanceOf[RequestMetadata]
+  }
+}
+

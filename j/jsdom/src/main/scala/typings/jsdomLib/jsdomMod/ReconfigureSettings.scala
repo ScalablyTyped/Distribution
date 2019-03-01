@@ -10,3 +10,13 @@ trait ReconfigureSettings extends js.Object {
   var windowTop: js.UndefOr[DOMWindow] = js.undefined
 }
 
+object ReconfigureSettings {
+  @scala.inline
+  def apply(url: java.lang.String = null, windowTop: DOMWindow = null): ReconfigureSettings = {
+    val __obj = js.Dynamic.literal()
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (windowTop != null) __obj.updateDynamic("windowTop")(windowTop)
+    __obj.asInstanceOf[ReconfigureSettings]
+  }
+}
+

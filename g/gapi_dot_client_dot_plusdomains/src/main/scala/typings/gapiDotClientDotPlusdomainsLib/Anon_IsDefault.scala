@@ -15,3 +15,13 @@ trait Anon_IsDefault extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_IsDefault {
+  @scala.inline
+  def apply(isDefault: js.UndefOr[scala.Boolean] = js.undefined, url: java.lang.String = null): Anon_IsDefault = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_IsDefault]
+  }
+}
+

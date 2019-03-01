@@ -78,3 +78,46 @@ trait Options extends js.Object {
   var onStop: js.UndefOr[js.Function1[/* event */ js.Any, scala.Unit]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    clear: java.lang.String = null,
+    closeOnClear: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    container: java.lang.String | pickadateLib.JQuery = null,
+    containerHidden: java.lang.String = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    formatSubmit: java.lang.String = null,
+    hiddenName: js.UndefOr[scala.Boolean] = js.undefined,
+    hiddenPrefix: java.lang.String = null,
+    hiddenSuffix: java.lang.String = null,
+    onClose: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onOpen: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onRender: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onSet: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onStart: js.Function1[/* event */ js.Any, scala.Unit] = null,
+    onStop: js.Function1[/* event */ js.Any, scala.Unit] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (!js.isUndefined(closeOnClear)) __obj.updateDynamic("closeOnClear")(closeOnClear)
+    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (containerHidden != null) __obj.updateDynamic("containerHidden")(containerHidden)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formatSubmit != null) __obj.updateDynamic("formatSubmit")(formatSubmit)
+    if (!js.isUndefined(hiddenName)) __obj.updateDynamic("hiddenName")(hiddenName)
+    if (hiddenPrefix != null) __obj.updateDynamic("hiddenPrefix")(hiddenPrefix)
+    if (hiddenSuffix != null) __obj.updateDynamic("hiddenSuffix")(hiddenSuffix)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (onSet != null) __obj.updateDynamic("onSet")(onSet)
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onStop != null) __obj.updateDynamic("onStop")(onStop)
+    __obj.asInstanceOf[Options]
+  }
+}
+

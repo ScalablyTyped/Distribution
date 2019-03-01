@@ -20,3 +20,13 @@ trait LaunchOptionsType extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LaunchOptionsType {
+  @scala.inline
+  def apply(source: java.lang.String = null, url: java.lang.String = null): LaunchOptionsType = {
+    val __obj = js.Dynamic.literal()
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[LaunchOptionsType]
+  }
+}
+

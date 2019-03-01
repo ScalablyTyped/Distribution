@@ -41,3 +41,22 @@ trait LoadObjectOptions extends js.Object {
   ] = js.undefined
 }
 
+object LoadObjectOptions {
+  @scala.inline
+  def apply(
+    binaryAsBase64: js.UndefOr[scala.Boolean] = js.undefined,
+    deprecatedArgumentOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    enumsAsStrings: js.UndefOr[scala.Boolean] = js.undefined,
+    longsAsStrings: js.UndefOr[scala.Boolean] = js.undefined,
+    protobufjsVersion: grpcLib.grpcLibNumbers.`5` | grpcLib.grpcLibNumbers.`6` | grpcLib.grpcLibStrings.detect = null
+  ): LoadObjectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(binaryAsBase64)) __obj.updateDynamic("binaryAsBase64")(binaryAsBase64)
+    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder)
+    if (!js.isUndefined(enumsAsStrings)) __obj.updateDynamic("enumsAsStrings")(enumsAsStrings)
+    if (!js.isUndefined(longsAsStrings)) __obj.updateDynamic("longsAsStrings")(longsAsStrings)
+    if (protobufjsVersion != null) __obj.updateDynamic("protobufjsVersion")(protobufjsVersion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadObjectOptions]
+  }
+}
+

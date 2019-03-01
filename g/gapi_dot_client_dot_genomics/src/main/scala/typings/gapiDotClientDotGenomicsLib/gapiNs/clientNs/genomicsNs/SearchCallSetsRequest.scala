@@ -29,3 +29,20 @@ trait SearchCallSetsRequest extends js.Object {
   var variantSetIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object SearchCallSetsRequest {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    variantSetIds: js.Array[java.lang.String] = null
+  ): SearchCallSetsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (variantSetIds != null) __obj.updateDynamic("variantSetIds")(variantSetIds)
+    __obj.asInstanceOf[SearchCallSetsRequest]
+  }
+}
+

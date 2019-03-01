@@ -19,3 +19,34 @@ trait MjmlImageProps extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object MjmlImageProps {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    alt: java.lang.String = null,
+    border: csstypeLib.csstypeMod.BorderProperty[java.lang.String | scala.Double] = null,
+    borderRadius: java.lang.String | scala.Double = null,
+    containerBackgroundColor: csstypeLib.csstypeMod.BackgroundColorProperty = null,
+    fluidOnMobile: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    src: java.lang.String = null,
+    srcset: java.lang.String = null,
+    title: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): MjmlImageProps = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor)
+    if (fluidOnMobile != null) __obj.updateDynamic("fluidOnMobile")(fluidOnMobile)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src)
+    if (srcset != null) __obj.updateDynamic("srcset")(srcset)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MjmlImageProps]
+  }
+}
+

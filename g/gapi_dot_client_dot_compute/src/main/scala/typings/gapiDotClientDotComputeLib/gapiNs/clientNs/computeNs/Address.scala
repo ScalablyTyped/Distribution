@@ -46,3 +46,38 @@ trait Address extends js.Object {
   var users: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Address {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    addressType: java.lang.String = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    ipVersion: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    region: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    status: java.lang.String = null,
+    subnetwork: java.lang.String = null,
+    users: js.Array[java.lang.String] = null
+  ): Address = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (addressType != null) __obj.updateDynamic("addressType")(addressType)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (ipVersion != null) __obj.updateDynamic("ipVersion")(ipVersion)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork)
+    if (users != null) __obj.updateDynamic("users")(users)
+    __obj.asInstanceOf[Address]
+  }
+}
+

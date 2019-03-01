@@ -12,3 +12,20 @@ trait Anon_Args extends js.Object {
   var globalize: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Args {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    `extends`: commonDashErrorsLib.commonDashErrorsMod.Error = null,
+    generateMessage: commonDashErrorsLib.commonDashErrorsMod.GenerateMessageMethod = null,
+    globalize: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Args = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
+    if (generateMessage != null) __obj.updateDynamic("generateMessage")(generateMessage)
+    if (!js.isUndefined(globalize)) __obj.updateDynamic("globalize")(globalize)
+    __obj.asInstanceOf[Anon_Args]
+  }
+}
+

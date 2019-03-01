@@ -14,3 +14,24 @@ trait Anon_Aborted extends js.Object {
   var stale: scala.Boolean
 }
 
+object Anon_Aborted {
+  @scala.inline
+  def apply(
+    aborted: scala.Boolean,
+    done: scala.Boolean,
+    events: js.Array[reactDashRelayLib.classicMod.ReadyStateEvent],
+    ready: scala.Boolean,
+    stale: scala.Boolean,
+    error: stdLib.Error = null
+  ): Anon_Aborted = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aborted")(aborted)
+    __obj.updateDynamic("done")(done)
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("ready")(ready)
+    __obj.updateDynamic("stale")(stale)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[Anon_Aborted]
+  }
+}
+

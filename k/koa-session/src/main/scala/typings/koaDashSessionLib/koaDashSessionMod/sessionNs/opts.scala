@@ -73,3 +73,44 @@ import scala.scalajs.js.annotation._
   def genid(): java.lang.String
 }
 
+object opts {
+  @scala.inline
+  def apply(
+    decode: js.Function1[/* str */ java.lang.String, js.Object],
+    encode: js.Function1[/* obj */ js.Object, java.lang.String],
+    genid: js.Function0[java.lang.String],
+    key: java.lang.String,
+    ContextStore: koaDashSessionLib.Anon_Ctx = null,
+    beforeSave: js.Function2[
+      /* ctx */ koaDashSessionLib.koaDashSessionMod.koaMod.Context, 
+      /* session */ Session, 
+      scala.Unit
+    ] = null,
+    maxAge: scala.Double | koaDashSessionLib.koaDashSessionLibStrings.session = null,
+    prefix: java.lang.String = null,
+    renew: js.UndefOr[scala.Boolean] = js.undefined,
+    rolling: js.UndefOr[scala.Boolean] = js.undefined,
+    store: stores = null,
+    valid: js.Function2[
+      /* ctx */ koaDashSessionLib.koaDashSessionMod.koaMod.Context, 
+      /* session */ stdLib.Partial[Session], 
+      scala.Unit
+    ] = null
+  ): opts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decode")(decode)
+    __obj.updateDynamic("encode")(encode)
+    __obj.updateDynamic("genid")(genid)
+    __obj.updateDynamic("key")(key)
+    if (ContextStore != null) __obj.updateDynamic("ContextStore")(ContextStore)
+    if (beforeSave != null) __obj.updateDynamic("beforeSave")(beforeSave)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(renew)) __obj.updateDynamic("renew")(renew)
+    if (!js.isUndefined(rolling)) __obj.updateDynamic("rolling")(rolling)
+    if (store != null) __obj.updateDynamic("store")(store)
+    if (valid != null) __obj.updateDynamic("valid")(valid)
+    __obj.asInstanceOf[opts]
+  }
+}
+

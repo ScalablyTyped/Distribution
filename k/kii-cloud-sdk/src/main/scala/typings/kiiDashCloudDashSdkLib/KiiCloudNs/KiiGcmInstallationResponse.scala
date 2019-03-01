@@ -9,3 +9,12 @@ trait KiiGcmInstallationResponse extends js.Object {
   var installationID: java.lang.String
 }
 
+object KiiGcmInstallationResponse {
+  @scala.inline
+  def apply(installationID: java.lang.String): KiiGcmInstallationResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("installationID")(installationID)
+    __obj.asInstanceOf[KiiGcmInstallationResponse]
+  }
+}
+

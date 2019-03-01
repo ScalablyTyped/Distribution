@@ -11,3 +11,22 @@ trait XAbstractView
   def getDocument(): XDocumentView
 }
 
+object XAbstractView {
+  @scala.inline
+  def apply(
+    Document: XDocumentView,
+    acquire: js.Function0[scala.Unit],
+    getDocument: js.Function0[XDocumentView],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAbstractView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Document")(Document)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDocument")(getDocument)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAbstractView]
+  }
+}
+

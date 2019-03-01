@@ -25,3 +25,23 @@ trait IgPivotViewPivotGridOptionsDragAndDropSettings
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgPivotViewPivotGridOptionsDragAndDropSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotViewPivotGridOptionsDragAndDropSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    appendTo: js.Any = null,
+    containment: scala.Boolean | java.lang.String | js.Array[_] = null,
+    zIndex: scala.Int | scala.Double = null
+  ): IgPivotViewPivotGridOptionsDragAndDropSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgPivotViewPivotGridOptionsDragAndDropSettings]
+  }
+}
+

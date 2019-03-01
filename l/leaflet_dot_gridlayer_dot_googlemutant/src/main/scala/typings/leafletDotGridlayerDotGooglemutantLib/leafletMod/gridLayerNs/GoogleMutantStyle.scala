@@ -25,3 +25,18 @@ trait GoogleMutantStyle extends js.Object {
   var stylers: js.UndefOr[js.Array[GoogleMutantStyler]] = js.undefined
 }
 
+object GoogleMutantStyle {
+  @scala.inline
+  def apply(
+    elementType: java.lang.String = null,
+    featureType: java.lang.String = null,
+    stylers: js.Array[GoogleMutantStyler] = null
+  ): GoogleMutantStyle = {
+    val __obj = js.Dynamic.literal()
+    if (elementType != null) __obj.updateDynamic("elementType")(elementType)
+    if (featureType != null) __obj.updateDynamic("featureType")(featureType)
+    if (stylers != null) __obj.updateDynamic("stylers")(stylers)
+    __obj.asInstanceOf[GoogleMutantStyle]
+  }
+}
+

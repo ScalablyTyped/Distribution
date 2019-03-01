@@ -12,3 +12,20 @@ trait ASPxClientFloatingActionButtonHorizontalPositionStatic extends js.Object {
   var Right: java.lang.String
 }
 
+object ASPxClientFloatingActionButtonHorizontalPositionStatic {
+  @scala.inline
+  def apply(
+    Center: java.lang.String,
+    Left: java.lang.String,
+    LeftEdge: java.lang.String,
+    Right: java.lang.String
+  ): ASPxClientFloatingActionButtonHorizontalPositionStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Center")(Center)
+    __obj.updateDynamic("Left")(Left)
+    __obj.updateDynamic("LeftEdge")(LeftEdge)
+    __obj.updateDynamic("Right")(Right)
+    __obj.asInstanceOf[ASPxClientFloatingActionButtonHorizontalPositionStatic]
+  }
+}
+

@@ -15,3 +15,23 @@ trait XControlAccess
   def getControl(xModel: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel): activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl
 }
 
+object XControlAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getControl: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControl
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XControlAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getControl")(getControl)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XControlAccess]
+  }
+}
+

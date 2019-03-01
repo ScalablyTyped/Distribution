@@ -16,3 +16,22 @@ trait BaseOptions extends js.Object {
   var user: java.lang.String
 }
 
+object BaseOptions {
+  @scala.inline
+  def apply(
+    repo: java.lang.String,
+    user: java.lang.String,
+    attributes: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double])
+    ] = null,
+    baseUrl: java.lang.String = null
+  ): BaseOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("repo")(repo)
+    __obj.updateDynamic("user")(user)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    __obj.asInstanceOf[BaseOptions]
+  }
+}
+

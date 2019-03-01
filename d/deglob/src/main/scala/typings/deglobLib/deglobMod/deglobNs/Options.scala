@@ -14,3 +14,24 @@ trait Options extends js.Object {
   var usePackageJson: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    configKey: java.lang.String = null,
+    cwd: java.lang.String = null,
+    gitIgnoreFile: java.lang.String = null,
+    ignore: js.Array[java.lang.String] = null,
+    useGitIgnore: js.UndefOr[scala.Boolean] = js.undefined,
+    usePackageJson: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (configKey != null) __obj.updateDynamic("configKey")(configKey)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (gitIgnoreFile != null) __obj.updateDynamic("gitIgnoreFile")(gitIgnoreFile)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    if (!js.isUndefined(useGitIgnore)) __obj.updateDynamic("useGitIgnore")(useGitIgnore)
+    if (!js.isUndefined(usePackageJson)) __obj.updateDynamic("usePackageJson")(usePackageJson)
+    __obj.asInstanceOf[Options]
+  }
+}
+

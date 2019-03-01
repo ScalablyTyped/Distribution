@@ -449,3 +449,144 @@ trait Config extends js.Object {
   ] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    abrBandWidthFactor: scala.Double,
+    abrBandWidthUpFactor: scala.Double,
+    abrController: AbrController,
+    abrEwmaDefaultEstimate: scala.Double,
+    abrEwmaFastLive: scala.Double,
+    abrEwmaFastVod: scala.Double,
+    abrEwmaSlowLive: scala.Double,
+    abrEwmaSlowVod: scala.Double,
+    abrMaxWithRealBitrate: scala.Boolean,
+    appendErrorMaxRetry: scala.Double,
+    autoStartLoad: scala.Boolean,
+    capLevelToPlayerSize: scala.Boolean,
+    captionsTextTrack1Label: java.lang.String,
+    captionsTextTrack1LanguagedCode: java.lang.String,
+    captionsTextTrack2Label: java.lang.String,
+    captionsTextTrack2LanguageCode: java.lang.String,
+    debug: scala.Boolean | CustomLoggerObject,
+    defaultAudioCodec: java.lang.String,
+    enableCEA708Captions: scala.Boolean,
+    enableSoftwareAES: scala.Boolean,
+    enableWorker: scala.Boolean,
+    forceKeyFrameOnDiscontinuity: scala.Boolean,
+    fragLoadingMaxRetry: scala.Double,
+    fragLoadingMaxRetryDelay: scala.Double,
+    fragLoadingRetryDelay: scala.Double,
+    fragLoadingTimeOut: scala.Double,
+    highBufferWatchdogPeriod: scala.Double,
+    initialLiveManifestSize: scala.Double,
+    levelLoadingMaxRetry: scala.Double,
+    levelLoadingMaxRetryTimeout: scala.Double,
+    levelLoadingRetryDelay: scala.Double,
+    levelLoadingTimeOut: scala.Double,
+    liveBackBufferLength: scala.Double,
+    liveDurationInfinity: scala.Boolean,
+    liveMaxLatencyDuration: scala.Double,
+    liveMaxLatencyDurationCount: scala.Double,
+    liveSyncDuration: scala.Double,
+    liveSyncDurationCount: scala.Double,
+    loader: org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader],
+    lowBufferWatchdogPeriod: scala.Double,
+    manifestLoadingMaxRetry: scala.Double,
+    manifestLoadingMaxRetryTimeout: scala.Double,
+    manifestLoadingRetryDelay: scala.Double,
+    manifestLoadingTimeOut: scala.Double,
+    maxAudioFramesDrift: scala.Double,
+    maxBufferHole: scala.Double,
+    maxBufferLength: scala.Double,
+    maxBufferSize: scala.Double,
+    maxFragLookUpTolerance: scala.Double,
+    maxLoadingDelay: scala.Double,
+    maxMaxBufferLength: scala.Double,
+    maxSeekHole: scala.Double,
+    maxStarvationDelay: scala.Double,
+    minAutoBitrate: scala.Double,
+    nudgeMaxRetry: scala.Double,
+    nudgeOffset: scala.Double,
+    startFragPrefetch: scala.Boolean,
+    startLevel: scala.Double,
+    startPosition: scala.Double,
+    stretchShortVideoTrack: scala.Boolean,
+    timelineController: TimelineController,
+    enableWebVTT: js.UndefOr[scala.Boolean] = js.undefined,
+    fLoader: org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader] = null,
+    fetchSetup: js.Function2[/* context */ js.Any, /* initParams */ js.Any, stdLib.Request] = null,
+    pLoader: org.scalablytyped.runtime.Instantiable1[/* config */ LoaderConfig, Loader] = null,
+    xhrSetup: js.Function2[/* xhr */ stdLib.XMLHttpRequest, /* url */ java.lang.String, scala.Unit] = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abrBandWidthFactor")(abrBandWidthFactor)
+    __obj.updateDynamic("abrBandWidthUpFactor")(abrBandWidthUpFactor)
+    __obj.updateDynamic("abrController")(abrController)
+    __obj.updateDynamic("abrEwmaDefaultEstimate")(abrEwmaDefaultEstimate)
+    __obj.updateDynamic("abrEwmaFastLive")(abrEwmaFastLive)
+    __obj.updateDynamic("abrEwmaFastVod")(abrEwmaFastVod)
+    __obj.updateDynamic("abrEwmaSlowLive")(abrEwmaSlowLive)
+    __obj.updateDynamic("abrEwmaSlowVod")(abrEwmaSlowVod)
+    __obj.updateDynamic("abrMaxWithRealBitrate")(abrMaxWithRealBitrate)
+    __obj.updateDynamic("appendErrorMaxRetry")(appendErrorMaxRetry)
+    __obj.updateDynamic("autoStartLoad")(autoStartLoad)
+    __obj.updateDynamic("capLevelToPlayerSize")(capLevelToPlayerSize)
+    __obj.updateDynamic("captionsTextTrack1Label")(captionsTextTrack1Label)
+    __obj.updateDynamic("captionsTextTrack1LanguagedCode")(captionsTextTrack1LanguagedCode)
+    __obj.updateDynamic("captionsTextTrack2Label")(captionsTextTrack2Label)
+    __obj.updateDynamic("captionsTextTrack2LanguageCode")(captionsTextTrack2LanguageCode)
+    __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    __obj.updateDynamic("defaultAudioCodec")(defaultAudioCodec)
+    __obj.updateDynamic("enableCEA708Captions")(enableCEA708Captions)
+    __obj.updateDynamic("enableSoftwareAES")(enableSoftwareAES)
+    __obj.updateDynamic("enableWorker")(enableWorker)
+    __obj.updateDynamic("forceKeyFrameOnDiscontinuity")(forceKeyFrameOnDiscontinuity)
+    __obj.updateDynamic("fragLoadingMaxRetry")(fragLoadingMaxRetry)
+    __obj.updateDynamic("fragLoadingMaxRetryDelay")(fragLoadingMaxRetryDelay)
+    __obj.updateDynamic("fragLoadingRetryDelay")(fragLoadingRetryDelay)
+    __obj.updateDynamic("fragLoadingTimeOut")(fragLoadingTimeOut)
+    __obj.updateDynamic("highBufferWatchdogPeriod")(highBufferWatchdogPeriod)
+    __obj.updateDynamic("initialLiveManifestSize")(initialLiveManifestSize)
+    __obj.updateDynamic("levelLoadingMaxRetry")(levelLoadingMaxRetry)
+    __obj.updateDynamic("levelLoadingMaxRetryTimeout")(levelLoadingMaxRetryTimeout)
+    __obj.updateDynamic("levelLoadingRetryDelay")(levelLoadingRetryDelay)
+    __obj.updateDynamic("levelLoadingTimeOut")(levelLoadingTimeOut)
+    __obj.updateDynamic("liveBackBufferLength")(liveBackBufferLength)
+    __obj.updateDynamic("liveDurationInfinity")(liveDurationInfinity)
+    __obj.updateDynamic("liveMaxLatencyDuration")(liveMaxLatencyDuration)
+    __obj.updateDynamic("liveMaxLatencyDurationCount")(liveMaxLatencyDurationCount)
+    __obj.updateDynamic("liveSyncDuration")(liveSyncDuration)
+    __obj.updateDynamic("liveSyncDurationCount")(liveSyncDurationCount)
+    __obj.updateDynamic("loader")(loader)
+    __obj.updateDynamic("lowBufferWatchdogPeriod")(lowBufferWatchdogPeriod)
+    __obj.updateDynamic("manifestLoadingMaxRetry")(manifestLoadingMaxRetry)
+    __obj.updateDynamic("manifestLoadingMaxRetryTimeout")(manifestLoadingMaxRetryTimeout)
+    __obj.updateDynamic("manifestLoadingRetryDelay")(manifestLoadingRetryDelay)
+    __obj.updateDynamic("manifestLoadingTimeOut")(manifestLoadingTimeOut)
+    __obj.updateDynamic("maxAudioFramesDrift")(maxAudioFramesDrift)
+    __obj.updateDynamic("maxBufferHole")(maxBufferHole)
+    __obj.updateDynamic("maxBufferLength")(maxBufferLength)
+    __obj.updateDynamic("maxBufferSize")(maxBufferSize)
+    __obj.updateDynamic("maxFragLookUpTolerance")(maxFragLookUpTolerance)
+    __obj.updateDynamic("maxLoadingDelay")(maxLoadingDelay)
+    __obj.updateDynamic("maxMaxBufferLength")(maxMaxBufferLength)
+    __obj.updateDynamic("maxSeekHole")(maxSeekHole)
+    __obj.updateDynamic("maxStarvationDelay")(maxStarvationDelay)
+    __obj.updateDynamic("minAutoBitrate")(minAutoBitrate)
+    __obj.updateDynamic("nudgeMaxRetry")(nudgeMaxRetry)
+    __obj.updateDynamic("nudgeOffset")(nudgeOffset)
+    __obj.updateDynamic("startFragPrefetch")(startFragPrefetch)
+    __obj.updateDynamic("startLevel")(startLevel)
+    __obj.updateDynamic("startPosition")(startPosition)
+    __obj.updateDynamic("stretchShortVideoTrack")(stretchShortVideoTrack)
+    __obj.updateDynamic("timelineController")(timelineController)
+    if (!js.isUndefined(enableWebVTT)) __obj.updateDynamic("enableWebVTT")(enableWebVTT)
+    if (fLoader != null) __obj.updateDynamic("fLoader")(fLoader)
+    if (fetchSetup != null) __obj.updateDynamic("fetchSetup")(fetchSetup)
+    if (pLoader != null) __obj.updateDynamic("pLoader")(pLoader)
+    if (xhrSetup != null) __obj.updateDynamic("xhrSetup")(xhrSetup)
+    __obj.asInstanceOf[Config]
+  }
+}
+

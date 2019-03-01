@@ -26,3 +26,18 @@ trait GlobalPolicy extends js.Object {
   var BlacklistedHexSSIDs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object GlobalPolicy {
+  @scala.inline
+  def apply(
+    AllowOnlyPolicyNetworksToAutoconnect: js.UndefOr[scala.Boolean] = js.undefined,
+    AllowOnlyPolicyNetworksToConnect: js.UndefOr[scala.Boolean] = js.undefined,
+    BlacklistedHexSSIDs: js.Array[java.lang.String] = null
+  ): GlobalPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(AllowOnlyPolicyNetworksToAutoconnect)) __obj.updateDynamic("AllowOnlyPolicyNetworksToAutoconnect")(AllowOnlyPolicyNetworksToAutoconnect)
+    if (!js.isUndefined(AllowOnlyPolicyNetworksToConnect)) __obj.updateDynamic("AllowOnlyPolicyNetworksToConnect")(AllowOnlyPolicyNetworksToConnect)
+    if (BlacklistedHexSSIDs != null) __obj.updateDynamic("BlacklistedHexSSIDs")(BlacklistedHexSSIDs)
+    __obj.asInstanceOf[GlobalPolicy]
+  }
+}
+

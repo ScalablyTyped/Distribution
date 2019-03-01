@@ -25,3 +25,26 @@ trait SpawnProcessOptions extends js.Object {
   var uid: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SpawnProcessOptions {
+  @scala.inline
+  def apply(
+    cwd: java.lang.String = null,
+    detached: js.UndefOr[scala.Boolean] = js.undefined,
+    env: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    gid: scala.Int | scala.Double = null,
+    shell: scala.Boolean | java.lang.String = null,
+    stdio: java.lang.String | (js.Array[java.lang.String | scala.Double]) = null,
+    uid: scala.Int | scala.Double = null
+  ): SpawnProcessOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
+    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
+    if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
+    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpawnProcessOptions]
+  }
+}
+

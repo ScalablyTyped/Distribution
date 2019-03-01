@@ -27,3 +27,22 @@ trait XMaterialHolder
   def getMaterial(): js.Any
 }
 
+object XMaterialHolder {
+  @scala.inline
+  def apply(
+    Material: js.Any,
+    acquire: js.Function0[scala.Unit],
+    getMaterial: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMaterialHolder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Material")(Material)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMaterial")(getMaterial)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMaterialHolder]
+  }
+}
+

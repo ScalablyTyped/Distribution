@@ -10,3 +10,16 @@ trait Anon_PropNameValue
   var value: scala.Double
 }
 
+object Anon_PropNameValue {
+  @scala.inline
+  def apply(
+    value: scala.Double,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_PropNameValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_PropNameValue]
+  }
+}
+

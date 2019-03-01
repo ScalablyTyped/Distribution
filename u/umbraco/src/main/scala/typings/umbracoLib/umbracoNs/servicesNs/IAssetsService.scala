@@ -72,3 +72,34 @@ trait IAssetsService extends js.Object {
   ): angularLib.angularMod.angularNs.IPromise[_]
 }
 
+object IAssetsService {
+  @scala.inline
+  def apply(
+    load: js.Function2[
+      js.Array[java.lang.String], 
+      angularLib.angularMod.angularNs.IScope, 
+      angularLib.angularMod.angularNs.IPromise[_]
+    ],
+    loadCss: js.Function4[
+      java.lang.String, 
+      angularLib.angularMod.angularNs.IScope, 
+      js.Object, 
+      scala.Double, 
+      angularLib.angularMod.angularNs.IPromise[_]
+    ],
+    loadJs: js.Function4[
+      java.lang.String, 
+      angularLib.angularMod.angularNs.IScope, 
+      js.Object, 
+      scala.Double, 
+      angularLib.angularMod.angularNs.IPromise[_]
+    ]
+  ): IAssetsService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("load")(load)
+    __obj.updateDynamic("loadCss")(loadCss)
+    __obj.updateDynamic("loadJs")(loadJs)
+    __obj.asInstanceOf[IAssetsService]
+  }
+}
+

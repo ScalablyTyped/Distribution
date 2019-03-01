@@ -10,3 +10,22 @@ trait DiagramRemoveEvent extends DiagramEvent {
   var shape: js.UndefOr[kendoDashUiLib.kendoNs.datavizNs.diagramNs.Shape] = js.undefined
 }
 
+object DiagramRemoveEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Diagram,
+    connection: kendoDashUiLib.kendoNs.datavizNs.diagramNs.Connection = null,
+    shape: kendoDashUiLib.kendoNs.datavizNs.diagramNs.Shape = null
+  ): DiagramRemoveEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    __obj.asInstanceOf[DiagramRemoveEvent]
+  }
+}
+

@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object emojiDashMartLibNumbers {
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin
   
   @js.native
-  sealed trait `16` extends js.Object
+  sealed trait `16`
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSheetSize
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin
   
   @js.native
-  sealed trait `20` extends js.Object
+  sealed trait `20`
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSheetSize
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin
   
   @js.native
-  sealed trait `32` extends js.Object
+  sealed trait `32`
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSheetSize
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiSkin
   
   @js.native
-  sealed trait `64` extends js.Object
+  sealed trait `64`
+    extends emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.EmojiSheetSize
   
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]

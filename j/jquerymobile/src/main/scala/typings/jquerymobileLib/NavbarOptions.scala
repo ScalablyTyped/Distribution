@@ -9,3 +9,12 @@ trait NavbarOptions extends js.Object {
   var iconpos: java.lang.String
 }
 
+object NavbarOptions {
+  @scala.inline
+  def apply(iconpos: java.lang.String): NavbarOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iconpos")(iconpos)
+    __obj.asInstanceOf[NavbarOptions]
+  }
+}
+

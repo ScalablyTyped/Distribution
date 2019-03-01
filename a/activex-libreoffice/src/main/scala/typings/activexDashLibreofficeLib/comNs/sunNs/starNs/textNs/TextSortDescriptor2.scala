@@ -17,3 +17,22 @@ trait TextSortDescriptor2
   var IsSortInTable: scala.Boolean
 }
 
+object TextSortDescriptor2 {
+  @scala.inline
+  def apply(
+    Delimiter: java.lang.String,
+    IsSortColumns: scala.Boolean,
+    IsSortInTable: scala.Boolean,
+    MaxSortFieldsCount: scala.Double,
+    SortFields: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableSortField]
+  ): TextSortDescriptor2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Delimiter")(Delimiter)
+    __obj.updateDynamic("IsSortColumns")(IsSortColumns)
+    __obj.updateDynamic("IsSortInTable")(IsSortInTable)
+    __obj.updateDynamic("MaxSortFieldsCount")(MaxSortFieldsCount)
+    __obj.updateDynamic("SortFields")(SortFields)
+    __obj.asInstanceOf[TextSortDescriptor2]
+  }
+}
+

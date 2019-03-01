@@ -23,3 +23,42 @@ trait Anon_BooleanDateTime extends js.Object {
   var treePath: scala.Double
 }
 
+object Anon_BooleanDateTime {
+  @scala.inline
+  def apply(
+    boolean: scala.Double,
+    dateTime: scala.Double,
+    double: scala.Double,
+    guid: scala.Double,
+    history: scala.Double,
+    html: scala.Double,
+    identity: scala.Double,
+    integer: scala.Double,
+    picklistDouble: scala.Double,
+    picklistInteger: scala.Double,
+    picklistString: scala.Double,
+    plainText: scala.Double,
+    string: scala.Double,
+    teamProject: scala.Double,
+    treePath: scala.Double
+  ): Anon_BooleanDateTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boolean")(boolean)
+    __obj.updateDynamic("dateTime")(dateTime)
+    __obj.updateDynamic("double")(double)
+    __obj.updateDynamic("guid")(guid)
+    __obj.updateDynamic("history")(history)
+    __obj.updateDynamic("html")(html)
+    __obj.updateDynamic("identity")(identity)
+    __obj.updateDynamic("integer")(integer)
+    __obj.updateDynamic("picklistDouble")(picklistDouble)
+    __obj.updateDynamic("picklistInteger")(picklistInteger)
+    __obj.updateDynamic("picklistString")(picklistString)
+    __obj.updateDynamic("plainText")(plainText)
+    __obj.updateDynamic("string")(string)
+    __obj.updateDynamic("teamProject")(teamProject)
+    __obj.updateDynamic("treePath")(treePath)
+    __obj.asInstanceOf[Anon_BooleanDateTime]
+  }
+}
+

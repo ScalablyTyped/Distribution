@@ -14,3 +14,13 @@ trait SeriesEmptyPointSettingsStyle extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SeriesEmptyPointSettingsStyle {
+  @scala.inline
+  def apply(border: SeriesEmptyPointSettingsStyleBorder = null, color: java.lang.String = null): SeriesEmptyPointSettingsStyle = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (color != null) __obj.updateDynamic("color")(color)
+    __obj.asInstanceOf[SeriesEmptyPointSettingsStyle]
+  }
+}
+

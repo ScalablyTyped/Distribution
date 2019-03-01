@@ -38,3 +38,46 @@ trait Config extends js.Object {
   var setCorrelationId: js.Any
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    _profileQueryEndpoint: js.Any,
+    correlationHeaderExcludedDomains: js.Array[java.lang.String],
+    correlationId: java.lang.String,
+    correlationIdRetryIntervalMs: scala.Double,
+    disableAppInsights: scala.Boolean,
+    endpointBase: js.Any,
+    endpointUrl: java.lang.String,
+    httpAgent: nodeLib.httpMod.Agent,
+    httpsAgent: nodeLib.httpsMod.Agent,
+    instrumentationKey: java.lang.String,
+    maxBatchIntervalMs: scala.Double,
+    maxBatchSize: scala.Double,
+    profileQueryEndpoint: java.lang.String,
+    proxyHttpUrl: java.lang.String,
+    proxyHttpsUrl: java.lang.String,
+    samplingPercentage: scala.Double,
+    setCorrelationId: js.Any
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_profileQueryEndpoint")(_profileQueryEndpoint)
+    __obj.updateDynamic("correlationHeaderExcludedDomains")(correlationHeaderExcludedDomains)
+    __obj.updateDynamic("correlationId")(correlationId)
+    __obj.updateDynamic("correlationIdRetryIntervalMs")(correlationIdRetryIntervalMs)
+    __obj.updateDynamic("disableAppInsights")(disableAppInsights)
+    __obj.updateDynamic("endpointBase")(endpointBase)
+    __obj.updateDynamic("endpointUrl")(endpointUrl)
+    __obj.updateDynamic("httpAgent")(httpAgent)
+    __obj.updateDynamic("httpsAgent")(httpsAgent)
+    __obj.updateDynamic("instrumentationKey")(instrumentationKey)
+    __obj.updateDynamic("maxBatchIntervalMs")(maxBatchIntervalMs)
+    __obj.updateDynamic("maxBatchSize")(maxBatchSize)
+    __obj.updateDynamic("profileQueryEndpoint")(profileQueryEndpoint)
+    __obj.updateDynamic("proxyHttpUrl")(proxyHttpUrl)
+    __obj.updateDynamic("proxyHttpsUrl")(proxyHttpsUrl)
+    __obj.updateDynamic("samplingPercentage")(samplingPercentage)
+    __obj.updateDynamic("setCorrelationId")(setCorrelationId)
+    __obj.asInstanceOf[Config]
+  }
+}
+

@@ -49,3 +49,37 @@ trait ObjectInspectorModel extends XObjectInspectorModel {
   ): scala.Unit
 }
 
+object ObjectInspectorModel {
+  @scala.inline
+  def apply(
+    HandlerFactories: activexDashInteropLib.SafeArray[_],
+    HasHelpSection: scala.Boolean,
+    IsReadOnly: scala.Boolean,
+    MaxHelpTextLines: scala.Double,
+    MinHelpTextLines: scala.Double,
+    createDefault: js.Function0[scala.Unit],
+    createWithHandlerFactories: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    createWithHandlerFactoriesAndHelpSection: js.Function3[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    describeCategories: js.Function0[activexDashInteropLib.SafeArray[PropertyCategoryDescriptor]],
+    getPropertyOrderIndex: js.Function1[java.lang.String, scala.Double]
+  ): ObjectInspectorModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("HandlerFactories")(HandlerFactories)
+    __obj.updateDynamic("HasHelpSection")(HasHelpSection)
+    __obj.updateDynamic("IsReadOnly")(IsReadOnly)
+    __obj.updateDynamic("MaxHelpTextLines")(MaxHelpTextLines)
+    __obj.updateDynamic("MinHelpTextLines")(MinHelpTextLines)
+    __obj.updateDynamic("createDefault")(createDefault)
+    __obj.updateDynamic("createWithHandlerFactories")(createWithHandlerFactories)
+    __obj.updateDynamic("createWithHandlerFactoriesAndHelpSection")(createWithHandlerFactoriesAndHelpSection)
+    __obj.updateDynamic("describeCategories")(describeCategories)
+    __obj.updateDynamic("getPropertyOrderIndex")(getPropertyOrderIndex)
+    __obj.asInstanceOf[ObjectInspectorModel]
+  }
+}
+

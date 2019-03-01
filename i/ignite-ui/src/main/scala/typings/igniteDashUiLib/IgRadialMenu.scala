@@ -144,3 +144,81 @@ trait IgRadialMenu
   var wedgePaddingInDegrees: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgRadialMenu {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igRadialMenu
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    centerButtonClosedFill: java.lang.String = null,
+    centerButtonClosedStroke: java.lang.String = null,
+    centerButtonContentHeight: scala.Int | scala.Double = null,
+    centerButtonContentWidth: scala.Int | scala.Double = null,
+    centerButtonFill: java.lang.String = null,
+    centerButtonHotTrackFill: java.lang.String = null,
+    centerButtonHotTrackStroke: java.lang.String = null,
+    centerButtonStroke: java.lang.String = null,
+    centerButtonStrokeThickness: scala.Int | scala.Double = null,
+    closed: ClosedEvent = null,
+    currentOpenMenuItemName: java.lang.String = null,
+    font: java.lang.String = null,
+    isOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    items: js.Array[IgRadialMenuItem] = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    menuBackground: java.lang.String = null,
+    menuItemOpenCloseAnimationDuration: scala.Int | scala.Double = null,
+    menuItemOpenCloseAnimationEasingFunction: js.Any = null,
+    menuOpenCloseAnimationDuration: scala.Int | scala.Double = null,
+    menuOpenCloseAnimationEasingFunction: js.Any = null,
+    minWedgeCount: scala.Int | scala.Double = null,
+    opened: OpenedEvent = null,
+    outerRingFill: java.lang.String = null,
+    outerRingStroke: java.lang.String = null,
+    outerRingStrokeThickness: scala.Int | scala.Double = null,
+    outerRingThickness: scala.Int | scala.Double = null,
+    pixelScalingRatio: scala.Int | scala.Double = null,
+    regional: java.lang.String | js.Object = null,
+    rotationAsPercentageOfWedge: scala.Int | scala.Double = null,
+    rotationInDegrees: scala.Int | scala.Double = null,
+    wedgePaddingInDegrees: scala.Int | scala.Double = null
+  ): IgRadialMenu = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (centerButtonClosedFill != null) __obj.updateDynamic("centerButtonClosedFill")(centerButtonClosedFill)
+    if (centerButtonClosedStroke != null) __obj.updateDynamic("centerButtonClosedStroke")(centerButtonClosedStroke)
+    if (centerButtonContentHeight != null) __obj.updateDynamic("centerButtonContentHeight")(centerButtonContentHeight.asInstanceOf[js.Any])
+    if (centerButtonContentWidth != null) __obj.updateDynamic("centerButtonContentWidth")(centerButtonContentWidth.asInstanceOf[js.Any])
+    if (centerButtonFill != null) __obj.updateDynamic("centerButtonFill")(centerButtonFill)
+    if (centerButtonHotTrackFill != null) __obj.updateDynamic("centerButtonHotTrackFill")(centerButtonHotTrackFill)
+    if (centerButtonHotTrackStroke != null) __obj.updateDynamic("centerButtonHotTrackStroke")(centerButtonHotTrackStroke)
+    if (centerButtonStroke != null) __obj.updateDynamic("centerButtonStroke")(centerButtonStroke)
+    if (centerButtonStrokeThickness != null) __obj.updateDynamic("centerButtonStrokeThickness")(centerButtonStrokeThickness.asInstanceOf[js.Any])
+    if (closed != null) __obj.updateDynamic("closed")(closed)
+    if (currentOpenMenuItemName != null) __obj.updateDynamic("currentOpenMenuItemName")(currentOpenMenuItemName)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (menuBackground != null) __obj.updateDynamic("menuBackground")(menuBackground)
+    if (menuItemOpenCloseAnimationDuration != null) __obj.updateDynamic("menuItemOpenCloseAnimationDuration")(menuItemOpenCloseAnimationDuration.asInstanceOf[js.Any])
+    if (menuItemOpenCloseAnimationEasingFunction != null) __obj.updateDynamic("menuItemOpenCloseAnimationEasingFunction")(menuItemOpenCloseAnimationEasingFunction)
+    if (menuOpenCloseAnimationDuration != null) __obj.updateDynamic("menuOpenCloseAnimationDuration")(menuOpenCloseAnimationDuration.asInstanceOf[js.Any])
+    if (menuOpenCloseAnimationEasingFunction != null) __obj.updateDynamic("menuOpenCloseAnimationEasingFunction")(menuOpenCloseAnimationEasingFunction)
+    if (minWedgeCount != null) __obj.updateDynamic("minWedgeCount")(minWedgeCount.asInstanceOf[js.Any])
+    if (opened != null) __obj.updateDynamic("opened")(opened)
+    if (outerRingFill != null) __obj.updateDynamic("outerRingFill")(outerRingFill)
+    if (outerRingStroke != null) __obj.updateDynamic("outerRingStroke")(outerRingStroke)
+    if (outerRingStrokeThickness != null) __obj.updateDynamic("outerRingStrokeThickness")(outerRingStrokeThickness.asInstanceOf[js.Any])
+    if (outerRingThickness != null) __obj.updateDynamic("outerRingThickness")(outerRingThickness.asInstanceOf[js.Any])
+    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rotationAsPercentageOfWedge != null) __obj.updateDynamic("rotationAsPercentageOfWedge")(rotationAsPercentageOfWedge.asInstanceOf[js.Any])
+    if (rotationInDegrees != null) __obj.updateDynamic("rotationInDegrees")(rotationInDegrees.asInstanceOf[js.Any])
+    if (wedgePaddingInDegrees != null) __obj.updateDynamic("wedgePaddingInDegrees")(wedgePaddingInDegrees.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgRadialMenu]
+  }
+}
+

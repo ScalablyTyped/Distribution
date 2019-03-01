@@ -20,3 +20,13 @@ trait ChangeFloatingObjectFillColorCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeFloatingObjectFillColorCommand {
+  @scala.inline
+  def apply(execute: js.Function1[java.lang.String, scala.Boolean], getState: js.Function0[js.Any]): ChangeFloatingObjectFillColorCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeFloatingObjectFillColorCommand]
+  }
+}
+

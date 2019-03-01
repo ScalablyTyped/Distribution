@@ -34,3 +34,20 @@ trait SearchSynonymOptions extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchSynonymOptions {
+  @scala.inline
+  def apply(
+    hitsPerPage: scala.Int | scala.Double = null,
+    page: scala.Int | scala.Double = null,
+    query: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): SearchSynonymOptions = {
+    val __obj = js.Dynamic.literal()
+    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SearchSynonymOptions]
+  }
+}
+

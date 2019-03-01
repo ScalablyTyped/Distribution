@@ -21,3 +21,13 @@ trait WriteResult extends js.Object {
   var updateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WriteResult {
+  @scala.inline
+  def apply(transformResults: js.Array[Value] = null, updateTime: java.lang.String = null): WriteResult = {
+    val __obj = js.Dynamic.literal()
+    if (transformResults != null) __obj.updateDynamic("transformResults")(transformResults)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    __obj.asInstanceOf[WriteResult]
+  }
+}
+

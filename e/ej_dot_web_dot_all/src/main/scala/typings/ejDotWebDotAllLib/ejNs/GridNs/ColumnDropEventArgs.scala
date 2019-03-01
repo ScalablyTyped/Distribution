@@ -26,3 +26,24 @@ trait ColumnDropEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColumnDropEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    column: js.Any = null,
+    draggableType: java.lang.String = null,
+    model: js.Any = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): ColumnDropEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (draggableType != null) __obj.updateDynamic("draggableType")(draggableType)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ColumnDropEventArgs]
+  }
+}
+

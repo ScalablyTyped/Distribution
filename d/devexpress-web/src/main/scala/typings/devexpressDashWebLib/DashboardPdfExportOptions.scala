@@ -147,3 +147,68 @@ trait DashboardPdfExportOptions extends js.Object {
   var TreemapSizeMode: java.lang.String
 }
 
+object DashboardPdfExportOptions {
+  @scala.inline
+  def apply(
+    AutoFitPageCount: scala.Double,
+    CardAutoArrangeContent: scala.Boolean,
+    ChartAutomaticPageLayout: scala.Boolean,
+    ChartSizeMode: java.lang.String,
+    DashboardAutomaticPageLayout: scala.Boolean,
+    DashboardStatePosition: java.lang.String,
+    DocumentScaleMode: java.lang.String,
+    ExportFilters: scala.Boolean,
+    ExportParameters: scala.Boolean,
+    FontInfo: ExportFontInfo,
+    GaugeAutoArrangeContent: scala.Boolean,
+    GridFitToPageWidth: scala.Boolean,
+    GridPrintHeadersOnEveryPage: scala.Boolean,
+    IncludeHiddenParameters: scala.Boolean,
+    MapAutomaticPageLayout: scala.Boolean,
+    MapSizeMode: java.lang.String,
+    PageLayout: java.lang.String,
+    PaperKind: java.lang.String,
+    PieAutoArrangeContent: scala.Boolean,
+    PivotPrintHeadersOnEveryPage: scala.Boolean,
+    RangeFilterAutomaticPageLayout: scala.Boolean,
+    RangeFilterSizeMode: java.lang.String,
+    ScaleFactor: scala.Double,
+    ScaleMode: java.lang.String,
+    ShowTitle: scala.Boolean,
+    Title: java.lang.String,
+    TreemapAutomaticPageLayout: scala.Boolean,
+    TreemapSizeMode: java.lang.String
+  ): DashboardPdfExportOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoFitPageCount")(AutoFitPageCount)
+    __obj.updateDynamic("CardAutoArrangeContent")(CardAutoArrangeContent)
+    __obj.updateDynamic("ChartAutomaticPageLayout")(ChartAutomaticPageLayout)
+    __obj.updateDynamic("ChartSizeMode")(ChartSizeMode)
+    __obj.updateDynamic("DashboardAutomaticPageLayout")(DashboardAutomaticPageLayout)
+    __obj.updateDynamic("DashboardStatePosition")(DashboardStatePosition)
+    __obj.updateDynamic("DocumentScaleMode")(DocumentScaleMode)
+    __obj.updateDynamic("ExportFilters")(ExportFilters)
+    __obj.updateDynamic("ExportParameters")(ExportParameters)
+    __obj.updateDynamic("FontInfo")(FontInfo)
+    __obj.updateDynamic("GaugeAutoArrangeContent")(GaugeAutoArrangeContent)
+    __obj.updateDynamic("GridFitToPageWidth")(GridFitToPageWidth)
+    __obj.updateDynamic("GridPrintHeadersOnEveryPage")(GridPrintHeadersOnEveryPage)
+    __obj.updateDynamic("IncludeHiddenParameters")(IncludeHiddenParameters)
+    __obj.updateDynamic("MapAutomaticPageLayout")(MapAutomaticPageLayout)
+    __obj.updateDynamic("MapSizeMode")(MapSizeMode)
+    __obj.updateDynamic("PageLayout")(PageLayout)
+    __obj.updateDynamic("PaperKind")(PaperKind)
+    __obj.updateDynamic("PieAutoArrangeContent")(PieAutoArrangeContent)
+    __obj.updateDynamic("PivotPrintHeadersOnEveryPage")(PivotPrintHeadersOnEveryPage)
+    __obj.updateDynamic("RangeFilterAutomaticPageLayout")(RangeFilterAutomaticPageLayout)
+    __obj.updateDynamic("RangeFilterSizeMode")(RangeFilterSizeMode)
+    __obj.updateDynamic("ScaleFactor")(ScaleFactor)
+    __obj.updateDynamic("ScaleMode")(ScaleMode)
+    __obj.updateDynamic("ShowTitle")(ShowTitle)
+    __obj.updateDynamic("Title")(Title)
+    __obj.updateDynamic("TreemapAutomaticPageLayout")(TreemapAutomaticPageLayout)
+    __obj.updateDynamic("TreemapSizeMode")(TreemapSizeMode)
+    __obj.asInstanceOf[DashboardPdfExportOptions]
+  }
+}
+

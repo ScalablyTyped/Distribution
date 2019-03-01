@@ -11,3 +11,14 @@ trait ProviderDef extends js.Object {
   var value: js.Any
 }
 
+object ProviderDef {
+  @scala.inline
+  def apply(deps: js.Array[DepDef], token: js.Any, value: js.Any): ProviderDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deps")(deps)
+    __obj.updateDynamic("token")(token)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ProviderDef]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ModuleDeclaration
   extends DeclarationStatement
-     with JSDocContainer {
+     with JSDocContainer
+     with _HasJSDoc {
   var body: js.UndefOr[ModuleBody | JSDocNamespaceDeclaration] = js.native
   @JSName("name")
   var name_ModuleDeclaration: ModuleName = js.native

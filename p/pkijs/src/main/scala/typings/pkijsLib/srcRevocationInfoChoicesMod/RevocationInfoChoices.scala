@@ -13,3 +13,22 @@ trait RevocationInfoChoices extends js.Object {
   def toSchema(): js.Any
 }
 
+object RevocationInfoChoices {
+  @scala.inline
+  def apply(
+    crls: js.Array[pkijsLib.srcCertificateRevocationListMod.default],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    otherRevocationInfos: js.Array[pkijsLib.srcOtherRevocationInfoFormatMod.default],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): RevocationInfoChoices = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("crls")(crls)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("otherRevocationInfos")(otherRevocationInfos)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.asInstanceOf[RevocationInfoChoices]
+  }
+}
+

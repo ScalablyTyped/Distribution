@@ -10,3 +10,13 @@ trait Anon_Disabled[TDefinition] extends js.Object {
   var info: TDefinition
 }
 
+object Anon_Disabled {
+  @scala.inline
+  def apply[TDefinition](disabled: scala.Boolean, info: TDefinition): Anon_Disabled[TDefinition] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Disabled[TDefinition]]
+  }
+}
+

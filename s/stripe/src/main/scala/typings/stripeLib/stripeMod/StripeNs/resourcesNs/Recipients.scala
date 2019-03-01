@@ -33,3 +33,22 @@ trait Recipients
   def update(id: java.lang.String): scala.Unit
 }
 
+object Recipients {
+  @scala.inline
+  def apply(
+    create: js.Function0[scala.Unit],
+    del: js.Function1[java.lang.String, scala.Unit],
+    list: js.Function0[scala.Unit],
+    retrieve: js.Function1[java.lang.String, scala.Unit],
+    update: js.Function1[java.lang.String, scala.Unit]
+  ): Recipients = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("del")(del)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("retrieve")(retrieve)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Recipients]
+  }
+}
+

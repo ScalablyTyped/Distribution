@@ -73,3 +73,20 @@ trait PullTasksRequest extends js.Object {
   var responseView: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PullTasksRequest {
+  @scala.inline
+  def apply(
+    filter: java.lang.String = null,
+    leaseDuration: java.lang.String = null,
+    maxTasks: scala.Int | scala.Double = null,
+    responseView: java.lang.String = null
+  ): PullTasksRequest = {
+    val __obj = js.Dynamic.literal()
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (leaseDuration != null) __obj.updateDynamic("leaseDuration")(leaseDuration)
+    if (maxTasks != null) __obj.updateDynamic("maxTasks")(maxTasks.asInstanceOf[js.Any])
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
+    __obj.asInstanceOf[PullTasksRequest]
+  }
+}
+

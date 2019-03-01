@@ -107,3 +107,46 @@ trait PkgOptions
   val welcome: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object PkgOptions {
+  @scala.inline
+  def apply(
+    allowAnywhere: js.UndefOr[scala.Boolean] = js.undefined,
+    allowCurrentUserHome: js.UndefOr[scala.Boolean] = js.undefined,
+    allowRootDirectory: js.UndefOr[scala.Boolean] = js.undefined,
+    artifactName: java.lang.String = null,
+    background: PkgBackgroundOptions = null,
+    conclusion: java.lang.String = null,
+    hasStrictIdentifier: js.UndefOr[scala.Boolean] = js.undefined,
+    identity: java.lang.String = null,
+    installLocation: java.lang.String = null,
+    isRelocatable: js.UndefOr[scala.Boolean] = js.undefined,
+    isVersionChecked: js.UndefOr[scala.Boolean] = js.undefined,
+    license: java.lang.String = null,
+    overwriteAction: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.upgrade | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.update = null,
+    productbuild: js.Array[java.lang.String] = null,
+    publish: builderDashUtilDashRuntimeLib.outPublishOptionsMod.Publish = null,
+    scripts: java.lang.String = null,
+    welcome: java.lang.String = null
+  ): PkgOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowAnywhere)) __obj.updateDynamic("allowAnywhere")(allowAnywhere)
+    if (!js.isUndefined(allowCurrentUserHome)) __obj.updateDynamic("allowCurrentUserHome")(allowCurrentUserHome)
+    if (!js.isUndefined(allowRootDirectory)) __obj.updateDynamic("allowRootDirectory")(allowRootDirectory)
+    if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (conclusion != null) __obj.updateDynamic("conclusion")(conclusion)
+    if (!js.isUndefined(hasStrictIdentifier)) __obj.updateDynamic("hasStrictIdentifier")(hasStrictIdentifier)
+    if (identity != null) __obj.updateDynamic("identity")(identity)
+    if (installLocation != null) __obj.updateDynamic("installLocation")(installLocation)
+    if (!js.isUndefined(isRelocatable)) __obj.updateDynamic("isRelocatable")(isRelocatable)
+    if (!js.isUndefined(isVersionChecked)) __obj.updateDynamic("isVersionChecked")(isVersionChecked)
+    if (license != null) __obj.updateDynamic("license")(license)
+    if (overwriteAction != null) __obj.updateDynamic("overwriteAction")(overwriteAction.asInstanceOf[js.Any])
+    if (productbuild != null) __obj.updateDynamic("productbuild")(productbuild)
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (scripts != null) __obj.updateDynamic("scripts")(scripts)
+    if (welcome != null) __obj.updateDynamic("welcome")(welcome)
+    __obj.asInstanceOf[PkgOptions]
+  }
+}
+

@@ -35,3 +35,36 @@ trait Project extends js.Object {
   var xpnProjectStatus: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Project {
+  @scala.inline
+  def apply(
+    commonInstanceMetadata: Metadata = null,
+    creationTimestamp: java.lang.String = null,
+    defaultServiceAccount: java.lang.String = null,
+    description: java.lang.String = null,
+    enabledFeatures: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    quotas: js.Array[Quota] = null,
+    selfLink: java.lang.String = null,
+    usageExportLocation: UsageExportLocation = null,
+    xpnProjectStatus: java.lang.String = null
+  ): Project = {
+    val __obj = js.Dynamic.literal()
+    if (commonInstanceMetadata != null) __obj.updateDynamic("commonInstanceMetadata")(commonInstanceMetadata)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (defaultServiceAccount != null) __obj.updateDynamic("defaultServiceAccount")(defaultServiceAccount)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (enabledFeatures != null) __obj.updateDynamic("enabledFeatures")(enabledFeatures)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (quotas != null) __obj.updateDynamic("quotas")(quotas)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (usageExportLocation != null) __obj.updateDynamic("usageExportLocation")(usageExportLocation)
+    if (xpnProjectStatus != null) __obj.updateDynamic("xpnProjectStatus")(xpnProjectStatus)
+    __obj.asInstanceOf[Project]
+  }
+}
+

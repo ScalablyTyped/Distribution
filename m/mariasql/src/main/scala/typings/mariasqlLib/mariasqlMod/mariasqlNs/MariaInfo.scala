@@ -11,3 +11,14 @@ trait MariaInfo extends js.Object {
   var numRows: scala.Double
 }
 
+object MariaInfo {
+  @scala.inline
+  def apply(affectedRows: scala.Double, insertId: scala.Double, numRows: scala.Double): MariaInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("affectedRows")(affectedRows)
+    __obj.updateDynamic("insertId")(insertId)
+    __obj.updateDynamic("numRows")(numRows)
+    __obj.asInstanceOf[MariaInfo]
+  }
+}
+

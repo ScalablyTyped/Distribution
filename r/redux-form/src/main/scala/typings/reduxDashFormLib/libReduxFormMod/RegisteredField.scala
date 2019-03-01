@@ -11,3 +11,17 @@ trait RegisteredField extends js.Object {
   var `type`: reduxDashFormLib.reduxDashFormLibStrings.Field | reduxDashFormLib.reduxDashFormLibStrings.FieldArray
 }
 
+object RegisteredField {
+  @scala.inline
+  def apply(
+    count: scala.Double,
+    name: java.lang.String,
+    `type`: reduxDashFormLib.reduxDashFormLibStrings.Field | reduxDashFormLib.reduxDashFormLibStrings.FieldArray
+  ): RegisteredField = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[RegisteredField]
+  }
+}
+

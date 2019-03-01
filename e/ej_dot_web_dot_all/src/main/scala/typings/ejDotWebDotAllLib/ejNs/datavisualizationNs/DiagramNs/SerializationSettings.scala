@@ -12,3 +12,12 @@ trait SerializationSettings extends js.Object {
   var preventDefaultValues: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SerializationSettings {
+  @scala.inline
+  def apply(preventDefaultValues: js.UndefOr[scala.Boolean] = js.undefined): SerializationSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(preventDefaultValues)) __obj.updateDynamic("preventDefaultValues")(preventDefaultValues)
+    __obj.asInstanceOf[SerializationSettings]
+  }
+}
+

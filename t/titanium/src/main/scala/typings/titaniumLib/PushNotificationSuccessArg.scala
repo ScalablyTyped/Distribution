@@ -32,3 +32,22 @@ trait PushNotificationSuccessArg extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PushNotificationSuccessArg {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    deviceToken: java.lang.String = null,
+    error: java.lang.String = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null
+  ): PushNotificationSuccessArg = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (deviceToken != null) __obj.updateDynamic("deviceToken")(deviceToken)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PushNotificationSuccessArg]
+  }
+}
+

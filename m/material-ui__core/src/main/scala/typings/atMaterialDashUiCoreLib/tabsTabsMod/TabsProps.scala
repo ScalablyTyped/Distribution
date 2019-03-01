@@ -42,3 +42,54 @@ import scala.scalajs.js.annotation._
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabsProps {
+  @scala.inline
+  def apply(
+    value: js.Any,
+    ScrollButtonComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    TabIndicatorProps: stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps] = null,
+    action: js.Function1[/* actions */ TabsActions, scala.Unit] = null,
+    centered: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[TabsClassKey]] = null,
+    component: reactLib.reactMod.ReactNs.ReactType[TabsProps] = null,
+    fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    indicatorColor: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | java.lang.String = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    onChange: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[js.Object], 
+      /* value */ js.Any, 
+      scala.Unit
+    ] = null,
+    scrollButtons: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off = null,
+    scrollable: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    textColor: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | java.lang.String = null,
+    variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.scrollable | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fullWidth = null,
+    width: java.lang.String = null
+  ): TabsProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (ScrollButtonComponent != null) __obj.updateDynamic("ScrollButtonComponent")(ScrollButtonComponent.asInstanceOf[js.Any])
+    if (TabIndicatorProps != null) __obj.updateDynamic("TabIndicatorProps")(TabIndicatorProps)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
+    if (indicatorColor != null) __obj.updateDynamic("indicatorColor")(indicatorColor.asInstanceOf[js.Any])
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (scrollButtons != null) __obj.updateDynamic("scrollButtons")(scrollButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[TabsProps]
+  }
+}
+

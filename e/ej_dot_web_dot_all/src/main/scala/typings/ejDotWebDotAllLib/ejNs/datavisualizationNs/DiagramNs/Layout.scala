@@ -71,3 +71,44 @@ trait Layout extends js.Object {
   var verticalSpacing: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Layout {
+  @scala.inline
+  def apply(
+    avoidSegmentOverlapping: js.UndefOr[scala.Boolean] = js.undefined,
+    bounds: js.Any = null,
+    fixedNode: java.lang.String = null,
+    getConnectorSegments: js.Any = null,
+    getLayoutInfo: js.Any = null,
+    horizontalAlignment: HorizontalAlignment | java.lang.String = null,
+    horizontalSpacing: scala.Int | scala.Double = null,
+    margin: js.Any = null,
+    maxIteration: scala.Int | scala.Double = null,
+    orientation: LayoutOrientations | java.lang.String = null,
+    root: java.lang.String = null,
+    springFactor: scala.Int | scala.Double = null,
+    springLength: scala.Int | scala.Double = null,
+    `type`: LayoutTypes | java.lang.String = null,
+    verticalAlignment: VerticalAlignment | java.lang.String = null,
+    verticalSpacing: scala.Int | scala.Double = null
+  ): Layout = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(avoidSegmentOverlapping)) __obj.updateDynamic("avoidSegmentOverlapping")(avoidSegmentOverlapping)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (fixedNode != null) __obj.updateDynamic("fixedNode")(fixedNode)
+    if (getConnectorSegments != null) __obj.updateDynamic("getConnectorSegments")(getConnectorSegments)
+    if (getLayoutInfo != null) __obj.updateDynamic("getLayoutInfo")(getLayoutInfo)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (horizontalSpacing != null) __obj.updateDynamic("horizontalSpacing")(horizontalSpacing.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (maxIteration != null) __obj.updateDynamic("maxIteration")(maxIteration.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (springFactor != null) __obj.updateDynamic("springFactor")(springFactor.asInstanceOf[js.Any])
+    if (springLength != null) __obj.updateDynamic("springLength")(springLength.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (verticalSpacing != null) __obj.updateDynamic("verticalSpacing")(verticalSpacing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Layout]
+  }
+}
+

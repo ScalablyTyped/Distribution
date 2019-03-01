@@ -88,3 +88,34 @@ trait FontData extends js.Object {
   ] = js.undefined
 }
 
+object FontData {
+  @scala.inline
+  def apply(
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    doubleStrikeThrough: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightColor: java.lang.String = null,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    strikeThrough: js.UndefOr[scala.Boolean] = js.undefined,
+    subscript: js.UndefOr[scala.Boolean] = js.undefined,
+    superscript: js.UndefOr[scala.Boolean] = js.undefined,
+    underline: officeDashJsLib.WordNs.UnderlineType | officeDashJsLib.officeDashJsLibStrings.Mixed | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Hidden | officeDashJsLib.officeDashJsLibStrings.DotLine | officeDashJsLib.officeDashJsLibStrings.Single | officeDashJsLib.officeDashJsLibStrings.Word | officeDashJsLib.officeDashJsLibStrings.Double | officeDashJsLib.officeDashJsLibStrings.Thick | officeDashJsLib.officeDashJsLibStrings.Dotted | officeDashJsLib.officeDashJsLibStrings.DottedHeavy | officeDashJsLib.officeDashJsLibStrings.DashLine | officeDashJsLib.officeDashJsLibStrings.DashLineHeavy | officeDashJsLib.officeDashJsLibStrings.DashLineLong | officeDashJsLib.officeDashJsLibStrings.DashLineLongHeavy | officeDashJsLib.officeDashJsLibStrings.DotDashLine | officeDashJsLib.officeDashJsLibStrings.DotDashLineHeavy | officeDashJsLib.officeDashJsLibStrings.TwoDotDashLine | officeDashJsLib.officeDashJsLibStrings.TwoDotDashLineHeavy | officeDashJsLib.officeDashJsLibStrings.Wave | officeDashJsLib.officeDashJsLibStrings.WaveHeavy | officeDashJsLib.officeDashJsLibStrings.WaveDouble = null
+  ): FontData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(doubleStrikeThrough)) __obj.updateDynamic("doubleStrikeThrough")(doubleStrikeThrough)
+    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(strikeThrough)) __obj.updateDynamic("strikeThrough")(strikeThrough)
+    if (!js.isUndefined(subscript)) __obj.updateDynamic("subscript")(subscript)
+    if (!js.isUndefined(superscript)) __obj.updateDynamic("superscript")(superscript)
+    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FontData]
+  }
+}
+

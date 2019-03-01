@@ -59,3 +59,48 @@ trait ImmunizationVaccinationProtocol extends BackboneElement {
   var targetDisease: js.Array[CodeableConcept]
 }
 
+object ImmunizationVaccinationProtocol {
+  @scala.inline
+  def apply(
+    doseStatus: CodeableConcept,
+    targetDisease: js.Array[CodeableConcept],
+    _description: Element = null,
+    _doseSequence: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _series: Element = null,
+    _seriesDoses: Element = null,
+    authority: Reference = null,
+    description: java.lang.String = null,
+    doseSequence: js.UndefOr[positiveInt] = js.undefined,
+    doseStatusReason: CodeableConcept = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null,
+    series: java.lang.String = null,
+    seriesDoses: js.UndefOr[positiveInt] = js.undefined
+  ): ImmunizationVaccinationProtocol = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("doseStatus")(doseStatus)
+    __obj.updateDynamic("targetDisease")(targetDisease)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_doseSequence != null) __obj.updateDynamic("_doseSequence")(_doseSequence)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_series != null) __obj.updateDynamic("_series")(_series)
+    if (_seriesDoses != null) __obj.updateDynamic("_seriesDoses")(_seriesDoses)
+    if (authority != null) __obj.updateDynamic("authority")(authority)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(doseSequence)) __obj.updateDynamic("doseSequence")(doseSequence)
+    if (doseStatusReason != null) __obj.updateDynamic("doseStatusReason")(doseStatusReason)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (!js.isUndefined(seriesDoses)) __obj.updateDynamic("seriesDoses")(seriesDoses)
+    __obj.asInstanceOf[ImmunizationVaccinationProtocol]
+  }
+}
+

@@ -24,3 +24,20 @@ trait ExternalPropertyFile extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object ExternalPropertyFile {
+  @scala.inline
+  def apply(
+    artifactLocation: ArtifactLocation = null,
+    instanceGuid: java.lang.String = null,
+    itemCount: scala.Int | scala.Double = null,
+    properties: PropertyBag = null
+  ): ExternalPropertyFile = {
+    val __obj = js.Dynamic.literal()
+    if (artifactLocation != null) __obj.updateDynamic("artifactLocation")(artifactLocation)
+    if (instanceGuid != null) __obj.updateDynamic("instanceGuid")(instanceGuid)
+    if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[ExternalPropertyFile]
+  }
+}
+

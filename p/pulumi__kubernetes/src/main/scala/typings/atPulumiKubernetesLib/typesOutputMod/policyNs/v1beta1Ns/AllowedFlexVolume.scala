@@ -15,3 +15,12 @@ trait AllowedFlexVolume extends js.Object {
   val driver: java.lang.String
 }
 
+object AllowedFlexVolume {
+  @scala.inline
+  def apply(driver: java.lang.String): AllowedFlexVolume = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("driver")(driver)
+    __obj.asInstanceOf[AllowedFlexVolume]
+  }
+}
+

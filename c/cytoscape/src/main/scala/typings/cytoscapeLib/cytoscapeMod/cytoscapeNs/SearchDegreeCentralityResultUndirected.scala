@@ -13,3 +13,12 @@ trait SearchDegreeCentralityResultUndirected extends js.Object {
   var degree: scala.Double
 }
 
+object SearchDegreeCentralityResultUndirected {
+  @scala.inline
+  def apply(degree: scala.Double): SearchDegreeCentralityResultUndirected = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("degree")(degree)
+    __obj.asInstanceOf[SearchDegreeCentralityResultUndirected]
+  }
+}
+

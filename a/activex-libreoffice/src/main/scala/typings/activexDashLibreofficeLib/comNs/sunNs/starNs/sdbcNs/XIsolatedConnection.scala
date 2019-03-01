@@ -34,3 +34,25 @@ trait XIsolatedConnection
   def getIsolatedConnectionWithCompletion(handler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler): XConnection
 }
 
+object XIsolatedConnection {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getIsolatedConnection: js.Function2[java.lang.String, java.lang.String, XConnection],
+    getIsolatedConnectionWithCompletion: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      XConnection
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIsolatedConnection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getIsolatedConnection")(getIsolatedConnection)
+    __obj.updateDynamic("getIsolatedConnectionWithCompletion")(getIsolatedConnectionWithCompletion)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XIsolatedConnection]
+  }
+}
+

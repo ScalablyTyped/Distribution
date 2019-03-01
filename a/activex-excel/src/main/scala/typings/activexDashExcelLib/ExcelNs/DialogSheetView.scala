@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Excel.DialogSheetView")
 @js.native
-class DialogSheetView protected () extends js.Object {
+class DialogSheetView protected () extends SheetView {
   val Application: Application = js.native
   val Creator: XlCreator = js.native
   var `Excel.DialogSheetView_typekey`: DialogSheetView = js.native

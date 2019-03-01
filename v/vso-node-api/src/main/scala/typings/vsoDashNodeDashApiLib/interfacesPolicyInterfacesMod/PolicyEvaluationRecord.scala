@@ -40,3 +40,28 @@ trait PolicyEvaluationRecord extends js.Object {
   var status: PolicyEvaluationStatus
 }
 
+object PolicyEvaluationRecord {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    artifactId: java.lang.String,
+    completedDate: stdLib.Date,
+    configuration: PolicyConfiguration,
+    context: js.Any,
+    evaluationId: java.lang.String,
+    startedDate: stdLib.Date,
+    status: PolicyEvaluationStatus
+  ): PolicyEvaluationRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("artifactId")(artifactId)
+    __obj.updateDynamic("completedDate")(completedDate)
+    __obj.updateDynamic("configuration")(configuration)
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("evaluationId")(evaluationId)
+    __obj.updateDynamic("startedDate")(startedDate)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[PolicyEvaluationRecord]
+  }
+}
+

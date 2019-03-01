@@ -38,3 +38,24 @@ trait SocketIORedisOptions extends js.Object {
   var subClient: js.UndefOr[js.Any] = js.undefined
 }
 
+object SocketIORedisOptions {
+  @scala.inline
+  def apply(
+    auth_pass: scala.Double | java.lang.String = null,
+    host: java.lang.String = null,
+    key: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    pubClient: js.Any = null,
+    subClient: js.Any = null
+  ): SocketIORedisOptions = {
+    val __obj = js.Dynamic.literal()
+    if (auth_pass != null) __obj.updateDynamic("auth_pass")(auth_pass.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (pubClient != null) __obj.updateDynamic("pubClient")(pubClient)
+    if (subClient != null) __obj.updateDynamic("subClient")(subClient)
+    __obj.asInstanceOf[SocketIORedisOptions]
+  }
+}
+

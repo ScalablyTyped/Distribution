@@ -12,3 +12,20 @@ trait ResponseFailure extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResponseFailure {
+  @scala.inline
+  def apply(
+    device: java.lang.String,
+    error: nodeLib.Error = null,
+    response: apnLib.Anon_Reason = null,
+    status: java.lang.String = null
+  ): ResponseFailure = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("device")(device)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[ResponseFailure]
+  }
+}
+

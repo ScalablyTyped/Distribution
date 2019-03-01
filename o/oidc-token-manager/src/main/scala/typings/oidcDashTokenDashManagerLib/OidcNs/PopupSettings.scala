@@ -10,3 +10,13 @@ trait PopupSettings extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PopupSettings {
+  @scala.inline
+  def apply(features: java.lang.String = null, target: java.lang.String = null): PopupSettings = {
+    val __obj = js.Dynamic.literal()
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[PopupSettings]
+  }
+}
+

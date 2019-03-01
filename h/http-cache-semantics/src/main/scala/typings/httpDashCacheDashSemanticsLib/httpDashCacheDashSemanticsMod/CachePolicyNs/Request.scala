@@ -11,3 +11,14 @@ trait Request extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Request {
+  @scala.inline
+  def apply(headers: Headers, method: java.lang.String = null, url: java.lang.String = null): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Request]
+  }
+}
+

@@ -32,3 +32,20 @@ trait SecuredApiOptions extends js.Object {
   var validUntil: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SecuredApiOptions {
+  @scala.inline
+  def apply(
+    filters: java.lang.String = null,
+    restrictIndices: java.lang.String = null,
+    userToken: java.lang.String = null,
+    validUntil: scala.Int | scala.Double = null
+  ): SecuredApiOptions = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (restrictIndices != null) __obj.updateDynamic("restrictIndices")(restrictIndices)
+    if (userToken != null) __obj.updateDynamic("userToken")(userToken)
+    if (validUntil != null) __obj.updateDynamic("validUntil")(validUntil.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SecuredApiOptions]
+  }
+}
+

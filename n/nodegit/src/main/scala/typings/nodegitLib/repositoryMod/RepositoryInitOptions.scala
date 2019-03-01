@@ -16,3 +16,28 @@ trait RepositoryInitOptions extends js.Object {
   var workdirPath: java.lang.String
 }
 
+object RepositoryInitOptions {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    flags: scala.Double,
+    initialHead: java.lang.String,
+    mode: scala.Double,
+    originUrl: java.lang.String,
+    templatePath: java.lang.String,
+    version: scala.Double,
+    workdirPath: java.lang.String
+  ): RepositoryInitOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("initialHead")(initialHead)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("originUrl")(originUrl)
+    __obj.updateDynamic("templatePath")(templatePath)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("workdirPath")(workdirPath)
+    __obj.asInstanceOf[RepositoryInitOptions]
+  }
+}
+

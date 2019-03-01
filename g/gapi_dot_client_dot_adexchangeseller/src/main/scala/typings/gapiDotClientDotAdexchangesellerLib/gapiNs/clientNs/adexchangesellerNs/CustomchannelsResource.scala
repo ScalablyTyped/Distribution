@@ -12,3 +12,22 @@ trait CustomchannelsResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[CustomChannels]
 }
 
+object CustomchannelsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomChannels]
+    ]
+  ): CustomchannelsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[CustomchannelsResource]
+  }
+}
+

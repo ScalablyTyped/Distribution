@@ -10,3 +10,12 @@ trait RawIndices extends js.Object {
   var indices: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object RawIndices {
+  @scala.inline
+  def apply(indices: js.Array[scala.Double] = null): RawIndices = {
+    val __obj = js.Dynamic.literal()
+    if (indices != null) __obj.updateDynamic("indices")(indices)
+    __obj.asInstanceOf[RawIndices]
+  }
+}
+

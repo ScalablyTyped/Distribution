@@ -10,3 +10,13 @@ trait HideMenusOptions extends js.Object {
   var hideWindow: scala.Boolean
 }
 
+object HideMenusOptions {
+  @scala.inline
+  def apply(hideEdit: scala.Boolean, hideWindow: scala.Boolean): HideMenusOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hideEdit")(hideEdit)
+    __obj.updateDynamic("hideWindow")(hideWindow)
+    __obj.asInstanceOf[HideMenusOptions]
+  }
+}
+

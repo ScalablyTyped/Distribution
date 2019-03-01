@@ -68,3 +68,37 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
   var nonEditableRows: js.UndefOr[js.Function0[js.Array[scala.Double | java.lang.String]]] = js.undefined
 }
 
+object CellEdit {
+  @scala.inline
+  def apply[TRow /* <: js.Object */](
+    mode: CellEditClickMode,
+    afterSaveCell: js.Function4[
+      /* row */ TRow, 
+      /* cellName */ java.lang.String, 
+      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
+      /* props */ reactDashBootstrapDashTableLib.Anon_ColIndex, 
+      scala.Unit
+    ] = null,
+    beforeSaveCell: js.Function5[
+      /* row */ TRow, 
+      /* cellName */ java.lang.String, 
+      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
+      /* done */ js.Function1[/* isValid */ scala.Boolean, scala.Unit], 
+      /* props */ reactDashBootstrapDashTableLib.Anon_ColIndex, 
+      scala.Boolean | reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibNumbers.`1`
+    ] = null,
+    blurToEscape: js.UndefOr[scala.Boolean] = js.undefined,
+    blurToSave: js.UndefOr[scala.Boolean] = js.undefined,
+    nonEditableRows: js.Function0[js.Array[scala.Double | java.lang.String]] = null
+  ): CellEdit[TRow] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mode")(mode)
+    if (afterSaveCell != null) __obj.updateDynamic("afterSaveCell")(afterSaveCell)
+    if (beforeSaveCell != null) __obj.updateDynamic("beforeSaveCell")(beforeSaveCell)
+    if (!js.isUndefined(blurToEscape)) __obj.updateDynamic("blurToEscape")(blurToEscape)
+    if (!js.isUndefined(blurToSave)) __obj.updateDynamic("blurToSave")(blurToSave)
+    if (nonEditableRows != null) __obj.updateDynamic("nonEditableRows")(nonEditableRows)
+    __obj.asInstanceOf[CellEdit[TRow]]
+  }
+}
+

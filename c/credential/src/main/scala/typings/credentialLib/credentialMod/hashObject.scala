@@ -13,3 +13,22 @@ trait hashObject extends js.Object {
   var salt: java.lang.String
 }
 
+object hashObject {
+  @scala.inline
+  def apply(
+    hash: java.lang.String,
+    hashMethod: java.lang.String,
+    iterations: scala.Double,
+    keyLength: scala.Double,
+    salt: java.lang.String
+  ): hashObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("hashMethod")(hashMethod)
+    __obj.updateDynamic("iterations")(iterations)
+    __obj.updateDynamic("keyLength")(keyLength)
+    __obj.updateDynamic("salt")(salt)
+    __obj.asInstanceOf[hashObject]
+  }
+}
+

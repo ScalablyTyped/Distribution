@@ -15,3 +15,18 @@ trait IGeoshape extends js.Object {
   var spatialReferenceId: scala.Double
 }
 
+object IGeoshape {
+  @scala.inline
+  def apply(
+    altitudeReferenceSystem: AltitudeReferenceSystem,
+    geoshapeType: GeoshapeType,
+    spatialReferenceId: scala.Double
+  ): IGeoshape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("altitudeReferenceSystem")(altitudeReferenceSystem)
+    __obj.updateDynamic("geoshapeType")(geoshapeType)
+    __obj.updateDynamic("spatialReferenceId")(spatialReferenceId)
+    __obj.asInstanceOf[IGeoshape]
+  }
+}
+

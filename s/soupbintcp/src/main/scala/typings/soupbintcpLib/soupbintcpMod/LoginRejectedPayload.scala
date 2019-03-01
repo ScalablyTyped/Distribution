@@ -9,3 +9,12 @@ trait LoginRejectedPayload extends js.Object {
   var rejectReasonCode: java.lang.String
 }
 
+object LoginRejectedPayload {
+  @scala.inline
+  def apply(rejectReasonCode: java.lang.String): LoginRejectedPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rejectReasonCode")(rejectReasonCode)
+    __obj.asInstanceOf[LoginRejectedPayload]
+  }
+}
+

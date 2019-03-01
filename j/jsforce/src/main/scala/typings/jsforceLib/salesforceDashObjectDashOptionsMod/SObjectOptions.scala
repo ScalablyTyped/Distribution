@@ -11,3 +11,18 @@ trait SObjectOptions extends js.Object {
   var Name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SObjectOptions {
+  @scala.inline
+  def apply(
+    ExtId__c: java.lang.String = null,
+    Id: jsforceLib.salesforceDashIdMod.SalesforceId = null,
+    Name: java.lang.String = null
+  ): SObjectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ExtId__c != null) __obj.updateDynamic("ExtId__c")(ExtId__c)
+    if (Id != null) __obj.updateDynamic("Id")(Id)
+    if (Name != null) __obj.updateDynamic("Name")(Name)
+    __obj.asInstanceOf[SObjectOptions]
+  }
+}
+

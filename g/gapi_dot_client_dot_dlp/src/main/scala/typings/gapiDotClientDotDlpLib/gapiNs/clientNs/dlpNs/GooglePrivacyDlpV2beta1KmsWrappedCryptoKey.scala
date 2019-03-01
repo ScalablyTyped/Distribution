@@ -12,3 +12,13 @@ trait GooglePrivacyDlpV2beta1KmsWrappedCryptoKey extends js.Object {
   var wrappedKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1KmsWrappedCryptoKey {
+  @scala.inline
+  def apply(cryptoKeyName: java.lang.String = null, wrappedKey: java.lang.String = null): GooglePrivacyDlpV2beta1KmsWrappedCryptoKey = {
+    val __obj = js.Dynamic.literal()
+    if (cryptoKeyName != null) __obj.updateDynamic("cryptoKeyName")(cryptoKeyName)
+    if (wrappedKey != null) __obj.updateDynamic("wrappedKey")(wrappedKey)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1KmsWrappedCryptoKey]
+  }
+}
+

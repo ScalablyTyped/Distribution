@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StaticClassSansProvider extends js.Object {
+trait StaticClassSansProvider
+  extends atAngularCoreLib.srcDiInjectableMod.InjectableProvider {
   /**
     * A list of `token`s which need to be resolved by the injector. The list of values is then
     * used as arguments to the `useClass` constructor.
@@ -16,5 +17,15 @@ trait StaticClassSansProvider extends js.Object {
     * class to instantiate)
     */
   var useClass: atAngularCoreLib.srcTypeMod.Type[_]
+}
+
+object StaticClassSansProvider {
+  @scala.inline
+  def apply(deps: js.Array[_], useClass: atAngularCoreLib.srcTypeMod.Type[_]): StaticClassSansProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deps")(deps)
+    __obj.updateDynamic("useClass")(useClass)
+    __obj.asInstanceOf[StaticClassSansProvider]
+  }
 }
 

@@ -14,3 +14,24 @@ trait DistributionPoint extends js.Object {
   def toSchema(): js.Any
 }
 
+object DistributionPoint {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    cRLIssuer: js.Array[pkijsLib.srcGeneralNameMod.default] = null,
+    distributionPoint: js.Array[pkijsLib.srcGeneralNameMod.default] = null,
+    reasons: asn1jsLib.asn1jsMod.BitString = null
+  ): DistributionPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    if (cRLIssuer != null) __obj.updateDynamic("cRLIssuer")(cRLIssuer)
+    if (distributionPoint != null) __obj.updateDynamic("distributionPoint")(distributionPoint)
+    if (reasons != null) __obj.updateDynamic("reasons")(reasons)
+    __obj.asInstanceOf[DistributionPoint]
+  }
+}
+

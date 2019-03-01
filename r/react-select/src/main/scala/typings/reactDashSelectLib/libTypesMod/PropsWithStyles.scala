@@ -14,3 +14,12 @@ trait PropsWithStyles extends js.Object {
   def getStyles(name: java.lang.String, props: js.Any): js.Object
 }
 
+object PropsWithStyles {
+  @scala.inline
+  def apply(getStyles: js.Function2[java.lang.String, js.Any, js.Object]): PropsWithStyles = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getStyles")(getStyles)
+    __obj.asInstanceOf[PropsWithStyles]
+  }
+}
+

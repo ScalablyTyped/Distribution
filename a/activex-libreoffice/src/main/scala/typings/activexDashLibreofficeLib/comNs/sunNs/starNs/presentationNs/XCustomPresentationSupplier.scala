@@ -18,3 +18,22 @@ trait XCustomPresentationSupplier
   def getCustomPresentations(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer
 }
 
+object XCustomPresentationSupplier {
+  @scala.inline
+  def apply(
+    CustomPresentations: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    acquire: js.Function0[scala.Unit],
+    getCustomPresentations: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCustomPresentationSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CustomPresentations")(CustomPresentations)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCustomPresentations")(getCustomPresentations)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCustomPresentationSupplier]
+  }
+}
+

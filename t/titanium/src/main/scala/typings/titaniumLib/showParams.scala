@@ -39,3 +39,26 @@ trait showParams extends js.Object {
   var view: js.UndefOr[titaniumLib.TitaniumNs.UINs.View] = js.undefined
 }
 
+object showParams {
+  @scala.inline
+  def apply(
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    buttonNames: js.Array[java.lang.String] = null,
+    message: java.lang.String = null,
+    options: js.Array[java.lang.String] = null,
+    rect: Dimension = null,
+    title: java.lang.String = null,
+    view: titaniumLib.TitaniumNs.UINs.View = null
+  ): showParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (buttonNames != null) __obj.updateDynamic("buttonNames")(buttonNames)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (rect != null) __obj.updateDynamic("rect")(rect)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[showParams]
+  }
+}
+

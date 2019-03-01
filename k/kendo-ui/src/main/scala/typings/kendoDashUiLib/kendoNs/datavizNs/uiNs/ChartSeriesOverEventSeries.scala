@@ -11,3 +11,14 @@ trait ChartSeriesOverEventSeries extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChartSeriesOverEventSeries {
+  @scala.inline
+  def apply(data: js.Any = null, name: java.lang.String = null, `type`: java.lang.String = null): ChartSeriesOverEventSeries = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ChartSeriesOverEventSeries]
+  }
+}
+

@@ -24,3 +24,20 @@ trait HostedPrivateVirtualInterfaceAccepterArgs extends js.Object {
   val vpnGatewayId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object HostedPrivateVirtualInterfaceAccepterArgs {
+  @scala.inline
+  def apply(
+    virtualInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    dxGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): HostedPrivateVirtualInterfaceAccepterArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])
+    if (dxGatewayId != null) __obj.updateDynamic("dxGatewayId")(dxGatewayId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpnGatewayId != null) __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HostedPrivateVirtualInterfaceAccepterArgs]
+  }
+}
+

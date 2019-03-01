@@ -79,3 +79,74 @@ trait Groups extends js.Object {
   var whoCanViewMembership: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Groups {
+  @scala.inline
+  def apply(
+    allowExternalMembers: java.lang.String = null,
+    allowGoogleCommunication: java.lang.String = null,
+    allowWebPosting: java.lang.String = null,
+    archiveOnly: java.lang.String = null,
+    customFooterText: java.lang.String = null,
+    customReplyTo: java.lang.String = null,
+    defaultMessageDenyNotificationText: java.lang.String = null,
+    description: java.lang.String = null,
+    email: java.lang.String = null,
+    includeCustomFooter: java.lang.String = null,
+    includeInGlobalAddressList: java.lang.String = null,
+    isArchived: java.lang.String = null,
+    kind: java.lang.String = null,
+    maxMessageBytes: scala.Int | scala.Double = null,
+    membersCanPostAsTheGroup: java.lang.String = null,
+    messageDisplayFont: java.lang.String = null,
+    messageModerationLevel: java.lang.String = null,
+    name: java.lang.String = null,
+    primaryLanguage: java.lang.String = null,
+    replyTo: java.lang.String = null,
+    sendMessageDenyNotification: java.lang.String = null,
+    showInGroupDirectory: java.lang.String = null,
+    spamModerationLevel: java.lang.String = null,
+    whoCanAdd: java.lang.String = null,
+    whoCanContactOwner: java.lang.String = null,
+    whoCanInvite: java.lang.String = null,
+    whoCanJoin: java.lang.String = null,
+    whoCanLeaveGroup: java.lang.String = null,
+    whoCanPostMessage: java.lang.String = null,
+    whoCanViewGroup: java.lang.String = null,
+    whoCanViewMembership: java.lang.String = null
+  ): Groups = {
+    val __obj = js.Dynamic.literal()
+    if (allowExternalMembers != null) __obj.updateDynamic("allowExternalMembers")(allowExternalMembers)
+    if (allowGoogleCommunication != null) __obj.updateDynamic("allowGoogleCommunication")(allowGoogleCommunication)
+    if (allowWebPosting != null) __obj.updateDynamic("allowWebPosting")(allowWebPosting)
+    if (archiveOnly != null) __obj.updateDynamic("archiveOnly")(archiveOnly)
+    if (customFooterText != null) __obj.updateDynamic("customFooterText")(customFooterText)
+    if (customReplyTo != null) __obj.updateDynamic("customReplyTo")(customReplyTo)
+    if (defaultMessageDenyNotificationText != null) __obj.updateDynamic("defaultMessageDenyNotificationText")(defaultMessageDenyNotificationText)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (includeCustomFooter != null) __obj.updateDynamic("includeCustomFooter")(includeCustomFooter)
+    if (includeInGlobalAddressList != null) __obj.updateDynamic("includeInGlobalAddressList")(includeInGlobalAddressList)
+    if (isArchived != null) __obj.updateDynamic("isArchived")(isArchived)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maxMessageBytes != null) __obj.updateDynamic("maxMessageBytes")(maxMessageBytes.asInstanceOf[js.Any])
+    if (membersCanPostAsTheGroup != null) __obj.updateDynamic("membersCanPostAsTheGroup")(membersCanPostAsTheGroup)
+    if (messageDisplayFont != null) __obj.updateDynamic("messageDisplayFont")(messageDisplayFont)
+    if (messageModerationLevel != null) __obj.updateDynamic("messageModerationLevel")(messageModerationLevel)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (primaryLanguage != null) __obj.updateDynamic("primaryLanguage")(primaryLanguage)
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo)
+    if (sendMessageDenyNotification != null) __obj.updateDynamic("sendMessageDenyNotification")(sendMessageDenyNotification)
+    if (showInGroupDirectory != null) __obj.updateDynamic("showInGroupDirectory")(showInGroupDirectory)
+    if (spamModerationLevel != null) __obj.updateDynamic("spamModerationLevel")(spamModerationLevel)
+    if (whoCanAdd != null) __obj.updateDynamic("whoCanAdd")(whoCanAdd)
+    if (whoCanContactOwner != null) __obj.updateDynamic("whoCanContactOwner")(whoCanContactOwner)
+    if (whoCanInvite != null) __obj.updateDynamic("whoCanInvite")(whoCanInvite)
+    if (whoCanJoin != null) __obj.updateDynamic("whoCanJoin")(whoCanJoin)
+    if (whoCanLeaveGroup != null) __obj.updateDynamic("whoCanLeaveGroup")(whoCanLeaveGroup)
+    if (whoCanPostMessage != null) __obj.updateDynamic("whoCanPostMessage")(whoCanPostMessage)
+    if (whoCanViewGroup != null) __obj.updateDynamic("whoCanViewGroup")(whoCanViewGroup)
+    if (whoCanViewMembership != null) __obj.updateDynamic("whoCanViewMembership")(whoCanViewMembership)
+    __obj.asInstanceOf[Groups]
+  }
+}
+

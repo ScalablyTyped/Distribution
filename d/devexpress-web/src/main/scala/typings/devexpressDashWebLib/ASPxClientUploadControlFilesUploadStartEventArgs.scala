@@ -16,3 +16,12 @@ trait ASPxClientUploadControlFilesUploadStartEventArgs extends ASPxClientEventAr
   var cancel: scala.Boolean
 }
 
+object ASPxClientUploadControlFilesUploadStartEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean): ASPxClientUploadControlFilesUploadStartEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.asInstanceOf[ASPxClientUploadControlFilesUploadStartEventArgs]
+  }
+}
+

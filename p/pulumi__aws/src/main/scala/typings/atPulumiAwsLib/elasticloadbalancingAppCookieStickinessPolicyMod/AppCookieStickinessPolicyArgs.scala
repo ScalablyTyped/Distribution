@@ -27,3 +27,20 @@ trait AppCookieStickinessPolicyArgs extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object AppCookieStickinessPolicyArgs {
+  @scala.inline
+  def apply(
+    cookieName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    lbPort: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    loadBalancer: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AppCookieStickinessPolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cookieName")(cookieName.asInstanceOf[js.Any])
+    __obj.updateDynamic("lbPort")(lbPort.asInstanceOf[js.Any])
+    __obj.updateDynamic("loadBalancer")(loadBalancer.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppCookieStickinessPolicyArgs]
+  }
+}
+

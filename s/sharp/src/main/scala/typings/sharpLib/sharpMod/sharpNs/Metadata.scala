@@ -40,3 +40,46 @@ trait Metadata extends WriteableMetadata {
   var xmp: js.UndefOr[nodeLib.Buffer] = js.undefined
 }
 
+object Metadata {
+  @scala.inline
+  def apply(
+    chromaSubsampling: java.lang.String,
+    channels: Channels = null,
+    density: scala.Int | scala.Double = null,
+    depth: java.lang.String = null,
+    exif: nodeLib.Buffer = null,
+    format: java.lang.String = null,
+    hasAlpha: js.UndefOr[scala.Boolean] = js.undefined,
+    hasProfile: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    icc: nodeLib.Buffer = null,
+    iptc: nodeLib.Buffer = null,
+    isProgressive: js.UndefOr[scala.Boolean] = js.undefined,
+    orientation: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null,
+    space: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    xmp: nodeLib.Buffer = null
+  ): Metadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chromaSubsampling")(chromaSubsampling)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (depth != null) __obj.updateDynamic("depth")(depth)
+    if (exif != null) __obj.updateDynamic("exif")(exif)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(hasAlpha)) __obj.updateDynamic("hasAlpha")(hasAlpha)
+    if (!js.isUndefined(hasProfile)) __obj.updateDynamic("hasProfile")(hasProfile)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (icc != null) __obj.updateDynamic("icc")(icc)
+    if (iptc != null) __obj.updateDynamic("iptc")(iptc)
+    if (!js.isUndefined(isProgressive)) __obj.updateDynamic("isProgressive")(isProgressive)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (space != null) __obj.updateDynamic("space")(space)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (xmp != null) __obj.updateDynamic("xmp")(xmp)
+    __obj.asInstanceOf[Metadata]
+  }
+}
+

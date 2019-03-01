@@ -121,3 +121,36 @@ trait DataObject extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DataObject {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    emphasis: echartsLib.Anon_LineStyleAnonColorOpacityShadowBlur = null,
+    lineStyle: js.Object = null,
+    name: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    shadowBlur: scala.Int | scala.Double = null,
+    shadowColor: java.lang.String = null,
+    shadowOffsetX: scala.Int | scala.Double = null,
+    shadowOffsetY: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    value: js.Array[_] = null,
+    width: scala.Int | scala.Double = null
+  ): DataObject = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
+    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataObject]
+  }
+}
+

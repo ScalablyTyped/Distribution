@@ -10,3 +10,12 @@ trait Administrator extends js.Object {
   var email: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Administrator {
+  @scala.inline
+  def apply(email: java.lang.String = null): Administrator = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    __obj.asInstanceOf[Administrator]
+  }
+}
+

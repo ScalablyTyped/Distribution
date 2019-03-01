@@ -16,10 +16,12 @@ object reactDashPrimitivesLibStrings {
   sealed trait memory extends js.Object
   
   @js.native
-  sealed trait sketch extends js.Object
+  sealed trait sketch
+    extends reactDashPrimitivesLib.reactDashPrimitivesMod._PlatformOSType
   
   @js.native
-  sealed trait vr extends js.Object
+  sealed trait vr
+    extends reactDashPrimitivesLib.reactDashPrimitivesMod._PlatformOSType
   
   @scala.inline
   def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]

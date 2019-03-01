@@ -386,3 +386,161 @@ trait IgRadialGauge
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgRadialGauge {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igRadialGauge
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    alignLabel: AlignLabelEvent = null,
+    backingBrush: java.lang.String = null,
+    backingCornerRadius: scala.Int | scala.Double = null,
+    backingInnerExtent: scala.Int | scala.Double = null,
+    backingOuterExtent: scala.Int | scala.Double = null,
+    backingOutline: java.lang.String = null,
+    backingOversweep: scala.Int | scala.Double = null,
+    backingShape: java.lang.String = null,
+    backingStrokeThickness: scala.Int | scala.Double = null,
+    centerX: scala.Int | scala.Double = null,
+    centerY: scala.Int | scala.Double = null,
+    duplicateLabelOmissionStrategy: java.lang.String = null,
+    font: java.lang.String = null,
+    fontBrush: java.lang.String = null,
+    formatLabel: FormatLabelEvent = null,
+    height: java.lang.String | scala.Double = null,
+    interval: scala.Int | scala.Double = null,
+    isNeedleDraggingConstrained: js.UndefOr[scala.Boolean] = js.undefined,
+    isNeedleDraggingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    labelExtent: scala.Int | scala.Double = null,
+    labelInterval: scala.Int | scala.Double = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    maximumValue: scala.Int | scala.Double = null,
+    minimumValue: scala.Int | scala.Double = null,
+    minorTickBrush: java.lang.String = null,
+    minorTickCount: scala.Int | scala.Double = null,
+    minorTickEndExtent: scala.Int | scala.Double = null,
+    minorTickStartExtent: scala.Int | scala.Double = null,
+    minorTickStrokeThickness: scala.Int | scala.Double = null,
+    needleBaseFeatureExtent: scala.Int | scala.Double = null,
+    needleBaseFeatureWidthRatio: scala.Int | scala.Double = null,
+    needleBrush: java.lang.String = null,
+    needleEndExtent: scala.Int | scala.Double = null,
+    needleEndWidthRatio: scala.Int | scala.Double = null,
+    needleOutline: java.lang.String = null,
+    needlePivotBrush: java.lang.String = null,
+    needlePivotInnerWidthRatio: scala.Int | scala.Double = null,
+    needlePivotOutline: java.lang.String = null,
+    needlePivotShape: java.lang.String = null,
+    needlePivotStrokeThickness: scala.Int | scala.Double = null,
+    needlePivotWidthRatio: scala.Int | scala.Double = null,
+    needlePointFeatureExtent: scala.Int | scala.Double = null,
+    needlePointFeatureWidthRatio: scala.Int | scala.Double = null,
+    needleShape: java.lang.String = null,
+    needleStartExtent: scala.Int | scala.Double = null,
+    needleStartWidthRatio: scala.Int | scala.Double = null,
+    needleStrokeThickness: scala.Int | scala.Double = null,
+    pixelScalingRatio: scala.Int | scala.Double = null,
+    radiusMultiplier: scala.Int | scala.Double = null,
+    rangeBrushes: js.Any = null,
+    rangeOutlines: js.Any = null,
+    ranges: js.Array[IgRadialGaugeRange] = null,
+    regional: java.lang.String | js.Object = null,
+    scaleBrush: java.lang.String = null,
+    scaleEndAngle: scala.Int | scala.Double = null,
+    scaleEndExtent: scala.Int | scala.Double = null,
+    scaleOversweep: scala.Int | scala.Double = null,
+    scaleOversweepShape: java.lang.String = null,
+    scaleStartAngle: scala.Int | scala.Double = null,
+    scaleStartExtent: scala.Int | scala.Double = null,
+    scaleSweepDirection: java.lang.String = null,
+    tickBrush: java.lang.String = null,
+    tickEndExtent: scala.Int | scala.Double = null,
+    tickStartExtent: scala.Int | scala.Double = null,
+    tickStrokeThickness: scala.Int | scala.Double = null,
+    transitionDuration: scala.Int | scala.Double = null,
+    transitionEasingFunction: js.Any = null,
+    transitionProgress: scala.Int | scala.Double = null,
+    value: scala.Int | scala.Double = null,
+    valueChanged: ValueChangedEvent = null,
+    width: java.lang.String | scala.Double = null
+  ): IgRadialGauge = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (alignLabel != null) __obj.updateDynamic("alignLabel")(alignLabel)
+    if (backingBrush != null) __obj.updateDynamic("backingBrush")(backingBrush)
+    if (backingCornerRadius != null) __obj.updateDynamic("backingCornerRadius")(backingCornerRadius.asInstanceOf[js.Any])
+    if (backingInnerExtent != null) __obj.updateDynamic("backingInnerExtent")(backingInnerExtent.asInstanceOf[js.Any])
+    if (backingOuterExtent != null) __obj.updateDynamic("backingOuterExtent")(backingOuterExtent.asInstanceOf[js.Any])
+    if (backingOutline != null) __obj.updateDynamic("backingOutline")(backingOutline)
+    if (backingOversweep != null) __obj.updateDynamic("backingOversweep")(backingOversweep.asInstanceOf[js.Any])
+    if (backingShape != null) __obj.updateDynamic("backingShape")(backingShape)
+    if (backingStrokeThickness != null) __obj.updateDynamic("backingStrokeThickness")(backingStrokeThickness.asInstanceOf[js.Any])
+    if (centerX != null) __obj.updateDynamic("centerX")(centerX.asInstanceOf[js.Any])
+    if (centerY != null) __obj.updateDynamic("centerY")(centerY.asInstanceOf[js.Any])
+    if (duplicateLabelOmissionStrategy != null) __obj.updateDynamic("duplicateLabelOmissionStrategy")(duplicateLabelOmissionStrategy)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (fontBrush != null) __obj.updateDynamic("fontBrush")(fontBrush)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(isNeedleDraggingConstrained)) __obj.updateDynamic("isNeedleDraggingConstrained")(isNeedleDraggingConstrained)
+    if (!js.isUndefined(isNeedleDraggingEnabled)) __obj.updateDynamic("isNeedleDraggingEnabled")(isNeedleDraggingEnabled)
+    if (labelExtent != null) __obj.updateDynamic("labelExtent")(labelExtent.asInstanceOf[js.Any])
+    if (labelInterval != null) __obj.updateDynamic("labelInterval")(labelInterval.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maximumValue != null) __obj.updateDynamic("maximumValue")(maximumValue.asInstanceOf[js.Any])
+    if (minimumValue != null) __obj.updateDynamic("minimumValue")(minimumValue.asInstanceOf[js.Any])
+    if (minorTickBrush != null) __obj.updateDynamic("minorTickBrush")(minorTickBrush)
+    if (minorTickCount != null) __obj.updateDynamic("minorTickCount")(minorTickCount.asInstanceOf[js.Any])
+    if (minorTickEndExtent != null) __obj.updateDynamic("minorTickEndExtent")(minorTickEndExtent.asInstanceOf[js.Any])
+    if (minorTickStartExtent != null) __obj.updateDynamic("minorTickStartExtent")(minorTickStartExtent.asInstanceOf[js.Any])
+    if (minorTickStrokeThickness != null) __obj.updateDynamic("minorTickStrokeThickness")(minorTickStrokeThickness.asInstanceOf[js.Any])
+    if (needleBaseFeatureExtent != null) __obj.updateDynamic("needleBaseFeatureExtent")(needleBaseFeatureExtent.asInstanceOf[js.Any])
+    if (needleBaseFeatureWidthRatio != null) __obj.updateDynamic("needleBaseFeatureWidthRatio")(needleBaseFeatureWidthRatio.asInstanceOf[js.Any])
+    if (needleBrush != null) __obj.updateDynamic("needleBrush")(needleBrush)
+    if (needleEndExtent != null) __obj.updateDynamic("needleEndExtent")(needleEndExtent.asInstanceOf[js.Any])
+    if (needleEndWidthRatio != null) __obj.updateDynamic("needleEndWidthRatio")(needleEndWidthRatio.asInstanceOf[js.Any])
+    if (needleOutline != null) __obj.updateDynamic("needleOutline")(needleOutline)
+    if (needlePivotBrush != null) __obj.updateDynamic("needlePivotBrush")(needlePivotBrush)
+    if (needlePivotInnerWidthRatio != null) __obj.updateDynamic("needlePivotInnerWidthRatio")(needlePivotInnerWidthRatio.asInstanceOf[js.Any])
+    if (needlePivotOutline != null) __obj.updateDynamic("needlePivotOutline")(needlePivotOutline)
+    if (needlePivotShape != null) __obj.updateDynamic("needlePivotShape")(needlePivotShape)
+    if (needlePivotStrokeThickness != null) __obj.updateDynamic("needlePivotStrokeThickness")(needlePivotStrokeThickness.asInstanceOf[js.Any])
+    if (needlePivotWidthRatio != null) __obj.updateDynamic("needlePivotWidthRatio")(needlePivotWidthRatio.asInstanceOf[js.Any])
+    if (needlePointFeatureExtent != null) __obj.updateDynamic("needlePointFeatureExtent")(needlePointFeatureExtent.asInstanceOf[js.Any])
+    if (needlePointFeatureWidthRatio != null) __obj.updateDynamic("needlePointFeatureWidthRatio")(needlePointFeatureWidthRatio.asInstanceOf[js.Any])
+    if (needleShape != null) __obj.updateDynamic("needleShape")(needleShape)
+    if (needleStartExtent != null) __obj.updateDynamic("needleStartExtent")(needleStartExtent.asInstanceOf[js.Any])
+    if (needleStartWidthRatio != null) __obj.updateDynamic("needleStartWidthRatio")(needleStartWidthRatio.asInstanceOf[js.Any])
+    if (needleStrokeThickness != null) __obj.updateDynamic("needleStrokeThickness")(needleStrokeThickness.asInstanceOf[js.Any])
+    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
+    if (radiusMultiplier != null) __obj.updateDynamic("radiusMultiplier")(radiusMultiplier.asInstanceOf[js.Any])
+    if (rangeBrushes != null) __obj.updateDynamic("rangeBrushes")(rangeBrushes)
+    if (rangeOutlines != null) __obj.updateDynamic("rangeOutlines")(rangeOutlines)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (scaleBrush != null) __obj.updateDynamic("scaleBrush")(scaleBrush)
+    if (scaleEndAngle != null) __obj.updateDynamic("scaleEndAngle")(scaleEndAngle.asInstanceOf[js.Any])
+    if (scaleEndExtent != null) __obj.updateDynamic("scaleEndExtent")(scaleEndExtent.asInstanceOf[js.Any])
+    if (scaleOversweep != null) __obj.updateDynamic("scaleOversweep")(scaleOversweep.asInstanceOf[js.Any])
+    if (scaleOversweepShape != null) __obj.updateDynamic("scaleOversweepShape")(scaleOversweepShape)
+    if (scaleStartAngle != null) __obj.updateDynamic("scaleStartAngle")(scaleStartAngle.asInstanceOf[js.Any])
+    if (scaleStartExtent != null) __obj.updateDynamic("scaleStartExtent")(scaleStartExtent.asInstanceOf[js.Any])
+    if (scaleSweepDirection != null) __obj.updateDynamic("scaleSweepDirection")(scaleSweepDirection)
+    if (tickBrush != null) __obj.updateDynamic("tickBrush")(tickBrush)
+    if (tickEndExtent != null) __obj.updateDynamic("tickEndExtent")(tickEndExtent.asInstanceOf[js.Any])
+    if (tickStartExtent != null) __obj.updateDynamic("tickStartExtent")(tickStartExtent.asInstanceOf[js.Any])
+    if (tickStrokeThickness != null) __obj.updateDynamic("tickStrokeThickness")(tickStrokeThickness.asInstanceOf[js.Any])
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (transitionEasingFunction != null) __obj.updateDynamic("transitionEasingFunction")(transitionEasingFunction)
+    if (transitionProgress != null) __obj.updateDynamic("transitionProgress")(transitionProgress.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueChanged != null) __obj.updateDynamic("valueChanged")(valueChanged)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgRadialGauge]
+  }
+}
+

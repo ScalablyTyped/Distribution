@@ -116,3 +116,88 @@ trait DynamicItemBehavior
   def setResistance(resistance: scala.Double): scala.Unit
 }
 
+object DynamicItemBehavior {
+  @scala.inline
+  def apply(
+    addAngularVelocityForItem: js.Function2[js.Any, scala.Double, scala.Unit],
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    addItem: js.Function1[js.Any, scala.Unit],
+    addLinearVelocityForItem: js.Function2[js.Any, titaniumLib.Point, scala.Unit],
+    allowsRotation: scala.Boolean,
+    angularResistance: scala.Double,
+    angularVelocityForItem: js.Function1[js.Any, scala.Double],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    density: scala.Double,
+    elasticity: scala.Double,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    friction: scala.Double,
+    getAllowsRotation: js.Function0[scala.Boolean],
+    getAngularResistance: js.Function0[scala.Double],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getDensity: js.Function0[scala.Double],
+    getElasticity: js.Function0[scala.Double],
+    getFriction: js.Function0[scala.Double],
+    getItems: js.Function0[js.Array[titaniumLib.TitaniumNs.UINs.View]],
+    getResistance: js.Function0[scala.Double],
+    items: js.Array[titaniumLib.TitaniumNs.UINs.View],
+    linearVelocityForItem: js.Function1[js.Any, titaniumLib.Point],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    removeItem: js.Function1[js.Any, scala.Unit],
+    resistance: scala.Double,
+    setAllowsRotation: js.Function1[scala.Boolean, scala.Unit],
+    setAngularResistance: js.Function1[scala.Double, scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setDensity: js.Function1[scala.Double, scala.Unit],
+    setElasticity: js.Function1[scala.Double, scala.Unit],
+    setFriction: js.Function1[scala.Double, scala.Unit],
+    setResistance: js.Function1[scala.Double, scala.Unit],
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): DynamicItemBehavior = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addAngularVelocityForItem")(addAngularVelocityForItem)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addItem")(addItem)
+    __obj.updateDynamic("addLinearVelocityForItem")(addLinearVelocityForItem)
+    __obj.updateDynamic("allowsRotation")(allowsRotation)
+    __obj.updateDynamic("angularResistance")(angularResistance)
+    __obj.updateDynamic("angularVelocityForItem")(angularVelocityForItem)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("density")(density)
+    __obj.updateDynamic("elasticity")(elasticity)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("friction")(friction)
+    __obj.updateDynamic("getAllowsRotation")(getAllowsRotation)
+    __obj.updateDynamic("getAngularResistance")(getAngularResistance)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getDensity")(getDensity)
+    __obj.updateDynamic("getElasticity")(getElasticity)
+    __obj.updateDynamic("getFriction")(getFriction)
+    __obj.updateDynamic("getItems")(getItems)
+    __obj.updateDynamic("getResistance")(getResistance)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("linearVelocityForItem")(linearVelocityForItem)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removeItem")(removeItem)
+    __obj.updateDynamic("resistance")(resistance)
+    __obj.updateDynamic("setAllowsRotation")(setAllowsRotation)
+    __obj.updateDynamic("setAngularResistance")(setAngularResistance)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("setDensity")(setDensity)
+    __obj.updateDynamic("setElasticity")(setElasticity)
+    __obj.updateDynamic("setFriction")(setFriction)
+    __obj.updateDynamic("setResistance")(setResistance)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[DynamicItemBehavior]
+  }
+}
+

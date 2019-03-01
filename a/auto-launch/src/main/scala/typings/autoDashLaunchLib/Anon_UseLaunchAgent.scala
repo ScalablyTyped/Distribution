@@ -12,3 +12,12 @@ trait Anon_UseLaunchAgent extends js.Object {
   var useLaunchAgent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_UseLaunchAgent {
+  @scala.inline
+  def apply(useLaunchAgent: js.UndefOr[scala.Boolean] = js.undefined): Anon_UseLaunchAgent = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(useLaunchAgent)) __obj.updateDynamic("useLaunchAgent")(useLaunchAgent)
+    __obj.asInstanceOf[Anon_UseLaunchAgent]
+  }
+}
+

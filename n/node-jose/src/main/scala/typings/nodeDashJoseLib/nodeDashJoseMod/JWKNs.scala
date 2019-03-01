@@ -84,6 +84,8 @@ object JWKNs extends js.Object {
     var kid: java.lang.String
   }
   
+  trait KeyUse extends js.Object
+  
   trait RawKey extends js.Object {
     var alg: java.lang.String
     // e and n make up the public key
@@ -116,6 +118,5 @@ object JWKNs extends js.Object {
   def createKeyStore(): KeyStore = js.native
   def isKey(input: js.Any): /* is node-jose.node-jose.JWK.Key */ scala.Boolean = js.native
   def isKeyStore(input: js.Any): /* is node-jose.node-jose.JWK.KeyStore */ scala.Boolean = js.native
-  type KeyUse = nodeDashJoseLib.nodeDashJoseLibStrings.sig | nodeDashJoseLib.nodeDashJoseLibStrings.enc | nodeDashJoseLib.nodeDashJoseLibStrings.desc
 }
 

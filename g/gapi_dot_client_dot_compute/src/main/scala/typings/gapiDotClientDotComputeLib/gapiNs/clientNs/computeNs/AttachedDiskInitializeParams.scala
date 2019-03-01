@@ -55,3 +55,22 @@ trait AttachedDiskInitializeParams extends js.Object {
   var sourceImageEncryptionKey: js.UndefOr[CustomerEncryptionKey] = js.undefined
 }
 
+object AttachedDiskInitializeParams {
+  @scala.inline
+  def apply(
+    diskName: java.lang.String = null,
+    diskSizeGb: java.lang.String = null,
+    diskType: java.lang.String = null,
+    sourceImage: java.lang.String = null,
+    sourceImageEncryptionKey: CustomerEncryptionKey = null
+  ): AttachedDiskInitializeParams = {
+    val __obj = js.Dynamic.literal()
+    if (diskName != null) __obj.updateDynamic("diskName")(diskName)
+    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb)
+    if (diskType != null) __obj.updateDynamic("diskType")(diskType)
+    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage)
+    if (sourceImageEncryptionKey != null) __obj.updateDynamic("sourceImageEncryptionKey")(sourceImageEncryptionKey)
+    __obj.asInstanceOf[AttachedDiskInitializeParams]
+  }
+}
+

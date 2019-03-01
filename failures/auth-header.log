@@ -7,6 +7,8 @@
 [debug] PhaseRunner.scala:82 Success [id => auth-header, phase => scala.js] 
 [error] TokenOptions.scala:9 not found: type Params,   var params: js.UndefOr[Params] = js.undefined [id => auth-header, phase => build] 
 [error] TokenOptions.scala:9 not found: type Params,   var params: js.UndefOr[Params] = js.undefined [id => auth-header, phase => build] 
+[error] TokenOptions.scala:16 not found: type Params,   def apply(scheme: java.lang.String, params: Params = null, token: java.lang.String = null): TokenOptions = { [id => auth-header, phase => build] 
+[error] TokenOptions.scala:16 not found: type Params,   def apply(scheme: java.lang.String, params: Params = null, token: java.lang.String = null): TokenOptions = { [id => auth-header, phase => build] 
 [error] ^.scala:16 type Params is not a member of package typings.authDashHeaderLib.authDashHeaderMod,     params: authDashHeaderLib.authDashHeaderMod.Params [id => auth-header, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [auth-header => Compilation failed] [id => auth-header, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [auth-header => Compilation failed] [id => auth-header, phase => publish] 

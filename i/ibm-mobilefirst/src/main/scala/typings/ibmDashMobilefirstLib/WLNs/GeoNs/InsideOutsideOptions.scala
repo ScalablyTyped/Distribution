@@ -12,3 +12,12 @@ trait InsideOutsideOptions extends js.Object {
   var confidenceLevel: java.lang.String
 }
 
+object InsideOutsideOptions {
+  @scala.inline
+  def apply(confidenceLevel: java.lang.String): InsideOutsideOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("confidenceLevel")(confidenceLevel)
+    __obj.asInstanceOf[InsideOutsideOptions]
+  }
+}
+

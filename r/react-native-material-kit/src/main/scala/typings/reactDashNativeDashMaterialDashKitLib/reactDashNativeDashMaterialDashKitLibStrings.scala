@@ -40,7 +40,8 @@ object reactDashNativeDashMaterialDashKitLibStrings {
   sealed trait bold extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKPropTypesNs.rippleLocation
   
   @js.native
   sealed trait dashed extends js.Object
@@ -61,7 +62,8 @@ object reactDashNativeDashMaterialDashKitLibStrings {
   sealed trait solid extends js.Object
   
   @js.native
-  sealed trait tapLocation extends js.Object
+  sealed trait tapLocation
+    extends reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitMod.MKPropTypesNs.rippleLocation
   
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]

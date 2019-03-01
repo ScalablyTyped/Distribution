@@ -45,3 +45,39 @@ trait ISku
   var updated: scala.Double
 }
 
+object ISku {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    attributes: ISkuAttributes,
+    created: scala.Double,
+    currency: java.lang.String,
+    id: java.lang.String,
+    image: java.lang.String,
+    inventory: IInventory,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.sku,
+    package_dimensions: stripeLib.stripeMod.StripeNs.productsNs.IPackageDimensions,
+    price: scala.Double,
+    product: java.lang.String | stripeLib.stripeMod.StripeNs.productsNs.IProduct,
+    updated: scala.Double
+  ): ISku = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("attributes")(attributes)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("inventory")(inventory)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("package_dimensions")(package_dimensions)
+    __obj.updateDynamic("price")(price)
+    __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    __obj.updateDynamic("updated")(updated)
+    __obj.asInstanceOf[ISku]
+  }
+}
+

@@ -36,3 +36,26 @@ trait SellOpts extends js.Object {
   var total: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SellOpts {
+  @scala.inline
+  def apply(
+    currency: java.lang.String,
+    agree_btc_amount_varies: js.UndefOr[scala.Boolean] = js.undefined,
+    amount: java.lang.String = null,
+    commit: js.UndefOr[scala.Boolean] = js.undefined,
+    payment_method: java.lang.String = null,
+    quote: js.UndefOr[scala.Boolean] = js.undefined,
+    total: java.lang.String = null
+  ): SellOpts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currency")(currency)
+    if (!js.isUndefined(agree_btc_amount_varies)) __obj.updateDynamic("agree_btc_amount_varies")(agree_btc_amount_varies)
+    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit)
+    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
+    if (!js.isUndefined(quote)) __obj.updateDynamic("quote")(quote)
+    if (total != null) __obj.updateDynamic("total")(total)
+    __obj.asInstanceOf[SellOpts]
+  }
+}
+

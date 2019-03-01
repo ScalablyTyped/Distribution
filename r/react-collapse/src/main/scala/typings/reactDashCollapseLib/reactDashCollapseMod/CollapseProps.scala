@@ -23,3 +23,36 @@ trait CollapseProps
   var theme: js.UndefOr[reactDashCollapseLib.Anon_Collapse] = js.undefined
 }
 
+object CollapseProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    isOpened: scala.Boolean,
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[Collapse] = null,
+    fixedHeight: scala.Int | scala.Double = null,
+    forceInitialAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    hasNestedCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    onMeasure: js.Function1[/* hasWidthHeight */ reactDashCollapseLib.Anon_Height, scala.Unit] = null,
+    onRender: js.Function1[/* hasCurrentFromTo */ reactDashCollapseLib.Anon_Current, scala.Unit] = null,
+    onRest: js.Function0[scala.Unit] = null,
+    springConfig: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    theme: reactDashCollapseLib.Anon_Collapse = null
+  ): CollapseProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.updateDynamic("isOpened")(isOpened)
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (fixedHeight != null) __obj.updateDynamic("fixedHeight")(fixedHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceInitialAnimation)) __obj.updateDynamic("forceInitialAnimation")(forceInitialAnimation)
+    if (!js.isUndefined(hasNestedCollapse)) __obj.updateDynamic("hasNestedCollapse")(hasNestedCollapse)
+    if (onMeasure != null) __obj.updateDynamic("onMeasure")(onMeasure)
+    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (onRest != null) __obj.updateDynamic("onRest")(onRest)
+    if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[CollapseProps]
+  }
+}
+

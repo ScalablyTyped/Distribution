@@ -27,3 +27,22 @@ trait Resource extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Resource {
+  @scala.inline
+  def apply(
+    allowMultiple: js.UndefOr[scala.Boolean] = js.undefined,
+    field: java.lang.String = null,
+    name: java.lang.String = null,
+    resourceSettings: ResourcesResourceSettings = null,
+    title: java.lang.String = null
+  ): Resource = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (resourceSettings != null) __obj.updateDynamic("resourceSettings")(resourceSettings)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Resource]
+  }
+}
+

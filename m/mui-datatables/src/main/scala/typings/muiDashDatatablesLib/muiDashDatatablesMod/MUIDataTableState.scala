@@ -18,3 +18,32 @@ trait MUIDataTableState extends js.Object {
   var showResponsive: scala.Boolean
 }
 
+object MUIDataTableState {
+  @scala.inline
+  def apply(
+    expandedRows: MUIDataTableStateRows,
+    filterList: js.Array[js.Array[java.lang.String]],
+    page: scala.Double,
+    rowsPerPage: scala.Double,
+    rowsPerPageOptions: js.Array[scala.Double],
+    selectedRows: MUIDataTableStateRows,
+    showResponsive: scala.Boolean,
+    activeColumn: java.lang.String = null,
+    announceText: java.lang.String = null,
+    searchText: java.lang.String = null
+  ): MUIDataTableState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expandedRows")(expandedRows)
+    __obj.updateDynamic("filterList")(filterList)
+    __obj.updateDynamic("page")(page)
+    __obj.updateDynamic("rowsPerPage")(rowsPerPage)
+    __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions)
+    __obj.updateDynamic("selectedRows")(selectedRows)
+    __obj.updateDynamic("showResponsive")(showResponsive)
+    if (activeColumn != null) __obj.updateDynamic("activeColumn")(activeColumn)
+    if (announceText != null) __obj.updateDynamic("announceText")(announceText)
+    if (searchText != null) __obj.updateDynamic("searchText")(searchText)
+    __obj.asInstanceOf[MUIDataTableState]
+  }
+}
+

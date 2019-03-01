@@ -9,3 +9,12 @@ trait AddResponseCookie extends js.Object {
   var cookie: ResponseCookie
 }
 
+object AddResponseCookie {
+  @scala.inline
+  def apply(cookie: ResponseCookie): AddResponseCookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cookie")(cookie)
+    __obj.asInstanceOf[AddResponseCookie]
+  }
+}
+

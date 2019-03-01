@@ -27,3 +27,18 @@ trait ListenOptions extends js.Object {
   var psm: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object ListenOptions {
+  @scala.inline
+  def apply(
+    backlog: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    channel: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    psm: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): ListenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(backlog)) __obj.updateDynamic("backlog")(backlog)
+    if (!js.isUndefined(channel)) __obj.updateDynamic("channel")(channel)
+    if (!js.isUndefined(psm)) __obj.updateDynamic("psm")(psm)
+    __obj.asInstanceOf[ListenOptions]
+  }
+}
+

@@ -39,3 +39,26 @@ trait IUtilAnimationOptions extends js.Object {
   var startValue: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IUtilAnimationOptions {
+  @scala.inline
+  def apply(
+    byValue: scala.Double,
+    duration: scala.Int | scala.Double = null,
+    easing: js.Function = null,
+    endValue: scala.Int | scala.Double = null,
+    onChange: js.Function = null,
+    onComplete: js.Function = null,
+    startValue: scala.Int | scala.Double = null
+  ): IUtilAnimationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("byValue")(byValue)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IUtilAnimationOptions]
+  }
+}
+

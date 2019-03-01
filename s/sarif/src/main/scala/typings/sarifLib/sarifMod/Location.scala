@@ -34,3 +34,24 @@ trait Location extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    annotations: js.Array[Region] = null,
+    fullyQualifiedLogicalName: java.lang.String = null,
+    logicalLocationIndex: scala.Int | scala.Double = null,
+    message: Message = null,
+    physicalLocation: PhysicalLocation = null,
+    properties: PropertyBag = null
+  ): Location = {
+    val __obj = js.Dynamic.literal()
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
+    if (fullyQualifiedLogicalName != null) __obj.updateDynamic("fullyQualifiedLogicalName")(fullyQualifiedLogicalName)
+    if (logicalLocationIndex != null) __obj.updateDynamic("logicalLocationIndex")(logicalLocationIndex.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (physicalLocation != null) __obj.updateDynamic("physicalLocation")(physicalLocation)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Location]
+  }
+}
+

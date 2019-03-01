@@ -9,3 +9,12 @@ trait OnScrollChangedListener extends js.Object {
   def onScrollChanged(): js.Any
 }
 
+object OnScrollChangedListener {
+  @scala.inline
+  def apply(onScrollChanged: js.Function0[js.Any]): OnScrollChangedListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onScrollChanged")(onScrollChanged)
+    __obj.asInstanceOf[OnScrollChangedListener]
+  }
+}
+

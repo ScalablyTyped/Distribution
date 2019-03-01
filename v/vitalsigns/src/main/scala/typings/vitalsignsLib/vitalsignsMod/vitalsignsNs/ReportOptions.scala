@@ -22,3 +22,13 @@ trait ReportOptions extends js.Object {
   var separator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReportOptions {
+  @scala.inline
+  def apply(flatten: js.UndefOr[scala.Boolean] = js.undefined, separator: java.lang.String = null): ReportOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(flatten)) __obj.updateDynamic("flatten")(flatten)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    __obj.asInstanceOf[ReportOptions]
+  }
+}
+

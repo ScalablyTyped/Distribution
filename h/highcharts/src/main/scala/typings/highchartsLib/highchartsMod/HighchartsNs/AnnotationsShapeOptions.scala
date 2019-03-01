@@ -52,3 +52,26 @@ trait AnnotationsShapeOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AnnotationsShapeOptions {
+  @scala.inline
+  def apply(
+    fill: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    r: scala.Int | scala.Double = null,
+    stroke: java.lang.String = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    `type`: highchartsLib.highchartsLibStrings.circle | highchartsLib.highchartsLibStrings.path | highchartsLib.highchartsLibStrings.rect = null,
+    width: scala.Int | scala.Double = null
+  ): AnnotationsShapeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnnotationsShapeOptions]
+  }
+}
+

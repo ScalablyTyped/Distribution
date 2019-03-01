@@ -12,3 +12,20 @@ trait SubscriberAdvertisement extends Advertisement {
   var subscribesTo: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object SubscriberAdvertisement {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    key: java.lang.String = null,
+    namespace: java.lang.String = null,
+    subscribesTo: js.Array[java.lang.String] = null
+  ): SubscriberAdvertisement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (subscribesTo != null) __obj.updateDynamic("subscribesTo")(subscribesTo)
+    __obj.asInstanceOf[SubscriberAdvertisement]
+  }
+}
+

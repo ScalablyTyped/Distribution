@@ -16,3 +16,13 @@ trait DirectOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DirectOptions {
+  @scala.inline
+  def apply(debug: js.UndefOr[scala.Boolean] = js.undefined, name: java.lang.String = null): DirectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[DirectOptions]
+  }
+}
+

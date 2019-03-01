@@ -10,3 +10,13 @@ trait Anon_SortBy extends js.Object {
   var sortDirection: reactDashVirtualizedLib.distEsTableMod.SortDirectionType
 }
 
+object Anon_SortBy {
+  @scala.inline
+  def apply(sortBy: java.lang.String, sortDirection: reactDashVirtualizedLib.distEsTableMod.SortDirectionType): Anon_SortBy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sortBy")(sortBy)
+    __obj.updateDynamic("sortDirection")(sortDirection)
+    __obj.asInstanceOf[Anon_SortBy]
+  }
+}
+

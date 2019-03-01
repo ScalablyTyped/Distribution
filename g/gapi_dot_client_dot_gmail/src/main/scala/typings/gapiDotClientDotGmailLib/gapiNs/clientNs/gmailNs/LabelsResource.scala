@@ -20,3 +20,39 @@ trait LabelsResource extends js.Object {
   def update(request: gapiDotClientDotGmailLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Label]
 }
 
+object LabelsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[gapiDotClientDotGmailLib.Anon_Alt, gapiDotClientLib.gapiNs.clientNs.Request[Label]],
+    delete: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Label]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListLabelsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Label]
+    ],
+    update: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Label]
+    ]
+  ): LabelsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[LabelsResource]
+  }
+}
+

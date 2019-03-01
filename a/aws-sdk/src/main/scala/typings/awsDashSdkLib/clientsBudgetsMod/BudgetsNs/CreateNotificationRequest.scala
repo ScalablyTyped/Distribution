@@ -24,3 +24,15 @@ trait CreateNotificationRequest extends js.Object {
   var Subscribers: Subscribers
 }
 
+object CreateNotificationRequest {
+  @scala.inline
+  def apply(AccountId: AccountId, BudgetName: BudgetName, Notification: Notification, Subscribers: Subscribers): CreateNotificationRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccountId")(AccountId)
+    __obj.updateDynamic("BudgetName")(BudgetName)
+    __obj.updateDynamic("Notification")(Notification)
+    __obj.updateDynamic("Subscribers")(Subscribers)
+    __obj.asInstanceOf[CreateNotificationRequest]
+  }
+}
+

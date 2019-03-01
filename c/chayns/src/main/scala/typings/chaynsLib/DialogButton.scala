@@ -16,3 +16,13 @@ trait DialogButton extends js.Object {
   var text: java.lang.String
 }
 
+object DialogButton {
+  @scala.inline
+  def apply(buttonType: chaynsLib.chaynsNs.dialogNs.buttonType, text: java.lang.String): DialogButton = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buttonType")(buttonType)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[DialogButton]
+  }
+}
+

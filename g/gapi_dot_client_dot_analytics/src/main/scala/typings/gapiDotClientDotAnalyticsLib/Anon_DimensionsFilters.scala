@@ -20,3 +20,24 @@ trait Anon_DimensionsFilters extends js.Object {
   var sort: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_DimensionsFilters {
+  @scala.inline
+  def apply(
+    dimensions: java.lang.String = null,
+    filters: java.lang.String = null,
+    ids: java.lang.String = null,
+    `max-results`: scala.Int | scala.Double = null,
+    metrics: js.Array[java.lang.String] = null,
+    sort: js.Array[java.lang.String] = null
+  ): Anon_DimensionsFilters = {
+    val __obj = js.Dynamic.literal()
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    __obj.asInstanceOf[Anon_DimensionsFilters]
+  }
+}
+

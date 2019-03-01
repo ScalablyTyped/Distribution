@@ -22,3 +22,24 @@ trait ServerOptions extends js.Object {
   var serveStaticOptions: js.UndefOr[serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    baseDir: java.lang.String | js.Array[java.lang.String] = null,
+    directory: js.UndefOr[scala.Boolean] = js.undefined,
+    index: java.lang.String = null,
+    middleware: js.Array[MiddlewareHandler | PerRouteMiddleware] = null,
+    routes: Hash[java.lang.String] = null,
+    serveStaticOptions: serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
+    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory)
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (middleware != null) __obj.updateDynamic("middleware")(middleware)
+    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (serveStaticOptions != null) __obj.updateDynamic("serveStaticOptions")(serveStaticOptions)
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

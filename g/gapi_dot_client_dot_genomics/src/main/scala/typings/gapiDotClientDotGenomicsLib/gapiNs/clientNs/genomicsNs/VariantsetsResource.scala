@@ -72,3 +72,42 @@ trait VariantsetsResource extends js.Object {
   def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchVariantSetsResponse]
 }
 
+object VariantsetsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VariantSet]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    export: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VariantSet]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMaskUploadType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VariantSet]
+    ],
+    search: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchVariantSetsResponse]
+    ]
+  ): VariantsetsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("export")(export)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[VariantsetsResource]
+  }
+}
+

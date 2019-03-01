@@ -131,3 +131,68 @@ trait ClusterState extends js.Object {
   ] = js.undefined
 }
 
+object ClusterState {
+  @scala.inline
+  def apply(
+    applyImmediately: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    availabilityZones: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    backupRetentionPeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    clusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterIdentifierPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterMembers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    clusterResourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dbClusterParameterGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dbSubnetGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enabledCloudwatchLogsExports: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engine: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    finalSnapshotIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hostedZoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    masterPassword: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    masterUsername: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    preferredBackupWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    preferredMaintenanceWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    readerEndpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    skipFinalSnapshot: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    snapshotIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    storageEncrypted: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): ClusterState = {
+    val __obj = js.Dynamic.literal()
+    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
+    if (backupRetentionPeriod != null) __obj.updateDynamic("backupRetentionPeriod")(backupRetentionPeriod.asInstanceOf[js.Any])
+    if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
+    if (clusterIdentifierPrefix != null) __obj.updateDynamic("clusterIdentifierPrefix")(clusterIdentifierPrefix.asInstanceOf[js.Any])
+    if (clusterMembers != null) __obj.updateDynamic("clusterMembers")(clusterMembers.asInstanceOf[js.Any])
+    if (clusterResourceId != null) __obj.updateDynamic("clusterResourceId")(clusterResourceId.asInstanceOf[js.Any])
+    if (dbClusterParameterGroupName != null) __obj.updateDynamic("dbClusterParameterGroupName")(dbClusterParameterGroupName.asInstanceOf[js.Any])
+    if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
+    if (enabledCloudwatchLogsExports != null) __obj.updateDynamic("enabledCloudwatchLogsExports")(enabledCloudwatchLogsExports.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (finalSnapshotIdentifier != null) __obj.updateDynamic("finalSnapshotIdentifier")(finalSnapshotIdentifier.asInstanceOf[js.Any])
+    if (hostedZoneId != null) __obj.updateDynamic("hostedZoneId")(hostedZoneId.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (masterPassword != null) __obj.updateDynamic("masterPassword")(masterPassword.asInstanceOf[js.Any])
+    if (masterUsername != null) __obj.updateDynamic("masterUsername")(masterUsername.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (preferredBackupWindow != null) __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow.asInstanceOf[js.Any])
+    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
+    if (readerEndpoint != null) __obj.updateDynamic("readerEndpoint")(readerEndpoint.asInstanceOf[js.Any])
+    if (skipFinalSnapshot != null) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.asInstanceOf[js.Any])
+    if (snapshotIdentifier != null) __obj.updateDynamic("snapshotIdentifier")(snapshotIdentifier.asInstanceOf[js.Any])
+    if (storageEncrypted != null) __obj.updateDynamic("storageEncrypted")(storageEncrypted.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterState]
+  }
+}
+

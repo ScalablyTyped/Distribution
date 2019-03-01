@@ -37,3 +37,20 @@ trait Anon_ImageDataKey extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ImageDataKey {
+  @scala.inline
+  def apply(
+    imageData: firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.ImageDataType] = null,
+    path: java.lang.String | org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null,
+    tabId: scala.Int | scala.Double = null,
+    windowId: scala.Int | scala.Double = null
+  ): Anon_ImageDataKey = {
+    val __obj = js.Dynamic.literal()
+    if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ImageDataKey]
+  }
+}
+

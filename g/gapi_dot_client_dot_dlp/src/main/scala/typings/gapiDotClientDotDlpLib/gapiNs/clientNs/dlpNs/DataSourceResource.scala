@@ -13,3 +13,17 @@ trait DataSourceResource extends js.Object {
   def analyze(request: gapiDotClientDotDlpLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningOperation]
 }
 
+object DataSourceResource {
+  @scala.inline
+  def apply(
+    analyze: js.Function1[
+      gapiDotClientDotDlpLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningOperation]
+    ]
+  ): DataSourceResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("analyze")(analyze)
+    __obj.asInstanceOf[DataSourceResource]
+  }
+}
+

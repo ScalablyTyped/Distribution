@@ -11,3 +11,14 @@ trait Anon_BasenameDirnameExtname extends js.Object {
   var extname: java.lang.String
 }
 
+object Anon_BasenameDirnameExtname {
+  @scala.inline
+  def apply(basename: java.lang.String, dirname: java.lang.String, extname: java.lang.String): Anon_BasenameDirnameExtname = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("basename")(basename)
+    __obj.updateDynamic("dirname")(dirname)
+    __obj.updateDynamic("extname")(extname)
+    __obj.asInstanceOf[Anon_BasenameDirnameExtname]
+  }
+}
+

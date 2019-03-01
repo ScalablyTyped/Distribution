@@ -42,3 +42,22 @@ trait DropdownListMessages extends js.Object {
   ] = js.undefined
 }
 
+object DropdownListMessages {
+  @scala.inline
+  def apply(
+    createOption: java.lang.String | (js.Function1[/* props */ DropdownListProps, java.lang.String]) = null,
+    emptyFilter: java.lang.String | (js.Function1[/* props */ DropdownListProps, java.lang.String]) = null,
+    emptyList: java.lang.String | (js.Function1[/* props */ DropdownListProps, java.lang.String]) = null,
+    filterPlaceholder: java.lang.String | (js.Function1[/* props */ DropdownListProps, java.lang.String]) = null,
+    open: java.lang.String | (js.Function1[/* props */ DropdownListProps, java.lang.String]) = null
+  ): DropdownListMessages = {
+    val __obj = js.Dynamic.literal()
+    if (createOption != null) __obj.updateDynamic("createOption")(createOption.asInstanceOf[js.Any])
+    if (emptyFilter != null) __obj.updateDynamic("emptyFilter")(emptyFilter.asInstanceOf[js.Any])
+    if (emptyList != null) __obj.updateDynamic("emptyList")(emptyList.asInstanceOf[js.Any])
+    if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DropdownListMessages]
+  }
+}
+

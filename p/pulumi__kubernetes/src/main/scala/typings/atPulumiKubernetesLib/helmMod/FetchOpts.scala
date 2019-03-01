@@ -47,3 +47,42 @@ trait FetchOpts extends js.Object {
   var version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object FetchOpts {
+  @scala.inline
+  def apply(
+    caFile: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certFile: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    destination: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    devel: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    home: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyFile: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyring: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    password: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    prov: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    repo: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    untar: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    untardir: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    username: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    verify: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    version: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): FetchOpts = {
+    val __obj = js.Dynamic.literal()
+    if (caFile != null) __obj.updateDynamic("caFile")(caFile.asInstanceOf[js.Any])
+    if (certFile != null) __obj.updateDynamic("certFile")(certFile.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (devel != null) __obj.updateDynamic("devel")(devel.asInstanceOf[js.Any])
+    if (home != null) __obj.updateDynamic("home")(home.asInstanceOf[js.Any])
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile.asInstanceOf[js.Any])
+    if (keyring != null) __obj.updateDynamic("keyring")(keyring.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (prov != null) __obj.updateDynamic("prov")(prov.asInstanceOf[js.Any])
+    if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])
+    if (untar != null) __obj.updateDynamic("untar")(untar.asInstanceOf[js.Any])
+    if (untardir != null) __obj.updateDynamic("untardir")(untardir.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    if (verify != null) __obj.updateDynamic("verify")(verify.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FetchOpts]
+  }
+}
+

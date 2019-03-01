@@ -12,3 +12,13 @@ trait RoomClientAddress extends js.Object {
   var xmppAddress: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RoomClientAddress {
+  @scala.inline
+  def apply(kind: java.lang.String = null, xmppAddress: java.lang.String = null): RoomClientAddress = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (xmppAddress != null) __obj.updateDynamic("xmppAddress")(xmppAddress)
+    __obj.asInstanceOf[RoomClientAddress]
+  }
+}
+

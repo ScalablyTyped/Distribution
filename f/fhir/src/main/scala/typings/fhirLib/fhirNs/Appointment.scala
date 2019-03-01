@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)
   */
-trait Appointment extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Appointment extends DomainResource {
   /**
     * Contains extended information for property 'comment'.
     */
@@ -121,5 +122,96 @@ trait Appointment extends DomainResource {
     * Additional information to support the appointment
     */
   var supportingInformation: js.UndefOr[js.Array[Reference]] = js.undefined
+}
+
+object Appointment {
+  @scala.inline
+  def apply(
+    participant: js.Array[AppointmentParticipant],
+    status: code,
+    _comment: Element = null,
+    _created: Element = null,
+    _description: Element = null,
+    _end: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _minutesDuration: Element = null,
+    _priority: Element = null,
+    _resourceType: Element = null,
+    _start: Element = null,
+    _status: Element = null,
+    appointmentType: CodeableConcept = null,
+    comment: java.lang.String = null,
+    contained: js.Array[Resource] = null,
+    created: dateTime = null,
+    description: java.lang.String = null,
+    end: instant = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    incomingReferral: js.Array[Reference] = null,
+    indication: js.Array[Reference] = null,
+    language: code = null,
+    meta: Meta = null,
+    minutesDuration: js.UndefOr[positiveInt] = js.undefined,
+    modifierExtension: js.Array[Extension] = null,
+    priority: js.UndefOr[unsignedInt] = js.undefined,
+    reason: js.Array[CodeableConcept] = null,
+    requestedPeriod: js.Array[Period] = null,
+    resourceType: code = null,
+    serviceCategory: CodeableConcept = null,
+    serviceType: js.Array[CodeableConcept] = null,
+    slot: js.Array[Reference] = null,
+    specialty: js.Array[CodeableConcept] = null,
+    start: instant = null,
+    supportingInformation: js.Array[Reference] = null,
+    text: Narrative = null
+  ): Appointment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("participant")(participant)
+    __obj.updateDynamic("status")(status)
+    if (_comment != null) __obj.updateDynamic("_comment")(_comment)
+    if (_created != null) __obj.updateDynamic("_created")(_created)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_end != null) __obj.updateDynamic("_end")(_end)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_minutesDuration != null) __obj.updateDynamic("_minutesDuration")(_minutesDuration)
+    if (_priority != null) __obj.updateDynamic("_priority")(_priority)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_start != null) __obj.updateDynamic("_start")(_start)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (appointmentType != null) __obj.updateDynamic("appointmentType")(appointmentType)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (incomingReferral != null) __obj.updateDynamic("incomingReferral")(incomingReferral)
+    if (indication != null) __obj.updateDynamic("indication")(indication)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (!js.isUndefined(minutesDuration)) __obj.updateDynamic("minutesDuration")(minutesDuration)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (requestedPeriod != null) __obj.updateDynamic("requestedPeriod")(requestedPeriod)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (serviceCategory != null) __obj.updateDynamic("serviceCategory")(serviceCategory)
+    if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType)
+    if (slot != null) __obj.updateDynamic("slot")(slot)
+    if (specialty != null) __obj.updateDynamic("specialty")(specialty)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (supportingInformation != null) __obj.updateDynamic("supportingInformation")(supportingInformation)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Appointment]
+  }
 }
 

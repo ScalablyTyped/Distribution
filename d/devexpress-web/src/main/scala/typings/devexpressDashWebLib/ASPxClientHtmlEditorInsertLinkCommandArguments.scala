@@ -36,3 +36,24 @@ trait ASPxClientHtmlEditorInsertLinkCommandArguments extends ASPxClientHtmlEdito
   var url: java.lang.String
 }
 
+object ASPxClientHtmlEditorInsertLinkCommandArguments {
+  @scala.inline
+  def apply(
+    selectedElement: js.Object,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
+    target: java.lang.String,
+    text: java.lang.String,
+    title: java.lang.String,
+    url: java.lang.String
+  ): ASPxClientHtmlEditorInsertLinkCommandArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("selectedElement")(selectedElement)
+    __obj.updateDynamic("styleSettings")(styleSettings)
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ASPxClientHtmlEditorInsertLinkCommandArguments]
+  }
+}
+

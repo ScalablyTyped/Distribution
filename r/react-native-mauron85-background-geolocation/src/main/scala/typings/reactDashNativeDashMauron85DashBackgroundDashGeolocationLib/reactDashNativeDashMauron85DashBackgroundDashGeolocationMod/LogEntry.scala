@@ -16,3 +16,22 @@ trait LogEntry extends js.Object {
   var timestamp: scala.Double
 }
 
+object LogEntry {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    level: java.lang.String,
+    message: java.lang.String,
+    stackTrace: java.lang.String,
+    timestamp: scala.Double
+  ): LogEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("stackTrace")(stackTrace)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[LogEntry]
+  }
+}
+

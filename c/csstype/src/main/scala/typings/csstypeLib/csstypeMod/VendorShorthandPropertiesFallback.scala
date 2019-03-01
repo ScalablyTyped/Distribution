@@ -59,3 +59,62 @@ trait VendorShorthandPropertiesFallback[TLength] extends js.Object {
   var msScrollSnapY: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
 }
 
+object VendorShorthandPropertiesFallback {
+  @scala.inline
+  def apply[TLength](
+    MozAnimation: AnimationProperty | js.Array[AnimationProperty] = null,
+    MozBorderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
+    MozColumnRule: ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]] = null,
+    MozColumns: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]] = null,
+    MozTransition: TransitionProperty | js.Array[TransitionProperty] = null,
+    OBorderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
+    WebkitAnimation: AnimationProperty | js.Array[AnimationProperty] = null,
+    WebkitBorderBefore: WebkitBorderBeforeProperty[TLength] | js.Array[WebkitBorderBeforeProperty[TLength]] = null,
+    WebkitBorderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
+    WebkitBorderRadius: BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]] = null,
+    WebkitColumnRule: ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]] = null,
+    WebkitColumns: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]] = null,
+    WebkitFlex: FlexProperty[TLength] | js.Array[FlexProperty[TLength]] = null,
+    WebkitFlexFlow: FlexFlowProperty | js.Array[FlexFlowProperty] = null,
+    WebkitLineClamp: WebkitLineClampProperty | js.Array[WebkitLineClampProperty] = null,
+    WebkitMask: WebkitMaskProperty[TLength] | js.Array[WebkitMaskProperty[TLength]] = null,
+    WebkitTextEmphasis: TextEmphasisProperty | js.Array[TextEmphasisProperty] = null,
+    WebkitTextStroke: WebkitTextStrokeProperty[TLength] | js.Array[WebkitTextStrokeProperty[TLength]] = null,
+    WebkitTransition: TransitionProperty | js.Array[TransitionProperty] = null,
+    msContentZoomLimit: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    msContentZoomSnap: MsContentZoomSnapProperty | js.Array[MsContentZoomSnapProperty] = null,
+    msFlex: FlexProperty[TLength] | js.Array[FlexProperty[TLength]] = null,
+    msScrollLimit: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    msScrollSnapX: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null,
+    msScrollSnapY: csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString] = null
+  ): VendorShorthandPropertiesFallback[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (MozAnimation != null) __obj.updateDynamic("MozAnimation")(MozAnimation.asInstanceOf[js.Any])
+    if (MozBorderImage != null) __obj.updateDynamic("MozBorderImage")(MozBorderImage.asInstanceOf[js.Any])
+    if (MozColumnRule != null) __obj.updateDynamic("MozColumnRule")(MozColumnRule.asInstanceOf[js.Any])
+    if (MozColumns != null) __obj.updateDynamic("MozColumns")(MozColumns.asInstanceOf[js.Any])
+    if (MozTransition != null) __obj.updateDynamic("MozTransition")(MozTransition.asInstanceOf[js.Any])
+    if (OBorderImage != null) __obj.updateDynamic("OBorderImage")(OBorderImage.asInstanceOf[js.Any])
+    if (WebkitAnimation != null) __obj.updateDynamic("WebkitAnimation")(WebkitAnimation.asInstanceOf[js.Any])
+    if (WebkitBorderBefore != null) __obj.updateDynamic("WebkitBorderBefore")(WebkitBorderBefore.asInstanceOf[js.Any])
+    if (WebkitBorderImage != null) __obj.updateDynamic("WebkitBorderImage")(WebkitBorderImage.asInstanceOf[js.Any])
+    if (WebkitBorderRadius != null) __obj.updateDynamic("WebkitBorderRadius")(WebkitBorderRadius.asInstanceOf[js.Any])
+    if (WebkitColumnRule != null) __obj.updateDynamic("WebkitColumnRule")(WebkitColumnRule.asInstanceOf[js.Any])
+    if (WebkitColumns != null) __obj.updateDynamic("WebkitColumns")(WebkitColumns.asInstanceOf[js.Any])
+    if (WebkitFlex != null) __obj.updateDynamic("WebkitFlex")(WebkitFlex.asInstanceOf[js.Any])
+    if (WebkitFlexFlow != null) __obj.updateDynamic("WebkitFlexFlow")(WebkitFlexFlow.asInstanceOf[js.Any])
+    if (WebkitLineClamp != null) __obj.updateDynamic("WebkitLineClamp")(WebkitLineClamp.asInstanceOf[js.Any])
+    if (WebkitMask != null) __obj.updateDynamic("WebkitMask")(WebkitMask.asInstanceOf[js.Any])
+    if (WebkitTextEmphasis != null) __obj.updateDynamic("WebkitTextEmphasis")(WebkitTextEmphasis.asInstanceOf[js.Any])
+    if (WebkitTextStroke != null) __obj.updateDynamic("WebkitTextStroke")(WebkitTextStroke.asInstanceOf[js.Any])
+    if (WebkitTransition != null) __obj.updateDynamic("WebkitTransition")(WebkitTransition.asInstanceOf[js.Any])
+    if (msContentZoomLimit != null) __obj.updateDynamic("msContentZoomLimit")(msContentZoomLimit.asInstanceOf[js.Any])
+    if (msContentZoomSnap != null) __obj.updateDynamic("msContentZoomSnap")(msContentZoomSnap.asInstanceOf[js.Any])
+    if (msFlex != null) __obj.updateDynamic("msFlex")(msFlex.asInstanceOf[js.Any])
+    if (msScrollLimit != null) __obj.updateDynamic("msScrollLimit")(msScrollLimit.asInstanceOf[js.Any])
+    if (msScrollSnapX != null) __obj.updateDynamic("msScrollSnapX")(msScrollSnapX.asInstanceOf[js.Any])
+    if (msScrollSnapY != null) __obj.updateDynamic("msScrollSnapY")(msScrollSnapY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VendorShorthandPropertiesFallback[TLength]]
+  }
+}
+

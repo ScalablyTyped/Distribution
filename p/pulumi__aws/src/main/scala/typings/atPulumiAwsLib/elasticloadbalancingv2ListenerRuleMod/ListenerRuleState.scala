@@ -36,3 +36,26 @@ trait ListenerRuleState extends js.Object {
   val priority: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object ListenerRuleState {
+  @scala.inline
+  def apply(
+    actions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+      ]
+    ] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    conditions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FieldValues]]] = null,
+    listenerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    priority: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): ListenerRuleState = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
+    if (listenerArn != null) __obj.updateDynamic("listenerArn")(listenerArn.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListenerRuleState]
+  }
+}
+

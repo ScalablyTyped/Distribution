@@ -16,3 +16,12 @@ trait CameraPopoverHandle extends js.Object {
   def setPosition(popoverOptions: CameraPopoverOptions): scala.Unit
 }
 
+object CameraPopoverHandle {
+  @scala.inline
+  def apply(setPosition: js.Function1[CameraPopoverOptions, scala.Unit]): CameraPopoverHandle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setPosition")(setPosition)
+    __obj.asInstanceOf[CameraPopoverHandle]
+  }
+}
+

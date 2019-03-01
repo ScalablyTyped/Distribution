@@ -18,3 +18,32 @@ trait TileOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TileOptions {
+  @scala.inline
+  def apply(
+    source: openlayersLib.openlayersMod.sourceNs.Tile,
+    extent: openlayersLib.openlayersMod.Extent = null,
+    map: openlayersLib.openlayersMod.Map = null,
+    maxResolution: scala.Int | scala.Double = null,
+    minResolution: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    preload: scala.Int | scala.Double = null,
+    useInterimTilesOnError: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): TileOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (maxResolution != null) __obj.updateDynamic("maxResolution")(maxResolution.asInstanceOf[js.Any])
+    if (minResolution != null) __obj.updateDynamic("minResolution")(minResolution.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (!js.isUndefined(useInterimTilesOnError)) __obj.updateDynamic("useInterimTilesOnError")(useInterimTilesOnError)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TileOptions]
+  }
+}
+

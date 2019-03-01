@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object bootstrapDashDatepickerLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0` extends DatepickerViewModes
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1` extends DatepickerViewModes
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2` extends DatepickerViewModes
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3` extends DatepickerViewModes
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4` extends DatepickerViewModes
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

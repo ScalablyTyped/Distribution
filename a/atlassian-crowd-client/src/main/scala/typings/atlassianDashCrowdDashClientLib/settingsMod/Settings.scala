@@ -15,3 +15,26 @@ trait Settings extends js.Object {
   val sessionTimeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    application: atlassianDashCrowdDashClientLib.Anon_NamePassword,
+    baseUrl: java.lang.String,
+    attributesEncoder: js.Function1[/* obj */ js.Any, java.lang.String] = null,
+    attributesParser: js.Function1[/* json */ java.lang.String, _] = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    nesting: js.UndefOr[scala.Boolean] = js.undefined,
+    sessionTimeout: scala.Int | scala.Double = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application")(application)
+    __obj.updateDynamic("baseUrl")(baseUrl)
+    if (attributesEncoder != null) __obj.updateDynamic("attributesEncoder")(attributesEncoder)
+    if (attributesParser != null) __obj.updateDynamic("attributesParser")(attributesParser)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(nesting)) __obj.updateDynamic("nesting")(nesting)
+    if (sessionTimeout != null) __obj.updateDynamic("sessionTimeout")(sessionTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Settings]
+  }
+}
+

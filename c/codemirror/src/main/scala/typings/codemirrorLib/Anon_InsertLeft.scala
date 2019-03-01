@@ -13,3 +13,13 @@ trait Anon_InsertLeft extends js.Object {
   var widget: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
+object Anon_InsertLeft {
+  @scala.inline
+  def apply(insertLeft: js.UndefOr[scala.Boolean] = js.undefined, widget: stdLib.HTMLElement = null): Anon_InsertLeft = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(insertLeft)) __obj.updateDynamic("insertLeft")(insertLeft)
+    if (widget != null) __obj.updateDynamic("widget")(widget)
+    __obj.asInstanceOf[Anon_InsertLeft]
+  }
+}
+

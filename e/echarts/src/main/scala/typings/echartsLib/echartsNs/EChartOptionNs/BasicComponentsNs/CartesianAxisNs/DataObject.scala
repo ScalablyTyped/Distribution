@@ -13,3 +13,13 @@ trait DataObject extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataObject {
+  @scala.inline
+  def apply(textStyle: TextStyle = null, value: java.lang.String = null): DataObject = {
+    val __obj = js.Dynamic.literal()
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DataObject]
+  }
+}
+

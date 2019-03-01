@@ -44,3 +44,26 @@ trait GenerateSecretOptions extends js.Object {
   var symbols: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GenerateSecretOptions {
+  @scala.inline
+  def apply(
+    google_auth_qr: js.UndefOr[scala.Boolean] = js.undefined,
+    issuer: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    otpauth_url: js.UndefOr[scala.Boolean] = js.undefined,
+    qr_codes: js.UndefOr[scala.Boolean] = js.undefined,
+    symbols: js.UndefOr[scala.Boolean] = js.undefined
+  ): GenerateSecretOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(google_auth_qr)) __obj.updateDynamic("google_auth_qr")(google_auth_qr)
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(otpauth_url)) __obj.updateDynamic("otpauth_url")(otpauth_url)
+    if (!js.isUndefined(qr_codes)) __obj.updateDynamic("qr_codes")(qr_codes)
+    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols)
+    __obj.asInstanceOf[GenerateSecretOptions]
+  }
+}
+

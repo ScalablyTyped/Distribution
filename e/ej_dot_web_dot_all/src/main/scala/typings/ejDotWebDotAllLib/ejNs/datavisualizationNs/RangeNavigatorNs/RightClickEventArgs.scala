@@ -20,3 +20,20 @@ trait RightClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RightClickEventArgs {
+  @scala.inline
+  def apply(
+    Data: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): RightClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Data != null) __obj.updateDynamic("Data")(Data)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RightClickEventArgs]
+  }
+}
+

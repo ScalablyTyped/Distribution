@@ -10,3 +10,12 @@ trait JobExecutionInfo extends js.Object {
   var stages: js.UndefOr[stdLib.Record[java.lang.String, JobExecutionStageInfo]] = js.undefined
 }
 
+object JobExecutionInfo {
+  @scala.inline
+  def apply(stages: stdLib.Record[java.lang.String, JobExecutionStageInfo] = null): JobExecutionInfo = {
+    val __obj = js.Dynamic.literal()
+    if (stages != null) __obj.updateDynamic("stages")(stages)
+    __obj.asInstanceOf[JobExecutionInfo]
+  }
+}
+

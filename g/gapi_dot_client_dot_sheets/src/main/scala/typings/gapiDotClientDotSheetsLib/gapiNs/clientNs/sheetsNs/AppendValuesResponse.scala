@@ -18,3 +18,18 @@ trait AppendValuesResponse extends js.Object {
   var updates: js.UndefOr[UpdateValuesResponse] = js.undefined
 }
 
+object AppendValuesResponse {
+  @scala.inline
+  def apply(
+    spreadsheetId: java.lang.String = null,
+    tableRange: java.lang.String = null,
+    updates: UpdateValuesResponse = null
+  ): AppendValuesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange)
+    if (updates != null) __obj.updateDynamic("updates")(updates)
+    __obj.asInstanceOf[AppendValuesResponse]
+  }
+}
+

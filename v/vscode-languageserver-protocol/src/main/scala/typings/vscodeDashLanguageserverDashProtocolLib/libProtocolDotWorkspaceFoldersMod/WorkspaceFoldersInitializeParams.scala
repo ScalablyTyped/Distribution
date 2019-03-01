@@ -12,3 +12,12 @@ trait WorkspaceFoldersInitializeParams extends js.Object {
   var workspaceFolders: js.Array[WorkspaceFolder] | scala.Null
 }
 
+object WorkspaceFoldersInitializeParams {
+  @scala.inline
+  def apply(workspaceFolders: js.Array[WorkspaceFolder] = null): WorkspaceFoldersInitializeParams = {
+    val __obj = js.Dynamic.literal()
+    if (workspaceFolders != null) __obj.updateDynamic("workspaceFolders")(workspaceFolders)
+    __obj.asInstanceOf[WorkspaceFoldersInitializeParams]
+  }
+}
+

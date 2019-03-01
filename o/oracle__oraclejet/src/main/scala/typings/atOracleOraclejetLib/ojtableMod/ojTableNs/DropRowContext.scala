@@ -10,3 +10,12 @@ trait DropRowContext extends js.Object {
   var rowIndex: scala.Double
 }
 
+object DropRowContext {
+  @scala.inline
+  def apply(rowIndex: scala.Double): DropRowContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rowIndex")(rowIndex)
+    __obj.asInstanceOf[DropRowContext]
+  }
+}
+

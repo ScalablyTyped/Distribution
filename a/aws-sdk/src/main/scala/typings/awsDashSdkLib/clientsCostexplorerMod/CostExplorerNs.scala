@@ -1108,18 +1108,40 @@ object CostExplorerNs extends js.Object {
     var Total: js.UndefOr[ReservationAggregates] = js.undefined
   }
   
+  trait _AccountScope extends js.Object
+  
+  trait _Context extends js.Object
+  
+  trait _Dimension extends js.Object
+  
+  trait _Granularity extends js.Object
+  
+  trait _GroupDefinitionType extends js.Object
+  
+  trait _LookbackPeriodInDays extends js.Object
+  
+  trait _Metric extends js.Object
+  
+  trait _OfferingClass extends js.Object
+  
+  trait _PaymentOption extends js.Object
+  
+  trait _TermInYears extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
-  type AccountScope = awsDashSdkLib.awsDashSdkLibStrings.PAYER | awsDashSdkLib.awsDashSdkLibStrings.LINKED | java.lang.String
+  type AccountScope = _AccountScope | java.lang.String
   type AmortizedRecurringFee = java.lang.String
   type AmortizedUpfrontFee = java.lang.String
   type AttributeType = java.lang.String
   type AttributeValue = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type Context = awsDashSdkLib.awsDashSdkLibStrings.COST_AND_USAGE | awsDashSdkLib.awsDashSdkLibStrings.RESERVATIONS | java.lang.String
+  type Context = _Context | java.lang.String
   type CoverageHoursPercentage = java.lang.String
   type CoverageNormalizedUnitsPercentage = java.lang.String
   type CoveragesByTime = js.Array[CoverageByTime]
-  type Dimension = awsDashSdkLib.awsDashSdkLibStrings.AZ | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.LINKED_ACCOUNT | awsDashSdkLib.awsDashSdkLibStrings.OPERATION | awsDashSdkLib.awsDashSdkLibStrings.PURCHASE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.REGION | awsDashSdkLib.awsDashSdkLibStrings.SERVICE | awsDashSdkLib.awsDashSdkLibStrings.USAGE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.USAGE_TYPE_GROUP | awsDashSdkLib.awsDashSdkLibStrings.RECORD_TYPE | awsDashSdkLib.awsDashSdkLibStrings.OPERATING_SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.TENANCY | awsDashSdkLib.awsDashSdkLibStrings.SCOPE | awsDashSdkLib.awsDashSdkLibStrings.PLATFORM | awsDashSdkLib.awsDashSdkLibStrings.SUBSCRIPTION_ID | awsDashSdkLib.awsDashSdkLibStrings.LEGAL_ENTITY_NAME | awsDashSdkLib.awsDashSdkLibStrings.DEPLOYMENT_OPTION | awsDashSdkLib.awsDashSdkLibStrings.DATABASE_ENGINE | awsDashSdkLib.awsDashSdkLibStrings.CACHE_ENGINE | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_TYPE_FAMILY | awsDashSdkLib.awsDashSdkLibStrings.BILLING_ENTITY | awsDashSdkLib.awsDashSdkLibStrings.RESERVATION_ID | java.lang.String
+  type Dimension = _Dimension | java.lang.String
   type DimensionValuesWithAttributesList = js.Array[DimensionValuesWithAttributes]
   type Entity = java.lang.String
   type Estimated = scala.Boolean
@@ -1127,15 +1149,15 @@ object CostExplorerNs extends js.Object {
   type ForecastResultsByTime = js.Array[ForecastResult]
   type GenericBoolean = scala.Boolean
   type GenericString = java.lang.String
-  type Granularity = awsDashSdkLib.awsDashSdkLibStrings.DAILY | awsDashSdkLib.awsDashSdkLibStrings.MONTHLY | awsDashSdkLib.awsDashSdkLibStrings.HOURLY | java.lang.String
+  type Granularity = _Granularity | java.lang.String
   type GroupDefinitionKey = java.lang.String
-  type GroupDefinitionType = awsDashSdkLib.awsDashSdkLibStrings.DIMENSION | awsDashSdkLib.awsDashSdkLibStrings.TAG | java.lang.String
+  type GroupDefinitionType = _GroupDefinitionType | java.lang.String
   type GroupDefinitions = js.Array[GroupDefinition]
   type Groups = js.Array[Group]
   type Key = java.lang.String
   type Keys = js.Array[Key]
-  type LookbackPeriodInDays = awsDashSdkLib.awsDashSdkLibStrings.SEVEN_DAYS | awsDashSdkLib.awsDashSdkLibStrings.THIRTY_DAYS | awsDashSdkLib.awsDashSdkLibStrings.SIXTY_DAYS | java.lang.String
-  type Metric = awsDashSdkLib.awsDashSdkLibStrings.BLENDED_COST | awsDashSdkLib.awsDashSdkLibStrings.UNBLENDED_COST | awsDashSdkLib.awsDashSdkLibStrings.AMORTIZED_COST | awsDashSdkLib.awsDashSdkLibStrings.NET_UNBLENDED_COST | awsDashSdkLib.awsDashSdkLibStrings.NET_AMORTIZED_COST | awsDashSdkLib.awsDashSdkLibStrings.USAGE_QUANTITY | awsDashSdkLib.awsDashSdkLibStrings.NORMALIZED_USAGE_AMOUNT | java.lang.String
+  type LookbackPeriodInDays = _LookbackPeriodInDays | java.lang.String
+  type Metric = _Metric | java.lang.String
   type MetricAmount = java.lang.String
   type MetricName = java.lang.String
   type MetricNames = js.Array[MetricName]
@@ -1143,13 +1165,13 @@ object CostExplorerNs extends js.Object {
   type NetRISavings = java.lang.String
   type NextPageToken = java.lang.String
   type NonNegativeInteger = scala.Double
-  type OfferingClass = awsDashSdkLib.awsDashSdkLibStrings.STANDARD | awsDashSdkLib.awsDashSdkLibStrings.CONVERTIBLE | java.lang.String
+  type OfferingClass = _OfferingClass | java.lang.String
   type OnDemandCost = java.lang.String
   type OnDemandCostOfRIHoursUsed = java.lang.String
   type OnDemandHours = java.lang.String
   type OnDemandNormalizedUnits = java.lang.String
   type PageSize = scala.Double
-  type PaymentOption = awsDashSdkLib.awsDashSdkLibStrings.NO_UPFRONT | awsDashSdkLib.awsDashSdkLibStrings.PARTIAL_UPFRONT | awsDashSdkLib.awsDashSdkLibStrings.ALL_UPFRONT | awsDashSdkLib.awsDashSdkLibStrings.LIGHT_UTILIZATION | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM_UTILIZATION | awsDashSdkLib.awsDashSdkLibStrings.HEAVY_UTILIZATION | java.lang.String
+  type PaymentOption = _PaymentOption | java.lang.String
   type PredictionIntervalLevel = scala.Double
   type PurchasedHours = java.lang.String
   type PurchasedUnits = java.lang.String
@@ -1165,7 +1187,7 @@ object CostExplorerNs extends js.Object {
   type SearchString = java.lang.String
   type TagKey = java.lang.String
   type TagList = js.Array[Entity]
-  type TermInYears = awsDashSdkLib.awsDashSdkLibStrings.ONE_YEAR | awsDashSdkLib.awsDashSdkLibStrings.THREE_YEARS | java.lang.String
+  type TermInYears = _TermInYears | java.lang.String
   type TotalActualHours = java.lang.String
   type TotalActualUnits = java.lang.String
   type TotalAmortizedFee = java.lang.String
@@ -1180,6 +1202,6 @@ object CostExplorerNs extends js.Object {
   type Value = java.lang.String
   type Values = js.Array[Value]
   type YearMonthDay = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-10-25` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

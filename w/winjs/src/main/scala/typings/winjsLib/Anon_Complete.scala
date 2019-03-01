@@ -16,3 +16,13 @@ trait Anon_Complete extends js.Object {
   var loading: java.lang.String
 }
 
+object Anon_Complete {
+  @scala.inline
+  def apply(complete: java.lang.String, loading: java.lang.String): Anon_Complete = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("loading")(loading)
+    __obj.asInstanceOf[Anon_Complete]
+  }
+}
+

@@ -23,3 +23,28 @@ trait UpdateWebhook extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UpdateWebhook {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    auth_credentials: js.Any = null,
+    auth_request_details: js.Any = null,
+    auth_token: java.lang.String = null,
+    auth_type: java.lang.String = null,
+    events: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    target: java.lang.String = null
+  ): UpdateWebhook = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (auth_credentials != null) __obj.updateDynamic("auth_credentials")(auth_credentials)
+    if (auth_request_details != null) __obj.updateDynamic("auth_request_details")(auth_request_details)
+    if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token)
+    if (auth_type != null) __obj.updateDynamic("auth_type")(auth_type)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[UpdateWebhook]
+  }
+}
+

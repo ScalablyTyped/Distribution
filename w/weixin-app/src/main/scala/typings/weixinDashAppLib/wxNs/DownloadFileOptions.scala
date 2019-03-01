@@ -18,3 +18,24 @@ trait DownloadFileOptions
   var url: java.lang.String
 }
 
+object DownloadFileOptions {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    header: RequestHeader = null,
+    success: js.Function1[/* res */ TempFileResponse, scala.Unit] = null,
+    `type`: java.lang.String = null
+  ): DownloadFileOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DownloadFileOptions]
+  }
+}
+

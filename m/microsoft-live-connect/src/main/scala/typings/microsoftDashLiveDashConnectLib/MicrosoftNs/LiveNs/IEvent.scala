@@ -105,3 +105,44 @@ trait IEvent extends js.Object {
   var visibility: java.lang.String
 }
 
+object IEvent {
+  @scala.inline
+  def apply(
+    availability: java.lang.String,
+    calendar_id: java.lang.String,
+    created_time: java.lang.String,
+    description: java.lang.String,
+    end_time: java.lang.String,
+    from: IUserInfo,
+    id: java.lang.String,
+    is_all_day_event: scala.Boolean,
+    is_recurrent: scala.Boolean,
+    location: java.lang.String,
+    name: java.lang.String,
+    recurrence: java.lang.String,
+    reminder_time: scala.Double,
+    start_time: java.lang.String,
+    updated_time: java.lang.String,
+    visibility: java.lang.String
+  ): IEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("availability")(availability)
+    __obj.updateDynamic("calendar_id")(calendar_id)
+    __obj.updateDynamic("created_time")(created_time)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("end_time")(end_time)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("is_all_day_event")(is_all_day_event)
+    __obj.updateDynamic("is_recurrent")(is_recurrent)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("recurrence")(recurrence)
+    __obj.updateDynamic("reminder_time")(reminder_time)
+    __obj.updateDynamic("start_time")(start_time)
+    __obj.updateDynamic("updated_time")(updated_time)
+    __obj.updateDynamic("visibility")(visibility)
+    __obj.asInstanceOf[IEvent]
+  }
+}
+

@@ -131,3 +131,89 @@ trait DragAndDrop5
   var setTextTypeJson: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DragAndDrop5 {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Support misc options
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    autoExpandMS: scala.Int | scala.Double = null,
+    dragDrag: js.Function2[
+      /* sourceNode */ jqueryDotFancytreeLib.FancytreeNs.FancytreeNode, 
+      /* data */ js.Any, 
+      scala.Unit
+    ] = null,
+    dragDrop: js.Function2[
+      /* node */ jqueryDotFancytreeLib.FancytreeNs.FancytreeNode, 
+      /* data */ js.Any, 
+      scala.Unit
+    ] = null,
+    dragEnd: js.Function2[
+      /* sourceNode */ jqueryDotFancytreeLib.FancytreeNs.FancytreeNode, 
+      /* data */ js.Any, 
+      scala.Unit
+    ] = null,
+    dragEnter: js.Function2[
+      /* targetNode */ jqueryDotFancytreeLib.FancytreeNs.FancytreeNode, 
+      /* data */ js.Any, 
+      scala.Unit
+    ] = null,
+    dragExpand: js.Function2[
+      /* targetNode */ jqueryDotFancytreeLib.FancytreeNs.FancytreeNode, 
+      /* data */ js.Any, 
+      scala.Unit
+    ] = null,
+    dragLeave: js.Function2[
+      /* targetNode */ jqueryDotFancytreeLib.FancytreeNs.FancytreeNode, 
+      /* data */ js.Any, 
+      scala.Unit
+    ] = null,
+    dragOver: js.Function2[
+      /* targetNode */ jqueryDotFancytreeLib.FancytreeNs.FancytreeNode, 
+      /* data */ js.Any, 
+      scala.Unit
+    ] = null,
+    dragStart: js.Function2[
+      /* sourceNode */ jqueryDotFancytreeLib.FancytreeNs.FancytreeNode, 
+      /* data */ js.Any, 
+      scala.Unit
+    ] = null,
+    dropMarkerInsertOffsetX: scala.Int | scala.Double = null,
+    dropMarkerOffsetX: scala.Int | scala.Double = null,
+    multiSource: js.UndefOr[scala.Boolean] = js.undefined,
+    preventForeignNodes: js.UndefOr[scala.Boolean] = js.undefined,
+    preventNonNodes: js.UndefOr[scala.Boolean] = js.undefined,
+    preventRecursiveMoves: js.UndefOr[scala.Boolean] = js.undefined,
+    preventVoidMoves: js.UndefOr[scala.Boolean] = js.undefined,
+    scroll: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollSensitivity: scala.Int | scala.Double = null,
+    scrollSpeed: scala.Int | scala.Double = null,
+    setTextTypeJson: js.UndefOr[scala.Boolean] = js.undefined
+  ): DragAndDrop5 = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (autoExpandMS != null) __obj.updateDynamic("autoExpandMS")(autoExpandMS.asInstanceOf[js.Any])
+    if (dragDrag != null) __obj.updateDynamic("dragDrag")(dragDrag)
+    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop)
+    if (dragEnd != null) __obj.updateDynamic("dragEnd")(dragEnd)
+    if (dragEnter != null) __obj.updateDynamic("dragEnter")(dragEnter)
+    if (dragExpand != null) __obj.updateDynamic("dragExpand")(dragExpand)
+    if (dragLeave != null) __obj.updateDynamic("dragLeave")(dragLeave)
+    if (dragOver != null) __obj.updateDynamic("dragOver")(dragOver)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
+    if (dropMarkerInsertOffsetX != null) __obj.updateDynamic("dropMarkerInsertOffsetX")(dropMarkerInsertOffsetX.asInstanceOf[js.Any])
+    if (dropMarkerOffsetX != null) __obj.updateDynamic("dropMarkerOffsetX")(dropMarkerOffsetX.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSource)) __obj.updateDynamic("multiSource")(multiSource)
+    if (!js.isUndefined(preventForeignNodes)) __obj.updateDynamic("preventForeignNodes")(preventForeignNodes)
+    if (!js.isUndefined(preventNonNodes)) __obj.updateDynamic("preventNonNodes")(preventNonNodes)
+    if (!js.isUndefined(preventRecursiveMoves)) __obj.updateDynamic("preventRecursiveMoves")(preventRecursiveMoves)
+    if (!js.isUndefined(preventVoidMoves)) __obj.updateDynamic("preventVoidMoves")(preventVoidMoves)
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
+    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(setTextTypeJson)) __obj.updateDynamic("setTextTypeJson")(setTextTypeJson)
+    __obj.asInstanceOf[DragAndDrop5]
+  }
+}
+

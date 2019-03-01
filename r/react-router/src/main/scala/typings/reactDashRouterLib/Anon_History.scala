@@ -12,3 +12,18 @@ trait Anon_History[Params /* <: /* import warning: ImportType.apply c Unsupporte
   var route: Anon_Location[Params]
 }
 
+object Anon_History {
+  @scala.inline
+  def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ reactDashRouterLib.reactDashRouterLibStrings.Anon_History with js.Any */](
+    history: historyLib.historyMod.History[historyLib.historyMod.LocationState],
+    route: Anon_Location[Params]
+  ): Anon_History[Params] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("history")(history)
+    __obj.updateDynamic("route")(route)
+    __obj.asInstanceOf[Anon_History[Params]]
+  }
+}
+

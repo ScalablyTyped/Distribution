@@ -13,3 +13,14 @@ trait Anon_Passed extends js.Object {
   var token: java.lang.String
 }
 
+object Anon_Passed {
+  @scala.inline
+  def apply(passed: java.lang.String, token: java.lang.String, reason: java.lang.String = null): Anon_Passed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("passed")(passed)
+    __obj.updateDynamic("token")(token)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[Anon_Passed]
+  }
+}
+

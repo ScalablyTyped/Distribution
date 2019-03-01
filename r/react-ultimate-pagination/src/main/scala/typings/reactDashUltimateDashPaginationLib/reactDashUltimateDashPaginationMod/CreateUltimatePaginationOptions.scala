@@ -16,3 +16,16 @@ trait CreateUltimatePaginationOptions extends js.Object {
   var itemTypeToComponent: ItemTypeToComponent
 }
 
+object CreateUltimatePaginationOptions {
+  @scala.inline
+  def apply(
+    itemTypeToComponent: ItemTypeToComponent,
+    WrapperComponent: java.lang.String | reactLib.reactMod.ReactNs.ComponentType[_] = null
+  ): CreateUltimatePaginationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("itemTypeToComponent")(itemTypeToComponent)
+    if (WrapperComponent != null) __obj.updateDynamic("WrapperComponent")(WrapperComponent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateUltimatePaginationOptions]
+  }
+}
+

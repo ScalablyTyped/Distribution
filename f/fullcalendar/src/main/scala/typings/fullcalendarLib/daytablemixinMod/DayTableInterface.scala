@@ -21,3 +21,38 @@ trait DayTableInterface extends js.Object {
   def updateDayTable(): js.Any
 }
 
+object DayTableInterface {
+  @scala.inline
+  def apply(
+    bookendCells: js.Function1[js.Any, js.Any],
+    colCnt: js.Any,
+    dayDates: js.Any,
+    daysPerRow: js.Any,
+    getCellDate: js.Function2[js.Any, js.Any, js.Any],
+    getCellRange: js.Function2[js.Any, js.Any, js.Any],
+    renderBgTrHtml: js.Function1[js.Any, js.Any],
+    renderHeadHtml: js.Function0[js.Any],
+    renderIntroHtml: js.Function0[js.Any],
+    rowCnt: js.Any,
+    sliceRangeByDay: js.Function1[js.Any, js.Any],
+    sliceRangeByRow: js.Function1[js.Any, js.Any],
+    updateDayTable: js.Function0[js.Any]
+  ): DayTableInterface = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bookendCells")(bookendCells)
+    __obj.updateDynamic("colCnt")(colCnt)
+    __obj.updateDynamic("dayDates")(dayDates)
+    __obj.updateDynamic("daysPerRow")(daysPerRow)
+    __obj.updateDynamic("getCellDate")(getCellDate)
+    __obj.updateDynamic("getCellRange")(getCellRange)
+    __obj.updateDynamic("renderBgTrHtml")(renderBgTrHtml)
+    __obj.updateDynamic("renderHeadHtml")(renderHeadHtml)
+    __obj.updateDynamic("renderIntroHtml")(renderIntroHtml)
+    __obj.updateDynamic("rowCnt")(rowCnt)
+    __obj.updateDynamic("sliceRangeByDay")(sliceRangeByDay)
+    __obj.updateDynamic("sliceRangeByRow")(sliceRangeByRow)
+    __obj.updateDynamic("updateDayTable")(updateDayTable)
+    __obj.asInstanceOf[DayTableInterface]
+  }
+}
+

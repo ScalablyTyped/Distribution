@@ -9,3 +9,12 @@ trait Anon_Mp4String extends js.Object {
   var mp4: java.lang.String
 }
 
+object Anon_Mp4String {
+  @scala.inline
+  def apply(mp4: java.lang.String): Anon_Mp4String = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mp4")(mp4)
+    __obj.asInstanceOf[Anon_Mp4String]
+  }
+}
+

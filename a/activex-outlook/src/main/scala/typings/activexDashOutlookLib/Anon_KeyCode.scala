@@ -10,3 +10,13 @@ trait Anon_KeyCode extends js.Object {
   val Shift: activexDashOutlookLib.OutlookNs.OlShiftState
 }
 
+object Anon_KeyCode {
+  @scala.inline
+  def apply(KeyCode: scala.Double, Shift: activexDashOutlookLib.OutlookNs.OlShiftState): Anon_KeyCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("KeyCode")(KeyCode)
+    __obj.updateDynamic("Shift")(Shift)
+    __obj.asInstanceOf[Anon_KeyCode]
+  }
+}
+

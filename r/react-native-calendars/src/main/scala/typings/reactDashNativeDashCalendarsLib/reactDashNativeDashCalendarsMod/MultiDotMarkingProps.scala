@@ -5,8 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MultiDotMarkingProps extends js.Object {
+trait MultiDotMarkingProps extends _CalendarMarkingProps {
   var markedDates: org.scalablytyped.runtime.StringDictionary[MultiDotMarking]
   var markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.`multi-dot`
+}
+
+object MultiDotMarkingProps {
+  @scala.inline
+  def apply(
+    markedDates: org.scalablytyped.runtime.StringDictionary[MultiDotMarking],
+    markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.`multi-dot`
+  ): MultiDotMarkingProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("markedDates")(markedDates)
+    __obj.updateDynamic("markingType")(markingType)
+    __obj.asInstanceOf[MultiDotMarkingProps]
+  }
 }
 

@@ -15,3 +15,24 @@ trait DataSourceTransportRead
   var url: js.UndefOr[js.Any] = js.undefined
 }
 
+object DataSourceTransportRead {
+  @scala.inline
+  def apply(
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    contentType: java.lang.String = null,
+    data: js.Any = null,
+    dataType: java.lang.String = null,
+    `type`: java.lang.String = null,
+    url: js.Any = null
+  ): DataSourceTransportRead = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[DataSourceTransportRead]
+  }
+}
+

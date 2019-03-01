@@ -27,3 +27,20 @@ trait Options extends js.Object {
   var minLength: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    classNames: ClassNames = null,
+    highlight: js.UndefOr[scala.Boolean] = js.undefined,
+    hint: js.UndefOr[scala.Boolean] = js.undefined,
+    minLength: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames)
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (!js.isUndefined(hint)) __obj.updateDynamic("hint")(hint)
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -49,3 +49,24 @@ trait PriorityClass extends js.Object {
   val value: scala.Double
 }
 
+object PriorityClass {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1`,
+    description: java.lang.String,
+    globalDefault: scala.Boolean,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    value: scala.Double
+  ): PriorityClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("globalDefault")(globalDefault)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PriorityClass]
+  }
+}
+

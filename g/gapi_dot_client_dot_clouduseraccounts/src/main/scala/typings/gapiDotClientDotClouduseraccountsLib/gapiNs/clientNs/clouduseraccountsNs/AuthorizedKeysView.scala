@@ -12,3 +12,13 @@ trait AuthorizedKeysView extends js.Object {
   var sudoer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AuthorizedKeysView {
+  @scala.inline
+  def apply(keys: js.Array[java.lang.String] = null, sudoer: js.UndefOr[scala.Boolean] = js.undefined): AuthorizedKeysView = {
+    val __obj = js.Dynamic.literal()
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (!js.isUndefined(sudoer)) __obj.updateDynamic("sudoer")(sudoer)
+    __obj.asInstanceOf[AuthorizedKeysView]
+  }
+}
+

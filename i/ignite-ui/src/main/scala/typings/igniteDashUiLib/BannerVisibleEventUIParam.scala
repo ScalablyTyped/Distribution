@@ -20,3 +20,14 @@ trait BannerVisibleEventUIParam extends js.Object {
   var index: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BannerVisibleEventUIParam {
+  @scala.inline
+  def apply(banner: js.Any = null, bannerElement: js.Any = null, index: scala.Int | scala.Double = null): BannerVisibleEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (banner != null) __obj.updateDynamic("banner")(banner)
+    if (bannerElement != null) __obj.updateDynamic("bannerElement")(bannerElement)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BannerVisibleEventUIParam]
+  }
+}
+

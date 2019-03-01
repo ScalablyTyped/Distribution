@@ -20,3 +20,13 @@ trait Anon_Options extends js.Object {
   var path: java.lang.String
 }
 
+object Anon_Options {
+  @scala.inline
+  def apply(options: js.Any, path: java.lang.String): Anon_Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Anon_Options]
+  }
+}
+

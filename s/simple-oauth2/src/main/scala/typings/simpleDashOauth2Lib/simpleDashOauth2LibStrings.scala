@@ -10,7 +10,8 @@ object simpleDashOauth2LibStrings {
   sealed trait Anon_AuthorizeURL extends js.Object
   
   @js.native
-  sealed trait access_token extends js.Object
+  sealed trait access_token
+    extends simpleDashOauth2Lib.simpleDashOauth2Mod.TokenType
   
   @js.native
   sealed trait body extends js.Object
@@ -25,7 +26,8 @@ object simpleDashOauth2LibStrings {
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait refresh_token extends js.Object
+  sealed trait refresh_token
+    extends simpleDashOauth2Lib.simpleDashOauth2Mod.TokenType
   
   @scala.inline
   def Anon_AuthorizeURL: Anon_AuthorizeURL = "Anon_AuthorizeURL".asInstanceOf[Anon_AuthorizeURL]

@@ -16,3 +16,27 @@ trait ResolvedPluralRulesOptions extends js.Object {
   var `type`: stdLib.stdLibStrings.cardinal | stdLib.stdLibStrings.ordinal
 }
 
+object ResolvedPluralRulesOptions {
+  @scala.inline
+  def apply(
+    locale: java.lang.String,
+    maximumFractionDigits: scala.Double,
+    maximumSignificantDigits: scala.Double,
+    minimumFractionDigits: scala.Double,
+    minimumIntegerDigits: scala.Double,
+    minimumSignificantDigits: scala.Double,
+    pluralCategories: js.Array[java.lang.String],
+    `type`: stdLib.stdLibStrings.cardinal | stdLib.stdLibStrings.ordinal
+  ): ResolvedPluralRulesOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("locale")(locale)
+    __obj.updateDynamic("maximumFractionDigits")(maximumFractionDigits)
+    __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits)
+    __obj.updateDynamic("minimumFractionDigits")(minimumFractionDigits)
+    __obj.updateDynamic("minimumIntegerDigits")(minimumIntegerDigits)
+    __obj.updateDynamic("minimumSignificantDigits")(minimumSignificantDigits)
+    __obj.updateDynamic("pluralCategories")(pluralCategories)
+    __obj.asInstanceOf[ResolvedPluralRulesOptions]
+  }
+}
+

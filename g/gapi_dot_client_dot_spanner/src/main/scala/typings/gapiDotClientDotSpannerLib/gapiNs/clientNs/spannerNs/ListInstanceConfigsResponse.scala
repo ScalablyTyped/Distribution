@@ -16,3 +16,13 @@ trait ListInstanceConfigsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListInstanceConfigsResponse {
+  @scala.inline
+  def apply(instanceConfigs: js.Array[InstanceConfig] = null, nextPageToken: java.lang.String = null): ListInstanceConfigsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (instanceConfigs != null) __obj.updateDynamic("instanceConfigs")(instanceConfigs)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListInstanceConfigsResponse]
+  }
+}
+

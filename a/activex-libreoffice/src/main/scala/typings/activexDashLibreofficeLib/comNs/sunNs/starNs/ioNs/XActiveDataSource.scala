@@ -23,3 +23,24 @@ trait XActiveDataSource
   def setOutputStream(aStream: XOutputStream): scala.Unit
 }
 
+object XActiveDataSource {
+  @scala.inline
+  def apply(
+    OutputStream: XOutputStream,
+    acquire: js.Function0[scala.Unit],
+    getOutputStream: js.Function0[XOutputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setOutputStream: js.Function1[XOutputStream, scala.Unit]
+  ): XActiveDataSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("OutputStream")(OutputStream)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getOutputStream")(getOutputStream)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setOutputStream")(setOutputStream)
+    __obj.asInstanceOf[XActiveDataSource]
+  }
+}
+

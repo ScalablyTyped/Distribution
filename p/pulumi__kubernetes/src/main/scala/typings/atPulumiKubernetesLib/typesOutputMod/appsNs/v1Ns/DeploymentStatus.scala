@@ -50,3 +50,28 @@ trait DeploymentStatus extends js.Object {
   val updatedReplicas: scala.Double
 }
 
+object DeploymentStatus {
+  @scala.inline
+  def apply(
+    availableReplicas: scala.Double,
+    collisionCount: scala.Double,
+    conditions: js.Array[DeploymentCondition],
+    observedGeneration: scala.Double,
+    readyReplicas: scala.Double,
+    replicas: scala.Double,
+    unavailableReplicas: scala.Double,
+    updatedReplicas: scala.Double
+  ): DeploymentStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("availableReplicas")(availableReplicas)
+    __obj.updateDynamic("collisionCount")(collisionCount)
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.updateDynamic("observedGeneration")(observedGeneration)
+    __obj.updateDynamic("readyReplicas")(readyReplicas)
+    __obj.updateDynamic("replicas")(replicas)
+    __obj.updateDynamic("unavailableReplicas")(unavailableReplicas)
+    __obj.updateDynamic("updatedReplicas")(updatedReplicas)
+    __obj.asInstanceOf[DeploymentStatus]
+  }
+}
+

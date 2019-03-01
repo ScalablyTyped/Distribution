@@ -16,3 +16,12 @@ trait WorkerShutdownNotice extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WorkerShutdownNotice {
+  @scala.inline
+  def apply(reason: java.lang.String = null): WorkerShutdownNotice = {
+    val __obj = js.Dynamic.literal()
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[WorkerShutdownNotice]
+  }
+}
+

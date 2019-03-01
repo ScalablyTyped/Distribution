@@ -27,3 +27,19 @@ trait AuthContext extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthContext {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    password: java.lang.String = null,
+    token: java.lang.String = null,
+    username: java.lang.String = null
+  ): AuthContext = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[AuthContext]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Anon_Auto extends js.Object {
   var auto: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Auto {
+  @scala.inline
+  def apply(auto: js.UndefOr[scala.Boolean] = js.undefined): Anon_Auto = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto)
+    __obj.asInstanceOf[Anon_Auto]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_DataArrayUserGameData extends js.Object {
   var data: js.Array[UserGameData]
 }
 
+object Anon_DataArrayUserGameData {
+  @scala.inline
+  def apply(data: js.Array[UserGameData]): Anon_DataArrayUserGameData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[Anon_DataArrayUserGameData]
+  }
+}
+

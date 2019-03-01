@@ -87,3 +87,65 @@ trait VictoryLineProps
   var style: js.UndefOr[VictoryStyleInterface] = js.undefined
 }
 
+object VictoryLineProps {
+  @scala.inline
+  def apply(
+    animate: AnimatePropTypeInterface = null,
+    categories: CategoryPropType = null,
+    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    data: js.Array[_] = null,
+    dataComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    domain: DomainPropType = null,
+    events: js.Array[
+      EventPropTypeInterface[
+        victoryLib.victoryLibStrings.data | victoryLib.victoryLibStrings.labels | victoryLib.victoryLibStrings.parent, 
+        scala.Double | java.lang.String
+      ]
+    ] = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    height: scala.Int | scala.Double = null,
+    interpolation: InterpolationPropType = null,
+    label: java.lang.String | victoryLib.Anon_DataAnyString = null,
+    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    labels: js.Array[java.lang.String] | js.Array[scala.Double] | js.Function = null,
+    name: java.lang.String = null,
+    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    samples: scala.Int | scala.Double = null,
+    scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
+    sortKey: java.lang.String | js.Array[java.lang.String] | js.Function = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    style: VictoryStyleInterface = null,
+    theme: VictoryThemeDefinition = null,
+    width: scala.Int | scala.Double = null,
+    x: DataGetterPropType = null,
+    y: DataGetterPropType = null
+  ): VictoryLineProps = {
+    val __obj = js.Dynamic.literal()
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (sortKey != null) __obj.updateDynamic("sortKey")(sortKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryLineProps]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_ApiId extends js.Object {
   var stage: java.lang.String
 }
 
+object Anon_ApiId {
+  @scala.inline
+  def apply(apiId: java.lang.String, stage: java.lang.String): Anon_ApiId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiId")(apiId)
+    __obj.updateDynamic("stage")(stage)
+    __obj.asInstanceOf[Anon_ApiId]
+  }
+}
+

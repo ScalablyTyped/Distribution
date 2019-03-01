@@ -12,3 +12,13 @@ trait EventCallType extends js.Object {
   var param: js.UndefOr[js.Array[EventCallTypeParam]] = js.undefined
 }
 
+object EventCallType {
+  @scala.inline
+  def apply(functionName: java.lang.String, param: js.Array[EventCallTypeParam] = null): EventCallType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("functionName")(functionName)
+    if (param != null) __obj.updateDynamic("param")(param)
+    __obj.asInstanceOf[EventCallType]
+  }
+}
+

@@ -14,3 +14,12 @@ trait CustomAuthRequirements extends js.Object {
   var provider: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomAuthRequirements {
+  @scala.inline
+  def apply(provider: java.lang.String = null): CustomAuthRequirements = {
+    val __obj = js.Dynamic.literal()
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    __obj.asInstanceOf[CustomAuthRequirements]
+  }
+}
+

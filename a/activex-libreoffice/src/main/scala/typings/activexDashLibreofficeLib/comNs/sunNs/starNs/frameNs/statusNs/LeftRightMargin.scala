@@ -16,3 +16,13 @@ trait LeftRightMargin extends js.Object {
   var Right: scala.Double
 }
 
+object LeftRightMargin {
+  @scala.inline
+  def apply(Left: scala.Double, Right: scala.Double): LeftRightMargin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Left")(Left)
+    __obj.updateDynamic("Right")(Right)
+    __obj.asInstanceOf[LeftRightMargin]
+  }
+}
+

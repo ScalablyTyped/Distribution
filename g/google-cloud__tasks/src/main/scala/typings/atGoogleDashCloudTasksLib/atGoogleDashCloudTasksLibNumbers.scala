@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object atGoogleDashCloudTasksLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends atGoogleDashCloudTasksLib.atGoogleDashCloudTasksMod.View
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends atGoogleDashCloudTasksLib.atGoogleDashCloudTasksMod.View
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends atGoogleDashCloudTasksLib.atGoogleDashCloudTasksMod.View
   
   @js.native
   sealed trait `false` extends js.Object

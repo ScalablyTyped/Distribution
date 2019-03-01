@@ -161,3 +161,100 @@ trait IPullRefresh
   var snappingAnimationDuration: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IPullRefresh {
+  @scala.inline
+  def apply(
+    IComponent: senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    autoSnapBack: js.UndefOr[scala.Boolean] = js.undefined,
+    getAutoSnapBack: js.Function0[scala.Boolean] = null,
+    getLastUpdatedDateFormat: js.Function0[java.lang.String] = null,
+    getLastUpdatedText: js.Function0[java.lang.String] = null,
+    getList: js.Function0[senchaUnderscoreTouchLib.ExtNs.dataviewNs.IList] = null,
+    getLoadedText: js.Function0[java.lang.String] = null,
+    getLoadingText: js.Function0[java.lang.String] = null,
+    getOverpullSnapBackDuration: js.Function0[scala.Double] = null,
+    getPullText: js.Function0[java.lang.String] = null,
+    getPullTpl: js.Function0[_] = null,
+    getReleaseText: js.Function0[java.lang.String] = null,
+    getScrollerAutoRefresh: js.Function0[scala.Boolean] = null,
+    getSnappingAnimationDuration: js.Function0[scala.Double] = null,
+    getTranslatable: js.Function0[scala.Boolean] = null,
+    lastUpdatedDateFormat: java.lang.String = null,
+    lastUpdatedText: java.lang.String = null,
+    list: senchaUnderscoreTouchLib.ExtNs.dataviewNs.IList = null,
+    loadedText: java.lang.String = null,
+    loadingText: java.lang.String = null,
+    overpullSnapBackDuration: scala.Int | scala.Double = null,
+    pullRefreshText: java.lang.String = null,
+    pullReleaseText: java.lang.String = null,
+    pullText: java.lang.String = null,
+    pullTpl: js.Any = null,
+    releaseText: java.lang.String = null,
+    scrollerAutoRefresh: js.UndefOr[scala.Boolean] = js.undefined,
+    setAutoSnapBack: js.Function1[/* autoSnapBack */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setLastUpdatedDateFormat: js.Function1[/* lastUpdatedDateFormat */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setLastUpdatedText: js.Function1[/* lastUpdatedText */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setList: js.Function1[/* list */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataviewNs.IList], scala.Unit] = null,
+    setLoadedText: js.Function1[/* loadedText */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setLoadingText: js.Function1[/* loadingText */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setOverpullSnapBackDuration: js.Function1[/* overpullSnapBackDuration */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setPullRefreshText: js.Function1[/* text */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setPullText: js.Function1[/* pullText */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setPullTpl: js.Function1[/* pullTpl */ js.UndefOr[js.Any], scala.Unit] = null,
+    setReleaseRefreshText: js.Function1[/* text */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setReleaseText: js.Function1[/* releaseText */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setScrollerAutoRefresh: js.Function1[/* scrollerAutoRefresh */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setSnappingAnimationDuration: js.Function1[/* snappingAnimationDuration */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setTranslatable: js.Function1[/* translatable */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    snapBack: js.Function1[/* force */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    snappingAnimationDuration: scala.Int | scala.Double = null
+  ): IPullRefresh = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(autoSnapBack)) __obj.updateDynamic("autoSnapBack")(autoSnapBack)
+    if (getAutoSnapBack != null) __obj.updateDynamic("getAutoSnapBack")(getAutoSnapBack)
+    if (getLastUpdatedDateFormat != null) __obj.updateDynamic("getLastUpdatedDateFormat")(getLastUpdatedDateFormat)
+    if (getLastUpdatedText != null) __obj.updateDynamic("getLastUpdatedText")(getLastUpdatedText)
+    if (getList != null) __obj.updateDynamic("getList")(getList)
+    if (getLoadedText != null) __obj.updateDynamic("getLoadedText")(getLoadedText)
+    if (getLoadingText != null) __obj.updateDynamic("getLoadingText")(getLoadingText)
+    if (getOverpullSnapBackDuration != null) __obj.updateDynamic("getOverpullSnapBackDuration")(getOverpullSnapBackDuration)
+    if (getPullText != null) __obj.updateDynamic("getPullText")(getPullText)
+    if (getPullTpl != null) __obj.updateDynamic("getPullTpl")(getPullTpl)
+    if (getReleaseText != null) __obj.updateDynamic("getReleaseText")(getReleaseText)
+    if (getScrollerAutoRefresh != null) __obj.updateDynamic("getScrollerAutoRefresh")(getScrollerAutoRefresh)
+    if (getSnappingAnimationDuration != null) __obj.updateDynamic("getSnappingAnimationDuration")(getSnappingAnimationDuration)
+    if (getTranslatable != null) __obj.updateDynamic("getTranslatable")(getTranslatable)
+    if (lastUpdatedDateFormat != null) __obj.updateDynamic("lastUpdatedDateFormat")(lastUpdatedDateFormat)
+    if (lastUpdatedText != null) __obj.updateDynamic("lastUpdatedText")(lastUpdatedText)
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (loadedText != null) __obj.updateDynamic("loadedText")(loadedText)
+    if (loadingText != null) __obj.updateDynamic("loadingText")(loadingText)
+    if (overpullSnapBackDuration != null) __obj.updateDynamic("overpullSnapBackDuration")(overpullSnapBackDuration.asInstanceOf[js.Any])
+    if (pullRefreshText != null) __obj.updateDynamic("pullRefreshText")(pullRefreshText)
+    if (pullReleaseText != null) __obj.updateDynamic("pullReleaseText")(pullReleaseText)
+    if (pullText != null) __obj.updateDynamic("pullText")(pullText)
+    if (pullTpl != null) __obj.updateDynamic("pullTpl")(pullTpl)
+    if (releaseText != null) __obj.updateDynamic("releaseText")(releaseText)
+    if (!js.isUndefined(scrollerAutoRefresh)) __obj.updateDynamic("scrollerAutoRefresh")(scrollerAutoRefresh)
+    if (setAutoSnapBack != null) __obj.updateDynamic("setAutoSnapBack")(setAutoSnapBack)
+    if (setLastUpdatedDateFormat != null) __obj.updateDynamic("setLastUpdatedDateFormat")(setLastUpdatedDateFormat)
+    if (setLastUpdatedText != null) __obj.updateDynamic("setLastUpdatedText")(setLastUpdatedText)
+    if (setList != null) __obj.updateDynamic("setList")(setList)
+    if (setLoadedText != null) __obj.updateDynamic("setLoadedText")(setLoadedText)
+    if (setLoadingText != null) __obj.updateDynamic("setLoadingText")(setLoadingText)
+    if (setOverpullSnapBackDuration != null) __obj.updateDynamic("setOverpullSnapBackDuration")(setOverpullSnapBackDuration)
+    if (setPullRefreshText != null) __obj.updateDynamic("setPullRefreshText")(setPullRefreshText)
+    if (setPullText != null) __obj.updateDynamic("setPullText")(setPullText)
+    if (setPullTpl != null) __obj.updateDynamic("setPullTpl")(setPullTpl)
+    if (setReleaseRefreshText != null) __obj.updateDynamic("setReleaseRefreshText")(setReleaseRefreshText)
+    if (setReleaseText != null) __obj.updateDynamic("setReleaseText")(setReleaseText)
+    if (setScrollerAutoRefresh != null) __obj.updateDynamic("setScrollerAutoRefresh")(setScrollerAutoRefresh)
+    if (setSnappingAnimationDuration != null) __obj.updateDynamic("setSnappingAnimationDuration")(setSnappingAnimationDuration)
+    if (setTranslatable != null) __obj.updateDynamic("setTranslatable")(setTranslatable)
+    if (snapBack != null) __obj.updateDynamic("snapBack")(snapBack)
+    if (snappingAnimationDuration != null) __obj.updateDynamic("snappingAnimationDuration")(snappingAnimationDuration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPullRefresh]
+  }
+}
+

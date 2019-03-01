@@ -49,7 +49,6 @@ package object openlayersMod {
   type ImageState = scala.Double
   type LoadingStrategy = js.Function2[/* extent */ Extent, /* resolution */ scala.Double, js.Array[Extent]]
   type ModifyEventType = java.lang.String
-  type OverlayPositioning = openlayersLib.openlayersLibStrings.`bottom-left` | openlayersLib.openlayersLibStrings.`bottom-center` | openlayersLib.openlayersLibStrings.`bottom-right` | openlayersLib.openlayersLibStrings.`center-left` | openlayersLib.openlayersLibStrings.`center-center` | openlayersLib.openlayersLibStrings.`center-right` | openlayersLib.openlayersLibStrings.`top-left` | openlayersLib.openlayersLibStrings.`top-center` | openlayersLib.openlayersLibStrings.`top-right`
   type Pixel = js.Tuple2[scala.Double, scala.Double]
   type PreRenderFunction = js.Function2[
     /* map */ Map, 
@@ -62,8 +61,6 @@ package object openlayersMod {
     /* obj */ GlobalObject, 
     js.Array[scala.Double] | stdLib.ImageData
   ]
-  type RasterOperationType = openlayersLib.openlayersLibStrings.pixel | openlayersLib.openlayersLibStrings.image
-  type RendererType = openlayersLib.openlayersLibStrings.canvas | openlayersLib.openlayersLibStrings.dom | openlayersLib.openlayersLibStrings.webgl
   type SelectFilterFunction = js.Function2[
     /* feature */ Feature | openlayersLib.openlayersMod.renderNs.Feature, 
     /* layer */ openlayersLib.openlayersMod.layerNs.Layer, 

@@ -41,3 +41,20 @@ trait PivotLayoutUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object PivotLayoutUpdateData {
+  @scala.inline
+  def apply(
+    layoutType: officeDashJsLib.ExcelNs.PivotLayoutType | officeDashJsLib.officeDashJsLibStrings.Compact | officeDashJsLib.officeDashJsLibStrings.Tabular | officeDashJsLib.officeDashJsLibStrings.Outline = null,
+    showColumnGrandTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    showRowGrandTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    subtotalLocation: officeDashJsLib.ExcelNs.SubtotalLocationType | officeDashJsLib.officeDashJsLibStrings.AtTop | officeDashJsLib.officeDashJsLibStrings.AtBottom | officeDashJsLib.officeDashJsLibStrings.Off = null
+  ): PivotLayoutUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (layoutType != null) __obj.updateDynamic("layoutType")(layoutType.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals)
+    if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals)
+    if (subtotalLocation != null) __obj.updateDynamic("subtotalLocation")(subtotalLocation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PivotLayoutUpdateData]
+  }
+}
+

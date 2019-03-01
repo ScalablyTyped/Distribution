@@ -11,3 +11,13 @@ trait UpdateSessionEntityTypeRequest extends js.Object {
   var updateMask: js.Any
 }
 
+object UpdateSessionEntityTypeRequest {
+  @scala.inline
+  def apply(sessionEntityType: SessionEntityType, updateMask: js.Any): UpdateSessionEntityTypeRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sessionEntityType")(sessionEntityType)
+    __obj.updateDynamic("updateMask")(updateMask)
+    __obj.asInstanceOf[UpdateSessionEntityTypeRequest]
+  }
+}
+

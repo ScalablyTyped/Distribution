@@ -40,7 +40,8 @@ object webgmeLibStrings {
   sealed trait boolean extends js.Object
   
   @js.native
-  sealed trait complete extends js.Object
+  sealed trait complete
+    extends webgmeLib.GmeNs.TerritoryEventType
   
   @js.native
   sealed trait `constraint collision` extends js.Object
@@ -55,13 +56,15 @@ object webgmeLibStrings {
   sealed trait float extends js.Object
   
   @js.native
-  sealed trait incomplete extends js.Object
+  sealed trait incomplete
+    extends webgmeLib.GmeNs.TerritoryEventType
   
   @js.native
   sealed trait integer extends js.Object
   
   @js.native
-  sealed trait load extends js.Object
+  sealed trait load
+    extends webgmeLib.GmeNs.TerritoryEventType
   
   @js.native
   sealed trait memory extends js.Object
@@ -91,10 +94,12 @@ object webgmeLibStrings {
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait unload extends js.Object
+  sealed trait unload
+    extends webgmeLib.GmeNs.TerritoryEventType
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update
+    extends webgmeLib.GmeNs.TerritoryEventType
   
   @js.native
   sealed trait warning extends js.Object

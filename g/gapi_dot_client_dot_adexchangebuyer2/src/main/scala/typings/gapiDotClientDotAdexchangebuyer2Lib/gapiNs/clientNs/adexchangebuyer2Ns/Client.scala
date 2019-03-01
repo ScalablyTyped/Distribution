@@ -57,3 +57,28 @@ trait Client extends js.Object {
   var visibleToSeller: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Client {
+  @scala.inline
+  def apply(
+    clientAccountId: java.lang.String = null,
+    clientName: java.lang.String = null,
+    entityId: java.lang.String = null,
+    entityName: java.lang.String = null,
+    entityType: java.lang.String = null,
+    role: java.lang.String = null,
+    status: java.lang.String = null,
+    visibleToSeller: js.UndefOr[scala.Boolean] = js.undefined
+  ): Client = {
+    val __obj = js.Dynamic.literal()
+    if (clientAccountId != null) __obj.updateDynamic("clientAccountId")(clientAccountId)
+    if (clientName != null) __obj.updateDynamic("clientName")(clientName)
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
+    if (entityName != null) __obj.updateDynamic("entityName")(entityName)
+    if (entityType != null) __obj.updateDynamic("entityType")(entityType)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (!js.isUndefined(visibleToSeller)) __obj.updateDynamic("visibleToSeller")(visibleToSeller)
+    __obj.asInstanceOf[Client]
+  }
+}
+

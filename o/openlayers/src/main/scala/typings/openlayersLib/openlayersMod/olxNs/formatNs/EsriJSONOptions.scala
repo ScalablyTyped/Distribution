@@ -9,3 +9,12 @@ trait EsriJSONOptions extends js.Object {
   var geometryName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EsriJSONOptions {
+  @scala.inline
+  def apply(geometryName: java.lang.String = null): EsriJSONOptions = {
+    val __obj = js.Dynamic.literal()
+    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName)
+    __obj.asInstanceOf[EsriJSONOptions]
+  }
+}
+

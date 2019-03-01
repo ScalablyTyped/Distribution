@@ -10,3 +10,12 @@ trait WorkerNavigator extends js.Object {
   val permissions: Permissions
 }
 
+object WorkerNavigator {
+  @scala.inline
+  def apply(permissions: Permissions): WorkerNavigator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[WorkerNavigator]
+  }
+}
+

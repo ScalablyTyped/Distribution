@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   var onClick: js.UndefOr[RechartsFunction] = js.undefined
 }
 
+object CellProps {
+  @scala.inline
+  def apply(onClick: RechartsFunction = null): CellProps = {
+    val __obj = js.Dynamic.literal()
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    __obj.asInstanceOf[CellProps]
+  }
+}
+

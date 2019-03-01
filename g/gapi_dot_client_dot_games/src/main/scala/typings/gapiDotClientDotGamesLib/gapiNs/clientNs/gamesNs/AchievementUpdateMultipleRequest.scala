@@ -12,3 +12,13 @@ trait AchievementUpdateMultipleRequest extends js.Object {
   var updates: js.UndefOr[js.Array[AchievementUpdateRequest]] = js.undefined
 }
 
+object AchievementUpdateMultipleRequest {
+  @scala.inline
+  def apply(kind: java.lang.String = null, updates: js.Array[AchievementUpdateRequest] = null): AchievementUpdateMultipleRequest = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (updates != null) __obj.updateDynamic("updates")(updates)
+    __obj.asInstanceOf[AchievementUpdateMultipleRequest]
+  }
+}
+

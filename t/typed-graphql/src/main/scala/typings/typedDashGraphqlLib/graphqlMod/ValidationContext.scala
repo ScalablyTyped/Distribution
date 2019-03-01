@@ -23,3 +23,42 @@ trait ValidationContext extends js.Object {
   def reportError(error: GraphQLError): scala.Unit
 }
 
+object ValidationContext {
+  @scala.inline
+  def apply(
+    getArgument: js.Function0[GraphQLArgument],
+    getDirective: js.Function0[GraphQLDirective],
+    getDocument: js.Function0[Document],
+    getErrors: js.Function0[js.Array[GraphQLError]],
+    getFieldDef: js.Function0[GraphQLFieldDefinition],
+    getFragment: js.Function1[java.lang.String, FragmentDefinition],
+    getFragmentSpreads: js.Function1[SelectionSet, js.Array[FragmentSpread]],
+    getInputType: js.Function0[GraphQLInputType],
+    getParentType: js.Function0[GraphQLCompositeType],
+    getRecursiveVariableUsages: js.Function1[OperationDefinition, js.Array[VariableUsage]],
+    getRecursivelyReferencedFragments: js.Function1[OperationDefinition, js.Array[FragmentDefinition]],
+    getSchema: js.Function0[GraphQLSchema],
+    getType: js.Function0[GraphQLOutputType],
+    getVariableUsages: js.Function1[HasSelectionSet, js.Array[VariableUsage]],
+    reportError: js.Function1[GraphQLError, scala.Unit]
+  ): ValidationContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getArgument")(getArgument)
+    __obj.updateDynamic("getDirective")(getDirective)
+    __obj.updateDynamic("getDocument")(getDocument)
+    __obj.updateDynamic("getErrors")(getErrors)
+    __obj.updateDynamic("getFieldDef")(getFieldDef)
+    __obj.updateDynamic("getFragment")(getFragment)
+    __obj.updateDynamic("getFragmentSpreads")(getFragmentSpreads)
+    __obj.updateDynamic("getInputType")(getInputType)
+    __obj.updateDynamic("getParentType")(getParentType)
+    __obj.updateDynamic("getRecursiveVariableUsages")(getRecursiveVariableUsages)
+    __obj.updateDynamic("getRecursivelyReferencedFragments")(getRecursivelyReferencedFragments)
+    __obj.updateDynamic("getSchema")(getSchema)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("getVariableUsages")(getVariableUsages)
+    __obj.updateDynamic("reportError")(reportError)
+    __obj.asInstanceOf[ValidationContext]
+  }
+}
+

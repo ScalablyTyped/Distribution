@@ -11,3 +11,18 @@ trait Algo extends js.Object {
   var sizePart: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Algo {
+  @scala.inline
+  def apply(
+    parts: js.Array[java.lang.String],
+    normalize: js.UndefOr[scala.Boolean] = js.undefined,
+    sizePart: java.lang.String = null
+  ): Algo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parts")(parts)
+    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
+    if (sizePart != null) __obj.updateDynamic("sizePart")(sizePart)
+    __obj.asInstanceOf[Algo]
+  }
+}
+

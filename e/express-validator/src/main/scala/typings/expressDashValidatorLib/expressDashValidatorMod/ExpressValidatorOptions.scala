@@ -21,3 +21,24 @@ trait ExpressValidatorOptions extends js.Object {
   ] = js.undefined
 }
 
+object ExpressValidatorOptions {
+  @scala.inline
+  def apply(
+    customSanitizers: stdLib.Record[java.lang.String, js.Function1[/* repeated */ _, _]] = null,
+    customValidators: stdLib.Record[java.lang.String, js.Function1[/* repeated */ _, scala.Boolean | js.Promise[_]]] = null,
+    errorFormatter: js.Function4[
+      /* param */ java.lang.String, 
+      /* msg */ java.lang.String, 
+      /* value */ js.Any, 
+      /* location */ expressDashValidatorLib.checkLocationMod.Location, 
+      _
+    ] = null
+  ): ExpressValidatorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customSanitizers != null) __obj.updateDynamic("customSanitizers")(customSanitizers)
+    if (customValidators != null) __obj.updateDynamic("customValidators")(customValidators)
+    if (errorFormatter != null) __obj.updateDynamic("errorFormatter")(errorFormatter)
+    __obj.asInstanceOf[ExpressValidatorOptions]
+  }
+}
+

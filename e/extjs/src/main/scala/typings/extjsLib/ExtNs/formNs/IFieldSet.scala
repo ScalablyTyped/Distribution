@@ -81,3 +81,80 @@ import scala.scalajs.js.annotation._
   var toggleOnTitleClick: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IFieldSet {
+  @scala.inline
+  def apply(
+    IContainer: extjsLib.ExtNs.containerNs.IContainer = null,
+    IFieldAncestor: IFieldAncestor = null,
+    autoEl: js.Any = null,
+    baseCls: java.lang.String = null,
+    checkboxCmp: extjsLib.ExtNs.formNs.fieldNs.ICheckbox = null,
+    checkboxName: java.lang.String = null,
+    checkboxToggle: js.UndefOr[scala.Boolean] = js.undefined,
+    collapse: js.Function0[IFieldSet] = null,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    componentLayout: js.Any = null,
+    createCheckboxCmp: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    createTitleCmp: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    createToggleCmp: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    expand: js.Function0[IFieldSet] = null,
+    getRefItems: js.Function1[/* deep */ js.UndefOr[js.Any], scala.Unit] = null,
+    getState: js.Function0[_] = null,
+    initFieldAncestor: js.Function0[scala.Unit] = null,
+    layout: js.Any = null,
+    legend: extjsLib.ExtNs.IComponent = null,
+    maskOnDisable: js.UndefOr[scala.Boolean] = js.undefined,
+    onFieldErrorChange: js.Function2[
+      /* field */ js.UndefOr[ILabelable], 
+      /* error */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ] = null,
+    onFieldValidityChange: js.Function2[
+      /* field */ js.UndefOr[extjsLib.ExtNs.formNs.fieldNs.IField], 
+      /* valid */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    renderTpl: js.Any = null,
+    setTitle: js.Function1[/* title */ js.UndefOr[java.lang.String], IFieldSet] = null,
+    stateEvents: extjsLib.ExtNs.Array = null,
+    title: java.lang.String = null,
+    toggle: js.Function0[scala.Unit] = null,
+    toggleCmp: extjsLib.ExtNs.panelNs.ITool = null,
+    toggleOnTitleClick: js.UndefOr[scala.Boolean] = js.undefined
+  ): IFieldSet = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    js.Dynamic.global.Object.assign(__obj, IFieldAncestor)
+    if (autoEl != null) __obj.updateDynamic("autoEl")(autoEl)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (checkboxCmp != null) __obj.updateDynamic("checkboxCmp")(checkboxCmp)
+    if (checkboxName != null) __obj.updateDynamic("checkboxName")(checkboxName)
+    if (!js.isUndefined(checkboxToggle)) __obj.updateDynamic("checkboxToggle")(checkboxToggle)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (createCheckboxCmp != null) __obj.updateDynamic("createCheckboxCmp")(createCheckboxCmp)
+    if (createTitleCmp != null) __obj.updateDynamic("createTitleCmp")(createTitleCmp)
+    if (createToggleCmp != null) __obj.updateDynamic("createToggleCmp")(createToggleCmp)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (getRefItems != null) __obj.updateDynamic("getRefItems")(getRefItems)
+    if (getState != null) __obj.updateDynamic("getState")(getState)
+    if (initFieldAncestor != null) __obj.updateDynamic("initFieldAncestor")(initFieldAncestor)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable)
+    if (onFieldErrorChange != null) __obj.updateDynamic("onFieldErrorChange")(onFieldErrorChange)
+    if (onFieldValidityChange != null) __obj.updateDynamic("onFieldValidityChange")(onFieldValidityChange)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (setTitle != null) __obj.updateDynamic("setTitle")(setTitle)
+    if (stateEvents != null) __obj.updateDynamic("stateEvents")(stateEvents)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (toggle != null) __obj.updateDynamic("toggle")(toggle)
+    if (toggleCmp != null) __obj.updateDynamic("toggleCmp")(toggleCmp)
+    if (!js.isUndefined(toggleOnTitleClick)) __obj.updateDynamic("toggleOnTitleClick")(toggleOnTitleClick)
+    __obj.asInstanceOf[IFieldSet]
+  }
+}
+

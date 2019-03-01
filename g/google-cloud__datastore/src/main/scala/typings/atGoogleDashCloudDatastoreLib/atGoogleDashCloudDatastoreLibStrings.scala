@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object atGoogleDashCloudDatastoreLibStrings {
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends atGoogleDashCloudDatastoreLib.queryMod.QueryFilterOperator
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends atGoogleDashCloudDatastoreLib.queryMod.QueryFilterOperator
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait `=`
+    extends atGoogleDashCloudDatastoreLib.queryMod.QueryFilterOperator
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends atGoogleDashCloudDatastoreLib.queryMod.QueryFilterOperator
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends atGoogleDashCloudDatastoreLib.queryMod.QueryFilterOperator
   
   @js.native
   sealed trait MORE_RESULTS_AFTER_CURSOR extends js.Object

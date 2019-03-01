@@ -15,7 +15,6 @@ package object geojsonMod {
   type GeoJsonTypes = js.UndefOr[
     geojsonLib.geojsonLibStrings.Point | geojsonLib.geojsonLibStrings.MultiPoint | geojsonLib.geojsonLibStrings.LineString | geojsonLib.geojsonLibStrings.MultiLineString | geojsonLib.geojsonLibStrings.Polygon | geojsonLib.geojsonLibStrings.MultiPolygon | geojsonLib.geojsonLibStrings.GeometryCollection | geojsonLib.geojsonLibStrings.Feature | geojsonLib.geojsonLibStrings.FeatureCollection
   ]
-  type Geometry = Point | MultiPoint | LineString | MultiLineString | Polygon | MultiPolygon | GeometryCollection
   type GeometryObject = Geometry
   type Position = js.Array[scala.Double]
 }

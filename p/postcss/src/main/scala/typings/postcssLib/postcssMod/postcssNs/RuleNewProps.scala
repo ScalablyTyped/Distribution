@@ -20,3 +20,20 @@ trait RuleNewProps extends ContainerNewProps {
   var selectors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object RuleNewProps {
+  @scala.inline
+  def apply(
+    nodes: js.Array[Node] = null,
+    raws: RuleRaws = null,
+    selector: java.lang.String = null,
+    selectors: js.Array[java.lang.String] = null
+  ): RuleNewProps = {
+    val __obj = js.Dynamic.literal()
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (raws != null) __obj.updateDynamic("raws")(raws)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    __obj.asInstanceOf[RuleNewProps]
+  }
+}
+

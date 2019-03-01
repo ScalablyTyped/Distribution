@@ -44,3 +44,30 @@ trait CronJobParameters extends js.Object {
   def onTick(): scala.Unit
 }
 
+object CronJobParameters {
+  @scala.inline
+  def apply(
+    cronTime: java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment,
+    onTick: js.Function0[scala.Unit],
+    context: js.Any = null,
+    onComplete: js.Function0[scala.Unit] = null,
+    runOnInit: js.UndefOr[scala.Boolean] = js.undefined,
+    start: js.UndefOr[scala.Boolean] = js.undefined,
+    timeZone: java.lang.String = null,
+    unrefTimeout: js.UndefOr[scala.Boolean] = js.undefined,
+    utcOffset: java.lang.String | scala.Double = null
+  ): CronJobParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cronTime")(cronTime.asInstanceOf[js.Any])
+    __obj.updateDynamic("onTick")(onTick)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (!js.isUndefined(runOnInit)) __obj.updateDynamic("runOnInit")(runOnInit)
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (!js.isUndefined(unrefTimeout)) __obj.updateDynamic("unrefTimeout")(unrefTimeout)
+    if (utcOffset != null) __obj.updateDynamic("utcOffset")(utcOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CronJobParameters]
+  }
+}
+

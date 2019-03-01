@@ -6,14 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object screepsLib {
   type ATTACK = screepsLib.screepsLibStrings.attack
-  /**
-    * A discriminated union on Structure.type of all owned structure types
-    */
-  type AnyOwnedStructure = StructureController | StructureExtension | StructureExtractor | StructureKeeperLair | StructureLab | StructureLink | StructureNuker | StructureObserver | StructurePowerBank | StructurePowerSpawn | StructureRampart | StructureSpawn | StructureStorage | StructureTerminal | StructureTower
-  /**
-    * A discriminated union on Structure.type of all structure types
-    */
-  type AnyStructure = AnyOwnedStructure | StructureContainer | StructurePortal | StructureRoad | StructureWall
   type BOTTOM = screepsLib.screepsLibNumbers.`5`
   type BOTTOM_LEFT = screepsLib.screepsLibNumbers.`6`
   type BOTTOM_RIGHT = screepsLib.screepsLibNumbers.`4`
@@ -79,7 +71,6 @@ package object screepsLib {
   type EventHealType = EVENT_HEAL_TYPE_MELEE | EVENT_HEAL_TYPE_RANGED
   // Find Constants
   type ExitConstant = FIND_EXIT_TOP | FIND_EXIT_RIGHT | FIND_EXIT_BOTTOM | FIND_EXIT_LEFT
-  type ExitKey = screepsLib.screepsLibStrings.`1` | screepsLib.screepsLibStrings.`3` | screepsLib.screepsLibStrings.`5` | screepsLib.screepsLibStrings.`7`
   // type SD<K extends ResourceConstant> = {
   //   [P in K]: number;
   //   energy: number;
@@ -219,12 +210,6 @@ package object screepsLib {
   type TOP_LEFT = screepsLib.screepsLibNumbers.`8`
   type TOP_RIGHT = screepsLib.screepsLibNumbers.`2`
   type TOUGH = screepsLib.screepsLibStrings.tough
-  /*
-    * This file creates literal versions of many of the constants
-    * It should be kept in sync with constants.ts
-    */
-  // Extras
-  type Terrain = screepsLib.screepsLibStrings.plain | screepsLib.screepsLibStrings.swamp | screepsLib.screepsLibStrings.wall
   type WORK = screepsLib.screepsLibStrings.work
   type _ResourceConstantSansEnergy = RESOURCE_POWER | RESOURCE_UTRIUM | RESOURCE_LEMERGIUM | RESOURCE_KEANIUM | RESOURCE_GHODIUM | RESOURCE_ZYNTHIUM | RESOURCE_OXYGEN | RESOURCE_HYDROGEN | RESOURCE_CATALYST | RESOURCE_HYDROXIDE | RESOURCE_ZYNTHIUM_KEANITE | RESOURCE_UTRIUM_LEMERGITE | RESOURCE_UTRIUM_HYDRIDE | RESOURCE_UTRIUM_OXIDE | RESOURCE_KEANIUM_HYDRIDE | RESOURCE_KEANIUM_OXIDE | RESOURCE_LEMERGIUM_HYDRIDE | RESOURCE_LEMERGIUM_OXIDE | RESOURCE_ZYNTHIUM_HYDRIDE | RESOURCE_ZYNTHIUM_OXIDE | RESOURCE_GHODIUM_HYDRIDE | RESOURCE_GHODIUM_OXIDE | RESOURCE_UTRIUM_ACID | RESOURCE_UTRIUM_ALKALIDE | RESOURCE_KEANIUM_ACID | RESOURCE_KEANIUM_ALKALIDE | RESOURCE_LEMERGIUM_ACID | RESOURCE_LEMERGIUM_ALKALIDE | RESOURCE_ZYNTHIUM_ACID | RESOURCE_ZYNTHIUM_ALKALIDE | RESOURCE_GHODIUM_ACID | RESOURCE_GHODIUM_ALKALIDE | RESOURCE_CATALYZED_UTRIUM_ACID | RESOURCE_CATALYZED_UTRIUM_ALKALIDE | RESOURCE_CATALYZED_KEANIUM_ACID | RESOURCE_CATALYZED_KEANIUM_ALKALIDE | RESOURCE_CATALYZED_LEMERGIUM_ACID | RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE | RESOURCE_CATALYZED_ZYNTHIUM_ACID | RESOURCE_CATALYZED_ZYNTHIUM_ALKALIDE | RESOURCE_CATALYZED_GHODIUM_ACID | RESOURCE_CATALYZED_GHODIUM_ALKALIDE
 }

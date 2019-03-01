@@ -13,3 +13,22 @@ trait Anon_Format extends js.Object {
   var version: java.lang.String
 }
 
+object Anon_Format {
+  @scala.inline
+  def apply(
+    format: java.lang.String,
+    request: java.lang.String,
+    service: java.lang.String,
+    styles: java.lang.String,
+    version: java.lang.String
+  ): Anon_Format = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("service")(service)
+    __obj.updateDynamic("styles")(styles)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Format]
+  }
+}
+

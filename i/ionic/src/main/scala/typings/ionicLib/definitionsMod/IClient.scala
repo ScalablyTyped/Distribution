@@ -12,3 +12,22 @@ trait IClient extends js.Object {
   def paginate[T /* <: Response[js.Array[js.Object]] */](args: PaginateArgs[T]): IPaginator[T, PaginatorState]
 }
 
+object IClient {
+  @scala.inline
+  def apply(
+    config: IConfig,
+    `do`: js.Function1[
+      superagentLib.superagentMod.requestNs.SuperAgentRequest, 
+      js.Promise[APIResponseSuccess]
+    ],
+    make: js.Function2[HttpMethod, java.lang.String, js.Promise[ionicLib.Anon_Req]],
+    paginate: js.Function1[PaginateArgs[js.Any], IPaginator[js.Any, PaginatorState]]
+  ): IClient = {
+    val __obj = js.Dynamic.literal(`do` = `do`)
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("make")(make)
+    __obj.updateDynamic("paginate")(paginate)
+    __obj.asInstanceOf[IClient]
+  }
+}
+

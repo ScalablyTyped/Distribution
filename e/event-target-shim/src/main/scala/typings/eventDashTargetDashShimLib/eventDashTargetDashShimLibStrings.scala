@@ -46,7 +46,8 @@ object eventDashTargetDashShimLibStrings {
   sealed trait isTrusted extends js.Object
   
   @js.native
-  sealed trait loose extends js.Object
+  sealed trait loose
+    extends eventDashTargetDashShimLib.eventDashTargetDashShimMod.EventTargetNs.Mode
   
   @js.native
   sealed trait returnValue extends js.Object
@@ -55,10 +56,12 @@ object eventDashTargetDashShimLibStrings {
   sealed trait srcElement extends js.Object
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard
+    extends eventDashTargetDashShimLib.eventDashTargetDashShimMod.EventTargetNs.Mode
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait strict
+    extends eventDashTargetDashShimLib.eventDashTargetDashShimMod.EventTargetNs.Mode
   
   @js.native
   sealed trait target extends js.Object

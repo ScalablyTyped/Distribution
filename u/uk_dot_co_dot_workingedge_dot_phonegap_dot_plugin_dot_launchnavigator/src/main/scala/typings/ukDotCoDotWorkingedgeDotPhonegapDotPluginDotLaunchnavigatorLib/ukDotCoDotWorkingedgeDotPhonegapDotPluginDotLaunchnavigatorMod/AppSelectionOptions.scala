@@ -38,3 +38,24 @@ trait AppSelectionOptions extends js.Object {
   var rememberChoice: js.UndefOr[RememberChoiceOptions] = js.undefined
 }
 
+object AppSelectionOptions {
+  @scala.inline
+  def apply(
+    androidTheme: scala.Int | scala.Double = null,
+    callback: js.Function1[/* app */ java.lang.String, scala.Unit] = null,
+    cancelButtonText: java.lang.String = null,
+    dialogHeaderText: java.lang.String = null,
+    list: js.Array[java.lang.String] = null,
+    rememberChoice: RememberChoiceOptions = null
+  ): AppSelectionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (androidTheme != null) __obj.updateDynamic("androidTheme")(androidTheme.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)
+    if (dialogHeaderText != null) __obj.updateDynamic("dialogHeaderText")(dialogHeaderText)
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (rememberChoice != null) __obj.updateDynamic("rememberChoice")(rememberChoice)
+    __obj.asInstanceOf[AppSelectionOptions]
+  }
+}
+

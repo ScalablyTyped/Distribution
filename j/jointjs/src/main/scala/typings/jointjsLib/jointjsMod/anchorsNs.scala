@@ -24,6 +24,8 @@ object anchorsNs extends js.Object {
     var topRight: BBoxAnchorArguments
   }
   
+  trait AnchorType extends js.Object
+  
   trait BBoxAnchorArguments extends RotateAnchorArguments {
     var dx: js.UndefOr[scala.Double | java.lang.String] = js.undefined
     var dy: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -64,7 +66,6 @@ object anchorsNs extends js.Object {
   type Anchor = GenericAnchor[AnchorType]
   type AnchorArguments = GenericAnchorArguments[AnchorType]
   type AnchorJSON = GenericAnchorJSON[AnchorType]
-  type AnchorType = jointjsLib.jointjsLibStrings.center | jointjsLib.jointjsLibStrings.top | jointjsLib.jointjsLibStrings.bottom | jointjsLib.jointjsLibStrings.left | jointjsLib.jointjsLibStrings.right | jointjsLib.jointjsLibStrings.topLeft | jointjsLib.jointjsLibStrings.topRight | jointjsLib.jointjsLibStrings.bottomLeft | jointjsLib.jointjsLibStrings.bottomRight | jointjsLib.jointjsLibStrings.perpendicular | jointjsLib.jointjsLibStrings.midSide | jointjsLib.jointjsLibStrings.modelCenter
   type GenericAnchor[K /* <: AnchorType */] = js.Function4[
     /* endView */ jointjsLib.jointjsMod.diaNs.CellView, 
     /* endMagnet */ stdLib.SVGElement, 

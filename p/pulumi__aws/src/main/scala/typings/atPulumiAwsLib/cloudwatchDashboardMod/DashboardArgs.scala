@@ -16,3 +16,16 @@ trait DashboardArgs extends js.Object {
   val dashboardName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object DashboardArgs {
+  @scala.inline
+  def apply(
+    dashboardBody: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    dashboardName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): DashboardArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dashboardBody")(dashboardBody.asInstanceOf[js.Any])
+    __obj.updateDynamic("dashboardName")(dashboardName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DashboardArgs]
+  }
+}
+

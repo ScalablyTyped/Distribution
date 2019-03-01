@@ -109,3 +109,30 @@ trait Anon_BorderColorBorderColorSaturation extends js.Object {
   var strokeWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_BorderColorBorderColorSaturation {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String = null,
+    borderColorSaturation: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    colorAlpha: scala.Int | scala.Double = null,
+    colorSaturation: scala.Int | scala.Double = null,
+    gapWidth: scala.Int | scala.Double = null,
+    strokeColor: java.lang.String = null,
+    strokeWidth: scala.Int | scala.Double = null
+  ): Anon_BorderColorBorderColorSaturation = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColorSaturation != null) __obj.updateDynamic("borderColorSaturation")(borderColorSaturation)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colorAlpha != null) __obj.updateDynamic("colorAlpha")(colorAlpha.asInstanceOf[js.Any])
+    if (colorSaturation != null) __obj.updateDynamic("colorSaturation")(colorSaturation.asInstanceOf[js.Any])
+    if (gapWidth != null) __obj.updateDynamic("gapWidth")(gapWidth.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BorderColorBorderColorSaturation]
+  }
+}
+

@@ -21,3 +21,18 @@ trait RuntimeCacheRule extends js.Object {
   var urlPattern: js.UndefOr[java.lang.String | stdLib.RegExp] = js.undefined
 }
 
+object RuntimeCacheRule {
+  @scala.inline
+  def apply(
+    handler: ChacheStrategy = null,
+    options: RuntimeCacheOptions = null,
+    urlPattern: java.lang.String | stdLib.RegExp = null
+  ): RuntimeCacheRule = {
+    val __obj = js.Dynamic.literal()
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (urlPattern != null) __obj.updateDynamic("urlPattern")(urlPattern.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuntimeCacheRule]
+  }
+}
+

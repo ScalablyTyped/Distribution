@@ -12,3 +12,13 @@ trait Draft extends js.Object {
   var message: js.UndefOr[Message] = js.undefined
 }
 
+object Draft {
+  @scala.inline
+  def apply(id: java.lang.String = null, message: Message = null): Draft = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Draft]
+  }
+}
+

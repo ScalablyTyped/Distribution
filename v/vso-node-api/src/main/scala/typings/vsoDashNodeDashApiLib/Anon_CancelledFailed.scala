@@ -16,3 +16,28 @@ trait Anon_CancelledFailed extends js.Object {
   var timedOut: scala.Double
 }
 
+object Anon_CancelledFailed {
+  @scala.inline
+  def apply(
+    cancelled: scala.Double,
+    failed: scala.Double,
+    inProgress: scala.Double,
+    notFound: scala.Double,
+    notSet: scala.Double,
+    queued: scala.Double,
+    succeeded: scala.Double,
+    timedOut: scala.Double
+  ): Anon_CancelledFailed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancelled")(cancelled)
+    __obj.updateDynamic("failed")(failed)
+    __obj.updateDynamic("inProgress")(inProgress)
+    __obj.updateDynamic("notFound")(notFound)
+    __obj.updateDynamic("notSet")(notSet)
+    __obj.updateDynamic("queued")(queued)
+    __obj.updateDynamic("succeeded")(succeeded)
+    __obj.updateDynamic("timedOut")(timedOut)
+    __obj.asInstanceOf[Anon_CancelledFailed]
+  }
+}
+

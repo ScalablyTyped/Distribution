@@ -32,3 +32,36 @@ trait SetAccountInfoResponse extends js.Object {
   var refreshToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SetAccountInfoResponse {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    email: java.lang.String = null,
+    emailVerified: js.UndefOr[scala.Boolean] = js.undefined,
+    expiresIn: java.lang.String = null,
+    idToken: java.lang.String = null,
+    kind: java.lang.String = null,
+    localId: java.lang.String = null,
+    newEmail: java.lang.String = null,
+    passwordHash: java.lang.String = null,
+    photoUrl: java.lang.String = null,
+    providerUserInfo: js.Array[gapiDotClientDotIdentitytoolkitLib.Anon_DisplayName] = null,
+    refreshToken: java.lang.String = null
+  ): SetAccountInfoResponse = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified)
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (localId != null) __obj.updateDynamic("localId")(localId)
+    if (newEmail != null) __obj.updateDynamic("newEmail")(newEmail)
+    if (passwordHash != null) __obj.updateDynamic("passwordHash")(passwordHash)
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
+    if (providerUserInfo != null) __obj.updateDynamic("providerUserInfo")(providerUserInfo)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    __obj.asInstanceOf[SetAccountInfoResponse]
+  }
+}
+

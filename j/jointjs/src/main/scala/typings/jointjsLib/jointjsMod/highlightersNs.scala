@@ -40,6 +40,8 @@ object highlightersNs extends js.Object {
     var stroke: StrokeHighlighterArguments
   }
   
+  trait HighlighterType extends js.Object
+  
   trait OpacityHighlighterArguments extends js.Object
   
   trait StrokeHighlighterArguments extends js.Object {
@@ -56,6 +58,5 @@ object highlightersNs extends js.Object {
   type Highlighter = GenericHighlighter[HighlighterType]
   type HighlighterArguments = GenericHighlighterArguments[HighlighterType]
   type HighlighterJSON = GenericHighlighterJSON[HighlighterType]
-  type HighlighterType = jointjsLib.jointjsLibStrings.addClass | jointjsLib.jointjsLibStrings.opacity | jointjsLib.jointjsLibStrings.stroke
 }
 

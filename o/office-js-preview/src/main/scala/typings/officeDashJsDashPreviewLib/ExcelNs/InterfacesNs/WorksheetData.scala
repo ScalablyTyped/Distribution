@@ -179,3 +179,56 @@ trait WorksheetData extends js.Object {
   ] = js.undefined
 }
 
+object WorksheetData {
+  @scala.inline
+  def apply(
+    autoFilter: AutoFilterData = null,
+    charts: js.Array[ChartData] = null,
+    comments: js.Array[CommentData] = null,
+    enableCalculation: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalPageBreaks: js.Array[PageBreakData] = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    names: js.Array[NamedItemData] = null,
+    pageLayout: PageLayoutData = null,
+    pivotTables: js.Array[PivotTableData] = null,
+    position: scala.Int | scala.Double = null,
+    protection: WorksheetProtectionData = null,
+    shapes: js.Array[ShapeData] = null,
+    showGridlines: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeadings: js.UndefOr[scala.Boolean] = js.undefined,
+    slicers: js.Array[SlicerData] = null,
+    standardHeight: scala.Int | scala.Double = null,
+    standardWidth: scala.Int | scala.Double = null,
+    tabColor: java.lang.String = null,
+    tables: js.Array[TableData] = null,
+    verticalPageBreaks: js.Array[PageBreakData] = null,
+    visibility: officeDashJsDashPreviewLib.ExcelNs.SheetVisibility | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Visible | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Hidden | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.VeryHidden = null
+  ): WorksheetData = {
+    val __obj = js.Dynamic.literal()
+    if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter)
+    if (charts != null) __obj.updateDynamic("charts")(charts)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation)
+    if (horizontalPageBreaks != null) __obj.updateDynamic("horizontalPageBreaks")(horizontalPageBreaks)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (pageLayout != null) __obj.updateDynamic("pageLayout")(pageLayout)
+    if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
+    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
+    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)
+    if (slicers != null) __obj.updateDynamic("slicers")(slicers)
+    if (standardHeight != null) __obj.updateDynamic("standardHeight")(standardHeight.asInstanceOf[js.Any])
+    if (standardWidth != null) __obj.updateDynamic("standardWidth")(standardWidth.asInstanceOf[js.Any])
+    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (verticalPageBreaks != null) __obj.updateDynamic("verticalPageBreaks")(verticalPageBreaks)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetData]
+  }
+}
+

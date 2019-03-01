@@ -10,3 +10,12 @@ trait IELangDBOptions extends js.Object {
   var autocompleteRows: scala.Double
 }
 
+object IELangDBOptions {
+  @scala.inline
+  def apply(autocompleteRows: scala.Double): IELangDBOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autocompleteRows")(autocompleteRows)
+    __obj.asInstanceOf[IELangDBOptions]
+  }
+}
+

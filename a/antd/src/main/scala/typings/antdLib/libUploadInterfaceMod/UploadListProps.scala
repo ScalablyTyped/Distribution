@@ -17,3 +17,30 @@ trait UploadListProps extends js.Object {
   var showRemoveIcon: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UploadListProps {
+  @scala.inline
+  def apply(
+    locale: UploadLocale,
+    items: js.Array[UploadFile] = null,
+    listType: UploadListType = null,
+    onPreview: js.Function1[/* file */ UploadFile, scala.Unit] = null,
+    onRemove: js.Function1[/* file */ UploadFile, scala.Unit | scala.Boolean] = null,
+    prefixCls: java.lang.String = null,
+    progressAttr: js.Object = null,
+    showPreviewIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    showRemoveIcon: js.UndefOr[scala.Boolean] = js.undefined
+  ): UploadListProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("locale")(locale)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (listType != null) __obj.updateDynamic("listType")(listType)
+    if (onPreview != null) __obj.updateDynamic("onPreview")(onPreview)
+    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (progressAttr != null) __obj.updateDynamic("progressAttr")(progressAttr)
+    if (!js.isUndefined(showPreviewIcon)) __obj.updateDynamic("showPreviewIcon")(showPreviewIcon)
+    if (!js.isUndefined(showRemoveIcon)) __obj.updateDynamic("showRemoveIcon")(showRemoveIcon)
+    __obj.asInstanceOf[UploadListProps]
+  }
+}
+

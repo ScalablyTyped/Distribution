@@ -16,3 +16,16 @@ trait PatchGroupArgs extends js.Object {
   val patchGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object PatchGroupArgs {
+  @scala.inline
+  def apply(
+    baselineId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    patchGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): PatchGroupArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baselineId")(baselineId.asInstanceOf[js.Any])
+    __obj.updateDynamic("patchGroup")(patchGroup.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PatchGroupArgs]
+  }
+}
+

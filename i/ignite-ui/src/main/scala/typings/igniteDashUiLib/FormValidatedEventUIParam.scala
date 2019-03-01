@@ -20,3 +20,18 @@ trait FormValidatedEventUIParam extends js.Object {
   var valid: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FormValidatedEventUIParam {
+  @scala.inline
+  def apply(
+    owner: js.Any = null,
+    target: java.lang.String = null,
+    valid: js.UndefOr[scala.Boolean] = js.undefined
+  ): FormValidatedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    __obj.asInstanceOf[FormValidatedEventUIParam]
+  }
+}
+

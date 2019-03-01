@@ -8,11 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "ImageManipulator")
 @js.native
 object ImageManipulatorNs extends js.Object {
-  trait Crop extends js.Object {
+  trait Action extends js.Object
+  
+  trait Crop extends Action {
     var crop: expoLib.Anon_HeightOriginX
   }
   
-  trait Flip extends js.Object {
+  trait Flip extends Action {
     var flip: expoLib.Anon_Horizontal
   }
   
@@ -23,11 +25,11 @@ object ImageManipulatorNs extends js.Object {
     var width: scala.Double
   }
   
-  trait Resize extends js.Object {
+  trait Resize extends Action {
     var resize: expoLib.Anon_HeightWidth
   }
   
-  trait Rotate extends js.Object {
+  trait Rotate extends Action {
     var rotate: scala.Double
   }
   
@@ -40,6 +42,5 @@ object ImageManipulatorNs extends js.Object {
   
   def manipulateAsync(uri: java.lang.String, actions: js.Array[Action]): js.Promise[ImageResult] = js.native
   def manipulateAsync(uri: java.lang.String, actions: js.Array[Action], saveOptions: SaveOptions): js.Promise[ImageResult] = js.native
-  type Action = Resize | Rotate | Flip | Crop
 }
 

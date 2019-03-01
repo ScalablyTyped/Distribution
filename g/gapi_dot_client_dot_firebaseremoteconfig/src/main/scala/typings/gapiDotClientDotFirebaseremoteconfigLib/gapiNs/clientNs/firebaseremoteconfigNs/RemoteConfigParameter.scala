@@ -19,3 +19,16 @@ trait RemoteConfigParameter extends js.Object {
   var defaultValue: js.UndefOr[RemoteConfigParameterValue] = js.undefined
 }
 
+object RemoteConfigParameter {
+  @scala.inline
+  def apply(
+    conditionalValues: stdLib.Record[java.lang.String, RemoteConfigParameterValue] = null,
+    defaultValue: RemoteConfigParameterValue = null
+  ): RemoteConfigParameter = {
+    val __obj = js.Dynamic.literal()
+    if (conditionalValues != null) __obj.updateDynamic("conditionalValues")(conditionalValues)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    __obj.asInstanceOf[RemoteConfigParameter]
+  }
+}
+

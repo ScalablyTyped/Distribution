@@ -31,3 +31,22 @@ trait CellProps
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CellProps {
+  @scala.inline
+  def apply(
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[Cell] = null,
+    columnKey: java.lang.String | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    rowIndex: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): CellProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CellProps]
+  }
+}
+

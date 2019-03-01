@@ -12,3 +12,16 @@ trait Anon_OriginalValue extends js.Object {
   var resolutions: js.Array[awsDashLambdaLib.awsDashLambdaMod.LexSlotResolution]
 }
 
+object Anon_OriginalValue {
+  @scala.inline
+  def apply(
+    originalValue: java.lang.String,
+    resolutions: js.Array[awsDashLambdaLib.awsDashLambdaMod.LexSlotResolution]
+  ): Anon_OriginalValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("originalValue")(originalValue)
+    __obj.updateDynamic("resolutions")(resolutions)
+    __obj.asInstanceOf[Anon_OriginalValue]
+  }
+}
+

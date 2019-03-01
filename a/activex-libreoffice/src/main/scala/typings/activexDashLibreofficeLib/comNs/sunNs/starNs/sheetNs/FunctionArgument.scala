@@ -18,3 +18,14 @@ trait FunctionArgument extends js.Object {
   var Name: java.lang.String
 }
 
+object FunctionArgument {
+  @scala.inline
+  def apply(Description: java.lang.String, IsOptional: scala.Boolean, Name: java.lang.String): FunctionArgument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("IsOptional")(IsOptional)
+    __obj.updateDynamic("Name")(Name)
+    __obj.asInstanceOf[FunctionArgument]
+  }
+}
+

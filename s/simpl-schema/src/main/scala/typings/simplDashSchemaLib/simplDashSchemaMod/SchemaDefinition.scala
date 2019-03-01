@@ -39,3 +39,48 @@ trait SchemaDefinition extends js.Object {
   var `type`: js.Any
 }
 
+object SchemaDefinition {
+  @scala.inline
+  def apply(
+    `type`: js.Any,
+    allowedValues: js.Array[_] | js.Function0[js.Array[_]] = null,
+    autoValue: js.Function0[_] = null,
+    blackbox: js.UndefOr[scala.Boolean] = js.undefined,
+    custom: js.ThisFunction0[
+      /* this */ CustomValidationContext, 
+      js.UndefOr[java.lang.String | SimpleSchemaValidationError]
+    ] = null,
+    decimal: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultValue: js.Any = null,
+    exclusiveMax: js.UndefOr[scala.Boolean] = js.undefined,
+    exclusiveMin: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String | js.Function0[java.lang.String] = null,
+    max: scala.Double | scala.Boolean | stdLib.Date | (js.Function0[scala.Double | scala.Boolean | stdLib.Date]) = null,
+    maxCount: scala.Double | js.Function0[scala.Double] = null,
+    min: scala.Double | scala.Boolean | stdLib.Date | (js.Function0[scala.Double | scala.Boolean | stdLib.Date]) = null,
+    minCount: scala.Double | js.Function0[scala.Double] = null,
+    optional: scala.Boolean | js.Function0[scala.Boolean] = null,
+    regEx: stdLib.RegExp | js.Array[stdLib.RegExp] = null,
+    trim: js.UndefOr[scala.Boolean] = js.undefined
+  ): SchemaDefinition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
+    if (autoValue != null) __obj.updateDynamic("autoValue")(autoValue)
+    if (!js.isUndefined(blackbox)) __obj.updateDynamic("blackbox")(blackbox)
+    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (!js.isUndefined(decimal)) __obj.updateDynamic("decimal")(decimal)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(exclusiveMax)) __obj.updateDynamic("exclusiveMax")(exclusiveMax)
+    if (!js.isUndefined(exclusiveMin)) __obj.updateDynamic("exclusiveMin")(exclusiveMin)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minCount != null) __obj.updateDynamic("minCount")(minCount.asInstanceOf[js.Any])
+    if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (regEx != null) __obj.updateDynamic("regEx")(regEx.asInstanceOf[js.Any])
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    __obj.asInstanceOf[SchemaDefinition]
+  }
+}
+

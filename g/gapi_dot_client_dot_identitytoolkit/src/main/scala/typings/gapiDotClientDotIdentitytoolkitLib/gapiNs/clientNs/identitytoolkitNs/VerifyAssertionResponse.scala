@@ -93,3 +93,90 @@ trait VerifyAssertionResponse extends js.Object {
   var verifiedProvider: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object VerifyAssertionResponse {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    appInstallationUrl: java.lang.String = null,
+    appScheme: java.lang.String = null,
+    context: java.lang.String = null,
+    dateOfBirth: java.lang.String = null,
+    displayName: java.lang.String = null,
+    email: java.lang.String = null,
+    emailRecycled: js.UndefOr[scala.Boolean] = js.undefined,
+    emailVerified: js.UndefOr[scala.Boolean] = js.undefined,
+    errorMessage: java.lang.String = null,
+    expiresIn: java.lang.String = null,
+    federatedId: java.lang.String = null,
+    firstName: java.lang.String = null,
+    fullName: java.lang.String = null,
+    idToken: java.lang.String = null,
+    inputEmail: java.lang.String = null,
+    isNewUser: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    language: java.lang.String = null,
+    lastName: java.lang.String = null,
+    localId: java.lang.String = null,
+    needConfirmation: js.UndefOr[scala.Boolean] = js.undefined,
+    needEmail: js.UndefOr[scala.Boolean] = js.undefined,
+    nickName: java.lang.String = null,
+    oauthAccessToken: java.lang.String = null,
+    oauthAuthorizationCode: java.lang.String = null,
+    oauthExpireIn: scala.Int | scala.Double = null,
+    oauthIdToken: java.lang.String = null,
+    oauthRequestToken: java.lang.String = null,
+    oauthScope: java.lang.String = null,
+    oauthTokenSecret: java.lang.String = null,
+    originalEmail: java.lang.String = null,
+    photoUrl: java.lang.String = null,
+    providerId: java.lang.String = null,
+    rawUserInfo: java.lang.String = null,
+    refreshToken: java.lang.String = null,
+    screenName: java.lang.String = null,
+    timeZone: java.lang.String = null,
+    verifiedProvider: js.Array[java.lang.String] = null
+  ): VerifyAssertionResponse = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (appInstallationUrl != null) __obj.updateDynamic("appInstallationUrl")(appInstallationUrl)
+    if (appScheme != null) __obj.updateDynamic("appScheme")(appScheme)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (dateOfBirth != null) __obj.updateDynamic("dateOfBirth")(dateOfBirth)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (!js.isUndefined(emailRecycled)) __obj.updateDynamic("emailRecycled")(emailRecycled)
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn)
+    if (federatedId != null) __obj.updateDynamic("federatedId")(federatedId)
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
+    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (inputEmail != null) __obj.updateDynamic("inputEmail")(inputEmail)
+    if (!js.isUndefined(isNewUser)) __obj.updateDynamic("isNewUser")(isNewUser)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
+    if (localId != null) __obj.updateDynamic("localId")(localId)
+    if (!js.isUndefined(needConfirmation)) __obj.updateDynamic("needConfirmation")(needConfirmation)
+    if (!js.isUndefined(needEmail)) __obj.updateDynamic("needEmail")(needEmail)
+    if (nickName != null) __obj.updateDynamic("nickName")(nickName)
+    if (oauthAccessToken != null) __obj.updateDynamic("oauthAccessToken")(oauthAccessToken)
+    if (oauthAuthorizationCode != null) __obj.updateDynamic("oauthAuthorizationCode")(oauthAuthorizationCode)
+    if (oauthExpireIn != null) __obj.updateDynamic("oauthExpireIn")(oauthExpireIn.asInstanceOf[js.Any])
+    if (oauthIdToken != null) __obj.updateDynamic("oauthIdToken")(oauthIdToken)
+    if (oauthRequestToken != null) __obj.updateDynamic("oauthRequestToken")(oauthRequestToken)
+    if (oauthScope != null) __obj.updateDynamic("oauthScope")(oauthScope)
+    if (oauthTokenSecret != null) __obj.updateDynamic("oauthTokenSecret")(oauthTokenSecret)
+    if (originalEmail != null) __obj.updateDynamic("originalEmail")(originalEmail)
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
+    if (providerId != null) __obj.updateDynamic("providerId")(providerId)
+    if (rawUserInfo != null) __obj.updateDynamic("rawUserInfo")(rawUserInfo)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (screenName != null) __obj.updateDynamic("screenName")(screenName)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (verifiedProvider != null) __obj.updateDynamic("verifiedProvider")(verifiedProvider)
+    __obj.asInstanceOf[VerifyAssertionResponse]
+  }
+}
+

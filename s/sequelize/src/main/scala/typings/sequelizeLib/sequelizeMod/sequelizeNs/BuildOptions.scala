@@ -25,3 +25,20 @@ trait BuildOptions extends ReturningOptions {
   var raw: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BuildOptions {
+  @scala.inline
+  def apply(
+    include: js.Array[(Model[_, _]) | IncludeOptions] = null,
+    isNewRecord: js.UndefOr[scala.Boolean] = js.undefined,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    returning: js.UndefOr[scala.Boolean] = js.undefined
+  ): BuildOptions = {
+    val __obj = js.Dynamic.literal()
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (!js.isUndefined(isNewRecord)) __obj.updateDynamic("isNewRecord")(isNewRecord)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning)
+    __obj.asInstanceOf[BuildOptions]
+  }
+}
+

@@ -11,3 +11,14 @@ trait AssertionResult extends js.Object {
   var stackTrace: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AssertionResult {
+  @scala.inline
+  def apply(passed: scala.Boolean, errorMsg: java.lang.String = null, stackTrace: java.lang.String = null): AssertionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("passed")(passed)
+    if (errorMsg != null) __obj.updateDynamic("errorMsg")(errorMsg)
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
+    __obj.asInstanceOf[AssertionResult]
+  }
+}
+

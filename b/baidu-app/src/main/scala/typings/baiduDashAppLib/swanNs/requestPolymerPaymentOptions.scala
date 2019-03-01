@@ -25,3 +25,22 @@ trait requestPolymerPaymentOptions
   var success_requestPolymerPaymentOptions: js.UndefOr[js.Function1[/* res */ baiduDashAppLib.Anon_AuthSetting, scala.Unit]] = js.undefined
 }
 
+object requestPolymerPaymentOptions {
+  @scala.inline
+  def apply(
+    orderInfo: orderInfoOptions,
+    bannedChannels: js.Array[java.lang.String] = null,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[/* res */ baiduDashAppLib.Anon_AuthSetting, scala.Unit] = null
+  ): requestPolymerPaymentOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("orderInfo")(orderInfo)
+    if (bannedChannels != null) __obj.updateDynamic("bannedChannels")(bannedChannels)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[requestPolymerPaymentOptions]
+  }
+}
+

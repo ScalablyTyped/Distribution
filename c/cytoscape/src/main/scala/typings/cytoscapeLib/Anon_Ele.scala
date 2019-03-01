@@ -16,3 +16,13 @@ trait Anon_Ele[T] extends js.Object {
   var value: T
 }
 
+object Anon_Ele {
+  @scala.inline
+  def apply[T](ele: cytoscapeLib.cytoscapeMod.cytoscapeNs.SingularElementReturnValue, value: T): Anon_Ele[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ele")(ele)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Ele[T]]
+  }
+}
+

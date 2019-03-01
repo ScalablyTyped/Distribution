@@ -10,3 +10,13 @@ trait Anon_CancelPpDisp extends js.Object {
   var ppDisp: js.Any
 }
 
+object Anon_CancelPpDisp {
+  @scala.inline
+  def apply(Cancel: scala.Boolean, ppDisp: js.Any): Anon_CancelPpDisp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("ppDisp")(ppDisp)
+    __obj.asInstanceOf[Anon_CancelPpDisp]
+  }
+}
+

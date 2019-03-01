@@ -24,3 +24,21 @@ trait CompleteChildSource extends js.Object {
   def getCompleteChild(childKey: java.lang.String): atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node | scala.Null
 }
 
+object CompleteChildSource {
+  @scala.inline
+  def apply(
+    getChildAfterChild: js.Function3[
+      atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index, 
+      atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.NamedNode, 
+      scala.Boolean, 
+      atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.NamedNode | scala.Null
+    ],
+    getCompleteChild: js.Function1[java.lang.String, atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node | scala.Null]
+  ): CompleteChildSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getChildAfterChild")(getChildAfterChild)
+    __obj.updateDynamic("getCompleteChild")(getCompleteChild)
+    __obj.asInstanceOf[CompleteChildSource]
+  }
+}
+

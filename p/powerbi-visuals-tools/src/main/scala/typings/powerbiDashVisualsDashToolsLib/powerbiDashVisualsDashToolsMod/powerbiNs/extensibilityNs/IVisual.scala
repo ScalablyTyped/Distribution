@@ -12,3 +12,12 @@ trait IVisual extends js.Object {
   var destroy: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object IVisual {
+  @scala.inline
+  def apply(destroy: js.Function0[scala.Unit] = null): IVisual = {
+    val __obj = js.Dynamic.literal()
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    __obj.asInstanceOf[IVisual]
+  }
+}
+

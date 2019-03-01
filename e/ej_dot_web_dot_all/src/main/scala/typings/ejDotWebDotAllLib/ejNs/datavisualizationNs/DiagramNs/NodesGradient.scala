@@ -17,3 +17,18 @@ trait NodesGradient extends js.Object {
   var Stop: js.UndefOr[NodesGradientStop] = js.undefined
 }
 
+object NodesGradient {
+  @scala.inline
+  def apply(
+    LinearGradient: NodesGradientLinearGradient = null,
+    RadialGradient: NodesGradientRadialGradient = null,
+    Stop: NodesGradientStop = null
+  ): NodesGradient = {
+    val __obj = js.Dynamic.literal()
+    if (LinearGradient != null) __obj.updateDynamic("LinearGradient")(LinearGradient)
+    if (RadialGradient != null) __obj.updateDynamic("RadialGradient")(RadialGradient)
+    if (Stop != null) __obj.updateDynamic("Stop")(Stop)
+    __obj.asInstanceOf[NodesGradient]
+  }
+}
+

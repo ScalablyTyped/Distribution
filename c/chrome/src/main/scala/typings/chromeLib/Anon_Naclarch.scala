@@ -10,3 +10,13 @@ trait Anon_Naclarch extends js.Object {
   var sub_package_path: java.lang.String
 }
 
+object Anon_Naclarch {
+  @scala.inline
+  def apply(sub_package_path: java.lang.String, nacl_arch: java.lang.String = null): Anon_Naclarch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sub_package_path")(sub_package_path)
+    if (nacl_arch != null) __obj.updateDynamic("nacl_arch")(nacl_arch)
+    __obj.asInstanceOf[Anon_Naclarch]
+  }
+}
+

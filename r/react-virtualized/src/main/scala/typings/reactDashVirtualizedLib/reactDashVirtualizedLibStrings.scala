@@ -7,34 +7,40 @@ import scala.scalajs.js.annotation._
 
 object reactDashVirtualizedLibStrings {
   @js.native
-  sealed trait ASC extends js.Object
+  sealed trait ASC
+    extends reactDashVirtualizedLib.distEsTableMod.SortDirectionType
   
   @js.native
-  sealed trait DESC extends js.Object
+  sealed trait DESC
+    extends reactDashVirtualizedLib.distEsTableMod.SortDirectionType
   
   @js.native
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment
   
   @js.native
   sealed trait cells extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment
   
   @js.native
   sealed trait edges extends js.Object
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment
   
   @js.native
   sealed trait grid extends js.Object
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends reactDashVirtualizedLib.distEsGridMod.ScrollDirection
   
   @js.native
   sealed trait rowIndex extends js.Object
@@ -43,10 +49,12 @@ object reactDashVirtualizedLibStrings {
   sealed trait rowgroup extends js.Object
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends reactDashVirtualizedLib.reactDashVirtualizedMod.Alignment
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends reactDashVirtualizedLib.distEsGridMod.ScrollDirection
   
   @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]

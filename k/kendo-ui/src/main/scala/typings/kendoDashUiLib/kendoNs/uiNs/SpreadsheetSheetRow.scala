@@ -12,3 +12,20 @@ trait SpreadsheetSheetRow extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SpreadsheetSheetRow {
+  @scala.inline
+  def apply(
+    cells: js.Array[SpreadsheetSheetRowCell] = null,
+    height: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): SpreadsheetSheetRow = {
+    val __obj = js.Dynamic.literal()
+    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SpreadsheetSheetRow]
+  }
+}
+

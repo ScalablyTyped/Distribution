@@ -90,3 +90,49 @@ trait ReactInputCalendarProps extends js.Object {
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReactInputCalendarProps {
+  @scala.inline
+  def apply(
+    closeOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    computableFormat: java.lang.String = null,
+    date: java.lang.String | stdLib.Date = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    inputFieldClass: java.lang.String = null,
+    inputFieldId: java.lang.String = null,
+    maxDate: java.lang.String | stdLib.Date = null,
+    minDate: java.lang.String | stdLib.Date = null,
+    minView: scala.Int | scala.Double = null,
+    onBlur: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar, reactLib.Event], 
+      /* computableDate */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    onChange: js.Function1[/* computableDate */ java.lang.String, scala.Unit] = null,
+    onFocus: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[ReactInputCalendar, reactLib.Event], 
+      scala.Unit
+    ] = null,
+    openOnInputFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    placeholder: java.lang.String = null
+  ): ReactInputCalendarProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(closeOnSelect)) __obj.updateDynamic("closeOnSelect")(closeOnSelect)
+    if (computableFormat != null) __obj.updateDynamic("computableFormat")(computableFormat)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (inputFieldClass != null) __obj.updateDynamic("inputFieldClass")(inputFieldClass)
+    if (inputFieldId != null) __obj.updateDynamic("inputFieldId")(inputFieldId)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (minView != null) __obj.updateDynamic("minView")(minView.asInstanceOf[js.Any])
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (!js.isUndefined(openOnInputFocus)) __obj.updateDynamic("openOnInputFocus")(openOnInputFocus)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    __obj.asInstanceOf[ReactInputCalendarProps]
+  }
+}
+

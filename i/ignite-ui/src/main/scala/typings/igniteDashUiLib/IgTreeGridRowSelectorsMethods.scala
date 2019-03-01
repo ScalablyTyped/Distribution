@@ -58,3 +58,32 @@ trait IgTreeGridRowSelectorsMethods extends js.Object {
   def uncheckedRows(): js.Array[_]
 }
 
+object IgTreeGridRowSelectorsMethods {
+  @scala.inline
+  def apply(
+    changeCheckState: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    changeCheckStateById: js.Function2[js.Object, scala.Boolean, scala.Unit],
+    changeLocale: js.Function0[scala.Unit],
+    checkStateById: js.Function1[js.Object, java.lang.String],
+    checkedRows: js.Function0[js.Array[_]],
+    destroy: js.Function0[scala.Unit],
+    partiallyCheckedRows: js.Function0[js.Array[_]],
+    toggleCheckState: js.Function1[scala.Double, scala.Unit],
+    toggleCheckStateById: js.Function1[js.Object, scala.Unit],
+    uncheckedRows: js.Function0[js.Array[_]]
+  ): IgTreeGridRowSelectorsMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeCheckState")(changeCheckState)
+    __obj.updateDynamic("changeCheckStateById")(changeCheckStateById)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("checkStateById")(checkStateById)
+    __obj.updateDynamic("checkedRows")(checkedRows)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("partiallyCheckedRows")(partiallyCheckedRows)
+    __obj.updateDynamic("toggleCheckState")(toggleCheckState)
+    __obj.updateDynamic("toggleCheckStateById")(toggleCheckStateById)
+    __obj.updateDynamic("uncheckedRows")(uncheckedRows)
+    __obj.asInstanceOf[IgTreeGridRowSelectorsMethods]
+  }
+}
+

@@ -16,3 +16,16 @@ trait GroupArgs extends js.Object {
   val path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object GroupArgs {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    path: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): GroupArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupArgs]
+  }
+}
+

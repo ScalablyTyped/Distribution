@@ -29,3 +29,26 @@ trait DefaultVpcDhcpOptionsState extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object DefaultVpcDhcpOptionsState {
+  @scala.inline
+  def apply(
+    domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    domainNameServers: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    netbiosNameServers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    netbiosNodeType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ntpServers: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ownerId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): DefaultVpcDhcpOptionsState = {
+    val __obj = js.Dynamic.literal()
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (domainNameServers != null) __obj.updateDynamic("domainNameServers")(domainNameServers.asInstanceOf[js.Any])
+    if (netbiosNameServers != null) __obj.updateDynamic("netbiosNameServers")(netbiosNameServers.asInstanceOf[js.Any])
+    if (netbiosNodeType != null) __obj.updateDynamic("netbiosNodeType")(netbiosNodeType.asInstanceOf[js.Any])
+    if (ntpServers != null) __obj.updateDynamic("ntpServers")(ntpServers.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultVpcDhcpOptionsState]
+  }
+}
+

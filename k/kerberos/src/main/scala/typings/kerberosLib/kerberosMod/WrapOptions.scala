@@ -12,3 +12,12 @@ trait WrapOptions extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WrapOptions {
+  @scala.inline
+  def apply(user: java.lang.String = null): WrapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[WrapOptions]
+  }
+}
+

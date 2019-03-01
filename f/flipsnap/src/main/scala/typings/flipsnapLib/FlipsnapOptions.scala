@@ -28,3 +28,22 @@ trait FlipsnapOptions extends js.Object {
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FlipsnapOptions {
+  @scala.inline
+  def apply(
+    disable3d: js.UndefOr[scala.Boolean] = js.undefined,
+    disableTouch: js.UndefOr[scala.Boolean] = js.undefined,
+    distance: scala.Int | scala.Double = null,
+    maxPoint: scala.Int | scala.Double = null,
+    transitionDuration: scala.Int | scala.Double = null
+  ): FlipsnapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disable3d)) __obj.updateDynamic("disable3d")(disable3d)
+    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch)
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (maxPoint != null) __obj.updateDynamic("maxPoint")(maxPoint.asInstanceOf[js.Any])
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlipsnapOptions]
+  }
+}
+

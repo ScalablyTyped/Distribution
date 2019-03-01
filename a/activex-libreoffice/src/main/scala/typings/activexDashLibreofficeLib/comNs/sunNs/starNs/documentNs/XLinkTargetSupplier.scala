@@ -18,3 +18,22 @@ trait XLinkTargetSupplier
   def getLinks(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XLinkTargetSupplier {
+  @scala.inline
+  def apply(
+    Links: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getLinks: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLinkTargetSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Links")(Links)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLinks")(getLinks)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XLinkTargetSupplier]
+  }
+}
+

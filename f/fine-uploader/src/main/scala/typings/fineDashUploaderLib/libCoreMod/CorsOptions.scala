@@ -26,3 +26,18 @@ trait CorsOptions extends js.Object {
   var sendCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CorsOptions {
+  @scala.inline
+  def apply(
+    allowXdr: js.UndefOr[scala.Boolean] = js.undefined,
+    expected: js.UndefOr[scala.Boolean] = js.undefined,
+    sendCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): CorsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowXdr)) __obj.updateDynamic("allowXdr")(allowXdr)
+    if (!js.isUndefined(expected)) __obj.updateDynamic("expected")(expected)
+    if (!js.isUndefined(sendCredentials)) __obj.updateDynamic("sendCredentials")(sendCredentials)
+    __obj.asInstanceOf[CorsOptions]
+  }
+}
+

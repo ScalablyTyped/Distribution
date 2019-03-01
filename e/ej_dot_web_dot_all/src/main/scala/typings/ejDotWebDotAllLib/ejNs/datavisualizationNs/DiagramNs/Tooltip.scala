@@ -22,3 +22,20 @@ trait Tooltip extends js.Object {
   var templateId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Tooltip {
+  @scala.inline
+  def apply(
+    alignment: TooltipAlignment = null,
+    margin: js.Any = null,
+    relativeMode: RelativeMode | java.lang.String = null,
+    templateId: java.lang.String = null
+  ): Tooltip = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (relativeMode != null) __obj.updateDynamic("relativeMode")(relativeMode.asInstanceOf[js.Any])
+    if (templateId != null) __obj.updateDynamic("templateId")(templateId)
+    __obj.asInstanceOf[Tooltip]
+  }
+}
+

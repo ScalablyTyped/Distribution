@@ -16,3 +16,13 @@ trait GetClusterAuthResult extends js.Object {
   val token: java.lang.String
 }
 
+object GetClusterAuthResult {
+  @scala.inline
+  def apply(id: java.lang.String, token: java.lang.String): GetClusterAuthResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[GetClusterAuthResult]
+  }
+}
+

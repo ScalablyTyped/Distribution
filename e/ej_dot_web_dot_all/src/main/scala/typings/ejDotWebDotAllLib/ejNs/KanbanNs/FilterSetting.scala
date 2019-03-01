@@ -20,3 +20,14 @@ trait FilterSetting extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FilterSetting {
+  @scala.inline
+  def apply(description: java.lang.String = null, query: js.Any = null, text: java.lang.String = null): FilterSetting = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[FilterSetting]
+  }
+}
+

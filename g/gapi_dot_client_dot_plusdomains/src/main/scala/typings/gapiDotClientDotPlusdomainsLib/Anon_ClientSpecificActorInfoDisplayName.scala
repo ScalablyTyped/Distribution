@@ -20,3 +20,24 @@ trait Anon_ClientSpecificActorInfoDisplayName extends js.Object {
   var verification: js.UndefOr[Anon_AdHocVerified] = js.undefined
 }
 
+object Anon_ClientSpecificActorInfoDisplayName {
+  @scala.inline
+  def apply(
+    clientSpecificActorInfo: Anon_YoutubeActorInfo = null,
+    displayName: java.lang.String = null,
+    id: java.lang.String = null,
+    image: Anon_Url = null,
+    url: java.lang.String = null,
+    verification: Anon_AdHocVerified = null
+  ): Anon_ClientSpecificActorInfoDisplayName = {
+    val __obj = js.Dynamic.literal()
+    if (clientSpecificActorInfo != null) __obj.updateDynamic("clientSpecificActorInfo")(clientSpecificActorInfo)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (verification != null) __obj.updateDynamic("verification")(verification)
+    __obj.asInstanceOf[Anon_ClientSpecificActorInfoDisplayName]
+  }
+}
+

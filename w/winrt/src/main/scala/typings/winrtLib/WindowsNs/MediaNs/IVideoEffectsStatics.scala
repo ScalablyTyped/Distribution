@@ -9,3 +9,12 @@ trait IVideoEffectsStatics extends js.Object {
   var videoStabilization: java.lang.String
 }
 
+object IVideoEffectsStatics {
+  @scala.inline
+  def apply(videoStabilization: java.lang.String): IVideoEffectsStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("videoStabilization")(videoStabilization)
+    __obj.asInstanceOf[IVideoEffectsStatics]
+  }
+}
+

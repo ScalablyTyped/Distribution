@@ -16,7 +16,6 @@ package object SpotifyNs {
     scala.Unit
   ]) with (js.Function2[/* event */ ErrorTypes, /* cb */ ErrorListener, scala.Unit])
   type ErrorListener = js.Function1[/* err */ Error, scala.Unit]
-  type ErrorTypes = spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.account_error | spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.authentication_error | spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.initialization_error | spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.playback_error
   type PlaybackInstanceListener = js.Function1[/* inst */ WebPlaybackInstance, scala.Unit]
   type PlaybackStateListener = js.Function1[/* s */ PlaybackState, scala.Unit]
 }

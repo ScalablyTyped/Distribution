@@ -12,3 +12,15 @@ trait Delta extends js.Object {
   var text: java.lang.String
 }
 
+object Delta {
+  @scala.inline
+  def apply(action: java.lang.String, lines: js.Array[java.lang.String], range: Range, text: java.lang.String): Delta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("lines")(lines)
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Delta]
+  }
+}
+

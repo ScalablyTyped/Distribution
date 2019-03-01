@@ -11,3 +11,20 @@ trait AppointmentDragEventArgs extends EventArgs {
   val mouseEvent: js.Any
 }
 
+object AppointmentDragEventArgs {
+  @scala.inline
+  def apply(
+    allow: scala.Boolean,
+    dragInformation: js.Array[BootstrapSchedulerAppointmentDragInfo],
+    mouseEvent: js.Any,
+    sender: Control
+  ): AppointmentDragEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allow")(allow)
+    __obj.updateDynamic("dragInformation")(dragInformation)
+    __obj.updateDynamic("mouseEvent")(mouseEvent)
+    __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[AppointmentDragEventArgs]
+  }
+}
+

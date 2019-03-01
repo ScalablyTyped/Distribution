@@ -34,3 +34,20 @@ trait ShapeProperties extends js.Object {
   var shapeBackgroundFill: js.UndefOr[ShapeBackgroundFill] = js.undefined
 }
 
+object ShapeProperties {
+  @scala.inline
+  def apply(
+    link: Link = null,
+    outline: Outline = null,
+    shadow: Shadow = null,
+    shapeBackgroundFill: ShapeBackgroundFill = null
+  ): ShapeProperties = {
+    val __obj = js.Dynamic.literal()
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
+    if (shapeBackgroundFill != null) __obj.updateDynamic("shapeBackgroundFill")(shapeBackgroundFill)
+    __obj.asInstanceOf[ShapeProperties]
+  }
+}
+

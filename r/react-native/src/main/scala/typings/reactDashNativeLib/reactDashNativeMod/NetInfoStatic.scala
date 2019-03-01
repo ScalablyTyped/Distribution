@@ -55,3 +55,32 @@ trait NetInfoStatic extends js.Object {
   ): scala.Unit
 }
 
+object NetInfoStatic {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[
+      java.lang.String, 
+      js.Function1[/* result */ ConnectionInfo | ConnectionType, scala.Unit], 
+      scala.Unit
+    ],
+    fetch: js.Function0[js.Promise[ConnectionType]],
+    getConnectionInfo: js.Function0[js.Promise[ConnectionInfo]],
+    isConnected: reactDashNativeLib.Anon_AddEventListener,
+    isConnectionExpensive: js.Function0[js.Promise[scala.Boolean]],
+    removeEventListener: js.Function2[
+      java.lang.String, 
+      js.Function1[/* result */ ConnectionInfo | ConnectionType, scala.Unit], 
+      scala.Unit
+    ]
+  ): NetInfoStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("fetch")(fetch)
+    __obj.updateDynamic("getConnectionInfo")(getConnectionInfo)
+    __obj.updateDynamic("isConnected")(isConnected)
+    __obj.updateDynamic("isConnectionExpensive")(isConnectionExpensive)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[NetInfoStatic]
+  }
+}
+

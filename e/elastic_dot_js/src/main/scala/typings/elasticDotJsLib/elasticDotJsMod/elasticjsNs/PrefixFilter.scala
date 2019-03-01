@@ -36,3 +36,26 @@ trait PrefixFilter extends Filter {
   def toJSON(): PrefixFilter
 }
 
+object PrefixFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, PrefixFilter],
+    cacheKey: js.Function1[java.lang.String, PrefixFilter],
+    field: js.Function1[java.lang.String, PrefixFilter],
+    name: js.Function1[java.lang.String, PrefixFilter],
+    prefix: js.Function1[java.lang.String, PrefixFilter],
+    toJSON: js.Function0[PrefixFilter]
+  ): PrefixFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[PrefixFilter]
+  }
+}
+

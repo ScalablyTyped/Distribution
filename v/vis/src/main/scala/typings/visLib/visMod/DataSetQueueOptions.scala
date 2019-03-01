@@ -20,3 +20,12 @@ trait DataSetQueueOptions extends js.Object {
   var queue: js.UndefOr[js.Any | scala.Boolean] = js.undefined
 }
 
+object DataSetQueueOptions {
+  @scala.inline
+  def apply(queue: js.Any | scala.Boolean = null): DataSetQueueOptions = {
+    val __obj = js.Dynamic.literal()
+    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataSetQueueOptions]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ConstructorOptions extends js.Object {
   var gradientType: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConstructorOptions {
+  @scala.inline
+  def apply(format: java.lang.String = null, gradientType: js.UndefOr[scala.Boolean] = js.undefined): ConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(gradientType)) __obj.updateDynamic("gradientType")(gradientType)
+    __obj.asInstanceOf[ConstructorOptions]
+  }
+}
+

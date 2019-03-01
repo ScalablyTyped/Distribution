@@ -28,3 +28,22 @@ trait Message extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Message {
+  @scala.inline
+  def apply(
+    arguments: js.Array[java.lang.String] = null,
+    markdown: java.lang.String = null,
+    messageId: java.lang.String = null,
+    properties: PropertyBag = null,
+    text: java.lang.String = null
+  ): Message = {
+    val __obj = js.Dynamic.literal()
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (markdown != null) __obj.updateDynamic("markdown")(markdown)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Message]
+  }
+}
+

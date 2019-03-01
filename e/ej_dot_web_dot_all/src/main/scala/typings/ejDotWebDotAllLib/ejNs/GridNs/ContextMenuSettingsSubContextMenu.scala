@@ -20,3 +20,18 @@ trait ContextMenuSettingsSubContextMenu extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContextMenuSettingsSubContextMenu {
+  @scala.inline
+  def apply(
+    contextMenuItem: java.lang.String = null,
+    subMenu: js.Array[_] = null,
+    template: java.lang.String = null
+  ): ContextMenuSettingsSubContextMenu = {
+    val __obj = js.Dynamic.literal()
+    if (contextMenuItem != null) __obj.updateDynamic("contextMenuItem")(contextMenuItem)
+    if (subMenu != null) __obj.updateDynamic("subMenu")(subMenu)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[ContextMenuSettingsSubContextMenu]
+  }
+}
+

@@ -53,3 +53,33 @@ trait InfiniteLoaderProps
   def loadMoreRows(params: reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange): js.Promise[_]
 }
 
+object InfiniteLoaderProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[InfiniteLoaderChildProps, reactLib.reactMod.ReactNs.ReactNode],
+    isRowLoaded: js.Function1[reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Boolean],
+    loadMoreRows: js.Function1[reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange, js.Promise[_]],
+    StringDictionary: /**
+    * PLEASE NOTE
+    * The [key: string]: any; line is here on purpose
+    * This is due to the need of force re-render of PureComponent
+    * Check the following link if you want to know more
+    * https://github.com/bvaughn/react-virtualized#pass-thru-props
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    minimumBatchSize: scala.Int | scala.Double = null,
+    rowCount: scala.Int | scala.Double = null,
+    threshold: scala.Int | scala.Double = null
+  ): InfiniteLoaderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("isRowLoaded")(isRowLoaded)
+    __obj.updateDynamic("loadMoreRows")(loadMoreRows)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (minimumBatchSize != null) __obj.updateDynamic("minimumBatchSize")(minimumBatchSize.asInstanceOf[js.Any])
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InfiniteLoaderProps]
+  }
+}
+

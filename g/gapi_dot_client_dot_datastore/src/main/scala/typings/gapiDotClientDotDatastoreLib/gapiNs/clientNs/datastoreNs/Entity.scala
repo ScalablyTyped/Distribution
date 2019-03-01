@@ -26,3 +26,13 @@ trait Entity extends js.Object {
   var properties: js.UndefOr[stdLib.Record[java.lang.String, Value]] = js.undefined
 }
 
+object Entity {
+  @scala.inline
+  def apply(key: Key = null, properties: stdLib.Record[java.lang.String, Value] = null): Entity = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Entity]
+  }
+}
+

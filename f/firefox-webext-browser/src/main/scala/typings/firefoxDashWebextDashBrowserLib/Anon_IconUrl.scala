@@ -10,3 +10,13 @@ trait Anon_IconUrl extends js.Object {
   var title: java.lang.String
 }
 
+object Anon_IconUrl {
+  @scala.inline
+  def apply(title: java.lang.String, iconUrl: java.lang.String = null): Anon_IconUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    __obj.asInstanceOf[Anon_IconUrl]
+  }
+}
+

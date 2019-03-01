@@ -10,3 +10,16 @@ trait Anon_PostProcess extends js.Object {
   var sprintf: js.Array[java.lang.String]
 }
 
+object Anon_PostProcess {
+  @scala.inline
+  def apply(
+    postProcess: i18nextDashSprintfDashPostprocessorLib.i18nextDashSprintfDashPostprocessorLibStrings.sprintf,
+    sprintf: js.Array[java.lang.String]
+  ): Anon_PostProcess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("postProcess")(postProcess)
+    __obj.updateDynamic("sprintf")(sprintf)
+    __obj.asInstanceOf[Anon_PostProcess]
+  }
+}
+

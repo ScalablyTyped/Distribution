@@ -22,3 +22,16 @@ trait HashNavigationOptions extends js.Object {
   var watchState: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HashNavigationOptions {
+  @scala.inline
+  def apply(
+    replaceState: js.UndefOr[scala.Boolean] = js.undefined,
+    watchState: js.UndefOr[scala.Boolean] = js.undefined
+  ): HashNavigationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState)
+    if (!js.isUndefined(watchState)) __obj.updateDynamic("watchState")(watchState)
+    __obj.asInstanceOf[HashNavigationOptions]
+  }
+}
+

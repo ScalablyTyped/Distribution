@@ -37,3 +37,20 @@ trait FloatingInkLoadOptions extends js.Object {
   var pageContent: js.UndefOr[PageContentLoadOptions] = js.undefined
 }
 
+object FloatingInkLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    inkStrokes: InkStrokeCollectionLoadOptions = null,
+    pageContent: PageContentLoadOptions = null
+  ): FloatingInkLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (inkStrokes != null) __obj.updateDynamic("inkStrokes")(inkStrokes)
+    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent)
+    __obj.asInstanceOf[FloatingInkLoadOptions]
+  }
+}
+

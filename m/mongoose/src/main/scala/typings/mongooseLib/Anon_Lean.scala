@@ -16,3 +16,20 @@ trait Anon_Lean extends js.Object {
   var near: js.Array[scala.Double]
 }
 
+object Anon_Lean {
+  @scala.inline
+  def apply(
+    maxDistance: scala.Double,
+    near: js.Array[scala.Double],
+    lean: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null
+  ): Anon_Lean = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxDistance")(maxDistance)
+    __obj.updateDynamic("near")(near)
+    if (!js.isUndefined(lean)) __obj.updateDynamic("lean")(lean)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Lean]
+  }
+}
+

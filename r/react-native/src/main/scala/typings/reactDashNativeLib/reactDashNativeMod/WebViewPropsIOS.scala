@@ -67,3 +67,26 @@ trait WebViewPropsIOS extends js.Object {
   var useWebKit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WebViewPropsIOS {
+  @scala.inline
+  def apply(
+    allowsInlineMediaPlayback: js.UndefOr[scala.Boolean] = js.undefined,
+    bounces: js.UndefOr[scala.Boolean] = js.undefined,
+    dataDetectorTypes: reactDashNativeLib.DataDetectorTypes | js.Array[reactDashNativeLib.DataDetectorTypes] = null,
+    decelerationRate: reactDashNativeLib.reactDashNativeLibStrings.normal | reactDashNativeLib.reactDashNativeLibStrings.fast | scala.Double = null,
+    onShouldStartLoadWithRequest: js.Function1[/* event */ WebViewIOSLoadRequestEvent, scala.Boolean] = null,
+    scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    useWebKit: js.UndefOr[scala.Boolean] = js.undefined
+  ): WebViewPropsIOS = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowsInlineMediaPlayback)) __obj.updateDynamic("allowsInlineMediaPlayback")(allowsInlineMediaPlayback)
+    if (!js.isUndefined(bounces)) __obj.updateDynamic("bounces")(bounces)
+    if (dataDetectorTypes != null) __obj.updateDynamic("dataDetectorTypes")(dataDetectorTypes.asInstanceOf[js.Any])
+    if (decelerationRate != null) __obj.updateDynamic("decelerationRate")(decelerationRate.asInstanceOf[js.Any])
+    if (onShouldStartLoadWithRequest != null) __obj.updateDynamic("onShouldStartLoadWithRequest")(onShouldStartLoadWithRequest)
+    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled)
+    if (!js.isUndefined(useWebKit)) __obj.updateDynamic("useWebKit")(useWebKit)
+    __obj.asInstanceOf[WebViewPropsIOS]
+  }
+}
+

@@ -62,3 +62,34 @@ trait TracerOptions extends js.Object {
   var tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object TracerOptions {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    env: java.lang.String = null,
+    experimental: js.Object | scala.Boolean = null,
+    hostname: java.lang.String = null,
+    logger: ddDashTraceLib.Anon_Debug = null,
+    plugins: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Double | java.lang.String = null,
+    sampleRate: scala.Int | scala.Double = null,
+    service: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): TracerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (experimental != null) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[TracerOptions]
+  }
+}
+

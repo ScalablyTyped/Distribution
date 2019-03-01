@@ -11,3 +11,14 @@ trait IResourcePromise extends js.Object {
   var status: scala.Double
 }
 
+object IResourcePromise {
+  @scala.inline
+  def apply(data: js.Any, errorMsg: java.lang.String, status: scala.Double): IResourcePromise = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("errorMsg")(errorMsg)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[IResourcePromise]
+  }
+}
+

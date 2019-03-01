@@ -10,3 +10,13 @@ trait VREffectOffset extends js.Object {
   var scale: scala.Double
 }
 
+object VREffectOffset {
+  @scala.inline
+  def apply(offset: scala.Double, scale: scala.Double): VREffectOffset = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("scale")(scale)
+    __obj.asInstanceOf[VREffectOffset]
+  }
+}
+

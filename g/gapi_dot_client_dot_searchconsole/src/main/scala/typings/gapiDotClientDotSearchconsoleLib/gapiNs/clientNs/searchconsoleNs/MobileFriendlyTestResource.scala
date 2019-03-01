@@ -10,3 +10,17 @@ trait MobileFriendlyTestResource extends js.Object {
   def run(request: gapiDotClientDotSearchconsoleLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[RunMobileFriendlyTestResponse]
 }
 
+object MobileFriendlyTestResource {
+  @scala.inline
+  def apply(
+    run: js.Function1[
+      gapiDotClientDotSearchconsoleLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RunMobileFriendlyTestResponse]
+    ]
+  ): MobileFriendlyTestResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[MobileFriendlyTestResource]
+  }
+}
+

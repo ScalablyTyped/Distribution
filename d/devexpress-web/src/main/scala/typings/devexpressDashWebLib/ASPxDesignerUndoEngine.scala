@@ -42,3 +42,26 @@ trait ASPxDesignerUndoEngine extends js.Object {
   def undoAll(): scala.Unit
 }
 
+object ASPxDesignerUndoEngine {
+  @scala.inline
+  def apply(
+    clearHistory: js.Function0[scala.Unit],
+    isDirty: js.Any,
+    redo: js.Function0[scala.Unit],
+    redoEnabled: js.Any,
+    undo: js.Function0[scala.Unit],
+    undoAll: js.Function0[scala.Unit],
+    undoEnabled: js.Any
+  ): ASPxDesignerUndoEngine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearHistory")(clearHistory)
+    __obj.updateDynamic("isDirty")(isDirty)
+    __obj.updateDynamic("redo")(redo)
+    __obj.updateDynamic("redoEnabled")(redoEnabled)
+    __obj.updateDynamic("undo")(undo)
+    __obj.updateDynamic("undoAll")(undoAll)
+    __obj.updateDynamic("undoEnabled")(undoEnabled)
+    __obj.asInstanceOf[ASPxDesignerUndoEngine]
+  }
+}
+

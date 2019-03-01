@@ -11,3 +11,18 @@ trait ConcordContext extends js.Object {
   var supportedResourceTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ConcordContext {
+  @scala.inline
+  def apply(
+    environments: js.Array[java.lang.String] = null,
+    referrer: java.lang.String = null,
+    supportedResourceTypes: js.Array[java.lang.String] = null
+  ): ConcordContext = {
+    val __obj = js.Dynamic.literal()
+    if (environments != null) __obj.updateDynamic("environments")(environments)
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    if (supportedResourceTypes != null) __obj.updateDynamic("supportedResourceTypes")(supportedResourceTypes)
+    __obj.asInstanceOf[ConcordContext]
+  }
+}
+

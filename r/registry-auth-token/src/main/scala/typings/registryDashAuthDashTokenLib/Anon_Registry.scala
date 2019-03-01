@@ -16,3 +16,19 @@ trait Anon_Registry
   var registry: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Registry {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Registry url's with token information
+    */
+  /* registryUrls */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = null,
+    registry: java.lang.String = null
+  ): Anon_Registry = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (registry != null) __obj.updateDynamic("registry")(registry)
+    __obj.asInstanceOf[Anon_Registry]
+  }
+}
+

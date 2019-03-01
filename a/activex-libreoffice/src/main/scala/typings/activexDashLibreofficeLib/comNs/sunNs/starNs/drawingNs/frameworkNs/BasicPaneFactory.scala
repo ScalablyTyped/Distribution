@@ -19,3 +19,18 @@ trait BasicPaneFactory extends XResourceFactory {
   def create(xController: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController): scala.Unit
 }
 
+object BasicPaneFactory {
+  @scala.inline
+  def apply(
+    create: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XController, scala.Unit],
+    createResource: js.Function1[XResourceId, XResource],
+    releaseResource: js.Function1[XResource, scala.Unit]
+  ): BasicPaneFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createResource")(createResource)
+    __obj.updateDynamic("releaseResource")(releaseResource)
+    __obj.asInstanceOf[BasicPaneFactory]
+  }
+}
+

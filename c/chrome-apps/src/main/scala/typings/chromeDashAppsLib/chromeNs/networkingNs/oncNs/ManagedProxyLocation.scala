@@ -12,3 +12,13 @@ trait ManagedProxyLocation extends js.Object {
   var Port: js.UndefOr[ManagedLong] = js.undefined
 }
 
+object ManagedProxyLocation {
+  @scala.inline
+  def apply(Host: ManagedDOMString = null, Port: ManagedLong = null): ManagedProxyLocation = {
+    val __obj = js.Dynamic.literal()
+    if (Host != null) __obj.updateDynamic("Host")(Host)
+    if (Port != null) __obj.updateDynamic("Port")(Port)
+    __obj.asInstanceOf[ManagedProxyLocation]
+  }
+}
+

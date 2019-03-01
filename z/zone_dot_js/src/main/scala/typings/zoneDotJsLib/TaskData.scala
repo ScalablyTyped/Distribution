@@ -22,3 +22,18 @@ trait TaskData extends js.Object {
   var isPeriodic: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TaskData {
+  @scala.inline
+  def apply(
+    delay: scala.Int | scala.Double = null,
+    handleId: scala.Int | scala.Double = null,
+    isPeriodic: js.UndefOr[scala.Boolean] = js.undefined
+  ): TaskData = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (handleId != null) __obj.updateDynamic("handleId")(handleId.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPeriodic)) __obj.updateDynamic("isPeriodic")(isPeriodic)
+    __obj.asInstanceOf[TaskData]
+  }
+}
+

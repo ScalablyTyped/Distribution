@@ -13,3 +13,22 @@ trait ApplicateOptions extends js.Object {
   var value: js.Any
 }
 
+object ApplicateOptions {
+  @scala.inline
+  def apply(
+    args: js.Array[_],
+    config: lodashDashDecoratorsLib.factoryMod.DecoratorConfig,
+    target: js.Any,
+    value: js.Any,
+    instance: js.Object = null
+  ): ApplicateOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("value")(value)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    __obj.asInstanceOf[ApplicateOptions]
+  }
+}
+

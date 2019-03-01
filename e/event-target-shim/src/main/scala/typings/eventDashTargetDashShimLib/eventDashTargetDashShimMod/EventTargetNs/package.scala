@@ -9,7 +9,7 @@ package object EventTargetNs {
   type EventAttributes[TEventAttributes /* <: EventDefinition */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof TEventAttributes ]: event-target-shim.event-target-shim.EventTarget.FunctionListener<TEventAttributes[P]> | null}
     */ eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.EventAttributes with TEventAttributes
-  type EventData[TEvents /* <: EventDefinition */, TEventType /* <: java.lang.String */, TMode /* <: Mode */] = eventDashTargetDashShimLib.eventDashTargetDashShimMod.Event | NonStandardEvent | ((stdLib.Pick[
+  type EventData[TEvents /* <: EventDefinition */, TEventType /* <: java.lang.String */, TMode /* <: Mode */] = (_EventData[TEvents, TEventType, TMode]) | ((stdLib.Pick[
     /* import warning: ImportType.apply Failed type conversion: TEvents[TEventType] */ js.Any, 
     stdLib.Exclude[java.lang.String, OmittableEventKeys]
   ]) with (stdLib.Partial[
@@ -18,7 +18,6 @@ package object EventTargetNs {
   type EventType[TEvents /* <: EventDefinition */, TMode /* <: Mode */] = java.lang.String
   type FunctionListener[TEvent] = js.Function1[/* event */ TEvent, scala.Unit]
   type Listener[TEvent] = FunctionListener[TEvent] | ObjectListener[TEvent]
-  type Mode = eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.strict | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.standard | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.loose
   type OmittableEventKeys = stdLib.Exclude[
     eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.`type` | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.target | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.currentTarget | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.srcElement | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.NONE | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.CAPTURING_PHASE | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.BUBBLING_PHASE | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.AT_TARGET | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.eventPhase | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.bubbles | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.cancelBubble | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.returnValue | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.cancelable | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.defaultPrevented | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.composed | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.isTrusted | eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.timeStamp, 
     eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.`type`

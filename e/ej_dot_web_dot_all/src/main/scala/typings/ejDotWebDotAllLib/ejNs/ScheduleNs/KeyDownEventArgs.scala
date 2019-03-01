@@ -20,3 +20,20 @@ trait KeyDownEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeyDownEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    events: js.Any = null,
+    model: Model = null,
+    `type`: java.lang.String = null
+  ): KeyDownEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[KeyDownEventArgs]
+  }
+}
+

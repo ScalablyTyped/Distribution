@@ -9,3 +9,12 @@ trait IPopoverProvider extends js.Object {
   var defaults: IPopoverOptions
 }
 
+object IPopoverProvider {
+  @scala.inline
+  def apply(defaults: IPopoverOptions): IPopoverProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaults")(defaults)
+    __obj.asInstanceOf[IPopoverProvider]
+  }
+}
+

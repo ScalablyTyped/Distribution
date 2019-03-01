@@ -9,3 +9,20 @@ trait ICachedFileUpdaterActivatedEventArgs extends IActivatedEventArgs {
   var cachedFileUpdaterUI: winrtLib.WindowsNs.StorageNs.ProviderNs.CachedFileUpdaterUI
 }
 
+object ICachedFileUpdaterActivatedEventArgs {
+  @scala.inline
+  def apply(
+    cachedFileUpdaterUI: winrtLib.WindowsNs.StorageNs.ProviderNs.CachedFileUpdaterUI,
+    kind: ActivationKind,
+    previousExecutionState: ApplicationExecutionState,
+    splashScreen: SplashScreen
+  ): ICachedFileUpdaterActivatedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cachedFileUpdaterUI")(cachedFileUpdaterUI)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
+    __obj.updateDynamic("splashScreen")(splashScreen)
+    __obj.asInstanceOf[ICachedFileUpdaterActivatedEventArgs]
+  }
+}
+

@@ -11,3 +11,12 @@ trait NetworkChangeResult extends js.Object {
   var `type`: scala.Double
 }
 
+object NetworkChangeResult {
+  @scala.inline
+  def apply(isConnected: scala.Boolean, `type`: scala.Double): NetworkChangeResult = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("isConnected")(isConnected)
+    __obj.asInstanceOf[NetworkChangeResult]
+  }
+}
+

@@ -107,3 +107,44 @@ trait Breakpoint extends js.Object {
   var variableTable: js.UndefOr[js.Array[Variable]] = js.undefined
 }
 
+object Breakpoint {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    condition: java.lang.String = null,
+    createTime: java.lang.String = null,
+    evaluatedExpressions: js.Array[Variable] = null,
+    expressions: js.Array[java.lang.String] = null,
+    finalTime: java.lang.String = null,
+    id: java.lang.String = null,
+    isFinalState: js.UndefOr[scala.Boolean] = js.undefined,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    location: SourceLocation = null,
+    logLevel: java.lang.String = null,
+    logMessageFormat: java.lang.String = null,
+    stackFrames: js.Array[StackFrame] = null,
+    status: StatusMessage = null,
+    userEmail: java.lang.String = null,
+    variableTable: js.Array[Variable] = null
+  ): Breakpoint = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (evaluatedExpressions != null) __obj.updateDynamic("evaluatedExpressions")(evaluatedExpressions)
+    if (expressions != null) __obj.updateDynamic("expressions")(expressions)
+    if (finalTime != null) __obj.updateDynamic("finalTime")(finalTime)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isFinalState)) __obj.updateDynamic("isFinalState")(isFinalState)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
+    if (logMessageFormat != null) __obj.updateDynamic("logMessageFormat")(logMessageFormat)
+    if (stackFrames != null) __obj.updateDynamic("stackFrames")(stackFrames)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail)
+    if (variableTable != null) __obj.updateDynamic("variableTable")(variableTable)
+    __obj.asInstanceOf[Breakpoint]
+  }
+}
+

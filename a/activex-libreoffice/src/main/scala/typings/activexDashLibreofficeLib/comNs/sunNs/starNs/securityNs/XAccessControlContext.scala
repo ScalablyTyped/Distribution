@@ -32,3 +32,20 @@ trait XAccessControlContext
   def checkPermission(perm: js.Any): scala.Unit
 }
 
+object XAccessControlContext {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    checkPermission: js.Function1[js.Any, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAccessControlContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("checkPermission")(checkPermission)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAccessControlContext]
+  }
+}
+

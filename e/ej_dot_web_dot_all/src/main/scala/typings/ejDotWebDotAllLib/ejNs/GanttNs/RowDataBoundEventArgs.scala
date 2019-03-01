@@ -17,3 +17,14 @@ trait RowDataBoundEventArgs extends js.Object {
   var rowElement: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowDataBoundEventArgs {
+  @scala.inline
+  def apply(cancel: js.UndefOr[scala.Boolean] = js.undefined, data: js.Any = null, rowElement: js.Any = null): RowDataBoundEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (rowElement != null) __obj.updateDynamic("rowElement")(rowElement)
+    __obj.asInstanceOf[RowDataBoundEventArgs]
+  }
+}
+

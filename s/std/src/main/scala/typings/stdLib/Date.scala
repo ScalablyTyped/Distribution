@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** Enables basic storage and retrieval of dates and times. */
 @js.native
-trait Date extends js.Object {
+trait Date extends _IDBValidKey {
   /**
     * Converts a Date object to a string.
     */

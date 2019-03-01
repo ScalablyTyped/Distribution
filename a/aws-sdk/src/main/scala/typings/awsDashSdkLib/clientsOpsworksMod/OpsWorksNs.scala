@@ -4604,24 +4604,54 @@ object OpsWorksNs extends js.Object {
     var Wednesday: js.UndefOr[DailyAutoScalingSchedule] = js.undefined
   }
   
+  trait _AppAttributesKeys extends js.Object
+  
+  trait _AppType extends js.Object
+  
+  trait _Architecture extends js.Object
+  
+  trait _AutoScalingType extends js.Object
+  
+  trait _CloudWatchLogsEncoding extends js.Object
+  
+  trait _CloudWatchLogsInitialPosition extends js.Object
+  
+  trait _CloudWatchLogsTimeZone extends js.Object
+  
+  trait _DeploymentCommandName extends js.Object
+  
+  trait _LayerAttributesKeys extends js.Object
+  
+  trait _LayerType extends js.Object
+  
+  trait _RootDeviceType extends js.Object
+  
+  trait _SourceType extends js.Object
+  
+  trait _VirtualizationType extends js.Object
+  
+  trait _VolumeType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AgentVersions = js.Array[AgentVersion]
-  type AppAttributesKeys = awsDashSdkLib.awsDashSdkLibStrings.DocumentRoot | awsDashSdkLib.awsDashSdkLibStrings.RailsEnv | awsDashSdkLib.awsDashSdkLibStrings.AutoBundleOnDeploy | awsDashSdkLib.awsDashSdkLibStrings.AwsFlowRubySettings | java.lang.String
-  type AppType = awsDashSdkLib.awsDashSdkLibStrings.`aws-flow-ruby` | awsDashSdkLib.awsDashSdkLibStrings.java | awsDashSdkLib.awsDashSdkLibStrings.rails | awsDashSdkLib.awsDashSdkLibStrings.php | awsDashSdkLib.awsDashSdkLibStrings.nodejs | awsDashSdkLib.awsDashSdkLibStrings.static | awsDashSdkLib.awsDashSdkLibStrings.other | java.lang.String
+  type AppAttributesKeys = _AppAttributesKeys | java.lang.String
+  type AppType = _AppType | java.lang.String
   type Apps = js.Array[App]
-  type Architecture = awsDashSdkLib.awsDashSdkLibStrings.x86_64 | awsDashSdkLib.awsDashSdkLibStrings.i386 | java.lang.String
-  type AutoScalingType = awsDashSdkLib.awsDashSdkLibStrings.load | awsDashSdkLib.awsDashSdkLibStrings.timer | java.lang.String
+  type Architecture = _Architecture | java.lang.String
+  type AutoScalingType = _AutoScalingType | java.lang.String
   type BlockDeviceMappings = js.Array[BlockDeviceMapping]
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type CloudWatchLogsEncoding = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 93 */ js.Any
-  type CloudWatchLogsInitialPosition = awsDashSdkLib.awsDashSdkLibStrings.start_of_file | awsDashSdkLib.awsDashSdkLibStrings.end_of_file | java.lang.String
+  type CloudWatchLogsEncoding = _CloudWatchLogsEncoding | java.lang.String
+  type CloudWatchLogsInitialPosition = _CloudWatchLogsInitialPosition | java.lang.String
   type CloudWatchLogsLogStreams = js.Array[CloudWatchLogsLogStream]
-  type CloudWatchLogsTimeZone = awsDashSdkLib.awsDashSdkLibStrings.LOCAL | awsDashSdkLib.awsDashSdkLibStrings.UTC | java.lang.String
+  type CloudWatchLogsTimeZone = _CloudWatchLogsTimeZone | java.lang.String
   type Commands = js.Array[Command]
   type DataSources = js.Array[DataSource]
   type DateTime = java.lang.String
-  type DeploymentCommandName = awsDashSdkLib.awsDashSdkLibStrings.install_dependencies | awsDashSdkLib.awsDashSdkLibStrings.update_dependencies | awsDashSdkLib.awsDashSdkLibStrings.update_custom_cookbooks | awsDashSdkLib.awsDashSdkLibStrings.execute_recipes | awsDashSdkLib.awsDashSdkLibStrings.configure | awsDashSdkLib.awsDashSdkLibStrings.setup | awsDashSdkLib.awsDashSdkLibStrings.deploy | awsDashSdkLib.awsDashSdkLibStrings.rollback | awsDashSdkLib.awsDashSdkLibStrings.start | awsDashSdkLib.awsDashSdkLibStrings.stop | awsDashSdkLib.awsDashSdkLibStrings.restart | awsDashSdkLib.awsDashSdkLibStrings.undeploy | java.lang.String
+  type DeploymentCommandName = _DeploymentCommandName | java.lang.String
   type Deployments = js.Array[Deployment]
   type Double = scala.Double
   type EcsClusters = js.Array[EcsCluster]
@@ -4631,8 +4661,8 @@ object OpsWorksNs extends js.Object {
   type Hour = java.lang.String
   type Instances = js.Array[Instance]
   type Integer = scala.Double
-  type LayerAttributesKeys = awsDashSdkLib.awsDashSdkLibStrings.EcsClusterArn | awsDashSdkLib.awsDashSdkLibStrings.EnableHaproxyStats | awsDashSdkLib.awsDashSdkLibStrings.HaproxyStatsUrl | awsDashSdkLib.awsDashSdkLibStrings.HaproxyStatsUser | awsDashSdkLib.awsDashSdkLibStrings.HaproxyStatsPassword | awsDashSdkLib.awsDashSdkLibStrings.HaproxyHealthCheckUrl | awsDashSdkLib.awsDashSdkLibStrings.HaproxyHealthCheckMethod | awsDashSdkLib.awsDashSdkLibStrings.MysqlRootPassword | awsDashSdkLib.awsDashSdkLibStrings.MysqlRootPasswordUbiquitous | awsDashSdkLib.awsDashSdkLibStrings.GangliaUrl | awsDashSdkLib.awsDashSdkLibStrings.GangliaUser | awsDashSdkLib.awsDashSdkLibStrings.GangliaPassword | awsDashSdkLib.awsDashSdkLibStrings.MemcachedMemory | awsDashSdkLib.awsDashSdkLibStrings.NodejsVersion | awsDashSdkLib.awsDashSdkLibStrings.RubyVersion | awsDashSdkLib.awsDashSdkLibStrings.RubygemsVersion | awsDashSdkLib.awsDashSdkLibStrings.ManageBundler | awsDashSdkLib.awsDashSdkLibStrings.BundlerVersion | awsDashSdkLib.awsDashSdkLibStrings.RailsStack | awsDashSdkLib.awsDashSdkLibStrings.PassengerVersion | awsDashSdkLib.awsDashSdkLibStrings.Jvm | awsDashSdkLib.awsDashSdkLibStrings.JvmVersion | awsDashSdkLib.awsDashSdkLibStrings.JvmOptions | awsDashSdkLib.awsDashSdkLibStrings.JavaAppServer | awsDashSdkLib.awsDashSdkLibStrings.JavaAppServerVersion | java.lang.String
-  type LayerType = awsDashSdkLib.awsDashSdkLibStrings.`aws-flow-ruby` | awsDashSdkLib.awsDashSdkLibStrings.`ecs-cluster` | awsDashSdkLib.awsDashSdkLibStrings.`java-app` | awsDashSdkLib.awsDashSdkLibStrings.lb | awsDashSdkLib.awsDashSdkLibStrings.web | awsDashSdkLib.awsDashSdkLibStrings.`php-app` | awsDashSdkLib.awsDashSdkLibStrings.`rails-app` | awsDashSdkLib.awsDashSdkLibStrings.`nodejs-app` | awsDashSdkLib.awsDashSdkLibStrings.memcached | awsDashSdkLib.awsDashSdkLibStrings.`db-master` | awsDashSdkLib.awsDashSdkLibStrings.`monitoring-master` | awsDashSdkLib.awsDashSdkLibStrings.custom | java.lang.String
+  type LayerAttributesKeys = _LayerAttributesKeys | java.lang.String
+  type LayerType = _LayerType | java.lang.String
   type Layers = js.Array[Layer]
   type LoadBasedAutoScalingConfigurations = js.Array[LoadBasedAutoScalingConfiguration]
   type MaxResults = scala.Double
@@ -4644,9 +4674,9 @@ object OpsWorksNs extends js.Object {
   type RaidArrays = js.Array[RaidArray]
   type RdsDbInstances = js.Array[RdsDbInstance]
   type ResourceArn = java.lang.String
-  type RootDeviceType = awsDashSdkLib.awsDashSdkLibStrings.ebs | awsDashSdkLib.awsDashSdkLibStrings.`instance-store` | java.lang.String
+  type RootDeviceType = _RootDeviceType | java.lang.String
   type ServiceErrors = js.Array[ServiceError]
-  type SourceType = awsDashSdkLib.awsDashSdkLibStrings.git | awsDashSdkLib.awsDashSdkLibStrings.svn | awsDashSdkLib.awsDashSdkLibStrings.archive | awsDashSdkLib.awsDashSdkLibStrings.s3 | java.lang.String
+  type SourceType = _SourceType | java.lang.String
   type StackAttributesKeys = awsDashSdkLib.awsDashSdkLibStrings.Color | java.lang.String
   type Stacks = js.Array[Stack]
   type String = java.lang.String
@@ -4658,10 +4688,10 @@ object OpsWorksNs extends js.Object {
   type TimeBasedAutoScalingConfigurations = js.Array[TimeBasedAutoScalingConfiguration]
   type UserProfiles = js.Array[UserProfile]
   type ValidForInMinutes = scala.Double
-  type VirtualizationType = awsDashSdkLib.awsDashSdkLibStrings.paravirtual | awsDashSdkLib.awsDashSdkLibStrings.hvm | java.lang.String
+  type VirtualizationType = _VirtualizationType | java.lang.String
   type VolumeConfigurations = js.Array[VolumeConfiguration]
-  type VolumeType = awsDashSdkLib.awsDashSdkLibStrings.gp2 | awsDashSdkLib.awsDashSdkLibStrings.io1 | awsDashSdkLib.awsDashSdkLibStrings.standard | java.lang.String
+  type VolumeType = _VolumeType | java.lang.String
   type Volumes = js.Array[Volume]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-02-18` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -36,3 +36,26 @@ trait NodesPaletteItem extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NodesPaletteItem {
+  @scala.inline
+  def apply(
+    enableScale: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    label: java.lang.String = null,
+    margin: js.Any = null,
+    previewHeight: scala.Int | scala.Double = null,
+    previewWidth: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): NodesPaletteItem = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableScale)) __obj.updateDynamic("enableScale")(enableScale)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (previewHeight != null) __obj.updateDynamic("previewHeight")(previewHeight.asInstanceOf[js.Any])
+    if (previewWidth != null) __obj.updateDynamic("previewWidth")(previewWidth.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodesPaletteItem]
+  }
+}
+

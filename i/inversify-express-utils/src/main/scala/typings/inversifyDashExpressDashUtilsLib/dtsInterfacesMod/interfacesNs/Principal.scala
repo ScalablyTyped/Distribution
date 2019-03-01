@@ -12,3 +12,20 @@ trait Principal extends js.Object {
   def isResourceOwner(resourceId: js.Any): js.Promise[scala.Boolean]
 }
 
+object Principal {
+  @scala.inline
+  def apply(
+    details: js.Any,
+    isAuthenticated: js.Function0[js.Promise[scala.Boolean]],
+    isInRole: js.Function1[java.lang.String, js.Promise[scala.Boolean]],
+    isResourceOwner: js.Function1[js.Any, js.Promise[scala.Boolean]]
+  ): Principal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
+    __obj.updateDynamic("isInRole")(isInRole)
+    __obj.updateDynamic("isResourceOwner")(isResourceOwner)
+    __obj.asInstanceOf[Principal]
+  }
+}
+

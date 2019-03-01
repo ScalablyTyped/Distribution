@@ -12,3 +12,16 @@ trait DispatcherOption extends js.Object {
   var stores: js.UndefOr[js.Array[StoreClass]] = js.undefined
 }
 
+object DispatcherOption {
+  @scala.inline
+  def apply(
+    errorHandler: js.Function2[/* e */ DispatcherError, /* context */ DispatcherContext, scala.Unit] = null,
+    stores: js.Array[StoreClass] = null
+  ): DispatcherOption = {
+    val __obj = js.Dynamic.literal()
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
+    if (stores != null) __obj.updateDynamic("stores")(stores)
+    __obj.asInstanceOf[DispatcherOption]
+  }
+}
+

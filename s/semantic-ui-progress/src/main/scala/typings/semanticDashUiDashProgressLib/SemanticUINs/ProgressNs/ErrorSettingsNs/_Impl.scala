@@ -16,3 +16,13 @@ trait _Impl extends js.Object {
   var nonNumeric: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(method: java.lang.String, nonNumeric: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("nonNumeric")(nonNumeric)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

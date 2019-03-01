@@ -14,3 +14,14 @@ trait MenuOptions extends js.Object {
   var submenu: js.UndefOr[js.Array[MenuOptions]] = js.undefined
 }
 
+object MenuOptions {
+  @scala.inline
+  def apply(label: java.lang.String, command: java.lang.String = null, submenu: js.Array[MenuOptions] = null): MenuOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    if (command != null) __obj.updateDynamic("command")(command)
+    if (submenu != null) __obj.updateDynamic("submenu")(submenu)
+    __obj.asInstanceOf[MenuOptions]
+  }
+}
+

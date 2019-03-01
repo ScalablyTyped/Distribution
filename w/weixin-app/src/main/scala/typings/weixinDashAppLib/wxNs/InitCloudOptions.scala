@@ -21,3 +21,16 @@ trait InitCloudOptions extends js.Object {
   var traceUser: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InitCloudOptions {
+  @scala.inline
+  def apply(
+    env: java.lang.String | InitCloudEnvOptions = null,
+    traceUser: js.UndefOr[scala.Boolean] = js.undefined
+  ): InitCloudOptions = {
+    val __obj = js.Dynamic.literal()
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (!js.isUndefined(traceUser)) __obj.updateDynamic("traceUser")(traceUser)
+    __obj.asInstanceOf[InitCloudOptions]
+  }
+}
+

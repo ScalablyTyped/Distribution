@@ -20,3 +20,20 @@ trait FilterEvent
   var PredicateExpression: java.lang.String
 }
 
+object FilterEvent {
+  @scala.inline
+  def apply(
+    DisjunctiveTerm: scala.Double,
+    FilterComponent: scala.Double,
+    PredicateExpression: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): FilterEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DisjunctiveTerm")(DisjunctiveTerm)
+    __obj.updateDynamic("FilterComponent")(FilterComponent)
+    __obj.updateDynamic("PredicateExpression")(PredicateExpression)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[FilterEvent]
+  }
+}
+

@@ -24,3 +24,18 @@ trait RevalidationPolicy extends js.Object {
   var policy: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicy
 }
 
+object RevalidationPolicy {
+  @scala.inline
+  def apply(
+    matches: scala.Boolean,
+    modified: scala.Boolean,
+    policy: httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicy
+  ): RevalidationPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("matches")(matches)
+    __obj.updateDynamic("modified")(modified)
+    __obj.updateDynamic("policy")(policy)
+    __obj.asInstanceOf[RevalidationPolicy]
+  }
+}
+

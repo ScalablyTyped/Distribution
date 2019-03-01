@@ -17,3 +17,20 @@ trait ModuleOptions[ClientIdName /* <: java.lang.String */] extends js.Object {
   var options: js.UndefOr[simpleDashOauth2Lib.Anon_AuthorizationMethod] = js.undefined
 }
 
+object ModuleOptions {
+  @scala.inline
+  def apply[ClientIdName /* <: java.lang.String */](
+    auth: simpleDashOauth2Lib.Anon_AuthorizeHost,
+    client: simpleDashOauth2Lib.Anon_Id[ClientIdName],
+    http: js.Object = null,
+    options: simpleDashOauth2Lib.Anon_AuthorizationMethod = null
+  ): ModuleOptions[ClientIdName] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("auth")(auth)
+    __obj.updateDynamic("client")(client)
+    if (http != null) __obj.updateDynamic("http")(http)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[ModuleOptions[ClientIdName]]
+  }
+}
+

@@ -18,3 +18,18 @@ trait DefaultColumnStyle extends js.Object {
   var textAlign: js.UndefOr[js.Any] = js.undefined
 }
 
+object DefaultColumnStyle {
+  @scala.inline
+  def apply(
+    headerTemplateID: java.lang.String = null,
+    templateID: java.lang.String = null,
+    textAlign: js.Any = null
+  ): DefaultColumnStyle = {
+    val __obj = js.Dynamic.literal()
+    if (headerTemplateID != null) __obj.updateDynamic("headerTemplateID")(headerTemplateID)
+    if (templateID != null) __obj.updateDynamic("templateID")(templateID)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    __obj.asInstanceOf[DefaultColumnStyle]
+  }
+}
+

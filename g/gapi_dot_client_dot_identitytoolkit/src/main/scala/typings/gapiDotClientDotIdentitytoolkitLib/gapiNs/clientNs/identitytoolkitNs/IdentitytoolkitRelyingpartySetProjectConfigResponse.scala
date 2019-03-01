@@ -10,3 +10,12 @@ trait IdentitytoolkitRelyingpartySetProjectConfigResponse extends js.Object {
   var projectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartySetProjectConfigResponse {
+  @scala.inline
+  def apply(projectId: java.lang.String = null): IdentitytoolkitRelyingpartySetProjectConfigResponse = {
+    val __obj = js.Dynamic.literal()
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartySetProjectConfigResponse]
+  }
+}
+

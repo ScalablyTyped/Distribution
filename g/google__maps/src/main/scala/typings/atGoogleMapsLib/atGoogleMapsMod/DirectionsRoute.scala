@@ -46,3 +46,30 @@ trait DirectionsRoute extends js.Object {
   var waypoint_order: js.Array[scala.Double]
 }
 
+object DirectionsRoute {
+  @scala.inline
+  def apply(
+    bounds: LatLngBounds,
+    copyrights: java.lang.String,
+    fare: TransitFare,
+    legs: js.Array[RouteLeg],
+    overview_path: js.Array[LatLngLiteral],
+    overview_polyline: atGoogleMapsLib.Anon_Points,
+    summary: java.lang.String,
+    warnings: js.Array[java.lang.String],
+    waypoint_order: js.Array[scala.Double]
+  ): DirectionsRoute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("copyrights")(copyrights)
+    __obj.updateDynamic("fare")(fare)
+    __obj.updateDynamic("legs")(legs)
+    __obj.updateDynamic("overview_path")(overview_path)
+    __obj.updateDynamic("overview_polyline")(overview_polyline)
+    __obj.updateDynamic("summary")(summary)
+    __obj.updateDynamic("warnings")(warnings)
+    __obj.updateDynamic("waypoint_order")(waypoint_order)
+    __obj.asInstanceOf[DirectionsRoute]
+  }
+}
+

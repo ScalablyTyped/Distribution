@@ -28,3 +28,28 @@ trait XChangesSet
   def getAllChanges(): activexDashInteropLib.SafeArray[ElementChange]
 }
 
+object XChangesSet {
+  @scala.inline
+  def apply(
+    AllChanges: activexDashInteropLib.SafeArray[ElementChange],
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    getAllChanges: js.Function0[activexDashInteropLib.SafeArray[ElementChange]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XChangesSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AllChanges")(AllChanges)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAllChanges")(getAllChanges)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XChangesSet]
+  }
+}
+

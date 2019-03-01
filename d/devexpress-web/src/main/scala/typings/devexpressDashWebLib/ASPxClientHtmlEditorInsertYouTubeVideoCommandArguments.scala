@@ -36,3 +36,34 @@ trait ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments extends ASPxClientH
   var showVideoInfo: scala.Boolean
 }
 
+object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
+  @scala.inline
+  def apply(
+    GetCommandName: js.Function0[java.lang.String],
+    align: java.lang.String,
+    allowFullscreen: scala.Boolean,
+    enablePrivacyEnhancedMode: scala.Boolean,
+    id: java.lang.String,
+    selectedElement: js.Object,
+    showPlayerControls: scala.Boolean,
+    showRelatedVideos: scala.Boolean,
+    showVideoInfo: scala.Boolean,
+    src: java.lang.String,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  ): ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetCommandName")(GetCommandName)
+    __obj.updateDynamic("align")(align)
+    __obj.updateDynamic("allowFullscreen")(allowFullscreen)
+    __obj.updateDynamic("enablePrivacyEnhancedMode")(enablePrivacyEnhancedMode)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("selectedElement")(selectedElement)
+    __obj.updateDynamic("showPlayerControls")(showPlayerControls)
+    __obj.updateDynamic("showRelatedVideos")(showRelatedVideos)
+    __obj.updateDynamic("showVideoInfo")(showVideoInfo)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("styleSettings")(styleSettings)
+    __obj.asInstanceOf[ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments]
+  }
+}
+

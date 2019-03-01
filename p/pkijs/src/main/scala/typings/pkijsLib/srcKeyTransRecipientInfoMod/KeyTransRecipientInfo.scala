@@ -22,3 +22,28 @@ trait KeyTransRecipientInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object KeyTransRecipientInfo {
+  @scala.inline
+  def apply(
+    encryptedKey: asn1jsLib.asn1jsMod.OctetString,
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    keyEncryptionAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    recipientCertificate: pkijsLib.srcCertificateMod.default,
+    rid: pkijsLib.srcRecipientIdentifierMod.default,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    version: scala.Double
+  ): KeyTransRecipientInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encryptedKey")(encryptedKey)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("keyEncryptionAlgorithm")(keyEncryptionAlgorithm)
+    __obj.updateDynamic("recipientCertificate")(recipientCertificate)
+    __obj.updateDynamic("rid")(rid)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[KeyTransRecipientInfo]
+  }
+}
+

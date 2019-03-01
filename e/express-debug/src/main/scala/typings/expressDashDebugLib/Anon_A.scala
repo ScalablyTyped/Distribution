@@ -41,3 +41,26 @@ trait Anon_A extends js.Object {
   var theme: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_A {
+  @scala.inline
+  def apply(
+    depth: scala.Int | scala.Double = null,
+    extra_attrs: java.lang.String = null,
+    extra_panels: js.Array[expressDashDebugLib.expressDashDebugMod.CustomPanel] = null,
+    panels: js.Array[java.lang.String] = null,
+    path: java.lang.String = null,
+    sort: scala.Boolean | (js.Function2[/* a */ scala.Double, /* b */ scala.Double, scala.Double]) = null,
+    theme: java.lang.String = null
+  ): Anon_A = {
+    val __obj = js.Dynamic.literal()
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (extra_attrs != null) __obj.updateDynamic("extra_attrs")(extra_attrs)
+    if (extra_panels != null) __obj.updateDynamic("extra_panels")(extra_panels)
+    if (panels != null) __obj.updateDynamic("panels")(panels)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[Anon_A]
+  }
+}
+

@@ -28,3 +28,18 @@ trait AnimationAttributes extends js.Object {
   var UntransformedSize: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D
 }
 
+object AnimationAttributes {
+  @scala.inline
+  def apply(
+    Duration: scala.Double,
+    RepeatMode: scala.Double,
+    UntransformedSize: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealSize2D
+  ): AnimationAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Duration")(Duration)
+    __obj.updateDynamic("RepeatMode")(RepeatMode)
+    __obj.updateDynamic("UntransformedSize")(UntransformedSize)
+    __obj.asInstanceOf[AnimationAttributes]
+  }
+}
+

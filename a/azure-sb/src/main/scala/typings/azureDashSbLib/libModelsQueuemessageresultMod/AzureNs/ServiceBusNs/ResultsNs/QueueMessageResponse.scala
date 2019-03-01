@@ -13,3 +13,22 @@ trait QueueMessageResponse extends js.Object {
   var location: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QueueMessageResponse {
+  @scala.inline
+  def apply(
+    body: js.Any,
+    brokerProperties: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.BrokerProperties = null,
+    contentType: java.lang.String = null,
+    customProperties: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary[_] = null,
+    location: java.lang.String = null
+  ): QueueMessageResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    if (brokerProperties != null) __obj.updateDynamic("brokerProperties")(brokerProperties)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (customProperties != null) __obj.updateDynamic("customProperties")(customProperties)
+    if (location != null) __obj.updateDynamic("location")(location)
+    __obj.asInstanceOf[QueueMessageResponse]
+  }
+}
+

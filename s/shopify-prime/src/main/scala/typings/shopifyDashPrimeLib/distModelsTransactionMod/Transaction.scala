@@ -69,3 +69,46 @@ trait Transaction
   var user_id: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    admin_graphql_api_id: java.lang.String = null,
+    amount: java.lang.String | scala.Double = null,
+    authorization: java.lang.String = null,
+    created_at: java.lang.String = null,
+    currency: java.lang.String = null,
+    device_id: java.lang.String = null,
+    error_code: java.lang.String = null,
+    gateway: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    kind: shopifyDashPrimeLib.distEnumsTransactionUnderscoreKindMod.TransactionKind = null,
+    order_id: scala.Int | scala.Double = null,
+    payment_details: shopifyDashPrimeLib.distModelsPaymentUnderscoreDetailsMod.PaymentDetails = null,
+    receipt: js.Any = null,
+    source_name: java.lang.String = null,
+    status: shopifyDashPrimeLib.distEnumsTransactionUnderscoreStatusMod.TransactionStatus = null,
+    test: js.UndefOr[scala.Boolean] = js.undefined,
+    user_id: scala.Int | scala.Double = null
+  ): Transaction = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (device_id != null) __obj.updateDynamic("device_id")(device_id)
+    if (error_code != null) __obj.updateDynamic("error_code")(error_code)
+    if (gateway != null) __obj.updateDynamic("gateway")(gateway)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
+    if (payment_details != null) __obj.updateDynamic("payment_details")(payment_details)
+    if (receipt != null) __obj.updateDynamic("receipt")(receipt)
+    if (source_name != null) __obj.updateDynamic("source_name")(source_name)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

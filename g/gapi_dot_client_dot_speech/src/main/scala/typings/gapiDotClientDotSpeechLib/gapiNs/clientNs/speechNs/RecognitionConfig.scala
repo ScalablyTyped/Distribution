@@ -51,3 +51,26 @@ trait RecognitionConfig extends js.Object {
   var speechContexts: js.UndefOr[js.Array[SpeechContext]] = js.undefined
 }
 
+object RecognitionConfig {
+  @scala.inline
+  def apply(
+    enableWordTimeOffsets: js.UndefOr[scala.Boolean] = js.undefined,
+    encoding: java.lang.String = null,
+    languageCode: java.lang.String = null,
+    maxAlternatives: scala.Int | scala.Double = null,
+    profanityFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    sampleRateHertz: scala.Int | scala.Double = null,
+    speechContexts: js.Array[SpeechContext] = null
+  ): RecognitionConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableWordTimeOffsets)) __obj.updateDynamic("enableWordTimeOffsets")(enableWordTimeOffsets)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (maxAlternatives != null) __obj.updateDynamic("maxAlternatives")(maxAlternatives.asInstanceOf[js.Any])
+    if (!js.isUndefined(profanityFilter)) __obj.updateDynamic("profanityFilter")(profanityFilter)
+    if (sampleRateHertz != null) __obj.updateDynamic("sampleRateHertz")(sampleRateHertz.asInstanceOf[js.Any])
+    if (speechContexts != null) __obj.updateDynamic("speechContexts")(speechContexts)
+    __obj.asInstanceOf[RecognitionConfig]
+  }
+}
+

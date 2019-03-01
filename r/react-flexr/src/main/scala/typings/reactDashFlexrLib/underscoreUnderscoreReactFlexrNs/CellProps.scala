@@ -47,3 +47,34 @@ trait CellProps
   var size: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object CellProps {
+  @scala.inline
+  def apply(
+    align: reactDashFlexrLib.reactDashFlexrLibStrings.top | reactDashFlexrLib.reactDashFlexrLibStrings.center | reactDashFlexrLib.reactDashFlexrLibStrings.bottom = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    desk: java.lang.String | scala.Double = null,
+    flex: js.UndefOr[scala.Boolean] = js.undefined,
+    gutter: java.lang.String = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    lap: java.lang.String | scala.Double = null,
+    palm: java.lang.String | scala.Double = null,
+    portable: java.lang.String | scala.Double = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[Cell] = null,
+    size: java.lang.String | scala.Double = null
+  ): CellProps = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (desk != null) __obj.updateDynamic("desk")(desk.asInstanceOf[js.Any])
+    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex)
+    if (gutter != null) __obj.updateDynamic("gutter")(gutter)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (lap != null) __obj.updateDynamic("lap")(lap.asInstanceOf[js.Any])
+    if (palm != null) __obj.updateDynamic("palm")(palm.asInstanceOf[js.Any])
+    if (portable != null) __obj.updateDynamic("portable")(portable.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CellProps]
+  }
+}
+

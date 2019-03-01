@@ -50,3 +50,32 @@ trait VpcAttachmentState extends js.Object {
   val vpcOwnerId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object VpcAttachmentState {
+  @scala.inline
+  def apply(
+    dnsSupport: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipv6Support: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null,
+    transitGatewayDefaultRouteTableAssociation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    transitGatewayDefaultRouteTablePropagation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    transitGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcOwnerId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): VpcAttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (dnsSupport != null) __obj.updateDynamic("dnsSupport")(dnsSupport.asInstanceOf[js.Any])
+    if (ipv6Support != null) __obj.updateDynamic("ipv6Support")(ipv6Support.asInstanceOf[js.Any])
+    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (transitGatewayDefaultRouteTableAssociation != null) __obj.updateDynamic("transitGatewayDefaultRouteTableAssociation")(transitGatewayDefaultRouteTableAssociation.asInstanceOf[js.Any])
+    if (transitGatewayDefaultRouteTablePropagation != null) __obj.updateDynamic("transitGatewayDefaultRouteTablePropagation")(transitGatewayDefaultRouteTablePropagation.asInstanceOf[js.Any])
+    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    if (vpcOwnerId != null) __obj.updateDynamic("vpcOwnerId")(vpcOwnerId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcAttachmentState]
+  }
+}
+

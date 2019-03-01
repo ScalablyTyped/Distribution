@@ -12,3 +12,20 @@ trait Anon_CommentsExpressionLocTypeAnnotation extends js.Object {
   var typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
 }
 
+object Anon_CommentsExpressionLocTypeAnnotation {
+  @scala.inline
+  def apply(
+    expression: astDashTypesLib.genKindsMod.ExpressionKind,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsExpressionLocTypeAnnotation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expression")(expression)
+    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsExpressionLocTypeAnnotation]
+  }
+}
+

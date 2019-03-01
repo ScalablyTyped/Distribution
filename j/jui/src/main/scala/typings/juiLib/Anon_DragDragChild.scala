@@ -35,3 +35,26 @@ trait Anon_DragDragChild extends js.Object {
   var tpl: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_DragDragChild {
+  @scala.inline
+  def apply(
+    drag: js.UndefOr[scala.Boolean] = js.undefined,
+    dragChild: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    root: juiLib.juiMod.UITreeNode = null,
+    rootFold: js.UndefOr[scala.Boolean] = js.undefined,
+    rootHide: js.UndefOr[scala.Boolean] = js.undefined,
+    tpl: js.Any = null
+  ): Anon_DragDragChild = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag)
+    if (!js.isUndefined(dragChild)) __obj.updateDynamic("dragChild")(dragChild)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (!js.isUndefined(rootFold)) __obj.updateDynamic("rootFold")(rootFold)
+    if (!js.isUndefined(rootHide)) __obj.updateDynamic("rootHide")(rootHide)
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    __obj.asInstanceOf[Anon_DragDragChild]
+  }
+}
+

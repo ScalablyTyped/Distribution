@@ -10,3 +10,12 @@ trait PivotTableCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[PivotTableData]] = js.undefined
 }
 
+object PivotTableCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[PivotTableData] = null): PivotTableCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[PivotTableCollectionUpdateData]
+  }
+}
+

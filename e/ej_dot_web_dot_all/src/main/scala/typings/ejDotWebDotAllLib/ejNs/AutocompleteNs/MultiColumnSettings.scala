@@ -25,3 +25,22 @@ trait MultiColumnSettings extends js.Object {
   var stringFormat: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MultiColumnSettings {
+  @scala.inline
+  def apply(
+    columns: js.Array[MultiColumnSettingsColumn] = null,
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    searchColumnIndices: js.Array[_] = null,
+    showHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    stringFormat: java.lang.String = null
+  ): MultiColumnSettings = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (searchColumnIndices != null) __obj.updateDynamic("searchColumnIndices")(searchColumnIndices)
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
+    if (stringFormat != null) __obj.updateDynamic("stringFormat")(stringFormat)
+    __obj.asInstanceOf[MultiColumnSettings]
+  }
+}
+

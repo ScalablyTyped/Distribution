@@ -9,3 +9,12 @@ trait INegatable[Ret] extends js.Object {
   def negate(): Ret
 }
 
+object INegatable {
+  @scala.inline
+  def apply[Ret](negate: js.Function0[Ret]): INegatable[Ret] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("negate")(negate)
+    __obj.asInstanceOf[INegatable[Ret]]
+  }
+}
+

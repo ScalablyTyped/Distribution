@@ -11,3 +11,18 @@ trait SelectionService[EntityType] extends js.Object {
   def setSelection(row: Row[EntityType], selected: scala.Boolean): scala.Unit
 }
 
+object SelectionService {
+  @scala.inline
+  def apply[EntityType](
+    lastClickedRow: Row[EntityType],
+    multi: scala.Boolean,
+    setSelection: js.Function2[Row[EntityType], scala.Boolean, scala.Unit]
+  ): SelectionService[EntityType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lastClickedRow")(lastClickedRow)
+    __obj.updateDynamic("multi")(multi)
+    __obj.updateDynamic("setSelection")(setSelection)
+    __obj.asInstanceOf[SelectionService[EntityType]]
+  }
+}
+

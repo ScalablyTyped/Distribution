@@ -11,3 +11,14 @@ trait Anon_ContainerViewStyle extends js.Object {
   ] = js.undefined
 }
 
+object Anon_ContainerViewStyle {
+  @scala.inline
+  def apply(
+    container: reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiMod.ViewStyle = null
+  ): Anon_ContainerViewStyle = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ContainerViewStyle]
+  }
+}
+

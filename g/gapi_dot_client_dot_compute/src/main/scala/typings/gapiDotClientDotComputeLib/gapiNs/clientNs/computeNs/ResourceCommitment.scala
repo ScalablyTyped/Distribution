@@ -15,3 +15,13 @@ trait ResourceCommitment extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResourceCommitment {
+  @scala.inline
+  def apply(amount: java.lang.String = null, `type`: java.lang.String = null): ResourceCommitment = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ResourceCommitment]
+  }
+}
+

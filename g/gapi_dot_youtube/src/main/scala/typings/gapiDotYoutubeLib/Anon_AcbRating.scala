@@ -68,3 +68,42 @@ trait Anon_AcbRating extends js.Object {
   var tvpgRating: java.lang.String
 }
 
+object Anon_AcbRating {
+  @scala.inline
+  def apply(
+    acbRating: java.lang.String,
+    bbfcRating: java.lang.String,
+    cbfcRating: java.lang.String,
+    chvrsRating: java.lang.String,
+    djctqRating: java.lang.String,
+    eirinRating: java.lang.String,
+    fmocRating: java.lang.String,
+    fskRating: java.lang.String,
+    icaaRating: java.lang.String,
+    kmrbRating: java.lang.String,
+    mpaaRating: java.lang.String,
+    oflcRating: java.lang.String,
+    rtcRating: java.lang.String,
+    russiaRating: java.lang.String,
+    tvpgRating: java.lang.String
+  ): Anon_AcbRating = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acbRating")(acbRating)
+    __obj.updateDynamic("bbfcRating")(bbfcRating)
+    __obj.updateDynamic("cbfcRating")(cbfcRating)
+    __obj.updateDynamic("chvrsRating")(chvrsRating)
+    __obj.updateDynamic("djctqRating")(djctqRating)
+    __obj.updateDynamic("eirinRating")(eirinRating)
+    __obj.updateDynamic("fmocRating")(fmocRating)
+    __obj.updateDynamic("fskRating")(fskRating)
+    __obj.updateDynamic("icaaRating")(icaaRating)
+    __obj.updateDynamic("kmrbRating")(kmrbRating)
+    __obj.updateDynamic("mpaaRating")(mpaaRating)
+    __obj.updateDynamic("oflcRating")(oflcRating)
+    __obj.updateDynamic("rtcRating")(rtcRating)
+    __obj.updateDynamic("russiaRating")(russiaRating)
+    __obj.updateDynamic("tvpgRating")(tvpgRating)
+    __obj.asInstanceOf[Anon_AcbRating]
+  }
+}
+

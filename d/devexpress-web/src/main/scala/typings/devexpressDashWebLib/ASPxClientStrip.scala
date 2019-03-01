@@ -26,3 +26,22 @@ trait ASPxClientStrip extends ASPxClientWebChartElementNamed {
   var minValue: js.Object
 }
 
+object ASPxClientStrip {
+  @scala.inline
+  def apply(
+    axis: ASPxClientAxis,
+    chart: ASPxClientWebChart,
+    maxValue: js.Object,
+    minValue: js.Object,
+    name: java.lang.String
+  ): ASPxClientStrip = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axis")(axis)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("maxValue")(maxValue)
+    __obj.updateDynamic("minValue")(minValue)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientStrip]
+  }
+}
+

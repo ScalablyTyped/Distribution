@@ -20,3 +20,18 @@ trait BidResponseWithoutBidsStatusRow extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BidResponseWithoutBidsStatusRow {
+  @scala.inline
+  def apply(
+    impressionCount: MetricValue = null,
+    rowDimensions: RowDimensions = null,
+    status: java.lang.String = null
+  ): BidResponseWithoutBidsStatusRow = {
+    val __obj = js.Dynamic.literal()
+    if (impressionCount != null) __obj.updateDynamic("impressionCount")(impressionCount)
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[BidResponseWithoutBidsStatusRow]
+  }
+}
+

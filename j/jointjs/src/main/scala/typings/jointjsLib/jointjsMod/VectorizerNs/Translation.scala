@@ -10,3 +10,13 @@ trait Translation extends js.Object {
   var ty: scala.Double
 }
 
+object Translation {
+  @scala.inline
+  def apply(tx: scala.Double, ty: scala.Double): Translation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tx")(tx)
+    __obj.updateDynamic("ty")(ty)
+    __obj.asInstanceOf[Translation]
+  }
+}
+

@@ -14,3 +14,24 @@ trait ArrayOptions extends js.Object {
   var sortOrder: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ArrayOptions {
+  @scala.inline
+  def apply(
+    sortCollate: js.Function = null,
+    sortEquivalents: js.Object = null,
+    sortIgnore: stdLib.RegExp = null,
+    sortIgnoreCase: js.UndefOr[scala.Boolean] = js.undefined,
+    sortNatural: js.UndefOr[scala.Boolean] = js.undefined,
+    sortOrder: java.lang.String = null
+  ): ArrayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (sortCollate != null) __obj.updateDynamic("sortCollate")(sortCollate)
+    if (sortEquivalents != null) __obj.updateDynamic("sortEquivalents")(sortEquivalents)
+    if (sortIgnore != null) __obj.updateDynamic("sortIgnore")(sortIgnore)
+    if (!js.isUndefined(sortIgnoreCase)) __obj.updateDynamic("sortIgnoreCase")(sortIgnoreCase)
+    if (!js.isUndefined(sortNatural)) __obj.updateDynamic("sortNatural")(sortNatural)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    __obj.asInstanceOf[ArrayOptions]
+  }
+}
+

@@ -16,3 +16,12 @@ trait ShapeViewData extends js.Object {
   var highlight: js.UndefOr[officeDashJsDashPreviewLib.VisioNs.Highlight] = js.undefined
 }
 
+object ShapeViewData {
+  @scala.inline
+  def apply(highlight: officeDashJsDashPreviewLib.VisioNs.Highlight = null): ShapeViewData = {
+    val __obj = js.Dynamic.literal()
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    __obj.asInstanceOf[ShapeViewData]
+  }
+}
+

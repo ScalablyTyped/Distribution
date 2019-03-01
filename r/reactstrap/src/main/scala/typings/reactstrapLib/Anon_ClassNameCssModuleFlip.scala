@@ -15,3 +15,26 @@ trait Anon_ClassNameCssModuleFlip extends js.Object {
   var tag: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
 }
 
+object Anon_ClassNameCssModuleFlip {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
+    flip: js.UndefOr[scala.Boolean] = js.undefined,
+    modifiers: popperDotJsLib.popperDotJsMod.Modifiers = null,
+    persist: js.UndefOr[scala.Boolean] = js.undefined,
+    right: js.UndefOr[scala.Boolean] = js.undefined,
+    tag: reactLib.reactMod.ReactNs.ReactType[_] = null
+  ): Anon_ClassNameCssModuleFlip = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
+    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ClassNameCssModuleFlip]
+  }
+}
+

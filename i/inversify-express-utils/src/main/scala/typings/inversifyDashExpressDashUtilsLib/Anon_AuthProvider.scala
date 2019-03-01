@@ -11,3 +11,14 @@ trait Anon_AuthProvider extends js.Object {
   var HttpContext: js.Symbol
 }
 
+object Anon_AuthProvider {
+  @scala.inline
+  def apply(AuthProvider: js.Symbol, Controller: js.Symbol, HttpContext: js.Symbol): Anon_AuthProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AuthProvider")(AuthProvider)
+    __obj.updateDynamic("Controller")(Controller)
+    __obj.updateDynamic("HttpContext")(HttpContext)
+    __obj.asInstanceOf[Anon_AuthProvider]
+  }
+}
+

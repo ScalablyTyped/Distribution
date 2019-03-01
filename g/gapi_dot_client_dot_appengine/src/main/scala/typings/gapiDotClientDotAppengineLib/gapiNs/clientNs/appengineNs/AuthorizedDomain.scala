@@ -12,3 +12,13 @@ trait AuthorizedDomain extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthorizedDomain {
+  @scala.inline
+  def apply(id: java.lang.String = null, name: java.lang.String = null): AuthorizedDomain = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AuthorizedDomain]
+  }
+}
+

@@ -34,3 +34,22 @@ trait INxAttrDimInfo extends js.Object {
   var qSize: scala.Double
 }
 
+object INxAttrDimInfo {
+  @scala.inline
+  def apply(
+    qCardinal: scala.Double,
+    qError: INxValidationError,
+    qFallbackTitle: java.lang.String,
+    qLocked: scala.Boolean,
+    qSize: scala.Double
+  ): INxAttrDimInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qCardinal")(qCardinal)
+    __obj.updateDynamic("qError")(qError)
+    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
+    __obj.updateDynamic("qLocked")(qLocked)
+    __obj.updateDynamic("qSize")(qSize)
+    __obj.asInstanceOf[INxAttrDimInfo]
+  }
+}
+

@@ -19,3 +19,20 @@ trait HighlightedRange extends js.Object {
   var RangeRepresentation: java.lang.String
 }
 
+object HighlightedRange {
+  @scala.inline
+  def apply(
+    AllowMerginigWithOtherRanges: scala.Boolean,
+    Index: scala.Double,
+    PreferredColor: scala.Double,
+    RangeRepresentation: java.lang.String
+  ): HighlightedRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AllowMerginigWithOtherRanges")(AllowMerginigWithOtherRanges)
+    __obj.updateDynamic("Index")(Index)
+    __obj.updateDynamic("PreferredColor")(PreferredColor)
+    __obj.updateDynamic("RangeRepresentation")(RangeRepresentation)
+    __obj.asInstanceOf[HighlightedRange]
+  }
+}
+

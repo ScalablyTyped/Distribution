@@ -10,3 +10,13 @@ trait Anon_Max extends js.Object {
   var min: Anon_X
 }
 
+object Anon_Max {
+  @scala.inline
+  def apply(max: Anon_X, min: Anon_X): Anon_Max = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("min")(min)
+    __obj.asInstanceOf[Anon_Max]
+  }
+}
+

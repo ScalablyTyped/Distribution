@@ -32,3 +32,18 @@ trait BodyUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object BodyUpdateData {
+  @scala.inline
+  def apply(
+    font: FontUpdateData = null,
+    style: java.lang.String = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null
+  ): BodyUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (styleBuiltIn != null) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    __obj.asInstanceOf[BodyUpdateData]
+  }
+}
+

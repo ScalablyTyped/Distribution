@@ -21,3 +21,16 @@ trait ASPxClientCustomizeMenuActionsEventArgs extends ASPxClientEventArgs {
   def GetById(actionId: java.lang.String): ASPxClientMenuAction
 }
 
+object ASPxClientCustomizeMenuActionsEventArgs {
+  @scala.inline
+  def apply(
+    Actions: js.Array[ASPxClientMenuAction],
+    GetById: js.Function1[java.lang.String, ASPxClientMenuAction]
+  ): ASPxClientCustomizeMenuActionsEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Actions")(Actions)
+    __obj.updateDynamic("GetById")(GetById)
+    __obj.asInstanceOf[ASPxClientCustomizeMenuActionsEventArgs]
+  }
+}
+

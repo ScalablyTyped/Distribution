@@ -19,3 +19,30 @@ trait CalendarListInput extends js.Object {
   var summaryOverride: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CalendarListInput {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    backgroundColor: java.lang.String = null,
+    colorId: java.lang.String = null,
+    defaultReminders: js.Array[gapiDotCalendarLib.Anon_Method] = null,
+    foregroundColor: java.lang.String = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    notificationSettings: gapiDotCalendarLib.Anon_Notifications = null,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    summaryOverride: java.lang.String = null
+  ): CalendarListInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (colorId != null) __obj.updateDynamic("colorId")(colorId)
+    if (defaultReminders != null) __obj.updateDynamic("defaultReminders")(defaultReminders)
+    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (notificationSettings != null) __obj.updateDynamic("notificationSettings")(notificationSettings)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (summaryOverride != null) __obj.updateDynamic("summaryOverride")(summaryOverride)
+    __obj.asInstanceOf[CalendarListInput]
+  }
+}
+

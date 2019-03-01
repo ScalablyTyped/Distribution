@@ -16,3 +16,12 @@ trait HasManyAddAssociationsMixinOptions extends js.Object {
   var validate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HasManyAddAssociationsMixinOptions {
+  @scala.inline
+  def apply(validate: js.UndefOr[scala.Boolean] = js.undefined): HasManyAddAssociationsMixinOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[HasManyAddAssociationsMixinOptions]
+  }
+}
+

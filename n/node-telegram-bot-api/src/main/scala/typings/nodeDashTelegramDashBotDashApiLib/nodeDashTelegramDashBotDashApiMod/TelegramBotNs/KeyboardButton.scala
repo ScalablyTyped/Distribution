@@ -11,3 +11,18 @@ trait KeyboardButton extends js.Object {
   var text: java.lang.String
 }
 
+object KeyboardButton {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    request_contact: js.UndefOr[scala.Boolean] = js.undefined,
+    request_location: js.UndefOr[scala.Boolean] = js.undefined
+  ): KeyboardButton = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(request_contact)) __obj.updateDynamic("request_contact")(request_contact)
+    if (!js.isUndefined(request_location)) __obj.updateDynamic("request_location")(request_location)
+    __obj.asInstanceOf[KeyboardButton]
+  }
+}
+

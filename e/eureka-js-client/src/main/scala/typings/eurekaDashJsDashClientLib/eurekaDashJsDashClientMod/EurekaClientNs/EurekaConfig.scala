@@ -11,3 +11,18 @@ trait EurekaConfig extends js.Object {
   var requestMiddleware: js.UndefOr[EurekaMiddlewareConfig] = js.undefined
 }
 
+object EurekaConfig {
+  @scala.inline
+  def apply(
+    eureka: EurekaClientConfig,
+    instance: EurekaInstanceConfig,
+    requestMiddleware: EurekaMiddlewareConfig = null
+  ): EurekaConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eureka")(eureka)
+    __obj.updateDynamic("instance")(instance)
+    if (requestMiddleware != null) __obj.updateDynamic("requestMiddleware")(requestMiddleware)
+    __obj.asInstanceOf[EurekaConfig]
+  }
+}
+

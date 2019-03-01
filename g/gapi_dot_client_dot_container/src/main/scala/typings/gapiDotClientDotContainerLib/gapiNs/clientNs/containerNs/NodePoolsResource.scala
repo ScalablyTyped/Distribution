@@ -29,3 +29,57 @@ trait NodePoolsResource extends js.Object {
   def update(request: gapiDotClientDotContainerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object NodePoolsResource {
+  @scala.inline
+  def apply(
+    autoscaling: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    create: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[NodePool]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContainerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListNodePoolsResponse]
+    ],
+    rollback: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setManagement: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setSize: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    update: js.Function1[
+      gapiDotClientDotContainerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): NodePoolsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoscaling")(autoscaling)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("rollback")(rollback)
+    __obj.updateDynamic("setManagement")(setManagement)
+    __obj.updateDynamic("setSize")(setSize)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[NodePoolsResource]
+  }
+}
+

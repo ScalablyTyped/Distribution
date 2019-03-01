@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object bookshelfLibStrings {
   @js.native
-  sealed trait ASC extends js.Object
+  sealed trait ASC
+    extends bookshelfLib.bookshelfMod.BookshelfNs.SortOrder
   
   @js.native
-  sealed trait DESC extends js.Object
+  sealed trait DESC
+    extends bookshelfLib.bookshelfMod.BookshelfNs.SortOrder
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends bookshelfLib.bookshelfMod.BookshelfNs.SortOrder
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends bookshelfLib.bookshelfMod.BookshelfNs.SortOrder
   
   @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]

@@ -20,3 +20,18 @@ trait RepositoryPolicyState extends js.Object {
   val repository: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RepositoryPolicyState {
+  @scala.inline
+  def apply(
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    registryId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    repository: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RepositoryPolicyState = {
+    val __obj = js.Dynamic.literal()
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
+    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RepositoryPolicyState]
+  }
+}
+

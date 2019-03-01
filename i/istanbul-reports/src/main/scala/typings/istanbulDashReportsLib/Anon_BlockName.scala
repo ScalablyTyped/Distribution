@@ -9,3 +9,12 @@ trait Anon_BlockName extends js.Object {
   var blockName: java.lang.String
 }
 
+object Anon_BlockName {
+  @scala.inline
+  def apply(blockName: java.lang.String): Anon_BlockName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blockName")(blockName)
+    __obj.asInstanceOf[Anon_BlockName]
+  }
+}
+

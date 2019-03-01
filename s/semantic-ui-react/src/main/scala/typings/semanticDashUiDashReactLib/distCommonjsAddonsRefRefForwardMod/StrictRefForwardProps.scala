@@ -16,3 +16,16 @@ trait StrictRefForwardProps extends js.Object {
   var innerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
 }
 
+object StrictRefForwardProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] = null
+  ): StrictRefForwardProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictRefForwardProps]
+  }
+}
+

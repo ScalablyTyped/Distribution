@@ -10,3 +10,16 @@ trait ThemeProviderProps[Theme] extends js.Object {
   var theme: stdLib.Partial[Theme] | (js.Function1[/* outerTheme */ Theme, Theme])
 }
 
+object ThemeProviderProps {
+  @scala.inline
+  def apply[Theme](
+    theme: stdLib.Partial[Theme] | (js.Function1[/* outerTheme */ Theme, Theme]),
+    children: reactLib.reactMod.ReactNs.ReactNode = null
+  ): ThemeProviderProps[Theme] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThemeProviderProps[Theme]]
+  }
+}
+

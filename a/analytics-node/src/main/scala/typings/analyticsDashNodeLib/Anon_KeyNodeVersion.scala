@@ -10,3 +10,16 @@ trait Anon_KeyNodeVersion
   var nodeVersion: java.lang.String
 }
 
+object Anon_KeyNodeVersion {
+  @scala.inline
+  def apply(
+    nodeVersion: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_KeyNodeVersion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nodeVersion")(nodeVersion)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_KeyNodeVersion]
+  }
+}
+

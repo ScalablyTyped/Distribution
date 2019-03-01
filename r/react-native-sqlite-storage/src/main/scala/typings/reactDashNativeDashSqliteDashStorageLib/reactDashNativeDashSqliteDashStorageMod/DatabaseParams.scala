@@ -16,3 +16,22 @@ trait DatabaseParams extends DatabaseOptionalParams {
   var name: java.lang.String
 }
 
+object DatabaseParams {
+  @scala.inline
+  def apply(
+    location: Location,
+    name: java.lang.String,
+    createFromLocation: scala.Double | java.lang.String = null,
+    key: java.lang.String = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): DatabaseParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("name")(name)
+    if (createFromLocation != null) __obj.updateDynamic("createFromLocation")(createFromLocation.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    __obj.asInstanceOf[DatabaseParams]
+  }
+}
+

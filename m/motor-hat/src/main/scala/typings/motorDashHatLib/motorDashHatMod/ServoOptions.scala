@@ -28,3 +28,22 @@ trait ServoOptions extends js.Object {
   var pwm: js.Object
 }
 
+object ServoOptions {
+  @scala.inline
+  def apply(
+    pin: scala.Double,
+    pwm: js.Object,
+    freq: scala.Int | scala.Double = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null
+  ): ServoOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pin")(pin)
+    __obj.updateDynamic("pwm")(pwm)
+    if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServoOptions]
+  }
+}
+

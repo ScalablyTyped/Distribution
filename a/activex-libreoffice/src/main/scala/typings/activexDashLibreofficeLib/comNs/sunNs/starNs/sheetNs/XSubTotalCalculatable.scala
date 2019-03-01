@@ -29,3 +29,24 @@ trait XSubTotalCalculatable
   def removeSubTotals(): scala.Unit
 }
 
+object XSubTotalCalculatable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    applySubTotals: js.Function2[XSubTotalDescriptor, scala.Boolean, scala.Unit],
+    createSubTotalDescriptor: js.Function1[scala.Boolean, XSubTotalDescriptor],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSubTotals: js.Function0[scala.Unit]
+  ): XSubTotalCalculatable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("applySubTotals")(applySubTotals)
+    __obj.updateDynamic("createSubTotalDescriptor")(createSubTotalDescriptor)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeSubTotals")(removeSubTotals)
+    __obj.asInstanceOf[XSubTotalCalculatable]
+  }
+}
+

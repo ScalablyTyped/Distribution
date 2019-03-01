@@ -449,3 +449,81 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadius extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object Anon_AlignBackgroundColorBorderColorBorderRadius {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    backgroundColor: js.Object | java.lang.String = null,
+    borderColor: java.lang.String = null,
+    borderRadius: scala.Int | scala.Double = null,
+    borderWidth: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    distance: scala.Int | scala.Double = null,
+    emphasis: Anon_AlignBackgroundColorBorderColor = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    formatter: js.Function | java.lang.String = null,
+    height: scala.Double | java.lang.String = null,
+    lineHeight: scala.Int | scala.Double = null,
+    offset: js.Array[_] = null,
+    padding: js.Array[_] | scala.Double = null,
+    position: js.Array[_] | java.lang.String = null,
+    rich: /**
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint.label.rich.%3Cuser%20defined%20style%20name%3E
+    */
+  org.scalablytyped.runtime.StringDictionary[Anon_Align] = null,
+    rotate: scala.Int | scala.Double = null,
+    shadowBlur: scala.Int | scala.Double = null,
+    shadowColor: java.lang.String = null,
+    shadowOffsetX: scala.Int | scala.Double = null,
+    shadowOffsetY: scala.Int | scala.Double = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    textBorderColor: java.lang.String = null,
+    textBorderWidth: scala.Int | scala.Double = null,
+    textShadowBlur: scala.Int | scala.Double = null,
+    textShadowColor: java.lang.String = null,
+    textShadowOffsetX: scala.Int | scala.Double = null,
+    textShadowOffsetY: scala.Int | scala.Double = null,
+    verticalAlign: java.lang.String = null,
+    width: scala.Double | java.lang.String = null
+  ): Anon_AlignBackgroundColorBorderColorBorderRadius = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (rich != null) __obj.updateDynamic("rich")(rich)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
+    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (textBorderColor != null) __obj.updateDynamic("textBorderColor")(textBorderColor)
+    if (textBorderWidth != null) __obj.updateDynamic("textBorderWidth")(textBorderWidth.asInstanceOf[js.Any])
+    if (textShadowBlur != null) __obj.updateDynamic("textShadowBlur")(textShadowBlur.asInstanceOf[js.Any])
+    if (textShadowColor != null) __obj.updateDynamic("textShadowColor")(textShadowColor)
+    if (textShadowOffsetX != null) __obj.updateDynamic("textShadowOffsetX")(textShadowOffsetX.asInstanceOf[js.Any])
+    if (textShadowOffsetY != null) __obj.updateDynamic("textShadowOffsetY")(textShadowOffsetY.asInstanceOf[js.Any])
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AlignBackgroundColorBorderColorBorderRadius]
+  }
+}
+

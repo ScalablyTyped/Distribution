@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object lzmaDashNativeLibStrings {
   @js.native
-  sealed trait CHECK_CRC32 extends js.Object
+  sealed trait CHECK_CRC32
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Check
   
   @js.native
-  sealed trait CHECK_CRC64 extends js.Object
+  sealed trait CHECK_CRC64
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Check
   
   @js.native
-  sealed trait CHECK_NONE extends js.Object
+  sealed trait CHECK_NONE
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Check
   
   @js.native
-  sealed trait CHECK_SHA256 extends js.Object
+  sealed trait CHECK_SHA256
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Check
   
   @js.native
   sealed trait CONCATENATED extends js.Object
@@ -31,25 +35,32 @@ object lzmaDashNativeLibStrings {
   sealed trait TELL_UNSUPPORTED_CHECK extends js.Object
   
   @js.native
-  sealed trait aloneDecoder extends js.Object
+  sealed trait aloneDecoder
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Coders
   
   @js.native
-  sealed trait aloneEncoder extends js.Object
+  sealed trait aloneEncoder
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Coders
   
   @js.native
-  sealed trait autoDecoder extends js.Object
+  sealed trait autoDecoder
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Coders
   
   @js.native
-  sealed trait easyEncoder extends js.Object
+  sealed trait easyEncoder
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Coders
   
   @js.native
-  sealed trait rawEncoder extends js.Object
+  sealed trait rawEncoder
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Coders
   
   @js.native
-  sealed trait streamDecoder extends js.Object
+  sealed trait streamDecoder
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Coders
   
   @js.native
-  sealed trait streamEncoder extends js.Object
+  sealed trait streamEncoder
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Coders
   
   @scala.inline
   def CHECK_CRC32: CHECK_CRC32 = "CHECK_CRC32".asInstanceOf[CHECK_CRC32]

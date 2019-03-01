@@ -52,3 +52,30 @@ trait SearchVariantsRequest extends js.Object {
   var variantSetIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object SearchVariantsRequest {
+  @scala.inline
+  def apply(
+    callSetIds: js.Array[java.lang.String] = null,
+    end: java.lang.String = null,
+    maxCalls: scala.Int | scala.Double = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    referenceName: java.lang.String = null,
+    start: java.lang.String = null,
+    variantName: java.lang.String = null,
+    variantSetIds: js.Array[java.lang.String] = null
+  ): SearchVariantsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (maxCalls != null) __obj.updateDynamic("maxCalls")(maxCalls.asInstanceOf[js.Any])
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (variantName != null) __obj.updateDynamic("variantName")(variantName)
+    if (variantSetIds != null) __obj.updateDynamic("variantSetIds")(variantSetIds)
+    __obj.asInstanceOf[SearchVariantsRequest]
+  }
+}
+

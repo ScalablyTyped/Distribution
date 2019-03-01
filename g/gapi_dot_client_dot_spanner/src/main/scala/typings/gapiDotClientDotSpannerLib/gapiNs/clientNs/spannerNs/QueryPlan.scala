@@ -14,3 +14,12 @@ trait QueryPlan extends js.Object {
   var planNodes: js.UndefOr[js.Array[PlanNode]] = js.undefined
 }
 
+object QueryPlan {
+  @scala.inline
+  def apply(planNodes: js.Array[PlanNode] = null): QueryPlan = {
+    val __obj = js.Dynamic.literal()
+    if (planNodes != null) __obj.updateDynamic("planNodes")(planNodes)
+    __obj.asInstanceOf[QueryPlan]
+  }
+}
+

@@ -32,3 +32,24 @@ trait UploadSettings extends js.Object {
   var showFileDetails: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UploadSettings {
+  @scala.inline
+  def apply(
+    allowMultipleFile: js.UndefOr[scala.Boolean] = js.undefined,
+    autoUpload: js.UndefOr[scala.Boolean] = js.undefined,
+    dialogAction: js.Any = null,
+    dialogPosition: js.Any = null,
+    maxFileSize: scala.Int | scala.Double = null,
+    showFileDetails: js.UndefOr[scala.Boolean] = js.undefined
+  ): UploadSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMultipleFile)) __obj.updateDynamic("allowMultipleFile")(allowMultipleFile)
+    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload)
+    if (dialogAction != null) __obj.updateDynamic("dialogAction")(dialogAction)
+    if (dialogPosition != null) __obj.updateDynamic("dialogPosition")(dialogPosition)
+    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFileDetails)) __obj.updateDynamic("showFileDetails")(showFileDetails)
+    __obj.asInstanceOf[UploadSettings]
+  }
+}
+

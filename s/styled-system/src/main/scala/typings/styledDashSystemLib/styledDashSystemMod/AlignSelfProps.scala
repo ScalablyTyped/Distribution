@@ -17,3 +17,12 @@ trait AlignSelfProps extends js.Object {
   var alignSelf: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty]] = js.undefined
 }
 
+object AlignSelfProps {
+  @scala.inline
+  def apply(alignSelf: ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty] = null): AlignSelfProps = {
+    val __obj = js.Dynamic.literal()
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AlignSelfProps]
+  }
+}
+

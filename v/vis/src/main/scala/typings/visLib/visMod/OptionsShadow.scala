@@ -13,3 +13,22 @@ trait OptionsShadow extends js.Object {
   var y: scala.Double
 }
 
+object OptionsShadow {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    enabled: scala.Boolean,
+    size: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): OptionsShadow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[OptionsShadow]
+  }
+}
+

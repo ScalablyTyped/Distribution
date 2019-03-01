@@ -26,3 +26,20 @@ trait ASPxClientTreeListBatchEditChangesSavingEventArgs extends ASPxClientCancel
   var updatedValues: js.Object
 }
 
+object ASPxClientTreeListBatchEditChangesSavingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    deletedValues: js.Object,
+    insertedValues: js.Object,
+    updatedValues: js.Object
+  ): ASPxClientTreeListBatchEditChangesSavingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("deletedValues")(deletedValues)
+    __obj.updateDynamic("insertedValues")(insertedValues)
+    __obj.updateDynamic("updatedValues")(updatedValues)
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditChangesSavingEventArgs]
+  }
+}
+

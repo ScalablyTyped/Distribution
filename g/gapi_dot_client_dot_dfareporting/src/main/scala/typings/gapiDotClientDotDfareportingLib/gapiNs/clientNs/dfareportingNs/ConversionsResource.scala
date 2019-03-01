@@ -12,3 +12,22 @@ trait ConversionsResource extends js.Object {
   def batchupdate(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[ConversionsBatchUpdateResponse]
 }
 
+object ConversionsResource {
+  @scala.inline
+  def apply(
+    batchinsert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ConversionsBatchInsertResponse]
+    ],
+    batchupdate: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ConversionsBatchUpdateResponse]
+    ]
+  ): ConversionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("batchinsert")(batchinsert)
+    __obj.updateDynamic("batchupdate")(batchupdate)
+    __obj.asInstanceOf[ConversionsResource]
+  }
+}
+

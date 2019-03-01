@@ -14,3 +14,24 @@ trait Anon_CommentsExtra extends js.Object {
   var value: scala.Double
 }
 
+object Anon_CommentsExtra {
+  @scala.inline
+  def apply(
+    value: scala.Double,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    extra: Anon_Raw = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    raw: java.lang.String = null,
+    regex: Anon_Flags = null
+  ): Anon_CommentsExtra = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (extra != null) __obj.updateDynamic("extra")(extra)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    __obj.asInstanceOf[Anon_CommentsExtra]
+  }
+}
+

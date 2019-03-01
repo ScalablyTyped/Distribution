@@ -20,3 +20,18 @@ trait PointInTimeRecoveryDescription extends js.Object {
   var PointInTimeRecoveryStatus: js.UndefOr[PointInTimeRecoveryStatus] = js.undefined
 }
 
+object PointInTimeRecoveryDescription {
+  @scala.inline
+  def apply(
+    EarliestRestorableDateTime: _Date = null,
+    LatestRestorableDateTime: _Date = null,
+    PointInTimeRecoveryStatus: PointInTimeRecoveryStatus = null
+  ): PointInTimeRecoveryDescription = {
+    val __obj = js.Dynamic.literal()
+    if (EarliestRestorableDateTime != null) __obj.updateDynamic("EarliestRestorableDateTime")(EarliestRestorableDateTime)
+    if (LatestRestorableDateTime != null) __obj.updateDynamic("LatestRestorableDateTime")(LatestRestorableDateTime)
+    if (PointInTimeRecoveryStatus != null) __obj.updateDynamic("PointInTimeRecoveryStatus")(PointInTimeRecoveryStatus.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointInTimeRecoveryDescription]
+  }
+}
+

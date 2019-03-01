@@ -28,3 +28,22 @@ trait Options extends js.Object {
   var unmatch: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    deferSetup: js.UndefOr[scala.Boolean] = js.undefined,
+    destroy: js.Function0[scala.Unit] = null,
+    `match`: js.Function0[scala.Unit] = null,
+    setup: js.Function0[scala.Unit] = null,
+    unmatch: js.Function0[scala.Unit] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deferSetup)) __obj.updateDynamic("deferSetup")(deferSetup)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (unmatch != null) __obj.updateDynamic("unmatch")(unmatch)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -27,3 +27,32 @@ trait legendOptions extends js.Object {
   var sorted: js.UndefOr[js.Any] = js.undefined
 }
 
+object legendOptions {
+  @scala.inline
+  def apply(
+    backgroundColor: js.Any = null,
+    backgroundOpacity: scala.Int | scala.Double = null,
+    container: jqueryLib.JQuery[stdLib.HTMLElement] = null,
+    labelBoxBorderColor: js.Any = null,
+    labelFormatter: js.Function2[/* label */ java.lang.String, /* series */ js.Any, java.lang.String] = null,
+    margin: js.Any = null,
+    noColumns: scala.Int | scala.Double = null,
+    position: java.lang.String = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    sorted: js.Any = null
+  ): legendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundOpacity != null) __obj.updateDynamic("backgroundOpacity")(backgroundOpacity.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (labelBoxBorderColor != null) __obj.updateDynamic("labelBoxBorderColor")(labelBoxBorderColor)
+    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(labelFormatter)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (noColumns != null) __obj.updateDynamic("noColumns")(noColumns.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (sorted != null) __obj.updateDynamic("sorted")(sorted)
+    __obj.asInstanceOf[legendOptions]
+  }
+}
+

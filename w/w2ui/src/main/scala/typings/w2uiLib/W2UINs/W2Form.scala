@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait W2Form extends W2Common {
+trait W2Form
+  extends W2Common
+     with W2Object {
   var actions: js.Object = js.native
   var fields: js.Array[js.Object] = js.native
   var focus: scala.Double = js.native

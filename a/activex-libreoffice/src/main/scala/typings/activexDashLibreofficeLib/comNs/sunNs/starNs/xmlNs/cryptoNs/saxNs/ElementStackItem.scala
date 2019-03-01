@@ -15,3 +15,18 @@ trait ElementStackItem extends js.Object {
   var xAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XAttributeList
 }
 
+object ElementStackItem {
+  @scala.inline
+  def apply(
+    elementName: java.lang.String,
+    isStartElementEvent: scala.Boolean,
+    xAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XAttributeList
+  ): ElementStackItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("elementName")(elementName)
+    __obj.updateDynamic("isStartElementEvent")(isStartElementEvent)
+    __obj.updateDynamic("xAttributes")(xAttributes)
+    __obj.asInstanceOf[ElementStackItem]
+  }
+}
+

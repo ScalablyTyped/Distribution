@@ -10,10 +10,12 @@ object webDashPushLibStrings {
   sealed trait POST extends js.Object
   
   @js.native
-  sealed trait aes128gcm extends js.Object
+  sealed trait aes128gcm
+    extends webDashPushLib.webDashPushMod.ContentEncoding
   
   @js.native
-  sealed trait aesgcm extends js.Object
+  sealed trait aesgcm
+    extends webDashPushLib.webDashPushMod.ContentEncoding
   
   @js.native
   sealed trait aws128gcm extends js.Object

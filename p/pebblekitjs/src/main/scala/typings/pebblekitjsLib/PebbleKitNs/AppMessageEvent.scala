@@ -10,3 +10,13 @@ trait AppMessageEvent extends js.Object {
   var error: js.UndefOr[Error] = js.undefined
 }
 
+object AppMessageEvent {
+  @scala.inline
+  def apply(data: AppMessageData, error: Error = null): AppMessageEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[AppMessageEvent]
+  }
+}
+

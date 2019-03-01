@@ -14,3 +14,12 @@ trait Navigator extends js.Object {
   var compass: Compass
 }
 
+object Navigator {
+  @scala.inline
+  def apply(compass: Compass): Navigator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compass")(compass)
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

@@ -43,3 +43,26 @@ trait ASPxClientRibbonTab extends js.Object {
   def SetEnabled(enabled: scala.Boolean): scala.Unit
 }
 
+object ASPxClientRibbonTab {
+  @scala.inline
+  def apply(
+    GetEnabled: js.Function0[scala.Boolean],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    index: scala.Double,
+    name: java.lang.String,
+    ribbon: ASPxClientRibbon
+  ): ASPxClientRibbonTab = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetEnabled")(GetEnabled)
+    __obj.updateDynamic("GetText")(GetText)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("SetEnabled")(SetEnabled)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("ribbon")(ribbon)
+    __obj.asInstanceOf[ASPxClientRibbonTab]
+  }
+}
+

@@ -11,3 +11,13 @@ trait GeoJsonDefinitionGeneric[T] extends js.Object {
   var `type`: T
 }
 
+object GeoJsonDefinitionGeneric {
+  @scala.inline
+  def apply[T](content: T, name: T, `type`: T): GeoJsonDefinitionGeneric[T] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeoJsonDefinitionGeneric[T]]
+  }
+}
+

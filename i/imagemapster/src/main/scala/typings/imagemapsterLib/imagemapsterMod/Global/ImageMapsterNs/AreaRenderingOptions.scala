@@ -94,3 +94,64 @@ trait AreaRenderingOptions extends RenderingOptions {
   var toolTip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AreaRenderingOptions {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    altImage: java.lang.String = null,
+    altImageFill: js.UndefOr[scala.Boolean] = js.undefined,
+    altImageOpacity: scala.Int | scala.Double = null,
+    altImageStroke: js.UndefOr[scala.Boolean] = js.undefined,
+    fade: js.UndefOr[scala.Boolean] = js.undefined,
+    fadeDuration: scala.Int | scala.Double = null,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    fillColor: java.lang.String = null,
+    fillColorMask: java.lang.String = null,
+    fillOpacity: scala.Int | scala.Double = null,
+    highlight: js.UndefOr[scala.Boolean] = js.undefined,
+    includeKeys: java.lang.String = null,
+    isDeselectable: js.UndefOr[scala.Boolean] = js.undefined,
+    isMask: js.UndefOr[scala.Boolean] = js.undefined,
+    isSelectable: js.UndefOr[scala.Boolean] = js.undefined,
+    render_highlight: java.lang.String | RenderingOptions = null,
+    render_select: java.lang.String | RenderingOptions = null,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    singleSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    staticState: js.UndefOr[scala.Boolean] = js.undefined,
+    stroke: js.UndefOr[scala.Boolean] = js.undefined,
+    strokeColor: java.lang.String = null,
+    strokeOpacity: scala.Int | scala.Double = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    toolTip: java.lang.String = null
+  ): AreaRenderingOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (altImage != null) __obj.updateDynamic("altImage")(altImage)
+    if (!js.isUndefined(altImageFill)) __obj.updateDynamic("altImageFill")(altImageFill)
+    if (altImageOpacity != null) __obj.updateDynamic("altImageOpacity")(altImageOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(altImageStroke)) __obj.updateDynamic("altImageStroke")(altImageStroke)
+    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade)
+    if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillColorMask != null) __obj.updateDynamic("fillColorMask")(fillColorMask)
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (includeKeys != null) __obj.updateDynamic("includeKeys")(includeKeys)
+    if (!js.isUndefined(isDeselectable)) __obj.updateDynamic("isDeselectable")(isDeselectable)
+    if (!js.isUndefined(isMask)) __obj.updateDynamic("isMask")(isMask)
+    if (!js.isUndefined(isSelectable)) __obj.updateDynamic("isSelectable")(isSelectable)
+    if (render_highlight != null) __obj.updateDynamic("render_highlight")(render_highlight.asInstanceOf[js.Any])
+    if (render_select != null) __obj.updateDynamic("render_select")(render_select.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(singleSelect)) __obj.updateDynamic("singleSelect")(singleSelect)
+    if (!js.isUndefined(staticState)) __obj.updateDynamic("staticState")(staticState)
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    __obj.asInstanceOf[AreaRenderingOptions]
+  }
+}
+

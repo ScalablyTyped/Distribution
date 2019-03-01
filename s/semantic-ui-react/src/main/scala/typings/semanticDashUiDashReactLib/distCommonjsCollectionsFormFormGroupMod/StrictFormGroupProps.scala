@@ -24,3 +24,26 @@ trait StrictFormGroupProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictFormGroupProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    grouped: js.UndefOr[scala.Boolean] = js.undefined,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    unstackable: js.UndefOr[scala.Boolean] = js.undefined,
+    widths: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.equal = null
+  ): StrictFormGroupProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(grouped)) __obj.updateDynamic("grouped")(grouped)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (!js.isUndefined(unstackable)) __obj.updateDynamic("unstackable")(unstackable)
+    if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictFormGroupProps]
+  }
+}
+

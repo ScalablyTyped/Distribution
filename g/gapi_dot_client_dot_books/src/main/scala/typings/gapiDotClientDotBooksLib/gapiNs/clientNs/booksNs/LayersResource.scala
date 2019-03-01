@@ -14,3 +14,26 @@ trait LayersResource extends js.Object {
   def list(request: gapiDotClientDotBooksLib.Anon_AltContentVersionFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Layersummaries]
 }
 
+object LayersResource {
+  @scala.inline
+  def apply(
+    annotationData: AnnotationDataResource,
+    get: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltContentVersionFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Layersummary]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltContentVersionFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Layersummaries]
+    ],
+    volumeAnnotations: VolumeAnnotationsResource
+  ): LayersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotationData")(annotationData)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("volumeAnnotations")(volumeAnnotations)
+    __obj.asInstanceOf[LayersResource]
+  }
+}
+

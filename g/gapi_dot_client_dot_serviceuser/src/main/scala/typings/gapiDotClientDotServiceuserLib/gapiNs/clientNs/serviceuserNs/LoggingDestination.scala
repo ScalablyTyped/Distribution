@@ -20,3 +20,13 @@ trait LoggingDestination extends js.Object {
   var monitoredResource: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LoggingDestination {
+  @scala.inline
+  def apply(logs: js.Array[java.lang.String] = null, monitoredResource: java.lang.String = null): LoggingDestination = {
+    val __obj = js.Dynamic.literal()
+    if (logs != null) __obj.updateDynamic("logs")(logs)
+    if (monitoredResource != null) __obj.updateDynamic("monitoredResource")(monitoredResource)
+    __obj.asInstanceOf[LoggingDestination]
+  }
+}
+

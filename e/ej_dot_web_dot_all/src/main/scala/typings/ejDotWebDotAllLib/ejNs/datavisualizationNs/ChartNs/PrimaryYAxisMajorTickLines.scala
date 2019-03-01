@@ -20,3 +20,18 @@ trait PrimaryYAxisMajorTickLines extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PrimaryYAxisMajorTickLines {
+  @scala.inline
+  def apply(
+    size: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): PrimaryYAxisMajorTickLines = {
+    val __obj = js.Dynamic.literal()
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrimaryYAxisMajorTickLines]
+  }
+}
+

@@ -10,3 +10,12 @@ trait DataViewObjectWithId extends js.Object {
   var `object`: DataViewObject
 }
 
+object DataViewObjectWithId {
+  @scala.inline
+  def apply(id: java.lang.String, `object`: DataViewObject): DataViewObjectWithId = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[DataViewObjectWithId]
+  }
+}
+

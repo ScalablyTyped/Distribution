@@ -23,3 +23,36 @@ trait SyncConfiguration extends js.Object {
   var validate_ssl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SyncConfiguration {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    user: User,
+    _disableQueryBasedSyncUrlChecks: js.UndefOr[scala.Boolean] = js.undefined,
+    customQueryBasedSyncIdentifier: java.lang.String = null,
+    custom_http_headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    error: ErrorCallback = null,
+    fullSynchronization: js.UndefOr[scala.Boolean] = js.undefined,
+    open_ssl_verify_callback: SSLVerifyCallback = null,
+    partial: js.UndefOr[scala.Boolean] = js.undefined,
+    ssl: SSLConfiguration = null,
+    ssl_trust_certificate_path: java.lang.String = null,
+    validate_ssl: js.UndefOr[scala.Boolean] = js.undefined
+  ): SyncConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("user")(user)
+    if (!js.isUndefined(_disableQueryBasedSyncUrlChecks)) __obj.updateDynamic("_disableQueryBasedSyncUrlChecks")(_disableQueryBasedSyncUrlChecks)
+    if (customQueryBasedSyncIdentifier != null) __obj.updateDynamic("customQueryBasedSyncIdentifier")(customQueryBasedSyncIdentifier)
+    if (custom_http_headers != null) __obj.updateDynamic("custom_http_headers")(custom_http_headers)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(fullSynchronization)) __obj.updateDynamic("fullSynchronization")(fullSynchronization)
+    if (open_ssl_verify_callback != null) __obj.updateDynamic("open_ssl_verify_callback")(open_ssl_verify_callback)
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
+    if (ssl != null) __obj.updateDynamic("ssl")(ssl)
+    if (ssl_trust_certificate_path != null) __obj.updateDynamic("ssl_trust_certificate_path")(ssl_trust_certificate_path)
+    if (!js.isUndefined(validate_ssl)) __obj.updateDynamic("validate_ssl")(validate_ssl)
+    __obj.asInstanceOf[SyncConfiguration]
+  }
+}
+

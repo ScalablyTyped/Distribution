@@ -27,3 +27,26 @@ trait PageFootnoteInfo extends js.Object {
   var FootnoteTopDistance: scala.Double
 }
 
+object PageFootnoteInfo {
+  @scala.inline
+  def apply(
+    FootnoteBottomDistance: scala.Double,
+    FootnoteHeight: scala.Double,
+    FootnoteSeparatorLineAdjust: HorizontalAdjust,
+    FootnoteSeparatorLinePenWidth: scala.Double,
+    FootnoteSeparatorLineWidth: scala.Double,
+    FootnoteSeparatorLineWidthPercent: scala.Double,
+    FootnoteTopDistance: scala.Double
+  ): PageFootnoteInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FootnoteBottomDistance")(FootnoteBottomDistance)
+    __obj.updateDynamic("FootnoteHeight")(FootnoteHeight)
+    __obj.updateDynamic("FootnoteSeparatorLineAdjust")(FootnoteSeparatorLineAdjust)
+    __obj.updateDynamic("FootnoteSeparatorLinePenWidth")(FootnoteSeparatorLinePenWidth)
+    __obj.updateDynamic("FootnoteSeparatorLineWidth")(FootnoteSeparatorLineWidth)
+    __obj.updateDynamic("FootnoteSeparatorLineWidthPercent")(FootnoteSeparatorLineWidthPercent)
+    __obj.updateDynamic("FootnoteTopDistance")(FootnoteTopDistance)
+    __obj.asInstanceOf[PageFootnoteInfo]
+  }
+}
+

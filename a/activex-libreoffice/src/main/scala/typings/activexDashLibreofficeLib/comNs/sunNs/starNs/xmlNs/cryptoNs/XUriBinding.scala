@@ -26,3 +26,26 @@ trait XUriBinding
   def setUriBinding(uri: java.lang.String, InputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream): scala.Unit
 }
 
+object XUriBinding {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getUriBinding: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setUriBinding: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Unit
+    ]
+  ): XUriBinding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getUriBinding")(getUriBinding)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setUriBinding")(setUriBinding)
+    __obj.asInstanceOf[XUriBinding]
+  }
+}
+

@@ -14,3 +14,14 @@ trait PrinterInfo extends js.Object {
   var name: java.lang.String
 }
 
+object PrinterInfo {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, description: java.lang.String = null): PrinterInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[PrinterInfo]
+  }
+}
+

@@ -16,3 +16,28 @@ trait SyslogConfigSetColors extends AbstractConfigSetColors {
   var warning: java.lang.String | js.Array[java.lang.String]
 }
 
+object SyslogConfigSetColors {
+  @scala.inline
+  def apply(
+    alert: java.lang.String | js.Array[java.lang.String],
+    crit: java.lang.String | js.Array[java.lang.String],
+    debug: java.lang.String | js.Array[java.lang.String],
+    emerg: java.lang.String | js.Array[java.lang.String],
+    error: java.lang.String | js.Array[java.lang.String],
+    info: java.lang.String | js.Array[java.lang.String],
+    notice: java.lang.String | js.Array[java.lang.String],
+    warning: java.lang.String | js.Array[java.lang.String]
+  ): SyslogConfigSetColors = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
+    __obj.updateDynamic("crit")(crit.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    __obj.updateDynamic("emerg")(emerg.asInstanceOf[js.Any])
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    __obj.updateDynamic("notice")(notice.asInstanceOf[js.Any])
+    __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SyslogConfigSetColors]
+  }
+}
+

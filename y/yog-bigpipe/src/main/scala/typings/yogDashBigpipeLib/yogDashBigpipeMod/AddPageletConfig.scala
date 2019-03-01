@@ -11,3 +11,18 @@ trait AddPageletConfig extends js.Object {
   var mode: js.UndefOr[yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode] = js.undefined
 }
 
+object AddPageletConfig {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode = null
+  ): AddPageletConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[AddPageletConfig]
+  }
+}
+

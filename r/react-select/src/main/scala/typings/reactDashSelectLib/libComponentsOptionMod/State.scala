@@ -14,3 +14,14 @@ trait State extends js.Object {
   var isSelected: scala.Boolean
 }
 
+object State {
+  @scala.inline
+  def apply(isDisabled: scala.Boolean, isFocused: scala.Boolean, isSelected: scala.Boolean): State = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDisabled")(isDisabled)
+    __obj.updateDynamic("isFocused")(isFocused)
+    __obj.updateDynamic("isSelected")(isSelected)
+    __obj.asInstanceOf[State]
+  }
+}
+

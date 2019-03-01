@@ -32,3 +32,28 @@ trait KeyDownEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeyDownEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    isCommentEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    isEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    isSheetRename: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    sheetIndex: scala.Int | scala.Double = null,
+    target: stdLib.HTMLElement = null,
+    `type`: java.lang.String = null
+  ): KeyDownEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(isCommentEdit)) __obj.updateDynamic("isCommentEdit")(isCommentEdit)
+    if (!js.isUndefined(isEdit)) __obj.updateDynamic("isEdit")(isEdit)
+    if (!js.isUndefined(isSheetRename)) __obj.updateDynamic("isSheetRename")(isSheetRename)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (sheetIndex != null) __obj.updateDynamic("sheetIndex")(sheetIndex.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[KeyDownEventArgs]
+  }
+}
+

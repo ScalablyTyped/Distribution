@@ -10,3 +10,17 @@ trait MembershipResource extends js.Object {
   def get(request: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPagesize): gapiDotClientLib.gapiNs.clientNs.Request[Seriesmembership]
 }
 
+object MembershipResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPagesize, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Seriesmembership]
+    ]
+  ): MembershipResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[MembershipResource]
+  }
+}
+

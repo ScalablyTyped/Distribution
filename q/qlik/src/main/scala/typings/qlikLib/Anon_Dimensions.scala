@@ -13,3 +13,22 @@ trait Anon_Dimensions extends js.Object {
   var uses: qlikLib.qlikLibStrings.dimensions
 }
 
+object Anon_Dimensions {
+  @scala.inline
+  def apply(
+    uses: qlikLib.qlikLibStrings.dimensions,
+    items: org.scalablytyped.runtime.StringDictionary[qlikLib.qlikMod.CustomProperty] = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    ref: java.lang.String = null
+  ): Anon_Dimensions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("uses")(uses)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[Anon_Dimensions]
+  }
+}
+

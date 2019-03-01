@@ -16,3 +16,23 @@ trait XCachedContentResultSetStubFactory
   def createCachedContentResultSetStub(xSource: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet): activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
 }
 
+object XCachedContentResultSetStubFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createCachedContentResultSetStub: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCachedContentResultSetStubFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createCachedContentResultSetStub")(createCachedContentResultSetStub)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCachedContentResultSetStubFactory]
+  }
+}
+

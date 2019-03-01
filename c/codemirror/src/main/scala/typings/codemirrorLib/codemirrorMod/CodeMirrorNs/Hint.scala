@@ -20,3 +20,26 @@ trait Hint extends js.Object {
   var to: js.UndefOr[Position] = js.undefined
 }
 
+object Hint {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    className: java.lang.String = null,
+    displayText: java.lang.String = null,
+    from: Position = null,
+    hint: js.Function3[/* cm */ Editor, /* data */ Hints, /* cur */ Hint, scala.Unit] = null,
+    render: js.Function3[/* element */ stdLib.HTMLLIElement, /* data */ Hints, /* cur */ Hint, scala.Unit] = null,
+    to: Position = null
+  ): Hint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (displayText != null) __obj.updateDynamic("displayText")(displayText)
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (hint != null) __obj.updateDynamic("hint")(hint)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Hint]
+  }
+}
+

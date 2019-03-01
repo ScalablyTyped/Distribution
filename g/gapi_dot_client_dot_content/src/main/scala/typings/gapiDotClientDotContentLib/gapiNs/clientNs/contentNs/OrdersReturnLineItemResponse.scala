@@ -12,3 +12,13 @@ trait OrdersReturnLineItemResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OrdersReturnLineItemResponse {
+  @scala.inline
+  def apply(executionStatus: java.lang.String = null, kind: java.lang.String = null): OrdersReturnLineItemResponse = {
+    val __obj = js.Dynamic.literal()
+    if (executionStatus != null) __obj.updateDynamic("executionStatus")(executionStatus)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[OrdersReturnLineItemResponse]
+  }
+}
+

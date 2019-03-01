@@ -19,3 +19,12 @@ trait ScopeOptions extends js.Object {
   var method: java.lang.String | js.Array[_]
 }
 
+object ScopeOptions {
+  @scala.inline
+  def apply(method: java.lang.String | js.Array[_]): ScopeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScopeOptions]
+  }
+}
+

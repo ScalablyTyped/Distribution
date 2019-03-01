@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object cassandraDashDriverLibStrings {
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.caching
   
   @js.native
-  sealed trait keys_only extends js.Object
+  sealed trait keys_only
+    extends cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.caching
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.caching
   
   @js.native
-  sealed trait rows_only extends js.Object
+  sealed trait rows_only
+    extends cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.caching
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

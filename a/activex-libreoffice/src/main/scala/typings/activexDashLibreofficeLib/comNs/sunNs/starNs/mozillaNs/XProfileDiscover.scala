@@ -57,3 +57,34 @@ trait XProfileDiscover
   def isProfileLocked(product: MozillaProductType, profileName: java.lang.String): scala.Boolean
 }
 
+object XProfileDiscover {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDefaultProfile: js.Function1[MozillaProductType, java.lang.String],
+    getProfileCount: js.Function1[MozillaProductType, scala.Double],
+    getProfileExists: js.Function2[MozillaProductType, java.lang.String, scala.Boolean],
+    getProfileList: js.Function2[
+      MozillaProductType, 
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
+      scala.Double
+    ],
+    getProfilePath: js.Function2[MozillaProductType, java.lang.String, java.lang.String],
+    isProfileLocked: js.Function2[MozillaProductType, java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XProfileDiscover = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDefaultProfile")(getDefaultProfile)
+    __obj.updateDynamic("getProfileCount")(getProfileCount)
+    __obj.updateDynamic("getProfileExists")(getProfileExists)
+    __obj.updateDynamic("getProfileList")(getProfileList)
+    __obj.updateDynamic("getProfilePath")(getProfilePath)
+    __obj.updateDynamic("isProfileLocked")(isProfileLocked)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XProfileDiscover]
+  }
+}
+

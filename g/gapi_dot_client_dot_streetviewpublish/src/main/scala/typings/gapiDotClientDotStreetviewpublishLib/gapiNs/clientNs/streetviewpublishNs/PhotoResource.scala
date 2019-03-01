@@ -97,3 +97,37 @@ trait PhotoResource extends js.Object {
   def update(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Photo]
 }
 
+object PhotoResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Photo]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Photo]
+    ],
+    startUpload: js.Function1[
+      gapiDotClientDotStreetviewpublishLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UploadRef]
+    ],
+    update: js.Function1[
+      gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Photo]
+    ]
+  ): PhotoResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("startUpload")(startUpload)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[PhotoResource]
+  }
+}
+

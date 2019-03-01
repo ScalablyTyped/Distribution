@@ -19,3 +19,18 @@ trait SourceAndDestination extends js.Object {
   var source: js.UndefOr[GridRange] = js.undefined
 }
 
+object SourceAndDestination {
+  @scala.inline
+  def apply(
+    dimension: java.lang.String = null,
+    fillLength: scala.Int | scala.Double = null,
+    source: GridRange = null
+  ): SourceAndDestination = {
+    val __obj = js.Dynamic.literal()
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
+    if (fillLength != null) __obj.updateDynamic("fillLength")(fillLength.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[SourceAndDestination]
+  }
+}
+

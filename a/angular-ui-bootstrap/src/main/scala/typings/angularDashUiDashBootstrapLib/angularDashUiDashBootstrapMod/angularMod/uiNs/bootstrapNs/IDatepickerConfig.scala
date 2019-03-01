@@ -140,3 +140,56 @@ trait IDatepickerConfig extends js.Object {
   var yearRows: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IDatepickerConfig {
+  @scala.inline
+  def apply(
+    customClass: DatepickerCallback[java.lang.String] = null,
+    dateDisabled: DatepickerCallback[scala.Boolean] = null,
+    datepickerMode: DatepickerMode = null,
+    formatDay: java.lang.String = null,
+    formatDayHeader: java.lang.String = null,
+    formatDayTitle: java.lang.String = null,
+    formatMonth: java.lang.String = null,
+    formatMonthTitle: java.lang.String = null,
+    formatYear: java.lang.String = null,
+    initDate: js.Any = null,
+    maxDate: js.Any = null,
+    maxMode: java.lang.String = null,
+    minDate: js.Any = null,
+    minMode: java.lang.String = null,
+    monthColumns: scala.Int | scala.Double = null,
+    ngModelOptions: IDropdownConfigNgOptions = null,
+    shortcutPropagation: js.UndefOr[scala.Boolean] = js.undefined,
+    showWeeks: js.UndefOr[scala.Boolean] = js.undefined,
+    startingDay: scala.Int | scala.Double = null,
+    yearColumns: scala.Int | scala.Double = null,
+    yearRange: scala.Int | scala.Double = null,
+    yearRows: scala.Int | scala.Double = null
+  ): IDatepickerConfig = {
+    val __obj = js.Dynamic.literal()
+    if (customClass != null) __obj.updateDynamic("customClass")(customClass)
+    if (dateDisabled != null) __obj.updateDynamic("dateDisabled")(dateDisabled)
+    if (datepickerMode != null) __obj.updateDynamic("datepickerMode")(datepickerMode)
+    if (formatDay != null) __obj.updateDynamic("formatDay")(formatDay)
+    if (formatDayHeader != null) __obj.updateDynamic("formatDayHeader")(formatDayHeader)
+    if (formatDayTitle != null) __obj.updateDynamic("formatDayTitle")(formatDayTitle)
+    if (formatMonth != null) __obj.updateDynamic("formatMonth")(formatMonth)
+    if (formatMonthTitle != null) __obj.updateDynamic("formatMonthTitle")(formatMonthTitle)
+    if (formatYear != null) __obj.updateDynamic("formatYear")(formatYear)
+    if (initDate != null) __obj.updateDynamic("initDate")(initDate)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (maxMode != null) __obj.updateDynamic("maxMode")(maxMode)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (minMode != null) __obj.updateDynamic("minMode")(minMode)
+    if (monthColumns != null) __obj.updateDynamic("monthColumns")(monthColumns.asInstanceOf[js.Any])
+    if (ngModelOptions != null) __obj.updateDynamic("ngModelOptions")(ngModelOptions)
+    if (!js.isUndefined(shortcutPropagation)) __obj.updateDynamic("shortcutPropagation")(shortcutPropagation)
+    if (!js.isUndefined(showWeeks)) __obj.updateDynamic("showWeeks")(showWeeks)
+    if (startingDay != null) __obj.updateDynamic("startingDay")(startingDay.asInstanceOf[js.Any])
+    if (yearColumns != null) __obj.updateDynamic("yearColumns")(yearColumns.asInstanceOf[js.Any])
+    if (yearRange != null) __obj.updateDynamic("yearRange")(yearRange.asInstanceOf[js.Any])
+    if (yearRows != null) __obj.updateDynamic("yearRows")(yearRows.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDatepickerConfig]
+  }
+}
+

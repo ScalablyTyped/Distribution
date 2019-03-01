@@ -16,3 +16,20 @@ trait ChannelBrandingSettings extends js.Object {
   var watch: js.UndefOr[WatchSettings] = js.undefined
 }
 
+object ChannelBrandingSettings {
+  @scala.inline
+  def apply(
+    channel: ChannelSettings = null,
+    hints: js.Array[PropertyValue] = null,
+    image: ImageSettings = null,
+    watch: WatchSettings = null
+  ): ChannelBrandingSettings = {
+    val __obj = js.Dynamic.literal()
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (hints != null) __obj.updateDynamic("hints")(hints)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (watch != null) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[ChannelBrandingSettings]
+  }
+}
+

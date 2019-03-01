@@ -17,3 +17,28 @@ trait ojTagCloudItemSettableProperties
   var value: scala.Double | scala.Null
 }
 
+object ojTagCloudItemSettableProperties {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String],
+    label: java.lang.String,
+    shortDesc: java.lang.String,
+    svgClassName: java.lang.String,
+    svgStyle: js.Object,
+    url: java.lang.String,
+    color: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): ojTagCloudItemSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("categories")(categories)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("shortDesc")(shortDesc)
+    __obj.updateDynamic("svgClassName")(svgClassName)
+    __obj.updateDynamic("svgStyle")(svgStyle)
+    __obj.updateDynamic("url")(url)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ojTagCloudItemSettableProperties]
+  }
+}
+

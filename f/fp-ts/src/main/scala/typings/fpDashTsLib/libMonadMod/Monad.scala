@@ -9,3 +9,34 @@ trait Monad[F]
   extends fpDashTsLib.libApplicativeMod.Applicative[F]
      with fpDashTsLib.libChainMod.Chain[F]
 
+object Monad {
+  @scala.inline
+  def apply[F](
+    URI: F,
+    ap: js.Function2[
+      fpDashTsLib.libHKTMod.HKT[F, js.Function1[js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
+      fpDashTsLib.libHKTMod.HKT[F, js.Any]
+    ],
+    chain: js.Function2[
+      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[F, js.Any]], 
+      fpDashTsLib.libHKTMod.HKT[F, js.Any]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.HKT[F, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.HKT[F, js.Any]
+    ],
+    of: js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[F, js.Any]]
+  ): Monad[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("ap")(ap)
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("of")(of)
+    __obj.asInstanceOf[Monad[F]]
+  }
+}
+

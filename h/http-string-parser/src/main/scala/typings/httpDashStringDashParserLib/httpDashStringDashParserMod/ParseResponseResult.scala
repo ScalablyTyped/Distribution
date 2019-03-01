@@ -12,3 +12,20 @@ trait ParseResponseResult extends js.Object {
   var statusMessage: java.lang.String
 }
 
+object ParseResponseResult {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    statusCode: java.lang.String,
+    statusMessage: java.lang.String
+  ): ParseResponseResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.updateDynamic("statusMessage")(statusMessage)
+    __obj.asInstanceOf[ParseResponseResult]
+  }
+}
+

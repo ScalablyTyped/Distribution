@@ -12,3 +12,13 @@ trait RateOptions extends js.Object {
   var period: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RateOptions {
+  @scala.inline
+  def apply(limit: scala.Int | scala.Double = null, period: scala.Int | scala.Double = null): RateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RateOptions]
+  }
+}
+

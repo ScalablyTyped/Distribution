@@ -12,3 +12,13 @@ trait SetMasterAuthRequest extends js.Object {
   var update: js.UndefOr[MasterAuth] = js.undefined
 }
 
+object SetMasterAuthRequest {
+  @scala.inline
+  def apply(action: java.lang.String = null, update: MasterAuth = null): SetMasterAuthRequest = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[SetMasterAuthRequest]
+  }
+}
+

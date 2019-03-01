@@ -21,3 +21,24 @@ trait IStorageItemInformation extends js.Object {
   var videoProperties: winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.VideoProperties
 }
 
+object IStorageItemInformation {
+  @scala.inline
+  def apply(
+    basicProperties: winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.BasicProperties,
+    documentProperties: winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.DocumentProperties,
+    imageProperties: winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.ImageProperties,
+    musicProperties: winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.MusicProperties,
+    thumbnail: winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.StorageItemThumbnail,
+    videoProperties: winrtDashUwpLib.WindowsNs.StorageNs.FilePropertiesNs.VideoProperties
+  ): IStorageItemInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("basicProperties")(basicProperties)
+    __obj.updateDynamic("documentProperties")(documentProperties)
+    __obj.updateDynamic("imageProperties")(imageProperties)
+    __obj.updateDynamic("musicProperties")(musicProperties)
+    __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.updateDynamic("videoProperties")(videoProperties)
+    __obj.asInstanceOf[IStorageItemInformation]
+  }
+}
+

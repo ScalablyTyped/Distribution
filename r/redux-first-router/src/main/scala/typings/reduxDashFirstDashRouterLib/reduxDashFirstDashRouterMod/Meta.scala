@@ -13,3 +13,22 @@ trait Meta extends js.Object {
   var search: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Meta {
+  @scala.inline
+  def apply(
+    location: ActionMetaLocation,
+    navigation: NavigationAction = null,
+    notFoundPath: java.lang.String = null,
+    query: js.Object = null,
+    search: java.lang.String = null
+  ): Meta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location)
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
+    if (notFoundPath != null) __obj.updateDynamic("notFoundPath")(notFoundPath)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[Meta]
+  }
+}
+

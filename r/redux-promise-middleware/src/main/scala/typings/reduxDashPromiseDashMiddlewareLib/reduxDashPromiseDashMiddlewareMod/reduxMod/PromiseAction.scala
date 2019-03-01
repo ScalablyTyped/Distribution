@@ -10,3 +10,12 @@ trait PromiseAction[R]
   var payload: js.Promise[R]
 }
 
+object PromiseAction {
+  @scala.inline
+  def apply[R](payload: js.Promise[R], `type`: js.Any): PromiseAction[R] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("payload")(payload)
+    __obj.asInstanceOf[PromiseAction[R]]
+  }
+}
+

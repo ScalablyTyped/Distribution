@@ -129,3 +129,61 @@ trait IgGridFeatureChooserPopover
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object IgGridFeatureChooserPopover {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridFeatureChooserPopover
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animationDuration: scala.Int | scala.Double = null,
+    appendTo: java.lang.String | js.Object = null,
+    closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined,
+    containment: js.Any = null,
+    contentTemplate: java.lang.String | js.Function = null,
+    direction: java.lang.String = null,
+    directionPriority: js.Array[_] = null,
+    gridId: java.lang.String = null,
+    headerTemplate: IgPopoverHeaderTemplate = null,
+    height: scala.Double | java.lang.String = null,
+    hidden: HiddenEvent = null,
+    hiding: HidingEvent = null,
+    maxHeight: scala.Double | java.lang.String = null,
+    maxWidth: scala.Double | java.lang.String = null,
+    minWidth: scala.Double | java.lang.String = null,
+    position: java.lang.String = null,
+    selectors: java.lang.String = null,
+    showOn: java.lang.String = null,
+    showing: ShowingEvent = null,
+    shown: ShownEvent = null,
+    targetButton: js.Any = null,
+    width: scala.Double | java.lang.String = null
+  ): IgGridFeatureChooserPopover = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur)
+    if (containment != null) __obj.updateDynamic("containment")(containment)
+    if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (directionPriority != null) __obj.updateDynamic("directionPriority")(directionPriority)
+    if (gridId != null) __obj.updateDynamic("gridId")(gridId)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
+    if (hiding != null) __obj.updateDynamic("hiding")(hiding)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    if (showOn != null) __obj.updateDynamic("showOn")(showOn)
+    if (showing != null) __obj.updateDynamic("showing")(showing)
+    if (shown != null) __obj.updateDynamic("shown")(shown)
+    if (targetButton != null) __obj.updateDynamic("targetButton")(targetButton)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgGridFeatureChooserPopover]
+  }
+}
+

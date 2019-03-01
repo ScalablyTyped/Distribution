@@ -24,3 +24,13 @@ trait XShapes2 extends js.Object {
   def addTop(xShape: XShape): scala.Unit
 }
 
+object XShapes2 {
+  @scala.inline
+  def apply(addBottom: js.Function1[XShape, scala.Unit], addTop: js.Function1[XShape, scala.Unit]): XShapes2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addBottom")(addBottom)
+    __obj.updateDynamic("addTop")(addTop)
+    __obj.asInstanceOf[XShapes2]
+  }
+}
+

@@ -253,3 +253,108 @@ trait JQuerySlickOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object JQuerySlickOptions {
+  @scala.inline
+  def apply(
+    accessibility: js.UndefOr[scala.Boolean] = js.undefined,
+    adaptiveHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    appendArrows: stdLib.Element | js.Array[stdLib.Element] | JQuery | java.lang.String | scala.Boolean = null,
+    appendDots: stdLib.Element | js.Array[stdLib.Element] | JQuery | java.lang.String = null,
+    arrows: js.UndefOr[scala.Boolean] = js.undefined,
+    asNavFor: stdLib.Element | JQuery | java.lang.String = null,
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplaySpeed: scala.Int | scala.Double = null,
+    centerMode: js.UndefOr[scala.Boolean] = js.undefined,
+    centerPadding: java.lang.String = null,
+    cssEase: java.lang.String = null,
+    customPaging: js.Function2[/* slider */ js.Any, /* i */ scala.Double, java.lang.String] = null,
+    dots: js.UndefOr[scala.Boolean] = js.undefined,
+    dotsClass: java.lang.String = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    easing: java.lang.String = null,
+    edgeFriction: scala.Int | scala.Double = null,
+    fade: js.UndefOr[scala.Boolean] = js.undefined,
+    focusOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    infinite: js.UndefOr[scala.Boolean] = js.undefined,
+    initialSlide: scala.Int | scala.Double = null,
+    lazyLoad: java.lang.String = null,
+    mobileFirst: js.UndefOr[scala.Boolean] = js.undefined,
+    nextArrow: stdLib.Element | JQuery | java.lang.String = null,
+    pauseOnDotsHover: js.UndefOr[scala.Boolean] = js.undefined,
+    pauseOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    prevArrow: stdLib.Element | JQuery | java.lang.String = null,
+    respondTo: java.lang.String = null,
+    responsive: js.Object = null,
+    rows: scala.Int | scala.Double = null,
+    rtl: js.UndefOr[scala.Boolean] = js.undefined,
+    slide: java.lang.String = null,
+    slidesPerRow: scala.Int | scala.Double = null,
+    slidesToScroll: scala.Int | scala.Double = null,
+    slidesToShow: scala.Int | scala.Double = null,
+    speed: scala.Int | scala.Double = null,
+    swipe: js.UndefOr[scala.Boolean] = js.undefined,
+    swipeToSlide: js.UndefOr[scala.Boolean] = js.undefined,
+    touchMove: js.UndefOr[scala.Boolean] = js.undefined,
+    touchThreshold: scala.Int | scala.Double = null,
+    useCSS: js.UndefOr[scala.Boolean] = js.undefined,
+    useTransform: js.UndefOr[scala.Boolean] = js.undefined,
+    variableWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalSwiping: js.UndefOr[scala.Boolean] = js.undefined,
+    waitForAnimate: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): JQuerySlickOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(accessibility)) __obj.updateDynamic("accessibility")(accessibility)
+    if (!js.isUndefined(adaptiveHeight)) __obj.updateDynamic("adaptiveHeight")(adaptiveHeight)
+    if (appendArrows != null) __obj.updateDynamic("appendArrows")(appendArrows.asInstanceOf[js.Any])
+    if (appendDots != null) __obj.updateDynamic("appendDots")(appendDots.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows)
+    if (asNavFor != null) __obj.updateDynamic("asNavFor")(asNavFor.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (autoplaySpeed != null) __obj.updateDynamic("autoplaySpeed")(autoplaySpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(centerMode)) __obj.updateDynamic("centerMode")(centerMode)
+    if (centerPadding != null) __obj.updateDynamic("centerPadding")(centerPadding)
+    if (cssEase != null) __obj.updateDynamic("cssEase")(cssEase)
+    if (customPaging != null) __obj.updateDynamic("customPaging")(customPaging)
+    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots)
+    if (dotsClass != null) __obj.updateDynamic("dotsClass")(dotsClass)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (edgeFriction != null) __obj.updateDynamic("edgeFriction")(edgeFriction.asInstanceOf[js.Any])
+    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade)
+    if (!js.isUndefined(focusOnSelect)) __obj.updateDynamic("focusOnSelect")(focusOnSelect)
+    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
+    if (initialSlide != null) __obj.updateDynamic("initialSlide")(initialSlide.asInstanceOf[js.Any])
+    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad)
+    if (!js.isUndefined(mobileFirst)) __obj.updateDynamic("mobileFirst")(mobileFirst)
+    if (nextArrow != null) __obj.updateDynamic("nextArrow")(nextArrow.asInstanceOf[js.Any])
+    if (!js.isUndefined(pauseOnDotsHover)) __obj.updateDynamic("pauseOnDotsHover")(pauseOnDotsHover)
+    if (!js.isUndefined(pauseOnFocus)) __obj.updateDynamic("pauseOnFocus")(pauseOnFocus)
+    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover)
+    if (prevArrow != null) __obj.updateDynamic("prevArrow")(prevArrow.asInstanceOf[js.Any])
+    if (respondTo != null) __obj.updateDynamic("respondTo")(respondTo)
+    if (responsive != null) __obj.updateDynamic("responsive")(responsive)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
+    if (slide != null) __obj.updateDynamic("slide")(slide)
+    if (slidesPerRow != null) __obj.updateDynamic("slidesPerRow")(slidesPerRow.asInstanceOf[js.Any])
+    if (slidesToScroll != null) __obj.updateDynamic("slidesToScroll")(slidesToScroll.asInstanceOf[js.Any])
+    if (slidesToShow != null) __obj.updateDynamic("slidesToShow")(slidesToShow.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(swipe)) __obj.updateDynamic("swipe")(swipe)
+    if (!js.isUndefined(swipeToSlide)) __obj.updateDynamic("swipeToSlide")(swipeToSlide)
+    if (!js.isUndefined(touchMove)) __obj.updateDynamic("touchMove")(touchMove)
+    if (touchThreshold != null) __obj.updateDynamic("touchThreshold")(touchThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCSS)) __obj.updateDynamic("useCSS")(useCSS)
+    if (!js.isUndefined(useTransform)) __obj.updateDynamic("useTransform")(useTransform)
+    if (!js.isUndefined(variableWidth)) __obj.updateDynamic("variableWidth")(variableWidth)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (!js.isUndefined(verticalSwiping)) __obj.updateDynamic("verticalSwiping")(verticalSwiping)
+    if (!js.isUndefined(waitForAnimate)) __obj.updateDynamic("waitForAnimate")(waitForAnimate)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuerySlickOptions]
+  }
+}
+

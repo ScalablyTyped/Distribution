@@ -29,3 +29,13 @@ trait ReportRequest extends js.Object {
   var serviceConfigId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReportRequest {
+  @scala.inline
+  def apply(operations: js.Array[Operation] = null, serviceConfigId: java.lang.String = null): ReportRequest = {
+    val __obj = js.Dynamic.literal()
+    if (operations != null) __obj.updateDynamic("operations")(operations)
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    __obj.asInstanceOf[ReportRequest]
+  }
+}
+

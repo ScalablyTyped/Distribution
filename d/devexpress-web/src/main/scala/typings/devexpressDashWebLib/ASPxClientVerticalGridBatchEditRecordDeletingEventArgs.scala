@@ -21,3 +21,14 @@ trait ASPxClientVerticalGridBatchEditRecordDeletingEventArgs extends ASPxClientC
   var visibleIndex: scala.Double
 }
 
+object ASPxClientVerticalGridBatchEditRecordDeletingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, recordValues: js.Object, visibleIndex: scala.Double): ASPxClientVerticalGridBatchEditRecordDeletingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("recordValues")(recordValues)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordDeletingEventArgs]
+  }
+}
+

@@ -12,3 +12,12 @@ trait StepOptions extends js.Object {
   var active: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StepOptions {
+  @scala.inline
+  def apply(active: scala.Int | scala.Double = null): StepOptions = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StepOptions]
+  }
+}
+

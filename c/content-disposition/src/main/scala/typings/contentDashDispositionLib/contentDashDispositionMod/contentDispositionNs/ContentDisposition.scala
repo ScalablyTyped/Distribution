@@ -10,3 +10,12 @@ trait ContentDisposition extends js.Object {
   var `type`: java.lang.String
 }
 
+object ContentDisposition {
+  @scala.inline
+  def apply(parameters: js.Any, `type`: java.lang.String): ContentDisposition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("parameters")(parameters)
+    __obj.asInstanceOf[ContentDisposition]
+  }
+}
+

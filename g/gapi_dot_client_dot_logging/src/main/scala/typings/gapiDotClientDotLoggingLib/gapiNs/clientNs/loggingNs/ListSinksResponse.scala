@@ -15,3 +15,13 @@ trait ListSinksResponse extends js.Object {
   var sinks: js.UndefOr[js.Array[LogSink]] = js.undefined
 }
 
+object ListSinksResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, sinks: js.Array[LogSink] = null): ListSinksResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (sinks != null) __obj.updateDynamic("sinks")(sinks)
+    __obj.asInstanceOf[ListSinksResponse]
+  }
+}
+

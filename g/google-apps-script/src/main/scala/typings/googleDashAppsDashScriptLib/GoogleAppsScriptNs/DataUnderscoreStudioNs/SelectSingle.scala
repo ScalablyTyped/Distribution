@@ -13,3 +13,22 @@ trait SelectSingle extends js.Object {
   def setName(name: java.lang.String): SelectSingle
 }
 
+object SelectSingle {
+  @scala.inline
+  def apply(
+    addOption: js.Function1[OptionBuilder, SelectSingle],
+    setAllowOverride: js.Function1[scala.Boolean, SelectSingle],
+    setHelpText: js.Function1[java.lang.String, SelectSingle],
+    setId: js.Function1[java.lang.String, SelectSingle],
+    setName: js.Function1[java.lang.String, SelectSingle]
+  ): SelectSingle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addOption")(addOption)
+    __obj.updateDynamic("setAllowOverride")(setAllowOverride)
+    __obj.updateDynamic("setHelpText")(setHelpText)
+    __obj.updateDynamic("setId")(setId)
+    __obj.updateDynamic("setName")(setName)
+    __obj.asInstanceOf[SelectSingle]
+  }
+}
+

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.maps.LatLng")
 @js.native
-class LatLng protected () extends js.Object {
+class LatLng protected ()
+  extends googlemapsLib.googleNs.mapsNs.placesNs._LocationBias {
   /**
     * Creates a LatLng object representing a geographic point.
     * Note the ordering of latitude and longitude.

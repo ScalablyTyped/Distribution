@@ -12,3 +12,20 @@ trait Anon_BackgroundColor extends js.Object {
   var rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on
 }
 
+object Anon_BackgroundColor {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    borderColor: java.lang.String,
+    borderWidth: scala.Double,
+    rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on
+  ): Anon_BackgroundColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("borderColor")(borderColor)
+    __obj.updateDynamic("borderWidth")(borderWidth)
+    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BackgroundColor]
+  }
+}
+

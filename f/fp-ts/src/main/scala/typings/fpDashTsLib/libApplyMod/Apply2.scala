@@ -13,3 +13,26 @@ trait Apply2[F /* <: fpDashTsLib.libHKTMod.URIS2 */]
   ): fpDashTsLib.libHKTMod.Type2[F, L, B]
 }
 
+object Apply2 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */](
+    URI: F,
+    ap: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Function1[js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]
+    ]
+  ): Apply2[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("ap")(ap)
+    __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[Apply2[F]]
+  }
+}
+

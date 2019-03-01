@@ -10,3 +10,17 @@ trait AuthorizedDomainsResource extends js.Object {
   def list(request: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListAuthorizedDomainsResponse]
 }
 
+object AuthorizedDomainsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAuthorizedDomainsResponse]
+    ]
+  ): AuthorizedDomainsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AuthorizedDomainsResource]
+  }
+}
+

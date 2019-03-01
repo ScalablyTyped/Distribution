@@ -17,3 +17,18 @@ trait Zoom extends js.Object {
   var zoomFactor: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Zoom {
+  @scala.inline
+  def apply(
+    focusPoint: ConnectorsSourcePoint = null,
+    zoomCommand: ZoomCommand = null,
+    zoomFactor: scala.Int | scala.Double = null
+  ): Zoom = {
+    val __obj = js.Dynamic.literal()
+    if (focusPoint != null) __obj.updateDynamic("focusPoint")(focusPoint)
+    if (zoomCommand != null) __obj.updateDynamic("zoomCommand")(zoomCommand)
+    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Zoom]
+  }
+}
+

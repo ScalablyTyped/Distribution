@@ -36,3 +36,20 @@ trait GqlQuery extends js.Object {
   var queryString: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GqlQuery {
+  @scala.inline
+  def apply(
+    allowLiterals: js.UndefOr[scala.Boolean] = js.undefined,
+    namedBindings: stdLib.Record[java.lang.String, GqlQueryParameter] = null,
+    positionalBindings: js.Array[GqlQueryParameter] = null,
+    queryString: java.lang.String = null
+  ): GqlQuery = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowLiterals)) __obj.updateDynamic("allowLiterals")(allowLiterals)
+    if (namedBindings != null) __obj.updateDynamic("namedBindings")(namedBindings)
+    if (positionalBindings != null) __obj.updateDynamic("positionalBindings")(positionalBindings)
+    if (queryString != null) __obj.updateDynamic("queryString")(queryString)
+    __obj.asInstanceOf[GqlQuery]
+  }
+}
+

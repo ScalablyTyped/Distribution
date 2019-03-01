@@ -31,3 +31,24 @@ trait CrosshairTrackballTooltipSettings extends js.Object {
   var ry: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CrosshairTrackballTooltipSettings {
+  @scala.inline
+  def apply(
+    border: CrosshairTrackballTooltipSettingsBorder = null,
+    fill: java.lang.String = null,
+    mode: CrosshairMode | java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    rx: scala.Int | scala.Double = null,
+    ry: scala.Int | scala.Double = null
+  ): CrosshairTrackballTooltipSettings = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
+    if (ry != null) __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CrosshairTrackballTooltipSettings]
+  }
+}
+

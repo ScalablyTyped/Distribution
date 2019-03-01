@@ -9,3 +9,12 @@ trait BackButtonProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object BackButtonProps {
+  @scala.inline
+  def apply(children: reactLib.reactMod.ReactNs.ReactNode = null): BackButtonProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackButtonProps]
+  }
+}
+

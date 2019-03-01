@@ -13,3 +13,20 @@ trait Option extends js.Object {
   var value: js.Any
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    value: js.Any,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[Option]
+  }
+}
+

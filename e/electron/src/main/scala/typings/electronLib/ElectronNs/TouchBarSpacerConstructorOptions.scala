@@ -14,3 +14,14 @@ trait TouchBarSpacerConstructorOptions extends js.Object {
   ] = js.undefined
 }
 
+object TouchBarSpacerConstructorOptions {
+  @scala.inline
+  def apply(
+    size: electronLib.electronLibStrings.small | electronLib.electronLibStrings.large | electronLib.electronLibStrings.flexible = null
+  ): TouchBarSpacerConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TouchBarSpacerConstructorOptions]
+  }
+}
+

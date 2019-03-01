@@ -13,3 +13,22 @@ trait JQueryFileUploadChangeObject extends js.Object {
   var originalFiles: js.Array[stdLib.File]
 }
 
+object JQueryFileUploadChangeObject {
+  @scala.inline
+  def apply(
+    files: js.Array[stdLib.File],
+    originalFiles: js.Array[stdLib.File],
+    fileInput: JQuery = null,
+    fileInputClone: JQuery = null,
+    form: JQuery = null
+  ): JQueryFileUploadChangeObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("files")(files)
+    __obj.updateDynamic("originalFiles")(originalFiles)
+    if (fileInput != null) __obj.updateDynamic("fileInput")(fileInput)
+    if (fileInputClone != null) __obj.updateDynamic("fileInputClone")(fileInputClone)
+    if (form != null) __obj.updateDynamic("form")(form)
+    __obj.asInstanceOf[JQueryFileUploadChangeObject]
+  }
+}
+

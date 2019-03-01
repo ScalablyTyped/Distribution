@@ -16,3 +16,13 @@ trait SandboxConfig extends js.Object {
   var properties: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object SandboxConfig {
+  @scala.inline
+  def apply(injectInto: js.Any = null, properties: js.Array[java.lang.String] = null): SandboxConfig = {
+    val __obj = js.Dynamic.literal()
+    if (injectInto != null) __obj.updateDynamic("injectInto")(injectInto)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[SandboxConfig]
+  }
+}
+

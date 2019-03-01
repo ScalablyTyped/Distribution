@@ -286,3 +286,99 @@ trait IgValidator
   var valueRange: js.UndefOr[js.Array[_] | js.Object] = js.undefined
 }
 
+object IgValidator {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igValidator
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    creditCard: scala.Boolean | js.Object = null,
+    custom: js.Function | java.lang.String | js.Object = null,
+    date: scala.Boolean | js.Object = null,
+    email: scala.Boolean | js.Object = null,
+    equalTo: java.lang.String | js.Object = null,
+    error: ErrorEvent = null,
+    errorHidden: ErrorHiddenEvent = null,
+    errorHiding: ErrorHidingEvent = null,
+    errorMessage: java.lang.String = null,
+    errorShowing: ErrorShowingEvent = null,
+    errorShown: ErrorShownEvent = null,
+    executeAllRules: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: js.Array[IgValidatorField] = null,
+    formError: FormErrorEvent = null,
+    formSuccess: FormSuccessEvent = null,
+    formValidated: FormValidatedEvent = null,
+    formValidating: FormValidatingEvent = null,
+    language: java.lang.String = null,
+    lengthRange: js.Array[_] | js.Object = null,
+    locale: js.Any = null,
+    messageTarget: stdLib.Element = null,
+    notificationOptions: js.Any = null,
+    number: scala.Boolean | js.Object = null,
+    onblur: js.UndefOr[scala.Boolean] = js.undefined,
+    onchange: js.UndefOr[scala.Boolean] = js.undefined,
+    onsubmit: js.UndefOr[scala.Boolean] = js.undefined,
+    optionalIndication: js.UndefOr[scala.Boolean] = js.undefined,
+    pattern: java.lang.String | js.Object = null,
+    regional: java.lang.String | js.Object = null,
+    required: scala.Boolean | js.Object = null,
+    requiredIndication: js.UndefOr[scala.Boolean] = js.undefined,
+    success: SuccessEvent = null,
+    successHidden: SuccessHiddenEvent = null,
+    successHiding: SuccessHidingEvent = null,
+    successMessage: java.lang.String = null,
+    successShowing: SuccessShowingEvent = null,
+    successShown: SuccessShownEvent = null,
+    threshold: scala.Int | scala.Double = null,
+    validated: ValidatedEvent = null,
+    validating: ValidatingEvent = null,
+    valueRange: js.Array[_] | js.Object = null
+  ): IgValidator = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (creditCard != null) __obj.updateDynamic("creditCard")(creditCard.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (equalTo != null) __obj.updateDynamic("equalTo")(equalTo.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (errorHidden != null) __obj.updateDynamic("errorHidden")(errorHidden)
+    if (errorHiding != null) __obj.updateDynamic("errorHiding")(errorHiding)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (errorShowing != null) __obj.updateDynamic("errorShowing")(errorShowing)
+    if (errorShown != null) __obj.updateDynamic("errorShown")(errorShown)
+    if (!js.isUndefined(executeAllRules)) __obj.updateDynamic("executeAllRules")(executeAllRules)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (formError != null) __obj.updateDynamic("formError")(formError)
+    if (formSuccess != null) __obj.updateDynamic("formSuccess")(formSuccess)
+    if (formValidated != null) __obj.updateDynamic("formValidated")(formValidated)
+    if (formValidating != null) __obj.updateDynamic("formValidating")(formValidating)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (lengthRange != null) __obj.updateDynamic("lengthRange")(lengthRange.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (messageTarget != null) __obj.updateDynamic("messageTarget")(messageTarget)
+    if (notificationOptions != null) __obj.updateDynamic("notificationOptions")(notificationOptions)
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (!js.isUndefined(onblur)) __obj.updateDynamic("onblur")(onblur)
+    if (!js.isUndefined(onchange)) __obj.updateDynamic("onchange")(onchange)
+    if (!js.isUndefined(onsubmit)) __obj.updateDynamic("onsubmit")(onsubmit)
+    if (!js.isUndefined(optionalIndication)) __obj.updateDynamic("optionalIndication")(optionalIndication)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (!js.isUndefined(requiredIndication)) __obj.updateDynamic("requiredIndication")(requiredIndication)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (successHidden != null) __obj.updateDynamic("successHidden")(successHidden)
+    if (successHiding != null) __obj.updateDynamic("successHiding")(successHiding)
+    if (successMessage != null) __obj.updateDynamic("successMessage")(successMessage)
+    if (successShowing != null) __obj.updateDynamic("successShowing")(successShowing)
+    if (successShown != null) __obj.updateDynamic("successShown")(successShown)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    if (validated != null) __obj.updateDynamic("validated")(validated)
+    if (validating != null) __obj.updateDynamic("validating")(validating)
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgValidator]
+  }
+}
+

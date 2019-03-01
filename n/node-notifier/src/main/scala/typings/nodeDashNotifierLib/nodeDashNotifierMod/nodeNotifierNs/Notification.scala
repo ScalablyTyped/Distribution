@@ -17,3 +17,22 @@ trait Notification extends js.Object {
   var wait_FNotification: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Notification {
+  @scala.inline
+  def apply(
+    icon: java.lang.String = null,
+    message: java.lang.String = null,
+    sound: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    wait: js.UndefOr[scala.Boolean] = js.undefined
+  ): Notification = {
+    val __obj = js.Dynamic.literal()
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
+    __obj.asInstanceOf[Notification]
+  }
+}
+

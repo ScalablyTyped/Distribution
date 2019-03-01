@@ -12,3 +12,20 @@ trait AuthCode extends js.Object {
   var userId: java.lang.String
 }
 
+object AuthCode {
+  @scala.inline
+  def apply(
+    authCode: java.lang.String,
+    clientId: java.lang.String,
+    expires: stdLib.Date,
+    userId: java.lang.String
+  ): AuthCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authCode")(authCode)
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("expires")(expires)
+    __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[AuthCode]
+  }
+}
+

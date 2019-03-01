@@ -7,211 +7,279 @@ import scala.scalajs.js.annotation._
 
 object nodeDashRsaLibStrings {
   @js.native
-  sealed trait ascii extends js.Object
+  sealed trait ascii
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Encoding
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Encoding
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Encoding
   
   @js.native
   sealed trait browser extends js.Object
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait buffer
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Encoding
   
   @js.native
-  sealed trait components extends js.Object
+  sealed trait components
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-der` extends js.Object
+  sealed trait `components-der`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-pem` extends js.Object
+  sealed trait `components-pem`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-private` extends js.Object
+  sealed trait `components-private`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-private-der` extends js.Object
+  sealed trait `components-private-der`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-private-pem` extends js.Object
+  sealed trait `components-private-pem`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPrivate
   
   @js.native
-  sealed trait `components-public` extends js.Object
+  sealed trait `components-public`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPublic
   
   @js.native
-  sealed trait `components-public-der` extends js.Object
+  sealed trait `components-public-der`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPublic
   
   @js.native
-  sealed trait `components-public-pem` extends js.Object
+  sealed trait `components-public-pem`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPublic
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Encoding
   
   @js.native
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait latin1 extends js.Object
+  sealed trait latin1
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Encoding
   
   @js.native
-  sealed trait md4 extends js.Object
+  sealed trait md4
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.HashingAlgorithm
   
   @js.native
-  sealed trait md5 extends js.Object
+  sealed trait md5
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.HashingAlgorithm
   
   @js.native
   sealed trait node extends js.Object
   
   @js.native
-  sealed trait pkcs1 extends js.Object
+  sealed trait pkcs1
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
+       with nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.EncryptionScheme
+       with nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningScheme
   
   @js.native
-  sealed trait `pkcs1-der` extends js.Object
+  sealed trait `pkcs1-der`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatDer
   
   @js.native
-  sealed trait `pkcs1-md4` extends js.Object
+  sealed trait `pkcs1-md4`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pkcs1-md5` extends js.Object
+  sealed trait `pkcs1-md5`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pkcs1-pem` extends js.Object
+  sealed trait `pkcs1-pem`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs1-private` extends js.Object
+  sealed trait `pkcs1-private`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs1-private-der` extends js.Object
+  sealed trait `pkcs1-private-der`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatDer
   
   @js.native
-  sealed trait `pkcs1-private-pem` extends js.Object
+  sealed trait `pkcs1-private-pem`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs1-public` extends js.Object
+  sealed trait `pkcs1-public`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs1-public-der` extends js.Object
+  sealed trait `pkcs1-public-der`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatDer
   
   @js.native
-  sealed trait `pkcs1-public-pem` extends js.Object
+  sealed trait `pkcs1-public-pem`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs1-ripemd160` extends js.Object
+  sealed trait `pkcs1-ripemd160`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pkcs1-sha` extends js.Object
+  sealed trait `pkcs1-sha`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pkcs1-sha1` extends js.Object
+  sealed trait `pkcs1-sha1`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pkcs1-sha224` extends js.Object
+  sealed trait `pkcs1-sha224`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pkcs1-sha256` extends js.Object
+  sealed trait `pkcs1-sha256`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pkcs1-sha384` extends js.Object
+  sealed trait `pkcs1-sha384`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pkcs1-sha512` extends js.Object
+  sealed trait `pkcs1-sha512`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait pkcs1_oaep extends js.Object
+  sealed trait pkcs1_oaep
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.EncryptionScheme
   
   @js.native
-  sealed trait pkcs8 extends js.Object
+  sealed trait pkcs8
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs8-der` extends js.Object
+  sealed trait `pkcs8-der`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatDer
   
   @js.native
-  sealed trait `pkcs8-pem` extends js.Object
+  sealed trait `pkcs8-pem`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs8-private` extends js.Object
+  sealed trait `pkcs8-private`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs8-private-der` extends js.Object
+  sealed trait `pkcs8-private-der`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatDer
   
   @js.native
-  sealed trait `pkcs8-private-pem` extends js.Object
+  sealed trait `pkcs8-private-pem`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs8-public` extends js.Object
+  sealed trait `pkcs8-public`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `pkcs8-public-der` extends js.Object
+  sealed trait `pkcs8-public-der`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatDer
   
   @js.native
-  sealed trait `pkcs8-public-pem` extends js.Object
+  sealed trait `pkcs8-public-pem`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait `private`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait pss extends js.Object
+  sealed trait pss
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningScheme
   
   @js.native
-  sealed trait `pss-md4` extends js.Object
+  sealed trait `pss-md4`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pss-md5` extends js.Object
+  sealed trait `pss-md5`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pss-ripemd160` extends js.Object
+  sealed trait `pss-ripemd160`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pss-sha` extends js.Object
+  sealed trait `pss-sha`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pss-sha1` extends js.Object
+  sealed trait `pss-sha1`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pss-sha224` extends js.Object
+  sealed trait `pss-sha224`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pss-sha256` extends js.Object
+  sealed trait `pss-sha256`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pss-sha384` extends js.Object
+  sealed trait `pss-sha384`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait `pss-sha512` extends js.Object
+  sealed trait `pss-sha512`
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.SigningSchemeHash
   
   @js.native
-  sealed trait public extends js.Object
+  sealed trait public
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem
   
   @js.native
-  sealed trait ripemd160 extends js.Object
+  sealed trait ripemd160
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.HashingAlgorithm
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait sha1
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.HashingAlgorithm
   
   @js.native
-  sealed trait sha224 extends js.Object
+  sealed trait sha224
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.HashingAlgorithm
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait sha256
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.HashingAlgorithm
   
   @js.native
-  sealed trait sha384 extends js.Object
+  sealed trait sha384
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.HashingAlgorithm
   
   @js.native
-  sealed trait sha512 extends js.Object
+  sealed trait sha512
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.HashingAlgorithm
   
   @js.native
-  sealed trait ucs2 extends js.Object
+  sealed trait ucs2
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Encoding
   
   @js.native
-  sealed trait utf16le extends js.Object
+  sealed trait utf16le
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Encoding
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.Encoding
   
   @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]

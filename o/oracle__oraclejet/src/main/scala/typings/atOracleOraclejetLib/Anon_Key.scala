@@ -12,3 +12,20 @@ trait Anon_Key
   var value: js.Any
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    previousValue: js.Any,
+    value: js.Any,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("previousValue")(previousValue)
+    __obj.updateDynamic("value")(value)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

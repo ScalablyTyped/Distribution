@@ -10,3 +10,13 @@ trait SjclECCPublicKeyData extends js.Object {
   var y: BitArray
 }
 
+object SjclECCPublicKeyData {
+  @scala.inline
+  def apply(x: BitArray, y: BitArray): SjclECCPublicKeyData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[SjclECCPublicKeyData]
+  }
+}
+

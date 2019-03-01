@@ -71,3 +71,54 @@ trait StructureMapGroupRuleTarget extends BackboneElement {
   var variable: js.UndefOr[id] = js.undefined
 }
 
+object StructureMapGroupRuleTarget {
+  @scala.inline
+  def apply(
+    _context: Element = null,
+    _contextType: Element = null,
+    _element: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _listMode: js.Array[Element] = null,
+    _listRuleId: Element = null,
+    _transform: Element = null,
+    _variable: Element = null,
+    context: id = null,
+    contextType: code = null,
+    element: java.lang.String = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    listMode: js.Array[code] = null,
+    listRuleId: id = null,
+    modifierExtension: js.Array[Extension] = null,
+    parameter: js.Array[StructureMapGroupRuleTargetParameter] = null,
+    transform: code = null,
+    variable: id = null
+  ): StructureMapGroupRuleTarget = {
+    val __obj = js.Dynamic.literal()
+    if (_context != null) __obj.updateDynamic("_context")(_context)
+    if (_contextType != null) __obj.updateDynamic("_contextType")(_contextType)
+    if (_element != null) __obj.updateDynamic("_element")(_element)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_listMode != null) __obj.updateDynamic("_listMode")(_listMode)
+    if (_listRuleId != null) __obj.updateDynamic("_listRuleId")(_listRuleId)
+    if (_transform != null) __obj.updateDynamic("_transform")(_transform)
+    if (_variable != null) __obj.updateDynamic("_variable")(_variable)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (contextType != null) __obj.updateDynamic("contextType")(contextType)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listRuleId != null) __obj.updateDynamic("listRuleId")(listRuleId)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (variable != null) __obj.updateDynamic("variable")(variable)
+    __obj.asInstanceOf[StructureMapGroupRuleTarget]
+  }
+}
+

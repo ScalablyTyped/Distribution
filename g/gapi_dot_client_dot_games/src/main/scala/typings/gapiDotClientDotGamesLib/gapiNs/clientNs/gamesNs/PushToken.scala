@@ -20,3 +20,20 @@ trait PushToken extends js.Object {
   var language: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PushToken {
+  @scala.inline
+  def apply(
+    clientRevision: java.lang.String = null,
+    id: PushTokenId = null,
+    kind: java.lang.String = null,
+    language: java.lang.String = null
+  ): PushToken = {
+    val __obj = js.Dynamic.literal()
+    if (clientRevision != null) __obj.updateDynamic("clientRevision")(clientRevision)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (language != null) __obj.updateDynamic("language")(language)
+    __obj.asInstanceOf[PushToken]
+  }
+}
+

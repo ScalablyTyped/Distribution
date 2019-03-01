@@ -50,3 +50,26 @@ trait ParseOptions[S /* <: Schema[_, _] */] extends js.Object {
   var topNode: js.UndefOr[ProsemirrorNode[S] | scala.Null] = js.undefined
 }
 
+object ParseOptions {
+  @scala.inline
+  def apply[S /* <: Schema[_, _] */](
+    context: ResolvedPos[S] = null,
+    findPositions: js.Array[prosemirrorDashModelLib.Anon_Node] = null,
+    from: scala.Int | scala.Double = null,
+    preserveWhitespace: scala.Boolean | prosemirrorDashModelLib.prosemirrorDashModelLibStrings.full = null,
+    to: scala.Int | scala.Double = null,
+    topMatch: ContentMatch[_] = null,
+    topNode: ProsemirrorNode[S] = null
+  ): ParseOptions[S] = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (findPositions != null) __obj.updateDynamic("findPositions")(findPositions)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (topMatch != null) __obj.updateDynamic("topMatch")(topMatch)
+    if (topNode != null) __obj.updateDynamic("topNode")(topNode)
+    __obj.asInstanceOf[ParseOptions[S]]
+  }
+}
+

@@ -11,3 +11,14 @@ trait Anon_Day extends js.Object {
   var year: scala.Double
 }
 
+object Anon_Day {
+  @scala.inline
+  def apply(day: scala.Double, month: scala.Double, year: scala.Double): Anon_Day = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("day")(day)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[Anon_Day]
+  }
+}
+

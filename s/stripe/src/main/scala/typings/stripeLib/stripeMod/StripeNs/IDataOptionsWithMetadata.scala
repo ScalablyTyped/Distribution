@@ -15,3 +15,18 @@ trait IDataOptionsWithMetadata extends IDataOptions {
   var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
 }
 
+object IDataOptionsWithMetadata {
+  @scala.inline
+  def apply(
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: IOptionsMetadata = null
+  ): IDataOptionsWithMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[IDataOptionsWithMetadata]
+  }
+}
+

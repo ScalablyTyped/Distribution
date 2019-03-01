@@ -14,3 +14,12 @@ trait ImageOptions extends js.Object {
   var limit: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImageOptions {
+  @scala.inline
+  def apply(limit: scala.Int | scala.Double = null): ImageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageOptions]
+  }
+}
+

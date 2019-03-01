@@ -11,3 +11,18 @@ trait ProjectDetailsDeps extends js.Object {
   val rootDirectory: java.lang.String
 }
 
+object ProjectDetailsDeps {
+  @scala.inline
+  def apply(
+    e: ProjectDeps,
+    rootDirectory: java.lang.String,
+    args: minimistLib.minimistMod.minimistNs.ParsedArgs = null
+  ): ProjectDetailsDeps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("e")(e)
+    __obj.updateDynamic("rootDirectory")(rootDirectory)
+    if (args != null) __obj.updateDynamic("args")(args)
+    __obj.asInstanceOf[ProjectDetailsDeps]
+  }
+}
+

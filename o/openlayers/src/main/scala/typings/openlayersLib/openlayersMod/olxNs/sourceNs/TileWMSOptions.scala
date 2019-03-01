@@ -24,3 +24,44 @@ trait TileWMSOptions extends js.Object {
   var wrapX: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TileWMSOptions {
+  @scala.inline
+  def apply(
+    params: org.scalablytyped.runtime.StringDictionary[js.Any],
+    attributions: openlayersLib.openlayersMod.AttributionLike = null,
+    cacheSize: scala.Int | scala.Double = null,
+    crossOrigin: java.lang.String = null,
+    gutter: scala.Int | scala.Double = null,
+    hidpi: js.UndefOr[scala.Boolean] = js.undefined,
+    logo: java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions = null,
+    projection: openlayersLib.openlayersMod.ProjectionLike = null,
+    reprojectionErrorThreshold: scala.Int | scala.Double = null,
+    serverType: openlayersLib.openlayersMod.sourceNs.wmsNs.ServerType | java.lang.String = null,
+    tileGrid: openlayersLib.openlayersMod.tilegridNs.TileGrid = null,
+    tileLoadFunction: openlayersLib.openlayersMod.TileLoadFunctionType = null,
+    transition: scala.Int | scala.Double = null,
+    url: java.lang.String = null,
+    urls: js.Array[java.lang.String] = null,
+    wrapX: js.UndefOr[scala.Boolean] = js.undefined
+  ): TileWMSOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("params")(params)
+    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
+    if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
+    if (serverType != null) __obj.updateDynamic("serverType")(serverType.asInstanceOf[js.Any])
+    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid)
+    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    __obj.asInstanceOf[TileWMSOptions]
+  }
+}
+

@@ -30,3 +30,22 @@ trait ConnectionOptions extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConnectionOptions {
+  @scala.inline
+  def apply(
+    charset: java.lang.String = null,
+    database: java.lang.String = null,
+    password: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    user: java.lang.String = null
+  ): ConnectionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (charset != null) __obj.updateDynamic("charset")(charset)
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[ConnectionOptions]
+  }
+}
+

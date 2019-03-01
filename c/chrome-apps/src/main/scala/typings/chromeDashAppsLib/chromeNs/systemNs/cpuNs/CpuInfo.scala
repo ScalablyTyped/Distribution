@@ -28,3 +28,24 @@ trait CpuInfo extends js.Object {
   var temperatures: js.UndefOr[js.Array[chromeDashAppsLib.chromeNs.double]] = js.undefined
 }
 
+object CpuInfo {
+  @scala.inline
+  def apply(
+    archName: java.lang.String,
+    features: chromeDashAppsLib.chromeDashAppsLibStrings.mmx | chromeDashAppsLib.chromeDashAppsLibStrings.sse | chromeDashAppsLib.chromeDashAppsLibStrings.sse2 | chromeDashAppsLib.chromeDashAppsLibStrings.sse3 | chromeDashAppsLib.chromeDashAppsLibStrings.ssse3 | chromeDashAppsLib.chromeDashAppsLibStrings.sse4_1 | chromeDashAppsLib.chromeDashAppsLibStrings.sse4_2 | chromeDashAppsLib.chromeDashAppsLibStrings.avx,
+    modelName: java.lang.String,
+    numOfProcessors: chromeDashAppsLib.chromeNs.integer,
+    processors: js.Array[ProcessorInfo],
+    temperatures: js.Array[chromeDashAppsLib.chromeNs.double] = null
+  ): CpuInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("archName")(archName)
+    __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
+    __obj.updateDynamic("modelName")(modelName)
+    __obj.updateDynamic("numOfProcessors")(numOfProcessors)
+    __obj.updateDynamic("processors")(processors)
+    if (temperatures != null) __obj.updateDynamic("temperatures")(temperatures)
+    __obj.asInstanceOf[CpuInfo]
+  }
+}
+

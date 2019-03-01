@@ -12,3 +12,13 @@ trait NetworkPolicy extends js.Object {
   var provider: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NetworkPolicy {
+  @scala.inline
+  def apply(enabled: js.UndefOr[scala.Boolean] = js.undefined, provider: java.lang.String = null): NetworkPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    __obj.asInstanceOf[NetworkPolicy]
+  }
+}
+

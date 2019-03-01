@@ -12,3 +12,30 @@ trait Diagnostic extends DiagnosticRelatedInformation {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Diagnostic {
+  @scala.inline
+  def apply(
+    category: DiagnosticCategory,
+    code: scala.Double,
+    messageText: java.lang.String | DiagnosticMessageChain,
+    file: SourceFile = null,
+    length: scala.Int | scala.Double = null,
+    relatedInformation: js.Array[DiagnosticRelatedInformation] = null,
+    reportsUnnecessary: js.Object = null,
+    source: java.lang.String = null,
+    start: scala.Int | scala.Double = null
+  ): Diagnostic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("category")(category)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("messageText")(messageText.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation)
+    if (reportsUnnecessary != null) __obj.updateDynamic("reportsUnnecessary")(reportsUnnecessary)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Diagnostic]
+  }
+}
+

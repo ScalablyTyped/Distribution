@@ -30,3 +30,18 @@ trait PivotHierarchyLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PivotHierarchyLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined
+  ): PivotHierarchyLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[PivotHierarchyLoadOptions]
+  }
+}
+

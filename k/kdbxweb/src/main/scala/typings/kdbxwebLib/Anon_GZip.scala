@@ -10,3 +10,13 @@ trait Anon_GZip extends js.Object {
   var None: scala.Double
 }
 
+object Anon_GZip {
+  @scala.inline
+  def apply(GZip: scala.Double, None: scala.Double): Anon_GZip = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GZip")(GZip)
+    __obj.updateDynamic("None")(None)
+    __obj.asInstanceOf[Anon_GZip]
+  }
+}
+

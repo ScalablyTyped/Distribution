@@ -10,3 +10,12 @@ trait FilterOptions[T /* <: FindConstant */] extends js.Object {
   var filter: FilterFunction[T] | FilterObject | java.lang.String
 }
 
+object FilterOptions {
+  @scala.inline
+  def apply[T /* <: FindConstant */](filter: FilterFunction[T] | FilterObject | java.lang.String): FilterOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FilterOptions[T]]
+  }
+}
+

@@ -15,3 +15,24 @@ trait Anon_Array extends js.Object {
   def string(value: js.Any): scala.Boolean
 }
 
+object Anon_Array {
+  @scala.inline
+  def apply(
+    array: js.Function1[js.Any, scala.Boolean],
+    boolean: js.Function1[js.Any, scala.Boolean],
+    integer: js.Function1[js.Any, scala.Boolean],
+    `null`: js.Function1[js.Any, scala.Boolean],
+    number: js.Function1[js.Any, scala.Boolean],
+    `object`: js.Function1[js.Any, scala.Boolean],
+    string: js.Function1[js.Any, scala.Boolean]
+  ): Anon_Array = {
+    val __obj = js.Dynamic.literal(`null` = `null`, `object` = `object`)
+    __obj.updateDynamic("array")(array)
+    __obj.updateDynamic("boolean")(boolean)
+    __obj.updateDynamic("integer")(integer)
+    __obj.updateDynamic("number")(number)
+    __obj.updateDynamic("string")(string)
+    __obj.asInstanceOf[Anon_Array]
+  }
+}
+

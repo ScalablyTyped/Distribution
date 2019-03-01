@@ -10,3 +10,13 @@ trait Name extends js.Object {
   var name: java.lang.String
 }
 
+object Name {
+  @scala.inline
+  def apply(abbreviation: java.lang.String, name: java.lang.String): Name = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abbreviation")(abbreviation)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Name]
+  }
+}
+

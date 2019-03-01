@@ -63,3 +63,46 @@ trait PolicyState extends js.Object {
   ] = js.undefined
 }
 
+object PolicyState {
+  @scala.inline
+  def apply(
+    adjustmentType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    alarms: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cooldown: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    metricAggregationType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    minAdjustmentMagnitude: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policyType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    resourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    scalableDimension: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    serviceNamespace: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    stepAdjustments: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MetricIntervalLowerBoundMetricIntervalUpperBound]
+      ]
+    ] = null,
+    stepScalingPolicyConfigurations: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AdjustmentTypeCooldown]]
+    ] = null,
+    targetTrackingScalingPolicyConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CustomizedMetricSpecificationDisableScaleIn] = null
+  ): PolicyState = {
+    val __obj = js.Dynamic.literal()
+    if (adjustmentType != null) __obj.updateDynamic("adjustmentType")(adjustmentType.asInstanceOf[js.Any])
+    if (alarms != null) __obj.updateDynamic("alarms")(alarms.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (cooldown != null) __obj.updateDynamic("cooldown")(cooldown.asInstanceOf[js.Any])
+    if (metricAggregationType != null) __obj.updateDynamic("metricAggregationType")(metricAggregationType.asInstanceOf[js.Any])
+    if (minAdjustmentMagnitude != null) __obj.updateDynamic("minAdjustmentMagnitude")(minAdjustmentMagnitude.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (policyType != null) __obj.updateDynamic("policyType")(policyType.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (scalableDimension != null) __obj.updateDynamic("scalableDimension")(scalableDimension.asInstanceOf[js.Any])
+    if (serviceNamespace != null) __obj.updateDynamic("serviceNamespace")(serviceNamespace.asInstanceOf[js.Any])
+    if (stepAdjustments != null) __obj.updateDynamic("stepAdjustments")(stepAdjustments.asInstanceOf[js.Any])
+    if (stepScalingPolicyConfigurations != null) __obj.updateDynamic("stepScalingPolicyConfigurations")(stepScalingPolicyConfigurations.asInstanceOf[js.Any])
+    if (targetTrackingScalingPolicyConfiguration != null) __obj.updateDynamic("targetTrackingScalingPolicyConfiguration")(targetTrackingScalingPolicyConfiguration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolicyState]
+  }
+}
+

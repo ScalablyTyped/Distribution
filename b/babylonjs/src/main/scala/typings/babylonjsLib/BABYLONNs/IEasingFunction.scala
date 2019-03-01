@@ -22,3 +22,12 @@ trait IEasingFunction extends js.Object {
   def ease(gradient: scala.Double): scala.Double
 }
 
+object IEasingFunction {
+  @scala.inline
+  def apply(ease: js.Function1[scala.Double, scala.Double]): IEasingFunction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ease")(ease)
+    __obj.asInstanceOf[IEasingFunction]
+  }
+}
+

@@ -13,3 +13,22 @@ trait NotificationBacklogStatus extends js.Object {
   var unprocessedNotifications: scala.Double
 }
 
+object NotificationBacklogStatus {
+  @scala.inline
+  def apply(
+    channel: java.lang.String,
+    maxUnprocessedNotificationAgeMs: scala.Double,
+    publisher: java.lang.String,
+    timeSinceLastProcessedNotificationMs: scala.Double,
+    unprocessedNotifications: scala.Double
+  ): NotificationBacklogStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("maxUnprocessedNotificationAgeMs")(maxUnprocessedNotificationAgeMs)
+    __obj.updateDynamic("publisher")(publisher)
+    __obj.updateDynamic("timeSinceLastProcessedNotificationMs")(timeSinceLastProcessedNotificationMs)
+    __obj.updateDynamic("unprocessedNotifications")(unprocessedNotifications)
+    __obj.asInstanceOf[NotificationBacklogStatus]
+  }
+}
+

@@ -22,3 +22,22 @@ trait AsyncProps[OptionType] extends js.Object {
   ): js.Promise[_] | scala.Unit
 }
 
+object AsyncProps {
+  @scala.inline
+  def apply[OptionType](
+    loadOptions: js.Function2[
+      java.lang.String, 
+      js.Function1[/* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType], scala.Unit], 
+      js.Promise[_] | scala.Unit
+    ],
+    cacheOptions: js.Any = null,
+    defaultOptions: reactDashSelectLib.libTypesMod.OptionsType[OptionType] | scala.Boolean = null
+  ): AsyncProps[OptionType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("loadOptions")(loadOptions)
+    if (cacheOptions != null) __obj.updateDynamic("cacheOptions")(cacheOptions)
+    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AsyncProps[OptionType]]
+  }
+}
+

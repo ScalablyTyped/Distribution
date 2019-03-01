@@ -22,3 +22,40 @@ trait PinModes extends js.Object {
   var UNKOWN: PIN_MODE
 }
 
+object PinModes {
+  @scala.inline
+  def apply(
+    ANALOG: PIN_MODE,
+    I2C: PIN_MODE,
+    IGNORE: PIN_MODE,
+    INPUT: PIN_MODE,
+    ONEWIRE: PIN_MODE,
+    OUTPUT: PIN_MODE,
+    PING_READ: PIN_MODE,
+    PULLUP: PIN_MODE,
+    PWM: PIN_MODE,
+    SERIAL: PIN_MODE,
+    SERVO: PIN_MODE,
+    SHIFT: PIN_MODE,
+    STEPPER: PIN_MODE,
+    UNKOWN: PIN_MODE
+  ): PinModes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ANALOG")(ANALOG)
+    __obj.updateDynamic("I2C")(I2C)
+    __obj.updateDynamic("IGNORE")(IGNORE)
+    __obj.updateDynamic("INPUT")(INPUT)
+    __obj.updateDynamic("ONEWIRE")(ONEWIRE)
+    __obj.updateDynamic("OUTPUT")(OUTPUT)
+    __obj.updateDynamic("PING_READ")(PING_READ)
+    __obj.updateDynamic("PULLUP")(PULLUP)
+    __obj.updateDynamic("PWM")(PWM)
+    __obj.updateDynamic("SERIAL")(SERIAL)
+    __obj.updateDynamic("SERVO")(SERVO)
+    __obj.updateDynamic("SHIFT")(SHIFT)
+    __obj.updateDynamic("STEPPER")(STEPPER)
+    __obj.updateDynamic("UNKOWN")(UNKOWN)
+    __obj.asInstanceOf[PinModes]
+  }
+}
+

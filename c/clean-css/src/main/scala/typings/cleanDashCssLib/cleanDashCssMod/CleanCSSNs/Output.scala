@@ -31,3 +31,22 @@ trait Output extends js.Object {
   var warnings: js.Array[java.lang.String]
 }
 
+object Output {
+  @scala.inline
+  def apply(
+    errors: js.Array[java.lang.String],
+    sourceMap: java.lang.String,
+    stats: cleanDashCssLib.Anon_Efficiency,
+    styles: java.lang.String,
+    warnings: js.Array[java.lang.String]
+  ): Output = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errors")(errors)
+    __obj.updateDynamic("sourceMap")(sourceMap)
+    __obj.updateDynamic("stats")(stats)
+    __obj.updateDynamic("styles")(styles)
+    __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[Output]
+  }
+}
+

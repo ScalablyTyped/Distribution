@@ -17,3 +17,30 @@ trait Scope extends js.Object {
   var title: js.UndefOr[java.lang.String | vegaDashTypingsLib.typesSpecTitleMod.Title] = js.undefined
 }
 
+object Scope {
+  @scala.inline
+  def apply(
+    axes: js.Array[vegaDashTypingsLib.typesSpecAxisMod.Axis] = null,
+    data: js.Array[vegaDashTypingsLib.typesSpecDataMod.Data] = null,
+    layout: vegaDashTypingsLib.typesSpecLayoutMod.Layout = null,
+    legends: js.Array[vegaDashTypingsLib.typesSpecLegendMod.Legend] = null,
+    marks: js.Array[vegaDashTypingsLib.typesSpecMarkMod.Mark] = null,
+    projections: js.Array[vegaDashTypingsLib.typesSpecProjectionMod.Projection] = null,
+    scales: js.Array[vegaDashTypingsLib.typesSpecScaleMod.Scale] = null,
+    signals: js.Array[vegaDashTypingsLib.typesSpecSignalMod.Signal] = null,
+    title: java.lang.String | vegaDashTypingsLib.typesSpecTitleMod.Title = null
+  ): Scope = {
+    val __obj = js.Dynamic.literal()
+    if (axes != null) __obj.updateDynamic("axes")(axes)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (legends != null) __obj.updateDynamic("legends")(legends)
+    if (marks != null) __obj.updateDynamic("marks")(marks)
+    if (projections != null) __obj.updateDynamic("projections")(projections)
+    if (scales != null) __obj.updateDynamic("scales")(scales)
+    if (signals != null) __obj.updateDynamic("signals")(signals)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Scope]
+  }
+}
+

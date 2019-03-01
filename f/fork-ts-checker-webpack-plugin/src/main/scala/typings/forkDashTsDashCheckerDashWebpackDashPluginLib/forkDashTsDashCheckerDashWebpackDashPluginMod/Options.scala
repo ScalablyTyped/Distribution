@@ -26,3 +26,48 @@ trait Options extends js.Object {
   var workers: scala.Double
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    checkSyntacticErrors: scala.Boolean,
+    colors: scala.Boolean,
+    compilerOptions: js.Object,
+    formatter: forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.default | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibStrings.codeframe | forkDashTsDashCheckerDashWebpackDashPluginLib.Formatter,
+    formatterOptions: js.Any,
+    ignoreDiagnostics: js.Array[scala.Double],
+    ignoreLints: js.Array[java.lang.String],
+    logger: Logger,
+    memoryLimit: scala.Double,
+    reportFiles: js.Array[java.lang.String],
+    silent: scala.Boolean,
+    tsconfig: java.lang.String,
+    tslint: java.lang.String | forkDashTsDashCheckerDashWebpackDashPluginLib.forkDashTsDashCheckerDashWebpackDashPluginLibNumbers.`true`,
+    tslintAutoFix: scala.Boolean,
+    vue: scala.Boolean,
+    watch: java.lang.String | js.Array[java.lang.String],
+    workers: scala.Double
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("async")(async)
+    __obj.updateDynamic("checkSyntacticErrors")(checkSyntacticErrors)
+    __obj.updateDynamic("colors")(colors)
+    __obj.updateDynamic("compilerOptions")(compilerOptions)
+    __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    __obj.updateDynamic("formatterOptions")(formatterOptions)
+    __obj.updateDynamic("ignoreDiagnostics")(ignoreDiagnostics)
+    __obj.updateDynamic("ignoreLints")(ignoreLints)
+    __obj.updateDynamic("logger")(logger)
+    __obj.updateDynamic("memoryLimit")(memoryLimit)
+    __obj.updateDynamic("reportFiles")(reportFiles)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("tsconfig")(tsconfig)
+    __obj.updateDynamic("tslint")(tslint.asInstanceOf[js.Any])
+    __obj.updateDynamic("tslintAutoFix")(tslintAutoFix)
+    __obj.updateDynamic("vue")(vue)
+    __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
+    __obj.updateDynamic("workers")(workers)
+    __obj.asInstanceOf[Options]
+  }
+}
+

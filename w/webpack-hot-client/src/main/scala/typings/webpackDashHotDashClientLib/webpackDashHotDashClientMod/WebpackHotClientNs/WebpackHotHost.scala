@@ -12,3 +12,13 @@ trait WebpackHotHost extends js.Object {
   var server: java.lang.String
 }
 
+object WebpackHotHost {
+  @scala.inline
+  def apply(client: java.lang.String, server: java.lang.String): WebpackHotHost = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[WebpackHotHost]
+  }
+}
+

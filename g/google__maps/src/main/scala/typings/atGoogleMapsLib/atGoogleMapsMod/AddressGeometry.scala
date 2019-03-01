@@ -25,3 +25,15 @@ trait AddressGeometry extends js.Object {
   var viewport: LatLngBounds
 }
 
+object AddressGeometry {
+  @scala.inline
+  def apply(bounds: LatLngBounds, location: LatLngLiteral, location_type: LocationType, viewport: LatLngBounds): AddressGeometry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("location_type")(location_type)
+    __obj.updateDynamic("viewport")(viewport)
+    __obj.asInstanceOf[AddressGeometry]
+  }
+}
+

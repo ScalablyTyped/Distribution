@@ -12,3 +12,20 @@ trait Anon_IgnoreElementEnd extends js.Object {
   var startPosition: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Position
 }
 
+object Anon_IgnoreElementEnd {
+  @scala.inline
+  def apply(
+    ignoreElementEnd: scala.Boolean,
+    shallow: scala.Boolean,
+    singleCharacters: scala.Boolean,
+    startPosition: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Position
+  ): Anon_IgnoreElementEnd = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ignoreElementEnd")(ignoreElementEnd)
+    __obj.updateDynamic("shallow")(shallow)
+    __obj.updateDynamic("singleCharacters")(singleCharacters)
+    __obj.updateDynamic("startPosition")(startPosition)
+    __obj.asInstanceOf[Anon_IgnoreElementEnd]
+  }
+}
+

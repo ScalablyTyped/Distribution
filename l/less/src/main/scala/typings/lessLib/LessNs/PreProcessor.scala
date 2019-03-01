@@ -9,3 +9,12 @@ trait PreProcessor extends js.Object {
   def process(src: java.lang.String, extra: PreProcessorExtraInfo): java.lang.String
 }
 
+object PreProcessor {
+  @scala.inline
+  def apply(process: js.Function2[java.lang.String, PreProcessorExtraInfo, java.lang.String]): PreProcessor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("process")(process)
+    __obj.asInstanceOf[PreProcessor]
+  }
+}
+

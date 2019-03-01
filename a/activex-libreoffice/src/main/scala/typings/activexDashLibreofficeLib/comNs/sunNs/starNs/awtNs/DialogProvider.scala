@@ -16,3 +16,30 @@ trait DialogProvider extends XDialogProvider {
   ): scala.Unit
 }
 
+object DialogProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createDialog: js.Function1[java.lang.String, XDialog],
+    createWithModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, scala.Unit],
+    createWithModelAndScripting: js.Function4[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.scriptNs.XScriptListener, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): DialogProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createDialog")(createDialog)
+    __obj.updateDynamic("createWithModel")(createWithModel)
+    __obj.updateDynamic("createWithModelAndScripting")(createWithModelAndScripting)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[DialogProvider]
+  }
+}
+

@@ -24,3 +24,43 @@ trait Company extends js.Object {
   var website: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Company {
+  @scala.inline
+  def apply(
+    created_at: scala.Double,
+    id: java.lang.String,
+    `type`: intercomDashClientLib.intercomDashClientLibStrings.company,
+    updated_at: scala.Double,
+    app_id: java.lang.String = null,
+    company_id: java.lang.String = null,
+    custom_attributes: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    industry: java.lang.String = null,
+    monthly_spend: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    plan: java.lang.String | intercomDashClientLib.Anon_IdName = null,
+    remote_created_at: scala.Int | scala.Double = null,
+    session_count: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null,
+    user_count: scala.Int | scala.Double = null,
+    website: java.lang.String = null
+  ): Company = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("created_at")(created_at)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("updated_at")(updated_at)
+    if (app_id != null) __obj.updateDynamic("app_id")(app_id)
+    if (company_id != null) __obj.updateDynamic("company_id")(company_id)
+    if (custom_attributes != null) __obj.updateDynamic("custom_attributes")(custom_attributes)
+    if (industry != null) __obj.updateDynamic("industry")(industry)
+    if (monthly_spend != null) __obj.updateDynamic("monthly_spend")(monthly_spend.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
+    if (remote_created_at != null) __obj.updateDynamic("remote_created_at")(remote_created_at.asInstanceOf[js.Any])
+    if (session_count != null) __obj.updateDynamic("session_count")(session_count.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (user_count != null) __obj.updateDynamic("user_count")(user_count.asInstanceOf[js.Any])
+    if (website != null) __obj.updateDynamic("website")(website)
+    __obj.asInstanceOf[Company]
+  }
+}
+

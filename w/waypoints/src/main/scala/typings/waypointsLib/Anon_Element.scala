@@ -9,3 +9,12 @@ trait Anon_Element extends js.Object {
   def findByElement(element: stdLib.HTMLElement): js.UndefOr[WaypointContext]
 }
 
+object Anon_Element {
+  @scala.inline
+  def apply(findByElement: js.Function1[stdLib.HTMLElement, js.UndefOr[WaypointContext]]): Anon_Element = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("findByElement")(findByElement)
+    __obj.asInstanceOf[Anon_Element]
+  }
+}
+

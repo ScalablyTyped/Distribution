@@ -12,3 +12,18 @@ trait ClassifiedInteractionRequest
   var Classification: InteractionClassification
 }
 
+object ClassifiedInteractionRequest {
+  @scala.inline
+  def apply(
+    Classification: InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): ClassifiedInteractionRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Classification")(Classification)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[ClassifiedInteractionRequest]
+  }
+}
+

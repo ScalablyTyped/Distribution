@@ -22,3 +22,36 @@ trait XStyleLoader2 extends XStyleLoader {
   ): scala.Unit
 }
 
+object XStyleLoader2 {
+  @scala.inline
+  def apply(
+    StyleLoaderOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    acquire: js.Function0[scala.Unit],
+    getStyleLoaderOptions: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    loadStylesFromDocument: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    loadStylesFromURL: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStyleLoader2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("StyleLoaderOptions")(StyleLoaderOptions)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getStyleLoaderOptions")(getStyleLoaderOptions)
+    __obj.updateDynamic("loadStylesFromDocument")(loadStylesFromDocument)
+    __obj.updateDynamic("loadStylesFromURL")(loadStylesFromURL)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStyleLoader2]
+  }
+}
+

@@ -163,3 +163,78 @@ trait ASPxClientAppointment extends js.Object {
   def SetSubject(subject: java.lang.String): scala.Unit
 }
 
+object ASPxClientAppointment {
+  @scala.inline
+  def apply(
+    AddResource: js.Function1[java.lang.String, scala.Unit],
+    GetAllDay: js.Function0[scala.Boolean],
+    GetAppointmentType: js.Function0[ASPxAppointmentType],
+    GetDescription: js.Function0[java.lang.String],
+    GetDuration: js.Function0[scala.Double],
+    GetEnd: js.Function0[stdLib.Date],
+    GetId: js.Function0[java.lang.String],
+    GetLabelId: js.Function0[scala.Double],
+    GetLocation: js.Function0[java.lang.String],
+    GetRecurrenceInfo: js.Function0[ASPxClientRecurrenceInfo],
+    GetRecurrencePattern: js.Function0[ASPxClientAppointment],
+    GetResource: js.Function1[scala.Double, java.lang.String],
+    GetStart: js.Function0[stdLib.Date],
+    GetStatusId: js.Function0[scala.Double],
+    GetSubject: js.Function0[java.lang.String],
+    SetAllDay: js.Function1[scala.Boolean, scala.Unit],
+    SetAppointmentType: js.Function1[ASPxAppointmentType, scala.Unit],
+    SetDescription: js.Function1[java.lang.String, scala.Unit],
+    SetDuration: js.Function1[js.Any, scala.Unit],
+    SetEnd: js.Function1[stdLib.Date, scala.Unit],
+    SetId: js.Function1[java.lang.String, scala.Unit],
+    SetLabelId: js.Function1[scala.Double, scala.Unit],
+    SetLocation: js.Function1[java.lang.String, scala.Unit],
+    SetRecurrenceInfo: js.Function1[ASPxClientRecurrenceInfo, scala.Unit],
+    SetStart: js.Function1[stdLib.Date, scala.Unit],
+    SetStatusId: js.Function1[scala.Double, scala.Unit],
+    SetSubject: js.Function1[java.lang.String, scala.Unit],
+    appointmentId: java.lang.String,
+    appointmentType: ASPxAppointmentType,
+    interval: ASPxClientTimeInterval,
+    labelIndex: scala.Double,
+    resources: js.Array[java.lang.String],
+    statusIndex: scala.Double
+  ): ASPxClientAppointment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AddResource")(AddResource)
+    __obj.updateDynamic("GetAllDay")(GetAllDay)
+    __obj.updateDynamic("GetAppointmentType")(GetAppointmentType)
+    __obj.updateDynamic("GetDescription")(GetDescription)
+    __obj.updateDynamic("GetDuration")(GetDuration)
+    __obj.updateDynamic("GetEnd")(GetEnd)
+    __obj.updateDynamic("GetId")(GetId)
+    __obj.updateDynamic("GetLabelId")(GetLabelId)
+    __obj.updateDynamic("GetLocation")(GetLocation)
+    __obj.updateDynamic("GetRecurrenceInfo")(GetRecurrenceInfo)
+    __obj.updateDynamic("GetRecurrencePattern")(GetRecurrencePattern)
+    __obj.updateDynamic("GetResource")(GetResource)
+    __obj.updateDynamic("GetStart")(GetStart)
+    __obj.updateDynamic("GetStatusId")(GetStatusId)
+    __obj.updateDynamic("GetSubject")(GetSubject)
+    __obj.updateDynamic("SetAllDay")(SetAllDay)
+    __obj.updateDynamic("SetAppointmentType")(SetAppointmentType)
+    __obj.updateDynamic("SetDescription")(SetDescription)
+    __obj.updateDynamic("SetDuration")(SetDuration)
+    __obj.updateDynamic("SetEnd")(SetEnd)
+    __obj.updateDynamic("SetId")(SetId)
+    __obj.updateDynamic("SetLabelId")(SetLabelId)
+    __obj.updateDynamic("SetLocation")(SetLocation)
+    __obj.updateDynamic("SetRecurrenceInfo")(SetRecurrenceInfo)
+    __obj.updateDynamic("SetStart")(SetStart)
+    __obj.updateDynamic("SetStatusId")(SetStatusId)
+    __obj.updateDynamic("SetSubject")(SetSubject)
+    __obj.updateDynamic("appointmentId")(appointmentId)
+    __obj.updateDynamic("appointmentType")(appointmentType)
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("labelIndex")(labelIndex)
+    __obj.updateDynamic("resources")(resources)
+    __obj.updateDynamic("statusIndex")(statusIndex)
+    __obj.asInstanceOf[ASPxClientAppointment]
+  }
+}
+

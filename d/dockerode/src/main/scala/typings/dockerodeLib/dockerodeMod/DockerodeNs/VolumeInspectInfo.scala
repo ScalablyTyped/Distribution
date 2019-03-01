@@ -18,3 +18,28 @@ trait VolumeInspectInfo extends js.Object {
   var UsageData: js.UndefOr[dockerodeLib.Anon_RefCount | scala.Null] = js.undefined
 }
 
+object VolumeInspectInfo {
+  @scala.inline
+  def apply(
+    Driver: java.lang.String,
+    Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    Mountpoint: java.lang.String,
+    Name: java.lang.String,
+    Scope: dockerodeLib.dockerodeLibStrings.local | dockerodeLib.dockerodeLibStrings.global,
+    Options: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    Status: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    UsageData: dockerodeLib.Anon_RefCount = null
+  ): VolumeInspectInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Driver")(Driver)
+    __obj.updateDynamic("Labels")(Labels)
+    __obj.updateDynamic("Mountpoint")(Mountpoint)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])
+    if (Options != null) __obj.updateDynamic("Options")(Options)
+    if (Status != null) __obj.updateDynamic("Status")(Status)
+    if (UsageData != null) __obj.updateDynamic("UsageData")(UsageData)
+    __obj.asInstanceOf[VolumeInspectInfo]
+  }
+}
+

@@ -241,3 +241,32 @@ trait IOptions extends js.Object {
   var wrapHandlers: js.UndefOr[IWrapHandlers] = js.undefined
 }
 
+object IOptions {
+  @scala.inline
+  def apply(
+    aliasString: java.lang.String = null,
+    attributeString: java.lang.String = null,
+    cdataInvalidChars: js.UndefOr[scala.Boolean] = js.undefined,
+    cdataKeys: js.Array[java.lang.String] = null,
+    declaration: IDeclarationOptions = null,
+    dtd: IDtdOptions = null,
+    format: IFormatOptions = null,
+    typeHandlers: ITypeHandlers = null,
+    valueString: java.lang.String = null,
+    wrapHandlers: IWrapHandlers = null
+  ): IOptions = {
+    val __obj = js.Dynamic.literal()
+    if (aliasString != null) __obj.updateDynamic("aliasString")(aliasString)
+    if (attributeString != null) __obj.updateDynamic("attributeString")(attributeString)
+    if (!js.isUndefined(cdataInvalidChars)) __obj.updateDynamic("cdataInvalidChars")(cdataInvalidChars)
+    if (cdataKeys != null) __obj.updateDynamic("cdataKeys")(cdataKeys)
+    if (declaration != null) __obj.updateDynamic("declaration")(declaration)
+    if (dtd != null) __obj.updateDynamic("dtd")(dtd)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (typeHandlers != null) __obj.updateDynamic("typeHandlers")(typeHandlers)
+    if (valueString != null) __obj.updateDynamic("valueString")(valueString)
+    if (wrapHandlers != null) __obj.updateDynamic("wrapHandlers")(wrapHandlers)
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

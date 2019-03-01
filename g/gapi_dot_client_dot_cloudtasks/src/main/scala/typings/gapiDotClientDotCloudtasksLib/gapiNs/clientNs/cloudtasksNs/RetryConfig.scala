@@ -84,3 +84,24 @@ trait RetryConfig extends js.Object {
   var unlimitedAttempts: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RetryConfig {
+  @scala.inline
+  def apply(
+    maxAttempts: scala.Int | scala.Double = null,
+    maxBackoff: java.lang.String = null,
+    maxDoublings: scala.Int | scala.Double = null,
+    maxRetryDuration: java.lang.String = null,
+    minBackoff: java.lang.String = null,
+    unlimitedAttempts: js.UndefOr[scala.Boolean] = js.undefined
+  ): RetryConfig = {
+    val __obj = js.Dynamic.literal()
+    if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
+    if (maxBackoff != null) __obj.updateDynamic("maxBackoff")(maxBackoff)
+    if (maxDoublings != null) __obj.updateDynamic("maxDoublings")(maxDoublings.asInstanceOf[js.Any])
+    if (maxRetryDuration != null) __obj.updateDynamic("maxRetryDuration")(maxRetryDuration)
+    if (minBackoff != null) __obj.updateDynamic("minBackoff")(minBackoff)
+    if (!js.isUndefined(unlimitedAttempts)) __obj.updateDynamic("unlimitedAttempts")(unlimitedAttempts)
+    __obj.asInstanceOf[RetryConfig]
+  }
+}
+

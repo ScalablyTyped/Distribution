@@ -13,3 +13,22 @@ trait SummonerDto extends js.Object {
   var summonerLevel: scala.Double
 }
 
+object SummonerDto {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    name: java.lang.String,
+    profileIconId: scala.Double,
+    revisionDate: scala.Double,
+    summonerLevel: scala.Double
+  ): SummonerDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("profileIconId")(profileIconId)
+    __obj.updateDynamic("revisionDate")(revisionDate)
+    __obj.updateDynamic("summonerLevel")(summonerLevel)
+    __obj.asInstanceOf[SummonerDto]
+  }
+}
+

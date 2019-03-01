@@ -2439,7 +2439,7 @@ object WAFNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetChangeTokenResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns the status of a ChangeToken that you got by calling GetChangeToken. ChangeTokenStatus is one of the following values:    PROVISIONED: You requested the change token by calling GetChangeToken, but you haven't used it yet in a call to create, update, or delete an AWS WAF object.    PENDING: AWS WAF is propagating the create, update, or delete request to all AWS WAF servers.    IN_SYNC: Propagation is complete.  
+      * Returns the status of a ChangeToken that you got by calling GetChangeToken. ChangeTokenStatus is one of the following values:    PROVISIONED: You requested the change token by calling GetChangeToken, but you haven't used it yet in a call to create, update, or delete an AWS WAF object.    PENDING: AWS WAF is propagating the create, update, or delete request to all AWS WAF servers.    INSYNC: Propagation is complete.  
       */
     def getChangeTokenStatus(): awsDashSdkLib.libRequestMod.Request[GetChangeTokenStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getChangeTokenStatus(
@@ -2450,7 +2450,7 @@ object WAFNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetChangeTokenStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns the status of a ChangeToken that you got by calling GetChangeToken. ChangeTokenStatus is one of the following values:    PROVISIONED: You requested the change token by calling GetChangeToken, but you haven't used it yet in a call to create, update, or delete an AWS WAF object.    PENDING: AWS WAF is propagating the create, update, or delete request to all AWS WAF servers.    IN_SYNC: Propagation is complete.  
+      * Returns the status of a ChangeToken that you got by calling GetChangeToken. ChangeTokenStatus is one of the following values:    PROVISIONED: You requested the change token by calling GetChangeToken, but you haven't used it yet in a call to create, update, or delete an AWS WAF object.    PENDING: AWS WAF is propagating the create, update, or delete request to all AWS WAF servers.    INSYNC: Propagation is complete.  
       */
     def getChangeTokenStatus(params: GetChangeTokenStatusRequest): awsDashSdkLib.libRequestMod.Request[GetChangeTokenStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getChangeTokenStatus(
@@ -3144,7 +3144,7 @@ object WAFNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListXssMatchSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+      * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .  Create the data firehose with a PUT source and in the region that you are operating. However, if you are capturing logs for Amazon CloudFront, always create the firehose in US East (N. Virginia).    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
       */
     def putLoggingConfiguration(): awsDashSdkLib.libRequestMod.Request[PutLoggingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putLoggingConfiguration(
@@ -3155,7 +3155,7 @@ object WAFNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutLoggingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+      * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .  Create the data firehose with a PUT source and in the region that you are operating. However, if you are capturing logs for Amazon CloudFront, always create the firehose in US East (N. Virginia).    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
       */
     def putLoggingConfiguration(params: PutLoggingConfigurationRequest): awsDashSdkLib.libRequestMod.Request[PutLoggingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putLoggingConfiguration(
@@ -3236,7 +3236,7 @@ object WAFNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateGeoMatchSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Inserts or deletes IPSetDescriptor objects in an IPSet. For each IPSetDescriptor object, you specify the following values:    Whether to insert or delete the object from the array. If you want to change an IPSetDescriptor object, you delete the existing object and add a new one.   The IP address version, IPv4 or IPv6.    The IP address in CIDR notation, for example, 192.0.2.0/24 (for the range of IP addresses from 192.0.2.0 to 192.0.2.255) or 192.0.2.44/32 (for the individual IP address 192.0.2.44).    AWS WAF supports IPv4 address ranges: /8 and any range between /16 through /32. AWS WAF supports IPv6 address ranges: /16, /24, /32, /48, /56, /64, and /128. For more information about CIDR notation, see the Wikipedia entry Classless Inter-Domain Routing. IPv6 addresses can be represented using any of the following formats:   1111:0000:0000:0000:0000:0000:0000:0111/128   1111:0:0:0:0:0:0:0111/128   1111::0111/128   1111::111/128   You use an IPSet to specify which web requests you want to allow or block based on the IP addresses that the requests originated from. For example, if you're receiving a lot of requests from one or a small number of IP addresses and you want to block the requests, you can create an IPSet that specifies those IP addresses, and then configure AWS WAF to block the requests.  To create and configure an IPSet, perform the following steps:   Submit a CreateIPSet request.   Use GetChangeToken to get the change token that you provide in the ChangeToken parameter of an UpdateIPSet request.   Submit an UpdateIPSet request to specify the IP addresses that you want AWS WAF to watch for.   When you update an IPSet, you specify the IP addresses that you want to add and/or the IP addresses that you want to delete. If you want to change an IP address, you delete the existing IP address and add the new one. You can insert a maximum of 1000 addresses in a single request. For more information about how to use the AWS WAF API to allow or block HTTP requests, see the AWS WAF Developer Guide.
+      * Inserts or deletes IPSetDescriptor objects in an IPSet. For each IPSetDescriptor object, you specify the following values:    Whether to insert or delete the object from the array. If you want to change an IPSetDescriptor object, you delete the existing object and add a new one.   The IP address version, IPv4 or IPv6.    The IP address in CIDR notation, for example, 192.0.2.0/24 (for the range of IP addresses from 192.0.2.0 to 192.0.2.255) or 192.0.2.44/32 (for the individual IP address 192.0.2.44).    AWS WAF supports IPv4 address ranges: /8 and any range between /16 through /32. AWS WAF supports IPv6 address ranges: /24, /32, /48, /56, /64, and /128. For more information about CIDR notation, see the Wikipedia entry Classless Inter-Domain Routing. IPv6 addresses can be represented using any of the following formats:   1111:0000:0000:0000:0000:0000:0000:0111/128   1111:0:0:0:0:0:0:0111/128   1111::0111/128   1111::111/128   You use an IPSet to specify which web requests you want to allow or block based on the IP addresses that the requests originated from. For example, if you're receiving a lot of requests from one or a small number of IP addresses and you want to block the requests, you can create an IPSet that specifies those IP addresses, and then configure AWS WAF to block the requests.  To create and configure an IPSet, perform the following steps:   Submit a CreateIPSet request.   Use GetChangeToken to get the change token that you provide in the ChangeToken parameter of an UpdateIPSet request.   Submit an UpdateIPSet request to specify the IP addresses that you want AWS WAF to watch for.   When you update an IPSet, you specify the IP addresses that you want to add and/or the IP addresses that you want to delete. If you want to change an IP address, you delete the existing IP address and add the new one. You can insert a maximum of 1000 addresses in a single request. For more information about how to use the AWS WAF API to allow or block HTTP requests, see the AWS WAF Developer Guide.
       */
     def updateIPSet(): awsDashSdkLib.libRequestMod.Request[UpdateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateIPSet(
@@ -3247,7 +3247,7 @@ object WAFNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Inserts or deletes IPSetDescriptor objects in an IPSet. For each IPSetDescriptor object, you specify the following values:    Whether to insert or delete the object from the array. If you want to change an IPSetDescriptor object, you delete the existing object and add a new one.   The IP address version, IPv4 or IPv6.    The IP address in CIDR notation, for example, 192.0.2.0/24 (for the range of IP addresses from 192.0.2.0 to 192.0.2.255) or 192.0.2.44/32 (for the individual IP address 192.0.2.44).    AWS WAF supports IPv4 address ranges: /8 and any range between /16 through /32. AWS WAF supports IPv6 address ranges: /16, /24, /32, /48, /56, /64, and /128. For more information about CIDR notation, see the Wikipedia entry Classless Inter-Domain Routing. IPv6 addresses can be represented using any of the following formats:   1111:0000:0000:0000:0000:0000:0000:0111/128   1111:0:0:0:0:0:0:0111/128   1111::0111/128   1111::111/128   You use an IPSet to specify which web requests you want to allow or block based on the IP addresses that the requests originated from. For example, if you're receiving a lot of requests from one or a small number of IP addresses and you want to block the requests, you can create an IPSet that specifies those IP addresses, and then configure AWS WAF to block the requests.  To create and configure an IPSet, perform the following steps:   Submit a CreateIPSet request.   Use GetChangeToken to get the change token that you provide in the ChangeToken parameter of an UpdateIPSet request.   Submit an UpdateIPSet request to specify the IP addresses that you want AWS WAF to watch for.   When you update an IPSet, you specify the IP addresses that you want to add and/or the IP addresses that you want to delete. If you want to change an IP address, you delete the existing IP address and add the new one. You can insert a maximum of 1000 addresses in a single request. For more information about how to use the AWS WAF API to allow or block HTTP requests, see the AWS WAF Developer Guide.
+      * Inserts or deletes IPSetDescriptor objects in an IPSet. For each IPSetDescriptor object, you specify the following values:    Whether to insert or delete the object from the array. If you want to change an IPSetDescriptor object, you delete the existing object and add a new one.   The IP address version, IPv4 or IPv6.    The IP address in CIDR notation, for example, 192.0.2.0/24 (for the range of IP addresses from 192.0.2.0 to 192.0.2.255) or 192.0.2.44/32 (for the individual IP address 192.0.2.44).    AWS WAF supports IPv4 address ranges: /8 and any range between /16 through /32. AWS WAF supports IPv6 address ranges: /24, /32, /48, /56, /64, and /128. For more information about CIDR notation, see the Wikipedia entry Classless Inter-Domain Routing. IPv6 addresses can be represented using any of the following formats:   1111:0000:0000:0000:0000:0000:0000:0111/128   1111:0:0:0:0:0:0:0111/128   1111::0111/128   1111::111/128   You use an IPSet to specify which web requests you want to allow or block based on the IP addresses that the requests originated from. For example, if you're receiving a lot of requests from one or a small number of IP addresses and you want to block the requests, you can create an IPSet that specifies those IP addresses, and then configure AWS WAF to block the requests.  To create and configure an IPSet, perform the following steps:   Submit a CreateIPSet request.   Use GetChangeToken to get the change token that you provide in the ChangeToken parameter of an UpdateIPSet request.   Submit an UpdateIPSet request to specify the IP addresses that you want AWS WAF to watch for.   When you update an IPSet, you specify the IP addresses that you want to add and/or the IP addresses that you want to delete. If you want to change an IP address, you delete the existing IP address and add the new one. You can insert a maximum of 1000 addresses in a single request. For more information about how to use the AWS WAF API to allow or block HTTP requests, see the AWS WAF Developer Guide.
       */
     def updateIPSet(params: UpdateIPSetRequest): awsDashSdkLib.libRequestMod.Request[UpdateIPSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateIPSet(
@@ -3850,6 +3850,32 @@ object WAFNs extends js.Object {
     var TextTransformation: TextTransformation
   }
   
+  trait _ChangeAction extends js.Object
+  
+  trait _ChangeTokenStatus extends js.Object
+  
+  trait _ComparisonOperator extends js.Object
+  
+  trait _GeoMatchConstraintValue extends js.Object
+  
+  trait _IPSetDescriptorType extends js.Object
+  
+  trait _MatchFieldType extends js.Object
+  
+  trait _PositionalConstraint extends js.Object
+  
+  trait _PredicateType extends js.Object
+  
+  trait _TextTransformation extends js.Object
+  
+  trait _WafActionType extends js.Object
+  
+  trait _WafOverrideActionType extends js.Object
+  
+  trait _WafRuleType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Action = java.lang.String
   type ActivatedRules = js.Array[ActivatedRule]
@@ -3857,15 +3883,15 @@ object WAFNs extends js.Object {
   type ByteMatchSetUpdates = js.Array[ByteMatchSetUpdate]
   type ByteMatchTargetString = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsWafMod.Blob | java.lang.String
   type ByteMatchTuples = js.Array[ByteMatchTuple]
-  type ChangeAction = awsDashSdkLib.awsDashSdkLibStrings.INSERT | awsDashSdkLib.awsDashSdkLibStrings.DELETE | java.lang.String
+  type ChangeAction = _ChangeAction | java.lang.String
   type ChangeToken = java.lang.String
-  type ChangeTokenStatus = awsDashSdkLib.awsDashSdkLibStrings.PROVISIONED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.INSYNC | java.lang.String
+  type ChangeTokenStatus = _ChangeTokenStatus | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ComparisonOperator = awsDashSdkLib.awsDashSdkLibStrings.EQ | awsDashSdkLib.awsDashSdkLibStrings.NE | awsDashSdkLib.awsDashSdkLibStrings.LE | awsDashSdkLib.awsDashSdkLibStrings.LT | awsDashSdkLib.awsDashSdkLibStrings.GE | awsDashSdkLib.awsDashSdkLibStrings.GT | java.lang.String
+  type ComparisonOperator = _ComparisonOperator | java.lang.String
   type Country = java.lang.String
   type ExcludedRules = js.Array[ExcludedRule]
   type GeoMatchConstraintType = awsDashSdkLib.awsDashSdkLibStrings.Country | java.lang.String
-  type GeoMatchConstraintValue = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 250 */ js.Any
+  type GeoMatchConstraintValue = _GeoMatchConstraintValue | java.lang.String
   type GeoMatchConstraints = js.Array[GeoMatchConstraint]
   type GeoMatchSetSummaries = js.Array[GeoMatchSetSummary]
   type GeoMatchSetUpdates = js.Array[GeoMatchSetUpdate]
@@ -3875,7 +3901,7 @@ object WAFNs extends js.Object {
   type HTTPVersion = java.lang.String
   type HeaderName = java.lang.String
   type HeaderValue = java.lang.String
-  type IPSetDescriptorType = awsDashSdkLib.awsDashSdkLibStrings.IPV4 | awsDashSdkLib.awsDashSdkLibStrings.IPV6 | java.lang.String
+  type IPSetDescriptorType = _IPSetDescriptorType | java.lang.String
   type IPSetDescriptorValue = java.lang.String
   type IPSetDescriptors = js.Array[IPSetDescriptor]
   type IPSetSummaries = js.Array[IPSetSummary]
@@ -3886,15 +3912,15 @@ object WAFNs extends js.Object {
   type ManagedKey = java.lang.String
   type ManagedKeys = js.Array[ManagedKey]
   type MatchFieldData = java.lang.String
-  type MatchFieldType = awsDashSdkLib.awsDashSdkLibStrings.URI | awsDashSdkLib.awsDashSdkLibStrings.QUERY_STRING | awsDashSdkLib.awsDashSdkLibStrings.HEADER | awsDashSdkLib.awsDashSdkLibStrings.METHOD | awsDashSdkLib.awsDashSdkLibStrings.BODY | awsDashSdkLib.awsDashSdkLibStrings.SINGLE_QUERY_ARG | awsDashSdkLib.awsDashSdkLibStrings.ALL_QUERY_ARGS | java.lang.String
+  type MatchFieldType = _MatchFieldType | java.lang.String
   type MetricName = java.lang.String
   type Negated = scala.Boolean
   type NextMarker = java.lang.String
   type PaginationLimit = scala.Double
   type PolicyString = java.lang.String
   type PopulationSize = scala.Double
-  type PositionalConstraint = awsDashSdkLib.awsDashSdkLibStrings.EXACTLY | awsDashSdkLib.awsDashSdkLibStrings.STARTS_WITH | awsDashSdkLib.awsDashSdkLibStrings.ENDS_WITH | awsDashSdkLib.awsDashSdkLibStrings.CONTAINS | awsDashSdkLib.awsDashSdkLibStrings.CONTAINS_WORD | java.lang.String
-  type PredicateType = awsDashSdkLib.awsDashSdkLibStrings.IPMatch | awsDashSdkLib.awsDashSdkLibStrings.ByteMatch | awsDashSdkLib.awsDashSdkLibStrings.SqlInjectionMatch | awsDashSdkLib.awsDashSdkLibStrings.GeoMatch | awsDashSdkLib.awsDashSdkLibStrings.SizeConstraint | awsDashSdkLib.awsDashSdkLibStrings.XssMatch | awsDashSdkLib.awsDashSdkLibStrings.RegexMatch | java.lang.String
+  type PositionalConstraint = _PositionalConstraint | java.lang.String
+  type PredicateType = _PredicateType | java.lang.String
   type Predicates = js.Array[Predicate]
   type RateKey = awsDashSdkLib.awsDashSdkLibStrings.IP | java.lang.String
   type RateLimit = scala.Double
@@ -3924,17 +3950,17 @@ object WAFNs extends js.Object {
   type SqlInjectionMatchSetUpdates = js.Array[SqlInjectionMatchSetUpdate]
   type SqlInjectionMatchTuples = js.Array[SqlInjectionMatchTuple]
   type SubscribedRuleGroupSummaries = js.Array[SubscribedRuleGroupSummary]
-  type TextTransformation = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.COMPRESS_WHITE_SPACE | awsDashSdkLib.awsDashSdkLibStrings.HTML_ENTITY_DECODE | awsDashSdkLib.awsDashSdkLibStrings.LOWERCASE | awsDashSdkLib.awsDashSdkLibStrings.CMD_LINE | awsDashSdkLib.awsDashSdkLibStrings.URL_DECODE | java.lang.String
+  type TextTransformation = _TextTransformation | java.lang.String
   type Timestamp = stdLib.Date
   type URIString = java.lang.String
-  type WafActionType = awsDashSdkLib.awsDashSdkLibStrings.BLOCK | awsDashSdkLib.awsDashSdkLibStrings.ALLOW | awsDashSdkLib.awsDashSdkLibStrings.COUNT | java.lang.String
-  type WafOverrideActionType = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.COUNT | java.lang.String
-  type WafRuleType = awsDashSdkLib.awsDashSdkLibStrings.REGULAR | awsDashSdkLib.awsDashSdkLibStrings.RATE_BASED | awsDashSdkLib.awsDashSdkLibStrings.GROUP | java.lang.String
+  type WafActionType = _WafActionType | java.lang.String
+  type WafOverrideActionType = _WafOverrideActionType | java.lang.String
+  type WafRuleType = _WafRuleType | java.lang.String
   type WebACLSummaries = js.Array[WebACLSummary]
   type WebACLUpdates = js.Array[WebACLUpdate]
   type XssMatchSetSummaries = js.Array[XssMatchSetSummary]
   type XssMatchSetUpdates = js.Array[XssMatchSetUpdate]
   type XssMatchTuples = js.Array[XssMatchTuple]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-08-24` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

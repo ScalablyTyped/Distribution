@@ -34,3 +34,24 @@ trait BitFieldInstance extends js.Object {
   def toBuffer(): nodeLib.Buffer
 }
 
+object BitFieldInstance {
+  @scala.inline
+  def apply(
+    get: js.Function1[scala.Double, scala.Boolean],
+    getByte: js.Function1[scala.Double, scala.Double],
+    pages: memoryDashPagerLib.memoryDashPagerMod.PagerNs.PagerInstance,
+    set: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    setByte: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    toBuffer: js.Function0[nodeLib.Buffer]
+  ): BitFieldInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getByte")(getByte)
+    __obj.updateDynamic("pages")(pages)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("setByte")(setByte)
+    __obj.updateDynamic("toBuffer")(toBuffer)
+    __obj.asInstanceOf[BitFieldInstance]
+  }
+}
+

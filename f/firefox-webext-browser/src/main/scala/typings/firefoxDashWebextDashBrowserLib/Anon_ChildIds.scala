@@ -9,3 +9,12 @@ trait Anon_ChildIds extends js.Object {
   var childIds: js.Array[java.lang.String]
 }
 
+object Anon_ChildIds {
+  @scala.inline
+  def apply(childIds: js.Array[java.lang.String]): Anon_ChildIds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("childIds")(childIds)
+    __obj.asInstanceOf[Anon_ChildIds]
+  }
+}
+

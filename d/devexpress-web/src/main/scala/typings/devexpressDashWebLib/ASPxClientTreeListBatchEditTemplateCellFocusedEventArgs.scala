@@ -21,3 +21,13 @@ trait ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs extends ASPxClient
   var handled: scala.Boolean
 }
 
+object ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs {
+  @scala.inline
+  def apply(column: ASPxClientTreeListColumn, handled: scala.Boolean): ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("handled")(handled)
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs]
+  }
+}
+

@@ -140,3 +140,69 @@ trait Registry extends js.Object {
   def values(cb: js.Function2[/* err */ stdLib.Error, /* result */ js.Array[RegistryItem], scala.Unit]): Registry
 }
 
+object Registry {
+  @scala.inline
+  def apply(
+    arch: java.lang.String,
+    clear: js.Function1[js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    create: js.Function1[js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    destroy: js.Function1[js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    erase: js.Function1[js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    get: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ stdLib.Error, /* result */ RegistryItem, scala.Unit], 
+      Registry
+    ],
+    hive: java.lang.String,
+    host: java.lang.String,
+    key: java.lang.String,
+    keyExists: js.Function1[
+      js.Function2[/* err */ stdLib.Error, /* exists */ scala.Boolean, scala.Unit], 
+      Registry
+    ],
+    keys: js.Function1[
+      js.Function2[/* err */ stdLib.Error, /* result */ js.Array[Registry], scala.Unit], 
+      Registry
+    ],
+    parent: Registry,
+    path: java.lang.String,
+    remove: js.Function2[java.lang.String, js.Function1[/* err */ stdLib.Error, scala.Unit], Registry],
+    set: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      js.Function1[/* err */ stdLib.Error, scala.Unit], 
+      Registry
+    ],
+    valueExists: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ stdLib.Error, /* exists */ scala.Boolean, scala.Unit], 
+      Registry
+    ],
+    values: js.Function1[
+      js.Function2[/* err */ stdLib.Error, /* result */ js.Array[RegistryItem], scala.Unit], 
+      Registry
+    ]
+  ): Registry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arch")(arch)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("erase")(erase)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("hive")(hive)
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("keyExists")(keyExists)
+    __obj.updateDynamic("keys")(keys)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("valueExists")(valueExists)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[Registry]
+  }
+}
+

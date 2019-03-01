@@ -16,3 +16,20 @@ trait ProxySettings[M, S, SL] extends js.Object {
   var Type: ProxySettingsType | ManagedType[ProxySettingsType]
 }
 
+object ProxySettings {
+  @scala.inline
+  def apply[M, S, SL](
+    Type: ProxySettingsType | ManagedType[ProxySettingsType],
+    ExcludeDomains: SL = null,
+    Manual: ManualProxySettings[M, ProxyLocation | ManagedProxyLocation] = null,
+    PAC: S = null
+  ): ProxySettings[M, S, SL] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    if (ExcludeDomains != null) __obj.updateDynamic("ExcludeDomains")(ExcludeDomains.asInstanceOf[js.Any])
+    if (Manual != null) __obj.updateDynamic("Manual")(Manual)
+    if (PAC != null) __obj.updateDynamic("PAC")(PAC.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProxySettings[M, S, SL]]
+  }
+}
+

@@ -20,3 +20,30 @@ trait PublicKeyCredentialCreationOptions extends js.Object {
   var user: PublicKeyCredentialUserEntity
 }
 
+object PublicKeyCredentialCreationOptions {
+  @scala.inline
+  def apply(
+    challenge: stdLib.BufferSource,
+    pubKeyCredParams: js.Array[PublicKeyCredentialParameters],
+    rp: PublicKeyCredentialRpEntity,
+    user: PublicKeyCredentialUserEntity,
+    attestation: AttestationConveyancePreference = null,
+    authenticatorSelection: AuthenticatorSelectionCriteria = null,
+    excludeCredentials: js.Array[PublicKeyCredentialDescriptor] = null,
+    extensions: js.Any = null,
+    timeout: scala.Int | scala.Double = null
+  ): PublicKeyCredentialCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("challenge")(challenge)
+    __obj.updateDynamic("pubKeyCredParams")(pubKeyCredParams)
+    __obj.updateDynamic("rp")(rp)
+    __obj.updateDynamic("user")(user)
+    if (attestation != null) __obj.updateDynamic("attestation")(attestation)
+    if (authenticatorSelection != null) __obj.updateDynamic("authenticatorSelection")(authenticatorSelection)
+    if (excludeCredentials != null) __obj.updateDynamic("excludeCredentials")(excludeCredentials)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PublicKeyCredentialCreationOptions]
+  }
+}
+

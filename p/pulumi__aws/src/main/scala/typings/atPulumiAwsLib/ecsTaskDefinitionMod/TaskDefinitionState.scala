@@ -85,3 +85,48 @@ trait TaskDefinitionState extends js.Object {
   ] = js.undefined
 }
 
+object TaskDefinitionState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    containerDefinitions: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cpu: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    executionRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    family: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipcMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    memory: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    pidMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    placementConstraints: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ExpressionTypeInput]]
+    ] = null,
+    requiresCompatibilities: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    revision: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    taskRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    volumes: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DockerVolumeConfigurationHostPath]
+      ]
+    ] = null
+  ): TaskDefinitionState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (containerDefinitions != null) __obj.updateDynamic("containerDefinitions")(containerDefinitions.asInstanceOf[js.Any])
+    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
+    if (executionRoleArn != null) __obj.updateDynamic("executionRoleArn")(executionRoleArn.asInstanceOf[js.Any])
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (ipcMode != null) __obj.updateDynamic("ipcMode")(ipcMode.asInstanceOf[js.Any])
+    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
+    if (networkMode != null) __obj.updateDynamic("networkMode")(networkMode.asInstanceOf[js.Any])
+    if (pidMode != null) __obj.updateDynamic("pidMode")(pidMode.asInstanceOf[js.Any])
+    if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
+    if (requiresCompatibilities != null) __obj.updateDynamic("requiresCompatibilities")(requiresCompatibilities.asInstanceOf[js.Any])
+    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (taskRoleArn != null) __obj.updateDynamic("taskRoleArn")(taskRoleArn.asInstanceOf[js.Any])
+    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TaskDefinitionState]
+  }
+}
+

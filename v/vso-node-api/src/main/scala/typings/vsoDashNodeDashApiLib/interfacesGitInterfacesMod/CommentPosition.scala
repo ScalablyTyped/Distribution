@@ -16,3 +16,13 @@ trait CommentPosition extends js.Object {
   var offset: scala.Double
 }
 
+object CommentPosition {
+  @scala.inline
+  def apply(line: scala.Double, offset: scala.Double): CommentPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("offset")(offset)
+    __obj.asInstanceOf[CommentPosition]
+  }
+}
+

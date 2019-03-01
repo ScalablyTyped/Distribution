@@ -9,3 +9,14 @@ trait Anon_HtmlEngine extends js.Object {
   var htmlEngine: jsreportDashHtmlDashToDashXlsxLib.jsreportDashHtmlDashToDashXlsxMod.jsreportDashCoreMod.htmlEngine
 }
 
+object Anon_HtmlEngine {
+  @scala.inline
+  def apply(
+    htmlEngine: jsreportDashHtmlDashToDashXlsxLib.jsreportDashHtmlDashToDashXlsxMod.jsreportDashCoreMod.htmlEngine
+  ): Anon_HtmlEngine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("htmlEngine")(htmlEngine)
+    __obj.asInstanceOf[Anon_HtmlEngine]
+  }
+}
+

@@ -36,3 +36,20 @@ trait LoadingOptions extends js.Object {
   var style: js.UndefOr[js.Object] = js.undefined
 }
 
+object LoadingOptions {
+  @scala.inline
+  def apply(
+    hideDuration: scala.Int | scala.Double = null,
+    labelStyle: CSSObject = null,
+    showDuration: scala.Int | scala.Double = null,
+    style: js.Object = null
+  ): LoadingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (hideDuration != null) __obj.updateDynamic("hideDuration")(hideDuration.asInstanceOf[js.Any])
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    if (showDuration != null) __obj.updateDynamic("showDuration")(showDuration.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[LoadingOptions]
+  }
+}
+

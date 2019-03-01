@@ -12,3 +12,20 @@ trait WebhookResponse extends js.Object {
   var statusCode: scala.Double
 }
 
+object WebhookResponse {
+  @scala.inline
+  def apply(
+    headers: js.Any,
+    response: js.Any,
+    status: slackDashNodeLib.slackDashNodeLibStrings.fail | slackDashNodeLib.slackDashNodeLibStrings.ok,
+    statusCode: scala.Double
+  ): WebhookResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("response")(response)
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.asInstanceOf[WebhookResponse]
+  }
+}
+

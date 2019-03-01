@@ -20,3 +20,36 @@ trait RouteConfig extends js.Object {
   var redirect: js.UndefOr[RedirectOption] = js.undefined
 }
 
+object RouteConfig {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    alias: java.lang.String | js.Array[java.lang.String] = null,
+    beforeEnter: NavigationGuard[vueLib.typesVueMod.Vue] = null,
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    children: js.Array[RouteConfig] = null,
+    component: Component = null,
+    components: Dictionary[Component] = null,
+    meta: js.Any = null,
+    name: java.lang.String = null,
+    pathToRegexpOptions: PathToRegexpOptions = null,
+    props: scala.Boolean | js.Object | RoutePropsFunction = null,
+    redirect: RedirectOption = null
+  ): RouteConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    if (beforeEnter != null) __obj.updateDynamic("beforeEnter")(beforeEnter)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (components != null) __obj.updateDynamic("components")(components)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pathToRegexpOptions != null) __obj.updateDynamic("pathToRegexpOptions")(pathToRegexpOptions)
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteConfig]
+  }
+}
+

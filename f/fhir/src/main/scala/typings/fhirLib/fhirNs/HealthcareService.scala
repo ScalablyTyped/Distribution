@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * The details of a healthcare service available at a location
   */
-trait HealthcareService extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait HealthcareService extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */
@@ -137,5 +138,104 @@ trait HealthcareService extends DomainResource {
     * Type of service that may be delivered or performed
     */
   var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+}
+
+object HealthcareService {
+  @scala.inline
+  def apply(
+    _active: Element = null,
+    _appointmentRequired: Element = null,
+    _availabilityExceptions: Element = null,
+    _comment: Element = null,
+    _eligibilityNote: Element = null,
+    _extraDetails: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _name: Element = null,
+    _programName: js.Array[Element] = null,
+    _resourceType: Element = null,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    appointmentRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    availabilityExceptions: java.lang.String = null,
+    availableTime: js.Array[HealthcareServiceAvailableTime] = null,
+    category: CodeableConcept = null,
+    characteristic: js.Array[CodeableConcept] = null,
+    comment: java.lang.String = null,
+    contained: js.Array[Resource] = null,
+    coverageArea: js.Array[Reference] = null,
+    eligibility: CodeableConcept = null,
+    eligibilityNote: java.lang.String = null,
+    endpoint: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    extraDetails: java.lang.String = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    location: js.Array[Reference] = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    name: java.lang.String = null,
+    notAvailable: js.Array[HealthcareServiceNotAvailable] = null,
+    photo: Attachment = null,
+    programName: js.Array[java.lang.String] = null,
+    providedBy: Reference = null,
+    referralMethod: js.Array[CodeableConcept] = null,
+    resourceType: code = null,
+    serviceProvisionCode: js.Array[CodeableConcept] = null,
+    specialty: js.Array[CodeableConcept] = null,
+    telecom: js.Array[ContactPoint] = null,
+    text: Narrative = null,
+    `type`: js.Array[CodeableConcept] = null
+  ): HealthcareService = {
+    val __obj = js.Dynamic.literal()
+    if (_active != null) __obj.updateDynamic("_active")(_active)
+    if (_appointmentRequired != null) __obj.updateDynamic("_appointmentRequired")(_appointmentRequired)
+    if (_availabilityExceptions != null) __obj.updateDynamic("_availabilityExceptions")(_availabilityExceptions)
+    if (_comment != null) __obj.updateDynamic("_comment")(_comment)
+    if (_eligibilityNote != null) __obj.updateDynamic("_eligibilityNote")(_eligibilityNote)
+    if (_extraDetails != null) __obj.updateDynamic("_extraDetails")(_extraDetails)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_programName != null) __obj.updateDynamic("_programName")(_programName)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(appointmentRequired)) __obj.updateDynamic("appointmentRequired")(appointmentRequired)
+    if (availabilityExceptions != null) __obj.updateDynamic("availabilityExceptions")(availabilityExceptions)
+    if (availableTime != null) __obj.updateDynamic("availableTime")(availableTime)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (characteristic != null) __obj.updateDynamic("characteristic")(characteristic)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (coverageArea != null) __obj.updateDynamic("coverageArea")(coverageArea)
+    if (eligibility != null) __obj.updateDynamic("eligibility")(eligibility)
+    if (eligibilityNote != null) __obj.updateDynamic("eligibilityNote")(eligibilityNote)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (extraDetails != null) __obj.updateDynamic("extraDetails")(extraDetails)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (notAvailable != null) __obj.updateDynamic("notAvailable")(notAvailable)
+    if (photo != null) __obj.updateDynamic("photo")(photo)
+    if (programName != null) __obj.updateDynamic("programName")(programName)
+    if (providedBy != null) __obj.updateDynamic("providedBy")(providedBy)
+    if (referralMethod != null) __obj.updateDynamic("referralMethod")(referralMethod)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (serviceProvisionCode != null) __obj.updateDynamic("serviceProvisionCode")(serviceProvisionCode)
+    if (specialty != null) __obj.updateDynamic("specialty")(specialty)
+    if (telecom != null) __obj.updateDynamic("telecom")(telecom)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[HealthcareService]
+  }
 }
 

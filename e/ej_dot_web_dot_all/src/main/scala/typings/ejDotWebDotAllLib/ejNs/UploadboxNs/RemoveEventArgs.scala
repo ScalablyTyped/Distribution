@@ -17,3 +17,14 @@ trait RemoveEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RemoveEventArgs {
+  @scala.inline
+  def apply(fileStatus: js.Any = null, model: js.Any = null, `type`: java.lang.String = null): RemoveEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (fileStatus != null) __obj.updateDynamic("fileStatus")(fileStatus)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RemoveEventArgs]
+  }
+}
+

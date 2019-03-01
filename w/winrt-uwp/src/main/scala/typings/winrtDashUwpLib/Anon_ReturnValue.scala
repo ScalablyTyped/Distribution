@@ -10,3 +10,13 @@ trait Anon_ReturnValue extends js.Object {
   /** True if automatic adjustment is enabled; false otherwise. */ var value: scala.Boolean
 }
 
+object Anon_ReturnValue {
+  @scala.inline
+  def apply(returnValue: scala.Boolean, value: scala.Boolean): Anon_ReturnValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_ReturnValue]
+  }
+}
+

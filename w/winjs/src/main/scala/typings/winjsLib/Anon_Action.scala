@@ -63,3 +63,28 @@ trait Anon_Action extends js.Object {
   def updateProperty(name: java.lang.String, value: js.Any): winjsLib.WinJSNs.Promise[_]
 }
 
+object Anon_Action {
+  @scala.inline
+  def apply(
+    addProperty: js.Function2[java.lang.String, js.Any, scala.Unit],
+    bind: js.Function2[java.lang.String, js.Any, js.Function],
+    getProperty: js.Function1[java.lang.String, js.Any],
+    notify: js.Function3[java.lang.String, java.lang.String, java.lang.String, winjsLib.WinJSNs.Promise[_]],
+    removeProperty: js.Function1[java.lang.String, js.Any],
+    setProperty: js.Function2[java.lang.String, js.Any, js.Any],
+    unbind: js.Function2[java.lang.String, js.Function, js.Any],
+    updateProperty: js.Function2[java.lang.String, js.Any, winjsLib.WinJSNs.Promise[_]]
+  ): Anon_Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addProperty")(addProperty)
+    __obj.updateDynamic("bind")(bind)
+    __obj.updateDynamic("getProperty")(getProperty)
+    __obj.updateDynamic("notify")(notify)
+    __obj.updateDynamic("removeProperty")(removeProperty)
+    __obj.updateDynamic("setProperty")(setProperty)
+    __obj.updateDynamic("unbind")(unbind)
+    __obj.updateDynamic("updateProperty")(updateProperty)
+    __obj.asInstanceOf[Anon_Action]
+  }
+}
+

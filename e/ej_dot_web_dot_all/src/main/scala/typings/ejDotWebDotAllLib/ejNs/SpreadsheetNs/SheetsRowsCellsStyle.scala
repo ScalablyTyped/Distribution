@@ -17,3 +17,18 @@ trait SheetsRowsCellsStyle extends js.Object {
   var fontWeight: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SheetsRowsCellsStyle {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    color: java.lang.String = null,
+    fontWeight: java.lang.String = null
+  ): SheetsRowsCellsStyle = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    __obj.asInstanceOf[SheetsRowsCellsStyle]
+  }
+}
+

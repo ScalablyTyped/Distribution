@@ -123,3 +123,193 @@ trait TextTable
   var Width: scala.Double
 }
 
+object TextTable {
+  @scala.inline
+  def apply(
+    Anchor: XTextRange,
+    AnchorType: TextContentAnchorType,
+    AnchorTypes: activexDashInteropLib.SafeArray[TextContentAnchorType],
+    BackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BackGraphicFilter: java.lang.String,
+    BackGraphicLocation: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.GraphicLocation,
+    BackGraphicURL: java.lang.String,
+    BackTransparent: scala.Boolean,
+    BottomMargin: scala.Double,
+    BreakType: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.BreakType,
+    CellNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ChartColumnAsLabel: scala.Boolean,
+    ChartRowAsLabel: scala.Boolean,
+    CollapsingBorders: scala.Boolean,
+    ColumnDescriptions: activexDashInteropLib.SafeArray[java.lang.String],
+    Columns: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns,
+    Data: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[scala.Double]],
+    DataArray: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]],
+    HeaderRowCount: scala.Double,
+    HoriOrient: scala.Double,
+    IsWidthRelative: scala.Boolean,
+    KeepTogether: scala.Boolean,
+    LeftMargin: scala.Double,
+    Name: java.lang.String,
+    NotANumber: scala.Double,
+    PageDescName: java.lang.String,
+    PageNumberOffset: scala.Double,
+    RelativeWidth: scala.Double,
+    RepeatHeadline: scala.Boolean,
+    RightMargin: scala.Double,
+    RowDescriptions: activexDashInteropLib.SafeArray[java.lang.String],
+    Rows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows,
+    ShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    Split: scala.Boolean,
+    TableBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableBorder,
+    TableColumnRelativeSum: scala.Double,
+    TableColumnSeparators: activexDashInteropLib.SafeArray[TableColumnSeparator],
+    TableInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    TableTemplateName: java.lang.String,
+    TextWrap: WrapTextMode,
+    TopMargin: scala.Double,
+    UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    Width: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addChartDataChangeEventListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataChangeEventListener, 
+      scala.Unit
+    ],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attach: js.Function1[XTextRange, scala.Unit],
+    autoFormat: js.Function1[java.lang.String, scala.Unit],
+    createCursorByCellName: js.Function1[java.lang.String, XTextTableCursor],
+    createSortDescriptor: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    dispose: js.Function0[scala.Unit],
+    getAnchor: js.Function0[XTextRange],
+    getCellByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell],
+    getCellByPosition: js.Function2[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell
+    ],
+    getCellNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getCellRangeByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
+    getCellRangeByPosition: js.Function4[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange
+    ],
+    getColumnDescriptions: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns],
+    getData: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[scala.Double]]],
+    getDataArray: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]],
+    getName: js.Function0[java.lang.String],
+    getNotANumber: js.Function0[scala.Double],
+    getRowDescriptions: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getRows: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows],
+    initialize: js.Function2[scala.Double, scala.Double, scala.Unit],
+    isNotANumber: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChartDataChangeEventListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataChangeEventListener, 
+      scala.Unit
+    ],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setColumnDescriptions: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setData: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      scala.Unit
+    ],
+    setDataArray: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], 
+      scala.Unit
+    ],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setRowDescriptions: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    sort: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): TextTable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Anchor")(Anchor)
+    __obj.updateDynamic("AnchorType")(AnchorType)
+    __obj.updateDynamic("AnchorTypes")(AnchorTypes)
+    __obj.updateDynamic("BackColor")(BackColor)
+    __obj.updateDynamic("BackGraphicFilter")(BackGraphicFilter)
+    __obj.updateDynamic("BackGraphicLocation")(BackGraphicLocation)
+    __obj.updateDynamic("BackGraphicURL")(BackGraphicURL)
+    __obj.updateDynamic("BackTransparent")(BackTransparent)
+    __obj.updateDynamic("BottomMargin")(BottomMargin)
+    __obj.updateDynamic("BreakType")(BreakType)
+    __obj.updateDynamic("CellNames")(CellNames)
+    __obj.updateDynamic("ChartColumnAsLabel")(ChartColumnAsLabel)
+    __obj.updateDynamic("ChartRowAsLabel")(ChartRowAsLabel)
+    __obj.updateDynamic("CollapsingBorders")(CollapsingBorders)
+    __obj.updateDynamic("ColumnDescriptions")(ColumnDescriptions)
+    __obj.updateDynamic("Columns")(Columns)
+    __obj.updateDynamic("Data")(Data)
+    __obj.updateDynamic("DataArray")(DataArray)
+    __obj.updateDynamic("HeaderRowCount")(HeaderRowCount)
+    __obj.updateDynamic("HoriOrient")(HoriOrient)
+    __obj.updateDynamic("IsWidthRelative")(IsWidthRelative)
+    __obj.updateDynamic("KeepTogether")(KeepTogether)
+    __obj.updateDynamic("LeftMargin")(LeftMargin)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("NotANumber")(NotANumber)
+    __obj.updateDynamic("PageDescName")(PageDescName)
+    __obj.updateDynamic("PageNumberOffset")(PageNumberOffset)
+    __obj.updateDynamic("RelativeWidth")(RelativeWidth)
+    __obj.updateDynamic("RepeatHeadline")(RepeatHeadline)
+    __obj.updateDynamic("RightMargin")(RightMargin)
+    __obj.updateDynamic("RowDescriptions")(RowDescriptions)
+    __obj.updateDynamic("Rows")(Rows)
+    __obj.updateDynamic("ShadowFormat")(ShadowFormat)
+    __obj.updateDynamic("Split")(Split)
+    __obj.updateDynamic("TableBorder")(TableBorder)
+    __obj.updateDynamic("TableColumnRelativeSum")(TableColumnRelativeSum)
+    __obj.updateDynamic("TableColumnSeparators")(TableColumnSeparators)
+    __obj.updateDynamic("TableInteropGrabBag")(TableInteropGrabBag)
+    __obj.updateDynamic("TableTemplateName")(TableTemplateName)
+    __obj.updateDynamic("TextWrap")(TextWrap)
+    __obj.updateDynamic("TopMargin")(TopMargin)
+    __obj.updateDynamic("UserDefinedAttributes")(UserDefinedAttributes)
+    __obj.updateDynamic("Width")(Width)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addChartDataChangeEventListener")(addChartDataChangeEventListener)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("attach")(attach)
+    __obj.updateDynamic("autoFormat")(autoFormat)
+    __obj.updateDynamic("createCursorByCellName")(createCursorByCellName)
+    __obj.updateDynamic("createSortDescriptor")(createSortDescriptor)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getAnchor")(getAnchor)
+    __obj.updateDynamic("getCellByName")(getCellByName)
+    __obj.updateDynamic("getCellByPosition")(getCellByPosition)
+    __obj.updateDynamic("getCellNames")(getCellNames)
+    __obj.updateDynamic("getCellRangeByName")(getCellRangeByName)
+    __obj.updateDynamic("getCellRangeByPosition")(getCellRangeByPosition)
+    __obj.updateDynamic("getColumnDescriptions")(getColumnDescriptions)
+    __obj.updateDynamic("getColumns")(getColumns)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("getDataArray")(getDataArray)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getNotANumber")(getNotANumber)
+    __obj.updateDynamic("getRowDescriptions")(getRowDescriptions)
+    __obj.updateDynamic("getRows")(getRows)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("isNotANumber")(isNotANumber)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeChartDataChangeEventListener")(removeChartDataChangeEventListener)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setColumnDescriptions")(setColumnDescriptions)
+    __obj.updateDynamic("setData")(setData)
+    __obj.updateDynamic("setDataArray")(setDataArray)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setRowDescriptions")(setRowDescriptions)
+    __obj.updateDynamic("sort")(sort)
+    __obj.asInstanceOf[TextTable]
+  }
+}
+

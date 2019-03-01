@@ -216,3 +216,95 @@ trait IgVideoPlayer
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgVideoPlayer {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igVideoPlayer
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    autohide: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    bannerClick: BannerClickEvent = null,
+    bannerHidden: BannerHiddenEvent = null,
+    bannerVisible: BannerVisibleEvent = null,
+    banners: js.Array[IgVideoPlayerBanner] = null,
+    bookmarkClick: BookmarkClickEvent = null,
+    bookmarkHit: BookmarkHitEvent = null,
+    bookmarks: js.Array[IgVideoPlayerBookmark] = null,
+    browserControls: js.UndefOr[scala.Boolean] = js.undefined,
+    browserNotSupported: BrowserNotSupportedEvent = null,
+    buffering: BufferingEvent = null,
+    centerButtonHideDelay: scala.Int | scala.Double = null,
+    commercials: IgVideoPlayerCommercials = null,
+    ended: EndedEvent = null,
+    enterFullScreen: EnterFullScreenEvent = null,
+    exitFullScreen: ExitFullScreenEvent = null,
+    fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    height: java.lang.String | scala.Double = null,
+    language: java.lang.String = null,
+    locale: IgVideoPlayerLocale = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    muted: js.UndefOr[scala.Boolean] = js.undefined,
+    paused: PausedEvent = null,
+    playing: PlayingEvent = null,
+    posterUrl: java.lang.String = null,
+    preload: js.UndefOr[scala.Boolean] = js.undefined,
+    progress: ProgressEvent = null,
+    progressLabelFormat: java.lang.String = null,
+    regional: java.lang.String | js.Object = null,
+    relatedVideoClick: RelatedVideoClickEvent = null,
+    relatedVideos: js.Array[IgVideoPlayerRelatedVideo] = null,
+    showSeekTime: js.UndefOr[scala.Boolean] = js.undefined,
+    sources: js.Array[_] = null,
+    title: java.lang.String = null,
+    volume: scala.Int | scala.Double = null,
+    volumeAutohideDelay: scala.Int | scala.Double = null,
+    waiting: WaitingEvent = null,
+    width: java.lang.String | scala.Double = null
+  ): IgVideoPlayer = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (bannerClick != null) __obj.updateDynamic("bannerClick")(bannerClick)
+    if (bannerHidden != null) __obj.updateDynamic("bannerHidden")(bannerHidden)
+    if (bannerVisible != null) __obj.updateDynamic("bannerVisible")(bannerVisible)
+    if (banners != null) __obj.updateDynamic("banners")(banners)
+    if (bookmarkClick != null) __obj.updateDynamic("bookmarkClick")(bookmarkClick)
+    if (bookmarkHit != null) __obj.updateDynamic("bookmarkHit")(bookmarkHit)
+    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks)
+    if (!js.isUndefined(browserControls)) __obj.updateDynamic("browserControls")(browserControls)
+    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(browserNotSupported)
+    if (buffering != null) __obj.updateDynamic("buffering")(buffering)
+    if (centerButtonHideDelay != null) __obj.updateDynamic("centerButtonHideDelay")(centerButtonHideDelay.asInstanceOf[js.Any])
+    if (commercials != null) __obj.updateDynamic("commercials")(commercials)
+    if (ended != null) __obj.updateDynamic("ended")(ended)
+    if (enterFullScreen != null) __obj.updateDynamic("enterFullScreen")(enterFullScreen)
+    if (exitFullScreen != null) __obj.updateDynamic("exitFullScreen")(exitFullScreen)
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (paused != null) __obj.updateDynamic("paused")(paused)
+    if (playing != null) __obj.updateDynamic("playing")(playing)
+    if (posterUrl != null) __obj.updateDynamic("posterUrl")(posterUrl)
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (progressLabelFormat != null) __obj.updateDynamic("progressLabelFormat")(progressLabelFormat)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (relatedVideoClick != null) __obj.updateDynamic("relatedVideoClick")(relatedVideoClick)
+    if (relatedVideos != null) __obj.updateDynamic("relatedVideos")(relatedVideos)
+    if (!js.isUndefined(showSeekTime)) __obj.updateDynamic("showSeekTime")(showSeekTime)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    if (volumeAutohideDelay != null) __obj.updateDynamic("volumeAutohideDelay")(volumeAutohideDelay.asInstanceOf[js.Any])
+    if (waiting != null) __obj.updateDynamic("waiting")(waiting)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgVideoPlayer]
+  }
+}
+

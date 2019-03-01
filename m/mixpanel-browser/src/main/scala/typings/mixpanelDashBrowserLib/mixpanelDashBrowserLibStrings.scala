@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object mixpanelDashBrowserLibStrings {
   @js.native
-  sealed trait cookie extends js.Object
+  sealed trait cookie
+    extends mixpanelDashBrowserLib.mixpanelDashBrowserMod.Persistence
   
   @js.native
-  sealed trait localStorage extends js.Object
+  sealed trait localStorage
+    extends mixpanelDashBrowserLib.mixpanelDashBrowserMod.Persistence
   
   @scala.inline
   def cookie: cookie = "cookie".asInstanceOf[cookie]

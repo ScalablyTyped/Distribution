@@ -14,3 +14,27 @@ trait ActivitiesResource extends js.Object {
   def list(request: gapiDotClientDotPlusdomainsLib.Anon_AltCollection): gapiDotClientLib.gapiNs.clientNs.Request[ActivityFeed]
 }
 
+object ActivitiesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_ActivityId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Activity]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Activity]
+    ],
+    list: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltCollection, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ActivityFeed]
+    ]
+  ): ActivitiesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ActivitiesResource]
+  }
+}
+

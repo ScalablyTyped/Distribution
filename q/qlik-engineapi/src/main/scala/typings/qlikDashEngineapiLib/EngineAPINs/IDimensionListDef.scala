@@ -19,3 +19,13 @@ trait IDimensionListDef extends js.Object {
   var qType: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.dimension
 }
 
+object IDimensionListDef {
+  @scala.inline
+  def apply(qData: js.Any, qType: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.dimension): IDimensionListDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qData")(qData)
+    __obj.updateDynamic("qType")(qType)
+    __obj.asInstanceOf[IDimensionListDef]
+  }
+}
+

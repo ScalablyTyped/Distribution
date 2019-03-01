@@ -39,3 +39,26 @@ trait IShaderMaterialOptions extends js.Object {
   var uniforms: js.Array[java.lang.String]
 }
 
+object IShaderMaterialOptions {
+  @scala.inline
+  def apply(
+    attributes: js.Array[java.lang.String],
+    defines: js.Array[java.lang.String],
+    needAlphaBlending: scala.Boolean,
+    needAlphaTesting: scala.Boolean,
+    samplers: js.Array[java.lang.String],
+    uniformBuffers: js.Array[java.lang.String],
+    uniforms: js.Array[java.lang.String]
+  ): IShaderMaterialOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attributes")(attributes)
+    __obj.updateDynamic("defines")(defines)
+    __obj.updateDynamic("needAlphaBlending")(needAlphaBlending)
+    __obj.updateDynamic("needAlphaTesting")(needAlphaTesting)
+    __obj.updateDynamic("samplers")(samplers)
+    __obj.updateDynamic("uniformBuffers")(uniformBuffers)
+    __obj.updateDynamic("uniforms")(uniforms)
+    __obj.asInstanceOf[IShaderMaterialOptions]
+  }
+}
+

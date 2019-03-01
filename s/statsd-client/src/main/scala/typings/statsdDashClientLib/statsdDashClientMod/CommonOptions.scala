@@ -34,3 +34,22 @@ trait CommonOptions extends js.Object {
   var tcp: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CommonOptions {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    prefix: java.lang.String = null,
+    socketTimeout: scala.Int | scala.Double = null,
+    tags: Tags = null,
+    tcp: js.UndefOr[scala.Boolean] = js.undefined
+  ): CommonOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (!js.isUndefined(tcp)) __obj.updateDynamic("tcp")(tcp)
+    __obj.asInstanceOf[CommonOptions]
+  }
+}
+

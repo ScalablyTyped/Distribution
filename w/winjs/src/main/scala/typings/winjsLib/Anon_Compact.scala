@@ -24,3 +24,20 @@ trait Anon_Compact extends js.Object {
   var none: java.lang.String
 }
 
+object Anon_Compact {
+  @scala.inline
+  def apply(
+    compact: java.lang.String,
+    full: java.lang.String,
+    minimal: java.lang.String,
+    none: java.lang.String
+  ): Anon_Compact = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compact")(compact)
+    __obj.updateDynamic("full")(full)
+    __obj.updateDynamic("minimal")(minimal)
+    __obj.updateDynamic("none")(none)
+    __obj.asInstanceOf[Anon_Compact]
+  }
+}
+

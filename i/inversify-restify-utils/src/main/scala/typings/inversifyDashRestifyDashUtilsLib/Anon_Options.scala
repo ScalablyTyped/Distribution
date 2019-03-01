@@ -10,3 +10,16 @@ trait Anon_Options extends js.Object {
   var path: inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.StrOrRegex
 }
 
+object Anon_Options {
+  @scala.inline
+  def apply(
+    options: js.Object,
+    path: inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.StrOrRegex
+  ): Anon_Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Options]
+  }
+}
+

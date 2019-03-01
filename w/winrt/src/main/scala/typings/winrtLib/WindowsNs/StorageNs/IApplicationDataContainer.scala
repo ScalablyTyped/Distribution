@@ -14,3 +14,24 @@ trait IApplicationDataContainer extends js.Object {
   def deleteContainer(name: java.lang.String): scala.Unit
 }
 
+object IApplicationDataContainer {
+  @scala.inline
+  def apply(
+    containers: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, ApplicationDataContainer],
+    createContainer: js.Function2[java.lang.String, ApplicationDataCreateDisposition, ApplicationDataContainer],
+    deleteContainer: js.Function1[java.lang.String, scala.Unit],
+    locality: ApplicationDataLocality,
+    name: java.lang.String,
+    values: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
+  ): IApplicationDataContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("containers")(containers)
+    __obj.updateDynamic("createContainer")(createContainer)
+    __obj.updateDynamic("deleteContainer")(deleteContainer)
+    __obj.updateDynamic("locality")(locality)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[IApplicationDataContainer]
+  }
+}
+

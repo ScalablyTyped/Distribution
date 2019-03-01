@@ -16,3 +16,13 @@ trait ListTablesOutput extends js.Object {
   var TableNames: js.UndefOr[TableNameList] = js.undefined
 }
 
+object ListTablesOutput {
+  @scala.inline
+  def apply(LastEvaluatedTableName: TableName = null, TableNames: TableNameList = null): ListTablesOutput = {
+    val __obj = js.Dynamic.literal()
+    if (LastEvaluatedTableName != null) __obj.updateDynamic("LastEvaluatedTableName")(LastEvaluatedTableName)
+    if (TableNames != null) __obj.updateDynamic("TableNames")(TableNames)
+    __obj.asInstanceOf[ListTablesOutput]
+  }
+}
+

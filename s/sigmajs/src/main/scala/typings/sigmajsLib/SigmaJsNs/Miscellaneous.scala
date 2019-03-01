@@ -9,3 +9,12 @@ trait Miscellaneous extends js.Object {
   var animation: Animation
 }
 
+object Miscellaneous {
+  @scala.inline
+  def apply(animation: Animation): Miscellaneous = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animation")(animation)
+    __obj.asInstanceOf[Miscellaneous]
+  }
+}
+

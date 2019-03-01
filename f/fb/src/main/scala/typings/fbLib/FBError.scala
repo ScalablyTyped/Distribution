@@ -15,3 +15,25 @@ trait FBError extends js.Object {
   var `type`: java.lang.String
 }
 
+object FBError {
+  @scala.inline
+  def apply(
+    code: scala.Double,
+    fbtrace_id: java.lang.String,
+    message: java.lang.String,
+    `type`: java.lang.String,
+    error_subcode: scala.Int | scala.Double = null,
+    error_user_msg: java.lang.String = null,
+    error_user_title: java.lang.String = null
+  ): FBError = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("fbtrace_id")(fbtrace_id)
+    __obj.updateDynamic("message")(message)
+    if (error_subcode != null) __obj.updateDynamic("error_subcode")(error_subcode.asInstanceOf[js.Any])
+    if (error_user_msg != null) __obj.updateDynamic("error_user_msg")(error_user_msg)
+    if (error_user_title != null) __obj.updateDynamic("error_user_title")(error_user_title)
+    __obj.asInstanceOf[FBError]
+  }
+}
+

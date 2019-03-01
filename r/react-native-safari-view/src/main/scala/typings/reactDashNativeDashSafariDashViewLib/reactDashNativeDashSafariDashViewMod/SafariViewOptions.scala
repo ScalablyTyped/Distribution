@@ -33,3 +33,22 @@ trait SafariViewOptions extends js.Object {
   var url: java.lang.String
 }
 
+object SafariViewOptions {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    barTintColor: java.lang.String = null,
+    fromBottom: js.UndefOr[scala.Boolean] = js.undefined,
+    readerMode: js.UndefOr[scala.Boolean] = js.undefined,
+    tintColor: java.lang.String = null
+  ): SafariViewOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor)
+    if (!js.isUndefined(fromBottom)) __obj.updateDynamic("fromBottom")(fromBottom)
+    if (!js.isUndefined(readerMode)) __obj.updateDynamic("readerMode")(readerMode)
+    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
+    __obj.asInstanceOf[SafariViewOptions]
+  }
+}
+

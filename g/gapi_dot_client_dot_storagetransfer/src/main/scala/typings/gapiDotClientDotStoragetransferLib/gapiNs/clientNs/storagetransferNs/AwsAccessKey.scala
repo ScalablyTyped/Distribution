@@ -18,3 +18,13 @@ trait AwsAccessKey extends js.Object {
   var secretAccessKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AwsAccessKey {
+  @scala.inline
+  def apply(accessKeyId: java.lang.String = null, secretAccessKey: java.lang.String = null): AwsAccessKey = {
+    val __obj = js.Dynamic.literal()
+    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId)
+    if (secretAccessKey != null) __obj.updateDynamic("secretAccessKey")(secretAccessKey)
+    __obj.asInstanceOf[AwsAccessKey]
+  }
+}
+

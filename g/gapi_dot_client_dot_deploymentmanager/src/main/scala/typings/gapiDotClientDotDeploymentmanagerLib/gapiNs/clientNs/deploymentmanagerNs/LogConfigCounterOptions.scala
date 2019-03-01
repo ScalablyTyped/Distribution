@@ -12,3 +12,13 @@ trait LogConfigCounterOptions extends js.Object {
   var metric: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogConfigCounterOptions {
+  @scala.inline
+  def apply(field: java.lang.String = null, metric: java.lang.String = null): LogConfigCounterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (metric != null) __obj.updateDynamic("metric")(metric)
+    __obj.asInstanceOf[LogConfigCounterOptions]
+  }
+}
+

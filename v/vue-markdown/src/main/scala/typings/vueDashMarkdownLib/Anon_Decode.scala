@@ -12,3 +12,15 @@ trait Anon_Decode extends js.Object {
   var parse: js.Any
 }
 
+object Anon_Decode {
+  @scala.inline
+  def apply(decode: js.Any, encode: js.Any, format: js.Any, parse: js.Any): Anon_Decode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decode")(decode)
+    __obj.updateDynamic("encode")(encode)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("parse")(parse)
+    __obj.asInstanceOf[Anon_Decode]
+  }
+}
+

@@ -19,3 +19,13 @@ trait GetFileOptions extends js.Object {
   var sliceSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GetFileOptions {
+  @scala.inline
+  def apply(asyncContext: js.Any = null, sliceSize: scala.Int | scala.Double = null): GetFileOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (sliceSize != null) __obj.updateDynamic("sliceSize")(sliceSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetFileOptions]
+  }
+}
+

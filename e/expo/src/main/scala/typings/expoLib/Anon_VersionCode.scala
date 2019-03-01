@@ -9,3 +9,12 @@ trait Anon_VersionCode extends js.Object {
   var versionCode: java.lang.String
 }
 
+object Anon_VersionCode {
+  @scala.inline
+  def apply(versionCode: java.lang.String): Anon_VersionCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("versionCode")(versionCode)
+    __obj.asInstanceOf[Anon_VersionCode]
+  }
+}
+

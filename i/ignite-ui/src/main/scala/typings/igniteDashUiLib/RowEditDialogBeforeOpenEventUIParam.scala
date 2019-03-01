@@ -16,3 +16,13 @@ trait RowEditDialogBeforeOpenEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowEditDialogBeforeOpenEventUIParam {
+  @scala.inline
+  def apply(dialogElement: js.Any = null, owner: js.Any = null): RowEditDialogBeforeOpenEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (dialogElement != null) __obj.updateDynamic("dialogElement")(dialogElement)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[RowEditDialogBeforeOpenEventUIParam]
+  }
+}
+

@@ -12,3 +12,18 @@ import scala.scalajs.js.annotation._
   var withTheme: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WithStylesOptions {
+  @scala.inline
+  def apply[ClassKey /* <: java.lang.String */](
+    flip: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    withTheme: js.UndefOr[scala.Boolean] = js.undefined
+  ): WithStylesOptions[ClassKey] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(flip)) __obj.updateDynamic("flip")(flip)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(withTheme)) __obj.updateDynamic("withTheme")(withTheme)
+    __obj.asInstanceOf[WithStylesOptions[ClassKey]]
+  }
+}
+

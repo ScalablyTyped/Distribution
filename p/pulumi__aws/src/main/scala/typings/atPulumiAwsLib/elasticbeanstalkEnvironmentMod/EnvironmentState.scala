@@ -135,3 +135,60 @@ trait EnvironmentState extends js.Object {
   val waitForReadyTimeout: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object EnvironmentState {
+  @scala.inline
+  def apply(
+    allSettings: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameNamespaceResource]]
+    ] = null,
+    application: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    autoscalingGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    cname: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cnamePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instances: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    launchConfigurations: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    loadBalancers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    platformArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    pollInterval: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    queues: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    settings: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameNamespaceResource]]
+    ] = null,
+    solutionStackName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    templateName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    triggers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    version: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion] = null,
+    waitForReadyTimeout: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): EnvironmentState = {
+    val __obj = js.Dynamic.literal()
+    if (allSettings != null) __obj.updateDynamic("allSettings")(allSettings.asInstanceOf[js.Any])
+    if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (autoscalingGroups != null) __obj.updateDynamic("autoscalingGroups")(autoscalingGroups.asInstanceOf[js.Any])
+    if (cname != null) __obj.updateDynamic("cname")(cname.asInstanceOf[js.Any])
+    if (cnamePrefix != null) __obj.updateDynamic("cnamePrefix")(cnamePrefix.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
+    if (launchConfigurations != null) __obj.updateDynamic("launchConfigurations")(launchConfigurations.asInstanceOf[js.Any])
+    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (platformArn != null) __obj.updateDynamic("platformArn")(platformArn.asInstanceOf[js.Any])
+    if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
+    if (queues != null) __obj.updateDynamic("queues")(queues.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    if (solutionStackName != null) __obj.updateDynamic("solutionStackName")(solutionStackName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])
+    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
+    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (waitForReadyTimeout != null) __obj.updateDynamic("waitForReadyTimeout")(waitForReadyTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EnvironmentState]
+  }
+}
+

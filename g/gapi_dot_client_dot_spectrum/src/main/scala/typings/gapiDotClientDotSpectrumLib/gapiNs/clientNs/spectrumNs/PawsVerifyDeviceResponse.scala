@@ -33,3 +33,22 @@ trait PawsVerifyDeviceResponse extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PawsVerifyDeviceResponse {
+  @scala.inline
+  def apply(
+    databaseChange: DbUpdateSpec = null,
+    deviceValidities: js.Array[DeviceValidity] = null,
+    kind: java.lang.String = null,
+    `type`: java.lang.String = null,
+    version: java.lang.String = null
+  ): PawsVerifyDeviceResponse = {
+    val __obj = js.Dynamic.literal()
+    if (databaseChange != null) __obj.updateDynamic("databaseChange")(databaseChange)
+    if (deviceValidities != null) __obj.updateDynamic("deviceValidities")(deviceValidities)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PawsVerifyDeviceResponse]
+  }
+}
+

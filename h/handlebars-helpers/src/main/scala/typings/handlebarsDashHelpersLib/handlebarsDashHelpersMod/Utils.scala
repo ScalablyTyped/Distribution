@@ -32,3 +32,22 @@ trait Utils extends js.Object {
   def contains[T](`val`: js.Array[T], obj: T, start: scala.Double): scala.Boolean
 }
 
+object Utils {
+  @scala.inline
+  def apply(
+    changecase: js.Function2[
+      java.lang.String, 
+      js.Function1[/* str */ java.lang.String, java.lang.String], 
+      java.lang.String
+    ],
+    chop: js.Function1[java.lang.String, java.lang.String],
+    contains: js.Function3[js.Array[js.Any], js.Any, scala.Double, scala.Boolean]
+  ): Utils = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changecase")(changecase)
+    __obj.updateDynamic("chop")(chop)
+    __obj.updateDynamic("contains")(contains)
+    __obj.asInstanceOf[Utils]
+  }
+}
+

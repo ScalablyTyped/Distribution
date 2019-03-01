@@ -11,3 +11,18 @@ trait Anon_ConnectionName extends js.Object {
   var path: java.lang.String
 }
 
+object Anon_ConnectionName {
+  @scala.inline
+  def apply(
+    connectionName: java.lang.String,
+    path: java.lang.String,
+    exclusions: js.Array[java.lang.String] = null
+  ): Anon_ConnectionName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connectionName")(connectionName)
+    __obj.updateDynamic("path")(path)
+    if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions)
+    __obj.asInstanceOf[Anon_ConnectionName]
+  }
+}
+

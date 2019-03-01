@@ -54,3 +54,52 @@ trait XControl
   def setModel(Model: XControlModel): scala.Boolean
 }
 
+object XControl {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Model: XControlModel,
+    Peer: XWindowPeer,
+    View: XView,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    createPeer: js.Function2[XToolkit, XWindowPeer, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getModel: js.Function0[XControlModel],
+    getPeer: js.Function0[XWindowPeer],
+    getView: js.Function0[XView],
+    isDesignMode: js.Function0[scala.Boolean],
+    isTransparent: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setContext: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    setDesignMode: js.Function1[scala.Boolean, scala.Unit],
+    setModel: js.Function1[XControlModel, scala.Boolean]
+  ): XControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Model")(Model)
+    __obj.updateDynamic("Peer")(Peer)
+    __obj.updateDynamic("View")(View)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("createPeer")(createPeer)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getContext")(getContext)
+    __obj.updateDynamic("getModel")(getModel)
+    __obj.updateDynamic("getPeer")(getPeer)
+    __obj.updateDynamic("getView")(getView)
+    __obj.updateDynamic("isDesignMode")(isDesignMode)
+    __obj.updateDynamic("isTransparent")(isTransparent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setContext")(setContext)
+    __obj.updateDynamic("setDesignMode")(setDesignMode)
+    __obj.updateDynamic("setModel")(setModel)
+    __obj.asInstanceOf[XControl]
+  }
+}
+

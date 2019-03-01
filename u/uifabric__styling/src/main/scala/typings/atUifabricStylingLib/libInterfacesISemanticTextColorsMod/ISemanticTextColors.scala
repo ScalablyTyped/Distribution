@@ -123,3 +123,70 @@ trait ISemanticTextColors extends js.Object {
   var warningText: java.lang.String
 }
 
+object ISemanticTextColors {
+  @scala.inline
+  def apply(
+    accentButtonText: java.lang.String,
+    actionLink: java.lang.String,
+    actionLinkHovered: java.lang.String,
+    bodySubtext: java.lang.String,
+    bodyText: java.lang.String,
+    bodyTextChecked: java.lang.String,
+    buttonText: java.lang.String,
+    buttonTextChecked: java.lang.String,
+    buttonTextCheckedHovered: java.lang.String,
+    buttonTextDisabled: java.lang.String,
+    buttonTextHovered: java.lang.String,
+    buttonTextPressed: java.lang.String,
+    disabledBodySubtext: java.lang.String,
+    disabledBodyText: java.lang.String,
+    disabledSubtext: java.lang.String,
+    disabledText: java.lang.String,
+    errorText: java.lang.String,
+    inputPlaceholderText: java.lang.String,
+    inputText: java.lang.String,
+    inputTextHovered: java.lang.String,
+    link: java.lang.String,
+    linkHovered: java.lang.String,
+    listText: java.lang.String,
+    listTextColor: java.lang.String,
+    primaryButtonText: java.lang.String,
+    primaryButtonTextDisabled: java.lang.String,
+    primaryButtonTextHovered: java.lang.String,
+    primaryButtonTextPressed: java.lang.String,
+    warningText: java.lang.String
+  ): ISemanticTextColors = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accentButtonText")(accentButtonText)
+    __obj.updateDynamic("actionLink")(actionLink)
+    __obj.updateDynamic("actionLinkHovered")(actionLinkHovered)
+    __obj.updateDynamic("bodySubtext")(bodySubtext)
+    __obj.updateDynamic("bodyText")(bodyText)
+    __obj.updateDynamic("bodyTextChecked")(bodyTextChecked)
+    __obj.updateDynamic("buttonText")(buttonText)
+    __obj.updateDynamic("buttonTextChecked")(buttonTextChecked)
+    __obj.updateDynamic("buttonTextCheckedHovered")(buttonTextCheckedHovered)
+    __obj.updateDynamic("buttonTextDisabled")(buttonTextDisabled)
+    __obj.updateDynamic("buttonTextHovered")(buttonTextHovered)
+    __obj.updateDynamic("buttonTextPressed")(buttonTextPressed)
+    __obj.updateDynamic("disabledBodySubtext")(disabledBodySubtext)
+    __obj.updateDynamic("disabledBodyText")(disabledBodyText)
+    __obj.updateDynamic("disabledSubtext")(disabledSubtext)
+    __obj.updateDynamic("disabledText")(disabledText)
+    __obj.updateDynamic("errorText")(errorText)
+    __obj.updateDynamic("inputPlaceholderText")(inputPlaceholderText)
+    __obj.updateDynamic("inputText")(inputText)
+    __obj.updateDynamic("inputTextHovered")(inputTextHovered)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("linkHovered")(linkHovered)
+    __obj.updateDynamic("listText")(listText)
+    __obj.updateDynamic("listTextColor")(listTextColor)
+    __obj.updateDynamic("primaryButtonText")(primaryButtonText)
+    __obj.updateDynamic("primaryButtonTextDisabled")(primaryButtonTextDisabled)
+    __obj.updateDynamic("primaryButtonTextHovered")(primaryButtonTextHovered)
+    __obj.updateDynamic("primaryButtonTextPressed")(primaryButtonTextPressed)
+    __obj.updateDynamic("warningText")(warningText)
+    __obj.asInstanceOf[ISemanticTextColors]
+  }
+}
+

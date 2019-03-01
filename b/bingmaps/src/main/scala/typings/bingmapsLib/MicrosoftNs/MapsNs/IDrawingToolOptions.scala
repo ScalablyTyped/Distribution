@@ -10,3 +10,12 @@ trait IDrawingToolOptions extends js.Object {
   var drawingBarActions: js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.DrawingBarAction] = js.undefined
 }
 
+object IDrawingToolOptions {
+  @scala.inline
+  def apply(drawingBarActions: bingmapsLib.MicrosoftNs.MapsNs.DrawingToolsNs.DrawingBarAction = null): IDrawingToolOptions = {
+    val __obj = js.Dynamic.literal()
+    if (drawingBarActions != null) __obj.updateDynamic("drawingBarActions")(drawingBarActions)
+    __obj.asInstanceOf[IDrawingToolOptions]
+  }
+}
+

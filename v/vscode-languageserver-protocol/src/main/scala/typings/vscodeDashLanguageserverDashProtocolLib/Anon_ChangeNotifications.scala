@@ -22,3 +22,16 @@ trait Anon_ChangeNotifications extends js.Object {
   var supported: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ChangeNotifications {
+  @scala.inline
+  def apply(
+    changeNotifications: java.lang.String | scala.Boolean = null,
+    supported: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ChangeNotifications = {
+    val __obj = js.Dynamic.literal()
+    if (changeNotifications != null) __obj.updateDynamic("changeNotifications")(changeNotifications.asInstanceOf[js.Any])
+    if (!js.isUndefined(supported)) __obj.updateDynamic("supported")(supported)
+    __obj.asInstanceOf[Anon_ChangeNotifications]
+  }
+}
+

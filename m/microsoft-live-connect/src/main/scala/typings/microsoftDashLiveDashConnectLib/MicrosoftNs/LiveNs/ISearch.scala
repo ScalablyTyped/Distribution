@@ -23,3 +23,13 @@ trait ISearch extends js.Object {
   var paging: js.UndefOr[microsoftDashLiveDashConnectLib.Anon_Next] = js.undefined
 }
 
+object ISearch {
+  @scala.inline
+  def apply(data: js.Array[IObject], paging: microsoftDashLiveDashConnectLib.Anon_Next = null): ISearch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (paging != null) __obj.updateDynamic("paging")(paging)
+    __obj.asInstanceOf[ISearch]
+  }
+}
+

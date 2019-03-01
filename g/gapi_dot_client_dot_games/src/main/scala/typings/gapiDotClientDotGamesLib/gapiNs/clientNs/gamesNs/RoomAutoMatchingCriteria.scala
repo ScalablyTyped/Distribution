@@ -19,3 +19,20 @@ trait RoomAutoMatchingCriteria extends js.Object {
   var minAutoMatchingPlayers: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RoomAutoMatchingCriteria {
+  @scala.inline
+  def apply(
+    exclusiveBitmask: java.lang.String = null,
+    kind: java.lang.String = null,
+    maxAutoMatchingPlayers: scala.Int | scala.Double = null,
+    minAutoMatchingPlayers: scala.Int | scala.Double = null
+  ): RoomAutoMatchingCriteria = {
+    val __obj = js.Dynamic.literal()
+    if (exclusiveBitmask != null) __obj.updateDynamic("exclusiveBitmask")(exclusiveBitmask)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maxAutoMatchingPlayers != null) __obj.updateDynamic("maxAutoMatchingPlayers")(maxAutoMatchingPlayers.asInstanceOf[js.Any])
+    if (minAutoMatchingPlayers != null) __obj.updateDynamic("minAutoMatchingPlayers")(minAutoMatchingPlayers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoomAutoMatchingCriteria]
+  }
+}
+

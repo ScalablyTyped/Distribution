@@ -16,3 +16,28 @@ trait JsonNode extends js.Object {
   var sets: js.Any
 }
 
+object JsonNode {
+  @scala.inline
+  def apply(
+    attributes: js.Any,
+    base: java.lang.String,
+    constratints: js.Any,
+    meta: js.Any,
+    parent: java.lang.String,
+    pointers: js.Any,
+    registry: js.Any,
+    sets: js.Any
+  ): JsonNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attributes")(attributes)
+    __obj.updateDynamic("base")(base)
+    __obj.updateDynamic("constratints")(constratints)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("pointers")(pointers)
+    __obj.updateDynamic("registry")(registry)
+    __obj.updateDynamic("sets")(sets)
+    __obj.asInstanceOf[JsonNode]
+  }
+}
+

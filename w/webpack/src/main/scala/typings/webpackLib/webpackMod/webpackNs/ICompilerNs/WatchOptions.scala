@@ -22,3 +22,18 @@ trait WatchOptions extends js.Object {
   var poll: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
 }
 
+object WatchOptions {
+  @scala.inline
+  def apply(
+    aggregateTimeout: scala.Int | scala.Double = null,
+    ignored: anymatchLib.anymatchMod.anymatchNs.Matcher = null,
+    poll: scala.Boolean | scala.Double = null
+  ): WatchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (aggregateTimeout != null) __obj.updateDynamic("aggregateTimeout")(aggregateTimeout.asInstanceOf[js.Any])
+    if (ignored != null) __obj.updateDynamic("ignored")(ignored.asInstanceOf[js.Any])
+    if (poll != null) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WatchOptions]
+  }
+}
+

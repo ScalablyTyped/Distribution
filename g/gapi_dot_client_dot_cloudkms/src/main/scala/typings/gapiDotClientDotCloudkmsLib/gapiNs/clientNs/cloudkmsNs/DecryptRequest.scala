@@ -18,3 +18,13 @@ trait DecryptRequest extends js.Object {
   var ciphertext: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DecryptRequest {
+  @scala.inline
+  def apply(additionalAuthenticatedData: java.lang.String = null, ciphertext: java.lang.String = null): DecryptRequest = {
+    val __obj = js.Dynamic.literal()
+    if (additionalAuthenticatedData != null) __obj.updateDynamic("additionalAuthenticatedData")(additionalAuthenticatedData)
+    if (ciphertext != null) __obj.updateDynamic("ciphertext")(ciphertext)
+    __obj.asInstanceOf[DecryptRequest]
+  }
+}
+

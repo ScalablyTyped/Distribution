@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object atBlueprintjsCoreLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends atBlueprintjsCoreLib.libEsmCommonElevationMod.Elevation
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends atBlueprintjsCoreLib.libEsmCommonElevationMod.Elevation
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends atBlueprintjsCoreLib.libEsmCommonElevationMod.Elevation
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends atBlueprintjsCoreLib.libEsmCommonElevationMod.Elevation
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends atBlueprintjsCoreLib.libEsmCommonElevationMod.Elevation
   
   @js.native
   sealed trait `false` extends js.Object

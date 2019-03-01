@@ -20,3 +20,18 @@ trait ParallelOptions extends js.Object {
   var synchronous: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ParallelOptions {
+  @scala.inline
+  def apply(
+    evalPath: java.lang.String = null,
+    maxWorkers: scala.Int | scala.Double = null,
+    synchronous: js.UndefOr[scala.Boolean] = js.undefined
+  ): ParallelOptions = {
+    val __obj = js.Dynamic.literal()
+    if (evalPath != null) __obj.updateDynamic("evalPath")(evalPath)
+    if (maxWorkers != null) __obj.updateDynamic("maxWorkers")(maxWorkers.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous)
+    __obj.asInstanceOf[ParallelOptions]
+  }
+}
+

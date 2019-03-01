@@ -24,3 +24,36 @@ trait Anon_Async extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Async {
+  @scala.inline
+  def apply(
+    body: astDashTypesLib.genKindsMod.BlockStatementKind,
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    defaults: js.Array[astDashTypesLib.genKindsMod.ExpressionKind | scala.Null] = null,
+    expression: js.UndefOr[scala.Boolean] = js.undefined,
+    generator: js.UndefOr[scala.Boolean] = js.undefined,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    rest: astDashTypesLib.genKindsMod.IdentifierKind = null,
+    returnType: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): Anon_Async = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("params")(params)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression)
+    if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (rest != null) __obj.updateDynamic("rest")(rest)
+    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Async]
+  }
+}
+

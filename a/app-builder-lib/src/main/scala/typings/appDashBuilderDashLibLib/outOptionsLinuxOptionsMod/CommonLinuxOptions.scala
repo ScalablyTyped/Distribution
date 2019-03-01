@@ -28,3 +28,22 @@ trait CommonLinuxOptions extends js.Object {
   val synopsis: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object CommonLinuxOptions {
+  @scala.inline
+  def apply(
+    category: java.lang.String = null,
+    description: java.lang.String = null,
+    desktop: js.Any = null,
+    mimeTypes: js.Array[java.lang.String] = null,
+    synopsis: java.lang.String = null
+  ): CommonLinuxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (desktop != null) __obj.updateDynamic("desktop")(desktop)
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
+    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis)
+    __obj.asInstanceOf[CommonLinuxOptions]
+  }
+}
+

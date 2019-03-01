@@ -9,3 +9,12 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof @oracle/oraclejet.@oracle/oraclejet/ojselectcombobox.ojComboboxManySettableProperties<K, D> ]:? @oracle/oraclejet.@oracle/oraclejet/ojselectcombobox.ojComboboxManySettableProperties<K, D>[P]} */ trait ojComboboxManySettablePropertiesLenient[K, D]
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 
+object ojComboboxManySettablePropertiesLenient {
+  @scala.inline
+  def apply[K, D](StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null): ojComboboxManySettablePropertiesLenient[K, D] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ojComboboxManySettablePropertiesLenient[K, D]]
+  }
+}
+

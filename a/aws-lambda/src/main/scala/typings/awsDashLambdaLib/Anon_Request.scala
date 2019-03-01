@@ -10,3 +10,16 @@ trait Anon_Request extends js.Object {
   var response: awsDashLambdaLib.awsDashLambdaMod.CloudFrontResponse
 }
 
+object Anon_Request {
+  @scala.inline
+  def apply(
+    request: awsDashLambdaLib.awsDashLambdaMod.CloudFrontRequest,
+    response: awsDashLambdaLib.awsDashLambdaMod.CloudFrontResponse
+  ): Anon_Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[Anon_Request]
+  }
+}
+

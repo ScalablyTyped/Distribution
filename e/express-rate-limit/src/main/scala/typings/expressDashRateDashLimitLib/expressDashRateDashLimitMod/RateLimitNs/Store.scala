@@ -11,3 +11,18 @@ trait Store extends js.Object {
   def resetKey(key: java.lang.String): scala.Unit
 }
 
+object Store {
+  @scala.inline
+  def apply(
+    decrement: js.Function1[java.lang.String, scala.Unit],
+    incr: js.Function2[java.lang.String, StoreIncrementCallback, scala.Unit],
+    resetKey: js.Function1[java.lang.String, scala.Unit]
+  ): Store = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decrement")(decrement)
+    __obj.updateDynamic("incr")(incr)
+    __obj.updateDynamic("resetKey")(resetKey)
+    __obj.asInstanceOf[Store]
+  }
+}
+

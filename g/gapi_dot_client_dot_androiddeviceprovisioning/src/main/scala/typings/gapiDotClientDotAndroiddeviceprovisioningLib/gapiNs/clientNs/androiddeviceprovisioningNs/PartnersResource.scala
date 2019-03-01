@@ -10,3 +10,13 @@ trait PartnersResource extends js.Object {
   var devices: DevicesResource
 }
 
+object PartnersResource {
+  @scala.inline
+  def apply(customers: CustomersResource, devices: DevicesResource): PartnersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customers")(customers)
+    __obj.updateDynamic("devices")(devices)
+    __obj.asInstanceOf[PartnersResource]
+  }
+}
+

@@ -10,3 +10,13 @@ trait NetworkInterface extends js.Object {
   var name: java.lang.String
 }
 
+object NetworkInterface {
+  @scala.inline
+  def apply(address: java.lang.String, name: java.lang.String): NetworkInterface = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[NetworkInterface]
+  }
+}
+

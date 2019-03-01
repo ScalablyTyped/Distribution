@@ -17,3 +17,14 @@ trait CellMouseOverEventArgs extends js.Object {
   var source: js.UndefOr[js.Any] = js.undefined
 }
 
+object CellMouseOverEventArgs {
+  @scala.inline
+  def apply(cell: js.Any = null, cellValue: java.lang.String = null, source: js.Any = null): CellMouseOverEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[CellMouseOverEventArgs]
+  }
+}
+

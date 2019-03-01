@@ -27,3 +27,20 @@ trait ChildNode extends js.Object {
   def replaceWith(nodes: (stdLib.Node | java.lang.String)*): scala.Unit
 }
 
+object ChildNode {
+  @scala.inline
+  def apply(
+    after: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit],
+    before: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit],
+    remove: js.Function0[scala.Unit],
+    replaceWith: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit]
+  ): ChildNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("after")(after)
+    __obj.updateDynamic("before")(before)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("replaceWith")(replaceWith)
+    __obj.asInstanceOf[ChildNode]
+  }
+}
+

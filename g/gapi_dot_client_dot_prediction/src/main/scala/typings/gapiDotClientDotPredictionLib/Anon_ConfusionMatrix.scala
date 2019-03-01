@@ -20,3 +20,18 @@ trait Anon_ConfusionMatrix extends js.Object {
   var modelinfo: js.UndefOr[gapiDotClientDotPredictionLib.gapiNs.clientNs.predictionNs.Insert2] = js.undefined
 }
 
+object Anon_ConfusionMatrix {
+  @scala.inline
+  def apply(
+    confusionMatrix: stdLib.Record[java.lang.String, stdLib.Record[java.lang.String, java.lang.String]] = null,
+    confusionMatrixRowTotals: stdLib.Record[java.lang.String, java.lang.String] = null,
+    modelinfo: gapiDotClientDotPredictionLib.gapiNs.clientNs.predictionNs.Insert2 = null
+  ): Anon_ConfusionMatrix = {
+    val __obj = js.Dynamic.literal()
+    if (confusionMatrix != null) __obj.updateDynamic("confusionMatrix")(confusionMatrix)
+    if (confusionMatrixRowTotals != null) __obj.updateDynamic("confusionMatrixRowTotals")(confusionMatrixRowTotals)
+    if (modelinfo != null) __obj.updateDynamic("modelinfo")(modelinfo)
+    __obj.asInstanceOf[Anon_ConfusionMatrix]
+  }
+}
+

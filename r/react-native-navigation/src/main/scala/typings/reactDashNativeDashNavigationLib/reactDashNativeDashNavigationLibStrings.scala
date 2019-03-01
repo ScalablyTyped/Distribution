@@ -10,10 +10,12 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait accelerate extends js.Object
   
   @js.native
-  sealed trait action extends js.Object
+  sealed trait action
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait add extends js.Object
+  sealed trait add
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait afterInitialTab extends js.Object
@@ -34,22 +36,26 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait black extends js.Object
   
   @js.native
-  sealed trait bookmarks extends js.Object
+  sealed trait bookmarks
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait cancel
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait compose extends js.Object
+  sealed trait compose
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait dark extends js.Object
@@ -64,31 +70,37 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait destructive extends js.Object
   
   @js.native
-  sealed trait done extends js.Object
+  sealed trait done
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait edit extends js.Object
+  sealed trait edit
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait entireScreen extends js.Object
   
   @js.native
-  sealed trait fastForward extends js.Object
+  sealed trait fastForward
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait fill extends js.Object
   
   @js.native
-  sealed trait fixedSpace extends js.Object
+  sealed trait fixedSpace
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait flexibleSpace extends js.Object
+  sealed trait flexibleSpace
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait hidden extends js.Object
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.LayoutOrientation
   
   @js.native
   sealed trait leading extends js.Object
@@ -103,40 +115,50 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait onSwitchToTab extends js.Object
   
   @js.native
-  sealed trait organize extends js.Object
+  sealed trait organize
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait overlay extends js.Object
   
   @js.native
-  sealed trait pause extends js.Object
+  sealed trait pause
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait play extends js.Object
+  sealed trait play
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait portrait extends js.Object
+  sealed trait portrait
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.LayoutOrientation
   
   @js.native
-  sealed trait redo extends js.Object
+  sealed trait redo
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait refresh extends js.Object
+  sealed trait refresh
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait reply extends js.Object
+  sealed trait reply
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait rewind extends js.Object
+  sealed trait rewind
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait save extends js.Object
+  sealed trait save
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait search extends js.Object
+  sealed trait search
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait selected extends js.Object
@@ -148,7 +170,8 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait showWhenActive extends js.Object
   
   @js.native
-  sealed trait stop extends js.Object
+  sealed trait stop
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait together extends js.Object
@@ -160,10 +183,12 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait trailing extends js.Object
   
   @js.native
-  sealed trait trash extends js.Object
+  sealed trait trash
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
-  sealed trait undo extends js.Object
+  sealed trait undo
+    extends reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.SystemItemIcon
   
   @js.native
   sealed trait visible extends js.Object

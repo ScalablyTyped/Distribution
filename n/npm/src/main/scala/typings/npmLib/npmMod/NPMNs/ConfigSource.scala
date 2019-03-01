@@ -10,3 +10,12 @@ trait ConfigSource extends js.Object {
   var `type`: java.lang.String
 }
 
+object ConfigSource {
+  @scala.inline
+  def apply(path: java.lang.String, `type`: java.lang.String): ConfigSource = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[ConfigSource]
+  }
+}
+

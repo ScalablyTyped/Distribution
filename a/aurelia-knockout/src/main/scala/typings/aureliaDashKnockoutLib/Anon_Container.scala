@@ -10,3 +10,16 @@ trait Anon_Container extends js.Object {
   def globalResources(resources: java.lang.String*): js.Any
 }
 
+object Anon_Container {
+  @scala.inline
+  def apply(
+    container: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container,
+    globalResources: js.Function1[/* repeated */ java.lang.String, js.Any]
+  ): Anon_Container = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("globalResources")(globalResources)
+    __obj.asInstanceOf[Anon_Container]
+  }
+}
+

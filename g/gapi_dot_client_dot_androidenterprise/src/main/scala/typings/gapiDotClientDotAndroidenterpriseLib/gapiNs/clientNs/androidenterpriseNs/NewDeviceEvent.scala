@@ -20,3 +20,18 @@ trait NewDeviceEvent extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NewDeviceEvent {
+  @scala.inline
+  def apply(
+    deviceId: java.lang.String = null,
+    managementType: java.lang.String = null,
+    userId: java.lang.String = null
+  ): NewDeviceEvent = {
+    val __obj = js.Dynamic.literal()
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (managementType != null) __obj.updateDynamic("managementType")(managementType)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[NewDeviceEvent]
+  }
+}
+

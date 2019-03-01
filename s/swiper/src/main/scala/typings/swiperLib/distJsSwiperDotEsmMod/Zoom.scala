@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Zoom")
 @js.native
-class Zoom () extends js.Object {
+class Zoom ()
+  extends swiperLib.swiperMod.SwiperModule {
   /**
     * Whether the zoom module is enabled
     */

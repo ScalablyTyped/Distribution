@@ -56,3 +56,32 @@ trait CreateData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CreateData {
+  @scala.inline
+  def apply(
+    focused: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    incognito: js.UndefOr[scala.Boolean] = js.undefined,
+    left: scala.Int | scala.Double = null,
+    state: java.lang.String = null,
+    tabId: scala.Int | scala.Double = null,
+    top: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    url: java.lang.String | js.Array[java.lang.String] = null,
+    width: scala.Int | scala.Double = null
+  ): CreateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateData]
+  }
+}
+

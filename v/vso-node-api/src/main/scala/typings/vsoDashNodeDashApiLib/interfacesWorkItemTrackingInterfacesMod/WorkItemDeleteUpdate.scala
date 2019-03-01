@@ -12,3 +12,12 @@ trait WorkItemDeleteUpdate extends js.Object {
   var isDeleted: scala.Boolean
 }
 
+object WorkItemDeleteUpdate {
+  @scala.inline
+  def apply(isDeleted: scala.Boolean): WorkItemDeleteUpdate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDeleted")(isDeleted)
+    __obj.asInstanceOf[WorkItemDeleteUpdate]
+  }
+}
+

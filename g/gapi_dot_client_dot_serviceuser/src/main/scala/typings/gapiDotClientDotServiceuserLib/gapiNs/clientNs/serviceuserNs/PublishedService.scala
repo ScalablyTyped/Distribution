@@ -17,3 +17,13 @@ trait PublishedService extends js.Object {
   var service: js.UndefOr[Service] = js.undefined
 }
 
+object PublishedService {
+  @scala.inline
+  def apply(name: java.lang.String = null, service: Service = null): PublishedService = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (service != null) __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[PublishedService]
+  }
+}
+

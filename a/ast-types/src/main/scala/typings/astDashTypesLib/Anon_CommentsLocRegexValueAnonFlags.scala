@@ -12,3 +12,20 @@ trait Anon_CommentsLocRegexValueAnonFlags extends js.Object {
   var value: js.UndefOr[scala.Null] = js.undefined
 }
 
+object Anon_CommentsLocRegexValueAnonFlags {
+  @scala.inline
+  def apply(
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    regex: Anon_Flags = null,
+    value: scala.Null = null
+  ): Anon_CommentsLocRegexValueAnonFlags = {
+    val __obj = js.Dynamic.literal()
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_CommentsLocRegexValueAnonFlags]
+  }
+}
+

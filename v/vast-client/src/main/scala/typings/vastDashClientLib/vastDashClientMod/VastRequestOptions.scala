@@ -28,3 +28,22 @@ trait VastRequestOptions extends js.Object {
   var wrapperLimit: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VastRequestOptions {
+  @scala.inline
+  def apply(
+    resolveAll: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    urlHandler: VASTClientUrlHandler = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapperLimit: scala.Int | scala.Double = null
+  ): VastRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(resolveAll)) __obj.updateDynamic("resolveAll")(resolveAll)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (urlHandler != null) __obj.updateDynamic("urlHandler")(urlHandler)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (wrapperLimit != null) __obj.updateDynamic("wrapperLimit")(wrapperLimit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VastRequestOptions]
+  }
+}
+

@@ -18,3 +18,18 @@ trait Anon_ContextsDisapprovalReasons extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ContextsDisapprovalReasons {
+  @scala.inline
+  def apply(
+    contexts: js.Array[Anon_AuctionType] = null,
+    disapprovalReasons: js.Array[Anon_Details] = null,
+    reason: java.lang.String = null
+  ): Anon_ContextsDisapprovalReasons = {
+    val __obj = js.Dynamic.literal()
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
+    if (disapprovalReasons != null) __obj.updateDynamic("disapprovalReasons")(disapprovalReasons)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[Anon_ContextsDisapprovalReasons]
+  }
+}
+

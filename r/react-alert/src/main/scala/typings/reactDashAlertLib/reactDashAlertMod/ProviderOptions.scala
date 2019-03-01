@@ -44,3 +44,24 @@ trait ProviderOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ProviderOptions {
+  @scala.inline
+  def apply(
+    offset: java.lang.String = null,
+    position: AlertPosition = null,
+    timeout: scala.Int | scala.Double = null,
+    transition: AlertTransition = null,
+    `type`: AlertType = null,
+    zIndex: scala.Int | scala.Double = null
+  ): ProviderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProviderOptions]
+  }
+}
+

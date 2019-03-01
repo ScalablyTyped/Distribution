@@ -16,3 +16,13 @@ trait Authentication extends js.Object {
   var rules: js.UndefOr[js.Array[AuthenticationRule]] = js.undefined
 }
 
+object Authentication {
+  @scala.inline
+  def apply(providers: js.Array[AuthProvider] = null, rules: js.Array[AuthenticationRule] = null): Authentication = {
+    val __obj = js.Dynamic.literal()
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[Authentication]
+  }
+}
+

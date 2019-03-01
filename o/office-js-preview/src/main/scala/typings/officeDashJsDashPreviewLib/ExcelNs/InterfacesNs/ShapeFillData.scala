@@ -35,3 +35,18 @@ trait ShapeFillData extends js.Object {
   ] = js.undefined
 }
 
+object ShapeFillData {
+  @scala.inline
+  def apply(
+    foreColor: java.lang.String = null,
+    transparency: scala.Int | scala.Double = null,
+    `type`: officeDashJsDashPreviewLib.ExcelNs.ShapeFillType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NoFill | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Solid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Gradient | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Pattern | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PictureAndTexture | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Mixed = null
+  ): ShapeFillData = {
+    val __obj = js.Dynamic.literal()
+    if (foreColor != null) __obj.updateDynamic("foreColor")(foreColor)
+    if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShapeFillData]
+  }
+}
+

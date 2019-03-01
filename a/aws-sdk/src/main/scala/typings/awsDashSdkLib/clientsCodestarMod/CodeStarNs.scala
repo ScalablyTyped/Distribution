@@ -1114,6 +1114,8 @@ object CodeStarNs extends js.Object {
     var userArn: js.UndefOr[UserArn] = js.undefined
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type BucketKey = java.lang.String
   type BucketName = java.lang.String
@@ -1157,6 +1159,6 @@ object CodeStarNs extends js.Object {
   type UserArn = java.lang.String
   type UserProfileDisplayName = java.lang.String
   type UserProfilesList = js.Array[UserProfileSummary]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-04-19` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

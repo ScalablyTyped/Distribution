@@ -14,3 +14,20 @@ trait SDKInfo extends js.Object {
   var versionString: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SDKInfo {
+  @scala.inline
+  def apply(
+    language: java.lang.String = null,
+    platform: sailsDotIoDotJsLib.sailsDotIoDotJsLibStrings.browser | sailsDotIoDotJsLib.sailsDotIoDotJsLibStrings.node = null,
+    version: java.lang.String = null,
+    versionString: java.lang.String = null
+  ): SDKInfo = {
+    val __obj = js.Dynamic.literal()
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (versionString != null) __obj.updateDynamic("versionString")(versionString)
+    __obj.asInstanceOf[SDKInfo]
+  }
+}
+

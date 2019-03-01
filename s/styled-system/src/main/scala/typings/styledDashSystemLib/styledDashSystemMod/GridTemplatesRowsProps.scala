@@ -14,3 +14,12 @@ trait GridTemplatesRowsProps[TLength] extends js.Object {
   var gridTemplateRows: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.GridTemplateRowsProperty[TLength]]] = js.undefined
 }
 
+object GridTemplatesRowsProps {
+  @scala.inline
+  def apply[TLength](gridTemplateRows: ResponsiveValue[csstypeLib.csstypeMod.GridTemplateRowsProperty[TLength]] = null): GridTemplatesRowsProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (gridTemplateRows != null) __obj.updateDynamic("gridTemplateRows")(gridTemplateRows.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridTemplatesRowsProps[TLength]]
+  }
+}
+

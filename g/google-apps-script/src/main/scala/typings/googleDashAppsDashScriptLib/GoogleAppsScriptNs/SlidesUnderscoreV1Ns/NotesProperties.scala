@@ -15,3 +15,12 @@ trait NotesProperties extends js.Object {
   var speaker_notes_object_id: java.lang.String
 }
 
+object NotesProperties {
+  @scala.inline
+  def apply(speaker_notes_object_id: java.lang.String): NotesProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("speaker_notes_object_id")(speaker_notes_object_id)
+    __obj.asInstanceOf[NotesProperties]
+  }
+}
+

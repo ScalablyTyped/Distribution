@@ -10,3 +10,12 @@ trait StringList extends js.Object {
   var elements: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object StringList {
+  @scala.inline
+  def apply(elements: js.Array[java.lang.String] = null): StringList = {
+    val __obj = js.Dynamic.literal()
+    if (elements != null) __obj.updateDynamic("elements")(elements)
+    __obj.asInstanceOf[StringList]
+  }
+}
+

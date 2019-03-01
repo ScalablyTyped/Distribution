@@ -106,3 +106,58 @@ trait Order extends js.Object {
   var videoId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Order {
+  @scala.inline
+  def apply(
+    approvedTime: java.lang.String = null,
+    channelId: java.lang.String = null,
+    channelName: java.lang.String = null,
+    countries: js.Array[java.lang.String] = null,
+    customId: java.lang.String = null,
+    earliestAvailStartTime: java.lang.String = null,
+    episodeName: java.lang.String = null,
+    legacyPriority: java.lang.String = null,
+    name: java.lang.String = null,
+    normalizedPriority: java.lang.String = null,
+    orderId: java.lang.String = null,
+    orderedTime: java.lang.String = null,
+    pphName: java.lang.String = null,
+    priority: scala.Int | scala.Double = null,
+    receivedTime: java.lang.String = null,
+    rejectionNote: java.lang.String = null,
+    seasonName: java.lang.String = null,
+    showName: java.lang.String = null,
+    status: java.lang.String = null,
+    statusDetail: java.lang.String = null,
+    studioName: java.lang.String = null,
+    `type`: java.lang.String = null,
+    videoId: java.lang.String = null
+  ): Order = {
+    val __obj = js.Dynamic.literal()
+    if (approvedTime != null) __obj.updateDynamic("approvedTime")(approvedTime)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (channelName != null) __obj.updateDynamic("channelName")(channelName)
+    if (countries != null) __obj.updateDynamic("countries")(countries)
+    if (customId != null) __obj.updateDynamic("customId")(customId)
+    if (earliestAvailStartTime != null) __obj.updateDynamic("earliestAvailStartTime")(earliestAvailStartTime)
+    if (episodeName != null) __obj.updateDynamic("episodeName")(episodeName)
+    if (legacyPriority != null) __obj.updateDynamic("legacyPriority")(legacyPriority)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (normalizedPriority != null) __obj.updateDynamic("normalizedPriority")(normalizedPriority)
+    if (orderId != null) __obj.updateDynamic("orderId")(orderId)
+    if (orderedTime != null) __obj.updateDynamic("orderedTime")(orderedTime)
+    if (pphName != null) __obj.updateDynamic("pphName")(pphName)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (receivedTime != null) __obj.updateDynamic("receivedTime")(receivedTime)
+    if (rejectionNote != null) __obj.updateDynamic("rejectionNote")(rejectionNote)
+    if (seasonName != null) __obj.updateDynamic("seasonName")(seasonName)
+    if (showName != null) __obj.updateDynamic("showName")(showName)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusDetail != null) __obj.updateDynamic("statusDetail")(statusDetail)
+    if (studioName != null) __obj.updateDynamic("studioName")(studioName)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    __obj.asInstanceOf[Order]
+  }
+}
+

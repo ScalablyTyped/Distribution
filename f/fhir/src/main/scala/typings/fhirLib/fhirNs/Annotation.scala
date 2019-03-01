@@ -39,3 +39,36 @@ trait Annotation extends Element {
   var time: js.UndefOr[dateTime] = js.undefined
 }
 
+object Annotation {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    _authorString: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _text: Element = null,
+    _time: Element = null,
+    authorReference: Reference = null,
+    authorString: java.lang.String = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    time: dateTime = null
+  ): Annotation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (_authorString != null) __obj.updateDynamic("_authorString")(_authorString)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_text != null) __obj.updateDynamic("_text")(_text)
+    if (_time != null) __obj.updateDynamic("_time")(_time)
+    if (authorReference != null) __obj.updateDynamic("authorReference")(authorReference)
+    if (authorString != null) __obj.updateDynamic("authorString")(authorString)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (time != null) __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[Annotation]
+  }
+}
+

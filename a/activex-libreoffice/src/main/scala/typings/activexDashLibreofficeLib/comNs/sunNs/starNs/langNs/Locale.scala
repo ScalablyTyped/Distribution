@@ -58,3 +58,14 @@ trait Locale extends js.Object {
   var Variant: java.lang.String
 }
 
+object Locale {
+  @scala.inline
+  def apply(Country: java.lang.String, Language: java.lang.String, Variant: java.lang.String): Locale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Country")(Country)
+    __obj.updateDynamic("Language")(Language)
+    __obj.updateDynamic("Variant")(Variant)
+    __obj.asInstanceOf[Locale]
+  }
+}
+

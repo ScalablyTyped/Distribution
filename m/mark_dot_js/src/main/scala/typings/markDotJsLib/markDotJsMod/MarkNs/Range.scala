@@ -10,3 +10,13 @@ trait Range extends js.Object {
   var start: scala.Double
 }
 
+object Range {
+  @scala.inline
+  def apply(length: scala.Double, start: scala.Double): Range = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Range]
+  }
+}
+

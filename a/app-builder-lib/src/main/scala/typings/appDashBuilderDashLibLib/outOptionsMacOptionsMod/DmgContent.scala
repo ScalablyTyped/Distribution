@@ -21,3 +21,22 @@ trait DmgContent extends js.Object {
   var y: scala.Double
 }
 
+object DmgContent {
+  @scala.inline
+  def apply(
+    x: scala.Double,
+    y: scala.Double,
+    name: java.lang.String = null,
+    path: java.lang.String = null,
+    `type`: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.link | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.file | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.dir = null
+  ): DmgContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DmgContent]
+  }
+}
+

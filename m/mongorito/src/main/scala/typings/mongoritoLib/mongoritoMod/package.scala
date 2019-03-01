@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mongoritoMod {
-  type Action = GetAction | SetAction | UnsetAction | RefreshAction | RefreshedAction | SaveAction | CreateAction | CreatedAction | UpdateAction | UpdatedAction | RemoveAction | RemovedAction | IncrementAction | CreateIndexAction | DropIndexAction | ListIndexesAction | QueryAction | CallAction
   type Class[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
   type ModelClass = Class[Model]
   type Plugin = js.Function1[

@@ -12,3 +12,13 @@ trait FontName extends js.Object {
   var fontId: java.lang.String
 }
 
+object FontName {
+  @scala.inline
+  def apply(displayName: java.lang.String, fontId: java.lang.String): FontName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("fontId")(fontId)
+    __obj.asInstanceOf[FontName]
+  }
+}
+

@@ -20,3 +20,18 @@ trait ReceiptFilterState extends js.Object {
   val policy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ReceiptFilterState {
+  @scala.inline
+  def apply(
+    cidr: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ReceiptFilterState = {
+    val __obj = js.Dynamic.literal()
+    if (cidr != null) __obj.updateDynamic("cidr")(cidr.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReceiptFilterState]
+  }
+}
+

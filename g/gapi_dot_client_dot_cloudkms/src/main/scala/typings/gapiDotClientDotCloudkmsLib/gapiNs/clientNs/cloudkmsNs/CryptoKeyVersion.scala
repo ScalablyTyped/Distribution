@@ -29,3 +29,22 @@ trait CryptoKeyVersion extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CryptoKeyVersion {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    destroyEventTime: java.lang.String = null,
+    destroyTime: java.lang.String = null,
+    name: java.lang.String = null,
+    state: java.lang.String = null
+  ): CryptoKeyVersion = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (destroyEventTime != null) __obj.updateDynamic("destroyEventTime")(destroyEventTime)
+    if (destroyTime != null) __obj.updateDynamic("destroyTime")(destroyTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[CryptoKeyVersion]
+  }
+}
+

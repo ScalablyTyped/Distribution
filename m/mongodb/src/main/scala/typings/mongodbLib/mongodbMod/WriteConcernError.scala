@@ -12,3 +12,13 @@ trait WriteConcernError extends js.Object {
   var errmsg: java.lang.String
 }
 
+object WriteConcernError {
+  @scala.inline
+  def apply(code: scala.Double, errmsg: java.lang.String): WriteConcernError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("errmsg")(errmsg)
+    __obj.asInstanceOf[WriteConcernError]
+  }
+}
+

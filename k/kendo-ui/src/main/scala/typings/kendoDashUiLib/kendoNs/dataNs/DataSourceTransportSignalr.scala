@@ -12,3 +12,20 @@ trait DataSourceTransportSignalr extends js.Object {
   var server: js.UndefOr[DataSourceTransportSignalrServer] = js.undefined
 }
 
+object DataSourceTransportSignalr {
+  @scala.inline
+  def apply(
+    client: DataSourceTransportSignalrClient = null,
+    hub: js.Any = null,
+    promise: js.Any = null,
+    server: DataSourceTransportSignalrServer = null
+  ): DataSourceTransportSignalr = {
+    val __obj = js.Dynamic.literal()
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (hub != null) __obj.updateDynamic("hub")(hub)
+    if (promise != null) __obj.updateDynamic("promise")(promise)
+    if (server != null) __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[DataSourceTransportSignalr]
+  }
+}
+

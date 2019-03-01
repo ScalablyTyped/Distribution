@@ -7,37 +7,48 @@ import scala.scalajs.js.annotation._
 
 object phononLibStrings {
   @js.native
-  sealed trait JSON_MALFORMED extends js.Object
+  sealed trait JSON_MALFORMED
+    extends phononLib.PhononNs.PhononAjaxErrorFlag
   
   @js.native
-  sealed trait NO_INTERNET_ACCESS extends js.Object
+  sealed trait NO_INTERNET_ACCESS
+    extends phononLib.PhononNs.PhononAjaxErrorFlag
   
   @js.native
-  sealed trait REQUEST_CANCELED extends js.Object
+  sealed trait REQUEST_CANCELED
+    extends phononLib.PhononNs.PhononAjaxErrorFlag
   
   @js.native
-  sealed trait TIMEOUT_EXCEEDED extends js.Object
+  sealed trait TIMEOUT_EXCEEDED
+    extends phononLib.PhononNs.PhononAjaxErrorFlag
   
   @js.native
-  sealed trait XMLHTTPREQUEST_UNAVAILABLE extends js.Object
+  sealed trait XMLHTTPREQUEST_UNAVAILABLE
+    extends phononLib.PhononNs.PhononAjaxErrorFlag
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends phononLib.PhononNs.PhononPopoverDirection
   
   @js.native
-  sealed trait negative extends js.Object
+  sealed trait negative
+    extends phononLib.PhononNs.PhononColor
   
   @js.native
-  sealed trait positive extends js.Object
+  sealed trait positive
+    extends phononLib.PhononNs.PhononColor
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends phononLib.PhononNs.PhononPopoverDirection
   
   @js.native
-  sealed trait title extends js.Object
+  sealed trait title
+    extends phononLib.PhononNs.PhononPopoverDirection
   
   @js.native
-  sealed trait `title-left` extends js.Object
+  sealed trait `title-left`
+    extends phononLib.PhononNs.PhononPopoverDirection
   
   @scala.inline
   def JSON_MALFORMED: JSON_MALFORMED = "JSON_MALFORMED".asInstanceOf[JSON_MALFORMED]

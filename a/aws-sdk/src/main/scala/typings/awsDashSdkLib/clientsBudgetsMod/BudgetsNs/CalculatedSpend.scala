@@ -16,3 +16,13 @@ trait CalculatedSpend extends js.Object {
   var ForecastedSpend: js.UndefOr[Spend] = js.undefined
 }
 
+object CalculatedSpend {
+  @scala.inline
+  def apply(ActualSpend: Spend, ForecastedSpend: Spend = null): CalculatedSpend = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActualSpend")(ActualSpend)
+    if (ForecastedSpend != null) __obj.updateDynamic("ForecastedSpend")(ForecastedSpend)
+    __obj.asInstanceOf[CalculatedSpend]
+  }
+}
+

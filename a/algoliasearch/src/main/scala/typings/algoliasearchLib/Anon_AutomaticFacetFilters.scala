@@ -23,3 +23,18 @@ trait Anon_AutomaticFacetFilters extends js.Object {
   var query: js.UndefOr[java.lang.String | Anon_Remove] = js.undefined
 }
 
+object Anon_AutomaticFacetFilters {
+  @scala.inline
+  def apply(
+    automaticFacetFilters: js.Array[java.lang.String] = null,
+    automaticOptionalFacetFilters: js.Array[java.lang.String] = null,
+    query: java.lang.String | Anon_Remove = null
+  ): Anon_AutomaticFacetFilters = {
+    val __obj = js.Dynamic.literal()
+    if (automaticFacetFilters != null) __obj.updateDynamic("automaticFacetFilters")(automaticFacetFilters)
+    if (automaticOptionalFacetFilters != null) __obj.updateDynamic("automaticOptionalFacetFilters")(automaticOptionalFacetFilters)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AutomaticFacetFilters]
+  }
+}
+

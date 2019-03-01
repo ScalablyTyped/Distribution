@@ -10,3 +10,12 @@ trait UrlCrawlErrorsSamplesListResponse extends js.Object {
   var urlCrawlErrorSample: js.UndefOr[js.Array[UrlCrawlErrorsSample]] = js.undefined
 }
 
+object UrlCrawlErrorsSamplesListResponse {
+  @scala.inline
+  def apply(urlCrawlErrorSample: js.Array[UrlCrawlErrorsSample] = null): UrlCrawlErrorsSamplesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (urlCrawlErrorSample != null) __obj.updateDynamic("urlCrawlErrorSample")(urlCrawlErrorSample)
+    __obj.asInstanceOf[UrlCrawlErrorsSamplesListResponse]
+  }
+}
+

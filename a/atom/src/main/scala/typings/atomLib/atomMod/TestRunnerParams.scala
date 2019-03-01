@@ -28,3 +28,22 @@ trait TestRunnerParams extends js.Object {
   def buildDefaultApplicationDelegate(): js.Object
 }
 
+object TestRunnerParams {
+  @scala.inline
+  def apply(
+    buildAtomEnvironment: js.Function1[BuildEnvironmentOptions, AtomEnvironment],
+    buildDefaultApplicationDelegate: js.Function0[js.Object],
+    headless: scala.Boolean,
+    logFile: java.lang.String,
+    testPaths: js.Array[java.lang.String]
+  ): TestRunnerParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildAtomEnvironment")(buildAtomEnvironment)
+    __obj.updateDynamic("buildDefaultApplicationDelegate")(buildDefaultApplicationDelegate)
+    __obj.updateDynamic("headless")(headless)
+    __obj.updateDynamic("logFile")(logFile)
+    __obj.updateDynamic("testPaths")(testPaths)
+    __obj.asInstanceOf[TestRunnerParams]
+  }
+}
+

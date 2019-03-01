@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object reactDashFlipDashMoveLibStrings {
   @js.native
-  sealed trait accordionHorizontal extends js.Object
+  sealed trait accordionHorizontal
+    extends reactDashFlipDashMoveLib.reactDashFlipDashMoveMod.FlipMoveNs.AnimationPreset
   
   @js.native
-  sealed trait accordionVertical extends js.Object
+  sealed trait accordionVertical
+    extends reactDashFlipDashMoveLib.reactDashFlipDashMoveMod.FlipMoveNs.AnimationPreset
   
   @js.native
-  sealed trait elevator extends js.Object
+  sealed trait elevator
+    extends reactDashFlipDashMoveLib.reactDashFlipDashMoveMod.FlipMoveNs.AnimationPreset
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait fade
+    extends reactDashFlipDashMoveLib.reactDashFlipDashMoveMod.FlipMoveNs.AnimationPreset
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashFlipDashMoveLib.reactDashFlipDashMoveMod.FlipMoveNs.AnimationPreset
   
   @scala.inline
   def accordionHorizontal: accordionHorizontal = "accordionHorizontal".asInstanceOf[accordionHorizontal]

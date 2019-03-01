@@ -26,3 +26,15 @@ trait IntegerRectangle2D extends js.Object {
   var Y2: scala.Double
 }
 
+object IntegerRectangle2D {
+  @scala.inline
+  def apply(X1: scala.Double, X2: scala.Double, Y1: scala.Double, Y2: scala.Double): IntegerRectangle2D = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("X1")(X1)
+    __obj.updateDynamic("X2")(X2)
+    __obj.updateDynamic("Y1")(Y1)
+    __obj.updateDynamic("Y2")(Y2)
+    __obj.asInstanceOf[IntegerRectangle2D]
+  }
+}
+

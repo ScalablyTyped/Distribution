@@ -9,3 +9,14 @@ trait ValidatorStatic extends js.Object {
   var unobtrusive: jqueryDashValidationDashUnobtrusiveLib.MicrosoftJQueryUnobtrusiveValidationNs.Validator
 }
 
+object ValidatorStatic {
+  @scala.inline
+  def apply(
+    unobtrusive: jqueryDashValidationDashUnobtrusiveLib.MicrosoftJQueryUnobtrusiveValidationNs.Validator
+  ): ValidatorStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("unobtrusive")(unobtrusive)
+    __obj.asInstanceOf[ValidatorStatic]
+  }
+}
+

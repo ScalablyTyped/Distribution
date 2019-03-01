@@ -23,3 +23,18 @@ trait Anon_NetworkPredictionEnabled extends js.Object {
   val webRTCIPHandlingPolicy: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting
 }
 
+object Anon_NetworkPredictionEnabled {
+  @scala.inline
+  def apply(
+    networkPredictionEnabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    peerConnectionEnabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    webRTCIPHandlingPolicy: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting
+  ): Anon_NetworkPredictionEnabled = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("networkPredictionEnabled")(networkPredictionEnabled)
+    __obj.updateDynamic("peerConnectionEnabled")(peerConnectionEnabled)
+    __obj.updateDynamic("webRTCIPHandlingPolicy")(webRTCIPHandlingPolicy)
+    __obj.asInstanceOf[Anon_NetworkPredictionEnabled]
+  }
+}
+

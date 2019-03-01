@@ -261,3 +261,76 @@ trait ConfigOptions extends js.Object {
   var urlRoot: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConfigOptions {
+  @scala.inline
+  def apply(
+    autoWatch: js.UndefOr[scala.Boolean] = js.undefined,
+    autoWatchBatchDelay: scala.Int | scala.Double = null,
+    basePath: java.lang.String = null,
+    browserDisconnectTimeout: scala.Int | scala.Double = null,
+    browserDisconnectTolerance: scala.Int | scala.Double = null,
+    browserNoActivityTimeout: scala.Int | scala.Double = null,
+    browsers: js.Array[java.lang.String] = null,
+    captureTimeout: scala.Int | scala.Double = null,
+    client: ClientOptions = null,
+    colors: js.UndefOr[scala.Boolean] = js.undefined,
+    concurrency: scala.Int | scala.Double = null,
+    customLaunchers: org.scalablytyped.runtime.StringDictionary[CustomLauncher] = null,
+    exclude: js.Array[java.lang.String] = null,
+    files: js.Array[FilePattern | java.lang.String] = null,
+    frameworks: js.Array[java.lang.String] = null,
+    hostname: java.lang.String = null,
+    httpsServerOptions: nodeLib.httpsMod.ServerOptions = null,
+    logLevel: java.lang.String = null,
+    loggers: org.scalablytyped.runtime.StringDictionary[log4jsLib.log4jsMod.Appender] | js.Array[log4jsLib.log4jsMod.Appender] = null,
+    middleware: js.Array[java.lang.String] = null,
+    mime: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null,
+    plugins: js.Array[_] = null,
+    port: scala.Int | scala.Double = null,
+    preprocessors: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] = null,
+    protocol: java.lang.String = null,
+    proxies: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    proxyValidateSSL: js.UndefOr[scala.Boolean] = js.undefined,
+    reportSlowerThan: scala.Int | scala.Double = null,
+    reporters: js.Array[java.lang.String] = null,
+    singleRun: js.UndefOr[scala.Boolean] = js.undefined,
+    transports: js.Array[java.lang.String] = null,
+    urlRoot: java.lang.String = null
+  ): ConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoWatch)) __obj.updateDynamic("autoWatch")(autoWatch)
+    if (autoWatchBatchDelay != null) __obj.updateDynamic("autoWatchBatchDelay")(autoWatchBatchDelay.asInstanceOf[js.Any])
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
+    if (browserDisconnectTimeout != null) __obj.updateDynamic("browserDisconnectTimeout")(browserDisconnectTimeout.asInstanceOf[js.Any])
+    if (browserDisconnectTolerance != null) __obj.updateDynamic("browserDisconnectTolerance")(browserDisconnectTolerance.asInstanceOf[js.Any])
+    if (browserNoActivityTimeout != null) __obj.updateDynamic("browserNoActivityTimeout")(browserNoActivityTimeout.asInstanceOf[js.Any])
+    if (browsers != null) __obj.updateDynamic("browsers")(browsers)
+    if (captureTimeout != null) __obj.updateDynamic("captureTimeout")(captureTimeout.asInstanceOf[js.Any])
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
+    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (customLaunchers != null) __obj.updateDynamic("customLaunchers")(customLaunchers)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (frameworks != null) __obj.updateDynamic("frameworks")(frameworks)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (httpsServerOptions != null) __obj.updateDynamic("httpsServerOptions")(httpsServerOptions)
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
+    if (loggers != null) __obj.updateDynamic("loggers")(loggers.asInstanceOf[js.Any])
+    if (middleware != null) __obj.updateDynamic("middleware")(middleware)
+    if (mime != null) __obj.updateDynamic("mime")(mime)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (preprocessors != null) __obj.updateDynamic("preprocessors")(preprocessors)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (proxies != null) __obj.updateDynamic("proxies")(proxies)
+    if (!js.isUndefined(proxyValidateSSL)) __obj.updateDynamic("proxyValidateSSL")(proxyValidateSSL)
+    if (reportSlowerThan != null) __obj.updateDynamic("reportSlowerThan")(reportSlowerThan.asInstanceOf[js.Any])
+    if (reporters != null) __obj.updateDynamic("reporters")(reporters)
+    if (!js.isUndefined(singleRun)) __obj.updateDynamic("singleRun")(singleRun)
+    if (transports != null) __obj.updateDynamic("transports")(transports)
+    if (urlRoot != null) __obj.updateDynamic("urlRoot")(urlRoot)
+    __obj.asInstanceOf[ConfigOptions]
+  }
+}
+

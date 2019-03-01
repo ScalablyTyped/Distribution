@@ -32,3 +32,36 @@ trait Resource extends js.Object {
   var warnings: js.UndefOr[js.Array[gapiDotClientDotDeploymentmanagerLib.Anon_CodeData]] = js.undefined
 }
 
+object Resource {
+  @scala.inline
+  def apply(
+    accessControl: ResourceAccessControl = null,
+    finalProperties: java.lang.String = null,
+    id: java.lang.String = null,
+    insertTime: java.lang.String = null,
+    manifest: java.lang.String = null,
+    name: java.lang.String = null,
+    properties: java.lang.String = null,
+    `type`: java.lang.String = null,
+    update: ResourceUpdate = null,
+    updateTime: java.lang.String = null,
+    url: java.lang.String = null,
+    warnings: js.Array[gapiDotClientDotDeploymentmanagerLib.Anon_CodeData] = null
+  ): Resource = {
+    val __obj = js.Dynamic.literal()
+    if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl)
+    if (finalProperties != null) __obj.updateDynamic("finalProperties")(finalProperties)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (update != null) __obj.updateDynamic("update")(update)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[Resource]
+  }
+}
+

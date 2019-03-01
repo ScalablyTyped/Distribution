@@ -11,3 +11,16 @@ trait AsObject extends js.Object {
   ]
 }
 
+object AsObject {
+  @scala.inline
+  def apply(
+    fileList: js.Array[
+      googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProtoNs.AsObject
+    ]
+  ): AsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileList")(fileList)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

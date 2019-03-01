@@ -15,3 +15,12 @@ trait INxAttributeExpressionValues extends js.Object {
   var qValues: js.Array[INxSimpleValue]
 }
 
+object INxAttributeExpressionValues {
+  @scala.inline
+  def apply(qValues: js.Array[INxSimpleValue]): INxAttributeExpressionValues = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qValues")(qValues)
+    __obj.asInstanceOf[INxAttributeExpressionValues]
+  }
+}
+

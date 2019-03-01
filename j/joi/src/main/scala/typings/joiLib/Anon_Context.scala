@@ -22,3 +22,20 @@ trait Anon_Context extends js.Object {
   ): joiLib.joiMod.Err
 }
 
+object Anon_Context {
+  @scala.inline
+  def apply(
+    createError: js.Function4[
+      java.lang.String, 
+      joiLib.joiMod.Context, 
+      joiLib.joiMod.State, 
+      joiLib.joiMod.ValidationOptions, 
+      joiLib.joiMod.Err
+    ]
+  ): Anon_Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createError")(createError)
+    __obj.asInstanceOf[Anon_Context]
+  }
+}
+

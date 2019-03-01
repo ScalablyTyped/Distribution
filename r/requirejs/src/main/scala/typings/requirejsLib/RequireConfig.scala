@@ -155,3 +155,52 @@ trait RequireConfig extends js.Object {
   var xhtml: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RequireConfig {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String = null,
+    bundles: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null,
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    config: org.scalablytyped.runtime.StringDictionary[js.Object] = null,
+    context: java.lang.String = null,
+    deps: js.Array[java.lang.String] = null,
+    enforceDefine: js.UndefOr[scala.Boolean] = js.undefined,
+    map: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = null,
+    onNodeCreated: js.Function4[
+      /* node */ stdLib.HTMLScriptElement, 
+      /* config */ RequireConfig, 
+      /* moduleName */ java.lang.String, 
+      /* url */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    packages: js.Object = null,
+    paths: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    scriptType: java.lang.String = null,
+    shim: org.scalablytyped.runtime.StringDictionary[RequireShim | js.Array[java.lang.String]] = null,
+    skipDataMain: js.UndefOr[scala.Boolean] = js.undefined,
+    urlArgs: java.lang.String | (js.Function2[/* id */ java.lang.String, /* url */ java.lang.String, java.lang.String]) = null,
+    waitSeconds: scala.Int | scala.Double = null,
+    xhtml: js.UndefOr[scala.Boolean] = js.undefined
+  ): RequireConfig = {
+    val __obj = js.Dynamic.literal()
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (bundles != null) __obj.updateDynamic("bundles")(bundles)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (!js.isUndefined(enforceDefine)) __obj.updateDynamic("enforceDefine")(enforceDefine)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (onNodeCreated != null) __obj.updateDynamic("onNodeCreated")(onNodeCreated)
+    if (packages != null) __obj.updateDynamic("packages")(packages)
+    if (paths != null) __obj.updateDynamic("paths")(paths)
+    if (scriptType != null) __obj.updateDynamic("scriptType")(scriptType)
+    if (shim != null) __obj.updateDynamic("shim")(shim)
+    if (!js.isUndefined(skipDataMain)) __obj.updateDynamic("skipDataMain")(skipDataMain)
+    if (urlArgs != null) __obj.updateDynamic("urlArgs")(urlArgs.asInstanceOf[js.Any])
+    if (waitSeconds != null) __obj.updateDynamic("waitSeconds")(waitSeconds.asInstanceOf[js.Any])
+    if (!js.isUndefined(xhtml)) __obj.updateDynamic("xhtml")(xhtml)
+    __obj.asInstanceOf[RequireConfig]
+  }
+}
+

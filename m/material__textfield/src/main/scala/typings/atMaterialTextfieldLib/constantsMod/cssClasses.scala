@@ -17,3 +17,28 @@ trait cssClasses
   var UPGRADED: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--upgraded`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    BOX: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--box`,
+    DENSE: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--dense`,
+    DISABLED: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--disabled`,
+    FOCUSED: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--focused`,
+    INVALID: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--invalid`,
+    OUTLINED: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--outlined`,
+    ROOT: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field`,
+    UPGRADED: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`mdc-text-field--upgraded`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BOX")(BOX)
+    __obj.updateDynamic("DENSE")(DENSE)
+    __obj.updateDynamic("DISABLED")(DISABLED)
+    __obj.updateDynamic("FOCUSED")(FOCUSED)
+    __obj.updateDynamic("INVALID")(INVALID)
+    __obj.updateDynamic("OUTLINED")(OUTLINED)
+    __obj.updateDynamic("ROOT")(ROOT)
+    __obj.updateDynamic("UPGRADED")(UPGRADED)
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

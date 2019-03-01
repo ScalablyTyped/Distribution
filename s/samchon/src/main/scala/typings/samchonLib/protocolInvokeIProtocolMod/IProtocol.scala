@@ -24,3 +24,16 @@ trait IProtocol extends js.Object {
   def sendData(invoke: samchonLib.protocolInvokeInvokeMod.Invoke): scala.Unit
 }
 
+object IProtocol {
+  @scala.inline
+  def apply(
+    replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
+    sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
+  ): IProtocol = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("replyData")(replyData)
+    __obj.updateDynamic("sendData")(sendData)
+    __obj.asInstanceOf[IProtocol]
+  }
+}
+

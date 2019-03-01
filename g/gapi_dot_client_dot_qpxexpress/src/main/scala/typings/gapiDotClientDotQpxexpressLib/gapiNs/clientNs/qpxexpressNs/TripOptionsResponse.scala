@@ -16,3 +16,20 @@ trait TripOptionsResponse extends js.Object {
   var tripOption: js.UndefOr[js.Array[TripOption]] = js.undefined
 }
 
+object TripOptionsResponse {
+  @scala.inline
+  def apply(
+    data: Data = null,
+    kind: java.lang.String = null,
+    requestId: java.lang.String = null,
+    tripOption: js.Array[TripOption] = null
+  ): TripOptionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (tripOption != null) __obj.updateDynamic("tripOption")(tripOption)
+    __obj.asInstanceOf[TripOptionsResponse]
+  }
+}
+

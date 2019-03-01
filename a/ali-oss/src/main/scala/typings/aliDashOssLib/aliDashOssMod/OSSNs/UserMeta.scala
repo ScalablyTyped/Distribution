@@ -10,3 +10,13 @@ trait UserMeta extends js.Object {
   var uid: scala.Double
 }
 
+object UserMeta {
+  @scala.inline
+  def apply(pid: scala.Double, uid: scala.Double): UserMeta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pid")(pid)
+    __obj.updateDynamic("uid")(uid)
+    __obj.asInstanceOf[UserMeta]
+  }
+}
+

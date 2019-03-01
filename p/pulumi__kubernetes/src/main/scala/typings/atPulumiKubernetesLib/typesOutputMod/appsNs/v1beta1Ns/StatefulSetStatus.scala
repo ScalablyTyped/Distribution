@@ -56,3 +56,30 @@ trait StatefulSetStatus extends js.Object {
   val updatedReplicas: scala.Double
 }
 
+object StatefulSetStatus {
+  @scala.inline
+  def apply(
+    collisionCount: scala.Double,
+    conditions: js.Array[StatefulSetCondition],
+    currentReplicas: scala.Double,
+    currentRevision: java.lang.String,
+    observedGeneration: scala.Double,
+    readyReplicas: scala.Double,
+    replicas: scala.Double,
+    updateRevision: java.lang.String,
+    updatedReplicas: scala.Double
+  ): StatefulSetStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collisionCount")(collisionCount)
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.updateDynamic("currentReplicas")(currentReplicas)
+    __obj.updateDynamic("currentRevision")(currentRevision)
+    __obj.updateDynamic("observedGeneration")(observedGeneration)
+    __obj.updateDynamic("readyReplicas")(readyReplicas)
+    __obj.updateDynamic("replicas")(replicas)
+    __obj.updateDynamic("updateRevision")(updateRevision)
+    __obj.updateDynamic("updatedReplicas")(updatedReplicas)
+    __obj.asInstanceOf[StatefulSetStatus]
+  }
+}
+

@@ -33,3 +33,22 @@ trait GridDataEvent
   var LastRow: scala.Double
 }
 
+object GridDataEvent {
+  @scala.inline
+  def apply(
+    FirstColumn: scala.Double,
+    FirstRow: scala.Double,
+    LastColumn: scala.Double,
+    LastRow: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): GridDataEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FirstColumn")(FirstColumn)
+    __obj.updateDynamic("FirstRow")(FirstRow)
+    __obj.updateDynamic("LastColumn")(LastColumn)
+    __obj.updateDynamic("LastRow")(LastRow)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[GridDataEvent]
+  }
+}
+

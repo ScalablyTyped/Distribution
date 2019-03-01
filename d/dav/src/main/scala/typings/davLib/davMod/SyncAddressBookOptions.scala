@@ -21,3 +21,18 @@ trait SyncAddressBookOptions extends js.Object {
   var xhr: js.UndefOr[davLib.davMod.transportNs.Transport] = js.undefined
 }
 
+object SyncAddressBookOptions {
+  @scala.inline
+  def apply(
+    sandbox: Sandbox = null,
+    syncMethod: davLib.davLibStrings.basic | davLib.davLibStrings.webdav = null,
+    xhr: davLib.davMod.transportNs.Transport = null
+  ): SyncAddressBookOptions = {
+    val __obj = js.Dynamic.literal()
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
+    if (syncMethod != null) __obj.updateDynamic("syncMethod")(syncMethod.asInstanceOf[js.Any])
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[SyncAddressBookOptions]
+  }
+}
+

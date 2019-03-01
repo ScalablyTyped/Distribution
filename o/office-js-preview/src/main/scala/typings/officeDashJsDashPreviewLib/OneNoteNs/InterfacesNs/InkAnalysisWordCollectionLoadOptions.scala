@@ -51,3 +51,24 @@ trait InkAnalysisWordCollectionLoadOptions extends js.Object {
   var wordAlternates: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InkAnalysisWordCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    languageId: js.UndefOr[scala.Boolean] = js.undefined,
+    line: InkAnalysisLineLoadOptions = null,
+    strokePointers: js.UndefOr[scala.Boolean] = js.undefined,
+    wordAlternates: js.UndefOr[scala.Boolean] = js.undefined
+  ): InkAnalysisWordCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(languageId)) __obj.updateDynamic("languageId")(languageId)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (!js.isUndefined(strokePointers)) __obj.updateDynamic("strokePointers")(strokePointers)
+    if (!js.isUndefined(wordAlternates)) __obj.updateDynamic("wordAlternates")(wordAlternates)
+    __obj.asInstanceOf[InkAnalysisWordCollectionLoadOptions]
+  }
+}
+

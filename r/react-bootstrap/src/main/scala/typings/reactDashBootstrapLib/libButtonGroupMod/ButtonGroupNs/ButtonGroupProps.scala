@@ -15,3 +15,26 @@ trait ButtonGroupProps
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ButtonGroupProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libButtonGroupMod.ButtonGroup] = null,
+    block: js.UndefOr[scala.Boolean] = js.undefined,
+    bsClass: java.lang.String = null,
+    bsSize: reactDashBootstrapLib.reactDashBootstrapMod.Sizes = null,
+    bsStyle: java.lang.String = null,
+    justified: js.UndefOr[scala.Boolean] = js.undefined,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): ButtonGroupProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
+    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
+    if (!js.isUndefined(justified)) __obj.updateDynamic("justified")(justified)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[ButtonGroupProps]
+  }
+}
+

@@ -23,3 +23,14 @@ trait Privilege extends js.Object {
   var canUpdate: scala.Boolean
 }
 
+object Privilege {
+  @scala.inline
+  def apply(canCreate: scala.Boolean, canRead: scala.Boolean, canUpdate: scala.Boolean): Privilege = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canCreate")(canCreate)
+    __obj.updateDynamic("canRead")(canRead)
+    __obj.updateDynamic("canUpdate")(canUpdate)
+    __obj.asInstanceOf[Privilege]
+  }
+}
+

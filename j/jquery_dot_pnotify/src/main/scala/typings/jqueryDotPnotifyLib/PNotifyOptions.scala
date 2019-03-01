@@ -119,3 +119,70 @@ trait PNotifyOptions extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PNotifyOptions {
+  @scala.inline
+  def apply(
+    addclass: java.lang.String = null,
+    animate_speed: java.lang.String = null,
+    animation: java.lang.String = null,
+    auto_display: js.UndefOr[scala.Boolean] = js.undefined,
+    buttons: Anon_CloserCloserhover = null,
+    confirm: PNotifyconfirm = null,
+    cornerclass: java.lang.String = null,
+    delay: scala.Int | scala.Double = null,
+    hide: js.UndefOr[scala.Boolean] = js.undefined,
+    history: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: js.Any = null,
+    insert_brs: js.UndefOr[scala.Boolean] = js.undefined,
+    labels: PNotifyLabel = null,
+    maxonscreen: scala.Int | scala.Double = null,
+    min_height: java.lang.String = null,
+    mouse_reset: js.UndefOr[scala.Boolean] = js.undefined,
+    nonblock: Anon_Nonblock = null,
+    opacity: scala.Int | scala.Double = null,
+    position_animate_speed: scala.Int | scala.Double = null,
+    remove: js.UndefOr[scala.Boolean] = js.undefined,
+    shadow: js.UndefOr[scala.Boolean] = js.undefined,
+    stack: PNotifyStack = null,
+    styling: StylingOptions = null,
+    text: java.lang.String | scala.Boolean = null,
+    text_escape: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String | scala.Boolean = null,
+    title_escape: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: NoticeTypeOptions = null,
+    width: java.lang.String = null
+  ): PNotifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (addclass != null) __obj.updateDynamic("addclass")(addclass)
+    if (animate_speed != null) __obj.updateDynamic("animate_speed")(animate_speed)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(auto_display)) __obj.updateDynamic("auto_display")(auto_display)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (confirm != null) __obj.updateDynamic("confirm")(confirm)
+    if (cornerclass != null) __obj.updateDynamic("cornerclass")(cornerclass)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (!js.isUndefined(insert_brs)) __obj.updateDynamic("insert_brs")(insert_brs)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (maxonscreen != null) __obj.updateDynamic("maxonscreen")(maxonscreen.asInstanceOf[js.Any])
+    if (min_height != null) __obj.updateDynamic("min_height")(min_height)
+    if (!js.isUndefined(mouse_reset)) __obj.updateDynamic("mouse_reset")(mouse_reset)
+    if (nonblock != null) __obj.updateDynamic("nonblock")(nonblock)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (position_animate_speed != null) __obj.updateDynamic("position_animate_speed")(position_animate_speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (styling != null) __obj.updateDynamic("styling")(styling)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(text_escape)) __obj.updateDynamic("text_escape")(text_escape)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(title_escape)) __obj.updateDynamic("title_escape")(title_escape)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[PNotifyOptions]
+  }
+}
+

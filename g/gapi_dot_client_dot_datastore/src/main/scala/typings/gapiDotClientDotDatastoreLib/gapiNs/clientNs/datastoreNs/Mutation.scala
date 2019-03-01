@@ -33,3 +33,22 @@ trait Mutation extends js.Object {
   var upsert: js.UndefOr[Entity] = js.undefined
 }
 
+object Mutation {
+  @scala.inline
+  def apply(
+    baseVersion: java.lang.String = null,
+    delete: Key = null,
+    insert: Entity = null,
+    update: Entity = null,
+    upsert: Entity = null
+  ): Mutation = {
+    val __obj = js.Dynamic.literal()
+    if (baseVersion != null) __obj.updateDynamic("baseVersion")(baseVersion)
+    if (delete != null) __obj.updateDynamic("delete")(delete)
+    if (insert != null) __obj.updateDynamic("insert")(insert)
+    if (update != null) __obj.updateDynamic("update")(update)
+    if (upsert != null) __obj.updateDynamic("upsert")(upsert)
+    __obj.asInstanceOf[Mutation]
+  }
+}
+

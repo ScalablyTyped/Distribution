@@ -14,3 +14,17 @@ trait ModeStatic extends js.Object {
   var OFB: OFB
 }
 
+object ModeStatic {
+  @scala.inline
+  def apply(CBC: CBC, CFB: CFB, CTR: CTR, CTRGladman: CTRGladman, ECB: ECB, OFB: OFB): ModeStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CBC")(CBC)
+    __obj.updateDynamic("CFB")(CFB)
+    __obj.updateDynamic("CTR")(CTR)
+    __obj.updateDynamic("CTRGladman")(CTRGladman)
+    __obj.updateDynamic("ECB")(ECB)
+    __obj.updateDynamic("OFB")(OFB)
+    __obj.asInstanceOf[ModeStatic]
+  }
+}
+

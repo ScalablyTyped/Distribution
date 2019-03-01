@@ -10,25 +10,30 @@ object rollupLibStrings {
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait amd extends js.Object
+  sealed trait amd
+    extends rollupLib.rollupMod.ModuleFormat
   
   @js.native
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait cjs extends js.Object
+  sealed trait cjs
+    extends rollupLib.rollupMod.ModuleFormat
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait es extends js.Object
+  sealed trait es
+    extends rollupLib.rollupMod.ModuleFormat
   
   @js.native
-  sealed trait esm extends js.Object
+  sealed trait esm
+    extends rollupLib.rollupMod.ModuleFormat
   
   @js.native
-  sealed trait iife extends js.Object
+  sealed trait iife
+    extends rollupLib.rollupMod.ModuleFormat
   
   @js.native
   sealed trait `inline` extends js.Object
@@ -40,10 +45,12 @@ object rollupLibStrings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait system extends js.Object
+  sealed trait system
+    extends rollupLib.rollupMod.ModuleFormat
   
   @js.native
-  sealed trait umd extends js.Object
+  sealed trait umd
+    extends rollupLib.rollupMod.ModuleFormat
   
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]

@@ -11,3 +11,18 @@ trait IINVITATION_REPLY extends js.Object {
   var reply: scala.Double
 }
 
+object IINVITATION_REPLY {
+  @scala.inline
+  def apply(
+    data: js.Object,
+    invitee: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser,
+    reply: scala.Double
+  ): IINVITATION_REPLY = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("invitee")(invitee)
+    __obj.updateDynamic("reply")(reply)
+    __obj.asInstanceOf[IINVITATION_REPLY]
+  }
+}
+

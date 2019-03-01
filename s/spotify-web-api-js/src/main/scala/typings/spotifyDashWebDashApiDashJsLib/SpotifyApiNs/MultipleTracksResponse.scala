@@ -15,3 +15,12 @@ trait MultipleTracksResponse extends js.Object {
   var tracks: js.Array[TrackObjectFull]
 }
 
+object MultipleTracksResponse {
+  @scala.inline
+  def apply(tracks: js.Array[TrackObjectFull]): MultipleTracksResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tracks")(tracks)
+    __obj.asInstanceOf[MultipleTracksResponse]
+  }
+}
+

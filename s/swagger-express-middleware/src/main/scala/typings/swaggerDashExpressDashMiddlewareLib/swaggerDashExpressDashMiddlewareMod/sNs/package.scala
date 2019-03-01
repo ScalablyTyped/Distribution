@@ -19,7 +19,6 @@ package object sNs {
     expressLib.expressMod.eNs.RequestHandler
   ]
   type Parameters = js.Array[ParameterObject | ReferenceObject]
-  type Response = ResponseObject | ReferenceObject
   type SwaggerMiddlewareConstructor = js.Function3[
     /* apiDefinitionPathOrObject */ java.lang.String | SwaggerObject, 
     /* appOrRouter */ expressLib.expressMod.eNs.Application | expressLib.expressMod.eNs.Router, 

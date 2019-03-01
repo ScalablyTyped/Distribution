@@ -10,3 +10,13 @@ trait ISubscription extends js.Object {
   var topic: java.lang.String
 }
 
+object ISubscription {
+  @scala.inline
+  def apply(qos: QoS, topic: java.lang.String): ISubscription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qos")(qos)
+    __obj.updateDynamic("topic")(topic)
+    __obj.asInstanceOf[ISubscription]
+  }
+}
+

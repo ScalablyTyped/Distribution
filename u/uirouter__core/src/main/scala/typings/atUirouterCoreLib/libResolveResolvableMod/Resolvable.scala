@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@uirouter/core/lib/resolve/resolvable", "Resolvable")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atUirouterCoreLib.libStateInterfaceMod.ResolveTypes because Already inherited */ @JSImport("@uirouter/core/lib/resolve/resolvable", "Resolvable")
 @js.native
 class Resolvable protected ()
   extends atUirouterCoreLib.libResolveInterfaceMod.ResolvableLiteral {

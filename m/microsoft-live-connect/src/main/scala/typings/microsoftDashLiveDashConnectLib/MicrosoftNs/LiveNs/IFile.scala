@@ -100,3 +100,47 @@ trait IFile extends js.Object {
   var upload_location: java.lang.String
 }
 
+object IFile {
+  @scala.inline
+  def apply(
+    client_updated_time: java.lang.String,
+    comments_count: scala.Double,
+    comments_enabled: scala.Boolean,
+    created_time: java.lang.String,
+    description: java.lang.String,
+    from: IUserInfo,
+    id: java.lang.String,
+    is_embeddable: scala.Boolean,
+    link: java.lang.String,
+    name: java.lang.String,
+    parent_id: java.lang.String,
+    shared_with: ISharedWith,
+    size: scala.Double,
+    sort_by: java.lang.String,
+    source: java.lang.String,
+    `type`: java.lang.String,
+    updated_time: java.lang.String,
+    upload_location: java.lang.String
+  ): IFile = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("client_updated_time")(client_updated_time)
+    __obj.updateDynamic("comments_count")(comments_count)
+    __obj.updateDynamic("comments_enabled")(comments_enabled)
+    __obj.updateDynamic("created_time")(created_time)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("is_embeddable")(is_embeddable)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parent_id")(parent_id)
+    __obj.updateDynamic("shared_with")(shared_with)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("sort_by")(sort_by)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("updated_time")(updated_time)
+    __obj.updateDynamic("upload_location")(upload_location)
+    __obj.asInstanceOf[IFile]
+  }
+}
+

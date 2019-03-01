@@ -10,25 +10,25 @@ object rollLibStrings {
   sealed trait InvalidInputError extends js.Object
   
   @js.native
-  sealed trait add extends js.Object
+  sealed trait add extends RollTransformationKey
   
   @js.native
-  sealed trait `best-of` extends js.Object
+  sealed trait `best-of` extends RollTransformationKey
   
   @js.native
-  sealed trait divide extends js.Object
+  sealed trait divide extends RollTransformationKey
   
   @js.native
-  sealed trait multiply extends js.Object
+  sealed trait multiply extends RollTransformationKey
   
   @js.native
-  sealed trait subtract extends js.Object
+  sealed trait subtract extends RollTransformationKey
   
   @js.native
-  sealed trait sum extends js.Object
+  sealed trait sum extends RollTransformationKey
   
   @js.native
-  sealed trait `worst-of` extends js.Object
+  sealed trait `worst-of` extends RollTransformationKey
   
   @scala.inline
   def InvalidInputError: InvalidInputError = "InvalidInputError".asInstanceOf[InvalidInputError]

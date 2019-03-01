@@ -78,3 +78,92 @@ trait ListSchema_InView extends ListSchema {
   var group2: java.lang.String
 }
 
+object ListSchema_InView {
+  @scala.inline
+  def apply(
+    Aggregate: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    Collapse: java.lang.String,
+    DefaultItemOpen: java.lang.String,
+    Direction: java.lang.String,
+    EffectivePresenceEnabled: java.lang.String,
+    Field: js.Array[FieldSchema],
+    FieldSortParam: java.lang.String,
+    Filter: js.Any,
+    ForceCheckout: java.lang.String,
+    HasTitle: java.lang.String,
+    HttpVDir: java.lang.String,
+    InplaceSearchEnabled: java.lang.String,
+    IsDocLib: java.lang.String,
+    LCID: java.lang.String,
+    ListRight_AddListItems: java.lang.String,
+    NoListItem: java.lang.String,
+    NoListItemHowTo: java.lang.String,
+    PagePath: java.lang.String,
+    ParentHierarchyDisplayField: java.lang.String,
+    PresenceAlt: java.lang.String,
+    PropertyBag: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    RenderSaveAsNewViewButton: java.lang.String,
+    RenderViewSelectorPivotMenu: java.lang.String,
+    RenderViewSelectorPivotMenuAsync: java.lang.String,
+    RootFolderParam: java.lang.String,
+    SelectedID: java.lang.String,
+    ShowWebPart: java.lang.String,
+    StrikeThroughOnCompletedEnabled: java.lang.String,
+    TabularView: java.lang.String,
+    Toolbar: java.lang.String,
+    UIVersion: java.lang.String,
+    UseParentHierarchy: java.lang.String,
+    UserDispUrl: java.lang.String,
+    UserVanilla: js.Any,
+    Userid: java.lang.String,
+    View: java.lang.String,
+    ViewSelectorPivotMenuOptions: java.lang.String,
+    ViewSelector_ViewParameters: java.lang.String,
+    group1: java.lang.String,
+    group2: java.lang.String
+  ): ListSchema_InView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Aggregate")(Aggregate)
+    __obj.updateDynamic("Collapse")(Collapse)
+    __obj.updateDynamic("DefaultItemOpen")(DefaultItemOpen)
+    __obj.updateDynamic("Direction")(Direction)
+    __obj.updateDynamic("EffectivePresenceEnabled")(EffectivePresenceEnabled)
+    __obj.updateDynamic("Field")(Field)
+    __obj.updateDynamic("FieldSortParam")(FieldSortParam)
+    __obj.updateDynamic("Filter")(Filter)
+    __obj.updateDynamic("ForceCheckout")(ForceCheckout)
+    __obj.updateDynamic("HasTitle")(HasTitle)
+    __obj.updateDynamic("HttpVDir")(HttpVDir)
+    __obj.updateDynamic("InplaceSearchEnabled")(InplaceSearchEnabled)
+    __obj.updateDynamic("IsDocLib")(IsDocLib)
+    __obj.updateDynamic("LCID")(LCID)
+    __obj.updateDynamic("ListRight_AddListItems")(ListRight_AddListItems)
+    __obj.updateDynamic("NoListItem")(NoListItem)
+    __obj.updateDynamic("NoListItemHowTo")(NoListItemHowTo)
+    __obj.updateDynamic("PagePath")(PagePath)
+    __obj.updateDynamic("ParentHierarchyDisplayField")(ParentHierarchyDisplayField)
+    __obj.updateDynamic("PresenceAlt")(PresenceAlt)
+    __obj.updateDynamic("PropertyBag")(PropertyBag)
+    __obj.updateDynamic("RenderSaveAsNewViewButton")(RenderSaveAsNewViewButton)
+    __obj.updateDynamic("RenderViewSelectorPivotMenu")(RenderViewSelectorPivotMenu)
+    __obj.updateDynamic("RenderViewSelectorPivotMenuAsync")(RenderViewSelectorPivotMenuAsync)
+    __obj.updateDynamic("RootFolderParam")(RootFolderParam)
+    __obj.updateDynamic("SelectedID")(SelectedID)
+    __obj.updateDynamic("ShowWebPart")(ShowWebPart)
+    __obj.updateDynamic("StrikeThroughOnCompletedEnabled")(StrikeThroughOnCompletedEnabled)
+    __obj.updateDynamic("TabularView")(TabularView)
+    __obj.updateDynamic("Toolbar")(Toolbar)
+    __obj.updateDynamic("UIVersion")(UIVersion)
+    __obj.updateDynamic("UseParentHierarchy")(UseParentHierarchy)
+    __obj.updateDynamic("UserDispUrl")(UserDispUrl)
+    __obj.updateDynamic("UserVanilla")(UserVanilla)
+    __obj.updateDynamic("Userid")(Userid)
+    __obj.updateDynamic("View")(View)
+    __obj.updateDynamic("ViewSelectorPivotMenuOptions")(ViewSelectorPivotMenuOptions)
+    __obj.updateDynamic("ViewSelector_ViewParameters")(ViewSelector_ViewParameters)
+    __obj.updateDynamic("group1")(group1)
+    __obj.updateDynamic("group2")(group2)
+    __obj.asInstanceOf[ListSchema_InView]
+  }
+}
+

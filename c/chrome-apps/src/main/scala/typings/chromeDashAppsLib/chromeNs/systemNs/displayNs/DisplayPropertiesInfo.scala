@@ -85,3 +85,30 @@ trait DisplayPropertiesInfo extends js.Object {
   ] = js.undefined
 }
 
+object DisplayPropertiesInfo {
+  @scala.inline
+  def apply(
+    boundsOriginY: chromeDashAppsLib.chromeNs.integer,
+    boundsOriginX: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    displayMode: DisplayMode = null,
+    displayZoomFactor: js.UndefOr[chromeDashAppsLib.chromeNs.double] = js.undefined,
+    isPrimary: js.UndefOr[scala.Boolean] = js.undefined,
+    isUnified: js.UndefOr[scala.Boolean] = js.undefined,
+    mirroringSourceId: java.lang.String = null,
+    overscan: Insets = null,
+    rotation: chromeDashAppsLib.chromeDashAppsLibNumbers.`0` | chromeDashAppsLib.chromeDashAppsLibNumbers.`90` | chromeDashAppsLib.chromeDashAppsLibNumbers.`180` | chromeDashAppsLib.chromeDashAppsLibNumbers.`270` = null
+  ): DisplayPropertiesInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boundsOriginY")(boundsOriginY)
+    if (!js.isUndefined(boundsOriginX)) __obj.updateDynamic("boundsOriginX")(boundsOriginX)
+    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode)
+    if (!js.isUndefined(displayZoomFactor)) __obj.updateDynamic("displayZoomFactor")(displayZoomFactor)
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary)
+    if (!js.isUndefined(isUnified)) __obj.updateDynamic("isUnified")(isUnified)
+    if (mirroringSourceId != null) __obj.updateDynamic("mirroringSourceId")(mirroringSourceId)
+    if (overscan != null) __obj.updateDynamic("overscan")(overscan)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DisplayPropertiesInfo]
+  }
+}
+

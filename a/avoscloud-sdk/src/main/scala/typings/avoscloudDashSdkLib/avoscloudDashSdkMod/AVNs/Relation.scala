@@ -21,3 +21,26 @@ trait Relation extends BaseObject {
   def remove(`object`: Object): scala.Unit
 }
 
+object Relation {
+  @scala.inline
+  def apply(
+    add: js.Function1[Object, scala.Unit],
+    key: java.lang.String,
+    parent: Object,
+    query: js.Function0[Query],
+    remove: js.Function1[Object, scala.Unit],
+    targetClassName: java.lang.String,
+    toJSON: js.Function0[js.Any]
+  ): Relation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("targetClassName")(targetClassName)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[Relation]
+  }
+}
+

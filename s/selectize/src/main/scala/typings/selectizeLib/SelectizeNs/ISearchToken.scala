@@ -10,3 +10,13 @@ trait ISearchToken extends js.Object {
   var string: java.lang.String
 }
 
+object ISearchToken {
+  @scala.inline
+  def apply(regex: stdLib.RegExp, string: java.lang.String): ISearchToken = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("regex")(regex)
+    __obj.updateDynamic("string")(string)
+    __obj.asInstanceOf[ISearchToken]
+  }
+}
+

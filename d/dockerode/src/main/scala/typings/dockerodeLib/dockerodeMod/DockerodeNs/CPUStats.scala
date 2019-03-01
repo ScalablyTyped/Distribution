@@ -12,3 +12,20 @@ trait CPUStats extends js.Object {
   var throttling_data: dockerodeLib.Anon_Periods
 }
 
+object CPUStats {
+  @scala.inline
+  def apply(
+    cpu_usage: dockerodeLib.Anon_Percpuusage,
+    online_cpus: scala.Double,
+    system_cpu_usage: scala.Double,
+    throttling_data: dockerodeLib.Anon_Periods
+  ): CPUStats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cpu_usage")(cpu_usage)
+    __obj.updateDynamic("online_cpus")(online_cpus)
+    __obj.updateDynamic("system_cpu_usage")(system_cpu_usage)
+    __obj.updateDynamic("throttling_data")(throttling_data)
+    __obj.asInstanceOf[CPUStats]
+  }
+}
+

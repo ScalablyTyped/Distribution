@@ -19,3 +19,18 @@ trait IWaypointOptions extends js.Object {
   var location: js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.Location] = js.undefined
 }
 
+object IWaypointOptions {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    isViaPoint: js.UndefOr[scala.Boolean] = js.undefined,
+    location: bingmapsLib.MicrosoftNs.MapsNs.Location = null
+  ): IWaypointOptions = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (!js.isUndefined(isViaPoint)) __obj.updateDynamic("isViaPoint")(isViaPoint)
+    if (location != null) __obj.updateDynamic("location")(location)
+    __obj.asInstanceOf[IWaypointOptions]
+  }
+}
+

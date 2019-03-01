@@ -41,3 +41,20 @@ trait XResourceFactoryManager extends js.Object {
   def removeResourceFactoryForURL(sResourceURL: java.lang.String): scala.Unit
 }
 
+object XResourceFactoryManager {
+  @scala.inline
+  def apply(
+    addResourceFactory: js.Function2[java.lang.String, XResourceFactory, scala.Unit],
+    getResourceFactory: js.Function1[java.lang.String, XResourceFactory],
+    removeResourceFactoryForReference: js.Function1[XResourceFactory, scala.Unit],
+    removeResourceFactoryForURL: js.Function1[java.lang.String, scala.Unit]
+  ): XResourceFactoryManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addResourceFactory")(addResourceFactory)
+    __obj.updateDynamic("getResourceFactory")(getResourceFactory)
+    __obj.updateDynamic("removeResourceFactoryForReference")(removeResourceFactoryForReference)
+    __obj.updateDynamic("removeResourceFactoryForURL")(removeResourceFactoryForURL)
+    __obj.asInstanceOf[XResourceFactoryManager]
+  }
+}
+

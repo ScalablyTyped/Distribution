@@ -15,3 +15,13 @@ trait Response extends js.Object {
   var total: scala.Double
 }
 
+object Response {
+  @scala.inline
+  def apply(markers: js.Array[heremapsLib.HNs.mapNs.AbstractMarker], total: scala.Double): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("markers")(markers)
+    __obj.updateDynamic("total")(total)
+    __obj.asInstanceOf[Response]
+  }
+}
+

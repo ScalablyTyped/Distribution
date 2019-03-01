@@ -25,3 +25,37 @@ trait PhononAjaxObject extends js.Object {
   def success(res: js.Any, xhr: stdLib.XMLHttpRequest): scala.Unit
 }
 
+object PhononAjaxObject {
+  @scala.inline
+  def apply(
+    dataType: java.lang.String,
+    method: java.lang.String,
+    success: js.Function2[js.Any, stdLib.XMLHttpRequest, scala.Unit],
+    url: java.lang.String,
+    contentType: java.lang.String = null,
+    crossDomain: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    error: js.Function3[
+      /* res */ js.Any, 
+      /* flagError */ PhononAjaxErrorFlag, 
+      /* xhr */ stdLib.XMLHttpRequest, 
+      scala.Unit
+    ] = null,
+    headers: js.Any = null,
+    timeout: scala.Int | scala.Double = null
+  ): PhononAjaxObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataType")(dataType)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("success")(success)
+    __obj.updateDynamic("url")(url)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhononAjaxObject]
+  }
+}
+

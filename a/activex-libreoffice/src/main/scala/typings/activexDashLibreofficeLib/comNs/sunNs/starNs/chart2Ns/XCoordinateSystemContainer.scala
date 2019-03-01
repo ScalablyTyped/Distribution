@@ -22,3 +22,28 @@ trait XCoordinateSystemContainer
   def setCoordinateSystems(aCoordinateSystems: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XCoordinateSystem]): scala.Unit
 }
 
+object XCoordinateSystemContainer {
+  @scala.inline
+  def apply(
+    CoordinateSystems: activexDashInteropLib.SafeArray[XCoordinateSystem],
+    acquire: js.Function0[scala.Unit],
+    addCoordinateSystem: js.Function1[XCoordinateSystem, scala.Unit],
+    getCoordinateSystems: js.Function0[activexDashInteropLib.SafeArray[XCoordinateSystem]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeCoordinateSystem: js.Function1[XCoordinateSystem, scala.Unit],
+    setCoordinateSystems: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XCoordinateSystem], scala.Unit]
+  ): XCoordinateSystemContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CoordinateSystems")(CoordinateSystems)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addCoordinateSystem")(addCoordinateSystem)
+    __obj.updateDynamic("getCoordinateSystems")(getCoordinateSystems)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeCoordinateSystem")(removeCoordinateSystem)
+    __obj.updateDynamic("setCoordinateSystems")(setCoordinateSystems)
+    __obj.asInstanceOf[XCoordinateSystemContainer]
+  }
+}
+

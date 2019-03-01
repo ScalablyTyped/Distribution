@@ -13,3 +13,22 @@ trait Anon_Entity extends js.Object {
   var scene: cesiumLib.cesiumMod.CesiumNs.Scene
 }
 
+object Anon_Entity {
+  @scala.inline
+  def apply(
+    entity: cesiumLib.cesiumMod.CesiumNs.Entity,
+    geometryOptions: js.Any,
+    geometryPropertyName: java.lang.String,
+    observedPropertyNames: js.Array[java.lang.String],
+    scene: cesiumLib.cesiumMod.CesiumNs.Scene
+  ): Anon_Entity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entity")(entity)
+    __obj.updateDynamic("geometryOptions")(geometryOptions)
+    __obj.updateDynamic("geometryPropertyName")(geometryPropertyName)
+    __obj.updateDynamic("observedPropertyNames")(observedPropertyNames)
+    __obj.updateDynamic("scene")(scene)
+    __obj.asInstanceOf[Anon_Entity]
+  }
+}
+

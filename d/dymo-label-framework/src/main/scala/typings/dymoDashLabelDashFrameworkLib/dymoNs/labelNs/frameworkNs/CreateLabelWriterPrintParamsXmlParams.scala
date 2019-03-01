@@ -18,3 +18,22 @@ trait CreateLabelWriterPrintParamsXmlParams extends js.Object {
   var twinTurboRoll: js.UndefOr[TwinTurboRoll] = js.undefined
 }
 
+object CreateLabelWriterPrintParamsXmlParams {
+  @scala.inline
+  def apply(
+    copies: scala.Int | scala.Double = null,
+    flowDirection: FlowDirection = null,
+    jobTitle: java.lang.String = null,
+    printQuality: LabelWriterPrintQuality = null,
+    twinTurboRoll: TwinTurboRoll = null
+  ): CreateLabelWriterPrintParamsXmlParams = {
+    val __obj = js.Dynamic.literal()
+    if (copies != null) __obj.updateDynamic("copies")(copies.asInstanceOf[js.Any])
+    if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection)
+    if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle)
+    if (printQuality != null) __obj.updateDynamic("printQuality")(printQuality)
+    if (twinTurboRoll != null) __obj.updateDynamic("twinTurboRoll")(twinTurboRoll)
+    __obj.asInstanceOf[CreateLabelWriterPrintParamsXmlParams]
+  }
+}
+

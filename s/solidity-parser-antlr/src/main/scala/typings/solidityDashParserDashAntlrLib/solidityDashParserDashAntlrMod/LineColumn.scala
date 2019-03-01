@@ -10,3 +10,13 @@ trait LineColumn extends js.Object {
   var line: scala.Double
 }
 
+object LineColumn {
+  @scala.inline
+  def apply(column: scala.Double, line: scala.Double): LineColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("line")(line)
+    __obj.asInstanceOf[LineColumn]
+  }
+}
+

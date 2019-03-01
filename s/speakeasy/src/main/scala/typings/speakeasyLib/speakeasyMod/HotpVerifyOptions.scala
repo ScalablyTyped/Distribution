@@ -33,3 +33,26 @@ trait HotpVerifyOptions extends SharedOptions {
   var window: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HotpVerifyOptions {
+  @scala.inline
+  def apply(
+    counter: scala.Double,
+    secret: java.lang.String,
+    token: java.lang.String,
+    algorithm: Algorithm = null,
+    digits: scala.Int | scala.Double = null,
+    encoding: Encoding = null,
+    window: scala.Int | scala.Double = null
+  ): HotpVerifyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("counter")(counter)
+    __obj.updateDynamic("secret")(secret)
+    __obj.updateDynamic("token")(token)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HotpVerifyOptions]
+  }
+}
+

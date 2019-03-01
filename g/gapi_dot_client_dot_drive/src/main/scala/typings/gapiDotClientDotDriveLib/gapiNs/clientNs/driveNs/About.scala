@@ -30,3 +30,34 @@ trait About extends js.Object {
   var user: js.UndefOr[User] = js.undefined
 }
 
+object About {
+  @scala.inline
+  def apply(
+    appInstalled: js.UndefOr[scala.Boolean] = js.undefined,
+    canCreateTeamDrives: js.UndefOr[scala.Boolean] = js.undefined,
+    exportFormats: stdLib.Record[java.lang.String, js.Array[java.lang.String]] = null,
+    folderColorPalette: js.Array[java.lang.String] = null,
+    importFormats: stdLib.Record[java.lang.String, js.Array[java.lang.String]] = null,
+    kind: java.lang.String = null,
+    maxImportSizes: stdLib.Record[java.lang.String, java.lang.String] = null,
+    maxUploadSize: java.lang.String = null,
+    storageQuota: gapiDotClientDotDriveLib.Anon_Limit = null,
+    teamDriveThemes: js.Array[gapiDotClientDotDriveLib.Anon_BackgroundImageLink] = null,
+    user: User = null
+  ): About = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(appInstalled)) __obj.updateDynamic("appInstalled")(appInstalled)
+    if (!js.isUndefined(canCreateTeamDrives)) __obj.updateDynamic("canCreateTeamDrives")(canCreateTeamDrives)
+    if (exportFormats != null) __obj.updateDynamic("exportFormats")(exportFormats)
+    if (folderColorPalette != null) __obj.updateDynamic("folderColorPalette")(folderColorPalette)
+    if (importFormats != null) __obj.updateDynamic("importFormats")(importFormats)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maxImportSizes != null) __obj.updateDynamic("maxImportSizes")(maxImportSizes)
+    if (maxUploadSize != null) __obj.updateDynamic("maxUploadSize")(maxUploadSize)
+    if (storageQuota != null) __obj.updateDynamic("storageQuota")(storageQuota)
+    if (teamDriveThemes != null) __obj.updateDynamic("teamDriveThemes")(teamDriveThemes)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[About]
+  }
+}
+

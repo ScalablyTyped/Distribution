@@ -10,3 +10,13 @@ trait Anon_Post extends js.Object {
   var redirect: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Post {
+  @scala.inline
+  def apply(post: java.lang.String = null, redirect: java.lang.String = null): Anon_Post = {
+    val __obj = js.Dynamic.literal()
+    if (post != null) __obj.updateDynamic("post")(post)
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    __obj.asInstanceOf[Anon_Post]
+  }
+}
+

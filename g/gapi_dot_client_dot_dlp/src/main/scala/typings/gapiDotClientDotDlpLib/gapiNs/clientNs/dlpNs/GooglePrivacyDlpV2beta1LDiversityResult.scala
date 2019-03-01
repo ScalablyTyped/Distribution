@@ -10,3 +10,14 @@ trait GooglePrivacyDlpV2beta1LDiversityResult extends js.Object {
   var sensitiveValueFrequencyHistogramBuckets: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1LDiversityHistogramBucket]] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1LDiversityResult {
+  @scala.inline
+  def apply(
+    sensitiveValueFrequencyHistogramBuckets: js.Array[GooglePrivacyDlpV2beta1LDiversityHistogramBucket] = null
+  ): GooglePrivacyDlpV2beta1LDiversityResult = {
+    val __obj = js.Dynamic.literal()
+    if (sensitiveValueFrequencyHistogramBuckets != null) __obj.updateDynamic("sensitiveValueFrequencyHistogramBuckets")(sensitiveValueFrequencyHistogramBuckets)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1LDiversityResult]
+  }
+}
+

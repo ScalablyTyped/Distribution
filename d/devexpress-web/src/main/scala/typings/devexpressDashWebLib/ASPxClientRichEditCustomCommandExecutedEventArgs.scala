@@ -21,3 +21,13 @@ trait ASPxClientRichEditCustomCommandExecutedEventArgs extends ASPxClientEventAr
   var parameter: js.Object
 }
 
+object ASPxClientRichEditCustomCommandExecutedEventArgs {
+  @scala.inline
+  def apply(commandName: java.lang.String, parameter: js.Object): ASPxClientRichEditCustomCommandExecutedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commandName")(commandName)
+    __obj.updateDynamic("parameter")(parameter)
+    __obj.asInstanceOf[ASPxClientRichEditCustomCommandExecutedEventArgs]
+  }
+}
+

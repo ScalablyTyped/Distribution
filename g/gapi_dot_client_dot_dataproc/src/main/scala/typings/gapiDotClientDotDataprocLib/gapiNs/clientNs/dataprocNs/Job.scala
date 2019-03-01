@@ -54,3 +54,42 @@ trait Job extends js.Object {
   var yarnApplications: js.UndefOr[js.Array[YarnApplication]] = js.undefined
 }
 
+object Job {
+  @scala.inline
+  def apply(
+    driverControlFilesUri: java.lang.String = null,
+    driverOutputResourceUri: java.lang.String = null,
+    hadoopJob: HadoopJob = null,
+    hiveJob: HiveJob = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    pigJob: PigJob = null,
+    placement: JobPlacement = null,
+    pysparkJob: PySparkJob = null,
+    reference: JobReference = null,
+    scheduling: JobScheduling = null,
+    sparkJob: SparkJob = null,
+    sparkSqlJob: SparkSqlJob = null,
+    status: JobStatus = null,
+    statusHistory: js.Array[JobStatus] = null,
+    yarnApplications: js.Array[YarnApplication] = null
+  ): Job = {
+    val __obj = js.Dynamic.literal()
+    if (driverControlFilesUri != null) __obj.updateDynamic("driverControlFilesUri")(driverControlFilesUri)
+    if (driverOutputResourceUri != null) __obj.updateDynamic("driverOutputResourceUri")(driverOutputResourceUri)
+    if (hadoopJob != null) __obj.updateDynamic("hadoopJob")(hadoopJob)
+    if (hiveJob != null) __obj.updateDynamic("hiveJob")(hiveJob)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (pigJob != null) __obj.updateDynamic("pigJob")(pigJob)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (pysparkJob != null) __obj.updateDynamic("pysparkJob")(pysparkJob)
+    if (reference != null) __obj.updateDynamic("reference")(reference)
+    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling)
+    if (sparkJob != null) __obj.updateDynamic("sparkJob")(sparkJob)
+    if (sparkSqlJob != null) __obj.updateDynamic("sparkSqlJob")(sparkSqlJob)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory)
+    if (yarnApplications != null) __obj.updateDynamic("yarnApplications")(yarnApplications)
+    __obj.asInstanceOf[Job]
+  }
+}
+

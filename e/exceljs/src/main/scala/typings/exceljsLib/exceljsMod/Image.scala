@@ -11,3 +11,18 @@ trait Image extends js.Object {
   var filename: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Image {
+  @scala.inline
+  def apply(
+    extension: exceljsLib.exceljsLibStrings.jpeg | exceljsLib.exceljsLibStrings.png | exceljsLib.exceljsLibStrings.gif,
+    buffer: nodeLib.Buffer = null,
+    filename: java.lang.String = null
+  ): Image = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    __obj.asInstanceOf[Image]
+  }
+}
+

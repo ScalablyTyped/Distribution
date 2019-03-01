@@ -16,3 +16,16 @@ trait Options extends js.Object {
   var files: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    dirs: java.lang.String | js.Array[java.lang.String] = null,
+    files: java.lang.String | js.Array[java.lang.String] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (dirs != null) __obj.updateDynamic("dirs")(dirs.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -16,3 +16,28 @@ trait GLViewHeadlessProps extends js.Object {
   var width: scala.Double
 }
 
+object GLViewHeadlessProps {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    width: scala.Double,
+    onContextCreate: js.Function1[/* gl */ reactLib.WebGLRenderingContext, scala.Unit] = null,
+    onContextFailure: js.Function1[/* e */ stdLib.Error, scala.Unit] = null,
+    onContextLost: js.Function0[scala.Unit] = null,
+    onContextRestored: js.Function1[/* gl */ reactLib.WebGLRenderingContext, scala.Unit] = null,
+    pixelRatio: scala.Int | scala.Double = null,
+    webglContextAttributes: stdLib.WebGLContextAttributes = null
+  ): GLViewHeadlessProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    if (onContextCreate != null) __obj.updateDynamic("onContextCreate")(onContextCreate)
+    if (onContextFailure != null) __obj.updateDynamic("onContextFailure")(onContextFailure)
+    if (onContextLost != null) __obj.updateDynamic("onContextLost")(onContextLost)
+    if (onContextRestored != null) __obj.updateDynamic("onContextRestored")(onContextRestored)
+    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (webglContextAttributes != null) __obj.updateDynamic("webglContextAttributes")(webglContextAttributes)
+    __obj.asInstanceOf[GLViewHeadlessProps]
+  }
+}
+

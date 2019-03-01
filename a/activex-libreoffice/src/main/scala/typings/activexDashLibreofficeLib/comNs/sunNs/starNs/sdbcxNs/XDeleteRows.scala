@@ -17,3 +17,23 @@ trait XDeleteRows
   def deleteRows(rows: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XDeleteRows {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    deleteRows: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDeleteRows = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("deleteRows")(deleteRows)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDeleteRows]
+  }
+}
+

@@ -46,3 +46,30 @@ trait HubOptions extends js.Object {
   var useSharedConnection: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HubOptions {
+  @scala.inline
+  def apply(
+    errorHandler: js.Function1[/* error */ java.lang.String, scala.Unit] = null,
+    listeners: org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, scala.Unit]] = null,
+    logging: js.UndefOr[scala.Boolean] = js.undefined,
+    methods: js.Array[java.lang.String] = null,
+    queryParams: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    rootPath: java.lang.String = null,
+    stateChanged: js.Function1[/* state */ signalrLib.SignalRNs.StateChanged, scala.Unit] = null,
+    transport: js.Any = null,
+    useSharedConnection: js.UndefOr[scala.Boolean] = js.undefined
+  ): HubOptions = {
+    val __obj = js.Dynamic.literal()
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
+    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath)
+    if (stateChanged != null) __obj.updateDynamic("stateChanged")(stateChanged)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (!js.isUndefined(useSharedConnection)) __obj.updateDynamic("useSharedConnection")(useSharedConnection)
+    __obj.asInstanceOf[HubOptions]
+  }
+}
+

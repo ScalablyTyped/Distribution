@@ -121,3 +121,40 @@ trait TextFrameLoadOptions extends js.Object {
   var verticalOverflow: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TextFrameLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    autoSize: js.UndefOr[scala.Boolean] = js.undefined,
+    bottomMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    hasText: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalOverflow: js.UndefOr[scala.Boolean] = js.undefined,
+    leftMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    orientation: js.UndefOr[scala.Boolean] = js.undefined,
+    readingOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    rightMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    textRange: TextRangeLoadOptions = null,
+    topMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalOverflow: js.UndefOr[scala.Boolean] = js.undefined
+  ): TextFrameLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize)
+    if (!js.isUndefined(bottomMargin)) __obj.updateDynamic("bottomMargin")(bottomMargin)
+    if (!js.isUndefined(hasText)) __obj.updateDynamic("hasText")(hasText)
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (!js.isUndefined(horizontalOverflow)) __obj.updateDynamic("horizontalOverflow")(horizontalOverflow)
+    if (!js.isUndefined(leftMargin)) __obj.updateDynamic("leftMargin")(leftMargin)
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation)
+    if (!js.isUndefined(readingOrder)) __obj.updateDynamic("readingOrder")(readingOrder)
+    if (!js.isUndefined(rightMargin)) __obj.updateDynamic("rightMargin")(rightMargin)
+    if (textRange != null) __obj.updateDynamic("textRange")(textRange)
+    if (!js.isUndefined(topMargin)) __obj.updateDynamic("topMargin")(topMargin)
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    if (!js.isUndefined(verticalOverflow)) __obj.updateDynamic("verticalOverflow")(verticalOverflow)
+    __obj.asInstanceOf[TextFrameLoadOptions]
+  }
+}
+

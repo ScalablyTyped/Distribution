@@ -101,3 +101,60 @@ trait MysqlLayerArgs extends js.Object {
   val useEbsOptimizedInstances: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 
+object MysqlLayerArgs {
+  @scala.inline
+  def apply(
+    stackId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    autoAssignElasticIps: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    autoAssignPublicIps: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    autoHealing: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    customConfigureRecipes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    customDeployRecipes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    customInstanceProfileArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customSecurityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    customSetupRecipes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    customShutdownRecipes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    customUndeployRecipes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    drainElbOnShutdown: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    ebsVolumes: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IopsMountPointNumberOfDisks]
+      ]
+    ] = null,
+    elasticLoadBalancer: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    installUpdatesOnBoot: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    instanceShutdownTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rootPassword: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rootPasswordOnAllInstances: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    systemPackages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    useEbsOptimizedInstances: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): MysqlLayerArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
+    if (autoAssignElasticIps != null) __obj.updateDynamic("autoAssignElasticIps")(autoAssignElasticIps.asInstanceOf[js.Any])
+    if (autoAssignPublicIps != null) __obj.updateDynamic("autoAssignPublicIps")(autoAssignPublicIps.asInstanceOf[js.Any])
+    if (autoHealing != null) __obj.updateDynamic("autoHealing")(autoHealing.asInstanceOf[js.Any])
+    if (customConfigureRecipes != null) __obj.updateDynamic("customConfigureRecipes")(customConfigureRecipes.asInstanceOf[js.Any])
+    if (customDeployRecipes != null) __obj.updateDynamic("customDeployRecipes")(customDeployRecipes.asInstanceOf[js.Any])
+    if (customInstanceProfileArn != null) __obj.updateDynamic("customInstanceProfileArn")(customInstanceProfileArn.asInstanceOf[js.Any])
+    if (customJson != null) __obj.updateDynamic("customJson")(customJson.asInstanceOf[js.Any])
+    if (customSecurityGroupIds != null) __obj.updateDynamic("customSecurityGroupIds")(customSecurityGroupIds.asInstanceOf[js.Any])
+    if (customSetupRecipes != null) __obj.updateDynamic("customSetupRecipes")(customSetupRecipes.asInstanceOf[js.Any])
+    if (customShutdownRecipes != null) __obj.updateDynamic("customShutdownRecipes")(customShutdownRecipes.asInstanceOf[js.Any])
+    if (customUndeployRecipes != null) __obj.updateDynamic("customUndeployRecipes")(customUndeployRecipes.asInstanceOf[js.Any])
+    if (drainElbOnShutdown != null) __obj.updateDynamic("drainElbOnShutdown")(drainElbOnShutdown.asInstanceOf[js.Any])
+    if (ebsVolumes != null) __obj.updateDynamic("ebsVolumes")(ebsVolumes.asInstanceOf[js.Any])
+    if (elasticLoadBalancer != null) __obj.updateDynamic("elasticLoadBalancer")(elasticLoadBalancer.asInstanceOf[js.Any])
+    if (installUpdatesOnBoot != null) __obj.updateDynamic("installUpdatesOnBoot")(installUpdatesOnBoot.asInstanceOf[js.Any])
+    if (instanceShutdownTimeout != null) __obj.updateDynamic("instanceShutdownTimeout")(instanceShutdownTimeout.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (rootPassword != null) __obj.updateDynamic("rootPassword")(rootPassword.asInstanceOf[js.Any])
+    if (rootPasswordOnAllInstances != null) __obj.updateDynamic("rootPasswordOnAllInstances")(rootPasswordOnAllInstances.asInstanceOf[js.Any])
+    if (systemPackages != null) __obj.updateDynamic("systemPackages")(systemPackages.asInstanceOf[js.Any])
+    if (useEbsOptimizedInstances != null) __obj.updateDynamic("useEbsOptimizedInstances")(useEbsOptimizedInstances.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MysqlLayerArgs]
+  }
+}
+

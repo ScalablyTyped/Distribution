@@ -146,3 +146,55 @@ trait DataOptions extends js.Object {
   var table: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
 }
 
+object DataOptions {
+  @scala.inline
+  def apply(
+    columns: js.Array[js.Array[java.lang.String | scala.Double]] = null,
+    complete: js.Function1[/* options */ Options, scala.Unit] = null,
+    csv: java.lang.String = null,
+    dateFormat: java.lang.String = null,
+    decimalPoint: java.lang.String = null,
+    endColumn: scala.Int | scala.Double = null,
+    endRow: scala.Int | scala.Double = null,
+    firstRowAsNames: js.UndefOr[scala.Boolean] = js.undefined,
+    googleSpreadsheetKey: java.lang.String = null,
+    googleSpreadsheetWorksheet: java.lang.String = null,
+    itemDelimiter: java.lang.String = null,
+    lineDelimiter: java.lang.String = null,
+    parseDate: js.Function1[/* val */ js.Any, scala.Double] = null,
+    parsed: js.Function1[
+      /* columns */ js.Array[js.Array[java.lang.String | scala.Double]], 
+      scala.Boolean | scala.Unit
+    ] = null,
+    rows: js.Array[js.Array[java.lang.String | scala.Double]] = null,
+    seriesMapping: js.Array[DataSeriesMapping] = null,
+    startColumn: scala.Int | scala.Double = null,
+    startRow: scala.Int | scala.Double = null,
+    switchRowsAndColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    table: java.lang.String | stdLib.HTMLElement = null
+  ): DataOptions = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (csv != null) __obj.updateDynamic("csv")(csv)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (decimalPoint != null) __obj.updateDynamic("decimalPoint")(decimalPoint)
+    if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
+    if (endRow != null) __obj.updateDynamic("endRow")(endRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstRowAsNames)) __obj.updateDynamic("firstRowAsNames")(firstRowAsNames)
+    if (googleSpreadsheetKey != null) __obj.updateDynamic("googleSpreadsheetKey")(googleSpreadsheetKey)
+    if (googleSpreadsheetWorksheet != null) __obj.updateDynamic("googleSpreadsheetWorksheet")(googleSpreadsheetWorksheet)
+    if (itemDelimiter != null) __obj.updateDynamic("itemDelimiter")(itemDelimiter)
+    if (lineDelimiter != null) __obj.updateDynamic("lineDelimiter")(lineDelimiter)
+    if (parseDate != null) __obj.updateDynamic("parseDate")(parseDate)
+    if (parsed != null) __obj.updateDynamic("parsed")(parsed)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (seriesMapping != null) __obj.updateDynamic("seriesMapping")(seriesMapping)
+    if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])
+    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (!js.isUndefined(switchRowsAndColumns)) __obj.updateDynamic("switchRowsAndColumns")(switchRowsAndColumns)
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataOptions]
+  }
+}
+

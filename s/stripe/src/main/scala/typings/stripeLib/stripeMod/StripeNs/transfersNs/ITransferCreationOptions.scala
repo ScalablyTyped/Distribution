@@ -40,3 +40,28 @@ trait ITransferCreationOptions
   var transfer_group: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITransferCreationOptions {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    destination: java.lang.String,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    source_transaction: java.lang.String = null,
+    transfer_group: java.lang.String = null
+  ): ITransferCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("destination")(destination)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (source_transaction != null) __obj.updateDynamic("source_transaction")(source_transaction)
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
+    __obj.asInstanceOf[ITransferCreationOptions]
+  }
+}
+

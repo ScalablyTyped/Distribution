@@ -22,3 +22,26 @@ trait ocrIdCardOptions
   var success_ocrIdCardOptions: js.UndefOr[js.Function1[/* res */ ocrIdCardResponse, scala.Unit]] = js.undefined
 }
 
+object ocrIdCardOptions {
+  @scala.inline
+  def apply(
+    image: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    detect_direction: js.UndefOr[scala.Boolean] = js.undefined,
+    detect_risk: js.UndefOr[scala.Boolean] = js.undefined,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    id_card_side: java.lang.String = null,
+    success: js.Function1[/* res */ ocrIdCardResponse, scala.Unit] = null
+  ): ocrIdCardOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("image")(image)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
+    if (!js.isUndefined(detect_risk)) __obj.updateDynamic("detect_risk")(detect_risk)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (id_card_side != null) __obj.updateDynamic("id_card_side")(id_card_side)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ocrIdCardOptions]
+  }
+}
+

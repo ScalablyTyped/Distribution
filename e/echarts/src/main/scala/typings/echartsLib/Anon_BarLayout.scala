@@ -172,3 +172,38 @@ trait Anon_BarLayout extends js.Object {
   var visual: js.UndefOr[js.Function] = js.undefined
 }
 
+object Anon_BarLayout {
+  @scala.inline
+  def apply(
+    barLayout: js.Function = null,
+    coord: js.Function = null,
+    currentSeriesIndices: js.Function = null,
+    font: js.Function = null,
+    getDevicePixelRatio: js.Function = null,
+    getHeight: js.Function = null,
+    getWidth: js.Function = null,
+    getZr: js.Function = null,
+    size: js.Function = null,
+    style: js.Function = null,
+    styleEmphasis: js.Function = null,
+    value: js.Function = null,
+    visual: js.Function = null
+  ): Anon_BarLayout = {
+    val __obj = js.Dynamic.literal()
+    if (barLayout != null) __obj.updateDynamic("barLayout")(barLayout)
+    if (coord != null) __obj.updateDynamic("coord")(coord)
+    if (currentSeriesIndices != null) __obj.updateDynamic("currentSeriesIndices")(currentSeriesIndices)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (getDevicePixelRatio != null) __obj.updateDynamic("getDevicePixelRatio")(getDevicePixelRatio)
+    if (getHeight != null) __obj.updateDynamic("getHeight")(getHeight)
+    if (getWidth != null) __obj.updateDynamic("getWidth")(getWidth)
+    if (getZr != null) __obj.updateDynamic("getZr")(getZr)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (styleEmphasis != null) __obj.updateDynamic("styleEmphasis")(styleEmphasis)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (visual != null) __obj.updateDynamic("visual")(visual)
+    __obj.asInstanceOf[Anon_BarLayout]
+  }
+}
+

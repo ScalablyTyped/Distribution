@@ -7,28 +7,35 @@ import scala.scalajs.js.annotation._
 
 object speakeasyLibStrings {
   @js.native
-  sealed trait ascii extends js.Object
+  sealed trait ascii
+    extends speakeasyLib.speakeasyMod.Encoding
   
   @js.native
-  sealed trait base32 extends js.Object
+  sealed trait base32
+    extends speakeasyLib.speakeasyMod.Encoding
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends speakeasyLib.speakeasyMod.Encoding
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends speakeasyLib.speakeasyMod.Encoding
   
   @js.native
   sealed trait htop extends js.Object
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait sha1
+    extends speakeasyLib.speakeasyMod.Algorithm
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait sha256
+    extends speakeasyLib.speakeasyMod.Algorithm
   
   @js.native
-  sealed trait sha512 extends js.Object
+  sealed trait sha512
+    extends speakeasyLib.speakeasyMod.Algorithm
   
   @js.native
   sealed trait totp extends js.Object

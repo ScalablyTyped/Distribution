@@ -28,3 +28,20 @@ trait XStringAbbreviation
   def abbreviateString(xStringWidth: XStringWidth, nWidth: scala.Double, aString: java.lang.String): java.lang.String
 }
 
+object XStringAbbreviation {
+  @scala.inline
+  def apply(
+    abbreviateString: js.Function3[XStringWidth, scala.Double, java.lang.String, java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStringAbbreviation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abbreviateString")(abbreviateString)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStringAbbreviation]
+  }
+}
+

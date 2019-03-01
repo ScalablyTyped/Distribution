@@ -25,3 +25,13 @@ trait ShapeFillUpdateData extends js.Object {
   var transparency: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ShapeFillUpdateData {
+  @scala.inline
+  def apply(foreColor: java.lang.String = null, transparency: scala.Int | scala.Double = null): ShapeFillUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (foreColor != null) __obj.updateDynamic("foreColor")(foreColor)
+    if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShapeFillUpdateData]
+  }
+}
+

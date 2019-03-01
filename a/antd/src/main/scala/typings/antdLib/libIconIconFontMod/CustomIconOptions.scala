@@ -10,3 +10,16 @@ trait CustomIconOptions extends js.Object {
   var scriptUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomIconOptions {
+  @scala.inline
+  def apply(
+    extraCommonProps: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    scriptUrl: java.lang.String = null
+  ): CustomIconOptions = {
+    val __obj = js.Dynamic.literal()
+    if (extraCommonProps != null) __obj.updateDynamic("extraCommonProps")(extraCommonProps)
+    if (scriptUrl != null) __obj.updateDynamic("scriptUrl")(scriptUrl)
+    __obj.asInstanceOf[CustomIconOptions]
+  }
+}
+

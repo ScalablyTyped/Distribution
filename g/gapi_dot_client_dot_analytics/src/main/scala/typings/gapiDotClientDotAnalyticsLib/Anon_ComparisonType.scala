@@ -18,3 +18,22 @@ trait Anon_ComparisonType extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ComparisonType {
+  @scala.inline
+  def apply(
+    comparisonType: java.lang.String = null,
+    comparisonValue: java.lang.String = null,
+    expression: java.lang.String = null,
+    matchType: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Anon_ComparisonType = {
+    val __obj = js.Dynamic.literal()
+    if (comparisonType != null) __obj.updateDynamic("comparisonType")(comparisonType)
+    if (comparisonValue != null) __obj.updateDynamic("comparisonValue")(comparisonValue)
+    if (expression != null) __obj.updateDynamic("expression")(expression)
+    if (matchType != null) __obj.updateDynamic("matchType")(matchType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_ComparisonType]
+  }
+}
+

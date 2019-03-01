@@ -24,3 +24,20 @@ trait VaultArgs extends js.Object {
   ] = js.undefined
 }
 
+object VaultArgs {
+  @scala.inline
+  def apply(
+    kmsKeyArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null
+  ): VaultArgs = {
+    val __obj = js.Dynamic.literal()
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VaultArgs]
+  }
+}
+

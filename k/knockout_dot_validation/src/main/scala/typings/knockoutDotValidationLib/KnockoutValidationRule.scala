@@ -12,3 +12,20 @@ trait KnockoutValidationRule extends js.Object {
   var rule: java.lang.String
 }
 
+object KnockoutValidationRule {
+  @scala.inline
+  def apply(
+    params: js.Any,
+    rule: java.lang.String,
+    condition: js.Function0[scala.Boolean] = null,
+    message: java.lang.String = null
+  ): KnockoutValidationRule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("rule")(rule)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[KnockoutValidationRule]
+  }
+}
+

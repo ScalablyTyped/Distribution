@@ -37,3 +37,34 @@ trait TargetVpnGateway extends js.Object {
   var tunnels: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TargetVpnGateway {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    forwardingRules: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    network: java.lang.String = null,
+    region: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    status: java.lang.String = null,
+    tunnels: js.Array[java.lang.String] = null
+  ): TargetVpnGateway = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (forwardingRules != null) __obj.updateDynamic("forwardingRules")(forwardingRules)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (tunnels != null) __obj.updateDynamic("tunnels")(tunnels)
+    __obj.asInstanceOf[TargetVpnGateway]
+  }
+}
+

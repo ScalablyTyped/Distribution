@@ -48,3 +48,32 @@ trait XBrowseNode
   def hasChildNodes(): scala.Boolean
 }
 
+object XBrowseNode {
+  @scala.inline
+  def apply(
+    ChildNodes: activexDashInteropLib.SafeArray[XBrowseNode],
+    Name: java.lang.String,
+    Type: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getChildNodes: js.Function0[activexDashInteropLib.SafeArray[XBrowseNode]],
+    getName: js.Function0[java.lang.String],
+    getType: js.Function0[scala.Double],
+    hasChildNodes: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBrowseNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ChildNodes")(ChildNodes)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getChildNodes")(getChildNodes)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("hasChildNodes")(hasChildNodes)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XBrowseNode]
+  }
+}
+

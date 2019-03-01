@@ -57,3 +57,36 @@ trait EmailConfig extends js.Object {
   var views: js.UndefOr[js.Any] = js.undefined
 }
 
+object EmailConfig {
+  @scala.inline
+  def apply(
+    message: js.Any,
+    htmlToText: js.Any = null,
+    i18n: js.Any = null,
+    juice: js.UndefOr[scala.Boolean] = js.undefined,
+    juiceResources: js.Any = null,
+    preview: js.UndefOr[scala.Boolean] = js.undefined,
+    render: emailDashTemplatesLib.Anon_Locals = null,
+    send: js.UndefOr[scala.Boolean] = js.undefined,
+    subjectPrefix: js.Any = null,
+    textOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    transport: js.Any = null,
+    views: js.Any = null
+  ): EmailConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    if (htmlToText != null) __obj.updateDynamic("htmlToText")(htmlToText)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
+    if (!js.isUndefined(juice)) __obj.updateDynamic("juice")(juice)
+    if (juiceResources != null) __obj.updateDynamic("juiceResources")(juiceResources)
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (!js.isUndefined(send)) __obj.updateDynamic("send")(send)
+    if (subjectPrefix != null) __obj.updateDynamic("subjectPrefix")(subjectPrefix)
+    if (!js.isUndefined(textOnly)) __obj.updateDynamic("textOnly")(textOnly)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (views != null) __obj.updateDynamic("views")(views)
+    __obj.asInstanceOf[EmailConfig]
+  }
+}
+

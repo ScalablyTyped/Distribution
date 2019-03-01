@@ -10,3 +10,16 @@ trait CompileEntryComponentMetadata extends js.Object {
   var componentType: js.Any
 }
 
+object CompileEntryComponentMetadata {
+  @scala.inline
+  def apply(
+    componentFactory: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol | js.Object,
+    componentType: js.Any
+  ): CompileEntryComponentMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("componentFactory")(componentFactory.asInstanceOf[js.Any])
+    __obj.updateDynamic("componentType")(componentType)
+    __obj.asInstanceOf[CompileEntryComponentMetadata]
+  }
+}
+

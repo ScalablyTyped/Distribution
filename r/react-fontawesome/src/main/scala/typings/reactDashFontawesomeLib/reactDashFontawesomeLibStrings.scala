@@ -7,28 +7,37 @@ import scala.scalajs.js.annotation._
 
 object reactDashFontawesomeLibStrings {
   @js.native
-  sealed trait `1x` extends js.Object
+  sealed trait `1x`
+    extends reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeStack
   
   @js.native
-  sealed trait `2x` extends js.Object
+  sealed trait `2x`
+    extends reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeSize
+       with reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeStack
   
   @js.native
-  sealed trait `3x` extends js.Object
+  sealed trait `3x`
+    extends reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeSize
   
   @js.native
-  sealed trait `4x` extends js.Object
+  sealed trait `4x`
+    extends reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeSize
   
   @js.native
-  sealed trait `5x` extends js.Object
+  sealed trait `5x`
+    extends reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeSize
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeFlip
   
   @js.native
-  sealed trait lg extends js.Object
+  sealed trait lg
+    extends reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeSize
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends reactDashFontawesomeLib.reactDashFontawesomeMod.FontAwesomeNs.FontAwesomeFlip
   
   @scala.inline
   def `1x`: `1x` = "1x".asInstanceOf[`1x`]

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 object crossDashStorageLibStrings {
   @js.native
-  sealed trait clear extends js.Object
+  sealed trait clear extends CrossStorageMethod
   
   @js.native
-  sealed trait del extends js.Object
+  sealed trait del extends CrossStorageMethod
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get extends CrossStorageMethod
   
   @js.native
-  sealed trait getKeys extends js.Object
+  sealed trait getKeys extends CrossStorageMethod
   
   @js.native
-  sealed trait set extends js.Object
+  sealed trait set extends CrossStorageMethod
   
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]

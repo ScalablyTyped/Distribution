@@ -36,3 +36,26 @@ trait RepositoryState extends js.Object {
   val repositoryName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RepositoryState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cloneUrlHttp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cloneUrlSsh: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultBranch: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    repositoryId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    repositoryName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RepositoryState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (cloneUrlHttp != null) __obj.updateDynamic("cloneUrlHttp")(cloneUrlHttp.asInstanceOf[js.Any])
+    if (cloneUrlSsh != null) __obj.updateDynamic("cloneUrlSsh")(cloneUrlSsh.asInstanceOf[js.Any])
+    if (defaultBranch != null) __obj.updateDynamic("defaultBranch")(defaultBranch.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (repositoryId != null) __obj.updateDynamic("repositoryId")(repositoryId.asInstanceOf[js.Any])
+    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RepositoryState]
+  }
+}
+

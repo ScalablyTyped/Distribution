@@ -81,3 +81,76 @@ trait Condition[T, P /* <: java.lang.String */]
   var $where: js.UndefOr[js.Object] = js.undefined
 }
 
+object Condition {
+  @scala.inline
+  def apply[T, P /* <: java.lang.String */](
+    $and: js.Array[
+      (FilterQuery[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]) | (/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any)
+    ] = null,
+    $bitsAllClear: js.Object = null,
+    $bitsAllSet: js.Object = null,
+    $bitsAnyClear: js.Object = null,
+    $bitsAnySet: js.Object = null,
+    $elemMatch: js.Object = null,
+    $eq: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any = null,
+    $expr: js.Any = null,
+    $geoIntersects: js.Object = null,
+    $geoWithin: js.Object = null,
+    $gt: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any = null,
+    $gte: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any = null,
+    $in: js.Array[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = null,
+    $jsonSchema: js.Any = null,
+    $lt: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any = null,
+    $lte: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any = null,
+    $mod: js.Tuple2[scala.Double, scala.Double] = null,
+    $ne: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any = null,
+    $near: js.Object = null,
+    $nearSphere: js.Object = null,
+    $nin: js.Array[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = null,
+    $not: (js.Array[
+      (FilterQuery[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]) | (/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any)
+    ]) | (/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any) = null,
+    $options: java.lang.String = null,
+    $or: js.Array[
+      (FilterQuery[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]) | (/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any)
+    ] = null,
+    $regex: stdLib.RegExp = null,
+    $size: scala.Int | scala.Double = null,
+    $text: mongodbLib.Anon_CaseSensitive = null,
+    $where: js.Object = null,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Condition[T, P] = {
+    val __obj = js.Dynamic.literal()
+    if ($and != null) __obj.updateDynamic("$and")($and)
+    if ($bitsAllClear != null) __obj.updateDynamic("$bitsAllClear")($bitsAllClear)
+    if ($bitsAllSet != null) __obj.updateDynamic("$bitsAllSet")($bitsAllSet)
+    if ($bitsAnyClear != null) __obj.updateDynamic("$bitsAnyClear")($bitsAnyClear)
+    if ($bitsAnySet != null) __obj.updateDynamic("$bitsAnySet")($bitsAnySet)
+    if ($elemMatch != null) __obj.updateDynamic("$elemMatch")($elemMatch)
+    if ($eq != null) __obj.updateDynamic("$eq")($eq)
+    if ($expr != null) __obj.updateDynamic("$expr")($expr)
+    if ($geoIntersects != null) __obj.updateDynamic("$geoIntersects")($geoIntersects)
+    if ($geoWithin != null) __obj.updateDynamic("$geoWithin")($geoWithin)
+    if ($gt != null) __obj.updateDynamic("$gt")($gt)
+    if ($gte != null) __obj.updateDynamic("$gte")($gte)
+    if ($in != null) __obj.updateDynamic("$in")($in)
+    if ($jsonSchema != null) __obj.updateDynamic("$jsonSchema")($jsonSchema)
+    if ($lt != null) __obj.updateDynamic("$lt")($lt)
+    if ($lte != null) __obj.updateDynamic("$lte")($lte)
+    if ($mod != null) __obj.updateDynamic("$mod")($mod)
+    if ($ne != null) __obj.updateDynamic("$ne")($ne)
+    if ($near != null) __obj.updateDynamic("$near")($near)
+    if ($nearSphere != null) __obj.updateDynamic("$nearSphere")($nearSphere)
+    if ($nin != null) __obj.updateDynamic("$nin")($nin)
+    if ($not != null) __obj.updateDynamic("$not")($not.asInstanceOf[js.Any])
+    if ($options != null) __obj.updateDynamic("$options")($options)
+    if ($or != null) __obj.updateDynamic("$or")($or)
+    if ($regex != null) __obj.updateDynamic("$regex")($regex)
+    if ($size != null) __obj.updateDynamic("$size")($size.asInstanceOf[js.Any])
+    if ($text != null) __obj.updateDynamic("$text")($text)
+    if ($where != null) __obj.updateDynamic("$where")($where)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Condition[T, P]]
+  }
+}
+

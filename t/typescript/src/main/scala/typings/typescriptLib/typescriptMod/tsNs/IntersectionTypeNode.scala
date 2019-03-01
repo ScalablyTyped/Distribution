@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IntersectionTypeNode extends TypeNode {
+trait IntersectionTypeNode
+  extends TypeNode
+     with UnionOrIntersectionTypeNode {
   var types: NodeArray[TypeNode] = js.native
 }
 

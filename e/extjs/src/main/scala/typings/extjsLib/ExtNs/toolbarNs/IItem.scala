@@ -22,3 +22,22 @@ trait IItem
   var overflowText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IItem {
+  @scala.inline
+  def apply(
+    IComponent: extjsLib.ExtNs.IComponent = null,
+    disable: js.Function0[scala.Unit] = null,
+    enable: js.Function0[scala.Unit] = null,
+    focus: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    overflowText: java.lang.String = null
+  ): IItem = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (disable != null) __obj.updateDynamic("disable")(disable)
+    if (enable != null) __obj.updateDynamic("enable")(enable)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (overflowText != null) __obj.updateDynamic("overflowText")(overflowText)
+    __obj.asInstanceOf[IItem]
+  }
+}
+

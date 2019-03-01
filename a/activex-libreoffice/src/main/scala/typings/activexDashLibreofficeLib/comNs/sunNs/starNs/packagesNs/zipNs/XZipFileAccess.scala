@@ -17,3 +17,20 @@ trait XZipFileAccess
   def getStreamByPattern(aPattern: java.lang.String): activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream
 }
 
+object XZipFileAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getStreamByPattern: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XZipFileAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getStreamByPattern")(getStreamByPattern)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XZipFileAccess]
+  }
+}
+

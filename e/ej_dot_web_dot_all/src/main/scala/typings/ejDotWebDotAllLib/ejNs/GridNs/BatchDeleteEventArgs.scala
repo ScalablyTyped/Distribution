@@ -26,3 +26,24 @@ trait BatchDeleteEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BatchDeleteEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    primaryKey: js.Any = null,
+    rowData: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): BatchDeleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BatchDeleteEventArgs]
+  }
+}
+

@@ -12,3 +12,12 @@ trait FetchInfo extends js.Object {
   var dataTotalSize: scala.Double
 }
 
+object FetchInfo {
+  @scala.inline
+  def apply(dataTotalSize: scala.Double): FetchInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataTotalSize")(dataTotalSize)
+    __obj.asInstanceOf[FetchInfo]
+  }
+}
+

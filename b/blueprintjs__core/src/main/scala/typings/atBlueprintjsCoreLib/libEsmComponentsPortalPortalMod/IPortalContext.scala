@@ -10,3 +10,12 @@ trait IPortalContext extends js.Object {
   var blueprintPortalClassName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IPortalContext {
+  @scala.inline
+  def apply(blueprintPortalClassName: java.lang.String = null): IPortalContext = {
+    val __obj = js.Dynamic.literal()
+    if (blueprintPortalClassName != null) __obj.updateDynamic("blueprintPortalClassName")(blueprintPortalClassName)
+    __obj.asInstanceOf[IPortalContext]
+  }
+}
+

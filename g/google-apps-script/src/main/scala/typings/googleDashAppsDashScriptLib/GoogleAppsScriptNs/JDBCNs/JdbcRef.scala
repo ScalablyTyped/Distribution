@@ -11,3 +11,18 @@ trait JdbcRef extends js.Object {
   def setObject(`object`: js.Object): scala.Unit
 }
 
+object JdbcRef {
+  @scala.inline
+  def apply(
+    getBaseTypeName: js.Function0[java.lang.String],
+    getObject: js.Function0[js.Object],
+    setObject: js.Function1[js.Object, scala.Unit]
+  ): JdbcRef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getBaseTypeName")(getBaseTypeName)
+    __obj.updateDynamic("getObject")(getObject)
+    __obj.updateDynamic("setObject")(setObject)
+    __obj.asInstanceOf[JdbcRef]
+  }
+}
+

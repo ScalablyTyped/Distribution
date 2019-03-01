@@ -32,3 +32,22 @@ trait XCellFormatRangesSupplier
   def getCellFormatRanges(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
 }
 
+object XCellFormatRangesSupplier {
+  @scala.inline
+  def apply(
+    CellFormatRanges: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    acquire: js.Function0[scala.Unit],
+    getCellFormatRanges: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCellFormatRangesSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CellFormatRanges")(CellFormatRanges)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCellFormatRanges")(getCellFormatRanges)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCellFormatRangesSupplier]
+  }
+}
+

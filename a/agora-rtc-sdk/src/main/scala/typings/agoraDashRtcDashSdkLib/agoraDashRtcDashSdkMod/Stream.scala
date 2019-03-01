@@ -20,7 +20,10 @@ trait Stream extends js.Object {
   def hasVideo(): scala.Boolean = js.native
   def init(onSuccess: js.Function0[scala.Unit], onFailure: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
   def play(HTMLElementID: java.lang.String): scala.Unit = js.native
-  def setVideoProfile(profile: FirefoxVideoProfile | SafariVideoProfile | ScreenSharingProfile | VideoProfile): scala.Unit = js.native
+  def setVideoProfile(profile: FirefoxVideoProfile): scala.Unit = js.native
+  def setVideoProfile(profile: SafariVideoProfile): scala.Unit = js.native
+  def setVideoProfile(profile: ScreenSharingProfile): scala.Unit = js.native
+  def setVideoProfile(profile: VideoProfile): scala.Unit = js.native
   def stop(): scala.Unit = js.native
 }
 

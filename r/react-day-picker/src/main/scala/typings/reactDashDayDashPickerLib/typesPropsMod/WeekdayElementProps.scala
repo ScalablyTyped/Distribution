@@ -14,3 +14,24 @@ trait WeekdayElementProps extends js.Object {
   var weekdaysShort: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object WeekdayElementProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String,
+    locale: java.lang.String,
+    localeUtils: reactDashDayDashPickerLib.typesUtilsMod.LocaleUtils,
+    weekday: scala.Double,
+    weekdaysLong: js.Array[java.lang.String] = null,
+    weekdaysShort: js.Array[java.lang.String] = null
+  ): WeekdayElementProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("locale")(locale)
+    __obj.updateDynamic("localeUtils")(localeUtils)
+    __obj.updateDynamic("weekday")(weekday)
+    if (weekdaysLong != null) __obj.updateDynamic("weekdaysLong")(weekdaysLong)
+    if (weekdaysShort != null) __obj.updateDynamic("weekdaysShort")(weekdaysShort)
+    __obj.asInstanceOf[WeekdayElementProps]
+  }
+}
+

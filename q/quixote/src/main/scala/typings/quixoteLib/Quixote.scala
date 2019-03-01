@@ -13,3 +13,18 @@ trait Quixote extends js.Object {
   ): QFrame
 }
 
+object Quixote {
+  @scala.inline
+  def apply(
+    createFrame: js.Function2[
+      QuixoteFrameOptions, 
+      js.Function2[/* err */ stdLib.Error, /* loadedFrame */ QFrame, scala.Unit], 
+      QFrame
+    ]
+  ): Quixote = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createFrame")(createFrame)
+    __obj.asInstanceOf[Quixote]
+  }
+}
+

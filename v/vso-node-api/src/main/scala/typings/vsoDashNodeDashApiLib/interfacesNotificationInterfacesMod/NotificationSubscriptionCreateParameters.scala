@@ -28,3 +28,22 @@ trait NotificationSubscriptionCreateParameters extends js.Object {
   var subscriber: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
 }
 
+object NotificationSubscriptionCreateParameters {
+  @scala.inline
+  def apply(
+    channel: ISubscriptionChannel,
+    description: java.lang.String,
+    filter: ISubscriptionFilter,
+    scope: SubscriptionScope,
+    subscriber: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
+  ): NotificationSubscriptionCreateParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("subscriber")(subscriber)
+    __obj.asInstanceOf[NotificationSubscriptionCreateParameters]
+  }
+}
+

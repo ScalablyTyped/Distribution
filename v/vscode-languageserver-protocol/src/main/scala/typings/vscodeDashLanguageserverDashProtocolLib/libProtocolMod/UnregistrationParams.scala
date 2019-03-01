@@ -9,3 +9,12 @@ trait UnregistrationParams extends js.Object {
   var unregisterations: js.Array[Unregistration]
 }
 
+object UnregistrationParams {
+  @scala.inline
+  def apply(unregisterations: js.Array[Unregistration]): UnregistrationParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("unregisterations")(unregisterations)
+    __obj.asInstanceOf[UnregistrationParams]
+  }
+}
+

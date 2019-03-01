@@ -27,3 +27,20 @@ trait VolumeProjection extends js.Object {
   val serviceAccountToken: ServiceAccountTokenProjection
 }
 
+object VolumeProjection {
+  @scala.inline
+  def apply(
+    configMap: ConfigMapProjection,
+    downwardAPI: DownwardAPIProjection,
+    secret: SecretProjection,
+    serviceAccountToken: ServiceAccountTokenProjection
+  ): VolumeProjection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configMap")(configMap)
+    __obj.updateDynamic("downwardAPI")(downwardAPI)
+    __obj.updateDynamic("secret")(secret)
+    __obj.updateDynamic("serviceAccountToken")(serviceAccountToken)
+    __obj.asInstanceOf[VolumeProjection]
+  }
+}
+

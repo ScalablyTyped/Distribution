@@ -28,3 +28,16 @@ trait ConditionalTextComparisonRule extends js.Object {
   var text: java.lang.String
 }
 
+object ConditionalTextComparisonRule {
+  @scala.inline
+  def apply(
+    operator: ConditionalTextOperator | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Contains | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotContains | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BeginsWith | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EndsWith,
+    text: java.lang.String
+  ): ConditionalTextComparisonRule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ConditionalTextComparisonRule]
+  }
+}
+

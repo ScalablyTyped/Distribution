@@ -15,3 +15,13 @@ trait Point extends js.Object {
   var y: chromeDashAppsLib.chromeNs.integer
 }
 
+object Point {
+  @scala.inline
+  def apply(x: chromeDashAppsLib.chromeNs.integer, y: chromeDashAppsLib.chromeNs.integer): Point = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Point]
+  }
+}
+

@@ -110,3 +110,46 @@ trait ChartTitleOptions extends js.Object {
   var wrap: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartTitleOptions {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    borderThickness: scala.Int | scala.Double = null,
+    cornerRadius: scala.Int | scala.Double = null,
+    dockInsidePlotArea: js.UndefOr[scala.Boolean] = js.undefined,
+    fontColor: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    horizontalAlign: java.lang.String = null,
+    margin: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    padding: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    verticalAlign: java.lang.String = null,
+    wrap: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartTitleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderThickness != null) __obj.updateDynamic("borderThickness")(borderThickness.asInstanceOf[js.Any])
+    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(dockInsidePlotArea)) __obj.updateDynamic("dockInsidePlotArea")(dockInsidePlotArea)
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (horizontalAlign != null) __obj.updateDynamic("horizontalAlign")(horizontalAlign)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)
+    __obj.asInstanceOf[ChartTitleOptions]
+  }
+}
+

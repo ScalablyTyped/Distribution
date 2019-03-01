@@ -33,3 +33,62 @@ trait XSentenceCursor extends XTextCursor {
   def isStartOfSentence(): scala.Boolean
 }
 
+object XSentenceCursor {
+  @scala.inline
+  def apply(
+    End: XTextRange,
+    Start: XTextRange,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    collapseToEnd: js.Function0[scala.Unit],
+    collapseToStart: js.Function0[scala.Unit],
+    getEnd: js.Function0[XTextRange],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    goLeft: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    goRight: js.Function2[scala.Double, scala.Boolean, scala.Boolean],
+    gotoEnd: js.Function1[scala.Boolean, scala.Unit],
+    gotoEndOfSentence: js.Function1[scala.Boolean, scala.Boolean],
+    gotoNextSentence: js.Function1[scala.Boolean, scala.Boolean],
+    gotoPreviousSentence: js.Function1[scala.Boolean, scala.Boolean],
+    gotoRange: js.Function2[XTextRange, scala.Boolean, scala.Unit],
+    gotoStart: js.Function1[scala.Boolean, scala.Unit],
+    gotoStartOfSentence: js.Function1[scala.Boolean, scala.Boolean],
+    isCollapsed: js.Function0[scala.Boolean],
+    isEndOfSentence: js.Function0[scala.Boolean],
+    isStartOfSentence: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): XSentenceCursor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("End")(End)
+    __obj.updateDynamic("Start")(Start)
+    __obj.updateDynamic("String")(String)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("collapseToEnd")(collapseToEnd)
+    __obj.updateDynamic("collapseToStart")(collapseToStart)
+    __obj.updateDynamic("getEnd")(getEnd)
+    __obj.updateDynamic("getStart")(getStart)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("goLeft")(goLeft)
+    __obj.updateDynamic("goRight")(goRight)
+    __obj.updateDynamic("gotoEnd")(gotoEnd)
+    __obj.updateDynamic("gotoEndOfSentence")(gotoEndOfSentence)
+    __obj.updateDynamic("gotoNextSentence")(gotoNextSentence)
+    __obj.updateDynamic("gotoPreviousSentence")(gotoPreviousSentence)
+    __obj.updateDynamic("gotoRange")(gotoRange)
+    __obj.updateDynamic("gotoStart")(gotoStart)
+    __obj.updateDynamic("gotoStartOfSentence")(gotoStartOfSentence)
+    __obj.updateDynamic("isCollapsed")(isCollapsed)
+    __obj.updateDynamic("isEndOfSentence")(isEndOfSentence)
+    __obj.updateDynamic("isStartOfSentence")(isStartOfSentence)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setString")(setString)
+    __obj.asInstanceOf[XSentenceCursor]
+  }
+}
+

@@ -39,3 +39,22 @@ trait showContactsParams extends js.Object {
   var selectedProperty: js.UndefOr[js.Function1[/* param0 */ js.Any, _]] = js.undefined
 }
 
+object showContactsParams {
+  @scala.inline
+  def apply(
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    cancel: js.Function1[/* param0 */ js.Any, _] = null,
+    fields: js.Array[java.lang.String] = null,
+    selectedPerson: js.Function1[/* param0 */ js.Any, _] = null,
+    selectedProperty: js.Function1[/* param0 */ js.Any, _] = null
+  ): showContactsParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (selectedPerson != null) __obj.updateDynamic("selectedPerson")(selectedPerson)
+    if (selectedProperty != null) __obj.updateDynamic("selectedProperty")(selectedProperty)
+    __obj.asInstanceOf[showContactsParams]
+  }
+}
+

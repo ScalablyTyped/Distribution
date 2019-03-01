@@ -22,3 +22,38 @@ trait Abide extends js.Object {
   def validateText(element: foundationDashSitesLib.JQuery, pattern: java.lang.String): scala.Boolean
 }
 
+object Abide {
+  @scala.inline
+  def apply(
+    addErrorClasses: js.Function1[foundationDashSitesLib.JQuery, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    findFormError: js.Function1[foundationDashSitesLib.JQuery, foundationDashSitesLib.JQuery],
+    findLabel: js.Function1[foundationDashSitesLib.JQuery, scala.Boolean],
+    matchValidation: js.Function3[foundationDashSitesLib.JQuery, java.lang.String, scala.Boolean, scala.Boolean],
+    removeErrorClasses: js.Function1[foundationDashSitesLib.JQuery, scala.Unit],
+    removeRadioErrorClasses: js.Function1[java.lang.String, scala.Unit],
+    requiredChecked: js.Function1[foundationDashSitesLib.JQuery, scala.Boolean],
+    resetForm: js.Function0[scala.Unit],
+    validateForm: js.Function0[scala.Boolean],
+    validateInput: js.Function1[foundationDashSitesLib.JQuery, scala.Boolean],
+    validateRadio: js.Function1[java.lang.String, scala.Boolean],
+    validateText: js.Function2[foundationDashSitesLib.JQuery, java.lang.String, scala.Boolean]
+  ): Abide = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addErrorClasses")(addErrorClasses)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("findFormError")(findFormError)
+    __obj.updateDynamic("findLabel")(findLabel)
+    __obj.updateDynamic("matchValidation")(matchValidation)
+    __obj.updateDynamic("removeErrorClasses")(removeErrorClasses)
+    __obj.updateDynamic("removeRadioErrorClasses")(removeRadioErrorClasses)
+    __obj.updateDynamic("requiredChecked")(requiredChecked)
+    __obj.updateDynamic("resetForm")(resetForm)
+    __obj.updateDynamic("validateForm")(validateForm)
+    __obj.updateDynamic("validateInput")(validateInput)
+    __obj.updateDynamic("validateRadio")(validateRadio)
+    __obj.updateDynamic("validateText")(validateText)
+    __obj.asInstanceOf[Abide]
+  }
+}
+

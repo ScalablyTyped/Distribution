@@ -17,3 +17,30 @@ trait ListPartsResult extends js.Object {
   var uploadId: java.lang.String
 }
 
+object ListPartsResult {
+  @scala.inline
+  def apply(
+    PartNumberMarker: scala.Double,
+    bucket: java.lang.String,
+    isTruncated: scala.Boolean,
+    maxParts: scala.Double,
+    name: java.lang.String,
+    nextPartNumberMarker: scala.Double,
+    parts: js.Array[ObjectPart],
+    res: NormalSuccessResponse,
+    uploadId: java.lang.String
+  ): ListPartsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PartNumberMarker")(PartNumberMarker)
+    __obj.updateDynamic("bucket")(bucket)
+    __obj.updateDynamic("isTruncated")(isTruncated)
+    __obj.updateDynamic("maxParts")(maxParts)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("nextPartNumberMarker")(nextPartNumberMarker)
+    __obj.updateDynamic("parts")(parts)
+    __obj.updateDynamic("res")(res)
+    __obj.updateDynamic("uploadId")(uploadId)
+    __obj.asInstanceOf[ListPartsResult]
+  }
+}
+

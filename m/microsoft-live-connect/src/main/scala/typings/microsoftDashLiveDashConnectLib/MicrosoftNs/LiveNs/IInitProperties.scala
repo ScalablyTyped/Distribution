@@ -70,3 +70,26 @@ trait IInitProperties extends js.Object {
   var status: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IInitProperties {
+  @scala.inline
+  def apply(
+    client_id: java.lang.String = null,
+    logging: js.UndefOr[scala.Boolean] = js.undefined,
+    redirect_uri: java.lang.String = null,
+    response_type: java.lang.String = null,
+    scope: js.Any = null,
+    secure_cookie: java.lang.String = null,
+    status: js.UndefOr[scala.Boolean] = js.undefined
+  ): IInitProperties = {
+    val __obj = js.Dynamic.literal()
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (secure_cookie != null) __obj.updateDynamic("secure_cookie")(secure_cookie)
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[IInitProperties]
+  }
+}
+

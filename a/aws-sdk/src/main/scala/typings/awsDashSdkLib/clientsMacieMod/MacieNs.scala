@@ -368,6 +368,10 @@ object MacieNs extends js.Object {
     var failedS3Resources: js.UndefOr[FailedS3Resources] = js.undefined
   }
   
+  trait _S3OneTimeClassificationType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AWSAccountId = java.lang.String
   type BucketName = java.lang.String
@@ -380,10 +384,10 @@ object MacieNs extends js.Object {
   type NextToken = java.lang.String
   type Prefix = java.lang.String
   type S3ContinuousClassificationType = awsDashSdkLib.awsDashSdkLibStrings.FULL | java.lang.String
-  type S3OneTimeClassificationType = awsDashSdkLib.awsDashSdkLibStrings.FULL | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
+  type S3OneTimeClassificationType = _S3OneTimeClassificationType | java.lang.String
   type S3Resources = js.Array[S3Resource]
   type S3ResourcesClassification = js.Array[S3ResourceClassification]
   type S3ResourcesClassificationUpdate = js.Array[S3ResourceClassificationUpdate]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-12-19` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

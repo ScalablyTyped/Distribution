@@ -130,3 +130,64 @@ trait DataPoint extends js.Object {
   var z: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DataPoint {
+  @scala.inline
+  def apply(
+    color: java.lang.String | Gradient = null,
+    colorValue: scala.Int | scala.Double = null,
+    dataLabels: DataLabels = null,
+    description: java.lang.String = null,
+    drilldown: java.lang.String = null,
+    events: PointEvents = null,
+    high: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    innerRadius: scala.Double | java.lang.String = null,
+    isIntermediateSum: js.UndefOr[scala.Boolean] = js.undefined,
+    isSum: js.UndefOr[scala.Boolean] = js.undefined,
+    legendIndex: scala.Int | scala.Double = null,
+    low: scala.Int | scala.Double = null,
+    marker: Marker = null,
+    median: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    parent: java.lang.String = null,
+    q1: scala.Int | scala.Double = null,
+    q3: scala.Int | scala.Double = null,
+    radius: scala.Double | java.lang.String = null,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    sliced: js.UndefOr[scala.Boolean] = js.undefined,
+    value: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null
+  ): DataPoint = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (colorValue != null) __obj.updateDynamic("colorValue")(colorValue.asInstanceOf[js.Any])
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(isIntermediateSum)) __obj.updateDynamic("isIntermediateSum")(isIntermediateSum)
+    if (!js.isUndefined(isSum)) __obj.updateDynamic("isSum")(isSum)
+    if (legendIndex != null) __obj.updateDynamic("legendIndex")(legendIndex.asInstanceOf[js.Any])
+    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (median != null) __obj.updateDynamic("median")(median.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (q1 != null) __obj.updateDynamic("q1")(q1.asInstanceOf[js.Any])
+    if (q3 != null) __obj.updateDynamic("q3")(q3.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(sliced)) __obj.updateDynamic("sliced")(sliced)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataPoint]
+  }
+}
+

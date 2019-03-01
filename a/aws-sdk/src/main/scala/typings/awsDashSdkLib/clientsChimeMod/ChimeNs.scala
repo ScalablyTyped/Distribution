@@ -797,23 +797,37 @@ object ChimeNs extends js.Object {
     var UserId: js.UndefOr[NonEmptyString] = js.undefined
   }
   
+  trait _AccountType extends js.Object
+  
+  trait _EmailStatus extends js.Object
+  
+  trait _ErrorCode extends js.Object
+  
+  trait _InviteStatus extends js.Object
+  
+  trait _License extends js.Object
+  
+  trait _RegistrationStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccountList = js.Array[Account]
   type AccountName = java.lang.String
-  type AccountType = awsDashSdkLib.awsDashSdkLibStrings.Team | awsDashSdkLib.awsDashSdkLibStrings.EnterpriseDirectory | awsDashSdkLib.awsDashSdkLibStrings.EnterpriseLWA | awsDashSdkLib.awsDashSdkLibStrings.EnterpriseOIDC | java.lang.String
+  type AccountType = _AccountType | java.lang.String
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type EmailAddress = java.lang.String
-  type EmailStatus = awsDashSdkLib.awsDashSdkLibStrings.NotSent | awsDashSdkLib.awsDashSdkLibStrings.Sent | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
-  type ErrorCode = awsDashSdkLib.awsDashSdkLibStrings.Unauthorized | awsDashSdkLib.awsDashSdkLibStrings.Forbidden | awsDashSdkLib.awsDashSdkLibStrings.NotFound | awsDashSdkLib.awsDashSdkLibStrings.BadRequest | awsDashSdkLib.awsDashSdkLibStrings.Conflict | awsDashSdkLib.awsDashSdkLibStrings.ServiceFailure | awsDashSdkLib.awsDashSdkLibStrings.ServiceUnavailable | awsDashSdkLib.awsDashSdkLibStrings.Unprocessable | awsDashSdkLib.awsDashSdkLibStrings.Throttled | awsDashSdkLib.awsDashSdkLibStrings.PreconditionFailed | java.lang.String
+  type EmailStatus = _EmailStatus | java.lang.String
+  type ErrorCode = _ErrorCode | java.lang.String
   type InviteList = js.Array[Invite]
-  type InviteStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Accepted | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type InviteStatus = _InviteStatus | java.lang.String
   type Iso8601Timestamp = stdLib.Date
-  type License = awsDashSdkLib.awsDashSdkLibStrings.Basic | awsDashSdkLib.awsDashSdkLibStrings.Plus | awsDashSdkLib.awsDashSdkLibStrings.Pro | awsDashSdkLib.awsDashSdkLibStrings.ProTrial | java.lang.String
+  type License = _License | java.lang.String
   type LicenseList = js.Array[License]
   type NonEmptyString = java.lang.String
   type ProfileServiceMaxResults = scala.Double
-  type RegistrationStatus = awsDashSdkLib.awsDashSdkLibStrings.Unregistered | awsDashSdkLib.awsDashSdkLibStrings.Registered | awsDashSdkLib.awsDashSdkLibStrings.Suspended | java.lang.String
+  type RegistrationStatus = _RegistrationStatus | java.lang.String
   type SensitiveString = java.lang.String
   type String = java.lang.String
   type UpdateUserRequestItemList = js.Array[UpdateUserRequestItem]
@@ -821,6 +835,6 @@ object ChimeNs extends js.Object {
   type UserErrorList = js.Array[UserError]
   type UserIdList = js.Array[NonEmptyString]
   type UserList = js.Array[User]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-05-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

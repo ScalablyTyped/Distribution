@@ -10,3 +10,13 @@ trait DotenvConfigOutput extends js.Object {
   var parsed: js.UndefOr[DotenvParseOutput] = js.undefined
 }
 
+object DotenvConfigOutput {
+  @scala.inline
+  def apply(error: nodeLib.Error = null, parsed: DotenvParseOutput = null): DotenvConfigOutput = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (parsed != null) __obj.updateDynamic("parsed")(parsed)
+    __obj.asInstanceOf[DotenvConfigOutput]
+  }
+}
+

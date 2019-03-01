@@ -11,3 +11,18 @@ trait Anon_Conjunction extends js.Object {
   var serial: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Conjunction {
+  @scala.inline
+  def apply(
+    conjunction: java.lang.String = null,
+    separator: java.lang.String = null,
+    serial: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Conjunction = {
+    val __obj = js.Dynamic.literal()
+    if (conjunction != null) __obj.updateDynamic("conjunction")(conjunction)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(serial)) __obj.updateDynamic("serial")(serial)
+    __obj.asInstanceOf[Anon_Conjunction]
+  }
+}
+

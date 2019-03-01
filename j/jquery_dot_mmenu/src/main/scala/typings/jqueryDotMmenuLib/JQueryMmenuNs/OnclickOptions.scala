@@ -27,3 +27,18 @@ trait OnclickOptions extends js.Object {
   var setSelected: js.UndefOr[scala.Boolean | js.Any] = js.undefined
 }
 
+object OnclickOptions {
+  @scala.inline
+  def apply(
+    close: scala.Boolean | js.Any = null,
+    preventDefault: scala.Boolean | js.Any = null,
+    setSelected: scala.Boolean | js.Any = null
+  ): OnclickOptions = {
+    val __obj = js.Dynamic.literal()
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (preventDefault != null) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
+    if (setSelected != null) __obj.updateDynamic("setSelected")(setSelected.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnclickOptions]
+  }
+}
+

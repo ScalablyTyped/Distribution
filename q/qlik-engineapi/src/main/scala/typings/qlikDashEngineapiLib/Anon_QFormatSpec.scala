@@ -10,3 +10,13 @@ trait Anon_QFormatSpec extends js.Object {
   var qPreview: js.Array[qlikDashEngineapiLib.EngineAPINs.IDataRecord]
 }
 
+object Anon_QFormatSpec {
+  @scala.inline
+  def apply(qFormatSpec: java.lang.String, qPreview: js.Array[qlikDashEngineapiLib.EngineAPINs.IDataRecord]): Anon_QFormatSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFormatSpec")(qFormatSpec)
+    __obj.updateDynamic("qPreview")(qPreview)
+    __obj.asInstanceOf[Anon_QFormatSpec]
+  }
+}
+

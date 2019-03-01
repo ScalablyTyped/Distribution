@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object plotlyDotJsLibStrings {
   @js.native
-  sealed trait `-` extends js.Object
+  sealed trait `-`
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisType
   
   @js.native
   sealed trait B extends js.Object
@@ -76,7 +77,8 @@ object plotlyDotJsLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait autoScale2d extends js.Object
+  sealed trait autoScale2d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
   sealed trait autosize extends js.Object
@@ -163,7 +165,8 @@ object plotlyDotJsLibStrings {
   sealed trait caption extends js.Object
   
   @js.native
-  sealed trait category extends js.Object
+  sealed trait category
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisType
   
   @js.native
   sealed trait `category ascending` extends js.Object
@@ -175,7 +178,8 @@ object plotlyDotJsLibStrings {
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait chinese extends js.Object
+  sealed trait chinese
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait choropleth extends js.Object
@@ -226,7 +230,8 @@ object plotlyDotJsLibStrings {
   sealed trait contour extends js.Object
   
   @js.native
-  sealed trait coptic extends js.Object
+  sealed trait coptic
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait count extends js.Object
@@ -250,10 +255,12 @@ object plotlyDotJsLibStrings {
   sealed trait `cubic-out` extends js.Object
   
   @js.native
-  sealed trait dash extends js.Object
+  sealed trait dash
+    extends plotlyDotJsLib.plotlyDotJsMod.Dash
   
   @js.native
-  sealed trait dashdot extends js.Object
+  sealed trait dashdot
+    extends plotlyDotJsLib.plotlyDotJsMod.Dash
   
   @js.native
   sealed trait data extends js.Object
@@ -262,7 +269,8 @@ object plotlyDotJsLibStrings {
   sealed trait datalist extends js.Object
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisType
   
   @js.native
   sealed trait day extends js.Object
@@ -298,7 +306,8 @@ object plotlyDotJsLibStrings {
   sealed trait dir extends js.Object
   
   @js.native
-  sealed trait discworld extends js.Object
+  sealed trait discworld
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait div extends js.Object
@@ -310,7 +319,8 @@ object plotlyDotJsLibStrings {
   sealed trait domain extends js.Object
   
   @js.native
-  sealed trait dot extends js.Object
+  sealed trait dot
+    extends plotlyDotJsLib.plotlyDotJsMod.Dash
   
   @js.native
   sealed trait dt extends js.Object
@@ -343,7 +353,8 @@ object plotlyDotJsLibStrings {
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait ethiopian extends js.Object
+  sealed trait ethiopian
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait exp extends js.Object
@@ -481,7 +492,8 @@ object plotlyDotJsLibStrings {
   sealed trait g extends js.Object
   
   @js.native
-  sealed trait gregorian extends js.Object
+  sealed trait gregorian
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait group extends js.Object
@@ -523,7 +535,8 @@ object plotlyDotJsLibStrings {
   sealed trait heatmap extends js.Object
   
   @js.native
-  sealed trait hebrew extends js.Object
+  sealed trait hebrew
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait hgroup extends js.Object
@@ -541,22 +554,28 @@ object plotlyDotJsLibStrings {
   sealed trait hover extends js.Object
   
   @js.native
-  sealed trait hoverClosest3d extends js.Object
+  sealed trait hoverClosest3d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait hoverClosestCartesian extends js.Object
+  sealed trait hoverClosestCartesian
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait hoverClosestGeo extends js.Object
+  sealed trait hoverClosestGeo
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait hoverClosestGl2d extends js.Object
+  sealed trait hoverClosestGl2d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait hoverClosestPie extends js.Object
+  sealed trait hoverClosestPie
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait hoverCompareCartesian extends js.Object
+  sealed trait hoverCompareCartesian
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
   sealed trait hr extends js.Object
@@ -592,16 +611,19 @@ object plotlyDotJsLibStrings {
   sealed trait inside extends js.Object
   
   @js.native
-  sealed trait islamic extends js.Object
+  sealed trait islamic
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
-  sealed trait jalali extends js.Object
+  sealed trait jalali
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait jpeg extends js.Object
   
   @js.native
-  sealed trait julian extends js.Object
+  sealed trait julian
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait kbd extends js.Object
@@ -613,7 +635,8 @@ object plotlyDotJsLibStrings {
   sealed trait lasso extends js.Object
   
   @js.native
-  sealed trait lasso2d extends js.Object
+  sealed trait lasso2d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
   sealed trait last extends js.Object
@@ -634,7 +657,8 @@ object plotlyDotJsLibStrings {
   sealed trait line extends js.Object
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisType
   
   @js.native
   sealed trait `linear-in` extends js.Object
@@ -658,13 +682,16 @@ object plotlyDotJsLibStrings {
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisType
   
   @js.native
-  sealed trait longdash extends js.Object
+  sealed trait longdash
+    extends plotlyDotJsLib.plotlyDotJsMod.Dash
   
   @js.native
-  sealed trait longdashdot extends js.Object
+  sealed trait longdashdot
+    extends plotlyDotJsLib.plotlyDotJsMod.Dash
   
   @js.native
   sealed trait manual extends js.Object
@@ -691,7 +718,8 @@ object plotlyDotJsLibStrings {
   sealed trait max extends js.Object
   
   @js.native
-  sealed trait mayan extends js.Object
+  sealed trait mayan
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait median extends js.Object
@@ -730,13 +758,15 @@ object plotlyDotJsLibStrings {
   sealed trait name extends js.Object
   
   @js.native
-  sealed trait nanakshahi extends js.Object
+  sealed trait nanakshahi
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait nav extends js.Object
   
   @js.native
-  sealed trait nepali extends js.Object
+  sealed trait nepali
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait none extends js.Object
@@ -778,7 +808,8 @@ object plotlyDotJsLibStrings {
   sealed trait orbit extends js.Object
   
   @js.native
-  sealed trait orbitRotation extends js.Object
+  sealed trait orbitRotation
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
   sealed trait output extends js.Object
@@ -796,10 +827,12 @@ object plotlyDotJsLibStrings {
   sealed trait pan extends js.Object
   
   @js.native
-  sealed trait pan2d extends js.Object
+  sealed trait pan2d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait pan3d extends js.Object
+  sealed trait pan3d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
   sealed trait paper extends js.Object
@@ -820,7 +853,8 @@ object plotlyDotJsLibStrings {
   sealed trait percent extends js.Object
   
   @js.native
-  sealed trait persian extends js.Object
+  sealed trait persian
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait picture extends js.Object
@@ -985,19 +1019,24 @@ object plotlyDotJsLibStrings {
   sealed trait `reset+autosize` extends js.Object
   
   @js.native
-  sealed trait resetCameraDefault3d extends js.Object
+  sealed trait resetCameraDefault3d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait resetCameraLastSave3d extends js.Object
+  sealed trait resetCameraLastSave3d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait resetGeo extends js.Object
+  sealed trait resetGeo
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait resetScale2d extends js.Object
+  sealed trait resetScale2d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait resetViews extends js.Object
+  sealed trait resetViews
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
   sealed trait restyle extends js.Object
@@ -1060,10 +1099,12 @@ object plotlyDotJsLibStrings {
   sealed trait select extends js.Object
   
   @js.native
-  sealed trait select2d extends js.Object
+  sealed trait select2d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait sendDataToCloud extends js.Object
+  sealed trait sendDataToCloud
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
   sealed trait sin extends js.Object
@@ -1087,7 +1128,8 @@ object plotlyDotJsLibStrings {
   sealed trait small extends js.Object
   
   @js.native
-  sealed trait solid extends js.Object
+  sealed trait solid
+    extends plotlyDotJsLib.plotlyDotJsMod.Dash
   
   @js.native
   sealed trait sort extends js.Object
@@ -1147,10 +1189,12 @@ object plotlyDotJsLibStrings {
   sealed trait table extends js.Object
   
   @js.native
-  sealed trait tableRotation extends js.Object
+  sealed trait tableRotation
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait taiwan extends js.Object
+  sealed trait taiwan
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait tbody extends js.Object
@@ -1186,7 +1230,8 @@ object plotlyDotJsLibStrings {
   sealed trait th extends js.Object
   
   @js.native
-  sealed trait thai extends js.Object
+  sealed trait thai
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait thead extends js.Object
@@ -1201,16 +1246,19 @@ object plotlyDotJsLibStrings {
   sealed trait title extends js.Object
   
   @js.native
-  sealed trait toImage extends js.Object
+  sealed trait toImage
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
   sealed trait todate extends js.Object
   
   @js.native
-  sealed trait toggleHover extends js.Object
+  sealed trait toggleHover
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait toggleSpikelines extends js.Object
+  sealed trait toggleSpikelines
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
   sealed trait tonext extends js.Object
@@ -1261,7 +1309,8 @@ object plotlyDotJsLibStrings {
   sealed trait ul extends js.Object
   
   @js.native
-  sealed trait ummalqura extends js.Object
+  sealed trait ummalqura
+    extends plotlyDotJsLib.plotlyDotJsMod.Calendar
   
   @js.native
   sealed trait update extends js.Object
@@ -1297,7 +1346,8 @@ object plotlyDotJsLibStrings {
   sealed trait webp extends js.Object
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait x
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
   sealed trait `x+name` extends js.Object
@@ -1324,31 +1374,40 @@ object plotlyDotJsLibStrings {
   sealed trait `x+y+z+text` extends js.Object
   
   @js.native
-  sealed trait x2 extends js.Object
+  sealed trait x2
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait x3 extends js.Object
+  sealed trait x3
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait x4 extends js.Object
+  sealed trait x4
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait x5 extends js.Object
+  sealed trait x5
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait x6 extends js.Object
+  sealed trait x6
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait x7 extends js.Object
+  sealed trait x7
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait x8 extends js.Object
+  sealed trait x8
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait x9 extends js.Object
+  sealed trait x9
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
   sealed trait `y+x` extends js.Object
@@ -1378,28 +1437,36 @@ object plotlyDotJsLibStrings {
   sealed trait `y+z+text` extends js.Object
   
   @js.native
-  sealed trait y2 extends js.Object
+  sealed trait y2
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait y3 extends js.Object
+  sealed trait y3
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait y4 extends js.Object
+  sealed trait y4
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait y5 extends js.Object
+  sealed trait y5
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait y6 extends js.Object
+  sealed trait y6
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait y7 extends js.Object
+  sealed trait y7
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait y8 extends js.Object
+  sealed trait y8
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
-  sealed trait y9 extends js.Object
+  sealed trait y9
+    extends plotlyDotJsLib.plotlyDotJsMod.AxisName
   
   @js.native
   sealed trait year extends js.Object
@@ -1435,22 +1502,28 @@ object plotlyDotJsLibStrings {
   sealed trait zoom extends js.Object
   
   @js.native
-  sealed trait zoom2d extends js.Object
+  sealed trait zoom2d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait zoom3d extends js.Object
+  sealed trait zoom3d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait zoomIn2d extends js.Object
+  sealed trait zoomIn2d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait zoomInGeo extends js.Object
+  sealed trait zoomInGeo
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait zoomOut2d extends js.Object
+  sealed trait zoomOut2d
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @js.native
-  sealed trait zoomOutGeo extends js.Object
+  sealed trait zoomOutGeo
+    extends plotlyDotJsLib.plotlyDotJsMod.ModeBarDefaultButtons
   
   @scala.inline
   def `-`: `-` = "-".asInstanceOf[`-`]

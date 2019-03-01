@@ -35,3 +35,42 @@ trait Heap[T] extends js.Object {
   def updateItem(item: T): scala.Unit
 }
 
+object Heap {
+  @scala.inline
+  def apply[T](
+    clone: js.Function0[Heap[T]],
+    copy: js.Function0[Heap[T]],
+    empty: js.Function0[scala.Boolean],
+    front: js.Function0[T],
+    heapify: js.Function0[scala.Unit],
+    insert: js.Function1[T, scala.Unit],
+    peek: js.Function0[T],
+    pop: js.Function0[T],
+    push: js.Function1[T, scala.Unit],
+    pushpop: js.Function1[T, T],
+    replace: js.Function1[T, T],
+    size: js.Function0[scala.Double],
+    toArray: js.Function0[js.Array[T]],
+    top: js.Function0[T],
+    updateItem: js.Function1[T, scala.Unit]
+  ): Heap[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("empty")(empty)
+    __obj.updateDynamic("front")(front)
+    __obj.updateDynamic("heapify")(heapify)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("peek")(peek)
+    __obj.updateDynamic("pop")(pop)
+    __obj.updateDynamic("push")(push)
+    __obj.updateDynamic("pushpop")(pushpop)
+    __obj.updateDynamic("replace")(replace)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("toArray")(toArray)
+    __obj.updateDynamic("top")(top)
+    __obj.updateDynamic("updateItem")(updateItem)
+    __obj.asInstanceOf[Heap[T]]
+  }
+}
+

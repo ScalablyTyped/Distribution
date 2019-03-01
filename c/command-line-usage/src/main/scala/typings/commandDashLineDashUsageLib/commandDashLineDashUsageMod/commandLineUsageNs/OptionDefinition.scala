@@ -36,3 +36,32 @@ trait OptionDefinition extends js.Object {
   var typeLabel: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OptionDefinition {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    alias: java.lang.String = null,
+    defaultOption: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultValue: js.Any = null,
+    description: java.lang.String = null,
+    group: java.lang.String | js.Array[java.lang.String] = null,
+    lazyMultiple: js.UndefOr[scala.Boolean] = js.undefined,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.Any = null,
+    typeLabel: java.lang.String = null
+  ): OptionDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (!js.isUndefined(defaultOption)) __obj.updateDynamic("defaultOption")(defaultOption)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (!js.isUndefined(lazyMultiple)) __obj.updateDynamic("lazyMultiple")(lazyMultiple)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (typeLabel != null) __obj.updateDynamic("typeLabel")(typeLabel)
+    __obj.asInstanceOf[OptionDefinition]
+  }
+}
+

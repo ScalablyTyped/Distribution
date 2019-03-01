@@ -20,3 +20,16 @@ trait ProviderProps[A /* <: reduxLib.reduxMod.Action[_] */] extends js.Object {
   var store: reduxLib.reduxMod.Store[_, A]
 }
 
+object ProviderProps {
+  @scala.inline
+  def apply[A /* <: reduxLib.reduxMod.Action[_] */](
+    store: reduxLib.reduxMod.Store[_, A],
+    context: reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null
+  ): ProviderProps[A] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("store")(store)
+    if (context != null) __obj.updateDynamic("context")(context)
+    __obj.asInstanceOf[ProviderProps[A]]
+  }
+}
+

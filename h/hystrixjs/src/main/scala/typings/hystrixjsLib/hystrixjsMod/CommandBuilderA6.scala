@@ -28,3 +28,53 @@ trait CommandBuilderA6[R, T, U, V, W, X, Y] extends js.Object {
   def timeout(value: scala.Double): CommandBuilderA6[R, T, U, V, W, X, Y]
 }
 
+object CommandBuilderA6 {
+  @scala.inline
+  def apply[R, T, U, V, W, X, Y](
+    build: js.Function0[CommandA6[R, T, U, V, W, X, Y]],
+    circuitBreakerErrorThresholdPercentage: js.Function1[scala.Double, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    circuitBreakerForceClosed: js.Function1[scala.Boolean, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    circuitBreakerForceOpened: js.Function1[scala.Boolean, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    circuitBreakerRequestVolumeThreshold: js.Function1[scala.Double, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    circuitBreakerSleepWindowInMilliseconds: js.Function1[scala.Double, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    context: js.Function1[js.Any, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    errorHandler: js.Function1[
+      js.Function1[/* error */ js.Any, scala.Boolean], 
+      CommandBuilderA6[R, T, U, V, W, X, Y]
+    ],
+    fallbackTo: js.Function1[
+      js.Function2[/* error */ stdLib.Error, /* args */ js.Tuple6[T, U, V, W, X, Y], js.Thenable[R]], 
+      CommandBuilderA6[R, T, U, V, W, X, Y]
+    ],
+    percentileWindowLength: js.Function1[scala.Double, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    percentileWindowNumberOfBuckets: js.Function1[scala.Double, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    requestVolumeRejectionThreshold: js.Function1[scala.Double, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    run: js.Function1[
+      js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, js.Thenable[R]], 
+      CommandBuilderA6[R, T, U, V, W, X, Y]
+    ],
+    statisticalWindowLength: js.Function1[scala.Double, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    statisticalWindowNumberOfBuckets: js.Function1[scala.Double, CommandBuilderA6[R, T, U, V, W, X, Y]],
+    timeout: js.Function1[scala.Double, CommandBuilderA6[R, T, U, V, W, X, Y]]
+  ): CommandBuilderA6[R, T, U, V, W, X, Y] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("circuitBreakerErrorThresholdPercentage")(circuitBreakerErrorThresholdPercentage)
+    __obj.updateDynamic("circuitBreakerForceClosed")(circuitBreakerForceClosed)
+    __obj.updateDynamic("circuitBreakerForceOpened")(circuitBreakerForceOpened)
+    __obj.updateDynamic("circuitBreakerRequestVolumeThreshold")(circuitBreakerRequestVolumeThreshold)
+    __obj.updateDynamic("circuitBreakerSleepWindowInMilliseconds")(circuitBreakerSleepWindowInMilliseconds)
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("errorHandler")(errorHandler)
+    __obj.updateDynamic("fallbackTo")(fallbackTo)
+    __obj.updateDynamic("percentileWindowLength")(percentileWindowLength)
+    __obj.updateDynamic("percentileWindowNumberOfBuckets")(percentileWindowNumberOfBuckets)
+    __obj.updateDynamic("requestVolumeRejectionThreshold")(requestVolumeRejectionThreshold)
+    __obj.updateDynamic("run")(run)
+    __obj.updateDynamic("statisticalWindowLength")(statisticalWindowLength)
+    __obj.updateDynamic("statisticalWindowNumberOfBuckets")(statisticalWindowNumberOfBuckets)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[CommandBuilderA6[R, T, U, V, W, X, Y]]
+  }
+}
+

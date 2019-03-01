@@ -14,3 +14,24 @@ trait ClientData extends js.Object {
   var tokenBinding: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientData {
+  @scala.inline
+  def apply(
+    challenge: java.lang.String,
+    hashAlg: java.lang.String | Algorithm,
+    origin: java.lang.String,
+    rpId: java.lang.String,
+    extensions: WebAuthnExtensions = null,
+    tokenBinding: java.lang.String = null
+  ): ClientData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("challenge")(challenge)
+    __obj.updateDynamic("hashAlg")(hashAlg.asInstanceOf[js.Any])
+    __obj.updateDynamic("origin")(origin)
+    __obj.updateDynamic("rpId")(rpId)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (tokenBinding != null) __obj.updateDynamic("tokenBinding")(tokenBinding)
+    __obj.asInstanceOf[ClientData]
+  }
+}
+

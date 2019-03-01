@@ -21,3 +21,14 @@ trait IUsageRecordCreationOptions extends js.Object {
   var timestamp: scala.Double
 }
 
+object IUsageRecordCreationOptions {
+  @scala.inline
+  def apply(quantity: scala.Double, timestamp: scala.Double, action: IUsageRecordAction = null): IUsageRecordCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("quantity")(quantity)
+    __obj.updateDynamic("timestamp")(timestamp)
+    if (action != null) __obj.updateDynamic("action")(action)
+    __obj.asInstanceOf[IUsageRecordCreationOptions]
+  }
+}
+

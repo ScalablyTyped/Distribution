@@ -10,3 +10,16 @@ trait Anon_Key extends js.Object {
   var min: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    max: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double],
+    min: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double]
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

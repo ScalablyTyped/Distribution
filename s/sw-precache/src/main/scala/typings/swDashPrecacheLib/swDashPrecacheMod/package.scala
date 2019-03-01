@@ -17,8 +17,7 @@ package object swDashPrecacheMod {
     ], 
     js.Promise[java.lang.String]
   ]
-  type Handler = swDashPrecacheLib.swDashPrecacheLibStrings.networkFirst | swDashPrecacheLib.swDashPrecacheLibStrings.cacheFirst | swDashPrecacheLib.swDashPrecacheLibStrings.fastest | swDashPrecacheLib.swDashPrecacheLibStrings.cacheOnly | swDashPrecacheLib.swDashPrecacheLibStrings.networkOnly | swDashToolboxLib.swDashToolboxMod.Handler
-  type Method = swDashPrecacheLib.swDashPrecacheLibStrings.get | swDashPrecacheLib.swDashPrecacheLibStrings.post | swDashPrecacheLib.swDashPrecacheLibStrings.put | swDashPrecacheLib.swDashPrecacheLibStrings.delete | swDashPrecacheLib.swDashPrecacheLibStrings.head
+  type Handler = _Handler | swDashToolboxLib.swDashToolboxMod.Handler
   type Write = js.Function3[
     /* filePath */ java.lang.String, 
     /* options */ js.UndefOr[Options], 

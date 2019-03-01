@@ -10,3 +10,13 @@ trait Interface extends js.Object {
   var Types: js.Array[PluginInterfaceType]
 }
 
+object Interface {
+  @scala.inline
+  def apply(Socket: java.lang.String, Types: js.Array[PluginInterfaceType]): Interface = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Socket")(Socket)
+    __obj.updateDynamic("Types")(Types)
+    __obj.asInstanceOf[Interface]
+  }
+}
+

@@ -14,3 +14,18 @@ trait ListAvailsResponse extends js.Object {
   var totalSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListAvailsResponse {
+  @scala.inline
+  def apply(
+    avails: js.Array[Avail] = null,
+    nextPageToken: java.lang.String = null,
+    totalSize: scala.Int | scala.Double = null
+  ): ListAvailsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (avails != null) __obj.updateDynamic("avails")(avails)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListAvailsResponse]
+  }
+}
+

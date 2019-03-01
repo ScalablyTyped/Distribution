@@ -18,3 +18,18 @@ trait ContextRule extends js.Object {
   var selector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContextRule {
+  @scala.inline
+  def apply(
+    provided: js.Array[java.lang.String] = null,
+    requested: js.Array[java.lang.String] = null,
+    selector: java.lang.String = null
+  ): ContextRule = {
+    val __obj = js.Dynamic.literal()
+    if (provided != null) __obj.updateDynamic("provided")(provided)
+    if (requested != null) __obj.updateDynamic("requested")(requested)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[ContextRule]
+  }
+}
+

@@ -9,3 +9,12 @@ trait VisSelectProperties extends js.Object {
   var items: js.Array[scala.Double]
 }
 
+object VisSelectProperties {
+  @scala.inline
+  def apply(items: js.Array[scala.Double]): VisSelectProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[VisSelectProperties]
+  }
+}
+

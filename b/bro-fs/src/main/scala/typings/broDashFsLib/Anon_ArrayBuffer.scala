@@ -9,3 +9,12 @@ trait Anon_ArrayBuffer extends js.Object {
   var `type`: broDashFsLib.broDashFsLibStrings.ArrayBuffer
 }
 
+object Anon_ArrayBuffer {
+  @scala.inline
+  def apply(`type`: broDashFsLib.broDashFsLibStrings.ArrayBuffer): Anon_ArrayBuffer = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Anon_ArrayBuffer]
+  }
+}
+

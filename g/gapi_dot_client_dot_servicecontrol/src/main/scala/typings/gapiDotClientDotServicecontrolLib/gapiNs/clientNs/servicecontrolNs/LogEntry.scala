@@ -46,3 +46,28 @@ trait LogEntry extends js.Object {
   var timestamp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogEntry {
+  @scala.inline
+  def apply(
+    insertId: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    name: java.lang.String = null,
+    protoPayload: stdLib.Record[java.lang.String, _] = null,
+    severity: java.lang.String = null,
+    structPayload: stdLib.Record[java.lang.String, _] = null,
+    textPayload: java.lang.String = null,
+    timestamp: java.lang.String = null
+  ): LogEntry = {
+    val __obj = js.Dynamic.literal()
+    if (insertId != null) __obj.updateDynamic("insertId")(insertId)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (protoPayload != null) __obj.updateDynamic("protoPayload")(protoPayload)
+    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (structPayload != null) __obj.updateDynamic("structPayload")(structPayload)
+    if (textPayload != null) __obj.updateDynamic("textPayload")(textPayload)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[LogEntry]
+  }
+}
+

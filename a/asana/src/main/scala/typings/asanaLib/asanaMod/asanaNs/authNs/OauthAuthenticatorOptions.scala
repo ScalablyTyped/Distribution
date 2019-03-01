@@ -10,3 +10,13 @@ trait OauthAuthenticatorOptions extends js.Object {
   var flowType: js.UndefOr[FlowType] = js.undefined
 }
 
+object OauthAuthenticatorOptions {
+  @scala.inline
+  def apply(credentials: Credentials | java.lang.String = null, flowType: FlowType = null): OauthAuthenticatorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (flowType != null) __obj.updateDynamic("flowType")(flowType)
+    __obj.asInstanceOf[OauthAuthenticatorOptions]
+  }
+}
+

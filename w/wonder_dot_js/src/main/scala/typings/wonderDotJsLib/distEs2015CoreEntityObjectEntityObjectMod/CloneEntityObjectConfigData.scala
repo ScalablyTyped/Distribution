@@ -11,3 +11,18 @@ trait CloneEntityObjectConfigData extends js.Object {
   var shareGeometry: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CloneEntityObjectConfigData {
+  @scala.inline
+  def apply(
+    cloneChildren: js.UndefOr[scala.Boolean] = js.undefined,
+    cloneGeometry: js.UndefOr[scala.Boolean] = js.undefined,
+    shareGeometry: js.UndefOr[scala.Boolean] = js.undefined
+  ): CloneEntityObjectConfigData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cloneChildren)) __obj.updateDynamic("cloneChildren")(cloneChildren)
+    if (!js.isUndefined(cloneGeometry)) __obj.updateDynamic("cloneGeometry")(cloneGeometry)
+    if (!js.isUndefined(shareGeometry)) __obj.updateDynamic("shareGeometry")(shareGeometry)
+    __obj.asInstanceOf[CloneEntityObjectConfigData]
+  }
+}
+

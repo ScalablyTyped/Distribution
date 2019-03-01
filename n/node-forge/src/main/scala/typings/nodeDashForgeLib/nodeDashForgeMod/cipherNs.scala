@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "cipher")
 @js.native
 object cipherNs extends js.Object {
+  trait Algorithm extends js.Object
+  
   @js.native
   trait BlockCipher extends js.Object {
     var mode: Mode = js.native
@@ -33,6 +35,5 @@ object cipherNs extends js.Object {
   def createCipher(algorithm: Algorithm, payload: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer): BlockCipher = js.native
   def createDecipher(algorithm: Algorithm, payload: nodeDashForgeLib.nodeDashForgeMod.Bytes): BlockCipher = js.native
   def createDecipher(algorithm: Algorithm, payload: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer): BlockCipher = js.native
-  type Algorithm = nodeDashForgeLib.nodeDashForgeLibStrings.`AES-ECB` | nodeDashForgeLib.nodeDashForgeLibStrings.`AES-CBC` | nodeDashForgeLib.nodeDashForgeLibStrings.`AES-CFB` | nodeDashForgeLib.nodeDashForgeLibStrings.`AES-OFB` | nodeDashForgeLib.nodeDashForgeLibStrings.`AES-CTR` | nodeDashForgeLib.nodeDashForgeLibStrings.`AES-GCM` | nodeDashForgeLib.nodeDashForgeLibStrings.`3DES-ECB` | nodeDashForgeLib.nodeDashForgeLibStrings.`3DES-CBC` | nodeDashForgeLib.nodeDashForgeLibStrings.`DES-ECB` | nodeDashForgeLib.nodeDashForgeLibStrings.`DES-CBC`
 }
 

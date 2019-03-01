@@ -13,3 +13,22 @@ trait BindFormOptions extends js.Object {
   var validation: js.UndefOr[ValidationOptional] = js.undefined
 }
 
+object BindFormOptions {
+  @scala.inline
+  def apply(
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    error: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    onSubmitDisable: java.lang.String = null,
+    validate: js.Function1[/* form */ stdLib.HTMLFormElement, scala.Boolean] = null,
+    validation: ValidationOptional = null
+  ): BindFormOptions = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (onSubmitDisable != null) __obj.updateDynamic("onSubmitDisable")(onSubmitDisable)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (validation != null) __obj.updateDynamic("validation")(validation)
+    __obj.asInstanceOf[BindFormOptions]
+  }
+}
+

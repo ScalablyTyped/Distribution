@@ -11,3 +11,18 @@ trait Anon_EventTypeIncludeBody extends js.Object {
   var lambdaArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_EventTypeIncludeBody {
+  @scala.inline
+  def apply(
+    eventType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    lambdaArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    includeBody: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): Anon_EventTypeIncludeBody = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
+    __obj.updateDynamic("lambdaArn")(lambdaArn.asInstanceOf[js.Any])
+    if (includeBody != null) __obj.updateDynamic("includeBody")(includeBody.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_EventTypeIncludeBody]
+  }
+}
+

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.webViewRequest.AddResponseHeader")
 @js.native
-class AddResponseHeader protected () extends js.Object {
+class AddResponseHeader protected () extends OnRequestActions {
   def this(parameters: AddResponseHeaderParams) = this()
   val instanceType: java.lang.String = js.native
   val typeGuard: chromeDashAppsLib.chromeDashAppsLibStrings.AddResponseHeader = js.native

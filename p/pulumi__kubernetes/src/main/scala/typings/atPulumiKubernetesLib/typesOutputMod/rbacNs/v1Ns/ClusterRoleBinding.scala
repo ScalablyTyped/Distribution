@@ -39,3 +39,22 @@ trait ClusterRoleBinding extends js.Object {
   val subjects: js.Array[Subject]
 }
 
+object ClusterRoleBinding {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBinding,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    roleRef: RoleRef,
+    subjects: js.Array[Subject]
+  ): ClusterRoleBinding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("roleRef")(roleRef)
+    __obj.updateDynamic("subjects")(subjects)
+    __obj.asInstanceOf[ClusterRoleBinding]
+  }
+}
+

@@ -20,3 +20,18 @@ trait HeldGroupsQuery extends js.Object {
   var terms: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HeldGroupsQuery {
+  @scala.inline
+  def apply(
+    endTime: java.lang.String = null,
+    startTime: java.lang.String = null,
+    terms: java.lang.String = null
+  ): HeldGroupsQuery = {
+    val __obj = js.Dynamic.literal()
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (terms != null) __obj.updateDynamic("terms")(terms)
+    __obj.asInstanceOf[HeldGroupsQuery]
+  }
+}
+

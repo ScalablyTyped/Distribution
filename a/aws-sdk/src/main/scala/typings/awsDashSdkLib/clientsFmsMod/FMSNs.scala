@@ -654,16 +654,26 @@ object FMSNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[PutPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _AccountRoleStatus extends js.Object
+  
+  trait _DependentServiceName extends js.Object
+  
+  trait _PolicyComplianceStatusType extends js.Object
+  
+  trait _ViolationReason extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AWSAccountId = java.lang.String
-  type AccountRoleStatus = awsDashSdkLib.awsDashSdkLibStrings.READY | awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.PENDING_DELETION | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
+  type AccountRoleStatus = _AccountRoleStatus | java.lang.String
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ComplianceViolators = js.Array[ComplianceViolator]
   type CustomerPolicyScopeId = java.lang.String
   type CustomerPolicyScopeIdList = js.Array[CustomerPolicyScopeId]
   type CustomerPolicyScopeIdType = awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT | java.lang.String
-  type DependentServiceName = awsDashSdkLib.awsDashSdkLibStrings.AWSCONFIG | awsDashSdkLib.awsDashSdkLibStrings.AWSWAF | java.lang.String
+  type DependentServiceName = _DependentServiceName | java.lang.String
   type DetailedInfo = java.lang.String
   type EvaluationResults = js.Array[EvaluationResult]
   type ManagedServiceData = java.lang.String
@@ -671,7 +681,7 @@ object FMSNs extends js.Object {
   type PaginationMaxResults = scala.Double
   type PaginationToken = java.lang.String
   type PolicyComplianceStatusList = js.Array[PolicyComplianceStatus]
-  type PolicyComplianceStatusType = awsDashSdkLib.awsDashSdkLibStrings.COMPLIANT | awsDashSdkLib.awsDashSdkLibStrings.NON_COMPLIANT | java.lang.String
+  type PolicyComplianceStatusType = _PolicyComplianceStatusType | java.lang.String
   type PolicyId = java.lang.String
   type PolicySummaryList = js.Array[PolicySummary]
   type PolicyUpdateToken = java.lang.String
@@ -685,7 +695,7 @@ object FMSNs extends js.Object {
   type TagKey = java.lang.String
   type TagValue = java.lang.String
   type TimeStamp = stdLib.Date
-  type ViolationReason = awsDashSdkLib.awsDashSdkLibStrings.WEB_ACL_MISSING_RULE_GROUP | awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_MISSING_WEB_ACL | awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_INCORRECT_WEB_ACL | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-01-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type ViolationReason = _ViolationReason | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

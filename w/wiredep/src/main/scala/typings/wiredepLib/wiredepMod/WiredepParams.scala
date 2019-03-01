@@ -79,3 +79,42 @@ trait WiredepParams extends js.Object {
   var src: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object WiredepParams {
+  @scala.inline
+  def apply(
+    bowerJson: java.lang.String = null,
+    cwd: java.lang.String = null,
+    dependencies: js.UndefOr[scala.Boolean] = js.undefined,
+    devDependencies: js.UndefOr[scala.Boolean] = js.undefined,
+    directory: java.lang.String = null,
+    exclude: js.Array[java.lang.String | stdLib.RegExp] = null,
+    fileTypes: FileTypes = null,
+    ignorePath: java.lang.String | stdLib.RegExp = null,
+    includeSelf: js.UndefOr[scala.Boolean] = js.undefined,
+    onError: js.Function1[/* err */ nodeLib.Error, scala.Unit] = null,
+    onFileUpdated: js.Function1[/* filePath */ java.lang.String, scala.Unit] = null,
+    onMainNotFound: js.Function1[/* pkg */ java.lang.String, scala.Unit] = null,
+    onPathInjected: js.Function1[/* fileObject */ FileObject, scala.Unit] = null,
+    overrides: js.Object = null,
+    src: java.lang.String | js.Array[java.lang.String] = null
+  ): WiredepParams = {
+    val __obj = js.Dynamic.literal()
+    if (bowerJson != null) __obj.updateDynamic("bowerJson")(bowerJson)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (!js.isUndefined(dependencies)) __obj.updateDynamic("dependencies")(dependencies)
+    if (!js.isUndefined(devDependencies)) __obj.updateDynamic("devDependencies")(devDependencies)
+    if (directory != null) __obj.updateDynamic("directory")(directory)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes)
+    if (ignorePath != null) __obj.updateDynamic("ignorePath")(ignorePath.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSelf)) __obj.updateDynamic("includeSelf")(includeSelf)
+    if (onError != null) __obj.updateDynamic("onError")(onError)
+    if (onFileUpdated != null) __obj.updateDynamic("onFileUpdated")(onFileUpdated)
+    if (onMainNotFound != null) __obj.updateDynamic("onMainNotFound")(onMainNotFound)
+    if (onPathInjected != null) __obj.updateDynamic("onPathInjected")(onPathInjected)
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WiredepParams]
+  }
+}
+

@@ -85,3 +85,48 @@ trait _ServerCapabilities extends js.Object {
   var workspaceSymbolProvider: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object _ServerCapabilities {
+  @scala.inline
+  def apply(
+    codeActionProvider: scala.Boolean | CodeActionOptions = null,
+    codeLensProvider: CodeLensOptions = null,
+    completionProvider: CompletionOptions = null,
+    definitionProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    documentFormattingProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    documentHighlightProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    documentLinkProvider: DocumentLinkOptions = null,
+    documentOnTypeFormattingProvider: vscodeDashLanguageserverDashProtocolLib.Anon_FirstTriggerCharacter = null,
+    documentRangeFormattingProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    documentSymbolProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    executeCommandProvider: ExecuteCommandOptions = null,
+    experimental: js.Any = null,
+    hoverProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    referencesProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    renameProvider: scala.Boolean | RenameOptions = null,
+    signatureHelpProvider: SignatureHelpOptions = null,
+    textDocumentSync: TextDocumentSyncOptions | TextDocumentSyncKind = null,
+    workspaceSymbolProvider: js.UndefOr[scala.Boolean] = js.undefined
+  ): _ServerCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (codeActionProvider != null) __obj.updateDynamic("codeActionProvider")(codeActionProvider.asInstanceOf[js.Any])
+    if (codeLensProvider != null) __obj.updateDynamic("codeLensProvider")(codeLensProvider)
+    if (completionProvider != null) __obj.updateDynamic("completionProvider")(completionProvider)
+    if (!js.isUndefined(definitionProvider)) __obj.updateDynamic("definitionProvider")(definitionProvider)
+    if (!js.isUndefined(documentFormattingProvider)) __obj.updateDynamic("documentFormattingProvider")(documentFormattingProvider)
+    if (!js.isUndefined(documentHighlightProvider)) __obj.updateDynamic("documentHighlightProvider")(documentHighlightProvider)
+    if (documentLinkProvider != null) __obj.updateDynamic("documentLinkProvider")(documentLinkProvider)
+    if (documentOnTypeFormattingProvider != null) __obj.updateDynamic("documentOnTypeFormattingProvider")(documentOnTypeFormattingProvider)
+    if (!js.isUndefined(documentRangeFormattingProvider)) __obj.updateDynamic("documentRangeFormattingProvider")(documentRangeFormattingProvider)
+    if (!js.isUndefined(documentSymbolProvider)) __obj.updateDynamic("documentSymbolProvider")(documentSymbolProvider)
+    if (executeCommandProvider != null) __obj.updateDynamic("executeCommandProvider")(executeCommandProvider)
+    if (experimental != null) __obj.updateDynamic("experimental")(experimental)
+    if (!js.isUndefined(hoverProvider)) __obj.updateDynamic("hoverProvider")(hoverProvider)
+    if (!js.isUndefined(referencesProvider)) __obj.updateDynamic("referencesProvider")(referencesProvider)
+    if (renameProvider != null) __obj.updateDynamic("renameProvider")(renameProvider.asInstanceOf[js.Any])
+    if (signatureHelpProvider != null) __obj.updateDynamic("signatureHelpProvider")(signatureHelpProvider)
+    if (textDocumentSync != null) __obj.updateDynamic("textDocumentSync")(textDocumentSync.asInstanceOf[js.Any])
+    if (!js.isUndefined(workspaceSymbolProvider)) __obj.updateDynamic("workspaceSymbolProvider")(workspaceSymbolProvider)
+    __obj.asInstanceOf[_ServerCapabilities]
+  }
+}
+

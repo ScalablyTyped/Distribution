@@ -12,3 +12,12 @@ trait CreateSetOptions extends js.Object {
   var validate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CreateSetOptions {
+  @scala.inline
+  def apply(validate: js.UndefOr[scala.Boolean] = js.undefined): CreateSetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[CreateSetOptions]
+  }
+}
+

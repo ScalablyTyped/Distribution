@@ -106,3 +106,65 @@ trait IGridColumnOf[TEntity] extends js.Object {
   def updateColumnDef(colDef: IColumnDefOf[TEntity], isNew: scala.Boolean): scala.Unit
 }
 
+object IGridColumnOf {
+  @scala.inline
+  def apply[TEntity](
+    GridColumn: js.Function3[IColumnDefOf[TEntity], scala.Double, IGridInstanceOf[TEntity], scala.Unit],
+    colDef: IColumnDefOf[TEntity],
+    getAggregationText: js.Function1[java.lang.String, scala.Unit],
+    getAggregationValue: js.Function0[java.lang.String],
+    getColClass: js.Function1[scala.Boolean, java.lang.String],
+    getColClassDefinition: js.Function0[java.lang.String],
+    getRenderContainer: js.Function0[js.Any],
+    grid: IGridInstanceOf[TEntity],
+    hideColumn: js.Function0[scala.Unit],
+    isPinnedLeft: js.Function0[scala.Boolean],
+    isPinnedRight: js.Function0[scala.Boolean],
+    setPropertyOrDefault: js.Function3[IColumnDefOf[TEntity], java.lang.String, js.Any, scala.Unit],
+    showColumn: js.Function0[scala.Unit],
+    updateColumnDef: js.Function2[IColumnDefOf[TEntity], scala.Boolean, scala.Unit],
+    width: scala.Double,
+    defaultSort: ISortInfo = null,
+    displayName: java.lang.String = null,
+    field: java.lang.String = null,
+    filter: IFilterOptions = null,
+    filters: js.Array[IFilterOptions] = null,
+    name: java.lang.String = null,
+    sort: ISortInfo = null,
+    sortingAlgorithm: js.Function5[
+      /* a */ js.Any, 
+      /* b */ js.Any, 
+      /* rowA */ IGridRowOf[TEntity], 
+      /* rowB */ IGridRowOf[TEntity], 
+      /* direction */ java.lang.String, 
+      scala.Double
+    ] = null
+  ): IGridColumnOf[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GridColumn")(GridColumn)
+    __obj.updateDynamic("colDef")(colDef)
+    __obj.updateDynamic("getAggregationText")(getAggregationText)
+    __obj.updateDynamic("getAggregationValue")(getAggregationValue)
+    __obj.updateDynamic("getColClass")(getColClass)
+    __obj.updateDynamic("getColClassDefinition")(getColClassDefinition)
+    __obj.updateDynamic("getRenderContainer")(getRenderContainer)
+    __obj.updateDynamic("grid")(grid)
+    __obj.updateDynamic("hideColumn")(hideColumn)
+    __obj.updateDynamic("isPinnedLeft")(isPinnedLeft)
+    __obj.updateDynamic("isPinnedRight")(isPinnedRight)
+    __obj.updateDynamic("setPropertyOrDefault")(setPropertyOrDefault)
+    __obj.updateDynamic("showColumn")(showColumn)
+    __obj.updateDynamic("updateColumnDef")(updateColumnDef)
+    __obj.updateDynamic("width")(width)
+    if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sortingAlgorithm != null) __obj.updateDynamic("sortingAlgorithm")(sortingAlgorithm)
+    __obj.asInstanceOf[IGridColumnOf[TEntity]]
+  }
+}
+

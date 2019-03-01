@@ -52,5 +52,4 @@ package object transitionMod {
     */
   type Transition = reactLib.reactMod.Component[TransitionProps, js.Object, js.Any]
   type TransitionChildren = reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* status */ TransitionStatus, reactLib.reactMod.ReactNs.ReactNode])
-  type TransitionStatus = reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.entering | reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.entered | reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.exiting | reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.exited | reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.unmounted
 }

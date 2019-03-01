@@ -5,8 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PrimaryExpression extends BaseASTNode {
+trait PrimaryExpression
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_PrimaryExpression: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.PrimaryExpression
+}
+
+object PrimaryExpression {
+  @scala.inline
+  def apply(
+    `type`: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.PrimaryExpression,
+    loc: Location = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null
+  ): PrimaryExpression = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[PrimaryExpression]
+  }
 }
 

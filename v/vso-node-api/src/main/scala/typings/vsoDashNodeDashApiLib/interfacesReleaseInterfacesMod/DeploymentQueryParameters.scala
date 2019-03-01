@@ -24,3 +24,44 @@ trait DeploymentQueryParameters extends js.Object {
   var sourceBranch: java.lang.String
 }
 
+object DeploymentQueryParameters {
+  @scala.inline
+  def apply(
+    artifactSourceId: java.lang.String,
+    artifactTypeId: java.lang.String,
+    artifactVersions: js.Array[java.lang.String],
+    deploymentStatus: DeploymentStatus,
+    deploymentsPerEnvironment: scala.Double,
+    environments: js.Array[DefinitionEnvironmentReference],
+    expands: DeploymentExpands,
+    isDeleted: scala.Boolean,
+    latestDeploymentsOnly: scala.Boolean,
+    maxDeploymentsPerEnvironment: scala.Double,
+    maxModifiedTime: stdLib.Date,
+    minModifiedTime: stdLib.Date,
+    operationStatus: DeploymentOperationStatus,
+    queryOrder: ReleaseQueryOrder,
+    queryType: DeploymentsQueryType,
+    sourceBranch: java.lang.String
+  ): DeploymentQueryParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifactSourceId")(artifactSourceId)
+    __obj.updateDynamic("artifactTypeId")(artifactTypeId)
+    __obj.updateDynamic("artifactVersions")(artifactVersions)
+    __obj.updateDynamic("deploymentStatus")(deploymentStatus)
+    __obj.updateDynamic("deploymentsPerEnvironment")(deploymentsPerEnvironment)
+    __obj.updateDynamic("environments")(environments)
+    __obj.updateDynamic("expands")(expands)
+    __obj.updateDynamic("isDeleted")(isDeleted)
+    __obj.updateDynamic("latestDeploymentsOnly")(latestDeploymentsOnly)
+    __obj.updateDynamic("maxDeploymentsPerEnvironment")(maxDeploymentsPerEnvironment)
+    __obj.updateDynamic("maxModifiedTime")(maxModifiedTime)
+    __obj.updateDynamic("minModifiedTime")(minModifiedTime)
+    __obj.updateDynamic("operationStatus")(operationStatus)
+    __obj.updateDynamic("queryOrder")(queryOrder)
+    __obj.updateDynamic("queryType")(queryType)
+    __obj.updateDynamic("sourceBranch")(sourceBranch)
+    __obj.asInstanceOf[DeploymentQueryParameters]
+  }
+}
+

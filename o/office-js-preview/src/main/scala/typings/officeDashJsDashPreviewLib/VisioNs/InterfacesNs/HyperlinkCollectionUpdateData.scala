@@ -10,3 +10,12 @@ trait HyperlinkCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[HyperlinkData]] = js.undefined
 }
 
+object HyperlinkCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[HyperlinkData] = null): HyperlinkCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[HyperlinkCollectionUpdateData]
+  }
+}
+

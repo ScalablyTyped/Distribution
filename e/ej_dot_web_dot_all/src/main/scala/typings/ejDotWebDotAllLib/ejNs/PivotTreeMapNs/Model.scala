@@ -65,3 +65,44 @@ trait Model extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    afterServiceInvoke: js.Function1[/* e */ AfterServiceInvokeEventArgs, scala.Unit] = null,
+    beforeServiceInvoke: js.Function1[/* e */ BeforeServiceInvokeEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    customObject: js.Any = null,
+    dataSource: DataSource = null,
+    drillSuccess: js.Function1[/* e */ DrillSuccessEventArgs, scala.Unit] = null,
+    enableXHRCredentials: js.UndefOr[scala.Boolean] = js.undefined,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    operationalMode: ejDotWebDotAllLib.ejNs.PivotNs.OperationalMode | java.lang.String = null,
+    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
+    renderFailure: js.Function1[/* e */ RenderFailureEventArgs, scala.Unit] = null,
+    renderSuccess: js.Function1[/* e */ RenderSuccessEventArgs, scala.Unit] = null,
+    serviceMethodSettings: ServiceMethodSettings = null,
+    url: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(afterServiceInvoke)
+    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(beforeServiceInvoke)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (drillSuccess != null) __obj.updateDynamic("drillSuccess")(drillSuccess)
+    if (!js.isUndefined(enableXHRCredentials)) __obj.updateDynamic("enableXHRCredentials")(enableXHRCredentials)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (operationalMode != null) __obj.updateDynamic("operationalMode")(operationalMode.asInstanceOf[js.Any])
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
+    if (renderFailure != null) __obj.updateDynamic("renderFailure")(renderFailure)
+    if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(renderSuccess)
+    if (serviceMethodSettings != null) __obj.updateDynamic("serviceMethodSettings")(serviceMethodSettings)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Model]
+  }
+}
+

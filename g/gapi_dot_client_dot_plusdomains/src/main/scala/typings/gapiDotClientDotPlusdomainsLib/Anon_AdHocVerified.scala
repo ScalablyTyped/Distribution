@@ -10,3 +10,12 @@ trait Anon_AdHocVerified extends js.Object {
   var adHocVerified: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AdHocVerified {
+  @scala.inline
+  def apply(adHocVerified: java.lang.String = null): Anon_AdHocVerified = {
+    val __obj = js.Dynamic.literal()
+    if (adHocVerified != null) __obj.updateDynamic("adHocVerified")(adHocVerified)
+    __obj.asInstanceOf[Anon_AdHocVerified]
+  }
+}
+

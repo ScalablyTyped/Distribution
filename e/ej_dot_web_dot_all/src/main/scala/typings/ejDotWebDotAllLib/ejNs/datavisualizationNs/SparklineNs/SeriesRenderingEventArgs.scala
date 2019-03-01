@@ -29,3 +29,26 @@ trait SeriesRenderingEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SeriesRenderingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    maxX: js.Any = null,
+    maxY: js.Any = null,
+    minX: js.Any = null,
+    minY: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): SeriesRenderingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (maxX != null) __obj.updateDynamic("maxX")(maxX)
+    if (maxY != null) __obj.updateDynamic("maxY")(maxY)
+    if (minX != null) __obj.updateDynamic("minX")(minX)
+    if (minY != null) __obj.updateDynamic("minY")(minY)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SeriesRenderingEventArgs]
+  }
+}
+

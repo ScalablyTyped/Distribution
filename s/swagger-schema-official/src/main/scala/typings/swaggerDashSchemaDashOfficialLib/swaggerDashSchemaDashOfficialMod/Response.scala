@@ -12,3 +12,20 @@ trait Response extends js.Object {
   var schema: js.UndefOr[Schema] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    examples: org.scalablytyped.runtime.StringDictionary[js.Object] = null,
+    headers: org.scalablytyped.runtime.StringDictionary[Header] = null,
+    schema: Schema = null
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    if (examples != null) __obj.updateDynamic("examples")(examples)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[Response]
+  }
+}
+

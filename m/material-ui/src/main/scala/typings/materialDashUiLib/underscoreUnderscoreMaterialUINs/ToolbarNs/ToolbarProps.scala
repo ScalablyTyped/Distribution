@@ -11,3 +11,18 @@ trait ToolbarProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object ToolbarProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    noGutter: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): ToolbarProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(noGutter)) __obj.updateDynamic("noGutter")(noGutter)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ToolbarProps]
+  }
+}
+

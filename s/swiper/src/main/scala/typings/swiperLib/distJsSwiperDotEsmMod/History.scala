@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "History")
 @js.native
-class History () extends js.Object
+class History ()
+  extends swiperLib.swiperMod.SwiperModule
 

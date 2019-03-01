@@ -17,3 +17,30 @@ trait ChartYAxisItemNotesLabel extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartYAxisItemNotesLabel {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: ChartYAxisItemNotesLabelBorder = null,
+    color: java.lang.String = null,
+    font: java.lang.String = null,
+    format: java.lang.String = null,
+    position: java.lang.String = null,
+    rotation: scala.Int | scala.Double = null,
+    template: java.lang.String | js.Function = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartYAxisItemNotesLabel = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ChartYAxisItemNotesLabel]
+  }
+}
+

@@ -15,3 +15,13 @@ trait CloudWorkspaceId extends js.Object {
   var repoId: js.UndefOr[RepoId] = js.undefined
 }
 
+object CloudWorkspaceId {
+  @scala.inline
+  def apply(name: java.lang.String = null, repoId: RepoId = null): CloudWorkspaceId = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (repoId != null) __obj.updateDynamic("repoId")(repoId)
+    __obj.asInstanceOf[CloudWorkspaceId]
+  }
+}
+

@@ -10,3 +10,16 @@ trait ColorScheme extends js.Object {
   def getThemeColors(): js.Array[ThemeColorType]
 }
 
+object ColorScheme {
+  @scala.inline
+  def apply(
+    getConcreteColor: js.Function1[ThemeColorType, Color],
+    getThemeColors: js.Function0[js.Array[ThemeColorType]]
+  ): ColorScheme = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getConcreteColor")(getConcreteColor)
+    __obj.updateDynamic("getThemeColors")(getThemeColors)
+    __obj.asInstanceOf[ColorScheme]
+  }
+}
+

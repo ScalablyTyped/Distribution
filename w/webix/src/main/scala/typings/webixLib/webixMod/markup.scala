@@ -13,3 +13,22 @@ trait markup extends js.Object {
   def parse(data: js.Any, datatype: java.lang.String): scala.Unit
 }
 
+object markup {
+  @scala.inline
+  def apply(
+    attribute: js.Any,
+    dataTag: js.Any,
+    init: js.Function2[java.lang.String, java.lang.String, webixLib.webixMod.uiNs.baseview],
+    namespace: js.Any,
+    parse: js.Function2[js.Any, java.lang.String, scala.Unit]
+  ): markup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attribute")(attribute)
+    __obj.updateDynamic("dataTag")(dataTag)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("parse")(parse)
+    __obj.asInstanceOf[markup]
+  }
+}
+

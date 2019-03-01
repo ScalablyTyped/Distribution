@@ -12,3 +12,18 @@ trait Seriesmembership extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Seriesmembership {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    member: js.Array[Volume] = null,
+    nextPageToken: java.lang.String = null
+  ): Seriesmembership = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (member != null) __obj.updateDynamic("member")(member)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[Seriesmembership]
+  }
+}
+

@@ -10,10 +10,12 @@ object atAngularFormsLibStrings {
   sealed trait always extends js.Object
   
   @js.native
-  sealed trait blur extends js.Object
+  sealed trait blur
+    extends atAngularFormsLib.srcModelMod.FormHooks
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change
+    extends atAngularFormsLib.srcModelMod.FormHooks
   
   @js.native
   sealed trait never extends js.Object
@@ -22,7 +24,8 @@ object atAngularFormsLibStrings {
   sealed trait once extends js.Object
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends atAngularFormsLib.srcModelMod.FormHooks
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

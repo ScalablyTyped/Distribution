@@ -12,3 +12,20 @@ trait AddAclOptions extends js.Object {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AddAclOptions {
+  @scala.inline
+  def apply(
+    entity: java.lang.String,
+    role: java.lang.String,
+    generation: scala.Int | scala.Double = null,
+    userProject: java.lang.String = null
+  ): AddAclOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entity")(entity)
+    __obj.updateDynamic("role")(role)
+    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    __obj.asInstanceOf[AddAclOptions]
+  }
+}
+

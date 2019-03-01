@@ -28,3 +28,30 @@ trait ConfigItem extends js.Object {
   var valueType: java.lang.String
 }
 
+object ConfigItem {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    displayName: java.lang.String,
+    name: webgmeLib.GmeCommonNs.Name,
+    value: java.lang.String,
+    valueType: java.lang.String,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    regex: stdLib.RegExp = null,
+    regexMessage: java.lang.String = null,
+    valueItems: js.Array[java.lang.String] = null
+  ): ConfigItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("valueType")(valueType)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    if (regexMessage != null) __obj.updateDynamic("regexMessage")(regexMessage)
+    if (valueItems != null) __obj.updateDynamic("valueItems")(valueItems)
+    __obj.asInstanceOf[ConfigItem]
+  }
+}
+

@@ -32,3 +32,25 @@ trait OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    caption: java.lang.String = null,
+    displayFolder: java.lang.String = null,
+    levels: js.Array[OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchieLevel] = null,
+    name: java.lang.String = null
+  ): OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (displayFolder != null) __obj.updateDynamic("displayFolder")(displayFolder)
+    if (levels != null) __obj.updateDynamic("levels")(levels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie]
+  }
+}
+

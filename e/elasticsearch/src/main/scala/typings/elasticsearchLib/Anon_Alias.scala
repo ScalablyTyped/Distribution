@@ -13,3 +13,22 @@ trait Anon_Alias extends js.Object {
   var routing: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Alias {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    filter: js.Object = null,
+    index: java.lang.String = null,
+    indices: js.Array[java.lang.String] = null,
+    routing: java.lang.String = null
+  ): Anon_Alias = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alias")(alias)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (indices != null) __obj.updateDynamic("indices")(indices)
+    if (routing != null) __obj.updateDynamic("routing")(routing)
+    __obj.asInstanceOf[Anon_Alias]
+  }
+}
+

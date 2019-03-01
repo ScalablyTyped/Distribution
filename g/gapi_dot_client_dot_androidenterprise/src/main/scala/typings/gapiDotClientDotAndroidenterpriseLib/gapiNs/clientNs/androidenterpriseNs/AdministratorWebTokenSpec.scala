@@ -17,3 +17,18 @@ trait AdministratorWebTokenSpec extends js.Object {
   var permission: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AdministratorWebTokenSpec {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    parent: java.lang.String = null,
+    permission: js.Array[java.lang.String] = null
+  ): AdministratorWebTokenSpec = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (permission != null) __obj.updateDynamic("permission")(permission)
+    __obj.asInstanceOf[AdministratorWebTokenSpec]
+  }
+}
+

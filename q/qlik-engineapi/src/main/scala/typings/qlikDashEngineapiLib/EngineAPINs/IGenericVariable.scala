@@ -70,3 +70,28 @@ trait IGenericVariable
   def setStringValue(qVal: java.lang.String): js.Promise[scala.Unit]
 }
 
+object IGenericVariable {
+  @scala.inline
+  def apply(
+    applyPatches: js.Function1[js.Array[INxPatch], js.Promise[scala.Unit]],
+    getInfo: js.Function0[js.Promise[INxInfo]],
+    getLayout: js.Function0[js.Promise[IGenericVariableLayout]],
+    getProperties: js.Function0[js.Promise[IGenericVariableProperties]],
+    setDualValue: js.Function2[java.lang.String, scala.Double, js.Promise[scala.Unit]],
+    setNumValue: js.Function1[scala.Double, js.Promise[scala.Unit]],
+    setProperties: js.Function1[IGenericVariableProperties, js.Promise[scala.Unit]],
+    setStringValue: js.Function1[java.lang.String, js.Promise[scala.Unit]]
+  ): IGenericVariable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applyPatches")(applyPatches)
+    __obj.updateDynamic("getInfo")(getInfo)
+    __obj.updateDynamic("getLayout")(getLayout)
+    __obj.updateDynamic("getProperties")(getProperties)
+    __obj.updateDynamic("setDualValue")(setDualValue)
+    __obj.updateDynamic("setNumValue")(setNumValue)
+    __obj.updateDynamic("setProperties")(setProperties)
+    __obj.updateDynamic("setStringValue")(setStringValue)
+    __obj.asInstanceOf[IGenericVariable]
+  }
+}
+

@@ -10,3 +10,12 @@ trait UrlMapsValidateRequest extends js.Object {
   var resource: js.UndefOr[UrlMap] = js.undefined
 }
 
+object UrlMapsValidateRequest {
+  @scala.inline
+  def apply(resource: UrlMap = null): UrlMapsValidateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[UrlMapsValidateRequest]
+  }
+}
+

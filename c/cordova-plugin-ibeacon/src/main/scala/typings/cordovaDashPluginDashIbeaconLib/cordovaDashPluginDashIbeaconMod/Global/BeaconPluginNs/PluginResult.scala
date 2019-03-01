@@ -14,3 +14,24 @@ trait PluginResult extends js.Object {
   var state: java.lang.String
 }
 
+object PluginResult {
+  @scala.inline
+  def apply(
+    authorizationStatus: java.lang.String,
+    beacons: js.Array[Beacon],
+    error: java.lang.String,
+    eventType: java.lang.String,
+    region: Region,
+    state: java.lang.String
+  ): PluginResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorizationStatus")(authorizationStatus)
+    __obj.updateDynamic("beacons")(beacons)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("eventType")(eventType)
+    __obj.updateDynamic("region")(region)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[PluginResult]
+  }
+}
+

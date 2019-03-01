@@ -36,3 +36,26 @@ trait VariantSet extends js.Object {
   var referenceSetId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VariantSet {
+  @scala.inline
+  def apply(
+    datasetId: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    metadata: js.Array[VariantSetMetadata] = null,
+    name: java.lang.String = null,
+    referenceBounds: js.Array[ReferenceBound] = null,
+    referenceSetId: java.lang.String = null
+  ): VariantSet = {
+    val __obj = js.Dynamic.literal()
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (referenceBounds != null) __obj.updateDynamic("referenceBounds")(referenceBounds)
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
+    __obj.asInstanceOf[VariantSet]
+  }
+}
+

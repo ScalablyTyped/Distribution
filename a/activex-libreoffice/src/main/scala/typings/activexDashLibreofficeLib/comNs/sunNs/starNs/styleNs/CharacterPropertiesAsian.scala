@@ -41,3 +41,30 @@ trait CharacterPropertiesAsian extends js.Object {
   var CharWeightAsian: scala.Double
 }
 
+object CharacterPropertiesAsian {
+  @scala.inline
+  def apply(
+    CharFontCharSetAsian: scala.Double,
+    CharFontFamilyAsian: scala.Double,
+    CharFontNameAsian: java.lang.String,
+    CharFontPitchAsian: scala.Double,
+    CharFontStyleNameAsian: java.lang.String,
+    CharHeightAsian: scala.Double,
+    CharLocaleAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    CharPostureAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontSlant,
+    CharWeightAsian: scala.Double
+  ): CharacterPropertiesAsian = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CharFontCharSetAsian")(CharFontCharSetAsian)
+    __obj.updateDynamic("CharFontFamilyAsian")(CharFontFamilyAsian)
+    __obj.updateDynamic("CharFontNameAsian")(CharFontNameAsian)
+    __obj.updateDynamic("CharFontPitchAsian")(CharFontPitchAsian)
+    __obj.updateDynamic("CharFontStyleNameAsian")(CharFontStyleNameAsian)
+    __obj.updateDynamic("CharHeightAsian")(CharHeightAsian)
+    __obj.updateDynamic("CharLocaleAsian")(CharLocaleAsian)
+    __obj.updateDynamic("CharPostureAsian")(CharPostureAsian)
+    __obj.updateDynamic("CharWeightAsian")(CharWeightAsian)
+    __obj.asInstanceOf[CharacterPropertiesAsian]
+  }
+}
+

@@ -45,3 +45,23 @@ trait SearchParams extends CommonQueryFilters {
   var `type`: java.lang.String
 }
 
+object SearchParams {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    count: scala.Int | scala.Double = null,
+    params: fhirDashJsDashClientLib.Anon_At = null,
+    patient: java.lang.String = null,
+    query: js.Any = null,
+    since: java.lang.String = null
+  ): SearchParams = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (patient != null) __obj.updateDynamic("patient")(patient)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (since != null) __obj.updateDynamic("since")(since)
+    __obj.asInstanceOf[SearchParams]
+  }
+}
+

@@ -10,3 +10,13 @@ trait AjaxDataRequestOrder extends js.Object {
   var dir: java.lang.String
 }
 
+object AjaxDataRequestOrder {
+  @scala.inline
+  def apply(column: scala.Double, dir: java.lang.String): AjaxDataRequestOrder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("dir")(dir)
+    __obj.asInstanceOf[AjaxDataRequestOrder]
+  }
+}
+

@@ -30,3 +30,13 @@ trait Anon_DeviceAttributes extends js.Object {
   val platformKeysNs: Anon_CallbackCertificate
 }
 
+object Anon_DeviceAttributes {
+  @scala.inline
+  def apply(deviceAttributesNs: Anon_AnnotatedLocation, platformKeysNs: Anon_CallbackCertificate): Anon_DeviceAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceAttributesNs")(deviceAttributesNs)
+    __obj.updateDynamic("platformKeysNs")(platformKeysNs)
+    __obj.asInstanceOf[Anon_DeviceAttributes]
+  }
+}
+

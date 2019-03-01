@@ -29,3 +29,27 @@ trait XDataPilotResults
   def getResults(): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[DataResult]]
 }
 
+object XDataPilotResults {
+  @scala.inline
+  def apply(
+    Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[DataResult]],
+    acquire: js.Function0[scala.Unit],
+    getFilteredResults: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter], 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    getResults: js.Function0[activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[DataResult]]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataPilotResults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Results")(Results)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFilteredResults")(getFilteredResults)
+    __obj.updateDynamic("getResults")(getResults)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDataPilotResults]
+  }
+}
+

@@ -325,3 +325,104 @@ trait MediaDescriptor extends js.Object {
   var ViewId: scala.Double
 }
 
+object MediaDescriptor {
+  @scala.inline
+  def apply(
+    Aborted: scala.Boolean,
+    AsTemplate: scala.Boolean,
+    Author: java.lang.String,
+    CharacterSet: java.lang.String,
+    Comment: java.lang.String,
+    ComponentData: js.Any,
+    DocumentBaseURL: java.lang.String,
+    DocumentTitle: java.lang.String,
+    EncryptionData: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    FileName: java.lang.String,
+    FilterData: js.Any,
+    FilterFlags: java.lang.String,
+    FilterName: java.lang.String,
+    FilterOptions: java.lang.String,
+    Frame: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
+    Hidden: scala.Boolean,
+    HierarchicalDocumentName: java.lang.String,
+    InputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    InteractionHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler,
+    JumpMark: java.lang.String,
+    MacroExecutionMode: scala.Double,
+    MediaType: java.lang.String,
+    OpenFlags: java.lang.String,
+    OpenNewView: scala.Boolean,
+    OutputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream,
+    Overwrite: scala.Boolean,
+    Password: java.lang.String,
+    PostData: activexDashInteropLib.SafeArray[scala.Double],
+    PostString: java.lang.String,
+    Preview: scala.Boolean,
+    ReadOnly: scala.Boolean,
+    Referer: java.lang.String,
+    RepairPackage: scala.Boolean,
+    StartPresentation: scala.Boolean,
+    StatusIndicator: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XStatusIndicator,
+    SuggestedSaveAsDir: java.lang.String,
+    SuggestedSaveAsName: java.lang.String,
+    TemplateName: java.lang.String,
+    TemplateRegionName: java.lang.String,
+    URL: java.lang.String,
+    Unpacked: scala.Boolean,
+    UpdateDocMode: scala.Double,
+    Version: scala.Double,
+    ViewControllerName: java.lang.String,
+    ViewData: js.Any,
+    ViewId: scala.Double
+  ): MediaDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Aborted")(Aborted)
+    __obj.updateDynamic("AsTemplate")(AsTemplate)
+    __obj.updateDynamic("Author")(Author)
+    __obj.updateDynamic("CharacterSet")(CharacterSet)
+    __obj.updateDynamic("Comment")(Comment)
+    __obj.updateDynamic("ComponentData")(ComponentData)
+    __obj.updateDynamic("DocumentBaseURL")(DocumentBaseURL)
+    __obj.updateDynamic("DocumentTitle")(DocumentTitle)
+    __obj.updateDynamic("EncryptionData")(EncryptionData)
+    __obj.updateDynamic("FileName")(FileName)
+    __obj.updateDynamic("FilterData")(FilterData)
+    __obj.updateDynamic("FilterFlags")(FilterFlags)
+    __obj.updateDynamic("FilterName")(FilterName)
+    __obj.updateDynamic("FilterOptions")(FilterOptions)
+    __obj.updateDynamic("Frame")(Frame)
+    __obj.updateDynamic("Hidden")(Hidden)
+    __obj.updateDynamic("HierarchicalDocumentName")(HierarchicalDocumentName)
+    __obj.updateDynamic("InputStream")(InputStream)
+    __obj.updateDynamic("InteractionHandler")(InteractionHandler)
+    __obj.updateDynamic("JumpMark")(JumpMark)
+    __obj.updateDynamic("MacroExecutionMode")(MacroExecutionMode)
+    __obj.updateDynamic("MediaType")(MediaType)
+    __obj.updateDynamic("OpenFlags")(OpenFlags)
+    __obj.updateDynamic("OpenNewView")(OpenNewView)
+    __obj.updateDynamic("OutputStream")(OutputStream)
+    __obj.updateDynamic("Overwrite")(Overwrite)
+    __obj.updateDynamic("Password")(Password)
+    __obj.updateDynamic("PostData")(PostData)
+    __obj.updateDynamic("PostString")(PostString)
+    __obj.updateDynamic("Preview")(Preview)
+    __obj.updateDynamic("ReadOnly")(ReadOnly)
+    __obj.updateDynamic("Referer")(Referer)
+    __obj.updateDynamic("RepairPackage")(RepairPackage)
+    __obj.updateDynamic("StartPresentation")(StartPresentation)
+    __obj.updateDynamic("StatusIndicator")(StatusIndicator)
+    __obj.updateDynamic("SuggestedSaveAsDir")(SuggestedSaveAsDir)
+    __obj.updateDynamic("SuggestedSaveAsName")(SuggestedSaveAsName)
+    __obj.updateDynamic("TemplateName")(TemplateName)
+    __obj.updateDynamic("TemplateRegionName")(TemplateRegionName)
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("Unpacked")(Unpacked)
+    __obj.updateDynamic("UpdateDocMode")(UpdateDocMode)
+    __obj.updateDynamic("Version")(Version)
+    __obj.updateDynamic("ViewControllerName")(ViewControllerName)
+    __obj.updateDynamic("ViewData")(ViewData)
+    __obj.updateDynamic("ViewId")(ViewId)
+    __obj.asInstanceOf[MediaDescriptor]
+  }
+}
+

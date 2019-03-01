@@ -53,3 +53,30 @@ trait TestExecution extends js.Object {
   var toolResultsStep: js.UndefOr[ToolResultsStep] = js.undefined
 }
 
+object TestExecution {
+  @scala.inline
+  def apply(
+    environment: Environment = null,
+    id: java.lang.String = null,
+    matrixId: java.lang.String = null,
+    projectId: java.lang.String = null,
+    state: java.lang.String = null,
+    testDetails: TestDetails = null,
+    testSpecification: TestSpecification = null,
+    timestamp: java.lang.String = null,
+    toolResultsStep: ToolResultsStep = null
+  ): TestExecution = {
+    val __obj = js.Dynamic.literal()
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (matrixId != null) __obj.updateDynamic("matrixId")(matrixId)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (testDetails != null) __obj.updateDynamic("testDetails")(testDetails)
+    if (testSpecification != null) __obj.updateDynamic("testSpecification")(testSpecification)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (toolResultsStep != null) __obj.updateDynamic("toolResultsStep")(toolResultsStep)
+    __obj.asInstanceOf[TestExecution]
+  }
+}
+

@@ -148,3 +148,232 @@ trait Anon_000000080 extends js.Object {
   var fffff0: tinycolor2Lib.tinycolor2LibStrings.ivory
 }
 
+object Anon_000000080 {
+  @scala.inline
+  def apply(
+    `000`: tinycolor2Lib.tinycolor2LibStrings.black,
+    `000080`: tinycolor2Lib.tinycolor2LibStrings.navy,
+    `00008b`: tinycolor2Lib.tinycolor2LibStrings.darkblue,
+    `0000cd`: tinycolor2Lib.tinycolor2LibStrings.mediumblue,
+    `006400`: tinycolor2Lib.tinycolor2LibStrings.darkgreen,
+    `008000`: tinycolor2Lib.tinycolor2LibStrings.green,
+    `008080`: tinycolor2Lib.tinycolor2LibStrings.teal,
+    `008b8b`: tinycolor2Lib.tinycolor2LibStrings.darkcyan,
+    `00bfff`: tinycolor2Lib.tinycolor2LibStrings.deepskyblue,
+    `00ced1`: tinycolor2Lib.tinycolor2LibStrings.darkturquoise,
+    `00f`: tinycolor2Lib.tinycolor2LibStrings.blue,
+    `00fa9a`: tinycolor2Lib.tinycolor2LibStrings.mediumspringgreen,
+    `00ff7f`: tinycolor2Lib.tinycolor2LibStrings.springgreen,
+    `0f0`: tinycolor2Lib.tinycolor2LibStrings.lime,
+    `0ff`: tinycolor2Lib.tinycolor2LibStrings.aqua | tinycolor2Lib.tinycolor2LibStrings.cyan,
+    `191970`: tinycolor2Lib.tinycolor2LibStrings.midnightblue,
+    `1e90ff`: tinycolor2Lib.tinycolor2LibStrings.dodgerblue,
+    `20b2aa`: tinycolor2Lib.tinycolor2LibStrings.lightseagreen,
+    `228b22`: tinycolor2Lib.tinycolor2LibStrings.forestgreen,
+    `2e8b57`: tinycolor2Lib.tinycolor2LibStrings.seagreen,
+    `2f4f4f`: tinycolor2Lib.tinycolor2LibStrings.darkslategray | tinycolor2Lib.tinycolor2LibStrings.darkslategrey,
+    `32cd32`: tinycolor2Lib.tinycolor2LibStrings.limegreen,
+    `3cb371`: tinycolor2Lib.tinycolor2LibStrings.mediumseagreen,
+    `40e0d0`: tinycolor2Lib.tinycolor2LibStrings.turquoise,
+    `4169e1`: tinycolor2Lib.tinycolor2LibStrings.royalblue,
+    `4682b4`: tinycolor2Lib.tinycolor2LibStrings.steelblue,
+    `483d8b`: tinycolor2Lib.tinycolor2LibStrings.darkslateblue,
+    `48d1cc`: tinycolor2Lib.tinycolor2LibStrings.mediumturquoise,
+    `4b0082`: tinycolor2Lib.tinycolor2LibStrings.indigo,
+    `556b2f`: tinycolor2Lib.tinycolor2LibStrings.darkolivegreen,
+    `5f9ea0`: tinycolor2Lib.tinycolor2LibStrings.cadetblue,
+    `6495ed`: tinycolor2Lib.tinycolor2LibStrings.cornflowerblue,
+    `663399`: tinycolor2Lib.tinycolor2LibStrings.rebeccapurple,
+    `66cdaa`: tinycolor2Lib.tinycolor2LibStrings.mediumaquamarine,
+    `696969`: tinycolor2Lib.tinycolor2LibStrings.dimgray | tinycolor2Lib.tinycolor2LibStrings.dimgrey,
+    `6a5acd`: tinycolor2Lib.tinycolor2LibStrings.slateblue,
+    `6b8e23`: tinycolor2Lib.tinycolor2LibStrings.olivedrab,
+    `708090`: tinycolor2Lib.tinycolor2LibStrings.slategray | tinycolor2Lib.tinycolor2LibStrings.slategrey,
+    `789`: tinycolor2Lib.tinycolor2LibStrings.lightslategray | tinycolor2Lib.tinycolor2LibStrings.lightslategrey,
+    `7b68ee`: tinycolor2Lib.tinycolor2LibStrings.mediumslateblue,
+    `7cfc00`: tinycolor2Lib.tinycolor2LibStrings.lawngreen,
+    `7fff00`: tinycolor2Lib.tinycolor2LibStrings.chartreuse,
+    `7fffd4`: tinycolor2Lib.tinycolor2LibStrings.aquamarine,
+    `800000`: tinycolor2Lib.tinycolor2LibStrings.maroon,
+    `800080`: tinycolor2Lib.tinycolor2LibStrings.purple,
+    `808000`: tinycolor2Lib.tinycolor2LibStrings.olive,
+    `808080`: tinycolor2Lib.tinycolor2LibStrings.gray | tinycolor2Lib.tinycolor2LibStrings.grey,
+    `87ceeb`: tinycolor2Lib.tinycolor2LibStrings.skyblue,
+    `87cefa`: tinycolor2Lib.tinycolor2LibStrings.lightskyblue,
+    `8a2be2`: tinycolor2Lib.tinycolor2LibStrings.blueviolet,
+    `8b0000`: tinycolor2Lib.tinycolor2LibStrings.darkred,
+    `8b008b`: tinycolor2Lib.tinycolor2LibStrings.darkmagenta,
+    `8b4513`: tinycolor2Lib.tinycolor2LibStrings.saddlebrown,
+    `8fbc8f`: tinycolor2Lib.tinycolor2LibStrings.darkseagreen,
+    `90ee90`: tinycolor2Lib.tinycolor2LibStrings.lightgreen,
+    `9370db`: tinycolor2Lib.tinycolor2LibStrings.mediumpurple,
+    `9400d3`: tinycolor2Lib.tinycolor2LibStrings.darkviolet,
+    `98fb98`: tinycolor2Lib.tinycolor2LibStrings.palegreen,
+    `9932cc`: tinycolor2Lib.tinycolor2LibStrings.darkorchid,
+    `9acd32`: tinycolor2Lib.tinycolor2LibStrings.yellowgreen,
+    a0522d: tinycolor2Lib.tinycolor2LibStrings.sienna,
+    a52a2a: tinycolor2Lib.tinycolor2LibStrings.brown,
+    a9a9a9: tinycolor2Lib.tinycolor2LibStrings.darkgray | tinycolor2Lib.tinycolor2LibStrings.darkgrey,
+    add8e6: tinycolor2Lib.tinycolor2LibStrings.lightblue,
+    adff2f: tinycolor2Lib.tinycolor2LibStrings.greenyellow,
+    afeeee: tinycolor2Lib.tinycolor2LibStrings.paleturquoise,
+    b0c4de: tinycolor2Lib.tinycolor2LibStrings.lightsteelblue,
+    b0e0e6: tinycolor2Lib.tinycolor2LibStrings.powderblue,
+    b22222: tinycolor2Lib.tinycolor2LibStrings.firebrick,
+    b8860b: tinycolor2Lib.tinycolor2LibStrings.darkgoldenrod,
+    ba55d3: tinycolor2Lib.tinycolor2LibStrings.mediumorchid,
+    bc8f8f: tinycolor2Lib.tinycolor2LibStrings.rosybrown,
+    bdb76b: tinycolor2Lib.tinycolor2LibStrings.darkkhaki,
+    c0c0c0: tinycolor2Lib.tinycolor2LibStrings.silver,
+    c71585: tinycolor2Lib.tinycolor2LibStrings.mediumvioletred,
+    cd5c5c: tinycolor2Lib.tinycolor2LibStrings.indianred,
+    cd853f: tinycolor2Lib.tinycolor2LibStrings.peru,
+    d2691e: tinycolor2Lib.tinycolor2LibStrings.chocolate,
+    d2b48c: tinycolor2Lib.tinycolor2LibStrings.tan,
+    d3d3d3: tinycolor2Lib.tinycolor2LibStrings.lightgray | tinycolor2Lib.tinycolor2LibStrings.lightgrey,
+    d8bfd8: tinycolor2Lib.tinycolor2LibStrings.thistle,
+    da70d6: tinycolor2Lib.tinycolor2LibStrings.orchid,
+    daa520: tinycolor2Lib.tinycolor2LibStrings.goldenrod,
+    db7093: tinycolor2Lib.tinycolor2LibStrings.palevioletred,
+    dc143c: tinycolor2Lib.tinycolor2LibStrings.crimson,
+    dcdcdc: tinycolor2Lib.tinycolor2LibStrings.gainsboro,
+    dda0dd: tinycolor2Lib.tinycolor2LibStrings.plum,
+    deb887: tinycolor2Lib.tinycolor2LibStrings.burlywood,
+    e0ffff: tinycolor2Lib.tinycolor2LibStrings.lightcyan,
+    e6e6fa: tinycolor2Lib.tinycolor2LibStrings.lavender,
+    e9967a: tinycolor2Lib.tinycolor2LibStrings.darksalmon,
+    ea7e5d: tinycolor2Lib.tinycolor2LibStrings.burntsienna,
+    ee82ee: tinycolor2Lib.tinycolor2LibStrings.violet,
+    eee8aa: tinycolor2Lib.tinycolor2LibStrings.palegoldenrod,
+    f00: tinycolor2Lib.tinycolor2LibStrings.red,
+    f08080: tinycolor2Lib.tinycolor2LibStrings.lightcoral,
+    f0e68c: tinycolor2Lib.tinycolor2LibStrings.khaki,
+    f0f: tinycolor2Lib.tinycolor2LibStrings.fuchsia | tinycolor2Lib.tinycolor2LibStrings.magenta,
+    f0f8ff: tinycolor2Lib.tinycolor2LibStrings.aliceblue,
+    f0fff0: tinycolor2Lib.tinycolor2LibStrings.honeydew,
+    f0ffff: tinycolor2Lib.tinycolor2LibStrings.azure,
+    f4a460: tinycolor2Lib.tinycolor2LibStrings.sandybrown,
+    f5deb3: tinycolor2Lib.tinycolor2LibStrings.wheat,
+    f5f5dc: tinycolor2Lib.tinycolor2LibStrings.beige,
+    f5f5f5: tinycolor2Lib.tinycolor2LibStrings.whitesmoke,
+    f5fffa: tinycolor2Lib.tinycolor2LibStrings.mintcream,
+    f8f8ff: tinycolor2Lib.tinycolor2LibStrings.ghostwhite,
+    fa8072: tinycolor2Lib.tinycolor2LibStrings.salmon,
+    faebd7: tinycolor2Lib.tinycolor2LibStrings.antiquewhite,
+    faf0e6: tinycolor2Lib.tinycolor2LibStrings.linen,
+    fafad2: tinycolor2Lib.tinycolor2LibStrings.lightgoldenrodyellow,
+    fdf5e6: tinycolor2Lib.tinycolor2LibStrings.oldlace,
+    ff0: tinycolor2Lib.tinycolor2LibStrings.yellow,
+    ff1493: tinycolor2Lib.tinycolor2LibStrings.deeppink,
+    ff4500: tinycolor2Lib.tinycolor2LibStrings.orangered,
+    ff6347: tinycolor2Lib.tinycolor2LibStrings.tomato,
+    ff69b4: tinycolor2Lib.tinycolor2LibStrings.hotpink,
+    ff7f50: tinycolor2Lib.tinycolor2LibStrings.coral,
+    ff8c00: tinycolor2Lib.tinycolor2LibStrings.darkorange,
+    ffa07a: tinycolor2Lib.tinycolor2LibStrings.lightsalmon,
+    ffa500: tinycolor2Lib.tinycolor2LibStrings.orange,
+    ffb6c1: tinycolor2Lib.tinycolor2LibStrings.lightpink,
+    ffc0cb: tinycolor2Lib.tinycolor2LibStrings.pink,
+    ffd700: tinycolor2Lib.tinycolor2LibStrings.gold,
+    ffdab9: tinycolor2Lib.tinycolor2LibStrings.peachpuff,
+    ffdead: tinycolor2Lib.tinycolor2LibStrings.navajowhite,
+    ffe4b5: tinycolor2Lib.tinycolor2LibStrings.moccasin,
+    ffe4c4: tinycolor2Lib.tinycolor2LibStrings.bisque,
+    ffe4e1: tinycolor2Lib.tinycolor2LibStrings.mistyrose,
+    ffebcd: tinycolor2Lib.tinycolor2LibStrings.blanchedalmond,
+    ffefd5: tinycolor2Lib.tinycolor2LibStrings.papayawhip,
+    fff: tinycolor2Lib.tinycolor2LibStrings.white,
+    fff0f5: tinycolor2Lib.tinycolor2LibStrings.lavenderblush,
+    fff5ee: tinycolor2Lib.tinycolor2LibStrings.seashell,
+    fff8dc: tinycolor2Lib.tinycolor2LibStrings.cornsilk,
+    fffacd: tinycolor2Lib.tinycolor2LibStrings.lemonchiffon,
+    fffaf0: tinycolor2Lib.tinycolor2LibStrings.floralwhite,
+    fffafa: tinycolor2Lib.tinycolor2LibStrings.snow,
+    ffffe0: tinycolor2Lib.tinycolor2LibStrings.lightyellow,
+    fffff0: tinycolor2Lib.tinycolor2LibStrings.ivory
+  ): Anon_000000080 = {
+    val __obj = js.Dynamic.literal(`000` = `000`, `000080` = `000080`, `00008b` = `00008b`, `0000cd` = `0000cd`, `006400` = `006400`, `008000` = `008000`, `008080` = `008080`, `008b8b` = `008b8b`, `00bfff` = `00bfff`, `00ced1` = `00ced1`, `00f` = `00f`, `00fa9a` = `00fa9a`, `00ff7f` = `00ff7f`, `0f0` = `0f0`, `0ff` = `0ff`.asInstanceOf[js.Any], `191970` = `191970`, `1e90ff` = `1e90ff`, `20b2aa` = `20b2aa`, `228b22` = `228b22`, `2e8b57` = `2e8b57`, `2f4f4f` = `2f4f4f`.asInstanceOf[js.Any], `32cd32` = `32cd32`, `3cb371` = `3cb371`, `40e0d0` = `40e0d0`, `4169e1` = `4169e1`, `4682b4` = `4682b4`, `483d8b` = `483d8b`, `48d1cc` = `48d1cc`, `4b0082` = `4b0082`, `556b2f` = `556b2f`, `5f9ea0` = `5f9ea0`, `6495ed` = `6495ed`, `663399` = `663399`, `66cdaa` = `66cdaa`, `696969` = `696969`.asInstanceOf[js.Any], `6a5acd` = `6a5acd`, `6b8e23` = `6b8e23`, `708090` = `708090`.asInstanceOf[js.Any], `789` = `789`.asInstanceOf[js.Any], `7b68ee` = `7b68ee`, `7cfc00` = `7cfc00`, `7fff00` = `7fff00`, `7fffd4` = `7fffd4`, `800000` = `800000`, `800080` = `800080`, `808000` = `808000`, `808080` = `808080`.asInstanceOf[js.Any], `87ceeb` = `87ceeb`, `87cefa` = `87cefa`, `8a2be2` = `8a2be2`, `8b0000` = `8b0000`, `8b008b` = `8b008b`, `8b4513` = `8b4513`, `8fbc8f` = `8fbc8f`, `90ee90` = `90ee90`, `9370db` = `9370db`, `9400d3` = `9400d3`, `98fb98` = `98fb98`, `9932cc` = `9932cc`, `9acd32` = `9acd32`)
+    __obj.updateDynamic("a0522d")(a0522d)
+    __obj.updateDynamic("a52a2a")(a52a2a)
+    __obj.updateDynamic("a9a9a9")(a9a9a9.asInstanceOf[js.Any])
+    __obj.updateDynamic("add8e6")(add8e6)
+    __obj.updateDynamic("adff2f")(adff2f)
+    __obj.updateDynamic("afeeee")(afeeee)
+    __obj.updateDynamic("b0c4de")(b0c4de)
+    __obj.updateDynamic("b0e0e6")(b0e0e6)
+    __obj.updateDynamic("b22222")(b22222)
+    __obj.updateDynamic("b8860b")(b8860b)
+    __obj.updateDynamic("ba55d3")(ba55d3)
+    __obj.updateDynamic("bc8f8f")(bc8f8f)
+    __obj.updateDynamic("bdb76b")(bdb76b)
+    __obj.updateDynamic("c0c0c0")(c0c0c0)
+    __obj.updateDynamic("c71585")(c71585)
+    __obj.updateDynamic("cd5c5c")(cd5c5c)
+    __obj.updateDynamic("cd853f")(cd853f)
+    __obj.updateDynamic("d2691e")(d2691e)
+    __obj.updateDynamic("d2b48c")(d2b48c)
+    __obj.updateDynamic("d3d3d3")(d3d3d3.asInstanceOf[js.Any])
+    __obj.updateDynamic("d8bfd8")(d8bfd8)
+    __obj.updateDynamic("da70d6")(da70d6)
+    __obj.updateDynamic("daa520")(daa520)
+    __obj.updateDynamic("db7093")(db7093)
+    __obj.updateDynamic("dc143c")(dc143c)
+    __obj.updateDynamic("dcdcdc")(dcdcdc)
+    __obj.updateDynamic("dda0dd")(dda0dd)
+    __obj.updateDynamic("deb887")(deb887)
+    __obj.updateDynamic("e0ffff")(e0ffff)
+    __obj.updateDynamic("e6e6fa")(e6e6fa)
+    __obj.updateDynamic("e9967a")(e9967a)
+    __obj.updateDynamic("ea7e5d")(ea7e5d)
+    __obj.updateDynamic("ee82ee")(ee82ee)
+    __obj.updateDynamic("eee8aa")(eee8aa)
+    __obj.updateDynamic("f00")(f00)
+    __obj.updateDynamic("f08080")(f08080)
+    __obj.updateDynamic("f0e68c")(f0e68c)
+    __obj.updateDynamic("f0f")(f0f.asInstanceOf[js.Any])
+    __obj.updateDynamic("f0f8ff")(f0f8ff)
+    __obj.updateDynamic("f0fff0")(f0fff0)
+    __obj.updateDynamic("f0ffff")(f0ffff)
+    __obj.updateDynamic("f4a460")(f4a460)
+    __obj.updateDynamic("f5deb3")(f5deb3)
+    __obj.updateDynamic("f5f5dc")(f5f5dc)
+    __obj.updateDynamic("f5f5f5")(f5f5f5)
+    __obj.updateDynamic("f5fffa")(f5fffa)
+    __obj.updateDynamic("f8f8ff")(f8f8ff)
+    __obj.updateDynamic("fa8072")(fa8072)
+    __obj.updateDynamic("faebd7")(faebd7)
+    __obj.updateDynamic("faf0e6")(faf0e6)
+    __obj.updateDynamic("fafad2")(fafad2)
+    __obj.updateDynamic("fdf5e6")(fdf5e6)
+    __obj.updateDynamic("ff0")(ff0)
+    __obj.updateDynamic("ff1493")(ff1493)
+    __obj.updateDynamic("ff4500")(ff4500)
+    __obj.updateDynamic("ff6347")(ff6347)
+    __obj.updateDynamic("ff69b4")(ff69b4)
+    __obj.updateDynamic("ff7f50")(ff7f50)
+    __obj.updateDynamic("ff8c00")(ff8c00)
+    __obj.updateDynamic("ffa07a")(ffa07a)
+    __obj.updateDynamic("ffa500")(ffa500)
+    __obj.updateDynamic("ffb6c1")(ffb6c1)
+    __obj.updateDynamic("ffc0cb")(ffc0cb)
+    __obj.updateDynamic("ffd700")(ffd700)
+    __obj.updateDynamic("ffdab9")(ffdab9)
+    __obj.updateDynamic("ffdead")(ffdead)
+    __obj.updateDynamic("ffe4b5")(ffe4b5)
+    __obj.updateDynamic("ffe4c4")(ffe4c4)
+    __obj.updateDynamic("ffe4e1")(ffe4e1)
+    __obj.updateDynamic("ffebcd")(ffebcd)
+    __obj.updateDynamic("ffefd5")(ffefd5)
+    __obj.updateDynamic("fff")(fff)
+    __obj.updateDynamic("fff0f5")(fff0f5)
+    __obj.updateDynamic("fff5ee")(fff5ee)
+    __obj.updateDynamic("fff8dc")(fff8dc)
+    __obj.updateDynamic("fffacd")(fffacd)
+    __obj.updateDynamic("fffaf0")(fffaf0)
+    __obj.updateDynamic("fffafa")(fffafa)
+    __obj.updateDynamic("ffffe0")(ffffe0)
+    __obj.updateDynamic("fffff0")(fffff0)
+    __obj.asInstanceOf[Anon_000000080]
+  }
+}
+

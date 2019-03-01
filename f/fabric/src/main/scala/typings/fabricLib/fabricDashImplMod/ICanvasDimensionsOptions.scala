@@ -16,3 +16,16 @@ trait ICanvasDimensionsOptions extends js.Object {
   var cssOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ICanvasDimensionsOptions {
+  @scala.inline
+  def apply(
+    backstoreOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    cssOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): ICanvasDimensionsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(backstoreOnly)) __obj.updateDynamic("backstoreOnly")(backstoreOnly)
+    if (!js.isUndefined(cssOnly)) __obj.updateDynamic("cssOnly")(cssOnly)
+    __obj.asInstanceOf[ICanvasDimensionsOptions]
+  }
+}
+

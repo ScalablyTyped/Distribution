@@ -14,3 +14,24 @@ trait Anon_ALBUM extends js.Object {
   var VIDEO: java.lang.String
 }
 
+object Anon_ALBUM {
+  @scala.inline
+  def apply(
+    ALBUM: java.lang.String,
+    DOCUMENT: java.lang.String,
+    LOCATION: java.lang.String,
+    PHOTO: java.lang.String,
+    URL: java.lang.String,
+    VIDEO: java.lang.String
+  ): Anon_ALBUM = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ALBUM")(ALBUM)
+    __obj.updateDynamic("DOCUMENT")(DOCUMENT)
+    __obj.updateDynamic("LOCATION")(LOCATION)
+    __obj.updateDynamic("PHOTO")(PHOTO)
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("VIDEO")(VIDEO)
+    __obj.asInstanceOf[Anon_ALBUM]
+  }
+}
+

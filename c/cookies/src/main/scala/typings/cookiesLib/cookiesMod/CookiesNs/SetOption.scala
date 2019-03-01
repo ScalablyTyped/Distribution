@@ -62,3 +62,32 @@ trait SetOption extends js.Object {
   var signed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SetOption {
+  @scala.inline
+  def apply(
+    domain: java.lang.String = null,
+    expires: stdLib.Date = null,
+    httpOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    maxAge: scala.Int | scala.Double = null,
+    overwrite: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    sameSite: cookiesLib.cookiesLibStrings.strict | cookiesLib.cookiesLibStrings.lax | scala.Boolean = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    secureProxy: js.UndefOr[scala.Boolean] = js.undefined,
+    signed: js.UndefOr[scala.Boolean] = js.undefined
+  ): SetOption = {
+    val __obj = js.Dynamic.literal()
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (expires != null) __obj.updateDynamic("expires")(expires)
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(secureProxy)) __obj.updateDynamic("secureProxy")(secureProxy)
+    if (!js.isUndefined(signed)) __obj.updateDynamic("signed")(signed)
+    __obj.asInstanceOf[SetOption]
+  }
+}
+

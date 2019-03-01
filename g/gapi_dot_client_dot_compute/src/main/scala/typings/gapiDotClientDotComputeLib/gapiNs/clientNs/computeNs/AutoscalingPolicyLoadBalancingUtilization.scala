@@ -13,3 +13,12 @@ trait AutoscalingPolicyLoadBalancingUtilization extends js.Object {
   var utilizationTarget: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AutoscalingPolicyLoadBalancingUtilization {
+  @scala.inline
+  def apply(utilizationTarget: scala.Int | scala.Double = null): AutoscalingPolicyLoadBalancingUtilization = {
+    val __obj = js.Dynamic.literal()
+    if (utilizationTarget != null) __obj.updateDynamic("utilizationTarget")(utilizationTarget.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AutoscalingPolicyLoadBalancingUtilization]
+  }
+}
+

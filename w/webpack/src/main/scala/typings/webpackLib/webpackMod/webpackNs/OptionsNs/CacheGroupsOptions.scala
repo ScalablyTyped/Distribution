@@ -34,3 +34,34 @@ trait CacheGroupsOptions extends js.Object {
   ] = js.undefined
 }
 
+object CacheGroupsOptions {
+  @scala.inline
+  def apply(
+    chunks: webpackLib.webpackLibStrings.initial | webpackLib.webpackLibStrings.async | webpackLib.webpackLibStrings.all | (js.Function1[/* chunk */ webpackLib.webpackMod.webpackNs.compilationNs.Chunk, scala.Boolean]) = null,
+    enforce: js.UndefOr[scala.Boolean] = js.undefined,
+    maxAsyncRequests: scala.Int | scala.Double = null,
+    maxInitialRequests: scala.Int | scala.Double = null,
+    maxSize: scala.Int | scala.Double = null,
+    minChunks: scala.Int | scala.Double = null,
+    minSize: scala.Int | scala.Double = null,
+    name: scala.Boolean | java.lang.String | (js.Function1[/* repeated */ js.Any, _]) = null,
+    priority: scala.Int | scala.Double = null,
+    reuseExistingChunk: js.UndefOr[scala.Boolean] = js.undefined,
+    test: (js.Function1[/* repeated */ js.Any, scala.Boolean]) | java.lang.String | stdLib.RegExp = null
+  ): CacheGroupsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
+    if (!js.isUndefined(enforce)) __obj.updateDynamic("enforce")(enforce)
+    if (maxAsyncRequests != null) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.asInstanceOf[js.Any])
+    if (maxInitialRequests != null) __obj.updateDynamic("maxInitialRequests")(maxInitialRequests.asInstanceOf[js.Any])
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (minChunks != null) __obj.updateDynamic("minChunks")(minChunks.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseExistingChunk)) __obj.updateDynamic("reuseExistingChunk")(reuseExistingChunk)
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CacheGroupsOptions]
+  }
+}
+

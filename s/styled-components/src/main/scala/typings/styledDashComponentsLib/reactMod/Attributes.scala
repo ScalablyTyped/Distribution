@@ -24,3 +24,16 @@ trait Attributes extends js.Object {
   ] = js.undefined
 }
 
+object Attributes {
+  @scala.inline
+  def apply(
+    css: styledDashComponentsLib.styledDashComponentsMod.CSSProp[
+      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+    ] = null
+  ): Attributes = {
+    val __obj = js.Dynamic.literal()
+    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Attributes]
+  }
+}
+

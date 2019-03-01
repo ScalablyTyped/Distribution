@@ -16,3 +16,20 @@ trait IdentitytoolkitRelyingpartyDownloadAccountRequest extends js.Object {
   var targetProjectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartyDownloadAccountRequest {
+  @scala.inline
+  def apply(
+    delegatedProjectNumber: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    nextPageToken: java.lang.String = null,
+    targetProjectId: java.lang.String = null
+  ): IdentitytoolkitRelyingpartyDownloadAccountRequest = {
+    val __obj = js.Dynamic.literal()
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (targetProjectId != null) __obj.updateDynamic("targetProjectId")(targetProjectId)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartyDownloadAccountRequest]
+  }
+}
+

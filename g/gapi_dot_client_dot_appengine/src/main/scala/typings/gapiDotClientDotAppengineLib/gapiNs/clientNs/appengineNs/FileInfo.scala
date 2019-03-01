@@ -17,3 +17,18 @@ trait FileInfo extends js.Object {
   var sourceUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FileInfo {
+  @scala.inline
+  def apply(
+    mimeType: java.lang.String = null,
+    sha1Sum: java.lang.String = null,
+    sourceUrl: java.lang.String = null
+  ): FileInfo = {
+    val __obj = js.Dynamic.literal()
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (sha1Sum != null) __obj.updateDynamic("sha1Sum")(sha1Sum)
+    if (sourceUrl != null) __obj.updateDynamic("sourceUrl")(sourceUrl)
+    __obj.asInstanceOf[FileInfo]
+  }
+}
+

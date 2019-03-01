@@ -23,3 +23,28 @@ trait ClientSideLoggingObject extends js.Object {
   var query_var: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientSideLoggingObject {
+  @scala.inline
+  def apply(
+    client_info: ClientSideLoggingClientInfoObject = null,
+    error_url: java.lang.String = null,
+    hijack_console: js.UndefOr[scala.Boolean] = js.undefined,
+    info_url: java.lang.String = null,
+    log_level: scala.Int | scala.Double = null,
+    log_url: java.lang.String = null,
+    native_error: js.UndefOr[scala.Boolean] = js.undefined,
+    query_var: java.lang.String = null
+  ): ClientSideLoggingObject = {
+    val __obj = js.Dynamic.literal()
+    if (client_info != null) __obj.updateDynamic("client_info")(client_info)
+    if (error_url != null) __obj.updateDynamic("error_url")(error_url)
+    if (!js.isUndefined(hijack_console)) __obj.updateDynamic("hijack_console")(hijack_console)
+    if (info_url != null) __obj.updateDynamic("info_url")(info_url)
+    if (log_level != null) __obj.updateDynamic("log_level")(log_level.asInstanceOf[js.Any])
+    if (log_url != null) __obj.updateDynamic("log_url")(log_url)
+    if (!js.isUndefined(native_error)) __obj.updateDynamic("native_error")(native_error)
+    if (query_var != null) __obj.updateDynamic("query_var")(query_var)
+    __obj.asInstanceOf[ClientSideLoggingObject]
+  }
+}
+

@@ -15,3 +15,26 @@ trait GoogleLoginProps
   def responseHandler(response: GoogleLoginInfo): scala.Unit
 }
 
+object GoogleLoginProps {
+  @scala.inline
+  def apply(
+    responseHandler: js.Function1[GoogleLoginInfo, scala.Unit],
+    socialId: java.lang.String,
+    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] = null,
+    buttonText: java.lang.String = null,
+    fetchBasicProfile: js.UndefOr[scala.Boolean] = js.undefined,
+    prompt: java.lang.String = null,
+    scope: java.lang.String = null
+  ): GoogleLoginProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("responseHandler")(responseHandler)
+    __obj.updateDynamic("socialId")(socialId)
+    js.Dynamic.global.Object.assign(__obj, ButtonHTMLAttributes)
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
+    if (!js.isUndefined(fetchBasicProfile)) __obj.updateDynamic("fetchBasicProfile")(fetchBasicProfile)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[GoogleLoginProps]
+  }
+}
+

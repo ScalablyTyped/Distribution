@@ -24,3 +24,20 @@ trait RuleGroupArgs extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RuleGroupArgs {
+  @scala.inline
+  def apply(
+    metricName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    activatedRules: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionPriorityRuleId]]
+    ] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RuleGroupArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
+    if (activatedRules != null) __obj.updateDynamic("activatedRules")(activatedRules.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuleGroupArgs]
+  }
+}
+

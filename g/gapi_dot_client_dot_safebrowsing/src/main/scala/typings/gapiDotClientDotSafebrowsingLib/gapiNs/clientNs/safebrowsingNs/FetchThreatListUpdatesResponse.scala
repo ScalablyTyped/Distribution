@@ -15,3 +15,16 @@ trait FetchThreatListUpdatesResponse extends js.Object {
   var minimumWaitDuration: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FetchThreatListUpdatesResponse {
+  @scala.inline
+  def apply(
+    listUpdateResponses: js.Array[ListUpdateResponse] = null,
+    minimumWaitDuration: java.lang.String = null
+  ): FetchThreatListUpdatesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (listUpdateResponses != null) __obj.updateDynamic("listUpdateResponses")(listUpdateResponses)
+    if (minimumWaitDuration != null) __obj.updateDynamic("minimumWaitDuration")(minimumWaitDuration)
+    __obj.asInstanceOf[FetchThreatListUpdatesResponse]
+  }
+}
+

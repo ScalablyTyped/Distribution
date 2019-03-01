@@ -17,3 +17,14 @@ trait GitPullRequestReviewFileContentInfo extends js.Object {
   var sHA1Hash: java.lang.String
 }
 
+object GitPullRequestReviewFileContentInfo {
+  @scala.inline
+  def apply(_links: js.Any, path: java.lang.String, sHA1Hash: java.lang.String): GitPullRequestReviewFileContentInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("sHA1Hash")(sHA1Hash)
+    __obj.asInstanceOf[GitPullRequestReviewFileContentInfo]
+  }
+}
+

@@ -10,3 +10,12 @@ trait RenameQueryResult extends js.Object {
   var changes: js.Array[ternLib.Anon_EndFile]
 }
 
+object RenameQueryResult {
+  @scala.inline
+  def apply(changes: js.Array[ternLib.Anon_EndFile]): RenameQueryResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changes")(changes)
+    __obj.asInstanceOf[RenameQueryResult]
+  }
+}
+

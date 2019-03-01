@@ -18,3 +18,39 @@ trait CompactableComposition22C[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: 
   ]
 }
 
+object CompactableComposition22C {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](
+    compact: js.Function1[
+      fpDashTsLib.libHKTMod.Type2[
+        F, 
+        js.Any, 
+        fpDashTsLib.libHKTMod.Type2[G, LG, fpDashTsLib.libOptionMod.Option[js.Any]]
+      ], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]]
+    ],
+    separate: js.Function1[
+      fpDashTsLib.libHKTMod.Type2[
+        F, 
+        js.Any, 
+        fpDashTsLib.libHKTMod.Type2[G, LG, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
+      ], 
+      Separated[
+        fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]], 
+        fpDashTsLib.libHKTMod.Type2[F, js.Any, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]]
+      ]
+    ]
+  ): CompactableComposition22C[F, G, LG] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compact")(compact)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("separate")(separate)
+    __obj.asInstanceOf[CompactableComposition22C[F, G, LG]]
+  }
+}
+

@@ -12,3 +12,13 @@ trait ApprovalUrlInfo extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApprovalUrlInfo {
+  @scala.inline
+  def apply(approvalUrl: java.lang.String = null, kind: java.lang.String = null): ApprovalUrlInfo = {
+    val __obj = js.Dynamic.literal()
+    if (approvalUrl != null) __obj.updateDynamic("approvalUrl")(approvalUrl)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[ApprovalUrlInfo]
+  }
+}
+

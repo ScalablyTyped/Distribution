@@ -28,3 +28,22 @@ trait Result extends js.Object {
   var path: parseDashGlobLib.Anon_Basename
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    base: java.lang.String,
+    glob: java.lang.String,
+    is: parseDashGlobLib.Anon_Braces,
+    orig: java.lang.String,
+    path: parseDashGlobLib.Anon_Basename
+  ): Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("base")(base)
+    __obj.updateDynamic("glob")(glob)
+    __obj.updateDynamic("is")(is)
+    __obj.updateDynamic("orig")(orig)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Result]
+  }
+}
+

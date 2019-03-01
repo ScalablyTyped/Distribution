@@ -10,3 +10,17 @@ trait I18nLanguagesResource extends js.Object {
   def list(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKey): gapiDotClientLib.gapiNs.clientNs.Request[I18nLanguageListResponse]
 }
 
+object I18nLanguagesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[I18nLanguageListResponse]
+    ]
+  ): I18nLanguagesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[I18nLanguagesResource]
+  }
+}
+

@@ -46,3 +46,40 @@ trait TableBorder2 extends js.Object {
   var VerticalLine: BorderLine2
 }
 
+object TableBorder2 {
+  @scala.inline
+  def apply(
+    BottomLine: BorderLine2,
+    Distance: scala.Double,
+    HorizontalLine: BorderLine2,
+    IsBottomLineValid: scala.Boolean,
+    IsDistanceValid: scala.Boolean,
+    IsHorizontalLineValid: scala.Boolean,
+    IsLeftLineValid: scala.Boolean,
+    IsRightLineValid: scala.Boolean,
+    IsTopLineValid: scala.Boolean,
+    IsVerticalLineValid: scala.Boolean,
+    LeftLine: BorderLine2,
+    RightLine: BorderLine2,
+    TopLine: BorderLine2,
+    VerticalLine: BorderLine2
+  ): TableBorder2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BottomLine")(BottomLine)
+    __obj.updateDynamic("Distance")(Distance)
+    __obj.updateDynamic("HorizontalLine")(HorizontalLine)
+    __obj.updateDynamic("IsBottomLineValid")(IsBottomLineValid)
+    __obj.updateDynamic("IsDistanceValid")(IsDistanceValid)
+    __obj.updateDynamic("IsHorizontalLineValid")(IsHorizontalLineValid)
+    __obj.updateDynamic("IsLeftLineValid")(IsLeftLineValid)
+    __obj.updateDynamic("IsRightLineValid")(IsRightLineValid)
+    __obj.updateDynamic("IsTopLineValid")(IsTopLineValid)
+    __obj.updateDynamic("IsVerticalLineValid")(IsVerticalLineValid)
+    __obj.updateDynamic("LeftLine")(LeftLine)
+    __obj.updateDynamic("RightLine")(RightLine)
+    __obj.updateDynamic("TopLine")(TopLine)
+    __obj.updateDynamic("VerticalLine")(VerticalLine)
+    __obj.asInstanceOf[TableBorder2]
+  }
+}
+

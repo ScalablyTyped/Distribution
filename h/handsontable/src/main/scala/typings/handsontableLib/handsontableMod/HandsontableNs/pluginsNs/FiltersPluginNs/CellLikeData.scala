@@ -10,3 +10,13 @@ trait CellLikeData extends js.Object {
   var value: java.lang.String
 }
 
+object CellLikeData {
+  @scala.inline
+  def apply(meta: handsontableLib.Anon_Col, value: java.lang.String): CellLikeData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CellLikeData]
+  }
+}
+

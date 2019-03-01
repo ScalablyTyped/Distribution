@@ -10,3 +10,16 @@ trait Anon_Cell extends js.Object {
   var row: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.single | atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple
 }
 
+object Anon_Cell {
+  @scala.inline
+  def apply(
+    cell: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.single | atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple,
+    row: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.single | atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple
+  ): Anon_Cell = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Cell]
+  }
+}
+

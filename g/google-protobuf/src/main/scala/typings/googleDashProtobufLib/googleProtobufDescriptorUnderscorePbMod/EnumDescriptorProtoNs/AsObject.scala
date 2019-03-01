@@ -13,3 +13,20 @@ trait AsObject extends js.Object {
   ]
 }
 
+object AsObject {
+  @scala.inline
+  def apply(
+    options: googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.EnumOptionsNs.AsObject,
+    valueList: js.Array[
+      googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.EnumValueDescriptorProtoNs.AsObject
+    ],
+    name: java.lang.String = null
+  ): AsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("valueList")(valueList)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

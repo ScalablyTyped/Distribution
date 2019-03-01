@@ -15,3 +15,12 @@ trait MinWidthProps[TLength] extends js.Object {
   var minWidth: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MinWidthProperty[TLength]]] = js.undefined
 }
 
+object MinWidthProps {
+  @scala.inline
+  def apply[TLength](minWidth: ResponsiveValue[csstypeLib.csstypeMod.MinWidthProperty[TLength]] = null): MinWidthProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MinWidthProps[TLength]]
+  }
+}
+

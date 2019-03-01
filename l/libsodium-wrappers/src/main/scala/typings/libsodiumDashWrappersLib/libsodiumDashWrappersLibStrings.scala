@@ -7,25 +7,31 @@ import scala.scalajs.js.annotation._
 
 object libsodiumDashWrappersLibStrings {
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringOutputFormat
   
   @js.native
-  sealed trait curve25519 extends js.Object
+  sealed trait curve25519
+    extends libsodiumDashWrappersLib.libsodiumDashWrappersMod.KeyType
   
   @js.native
-  sealed trait ed25519 extends js.Object
+  sealed trait ed25519
+    extends libsodiumDashWrappersLib.libsodiumDashWrappersMod.KeyType
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringOutputFormat
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringOutputFormat
   
   @js.native
   sealed trait uint8array extends js.Object
   
   @js.native
-  sealed trait x25519 extends js.Object
+  sealed trait x25519
+    extends libsodiumDashWrappersLib.libsodiumDashWrappersMod.KeyType
   
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]

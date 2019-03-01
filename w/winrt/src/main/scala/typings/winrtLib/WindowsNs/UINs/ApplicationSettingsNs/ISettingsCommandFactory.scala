@@ -13,3 +13,19 @@ trait ISettingsCommandFactory extends js.Object {
   ): SettingsCommand
 }
 
+object ISettingsCommandFactory {
+  @scala.inline
+  def apply(
+    create: js.Function3[
+      js.Any, 
+      java.lang.String, 
+      winrtLib.WindowsNs.UINs.PopupsNs.UICommandInvokedHandler, 
+      SettingsCommand
+    ]
+  ): ISettingsCommandFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.asInstanceOf[ISettingsCommandFactory]
+  }
+}
+

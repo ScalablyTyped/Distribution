@@ -42,3 +42,30 @@ trait DataSourceSettings extends js.Object {
   var tableName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataSourceSettings {
+  @scala.inline
+  def apply(
+    connectionDataSource: DataSourceSettingsConnectionDataSource = null,
+    crudAction: DataSourceSettingsCrudAction = null,
+    customFields: js.Array[_] = null,
+    dataSource: js.Any = null,
+    id: java.lang.String = null,
+    parent: java.lang.String = null,
+    query: java.lang.String = null,
+    root: java.lang.String = null,
+    tableName: java.lang.String = null
+  ): DataSourceSettings = {
+    val __obj = js.Dynamic.literal()
+    if (connectionDataSource != null) __obj.updateDynamic("connectionDataSource")(connectionDataSource)
+    if (crudAction != null) __obj.updateDynamic("crudAction")(crudAction)
+    if (customFields != null) __obj.updateDynamic("customFields")(customFields)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    __obj.asInstanceOf[DataSourceSettings]
+  }
+}
+

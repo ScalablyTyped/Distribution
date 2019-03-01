@@ -7,148 +7,196 @@ import scala.scalajs.js.annotation._
 
 object polishedLibStrings {
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends polishedLib.libTypesInteractionStateMod._InteractionState
   
   @js.native
-  sealed trait augFourth extends js.Object
+  sealed trait augFourth
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends polishedLib.libTypesSideKeywordMod.SideKeyword
   
   @js.native
-  sealed trait doubleOctave extends js.Object
+  sealed trait doubleOctave
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait easeInBack extends js.Object
+  sealed trait easeInBack
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInCirc extends js.Object
+  sealed trait easeInCirc
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInCubic extends js.Object
+  sealed trait easeInCubic
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInExpo extends js.Object
+  sealed trait easeInExpo
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInOutBack extends js.Object
+  sealed trait easeInOutBack
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInOutCirc extends js.Object
+  sealed trait easeInOutCirc
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInOutCubic extends js.Object
+  sealed trait easeInOutCubic
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInOutExpo extends js.Object
+  sealed trait easeInOutExpo
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInOutQuad extends js.Object
+  sealed trait easeInOutQuad
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInOutQuart extends js.Object
+  sealed trait easeInOutQuart
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInOutQuint extends js.Object
+  sealed trait easeInOutQuint
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInOutSine extends js.Object
+  sealed trait easeInOutSine
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInQuad extends js.Object
+  sealed trait easeInQuad
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInQuart extends js.Object
+  sealed trait easeInQuart
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInQuint extends js.Object
+  sealed trait easeInQuint
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeInSine extends js.Object
+  sealed trait easeInSine
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeOutBack extends js.Object
+  sealed trait easeOutBack
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeOutCirc extends js.Object
+  sealed trait easeOutCirc
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeOutCubic extends js.Object
+  sealed trait easeOutCubic
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeOutExpo extends js.Object
+  sealed trait easeOutExpo
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeOutQuad extends js.Object
+  sealed trait easeOutQuad
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeOutQuart extends js.Object
+  sealed trait easeOutQuart
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeOutQuint extends js.Object
+  sealed trait easeOutQuint
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait easeOutSine extends js.Object
+  sealed trait easeOutSine
+    extends polishedLib.libTypesTimingFunctionMod.TimingFunction
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait focus
+    extends polishedLib.libTypesInteractionStateMod._InteractionState
   
   @js.native
-  sealed trait goldenSection extends js.Object
+  sealed trait goldenSection
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait hover
+    extends polishedLib.libTypesInteractionStateMod._InteractionState
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends polishedLib.libTypesSideKeywordMod.SideKeyword
   
   @js.native
-  sealed trait majorEleventh extends js.Object
+  sealed trait majorEleventh
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait majorSecond extends js.Object
+  sealed trait majorSecond
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait majorSeventh extends js.Object
+  sealed trait majorSeventh
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait majorSixth extends js.Object
+  sealed trait majorSixth
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait majorTenth extends js.Object
+  sealed trait majorTenth
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait majorThird extends js.Object
+  sealed trait majorThird
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait majorTwelfth extends js.Object
+  sealed trait majorTwelfth
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait minorSecond extends js.Object
+  sealed trait minorSecond
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait minorSeventh extends js.Object
+  sealed trait minorSeventh
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait minorSixth extends js.Object
+  sealed trait minorSixth
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait minorThird extends js.Object
+  sealed trait minorThird
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait octave extends js.Object
+  sealed trait octave
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait perfectFifth extends js.Object
+  sealed trait perfectFifth
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait perfectFourth extends js.Object
+  sealed trait perfectFourth
+    extends polishedLib.libTypesModularScaleRatioMod._ModularScaleRatio
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends polishedLib.libTypesSideKeywordMod.SideKeyword
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends polishedLib.libTypesSideKeywordMod.SideKeyword
   
   @scala.inline
   def active: active = "active".asInstanceOf[active]

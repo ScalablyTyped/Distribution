@@ -58,3 +58,52 @@ trait JsonSchema extends js.Object {
   var variant: js.UndefOr[gapiDotClientDotDiscoveryLib.Anon_Discriminant] = js.undefined
 }
 
+object JsonSchema {
+  @scala.inline
+  def apply(
+    $ref: java.lang.String = null,
+    additionalProperties: JsonSchema = null,
+    annotations: gapiDotClientDotDiscoveryLib.Anon_Required = null,
+    default: java.lang.String = null,
+    description: java.lang.String = null,
+    enum: js.Array[java.lang.String] = null,
+    enumDescriptions: js.Array[java.lang.String] = null,
+    format: java.lang.String = null,
+    id: java.lang.String = null,
+    items: JsonSchema = null,
+    location: java.lang.String = null,
+    maximum: java.lang.String = null,
+    minimum: java.lang.String = null,
+    pattern: java.lang.String = null,
+    properties: stdLib.Record[java.lang.String, JsonSchema] = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    repeated: js.UndefOr[scala.Boolean] = js.undefined,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    variant: gapiDotClientDotDiscoveryLib.Anon_Discriminant = null
+  ): JsonSchema = {
+    val __obj = js.Dynamic.literal()
+    if ($ref != null) __obj.updateDynamic("$ref")($ref)
+    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties)
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (enum != null) __obj.updateDynamic("enum")(enum)
+    if (enumDescriptions != null) __obj.updateDynamic("enumDescriptions")(enumDescriptions)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum)
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (variant != null) __obj.updateDynamic("variant")(variant)
+    __obj.asInstanceOf[JsonSchema]
+  }
+}
+

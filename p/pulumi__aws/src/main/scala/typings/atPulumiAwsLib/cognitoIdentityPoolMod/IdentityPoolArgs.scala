@@ -49,3 +49,30 @@ trait IdentityPoolArgs extends js.Object {
   ] = js.undefined
 }
 
+object IdentityPoolArgs {
+  @scala.inline
+  def apply(
+    identityPoolName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    allowUnauthenticatedIdentities: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    cognitoIdentityProviders: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ClientIdProviderName]]
+    ] = null,
+    developerProviderName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    openidConnectProviderArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    samlProviderArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    supportedLoginProviders: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null
+  ): IdentityPoolArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("identityPoolName")(identityPoolName.asInstanceOf[js.Any])
+    if (allowUnauthenticatedIdentities != null) __obj.updateDynamic("allowUnauthenticatedIdentities")(allowUnauthenticatedIdentities.asInstanceOf[js.Any])
+    if (cognitoIdentityProviders != null) __obj.updateDynamic("cognitoIdentityProviders")(cognitoIdentityProviders.asInstanceOf[js.Any])
+    if (developerProviderName != null) __obj.updateDynamic("developerProviderName")(developerProviderName.asInstanceOf[js.Any])
+    if (openidConnectProviderArns != null) __obj.updateDynamic("openidConnectProviderArns")(openidConnectProviderArns.asInstanceOf[js.Any])
+    if (samlProviderArns != null) __obj.updateDynamic("samlProviderArns")(samlProviderArns.asInstanceOf[js.Any])
+    if (supportedLoginProviders != null) __obj.updateDynamic("supportedLoginProviders")(supportedLoginProviders.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IdentityPoolArgs]
+  }
+}
+

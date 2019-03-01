@@ -12,3 +12,19 @@ trait ErrorEvent
   var type_ErrorEvent: mapboxDashGlLib.mapboxDashGlLibStrings.error
 }
 
+object ErrorEvent {
+  @scala.inline
+  def apply(
+    error: stdLib.Error,
+    target: Map,
+    `type`: mapboxDashGlLib.mapboxDashGlLibStrings.error,
+    originalEvent: js.UndefOr[scala.Nothing] = js.undefined
+  ): ErrorEvent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(originalEvent)) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[ErrorEvent]
+  }
+}
+

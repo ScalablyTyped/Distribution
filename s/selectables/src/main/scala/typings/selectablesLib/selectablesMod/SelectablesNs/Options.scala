@@ -18,3 +18,32 @@ trait Options extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    elements: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String | scala.Boolean = null,
+    moreUsing: java.lang.String = null,
+    onDeselect: js.Function1[/* el */ stdLib.Element, scala.Unit] = null,
+    onSelect: js.Function1[/* el */ stdLib.Element, scala.Unit] = null,
+    selectedClass: java.lang.String = null,
+    start: js.Function1[/* e */ stdLib.Event, scala.Unit] = null,
+    stop: js.Function1[/* e */ stdLib.Event, scala.Unit] = null,
+    zone: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (elements != null) __obj.updateDynamic("elements")(elements)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (moreUsing != null) __obj.updateDynamic("moreUsing")(moreUsing)
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(onDeselect)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[Options]
+  }
+}
+

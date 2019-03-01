@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HTMLVideoElement extends HTMLMediaElement {
+trait HTMLVideoElement
+  extends HTMLMediaElement
+     with CanvasImageSource
+     with TexImageSource {
   /**
     * Gets or sets the height of the video element.
     */
@@ -38,6 +41,16 @@ trait HTMLVideoElement extends HTMLMediaElement {
     * Gets or sets the width of the video element.
     */
   var width: scala.Double = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_MSVideoFormatChanged(
     `type`: stdLib.stdLibStrings.MSVideoFormatChanged,
@@ -94,6 +107,16 @@ trait HTMLVideoElement extends HTMLMediaElement {
   def msInsertVideoEffect(activatableClassId: java.lang.String, effectRequired: scala.Boolean): scala.Unit = js.native
   def msInsertVideoEffect(activatableClassId: java.lang.String, effectRequired: scala.Boolean, config: js.Any): scala.Unit = js.native
   def msSetVideoRectangle(left: scala.Double, top: scala.Double, right: scala.Double, bottom: scala.Double): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_MSVideoFormatChanged(
     `type`: stdLib.stdLibStrings.MSVideoFormatChanged,

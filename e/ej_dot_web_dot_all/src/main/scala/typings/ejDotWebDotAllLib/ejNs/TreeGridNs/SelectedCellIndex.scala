@@ -14,3 +14,13 @@ trait SelectedCellIndex extends js.Object {
   var rowIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SelectedCellIndex {
+  @scala.inline
+  def apply(cellIndex: scala.Int | scala.Double = null, rowIndex: scala.Int | scala.Double = null): SelectedCellIndex = {
+    val __obj = js.Dynamic.literal()
+    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectedCellIndex]
+  }
+}
+

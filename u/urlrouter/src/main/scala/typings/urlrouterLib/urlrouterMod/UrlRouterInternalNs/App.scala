@@ -35,3 +35,63 @@ trait App extends js.Object {
   def unsubscribe(urlpattern: java.lang.String, handler: HttpHandler): scala.Unit
 }
 
+object App {
+  @scala.inline
+  def apply(
+    all: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    checkout: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    copy: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    delete: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    get: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    head: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    lock: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    `m-search`: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    merge: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    mkactivity: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    mkcol: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    move: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    notify: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    options: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    patch: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    post: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    propfind: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    proppatch: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    put: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    redirect: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    report: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    search: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    subscribe: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    trace: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    unlock: js.Function2[java.lang.String, HttpHandler, scala.Unit],
+    unsubscribe: js.Function2[java.lang.String, HttpHandler, scala.Unit]
+  ): App = {
+    val __obj = js.Dynamic.literal(`m-search` = `m-search`)
+    __obj.updateDynamic("all")(all)
+    __obj.updateDynamic("checkout")(checkout)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("head")(head)
+    __obj.updateDynamic("lock")(lock)
+    __obj.updateDynamic("merge")(merge)
+    __obj.updateDynamic("mkactivity")(mkactivity)
+    __obj.updateDynamic("mkcol")(mkcol)
+    __obj.updateDynamic("move")(move)
+    __obj.updateDynamic("notify")(notify)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("post")(post)
+    __obj.updateDynamic("propfind")(propfind)
+    __obj.updateDynamic("proppatch")(proppatch)
+    __obj.updateDynamic("put")(put)
+    __obj.updateDynamic("redirect")(redirect)
+    __obj.updateDynamic("report")(report)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("subscribe")(subscribe)
+    __obj.updateDynamic("trace")(trace)
+    __obj.updateDynamic("unlock")(unlock)
+    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    __obj.asInstanceOf[App]
+  }
+}
+

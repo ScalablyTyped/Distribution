@@ -13,3 +13,24 @@ trait RequestBodyDefinition extends PropertyBaseDefinition {
   var urlencoded: js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | java.lang.String] = js.undefined
 }
 
+object RequestBodyDefinition {
+  @scala.inline
+  def apply(
+    mode: java.lang.String,
+    description: java.lang.String | DescriptionDefinition = null,
+    file: java.lang.String | postmanDashCollectionLib.Anon_SrcString = null,
+    formdata: js.Array[FormParamDefinition] | PropertyList[FormParam] = null,
+    raw: java.lang.String = null,
+    urlencoded: js.Array[QueryParamDefinition] | PropertyList[QueryParam] | java.lang.String = null
+  ): RequestBodyDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mode")(mode)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (formdata != null) __obj.updateDynamic("formdata")(formdata.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (urlencoded != null) __obj.updateDynamic("urlencoded")(urlencoded.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestBodyDefinition]
+  }
+}
+

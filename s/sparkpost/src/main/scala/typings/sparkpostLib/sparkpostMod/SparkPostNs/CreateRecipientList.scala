@@ -20,3 +20,24 @@ trait CreateRecipientList extends js.Object {
   var recipients: js.Array[Recipient]
 }
 
+object CreateRecipientList {
+  @scala.inline
+  def apply(
+    recipients: js.Array[Recipient],
+    attributes: js.Any = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    num_rcpt_errors: scala.Int | scala.Double = null
+  ): CreateRecipientList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("recipients")(recipients)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (num_rcpt_errors != null) __obj.updateDynamic("num_rcpt_errors")(num_rcpt_errors.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateRecipientList]
+  }
+}
+

@@ -20,3 +20,14 @@ trait EmailOptions extends js.Object {
   var template: java.lang.String
 }
 
+object EmailOptions {
+  @scala.inline
+  def apply(locals: js.Any, message: js.Any, template: java.lang.String): EmailOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("locals")(locals)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[EmailOptions]
+  }
+}
+

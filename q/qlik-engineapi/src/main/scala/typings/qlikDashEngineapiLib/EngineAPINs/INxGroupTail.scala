@@ -23,3 +23,13 @@ trait INxGroupTail extends js.Object {
   var qUp: js.UndefOr[scala.Double] = js.undefined
 }
 
+object INxGroupTail {
+  @scala.inline
+  def apply(qDown: scala.Int | scala.Double = null, qUp: scala.Int | scala.Double = null): INxGroupTail = {
+    val __obj = js.Dynamic.literal()
+    if (qDown != null) __obj.updateDynamic("qDown")(qDown.asInstanceOf[js.Any])
+    if (qUp != null) __obj.updateDynamic("qUp")(qUp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[INxGroupTail]
+  }
+}
+

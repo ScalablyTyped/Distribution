@@ -9,3 +9,12 @@ trait Anon_6 extends js.Object {
   var length: rsvpLib.rsvpLibNumbers.`6`
 }
 
+object Anon_6 {
+  @scala.inline
+  def apply(length: rsvpLib.rsvpLibNumbers.`6`): Anon_6 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("length")(length)
+    __obj.asInstanceOf[Anon_6]
+  }
+}
+

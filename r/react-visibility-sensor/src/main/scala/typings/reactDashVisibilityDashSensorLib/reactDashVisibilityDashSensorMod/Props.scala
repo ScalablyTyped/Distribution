@@ -26,3 +26,44 @@ trait Props extends js.Object {
   var scrollThrottle: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactElement[_] | reactDashVisibilityDashSensorLib.ChildFunction = null,
+    containment: reactLib.HTMLElement = null,
+    delayedCall: js.UndefOr[scala.Boolean] = js.undefined,
+    intervalCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    intervalDelay: scala.Int | scala.Double = null,
+    minTopValue: scala.Int | scala.Double = null,
+    offset: Shape = null,
+    onChange: js.Function1[/* isVisible */ scala.Boolean, scala.Unit] = null,
+    partialVisibility: js.UndefOr[scala.Boolean] = js.undefined,
+    resizeCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    resizeDelay: scala.Int | scala.Double = null,
+    resizeThrottle: scala.Int | scala.Double = null,
+    scrollCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollDelay: scala.Int | scala.Double = null,
+    scrollThrottle: scala.Int | scala.Double = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (containment != null) __obj.updateDynamic("containment")(containment)
+    if (!js.isUndefined(delayedCall)) __obj.updateDynamic("delayedCall")(delayedCall)
+    if (!js.isUndefined(intervalCheck)) __obj.updateDynamic("intervalCheck")(intervalCheck)
+    if (intervalDelay != null) __obj.updateDynamic("intervalDelay")(intervalDelay.asInstanceOf[js.Any])
+    if (minTopValue != null) __obj.updateDynamic("minTopValue")(minTopValue.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (!js.isUndefined(partialVisibility)) __obj.updateDynamic("partialVisibility")(partialVisibility)
+    if (!js.isUndefined(resizeCheck)) __obj.updateDynamic("resizeCheck")(resizeCheck)
+    if (resizeDelay != null) __obj.updateDynamic("resizeDelay")(resizeDelay.asInstanceOf[js.Any])
+    if (resizeThrottle != null) __obj.updateDynamic("resizeThrottle")(resizeThrottle.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollCheck)) __obj.updateDynamic("scrollCheck")(scrollCheck)
+    if (scrollDelay != null) __obj.updateDynamic("scrollDelay")(scrollDelay.asInstanceOf[js.Any])
+    if (scrollThrottle != null) __obj.updateDynamic("scrollThrottle")(scrollThrottle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props]
+  }
+}
+

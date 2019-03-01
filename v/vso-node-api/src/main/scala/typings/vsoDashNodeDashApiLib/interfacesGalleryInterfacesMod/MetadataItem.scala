@@ -16,3 +16,13 @@ trait MetadataItem extends js.Object {
   var name: java.lang.String
 }
 
+object MetadataItem {
+  @scala.inline
+  def apply(count: scala.Double, name: java.lang.String): MetadataItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[MetadataItem]
+  }
+}
+

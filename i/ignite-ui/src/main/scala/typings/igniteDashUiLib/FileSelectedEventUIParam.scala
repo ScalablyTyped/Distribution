@@ -20,3 +20,14 @@ trait FileSelectedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object FileSelectedEventUIParam {
+  @scala.inline
+  def apply(fileId: scala.Int | scala.Double = null, filePath: java.lang.String = null, owner: js.Any = null): FileSelectedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[FileSelectedEventUIParam]
+  }
+}
+

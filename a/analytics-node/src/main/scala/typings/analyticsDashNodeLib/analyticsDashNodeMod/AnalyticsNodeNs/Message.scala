@@ -15,3 +15,25 @@ trait Message extends js.Object {
   var userId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Message {
+  @scala.inline
+  def apply(
+    _metadata: analyticsDashNodeLib.Anon_KeyNodeVersion,
+    context: analyticsDashNodeLib.Anon_Key,
+    `type`: java.lang.String,
+    anonymousId: java.lang.String | scala.Double = null,
+    messageId: java.lang.String = null,
+    timestamp: stdLib.Date = null,
+    userId: java.lang.String | scala.Double = null
+  ): Message = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_metadata")(_metadata)
+    __obj.updateDynamic("context")(context)
+    if (anonymousId != null) __obj.updateDynamic("anonymousId")(anonymousId.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Message]
+  }
+}
+

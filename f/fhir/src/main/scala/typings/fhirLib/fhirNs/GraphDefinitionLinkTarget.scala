@@ -35,3 +35,35 @@ trait GraphDefinitionLinkTarget extends BackboneElement {
   var `type`: code
 }
 
+object GraphDefinitionLinkTarget {
+  @scala.inline
+  def apply(
+    `type`: code,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _profile: Element = null,
+    _type: Element = null,
+    compartment: js.Array[GraphDefinitionLinkTargetCompartment] = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    link: js.Array[GraphDefinitionLink] = null,
+    modifierExtension: js.Array[Extension] = null,
+    profile: uri = null
+  ): GraphDefinitionLinkTarget = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_profile != null) __obj.updateDynamic("_profile")(_profile)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (compartment != null) __obj.updateDynamic("compartment")(compartment)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    __obj.asInstanceOf[GraphDefinitionLinkTarget]
+  }
+}
+

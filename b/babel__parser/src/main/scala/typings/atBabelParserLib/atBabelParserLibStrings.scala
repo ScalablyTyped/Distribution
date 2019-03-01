@@ -7,58 +7,76 @@ import scala.scalajs.js.annotation._
 
 object atBabelParserLibStrings {
   @js.native
-  sealed trait asyncGenerators extends js.Object
+  sealed trait asyncGenerators
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait bigInt extends js.Object
+  sealed trait bigInt
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait classPrivateMethods extends js.Object
+  sealed trait classPrivateMethods
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait classPrivateProperties extends js.Object
+  sealed trait classPrivateProperties
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait classProperties extends js.Object
+  sealed trait classProperties
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait decorators extends js.Object
+  sealed trait decorators
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait `decorators-legacy` extends js.Object
+  sealed trait `decorators-legacy`
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait doExpressions extends js.Object
+  sealed trait doExpressions
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait dynamicImport extends js.Object
+  sealed trait dynamicImport
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait estree extends js.Object
+  sealed trait estree
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait exportDefaultFrom extends js.Object
+  sealed trait exportDefaultFrom
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait exportNamespaceFrom extends js.Object
+  sealed trait exportNamespaceFrom
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait flow extends js.Object
+  sealed trait flow
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait flowComments extends js.Object
+  sealed trait flowComments
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait functionBind extends js.Object
+  sealed trait functionBind
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait functionSent extends js.Object
+  sealed trait functionSent
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait importMeta extends js.Object
+  sealed trait importMeta
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait jsx extends js.Object
+  sealed trait jsx
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
   sealed trait minimal extends js.Object
@@ -67,22 +85,28 @@ object atBabelParserLibStrings {
   sealed trait module extends js.Object
   
   @js.native
-  sealed trait nullishCoalescingOperator extends js.Object
+  sealed trait nullishCoalescingOperator
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait numericSeparator extends js.Object
+  sealed trait numericSeparator
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait objectRestSpread extends js.Object
+  sealed trait objectRestSpread
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait optionalCatchBinding extends js.Object
+  sealed trait optionalCatchBinding
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait optionalChaining extends js.Object
+  sealed trait optionalChaining
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait pipelineOperator extends js.Object
+  sealed trait pipelineOperator
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
   sealed trait script extends js.Object
@@ -91,10 +115,12 @@ object atBabelParserLibStrings {
   sealed trait smart extends js.Object
   
   @js.native
-  sealed trait throwExpressions extends js.Object
+  sealed trait throwExpressions
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
-  sealed trait typescript extends js.Object
+  sealed trait typescript
+    extends atBabelParserLib.atBabelParserMod._ParserPlugin
   
   @js.native
   sealed trait unambiguous extends js.Object

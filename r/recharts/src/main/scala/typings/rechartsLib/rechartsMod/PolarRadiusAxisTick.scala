@@ -10,3 +10,13 @@ trait PolarRadiusAxisTick extends js.Object {
   var value: js.Any
 }
 
+object PolarRadiusAxisTick {
+  @scala.inline
+  def apply(coordinate: scala.Double, value: js.Any): PolarRadiusAxisTick = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coordinate")(coordinate)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PolarRadiusAxisTick]
+  }
+}
+

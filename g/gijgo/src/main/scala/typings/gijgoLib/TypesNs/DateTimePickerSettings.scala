@@ -20,3 +20,32 @@ trait DateTimePickerSettings extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DateTimePickerSettings {
+  @scala.inline
+  def apply(
+    change: js.Function1[/* e */ js.Any, _] = null,
+    datepicker: DatePickerSettings = null,
+    footer: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    locale: java.lang.String = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    size: java.lang.String = null,
+    uiLibrary: java.lang.String = null,
+    value: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): DateTimePickerSettings = {
+    val __obj = js.Dynamic.literal()
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (datepicker != null) __obj.updateDynamic("datepicker")(datepicker)
+    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DateTimePickerSettings]
+  }
+}
+

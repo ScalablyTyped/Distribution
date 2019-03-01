@@ -16,3 +16,20 @@ trait RunQueryRequest extends js.Object {
   var timezoneCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RunQueryRequest {
+  @scala.inline
+  def apply(
+    dataRange: java.lang.String = null,
+    reportDataEndTimeMs: java.lang.String = null,
+    reportDataStartTimeMs: java.lang.String = null,
+    timezoneCode: java.lang.String = null
+  ): RunQueryRequest = {
+    val __obj = js.Dynamic.literal()
+    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange)
+    if (reportDataEndTimeMs != null) __obj.updateDynamic("reportDataEndTimeMs")(reportDataEndTimeMs)
+    if (reportDataStartTimeMs != null) __obj.updateDynamic("reportDataStartTimeMs")(reportDataStartTimeMs)
+    if (timezoneCode != null) __obj.updateDynamic("timezoneCode")(timezoneCode)
+    __obj.asInstanceOf[RunQueryRequest]
+  }
+}
+

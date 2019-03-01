@@ -196,3 +196,48 @@ trait IDialogService extends js.Object {
   def ysodDialog(ysodError: js.Any): scala.Unit
 }
 
+object IDialogService {
+  @scala.inline
+  def apply(
+    close: js.Function2[IDialog, /* repeated */ js.Any, scala.Unit],
+    closeAll: js.Function1[/* repeated */ js.Any, scala.Unit],
+    closeDialog: js.Function1[IDialog, scala.Unit],
+    contentPicker: js.Function1[IContentPickerOptions, IModal],
+    embedDialog: js.Function1[js.Any, scala.Unit],
+    iconPicker: js.Function1[IIconPickerOptions, IModal],
+    linkPicker: js.Function1[ILinkPickerOptions, IModal],
+    macroPicker: js.Function1[IMacroPickerOptions, IModal],
+    mediaPicker: js.Function1[IMediaPickerOptions, IModal],
+    memberGroupPicker: js.Function1[IMemberGroupPickerOptions, IModal],
+    memberPicker: js.Function1[IMemberPickerOptions, IModal],
+    open: js.Function1[IDialogRenderingOptions, IModal],
+    openDialog: js.Function1[IDialogRenderingOptions, IModal],
+    propertyDialog: js.Function1[IPropertyDialogOptions, IModal],
+    removeAllDialogs: js.Function1[/* repeated */ js.Any, scala.Unit],
+    treePicker: js.Function1[ITreePickerOptions, IModal],
+    ysodDialog: js.Function1[js.Any, scala.Unit],
+    dialogs: js.Array[_] = null
+  ): IDialogService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("closeAll")(closeAll)
+    __obj.updateDynamic("closeDialog")(closeDialog)
+    __obj.updateDynamic("contentPicker")(contentPicker)
+    __obj.updateDynamic("embedDialog")(embedDialog)
+    __obj.updateDynamic("iconPicker")(iconPicker)
+    __obj.updateDynamic("linkPicker")(linkPicker)
+    __obj.updateDynamic("macroPicker")(macroPicker)
+    __obj.updateDynamic("mediaPicker")(mediaPicker)
+    __obj.updateDynamic("memberGroupPicker")(memberGroupPicker)
+    __obj.updateDynamic("memberPicker")(memberPicker)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("openDialog")(openDialog)
+    __obj.updateDynamic("propertyDialog")(propertyDialog)
+    __obj.updateDynamic("removeAllDialogs")(removeAllDialogs)
+    __obj.updateDynamic("treePicker")(treePicker)
+    __obj.updateDynamic("ysodDialog")(ysodDialog)
+    if (dialogs != null) __obj.updateDynamic("dialogs")(dialogs)
+    __obj.asInstanceOf[IDialogService]
+  }
+}
+

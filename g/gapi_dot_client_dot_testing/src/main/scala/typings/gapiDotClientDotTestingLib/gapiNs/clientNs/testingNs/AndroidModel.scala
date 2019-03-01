@@ -80,3 +80,36 @@ trait AndroidModel extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AndroidModel {
+  @scala.inline
+  def apply(
+    brand: java.lang.String = null,
+    codename: java.lang.String = null,
+    form: java.lang.String = null,
+    id: java.lang.String = null,
+    manufacturer: java.lang.String = null,
+    name: java.lang.String = null,
+    screenDensity: scala.Int | scala.Double = null,
+    screenX: scala.Int | scala.Double = null,
+    screenY: scala.Int | scala.Double = null,
+    supportedAbis: js.Array[java.lang.String] = null,
+    supportedVersionIds: js.Array[java.lang.String] = null,
+    tags: js.Array[java.lang.String] = null
+  ): AndroidModel = {
+    val __obj = js.Dynamic.literal()
+    if (brand != null) __obj.updateDynamic("brand")(brand)
+    if (codename != null) __obj.updateDynamic("codename")(codename)
+    if (form != null) __obj.updateDynamic("form")(form)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (screenDensity != null) __obj.updateDynamic("screenDensity")(screenDensity.asInstanceOf[js.Any])
+    if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
+    if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])
+    if (supportedAbis != null) __obj.updateDynamic("supportedAbis")(supportedAbis)
+    if (supportedVersionIds != null) __obj.updateDynamic("supportedVersionIds")(supportedVersionIds)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[AndroidModel]
+  }
+}
+

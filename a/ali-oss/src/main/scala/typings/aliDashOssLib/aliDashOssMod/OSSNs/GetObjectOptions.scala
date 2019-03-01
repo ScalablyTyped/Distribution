@@ -12,3 +12,18 @@ trait GetObjectOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GetObjectOptions {
+  @scala.inline
+  def apply(
+    headers: js.Object = null,
+    process: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null
+  ): GetObjectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (process != null) __obj.updateDynamic("process")(process)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetObjectOptions]
+  }
+}
+

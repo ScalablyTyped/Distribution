@@ -124,3 +124,56 @@ trait AvatarProps extends js.Object {
   ] = js.undefined
 }
 
+object AvatarProps {
+  @scala.inline
+  def apply(
+    Component: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    ImageComponent: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    activeOpacity: scala.Int | scala.Double = null,
+    avatarStyle: reactDashNativeLib.reactDashNativeMod.ImageStyle = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    editButton: stdLib.Partial[IconProps] = null,
+    icon: AvatarIcon = null,
+    iconStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    imageProps: stdLib.Partial[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ _
+    ] = null,
+    onEditPress: js.Function0[scala.Unit] = null,
+    onLongPress: js.Function0[scala.Unit] = null,
+    onPress: js.Function0[scala.Unit] = null,
+    overlayContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    placeholderStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    renderPlaceholderContent: reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    rounded: js.UndefOr[scala.Boolean] = js.undefined,
+    showEditButton: js.UndefOr[scala.Boolean] = js.undefined,
+    size: reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.small | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.medium | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.large | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.xlarge | scala.Double = null,
+    source: reactDashNativeLib.reactDashNativeMod.ImageURISource = null,
+    title: java.lang.String = null,
+    titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null
+  ): AvatarProps = {
+    val __obj = js.Dynamic.literal()
+    if (Component != null) __obj.updateDynamic("Component")(Component)
+    if (ImageComponent != null) __obj.updateDynamic("ImageComponent")(ImageComponent)
+    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (avatarStyle != null) __obj.updateDynamic("avatarStyle")(avatarStyle)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (editButton != null) __obj.updateDynamic("editButton")(editButton)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
+    if (imageProps != null) __obj.updateDynamic("imageProps")(imageProps)
+    if (onEditPress != null) __obj.updateDynamic("onEditPress")(onEditPress)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (overlayContainerStyle != null) __obj.updateDynamic("overlayContainerStyle")(overlayContainerStyle.asInstanceOf[js.Any])
+    if (placeholderStyle != null) __obj.updateDynamic("placeholderStyle")(placeholderStyle.asInstanceOf[js.Any])
+    if (renderPlaceholderContent != null) __obj.updateDynamic("renderPlaceholderContent")(renderPlaceholderContent)
+    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded)
+    if (!js.isUndefined(showEditButton)) __obj.updateDynamic("showEditButton")(showEditButton)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AvatarProps]
+  }
+}
+

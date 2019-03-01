@@ -21,3 +21,22 @@ trait RepoSource extends js.Object {
   var tagName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RepoSource {
+  @scala.inline
+  def apply(
+    branchName: java.lang.String = null,
+    commitSha: java.lang.String = null,
+    projectId: java.lang.String = null,
+    repoName: java.lang.String = null,
+    tagName: java.lang.String = null
+  ): RepoSource = {
+    val __obj = js.Dynamic.literal()
+    if (branchName != null) __obj.updateDynamic("branchName")(branchName)
+    if (commitSha != null) __obj.updateDynamic("commitSha")(commitSha)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (repoName != null) __obj.updateDynamic("repoName")(repoName)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    __obj.asInstanceOf[RepoSource]
+  }
+}
+

@@ -41,3 +41,27 @@ trait LoaderContext extends js.Object {
   var url: java.lang.String
 }
 
+object LoaderContext {
+  @scala.inline
+  def apply(
+    frag: Fragment,
+    level: scala.Double,
+    responseType: java.lang.String,
+    `type`: java.lang.String,
+    url: java.lang.String,
+    progressData: js.UndefOr[scala.Boolean] = js.undefined,
+    rangeEnd: scala.Int | scala.Double = null,
+    rangeStart: scala.Int | scala.Double = null
+  ): LoaderContext = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("frag")(frag)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("responseType")(responseType)
+    __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(progressData)) __obj.updateDynamic("progressData")(progressData)
+    if (rangeEnd != null) __obj.updateDynamic("rangeEnd")(rangeEnd.asInstanceOf[js.Any])
+    if (rangeStart != null) __obj.updateDynamic("rangeStart")(rangeStart.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoaderContext]
+  }
+}
+

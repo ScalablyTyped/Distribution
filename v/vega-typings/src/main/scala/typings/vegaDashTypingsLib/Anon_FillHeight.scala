@@ -11,3 +11,14 @@ trait Anon_FillHeight extends js.Object {
   var width: scala.Double
 }
 
+object Anon_FillHeight {
+  @scala.inline
+  def apply(fill: java.lang.String, height: scala.Double, width: scala.Double): Anon_FillHeight = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fill")(fill)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Anon_FillHeight]
+  }
+}
+

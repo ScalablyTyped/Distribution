@@ -51,3 +51,22 @@ trait EncodeOptions extends js.Object {
   var useNamedReferences: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EncodeOptions {
+  @scala.inline
+  def apply(
+    allowUnsafeSymbols: js.UndefOr[scala.Boolean] = js.undefined,
+    decimal: js.UndefOr[scala.Boolean] = js.undefined,
+    encodeEverything: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    useNamedReferences: js.UndefOr[scala.Boolean] = js.undefined
+  ): EncodeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowUnsafeSymbols)) __obj.updateDynamic("allowUnsafeSymbols")(allowUnsafeSymbols)
+    if (!js.isUndefined(decimal)) __obj.updateDynamic("decimal")(decimal)
+    if (!js.isUndefined(encodeEverything)) __obj.updateDynamic("encodeEverything")(encodeEverything)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(useNamedReferences)) __obj.updateDynamic("useNamedReferences")(useNamedReferences)
+    __obj.asInstanceOf[EncodeOptions]
+  }
+}
+

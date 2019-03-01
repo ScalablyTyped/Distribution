@@ -11,3 +11,14 @@ trait Default extends js.Object {
   var username: java.lang.String
 }
 
+object Default {
+  @scala.inline
+  def apply(avatarID: java.lang.String, language: java.lang.String, username: java.lang.String): Default = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("avatarID")(avatarID)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[Default]
+  }
+}
+

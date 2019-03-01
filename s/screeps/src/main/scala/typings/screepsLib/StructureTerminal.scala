@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
   * Sends any resources to a Terminal in another room.
   */
 @js.native
-trait StructureTerminal extends OwnedStructure[STRUCTURE_TERMINAL] {
+trait StructureTerminal
+  extends OwnedStructure[STRUCTURE_TERMINAL]
+     with AnyOwnedStructure {
   /**
     * The remaining amount of ticks while this terminal cannot be used to make StructureTerminal.send or Game.market.deal calls.
     */

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		* Event dispatched in case of error while chat room operation
 		*/
-trait ChatRoomError extends js.Object {
+trait ChatRoomError
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* Error code
   			*/
@@ -25,5 +26,22 @@ trait ChatRoomError extends js.Object {
   			* Error description
   			*/
   var text: java.lang.String
+}
+
+object ChatRoomError {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    operation: java.lang.String,
+    room: java.lang.String,
+    text: java.lang.String
+  ): ChatRoomError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("operation")(operation)
+    __obj.updateDynamic("room")(room)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ChatRoomError]
+  }
 }
 

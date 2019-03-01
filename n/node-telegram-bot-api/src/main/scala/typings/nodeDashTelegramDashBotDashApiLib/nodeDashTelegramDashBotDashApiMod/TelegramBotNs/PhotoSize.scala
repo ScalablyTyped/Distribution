@@ -10,3 +10,20 @@ trait PhotoSize extends FileBase {
   var width: scala.Double
 }
 
+object PhotoSize {
+  @scala.inline
+  def apply(
+    file_id: java.lang.String,
+    height: scala.Double,
+    width: scala.Double,
+    file_size: scala.Int | scala.Double = null
+  ): PhotoSize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("file_id")(file_id)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhotoSize]
+  }
+}
+

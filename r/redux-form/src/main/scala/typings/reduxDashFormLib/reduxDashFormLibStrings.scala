@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object reduxDashFormLibStrings {
   @js.native
-  sealed trait Field extends js.Object
+  sealed trait Field
+    extends reduxDashFormLib.reduxDashFormMod.FieldType
   
   @js.native
-  sealed trait FieldArray extends js.Object
+  sealed trait FieldArray
+    extends reduxDashFormLib.reduxDashFormMod.FieldType
   
   @js.native
   sealed trait FormErrors extends js.Object

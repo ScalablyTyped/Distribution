@@ -16,3 +16,13 @@ trait ASPxClientAppointmentDeletingEventArgs extends ASPxClientCancelEventArgs {
   var appointmentIds: js.Array[java.lang.String]
 }
 
+object ASPxClientAppointmentDeletingEventArgs {
+  @scala.inline
+  def apply(appointmentIds: js.Array[java.lang.String], cancel: scala.Boolean): ASPxClientAppointmentDeletingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appointmentIds")(appointmentIds)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.asInstanceOf[ASPxClientAppointmentDeletingEventArgs]
+  }
+}
+

@@ -46,3 +46,25 @@ trait ColumnGroupProps
   ] = js.undefined
 }
 
+object ColumnGroupProps {
+  @scala.inline
+  def apply(
+    align: fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.left | fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.center | fixedDashDataDashTableDash2Lib.fixedDashDataDashTableDash2LibStrings.right = null,
+    fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    header: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+      /* props */ ColumnGroupHeaderProps, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ]) = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[ColumnGroup] = null
+  ): ColumnGroupProps = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnGroupProps]
+  }
+}
+

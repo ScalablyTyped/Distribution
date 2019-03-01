@@ -29,3 +29,26 @@ trait ConnectorSourceChangeEventArgs extends js.Object {
   var port: js.UndefOr[js.Any] = js.undefined
 }
 
+object ConnectorSourceChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    diagramId: java.lang.String = null,
+    dragState: java.lang.String = null,
+    element: js.Any = null,
+    node: js.Any = null,
+    point: js.Any = null,
+    port: js.Any = null
+  ): ConnectorSourceChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (dragState != null) __obj.updateDynamic("dragState")(dragState)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (node != null) __obj.updateDynamic("node")(node)
+    if (point != null) __obj.updateDynamic("point")(point)
+    if (port != null) __obj.updateDynamic("port")(port)
+    __obj.asInstanceOf[ConnectorSourceChangeEventArgs]
+  }
+}
+

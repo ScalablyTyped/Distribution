@@ -32,3 +32,24 @@ trait ItemsSegmentSettings extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ItemsSegmentSettings {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    gradient: js.Any = null,
+    length: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    spacing: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): ItemsSegmentSettings = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ItemsSegmentSettings]
+  }
+}
+

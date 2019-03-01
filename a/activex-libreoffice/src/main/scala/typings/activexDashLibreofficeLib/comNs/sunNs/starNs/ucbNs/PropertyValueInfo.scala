@@ -12,3 +12,22 @@ trait PropertyValueInfo
   var ValueState: PropertyValueState
 }
 
+object PropertyValueInfo {
+  @scala.inline
+  def apply(
+    Handle: scala.Double,
+    Name: java.lang.String,
+    State: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState,
+    Value: js.Any,
+    ValueState: PropertyValueState
+  ): PropertyValueInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Handle")(Handle)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("State")(State)
+    __obj.updateDynamic("Value")(Value)
+    __obj.updateDynamic("ValueState")(ValueState)
+    __obj.asInstanceOf[PropertyValueInfo]
+  }
+}
+

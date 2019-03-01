@@ -16,3 +16,13 @@ trait ViewCreateInstruction extends js.Object {
   var partReplacements: js.UndefOr[js.Object] = js.undefined
 }
 
+object ViewCreateInstruction {
+  @scala.inline
+  def apply(enhance: js.UndefOr[scala.Boolean] = js.undefined, partReplacements: js.Object = null): ViewCreateInstruction = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enhance)) __obj.updateDynamic("enhance")(enhance)
+    if (partReplacements != null) __obj.updateDynamic("partReplacements")(partReplacements)
+    __obj.asInstanceOf[ViewCreateInstruction]
+  }
+}
+

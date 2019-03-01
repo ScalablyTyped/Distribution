@@ -61,3 +61,40 @@ trait Model extends js.Object {
   var scrollSpeed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    autoScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    clone: js.UndefOr[scala.Boolean] = js.undefined,
+    cursorAt: js.Any = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    distance: scala.Int | scala.Double = null,
+    drag: js.Function1[/* e */ DragEventArgs, scala.Unit] = null,
+    dragArea: js.UndefOr[scala.Boolean] = js.undefined,
+    dragStart: js.Function1[/* e */ DragStartEventArgs, scala.Unit] = null,
+    dragStop: js.Function1[/* e */ DragStopEventArgs, scala.Unit] = null,
+    handle: java.lang.String = null,
+    helper: js.Function1[/* e */ HelperEventArgs, scala.Unit] = null,
+    scope: java.lang.String = null,
+    scrollSensitivity: scala.Int | scala.Double = null,
+    scrollSpeed: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll)
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (!js.isUndefined(dragArea)) __obj.updateDynamic("dragArea")(dragArea)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
+    if (dragStop != null) __obj.updateDynamic("dragStop")(dragStop)
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (helper != null) __obj.updateDynamic("helper")(helper)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
+    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

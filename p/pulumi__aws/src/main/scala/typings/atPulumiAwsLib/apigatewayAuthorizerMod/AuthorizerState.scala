@@ -56,3 +56,30 @@ trait AuthorizerState extends js.Object {
   val `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object AuthorizerState {
+  @scala.inline
+  def apply(
+    authorizerCredentials: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    authorizerResultTtlInSeconds: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    authorizerUri: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    identitySource: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    identityValidationExpression: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    providerArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null,
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AuthorizerState = {
+    val __obj = js.Dynamic.literal()
+    if (authorizerCredentials != null) __obj.updateDynamic("authorizerCredentials")(authorizerCredentials.asInstanceOf[js.Any])
+    if (authorizerResultTtlInSeconds != null) __obj.updateDynamic("authorizerResultTtlInSeconds")(authorizerResultTtlInSeconds.asInstanceOf[js.Any])
+    if (authorizerUri != null) __obj.updateDynamic("authorizerUri")(authorizerUri.asInstanceOf[js.Any])
+    if (identitySource != null) __obj.updateDynamic("identitySource")(identitySource.asInstanceOf[js.Any])
+    if (identityValidationExpression != null) __obj.updateDynamic("identityValidationExpression")(identityValidationExpression.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (providerArns != null) __obj.updateDynamic("providerArns")(providerArns.asInstanceOf[js.Any])
+    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AuthorizerState]
+  }
+}
+

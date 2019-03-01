@@ -19,3 +19,32 @@ import scala.scalajs.js.annotation._
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object ListItemTextProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ListItemTextClassKey]] = null,
+    disableTypography: js.UndefOr[scala.Boolean] = js.undefined,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    inset: js.UndefOr[scala.Boolean] = js.undefined,
+    primary: reactLib.reactMod.ReactNs.ReactNode = null,
+    primaryTypographyProps: stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null,
+    secondary: reactLib.reactMod.ReactNs.ReactNode = null,
+    secondaryTypographyProps: stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): ListItemTextProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (!js.isUndefined(disableTypography)) __obj.updateDynamic("disableTypography")(disableTypography)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset)
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (primaryTypographyProps != null) __obj.updateDynamic("primaryTypographyProps")(primaryTypographyProps)
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
+    if (secondaryTypographyProps != null) __obj.updateDynamic("secondaryTypographyProps")(secondaryTypographyProps)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ListItemTextProps]
+  }
+}
+

@@ -83,3 +83,36 @@ trait VivusOptions extends js.Object {
   ] = js.undefined
 }
 
+object VivusOptions {
+  @scala.inline
+  def apply(
+    animTimingFunction: TimingFunction = null,
+    dashGap: scala.Int | scala.Double = null,
+    delay: scala.Int | scala.Double = null,
+    duration: scala.Int | scala.Double = null,
+    file: java.lang.String = null,
+    forceRender: js.UndefOr[scala.Boolean] = js.undefined,
+    onReady: js.Function1[/* vivusInstance */ vivusLib.vivusMod.Vivus, scala.Unit] = null,
+    pathTimingFunction: TimingFunction = null,
+    reverseStack: js.UndefOr[scala.Boolean] = js.undefined,
+    selfDestroy: js.UndefOr[scala.Boolean] = js.undefined,
+    start: vivusLib.vivusLibStrings.inViewport | vivusLib.vivusLibStrings.manual | vivusLib.vivusLibStrings.autostart = null,
+    `type`: vivusLib.vivusLibStrings.delayed | vivusLib.vivusLibStrings.sync | vivusLib.vivusLibStrings.oneByOne | vivusLib.vivusLibStrings.script | vivusLib.vivusLibStrings.scenario | vivusLib.vivusLibStrings.`scenario-sync` = null
+  ): VivusOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animTimingFunction != null) __obj.updateDynamic("animTimingFunction")(animTimingFunction)
+    if (dashGap != null) __obj.updateDynamic("dashGap")(dashGap.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
+    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
+    if (pathTimingFunction != null) __obj.updateDynamic("pathTimingFunction")(pathTimingFunction)
+    if (!js.isUndefined(reverseStack)) __obj.updateDynamic("reverseStack")(reverseStack)
+    if (!js.isUndefined(selfDestroy)) __obj.updateDynamic("selfDestroy")(selfDestroy)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VivusOptions]
+  }
+}
+

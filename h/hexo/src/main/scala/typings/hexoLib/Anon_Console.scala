@@ -44,3 +44,30 @@ trait Anon_Console extends js.Object {
   val tag: hexoLib.hexoMod.HexoNs.extendNs.Tag
 }
 
+object Anon_Console {
+  @scala.inline
+  def apply(
+    console: hexoLib.hexoMod.HexoNs.extendNs.Console,
+    deployer: hexoLib.hexoMod.HexoNs.extendNs.Deployer,
+    filter: hexoLib.hexoMod.HexoNs.extendNs.Filter,
+    generator: hexoLib.hexoMod.HexoNs.extendNs.Generator,
+    helper: hexoLib.hexoMod.HexoNs.extendNs.Helper,
+    migrator: hexoLib.hexoMod.HexoNs.extendNs.Migrator,
+    processor: hexoLib.hexoMod.HexoNs.extendNs.Processor,
+    renderer: hexoLib.hexoMod.HexoNs.extendNs.Renderer,
+    tag: hexoLib.hexoMod.HexoNs.extendNs.Tag
+  ): Anon_Console = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("console")(console)
+    __obj.updateDynamic("deployer")(deployer)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("generator")(generator)
+    __obj.updateDynamic("helper")(helper)
+    __obj.updateDynamic("migrator")(migrator)
+    __obj.updateDynamic("processor")(processor)
+    __obj.updateDynamic("renderer")(renderer)
+    __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[Anon_Console]
+  }
+}
+

@@ -11,3 +11,14 @@ trait Options extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(cwd: java.lang.String = null, gitconfig: java.lang.String = null, path: java.lang.String = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (gitconfig != null) __obj.updateDynamic("gitconfig")(gitconfig)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Options]
+  }
+}
+

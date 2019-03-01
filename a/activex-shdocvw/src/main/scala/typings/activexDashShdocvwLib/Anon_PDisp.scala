@@ -10,3 +10,13 @@ trait Anon_PDisp extends js.Object {
   val pDisp: js.Any
 }
 
+object Anon_PDisp {
+  @scala.inline
+  def apply(URL: js.Any, pDisp: js.Any): Anon_PDisp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("pDisp")(pDisp)
+    __obj.asInstanceOf[Anon_PDisp]
+  }
+}
+

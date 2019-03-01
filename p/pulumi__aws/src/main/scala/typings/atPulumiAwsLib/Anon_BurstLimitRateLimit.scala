@@ -10,3 +10,16 @@ trait Anon_BurstLimitRateLimit extends js.Object {
   var rateLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object Anon_BurstLimitRateLimit {
+  @scala.inline
+  def apply(
+    burstLimit: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    rateLimit: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): Anon_BurstLimitRateLimit = {
+    val __obj = js.Dynamic.literal()
+    if (burstLimit != null) __obj.updateDynamic("burstLimit")(burstLimit.asInstanceOf[js.Any])
+    if (rateLimit != null) __obj.updateDynamic("rateLimit")(rateLimit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BurstLimitRateLimit]
+  }
+}
+

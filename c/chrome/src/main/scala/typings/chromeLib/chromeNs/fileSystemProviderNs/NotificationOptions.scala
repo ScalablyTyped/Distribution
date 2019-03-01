@@ -20,3 +20,24 @@ trait NotificationOptions extends js.Object {
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NotificationOptions {
+  @scala.inline
+  def apply(
+    changeType: java.lang.String,
+    fileSystemId: java.lang.String,
+    observedPath: java.lang.String,
+    recursive: scala.Boolean,
+    changes: js.Array[NotificationChange] = null,
+    tag: java.lang.String = null
+  ): NotificationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeType")(changeType)
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("observedPath")(observedPath)
+    __obj.updateDynamic("recursive")(recursive)
+    if (changes != null) __obj.updateDynamic("changes")(changes)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[NotificationOptions]
+  }
+}
+

@@ -10,3 +10,17 @@ trait AlertsResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[Alerts]
 }
 
+object AlertsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Alerts]
+    ]
+  ): AlertsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AlertsResource]
+  }
+}
+

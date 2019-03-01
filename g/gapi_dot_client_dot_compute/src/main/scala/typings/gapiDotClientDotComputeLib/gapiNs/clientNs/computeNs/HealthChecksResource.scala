@@ -23,3 +23,42 @@ trait HealthChecksResource extends js.Object {
   def update(request: gapiDotClientDotComputeLib.Anon_AltFieldsHealthCheck): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object HealthChecksResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsHealthCheck, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsHealthCheckKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[HealthCheck]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[HealthCheckList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsHealthCheck, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    update: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsHealthCheck, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): HealthChecksResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[HealthChecksResource]
+  }
+}
+

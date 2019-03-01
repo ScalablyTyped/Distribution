@@ -15,3 +15,12 @@ trait Static extends js.Object {
   def setDefaults(options: Options): scala.Unit
 }
 
+object Static {
+  @scala.inline
+  def apply(setDefaults: js.Function1[Options, scala.Unit]): Static = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setDefaults")(setDefaults)
+    __obj.asInstanceOf[Static]
+  }
+}
+

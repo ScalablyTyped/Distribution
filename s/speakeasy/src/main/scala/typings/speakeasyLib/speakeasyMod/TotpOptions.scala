@@ -50,3 +50,36 @@ trait TotpOptions extends SharedOptions {
   var time: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TotpOptions {
+  @scala.inline
+  def apply(
+    secret: java.lang.String,
+    algorithm: Algorithm = null,
+    counter: java.lang.String = null,
+    digest: nodeLib.Buffer = null,
+    digits: scala.Int | scala.Double = null,
+    encoding: Encoding = null,
+    epoch: scala.Int | scala.Double = null,
+    initial_time: scala.Int | scala.Double = null,
+    key: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    step: scala.Int | scala.Double = null,
+    time: scala.Int | scala.Double = null
+  ): TotpOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("secret")(secret)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (counter != null) __obj.updateDynamic("counter")(counter)
+    if (digest != null) __obj.updateDynamic("digest")(digest)
+    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (epoch != null) __obj.updateDynamic("epoch")(epoch.asInstanceOf[js.Any])
+    if (initial_time != null) __obj.updateDynamic("initial_time")(initial_time.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TotpOptions]
+  }
+}
+

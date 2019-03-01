@@ -20,3 +20,18 @@ trait GetVolumeArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetVolumeArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    mostRecent: js.UndefOr[scala.Boolean] = js.undefined,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetVolumeArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetVolumeArgs]
+  }
+}
+

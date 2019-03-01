@@ -9,3 +9,12 @@ trait MapDataControlOptions extends js.Object {
   var position: Position
 }
 
+object MapDataControlOptions {
+  @scala.inline
+  def apply(position: Position): MapDataControlOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[MapDataControlOptions]
+  }
+}
+

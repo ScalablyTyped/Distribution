@@ -18,3 +18,32 @@ trait TokenType extends js.Object {
   def updateContext(prevType: TokenType): scala.Unit
 }
 
+object TokenType {
+  @scala.inline
+  def apply(
+    beforeExpr: scala.Boolean,
+    binop: scala.Double,
+    isAssign: scala.Boolean,
+    isLoop: scala.Boolean,
+    keyword: java.lang.String,
+    label: java.lang.String,
+    postfix: scala.Boolean,
+    prefix: scala.Boolean,
+    startsExpr: scala.Boolean,
+    updateContext: js.Function1[TokenType, scala.Unit]
+  ): TokenType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("beforeExpr")(beforeExpr)
+    __obj.updateDynamic("binop")(binop)
+    __obj.updateDynamic("isAssign")(isAssign)
+    __obj.updateDynamic("isLoop")(isLoop)
+    __obj.updateDynamic("keyword")(keyword)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("postfix")(postfix)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("startsExpr")(startsExpr)
+    __obj.updateDynamic("updateContext")(updateContext)
+    __obj.asInstanceOf[TokenType]
+  }
+}
+

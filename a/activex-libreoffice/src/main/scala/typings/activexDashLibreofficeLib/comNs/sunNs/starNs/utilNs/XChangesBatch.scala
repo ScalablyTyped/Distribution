@@ -32,3 +32,26 @@ trait XChangesBatch
   def hasPendingChanges(): scala.Boolean
 }
 
+object XChangesBatch {
+  @scala.inline
+  def apply(
+    PendingChanges: ChangesSet,
+    acquire: js.Function0[scala.Unit],
+    commitChanges: js.Function0[scala.Unit],
+    getPendingChanges: js.Function0[ChangesSet],
+    hasPendingChanges: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XChangesBatch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PendingChanges")(PendingChanges.asInstanceOf[js.Any])
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("commitChanges")(commitChanges)
+    __obj.updateDynamic("getPendingChanges")(getPendingChanges)
+    __obj.updateDynamic("hasPendingChanges")(hasPendingChanges)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XChangesBatch]
+  }
+}
+

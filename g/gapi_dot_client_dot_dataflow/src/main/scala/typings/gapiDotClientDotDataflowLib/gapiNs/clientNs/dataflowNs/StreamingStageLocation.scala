@@ -13,3 +13,12 @@ trait StreamingStageLocation extends js.Object {
   var streamId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StreamingStageLocation {
+  @scala.inline
+  def apply(streamId: java.lang.String = null): StreamingStageLocation = {
+    val __obj = js.Dynamic.literal()
+    if (streamId != null) __obj.updateDynamic("streamId")(streamId)
+    __obj.asInstanceOf[StreamingStageLocation]
+  }
+}
+

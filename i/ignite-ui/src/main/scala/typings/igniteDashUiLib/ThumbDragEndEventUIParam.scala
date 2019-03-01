@@ -16,3 +16,13 @@ trait ThumbDragEndEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ThumbDragEndEventUIParam {
+  @scala.inline
+  def apply(horizontal: js.UndefOr[scala.Boolean] = js.undefined, owner: js.Any = null): ThumbDragEndEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ThumbDragEndEventUIParam]
+  }
+}
+

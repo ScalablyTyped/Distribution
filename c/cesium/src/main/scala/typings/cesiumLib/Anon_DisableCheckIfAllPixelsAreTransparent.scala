@@ -11,3 +11,18 @@ trait Anon_DisableCheckIfAllPixelsAreTransparent extends js.Object {
   var pixelsToCheck: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian2]
 }
 
+object Anon_DisableCheckIfAllPixelsAreTransparent {
+  @scala.inline
+  def apply(
+    missingImageUrl: cesiumLib.cesiumMod.CesiumNs.Resource | java.lang.String,
+    pixelsToCheck: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian2],
+    disableCheckIfAllPixelsAreTransparent: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_DisableCheckIfAllPixelsAreTransparent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("missingImageUrl")(missingImageUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("pixelsToCheck")(pixelsToCheck)
+    if (!js.isUndefined(disableCheckIfAllPixelsAreTransparent)) __obj.updateDynamic("disableCheckIfAllPixelsAreTransparent")(disableCheckIfAllPixelsAreTransparent)
+    __obj.asInstanceOf[Anon_DisableCheckIfAllPixelsAreTransparent]
+  }
+}
+

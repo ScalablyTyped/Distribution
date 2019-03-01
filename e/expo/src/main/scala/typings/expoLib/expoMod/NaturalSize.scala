@@ -11,3 +11,14 @@ trait NaturalSize extends js.Object {
   var width: scala.Double
 }
 
+object NaturalSize {
+  @scala.inline
+  def apply(height: scala.Double, orientation: Orientation, width: scala.Double): NaturalSize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("orientation")(orientation)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[NaturalSize]
+  }
+}
+

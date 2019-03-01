@@ -12,3 +12,12 @@ trait ComponentDetached extends js.Object {
   def detached(): scala.Unit
 }
 
+object ComponentDetached {
+  @scala.inline
+  def apply(detached: js.Function0[scala.Unit]): ComponentDetached = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("detached")(detached)
+    __obj.asInstanceOf[ComponentDetached]
+  }
+}
+

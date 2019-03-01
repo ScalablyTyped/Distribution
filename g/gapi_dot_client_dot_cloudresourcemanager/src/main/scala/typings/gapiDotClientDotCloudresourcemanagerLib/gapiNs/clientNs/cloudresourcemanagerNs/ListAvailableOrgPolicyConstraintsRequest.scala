@@ -19,3 +19,13 @@ trait ListAvailableOrgPolicyConstraintsRequest extends js.Object {
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListAvailableOrgPolicyConstraintsRequest {
+  @scala.inline
+  def apply(pageSize: scala.Int | scala.Double = null, pageToken: java.lang.String = null): ListAvailableOrgPolicyConstraintsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    __obj.asInstanceOf[ListAvailableOrgPolicyConstraintsRequest]
+  }
+}
+

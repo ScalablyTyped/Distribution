@@ -29,3 +29,26 @@ trait CellEditEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellEditEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cell: stdLib.HTMLElement = null,
+    columnName: java.lang.String = null,
+    columnObject: js.Any = null,
+    model: Model = null,
+    target: stdLib.HTMLElement = null,
+    `type`: java.lang.String = null
+  ): CellEditEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CellEditEventArgs]
+  }
+}
+

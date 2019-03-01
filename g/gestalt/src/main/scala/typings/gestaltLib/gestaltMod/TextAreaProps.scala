@@ -21,3 +21,34 @@ trait TextAreaProps extends js.Object {
   def onChange(args: gestaltLib.Anon_EventValue): scala.Unit
 }
 
+object TextAreaProps {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    onChange: js.Function1[gestaltLib.Anon_EventValue, scala.Unit],
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    errorMessage: java.lang.String = null,
+    idealErrorDirection: gestaltLib.gestaltLibStrings.up | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.down | gestaltLib.gestaltLibStrings.left = null,
+    name: java.lang.String = null,
+    onBlur: js.Function1[/* args */ gestaltLib.Anon_EventValueElement, scala.Unit] = null,
+    onFocus: js.Function1[/* args */ gestaltLib.Anon_EventValueElement, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    rows: scala.Int | scala.Double = null,
+    value: java.lang.String = null
+  ): TextAreaProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("onChange")(onChange)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (idealErrorDirection != null) __obj.updateDynamic("idealErrorDirection")(idealErrorDirection.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[TextAreaProps]
+  }
+}
+

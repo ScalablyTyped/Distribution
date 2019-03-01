@@ -28,3 +28,22 @@ trait IGeoXmlDataSet extends js.Object {
   var summary: js.UndefOr[IGeoXmlSummaryMetadata] = js.undefined
 }
 
+object IGeoXmlDataSet {
+  @scala.inline
+  def apply(
+    layers: js.Array[Layer | GroundOverlay] = null,
+    screenOverlays: js.Array[KmlScreenOverlay] = null,
+    shapes: js.Array[IPrimitive] = null,
+    stats: IGeoXmlStats = null,
+    summary: IGeoXmlSummaryMetadata = null
+  ): IGeoXmlDataSet = {
+    val __obj = js.Dynamic.literal()
+    if (layers != null) __obj.updateDynamic("layers")(layers)
+    if (screenOverlays != null) __obj.updateDynamic("screenOverlays")(screenOverlays)
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
+    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    __obj.asInstanceOf[IGeoXmlDataSet]
+  }
+}
+

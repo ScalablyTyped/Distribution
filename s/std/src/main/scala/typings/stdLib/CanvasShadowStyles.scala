@@ -12,3 +12,20 @@ trait CanvasShadowStyles extends js.Object {
   var shadowOffsetY: scala.Double
 }
 
+object CanvasShadowStyles {
+  @scala.inline
+  def apply(
+    shadowBlur: scala.Double,
+    shadowColor: java.lang.String,
+    shadowOffsetX: scala.Double,
+    shadowOffsetY: scala.Double
+  ): CanvasShadowStyles = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("shadowBlur")(shadowBlur)
+    __obj.updateDynamic("shadowColor")(shadowColor)
+    __obj.updateDynamic("shadowOffsetX")(shadowOffsetX)
+    __obj.updateDynamic("shadowOffsetY")(shadowOffsetY)
+    __obj.asInstanceOf[CanvasShadowStyles]
+  }
+}
+

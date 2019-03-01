@@ -17,3 +17,30 @@ trait Anon_AbortedBySystem extends js.Object {
   var timedOut: scala.Double
 }
 
+object Anon_AbortedBySystem {
+  @scala.inline
+  def apply(
+    abortedBySystem: scala.Double,
+    analyzed: scala.Double,
+    canceledByUser: scala.Double,
+    cancellationInProgress: scala.Double,
+    creatingEnvironment: scala.Double,
+    none: scala.Double,
+    pendingAnalysis: scala.Double,
+    runningTests: scala.Double,
+    timedOut: scala.Double
+  ): Anon_AbortedBySystem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abortedBySystem")(abortedBySystem)
+    __obj.updateDynamic("analyzed")(analyzed)
+    __obj.updateDynamic("canceledByUser")(canceledByUser)
+    __obj.updateDynamic("cancellationInProgress")(cancellationInProgress)
+    __obj.updateDynamic("creatingEnvironment")(creatingEnvironment)
+    __obj.updateDynamic("none")(none)
+    __obj.updateDynamic("pendingAnalysis")(pendingAnalysis)
+    __obj.updateDynamic("runningTests")(runningTests)
+    __obj.updateDynamic("timedOut")(timedOut)
+    __obj.asInstanceOf[Anon_AbortedBySystem]
+  }
+}
+

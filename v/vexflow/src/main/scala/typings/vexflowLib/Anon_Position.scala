@@ -13,3 +13,22 @@ trait Anon_Position extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Position {
+  @scala.inline
+  def apply(
+    start: vexflowLib.VexNs.FlowNs.Note,
+    stop: vexflowLib.VexNs.FlowNs.Note,
+    position: vexflowLib.VexNs.FlowNs.TextBracketNs.Positions = null,
+    superscript: java.lang.String = null,
+    text: java.lang.String = null
+  ): Anon_Position = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stop")(stop)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (superscript != null) __obj.updateDynamic("superscript")(superscript)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Anon_Position]
+  }
+}
+

@@ -68,3 +68,32 @@ trait Options extends js.Object {
   var preferBuiltins: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    browser: js.UndefOr[scala.Boolean] = js.undefined,
+    customResolveOptions: resolveLib.resolveMod.resolveNs.AsyncOpts = null,
+    extensions: js.Array[java.lang.String] = null,
+    jail: java.lang.String = null,
+    jsnext: js.UndefOr[scala.Boolean] = js.undefined,
+    main: js.UndefOr[scala.Boolean] = js.undefined,
+    module: js.UndefOr[scala.Boolean] = js.undefined,
+    modulesOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    only: js.Array[java.lang.String | stdLib.RegExp] = null,
+    preferBuiltins: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser)
+    if (customResolveOptions != null) __obj.updateDynamic("customResolveOptions")(customResolveOptions)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (jail != null) __obj.updateDynamic("jail")(jail)
+    if (!js.isUndefined(jsnext)) __obj.updateDynamic("jsnext")(jsnext)
+    if (!js.isUndefined(main)) __obj.updateDynamic("main")(main)
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module)
+    if (!js.isUndefined(modulesOnly)) __obj.updateDynamic("modulesOnly")(modulesOnly)
+    if (only != null) __obj.updateDynamic("only")(only)
+    if (!js.isUndefined(preferBuiltins)) __obj.updateDynamic("preferBuiltins")(preferBuiltins)
+    __obj.asInstanceOf[Options]
+  }
+}
+

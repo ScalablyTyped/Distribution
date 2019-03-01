@@ -44,3 +44,24 @@ trait Options extends js.Object {
   var sourceType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    context: java.lang.String,
+    manifest: webpackLib.Anon_Content | java.lang.String,
+    content: js.Any = null,
+    name: java.lang.String = null,
+    scope: java.lang.String = null,
+    sourceType: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
+    __obj.asInstanceOf[Options]
+  }
+}
+

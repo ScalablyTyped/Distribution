@@ -24,3 +24,20 @@ trait ColumnSortedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColumnSortedEventUIParam {
+  @scala.inline
+  def apply(
+    columnKey: java.lang.String = null,
+    direction: java.lang.String = null,
+    expressions: js.Any = null,
+    owner: js.Any = null
+  ): ColumnSortedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (expressions != null) __obj.updateDynamic("expressions")(expressions)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ColumnSortedEventUIParam]
+  }
+}
+

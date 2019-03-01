@@ -16,3 +16,13 @@ trait GetEventCategoriesResult extends js.Object {
   val id: java.lang.String
 }
 
+object GetEventCategoriesResult {
+  @scala.inline
+  def apply(eventCategories: js.Array[java.lang.String], id: java.lang.String): GetEventCategoriesResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventCategories")(eventCategories)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[GetEventCategoriesResult]
+  }
+}
+

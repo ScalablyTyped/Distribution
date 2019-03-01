@@ -12,3 +12,12 @@ trait SettingsOptions extends js.Object {
   var prettify: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SettingsOptions {
+  @scala.inline
+  def apply(prettify: js.UndefOr[scala.Boolean] = js.undefined): SettingsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(prettify)) __obj.updateDynamic("prettify")(prettify)
+    __obj.asInstanceOf[SettingsOptions]
+  }
+}
+

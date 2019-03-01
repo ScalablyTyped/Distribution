@@ -28,3 +28,13 @@ trait IMediaListItem extends js.Object {
   var qUrlDef: java.lang.String
 }
 
+object IMediaListItem {
+  @scala.inline
+  def apply(qUrl: java.lang.String, qUrlDef: java.lang.String): IMediaListItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qUrl")(qUrl)
+    __obj.updateDynamic("qUrlDef")(qUrlDef)
+    __obj.asInstanceOf[IMediaListItem]
+  }
+}
+

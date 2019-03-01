@@ -20,12 +20,15 @@ trait Core extends js.Object {
   /** template, bound to default parser */
   var template: jscodeshiftLib.srcTemplateMod.templateNs.Template = js.native
   var types: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof recast.default.types */ js.Any = js.native
-  def apply(source: ASTNode | ASTPath[ASTNode]): jscodeshiftLib.srcCollectionMod.Collection[_] = js.native
   def apply(source: java.lang.String): jscodeshiftLib.srcCollectionMod.Collection[_] = js.native
   def apply(source: java.lang.String, options: Options): jscodeshiftLib.srcCollectionMod.Collection[_] = js.native
   def apply(source: js.Array[ASTNode | ASTPath[ASTNode]]): jscodeshiftLib.srcCollectionMod.Collection[_] = js.native
-  def `match`(path: ASTNode | ASTPath[ASTNode], filter: js.Function1[/* path */ ASTNode, scala.Boolean]): scala.Boolean = js.native
-  def `match`(path: ASTNode | ASTPath[ASTNode], filter: ASTNode): scala.Boolean = js.native
+  def apply(source: ASTNode): jscodeshiftLib.srcCollectionMod.Collection[_] = js.native
+  def apply(source: ASTPath[ASTNode]): jscodeshiftLib.srcCollectionMod.Collection[_] = js.native
+  def `match`(path: ASTNode, filter: js.Function1[/* path */ ASTNode, scala.Boolean]): scala.Boolean = js.native
+  def `match`(path: ASTNode, filter: ASTNode): scala.Boolean = js.native
+  def `match`(path: ASTPath[ASTNode], filter: js.Function1[/* path */ ASTNode, scala.Boolean]): scala.Boolean = js.native
+  def `match`(path: ASTPath[ASTNode], filter: ASTNode): scala.Boolean = js.native
   def registerMethods(methods: js.Object): scala.Unit = js.native
   def registerMethods(
     methods: js.Object,

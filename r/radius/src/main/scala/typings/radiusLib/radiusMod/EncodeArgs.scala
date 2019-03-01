@@ -23,3 +23,22 @@ trait EncodeArgs extends js.Object {
   var secret: java.lang.String
 }
 
+object EncodeArgs {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    secret: java.lang.String,
+    add_message_authenticator: js.UndefOr[scala.Boolean] = js.undefined,
+    attributes: js.Any = null,
+    identifier: scala.Int | scala.Double = null
+  ): EncodeArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("secret")(secret)
+    if (!js.isUndefined(add_message_authenticator)) __obj.updateDynamic("add_message_authenticator")(add_message_authenticator)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EncodeArgs]
+  }
+}
+

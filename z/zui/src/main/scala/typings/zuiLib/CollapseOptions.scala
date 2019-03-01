@@ -10,3 +10,13 @@ trait CollapseOptions extends js.Object {
   var toggle: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CollapseOptions {
+  @scala.inline
+  def apply(parent: js.Any = null, toggle: js.UndefOr[scala.Boolean] = js.undefined): CollapseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
+    __obj.asInstanceOf[CollapseOptions]
+  }
+}
+

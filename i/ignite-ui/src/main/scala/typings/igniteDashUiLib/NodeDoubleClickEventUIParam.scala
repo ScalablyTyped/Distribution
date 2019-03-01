@@ -24,3 +24,20 @@ trait NodeDoubleClickEventUIParam extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeDoubleClickEventUIParam {
+  @scala.inline
+  def apply(
+    binding: js.Any = null,
+    data: js.Any = null,
+    element: java.lang.String = null,
+    path: java.lang.String = null
+  ): NodeDoubleClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (binding != null) __obj.updateDynamic("binding")(binding)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[NodeDoubleClickEventUIParam]
+  }
+}
+

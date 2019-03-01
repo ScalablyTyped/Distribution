@@ -54,3 +54,56 @@ trait ServerOptions extends js.Object {
   var xfwd: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    agent: js.Any = null,
+    auth: java.lang.String = null,
+    autoRewrite: js.UndefOr[scala.Boolean] = js.undefined,
+    buffer: nodeLib.streamMod.Stream = null,
+    changeOrigin: js.UndefOr[scala.Boolean] = js.undefined,
+    cookieDomainRewrite: httpDashProxyLib.httpDashProxyLibNumbers.`false` | java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    forward: httpDashProxyLib.ProxyTargetUrl = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    hostRewrite: java.lang.String = null,
+    ignorePath: js.UndefOr[scala.Boolean] = js.undefined,
+    localAddress: js.UndefOr[scala.Boolean] = js.undefined,
+    prependPath: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveHeaderKeyCase: js.UndefOr[scala.Boolean] = js.undefined,
+    protocolRewrite: java.lang.String = null,
+    proxyTimeout: scala.Int | scala.Double = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    selfHandleResponse: js.UndefOr[scala.Boolean] = js.undefined,
+    ssl: js.Any = null,
+    target: httpDashProxyLib.ProxyTargetUrl = null,
+    toProxy: js.UndefOr[scala.Boolean] = js.undefined,
+    ws: js.UndefOr[scala.Boolean] = js.undefined,
+    xfwd: js.UndefOr[scala.Boolean] = js.undefined
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (agent != null) __obj.updateDynamic("agent")(agent)
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (!js.isUndefined(autoRewrite)) __obj.updateDynamic("autoRewrite")(autoRewrite)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (!js.isUndefined(changeOrigin)) __obj.updateDynamic("changeOrigin")(changeOrigin)
+    if (cookieDomainRewrite != null) __obj.updateDynamic("cookieDomainRewrite")(cookieDomainRewrite.asInstanceOf[js.Any])
+    if (forward != null) __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (hostRewrite != null) __obj.updateDynamic("hostRewrite")(hostRewrite)
+    if (!js.isUndefined(ignorePath)) __obj.updateDynamic("ignorePath")(ignorePath)
+    if (!js.isUndefined(localAddress)) __obj.updateDynamic("localAddress")(localAddress)
+    if (!js.isUndefined(prependPath)) __obj.updateDynamic("prependPath")(prependPath)
+    if (!js.isUndefined(preserveHeaderKeyCase)) __obj.updateDynamic("preserveHeaderKeyCase")(preserveHeaderKeyCase)
+    if (protocolRewrite != null) __obj.updateDynamic("protocolRewrite")(protocolRewrite)
+    if (proxyTimeout != null) __obj.updateDynamic("proxyTimeout")(proxyTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(selfHandleResponse)) __obj.updateDynamic("selfHandleResponse")(selfHandleResponse)
+    if (ssl != null) __obj.updateDynamic("ssl")(ssl)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(toProxy)) __obj.updateDynamic("toProxy")(toProxy)
+    if (!js.isUndefined(ws)) __obj.updateDynamic("ws")(ws)
+    if (!js.isUndefined(xfwd)) __obj.updateDynamic("xfwd")(xfwd)
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

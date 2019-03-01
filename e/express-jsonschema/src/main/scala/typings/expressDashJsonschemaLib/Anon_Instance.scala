@@ -11,3 +11,14 @@ trait Anon_Instance extends js.Object {
   var property: java.lang.String
 }
 
+object Anon_Instance {
+  @scala.inline
+  def apply(instance: js.Any, message: java.lang.String, property: java.lang.String): Anon_Instance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("instance")(instance)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("property")(property)
+    __obj.asInstanceOf[Anon_Instance]
+  }
+}
+

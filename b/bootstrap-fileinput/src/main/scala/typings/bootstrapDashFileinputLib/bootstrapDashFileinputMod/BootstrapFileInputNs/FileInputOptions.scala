@@ -722,3 +722,248 @@ trait FileInputOptions extends js.Object {
   var zoomIndicator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FileInputOptions {
+  @scala.inline
+  def apply(
+    ajaxDeleteSettings: jqueryLib.JQueryAjaxSettings = null,
+    ajaxSettings: jqueryLib.JQueryAjaxSettings = null,
+    allowedFileExtensions: js.Array[java.lang.String] = null,
+    allowedFileTypes: js.Array[
+      bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.image | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.html | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.text | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.video | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.audio | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.flash | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.`object`
+    ] = null,
+    allowedPreviewMimeTypes: js.Array[java.lang.String] = null,
+    allowedPreviewTypes: js.Array[
+      bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.image | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.html | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.text | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.video | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.audio | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.flash | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.`object`
+    ] = null,
+    autoReplace: js.UndefOr[scala.Boolean] = js.undefined,
+    browseClass: java.lang.String = null,
+    browseIcon: java.lang.String = null,
+    browseLabel: java.lang.String = null,
+    buttonLabelClass: java.lang.String = null,
+    captionClass: java.lang.String = null,
+    customLayoutTags: js.Object = null,
+    customPreviewTags: js.Object = null,
+    defaultPreviewContent: java.lang.String = null,
+    deleteExtraData: js.Object | bootstrapDashFileinputLib.Anon__1214679000 = null,
+    deleteUrl: java.lang.String = null,
+    dropZoneEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    dropZoneTitle: java.lang.String = null,
+    dropZoneTitleClass: java.lang.String = null,
+    elCaptionContainer: java.lang.String = null,
+    elCaptionText: java.lang.String = null,
+    elErrorContainer: java.lang.String = null,
+    elPreviewContainer: java.lang.String = null,
+    elPreviewImage: java.lang.String = null,
+    elPreviewStatus: java.lang.String = null,
+    fileActionsettings: FileActionSettings = null,
+    fileTypeSettings: FileTypeSettings = null,
+    initialCaption: java.lang.String = null,
+    initialPreview: java.lang.String | js.Array[_] = null,
+    initialPreviewConfig: js.Array[PreviewConfig] = null,
+    initialPreviewCount: scala.Int | scala.Double = null,
+    initialPreviewDelimiter: java.lang.String = null,
+    initialPreviewShowDelete: js.UndefOr[scala.Boolean] = js.undefined,
+    initialPreviewThumbTags: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    language: java.lang.String = null,
+    layoutTemplates: LayoutTemplates = null,
+    mainClass: java.lang.String = null,
+    maxFileCount: scala.Int | scala.Double = null,
+    maxFileSize: scala.Int | scala.Double = null,
+    maxImageHeight: scala.Int | scala.Double = null,
+    maxImageWidth: scala.Int | scala.Double = null,
+    minFileCount: scala.Int | scala.Double = null,
+    minImageHeight: scala.Int | scala.Double = null,
+    msgCancelled: java.lang.String = null,
+    msgErrorClass: java.lang.String = null,
+    msgFileNotFound: java.lang.String = null,
+    msgFileNotReadable: java.lang.String = null,
+    msgFilePreviewAborted: java.lang.String = null,
+    msgFilePreviewError: java.lang.String = null,
+    msgFileSecured: java.lang.String = null,
+    msgFilesTooLess: java.lang.String = null,
+    msgFilesTooMany: java.lang.String = null,
+    msgFoldersNotAllowed: java.lang.String = null,
+    msgImageHeightLarge: java.lang.String = null,
+    msgImageHeightSmall: java.lang.String = null,
+    msgImageWidthLarge: java.lang.String = null,
+    msgImageWidthSmall: java.lang.String = null,
+    msgInvalidFileExtension: java.lang.String = null,
+    msgInvalidFileType: java.lang.String = null,
+    msgLoading: java.lang.String = null,
+    msgNo: java.lang.String = null,
+    msgProgress: java.lang.String = null,
+    msgSelected: java.lang.String = null,
+    msgSizeTooLarge: java.lang.String = null,
+    msgUploadAborted: java.lang.String = null,
+    msgValidationError: java.lang.String = null,
+    msgValidationErrorClass: java.lang.String = null,
+    msgValidationErrorIcon: java.lang.String = null,
+    msgZoomModalHeading: java.lang.String = null,
+    msgZoomTitle: java.lang.String = null,
+    otherActionButtons: java.lang.String = null,
+    overwriteInitial: js.UndefOr[scala.Boolean] = js.undefined,
+    previewClass: java.lang.String = null,
+    previewFileExtSettings: PreviewFileExtSettings = null,
+    previewFileIcon: java.lang.String = null,
+    previewFileIconClass: java.lang.String = null,
+    previewFileIconSettings: PreviewFileIconSettings = null,
+    previewFileType: bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.image | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.text | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.any = null,
+    previewSettings: PreviewSettings = null,
+    previewTemplates: PreviewTemplates = null,
+    previewThumbTags: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    progressClass: java.lang.String = null,
+    progressCompleteClass: java.lang.String = null,
+    progressErrorClass: java.lang.String = null,
+    removeClass: java.lang.String = null,
+    removeFromPreviewOnError: js.UndefOr[scala.Boolean] = js.undefined,
+    removeIcon: java.lang.String = null,
+    removeLabel: java.lang.String = null,
+    removeTitle: java.lang.String = null,
+    resizeDefaultImageType: java.lang.String = null,
+    resizeImage: js.UndefOr[scala.Boolean] = js.undefined,
+    resizeImageQuality: scala.Int | scala.Double = null,
+    resizePreference: bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.width | bootstrapDashFileinputLib.bootstrapDashFileinputLibStrings.height = null,
+    showAjaxErrorDetails: js.UndefOr[scala.Boolean] = js.undefined,
+    showCancel: js.UndefOr[scala.Boolean] = js.undefined,
+    showCaption: js.UndefOr[scala.Boolean] = js.undefined,
+    showClose: js.UndefOr[scala.Boolean] = js.undefined,
+    showPreview: js.UndefOr[scala.Boolean] = js.undefined,
+    showRemove: js.UndefOr[scala.Boolean] = js.undefined,
+    showUpload: js.UndefOr[scala.Boolean] = js.undefined,
+    showUploadedThumbs: js.UndefOr[scala.Boolean] = js.undefined,
+    slugCallback: js.Function1[/* filename */ java.lang.String, java.lang.String] = null,
+    textEncoding: java.lang.String = null,
+    theme: java.lang.String = null,
+    uploadAsync: js.UndefOr[scala.Boolean] = js.undefined,
+    uploadClass: java.lang.String = null,
+    uploadExtraData: js.Object | (js.Function2[
+      /* previewId */ js.UndefOr[java.lang.String], 
+      /* index */ js.UndefOr[scala.Double], 
+      js.Object
+    ]) = null,
+    uploadIcon: java.lang.String = null,
+    uploadLabel: java.lang.String = null,
+    uploadTitle: java.lang.String = null,
+    uploadUrl: java.lang.String = null,
+    validateInitialCount: js.UndefOr[scala.Boolean] = js.undefined,
+    zoomIndicator: java.lang.String = null
+  ): FileInputOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ajaxDeleteSettings != null) __obj.updateDynamic("ajaxDeleteSettings")(ajaxDeleteSettings)
+    if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings)
+    if (allowedFileExtensions != null) __obj.updateDynamic("allowedFileExtensions")(allowedFileExtensions)
+    if (allowedFileTypes != null) __obj.updateDynamic("allowedFileTypes")(allowedFileTypes)
+    if (allowedPreviewMimeTypes != null) __obj.updateDynamic("allowedPreviewMimeTypes")(allowedPreviewMimeTypes)
+    if (allowedPreviewTypes != null) __obj.updateDynamic("allowedPreviewTypes")(allowedPreviewTypes)
+    if (!js.isUndefined(autoReplace)) __obj.updateDynamic("autoReplace")(autoReplace)
+    if (browseClass != null) __obj.updateDynamic("browseClass")(browseClass)
+    if (browseIcon != null) __obj.updateDynamic("browseIcon")(browseIcon)
+    if (browseLabel != null) __obj.updateDynamic("browseLabel")(browseLabel)
+    if (buttonLabelClass != null) __obj.updateDynamic("buttonLabelClass")(buttonLabelClass)
+    if (captionClass != null) __obj.updateDynamic("captionClass")(captionClass)
+    if (customLayoutTags != null) __obj.updateDynamic("customLayoutTags")(customLayoutTags)
+    if (customPreviewTags != null) __obj.updateDynamic("customPreviewTags")(customPreviewTags)
+    if (defaultPreviewContent != null) __obj.updateDynamic("defaultPreviewContent")(defaultPreviewContent)
+    if (deleteExtraData != null) __obj.updateDynamic("deleteExtraData")(deleteExtraData.asInstanceOf[js.Any])
+    if (deleteUrl != null) __obj.updateDynamic("deleteUrl")(deleteUrl)
+    if (!js.isUndefined(dropZoneEnabled)) __obj.updateDynamic("dropZoneEnabled")(dropZoneEnabled)
+    if (dropZoneTitle != null) __obj.updateDynamic("dropZoneTitle")(dropZoneTitle)
+    if (dropZoneTitleClass != null) __obj.updateDynamic("dropZoneTitleClass")(dropZoneTitleClass)
+    if (elCaptionContainer != null) __obj.updateDynamic("elCaptionContainer")(elCaptionContainer)
+    if (elCaptionText != null) __obj.updateDynamic("elCaptionText")(elCaptionText)
+    if (elErrorContainer != null) __obj.updateDynamic("elErrorContainer")(elErrorContainer)
+    if (elPreviewContainer != null) __obj.updateDynamic("elPreviewContainer")(elPreviewContainer)
+    if (elPreviewImage != null) __obj.updateDynamic("elPreviewImage")(elPreviewImage)
+    if (elPreviewStatus != null) __obj.updateDynamic("elPreviewStatus")(elPreviewStatus)
+    if (fileActionsettings != null) __obj.updateDynamic("fileActionsettings")(fileActionsettings)
+    if (fileTypeSettings != null) __obj.updateDynamic("fileTypeSettings")(fileTypeSettings)
+    if (initialCaption != null) __obj.updateDynamic("initialCaption")(initialCaption)
+    if (initialPreview != null) __obj.updateDynamic("initialPreview")(initialPreview.asInstanceOf[js.Any])
+    if (initialPreviewConfig != null) __obj.updateDynamic("initialPreviewConfig")(initialPreviewConfig)
+    if (initialPreviewCount != null) __obj.updateDynamic("initialPreviewCount")(initialPreviewCount.asInstanceOf[js.Any])
+    if (initialPreviewDelimiter != null) __obj.updateDynamic("initialPreviewDelimiter")(initialPreviewDelimiter)
+    if (!js.isUndefined(initialPreviewShowDelete)) __obj.updateDynamic("initialPreviewShowDelete")(initialPreviewShowDelete)
+    if (initialPreviewThumbTags != null) __obj.updateDynamic("initialPreviewThumbTags")(initialPreviewThumbTags)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (layoutTemplates != null) __obj.updateDynamic("layoutTemplates")(layoutTemplates)
+    if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass)
+    if (maxFileCount != null) __obj.updateDynamic("maxFileCount")(maxFileCount.asInstanceOf[js.Any])
+    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
+    if (maxImageHeight != null) __obj.updateDynamic("maxImageHeight")(maxImageHeight.asInstanceOf[js.Any])
+    if (maxImageWidth != null) __obj.updateDynamic("maxImageWidth")(maxImageWidth.asInstanceOf[js.Any])
+    if (minFileCount != null) __obj.updateDynamic("minFileCount")(minFileCount.asInstanceOf[js.Any])
+    if (minImageHeight != null) __obj.updateDynamic("minImageHeight")(minImageHeight.asInstanceOf[js.Any])
+    if (msgCancelled != null) __obj.updateDynamic("msgCancelled")(msgCancelled)
+    if (msgErrorClass != null) __obj.updateDynamic("msgErrorClass")(msgErrorClass)
+    if (msgFileNotFound != null) __obj.updateDynamic("msgFileNotFound")(msgFileNotFound)
+    if (msgFileNotReadable != null) __obj.updateDynamic("msgFileNotReadable")(msgFileNotReadable)
+    if (msgFilePreviewAborted != null) __obj.updateDynamic("msgFilePreviewAborted")(msgFilePreviewAborted)
+    if (msgFilePreviewError != null) __obj.updateDynamic("msgFilePreviewError")(msgFilePreviewError)
+    if (msgFileSecured != null) __obj.updateDynamic("msgFileSecured")(msgFileSecured)
+    if (msgFilesTooLess != null) __obj.updateDynamic("msgFilesTooLess")(msgFilesTooLess)
+    if (msgFilesTooMany != null) __obj.updateDynamic("msgFilesTooMany")(msgFilesTooMany)
+    if (msgFoldersNotAllowed != null) __obj.updateDynamic("msgFoldersNotAllowed")(msgFoldersNotAllowed)
+    if (msgImageHeightLarge != null) __obj.updateDynamic("msgImageHeightLarge")(msgImageHeightLarge)
+    if (msgImageHeightSmall != null) __obj.updateDynamic("msgImageHeightSmall")(msgImageHeightSmall)
+    if (msgImageWidthLarge != null) __obj.updateDynamic("msgImageWidthLarge")(msgImageWidthLarge)
+    if (msgImageWidthSmall != null) __obj.updateDynamic("msgImageWidthSmall")(msgImageWidthSmall)
+    if (msgInvalidFileExtension != null) __obj.updateDynamic("msgInvalidFileExtension")(msgInvalidFileExtension)
+    if (msgInvalidFileType != null) __obj.updateDynamic("msgInvalidFileType")(msgInvalidFileType)
+    if (msgLoading != null) __obj.updateDynamic("msgLoading")(msgLoading)
+    if (msgNo != null) __obj.updateDynamic("msgNo")(msgNo)
+    if (msgProgress != null) __obj.updateDynamic("msgProgress")(msgProgress)
+    if (msgSelected != null) __obj.updateDynamic("msgSelected")(msgSelected)
+    if (msgSizeTooLarge != null) __obj.updateDynamic("msgSizeTooLarge")(msgSizeTooLarge)
+    if (msgUploadAborted != null) __obj.updateDynamic("msgUploadAborted")(msgUploadAborted)
+    if (msgValidationError != null) __obj.updateDynamic("msgValidationError")(msgValidationError)
+    if (msgValidationErrorClass != null) __obj.updateDynamic("msgValidationErrorClass")(msgValidationErrorClass)
+    if (msgValidationErrorIcon != null) __obj.updateDynamic("msgValidationErrorIcon")(msgValidationErrorIcon)
+    if (msgZoomModalHeading != null) __obj.updateDynamic("msgZoomModalHeading")(msgZoomModalHeading)
+    if (msgZoomTitle != null) __obj.updateDynamic("msgZoomTitle")(msgZoomTitle)
+    if (otherActionButtons != null) __obj.updateDynamic("otherActionButtons")(otherActionButtons)
+    if (!js.isUndefined(overwriteInitial)) __obj.updateDynamic("overwriteInitial")(overwriteInitial)
+    if (previewClass != null) __obj.updateDynamic("previewClass")(previewClass)
+    if (previewFileExtSettings != null) __obj.updateDynamic("previewFileExtSettings")(previewFileExtSettings)
+    if (previewFileIcon != null) __obj.updateDynamic("previewFileIcon")(previewFileIcon)
+    if (previewFileIconClass != null) __obj.updateDynamic("previewFileIconClass")(previewFileIconClass)
+    if (previewFileIconSettings != null) __obj.updateDynamic("previewFileIconSettings")(previewFileIconSettings)
+    if (previewFileType != null) __obj.updateDynamic("previewFileType")(previewFileType.asInstanceOf[js.Any])
+    if (previewSettings != null) __obj.updateDynamic("previewSettings")(previewSettings)
+    if (previewTemplates != null) __obj.updateDynamic("previewTemplates")(previewTemplates)
+    if (previewThumbTags != null) __obj.updateDynamic("previewThumbTags")(previewThumbTags)
+    if (progressClass != null) __obj.updateDynamic("progressClass")(progressClass)
+    if (progressCompleteClass != null) __obj.updateDynamic("progressCompleteClass")(progressCompleteClass)
+    if (progressErrorClass != null) __obj.updateDynamic("progressErrorClass")(progressErrorClass)
+    if (removeClass != null) __obj.updateDynamic("removeClass")(removeClass)
+    if (!js.isUndefined(removeFromPreviewOnError)) __obj.updateDynamic("removeFromPreviewOnError")(removeFromPreviewOnError)
+    if (removeIcon != null) __obj.updateDynamic("removeIcon")(removeIcon)
+    if (removeLabel != null) __obj.updateDynamic("removeLabel")(removeLabel)
+    if (removeTitle != null) __obj.updateDynamic("removeTitle")(removeTitle)
+    if (resizeDefaultImageType != null) __obj.updateDynamic("resizeDefaultImageType")(resizeDefaultImageType)
+    if (!js.isUndefined(resizeImage)) __obj.updateDynamic("resizeImage")(resizeImage)
+    if (resizeImageQuality != null) __obj.updateDynamic("resizeImageQuality")(resizeImageQuality.asInstanceOf[js.Any])
+    if (resizePreference != null) __obj.updateDynamic("resizePreference")(resizePreference.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAjaxErrorDetails)) __obj.updateDynamic("showAjaxErrorDetails")(showAjaxErrorDetails)
+    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel)
+    if (!js.isUndefined(showCaption)) __obj.updateDynamic("showCaption")(showCaption)
+    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose)
+    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview)
+    if (!js.isUndefined(showRemove)) __obj.updateDynamic("showRemove")(showRemove)
+    if (!js.isUndefined(showUpload)) __obj.updateDynamic("showUpload")(showUpload)
+    if (!js.isUndefined(showUploadedThumbs)) __obj.updateDynamic("showUploadedThumbs")(showUploadedThumbs)
+    if (slugCallback != null) __obj.updateDynamic("slugCallback")(slugCallback)
+    if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(uploadAsync)) __obj.updateDynamic("uploadAsync")(uploadAsync)
+    if (uploadClass != null) __obj.updateDynamic("uploadClass")(uploadClass)
+    if (uploadExtraData != null) __obj.updateDynamic("uploadExtraData")(uploadExtraData.asInstanceOf[js.Any])
+    if (uploadIcon != null) __obj.updateDynamic("uploadIcon")(uploadIcon)
+    if (uploadLabel != null) __obj.updateDynamic("uploadLabel")(uploadLabel)
+    if (uploadTitle != null) __obj.updateDynamic("uploadTitle")(uploadTitle)
+    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl)
+    if (!js.isUndefined(validateInitialCount)) __obj.updateDynamic("validateInitialCount")(validateInitialCount)
+    if (zoomIndicator != null) __obj.updateDynamic("zoomIndicator")(zoomIndicator)
+    __obj.asInstanceOf[FileInputOptions]
+  }
+}
+

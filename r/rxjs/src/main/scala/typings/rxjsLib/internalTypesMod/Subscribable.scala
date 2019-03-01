@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Subscribable[T] extends js.Object {
+trait Subscribable[T] extends _SubscribableOrPromise[T] {
   def subscribe(): Unsubscribable = js.native
   def subscribe(next: js.Function1[/* value */ T, scala.Unit]): Unsubscribable = js.native
   def subscribe(next: js.Function1[/* value */ T, scala.Unit], error: js.Function1[/* error */ js.Any, scala.Unit]): Unsubscribable = js.native

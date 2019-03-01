@@ -150,3 +150,42 @@ trait DataObject extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DataObject {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    children: js.Array[DataObject] = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
+    name: java.lang.String = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    value: scala.Int | scala.Double = null
+  ): DataObject = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataObject]
+  }
+}
+

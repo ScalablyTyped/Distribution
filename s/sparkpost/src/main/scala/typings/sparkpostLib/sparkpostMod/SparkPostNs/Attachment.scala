@@ -24,3 +24,13 @@ trait Attachment extends js.Object {
   var `type`: java.lang.String
 }
 
+object Attachment {
+  @scala.inline
+  def apply(data: java.lang.String, name: java.lang.String, `type`: java.lang.String): Attachment = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Attachment]
+  }
+}
+

@@ -11,3 +11,12 @@ trait CellEditEventArgs extends js.Object {
   var editCellsInfo: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object CellEditEventArgs {
+  @scala.inline
+  def apply(editCellsInfo: js.Array[_] = null): CellEditEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (editCellsInfo != null) __obj.updateDynamic("editCellsInfo")(editCellsInfo)
+    __obj.asInstanceOf[CellEditEventArgs]
+  }
+}
+

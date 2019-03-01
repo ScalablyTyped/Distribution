@@ -11,3 +11,18 @@ trait RTCIdentityProviderOptions extends js.Object {
   var usernameHint: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RTCIdentityProviderOptions {
+  @scala.inline
+  def apply(
+    peerIdentity: java.lang.String = null,
+    protocol: java.lang.String = null,
+    usernameHint: java.lang.String = null
+  ): RTCIdentityProviderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (usernameHint != null) __obj.updateDynamic("usernameHint")(usernameHint)
+    __obj.asInstanceOf[RTCIdentityProviderOptions]
+  }
+}
+

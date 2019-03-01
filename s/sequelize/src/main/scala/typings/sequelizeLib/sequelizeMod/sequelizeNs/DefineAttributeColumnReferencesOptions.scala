@@ -29,3 +29,18 @@ trait DefineAttributeColumnReferencesOptions extends js.Object {
   var model: java.lang.String | (Model[_, _])
 }
 
+object DefineAttributeColumnReferencesOptions {
+  @scala.inline
+  def apply(
+    model: java.lang.String | (Model[_, _]),
+    deferrable: DeferrableInitiallyDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableSetDeferred | DeferrableSetImmediate = null,
+    key: java.lang.String = null
+  ): DefineAttributeColumnReferencesOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (deferrable != null) __obj.updateDynamic("deferrable")(deferrable.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[DefineAttributeColumnReferencesOptions]
+  }
+}
+

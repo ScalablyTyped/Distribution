@@ -18,3 +18,13 @@ trait FlowChartConfig extends js.Object {
   var htmlLabels: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FlowChartConfig {
+  @scala.inline
+  def apply(curve: java.lang.String = null, htmlLabels: js.UndefOr[scala.Boolean] = js.undefined): FlowChartConfig = {
+    val __obj = js.Dynamic.literal()
+    if (curve != null) __obj.updateDynamic("curve")(curve)
+    if (!js.isUndefined(htmlLabels)) __obj.updateDynamic("htmlLabels")(htmlLabels)
+    __obj.asInstanceOf[FlowChartConfig]
+  }
+}
+

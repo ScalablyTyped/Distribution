@@ -16,7 +16,8 @@ object reactDashSketchappLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashSketchappLib.reactDashSketchappMod.ResizeMode
   
   @js.native
   sealed trait column extends js.Object
@@ -25,10 +26,12 @@ object reactDashSketchappLibStrings {
   sealed trait `column-reverse` extends js.Object
   
   @js.native
-  sealed trait contain extends js.Object
+  sealed trait contain
+    extends reactDashSketchappLib.reactDashSketchappMod.ResizeMode
   
   @js.native
-  sealed trait cover extends js.Object
+  sealed trait cover
+    extends reactDashSketchappLib.reactDashSketchappMod.ResizeMode
   
   @js.native
   sealed trait dashed extends js.Object
@@ -64,7 +67,8 @@ object reactDashSketchappLibStrings {
   sealed trait ltr extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashSketchappLib.reactDashSketchappMod.ResizeMode
   
   @js.native
   sealed trait normal extends js.Object
@@ -76,7 +80,8 @@ object reactDashSketchappLibStrings {
   sealed trait relative extends js.Object
   
   @js.native
-  sealed trait repeat extends js.Object
+  sealed trait repeat
+    extends reactDashSketchappLib.reactDashSketchappMod.ResizeMode
   
   @js.native
   sealed trait right extends js.Object
@@ -106,7 +111,8 @@ object reactDashSketchappLibStrings {
   sealed trait `space-between` extends js.Object
   
   @js.native
-  sealed trait stretch extends js.Object
+  sealed trait stretch
+    extends reactDashSketchappLib.reactDashSketchappMod.ResizeMode
   
   @js.native
   sealed trait underline extends js.Object

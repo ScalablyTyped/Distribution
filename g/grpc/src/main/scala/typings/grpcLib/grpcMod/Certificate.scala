@@ -12,3 +12,12 @@ trait Certificate extends js.Object {
   var raw: nodeLib.Buffer
 }
 
+object Certificate {
+  @scala.inline
+  def apply(raw: nodeLib.Buffer): Certificate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[Certificate]
+  }
+}
+

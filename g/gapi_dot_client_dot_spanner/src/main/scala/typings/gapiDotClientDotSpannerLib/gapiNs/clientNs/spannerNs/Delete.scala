@@ -12,3 +12,13 @@ trait Delete extends js.Object {
   var table: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Delete {
+  @scala.inline
+  def apply(keySet: KeySet = null, table: java.lang.String = null): Delete = {
+    val __obj = js.Dynamic.literal()
+    if (keySet != null) __obj.updateDynamic("keySet")(keySet)
+    if (table != null) __obj.updateDynamic("table")(table)
+    __obj.asInstanceOf[Delete]
+  }
+}
+

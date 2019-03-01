@@ -56,3 +56,60 @@ trait ExplainQueryStage extends js.Object {
   var writeRatioMax: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ExplainQueryStage {
+  @scala.inline
+  def apply(
+    computeMsAvg: java.lang.String = null,
+    computeMsMax: java.lang.String = null,
+    computeRatioAvg: scala.Int | scala.Double = null,
+    computeRatioMax: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    readMsAvg: java.lang.String = null,
+    readMsMax: java.lang.String = null,
+    readRatioAvg: scala.Int | scala.Double = null,
+    readRatioMax: scala.Int | scala.Double = null,
+    recordsRead: java.lang.String = null,
+    recordsWritten: java.lang.String = null,
+    shuffleOutputBytes: java.lang.String = null,
+    shuffleOutputBytesSpilled: java.lang.String = null,
+    status: java.lang.String = null,
+    steps: js.Array[ExplainQueryStep] = null,
+    waitMsAvg: java.lang.String = null,
+    waitMsMax: java.lang.String = null,
+    waitRatioAvg: scala.Int | scala.Double = null,
+    waitRatioMax: scala.Int | scala.Double = null,
+    writeMsAvg: java.lang.String = null,
+    writeMsMax: java.lang.String = null,
+    writeRatioAvg: scala.Int | scala.Double = null,
+    writeRatioMax: scala.Int | scala.Double = null
+  ): ExplainQueryStage = {
+    val __obj = js.Dynamic.literal()
+    if (computeMsAvg != null) __obj.updateDynamic("computeMsAvg")(computeMsAvg)
+    if (computeMsMax != null) __obj.updateDynamic("computeMsMax")(computeMsMax)
+    if (computeRatioAvg != null) __obj.updateDynamic("computeRatioAvg")(computeRatioAvg.asInstanceOf[js.Any])
+    if (computeRatioMax != null) __obj.updateDynamic("computeRatioMax")(computeRatioMax.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (readMsAvg != null) __obj.updateDynamic("readMsAvg")(readMsAvg)
+    if (readMsMax != null) __obj.updateDynamic("readMsMax")(readMsMax)
+    if (readRatioAvg != null) __obj.updateDynamic("readRatioAvg")(readRatioAvg.asInstanceOf[js.Any])
+    if (readRatioMax != null) __obj.updateDynamic("readRatioMax")(readRatioMax.asInstanceOf[js.Any])
+    if (recordsRead != null) __obj.updateDynamic("recordsRead")(recordsRead)
+    if (recordsWritten != null) __obj.updateDynamic("recordsWritten")(recordsWritten)
+    if (shuffleOutputBytes != null) __obj.updateDynamic("shuffleOutputBytes")(shuffleOutputBytes)
+    if (shuffleOutputBytesSpilled != null) __obj.updateDynamic("shuffleOutputBytesSpilled")(shuffleOutputBytesSpilled)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (steps != null) __obj.updateDynamic("steps")(steps)
+    if (waitMsAvg != null) __obj.updateDynamic("waitMsAvg")(waitMsAvg)
+    if (waitMsMax != null) __obj.updateDynamic("waitMsMax")(waitMsMax)
+    if (waitRatioAvg != null) __obj.updateDynamic("waitRatioAvg")(waitRatioAvg.asInstanceOf[js.Any])
+    if (waitRatioMax != null) __obj.updateDynamic("waitRatioMax")(waitRatioMax.asInstanceOf[js.Any])
+    if (writeMsAvg != null) __obj.updateDynamic("writeMsAvg")(writeMsAvg)
+    if (writeMsMax != null) __obj.updateDynamic("writeMsMax")(writeMsMax)
+    if (writeRatioAvg != null) __obj.updateDynamic("writeRatioAvg")(writeRatioAvg.asInstanceOf[js.Any])
+    if (writeRatioMax != null) __obj.updateDynamic("writeRatioMax")(writeRatioMax.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExplainQueryStage]
+  }
+}
+

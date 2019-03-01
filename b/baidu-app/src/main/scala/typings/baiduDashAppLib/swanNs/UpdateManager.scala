@@ -14,3 +14,20 @@ trait UpdateManager extends js.Object {
   def onUpdateReady(callback: js.Function1[/* res */ baiduDashAppLib.Anon_Confirm, scala.Unit]): scala.Unit
 }
 
+object UpdateManager {
+  @scala.inline
+  def apply(
+    applyUpdate: js.Function0[scala.Unit],
+    onCheckForUpdate: js.Function1[js.Function1[/* res */ baiduDashAppLib.Anon_HasUpdate, scala.Unit], scala.Unit],
+    onUpdateFailed: js.Function1[js.Function1[/* res */ js.Any, scala.Unit], scala.Unit],
+    onUpdateReady: js.Function1[js.Function1[/* res */ baiduDashAppLib.Anon_Confirm, scala.Unit], scala.Unit]
+  ): UpdateManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applyUpdate")(applyUpdate)
+    __obj.updateDynamic("onCheckForUpdate")(onCheckForUpdate)
+    __obj.updateDynamic("onUpdateFailed")(onUpdateFailed)
+    __obj.updateDynamic("onUpdateReady")(onUpdateReady)
+    __obj.asInstanceOf[UpdateManager]
+  }
+}
+

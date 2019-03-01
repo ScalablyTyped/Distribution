@@ -24,3 +24,16 @@ trait Permissions extends js.Object {
   var permissions: js.UndefOr[js.Array[chromeDashAppsLib.chromeNs.runtimeNs.OptionalPermission]] = js.undefined
 }
 
+object Permissions {
+  @scala.inline
+  def apply(
+    origins: js.Array[chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches] | js.Array[java.lang.String] = null,
+    permissions: js.Array[chromeDashAppsLib.chromeNs.runtimeNs.OptionalPermission] = null
+  ): Permissions = {
+    val __obj = js.Dynamic.literal()
+    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[Permissions]
+  }
+}
+

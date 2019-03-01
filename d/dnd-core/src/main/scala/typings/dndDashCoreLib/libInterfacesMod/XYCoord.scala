@@ -10,3 +10,13 @@ trait XYCoord extends js.Object {
   var y: scala.Double
 }
 
+object XYCoord {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): XYCoord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[XYCoord]
+  }
+}
+

@@ -67,3 +67,128 @@ import scala.scalajs.js.annotation._
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    pool: nodemailerLib.nodemailerLibNumbers.`true`,
+    alternatives: js.Array[nodemailerLib.libMailerMod.MailNs.Attachment] = null,
+    attachments: js.Array[nodemailerLib.libMailerMod.MailNs.Attachment] = null,
+    auth: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.AuthenticationType = null,
+    authMethod: java.lang.String = null,
+    bcc: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address | (js.Array[java.lang.String | nodemailerLib.libMailerMod.MailNs.Address]) = null,
+    cc: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address | (js.Array[java.lang.String | nodemailerLib.libMailerMod.MailNs.Address]) = null,
+    component: java.lang.String = null,
+    connection: nodeLib.netMod.Socket = null,
+    connectionTimeout: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.ms] = js.undefined,
+    date: stdLib.Date | java.lang.String = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    disableFileAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    disableUrlAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    dkim: nodemailerLib.libDkimMod.DKIMNs.Options = null,
+    dsn: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.DSNOptions = null,
+    encoding: java.lang.String = null,
+    envelope: nodemailerLib.libMailerMod.MailNs.Envelope | nodemailerLib.libMimeDashNodeMod.MimeNodeNs.Envelope = null,
+    from: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address = null,
+    getSocket: js.Function2[
+      Options, 
+      /* callback */ js.Function2[/* err */ nodeLib.Error | scala.Null, /* socketOptions */ js.Any, scala.Unit], 
+      scala.Unit
+    ] = null,
+    greetingTimeout: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.ms] = js.undefined,
+    headers: nodemailerLib.libMailerMod.MailNs.Headers = null,
+    host: java.lang.String = null,
+    html: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.MailNs.AttachmentLike = null,
+    icalEvent: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.MailNs.IcalAttachment = null,
+    ignoreTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    inReplyTo: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address = null,
+    list: nodemailerLib.libMailerMod.MailNs.ListHeaders = null,
+    localAddress: java.lang.String = null,
+    logger: nodemailerLib.libSharedMod.Logger | scala.Boolean = null,
+    maxConnections: scala.Int | scala.Double = null,
+    maxMessages: scala.Int | scala.Double = null,
+    messageId: java.lang.String = null,
+    name: java.lang.String = null,
+    normalizeHeaderKey: js.Function1[/* key */ java.lang.String, java.lang.String] = null,
+    opportunisticTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Int | scala.Double = null,
+    rateDelta: scala.Int | scala.Double = null,
+    rateLimit: scala.Int | scala.Double = null,
+    raw: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.MailNs.AttachmentLike = null,
+    references: java.lang.String | js.Array[java.lang.String] = null,
+    replyTo: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address = null,
+    requireTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    sender: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address = null,
+    service: java.lang.String = null,
+    socket: nodeLib.netMod.Socket = null,
+    socketTimeout: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.ms] = js.undefined,
+    subject: java.lang.String = null,
+    text: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.MailNs.AttachmentLike = null,
+    textEncoding: nodemailerLib.libMailerMod.MailNs.TextEncoding = null,
+    tls: nodeLib.tlsMod.ConnectionOptions = null,
+    to: java.lang.String | nodemailerLib.libMailerMod.MailNs.Address | (js.Array[java.lang.String | nodemailerLib.libMailerMod.MailNs.Address]) = null,
+    transactionLog: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null,
+    watchHtml: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.MailNs.AttachmentLike = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pool")(pool)
+    if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod)
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
+    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(disableFileAccess)) __obj.updateDynamic("disableFileAccess")(disableFileAccess)
+    if (!js.isUndefined(disableUrlAccess)) __obj.updateDynamic("disableUrlAccess")(disableUrlAccess)
+    if (dkim != null) __obj.updateDynamic("dkim")(dkim)
+    if (dsn != null) __obj.updateDynamic("dsn")(dsn)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (envelope != null) __obj.updateDynamic("envelope")(envelope.asInstanceOf[js.Any])
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (getSocket != null) __obj.updateDynamic("getSocket")(getSocket)
+    if (!js.isUndefined(greetingTimeout)) __obj.updateDynamic("greetingTimeout")(greetingTimeout)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    if (icalEvent != null) __obj.updateDynamic("icalEvent")(icalEvent.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS)
+    if (inReplyTo != null) __obj.updateDynamic("inReplyTo")(inReplyTo.asInstanceOf[js.Any])
+    if (list != null) __obj.updateDynamic("list")(list)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
+    if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (normalizeHeaderKey != null) __obj.updateDynamic("normalizeHeaderKey")(normalizeHeaderKey)
+    if (!js.isUndefined(opportunisticTLS)) __obj.updateDynamic("opportunisticTLS")(opportunisticTLS)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (rateDelta != null) __obj.updateDynamic("rateDelta")(rateDelta.asInstanceOf[js.Any])
+    if (rateLimit != null) __obj.updateDynamic("rateLimit")(rateLimit.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireTLS)) __obj.updateDynamic("requireTLS")(requireTLS)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textEncoding != null) __obj.updateDynamic("textEncoding")(textEncoding)
+    if (tls != null) __obj.updateDynamic("tls")(tls)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(transactionLog)) __obj.updateDynamic("transactionLog")(transactionLog)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (watchHtml != null) __obj.updateDynamic("watchHtml")(watchHtml.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

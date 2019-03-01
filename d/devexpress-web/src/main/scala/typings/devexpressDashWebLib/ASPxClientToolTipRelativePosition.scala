@@ -21,3 +21,13 @@ trait ASPxClientToolTipRelativePosition extends ASPxClientToolTipPosition {
   var offsetY: scala.Double
 }
 
+object ASPxClientToolTipRelativePosition {
+  @scala.inline
+  def apply(offsetX: scala.Double, offsetY: scala.Double): ASPxClientToolTipRelativePosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offsetX")(offsetX)
+    __obj.updateDynamic("offsetY")(offsetY)
+    __obj.asInstanceOf[ASPxClientToolTipRelativePosition]
+  }
+}
+

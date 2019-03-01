@@ -10,3 +10,13 @@ trait IMixinStatic extends js.Object {
   def includeInto(constructor: js.Any): scala.Unit
 }
 
+object IMixinStatic {
+  @scala.inline
+  def apply(extend: js.Function1[js.Any, scala.Unit], includeInto: js.Function1[js.Any, scala.Unit]): IMixinStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extend")(extend)
+    __obj.updateDynamic("includeInto")(includeInto)
+    __obj.asInstanceOf[IMixinStatic]
+  }
+}
+

@@ -111,3 +111,64 @@ trait StackState extends js.Object {
   val vpcId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object StackState {
+  @scala.inline
+  def apply(
+    agentVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    berkshelfVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    color: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    configurationManagerName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    configurationManagerVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customCookbooksSources: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_PasswordRevisionSshKeyTypeUrl]
+      ]
+    ] = null,
+    customJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultAvailabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultInstanceProfileArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultOs: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultRootDeviceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultSshKeyName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultSubnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hostnameTheme: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    manageBerkshelf: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    region: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    serviceRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    stackEndpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    useCustomCookbooks: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    useOpsworksSecurityGroups: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): StackState = {
+    val __obj = js.Dynamic.literal()
+    if (agentVersion != null) __obj.updateDynamic("agentVersion")(agentVersion.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (berkshelfVersion != null) __obj.updateDynamic("berkshelfVersion")(berkshelfVersion.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (configurationManagerName != null) __obj.updateDynamic("configurationManagerName")(configurationManagerName.asInstanceOf[js.Any])
+    if (configurationManagerVersion != null) __obj.updateDynamic("configurationManagerVersion")(configurationManagerVersion.asInstanceOf[js.Any])
+    if (customCookbooksSources != null) __obj.updateDynamic("customCookbooksSources")(customCookbooksSources.asInstanceOf[js.Any])
+    if (customJson != null) __obj.updateDynamic("customJson")(customJson.asInstanceOf[js.Any])
+    if (defaultAvailabilityZone != null) __obj.updateDynamic("defaultAvailabilityZone")(defaultAvailabilityZone.asInstanceOf[js.Any])
+    if (defaultInstanceProfileArn != null) __obj.updateDynamic("defaultInstanceProfileArn")(defaultInstanceProfileArn.asInstanceOf[js.Any])
+    if (defaultOs != null) __obj.updateDynamic("defaultOs")(defaultOs.asInstanceOf[js.Any])
+    if (defaultRootDeviceType != null) __obj.updateDynamic("defaultRootDeviceType")(defaultRootDeviceType.asInstanceOf[js.Any])
+    if (defaultSshKeyName != null) __obj.updateDynamic("defaultSshKeyName")(defaultSshKeyName.asInstanceOf[js.Any])
+    if (defaultSubnetId != null) __obj.updateDynamic("defaultSubnetId")(defaultSubnetId.asInstanceOf[js.Any])
+    if (hostnameTheme != null) __obj.updateDynamic("hostnameTheme")(hostnameTheme.asInstanceOf[js.Any])
+    if (manageBerkshelf != null) __obj.updateDynamic("manageBerkshelf")(manageBerkshelf.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (serviceRoleArn != null) __obj.updateDynamic("serviceRoleArn")(serviceRoleArn.asInstanceOf[js.Any])
+    if (stackEndpoint != null) __obj.updateDynamic("stackEndpoint")(stackEndpoint.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (useCustomCookbooks != null) __obj.updateDynamic("useCustomCookbooks")(useCustomCookbooks.asInstanceOf[js.Any])
+    if (useOpsworksSecurityGroups != null) __obj.updateDynamic("useOpsworksSecurityGroups")(useOpsworksSecurityGroups.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StackState]
+  }
+}
+

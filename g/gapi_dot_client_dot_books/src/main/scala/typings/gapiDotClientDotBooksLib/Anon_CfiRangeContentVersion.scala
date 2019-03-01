@@ -16,3 +16,20 @@ trait Anon_CfiRangeContentVersion extends js.Object {
   var gbTextRange: js.UndefOr[gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange] = js.undefined
 }
 
+object Anon_CfiRangeContentVersion {
+  @scala.inline
+  def apply(
+    cfiRange: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange = null,
+    contentVersion: java.lang.String = null,
+    gbImageRange: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange = null,
+    gbTextRange: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange = null
+  ): Anon_CfiRangeContentVersion = {
+    val __obj = js.Dynamic.literal()
+    if (cfiRange != null) __obj.updateDynamic("cfiRange")(cfiRange)
+    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion)
+    if (gbImageRange != null) __obj.updateDynamic("gbImageRange")(gbImageRange)
+    if (gbTextRange != null) __obj.updateDynamic("gbTextRange")(gbTextRange)
+    __obj.asInstanceOf[Anon_CfiRangeContentVersion]
+  }
+}
+

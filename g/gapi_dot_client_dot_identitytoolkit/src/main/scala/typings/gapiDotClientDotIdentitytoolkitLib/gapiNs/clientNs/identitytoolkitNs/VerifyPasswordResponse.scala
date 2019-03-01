@@ -32,3 +32,36 @@ trait VerifyPasswordResponse extends js.Object {
   var registered: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object VerifyPasswordResponse {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    email: java.lang.String = null,
+    expiresIn: java.lang.String = null,
+    idToken: java.lang.String = null,
+    kind: java.lang.String = null,
+    localId: java.lang.String = null,
+    oauthAccessToken: java.lang.String = null,
+    oauthAuthorizationCode: java.lang.String = null,
+    oauthExpireIn: scala.Int | scala.Double = null,
+    photoUrl: java.lang.String = null,
+    refreshToken: java.lang.String = null,
+    registered: js.UndefOr[scala.Boolean] = js.undefined
+  ): VerifyPasswordResponse = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (localId != null) __obj.updateDynamic("localId")(localId)
+    if (oauthAccessToken != null) __obj.updateDynamic("oauthAccessToken")(oauthAccessToken)
+    if (oauthAuthorizationCode != null) __obj.updateDynamic("oauthAuthorizationCode")(oauthAuthorizationCode)
+    if (oauthExpireIn != null) __obj.updateDynamic("oauthExpireIn")(oauthExpireIn.asInstanceOf[js.Any])
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (!js.isUndefined(registered)) __obj.updateDynamic("registered")(registered)
+    __obj.asInstanceOf[VerifyPasswordResponse]
+  }
+}
+

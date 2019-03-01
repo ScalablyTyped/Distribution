@@ -10,3 +10,12 @@ trait SpliceCommand extends js.Object {
   var $splice: js.Array[js.Array[_]]
 }
 
+object SpliceCommand {
+  @scala.inline
+  def apply($splice: js.Array[js.Array[_]]): SpliceCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$splice")($splice)
+    __obj.asInstanceOf[SpliceCommand]
+  }
+}
+

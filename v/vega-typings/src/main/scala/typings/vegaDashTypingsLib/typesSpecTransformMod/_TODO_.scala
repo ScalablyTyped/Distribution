@@ -10,3 +10,12 @@ trait `_TODO_`[Type /* <: java.lang.String */]
   var `type`: Type
 }
 
+object `_TODO_` {
+  @scala.inline
+  def apply[Type /* <: java.lang.String */](`type`: Type, StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] = null): `_TODO_`[Type] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[`_TODO_`[Type]]
+  }
+}
+

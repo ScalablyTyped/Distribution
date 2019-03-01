@@ -26,3 +26,30 @@ trait DeserializeOptions extends js.Object {
   var promoteValues: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DeserializeOptions {
+  @scala.inline
+  def apply(
+    allowObjectSmallerThanBufferSize: js.UndefOr[scala.Boolean] = js.undefined,
+    bsonRegExp: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheFunctions: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheFunctionsCrc32: js.UndefOr[scala.Boolean] = js.undefined,
+    evalFunctions: js.UndefOr[scala.Boolean] = js.undefined,
+    fieldsAsRaw: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    promoteBuffers: js.UndefOr[scala.Boolean] = js.undefined,
+    promoteLongs: js.UndefOr[scala.Boolean] = js.undefined,
+    promoteValues: js.UndefOr[scala.Boolean] = js.undefined
+  ): DeserializeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowObjectSmallerThanBufferSize)) __obj.updateDynamic("allowObjectSmallerThanBufferSize")(allowObjectSmallerThanBufferSize)
+    if (!js.isUndefined(bsonRegExp)) __obj.updateDynamic("bsonRegExp")(bsonRegExp)
+    if (!js.isUndefined(cacheFunctions)) __obj.updateDynamic("cacheFunctions")(cacheFunctions)
+    if (!js.isUndefined(cacheFunctionsCrc32)) __obj.updateDynamic("cacheFunctionsCrc32")(cacheFunctionsCrc32)
+    if (!js.isUndefined(evalFunctions)) __obj.updateDynamic("evalFunctions")(evalFunctions)
+    if (fieldsAsRaw != null) __obj.updateDynamic("fieldsAsRaw")(fieldsAsRaw)
+    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers)
+    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
+    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
+    __obj.asInstanceOf[DeserializeOptions]
+  }
+}
+

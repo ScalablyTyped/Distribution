@@ -11,3 +11,13 @@ trait OptionsKeys extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OptionsKeys {
+  @scala.inline
+  def apply(label: java.lang.String = null, value: java.lang.String = null): OptionsKeys = {
+    val __obj = js.Dynamic.literal()
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[OptionsKeys]
+  }
+}
+

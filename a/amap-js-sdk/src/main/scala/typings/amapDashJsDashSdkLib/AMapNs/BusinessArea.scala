@@ -11,3 +11,14 @@ trait BusinessArea extends js.Object {
   var name: java.lang.String
 }
 
+object BusinessArea {
+  @scala.inline
+  def apply(id: java.lang.String, location: java.lang.String, name: java.lang.String): BusinessArea = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[BusinessArea]
+  }
+}
+

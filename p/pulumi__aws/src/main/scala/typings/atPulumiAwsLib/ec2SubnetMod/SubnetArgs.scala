@@ -45,3 +45,28 @@ trait SubnetArgs extends js.Object {
   val vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object SubnetArgs {
+  @scala.inline
+  def apply(
+    cidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    assignIpv6AddressOnCreation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    availabilityZoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipv6CidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    mapPublicIpOnLaunch: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): SubnetArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
+    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    if (assignIpv6AddressOnCreation != null) __obj.updateDynamic("assignIpv6AddressOnCreation")(assignIpv6AddressOnCreation.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (availabilityZoneId != null) __obj.updateDynamic("availabilityZoneId")(availabilityZoneId.asInstanceOf[js.Any])
+    if (ipv6CidrBlock != null) __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock.asInstanceOf[js.Any])
+    if (mapPublicIpOnLaunch != null) __obj.updateDynamic("mapPublicIpOnLaunch")(mapPublicIpOnLaunch.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SubnetArgs]
+  }
+}
+

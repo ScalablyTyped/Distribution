@@ -37,3 +37,33 @@ trait Anon_DocumentUrlFrameIdMethod extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_DocumentUrlFrameIdMethod {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    method: java.lang.String,
+    parentFrameId: scala.Double,
+    requestId: java.lang.String,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    `type`: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType,
+    url: java.lang.String,
+    documentUrl: java.lang.String = null,
+    originUrl: java.lang.String = null,
+    requestHeaders: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.HttpHeaders = null
+  ): Anon_DocumentUrlFrameIdMethod = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("frameId")(frameId)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("parentFrameId")(parentFrameId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("url")(url)
+    if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
+    if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
+    __obj.asInstanceOf[Anon_DocumentUrlFrameIdMethod]
+  }
+}
+

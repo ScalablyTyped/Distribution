@@ -21,3 +21,13 @@ trait ASPxClientTreeListCellInfo extends js.Object {
   var nodeKey: java.lang.String
 }
 
+object ASPxClientTreeListCellInfo {
+  @scala.inline
+  def apply(column: ASPxClientTreeListColumn, nodeKey: java.lang.String): ASPxClientTreeListCellInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("nodeKey")(nodeKey)
+    __obj.asInstanceOf[ASPxClientTreeListCellInfo]
+  }
+}
+

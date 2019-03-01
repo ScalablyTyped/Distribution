@@ -44,3 +44,38 @@ trait InstanceGroup extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstanceGroup {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    fingerprint: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    namedPorts: js.Array[NamedPort] = null,
+    network: java.lang.String = null,
+    region: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    subnetwork: java.lang.String = null,
+    zone: java.lang.String = null
+  ): InstanceGroup = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (namedPorts != null) __obj.updateDynamic("namedPorts")(namedPorts)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[InstanceGroup]
+  }
+}
+

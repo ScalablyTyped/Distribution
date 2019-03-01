@@ -52,3 +52,37 @@ trait OlapFlatDataSourceOptions
   var rows: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OlapFlatDataSourceOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for OlapFlatDataSourceOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columns: java.lang.String = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    filters: java.lang.String = null,
+    measures: java.lang.String = null,
+    metadata: OlapFlatDataSourceOptionsMetadata = null,
+    responseDataKey: java.lang.String = null,
+    responseDataType: java.lang.String = null,
+    rows: java.lang.String = null
+  ): OlapFlatDataSourceOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (measures != null) __obj.updateDynamic("measures")(measures)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[OlapFlatDataSourceOptions]
+  }
+}
+

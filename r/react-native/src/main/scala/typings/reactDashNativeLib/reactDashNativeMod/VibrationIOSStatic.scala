@@ -12,3 +12,12 @@ trait VibrationIOSStatic extends js.Object {
   def vibrate(): scala.Unit
 }
 
+object VibrationIOSStatic {
+  @scala.inline
+  def apply(vibrate: js.Function0[scala.Unit]): VibrationIOSStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("vibrate")(vibrate)
+    __obj.asInstanceOf[VibrationIOSStatic]
+  }
+}
+

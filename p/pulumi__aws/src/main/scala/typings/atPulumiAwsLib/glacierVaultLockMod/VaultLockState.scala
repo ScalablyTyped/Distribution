@@ -24,3 +24,20 @@ trait VaultLockState extends js.Object {
   val vaultName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object VaultLockState {
+  @scala.inline
+  def apply(
+    completeLock: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    ignoreDeletionError: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vaultName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): VaultLockState = {
+    val __obj = js.Dynamic.literal()
+    if (completeLock != null) __obj.updateDynamic("completeLock")(completeLock.asInstanceOf[js.Any])
+    if (ignoreDeletionError != null) __obj.updateDynamic("ignoreDeletionError")(ignoreDeletionError.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (vaultName != null) __obj.updateDynamic("vaultName")(vaultName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VaultLockState]
+  }
+}
+

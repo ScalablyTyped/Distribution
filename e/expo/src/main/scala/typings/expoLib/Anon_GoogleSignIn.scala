@@ -10,3 +10,16 @@ trait Anon_GoogleSignIn extends js.Object {
   var usesNonExemptEncryption: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_GoogleSignIn {
+  @scala.inline
+  def apply(
+    googleSignIn: Anon_ReservedClientId = null,
+    usesNonExemptEncryption: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_GoogleSignIn = {
+    val __obj = js.Dynamic.literal()
+    if (googleSignIn != null) __obj.updateDynamic("googleSignIn")(googleSignIn)
+    if (!js.isUndefined(usesNonExemptEncryption)) __obj.updateDynamic("usesNonExemptEncryption")(usesNonExemptEncryption)
+    __obj.asInstanceOf[Anon_GoogleSignIn]
+  }
+}
+

@@ -12,3 +12,15 @@ trait DataStoreCallbackData extends js.Object {
   var value: js.Any
 }
 
+object DataStoreCallbackData {
+  @scala.inline
+  def apply(err: java.lang.String, id: java.lang.String, path: java.lang.String, value: js.Any): DataStoreCallbackData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("err")(err)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DataStoreCallbackData]
+  }
+}
+

@@ -20,3 +20,13 @@ trait IPanelProps extends js.Object {
   def openPanel[P](panel: IPanel[P]): scala.Unit
 }
 
+object IPanelProps {
+  @scala.inline
+  def apply(closePanel: js.Function0[scala.Unit], openPanel: js.Function1[IPanel[js.Any], scala.Unit]): IPanelProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("closePanel")(closePanel)
+    __obj.updateDynamic("openPanel")(openPanel)
+    __obj.asInstanceOf[IPanelProps]
+  }
+}
+

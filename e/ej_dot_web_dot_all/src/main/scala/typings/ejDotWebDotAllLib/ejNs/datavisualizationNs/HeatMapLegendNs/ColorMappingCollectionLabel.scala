@@ -37,3 +37,26 @@ trait ColorMappingCollectionLabel extends js.Object {
   ] = js.undefined
 }
 
+object ColorMappingCollectionLabel {
+  @scala.inline
+  def apply(
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    fontColor: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null,
+    textDecoration: ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapNs.TextDecoration | java.lang.String = null
+  ): ColorMappingCollectionLabel = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColorMappingCollectionLabel]
+  }
+}
+

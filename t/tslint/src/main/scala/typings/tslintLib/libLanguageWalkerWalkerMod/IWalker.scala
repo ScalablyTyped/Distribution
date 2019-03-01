@@ -11,3 +11,18 @@ trait IWalker extends js.Object {
   def walk(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): scala.Unit
 }
 
+object IWalker {
+  @scala.inline
+  def apply(
+    getFailures: js.Function0[js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure]],
+    getSourceFile: js.Function0[typescriptLib.typescriptMod.tsNs.SourceFile],
+    walk: js.Function1[typescriptLib.typescriptMod.tsNs.SourceFile, scala.Unit]
+  ): IWalker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getFailures")(getFailures)
+    __obj.updateDynamic("getSourceFile")(getSourceFile)
+    __obj.updateDynamic("walk")(walk)
+    __obj.asInstanceOf[IWalker]
+  }
+}
+

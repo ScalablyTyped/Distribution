@@ -40,3 +40,44 @@ trait DynaTreeDataModel extends js.Object {
   var unselectable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DynaTreeDataModel {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    activate: js.UndefOr[scala.Boolean] = js.undefined,
+    addClass: java.lang.String = null,
+    children: js.Array[DynaTreeDataModel] = null,
+    expand: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: js.UndefOr[scala.Boolean] = js.undefined,
+    hideCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    href: java.lang.String = null,
+    icon: java.lang.String = null,
+    isFolder: js.UndefOr[scala.Boolean] = js.undefined,
+    isLazy: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    noLink: js.UndefOr[scala.Boolean] = js.undefined,
+    select: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltip: java.lang.String = null,
+    unselectable: js.UndefOr[scala.Boolean] = js.undefined
+  ): DynaTreeDataModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
+    if (addClass != null) __obj.updateDynamic("addClass")(addClass)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand)
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
+    if (!js.isUndefined(hideCheckbox)) __obj.updateDynamic("hideCheckbox")(hideCheckbox)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (!js.isUndefined(isFolder)) __obj.updateDynamic("isFolder")(isFolder)
+    if (!js.isUndefined(isLazy)) __obj.updateDynamic("isLazy")(isLazy)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(noLink)) __obj.updateDynamic("noLink")(noLink)
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable)
+    __obj.asInstanceOf[DynaTreeDataModel]
+  }
+}
+

@@ -7,40 +7,53 @@ import scala.scalajs.js.annotation._
 
 object atAtlaskitButtonLibStrings {
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonType
   
   @js.native
-  sealed trait compact extends js.Object
+  sealed trait compact
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonSpacing
   
   @js.native
-  sealed trait danger extends js.Object
+  sealed trait danger
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonAppearances
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonAppearances
+       with atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonSpacing
   
   @js.native
-  sealed trait help extends js.Object
+  sealed trait help
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonAppearances
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonAppearances
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonSpacing
   
   @js.native
-  sealed trait primary extends js.Object
+  sealed trait primary
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonAppearances
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonType
   
   @js.native
-  sealed trait subtle extends js.Object
+  sealed trait subtle
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonAppearances
   
   @js.native
-  sealed trait `subtle-link` extends js.Object
+  sealed trait `subtle-link`
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonAppearances
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends atAtlaskitButtonLib.atAtlaskitButtonMod.ButtonAppearances
   
   @scala.inline
   def button: button = "button".asInstanceOf[button]

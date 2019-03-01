@@ -16,3 +16,28 @@ trait Anon_AutostemClef extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AutostemClef {
+  @scala.inline
+  def apply(
+    duration: java.lang.String,
+    keys: js.Array[java.lang.String],
+    auto_stem: js.UndefOr[scala.Boolean] = js.undefined,
+    clef: java.lang.String = null,
+    dots: scala.Int | scala.Double = null,
+    octave_shift: scala.Int | scala.Double = null,
+    stem_direction: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): Anon_AutostemClef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("keys")(keys)
+    if (!js.isUndefined(auto_stem)) __obj.updateDynamic("auto_stem")(auto_stem)
+    if (clef != null) __obj.updateDynamic("clef")(clef)
+    if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
+    if (octave_shift != null) __obj.updateDynamic("octave_shift")(octave_shift.asInstanceOf[js.Any])
+    if (stem_direction != null) __obj.updateDynamic("stem_direction")(stem_direction.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_AutostemClef]
+  }
+}
+

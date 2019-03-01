@@ -42,3 +42,28 @@ trait Anon_Classes extends js.Object {
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Classes {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    $scope: angularLib.angularMod.angularNs.IScope = null,
+    classes: java.lang.String = null,
+    container: js.Any = null,
+    duration: scala.Int | scala.Double = null,
+    messageTemplate: java.lang.String = null,
+    position: java.lang.String = null,
+    templateUrl: java.lang.String = null
+  ): Anon_Classes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    if ($scope != null) __obj.updateDynamic("$scope")($scope)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (messageTemplate != null) __obj.updateDynamic("messageTemplate")(messageTemplate)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    __obj.asInstanceOf[Anon_Classes]
+  }
+}
+

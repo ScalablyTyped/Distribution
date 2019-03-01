@@ -24,3 +24,20 @@ trait RellaxInstance extends js.Object {
   def refresh(): scala.Unit
 }
 
+object RellaxInstance {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    elms: stdLib.NodeListOf[stdLib.Element] | js.Array[stdLib.Element],
+    options: RellaxOptions,
+    refresh: js.Function0[scala.Unit]
+  ): RellaxInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("elms")(elms.asInstanceOf[js.Any])
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("refresh")(refresh)
+    __obj.asInstanceOf[RellaxInstance]
+  }
+}
+

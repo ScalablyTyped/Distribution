@@ -18,3 +18,22 @@ trait Tier extends js.Object {
   var tier: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Tier {
+  @scala.inline
+  def apply(
+    DiskQuota: java.lang.String = null,
+    RAM: java.lang.String = null,
+    kind: java.lang.String = null,
+    region: js.Array[java.lang.String] = null,
+    tier: java.lang.String = null
+  ): Tier = {
+    val __obj = js.Dynamic.literal()
+    if (DiskQuota != null) __obj.updateDynamic("DiskQuota")(DiskQuota)
+    if (RAM != null) __obj.updateDynamic("RAM")(RAM)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (tier != null) __obj.updateDynamic("tier")(tier)
+    __obj.asInstanceOf[Tier]
+  }
+}
+

@@ -29,3 +29,22 @@ trait DOMPointReadOnly extends js.Object {
   def matrixTransform(matrix: DOMMatrixReadOnly): DOMPoint
 }
 
+object DOMPointReadOnly {
+  @scala.inline
+  def apply(
+    matrixTransform: js.Function1[DOMMatrixReadOnly, DOMPoint],
+    w: scala.Double,
+    x: scala.Double,
+    y: scala.Double,
+    z: scala.Double
+  ): DOMPointReadOnly = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("matrixTransform")(matrixTransform)
+    __obj.updateDynamic("w")(w)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("z")(z)
+    __obj.asInstanceOf[DOMPointReadOnly]
+  }
+}
+

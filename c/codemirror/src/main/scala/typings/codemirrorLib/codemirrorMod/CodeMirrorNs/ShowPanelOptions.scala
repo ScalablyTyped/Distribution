@@ -25,3 +25,22 @@ trait ShowPanelOptions extends js.Object {
   var stable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ShowPanelOptions {
+  @scala.inline
+  def apply(
+    after: Panel = null,
+    before: Panel = null,
+    position: codemirrorLib.codemirrorLibStrings.top | codemirrorLib.codemirrorLibStrings.`after-top` | codemirrorLib.codemirrorLibStrings.bottom | codemirrorLib.codemirrorLibStrings.`before-bottom` = null,
+    replace: Panel = null,
+    stable: js.UndefOr[scala.Boolean] = js.undefined
+  ): ShowPanelOptions = {
+    val __obj = js.Dynamic.literal()
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (!js.isUndefined(stable)) __obj.updateDynamic("stable")(stable)
+    __obj.asInstanceOf[ShowPanelOptions]
+  }
+}
+

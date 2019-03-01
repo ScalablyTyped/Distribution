@@ -9,3 +9,12 @@ trait Anon_Transforms extends js.Object {
   var transforms: js.Array[graphqlDashToolsLib.distInterfacesMod.Transform]
 }
 
+object Anon_Transforms {
+  @scala.inline
+  def apply(transforms: js.Array[graphqlDashToolsLib.distInterfacesMod.Transform]): Anon_Transforms = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transforms")(transforms)
+    __obj.asInstanceOf[Anon_Transforms]
+  }
+}
+

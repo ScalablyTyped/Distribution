@@ -11,3 +11,14 @@ trait FontMetrics extends js.Object {
   var fontSize: scala.Double
 }
 
+object FontMetrics {
+  @scala.inline
+  def apply(ascent: scala.Double, descent: scala.Double, fontSize: scala.Double): FontMetrics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ascent")(ascent)
+    __obj.updateDynamic("descent")(descent)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.asInstanceOf[FontMetrics]
+  }
+}
+

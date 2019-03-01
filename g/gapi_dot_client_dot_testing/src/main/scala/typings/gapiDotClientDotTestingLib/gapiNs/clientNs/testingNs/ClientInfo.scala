@@ -15,3 +15,13 @@ trait ClientInfo extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientInfo {
+  @scala.inline
+  def apply(clientInfoDetails: js.Array[ClientInfoDetail] = null, name: java.lang.String = null): ClientInfo = {
+    val __obj = js.Dynamic.literal()
+    if (clientInfoDetails != null) __obj.updateDynamic("clientInfoDetails")(clientInfoDetails)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ClientInfo]
+  }
+}
+

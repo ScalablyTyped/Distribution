@@ -15,3 +15,26 @@ trait ScreenshotsConfig extends js.Object {
   var timestamps: js.UndefOr[js.Array[scala.Double] | js.Array[java.lang.String]] = js.undefined
 }
 
+object ScreenshotsConfig {
+  @scala.inline
+  def apply(
+    count: scala.Int | scala.Double = null,
+    fastSeek: js.UndefOr[scala.Boolean] = js.undefined,
+    filename: java.lang.String = null,
+    folder: java.lang.String = null,
+    size: java.lang.String = null,
+    timemarks: js.Array[scala.Double] | js.Array[java.lang.String] = null,
+    timestamps: js.Array[scala.Double] | js.Array[java.lang.String] = null
+  ): ScreenshotsConfig = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastSeek)) __obj.updateDynamic("fastSeek")(fastSeek)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (folder != null) __obj.updateDynamic("folder")(folder)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (timemarks != null) __obj.updateDynamic("timemarks")(timemarks.asInstanceOf[js.Any])
+    if (timestamps != null) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScreenshotsConfig]
+  }
+}
+

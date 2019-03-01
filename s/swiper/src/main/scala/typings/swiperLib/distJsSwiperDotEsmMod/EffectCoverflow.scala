@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "EffectCoverflow")
 @js.native
-class EffectCoverflow () extends js.Object
+class EffectCoverflow ()
+  extends swiperLib.swiperMod.SwiperModule
 

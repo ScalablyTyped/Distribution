@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- fabricLib.fabricDashImplMod.IPolylineOptions because var conflicts: aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, oCoords, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined points, minX, minY */ @JSImport("fabric/fabric-impl", "Polyline")
+- fabricLib.fabricDashImplMod.IPolylineOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined points */ @JSImport("fabric/fabric-impl", "Polyline")
 @js.native
 class Polyline protected () extends Object {
   /**
@@ -18,26 +18,9 @@ class Polyline protected () extends Object {
   def this(points: js.Array[fabricLib.Anon_X]) = this()
   def this(points: js.Array[fabricLib.Anon_X], options: IPolylineOptions) = this()
   /**
-  	 * Minimum X from points values, necessary to offset points
-  	 */
-  var minX: js.UndefOr[scala.Double] = js.native
-  /**
-  	 * Minimum Y from points values, necessary to offset points
-  	 */
-  var minY: js.UndefOr[scala.Double] = js.native
-  /**
   	 * Points array
   	 */
   var points: js.UndefOr[js.Array[Point]] = js.native
-  def initialize(points: js.Array[Point]): scala.Unit = js.native
-  def initialize(points: js.Array[Point], options: IPolylineOptions): scala.Unit = js.native
-  /**
-  	 * Returns SVG representation of an instance
-  	 * @param [reviver] Method for further parsing of svg representation.
-  	 * @return svg representation of an instance
-  	 */
-  def toSVG(): java.lang.String = js.native
-  def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
 /* static members */

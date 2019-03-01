@@ -30,3 +30,18 @@ trait RoboDirective extends js.Object {
   var resourceName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RoboDirective {
+  @scala.inline
+  def apply(
+    actionType: java.lang.String = null,
+    inputText: java.lang.String = null,
+    resourceName: java.lang.String = null
+  ): RoboDirective = {
+    val __obj = js.Dynamic.literal()
+    if (actionType != null) __obj.updateDynamic("actionType")(actionType)
+    if (inputText != null) __obj.updateDynamic("inputText")(inputText)
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
+    __obj.asInstanceOf[RoboDirective]
+  }
+}
+

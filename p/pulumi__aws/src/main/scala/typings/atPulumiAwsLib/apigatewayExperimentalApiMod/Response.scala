@@ -12,3 +12,20 @@ trait Response extends js.Object {
   var statusCode: scala.Double
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    statusCode: scala.Double,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    isBase64Encoded: js.UndefOr[scala.Boolean] = js.undefined
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("statusCode")(statusCode)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(isBase64Encoded)) __obj.updateDynamic("isBase64Encoded")(isBase64Encoded)
+    __obj.asInstanceOf[Response]
+  }
+}
+

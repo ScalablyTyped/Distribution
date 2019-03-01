@@ -25,3 +25,18 @@ trait Anon_AutoEnable extends js.Object {
   ] = js.undefined
 }
 
+object Anon_AutoEnable {
+  @scala.inline
+  def apply(
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollAmount: mcustomscrollbarLib.mcustomscrollbarLibStrings.auto | scala.Double = null,
+    scrollType: mcustomscrollbarLib.mcustomscrollbarLibStrings.stepless | mcustomscrollbarLib.mcustomscrollbarLibStrings.stepped = null
+  ): Anon_AutoEnable = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (scrollAmount != null) __obj.updateDynamic("scrollAmount")(scrollAmount.asInstanceOf[js.Any])
+    if (scrollType != null) __obj.updateDynamic("scrollType")(scrollType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AutoEnable]
+  }
+}
+

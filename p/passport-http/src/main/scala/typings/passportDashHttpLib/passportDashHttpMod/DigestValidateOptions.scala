@@ -12,3 +12,15 @@ trait DigestValidateOptions extends js.Object {
   var opaque: java.lang.String
 }
 
+object DigestValidateOptions {
+  @scala.inline
+  def apply(cnonce: java.lang.String, nc: scala.Double, nonce: java.lang.String, opaque: java.lang.String): DigestValidateOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cnonce")(cnonce)
+    __obj.updateDynamic("nc")(nc)
+    __obj.updateDynamic("nonce")(nonce)
+    __obj.updateDynamic("opaque")(opaque)
+    __obj.asInstanceOf[DigestValidateOptions]
+  }
+}
+

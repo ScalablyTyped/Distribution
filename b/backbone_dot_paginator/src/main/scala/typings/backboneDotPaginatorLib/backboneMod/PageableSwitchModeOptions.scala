@@ -10,3 +10,16 @@ trait PageableSwitchModeOptions extends js.Object {
   var resetState: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PageableSwitchModeOptions {
+  @scala.inline
+  def apply(
+    fetch: js.UndefOr[scala.Boolean] = js.undefined,
+    resetState: js.UndefOr[scala.Boolean] = js.undefined
+  ): PageableSwitchModeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(fetch)) __obj.updateDynamic("fetch")(fetch)
+    if (!js.isUndefined(resetState)) __obj.updateDynamic("resetState")(resetState)
+    __obj.asInstanceOf[PageableSwitchModeOptions]
+  }
+}
+

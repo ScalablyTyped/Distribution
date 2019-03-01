@@ -40,3 +40,28 @@ trait Options extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    align: AlignType = null,
+    allow_dismiss: js.UndefOr[scala.Boolean] = js.undefined,
+    delay: scala.Int | scala.Double = null,
+    ele: java.lang.String = null,
+    offset: OffsetOption = null,
+    stackup_spacing: scala.Int | scala.Double = null,
+    `type`: AlertType = null,
+    width: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (!js.isUndefined(allow_dismiss)) __obj.updateDynamic("allow_dismiss")(allow_dismiss)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (ele != null) __obj.updateDynamic("ele")(ele)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (stackup_spacing != null) __obj.updateDynamic("stackup_spacing")(stackup_spacing.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

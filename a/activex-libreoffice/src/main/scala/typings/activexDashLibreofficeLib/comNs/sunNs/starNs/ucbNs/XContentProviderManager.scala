@@ -41,3 +41,26 @@ trait XContentProviderManager
   def registerContentProvider(Provider: XContentProvider, Scheme: java.lang.String, ReplaceExisting: scala.Boolean): XContentProvider
 }
 
+object XContentProviderManager {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    deregisterContentProvider: js.Function2[XContentProvider, java.lang.String, scala.Unit],
+    queryContentProvider: js.Function1[java.lang.String, XContentProvider],
+    queryContentProviders: js.Function0[activexDashInteropLib.SafeArray[ContentProviderInfo]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerContentProvider: js.Function3[XContentProvider, java.lang.String, scala.Boolean, XContentProvider],
+    release: js.Function0[scala.Unit]
+  ): XContentProviderManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("deregisterContentProvider")(deregisterContentProvider)
+    __obj.updateDynamic("queryContentProvider")(queryContentProvider)
+    __obj.updateDynamic("queryContentProviders")(queryContentProviders)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerContentProvider")(registerContentProvider)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XContentProviderManager]
+  }
+}
+

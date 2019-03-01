@@ -35,3 +35,17 @@ trait WorksheetSelectionChangedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object WorksheetSelectionChangedEventArgs {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetSelectionChanged,
+    worksheetId: java.lang.String
+  ): WorksheetSelectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("worksheetId")(worksheetId)
+    __obj.asInstanceOf[WorksheetSelectionChangedEventArgs]
+  }
+}
+

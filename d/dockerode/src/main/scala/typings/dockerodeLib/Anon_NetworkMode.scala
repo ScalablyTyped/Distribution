@@ -9,3 +9,12 @@ trait Anon_NetworkMode extends js.Object {
   var NetworkMode: java.lang.String
 }
 
+object Anon_NetworkMode {
+  @scala.inline
+  def apply(NetworkMode: java.lang.String): Anon_NetworkMode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NetworkMode")(NetworkMode)
+    __obj.asInstanceOf[Anon_NetworkMode]
+  }
+}
+

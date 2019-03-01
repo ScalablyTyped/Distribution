@@ -11,3 +11,14 @@ trait PlaybackTrackWindow extends js.Object {
   var previous_tracks: js.Array[Track]
 }
 
+object PlaybackTrackWindow {
+  @scala.inline
+  def apply(current_track: Track, next_tracks: js.Array[Track], previous_tracks: js.Array[Track]): PlaybackTrackWindow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("current_track")(current_track)
+    __obj.updateDynamic("next_tracks")(next_tracks)
+    __obj.updateDynamic("previous_tracks")(previous_tracks)
+    __obj.asInstanceOf[PlaybackTrackWindow]
+  }
+}
+

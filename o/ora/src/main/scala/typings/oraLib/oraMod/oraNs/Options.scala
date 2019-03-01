@@ -64,3 +64,28 @@ trait Options extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    color: Color = null,
+    hideCursor: js.UndefOr[scala.Boolean] = js.undefined,
+    indent: scala.Int | scala.Double = null,
+    interval: scala.Int | scala.Double = null,
+    isEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    spinner: SpinnerName | Spinner = null,
+    stream: nodeLib.NodeJSNs.WritableStream = null,
+    text: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(hideCursor)) __obj.updateDynamic("hideCursor")(hideCursor)
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled)
+    if (spinner != null) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
+    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Options]
+  }
+}
+

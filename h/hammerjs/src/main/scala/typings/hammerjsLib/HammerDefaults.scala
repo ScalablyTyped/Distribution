@@ -22,3 +22,28 @@ trait HammerDefaults extends HammerOptions {
   var touchAction_HammerDefaults: java.lang.String
 }
 
+object HammerDefaults {
+  @scala.inline
+  def apply(
+    cssProps: CssProps,
+    domEvents: scala.Boolean,
+    enable: scala.Boolean,
+    inputClass: HammerInput,
+    inputTarget: stdLib.EventTarget,
+    preset: js.Array[RecognizerTuple],
+    touchAction: java.lang.String,
+    recognizers: js.Array[RecognizerTuple] = null
+  ): HammerDefaults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cssProps")(cssProps)
+    __obj.updateDynamic("domEvents")(domEvents)
+    __obj.updateDynamic("enable")(enable)
+    __obj.updateDynamic("inputClass")(inputClass)
+    __obj.updateDynamic("inputTarget")(inputTarget)
+    __obj.updateDynamic("preset")(preset)
+    __obj.updateDynamic("touchAction")(touchAction)
+    if (recognizers != null) __obj.updateDynamic("recognizers")(recognizers)
+    __obj.asInstanceOf[HammerDefaults]
+  }
+}
+

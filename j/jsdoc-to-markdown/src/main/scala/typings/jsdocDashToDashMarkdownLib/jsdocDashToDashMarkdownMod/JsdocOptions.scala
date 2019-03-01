@@ -28,3 +28,20 @@ trait JsdocOptions extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JsdocOptions {
+  @scala.inline
+  def apply(
+    files: java.lang.String | js.Array[java.lang.String],
+    configure: java.lang.String = null,
+    noCache: js.UndefOr[scala.Boolean] = js.undefined,
+    source: java.lang.String = null
+  ): JsdocOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (configure != null) __obj.updateDynamic("configure")(configure)
+    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[JsdocOptions]
+  }
+}
+

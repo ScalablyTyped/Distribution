@@ -25,3 +25,18 @@ trait AutoFillRequest extends js.Object {
   var useAlternateSeries: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AutoFillRequest {
+  @scala.inline
+  def apply(
+    range: GridRange = null,
+    sourceAndDestination: SourceAndDestination = null,
+    useAlternateSeries: js.UndefOr[scala.Boolean] = js.undefined
+  ): AutoFillRequest = {
+    val __obj = js.Dynamic.literal()
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (sourceAndDestination != null) __obj.updateDynamic("sourceAndDestination")(sourceAndDestination)
+    if (!js.isUndefined(useAlternateSeries)) __obj.updateDynamic("useAlternateSeries")(useAlternateSeries)
+    __obj.asInstanceOf[AutoFillRequest]
+  }
+}
+

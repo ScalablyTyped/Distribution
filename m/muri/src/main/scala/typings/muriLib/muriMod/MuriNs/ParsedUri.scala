@@ -12,3 +12,15 @@ trait ParsedUri extends js.Object {
   var options: js.Any
 }
 
+object ParsedUri {
+  @scala.inline
+  def apply(db: java.lang.String, hosts: js.Array[Host], options: js.Any, auth: muriLib.Anon_Pass = null): ParsedUri = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("db")(db)
+    __obj.updateDynamic("hosts")(hosts)
+    __obj.updateDynamic("options")(options)
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    __obj.asInstanceOf[ParsedUri]
+  }
+}
+

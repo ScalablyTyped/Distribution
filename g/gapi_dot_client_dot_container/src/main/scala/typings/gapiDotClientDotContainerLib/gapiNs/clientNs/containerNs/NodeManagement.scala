@@ -23,3 +23,18 @@ trait NodeManagement extends js.Object {
   var upgradeOptions: js.UndefOr[AutoUpgradeOptions] = js.undefined
 }
 
+object NodeManagement {
+  @scala.inline
+  def apply(
+    autoRepair: js.UndefOr[scala.Boolean] = js.undefined,
+    autoUpgrade: js.UndefOr[scala.Boolean] = js.undefined,
+    upgradeOptions: AutoUpgradeOptions = null
+  ): NodeManagement = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoRepair)) __obj.updateDynamic("autoRepair")(autoRepair)
+    if (!js.isUndefined(autoUpgrade)) __obj.updateDynamic("autoUpgrade")(autoUpgrade)
+    if (upgradeOptions != null) __obj.updateDynamic("upgradeOptions")(upgradeOptions)
+    __obj.asInstanceOf[NodeManagement]
+  }
+}
+

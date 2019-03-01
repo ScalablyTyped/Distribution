@@ -12,3 +12,13 @@ trait SpeedLimitsResponse extends js.Object {
   var speedLimits: js.Array[SpeedLimit]
 }
 
+object SpeedLimitsResponse {
+  @scala.inline
+  def apply(snappedPoints: js.Array[SnappedPoint], speedLimits: js.Array[SpeedLimit]): SpeedLimitsResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("snappedPoints")(snappedPoints)
+    __obj.updateDynamic("speedLimits")(speedLimits)
+    __obj.asInstanceOf[SpeedLimitsResponse]
+  }
+}
+

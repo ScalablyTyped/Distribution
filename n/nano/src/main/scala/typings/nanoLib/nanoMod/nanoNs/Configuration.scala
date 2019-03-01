@@ -14,3 +14,24 @@ trait Configuration extends js.Object {
   var url: java.lang.String
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    cookie: java.lang.String = null,
+    log: js.Function2[/* id */ java.lang.String, /* args */ js.Any, scala.Unit] = null,
+    parseUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    request: js.Function1[/* params */ js.Any, scala.Unit] = null,
+    requestDefaults: requestLib.requestMod.requestNs.CoreOptions = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
+    if (log != null) __obj.updateDynamic("log")(log)
+    if (!js.isUndefined(parseUrl)) __obj.updateDynamic("parseUrl")(parseUrl)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (requestDefaults != null) __obj.updateDynamic("requestDefaults")(requestDefaults)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

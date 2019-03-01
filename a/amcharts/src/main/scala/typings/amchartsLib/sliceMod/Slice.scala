@@ -52,3 +52,34 @@ trait Slice extends js.Object {
   var visibleInLegend: scala.Boolean
 }
 
+object Slice {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    color: java.lang.String,
+    dataContext: js.Object,
+    description: java.lang.String,
+    hidden: scala.Boolean,
+    percents: scala.Double,
+    pulled: scala.Boolean,
+    title: java.lang.String,
+    url: java.lang.String,
+    value: scala.Double,
+    visibleInLegend: scala.Boolean
+  ): Slice = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alpha")(alpha)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("dataContext")(dataContext)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("hidden")(hidden)
+    __obj.updateDynamic("percents")(percents)
+    __obj.updateDynamic("pulled")(pulled)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("visibleInLegend")(visibleInLegend)
+    __obj.asInstanceOf[Slice]
+  }
+}
+

@@ -27,3 +27,15 @@ trait CellDragEvent extends js.Object {
   var value: js.Any
 }
 
+object CellDragEvent {
+  @scala.inline
+  def apply(cellKey: java.lang.String, fromRow: scala.Double, toRow: scala.Double, value: js.Any): CellDragEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cellKey")(cellKey)
+    __obj.updateDynamic("fromRow")(fromRow)
+    __obj.updateDynamic("toRow")(toRow)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CellDragEvent]
+  }
+}
+

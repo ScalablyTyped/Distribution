@@ -47,3 +47,28 @@ trait Position extends js.Object {
   var Type: VPositionType
 }
 
+object Position {
+  @scala.inline
+  def apply(
+    Amount: scala.Double,
+    CanCover: scala.Double,
+    ContractType: java.lang.String,
+    FrozenAmount: scala.Double,
+    MarginLevel: scala.Double,
+    Price: scala.Double,
+    Profit: scala.Double,
+    Type: VPositionType
+  ): Position = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Amount")(Amount)
+    __obj.updateDynamic("CanCover")(CanCover)
+    __obj.updateDynamic("ContractType")(ContractType)
+    __obj.updateDynamic("FrozenAmount")(FrozenAmount)
+    __obj.updateDynamic("MarginLevel")(MarginLevel)
+    __obj.updateDynamic("Price")(Price)
+    __obj.updateDynamic("Profit")(Profit)
+    __obj.updateDynamic("Type")(Type)
+    __obj.asInstanceOf[Position]
+  }
+}
+

@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   var `type`: StateChangeTypes
 }
 
+object StateChangeOptions {
+  @scala.inline
+  def apply[Item](`type`: StateChangeTypes): StateChangeOptions[Item] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[StateChangeOptions[Item]]
+  }
+}
+

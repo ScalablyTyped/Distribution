@@ -12,3 +12,19 @@ trait ResolvedChat extends js.Object {
   var when: java.lang.String
 }
 
+object ResolvedChat {
+  @scala.inline
+  def apply(
+    id: scala.Double | java.lang.String,
+    `type`: java.lang.String,
+    username: java.lang.String,
+    when: java.lang.String
+  ): ResolvedChat = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("username")(username)
+    __obj.updateDynamic("when")(when)
+    __obj.asInstanceOf[ResolvedChat]
+  }
+}
+

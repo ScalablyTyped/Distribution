@@ -17,3 +17,30 @@ trait Masks
   var shortTime: java.lang.String
 }
 
+object Masks {
+  @scala.inline
+  def apply(
+    default: java.lang.String,
+    fullDate: java.lang.String,
+    longDate: java.lang.String,
+    longTime: java.lang.String,
+    mediumDate: java.lang.String,
+    mediumTime: java.lang.String,
+    shortDate: java.lang.String,
+    shortTime: java.lang.String,
+    StringDictionary: /* myMask */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Masks = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("default")(default)
+    __obj.updateDynamic("fullDate")(fullDate)
+    __obj.updateDynamic("longDate")(longDate)
+    __obj.updateDynamic("longTime")(longTime)
+    __obj.updateDynamic("mediumDate")(mediumDate)
+    __obj.updateDynamic("mediumTime")(mediumTime)
+    __obj.updateDynamic("shortDate")(shortDate)
+    __obj.updateDynamic("shortTime")(shortTime)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Masks]
+  }
+}
+

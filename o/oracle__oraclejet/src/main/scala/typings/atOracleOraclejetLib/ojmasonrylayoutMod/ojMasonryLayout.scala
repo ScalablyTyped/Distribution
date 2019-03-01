@@ -37,35 +37,12 @@ trait ojMasonryLayout
   var onOjReorder: (js.Function1[/* event */ atOracleOraclejetLib.ojmasonrylayoutMod.ojMasonryLayoutNs.ojReorder, _]) | scala.Null = js.native
   var onOjResize: (js.Function1[/* event */ atOracleOraclejetLib.ojmasonrylayoutMod.ojMasonryLayoutNs.ojResize, _]) | scala.Null = js.native
   var onReorderHandleChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['reorderHandle'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
     _
   ]) | scala.Null = js.native
   var reorderHandle: java.lang.String | scala.Null = js.native
   @JSName("translations")
   var translations_ojMasonryLayout: atOracleOraclejetLib.Anon_LabelCut = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.reorderHandleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['reorderHandle'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.reorderHandleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['reorderHandle'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_ojAnimateEnd(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.ojAnimateEnd,
@@ -252,6 +229,25 @@ trait ojMasonryLayout
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.ojmasonrylayoutMod.ojMasonryLayoutNs.ojResize, 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_reorderHandleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.reorderHandleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_reorderHandleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.reorderHandleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
       _
     ],
     useCapture: scala.Boolean

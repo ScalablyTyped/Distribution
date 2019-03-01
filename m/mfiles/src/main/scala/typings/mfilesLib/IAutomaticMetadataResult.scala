@@ -10,3 +10,13 @@ trait IAutomaticMetadataResult extends js.Object {
   def Clone(): IAutomaticMetadataResult
 }
 
+object IAutomaticMetadataResult {
+  @scala.inline
+  def apply(Clone: js.Function0[IAutomaticMetadataResult], PropertyValueSuggestions: IPropertyValueSuggestions): IAutomaticMetadataResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("PropertyValueSuggestions")(PropertyValueSuggestions)
+    __obj.asInstanceOf[IAutomaticMetadataResult]
+  }
+}
+

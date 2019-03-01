@@ -9,3 +9,12 @@ trait CloudFrontResponseEvent extends js.Object {
   var Records: js.Array[awsDashLambdaLib.Anon_Cf]
 }
 
+object CloudFrontResponseEvent {
+  @scala.inline
+  def apply(Records: js.Array[awsDashLambdaLib.Anon_Cf]): CloudFrontResponseEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Records")(Records)
+    __obj.asInstanceOf[CloudFrontResponseEvent]
+  }
+}
+

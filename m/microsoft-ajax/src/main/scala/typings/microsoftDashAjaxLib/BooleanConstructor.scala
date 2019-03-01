@@ -18,3 +18,12 @@ trait BooleanConstructor extends js.Object {
   def parse(value: java.lang.String): scala.Boolean
 }
 
+object BooleanConstructor {
+  @scala.inline
+  def apply(parse: js.Function1[java.lang.String, scala.Boolean]): BooleanConstructor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parse")(parse)
+    __obj.asInstanceOf[BooleanConstructor]
+  }
+}
+

@@ -12,3 +12,20 @@ trait AbstractAuthData extends js.Object {
   var password: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AbstractAuthData {
+  @scala.inline
+  def apply(
+    authType: java.lang.String,
+    deploymentId: java.lang.String,
+    login: java.lang.String,
+    password: java.lang.String = null
+  ): AbstractAuthData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authType")(authType)
+    __obj.updateDynamic("deploymentId")(deploymentId)
+    __obj.updateDynamic("login")(login)
+    if (password != null) __obj.updateDynamic("password")(password)
+    __obj.asInstanceOf[AbstractAuthData]
+  }
+}
+

@@ -413,3 +413,131 @@ trait IgMap
   var zoomable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgMap {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igMap
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    autoMarginHeight: scala.Int | scala.Double = null,
+    autoMarginWidth: scala.Int | scala.Double = null,
+    backgroundContent: IgMapBackgroundContent = null,
+    browserNotSupported: BrowserNotSupportedEvent = null,
+    circleMarkerTemplate: js.Any = null,
+    crosshairPoint: IgMapCrosshairPoint = null,
+    crosshairVisibility: java.lang.String = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    defaultInteraction: java.lang.String = null,
+    diamondMarkerTemplate: js.Any = null,
+    dragModifier: java.lang.String = null,
+    gridAreaRectChanged: GridAreaRectChangedEvent = null,
+    height: java.lang.String | scala.Double = null,
+    hexagonMarkerTemplate: js.Any = null,
+    hexagramMarkerTemplate: js.Any = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    overviewPlusDetailPaneBackgroundImageUri: java.lang.String = null,
+    panModifier: java.lang.String = null,
+    pentagonMarkerTemplate: js.Any = null,
+    pentagramMarkerTemplate: js.Any = null,
+    plotAreaBackground: java.lang.String = null,
+    preferHigherResolutionTiles: js.UndefOr[scala.Boolean] = js.undefined,
+    previewRect: js.Any = null,
+    pyramidMarkerTemplate: js.Any = null,
+    refreshCompleted: RefreshCompletedEvent = null,
+    regional: java.lang.String | js.Object = null,
+    responseDataKey: java.lang.String = null,
+    series: js.Array[IgMapSeries] = null,
+    seriesCursorMouseMove: SeriesCursorMouseMoveEvent = null,
+    seriesMouseEnter: SeriesMouseEnterEvent = null,
+    seriesMouseLeave: SeriesMouseLeaveEvent = null,
+    seriesMouseLeftButtonDown: SeriesMouseLeftButtonDownEvent = null,
+    seriesMouseLeftButtonUp: SeriesMouseLeftButtonUpEvent = null,
+    seriesMouseMove: SeriesMouseMoveEvent = null,
+    squareMarkerTemplate: js.Any = null,
+    tetragramMarkerTemplate: js.Any = null,
+    theme: java.lang.String = null,
+    tooltipHidden: TooltipHiddenEvent = null,
+    tooltipHiding: TooltipHidingEvent = null,
+    tooltipShowing: TooltipShowingEvent = null,
+    tooltipShown: TooltipShownEvent = null,
+    triangleMarkerTemplate: js.Any = null,
+    triangulationStatusChanged: TriangulationStatusChangedEvent = null,
+    useTiledZooming: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String | scala.Double = null,
+    windowPositionHorizontal: scala.Int | scala.Double = null,
+    windowPositionVertical: scala.Int | scala.Double = null,
+    windowRect: js.Any = null,
+    windowRectChanged: WindowRectChangedEvent = null,
+    windowRectMinWidth: scala.Int | scala.Double = null,
+    windowResponse: java.lang.String = null,
+    windowScale: scala.Int | scala.Double = null,
+    zoomTileCacheSize: scala.Int | scala.Double = null,
+    zoomable: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgMap = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (autoMarginHeight != null) __obj.updateDynamic("autoMarginHeight")(autoMarginHeight.asInstanceOf[js.Any])
+    if (autoMarginWidth != null) __obj.updateDynamic("autoMarginWidth")(autoMarginWidth.asInstanceOf[js.Any])
+    if (backgroundContent != null) __obj.updateDynamic("backgroundContent")(backgroundContent)
+    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(browserNotSupported)
+    if (circleMarkerTemplate != null) __obj.updateDynamic("circleMarkerTemplate")(circleMarkerTemplate)
+    if (crosshairPoint != null) __obj.updateDynamic("crosshairPoint")(crosshairPoint)
+    if (crosshairVisibility != null) __obj.updateDynamic("crosshairVisibility")(crosshairVisibility)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (defaultInteraction != null) __obj.updateDynamic("defaultInteraction")(defaultInteraction)
+    if (diamondMarkerTemplate != null) __obj.updateDynamic("diamondMarkerTemplate")(diamondMarkerTemplate)
+    if (dragModifier != null) __obj.updateDynamic("dragModifier")(dragModifier)
+    if (gridAreaRectChanged != null) __obj.updateDynamic("gridAreaRectChanged")(gridAreaRectChanged)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hexagonMarkerTemplate != null) __obj.updateDynamic("hexagonMarkerTemplate")(hexagonMarkerTemplate)
+    if (hexagramMarkerTemplate != null) __obj.updateDynamic("hexagramMarkerTemplate")(hexagramMarkerTemplate)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (overviewPlusDetailPaneBackgroundImageUri != null) __obj.updateDynamic("overviewPlusDetailPaneBackgroundImageUri")(overviewPlusDetailPaneBackgroundImageUri)
+    if (panModifier != null) __obj.updateDynamic("panModifier")(panModifier)
+    if (pentagonMarkerTemplate != null) __obj.updateDynamic("pentagonMarkerTemplate")(pentagonMarkerTemplate)
+    if (pentagramMarkerTemplate != null) __obj.updateDynamic("pentagramMarkerTemplate")(pentagramMarkerTemplate)
+    if (plotAreaBackground != null) __obj.updateDynamic("plotAreaBackground")(plotAreaBackground)
+    if (!js.isUndefined(preferHigherResolutionTiles)) __obj.updateDynamic("preferHigherResolutionTiles")(preferHigherResolutionTiles)
+    if (previewRect != null) __obj.updateDynamic("previewRect")(previewRect)
+    if (pyramidMarkerTemplate != null) __obj.updateDynamic("pyramidMarkerTemplate")(pyramidMarkerTemplate)
+    if (refreshCompleted != null) __obj.updateDynamic("refreshCompleted")(refreshCompleted)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (seriesCursorMouseMove != null) __obj.updateDynamic("seriesCursorMouseMove")(seriesCursorMouseMove)
+    if (seriesMouseEnter != null) __obj.updateDynamic("seriesMouseEnter")(seriesMouseEnter)
+    if (seriesMouseLeave != null) __obj.updateDynamic("seriesMouseLeave")(seriesMouseLeave)
+    if (seriesMouseLeftButtonDown != null) __obj.updateDynamic("seriesMouseLeftButtonDown")(seriesMouseLeftButtonDown)
+    if (seriesMouseLeftButtonUp != null) __obj.updateDynamic("seriesMouseLeftButtonUp")(seriesMouseLeftButtonUp)
+    if (seriesMouseMove != null) __obj.updateDynamic("seriesMouseMove")(seriesMouseMove)
+    if (squareMarkerTemplate != null) __obj.updateDynamic("squareMarkerTemplate")(squareMarkerTemplate)
+    if (tetragramMarkerTemplate != null) __obj.updateDynamic("tetragramMarkerTemplate")(tetragramMarkerTemplate)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(tooltipHidden)
+    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(tooltipHiding)
+    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(tooltipShowing)
+    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(tooltipShown)
+    if (triangleMarkerTemplate != null) __obj.updateDynamic("triangleMarkerTemplate")(triangleMarkerTemplate)
+    if (triangulationStatusChanged != null) __obj.updateDynamic("triangulationStatusChanged")(triangulationStatusChanged)
+    if (!js.isUndefined(useTiledZooming)) __obj.updateDynamic("useTiledZooming")(useTiledZooming)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (windowPositionHorizontal != null) __obj.updateDynamic("windowPositionHorizontal")(windowPositionHorizontal.asInstanceOf[js.Any])
+    if (windowPositionVertical != null) __obj.updateDynamic("windowPositionVertical")(windowPositionVertical.asInstanceOf[js.Any])
+    if (windowRect != null) __obj.updateDynamic("windowRect")(windowRect)
+    if (windowRectChanged != null) __obj.updateDynamic("windowRectChanged")(windowRectChanged)
+    if (windowRectMinWidth != null) __obj.updateDynamic("windowRectMinWidth")(windowRectMinWidth.asInstanceOf[js.Any])
+    if (windowResponse != null) __obj.updateDynamic("windowResponse")(windowResponse)
+    if (windowScale != null) __obj.updateDynamic("windowScale")(windowScale.asInstanceOf[js.Any])
+    if (zoomTileCacheSize != null) __obj.updateDynamic("zoomTileCacheSize")(zoomTileCacheSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable)
+    __obj.asInstanceOf[IgMap]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_HandlerProcessor[TProcessor, THandler] extends js.Object {
   var processor: thriftLib.thriftMod.TProcessorConstructor[TProcessor, THandler]
 }
 
+object Anon_HandlerProcessor {
+  @scala.inline
+  def apply[TProcessor, THandler](handler: THandler, processor: thriftLib.thriftMod.TProcessorConstructor[TProcessor, THandler]): Anon_HandlerProcessor[TProcessor, THandler] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    __obj.updateDynamic("processor")(processor)
+    __obj.asInstanceOf[Anon_HandlerProcessor[TProcessor, THandler]]
+  }
+}
+

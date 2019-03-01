@@ -55,3 +55,45 @@ trait ConsentExcept extends BackboneElement {
   var `type`: code
 }
 
+object ConsentExcept {
+  @scala.inline
+  def apply(
+    `type`: code,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _type: Element = null,
+    action: js.Array[CodeableConcept] = null,
+    actor: js.Array[ConsentExceptActor] = null,
+    `class`: js.Array[Coding] = null,
+    code: js.Array[Coding] = null,
+    data: js.Array[ConsentExceptData] = null,
+    dataPeriod: Period = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null,
+    period: Period = null,
+    purpose: js.Array[Coding] = null,
+    securityLabel: js.Array[Coding] = null
+  ): ConsentExcept = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (actor != null) __obj.updateDynamic("actor")(actor)
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataPeriod != null) __obj.updateDynamic("dataPeriod")(dataPeriod)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (period != null) __obj.updateDynamic("period")(period)
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (securityLabel != null) __obj.updateDynamic("securityLabel")(securityLabel)
+    __obj.asInstanceOf[ConsentExcept]
+  }
+}
+

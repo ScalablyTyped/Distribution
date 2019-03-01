@@ -32,3 +32,28 @@ trait AnnotationAddEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AnnotationAddEventArgs {
+  @scala.inline
+  def apply(
+    annotationBound: js.Array[_] = null,
+    annotationID: scala.Int | scala.Double = null,
+    annotationSettings: js.Any = null,
+    annotationType: java.lang.String = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    pageID: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): AnnotationAddEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (annotationBound != null) __obj.updateDynamic("annotationBound")(annotationBound)
+    if (annotationID != null) __obj.updateDynamic("annotationID")(annotationID.asInstanceOf[js.Any])
+    if (annotationSettings != null) __obj.updateDynamic("annotationSettings")(annotationSettings)
+    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (pageID != null) __obj.updateDynamic("pageID")(pageID.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AnnotationAddEventArgs]
+  }
+}
+

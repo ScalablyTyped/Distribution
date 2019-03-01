@@ -19,3 +19,20 @@ trait GooglePrivacyDlpV2beta1RedactContentRequest extends js.Object {
   var replaceConfigs: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1ReplaceConfig]] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1RedactContentRequest {
+  @scala.inline
+  def apply(
+    imageRedactionConfigs: js.Array[GooglePrivacyDlpV2beta1ImageRedactionConfig] = null,
+    inspectConfig: GooglePrivacyDlpV2beta1InspectConfig = null,
+    items: js.Array[GooglePrivacyDlpV2beta1ContentItem] = null,
+    replaceConfigs: js.Array[GooglePrivacyDlpV2beta1ReplaceConfig] = null
+  ): GooglePrivacyDlpV2beta1RedactContentRequest = {
+    val __obj = js.Dynamic.literal()
+    if (imageRedactionConfigs != null) __obj.updateDynamic("imageRedactionConfigs")(imageRedactionConfigs)
+    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (replaceConfigs != null) __obj.updateDynamic("replaceConfigs")(replaceConfigs)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1RedactContentRequest]
+  }
+}
+

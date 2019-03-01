@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when some user tries to add current user into his roster. Current user can confirm or reject the subscription, then VoxImplant.IMEvents.RosterItemChange will be dispatched on for user that made the request
 		*/
-trait SubscriptionRequest extends js.Object {
+trait SubscriptionRequest
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	User id
   			*/
@@ -25,5 +26,21 @@ trait SubscriptionRequest extends js.Object {
   			*	Message event type. See VoxImplant.SubscriptionRequestType enum
   			*/
   var `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.SubscriptionRequestType
+}
+
+object SubscriptionRequest {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.SubscriptionRequestType,
+    message: java.lang.String = null,
+    resource: java.lang.String = null
+  ): SubscriptionRequest = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[SubscriptionRequest]
+  }
 }
 

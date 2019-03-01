@@ -32,3 +32,28 @@ trait RibbonClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RibbonClickEventArgs {
+  @scala.inline
+  def apply(
+    Id: java.lang.String = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    isChecked: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    prop: js.Any = null,
+    status: js.UndefOr[scala.Boolean] = js.undefined,
+    target: stdLib.HTMLElement = null,
+    `type`: java.lang.String = null
+  ): RibbonClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Id != null) __obj.updateDynamic("Id")(Id)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (prop != null) __obj.updateDynamic("prop")(prop)
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RibbonClickEventArgs]
+  }
+}
+

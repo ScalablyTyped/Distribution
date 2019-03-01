@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object swDashPrecacheLibStrings {
   @js.native
-  sealed trait cacheFirst extends js.Object
+  sealed trait cacheFirst
+    extends swDashPrecacheLib.swDashPrecacheMod._Handler
   
   @js.native
-  sealed trait cacheOnly extends js.Object
+  sealed trait cacheOnly
+    extends swDashPrecacheLib.swDashPrecacheMod._Handler
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends swDashPrecacheLib.swDashPrecacheMod.Method
   
   @js.native
-  sealed trait fastest extends js.Object
+  sealed trait fastest
+    extends swDashPrecacheLib.swDashPrecacheMod._Handler
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get
+    extends swDashPrecacheLib.swDashPrecacheMod.Method
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait head
+    extends swDashPrecacheLib.swDashPrecacheMod.Method
   
   @js.native
-  sealed trait networkFirst extends js.Object
+  sealed trait networkFirst
+    extends swDashPrecacheLib.swDashPrecacheMod._Handler
   
   @js.native
-  sealed trait networkOnly extends js.Object
+  sealed trait networkOnly
+    extends swDashPrecacheLib.swDashPrecacheMod._Handler
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post
+    extends swDashPrecacheLib.swDashPrecacheMod.Method
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait put
+    extends swDashPrecacheLib.swDashPrecacheMod.Method
   
   @scala.inline
   def cacheFirst: cacheFirst = "cacheFirst".asInstanceOf[cacheFirst]

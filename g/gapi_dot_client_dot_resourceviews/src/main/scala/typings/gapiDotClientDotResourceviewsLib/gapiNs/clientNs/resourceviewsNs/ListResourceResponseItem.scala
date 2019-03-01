@@ -12,3 +12,16 @@ trait ListResourceResponseItem extends js.Object {
   var resource: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListResourceResponseItem {
+  @scala.inline
+  def apply(
+    endpoints: stdLib.Record[java.lang.String, js.Array[scala.Double]] = null,
+    resource: java.lang.String = null
+  ): ListResourceResponseItem = {
+    val __obj = js.Dynamic.literal()
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[ListResourceResponseItem]
+  }
+}
+

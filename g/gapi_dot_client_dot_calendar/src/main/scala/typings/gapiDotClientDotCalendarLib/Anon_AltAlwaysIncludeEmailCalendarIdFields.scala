@@ -117,3 +117,62 @@ trait Anon_AltAlwaysIncludeEmailCalendarIdFields extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltAlwaysIncludeEmailCalendarIdFields {
+  @scala.inline
+  def apply(
+    calendarId: java.lang.String,
+    alt: java.lang.String = null,
+    alwaysIncludeEmail: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: java.lang.String = null,
+    iCalUID: java.lang.String = null,
+    key: java.lang.String = null,
+    maxAttendees: scala.Int | scala.Double = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    orderBy: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    privateExtendedProperty: java.lang.String = null,
+    q: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    sharedExtendedProperty: java.lang.String = null,
+    showDeleted: js.UndefOr[scala.Boolean] = js.undefined,
+    showHiddenInvitations: js.UndefOr[scala.Boolean] = js.undefined,
+    singleEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    syncToken: java.lang.String = null,
+    timeMax: java.lang.String = null,
+    timeMin: java.lang.String = null,
+    timeZone: java.lang.String = null,
+    updatedMin: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltAlwaysIncludeEmailCalendarIdFields = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calendarId")(calendarId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(alwaysIncludeEmail)) __obj.updateDynamic("alwaysIncludeEmail")(alwaysIncludeEmail)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (iCalUID != null) __obj.updateDynamic("iCalUID")(iCalUID)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxAttendees != null) __obj.updateDynamic("maxAttendees")(maxAttendees.asInstanceOf[js.Any])
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (privateExtendedProperty != null) __obj.updateDynamic("privateExtendedProperty")(privateExtendedProperty)
+    if (q != null) __obj.updateDynamic("q")(q)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (sharedExtendedProperty != null) __obj.updateDynamic("sharedExtendedProperty")(sharedExtendedProperty)
+    if (!js.isUndefined(showDeleted)) __obj.updateDynamic("showDeleted")(showDeleted)
+    if (!js.isUndefined(showHiddenInvitations)) __obj.updateDynamic("showHiddenInvitations")(showHiddenInvitations)
+    if (!js.isUndefined(singleEvents)) __obj.updateDynamic("singleEvents")(singleEvents)
+    if (syncToken != null) __obj.updateDynamic("syncToken")(syncToken)
+    if (timeMax != null) __obj.updateDynamic("timeMax")(timeMax)
+    if (timeMin != null) __obj.updateDynamic("timeMin")(timeMin)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (updatedMin != null) __obj.updateDynamic("updatedMin")(updatedMin)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltAlwaysIncludeEmailCalendarIdFields]
+  }
+}
+

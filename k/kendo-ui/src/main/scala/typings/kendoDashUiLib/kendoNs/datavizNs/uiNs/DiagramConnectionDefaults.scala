@@ -19,3 +19,34 @@ trait DiagramConnectionDefaults extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DiagramConnectionDefaults {
+  @scala.inline
+  def apply(
+    content: DiagramConnectionDefaultsContent = null,
+    editable: scala.Boolean | DiagramConnectionDefaultsEditable = null,
+    endCap: java.lang.String | DiagramConnectionDefaultsEndCap = null,
+    fromConnector: java.lang.String = null,
+    hover: DiagramConnectionDefaultsHover = null,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    selection: DiagramConnectionDefaultsSelection = null,
+    startCap: java.lang.String | DiagramConnectionDefaultsStartCap = null,
+    stroke: DiagramConnectionDefaultsStroke = null,
+    toConnector: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DiagramConnectionDefaults = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (endCap != null) __obj.updateDynamic("endCap")(endCap.asInstanceOf[js.Any])
+    if (fromConnector != null) __obj.updateDynamic("fromConnector")(fromConnector)
+    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (startCap != null) __obj.updateDynamic("startCap")(startCap.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (toConnector != null) __obj.updateDynamic("toConnector")(toConnector)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DiagramConnectionDefaults]
+  }
+}
+

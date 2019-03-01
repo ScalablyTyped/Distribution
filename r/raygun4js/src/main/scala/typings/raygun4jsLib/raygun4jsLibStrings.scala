@@ -34,7 +34,7 @@ object raygun4jsLibStrings {
   sealed trait customData extends js.Object
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug extends BreadcrumbLevel
   
   @js.native
   sealed trait detach extends js.Object
@@ -76,7 +76,7 @@ object raygun4jsLibStrings {
   sealed trait enablePulse extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends BreadcrumbLevel
   
   @js.native
   sealed trait filterSensitiveData extends js.Object
@@ -88,7 +88,7 @@ object raygun4jsLibStrings {
   sealed trait groupingKey extends js.Object
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info extends BreadcrumbLevel
   
   @js.native
   sealed trait noConflict extends js.Object
@@ -139,7 +139,7 @@ object raygun4jsLibStrings {
   sealed trait trackEvent extends js.Object
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning extends BreadcrumbLevel
   
   @js.native
   sealed trait whitelistCrossOriginDomains extends js.Object

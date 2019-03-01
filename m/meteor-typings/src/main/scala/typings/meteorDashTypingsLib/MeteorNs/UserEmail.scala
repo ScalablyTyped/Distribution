@@ -12,3 +12,13 @@ trait UserEmail extends js.Object {
   var verified: scala.Boolean
 }
 
+object UserEmail {
+  @scala.inline
+  def apply(address: java.lang.String, verified: scala.Boolean): UserEmail = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("verified")(verified)
+    __obj.asInstanceOf[UserEmail]
+  }
+}
+

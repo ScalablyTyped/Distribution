@@ -16,3 +16,20 @@ trait CreateAnimationOptions extends js.Object {
   var transformOrigin: java.lang.String
 }
 
+object CreateAnimationOptions {
+  @scala.inline
+  def apply(
+    delay: scala.Double,
+    duration: scala.Double,
+    timeFunction: TimingFunction,
+    transformOrigin: java.lang.String
+  ): CreateAnimationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delay")(delay)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("timeFunction")(timeFunction)
+    __obj.updateDynamic("transformOrigin")(transformOrigin)
+    __obj.asInstanceOf[CreateAnimationOptions]
+  }
+}
+

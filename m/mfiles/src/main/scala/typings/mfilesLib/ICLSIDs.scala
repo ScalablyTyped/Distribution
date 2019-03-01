@@ -10,3 +10,13 @@ trait ICLSIDs extends js.Object {
   val ShellListingCtrl: java.lang.String
 }
 
+object ICLSIDs {
+  @scala.inline
+  def apply(PreviewerCtrl: java.lang.String, ShellListingCtrl: java.lang.String): ICLSIDs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PreviewerCtrl")(PreviewerCtrl)
+    __obj.updateDynamic("ShellListingCtrl")(ShellListingCtrl)
+    __obj.asInstanceOf[ICLSIDs]
+  }
+}
+

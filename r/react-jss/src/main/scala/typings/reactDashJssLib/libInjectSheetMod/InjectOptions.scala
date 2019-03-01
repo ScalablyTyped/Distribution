@@ -11,3 +11,13 @@ import scala.scalajs.js.annotation._
   var theming: js.UndefOr[Theming] = js.undefined
 }
 
+object InjectOptions {
+  @scala.inline
+  def apply(jss: jssLib.jssMod.JSS = null, theming: Theming = null): InjectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (jss != null) __obj.updateDynamic("jss")(jss)
+    if (theming != null) __obj.updateDynamic("theming")(theming)
+    __obj.asInstanceOf[InjectOptions]
+  }
+}
+

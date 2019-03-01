@@ -12,3 +12,12 @@ trait NativeKeyboardHideOptions extends js.Object {
   var animated: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NativeKeyboardHideOptions {
+  @scala.inline
+  def apply(animated: js.UndefOr[scala.Boolean] = js.undefined): NativeKeyboardHideOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    __obj.asInstanceOf[NativeKeyboardHideOptions]
+  }
+}
+

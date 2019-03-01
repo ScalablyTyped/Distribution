@@ -7,91 +7,124 @@ import scala.scalajs.js.annotation._
 
 object webdriverLibStrings {
   @js.native
-  sealed trait ALL extends js.Object
+  sealed trait ALL
+    extends webdriverLib.WebDriverNs.LoggingPreferenceType
   
   @js.native
   sealed trait AsyncClient extends js.Object
   
   @js.native
-  sealed trait CONFIG extends js.Object
+  sealed trait CONFIG
+    extends webdriverLib.WebDriverNs.LoggingPreferenceType
   
   @js.native
-  sealed trait FINE extends js.Object
+  sealed trait FINE
+    extends webdriverLib.WebDriverNs.LoggingPreferenceType
   
   @js.native
-  sealed trait FINER extends js.Object
+  sealed trait FINER
+    extends webdriverLib.WebDriverNs.LoggingPreferenceType
   
   @js.native
-  sealed trait FINEST extends js.Object
+  sealed trait FINEST
+    extends webdriverLib.WebDriverNs.LoggingPreferenceType
   
   @js.native
-  sealed trait INFO extends js.Object
+  sealed trait INFO
+    extends webdriverLib.WebDriverNs.LoggingPreferenceType
   
   @js.native
-  sealed trait OFF extends js.Object
+  sealed trait OFF
+    extends webdriverLib.WebDriverNs.LoggingPreferenceType
   
   @js.native
-  sealed trait SEVERE extends js.Object
+  sealed trait SEVERE
+    extends webdriverLib.WebDriverNs.LoggingPreferenceType
   
   @js.native
-  sealed trait WARNING extends js.Object
+  sealed trait WARNING
+    extends webdriverLib.WebDriverNs.LoggingPreferenceType
   
   @js.native
-  sealed trait autodetect extends js.Object
+  sealed trait autodetect
+    extends webdriverLib.WebDriverNs.ProxyTypes
   
   @js.native
-  sealed trait config extends js.Object
+  sealed trait config
+    extends webdriverLib.WebDriverNs.FirefoxLogLevels
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends webdriverLib.WebDriverNs.FirefoxLogLevels
+       with webdriverLib.WebDriverNs.WebDriverLogTypes
   
   @js.native
-  sealed trait eager extends js.Object
+  sealed trait eager
+    extends webdriverLib.WebDriverNs.PageLoadingStrategy
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends webdriverLib.WebDriverNs.FirefoxLogLevels
+       with webdriverLib.WebDriverNs.WebDriverLogTypes
   
   @js.native
-  sealed trait fatal extends js.Object
+  sealed trait fatal
+    extends webdriverLib.WebDriverNs.FirefoxLogLevels
   
   @js.native
-  sealed trait `implicit` extends js.Object
+  sealed trait `implicit`
+    extends webdriverLib.WebDriverNs.Timeouts
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends webdriverLib.WebDriverNs.FirefoxLogLevels
+       with webdriverLib.WebDriverNs.WebDriverLogTypes
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual
+    extends webdriverLib.WebDriverNs.ProxyTypes
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends webdriverLib.WebDriverNs.PageLoadingStrategy
   
   @js.native
-  sealed trait noproxy extends js.Object
+  sealed trait noproxy
+    extends webdriverLib.WebDriverNs.ProxyTypes
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends webdriverLib.WebDriverNs.PageLoadingStrategy
   
   @js.native
-  sealed trait pac extends js.Object
+  sealed trait pac
+    extends webdriverLib.WebDriverNs.ProxyTypes
   
   @js.native
-  sealed trait pageLoad extends js.Object
+  sealed trait pageLoad
+    extends webdriverLib.WebDriverNs.Timeouts
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait script
+    extends webdriverLib.WebDriverNs.Timeouts
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait silent
+    extends webdriverLib.WebDriverNs.WebDriverLogTypes
   
   @js.native
-  sealed trait system extends js.Object
+  sealed trait system
+    extends webdriverLib.WebDriverNs.ProxyTypes
   
   @js.native
-  sealed trait trace extends js.Object
+  sealed trait trace
+    extends webdriverLib.WebDriverNs.FirefoxLogLevels
+       with webdriverLib.WebDriverNs.WebDriverLogTypes
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends webdriverLib.WebDriverNs.FirefoxLogLevels
+       with webdriverLib.WebDriverNs.WebDriverLogTypes
   
   @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]

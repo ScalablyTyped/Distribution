@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object convictLibStrings {
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait `*`
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
   sealed trait InternalSchema extends js.Object
@@ -19,40 +20,52 @@ object convictLibStrings {
   sealed trait Schema extends js.Object
   
   @js.native
-  sealed trait duration extends js.Object
+  sealed trait duration
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
-  sealed trait int extends js.Object
+  sealed trait int
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
-  sealed trait ipaddress extends js.Object
+  sealed trait ipaddress
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
-  sealed trait nat extends js.Object
+  sealed trait nat
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
-  sealed trait port extends js.Object
+  sealed trait port
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
-  sealed trait port_or_windows_named_pipe extends js.Object
+  sealed trait port_or_windows_named_pipe
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait strict
+    extends convictLib.convictMod.convictNs.ValidationMethod
   
   @js.native
-  sealed trait timestamp extends js.Object
+  sealed trait timestamp
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends convictLib.convictMod.convictNs.ValidationMethod
   
   @js.native
-  sealed trait windows_named_pipe extends js.Object
+  sealed trait windows_named_pipe
+    extends convictLib.convictMod.convictNs._PredefinedFormat
   
   @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]

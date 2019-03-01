@@ -33,3 +33,26 @@ trait RoomP2PStatus extends js.Object {
   var unreliableRoundtripLatencyMillis: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RoomP2PStatus {
+  @scala.inline
+  def apply(
+    connectionSetupLatencyMillis: scala.Int | scala.Double = null,
+    error: java.lang.String = null,
+    error_reason: java.lang.String = null,
+    kind: java.lang.String = null,
+    participantId: java.lang.String = null,
+    status: java.lang.String = null,
+    unreliableRoundtripLatencyMillis: scala.Int | scala.Double = null
+  ): RoomP2PStatus = {
+    val __obj = js.Dynamic.literal()
+    if (connectionSetupLatencyMillis != null) __obj.updateDynamic("connectionSetupLatencyMillis")(connectionSetupLatencyMillis.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (error_reason != null) __obj.updateDynamic("error_reason")(error_reason)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (participantId != null) __obj.updateDynamic("participantId")(participantId)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (unreliableRoundtripLatencyMillis != null) __obj.updateDynamic("unreliableRoundtripLatencyMillis")(unreliableRoundtripLatencyMillis.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoomP2PStatus]
+  }
+}
+

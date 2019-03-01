@@ -100,3 +100,58 @@ trait ServiceMethodSettings extends js.Object {
   var valueSorting: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServiceMethodSettings {
+  @scala.inline
+  def apply(
+    calculatedMember: java.lang.String = null,
+    cubeChanged: java.lang.String = null,
+    drillThroughDataTable: java.lang.String = null,
+    drillThroughHierarchies: java.lang.String = null,
+    exportPivotClient: java.lang.String = null,
+    fetchMemberTreeNodes: java.lang.String = null,
+    fetchReportList: java.lang.String = null,
+    filterElement: java.lang.String = null,
+    initialize: java.lang.String = null,
+    loadReport: java.lang.String = null,
+    mdxQuery: java.lang.String = null,
+    measureGroupChanged: java.lang.String = null,
+    memberExpand: java.lang.String = null,
+    nodeDropped: java.lang.String = null,
+    paging: java.lang.String = null,
+    removeDBReport: java.lang.String = null,
+    removeSplitButton: java.lang.String = null,
+    renameDBReport: java.lang.String = null,
+    saveReport: java.lang.String = null,
+    toggleAxis: java.lang.String = null,
+    toolbarServices: java.lang.String = null,
+    updateReport: java.lang.String = null,
+    valueSorting: java.lang.String = null
+  ): ServiceMethodSettings = {
+    val __obj = js.Dynamic.literal()
+    if (calculatedMember != null) __obj.updateDynamic("calculatedMember")(calculatedMember)
+    if (cubeChanged != null) __obj.updateDynamic("cubeChanged")(cubeChanged)
+    if (drillThroughDataTable != null) __obj.updateDynamic("drillThroughDataTable")(drillThroughDataTable)
+    if (drillThroughHierarchies != null) __obj.updateDynamic("drillThroughHierarchies")(drillThroughHierarchies)
+    if (exportPivotClient != null) __obj.updateDynamic("exportPivotClient")(exportPivotClient)
+    if (fetchMemberTreeNodes != null) __obj.updateDynamic("fetchMemberTreeNodes")(fetchMemberTreeNodes)
+    if (fetchReportList != null) __obj.updateDynamic("fetchReportList")(fetchReportList)
+    if (filterElement != null) __obj.updateDynamic("filterElement")(filterElement)
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (loadReport != null) __obj.updateDynamic("loadReport")(loadReport)
+    if (mdxQuery != null) __obj.updateDynamic("mdxQuery")(mdxQuery)
+    if (measureGroupChanged != null) __obj.updateDynamic("measureGroupChanged")(measureGroupChanged)
+    if (memberExpand != null) __obj.updateDynamic("memberExpand")(memberExpand)
+    if (nodeDropped != null) __obj.updateDynamic("nodeDropped")(nodeDropped)
+    if (paging != null) __obj.updateDynamic("paging")(paging)
+    if (removeDBReport != null) __obj.updateDynamic("removeDBReport")(removeDBReport)
+    if (removeSplitButton != null) __obj.updateDynamic("removeSplitButton")(removeSplitButton)
+    if (renameDBReport != null) __obj.updateDynamic("renameDBReport")(renameDBReport)
+    if (saveReport != null) __obj.updateDynamic("saveReport")(saveReport)
+    if (toggleAxis != null) __obj.updateDynamic("toggleAxis")(toggleAxis)
+    if (toolbarServices != null) __obj.updateDynamic("toolbarServices")(toolbarServices)
+    if (updateReport != null) __obj.updateDynamic("updateReport")(updateReport)
+    if (valueSorting != null) __obj.updateDynamic("valueSorting")(valueSorting)
+    __obj.asInstanceOf[ServiceMethodSettings]
+  }
+}
+

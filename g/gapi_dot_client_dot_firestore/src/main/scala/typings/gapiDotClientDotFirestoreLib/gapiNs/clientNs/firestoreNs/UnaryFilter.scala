@@ -12,3 +12,13 @@ trait UnaryFilter extends js.Object {
   var op: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UnaryFilter {
+  @scala.inline
+  def apply(field: FieldReference = null, op: java.lang.String = null): UnaryFilter = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (op != null) __obj.updateDynamic("op")(op)
+    __obj.asInstanceOf[UnaryFilter]
+  }
+}
+

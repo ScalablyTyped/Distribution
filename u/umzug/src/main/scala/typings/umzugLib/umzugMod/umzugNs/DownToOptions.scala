@@ -14,3 +14,12 @@ trait DownToOptions extends js.Object {
   var to: java.lang.String | umzugLib.umzugLibNumbers.`0`
 }
 
+object DownToOptions {
+  @scala.inline
+  def apply(to: java.lang.String | umzugLib.umzugLibNumbers.`0`): DownToOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DownToOptions]
+  }
+}
+

@@ -10,3 +10,13 @@ trait OpaqueFileSizes extends js.Object {
   var sizes: stdLib.Record[java.lang.String, scala.Double]
 }
 
+object OpaqueFileSizes {
+  @scala.inline
+  def apply(root: java.lang.String, sizes: stdLib.Record[java.lang.String, scala.Double]): OpaqueFileSizes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("root")(root)
+    __obj.updateDynamic("sizes")(sizes)
+    __obj.asInstanceOf[OpaqueFileSizes]
+  }
+}
+

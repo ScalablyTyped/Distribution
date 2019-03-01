@@ -12,3 +12,12 @@ trait PauseOnAsyncCallParameterType extends js.Object {
   var parentStackTraceId: nodeLib.inspectorMod.RuntimeNs.StackTraceId
 }
 
+object PauseOnAsyncCallParameterType {
+  @scala.inline
+  def apply(parentStackTraceId: nodeLib.inspectorMod.RuntimeNs.StackTraceId): PauseOnAsyncCallParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parentStackTraceId")(parentStackTraceId)
+    __obj.asInstanceOf[PauseOnAsyncCallParameterType]
+  }
+}
+

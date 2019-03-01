@@ -16,3 +16,13 @@ trait _Impl extends js.Object {
   var form: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(disabled: java.lang.String, form: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("form")(form)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

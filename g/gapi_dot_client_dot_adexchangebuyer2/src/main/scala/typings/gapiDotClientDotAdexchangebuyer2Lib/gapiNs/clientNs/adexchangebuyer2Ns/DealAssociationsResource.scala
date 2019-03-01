@@ -20,3 +20,27 @@ trait DealAssociationsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 
+object DealAssociationsResource {
+  @scala.inline
+  def apply(
+    add: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackCreativeId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackCreativeIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDealAssociationsResponse]
+    ],
+    remove: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackCreativeId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ]
+  ): DealAssociationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[DealAssociationsResource]
+  }
+}
+

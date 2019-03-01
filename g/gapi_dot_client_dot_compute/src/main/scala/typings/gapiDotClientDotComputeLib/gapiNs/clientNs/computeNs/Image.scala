@@ -105,3 +105,60 @@ trait Image extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Image {
+  @scala.inline
+  def apply(
+    archiveSizeBytes: java.lang.String = null,
+    creationTimestamp: java.lang.String = null,
+    deprecated: DeprecationStatus = null,
+    description: java.lang.String = null,
+    diskSizeGb: java.lang.String = null,
+    family: java.lang.String = null,
+    guestOsFeatures: js.Array[GuestOsFeature] = null,
+    id: java.lang.String = null,
+    imageEncryptionKey: CustomerEncryptionKey = null,
+    kind: java.lang.String = null,
+    labelFingerprint: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    licenses: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    rawDisk: gapiDotClientDotComputeLib.Anon_ContainerType = null,
+    selfLink: java.lang.String = null,
+    sourceDisk: java.lang.String = null,
+    sourceDiskEncryptionKey: CustomerEncryptionKey = null,
+    sourceDiskId: java.lang.String = null,
+    sourceImage: java.lang.String = null,
+    sourceImageEncryptionKey: CustomerEncryptionKey = null,
+    sourceImageId: java.lang.String = null,
+    sourceType: java.lang.String = null,
+    status: java.lang.String = null
+  ): Image = {
+    val __obj = js.Dynamic.literal()
+    if (archiveSizeBytes != null) __obj.updateDynamic("archiveSizeBytes")(archiveSizeBytes)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb)
+    if (family != null) __obj.updateDynamic("family")(family)
+    if (guestOsFeatures != null) __obj.updateDynamic("guestOsFeatures")(guestOsFeatures)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imageEncryptionKey != null) __obj.updateDynamic("imageEncryptionKey")(imageEncryptionKey)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (licenses != null) __obj.updateDynamic("licenses")(licenses)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (rawDisk != null) __obj.updateDynamic("rawDisk")(rawDisk)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (sourceDisk != null) __obj.updateDynamic("sourceDisk")(sourceDisk)
+    if (sourceDiskEncryptionKey != null) __obj.updateDynamic("sourceDiskEncryptionKey")(sourceDiskEncryptionKey)
+    if (sourceDiskId != null) __obj.updateDynamic("sourceDiskId")(sourceDiskId)
+    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage)
+    if (sourceImageEncryptionKey != null) __obj.updateDynamic("sourceImageEncryptionKey")(sourceImageEncryptionKey)
+    if (sourceImageId != null) __obj.updateDynamic("sourceImageId")(sourceImageId)
+    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Image]
+  }
+}
+

@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object pkgConfNs {
-  type AnyJson = scala.Boolean | scala.Double | java.lang.String | scala.Null | JsonArray | JsonMap
+  type AnyJson = _AnyJson | scala.Boolean | scala.Double | java.lang.String | scala.Null
 }

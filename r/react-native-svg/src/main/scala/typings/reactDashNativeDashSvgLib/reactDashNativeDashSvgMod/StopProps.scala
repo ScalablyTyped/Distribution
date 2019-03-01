@@ -13,3 +13,18 @@ trait StopProps extends js.Object {
   var stopOpacity: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
 }
 
+object StopProps {
+  @scala.inline
+  def apply(
+    offset: reactDashNativeDashSvgLib.NumberProp = null,
+    stopColor: reactDashNativeDashSvgLib.int32ARGBColor | reactDashNativeDashSvgLib.rgbaArray | java.lang.String = null,
+    stopOpacity: reactDashNativeDashSvgLib.NumberProp = null
+  ): StopProps = {
+    val __obj = js.Dynamic.literal()
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
+    if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StopProps]
+  }
+}
+

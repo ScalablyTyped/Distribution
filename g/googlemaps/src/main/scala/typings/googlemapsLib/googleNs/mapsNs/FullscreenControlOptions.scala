@@ -13,3 +13,12 @@ trait FullscreenControlOptions extends js.Object {
   var position: js.UndefOr[ControlPosition] = js.undefined
 }
 
+object FullscreenControlOptions {
+  @scala.inline
+  def apply(position: ControlPosition = null): FullscreenControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[FullscreenControlOptions]
+  }
+}
+

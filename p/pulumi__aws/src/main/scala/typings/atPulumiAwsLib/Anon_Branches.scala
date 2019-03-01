@@ -13,3 +13,22 @@ trait Anon_Branches extends js.Object {
   var name: java.lang.String
 }
 
+object Anon_Branches {
+  @scala.inline
+  def apply(
+    destinationArn: java.lang.String,
+    events: js.Array[java.lang.String],
+    name: java.lang.String,
+    branches: js.Array[java.lang.String] = null,
+    customData: java.lang.String = null
+  ): Anon_Branches = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinationArn")(destinationArn)
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("name")(name)
+    if (branches != null) __obj.updateDynamic("branches")(branches)
+    if (customData != null) __obj.updateDynamic("customData")(customData)
+    __obj.asInstanceOf[Anon_Branches]
+  }
+}
+

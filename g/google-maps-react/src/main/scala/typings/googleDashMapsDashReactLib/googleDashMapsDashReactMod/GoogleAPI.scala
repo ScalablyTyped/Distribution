@@ -9,3 +9,12 @@ trait GoogleAPI extends js.Object {
   val mapsNs: googleDashMapsDashReactLib.Anon_Adsense
 }
 
+object GoogleAPI {
+  @scala.inline
+  def apply(mapsNs: googleDashMapsDashReactLib.Anon_Adsense): GoogleAPI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mapsNs")(mapsNs)
+    __obj.asInstanceOf[GoogleAPI]
+  }
+}
+

@@ -36,3 +36,22 @@ trait ASPxClientDocumentPreviewTab extends js.Object {
   var visible: js.Any
 }
 
+object ASPxClientDocumentPreviewTab {
+  @scala.inline
+  def apply(
+    active: js.Any,
+    model: js.Object,
+    template: java.lang.String,
+    text: java.lang.String,
+    visible: js.Any
+  ): ASPxClientDocumentPreviewTab = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("template")(template)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ASPxClientDocumentPreviewTab]
+  }
+}
+

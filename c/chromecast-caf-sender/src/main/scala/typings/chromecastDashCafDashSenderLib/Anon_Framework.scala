@@ -16,3 +16,12 @@ trait Anon_Framework extends js.Object {
   val frameworkNs: Anon_ActiveInputState
 }
 
+object Anon_Framework {
+  @scala.inline
+  def apply(frameworkNs: Anon_ActiveInputState): Anon_Framework = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frameworkNs")(frameworkNs)
+    __obj.asInstanceOf[Anon_Framework]
+  }
+}
+

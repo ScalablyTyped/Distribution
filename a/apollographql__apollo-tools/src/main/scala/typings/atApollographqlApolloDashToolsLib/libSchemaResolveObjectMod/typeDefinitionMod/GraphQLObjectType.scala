@@ -11,3 +11,14 @@ trait GraphQLObjectType extends js.Object {
   ] = js.undefined
 }
 
+object GraphQLObjectType {
+  @scala.inline
+  def apply(
+    resolveObject: atApollographqlApolloDashToolsLib.libSchemaResolveObjectMod.GraphQLObjectResolver[_, _] = null
+  ): GraphQLObjectType = {
+    val __obj = js.Dynamic.literal()
+    if (resolveObject != null) __obj.updateDynamic("resolveObject")(resolveObject)
+    __obj.asInstanceOf[GraphQLObjectType]
+  }
+}
+

@@ -33,3 +33,24 @@ trait FeatureStateEvent
   var State: js.Any
 }
 
+object FeatureStateEvent {
+  @scala.inline
+  def apply(
+    FeatureDescriptor: java.lang.String,
+    FeatureURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL,
+    IsEnabled: scala.Boolean,
+    Requery: scala.Boolean,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    State: js.Any
+  ): FeatureStateEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FeatureDescriptor")(FeatureDescriptor)
+    __obj.updateDynamic("FeatureURL")(FeatureURL)
+    __obj.updateDynamic("IsEnabled")(IsEnabled)
+    __obj.updateDynamic("Requery")(Requery)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("State")(State)
+    __obj.asInstanceOf[FeatureStateEvent]
+  }
+}
+

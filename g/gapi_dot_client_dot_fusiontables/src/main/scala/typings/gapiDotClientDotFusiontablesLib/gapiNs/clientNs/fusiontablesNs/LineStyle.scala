@@ -18,3 +18,22 @@ trait LineStyle extends js.Object {
   var strokeWeightStyler: js.UndefOr[StyleFunction] = js.undefined
 }
 
+object LineStyle {
+  @scala.inline
+  def apply(
+    strokeColor: java.lang.String = null,
+    strokeColorStyler: StyleFunction = null,
+    strokeOpacity: scala.Int | scala.Double = null,
+    strokeWeight: scala.Int | scala.Double = null,
+    strokeWeightStyler: StyleFunction = null
+  ): LineStyle = {
+    val __obj = js.Dynamic.literal()
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeColorStyler != null) __obj.updateDynamic("strokeColorStyler")(strokeColorStyler)
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
+    if (strokeWeightStyler != null) __obj.updateDynamic("strokeWeightStyler")(strokeWeightStyler)
+    __obj.asInstanceOf[LineStyle]
+  }
+}
+

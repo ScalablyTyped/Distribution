@@ -29,3 +29,14 @@ trait BasicChartSeries extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BasicChartSeries {
+  @scala.inline
+  def apply(series: ChartData = null, targetAxis: java.lang.String = null, `type`: java.lang.String = null): BasicChartSeries = {
+    val __obj = js.Dynamic.literal()
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (targetAxis != null) __obj.updateDynamic("targetAxis")(targetAxis)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BasicChartSeries]
+  }
+}
+

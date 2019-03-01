@@ -13,3 +13,21 @@ trait Card extends js.Object {
   var `type`: CardType
 }
 
+object Card {
+  @scala.inline
+  def apply(
+    `type`: CardType,
+    content: java.lang.String = null,
+    image: CardImage = null,
+    text: java.lang.String = null,
+    title: java.lang.String = null
+  ): Card = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Card]
+  }
+}
+

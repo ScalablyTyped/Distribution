@@ -12,3 +12,20 @@ trait GetStorageParams extends js.Object {
   var success: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_DataAny, scala.Unit]] = js.undefined
 }
 
+object GetStorageParams {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    success: js.Function1[/* res */ wegameDashApiLib.Anon_DataAny, scala.Unit] = null
+  ): GetStorageParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[GetStorageParams]
+  }
+}
+

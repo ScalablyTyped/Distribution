@@ -18,3 +18,32 @@ trait Options extends js.Object {
   var supports: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    add: js.UndefOr[scala.Boolean] = js.undefined,
+    browsers: js.Array[java.lang.String] | java.lang.String = null,
+    cascade: js.UndefOr[scala.Boolean] = js.undefined,
+    env: java.lang.String = null,
+    flexbox: scala.Boolean | autoprefixerLib.autoprefixerLibStrings.`no-2009` = null,
+    grid: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreUnknownVersions: js.UndefOr[scala.Boolean] = js.undefined,
+    remove: js.UndefOr[scala.Boolean] = js.undefined,
+    stats: js.Any = null,
+    supports: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add)
+    if (browsers != null) __obj.updateDynamic("browsers")(browsers.asInstanceOf[js.Any])
+    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (flexbox != null) __obj.updateDynamic("flexbox")(flexbox.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)
+    if (!js.isUndefined(ignoreUnknownVersions)) __obj.updateDynamic("ignoreUnknownVersions")(ignoreUnknownVersions)
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (!js.isUndefined(supports)) __obj.updateDynamic("supports")(supports)
+    __obj.asInstanceOf[Options]
+  }
+}
+

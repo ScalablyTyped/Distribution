@@ -60,3 +60,34 @@ trait IPv4RangeAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object IPv4RangeAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, IPv4RangeAggregation],
+    aggregation: js.Function1[Aggregation, IPv4RangeAggregation],
+    field: js.Function1[java.lang.String, IPv4RangeAggregation],
+    keyed: js.Function1[scala.Boolean, IPv4RangeAggregation],
+    lang: js.Function1[java.lang.String, IPv4RangeAggregation],
+    params: js.Function1[js.Object, IPv4RangeAggregation],
+    range: js.Function3[java.lang.String, java.lang.String, java.lang.String, IPv4RangeAggregation],
+    script: js.Function1[java.lang.String, IPv4RangeAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, IPv4RangeAggregation],
+    toJSON: js.Function0[js.Any]
+  ): IPv4RangeAggregation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("agg")(agg)
+    __obj.updateDynamic("aggregation")(aggregation)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("keyed")(keyed)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("scriptValuesSorted")(scriptValuesSorted)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[IPv4RangeAggregation]
+  }
+}
+

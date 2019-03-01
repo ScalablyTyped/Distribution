@@ -17,3 +17,20 @@ trait CellProtection extends js.Object {
   var IsPrintHidden: scala.Boolean
 }
 
+object CellProtection {
+  @scala.inline
+  def apply(
+    IsFormulaHidden: scala.Boolean,
+    IsHidden: scala.Boolean,
+    IsLocked: scala.Boolean,
+    IsPrintHidden: scala.Boolean
+  ): CellProtection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IsFormulaHidden")(IsFormulaHidden)
+    __obj.updateDynamic("IsHidden")(IsHidden)
+    __obj.updateDynamic("IsLocked")(IsLocked)
+    __obj.updateDynamic("IsPrintHidden")(IsPrintHidden)
+    __obj.asInstanceOf[CellProtection]
+  }
+}
+

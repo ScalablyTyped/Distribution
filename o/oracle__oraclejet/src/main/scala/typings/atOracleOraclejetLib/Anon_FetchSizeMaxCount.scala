@@ -10,3 +10,13 @@ trait Anon_FetchSizeMaxCount extends js.Object {
   var maxCount: scala.Double
 }
 
+object Anon_FetchSizeMaxCount {
+  @scala.inline
+  def apply(fetchSize: scala.Double, maxCount: scala.Double): Anon_FetchSizeMaxCount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fetchSize")(fetchSize)
+    __obj.updateDynamic("maxCount")(maxCount)
+    __obj.asInstanceOf[Anon_FetchSizeMaxCount]
+  }
+}
+

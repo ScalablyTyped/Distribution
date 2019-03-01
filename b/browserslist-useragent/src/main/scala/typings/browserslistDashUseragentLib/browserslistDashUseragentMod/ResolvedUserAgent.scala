@@ -10,3 +10,13 @@ trait ResolvedUserAgent extends js.Object {
   var version: java.lang.String
 }
 
+object ResolvedUserAgent {
+  @scala.inline
+  def apply(family: java.lang.String, version: java.lang.String): ResolvedUserAgent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("family")(family)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[ResolvedUserAgent]
+  }
+}
+

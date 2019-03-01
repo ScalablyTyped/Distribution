@@ -51,3 +51,24 @@ trait ShapeLoadOptions extends js.Object {
   var view: js.UndefOr[ShapeViewLoadOptions] = js.undefined
 }
 
+object ShapeLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    select: js.UndefOr[scala.Boolean] = js.undefined,
+    text: js.UndefOr[scala.Boolean] = js.undefined,
+    view: ShapeViewLoadOptions = null
+  ): ShapeLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[ShapeLoadOptions]
+  }
+}
+

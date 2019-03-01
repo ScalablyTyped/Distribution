@@ -153,3 +153,136 @@ trait ClientJS extends js.Object {
   def isWindows(): scala.Boolean
 }
 
+object ClientJS {
+  @scala.inline
+  def apply(
+    getAvailableResolution: js.Function0[java.lang.String],
+    getBrowser: js.Function0[java.lang.String],
+    getBrowserMajorVersion: js.Function0[java.lang.String],
+    getBrowserVersion: js.Function0[java.lang.String],
+    getCPU: js.Function0[java.lang.String],
+    getCanvasPrint: js.Function0[java.lang.String],
+    getColorDepth: js.Function0[java.lang.String],
+    getCurrentResolution: js.Function0[java.lang.String],
+    getCustomFingerprint: js.Function1[/* repeated */ java.lang.String | scala.Double, scala.Double],
+    getDevice: js.Function0[java.lang.String],
+    getDeviceType: js.Function0[java.lang.String],
+    getDeviceVendor: js.Function0[java.lang.String],
+    getDeviceXDPI: js.Function0[java.lang.String],
+    getDeviceYDPI: js.Function0[java.lang.String],
+    getEngine: js.Function0[java.lang.String],
+    getEngineVersion: js.Function0[java.lang.String],
+    getFingerprint: js.Function0[scala.Double],
+    getFlashVersion: js.Function0[java.lang.String],
+    getFonts: js.Function0[java.lang.String],
+    getJavaVersion: js.Function0[java.lang.String],
+    getLanguage: js.Function0[java.lang.String],
+    getMimeTypes: js.Function0[java.lang.String],
+    getOS: js.Function0[java.lang.String],
+    getOSVersion: js.Function0[java.lang.String],
+    getPlugins: js.Function0[java.lang.String],
+    getScreenPrint: js.Function0[java.lang.String],
+    getSilverlightVersion: js.Function0[java.lang.String],
+    getSoftwareVersion: js.Function0[java.lang.String],
+    getSystemLanguage: js.Function0[java.lang.String],
+    getTimeZone: js.Function0[java.lang.String],
+    getUserAgent: js.Function0[java.lang.String],
+    getUserAgentLowerCase: js.Function0[java.lang.String],
+    isCanvas: js.Function0[scala.Boolean],
+    isChrome: js.Function0[scala.Boolean],
+    isCookie: js.Function0[scala.Boolean],
+    isFirefox: js.Function0[scala.Boolean],
+    isFlash: js.Function0[scala.Boolean],
+    isFont: js.Function1[java.lang.String, scala.Boolean],
+    isIE: js.Function0[scala.Boolean],
+    isIpad: js.Function0[scala.Boolean],
+    isIphone: js.Function0[scala.Boolean],
+    isIpod: js.Function0[scala.Boolean],
+    isJava: js.Function0[scala.Boolean],
+    isLinux: js.Function0[scala.Boolean],
+    isLocalStorage: js.Function0[scala.Boolean],
+    isMac: js.Function0[scala.Boolean],
+    isMimeTypes: js.Function0[scala.Boolean],
+    isMobile: js.Function0[scala.Boolean],
+    isMobileAndroid: js.Function0[scala.Boolean],
+    isMobileBlackBerry: js.Function0[scala.Boolean],
+    isMobileIOS: js.Function0[scala.Boolean],
+    isMobileMajor: js.Function0[scala.Boolean],
+    isMobileOpera: js.Function0[scala.Boolean],
+    isMobileSafari: js.Function0[scala.Boolean],
+    isMobileWindows: js.Function0[scala.Boolean],
+    isOpera: js.Function0[scala.Boolean],
+    isSafari: js.Function0[scala.Boolean],
+    isSessionStorage: js.Function0[scala.Boolean],
+    isSilverlight: js.Function0[scala.Boolean],
+    isSolaris: js.Function0[scala.Boolean],
+    isUbuntu: js.Function0[scala.Boolean],
+    isWindows: js.Function0[scala.Boolean]
+  ): ClientJS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAvailableResolution")(getAvailableResolution)
+    __obj.updateDynamic("getBrowser")(getBrowser)
+    __obj.updateDynamic("getBrowserMajorVersion")(getBrowserMajorVersion)
+    __obj.updateDynamic("getBrowserVersion")(getBrowserVersion)
+    __obj.updateDynamic("getCPU")(getCPU)
+    __obj.updateDynamic("getCanvasPrint")(getCanvasPrint)
+    __obj.updateDynamic("getColorDepth")(getColorDepth)
+    __obj.updateDynamic("getCurrentResolution")(getCurrentResolution)
+    __obj.updateDynamic("getCustomFingerprint")(getCustomFingerprint)
+    __obj.updateDynamic("getDevice")(getDevice)
+    __obj.updateDynamic("getDeviceType")(getDeviceType)
+    __obj.updateDynamic("getDeviceVendor")(getDeviceVendor)
+    __obj.updateDynamic("getDeviceXDPI")(getDeviceXDPI)
+    __obj.updateDynamic("getDeviceYDPI")(getDeviceYDPI)
+    __obj.updateDynamic("getEngine")(getEngine)
+    __obj.updateDynamic("getEngineVersion")(getEngineVersion)
+    __obj.updateDynamic("getFingerprint")(getFingerprint)
+    __obj.updateDynamic("getFlashVersion")(getFlashVersion)
+    __obj.updateDynamic("getFonts")(getFonts)
+    __obj.updateDynamic("getJavaVersion")(getJavaVersion)
+    __obj.updateDynamic("getLanguage")(getLanguage)
+    __obj.updateDynamic("getMimeTypes")(getMimeTypes)
+    __obj.updateDynamic("getOS")(getOS)
+    __obj.updateDynamic("getOSVersion")(getOSVersion)
+    __obj.updateDynamic("getPlugins")(getPlugins)
+    __obj.updateDynamic("getScreenPrint")(getScreenPrint)
+    __obj.updateDynamic("getSilverlightVersion")(getSilverlightVersion)
+    __obj.updateDynamic("getSoftwareVersion")(getSoftwareVersion)
+    __obj.updateDynamic("getSystemLanguage")(getSystemLanguage)
+    __obj.updateDynamic("getTimeZone")(getTimeZone)
+    __obj.updateDynamic("getUserAgent")(getUserAgent)
+    __obj.updateDynamic("getUserAgentLowerCase")(getUserAgentLowerCase)
+    __obj.updateDynamic("isCanvas")(isCanvas)
+    __obj.updateDynamic("isChrome")(isChrome)
+    __obj.updateDynamic("isCookie")(isCookie)
+    __obj.updateDynamic("isFirefox")(isFirefox)
+    __obj.updateDynamic("isFlash")(isFlash)
+    __obj.updateDynamic("isFont")(isFont)
+    __obj.updateDynamic("isIE")(isIE)
+    __obj.updateDynamic("isIpad")(isIpad)
+    __obj.updateDynamic("isIphone")(isIphone)
+    __obj.updateDynamic("isIpod")(isIpod)
+    __obj.updateDynamic("isJava")(isJava)
+    __obj.updateDynamic("isLinux")(isLinux)
+    __obj.updateDynamic("isLocalStorage")(isLocalStorage)
+    __obj.updateDynamic("isMac")(isMac)
+    __obj.updateDynamic("isMimeTypes")(isMimeTypes)
+    __obj.updateDynamic("isMobile")(isMobile)
+    __obj.updateDynamic("isMobileAndroid")(isMobileAndroid)
+    __obj.updateDynamic("isMobileBlackBerry")(isMobileBlackBerry)
+    __obj.updateDynamic("isMobileIOS")(isMobileIOS)
+    __obj.updateDynamic("isMobileMajor")(isMobileMajor)
+    __obj.updateDynamic("isMobileOpera")(isMobileOpera)
+    __obj.updateDynamic("isMobileSafari")(isMobileSafari)
+    __obj.updateDynamic("isMobileWindows")(isMobileWindows)
+    __obj.updateDynamic("isOpera")(isOpera)
+    __obj.updateDynamic("isSafari")(isSafari)
+    __obj.updateDynamic("isSessionStorage")(isSessionStorage)
+    __obj.updateDynamic("isSilverlight")(isSilverlight)
+    __obj.updateDynamic("isSolaris")(isSolaris)
+    __obj.updateDynamic("isUbuntu")(isUbuntu)
+    __obj.updateDynamic("isWindows")(isWindows)
+    __obj.asInstanceOf[ClientJS]
+  }
+}
+

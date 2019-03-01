@@ -12,3 +12,13 @@ trait ProductUnitPricingMeasure extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ProductUnitPricingMeasure {
+  @scala.inline
+  def apply(unit: java.lang.String = null, value: scala.Int | scala.Double = null): ProductUnitPricingMeasure = {
+    val __obj = js.Dynamic.literal()
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProductUnitPricingMeasure]
+  }
+}
+

@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object gtinLibStrings {
   @js.native
-  sealed trait `GTIN-12` extends js.Object
+  sealed trait `GTIN-12`
+    extends gtinLib.gtinMod.GtinFormat
   
   @js.native
-  sealed trait `GTIN-13` extends js.Object
+  sealed trait `GTIN-13`
+    extends gtinLib.gtinMod.GtinFormat
   
   @js.native
-  sealed trait `GTIN-14` extends js.Object
+  sealed trait `GTIN-14`
+    extends gtinLib.gtinMod.GtinFormat
   
   @js.native
-  sealed trait `GTIN-8` extends js.Object
+  sealed trait `GTIN-8`
+    extends gtinLib.gtinMod.GtinFormat
   
   @scala.inline
   def `GTIN-12`: `GTIN-12` = "GTIN-12".asInstanceOf[`GTIN-12`]

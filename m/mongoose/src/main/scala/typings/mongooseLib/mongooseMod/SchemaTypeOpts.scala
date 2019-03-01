@@ -119,3 +119,62 @@ trait SchemaTypeOpts[T]
   ] = js.undefined
 }
 
+object SchemaTypeOpts {
+  @scala.inline
+  def apply[T](
+    StringDictionary: /* other */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    alias: java.lang.String = null,
+    auto: scala.Boolean | js.Any = null,
+    default: mongooseLib.mongooseMod.SchemaTypeOptsNs.DefaultFn[T] | T = null,
+    enum: js.Array[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.EnumOpts[T] | js.Any = null,
+    expires: scala.Double | java.lang.String | js.Any = null,
+    get: js.Function2[/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts[T]], T | _] = null,
+    index: mongooseLib.mongooseMod.SchemaTypeOptsNs.IndexOpts | scala.Boolean | java.lang.String = null,
+    lowercase: scala.Boolean | js.Any = null,
+    `match`: stdLib.RegExp | (js.Tuple2[stdLib.RegExp, java.lang.String]) | js.Any = null,
+    max: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | stdLib.Date | (js.Tuple2[stdLib.Date, java.lang.String]) | js.Any = null,
+    maxlength: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any = null,
+    min: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | stdLib.Date | (js.Tuple2[stdLib.Date, java.lang.String]) | js.Any = null,
+    minlength: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any = null,
+    required: mongooseLib.mongooseMod.SchemaTypeOptsNs.RequiredFn[T] | scala.Boolean | (js.Tuple2[scala.Boolean, java.lang.String]) | java.lang.String | (js.Tuple2[java.lang.String, java.lang.String]) | js.Any = null,
+    select: scala.Boolean | js.Any = null,
+    set: js.Function2[/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts[T]], T | _] = null,
+    sparse: scala.Boolean | js.Any = null,
+    text: scala.Boolean | js.Any = null,
+    trim: scala.Boolean | js.Any = null,
+    `type`: T = null,
+    unique: scala.Boolean | js.Any = null,
+    uppercase: scala.Boolean | js.Any = null,
+    validate: stdLib.RegExp | (js.Tuple2[stdLib.RegExp, java.lang.String]) | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T] | (js.Tuple2[mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T], java.lang.String]) | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationOpts | (js.Array[
+      mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationOpts
+    ]) = null
+  ): SchemaTypeOpts[T] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (auto != null) __obj.updateDynamic("auto")(auto.asInstanceOf[js.Any])
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (lowercase != null) __obj.updateDynamic("lowercase")(lowercase.asInstanceOf[js.Any])
+    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (sparse != null) __obj.updateDynamic("sparse")(sparse.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (trim != null) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (unique != null) __obj.updateDynamic("unique")(unique.asInstanceOf[js.Any])
+    if (uppercase != null) __obj.updateDynamic("uppercase")(uppercase.asInstanceOf[js.Any])
+    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SchemaTypeOpts[T]]
+  }
+}
+

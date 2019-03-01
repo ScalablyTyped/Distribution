@@ -951,12 +951,16 @@ object SdkNs extends js.Object {
   @JSName("Mdq")
   @js.native
   object MdqNs extends js.Object {
+    trait AssociatedMenuBehavior extends js.Object
+    
     trait AssociatedMenuConfiguration extends js.Object {
       var Behavior: AssociatedMenuBehavior
       var Group: AssociatedMenuGroup
       var Label: Label
       var Order: scala.Double
     }
+    
+    trait AssociatedMenuGroup extends js.Object
     
     @js.native
     sealed trait AttributeMetadataProperties extends js.Object
@@ -975,6 +979,8 @@ object SdkNs extends js.Object {
       var Share: CascadeType
       var Unshare: CascadeType
     }
+    
+    trait CascadeType extends js.Object
     
     @js.native
     sealed trait DeletedMetadataFilters extends js.Object
@@ -1217,6 +1223,8 @@ object SdkNs extends js.Object {
       def this(criteria: MetadataFilterExpression, properties: MetadataPropertiesExpression) = this()
     }
     
+    trait RelationshipType extends js.Object
+    
     @js.native
     sealed trait SearchableAttributeMetadataProperties extends js.Object
     
@@ -1238,6 +1246,8 @@ object SdkNs extends js.Object {
       var PrivilegeId: java.lang.String
       var PrivilegeType: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Append | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.AppendTo | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Assign | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Create | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Delete | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.None | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Read | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Share | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Write
     }
+    
+    trait SecurityType extends js.Object
     
     @js.native
     object AttributeMetadataProperties extends js.Object {
@@ -2921,11 +2931,6 @@ object SdkNs extends js.Object {
       
     }
     
-    type AssociatedMenuBehavior = microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.DoNotDisplay | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.UseCollectionName | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.UseLabel
-    type AssociatedMenuGroup = microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Details | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Marketing | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Sales | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Service
-    type CascadeType = microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Active | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Cascade | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.NoCascade | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.UserOwned
-    type RelationshipType = microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Default | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.ManyToManyRelationship | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.OneToManyRelationship
-    type SecurityType = microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Append | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Inheritance | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.None | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.ParentChild | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Pointer
   }
   
   /* static members */

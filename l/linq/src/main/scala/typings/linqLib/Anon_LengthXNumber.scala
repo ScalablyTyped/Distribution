@@ -10,3 +10,16 @@ trait Anon_LengthXNumber[TCollection]
   var length: scala.Double
 }
 
+object Anon_LengthXNumber {
+  @scala.inline
+  def apply[TCollection](
+    length: scala.Double,
+    NumberDictionary: /* x */ org.scalablytyped.runtime.NumberDictionary[TCollection] = null
+  ): Anon_LengthXNumber[TCollection] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("length")(length)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[Anon_LengthXNumber[TCollection]]
+  }
+}
+

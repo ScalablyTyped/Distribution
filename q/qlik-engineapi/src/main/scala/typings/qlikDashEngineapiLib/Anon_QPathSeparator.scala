@@ -12,3 +12,12 @@ trait Anon_QPathSeparator extends js.Object {
   var qPathSeparator: java.lang.String
 }
 
+object Anon_QPathSeparator {
+  @scala.inline
+  def apply(qPathSeparator: java.lang.String): Anon_QPathSeparator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qPathSeparator")(qPathSeparator)
+    __obj.asInstanceOf[Anon_QPathSeparator]
+  }
+}
+

@@ -12,3 +12,15 @@ trait Response extends js.Object {
   var url: java.lang.String
 }
 
+object Response {
+  @scala.inline
+  def apply(error: java.lang.String, id: java.lang.String, status: java.lang.String, url: java.lang.String): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Response]
+  }
+}
+

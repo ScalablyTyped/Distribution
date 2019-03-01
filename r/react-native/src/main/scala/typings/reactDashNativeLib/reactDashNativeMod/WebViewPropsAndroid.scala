@@ -39,3 +39,24 @@ trait WebViewPropsAndroid extends js.Object {
   var userAgent: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WebViewPropsAndroid {
+  @scala.inline
+  def apply(
+    allowFileAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    domStorageEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    javaScriptEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    mixedContentMode: reactDashNativeLib.reactDashNativeLibStrings.never | reactDashNativeLib.reactDashNativeLibStrings.always | reactDashNativeLib.reactDashNativeLibStrings.compatibility = null,
+    saveFormDataDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    userAgent: java.lang.String = null
+  ): WebViewPropsAndroid = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowFileAccess)) __obj.updateDynamic("allowFileAccess")(allowFileAccess)
+    if (!js.isUndefined(domStorageEnabled)) __obj.updateDynamic("domStorageEnabled")(domStorageEnabled)
+    if (!js.isUndefined(javaScriptEnabled)) __obj.updateDynamic("javaScriptEnabled")(javaScriptEnabled)
+    if (mixedContentMode != null) __obj.updateDynamic("mixedContentMode")(mixedContentMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveFormDataDisabled)) __obj.updateDynamic("saveFormDataDisabled")(saveFormDataDisabled)
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    __obj.asInstanceOf[WebViewPropsAndroid]
+  }
+}
+

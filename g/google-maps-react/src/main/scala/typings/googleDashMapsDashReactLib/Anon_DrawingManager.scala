@@ -9,3 +9,14 @@ trait Anon_DrawingManager extends js.Object {
   var DrawingManager: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.drawingNs.DrawingManager]
 }
 
+object Anon_DrawingManager {
+  @scala.inline
+  def apply(
+    DrawingManager: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.drawingNs.DrawingManager]
+  ): Anon_DrawingManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DrawingManager")(DrawingManager)
+    __obj.asInstanceOf[Anon_DrawingManager]
+  }
+}
+

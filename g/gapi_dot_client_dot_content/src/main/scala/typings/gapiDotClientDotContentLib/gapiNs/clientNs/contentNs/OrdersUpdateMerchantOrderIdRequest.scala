@@ -12,3 +12,13 @@ trait OrdersUpdateMerchantOrderIdRequest extends js.Object {
   var operationId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OrdersUpdateMerchantOrderIdRequest {
+  @scala.inline
+  def apply(merchantOrderId: java.lang.String = null, operationId: java.lang.String = null): OrdersUpdateMerchantOrderIdRequest = {
+    val __obj = js.Dynamic.literal()
+    if (merchantOrderId != null) __obj.updateDynamic("merchantOrderId")(merchantOrderId)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    __obj.asInstanceOf[OrdersUpdateMerchantOrderIdRequest]
+  }
+}
+

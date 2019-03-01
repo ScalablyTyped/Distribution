@@ -27,3 +27,22 @@ trait NodesTask extends js.Object {
   var `type`: js.UndefOr[BPMNTasks | java.lang.String] = js.undefined
 }
 
+object NodesTask {
+  @scala.inline
+  def apply(
+    call: js.UndefOr[scala.Boolean] = js.undefined,
+    compensation: js.UndefOr[scala.Boolean] = js.undefined,
+    events: js.Array[_] = null,
+    loop: BPMNLoops | java.lang.String = null,
+    `type`: BPMNTasks | java.lang.String = null
+  ): NodesTask = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(call)) __obj.updateDynamic("call")(call)
+    if (!js.isUndefined(compensation)) __obj.updateDynamic("compensation")(compensation)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodesTask]
+  }
+}
+

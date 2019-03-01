@@ -113,3 +113,54 @@ trait DropotronConfiguration extends js.Object {
   var submenuClassPrefix: java.lang.String
 }
 
+object DropotronConfiguration {
+  @scala.inline
+  def apply(
+    IEOffsetX: scala.Double,
+    IEOffsetY: scala.Double,
+    alignment: java.lang.String,
+    baseZIndex: scala.Double,
+    cloneOnDetach: scala.Boolean,
+    detach: scala.Boolean,
+    easing: java.lang.String,
+    expandMode: java.lang.String,
+    globalOffsetY: scala.Double,
+    hideDelay: scala.Double,
+    hoverDelay: scala.Double,
+    menuClass: java.lang.String,
+    mode: java.lang.String,
+    noOpenerFade: scala.Boolean,
+    offsetX: scala.Double,
+    offsetY: scala.Double,
+    openerActiveClass: java.lang.String,
+    openerClass: java.lang.String,
+    selectorParent: JQuery,
+    speed: java.lang.String,
+    submenuClassPrefix: java.lang.String
+  ): DropotronConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IEOffsetX")(IEOffsetX)
+    __obj.updateDynamic("IEOffsetY")(IEOffsetY)
+    __obj.updateDynamic("alignment")(alignment)
+    __obj.updateDynamic("baseZIndex")(baseZIndex)
+    __obj.updateDynamic("cloneOnDetach")(cloneOnDetach)
+    __obj.updateDynamic("detach")(detach)
+    __obj.updateDynamic("easing")(easing)
+    __obj.updateDynamic("expandMode")(expandMode)
+    __obj.updateDynamic("globalOffsetY")(globalOffsetY)
+    __obj.updateDynamic("hideDelay")(hideDelay)
+    __obj.updateDynamic("hoverDelay")(hoverDelay)
+    __obj.updateDynamic("menuClass")(menuClass)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("noOpenerFade")(noOpenerFade)
+    __obj.updateDynamic("offsetX")(offsetX)
+    __obj.updateDynamic("offsetY")(offsetY)
+    __obj.updateDynamic("openerActiveClass")(openerActiveClass)
+    __obj.updateDynamic("openerClass")(openerClass)
+    __obj.updateDynamic("selectorParent")(selectorParent)
+    __obj.updateDynamic("speed")(speed)
+    __obj.updateDynamic("submenuClassPrefix")(submenuClassPrefix)
+    __obj.asInstanceOf[DropotronConfiguration]
+  }
+}
+

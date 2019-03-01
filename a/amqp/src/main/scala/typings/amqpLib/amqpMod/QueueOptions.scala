@@ -61,3 +61,26 @@ trait QueueOptions extends js.Object {
   var passive: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object QueueOptions {
+  @scala.inline
+  def apply(
+    arguments: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    autoDelete: js.UndefOr[scala.Boolean] = js.undefined,
+    closeChannelOnUnsubscribe: js.UndefOr[scala.Boolean] = js.undefined,
+    durable: js.UndefOr[scala.Boolean] = js.undefined,
+    exclusive: js.UndefOr[scala.Boolean] = js.undefined,
+    noDeclare: js.UndefOr[scala.Boolean] = js.undefined,
+    passive: js.UndefOr[scala.Boolean] = js.undefined
+  ): QueueOptions = {
+    val __obj = js.Dynamic.literal()
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete)
+    if (!js.isUndefined(closeChannelOnUnsubscribe)) __obj.updateDynamic("closeChannelOnUnsubscribe")(closeChannelOnUnsubscribe)
+    if (!js.isUndefined(durable)) __obj.updateDynamic("durable")(durable)
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (!js.isUndefined(noDeclare)) __obj.updateDynamic("noDeclare")(noDeclare)
+    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive)
+    __obj.asInstanceOf[QueueOptions]
+  }
+}
+

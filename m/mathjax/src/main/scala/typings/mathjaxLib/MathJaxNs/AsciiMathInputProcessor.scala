@@ -18,3 +18,13 @@ trait AsciiMathInputProcessor extends js.Object {
   var displaystyle: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AsciiMathInputProcessor {
+  @scala.inline
+  def apply(decimal: java.lang.String = null, displaystyle: js.UndefOr[scala.Boolean] = js.undefined): AsciiMathInputProcessor = {
+    val __obj = js.Dynamic.literal()
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
+    if (!js.isUndefined(displaystyle)) __obj.updateDynamic("displaystyle")(displaystyle)
+    __obj.asInstanceOf[AsciiMathInputProcessor]
+  }
+}
+

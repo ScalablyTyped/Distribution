@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait GeoJSONSource extends GeoJSONSourceRaw {
+trait GeoJSONSource
+  extends GeoJSONSourceRaw
+     with AnySourceImpl {
   def getClusterChildren(
     clusterId: scala.Double,
     callback: js.Function2[

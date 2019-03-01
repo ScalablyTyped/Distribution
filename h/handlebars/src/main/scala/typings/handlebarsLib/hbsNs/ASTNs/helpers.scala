@@ -11,3 +11,18 @@ trait helpers extends js.Object {
   def simpleId(path: PathExpression): scala.Boolean
 }
 
+object helpers {
+  @scala.inline
+  def apply(
+    helperExpression: js.Function1[Node, scala.Boolean],
+    scopeId: js.Function1[PathExpression, scala.Boolean],
+    simpleId: js.Function1[PathExpression, scala.Boolean]
+  ): helpers = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("helperExpression")(helperExpression)
+    __obj.updateDynamic("scopeId")(scopeId)
+    __obj.updateDynamic("simpleId")(simpleId)
+    __obj.asInstanceOf[helpers]
+  }
+}
+

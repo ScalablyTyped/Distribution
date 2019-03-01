@@ -12,3 +12,19 @@ trait Anon_ApplicationttmlxmlApplicationxsubrip extends js.Object {
   var uri: java.lang.String
 }
 
+object Anon_ApplicationttmlxmlApplicationxsubrip {
+  @scala.inline
+  def apply(
+    `type`: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.`application/x-subrip` | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.`application/ttml+xml` | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.`text/vtt`,
+    uri: java.lang.String,
+    language: java.lang.String = null,
+    title: java.lang.String = null
+  ): Anon_ApplicationttmlxmlApplicationxsubrip = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("uri")(uri)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_ApplicationttmlxmlApplicationxsubrip]
+  }
+}
+

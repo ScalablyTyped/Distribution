@@ -24,3 +24,19 @@ trait CollapsedFieldProps extends js.Object {
   var `type`: reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.array | reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.`object`
 }
 
+object CollapsedFieldProps {
+  @scala.inline
+  def apply(
+    namespace: js.Array[java.lang.String | scala.Null],
+    src: js.Object,
+    `type`: reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.array | reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.`object`,
+    name: java.lang.String = null
+  ): CollapsedFieldProps = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("src")(src)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[CollapsedFieldProps]
+  }
+}
+

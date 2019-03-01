@@ -21,3 +21,18 @@ trait SegmentedControlSegment extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SegmentedControlSegment {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: NativeImage = null,
+    label: java.lang.String = null
+  ): SegmentedControlSegment = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[SegmentedControlSegment]
+  }
+}
+

@@ -97,3 +97,52 @@ trait Component extends Directive {
   var viewProviders: js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.Provider]] = js.undefined
 }
 
+object Component {
+  @scala.inline
+  def apply(
+    animations: js.Array[_] = null,
+    changeDetection: atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectionStrategy = null,
+    encapsulation: atAngularCoreLib.srcMetadataViewMod.ViewEncapsulation = null,
+    entryComponents: js.Array[atAngularCoreLib.srcTypeMod.Type[_] | js.Array[_]] = null,
+    exportAs: java.lang.String = null,
+    host: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    inputs: js.Array[java.lang.String] = null,
+    interpolation: js.Tuple2[java.lang.String, java.lang.String] = null,
+    jit: atAngularCoreLib.atAngularCoreLibNumbers.`true` = null,
+    moduleId: java.lang.String = null,
+    outputs: js.Array[java.lang.String] = null,
+    preserveWhitespaces: js.UndefOr[scala.Boolean] = js.undefined,
+    providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] = null,
+    queries: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    selector: java.lang.String = null,
+    styleUrls: js.Array[java.lang.String] = null,
+    styles: js.Array[java.lang.String] = null,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null,
+    viewProviders: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] = null
+  ): Component = {
+    val __obj = js.Dynamic.literal()
+    if (animations != null) __obj.updateDynamic("animations")(animations)
+    if (changeDetection != null) __obj.updateDynamic("changeDetection")(changeDetection)
+    if (encapsulation != null) __obj.updateDynamic("encapsulation")(encapsulation)
+    if (entryComponents != null) __obj.updateDynamic("entryComponents")(entryComponents)
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (jit != null) __obj.updateDynamic("jit")(jit)
+    if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId)
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (styleUrls != null) __obj.updateDynamic("styleUrls")(styleUrls)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (viewProviders != null) __obj.updateDynamic("viewProviders")(viewProviders)
+    __obj.asInstanceOf[Component]
+  }
+}
+

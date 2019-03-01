@@ -36,3 +36,26 @@ trait GitImportRequest extends js.Object {
   var url: java.lang.String
 }
 
+object GitImportRequest {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    detailedStatus: GitImportStatusDetail,
+    importRequestId: scala.Double,
+    parameters: GitImportRequestParameters,
+    repository: GitRepository,
+    status: GitAsyncOperationStatus,
+    url: java.lang.String
+  ): GitImportRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("detailedStatus")(detailedStatus)
+    __obj.updateDynamic("importRequestId")(importRequestId)
+    __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("repository")(repository)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GitImportRequest]
+  }
+}
+

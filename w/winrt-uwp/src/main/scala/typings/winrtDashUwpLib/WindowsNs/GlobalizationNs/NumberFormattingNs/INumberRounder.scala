@@ -45,3 +45,24 @@ trait INumberRounder extends js.Object {
   def roundUInt64(value: scala.Double): scala.Double
 }
 
+object INumberRounder {
+  @scala.inline
+  def apply(
+    roundDouble: js.Function1[scala.Double, scala.Double],
+    roundInt32: js.Function1[scala.Double, scala.Double],
+    roundInt64: js.Function1[scala.Double, scala.Double],
+    roundSingle: js.Function1[scala.Double, scala.Double],
+    roundUInt32: js.Function1[scala.Double, scala.Double],
+    roundUInt64: js.Function1[scala.Double, scala.Double]
+  ): INumberRounder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("roundDouble")(roundDouble)
+    __obj.updateDynamic("roundInt32")(roundInt32)
+    __obj.updateDynamic("roundInt64")(roundInt64)
+    __obj.updateDynamic("roundSingle")(roundSingle)
+    __obj.updateDynamic("roundUInt32")(roundUInt32)
+    __obj.updateDynamic("roundUInt64")(roundUInt64)
+    __obj.asInstanceOf[INumberRounder]
+  }
+}
+

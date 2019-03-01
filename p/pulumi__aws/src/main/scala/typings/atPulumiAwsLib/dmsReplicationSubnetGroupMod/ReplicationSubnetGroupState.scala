@@ -31,3 +31,24 @@ trait ReplicationSubnetGroupState extends js.Object {
   val vpcId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ReplicationSubnetGroupState {
+  @scala.inline
+  def apply(
+    replicationSubnetGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationSubnetGroupDescription: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationSubnetGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ReplicationSubnetGroupState = {
+    val __obj = js.Dynamic.literal()
+    if (replicationSubnetGroupArn != null) __obj.updateDynamic("replicationSubnetGroupArn")(replicationSubnetGroupArn.asInstanceOf[js.Any])
+    if (replicationSubnetGroupDescription != null) __obj.updateDynamic("replicationSubnetGroupDescription")(replicationSubnetGroupDescription.asInstanceOf[js.Any])
+    if (replicationSubnetGroupId != null) __obj.updateDynamic("replicationSubnetGroupId")(replicationSubnetGroupId.asInstanceOf[js.Any])
+    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReplicationSubnetGroupState]
+  }
+}
+

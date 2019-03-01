@@ -12,3 +12,20 @@ trait Anon_EllipsoidOnlySunLighting extends js.Object {
   var textureUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_EllipsoidOnlySunLighting {
+  @scala.inline
+  def apply(
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    onlySunLighting: js.UndefOr[scala.Boolean] = js.undefined,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    textureUrl: java.lang.String = null
+  ): Anon_EllipsoidOnlySunLighting = {
+    val __obj = js.Dynamic.literal()
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (!js.isUndefined(onlySunLighting)) __obj.updateDynamic("onlySunLighting")(onlySunLighting)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (textureUrl != null) __obj.updateDynamic("textureUrl")(textureUrl)
+    __obj.asInstanceOf[Anon_EllipsoidOnlySunLighting]
+  }
+}
+

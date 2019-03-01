@@ -76,3 +76,34 @@ trait Anon_AlignEnabled extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AlignEnabled {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    formatter: js.Function = null,
+    rotation: scala.Int | scala.Double = null,
+    style: highchartsLib.highchartsMod.HighchartsNs.CSSObject = null,
+    textAlign: java.lang.String = null,
+    useHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlign: java.lang.String = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Anon_AlignEnabled = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AlignEnabled]
+  }
+}
+

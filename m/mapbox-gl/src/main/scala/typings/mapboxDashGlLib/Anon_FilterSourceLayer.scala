@@ -10,3 +10,13 @@ trait Anon_FilterSourceLayer extends js.Object {
   var sourceLayer: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_FilterSourceLayer {
+  @scala.inline
+  def apply(filter: js.Array[_] = null, sourceLayer: java.lang.String = null): Anon_FilterSourceLayer = {
+    val __obj = js.Dynamic.literal()
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (sourceLayer != null) __obj.updateDynamic("sourceLayer")(sourceLayer)
+    __obj.asInstanceOf[Anon_FilterSourceLayer]
+  }
+}
+

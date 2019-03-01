@@ -11,3 +11,13 @@ trait DivisionSearchResponse extends js.Object {
   var results: js.UndefOr[js.Array[DivisionSearchResult]] = js.undefined
 }
 
+object DivisionSearchResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, results: js.Array[DivisionSearchResult] = null): DivisionSearchResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (results != null) __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[DivisionSearchResponse]
+  }
+}
+

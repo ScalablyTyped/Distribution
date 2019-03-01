@@ -13,3 +13,17 @@ trait DatasetResource extends js.Object {
   def aggregate(request: gapiDotClientDotFitnessLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[AggregateResponse]
 }
 
+object DatasetResource {
+  @scala.inline
+  def apply(
+    aggregate: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AggregateResponse]
+    ]
+  ): DatasetResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregate")(aggregate)
+    __obj.asInstanceOf[DatasetResource]
+  }
+}
+

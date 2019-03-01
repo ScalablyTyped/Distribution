@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ParameterDeclaration
   extends NamedDeclaration
-     with JSDocContainer {
+     with JSDocContainer
+     with HasExpressionInitializer
+     with HasType
+     with VariableLikeDeclaration
+     with _BindingOrAssignmentElement
+     with _HasJSDoc {
   var dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
   var initializer: js.UndefOr[Expression] = js.native
   @JSName("name")

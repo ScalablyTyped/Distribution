@@ -7,46 +7,60 @@ import scala.scalajs.js.annotation._
 
 object browserDashSyncLibStrings {
   @js.native
-  sealed trait add extends js.Object
+  sealed trait add
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.WatchEvents
   
   @js.native
-  sealed trait addDir extends js.Object
+  sealed trait addDir
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.WatchEvents
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.WatchEvents
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.LogLevel
   
   @js.native
-  sealed trait external extends js.Object
+  sealed trait external
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.OpenOptions
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.LogLevel
   
   @js.native
-  sealed trait local extends js.Object
+  sealed trait local
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.OpenOptions
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait silent
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.LogLevel
   
   @js.native
-  sealed trait tunnel extends js.Object
+  sealed trait tunnel
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.OpenOptions
   
   @js.native
-  sealed trait ui extends js.Object
+  sealed trait ui
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.OpenOptions
   
   @js.native
-  sealed trait `ui-external` extends js.Object
+  sealed trait `ui-external`
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.OpenOptions
   
   @js.native
-  sealed trait unlink extends js.Object
+  sealed trait unlink
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.WatchEvents
   
   @js.native
-  sealed trait unlinkDir extends js.Object
+  sealed trait unlinkDir
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.WatchEvents
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends browserDashSyncLib.browserDashSyncMod.browserSyncNs.LogLevel
   
   @scala.inline
   def add: add = "add".asInstanceOf[add]

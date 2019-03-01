@@ -11,3 +11,18 @@ trait Anon_KeyCode extends js.Object {
   var previousFocusElement: stdLib.HTMLElement
 }
 
+object Anon_KeyCode {
+  @scala.inline
+  def apply(
+    keyCode: scala.Double,
+    nextFocusElement: stdLib.HTMLElement,
+    previousFocusElement: stdLib.HTMLElement
+  ): Anon_KeyCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyCode")(keyCode)
+    __obj.updateDynamic("nextFocusElement")(nextFocusElement)
+    __obj.updateDynamic("previousFocusElement")(previousFocusElement)
+    __obj.asInstanceOf[Anon_KeyCode]
+  }
+}
+

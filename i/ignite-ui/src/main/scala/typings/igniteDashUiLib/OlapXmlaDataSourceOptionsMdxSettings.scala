@@ -36,3 +36,29 @@ trait OlapXmlaDataSourceOptionsMdxSettings
   var nonEmptyOnRows: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OlapXmlaDataSourceOptionsMdxSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for OlapXmlaDataSourceOptionsMdxSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    addCalculatedMembersOnColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    addCalculatedMembersOnRows: js.UndefOr[scala.Boolean] = js.undefined,
+    dimensionPropertiesOnColumns: js.Array[_] = null,
+    dimensionPropertiesOnRows: js.Array[_] = null,
+    nonEmptyOnColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    nonEmptyOnRows: js.UndefOr[scala.Boolean] = js.undefined
+  ): OlapXmlaDataSourceOptionsMdxSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(addCalculatedMembersOnColumns)) __obj.updateDynamic("addCalculatedMembersOnColumns")(addCalculatedMembersOnColumns)
+    if (!js.isUndefined(addCalculatedMembersOnRows)) __obj.updateDynamic("addCalculatedMembersOnRows")(addCalculatedMembersOnRows)
+    if (dimensionPropertiesOnColumns != null) __obj.updateDynamic("dimensionPropertiesOnColumns")(dimensionPropertiesOnColumns)
+    if (dimensionPropertiesOnRows != null) __obj.updateDynamic("dimensionPropertiesOnRows")(dimensionPropertiesOnRows)
+    if (!js.isUndefined(nonEmptyOnColumns)) __obj.updateDynamic("nonEmptyOnColumns")(nonEmptyOnColumns)
+    if (!js.isUndefined(nonEmptyOnRows)) __obj.updateDynamic("nonEmptyOnRows")(nonEmptyOnRows)
+    __obj.asInstanceOf[OlapXmlaDataSourceOptionsMdxSettings]
+  }
+}
+

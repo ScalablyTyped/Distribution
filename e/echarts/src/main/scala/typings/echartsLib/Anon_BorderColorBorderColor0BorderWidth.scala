@@ -141,3 +141,32 @@ trait Anon_BorderColorBorderColor0BorderWidth extends js.Object {
   var shadowOffsetY: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_BorderColorBorderColor0BorderWidth {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String = null,
+    borderColor0: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    color0: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    shadowBlur: scala.Int | scala.Double = null,
+    shadowColor: java.lang.String = null,
+    shadowOffsetX: scala.Int | scala.Double = null,
+    shadowOffsetY: scala.Int | scala.Double = null
+  ): Anon_BorderColorBorderColor0BorderWidth = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderColor0 != null) __obj.updateDynamic("borderColor0")(borderColor0)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (color0 != null) __obj.updateDynamic("color0")(color0)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (shadowBlur != null) __obj.updateDynamic("shadowBlur")(shadowBlur.asInstanceOf[js.Any])
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowOffsetX != null) __obj.updateDynamic("shadowOffsetX")(shadowOffsetX.asInstanceOf[js.Any])
+    if (shadowOffsetY != null) __obj.updateDynamic("shadowOffsetY")(shadowOffsetY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BorderColorBorderColor0BorderWidth]
+  }
+}
+

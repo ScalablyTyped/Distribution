@@ -33,3 +33,62 @@ trait FlashFrame extends js.Object {
   def setCustomEase(): js.Any
 }
 
+object FlashFrame {
+  @scala.inline
+  def apply(
+    actionScript: js.Any,
+    duration: js.Any,
+    elements: js.Array[FlashElement],
+    getCustomEase: js.Function0[js.Any],
+    hasCustomEase: js.Any,
+    labelType: js.Any,
+    motionTweenOrientToPath: js.Any,
+    motionTweenRotate: js.Any,
+    motionTweenRotateTimes: js.Any,
+    motionTweenScale: js.Any,
+    motionTweenSnap: js.Any,
+    motionTweenSync: js.Any,
+    name: js.Any,
+    setCustomEase: js.Function0[js.Any],
+    shapeTweenBlend: js.Any,
+    soundEffect: js.Any,
+    soundLibraryItem: FlashSoundItem,
+    soundLoop: js.Any,
+    soundLoopMode: js.Any,
+    soundName: js.Any,
+    soundSync: js.Any,
+    startFrame: js.Any,
+    tweenEasing: js.Any,
+    tweenType: js.Any,
+    useSingleEaseCurve: js.Any
+  ): FlashFrame = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actionScript")(actionScript)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("elements")(elements)
+    __obj.updateDynamic("getCustomEase")(getCustomEase)
+    __obj.updateDynamic("hasCustomEase")(hasCustomEase)
+    __obj.updateDynamic("labelType")(labelType)
+    __obj.updateDynamic("motionTweenOrientToPath")(motionTweenOrientToPath)
+    __obj.updateDynamic("motionTweenRotate")(motionTweenRotate)
+    __obj.updateDynamic("motionTweenRotateTimes")(motionTweenRotateTimes)
+    __obj.updateDynamic("motionTweenScale")(motionTweenScale)
+    __obj.updateDynamic("motionTweenSnap")(motionTweenSnap)
+    __obj.updateDynamic("motionTweenSync")(motionTweenSync)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("setCustomEase")(setCustomEase)
+    __obj.updateDynamic("shapeTweenBlend")(shapeTweenBlend)
+    __obj.updateDynamic("soundEffect")(soundEffect)
+    __obj.updateDynamic("soundLibraryItem")(soundLibraryItem)
+    __obj.updateDynamic("soundLoop")(soundLoop)
+    __obj.updateDynamic("soundLoopMode")(soundLoopMode)
+    __obj.updateDynamic("soundName")(soundName)
+    __obj.updateDynamic("soundSync")(soundSync)
+    __obj.updateDynamic("startFrame")(startFrame)
+    __obj.updateDynamic("tweenEasing")(tweenEasing)
+    __obj.updateDynamic("tweenType")(tweenType)
+    __obj.updateDynamic("useSingleEaseCurve")(useSingleEaseCurve)
+    __obj.asInstanceOf[FlashFrame]
+  }
+}
+

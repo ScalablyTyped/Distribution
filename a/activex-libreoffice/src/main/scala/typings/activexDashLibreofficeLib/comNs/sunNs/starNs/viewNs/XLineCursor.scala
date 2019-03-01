@@ -29,3 +29,26 @@ trait XLineCursor
   def isAtStartOfLine(): scala.Boolean
 }
 
+object XLineCursor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    gotoEndOfLine: js.Function1[scala.Boolean, scala.Unit],
+    gotoStartOfLine: js.Function1[scala.Boolean, scala.Unit],
+    isAtEndOfLine: js.Function0[scala.Boolean],
+    isAtStartOfLine: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLineCursor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("gotoEndOfLine")(gotoEndOfLine)
+    __obj.updateDynamic("gotoStartOfLine")(gotoStartOfLine)
+    __obj.updateDynamic("isAtEndOfLine")(isAtEndOfLine)
+    __obj.updateDynamic("isAtStartOfLine")(isAtStartOfLine)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XLineCursor]
+  }
+}
+

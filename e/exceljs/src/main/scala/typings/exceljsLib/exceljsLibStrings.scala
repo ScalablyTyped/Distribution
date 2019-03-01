@@ -43,7 +43,8 @@ object exceljsLibStrings {
   sealed trait atEnd extends js.Object
   
   @js.native
-  sealed trait between extends js.Object
+  sealed trait between
+    extends exceljsLib.exceljsMod.DataValidationOperator
   
   @js.native
   sealed trait blank extends js.Object
@@ -67,34 +68,43 @@ object exceljsLibStrings {
   sealed trait custom extends js.Object
   
   @js.native
-  sealed trait darkDown extends js.Object
+  sealed trait darkDown
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait darkGray extends js.Object
+  sealed trait darkGray
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait darkGrid extends js.Object
+  sealed trait darkGrid
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait darkHorizontal extends js.Object
+  sealed trait darkHorizontal
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait darkTrellis extends js.Object
+  sealed trait darkTrellis
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait darkUp extends js.Object
+  sealed trait darkUp
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait darkVertical extends js.Object
+  sealed trait darkVertical
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
   sealed trait dash extends js.Object
   
   @js.native
-  sealed trait dashDot extends js.Object
+  sealed trait dashDot
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
-  sealed trait dashDotDot extends js.Object
+  sealed trait dashDotDot
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
   sealed trait date extends js.Object
@@ -109,10 +119,12 @@ object exceljsLibStrings {
   sealed trait distributed extends js.Object
   
   @js.native
-  sealed trait dotted extends js.Object
+  sealed trait dotted
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait double
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
   sealed trait doubleAccounting extends js.Object
@@ -121,7 +133,8 @@ object exceljsLibStrings {
   sealed trait downThenOver extends js.Object
   
   @js.native
-  sealed trait equal extends js.Object
+  sealed trait equal
+    extends exceljsLib.exceljsMod.DataValidationOperator
   
   @js.native
   sealed trait fill extends js.Object
@@ -136,19 +149,24 @@ object exceljsLibStrings {
   sealed trait gradient extends js.Object
   
   @js.native
-  sealed trait gray0625 extends js.Object
+  sealed trait gray0625
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait gray125 extends js.Object
+  sealed trait gray125
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait greaterThan extends js.Object
+  sealed trait greaterThan
+    extends exceljsLib.exceljsMod.DataValidationOperator
   
   @js.native
-  sealed trait greaterThanOrEqual extends js.Object
+  sealed trait greaterThanOrEqual
+    extends exceljsLib.exceljsMod.DataValidationOperator
   
   @js.native
-  sealed trait hair extends js.Object
+  sealed trait hair
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
   sealed trait jpeg extends js.Object
@@ -163,31 +181,40 @@ object exceljsLibStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait lessThan extends js.Object
+  sealed trait lessThan
+    extends exceljsLib.exceljsMod.DataValidationOperator
   
   @js.native
-  sealed trait lessThanOrEqual extends js.Object
+  sealed trait lessThanOrEqual
+    extends exceljsLib.exceljsMod.DataValidationOperator
   
   @js.native
-  sealed trait lightDown extends js.Object
+  sealed trait lightDown
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait lightGray extends js.Object
+  sealed trait lightGray
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait lightGrid extends js.Object
+  sealed trait lightGrid
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait lightHorizontal extends js.Object
+  sealed trait lightHorizontal
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait lightTrellis extends js.Object
+  sealed trait lightTrellis
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait lightUp extends js.Object
+  sealed trait lightUp
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
-  sealed trait lightVertical extends js.Object
+  sealed trait lightVertical
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
   sealed trait list extends js.Object
@@ -199,19 +226,24 @@ object exceljsLibStrings {
   sealed trait major extends js.Object
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait medium
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
-  sealed trait mediumDashDot extends js.Object
+  sealed trait mediumDashDot
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
-  sealed trait mediumDashDotDot extends js.Object
+  sealed trait mediumDashDotDot
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
-  sealed trait mediumDashed extends js.Object
+  sealed trait mediumDashed
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
-  sealed trait mediumGray extends js.Object
+  sealed trait mediumGray
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
   sealed trait middle extends js.Object
@@ -220,16 +252,19 @@ object exceljsLibStrings {
   sealed trait minor extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait notBetween extends js.Object
+  sealed trait notBetween
+    extends exceljsLib.exceljsMod.DataValidationOperator
   
   @js.native
-  sealed trait notEqual extends js.Object
+  sealed trait notEqual
+    extends exceljsLib.exceljsMod.DataValidationOperator
   
   @js.native
   sealed trait overThenDown extends js.Object
@@ -268,10 +303,12 @@ object exceljsLibStrings {
   sealed trait singleAccounting extends js.Object
   
   @js.native
-  sealed trait slantDashDot extends js.Object
+  sealed trait slantDashDot
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
-  sealed trait solid extends js.Object
+  sealed trait solid
+    extends exceljsLib.exceljsMod.FillPatterns
   
   @js.native
   sealed trait split extends js.Object
@@ -280,10 +317,12 @@ object exceljsLibStrings {
   sealed trait textLength extends js.Object
   
   @js.native
-  sealed trait thick extends js.Object
+  sealed trait thick
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
-  sealed trait thin extends js.Object
+  sealed trait thin
+    extends exceljsLib.exceljsMod.BorderStyle
   
   @js.native
   sealed trait top extends js.Object

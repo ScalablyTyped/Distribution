@@ -16,3 +16,13 @@ trait BasicListOptions extends js.Object {
   var page: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BasicListOptions {
+  @scala.inline
+  def apply(limit: scala.Int | scala.Double = null, page: scala.Int | scala.Double = null): BasicListOptions = {
+    val __obj = js.Dynamic.literal()
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BasicListOptions]
+  }
+}
+

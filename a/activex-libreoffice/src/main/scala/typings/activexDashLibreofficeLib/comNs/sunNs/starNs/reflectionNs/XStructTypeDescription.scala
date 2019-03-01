@@ -46,3 +46,46 @@ trait XStructTypeDescription extends XCompoundTypeDescription {
   def getTypeParameters(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XStructTypeDescription {
+  @scala.inline
+  def apply(
+    BaseType: XTypeDescription,
+    MemberNames: activexDashInteropLib.SafeArray[java.lang.String],
+    MemberTypes: activexDashInteropLib.SafeArray[XTypeDescription],
+    Name: java.lang.String,
+    TypeArguments: activexDashInteropLib.SafeArray[XTypeDescription],
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    TypeParameters: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getBaseType: js.Function0[XTypeDescription],
+    getMemberNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getMemberTypes: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getTypeArguments: js.Function0[activexDashInteropLib.SafeArray[XTypeDescription]],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    getTypeParameters: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStructTypeDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BaseType")(BaseType)
+    __obj.updateDynamic("MemberNames")(MemberNames)
+    __obj.updateDynamic("MemberTypes")(MemberTypes)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("TypeArguments")(TypeArguments)
+    __obj.updateDynamic("TypeClass")(TypeClass)
+    __obj.updateDynamic("TypeParameters")(TypeParameters)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getBaseType")(getBaseType)
+    __obj.updateDynamic("getMemberNames")(getMemberNames)
+    __obj.updateDynamic("getMemberTypes")(getMemberTypes)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getTypeArguments")(getTypeArguments)
+    __obj.updateDynamic("getTypeClass")(getTypeClass)
+    __obj.updateDynamic("getTypeParameters")(getTypeParameters)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStructTypeDescription]
+  }
+}
+

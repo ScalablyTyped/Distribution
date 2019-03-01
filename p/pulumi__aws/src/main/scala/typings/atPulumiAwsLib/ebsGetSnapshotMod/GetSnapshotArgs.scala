@@ -31,3 +31,24 @@ trait GetSnapshotArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetSnapshotArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    mostRecent: js.UndefOr[scala.Boolean] = js.undefined,
+    owners: js.Array[java.lang.String] = null,
+    restorableByUserIds: js.Array[java.lang.String] = null,
+    snapshotIds: js.Array[java.lang.String] = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetSnapshotArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
+    if (owners != null) __obj.updateDynamic("owners")(owners)
+    if (restorableByUserIds != null) __obj.updateDynamic("restorableByUserIds")(restorableByUserIds)
+    if (snapshotIds != null) __obj.updateDynamic("snapshotIds")(snapshotIds)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetSnapshotArgs]
+  }
+}
+

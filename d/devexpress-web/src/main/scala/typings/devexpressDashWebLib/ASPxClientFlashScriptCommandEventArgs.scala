@@ -21,3 +21,13 @@ trait ASPxClientFlashScriptCommandEventArgs extends ASPxClientEventArgs {
   var command: java.lang.String
 }
 
+object ASPxClientFlashScriptCommandEventArgs {
+  @scala.inline
+  def apply(args: java.lang.String, command: java.lang.String): ASPxClientFlashScriptCommandEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("command")(command)
+    __obj.asInstanceOf[ASPxClientFlashScriptCommandEventArgs]
+  }
+}
+

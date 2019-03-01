@@ -91,3 +91,68 @@ trait Person extends js.Object {
   var verified: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Person {
+  @scala.inline
+  def apply(
+    aboutMe: java.lang.String = null,
+    birthday: java.lang.String = null,
+    braggingRights: java.lang.String = null,
+    circledByCount: scala.Int | scala.Double = null,
+    cover: gapiDotClientDotPlusdomainsLib.Anon_CoverInfo = null,
+    currentLocation: java.lang.String = null,
+    displayName: java.lang.String = null,
+    domain: java.lang.String = null,
+    emails: js.Array[gapiDotClientDotPlusdomainsLib.Anon_TypeValue] = null,
+    etag: java.lang.String = null,
+    gender: java.lang.String = null,
+    id: java.lang.String = null,
+    image: gapiDotClientDotPlusdomainsLib.Anon_IsDefault = null,
+    isPlusUser: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    name: gapiDotClientDotPlusdomainsLib.Anon_FamilyNameFormatted = null,
+    nickname: java.lang.String = null,
+    objectType: java.lang.String = null,
+    occupation: java.lang.String = null,
+    organizations: js.Array[gapiDotClientDotPlusdomainsLib.Anon_Department] = null,
+    placesLived: js.Array[gapiDotClientDotPlusdomainsLib.Anon_Primary] = null,
+    plusOneCount: scala.Int | scala.Double = null,
+    relationshipStatus: java.lang.String = null,
+    skills: java.lang.String = null,
+    tagline: java.lang.String = null,
+    url: java.lang.String = null,
+    urls: js.Array[gapiDotClientDotPlusdomainsLib.Anon_Label] = null,
+    verified: js.UndefOr[scala.Boolean] = js.undefined
+  ): Person = {
+    val __obj = js.Dynamic.literal()
+    if (aboutMe != null) __obj.updateDynamic("aboutMe")(aboutMe)
+    if (birthday != null) __obj.updateDynamic("birthday")(birthday)
+    if (braggingRights != null) __obj.updateDynamic("braggingRights")(braggingRights)
+    if (circledByCount != null) __obj.updateDynamic("circledByCount")(circledByCount.asInstanceOf[js.Any])
+    if (cover != null) __obj.updateDynamic("cover")(cover)
+    if (currentLocation != null) __obj.updateDynamic("currentLocation")(currentLocation)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (emails != null) __obj.updateDynamic("emails")(emails)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (gender != null) __obj.updateDynamic("gender")(gender)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (!js.isUndefined(isPlusUser)) __obj.updateDynamic("isPlusUser")(isPlusUser)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (occupation != null) __obj.updateDynamic("occupation")(occupation)
+    if (organizations != null) __obj.updateDynamic("organizations")(organizations)
+    if (placesLived != null) __obj.updateDynamic("placesLived")(placesLived)
+    if (plusOneCount != null) __obj.updateDynamic("plusOneCount")(plusOneCount.asInstanceOf[js.Any])
+    if (relationshipStatus != null) __obj.updateDynamic("relationshipStatus")(relationshipStatus)
+    if (skills != null) __obj.updateDynamic("skills")(skills)
+    if (tagline != null) __obj.updateDynamic("tagline")(tagline)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified)
+    __obj.asInstanceOf[Person]
+  }
+}
+

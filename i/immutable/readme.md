@@ -15,71 +15,103 @@
  * presents an Object-Oriented API familiar to Javascript engineers and closely
  * mirroring that of Array, Map, and Set. It is easy and efficient to convert to
  * and from plain Javascript types.
-
- * Note: all examples are presented in [ES6][]. To run in all browsers, they
- * need to be translated to ES3. For example:
  *
- *     // ES6
- *     foo.map(x => x * x);
- *     // ES3
- *     foo.map(function (x) { return x * x; });
+ * ## How to read these docs
  *
- * [ES6]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla
+ * In order to better explain what kinds of values the Immutable.js API expects
+ * and produces, this documentation is presented in a statically typed dialect of
+ * JavaScript (like [Flow][] or [TypeScript][]). You *don't need* to use these
+ * type checking tools in order to use Immutable.js, however becoming familiar
+ * with their syntax will help you get a deeper understanding of this API.
+ *
+ * **A few examples and how to read them.**
+ *
+ * All methods describe the kinds of data they accept and the kinds of data
+ * they return. For example a function which accepts two numbers and returns
+ * a number would look like this:
+ *
+ * ```js
+ * sum(first: number, second: number): number
+ * ```
+ *
+ * Sometimes, methods can accept different kinds of data or return different
+ * kinds of data, and this is described with a *type variable*, which is
+ * typically in all-caps. For example, a function which always returns the same
+ * kind of data it was provided would look like this:
+ *
+ * ```js
+ * identity<T>(value: T): T
+ * ```
+ *
+ * Type variables are defined with classes and referred to in methods. For
+ * example, a class that holds onto a value for you might look like this:
+ *
+ * ```js
+ * class Box<T> {
+ *   constructor(value: T)
+ *   getValue(): T
+ * }
+ * ```
+ *
+ * In order to manipulate Immutable data, methods that we're used to affecting
+ * a Collection instead return a new Collection of the same type. The type
+ * `this` refers to the same kind of class. For example, a List which returns
+ * new Lists when you `push` a value onto it might look like:
+ *
+ * ```js
+ * class List<T> {
+ *   push(value: T): this
+ * }
+ * ```
+ *
+ * Many methods in Immutable.js accept values which implement the JavaScript
+ * [Iterable][] protocol, and might appear like `Iterable<string>` for something
+ * which represents sequence of strings. Typically in JavaScript we use plain
+ * Arrays (`[]`) when an Iterable is expected, but also all of the Immutable.js
+ * collections are iterable themselves!
+ *
+ * For example, to get a value deep within a structure of data, we might use
+ * `getIn` which expects an `Iterable` path:
+ *
+ * ```
+ * getIn(path: Iterable<string | number>): any
+ * ```
+ *
+ * To use this method, we could pass an array: `data.getIn([ "key", 2 ])`.
+ *
+ *
+ * Note: All examples are presented in the modern [ES2015][] version of
+ * JavaScript. Use tools like Babel to support older browsers.
+ *
+ * For example:
+ *
+ * ```js
+ * // ES2015
+ * const mappedFoo = foo.map(x => x * x);
+ * // ES5
+ * var mappedFoo = foo.map(function (x) { return x * x; });
+ * ```
+ *
+ * [ES2015]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla
+ * [TypeScript]: http://www.typescriptlang.org/
+ * [Flow]: https://flowtype.org/
+ * [Iterable]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols
  */
 
 
 
 /**
-   * Deeply converts plain JS objects and arrays to Immutable Maps and Lists.
+   * Lists are ordered indexed dense collections, much like a JavaScript
+   * Array.
    *
-   * If a `reviver` is optionally provided, it will be called with every
-   * collection as a Seq (beginning with the most nested collections
-   * and proceeding to the top-level collection itself), along with the key
-   * refering to each collection and the parent JS object provided as `this`.
-   * For the top level, object, the key will be `""`. This `reviver` is expected
-   * to return a new Immutable Iterable, allowing for custom conversions from
-   * deep JS objects.
+   * Lists are immutable and fully persistent with O(log32 N) gets and sets,
+   * and O(1) push and pop.
    *
-   * This example converts JSON to List and OrderedMap:
+   * Lists implement Deque, with efficient addition and removal from both the
+   * end (`push`, `pop`) and beginning (`unshift`, `shift`).
    *
-   *     Immutable.fromJS({a: {b: [10, 20, 30]}, c: 40}, function (key, value) {
-   *       var isIndexed = Immutable.Iterable.isIndexed(value);
-   *       return isIndexed ? value.toList() : value.toOrderedMap();
-   *     });
-   *
-   *     // true, "b", {b: [10, 20, 30]}
-   *     // false, "a", {a: {b: [10, 20, 30]}, c: 40}
-   *     // false, "", {"": {a: {b: [10, 20, 30]}, c: 40}}
-   *
-   * If `reviver` is not provided, the default behavior will convert Arrays into
-   * Lists and Objects into Maps.
-   *
-   * `reviver` acts similarly to the [same parameter in `JSON.parse`][1].
-   *
-   * `Immutable.fromJS` is conservative in its conversion. It will only convert
-   * arrays which pass `Array.isArray` to Lists, and only raw objects (no custom
-   * prototype) to Map.
-   *
-   * Keep in mind, when using JS objects to construct Immutable Maps, that
-   * JavaScript Object properties are always strings, even if written in a
-   * quote-less shorthand, while Immutable Maps accept keys of any type.
-   *
-   * ```js
-   * var obj = { 1: "one" };
-   * Object.keys(obj); // [ "1" ]
-   * obj["1"]; // "one"
-   * obj[1];   // "one"
-   *
-   * var map = Map(obj);
-   * map.get("1"); // "one"
-   * map.get(1);   // undefined
-   * ```
-   *
-   * Property access for JavaScript Objects first converts the key to a string,
-   * but since Immutable Map keys can be of any type the argument to `get()` is
-   * not altered.
-   *
-   * [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse#Example.3A_Using_the_reviver_parameter
-   *      "Using the reviver parameter"
+   * Unlike a JavaScript Array, there is no distinction between an
+   * "unset" index and an index set to `undefined`. `List#forEach` visits all
+   * indices from 0 to size, regardless of whether they were explicitly defined.
    */
 ```

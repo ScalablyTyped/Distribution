@@ -10,3 +10,16 @@ trait QueryContext
   var transaction: Transaction
 }
 
+object QueryContext {
+  @scala.inline
+  def apply(
+    transaction: Transaction,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): QueryContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transaction")(transaction)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[QueryContext]
+  }
+}
+

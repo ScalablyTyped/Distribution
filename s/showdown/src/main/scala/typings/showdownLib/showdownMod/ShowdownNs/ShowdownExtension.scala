@@ -26,3 +26,24 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object ShowdownExtension {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    filter: js.Function3[
+      /* text */ java.lang.String, 
+      /* converter */ Converter, 
+      /* options */ js.UndefOr[ConverterOptions], 
+      java.lang.String
+    ] = null,
+    regex: java.lang.String | stdLib.RegExp = null,
+    replace: js.Any = null
+  ): ShowdownExtension = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
+    if (replace != null) __obj.updateDynamic("replace")(replace)
+    __obj.asInstanceOf[ShowdownExtension]
+  }
+}
+

@@ -16,3 +16,12 @@ trait SelectionData extends js.Object {
   var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
 }
 
+object SelectionData {
+  @scala.inline
+  def apply(shapes: js.Array[ShapeData] = null): SelectionData = {
+    val __obj = js.Dynamic.literal()
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
+    __obj.asInstanceOf[SelectionData]
+  }
+}
+

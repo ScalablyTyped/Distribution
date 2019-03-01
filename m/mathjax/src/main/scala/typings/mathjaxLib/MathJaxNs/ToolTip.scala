@@ -16,3 +16,15 @@ trait ToolTip extends js.Object {
   var offsetY: scala.Double
 }
 
+object ToolTip {
+  @scala.inline
+  def apply(delayClear: scala.Double, delayPost: scala.Double, offsetX: scala.Double, offsetY: scala.Double): ToolTip = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delayClear")(delayClear)
+    __obj.updateDynamic("delayPost")(delayPost)
+    __obj.updateDynamic("offsetX")(offsetX)
+    __obj.updateDynamic("offsetY")(offsetY)
+    __obj.asInstanceOf[ToolTip]
+  }
+}
+

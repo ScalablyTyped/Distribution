@@ -31,3 +31,28 @@ trait Anon_Body extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_Body {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    body: java.lang.String = null,
+    conflictAction: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.FilenameConflictAction = null,
+    filename: java.lang.String = null,
+    headers: js.Array[Anon_NameValue] = null,
+    incognito: js.UndefOr[scala.Boolean] = js.undefined,
+    method: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs._DownloadMethod = null,
+    saveAs: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Body = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (conflictAction != null) __obj.updateDynamic("conflictAction")(conflictAction)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined(saveAs)) __obj.updateDynamic("saveAs")(saveAs)
+    __obj.asInstanceOf[Anon_Body]
+  }
+}
+

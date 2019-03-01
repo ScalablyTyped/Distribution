@@ -26,3 +26,14 @@ trait ASPxClientRecurrenceRange extends js.Object {
   var OccurrenceCount: java.lang.String
 }
 
+object ASPxClientRecurrenceRange {
+  @scala.inline
+  def apply(EndByDate: java.lang.String, NoEndDate: java.lang.String, OccurrenceCount: java.lang.String): ASPxClientRecurrenceRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EndByDate")(EndByDate)
+    __obj.updateDynamic("NoEndDate")(NoEndDate)
+    __obj.updateDynamic("OccurrenceCount")(OccurrenceCount)
+    __obj.asInstanceOf[ASPxClientRecurrenceRange]
+  }
+}
+

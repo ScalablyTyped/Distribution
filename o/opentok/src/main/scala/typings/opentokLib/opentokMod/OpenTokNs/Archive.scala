@@ -21,3 +21,38 @@ trait Archive extends js.Object {
   var url: java.lang.String
 }
 
+object Archive {
+  @scala.inline
+  def apply(
+    createdAt: scala.Double,
+    duration: java.lang.String,
+    hasAudio: scala.Boolean,
+    hasVideo: scala.Boolean,
+    id: java.lang.String,
+    name: java.lang.String,
+    outputMode: OutputMode,
+    partnerId: java.lang.String,
+    reason: java.lang.String,
+    sessionId: java.lang.String,
+    size: scala.Double,
+    status: ArchiveStatus,
+    url: java.lang.String
+  ): Archive = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createdAt")(createdAt)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("hasAudio")(hasAudio)
+    __obj.updateDynamic("hasVideo")(hasVideo)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("outputMode")(outputMode)
+    __obj.updateDynamic("partnerId")(partnerId)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("sessionId")(sessionId)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Archive]
+  }
+}
+

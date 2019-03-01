@@ -62,3 +62,28 @@ trait VpnSessionParameters extends js.Object {
   var reconnect: scala.Boolean
 }
 
+object VpnSessionParameters {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    dnsServers: js.Array[java.lang.String],
+    exclusionList: js.Array[java.lang.String],
+    inclusionList: js.Array[java.lang.String],
+    reconnect: scala.Boolean,
+    broadcastAddress: java.lang.String = null,
+    domainSearch: js.Array[java.lang.String] = null,
+    mtu: java.lang.String = null
+  ): VpnSessionParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("dnsServers")(dnsServers)
+    __obj.updateDynamic("exclusionList")(exclusionList)
+    __obj.updateDynamic("inclusionList")(inclusionList)
+    __obj.updateDynamic("reconnect")(reconnect)
+    if (broadcastAddress != null) __obj.updateDynamic("broadcastAddress")(broadcastAddress)
+    if (domainSearch != null) __obj.updateDynamic("domainSearch")(domainSearch)
+    if (mtu != null) __obj.updateDynamic("mtu")(mtu)
+    __obj.asInstanceOf[VpnSessionParameters]
+  }
+}
+

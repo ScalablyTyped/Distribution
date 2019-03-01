@@ -12,3 +12,18 @@ trait Anon_Default extends js.Object {
   def default[T](): atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[T]
 }
 
+object Anon_Default {
+  @scala.inline
+  def apply(
+    SKIP: atFeathersjsFeathersLib.atFeathersjsFeathersMod.SkipSymbol,
+    default: js.Function0[atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Any]],
+    version: java.lang.String
+  ): Anon_Default = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SKIP")(SKIP.asInstanceOf[js.Any])
+    __obj.updateDynamic("default")(default)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Default]
+  }
+}
+

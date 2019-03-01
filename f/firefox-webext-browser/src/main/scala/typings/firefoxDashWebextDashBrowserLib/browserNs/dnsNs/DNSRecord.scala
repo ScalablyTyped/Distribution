@@ -18,3 +18,18 @@ trait DNSRecord extends js.Object {
   var isTRR: java.lang.String
 }
 
+object DNSRecord {
+  @scala.inline
+  def apply(
+    addresses: js.Array[java.lang.String],
+    isTRR: java.lang.String,
+    canonicalName: java.lang.String = null
+  ): DNSRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addresses")(addresses)
+    __obj.updateDynamic("isTRR")(isTRR)
+    if (canonicalName != null) __obj.updateDynamic("canonicalName")(canonicalName)
+    __obj.asInstanceOf[DNSRecord]
+  }
+}
+

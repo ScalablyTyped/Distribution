@@ -12,3 +12,12 @@ trait DecompressOptions extends js.Object {
   var dictionary: js.UndefOr[nodeLib.Buffer] = js.undefined
 }
 
+object DecompressOptions {
+  @scala.inline
+  def apply(dictionary: nodeLib.Buffer = null): DecompressOptions = {
+    val __obj = js.Dynamic.literal()
+    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary)
+    __obj.asInstanceOf[DecompressOptions]
+  }
+}
+

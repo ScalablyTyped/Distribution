@@ -13,3 +13,22 @@ trait Anon_Notification extends js.Object {
   var webPreview: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Notification {
+  @scala.inline
+  def apply(
+    notification: js.UndefOr[scala.Boolean] = js.undefined,
+    parseMode: java.lang.String = null,
+    replyMarkup: js.Any = null,
+    replyToMessage: scala.Int | scala.Double = null,
+    webPreview: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Notification = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification)
+    if (parseMode != null) __obj.updateDynamic("parseMode")(parseMode)
+    if (replyMarkup != null) __obj.updateDynamic("replyMarkup")(replyMarkup)
+    if (replyToMessage != null) __obj.updateDynamic("replyToMessage")(replyToMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(webPreview)) __obj.updateDynamic("webPreview")(webPreview)
+    __obj.asInstanceOf[Anon_Notification]
+  }
+}
+

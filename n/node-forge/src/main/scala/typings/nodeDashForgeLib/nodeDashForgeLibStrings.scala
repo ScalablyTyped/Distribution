@@ -7,52 +7,68 @@ import scala.scalajs.js.annotation._
 
 object nodeDashForgeLibStrings {
   @js.native
-  sealed trait `3DES-CBC` extends js.Object
+  sealed trait `3DES-CBC`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
-  sealed trait `3DES-ECB` extends js.Object
+  sealed trait `3DES-ECB`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
   sealed trait `3des` extends js.Object
   
   @js.native
-  sealed trait `AES-CBC` extends js.Object
+  sealed trait `AES-CBC`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
-  sealed trait `AES-CFB` extends js.Object
+  sealed trait `AES-CFB`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
-  sealed trait `AES-CTR` extends js.Object
+  sealed trait `AES-CTR`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
-  sealed trait `AES-ECB` extends js.Object
+  sealed trait `AES-ECB`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
-  sealed trait `AES-GCM` extends js.Object
+  sealed trait `AES-GCM`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
-  sealed trait `AES-OFB` extends js.Object
+  sealed trait `AES-OFB`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
-  sealed trait `DES-CBC` extends js.Object
+  sealed trait `DES-CBC`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
-  sealed trait `DES-ECB` extends js.Object
+  sealed trait `DES-ECB`
+    extends nodeDashForgeLib.nodeDashForgeMod.cipherNs.Algorithm
   
   @js.native
-  sealed trait NONE extends js.Object
+  sealed trait NONE
+    extends nodeDashForgeLib.nodeDashForgeMod.pkiNs.rsaNs._EncryptionScheme
+       with nodeDashForgeLib.nodeDashForgeMod.pkiNs.rsaNs._SignatureScheme
   
   @js.native
-  sealed trait RAW extends js.Object
+  sealed trait RAW
+    extends nodeDashForgeLib.nodeDashForgeMod.pkiNs.rsaNs._EncryptionScheme
   
   @js.native
-  sealed trait `RSA-OAEP` extends js.Object
+  sealed trait `RSA-OAEP`
+    extends nodeDashForgeLib.nodeDashForgeMod.pkiNs.rsaNs._EncryptionScheme
   
   @js.native
-  sealed trait `RSAES-PKCS1-V1_5` extends js.Object
+  sealed trait `RSAES-PKCS1-V1_5`
+    extends nodeDashForgeLib.nodeDashForgeMod.pkiNs.rsaNs._EncryptionScheme
   
   @js.native
-  sealed trait `RSASSA-PKCS1-V1_5` extends js.Object
+  sealed trait `RSASSA-PKCS1-V1_5`
+    extends nodeDashForgeLib.nodeDashForgeMod.pkiNs.rsaNs._SignatureScheme
   
   @js.native
   sealed trait aes128 extends js.Object
@@ -73,13 +89,15 @@ object nodeDashForgeLibStrings {
   sealed trait hex extends js.Object
   
   @js.native
-  sealed trait raw extends js.Object
+  sealed trait raw
+    extends nodeDashForgeLib.nodeDashForgeMod.Encoding
   
   @js.native
   sealed trait server extends js.Object
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends nodeDashForgeLib.nodeDashForgeMod.Encoding
   
   @scala.inline
   def `3DES-CBC`: `3DES-CBC` = "3DES-CBC".asInstanceOf[`3DES-CBC`]

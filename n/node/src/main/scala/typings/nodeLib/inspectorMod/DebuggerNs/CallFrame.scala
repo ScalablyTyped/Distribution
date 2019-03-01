@@ -43,3 +43,27 @@ trait CallFrame extends js.Object {
   var url: java.lang.String
 }
 
+object CallFrame {
+  @scala.inline
+  def apply(
+    callFrameId: CallFrameId,
+    functionName: java.lang.String,
+    location: Location,
+    scopeChain: js.Array[Scope],
+    `this`: nodeLib.inspectorMod.RuntimeNs.RemoteObject,
+    url: java.lang.String,
+    functionLocation: Location = null,
+    returnValue: nodeLib.inspectorMod.RuntimeNs.RemoteObject = null
+  ): CallFrame = {
+    val __obj = js.Dynamic.literal(`this` = `this`)
+    __obj.updateDynamic("callFrameId")(callFrameId)
+    __obj.updateDynamic("functionName")(functionName)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("scopeChain")(scopeChain)
+    __obj.updateDynamic("url")(url)
+    if (functionLocation != null) __obj.updateDynamic("functionLocation")(functionLocation)
+    if (returnValue != null) __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[CallFrame]
+  }
+}
+

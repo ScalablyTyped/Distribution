@@ -75,3 +75,27 @@ trait TIcu extends js.Object {
   var vars: js.Array[scala.Double]
 }
 
+object TIcu {
+  @scala.inline
+  def apply(
+    cases: js.Array[_],
+    childIcus: js.Array[js.Array[scala.Double]],
+    create: js.Array[I18nMutateOpCodes],
+    expandoStartIndex: scala.Double,
+    remove: js.Array[I18nMutateOpCodes],
+    `type`: IcuType,
+    update: js.Array[I18nUpdateOpCodes],
+    vars: js.Array[scala.Double]
+  ): TIcu = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("cases")(cases)
+    __obj.updateDynamic("childIcus")(childIcus)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("expandoStartIndex")(expandoStartIndex)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("vars")(vars)
+    __obj.asInstanceOf[TIcu]
+  }
+}
+

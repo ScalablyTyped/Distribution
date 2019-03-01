@@ -14,3 +14,14 @@ trait OpenedFileInfo extends js.Object {
   var openRequestId: scala.Double
 }
 
+object OpenedFileInfo {
+  @scala.inline
+  def apply(filePath: java.lang.String, mode: java.lang.String, openRequestId: scala.Double): OpenedFileInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("openRequestId")(openRequestId)
+    __obj.asInstanceOf[OpenedFileInfo]
+  }
+}
+

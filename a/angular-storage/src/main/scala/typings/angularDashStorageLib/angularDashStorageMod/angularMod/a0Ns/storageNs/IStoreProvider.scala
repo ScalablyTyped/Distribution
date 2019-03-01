@@ -14,3 +14,12 @@ trait IStoreProvider extends js.Object {
   def setStore(storage: java.lang.String): scala.Unit
 }
 
+object IStoreProvider {
+  @scala.inline
+  def apply(setStore: js.Function1[java.lang.String, scala.Unit]): IStoreProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setStore")(setStore)
+    __obj.asInstanceOf[IStoreProvider]
+  }
+}
+

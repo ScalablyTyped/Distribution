@@ -12,6 +12,5 @@ package object distEsGridMod {
   type OverscanIndicesGetter = js.Function1[/* params */ OverscanIndicesGetterParams, OverscanIndices]
   type SCROLL_DIRECTION_HORIZONTAL = reactDashVirtualizedLib.reactDashVirtualizedLibStrings.horizontal
   type SCROLL_DIRECTION_VERTICAL = reactDashVirtualizedLib.reactDashVirtualizedLibStrings.vertical
-  type ScrollDirection = reactDashVirtualizedLib.reactDashVirtualizedLibStrings.horizontal | reactDashVirtualizedLib.reactDashVirtualizedLibStrings.vertical
   type SectionRenderedParams = RenderedSection
 }

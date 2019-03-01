@@ -10,3 +10,13 @@ trait AnyParams extends js.Object {
   var optional: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AnyParams {
+  @scala.inline
+  def apply(name: java.lang.String = null, optional: js.UndefOr[scala.Boolean] = js.undefined): AnyParams = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[AnyParams]
+  }
+}
+

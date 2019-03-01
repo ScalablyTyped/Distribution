@@ -43,3 +43,23 @@ trait CustomResourceColumnDefinition extends js.Object {
   val `type`: java.lang.String
 }
 
+object CustomResourceColumnDefinition {
+  @scala.inline
+  def apply(
+    JSONPath: java.lang.String,
+    description: java.lang.String,
+    format: java.lang.String,
+    name: java.lang.String,
+    priority: scala.Double,
+    `type`: java.lang.String
+  ): CustomResourceColumnDefinition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("JSONPath")(JSONPath)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("priority")(priority)
+    __obj.asInstanceOf[CustomResourceColumnDefinition]
+  }
+}
+

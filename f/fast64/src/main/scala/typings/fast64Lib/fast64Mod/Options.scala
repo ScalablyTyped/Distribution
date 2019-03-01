@@ -9,3 +9,12 @@ trait Options extends js.Object {
   var uint8Array: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(uint8Array: scala.Boolean): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("uint8Array")(uint8Array)
+    __obj.asInstanceOf[Options]
+  }
+}
+

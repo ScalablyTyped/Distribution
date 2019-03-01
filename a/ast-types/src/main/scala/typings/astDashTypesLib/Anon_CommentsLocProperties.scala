@@ -13,3 +13,20 @@ trait Anon_CommentsLocProperties extends js.Object {
   ]
 }
 
+object Anon_CommentsLocProperties {
+  @scala.inline
+  def apply(
+    properties: js.Array[
+      astDashTypesLib.genKindsMod.PropertyKind | astDashTypesLib.genKindsMod.ObjectMethodKind | astDashTypesLib.genKindsMod.ObjectPropertyKind | astDashTypesLib.genKindsMod.SpreadPropertyKind | astDashTypesLib.genKindsMod.SpreadElementKind
+    ],
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsLocProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("properties")(properties)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsLocProperties]
+  }
+}
+

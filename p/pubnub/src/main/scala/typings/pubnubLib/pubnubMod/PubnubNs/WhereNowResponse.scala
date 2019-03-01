@@ -9,3 +9,12 @@ trait WhereNowResponse extends js.Object {
   var channels: js.Array[java.lang.String]
 }
 
+object WhereNowResponse {
+  @scala.inline
+  def apply(channels: js.Array[java.lang.String]): WhereNowResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channels")(channels)
+    __obj.asInstanceOf[WhereNowResponse]
+  }
+}
+

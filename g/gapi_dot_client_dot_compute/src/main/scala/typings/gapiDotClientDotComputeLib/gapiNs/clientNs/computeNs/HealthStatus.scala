@@ -16,3 +16,20 @@ trait HealthStatus extends js.Object {
   var port: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HealthStatus {
+  @scala.inline
+  def apply(
+    healthState: java.lang.String = null,
+    instance: java.lang.String = null,
+    ipAddress: java.lang.String = null,
+    port: scala.Int | scala.Double = null
+  ): HealthStatus = {
+    val __obj = js.Dynamic.literal()
+    if (healthState != null) __obj.updateDynamic("healthState")(healthState)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HealthStatus]
+  }
+}
+

@@ -60,3 +60,38 @@ trait CachesIscsiVolumeState extends js.Object {
   val volumeSizeInBytes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object CachesIscsiVolumeState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    chapEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    gatewayArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    lunNumber: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkInterfacePort: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    snapshotId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sourceVolumeArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targetArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targetName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    volumeArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    volumeId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    volumeSizeInBytes: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): CachesIscsiVolumeState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (chapEnabled != null) __obj.updateDynamic("chapEnabled")(chapEnabled.asInstanceOf[js.Any])
+    if (gatewayArn != null) __obj.updateDynamic("gatewayArn")(gatewayArn.asInstanceOf[js.Any])
+    if (lunNumber != null) __obj.updateDynamic("lunNumber")(lunNumber.asInstanceOf[js.Any])
+    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    if (networkInterfacePort != null) __obj.updateDynamic("networkInterfacePort")(networkInterfacePort.asInstanceOf[js.Any])
+    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
+    if (sourceVolumeArn != null) __obj.updateDynamic("sourceVolumeArn")(sourceVolumeArn.asInstanceOf[js.Any])
+    if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
+    if (targetName != null) __obj.updateDynamic("targetName")(targetName.asInstanceOf[js.Any])
+    if (volumeArn != null) __obj.updateDynamic("volumeArn")(volumeArn.asInstanceOf[js.Any])
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
+    if (volumeSizeInBytes != null) __obj.updateDynamic("volumeSizeInBytes")(volumeSizeInBytes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CachesIscsiVolumeState]
+  }
+}
+

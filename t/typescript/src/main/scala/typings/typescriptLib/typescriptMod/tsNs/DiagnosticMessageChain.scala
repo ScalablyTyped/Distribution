@@ -18,3 +18,20 @@ trait DiagnosticMessageChain extends js.Object {
   var next: js.UndefOr[DiagnosticMessageChain] = js.undefined
 }
 
+object DiagnosticMessageChain {
+  @scala.inline
+  def apply(
+    category: DiagnosticCategory,
+    code: scala.Double,
+    messageText: java.lang.String,
+    next: DiagnosticMessageChain = null
+  ): DiagnosticMessageChain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("category")(category)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("messageText")(messageText)
+    if (next != null) __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[DiagnosticMessageChain]
+  }
+}
+

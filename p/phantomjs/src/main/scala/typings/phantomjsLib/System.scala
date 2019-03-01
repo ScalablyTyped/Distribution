@@ -13,3 +13,22 @@ trait System extends js.Object {
   var platform: java.lang.String
 }
 
+object System {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String],
+    env: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    os: Anon_Architecture,
+    pid: scala.Double,
+    platform: java.lang.String
+  ): System = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("os")(os)
+    __obj.updateDynamic("pid")(pid)
+    __obj.updateDynamic("platform")(platform)
+    __obj.asInstanceOf[System]
+  }
+}
+

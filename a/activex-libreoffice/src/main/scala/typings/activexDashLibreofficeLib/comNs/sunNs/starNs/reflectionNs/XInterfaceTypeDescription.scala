@@ -54,3 +54,38 @@ trait XInterfaceTypeDescription extends XTypeDescription {
   def getUik(): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik
 }
 
+object XInterfaceTypeDescription {
+  @scala.inline
+  def apply(
+    BaseType: XTypeDescription,
+    Members: activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription],
+    Name: java.lang.String,
+    TypeClass: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass,
+    Uik: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik,
+    acquire: js.Function0[scala.Unit],
+    getBaseType: js.Function0[XTypeDescription],
+    getMembers: js.Function0[activexDashInteropLib.SafeArray[XInterfaceMemberTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getTypeClass: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass],
+    getUik: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Uik],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInterfaceTypeDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BaseType")(BaseType)
+    __obj.updateDynamic("Members")(Members)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("TypeClass")(TypeClass)
+    __obj.updateDynamic("Uik")(Uik)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getBaseType")(getBaseType)
+    __obj.updateDynamic("getMembers")(getMembers)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getTypeClass")(getTypeClass)
+    __obj.updateDynamic("getUik")(getUik)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XInterfaceTypeDescription]
+  }
+}
+

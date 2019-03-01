@@ -41,3 +41,28 @@ trait GetIosPostInstallAttributionRequest extends js.Object {
   var visualStyle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetIosPostInstallAttributionRequest {
+  @scala.inline
+  def apply(
+    appInstallationTime: java.lang.String = null,
+    bundleId: java.lang.String = null,
+    device: DeviceInfo = null,
+    iosVersion: java.lang.String = null,
+    retrievalMethod: java.lang.String = null,
+    sdkVersion: java.lang.String = null,
+    uniqueMatchLinkToCheck: java.lang.String = null,
+    visualStyle: java.lang.String = null
+  ): GetIosPostInstallAttributionRequest = {
+    val __obj = js.Dynamic.literal()
+    if (appInstallationTime != null) __obj.updateDynamic("appInstallationTime")(appInstallationTime)
+    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (iosVersion != null) __obj.updateDynamic("iosVersion")(iosVersion)
+    if (retrievalMethod != null) __obj.updateDynamic("retrievalMethod")(retrievalMethod)
+    if (sdkVersion != null) __obj.updateDynamic("sdkVersion")(sdkVersion)
+    if (uniqueMatchLinkToCheck != null) __obj.updateDynamic("uniqueMatchLinkToCheck")(uniqueMatchLinkToCheck)
+    if (visualStyle != null) __obj.updateDynamic("visualStyle")(visualStyle)
+    __obj.asInstanceOf[GetIosPostInstallAttributionRequest]
+  }
+}
+

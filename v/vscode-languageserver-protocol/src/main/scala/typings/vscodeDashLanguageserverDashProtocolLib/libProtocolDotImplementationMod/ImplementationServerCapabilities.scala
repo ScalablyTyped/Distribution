@@ -14,3 +14,14 @@ trait ImplementationServerCapabilities extends js.Object {
   ] = js.undefined
 }
 
+object ImplementationServerCapabilities {
+  @scala.inline
+  def apply(
+    implementationProvider: scala.Boolean | (vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentRegistrationOptions with vscodeDashLanguageserverDashProtocolLib.libProtocolMod.StaticRegistrationOptions) = null
+  ): ImplementationServerCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (implementationProvider != null) __obj.updateDynamic("implementationProvider")(implementationProvider.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImplementationServerCapabilities]
+  }
+}
+

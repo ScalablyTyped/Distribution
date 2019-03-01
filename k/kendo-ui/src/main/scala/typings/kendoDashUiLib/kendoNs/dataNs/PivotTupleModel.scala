@@ -15,3 +15,26 @@ trait PivotTupleModel extends js.Object {
   var name: java.lang.String
 }
 
+object PivotTupleModel {
+  @scala.inline
+  def apply(
+    children: js.Array[PivotTupleModel],
+    levelNum: scala.Double,
+    name: java.lang.String,
+    caption: java.lang.String = null,
+    hasChildren: js.UndefOr[scala.Boolean] = js.undefined,
+    hierarchy: java.lang.String = null,
+    levelName: java.lang.String = null
+  ): PivotTupleModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("levelNum")(levelNum)
+    __obj.updateDynamic("name")(name)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren)
+    if (hierarchy != null) __obj.updateDynamic("hierarchy")(hierarchy)
+    if (levelName != null) __obj.updateDynamic("levelName")(levelName)
+    __obj.asInstanceOf[PivotTupleModel]
+  }
+}
+

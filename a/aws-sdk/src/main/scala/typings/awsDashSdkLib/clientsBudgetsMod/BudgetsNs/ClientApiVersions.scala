@@ -12,3 +12,12 @@ trait ClientApiVersions extends js.Object {
   var apiVersion: js.UndefOr[apiVersion] = js.undefined
 }
 
+object ClientApiVersions {
+  @scala.inline
+  def apply(apiVersion: apiVersion = null): ClientApiVersions = {
+    val __obj = js.Dynamic.literal()
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientApiVersions]
+  }
+}
+

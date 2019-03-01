@@ -17,3 +17,18 @@ trait ClientCertificateSelectDetails extends js.Object {
   var request: ClientCertificateSelectRequestDetails
 }
 
+object ClientCertificateSelectDetails {
+  @scala.inline
+  def apply(
+    interactive: scala.Boolean,
+    request: ClientCertificateSelectRequestDetails,
+    clientCerts: js.Array[stdLib.ArrayBuffer] = null
+  ): ClientCertificateSelectDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("interactive")(interactive)
+    __obj.updateDynamic("request")(request)
+    if (clientCerts != null) __obj.updateDynamic("clientCerts")(clientCerts)
+    __obj.asInstanceOf[ClientCertificateSelectDetails]
+  }
+}
+

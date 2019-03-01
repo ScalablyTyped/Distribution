@@ -74,3 +74,42 @@ trait GeneratorOptions extends js.Object {
   var sourceRoot: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GeneratorOptions {
+  @scala.inline
+  def apply(
+    auxiliaryCommentAfter: java.lang.String = null,
+    auxiliaryCommentBefore: java.lang.String = null,
+    comments: js.UndefOr[scala.Boolean] = js.undefined,
+    compact: scala.Boolean | atBabelGeneratorLib.atBabelGeneratorLibStrings.auto = null,
+    concise: js.UndefOr[scala.Boolean] = js.undefined,
+    filename: java.lang.String = null,
+    jsonCompatibleStrings: js.UndefOr[scala.Boolean] = js.undefined,
+    minified: js.UndefOr[scala.Boolean] = js.undefined,
+    quotes: atBabelGeneratorLib.atBabelGeneratorLibStrings.single | atBabelGeneratorLib.atBabelGeneratorLibStrings.double = null,
+    retainLines: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldPrintComment: js.Function1[/* comment */ java.lang.String, scala.Boolean] = null,
+    sourceFileName: java.lang.String = null,
+    sourceMapTarget: java.lang.String = null,
+    sourceMaps: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceRoot: java.lang.String = null
+  ): GeneratorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (auxiliaryCommentAfter != null) __obj.updateDynamic("auxiliaryCommentAfter")(auxiliaryCommentAfter)
+    if (auxiliaryCommentBefore != null) __obj.updateDynamic("auxiliaryCommentBefore")(auxiliaryCommentBefore)
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments)
+    if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
+    if (!js.isUndefined(concise)) __obj.updateDynamic("concise")(concise)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(jsonCompatibleStrings)) __obj.updateDynamic("jsonCompatibleStrings")(jsonCompatibleStrings)
+    if (!js.isUndefined(minified)) __obj.updateDynamic("minified")(minified)
+    if (quotes != null) __obj.updateDynamic("quotes")(quotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(retainLines)) __obj.updateDynamic("retainLines")(retainLines)
+    if (shouldPrintComment != null) __obj.updateDynamic("shouldPrintComment")(shouldPrintComment)
+    if (sourceFileName != null) __obj.updateDynamic("sourceFileName")(sourceFileName)
+    if (sourceMapTarget != null) __obj.updateDynamic("sourceMapTarget")(sourceMapTarget)
+    if (!js.isUndefined(sourceMaps)) __obj.updateDynamic("sourceMaps")(sourceMaps)
+    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
+    __obj.asInstanceOf[GeneratorOptions]
+  }
+}
+

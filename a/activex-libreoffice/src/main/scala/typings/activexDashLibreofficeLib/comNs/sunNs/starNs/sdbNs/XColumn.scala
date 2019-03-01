@@ -260,3 +260,94 @@ trait XColumn
   def wasNull(): scala.Boolean
 }
 
+object XColumn {
+  @scala.inline
+  def apply(
+    Array: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XArray,
+    BinaryStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    Blob: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XBlob,
+    Boolean: scala.Boolean,
+    Byte: scala.Double,
+    Bytes: activexDashInteropLib.SafeArray[scala.Double],
+    CharacterStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    Clob: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XClob,
+    Date: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date,
+    Double: scala.Double,
+    Float: scala.Double,
+    Int: scala.Double,
+    Long: scala.Double,
+    Ref: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRef,
+    Short: scala.Double,
+    String: java.lang.String,
+    Time: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time,
+    Timestamp: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime,
+    acquire: js.Function0[scala.Unit],
+    getArray: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XArray],
+    getBinaryStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getBlob: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XBlob],
+    getBoolean: js.Function0[scala.Boolean],
+    getByte: js.Function0[scala.Double],
+    getBytes: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getCharacterStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getClob: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XClob],
+    getDate: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date],
+    getDouble: js.Function0[scala.Double],
+    getFloat: js.Function0[scala.Double],
+    getInt: js.Function0[scala.Double],
+    getLong: js.Function0[scala.Double],
+    getObject: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, js.Any],
+    getRef: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRef],
+    getShort: js.Function0[scala.Double],
+    getString: js.Function0[java.lang.String],
+    getTime: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time],
+    getTimestamp: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    wasNull: js.Function0[scala.Boolean]
+  ): XColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Array")(Array)
+    __obj.updateDynamic("BinaryStream")(BinaryStream)
+    __obj.updateDynamic("Blob")(Blob)
+    __obj.updateDynamic("Boolean")(Boolean)
+    __obj.updateDynamic("Byte")(Byte)
+    __obj.updateDynamic("Bytes")(Bytes)
+    __obj.updateDynamic("CharacterStream")(CharacterStream)
+    __obj.updateDynamic("Clob")(Clob)
+    __obj.updateDynamic("Date")(Date)
+    __obj.updateDynamic("Double")(Double)
+    __obj.updateDynamic("Float")(Float)
+    __obj.updateDynamic("Int")(Int)
+    __obj.updateDynamic("Long")(Long)
+    __obj.updateDynamic("Ref")(Ref)
+    __obj.updateDynamic("Short")(Short)
+    __obj.updateDynamic("String")(String)
+    __obj.updateDynamic("Time")(Time)
+    __obj.updateDynamic("Timestamp")(Timestamp)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getArray")(getArray)
+    __obj.updateDynamic("getBinaryStream")(getBinaryStream)
+    __obj.updateDynamic("getBlob")(getBlob)
+    __obj.updateDynamic("getBoolean")(getBoolean)
+    __obj.updateDynamic("getByte")(getByte)
+    __obj.updateDynamic("getBytes")(getBytes)
+    __obj.updateDynamic("getCharacterStream")(getCharacterStream)
+    __obj.updateDynamic("getClob")(getClob)
+    __obj.updateDynamic("getDate")(getDate)
+    __obj.updateDynamic("getDouble")(getDouble)
+    __obj.updateDynamic("getFloat")(getFloat)
+    __obj.updateDynamic("getInt")(getInt)
+    __obj.updateDynamic("getLong")(getLong)
+    __obj.updateDynamic("getObject")(getObject)
+    __obj.updateDynamic("getRef")(getRef)
+    __obj.updateDynamic("getShort")(getShort)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("getTime")(getTime)
+    __obj.updateDynamic("getTimestamp")(getTimestamp)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("wasNull")(wasNull)
+    __obj.asInstanceOf[XColumn]
+  }
+}
+

@@ -14,3 +14,19 @@ trait AsObject extends js.Object {
   ]
 }
 
+object AsObject {
+  @scala.inline
+  def apply(
+    fieldsMap: js.Array[
+      js.Tuple2[
+        java.lang.String, 
+        googleDashProtobufLib.googleProtobufStructUnderscorePbMod.ValueNs.AsObject
+      ]
+    ]
+  ): AsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fieldsMap")(fieldsMap)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

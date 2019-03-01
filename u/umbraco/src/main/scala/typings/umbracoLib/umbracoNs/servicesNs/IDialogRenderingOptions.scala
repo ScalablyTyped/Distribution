@@ -33,3 +33,32 @@ trait IDialogRenderingOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IDialogRenderingOptions {
+  @scala.inline
+  def apply(
+    callback: angularLib.angularMod.Global.Function,
+    iframe: scala.Boolean,
+    template: java.lang.String,
+    animation: java.lang.String = null,
+    container: stdLib.HTMLElement = null,
+    dialogData: js.Any = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    modalClass: java.lang.String = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): IDialogRenderingOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("iframe")(iframe)
+    __obj.updateDynamic("template")(template)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (dialogData != null) __obj.updateDynamic("dialogData")(dialogData)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (modalClass != null) __obj.updateDynamic("modalClass")(modalClass)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDialogRenderingOptions]
+  }
+}
+

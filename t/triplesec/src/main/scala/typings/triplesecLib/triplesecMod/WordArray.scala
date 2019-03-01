@@ -11,3 +11,14 @@ trait WordArray extends js.Object {
   def to_hex(): java.lang.String
 }
 
+object WordArray {
+  @scala.inline
+  def apply(sigBytes: scala.Double, to_hex: js.Function0[java.lang.String], words: js.Array[scala.Double]): WordArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sigBytes")(sigBytes)
+    __obj.updateDynamic("to_hex")(to_hex)
+    __obj.updateDynamic("words")(words)
+    __obj.asInstanceOf[WordArray]
+  }
+}
+

@@ -259,3 +259,113 @@ trait _Impl extends js.Object {
   def onVisible(`this`: semanticDashUiDashPopupLib.JQuery, $module: semanticDashUiDashPopupLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    addTouchEvents: scala.Boolean,
+    boundary: java.lang.String | semanticDashUiDashPopupLib.JQuery,
+    className: semanticDashUiDashPopupLib.SemanticUINs.PopupNs.ClassNameSettings,
+    closable: scala.Boolean,
+    content: java.lang.String,
+    context: java.lang.String | semanticDashUiDashPopupLib.JQuery,
+    debug: scala.Boolean,
+    delay: semanticDashUiDashPopupLib.SemanticUINs.PopupNs.DelaySettings,
+    distanceAway: scala.Double,
+    duration: scala.Double,
+    error: semanticDashUiDashPopupLib.SemanticUINs.PopupNs.ErrorSettings,
+    exclusive: scala.Boolean,
+    hideOnScroll: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.auto | semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false`,
+    hoverable: scala.Boolean,
+    html: java.lang.String | semanticDashUiDashPopupLib.JQuery,
+    `inline`: scala.Boolean,
+    jitter: scala.Double,
+    lastResort: scala.Boolean | java.lang.String,
+    maxSearchDepth: scala.Double,
+    metadata: semanticDashUiDashPopupLib.SemanticUINs.PopupNs.MetadataSettings,
+    movePopup: scala.Boolean,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    observeChanges: scala.Boolean,
+    offset: scala.Double,
+    on: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.focus | semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.click | semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.hover | semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.manual,
+    onCreate: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
+    onHidden: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
+    onHide: js.Function2[
+      semanticDashUiDashPopupLib.JQuery, 
+      semanticDashUiDashPopupLib.JQuery, 
+      semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false` | scala.Unit
+    ],
+    onRemove: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
+    onShow: js.Function2[
+      semanticDashUiDashPopupLib.JQuery, 
+      semanticDashUiDashPopupLib.JQuery, 
+      semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false` | scala.Unit
+    ],
+    onUnplaceable: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
+    onVisible: js.Function2[semanticDashUiDashPopupLib.JQuery, semanticDashUiDashPopupLib.JQuery, scala.Unit],
+    performance: scala.Boolean,
+    popup: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false` | java.lang.String | semanticDashUiDashPopupLib.JQuery,
+    position: java.lang.String,
+    prefer: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.adjacent | semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.opposite,
+    preserve: scala.Boolean,
+    scrollContext: java.lang.String | semanticDashUiDashPopupLib.JQuery,
+    selector: semanticDashUiDashPopupLib.SemanticUINs.PopupNs.SelectorSettings,
+    setFluidWidth: scala.Boolean,
+    silent: scala.Boolean,
+    target: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibNumbers.`false` | java.lang.String | semanticDashUiDashPopupLib.JQuery,
+    title: java.lang.String,
+    transition: java.lang.String,
+    variation: java.lang.String,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal(`inline` = `inline`)
+    __obj.updateDynamic("addTouchEvents")(addTouchEvents)
+    __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("closable")(closable)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    __obj.updateDynamic("distanceAway")(distanceAway)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("exclusive")(exclusive)
+    __obj.updateDynamic("hideOnScroll")(hideOnScroll.asInstanceOf[js.Any])
+    __obj.updateDynamic("hoverable")(hoverable)
+    __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
+    __obj.updateDynamic("jitter")(jitter)
+    __obj.updateDynamic("lastResort")(lastResort.asInstanceOf[js.Any])
+    __obj.updateDynamic("maxSearchDepth")(maxSearchDepth)
+    __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("movePopup")(movePopup)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("observeChanges")(observeChanges)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    __obj.updateDynamic("onCreate")(onCreate)
+    __obj.updateDynamic("onHidden")(onHidden)
+    __obj.updateDynamic("onHide")(onHide)
+    __obj.updateDynamic("onRemove")(onRemove)
+    __obj.updateDynamic("onShow")(onShow)
+    __obj.updateDynamic("onUnplaceable")(onUnplaceable)
+    __obj.updateDynamic("onVisible")(onVisible)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("prefer")(prefer.asInstanceOf[js.Any])
+    __obj.updateDynamic("preserve")(preserve)
+    __obj.updateDynamic("scrollContext")(scrollContext.asInstanceOf[js.Any])
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("setFluidWidth")(setFluidWidth)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("transition")(transition)
+    __obj.updateDynamic("variation")(variation)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

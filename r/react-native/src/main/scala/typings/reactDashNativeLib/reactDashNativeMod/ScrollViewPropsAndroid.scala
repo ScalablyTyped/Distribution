@@ -38,3 +38,20 @@ trait ScrollViewPropsAndroid extends js.Object {
   var scrollPerfTag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ScrollViewPropsAndroid {
+  @scala.inline
+  def apply(
+    endFillColor: java.lang.String = null,
+    nestedScrollEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    overScrollMode: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.always | reactDashNativeLib.reactDashNativeLibStrings.never = null,
+    scrollPerfTag: java.lang.String = null
+  ): ScrollViewPropsAndroid = {
+    val __obj = js.Dynamic.literal()
+    if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor)
+    if (!js.isUndefined(nestedScrollEnabled)) __obj.updateDynamic("nestedScrollEnabled")(nestedScrollEnabled)
+    if (overScrollMode != null) __obj.updateDynamic("overScrollMode")(overScrollMode.asInstanceOf[js.Any])
+    if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag)
+    __obj.asInstanceOf[ScrollViewPropsAndroid]
+  }
+}
+

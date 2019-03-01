@@ -10,3 +10,17 @@ trait BrowsersResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[BrowsersListResponse]
 }
 
+object BrowsersResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BrowsersListResponse]
+    ]
+  ): BrowsersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[BrowsersResource]
+  }
+}
+

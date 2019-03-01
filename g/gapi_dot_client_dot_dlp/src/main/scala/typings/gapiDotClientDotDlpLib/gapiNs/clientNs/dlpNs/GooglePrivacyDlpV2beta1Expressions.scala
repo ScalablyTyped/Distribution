@@ -14,3 +14,13 @@ trait GooglePrivacyDlpV2beta1Expressions extends js.Object {
   var logicalOperator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1Expressions {
+  @scala.inline
+  def apply(conditions: GooglePrivacyDlpV2beta1Conditions = null, logicalOperator: java.lang.String = null): GooglePrivacyDlpV2beta1Expressions = {
+    val __obj = js.Dynamic.literal()
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
+    if (logicalOperator != null) __obj.updateDynamic("logicalOperator")(logicalOperator)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1Expressions]
+  }
+}
+

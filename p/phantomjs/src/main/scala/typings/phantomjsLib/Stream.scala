@@ -16,3 +16,28 @@ trait Stream extends js.Object {
   def writeLine(data: java.lang.String): scala.Unit
 }
 
+object Stream {
+  @scala.inline
+  def apply(
+    atEnd: js.Function0[scala.Boolean],
+    close: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    read: js.Function0[java.lang.String],
+    readLine: js.Function0[java.lang.String],
+    seek: js.Function1[scala.Double, scala.Unit],
+    write: js.Function1[java.lang.String, scala.Unit],
+    writeLine: js.Function1[java.lang.String, scala.Unit]
+  ): Stream = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("atEnd")(atEnd)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("readLine")(readLine)
+    __obj.updateDynamic("seek")(seek)
+    __obj.updateDynamic("write")(write)
+    __obj.updateDynamic("writeLine")(writeLine)
+    __obj.asInstanceOf[Stream]
+  }
+}
+

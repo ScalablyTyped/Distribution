@@ -16,3 +16,16 @@ trait Olap extends js.Object {
   var showNamedSets: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Olap {
+  @scala.inline
+  def apply(
+    showKPI: js.UndefOr[scala.Boolean] = js.undefined,
+    showNamedSets: js.UndefOr[scala.Boolean] = js.undefined
+  ): Olap = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showKPI)) __obj.updateDynamic("showKPI")(showKPI)
+    if (!js.isUndefined(showNamedSets)) __obj.updateDynamic("showNamedSets")(showNamedSets)
+    __obj.asInstanceOf[Olap]
+  }
+}
+

@@ -16,3 +16,26 @@ trait DistanceJointData extends PhysicsJointData {
   var maxDistance: scala.Double
 }
 
+object DistanceJointData {
+  @scala.inline
+  def apply(
+    maxDistance: scala.Double,
+    collision: js.UndefOr[scala.Boolean] = js.undefined,
+    connectedAxis: Vector3 = null,
+    connectedPivot: Vector3 = null,
+    mainAxis: Vector3 = null,
+    mainPivot: Vector3 = null,
+    nativeParams: js.Any = null
+  ): DistanceJointData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxDistance")(maxDistance)
+    if (!js.isUndefined(collision)) __obj.updateDynamic("collision")(collision)
+    if (connectedAxis != null) __obj.updateDynamic("connectedAxis")(connectedAxis)
+    if (connectedPivot != null) __obj.updateDynamic("connectedPivot")(connectedPivot)
+    if (mainAxis != null) __obj.updateDynamic("mainAxis")(mainAxis)
+    if (mainPivot != null) __obj.updateDynamic("mainPivot")(mainPivot)
+    if (nativeParams != null) __obj.updateDynamic("nativeParams")(nativeParams)
+    __obj.asInstanceOf[DistanceJointData]
+  }
+}
+

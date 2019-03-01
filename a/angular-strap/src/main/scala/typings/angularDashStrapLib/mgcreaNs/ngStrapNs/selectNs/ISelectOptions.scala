@@ -30,3 +30,56 @@ trait ISelectOptions extends js.Object {
   var trigger: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ISelectOptions {
+  @scala.inline
+  def apply(
+    allNoneButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    allText: java.lang.String = null,
+    animation: java.lang.String = null,
+    container: java.lang.String | scala.Boolean = null,
+    delay: scala.Double | angularDashStrapLib.Anon_Hide = null,
+    html: js.UndefOr[scala.Boolean] = js.undefined,
+    iconCheckmark: java.lang.String = null,
+    id: java.lang.String = null,
+    maxLength: scala.Int | scala.Double = null,
+    maxLengthHtml: java.lang.String = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    noneText: java.lang.String = null,
+    onBeforeHide: js.Function1[/* select */ ISelect, scala.Unit] = null,
+    onBeforeShow: js.Function1[/* select */ ISelect, scala.Unit] = null,
+    onHide: js.Function1[/* select */ ISelect, scala.Unit] = null,
+    onShow: js.Function1[/* select */ ISelect, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    placement: java.lang.String = null,
+    sort: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    toggle: js.UndefOr[scala.Boolean] = js.undefined,
+    trigger: java.lang.String = null
+  ): ISelectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allNoneButtons)) __obj.updateDynamic("allNoneButtons")(allNoneButtons)
+    if (allText != null) __obj.updateDynamic("allText")(allText)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (iconCheckmark != null) __obj.updateDynamic("iconCheckmark")(iconCheckmark)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (maxLengthHtml != null) __obj.updateDynamic("maxLengthHtml")(maxLengthHtml)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (noneText != null) __obj.updateDynamic("noneText")(noneText)
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    __obj.asInstanceOf[ISelectOptions]
+  }
+}
+

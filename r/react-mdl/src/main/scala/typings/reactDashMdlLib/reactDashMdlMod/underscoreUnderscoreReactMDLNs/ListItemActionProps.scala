@@ -10,3 +10,13 @@ trait ListItemActionProps
   var info: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListItemActionProps {
+  @scala.inline
+  def apply(HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[js.Any] = null, info: java.lang.String = null): ListItemActionProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (info != null) __obj.updateDynamic("info")(info)
+    __obj.asInstanceOf[ListItemActionProps]
+  }
+}
+

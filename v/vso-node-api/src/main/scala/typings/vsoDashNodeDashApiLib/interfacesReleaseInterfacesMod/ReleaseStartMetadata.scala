@@ -33,3 +33,26 @@ trait ReleaseStartMetadata extends js.Object {
   var reason: ReleaseReason
 }
 
+object ReleaseStartMetadata {
+  @scala.inline
+  def apply(
+    artifacts: js.Array[ArtifactMetadata],
+    definitionId: scala.Double,
+    description: java.lang.String,
+    isDraft: scala.Boolean,
+    manualEnvironments: js.Array[java.lang.String],
+    properties: js.Any,
+    reason: ReleaseReason
+  ): ReleaseStartMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifacts")(artifacts)
+    __obj.updateDynamic("definitionId")(definitionId)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("isDraft")(isDraft)
+    __obj.updateDynamic("manualEnvironments")(manualEnvironments)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[ReleaseStartMetadata]
+  }
+}
+

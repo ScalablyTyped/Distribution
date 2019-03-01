@@ -21,3 +21,18 @@ trait IProviderConfig extends js.Object {
   var modules: js.UndefOr[js.Array[IModuleConfig]] = js.undefined
 }
 
+object IProviderConfig {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    events: js.UndefOr[scala.Boolean] = js.undefined,
+    modules: js.Array[IModuleConfig] = null
+  ): IProviderConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(events)) __obj.updateDynamic("events")(events)
+    if (modules != null) __obj.updateDynamic("modules")(modules)
+    __obj.asInstanceOf[IProviderConfig]
+  }
+}
+

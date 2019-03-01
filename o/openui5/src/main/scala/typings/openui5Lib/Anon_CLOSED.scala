@@ -24,3 +24,15 @@ trait Anon_CLOSED extends js.Object {
   var OPEN: js.Any
 }
 
+object Anon_CLOSED {
+  @scala.inline
+  def apply(CLOSED: js.Any, CLOSING: js.Any, CONNECTING: js.Any, OPEN: js.Any): Anon_CLOSED = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CLOSED")(CLOSED)
+    __obj.updateDynamic("CLOSING")(CLOSING)
+    __obj.updateDynamic("CONNECTING")(CONNECTING)
+    __obj.updateDynamic("OPEN")(OPEN)
+    __obj.asInstanceOf[Anon_CLOSED]
+  }
+}
+

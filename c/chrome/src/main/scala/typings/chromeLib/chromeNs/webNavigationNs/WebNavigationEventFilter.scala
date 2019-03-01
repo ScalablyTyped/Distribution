@@ -10,3 +10,12 @@ trait WebNavigationEventFilter extends js.Object {
   var url: js.Array[chromeLib.chromeNs.eventsNs.UrlFilter]
 }
 
+object WebNavigationEventFilter {
+  @scala.inline
+  def apply(url: js.Array[chromeLib.chromeNs.eventsNs.UrlFilter]): WebNavigationEventFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WebNavigationEventFilter]
+  }
+}
+

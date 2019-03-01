@@ -12,3 +12,20 @@ trait Anon_ItemsPosition
   var reference: stdLib.Element
 }
 
+object Anon_ItemsPosition {
+  @scala.inline
+  def apply(
+    items: js.Array[stdLib.Element],
+    position: java.lang.String,
+    reference: stdLib.Element,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_ItemsPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("reference")(reference)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_ItemsPosition]
+  }
+}
+

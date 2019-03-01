@@ -17,3 +17,18 @@ trait WheelMoveEventArgs extends js.Object {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object WheelMoveEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    originalEvent: js.Any = null
+  ): WheelMoveEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[WheelMoveEventArgs]
+  }
+}
+

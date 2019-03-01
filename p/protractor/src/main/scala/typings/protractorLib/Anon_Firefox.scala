@@ -11,3 +11,14 @@ trait Anon_Firefox extends js.Object {
   var remote: js.Any
 }
 
+object Anon_Firefox {
+  @scala.inline
+  def apply(firefox: js.Any, http: js.Any, remote: js.Any): Anon_Firefox = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("firefox")(firefox)
+    __obj.updateDynamic("http")(http)
+    __obj.updateDynamic("remote")(remote)
+    __obj.asInstanceOf[Anon_Firefox]
+  }
+}
+

@@ -52,3 +52,96 @@ trait SelectProps extends js.Object {
   var value: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object SelectProps {
+  @scala.inline
+  def apply(
+    allowClear: js.UndefOr[scala.Boolean] = js.undefined,
+    animation: java.lang.String = null,
+    choiceTransitionName: java.lang.String = null,
+    className: java.lang.String = null,
+    combobox: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultActiveFirstOption: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultLabel: java.lang.String | js.Array[java.lang.String] = null,
+    defaultValue: java.lang.String | js.Array[java.lang.String] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    dropdownClassName: java.lang.String = null,
+    dropdownMatchSelectWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    dropdownMenuStyle: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    dropdownStyle: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    filterOption: js.UndefOr[scala.Boolean] = js.undefined,
+    getInputElement: js.Function0[stdLib.Node] = null,
+    getPopupContainer: js.Function1[/* trigger */ stdLib.Node, stdLib.Node] = null,
+    id: java.lang.String = null,
+    labelInValue: js.UndefOr[scala.Boolean] = js.undefined,
+    maxTagCount: scala.Int | scala.Double = null,
+    maxTagPlaceholder: reactLib.reactMod.ReactNs.ReactNode | js.Function = null,
+    maxTagTextLength: scala.Int | scala.Double = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    notFoundContent: java.lang.String = null,
+    onBlur: js.Function0[scala.Unit] = null,
+    onChange: js.Function2[/* value */ java.lang.String, /* label */ java.lang.String, scala.Unit] = null,
+    onDeselect: js.Function2[/* value */ java.lang.String, /* option */ Option, scala.Unit] = null,
+    onFocus: js.Function0[scala.Unit] = null,
+    onInputKeyDown: js.Function1[/* e */ reactLib.Event, scala.Unit] = null,
+    onPopupScroll: js.Function0[scala.Unit] = null,
+    onSearch: js.Function0[scala.Unit] = null,
+    onSelect: js.Function2[/* value */ java.lang.String, /* ontion */ Option, scala.Unit] = null,
+    optionFilterProp: java.lang.String = null,
+    optionLabelProp: java.lang.String = null,
+    placeholder: reactLib.reactMod.ReactNs.ReactNode = null,
+    prefixCls: java.lang.String = null,
+    showAction: js.Array[java.lang.String] = null,
+    showArrow: js.UndefOr[scala.Boolean] = js.undefined,
+    showSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    tags: js.UndefOr[scala.Boolean] = js.undefined,
+    tokenSeparators: js.Array[java.lang.String] = null,
+    transitionName: java.lang.String = null,
+    value: java.lang.String | js.Array[java.lang.String] = null
+  ): SelectProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (choiceTransitionName != null) __obj.updateDynamic("choiceTransitionName")(choiceTransitionName)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(combobox)) __obj.updateDynamic("combobox")(combobox)
+    if (!js.isUndefined(defaultActiveFirstOption)) __obj.updateDynamic("defaultActiveFirstOption")(defaultActiveFirstOption)
+    if (defaultLabel != null) __obj.updateDynamic("defaultLabel")(defaultLabel.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName)
+    if (!js.isUndefined(dropdownMatchSelectWidth)) __obj.updateDynamic("dropdownMatchSelectWidth")(dropdownMatchSelectWidth)
+    if (dropdownMenuStyle != null) __obj.updateDynamic("dropdownMenuStyle")(dropdownMenuStyle)
+    if (dropdownStyle != null) __obj.updateDynamic("dropdownStyle")(dropdownStyle)
+    if (!js.isUndefined(filterOption)) __obj.updateDynamic("filterOption")(filterOption)
+    if (getInputElement != null) __obj.updateDynamic("getInputElement")(getInputElement)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(labelInValue)) __obj.updateDynamic("labelInValue")(labelInValue)
+    if (maxTagCount != null) __obj.updateDynamic("maxTagCount")(maxTagCount.asInstanceOf[js.Any])
+    if (maxTagPlaceholder != null) __obj.updateDynamic("maxTagPlaceholder")(maxTagPlaceholder.asInstanceOf[js.Any])
+    if (maxTagTextLength != null) __obj.updateDynamic("maxTagTextLength")(maxTagTextLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(onDeselect)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onInputKeyDown != null) __obj.updateDynamic("onInputKeyDown")(onInputKeyDown)
+    if (onPopupScroll != null) __obj.updateDynamic("onPopupScroll")(onPopupScroll)
+    if (onSearch != null) __obj.updateDynamic("onSearch")(onSearch)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (optionFilterProp != null) __obj.updateDynamic("optionFilterProp")(optionFilterProp)
+    if (optionLabelProp != null) __obj.updateDynamic("optionLabelProp")(optionLabelProp)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (showAction != null) __obj.updateDynamic("showAction")(showAction)
+    if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow)
+    if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch)
+    if (!js.isUndefined(tags)) __obj.updateDynamic("tags")(tags)
+    if (tokenSeparators != null) __obj.updateDynamic("tokenSeparators")(tokenSeparators)
+    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectProps]
+  }
+}
+

@@ -34,3 +34,20 @@ trait SpanOptions extends js.Object {
   var tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object SpanOptions {
+  @scala.inline
+  def apply(
+    childOf: opentracingLib.libSpanMod.default | opentracingLib.libSpanUnderscoreContextMod.default = null,
+    references: js.Array[opentracingLib.libReferenceMod.default] = null,
+    startTime: scala.Int | scala.Double = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): SpanOptions = {
+    val __obj = js.Dynamic.literal()
+    if (childOf != null) __obj.updateDynamic("childOf")(childOf.asInstanceOf[js.Any])
+    if (references != null) __obj.updateDynamic("references")(references)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[SpanOptions]
+  }
+}
+

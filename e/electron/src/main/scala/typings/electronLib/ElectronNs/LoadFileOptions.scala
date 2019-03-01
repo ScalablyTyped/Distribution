@@ -20,3 +20,14 @@ trait LoadFileOptions extends js.Object {
   var search: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LoadFileOptions {
+  @scala.inline
+  def apply(hash: java.lang.String = null, query: Query = null, search: java.lang.String = null): LoadFileOptions = {
+    val __obj = js.Dynamic.literal()
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[LoadFileOptions]
+  }
+}
+

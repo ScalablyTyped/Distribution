@@ -12,3 +12,20 @@ trait IPanoramaMarker extends js.Object {
   def getPosition(): js.Array[scala.Double]
 }
 
+object IPanoramaMarker {
+  @scala.inline
+  def apply(
+    getIconSet: js.Function0[js.Promise[IPanoramaMarkerIconSet]],
+    getPanorama: js.Function0[IPanorama],
+    getPosition: js.Function0[js.Array[scala.Double]],
+    properties: yandexDashMapsLib.ymapsNs.dataNs.Manager
+  ): IPanoramaMarker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getIconSet")(getIconSet)
+    __obj.updateDynamic("getPanorama")(getPanorama)
+    __obj.updateDynamic("getPosition")(getPosition)
+    __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[IPanoramaMarker]
+  }
+}
+

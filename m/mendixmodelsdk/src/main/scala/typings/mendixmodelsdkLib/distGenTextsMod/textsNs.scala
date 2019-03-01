@@ -37,6 +37,8 @@ object textsNs extends js.Object {
   class SystemTextCollection protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject) = this()
+    @JSName("containerAsProject")
+    val containerAsProject_SystemTextCollection: mendixmodelsdkLib.distGenProjectsMod.projectsNs.Project = js.native
     val systemTexts: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[SystemText] = js.native
   }
   

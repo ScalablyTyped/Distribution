@@ -15,3 +15,26 @@ trait DPlayerVideo extends js.Object {
   var url: java.lang.String
 }
 
+object DPlayerVideo {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    customType: js.Any = null,
+    defaultQuality: scala.Int | scala.Double = null,
+    pic: java.lang.String = null,
+    quality: js.Array[DPlayerVideoQuality] = null,
+    thumbnails: java.lang.String = null,
+    `type`: VideoType | java.lang.String = null
+  ): DPlayerVideo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (customType != null) __obj.updateDynamic("customType")(customType)
+    if (defaultQuality != null) __obj.updateDynamic("defaultQuality")(defaultQuality.asInstanceOf[js.Any])
+    if (pic != null) __obj.updateDynamic("pic")(pic)
+    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DPlayerVideo]
+  }
+}
+

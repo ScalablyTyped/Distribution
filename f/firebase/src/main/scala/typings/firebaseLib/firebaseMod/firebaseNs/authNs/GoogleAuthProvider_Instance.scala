@@ -10,3 +10,18 @@ trait GoogleAuthProvider_Instance extends AuthProvider {
   def setCustomParameters(customOAuthParameters: coreDashJsLib.Object): AuthProvider
 }
 
+object GoogleAuthProvider_Instance {
+  @scala.inline
+  def apply(
+    addScope: js.Function1[java.lang.String, AuthProvider],
+    providerId: java.lang.String,
+    setCustomParameters: js.Function1[coreDashJsLib.Object, AuthProvider]
+  ): GoogleAuthProvider_Instance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addScope")(addScope)
+    __obj.updateDynamic("providerId")(providerId)
+    __obj.updateDynamic("setCustomParameters")(setCustomParameters)
+    __obj.asInstanceOf[GoogleAuthProvider_Instance]
+  }
+}
+

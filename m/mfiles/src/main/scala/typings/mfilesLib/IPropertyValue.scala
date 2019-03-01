@@ -23,3 +23,36 @@ trait IPropertyValue extends js.Object {
   def GetValueAsUnlocalizedText(): java.lang.String
 }
 
+object IPropertyValue {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IPropertyValue],
+    CloneFrom: js.Function1[IPropertyValue, scala.Unit],
+    GetValueAsLocalizedText: js.Function0[java.lang.String],
+    GetValueAsText: js.Function6[
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Boolean, 
+      java.lang.String
+    ],
+    GetValueAsUnlocalizedText: js.Function0[java.lang.String],
+    PropertyDef: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double,
+    TypedValue: ITypedValue,
+    Value: ITypedValue
+  ): IPropertyValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("CloneFrom")(CloneFrom)
+    __obj.updateDynamic("GetValueAsLocalizedText")(GetValueAsLocalizedText)
+    __obj.updateDynamic("GetValueAsText")(GetValueAsText)
+    __obj.updateDynamic("GetValueAsUnlocalizedText")(GetValueAsUnlocalizedText)
+    __obj.updateDynamic("PropertyDef")(PropertyDef.asInstanceOf[js.Any])
+    __obj.updateDynamic("TypedValue")(TypedValue)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[IPropertyValue]
+  }
+}
+

@@ -20,3 +20,24 @@ trait TileOptions extends js.Object {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TileOptions {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    container: java.lang.String = null,
+    depth: java.lang.String = null,
+    layout: java.lang.String = null,
+    overlap: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null
+  ): TileOptions = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (depth != null) __obj.updateDynamic("depth")(depth)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (overlap != null) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TileOptions]
+  }
+}
+

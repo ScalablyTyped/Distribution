@@ -29,3 +29,30 @@ trait InventorySetRequest extends js.Object {
   var sellOnGoogleQuantity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object InventorySetRequest {
+  @scala.inline
+  def apply(
+    availability: java.lang.String = null,
+    installment: Installment = null,
+    loyaltyPoints: LoyaltyPoints = null,
+    pickup: InventoryPickup = null,
+    price: Price = null,
+    quantity: scala.Int | scala.Double = null,
+    salePrice: Price = null,
+    salePriceEffectiveDate: java.lang.String = null,
+    sellOnGoogleQuantity: scala.Int | scala.Double = null
+  ): InventorySetRequest = {
+    val __obj = js.Dynamic.literal()
+    if (availability != null) __obj.updateDynamic("availability")(availability)
+    if (installment != null) __obj.updateDynamic("installment")(installment)
+    if (loyaltyPoints != null) __obj.updateDynamic("loyaltyPoints")(loyaltyPoints)
+    if (pickup != null) __obj.updateDynamic("pickup")(pickup)
+    if (price != null) __obj.updateDynamic("price")(price)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice)
+    if (salePriceEffectiveDate != null) __obj.updateDynamic("salePriceEffectiveDate")(salePriceEffectiveDate)
+    if (sellOnGoogleQuantity != null) __obj.updateDynamic("sellOnGoogleQuantity")(sellOnGoogleQuantity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InventorySetRequest]
+  }
+}
+

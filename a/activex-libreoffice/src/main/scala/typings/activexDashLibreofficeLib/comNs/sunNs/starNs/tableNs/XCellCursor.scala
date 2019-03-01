@@ -34,3 +34,34 @@ trait XCellCursor extends XCellRange {
   def gotoStart(): scala.Unit
 }
 
+object XCellCursor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getCellByPosition: js.Function2[scala.Double, scala.Double, XCell],
+    getCellRangeByName: js.Function1[java.lang.String, XCellRange],
+    getCellRangeByPosition: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, XCellRange],
+    gotoEnd: js.Function0[scala.Unit],
+    gotoNext: js.Function0[scala.Unit],
+    gotoOffset: js.Function2[scala.Double, scala.Double, scala.Unit],
+    gotoPrevious: js.Function0[scala.Unit],
+    gotoStart: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCellCursor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCellByPosition")(getCellByPosition)
+    __obj.updateDynamic("getCellRangeByName")(getCellRangeByName)
+    __obj.updateDynamic("getCellRangeByPosition")(getCellRangeByPosition)
+    __obj.updateDynamic("gotoEnd")(gotoEnd)
+    __obj.updateDynamic("gotoNext")(gotoNext)
+    __obj.updateDynamic("gotoOffset")(gotoOffset)
+    __obj.updateDynamic("gotoPrevious")(gotoPrevious)
+    __obj.updateDynamic("gotoStart")(gotoStart)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCellCursor]
+  }
+}
+

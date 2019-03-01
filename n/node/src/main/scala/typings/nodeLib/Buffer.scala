@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Buffer
-  extends stdLib.Uint8Array {
+  extends stdLib.Uint8Array
+     with nodeLib.cryptoMod._KeyLike
+     with nodeLib.fsMod._PathLike {
   var constructor: Anon_Alloc = js.native
   def compare(otherBuffer: stdLib.Uint8Array): scala.Double = js.native
   def compare(otherBuffer: stdLib.Uint8Array, targetStart: scala.Double): scala.Double = js.native

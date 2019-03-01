@@ -9,3 +9,12 @@ trait ColorProfile extends js.Object {
   var dummy: scala.Double
 }
 
+object ColorProfile {
+  @scala.inline
+  def apply(dummy: scala.Double): ColorProfile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dummy")(dummy)
+    __obj.asInstanceOf[ColorProfile]
+  }
+}
+

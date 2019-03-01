@@ -24,3 +24,19 @@ trait ContributionPropertyDescription extends js.Object {
   var `type`: ContributionPropertyType
 }
 
+object ContributionPropertyDescription {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    name: java.lang.String,
+    required: scala.Boolean,
+    `type`: ContributionPropertyType
+  ): ContributionPropertyDescription = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("required")(required)
+    __obj.asInstanceOf[ContributionPropertyDescription]
+  }
+}
+

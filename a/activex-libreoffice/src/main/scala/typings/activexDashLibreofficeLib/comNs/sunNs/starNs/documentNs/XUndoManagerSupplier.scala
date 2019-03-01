@@ -16,3 +16,13 @@ trait XUndoManagerSupplier extends js.Object {
   def getUndoManager(): XUndoManager
 }
 
+object XUndoManagerSupplier {
+  @scala.inline
+  def apply(UndoManager: XUndoManager, getUndoManager: js.Function0[XUndoManager]): XUndoManagerSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("UndoManager")(UndoManager)
+    __obj.updateDynamic("getUndoManager")(getUndoManager)
+    __obj.asInstanceOf[XUndoManagerSupplier]
+  }
+}
+

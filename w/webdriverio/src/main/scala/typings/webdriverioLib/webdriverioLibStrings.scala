@@ -16,37 +16,47 @@ object webdriverioLibStrings {
   sealed trait addCommand extends js.Object
   
   @js.native
-  sealed trait height extends js.Object
+  sealed trait height
+    extends webdriverioLib.WebdriverIONs.SizeParam
   
   @js.native
-  sealed trait longPress extends js.Object
+  sealed trait longPress
+    extends webdriverioLib.WebdriverIONs.ActionTypes
   
   @js.native
-  sealed trait moveTo extends js.Object
+  sealed trait moveTo
+    extends webdriverioLib.WebdriverIONs.ActionTypes
   
   @js.native
   sealed trait options extends js.Object
   
   @js.native
-  sealed trait press extends js.Object
+  sealed trait press
+    extends webdriverioLib.WebdriverIONs.ActionTypes
   
   @js.native
-  sealed trait release extends js.Object
+  sealed trait release
+    extends webdriverioLib.WebdriverIONs.ActionTypes
   
   @js.native
-  sealed trait tap extends js.Object
+  sealed trait tap
+    extends webdriverioLib.WebdriverIONs.ActionTypes
   
   @js.native
-  sealed trait wait extends js.Object
+  sealed trait wait
+    extends webdriverioLib.WebdriverIONs.ActionTypes
   
   @js.native
-  sealed trait width extends js.Object
+  sealed trait width
+    extends webdriverioLib.WebdriverIONs.SizeParam
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait x
+    extends webdriverioLib.WebdriverIONs.LocationParam
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends webdriverioLib.WebdriverIONs.LocationParam
   
   @scala.inline
   def BrowserAsync: BrowserAsync = "BrowserAsync".asInstanceOf[BrowserAsync]

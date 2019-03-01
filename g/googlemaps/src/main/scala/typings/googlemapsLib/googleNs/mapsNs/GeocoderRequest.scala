@@ -14,3 +14,24 @@ trait GeocoderRequest extends js.Object {
   var region: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GeocoderRequest {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    bounds: LatLngBounds | LatLngBoundsLiteral = null,
+    componentRestrictions: GeocoderComponentRestrictions = null,
+    location: LatLng | LatLngLiteral = null,
+    placeId: java.lang.String = null,
+    region: java.lang.String = null
+  ): GeocoderRequest = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (componentRestrictions != null) __obj.updateDynamic("componentRestrictions")(componentRestrictions)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
+    if (region != null) __obj.updateDynamic("region")(region)
+    __obj.asInstanceOf[GeocoderRequest]
+  }
+}
+

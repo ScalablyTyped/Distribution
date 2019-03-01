@@ -46,3 +46,24 @@ trait WorkerSettings extends js.Object {
   var workerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WorkerSettings {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String = null,
+    reportingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    servicePath: java.lang.String = null,
+    shuffleServicePath: java.lang.String = null,
+    tempStoragePrefix: java.lang.String = null,
+    workerId: java.lang.String = null
+  ): WorkerSettings = {
+    val __obj = js.Dynamic.literal()
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (!js.isUndefined(reportingEnabled)) __obj.updateDynamic("reportingEnabled")(reportingEnabled)
+    if (servicePath != null) __obj.updateDynamic("servicePath")(servicePath)
+    if (shuffleServicePath != null) __obj.updateDynamic("shuffleServicePath")(shuffleServicePath)
+    if (tempStoragePrefix != null) __obj.updateDynamic("tempStoragePrefix")(tempStoragePrefix)
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    __obj.asInstanceOf[WorkerSettings]
+  }
+}
+

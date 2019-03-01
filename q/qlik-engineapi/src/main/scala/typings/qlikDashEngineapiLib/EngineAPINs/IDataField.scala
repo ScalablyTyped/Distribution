@@ -26,3 +26,14 @@ trait IDataField extends js.Object {
   var qOriginalFieldName: java.lang.String
 }
 
+object IDataField {
+  @scala.inline
+  def apply(qIsKey: scala.Boolean, qName: java.lang.String, qOriginalFieldName: java.lang.String): IDataField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qIsKey")(qIsKey)
+    __obj.updateDynamic("qName")(qName)
+    __obj.updateDynamic("qOriginalFieldName")(qOriginalFieldName)
+    __obj.asInstanceOf[IDataField]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Anon_PopupTabId extends js.Object {
   var tabId: scala.Double
 }
 
+object Anon_PopupTabId {
+  @scala.inline
+  def apply(tabId: scala.Double, popup: java.lang.String = null): Anon_PopupTabId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabId")(tabId)
+    if (popup != null) __obj.updateDynamic("popup")(popup)
+    __obj.asInstanceOf[Anon_PopupTabId]
+  }
+}
+

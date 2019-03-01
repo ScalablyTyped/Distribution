@@ -14,3 +14,14 @@ trait BlogUserInfo extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BlogUserInfo {
+  @scala.inline
+  def apply(blog: Blog = null, blog_user_info: BlogPerUserInfo = null, kind: java.lang.String = null): BlogUserInfo = {
+    val __obj = js.Dynamic.literal()
+    if (blog != null) __obj.updateDynamic("blog")(blog)
+    if (blog_user_info != null) __obj.updateDynamic("blog_user_info")(blog_user_info)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[BlogUserInfo]
+  }
+}
+

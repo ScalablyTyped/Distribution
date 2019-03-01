@@ -10,3 +10,16 @@ trait OffsetsExtend extends js.Object {
   var reference: js.UndefOr[stdLib.Partial[popperDotJsLib.popperDotJsMod.Offset]] = js.undefined
 }
 
+object OffsetsExtend {
+  @scala.inline
+  def apply(
+    popper: stdLib.Partial[popperDotJsLib.popperDotJsMod.Offset] = null,
+    reference: stdLib.Partial[popperDotJsLib.popperDotJsMod.Offset] = null
+  ): OffsetsExtend = {
+    val __obj = js.Dynamic.literal()
+    if (popper != null) __obj.updateDynamic("popper")(popper)
+    if (reference != null) __obj.updateDynamic("reference")(reference)
+    __obj.asInstanceOf[OffsetsExtend]
+  }
+}
+

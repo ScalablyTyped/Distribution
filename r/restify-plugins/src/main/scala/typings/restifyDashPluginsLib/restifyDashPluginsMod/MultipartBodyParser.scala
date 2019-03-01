@@ -18,3 +18,32 @@ trait MultipartBodyParser extends js.Object {
   var uploadDir: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MultipartBodyParser {
+  @scala.inline
+  def apply(
+    hash: java.lang.String = null,
+    keepExtensions: js.UndefOr[scala.Boolean] = js.undefined,
+    mapFiles: js.UndefOr[scala.Boolean] = js.undefined,
+    mapParams: js.UndefOr[scala.Boolean] = js.undefined,
+    maxFieldsSize: scala.Int | scala.Double = null,
+    multipartFileHandler: js.Any = null,
+    multipartHandler: js.Any = null,
+    multiples: js.UndefOr[scala.Boolean] = js.undefined,
+    overrideParams: js.UndefOr[scala.Boolean] = js.undefined,
+    uploadDir: java.lang.String = null
+  ): MultipartBodyParser = {
+    val __obj = js.Dynamic.literal()
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (!js.isUndefined(keepExtensions)) __obj.updateDynamic("keepExtensions")(keepExtensions)
+    if (!js.isUndefined(mapFiles)) __obj.updateDynamic("mapFiles")(mapFiles)
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams)
+    if (maxFieldsSize != null) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.asInstanceOf[js.Any])
+    if (multipartFileHandler != null) __obj.updateDynamic("multipartFileHandler")(multipartFileHandler)
+    if (multipartHandler != null) __obj.updateDynamic("multipartHandler")(multipartHandler)
+    if (!js.isUndefined(multiples)) __obj.updateDynamic("multiples")(multiples)
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams)
+    if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir)
+    __obj.asInstanceOf[MultipartBodyParser]
+  }
+}
+

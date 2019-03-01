@@ -32,3 +32,24 @@ trait OnErrorEventUIParam extends js.Object {
   var serverMessage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OnErrorEventUIParam {
+  @scala.inline
+  def apply(
+    errorCode: scala.Int | scala.Double = null,
+    errorMessage: java.lang.String = null,
+    errorType: java.lang.String = null,
+    fileId: scala.Int | scala.Double = null,
+    owner: js.Any = null,
+    serverMessage: java.lang.String = null
+  ): OnErrorEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (errorType != null) __obj.updateDynamic("errorType")(errorType)
+    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (serverMessage != null) __obj.updateDynamic("serverMessage")(serverMessage)
+    __obj.asInstanceOf[OnErrorEventUIParam]
+  }
+}
+

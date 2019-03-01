@@ -13,3 +13,19 @@ trait Anon_Element extends js.Object {
   ]
 }
 
+object Anon_Element {
+  @scala.inline
+  def apply(
+    element: reactLib.Element,
+    model: stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModel[
+      stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
+      stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
+    ]
+  ): Anon_Element = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("model")(model)
+    __obj.asInstanceOf[Anon_Element]
+  }
+}
+

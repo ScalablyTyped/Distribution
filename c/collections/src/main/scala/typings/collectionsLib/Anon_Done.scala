@@ -10,3 +10,13 @@ trait Anon_Done[T] extends js.Object {
   var value: js.UndefOr[T | scala.Null]
 }
 
+object Anon_Done {
+  @scala.inline
+  def apply[T](done: collectionsLib.collectionsLibNumbers.`true`, value: T = null): Anon_Done[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("done")(done)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Done[T]]
+  }
+}
+

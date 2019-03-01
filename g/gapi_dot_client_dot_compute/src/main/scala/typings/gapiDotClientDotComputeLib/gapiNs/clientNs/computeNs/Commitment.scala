@@ -44,3 +44,38 @@ trait Commitment extends js.Object {
   var statusMessage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Commitment {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    endTimestamp: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    plan: java.lang.String = null,
+    region: java.lang.String = null,
+    resources: js.Array[ResourceCommitment] = null,
+    selfLink: java.lang.String = null,
+    startTimestamp: java.lang.String = null,
+    status: java.lang.String = null,
+    statusMessage: java.lang.String = null
+  ): Commitment = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (endTimestamp != null) __obj.updateDynamic("endTimestamp")(endTimestamp)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (startTimestamp != null) __obj.updateDynamic("startTimestamp")(startTimestamp)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
+    __obj.asInstanceOf[Commitment]
+  }
+}
+

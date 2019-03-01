@@ -45,6 +45,8 @@ object messagedefinitionsNs extends js.Object {
   - mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.IEntityMessageDefinition because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class EntityMessageDefinition protected () extends MessageDefinition {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsMessageDefinitionCollection")
+    val containerAsMessageDefinitionCollection_EntityMessageDefinition: MessageDefinitionCollection = js.native
     var exposedEntity: ExposedEntity | scala.Null = js.native
   }
   

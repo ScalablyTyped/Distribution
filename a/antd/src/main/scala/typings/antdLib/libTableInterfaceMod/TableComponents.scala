@@ -11,3 +11,18 @@ trait TableComponents extends js.Object {
   var table: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
 }
 
+object TableComponents {
+  @scala.inline
+  def apply(
+    body: antdLib.Anon_Cell = null,
+    header: antdLib.Anon_Cell = null,
+    table: reactLib.reactMod.ReactNs.ReactType[_] = null
+  ): TableComponents = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableComponents]
+  }
+}
+

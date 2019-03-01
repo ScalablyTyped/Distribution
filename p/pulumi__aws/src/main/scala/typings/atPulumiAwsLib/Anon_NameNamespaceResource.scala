@@ -12,3 +12,20 @@ trait Anon_NameNamespaceResource extends js.Object {
   var value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_NameNamespaceResource {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    value: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    resource: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_NameNamespaceResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_NameNamespaceResource]
+  }
+}
+

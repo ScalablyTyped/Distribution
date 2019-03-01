@@ -16,3 +16,26 @@ import scala.scalajs.js.annotation._
   var transitionName: java.lang.String | CSSTransitionGroupTransitionName
 }
 
+object CSSTransitionGroupProps {
+  @scala.inline
+  def apply(
+    transitionName: java.lang.String | CSSTransitionGroupTransitionName,
+    transitionAppear: js.UndefOr[scala.Boolean] = js.undefined,
+    transitionAppearTimeout: scala.Int | scala.Double = null,
+    transitionEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    transitionEnterTimeout: scala.Int | scala.Double = null,
+    transitionLeave: js.UndefOr[scala.Boolean] = js.undefined,
+    transitionLeaveTimeout: scala.Int | scala.Double = null
+  ): CSSTransitionGroupProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionAppear)) __obj.updateDynamic("transitionAppear")(transitionAppear)
+    if (transitionAppearTimeout != null) __obj.updateDynamic("transitionAppearTimeout")(transitionAppearTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionEnter)) __obj.updateDynamic("transitionEnter")(transitionEnter)
+    if (transitionEnterTimeout != null) __obj.updateDynamic("transitionEnterTimeout")(transitionEnterTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(transitionLeave)) __obj.updateDynamic("transitionLeave")(transitionLeave)
+    if (transitionLeaveTimeout != null) __obj.updateDynamic("transitionLeaveTimeout")(transitionLeaveTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CSSTransitionGroupProps]
+  }
+}
+

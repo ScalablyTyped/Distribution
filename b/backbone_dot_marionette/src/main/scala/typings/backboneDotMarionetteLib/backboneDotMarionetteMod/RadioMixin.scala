@@ -13,3 +13,22 @@ trait RadioMixin extends js.Object {
   var unbindRequests: js.Any
 }
 
+object RadioMixin {
+  @scala.inline
+  def apply(
+    bindEvents: js.Any,
+    bindRequests: js.Any,
+    getChannel: js.Any,
+    unbindEvents: js.Any,
+    unbindRequests: js.Any
+  ): RadioMixin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bindEvents")(bindEvents)
+    __obj.updateDynamic("bindRequests")(bindRequests)
+    __obj.updateDynamic("getChannel")(getChannel)
+    __obj.updateDynamic("unbindEvents")(unbindEvents)
+    __obj.updateDynamic("unbindRequests")(unbindRequests)
+    __obj.asInstanceOf[RadioMixin]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_ApplePay extends js.Object {
   var applePay: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ApplePay {
+  @scala.inline
+  def apply(applePay: js.UndefOr[scala.Boolean] = js.undefined): Anon_ApplePay = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(applePay)) __obj.updateDynamic("applePay")(applePay)
+    __obj.asInstanceOf[Anon_ApplePay]
+  }
+}
+

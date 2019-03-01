@@ -13,19 +13,23 @@ object xlsxLibStrings {
   sealed trait array extends js.Object
   
   @js.native
-  sealed trait b extends js.Object
+  sealed trait b
+    extends xlsxLib.xlsxMod.ExcelDataType
   
   @js.native
   sealed trait base64 extends js.Object
   
   @js.native
-  sealed trait biff2 extends js.Object
+  sealed trait biff2
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait biff5 extends js.Object
+  sealed trait biff5
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait biff8 extends js.Object
+  sealed trait biff8
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
   sealed trait binary extends js.Object
@@ -34,79 +38,102 @@ object xlsxLibStrings {
   sealed trait buffer extends js.Object
   
   @js.native
-  sealed trait chart extends js.Object
+  sealed trait chart
+    extends xlsxLib.xlsxMod.SheetType
   
   @js.native
-  sealed trait csv extends js.Object
+  sealed trait csv
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait d extends js.Object
+  sealed trait d
+    extends xlsxLib.xlsxMod.ExcelDataType
   
   @js.native
-  sealed trait dif extends js.Object
+  sealed trait dif
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait e extends js.Object
+  sealed trait e
+    extends xlsxLib.xlsxMod.ExcelDataType
   
   @js.native
-  sealed trait eth extends js.Object
+  sealed trait eth
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
   sealed trait file extends js.Object
   
   @js.native
-  sealed trait fods extends js.Object
+  sealed trait fods
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait html
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait n extends js.Object
+  sealed trait n
+    extends xlsxLib.xlsxMod.ExcelDataType
   
   @js.native
-  sealed trait ods extends js.Object
+  sealed trait ods
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait prn extends js.Object
+  sealed trait prn
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait rtf extends js.Object
+  sealed trait rtf
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s
+    extends xlsxLib.xlsxMod.ExcelDataType
   
   @js.native
-  sealed trait sheet extends js.Object
+  sealed trait sheet
+    extends xlsxLib.xlsxMod.SheetType
   
   @js.native
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait sylk extends js.Object
+  sealed trait sylk
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait txt extends js.Object
+  sealed trait txt
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait xla extends js.Object
+  sealed trait xla
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait xlml extends js.Object
+  sealed trait xlml
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait xls extends js.Object
+  sealed trait xls
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait xlsb extends js.Object
+  sealed trait xlsb
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait xlsm extends js.Object
+  sealed trait xlsm
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait xlsx extends js.Object
+  sealed trait xlsx
+    extends xlsxLib.xlsxMod.BookType
   
   @js.native
-  sealed trait z extends js.Object
+  sealed trait z
+    extends xlsxLib.xlsxMod.ExcelDataType
   
   @scala.inline
   def A: A = "A".asInstanceOf[A]

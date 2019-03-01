@@ -34,3 +34,13 @@ trait PhoneNumber extends js.Object {
   var `type`: java.lang.String
 }
 
+object PhoneNumber {
+  @scala.inline
+  def apply(originalPhoneString: java.lang.String, phoneString: java.lang.String, `type`: java.lang.String): PhoneNumber = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("originalPhoneString")(originalPhoneString)
+    __obj.updateDynamic("phoneString")(phoneString)
+    __obj.asInstanceOf[PhoneNumber]
+  }
+}
+

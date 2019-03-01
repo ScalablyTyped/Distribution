@@ -12,3 +12,13 @@ trait PerfEnvironment extends js.Object {
   var memoryInfo: js.UndefOr[MemoryInfo] = js.undefined
 }
 
+object PerfEnvironment {
+  @scala.inline
+  def apply(cpuInfo: CPUInfo = null, memoryInfo: MemoryInfo = null): PerfEnvironment = {
+    val __obj = js.Dynamic.literal()
+    if (cpuInfo != null) __obj.updateDynamic("cpuInfo")(cpuInfo)
+    if (memoryInfo != null) __obj.updateDynamic("memoryInfo")(memoryInfo)
+    __obj.asInstanceOf[PerfEnvironment]
+  }
+}
+

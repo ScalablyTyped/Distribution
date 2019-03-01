@@ -18,3 +18,16 @@ trait Options extends js.Object {
   var includeSymbols: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    includeObjectPrototype: js.UndefOr[scala.Boolean] = js.undefined,
+    includeSymbols: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeObjectPrototype)) __obj.updateDynamic("includeObjectPrototype")(includeObjectPrototype)
+    if (!js.isUndefined(includeSymbols)) __obj.updateDynamic("includeSymbols")(includeSymbols)
+    __obj.asInstanceOf[Options]
+  }
+}
+

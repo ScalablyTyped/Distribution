@@ -37,3 +37,20 @@ trait TableRowData extends js.Object {
   var rowIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TableRowData {
+  @scala.inline
+  def apply(
+    cellCount: scala.Int | scala.Double = null,
+    cells: js.Array[TableCellData] = null,
+    id: java.lang.String = null,
+    rowIndex: scala.Int | scala.Double = null
+  ): TableRowData = {
+    val __obj = js.Dynamic.literal()
+    if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableRowData]
+  }
+}
+

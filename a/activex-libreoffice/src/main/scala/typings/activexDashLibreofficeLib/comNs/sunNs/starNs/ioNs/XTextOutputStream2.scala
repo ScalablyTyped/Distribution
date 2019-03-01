@@ -13,3 +13,34 @@ trait XTextOutputStream2
   extends XTextOutputStream
      with XActiveDataSource
 
+object XTextOutputStream2 {
+  @scala.inline
+  def apply(
+    OutputStream: XOutputStream,
+    acquire: js.Function0[scala.Unit],
+    closeOutput: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    getOutputStream: js.Function0[XOutputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setEncoding: js.Function1[java.lang.String, scala.Unit],
+    setOutputStream: js.Function1[XOutputStream, scala.Unit],
+    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    writeString: js.Function1[java.lang.String, scala.Unit]
+  ): XTextOutputStream2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("OutputStream")(OutputStream)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("closeOutput")(closeOutput)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("getOutputStream")(getOutputStream)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setEncoding")(setEncoding)
+    __obj.updateDynamic("setOutputStream")(setOutputStream)
+    __obj.updateDynamic("writeBytes")(writeBytes)
+    __obj.updateDynamic("writeString")(writeString)
+    __obj.asInstanceOf[XTextOutputStream2]
+  }
+}
+

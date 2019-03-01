@@ -13,3 +13,12 @@ trait GetDatabaseDdlResponse extends js.Object {
   var statements: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object GetDatabaseDdlResponse {
+  @scala.inline
+  def apply(statements: js.Array[java.lang.String] = null): GetDatabaseDdlResponse = {
+    val __obj = js.Dynamic.literal()
+    if (statements != null) __obj.updateDynamic("statements")(statements)
+    __obj.asInstanceOf[GetDatabaseDdlResponse]
+  }
+}
+

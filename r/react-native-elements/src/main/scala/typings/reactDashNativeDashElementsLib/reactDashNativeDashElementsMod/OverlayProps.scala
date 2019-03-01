@@ -71,3 +71,64 @@ trait OverlayProps
   var windowBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OverlayProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    isVisible: scala.Boolean,
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    animationType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.slide | reactDashNativeLib.reactDashNativeLibStrings.fade = null,
+    borderRadius: scala.Int | scala.Double = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    fullScreen: js.UndefOr[scala.Boolean] = js.undefined,
+    hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Double | java.lang.String = null,
+    onBackdropPress: js.Function0[scala.Unit] = null,
+    onDismiss: js.Function0[scala.Unit] = null,
+    onOrientationChange: js.Function1[
+      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[_], 
+      scala.Unit
+    ] = null,
+    onRequestClose: js.Function0[scala.Unit] = null,
+    onShow: js.Function1[
+      /* event */ reactDashNativeLib.reactDashNativeMod.NativeSyntheticEvent[_], 
+      scala.Unit
+    ] = null,
+    overlayBackgroundColor: java.lang.String = null,
+    overlayStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    presentationStyle: reactDashNativeLib.reactDashNativeLibStrings.fullScreen | reactDashNativeLib.reactDashNativeLibStrings.pageSheet | reactDashNativeLib.reactDashNativeLibStrings.formSheet | reactDashNativeLib.reactDashNativeLibStrings.overFullScreen = null,
+    supportedOrientations: js.Array[
+      reactDashNativeLib.reactDashNativeLibStrings.portrait | reactDashNativeLib.reactDashNativeLibStrings.`portrait-upside-down` | reactDashNativeLib.reactDashNativeLibStrings.landscape | reactDashNativeLib.reactDashNativeLibStrings.`landscape-left` | reactDashNativeLib.reactDashNativeLibStrings.`landscape-right`
+    ] = null,
+    transparent: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Double | java.lang.String = null,
+    windowBackgroundColor: java.lang.String = null
+  ): OverlayProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("isVisible")(isVisible)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen)
+    if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (onBackdropPress != null) __obj.updateDynamic("onBackdropPress")(onBackdropPress)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(onOrientationChange)
+    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(onRequestClose)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (overlayBackgroundColor != null) __obj.updateDynamic("overlayBackgroundColor")(overlayBackgroundColor)
+    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
+    if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
+    if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations)
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (windowBackgroundColor != null) __obj.updateDynamic("windowBackgroundColor")(windowBackgroundColor)
+    __obj.asInstanceOf[OverlayProps]
+  }
+}
+

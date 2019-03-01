@@ -117,3 +117,62 @@ trait Creative extends js.Object {
   var video: js.UndefOr[VideoContent] = js.undefined
 }
 
+object Creative {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    adChoicesDestinationUrl: java.lang.String = null,
+    advertiserName: java.lang.String = null,
+    agencyId: java.lang.String = null,
+    apiUpdateTime: java.lang.String = null,
+    attributes: js.Array[java.lang.String] = null,
+    clickThroughUrls: js.Array[java.lang.String] = null,
+    corrections: js.Array[Correction] = null,
+    creativeId: java.lang.String = null,
+    dealsStatus: java.lang.String = null,
+    detectedAdvertiserIds: js.Array[java.lang.String] = null,
+    detectedDomains: js.Array[java.lang.String] = null,
+    detectedLanguages: js.Array[java.lang.String] = null,
+    detectedProductCategories: js.Array[scala.Double] = null,
+    detectedSensitiveCategories: js.Array[scala.Double] = null,
+    filteringStats: FilteringStats = null,
+    html: HtmlContent = null,
+    impressionTrackingUrls: js.Array[java.lang.String] = null,
+    native: NativeContent = null,
+    openAuctionStatus: java.lang.String = null,
+    restrictedCategories: js.Array[java.lang.String] = null,
+    servingRestrictions: js.Array[ServingRestriction] = null,
+    vendorIds: js.Array[scala.Double] = null,
+    version: scala.Int | scala.Double = null,
+    video: VideoContent = null
+  ): Creative = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (adChoicesDestinationUrl != null) __obj.updateDynamic("adChoicesDestinationUrl")(adChoicesDestinationUrl)
+    if (advertiserName != null) __obj.updateDynamic("advertiserName")(advertiserName)
+    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId)
+    if (apiUpdateTime != null) __obj.updateDynamic("apiUpdateTime")(apiUpdateTime)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (clickThroughUrls != null) __obj.updateDynamic("clickThroughUrls")(clickThroughUrls)
+    if (corrections != null) __obj.updateDynamic("corrections")(corrections)
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId)
+    if (dealsStatus != null) __obj.updateDynamic("dealsStatus")(dealsStatus)
+    if (detectedAdvertiserIds != null) __obj.updateDynamic("detectedAdvertiserIds")(detectedAdvertiserIds)
+    if (detectedDomains != null) __obj.updateDynamic("detectedDomains")(detectedDomains)
+    if (detectedLanguages != null) __obj.updateDynamic("detectedLanguages")(detectedLanguages)
+    if (detectedProductCategories != null) __obj.updateDynamic("detectedProductCategories")(detectedProductCategories)
+    if (detectedSensitiveCategories != null) __obj.updateDynamic("detectedSensitiveCategories")(detectedSensitiveCategories)
+    if (filteringStats != null) __obj.updateDynamic("filteringStats")(filteringStats)
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (impressionTrackingUrls != null) __obj.updateDynamic("impressionTrackingUrls")(impressionTrackingUrls)
+    if (native != null) __obj.updateDynamic("native")(native)
+    if (openAuctionStatus != null) __obj.updateDynamic("openAuctionStatus")(openAuctionStatus)
+    if (restrictedCategories != null) __obj.updateDynamic("restrictedCategories")(restrictedCategories)
+    if (servingRestrictions != null) __obj.updateDynamic("servingRestrictions")(servingRestrictions)
+    if (vendorIds != null) __obj.updateDynamic("vendorIds")(vendorIds)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    if (video != null) __obj.updateDynamic("video")(video)
+    __obj.asInstanceOf[Creative]
+  }
+}
+

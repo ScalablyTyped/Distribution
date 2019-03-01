@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object prismjsLibStrings {
   @js.native
-  sealed trait `after-highlight` extends js.Object
+  sealed trait `after-highlight`
+    extends prismjsLib.prismjsMod.AvailableHooks
   
   @js.native
-  sealed trait `before-highlight` extends js.Object
+  sealed trait `before-highlight`
+    extends prismjsLib.prismjsMod.AvailableHooks
   
   @js.native
-  sealed trait `before-highlightall` extends js.Object
+  sealed trait `before-highlightall`
+    extends prismjsLib.prismjsMod.AvailableHooks
   
   @js.native
-  sealed trait `before-insert` extends js.Object
+  sealed trait `before-insert`
+    extends prismjsLib.prismjsMod.AvailableHooks
   
   @js.native
-  sealed trait `before-sanity-check` extends js.Object
+  sealed trait `before-sanity-check`
+    extends prismjsLib.prismjsMod.AvailableHooks
   
   @js.native
-  sealed trait complete extends js.Object
+  sealed trait complete
+    extends prismjsLib.prismjsMod.AvailableHooks
   
   @js.native
-  sealed trait wrap extends js.Object
+  sealed trait wrap
+    extends prismjsLib.prismjsMod.AvailableHooks
   
   @scala.inline
   def `after-highlight`: `after-highlight` = "after-highlight".asInstanceOf[`after-highlight`]

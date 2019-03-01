@@ -34,3 +34,20 @@ trait Role extends js.Object {
   val rules: js.Array[PolicyRule]
 }
 
+object Role {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Role,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    rules: js.Array[PolicyRule]
+  ): Role = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[Role]
+  }
+}
+

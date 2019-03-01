@@ -24,3 +24,20 @@ trait Anon_Channel extends js.Object {
   var watch: Anon_BackgroundColor
 }
 
+object Anon_Channel {
+  @scala.inline
+  def apply(
+    channel: Anon_DefaultTab,
+    hints: js.Array[Anon_Property],
+    image: Anon_BackgroundImageUrl,
+    watch: Anon_BackgroundColor
+  ): Anon_Channel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("hints")(hints)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[Anon_Channel]
+  }
+}
+

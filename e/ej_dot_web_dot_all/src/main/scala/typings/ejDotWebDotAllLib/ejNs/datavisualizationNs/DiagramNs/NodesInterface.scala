@@ -19,3 +19,18 @@ trait NodesInterface extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodesInterface {
+  @scala.inline
+  def apply(
+    attributes: js.Array[NodesInterfaceAttribute] = null,
+    methods: js.Array[NodesInterfaceMethod] = null,
+    name: java.lang.String = null
+  ): NodesInterface = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[NodesInterface]
+  }
+}
+

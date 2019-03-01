@@ -21,3 +21,20 @@ trait GoogleCloudVideointelligenceV1beta2_LabelAnnotation extends js.Object {
   var segments: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2_LabelSegment]] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta2_LabelAnnotation {
+  @scala.inline
+  def apply(
+    categoryEntities: js.Array[GoogleCloudVideointelligenceV1beta2_Entity] = null,
+    entity: GoogleCloudVideointelligenceV1beta2_Entity = null,
+    frames: js.Array[GoogleCloudVideointelligenceV1beta2_LabelFrame] = null,
+    segments: js.Array[GoogleCloudVideointelligenceV1beta2_LabelSegment] = null
+  ): GoogleCloudVideointelligenceV1beta2_LabelAnnotation = {
+    val __obj = js.Dynamic.literal()
+    if (categoryEntities != null) __obj.updateDynamic("categoryEntities")(categoryEntities)
+    if (entity != null) __obj.updateDynamic("entity")(entity)
+    if (frames != null) __obj.updateDynamic("frames")(frames)
+    if (segments != null) __obj.updateDynamic("segments")(segments)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_LabelAnnotation]
+  }
+}
+

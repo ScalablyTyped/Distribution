@@ -16,3 +16,20 @@ trait XCancellable
   def cancel(): scala.Unit
 }
 
+object XCancellable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCancellable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCancellable]
+  }
+}
+

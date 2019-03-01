@@ -9,3 +9,12 @@ trait CallbackContainer extends js.Object {
   var callback: js.Function
 }
 
+object CallbackContainer {
+  @scala.inline
+  def apply(callback: js.Function): CallbackContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.asInstanceOf[CallbackContainer]
+  }
+}
+

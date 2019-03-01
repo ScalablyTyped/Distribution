@@ -15,3 +15,12 @@ trait MaxWidthProps[TLength] extends js.Object {
   var maxWidth: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MaxWidthProperty[TLength]]] = js.undefined
 }
 
+object MaxWidthProps {
+  @scala.inline
+  def apply[TLength](maxWidth: ResponsiveValue[csstypeLib.csstypeMod.MaxWidthProperty[TLength]] = null): MaxWidthProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MaxWidthProps[TLength]]
+  }
+}
+

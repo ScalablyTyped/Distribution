@@ -10,3 +10,16 @@ trait Anon_Redirect extends js.Object {
   var to: uiDashRouterDashExtrasLib.angularMod.uiNs.IRedirectParams
 }
 
+object Anon_Redirect {
+  @scala.inline
+  def apply(
+    redirect: uiDashRouterDashExtrasLib.angularMod.uiNs.IRedirectParams,
+    to: uiDashRouterDashExtrasLib.angularMod.uiNs.IRedirectParams
+  ): Anon_Redirect = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("redirect")(redirect)
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Anon_Redirect]
+  }
+}
+

@@ -41,3 +41,20 @@ trait ToolExecution extends js.Object {
   var toolOutputs: js.UndefOr[js.Array[ToolOutputReference]] = js.undefined
 }
 
+object ToolExecution {
+  @scala.inline
+  def apply(
+    commandLineArguments: js.Array[java.lang.String] = null,
+    exitCode: ToolExitCode = null,
+    toolLogs: js.Array[FileReference] = null,
+    toolOutputs: js.Array[ToolOutputReference] = null
+  ): ToolExecution = {
+    val __obj = js.Dynamic.literal()
+    if (commandLineArguments != null) __obj.updateDynamic("commandLineArguments")(commandLineArguments)
+    if (exitCode != null) __obj.updateDynamic("exitCode")(exitCode)
+    if (toolLogs != null) __obj.updateDynamic("toolLogs")(toolLogs)
+    if (toolOutputs != null) __obj.updateDynamic("toolOutputs")(toolOutputs)
+    __obj.asInstanceOf[ToolExecution]
+  }
+}
+

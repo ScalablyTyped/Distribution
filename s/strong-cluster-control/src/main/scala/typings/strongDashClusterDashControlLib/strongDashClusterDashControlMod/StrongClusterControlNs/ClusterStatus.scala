@@ -10,3 +10,13 @@ trait ClusterStatus extends js.Object {
   var workers: js.Array[ClusterWorker]
 }
 
+object ClusterStatus {
+  @scala.inline
+  def apply(master: ClusterMaster, workers: js.Array[ClusterWorker]): ClusterStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("master")(master)
+    __obj.updateDynamic("workers")(workers)
+    __obj.asInstanceOf[ClusterStatus]
+  }
+}
+

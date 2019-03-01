@@ -15,3 +15,26 @@ trait WebhookInfo extends js.Object {
   var url: java.lang.String
 }
 
+object WebhookInfo {
+  @scala.inline
+  def apply(
+    has_custom_certificate: scala.Boolean,
+    pending_update_count: scala.Double,
+    url: java.lang.String,
+    allowed_updates: js.Array[java.lang.String] = null,
+    last_error_date: scala.Int | scala.Double = null,
+    last_error_message: java.lang.String = null,
+    max_connections: scala.Int | scala.Double = null
+  ): WebhookInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("has_custom_certificate")(has_custom_certificate)
+    __obj.updateDynamic("pending_update_count")(pending_update_count)
+    __obj.updateDynamic("url")(url)
+    if (allowed_updates != null) __obj.updateDynamic("allowed_updates")(allowed_updates)
+    if (last_error_date != null) __obj.updateDynamic("last_error_date")(last_error_date.asInstanceOf[js.Any])
+    if (last_error_message != null) __obj.updateDynamic("last_error_message")(last_error_message)
+    if (max_connections != null) __obj.updateDynamic("max_connections")(max_connections.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebhookInfo]
+  }
+}
+

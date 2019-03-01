@@ -11,3 +11,18 @@ trait RegisterEffectOptions extends js.Object {
   var reset: js.UndefOr[js.Object] = js.undefined
 }
 
+object RegisterEffectOptions {
+  @scala.inline
+  def apply(
+    calls: js.Array[EffectCall],
+    defaultDuration: scala.Int | scala.Double = null,
+    reset: js.Object = null
+  ): RegisterEffectOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calls")(calls)
+    if (defaultDuration != null) __obj.updateDynamic("defaultDuration")(defaultDuration.asInstanceOf[js.Any])
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    __obj.asInstanceOf[RegisterEffectOptions]
+  }
+}
+

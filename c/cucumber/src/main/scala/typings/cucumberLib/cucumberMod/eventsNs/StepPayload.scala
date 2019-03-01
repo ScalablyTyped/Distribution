@@ -16,3 +16,28 @@ trait StepPayload extends EventPayload {
   var uri: java.lang.String
 }
 
+object StepPayload {
+  @scala.inline
+  def apply(
+    arguments: js.Any,
+    isBackground: scala.Boolean,
+    keyword: java.lang.String,
+    keywordType: java.lang.String,
+    line: scala.Double,
+    name: java.lang.String,
+    scenario: cucumberLib.cucumberMod.Scenario,
+    uri: java.lang.String
+  ): StepPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arguments")(arguments)
+    __obj.updateDynamic("isBackground")(isBackground)
+    __obj.updateDynamic("keyword")(keyword)
+    __obj.updateDynamic("keywordType")(keywordType)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("scenario")(scenario)
+    __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[StepPayload]
+  }
+}
+

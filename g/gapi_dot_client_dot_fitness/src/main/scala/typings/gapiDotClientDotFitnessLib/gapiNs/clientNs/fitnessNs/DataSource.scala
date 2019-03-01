@@ -50,3 +50,28 @@ trait DataSource extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataSource {
+  @scala.inline
+  def apply(
+    application: Application = null,
+    dataQualityStandard: js.Array[java.lang.String] = null,
+    dataStreamId: java.lang.String = null,
+    dataStreamName: java.lang.String = null,
+    dataType: DataType = null,
+    device: Device = null,
+    name: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DataSource = {
+    val __obj = js.Dynamic.literal()
+    if (application != null) __obj.updateDynamic("application")(application)
+    if (dataQualityStandard != null) __obj.updateDynamic("dataQualityStandard")(dataQualityStandard)
+    if (dataStreamId != null) __obj.updateDynamic("dataStreamId")(dataStreamId)
+    if (dataStreamName != null) __obj.updateDynamic("dataStreamName")(dataStreamName)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DataSource]
+  }
+}
+

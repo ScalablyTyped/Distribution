@@ -30,3 +30,28 @@ trait OptionsWithMap[Props, Exports /* <: org.scalablytyped.runtime.StringDictio
   def render(loaded: Exports, props: Props): reactLib.reactMod.ReactNs.ReactNode
 }
 
+object OptionsWithMap {
+  @scala.inline
+  def apply[Props, Exports /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
+    loader: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
+    */ reactDashLoadableLib.reactDashLoadableLibStrings.OptionsWithMap with Exports,
+    loading: reactLib.reactMod.ReactNs.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
+    render: js.Function2[Exports, Props, reactLib.reactMod.ReactNs.ReactNode],
+    delay: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
+    modules: js.Array[java.lang.String] = null,
+    timeout: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
+    webpack: js.Function0[js.Array[scala.Double]] = null
+  ): OptionsWithMap[Props, Exports] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("loader")(loader)
+    __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    __obj.updateDynamic("render")(render)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (webpack != null) __obj.updateDynamic("webpack")(webpack)
+    __obj.asInstanceOf[OptionsWithMap[Props, Exports]]
+  }
+}
+

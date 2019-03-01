@@ -13,3 +13,22 @@ trait EntryData extends js.Object {
   var stats: js.UndefOr[nodeLib.fsMod.Stats] = js.undefined
 }
 
+object EntryData {
+  @scala.inline
+  def apply(
+    date: stdLib.Date | java.lang.String = null,
+    mode: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    prefix: java.lang.String = null,
+    stats: nodeLib.fsMod.Stats = null
+  ): EntryData = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (stats != null) __obj.updateDynamic("stats")(stats)
+    __obj.asInstanceOf[EntryData]
+  }
+}
+

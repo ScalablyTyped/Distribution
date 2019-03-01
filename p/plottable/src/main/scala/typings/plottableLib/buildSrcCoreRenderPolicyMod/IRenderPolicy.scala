@@ -9,3 +9,12 @@ trait IRenderPolicy extends js.Object {
   def render(): js.Any
 }
 
+object IRenderPolicy {
+  @scala.inline
+  def apply(render: js.Function0[js.Any]): IRenderPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[IRenderPolicy]
+  }
+}
+

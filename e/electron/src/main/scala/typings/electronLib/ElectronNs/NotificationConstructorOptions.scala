@@ -52,3 +52,32 @@ trait NotificationConstructorOptions extends js.Object {
   var title: java.lang.String
 }
 
+object NotificationConstructorOptions {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    title: java.lang.String,
+    actions: js.Array[NotificationAction] = null,
+    closeButtonText: java.lang.String = null,
+    hasReply: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String | NativeImage = null,
+    replyPlaceholder: java.lang.String = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    sound: java.lang.String = null,
+    subtitle: java.lang.String = null
+  ): NotificationConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("title")(title)
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (closeButtonText != null) __obj.updateDynamic("closeButtonText")(closeButtonText)
+    if (!js.isUndefined(hasReply)) __obj.updateDynamic("hasReply")(hasReply)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (replyPlaceholder != null) __obj.updateDynamic("replyPlaceholder")(replyPlaceholder)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (sound != null) __obj.updateDynamic("sound")(sound)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    __obj.asInstanceOf[NotificationConstructorOptions]
+  }
+}
+

@@ -12,3 +12,13 @@ trait ImportFile extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImportFile {
+  @scala.inline
+  def apply(content: java.lang.String = null, name: java.lang.String = null): ImportFile = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ImportFile]
+  }
+}
+

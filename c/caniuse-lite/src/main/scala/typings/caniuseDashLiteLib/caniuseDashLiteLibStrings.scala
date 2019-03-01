@@ -7,46 +7,60 @@ import scala.scalajs.js.annotation._
 
 object caniuseDashLiteLibStrings {
   @js.native
-  sealed trait a extends js.Object
+  sealed trait a
+    extends caniuseDashLiteLib.caniuseDashLiteMod._SupportStatus
   
   @js.native
-  sealed trait `a x` extends js.Object
+  sealed trait `a x`
+    extends caniuseDashLiteLib.caniuseDashLiteMod._SupportStatus
   
   @js.native
-  sealed trait cr extends js.Object
+  sealed trait cr
+    extends caniuseDashLiteLib.caniuseDashLiteMod._FeatureStatus
   
   @js.native
-  sealed trait ls extends js.Object
+  sealed trait ls
+    extends caniuseDashLiteLib.caniuseDashLiteMod._FeatureStatus
   
   @js.native
-  sealed trait n extends js.Object
+  sealed trait n
+    extends caniuseDashLiteLib.caniuseDashLiteMod._SupportStatus
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait other
+    extends caniuseDashLiteLib.caniuseDashLiteMod._FeatureStatus
   
   @js.native
-  sealed trait p extends js.Object
+  sealed trait p
+    extends caniuseDashLiteLib.caniuseDashLiteMod._SupportStatus
   
   @js.native
-  sealed trait pr extends js.Object
+  sealed trait pr
+    extends caniuseDashLiteLib.caniuseDashLiteMod._FeatureStatus
   
   @js.native
-  sealed trait rec extends js.Object
+  sealed trait rec
+    extends caniuseDashLiteLib.caniuseDashLiteMod._FeatureStatus
   
   @js.native
-  sealed trait u extends js.Object
+  sealed trait u
+    extends caniuseDashLiteLib.caniuseDashLiteMod._SupportStatus
   
   @js.native
-  sealed trait unoff extends js.Object
+  sealed trait unoff
+    extends caniuseDashLiteLib.caniuseDashLiteMod._FeatureStatus
   
   @js.native
-  sealed trait wd extends js.Object
+  sealed trait wd
+    extends caniuseDashLiteLib.caniuseDashLiteMod._FeatureStatus
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends caniuseDashLiteLib.caniuseDashLiteMod._SupportStatus
   
   @js.native
-  sealed trait `y x` extends js.Object
+  sealed trait `y x`
+    extends caniuseDashLiteLib.caniuseDashLiteMod._SupportStatus
   
   @scala.inline
   def a: a = "a".asInstanceOf[a]

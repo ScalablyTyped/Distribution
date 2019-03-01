@@ -22,3 +22,26 @@ trait LogUserEventRequest extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogUserEventRequest {
+  @scala.inline
+  def apply(
+    eventAction: java.lang.String = null,
+    eventCategory: java.lang.String = null,
+    eventDatas: js.Array[EventData] = null,
+    eventScope: java.lang.String = null,
+    lead: Lead = null,
+    requestMetadata: RequestMetadata = null,
+    url: java.lang.String = null
+  ): LogUserEventRequest = {
+    val __obj = js.Dynamic.literal()
+    if (eventAction != null) __obj.updateDynamic("eventAction")(eventAction)
+    if (eventCategory != null) __obj.updateDynamic("eventCategory")(eventCategory)
+    if (eventDatas != null) __obj.updateDynamic("eventDatas")(eventDatas)
+    if (eventScope != null) __obj.updateDynamic("eventScope")(eventScope)
+    if (lead != null) __obj.updateDynamic("lead")(lead)
+    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[LogUserEventRequest]
+  }
+}
+

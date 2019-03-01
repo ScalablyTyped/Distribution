@@ -29,3 +29,20 @@ trait PoolClusterConfig extends js.Object {
   var restoreNodeTimeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PoolClusterConfig {
+  @scala.inline
+  def apply(
+    canRetry: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultSelector: java.lang.String = null,
+    removeNodeErrorCount: scala.Int | scala.Double = null,
+    restoreNodeTimeout: scala.Int | scala.Double = null
+  ): PoolClusterConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canRetry)) __obj.updateDynamic("canRetry")(canRetry)
+    if (defaultSelector != null) __obj.updateDynamic("defaultSelector")(defaultSelector)
+    if (removeNodeErrorCount != null) __obj.updateDynamic("removeNodeErrorCount")(removeNodeErrorCount.asInstanceOf[js.Any])
+    if (restoreNodeTimeout != null) __obj.updateDynamic("restoreNodeTimeout")(restoreNodeTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PoolClusterConfig]
+  }
+}
+

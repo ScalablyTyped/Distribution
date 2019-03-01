@@ -18,3 +18,12 @@ trait Stretchy extends js.Object {
   var stretchy: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Stretchy {
+  @scala.inline
+  def apply(stretchy: js.UndefOr[scala.Boolean] = js.undefined): Stretchy = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy)
+    __obj.asInstanceOf[Stretchy]
+  }
+}
+

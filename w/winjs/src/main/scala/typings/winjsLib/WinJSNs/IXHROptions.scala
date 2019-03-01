@@ -18,3 +18,28 @@ trait IXHROptions extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IXHROptions {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    customRequestInitializer: js.Function1[/* request */ stdLib.XMLHttpRequest, scala.Unit] = null,
+    data: js.Any = null,
+    headers: js.Any = null,
+    password: java.lang.String = null,
+    responseType: java.lang.String = null,
+    `type`: java.lang.String = null,
+    user: java.lang.String = null
+  ): IXHROptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (customRequestInitializer != null) __obj.updateDynamic("customRequestInitializer")(customRequestInitializer)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[IXHROptions]
+  }
+}
+

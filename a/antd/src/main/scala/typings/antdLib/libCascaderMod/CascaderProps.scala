@@ -68,3 +68,72 @@ trait CascaderProps extends js.Object {
   var value: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CascaderProps {
+  @scala.inline
+  def apply(
+    options: js.Array[CascaderOptionType],
+    allowClear: js.UndefOr[scala.Boolean] = js.undefined,
+    changeOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    defaultValue: js.Array[java.lang.String] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    displayRender: js.Function2[
+      /* label */ js.Array[java.lang.String], 
+      /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], 
+      reactLib.reactMod.ReactNs.ReactNode
+    ] = null,
+    expandTrigger: CascaderExpandTrigger = null,
+    fieldNames: FieldNamesType = null,
+    filedNames: FieldNamesType = null,
+    getPopupContainer: js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement] = null,
+    inputPrefixCls: java.lang.String = null,
+    loadData: js.Function1[/* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], scala.Unit] = null,
+    notFoundContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    onChange: js.Function2[
+      /* value */ js.Array[java.lang.String], 
+      /* selectedOptions */ js.UndefOr[js.Array[CascaderOptionType]], 
+      scala.Unit
+    ] = null,
+    onPopupVisibleChange: js.Function1[/* popupVisible */ scala.Boolean, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    popupClassName: java.lang.String = null,
+    popupPlacement: java.lang.String = null,
+    popupVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    prefixCls: java.lang.String = null,
+    showSearch: scala.Boolean | ShowSearchType = null,
+    size: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    suffixIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    value: js.Array[java.lang.String] = null
+  ): CascaderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
+    if (!js.isUndefined(changeOnSelect)) __obj.updateDynamic("changeOnSelect")(changeOnSelect)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (displayRender != null) __obj.updateDynamic("displayRender")(displayRender)
+    if (expandTrigger != null) __obj.updateDynamic("expandTrigger")(expandTrigger)
+    if (fieldNames != null) __obj.updateDynamic("fieldNames")(fieldNames)
+    if (filedNames != null) __obj.updateDynamic("filedNames")(filedNames)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
+    if (loadData != null) __obj.updateDynamic("loadData")(loadData)
+    if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onPopupVisibleChange != null) __obj.updateDynamic("onPopupVisibleChange")(onPopupVisibleChange)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName)
+    if (popupPlacement != null) __obj.updateDynamic("popupPlacement")(popupPlacement)
+    if (!js.isUndefined(popupVisible)) __obj.updateDynamic("popupVisible")(popupVisible)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (showSearch != null) __obj.updateDynamic("showSearch")(showSearch.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CascaderProps]
+  }
+}
+

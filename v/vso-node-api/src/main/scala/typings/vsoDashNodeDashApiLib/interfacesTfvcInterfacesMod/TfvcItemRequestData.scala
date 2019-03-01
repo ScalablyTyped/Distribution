@@ -17,3 +17,18 @@ trait TfvcItemRequestData extends js.Object {
   var itemDescriptors: js.Array[TfvcItemDescriptor]
 }
 
+object TfvcItemRequestData {
+  @scala.inline
+  def apply(
+    includeContentMetadata: scala.Boolean,
+    includeLinks: scala.Boolean,
+    itemDescriptors: js.Array[TfvcItemDescriptor]
+  ): TfvcItemRequestData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("includeContentMetadata")(includeContentMetadata)
+    __obj.updateDynamic("includeLinks")(includeLinks)
+    __obj.updateDynamic("itemDescriptors")(itemDescriptors)
+    __obj.asInstanceOf[TfvcItemRequestData]
+  }
+}
+

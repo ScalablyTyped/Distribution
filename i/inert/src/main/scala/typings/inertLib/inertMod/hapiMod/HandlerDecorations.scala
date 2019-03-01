@@ -34,3 +34,18 @@ trait HandlerDecorations extends js.Object {
   var files: js.UndefOr[inertLib.Anon_RelativeTo] = js.undefined
 }
 
+object HandlerDecorations {
+  @scala.inline
+  def apply(
+    directory: inertLib.inertMod.inertNs.DirectoryHandlerRouteObject = null,
+    file: java.lang.String | inertLib.inertMod.inertNs.RequestHandler[java.lang.String] | inertLib.inertMod.inertNs.FileHandlerRouteObject = null,
+    files: inertLib.Anon_RelativeTo = null
+  ): HandlerDecorations = {
+    val __obj = js.Dynamic.literal()
+    if (directory != null) __obj.updateDynamic("directory")(directory)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files)
+    __obj.asInstanceOf[HandlerDecorations]
+  }
+}
+

@@ -13,3 +13,22 @@ trait ChartSeriesItemNotes extends js.Object {
   var visual: js.UndefOr[js.Function] = js.undefined
 }
 
+object ChartSeriesItemNotes {
+  @scala.inline
+  def apply(
+    icon: ChartSeriesItemNotesIcon = null,
+    label: ChartSeriesItemNotesLabel = null,
+    line: ChartSeriesItemNotesLine = null,
+    position: java.lang.String = null,
+    visual: js.Function = null
+  ): ChartSeriesItemNotes = {
+    val __obj = js.Dynamic.literal()
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (visual != null) __obj.updateDynamic("visual")(visual)
+    __obj.asInstanceOf[ChartSeriesItemNotes]
+  }
+}
+

@@ -15,3 +15,18 @@ trait MultiDayEvents extends js.Object {
   var startDate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MultiDayEvents {
+  @scala.inline
+  def apply(
+    endDate: java.lang.String = null,
+    singleDay: java.lang.String = null,
+    startDate: java.lang.String = null
+  ): MultiDayEvents = {
+    val __obj = js.Dynamic.literal()
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (singleDay != null) __obj.updateDynamic("singleDay")(singleDay)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    __obj.asInstanceOf[MultiDayEvents]
+  }
+}
+

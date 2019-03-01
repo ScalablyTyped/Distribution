@@ -57,5 +57,7 @@
 [debug] PhaseRunner.scala:82 Success [id => graphql-binding, phase => scala.js] 
 [error] Options.scala:10 type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod,   var transforms: js.UndefOr[js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform]] = js.undefined [id => graphql-binding, phase => build] 
 [error] Options.scala:10 type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod,   var transforms: js.UndefOr[js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform]] = js.undefined [id => graphql-binding, phase => build] 
+[error] Options.scala:17 type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod,     transforms: js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform] = null [id => graphql-binding, phase => build] 
+[error] Options.scala:17 type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod,     transforms: js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform] = null [id => graphql-binding, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [graphql-binding => Compilation failed] [id => graphql-binding, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [graphql-binding => Compilation failed] [id => graphql-binding, phase => publish] 

@@ -16,3 +16,22 @@ trait SearchAStarOptions extends js.Object {
   var weight: js.UndefOr[WeightFn] = js.undefined
 }
 
+object SearchAStarOptions {
+  @scala.inline
+  def apply(
+    goal: Selector | CollectionArgument,
+    root: Selector | CollectionArgument,
+    directed: js.UndefOr[scala.Boolean] = js.undefined,
+    heuristic: js.Function1[/* node */ NodeCollection, scala.Double] = null,
+    weight: WeightFn = null
+  ): SearchAStarOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("goal")(goal.asInstanceOf[js.Any])
+    __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (heuristic != null) __obj.updateDynamic("heuristic")(heuristic)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[SearchAStarOptions]
+  }
+}
+

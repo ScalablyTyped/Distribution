@@ -10,3 +10,16 @@ trait HasAttributes extends js.Object {
   def set(name: java.lang.String, value: js.Any): scala.Unit
 }
 
+object HasAttributes {
+  @scala.inline
+  def apply(
+    get: js.Function1[java.lang.String, js.Any],
+    set: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): HasAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[HasAttributes]
+  }
+}
+

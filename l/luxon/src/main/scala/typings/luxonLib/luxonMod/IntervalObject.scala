@@ -10,3 +10,13 @@ trait IntervalObject extends js.Object {
   var start: js.UndefOr[DateTime] = js.undefined
 }
 
+object IntervalObject {
+  @scala.inline
+  def apply(end: DateTime = null, start: DateTime = null): IntervalObject = {
+    val __obj = js.Dynamic.literal()
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[IntervalObject]
+  }
+}
+

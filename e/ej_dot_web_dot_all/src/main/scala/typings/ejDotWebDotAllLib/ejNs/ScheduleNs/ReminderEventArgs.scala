@@ -20,3 +20,20 @@ trait ReminderEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReminderEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    reminderAppointment: js.Any = null,
+    `type`: java.lang.String = null
+  ): ReminderEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (reminderAppointment != null) __obj.updateDynamic("reminderAppointment")(reminderAppointment)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ReminderEventArgs]
+  }
+}
+

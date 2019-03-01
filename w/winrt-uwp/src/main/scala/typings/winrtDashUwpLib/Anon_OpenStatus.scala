@@ -11,3 +11,18 @@ trait Anon_OpenStatus extends js.Object {
   /** True if the method successfully opened the pin; otherwise false. */ var returnValue: scala.Boolean
 }
 
+object Anon_OpenStatus {
+  @scala.inline
+  def apply(
+    openStatus: winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioOpenStatus,
+    pin: winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPin,
+    returnValue: scala.Boolean
+  ): Anon_OpenStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("openStatus")(openStatus)
+    __obj.updateDynamic("pin")(pin)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_OpenStatus]
+  }
+}
+

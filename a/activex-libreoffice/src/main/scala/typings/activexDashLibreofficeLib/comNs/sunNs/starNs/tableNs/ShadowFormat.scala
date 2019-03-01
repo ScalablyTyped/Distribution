@@ -17,3 +17,20 @@ trait ShadowFormat extends js.Object {
   var ShadowWidth: scala.Double
 }
 
+object ShadowFormat {
+  @scala.inline
+  def apply(
+    Color: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    IsTransparent: scala.Boolean,
+    Location: ShadowLocation,
+    ShadowWidth: scala.Double
+  ): ShadowFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Color")(Color)
+    __obj.updateDynamic("IsTransparent")(IsTransparent)
+    __obj.updateDynamic("Location")(Location)
+    __obj.updateDynamic("ShadowWidth")(ShadowWidth)
+    __obj.asInstanceOf[ShadowFormat]
+  }
+}
+

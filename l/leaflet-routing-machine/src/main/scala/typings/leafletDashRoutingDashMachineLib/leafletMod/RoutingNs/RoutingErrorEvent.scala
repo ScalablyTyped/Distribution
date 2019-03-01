@@ -9,3 +9,12 @@ trait RoutingErrorEvent extends js.Object {
   var error: IError
 }
 
+object RoutingErrorEvent {
+  @scala.inline
+  def apply(error: IError): RoutingErrorEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[RoutingErrorEvent]
+  }
+}
+

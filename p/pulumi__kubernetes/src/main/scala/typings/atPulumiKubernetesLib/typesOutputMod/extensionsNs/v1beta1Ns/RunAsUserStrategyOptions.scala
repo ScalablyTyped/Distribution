@@ -21,3 +21,13 @@ trait RunAsUserStrategyOptions extends js.Object {
   val rule: java.lang.String
 }
 
+object RunAsUserStrategyOptions {
+  @scala.inline
+  def apply(ranges: js.Array[IDRange], rule: java.lang.String): RunAsUserStrategyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ranges")(ranges)
+    __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[RunAsUserStrategyOptions]
+  }
+}
+

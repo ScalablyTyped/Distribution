@@ -14,3 +14,13 @@ trait SplitterSettings extends js.Object {
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SplitterSettings {
+  @scala.inline
+  def apply(index: java.lang.String = null, position: java.lang.String = null): SplitterSettings = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[SplitterSettings]
+  }
+}
+

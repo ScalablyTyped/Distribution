@@ -26,3 +26,18 @@ trait LookupResponse extends js.Object {
   var missing: js.UndefOr[js.Array[EntityResult]] = js.undefined
 }
 
+object LookupResponse {
+  @scala.inline
+  def apply(
+    deferred: js.Array[Key] = null,
+    found: js.Array[EntityResult] = null,
+    missing: js.Array[EntityResult] = null
+  ): LookupResponse = {
+    val __obj = js.Dynamic.literal()
+    if (deferred != null) __obj.updateDynamic("deferred")(deferred)
+    if (found != null) __obj.updateDynamic("found")(found)
+    if (missing != null) __obj.updateDynamic("missing")(missing)
+    __obj.asInstanceOf[LookupResponse]
+  }
+}
+

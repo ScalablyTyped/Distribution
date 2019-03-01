@@ -9,3 +9,12 @@ trait KnockoutUtils extends js.Object {
   def wrapAccessor(accessor: js.Any): js.Function
 }
 
+object KnockoutUtils {
+  @scala.inline
+  def apply(wrapAccessor: js.Function1[js.Any, js.Function]): KnockoutUtils = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("wrapAccessor")(wrapAccessor)
+    __obj.asInstanceOf[KnockoutUtils]
+  }
+}
+

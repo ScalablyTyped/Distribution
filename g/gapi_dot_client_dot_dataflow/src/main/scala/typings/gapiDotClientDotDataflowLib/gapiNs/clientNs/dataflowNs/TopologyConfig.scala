@@ -18,3 +18,22 @@ trait TopologyConfig extends js.Object {
   var userStageToComputationNameMap: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object TopologyConfig {
+  @scala.inline
+  def apply(
+    computations: js.Array[ComputationTopology] = null,
+    dataDiskAssignments: js.Array[DataDiskAssignment] = null,
+    forwardingKeyBits: scala.Int | scala.Double = null,
+    persistentStateVersion: scala.Int | scala.Double = null,
+    userStageToComputationNameMap: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): TopologyConfig = {
+    val __obj = js.Dynamic.literal()
+    if (computations != null) __obj.updateDynamic("computations")(computations)
+    if (dataDiskAssignments != null) __obj.updateDynamic("dataDiskAssignments")(dataDiskAssignments)
+    if (forwardingKeyBits != null) __obj.updateDynamic("forwardingKeyBits")(forwardingKeyBits.asInstanceOf[js.Any])
+    if (persistentStateVersion != null) __obj.updateDynamic("persistentStateVersion")(persistentStateVersion.asInstanceOf[js.Any])
+    if (userStageToComputationNameMap != null) __obj.updateDynamic("userStageToComputationNameMap")(userStageToComputationNameMap)
+    __obj.asInstanceOf[TopologyConfig]
+  }
+}
+

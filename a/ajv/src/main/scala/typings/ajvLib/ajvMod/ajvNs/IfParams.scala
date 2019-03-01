@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IfParams extends js.Object {
+trait IfParams extends ErrorParameters {
   var failingKeyword: java.lang.String
+}
+
+object IfParams {
+  @scala.inline
+  def apply(failingKeyword: java.lang.String): IfParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failingKeyword")(failingKeyword)
+    __obj.asInstanceOf[IfParams]
+  }
 }
 

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * An action that is being or was performed on a patient
   */
-trait Procedure extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Procedure extends DomainResource {
   /**
     * Contains extended information for property 'notDone'.
     */
@@ -129,5 +130,100 @@ trait Procedure extends DomainResource {
     * Items used during procedure
     */
   var usedReference: js.UndefOr[js.Array[Reference]] = js.undefined
+}
+
+object Procedure {
+  @scala.inline
+  def apply(
+    status: code,
+    subject: Reference,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _notDone: Element = null,
+    _performedDateTime: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    basedOn: js.Array[Reference] = null,
+    bodySite: js.Array[CodeableConcept] = null,
+    category: CodeableConcept = null,
+    code: CodeableConcept = null,
+    complication: js.Array[CodeableConcept] = null,
+    complicationDetail: js.Array[Reference] = null,
+    contained: js.Array[Resource] = null,
+    context: Reference = null,
+    definition: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    focalDevice: js.Array[ProcedureFocalDevice] = null,
+    followUp: js.Array[CodeableConcept] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    location: Reference = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    notDone: js.UndefOr[scala.Boolean] = js.undefined,
+    notDoneReason: CodeableConcept = null,
+    note: js.Array[Annotation] = null,
+    outcome: CodeableConcept = null,
+    partOf: js.Array[Reference] = null,
+    performedDateTime: dateTime = null,
+    performedPeriod: Period = null,
+    performer: js.Array[ProcedurePerformer] = null,
+    reasonCode: js.Array[CodeableConcept] = null,
+    reasonReference: js.Array[Reference] = null,
+    report: js.Array[Reference] = null,
+    resourceType: code = null,
+    text: Narrative = null,
+    usedCode: js.Array[CodeableConcept] = null,
+    usedReference: js.Array[Reference] = null
+  ): Procedure = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("subject")(subject)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_notDone != null) __obj.updateDynamic("_notDone")(_notDone)
+    if (_performedDateTime != null) __obj.updateDynamic("_performedDateTime")(_performedDateTime)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn)
+    if (bodySite != null) __obj.updateDynamic("bodySite")(bodySite)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (complication != null) __obj.updateDynamic("complication")(complication)
+    if (complicationDetail != null) __obj.updateDynamic("complicationDetail")(complicationDetail)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (definition != null) __obj.updateDynamic("definition")(definition)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (focalDevice != null) __obj.updateDynamic("focalDevice")(focalDevice)
+    if (followUp != null) __obj.updateDynamic("followUp")(followUp)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (!js.isUndefined(notDone)) __obj.updateDynamic("notDone")(notDone)
+    if (notDoneReason != null) __obj.updateDynamic("notDoneReason")(notDoneReason)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    if (partOf != null) __obj.updateDynamic("partOf")(partOf)
+    if (performedDateTime != null) __obj.updateDynamic("performedDateTime")(performedDateTime)
+    if (performedPeriod != null) __obj.updateDynamic("performedPeriod")(performedPeriod)
+    if (performer != null) __obj.updateDynamic("performer")(performer)
+    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode)
+    if (reasonReference != null) __obj.updateDynamic("reasonReference")(reasonReference)
+    if (report != null) __obj.updateDynamic("report")(report)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (usedCode != null) __obj.updateDynamic("usedCode")(usedCode)
+    if (usedReference != null) __obj.updateDynamic("usedReference")(usedReference)
+    __obj.asInstanceOf[Procedure]
+  }
 }
 

@@ -16,3 +16,13 @@ trait Anon_Available extends js.Object {
   var discovering: scala.Boolean
 }
 
+object Anon_Available {
+  @scala.inline
+  def apply(available: scala.Boolean, discovering: scala.Boolean): Anon_Available = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("available")(available)
+    __obj.updateDynamic("discovering")(discovering)
+    __obj.asInstanceOf[Anon_Available]
+  }
+}
+

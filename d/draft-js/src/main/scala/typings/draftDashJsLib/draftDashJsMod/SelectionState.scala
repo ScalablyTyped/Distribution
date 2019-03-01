@@ -30,9 +30,9 @@ class SelectionState ()
   /* CompleteClass */
   override def getStartOffset(): scala.Double = js.native
   /**
-                   * Return whether the specified range overlaps with an edge of the
-                   * SelectionState.
-                   */
+    * Return whether the specified range overlaps with an edge of the
+    * SelectionState.
+    */
   /* CompleteClass */
   override def hasEdgeWithin(blockKey: java.lang.String, start: scala.Double, end: scala.Double): scala.Boolean = js.native
   /* CompleteClass */
@@ -41,6 +41,7 @@ class SelectionState ()
   override def serialize(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("draft-js", "SelectionState")
 @js.native
 object SelectionState extends js.Object {

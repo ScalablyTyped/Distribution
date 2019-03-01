@@ -18,3 +18,22 @@ trait I18nRegionListResponse extends js.Object {
   var visitorId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object I18nRegionListResponse {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    eventId: java.lang.String = null,
+    items: js.Array[I18nRegion] = null,
+    kind: java.lang.String = null,
+    visitorId: java.lang.String = null
+  ): I18nRegionListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId)
+    __obj.asInstanceOf[I18nRegionListResponse]
+  }
+}
+

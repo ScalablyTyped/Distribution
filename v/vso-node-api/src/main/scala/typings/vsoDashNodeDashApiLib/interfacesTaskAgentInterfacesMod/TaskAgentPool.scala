@@ -41,3 +41,40 @@ trait TaskAgentPool extends TaskAgentPoolReference {
   var size: scala.Double
 }
 
+object TaskAgentPool {
+  @scala.inline
+  def apply(
+    administratorsGroup: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    autoProvision: scala.Boolean,
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdOn: stdLib.Date,
+    groupScopeId: java.lang.String,
+    id: scala.Double,
+    isHosted: scala.Boolean,
+    name: java.lang.String,
+    poolType: TaskAgentPoolType,
+    properties: js.Any,
+    provisioned: scala.Boolean,
+    scope: java.lang.String,
+    serviceAccountsGroup: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    size: scala.Double
+  ): TaskAgentPool = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("administratorsGroup")(administratorsGroup)
+    __obj.updateDynamic("autoProvision")(autoProvision)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("createdOn")(createdOn)
+    __obj.updateDynamic("groupScopeId")(groupScopeId)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isHosted")(isHosted)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("poolType")(poolType)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("provisioned")(provisioned)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("serviceAccountsGroup")(serviceAccountsGroup)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[TaskAgentPool]
+  }
+}
+

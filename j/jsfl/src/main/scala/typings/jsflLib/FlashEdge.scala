@@ -16,3 +16,28 @@ trait FlashEdge extends js.Object {
   def splitEdge(t: scala.Double): scala.Unit
 }
 
+object FlashEdge {
+  @scala.inline
+  def apply(
+    cubicSegmentIndex: scala.Double,
+    getControl: js.Function1[scala.Double, FlashPoint],
+    getHalfEdge: js.Function1[scala.Double, FlashHalfEdge],
+    id: scala.Double,
+    isLine: scala.Boolean,
+    setControl: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    splitEdge: js.Function1[scala.Double, scala.Unit],
+    stroke: FlashStroke
+  ): FlashEdge = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cubicSegmentIndex")(cubicSegmentIndex)
+    __obj.updateDynamic("getControl")(getControl)
+    __obj.updateDynamic("getHalfEdge")(getHalfEdge)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isLine")(isLine)
+    __obj.updateDynamic("setControl")(setControl)
+    __obj.updateDynamic("splitEdge")(splitEdge)
+    __obj.updateDynamic("stroke")(stroke)
+    __obj.asInstanceOf[FlashEdge]
+  }
+}
+

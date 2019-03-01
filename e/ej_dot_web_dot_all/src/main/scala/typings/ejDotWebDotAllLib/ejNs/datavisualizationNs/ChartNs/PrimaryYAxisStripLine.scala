@@ -52,3 +52,34 @@ trait PrimaryYAxisStripLine extends js.Object {
   var zIndex: js.UndefOr[ZIndex | java.lang.String] = js.undefined
 }
 
+object PrimaryYAxisStripLine {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String = null,
+    color: java.lang.String = null,
+    end: scala.Int | scala.Double = null,
+    font: PrimaryYAxisStripLineFont = null,
+    start: scala.Int | scala.Double = null,
+    startFromAxis: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null,
+    textAlignment: TextAlignment | java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null,
+    zIndex: ZIndex | java.lang.String = null
+  ): PrimaryYAxisStripLine = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (!js.isUndefined(startFromAxis)) __obj.updateDynamic("startFromAxis")(startFromAxis)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrimaryYAxisStripLine]
+  }
+}
+

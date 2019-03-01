@@ -10,3 +10,12 @@ trait LinuxGetLinuxAccountViewsResponse extends js.Object {
   var resource: js.UndefOr[LinuxAccountViews] = js.undefined
 }
 
+object LinuxGetLinuxAccountViewsResponse {
+  @scala.inline
+  def apply(resource: LinuxAccountViews = null): LinuxGetLinuxAccountViewsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[LinuxGetLinuxAccountViewsResponse]
+  }
+}
+

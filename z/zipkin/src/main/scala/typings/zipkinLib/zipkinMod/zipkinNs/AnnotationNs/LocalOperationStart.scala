@@ -10,3 +10,13 @@ trait LocalOperationStart
   var name: java.lang.String
 }
 
+object LocalOperationStart {
+  @scala.inline
+  def apply(annotationType: java.lang.String, name: java.lang.String): LocalOperationStart = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotationType")(annotationType)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[LocalOperationStart]
+  }
+}
+

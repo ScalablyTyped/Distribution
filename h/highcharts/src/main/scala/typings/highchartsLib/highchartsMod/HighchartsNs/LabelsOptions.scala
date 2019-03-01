@@ -10,3 +10,13 @@ trait LabelsOptions extends js.Object {
   var style: js.UndefOr[CSSObject] = js.undefined
 }
 
+object LabelsOptions {
+  @scala.inline
+  def apply(items: js.Array[LabelItem] = null, style: CSSObject = null): LabelsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[LabelsOptions]
+  }
+}
+

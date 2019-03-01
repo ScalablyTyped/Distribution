@@ -27,3 +27,20 @@ trait IChainLink extends js.Object {
   var walkedPath: IWalkPath
 }
 
+object IChainLink {
+  @scala.inline
+  def apply(
+    endPoints: js.Array[IPoint],
+    pathLength: scala.Double,
+    reversed: scala.Boolean,
+    walkedPath: IWalkPath
+  ): IChainLink = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endPoints")(endPoints)
+    __obj.updateDynamic("pathLength")(pathLength)
+    __obj.updateDynamic("reversed")(reversed)
+    __obj.updateDynamic("walkedPath")(walkedPath)
+    __obj.asInstanceOf[IChainLink]
+  }
+}
+

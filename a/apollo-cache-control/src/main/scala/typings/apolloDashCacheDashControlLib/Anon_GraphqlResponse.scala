@@ -6,6 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_GraphqlResponse extends js.Object {
-  var graphqlResponse: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse
+  var graphqlResponse: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLResponse */ js.Any
+}
+
+object Anon_GraphqlResponse {
+  @scala.inline
+  def apply(
+    graphqlResponse: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLResponse */ js.Any
+  ): Anon_GraphqlResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("graphqlResponse")(graphqlResponse)
+    __obj.asInstanceOf[Anon_GraphqlResponse]
+  }
 }
 

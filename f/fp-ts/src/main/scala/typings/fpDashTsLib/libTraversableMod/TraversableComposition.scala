@@ -15,3 +15,34 @@ trait TraversableComposition[F, G]
   ]
 }
 
+object TraversableComposition {
+  @scala.inline
+  def apply[F, G](
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]]
+    ],
+    reduce: js.Function3[
+      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, js.Any]], 
+      js.Any, 
+      js.Function2[js.Any, js.Any, js.Any], 
+      js.Any
+    ],
+    traverse: js.Function1[
+      fpDashTsLib.libApplicativeMod.Applicative[js.Any], 
+      js.Function2[
+        /* fga */ fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, _]], 
+        /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.HKT[js.Any, _]], 
+        fpDashTsLib.libHKTMod.HKT[js.Any, fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[G, _]]]
+      ]
+    ]
+  ): TraversableComposition[F, G] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("reduce")(reduce)
+    __obj.updateDynamic("traverse")(traverse)
+    __obj.asInstanceOf[TraversableComposition[F, G]]
+  }
+}
+

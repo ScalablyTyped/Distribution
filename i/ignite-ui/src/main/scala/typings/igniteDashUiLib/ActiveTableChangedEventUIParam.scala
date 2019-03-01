@@ -20,3 +20,14 @@ trait ActiveTableChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ActiveTableChangedEventUIParam {
+  @scala.inline
+  def apply(newActiveTable: js.Any = null, oldActiveTable: js.Any = null, owner: js.Any = null): ActiveTableChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (newActiveTable != null) __obj.updateDynamic("newActiveTable")(newActiveTable)
+    if (oldActiveTable != null) __obj.updateDynamic("oldActiveTable")(oldActiveTable)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ActiveTableChangedEventUIParam]
+  }
+}
+

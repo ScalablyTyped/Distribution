@@ -10,3 +10,16 @@ trait Anon_PrivateKey extends js.Object {
   var publicKey: nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer
 }
 
+object Anon_PrivateKey {
+  @scala.inline
+  def apply(
+    privateKey: nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer,
+    publicKey: nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer
+  ): Anon_PrivateKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_PrivateKey]
+  }
+}
+

@@ -124,3 +124,42 @@ trait WorkbookLoadOptions extends js.Object {
   var usePrecisionAsDisplayed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WorkbookLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    application: ApplicationLoadOptions = null,
+    autoSave: js.UndefOr[scala.Boolean] = js.undefined,
+    bindings: BindingCollectionLoadOptions = null,
+    calculationEngineVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    chartDataPointTrack: js.UndefOr[scala.Boolean] = js.undefined,
+    isDirty: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    previouslySaved: js.UndefOr[scala.Boolean] = js.undefined,
+    properties: DocumentPropertiesLoadOptions = null,
+    protection: WorkbookProtectionLoadOptions = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    tables: TableCollectionLoadOptions = null,
+    use1904DateSystem: js.UndefOr[scala.Boolean] = js.undefined,
+    usePrecisionAsDisplayed: js.UndefOr[scala.Boolean] = js.undefined
+  ): WorkbookLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (application != null) __obj.updateDynamic("application")(application)
+    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion)
+    if (!js.isUndefined(chartDataPointTrack)) __obj.updateDynamic("chartDataPointTrack")(chartDataPointTrack)
+    if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(previouslySaved)) __obj.updateDynamic("previouslySaved")(previouslySaved)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (!js.isUndefined(use1904DateSystem)) __obj.updateDynamic("use1904DateSystem")(use1904DateSystem)
+    if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed)
+    __obj.asInstanceOf[WorkbookLoadOptions]
+  }
+}
+

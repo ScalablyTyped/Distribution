@@ -53,3 +53,32 @@ trait FileSystemState extends js.Object {
   val throughputMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object FileSystemState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    creationToken: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dnsName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    encrypted: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    performanceMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    provisionedThroughputInMibps: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    referenceName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    throughputMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): FileSystemState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (creationToken != null) __obj.updateDynamic("creationToken")(creationToken.asInstanceOf[js.Any])
+    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
+    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (performanceMode != null) __obj.updateDynamic("performanceMode")(performanceMode.asInstanceOf[js.Any])
+    if (provisionedThroughputInMibps != null) __obj.updateDynamic("provisionedThroughputInMibps")(provisionedThroughputInMibps.asInstanceOf[js.Any])
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (throughputMode != null) __obj.updateDynamic("throughputMode")(throughputMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileSystemState]
+  }
+}
+

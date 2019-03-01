@@ -16,3 +16,20 @@ trait AclEntry extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AclEntry {
+  @scala.inline
+  def apply(
+    expirationTime: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    value: java.lang.String = null
+  ): AclEntry = {
+    val __obj = js.Dynamic.literal()
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[AclEntry]
+  }
+}
+

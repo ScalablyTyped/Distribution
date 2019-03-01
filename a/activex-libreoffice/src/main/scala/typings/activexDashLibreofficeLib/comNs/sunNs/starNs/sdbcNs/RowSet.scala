@@ -66,3 +66,42 @@ trait RowSet
   var User: java.lang.String
 }
 
+object RowSet {
+  @scala.inline
+  def apply(
+    Command: java.lang.String,
+    DataSourceName: java.lang.String,
+    EscapeProcessing: scala.Boolean,
+    MaxFieldSize: scala.Double,
+    MaxRows: scala.Double,
+    Password: java.lang.String,
+    QueryTimeOut: scala.Double,
+    ResultSet: ResultSet = null,
+    ResultSetType: scala.Double,
+    TransactionIsolation: scala.Double,
+    TypeMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    URL: java.lang.String,
+    User: java.lang.String,
+    XParameters: XParameters = null,
+    XRowSet: XRowSet = null
+  ): RowSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Command")(Command)
+    __obj.updateDynamic("DataSourceName")(DataSourceName)
+    __obj.updateDynamic("EscapeProcessing")(EscapeProcessing)
+    __obj.updateDynamic("MaxFieldSize")(MaxFieldSize)
+    __obj.updateDynamic("MaxRows")(MaxRows)
+    __obj.updateDynamic("Password")(Password)
+    __obj.updateDynamic("QueryTimeOut")(QueryTimeOut)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ResultSet)
+    __obj.updateDynamic("ResultSetType")(ResultSetType)
+    __obj.updateDynamic("TransactionIsolation")(TransactionIsolation)
+    __obj.updateDynamic("TypeMap")(TypeMap)
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("User")(User)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XParameters)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XRowSet)
+    __obj.asInstanceOf[RowSet]
+  }
+}
+

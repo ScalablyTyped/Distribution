@@ -9,3 +9,22 @@ trait WriteFragmentOptions[TData, TVariables] extends Fragment[TVariables] {
   var data: TData
 }
 
+object WriteFragmentOptions {
+  @scala.inline
+  def apply[TData, TVariables](
+    data: TData,
+    fragment: graphqlLib.languageAstMod.DocumentNode,
+    id: java.lang.String,
+    fragmentName: java.lang.String = null,
+    variables: TVariables = null
+  ): WriteFragmentOptions[TData, TVariables] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("fragment")(fragment)
+    __obj.updateDynamic("id")(id)
+    if (fragmentName != null) __obj.updateDynamic("fragmentName")(fragmentName)
+    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WriteFragmentOptions[TData, TVariables]]
+  }
+}
+

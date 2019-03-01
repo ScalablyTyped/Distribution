@@ -10,3 +10,16 @@ trait Anon_Getter extends js.Object {
   var setter: typescriptDashServicesLib.TypeScriptNs.SetAccessor
 }
 
+object Anon_Getter {
+  @scala.inline
+  def apply(
+    getter: typescriptDashServicesLib.TypeScriptNs.GetAccessor,
+    setter: typescriptDashServicesLib.TypeScriptNs.SetAccessor
+  ): Anon_Getter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getter")(getter)
+    __obj.updateDynamic("setter")(setter)
+    __obj.asInstanceOf[Anon_Getter]
+  }
+}
+

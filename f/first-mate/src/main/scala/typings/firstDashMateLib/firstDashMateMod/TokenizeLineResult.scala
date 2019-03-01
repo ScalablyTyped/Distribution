@@ -29,3 +29,20 @@ trait TokenizeLineResult extends js.Object {
   var tokens: js.Array[GrammarToken]
 }
 
+object TokenizeLineResult {
+  @scala.inline
+  def apply(
+    line: java.lang.String,
+    ruleStack: js.Array[GrammarRule],
+    tags: js.Array[scala.Double | java.lang.String],
+    tokens: js.Array[GrammarToken]
+  ): TokenizeLineResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("ruleStack")(ruleStack)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("tokens")(tokens)
+    __obj.asInstanceOf[TokenizeLineResult]
+  }
+}
+

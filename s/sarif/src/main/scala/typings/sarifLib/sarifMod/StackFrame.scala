@@ -36,3 +36,26 @@ trait StackFrame extends js.Object {
   var threadId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StackFrame {
+  @scala.inline
+  def apply(
+    address: scala.Int | scala.Double = null,
+    location: Location = null,
+    module: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
+    parameters: js.Array[java.lang.String] = null,
+    properties: PropertyBag = null,
+    threadId: scala.Int | scala.Double = null
+  ): StackFrame = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (module != null) __obj.updateDynamic("module")(module)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StackFrame]
+  }
+}
+

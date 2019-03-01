@@ -18,3 +18,26 @@ trait LoggingEvent extends js.Object {
   var startTime: stdLib.Date
 }
 
+object LoggingEvent {
+  @scala.inline
+  def apply(
+    categoryName: java.lang.String,
+    context: js.Any,
+    data: js.Array[_],
+    level: Level,
+    pid: scala.Double,
+    startTime: stdLib.Date,
+    cluster: log4jsLib.Anon_Worker = null
+  ): LoggingEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("categoryName")(categoryName)
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("pid")(pid)
+    __obj.updateDynamic("startTime")(startTime)
+    if (cluster != null) __obj.updateDynamic("cluster")(cluster)
+    __obj.asInstanceOf[LoggingEvent]
+  }
+}
+

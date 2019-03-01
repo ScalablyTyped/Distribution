@@ -24,3 +24,36 @@ trait IRadio
   var setValue_IRadio: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
 }
 
+object IRadio {
+  @scala.inline
+  def apply(
+    ICheckbox: senchaUnderscoreTouchLib.ExtNs.fieldNs.ICheckbox = null,
+    component: js.Any = null,
+    getComponent: js.Function0[_] = null,
+    getGroupValue: js.Function0[java.lang.String] = null,
+    getSubmitValue: js.Function0[_] = null,
+    getUi: js.Function0[java.lang.String] = null,
+    getValue: js.Function0[java.lang.String] = null,
+    setComponent: js.Function1[/* component */ js.UndefOr[js.Any], scala.Unit] = null,
+    setGroupValue: js.Function1[/* value */ js.UndefOr[java.lang.String], IRadio] = null,
+    setUi: js.Function1[/* ui */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setValue: js.Function1[/* value */ js.UndefOr[js.Any], IRadio] = null,
+    ui: java.lang.String = null
+  ): IRadio = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ICheckbox)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (getComponent != null) __obj.updateDynamic("getComponent")(getComponent)
+    if (getGroupValue != null) __obj.updateDynamic("getGroupValue")(getGroupValue)
+    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(getSubmitValue)
+    if (getUi != null) __obj.updateDynamic("getUi")(getUi)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (setComponent != null) __obj.updateDynamic("setComponent")(setComponent)
+    if (setGroupValue != null) __obj.updateDynamic("setGroupValue")(setGroupValue)
+    if (setUi != null) __obj.updateDynamic("setUi")(setUi)
+    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    __obj.asInstanceOf[IRadio]
+  }
+}
+

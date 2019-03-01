@@ -36,3 +36,26 @@ trait SimulationNodeDatum extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SimulationNodeDatum {
+  @scala.inline
+  def apply(
+    fx: scala.Int | scala.Double = null,
+    fy: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null,
+    vx: scala.Int | scala.Double = null,
+    vy: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): SimulationNodeDatum = {
+    val __obj = js.Dynamic.literal()
+    if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
+    if (fy != null) __obj.updateDynamic("fy")(fy.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (vx != null) __obj.updateDynamic("vx")(vx.asInstanceOf[js.Any])
+    if (vy != null) __obj.updateDynamic("vy")(vy.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SimulationNodeDatum]
+  }
+}
+

@@ -16,3 +16,20 @@ trait Videostream extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Videostream {
+  @scala.inline
+  def apply(
+    height: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    url: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Videostream = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Videostream]
+  }
+}
+

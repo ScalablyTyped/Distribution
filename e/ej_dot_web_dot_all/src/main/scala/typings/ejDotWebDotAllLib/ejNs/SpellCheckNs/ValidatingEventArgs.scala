@@ -38,3 +38,32 @@ trait ValidatingEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ValidatingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    changeWord: java.lang.String = null,
+    changeableWord: java.lang.String = null,
+    customWord: java.lang.String = null,
+    ignoreWord: java.lang.String = null,
+    index: scala.Int | scala.Double = null,
+    model: Model = null,
+    requestType: java.lang.String = null,
+    targetContent: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ValidatingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (changeWord != null) __obj.updateDynamic("changeWord")(changeWord)
+    if (changeableWord != null) __obj.updateDynamic("changeableWord")(changeableWord)
+    if (customWord != null) __obj.updateDynamic("customWord")(customWord)
+    if (ignoreWord != null) __obj.updateDynamic("ignoreWord")(ignoreWord)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (targetContent != null) __obj.updateDynamic("targetContent")(targetContent)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ValidatingEventArgs]
+  }
+}
+

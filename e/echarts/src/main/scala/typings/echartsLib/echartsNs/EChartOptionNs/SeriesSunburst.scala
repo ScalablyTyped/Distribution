@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst
   */
-trait SeriesSunburst extends js.Object {
+trait SeriesSunburst extends Series {
   /**
     * Whether to enable animation.
     *
@@ -422,5 +422,66 @@ trait SeriesSunburst extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesSunburst {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    center: js.Array[_] = null,
+    data: js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesSunburstNs.DataObject] = null,
+    downplay: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null,
+    highlight: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight = null,
+    highlightPolicy: java.lang.String = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle = null,
+    levels: echartsLib.Anon_Downplay = null,
+    name: java.lang.String = null,
+    nodeClick: scala.Boolean | java.lang.String = null,
+    radius: js.Array[_] | scala.Double | java.lang.String = null,
+    renderLabelForZeroData: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.Function | java.lang.String = null,
+    `type`: java.lang.String = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesSunburst = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (downplay != null) __obj.updateDynamic("downplay")(downplay)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (highlightPolicy != null) __obj.updateDynamic("highlightPolicy")(highlightPolicy)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (levels != null) __obj.updateDynamic("levels")(levels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nodeClick != null) __obj.updateDynamic("nodeClick")(nodeClick.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderLabelForZeroData)) __obj.updateDynamic("renderLabelForZeroData")(renderLabelForZeroData)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesSunburst]
+  }
 }
 

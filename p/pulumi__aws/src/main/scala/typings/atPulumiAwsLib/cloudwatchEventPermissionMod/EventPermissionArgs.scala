@@ -24,3 +24,20 @@ trait EventPermissionArgs extends js.Object {
   val statementId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object EventPermissionArgs {
+  @scala.inline
+  def apply(
+    principal: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    statementId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    action: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    condition: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyTypeValue] = null
+  ): EventPermissionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
+    __obj.updateDynamic("statementId")(statementId.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventPermissionArgs]
+  }
+}
+

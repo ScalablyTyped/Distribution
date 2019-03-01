@@ -14,3 +14,14 @@ trait AccountPermissionGroup extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccountPermissionGroup {
+  @scala.inline
+  def apply(id: java.lang.String = null, kind: java.lang.String = null, name: java.lang.String = null): AccountPermissionGroup = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AccountPermissionGroup]
+  }
+}
+

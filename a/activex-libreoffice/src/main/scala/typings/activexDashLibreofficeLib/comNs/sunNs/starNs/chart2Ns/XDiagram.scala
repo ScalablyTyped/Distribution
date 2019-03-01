@@ -54,3 +54,44 @@ trait XDiagram
   def setLegend(xLegend: XLegend): scala.Unit
 }
 
+object XDiagram {
+  @scala.inline
+  def apply(
+    DefaultColorScheme: XColorScheme,
+    Floor: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    Legend: XLegend,
+    Wall: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getDefaultColorScheme: js.Function0[XColorScheme],
+    getFloor: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getLegend: js.Function0[XLegend],
+    getWall: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDefaultColorScheme: js.Function1[XColorScheme, scala.Unit],
+    setDiagramData: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.chart2Ns.dataNs.XDataSource, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    setLegend: js.Function1[XLegend, scala.Unit]
+  ): XDiagram = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DefaultColorScheme")(DefaultColorScheme)
+    __obj.updateDynamic("Floor")(Floor)
+    __obj.updateDynamic("Legend")(Legend)
+    __obj.updateDynamic("Wall")(Wall)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDefaultColorScheme")(getDefaultColorScheme)
+    __obj.updateDynamic("getFloor")(getFloor)
+    __obj.updateDynamic("getLegend")(getLegend)
+    __obj.updateDynamic("getWall")(getWall)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDefaultColorScheme")(setDefaultColorScheme)
+    __obj.updateDynamic("setDiagramData")(setDiagramData)
+    __obj.updateDynamic("setLegend")(setLegend)
+    __obj.asInstanceOf[XDiagram]
+  }
+}
+

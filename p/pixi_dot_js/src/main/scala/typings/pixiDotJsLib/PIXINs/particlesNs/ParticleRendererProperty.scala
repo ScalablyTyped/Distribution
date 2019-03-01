@@ -20,3 +20,30 @@ trait ParticleRendererProperty extends js.Object {
   ): scala.Unit
 }
 
+object ParticleRendererProperty {
+  @scala.inline
+  def apply(
+    attribute: scala.Double,
+    offset: scala.Double,
+    size: scala.Double,
+    unsignedByte: js.Any,
+    uploadFunction: js.Function6[
+      js.Array[pixiDotJsLib.PIXINs.DisplayObject], 
+      scala.Double, 
+      scala.Double, 
+      js.Array[scala.Double], 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ]
+  ): ParticleRendererProperty = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attribute")(attribute)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("unsignedByte")(unsignedByte)
+    __obj.updateDynamic("uploadFunction")(uploadFunction)
+    __obj.asInstanceOf[ParticleRendererProperty]
+  }
+}
+

@@ -7,31 +7,39 @@ import scala.scalajs.js.annotation._
 
 object reactDashOverlaysLibStrings {
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashOverlaysLib.libOverlayMod.OverlayNs.Placements
   
   @js.native
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends reactDashOverlaysLib.libDropdownMod.DropdownNs.Directions
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashOverlaysLib.libDropdownMod.DropdownNs.Directions
+       with reactDashOverlaysLib.libOverlayMod.OverlayNs.Placements
   
   @js.native
   sealed trait mousedown extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashOverlaysLib.libDropdownMod.DropdownNs.Directions
+       with reactDashOverlaysLib.libOverlayMod.OverlayNs.Placements
   
   @js.native
   sealed trait static extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashOverlaysLib.libOverlayMod.OverlayNs.Placements
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends reactDashOverlaysLib.libDropdownMod.DropdownNs.Directions
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

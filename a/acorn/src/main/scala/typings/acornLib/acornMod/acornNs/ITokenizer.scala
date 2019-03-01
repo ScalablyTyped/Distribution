@@ -11,3 +11,13 @@ trait ITokenizer extends js.Object {
   def getToken(): Token
 }
 
+object ITokenizer {
+  @scala.inline
+  def apply(getToken: js.Function0[Token], iterator: js.Function0[stdLib.Iterator[Token]]): ITokenizer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getToken")(getToken)
+    __obj.updateDynamic("iterator")(iterator)
+    __obj.asInstanceOf[ITokenizer]
+  }
+}
+

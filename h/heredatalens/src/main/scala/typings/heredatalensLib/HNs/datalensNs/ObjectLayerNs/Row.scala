@@ -17,3 +17,20 @@ trait Row extends js.Object {
   def isCluster(): scala.Boolean
 }
 
+object Row {
+  @scala.inline
+  def apply(
+    getPosition: js.Function0[heremapsLib.HNs.geoNs.Point],
+    isCluster: js.Function0[scala.Boolean],
+    lat: scala.Double,
+    lng: scala.Double
+  ): Row = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getPosition")(getPosition)
+    __obj.updateDynamic("isCluster")(isCluster)
+    __obj.updateDynamic("lat")(lat)
+    __obj.updateDynamic("lng")(lng)
+    __obj.asInstanceOf[Row]
+  }
+}
+

@@ -24,3 +24,18 @@ trait Options extends js.Object {
   var limit: js.UndefOr[scala.Double | java.lang.String | scala.Null] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    encoding: Encoding = null,
+    length: scala.Double | java.lang.String = null,
+    limit: scala.Double | java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

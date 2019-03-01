@@ -20,3 +20,27 @@ trait InvitationsResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListClientUserInvitationsResponse]
 }
 
+object InvitationsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ClientUserInvitation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ClientUserInvitation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListClientUserInvitationsResponse]
+    ]
+  ): InvitationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[InvitationsResource]
+  }
+}
+

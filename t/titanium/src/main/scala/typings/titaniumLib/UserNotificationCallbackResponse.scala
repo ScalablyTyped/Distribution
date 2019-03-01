@@ -17,3 +17,12 @@ trait UserNotificationCallbackResponse extends js.Object {
   var notifications: js.UndefOr[js.Array[UserNotificationDictionary]] = js.undefined
 }
 
+object UserNotificationCallbackResponse {
+  @scala.inline
+  def apply(notifications: js.Array[UserNotificationDictionary] = null): UserNotificationCallbackResponse = {
+    val __obj = js.Dynamic.literal()
+    if (notifications != null) __obj.updateDynamic("notifications")(notifications)
+    __obj.asInstanceOf[UserNotificationCallbackResponse]
+  }
+}
+

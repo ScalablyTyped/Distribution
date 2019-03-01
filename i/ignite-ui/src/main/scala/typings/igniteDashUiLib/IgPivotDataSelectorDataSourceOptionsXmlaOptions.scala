@@ -50,3 +50,35 @@ trait IgPivotDataSelectorDataSourceOptionsXmlaOptions
   var serverUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgPivotDataSelectorDataSourceOptionsXmlaOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotDataSelectorDataSourceOptionsXmlaOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    catalog: java.lang.String = null,
+    cube: java.lang.String = null,
+    discoverProperties: js.Any = null,
+    enableResultCache: js.UndefOr[scala.Boolean] = js.undefined,
+    executeProperties: js.Any = null,
+    mdxSettings: IgPivotDataSelectorDataSourceOptionsXmlaOptionsMdxSettings = null,
+    measureGroup: java.lang.String = null,
+    requestOptions: IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions = null,
+    serverUrl: java.lang.String = null
+  ): IgPivotDataSelectorDataSourceOptionsXmlaOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (catalog != null) __obj.updateDynamic("catalog")(catalog)
+    if (cube != null) __obj.updateDynamic("cube")(cube)
+    if (discoverProperties != null) __obj.updateDynamic("discoverProperties")(discoverProperties)
+    if (!js.isUndefined(enableResultCache)) __obj.updateDynamic("enableResultCache")(enableResultCache)
+    if (executeProperties != null) __obj.updateDynamic("executeProperties")(executeProperties)
+    if (mdxSettings != null) __obj.updateDynamic("mdxSettings")(mdxSettings)
+    if (measureGroup != null) __obj.updateDynamic("measureGroup")(measureGroup)
+    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions)
+    if (serverUrl != null) __obj.updateDynamic("serverUrl")(serverUrl)
+    __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsXmlaOptions]
+  }
+}
+

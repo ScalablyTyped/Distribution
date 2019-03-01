@@ -21,3 +21,38 @@ trait CheapRuler extends js.Object {
   def pointOnLine(line: Line, p: Point): cheapDashRulerLib.Anon_Index
 }
 
+object CheapRuler {
+  @scala.inline
+  def apply(
+    along: js.Function2[Line, scala.Double, Point],
+    area: js.Function1[Polygon, scala.Double],
+    bearing: js.Function2[Point, Point, scala.Double],
+    bufferBBox: js.Function2[BBox, scala.Double, BBox],
+    bufferPoint: js.Function2[Point, scala.Double, BBox],
+    destination: js.Function3[Point, scala.Double, scala.Double, Point],
+    distance: js.Function2[Point, Point, scala.Double],
+    insideBBox: js.Function2[Point, BBox, scala.Boolean],
+    lineDistance: js.Function1[Points, scala.Double],
+    lineSlice: js.Function3[Point, Point, Line, Line],
+    lineSliceAlong: js.Function3[scala.Double, scala.Double, Line, Line],
+    offset: js.Function3[Point, scala.Double, scala.Double, Point],
+    pointOnLine: js.Function2[Line, Point, cheapDashRulerLib.Anon_Index]
+  ): CheapRuler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("along")(along)
+    __obj.updateDynamic("area")(area)
+    __obj.updateDynamic("bearing")(bearing)
+    __obj.updateDynamic("bufferBBox")(bufferBBox)
+    __obj.updateDynamic("bufferPoint")(bufferPoint)
+    __obj.updateDynamic("destination")(destination)
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("insideBBox")(insideBBox)
+    __obj.updateDynamic("lineDistance")(lineDistance)
+    __obj.updateDynamic("lineSlice")(lineSlice)
+    __obj.updateDynamic("lineSliceAlong")(lineSliceAlong)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("pointOnLine")(pointOnLine)
+    __obj.asInstanceOf[CheapRuler]
+  }
+}
+

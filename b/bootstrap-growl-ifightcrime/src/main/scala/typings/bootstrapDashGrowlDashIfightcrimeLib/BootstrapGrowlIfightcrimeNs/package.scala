@@ -6,7 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object BootstrapGrowlIfightcrimeNs {
-  type AlertType = bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.info | bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.danger | bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.success | bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.warning | java.lang.String | scala.Null
-  type AlignType = bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.left | bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.center | bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.right
-  type OffsetPositionType = bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.top | bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.bottom
+  type AlertType = _AlertType | java.lang.String | scala.Null
 }

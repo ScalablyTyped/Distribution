@@ -10,3 +10,16 @@ trait Anon_FiltersMultiple extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_FiltersMultiple {
+  @scala.inline
+  def apply(
+    filters: js.Array[chromeDashAppsLib.chromeNs.usbNs.DeviceFilter] = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_FiltersMultiple = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    __obj.asInstanceOf[Anon_FiltersMultiple]
+  }
+}
+

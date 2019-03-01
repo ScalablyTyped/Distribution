@@ -12,3 +12,12 @@ trait ReceiptRuleSetArgs extends js.Object {
   val ruleSetName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object ReceiptRuleSetArgs {
+  @scala.inline
+  def apply(ruleSetName: atPulumiPulumiLib.outputMod.Input[java.lang.String]): ReceiptRuleSetArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ruleSetName")(ruleSetName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReceiptRuleSetArgs]
+  }
+}
+

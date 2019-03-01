@@ -42,3 +42,22 @@ trait ClientOptions extends js.Object {
   var useIframe: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    captureConsole: js.UndefOr[scala.Boolean] = js.undefined,
+    clearContext: js.UndefOr[scala.Boolean] = js.undefined,
+    runInParent: js.UndefOr[scala.Boolean] = js.undefined,
+    useIframe: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (!js.isUndefined(captureConsole)) __obj.updateDynamic("captureConsole")(captureConsole)
+    if (!js.isUndefined(clearContext)) __obj.updateDynamic("clearContext")(clearContext)
+    if (!js.isUndefined(runInParent)) __obj.updateDynamic("runInParent")(runInParent)
+    if (!js.isUndefined(useIframe)) __obj.updateDynamic("useIframe")(useIframe)
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

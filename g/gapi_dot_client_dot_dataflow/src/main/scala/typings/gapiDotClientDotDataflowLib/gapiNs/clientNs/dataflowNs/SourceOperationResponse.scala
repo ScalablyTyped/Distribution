@@ -12,3 +12,13 @@ trait SourceOperationResponse extends js.Object {
   var split: js.UndefOr[SourceSplitResponse] = js.undefined
 }
 
+object SourceOperationResponse {
+  @scala.inline
+  def apply(getMetadata: SourceGetMetadataResponse = null, split: SourceSplitResponse = null): SourceOperationResponse = {
+    val __obj = js.Dynamic.literal()
+    if (getMetadata != null) __obj.updateDynamic("getMetadata")(getMetadata)
+    if (split != null) __obj.updateDynamic("split")(split)
+    __obj.asInstanceOf[SourceOperationResponse]
+  }
+}
+

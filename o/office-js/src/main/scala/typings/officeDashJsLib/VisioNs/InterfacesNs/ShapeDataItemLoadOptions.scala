@@ -44,3 +44,22 @@ trait ShapeDataItemLoadOptions extends js.Object {
   var value: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ShapeDataItemLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    format: js.UndefOr[scala.Boolean] = js.undefined,
+    formattedValue: js.UndefOr[scala.Boolean] = js.undefined,
+    label: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.UndefOr[scala.Boolean] = js.undefined
+  ): ShapeDataItemLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(formattedValue)) __obj.updateDynamic("formattedValue")(formattedValue)
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ShapeDataItemLoadOptions]
+  }
+}
+

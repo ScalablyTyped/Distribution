@@ -35,3 +35,36 @@ trait Anon_AltDeleted extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltDeleted {
+  @scala.inline
+  def apply(
+    userId: java.lang.String,
+    alt: java.lang.String = null,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: java.lang.String = null,
+    internalDateSource: java.lang.String = null,
+    key: java.lang.String = null,
+    neverMarkSpam: js.UndefOr[scala.Boolean] = js.undefined,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    processForCalendar: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltDeleted = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("userId")(userId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (internalDateSource != null) __obj.updateDynamic("internalDateSource")(internalDateSource)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(neverMarkSpam)) __obj.updateDynamic("neverMarkSpam")(neverMarkSpam)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (!js.isUndefined(processForCalendar)) __obj.updateDynamic("processForCalendar")(processForCalendar)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltDeleted]
+  }
+}
+

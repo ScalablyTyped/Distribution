@@ -19,3 +19,32 @@ trait SerializedSubMesh extends js.Object {
   var verticesStart: scala.Double
 }
 
+object SerializedSubMesh {
+  @scala.inline
+  def apply(
+    boxMaximum: js.Array[scala.Double],
+    boxMinimum: js.Array[scala.Double],
+    hasMaterial: scala.Boolean,
+    indexCount: scala.Double,
+    indexStart: scala.Double,
+    position: scala.Double,
+    sphereCenter: js.Array[scala.Double],
+    sphereRadius: scala.Double,
+    verticesCount: scala.Double,
+    verticesStart: scala.Double
+  ): SerializedSubMesh = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boxMaximum")(boxMaximum)
+    __obj.updateDynamic("boxMinimum")(boxMinimum)
+    __obj.updateDynamic("hasMaterial")(hasMaterial)
+    __obj.updateDynamic("indexCount")(indexCount)
+    __obj.updateDynamic("indexStart")(indexStart)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("sphereCenter")(sphereCenter)
+    __obj.updateDynamic("sphereRadius")(sphereRadius)
+    __obj.updateDynamic("verticesCount")(verticesCount)
+    __obj.updateDynamic("verticesStart")(verticesStart)
+    __obj.asInstanceOf[SerializedSubMesh]
+  }
+}
+

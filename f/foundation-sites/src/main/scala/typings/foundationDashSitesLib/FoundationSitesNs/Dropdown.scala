@@ -14,3 +14,22 @@ trait Dropdown extends js.Object {
   def toggle(): scala.Unit
 }
 
+object Dropdown {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getPositionClass: js.Function0[java.lang.String],
+    open: js.Function0[scala.Unit],
+    toggle: js.Function0[scala.Unit]
+  ): Dropdown = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getPositionClass")(getPositionClass)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("toggle")(toggle)
+    __obj.asInstanceOf[Dropdown]
+  }
+}
+

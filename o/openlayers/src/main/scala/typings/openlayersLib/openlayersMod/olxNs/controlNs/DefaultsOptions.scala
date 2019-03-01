@@ -14,3 +14,24 @@ trait DefaultsOptions extends js.Object {
   var zoomOptions: js.UndefOr[ZoomOptions] = js.undefined
 }
 
+object DefaultsOptions {
+  @scala.inline
+  def apply(
+    attribution: js.UndefOr[scala.Boolean] = js.undefined,
+    attributionOptions: AttributionOptions = null,
+    rotate: js.UndefOr[scala.Boolean] = js.undefined,
+    rotateOptions: RotateOptions = null,
+    zoom: js.UndefOr[scala.Boolean] = js.undefined,
+    zoomOptions: ZoomOptions = null
+  ): DefaultsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(attribution)) __obj.updateDynamic("attribution")(attribution)
+    if (attributionOptions != null) __obj.updateDynamic("attributionOptions")(attributionOptions)
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate)
+    if (rotateOptions != null) __obj.updateDynamic("rotateOptions")(rotateOptions)
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom)
+    if (zoomOptions != null) __obj.updateDynamic("zoomOptions")(zoomOptions)
+    __obj.asInstanceOf[DefaultsOptions]
+  }
+}
+

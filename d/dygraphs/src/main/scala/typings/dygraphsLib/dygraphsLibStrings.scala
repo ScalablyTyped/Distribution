@@ -19,16 +19,19 @@ object dygraphsLibStrings {
   sealed trait onmouseover extends js.Object
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait x
+    extends dygraphsLib.dygraphsNs.Axis
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends dygraphsLib.dygraphsNs.Axis
   
   @js.native
   sealed trait y1 extends js.Object
   
   @js.native
-  sealed trait y2 extends js.Object
+  sealed trait y2
+    extends dygraphsLib.dygraphsNs.Axis
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

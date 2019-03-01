@@ -34,3 +34,22 @@ trait ISpawnOptions extends js.Object {
   var opts: js.UndefOr[gruntLib.Anon_Custom] = js.undefined
 }
 
+object ISpawnOptions {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    cmd: java.lang.String = null,
+    fallback: js.Any = null,
+    grunt: js.UndefOr[scala.Boolean] = js.undefined,
+    opts: gruntLib.Anon_Custom = null
+  ): ISpawnOptions = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (cmd != null) __obj.updateDynamic("cmd")(cmd)
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (!js.isUndefined(grunt)) __obj.updateDynamic("grunt")(grunt)
+    if (opts != null) __obj.updateDynamic("opts")(opts)
+    __obj.asInstanceOf[ISpawnOptions]
+  }
+}
+

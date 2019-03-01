@@ -15,3 +15,26 @@ trait BoardColumn extends js.Object {
   var stateMappings: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object BoardColumn {
+  @scala.inline
+  def apply(
+    columnType: BoardColumnType,
+    description: java.lang.String,
+    id: java.lang.String,
+    isSplit: scala.Boolean,
+    itemLimit: scala.Double,
+    name: java.lang.String,
+    stateMappings: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): BoardColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnType")(columnType)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isSplit")(isSplit)
+    __obj.updateDynamic("itemLimit")(itemLimit)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("stateMappings")(stateMappings)
+    __obj.asInstanceOf[BoardColumn]
+  }
+}
+

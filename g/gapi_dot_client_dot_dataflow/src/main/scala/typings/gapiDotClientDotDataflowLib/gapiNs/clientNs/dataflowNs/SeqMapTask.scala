@@ -26,3 +26,24 @@ trait SeqMapTask extends js.Object {
   var userFn: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object SeqMapTask {
+  @scala.inline
+  def apply(
+    inputs: js.Array[SideInputInfo] = null,
+    name: java.lang.String = null,
+    outputInfos: js.Array[SeqMapTaskOutputInfo] = null,
+    stageName: java.lang.String = null,
+    systemName: java.lang.String = null,
+    userFn: stdLib.Record[java.lang.String, _] = null
+  ): SeqMapTask = {
+    val __obj = js.Dynamic.literal()
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (outputInfos != null) __obj.updateDynamic("outputInfos")(outputInfos)
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName)
+    if (systemName != null) __obj.updateDynamic("systemName")(systemName)
+    if (userFn != null) __obj.updateDynamic("userFn")(userFn)
+    __obj.asInstanceOf[SeqMapTask]
+  }
+}
+

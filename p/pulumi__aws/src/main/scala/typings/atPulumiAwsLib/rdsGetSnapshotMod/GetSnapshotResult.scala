@@ -77,3 +77,48 @@ trait GetSnapshotResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetSnapshotResult {
+  @scala.inline
+  def apply(
+    allocatedStorage: scala.Double,
+    availabilityZone: java.lang.String,
+    dbSnapshotArn: java.lang.String,
+    encrypted: scala.Boolean,
+    engine: java.lang.String,
+    engineVersion: java.lang.String,
+    id: java.lang.String,
+    iops: scala.Double,
+    kmsKeyId: java.lang.String,
+    licenseModel: java.lang.String,
+    optionGroupName: java.lang.String,
+    port: scala.Double,
+    snapshotCreateTime: java.lang.String,
+    sourceDbSnapshotIdentifier: java.lang.String,
+    sourceRegion: java.lang.String,
+    status: java.lang.String,
+    storageType: java.lang.String,
+    vpcId: java.lang.String
+  ): GetSnapshotResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allocatedStorage")(allocatedStorage)
+    __obj.updateDynamic("availabilityZone")(availabilityZone)
+    __obj.updateDynamic("dbSnapshotArn")(dbSnapshotArn)
+    __obj.updateDynamic("encrypted")(encrypted)
+    __obj.updateDynamic("engine")(engine)
+    __obj.updateDynamic("engineVersion")(engineVersion)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("iops")(iops)
+    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
+    __obj.updateDynamic("licenseModel")(licenseModel)
+    __obj.updateDynamic("optionGroupName")(optionGroupName)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("snapshotCreateTime")(snapshotCreateTime)
+    __obj.updateDynamic("sourceDbSnapshotIdentifier")(sourceDbSnapshotIdentifier)
+    __obj.updateDynamic("sourceRegion")(sourceRegion)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("storageType")(storageType)
+    __obj.updateDynamic("vpcId")(vpcId)
+    __obj.asInstanceOf[GetSnapshotResult]
+  }
+}
+

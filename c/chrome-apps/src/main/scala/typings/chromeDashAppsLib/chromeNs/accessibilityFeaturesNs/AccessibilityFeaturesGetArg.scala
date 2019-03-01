@@ -10,3 +10,12 @@ trait AccessibilityFeaturesGetArg extends js.Object {
   var incognito: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AccessibilityFeaturesGetArg {
+  @scala.inline
+  def apply(incognito: js.UndefOr[scala.Boolean] = js.undefined): AccessibilityFeaturesGetArg = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
+    __obj.asInstanceOf[AccessibilityFeaturesGetArg]
+  }
+}
+

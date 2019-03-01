@@ -13,3 +13,12 @@ trait Advice extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Advice {
+  @scala.inline
+  def apply(description: java.lang.String = null): Advice = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[Advice]
+  }
+}
+

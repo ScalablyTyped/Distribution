@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * An interaction during which services are provided to the patient
   */
-trait Encounter extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Encounter extends DomainResource {
   /**
     * Contains extended information for property 'status'.
     */
@@ -97,5 +98,84 @@ trait Encounter extends DomainResource {
     * Specific type of encounter
     */
   var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+}
+
+object Encounter {
+  @scala.inline
+  def apply(
+    status: code,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    account: js.Array[Reference] = null,
+    appointment: Reference = null,
+    `class`: Coding = null,
+    classHistory: js.Array[EncounterClassHistory] = null,
+    contained: js.Array[Resource] = null,
+    diagnosis: js.Array[EncounterDiagnosis] = null,
+    episodeOfCare: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    hospitalization: EncounterHospitalization = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    incomingReferral: js.Array[Reference] = null,
+    language: code = null,
+    length: Duration = null,
+    location: js.Array[EncounterLocation] = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    partOf: Reference = null,
+    participant: js.Array[EncounterParticipant] = null,
+    period: Period = null,
+    priority: CodeableConcept = null,
+    reason: js.Array[CodeableConcept] = null,
+    resourceType: code = null,
+    serviceProvider: Reference = null,
+    statusHistory: js.Array[EncounterStatusHistory] = null,
+    subject: Reference = null,
+    text: Narrative = null,
+    `type`: js.Array[CodeableConcept] = null
+  ): Encounter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (account != null) __obj.updateDynamic("account")(account)
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (classHistory != null) __obj.updateDynamic("classHistory")(classHistory)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (diagnosis != null) __obj.updateDynamic("diagnosis")(diagnosis)
+    if (episodeOfCare != null) __obj.updateDynamic("episodeOfCare")(episodeOfCare)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (hospitalization != null) __obj.updateDynamic("hospitalization")(hospitalization)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (incomingReferral != null) __obj.updateDynamic("incomingReferral")(incomingReferral)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (length != null) __obj.updateDynamic("length")(length)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (partOf != null) __obj.updateDynamic("partOf")(partOf)
+    if (participant != null) __obj.updateDynamic("participant")(participant)
+    if (period != null) __obj.updateDynamic("period")(period)
+    if (priority != null) __obj.updateDynamic("priority")(priority)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (serviceProvider != null) __obj.updateDynamic("serviceProvider")(serviceProvider)
+    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Encounter]
+  }
 }
 

@@ -28,3 +28,22 @@ trait RoyalSliderVideoOptions extends js.Object {
   var youTubeCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RoyalSliderVideoOptions {
+  @scala.inline
+  def apply(
+    autoHideArrows: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHideBlocks: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHideControlNav: js.UndefOr[scala.Boolean] = js.undefined,
+    vimeoCode: java.lang.String = null,
+    youTubeCode: java.lang.String = null
+  ): RoyalSliderVideoOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoHideArrows)) __obj.updateDynamic("autoHideArrows")(autoHideArrows)
+    if (!js.isUndefined(autoHideBlocks)) __obj.updateDynamic("autoHideBlocks")(autoHideBlocks)
+    if (!js.isUndefined(autoHideControlNav)) __obj.updateDynamic("autoHideControlNav")(autoHideControlNav)
+    if (vimeoCode != null) __obj.updateDynamic("vimeoCode")(vimeoCode)
+    if (youTubeCode != null) __obj.updateDynamic("youTubeCode")(youTubeCode)
+    __obj.asInstanceOf[RoyalSliderVideoOptions]
+  }
+}
+

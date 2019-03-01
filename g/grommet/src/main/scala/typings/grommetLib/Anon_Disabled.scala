@@ -12,3 +12,20 @@ trait Anon_Disabled extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_Disabled {
+  @scala.inline
+  def apply(
+    value: java.lang.String,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    label: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null
+  ): Anon_Disabled = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Disabled]
+  }
+}
+

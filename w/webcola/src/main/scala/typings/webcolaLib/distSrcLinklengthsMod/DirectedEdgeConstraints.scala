@@ -10,3 +10,13 @@ trait DirectedEdgeConstraints extends js.Object {
   var gap: scala.Double
 }
 
+object DirectedEdgeConstraints {
+  @scala.inline
+  def apply(axis: java.lang.String, gap: scala.Double): DirectedEdgeConstraints = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axis")(axis)
+    __obj.updateDynamic("gap")(gap)
+    __obj.asInstanceOf[DirectedEdgeConstraints]
+  }
+}
+

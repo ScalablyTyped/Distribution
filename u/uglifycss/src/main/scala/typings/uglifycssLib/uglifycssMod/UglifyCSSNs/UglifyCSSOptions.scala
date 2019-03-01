@@ -24,3 +24,20 @@ trait UglifyCSSOptions extends js.Object {
   var uglyComments: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UglifyCSSOptions {
+  @scala.inline
+  def apply(
+    cuteComments: js.UndefOr[scala.Boolean] = js.undefined,
+    expandVars: js.UndefOr[scala.Boolean] = js.undefined,
+    maxLineLen: scala.Int | scala.Double = null,
+    uglyComments: js.UndefOr[scala.Boolean] = js.undefined
+  ): UglifyCSSOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cuteComments)) __obj.updateDynamic("cuteComments")(cuteComments)
+    if (!js.isUndefined(expandVars)) __obj.updateDynamic("expandVars")(expandVars)
+    if (maxLineLen != null) __obj.updateDynamic("maxLineLen")(maxLineLen.asInstanceOf[js.Any])
+    if (!js.isUndefined(uglyComments)) __obj.updateDynamic("uglyComments")(uglyComments)
+    __obj.asInstanceOf[UglifyCSSOptions]
+  }
+}
+

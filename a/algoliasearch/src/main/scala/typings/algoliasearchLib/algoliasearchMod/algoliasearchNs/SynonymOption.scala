@@ -21,3 +21,16 @@ trait SynonymOption extends js.Object {
   var replaceExistingSynonyms: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SynonymOption {
+  @scala.inline
+  def apply(
+    forwardToReplicas: js.UndefOr[scala.Boolean] = js.undefined,
+    replaceExistingSynonyms: js.UndefOr[scala.Boolean] = js.undefined
+  ): SynonymOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(forwardToReplicas)) __obj.updateDynamic("forwardToReplicas")(forwardToReplicas)
+    if (!js.isUndefined(replaceExistingSynonyms)) __obj.updateDynamic("replaceExistingSynonyms")(replaceExistingSynonyms)
+    __obj.asInstanceOf[SynonymOption]
+  }
+}
+

@@ -14,3 +14,14 @@ trait Anon_BaseUnit extends js.Object {
   var menuGutter: scala.Double
 }
 
+object Anon_BaseUnit {
+  @scala.inline
+  def apply(baseUnit: scala.Double, controlHeight: scala.Double, menuGutter: scala.Double): Anon_BaseUnit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseUnit")(baseUnit)
+    __obj.updateDynamic("controlHeight")(controlHeight)
+    __obj.updateDynamic("menuGutter")(menuGutter)
+    __obj.asInstanceOf[Anon_BaseUnit]
+  }
+}
+

@@ -139,3 +139,62 @@ trait NativeKeyboardShowOptions extends js.Object {
   def onSubmit(text: java.lang.String): scala.Unit
 }
 
+object NativeKeyboardShowOptions {
+  @scala.inline
+  def apply(
+    onSubmit: js.Function1[java.lang.String, scala.Unit],
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    appearance: java.lang.String = null,
+    autoscrollElement: js.Any = null,
+    backgroundColor: java.lang.String = null,
+    counterStyle: java.lang.String = null,
+    keepOpenAfterSubmit: js.UndefOr[scala.Boolean] = js.undefined,
+    leftButton: LeftButtonOptions = null,
+    maxChars: scala.Int | scala.Double = null,
+    onKeyboardDidHide: js.Function0[scala.Unit] = null,
+    onKeyboardDidShow: js.Function0[scala.Unit] = null,
+    onKeyboardWillHide: js.Function0[scala.Unit] = null,
+    onKeyboardWillShow: js.Function0[scala.Unit] = null,
+    onTextChanged: js.Function1[/* text */ java.lang.String, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    placeholderColor: java.lang.String = null,
+    rightButton: ButtonOptions = null,
+    scrollToBottomAfterMessengerShows: js.UndefOr[scala.Boolean] = js.undefined,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    showKeyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null,
+    textColor: java.lang.String = null,
+    textViewBackgroundColor: java.lang.String = null,
+    textViewBorderColor: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): NativeKeyboardShowOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onSubmit")(onSubmit)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (appearance != null) __obj.updateDynamic("appearance")(appearance)
+    if (autoscrollElement != null) __obj.updateDynamic("autoscrollElement")(autoscrollElement)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (counterStyle != null) __obj.updateDynamic("counterStyle")(counterStyle)
+    if (!js.isUndefined(keepOpenAfterSubmit)) __obj.updateDynamic("keepOpenAfterSubmit")(keepOpenAfterSubmit)
+    if (leftButton != null) __obj.updateDynamic("leftButton")(leftButton)
+    if (maxChars != null) __obj.updateDynamic("maxChars")(maxChars.asInstanceOf[js.Any])
+    if (onKeyboardDidHide != null) __obj.updateDynamic("onKeyboardDidHide")(onKeyboardDidHide)
+    if (onKeyboardDidShow != null) __obj.updateDynamic("onKeyboardDidShow")(onKeyboardDidShow)
+    if (onKeyboardWillHide != null) __obj.updateDynamic("onKeyboardWillHide")(onKeyboardWillHide)
+    if (onKeyboardWillShow != null) __obj.updateDynamic("onKeyboardWillShow")(onKeyboardWillShow)
+    if (onTextChanged != null) __obj.updateDynamic("onTextChanged")(onTextChanged)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (placeholderColor != null) __obj.updateDynamic("placeholderColor")(placeholderColor)
+    if (rightButton != null) __obj.updateDynamic("rightButton")(rightButton)
+    if (!js.isUndefined(scrollToBottomAfterMessengerShows)) __obj.updateDynamic("scrollToBottomAfterMessengerShows")(scrollToBottomAfterMessengerShows)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (!js.isUndefined(showKeyboard)) __obj.updateDynamic("showKeyboard")(showKeyboard)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (textViewBackgroundColor != null) __obj.updateDynamic("textViewBackgroundColor")(textViewBackgroundColor)
+    if (textViewBorderColor != null) __obj.updateDynamic("textViewBorderColor")(textViewBorderColor)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NativeKeyboardShowOptions]
+  }
+}
+

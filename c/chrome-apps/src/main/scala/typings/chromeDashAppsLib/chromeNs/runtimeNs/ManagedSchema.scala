@@ -26,3 +26,19 @@ trait ManagedSchema extends js.Object {
   var `type`: chromeDashAppsLib.chromeDashAppsLibStrings.`object`
 }
 
+object ManagedSchema {
+  @scala.inline
+  def apply(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.`object`,
+    $ref: java.lang.String = null,
+    properties: org.scalablytyped.runtime.StringDictionary[
+      JSONSchemaBasicType | JSONSchemaArrayType | JSONSchemaObjectType | JSONSchemaRefType
+    ] = null
+  ): ManagedSchema = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if ($ref != null) __obj.updateDynamic("$ref")($ref)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[ManagedSchema]
+  }
+}
+

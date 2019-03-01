@@ -13,3 +13,22 @@ trait Anon_Opacity extends js.Object {
   var y2: scala.Double
 }
 
+object Anon_Opacity {
+  @scala.inline
+  def apply(
+    opacity: scala.Double,
+    stroke: java.lang.String,
+    strokeWidth: scala.Double,
+    x2: scala.Double,
+    y2: scala.Double
+  ): Anon_Opacity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("opacity")(opacity)
+    __obj.updateDynamic("stroke")(stroke)
+    __obj.updateDynamic("strokeWidth")(strokeWidth)
+    __obj.updateDynamic("x2")(x2)
+    __obj.updateDynamic("y2")(y2)
+    __obj.asInstanceOf[Anon_Opacity]
+  }
+}
+

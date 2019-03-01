@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonAddCopy extends js.Object {
   var enumValues: Anon_AddCopy
 }
 
+object Anon_EnumValuesAnonAddCopy {
+  @scala.inline
+  def apply(enumValues: Anon_AddCopy): Anon_EnumValuesAnonAddCopy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonAddCopy]
+  }
+}
+

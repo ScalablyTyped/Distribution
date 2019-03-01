@@ -68,3 +68,64 @@ trait Calendar
   def getSelected(): scala.Boolean
 }
 
+object Calendar {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    createEvent: js.Function1[js.Any, Event],
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getEventById: js.Function1[scala.Double, Event],
+    getEventsBetweenDates: js.Function2[stdLib.Date, stdLib.Date, js.Array[Event]],
+    getEventsInDate: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[Event]],
+    getEventsInMonth: js.Function2[scala.Double, scala.Double, js.Array[Event]],
+    getEventsInYear: js.Function1[scala.Double, js.Array[Event]],
+    getHidden: js.Function0[scala.Boolean],
+    getId: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getSelected: js.Function0[scala.Boolean],
+    hidden: scala.Boolean,
+    id: java.lang.String,
+    name: java.lang.String,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    selected: scala.Boolean,
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): Calendar = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("createEvent")(createEvent)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getEventById")(getEventById)
+    __obj.updateDynamic("getEventsBetweenDates")(getEventsBetweenDates)
+    __obj.updateDynamic("getEventsInDate")(getEventsInDate)
+    __obj.updateDynamic("getEventsInMonth")(getEventsInMonth)
+    __obj.updateDynamic("getEventsInYear")(getEventsInYear)
+    __obj.updateDynamic("getHidden")(getHidden)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getSelected")(getSelected)
+    __obj.updateDynamic("hidden")(hidden)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("selected")(selected)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[Calendar]
+  }
+}
+

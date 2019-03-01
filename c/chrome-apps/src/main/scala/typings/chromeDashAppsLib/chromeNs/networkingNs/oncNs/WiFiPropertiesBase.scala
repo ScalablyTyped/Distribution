@@ -29,3 +29,26 @@ trait WiFiPropertiesBase[M /* <: ManagedObject */, S] extends js.Object {
   var TetheringState: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WiFiPropertiesBase {
+  @scala.inline
+  def apply[M /* <: ManagedObject */, S](
+    BSSID: java.lang.String = null,
+    Frequency: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    HexSSID: S = null,
+    SSID: S = null,
+    Security: S = null,
+    SignalStrength: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    TetheringState: java.lang.String = null
+  ): WiFiPropertiesBase[M, S] = {
+    val __obj = js.Dynamic.literal()
+    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID)
+    if (!js.isUndefined(Frequency)) __obj.updateDynamic("Frequency")(Frequency)
+    if (HexSSID != null) __obj.updateDynamic("HexSSID")(HexSSID.asInstanceOf[js.Any])
+    if (SSID != null) __obj.updateDynamic("SSID")(SSID.asInstanceOf[js.Any])
+    if (Security != null) __obj.updateDynamic("Security")(Security.asInstanceOf[js.Any])
+    if (!js.isUndefined(SignalStrength)) __obj.updateDynamic("SignalStrength")(SignalStrength)
+    if (TetheringState != null) __obj.updateDynamic("TetheringState")(TetheringState)
+    __obj.asInstanceOf[WiFiPropertiesBase[M, S]]
+  }
+}
+

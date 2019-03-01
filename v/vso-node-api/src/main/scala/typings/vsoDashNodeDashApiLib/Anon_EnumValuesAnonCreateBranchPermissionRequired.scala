@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonCreateBranchPermissionRequired extends js.Object {
   var enumValues: Anon_CreateBranchPermissionRequired
 }
 
+object Anon_EnumValuesAnonCreateBranchPermissionRequired {
+  @scala.inline
+  def apply(enumValues: Anon_CreateBranchPermissionRequired): Anon_EnumValuesAnonCreateBranchPermissionRequired = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonCreateBranchPermissionRequired]
+  }
+}
+

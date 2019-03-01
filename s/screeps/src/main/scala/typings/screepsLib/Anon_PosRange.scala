@@ -10,3 +10,13 @@ trait Anon_PosRange extends js.Object {
   var range: scala.Double
 }
 
+object Anon_PosRange {
+  @scala.inline
+  def apply(pos: RoomPosition, range: scala.Double): Anon_PosRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pos")(pos)
+    __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[Anon_PosRange]
+  }
+}
+

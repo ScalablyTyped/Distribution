@@ -23,3 +23,13 @@ trait OutlineData extends js.Object {
   var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
 }
 
+object OutlineData {
+  @scala.inline
+  def apply(id: java.lang.String = null, paragraphs: js.Array[ParagraphData] = null): OutlineData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    __obj.asInstanceOf[OutlineData]
+  }
+}
+

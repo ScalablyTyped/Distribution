@@ -217,3 +217,116 @@ trait WindowOptions extends js.Object {
   var z: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WindowOptions {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    afterCascade: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    afterDrag: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    afterMaximize: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    afterMinimize: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    afterResize: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    bookmarkable: js.UndefOr[scala.Boolean] = js.undefined,
+    checkBoundary: js.UndefOr[scala.Boolean] = js.undefined,
+    closable: js.UndefOr[scala.Boolean] = js.undefined,
+    containerClass: java.lang.String = null,
+    content: java.lang.String | jqueryDotWindowLib.JQuery | stdLib.HTMLElement = null,
+    createRandomOffset: jqueryDotWindowLib.Anon_X = null,
+    custBtns: js.Array[Button] = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    footerClass: java.lang.String = null,
+    footerContent: java.lang.String | jqueryDotWindowLib.JQuery | stdLib.HTMLElement = null,
+    frameClass: java.lang.String = null,
+    headerClass: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    icon: java.lang.String = null,
+    iframeRedirectCheckMsg: java.lang.String = null,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    maximizable: js.UndefOr[scala.Boolean] = js.undefined,
+    minHeight: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    minimizable: js.UndefOr[scala.Boolean] = js.undefined,
+    modalOpacity: scala.Int | scala.Double = null,
+    onCascade: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onClose: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onDrag: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onIframeEnd: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onIframeStart: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onMaximize: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onMinimize: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onOpen: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onResize: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onSelect: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onShow: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    onUnselect: js.Function1[/* wnd */ Window, scala.Unit] = null,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollable: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedHeaderClass: java.lang.String = null,
+    showFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    showModal: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    withinBrowserWindow: js.UndefOr[scala.Boolean] = js.undefined,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null
+  ): WindowOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (afterCascade != null) __obj.updateDynamic("afterCascade")(afterCascade)
+    if (afterDrag != null) __obj.updateDynamic("afterDrag")(afterDrag)
+    if (afterMaximize != null) __obj.updateDynamic("afterMaximize")(afterMaximize)
+    if (afterMinimize != null) __obj.updateDynamic("afterMinimize")(afterMinimize)
+    if (afterResize != null) __obj.updateDynamic("afterResize")(afterResize)
+    if (!js.isUndefined(bookmarkable)) __obj.updateDynamic("bookmarkable")(bookmarkable)
+    if (!js.isUndefined(checkBoundary)) __obj.updateDynamic("checkBoundary")(checkBoundary)
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
+    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (createRandomOffset != null) __obj.updateDynamic("createRandomOffset")(createRandomOffset)
+    if (custBtns != null) __obj.updateDynamic("custBtns")(custBtns)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (footerClass != null) __obj.updateDynamic("footerClass")(footerClass)
+    if (footerContent != null) __obj.updateDynamic("footerContent")(footerContent.asInstanceOf[js.Any])
+    if (frameClass != null) __obj.updateDynamic("frameClass")(frameClass)
+    if (headerClass != null) __obj.updateDynamic("headerClass")(headerClass)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iframeRedirectCheckMsg != null) __obj.updateDynamic("iframeRedirectCheckMsg")(iframeRedirectCheckMsg)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximizable)) __obj.updateDynamic("maximizable")(maximizable)
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(minimizable)) __obj.updateDynamic("minimizable")(minimizable)
+    if (modalOpacity != null) __obj.updateDynamic("modalOpacity")(modalOpacity.asInstanceOf[js.Any])
+    if (onCascade != null) __obj.updateDynamic("onCascade")(onCascade)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
+    if (onIframeEnd != null) __obj.updateDynamic("onIframeEnd")(onIframeEnd)
+    if (onIframeStart != null) __obj.updateDynamic("onIframeStart")(onIframeStart)
+    if (onMaximize != null) __obj.updateDynamic("onMaximize")(onMaximize)
+    if (onMinimize != null) __obj.updateDynamic("onMinimize")(onMinimize)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onResize != null) __obj.updateDynamic("onResize")(onResize)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onUnselect != null) __obj.updateDynamic("onUnselect")(onUnselect)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
+    if (selectedHeaderClass != null) __obj.updateDynamic("selectedHeaderClass")(selectedHeaderClass)
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)
+    if (!js.isUndefined(showModal)) __obj.updateDynamic("showModal")(showModal)
+    if (!js.isUndefined(showRoundCorner)) __obj.updateDynamic("showRoundCorner")(showRoundCorner)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(withinBrowserWindow)) __obj.updateDynamic("withinBrowserWindow")(withinBrowserWindow)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WindowOptions]
+  }
+}
+

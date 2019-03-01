@@ -11,3 +11,15 @@ trait InputOutputBinding extends TypeDerived {
   var outputDataRef: OutputSet
 }
 
+object InputOutputBinding {
+  @scala.inline
+  def apply($type: ElementType, inputDataRef: InputSet, operationRef: Operation, outputDataRef: OutputSet): InputOutputBinding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$type")($type)
+    __obj.updateDynamic("inputDataRef")(inputDataRef)
+    __obj.updateDynamic("operationRef")(operationRef)
+    __obj.updateDynamic("outputDataRef")(outputDataRef)
+    __obj.asInstanceOf[InputOutputBinding]
+  }
+}
+

@@ -36,3 +36,22 @@ trait SearchReferenceSetsRequest extends js.Object {
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchReferenceSetsRequest {
+  @scala.inline
+  def apply(
+    accessions: js.Array[java.lang.String] = null,
+    assemblyId: java.lang.String = null,
+    md5checksums: js.Array[java.lang.String] = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null
+  ): SearchReferenceSetsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (accessions != null) __obj.updateDynamic("accessions")(accessions)
+    if (assemblyId != null) __obj.updateDynamic("assemblyId")(assemblyId)
+    if (md5checksums != null) __obj.updateDynamic("md5checksums")(md5checksums)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    __obj.asInstanceOf[SearchReferenceSetsRequest]
+  }
+}
+

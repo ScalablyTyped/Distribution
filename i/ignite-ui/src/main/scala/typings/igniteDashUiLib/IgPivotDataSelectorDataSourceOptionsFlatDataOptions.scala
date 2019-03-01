@@ -39,3 +39,29 @@ trait IgPivotDataSelectorDataSourceOptionsFlatDataOptions
   var responseDataType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgPivotDataSelectorDataSourceOptionsFlatDataOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    metadata: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadata = null,
+    responseDataKey: java.lang.String = null,
+    responseDataType: java.lang.String = null
+  ): IgPivotDataSelectorDataSourceOptionsFlatDataOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType)
+    __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsFlatDataOptions]
+  }
+}
+

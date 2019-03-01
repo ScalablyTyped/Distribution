@@ -118,3 +118,48 @@ trait Options extends js.Object {
   var useDoubleQuotes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    arrayAccessForm: x2jsLib.x2jsLibStrings.property | x2jsLib.x2jsLibStrings.none = null,
+    arrayAccessFormPaths: js.Array[
+      java.lang.String | stdLib.RegExp | (js.Function2[
+        /* elementName */ java.lang.String, 
+        /* elementPath */ java.lang.String, 
+        scala.Boolean
+      ])
+    ] = null,
+    attributeConverters: js.Array[AttributeConverter] = null,
+    attributePrefix: java.lang.String = null,
+    datetimeAccessFormPaths: js.Array[
+      java.lang.String | stdLib.RegExp | (js.Function1[/* elementPath */ java.lang.String, scala.Boolean])
+    ] = null,
+    emptyNodeForm: x2jsLib.x2jsLibStrings.`object` | x2jsLib.x2jsLibStrings.text = null,
+    enableToStringFunc: js.UndefOr[scala.Boolean] = js.undefined,
+    escapeMode: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreRoot: js.UndefOr[scala.Boolean] = js.undefined,
+    keepCData: js.UndefOr[scala.Boolean] = js.undefined,
+    selfClosingElements: js.UndefOr[scala.Boolean] = js.undefined,
+    skipEmptyTextNodesForObj: js.UndefOr[scala.Boolean] = js.undefined,
+    stripWhitespaces: js.UndefOr[scala.Boolean] = js.undefined,
+    useDoubleQuotes: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (arrayAccessForm != null) __obj.updateDynamic("arrayAccessForm")(arrayAccessForm.asInstanceOf[js.Any])
+    if (arrayAccessFormPaths != null) __obj.updateDynamic("arrayAccessFormPaths")(arrayAccessFormPaths)
+    if (attributeConverters != null) __obj.updateDynamic("attributeConverters")(attributeConverters)
+    if (attributePrefix != null) __obj.updateDynamic("attributePrefix")(attributePrefix)
+    if (datetimeAccessFormPaths != null) __obj.updateDynamic("datetimeAccessFormPaths")(datetimeAccessFormPaths)
+    if (emptyNodeForm != null) __obj.updateDynamic("emptyNodeForm")(emptyNodeForm.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableToStringFunc)) __obj.updateDynamic("enableToStringFunc")(enableToStringFunc)
+    if (!js.isUndefined(escapeMode)) __obj.updateDynamic("escapeMode")(escapeMode)
+    if (!js.isUndefined(ignoreRoot)) __obj.updateDynamic("ignoreRoot")(ignoreRoot)
+    if (!js.isUndefined(keepCData)) __obj.updateDynamic("keepCData")(keepCData)
+    if (!js.isUndefined(selfClosingElements)) __obj.updateDynamic("selfClosingElements")(selfClosingElements)
+    if (!js.isUndefined(skipEmptyTextNodesForObj)) __obj.updateDynamic("skipEmptyTextNodesForObj")(skipEmptyTextNodesForObj)
+    if (!js.isUndefined(stripWhitespaces)) __obj.updateDynamic("stripWhitespaces")(stripWhitespaces)
+    if (!js.isUndefined(useDoubleQuotes)) __obj.updateDynamic("useDoubleQuotes")(useDoubleQuotes)
+    __obj.asInstanceOf[Options]
+  }
+}
+

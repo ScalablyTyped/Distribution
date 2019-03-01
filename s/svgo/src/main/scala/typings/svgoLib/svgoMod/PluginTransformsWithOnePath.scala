@@ -9,3 +9,12 @@ trait PluginTransformsWithOnePath extends js.Object {
   var transformsWithOnePath: scala.Boolean | js.Object
 }
 
+object PluginTransformsWithOnePath {
+  @scala.inline
+  def apply(transformsWithOnePath: scala.Boolean | js.Object): PluginTransformsWithOnePath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transformsWithOnePath")(transformsWithOnePath.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PluginTransformsWithOnePath]
+  }
+}
+

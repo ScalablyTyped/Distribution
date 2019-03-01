@@ -20,3 +20,20 @@ trait BeforeEditEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeEditEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentElement: js.Any = null,
+    model: Model = null,
+    `type`: java.lang.String = null
+  ): BeforeEditEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeEditEventArgs]
+  }
+}
+

@@ -11,3 +11,14 @@ trait From extends js.Object {
   var table: java.lang.String
 }
 
+object From {
+  @scala.inline
+  def apply(table: java.lang.String, as: java.lang.String = null, db: java.lang.String = null): From = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("table")(table)
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (db != null) __obj.updateDynamic("db")(db)
+    __obj.asInstanceOf[From]
+  }
+}
+

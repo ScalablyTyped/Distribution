@@ -22,3 +22,18 @@ trait SubscribeOptions extends js.Object {
   var priority: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SubscribeOptions {
+  @scala.inline
+  def apply(
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    persist: js.UndefOr[scala.Boolean] = js.undefined,
+    priority: scala.Int | scala.Double = null
+  ): SubscribeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SubscribeOptions]
+  }
+}
+

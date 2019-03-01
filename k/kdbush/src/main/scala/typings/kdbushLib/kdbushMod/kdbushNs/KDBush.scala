@@ -14,3 +14,24 @@ trait KDBush[T] extends js.Object {
   def within(x: scala.Double, y: scala.Double, r: scala.Double): js.Array[scala.Double]
 }
 
+object KDBush {
+  @scala.inline
+  def apply[T](
+    coords: js.Array[scala.Double],
+    ids: js.Array[scala.Double],
+    nodeSize: scala.Double,
+    points: js.Array[T],
+    range: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
+    within: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]]
+  ): KDBush[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coords")(coords)
+    __obj.updateDynamic("ids")(ids)
+    __obj.updateDynamic("nodeSize")(nodeSize)
+    __obj.updateDynamic("points")(points)
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("within")(within)
+    __obj.asInstanceOf[KDBush[T]]
+  }
+}
+

@@ -24,3 +24,13 @@ trait ProjectSettings extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProjectSettings {
+  @scala.inline
+  def apply(defaultBucket: java.lang.String = null, name: java.lang.String = null): ProjectSettings = {
+    val __obj = js.Dynamic.literal()
+    if (defaultBucket != null) __obj.updateDynamic("defaultBucket")(defaultBucket)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ProjectSettings]
+  }
+}
+

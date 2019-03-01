@@ -12,3 +12,15 @@ trait IBatchStat extends js.Object {
   var total: scala.Double
 }
 
+object IBatchStat {
+  @scala.inline
+  def apply(duration: scala.Double, failed: scala.Double, succeeded: scala.Double, total: scala.Double): IBatchStat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("failed")(failed)
+    __obj.updateDynamic("succeeded")(succeeded)
+    __obj.updateDynamic("total")(total)
+    __obj.asInstanceOf[IBatchStat]
+  }
+}
+

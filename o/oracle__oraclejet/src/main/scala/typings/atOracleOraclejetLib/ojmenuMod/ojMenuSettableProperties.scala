@@ -13,3 +13,18 @@ trait ojMenuSettableProperties
   var translations_ojMenuSettableProperties: atOracleOraclejetLib.Anon_AriaFocusSkipLink
 }
 
+object ojMenuSettableProperties {
+  @scala.inline
+  def apply(
+    disabled: scala.Boolean,
+    openOptions: atOracleOraclejetLib.ojmenuMod.ojMenuNs.OpenOptions,
+    translations: atOracleOraclejetLib.Anon_AriaFocusSkipLink
+  ): ojMenuSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("openOptions")(openOptions)
+    __obj.updateDynamic("translations")(translations)
+    __obj.asInstanceOf[ojMenuSettableProperties]
+  }
+}
+

@@ -19,3 +19,26 @@ trait ClientSessionRequestOptions extends js.Object {
   var weight: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ClientSessionRequestOptions {
+  @scala.inline
+  def apply(
+    endStream: js.UndefOr[scala.Boolean] = js.undefined,
+    exclusive: js.UndefOr[scala.Boolean] = js.undefined,
+    getTrailers: js.Function2[
+      /* trailers */ nodeLib.httpMod.OutgoingHttpHeaders, 
+      /* flags */ scala.Double, 
+      scala.Unit
+    ] = null,
+    parent: scala.Int | scala.Double = null,
+    weight: scala.Int | scala.Double = null
+  ): ClientSessionRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(endStream)) __obj.updateDynamic("endStream")(endStream)
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (getTrailers != null) __obj.updateDynamic("getTrailers")(getTrailers)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientSessionRequestOptions]
+  }
+}
+

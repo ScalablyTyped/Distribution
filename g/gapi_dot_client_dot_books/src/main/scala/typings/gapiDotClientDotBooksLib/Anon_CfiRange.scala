@@ -18,3 +18,22 @@ trait Anon_CfiRange extends js.Object {
   var imageCfiRange: js.UndefOr[gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange] = js.undefined
 }
 
+object Anon_CfiRange {
+  @scala.inline
+  def apply(
+    cfiRange: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange = null,
+    contentVersion: java.lang.String = null,
+    gbImageRange: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange = null,
+    gbTextRange: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange = null,
+    imageCfiRange: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange = null
+  ): Anon_CfiRange = {
+    val __obj = js.Dynamic.literal()
+    if (cfiRange != null) __obj.updateDynamic("cfiRange")(cfiRange)
+    if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion)
+    if (gbImageRange != null) __obj.updateDynamic("gbImageRange")(gbImageRange)
+    if (gbTextRange != null) __obj.updateDynamic("gbTextRange")(gbTextRange)
+    if (imageCfiRange != null) __obj.updateDynamic("imageCfiRange")(imageCfiRange)
+    __obj.asInstanceOf[Anon_CfiRange]
+  }
+}
+

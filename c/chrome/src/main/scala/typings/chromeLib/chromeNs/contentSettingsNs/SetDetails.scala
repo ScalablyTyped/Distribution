@@ -18,3 +18,22 @@ trait SetDetails extends js.Object {
   var setting: js.Any
 }
 
+object SetDetails {
+  @scala.inline
+  def apply(
+    primaryPattern: java.lang.String,
+    setting: js.Any,
+    resourceIdentifier: ResourceIdentifier = null,
+    scope: ScopeEnum = null,
+    secondaryPattern: java.lang.String = null
+  ): SetDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("primaryPattern")(primaryPattern)
+    __obj.updateDynamic("setting")(setting)
+    if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (secondaryPattern != null) __obj.updateDynamic("secondaryPattern")(secondaryPattern)
+    __obj.asInstanceOf[SetDetails]
+  }
+}
+

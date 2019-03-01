@@ -12,3 +12,20 @@ trait Anon_ACTION extends js.Object {
   var VIEW: java.lang.String
 }
 
+object Anon_ACTION {
+  @scala.inline
+  def apply(
+    ACTION: java.lang.String,
+    DOCUMENTS: java.lang.String,
+    PARENTS: java.lang.String,
+    VIEW: java.lang.String
+  ): Anon_ACTION = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ACTION")(ACTION)
+    __obj.updateDynamic("DOCUMENTS")(DOCUMENTS)
+    __obj.updateDynamic("PARENTS")(PARENTS)
+    __obj.updateDynamic("VIEW")(VIEW)
+    __obj.asInstanceOf[Anon_ACTION]
+  }
+}
+

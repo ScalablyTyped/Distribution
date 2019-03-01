@@ -18,3 +18,12 @@ trait OAuthRequirements extends js.Object {
   var canonicalScopes: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OAuthRequirements {
+  @scala.inline
+  def apply(canonicalScopes: java.lang.String = null): OAuthRequirements = {
+    val __obj = js.Dynamic.literal()
+    if (canonicalScopes != null) __obj.updateDynamic("canonicalScopes")(canonicalScopes)
+    __obj.asInstanceOf[OAuthRequirements]
+  }
+}
+

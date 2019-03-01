@@ -34,3 +34,24 @@ trait IdentityProviderState extends js.Object {
   val userPoolId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object IdentityProviderState {
+  @scala.inline
+  def apply(
+    attributeMapping: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    idpIdentifiers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    providerDetails: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    providerName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    providerType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    userPoolId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): IdentityProviderState = {
+    val __obj = js.Dynamic.literal()
+    if (attributeMapping != null) __obj.updateDynamic("attributeMapping")(attributeMapping.asInstanceOf[js.Any])
+    if (idpIdentifiers != null) __obj.updateDynamic("idpIdentifiers")(idpIdentifiers.asInstanceOf[js.Any])
+    if (providerDetails != null) __obj.updateDynamic("providerDetails")(providerDetails.asInstanceOf[js.Any])
+    if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
+    if (providerType != null) __obj.updateDynamic("providerType")(providerType.asInstanceOf[js.Any])
+    if (userPoolId != null) __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IdentityProviderState]
+  }
+}
+

@@ -15,3 +15,14 @@ trait TransferResult extends js.Object {
   var Target: java.lang.String
 }
 
+object TransferResult {
+  @scala.inline
+  def apply(Result: js.Any, Source: java.lang.String, Target: java.lang.String): TransferResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Result")(Result)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("Target")(Target)
+    __obj.asInstanceOf[TransferResult]
+  }
+}
+

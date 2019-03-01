@@ -11,59 +11,51 @@ trait ojAccordion
   var expanded: js.Array[atOracleOraclejetLib.Anon_Id] | scala.Null = js.native
   var multiple: scala.Boolean = js.native
   var onExpandedChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['expanded'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.Anon_Id] | scala.Null], 
     _
   ]) | scala.Null = js.native
   var onMultipleChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['multiple'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
     _
   ]) | scala.Null = js.native
   var onOjBeforeCollapse: (js.Function1[/* event */ atOracleOraclejetLib.ojaccordionMod.ojAccordionNs.ojBeforeCollapse, _]) | scala.Null = js.native
   var onOjBeforeExpand: (js.Function1[/* event */ atOracleOraclejetLib.ojaccordionMod.ojAccordionNs.ojBeforeExpand, _]) | scala.Null = js.native
   var onOjCollapse: (js.Function1[/* event */ atOracleOraclejetLib.ojaccordionMod.ojAccordionNs.ojCollapse, _]) | scala.Null = js.native
   var onOjExpand: (js.Function1[/* event */ atOracleOraclejetLib.ojaccordionMod.ojAccordionNs.ojExpand, _]) | scala.Null = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_expandedChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.expandedChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['expanded'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.Anon_Id] | scala.Null], 
       _
     ]
   ): scala.Unit = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_expandedChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.expandedChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['expanded'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.Anon_Id] | scala.Null], 
       _
     ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_multipleChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.multipleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['multiple'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
       _
     ]
   ): scala.Unit = js.native
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_multipleChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.multipleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['multiple'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
       _
     ],
     useCapture: scala.Boolean

@@ -209,3 +209,74 @@ trait MarkConfig extends js.Object {
   var theta: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MarkConfig {
+  @scala.inline
+  def apply(
+    align: vegaDashTypingsLib.typesSpecEncodeMod.Align = null,
+    angle: scala.Int | scala.Double = null,
+    baseline: vegaDashTypingsLib.typesSpecEncodeMod.TextBaseline = null,
+    cursor: vegaDashTypingsLib.vegaDashTypingsLibStrings.auto | vegaDashTypingsLib.vegaDashTypingsLibStrings.default | vegaDashTypingsLib.vegaDashTypingsLibStrings.none | vegaDashTypingsLib.vegaDashTypingsLibStrings.`context-menu` | vegaDashTypingsLib.vegaDashTypingsLibStrings.help | vegaDashTypingsLib.vegaDashTypingsLibStrings.pointer | vegaDashTypingsLib.vegaDashTypingsLibStrings.progress | vegaDashTypingsLib.vegaDashTypingsLibStrings.wait | vegaDashTypingsLib.vegaDashTypingsLibStrings.cell | vegaDashTypingsLib.vegaDashTypingsLibStrings.crosshair | vegaDashTypingsLib.vegaDashTypingsLibStrings.text | vegaDashTypingsLib.vegaDashTypingsLibStrings.`vertical-text` | vegaDashTypingsLib.vegaDashTypingsLibStrings.alias | vegaDashTypingsLib.vegaDashTypingsLibStrings.copy | vegaDashTypingsLib.vegaDashTypingsLibStrings.move | vegaDashTypingsLib.vegaDashTypingsLibStrings.`no-drop` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`not-allowed` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`e-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`n-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`ne-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`nw-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`s-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`se-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`sw-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`w-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`ew-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`ns-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`nesw-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`nwse-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`col-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`row-resize` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`all-scroll` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`zoom-in` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`zoom-out` | vegaDashTypingsLib.vegaDashTypingsLibStrings.grab | vegaDashTypingsLib.vegaDashTypingsLibStrings.grabbing = null,
+    dx: scala.Int | scala.Double = null,
+    dy: scala.Int | scala.Double = null,
+    fill: java.lang.String = null,
+    fillOpacity: scala.Int | scala.Double = null,
+    font: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    fontStyle: vegaDashTypingsLib.typesSpecEncodeMod.FontStyle = null,
+    fontWeight: vegaDashTypingsLib.typesSpecEncodeMod.FontWeight = null,
+    href: java.lang.String = null,
+    interpolate: vegaDashTypingsLib.typesSpecEncodeMod.Interpolate = null,
+    limit: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    orient: vegaDashTypingsLib.typesSpecEncodeMod.Orientation = null,
+    radius: scala.Int | scala.Double = null,
+    shape: vegaDashTypingsLib.typesSpecEncodeMod.SymbolShape = null,
+    size: scala.Int | scala.Double = null,
+    stroke: java.lang.String = null,
+    strokeCap: java.lang.String = null,
+    strokeDash: js.Array[scala.Double] = null,
+    strokeDashOffset: scala.Int | scala.Double = null,
+    strokeJoin: java.lang.String = null,
+    strokeMiterLimit: scala.Int | scala.Double = null,
+    strokeOpacity: scala.Int | scala.Double = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    tension: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    theta: scala.Int | scala.Double = null
+  ): MarkConfig = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (baseline != null) __obj.updateDynamic("baseline")(baseline)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
+    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (orient != null) __obj.updateDynamic("orient")(orient)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap)
+    if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash)
+    if (strokeDashOffset != null) __obj.updateDynamic("strokeDashOffset")(strokeDashOffset.asInstanceOf[js.Any])
+    if (strokeJoin != null) __obj.updateDynamic("strokeJoin")(strokeJoin)
+    if (strokeMiterLimit != null) __obj.updateDynamic("strokeMiterLimit")(strokeMiterLimit.asInstanceOf[js.Any])
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (theta != null) __obj.updateDynamic("theta")(theta.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MarkConfig]
+  }
+}
+

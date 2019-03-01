@@ -36,3 +36,26 @@ trait LocalStreamDestOptions extends js.Object {
   var produceFiles: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LocalStreamDestOptions {
+  @scala.inline
+  def apply(
+    cwd: java.lang.String = null,
+    flag: adoneLib.adoneNs.fsNs.INs.Flag = null,
+    mode: scala.Int | scala.Double = null,
+    originMode: js.UndefOr[scala.Boolean] = js.undefined,
+    originOwner: js.UndefOr[scala.Boolean] = js.undefined,
+    originTimes: js.UndefOr[scala.Boolean] = js.undefined,
+    produceFiles: js.UndefOr[scala.Boolean] = js.undefined
+  ): LocalStreamDestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (flag != null) __obj.updateDynamic("flag")(flag)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (!js.isUndefined(originMode)) __obj.updateDynamic("originMode")(originMode)
+    if (!js.isUndefined(originOwner)) __obj.updateDynamic("originOwner")(originOwner)
+    if (!js.isUndefined(originTimes)) __obj.updateDynamic("originTimes")(originTimes)
+    if (!js.isUndefined(produceFiles)) __obj.updateDynamic("produceFiles")(produceFiles)
+    __obj.asInstanceOf[LocalStreamDestOptions]
+  }
+}
+

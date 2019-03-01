@@ -15,3 +15,23 @@ trait Anon_GetBit extends js.Object {
   def toggleBit(int32: scala.Double, position: scala.Double): scala.Double
 }
 
+object Anon_GetBit {
+  @scala.inline
+  def apply(
+    getBit: js.Function2[scala.Double, scala.Double, js.Any],
+    setBit: js.Function3[
+      scala.Double, 
+      scala.Double, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ js.Any, 
+      js.Any
+    ],
+    toggleBit: js.Function2[scala.Double, scala.Double, scala.Double]
+  ): Anon_GetBit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getBit")(getBit)
+    __obj.updateDynamic("setBit")(setBit)
+    __obj.updateDynamic("toggleBit")(toggleBit)
+    __obj.asInstanceOf[Anon_GetBit]
+  }
+}
+

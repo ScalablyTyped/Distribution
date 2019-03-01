@@ -24,3 +24,20 @@ trait XServiceDisplayName
   def getServiceDisplayName(aLocale: Locale): java.lang.String
 }
 
+object XServiceDisplayName {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getServiceDisplayName: js.Function1[Locale, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XServiceDisplayName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getServiceDisplayName")(getServiceDisplayName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XServiceDisplayName]
+  }
+}
+

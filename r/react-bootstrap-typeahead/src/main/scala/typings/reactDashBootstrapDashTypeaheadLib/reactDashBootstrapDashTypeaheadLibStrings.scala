@@ -10,7 +10,8 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait activeIndex extends js.Object
+  sealed trait activeIndex
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuItemContextKeys
   
   @js.native
   sealed trait align extends js.Object
@@ -22,7 +23,8 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   sealed trait boxSizing extends js.Object
   
   @js.native
-  sealed trait bsSize extends js.Object
+  sealed trait bsSize
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
   sealed trait button extends js.Object
@@ -34,7 +36,8 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   sealed trait combobox extends js.Object
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait disabled
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
   sealed trait div extends js.Object
@@ -49,34 +52,44 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   sealed trait flip extends js.Object
   
   @js.native
-  sealed trait hintText extends js.Object
+  sealed trait hintText
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.HintedInputContextKeys
   
   @js.native
-  sealed trait initialItem extends js.Object
+  sealed trait initialItem
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.HintedInputContextKeys
   
   @js.native
   sealed trait input extends js.Object
   
   @js.native
-  sealed trait inputProps extends js.Object
+  sealed trait inputProps
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
-  sealed trait isOnlyResult extends js.Object
+  sealed trait isOnlyResult
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuItemContextKeys
   
   @js.native
-  sealed trait justify extends js.Object
+  sealed trait justify
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadAlign
   
   @js.native
-  sealed trait labelKey extends js.Object
+  sealed trait labelKey
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
+       with reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadMenuPropsPick
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait large
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadBsSizes
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadAlign
   
   @js.native
-  sealed trait lg extends js.Object
+  sealed trait lg
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadBsSizes
   
   @js.native
   sealed trait li extends js.Object
@@ -88,37 +101,47 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   sealed trait listbox extends js.Object
   
   @js.native
-  sealed trait multiple extends js.Object
+  sealed trait multiple
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
-  sealed trait newSelectionPrefix extends js.Object
+  sealed trait newSelectionPrefix
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadMenuPropsPick
   
   @js.native
-  sealed trait onActiveItemChange extends js.Object
+  sealed trait onActiveItemChange
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuItemContextKeys
   
   @js.native
-  sealed trait onAdd extends js.Object
+  sealed trait onAdd
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.HintedInputContextKeys
   
   @js.native
-  sealed trait onBlur extends js.Object
+  sealed trait onBlur
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
-  sealed trait onChange extends js.Object
+  sealed trait onChange
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
-  sealed trait onFocus extends js.Object
+  sealed trait onFocus
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
-  sealed trait onInitialItemChange extends js.Object
+  sealed trait onInitialItemChange
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuItemContextKeys
   
   @js.native
-  sealed trait onKeyDown extends js.Object
+  sealed trait onKeyDown
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
   sealed trait onMenuHide extends js.Object
   
   @js.native
-  sealed trait onMenuItemClick extends js.Object
+  sealed trait onMenuItemClick
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuItemContextKeys
   
   @js.native
   sealed trait onMenuShow extends js.Object
@@ -127,31 +150,40 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   sealed trait onMenuToggle extends js.Object
   
   @js.native
-  sealed trait options extends js.Object
+  sealed trait options
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadMenuPropsPick
   
   @js.native
-  sealed trait placeholder extends js.Object
+  sealed trait placeholder
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
-  sealed trait renderMenuItemChildren extends js.Object
+  sealed trait renderMenuItemChildren
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadMenuPropsPick
   
   @js.native
-  sealed trait renderToken extends js.Object
+  sealed trait renderToken
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadAlign
   
   @js.native
-  sealed trait selectHintOnEnter extends js.Object
+  sealed trait selectHintOnEnter
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.HintedInputContextKeys
   
   @js.native
-  sealed trait selected extends js.Object
+  sealed trait selected
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadInputPropKeys
   
   @js.native
-  sealed trait sm extends js.Object
+  sealed trait sm
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadBsSizes
   
   @js.native
-  sealed trait small extends js.Object
+  sealed trait small
+    extends reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadBsSizes
   
   @js.native
   sealed trait text extends js.Object

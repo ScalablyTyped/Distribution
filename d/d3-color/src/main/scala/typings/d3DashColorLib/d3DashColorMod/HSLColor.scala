@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HSLColor extends Color {
+trait HSLColor
+  extends Color
+     with ColorSpaceObject {
   /**
     * Hue channel value.
     */

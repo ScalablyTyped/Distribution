@@ -49,3 +49,31 @@ trait SendMoneyOpts extends js.Object {
   var `type`: coinbaseLib.coinbaseLibStrings.send
 }
 
+object SendMoneyOpts {
+  @scala.inline
+  def apply(
+    amount: java.lang.String,
+    currency: java.lang.String,
+    to: java.lang.String,
+    `type`: coinbaseLib.coinbaseLibStrings.send,
+    description: java.lang.String = null,
+    fee: java.lang.String = null,
+    financial_institution_website: java.lang.String = null,
+    idem: java.lang.String = null,
+    skip_notifications: js.UndefOr[scala.Boolean] = js.undefined,
+    to_financial_institution: js.UndefOr[scala.Boolean] = js.undefined
+  ): SendMoneyOpts = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("to")(to)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (fee != null) __obj.updateDynamic("fee")(fee)
+    if (financial_institution_website != null) __obj.updateDynamic("financial_institution_website")(financial_institution_website)
+    if (idem != null) __obj.updateDynamic("idem")(idem)
+    if (!js.isUndefined(skip_notifications)) __obj.updateDynamic("skip_notifications")(skip_notifications)
+    if (!js.isUndefined(to_financial_institution)) __obj.updateDynamic("to_financial_institution")(to_financial_institution)
+    __obj.asInstanceOf[SendMoneyOpts]
+  }
+}
+

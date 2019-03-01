@@ -19,3 +19,13 @@ trait RawHashes extends js.Object {
   var rawHashes: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RawHashes {
+  @scala.inline
+  def apply(prefixSize: scala.Int | scala.Double = null, rawHashes: java.lang.String = null): RawHashes = {
+    val __obj = js.Dynamic.literal()
+    if (prefixSize != null) __obj.updateDynamic("prefixSize")(prefixSize.asInstanceOf[js.Any])
+    if (rawHashes != null) __obj.updateDynamic("rawHashes")(rawHashes)
+    __obj.asInstanceOf[RawHashes]
+  }
+}
+

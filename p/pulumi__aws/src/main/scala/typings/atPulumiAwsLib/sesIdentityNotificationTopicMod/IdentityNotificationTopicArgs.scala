@@ -20,3 +20,18 @@ trait IdentityNotificationTopicArgs extends js.Object {
   val topicArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object IdentityNotificationTopicArgs {
+  @scala.inline
+  def apply(
+    identity: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    notificationType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): IdentityNotificationTopicArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
+    __obj.updateDynamic("notificationType")(notificationType.asInstanceOf[js.Any])
+    if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IdentityNotificationTopicArgs]
+  }
+}
+

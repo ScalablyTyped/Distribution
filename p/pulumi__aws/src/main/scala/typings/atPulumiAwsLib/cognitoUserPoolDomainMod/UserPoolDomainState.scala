@@ -36,3 +36,26 @@ trait UserPoolDomainState extends js.Object {
   val version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object UserPoolDomainState {
+  @scala.inline
+  def apply(
+    awsAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cloudfrontDistributionArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    domain: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3Bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    userPoolId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    version: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): UserPoolDomainState = {
+    val __obj = js.Dynamic.literal()
+    if (awsAccountId != null) __obj.updateDynamic("awsAccountId")(awsAccountId.asInstanceOf[js.Any])
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    if (cloudfrontDistributionArn != null) __obj.updateDynamic("cloudfrontDistributionArn")(cloudfrontDistributionArn.asInstanceOf[js.Any])
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
+    if (userPoolId != null) __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserPoolDomainState]
+  }
+}
+

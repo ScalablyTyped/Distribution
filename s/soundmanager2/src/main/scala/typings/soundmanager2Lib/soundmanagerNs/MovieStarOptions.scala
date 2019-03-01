@@ -12,3 +12,20 @@ trait MovieStarOptions extends js.Object {
   var serverURL: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object MovieStarOptions {
+  @scala.inline
+  def apply(
+    bufferTime: scala.Int | scala.Double = null,
+    duration: scala.Int | scala.Double = null,
+    onconnect: js.Function0[scala.Unit] = null,
+    serverURL: java.lang.String = null
+  ): MovieStarOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bufferTime != null) __obj.updateDynamic("bufferTime")(bufferTime.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (onconnect != null) __obj.updateDynamic("onconnect")(onconnect)
+    if (serverURL != null) __obj.updateDynamic("serverURL")(serverURL)
+    __obj.asInstanceOf[MovieStarOptions]
+  }
+}
+

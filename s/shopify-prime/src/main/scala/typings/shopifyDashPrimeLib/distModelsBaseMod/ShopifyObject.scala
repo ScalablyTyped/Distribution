@@ -16,3 +16,13 @@ trait ShopifyObject extends js.Object {
   var id: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ShopifyObject {
+  @scala.inline
+  def apply(admin_graphql_api_id: java.lang.String = null, id: scala.Int | scala.Double = null): ShopifyObject = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShopifyObject]
+  }
+}
+

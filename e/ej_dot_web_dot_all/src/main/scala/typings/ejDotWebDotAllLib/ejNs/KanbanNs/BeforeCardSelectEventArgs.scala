@@ -38,3 +38,32 @@ trait BeforeCardSelectEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeCardSelectEventArgs {
+  @scala.inline
+  def apply(
+    Target: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cardIndex: scala.Int | scala.Double = null,
+    cellIndex: scala.Int | scala.Double = null,
+    currentCell: js.Any = null,
+    data: js.Any = null,
+    model: js.Any = null,
+    previousCard: js.Any = null,
+    previousRowcellindex: js.Array[_] = null,
+    `type`: java.lang.String = null
+  ): BeforeCardSelectEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Target != null) __obj.updateDynamic("Target")(Target)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cardIndex != null) __obj.updateDynamic("cardIndex")(cardIndex.asInstanceOf[js.Any])
+    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (previousCard != null) __obj.updateDynamic("previousCard")(previousCard)
+    if (previousRowcellindex != null) __obj.updateDynamic("previousRowcellindex")(previousRowcellindex)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeCardSelectEventArgs]
+  }
+}
+

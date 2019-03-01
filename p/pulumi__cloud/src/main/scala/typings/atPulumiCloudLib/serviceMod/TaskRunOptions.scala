@@ -16,3 +16,13 @@ trait TaskRunOptions extends js.Object {
   var host: js.UndefOr[HostProperties] = js.undefined
 }
 
+object TaskRunOptions {
+  @scala.inline
+  def apply(environment: stdLib.Record[java.lang.String, java.lang.String] = null, host: HostProperties = null): TaskRunOptions = {
+    val __obj = js.Dynamic.literal()
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (host != null) __obj.updateDynamic("host")(host)
+    __obj.asInstanceOf[TaskRunOptions]
+  }
+}
+

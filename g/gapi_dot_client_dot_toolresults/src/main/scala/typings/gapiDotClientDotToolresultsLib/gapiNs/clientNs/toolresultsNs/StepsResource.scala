@@ -71,3 +71,48 @@ trait StepsResource extends js.Object {
   def publishXunitXmlFiles(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Step]
 }
 
+object StepsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Step]
+    ],
+    get: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Step]
+    ],
+    getPerfMetricsSummary: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
+    ],
+    list: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListStepsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrintProjectId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Step]
+    ],
+    perfMetricsSummary: PerfMetricsSummaryResource,
+    perfSampleSeries: PerfSampleSeriesResource,
+    publishXunitXmlFiles: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Step]
+    ],
+    thumbnails: ThumbnailsResource
+  ): StepsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getPerfMetricsSummary")(getPerfMetricsSummary)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("perfMetricsSummary")(perfMetricsSummary)
+    __obj.updateDynamic("perfSampleSeries")(perfSampleSeries)
+    __obj.updateDynamic("publishXunitXmlFiles")(publishXunitXmlFiles)
+    __obj.updateDynamic("thumbnails")(thumbnails)
+    __obj.asInstanceOf[StepsResource]
+  }
+}
+

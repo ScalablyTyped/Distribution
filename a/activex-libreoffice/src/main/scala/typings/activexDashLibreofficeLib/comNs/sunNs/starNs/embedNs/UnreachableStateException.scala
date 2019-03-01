@@ -14,3 +14,20 @@ trait UnreachableStateException
   var NextState: scala.Double
 }
 
+object UnreachableStateException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    CurrentState: scala.Double,
+    Message: java.lang.String,
+    NextState: scala.Double
+  ): UnreachableStateException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("CurrentState")(CurrentState)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("NextState")(NextState)
+    __obj.asInstanceOf[UnreachableStateException]
+  }
+}
+

@@ -16,3 +16,13 @@ trait TokenResult extends js.Object {
   var token: js.UndefOr[Token] = js.undefined
 }
 
+object TokenResult {
+  @scala.inline
+  def apply(error: stripejsLib.stripejsMod.StripeError = null, token: Token = null): TokenResult = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[TokenResult]
+  }
+}
+

@@ -70,3 +70,46 @@ trait GetNetworkInterfaceResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetNetworkInterfaceResult {
+  @scala.inline
+  def apply(
+    associations: js.Array[atPulumiAwsLib.Anon_AllocationIdAssociationId],
+    attachments: js.Array[atPulumiAwsLib.Anon_AttachmentId],
+    availabilityZone: java.lang.String,
+    description: java.lang.String,
+    id: java.lang.String,
+    interfaceType: java.lang.String,
+    ipv6Addresses: js.Array[java.lang.String],
+    macAddress: java.lang.String,
+    ownerId: java.lang.String,
+    privateDnsName: java.lang.String,
+    privateIp: java.lang.String,
+    privateIps: js.Array[java.lang.String],
+    requesterId: java.lang.String,
+    securityGroups: js.Array[java.lang.String],
+    subnetId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpcId: java.lang.String
+  ): GetNetworkInterfaceResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("associations")(associations)
+    __obj.updateDynamic("attachments")(attachments)
+    __obj.updateDynamic("availabilityZone")(availabilityZone)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("interfaceType")(interfaceType)
+    __obj.updateDynamic("ipv6Addresses")(ipv6Addresses)
+    __obj.updateDynamic("macAddress")(macAddress)
+    __obj.updateDynamic("ownerId")(ownerId)
+    __obj.updateDynamic("privateDnsName")(privateDnsName)
+    __obj.updateDynamic("privateIp")(privateIp)
+    __obj.updateDynamic("privateIps")(privateIps)
+    __obj.updateDynamic("requesterId")(requesterId)
+    __obj.updateDynamic("securityGroups")(securityGroups)
+    __obj.updateDynamic("subnetId")(subnetId)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("vpcId")(vpcId)
+    __obj.asInstanceOf[GetNetworkInterfaceResult]
+  }
+}
+

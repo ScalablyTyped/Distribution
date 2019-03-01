@@ -67,3 +67,26 @@ trait Entities extends js.Object {
   var urls: js.Array[java.lang.String]
 }
 
+object Entities {
+  @scala.inline
+  def apply(
+    addresses: js.Array[java.lang.String],
+    contacts: js.Array[Contact],
+    emailAddresses: js.Array[java.lang.String],
+    meetingSuggestions: js.Array[MeetingSuggestion],
+    phoneNumbers: js.Array[PhoneNumber],
+    taskSuggestions: js.Array[java.lang.String],
+    urls: js.Array[java.lang.String]
+  ): Entities = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addresses")(addresses)
+    __obj.updateDynamic("contacts")(contacts)
+    __obj.updateDynamic("emailAddresses")(emailAddresses)
+    __obj.updateDynamic("meetingSuggestions")(meetingSuggestions)
+    __obj.updateDynamic("phoneNumbers")(phoneNumbers)
+    __obj.updateDynamic("taskSuggestions")(taskSuggestions)
+    __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[Entities]
+  }
+}
+

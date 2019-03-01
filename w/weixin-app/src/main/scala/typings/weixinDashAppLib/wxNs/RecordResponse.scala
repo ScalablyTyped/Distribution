@@ -10,3 +10,13 @@ trait RecordResponse extends js.Object {
   var tempVideoPath: java.lang.String
 }
 
+object RecordResponse {
+  @scala.inline
+  def apply(tempThumbPath: java.lang.String, tempVideoPath: java.lang.String): RecordResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tempThumbPath")(tempThumbPath)
+    __obj.updateDynamic("tempVideoPath")(tempVideoPath)
+    __obj.asInstanceOf[RecordResponse]
+  }
+}
+

@@ -57,3 +57,41 @@ trait FileStatusChangedDetail extends js.Object {
   ]
 }
 
+object FileStatusChangedDetail {
+  @scala.inline
+  def apply(
+    fileEntry: filesystemLib.FileEntry,
+    status: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_CONFLICTING, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONFLICTING[keyof chrome-apps.Anon_CONFLICTING] */ js.Any
+      ]
+    ],
+    action: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_ADDED, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ADDED[keyof chrome-apps.Anon_ADDED] */ js.Any
+      ]
+    ] = null,
+    direction: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_LOCALTOREMOTE, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_LOCALTOREMOTE[keyof chrome-apps.Anon_LOCALTOREMOTE] */ js.Any
+      ]
+    ] = null
+  ): FileStatusChangedDetail = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileEntry")(fileEntry)
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileStatusChangedDetail]
+  }
+}
+

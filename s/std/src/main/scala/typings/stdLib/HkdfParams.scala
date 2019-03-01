@@ -11,3 +11,20 @@ trait HkdfParams extends Algorithm {
   var salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
 }
 
+object HkdfParams {
+  @scala.inline
+  def apply(
+    hash: HashAlgorithmIdentifier,
+    info: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
+    name: java.lang.String,
+    salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+  ): HkdfParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HkdfParams]
+  }
+}
+

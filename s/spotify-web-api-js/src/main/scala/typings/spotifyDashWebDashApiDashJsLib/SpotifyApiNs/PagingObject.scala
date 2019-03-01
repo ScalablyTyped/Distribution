@@ -19,3 +19,26 @@ trait PagingObject[T] extends js.Object {
   var total: scala.Double
 }
 
+object PagingObject {
+  @scala.inline
+  def apply[T](
+    href: java.lang.String,
+    items: js.Array[T],
+    limit: scala.Double,
+    next: java.lang.String,
+    offset: scala.Double,
+    previous: java.lang.String,
+    total: scala.Double
+  ): PagingObject[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("href")(href)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("limit")(limit)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("previous")(previous)
+    __obj.updateDynamic("total")(total)
+    __obj.asInstanceOf[PagingObject[T]]
+  }
+}
+

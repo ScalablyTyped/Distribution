@@ -12,3 +12,12 @@ trait Anon_MaxStalenessSeconds extends js.Object {
   var maxStalenessSeconds: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_MaxStalenessSeconds {
+  @scala.inline
+  def apply(maxStalenessSeconds: scala.Int | scala.Double = null): Anon_MaxStalenessSeconds = {
+    val __obj = js.Dynamic.literal()
+    if (maxStalenessSeconds != null) __obj.updateDynamic("maxStalenessSeconds")(maxStalenessSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_MaxStalenessSeconds]
+  }
+}
+

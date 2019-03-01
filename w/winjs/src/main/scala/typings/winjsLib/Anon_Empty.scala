@@ -11,3 +11,18 @@ trait Anon_Empty extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_Empty {
+  @scala.inline
+  def apply(
+    value: java.lang.String,
+    empty: js.UndefOr[scala.Boolean] = js.undefined,
+    lang: java.lang.String = null
+  ): Anon_Empty = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    __obj.asInstanceOf[Anon_Empty]
+  }
+}
+

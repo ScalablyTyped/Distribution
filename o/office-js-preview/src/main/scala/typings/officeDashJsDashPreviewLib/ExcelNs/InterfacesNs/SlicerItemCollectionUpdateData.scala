@@ -10,3 +10,12 @@ trait SlicerItemCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[SlicerItemData]] = js.undefined
 }
 
+object SlicerItemCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[SlicerItemData] = null): SlicerItemCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[SlicerItemCollectionUpdateData]
+  }
+}
+

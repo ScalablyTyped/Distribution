@@ -18,3 +18,18 @@ trait HistoryManager extends js.Object {
   def onDidChangeProjects(callback: js.Function1[/* args */ atomLib.Anon_Reloaded, scala.Unit]): Disposable
 }
 
+object HistoryManager {
+  @scala.inline
+  def apply(
+    clearProjects: js.Function0[scala.Unit],
+    getProjects: js.Function0[js.Array[ProjectHistory]],
+    onDidChangeProjects: js.Function1[js.Function1[/* args */ atomLib.Anon_Reloaded, scala.Unit], Disposable]
+  ): HistoryManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearProjects")(clearProjects)
+    __obj.updateDynamic("getProjects")(getProjects)
+    __obj.updateDynamic("onDidChangeProjects")(onDidChangeProjects)
+    __obj.asInstanceOf[HistoryManager]
+  }
+}
+

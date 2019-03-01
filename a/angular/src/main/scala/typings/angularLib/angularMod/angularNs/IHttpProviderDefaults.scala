@@ -52,3 +52,28 @@ trait IHttpProviderDefaults extends js.Object {
   var xsrfHeaderName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IHttpProviderDefaults {
+  @scala.inline
+  def apply(
+    cache: js.Any = null,
+    headers: IHttpRequestConfigHeaders = null,
+    paramSerializer: java.lang.String | (js.Function1[/* obj */ js.Any, java.lang.String]) = null,
+    transformRequest: IHttpRequestTransformer | js.Array[IHttpRequestTransformer] = null,
+    transformResponse: IHttpResponseTransformer | js.Array[IHttpResponseTransformer] = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined,
+    xsrfCookieName: java.lang.String = null,
+    xsrfHeaderName: java.lang.String = null
+  ): IHttpProviderDefaults = {
+    val __obj = js.Dynamic.literal()
+    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (paramSerializer != null) __obj.updateDynamic("paramSerializer")(paramSerializer.asInstanceOf[js.Any])
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest.asInstanceOf[js.Any])
+    if (transformResponse != null) __obj.updateDynamic("transformResponse")(transformResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (xsrfCookieName != null) __obj.updateDynamic("xsrfCookieName")(xsrfCookieName)
+    if (xsrfHeaderName != null) __obj.updateDynamic("xsrfHeaderName")(xsrfHeaderName)
+    __obj.asInstanceOf[IHttpProviderDefaults]
+  }
+}
+

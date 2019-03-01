@@ -13,3 +13,20 @@ trait OpenOptions extends js.Object {
   var position: js.UndefOr[Position] = js.undefined
 }
 
+object OpenOptions {
+  @scala.inline
+  def apply(
+    display: java.lang.String = null,
+    initialFocus: java.lang.String = null,
+    launcher: java.lang.String | stdLib.Element = null,
+    position: Position = null
+  ): OpenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (display != null) __obj.updateDynamic("display")(display)
+    if (initialFocus != null) __obj.updateDynamic("initialFocus")(initialFocus)
+    if (launcher != null) __obj.updateDynamic("launcher")(launcher.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[OpenOptions]
+  }
+}
+

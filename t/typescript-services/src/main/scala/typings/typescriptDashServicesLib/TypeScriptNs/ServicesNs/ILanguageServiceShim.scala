@@ -54,3 +54,66 @@ trait ILanguageServiceShim extends IShim {
   def refresh(throwOnError: scala.Boolean): scala.Unit
 }
 
+object ILanguageServiceShim {
+  @scala.inline
+  def apply(
+    cleanupSemanticCache: js.Function0[scala.Unit],
+    dispose: js.Function1[js.Any, scala.Unit],
+    getBraceMatchingAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getBreakpointStatementAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getCompilerOptionsDiagnostics: js.Function0[java.lang.String],
+    getCompletionEntryDetails: js.Function3[java.lang.String, scala.Double, java.lang.String, java.lang.String],
+    getCompletionsAtPosition: js.Function3[java.lang.String, scala.Double, scala.Boolean, java.lang.String],
+    getDefinitionAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getEmitOutput: js.Function1[java.lang.String, java.lang.String],
+    getFormattingEditsAfterKeystroke: js.Function4[java.lang.String, scala.Double, java.lang.String, java.lang.String, java.lang.String],
+    getFormattingEditsForDocument: js.Function4[java.lang.String, scala.Double, scala.Double, java.lang.String, java.lang.String],
+    getFormattingEditsForRange: js.Function4[java.lang.String, scala.Double, scala.Double, java.lang.String, java.lang.String],
+    getFormattingEditsOnPaste: js.Function4[java.lang.String, scala.Double, scala.Double, java.lang.String, java.lang.String],
+    getImplementorsAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getIndentationAtPosition: js.Function3[java.lang.String, scala.Double, java.lang.String, java.lang.String],
+    getNameOrDottedNameSpan: js.Function3[java.lang.String, scala.Double, scala.Double, java.lang.String],
+    getNavigateToItems: js.Function1[java.lang.String, java.lang.String],
+    getOccurrencesAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getOutliningRegions: js.Function1[java.lang.String, java.lang.String],
+    getReferencesAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getScriptLexicalStructure: js.Function1[java.lang.String, java.lang.String],
+    getSemanticDiagnostics: js.Function1[java.lang.String, java.lang.String],
+    getSignatureAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    getSyntacticDiagnostics: js.Function1[java.lang.String, java.lang.String],
+    getTypeAtPosition: js.Function2[java.lang.String, scala.Double, java.lang.String],
+    languageService: ILanguageService,
+    refresh: js.Function1[scala.Boolean, scala.Unit]
+  ): ILanguageServiceShim = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cleanupSemanticCache")(cleanupSemanticCache)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getBraceMatchingAtPosition")(getBraceMatchingAtPosition)
+    __obj.updateDynamic("getBreakpointStatementAtPosition")(getBreakpointStatementAtPosition)
+    __obj.updateDynamic("getCompilerOptionsDiagnostics")(getCompilerOptionsDiagnostics)
+    __obj.updateDynamic("getCompletionEntryDetails")(getCompletionEntryDetails)
+    __obj.updateDynamic("getCompletionsAtPosition")(getCompletionsAtPosition)
+    __obj.updateDynamic("getDefinitionAtPosition")(getDefinitionAtPosition)
+    __obj.updateDynamic("getEmitOutput")(getEmitOutput)
+    __obj.updateDynamic("getFormattingEditsAfterKeystroke")(getFormattingEditsAfterKeystroke)
+    __obj.updateDynamic("getFormattingEditsForDocument")(getFormattingEditsForDocument)
+    __obj.updateDynamic("getFormattingEditsForRange")(getFormattingEditsForRange)
+    __obj.updateDynamic("getFormattingEditsOnPaste")(getFormattingEditsOnPaste)
+    __obj.updateDynamic("getImplementorsAtPosition")(getImplementorsAtPosition)
+    __obj.updateDynamic("getIndentationAtPosition")(getIndentationAtPosition)
+    __obj.updateDynamic("getNameOrDottedNameSpan")(getNameOrDottedNameSpan)
+    __obj.updateDynamic("getNavigateToItems")(getNavigateToItems)
+    __obj.updateDynamic("getOccurrencesAtPosition")(getOccurrencesAtPosition)
+    __obj.updateDynamic("getOutliningRegions")(getOutliningRegions)
+    __obj.updateDynamic("getReferencesAtPosition")(getReferencesAtPosition)
+    __obj.updateDynamic("getScriptLexicalStructure")(getScriptLexicalStructure)
+    __obj.updateDynamic("getSemanticDiagnostics")(getSemanticDiagnostics)
+    __obj.updateDynamic("getSignatureAtPosition")(getSignatureAtPosition)
+    __obj.updateDynamic("getSyntacticDiagnostics")(getSyntacticDiagnostics)
+    __obj.updateDynamic("getTypeAtPosition")(getTypeAtPosition)
+    __obj.updateDynamic("languageService")(languageService)
+    __obj.updateDynamic("refresh")(refresh)
+    __obj.asInstanceOf[ILanguageServiceShim]
+  }
+}
+

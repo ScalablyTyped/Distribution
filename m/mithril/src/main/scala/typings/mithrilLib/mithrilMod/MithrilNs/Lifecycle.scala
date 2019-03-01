@@ -31,3 +31,32 @@ trait Lifecycle[Attrs, State]
   var onupdate: js.UndefOr[js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _]] = js.undefined
 }
 
+object Lifecycle {
+  @scala.inline
+  def apply[Attrs, State](
+    NumberDictionary: /** WORKAROUND: TypeScript 2.4 does not allow extending an interface with all-optional properties. */
+  /* _ */ org.scalablytyped.runtime.NumberDictionary[js.Any] = null,
+    onbeforeremove: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], js.Promise[_] | scala.Unit] = null,
+    onbeforeupdate: js.ThisFunction2[
+      /* this */ State, 
+      /* vnode */ Vnode[Attrs, State], 
+      /* old */ VnodeDOM[Attrs, State], 
+      scala.Boolean | scala.Unit
+    ] = null,
+    oncreate: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _] = null,
+    oninit: js.ThisFunction1[/* this */ State, /* vnode */ Vnode[Attrs, State], _] = null,
+    onremove: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _] = null,
+    onupdate: js.ThisFunction1[/* this */ State, /* vnode */ VnodeDOM[Attrs, State], _] = null
+  ): Lifecycle[Attrs, State] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    if (onbeforeremove != null) __obj.updateDynamic("onbeforeremove")(onbeforeremove)
+    if (onbeforeupdate != null) __obj.updateDynamic("onbeforeupdate")(onbeforeupdate)
+    if (oncreate != null) __obj.updateDynamic("oncreate")(oncreate)
+    if (oninit != null) __obj.updateDynamic("oninit")(oninit)
+    if (onremove != null) __obj.updateDynamic("onremove")(onremove)
+    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
+    __obj.asInstanceOf[Lifecycle[Attrs, State]]
+  }
+}
+

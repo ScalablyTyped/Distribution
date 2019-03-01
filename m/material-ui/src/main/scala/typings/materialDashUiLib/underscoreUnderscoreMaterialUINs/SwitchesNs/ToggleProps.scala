@@ -31,3 +31,52 @@ trait ToggleProps extends CommonEnhancedSwitchProps[Toggle] {
   var valueLink: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.ReactLink[scala.Boolean]] = js.undefined
 }
 
+object ToggleProps {
+  @scala.inline
+  def apply(
+    CommonEnhancedSwitchProps: CommonEnhancedSwitchProps[Toggle] = null,
+    defaultToggled: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    elementStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    iconStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    labelPosition: materialDashUiLib.materialDashUiLibStrings.left | materialDashUiLib.materialDashUiLibStrings.right = null,
+    labelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    onToggle: js.Function2[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[js.Object, reactLib.NativeMouseEvent], 
+      /* isInputChecked */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    rippleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    thumbStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    thumbSwitchedStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    toggled: js.UndefOr[scala.Boolean] = js.undefined,
+    trackStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    trackSwitchedStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    valueLink: materialDashUiLib.underscoreUnderscoreMaterialUINs.ReactLink[scala.Boolean] = null
+  ): ToggleProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, CommonEnhancedSwitchProps)
+    if (!js.isUndefined(defaultToggled)) __obj.updateDynamic("defaultToggled")(defaultToggled)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (elementStyle != null) __obj.updateDynamic("elementStyle")(elementStyle)
+    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle)
+    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (rippleStyle != null) __obj.updateDynamic("rippleStyle")(rippleStyle)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (thumbStyle != null) __obj.updateDynamic("thumbStyle")(thumbStyle)
+    if (thumbSwitchedStyle != null) __obj.updateDynamic("thumbSwitchedStyle")(thumbSwitchedStyle)
+    if (!js.isUndefined(toggled)) __obj.updateDynamic("toggled")(toggled)
+    if (trackStyle != null) __obj.updateDynamic("trackStyle")(trackStyle)
+    if (trackSwitchedStyle != null) __obj.updateDynamic("trackSwitchedStyle")(trackSwitchedStyle)
+    if (valueLink != null) __obj.updateDynamic("valueLink")(valueLink)
+    __obj.asInstanceOf[ToggleProps]
+  }
+}
+

@@ -26,3 +26,28 @@ trait FindRequest[Content /* <: js.Object */] extends js.Object {
   var use_index: js.UndefOr[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])] = js.undefined
 }
 
+object FindRequest {
+  @scala.inline
+  def apply[Content /* <: js.Object */](
+    selector: Selector,
+    fields: js.Array[java.lang.String] = null,
+    limit: scala.Int | scala.Double = null,
+    skip: scala.Int | scala.Double = null,
+    sort: js.Array[
+      java.lang.String | (org.scalablytyped.runtime.StringDictionary[
+        pouchdbDashFindLib.pouchdbDashFindLibStrings.asc | pouchdbDashFindLib.pouchdbDashFindLibStrings.desc
+      ])
+    ] = null,
+    use_index: java.lang.String | (js.Tuple2[java.lang.String, java.lang.String]) = null
+  ): FindRequest[Content] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("selector")(selector)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (use_index != null) __obj.updateDynamic("use_index")(use_index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FindRequest[Content]]
+  }
+}
+

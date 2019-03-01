@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object portscannerMod {
   type PortCallback = js.Function2[/* error */ stdLib.Error | scala.Null, /* port */ scala.Double, scala.Unit]
-  type Status = portscannerLib.portscannerLibStrings.open | portscannerLib.portscannerLibStrings.closed
   type StatusCallback = js.Function2[/* error */ stdLib.Error | scala.Null, /* port */ Status, scala.Unit]
 }

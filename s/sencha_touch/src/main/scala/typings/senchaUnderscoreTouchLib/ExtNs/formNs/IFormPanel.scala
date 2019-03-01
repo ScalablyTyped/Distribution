@@ -219,3 +219,136 @@ trait IFormPanel
   var waitTpl: js.UndefOr[js.Any] = js.undefined
 }
 
+object IFormPanel {
+  @scala.inline
+  def apply(
+    IPanel: senchaUnderscoreTouchLib.ExtNs.IPanel = null,
+    api: js.Any = null,
+    baseCls: java.lang.String = null,
+    baseParams: js.Any = null,
+    doSetDisabled: js.Function1[/* newDisabled */ js.UndefOr[js.Any], IPanel] = null,
+    enableSubmissionForm: js.UndefOr[scala.Boolean] = js.undefined,
+    enctype: js.Any = null,
+    getApi: js.Function0[_] = null,
+    getBaseCls: js.Function0[java.lang.String] = null,
+    getBaseParams: js.Function0[_] = null,
+    getEnableSubmissionForm: js.Function0[scala.Boolean] = null,
+    getEnctype: js.Function0[_] = null,
+    getMethod: js.Function0[java.lang.String] = null,
+    getMultipartDetection: js.Function0[scala.Boolean] = null,
+    getParamOrder: js.Function0[_] = null,
+    getParamsAsHash: js.Function0[scala.Boolean] = null,
+    getRecord: js.Function0[senchaUnderscoreTouchLib.ExtNs.dataNs.IModel] = null,
+    getStandardSubmit: js.Function0[scala.Boolean] = null,
+    getSubmitOnAction: js.Function0[_] = null,
+    getTimeout: js.Function0[scala.Double] = null,
+    getTrackResetOnLoad: js.Function0[scala.Boolean] = null,
+    getUrl: js.Function0[java.lang.String] = null,
+    getValues: js.Function2[/* enabled */ js.UndefOr[scala.Boolean], /* all */ js.UndefOr[scala.Boolean], _] = null,
+    hideMask: js.Function0[IPanel] = null,
+    load: js.Function1[
+      /* options */ js.UndefOr[js.Any], 
+      senchaUnderscoreTouchLib.ExtNs.dataNs.IConnection
+    ] = null,
+    loadModel: js.Function1[/* record */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IModel], IPanel] = null,
+    loadRecord: js.Function1[/* record */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IModel], IPanel] = null,
+    method: java.lang.String = null,
+    multipartDetection: js.UndefOr[scala.Boolean] = js.undefined,
+    paramOrder: js.Any = null,
+    paramsAsHash: js.UndefOr[scala.Boolean] = js.undefined,
+    record: senchaUnderscoreTouchLib.ExtNs.dataNs.IModel = null,
+    reset: js.Function0[IPanel] = null,
+    scrollable: js.Any = null,
+    setApi: js.Function1[/* api */ js.UndefOr[js.Any], scala.Unit] = null,
+    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setBaseParams: js.Function1[/* baseParams */ js.UndefOr[js.Any], scala.Unit] = null,
+    setEnableSubmissionForm: js.Function1[/* enableSubmissionForm */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setEnctype: js.Function1[/* enctype */ js.UndefOr[js.Any], scala.Unit] = null,
+    setMethod: js.Function1[/* method */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setMultipartDetection: js.Function1[/* multipartDetection */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setParamOrder: js.Function1[/* paramOrder */ js.UndefOr[js.Any], scala.Unit] = null,
+    setParamsAsHash: js.Function1[/* paramsAsHash */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setRecord: js.Function1[/* record */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.dataNs.IModel], IPanel] = null,
+    setStandardSubmit: js.Function1[/* standardSubmit */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setSubmitOnAction: js.Function1[/* submitOnAction */ js.UndefOr[js.Any], scala.Unit] = null,
+    setTimeout: js.Function1[/* timeout */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setTrackResetOnLoad: js.Function1[/* trackResetOnLoad */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setUrl: js.Function1[/* url */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setValues: js.Function1[/* values */ js.UndefOr[js.Any], IPanel] = null,
+    showMask: js.Function2[/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], IPanel] = null,
+    standardSubmit: js.UndefOr[scala.Boolean] = js.undefined,
+    submit: js.Function1[
+      /* options */ js.UndefOr[js.Any], 
+      senchaUnderscoreTouchLib.ExtNs.dataNs.IConnection
+    ] = null,
+    submitOnAction: js.Any = null,
+    timeout: scala.Int | scala.Double = null,
+    trackResetOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null,
+    waitMsgTarget: senchaUnderscoreTouchLib.ExtNs.domNs.IElement = null,
+    waitTpl: js.Any = null
+  ): IFormPanel = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IPanel)
+    if (api != null) __obj.updateDynamic("api")(api)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (baseParams != null) __obj.updateDynamic("baseParams")(baseParams)
+    if (doSetDisabled != null) __obj.updateDynamic("doSetDisabled")(doSetDisabled)
+    if (!js.isUndefined(enableSubmissionForm)) __obj.updateDynamic("enableSubmissionForm")(enableSubmissionForm)
+    if (enctype != null) __obj.updateDynamic("enctype")(enctype)
+    if (getApi != null) __obj.updateDynamic("getApi")(getApi)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
+    if (getBaseParams != null) __obj.updateDynamic("getBaseParams")(getBaseParams)
+    if (getEnableSubmissionForm != null) __obj.updateDynamic("getEnableSubmissionForm")(getEnableSubmissionForm)
+    if (getEnctype != null) __obj.updateDynamic("getEnctype")(getEnctype)
+    if (getMethod != null) __obj.updateDynamic("getMethod")(getMethod)
+    if (getMultipartDetection != null) __obj.updateDynamic("getMultipartDetection")(getMultipartDetection)
+    if (getParamOrder != null) __obj.updateDynamic("getParamOrder")(getParamOrder)
+    if (getParamsAsHash != null) __obj.updateDynamic("getParamsAsHash")(getParamsAsHash)
+    if (getRecord != null) __obj.updateDynamic("getRecord")(getRecord)
+    if (getStandardSubmit != null) __obj.updateDynamic("getStandardSubmit")(getStandardSubmit)
+    if (getSubmitOnAction != null) __obj.updateDynamic("getSubmitOnAction")(getSubmitOnAction)
+    if (getTimeout != null) __obj.updateDynamic("getTimeout")(getTimeout)
+    if (getTrackResetOnLoad != null) __obj.updateDynamic("getTrackResetOnLoad")(getTrackResetOnLoad)
+    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
+    if (getValues != null) __obj.updateDynamic("getValues")(getValues)
+    if (hideMask != null) __obj.updateDynamic("hideMask")(hideMask)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loadModel != null) __obj.updateDynamic("loadModel")(loadModel)
+    if (loadRecord != null) __obj.updateDynamic("loadRecord")(loadRecord)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined(multipartDetection)) __obj.updateDynamic("multipartDetection")(multipartDetection)
+    if (paramOrder != null) __obj.updateDynamic("paramOrder")(paramOrder)
+    if (!js.isUndefined(paramsAsHash)) __obj.updateDynamic("paramsAsHash")(paramsAsHash)
+    if (record != null) __obj.updateDynamic("record")(record)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable)
+    if (setApi != null) __obj.updateDynamic("setApi")(setApi)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
+    if (setBaseParams != null) __obj.updateDynamic("setBaseParams")(setBaseParams)
+    if (setEnableSubmissionForm != null) __obj.updateDynamic("setEnableSubmissionForm")(setEnableSubmissionForm)
+    if (setEnctype != null) __obj.updateDynamic("setEnctype")(setEnctype)
+    if (setMethod != null) __obj.updateDynamic("setMethod")(setMethod)
+    if (setMultipartDetection != null) __obj.updateDynamic("setMultipartDetection")(setMultipartDetection)
+    if (setParamOrder != null) __obj.updateDynamic("setParamOrder")(setParamOrder)
+    if (setParamsAsHash != null) __obj.updateDynamic("setParamsAsHash")(setParamsAsHash)
+    if (setRecord != null) __obj.updateDynamic("setRecord")(setRecord)
+    if (setStandardSubmit != null) __obj.updateDynamic("setStandardSubmit")(setStandardSubmit)
+    if (setSubmitOnAction != null) __obj.updateDynamic("setSubmitOnAction")(setSubmitOnAction)
+    if (setTimeout != null) __obj.updateDynamic("setTimeout")(setTimeout)
+    if (setTrackResetOnLoad != null) __obj.updateDynamic("setTrackResetOnLoad")(setTrackResetOnLoad)
+    if (setUrl != null) __obj.updateDynamic("setUrl")(setUrl)
+    if (setValues != null) __obj.updateDynamic("setValues")(setValues)
+    if (showMask != null) __obj.updateDynamic("showMask")(showMask)
+    if (!js.isUndefined(standardSubmit)) __obj.updateDynamic("standardSubmit")(standardSubmit)
+    if (submit != null) __obj.updateDynamic("submit")(submit)
+    if (submitOnAction != null) __obj.updateDynamic("submitOnAction")(submitOnAction)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(trackResetOnLoad)) __obj.updateDynamic("trackResetOnLoad")(trackResetOnLoad)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (waitMsgTarget != null) __obj.updateDynamic("waitMsgTarget")(waitMsgTarget)
+    if (waitTpl != null) __obj.updateDynamic("waitTpl")(waitTpl)
+    __obj.asInstanceOf[IFormPanel]
+  }
+}
+

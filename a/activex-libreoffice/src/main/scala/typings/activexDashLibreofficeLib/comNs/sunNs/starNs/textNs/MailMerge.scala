@@ -164,3 +164,137 @@ trait MailMerge
   var Subject: java.lang.String
 }
 
+object MailMerge {
+  @scala.inline
+  def apply(
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    AddressFromColumn: java.lang.String,
+    AttachmentFilter: java.lang.String,
+    AttachmentName: java.lang.String,
+    BlindCopiesTo: activexDashInteropLib.SafeArray[java.lang.String],
+    BookmarkSelection: scala.Boolean,
+    Column: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ColumnName: java.lang.String,
+    Command: java.lang.String,
+    CommandType: scala.Double,
+    ConnectionInfo: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ConnectionResource: java.lang.String,
+    CopiesTo: activexDashInteropLib.SafeArray[java.lang.String],
+    DataSourceName: java.lang.String,
+    DatabaseLocation: java.lang.String,
+    DocumentURL: java.lang.String,
+    EscapeProcessing: scala.Boolean,
+    FileNameFromColumn: scala.Boolean,
+    FileNamePrefix: java.lang.String,
+    Filter: java.lang.String,
+    GroupBy: java.lang.String,
+    HavingClause: java.lang.String,
+    InServerPassword: java.lang.String,
+    MailBody: java.lang.String,
+    Model: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
+    Order: java.lang.String,
+    OutServerPassword: java.lang.String,
+    OutputType: scala.Double,
+    OutputURL: java.lang.String,
+    PrintOptions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    ResultSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
+    SaveAsSingleFile: scala.Boolean,
+    SaveFilter: java.lang.String,
+    Selection: activexDashInteropLib.SafeArray[_],
+    SendAsAttachment: scala.Boolean,
+    SendAsHTML: scala.Boolean,
+    SinglePrintJobs: scala.Boolean,
+    Subject: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addMailMergeEventListener: js.Function1[XMailMergeListener, scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    cancel: js.Function0[scala.Unit],
+    execute: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      js.Any
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeMailMergeEventListener: js.Function1[XMailMergeListener, scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): MailMerge = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
+    __obj.updateDynamic("AddressFromColumn")(AddressFromColumn)
+    __obj.updateDynamic("AttachmentFilter")(AttachmentFilter)
+    __obj.updateDynamic("AttachmentName")(AttachmentName)
+    __obj.updateDynamic("BlindCopiesTo")(BlindCopiesTo)
+    __obj.updateDynamic("BookmarkSelection")(BookmarkSelection)
+    __obj.updateDynamic("Column")(Column)
+    __obj.updateDynamic("ColumnName")(ColumnName)
+    __obj.updateDynamic("Command")(Command)
+    __obj.updateDynamic("CommandType")(CommandType)
+    __obj.updateDynamic("ConnectionInfo")(ConnectionInfo)
+    __obj.updateDynamic("ConnectionResource")(ConnectionResource)
+    __obj.updateDynamic("CopiesTo")(CopiesTo)
+    __obj.updateDynamic("DataSourceName")(DataSourceName)
+    __obj.updateDynamic("DatabaseLocation")(DatabaseLocation)
+    __obj.updateDynamic("DocumentURL")(DocumentURL)
+    __obj.updateDynamic("EscapeProcessing")(EscapeProcessing)
+    __obj.updateDynamic("FileNameFromColumn")(FileNameFromColumn)
+    __obj.updateDynamic("FileNamePrefix")(FileNamePrefix)
+    __obj.updateDynamic("Filter")(Filter)
+    __obj.updateDynamic("GroupBy")(GroupBy)
+    __obj.updateDynamic("HavingClause")(HavingClause)
+    __obj.updateDynamic("InServerPassword")(InServerPassword)
+    __obj.updateDynamic("MailBody")(MailBody)
+    __obj.updateDynamic("Model")(Model)
+    __obj.updateDynamic("Order")(Order)
+    __obj.updateDynamic("OutServerPassword")(OutServerPassword)
+    __obj.updateDynamic("OutputType")(OutputType)
+    __obj.updateDynamic("OutputURL")(OutputURL)
+    __obj.updateDynamic("PrintOptions")(PrintOptions)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("ResultSet")(ResultSet)
+    __obj.updateDynamic("SaveAsSingleFile")(SaveAsSingleFile)
+    __obj.updateDynamic("SaveFilter")(SaveFilter)
+    __obj.updateDynamic("Selection")(Selection)
+    __obj.updateDynamic("SendAsAttachment")(SendAsAttachment)
+    __obj.updateDynamic("SendAsHTML")(SendAsHTML)
+    __obj.updateDynamic("SinglePrintJobs")(SinglePrintJobs)
+    __obj.updateDynamic("Subject")(Subject)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addMailMergeEventListener")(addMailMergeEventListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeMailMergeEventListener")(removeMailMergeEventListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[MailMerge]
+  }
+}
+

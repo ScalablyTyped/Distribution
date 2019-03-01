@@ -14,3 +14,13 @@ trait AutoScrollChangeEventArgs extends js.Object {
   var diagramId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AutoScrollChangeEventArgs {
+  @scala.inline
+  def apply(delay: java.lang.String = null, diagramId: java.lang.String = null): AutoScrollChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    __obj.asInstanceOf[AutoScrollChangeEventArgs]
+  }
+}
+

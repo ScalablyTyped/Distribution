@@ -99,3 +99,56 @@ trait ITransfer
   var `type`: stripeLib.stripeLibStrings.card | stripeLib.stripeLibStrings.bank_account | stripeLib.stripeLibStrings.stripe_account
 }
 
+object ITransfer {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    amount_reversed: scala.Double,
+    application_fee: java.lang.String,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    created: scala.Double,
+    currency: java.lang.String,
+    date: scala.Double,
+    description: java.lang.String,
+    destination: java.lang.String | stripeLib.stripeMod.StripeNs.bankAccountsNs.IBankAccount | stripeLib.stripeMod.StripeNs.cardsNs.ICardHash | stripeLib.stripeMod.StripeNs.accountsNs.IAccount,
+    destination_payment: java.lang.String,
+    failure_code: java.lang.String,
+    failure_message: java.lang.String,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.transfer,
+    reversals: ITransferReversals,
+    reversed: scala.Boolean,
+    source_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    source_type: SourceTypes,
+    statement_descriptor: java.lang.String,
+    status: Statuses,
+    `type`: stripeLib.stripeLibStrings.card | stripeLib.stripeLibStrings.bank_account | stripeLib.stripeLibStrings.stripe_account
+  ): ITransfer = {
+    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("amount_reversed")(amount_reversed)
+    __obj.updateDynamic("application_fee")(application_fee)
+    __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    __obj.updateDynamic("destination_payment")(destination_payment)
+    __obj.updateDynamic("failure_code")(failure_code)
+    __obj.updateDynamic("failure_message")(failure_message)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("reversals")(reversals)
+    __obj.updateDynamic("reversed")(reversed)
+    __obj.updateDynamic("source_transaction")(source_transaction.asInstanceOf[js.Any])
+    __obj.updateDynamic("source_type")(source_type)
+    __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[ITransfer]
+  }
+}
+

@@ -17,3 +17,26 @@ trait Anon_AggRow extends js.Object {
   def radiusFunction(row: js.Any): scala.Double
 }
 
+object Anon_AggRow {
+  @scala.inline
+  def apply(
+    data: js.Array[js.Object],
+    mapUnitsPerPixel: scala.Double,
+    pointKey: java.lang.String,
+    radiusFunction: js.Function1[js.Any, scala.Double],
+    aggregateFunction: js.Function3[/* srcRow */ js.Any, /* cmpRow */ js.Any, /* aggRow */ js.Any, scala.Unit] = null,
+    marginPixels: scala.Int | scala.Double = null,
+    valueFunction: js.Function1[/* row */ js.Any, scala.Double] = null
+  ): Anon_AggRow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("mapUnitsPerPixel")(mapUnitsPerPixel)
+    __obj.updateDynamic("pointKey")(pointKey)
+    __obj.updateDynamic("radiusFunction")(radiusFunction)
+    if (aggregateFunction != null) __obj.updateDynamic("aggregateFunction")(aggregateFunction)
+    if (marginPixels != null) __obj.updateDynamic("marginPixels")(marginPixels.asInstanceOf[js.Any])
+    if (valueFunction != null) __obj.updateDynamic("valueFunction")(valueFunction)
+    __obj.asInstanceOf[Anon_AggRow]
+  }
+}
+

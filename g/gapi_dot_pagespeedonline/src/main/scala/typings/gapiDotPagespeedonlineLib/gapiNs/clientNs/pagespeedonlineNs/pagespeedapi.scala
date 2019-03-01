@@ -12,3 +12,17 @@ trait pagespeedapi extends js.Object {
   def runpagespeed(`object`: gapiDotPagespeedonlineLib.Anon_Fields): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotPagespeedonlineLib.GoogleApiPageSpeedOnlineResource]
 }
 
+object pagespeedapi {
+  @scala.inline
+  def apply(
+    runpagespeed: js.Function1[
+      gapiDotPagespeedonlineLib.Anon_Fields, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotPagespeedonlineLib.GoogleApiPageSpeedOnlineResource]
+    ]
+  ): pagespeedapi = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("runpagespeed")(runpagespeed)
+    __obj.asInstanceOf[pagespeedapi]
+  }
+}
+

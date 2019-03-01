@@ -74,3 +74,48 @@ trait FileContainerItem extends js.Object {
   var ticket: java.lang.String
 }
 
+object FileContainerItem {
+  @scala.inline
+  def apply(
+    containerId: scala.Double,
+    contentId: js.Array[scala.Double],
+    contentLocation: java.lang.String,
+    createdBy: java.lang.String,
+    dateCreated: stdLib.Date,
+    dateLastModified: stdLib.Date,
+    fileEncoding: scala.Double,
+    fileHash: js.Array[scala.Double],
+    fileId: scala.Double,
+    fileLength: scala.Double,
+    fileType: scala.Double,
+    itemLocation: java.lang.String,
+    itemType: ContainerItemType,
+    lastModifiedBy: java.lang.String,
+    path: java.lang.String,
+    scopeIdentifier: java.lang.String,
+    status: ContainerItemStatus,
+    ticket: java.lang.String
+  ): FileContainerItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("containerId")(containerId)
+    __obj.updateDynamic("contentId")(contentId)
+    __obj.updateDynamic("contentLocation")(contentLocation)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("dateCreated")(dateCreated)
+    __obj.updateDynamic("dateLastModified")(dateLastModified)
+    __obj.updateDynamic("fileEncoding")(fileEncoding)
+    __obj.updateDynamic("fileHash")(fileHash)
+    __obj.updateDynamic("fileId")(fileId)
+    __obj.updateDynamic("fileLength")(fileLength)
+    __obj.updateDynamic("fileType")(fileType)
+    __obj.updateDynamic("itemLocation")(itemLocation)
+    __obj.updateDynamic("itemType")(itemType)
+    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("scopeIdentifier")(scopeIdentifier)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("ticket")(ticket)
+    __obj.asInstanceOf[FileContainerItem]
+  }
+}
+

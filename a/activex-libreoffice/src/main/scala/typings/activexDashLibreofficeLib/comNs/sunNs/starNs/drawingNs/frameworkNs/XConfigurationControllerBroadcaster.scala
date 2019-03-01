@@ -31,3 +31,18 @@ trait XConfigurationControllerBroadcaster extends js.Object {
   def removeConfigurationChangeListener(xListener: XConfigurationChangeListener): scala.Unit
 }
 
+object XConfigurationControllerBroadcaster {
+  @scala.inline
+  def apply(
+    addConfigurationChangeListener: js.Function3[XConfigurationChangeListener, java.lang.String, js.Any, scala.Unit],
+    notifyEvent: js.Function1[ConfigurationChangeEvent, scala.Unit],
+    removeConfigurationChangeListener: js.Function1[XConfigurationChangeListener, scala.Unit]
+  ): XConfigurationControllerBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addConfigurationChangeListener")(addConfigurationChangeListener)
+    __obj.updateDynamic("notifyEvent")(notifyEvent)
+    __obj.updateDynamic("removeConfigurationChangeListener")(removeConfigurationChangeListener)
+    __obj.asInstanceOf[XConfigurationControllerBroadcaster]
+  }
+}
+

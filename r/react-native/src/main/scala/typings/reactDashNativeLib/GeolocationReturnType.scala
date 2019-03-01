@@ -10,3 +10,13 @@ trait GeolocationReturnType extends js.Object {
   var timestamp: scala.Double
 }
 
+object GeolocationReturnType {
+  @scala.inline
+  def apply(coords: Anon_Accuracy, timestamp: scala.Double): GeolocationReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coords")(coords)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[GeolocationReturnType]
+  }
+}
+

@@ -23,3 +23,14 @@ trait ITableViewBroomPointSaveInfo extends js.Object {
   var qTable: java.lang.String
 }
 
+object ITableViewBroomPointSaveInfo {
+  @scala.inline
+  def apply(qFields: js.Array[java.lang.String], qPos: IPoint, qTable: java.lang.String): ITableViewBroomPointSaveInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFields")(qFields)
+    __obj.updateDynamic("qPos")(qPos)
+    __obj.updateDynamic("qTable")(qTable)
+    __obj.asInstanceOf[ITableViewBroomPointSaveInfo]
+  }
+}
+

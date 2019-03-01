@@ -10,3 +10,16 @@ trait DefaultWebGLRendererPlugins extends js.Object {
   var prepare: pixiDotJsLib.PIXINs.prepareNs.WebGLPrepare
 }
 
+object DefaultWebGLRendererPlugins {
+  @scala.inline
+  def apply(
+    extract: pixiDotJsLib.PIXINs.extractNs.WebGLExtract,
+    prepare: pixiDotJsLib.PIXINs.prepareNs.WebGLPrepare
+  ): DefaultWebGLRendererPlugins = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extract")(extract)
+    __obj.updateDynamic("prepare")(prepare)
+    __obj.asInstanceOf[DefaultWebGLRendererPlugins]
+  }
+}
+

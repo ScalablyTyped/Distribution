@@ -14,3 +14,12 @@ trait CanMakePaymentResult extends js.Object {
   val applePay: scala.Boolean
 }
 
+object CanMakePaymentResult {
+  @scala.inline
+  def apply(applePay: scala.Boolean): CanMakePaymentResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applePay")(applePay)
+    __obj.asInstanceOf[CanMakePaymentResult]
+  }
+}
+

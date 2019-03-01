@@ -7,3 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ValueOf extends js.Object
 
+object Anon_ValueOf {
+  @scala.inline
+  def apply(valueOf: js.Function0[scala.Double]): Anon_ValueOf = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("valueOf")(valueOf)
+    __obj.asInstanceOf[Anon_ValueOf]
+  }
+}
+

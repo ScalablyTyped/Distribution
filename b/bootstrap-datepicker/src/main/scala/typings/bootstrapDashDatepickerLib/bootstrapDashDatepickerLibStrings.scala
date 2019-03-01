@@ -7,88 +7,88 @@ import scala.scalajs.js.annotation._
 
 object bootstrapDashDatepickerLibStrings {
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto extends DatepickerOrientations
   
   @js.native
-  sealed trait `auto left` extends js.Object
+  sealed trait `auto left` extends DatepickerOrientations
   
   @js.native
-  sealed trait `auto right` extends js.Object
+  sealed trait `auto right` extends DatepickerOrientations
   
   @js.native
-  sealed trait `bottom auto` extends js.Object
+  sealed trait `bottom auto` extends DatepickerOrientations
   
   @js.native
-  sealed trait `bottom left` extends js.Object
+  sealed trait `bottom left` extends DatepickerOrientations
   
   @js.native
-  sealed trait `bottom right` extends js.Object
+  sealed trait `bottom right` extends DatepickerOrientations
   
   @js.native
-  sealed trait centuries extends js.Object
+  sealed trait centuries extends DatepickerViewModes
   
   @js.native
-  sealed trait changeCentury extends js.Object
+  sealed trait changeCentury extends DatepickerEvents
   
   @js.native
-  sealed trait changeDate extends js.Object
+  sealed trait changeDate extends DatepickerEvents
   
   @js.native
-  sealed trait changeDecade extends js.Object
+  sealed trait changeDecade extends DatepickerEvents
   
   @js.native
-  sealed trait changeMonth extends js.Object
+  sealed trait changeMonth extends DatepickerEvents
   
   @js.native
-  sealed trait changeYear extends js.Object
+  sealed trait changeYear extends DatepickerEvents
   
   @js.native
-  sealed trait clearDate extends js.Object
+  sealed trait clearDate extends DatepickerEvents
   
   @js.native
-  sealed trait days extends js.Object
+  sealed trait days extends DatepickerViewModes
   
   @js.native
-  sealed trait decades extends js.Object
+  sealed trait decades extends DatepickerViewModes
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait hide extends DatepickerEvents
   
   @js.native
-  sealed trait `left bottom` extends js.Object
+  sealed trait `left bottom` extends DatepickerOrientations
   
   @js.native
-  sealed trait `left top` extends js.Object
+  sealed trait `left top` extends DatepickerOrientations
   
   @js.native
   sealed trait linked extends js.Object
   
   @js.native
-  sealed trait millenium extends js.Object
+  sealed trait millenium extends DatepickerViewModes
   
   @js.native
-  sealed trait months extends js.Object
+  sealed trait months extends DatepickerViewModes
   
   @js.native
-  sealed trait `right bottom` extends js.Object
+  sealed trait `right bottom` extends DatepickerOrientations
   
   @js.native
-  sealed trait `right top` extends js.Object
+  sealed trait `right top` extends DatepickerOrientations
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait show extends DatepickerEvents
   
   @js.native
-  sealed trait `top auto` extends js.Object
+  sealed trait `top auto` extends DatepickerOrientations
   
   @js.native
-  sealed trait `top left` extends js.Object
+  sealed trait `top left` extends DatepickerOrientations
   
   @js.native
-  sealed trait `top right` extends js.Object
+  sealed trait `top right` extends DatepickerOrientations
   
   @js.native
-  sealed trait years extends js.Object
+  sealed trait years extends DatepickerViewModes
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]

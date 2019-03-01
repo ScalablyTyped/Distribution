@@ -38,3 +38,64 @@ trait MattersResource extends js.Object {
   def update(request: gapiDotClientDotVaultLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Matter]
 }
 
+object MattersResource {
+  @scala.inline
+  def apply(
+    addPermissions: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[MatterPermission]
+    ],
+    close: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CloseMatterResponse]
+    ],
+    create: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ],
+    get: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ],
+    holds: HoldsResource,
+    list: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListMattersResponse]
+    ],
+    removePermissions: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    reopen: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ReopenMatterResponse]
+    ],
+    undelete: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ],
+    update: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Matter]
+    ]
+  ): MattersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addPermissions")(addPermissions)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("holds")(holds)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("removePermissions")(removePermissions)
+    __obj.updateDynamic("reopen")(reopen)
+    __obj.updateDynamic("undelete")(undelete)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[MattersResource]
+  }
+}
+

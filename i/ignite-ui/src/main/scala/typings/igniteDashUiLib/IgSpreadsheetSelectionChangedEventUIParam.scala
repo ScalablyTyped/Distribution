@@ -16,3 +16,13 @@ trait IgSpreadsheetSelectionChangedEventUIParam extends js.Object {
   var pane: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgSpreadsheetSelectionChangedEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null, pane: js.Any = null): IgSpreadsheetSelectionChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (pane != null) __obj.updateDynamic("pane")(pane)
+    __obj.asInstanceOf[IgSpreadsheetSelectionChangedEventUIParam]
+  }
+}
+

@@ -34,3 +34,64 @@ trait Anon_Bool extends js.Object {
   var void: refLib.refMod.Type
 }
 
+object Anon_Bool {
+  @scala.inline
+  def apply(
+    CString: refLib.refMod.Type,
+    Object: refLib.refMod.Type,
+    bool: refLib.refMod.Type,
+    byte: refLib.refMod.Type,
+    char: refLib.refMod.Type,
+    double: refLib.refMod.Type,
+    float: refLib.refMod.Type,
+    int: refLib.refMod.Type,
+    int16: refLib.refMod.Type,
+    int32: refLib.refMod.Type,
+    int64: refLib.refMod.Type,
+    int8: refLib.refMod.Type,
+    long: refLib.refMod.Type,
+    longlong: refLib.refMod.Type,
+    short: refLib.refMod.Type,
+    size_t: refLib.refMod.Type,
+    uchar: refLib.refMod.Type,
+    uint: refLib.refMod.Type,
+    uint16: refLib.refMod.Type,
+    uint32: refLib.refMod.Type,
+    uint64: refLib.refMod.Type,
+    uint8: refLib.refMod.Type,
+    ulong: refLib.refMod.Type,
+    ulonglong: refLib.refMod.Type,
+    ushort: refLib.refMod.Type,
+    void: refLib.refMod.Type
+  ): Anon_Bool = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CString")(CString)
+    __obj.updateDynamic("Object")(Object)
+    __obj.updateDynamic("bool")(bool)
+    __obj.updateDynamic("byte")(byte)
+    __obj.updateDynamic("char")(char)
+    __obj.updateDynamic("double")(double)
+    __obj.updateDynamic("float")(float)
+    __obj.updateDynamic("int")(int)
+    __obj.updateDynamic("int16")(int16)
+    __obj.updateDynamic("int32")(int32)
+    __obj.updateDynamic("int64")(int64)
+    __obj.updateDynamic("int8")(int8)
+    __obj.updateDynamic("long")(long)
+    __obj.updateDynamic("longlong")(longlong)
+    __obj.updateDynamic("short")(short)
+    __obj.updateDynamic("size_t")(size_t)
+    __obj.updateDynamic("uchar")(uchar)
+    __obj.updateDynamic("uint")(uint)
+    __obj.updateDynamic("uint16")(uint16)
+    __obj.updateDynamic("uint32")(uint32)
+    __obj.updateDynamic("uint64")(uint64)
+    __obj.updateDynamic("uint8")(uint8)
+    __obj.updateDynamic("ulong")(ulong)
+    __obj.updateDynamic("ulonglong")(ulonglong)
+    __obj.updateDynamic("ushort")(ushort)
+    __obj.updateDynamic("void")(void)
+    __obj.asInstanceOf[Anon_Bool]
+  }
+}
+

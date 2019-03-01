@@ -14,3 +14,18 @@ trait RetryOptions extends js.Object {
   var MaxWaitTimeInSeconds: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RetryOptions {
+  @scala.inline
+  def apply(
+    FixedRetryIntervalInMilliseconds: scala.Int | scala.Double = null,
+    MaxRetryAttemptCount: scala.Int | scala.Double = null,
+    MaxWaitTimeInSeconds: scala.Int | scala.Double = null
+  ): RetryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (FixedRetryIntervalInMilliseconds != null) __obj.updateDynamic("FixedRetryIntervalInMilliseconds")(FixedRetryIntervalInMilliseconds.asInstanceOf[js.Any])
+    if (MaxRetryAttemptCount != null) __obj.updateDynamic("MaxRetryAttemptCount")(MaxRetryAttemptCount.asInstanceOf[js.Any])
+    if (MaxWaitTimeInSeconds != null) __obj.updateDynamic("MaxWaitTimeInSeconds")(MaxWaitTimeInSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RetryOptions]
+  }
+}
+

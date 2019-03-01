@@ -26,3 +26,51 @@ trait ConfigurableUIElement
   var Persistent: scala.Boolean
 }
 
+object ConfigurableUIElement {
+  @scala.inline
+  def apply(
+    ConfigurationSource: XUIConfigurationManager,
+    Frame: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
+    Persistent: scala.Boolean,
+    RealInterface: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ResourceURL: java.lang.String,
+    Type: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getRealInterface: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getSettings: js.Function1[
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+    ],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setSettings: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit],
+    update: js.Function0[scala.Unit],
+    updateSettings: js.Function0[scala.Unit]
+  ): ConfigurableUIElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ConfigurationSource")(ConfigurationSource)
+    __obj.updateDynamic("Frame")(Frame)
+    __obj.updateDynamic("Persistent")(Persistent)
+    __obj.updateDynamic("RealInterface")(RealInterface)
+    __obj.updateDynamic("ResourceURL")(ResourceURL)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getRealInterface")(getRealInterface)
+    __obj.updateDynamic("getSettings")(getSettings)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setSettings")(setSettings)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("updateSettings")(updateSettings)
+    __obj.asInstanceOf[ConfigurableUIElement]
+  }
+}
+

@@ -37,3 +37,42 @@ trait NotificationOptions extends js.Object {
   var style: java.lang.String
 }
 
+object NotificationOptions {
+  @scala.inline
+  def apply(
+    arrowShow: scala.Boolean,
+    arrowSize: scala.Double,
+    autoHide: scala.Boolean,
+    autoHideDelay: scala.Double,
+    className: java.lang.String,
+    clickToHide: scala.Boolean,
+    elementPosition: java.lang.String,
+    gap: scala.Double,
+    globalPosition: java.lang.String,
+    hideAnimation: java.lang.String,
+    hideDuration: scala.Double,
+    position: java.lang.String,
+    showAnimation: java.lang.String,
+    showDuration: scala.Double,
+    style: java.lang.String
+  ): NotificationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arrowShow")(arrowShow)
+    __obj.updateDynamic("arrowSize")(arrowSize)
+    __obj.updateDynamic("autoHide")(autoHide)
+    __obj.updateDynamic("autoHideDelay")(autoHideDelay)
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("clickToHide")(clickToHide)
+    __obj.updateDynamic("elementPosition")(elementPosition)
+    __obj.updateDynamic("gap")(gap)
+    __obj.updateDynamic("globalPosition")(globalPosition)
+    __obj.updateDynamic("hideAnimation")(hideAnimation)
+    __obj.updateDynamic("hideDuration")(hideDuration)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("showAnimation")(showAnimation)
+    __obj.updateDynamic("showDuration")(showDuration)
+    __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[NotificationOptions]
+  }
+}
+

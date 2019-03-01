@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object reactDashCreditDashCardsLibStrings {
   @js.native
-  sealed trait cvc extends js.Object
+  sealed trait cvc
+    extends reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.Focused
   
   @js.native
-  sealed trait expiry extends js.Object
+  sealed trait expiry
+    extends reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.Focused
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name
+    extends reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.Focused
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends reactDashCreditDashCardsLib.reactDashCreditDashCardsMod.Focused
   
   @scala.inline
   def cvc: cvc = "cvc".asInstanceOf[cvc]

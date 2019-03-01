@@ -20,3 +20,42 @@ trait TagsResource extends js.Object {
   def update(request: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint): gapiDotClientLib.gapiNs.clientNs.Request[Tag]
 }
 
+object TagsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Tag]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Tag]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTagsResponse]
+    ],
+    revert: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RevertTagResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Tag]
+    ]
+  ): TagsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("revert")(revert)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[TagsResource]
+  }
+}
+

@@ -58,3 +58,32 @@ trait IDocListEntry extends js.Object {
   var qTitle: java.lang.String
 }
 
+object IDocListEntry {
+  @scala.inline
+  def apply(
+    qConnectedUsers: scala.Double,
+    qDocId: java.lang.String,
+    qDocName: java.lang.String,
+    qFileSize: scala.Double,
+    qFileTime: scala.Double,
+    qLastReloadTime: java.lang.String,
+    qMeta: INxMeta,
+    qReadOnly: scala.Boolean,
+    qThumbnail: IStaticContentUrl,
+    qTitle: java.lang.String
+  ): IDocListEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qConnectedUsers")(qConnectedUsers)
+    __obj.updateDynamic("qDocId")(qDocId)
+    __obj.updateDynamic("qDocName")(qDocName)
+    __obj.updateDynamic("qFileSize")(qFileSize)
+    __obj.updateDynamic("qFileTime")(qFileTime)
+    __obj.updateDynamic("qLastReloadTime")(qLastReloadTime)
+    __obj.updateDynamic("qMeta")(qMeta)
+    __obj.updateDynamic("qReadOnly")(qReadOnly)
+    __obj.updateDynamic("qThumbnail")(qThumbnail)
+    __obj.updateDynamic("qTitle")(qTitle)
+    __obj.asInstanceOf[IDocListEntry]
+  }
+}
+

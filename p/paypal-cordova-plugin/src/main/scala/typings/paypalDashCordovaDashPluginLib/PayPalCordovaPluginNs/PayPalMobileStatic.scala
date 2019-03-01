@@ -109,3 +109,51 @@ trait PayPalMobileStatic extends js.Object {
   def version(completionCallback: js.Function1[/* result */ java.lang.String, scala.Unit]): scala.Unit
 }
 
+object PayPalMobileStatic {
+  @scala.inline
+  def apply(
+    applicationCorrelationIDForEnvironment: js.Function2[
+      java.lang.String, 
+      js.Function1[/* applicationCorrelationId */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    clientMetadataID: js.Function1[js.Function1[/* clientMetadataId */ java.lang.String, scala.Unit], scala.Unit],
+    init: js.Function2[PayPalClientIds, js.Function0[scala.Unit], scala.Unit],
+    prepareToRender: js.Function3[
+      java.lang.String, 
+      paypalDashCordovaDashPluginLib.PayPalConfiguration, 
+      js.Function0[scala.Unit], 
+      scala.Unit
+    ],
+    renderFuturePaymentUI: js.Function2[
+      js.Function1[/* result */ FuturePaymentResult, scala.Unit], 
+      js.Function1[/* cancelReason */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    renderProfileSharingUI: js.Function3[
+      js.Array[java.lang.String], 
+      js.Function1[/* result */ js.Any, scala.Unit], 
+      js.Function1[/* cancelReason */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    renderSinglePaymentUI: js.Function3[
+      paypalDashCordovaDashPluginLib.PayPalPayment, 
+      js.Function1[/* result */ SinglePaymentResult, scala.Unit], 
+      js.Function1[/* cancelReason */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ],
+    version: js.Function1[js.Function1[/* result */ java.lang.String, scala.Unit], scala.Unit]
+  ): PayPalMobileStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applicationCorrelationIDForEnvironment")(applicationCorrelationIDForEnvironment)
+    __obj.updateDynamic("clientMetadataID")(clientMetadataID)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("prepareToRender")(prepareToRender)
+    __obj.updateDynamic("renderFuturePaymentUI")(renderFuturePaymentUI)
+    __obj.updateDynamic("renderProfileSharingUI")(renderProfileSharingUI)
+    __obj.updateDynamic("renderSinglePaymentUI")(renderSinglePaymentUI)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PayPalMobileStatic]
+  }
+}
+

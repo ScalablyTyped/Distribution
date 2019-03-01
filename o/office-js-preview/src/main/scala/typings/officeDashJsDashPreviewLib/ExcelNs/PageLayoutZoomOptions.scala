@@ -39,3 +39,18 @@ trait PageLayoutZoomOptions extends js.Object {
   var verticalFitToPages: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PageLayoutZoomOptions {
+  @scala.inline
+  def apply(
+    horizontalFitToPages: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null,
+    verticalFitToPages: scala.Int | scala.Double = null
+  ): PageLayoutZoomOptions = {
+    val __obj = js.Dynamic.literal()
+    if (horizontalFitToPages != null) __obj.updateDynamic("horizontalFitToPages")(horizontalFitToPages.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (verticalFitToPages != null) __obj.updateDynamic("verticalFitToPages")(verticalFitToPages.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PageLayoutZoomOptions]
+  }
+}
+

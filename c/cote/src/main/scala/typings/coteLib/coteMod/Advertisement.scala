@@ -21,3 +21,14 @@ trait Advertisement extends js.Object {
   var namespace: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Advertisement {
+  @scala.inline
+  def apply(name: java.lang.String, key: java.lang.String = null, namespace: java.lang.String = null): Advertisement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    __obj.asInstanceOf[Advertisement]
+  }
+}
+

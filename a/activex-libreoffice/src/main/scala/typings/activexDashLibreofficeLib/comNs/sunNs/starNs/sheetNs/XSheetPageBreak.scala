@@ -47,3 +47,28 @@ trait XSheetPageBreak
   def removeAllManualPageBreaks(): scala.Unit
 }
 
+object XSheetPageBreak {
+  @scala.inline
+  def apply(
+    ColumnPageBreaks: activexDashInteropLib.SafeArray[TablePageBreakData],
+    RowPageBreaks: activexDashInteropLib.SafeArray[TablePageBreakData],
+    acquire: js.Function0[scala.Unit],
+    getColumnPageBreaks: js.Function0[activexDashInteropLib.SafeArray[TablePageBreakData]],
+    getRowPageBreaks: js.Function0[activexDashInteropLib.SafeArray[TablePageBreakData]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeAllManualPageBreaks: js.Function0[scala.Unit]
+  ): XSheetPageBreak = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColumnPageBreaks")(ColumnPageBreaks)
+    __obj.updateDynamic("RowPageBreaks")(RowPageBreaks)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getColumnPageBreaks")(getColumnPageBreaks)
+    __obj.updateDynamic("getRowPageBreaks")(getRowPageBreaks)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeAllManualPageBreaks")(removeAllManualPageBreaks)
+    __obj.asInstanceOf[XSheetPageBreak]
+  }
+}
+

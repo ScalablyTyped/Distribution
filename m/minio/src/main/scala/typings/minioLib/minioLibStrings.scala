@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object minioLibStrings {
   @js.native
-  sealed trait `ap-northeast-1` extends js.Object
+  sealed trait `ap-northeast-1`
+    extends minioLib.minioMod._Region
   
   @js.native
-  sealed trait `ap-southeast-1` extends js.Object
+  sealed trait `ap-southeast-1`
+    extends minioLib.minioMod._Region
   
   @js.native
-  sealed trait `ap-southeast-2` extends js.Object
+  sealed trait `ap-southeast-2`
+    extends minioLib.minioMod._Region
   
   @js.native
-  sealed trait `cn-north-1` extends js.Object
+  sealed trait `cn-north-1`
+    extends minioLib.minioMod._Region
   
   @js.native
   sealed trait data extends js.Object
@@ -25,10 +29,12 @@ object minioLibStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait `eu-central-1` extends js.Object
+  sealed trait `eu-central-1`
+    extends minioLib.minioMod._Region
   
   @js.native
-  sealed trait `eu-west-1` extends js.Object
+  sealed trait `eu-west-1`
+    extends minioLib.minioMod._Region
   
   @js.native
   sealed trait none extends js.Object
@@ -40,16 +46,20 @@ object minioLibStrings {
   sealed trait readwrite extends js.Object
   
   @js.native
-  sealed trait `sa-east-1` extends js.Object
+  sealed trait `sa-east-1`
+    extends minioLib.minioMod._Region
   
   @js.native
-  sealed trait `us-east-1` extends js.Object
+  sealed trait `us-east-1`
+    extends minioLib.minioMod._Region
   
   @js.native
-  sealed trait `us-west-1` extends js.Object
+  sealed trait `us-west-1`
+    extends minioLib.minioMod._Region
   
   @js.native
-  sealed trait `us-west-2` extends js.Object
+  sealed trait `us-west-2`
+    extends minioLib.minioMod._Region
   
   @js.native
   sealed trait writeonly extends js.Object

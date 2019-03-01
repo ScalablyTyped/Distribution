@@ -35,11 +35,6 @@ package object ProcessFlowNs {
     */
   type ProcessSetStatusDelegate = js.Function1[/* status */ ProcessStatus, scala.Unit]
   /**
-    * Status for {@link ProcessFlow.Process.getStatus Process.getStatus()}.
-    * @see {@link XrmEnum.ProcessStatus}
-    */
-  type ProcessStatus = xrmLib.xrmLibStrings.active | xrmLib.xrmLibStrings.aborted | xrmLib.xrmLibStrings.finished
-  /**
     * Called when method to set active process is complete
     * @param status The result of the set active process operation.
     * @remarks **Values returned are**:
@@ -47,14 +42,4 @@ package object ProcessFlowNs {
     * * invalid        (The processInstanceId isn’t valid or the process isn’t enabled.)
     */
   type SetProcessInstanceDelegate = js.Function1[/* status */ java.lang.String, scala.Unit]
-  /**
-    * Direction types for a process stage change event
-    * @see {@link XrmEnum.StageChangeDirection}
-    */
-  type StageChangeDirection = xrmLib.xrmLibStrings.Next | xrmLib.xrmLibStrings.Previous
-  /**
-    * Status for {@link ProcessFlow.Stage.getStatus Stage.getStatus()}.
-    * @see {@link XrmEnum.StageStatus}
-    */
-  type StageStatus = xrmLib.xrmLibStrings.active | xrmLib.xrmLibStrings.inactive
 }

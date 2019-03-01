@@ -37,3 +37,20 @@ trait ErrorContext extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ErrorContext {
+  @scala.inline
+  def apply(
+    httpRequest: HttpRequestContext = null,
+    reportLocation: SourceLocation = null,
+    sourceReferences: js.Array[SourceReference] = null,
+    user: java.lang.String = null
+  ): ErrorContext = {
+    val __obj = js.Dynamic.literal()
+    if (httpRequest != null) __obj.updateDynamic("httpRequest")(httpRequest)
+    if (reportLocation != null) __obj.updateDynamic("reportLocation")(reportLocation)
+    if (sourceReferences != null) __obj.updateDynamic("sourceReferences")(sourceReferences)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[ErrorContext]
+  }
+}
+

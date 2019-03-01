@@ -13,3 +13,12 @@ trait LoggingConfig extends js.Object {
   var driverLogLevels: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object LoggingConfig {
+  @scala.inline
+  def apply(driverLogLevels: stdLib.Record[java.lang.String, java.lang.String] = null): LoggingConfig = {
+    val __obj = js.Dynamic.literal()
+    if (driverLogLevels != null) __obj.updateDynamic("driverLogLevels")(driverLogLevels)
+    __obj.asInstanceOf[LoggingConfig]
+  }
+}
+

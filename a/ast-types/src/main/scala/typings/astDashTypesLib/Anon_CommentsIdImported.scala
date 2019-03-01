@@ -14,3 +14,24 @@ trait Anon_CommentsIdImported extends js.Object {
   var name: js.UndefOr[astDashTypesLib.genKindsMod.IdentifierKind | scala.Null] = js.undefined
 }
 
+object Anon_CommentsIdImported {
+  @scala.inline
+  def apply(
+    imported: astDashTypesLib.genKindsMod.IdentifierKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    id: astDashTypesLib.genKindsMod.IdentifierKind = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    local: astDashTypesLib.genKindsMod.IdentifierKind = null,
+    name: astDashTypesLib.genKindsMod.IdentifierKind = null
+  ): Anon_CommentsIdImported = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("imported")(imported)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (local != null) __obj.updateDynamic("local")(local)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_CommentsIdImported]
+  }
+}
+

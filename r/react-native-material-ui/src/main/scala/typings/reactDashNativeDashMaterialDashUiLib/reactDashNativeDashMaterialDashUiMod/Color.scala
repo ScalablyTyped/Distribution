@@ -266,3 +266,312 @@ trait Color extends js.Object {
   var yellowA700: java.lang.String
 }
 
+object Color {
+  @scala.inline
+  def apply(
+    amber100: java.lang.String,
+    amber200: java.lang.String,
+    amber300: java.lang.String,
+    amber400: java.lang.String,
+    amber50: java.lang.String,
+    amber500: java.lang.String,
+    amber600: java.lang.String,
+    amber700: java.lang.String,
+    amber800: java.lang.String,
+    amber900: java.lang.String,
+    amberA100: java.lang.String,
+    amberA200: java.lang.String,
+    amberA400: java.lang.String,
+    amberA700: java.lang.String,
+    black: java.lang.String,
+    blue100: java.lang.String,
+    blue200: java.lang.String,
+    blue300: java.lang.String,
+    blue400: java.lang.String,
+    blue50: java.lang.String,
+    blue500: java.lang.String,
+    blue600: java.lang.String,
+    blue700: java.lang.String,
+    blue800: java.lang.String,
+    blue900: java.lang.String,
+    blueA100: java.lang.String,
+    blueA200: java.lang.String,
+    blueA400: java.lang.String,
+    blueA700: java.lang.String,
+    blueGrey100: java.lang.String,
+    blueGrey200: java.lang.String,
+    blueGrey300: java.lang.String,
+    blueGrey400: java.lang.String,
+    blueGrey50: java.lang.String,
+    blueGrey500: java.lang.String,
+    blueGrey600: java.lang.String,
+    blueGrey700: java.lang.String,
+    blueGrey800: java.lang.String,
+    blueGrey900: java.lang.String,
+    brown100: java.lang.String,
+    brown200: java.lang.String,
+    brown300: java.lang.String,
+    brown400: java.lang.String,
+    brown50: java.lang.String,
+    brown500: java.lang.String,
+    brown600: java.lang.String,
+    brown700: java.lang.String,
+    brown800: java.lang.String,
+    brown900: java.lang.String,
+    cyan100: java.lang.String,
+    cyan200: java.lang.String,
+    cyan300: java.lang.String,
+    cyan400: java.lang.String,
+    cyan50: java.lang.String,
+    cyan500: java.lang.String,
+    cyan600: java.lang.String,
+    cyan700: java.lang.String,
+    cyan800: java.lang.String,
+    cyan900: java.lang.String,
+    cyanA100: java.lang.String,
+    cyanA200: java.lang.String,
+    cyanA400: java.lang.String,
+    cyanA700: java.lang.String,
+    deepOrange100: java.lang.String,
+    deepOrange200: java.lang.String,
+    deepOrange300: java.lang.String,
+    deepOrange400: java.lang.String,
+    deepOrange50: java.lang.String,
+    deepOrange500: java.lang.String,
+    deepOrange600: java.lang.String,
+    deepOrange700: java.lang.String,
+    deepOrange800: java.lang.String,
+    deepOrange900: java.lang.String,
+    deepOrangeA100: java.lang.String,
+    deepOrangeA200: java.lang.String,
+    deepOrangeA400: java.lang.String,
+    deepOrangeA700: java.lang.String,
+    deepPurple100: java.lang.String,
+    deepPurple200: java.lang.String,
+    deepPurple300: java.lang.String,
+    deepPurple400: java.lang.String,
+    deepPurple50: java.lang.String,
+    deepPurple500: java.lang.String,
+    deepPurple600: java.lang.String,
+    deepPurple700: java.lang.String,
+    deepPurple800: java.lang.String,
+    deepPurple900: java.lang.String,
+    deepPurpleA100: java.lang.String,
+    deepPurpleA200: java.lang.String,
+    deepPurpleA400: java.lang.String,
+    deepPurpleA700: java.lang.String,
+    green100: java.lang.String,
+    green200: java.lang.String,
+    green300: java.lang.String,
+    green400: java.lang.String,
+    green50: java.lang.String,
+    green500: java.lang.String,
+    green600: java.lang.String,
+    green700: java.lang.String,
+    green800: java.lang.String,
+    green900: java.lang.String,
+    greenA100: java.lang.String,
+    greenA200: java.lang.String,
+    greenA400: java.lang.String,
+    greenA700: java.lang.String,
+    grey100: java.lang.String,
+    grey200: java.lang.String,
+    grey300: java.lang.String,
+    grey400: java.lang.String,
+    grey50: java.lang.String,
+    grey500: java.lang.String,
+    grey600: java.lang.String,
+    grey700: java.lang.String,
+    grey800: java.lang.String,
+    grey900: java.lang.String,
+    indigo100: java.lang.String,
+    indigo200: java.lang.String,
+    indigo300: java.lang.String,
+    indigo400: java.lang.String,
+    indigo50: java.lang.String,
+    indigo500: java.lang.String,
+    indigo600: java.lang.String,
+    indigo700: java.lang.String,
+    indigo800: java.lang.String,
+    indigo900: java.lang.String,
+    indigoA100: java.lang.String,
+    indigoA200: java.lang.String,
+    indigoA400: java.lang.String,
+    indigoA700: java.lang.String,
+    lightBlue100: java.lang.String,
+    lightBlue200: java.lang.String,
+    lightBlue300: java.lang.String,
+    lightBlue400: java.lang.String,
+    lightBlue50: java.lang.String,
+    lightBlue500: java.lang.String,
+    lightBlue600: java.lang.String,
+    lightBlue700: java.lang.String,
+    lightBlue800: java.lang.String,
+    lightBlue900: java.lang.String,
+    lightBlueA100: java.lang.String,
+    lightBlueA200: java.lang.String,
+    lightBlueA400: java.lang.String,
+    lightBlueA700: java.lang.String,
+    lightGreen100: java.lang.String,
+    lightGreen200: java.lang.String,
+    lightGreen300: java.lang.String,
+    lightGreen400: java.lang.String,
+    lightGreen50: java.lang.String,
+    lightGreen500: java.lang.String,
+    lightGreen600: java.lang.String
+  ): Color = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amber100")(amber100)
+    __obj.updateDynamic("amber200")(amber200)
+    __obj.updateDynamic("amber300")(amber300)
+    __obj.updateDynamic("amber400")(amber400)
+    __obj.updateDynamic("amber50")(amber50)
+    __obj.updateDynamic("amber500")(amber500)
+    __obj.updateDynamic("amber600")(amber600)
+    __obj.updateDynamic("amber700")(amber700)
+    __obj.updateDynamic("amber800")(amber800)
+    __obj.updateDynamic("amber900")(amber900)
+    __obj.updateDynamic("amberA100")(amberA100)
+    __obj.updateDynamic("amberA200")(amberA200)
+    __obj.updateDynamic("amberA400")(amberA400)
+    __obj.updateDynamic("amberA700")(amberA700)
+    __obj.updateDynamic("black")(black)
+    __obj.updateDynamic("blue100")(blue100)
+    __obj.updateDynamic("blue200")(blue200)
+    __obj.updateDynamic("blue300")(blue300)
+    __obj.updateDynamic("blue400")(blue400)
+    __obj.updateDynamic("blue50")(blue50)
+    __obj.updateDynamic("blue500")(blue500)
+    __obj.updateDynamic("blue600")(blue600)
+    __obj.updateDynamic("blue700")(blue700)
+    __obj.updateDynamic("blue800")(blue800)
+    __obj.updateDynamic("blue900")(blue900)
+    __obj.updateDynamic("blueA100")(blueA100)
+    __obj.updateDynamic("blueA200")(blueA200)
+    __obj.updateDynamic("blueA400")(blueA400)
+    __obj.updateDynamic("blueA700")(blueA700)
+    __obj.updateDynamic("blueGrey100")(blueGrey100)
+    __obj.updateDynamic("blueGrey200")(blueGrey200)
+    __obj.updateDynamic("blueGrey300")(blueGrey300)
+    __obj.updateDynamic("blueGrey400")(blueGrey400)
+    __obj.updateDynamic("blueGrey50")(blueGrey50)
+    __obj.updateDynamic("blueGrey500")(blueGrey500)
+    __obj.updateDynamic("blueGrey600")(blueGrey600)
+    __obj.updateDynamic("blueGrey700")(blueGrey700)
+    __obj.updateDynamic("blueGrey800")(blueGrey800)
+    __obj.updateDynamic("blueGrey900")(blueGrey900)
+    __obj.updateDynamic("brown100")(brown100)
+    __obj.updateDynamic("brown200")(brown200)
+    __obj.updateDynamic("brown300")(brown300)
+    __obj.updateDynamic("brown400")(brown400)
+    __obj.updateDynamic("brown50")(brown50)
+    __obj.updateDynamic("brown500")(brown500)
+    __obj.updateDynamic("brown600")(brown600)
+    __obj.updateDynamic("brown700")(brown700)
+    __obj.updateDynamic("brown800")(brown800)
+    __obj.updateDynamic("brown900")(brown900)
+    __obj.updateDynamic("cyan100")(cyan100)
+    __obj.updateDynamic("cyan200")(cyan200)
+    __obj.updateDynamic("cyan300")(cyan300)
+    __obj.updateDynamic("cyan400")(cyan400)
+    __obj.updateDynamic("cyan50")(cyan50)
+    __obj.updateDynamic("cyan500")(cyan500)
+    __obj.updateDynamic("cyan600")(cyan600)
+    __obj.updateDynamic("cyan700")(cyan700)
+    __obj.updateDynamic("cyan800")(cyan800)
+    __obj.updateDynamic("cyan900")(cyan900)
+    __obj.updateDynamic("cyanA100")(cyanA100)
+    __obj.updateDynamic("cyanA200")(cyanA200)
+    __obj.updateDynamic("cyanA400")(cyanA400)
+    __obj.updateDynamic("cyanA700")(cyanA700)
+    __obj.updateDynamic("deepOrange100")(deepOrange100)
+    __obj.updateDynamic("deepOrange200")(deepOrange200)
+    __obj.updateDynamic("deepOrange300")(deepOrange300)
+    __obj.updateDynamic("deepOrange400")(deepOrange400)
+    __obj.updateDynamic("deepOrange50")(deepOrange50)
+    __obj.updateDynamic("deepOrange500")(deepOrange500)
+    __obj.updateDynamic("deepOrange600")(deepOrange600)
+    __obj.updateDynamic("deepOrange700")(deepOrange700)
+    __obj.updateDynamic("deepOrange800")(deepOrange800)
+    __obj.updateDynamic("deepOrange900")(deepOrange900)
+    __obj.updateDynamic("deepOrangeA100")(deepOrangeA100)
+    __obj.updateDynamic("deepOrangeA200")(deepOrangeA200)
+    __obj.updateDynamic("deepOrangeA400")(deepOrangeA400)
+    __obj.updateDynamic("deepOrangeA700")(deepOrangeA700)
+    __obj.updateDynamic("deepPurple100")(deepPurple100)
+    __obj.updateDynamic("deepPurple200")(deepPurple200)
+    __obj.updateDynamic("deepPurple300")(deepPurple300)
+    __obj.updateDynamic("deepPurple400")(deepPurple400)
+    __obj.updateDynamic("deepPurple50")(deepPurple50)
+    __obj.updateDynamic("deepPurple500")(deepPurple500)
+    __obj.updateDynamic("deepPurple600")(deepPurple600)
+    __obj.updateDynamic("deepPurple700")(deepPurple700)
+    __obj.updateDynamic("deepPurple800")(deepPurple800)
+    __obj.updateDynamic("deepPurple900")(deepPurple900)
+    __obj.updateDynamic("deepPurpleA100")(deepPurpleA100)
+    __obj.updateDynamic("deepPurpleA200")(deepPurpleA200)
+    __obj.updateDynamic("deepPurpleA400")(deepPurpleA400)
+    __obj.updateDynamic("deepPurpleA700")(deepPurpleA700)
+    __obj.updateDynamic("green100")(green100)
+    __obj.updateDynamic("green200")(green200)
+    __obj.updateDynamic("green300")(green300)
+    __obj.updateDynamic("green400")(green400)
+    __obj.updateDynamic("green50")(green50)
+    __obj.updateDynamic("green500")(green500)
+    __obj.updateDynamic("green600")(green600)
+    __obj.updateDynamic("green700")(green700)
+    __obj.updateDynamic("green800")(green800)
+    __obj.updateDynamic("green900")(green900)
+    __obj.updateDynamic("greenA100")(greenA100)
+    __obj.updateDynamic("greenA200")(greenA200)
+    __obj.updateDynamic("greenA400")(greenA400)
+    __obj.updateDynamic("greenA700")(greenA700)
+    __obj.updateDynamic("grey100")(grey100)
+    __obj.updateDynamic("grey200")(grey200)
+    __obj.updateDynamic("grey300")(grey300)
+    __obj.updateDynamic("grey400")(grey400)
+    __obj.updateDynamic("grey50")(grey50)
+    __obj.updateDynamic("grey500")(grey500)
+    __obj.updateDynamic("grey600")(grey600)
+    __obj.updateDynamic("grey700")(grey700)
+    __obj.updateDynamic("grey800")(grey800)
+    __obj.updateDynamic("grey900")(grey900)
+    __obj.updateDynamic("indigo100")(indigo100)
+    __obj.updateDynamic("indigo200")(indigo200)
+    __obj.updateDynamic("indigo300")(indigo300)
+    __obj.updateDynamic("indigo400")(indigo400)
+    __obj.updateDynamic("indigo50")(indigo50)
+    __obj.updateDynamic("indigo500")(indigo500)
+    __obj.updateDynamic("indigo600")(indigo600)
+    __obj.updateDynamic("indigo700")(indigo700)
+    __obj.updateDynamic("indigo800")(indigo800)
+    __obj.updateDynamic("indigo900")(indigo900)
+    __obj.updateDynamic("indigoA100")(indigoA100)
+    __obj.updateDynamic("indigoA200")(indigoA200)
+    __obj.updateDynamic("indigoA400")(indigoA400)
+    __obj.updateDynamic("indigoA700")(indigoA700)
+    __obj.updateDynamic("lightBlue100")(lightBlue100)
+    __obj.updateDynamic("lightBlue200")(lightBlue200)
+    __obj.updateDynamic("lightBlue300")(lightBlue300)
+    __obj.updateDynamic("lightBlue400")(lightBlue400)
+    __obj.updateDynamic("lightBlue50")(lightBlue50)
+    __obj.updateDynamic("lightBlue500")(lightBlue500)
+    __obj.updateDynamic("lightBlue600")(lightBlue600)
+    __obj.updateDynamic("lightBlue700")(lightBlue700)
+    __obj.updateDynamic("lightBlue800")(lightBlue800)
+    __obj.updateDynamic("lightBlue900")(lightBlue900)
+    __obj.updateDynamic("lightBlueA100")(lightBlueA100)
+    __obj.updateDynamic("lightBlueA200")(lightBlueA200)
+    __obj.updateDynamic("lightBlueA400")(lightBlueA400)
+    __obj.updateDynamic("lightBlueA700")(lightBlueA700)
+    __obj.updateDynamic("lightGreen100")(lightGreen100)
+    __obj.updateDynamic("lightGreen200")(lightGreen200)
+    __obj.updateDynamic("lightGreen300")(lightGreen300)
+    __obj.updateDynamic("lightGreen400")(lightGreen400)
+    __obj.updateDynamic("lightGreen50")(lightGreen50)
+    __obj.updateDynamic("lightGreen500")(lightGreen500)
+    __obj.updateDynamic("lightGreen600")(lightGreen600)
+    __obj.asInstanceOf[Color]
+  }
+}
+

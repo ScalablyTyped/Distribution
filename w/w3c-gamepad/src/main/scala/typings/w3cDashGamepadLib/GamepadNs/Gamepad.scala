@@ -43,3 +43,26 @@ trait Gamepad extends js.Object {
   var timestamp: scala.Double
 }
 
+object Gamepad {
+  @scala.inline
+  def apply(
+    axes: js.Array[scala.Double],
+    buttons: js.Array[GamepadButton],
+    connected: scala.Boolean,
+    id: java.lang.String,
+    index: scala.Double,
+    mapping: java.lang.String,
+    timestamp: scala.Double
+  ): Gamepad = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axes")(axes)
+    __obj.updateDynamic("buttons")(buttons)
+    __obj.updateDynamic("connected")(connected)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("mapping")(mapping)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[Gamepad]
+  }
+}
+

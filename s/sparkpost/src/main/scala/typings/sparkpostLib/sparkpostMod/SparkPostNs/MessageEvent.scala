@@ -56,3 +56,59 @@ trait MessageEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object MessageEvent {
+  @scala.inline
+  def apply(
+    bounce_class: java.lang.String,
+    campaign_id: java.lang.String,
+    customer_id: java.lang.String,
+    delv_method: java.lang.String,
+    device_token: java.lang.String,
+    error_code: java.lang.String,
+    ip_address: java.lang.String,
+    message_id: java.lang.String,
+    msg_from: java.lang.String,
+    msg_size: java.lang.String,
+    num_retries: java.lang.String,
+    raw_reason: java.lang.String,
+    rcpt_meta: js.Any,
+    rcpt_tags: js.Array[java.lang.String],
+    rcpt_to: java.lang.String,
+    rcpt_type: java.lang.String,
+    reason: java.lang.String,
+    routing_domain: java.lang.String,
+    subject: java.lang.String,
+    template_id: java.lang.String,
+    template_version: java.lang.String,
+    timestamp: java.lang.String,
+    transmission_id: java.lang.String,
+    `type`: java.lang.String
+  ): MessageEvent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bounce_class")(bounce_class)
+    __obj.updateDynamic("campaign_id")(campaign_id)
+    __obj.updateDynamic("customer_id")(customer_id)
+    __obj.updateDynamic("delv_method")(delv_method)
+    __obj.updateDynamic("device_token")(device_token)
+    __obj.updateDynamic("error_code")(error_code)
+    __obj.updateDynamic("ip_address")(ip_address)
+    __obj.updateDynamic("message_id")(message_id)
+    __obj.updateDynamic("msg_from")(msg_from)
+    __obj.updateDynamic("msg_size")(msg_size)
+    __obj.updateDynamic("num_retries")(num_retries)
+    __obj.updateDynamic("raw_reason")(raw_reason)
+    __obj.updateDynamic("rcpt_meta")(rcpt_meta)
+    __obj.updateDynamic("rcpt_tags")(rcpt_tags)
+    __obj.updateDynamic("rcpt_to")(rcpt_to)
+    __obj.updateDynamic("rcpt_type")(rcpt_type)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("routing_domain")(routing_domain)
+    __obj.updateDynamic("subject")(subject)
+    __obj.updateDynamic("template_id")(template_id)
+    __obj.updateDynamic("template_version")(template_version)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.updateDynamic("transmission_id")(transmission_id)
+    __obj.asInstanceOf[MessageEvent]
+  }
+}
+

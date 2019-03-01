@@ -12,3 +12,13 @@ trait FailoverContext extends js.Object {
   var settingsVersion: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FailoverContext {
+  @scala.inline
+  def apply(kind: java.lang.String = null, settingsVersion: java.lang.String = null): FailoverContext = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (settingsVersion != null) __obj.updateDynamic("settingsVersion")(settingsVersion)
+    __obj.asInstanceOf[FailoverContext]
+  }
+}
+

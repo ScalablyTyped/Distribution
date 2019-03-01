@@ -18,3 +18,22 @@ trait TargetingValueCreativeSize extends js.Object {
   var skippableAdType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TargetingValueCreativeSize {
+  @scala.inline
+  def apply(
+    companionSizes: js.Array[TargetingValueSize] = null,
+    creativeSizeType: java.lang.String = null,
+    nativeTemplate: java.lang.String = null,
+    size: TargetingValueSize = null,
+    skippableAdType: java.lang.String = null
+  ): TargetingValueCreativeSize = {
+    val __obj = js.Dynamic.literal()
+    if (companionSizes != null) __obj.updateDynamic("companionSizes")(companionSizes)
+    if (creativeSizeType != null) __obj.updateDynamic("creativeSizeType")(creativeSizeType)
+    if (nativeTemplate != null) __obj.updateDynamic("nativeTemplate")(nativeTemplate)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (skippableAdType != null) __obj.updateDynamic("skippableAdType")(skippableAdType)
+    __obj.asInstanceOf[TargetingValueCreativeSize]
+  }
+}
+

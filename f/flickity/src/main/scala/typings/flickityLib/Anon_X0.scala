@@ -14,3 +14,24 @@ trait Anon_X0 extends js.Object {
   var y2: scala.Double
 }
 
+object Anon_X0 {
+  @scala.inline
+  def apply(
+    x0: scala.Double,
+    x1: scala.Double,
+    x2: scala.Double,
+    x3: scala.Double,
+    y1: scala.Double,
+    y2: scala.Double
+  ): Anon_X0 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x0")(x0)
+    __obj.updateDynamic("x1")(x1)
+    __obj.updateDynamic("x2")(x2)
+    __obj.updateDynamic("x3")(x3)
+    __obj.updateDynamic("y1")(y1)
+    __obj.updateDynamic("y2")(y2)
+    __obj.asInstanceOf[Anon_X0]
+  }
+}
+

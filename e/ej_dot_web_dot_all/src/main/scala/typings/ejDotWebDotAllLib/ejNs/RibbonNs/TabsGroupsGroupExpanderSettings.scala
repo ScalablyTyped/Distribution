@@ -16,3 +16,13 @@ trait TabsGroupsGroupExpanderSettings extends js.Object {
   var toolTip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabsGroupsGroupExpanderSettings {
+  @scala.inline
+  def apply(customToolTip: js.Any = null, toolTip: java.lang.String = null): TabsGroupsGroupExpanderSettings = {
+    val __obj = js.Dynamic.literal()
+    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip)
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    __obj.asInstanceOf[TabsGroupsGroupExpanderSettings]
+  }
+}
+

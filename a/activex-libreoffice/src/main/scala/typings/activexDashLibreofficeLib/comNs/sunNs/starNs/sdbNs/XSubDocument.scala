@@ -37,3 +37,20 @@ trait XSubDocument extends js.Object {
   def store(): scala.Unit
 }
 
+object XSubDocument {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Boolean],
+    open: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
+    openDesign: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
+    store: js.Function0[scala.Unit]
+  ): XSubDocument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("openDesign")(openDesign)
+    __obj.updateDynamic("store")(store)
+    __obj.asInstanceOf[XSubDocument]
+  }
+}
+

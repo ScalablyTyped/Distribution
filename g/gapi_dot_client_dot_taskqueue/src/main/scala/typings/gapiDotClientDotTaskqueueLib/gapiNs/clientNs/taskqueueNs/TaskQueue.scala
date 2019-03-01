@@ -18,3 +18,22 @@ trait TaskQueue extends js.Object {
   var stats: js.UndefOr[gapiDotClientDotTaskqueueLib.Anon_LeasedLastHour] = js.undefined
 }
 
+object TaskQueue {
+  @scala.inline
+  def apply(
+    acl: gapiDotClientDotTaskqueueLib.Anon_AdminEmails = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    maxLeases: scala.Int | scala.Double = null,
+    stats: gapiDotClientDotTaskqueueLib.Anon_LeasedLastHour = null
+  ): TaskQueue = {
+    val __obj = js.Dynamic.literal()
+    if (acl != null) __obj.updateDynamic("acl")(acl)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maxLeases != null) __obj.updateDynamic("maxLeases")(maxLeases.asInstanceOf[js.Any])
+    if (stats != null) __obj.updateDynamic("stats")(stats)
+    __obj.asInstanceOf[TaskQueue]
+  }
+}
+

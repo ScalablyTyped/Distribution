@@ -2583,8 +2583,24 @@ object RoboMakerNs extends js.Object {
     var vpcId: js.UndefOr[GenericString] = js.undefined
   }
   
+  trait _Architecture extends js.Object
+  
+  trait _DeploymentJobErrorCode extends js.Object
+  
+  trait _DeploymentStatus extends js.Object
+  
+  trait _FailureBehavior extends js.Object
+  
+  trait _RobotStatus extends js.Object
+  
+  trait _SimulationJobErrorCode extends js.Object
+  
+  trait _SimulationJobStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
-  type Architecture = awsDashSdkLib.awsDashSdkLibStrings.X86_64 | awsDashSdkLib.awsDashSdkLibStrings.ARM64 | awsDashSdkLib.awsDashSdkLibStrings.ARMHF | java.lang.String
+  type Architecture = _Architecture | java.lang.String
   type Arn = java.lang.String
   type Arns = js.Array[Arn]
   type Boolean = scala.Boolean
@@ -2592,13 +2608,13 @@ object RoboMakerNs extends js.Object {
   type ClientRequestToken = java.lang.String
   type CreatedAt = stdLib.Date
   type DeploymentApplicationConfigs = js.Array[DeploymentApplicationConfig]
-  type DeploymentJobErrorCode = awsDashSdkLib.awsDashSdkLibStrings.ResourceNotFound | awsDashSdkLib.awsDashSdkLibStrings.FailureThresholdBreached | awsDashSdkLib.awsDashSdkLibStrings.RobotDeploymentNoResponse | awsDashSdkLib.awsDashSdkLibStrings.GreengrassDeploymentFailed | awsDashSdkLib.awsDashSdkLibStrings.MissingRobotArchitecture | awsDashSdkLib.awsDashSdkLibStrings.MissingRobotApplicationArchitecture | awsDashSdkLib.awsDashSdkLibStrings.MissingRobotDeploymentResource | awsDashSdkLib.awsDashSdkLibStrings.GreengrassGroupVersionDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.ExtractingBundleFailure | awsDashSdkLib.awsDashSdkLibStrings.PreLaunchFileFailure | awsDashSdkLib.awsDashSdkLibStrings.PostLaunchFileFailure | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionError | awsDashSdkLib.awsDashSdkLibStrings.InternalServerError | java.lang.String
+  type DeploymentJobErrorCode = _DeploymentJobErrorCode | java.lang.String
   type DeploymentJobs = js.Array[DeploymentJob]
-  type DeploymentStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Preparing | awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Succeeded | java.lang.String
+  type DeploymentStatus = _DeploymentStatus | java.lang.String
   type DeploymentVersion = java.lang.String
   type EnvironmentVariableKey = java.lang.String
   type EnvironmentVariableValue = java.lang.String
-  type FailureBehavior = awsDashSdkLib.awsDashSdkLibStrings.Fail | awsDashSdkLib.awsDashSdkLibStrings.Continue | java.lang.String
+  type FailureBehavior = _FailureBehavior | java.lang.String
   type FilterValues = js.Array[Name]
   type Filters = js.Array[Filter]
   type Fleets = js.Array[Fleet]
@@ -2620,7 +2636,7 @@ object RoboMakerNs extends js.Object {
   type RobotDeploymentSummary = js.Array[RobotDeployment]
   type RobotSoftwareSuiteType = awsDashSdkLib.awsDashSdkLibStrings.ROS | java.lang.String
   type RobotSoftwareSuiteVersionType = awsDashSdkLib.awsDashSdkLibStrings.Kinetic | java.lang.String
-  type RobotStatus = awsDashSdkLib.awsDashSdkLibStrings.Available | awsDashSdkLib.awsDashSdkLibStrings.Registered | awsDashSdkLib.awsDashSdkLibStrings.PendingNewDeployment | awsDashSdkLib.awsDashSdkLibStrings.Deploying | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.InSync | awsDashSdkLib.awsDashSdkLibStrings.NoResponse | java.lang.String
+  type RobotStatus = _RobotStatus | java.lang.String
   type Robots = js.Array[Robot]
   type S3Bucket = java.lang.String
   type S3Etag = java.lang.String
@@ -2629,8 +2645,8 @@ object RoboMakerNs extends js.Object {
   type SimulationApplicationConfigs = js.Array[SimulationApplicationConfig]
   type SimulationApplicationNames = js.Array[Name]
   type SimulationApplicationSummaries = js.Array[SimulationApplicationSummary]
-  type SimulationJobErrorCode = awsDashSdkLib.awsDashSdkLibStrings.InternalServiceError | awsDashSdkLib.awsDashSdkLibStrings.RobotApplicationCrash | awsDashSdkLib.awsDashSdkLibStrings.SimulationApplicationCrash | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsRobotApplication | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsSimulationApplication | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsS3Output | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsCloudwatchLogs | awsDashSdkLib.awsDashSdkLibStrings.SubnetIpLimitExceeded | awsDashSdkLib.awsDashSdkLibStrings.ENILimitExceeded | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsUserCredentials | awsDashSdkLib.awsDashSdkLibStrings.InvalidBundleRobotApplication | awsDashSdkLib.awsDashSdkLibStrings.InvalidBundleSimulationApplication | awsDashSdkLib.awsDashSdkLibStrings.RobotApplicationVersionMismatchedEtag | awsDashSdkLib.awsDashSdkLibStrings.SimulationApplicationVersionMismatchedEtag | awsDashSdkLib.awsDashSdkLibStrings.WrongRegionS3Output | awsDashSdkLib.awsDashSdkLibStrings.WrongRegionRobotApplication | awsDashSdkLib.awsDashSdkLibStrings.WrongRegionSimulationApplication | java.lang.String
-  type SimulationJobStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Preparing | awsDashSdkLib.awsDashSdkLibStrings.Running | awsDashSdkLib.awsDashSdkLibStrings.Restarting | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.RunningFailed | awsDashSdkLib.awsDashSdkLibStrings.Terminating | awsDashSdkLib.awsDashSdkLibStrings.Terminated | awsDashSdkLib.awsDashSdkLibStrings.Canceled | java.lang.String
+  type SimulationJobErrorCode = _SimulationJobErrorCode | java.lang.String
+  type SimulationJobStatus = _SimulationJobStatus | java.lang.String
   type SimulationJobSummaries = js.Array[SimulationJobSummary]
   type SimulationJobs = js.Array[SimulationJob]
   type SimulationSoftwareSuiteType = awsDashSdkLib.awsDashSdkLibStrings.Gazebo | java.lang.String
@@ -2644,6 +2660,6 @@ object RoboMakerNs extends js.Object {
   type TagValue = java.lang.String
   type Version = java.lang.String
   type VersionQualifier = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-06-29` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

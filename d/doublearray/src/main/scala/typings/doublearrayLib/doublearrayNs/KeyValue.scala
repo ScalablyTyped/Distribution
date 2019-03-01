@@ -10,3 +10,13 @@ trait KeyValue extends js.Object {
   var v: scala.Double
 }
 
+object KeyValue {
+  @scala.inline
+  def apply(k: java.lang.String, v: scala.Double): KeyValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("k")(k)
+    __obj.updateDynamic("v")(v)
+    __obj.asInstanceOf[KeyValue]
+  }
+}
+

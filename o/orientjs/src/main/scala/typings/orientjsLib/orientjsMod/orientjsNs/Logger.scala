@@ -11,3 +11,18 @@ trait Logger extends js.Object {
   def log(args: js.Any*): scala.Unit
 }
 
+object Logger {
+  @scala.inline
+  def apply(
+    debug: js.Function1[/* repeated */ js.Any, scala.Unit],
+    error: js.Function1[/* repeated */ js.Any, scala.Unit],
+    log: js.Function1[/* repeated */ js.Any, scala.Unit]
+  ): Logger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("log")(log)
+    __obj.asInstanceOf[Logger]
+  }
+}
+

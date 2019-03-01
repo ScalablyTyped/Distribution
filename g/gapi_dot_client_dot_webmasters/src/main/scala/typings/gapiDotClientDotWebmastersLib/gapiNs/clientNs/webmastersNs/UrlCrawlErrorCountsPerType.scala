@@ -14,3 +14,18 @@ trait UrlCrawlErrorCountsPerType extends js.Object {
   var platform: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UrlCrawlErrorCountsPerType {
+  @scala.inline
+  def apply(
+    category: java.lang.String = null,
+    entries: js.Array[UrlCrawlErrorCount] = null,
+    platform: java.lang.String = null
+  ): UrlCrawlErrorCountsPerType = {
+    val __obj = js.Dynamic.literal()
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (entries != null) __obj.updateDynamic("entries")(entries)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    __obj.asInstanceOf[UrlCrawlErrorCountsPerType]
+  }
+}
+

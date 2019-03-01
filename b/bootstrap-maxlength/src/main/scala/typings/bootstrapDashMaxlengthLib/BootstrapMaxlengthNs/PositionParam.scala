@@ -17,3 +17,24 @@ trait PositionParam extends js.Object {
   var width: stdLib.Number
 }
 
+object PositionParam {
+  @scala.inline
+  def apply(
+    bottom: stdLib.Number,
+    height: stdLib.Number,
+    left: stdLib.Number,
+    right: stdLib.Number,
+    top: stdLib.Number,
+    width: stdLib.Number
+  ): PositionParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottom")(bottom)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("right")(right)
+    __obj.updateDynamic("top")(top)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[PositionParam]
+  }
+}
+

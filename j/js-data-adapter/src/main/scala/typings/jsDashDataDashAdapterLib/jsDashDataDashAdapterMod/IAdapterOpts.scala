@@ -10,3 +10,13 @@ trait IAdapterOpts extends IDict {
   var raw: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IAdapterOpts {
+  @scala.inline
+  def apply(debug: js.UndefOr[scala.Boolean] = js.undefined, raw: js.UndefOr[scala.Boolean] = js.undefined): IAdapterOpts = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[IAdapterOpts]
+  }
+}
+

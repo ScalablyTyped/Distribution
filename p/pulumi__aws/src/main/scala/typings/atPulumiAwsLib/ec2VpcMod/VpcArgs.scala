@@ -45,3 +45,28 @@ trait VpcArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object VpcArgs {
+  @scala.inline
+  def apply(
+    cidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    assignGeneratedIpv6CidrBlock: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableClassiclink: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableClassiclinkDnsSupport: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableDnsHostnames: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableDnsSupport: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    instanceTenancy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): VpcArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
+    if (assignGeneratedIpv6CidrBlock != null) __obj.updateDynamic("assignGeneratedIpv6CidrBlock")(assignGeneratedIpv6CidrBlock.asInstanceOf[js.Any])
+    if (enableClassiclink != null) __obj.updateDynamic("enableClassiclink")(enableClassiclink.asInstanceOf[js.Any])
+    if (enableClassiclinkDnsSupport != null) __obj.updateDynamic("enableClassiclinkDnsSupport")(enableClassiclinkDnsSupport.asInstanceOf[js.Any])
+    if (enableDnsHostnames != null) __obj.updateDynamic("enableDnsHostnames")(enableDnsHostnames.asInstanceOf[js.Any])
+    if (enableDnsSupport != null) __obj.updateDynamic("enableDnsSupport")(enableDnsSupport.asInstanceOf[js.Any])
+    if (instanceTenancy != null) __obj.updateDynamic("instanceTenancy")(instanceTenancy.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcArgs]
+  }
+}
+

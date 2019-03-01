@@ -14,7 +14,7 @@ class State[S, A] protected () extends js.Object {
   val _URI: URI = js.native
   def ap[B](fab: State[S, js.Function1[/* a */ A, B]]): State[S, B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     */
   def `ap_`[B, C](`this`: State[S, js.Function1[/* b */ B, C]], fb: State[S, B]): State[S, C] = js.native
   /**

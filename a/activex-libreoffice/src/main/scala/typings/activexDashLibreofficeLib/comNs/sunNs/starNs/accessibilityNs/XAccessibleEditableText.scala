@@ -102,3 +102,87 @@ trait XAccessibleEditableText extends XAccessibleText {
   def setText(sText: java.lang.String): scala.Boolean
 }
 
+object XAccessibleEditableText {
+  @scala.inline
+  def apply(
+    CaretPosition: scala.Double,
+    CharacterCount: scala.Double,
+    SelectedText: java.lang.String,
+    SelectionEnd: scala.Double,
+    SelectionStart: scala.Double,
+    Text: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    copyText: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    cutText: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    deleteText: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    getCaretPosition: js.Function0[scala.Double],
+    getCharacter: js.Function1[scala.Double, java.lang.String],
+    getCharacterAttributes: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getCharacterBounds: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getCharacterCount: js.Function0[scala.Double],
+    getIndexAtPoint: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Double],
+    getSelectedText: js.Function0[java.lang.String],
+    getSelectionEnd: js.Function0[scala.Double],
+    getSelectionStart: js.Function0[scala.Double],
+    getText: js.Function0[java.lang.String],
+    getTextAtIndex: js.Function2[scala.Double, scala.Double, TextSegment],
+    getTextBeforeIndex: js.Function2[scala.Double, scala.Double, TextSegment],
+    getTextBehindIndex: js.Function2[scala.Double, scala.Double, TextSegment],
+    getTextRange: js.Function2[scala.Double, scala.Double, java.lang.String],
+    insertText: js.Function2[java.lang.String, scala.Double, scala.Boolean],
+    pasteText: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    replaceText: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Boolean],
+    setAttributes: js.Function3[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Boolean
+    ],
+    setCaretPosition: js.Function1[scala.Double, scala.Boolean],
+    setSelection: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    setText: js.Function1[java.lang.String, scala.Boolean]
+  ): XAccessibleEditableText = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CaretPosition")(CaretPosition)
+    __obj.updateDynamic("CharacterCount")(CharacterCount)
+    __obj.updateDynamic("SelectedText")(SelectedText)
+    __obj.updateDynamic("SelectionEnd")(SelectionEnd)
+    __obj.updateDynamic("SelectionStart")(SelectionStart)
+    __obj.updateDynamic("Text")(Text)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("copyText")(copyText)
+    __obj.updateDynamic("cutText")(cutText)
+    __obj.updateDynamic("deleteText")(deleteText)
+    __obj.updateDynamic("getCaretPosition")(getCaretPosition)
+    __obj.updateDynamic("getCharacter")(getCharacter)
+    __obj.updateDynamic("getCharacterAttributes")(getCharacterAttributes)
+    __obj.updateDynamic("getCharacterBounds")(getCharacterBounds)
+    __obj.updateDynamic("getCharacterCount")(getCharacterCount)
+    __obj.updateDynamic("getIndexAtPoint")(getIndexAtPoint)
+    __obj.updateDynamic("getSelectedText")(getSelectedText)
+    __obj.updateDynamic("getSelectionEnd")(getSelectionEnd)
+    __obj.updateDynamic("getSelectionStart")(getSelectionStart)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("getTextAtIndex")(getTextAtIndex)
+    __obj.updateDynamic("getTextBeforeIndex")(getTextBeforeIndex)
+    __obj.updateDynamic("getTextBehindIndex")(getTextBehindIndex)
+    __obj.updateDynamic("getTextRange")(getTextRange)
+    __obj.updateDynamic("insertText")(insertText)
+    __obj.updateDynamic("pasteText")(pasteText)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("replaceText")(replaceText)
+    __obj.updateDynamic("setAttributes")(setAttributes)
+    __obj.updateDynamic("setCaretPosition")(setCaretPosition)
+    __obj.updateDynamic("setSelection")(setSelection)
+    __obj.updateDynamic("setText")(setText)
+    __obj.asInstanceOf[XAccessibleEditableText]
+  }
+}
+

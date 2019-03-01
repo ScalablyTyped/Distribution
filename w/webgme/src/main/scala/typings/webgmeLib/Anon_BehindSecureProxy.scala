@@ -47,3 +47,26 @@ trait Anon_BehindSecureProxy extends js.Object {
   var timeout: scala.Double
 }
 
+object Anon_BehindSecureProxy {
+  @scala.inline
+  def apply(
+    behindSecureProxy: scala.Boolean,
+    extlibExcludes: js.Array[java.lang.String],
+    log: js.Any,
+    maxWorkers: scala.Double,
+    port: scala.Double,
+    timeout: scala.Double,
+    handle: Anon_Fd = null
+  ): Anon_BehindSecureProxy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("behindSecureProxy")(behindSecureProxy)
+    __obj.updateDynamic("extlibExcludes")(extlibExcludes)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("maxWorkers")(maxWorkers)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("timeout")(timeout)
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    __obj.asInstanceOf[Anon_BehindSecureProxy]
+  }
+}
+

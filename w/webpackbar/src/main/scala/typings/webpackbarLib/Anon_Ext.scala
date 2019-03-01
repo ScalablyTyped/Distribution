@@ -10,3 +10,16 @@ trait Anon_Ext extends js.Object {
   var loader: webpackbarLib.webpackbarMod.WebpackBarNs.Stats
 }
 
+object Anon_Ext {
+  @scala.inline
+  def apply(
+    ext: webpackbarLib.webpackbarMod.WebpackBarNs.Stats,
+    loader: webpackbarLib.webpackbarMod.WebpackBarNs.Stats
+  ): Anon_Ext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ext")(ext)
+    __obj.updateDynamic("loader")(loader)
+    __obj.asInstanceOf[Anon_Ext]
+  }
+}
+

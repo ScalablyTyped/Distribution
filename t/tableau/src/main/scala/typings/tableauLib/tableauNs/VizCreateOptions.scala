@@ -45,3 +45,35 @@ trait VizCreateOptions
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VizCreateOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Apply a filter that you specify to the view when it is first rendered.
+    * For example, if you have an Academic Year filter and only want to display data for 2017,
+    * you might enter "Academic Year": "2016". For more information, see Filtering.
+    */
+  /* filter */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    device: java.lang.String = null,
+    height: java.lang.String = null,
+    hideTabs: js.UndefOr[scala.Boolean] = js.undefined,
+    hideToolbar: js.UndefOr[scala.Boolean] = js.undefined,
+    instanceIdToClone: java.lang.String = null,
+    onFirstInteractive: js.Function1[/* e */ TableauEvent, scala.Unit] = null,
+    onFirstVizSizeKnown: js.Function1[/* e */ VizResizeEvent, scala.Unit] = null,
+    width: java.lang.String = null
+  ): VizCreateOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(hideTabs)) __obj.updateDynamic("hideTabs")(hideTabs)
+    if (!js.isUndefined(hideToolbar)) __obj.updateDynamic("hideToolbar")(hideToolbar)
+    if (instanceIdToClone != null) __obj.updateDynamic("instanceIdToClone")(instanceIdToClone)
+    if (onFirstInteractive != null) __obj.updateDynamic("onFirstInteractive")(onFirstInteractive)
+    if (onFirstVizSizeKnown != null) __obj.updateDynamic("onFirstVizSizeKnown")(onFirstVizSizeKnown)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[VizCreateOptions]
+  }
+}
+

@@ -14,3 +14,26 @@ trait IndexCreationQuery extends Executable {
   def withParser(parserName: java.lang.String): IndexCreationQuery
 }
 
+object IndexCreationQuery {
+  @scala.inline
+  def apply(
+    fulltext: js.Function0[IndexCreationQuery],
+    on: js.Function1[/* repeated */ (Column[_, _]) | OrderByValueNode, IndexCreationQuery],
+    spatial: js.Function0[IndexCreationQuery],
+    toQuery: js.Function0[QueryLike],
+    unique: js.Function0[IndexCreationQuery],
+    using: js.Function1[java.lang.String, IndexCreationQuery],
+    withParser: js.Function1[java.lang.String, IndexCreationQuery]
+  ): IndexCreationQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fulltext")(fulltext)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("spatial")(spatial)
+    __obj.updateDynamic("toQuery")(toQuery)
+    __obj.updateDynamic("unique")(unique)
+    __obj.updateDynamic("using")(using)
+    __obj.updateDynamic("withParser")(withParser)
+    __obj.asInstanceOf[IndexCreationQuery]
+  }
+}
+

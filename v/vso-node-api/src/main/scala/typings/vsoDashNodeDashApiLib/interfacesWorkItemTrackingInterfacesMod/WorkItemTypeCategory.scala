@@ -24,3 +24,24 @@ trait WorkItemTypeCategory extends WorkItemTrackingResource {
   var workItemTypes: js.Array[WorkItemTypeReference]
 }
 
+object WorkItemTypeCategory {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    defaultWorkItemType: WorkItemTypeReference,
+    name: java.lang.String,
+    referenceName: java.lang.String,
+    url: java.lang.String,
+    workItemTypes: js.Array[WorkItemTypeReference]
+  ): WorkItemTypeCategory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("defaultWorkItemType")(defaultWorkItemType)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("referenceName")(referenceName)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("workItemTypes")(workItemTypes)
+    __obj.asInstanceOf[WorkItemTypeCategory]
+  }
+}
+

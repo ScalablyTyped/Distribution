@@ -52,3 +52,33 @@ trait IgGridUpdatingLocale
   var doneTooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridUpdatingLocale {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridUpdatingLocale
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    addRowLabel: java.lang.String = null,
+    addRowTooltip: java.lang.String = null,
+    cancelLabel: java.lang.String = null,
+    cancelTooltip: java.lang.String = null,
+    deleteRowLabel: java.lang.String = null,
+    deleteRowTooltip: java.lang.String = null,
+    doneLabel: java.lang.String = null,
+    doneTooltip: java.lang.String = null
+  ): IgGridUpdatingLocale = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (addRowLabel != null) __obj.updateDynamic("addRowLabel")(addRowLabel)
+    if (addRowTooltip != null) __obj.updateDynamic("addRowTooltip")(addRowTooltip)
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
+    if (cancelTooltip != null) __obj.updateDynamic("cancelTooltip")(cancelTooltip)
+    if (deleteRowLabel != null) __obj.updateDynamic("deleteRowLabel")(deleteRowLabel)
+    if (deleteRowTooltip != null) __obj.updateDynamic("deleteRowTooltip")(deleteRowTooltip)
+    if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel)
+    if (doneTooltip != null) __obj.updateDynamic("doneTooltip")(doneTooltip)
+    __obj.asInstanceOf[IgGridUpdatingLocale]
+  }
+}
+

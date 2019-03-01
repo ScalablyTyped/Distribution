@@ -12,3 +12,20 @@ trait SimplePaletteColorOptions extends js.Object {
   var main: java.lang.String
 }
 
+object SimplePaletteColorOptions {
+  @scala.inline
+  def apply(
+    main: java.lang.String,
+    contrastText: java.lang.String = null,
+    dark: java.lang.String = null,
+    light: java.lang.String = null
+  ): SimplePaletteColorOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("main")(main)
+    if (contrastText != null) __obj.updateDynamic("contrastText")(contrastText)
+    if (dark != null) __obj.updateDynamic("dark")(dark)
+    if (light != null) __obj.updateDynamic("light")(light)
+    __obj.asInstanceOf[SimplePaletteColorOptions]
+  }
+}
+

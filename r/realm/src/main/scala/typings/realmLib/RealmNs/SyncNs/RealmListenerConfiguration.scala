@@ -12,3 +12,20 @@ trait RealmListenerConfiguration extends js.Object {
   var sslConfiguration: js.UndefOr[SSLConfiguration] = js.undefined
 }
 
+object RealmListenerConfiguration {
+  @scala.inline
+  def apply(
+    adminUser: User,
+    filterRegex: java.lang.String,
+    serverUrl: java.lang.String,
+    sslConfiguration: SSLConfiguration = null
+  ): RealmListenerConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adminUser")(adminUser)
+    __obj.updateDynamic("filterRegex")(filterRegex)
+    __obj.updateDynamic("serverUrl")(serverUrl)
+    if (sslConfiguration != null) __obj.updateDynamic("sslConfiguration")(sslConfiguration)
+    __obj.asInstanceOf[RealmListenerConfiguration]
+  }
+}
+

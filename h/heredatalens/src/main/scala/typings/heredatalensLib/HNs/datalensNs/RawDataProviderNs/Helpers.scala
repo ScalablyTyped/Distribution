@@ -34,3 +34,30 @@ trait Helpers extends js.Object {
   ] = js.undefined
 }
 
+object Helpers {
+  @scala.inline
+  def apply(
+    latLngToPixel: js.Function4[
+      /* latitude */ Latitude, 
+      /* longitude */ Longitude, 
+      /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
+      /* tileSize */ TileSize, 
+      PixelCoordinates
+    ] = null,
+    parseCSV: js.Function1[/* obj */ js.Any, js.Array[_]] = null,
+    pixelToLatLng: js.Function4[
+      /* x */ PX, 
+      /* y */ PY, 
+      /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
+      /* tileSize */ TileSize, 
+      GeoCoordinates
+    ] = null
+  ): Helpers = {
+    val __obj = js.Dynamic.literal()
+    if (latLngToPixel != null) __obj.updateDynamic("latLngToPixel")(latLngToPixel)
+    if (parseCSV != null) __obj.updateDynamic("parseCSV")(parseCSV)
+    if (pixelToLatLng != null) __obj.updateDynamic("pixelToLatLng")(pixelToLatLng)
+    __obj.asInstanceOf[Helpers]
+  }
+}
+

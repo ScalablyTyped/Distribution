@@ -20,3 +20,18 @@ trait GetInvocationResult extends js.Object {
   val resultMap: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object GetInvocationResult {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    result: java.lang.String,
+    resultMap: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): GetInvocationResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("resultMap")(resultMap)
+    __obj.asInstanceOf[GetInvocationResult]
+  }
+}
+

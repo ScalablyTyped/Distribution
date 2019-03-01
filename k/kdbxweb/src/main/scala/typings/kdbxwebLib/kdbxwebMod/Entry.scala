@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("kdbxweb", "Entry")
 @js.native
-class Entry () extends js.Object {
+class Entry () extends KdbxObject {
   var autoType: kdbxwebLib.Anon_DefaultSequence = js.native
   var bgColor: StringProtected = js.native
   var customIcon: KdbxUuid = js.native

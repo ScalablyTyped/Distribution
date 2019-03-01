@@ -46,3 +46,37 @@ trait Anon_DocumentUrlError extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_DocumentUrlError {
+  @scala.inline
+  def apply(
+    error: java.lang.String,
+    frameId: scala.Double,
+    fromCache: scala.Boolean,
+    method: java.lang.String,
+    parentFrameId: scala.Double,
+    requestId: java.lang.String,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    `type`: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.ResourceType,
+    url: java.lang.String,
+    documentUrl: java.lang.String = null,
+    ip: java.lang.String = null,
+    originUrl: java.lang.String = null
+  ): Anon_DocumentUrlError = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("frameId")(frameId)
+    __obj.updateDynamic("fromCache")(fromCache)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("parentFrameId")(parentFrameId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("url")(url)
+    if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
+    if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
+    __obj.asInstanceOf[Anon_DocumentUrlError]
+  }
+}
+

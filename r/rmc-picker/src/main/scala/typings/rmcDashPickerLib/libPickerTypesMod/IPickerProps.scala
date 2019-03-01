@@ -21,3 +21,36 @@ trait IPickerProps extends js.Object {
   var style: js.UndefOr[js.Any] = js.undefined
 }
 
+object IPickerProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    defaultSelectedValue: js.Any = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    indicatorClassName: java.lang.String = null,
+    indicatorStyle: js.Any = null,
+    itemStyle: js.Any = null,
+    noAnimate: js.UndefOr[scala.Boolean] = js.undefined,
+    onScrollChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    onValueChange: js.Function1[/* value */ js.Any, scala.Unit] = null,
+    prefixCls: java.lang.String = null,
+    selectedValue: js.Any = null,
+    style: js.Any = null
+  ): IPickerProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (defaultSelectedValue != null) __obj.updateDynamic("defaultSelectedValue")(defaultSelectedValue)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (indicatorClassName != null) __obj.updateDynamic("indicatorClassName")(indicatorClassName)
+    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (!js.isUndefined(noAnimate)) __obj.updateDynamic("noAnimate")(noAnimate)
+    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(onScrollChange)
+    if (onValueChange != null) __obj.updateDynamic("onValueChange")(onValueChange)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[IPickerProps]
+  }
+}
+

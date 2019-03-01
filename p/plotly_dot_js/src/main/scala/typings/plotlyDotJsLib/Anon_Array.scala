@@ -11,3 +11,17 @@ trait Anon_Array extends js.Object {
   var `type`: plotlyDotJsLib.plotlyDotJsLibStrings.data
 }
 
+object Anon_Array {
+  @scala.inline
+  def apply(
+    array: js.Array[plotlyDotJsLib.plotlyDotJsMod.Datum],
+    `type`: plotlyDotJsLib.plotlyDotJsLibStrings.data,
+    arrayminus: js.Array[plotlyDotJsLib.plotlyDotJsMod.Datum] = null
+  ): Anon_Array = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("array")(array)
+    if (arrayminus != null) __obj.updateDynamic("arrayminus")(arrayminus)
+    __obj.asInstanceOf[Anon_Array]
+  }
+}
+

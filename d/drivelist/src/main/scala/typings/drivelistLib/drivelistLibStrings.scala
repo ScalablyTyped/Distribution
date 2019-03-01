@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object drivelistLibStrings {
   @js.native
-  sealed trait ATA extends js.Object
+  sealed trait ATA
+    extends drivelistLib.drivelistMod.BusType
   
   @js.native
-  sealed trait IDE extends js.Object
+  sealed trait IDE
+    extends drivelistLib.drivelistMod.BusType
   
   @js.native
-  sealed trait PCI extends js.Object
+  sealed trait PCI
+    extends drivelistLib.drivelistMod.BusType
   
   @js.native
-  sealed trait SATA extends js.Object
+  sealed trait SATA
+    extends drivelistLib.drivelistMod.BusType
   
   @js.native
-  sealed trait SCSI extends js.Object
+  sealed trait SCSI
+    extends drivelistLib.drivelistMod.BusType
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends drivelistLib.drivelistMod.BusType
   
   @scala.inline
   def ATA: ATA = "ATA".asInstanceOf[ATA]

@@ -28,3 +28,21 @@ trait APIServiceCondition extends js.Object {
   val `type`: java.lang.String
 }
 
+object APIServiceCondition {
+  @scala.inline
+  def apply(
+    lastTransitionTime: java.lang.String,
+    message: java.lang.String,
+    reason: java.lang.String,
+    status: java.lang.String,
+    `type`: java.lang.String
+  ): APIServiceCondition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("lastTransitionTime")(lastTransitionTime)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[APIServiceCondition]
+  }
+}
+

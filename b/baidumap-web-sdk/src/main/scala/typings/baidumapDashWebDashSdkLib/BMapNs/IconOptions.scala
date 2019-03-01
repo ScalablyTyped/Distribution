@@ -12,3 +12,20 @@ trait IconOptions extends js.Object {
   var printImageUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IconOptions {
+  @scala.inline
+  def apply(
+    anchor: Size = null,
+    imageOffset: Size = null,
+    infoWindowAnchor: Size = null,
+    printImageUrl: java.lang.String = null
+  ): IconOptions = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (imageOffset != null) __obj.updateDynamic("imageOffset")(imageOffset)
+    if (infoWindowAnchor != null) __obj.updateDynamic("infoWindowAnchor")(infoWindowAnchor)
+    if (printImageUrl != null) __obj.updateDynamic("printImageUrl")(printImageUrl)
+    __obj.asInstanceOf[IconOptions]
+  }
+}
+

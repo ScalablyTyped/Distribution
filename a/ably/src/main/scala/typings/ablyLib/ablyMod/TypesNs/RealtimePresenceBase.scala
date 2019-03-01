@@ -9,3 +9,12 @@ trait RealtimePresenceBase extends js.Object {
   var syncComplete: scala.Boolean
 }
 
+object RealtimePresenceBase {
+  @scala.inline
+  def apply(syncComplete: scala.Boolean): RealtimePresenceBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("syncComplete")(syncComplete)
+    __obj.asInstanceOf[RealtimePresenceBase]
+  }
+}
+

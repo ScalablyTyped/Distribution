@@ -14,3 +14,16 @@ trait Anon_ContainerContent extends js.Object {
   ] = js.undefined
 }
 
+object Anon_ContainerContent {
+  @scala.inline
+  def apply(
+    container: reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiMod.ViewStyle = null,
+    content: reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiMod.ViewStyle = null
+  ): Anon_ContainerContent = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ContainerContent]
+  }
+}
+

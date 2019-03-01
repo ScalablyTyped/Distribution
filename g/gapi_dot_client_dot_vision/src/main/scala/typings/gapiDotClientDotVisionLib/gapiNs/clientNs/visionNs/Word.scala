@@ -33,3 +33,14 @@ trait Word extends js.Object {
   var symbols: js.UndefOr[js.Array[Symbol]] = js.undefined
 }
 
+object Word {
+  @scala.inline
+  def apply(boundingBox: BoundingPoly = null, property: TextProperty = null, symbols: js.Array[Symbol] = null): Word = {
+    val __obj = js.Dynamic.literal()
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox)
+    if (property != null) __obj.updateDynamic("property")(property)
+    if (symbols != null) __obj.updateDynamic("symbols")(symbols)
+    __obj.asInstanceOf[Word]
+  }
+}
+

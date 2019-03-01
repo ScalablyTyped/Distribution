@@ -21,3 +21,18 @@ trait DispatchResultEvent
   var State: scala.Double
 }
 
+object DispatchResultEvent {
+  @scala.inline
+  def apply(
+    Result: js.Any,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    State: scala.Double
+  ): DispatchResultEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Result")(Result)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("State")(State)
+    __obj.asInstanceOf[DispatchResultEvent]
+  }
+}
+

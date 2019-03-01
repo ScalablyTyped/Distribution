@@ -48,3 +48,32 @@ trait MenuTheme extends js.Object {
   var topRight: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MenuTheme {
+  @scala.inline
+  def apply(
+    active: java.lang.String = null,
+    bottomLeft: java.lang.String = null,
+    bottomRight: java.lang.String = null,
+    menu: java.lang.String = null,
+    menuInner: java.lang.String = null,
+    outline: java.lang.String = null,
+    rippled: java.lang.String = null,
+    static: java.lang.String = null,
+    topLeft: java.lang.String = null,
+    topRight: java.lang.String = null
+  ): MenuTheme = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (bottomLeft != null) __obj.updateDynamic("bottomLeft")(bottomLeft)
+    if (bottomRight != null) __obj.updateDynamic("bottomRight")(bottomRight)
+    if (menu != null) __obj.updateDynamic("menu")(menu)
+    if (menuInner != null) __obj.updateDynamic("menuInner")(menuInner)
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (rippled != null) __obj.updateDynamic("rippled")(rippled)
+    if (static != null) __obj.updateDynamic("static")(static)
+    if (topLeft != null) __obj.updateDynamic("topLeft")(topLeft)
+    if (topRight != null) __obj.updateDynamic("topRight")(topRight)
+    __obj.asInstanceOf[MenuTheme]
+  }
+}
+

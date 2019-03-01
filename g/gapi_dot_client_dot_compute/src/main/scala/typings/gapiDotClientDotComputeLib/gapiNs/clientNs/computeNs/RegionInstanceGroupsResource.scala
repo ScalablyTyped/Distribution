@@ -19,3 +19,32 @@ trait RegionInstanceGroupsResource extends js.Object {
   def setNamedPorts(request: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object RegionInstanceGroupsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroup]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupList]
+    ],
+    listInstances: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroupKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupsListInstances]
+    ],
+    setNamedPorts: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): RegionInstanceGroupsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("listInstances")(listInstances)
+    __obj.updateDynamic("setNamedPorts")(setNamedPorts)
+    __obj.asInstanceOf[RegionInstanceGroupsResource]
+  }
+}
+

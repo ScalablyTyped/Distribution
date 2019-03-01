@@ -16,3 +16,13 @@ trait ListSubscriptionsResponse extends js.Object {
   var subscriptions: js.UndefOr[js.Array[Subscription]] = js.undefined
 }
 
+object ListSubscriptionsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, subscriptions: js.Array[Subscription] = null): ListSubscriptionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (subscriptions != null) __obj.updateDynamic("subscriptions")(subscriptions)
+    __obj.asInstanceOf[ListSubscriptionsResponse]
+  }
+}
+

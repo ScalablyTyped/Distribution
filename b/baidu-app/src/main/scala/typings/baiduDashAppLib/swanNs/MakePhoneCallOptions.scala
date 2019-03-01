@@ -14,3 +14,20 @@ trait MakePhoneCallOptions
   var phoneNumber: java.lang.String
 }
 
+object MakePhoneCallOptions {
+  @scala.inline
+  def apply(
+    phoneNumber: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): MakePhoneCallOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[MakePhoneCallOptions]
+  }
+}
+

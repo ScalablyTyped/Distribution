@@ -260,6 +260,12 @@ object LexRuntimeNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[PostTextResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _DialogState extends js.Object
+  
+  trait _MessageFormatType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Accept = java.lang.String
   type AttributesString = java.lang.String
@@ -270,16 +276,16 @@ object LexRuntimeNs extends js.Object {
   type ButtonValueStringWithLength = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ContentType = awsDashSdkLib.awsDashSdkLibStrings.`application/vndDOTamazonawsDOTcardDOTgeneric` | java.lang.String
-  type DialogState = awsDashSdkLib.awsDashSdkLibStrings.ElicitIntent | awsDashSdkLib.awsDashSdkLibStrings.ConfirmIntent | awsDashSdkLib.awsDashSdkLibStrings.ElicitSlot | awsDashSdkLib.awsDashSdkLibStrings.Fulfilled | awsDashSdkLib.awsDashSdkLibStrings.ReadyForFulfillment | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type DialogState = _DialogState | java.lang.String
   type HttpContentType = java.lang.String
   type IntentName = java.lang.String
-  type MessageFormatType = awsDashSdkLib.awsDashSdkLibStrings.PlainText | awsDashSdkLib.awsDashSdkLibStrings.CustomPayload | awsDashSdkLib.awsDashSdkLibStrings.SSML | awsDashSdkLib.awsDashSdkLibStrings.Composite | java.lang.String
+  type MessageFormatType = _MessageFormatType | java.lang.String
   type String = java.lang.String
   type StringUrlWithLength = java.lang.String
   type StringWithLength = java.lang.String
   type Text = java.lang.String
   type UserId = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-11-28` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type genericAttachmentList = js.Array[GenericAttachment]
   type listOfButtons = js.Array[Button]
 }

@@ -34,3 +34,20 @@ trait AndroidTestLoop extends js.Object {
   var scenarios: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object AndroidTestLoop {
+  @scala.inline
+  def apply(
+    appApk: FileReference = null,
+    appPackageId: java.lang.String = null,
+    scenarioLabels: js.Array[java.lang.String] = null,
+    scenarios: js.Array[scala.Double] = null
+  ): AndroidTestLoop = {
+    val __obj = js.Dynamic.literal()
+    if (appApk != null) __obj.updateDynamic("appApk")(appApk)
+    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId)
+    if (scenarioLabels != null) __obj.updateDynamic("scenarioLabels")(scenarioLabels)
+    if (scenarios != null) __obj.updateDynamic("scenarios")(scenarios)
+    __obj.asInstanceOf[AndroidTestLoop]
+  }
+}
+

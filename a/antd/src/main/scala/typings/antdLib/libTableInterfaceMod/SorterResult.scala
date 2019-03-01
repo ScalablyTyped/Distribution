@@ -12,3 +12,15 @@ trait SorterResult[T] extends js.Object {
   var order: SortOrder
 }
 
+object SorterResult {
+  @scala.inline
+  def apply[T](column: ColumnProps[T], columnKey: java.lang.String, field: java.lang.String, order: SortOrder): SorterResult[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("columnKey")(columnKey)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("order")(order)
+    __obj.asInstanceOf[SorterResult[T]]
+  }
+}
+

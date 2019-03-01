@@ -23,3 +23,14 @@ trait INewFileResponse extends js.Object {
   var source: java.lang.String
 }
 
+object INewFileResponse {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, source: java.lang.String): INewFileResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[INewFileResponse]
+  }
+}
+

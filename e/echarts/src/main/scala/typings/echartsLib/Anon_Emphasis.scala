@@ -80,3 +80,20 @@ trait Anon_Emphasis extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Emphasis {
+  @scala.inline
+  def apply(
+    emphasis: Anon_Formatter = null,
+    formatter: js.Function | java.lang.String = null,
+    position: java.lang.String = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Emphasis = {
+    val __obj = js.Dynamic.literal()
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[Anon_Emphasis]
+  }
+}
+

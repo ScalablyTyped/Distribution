@@ -10,3 +10,13 @@ trait Anon_Down extends js.Object {
   def up(): js.Promise[_]
 }
 
+object Anon_Down {
+  @scala.inline
+  def apply(up: js.Function0[js.Promise[_]], down: js.Function0[js.Promise[_]] = null): Anon_Down = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("up")(up)
+    if (down != null) __obj.updateDynamic("down")(down)
+    __obj.asInstanceOf[Anon_Down]
+  }
+}
+

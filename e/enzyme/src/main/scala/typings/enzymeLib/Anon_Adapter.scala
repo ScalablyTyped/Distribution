@@ -17,3 +17,16 @@ trait Anon_Adapter extends js.Object {
   var disableLifecycleMethods: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Adapter {
+  @scala.inline
+  def apply(
+    adapter: enzymeLib.enzymeMod.EnzymeAdapter,
+    disableLifecycleMethods: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Adapter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adapter")(adapter)
+    if (!js.isUndefined(disableLifecycleMethods)) __obj.updateDynamic("disableLifecycleMethods")(disableLifecycleMethods)
+    __obj.asInstanceOf[Anon_Adapter]
+  }
+}
+

@@ -20,3 +20,14 @@ trait MirrorModeInfo extends js.Object {
   ] = js.undefined
 }
 
+object MirrorModeInfo {
+  @scala.inline
+  def apply(
+    mode: chromeDashAppsLib.chromeDashAppsLibStrings.off | chromeDashAppsLib.chromeDashAppsLibStrings.normal | chromeDashAppsLib.chromeDashAppsLibStrings.mixed = null
+  ): MirrorModeInfo = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MirrorModeInfo]
+  }
+}
+

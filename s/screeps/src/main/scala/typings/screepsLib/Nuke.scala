@@ -23,3 +23,22 @@ trait Nuke extends RoomObject {
   var timeToLand: scala.Double
 }
 
+object Nuke {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    launchRoomName: java.lang.String,
+    pos: RoomPosition,
+    timeToLand: scala.Double,
+    room: Room = null
+  ): Nuke = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("launchRoomName")(launchRoomName)
+    __obj.updateDynamic("pos")(pos)
+    __obj.updateDynamic("timeToLand")(timeToLand)
+    if (room != null) __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[Nuke]
+  }
+}
+

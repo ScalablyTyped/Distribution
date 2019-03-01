@@ -19,3 +19,18 @@ trait ISwitchProps extends IControlProps {
   var innerLabelChecked: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ISwitchProps {
+  @scala.inline
+  def apply(
+    IControlProps: IControlProps = null,
+    innerLabel: java.lang.String = null,
+    innerLabelChecked: java.lang.String = null
+  ): ISwitchProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IControlProps)
+    if (innerLabel != null) __obj.updateDynamic("innerLabel")(innerLabel)
+    if (innerLabelChecked != null) __obj.updateDynamic("innerLabelChecked")(innerLabelChecked)
+    __obj.asInstanceOf[ISwitchProps]
+  }
+}
+

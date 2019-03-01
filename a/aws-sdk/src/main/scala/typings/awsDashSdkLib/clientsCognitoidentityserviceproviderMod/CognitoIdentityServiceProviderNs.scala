@@ -5688,31 +5688,93 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   
   trait VerifyUserAttributeResponse extends js.Object
   
+  trait _AccountTakeoverEventActionType extends js.Object
+  
+  trait _AdvancedSecurityModeType extends js.Object
+  
+  trait _AliasAttributeType extends js.Object
+  
+  trait _AttributeDataType extends js.Object
+  
+  trait _AuthFlowType extends js.Object
+  
+  trait _ChallengeName extends js.Object
+  
+  trait _ChallengeNameType extends js.Object
+  
+  trait _ChallengeResponse extends js.Object
+  
+  trait _CompromisedCredentialsEventActionType extends js.Object
+  
+  trait _DefaultEmailOptionType extends js.Object
+  
+  trait _DeliveryMediumType extends js.Object
+  
+  trait _DeviceRememberedStatusType extends js.Object
+  
+  trait _DomainStatusType extends js.Object
+  
+  trait _EventFilterType extends js.Object
+  
+  trait _EventResponseType extends js.Object
+  
+  trait _EventType extends js.Object
+  
+  trait _ExplicitAuthFlowsType extends js.Object
+  
+  trait _FeedbackValueType extends js.Object
+  
+  trait _IdentityProviderTypeType extends js.Object
+  
+  trait _MessageActionType extends js.Object
+  
+  trait _OAuthFlowType extends js.Object
+  
+  trait _RiskDecisionType extends js.Object
+  
+  trait _RiskLevelType extends js.Object
+  
+  trait _StatusType extends js.Object
+  
+  trait _UserImportJobStatusType extends js.Object
+  
+  trait _UserPoolMfaType extends js.Object
+  
+  trait _UserStatusType extends js.Object
+  
+  trait _UsernameAttributeType extends js.Object
+  
+  trait _VerifiedAttributeType extends js.Object
+  
+  trait _VerifySoftwareTokenResponseType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AWSAccountIdType = java.lang.String
   type AccountTakeoverActionNotifyType = scala.Boolean
-  type AccountTakeoverEventActionType = awsDashSdkLib.awsDashSdkLibStrings.BLOCK | awsDashSdkLib.awsDashSdkLibStrings.MFA_IF_CONFIGURED | awsDashSdkLib.awsDashSdkLibStrings.MFA_REQUIRED | awsDashSdkLib.awsDashSdkLibStrings.NO_ACTION | java.lang.String
+  type AccountTakeoverEventActionType = _AccountTakeoverEventActionType | java.lang.String
   type AdminCreateUserUnusedAccountValidityDaysType = scala.Double
-  type AdvancedSecurityModeType = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.AUDIT | awsDashSdkLib.awsDashSdkLibStrings.ENFORCED | java.lang.String
-  type AliasAttributeType = awsDashSdkLib.awsDashSdkLibStrings.phone_number | awsDashSdkLib.awsDashSdkLibStrings.email | awsDashSdkLib.awsDashSdkLibStrings.preferred_username | java.lang.String
+  type AdvancedSecurityModeType = _AdvancedSecurityModeType | java.lang.String
+  type AliasAttributeType = _AliasAttributeType | java.lang.String
   type AliasAttributesListType = js.Array[AliasAttributeType]
   type ArnType = java.lang.String
-  type AttributeDataType = awsDashSdkLib.awsDashSdkLibStrings.String | awsDashSdkLib.awsDashSdkLibStrings.Number | awsDashSdkLib.awsDashSdkLibStrings.DateTime | awsDashSdkLib.awsDashSdkLibStrings.Boolean | java.lang.String
+  type AttributeDataType = _AttributeDataType | java.lang.String
   type AttributeListType = js.Array[AttributeType]
   type AttributeMappingKeyType = java.lang.String
   type AttributeNameListType = js.Array[AttributeNameType]
   type AttributeNameType = java.lang.String
   type AttributeValueType = java.lang.String
   type AuthEventsType = js.Array[AuthEventType]
-  type AuthFlowType = awsDashSdkLib.awsDashSdkLibStrings.USER_SRP_AUTH | awsDashSdkLib.awsDashSdkLibStrings.REFRESH_TOKEN_AUTH | awsDashSdkLib.awsDashSdkLibStrings.REFRESH_TOKEN | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM_AUTH | awsDashSdkLib.awsDashSdkLibStrings.ADMIN_NO_SRP_AUTH | awsDashSdkLib.awsDashSdkLibStrings.USER_PASSWORD_AUTH | java.lang.String
+  type AuthFlowType = _AuthFlowType | java.lang.String
   type BlockedIPRangeListType = js.Array[StringType]
   type BooleanType = scala.Boolean
   type CSSType = java.lang.String
   type CSSVersionType = java.lang.String
   type CallbackURLsListType = js.Array[RedirectUrlType]
-  type ChallengeName = awsDashSdkLib.awsDashSdkLibStrings.Password | awsDashSdkLib.awsDashSdkLibStrings.Mfa | java.lang.String
-  type ChallengeNameType = awsDashSdkLib.awsDashSdkLibStrings.SMS_MFA | awsDashSdkLib.awsDashSdkLibStrings.SOFTWARE_TOKEN_MFA | awsDashSdkLib.awsDashSdkLibStrings.SELECT_MFA_TYPE | awsDashSdkLib.awsDashSdkLibStrings.MFA_SETUP | awsDashSdkLib.awsDashSdkLibStrings.PASSWORD_VERIFIER | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM_CHALLENGE | awsDashSdkLib.awsDashSdkLibStrings.DEVICE_SRP_AUTH | awsDashSdkLib.awsDashSdkLibStrings.DEVICE_PASSWORD_VERIFIER | awsDashSdkLib.awsDashSdkLibStrings.ADMIN_NO_SRP_AUTH | awsDashSdkLib.awsDashSdkLibStrings.NEW_PASSWORD_REQUIRED | java.lang.String
-  type ChallengeResponse = awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.Failure | java.lang.String
+  type ChallengeName = _ChallengeName | java.lang.String
+  type ChallengeNameType = _ChallengeNameType | java.lang.String
+  type ChallengeResponse = _ChallengeResponse | java.lang.String
   type ChallengeResponseListType = js.Array[ChallengeResponseType]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientIdType = java.lang.String
@@ -5722,20 +5784,20 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   type ClientSecretType = java.lang.String
   type CodeDeliveryDetailsListType = js.Array[CodeDeliveryDetailsType]
   type CompletionMessageType = java.lang.String
-  type CompromisedCredentialsEventActionType = awsDashSdkLib.awsDashSdkLibStrings.BLOCK | awsDashSdkLib.awsDashSdkLibStrings.NO_ACTION | java.lang.String
+  type CompromisedCredentialsEventActionType = _CompromisedCredentialsEventActionType | java.lang.String
   type ConfirmationCodeType = java.lang.String
   type CustomAttributeNameType = java.lang.String
   type CustomAttributesListType = js.Array[SchemaAttributeType]
   type DateType = stdLib.Date
-  type DefaultEmailOptionType = awsDashSdkLib.awsDashSdkLibStrings.CONFIRM_WITH_LINK | awsDashSdkLib.awsDashSdkLibStrings.CONFIRM_WITH_CODE | java.lang.String
+  type DefaultEmailOptionType = _DefaultEmailOptionType | java.lang.String
   type DeliveryMediumListType = js.Array[DeliveryMediumType]
-  type DeliveryMediumType = awsDashSdkLib.awsDashSdkLibStrings.SMS | awsDashSdkLib.awsDashSdkLibStrings.EMAIL | java.lang.String
+  type DeliveryMediumType = _DeliveryMediumType | java.lang.String
   type DescriptionType = java.lang.String
   type DeviceKeyType = java.lang.String
   type DeviceListType = js.Array[DeviceType]
   type DeviceNameType = java.lang.String
-  type DeviceRememberedStatusType = awsDashSdkLib.awsDashSdkLibStrings.remembered | awsDashSdkLib.awsDashSdkLibStrings.not_remembered | java.lang.String
-  type DomainStatusType = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type DeviceRememberedStatusType = _DeviceRememberedStatusType | java.lang.String
+  type DomainStatusType = _DomainStatusType | java.lang.String
   type DomainType = java.lang.String
   type DomainVersionType = java.lang.String
   type EmailAddressType = java.lang.String
@@ -5745,21 +5807,21 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   type EmailVerificationMessageType = java.lang.String
   type EmailVerificationSubjectByLinkType = java.lang.String
   type EmailVerificationSubjectType = java.lang.String
-  type EventFilterType = awsDashSdkLib.awsDashSdkLibStrings.SIGN_IN | awsDashSdkLib.awsDashSdkLibStrings.PASSWORD_CHANGE | awsDashSdkLib.awsDashSdkLibStrings.SIGN_UP | java.lang.String
+  type EventFilterType = _EventFilterType | java.lang.String
   type EventFiltersType = js.Array[EventFilterType]
   type EventIdType = java.lang.String
-  type EventResponseType = awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.Failure | java.lang.String
-  type EventType = awsDashSdkLib.awsDashSdkLibStrings.SignIn | awsDashSdkLib.awsDashSdkLibStrings.SignUp | awsDashSdkLib.awsDashSdkLibStrings.ForgotPassword | java.lang.String
+  type EventResponseType = _EventResponseType | java.lang.String
+  type EventType = _EventType | java.lang.String
   type ExplicitAuthFlowsListType = js.Array[ExplicitAuthFlowsType]
-  type ExplicitAuthFlowsType = awsDashSdkLib.awsDashSdkLibStrings.ADMIN_NO_SRP_AUTH | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM_AUTH_FLOW_ONLY | awsDashSdkLib.awsDashSdkLibStrings.USER_PASSWORD_AUTH | java.lang.String
-  type FeedbackValueType = awsDashSdkLib.awsDashSdkLibStrings.Valid | awsDashSdkLib.awsDashSdkLibStrings.Invalid | java.lang.String
+  type ExplicitAuthFlowsType = _ExplicitAuthFlowsType | java.lang.String
+  type FeedbackValueType = _FeedbackValueType | java.lang.String
   type ForceAliasCreation = scala.Boolean
   type GenerateSecret = scala.Boolean
   type GroupListType = js.Array[GroupType]
   type GroupNameType = java.lang.String
   type HexStringType = java.lang.String
   type HttpHeaderList = js.Array[HttpHeader]
-  type IdentityProviderTypeType = awsDashSdkLib.awsDashSdkLibStrings.SAML | awsDashSdkLib.awsDashSdkLibStrings.Facebook | awsDashSdkLib.awsDashSdkLibStrings.Google | awsDashSdkLib.awsDashSdkLibStrings.LoginWithAmazon | awsDashSdkLib.awsDashSdkLibStrings.OIDC | java.lang.String
+  type IdentityProviderTypeType = _IdentityProviderTypeType | java.lang.String
   type IdpIdentifierType = java.lang.String
   type IdpIdentifiersListType = js.Array[IdpIdentifierType]
   type ImageFileType = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsCognitoidentityserviceproviderMod.Blob | java.lang.String
@@ -5771,8 +5833,8 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   type LogoutURLsListType = js.Array[RedirectUrlType]
   type LongType = scala.Double
   type MFAOptionListType = js.Array[MFAOptionType]
-  type MessageActionType = awsDashSdkLib.awsDashSdkLibStrings.RESEND | awsDashSdkLib.awsDashSdkLibStrings.SUPPRESS | java.lang.String
-  type OAuthFlowType = awsDashSdkLib.awsDashSdkLibStrings.code | awsDashSdkLib.awsDashSdkLibStrings.`implicit` | awsDashSdkLib.awsDashSdkLibStrings.client_credentials | java.lang.String
+  type MessageActionType = _MessageActionType | java.lang.String
+  type OAuthFlowType = _OAuthFlowType | java.lang.String
   type OAuthFlowsType = js.Array[OAuthFlowType]
   type PaginationKey = java.lang.String
   type PaginationKeyType = java.lang.String
@@ -5794,8 +5856,8 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   type ResourceServerScopeListType = js.Array[ResourceServerScopeType]
   type ResourceServerScopeNameType = java.lang.String
   type ResourceServersListType = js.Array[ResourceServerType]
-  type RiskDecisionType = awsDashSdkLib.awsDashSdkLibStrings.NoRisk | awsDashSdkLib.awsDashSdkLibStrings.AccountTakeover | awsDashSdkLib.awsDashSdkLibStrings.Block | java.lang.String
-  type RiskLevelType = awsDashSdkLib.awsDashSdkLibStrings.Low | awsDashSdkLib.awsDashSdkLibStrings.Medium | awsDashSdkLib.awsDashSdkLibStrings.High | java.lang.String
+  type RiskDecisionType = _RiskDecisionType | java.lang.String
+  type RiskLevelType = _RiskLevelType | java.lang.String
   type S3BucketType = java.lang.String
   type SchemaAttributesListType = js.Array[SchemaAttributeType]
   type ScopeListType = js.Array[ScopeType]
@@ -5808,29 +5870,29 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   type SkippedIPRangeListType = js.Array[StringType]
   type SmsVerificationMessageType = java.lang.String
   type SoftwareTokenMFAUserCodeType = java.lang.String
-  type StatusType = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Disabled | java.lang.String
+  type StatusType = _StatusType | java.lang.String
   type StringType = java.lang.String
   type SupportedIdentityProvidersListType = js.Array[ProviderNameType]
   type TokenModelType = java.lang.String
   type UserFilterType = java.lang.String
   type UserImportJobIdType = java.lang.String
   type UserImportJobNameType = java.lang.String
-  type UserImportJobStatusType = awsDashSdkLib.awsDashSdkLibStrings.Created | awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Expired | awsDashSdkLib.awsDashSdkLibStrings.Stopped | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Succeeded | java.lang.String
+  type UserImportJobStatusType = _UserImportJobStatusType | java.lang.String
   type UserImportJobsListType = js.Array[UserImportJobType]
   type UserMFASettingListType = js.Array[StringType]
   type UserPoolClientListType = js.Array[UserPoolClientDescription]
   type UserPoolIdType = java.lang.String
   type UserPoolListType = js.Array[UserPoolDescriptionType]
-  type UserPoolMfaType = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.ON | awsDashSdkLib.awsDashSdkLibStrings.OPTIONAL | java.lang.String
+  type UserPoolMfaType = _UserPoolMfaType | java.lang.String
   type UserPoolNameType = java.lang.String
-  type UserStatusType = awsDashSdkLib.awsDashSdkLibStrings.UNCONFIRMED | awsDashSdkLib.awsDashSdkLibStrings.CONFIRMED | awsDashSdkLib.awsDashSdkLibStrings.ARCHIVED | awsDashSdkLib.awsDashSdkLibStrings.COMPROMISED | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | awsDashSdkLib.awsDashSdkLibStrings.RESET_REQUIRED | awsDashSdkLib.awsDashSdkLibStrings.FORCE_CHANGE_PASSWORD | java.lang.String
-  type UsernameAttributeType = awsDashSdkLib.awsDashSdkLibStrings.phone_number | awsDashSdkLib.awsDashSdkLibStrings.email | java.lang.String
+  type UserStatusType = _UserStatusType | java.lang.String
+  type UsernameAttributeType = _UsernameAttributeType | java.lang.String
   type UsernameAttributesListType = js.Array[UsernameAttributeType]
   type UsernameType = java.lang.String
   type UsersListType = js.Array[UserType]
-  type VerifiedAttributeType = awsDashSdkLib.awsDashSdkLibStrings.phone_number | awsDashSdkLib.awsDashSdkLibStrings.email | java.lang.String
+  type VerifiedAttributeType = _VerifiedAttributeType | java.lang.String
   type VerifiedAttributesListType = js.Array[VerifiedAttributeType]
-  type VerifySoftwareTokenResponseType = awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-04-18` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type VerifySoftwareTokenResponseType = _VerifySoftwareTokenResponseType | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

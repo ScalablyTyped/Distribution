@@ -86,3 +86,36 @@ trait XDesktop
   def terminate(): scala.Boolean
 }
 
+object XDesktop {
+  @scala.inline
+  def apply(
+    Components: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess,
+    CurrentComponent: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent,
+    CurrentFrame: XFrame,
+    acquire: js.Function0[scala.Unit],
+    addTerminateListener: js.Function1[XTerminateListener, scala.Unit],
+    getComponents: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess],
+    getCurrentComponent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
+    getCurrentFrame: js.Function0[XFrame],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTerminateListener: js.Function1[XTerminateListener, scala.Unit],
+    terminate: js.Function0[scala.Boolean]
+  ): XDesktop = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Components")(Components)
+    __obj.updateDynamic("CurrentComponent")(CurrentComponent)
+    __obj.updateDynamic("CurrentFrame")(CurrentFrame)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addTerminateListener")(addTerminateListener)
+    __obj.updateDynamic("getComponents")(getComponents)
+    __obj.updateDynamic("getCurrentComponent")(getCurrentComponent)
+    __obj.updateDynamic("getCurrentFrame")(getCurrentFrame)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeTerminateListener")(removeTerminateListener)
+    __obj.updateDynamic("terminate")(terminate)
+    __obj.asInstanceOf[XDesktop]
+  }
+}
+

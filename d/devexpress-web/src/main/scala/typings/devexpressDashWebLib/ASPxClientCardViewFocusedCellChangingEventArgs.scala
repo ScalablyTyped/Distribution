@@ -16,3 +16,13 @@ trait ASPxClientCardViewFocusedCellChangingEventArgs extends ASPxClientCancelEve
   var cellInfo: ASPxClientCardViewCellInfo
 }
 
+object ASPxClientCardViewFocusedCellChangingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, cellInfo: ASPxClientCardViewCellInfo): ASPxClientCardViewFocusedCellChangingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("cellInfo")(cellInfo)
+    __obj.asInstanceOf[ASPxClientCardViewFocusedCellChangingEventArgs]
+  }
+}
+

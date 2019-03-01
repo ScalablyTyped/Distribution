@@ -21,3 +21,43 @@ trait RTCIceCandidatePairStats extends RTCStats {
   var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RTCIceCandidatePairStats {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    timestamp: scala.Double,
+    `type`: RTCStatsType,
+    availableIncomingBitrate: scala.Int | scala.Double = null,
+    availableOutgoingBitrate: scala.Int | scala.Double = null,
+    bytesReceived: scala.Int | scala.Double = null,
+    bytesSent: scala.Int | scala.Double = null,
+    localCandidateId: java.lang.String = null,
+    nominated: js.UndefOr[scala.Boolean] = js.undefined,
+    priority: scala.Int | scala.Double = null,
+    readable: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteCandidateId: java.lang.String = null,
+    roundTripTime: scala.Int | scala.Double = null,
+    state: RTCStatsIceCandidatePairState = null,
+    transportId: java.lang.String = null,
+    writable: js.UndefOr[scala.Boolean] = js.undefined
+  ): RTCIceCandidatePairStats = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("timestamp")(timestamp)
+    if (availableIncomingBitrate != null) __obj.updateDynamic("availableIncomingBitrate")(availableIncomingBitrate.asInstanceOf[js.Any])
+    if (availableOutgoingBitrate != null) __obj.updateDynamic("availableOutgoingBitrate")(availableOutgoingBitrate.asInstanceOf[js.Any])
+    if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
+    if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
+    if (localCandidateId != null) __obj.updateDynamic("localCandidateId")(localCandidateId)
+    if (!js.isUndefined(nominated)) __obj.updateDynamic("nominated")(nominated)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
+    if (remoteCandidateId != null) __obj.updateDynamic("remoteCandidateId")(remoteCandidateId)
+    if (roundTripTime != null) __obj.updateDynamic("roundTripTime")(roundTripTime.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (transportId != null) __obj.updateDynamic("transportId")(transportId)
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    __obj.asInstanceOf[RTCIceCandidatePairStats]
+  }
+}
+

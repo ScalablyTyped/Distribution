@@ -11,3 +11,18 @@ trait Anon_Owner extends js.Object {
   var sourceIdentifier: java.lang.String
 }
 
+object Anon_Owner {
+  @scala.inline
+  def apply(
+    owner: java.lang.String,
+    sourceIdentifier: java.lang.String,
+    sourceDetails: js.Array[Anon_EventSource] = null
+  ): Anon_Owner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("owner")(owner)
+    __obj.updateDynamic("sourceIdentifier")(sourceIdentifier)
+    if (sourceDetails != null) __obj.updateDynamic("sourceDetails")(sourceDetails)
+    __obj.asInstanceOf[Anon_Owner]
+  }
+}
+

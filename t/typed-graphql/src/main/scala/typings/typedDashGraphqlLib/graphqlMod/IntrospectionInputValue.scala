@@ -12,3 +12,19 @@ trait IntrospectionInputValue extends js.Object {
   var `type`: IntrospectionTypeRef
 }
 
+object IntrospectionInputValue {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: IntrospectionTypeRef,
+    defaultValue: java.lang.String = null,
+    description: java.lang.String = null
+  ): IntrospectionInputValue = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[IntrospectionInputValue]
+  }
+}
+

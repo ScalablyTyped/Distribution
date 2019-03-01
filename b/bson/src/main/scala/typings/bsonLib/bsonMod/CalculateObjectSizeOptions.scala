@@ -12,3 +12,16 @@ trait CalculateObjectSizeOptions extends js.Object {
   var serializeFunctions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CalculateObjectSizeOptions {
+  @scala.inline
+  def apply(
+    ignoreUndefined: js.UndefOr[scala.Boolean] = js.undefined,
+    serializeFunctions: js.UndefOr[scala.Boolean] = js.undefined
+  ): CalculateObjectSizeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined)
+    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions)
+    __obj.asInstanceOf[CalculateObjectSizeOptions]
+  }
+}
+

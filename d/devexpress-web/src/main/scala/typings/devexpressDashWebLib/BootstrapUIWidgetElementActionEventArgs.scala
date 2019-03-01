@@ -16,3 +16,14 @@ trait BootstrapUIWidgetElementActionEventArgs extends BootstrapUIWidgetEventArgs
   var target: js.Object
 }
 
+object BootstrapUIWidgetElementActionEventArgs {
+  @scala.inline
+  def apply(component: js.Object, element: js.Object, target: js.Object): BootstrapUIWidgetElementActionEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("component")(component)
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[BootstrapUIWidgetElementActionEventArgs]
+  }
+}
+

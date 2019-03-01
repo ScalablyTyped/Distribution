@@ -12,3 +12,20 @@ trait LocalBaseBlockParams extends js.Object {
   var warnings: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object LocalBaseBlockParams {
+  @scala.inline
+  def apply(
+    blockLength: scala.Int | scala.Double = null,
+    error: java.lang.String = null,
+    valueBeforeDecode: stdLib.ArrayBuffer = null,
+    warnings: js.Array[java.lang.String] = null
+  ): LocalBaseBlockParams = {
+    val __obj = js.Dynamic.literal()
+    if (blockLength != null) __obj.updateDynamic("blockLength")(blockLength.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[LocalBaseBlockParams]
+  }
+}
+

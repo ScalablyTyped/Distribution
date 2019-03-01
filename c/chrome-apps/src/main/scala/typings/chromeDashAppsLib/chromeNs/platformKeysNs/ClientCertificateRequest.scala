@@ -34,3 +34,25 @@ trait ClientCertificateRequest extends js.Object {
   ]
 }
 
+object ClientCertificateRequest {
+  @scala.inline
+  def apply(
+    certificateAuthorities: js.Array[stdLib.ArrayBuffer],
+    certificateTypes: js.Array[
+      chromeDashAppsLib.chromeNs.ToStringLiteral[
+        chromeDashAppsLib.Anon_ECDSASIGN, 
+        java.lang.String, 
+        stdLib.Exclude[
+          java.lang.String, 
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ECDSASIGN[keyof chrome-apps.Anon_ECDSASIGN] */ js.Any
+        ]
+      ]
+    ]
+  ): ClientCertificateRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("certificateAuthorities")(certificateAuthorities)
+    __obj.updateDynamic("certificateTypes")(certificateTypes)
+    __obj.asInstanceOf[ClientCertificateRequest]
+  }
+}
+

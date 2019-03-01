@@ -12,3 +12,22 @@ trait subscribeCompleteArgs extends baseResponseArgs {
   var isResubscribe: scala.Boolean
 }
 
+object subscribeCompleteArgs {
+  @scala.inline
+  def apply(
+    client: client,
+    clientId: java.lang.String,
+    isResubscribe: scala.Boolean,
+    meta: js.Any,
+    timestamp: stdLib.Date
+  ): subscribeCompleteArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("isResubscribe")(isResubscribe)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[subscribeCompleteArgs]
+  }
+}
+

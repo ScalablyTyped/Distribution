@@ -12,3 +12,20 @@ trait NavbarFormProps
   var pullRight: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NavbarFormProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[NavbarForm] = null,
+    componentClass: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    pullLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    pullRight: js.UndefOr[scala.Boolean] = js.undefined
+  ): NavbarFormProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(pullLeft)) __obj.updateDynamic("pullLeft")(pullLeft)
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
+    __obj.asInstanceOf[NavbarFormProps]
+  }
+}
+

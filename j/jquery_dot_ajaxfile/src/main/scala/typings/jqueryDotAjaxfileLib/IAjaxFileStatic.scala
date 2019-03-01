@@ -10,3 +10,16 @@ trait IAjaxFileStatic extends js.Object {
   def send[T](option: IOption): IAjaxFilePromise[T]
 }
 
+object IAjaxFileStatic {
+  @scala.inline
+  def apply(
+    DataType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataType */ js.Any,
+    send: js.Function1[IOption, IAjaxFilePromise[js.Any]]
+  ): IAjaxFileStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataType")(DataType)
+    __obj.updateDynamic("send")(send)
+    __obj.asInstanceOf[IAjaxFileStatic]
+  }
+}
+

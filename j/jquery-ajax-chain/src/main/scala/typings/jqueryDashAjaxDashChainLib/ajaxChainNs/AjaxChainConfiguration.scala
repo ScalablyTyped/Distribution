@@ -53,3 +53,28 @@ trait AjaxChainConfiguration extends js.Object {
   ] = js.undefined
 }
 
+object AjaxChainConfiguration {
+  @scala.inline
+  def apply(
+    ajaxSettings: jqueryLib.JQueryAjaxSettings,
+    appendToUrl: js.Function1[/* response */ js.Any, java.lang.String] = null,
+    hasCache: js.Function1[/* response */ js.Any, _] = null,
+    hasErrors: js.Function1[/* response */ js.Any, _] = null,
+    hasHaltingCapabilities: js.Function1[/* response */ js.Any, scala.Boolean] = null,
+    isSkippable: js.Function1[/* response */ js.Any, scala.Boolean] = null,
+    label: java.lang.String = null,
+    transform: js.Function1[/* response */ js.Any, java.lang.String | js.Object | js.Array[js.Object]] = null
+  ): AjaxChainConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ajaxSettings")(ajaxSettings)
+    if (appendToUrl != null) __obj.updateDynamic("appendToUrl")(appendToUrl)
+    if (hasCache != null) __obj.updateDynamic("hasCache")(hasCache)
+    if (hasErrors != null) __obj.updateDynamic("hasErrors")(hasErrors)
+    if (hasHaltingCapabilities != null) __obj.updateDynamic("hasHaltingCapabilities")(hasHaltingCapabilities)
+    if (isSkippable != null) __obj.updateDynamic("isSkippable")(isSkippable)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[AjaxChainConfiguration]
+  }
+}
+

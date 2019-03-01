@@ -17,3 +17,18 @@ trait IHeaderContainer
   var getRefItems_IHeaderContainer: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object IHeaderContainer {
+  @scala.inline
+  def apply(
+    IContainer: extjsLib.ExtNs.gridNs.headerNs.IContainer = null,
+    getGridColumns: js.Function0[extjsLib.ExtNs.Array] = null,
+    getRefItems: js.Function0[scala.Unit] = null
+  ): IHeaderContainer = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (getGridColumns != null) __obj.updateDynamic("getGridColumns")(getGridColumns)
+    if (getRefItems != null) __obj.updateDynamic("getRefItems")(getRefItems)
+    __obj.asInstanceOf[IHeaderContainer]
+  }
+}
+

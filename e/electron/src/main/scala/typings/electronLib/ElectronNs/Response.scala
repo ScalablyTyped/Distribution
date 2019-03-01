@@ -14,3 +14,13 @@ trait Response extends js.Object {
   var redirectURL: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply(cancel: js.UndefOr[scala.Boolean] = js.undefined, redirectURL: java.lang.String = null): Response = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL)
+    __obj.asInstanceOf[Response]
+  }
+}
+

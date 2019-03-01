@@ -36,3 +36,20 @@ trait ReplicaSetSpec extends js.Object {
   val template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec
 }
 
+object ReplicaSetSpec {
+  @scala.inline
+  def apply(
+    minReadySeconds: scala.Double,
+    replicas: scala.Double,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec
+  ): ReplicaSetSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("minReadySeconds")(minReadySeconds)
+    __obj.updateDynamic("replicas")(replicas)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[ReplicaSetSpec]
+  }
+}
+

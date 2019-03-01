@@ -12,3 +12,20 @@ trait ServiceStatus extends js.Object {
   var locationServicesEnabled: scala.Boolean
 }
 
+object ServiceStatus {
+  @scala.inline
+  def apply(
+    authorization: scala.Double,
+    hasPermissions: scala.Boolean,
+    isRunning: scala.Boolean,
+    locationServicesEnabled: scala.Boolean
+  ): ServiceStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorization")(authorization)
+    __obj.updateDynamic("hasPermissions")(hasPermissions)
+    __obj.updateDynamic("isRunning")(isRunning)
+    __obj.updateDynamic("locationServicesEnabled")(locationServicesEnabled)
+    __obj.asInstanceOf[ServiceStatus]
+  }
+}
+

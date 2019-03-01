@@ -20,3 +20,16 @@ trait TextHelper extends js.Object {
   def encodePayload(text: java.lang.String, lang: java.lang.String, encoding: java.lang.String): js.Array[scala.Double]
 }
 
+object TextHelper {
+  @scala.inline
+  def apply(
+    decodePayload: js.Function1[js.Any, java.lang.String],
+    encodePayload: js.Function3[java.lang.String, java.lang.String, java.lang.String, js.Array[scala.Double]]
+  ): TextHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decodePayload")(decodePayload)
+    __obj.updateDynamic("encodePayload")(encodePayload)
+    __obj.asInstanceOf[TextHelper]
+  }
+}
+

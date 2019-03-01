@@ -12,3 +12,20 @@ trait DomainOptions extends js.Object {
   var notNull: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DomainOptions {
+  @scala.inline
+  def apply(
+    check: java.lang.String = null,
+    constraintName: java.lang.String = null,
+    default: Value = null,
+    notNull: js.UndefOr[scala.Boolean] = js.undefined
+  ): DomainOptions = {
+    val __obj = js.Dynamic.literal()
+    if (check != null) __obj.updateDynamic("check")(check)
+    if (constraintName != null) __obj.updateDynamic("constraintName")(constraintName)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (!js.isUndefined(notNull)) __obj.updateDynamic("notNull")(notNull)
+    __obj.asInstanceOf[DomainOptions]
+  }
+}
+

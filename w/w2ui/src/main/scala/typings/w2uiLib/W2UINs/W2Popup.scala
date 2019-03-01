@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait W2Popup extends W2Common {
+trait W2Popup
+  extends W2Common
+     with W2Object {
   var defaults: js.Object = js.native
   var status: java.lang.String = js.native
   def clear(): scala.Unit = js.native

@@ -15,3 +15,13 @@ trait Options extends js.Object {
   var projection: js.UndefOr[heremapsLib.HNs.geoNs.IProjection] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(opacity: scala.Int | scala.Double = null, projection: heremapsLib.HNs.geoNs.IProjection = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    __obj.asInstanceOf[Options]
+  }
+}
+

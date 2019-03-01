@@ -14,3 +14,24 @@ trait RPCLoginOptions extends js.Object {
   var tokenEndpoint: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RPCLoginOptions {
+  @scala.inline
+  def apply(
+    clientId: java.lang.String,
+    accessToken: java.lang.String = null,
+    clientSecret: java.lang.String = null,
+    rpcToken: java.lang.String = null,
+    scopes: js.Array[java.lang.String] = null,
+    tokenEndpoint: java.lang.String = null
+  ): RPCLoginOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientId")(clientId)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
+    if (rpcToken != null) __obj.updateDynamic("rpcToken")(rpcToken)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (tokenEndpoint != null) __obj.updateDynamic("tokenEndpoint")(tokenEndpoint)
+    __obj.asInstanceOf[RPCLoginOptions]
+  }
+}
+

@@ -52,3 +52,34 @@ trait CanvasCameraOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CanvasCameraOptions {
+  @scala.inline
+  def apply(
+    cameraFacing: cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.front | cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.back = null,
+    canvas: Anon_HeightWidth = null,
+    capture: Anon_HeightWidth = null,
+    flashMode: js.UndefOr[scala.Boolean] = js.undefined,
+    fps: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    onAfterDraw: js.Function1[/* frame */ js.UndefOr[Frame], scala.Unit] = null,
+    onBeforeDraw: js.Function1[/* frame */ js.UndefOr[Frame], scala.Unit] = null,
+    thumbnailRatio: scala.Int | scala.Double = null,
+    use: cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.file | cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.data = null,
+    width: scala.Int | scala.Double = null
+  ): CanvasCameraOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cameraFacing != null) __obj.updateDynamic("cameraFacing")(cameraFacing.asInstanceOf[js.Any])
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
+    if (capture != null) __obj.updateDynamic("capture")(capture)
+    if (!js.isUndefined(flashMode)) __obj.updateDynamic("flashMode")(flashMode)
+    if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (onAfterDraw != null) __obj.updateDynamic("onAfterDraw")(onAfterDraw)
+    if (onBeforeDraw != null) __obj.updateDynamic("onBeforeDraw")(onBeforeDraw)
+    if (thumbnailRatio != null) __obj.updateDynamic("thumbnailRatio")(thumbnailRatio.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CanvasCameraOptions]
+  }
+}
+

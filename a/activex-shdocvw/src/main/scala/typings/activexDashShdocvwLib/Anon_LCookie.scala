@@ -9,3 +9,12 @@ trait Anon_LCookie extends js.Object {
   val lCookie: scala.Double
 }
 
+object Anon_LCookie {
+  @scala.inline
+  def apply(lCookie: scala.Double): Anon_LCookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lCookie")(lCookie)
+    __obj.asInstanceOf[Anon_LCookie]
+  }
+}
+

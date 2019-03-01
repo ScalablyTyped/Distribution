@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Lazy")
 @js.native
-class Lazy () extends js.Object {
+class Lazy ()
+  extends swiperLib.swiperMod.SwiperModule {
   /**
     * Load/update lazy images based on current slider state (position)
     */

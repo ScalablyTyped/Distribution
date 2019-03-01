@@ -106,3 +106,66 @@ trait VpnConnectionState extends js.Object {
   val vpnGatewayId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object VpnConnectionState {
+  @scala.inline
+  def apply(
+    customerGatewayConfiguration: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customerGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    routes: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DestinationCidrBlockSource]
+      ]
+    ] = null,
+    staticRoutesOnly: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    transitGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel1Address: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel1BgpAsn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel1BgpHoldtime: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    tunnel1CgwInsideAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel1InsideCidr: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel1PresharedKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel1VgwInsideAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel2Address: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel2BgpAsn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel2BgpHoldtime: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    tunnel2CgwInsideAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel2InsideCidr: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel2PresharedKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tunnel2VgwInsideAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vgwTelemetries: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcceptedRouteCountLastStatusChange]
+      ]
+    ] = null,
+    vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): VpnConnectionState = {
+    val __obj = js.Dynamic.literal()
+    if (customerGatewayConfiguration != null) __obj.updateDynamic("customerGatewayConfiguration")(customerGatewayConfiguration.asInstanceOf[js.Any])
+    if (customerGatewayId != null) __obj.updateDynamic("customerGatewayId")(customerGatewayId.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
+    if (staticRoutesOnly != null) __obj.updateDynamic("staticRoutesOnly")(staticRoutesOnly.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
+    if (tunnel1Address != null) __obj.updateDynamic("tunnel1Address")(tunnel1Address.asInstanceOf[js.Any])
+    if (tunnel1BgpAsn != null) __obj.updateDynamic("tunnel1BgpAsn")(tunnel1BgpAsn.asInstanceOf[js.Any])
+    if (tunnel1BgpHoldtime != null) __obj.updateDynamic("tunnel1BgpHoldtime")(tunnel1BgpHoldtime.asInstanceOf[js.Any])
+    if (tunnel1CgwInsideAddress != null) __obj.updateDynamic("tunnel1CgwInsideAddress")(tunnel1CgwInsideAddress.asInstanceOf[js.Any])
+    if (tunnel1InsideCidr != null) __obj.updateDynamic("tunnel1InsideCidr")(tunnel1InsideCidr.asInstanceOf[js.Any])
+    if (tunnel1PresharedKey != null) __obj.updateDynamic("tunnel1PresharedKey")(tunnel1PresharedKey.asInstanceOf[js.Any])
+    if (tunnel1VgwInsideAddress != null) __obj.updateDynamic("tunnel1VgwInsideAddress")(tunnel1VgwInsideAddress.asInstanceOf[js.Any])
+    if (tunnel2Address != null) __obj.updateDynamic("tunnel2Address")(tunnel2Address.asInstanceOf[js.Any])
+    if (tunnel2BgpAsn != null) __obj.updateDynamic("tunnel2BgpAsn")(tunnel2BgpAsn.asInstanceOf[js.Any])
+    if (tunnel2BgpHoldtime != null) __obj.updateDynamic("tunnel2BgpHoldtime")(tunnel2BgpHoldtime.asInstanceOf[js.Any])
+    if (tunnel2CgwInsideAddress != null) __obj.updateDynamic("tunnel2CgwInsideAddress")(tunnel2CgwInsideAddress.asInstanceOf[js.Any])
+    if (tunnel2InsideCidr != null) __obj.updateDynamic("tunnel2InsideCidr")(tunnel2InsideCidr.asInstanceOf[js.Any])
+    if (tunnel2PresharedKey != null) __obj.updateDynamic("tunnel2PresharedKey")(tunnel2PresharedKey.asInstanceOf[js.Any])
+    if (tunnel2VgwInsideAddress != null) __obj.updateDynamic("tunnel2VgwInsideAddress")(tunnel2VgwInsideAddress.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (vgwTelemetries != null) __obj.updateDynamic("vgwTelemetries")(vgwTelemetries.asInstanceOf[js.Any])
+    if (vpnGatewayId != null) __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpnConnectionState]
+  }
+}
+

@@ -19,3 +19,24 @@ trait CustomResourceOptions extends ResourceOptions {
   var provider: js.UndefOr[ProviderResource] = js.undefined
 }
 
+object CustomResourceOptions {
+  @scala.inline
+  def apply(
+    deleteBeforeReplace: js.UndefOr[scala.Boolean] = js.undefined,
+    dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]]] | atPulumiPulumiLib.outputMod.Input[Resource] = null,
+    id: atPulumiPulumiLib.outputMod.Input[ID] = null,
+    parent: Resource = null,
+    protect: js.UndefOr[scala.Boolean] = js.undefined,
+    provider: ProviderResource = null
+  ): CustomResourceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace)
+    if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    __obj.asInstanceOf[CustomResourceOptions]
+  }
+}
+

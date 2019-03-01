@@ -12,3 +12,14 @@ trait InterchangeOptions extends js.Object {
   var named_queries: js.UndefOr[js.Object] = js.undefined
 }
 
+object InterchangeOptions {
+  @scala.inline
+  def apply(directives: js.Object = null, load_attr: java.lang.String = null, named_queries: js.Object = null): InterchangeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (load_attr != null) __obj.updateDynamic("load_attr")(load_attr)
+    if (named_queries != null) __obj.updateDynamic("named_queries")(named_queries)
+    __obj.asInstanceOf[InterchangeOptions]
+  }
+}
+

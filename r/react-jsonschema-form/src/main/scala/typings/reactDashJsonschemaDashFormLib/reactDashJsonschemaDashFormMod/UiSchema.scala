@@ -13,3 +13,22 @@ trait UiSchema
   var `ui:widget`: js.UndefOr[Widget | java.lang.String] = js.undefined
 }
 
+object UiSchema {
+  @scala.inline
+  def apply(
+    StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    `ui:field`: Field | java.lang.String = null,
+    `ui:options`: js.Object = null,
+    `ui:order`: js.Array[java.lang.String] = null,
+    `ui:widget`: Widget | java.lang.String = null
+  ): UiSchema = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (`ui:field` != null) __obj.updateDynamic("ui:field")(`ui:field`.asInstanceOf[js.Any])
+    if (`ui:options` != null) __obj.updateDynamic("ui:options")(`ui:options`)
+    if (`ui:order` != null) __obj.updateDynamic("ui:order")(`ui:order`)
+    if (`ui:widget` != null) __obj.updateDynamic("ui:widget")(`ui:widget`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UiSchema]
+  }
+}
+

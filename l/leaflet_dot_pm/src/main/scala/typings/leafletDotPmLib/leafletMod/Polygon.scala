@@ -9,3 +9,12 @@ trait Polygon extends js.Object {
   var pm: leafletDotPmLib.leafletMod.PMNs.EditNs.Line
 }
 
+object Polygon {
+  @scala.inline
+  def apply(pm: leafletDotPmLib.leafletMod.PMNs.EditNs.Line): Polygon = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pm")(pm)
+    __obj.asInstanceOf[Polygon]
+  }
+}
+

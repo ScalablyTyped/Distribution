@@ -22,3 +22,18 @@ trait Plugin extends js.Object {
   ): scala.Boolean
 }
 
+object Plugin {
+  @scala.inline
+  def apply(
+    `match`: js.Function2[
+      protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.AllRequests[js.Any, js.Any], 
+      protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.AllRequests[js.Any, js.Any], 
+      scala.Boolean
+    ]
+  ): Plugin = {
+    val __obj = js.Dynamic.literal(`match` = `match`)
+  
+    __obj.asInstanceOf[Plugin]
+  }
+}
+

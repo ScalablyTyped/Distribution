@@ -19,3 +19,13 @@ trait TabIconInsets extends js.Object {
   var top: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TabIconInsets {
+  @scala.inline
+  def apply(left: scala.Int | scala.Double = null, top: scala.Int | scala.Double = null): TabIconInsets = {
+    val __obj = js.Dynamic.literal()
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TabIconInsets]
+  }
+}
+

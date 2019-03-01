@@ -12,3 +12,18 @@ trait MalformedNumberFormatException
   var CheckPos: scala.Double
 }
 
+object MalformedNumberFormatException {
+  @scala.inline
+  def apply(
+    CheckPos: scala.Double,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String
+  ): MalformedNumberFormatException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CheckPos")(CheckPos)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[MalformedNumberFormatException]
+  }
+}
+

@@ -16,3 +16,20 @@ trait GetDetails extends js.Object {
   var secondaryUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetDetails {
+  @scala.inline
+  def apply(
+    primaryUrl: java.lang.String,
+    incognito: js.UndefOr[scala.Boolean] = js.undefined,
+    resourceIdentifier: ResourceIdentifier = null,
+    secondaryUrl: java.lang.String = null
+  ): GetDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("primaryUrl")(primaryUrl)
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
+    if (resourceIdentifier != null) __obj.updateDynamic("resourceIdentifier")(resourceIdentifier)
+    if (secondaryUrl != null) __obj.updateDynamic("secondaryUrl")(secondaryUrl)
+    __obj.asInstanceOf[GetDetails]
+  }
+}
+

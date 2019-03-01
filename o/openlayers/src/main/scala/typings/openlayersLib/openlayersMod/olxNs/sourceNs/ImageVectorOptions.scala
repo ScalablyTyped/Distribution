@@ -18,3 +18,28 @@ trait ImageVectorOptions extends js.Object {
   ] = js.undefined
 }
 
+object ImageVectorOptions {
+  @scala.inline
+  def apply(
+    projection: openlayersLib.openlayersMod.ProjectionLike,
+    source: openlayersLib.openlayersMod.sourceNs.Vector,
+    attributions: openlayersLib.openlayersMod.AttributionLike = null,
+    logo: java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions = null,
+    ratio: scala.Int | scala.Double = null,
+    renderBuffer: scala.Int | scala.Double = null,
+    resolutions: js.Array[scala.Double] = null,
+    style: openlayersLib.openlayersMod.styleNs.Style | js.Array[openlayersLib.openlayersMod.styleNs.Style] | openlayersLib.openlayersMod.StyleFunction = null
+  ): ImageVectorOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    __obj.updateDynamic("source")(source)
+    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
+    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
+    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (renderBuffer != null) __obj.updateDynamic("renderBuffer")(renderBuffer.asInstanceOf[js.Any])
+    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageVectorOptions]
+  }
+}
+

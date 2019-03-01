@@ -12,3 +12,20 @@ trait GraphQLFormattedError extends js.Object {
   val path: js.UndefOr[js.Array[java.lang.String | scala.Double]]
 }
 
+object GraphQLFormattedError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    extensions: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    locations: js.Array[graphqlLib.languageLocationMod.SourceLocation] = null,
+    path: js.Array[java.lang.String | scala.Double] = null
+  ): GraphQLFormattedError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[GraphQLFormattedError]
+  }
+}
+

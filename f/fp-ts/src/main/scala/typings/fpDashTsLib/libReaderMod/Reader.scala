@@ -14,7 +14,7 @@ class Reader[E, A] protected () extends js.Object {
   val _URI: URI = js.native
   def ap[B](fab: Reader[E, js.Function1[/* a */ A, B]]): Reader[E, B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     */
   def `ap_`[B, C](`this`: Reader[E, js.Function1[/* b */ B, C]], fb: Reader[E, B]): Reader[E, C] = js.native
   def chain[B](f: js.Function1[/* a */ A, Reader[E, B]]): Reader[E, B] = js.native

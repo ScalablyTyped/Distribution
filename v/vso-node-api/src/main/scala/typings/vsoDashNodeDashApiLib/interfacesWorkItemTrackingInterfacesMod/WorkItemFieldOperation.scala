@@ -16,3 +16,13 @@ trait WorkItemFieldOperation extends js.Object {
   var referenceName: java.lang.String
 }
 
+object WorkItemFieldOperation {
+  @scala.inline
+  def apply(name: java.lang.String, referenceName: java.lang.String): WorkItemFieldOperation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("referenceName")(referenceName)
+    __obj.asInstanceOf[WorkItemFieldOperation]
+  }
+}
+

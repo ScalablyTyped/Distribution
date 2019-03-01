@@ -16,3 +16,13 @@ trait TabsGroupsContent extends js.Object {
   var groups: js.UndefOr[js.Array[TabsGroupsContentGroup]] = js.undefined
 }
 
+object TabsGroupsContent {
+  @scala.inline
+  def apply(defaults: TabsGroupsContentDefaults = null, groups: js.Array[TabsGroupsContentGroup] = null): TabsGroupsContent = {
+    val __obj = js.Dynamic.literal()
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    __obj.asInstanceOf[TabsGroupsContent]
+  }
+}
+

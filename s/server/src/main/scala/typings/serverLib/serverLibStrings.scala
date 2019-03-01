@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object serverLibStrings {
   @js.native
-  sealed trait alert extends js.Object
+  sealed trait alert
+    extends serverLib.typingsCommonMod.LogLevel
   
   @js.native
-  sealed trait critical extends js.Object
+  sealed trait critical
+    extends serverLib.typingsCommonMod.LogLevel
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends serverLib.typingsCommonMod.LogLevel
   
   @js.native
-  sealed trait emergency extends js.Object
+  sealed trait emergency
+    extends serverLib.typingsCommonMod.LogLevel
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends serverLib.typingsCommonMod.LogLevel
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends serverLib.typingsCommonMod.LogLevel
   
   @js.native
-  sealed trait notice extends js.Object
+  sealed trait notice
+    extends serverLib.typingsCommonMod.LogLevel
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends serverLib.typingsCommonMod.LogLevel
   
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]

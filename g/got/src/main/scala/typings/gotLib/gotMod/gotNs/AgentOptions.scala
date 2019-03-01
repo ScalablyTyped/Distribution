@@ -10,3 +10,13 @@ trait AgentOptions extends js.Object {
   var https: nodeLib.httpsMod.Agent
 }
 
+object AgentOptions {
+  @scala.inline
+  def apply(http: nodeLib.httpMod.Agent, https: nodeLib.httpsMod.Agent): AgentOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("http")(http)
+    __obj.updateDynamic("https")(https)
+    __obj.asInstanceOf[AgentOptions]
+  }
+}
+

@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object reactDashImgproLibStrings {
   @js.native
-  sealed trait bezier extends js.Object
+  sealed trait bezier
+    extends reactDashImgproLib.reactDashImgproMod.ReactImgproNs.Mode
   
   @js.native
-  sealed trait bicubic extends js.Object
+  sealed trait bicubic
+    extends reactDashImgproLib.reactDashImgproMod.ReactImgproNs.Mode
   
   @js.native
-  sealed trait bilinear extends js.Object
+  sealed trait bilinear
+    extends reactDashImgproLib.reactDashImgproMod.ReactImgproNs.Mode
   
   @js.native
-  sealed trait hermite extends js.Object
+  sealed trait hermite
+    extends reactDashImgproLib.reactDashImgproMod.ReactImgproNs.Mode
   
   @js.native
   sealed trait horizontal_center extends js.Object
@@ -28,7 +32,8 @@ object reactDashImgproLibStrings {
   sealed trait horizontal_right extends js.Object
   
   @js.native
-  sealed trait neighbor extends js.Object
+  sealed trait neighbor
+    extends reactDashImgproLib.reactDashImgproMod.ReactImgproNs.Mode
   
   @js.native
   sealed trait vertical_bottom extends js.Object

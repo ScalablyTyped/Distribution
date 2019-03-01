@@ -12,3 +12,13 @@ trait ListEnabledBuiltInVariablesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListEnabledBuiltInVariablesResponse {
+  @scala.inline
+  def apply(builtInVariable: js.Array[BuiltInVariable] = null, nextPageToken: java.lang.String = null): ListEnabledBuiltInVariablesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (builtInVariable != null) __obj.updateDynamic("builtInVariable")(builtInVariable)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListEnabledBuiltInVariablesResponse]
+  }
+}
+

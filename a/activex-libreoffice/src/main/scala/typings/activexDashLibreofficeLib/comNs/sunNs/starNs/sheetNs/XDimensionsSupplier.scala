@@ -23,3 +23,22 @@ trait XDimensionsSupplier
   def getDimensions(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XDimensionsSupplier {
+  @scala.inline
+  def apply(
+    Dimensions: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getDimensions: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDimensionsSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Dimensions")(Dimensions)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDimensions")(getDimensions)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDimensionsSupplier]
+  }
+}
+

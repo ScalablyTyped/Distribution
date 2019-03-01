@@ -14,3 +14,14 @@ trait PropertyFilter extends js.Object {
   var value: js.UndefOr[Value] = js.undefined
 }
 
+object PropertyFilter {
+  @scala.inline
+  def apply(op: java.lang.String = null, property: PropertyReference = null, value: Value = null): PropertyFilter = {
+    val __obj = js.Dynamic.literal()
+    if (op != null) __obj.updateDynamic("op")(op)
+    if (property != null) __obj.updateDynamic("property")(property)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PropertyFilter]
+  }
+}
+

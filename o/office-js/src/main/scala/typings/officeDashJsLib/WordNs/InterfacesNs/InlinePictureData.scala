@@ -100,3 +100,38 @@ trait InlinePictureData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object InlinePictureData {
+  @scala.inline
+  def apply(
+    altTextDescription: java.lang.String = null,
+    altTextTitle: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    hyperlink: java.lang.String = null,
+    lockAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
+    paragraph: ParagraphData = null,
+    parentContentControl: ContentControlData = null,
+    parentContentControlOrNullObject: ContentControlData = null,
+    parentTable: TableData = null,
+    parentTableCell: TableCellData = null,
+    parentTableCellOrNullObject: TableCellData = null,
+    parentTableOrNullObject: TableData = null,
+    width: scala.Int | scala.Double = null
+  ): InlinePictureData = {
+    val __obj = js.Dynamic.literal()
+    if (altTextDescription != null) __obj.updateDynamic("altTextDescription")(altTextDescription)
+    if (altTextTitle != null) __obj.updateDynamic("altTextTitle")(altTextTitle)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
+    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
+    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InlinePictureData]
+  }
+}
+

@@ -7,40 +7,52 @@ import scala.scalajs.js.annotation._
 
 object encodingDashJapaneseLibStrings {
   @js.native
-  sealed trait ASCII extends js.Object
+  sealed trait ASCII
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait AUTO extends js.Object
+  sealed trait AUTO
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait BINARY extends js.Object
+  sealed trait BINARY
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait EUCJP extends js.Object
+  sealed trait EUCJP
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait JIS extends js.Object
+  sealed trait JIS
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait SJIS extends js.Object
+  sealed trait SJIS
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait UNICODE extends js.Object
+  sealed trait UNICODE
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait UTF16 extends js.Object
+  sealed trait UTF16
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait UTF16BE extends js.Object
+  sealed trait UTF16BE
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait UTF16LE extends js.Object
+  sealed trait UTF16LE
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait UTF32 extends js.Object
+  sealed trait UTF32
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
-  sealed trait UTF8 extends js.Object
+  sealed trait UTF8
+    extends encodingDashJapaneseLib.encodingDashJapaneseMod.Encoding
   
   @js.native
   sealed trait array extends js.Object

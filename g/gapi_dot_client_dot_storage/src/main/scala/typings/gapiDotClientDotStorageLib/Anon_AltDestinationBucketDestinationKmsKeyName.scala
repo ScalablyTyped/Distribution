@@ -84,3 +84,64 @@ trait Anon_AltDestinationBucketDestinationKmsKeyName extends js.Object {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltDestinationBucketDestinationKmsKeyName {
+  @scala.inline
+  def apply(
+    destinationBucket: java.lang.String,
+    destinationObject: java.lang.String,
+    sourceBucket: java.lang.String,
+    sourceObject: java.lang.String,
+    alt: java.lang.String = null,
+    destinationKmsKeyName: java.lang.String = null,
+    destinationPredefinedAcl: java.lang.String = null,
+    fields: java.lang.String = null,
+    ifGenerationMatch: java.lang.String = null,
+    ifGenerationNotMatch: java.lang.String = null,
+    ifMetagenerationMatch: java.lang.String = null,
+    ifMetagenerationNotMatch: java.lang.String = null,
+    ifSourceGenerationMatch: java.lang.String = null,
+    ifSourceGenerationNotMatch: java.lang.String = null,
+    ifSourceMetagenerationMatch: java.lang.String = null,
+    ifSourceMetagenerationNotMatch: java.lang.String = null,
+    key: java.lang.String = null,
+    maxBytesRewrittenPerCall: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    projection: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    rewriteToken: java.lang.String = null,
+    sourceGeneration: java.lang.String = null,
+    userIp: java.lang.String = null,
+    userProject: java.lang.String = null
+  ): Anon_AltDestinationBucketDestinationKmsKeyName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinationBucket")(destinationBucket)
+    __obj.updateDynamic("destinationObject")(destinationObject)
+    __obj.updateDynamic("sourceBucket")(sourceBucket)
+    __obj.updateDynamic("sourceObject")(sourceObject)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (destinationKmsKeyName != null) __obj.updateDynamic("destinationKmsKeyName")(destinationKmsKeyName)
+    if (destinationPredefinedAcl != null) __obj.updateDynamic("destinationPredefinedAcl")(destinationPredefinedAcl)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (ifGenerationMatch != null) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch)
+    if (ifGenerationNotMatch != null) __obj.updateDynamic("ifGenerationNotMatch")(ifGenerationNotMatch)
+    if (ifMetagenerationMatch != null) __obj.updateDynamic("ifMetagenerationMatch")(ifMetagenerationMatch)
+    if (ifMetagenerationNotMatch != null) __obj.updateDynamic("ifMetagenerationNotMatch")(ifMetagenerationNotMatch)
+    if (ifSourceGenerationMatch != null) __obj.updateDynamic("ifSourceGenerationMatch")(ifSourceGenerationMatch)
+    if (ifSourceGenerationNotMatch != null) __obj.updateDynamic("ifSourceGenerationNotMatch")(ifSourceGenerationNotMatch)
+    if (ifSourceMetagenerationMatch != null) __obj.updateDynamic("ifSourceMetagenerationMatch")(ifSourceMetagenerationMatch)
+    if (ifSourceMetagenerationNotMatch != null) __obj.updateDynamic("ifSourceMetagenerationNotMatch")(ifSourceMetagenerationNotMatch)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxBytesRewrittenPerCall != null) __obj.updateDynamic("maxBytesRewrittenPerCall")(maxBytesRewrittenPerCall)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (rewriteToken != null) __obj.updateDynamic("rewriteToken")(rewriteToken)
+    if (sourceGeneration != null) __obj.updateDynamic("sourceGeneration")(sourceGeneration)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    __obj.asInstanceOf[Anon_AltDestinationBucketDestinationKmsKeyName]
+  }
+}
+

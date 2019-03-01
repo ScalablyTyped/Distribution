@@ -14,3 +14,14 @@ trait IDimensionItemLayout extends js.Object {
   var qMeta: INxMetaTitleDescriptionTag
 }
 
+object IDimensionItemLayout {
+  @scala.inline
+  def apply(qData: scala.Null, qInfo: INxInfo, qMeta: INxMetaTitleDescriptionTag): IDimensionItemLayout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qData")(qData)
+    __obj.updateDynamic("qInfo")(qInfo)
+    __obj.updateDynamic("qMeta")(qMeta)
+    __obj.asInstanceOf[IDimensionItemLayout]
+  }
+}
+

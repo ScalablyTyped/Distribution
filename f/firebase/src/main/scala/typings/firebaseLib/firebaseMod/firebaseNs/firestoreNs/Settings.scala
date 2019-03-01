@@ -43,3 +43,20 @@ trait Settings extends js.Object {
   var timestampsInSnapshots: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    cacheSizeBytes: scala.Int | scala.Double = null,
+    host: java.lang.String = null,
+    ssl: js.UndefOr[scala.Boolean] = js.undefined,
+    timestampsInSnapshots: js.UndefOr[scala.Boolean] = js.undefined
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (cacheSizeBytes != null) __obj.updateDynamic("cacheSizeBytes")(cacheSizeBytes.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    if (!js.isUndefined(timestampsInSnapshots)) __obj.updateDynamic("timestampsInSnapshots")(timestampsInSnapshots)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

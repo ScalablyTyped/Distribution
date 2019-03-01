@@ -499,15 +499,12 @@ object controlNs extends js.Object {
   @JSName("ScaleLine")
   @js.native
   object ScaleLineNs extends js.Object {
+    trait Units extends js.Object
+    
     /**
       * @api
       */
     type Property = java.lang.String
-    /**
-      * Units for the scale line. Supported values are `'degrees'`, `'imperial'`,
-      * `'nautical'`, `'metric'`, `'us'`.
-      */
-    type Units = openlayersLib.openlayersLibStrings.degrees | openlayersLib.openlayersLibStrings.imperial | openlayersLib.openlayersLibStrings.nautical | openlayersLib.openlayersLibStrings.metric | openlayersLib.openlayersLibStrings.us
   }
   
   /* static members */

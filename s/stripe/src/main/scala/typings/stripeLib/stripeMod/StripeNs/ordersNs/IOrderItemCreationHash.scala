@@ -35,3 +35,24 @@ trait IOrderItemCreationHash extends js.Object {
   ] = js.undefined
 }
 
+object IOrderItemCreationHash {
+  @scala.inline
+  def apply(
+    parent: java.lang.String,
+    amount: scala.Int | scala.Double = null,
+    currency: java.lang.String = null,
+    description: java.lang.String = null,
+    quantity: scala.Int | scala.Double = null,
+    `type`: stripeLib.stripeLibStrings.sku | stripeLib.stripeLibStrings.tax | stripeLib.stripeLibStrings.shipping | stripeLib.stripeLibStrings.discount = null
+  ): IOrderItemCreationHash = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parent")(parent)
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IOrderItemCreationHash]
+  }
+}
+

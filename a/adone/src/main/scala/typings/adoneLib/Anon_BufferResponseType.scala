@@ -9,3 +9,12 @@ trait Anon_BufferResponseType extends js.Object {
   var responseType: adoneLib.adoneLibStrings.buffer
 }
 
+object Anon_BufferResponseType {
+  @scala.inline
+  def apply(responseType: adoneLib.adoneLibStrings.buffer): Anon_BufferResponseType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("responseType")(responseType)
+    __obj.asInstanceOf[Anon_BufferResponseType]
+  }
+}
+

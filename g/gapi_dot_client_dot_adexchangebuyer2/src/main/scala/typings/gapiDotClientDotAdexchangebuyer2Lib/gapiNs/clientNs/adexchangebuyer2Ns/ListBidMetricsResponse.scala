@@ -19,3 +19,13 @@ trait ListBidMetricsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListBidMetricsResponse {
+  @scala.inline
+  def apply(bidMetricsRows: js.Array[BidMetricsRow] = null, nextPageToken: java.lang.String = null): ListBidMetricsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (bidMetricsRows != null) __obj.updateDynamic("bidMetricsRows")(bidMetricsRows)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListBidMetricsResponse]
+  }
+}
+

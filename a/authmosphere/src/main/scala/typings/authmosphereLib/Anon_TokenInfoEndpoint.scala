@@ -9,3 +9,12 @@ trait Anon_TokenInfoEndpoint extends js.Object {
   var tokenInfoEndpoint: java.lang.String
 }
 
+object Anon_TokenInfoEndpoint {
+  @scala.inline
+  def apply(tokenInfoEndpoint: java.lang.String): Anon_TokenInfoEndpoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tokenInfoEndpoint")(tokenInfoEndpoint)
+    __obj.asInstanceOf[Anon_TokenInfoEndpoint]
+  }
+}
+

@@ -34,3 +34,28 @@ trait CommonShareButtonProps extends js.Object {
   var windowWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CommonShareButtonProps {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    additionalProps: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    beforeOnClick: js.Function0[js.Promise[scala.Unit]] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledStyle: reactLib.reactMod.ReactNs.StyleHTMLAttributes[reactLib.HTMLDivElement] = null,
+    onShareWindowClose: js.Function0[scala.Unit] = null,
+    windowHeight: scala.Int | scala.Double = null,
+    windowWidth: scala.Int | scala.Double = null
+  ): CommonShareButtonProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (additionalProps != null) __obj.updateDynamic("additionalProps")(additionalProps)
+    if (beforeOnClick != null) __obj.updateDynamic("beforeOnClick")(beforeOnClick)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle)
+    if (onShareWindowClose != null) __obj.updateDynamic("onShareWindowClose")(onShareWindowClose)
+    if (windowHeight != null) __obj.updateDynamic("windowHeight")(windowHeight.asInstanceOf[js.Any])
+    if (windowWidth != null) __obj.updateDynamic("windowWidth")(windowWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommonShareButtonProps]
+  }
+}
+

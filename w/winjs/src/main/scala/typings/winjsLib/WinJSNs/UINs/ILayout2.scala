@@ -76,3 +76,34 @@ trait ILayout2 extends js.Object {
   def uninitialize(): scala.Unit
 }
 
+object ILayout2 {
+  @scala.inline
+  def apply(
+    dragLeave: js.Function0[scala.Unit],
+    dragOver: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    executeAnimations: js.Function0[scala.Unit],
+    getAdjacent: js.Function2[js.Any, winjsLib.WinJSNs.UtilitiesNs.Key, js.Any],
+    hitTest: js.Function2[scala.Double, scala.Double, js.Any],
+    initialize: js.Function2[ILayoutSite2, scala.Boolean, scala.Unit],
+    itemsFromRange: js.Function2[scala.Double, scala.Double, scala.Unit],
+    layout: js.Function4[js.Any, js.Any, js.Any, js.Any, js.Any],
+    orientation: js.Any,
+    setupAnimations: js.Function0[scala.Unit],
+    uninitialize: js.Function0[scala.Unit]
+  ): ILayout2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dragLeave")(dragLeave)
+    __obj.updateDynamic("dragOver")(dragOver)
+    __obj.updateDynamic("executeAnimations")(executeAnimations)
+    __obj.updateDynamic("getAdjacent")(getAdjacent)
+    __obj.updateDynamic("hitTest")(hitTest)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("itemsFromRange")(itemsFromRange)
+    __obj.updateDynamic("layout")(layout)
+    __obj.updateDynamic("orientation")(orientation)
+    __obj.updateDynamic("setupAnimations")(setupAnimations)
+    __obj.updateDynamic("uninitialize")(uninitialize)
+    __obj.asInstanceOf[ILayout2]
+  }
+}
+

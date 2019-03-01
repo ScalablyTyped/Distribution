@@ -54,3 +54,44 @@ trait TransferCounters extends js.Object {
   var objectsFromSourceSkippedBySync: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TransferCounters {
+  @scala.inline
+  def apply(
+    bytesCopiedToSink: java.lang.String = null,
+    bytesDeletedFromSink: java.lang.String = null,
+    bytesDeletedFromSource: java.lang.String = null,
+    bytesFailedToDeleteFromSink: java.lang.String = null,
+    bytesFoundFromSource: java.lang.String = null,
+    bytesFoundOnlyFromSink: java.lang.String = null,
+    bytesFromSourceFailed: java.lang.String = null,
+    bytesFromSourceSkippedBySync: java.lang.String = null,
+    objectsCopiedToSink: java.lang.String = null,
+    objectsDeletedFromSink: java.lang.String = null,
+    objectsDeletedFromSource: java.lang.String = null,
+    objectsFailedToDeleteFromSink: java.lang.String = null,
+    objectsFoundFromSource: java.lang.String = null,
+    objectsFoundOnlyFromSink: java.lang.String = null,
+    objectsFromSourceFailed: java.lang.String = null,
+    objectsFromSourceSkippedBySync: java.lang.String = null
+  ): TransferCounters = {
+    val __obj = js.Dynamic.literal()
+    if (bytesCopiedToSink != null) __obj.updateDynamic("bytesCopiedToSink")(bytesCopiedToSink)
+    if (bytesDeletedFromSink != null) __obj.updateDynamic("bytesDeletedFromSink")(bytesDeletedFromSink)
+    if (bytesDeletedFromSource != null) __obj.updateDynamic("bytesDeletedFromSource")(bytesDeletedFromSource)
+    if (bytesFailedToDeleteFromSink != null) __obj.updateDynamic("bytesFailedToDeleteFromSink")(bytesFailedToDeleteFromSink)
+    if (bytesFoundFromSource != null) __obj.updateDynamic("bytesFoundFromSource")(bytesFoundFromSource)
+    if (bytesFoundOnlyFromSink != null) __obj.updateDynamic("bytesFoundOnlyFromSink")(bytesFoundOnlyFromSink)
+    if (bytesFromSourceFailed != null) __obj.updateDynamic("bytesFromSourceFailed")(bytesFromSourceFailed)
+    if (bytesFromSourceSkippedBySync != null) __obj.updateDynamic("bytesFromSourceSkippedBySync")(bytesFromSourceSkippedBySync)
+    if (objectsCopiedToSink != null) __obj.updateDynamic("objectsCopiedToSink")(objectsCopiedToSink)
+    if (objectsDeletedFromSink != null) __obj.updateDynamic("objectsDeletedFromSink")(objectsDeletedFromSink)
+    if (objectsDeletedFromSource != null) __obj.updateDynamic("objectsDeletedFromSource")(objectsDeletedFromSource)
+    if (objectsFailedToDeleteFromSink != null) __obj.updateDynamic("objectsFailedToDeleteFromSink")(objectsFailedToDeleteFromSink)
+    if (objectsFoundFromSource != null) __obj.updateDynamic("objectsFoundFromSource")(objectsFoundFromSource)
+    if (objectsFoundOnlyFromSink != null) __obj.updateDynamic("objectsFoundOnlyFromSink")(objectsFoundOnlyFromSink)
+    if (objectsFromSourceFailed != null) __obj.updateDynamic("objectsFromSourceFailed")(objectsFromSourceFailed)
+    if (objectsFromSourceSkippedBySync != null) __obj.updateDynamic("objectsFromSourceSkippedBySync")(objectsFromSourceSkippedBySync)
+    __obj.asInstanceOf[TransferCounters]
+  }
+}
+

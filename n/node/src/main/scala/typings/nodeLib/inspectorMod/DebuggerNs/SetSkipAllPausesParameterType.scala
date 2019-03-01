@@ -12,3 +12,12 @@ trait SetSkipAllPausesParameterType extends js.Object {
   var skip: scala.Boolean
 }
 
+object SetSkipAllPausesParameterType {
+  @scala.inline
+  def apply(skip: scala.Boolean): SetSkipAllPausesParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("skip")(skip)
+    __obj.asInstanceOf[SetSkipAllPausesParameterType]
+  }
+}
+

@@ -13,3 +13,20 @@ trait SpriteSheetAnimation extends js.Object {
   var speed: scala.Double
 }
 
+object SpriteSheetAnimation {
+  @scala.inline
+  def apply(
+    frames: js.Array[scala.Double],
+    name: java.lang.String,
+    next: java.lang.String,
+    speed: scala.Double
+  ): SpriteSheetAnimation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frames")(frames)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("speed")(speed)
+    __obj.asInstanceOf[SpriteSheetAnimation]
+  }
+}
+

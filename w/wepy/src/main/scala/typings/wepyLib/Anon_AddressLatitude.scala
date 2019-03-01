@@ -13,3 +13,22 @@ trait Anon_AddressLatitude extends js.Object {
   var scale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AddressLatitude {
+  @scala.inline
+  def apply(
+    latitude: scala.Double,
+    longitude: scala.Double,
+    address: java.lang.String = null,
+    name: java.lang.String = null,
+    scale: scala.Int | scala.Double = null
+  ): Anon_AddressLatitude = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AddressLatitude]
+  }
+}
+

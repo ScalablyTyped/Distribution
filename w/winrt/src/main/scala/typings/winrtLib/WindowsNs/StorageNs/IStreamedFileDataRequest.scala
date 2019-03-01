@@ -9,3 +9,12 @@ trait IStreamedFileDataRequest extends js.Object {
   def failAndClose(failureMode: StreamedFileFailureMode): scala.Unit
 }
 
+object IStreamedFileDataRequest {
+  @scala.inline
+  def apply(failAndClose: js.Function1[StreamedFileFailureMode, scala.Unit]): IStreamedFileDataRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failAndClose")(failAndClose)
+    __obj.asInstanceOf[IStreamedFileDataRequest]
+  }
+}
+

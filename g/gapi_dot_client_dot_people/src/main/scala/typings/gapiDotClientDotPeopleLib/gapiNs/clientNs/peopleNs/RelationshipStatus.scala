@@ -30,3 +30,18 @@ trait RelationshipStatus extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RelationshipStatus {
+  @scala.inline
+  def apply(
+    formattedValue: java.lang.String = null,
+    metadata: FieldMetadata = null,
+    value: java.lang.String = null
+  ): RelationshipStatus = {
+    val __obj = js.Dynamic.literal()
+    if (formattedValue != null) __obj.updateDynamic("formattedValue")(formattedValue)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[RelationshipStatus]
+  }
+}
+

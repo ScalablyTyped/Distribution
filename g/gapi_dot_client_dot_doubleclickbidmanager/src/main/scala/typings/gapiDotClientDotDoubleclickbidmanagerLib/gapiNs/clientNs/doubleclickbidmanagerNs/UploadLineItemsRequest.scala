@@ -14,3 +14,18 @@ trait UploadLineItemsRequest extends js.Object {
   var lineItems: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UploadLineItemsRequest {
+  @scala.inline
+  def apply(
+    dryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    lineItems: java.lang.String = null
+  ): UploadLineItemsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
+    __obj.asInstanceOf[UploadLineItemsRequest]
+  }
+}
+

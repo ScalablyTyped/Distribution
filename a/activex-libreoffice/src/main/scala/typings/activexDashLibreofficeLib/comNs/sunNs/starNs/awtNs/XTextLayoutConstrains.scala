@@ -14,3 +14,22 @@ trait XTextLayoutConstrains
   def getMinimumSize(nCols: scala.Double, nLines: scala.Double): Size
 }
 
+object XTextLayoutConstrains {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getColumnsAndLines: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Unit],
+    getMinimumSize: js.Function2[scala.Double, scala.Double, Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextLayoutConstrains = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getColumnsAndLines")(getColumnsAndLines)
+    __obj.updateDynamic("getMinimumSize")(getMinimumSize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTextLayoutConstrains]
+  }
+}
+

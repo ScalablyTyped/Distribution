@@ -12,3 +12,20 @@ trait PluralOptions extends js.Object {
   var singular: java.lang.String
 }
 
+object PluralOptions {
+  @scala.inline
+  def apply(
+    plural: java.lang.String,
+    singular: java.lang.String,
+    count: scala.Int | scala.Double = null,
+    locale: java.lang.String = null
+  ): PluralOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("plural")(plural)
+    __obj.updateDynamic("singular")(singular)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    __obj.asInstanceOf[PluralOptions]
+  }
+}
+

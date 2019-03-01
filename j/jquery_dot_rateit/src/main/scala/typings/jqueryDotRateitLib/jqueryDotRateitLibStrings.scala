@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object jqueryDotRateitLibStrings {
   @js.native
-  sealed trait bg extends js.Object
+  sealed trait bg extends RateItMode
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait font extends RateItMode
   
   @js.native
   sealed trait ispreset extends js.Object

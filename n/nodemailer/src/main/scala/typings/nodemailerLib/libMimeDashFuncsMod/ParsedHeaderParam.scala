@@ -10,3 +10,13 @@ trait ParsedHeaderParam extends js.Object {
   var value: java.lang.String
 }
 
+object ParsedHeaderParam {
+  @scala.inline
+  def apply(key: java.lang.String, value: java.lang.String): ParsedHeaderParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ParsedHeaderParam]
+  }
+}
+

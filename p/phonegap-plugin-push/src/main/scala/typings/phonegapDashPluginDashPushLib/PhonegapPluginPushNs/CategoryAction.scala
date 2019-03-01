@@ -11,3 +11,14 @@ trait CategoryAction extends js.Object {
   var yes: js.UndefOr[CategoryActionData] = js.undefined
 }
 
+object CategoryAction {
+  @scala.inline
+  def apply(maybe: CategoryActionData = null, no: CategoryActionData = null, yes: CategoryActionData = null): CategoryAction = {
+    val __obj = js.Dynamic.literal()
+    if (maybe != null) __obj.updateDynamic("maybe")(maybe)
+    if (no != null) __obj.updateDynamic("no")(no)
+    if (yes != null) __obj.updateDynamic("yes")(yes)
+    __obj.asInstanceOf[CategoryAction]
+  }
+}
+

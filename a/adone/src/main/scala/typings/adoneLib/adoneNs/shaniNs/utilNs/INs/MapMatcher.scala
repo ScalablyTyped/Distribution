@@ -16,3 +16,20 @@ trait MapMatcher extends Matcher {
   def deepEquals(expected: lodashLib.lodashMod.Global.Map[_, _]): Matcher
 }
 
+object MapMatcher {
+  @scala.inline
+  def apply(
+    and: js.Function1[Matcher, Matcher],
+    contains: js.Function1[lodashLib.lodashMod.Global.Map[_, _], Matcher],
+    deepEquals: js.Function1[lodashLib.lodashMod.Global.Map[_, _], Matcher],
+    or: js.Function1[Matcher, Matcher]
+  ): MapMatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("deepEquals")(deepEquals)
+    __obj.updateDynamic("or")(or)
+    __obj.asInstanceOf[MapMatcher]
+  }
+}
+

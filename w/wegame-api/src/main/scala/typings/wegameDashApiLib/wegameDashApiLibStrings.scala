@@ -10,37 +10,47 @@ object wegameDashApiLibStrings {
   sealed trait `2d` extends js.Object
   
   @js.native
-  sealed trait `2g` extends js.Object
+  sealed trait `2g`
+    extends wegameDashApiLib.wxNs.typesNs.NetworkType
   
   @js.native
-  sealed trait `3g` extends js.Object
+  sealed trait `3g`
+    extends wegameDashApiLib.wxNs.typesNs.NetworkType
   
   @js.native
-  sealed trait `4g` extends js.Object
+  sealed trait `4g`
+    extends wegameDashApiLib.wxNs.typesNs.NetworkType
   
   @js.native
   sealed trait CNY extends js.Object
   
   @js.native
-  sealed trait CONNECT extends js.Object
+  sealed trait CONNECT
+    extends wegameDashApiLib.wxNs.typesNs.RequestMethod
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends wegameDashApiLib.wxNs.typesNs.RequestMethod
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends wegameDashApiLib.wxNs.typesNs.RequestMethod
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait HEAD
+    extends wegameDashApiLib.wxNs.typesNs.RequestMethod
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends wegameDashApiLib.wxNs.typesNs.RequestMethod
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends wegameDashApiLib.wxNs.typesNs.RequestMethod
   
   @js.native
-  sealed trait TRACE extends js.Object
+  sealed trait TRACE
+    extends wegameDashApiLib.wxNs.typesNs.RequestMethod
   
   @js.native
   sealed trait aac extends js.Object
@@ -55,16 +65,20 @@ object wegameDashApiLibStrings {
   sealed trait arraybuffer extends js.Object
   
   @js.native
-  sealed trait ascii extends js.Object
+  sealed trait ascii
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends wegameDashApiLib.wxNs.typesNs.AudioSourceType
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
   sealed trait black extends js.Object
@@ -73,10 +87,12 @@ object wegameDashApiLibStrings {
   sealed trait bold extends js.Object
   
   @js.native
-  sealed trait buildInMic extends js.Object
+  sealed trait buildInMic
+    extends wegameDashApiLib.wxNs.typesNs.AudioSourceType
   
   @js.native
-  sealed trait camcorder extends js.Object
+  sealed trait camcorder
+    extends wegameDashApiLib.wxNs.typesNs.AudioSourceType
   
   @js.native
   sealed trait camera extends js.Object
@@ -94,7 +110,8 @@ object wegameDashApiLibStrings {
   sealed trait cover extends js.Object
   
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait dark
+    extends wegameDashApiLib.wxNs.typesNs.GameClubButtonIcon
   
   @js.native
   sealed trait done extends js.Object
@@ -115,16 +132,20 @@ object wegameDashApiLibStrings {
   sealed trait go extends js.Object
   
   @js.native
-  sealed trait green extends js.Object
+  sealed trait green
+    extends wegameDashApiLib.wxNs.typesNs.GameClubButtonIcon
   
   @js.native
-  sealed trait headsetMic extends js.Object
+  sealed trait headsetMic
+    extends wegameDashApiLib.wxNs.typesNs.AudioSourceType
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends wegameDashApiLib.wxNs.typesNs.ButtonType
   
   @js.native
   sealed trait italic extends js.Object
@@ -136,19 +157,22 @@ object wegameDashApiLibStrings {
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait latin1 extends js.Object
+  sealed trait latin1
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light
+    extends wegameDashApiLib.wxNs.typesNs.GameClubButtonIcon
   
   @js.native
   sealed trait loading extends js.Object
   
   @js.native
-  sealed trait mic extends js.Object
+  sealed trait mic
+    extends wegameDashApiLib.wxNs.typesNs.AudioSourceType
   
   @js.native
   sealed trait mp3 extends js.Object
@@ -157,7 +181,8 @@ object wegameDashApiLibStrings {
   sealed trait next extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends wegameDashApiLib.wxNs.typesNs.NetworkType
   
   @js.native
   sealed trait normal extends js.Object
@@ -181,31 +206,39 @@ object wegameDashApiLibStrings {
   sealed trait success extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends wegameDashApiLib.wxNs.typesNs.ButtonType
   
   @js.native
-  sealed trait `ucs-2` extends js.Object
+  sealed trait `ucs-2`
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
-  sealed trait ucs2 extends js.Object
+  sealed trait ucs2
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
   sealed trait ui extends js.Object
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends wegameDashApiLib.wxNs.typesNs.NetworkType
   
   @js.native
-  sealed trait `utf-16le` extends js.Object
+  sealed trait `utf-16le`
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
-  sealed trait `utf-8` extends js.Object
+  sealed trait `utf-8`
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
-  sealed trait utf16le extends js.Object
+  sealed trait utf16le
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends wegameDashApiLib.wxNs.typesNs.FileContentEncoding
   
   @js.native
   sealed trait webgl extends js.Object
@@ -214,10 +247,12 @@ object wegameDashApiLibStrings {
   sealed trait wgs84 extends js.Object
   
   @js.native
-  sealed trait white extends js.Object
+  sealed trait white
+    extends wegameDashApiLib.wxNs.typesNs.GameClubButtonIcon
   
   @js.native
-  sealed trait wifi extends js.Object
+  sealed trait wifi
+    extends wegameDashApiLib.wxNs.typesNs.NetworkType
   
   @js.native
   sealed trait zh_CN extends js.Object

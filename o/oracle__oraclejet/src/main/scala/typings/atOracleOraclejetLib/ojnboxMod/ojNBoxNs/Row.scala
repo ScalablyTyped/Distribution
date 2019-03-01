@@ -12,3 +12,14 @@ trait Row extends js.Object {
   var labelStyle: js.UndefOr[js.Object] = js.undefined
 }
 
+object Row {
+  @scala.inline
+  def apply(id: java.lang.String, label: java.lang.String = null, labelStyle: js.Object = null): Row = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    __obj.asInstanceOf[Row]
+  }
+}
+

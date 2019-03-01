@@ -19,3 +19,20 @@ trait InvideoPromotion extends js.Object {
   var useSmartTiming: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InvideoPromotion {
+  @scala.inline
+  def apply(
+    defaultTiming: InvideoTiming = null,
+    items: js.Array[PromotedItem] = null,
+    position: InvideoPosition = null,
+    useSmartTiming: js.UndefOr[scala.Boolean] = js.undefined
+  ): InvideoPromotion = {
+    val __obj = js.Dynamic.literal()
+    if (defaultTiming != null) __obj.updateDynamic("defaultTiming")(defaultTiming)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(useSmartTiming)) __obj.updateDynamic("useSmartTiming")(useSmartTiming)
+    __obj.asInstanceOf[InvideoPromotion]
+  }
+}
+

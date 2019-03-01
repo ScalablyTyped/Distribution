@@ -117,3 +117,112 @@ trait DatePickerProps
   var value: js.UndefOr[coreDashJsLib.Date | java.lang.String] = js.undefined
 }
 
+object DatePickerProps {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    autoOk: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelLabel: java.lang.String = null,
+    className: java.lang.String = null,
+    disabledDates: coreDashJsLib.Array[coreDashJsLib.Date] = null,
+    enabledDates: coreDashJsLib.Array[coreDashJsLib.Date] = null,
+    error: java.lang.String = null,
+    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    inputClassName: java.lang.String = null,
+    inputFormat: coreDashJsLib.Function = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    label: java.lang.String = null,
+    locale: reactDashToolboxLib.reactDashToolboxLibStrings.de | reactDashToolboxLib.reactDashToolboxLibStrings.no | reactDashToolboxLib.reactDashToolboxLibStrings.en | reactDashToolboxLib.reactDashToolboxLibStrings.es | reactDashToolboxLib.reactDashToolboxLibStrings.af | reactDashToolboxLib.reactDashToolboxLibStrings.ar | reactDashToolboxLib.reactDashToolboxLibStrings.be | reactDashToolboxLib.reactDashToolboxLibStrings.bg | reactDashToolboxLib.reactDashToolboxLibStrings.bn | reactDashToolboxLib.reactDashToolboxLibStrings.bo | reactDashToolboxLib.reactDashToolboxLibStrings.br | reactDashToolboxLib.reactDashToolboxLibStrings.bs | reactDashToolboxLib.reactDashToolboxLibStrings.ca | reactDashToolboxLib.reactDashToolboxLibStrings.gl | reactDashToolboxLib.reactDashToolboxLibStrings.eu | reactDashToolboxLib.reactDashToolboxLibStrings.pt | reactDashToolboxLib.reactDashToolboxLibStrings.it | reactDashToolboxLib.reactDashToolboxLibStrings.fr | reactDashToolboxLib.reactDashToolboxLibStrings.ru | reactDashToolboxLib.reactDashToolboxLibStrings.ua | reactDashToolboxLib.reactDashToolboxLibStrings.`zh-cn` | reactDashToolboxLib.reactDashToolboxLibStrings.`zh-hk` | reactDashToolboxLib.reactDashToolboxLibStrings.`zh-tw` | DatePickerLocale = null,
+    maxDate: coreDashJsLib.Date = null,
+    minDate: coreDashJsLib.Date = null,
+    name: java.lang.String = null,
+    okLabel: java.lang.String = null,
+    onChange: coreDashJsLib.Function = null,
+    onClick: coreDashJsLib.Function = null,
+    onContextMenu: coreDashJsLib.Function = null,
+    onDismiss: coreDashJsLib.Function = null,
+    onDoubleClick: coreDashJsLib.Function = null,
+    onDrag: coreDashJsLib.Function = null,
+    onDragEnd: coreDashJsLib.Function = null,
+    onDragEnter: coreDashJsLib.Function = null,
+    onDragExit: coreDashJsLib.Function = null,
+    onDragLeave: coreDashJsLib.Function = null,
+    onDragOver: coreDashJsLib.Function = null,
+    onDragStart: coreDashJsLib.Function = null,
+    onDrop: coreDashJsLib.Function = null,
+    onEscKeyDown: coreDashJsLib.Function = null,
+    onKeyPress: coreDashJsLib.Function = null,
+    onMouseDown: coreDashJsLib.Function = null,
+    onMouseEnter: coreDashJsLib.Function = null,
+    onMouseLeave: coreDashJsLib.Function = null,
+    onMouseMove: coreDashJsLib.Function = null,
+    onMouseOut: coreDashJsLib.Function = null,
+    onMouseOver: coreDashJsLib.Function = null,
+    onMouseUp: coreDashJsLib.Function = null,
+    onOverlayClick: coreDashJsLib.Function = null,
+    onTouchCancel: coreDashJsLib.Function = null,
+    onTouchEnd: coreDashJsLib.Function = null,
+    onTouchMove: coreDashJsLib.Function = null,
+    onTouchStart: coreDashJsLib.Function = null,
+    readonly: js.UndefOr[scala.Boolean] = js.undefined,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    sundayFirstDayOfWeek: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: DatePickerTheme = null,
+    value: coreDashJsLib.Date | java.lang.String = null
+  ): DatePickerProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(autoOk)) __obj.updateDynamic("autoOk")(autoOk)
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates)
+    if (enabledDates != null) __obj.updateDynamic("enabledDates")(enabledDates)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)
+    if (inputFormat != null) __obj.updateDynamic("inputFormat")(inputFormat)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick)
+    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
+    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit)
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
+    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
+    if (onEscKeyDown != null) __obj.updateDynamic("onEscKeyDown")(onEscKeyDown)
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onOverlayClick != null) __obj.updateDynamic("onOverlayClick")(onOverlayClick)
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(sundayFirstDayOfWeek)) __obj.updateDynamic("sundayFirstDayOfWeek")(sundayFirstDayOfWeek)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatePickerProps]
+  }
+}
+

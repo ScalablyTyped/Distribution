@@ -16,3 +16,13 @@ trait SelectedRangeSettings extends js.Object {
   var start: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SelectedRangeSettings {
+  @scala.inline
+  def apply(end: java.lang.String = null, start: java.lang.String = null): SelectedRangeSettings = {
+    val __obj = js.Dynamic.literal()
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[SelectedRangeSettings]
+  }
+}
+

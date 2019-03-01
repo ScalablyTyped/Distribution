@@ -37,3 +37,24 @@ trait IGlowLayerOptions extends js.Object {
   var renderingGroupId: scala.Double
 }
 
+object IGlowLayerOptions {
+  @scala.inline
+  def apply(
+    blurKernelSize: scala.Double,
+    camera: Nullable[Camera],
+    mainTextureRatio: scala.Double,
+    renderingGroupId: scala.Double,
+    mainTextureFixedSize: scala.Int | scala.Double = null,
+    mainTextureSamples: scala.Int | scala.Double = null
+  ): IGlowLayerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blurKernelSize")(blurKernelSize)
+    __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
+    __obj.updateDynamic("mainTextureRatio")(mainTextureRatio)
+    __obj.updateDynamic("renderingGroupId")(renderingGroupId)
+    if (mainTextureFixedSize != null) __obj.updateDynamic("mainTextureFixedSize")(mainTextureFixedSize.asInstanceOf[js.Any])
+    if (mainTextureSamples != null) __obj.updateDynamic("mainTextureSamples")(mainTextureSamples.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IGlowLayerOptions]
+  }
+}
+

@@ -13,3 +13,22 @@ trait DecodedSourceMap extends js.Object {
   var sourcesContent: js.Array[java.lang.String]
 }
 
+object DecodedSourceMap {
+  @scala.inline
+  def apply(
+    file: java.lang.String,
+    mappings: js.Array[js.Array[js.Array[scala.Double]]],
+    names: js.Array[java.lang.String],
+    sources: js.Array[java.lang.String],
+    sourcesContent: js.Array[java.lang.String]
+  ): DecodedSourceMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("mappings")(mappings)
+    __obj.updateDynamic("names")(names)
+    __obj.updateDynamic("sources")(sources)
+    __obj.updateDynamic("sourcesContent")(sourcesContent)
+    __obj.asInstanceOf[DecodedSourceMap]
+  }
+}
+

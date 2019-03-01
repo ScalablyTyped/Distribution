@@ -48,3 +48,28 @@ trait ServerInfo extends js.Object {
   var uri: java.lang.String
 }
 
+object ServerInfo {
+  @scala.inline
+  def apply(
+    created: scala.Double,
+    host: java.lang.String,
+    id: java.lang.String,
+    port: scala.Double | java.lang.String,
+    protocol: hapiLib.hapiLibStrings.http | hapiLib.hapiLibStrings.https | hapiLib.hapiLibStrings.socket,
+    started: scala.Double,
+    uri: java.lang.String,
+    address: java.lang.String = null
+  ): ServerInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    __obj.updateDynamic("started")(started)
+    __obj.updateDynamic("uri")(uri)
+    if (address != null) __obj.updateDynamic("address")(address)
+    __obj.asInstanceOf[ServerInfo]
+  }
+}
+

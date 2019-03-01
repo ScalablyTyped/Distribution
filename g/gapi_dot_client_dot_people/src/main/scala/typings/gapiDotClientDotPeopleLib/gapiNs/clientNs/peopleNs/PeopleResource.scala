@@ -47,3 +47,39 @@ trait PeopleResource extends js.Object {
   def updateContact(request: gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp): gapiDotClientLib.gapiNs.clientNs.Request[Person]
 }
 
+object PeopleResource {
+  @scala.inline
+  def apply(
+    connections: ConnectionsResource,
+    createContact: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenParent, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Person]
+    ],
+    deleteContact: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPersonFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Person]
+    ],
+    getBatchGet: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPersonFieldsPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetPeopleResponse]
+    ],
+    updateContact: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Person]
+    ]
+  ): PeopleResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connections")(connections)
+    __obj.updateDynamic("createContact")(createContact)
+    __obj.updateDynamic("deleteContact")(deleteContact)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getBatchGet")(getBatchGet)
+    __obj.updateDynamic("updateContact")(updateContact)
+    __obj.asInstanceOf[PeopleResource]
+  }
+}
+

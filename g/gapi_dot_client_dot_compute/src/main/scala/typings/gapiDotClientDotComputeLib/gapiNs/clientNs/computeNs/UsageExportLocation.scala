@@ -20,3 +20,13 @@ trait UsageExportLocation extends js.Object {
   var reportNamePrefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UsageExportLocation {
+  @scala.inline
+  def apply(bucketName: java.lang.String = null, reportNamePrefix: java.lang.String = null): UsageExportLocation = {
+    val __obj = js.Dynamic.literal()
+    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName)
+    if (reportNamePrefix != null) __obj.updateDynamic("reportNamePrefix")(reportNamePrefix)
+    __obj.asInstanceOf[UsageExportLocation]
+  }
+}
+

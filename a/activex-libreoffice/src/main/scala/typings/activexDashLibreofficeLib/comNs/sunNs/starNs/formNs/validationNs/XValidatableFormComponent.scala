@@ -66,3 +66,34 @@ trait XValidatableFormComponent extends XValidatable {
   def removeFormComponentValidityListener(Listener: XFormComponentValidityListener): scala.Unit
 }
 
+object XValidatableFormComponent {
+  @scala.inline
+  def apply(
+    CurrentValue: js.Any,
+    Validator: XValidator,
+    acquire: js.Function0[scala.Unit],
+    addFormComponentValidityListener: js.Function1[XFormComponentValidityListener, scala.Unit],
+    getCurrentValue: js.Function0[js.Any],
+    getValidator: js.Function0[XValidator],
+    isValid: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeFormComponentValidityListener: js.Function1[XFormComponentValidityListener, scala.Unit],
+    setValidator: js.Function1[XValidator, scala.Unit]
+  ): XValidatableFormComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CurrentValue")(CurrentValue)
+    __obj.updateDynamic("Validator")(Validator)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addFormComponentValidityListener")(addFormComponentValidityListener)
+    __obj.updateDynamic("getCurrentValue")(getCurrentValue)
+    __obj.updateDynamic("getValidator")(getValidator)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeFormComponentValidityListener")(removeFormComponentValidityListener)
+    __obj.updateDynamic("setValidator")(setValidator)
+    __obj.asInstanceOf[XValidatableFormComponent]
+  }
+}
+

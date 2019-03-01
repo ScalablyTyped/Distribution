@@ -16,3 +16,22 @@ trait ASPxClientSeriesTitle extends ASPxClientTitleBase {
   var series: ASPxClientSeries
 }
 
+object ASPxClientSeriesTitle {
+  @scala.inline
+  def apply(
+    alignment: java.lang.String,
+    chart: ASPxClientWebChart,
+    dock: java.lang.String,
+    lines: js.Array[java.lang.String],
+    series: ASPxClientSeries
+  ): ASPxClientSeriesTitle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alignment")(alignment)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("dock")(dock)
+    __obj.updateDynamic("lines")(lines)
+    __obj.updateDynamic("series")(series)
+    __obj.asInstanceOf[ASPxClientSeriesTitle]
+  }
+}
+

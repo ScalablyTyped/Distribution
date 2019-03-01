@@ -111,3 +111,62 @@ trait Options extends js.Object {
   var version: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    out: java.lang.String,
+    entryPoint: java.lang.String = null,
+    exclude: java.lang.String = null,
+    excludeExternals: js.UndefOr[scala.Boolean] = js.undefined,
+    excludePrivate: js.UndefOr[scala.Boolean] = js.undefined,
+    excludeProtected: js.UndefOr[scala.Boolean] = js.undefined,
+    externalPattern: java.lang.String = null,
+    gaID: java.lang.String = null,
+    gaSite: java.lang.String = null,
+    gitRevision: java.lang.String = null,
+    hideGenerator: js.UndefOr[scala.Boolean] = js.undefined,
+    includeDeclarations: js.UndefOr[scala.Boolean] = js.undefined,
+    includes: java.lang.String = null,
+    json: java.lang.String = null,
+    logger: Logger | gulpDashTypedocLib.gulpDashTypedocLibStrings.none = null,
+    media: java.lang.String = null,
+    mode: gulpDashTypedocLib.gulpDashTypedocLibStrings.file | gulpDashTypedocLib.gulpDashTypedocLibStrings.modules = null,
+    module: gulpDashTypedocLib.gulpDashTypedocLibStrings.commonjs | gulpDashTypedocLib.gulpDashTypedocLibStrings.amd | gulpDashTypedocLib.gulpDashTypedocLibStrings.system | gulpDashTypedocLib.gulpDashTypedocLibStrings.umd = null,
+    name: java.lang.String = null,
+    plugins: js.Array[java.lang.String] = null,
+    readme: java.lang.String = null,
+    target: java.lang.String = null,
+    theme: java.lang.String = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined,
+    version: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("out")(out)
+    if (entryPoint != null) __obj.updateDynamic("entryPoint")(entryPoint)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (!js.isUndefined(excludeExternals)) __obj.updateDynamic("excludeExternals")(excludeExternals)
+    if (!js.isUndefined(excludePrivate)) __obj.updateDynamic("excludePrivate")(excludePrivate)
+    if (!js.isUndefined(excludeProtected)) __obj.updateDynamic("excludeProtected")(excludeProtected)
+    if (externalPattern != null) __obj.updateDynamic("externalPattern")(externalPattern)
+    if (gaID != null) __obj.updateDynamic("gaID")(gaID)
+    if (gaSite != null) __obj.updateDynamic("gaSite")(gaSite)
+    if (gitRevision != null) __obj.updateDynamic("gitRevision")(gitRevision)
+    if (!js.isUndefined(hideGenerator)) __obj.updateDynamic("hideGenerator")(hideGenerator)
+    if (!js.isUndefined(includeDeclarations)) __obj.updateDynamic("includeDeclarations")(includeDeclarations)
+    if (includes != null) __obj.updateDynamic("includes")(includes)
+    if (json != null) __obj.updateDynamic("json")(json)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (media != null) __obj.updateDynamic("media")(media)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (readme != null) __obj.updateDynamic("readme")(readme)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Options]
+  }
+}
+

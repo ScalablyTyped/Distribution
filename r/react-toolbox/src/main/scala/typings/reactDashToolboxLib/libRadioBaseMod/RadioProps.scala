@@ -25,3 +25,23 @@ trait RadioProps
   var onMouseDown: js.UndefOr[coreDashJsLib.Function] = js.undefined
 }
 
+object RadioProps {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Additional properties passed to Radio container.
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    onMouseDown: coreDashJsLib.Function = null
+  ): RadioProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
+    __obj.asInstanceOf[RadioProps]
+  }
+}
+

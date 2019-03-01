@@ -16,3 +16,12 @@ trait GridColumnProps extends js.Object {
   var gridColumn: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.GridColumnProperty]] = js.undefined
 }
 
+object GridColumnProps {
+  @scala.inline
+  def apply(gridColumn: ResponsiveValue[csstypeLib.csstypeMod.GridColumnProperty] = null): GridColumnProps = {
+    val __obj = js.Dynamic.literal()
+    if (gridColumn != null) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridColumnProps]
+  }
+}
+

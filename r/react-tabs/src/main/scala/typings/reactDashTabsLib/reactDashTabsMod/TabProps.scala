@@ -16,3 +16,22 @@ import scala.scalajs.js.annotation._
   var tabIndex: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledClassName: java.lang.String = null,
+    selectedClassName: java.lang.String = null,
+    tabIndex: java.lang.String = null
+  ): TabProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (disabledClassName != null) __obj.updateDynamic("disabledClassName")(disabledClassName)
+    if (selectedClassName != null) __obj.updateDynamic("selectedClassName")(selectedClassName)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
+    __obj.asInstanceOf[TabProps]
+  }
+}
+

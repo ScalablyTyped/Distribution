@@ -18,5 +18,4 @@ package object nightwatchMod {
   type NightwatchCallbackResult = NightwatchTypedCallbackResult[js.Any]
   type NightwatchTest = js.Function1[/* browser */ NightwatchBrowser, scala.Unit]
   type NightwatchTestHook = js.Function2[/* browser */ NightwatchBrowser, /* done */ js.Function0[scala.Unit], scala.Unit]
-  type NightwatchTests = NightwatchTestFunctions | NightwatchTestHooks
 }

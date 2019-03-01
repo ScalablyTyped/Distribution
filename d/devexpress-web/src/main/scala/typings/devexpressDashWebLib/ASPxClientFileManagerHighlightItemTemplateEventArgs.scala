@@ -31,3 +31,20 @@ trait ASPxClientFileManagerHighlightItemTemplateEventArgs extends ASPxClientEven
   var templateElement: java.lang.String
 }
 
+object ASPxClientFileManagerHighlightItemTemplateEventArgs {
+  @scala.inline
+  def apply(
+    filterValue: java.lang.String,
+    highlightCssClassName: java.lang.String,
+    itemName: java.lang.String,
+    templateElement: java.lang.String
+  ): ASPxClientFileManagerHighlightItemTemplateEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filterValue")(filterValue)
+    __obj.updateDynamic("highlightCssClassName")(highlightCssClassName)
+    __obj.updateDynamic("itemName")(itemName)
+    __obj.updateDynamic("templateElement")(templateElement)
+    __obj.asInstanceOf[ASPxClientFileManagerHighlightItemTemplateEventArgs]
+  }
+}
+

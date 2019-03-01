@@ -16,3 +16,16 @@ trait KeyValueDifferFactory extends js.Object {
   def supports(objects: js.Any): scala.Boolean
 }
 
+object KeyValueDifferFactory {
+  @scala.inline
+  def apply(
+    create: js.Function0[KeyValueDiffer[js.Any, js.Any]],
+    supports: js.Function1[js.Any, scala.Boolean]
+  ): KeyValueDifferFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("supports")(supports)
+    __obj.asInstanceOf[KeyValueDifferFactory]
+  }
+}
+

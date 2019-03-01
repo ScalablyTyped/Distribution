@@ -30,3 +30,34 @@ trait ConcurrentAccessRestriction extends js.Object {
   var volumeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConcurrentAccessRestriction {
+  @scala.inline
+  def apply(
+    deviceAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    maxConcurrentDevices: scala.Int | scala.Double = null,
+    message: java.lang.String = null,
+    nonce: java.lang.String = null,
+    reasonCode: java.lang.String = null,
+    restricted: js.UndefOr[scala.Boolean] = js.undefined,
+    signature: java.lang.String = null,
+    source: java.lang.String = null,
+    timeWindowSeconds: scala.Int | scala.Double = null,
+    volumeId: java.lang.String = null
+  ): ConcurrentAccessRestriction = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deviceAllowed)) __obj.updateDynamic("deviceAllowed")(deviceAllowed)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maxConcurrentDevices != null) __obj.updateDynamic("maxConcurrentDevices")(maxConcurrentDevices.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode)
+    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted)
+    if (signature != null) __obj.updateDynamic("signature")(signature)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (timeWindowSeconds != null) __obj.updateDynamic("timeWindowSeconds")(timeWindowSeconds.asInstanceOf[js.Any])
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    __obj.asInstanceOf[ConcurrentAccessRestriction]
+  }
+}
+

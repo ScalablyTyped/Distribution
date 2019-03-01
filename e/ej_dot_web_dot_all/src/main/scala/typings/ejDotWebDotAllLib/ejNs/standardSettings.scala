@@ -15,3 +15,26 @@ trait standardSettings extends js.Object {
   var twoDigitYearMax: scala.Double
 }
 
+object standardSettings {
+  @scala.inline
+  def apply(
+    AM: js.Array[java.lang.String],
+    PM: js.Array[java.lang.String],
+    days: daySettings,
+    firstDay: scala.Double,
+    months: monthSettings,
+    patterns: patternSettings,
+    twoDigitYearMax: scala.Double
+  ): standardSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AM")(AM)
+    __obj.updateDynamic("PM")(PM)
+    __obj.updateDynamic("days")(days)
+    __obj.updateDynamic("firstDay")(firstDay)
+    __obj.updateDynamic("months")(months)
+    __obj.updateDynamic("patterns")(patterns)
+    __obj.updateDynamic("twoDigitYearMax")(twoDigitYearMax)
+    __obj.asInstanceOf[standardSettings]
+  }
+}
+

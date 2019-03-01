@@ -20,3 +20,18 @@ trait EventStreamArgs extends js.Object {
   val roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object EventStreamArgs {
+  @scala.inline
+  def apply(
+    applicationId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    destinationStreamArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): EventStreamArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
+    __obj.updateDynamic("destinationStreamArn")(destinationStreamArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventStreamArgs]
+  }
+}
+

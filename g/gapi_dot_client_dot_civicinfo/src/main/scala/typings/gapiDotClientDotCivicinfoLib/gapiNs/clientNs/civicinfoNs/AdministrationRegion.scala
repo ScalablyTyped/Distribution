@@ -21,3 +21,22 @@ trait AdministrationRegion extends js.Object {
   var sources: js.UndefOr[js.Array[Source]] = js.undefined
 }
 
+object AdministrationRegion {
+  @scala.inline
+  def apply(
+    electionAdministrationBody: AdministrativeBody = null,
+    id: java.lang.String = null,
+    local_jurisdiction: AdministrationRegion = null,
+    name: java.lang.String = null,
+    sources: js.Array[Source] = null
+  ): AdministrationRegion = {
+    val __obj = js.Dynamic.literal()
+    if (electionAdministrationBody != null) __obj.updateDynamic("electionAdministrationBody")(electionAdministrationBody)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (local_jurisdiction != null) __obj.updateDynamic("local_jurisdiction")(local_jurisdiction)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    __obj.asInstanceOf[AdministrationRegion]
+  }
+}
+

@@ -12,3 +12,12 @@ trait ExtConfig extends js.Object {
   var extConfig: js.Any
 }
 
+object ExtConfig {
+  @scala.inline
+  def apply(extConfig: js.Any): ExtConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extConfig")(extConfig)
+    __obj.asInstanceOf[ExtConfig]
+  }
+}
+

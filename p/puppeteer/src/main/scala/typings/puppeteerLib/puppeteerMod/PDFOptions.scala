@@ -74,3 +74,38 @@ trait PDFOptions extends js.Object {
   var width: js.UndefOr[LayoutDimension] = js.undefined
 }
 
+object PDFOptions {
+  @scala.inline
+  def apply(
+    displayHeaderFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    footerTemplate: java.lang.String = null,
+    format: PDFFormat = null,
+    headerTemplate: java.lang.String = null,
+    height: LayoutDimension = null,
+    landscape: js.UndefOr[scala.Boolean] = js.undefined,
+    margin: puppeteerLib.Anon_Bottom = null,
+    pageRanges: java.lang.String = null,
+    path: java.lang.String = null,
+    preferCSSPageSize: js.UndefOr[scala.Boolean] = js.undefined,
+    printBackground: js.UndefOr[scala.Boolean] = js.undefined,
+    scale: scala.Int | scala.Double = null,
+    width: LayoutDimension = null
+  ): PDFOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(displayHeaderFooter)) __obj.updateDynamic("displayHeaderFooter")(displayHeaderFooter)
+    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (pageRanges != null) __obj.updateDynamic("pageRanges")(pageRanges)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(preferCSSPageSize)) __obj.updateDynamic("preferCSSPageSize")(preferCSSPageSize)
+    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PDFOptions]
+  }
+}
+

@@ -14,3 +14,18 @@ trait InjectorTypeWithProviders[T] extends js.Object {
   ] = js.undefined
 }
 
+object InjectorTypeWithProviders {
+  @scala.inline
+  def apply[T](
+    ngModule: InjectorType[T],
+    providers: js.Array[
+      atAngularCoreLib.srcTypeMod.Type[_] | atAngularCoreLib.srcDiProviderMod.ValueProvider | atAngularCoreLib.srcDiProviderMod.ExistingProvider | atAngularCoreLib.srcDiProviderMod.FactoryProvider | atAngularCoreLib.srcDiProviderMod.ConstructorProvider | atAngularCoreLib.srcDiProviderMod.StaticClassProvider | atAngularCoreLib.srcDiProviderMod.ClassProvider | js.Array[_]
+    ] = null
+  ): InjectorTypeWithProviders[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ngModule")(ngModule)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    __obj.asInstanceOf[InjectorTypeWithProviders[T]]
+  }
+}
+

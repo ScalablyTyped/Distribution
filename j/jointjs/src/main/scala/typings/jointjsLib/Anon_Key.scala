@@ -10,3 +10,16 @@ trait Anon_Key
   var parentRelative: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    parentRelative: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(parentRelative)) __obj.updateDynamic("parentRelative")(parentRelative)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

@@ -93,3 +93,46 @@ trait InterpolationOptions extends js.Object {
   var useRawValueToEscape: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InterpolationOptions {
+  @scala.inline
+  def apply(
+    defaultVariables: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    escape: js.Function1[/* str */ java.lang.String, java.lang.String] = null,
+    escapeValue: js.UndefOr[scala.Boolean] = js.undefined,
+    format: FormatFunction = null,
+    formatSeparator: java.lang.String = null,
+    maxReplaces: scala.Int | scala.Double = null,
+    nestingPrefix: java.lang.String = null,
+    nestingPrefixEscaped: java.lang.String = null,
+    nestingSuffix: java.lang.String = null,
+    nestingSuffixEscaped: java.lang.String = null,
+    prefix: java.lang.String = null,
+    prefixEscaped: java.lang.String = null,
+    suffix: java.lang.String = null,
+    suffixEscaped: java.lang.String = null,
+    unescapePrefix: java.lang.String = null,
+    unescapeSuffix: java.lang.String = null,
+    useRawValueToEscape: js.UndefOr[scala.Boolean] = js.undefined
+  ): InterpolationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaultVariables != null) __obj.updateDynamic("defaultVariables")(defaultVariables)
+    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (!js.isUndefined(escapeValue)) __obj.updateDynamic("escapeValue")(escapeValue)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formatSeparator != null) __obj.updateDynamic("formatSeparator")(formatSeparator)
+    if (maxReplaces != null) __obj.updateDynamic("maxReplaces")(maxReplaces.asInstanceOf[js.Any])
+    if (nestingPrefix != null) __obj.updateDynamic("nestingPrefix")(nestingPrefix)
+    if (nestingPrefixEscaped != null) __obj.updateDynamic("nestingPrefixEscaped")(nestingPrefixEscaped)
+    if (nestingSuffix != null) __obj.updateDynamic("nestingSuffix")(nestingSuffix)
+    if (nestingSuffixEscaped != null) __obj.updateDynamic("nestingSuffixEscaped")(nestingSuffixEscaped)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefixEscaped != null) __obj.updateDynamic("prefixEscaped")(prefixEscaped)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (suffixEscaped != null) __obj.updateDynamic("suffixEscaped")(suffixEscaped)
+    if (unescapePrefix != null) __obj.updateDynamic("unescapePrefix")(unescapePrefix)
+    if (unescapeSuffix != null) __obj.updateDynamic("unescapeSuffix")(unescapeSuffix)
+    if (!js.isUndefined(useRawValueToEscape)) __obj.updateDynamic("useRawValueToEscape")(useRawValueToEscape)
+    __obj.asInstanceOf[InterpolationOptions]
+  }
+}
+

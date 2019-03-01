@@ -20,3 +20,13 @@ trait StreamDecoderOptions extends js.Object {
   var memlimit: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StreamDecoderOptions {
+  @scala.inline
+  def apply(flags: scala.Int | scala.Double = null, memlimit: scala.Int | scala.Double = null): StreamDecoderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (memlimit != null) __obj.updateDynamic("memlimit")(memlimit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StreamDecoderOptions]
+  }
+}
+

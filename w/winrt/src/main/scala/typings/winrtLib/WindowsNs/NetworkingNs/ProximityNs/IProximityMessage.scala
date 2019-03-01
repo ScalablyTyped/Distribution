@@ -12,3 +12,20 @@ trait IProximityMessage extends js.Object {
   var subscriptionId: scala.Double
 }
 
+object IProximityMessage {
+  @scala.inline
+  def apply(
+    data: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
+    dataAsString: java.lang.String,
+    messageType: java.lang.String,
+    subscriptionId: scala.Double
+  ): IProximityMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("dataAsString")(dataAsString)
+    __obj.updateDynamic("messageType")(messageType)
+    __obj.updateDynamic("subscriptionId")(subscriptionId)
+    __obj.asInstanceOf[IProximityMessage]
+  }
+}
+

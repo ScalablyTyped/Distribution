@@ -27,3 +27,22 @@ trait AdditionalItems extends js.Object {
   ]
 }
 
+object AdditionalItems {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    `type`: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_TEXTHTML, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_TEXTHTML[keyof chrome-apps.Anon_TEXTHTML] */ js.Any
+      ]
+    ]
+  ): AdditionalItems = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[AdditionalItems]
+  }
+}
+

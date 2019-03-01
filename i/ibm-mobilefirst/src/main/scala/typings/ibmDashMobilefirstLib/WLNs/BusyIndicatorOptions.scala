@@ -14,3 +14,24 @@ trait BusyIndicatorOptions extends js.Object {
   var tickerText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BusyIndicatorOptions {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    contentTextText: java.lang.String = null,
+    contentTitle: java.lang.String = null,
+    icon: java.lang.String = null,
+    notificationId: scala.Int | scala.Double = null,
+    tickerText: java.lang.String = null
+  ): BusyIndicatorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (contentTextText != null) __obj.updateDynamic("contentTextText")(contentTextText)
+    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (notificationId != null) __obj.updateDynamic("notificationId")(notificationId.asInstanceOf[js.Any])
+    if (tickerText != null) __obj.updateDynamic("tickerText")(tickerText)
+    __obj.asInstanceOf[BusyIndicatorOptions]
+  }
+}
+

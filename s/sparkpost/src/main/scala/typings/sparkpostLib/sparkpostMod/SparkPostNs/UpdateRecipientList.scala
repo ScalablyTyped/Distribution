@@ -18,3 +18,22 @@ trait UpdateRecipientList extends js.Object {
   var recipients: js.Array[Recipient]
 }
 
+object UpdateRecipientList {
+  @scala.inline
+  def apply(
+    recipients: js.Array[Recipient],
+    attributes: js.Any = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null
+  ): UpdateRecipientList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("recipients")(recipients)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[UpdateRecipientList]
+  }
+}
+

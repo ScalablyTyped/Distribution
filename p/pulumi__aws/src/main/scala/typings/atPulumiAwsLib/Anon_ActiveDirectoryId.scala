@@ -11,3 +11,17 @@ trait Anon_ActiveDirectoryId extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_ActiveDirectoryId {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    activeDirectoryId: java.lang.String = null,
+    rootCertificateChainArn: java.lang.String = null
+  ): Anon_ActiveDirectoryId = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (activeDirectoryId != null) __obj.updateDynamic("activeDirectoryId")(activeDirectoryId)
+    if (rootCertificateChainArn != null) __obj.updateDynamic("rootCertificateChainArn")(rootCertificateChainArn)
+    __obj.asInstanceOf[Anon_ActiveDirectoryId]
+  }
+}
+

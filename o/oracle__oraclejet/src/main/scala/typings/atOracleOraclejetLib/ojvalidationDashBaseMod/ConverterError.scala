@@ -10,3 +10,12 @@ trait ConverterError extends js.Object {
   def getMessage(): atOracleOraclejetLib.ojmessagingMod.namespaced
 }
 
+object ConverterError {
+  @scala.inline
+  def apply(getMessage: js.Function0[atOracleOraclejetLib.ojmessagingMod.namespaced]): ConverterError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getMessage")(getMessage)
+    __obj.asInstanceOf[ConverterError]
+  }
+}
+

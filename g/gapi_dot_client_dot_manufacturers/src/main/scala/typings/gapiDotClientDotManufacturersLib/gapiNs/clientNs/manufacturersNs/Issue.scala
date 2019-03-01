@@ -25,3 +25,22 @@ trait Issue extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Issue {
+  @scala.inline
+  def apply(
+    attribute: java.lang.String = null,
+    description: java.lang.String = null,
+    severity: java.lang.String = null,
+    timestamp: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Issue = {
+    val __obj = js.Dynamic.literal()
+    if (attribute != null) __obj.updateDynamic("attribute")(attribute)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Issue]
+  }
+}
+

@@ -115,3 +115,63 @@ trait XUIConfigurationManager
   def reset(): scala.Unit
 }
 
+object XUIConfigurationManager {
+  @scala.inline
+  def apply(
+    EventsManager: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ImageManager: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ShortCutManager: XAcceleratorConfiguration,
+    acquire: js.Function0[scala.Unit],
+    createSettings: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexContainer],
+    getEventsManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getImageManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getSettings: js.Function2[
+      java.lang.String, 
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess
+    ],
+    getShortCutManager: js.Function0[XAcceleratorConfiguration],
+    getUIElementsInfo: js.Function1[
+      scala.Double, 
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ]
+    ],
+    hasSettings: js.Function1[java.lang.String, scala.Boolean],
+    insertSettings: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSettings: js.Function1[java.lang.String, scala.Unit],
+    replaceSettings: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, 
+      scala.Unit
+    ],
+    reset: js.Function0[scala.Unit]
+  ): XUIConfigurationManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EventsManager")(EventsManager)
+    __obj.updateDynamic("ImageManager")(ImageManager)
+    __obj.updateDynamic("ShortCutManager")(ShortCutManager)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createSettings")(createSettings)
+    __obj.updateDynamic("getEventsManager")(getEventsManager)
+    __obj.updateDynamic("getImageManager")(getImageManager)
+    __obj.updateDynamic("getSettings")(getSettings)
+    __obj.updateDynamic("getShortCutManager")(getShortCutManager)
+    __obj.updateDynamic("getUIElementsInfo")(getUIElementsInfo)
+    __obj.updateDynamic("hasSettings")(hasSettings)
+    __obj.updateDynamic("insertSettings")(insertSettings)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeSettings")(removeSettings)
+    __obj.updateDynamic("replaceSettings")(replaceSettings)
+    __obj.updateDynamic("reset")(reset)
+    __obj.asInstanceOf[XUIConfigurationManager]
+  }
+}
+

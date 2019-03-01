@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ICreateUnitTreeDelta extends IDelta {
+trait ICreateUnitTreeDelta
+  extends IDelta
+     with Delta {
   /**
     * The ID of the containing unit.
     * (This relates to the project tree.)
@@ -25,5 +27,26 @@ trait ICreateUnitTreeDelta extends IDelta {
     * The JSON of the unit tree to create.
     */
   var unitTree: IStructureJSON
+}
+
+object ICreateUnitTreeDelta {
+  @scala.inline
+  def apply(
+    containerId: java.lang.String,
+    containmentName: java.lang.String,
+    contentType: java.lang.String,
+    deltaType: mendixmodelsdkLib.mendixmodelsdkLibStrings.CREATE_UNIT_TREE,
+    unitId: java.lang.String,
+    unitTree: IStructureJSON
+  ): ICreateUnitTreeDelta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("containerId")(containerId)
+    __obj.updateDynamic("containmentName")(containmentName)
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("deltaType")(deltaType)
+    __obj.updateDynamic("unitId")(unitId)
+    __obj.updateDynamic("unitTree")(unitTree)
+    __obj.asInstanceOf[ICreateUnitTreeDelta]
+  }
 }
 

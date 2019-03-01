@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OperationDefinition extends js.Object {
+trait OperationDefinition
+  extends Definition
+     with HasSelectionSet
+     with Node {
   var directives: js.UndefOr[js.Array[Directive]] = js.undefined
   var kind: java.lang.String
   var loc: js.UndefOr[Location] = js.undefined
@@ -14,5 +17,28 @@ trait OperationDefinition extends js.Object {
   var operation: java.lang.String
   var selectionSet: SelectionSet
   var variableDefinitions: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+}
+
+object OperationDefinition {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    operation: java.lang.String,
+    selectionSet: SelectionSet,
+    directives: js.Array[Directive] = null,
+    loc: Location = null,
+    name: Name = null,
+    variableDefinitions: js.Array[VariableDefinition] = null
+  ): OperationDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("operation")(operation)
+    __obj.updateDynamic("selectionSet")(selectionSet)
+    if (directives != null) __obj.updateDynamic("directives")(directives)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (variableDefinitions != null) __obj.updateDynamic("variableDefinitions")(variableDefinitions)
+    __obj.asInstanceOf[OperationDefinition]
+  }
 }
 

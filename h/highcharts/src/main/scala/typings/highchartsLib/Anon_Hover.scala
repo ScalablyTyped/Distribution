@@ -16,3 +16,16 @@ trait Anon_Hover extends js.Object {
   var select: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.ButtonTheme] = js.undefined
 }
 
+object Anon_Hover {
+  @scala.inline
+  def apply(
+    hover: highchartsLib.highchartsMod.HighchartsNs.ButtonTheme = null,
+    select: highchartsLib.highchartsMod.HighchartsNs.ButtonTheme = null
+  ): Anon_Hover = {
+    val __obj = js.Dynamic.literal()
+    if (hover != null) __obj.updateDynamic("hover")(hover)
+    if (select != null) __obj.updateDynamic("select")(select)
+    __obj.asInstanceOf[Anon_Hover]
+  }
+}
+

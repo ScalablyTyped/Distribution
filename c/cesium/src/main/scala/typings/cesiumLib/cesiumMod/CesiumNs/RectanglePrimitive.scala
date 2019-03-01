@@ -22,3 +22,40 @@ trait RectanglePrimitive extends js.Object {
   def update(): scala.Unit
 }
 
+object RectanglePrimitive {
+  @scala.inline
+  def apply(
+    asynchronous: scala.Boolean,
+    debugShowBoundingVolume: scala.Boolean,
+    destroy: js.Function0[scala.Unit],
+    ellipsoid: Ellipsoid,
+    granularity: scala.Double,
+    height: scala.Double,
+    id: js.Any,
+    isDestroyed: js.Function0[scala.Boolean],
+    material: Material,
+    rectangle: Rectangle,
+    rotation: scala.Double,
+    show: scala.Boolean,
+    textureRotationAngle: scala.Double,
+    update: js.Function0[scala.Unit]
+  ): RectanglePrimitive = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("asynchronous")(asynchronous)
+    __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("ellipsoid")(ellipsoid)
+    __obj.updateDynamic("granularity")(granularity)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isDestroyed")(isDestroyed)
+    __obj.updateDynamic("material")(material)
+    __obj.updateDynamic("rectangle")(rectangle)
+    __obj.updateDynamic("rotation")(rotation)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("textureRotationAngle")(textureRotationAngle)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[RectanglePrimitive]
+  }
+}
+

@@ -15,3 +15,25 @@ trait Anon_AuthenticateCognito extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_AuthenticateCognito {
+  @scala.inline
+  def apply(
+    order: scala.Double,
+    `type`: java.lang.String,
+    authenticateCognito: Anon_AuthenticationRequestExtraParamsKey = null,
+    authenticateOidc: Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientId = null,
+    fixedResponse: Anon_ContentTypeMessageBody = null,
+    redirect: Anon_HostPath = null,
+    targetGroupArn: java.lang.String = null
+  ): Anon_AuthenticateCognito = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("order")(order)
+    if (authenticateCognito != null) __obj.updateDynamic("authenticateCognito")(authenticateCognito)
+    if (authenticateOidc != null) __obj.updateDynamic("authenticateOidc")(authenticateOidc)
+    if (fixedResponse != null) __obj.updateDynamic("fixedResponse")(fixedResponse)
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (targetGroupArn != null) __obj.updateDynamic("targetGroupArn")(targetGroupArn)
+    __obj.asInstanceOf[Anon_AuthenticateCognito]
+  }
+}
+

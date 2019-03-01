@@ -41,3 +41,34 @@ trait CellSelectingEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellSelectingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cellIndex: scala.Int | scala.Double = null,
+    currentCell: js.Any = null,
+    data: js.Any = null,
+    isCtrlKeyPressed: js.UndefOr[scala.Boolean] = js.undefined,
+    isShiftKeyPressed: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    previousRowCell: js.Any = null,
+    previousRowCellIndex: scala.Int | scala.Double = null,
+    selectedData: js.Any = null,
+    `type`: java.lang.String = null
+  ): CellSelectingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(isCtrlKeyPressed)) __obj.updateDynamic("isCtrlKeyPressed")(isCtrlKeyPressed)
+    if (!js.isUndefined(isShiftKeyPressed)) __obj.updateDynamic("isShiftKeyPressed")(isShiftKeyPressed)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (previousRowCell != null) __obj.updateDynamic("previousRowCell")(previousRowCell)
+    if (previousRowCellIndex != null) __obj.updateDynamic("previousRowCellIndex")(previousRowCellIndex.asInstanceOf[js.Any])
+    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CellSelectingEventArgs]
+  }
+}
+

@@ -28,3 +28,22 @@ trait RangeColorMapping extends js.Object {
   var to: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RangeColorMapping {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    from: scala.Int | scala.Double = null,
+    gradientColors: js.Array[_] = null,
+    legendLabel: java.lang.String = null,
+    to: scala.Int | scala.Double = null
+  ): RangeColorMapping = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors)
+    if (legendLabel != null) __obj.updateDynamic("legendLabel")(legendLabel)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RangeColorMapping]
+  }
+}
+

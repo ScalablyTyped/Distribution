@@ -11,3 +11,18 @@ trait PushAdminPromise extends js.Object {
   def publish(recipient: js.Any, payload: js.Any): js.Promise[scala.Unit]
 }
 
+object PushAdminPromise {
+  @scala.inline
+  def apply(
+    channelSubscriptions: PushChannelSubscriptionsPromise,
+    deviceRegistrations: PushDeviceRegistrationsPromise,
+    publish: js.Function2[js.Any, js.Any, js.Promise[scala.Unit]]
+  ): PushAdminPromise = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channelSubscriptions")(channelSubscriptions)
+    __obj.updateDynamic("deviceRegistrations")(deviceRegistrations)
+    __obj.updateDynamic("publish")(publish)
+    __obj.asInstanceOf[PushAdminPromise]
+  }
+}
+

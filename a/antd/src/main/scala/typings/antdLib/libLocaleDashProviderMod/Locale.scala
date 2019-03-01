@@ -19,3 +19,34 @@ trait Locale extends js.Object {
   var locale: java.lang.String
 }
 
+object Locale {
+  @scala.inline
+  def apply(
+    locale: java.lang.String,
+    Calendar: js.Object = null,
+    DatePicker: js.Object = null,
+    Modal: antdLib.libModalLocaleMod.ModalLocale = null,
+    Pagination: js.Object = null,
+    Popconfirm: js.Object = null,
+    Select: js.Object = null,
+    Table: js.Object = null,
+    TimePicker: js.Object = null,
+    Transfer: js.Object = null,
+    Upload: js.Object = null
+  ): Locale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("locale")(locale)
+    if (Calendar != null) __obj.updateDynamic("Calendar")(Calendar)
+    if (DatePicker != null) __obj.updateDynamic("DatePicker")(DatePicker)
+    if (Modal != null) __obj.updateDynamic("Modal")(Modal)
+    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination)
+    if (Popconfirm != null) __obj.updateDynamic("Popconfirm")(Popconfirm)
+    if (Select != null) __obj.updateDynamic("Select")(Select)
+    if (Table != null) __obj.updateDynamic("Table")(Table)
+    if (TimePicker != null) __obj.updateDynamic("TimePicker")(TimePicker)
+    if (Transfer != null) __obj.updateDynamic("Transfer")(Transfer)
+    if (Upload != null) __obj.updateDynamic("Upload")(Upload)
+    __obj.asInstanceOf[Locale]
+  }
+}
+

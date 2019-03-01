@@ -21,3 +21,21 @@ trait VariableGroup extends VariableGroupReference {
   var variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
 }
 
+object VariableGroup {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: scala.Double,
+    name: java.lang.String,
+    `type`: java.lang.String,
+    variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
+  ): VariableGroup = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[VariableGroup]
+  }
+}
+

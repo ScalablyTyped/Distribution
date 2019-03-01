@@ -48,3 +48,28 @@ trait Options extends js.Object {
   var touch: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    menu: stdLib.HTMLElement,
+    panel: stdLib.HTMLElement,
+    duration: scala.Int | scala.Double = null,
+    fx: java.lang.String = null,
+    padding: scala.Int | scala.Double = null,
+    side: slideoutLib.slideoutLibStrings.left | slideoutLib.slideoutLibStrings.right = null,
+    tolerance: scala.Int | scala.Double = null,
+    touch: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("menu")(menu)
+    __obj.updateDynamic("panel")(panel)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (fx != null) __obj.updateDynamic("fx")(fx)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -31,3 +31,35 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object DynamicNumberProps {
+  @scala.inline
+  def apply(
+    fraction: scala.Int | scala.Double = null,
+    integer: scala.Int | scala.Double = null,
+    negative: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: js.Function3[
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 
+      /* modelValue */ scala.Double, 
+      /* viewValue */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    placeholder: java.lang.String = null,
+    positive: js.UndefOr[scala.Boolean] = js.undefined,
+    separator: reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.DOT | reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.`,` = null,
+    thousand: scala.Boolean | (reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.` `) = null,
+    value: scala.Double | reactDashDynamicDashNumberLib.reactDashDynamicDashNumberLibStrings.Empty = null
+  ): DynamicNumberProps = {
+    val __obj = js.Dynamic.literal()
+    if (fraction != null) __obj.updateDynamic("fraction")(fraction.asInstanceOf[js.Any])
+    if (integer != null) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])
+    if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive)
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (thousand != null) __obj.updateDynamic("thousand")(thousand.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DynamicNumberProps]
+  }
+}
+

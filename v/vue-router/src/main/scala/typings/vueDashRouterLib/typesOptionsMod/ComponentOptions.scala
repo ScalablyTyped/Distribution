@@ -12,3 +12,20 @@ trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */] extends js.Object {
   var router: js.UndefOr[vueDashRouterLib.typesMod.default] = js.undefined
 }
 
+object ComponentOptions {
+  @scala.inline
+  def apply[V /* <: vueLib.typesVueMod.Vue */](
+    beforeRouteEnter: vueDashRouterLib.typesRouterMod.NavigationGuard[V] = null,
+    beforeRouteLeave: vueDashRouterLib.typesRouterMod.NavigationGuard[V] = null,
+    beforeRouteUpdate: vueDashRouterLib.typesRouterMod.NavigationGuard[V] = null,
+    router: vueDashRouterLib.typesMod.default = null
+  ): ComponentOptions[V] = {
+    val __obj = js.Dynamic.literal()
+    if (beforeRouteEnter != null) __obj.updateDynamic("beforeRouteEnter")(beforeRouteEnter)
+    if (beforeRouteLeave != null) __obj.updateDynamic("beforeRouteLeave")(beforeRouteLeave)
+    if (beforeRouteUpdate != null) __obj.updateDynamic("beforeRouteUpdate")(beforeRouteUpdate)
+    if (router != null) __obj.updateDynamic("router")(router)
+    __obj.asInstanceOf[ComponentOptions[V]]
+  }
+}
+

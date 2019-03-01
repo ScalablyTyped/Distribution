@@ -11,3 +11,16 @@ trait Intermediate
   var size_Intermediate: js.UndefOr[js.Any] = js.undefined
 }
 
+object Intermediate {
+  @scala.inline
+  def apply(
+    AllHTMLAttributes: reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] = null,
+    size: js.Any = null
+  ): Intermediate = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Intermediate]
+  }
+}
+

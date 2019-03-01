@@ -84,12 +84,9 @@ trait NodeRSA extends js.Object {
     */
   def exportKey(): java.lang.String = js.native
   def exportKey(format: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPrivate): nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.KeyComponentsPrivate = js.native
-  @JSName("exportKey")
-  def exportKey_Buffer(format: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatDer): nodeLib.Buffer = js.native
-  @JSName("exportKey")
-  def exportKey_KeyComponentsPublic(format: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPublic): nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.KeyComponentsPublic = js.native
-  @JSName("exportKey")
-  def exportKey_String(format: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem): java.lang.String = js.native
+  def exportKey(format: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatComponentsPublic): nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.KeyComponentsPublic = js.native
+  def exportKey(format: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatDer): nodeLib.Buffer = js.native
+  def exportKey(format: nodeDashRsaLib.nodeDashRsaMod.NodeRSANs.FormatPem): java.lang.String = js.native
   /**
     * @param bits Key size in bits. 2048 by default.
     * @param exponent public exponent. 65537 by default.

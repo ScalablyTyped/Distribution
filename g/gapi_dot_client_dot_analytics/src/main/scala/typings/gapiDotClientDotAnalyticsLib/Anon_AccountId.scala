@@ -20,3 +20,24 @@ trait Anon_AccountId extends js.Object {
   var webPropertyId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccountId {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    internalWebPropertyId: java.lang.String = null,
+    profileId: java.lang.String = null,
+    profileName: java.lang.String = null,
+    tableId: java.lang.String = null,
+    webPropertyId: java.lang.String = null
+  ): Anon_AccountId = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId)
+    if (profileId != null) __obj.updateDynamic("profileId")(profileId)
+    if (profileName != null) __obj.updateDynamic("profileName")(profileName)
+    if (tableId != null) __obj.updateDynamic("tableId")(tableId)
+    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId)
+    __obj.asInstanceOf[Anon_AccountId]
+  }
+}
+

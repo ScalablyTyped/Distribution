@@ -10,3 +10,20 @@ trait ComboComponentInfo extends ViewportComponentFullInfo {
   var name: java.lang.String
 }
 
+object ComboComponentInfo {
+  @scala.inline
+  def apply(
+    childs: org.scalablytyped.runtime.StringDictionary[ViewportComponentInfo],
+    componentInfo: ViewportComponentInfo,
+    mapUniqueKey: java.lang.String,
+    name: java.lang.String
+  ): ComboComponentInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("childs")(childs)
+    __obj.updateDynamic("componentInfo")(componentInfo)
+    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ComboComponentInfo]
+  }
+}
+

@@ -5,10 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CatchClause extends Node {
+trait CatchClause
+  extends Node
+     with Scopable {
   var body: BlockStatement
   var param: Identifier
   @JSName("type")
   var type_CatchClause: babelDashTypesLib.babelDashTypesLibStrings.CatchClause
+}
+
+object CatchClause {
+  @scala.inline
+  def apply(
+    body: BlockStatement,
+    end: scala.Double,
+    loc: SourceLocation,
+    param: Identifier,
+    start: scala.Double,
+    `type`: babelDashTypesLib.babelDashTypesLibStrings.CatchClause,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    trailingComments: js.Array[Comment] = null
+  ): CatchClause = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("loc")(loc)
+    __obj.updateDynamic("param")(param)
+    __obj.updateDynamic("start")(start)
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[CatchClause]
+  }
 }
 

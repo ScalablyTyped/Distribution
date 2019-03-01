@@ -25,3 +25,18 @@ trait InjectableDef[T] extends js.Object {
   def factory(): T
 }
 
+object InjectableDef {
+  @scala.inline
+  def apply[T](
+    factory: js.Function0[T],
+    providedIn: InjectorType[_] | atAngularCoreLib.atAngularCoreLibStrings.root | atAngularCoreLib.atAngularCoreLibStrings.any = null,
+    value: T = null
+  ): InjectableDef[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("factory")(factory)
+    if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InjectableDef[T]]
+  }
+}
+

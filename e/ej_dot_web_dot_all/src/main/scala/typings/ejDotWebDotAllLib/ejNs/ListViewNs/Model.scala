@@ -147,3 +147,86 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    ajaxBeforeLoad: js.Function1[/* e */ AjaxBeforeLoadEventArgs, scala.Unit] = null,
+    ajaxComplete: js.Function1[/* e */ AjaxCompleteEventArgs, scala.Unit] = null,
+    ajaxError: js.Function1[/* e */ AjaxErrorEventArgs, scala.Unit] = null,
+    ajaxSettings: AjaxSettings = null,
+    ajaxSuccess: js.Function1[/* e */ AjaxSuccessEventArgs, scala.Unit] = null,
+    allowVirtualScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    checkedIndices: js.Array[_] = null,
+    cssClass: java.lang.String = null,
+    dataSource: js.Array[_] = null,
+    enableAjax: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCache: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCheckMark: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGroupList: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    fieldSettings: FieldSettings = null,
+    headerBackButtonText: java.lang.String = null,
+    headerTitle: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    itemRequestCount: scala.Int | scala.Double = null,
+    items: js.Array[_] = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    loadComplete: js.Function1[/* e */ LoadCompleteEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    mouseDown: js.Function1[/* e */ MouseDownEventArgs, scala.Unit] = null,
+    mouseUp: js.Function1[/* e */ MouseUpEventArgs, scala.Unit] = null,
+    persistSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    preventSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    query: js.Any = null,
+    renderTemplate: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedItemIndex: scala.Int | scala.Double = null,
+    showHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeaderBackButton: js.UndefOr[scala.Boolean] = js.undefined,
+    templateId: java.lang.String = null,
+    totalItemsCount: scala.Int | scala.Double = null,
+    virtualScrollMode: ejDotWebDotAllLib.ejNs.VirtualScrollMode | java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(ajaxBeforeLoad)
+    if (ajaxComplete != null) __obj.updateDynamic("ajaxComplete")(ajaxComplete)
+    if (ajaxError != null) __obj.updateDynamic("ajaxError")(ajaxError)
+    if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings)
+    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(ajaxSuccess)
+    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling)
+    if (checkedIndices != null) __obj.updateDynamic("checkedIndices")(checkedIndices)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (!js.isUndefined(enableAjax)) __obj.updateDynamic("enableAjax")(enableAjax)
+    if (!js.isUndefined(enableCache)) __obj.updateDynamic("enableCache")(enableCache)
+    if (!js.isUndefined(enableCheckMark)) __obj.updateDynamic("enableCheckMark")(enableCheckMark)
+    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering)
+    if (!js.isUndefined(enableGroupList)) __obj.updateDynamic("enableGroupList")(enableGroupList)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (fieldSettings != null) __obj.updateDynamic("fieldSettings")(fieldSettings)
+    if (headerBackButtonText != null) __obj.updateDynamic("headerBackButtonText")(headerBackButtonText)
+    if (headerTitle != null) __obj.updateDynamic("headerTitle")(headerTitle)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (itemRequestCount != null) __obj.updateDynamic("itemRequestCount")(itemRequestCount.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loadComplete != null) __obj.updateDynamic("loadComplete")(loadComplete)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown)
+    if (mouseUp != null) __obj.updateDynamic("mouseUp")(mouseUp)
+    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection)
+    if (!js.isUndefined(preventSelection)) __obj.updateDynamic("preventSelection")(preventSelection)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(renderTemplate)) __obj.updateDynamic("renderTemplate")(renderTemplate)
+    if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
+    if (!js.isUndefined(showHeaderBackButton)) __obj.updateDynamic("showHeaderBackButton")(showHeaderBackButton)
+    if (templateId != null) __obj.updateDynamic("templateId")(templateId)
+    if (totalItemsCount != null) __obj.updateDynamic("totalItemsCount")(totalItemsCount.asInstanceOf[js.Any])
+    if (virtualScrollMode != null) __obj.updateDynamic("virtualScrollMode")(virtualScrollMode.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

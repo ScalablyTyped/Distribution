@@ -197,3 +197,82 @@ trait ToastrOptions extends js.Object {
   var toastClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ToastrOptions {
+  @scala.inline
+  def apply(
+    closeButton: js.UndefOr[scala.Boolean] = js.undefined,
+    closeClass: java.lang.String = null,
+    closeDuration: scala.Int | scala.Double = null,
+    closeEasing: java.lang.String = null,
+    closeHtml: java.lang.String = null,
+    closeMethod: java.lang.String = null,
+    closeOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    containerId: java.lang.String = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    escapeHtml: js.UndefOr[scala.Boolean] = js.undefined,
+    extendedTimeOut: scala.Int | scala.Double = null,
+    hideDuration: scala.Int | scala.Double = null,
+    hideEasing: java.lang.String = null,
+    hideMethod: java.lang.String = null,
+    iconClass: java.lang.String = null,
+    iconClasses: Anon_Error = null,
+    messageClass: java.lang.String = null,
+    newestOnTop: js.UndefOr[scala.Boolean] = js.undefined,
+    onCloseClick: js.Function1[/* ev */ jqueryLib.JQueryMouseEventObject, scala.Unit] = null,
+    onHidden: js.Function0[scala.Unit] = null,
+    onShown: js.Function0[scala.Unit] = null,
+    onclick: js.Function1[/* ev */ jqueryLib.JQueryMouseEventObject, scala.Unit] = null,
+    positionClass: java.lang.String = null,
+    preventDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
+    progressBar: js.UndefOr[scala.Boolean] = js.undefined,
+    progressClass: java.lang.String = null,
+    rtl: js.UndefOr[scala.Boolean] = js.undefined,
+    showDuration: scala.Int | scala.Double = null,
+    showEasing: java.lang.String = null,
+    showMethod: java.lang.String = null,
+    tapToDismiss: js.UndefOr[scala.Boolean] = js.undefined,
+    target: java.lang.String = null,
+    timeOut: scala.Int | scala.Double = null,
+    titleClass: java.lang.String = null,
+    toastClass: java.lang.String = null
+  ): ToastrOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
+    if (closeClass != null) __obj.updateDynamic("closeClass")(closeClass)
+    if (closeDuration != null) __obj.updateDynamic("closeDuration")(closeDuration.asInstanceOf[js.Any])
+    if (closeEasing != null) __obj.updateDynamic("closeEasing")(closeEasing)
+    if (closeHtml != null) __obj.updateDynamic("closeHtml")(closeHtml)
+    if (closeMethod != null) __obj.updateDynamic("closeMethod")(closeMethod)
+    if (!js.isUndefined(closeOnHover)) __obj.updateDynamic("closeOnHover")(closeOnHover)
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(escapeHtml)) __obj.updateDynamic("escapeHtml")(escapeHtml)
+    if (extendedTimeOut != null) __obj.updateDynamic("extendedTimeOut")(extendedTimeOut.asInstanceOf[js.Any])
+    if (hideDuration != null) __obj.updateDynamic("hideDuration")(hideDuration.asInstanceOf[js.Any])
+    if (hideEasing != null) __obj.updateDynamic("hideEasing")(hideEasing)
+    if (hideMethod != null) __obj.updateDynamic("hideMethod")(hideMethod)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    if (iconClasses != null) __obj.updateDynamic("iconClasses")(iconClasses)
+    if (messageClass != null) __obj.updateDynamic("messageClass")(messageClass)
+    if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop)
+    if (onCloseClick != null) __obj.updateDynamic("onCloseClick")(onCloseClick)
+    if (onHidden != null) __obj.updateDynamic("onHidden")(onHidden)
+    if (onShown != null) __obj.updateDynamic("onShown")(onShown)
+    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (positionClass != null) __obj.updateDynamic("positionClass")(positionClass)
+    if (!js.isUndefined(preventDuplicates)) __obj.updateDynamic("preventDuplicates")(preventDuplicates)
+    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar)
+    if (progressClass != null) __obj.updateDynamic("progressClass")(progressClass)
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
+    if (showDuration != null) __obj.updateDynamic("showDuration")(showDuration.asInstanceOf[js.Any])
+    if (showEasing != null) __obj.updateDynamic("showEasing")(showEasing)
+    if (showMethod != null) __obj.updateDynamic("showMethod")(showMethod)
+    if (!js.isUndefined(tapToDismiss)) __obj.updateDynamic("tapToDismiss")(tapToDismiss)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (timeOut != null) __obj.updateDynamic("timeOut")(timeOut.asInstanceOf[js.Any])
+    if (titleClass != null) __obj.updateDynamic("titleClass")(titleClass)
+    if (toastClass != null) __obj.updateDynamic("toastClass")(toastClass)
+    __obj.asInstanceOf[ToastrOptions]
+  }
+}
+

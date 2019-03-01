@@ -138,3 +138,60 @@ trait ClndrOptions extends js.Object {
   var weekOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ClndrOptions {
+  @scala.inline
+  def apply(
+    adjacentDaysChangeMonth: js.UndefOr[scala.Boolean] = js.undefined,
+    classes: Classes = null,
+    clickEvents: ClickEvents = null,
+    constraints: Constraints = null,
+    dateParameter: java.lang.String = null,
+    daysOfTheWeek: js.Array[java.lang.String] = null,
+    doneRendering: js.Function0[scala.Unit] = null,
+    events: js.Array[_] = null,
+    extras: js.Any = null,
+    forceSixRows: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreInactiveDaysInSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    lengthOfTime: LengthOfTime = null,
+    moment: momentLib.momentMod.momentNs.Moment = null,
+    multiDayEvents: MultiDayEvents = null,
+    ready: js.Function0[scala.Unit] = null,
+    render: js.Function1[/* data */ RenderData, scala.Unit] = null,
+    selectedDate: js.Any = null,
+    showAdjacentMonths: js.UndefOr[scala.Boolean] = js.undefined,
+    startWithMonth: java.lang.String | momentLib.momentMod.momentNs.Moment = null,
+    targets: Targets = null,
+    template: java.lang.String = null,
+    trackSelectedDate: js.UndefOr[scala.Boolean] = js.undefined,
+    useTouchEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    weekOffset: scala.Int | scala.Double = null
+  ): ClndrOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(adjacentDaysChangeMonth)) __obj.updateDynamic("adjacentDaysChangeMonth")(adjacentDaysChangeMonth)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (clickEvents != null) __obj.updateDynamic("clickEvents")(clickEvents)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (dateParameter != null) __obj.updateDynamic("dateParameter")(dateParameter)
+    if (daysOfTheWeek != null) __obj.updateDynamic("daysOfTheWeek")(daysOfTheWeek)
+    if (doneRendering != null) __obj.updateDynamic("doneRendering")(doneRendering)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (extras != null) __obj.updateDynamic("extras")(extras)
+    if (!js.isUndefined(forceSixRows)) __obj.updateDynamic("forceSixRows")(forceSixRows)
+    if (!js.isUndefined(ignoreInactiveDaysInSelection)) __obj.updateDynamic("ignoreInactiveDaysInSelection")(ignoreInactiveDaysInSelection)
+    if (lengthOfTime != null) __obj.updateDynamic("lengthOfTime")(lengthOfTime)
+    if (moment != null) __obj.updateDynamic("moment")(moment)
+    if (multiDayEvents != null) __obj.updateDynamic("multiDayEvents")(multiDayEvents)
+    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (selectedDate != null) __obj.updateDynamic("selectedDate")(selectedDate)
+    if (!js.isUndefined(showAdjacentMonths)) __obj.updateDynamic("showAdjacentMonths")(showAdjacentMonths)
+    if (startWithMonth != null) __obj.updateDynamic("startWithMonth")(startWithMonth.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(trackSelectedDate)) __obj.updateDynamic("trackSelectedDate")(trackSelectedDate)
+    if (!js.isUndefined(useTouchEvents)) __obj.updateDynamic("useTouchEvents")(useTouchEvents)
+    if (weekOffset != null) __obj.updateDynamic("weekOffset")(weekOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClndrOptions]
+  }
+}
+

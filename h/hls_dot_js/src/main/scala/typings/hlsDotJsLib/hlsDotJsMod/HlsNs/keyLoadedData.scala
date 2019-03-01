@@ -9,3 +9,12 @@ trait keyLoadedData extends js.Object {
   var frag: Fragment
 }
 
+object keyLoadedData {
+  @scala.inline
+  def apply(frag: Fragment): keyLoadedData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frag")(frag)
+    __obj.asInstanceOf[keyLoadedData]
+  }
+}
+

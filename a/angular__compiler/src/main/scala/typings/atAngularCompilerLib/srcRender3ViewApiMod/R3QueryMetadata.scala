@@ -29,3 +29,22 @@ trait R3QueryMetadata extends js.Object {
   var read: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
 }
 
+object R3QueryMetadata {
+  @scala.inline
+  def apply(
+    descendants: scala.Boolean,
+    first: scala.Boolean,
+    predicate: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | js.Array[java.lang.String],
+    propertyName: java.lang.String,
+    read: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null
+  ): R3QueryMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("descendants")(descendants)
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("predicate")(predicate.asInstanceOf[js.Any])
+    __obj.updateDynamic("propertyName")(propertyName)
+    if (read != null) __obj.updateDynamic("read")(read)
+    __obj.asInstanceOf[R3QueryMetadata]
+  }
+}
+

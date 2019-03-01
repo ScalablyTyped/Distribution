@@ -14,3 +14,20 @@ trait CreateUnitOptions extends js.Object {
   ] = js.undefined
 }
 
+object CreateUnitOptions {
+  @scala.inline
+  def apply(
+    aliases: js.Array[java.lang.String] = null,
+    offset: scala.Int | scala.Double = null,
+    `override`: js.UndefOr[scala.Boolean] = js.undefined,
+    prefixes: mathjsLib.mathjsLibStrings.none | mathjsLib.mathjsLibStrings.short | mathjsLib.mathjsLibStrings.long | mathjsLib.mathjsLibStrings.binary_short | mathjsLib.mathjsLibStrings.binary_long = null
+  ): CreateUnitOptions = {
+    val __obj = js.Dynamic.literal()
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`)
+    if (prefixes != null) __obj.updateDynamic("prefixes")(prefixes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateUnitOptions]
+  }
+}
+

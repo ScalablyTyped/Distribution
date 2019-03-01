@@ -11,3 +11,14 @@ trait StepperConstants extends js.Object {
   var TYPE: firmataLib.Anon_DRIVER
 }
 
+object StepperConstants {
+  @scala.inline
+  def apply(DIRECTION: firmataLib.Anon_CCW, RUNSTATE: firmataLib.Anon_ACCEL, TYPE: firmataLib.Anon_DRIVER): StepperConstants = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DIRECTION")(DIRECTION)
+    __obj.updateDynamic("RUNSTATE")(RUNSTATE)
+    __obj.updateDynamic("TYPE")(TYPE)
+    __obj.asInstanceOf[StepperConstants]
+  }
+}
+

@@ -13,3 +13,12 @@ trait OnBeforeSendHeadersFilter extends js.Object {
   var urls: js.Array[java.lang.String]
 }
 
+object OnBeforeSendHeadersFilter {
+  @scala.inline
+  def apply(urls: js.Array[java.lang.String]): OnBeforeSendHeadersFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[OnBeforeSendHeadersFilter]
+  }
+}
+

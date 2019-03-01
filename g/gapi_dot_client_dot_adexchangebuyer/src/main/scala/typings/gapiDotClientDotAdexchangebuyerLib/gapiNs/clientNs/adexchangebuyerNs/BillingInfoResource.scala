@@ -12,3 +12,22 @@ trait BillingInfoResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangebuyerLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[BillingInfoList]
 }
 
+object BillingInfoResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AccountId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BillingInfo]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BillingInfoList]
+    ]
+  ): BillingInfoResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[BillingInfoResource]
+  }
+}
+

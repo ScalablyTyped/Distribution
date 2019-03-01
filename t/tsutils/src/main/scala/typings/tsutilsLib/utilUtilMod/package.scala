@@ -19,5 +19,4 @@ package object utilUtilMod {
     /* parent */ typescriptLib.typescriptMod.tsNs.Node, 
     scala.Unit
   ]
-  type StrictCompilerOption = tsutilsLib.tsutilsLibStrings.noImplicitAny | tsutilsLib.tsutilsLibStrings.noImplicitThis | tsutilsLib.tsutilsLibStrings.strictNullChecks | tsutilsLib.tsutilsLibStrings.strictFunctionTypes | tsutilsLib.tsutilsLibStrings.strictPropertyInitialization | tsutilsLib.tsutilsLibStrings.alwaysStrict
 }

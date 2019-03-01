@@ -39,3 +39,24 @@ trait FontWarnings extends js.Object {
   var removeAfter: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FontWarnings {
+  @scala.inline
+  def apply(
+    HTML: HTMLSnippets = null,
+    Message: HTMLMessages = null,
+    fadeoutSteps: scala.Int | scala.Double = null,
+    fadeoutTime: scala.Int | scala.Double = null,
+    messageStyle: js.Any = null,
+    removeAfter: scala.Int | scala.Double = null
+  ): FontWarnings = {
+    val __obj = js.Dynamic.literal()
+    if (HTML != null) __obj.updateDynamic("HTML")(HTML)
+    if (Message != null) __obj.updateDynamic("Message")(Message)
+    if (fadeoutSteps != null) __obj.updateDynamic("fadeoutSteps")(fadeoutSteps.asInstanceOf[js.Any])
+    if (fadeoutTime != null) __obj.updateDynamic("fadeoutTime")(fadeoutTime.asInstanceOf[js.Any])
+    if (messageStyle != null) __obj.updateDynamic("messageStyle")(messageStyle)
+    if (removeAfter != null) __obj.updateDynamic("removeAfter")(removeAfter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FontWarnings]
+  }
+}
+

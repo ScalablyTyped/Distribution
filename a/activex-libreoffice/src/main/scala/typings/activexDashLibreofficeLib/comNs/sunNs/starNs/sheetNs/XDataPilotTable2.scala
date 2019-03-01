@@ -49,3 +49,41 @@ trait XDataPilotTable2 extends XDataPilotTable {
   def insertDrillDownSheet(aAddr: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress): scala.Unit
 }
 
+object XDataPilotTable2 {
+  @scala.inline
+  def apply(
+    OutputRange: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    acquire: js.Function0[scala.Unit],
+    getDrillDownData: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
+    ],
+    getOutputRange: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    getOutputRangeByType: js.Function1[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress
+    ],
+    getPositionData: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      DataPilotTablePositionData
+    ],
+    insertDrillDownSheet: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    refresh: js.Function0[scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XDataPilotTable2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("OutputRange")(OutputRange)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDrillDownData")(getDrillDownData)
+    __obj.updateDynamic("getOutputRange")(getOutputRange)
+    __obj.updateDynamic("getOutputRangeByType")(getOutputRangeByType)
+    __obj.updateDynamic("getPositionData")(getPositionData)
+    __obj.updateDynamic("insertDrillDownSheet")(insertDrillDownSheet)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("refresh")(refresh)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDataPilotTable2]
+  }
+}
+

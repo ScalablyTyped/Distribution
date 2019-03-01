@@ -37,3 +37,38 @@ trait IHidden
   var setWidth_IHidden: js.UndefOr[js.Function0[extjsLib.ExtNs.IComponent]] = js.undefined
 }
 
+object IHidden {
+  @scala.inline
+  def apply(
+    IBase: extjsLib.ExtNs.formNs.fieldNs.IBase = null,
+    clearInvalid: js.Function0[scala.Unit] = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    hideLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    initComponent: js.Function0[scala.Unit] = null,
+    initEvents: js.Function0[scala.Unit] = null,
+    inputType: java.lang.String = null,
+    markInvalid: js.Function0[scala.Unit] = null,
+    setHeight: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    setPagePosition: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    setPosition: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    setSize: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    setWidth: js.Function0[extjsLib.ExtNs.IComponent] = null
+  ): IHidden = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IBase)
+    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(clearInvalid)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(hideLabel)) __obj.updateDynamic("hideLabel")(hideLabel)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (initEvents != null) __obj.updateDynamic("initEvents")(initEvents)
+    if (inputType != null) __obj.updateDynamic("inputType")(inputType)
+    if (markInvalid != null) __obj.updateDynamic("markInvalid")(markInvalid)
+    if (setHeight != null) __obj.updateDynamic("setHeight")(setHeight)
+    if (setPagePosition != null) __obj.updateDynamic("setPagePosition")(setPagePosition)
+    if (setPosition != null) __obj.updateDynamic("setPosition")(setPosition)
+    if (setSize != null) __obj.updateDynamic("setSize")(setSize)
+    if (setWidth != null) __obj.updateDynamic("setWidth")(setWidth)
+    __obj.asInstanceOf[IHidden]
+  }
+}
+

@@ -11,3 +11,14 @@ trait GridColumnCommandItemIconClass extends js.Object {
   var update: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GridColumnCommandItemIconClass {
+  @scala.inline
+  def apply(cancel: java.lang.String = null, edit: java.lang.String = null, update: java.lang.String = null): GridColumnCommandItemIconClass = {
+    val __obj = js.Dynamic.literal()
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (edit != null) __obj.updateDynamic("edit")(edit)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[GridColumnCommandItemIconClass]
+  }
+}
+

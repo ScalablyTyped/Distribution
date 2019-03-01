@@ -34,3 +34,20 @@ trait APIResourceList extends js.Object {
   val resources: js.Array[APIResource]
 }
 
+object APIResourceList {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    groupVersion: java.lang.String,
+    kind: java.lang.String,
+    resources: js.Array[APIResource]
+  ): APIResourceList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("groupVersion")(groupVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("resources")(resources)
+    __obj.asInstanceOf[APIResourceList]
+  }
+}
+

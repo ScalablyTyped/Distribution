@@ -145,3 +145,58 @@ trait XSQLOutput
   def writeTimestamp(x: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime): scala.Unit
 }
 
+object XSQLOutput {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    writeArray: js.Function1[XArray, scala.Unit],
+    writeBinaryStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit],
+    writeBlob: js.Function1[XBlob, scala.Unit],
+    writeBoolean: js.Function1[scala.Boolean, scala.Unit],
+    writeByte: js.Function1[scala.Double, scala.Unit],
+    writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    writeCharacterStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit],
+    writeClob: js.Function1[XClob, scala.Unit],
+    writeDate: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    writeDouble: js.Function1[scala.Double, scala.Unit],
+    writeFloat: js.Function1[scala.Double, scala.Unit],
+    writeInt: js.Function1[scala.Double, scala.Unit],
+    writeLong: js.Function1[scala.Double, scala.Unit],
+    writeObject: js.Function1[XSQLData, scala.Unit],
+    writeRef: js.Function1[XRef, scala.Unit],
+    writeShort: js.Function1[scala.Double, scala.Unit],
+    writeString: js.Function1[java.lang.String, scala.Unit],
+    writeStruct: js.Function1[XStruct, scala.Unit],
+    writeTime: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
+    writeTimestamp: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, scala.Unit]
+  ): XSQLOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("writeArray")(writeArray)
+    __obj.updateDynamic("writeBinaryStream")(writeBinaryStream)
+    __obj.updateDynamic("writeBlob")(writeBlob)
+    __obj.updateDynamic("writeBoolean")(writeBoolean)
+    __obj.updateDynamic("writeByte")(writeByte)
+    __obj.updateDynamic("writeBytes")(writeBytes)
+    __obj.updateDynamic("writeCharacterStream")(writeCharacterStream)
+    __obj.updateDynamic("writeClob")(writeClob)
+    __obj.updateDynamic("writeDate")(writeDate)
+    __obj.updateDynamic("writeDouble")(writeDouble)
+    __obj.updateDynamic("writeFloat")(writeFloat)
+    __obj.updateDynamic("writeInt")(writeInt)
+    __obj.updateDynamic("writeLong")(writeLong)
+    __obj.updateDynamic("writeObject")(writeObject)
+    __obj.updateDynamic("writeRef")(writeRef)
+    __obj.updateDynamic("writeShort")(writeShort)
+    __obj.updateDynamic("writeString")(writeString)
+    __obj.updateDynamic("writeStruct")(writeStruct)
+    __obj.updateDynamic("writeTime")(writeTime)
+    __obj.updateDynamic("writeTimestamp")(writeTimestamp)
+    __obj.asInstanceOf[XSQLOutput]
+  }
+}
+

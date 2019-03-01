@@ -23,3 +23,42 @@ trait AppBarProps extends js.Object {
   var zDepth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AppBarProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    iconClassNameLeft: java.lang.String = null,
+    iconClassNameRight: java.lang.String = null,
+    iconElementLeft: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    iconElementRight: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    iconStyleLeft: reactLib.reactMod.ReactNs.CSSProperties = null,
+    iconStyleRight: reactLib.reactMod.ReactNs.CSSProperties = null,
+    onLeftIconButtonClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
+    onRightIconButtonClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
+    onTitleClick: reactLib.reactMod.ReactNs.MouseEventHandler[js.Object] = null,
+    showMenuIconButton: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    titleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    zDepth: scala.Int | scala.Double = null
+  ): AppBarProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (iconClassNameLeft != null) __obj.updateDynamic("iconClassNameLeft")(iconClassNameLeft)
+    if (iconClassNameRight != null) __obj.updateDynamic("iconClassNameRight")(iconClassNameRight)
+    if (iconElementLeft != null) __obj.updateDynamic("iconElementLeft")(iconElementLeft)
+    if (iconElementRight != null) __obj.updateDynamic("iconElementRight")(iconElementRight)
+    if (iconStyleLeft != null) __obj.updateDynamic("iconStyleLeft")(iconStyleLeft)
+    if (iconStyleRight != null) __obj.updateDynamic("iconStyleRight")(iconStyleRight)
+    if (onLeftIconButtonClick != null) __obj.updateDynamic("onLeftIconButtonClick")(onLeftIconButtonClick)
+    if (onRightIconButtonClick != null) __obj.updateDynamic("onRightIconButtonClick")(onRightIconButtonClick)
+    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(onTitleClick)
+    if (!js.isUndefined(showMenuIconButton)) __obj.updateDynamic("showMenuIconButton")(showMenuIconButton)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle)
+    if (zDepth != null) __obj.updateDynamic("zDepth")(zDepth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppBarProps]
+  }
+}
+

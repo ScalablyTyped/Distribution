@@ -34,3 +34,31 @@ trait ColumnSizerProps
   def children(props: SizedColumnProps): reactLib.reactMod.ReactNs.ReactNode
 }
 
+object ColumnSizerProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[SizedColumnProps, reactLib.reactMod.ReactNs.ReactNode],
+    width: scala.Double,
+    StringDictionary: /**
+    * PLEASE NOTE
+    * The [key: string]: any; line is here on purpose
+    * This is due to the need of force re-render of PureComponent
+    * Check the following link if you want to know more
+    * https://github.com/bvaughn/react-virtualized#pass-thru-props
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columnCount: scala.Int | scala.Double = null,
+    columnMaxWidth: scala.Int | scala.Double = null,
+    columnMinWidth: scala.Int | scala.Double = null
+  ): ColumnSizerProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("width")(width)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (columnMaxWidth != null) __obj.updateDynamic("columnMaxWidth")(columnMaxWidth.asInstanceOf[js.Any])
+    if (columnMinWidth != null) __obj.updateDynamic("columnMinWidth")(columnMinWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnSizerProps]
+  }
+}
+

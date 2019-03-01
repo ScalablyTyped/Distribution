@@ -15,3 +15,12 @@ trait IGridOptions extends js.Object {
   var enableColumnMoving: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(enableColumnMoving: js.UndefOr[scala.Boolean] = js.undefined): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

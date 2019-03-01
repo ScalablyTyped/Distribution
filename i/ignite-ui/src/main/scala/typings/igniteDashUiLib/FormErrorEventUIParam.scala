@@ -16,3 +16,13 @@ trait FormErrorEventUIParam extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FormErrorEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null, target: java.lang.String = null): FormErrorEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[FormErrorEventUIParam]
+  }
+}
+

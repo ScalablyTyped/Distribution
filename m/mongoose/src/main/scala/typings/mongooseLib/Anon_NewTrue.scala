@@ -10,3 +10,12 @@ trait Anon_NewTrue extends js.Object {
   var upsert: mongooseLib.mongooseLibNumbers.`true`
 }
 
+object Anon_NewTrue {
+  @scala.inline
+  def apply(`new`: mongooseLib.mongooseLibNumbers.`true`, upsert: mongooseLib.mongooseLibNumbers.`true`): Anon_NewTrue = {
+    val __obj = js.Dynamic.literal(`new` = `new`)
+    __obj.updateDynamic("upsert")(upsert)
+    __obj.asInstanceOf[Anon_NewTrue]
+  }
+}
+

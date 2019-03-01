@@ -53,3 +53,44 @@ trait Quest extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Quest {
+  @scala.inline
+  def apply(
+    acceptedTimestampMillis: java.lang.String = null,
+    applicationId: java.lang.String = null,
+    bannerUrl: java.lang.String = null,
+    description: java.lang.String = null,
+    endTimestampMillis: java.lang.String = null,
+    iconUrl: java.lang.String = null,
+    id: java.lang.String = null,
+    isDefaultBannerUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    isDefaultIconUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    lastUpdatedTimestampMillis: java.lang.String = null,
+    milestones: js.Array[QuestMilestone] = null,
+    name: java.lang.String = null,
+    notifyTimestampMillis: java.lang.String = null,
+    startTimestampMillis: java.lang.String = null,
+    state: java.lang.String = null
+  ): Quest = {
+    val __obj = js.Dynamic.literal()
+    if (acceptedTimestampMillis != null) __obj.updateDynamic("acceptedTimestampMillis")(acceptedTimestampMillis)
+    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId)
+    if (bannerUrl != null) __obj.updateDynamic("bannerUrl")(bannerUrl)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (endTimestampMillis != null) __obj.updateDynamic("endTimestampMillis")(endTimestampMillis)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isDefaultBannerUrl)) __obj.updateDynamic("isDefaultBannerUrl")(isDefaultBannerUrl)
+    if (!js.isUndefined(isDefaultIconUrl)) __obj.updateDynamic("isDefaultIconUrl")(isDefaultIconUrl)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastUpdatedTimestampMillis != null) __obj.updateDynamic("lastUpdatedTimestampMillis")(lastUpdatedTimestampMillis)
+    if (milestones != null) __obj.updateDynamic("milestones")(milestones)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (notifyTimestampMillis != null) __obj.updateDynamic("notifyTimestampMillis")(notifyTimestampMillis)
+    if (startTimestampMillis != null) __obj.updateDynamic("startTimestampMillis")(startTimestampMillis)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Quest]
+  }
+}
+

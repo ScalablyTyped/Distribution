@@ -99,3 +99,57 @@ trait DatasetsResource extends js.Object {
   def undelete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
 }
 
+object DatasetsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDatasetsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackDatasetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ],
+    undelete: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+    ]
+  ): DatasetsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.updateDynamic("undelete")(undelete)
+    __obj.asInstanceOf[DatasetsResource]
+  }
+}
+

@@ -17,3 +17,16 @@ trait Anon_DynamicRegistrationPrepareSupport extends js.Object {
   var prepareSupport: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_DynamicRegistrationPrepareSupport {
+  @scala.inline
+  def apply(
+    dynamicRegistration: js.UndefOr[scala.Boolean] = js.undefined,
+    prepareSupport: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_DynamicRegistrationPrepareSupport = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
+    if (!js.isUndefined(prepareSupport)) __obj.updateDynamic("prepareSupport")(prepareSupport)
+    __obj.asInstanceOf[Anon_DynamicRegistrationPrepareSupport]
+  }
+}
+

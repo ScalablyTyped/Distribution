@@ -36,3 +36,26 @@ trait ScalesTick extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScalesTick {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    distanceFromScale: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    placement: Placement | java.lang.String = null,
+    `type`: LabelType | java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ScalesTick = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScalesTick]
+  }
+}
+

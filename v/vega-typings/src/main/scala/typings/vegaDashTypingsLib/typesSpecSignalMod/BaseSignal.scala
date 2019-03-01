@@ -11,3 +11,18 @@ trait BaseSignal extends js.Object {
   var on: js.UndefOr[js.Array[vegaDashTypingsLib.typesSpecOnDashEventsMod.OnEvent]] = js.undefined
 }
 
+object BaseSignal {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    description: java.lang.String = null,
+    on: js.Array[vegaDashTypingsLib.typesSpecOnDashEventsMod.OnEvent] = null
+  ): BaseSignal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (on != null) __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[BaseSignal]
+  }
+}
+

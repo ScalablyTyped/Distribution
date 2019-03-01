@@ -121,3 +121,70 @@ trait GetClusterResult extends js.Object {
   val vpcSecurityGroupIds: js.Array[java.lang.String]
 }
 
+object GetClusterResult {
+  @scala.inline
+  def apply(
+    allowVersionUpgrade: scala.Boolean,
+    automatedSnapshotRetentionPeriod: scala.Double,
+    availabilityZone: java.lang.String,
+    bucketName: java.lang.String,
+    clusterParameterGroupName: java.lang.String,
+    clusterPublicKey: java.lang.String,
+    clusterRevisionNumber: java.lang.String,
+    clusterSecurityGroups: js.Array[java.lang.String],
+    clusterSubnetGroupName: java.lang.String,
+    clusterType: java.lang.String,
+    clusterVersion: java.lang.String,
+    databaseName: java.lang.String,
+    elasticIp: java.lang.String,
+    enableLogging: scala.Boolean,
+    encrypted: scala.Boolean,
+    endpoint: java.lang.String,
+    enhancedVpcRouting: scala.Boolean,
+    iamRoles: js.Array[java.lang.String],
+    id: java.lang.String,
+    kmsKeyId: java.lang.String,
+    masterUsername: java.lang.String,
+    nodeType: java.lang.String,
+    numberOfNodes: scala.Double,
+    port: scala.Double,
+    preferredMaintenanceWindow: java.lang.String,
+    publiclyAccessible: scala.Boolean,
+    s3KeyPrefix: java.lang.String,
+    vpcId: java.lang.String,
+    vpcSecurityGroupIds: js.Array[java.lang.String]
+  ): GetClusterResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowVersionUpgrade")(allowVersionUpgrade)
+    __obj.updateDynamic("automatedSnapshotRetentionPeriod")(automatedSnapshotRetentionPeriod)
+    __obj.updateDynamic("availabilityZone")(availabilityZone)
+    __obj.updateDynamic("bucketName")(bucketName)
+    __obj.updateDynamic("clusterParameterGroupName")(clusterParameterGroupName)
+    __obj.updateDynamic("clusterPublicKey")(clusterPublicKey)
+    __obj.updateDynamic("clusterRevisionNumber")(clusterRevisionNumber)
+    __obj.updateDynamic("clusterSecurityGroups")(clusterSecurityGroups)
+    __obj.updateDynamic("clusterSubnetGroupName")(clusterSubnetGroupName)
+    __obj.updateDynamic("clusterType")(clusterType)
+    __obj.updateDynamic("clusterVersion")(clusterVersion)
+    __obj.updateDynamic("databaseName")(databaseName)
+    __obj.updateDynamic("elasticIp")(elasticIp)
+    __obj.updateDynamic("enableLogging")(enableLogging)
+    __obj.updateDynamic("encrypted")(encrypted)
+    __obj.updateDynamic("endpoint")(endpoint)
+    __obj.updateDynamic("enhancedVpcRouting")(enhancedVpcRouting)
+    __obj.updateDynamic("iamRoles")(iamRoles)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
+    __obj.updateDynamic("masterUsername")(masterUsername)
+    __obj.updateDynamic("nodeType")(nodeType)
+    __obj.updateDynamic("numberOfNodes")(numberOfNodes)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow)
+    __obj.updateDynamic("publiclyAccessible")(publiclyAccessible)
+    __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix)
+    __obj.updateDynamic("vpcId")(vpcId)
+    __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds)
+    __obj.asInstanceOf[GetClusterResult]
+  }
+}
+

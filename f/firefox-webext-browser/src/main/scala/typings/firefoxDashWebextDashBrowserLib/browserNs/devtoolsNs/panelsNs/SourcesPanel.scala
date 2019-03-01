@@ -22,3 +22,16 @@ trait SourcesPanel extends js.Object {
   var onSelectionChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]]
 }
 
+object SourcesPanel {
+  @scala.inline
+  def apply(
+    onSelectionChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]],
+    createSidebarPane: js.Function1[/* title */ java.lang.String, js.Promise[js.UndefOr[ExtensionSidebarPane]]] = null
+  ): SourcesPanel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onSelectionChanged")(onSelectionChanged)
+    if (createSidebarPane != null) __obj.updateDynamic("createSidebarPane")(createSidebarPane)
+    __obj.asInstanceOf[SourcesPanel]
+  }
+}
+

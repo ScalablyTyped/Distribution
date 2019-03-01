@@ -16,3 +16,22 @@ trait AppendObjectOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AppendObjectOptions {
+  @scala.inline
+  def apply(
+    headers: js.Object = null,
+    meta: UserMeta = null,
+    mime: java.lang.String = null,
+    position: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null
+  ): AppendObjectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (mime != null) __obj.updateDynamic("mime")(mime)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AppendObjectOptions]
+  }
+}
+

@@ -14,3 +14,18 @@ trait StreamingComputationTask extends js.Object {
   var taskType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StreamingComputationTask {
+  @scala.inline
+  def apply(
+    computationRanges: js.Array[StreamingComputationRanges] = null,
+    dataDisks: js.Array[MountedDataDisk] = null,
+    taskType: java.lang.String = null
+  ): StreamingComputationTask = {
+    val __obj = js.Dynamic.literal()
+    if (computationRanges != null) __obj.updateDynamic("computationRanges")(computationRanges)
+    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks)
+    if (taskType != null) __obj.updateDynamic("taskType")(taskType)
+    __obj.asInstanceOf[StreamingComputationTask]
+  }
+}
+

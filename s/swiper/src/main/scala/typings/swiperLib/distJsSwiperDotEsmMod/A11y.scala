@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "A11y")
 @js.native
-class A11y () extends js.Object
+class A11y ()
+  extends swiperLib.swiperMod.SwiperModule
 

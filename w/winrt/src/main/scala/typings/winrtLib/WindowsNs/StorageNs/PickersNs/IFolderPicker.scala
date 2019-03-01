@@ -16,3 +16,30 @@ trait IFolderPicker extends js.Object {
   def pickSingleFolderAsync(): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFolder]
 }
 
+object IFolderPicker {
+  @scala.inline
+  def apply(
+    commitButtonText: java.lang.String,
+    continuationData: winrtLib.WindowsNs.FoundationNs.CollectionsNs.ValueSet,
+    fileTypeFilter: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String],
+    pickFolderAndContinue: js.Function0[scala.Unit],
+    pickSingleFolderAsync: js.Function0[
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFolder]
+    ],
+    settingsIdentifier: java.lang.String,
+    suggestedStartLocation: PickerLocationId,
+    viewMode: PickerViewMode
+  ): IFolderPicker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commitButtonText")(commitButtonText)
+    __obj.updateDynamic("continuationData")(continuationData)
+    __obj.updateDynamic("fileTypeFilter")(fileTypeFilter)
+    __obj.updateDynamic("pickFolderAndContinue")(pickFolderAndContinue)
+    __obj.updateDynamic("pickSingleFolderAsync")(pickSingleFolderAsync)
+    __obj.updateDynamic("settingsIdentifier")(settingsIdentifier)
+    __obj.updateDynamic("suggestedStartLocation")(suggestedStartLocation)
+    __obj.updateDynamic("viewMode")(viewMode)
+    __obj.asInstanceOf[IFolderPicker]
+  }
+}
+

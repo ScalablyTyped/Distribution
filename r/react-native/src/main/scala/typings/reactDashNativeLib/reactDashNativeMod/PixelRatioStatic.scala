@@ -53,3 +53,22 @@ trait PixelRatioStatic extends js.Object {
   def startDetecting(): scala.Unit
 }
 
+object PixelRatioStatic {
+  @scala.inline
+  def apply(
+    get: js.Function0[scala.Double],
+    getFontScale: js.Function0[scala.Double],
+    getPixelSizeForLayoutSize: js.Function1[scala.Double, scala.Double],
+    roundToNearestPixel: js.Function1[scala.Double, scala.Double],
+    startDetecting: js.Function0[scala.Unit]
+  ): PixelRatioStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getFontScale")(getFontScale)
+    __obj.updateDynamic("getPixelSizeForLayoutSize")(getPixelSizeForLayoutSize)
+    __obj.updateDynamic("roundToNearestPixel")(roundToNearestPixel)
+    __obj.updateDynamic("startDetecting")(startDetecting)
+    __obj.asInstanceOf[PixelRatioStatic]
+  }
+}
+

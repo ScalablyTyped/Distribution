@@ -7,40 +7,52 @@ import scala.scalajs.js.annotation._
 
 object istanbulDashReportsLibStrings {
   @js.native
-  sealed trait clover extends js.Object
+  sealed trait clover
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait cobertura extends js.Object
+  sealed trait cobertura
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait html
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait `json-summary` extends js.Object
+  sealed trait `json-summary`
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait lcov extends js.Object
+  sealed trait lcov
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait lcovonly extends js.Object
+  sealed trait lcovonly
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait teamcity extends js.Object
+  sealed trait teamcity
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait `text-lcov` extends js.Object
+  sealed trait `text-lcov`
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @js.native
-  sealed trait `text-summary` extends js.Object
+  sealed trait `text-summary`
+    extends istanbulDashReportsLib.istanbulDashReportsMod.ReportType
   
   @scala.inline
   def clover: clover = "clover".asInstanceOf[clover]

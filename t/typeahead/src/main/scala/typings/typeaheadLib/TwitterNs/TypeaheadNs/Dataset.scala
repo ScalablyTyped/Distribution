@@ -65,3 +65,29 @@ trait Dataset[T] extends js.Object {
   var templates: js.UndefOr[Templates[T]] = js.undefined
 }
 
+object Dataset {
+  @scala.inline
+  def apply[T](
+    source: typeaheadLib.Bloodhound[T] | (js.Function3[
+      /* query */ java.lang.String, 
+      /* syncResults */ js.Function1[/* result */ js.Array[T], scala.Unit], 
+      /* asyncResults */ js.UndefOr[js.Function1[/* result */ js.Array[T], scala.Unit]], 
+      scala.Unit
+    ]),
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    display: java.lang.String | (js.Function1[/* obj */ T, java.lang.String]) = null,
+    limit: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    templates: Templates[T] = null
+  ): Dataset[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (templates != null) __obj.updateDynamic("templates")(templates)
+    __obj.asInstanceOf[Dataset[T]]
+  }
+}
+

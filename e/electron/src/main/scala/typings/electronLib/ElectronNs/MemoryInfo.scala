@@ -32,3 +32,22 @@ trait MemoryInfo extends js.Object {
   var workingSetSize: scala.Double
 }
 
+object MemoryInfo {
+  @scala.inline
+  def apply(
+    peakWorkingSetSize: scala.Double,
+    pid: scala.Double,
+    privateBytes: scala.Double,
+    sharedBytes: scala.Double,
+    workingSetSize: scala.Double
+  ): MemoryInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("peakWorkingSetSize")(peakWorkingSetSize)
+    __obj.updateDynamic("pid")(pid)
+    __obj.updateDynamic("privateBytes")(privateBytes)
+    __obj.updateDynamic("sharedBytes")(sharedBytes)
+    __obj.updateDynamic("workingSetSize")(workingSetSize)
+    __obj.asInstanceOf[MemoryInfo]
+  }
+}
+

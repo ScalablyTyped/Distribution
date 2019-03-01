@@ -32,3 +32,22 @@ trait MessengerOptions extends js.Object {
   var theme: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MessengerOptions {
+  @scala.inline
+  def apply(
+    extraClasses: java.lang.String = null,
+    maxMessages: scala.Int | scala.Double = null,
+    messageDefaults: MessageOptions = null,
+    parentLocations: js.Array[java.lang.String] = null,
+    theme: java.lang.String = null
+  ): MessengerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (extraClasses != null) __obj.updateDynamic("extraClasses")(extraClasses)
+    if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
+    if (messageDefaults != null) __obj.updateDynamic("messageDefaults")(messageDefaults)
+    if (parentLocations != null) __obj.updateDynamic("parentLocations")(parentLocations)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[MessengerOptions]
+  }
+}
+

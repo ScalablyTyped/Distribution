@@ -12,3 +12,13 @@ trait SignJwtResponse extends js.Object {
   var signedJwt: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SignJwtResponse {
+  @scala.inline
+  def apply(keyId: java.lang.String = null, signedJwt: java.lang.String = null): SignJwtResponse = {
+    val __obj = js.Dynamic.literal()
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId)
+    if (signedJwt != null) __obj.updateDynamic("signedJwt")(signedJwt)
+    __obj.asInstanceOf[SignJwtResponse]
+  }
+}
+

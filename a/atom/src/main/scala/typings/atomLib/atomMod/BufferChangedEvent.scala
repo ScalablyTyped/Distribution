@@ -21,3 +21,22 @@ trait BufferChangedEvent extends js.Object {
   var oldText: java.lang.String
 }
 
+object BufferChangedEvent {
+  @scala.inline
+  def apply(
+    changes: js.Array[atomLib.Anon_NewRange],
+    newRange: Range,
+    newText: java.lang.String,
+    oldRange: Range,
+    oldText: java.lang.String
+  ): BufferChangedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("newRange")(newRange)
+    __obj.updateDynamic("newText")(newText)
+    __obj.updateDynamic("oldRange")(oldRange)
+    __obj.updateDynamic("oldText")(oldText)
+    __obj.asInstanceOf[BufferChangedEvent]
+  }
+}
+

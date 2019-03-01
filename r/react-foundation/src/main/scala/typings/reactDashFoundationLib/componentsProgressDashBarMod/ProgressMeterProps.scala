@@ -287,3 +287,16 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProgressMeterProps {
+  @scala.inline
+  def apply(
+    GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null
+  ): ProgressMeterProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, GeneralPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    __obj.asInstanceOf[ProgressMeterProps]
+  }
+}
+

@@ -12,3 +12,17 @@ trait Anon_OutputSettings extends js.Object {
   def outputSettings(settings: resemblejsLib.resemblejsMod.ResembleNs.OutputSettings): /* import warning: ImportType.apply Failed type conversion: typeof Resemble */ js.Any
 }
 
+object Anon_OutputSettings {
+  @scala.inline
+  def apply(
+    outputSettings: js.Function1[
+      resemblejsLib.resemblejsMod.ResembleNs.OutputSettings, 
+      /* import warning: ImportType.apply Failed type conversion: typeof Resemble */ js.Any
+    ]
+  ): Anon_OutputSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("outputSettings")(outputSettings)
+    __obj.asInstanceOf[Anon_OutputSettings]
+  }
+}
+

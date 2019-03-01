@@ -23,3 +23,16 @@ trait Anon_ValueSet extends js.Object {
   ] = js.undefined
 }
 
+object Anon_ValueSet {
+  @scala.inline
+  def apply(
+    valueSet: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
+    ] = null
+  ): Anon_ValueSet = {
+    val __obj = js.Dynamic.literal()
+    if (valueSet != null) __obj.updateDynamic("valueSet")(valueSet)
+    __obj.asInstanceOf[Anon_ValueSet]
+  }
+}
+

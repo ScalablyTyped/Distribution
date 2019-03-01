@@ -143,5 +143,4 @@ package object vscodeDashJsonrpcMod {
   ]
   type StarNotificationHandler = js.Function2[/* method */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   type StarRequestHandler = js.Function2[/* method */ java.lang.String, /* repeated */ js.Any, HandlerResult[js.Any, js.Any]]
-  type TraceValues = vscodeDashJsonrpcLib.vscodeDashJsonrpcLibStrings.off | vscodeDashJsonrpcLib.vscodeDashJsonrpcLibStrings.messages | vscodeDashJsonrpcLib.vscodeDashJsonrpcLibStrings.verbose
 }

@@ -29,3 +29,63 @@ trait Future[A] extends js.Object {
   def zipWith[B, C](fu: Future[B], f: js.Function2[/* a */ A, /* b */ B, C]): Future[C]
 }
 
+object Future {
+  @scala.inline
+  def apply[A](
+    andThen: js.Function1[js.Function1[/* t */ Try[A], js.Any], Future[A]],
+    apply1: js.Function2[Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any], Future[js.Any]],
+    apply2: js.Function3[
+      Future[js.Any], 
+      Future[js.Any], 
+      js.Function3[/* a */ A, js.Any, js.Any, js.Any], 
+      Future[js.Any]
+    ],
+    chain: js.Function1[Future[js.Any], FutureBuilder1[A, js.Any]],
+    failed: js.Function0[Future[stdLib.Error]],
+    fallbackTo: js.Function1[Future[js.Any], Future[A]],
+    filter: js.Function1[js.Function1[/* a */ A, scala.Boolean], Future[A]],
+    flatMap: js.Function1[js.Function1[/* a */ A, Future[js.Any]], Future[js.Any]],
+    foreach: js.Function1[js.Function1[/* a */ A, js.Any], scala.Unit],
+    getPromise: js.Function0[js.Promise[A]],
+    isCompleted: js.Function0[scala.Boolean],
+    map: js.Function1[js.Function1[/* a */ A, js.Any], Future[js.Any]],
+    onComplete: js.Function1[js.Function1[/* t */ Try[A], js.Any], scala.Unit],
+    recover: js.Function1[js.Function1[/* e */ stdLib.Error, Optional[js.Any]], Future[A]],
+    recoverWith: js.Function1[js.Function1[/* e */ stdLib.Error, Optional[Future[js.Any]]], Future[A]],
+    transform: js.Function1[js.Function1[/* t */ Try[A], Try[js.Any]], Future[js.Any]],
+    transform1: js.Function2[
+      js.Function1[/* a */ A, js.Any], 
+      js.Function1[/* e */ stdLib.Error, stdLib.Error], 
+      Future[js.Any]
+    ],
+    transformWith: js.Function1[js.Function1[/* t */ Try[A], Future[js.Any]], Future[js.Any]],
+    value: js.Function0[Optional[Try[A]]],
+    zip: js.Function1[Future[js.Any], Future[js.Tuple2[A, js.Any]]],
+    zipWith: js.Function2[Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any], Future[js.Any]]
+  ): Future[A] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("andThen")(andThen)
+    __obj.updateDynamic("apply1")(apply1)
+    __obj.updateDynamic("apply2")(apply2)
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("failed")(failed)
+    __obj.updateDynamic("fallbackTo")(fallbackTo)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("flatMap")(flatMap)
+    __obj.updateDynamic("foreach")(foreach)
+    __obj.updateDynamic("getPromise")(getPromise)
+    __obj.updateDynamic("isCompleted")(isCompleted)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("onComplete")(onComplete)
+    __obj.updateDynamic("recover")(recover)
+    __obj.updateDynamic("recoverWith")(recoverWith)
+    __obj.updateDynamic("transform")(transform)
+    __obj.updateDynamic("transform1")(transform1)
+    __obj.updateDynamic("transformWith")(transformWith)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("zip")(zip)
+    __obj.updateDynamic("zipWith")(zipWith)
+    __obj.asInstanceOf[Future[A]]
+  }
+}
+

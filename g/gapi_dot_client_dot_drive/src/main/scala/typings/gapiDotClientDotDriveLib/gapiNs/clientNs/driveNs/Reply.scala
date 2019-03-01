@@ -33,3 +33,30 @@ trait Reply extends js.Object {
   var modifiedTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Reply {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    author: User = null,
+    content: java.lang.String = null,
+    createdTime: java.lang.String = null,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    htmlContent: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    modifiedTime: java.lang.String = null
+  ): Reply = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime)
+    __obj.asInstanceOf[Reply]
+  }
+}
+

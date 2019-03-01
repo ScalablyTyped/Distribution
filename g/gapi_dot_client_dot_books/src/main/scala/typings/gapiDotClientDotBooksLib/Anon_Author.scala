@@ -14,3 +14,24 @@ trait Anon_Author extends js.Object {
   var volumeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Author {
+  @scala.inline
+  def apply(
+    author: java.lang.String = null,
+    canonicalVolumeLink: java.lang.String = null,
+    coverUrl: java.lang.String = null,
+    description: java.lang.String = null,
+    title: java.lang.String = null,
+    volumeId: java.lang.String = null
+  ): Anon_Author = {
+    val __obj = js.Dynamic.literal()
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (canonicalVolumeLink != null) __obj.updateDynamic("canonicalVolumeLink")(canonicalVolumeLink)
+    if (coverUrl != null) __obj.updateDynamic("coverUrl")(coverUrl)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    __obj.asInstanceOf[Anon_Author]
+  }
+}
+

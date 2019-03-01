@@ -37,3 +37,27 @@ trait IgPivotViewDataSelectorPanel
   var size: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgPivotViewDataSelectorPanel {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotViewDataSelectorPanel
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    location: js.Any = null,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    size: java.lang.String | scala.Double = null
+  ): IgPivotViewDataSelectorPanel = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgPivotViewDataSelectorPanel]
+  }
+}
+

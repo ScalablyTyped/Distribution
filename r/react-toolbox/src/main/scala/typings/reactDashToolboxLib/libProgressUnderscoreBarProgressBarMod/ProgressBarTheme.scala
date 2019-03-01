@@ -40,3 +40,28 @@ trait ProgressBarTheme extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProgressBarTheme {
+  @scala.inline
+  def apply(
+    buffer: java.lang.String = null,
+    circle: java.lang.String = null,
+    circular: java.lang.String = null,
+    indeterminate: java.lang.String = null,
+    linear: java.lang.String = null,
+    multicolor: java.lang.String = null,
+    path: java.lang.String = null,
+    value: java.lang.String = null
+  ): ProgressBarTheme = {
+    val __obj = js.Dynamic.literal()
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (circle != null) __obj.updateDynamic("circle")(circle)
+    if (circular != null) __obj.updateDynamic("circular")(circular)
+    if (indeterminate != null) __obj.updateDynamic("indeterminate")(indeterminate)
+    if (linear != null) __obj.updateDynamic("linear")(linear)
+    if (multicolor != null) __obj.updateDynamic("multicolor")(multicolor)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ProgressBarTheme]
+  }
+}
+

@@ -48,3 +48,36 @@ trait Anon_AltFieldsIdKey extends js.Object {
   var videoId: java.lang.String
 }
 
+object Anon_AltFieldsIdKey {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    videoId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    id: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    onBehalfOf: java.lang.String = null,
+    onBehalfOfContentOwner: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltFieldsIdKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    __obj.updateDynamic("videoId")(videoId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (onBehalfOf != null) __obj.updateDynamic("onBehalfOf")(onBehalfOf)
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltFieldsIdKey]
+  }
+}
+

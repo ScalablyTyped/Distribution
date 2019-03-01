@@ -10,3 +10,13 @@ trait AuthenticateRequest extends js.Object {
   var socket: socketclusterDashServerLib.scserversocketMod.namespaced
 }
 
+object AuthenticateRequest {
+  @scala.inline
+  def apply(authToken: AuthToken, socket: socketclusterDashServerLib.scserversocketMod.namespaced): AuthenticateRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authToken")(authToken)
+    __obj.updateDynamic("socket")(socket)
+    __obj.asInstanceOf[AuthenticateRequest]
+  }
+}
+

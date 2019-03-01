@@ -7,28 +7,51 @@ import scala.scalajs.js.annotation._
 
 object jsonDashSchemaLibStrings {
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any
+    extends jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6TypeName
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema7TypeName
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema7TypeName
   
   @js.native
-  sealed trait integer extends js.Object
+  sealed trait integer
+    extends jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema7TypeName
   
   @js.native
-  sealed trait `null` extends js.Object
+  sealed trait `null`
+    extends jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema7TypeName
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema7TypeName
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema7TypeName
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6TypeName
+       with jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema7TypeName
   
   @scala.inline
   def any: any = "any".asInstanceOf[any]

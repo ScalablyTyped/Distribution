@@ -29,3 +29,26 @@ trait BeforePasteEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforePasteEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    keyCode: scala.Int | scala.Double = null,
+    model: Model = null,
+    nodeDetails: js.Any = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): BeforePasteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (nodeDetails != null) __obj.updateDynamic("nodeDetails")(nodeDetails)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforePasteEventArgs]
+  }
+}
+

@@ -16,3 +16,13 @@ trait Syntax extends js.Object {
   var stringify: js.UndefOr[Stringify] = js.undefined
 }
 
+object Syntax {
+  @scala.inline
+  def apply(parse: Parse = null, stringify: Stringify = null): Syntax = {
+    val __obj = js.Dynamic.literal()
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (stringify != null) __obj.updateDynamic("stringify")(stringify)
+    __obj.asInstanceOf[Syntax]
+  }
+}
+

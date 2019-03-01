@@ -23,3 +23,14 @@ trait LooksSameColor extends js.Object {
   var R: scala.Double
 }
 
+object LooksSameColor {
+  @scala.inline
+  def apply(B: scala.Double, G: scala.Double, R: scala.Double): LooksSameColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("B")(B)
+    __obj.updateDynamic("G")(G)
+    __obj.updateDynamic("R")(R)
+    __obj.asInstanceOf[LooksSameColor]
+  }
+}
+

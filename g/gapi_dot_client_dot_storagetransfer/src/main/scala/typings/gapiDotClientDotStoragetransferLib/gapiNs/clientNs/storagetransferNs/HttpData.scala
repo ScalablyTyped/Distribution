@@ -15,3 +15,12 @@ trait HttpData extends js.Object {
   var listUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HttpData {
+  @scala.inline
+  def apply(listUrl: java.lang.String = null): HttpData = {
+    val __obj = js.Dynamic.literal()
+    if (listUrl != null) __obj.updateDynamic("listUrl")(listUrl)
+    __obj.asInstanceOf[HttpData]
+  }
+}
+

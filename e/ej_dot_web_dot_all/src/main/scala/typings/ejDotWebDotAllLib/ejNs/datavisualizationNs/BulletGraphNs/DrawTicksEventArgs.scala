@@ -35,3 +35,30 @@ trait DrawTicksEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DrawTicksEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    interval: scala.Int | scala.Double = null,
+    majorTickSettings: js.Any = null,
+    maximum: scala.Int | scala.Double = null,
+    minimum: scala.Int | scala.Double = null,
+    minorTickPerInterval: scala.Int | scala.Double = null,
+    minorTickSettings: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): DrawTicksEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (majorTickSettings != null) __obj.updateDynamic("majorTickSettings")(majorTickSettings)
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (minorTickPerInterval != null) __obj.updateDynamic("minorTickPerInterval")(minorTickPerInterval.asInstanceOf[js.Any])
+    if (minorTickSettings != null) __obj.updateDynamic("minorTickSettings")(minorTickSettings)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DrawTicksEventArgs]
+  }
+}
+

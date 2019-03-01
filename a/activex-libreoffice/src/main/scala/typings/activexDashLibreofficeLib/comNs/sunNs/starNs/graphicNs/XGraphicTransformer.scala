@@ -39,3 +39,24 @@ trait XGraphicTransformer
   ): XGraphic
 }
 
+object XGraphicTransformer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    applyBrightnessContrast: js.Function4[XGraphic, scala.Double, scala.Double, scala.Boolean, XGraphic],
+    applyDuotone: js.Function3[XGraphic, scala.Double, scala.Double, XGraphic],
+    colorChange: js.Function5[XGraphic, scala.Double, scala.Double, scala.Double, scala.Double, XGraphic],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XGraphicTransformer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("applyBrightnessContrast")(applyBrightnessContrast)
+    __obj.updateDynamic("applyDuotone")(applyDuotone)
+    __obj.updateDynamic("colorChange")(colorChange)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XGraphicTransformer]
+  }
+}
+

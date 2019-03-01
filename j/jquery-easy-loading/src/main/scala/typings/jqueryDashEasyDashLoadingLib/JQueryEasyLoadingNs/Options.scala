@@ -74,3 +74,34 @@ trait Options extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    hiddenClass: java.lang.String = null,
+    message: java.lang.String = null,
+    onClick: js.Function = null,
+    onStart: js.Function1[/* loading */ LoadingObject, scala.Unit] = null,
+    onStop: js.Function1[/* loading */ LoadingObject, scala.Unit] = null,
+    overlay: jqueryDashEasyDashLoadingLib.JQuery = null,
+    shownClass: java.lang.String = null,
+    start: js.UndefOr[scala.Boolean] = js.undefined,
+    stoppable: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: java.lang.String = null,
+    zIndex: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (hiddenClass != null) __obj.updateDynamic("hiddenClass")(hiddenClass)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onStop != null) __obj.updateDynamic("onStop")(onStop)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
+    if (shownClass != null) __obj.updateDynamic("shownClass")(shownClass)
+    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
+    if (!js.isUndefined(stoppable)) __obj.updateDynamic("stoppable")(stoppable)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

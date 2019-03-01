@@ -9,3 +9,12 @@ trait PageTransformer extends js.Object {
   def transformPage(page: androiduixLib.androidNs.viewNs.View, position: scala.Double): scala.Unit
 }
 
+object PageTransformer {
+  @scala.inline
+  def apply(transformPage: js.Function2[androiduixLib.androidNs.viewNs.View, scala.Double, scala.Unit]): PageTransformer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transformPage")(transformPage)
+    __obj.asInstanceOf[PageTransformer]
+  }
+}
+

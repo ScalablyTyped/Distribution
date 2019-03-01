@@ -20,3 +20,13 @@ trait HasManyGetAssociationsMixinOptions extends js.Object {
   var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 
+object HasManyGetAssociationsMixinOptions {
+  @scala.inline
+  def apply(scope: java.lang.String | scala.Boolean = null, where: AnyWhereOptions = null): HasManyGetAssociationsMixinOptions = {
+    val __obj = js.Dynamic.literal()
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[HasManyGetAssociationsMixinOptions]
+  }
+}
+

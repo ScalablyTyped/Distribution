@@ -47,3 +47,26 @@ trait CreateComponentOptions extends js.Object {
   var scheduler: js.UndefOr[js.Function1[/* work */ js.Function0[scala.Unit], scala.Unit]] = js.undefined
 }
 
+object CreateComponentOptions {
+  @scala.inline
+  def apply(
+    host: atAngularCoreLib.srcRender3InterfacesRendererMod.RElement | java.lang.String = null,
+    hostFeatures: js.Array[HostFeature] = null,
+    injector: atAngularCoreLib.srcDiInjectorMod.Injector = null,
+    playerHandler: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerHandler = null,
+    rendererFactory: atAngularCoreLib.srcRender3InterfacesRendererMod.RendererFactory3 = null,
+    sanitizer: atAngularCoreLib.srcSanitizationSecurityMod.Sanitizer = null,
+    scheduler: js.Function1[/* work */ js.Function0[scala.Unit], scala.Unit] = null
+  ): CreateComponentOptions = {
+    val __obj = js.Dynamic.literal()
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (hostFeatures != null) __obj.updateDynamic("hostFeatures")(hostFeatures)
+    if (injector != null) __obj.updateDynamic("injector")(injector)
+    if (playerHandler != null) __obj.updateDynamic("playerHandler")(playerHandler)
+    if (rendererFactory != null) __obj.updateDynamic("rendererFactory")(rendererFactory)
+    if (sanitizer != null) __obj.updateDynamic("sanitizer")(sanitizer)
+    if (scheduler != null) __obj.updateDynamic("scheduler")(scheduler)
+    __obj.asInstanceOf[CreateComponentOptions]
+  }
+}
+

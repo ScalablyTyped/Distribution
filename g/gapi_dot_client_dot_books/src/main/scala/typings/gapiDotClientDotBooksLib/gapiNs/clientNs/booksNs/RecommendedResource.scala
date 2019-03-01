@@ -12,3 +12,22 @@ trait RecommendedResource extends js.Object {
   def rate(request: gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[BooksVolumesRecommendedRateResponse]
 }
 
+object RecommendedResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleMaxAllowedMaturityRating, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
+    ],
+    rate: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BooksVolumesRecommendedRateResponse]
+    ]
+  ): RecommendedResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("rate")(rate)
+    __obj.asInstanceOf[RecommendedResource]
+  }
+}
+

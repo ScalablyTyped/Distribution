@@ -51,3 +51,22 @@ trait ChartBoxwhiskerOptionsUpdateData extends js.Object {
   var showOutlierPoints: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartBoxwhiskerOptionsUpdateData {
+  @scala.inline
+  def apply(
+    quartileCalculation: officeDashJsDashPreviewLib.ExcelNs.ChartBoxQuartileCalculation | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Inclusive | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Exclusive = null,
+    showInnerPoints: js.UndefOr[scala.Boolean] = js.undefined,
+    showMeanLine: js.UndefOr[scala.Boolean] = js.undefined,
+    showMeanMarker: js.UndefOr[scala.Boolean] = js.undefined,
+    showOutlierPoints: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartBoxwhiskerOptionsUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (quartileCalculation != null) __obj.updateDynamic("quartileCalculation")(quartileCalculation.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInnerPoints)) __obj.updateDynamic("showInnerPoints")(showInnerPoints)
+    if (!js.isUndefined(showMeanLine)) __obj.updateDynamic("showMeanLine")(showMeanLine)
+    if (!js.isUndefined(showMeanMarker)) __obj.updateDynamic("showMeanMarker")(showMeanMarker)
+    if (!js.isUndefined(showOutlierPoints)) __obj.updateDynamic("showOutlierPoints")(showOutlierPoints)
+    __obj.asInstanceOf[ChartBoxwhiskerOptionsUpdateData]
+  }
+}
+

@@ -10,3 +10,12 @@ trait IIntentProps extends js.Object {
   var intent: js.UndefOr[atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent] = js.undefined
 }
 
+object IIntentProps {
+  @scala.inline
+  def apply(intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null): IIntentProps = {
+    val __obj = js.Dynamic.literal()
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    __obj.asInstanceOf[IIntentProps]
+  }
+}
+

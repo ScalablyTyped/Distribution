@@ -36,3 +36,26 @@ trait CrashReporterStartOptions extends js.Object {
   var uploadToServer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CrashReporterStartOptions {
+  @scala.inline
+  def apply(
+    companyName: java.lang.String,
+    submitURL: java.lang.String,
+    crashesDirectory: java.lang.String = null,
+    extra: Extra = null,
+    ignoreSystemCrashHandler: js.UndefOr[scala.Boolean] = js.undefined,
+    productName: java.lang.String = null,
+    uploadToServer: js.UndefOr[scala.Boolean] = js.undefined
+  ): CrashReporterStartOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("companyName")(companyName)
+    __obj.updateDynamic("submitURL")(submitURL)
+    if (crashesDirectory != null) __obj.updateDynamic("crashesDirectory")(crashesDirectory)
+    if (extra != null) __obj.updateDynamic("extra")(extra)
+    if (!js.isUndefined(ignoreSystemCrashHandler)) __obj.updateDynamic("ignoreSystemCrashHandler")(ignoreSystemCrashHandler)
+    if (productName != null) __obj.updateDynamic("productName")(productName)
+    if (!js.isUndefined(uploadToServer)) __obj.updateDynamic("uploadToServer")(uploadToServer)
+    __obj.asInstanceOf[CrashReporterStartOptions]
+  }
+}
+

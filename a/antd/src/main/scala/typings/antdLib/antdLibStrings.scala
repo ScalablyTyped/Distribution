@@ -19,6 +19,9 @@ object antdLibStrings {
   sealed trait `-moz-isolate-override` extends js.Object
   
   @js.native
+  sealed trait `-moz-mac-unified-toolbar` extends js.Object
+  
+  @js.native
   sealed trait `-moz-none` extends js.Object
   
   @js.native
@@ -26,6 +29,63 @@ object antdLibStrings {
   
   @js.native
   sealed trait `-moz-pre-wrap` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-win-borderless-glass` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-win-browsertabbar-toolbox` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-win-communications-toolbox` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-win-communicationstext` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-win-exclude-glass` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-win-glass` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-win-media-toolbox` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-win-mediatext` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-button-box` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-button-box-maximized` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-button-close` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-button-maximize` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-button-minimize` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-button-restore` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-frame-bottom` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-frame-left` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-frame-right` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-titlebar` extends js.Object
+  
+  @js.native
+  sealed trait `-moz-window-titlebar-maximized` extends js.Object
   
   @js.native
   sealed trait `-ms-autohiding-scrollbar` extends js.Object
@@ -100,7 +160,8 @@ object antdLibStrings {
   sealed trait anywhere extends js.Object
   
   @js.native
-  sealed trait ascend extends js.Object
+  sealed trait ascend
+    extends antdLib.libTableInterfaceMod.SortOrder
   
   @js.native
   sealed trait auto extends js.Object
@@ -163,16 +224,23 @@ object antdLibStrings {
   sealed trait both extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends antdLib.libMentionMod.MentionPlacement
+       with antdLib.libTabsMod.TabsPosition
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait bottomCenter extends js.Object
   
   @js.native
-  sealed trait bottomLeft extends js.Object
+  sealed trait bottomLeft
+    extends antdLib.libNotificationMod.NotificationPlacement
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
-  sealed trait bottomRight extends js.Object
+  sealed trait bottomRight
+    extends antdLib.libNotificationMod.NotificationPlacement
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait `break-all` extends js.Object
@@ -190,13 +258,35 @@ object antdLibStrings {
   sealed trait button extends js.Object
   
   @js.native
+  sealed trait `button-arrow-down` extends js.Object
+  
+  @js.native
+  sealed trait `button-arrow-next` extends js.Object
+  
+  @js.native
+  sealed trait `button-arrow-previous` extends js.Object
+  
+  @js.native
+  sealed trait `button-arrow-up` extends js.Object
+  
+  @js.native
+  sealed trait `button-bevel` extends js.Object
+  
+  @js.native
+  sealed trait `button-focus` extends js.Object
+  
+  @js.native
   sealed trait cancel extends js.Object
   
   @js.native
   sealed trait capitalize extends js.Object
   
   @js.native
-  sealed trait card extends js.Object
+  sealed trait card
+    extends antdLib.libTabsMod.TabsType
+  
+  @js.native
+  sealed trait caret extends js.Object
   
   @js.native
   sealed trait center extends js.Object
@@ -214,7 +304,17 @@ object antdLibStrings {
   sealed trait check extends js.Object
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait checkbox
+    extends antdLib.libTableInterfaceMod.RowSelectionType
+  
+  @js.native
+  sealed trait `checkbox-container` extends js.Object
+  
+  @js.native
+  sealed trait `checkbox-label` extends js.Object
+  
+  @js.native
+  sealed trait checkmenuitem extends js.Object
   
   @js.native
   sealed trait circle extends js.Object
@@ -226,10 +326,14 @@ object antdLibStrings {
   sealed trait clear extends js.Object
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click
+    extends antdLib.libCascaderMod.CascaderExpandTrigger
+       with antdLib.libTreeDirectoryTreeMod.ExpandAction
+       with antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
-  sealed trait clickTrigger extends js.Object
+  sealed trait clickTrigger
+    extends antdLib.libLayoutSiderMod.CollapseType
   
   @js.native
   sealed trait clip extends js.Object
@@ -250,7 +354,8 @@ object antdLibStrings {
   sealed trait `color-dodge` extends js.Object
   
   @js.native
-  sealed trait column extends js.Object
+  sealed trait column
+    extends antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait `column-reverse` extends js.Object
@@ -265,10 +370,12 @@ object antdLibStrings {
   sealed trait `content-box` extends js.Object
   
   @js.native
-  sealed trait contextMenu extends js.Object
+  sealed trait contextMenu
+    extends antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
-  sealed trait countdown extends js.Object
+  sealed trait countdown
+    extends antdLib.libStatisticUtilsMod._Formatter
   
   @js.native
   sealed trait cover extends js.Object
@@ -283,7 +390,9 @@ object antdLibStrings {
   sealed trait danger extends js.Object
   
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait dark
+    extends antdLib.libMenuMod.MenuTheme
+       with antdLib.libLayoutSiderMod.SiderTheme
   
   @js.native
   sealed trait darken extends js.Object
@@ -292,19 +401,29 @@ object antdLibStrings {
   sealed trait dashboard extends js.Object
   
   @js.native
-  sealed trait dashed extends js.Object
+  sealed trait dashed
+    extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait date extends js.Object
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends antdLib.libCardMod.CardSize
+       with antdLib.libListMod.ListSize
+       with antdLib.libProgressProgressMod.ProgressSize
+       with antdLib.libTableInterfaceMod.TableSize
   
   @js.native
-  sealed trait defaultValue extends js.Object
+  sealed trait `default-button` extends js.Object
   
   @js.native
-  sealed trait descend extends js.Object
+  sealed trait defaultValue
+    extends antdLib.libInputDashNumberMod.OmitAttrs
+  
+  @js.native
+  sealed trait descend
+    extends antdLib.libTableInterfaceMod.SortOrder
   
   @js.native
   sealed trait difference extends js.Object
@@ -313,7 +432,8 @@ object antdLibStrings {
   sealed trait disabled extends js.Object
   
   @js.native
-  sealed trait done extends js.Object
+  sealed trait done
+    extends antdLib.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait dotted extends js.Object
@@ -322,16 +442,22 @@ object antdLibStrings {
   sealed trait double extends js.Object
   
   @js.native
-  sealed trait doubleClick extends js.Object
+  sealed trait doubleClick
+    extends antdLib.libTreeDirectoryTreeMod.ExpandAction
   
   @js.native
-  sealed trait drag extends js.Object
+  sealed trait drag
+    extends antdLib.libUploadInterfaceMod.UploadType
+  
+  @js.native
+  sealed trait dualbutton extends js.Object
   
   @js.native
   sealed trait economy extends js.Object
   
   @js.native
-  sealed trait `editable-card` extends js.Object
+  sealed trait `editable-card`
+    extends antdLib.libTabsMod.TabsType
   
   @js.native
   sealed trait element extends js.Object
@@ -346,7 +472,10 @@ object antdLibStrings {
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends antdLib.libNotificationMod.IconType
+       with antdLib.libMessageMod.NoticeType
+       with antdLib.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait evenodd extends js.Object
@@ -361,7 +490,8 @@ object antdLibStrings {
   sealed trait exclusion extends js.Object
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait fade
+    extends antdLib.libCarouselMod.CarouselEffect
   
   @js.native
   sealed trait `false` extends js.Object
@@ -373,7 +503,8 @@ object antdLibStrings {
   sealed trait `fill-box` extends js.Object
   
   @js.native
-  sealed trait filled extends js.Object
+  sealed trait filled
+    extends antdLib.libIconMod.ThemeType
   
   @js.native
   sealed trait finish extends js.Object
@@ -388,7 +519,8 @@ object antdLibStrings {
   sealed trait flex extends js.Object
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait focus
+    extends antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
   sealed trait form extends js.Object
@@ -400,7 +532,8 @@ object antdLibStrings {
   sealed trait geometricPrecision extends js.Object
   
   @js.native
-  sealed trait ghost extends js.Object
+  sealed trait ghost
+    extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait grippers extends js.Object
@@ -409,7 +542,11 @@ object antdLibStrings {
   sealed trait groove extends js.Object
   
   @js.native
-  sealed trait gutter extends js.Object
+  sealed trait groupbox extends js.Object
+  
+  @js.native
+  sealed trait gutter
+    extends antdLib.libListMod.ColumnType
   
   @js.native
   sealed trait hanging extends js.Object
@@ -424,13 +561,16 @@ object antdLibStrings {
   sealed trait hide extends js.Object
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends antdLib.libMenuMod.MenuMode
   
   @js.native
   sealed trait `horizontal-tb` extends js.Object
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait hover
+    extends antdLib.libCascaderMod.CascaderExpandTrigger
+       with antdLib.libTooltipMod.TooltipTrigger
   
   @js.native
   sealed trait hue extends js.Object
@@ -457,7 +597,9 @@ object antdLibStrings {
   sealed trait inactive extends js.Object
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends antdLib.libNotificationMod.IconType
+       with antdLib.libMessageMod.NoticeType
   
   @js.native
   sealed trait inherit extends js.Object
@@ -466,7 +608,8 @@ object antdLibStrings {
   sealed trait initial extends js.Object
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait `inline`
+    extends antdLib.libMenuMod.MenuMode
   
   @js.native
   sealed trait `inline-axis` extends js.Object
@@ -479,6 +622,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait inner extends js.Object
+  
+  @js.native
+  sealed trait `inner-spin-button` extends js.Object
   
   @js.native
   sealed trait inset extends js.Object
@@ -511,22 +657,32 @@ object antdLibStrings {
   sealed trait `keep-all` extends js.Object
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait large
+    extends antdLib.libListMod.ListSize
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends antdLib.libTabsMod.TabsPosition
+       with antdLib.libTooltipMod.TooltipPlacement
+       with antdLib.libTransferMod.TransferDirection
   
   @js.native
-  sealed trait leftBottom extends js.Object
+  sealed trait leftBottom
+    extends antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
-  sealed trait leftTop extends js.Object
+  sealed trait leftTop
+    extends antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
-  sealed trait lg extends js.Object
+  sealed trait lg
+    extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.libListMod.ColumnType
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light
+    extends antdLib.libMenuMod.MenuTheme
+       with antdLib.libLayoutSiderMod.SiderTheme
   
   @js.native
   sealed trait lighten extends js.Object
@@ -535,16 +691,24 @@ object antdLibStrings {
   sealed trait lighter extends js.Object
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait line
+    extends antdLib.libTabsMod.TabsType
   
   @js.native
   sealed trait linearRGB extends js.Object
   
   @js.native
+  sealed trait listbox extends js.Object
+  
+  @js.native
+  sealed trait listitem extends js.Object
+  
+  @js.native
   sealed trait load extends js.Object
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait loading
+    extends antdLib.libMessageMod.NoticeType
   
   @js.native
   sealed trait loose extends js.Object
@@ -583,13 +747,118 @@ object antdLibStrings {
   sealed trait maximum extends js.Object
   
   @js.native
-  sealed trait md extends js.Object
+  sealed trait md
+    extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.libListMod.ColumnType
+  
+  @js.native
+  sealed trait `media-controls-background` extends js.Object
+  
+  @js.native
+  sealed trait `media-controls-fullscreen-background` extends js.Object
+  
+  @js.native
+  sealed trait `media-current-time-display` extends js.Object
+  
+  @js.native
+  sealed trait `media-enter-fullscreen-button` extends js.Object
+  
+  @js.native
+  sealed trait `media-exit-fullscreen-button` extends js.Object
+  
+  @js.native
+  sealed trait `media-fullscreen-button` extends js.Object
+  
+  @js.native
+  sealed trait `media-mute-button` extends js.Object
+  
+  @js.native
+  sealed trait `media-overlay-play-button` extends js.Object
+  
+  @js.native
+  sealed trait `media-play-button` extends js.Object
+  
+  @js.native
+  sealed trait `media-seek-back-button` extends js.Object
+  
+  @js.native
+  sealed trait `media-seek-forward-button` extends js.Object
+  
+  @js.native
+  sealed trait `media-slider` extends js.Object
+  
+  @js.native
+  sealed trait `media-sliderthumb` extends js.Object
+  
+  @js.native
+  sealed trait `media-time-remaining-display` extends js.Object
+  
+  @js.native
+  sealed trait `media-toggle-closed-captions-button` extends js.Object
+  
+  @js.native
+  sealed trait `media-volume-slider` extends js.Object
+  
+  @js.native
+  sealed trait `media-volume-slider-container` extends js.Object
+  
+  @js.native
+  sealed trait `media-volume-sliderthumb` extends js.Object
   
   @js.native
   sealed trait menu extends js.Object
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait menuarrow extends js.Object
+  
+  @js.native
+  sealed trait menubar extends js.Object
+  
+  @js.native
+  sealed trait menucheckbox extends js.Object
+  
+  @js.native
+  sealed trait menuimage extends js.Object
+  
+  @js.native
+  sealed trait menuitem extends js.Object
+  
+  @js.native
+  sealed trait menuitemtext extends js.Object
+  
+  @js.native
+  sealed trait menulist extends js.Object
+  
+  @js.native
+  sealed trait `menulist-button` extends js.Object
+  
+  @js.native
+  sealed trait `menulist-text` extends js.Object
+  
+  @js.native
+  sealed trait `menulist-textfield` extends js.Object
+  
+  @js.native
+  sealed trait menupopup extends js.Object
+  
+  @js.native
+  sealed trait menuradio extends js.Object
+  
+  @js.native
+  sealed trait menuseparator extends js.Object
+  
+  @js.native
+  sealed trait meter extends js.Object
+  
+  @js.native
+  sealed trait meterbar extends js.Object
+  
+  @js.native
+  sealed trait meterchunk extends js.Object
+  
+  @js.native
+  sealed trait middle
+    extends antdLib.libTableInterfaceMod.TableSize
   
   @js.native
   sealed trait miter extends js.Object
@@ -598,7 +867,8 @@ object antdLibStrings {
   sealed trait mixed extends js.Object
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends antdLib.libCalendarMod.CalendarMode
   
   @js.native
   sealed trait multiple extends js.Object
@@ -637,25 +907,31 @@ object antdLibStrings {
   sealed trait nowrap extends js.Object
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends antdLib.libStatisticUtilsMod._Formatter
   
   @js.native
   sealed trait ok extends js.Object
   
   @js.native
-  sealed trait onChange extends js.Object
+  sealed trait onChange
+    extends antdLib.libInputDashNumberMod.OmitAttrs
   
   @js.native
-  sealed trait onSelect extends js.Object
+  sealed trait onSelect
+    extends antdLib.libTableInterfaceMod.TableSelectWay
   
   @js.native
-  sealed trait onSelectAll extends js.Object
+  sealed trait onSelectAll
+    extends antdLib.libTableInterfaceMod.TableSelectWay
   
   @js.native
-  sealed trait onSelectInvert extends js.Object
+  sealed trait onSelectInvert
+    extends antdLib.libTableInterfaceMod.TableSelectWay
   
   @js.native
-  sealed trait onSelectMultiple extends js.Object
+  sealed trait onSelectMultiple
+    extends antdLib.libTableInterfaceMod.TableSelectWay
   
   @js.native
   sealed trait optimizeLegibility extends js.Object
@@ -667,10 +943,12 @@ object antdLibStrings {
   sealed trait optimizeSpeed extends js.Object
   
   @js.native
-  sealed trait outline extends js.Object
+  sealed trait outline
+    extends antdLib.libRadioInterfaceMod.RadioGroupButtonStyle
   
   @js.native
-  sealed trait outlined extends js.Object
+  sealed trait outlined
+    extends antdLib.libIconMod.ThemeType
   
   @js.native
   sealed trait outset extends js.Object
@@ -700,10 +978,12 @@ object antdLibStrings {
   sealed trait `petite-caps` extends js.Object
   
   @js.native
-  sealed trait picture extends js.Object
+  sealed trait picture
+    extends antdLib.libUploadInterfaceMod.UploadListType
   
   @js.native
-  sealed trait `picture-card` extends js.Object
+  sealed trait `picture-card`
+    extends antdLib.libUploadInterfaceMod.UploadListType
   
   @js.native
   sealed trait pixelated extends js.Object
@@ -727,7 +1007,8 @@ object antdLibStrings {
   sealed trait prev extends js.Object
   
   @js.native
-  sealed trait primary extends js.Object
+  sealed trait primary
+    extends antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
   
   @js.native
   sealed trait process extends js.Object
@@ -736,13 +1017,50 @@ object antdLibStrings {
   sealed trait processing extends js.Object
   
   @js.native
+  sealed trait `progress-bar` extends js.Object
+  
+  @js.native
+  sealed trait `progress-bar-value` extends js.Object
+  
+  @js.native
+  sealed trait progressbar extends js.Object
+  
+  @js.native
+  sealed trait `progressbar-vertical` extends js.Object
+  
+  @js.native
+  sealed trait progresschunk extends js.Object
+  
+  @js.native
+  sealed trait `progresschunk-vertical` extends js.Object
+  
+  @js.native
   sealed trait proximity extends js.Object
   
   @js.native
-  sealed trait radio extends js.Object
+  sealed trait `push-button` extends js.Object
+  
+  @js.native
+  sealed trait radio
+    extends antdLib.libTableInterfaceMod.RowSelectionType
+  
+  @js.native
+  sealed trait `radio-container` extends js.Object
+  
+  @js.native
+  sealed trait `radio-label` extends js.Object
+  
+  @js.native
+  sealed trait radiomenuitem extends js.Object
   
   @js.native
   sealed trait railed extends js.Object
+  
+  @js.native
+  sealed trait range extends js.Object
+  
+  @js.native
+  sealed trait `range-thumb` extends js.Object
   
   @js.native
   sealed trait `read-only` extends js.Object
@@ -763,7 +1081,8 @@ object antdLibStrings {
   sealed trait relative extends js.Object
   
   @js.native
-  sealed trait removed extends js.Object
+  sealed trait removed
+    extends antdLib.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait repeat extends js.Object
@@ -775,7 +1094,14 @@ object antdLibStrings {
   sealed trait `reset-size` extends js.Object
   
   @js.native
-  sealed trait responsive extends js.Object
+  sealed trait resizer extends js.Object
+  
+  @js.native
+  sealed trait resizerpanel extends js.Object
+  
+  @js.native
+  sealed trait responsive
+    extends antdLib.libLayoutSiderMod.CollapseType
   
   @js.native
   sealed trait reverse extends js.Object
@@ -787,13 +1113,18 @@ object antdLibStrings {
   sealed trait ridge extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends antdLib.libTabsMod.TabsPosition
+       with antdLib.libTooltipMod.TooltipPlacement
+       with antdLib.libTransferMod.TransferDirection
   
   @js.native
-  sealed trait rightBottom extends js.Object
+  sealed trait rightBottom
+    extends antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
-  sealed trait rightTop extends js.Object
+  sealed trait rightTop
+    extends antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait rl extends js.Object
@@ -820,6 +1151,27 @@ object antdLibStrings {
   sealed trait `scale-down` extends js.Object
   
   @js.native
+  sealed trait `scale-horizontal` extends js.Object
+  
+  @js.native
+  sealed trait `scale-vertical` extends js.Object
+  
+  @js.native
+  sealed trait `scalethumb-horizontal` extends js.Object
+  
+  @js.native
+  sealed trait `scalethumb-vertical` extends js.Object
+  
+  @js.native
+  sealed trait scalethumbend extends js.Object
+  
+  @js.native
+  sealed trait scalethumbstart extends js.Object
+  
+  @js.native
+  sealed trait scalethumbtick extends js.Object
+  
+  @js.native
   sealed trait screen extends js.Object
   
   @js.native
@@ -829,10 +1181,51 @@ object antdLibStrings {
   sealed trait scrollbar extends js.Object
   
   @js.native
-  sealed trait scrollx extends js.Object
+  sealed trait `scrollbarbutton-down` extends js.Object
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait `scrollbarbutton-left` extends js.Object
+  
+  @js.native
+  sealed trait `scrollbarbutton-right` extends js.Object
+  
+  @js.native
+  sealed trait `scrollbarbutton-up` extends js.Object
+  
+  @js.native
+  sealed trait `scrollbarthumb-horizontal` extends js.Object
+  
+  @js.native
+  sealed trait `scrollbarthumb-vertical` extends js.Object
+  
+  @js.native
+  sealed trait `scrollbartrack-horizontal` extends js.Object
+  
+  @js.native
+  sealed trait `scrollbartrack-vertical` extends js.Object
+  
+  @js.native
+  sealed trait scrollx
+    extends antdLib.libCarouselMod.CarouselEffect
+  
+  @js.native
+  sealed trait searchfield extends js.Object
+  
+  @js.native
+  sealed trait `searchfield-cancel-button` extends js.Object
+  
+  @js.native
+  sealed trait `searchfield-decoration` extends js.Object
+  
+  @js.native
+  sealed trait `searchfield-results-button` extends js.Object
+  
+  @js.native
+  sealed trait `searchfield-results-decoration` extends js.Object
+  
+  @js.native
+  sealed trait select
+    extends antdLib.libUploadInterfaceMod.UploadType
   
   @js.native
   sealed trait `select-after` extends js.Object
@@ -853,6 +1246,9 @@ object antdLibStrings {
   sealed trait separate extends js.Object
   
   @js.native
+  sealed trait separator extends js.Object
+  
+  @js.native
   sealed trait sheet extends js.Object
   
   @js.native
@@ -871,16 +1267,35 @@ object antdLibStrings {
   sealed trait single extends js.Object
   
   @js.native
-  sealed trait size extends js.Object
+  sealed trait size
+    extends antdLib.libInputDashNumberMod.OmitAttrs
   
   @js.native
   sealed trait slice extends js.Object
   
   @js.native
-  sealed trait sm extends js.Object
+  sealed trait `slider-horizontal` extends js.Object
   
   @js.native
-  sealed trait small extends js.Object
+  sealed trait `slider-vertical` extends js.Object
+  
+  @js.native
+  sealed trait `sliderthumb-horizontal` extends js.Object
+  
+  @js.native
+  sealed trait `sliderthumb-vertical` extends js.Object
+  
+  @js.native
+  sealed trait sm
+    extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.libListMod.ColumnType
+  
+  @js.native
+  sealed trait small
+    extends antdLib.libCardMod.CardSize
+       with antdLib.libListMod.ListSize
+       with antdLib.libProgressProgressMod.ProgressSize
+       with antdLib.libTableInterfaceMod.TableSize
   
   @js.native
   sealed trait `small-caps` extends js.Object
@@ -892,7 +1307,8 @@ object antdLibStrings {
   sealed trait `soft-light` extends js.Object
   
   @js.native
-  sealed trait solid extends js.Object
+  sealed trait solid
+    extends antdLib.libRadioInterfaceMod.RadioGroupButtonStyle
   
   @js.native
   sealed trait sourceSelectedKeys extends js.Object
@@ -907,13 +1323,37 @@ object antdLibStrings {
   sealed trait `space-between` extends js.Object
   
   @js.native
+  sealed trait spinner extends js.Object
+  
+  @js.native
+  sealed trait `spinner-downbutton` extends js.Object
+  
+  @js.native
+  sealed trait `spinner-textfield` extends js.Object
+  
+  @js.native
+  sealed trait `spinner-upbutton` extends js.Object
+  
+  @js.native
+  sealed trait splitter extends js.Object
+  
+  @js.native
   sealed trait square extends js.Object
+  
+  @js.native
+  sealed trait `square-button` extends js.Object
   
   @js.native
   sealed trait start extends js.Object
   
   @js.native
   sealed trait static extends js.Object
+  
+  @js.native
+  sealed trait statusbar extends js.Object
+  
+  @js.native
+  sealed trait statusbarpanel extends js.Object
   
   @js.native
   sealed trait sticky extends js.Object
@@ -937,10 +1377,28 @@ object antdLibStrings {
   sealed trait submit extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends antdLib.libNotificationMod.IconType
+       with antdLib.libMessageMod.NoticeType
+       with antdLib.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait `super` extends js.Object
+  
+  @js.native
+  sealed trait tab extends js.Object
+  
+  @js.native
+  sealed trait `tab-scroll-arrow-back` extends js.Object
+  
+  @js.native
+  sealed trait `tab-scroll-arrow-forward` extends js.Object
+  
+  @js.native
+  sealed trait tabpanel extends js.Object
+  
+  @js.native
+  sealed trait tabpanels extends js.Object
   
   @js.native
   sealed trait tags extends js.Object
@@ -952,13 +1410,23 @@ object antdLibStrings {
   sealed trait tb extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends antdLib.libUploadInterfaceMod.UploadListType
   
   @js.native
   sealed trait `text-after-edge` extends js.Object
   
   @js.native
   sealed trait `text-before-edge` extends js.Object
+  
+  @js.native
+  sealed trait textarea extends js.Object
+  
+  @js.native
+  sealed trait textfield extends js.Object
+  
+  @js.native
+  sealed trait `textfield-multiline` extends js.Object
   
   @js.native
   sealed trait thin extends js.Object
@@ -970,28 +1438,75 @@ object antdLibStrings {
   sealed trait `titling-caps` extends js.Object
   
   @js.native
+  sealed trait toolbar extends js.Object
+  
+  @js.native
+  sealed trait toolbarbutton extends js.Object
+  
+  @js.native
+  sealed trait `toolbarbutton-dropdown` extends js.Object
+  
+  @js.native
+  sealed trait toolbargripper extends js.Object
+  
+  @js.native
+  sealed trait toolbox extends js.Object
+  
+  @js.native
   sealed trait tooltip extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends antdLib.libMentionMod.MentionPlacement
+       with antdLib.libTabsMod.TabsPosition
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait topCenter extends js.Object
   
   @js.native
-  sealed trait topLeft extends js.Object
+  sealed trait topLeft
+    extends antdLib.libNotificationMod.NotificationPlacement
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
-  sealed trait topRight extends js.Object
+  sealed trait topRight
+    extends antdLib.libNotificationMod.NotificationPlacement
+       with antdLib.libTooltipMod.TooltipPlacement
   
   @js.native
   sealed trait touch extends js.Object
   
   @js.native
+  sealed trait treeheader extends js.Object
+  
+  @js.native
+  sealed trait treeheadercell extends js.Object
+  
+  @js.native
+  sealed trait treeheadersortarrow extends js.Object
+  
+  @js.native
+  sealed trait treeitem extends js.Object
+  
+  @js.native
+  sealed trait treeline extends js.Object
+  
+  @js.native
+  sealed trait treetwisty extends js.Object
+  
+  @js.native
+  sealed trait treetwistyopen extends js.Object
+  
+  @js.native
+  sealed trait treeview extends js.Object
+  
+  @js.native
   sealed trait `true` extends js.Object
   
   @js.native
-  sealed trait twoTone extends js.Object
+  sealed trait twoTone
+    extends antdLib.libIconMod.ThemeType
   
   @js.native
   sealed trait under extends js.Object
@@ -1003,7 +1518,8 @@ object antdLibStrings {
   sealed trait unset extends js.Object
   
   @js.native
-  sealed trait uploading extends js.Object
+  sealed trait uploading
+    extends antdLib.libUploadInterfaceMod.UploadFileStatus
   
   @js.native
   sealed trait uppercase extends js.Object
@@ -1021,16 +1537,19 @@ object antdLibStrings {
   sealed trait verso extends js.Object
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends antdLib.libMenuMod.MenuMode
   
   @js.native
-  sealed trait `vertical-left` extends js.Object
+  sealed trait `vertical-left`
+    extends antdLib.libMenuMod.MenuMode
   
   @js.native
   sealed trait `vertical-lr` extends js.Object
   
   @js.native
-  sealed trait `vertical-right` extends js.Object
+  sealed trait `vertical-right`
+    extends antdLib.libMenuMod.MenuMode
   
   @js.native
   sealed trait `vertical-rl` extends js.Object
@@ -1057,7 +1576,9 @@ object antdLibStrings {
   sealed trait wait extends js.Object
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends antdLib.libNotificationMod.IconType
+       with antdLib.libMessageMod.NoticeType
   
   @js.native
   sealed trait wavy extends js.Object
@@ -1072,16 +1593,23 @@ object antdLibStrings {
   sealed trait `write-only` extends js.Object
   
   @js.native
-  sealed trait xl extends js.Object
+  sealed trait xl
+    extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.libListMod.ColumnType
   
   @js.native
-  sealed trait xs extends js.Object
+  sealed trait xs
+    extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.libListMod.ColumnType
   
   @js.native
-  sealed trait xxl extends js.Object
+  sealed trait xxl
+    extends antdLib.libGridRowMod.Breakpoint
+       with antdLib.libListMod.ColumnType
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends antdLib.libCalendarMod.CalendarMode
   
   @js.native
   sealed trait zoom extends js.Object
@@ -1095,11 +1623,51 @@ object antdLibStrings {
   @scala.inline
   def `-moz-isolate-override`: `-moz-isolate-override` = "-moz-isolate-override".asInstanceOf[`-moz-isolate-override`]
   @scala.inline
+  def `-moz-mac-unified-toolbar`: `-moz-mac-unified-toolbar` = "-moz-mac-unified-toolbar".asInstanceOf[`-moz-mac-unified-toolbar`]
+  @scala.inline
   def `-moz-none`: `-moz-none` = "-moz-none".asInstanceOf[`-moz-none`]
   @scala.inline
   def `-moz-plaintext`: `-moz-plaintext` = "-moz-plaintext".asInstanceOf[`-moz-plaintext`]
   @scala.inline
   def `-moz-pre-wrap`: `-moz-pre-wrap` = "-moz-pre-wrap".asInstanceOf[`-moz-pre-wrap`]
+  @scala.inline
+  def `-moz-win-borderless-glass`: `-moz-win-borderless-glass` = "-moz-win-borderless-glass".asInstanceOf[`-moz-win-borderless-glass`]
+  @scala.inline
+  def `-moz-win-browsertabbar-toolbox`: `-moz-win-browsertabbar-toolbox` = "-moz-win-browsertabbar-toolbox".asInstanceOf[`-moz-win-browsertabbar-toolbox`]
+  @scala.inline
+  def `-moz-win-communications-toolbox`: `-moz-win-communications-toolbox` = "-moz-win-communications-toolbox".asInstanceOf[`-moz-win-communications-toolbox`]
+  @scala.inline
+  def `-moz-win-communicationstext`: `-moz-win-communicationstext` = "-moz-win-communicationstext".asInstanceOf[`-moz-win-communicationstext`]
+  @scala.inline
+  def `-moz-win-exclude-glass`: `-moz-win-exclude-glass` = "-moz-win-exclude-glass".asInstanceOf[`-moz-win-exclude-glass`]
+  @scala.inline
+  def `-moz-win-glass`: `-moz-win-glass` = "-moz-win-glass".asInstanceOf[`-moz-win-glass`]
+  @scala.inline
+  def `-moz-win-media-toolbox`: `-moz-win-media-toolbox` = "-moz-win-media-toolbox".asInstanceOf[`-moz-win-media-toolbox`]
+  @scala.inline
+  def `-moz-win-mediatext`: `-moz-win-mediatext` = "-moz-win-mediatext".asInstanceOf[`-moz-win-mediatext`]
+  @scala.inline
+  def `-moz-window-button-box`: `-moz-window-button-box` = "-moz-window-button-box".asInstanceOf[`-moz-window-button-box`]
+  @scala.inline
+  def `-moz-window-button-box-maximized`: `-moz-window-button-box-maximized` = "-moz-window-button-box-maximized".asInstanceOf[`-moz-window-button-box-maximized`]
+  @scala.inline
+  def `-moz-window-button-close`: `-moz-window-button-close` = "-moz-window-button-close".asInstanceOf[`-moz-window-button-close`]
+  @scala.inline
+  def `-moz-window-button-maximize`: `-moz-window-button-maximize` = "-moz-window-button-maximize".asInstanceOf[`-moz-window-button-maximize`]
+  @scala.inline
+  def `-moz-window-button-minimize`: `-moz-window-button-minimize` = "-moz-window-button-minimize".asInstanceOf[`-moz-window-button-minimize`]
+  @scala.inline
+  def `-moz-window-button-restore`: `-moz-window-button-restore` = "-moz-window-button-restore".asInstanceOf[`-moz-window-button-restore`]
+  @scala.inline
+  def `-moz-window-frame-bottom`: `-moz-window-frame-bottom` = "-moz-window-frame-bottom".asInstanceOf[`-moz-window-frame-bottom`]
+  @scala.inline
+  def `-moz-window-frame-left`: `-moz-window-frame-left` = "-moz-window-frame-left".asInstanceOf[`-moz-window-frame-left`]
+  @scala.inline
+  def `-moz-window-frame-right`: `-moz-window-frame-right` = "-moz-window-frame-right".asInstanceOf[`-moz-window-frame-right`]
+  @scala.inline
+  def `-moz-window-titlebar`: `-moz-window-titlebar` = "-moz-window-titlebar".asInstanceOf[`-moz-window-titlebar`]
+  @scala.inline
+  def `-moz-window-titlebar-maximized`: `-moz-window-titlebar-maximized` = "-moz-window-titlebar-maximized".asInstanceOf[`-moz-window-titlebar-maximized`]
   @scala.inline
   def `-ms-autohiding-scrollbar`: `-ms-autohiding-scrollbar` = "-ms-autohiding-scrollbar".asInstanceOf[`-ms-autohiding-scrollbar`]
   @scala.inline
@@ -1209,11 +1777,25 @@ object antdLibStrings {
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline
+  def `button-arrow-down`: `button-arrow-down` = "button-arrow-down".asInstanceOf[`button-arrow-down`]
+  @scala.inline
+  def `button-arrow-next`: `button-arrow-next` = "button-arrow-next".asInstanceOf[`button-arrow-next`]
+  @scala.inline
+  def `button-arrow-previous`: `button-arrow-previous` = "button-arrow-previous".asInstanceOf[`button-arrow-previous`]
+  @scala.inline
+  def `button-arrow-up`: `button-arrow-up` = "button-arrow-up".asInstanceOf[`button-arrow-up`]
+  @scala.inline
+  def `button-bevel`: `button-bevel` = "button-bevel".asInstanceOf[`button-bevel`]
+  @scala.inline
+  def `button-focus`: `button-focus` = "button-focus".asInstanceOf[`button-focus`]
+  @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
   def capitalize: capitalize = "capitalize".asInstanceOf[capitalize]
   @scala.inline
   def card: card = "card".asInstanceOf[card]
+  @scala.inline
+  def caret: caret = "caret".asInstanceOf[caret]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline
@@ -1226,6 +1808,12 @@ object antdLibStrings {
   def check: check = "check".asInstanceOf[check]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
+  def `checkbox-container`: `checkbox-container` = "checkbox-container".asInstanceOf[`checkbox-container`]
+  @scala.inline
+  def `checkbox-label`: `checkbox-label` = "checkbox-label".asInstanceOf[`checkbox-label`]
+  @scala.inline
+  def checkmenuitem: checkmenuitem = "checkmenuitem".asInstanceOf[checkmenuitem]
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   @scala.inline
@@ -1281,6 +1869,8 @@ object antdLibStrings {
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
+  def `default-button`: `default-button` = "default-button".asInstanceOf[`default-button`]
+  @scala.inline
   def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
   @scala.inline
   def descend: descend = "descend".asInstanceOf[descend]
@@ -1298,6 +1888,8 @@ object antdLibStrings {
   def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
   @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
+  @scala.inline
+  def dualbutton: dualbutton = "dualbutton".asInstanceOf[dualbutton]
   @scala.inline
   def economy: economy = "economy".asInstanceOf[economy]
   @scala.inline
@@ -1353,6 +1945,8 @@ object antdLibStrings {
   @scala.inline
   def groove: groove = "groove".asInstanceOf[groove]
   @scala.inline
+  def groupbox: groupbox = "groupbox".asInstanceOf[groupbox]
+  @scala.inline
   def gutter: gutter = "gutter".asInstanceOf[gutter]
   @scala.inline
   def hanging: hanging = "hanging".asInstanceOf[hanging]
@@ -1401,6 +1995,8 @@ object antdLibStrings {
   @scala.inline
   def inner: inner = "inner".asInstanceOf[inner]
   @scala.inline
+  def `inner-spin-button`: `inner-spin-button` = "inner-spin-button".asInstanceOf[`inner-spin-button`]
+  @scala.inline
   def inset: inset = "inset".asInstanceOf[inset]
   @scala.inline
   def inside: inside = "inside".asInstanceOf[inside]
@@ -1441,6 +2037,10 @@ object antdLibStrings {
   @scala.inline
   def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
   @scala.inline
+  def listbox: listbox = "listbox".asInstanceOf[listbox]
+  @scala.inline
+  def listitem: listitem = "listitem".asInstanceOf[listitem]
+  @scala.inline
   def load: load = "load".asInstanceOf[load]
   @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
@@ -1471,7 +2071,75 @@ object antdLibStrings {
   @scala.inline
   def md: md = "md".asInstanceOf[md]
   @scala.inline
+  def `media-controls-background`: `media-controls-background` = "media-controls-background".asInstanceOf[`media-controls-background`]
+  @scala.inline
+  def `media-controls-fullscreen-background`: `media-controls-fullscreen-background` = "media-controls-fullscreen-background".asInstanceOf[`media-controls-fullscreen-background`]
+  @scala.inline
+  def `media-current-time-display`: `media-current-time-display` = "media-current-time-display".asInstanceOf[`media-current-time-display`]
+  @scala.inline
+  def `media-enter-fullscreen-button`: `media-enter-fullscreen-button` = "media-enter-fullscreen-button".asInstanceOf[`media-enter-fullscreen-button`]
+  @scala.inline
+  def `media-exit-fullscreen-button`: `media-exit-fullscreen-button` = "media-exit-fullscreen-button".asInstanceOf[`media-exit-fullscreen-button`]
+  @scala.inline
+  def `media-fullscreen-button`: `media-fullscreen-button` = "media-fullscreen-button".asInstanceOf[`media-fullscreen-button`]
+  @scala.inline
+  def `media-mute-button`: `media-mute-button` = "media-mute-button".asInstanceOf[`media-mute-button`]
+  @scala.inline
+  def `media-overlay-play-button`: `media-overlay-play-button` = "media-overlay-play-button".asInstanceOf[`media-overlay-play-button`]
+  @scala.inline
+  def `media-play-button`: `media-play-button` = "media-play-button".asInstanceOf[`media-play-button`]
+  @scala.inline
+  def `media-seek-back-button`: `media-seek-back-button` = "media-seek-back-button".asInstanceOf[`media-seek-back-button`]
+  @scala.inline
+  def `media-seek-forward-button`: `media-seek-forward-button` = "media-seek-forward-button".asInstanceOf[`media-seek-forward-button`]
+  @scala.inline
+  def `media-slider`: `media-slider` = "media-slider".asInstanceOf[`media-slider`]
+  @scala.inline
+  def `media-sliderthumb`: `media-sliderthumb` = "media-sliderthumb".asInstanceOf[`media-sliderthumb`]
+  @scala.inline
+  def `media-time-remaining-display`: `media-time-remaining-display` = "media-time-remaining-display".asInstanceOf[`media-time-remaining-display`]
+  @scala.inline
+  def `media-toggle-closed-captions-button`: `media-toggle-closed-captions-button` = "media-toggle-closed-captions-button".asInstanceOf[`media-toggle-closed-captions-button`]
+  @scala.inline
+  def `media-volume-slider`: `media-volume-slider` = "media-volume-slider".asInstanceOf[`media-volume-slider`]
+  @scala.inline
+  def `media-volume-slider-container`: `media-volume-slider-container` = "media-volume-slider-container".asInstanceOf[`media-volume-slider-container`]
+  @scala.inline
+  def `media-volume-sliderthumb`: `media-volume-sliderthumb` = "media-volume-sliderthumb".asInstanceOf[`media-volume-sliderthumb`]
+  @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
+  @scala.inline
+  def menuarrow: menuarrow = "menuarrow".asInstanceOf[menuarrow]
+  @scala.inline
+  def menubar: menubar = "menubar".asInstanceOf[menubar]
+  @scala.inline
+  def menucheckbox: menucheckbox = "menucheckbox".asInstanceOf[menucheckbox]
+  @scala.inline
+  def menuimage: menuimage = "menuimage".asInstanceOf[menuimage]
+  @scala.inline
+  def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  @scala.inline
+  def menuitemtext: menuitemtext = "menuitemtext".asInstanceOf[menuitemtext]
+  @scala.inline
+  def menulist: menulist = "menulist".asInstanceOf[menulist]
+  @scala.inline
+  def `menulist-button`: `menulist-button` = "menulist-button".asInstanceOf[`menulist-button`]
+  @scala.inline
+  def `menulist-text`: `menulist-text` = "menulist-text".asInstanceOf[`menulist-text`]
+  @scala.inline
+  def `menulist-textfield`: `menulist-textfield` = "menulist-textfield".asInstanceOf[`menulist-textfield`]
+  @scala.inline
+  def menupopup: menupopup = "menupopup".asInstanceOf[menupopup]
+  @scala.inline
+  def menuradio: menuradio = "menuradio".asInstanceOf[menuradio]
+  @scala.inline
+  def menuseparator: menuseparator = "menuseparator".asInstanceOf[menuseparator]
+  @scala.inline
+  def meter: meter = "meter".asInstanceOf[meter]
+  @scala.inline
+  def meterbar: meterbar = "meterbar".asInstanceOf[meterbar]
+  @scala.inline
+  def meterchunk: meterchunk = "meterchunk".asInstanceOf[meterchunk]
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   @scala.inline
@@ -1571,11 +2239,35 @@ object antdLibStrings {
   @scala.inline
   def processing: processing = "processing".asInstanceOf[processing]
   @scala.inline
+  def `progress-bar`: `progress-bar` = "progress-bar".asInstanceOf[`progress-bar`]
+  @scala.inline
+  def `progress-bar-value`: `progress-bar-value` = "progress-bar-value".asInstanceOf[`progress-bar-value`]
+  @scala.inline
+  def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
+  @scala.inline
+  def `progressbar-vertical`: `progressbar-vertical` = "progressbar-vertical".asInstanceOf[`progressbar-vertical`]
+  @scala.inline
+  def progresschunk: progresschunk = "progresschunk".asInstanceOf[progresschunk]
+  @scala.inline
+  def `progresschunk-vertical`: `progresschunk-vertical` = "progresschunk-vertical".asInstanceOf[`progresschunk-vertical`]
+  @scala.inline
   def proximity: proximity = "proximity".asInstanceOf[proximity]
+  @scala.inline
+  def `push-button`: `push-button` = "push-button".asInstanceOf[`push-button`]
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
   @scala.inline
+  def `radio-container`: `radio-container` = "radio-container".asInstanceOf[`radio-container`]
+  @scala.inline
+  def `radio-label`: `radio-label` = "radio-label".asInstanceOf[`radio-label`]
+  @scala.inline
+  def radiomenuitem: radiomenuitem = "radiomenuitem".asInstanceOf[radiomenuitem]
+  @scala.inline
   def railed: railed = "railed".asInstanceOf[railed]
+  @scala.inline
+  def range: range = "range".asInstanceOf[range]
+  @scala.inline
+  def `range-thumb`: `range-thumb` = "range-thumb".asInstanceOf[`range-thumb`]
   @scala.inline
   def `read-only`: `read-only` = "read-only".asInstanceOf[`read-only`]
   @scala.inline
@@ -1596,6 +2288,10 @@ object antdLibStrings {
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def `reset-size`: `reset-size` = "reset-size".asInstanceOf[`reset-size`]
+  @scala.inline
+  def resizer: resizer = "resizer".asInstanceOf[resizer]
+  @scala.inline
+  def resizerpanel: resizerpanel = "resizerpanel".asInstanceOf[resizerpanel]
   @scala.inline
   def responsive: responsive = "responsive".asInstanceOf[responsive]
   @scala.inline
@@ -1627,13 +2323,53 @@ object antdLibStrings {
   @scala.inline
   def `scale-down`: `scale-down` = "scale-down".asInstanceOf[`scale-down`]
   @scala.inline
+  def `scale-horizontal`: `scale-horizontal` = "scale-horizontal".asInstanceOf[`scale-horizontal`]
+  @scala.inline
+  def `scale-vertical`: `scale-vertical` = "scale-vertical".asInstanceOf[`scale-vertical`]
+  @scala.inline
+  def `scalethumb-horizontal`: `scalethumb-horizontal` = "scalethumb-horizontal".asInstanceOf[`scalethumb-horizontal`]
+  @scala.inline
+  def `scalethumb-vertical`: `scalethumb-vertical` = "scalethumb-vertical".asInstanceOf[`scalethumb-vertical`]
+  @scala.inline
+  def scalethumbend: scalethumbend = "scalethumbend".asInstanceOf[scalethumbend]
+  @scala.inline
+  def scalethumbstart: scalethumbstart = "scalethumbstart".asInstanceOf[scalethumbstart]
+  @scala.inline
+  def scalethumbtick: scalethumbtick = "scalethumbtick".asInstanceOf[scalethumbtick]
+  @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline
   def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
   @scala.inline
+  def `scrollbarbutton-down`: `scrollbarbutton-down` = "scrollbarbutton-down".asInstanceOf[`scrollbarbutton-down`]
+  @scala.inline
+  def `scrollbarbutton-left`: `scrollbarbutton-left` = "scrollbarbutton-left".asInstanceOf[`scrollbarbutton-left`]
+  @scala.inline
+  def `scrollbarbutton-right`: `scrollbarbutton-right` = "scrollbarbutton-right".asInstanceOf[`scrollbarbutton-right`]
+  @scala.inline
+  def `scrollbarbutton-up`: `scrollbarbutton-up` = "scrollbarbutton-up".asInstanceOf[`scrollbarbutton-up`]
+  @scala.inline
+  def `scrollbarthumb-horizontal`: `scrollbarthumb-horizontal` = "scrollbarthumb-horizontal".asInstanceOf[`scrollbarthumb-horizontal`]
+  @scala.inline
+  def `scrollbarthumb-vertical`: `scrollbarthumb-vertical` = "scrollbarthumb-vertical".asInstanceOf[`scrollbarthumb-vertical`]
+  @scala.inline
+  def `scrollbartrack-horizontal`: `scrollbartrack-horizontal` = "scrollbartrack-horizontal".asInstanceOf[`scrollbartrack-horizontal`]
+  @scala.inline
+  def `scrollbartrack-vertical`: `scrollbartrack-vertical` = "scrollbartrack-vertical".asInstanceOf[`scrollbartrack-vertical`]
+  @scala.inline
   def scrollx: scrollx = "scrollx".asInstanceOf[scrollx]
+  @scala.inline
+  def searchfield: searchfield = "searchfield".asInstanceOf[searchfield]
+  @scala.inline
+  def `searchfield-cancel-button`: `searchfield-cancel-button` = "searchfield-cancel-button".asInstanceOf[`searchfield-cancel-button`]
+  @scala.inline
+  def `searchfield-decoration`: `searchfield-decoration` = "searchfield-decoration".asInstanceOf[`searchfield-decoration`]
+  @scala.inline
+  def `searchfield-results-button`: `searchfield-results-button` = "searchfield-results-button".asInstanceOf[`searchfield-results-button`]
+  @scala.inline
+  def `searchfield-results-decoration`: `searchfield-results-decoration` = "searchfield-results-decoration".asInstanceOf[`searchfield-results-decoration`]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline
@@ -1648,6 +2384,8 @@ object antdLibStrings {
   def `select-same`: `select-same` = "select-same".asInstanceOf[`select-same`]
   @scala.inline
   def separate: separate = "separate".asInstanceOf[separate]
+  @scala.inline
+  def separator: separator = "separator".asInstanceOf[separator]
   @scala.inline
   def sheet: sheet = "sheet".asInstanceOf[sheet]
   @scala.inline
@@ -1664,6 +2402,14 @@ object antdLibStrings {
   def size: size = "size".asInstanceOf[size]
   @scala.inline
   def slice: slice = "slice".asInstanceOf[slice]
+  @scala.inline
+  def `slider-horizontal`: `slider-horizontal` = "slider-horizontal".asInstanceOf[`slider-horizontal`]
+  @scala.inline
+  def `slider-vertical`: `slider-vertical` = "slider-vertical".asInstanceOf[`slider-vertical`]
+  @scala.inline
+  def `sliderthumb-horizontal`: `sliderthumb-horizontal` = "sliderthumb-horizontal".asInstanceOf[`sliderthumb-horizontal`]
+  @scala.inline
+  def `sliderthumb-vertical`: `sliderthumb-vertical` = "sliderthumb-vertical".asInstanceOf[`sliderthumb-vertical`]
   @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
   @scala.inline
@@ -1685,11 +2431,27 @@ object antdLibStrings {
   @scala.inline
   def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
   @scala.inline
+  def spinner: spinner = "spinner".asInstanceOf[spinner]
+  @scala.inline
+  def `spinner-downbutton`: `spinner-downbutton` = "spinner-downbutton".asInstanceOf[`spinner-downbutton`]
+  @scala.inline
+  def `spinner-textfield`: `spinner-textfield` = "spinner-textfield".asInstanceOf[`spinner-textfield`]
+  @scala.inline
+  def `spinner-upbutton`: `spinner-upbutton` = "spinner-upbutton".asInstanceOf[`spinner-upbutton`]
+  @scala.inline
+  def splitter: splitter = "splitter".asInstanceOf[splitter]
+  @scala.inline
   def square: square = "square".asInstanceOf[square]
+  @scala.inline
+  def `square-button`: `square-button` = "square-button".asInstanceOf[`square-button`]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline
   def static: static = "static".asInstanceOf[static]
+  @scala.inline
+  def statusbar: statusbar = "statusbar".asInstanceOf[statusbar]
+  @scala.inline
+  def statusbarpanel: statusbarpanel = "statusbarpanel".asInstanceOf[statusbarpanel]
   @scala.inline
   def sticky: sticky = "sticky".asInstanceOf[sticky]
   @scala.inline
@@ -1709,6 +2471,16 @@ object antdLibStrings {
   @scala.inline
   def `super`: `super` = "super".asInstanceOf[`super`]
   @scala.inline
+  def tab: tab = "tab".asInstanceOf[tab]
+  @scala.inline
+  def `tab-scroll-arrow-back`: `tab-scroll-arrow-back` = "tab-scroll-arrow-back".asInstanceOf[`tab-scroll-arrow-back`]
+  @scala.inline
+  def `tab-scroll-arrow-forward`: `tab-scroll-arrow-forward` = "tab-scroll-arrow-forward".asInstanceOf[`tab-scroll-arrow-forward`]
+  @scala.inline
+  def tabpanel: tabpanel = "tabpanel".asInstanceOf[tabpanel]
+  @scala.inline
+  def tabpanels: tabpanels = "tabpanels".asInstanceOf[tabpanels]
+  @scala.inline
   def tags: tags = "tags".asInstanceOf[tags]
   @scala.inline
   def targetSelectedKeys: targetSelectedKeys = "targetSelectedKeys".asInstanceOf[targetSelectedKeys]
@@ -1721,11 +2493,27 @@ object antdLibStrings {
   @scala.inline
   def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
   @scala.inline
+  def textarea: textarea = "textarea".asInstanceOf[textarea]
+  @scala.inline
+  def textfield: textfield = "textfield".asInstanceOf[textfield]
+  @scala.inline
+  def `textfield-multiline`: `textfield-multiline` = "textfield-multiline".asInstanceOf[`textfield-multiline`]
+  @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline
   def `titling-caps`: `titling-caps` = "titling-caps".asInstanceOf[`titling-caps`]
+  @scala.inline
+  def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
+  @scala.inline
+  def toolbarbutton: toolbarbutton = "toolbarbutton".asInstanceOf[toolbarbutton]
+  @scala.inline
+  def `toolbarbutton-dropdown`: `toolbarbutton-dropdown` = "toolbarbutton-dropdown".asInstanceOf[`toolbarbutton-dropdown`]
+  @scala.inline
+  def toolbargripper: toolbargripper = "toolbargripper".asInstanceOf[toolbargripper]
+  @scala.inline
+  def toolbox: toolbox = "toolbox".asInstanceOf[toolbox]
   @scala.inline
   def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   @scala.inline
@@ -1738,6 +2526,22 @@ object antdLibStrings {
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
+  @scala.inline
+  def treeheader: treeheader = "treeheader".asInstanceOf[treeheader]
+  @scala.inline
+  def treeheadercell: treeheadercell = "treeheadercell".asInstanceOf[treeheadercell]
+  @scala.inline
+  def treeheadersortarrow: treeheadersortarrow = "treeheadersortarrow".asInstanceOf[treeheadersortarrow]
+  @scala.inline
+  def treeitem: treeitem = "treeitem".asInstanceOf[treeitem]
+  @scala.inline
+  def treeline: treeline = "treeline".asInstanceOf[treeline]
+  @scala.inline
+  def treetwisty: treetwisty = "treetwisty".asInstanceOf[treetwisty]
+  @scala.inline
+  def treetwistyopen: treetwistyopen = "treetwistyopen".asInstanceOf[treetwistyopen]
+  @scala.inline
+  def treeview: treeview = "treeview".asInstanceOf[treeview]
   @scala.inline
   def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline

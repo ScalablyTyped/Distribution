@@ -11,3 +11,17 @@ trait BatchAction extends js.Object {
   var `type`: BatchActionType
 }
 
+object BatchAction {
+  @scala.inline
+  def apply(
+    meta: reduxDashBatchedDashActionsLib.Anon_Batch,
+    payload: js.Array[reduxLib.reduxMod.Action[_]],
+    `type`: BatchActionType
+  ): BatchAction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("payload")(payload)
+    __obj.asInstanceOf[BatchAction]
+  }
+}
+

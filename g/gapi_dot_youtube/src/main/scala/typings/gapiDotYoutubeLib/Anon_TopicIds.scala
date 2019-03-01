@@ -12,3 +12,12 @@ trait Anon_TopicIds extends js.Object {
   var topicIds: js.Array[java.lang.String]
 }
 
+object Anon_TopicIds {
+  @scala.inline
+  def apply(topicIds: js.Array[java.lang.String]): Anon_TopicIds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("topicIds")(topicIds)
+    __obj.asInstanceOf[Anon_TopicIds]
+  }
+}
+

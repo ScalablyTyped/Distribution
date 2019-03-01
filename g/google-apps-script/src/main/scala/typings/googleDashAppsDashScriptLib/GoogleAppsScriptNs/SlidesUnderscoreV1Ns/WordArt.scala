@@ -10,3 +10,12 @@ trait WordArt extends js.Object {
   var rendered_text: java.lang.String
 }
 
+object WordArt {
+  @scala.inline
+  def apply(rendered_text: java.lang.String): WordArt = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rendered_text")(rendered_text)
+    __obj.asInstanceOf[WordArt]
+  }
+}
+

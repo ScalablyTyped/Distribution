@@ -12,3 +12,19 @@ trait HostedGit extends js.Object {
   var user: java.lang.String
 }
 
+object HostedGit {
+  @scala.inline
+  def apply(
+    domain: java.lang.String,
+    project: java.lang.String,
+    `type`: java.lang.String,
+    user: java.lang.String
+  ): HostedGit = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[HostedGit]
+  }
+}
+

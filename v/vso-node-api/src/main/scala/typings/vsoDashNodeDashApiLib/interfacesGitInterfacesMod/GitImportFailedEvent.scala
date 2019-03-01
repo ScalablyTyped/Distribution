@@ -10,3 +10,13 @@ trait GitImportFailedEvent extends js.Object {
   var targetRepository: GitRepository
 }
 
+object GitImportFailedEvent {
+  @scala.inline
+  def apply(sourceRepositoryName: java.lang.String, targetRepository: GitRepository): GitImportFailedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sourceRepositoryName")(sourceRepositoryName)
+    __obj.updateDynamic("targetRepository")(targetRepository)
+    __obj.asInstanceOf[GitImportFailedEvent]
+  }
+}
+

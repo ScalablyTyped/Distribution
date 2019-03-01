@@ -23,3 +23,16 @@ trait NamedItemArrayValuesData extends js.Object {
   var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
 }
 
+object NamedItemArrayValuesData {
+  @scala.inline
+  def apply(
+    types: js.Array[js.Array[officeDashJsLib.ExcelNs.RangeValueType]] = null,
+    values: js.Array[js.Array[_]] = null
+  ): NamedItemArrayValuesData = {
+    val __obj = js.Dynamic.literal()
+    if (types != null) __obj.updateDynamic("types")(types)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[NamedItemArrayValuesData]
+  }
+}
+

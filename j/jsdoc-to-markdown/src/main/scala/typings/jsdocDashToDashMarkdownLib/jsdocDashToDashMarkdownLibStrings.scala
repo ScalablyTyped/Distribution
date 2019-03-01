@@ -7,19 +7,27 @@ import scala.scalajs.js.annotation._
 
 object jsdocDashToDashMarkdownLibStrings {
   @js.native
-  sealed trait dl extends js.Object
+  sealed trait dl
+    extends jsdocDashToDashMarkdownLib.jsdocDashToDashMarkdownMod.StyleListFormat
   
   @js.native
-  sealed trait grouped extends js.Object
+  sealed trait grouped
+    extends jsdocDashToDashMarkdownLib.jsdocDashToDashMarkdownMod.MemberIndexFormat
+       with jsdocDashToDashMarkdownLib.jsdocDashToDashMarkdownMod.StyleListFormat
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait list
+    extends jsdocDashToDashMarkdownLib.jsdocDashToDashMarkdownMod.MemberIndexFormat
+       with jsdocDashToDashMarkdownLib.jsdocDashToDashMarkdownMod.RenderListFormat
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends jsdocDashToDashMarkdownLib.jsdocDashToDashMarkdownMod.StyleListFormat
   
   @js.native
-  sealed trait table extends js.Object
+  sealed trait table
+    extends jsdocDashToDashMarkdownLib.jsdocDashToDashMarkdownMod.RenderListFormat
+       with jsdocDashToDashMarkdownLib.jsdocDashToDashMarkdownMod.StyleListFormat
   
   @scala.inline
   def dl: dl = "dl".asInstanceOf[dl]

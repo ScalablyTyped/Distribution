@@ -19,3 +19,13 @@ trait AutoCompleteResultSet extends js.Object {
   var results: js.Array[AutoCompleteResult]
 }
 
+object AutoCompleteResultSet {
+  @scala.inline
+  def apply(results: js.Array[AutoCompleteResult], commands: AutoCompleteCommand = null): AutoCompleteResultSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("results")(results)
+    if (commands != null) __obj.updateDynamic("commands")(commands)
+    __obj.asInstanceOf[AutoCompleteResultSet]
+  }
+}
+

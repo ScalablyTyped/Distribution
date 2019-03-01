@@ -13,3 +13,22 @@ trait Touch extends js.Object {
   def scrollTo(node: stdLib.HTMLElement, x: scala.Double, y: scala.Double, speed: java.lang.String): scala.Unit
 }
 
+object Touch {
+  @scala.inline
+  def apply(
+    config: js.Any,
+    disable: js.Function0[scala.Unit],
+    enable: js.Function0[scala.Unit],
+    limit: js.Function1[scala.Boolean, scala.Unit],
+    scrollTo: js.Function4[stdLib.HTMLElement, scala.Double, scala.Double, java.lang.String, scala.Unit]
+  ): Touch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("disable")(disable)
+    __obj.updateDynamic("enable")(enable)
+    __obj.updateDynamic("limit")(limit)
+    __obj.updateDynamic("scrollTo")(scrollTo)
+    __obj.asInstanceOf[Touch]
+  }
+}
+

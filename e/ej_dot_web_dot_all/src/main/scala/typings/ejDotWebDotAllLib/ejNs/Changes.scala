@@ -11,3 +11,14 @@ trait Changes extends js.Object {
   var deleted: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object Changes {
+  @scala.inline
+  def apply(added: js.Array[_] = null, changed: js.Array[_] = null, deleted: js.Array[_] = null): Changes = {
+    val __obj = js.Dynamic.literal()
+    if (added != null) __obj.updateDynamic("added")(added)
+    if (changed != null) __obj.updateDynamic("changed")(changed)
+    if (deleted != null) __obj.updateDynamic("deleted")(deleted)
+    __obj.asInstanceOf[Changes]
+  }
+}
+

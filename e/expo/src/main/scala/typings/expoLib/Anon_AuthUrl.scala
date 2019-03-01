@@ -10,3 +10,13 @@ trait Anon_AuthUrl extends js.Object {
   var returnUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AuthUrl {
+  @scala.inline
+  def apply(authUrl: java.lang.String, returnUrl: java.lang.String = null): Anon_AuthUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authUrl")(authUrl)
+    if (returnUrl != null) __obj.updateDynamic("returnUrl")(returnUrl)
+    __obj.asInstanceOf[Anon_AuthUrl]
+  }
+}
+

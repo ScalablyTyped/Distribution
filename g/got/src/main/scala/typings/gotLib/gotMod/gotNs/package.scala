@@ -29,7 +29,6 @@ package object gotNs {
     * @param retryCount Number of retry.
     */
   type BeforeRetryHook[Options] = js.Function3[/* options */ Options, /* error */ GotError, /* retryCount */ scala.Double, js.Any]
-  type GotError = gotLib.gotMod.RequestError | gotLib.gotMod.ReadError | gotLib.gotMod.ParseError | gotLib.gotMod.HTTPError | gotLib.gotMod.MaxRedirectsError | gotLib.gotMod.UnsupportedProtocolError | gotLib.gotMod.CancelError | gotLib.gotMod.TimeoutError
   type GotPromise[B /* <: nodeLib.Buffer | java.lang.String | js.Object */] = js.Promise[Response[B]] with gotLib.Anon_Cancel
   type GotStreamFn = js.Function2[
     /* url */ GotUrl, 

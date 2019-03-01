@@ -18,3 +18,16 @@ trait StartCoverageOptions extends js.Object {
   var resetOnNavigation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StartCoverageOptions {
+  @scala.inline
+  def apply(
+    reportAnonymousScripts: js.UndefOr[scala.Boolean] = js.undefined,
+    resetOnNavigation: js.UndefOr[scala.Boolean] = js.undefined
+  ): StartCoverageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(reportAnonymousScripts)) __obj.updateDynamic("reportAnonymousScripts")(reportAnonymousScripts)
+    if (!js.isUndefined(resetOnNavigation)) __obj.updateDynamic("resetOnNavigation")(resetOnNavigation)
+    __obj.asInstanceOf[StartCoverageOptions]
+  }
+}
+

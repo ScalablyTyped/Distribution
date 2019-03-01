@@ -21,3 +21,24 @@ trait LineDash extends js.Object {
   var Style: DashStyle
 }
 
+object LineDash {
+  @scala.inline
+  def apply(
+    DashLen: scala.Double,
+    Dashes: scala.Double,
+    Distance: scala.Double,
+    DotLen: scala.Double,
+    Dots: scala.Double,
+    Style: DashStyle
+  ): LineDash = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DashLen")(DashLen)
+    __obj.updateDynamic("Dashes")(Dashes)
+    __obj.updateDynamic("Distance")(Distance)
+    __obj.updateDynamic("DotLen")(DotLen)
+    __obj.updateDynamic("Dots")(Dots)
+    __obj.updateDynamic("Style")(Style)
+    __obj.asInstanceOf[LineDash]
+  }
+}
+

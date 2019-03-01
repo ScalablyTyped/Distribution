@@ -15,3 +15,13 @@ trait ClearOrgPolicyRequest extends js.Object {
   var etag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClearOrgPolicyRequest {
+  @scala.inline
+  def apply(constraint: java.lang.String = null, etag: java.lang.String = null): ClearOrgPolicyRequest = {
+    val __obj = js.Dynamic.literal()
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    __obj.asInstanceOf[ClearOrgPolicyRequest]
+  }
+}
+

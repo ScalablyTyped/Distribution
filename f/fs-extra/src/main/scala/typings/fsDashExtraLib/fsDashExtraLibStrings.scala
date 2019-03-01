@@ -10,13 +10,18 @@ object fsDashExtraLibStrings {
   sealed trait buffer extends js.Object
   
   @js.native
-  sealed trait dir extends js.Object
+  sealed trait dir
+    extends fsDashExtraLib.fsDashExtraMod.FsSymlinkType
+       with fsDashExtraLib.fsDashExtraMod.SymlinkType
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends fsDashExtraLib.fsDashExtraMod.FsSymlinkType
+       with fsDashExtraLib.fsDashExtraMod.SymlinkType
   
   @js.native
-  sealed trait junction extends js.Object
+  sealed trait junction
+    extends fsDashExtraLib.fsDashExtraMod.FsSymlinkType
   
   @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]

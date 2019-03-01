@@ -13,3 +13,22 @@ trait Query extends js.Object {
   var selector: js.Any
 }
 
+object Query {
+  @scala.inline
+  def apply(
+    descendants: scala.Boolean,
+    first: scala.Boolean,
+    isViewQuery: scala.Boolean,
+    read: js.Any,
+    selector: js.Any
+  ): Query = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("descendants")(descendants)
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("isViewQuery")(isViewQuery)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[Query]
+  }
+}
+

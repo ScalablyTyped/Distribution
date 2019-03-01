@@ -10,3 +10,16 @@ trait VHook extends js.Object {
   def unhook(node: stdLib.Element, propertyName: java.lang.String): scala.Unit
 }
 
+object VHook {
+  @scala.inline
+  def apply(
+    hook: js.Function2[stdLib.Element, java.lang.String, scala.Unit],
+    unhook: js.Function2[stdLib.Element, java.lang.String, scala.Unit]
+  ): VHook = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hook")(hook)
+    __obj.updateDynamic("unhook")(unhook)
+    __obj.asInstanceOf[VHook]
+  }
+}
+

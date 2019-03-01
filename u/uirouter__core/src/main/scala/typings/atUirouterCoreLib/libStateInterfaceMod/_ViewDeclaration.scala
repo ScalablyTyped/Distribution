@@ -50,3 +50,22 @@ trait _ViewDeclaration extends js.Object {
   var $uiViewName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object _ViewDeclaration {
+  @scala.inline
+  def apply(
+    $context: atUirouterCoreLib.libViewInterfaceMod.ViewContext = null,
+    $name: java.lang.String = null,
+    $type: java.lang.String = null,
+    $uiViewContextAnchor: java.lang.String = null,
+    $uiViewName: java.lang.String = null
+  ): _ViewDeclaration = {
+    val __obj = js.Dynamic.literal()
+    if ($context != null) __obj.updateDynamic("$context")($context)
+    if ($name != null) __obj.updateDynamic("$name")($name)
+    if ($type != null) __obj.updateDynamic("$type")($type)
+    if ($uiViewContextAnchor != null) __obj.updateDynamic("$uiViewContextAnchor")($uiViewContextAnchor)
+    if ($uiViewName != null) __obj.updateDynamic("$uiViewName")($uiViewName)
+    __obj.asInstanceOf[_ViewDeclaration]
+  }
+}
+

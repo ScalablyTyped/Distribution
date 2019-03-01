@@ -23,3 +23,42 @@ trait ResourceResponse extends js.Object {
   var url: java.lang.String
 }
 
+object ResourceResponse {
+  @scala.inline
+  def apply(
+    body: js.Any,
+    bodySize: scala.Double,
+    contentCharset: java.lang.String,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    httpVersion: HttpVersion,
+    id: scala.Double,
+    isFileDownloading: scala.Boolean,
+    referrer: java.lang.String,
+    stage: java.lang.String,
+    status: scala.Double,
+    statusText: java.lang.String,
+    time: stdLib.Date,
+    url: java.lang.String,
+    contentType: java.lang.String = null,
+    redirectURL: java.lang.String = null
+  ): ResourceResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("bodySize")(bodySize)
+    __obj.updateDynamic("contentCharset")(contentCharset)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("httpVersion")(httpVersion)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isFileDownloading")(isFileDownloading)
+    __obj.updateDynamic("referrer")(referrer)
+    __obj.updateDynamic("stage")(stage)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("statusText")(statusText)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("url")(url)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL)
+    __obj.asInstanceOf[ResourceResponse]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Anon_Clientid extends js.Object {
   var scopes: js.Array[java.lang.String]
 }
 
+object Anon_Clientid {
+  @scala.inline
+  def apply(client_id: java.lang.String, scopes: js.Array[java.lang.String]): Anon_Clientid = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client_id")(client_id)
+    __obj.updateDynamic("scopes")(scopes)
+    __obj.asInstanceOf[Anon_Clientid]
+  }
+}
+

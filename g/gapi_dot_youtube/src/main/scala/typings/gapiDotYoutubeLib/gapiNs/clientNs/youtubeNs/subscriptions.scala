@@ -22,3 +22,29 @@ trait subscriptions extends js.Object {
   ]
 }
 
+object subscriptions {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotYoutubeLib.Anon_Id, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeSubscriptionResource]
+    ],
+    insert: js.Function1[
+      gapiDotYoutubeLib.Anon_PartRequestBody, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeSubscriptionResource]
+    ],
+    list: js.Function1[
+      gapiDotYoutubeLib.Anon_ChannelIdForChannelId, 
+      gapiLib.gapiNs.clientNs.HttpRequest[
+        gapiDotYoutubeLib.GoogleApiYouTubePaginationInfo[gapiDotYoutubeLib.GoogleApiYouTubeSubscriptionResource]
+      ]
+    ]
+  ): subscriptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[subscriptions]
+  }
+}
+

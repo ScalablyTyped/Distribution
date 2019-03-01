@@ -16,3 +16,13 @@ trait FluxibleConfiguration extends js.Object {
   var componentActionHandler: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object FluxibleConfiguration {
+  @scala.inline
+  def apply(component: js.Any, componentActionHandler: js.Function0[scala.Unit] = null): FluxibleConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("component")(component)
+    if (componentActionHandler != null) __obj.updateDynamic("componentActionHandler")(componentActionHandler)
+    __obj.asInstanceOf[FluxibleConfiguration]
+  }
+}
+

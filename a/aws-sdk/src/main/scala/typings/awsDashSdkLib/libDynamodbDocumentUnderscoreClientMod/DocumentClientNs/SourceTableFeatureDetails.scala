@@ -28,3 +28,22 @@ trait SourceTableFeatureDetails extends js.Object {
   var TimeToLiveDescription: js.UndefOr[TimeToLiveDescription] = js.undefined
 }
 
+object SourceTableFeatureDetails {
+  @scala.inline
+  def apply(
+    GlobalSecondaryIndexes: GlobalSecondaryIndexes = null,
+    LocalSecondaryIndexes: LocalSecondaryIndexes = null,
+    SSEDescription: SSEDescription = null,
+    StreamDescription: StreamSpecification = null,
+    TimeToLiveDescription: TimeToLiveDescription = null
+  ): SourceTableFeatureDetails = {
+    val __obj = js.Dynamic.literal()
+    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes)
+    if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes)
+    if (SSEDescription != null) __obj.updateDynamic("SSEDescription")(SSEDescription)
+    if (StreamDescription != null) __obj.updateDynamic("StreamDescription")(StreamDescription)
+    if (TimeToLiveDescription != null) __obj.updateDynamic("TimeToLiveDescription")(TimeToLiveDescription)
+    __obj.asInstanceOf[SourceTableFeatureDetails]
+  }
+}
+

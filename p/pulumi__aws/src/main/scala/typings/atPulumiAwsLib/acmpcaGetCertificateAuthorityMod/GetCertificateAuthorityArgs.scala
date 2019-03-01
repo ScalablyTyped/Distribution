@@ -14,3 +14,18 @@ trait GetCertificateAuthorityArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetCertificateAuthorityArgs {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    revocationConfigurations: js.Array[atPulumiAwsLib.Anon_CrlConfigurations] = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetCertificateAuthorityArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    if (revocationConfigurations != null) __obj.updateDynamic("revocationConfigurations")(revocationConfigurations)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetCertificateAuthorityArgs]
+  }
+}
+

@@ -12,3 +12,13 @@ trait GoogleCloudMlV1__GetConfigResponse extends js.Object {
   var serviceAccountProject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudMlV1__GetConfigResponse {
+  @scala.inline
+  def apply(serviceAccount: java.lang.String = null, serviceAccountProject: java.lang.String = null): GoogleCloudMlV1__GetConfigResponse = {
+    val __obj = js.Dynamic.literal()
+    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount)
+    if (serviceAccountProject != null) __obj.updateDynamic("serviceAccountProject")(serviceAccountProject)
+    __obj.asInstanceOf[GoogleCloudMlV1__GetConfigResponse]
+  }
+}
+

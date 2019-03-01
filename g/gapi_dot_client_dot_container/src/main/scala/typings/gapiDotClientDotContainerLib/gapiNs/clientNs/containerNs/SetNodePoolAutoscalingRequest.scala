@@ -10,3 +10,12 @@ trait SetNodePoolAutoscalingRequest extends js.Object {
   var autoscaling: js.UndefOr[NodePoolAutoscaling] = js.undefined
 }
 
+object SetNodePoolAutoscalingRequest {
+  @scala.inline
+  def apply(autoscaling: NodePoolAutoscaling = null): SetNodePoolAutoscalingRequest = {
+    val __obj = js.Dynamic.literal()
+    if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling)
+    __obj.asInstanceOf[SetNodePoolAutoscalingRequest]
+  }
+}
+

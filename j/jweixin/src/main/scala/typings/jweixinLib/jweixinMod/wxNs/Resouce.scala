@@ -9,3 +9,12 @@ trait Resouce extends js.Object {
   var localId: java.lang.String
 }
 
+object Resouce {
+  @scala.inline
+  def apply(localId: java.lang.String): Resouce = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("localId")(localId)
+    __obj.asInstanceOf[Resouce]
+  }
+}
+

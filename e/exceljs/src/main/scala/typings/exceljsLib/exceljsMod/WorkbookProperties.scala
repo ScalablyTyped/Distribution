@@ -12,3 +12,12 @@ trait WorkbookProperties extends js.Object {
   var date1904: scala.Boolean
 }
 
+object WorkbookProperties {
+  @scala.inline
+  def apply(date1904: scala.Boolean): WorkbookProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date1904")(date1904)
+    __obj.asInstanceOf[WorkbookProperties]
+  }
+}
+

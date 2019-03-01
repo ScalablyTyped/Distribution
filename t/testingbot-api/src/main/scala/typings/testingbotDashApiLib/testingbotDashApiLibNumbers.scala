@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object testingbotDashApiLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends testingbotDashApiLib.testingbotDashApiMod.TestingBotNs.TestSuccess
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends testingbotDashApiLib.testingbotDashApiMod.TestingBotNs.TestSuccess
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends testingbotDashApiLib.testingbotDashApiMod.TestingBotNs.TestSuccess
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait `true`
+    extends testingbotDashApiLib.testingbotDashApiMod.TestingBotNs.TestSuccess
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

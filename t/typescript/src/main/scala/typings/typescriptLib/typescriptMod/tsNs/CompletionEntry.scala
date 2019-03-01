@@ -22,3 +22,30 @@ trait CompletionEntry extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CompletionEntry {
+  @scala.inline
+  def apply(
+    kind: ScriptElementKind,
+    name: java.lang.String,
+    sortText: java.lang.String,
+    hasAction: typescriptLib.typescriptLibNumbers.`true` = null,
+    insertText: java.lang.String = null,
+    isRecommended: typescriptLib.typescriptLibNumbers.`true` = null,
+    kindModifiers: java.lang.String = null,
+    replacementSpan: TextSpan = null,
+    source: java.lang.String = null
+  ): CompletionEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("sortText")(sortText)
+    if (hasAction != null) __obj.updateDynamic("hasAction")(hasAction)
+    if (insertText != null) __obj.updateDynamic("insertText")(insertText)
+    if (isRecommended != null) __obj.updateDynamic("isRecommended")(isRecommended)
+    if (kindModifiers != null) __obj.updateDynamic("kindModifiers")(kindModifiers)
+    if (replacementSpan != null) __obj.updateDynamic("replacementSpan")(replacementSpan)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[CompletionEntry]
+  }
+}
+

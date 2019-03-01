@@ -30,3 +30,22 @@ trait RateBasedRuleState extends js.Object {
   val rateLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object RateBasedRuleState {
+  @scala.inline
+  def apply(
+    metricName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    predicates: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataIdNegated]]] = null,
+    rateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rateLimit: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): RateBasedRuleState = {
+    val __obj = js.Dynamic.literal()
+    if (metricName != null) __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (predicates != null) __obj.updateDynamic("predicates")(predicates.asInstanceOf[js.Any])
+    if (rateKey != null) __obj.updateDynamic("rateKey")(rateKey.asInstanceOf[js.Any])
+    if (rateLimit != null) __obj.updateDynamic("rateLimit")(rateLimit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RateBasedRuleState]
+  }
+}
+

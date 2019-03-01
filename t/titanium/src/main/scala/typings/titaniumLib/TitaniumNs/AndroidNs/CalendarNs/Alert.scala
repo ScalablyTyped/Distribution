@@ -69,3 +69,64 @@ trait Alert
   def getState(): scala.Double
 }
 
+object Alert {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    alarmTime: stdLib.Date,
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    begin: stdLib.Date,
+    bubbleParent: scala.Boolean,
+    end: stdLib.Date,
+    eventId: scala.Double,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getAlarmTime: js.Function0[stdLib.Date],
+    getApiName: js.Function0[java.lang.String],
+    getBegin: js.Function0[stdLib.Date],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getEnd: js.Function0[stdLib.Date],
+    getEventId: js.Function0[scala.Double],
+    getId: js.Function0[java.lang.String],
+    getMinutes: js.Function0[scala.Double],
+    getState: js.Function0[scala.Double],
+    id: java.lang.String,
+    minutes: scala.Double,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    state: scala.Double,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): Alert = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("alarmTime")(alarmTime)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("begin")(begin)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("eventId")(eventId)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getAlarmTime")(getAlarmTime)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBegin")(getBegin)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getEnd")(getEnd)
+    __obj.updateDynamic("getEventId")(getEventId)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getMinutes")(getMinutes)
+    __obj.updateDynamic("getState")(getState)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("minutes")(minutes)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("state")(state)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[Alert]
+  }
+}
+

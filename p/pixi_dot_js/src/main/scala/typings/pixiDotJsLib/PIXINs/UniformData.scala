@@ -12,3 +12,13 @@ trait UniformData[V] extends js.Object {
   var value: V
 }
 
+object UniformData {
+  @scala.inline
+  def apply[V](`type`: java.lang.String, value: V, name: java.lang.String = null): UniformData[V] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[UniformData[V]]
+  }
+}
+

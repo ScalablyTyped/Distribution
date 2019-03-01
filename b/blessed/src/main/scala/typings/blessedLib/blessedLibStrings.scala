@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object blessedLibStrings {
   @js.native
-  sealed trait action extends js.Object
+  sealed trait action
+    extends blessedLib.blessedMod.WidgetsNs.ListElementEventType
+       with blessedLib.blessedMod.WidgetsNs.TextareaElementEventType
   
   @js.native
-  sealed trait `add item` extends js.Object
+  sealed trait `add item`
+    extends blessedLib.blessedMod.WidgetsNs.ListElementEventType
   
   @js.native
-  sealed trait adopt extends js.Object
+  sealed trait adopt
+    extends blessedLib.blessedMod.WidgetsNs.NodeEventType
   
   @js.native
   sealed trait ansi extends js.Object
   
   @js.native
-  sealed trait attach extends js.Object
+  sealed trait attach
+    extends blessedLib.blessedMod.WidgetsNs.NodeEventType
   
   @js.native
   sealed trait bg extends js.Object
@@ -28,22 +33,27 @@ object blessedLibStrings {
   sealed trait block extends js.Object
   
   @js.native
-  sealed trait blur extends js.Object
+  sealed trait blur
+    extends blessedLib.blessedMod.WidgetsNs.NodeScreenEventType
   
   @js.native
   sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait cancel
+    extends blessedLib.blessedMod.WidgetsNs.ListElementEventType
+       with blessedLib.blessedMod.WidgetsNs.TextareaElementEventType
   
   @js.native
   sealed trait cd extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends blessedLib.blessedMod.WidgetsNs.TypesNs.TAlign
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click
+    extends blessedLib.blessedMod.WidgetsNs.NodeScreenEventType
   
   @js.native
   sealed trait complete extends js.Object
@@ -52,40 +62,50 @@ object blessedLibStrings {
   sealed trait cpu extends js.Object
   
   @js.native
-  sealed trait `create item` extends js.Object
+  sealed trait `create item`
+    extends blessedLib.blessedMod.WidgetsNs.ListElementEventType
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait destroy
+    extends blessedLib.blessedMod.WidgetsNs.NodeGenericEventType
   
   @js.native
-  sealed trait detach extends js.Object
+  sealed trait detach
+    extends blessedLib.blessedMod.WidgetsNs.NodeEventType
   
   @js.native
-  sealed trait `element click` extends js.Object
+  sealed trait `element click`
+    extends blessedLib.blessedMod.WidgetsNs.NodeScreenEventType
   
   @js.native
-  sealed trait `element mouseout` extends js.Object
+  sealed trait `element mouseout`
+    extends blessedLib.blessedMod.WidgetsNs.NodeScreenEventType
   
   @js.native
-  sealed trait `element mouseover` extends js.Object
+  sealed trait `element mouseover`
+    extends blessedLib.blessedMod.WidgetsNs.NodeScreenEventType
   
   @js.native
-  sealed trait `element mouseup` extends js.Object
+  sealed trait `element mouseup`
+    extends blessedLib.blessedMod.WidgetsNs.NodeScreenEventType
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends blessedLib.blessedMod.WidgetsNs.TextareaElementEventType
   
   @js.native
   sealed trait file extends js.Object
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait focus
+    extends blessedLib.blessedMod.WidgetsNs.NodeScreenEventType
   
   @js.native
   sealed trait grid extends js.Object
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait hide
+    extends blessedLib.blessedMod.WidgetsNs.NodeGenericEventType
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -97,13 +117,15 @@ object blessedLibStrings {
   sealed trait `inline-block` extends js.Object
   
   @js.native
-  sealed trait `insert item` extends js.Object
+  sealed trait `insert item`
+    extends blessedLib.blessedMod.WidgetsNs.ListElementEventType
   
   @js.native
   sealed trait keypress extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends blessedLib.blessedMod.WidgetsNs.TypesNs.TAlign
   
   @js.native
   sealed trait line extends js.Object
@@ -115,37 +137,50 @@ object blessedLibStrings {
   sealed trait middle extends js.Object
   
   @js.native
-  sealed trait mouse extends js.Object
+  sealed trait mouse
+    extends blessedLib.blessedMod.WidgetsNs.NodeMouseEventType
   
   @js.native
-  sealed trait mousedown extends js.Object
+  sealed trait mousedown
+    extends blessedLib.blessedMod.WidgetsNs.NodeMouseEventType
+       with blessedLib.blessedMod.WidgetsNs.TypesNs.TMouseAction
   
   @js.native
-  sealed trait mousemove extends js.Object
+  sealed trait mousemove
+    extends blessedLib.blessedMod.WidgetsNs.NodeMouseEventType
+       with blessedLib.blessedMod.WidgetsNs.TypesNs.TMouseAction
   
   @js.native
-  sealed trait mouseout extends js.Object
+  sealed trait mouseout
+    extends blessedLib.blessedMod.WidgetsNs.NodeMouseEventType
   
   @js.native
-  sealed trait mouseover extends js.Object
+  sealed trait mouseover
+    extends blessedLib.blessedMod.WidgetsNs.NodeMouseEventType
   
   @js.native
-  sealed trait mouseup extends js.Object
+  sealed trait mouseup
+    extends blessedLib.blessedMod.WidgetsNs.NodeMouseEventType
+       with blessedLib.blessedMod.WidgetsNs.TypesNs.TMouseAction
   
   @js.native
-  sealed trait mousewheel extends js.Object
+  sealed trait mousewheel
+    extends blessedLib.blessedMod.WidgetsNs.NodeMouseEventType
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait move
+    extends blessedLib.blessedMod.WidgetsNs.NodeGenericEventType
   
   @js.native
   sealed trait overlay extends js.Object
   
   @js.native
-  sealed trait `parsed content` extends js.Object
+  sealed trait `parsed content`
+    extends blessedLib.blessedMod.WidgetsNs.NodeGenericEventType
   
   @js.native
-  sealed trait prerender extends js.Object
+  sealed trait prerender
+    extends blessedLib.blessedMod.WidgetsNs.NodeGenericEventType
   
   @js.native
   sealed trait press extends js.Object
@@ -154,25 +189,31 @@ object blessedLibStrings {
   sealed trait refresh extends js.Object
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait remove
+    extends blessedLib.blessedMod.WidgetsNs.NodeEventType
   
   @js.native
-  sealed trait `remove item` extends js.Object
+  sealed trait `remove item`
+    extends blessedLib.blessedMod.WidgetsNs.ListElementEventType
   
   @js.native
-  sealed trait render extends js.Object
+  sealed trait render
+    extends blessedLib.blessedMod.WidgetsNs.NodeGenericEventType
   
   @js.native
-  sealed trait reparent extends js.Object
+  sealed trait reparent
+    extends blessedLib.blessedMod.WidgetsNs.NodeEventType
   
   @js.native
   sealed trait reset extends js.Object
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait resize
+    extends blessedLib.blessedMod.WidgetsNs.NodeGenericEventType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends blessedLib.blessedMod.WidgetsNs.TypesNs.TAlign
   
   @js.native
   sealed trait scroll extends js.Object
@@ -187,16 +228,20 @@ object blessedLibStrings {
   sealed trait `select tab` extends js.Object
   
   @js.native
-  sealed trait `set content` extends js.Object
+  sealed trait `set content`
+    extends blessedLib.blessedMod.WidgetsNs.NodeGenericEventType
   
   @js.native
-  sealed trait `set items` extends js.Object
+  sealed trait `set items`
+    extends blessedLib.blessedMod.WidgetsNs.ListElementEventType
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait show
+    extends blessedLib.blessedMod.WidgetsNs.NodeGenericEventType
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends blessedLib.blessedMod.WidgetsNs.TextareaElementEventType
   
   @js.native
   sealed trait top extends js.Object
@@ -214,10 +259,12 @@ object blessedLibStrings {
   sealed trait warning extends js.Object
   
   @js.native
-  sealed trait wheeldown extends js.Object
+  sealed trait wheeldown
+    extends blessedLib.blessedMod.WidgetsNs.NodeMouseEventType
   
   @js.native
-  sealed trait wheelup extends js.Object
+  sealed trait wheelup
+    extends blessedLib.blessedMod.WidgetsNs.NodeMouseEventType
   
   @scala.inline
   def action: action = "action".asInstanceOf[action]

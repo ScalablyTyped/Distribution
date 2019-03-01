@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TimePickerAndroidDismissedAction extends js.Object {
+trait TimePickerAndroidDismissedAction extends TimePickerAndroidOpenReturn {
   var action: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction
+}
+
+object TimePickerAndroidDismissedAction {
+  @scala.inline
+  def apply(action: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction): TimePickerAndroidDismissedAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.asInstanceOf[TimePickerAndroidDismissedAction]
+  }
 }
 

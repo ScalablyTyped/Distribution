@@ -16,3 +16,27 @@ trait Anon_AddColorStop extends js.Object {
   def addColorStop(offset: scala.Double, color: java.lang.String): scala.Unit
 }
 
+object Anon_AddColorStop {
+  @scala.inline
+  def apply(
+    addColorStop: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    colorStops: zrenderLib.zrenderNs.ColorStops,
+    globalCoord: zrenderLib.zrenderNs.GlobalCoords,
+    `type`: zrenderLib.zrenderLibStrings.linear,
+    x: zrenderLib.zrenderNs.X,
+    x2: zrenderLib.zrenderNs.X2,
+    y: zrenderLib.zrenderNs.Y,
+    y2: zrenderLib.zrenderNs.Y2
+  ): Anon_AddColorStop = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("addColorStop")(addColorStop)
+    __obj.updateDynamic("colorStops")(colorStops)
+    __obj.updateDynamic("globalCoord")(globalCoord)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("x2")(x2)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("y2")(y2)
+    __obj.asInstanceOf[Anon_AddColorStop]
+  }
+}
+

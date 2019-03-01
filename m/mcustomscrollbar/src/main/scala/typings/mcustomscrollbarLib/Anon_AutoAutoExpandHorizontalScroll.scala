@@ -64,3 +64,32 @@ trait Anon_AutoAutoExpandHorizontalScroll extends js.Object {
   var updateOnSelectorChange: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
 }
 
+object Anon_AutoAutoExpandHorizontalScroll {
+  @scala.inline
+  def apply(
+    autoExpandHorizontalScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    autoScrollOnFocus: scala.Boolean | java.lang.String = null,
+    autoUpdateTimeout: scala.Int | scala.Double = null,
+    extraDraggableSelectors: java.lang.String = null,
+    normalizeMouseWheelDelta: js.UndefOr[scala.Boolean] = js.undefined,
+    releaseDraggableSelectors: java.lang.String = null,
+    updateOnBrowserResize: js.UndefOr[scala.Boolean] = js.undefined,
+    updateOnContentResize: js.UndefOr[scala.Boolean] = js.undefined,
+    updateOnImageLoad: mcustomscrollbarLib.mcustomscrollbarLibStrings.auto | scala.Boolean = null,
+    updateOnSelectorChange: java.lang.String | scala.Boolean = null
+  ): Anon_AutoAutoExpandHorizontalScroll = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoExpandHorizontalScroll)) __obj.updateDynamic("autoExpandHorizontalScroll")(autoExpandHorizontalScroll)
+    if (autoScrollOnFocus != null) __obj.updateDynamic("autoScrollOnFocus")(autoScrollOnFocus.asInstanceOf[js.Any])
+    if (autoUpdateTimeout != null) __obj.updateDynamic("autoUpdateTimeout")(autoUpdateTimeout.asInstanceOf[js.Any])
+    if (extraDraggableSelectors != null) __obj.updateDynamic("extraDraggableSelectors")(extraDraggableSelectors)
+    if (!js.isUndefined(normalizeMouseWheelDelta)) __obj.updateDynamic("normalizeMouseWheelDelta")(normalizeMouseWheelDelta)
+    if (releaseDraggableSelectors != null) __obj.updateDynamic("releaseDraggableSelectors")(releaseDraggableSelectors)
+    if (!js.isUndefined(updateOnBrowserResize)) __obj.updateDynamic("updateOnBrowserResize")(updateOnBrowserResize)
+    if (!js.isUndefined(updateOnContentResize)) __obj.updateDynamic("updateOnContentResize")(updateOnContentResize)
+    if (updateOnImageLoad != null) __obj.updateDynamic("updateOnImageLoad")(updateOnImageLoad.asInstanceOf[js.Any])
+    if (updateOnSelectorChange != null) __obj.updateDynamic("updateOnSelectorChange")(updateOnSelectorChange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AutoAutoExpandHorizontalScroll]
+  }
+}
+

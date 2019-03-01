@@ -27,3 +27,13 @@ trait EmailUser extends js.Object {
   var emailAddress: java.lang.String
 }
 
+object EmailUser {
+  @scala.inline
+  def apply(displayName: java.lang.String, emailAddress: java.lang.String): EmailUser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("emailAddress")(emailAddress)
+    __obj.asInstanceOf[EmailUser]
+  }
+}
+

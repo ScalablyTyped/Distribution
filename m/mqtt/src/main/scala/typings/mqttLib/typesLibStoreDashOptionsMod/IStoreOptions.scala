@@ -12,3 +12,12 @@ trait IStoreOptions extends js.Object {
   var clean: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IStoreOptions {
+  @scala.inline
+  def apply(clean: js.UndefOr[scala.Boolean] = js.undefined): IStoreOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean)
+    __obj.asInstanceOf[IStoreOptions]
+  }
+}
+

@@ -9,3 +9,12 @@ trait DeploymentBuild extends Deployment {
   var buildId: scala.Double
 }
 
+object DeploymentBuild {
+  @scala.inline
+  def apply(buildId: scala.Double, `type`: java.lang.String): DeploymentBuild = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("buildId")(buildId)
+    __obj.asInstanceOf[DeploymentBuild]
+  }
+}
+

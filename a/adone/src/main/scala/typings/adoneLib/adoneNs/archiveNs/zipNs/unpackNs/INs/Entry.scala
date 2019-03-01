@@ -42,3 +42,54 @@ trait Entry[StringType] extends js.Object {
   def isEncrypted(): scala.Boolean
 }
 
+object Entry {
+  @scala.inline
+  def apply[StringType](
+    compressedSize: scala.Double,
+    compressionMethod: scala.Double,
+    crc32: scala.Double,
+    externalFileAttributes: scala.Double,
+    extraFieldLength: scala.Double,
+    extraFields: js.Array[ExtraField],
+    fileComment: StringType,
+    fileCommentLength: scala.Double,
+    fileName: StringType,
+    fileNameLength: scala.Double,
+    generalPurposeBitFlag: scala.Double,
+    getLastModDate: js.Function0[adoneLib.adoneNs.INs.datetimeNs.Datetime],
+    internalFileAttributes: scala.Double,
+    isCompressed: js.Function0[scala.Boolean],
+    isEncrypted: js.Function0[scala.Boolean],
+    lastModFileDate: scala.Double,
+    lastModFileTime: scala.Double,
+    relativeOffsetOfLocalHeader: scala.Double,
+    uncompressedSize: scala.Double,
+    versionMadeBy: scala.Double,
+    versionNeededToExtract: scala.Double
+  ): Entry[StringType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compressedSize")(compressedSize)
+    __obj.updateDynamic("compressionMethod")(compressionMethod)
+    __obj.updateDynamic("crc32")(crc32)
+    __obj.updateDynamic("externalFileAttributes")(externalFileAttributes)
+    __obj.updateDynamic("extraFieldLength")(extraFieldLength)
+    __obj.updateDynamic("extraFields")(extraFields)
+    __obj.updateDynamic("fileComment")(fileComment.asInstanceOf[js.Any])
+    __obj.updateDynamic("fileCommentLength")(fileCommentLength)
+    __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
+    __obj.updateDynamic("fileNameLength")(fileNameLength)
+    __obj.updateDynamic("generalPurposeBitFlag")(generalPurposeBitFlag)
+    __obj.updateDynamic("getLastModDate")(getLastModDate)
+    __obj.updateDynamic("internalFileAttributes")(internalFileAttributes)
+    __obj.updateDynamic("isCompressed")(isCompressed)
+    __obj.updateDynamic("isEncrypted")(isEncrypted)
+    __obj.updateDynamic("lastModFileDate")(lastModFileDate)
+    __obj.updateDynamic("lastModFileTime")(lastModFileTime)
+    __obj.updateDynamic("relativeOffsetOfLocalHeader")(relativeOffsetOfLocalHeader)
+    __obj.updateDynamic("uncompressedSize")(uncompressedSize)
+    __obj.updateDynamic("versionMadeBy")(versionMadeBy)
+    __obj.updateDynamic("versionNeededToExtract")(versionNeededToExtract)
+    __obj.asInstanceOf[Entry[StringType]]
+  }
+}
+

@@ -33,3 +33,26 @@ trait UITextOptions
   var waitingForResponse: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UITextOptions {
+  @scala.inline
+  def apply(
+    defaultResponseError: java.lang.String = null,
+    failUpload: java.lang.String = null,
+    fileInputTitle: java.lang.String = null,
+    formatProgress: java.lang.String = null,
+    paused: java.lang.String = null,
+    sizeSymbols: js.Array[java.lang.String] = null,
+    waitingForResponse: java.lang.String = null
+  ): UITextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaultResponseError != null) __obj.updateDynamic("defaultResponseError")(defaultResponseError)
+    if (failUpload != null) __obj.updateDynamic("failUpload")(failUpload)
+    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle)
+    if (formatProgress != null) __obj.updateDynamic("formatProgress")(formatProgress)
+    if (paused != null) __obj.updateDynamic("paused")(paused)
+    if (sizeSymbols != null) __obj.updateDynamic("sizeSymbols")(sizeSymbols)
+    if (waitingForResponse != null) __obj.updateDynamic("waitingForResponse")(waitingForResponse)
+    __obj.asInstanceOf[UITextOptions]
+  }
+}
+

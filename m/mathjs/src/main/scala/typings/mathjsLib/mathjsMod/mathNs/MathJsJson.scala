@@ -12,3 +12,12 @@ trait MathJsJson extends js.Object {
   def reviver(): js.Function2[/* key */ js.Any, /* value */ js.Any, _]
 }
 
+object MathJsJson {
+  @scala.inline
+  def apply(reviver: js.Function0[js.Function2[/* key */ js.Any, /* value */ js.Any, _]]): MathJsJson = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reviver")(reviver)
+    __obj.asInstanceOf[MathJsJson]
+  }
+}
+

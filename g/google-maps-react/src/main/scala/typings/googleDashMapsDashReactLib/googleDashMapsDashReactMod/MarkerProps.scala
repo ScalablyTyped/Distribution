@@ -14,3 +14,18 @@ import scala.scalajs.js.annotation._
   var onMouseover: js.UndefOr[googleDashMapsDashReactLib.markerEventHandler] = js.undefined
 }
 
+object MarkerProps {
+  @scala.inline
+  def apply(
+    mapCenter: googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral = null,
+    onClick: googleDashMapsDashReactLib.markerEventHandler = null,
+    onMouseover: googleDashMapsDashReactLib.markerEventHandler = null
+  ): MarkerProps = {
+    val __obj = js.Dynamic.literal()
+    if (mapCenter != null) __obj.updateDynamic("mapCenter")(mapCenter.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onMouseover != null) __obj.updateDynamic("onMouseover")(onMouseover)
+    __obj.asInstanceOf[MarkerProps]
+  }
+}
+

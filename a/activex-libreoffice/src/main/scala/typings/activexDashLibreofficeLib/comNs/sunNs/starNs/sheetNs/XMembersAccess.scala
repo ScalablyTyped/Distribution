@@ -37,3 +37,36 @@ trait XMembersAccess
   def getLocaleIndependentElementNames(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XMembersAccess {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    LocaleIndependentElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getLocaleIndependentElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMembersAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementNames")(ElementNames)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("LocaleIndependentElementNames")(LocaleIndependentElementNames)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getByName")(getByName)
+    __obj.updateDynamic("getElementNames")(getElementNames)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getLocaleIndependentElementNames")(getLocaleIndependentElementNames)
+    __obj.updateDynamic("hasByName")(hasByName)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMembersAccess]
+  }
+}
+

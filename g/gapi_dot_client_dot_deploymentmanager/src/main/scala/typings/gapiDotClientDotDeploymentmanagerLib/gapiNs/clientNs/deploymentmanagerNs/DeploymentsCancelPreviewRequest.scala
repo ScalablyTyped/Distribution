@@ -17,3 +17,12 @@ trait DeploymentsCancelPreviewRequest extends js.Object {
   var fingerprint: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeploymentsCancelPreviewRequest {
+  @scala.inline
+  def apply(fingerprint: java.lang.String = null): DeploymentsCancelPreviewRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    __obj.asInstanceOf[DeploymentsCancelPreviewRequest]
+  }
+}
+

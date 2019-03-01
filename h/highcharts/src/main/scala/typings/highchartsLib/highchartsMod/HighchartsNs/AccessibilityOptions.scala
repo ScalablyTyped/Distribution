@@ -74,3 +74,32 @@ trait AccessibilityOptions extends js.Object {
   var seriesDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
 }
 
+object AccessibilityOptions {
+  @scala.inline
+  def apply(
+    describeSingleSeries: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboardNavigation: KeyboardNavigationOptions = null,
+    onTableAnchorClick: js.Function = null,
+    pointDateFormat: java.lang.String = null,
+    pointDateFormatter: js.Function = null,
+    pointDescriptionFormatter: js.Function = null,
+    pointDescriptionThreshold: scala.Double | scala.Boolean = null,
+    screenReaderSectionFormatter: js.Function = null,
+    seriesDescriptionFormatter: js.Function = null
+  ): AccessibilityOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(describeSingleSeries)) __obj.updateDynamic("describeSingleSeries")(describeSingleSeries)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (keyboardNavigation != null) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation)
+    if (onTableAnchorClick != null) __obj.updateDynamic("onTableAnchorClick")(onTableAnchorClick)
+    if (pointDateFormat != null) __obj.updateDynamic("pointDateFormat")(pointDateFormat)
+    if (pointDateFormatter != null) __obj.updateDynamic("pointDateFormatter")(pointDateFormatter)
+    if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter)
+    if (pointDescriptionThreshold != null) __obj.updateDynamic("pointDescriptionThreshold")(pointDescriptionThreshold.asInstanceOf[js.Any])
+    if (screenReaderSectionFormatter != null) __obj.updateDynamic("screenReaderSectionFormatter")(screenReaderSectionFormatter)
+    if (seriesDescriptionFormatter != null) __obj.updateDynamic("seriesDescriptionFormatter")(seriesDescriptionFormatter)
+    __obj.asInstanceOf[AccessibilityOptions]
+  }
+}
+

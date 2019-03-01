@@ -63,3 +63,38 @@ trait CompositionContext extends js.Object {
   var viewSlot: ViewSlot
 }
 
+object CompositionContext {
+  @scala.inline
+  def apply(
+    bindingContext: js.Any,
+    container: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container,
+    viewResources: ViewResources,
+    viewSlot: ViewSlot,
+    childContainer: aureliaDashDependencyDashInjectionLib.aureliaDashDependencyDashInjectionMod.Container = null,
+    host: stdLib.Element = null,
+    model: js.Any = null,
+    overrideContext: js.Any = null,
+    owningView: View = null,
+    skipActivation: js.UndefOr[scala.Boolean] = js.undefined,
+    view: java.lang.String | ViewStrategy = null,
+    viewModel: js.Any = null,
+    viewModelResource: HtmlBehaviorResource = null
+  ): CompositionContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bindingContext")(bindingContext)
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("viewResources")(viewResources)
+    __obj.updateDynamic("viewSlot")(viewSlot)
+    if (childContainer != null) __obj.updateDynamic("childContainer")(childContainer)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (overrideContext != null) __obj.updateDynamic("overrideContext")(overrideContext)
+    if (owningView != null) __obj.updateDynamic("owningView")(owningView)
+    if (!js.isUndefined(skipActivation)) __obj.updateDynamic("skipActivation")(skipActivation)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
+    if (viewModelResource != null) __obj.updateDynamic("viewModelResource")(viewModelResource)
+    __obj.asInstanceOf[CompositionContext]
+  }
+}
+

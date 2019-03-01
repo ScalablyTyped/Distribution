@@ -82,3 +82,48 @@ trait TextPageStyle extends js.Object {
   var TextColumns: XTextColumns
 }
 
+object TextPageStyle {
+  @scala.inline
+  def apply(
+    FooterText: XText,
+    FooterTextFirst: XText,
+    FooterTextLeft: XText,
+    FooterTextRight: XText,
+    FootnoteHeight: scala.Double,
+    FootnoteLineAdjust: scala.Double,
+    FootnoteLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FootnoteLineDistance: scala.Double,
+    FootnoteLineRelativeWidth: scala.Double,
+    FootnoteLineTextDistance: scala.Double,
+    FootnoteLineWeight: scala.Double,
+    HeaderText: XText,
+    HeaderTextFirst: XText,
+    HeaderTextLeft: XText,
+    HeaderTextRight: XText,
+    RegisterModeActive: scala.Boolean,
+    RegisterParagraphStyle: java.lang.String,
+    TextColumns: XTextColumns
+  ): TextPageStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FooterText")(FooterText)
+    __obj.updateDynamic("FooterTextFirst")(FooterTextFirst)
+    __obj.updateDynamic("FooterTextLeft")(FooterTextLeft)
+    __obj.updateDynamic("FooterTextRight")(FooterTextRight)
+    __obj.updateDynamic("FootnoteHeight")(FootnoteHeight)
+    __obj.updateDynamic("FootnoteLineAdjust")(FootnoteLineAdjust)
+    __obj.updateDynamic("FootnoteLineColor")(FootnoteLineColor)
+    __obj.updateDynamic("FootnoteLineDistance")(FootnoteLineDistance)
+    __obj.updateDynamic("FootnoteLineRelativeWidth")(FootnoteLineRelativeWidth)
+    __obj.updateDynamic("FootnoteLineTextDistance")(FootnoteLineTextDistance)
+    __obj.updateDynamic("FootnoteLineWeight")(FootnoteLineWeight)
+    __obj.updateDynamic("HeaderText")(HeaderText)
+    __obj.updateDynamic("HeaderTextFirst")(HeaderTextFirst)
+    __obj.updateDynamic("HeaderTextLeft")(HeaderTextLeft)
+    __obj.updateDynamic("HeaderTextRight")(HeaderTextRight)
+    __obj.updateDynamic("RegisterModeActive")(RegisterModeActive)
+    __obj.updateDynamic("RegisterParagraphStyle")(RegisterParagraphStyle)
+    __obj.updateDynamic("TextColumns")(TextColumns)
+    __obj.asInstanceOf[TextPageStyle]
+  }
+}
+

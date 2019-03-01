@@ -21,3 +21,13 @@ trait PodTemplateSpec extends js.Object {
   val spec: PodSpec
 }
 
+object PodTemplateSpec {
+  @scala.inline
+  def apply(metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta, spec: PodSpec): PodTemplateSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.asInstanceOf[PodTemplateSpec]
+  }
+}
+

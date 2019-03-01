@@ -24,3 +24,28 @@ trait Webfont extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Webfont {
+  @scala.inline
+  def apply(
+    category: java.lang.String = null,
+    family: java.lang.String = null,
+    files: stdLib.Record[java.lang.String, java.lang.String] = null,
+    kind: java.lang.String = null,
+    lastModified: java.lang.String = null,
+    subsets: js.Array[java.lang.String] = null,
+    variants: js.Array[java.lang.String] = null,
+    version: java.lang.String = null
+  ): Webfont = {
+    val __obj = js.Dynamic.literal()
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (family != null) __obj.updateDynamic("family")(family)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified)
+    if (subsets != null) __obj.updateDynamic("subsets")(subsets)
+    if (variants != null) __obj.updateDynamic("variants")(variants)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Webfont]
+  }
+}
+

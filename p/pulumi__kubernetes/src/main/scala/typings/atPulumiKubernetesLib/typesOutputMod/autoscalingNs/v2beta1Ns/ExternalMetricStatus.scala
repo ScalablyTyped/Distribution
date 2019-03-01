@@ -28,3 +28,20 @@ trait ExternalMetricStatus extends js.Object {
   val metricSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
 }
 
+object ExternalMetricStatus {
+  @scala.inline
+  def apply(
+    currentAverageValue: java.lang.String,
+    currentValue: java.lang.String,
+    metricName: java.lang.String,
+    metricSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
+  ): ExternalMetricStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentAverageValue")(currentAverageValue)
+    __obj.updateDynamic("currentValue")(currentValue)
+    __obj.updateDynamic("metricName")(metricName)
+    __obj.updateDynamic("metricSelector")(metricSelector)
+    __obj.asInstanceOf[ExternalMetricStatus]
+  }
+}
+

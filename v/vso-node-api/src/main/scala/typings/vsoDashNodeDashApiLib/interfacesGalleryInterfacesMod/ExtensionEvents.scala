@@ -24,3 +24,20 @@ trait ExtensionEvents extends js.Object {
   var publisherName: java.lang.String
 }
 
+object ExtensionEvents {
+  @scala.inline
+  def apply(
+    events: org.scalablytyped.runtime.StringDictionary[js.Array[ExtensionEvent]],
+    extensionId: java.lang.String,
+    extensionName: java.lang.String,
+    publisherName: java.lang.String
+  ): ExtensionEvents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("extensionId")(extensionId)
+    __obj.updateDynamic("extensionName")(extensionName)
+    __obj.updateDynamic("publisherName")(publisherName)
+    __obj.asInstanceOf[ExtensionEvents]
+  }
+}
+

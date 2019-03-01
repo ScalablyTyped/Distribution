@@ -15,3 +15,26 @@ trait Settings extends js.Object {
   var Redaction: Redaction
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    Languages: java.lang.String,
+    LicenseChecker: java.lang.String,
+    OutputFormat: EnumDWT_OCRProOutputFormat,
+    PDFAVersion: EnumDWT_OCRProPDFAVersion,
+    PDFVersion: EnumDWT_OCRProPDFVersion,
+    RecognitionModule: java.lang.String,
+    Redaction: Redaction
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Languages")(Languages)
+    __obj.updateDynamic("LicenseChecker")(LicenseChecker)
+    __obj.updateDynamic("OutputFormat")(OutputFormat)
+    __obj.updateDynamic("PDFAVersion")(PDFAVersion)
+    __obj.updateDynamic("PDFVersion")(PDFVersion)
+    __obj.updateDynamic("RecognitionModule")(RecognitionModule)
+    __obj.updateDynamic("Redaction")(Redaction)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

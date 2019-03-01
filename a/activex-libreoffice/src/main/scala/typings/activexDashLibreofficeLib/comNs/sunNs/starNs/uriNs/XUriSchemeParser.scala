@@ -27,3 +27,20 @@ trait XUriSchemeParser
   def parse(scheme: java.lang.String, schemeSpecificPart: java.lang.String): XUriReference
 }
 
+object XUriSchemeParser {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    parse: js.Function2[java.lang.String, java.lang.String, XUriReference],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XUriSchemeParser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XUriSchemeParser]
+  }
+}
+

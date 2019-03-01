@@ -9,3 +9,22 @@ trait OnAllCallbackEvent extends OnCallbackEvent {
   var src: java.lang.String
 }
 
+object OnAllCallbackEvent {
+  @scala.inline
+  def apply(
+    err: js.Any,
+    message: java.lang.String,
+    src: java.lang.String,
+    task: java.lang.String,
+    duration: scala.Int | scala.Double = null
+  ): OnAllCallbackEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("err")(err)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("task")(task)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OnAllCallbackEvent]
+  }
+}
+

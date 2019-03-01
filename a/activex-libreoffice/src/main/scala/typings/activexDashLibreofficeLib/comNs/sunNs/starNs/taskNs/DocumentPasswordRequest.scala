@@ -17,3 +17,22 @@ trait DocumentPasswordRequest extends PasswordRequest {
   var Name: java.lang.String
 }
 
+object DocumentPasswordRequest {
+  @scala.inline
+  def apply(
+    Classification: InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Mode: PasswordRequestMode,
+    Name: java.lang.String
+  ): DocumentPasswordRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Classification")(Classification)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("Mode")(Mode)
+    __obj.updateDynamic("Name")(Name)
+    __obj.asInstanceOf[DocumentPasswordRequest]
+  }
+}
+

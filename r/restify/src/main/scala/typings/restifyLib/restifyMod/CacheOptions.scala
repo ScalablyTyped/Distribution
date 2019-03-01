@@ -9,3 +9,12 @@ trait CacheOptions extends js.Object {
   var maxAge: scala.Double
 }
 
+object CacheOptions {
+  @scala.inline
+  def apply(maxAge: scala.Double): CacheOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxAge")(maxAge)
+    __obj.asInstanceOf[CacheOptions]
+  }
+}
+

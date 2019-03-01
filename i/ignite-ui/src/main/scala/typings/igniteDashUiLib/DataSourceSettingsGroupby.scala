@@ -52,3 +52,29 @@ trait DataSourceSettingsGroupby
   var summariesPosition: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataSourceSettingsGroupby {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for DataSourceSettingsGroupby
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    defaultCollapseState: js.UndefOr[scala.Boolean] = js.undefined,
+    groupRecordKey: java.lang.String = null,
+    groupSummaryRecordKey: java.lang.String = null,
+    pagingMode: java.lang.String = null,
+    summaries: js.Array[_] = null,
+    summariesPosition: java.lang.String = null
+  ): DataSourceSettingsGroupby = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(defaultCollapseState)) __obj.updateDynamic("defaultCollapseState")(defaultCollapseState)
+    if (groupRecordKey != null) __obj.updateDynamic("groupRecordKey")(groupRecordKey)
+    if (groupSummaryRecordKey != null) __obj.updateDynamic("groupSummaryRecordKey")(groupSummaryRecordKey)
+    if (pagingMode != null) __obj.updateDynamic("pagingMode")(pagingMode)
+    if (summaries != null) __obj.updateDynamic("summaries")(summaries)
+    if (summariesPosition != null) __obj.updateDynamic("summariesPosition")(summariesPosition)
+    __obj.asInstanceOf[DataSourceSettingsGroupby]
+  }
+}
+

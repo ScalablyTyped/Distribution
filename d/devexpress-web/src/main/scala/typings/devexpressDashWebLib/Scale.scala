@@ -21,3 +21,13 @@ trait Scale extends js.Object {
   var y: scala.Double
 }
 
+object Scale {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): Scale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Scale]
+  }
+}
+

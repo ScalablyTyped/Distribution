@@ -22,3 +22,26 @@ trait Display extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Display {
+  @scala.inline
+  def apply(
+    density: scala.Int | scala.Double = null,
+    displayId: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    refreshRate: scala.Int | scala.Double = null,
+    state: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Display = {
+    val __obj = js.Dynamic.literal()
+    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (displayId != null) __obj.updateDynamic("displayId")(displayId.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (refreshRate != null) __obj.updateDynamic("refreshRate")(refreshRate.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Display]
+  }
+}
+

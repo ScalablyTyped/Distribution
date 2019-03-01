@@ -39,3 +39,32 @@ trait ModalOptions
   var title: java.lang.String
 }
 
+object ModalOptions {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    title: java.lang.String,
+    cancelColor: java.lang.String = null,
+    cancelText: java.lang.String = null,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    confirmColor: java.lang.String = null,
+    confirmText: java.lang.String = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    showCancel: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function1[/* res */ baiduDashAppLib.Anon_Cancel, scala.Unit] = null
+  ): ModalOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("title")(title)
+    if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (confirmColor != null) __obj.updateDynamic("confirmColor")(confirmColor)
+    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ModalOptions]
+  }
+}
+

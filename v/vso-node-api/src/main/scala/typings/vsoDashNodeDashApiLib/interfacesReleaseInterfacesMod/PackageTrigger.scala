@@ -9,3 +9,13 @@ trait PackageTrigger extends ReleaseTriggerBase {
   var alias: java.lang.String
 }
 
+object PackageTrigger {
+  @scala.inline
+  def apply(alias: java.lang.String, triggerType: ReleaseTriggerType): PackageTrigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alias")(alias)
+    __obj.updateDynamic("triggerType")(triggerType)
+    __obj.asInstanceOf[PackageTrigger]
+  }
+}
+

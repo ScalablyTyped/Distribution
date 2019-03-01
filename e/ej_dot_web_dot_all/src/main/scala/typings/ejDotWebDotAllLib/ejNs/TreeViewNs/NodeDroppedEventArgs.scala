@@ -38,3 +38,32 @@ trait NodeDroppedEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeDroppedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    dropTarget: js.Any = null,
+    droppedElement: js.Any = null,
+    droppedElementData: js.Any = null,
+    event: js.Any = null,
+    model: Model = null,
+    position: java.lang.String = null,
+    target: js.Any = null,
+    targetElementData: js.Any = null,
+    `type`: java.lang.String = null
+  ): NodeDroppedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
+    if (droppedElement != null) __obj.updateDynamic("droppedElement")(droppedElement)
+    if (droppedElementData != null) __obj.updateDynamic("droppedElementData")(droppedElementData)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (targetElementData != null) __obj.updateDynamic("targetElementData")(targetElementData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodeDroppedEventArgs]
+  }
+}
+

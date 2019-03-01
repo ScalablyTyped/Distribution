@@ -17,3 +17,13 @@ trait AchievementRevealResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AchievementRevealResponse {
+  @scala.inline
+  def apply(currentState: java.lang.String = null, kind: java.lang.String = null): AchievementRevealResponse = {
+    val __obj = js.Dynamic.literal()
+    if (currentState != null) __obj.updateDynamic("currentState")(currentState)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[AchievementRevealResponse]
+  }
+}
+

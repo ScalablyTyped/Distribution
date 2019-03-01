@@ -11,3 +11,14 @@ trait IGridTreeAggregations extends js.Object {
   var field: java.lang.String
 }
 
+object IGridTreeAggregations {
+  @scala.inline
+  def apply(aggregation: java.lang.String, colName: java.lang.String, field: java.lang.String): IGridTreeAggregations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregation")(aggregation)
+    __obj.updateDynamic("colName")(colName)
+    __obj.updateDynamic("field")(field)
+    __obj.asInstanceOf[IGridTreeAggregations]
+  }
+}
+

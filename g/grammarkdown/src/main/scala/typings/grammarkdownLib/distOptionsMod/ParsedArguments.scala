@@ -11,3 +11,18 @@ trait ParsedArguments
   var rest: js.Array[java.lang.String]
 }
 
+object ParsedArguments {
+  @scala.inline
+  def apply(
+    argv: js.Array[java.lang.String],
+    rest: js.Array[java.lang.String],
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): ParsedArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("argv")(argv)
+    __obj.updateDynamic("rest")(rest)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ParsedArguments]
+  }
+}
+

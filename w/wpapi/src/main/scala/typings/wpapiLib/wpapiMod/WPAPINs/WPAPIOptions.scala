@@ -22,3 +22,24 @@ trait WPAPIOptions extends Credentials {
   var transport: js.UndefOr[Transport] = js.undefined
 }
 
+object WPAPIOptions {
+  @scala.inline
+  def apply(
+    endpoint: java.lang.String,
+    nonce: java.lang.String = null,
+    password: java.lang.String = null,
+    routes: Routes = null,
+    transport: Transport = null,
+    username: java.lang.String = null
+  ): WPAPIOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endpoint")(endpoint)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[WPAPIOptions]
+  }
+}
+

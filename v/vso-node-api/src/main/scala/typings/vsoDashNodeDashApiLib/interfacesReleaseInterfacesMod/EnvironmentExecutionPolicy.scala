@@ -16,3 +16,13 @@ trait EnvironmentExecutionPolicy extends js.Object {
   var queueDepthCount: scala.Double
 }
 
+object EnvironmentExecutionPolicy {
+  @scala.inline
+  def apply(concurrencyCount: scala.Double, queueDepthCount: scala.Double): EnvironmentExecutionPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("concurrencyCount")(concurrencyCount)
+    __obj.updateDynamic("queueDepthCount")(queueDepthCount)
+    __obj.asInstanceOf[EnvironmentExecutionPolicy]
+  }
+}
+

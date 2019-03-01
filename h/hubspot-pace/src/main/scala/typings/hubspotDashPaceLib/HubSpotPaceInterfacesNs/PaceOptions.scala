@@ -52,3 +52,40 @@ trait PaceOptions extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PaceOptions {
+  @scala.inline
+  def apply(
+    ajax: scala.Boolean | PaceAjaxOptions = null,
+    catchupTime: scala.Int | scala.Double = null,
+    document: scala.Boolean | java.lang.String = null,
+    easeFactor: scala.Int | scala.Double = null,
+    elements: scala.Boolean | PaceElementsOptions = null,
+    eventLag: scala.Boolean | PaceEventLagOptions = null,
+    ghostTime: scala.Int | scala.Double = null,
+    initialRate: scala.Int | scala.Double = null,
+    maxProgressPerFrame: scala.Int | scala.Double = null,
+    minTime: scala.Int | scala.Double = null,
+    restartOnPushState: js.UndefOr[scala.Boolean] = js.undefined,
+    restartOnRequestAfter: scala.Boolean | scala.Double = null,
+    startOnPageLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    target: java.lang.String = null
+  ): PaceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
+    if (catchupTime != null) __obj.updateDynamic("catchupTime")(catchupTime.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
+    if (easeFactor != null) __obj.updateDynamic("easeFactor")(easeFactor.asInstanceOf[js.Any])
+    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
+    if (eventLag != null) __obj.updateDynamic("eventLag")(eventLag.asInstanceOf[js.Any])
+    if (ghostTime != null) __obj.updateDynamic("ghostTime")(ghostTime.asInstanceOf[js.Any])
+    if (initialRate != null) __obj.updateDynamic("initialRate")(initialRate.asInstanceOf[js.Any])
+    if (maxProgressPerFrame != null) __obj.updateDynamic("maxProgressPerFrame")(maxProgressPerFrame.asInstanceOf[js.Any])
+    if (minTime != null) __obj.updateDynamic("minTime")(minTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(restartOnPushState)) __obj.updateDynamic("restartOnPushState")(restartOnPushState)
+    if (restartOnRequestAfter != null) __obj.updateDynamic("restartOnRequestAfter")(restartOnRequestAfter.asInstanceOf[js.Any])
+    if (!js.isUndefined(startOnPageLoad)) __obj.updateDynamic("startOnPageLoad")(startOnPageLoad)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[PaceOptions]
+  }
+}
+

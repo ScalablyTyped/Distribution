@@ -42,3 +42,28 @@ trait Product extends js.Object {
   var productIdentifier: java.lang.String
 }
 
+object Product {
+  @scala.inline
+  def apply(
+    contentLengths: js.Array[scala.Double],
+    contentVersion: java.lang.String,
+    downloadable: scala.Boolean,
+    formattedPrice: java.lang.String,
+    localizedDescription: java.lang.String,
+    localizedTitle: java.lang.String,
+    price: scala.Double,
+    productIdentifier: java.lang.String
+  ): Product = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentLengths")(contentLengths)
+    __obj.updateDynamic("contentVersion")(contentVersion)
+    __obj.updateDynamic("downloadable")(downloadable)
+    __obj.updateDynamic("formattedPrice")(formattedPrice)
+    __obj.updateDynamic("localizedDescription")(localizedDescription)
+    __obj.updateDynamic("localizedTitle")(localizedTitle)
+    __obj.updateDynamic("price")(price)
+    __obj.updateDynamic("productIdentifier")(productIdentifier)
+    __obj.asInstanceOf[Product]
+  }
+}
+

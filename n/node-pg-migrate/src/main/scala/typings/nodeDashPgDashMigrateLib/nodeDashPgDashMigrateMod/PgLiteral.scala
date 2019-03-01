@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("node-pg-migrate", "PgLiteral")
 @js.native
-class PgLiteral protected () extends js.Object {
+class PgLiteral protected () extends _Value {
   def this(str: java.lang.String) = this()
 }
 

@@ -14,3 +14,24 @@ trait Identity extends js.Object {
   var user_id: java.lang.String
 }
 
+object Identity {
+  @scala.inline
+  def apply(
+    connection: java.lang.String,
+    isSocial: scala.Boolean,
+    provider: java.lang.String,
+    user_id: java.lang.String,
+    access_token: java.lang.String = null,
+    profileData: auth0Lib.Anon_Email = null
+  ): Identity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.updateDynamic("isSocial")(isSocial)
+    __obj.updateDynamic("provider")(provider)
+    __obj.updateDynamic("user_id")(user_id)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (profileData != null) __obj.updateDynamic("profileData")(profileData)
+    __obj.asInstanceOf[Identity]
+  }
+}
+

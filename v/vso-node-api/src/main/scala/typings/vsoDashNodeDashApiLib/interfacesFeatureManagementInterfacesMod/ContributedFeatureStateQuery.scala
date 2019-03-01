@@ -20,3 +20,18 @@ trait ContributedFeatureStateQuery extends js.Object {
   var scopeValues: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object ContributedFeatureStateQuery {
+  @scala.inline
+  def apply(
+    featureIds: js.Array[java.lang.String],
+    featureStates: org.scalablytyped.runtime.StringDictionary[ContributedFeatureState],
+    scopeValues: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): ContributedFeatureStateQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("featureIds")(featureIds)
+    __obj.updateDynamic("featureStates")(featureStates)
+    __obj.updateDynamic("scopeValues")(scopeValues)
+    __obj.asInstanceOf[ContributedFeatureStateQuery]
+  }
+}
+

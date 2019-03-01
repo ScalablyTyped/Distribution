@@ -23,3 +23,42 @@ trait BackendBucketsResource extends js.Object {
   def update(request: gapiDotClientDotComputeLib.Anon_AltBackendBucket): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object BackendBucketsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltBackendBucket, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltBackendBucketFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BackendBucket]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BackendBucketList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltBackendBucket, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    update: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltBackendBucket, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): BackendBucketsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[BackendBucketsResource]
+  }
+}
+

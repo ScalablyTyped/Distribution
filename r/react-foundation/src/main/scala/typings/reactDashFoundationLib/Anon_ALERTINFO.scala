@@ -14,3 +14,24 @@ trait Anon_ALERTINFO extends js.Object {
   var WARNING: reactDashFoundationLib.enumsMod.ProgressColors
 }
 
+object Anon_ALERTINFO {
+  @scala.inline
+  def apply(
+    ALERT: reactDashFoundationLib.enumsMod.ProgressColors,
+    INFO: reactDashFoundationLib.enumsMod.BadgeColors,
+    PRIMARY: reactDashFoundationLib.enumsMod.ButtonColors,
+    SECONDARY: reactDashFoundationLib.enumsMod.ProgressColors,
+    SUCCESS: reactDashFoundationLib.enumsMod.ProgressColors,
+    WARNING: reactDashFoundationLib.enumsMod.ProgressColors
+  ): Anon_ALERTINFO = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ALERT")(ALERT)
+    __obj.updateDynamic("INFO")(INFO)
+    __obj.updateDynamic("PRIMARY")(PRIMARY)
+    __obj.updateDynamic("SECONDARY")(SECONDARY)
+    __obj.updateDynamic("SUCCESS")(SUCCESS)
+    __obj.updateDynamic("WARNING")(WARNING)
+    __obj.asInstanceOf[Anon_ALERTINFO]
+  }
+}
+

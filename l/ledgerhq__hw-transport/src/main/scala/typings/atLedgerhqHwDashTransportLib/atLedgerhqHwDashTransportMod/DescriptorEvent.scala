@@ -11,3 +11,17 @@ trait DescriptorEvent[Descriptor] extends js.Object {
   var `type`: atLedgerhqHwDashTransportLib.atLedgerhqHwDashTransportLibStrings.add | atLedgerhqHwDashTransportLib.atLedgerhqHwDashTransportLibStrings.remove
 }
 
+object DescriptorEvent {
+  @scala.inline
+  def apply[Descriptor](
+    descriptor: Descriptor,
+    `type`: atLedgerhqHwDashTransportLib.atLedgerhqHwDashTransportLibStrings.add | atLedgerhqHwDashTransportLib.atLedgerhqHwDashTransportLibStrings.remove,
+    device: Device = null
+  ): DescriptorEvent[Descriptor] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("descriptor")(descriptor.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device)
+    __obj.asInstanceOf[DescriptorEvent[Descriptor]]
+  }
+}
+

@@ -46,3 +46,30 @@ trait Distribution extends js.Object {
   var sumOfSquaredDeviation: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Distribution {
+  @scala.inline
+  def apply(
+    bucketCounts: js.Array[java.lang.String] = null,
+    count: java.lang.String = null,
+    explicitBuckets: ExplicitBuckets = null,
+    exponentialBuckets: ExponentialBuckets = null,
+    linearBuckets: LinearBuckets = null,
+    maximum: scala.Int | scala.Double = null,
+    mean: scala.Int | scala.Double = null,
+    minimum: scala.Int | scala.Double = null,
+    sumOfSquaredDeviation: scala.Int | scala.Double = null
+  ): Distribution = {
+    val __obj = js.Dynamic.literal()
+    if (bucketCounts != null) __obj.updateDynamic("bucketCounts")(bucketCounts)
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (explicitBuckets != null) __obj.updateDynamic("explicitBuckets")(explicitBuckets)
+    if (exponentialBuckets != null) __obj.updateDynamic("exponentialBuckets")(exponentialBuckets)
+    if (linearBuckets != null) __obj.updateDynamic("linearBuckets")(linearBuckets)
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (mean != null) __obj.updateDynamic("mean")(mean.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (sumOfSquaredDeviation != null) __obj.updateDynamic("sumOfSquaredDeviation")(sumOfSquaredDeviation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Distribution]
+  }
+}
+

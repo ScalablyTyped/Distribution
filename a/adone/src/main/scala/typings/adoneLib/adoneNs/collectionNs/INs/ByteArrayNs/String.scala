@@ -10,3 +10,13 @@ trait String extends js.Object {
   var string: java.lang.String
 }
 
+object String {
+  @scala.inline
+  def apply(length: scala.Double, string: java.lang.String): String = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("string")(string)
+    __obj.asInstanceOf[String]
+  }
+}
+

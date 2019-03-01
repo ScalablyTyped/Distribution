@@ -18,3 +18,22 @@ trait XSheetAnnotationAnchor
   def getAnnotation(): XSheetAnnotation
 }
 
+object XSheetAnnotationAnchor {
+  @scala.inline
+  def apply(
+    Annotation: XSheetAnnotation,
+    acquire: js.Function0[scala.Unit],
+    getAnnotation: js.Function0[XSheetAnnotation],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSheetAnnotationAnchor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Annotation")(Annotation)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAnnotation")(getAnnotation)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSheetAnnotationAnchor]
+  }
+}
+

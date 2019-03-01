@@ -16,3 +16,13 @@ trait LabelClickEventUIParam extends js.Object {
   var item: js.UndefOr[js.Any] = js.undefined
 }
 
+object LabelClickEventUIParam {
+  @scala.inline
+  def apply(allowSliceClick: js.Any = null, item: js.Any = null): LabelClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (allowSliceClick != null) __obj.updateDynamic("allowSliceClick")(allowSliceClick)
+    if (item != null) __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[LabelClickEventUIParam]
+  }
+}
+

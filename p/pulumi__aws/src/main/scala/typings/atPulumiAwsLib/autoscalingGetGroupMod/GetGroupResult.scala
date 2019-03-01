@@ -74,3 +74,48 @@ trait GetGroupResult extends js.Object {
   val vpcZoneIdentifier: java.lang.String
 }
 
+object GetGroupResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    availabilityZones: js.Array[java.lang.String],
+    defaultCooldown: scala.Double,
+    desiredCapacity: scala.Double,
+    healthCheckGracePeriod: scala.Double,
+    healthCheckType: java.lang.String,
+    id: java.lang.String,
+    launchConfiguration: java.lang.String,
+    loadBalancers: js.Array[java.lang.String],
+    maxSize: scala.Double,
+    minSize: scala.Double,
+    newInstancesProtectedFromScaleIn: scala.Boolean,
+    placementGroup: java.lang.String,
+    serviceLinkedRoleArn: java.lang.String,
+    status: java.lang.String,
+    targetGroupArns: js.Array[java.lang.String],
+    terminationPolicies: js.Array[java.lang.String],
+    vpcZoneIdentifier: java.lang.String
+  ): GetGroupResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("availabilityZones")(availabilityZones)
+    __obj.updateDynamic("defaultCooldown")(defaultCooldown)
+    __obj.updateDynamic("desiredCapacity")(desiredCapacity)
+    __obj.updateDynamic("healthCheckGracePeriod")(healthCheckGracePeriod)
+    __obj.updateDynamic("healthCheckType")(healthCheckType)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("launchConfiguration")(launchConfiguration)
+    __obj.updateDynamic("loadBalancers")(loadBalancers)
+    __obj.updateDynamic("maxSize")(maxSize)
+    __obj.updateDynamic("minSize")(minSize)
+    __obj.updateDynamic("newInstancesProtectedFromScaleIn")(newInstancesProtectedFromScaleIn)
+    __obj.updateDynamic("placementGroup")(placementGroup)
+    __obj.updateDynamic("serviceLinkedRoleArn")(serviceLinkedRoleArn)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("targetGroupArns")(targetGroupArns)
+    __obj.updateDynamic("terminationPolicies")(terminationPolicies)
+    __obj.updateDynamic("vpcZoneIdentifier")(vpcZoneIdentifier)
+    __obj.asInstanceOf[GetGroupResult]
+  }
+}
+

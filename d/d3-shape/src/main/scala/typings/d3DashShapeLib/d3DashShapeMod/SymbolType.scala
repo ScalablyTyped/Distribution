@@ -16,3 +16,12 @@ trait SymbolType extends js.Object {
   def draw(context: CanvasPath_D3Shape, size: scala.Double): scala.Unit
 }
 
+object SymbolType {
+  @scala.inline
+  def apply(draw: js.Function2[CanvasPath_D3Shape, scala.Double, scala.Unit]): SymbolType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("draw")(draw)
+    __obj.asInstanceOf[SymbolType]
+  }
+}
+

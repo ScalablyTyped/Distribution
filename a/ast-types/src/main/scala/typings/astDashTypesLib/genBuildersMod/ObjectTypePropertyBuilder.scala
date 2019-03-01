@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ObjectTypePropertyBuilder extends js.Object {
   def apply(
-    key: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
+    key: astDashTypesLib.genKindsMod.IdentifierKind,
+    value: astDashTypesLib.genKindsMod.FlowTypeKind,
+    optional: scala.Boolean
+  ): astDashTypesLib.genNodesMod.ObjectTypeProperty = js.native
+  def apply(
+    key: astDashTypesLib.genKindsMod.LiteralKind,
     value: astDashTypesLib.genKindsMod.FlowTypeKind,
     optional: scala.Boolean
   ): astDashTypesLib.genNodesMod.ObjectTypeProperty = js.native

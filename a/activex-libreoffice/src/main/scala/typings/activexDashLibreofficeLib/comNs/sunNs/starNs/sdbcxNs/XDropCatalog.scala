@@ -23,3 +23,24 @@ trait XDropCatalog
   ): scala.Unit
 }
 
+object XDropCatalog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    dropCatalog: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDropCatalog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("dropCatalog")(dropCatalog)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDropCatalog]
+  }
+}
+

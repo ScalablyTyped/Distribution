@@ -10,3 +10,16 @@ trait Anon_ProductInfoHeaderValue extends js.Object {
   /** true if input is valid HttpProductInfoHeaderValue information; otherwise, false. */ var returnValue: scala.Boolean
 }
 
+object Anon_ProductInfoHeaderValue {
+  @scala.inline
+  def apply(
+    productInfoHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpProductInfoHeaderValue,
+    returnValue: scala.Boolean
+  ): Anon_ProductInfoHeaderValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("productInfoHeaderValue")(productInfoHeaderValue)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ProductInfoHeaderValue]
+  }
+}
+

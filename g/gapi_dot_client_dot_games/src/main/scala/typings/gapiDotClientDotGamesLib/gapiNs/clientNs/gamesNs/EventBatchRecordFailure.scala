@@ -23,3 +23,18 @@ trait EventBatchRecordFailure extends js.Object {
   var range: js.UndefOr[EventPeriodRange] = js.undefined
 }
 
+object EventBatchRecordFailure {
+  @scala.inline
+  def apply(
+    failureCause: java.lang.String = null,
+    kind: java.lang.String = null,
+    range: EventPeriodRange = null
+  ): EventBatchRecordFailure = {
+    val __obj = js.Dynamic.literal()
+    if (failureCause != null) __obj.updateDynamic("failureCause")(failureCause)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[EventBatchRecordFailure]
+  }
+}
+

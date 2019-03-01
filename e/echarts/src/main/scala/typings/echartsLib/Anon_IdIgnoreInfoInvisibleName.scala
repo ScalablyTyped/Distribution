@@ -301,3 +301,42 @@ trait Anon_IdIgnoreInfoInvisibleName extends js.Object {
   var z2: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_IdIgnoreInfoInvisibleName {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    ignore: js.UndefOr[scala.Boolean] = js.undefined,
+    info: js.Any = null,
+    invisible: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    origin: scala.Int | scala.Double = null,
+    position: js.Array[_] = null,
+    rotation: scala.Int | scala.Double = null,
+    scale: js.Array[_] = null,
+    shape: Anon_Cx = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    style: Anon_Fill = null,
+    styleEmphasis: js.Object = null,
+    `type`: java.lang.String = null,
+    z2: scala.Int | scala.Double = null
+  ): Anon_IdIgnoreInfoInvisibleName = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (!js.isUndefined(invisible)) __obj.updateDynamic("invisible")(invisible)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (styleEmphasis != null) __obj.updateDynamic("styleEmphasis")(styleEmphasis)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (z2 != null) __obj.updateDynamic("z2")(z2.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_IdIgnoreInfoInvisibleName]
+  }
+}
+

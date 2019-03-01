@@ -10,3 +10,13 @@ trait Anon_Events extends js.Object {
   var snsTopic: java.lang.String
 }
 
+object Anon_Events {
+  @scala.inline
+  def apply(events: js.Array[java.lang.String], snsTopic: java.lang.String): Anon_Events = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("snsTopic")(snsTopic)
+    __obj.asInstanceOf[Anon_Events]
+  }
+}
+

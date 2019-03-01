@@ -11,3 +11,18 @@ trait Persistence extends js.Object {
   def stopAutocompaction(): scala.Unit
 }
 
+object Persistence {
+  @scala.inline
+  def apply(
+    compactDatafile: js.Function0[scala.Unit],
+    setAutocompactionInterval: js.Function1[scala.Double, scala.Unit],
+    stopAutocompaction: js.Function0[scala.Unit]
+  ): Persistence = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compactDatafile")(compactDatafile)
+    __obj.updateDynamic("setAutocompactionInterval")(setAutocompactionInterval)
+    __obj.updateDynamic("stopAutocompaction")(stopAutocompaction)
+    __obj.asInstanceOf[Persistence]
+  }
+}
+

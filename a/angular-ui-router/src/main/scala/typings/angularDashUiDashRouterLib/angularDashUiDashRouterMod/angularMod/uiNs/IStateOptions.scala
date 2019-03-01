@@ -29,3 +29,22 @@ trait IStateOptions extends js.Object {
   var reload: js.UndefOr[scala.Boolean | java.lang.String | IState] = js.undefined
 }
 
+object IStateOptions {
+  @scala.inline
+  def apply(
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    location: scala.Boolean | java.lang.String = null,
+    notify: js.UndefOr[scala.Boolean] = js.undefined,
+    relative: IState = null,
+    reload: scala.Boolean | java.lang.String | IState = null
+  ): IStateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(notify)) __obj.updateDynamic("notify")(notify)
+    if (relative != null) __obj.updateDynamic("relative")(relative)
+    if (reload != null) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IStateOptions]
+  }
+}
+

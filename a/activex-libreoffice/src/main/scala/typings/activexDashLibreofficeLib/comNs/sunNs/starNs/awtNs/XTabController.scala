@@ -32,3 +32,40 @@ trait XTabController
   def setModel(Model: XTabControllerModel): scala.Unit
 }
 
+object XTabController {
+  @scala.inline
+  def apply(
+    Container: XControlContainer,
+    Controls: activexDashInteropLib.SafeArray[XControl],
+    acquire: js.Function0[scala.Unit],
+    activateFirst: js.Function0[scala.Unit],
+    activateLast: js.Function0[scala.Unit],
+    activateTabOrder: js.Function0[scala.Unit],
+    autoTabOrder: js.Function0[scala.Unit],
+    getContainer: js.Function0[XControlContainer],
+    getControls: js.Function0[activexDashInteropLib.SafeArray[XControl]],
+    getModel: js.Function0[XTabControllerModel],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setContainer: js.Function1[XControlContainer, scala.Unit],
+    setModel: js.Function1[XTabControllerModel, scala.Unit]
+  ): XTabController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Container")(Container)
+    __obj.updateDynamic("Controls")(Controls)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("activateFirst")(activateFirst)
+    __obj.updateDynamic("activateLast")(activateLast)
+    __obj.updateDynamic("activateTabOrder")(activateTabOrder)
+    __obj.updateDynamic("autoTabOrder")(autoTabOrder)
+    __obj.updateDynamic("getContainer")(getContainer)
+    __obj.updateDynamic("getControls")(getControls)
+    __obj.updateDynamic("getModel")(getModel)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setContainer")(setContainer)
+    __obj.updateDynamic("setModel")(setModel)
+    __obj.asInstanceOf[XTabController]
+  }
+}
+

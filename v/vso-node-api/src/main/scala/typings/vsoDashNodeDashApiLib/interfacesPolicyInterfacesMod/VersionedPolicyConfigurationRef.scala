@@ -12,3 +12,14 @@ trait VersionedPolicyConfigurationRef extends PolicyConfigurationRef {
   var revision: scala.Double
 }
 
+object VersionedPolicyConfigurationRef {
+  @scala.inline
+  def apply(id: scala.Double, revision: scala.Double, `type`: PolicyTypeRef, url: java.lang.String): VersionedPolicyConfigurationRef = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("revision")(revision)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[VersionedPolicyConfigurationRef]
+  }
+}
+

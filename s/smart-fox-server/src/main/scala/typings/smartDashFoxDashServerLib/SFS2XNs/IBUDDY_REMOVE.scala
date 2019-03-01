@@ -9,3 +9,12 @@ trait IBUDDY_REMOVE extends js.Object {
   var buddy: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSBuddy
 }
 
+object IBUDDY_REMOVE {
+  @scala.inline
+  def apply(buddy: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSBuddy): IBUDDY_REMOVE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buddy")(buddy)
+    __obj.asInstanceOf[IBUDDY_REMOVE]
+  }
+}
+

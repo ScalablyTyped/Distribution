@@ -16,3 +16,28 @@ trait FindOneOptions extends js.Object {
   var transform: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
 }
 
+object FindOneOptions {
+  @scala.inline
+  def apply(
+    children: scala.Int | scala.Double = null,
+    defaults: js.UndefOr[scala.Boolean] = js.undefined,
+    disableEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: meteorLib.MongoNs.FieldSpecifier = null,
+    reactive: js.UndefOr[scala.Boolean] = js.undefined,
+    skip: scala.Int | scala.Double = null,
+    sort: meteorLib.MongoNs.SortSpecifier = null,
+    transform: js.Function1[/* repeated */ js.Any, _] = null
+  ): FindOneOptions = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults)
+    if (!js.isUndefined(disableEvents)) __obj.updateDynamic("disableEvents")(disableEvents)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(reactive)) __obj.updateDynamic("reactive")(reactive)
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[FindOneOptions]
+  }
+}
+

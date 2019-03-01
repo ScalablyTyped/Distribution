@@ -12,3 +12,12 @@ trait SetBreakpointsActiveParameterType extends js.Object {
   var active: scala.Boolean
 }
 
+object SetBreakpointsActiveParameterType {
+  @scala.inline
+  def apply(active: scala.Boolean): SetBreakpointsActiveParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.asInstanceOf[SetBreakpointsActiveParameterType]
+  }
+}
+

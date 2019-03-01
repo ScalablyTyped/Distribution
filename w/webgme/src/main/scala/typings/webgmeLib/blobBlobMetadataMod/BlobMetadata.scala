@@ -8,3 +8,22 @@ import scala.scalajs.js.annotation._
 trait BlobMetadata
   extends webgmeLib.BlobsNs.BlobMetadata
 
+object BlobMetadata {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String,
+    context: webgmeLib.CoreNs.DataObject,
+    mime: java.lang.String,
+    name: java.lang.String,
+    size: scala.Double
+  ): BlobMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("mime")(mime)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[BlobMetadata]
+  }
+}
+

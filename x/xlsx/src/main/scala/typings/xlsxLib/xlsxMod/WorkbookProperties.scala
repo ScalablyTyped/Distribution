@@ -14,3 +14,18 @@ trait WorkbookProperties extends js.Object {
   var filterPrivacy: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WorkbookProperties {
+  @scala.inline
+  def apply(
+    CodeName: java.lang.String = null,
+    date1904: js.UndefOr[scala.Boolean] = js.undefined,
+    filterPrivacy: js.UndefOr[scala.Boolean] = js.undefined
+  ): WorkbookProperties = {
+    val __obj = js.Dynamic.literal()
+    if (CodeName != null) __obj.updateDynamic("CodeName")(CodeName)
+    if (!js.isUndefined(date1904)) __obj.updateDynamic("date1904")(date1904)
+    if (!js.isUndefined(filterPrivacy)) __obj.updateDynamic("filterPrivacy")(filterPrivacy)
+    __obj.asInstanceOf[WorkbookProperties]
+  }
+}
+

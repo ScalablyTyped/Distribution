@@ -23,3 +23,18 @@ trait AndroidDeviceCatalog extends js.Object {
   var versions: js.UndefOr[js.Array[AndroidVersion]] = js.undefined
 }
 
+object AndroidDeviceCatalog {
+  @scala.inline
+  def apply(
+    models: js.Array[AndroidModel] = null,
+    runtimeConfiguration: AndroidRuntimeConfiguration = null,
+    versions: js.Array[AndroidVersion] = null
+  ): AndroidDeviceCatalog = {
+    val __obj = js.Dynamic.literal()
+    if (models != null) __obj.updateDynamic("models")(models)
+    if (runtimeConfiguration != null) __obj.updateDynamic("runtimeConfiguration")(runtimeConfiguration)
+    if (versions != null) __obj.updateDynamic("versions")(versions)
+    __obj.asInstanceOf[AndroidDeviceCatalog]
+  }
+}
+

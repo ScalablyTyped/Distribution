@@ -139,3 +139,34 @@ trait Anon_ItemStyleLabelName extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ItemStyleLabelName {
+  @scala.inline
+  def apply(
+    itemStyle: Anon_BorderColorBorderType = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
+    name: java.lang.String = null,
+    symbol: java.lang.String = null,
+    symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolOffset: js.Array[_] = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | scala.Double = null,
+    value: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Anon_ItemStyleLabelName = {
+    val __obj = js.Dynamic.literal()
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ItemStyleLabelName]
+  }
+}
+

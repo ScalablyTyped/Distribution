@@ -12,3 +12,13 @@ trait ServiceAccount extends js.Object {
   var scopes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ServiceAccount {
+  @scala.inline
+  def apply(email: java.lang.String = null, scopes: js.Array[java.lang.String] = null): ServiceAccount = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    __obj.asInstanceOf[ServiceAccount]
+  }
+}
+

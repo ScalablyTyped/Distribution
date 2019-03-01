@@ -13,3 +13,22 @@ trait Anon_Abbr extends js.Object {
   var name: java.lang.String
 }
 
+object Anon_Abbr {
+  @scala.inline
+  def apply(
+    abbr: java.lang.String,
+    heading: scala.Double,
+    high: scala.Double,
+    low: scala.Double,
+    name: java.lang.String
+  ): Anon_Abbr = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abbr")(abbr)
+    __obj.updateDynamic("heading")(heading)
+    __obj.updateDynamic("high")(high)
+    __obj.updateDynamic("low")(low)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_Abbr]
+  }
+}
+

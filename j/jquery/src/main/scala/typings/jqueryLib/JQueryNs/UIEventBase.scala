@@ -25,3 +25,101 @@ trait UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends Trigg
   var view_UIEventBase: stdLib.Window
 }
 
+object UIEventBase {
+  @scala.inline
+  def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    bubbles: scala.Boolean,
+    cancelable: scala.Boolean,
+    currentTarget: TCurrentTarget,
+    data: TData,
+    delegateTarget: TDelegateTarget,
+    detail: scala.Double,
+    eventPhase: scala.Double,
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    isImmediatePropagationStopped: js.Function0[scala.Boolean],
+    isPropagationStopped: js.Function0[scala.Boolean],
+    preventDefault: js.Function0[scala.Unit],
+    stopImmediatePropagation: js.Function0[scala.Unit],
+    stopPropagation: js.Function0[scala.Unit],
+    target: TTarget,
+    timeStamp: scala.Double,
+    `type`: java.lang.String,
+    view: stdLib.Window,
+    altKey: js.UndefOr[scala.Boolean] = js.undefined,
+    button: scala.Int | scala.Double = null,
+    buttons: scala.Int | scala.Double = null,
+    changedTouches: stdLib.TouchList = null,
+    char: java.lang.String = null,
+    charCode: scala.Int | scala.Double = null,
+    clientX: scala.Int | scala.Double = null,
+    clientY: scala.Int | scala.Double = null,
+    ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    keyCode: scala.Int | scala.Double = null,
+    metaKey: js.UndefOr[scala.Boolean] = js.undefined,
+    namespace: java.lang.String = null,
+    offsetX: scala.Int | scala.Double = null,
+    offsetY: scala.Int | scala.Double = null,
+    originalEvent: jqueryLib._UIEvent = null,
+    pageX: scala.Int | scala.Double = null,
+    pageY: scala.Int | scala.Double = null,
+    pointerId: scala.Int | scala.Double = null,
+    pointerType: java.lang.String = null,
+    result: js.Any = null,
+    screenX: scala.Int | scala.Double = null,
+    screenY: scala.Int | scala.Double = null,
+    shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
+    targetTouches: stdLib.TouchList = null,
+    toElement: stdLib.Element = null,
+    touches: stdLib.TouchList = null,
+    which: scala.Int | scala.Double = null
+  ): UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bubbles")(bubbles)
+    __obj.updateDynamic("cancelable")(cancelable)
+    __obj.updateDynamic("currentTarget")(currentTarget.asInstanceOf[js.Any])
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("delegateTarget")(delegateTarget.asInstanceOf[js.Any])
+    __obj.updateDynamic("detail")(detail)
+    __obj.updateDynamic("eventPhase")(eventPhase)
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
+    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
+    __obj.updateDynamic("stopPropagation")(stopPropagation)
+    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("view")(view)
+    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
+    if (changedTouches != null) __obj.updateDynamic("changedTouches")(changedTouches)
+    if (char != null) __obj.updateDynamic("char")(char)
+    if (charCode != null) __obj.updateDynamic("charCode")(charCode.asInstanceOf[js.Any])
+    if (clientX != null) __obj.updateDynamic("clientX")(clientX.asInstanceOf[js.Any])
+    if (clientY != null) __obj.updateDynamic("clientY")(clientY.asInstanceOf[js.Any])
+    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(metaKey)) __obj.updateDynamic("metaKey")(metaKey)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
+    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    if (pageX != null) __obj.updateDynamic("pageX")(pageX.asInstanceOf[js.Any])
+    if (pageY != null) __obj.updateDynamic("pageY")(pageY.asInstanceOf[js.Any])
+    if (pointerId != null) __obj.updateDynamic("pointerId")(pointerId.asInstanceOf[js.Any])
+    if (pointerType != null) __obj.updateDynamic("pointerType")(pointerType)
+    if (result != null) __obj.updateDynamic("result")(result)
+    if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
+    if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])
+    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey)
+    if (targetTouches != null) __obj.updateDynamic("targetTouches")(targetTouches)
+    if (toElement != null) __obj.updateDynamic("toElement")(toElement)
+    if (touches != null) __obj.updateDynamic("touches")(touches)
+    if (which != null) __obj.updateDynamic("which")(which.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
+  }
+}
+

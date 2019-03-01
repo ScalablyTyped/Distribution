@@ -11,3 +11,18 @@ trait LastResultDetails extends js.Object {
   var runBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
 }
 
+object LastResultDetails {
+  @scala.inline
+  def apply(
+    dateCompleted: stdLib.Date,
+    duration: scala.Double,
+    runBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
+  ): LastResultDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dateCompleted")(dateCompleted)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("runBy")(runBy)
+    __obj.asInstanceOf[LastResultDetails]
+  }
+}
+

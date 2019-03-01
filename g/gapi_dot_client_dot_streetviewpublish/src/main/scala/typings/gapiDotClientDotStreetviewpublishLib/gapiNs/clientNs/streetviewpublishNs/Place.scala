@@ -13,3 +13,12 @@ trait Place extends js.Object {
   var placeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Place {
+  @scala.inline
+  def apply(placeId: java.lang.String = null): Place = {
+    val __obj = js.Dynamic.literal()
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
+    __obj.asInstanceOf[Place]
+  }
+}
+

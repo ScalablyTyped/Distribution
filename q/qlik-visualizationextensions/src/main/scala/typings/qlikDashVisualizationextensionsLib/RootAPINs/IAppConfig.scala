@@ -32,3 +32,24 @@ trait IAppConfig extends js.Object {
   var prefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IAppConfig {
+  @scala.inline
+  def apply(
+    port: java.lang.String | scala.Double,
+    host: java.lang.String = null,
+    identity: java.lang.String = null,
+    isSecure: js.UndefOr[scala.Boolean] = js.undefined,
+    openWithoutData: js.UndefOr[scala.Boolean] = js.undefined,
+    prefix: java.lang.String = null
+  ): IAppConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (identity != null) __obj.updateDynamic("identity")(identity)
+    if (!js.isUndefined(isSecure)) __obj.updateDynamic("isSecure")(isSecure)
+    if (!js.isUndefined(openWithoutData)) __obj.updateDynamic("openWithoutData")(openWithoutData)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[IAppConfig]
+  }
+}
+

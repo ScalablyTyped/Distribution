@@ -15,3 +15,12 @@ trait LeftProps[TLength] extends js.Object {
   var left: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.LeftProperty[TLength]]] = js.undefined
 }
 
+object LeftProps {
+  @scala.inline
+  def apply[TLength](left: ResponsiveValue[csstypeLib.csstypeMod.LeftProperty[TLength]] = null): LeftProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LeftProps[TLength]]
+  }
+}
+

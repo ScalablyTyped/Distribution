@@ -12,3 +12,20 @@ trait Anon_ActiveIndexCssModule extends js.Object {
   def onClickHandler(idx: scala.Double): scala.Unit
 }
 
+object Anon_ActiveIndexCssModule {
+  @scala.inline
+  def apply(
+    activeIndex: scala.Double,
+    items: js.Array[js.Object],
+    onClickHandler: js.Function1[scala.Double, scala.Unit],
+    cssModule: reactstrapLib.reactstrapMod.CSSModule = null
+  ): Anon_ActiveIndexCssModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activeIndex")(activeIndex)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("onClickHandler")(onClickHandler)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    __obj.asInstanceOf[Anon_ActiveIndexCssModule]
+  }
+}
+

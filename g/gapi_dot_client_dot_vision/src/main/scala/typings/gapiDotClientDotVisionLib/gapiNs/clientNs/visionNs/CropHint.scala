@@ -20,3 +20,18 @@ trait CropHint extends js.Object {
   var importanceFraction: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CropHint {
+  @scala.inline
+  def apply(
+    boundingPoly: BoundingPoly = null,
+    confidence: scala.Int | scala.Double = null,
+    importanceFraction: scala.Int | scala.Double = null
+  ): CropHint = {
+    val __obj = js.Dynamic.literal()
+    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly)
+    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (importanceFraction != null) __obj.updateDynamic("importanceFraction")(importanceFraction.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CropHint]
+  }
+}
+

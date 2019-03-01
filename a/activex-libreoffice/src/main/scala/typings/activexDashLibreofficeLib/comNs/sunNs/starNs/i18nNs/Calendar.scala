@@ -19,3 +19,26 @@ trait Calendar extends js.Object {
   var StartOfWeek: java.lang.String
 }
 
+object Calendar {
+  @scala.inline
+  def apply(
+    Days: activexDashInteropLib.SafeArray[CalendarItem],
+    Default: scala.Boolean,
+    Eras: activexDashInteropLib.SafeArray[CalendarItem],
+    MinimumNumberOfDaysForFirstWeek: scala.Double,
+    Months: activexDashInteropLib.SafeArray[CalendarItem],
+    Name: java.lang.String,
+    StartOfWeek: java.lang.String
+  ): Calendar = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Days")(Days)
+    __obj.updateDynamic("Default")(Default)
+    __obj.updateDynamic("Eras")(Eras)
+    __obj.updateDynamic("MinimumNumberOfDaysForFirstWeek")(MinimumNumberOfDaysForFirstWeek)
+    __obj.updateDynamic("Months")(Months)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("StartOfWeek")(StartOfWeek)
+    __obj.asInstanceOf[Calendar]
+  }
+}
+

@@ -9,3 +9,12 @@ trait BindingInstruction extends js.Object {
   var applyBindings: scala.Boolean
 }
 
+object BindingInstruction {
+  @scala.inline
+  def apply(applyBindings: scala.Boolean): BindingInstruction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applyBindings")(applyBindings)
+    __obj.asInstanceOf[BindingInstruction]
+  }
+}
+

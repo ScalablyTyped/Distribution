@@ -25,3 +25,12 @@ trait MML2jaxPreprocessor extends js.Object {
   var preview: js.UndefOr[js.Any] = js.undefined
 }
 
+object MML2jaxPreprocessor {
+  @scala.inline
+  def apply(preview: js.Any = null): MML2jaxPreprocessor = {
+    val __obj = js.Dynamic.literal()
+    if (preview != null) __obj.updateDynamic("preview")(preview)
+    __obj.asInstanceOf[MML2jaxPreprocessor]
+  }
+}
+

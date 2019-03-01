@@ -22,3 +22,16 @@ trait Anon_Duration extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Duration {
+  @scala.inline
+  def apply(
+    duration: scala.Int | scala.Double = null,
+    timingFunc: baiduDashAppLib.baiduDashAppLibStrings.linear | baiduDashAppLib.baiduDashAppLibStrings.easeIn | baiduDashAppLib.baiduDashAppLibStrings.easeOut | baiduDashAppLib.baiduDashAppLibStrings.easeInOut = null
+  ): Anon_Duration = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (timingFunc != null) __obj.updateDynamic("timingFunc")(timingFunc.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Duration]
+  }
+}
+

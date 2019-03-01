@@ -303,3 +303,79 @@ trait XPropertyHandler
   def suspend(Suspend: scala.Boolean): scala.Boolean
 }
 
+object XPropertyHandler {
+  @scala.inline
+  def apply(
+    ActuatingProperties: activexDashInteropLib.SafeArray[java.lang.String],
+    SupersededProperties: activexDashInteropLib.SafeArray[java.lang.String],
+    SupportedProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    acquire: js.Function0[scala.Unit],
+    actuatingPropertyChanged: js.Function5[java.lang.String, js.Any, js.Any, XObjectInspectorUI, scala.Boolean, scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertyChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    convertToControlValue: js.Function3[java.lang.String, js.Any, activexDashLibreofficeLib.`type`, js.Any],
+    convertToPropertyValue: js.Function2[java.lang.String, js.Any, js.Any],
+    describePropertyLine: js.Function2[java.lang.String, XPropertyControlFactory, LineDescriptor],
+    dispose: js.Function0[scala.Unit],
+    getActuatingProperties: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getPropertyState: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState
+    ],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getSupersededProperties: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getSupportedProperties: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+    ],
+    inspect: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    isComposable: js.Function1[java.lang.String, scala.Boolean],
+    onInteractivePropertySelection: js.Function4[
+      java.lang.String, 
+      scala.Boolean, 
+      js.Array[_], 
+      XObjectInspectorUI, 
+      InteractiveSelectionResult
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertyChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    suspend: js.Function1[scala.Boolean, scala.Boolean]
+  ): XPropertyHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActuatingProperties")(ActuatingProperties)
+    __obj.updateDynamic("SupersededProperties")(SupersededProperties)
+    __obj.updateDynamic("SupportedProperties")(SupportedProperties)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("actuatingPropertyChanged")(actuatingPropertyChanged)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("convertToControlValue")(convertToControlValue)
+    __obj.updateDynamic("convertToPropertyValue")(convertToPropertyValue)
+    __obj.updateDynamic("describePropertyLine")(describePropertyLine)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getActuatingProperties")(getActuatingProperties)
+    __obj.updateDynamic("getPropertyState")(getPropertyState)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getSupersededProperties")(getSupersededProperties)
+    __obj.updateDynamic("getSupportedProperties")(getSupportedProperties)
+    __obj.updateDynamic("inspect")(inspect)
+    __obj.updateDynamic("isComposable")(isComposable)
+    __obj.updateDynamic("onInteractivePropertySelection")(onInteractivePropertySelection)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("suspend")(suspend)
+    __obj.asInstanceOf[XPropertyHandler]
+  }
+}
+

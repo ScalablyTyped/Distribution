@@ -53,3 +53,38 @@ trait SmartCollection extends ProductCollection {
   var rules: js.UndefOr[js.Array[shopifyDashPrimeLib.Anon_Column]] = js.undefined
 }
 
+object SmartCollection {
+  @scala.inline
+  def apply(
+    admin_graphql_api_id: java.lang.String = null,
+    body_html: java.lang.String = null,
+    disjunctive: js.UndefOr[scala.Boolean] = js.undefined,
+    handle: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    image: shopifyDashPrimeLib.Anon_Attachment = null,
+    published_at: java.lang.String = null,
+    published_scope: java.lang.String = null,
+    rules: js.Array[shopifyDashPrimeLib.Anon_Column] = null,
+    sort_order: java.lang.String = null,
+    template_suffix: java.lang.String = null,
+    title: java.lang.String = null,
+    updated_at: java.lang.String = null
+  ): SmartCollection = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (body_html != null) __obj.updateDynamic("body_html")(body_html)
+    if (!js.isUndefined(disjunctive)) __obj.updateDynamic("disjunctive")(disjunctive)
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (published_at != null) __obj.updateDynamic("published_at")(published_at)
+    if (published_scope != null) __obj.updateDynamic("published_scope")(published_scope)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (sort_order != null) __obj.updateDynamic("sort_order")(sort_order)
+    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[SmartCollection]
+  }
+}
+

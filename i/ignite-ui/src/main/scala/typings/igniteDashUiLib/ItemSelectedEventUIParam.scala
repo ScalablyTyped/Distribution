@@ -24,3 +24,15 @@ trait ItemSelectedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ItemSelectedEventUIParam {
+  @scala.inline
+  def apply(calendar: js.Any = null, dateFromPicker: js.Any = null, item: js.Any = null, owner: js.Any = null): ItemSelectedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (calendar != null) __obj.updateDynamic("calendar")(calendar)
+    if (dateFromPicker != null) __obj.updateDynamic("dateFromPicker")(dateFromPicker)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ItemSelectedEventUIParam]
+  }
+}
+

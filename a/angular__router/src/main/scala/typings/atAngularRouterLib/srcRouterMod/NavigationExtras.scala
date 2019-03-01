@@ -120,3 +120,30 @@ trait NavigationExtras extends js.Object {
   var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object NavigationExtras {
+  @scala.inline
+  def apply(
+    fragment: java.lang.String = null,
+    preserveFragment: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveQueryParams: js.UndefOr[scala.Boolean] = js.undefined,
+    queryParams: atAngularRouterLib.srcSharedMod.Params = null,
+    queryParamsHandling: atAngularRouterLib.srcConfigMod.QueryParamsHandling = null,
+    relativeTo: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRoute = null,
+    replaceUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    skipLocationChange: js.UndefOr[scala.Boolean] = js.undefined,
+    state: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): NavigationExtras = {
+    val __obj = js.Dynamic.literal()
+    if (fragment != null) __obj.updateDynamic("fragment")(fragment)
+    if (!js.isUndefined(preserveFragment)) __obj.updateDynamic("preserveFragment")(preserveFragment)
+    if (!js.isUndefined(preserveQueryParams)) __obj.updateDynamic("preserveQueryParams")(preserveQueryParams)
+    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)
+    if (queryParamsHandling != null) __obj.updateDynamic("queryParamsHandling")(queryParamsHandling)
+    if (relativeTo != null) __obj.updateDynamic("relativeTo")(relativeTo)
+    if (!js.isUndefined(replaceUrl)) __obj.updateDynamic("replaceUrl")(replaceUrl)
+    if (!js.isUndefined(skipLocationChange)) __obj.updateDynamic("skipLocationChange")(skipLocationChange)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[NavigationExtras]
+  }
+}
+

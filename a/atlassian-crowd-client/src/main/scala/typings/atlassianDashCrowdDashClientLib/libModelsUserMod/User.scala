@@ -17,3 +17,30 @@ trait User extends js.Object {
   def toCrowd(): UserObj
 }
 
+object User {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    attributes: org.scalablytyped.runtime.StringDictionary[js.Any],
+    displayname: java.lang.String,
+    email: java.lang.String,
+    firstname: java.lang.String,
+    lastname: java.lang.String,
+    toCrowd: js.Function0[UserObj],
+    username: java.lang.String,
+    password: java.lang.String = null
+  ): User = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("attributes")(attributes)
+    __obj.updateDynamic("displayname")(displayname)
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("firstname")(firstname)
+    __obj.updateDynamic("lastname")(lastname)
+    __obj.updateDynamic("toCrowd")(toCrowd)
+    __obj.updateDynamic("username")(username)
+    if (password != null) __obj.updateDynamic("password")(password)
+    __obj.asInstanceOf[User]
+  }
+}
+

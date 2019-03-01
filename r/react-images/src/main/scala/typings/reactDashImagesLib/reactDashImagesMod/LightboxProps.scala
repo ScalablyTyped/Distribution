@@ -109,3 +109,63 @@ trait LightboxProps extends js.Object {
   def onClose(): scala.Unit
 }
 
+object LightboxProps {
+  @scala.inline
+  def apply(
+    images: js.Array[Image],
+    onClose: js.Function0[scala.Unit],
+    backdropClosesModal: js.UndefOr[scala.Boolean] = js.undefined,
+    closeButtonTitle: java.lang.String = null,
+    currentImage: scala.Int | scala.Double = null,
+    customControls: js.Array[reactLib.reactMod.ReactNs.ReactHTMLElement[_]] = null,
+    enableKeyboardInput: js.UndefOr[scala.Boolean] = js.undefined,
+    imageCountSeparator: java.lang.String = null,
+    isOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    leftArrowTitle: java.lang.String = null,
+    onClickImage: js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLImageElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onClickNext: js.Function0[scala.Unit] = null,
+    onClickPrev: js.Function0[scala.Unit] = null,
+    onClickThumbnail: js.Function1[/* index */ scala.Double, scala.Unit] = null,
+    preloadNextImage: js.UndefOr[scala.Boolean] = js.undefined,
+    preventScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    rightArrowTitle: java.lang.String = null,
+    showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showImageCount: js.UndefOr[scala.Boolean] = js.undefined,
+    showThumbnails: js.UndefOr[scala.Boolean] = js.undefined,
+    spinner: js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    spinnerColor: java.lang.String = null,
+    spinnerSize: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): LightboxProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("images")(images)
+    __obj.updateDynamic("onClose")(onClose)
+    if (!js.isUndefined(backdropClosesModal)) __obj.updateDynamic("backdropClosesModal")(backdropClosesModal)
+    if (closeButtonTitle != null) __obj.updateDynamic("closeButtonTitle")(closeButtonTitle)
+    if (currentImage != null) __obj.updateDynamic("currentImage")(currentImage.asInstanceOf[js.Any])
+    if (customControls != null) __obj.updateDynamic("customControls")(customControls)
+    if (!js.isUndefined(enableKeyboardInput)) __obj.updateDynamic("enableKeyboardInput")(enableKeyboardInput)
+    if (imageCountSeparator != null) __obj.updateDynamic("imageCountSeparator")(imageCountSeparator)
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (leftArrowTitle != null) __obj.updateDynamic("leftArrowTitle")(leftArrowTitle)
+    if (onClickImage != null) __obj.updateDynamic("onClickImage")(onClickImage)
+    if (onClickNext != null) __obj.updateDynamic("onClickNext")(onClickNext)
+    if (onClickPrev != null) __obj.updateDynamic("onClickPrev")(onClickPrev)
+    if (onClickThumbnail != null) __obj.updateDynamic("onClickThumbnail")(onClickThumbnail)
+    if (!js.isUndefined(preloadNextImage)) __obj.updateDynamic("preloadNextImage")(preloadNextImage)
+    if (!js.isUndefined(preventScroll)) __obj.updateDynamic("preventScroll")(preventScroll)
+    if (rightArrowTitle != null) __obj.updateDynamic("rightArrowTitle")(rightArrowTitle)
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
+    if (!js.isUndefined(showImageCount)) __obj.updateDynamic("showImageCount")(showImageCount)
+    if (!js.isUndefined(showThumbnails)) __obj.updateDynamic("showThumbnails")(showThumbnails)
+    if (spinner != null) __obj.updateDynamic("spinner")(spinner)
+    if (spinnerColor != null) __obj.updateDynamic("spinnerColor")(spinnerColor)
+    if (spinnerSize != null) __obj.updateDynamic("spinnerSize")(spinnerSize.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LightboxProps]
+  }
+}
+

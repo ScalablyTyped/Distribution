@@ -12,3 +12,13 @@ trait Options extends js.Object {
   val threshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(includeAA: js.UndefOr[scala.Boolean] = js.undefined, threshold: scala.Int | scala.Double = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeAA)) __obj.updateDynamic("includeAA")(includeAA)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

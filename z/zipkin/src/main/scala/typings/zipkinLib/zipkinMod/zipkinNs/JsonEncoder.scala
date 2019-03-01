@@ -10,3 +10,12 @@ trait JsonEncoder extends js.Object {
   def encode(span: zipkinLib.zipkinMod.zipkinNs.modelNs.Span): java.lang.String
 }
 
+object JsonEncoder {
+  @scala.inline
+  def apply(encode: js.Function1[zipkinLib.zipkinMod.zipkinNs.modelNs.Span, java.lang.String]): JsonEncoder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encode")(encode)
+    __obj.asInstanceOf[JsonEncoder]
+  }
+}
+

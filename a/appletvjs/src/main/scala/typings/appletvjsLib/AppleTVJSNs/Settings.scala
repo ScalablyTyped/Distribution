@@ -18,3 +18,20 @@ trait Settings extends js.Object {
   def onRestrictionsChange(): scala.Unit
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    language: java.lang.String,
+    onRestrictionsChange: js.Function0[scala.Unit],
+    restrictions: Restrictions,
+    storefrontCountryCode: java.lang.String
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("onRestrictionsChange")(onRestrictionsChange)
+    __obj.updateDynamic("restrictions")(restrictions)
+    __obj.updateDynamic("storefrontCountryCode")(storefrontCountryCode)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

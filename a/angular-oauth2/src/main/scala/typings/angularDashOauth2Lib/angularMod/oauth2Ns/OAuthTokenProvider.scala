@@ -9,3 +9,12 @@ trait OAuthTokenProvider extends js.Object {
   def configure(params: OAuthTokenConfig): OAuthTokenConfig
 }
 
+object OAuthTokenProvider {
+  @scala.inline
+  def apply(configure: js.Function1[OAuthTokenConfig, OAuthTokenConfig]): OAuthTokenProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configure")(configure)
+    __obj.asInstanceOf[OAuthTokenProvider]
+  }
+}
+

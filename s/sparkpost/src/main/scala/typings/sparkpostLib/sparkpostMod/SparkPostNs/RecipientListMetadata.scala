@@ -12,3 +12,20 @@ trait RecipientListMetadata extends js.Object {
   var total_rejected_recipients: scala.Double
 }
 
+object RecipientListMetadata {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    total_accepted_recipients: scala.Double,
+    total_rejected_recipients: scala.Double
+  ): RecipientListMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("total_accepted_recipients")(total_accepted_recipients)
+    __obj.updateDynamic("total_rejected_recipients")(total_rejected_recipients)
+    __obj.asInstanceOf[RecipientListMetadata]
+  }
+}
+

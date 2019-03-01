@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Podium
-  extends /**
+  extends podiumLib.podiumMod.PodiumNs._Events
+     with /**
   * Creates a new podium emitter
   * @param events  if present, the value is passed to podium.registerEvent().
   */

@@ -23,3 +23,18 @@ trait ServerMethodOptions extends js.Object {
   var generateKey: js.UndefOr[js.Function1[/* repeated */ js.Any, java.lang.String | scala.Null]] = js.undefined
 }
 
+object ServerMethodOptions {
+  @scala.inline
+  def apply(
+    bind: js.Object = null,
+    cache: ServerMethodCache = null,
+    generateKey: js.Function1[/* repeated */ js.Any, java.lang.String | scala.Null] = null
+  ): ServerMethodOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bind != null) __obj.updateDynamic("bind")(bind)
+    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (generateKey != null) __obj.updateDynamic("generateKey")(generateKey)
+    __obj.asInstanceOf[ServerMethodOptions]
+  }
+}
+

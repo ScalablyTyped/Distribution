@@ -16,3 +16,13 @@ trait ListBillingAccountsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListBillingAccountsResponse {
+  @scala.inline
+  def apply(billingAccounts: js.Array[BillingAccount] = null, nextPageToken: java.lang.String = null): ListBillingAccountsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (billingAccounts != null) __obj.updateDynamic("billingAccounts")(billingAccounts)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListBillingAccountsResponse]
+  }
+}
+

@@ -16,3 +16,18 @@ trait ExpandVetoException
   var Event: TreeExpansionEvent
 }
 
+object ExpandVetoException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Event: TreeExpansionEvent,
+    Message: java.lang.String
+  ): ExpandVetoException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Event")(Event)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[ExpandVetoException]
+  }
+}
+

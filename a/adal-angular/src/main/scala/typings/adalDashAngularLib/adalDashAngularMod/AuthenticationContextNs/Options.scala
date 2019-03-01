@@ -89,3 +89,50 @@ trait Options extends js.Object {
   var tenant: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    clientId: java.lang.String,
+    anonymousEndpoints: js.Array[java.lang.String] = null,
+    cacheLocation: adalDashAngularLib.adalDashAngularLibStrings.localStorage | adalDashAngularLib.adalDashAngularLibStrings.sessionStorage = null,
+    callback: TokenCallback = null,
+    correlationId: java.lang.String = null,
+    displayCall: js.Function1[/* url */ java.lang.String, scala.Unit] = null,
+    endpoints: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    expireOffsetSeconds: scala.Int | scala.Double = null,
+    extraQueryParameter: java.lang.String = null,
+    instance: java.lang.String = null,
+    loadFrameTimeout: scala.Int | scala.Double = null,
+    localLoginUrl: java.lang.String = null,
+    logOutUri: java.lang.String = null,
+    loginResource: java.lang.String = null,
+    navigateToLoginRequestUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    popUp: js.UndefOr[scala.Boolean] = js.undefined,
+    postLogoutRedirectUri: java.lang.String = null,
+    redirectUri: java.lang.String = null,
+    tenant: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientId")(clientId)
+    if (anonymousEndpoints != null) __obj.updateDynamic("anonymousEndpoints")(anonymousEndpoints)
+    if (cacheLocation != null) __obj.updateDynamic("cacheLocation")(cacheLocation.asInstanceOf[js.Any])
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
+    if (displayCall != null) __obj.updateDynamic("displayCall")(displayCall)
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
+    if (expireOffsetSeconds != null) __obj.updateDynamic("expireOffsetSeconds")(expireOffsetSeconds.asInstanceOf[js.Any])
+    if (extraQueryParameter != null) __obj.updateDynamic("extraQueryParameter")(extraQueryParameter)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (loadFrameTimeout != null) __obj.updateDynamic("loadFrameTimeout")(loadFrameTimeout.asInstanceOf[js.Any])
+    if (localLoginUrl != null) __obj.updateDynamic("localLoginUrl")(localLoginUrl)
+    if (logOutUri != null) __obj.updateDynamic("logOutUri")(logOutUri)
+    if (loginResource != null) __obj.updateDynamic("loginResource")(loginResource)
+    if (!js.isUndefined(navigateToLoginRequestUrl)) __obj.updateDynamic("navigateToLoginRequestUrl")(navigateToLoginRequestUrl)
+    if (!js.isUndefined(popUp)) __obj.updateDynamic("popUp")(popUp)
+    if (postLogoutRedirectUri != null) __obj.updateDynamic("postLogoutRedirectUri")(postLogoutRedirectUri)
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (tenant != null) __obj.updateDynamic("tenant")(tenant)
+    __obj.asInstanceOf[Options]
+  }
+}
+

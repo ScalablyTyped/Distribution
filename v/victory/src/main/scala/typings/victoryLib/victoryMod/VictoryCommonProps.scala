@@ -89,3 +89,32 @@ trait VictoryCommonProps extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VictoryCommonProps {
+  @scala.inline
+  def apply(
+    animate: AnimatePropTypeInterface = null,
+    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    height: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: VictoryThemeDefinition = null,
+    width: scala.Int | scala.Double = null
+  ): VictoryCommonProps = {
+    val __obj = js.Dynamic.literal()
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryCommonProps]
+  }
+}
+

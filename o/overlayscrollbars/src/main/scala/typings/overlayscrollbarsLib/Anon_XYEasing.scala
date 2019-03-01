@@ -10,3 +10,16 @@ trait Anon_XYEasing extends js.Object {
   var y: js.UndefOr[overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Easing] = js.undefined
 }
 
+object Anon_XYEasing {
+  @scala.inline
+  def apply(
+    x: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Easing = null,
+    y: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Easing = null
+  ): Anon_XYEasing = {
+    val __obj = js.Dynamic.literal()
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_XYEasing]
+  }
+}
+

@@ -18,3 +18,24 @@ trait ActiveXObject extends js.Object {
   ): scala.Unit
 }
 
+object ActiveXObject {
+  @scala.inline
+  def apply(
+    on: js.Function4[
+      activexDashStdoleLib.stdoleNs.StdFont, 
+      activexDashStdoleLib.activexDashStdoleLibStrings.FontChanged, 
+      js.Array[activexDashStdoleLib.activexDashStdoleLibStrings.PropertyName], 
+      js.ThisFunction1[
+        /* this */ activexDashStdoleLib.stdoleNs.StdFont, 
+        /* parameter */ Anon_PropertyName, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): ActiveXObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[ActiveXObject]
+  }
+}
+

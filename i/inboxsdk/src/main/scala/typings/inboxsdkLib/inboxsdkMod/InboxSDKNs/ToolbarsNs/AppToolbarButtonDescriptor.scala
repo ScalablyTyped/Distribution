@@ -14,3 +14,24 @@ trait AppToolbarButtonDescriptor extends js.Object {
   def onClick(event: AppToolbarButtonEvent): scala.Unit
 }
 
+object AppToolbarButtonDescriptor {
+  @scala.inline
+  def apply(
+    iconUrl: java.lang.String,
+    onClick: js.Function1[AppToolbarButtonEvent, scala.Unit],
+    title: java.lang.String,
+    arrowColor: java.lang.String = null,
+    iconClass: java.lang.String = null,
+    titleClass: java.lang.String = null
+  ): AppToolbarButtonDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iconUrl")(iconUrl)
+    __obj.updateDynamic("onClick")(onClick)
+    __obj.updateDynamic("title")(title)
+    if (arrowColor != null) __obj.updateDynamic("arrowColor")(arrowColor)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    if (titleClass != null) __obj.updateDynamic("titleClass")(titleClass)
+    __obj.asInstanceOf[AppToolbarButtonDescriptor]
+  }
+}
+

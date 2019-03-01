@@ -33,3 +33,24 @@ trait GooglePlayAnalytics extends js.Object {
   var utmTerm: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePlayAnalytics {
+  @scala.inline
+  def apply(
+    gclid: java.lang.String = null,
+    utmCampaign: java.lang.String = null,
+    utmContent: java.lang.String = null,
+    utmMedium: java.lang.String = null,
+    utmSource: java.lang.String = null,
+    utmTerm: java.lang.String = null
+  ): GooglePlayAnalytics = {
+    val __obj = js.Dynamic.literal()
+    if (gclid != null) __obj.updateDynamic("gclid")(gclid)
+    if (utmCampaign != null) __obj.updateDynamic("utmCampaign")(utmCampaign)
+    if (utmContent != null) __obj.updateDynamic("utmContent")(utmContent)
+    if (utmMedium != null) __obj.updateDynamic("utmMedium")(utmMedium)
+    if (utmSource != null) __obj.updateDynamic("utmSource")(utmSource)
+    if (utmTerm != null) __obj.updateDynamic("utmTerm")(utmTerm)
+    __obj.asInstanceOf[GooglePlayAnalytics]
+  }
+}
+

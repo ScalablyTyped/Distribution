@@ -28,3 +28,52 @@ trait HtmlOutput extends js.Object {
   def setXFrameOptionsMode(mode: XFrameOptionsMode): HtmlOutput
 }
 
+object HtmlOutput {
+  @scala.inline
+  def apply(
+    addMetaTag: js.Function2[java.lang.String, java.lang.String, HtmlOutput],
+    append: js.Function1[java.lang.String, HtmlOutput],
+    appendUntrusted: js.Function1[java.lang.String, HtmlOutput],
+    asTemplate: js.Function0[HtmlTemplate],
+    clear: js.Function0[HtmlOutput],
+    getAs: js.Function1[java.lang.String, googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
+    getBlob: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob],
+    getContent: js.Function0[java.lang.String],
+    getFaviconUrl: js.Function0[java.lang.String],
+    getHeight: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getMetaTags: js.Function0[js.Array[HtmlOutputMetaTag]],
+    getTitle: js.Function0[java.lang.String],
+    getWidth: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    setContent: js.Function1[java.lang.String, HtmlOutput],
+    setFaviconUrl: js.Function1[java.lang.String, HtmlOutput],
+    setHeight: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, HtmlOutput],
+    setSandboxMode: js.Function1[SandboxMode, HtmlOutput],
+    setTitle: js.Function1[java.lang.String, HtmlOutput],
+    setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, HtmlOutput],
+    setXFrameOptionsMode: js.Function1[XFrameOptionsMode, HtmlOutput]
+  ): HtmlOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addMetaTag")(addMetaTag)
+    __obj.updateDynamic("append")(append)
+    __obj.updateDynamic("appendUntrusted")(appendUntrusted)
+    __obj.updateDynamic("asTemplate")(asTemplate)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("getAs")(getAs)
+    __obj.updateDynamic("getBlob")(getBlob)
+    __obj.updateDynamic("getContent")(getContent)
+    __obj.updateDynamic("getFaviconUrl")(getFaviconUrl)
+    __obj.updateDynamic("getHeight")(getHeight)
+    __obj.updateDynamic("getMetaTags")(getMetaTags)
+    __obj.updateDynamic("getTitle")(getTitle)
+    __obj.updateDynamic("getWidth")(getWidth)
+    __obj.updateDynamic("setContent")(setContent)
+    __obj.updateDynamic("setFaviconUrl")(setFaviconUrl)
+    __obj.updateDynamic("setHeight")(setHeight)
+    __obj.updateDynamic("setSandboxMode")(setSandboxMode)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("setWidth")(setWidth)
+    __obj.updateDynamic("setXFrameOptionsMode")(setXFrameOptionsMode)
+    __obj.asInstanceOf[HtmlOutput]
+  }
+}
+

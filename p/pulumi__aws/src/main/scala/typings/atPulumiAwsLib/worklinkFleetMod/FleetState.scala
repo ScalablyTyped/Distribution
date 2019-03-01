@@ -54,3 +54,34 @@ trait FleetState extends js.Object {
   val optimizeForEndUserLocation: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 
+object FleetState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    auditStreamArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    companyCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    createdTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    deviceCaCertificate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    displayName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    identityProvider: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SamlMetadataType] = null,
+    lastUpdatedTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    network: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString] = null,
+    optimizeForEndUserLocation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): FleetState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (auditStreamArn != null) __obj.updateDynamic("auditStreamArn")(auditStreamArn.asInstanceOf[js.Any])
+    if (companyCode != null) __obj.updateDynamic("companyCode")(companyCode.asInstanceOf[js.Any])
+    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
+    if (deviceCaCertificate != null) __obj.updateDynamic("deviceCaCertificate")(deviceCaCertificate.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (identityProvider != null) __obj.updateDynamic("identityProvider")(identityProvider.asInstanceOf[js.Any])
+    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
+    if (optimizeForEndUserLocation != null) __obj.updateDynamic("optimizeForEndUserLocation")(optimizeForEndUserLocation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FleetState]
+  }
+}
+

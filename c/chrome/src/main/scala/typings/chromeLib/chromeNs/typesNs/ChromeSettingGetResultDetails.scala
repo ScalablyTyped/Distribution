@@ -24,3 +24,18 @@ trait ChromeSettingGetResultDetails extends js.Object {
   var value: js.Any
 }
 
+object ChromeSettingGetResultDetails {
+  @scala.inline
+  def apply(
+    levelOfControl: java.lang.String,
+    value: js.Any,
+    incognitoSpecific: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChromeSettingGetResultDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("levelOfControl")(levelOfControl)
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(incognitoSpecific)) __obj.updateDynamic("incognitoSpecific")(incognitoSpecific)
+    __obj.asInstanceOf[ChromeSettingGetResultDetails]
+  }
+}
+

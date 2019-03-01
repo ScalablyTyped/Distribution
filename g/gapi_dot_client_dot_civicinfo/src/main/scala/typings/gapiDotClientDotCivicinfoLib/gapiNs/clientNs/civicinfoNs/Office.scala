@@ -27,3 +27,24 @@ trait Office extends js.Object {
   var sources: js.UndefOr[js.Array[Source]] = js.undefined
 }
 
+object Office {
+  @scala.inline
+  def apply(
+    divisionId: java.lang.String = null,
+    levels: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    officialIndices: js.Array[scala.Double] = null,
+    roles: js.Array[java.lang.String] = null,
+    sources: js.Array[Source] = null
+  ): Office = {
+    val __obj = js.Dynamic.literal()
+    if (divisionId != null) __obj.updateDynamic("divisionId")(divisionId)
+    if (levels != null) __obj.updateDynamic("levels")(levels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (officialIndices != null) __obj.updateDynamic("officialIndices")(officialIndices)
+    if (roles != null) __obj.updateDynamic("roles")(roles)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    __obj.asInstanceOf[Office]
+  }
+}
+

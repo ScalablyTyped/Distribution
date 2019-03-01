@@ -20,3 +20,24 @@ trait XScenarioEnhanced
   def getRanges(): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
 }
 
+object XScenarioEnhanced {
+  @scala.inline
+  def apply(
+    Ranges: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    acquire: js.Function0[scala.Unit],
+    getRanges: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XScenarioEnhanced = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Ranges")(Ranges)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getRanges")(getRanges)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XScenarioEnhanced]
+  }
+}
+

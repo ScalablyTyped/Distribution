@@ -20,3 +20,18 @@ trait Palette extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Palette {
+  @scala.inline
+  def apply(
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    items: js.Array[_] = null,
+    name: java.lang.String = null
+  ): Palette = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Palette]
+  }
+}
+

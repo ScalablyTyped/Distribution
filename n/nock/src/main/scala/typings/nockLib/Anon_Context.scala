@@ -10,3 +10,13 @@ trait Anon_Context extends js.Object {
   def nockDone(): scala.Unit
 }
 
+object Anon_Context {
+  @scala.inline
+  def apply(context: nockLib.nockMod.nockNs.NockBackContext, nockDone: js.Function0[scala.Unit]): Anon_Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("nockDone")(nockDone)
+    __obj.asInstanceOf[Anon_Context]
+  }
+}
+

@@ -13,3 +13,22 @@ trait ICachedFileUpdaterUI extends js.Object {
   var updateTarget: CachedFileTarget
 }
 
+object ICachedFileUpdaterUI {
+  @scala.inline
+  def apply(
+    onfileupdaterequested: js.Any,
+    onuirequested: js.Any,
+    title: java.lang.String,
+    uIStatus: UIStatus,
+    updateTarget: CachedFileTarget
+  ): ICachedFileUpdaterUI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onfileupdaterequested")(onfileupdaterequested)
+    __obj.updateDynamic("onuirequested")(onuirequested)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("uIStatus")(uIStatus)
+    __obj.updateDynamic("updateTarget")(updateTarget)
+    __obj.asInstanceOf[ICachedFileUpdaterUI]
+  }
+}
+

@@ -12,3 +12,20 @@ trait InvokeApiOptions extends js.Object {
   var parameters: js.UndefOr[js.Object] = js.undefined
 }
 
+object InvokeApiOptions {
+  @scala.inline
+  def apply(
+    body: js.Any = null,
+    headers: js.Object = null,
+    method: java.lang.String = null,
+    parameters: js.Object = null
+  ): InvokeApiOptions = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.asInstanceOf[InvokeApiOptions]
+  }
+}
+

@@ -101,3 +101,53 @@ trait ISubscription
   var trial_start: scala.Double | scala.Null
 }
 
+object ISubscription {
+  @scala.inline
+  def apply(
+    application_fee_percent: scala.Double,
+    billing: SubscriptionBilling,
+    cancel_at_period_end: scala.Boolean,
+    created: scala.Double,
+    current_period_end: scala.Double,
+    current_period_start: scala.Double,
+    customer: java.lang.String | stripeLib.stripeMod.StripeNs.customersNs.ICustomer,
+    id: java.lang.String,
+    items: stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem],
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.subscription,
+    quantity: scala.Double,
+    start: scala.Double,
+    status: SubscriptionStatus,
+    tax_percent: scala.Double,
+    canceled_at: scala.Int | scala.Double = null,
+    discount: stripeLib.stripeMod.StripeNs.couponsNs.IDiscount = null,
+    ended_at: scala.Int | scala.Double = null,
+    plan: stripeLib.stripeMod.StripeNs.plansNs.IPlan = null,
+    trial_end: scala.Int | scala.Double = null,
+    trial_start: scala.Int | scala.Double = null
+  ): ISubscription = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("application_fee_percent")(application_fee_percent)
+    __obj.updateDynamic("billing")(billing)
+    __obj.updateDynamic("cancel_at_period_end")(cancel_at_period_end)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("current_period_end")(current_period_end)
+    __obj.updateDynamic("current_period_start")(current_period_start)
+    __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("quantity")(quantity)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("tax_percent")(tax_percent)
+    if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
+    if (discount != null) __obj.updateDynamic("discount")(discount)
+    if (ended_at != null) __obj.updateDynamic("ended_at")(ended_at.asInstanceOf[js.Any])
+    if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
+    if (trial_start != null) __obj.updateDynamic("trial_start")(trial_start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISubscription]
+  }
+}
+

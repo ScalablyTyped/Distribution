@@ -17,3 +17,12 @@ trait DeploymentsStopRequest extends js.Object {
   var fingerprint: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeploymentsStopRequest {
+  @scala.inline
+  def apply(fingerprint: java.lang.String = null): DeploymentsStopRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    __obj.asInstanceOf[DeploymentsStopRequest]
+  }
+}
+

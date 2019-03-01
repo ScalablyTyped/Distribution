@@ -19,3 +19,13 @@ trait ListPhotosResponse extends js.Object {
   var photos: js.UndefOr[js.Array[Photo]] = js.undefined
 }
 
+object ListPhotosResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, photos: js.Array[Photo] = null): ListPhotosResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (photos != null) __obj.updateDynamic("photos")(photos)
+    __obj.asInstanceOf[ListPhotosResponse]
+  }
+}
+

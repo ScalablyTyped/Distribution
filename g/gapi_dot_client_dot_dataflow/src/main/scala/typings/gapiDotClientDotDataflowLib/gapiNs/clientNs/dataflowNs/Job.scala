@@ -138,3 +138,52 @@ trait Job extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Job {
+  @scala.inline
+  def apply(
+    clientRequestId: java.lang.String = null,
+    createTime: java.lang.String = null,
+    currentState: java.lang.String = null,
+    currentStateTime: java.lang.String = null,
+    environment: Environment = null,
+    executionInfo: JobExecutionInfo = null,
+    id: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    location: java.lang.String = null,
+    name: java.lang.String = null,
+    pipelineDescription: PipelineDescription = null,
+    projectId: java.lang.String = null,
+    replaceJobId: java.lang.String = null,
+    replacedByJobId: java.lang.String = null,
+    requestedState: java.lang.String = null,
+    stageStates: js.Array[ExecutionStageState] = null,
+    steps: js.Array[Step] = null,
+    tempFiles: js.Array[java.lang.String] = null,
+    transformNameMapping: stdLib.Record[java.lang.String, java.lang.String] = null,
+    `type`: java.lang.String = null
+  ): Job = {
+    val __obj = js.Dynamic.literal()
+    if (clientRequestId != null) __obj.updateDynamic("clientRequestId")(clientRequestId)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (currentState != null) __obj.updateDynamic("currentState")(currentState)
+    if (currentStateTime != null) __obj.updateDynamic("currentStateTime")(currentStateTime)
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (executionInfo != null) __obj.updateDynamic("executionInfo")(executionInfo)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pipelineDescription != null) __obj.updateDynamic("pipelineDescription")(pipelineDescription)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (replaceJobId != null) __obj.updateDynamic("replaceJobId")(replaceJobId)
+    if (replacedByJobId != null) __obj.updateDynamic("replacedByJobId")(replacedByJobId)
+    if (requestedState != null) __obj.updateDynamic("requestedState")(requestedState)
+    if (stageStates != null) __obj.updateDynamic("stageStates")(stageStates)
+    if (steps != null) __obj.updateDynamic("steps")(steps)
+    if (tempFiles != null) __obj.updateDynamic("tempFiles")(tempFiles)
+    if (transformNameMapping != null) __obj.updateDynamic("transformNameMapping")(transformNameMapping)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Job]
+  }
+}
+

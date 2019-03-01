@@ -25,3 +25,32 @@ trait ProjectionOptions extends js.Object {
   var worldExtent: js.UndefOr[openlayersLib.openlayersMod.Extent] = js.undefined
 }
 
+object ProjectionOptions {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    axisOrientation: java.lang.String = null,
+    extent: openlayersLib.openlayersMod.Extent = null,
+    getPointResolution: js.Function2[
+      /* resolution */ scala.Double, 
+      /* coords */ openlayersLib.openlayersMod.Coordinate, 
+      scala.Double
+    ] = null,
+    global: js.UndefOr[scala.Boolean] = js.undefined,
+    metersPerUnit: scala.Int | scala.Double = null,
+    units: openlayersLib.openlayersMod.projNs.Units | java.lang.String = null,
+    worldExtent: openlayersLib.openlayersMod.Extent = null
+  ): ProjectionOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    if (axisOrientation != null) __obj.updateDynamic("axisOrientation")(axisOrientation)
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (getPointResolution != null) __obj.updateDynamic("getPointResolution")(getPointResolution)
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
+    if (metersPerUnit != null) __obj.updateDynamic("metersPerUnit")(metersPerUnit.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
+    if (worldExtent != null) __obj.updateDynamic("worldExtent")(worldExtent)
+    __obj.asInstanceOf[ProjectionOptions]
+  }
+}
+

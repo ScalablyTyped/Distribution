@@ -32,3 +32,20 @@ trait BindingDelta extends js.Object {
   var role: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BindingDelta {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    condition: Expr = null,
+    member: java.lang.String = null,
+    role: java.lang.String = null
+  ): BindingDelta = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (member != null) __obj.updateDynamic("member")(member)
+    if (role != null) __obj.updateDynamic("role")(role)
+    __obj.asInstanceOf[BindingDelta]
+  }
+}
+

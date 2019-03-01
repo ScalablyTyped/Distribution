@@ -53,3 +53,48 @@ trait OnClickData extends js.Object {
   var wasChecked: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OnClickData {
+  @scala.inline
+  def apply(
+    bookmarkId: java.lang.String,
+    editable: scala.Boolean,
+    menuItemId: scala.Double | java.lang.String,
+    modifiers: js.Array[_OnClickDataModifiers],
+    button: scala.Int | scala.Double = null,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    frameId: scala.Int | scala.Double = null,
+    frameUrl: java.lang.String = null,
+    linkText: java.lang.String = null,
+    linkUrl: java.lang.String = null,
+    mediaType: java.lang.String = null,
+    pageUrl: java.lang.String = null,
+    parentMenuItemId: scala.Double | java.lang.String = null,
+    selectionText: java.lang.String = null,
+    srcUrl: java.lang.String = null,
+    targetElementId: scala.Int | scala.Double = null,
+    viewType: firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType = null,
+    wasChecked: js.UndefOr[scala.Boolean] = js.undefined
+  ): OnClickData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bookmarkId")(bookmarkId)
+    __obj.updateDynamic("editable")(editable)
+    __obj.updateDynamic("menuItemId")(menuItemId.asInstanceOf[js.Any])
+    __obj.updateDynamic("modifiers")(modifiers)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
+    if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl)
+    if (linkText != null) __obj.updateDynamic("linkText")(linkText)
+    if (linkUrl != null) __obj.updateDynamic("linkUrl")(linkUrl)
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    if (pageUrl != null) __obj.updateDynamic("pageUrl")(pageUrl)
+    if (parentMenuItemId != null) __obj.updateDynamic("parentMenuItemId")(parentMenuItemId.asInstanceOf[js.Any])
+    if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText)
+    if (srcUrl != null) __obj.updateDynamic("srcUrl")(srcUrl)
+    if (targetElementId != null) __obj.updateDynamic("targetElementId")(targetElementId.asInstanceOf[js.Any])
+    if (viewType != null) __obj.updateDynamic("viewType")(viewType)
+    if (!js.isUndefined(wasChecked)) __obj.updateDynamic("wasChecked")(wasChecked)
+    __obj.asInstanceOf[OnClickData]
+  }
+}
+

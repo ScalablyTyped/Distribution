@@ -76,3 +76,88 @@ trait ListItemProps extends js.Object {
   var topDivider: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ListItemProps {
+  @scala.inline
+  def apply(
+    Component: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
+    ViewComponent: reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
+    badge: BadgeProps = null,
+    bottomDivider: js.UndefOr[scala.Boolean] = js.undefined,
+    buttonGroup: ButtonGroupProps = null,
+    checkBox: CheckBoxProps = null,
+    checkmark: scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    chevron: scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    contentContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    input: InputProps = null,
+    leftAvatar: stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    leftElement: reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    leftIcon: stdLib.Partial[IconProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    onLongPress: js.Function0[scala.Unit] = null,
+    onPress: js.Function0[scala.Unit] = null,
+    pad: scala.Int | scala.Double = null,
+    rightAvatar: stdLib.Partial[AvatarProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    rightContentContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    rightElement: reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    rightIcon: stdLib.Partial[IconProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    rightSubtitle: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    rightSubtitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    rightSubtitleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    rightTitle: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    rightTitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    rightTitleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    scaleProps: ScaleProps = null,
+    subtitle: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    subtitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    subtitleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    switch: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SwitchProperties */ js.Any = null,
+    title: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    titleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any = null,
+    titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    topDivider: js.UndefOr[scala.Boolean] = js.undefined
+  ): ListItemProps = {
+    val __obj = js.Dynamic.literal()
+    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
+    if (ViewComponent != null) __obj.updateDynamic("ViewComponent")(ViewComponent.asInstanceOf[js.Any])
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (!js.isUndefined(bottomDivider)) __obj.updateDynamic("bottomDivider")(bottomDivider)
+    if (buttonGroup != null) __obj.updateDynamic("buttonGroup")(buttonGroup)
+    if (checkBox != null) __obj.updateDynamic("checkBox")(checkBox)
+    if (checkmark != null) __obj.updateDynamic("checkmark")(checkmark.asInstanceOf[js.Any])
+    if (chevron != null) __obj.updateDynamic("chevron")(chevron.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (disabledStyle != null) __obj.updateDynamic("disabledStyle")(disabledStyle.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (leftAvatar != null) __obj.updateDynamic("leftAvatar")(leftAvatar.asInstanceOf[js.Any])
+    if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement)
+    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
+    if (rightAvatar != null) __obj.updateDynamic("rightAvatar")(rightAvatar.asInstanceOf[js.Any])
+    if (rightContentContainerStyle != null) __obj.updateDynamic("rightContentContainerStyle")(rightContentContainerStyle.asInstanceOf[js.Any])
+    if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement)
+    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
+    if (rightSubtitle != null) __obj.updateDynamic("rightSubtitle")(rightSubtitle.asInstanceOf[js.Any])
+    if (rightSubtitleProps != null) __obj.updateDynamic("rightSubtitleProps")(rightSubtitleProps)
+    if (rightSubtitleStyle != null) __obj.updateDynamic("rightSubtitleStyle")(rightSubtitleStyle.asInstanceOf[js.Any])
+    if (rightTitle != null) __obj.updateDynamic("rightTitle")(rightTitle.asInstanceOf[js.Any])
+    if (rightTitleProps != null) __obj.updateDynamic("rightTitleProps")(rightTitleProps)
+    if (rightTitleStyle != null) __obj.updateDynamic("rightTitleStyle")(rightTitleStyle.asInstanceOf[js.Any])
+    if (scaleProps != null) __obj.updateDynamic("scaleProps")(scaleProps)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
+    if (subtitleProps != null) __obj.updateDynamic("subtitleProps")(subtitleProps)
+    if (subtitleStyle != null) __obj.updateDynamic("subtitleStyle")(subtitleStyle.asInstanceOf[js.Any])
+    if (switch != null) __obj.updateDynamic("switch")(switch)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps)
+    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(topDivider)) __obj.updateDynamic("topDivider")(topDivider)
+    __obj.asInstanceOf[ListItemProps]
+  }
+}
+

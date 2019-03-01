@@ -47,3 +47,34 @@ trait LiveBroadcastSnippet extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LiveBroadcastSnippet {
+  @scala.inline
+  def apply(
+    actualEndTime: java.lang.String = null,
+    actualStartTime: java.lang.String = null,
+    channelId: java.lang.String = null,
+    description: java.lang.String = null,
+    isDefaultBroadcast: js.UndefOr[scala.Boolean] = js.undefined,
+    liveChatId: java.lang.String = null,
+    publishedAt: java.lang.String = null,
+    scheduledEndTime: java.lang.String = null,
+    scheduledStartTime: java.lang.String = null,
+    thumbnails: ThumbnailDetails = null,
+    title: java.lang.String = null
+  ): LiveBroadcastSnippet = {
+    val __obj = js.Dynamic.literal()
+    if (actualEndTime != null) __obj.updateDynamic("actualEndTime")(actualEndTime)
+    if (actualStartTime != null) __obj.updateDynamic("actualStartTime")(actualStartTime)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(isDefaultBroadcast)) __obj.updateDynamic("isDefaultBroadcast")(isDefaultBroadcast)
+    if (liveChatId != null) __obj.updateDynamic("liveChatId")(liveChatId)
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt)
+    if (scheduledEndTime != null) __obj.updateDynamic("scheduledEndTime")(scheduledEndTime)
+    if (scheduledStartTime != null) __obj.updateDynamic("scheduledStartTime")(scheduledStartTime)
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[LiveBroadcastSnippet]
+  }
+}
+

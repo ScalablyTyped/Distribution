@@ -10,3 +10,17 @@ trait UserStatesResource extends js.Object {
   def list(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ListUserStatesResponse]
 }
 
+object UserStatesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListUserStatesResponse]
+    ]
+  ): UserStatesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[UserStatesResource]
+  }
+}
+

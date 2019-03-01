@@ -10,3 +10,13 @@ trait ScrollIndices extends js.Object {
   var scrollToRow: scala.Double
 }
 
+object ScrollIndices {
+  @scala.inline
+  def apply(scrollToColumn: scala.Double, scrollToRow: scala.Double): ScrollIndices = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scrollToColumn")(scrollToColumn)
+    __obj.updateDynamic("scrollToRow")(scrollToRow)
+    __obj.asInstanceOf[ScrollIndices]
+  }
+}
+

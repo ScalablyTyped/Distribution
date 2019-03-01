@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Pagination")
 @js.native
-class Pagination () extends js.Object {
+class Pagination ()
+  extends swiperLib.swiperMod.SwiperModule {
   /**
     * Dom7 array-like collection of pagination bullets
     * HTML elements. To get specific slide HTMLElement

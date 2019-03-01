@@ -27,3 +27,20 @@ trait AddonsConfig extends js.Object {
   var networkPolicyConfig: js.UndefOr[NetworkPolicyConfig] = js.undefined
 }
 
+object AddonsConfig {
+  @scala.inline
+  def apply(
+    horizontalPodAutoscaling: HorizontalPodAutoscaling = null,
+    httpLoadBalancing: HttpLoadBalancing = null,
+    kubernetesDashboard: KubernetesDashboard = null,
+    networkPolicyConfig: NetworkPolicyConfig = null
+  ): AddonsConfig = {
+    val __obj = js.Dynamic.literal()
+    if (horizontalPodAutoscaling != null) __obj.updateDynamic("horizontalPodAutoscaling")(horizontalPodAutoscaling)
+    if (httpLoadBalancing != null) __obj.updateDynamic("httpLoadBalancing")(httpLoadBalancing)
+    if (kubernetesDashboard != null) __obj.updateDynamic("kubernetesDashboard")(kubernetesDashboard)
+    if (networkPolicyConfig != null) __obj.updateDynamic("networkPolicyConfig")(networkPolicyConfig)
+    __obj.asInstanceOf[AddonsConfig]
+  }
+}
+

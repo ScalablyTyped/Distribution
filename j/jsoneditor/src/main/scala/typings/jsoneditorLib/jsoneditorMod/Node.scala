@@ -11,3 +11,14 @@ trait Node extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Node {
+  @scala.inline
+  def apply(field: java.lang.String, path: JSONPath, value: java.lang.String = null): Node = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("path")(path)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Node]
+  }
+}
+

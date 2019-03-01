@@ -11,3 +11,18 @@ trait Anon_KeyPropagateAtLaunch extends js.Object {
   var value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_KeyPropagateAtLaunch {
+  @scala.inline
+  def apply(
+    key: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    propagateAtLaunch: atPulumiPulumiLib.outputMod.Input[scala.Boolean],
+    value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): Anon_KeyPropagateAtLaunch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("propagateAtLaunch")(propagateAtLaunch.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_KeyPropagateAtLaunch]
+  }
+}
+

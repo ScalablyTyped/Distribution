@@ -7,28 +7,35 @@ import scala.scalajs.js.annotation._
 
 object aliDashAppLibStrings {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends aliDashAppLib.myNs._TextRiskIdentificationType
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends aliDashAppLib.myNs._TextRiskIdentificationType
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends aliDashAppLib.myNs._TextRiskIdentificationType
   
   @js.native
-  sealed trait `2G` extends js.Object
+  sealed trait `2G`
+    extends aliDashAppLib.myNs.NetworkType
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends aliDashAppLib.myNs._TextRiskIdentificationType
   
   @js.native
-  sealed trait `3G` extends js.Object
+  sealed trait `3G`
+    extends aliDashAppLib.myNs.NetworkType
   
   @js.native
   sealed trait `4000` extends js.Object
   
   @js.native
-  sealed trait `4G` extends js.Object
+  sealed trait `4G`
+    extends aliDashAppLib.myNs.NetworkType
   
   @js.native
   sealed trait `6001` extends js.Object
@@ -73,7 +80,8 @@ object aliDashAppLibStrings {
   sealed trait NOTIFICATION extends js.Object
   
   @js.native
-  sealed trait NOTREACHABLE extends js.Object
+  sealed trait NOTREACHABLE
+    extends aliDashAppLib.myNs.NetworkType
   
   @js.native
   sealed trait PHOTO extends js.Object
@@ -91,22 +99,26 @@ object aliDashAppLibStrings {
   sealed trait TINYAPP extends js.Object
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends aliDashAppLib.myNs.NetworkType
   
   @js.native
-  sealed trait WIFI extends js.Object
+  sealed trait WIFI
+    extends aliDashAppLib.myNs.NetworkType
   
   @js.native
   sealed trait WINDOWS extends js.Object
   
   @js.native
-  sealed trait WWAN extends js.Object
+  sealed trait WWAN
+    extends aliDashAppLib.myNs.NetworkType
   
   @js.native
   sealed trait Y extends js.Object
   
   @js.native
-  sealed trait album extends js.Object
+  sealed trait album
+    extends aliDashAppLib.myNs.ImageSourceType
   
   @js.native
   sealed trait alipay extends js.Object
@@ -121,19 +133,23 @@ object aliDashAppLibStrings {
   sealed trait ancestor extends js.Object
   
   @js.native
-  sealed trait animationend extends js.Object
+  sealed trait animationend
+    extends aliDashAppLib.myNs.TransitionEventType
   
   @js.native
-  sealed trait animationiteration extends js.Object
+  sealed trait animationiteration
+    extends aliDashAppLib.myNs.TransitionEventType
   
   @js.native
-  sealed trait animationstart extends js.Object
+  sealed trait animationstart
+    extends aliDashAppLib.myNs.TransitionEventType
   
   @js.native
   sealed trait audio extends js.Object
   
   @js.native
-  sealed trait bar extends js.Object
+  sealed trait bar
+    extends aliDashAppLib.myNs.scanType
   
   @js.native
   sealed trait base64 extends js.Object
@@ -148,7 +164,8 @@ object aliDashAppLibStrings {
   sealed trait butt extends js.Object
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera
+    extends aliDashAppLib.myNs.ImageSourceType
   
   @js.native
   sealed trait center extends js.Object
@@ -163,16 +180,20 @@ object aliDashAppLibStrings {
   sealed trait develop extends js.Object
   
   @js.native
-  sealed trait ease extends js.Object
+  sealed trait ease
+    extends aliDashAppLib.myNs.TimingFunction
   
   @js.native
-  sealed trait `ease-in` extends js.Object
+  sealed trait `ease-in`
+    extends aliDashAppLib.myNs.TimingFunction
   
   @js.native
-  sealed trait `ease-in-out` extends js.Object
+  sealed trait `ease-in-out`
+    extends aliDashAppLib.myNs.TimingFunction
   
   @js.native
-  sealed trait `ease-out` extends js.Object
+  sealed trait `ease-out`
+    extends aliDashAppLib.myNs.TimingFunction
   
   @js.native
   sealed trait end extends js.Object
@@ -184,7 +205,8 @@ object aliDashAppLibStrings {
   sealed trait fail extends js.Object
   
   @js.native
-  sealed trait form extends js.Object
+  sealed trait form
+    extends aliDashAppLib.myNs.EventType
   
   @js.native
   sealed trait hanging extends js.Object
@@ -199,13 +221,15 @@ object aliDashAppLibStrings {
   sealed trait image extends js.Object
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait input
+    extends aliDashAppLib.myNs.EventType
   
   @js.native
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait keyword extends js.Object
+  sealed trait keyword
+    extends aliDashAppLib.myNs._TextRiskIdentificationType
   
   @js.native
   sealed trait known extends js.Object
@@ -214,10 +238,12 @@ object aliDashAppLibStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends aliDashAppLib.myNs.TimingFunction
   
   @js.native
-  sealed trait longpress extends js.Object
+  sealed trait longpress
+    extends aliDashAppLib.myNs.EventType
   
   @js.native
   sealed trait md5 extends js.Object
@@ -253,7 +279,8 @@ object aliDashAppLibStrings {
   sealed trait point extends js.Object
   
   @js.native
-  sealed trait qr extends js.Object
+  sealed trait qr
+    extends aliDashAppLib.myNs.scanType
   
   @js.native
   sealed trait release extends js.Object
@@ -265,7 +292,8 @@ object aliDashAppLibStrings {
   sealed trait round extends js.Object
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scroll
+    extends aliDashAppLib.myNs.EventType
   
   @js.native
   sealed trait sha1 extends js.Object
@@ -280,19 +308,24 @@ object aliDashAppLibStrings {
   sealed trait start extends js.Object
   
   @js.native
-  sealed trait `step-end` extends js.Object
+  sealed trait `step-end`
+    extends aliDashAppLib.myNs.TimingFunction
   
   @js.native
-  sealed trait `step-start` extends js.Object
+  sealed trait `step-start`
+    extends aliDashAppLib.myNs.TimingFunction
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends aliDashAppLib.myNs.EventType
   
   @js.native
   sealed trait success extends js.Object
   
-  @js.native
-  sealed trait tap extends js.Object
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - aliDashAppLib.myNs.EventType because Already inherited */ @js.native
+  sealed trait tap
+    extends aliDashAppLib.myNs.TouchEventType
   
   @js.native
   sealed trait text extends js.Object
@@ -301,22 +334,28 @@ object aliDashAppLibStrings {
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait touchcancel extends js.Object
+  sealed trait touchcancel
+    extends aliDashAppLib.myNs.TouchEventType
   
   @js.native
-  sealed trait touchend extends js.Object
+  sealed trait touchend
+    extends aliDashAppLib.myNs.TouchEventType
   
   @js.native
-  sealed trait touchforcechange extends js.Object
+  sealed trait touchforcechange
+    extends aliDashAppLib.myNs.TouchEventType
   
   @js.native
-  sealed trait touchmove extends js.Object
+  sealed trait touchmove
+    extends aliDashAppLib.myNs.TouchEventType
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchstart
+    extends aliDashAppLib.myNs.TouchEventType
   
   @js.native
-  sealed trait transitionend extends js.Object
+  sealed trait transitionend
+    extends aliDashAppLib.myNs.TransitionEventType
   
   @js.native
   sealed trait trial extends js.Object

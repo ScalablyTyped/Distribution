@@ -45,3 +45,86 @@ trait Anon_BacklogConfiguration extends js.Object {
   var UpdatePlan: js.Any
 }
 
+object Anon_BacklogConfiguration {
+  @scala.inline
+  def apply(
+    BacklogConfiguration: js.Any,
+    Board: js.Any,
+    BoardColumn: js.Any,
+    BoardColumnType: Anon_EnumValuesAnonInProgress,
+    BugsBehavior: Anon_EnumValuesAnonAsRequirements,
+    CapacityPatch: js.Any,
+    CardFieldSettings: js.Any,
+    CardSettings: js.Any,
+    CreatePlan: js.Any,
+    DateRange: js.Any,
+    DeliveryViewData: js.Any,
+    DeliveryViewPropertyCollection: js.Any,
+    FieldInfo: js.Any,
+    FieldType: Anon_EnumValuesAnonBooleanDateTimeDouble,
+    IdentityDisplayFormat: Anon_EnumValuesAnonAvatarAndFullName,
+    Marker: js.Any,
+    Plan: js.Any,
+    PlanMetadata: js.Any,
+    PlanType: Anon_EnumValuesAnonDeliveryTimelineView,
+    PlanUserPermissions: Anon_EnumValuesAnonAllPermissions,
+    TeamIterationAttributes: js.Any,
+    TeamMemberCapacity: js.Any,
+    TeamSetting: js.Any,
+    TeamSettingsDaysOff: js.Any,
+    TeamSettingsDaysOffPatch: js.Any,
+    TeamSettingsIteration: js.Any,
+    TeamSettingsPatch: js.Any,
+    TimeFrame: Anon_EnumValuesAnonCurrent,
+    TimelineCriteriaStatus: js.Any,
+    TimelineCriteriaStatusCode: Anon_EnumValuesAnonInvalidFilterClause,
+    TimelineIterationStatus: js.Any,
+    TimelineIterationStatusCode: Anon_EnumValuesAnonIsOverlapping,
+    TimelineTeamData: js.Any,
+    TimelineTeamIteration: js.Any,
+    TimelineTeamStatus: js.Any,
+    TimelineTeamStatusCode: Anon_EnumValuesAnonBacklogInError,
+    UpdatePlan: js.Any
+  ): Anon_BacklogConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BacklogConfiguration")(BacklogConfiguration)
+    __obj.updateDynamic("Board")(Board)
+    __obj.updateDynamic("BoardColumn")(BoardColumn)
+    __obj.updateDynamic("BoardColumnType")(BoardColumnType)
+    __obj.updateDynamic("BugsBehavior")(BugsBehavior)
+    __obj.updateDynamic("CapacityPatch")(CapacityPatch)
+    __obj.updateDynamic("CardFieldSettings")(CardFieldSettings)
+    __obj.updateDynamic("CardSettings")(CardSettings)
+    __obj.updateDynamic("CreatePlan")(CreatePlan)
+    __obj.updateDynamic("DateRange")(DateRange)
+    __obj.updateDynamic("DeliveryViewData")(DeliveryViewData)
+    __obj.updateDynamic("DeliveryViewPropertyCollection")(DeliveryViewPropertyCollection)
+    __obj.updateDynamic("FieldInfo")(FieldInfo)
+    __obj.updateDynamic("FieldType")(FieldType)
+    __obj.updateDynamic("IdentityDisplayFormat")(IdentityDisplayFormat)
+    __obj.updateDynamic("Marker")(Marker)
+    __obj.updateDynamic("Plan")(Plan)
+    __obj.updateDynamic("PlanMetadata")(PlanMetadata)
+    __obj.updateDynamic("PlanType")(PlanType)
+    __obj.updateDynamic("PlanUserPermissions")(PlanUserPermissions)
+    __obj.updateDynamic("TeamIterationAttributes")(TeamIterationAttributes)
+    __obj.updateDynamic("TeamMemberCapacity")(TeamMemberCapacity)
+    __obj.updateDynamic("TeamSetting")(TeamSetting)
+    __obj.updateDynamic("TeamSettingsDaysOff")(TeamSettingsDaysOff)
+    __obj.updateDynamic("TeamSettingsDaysOffPatch")(TeamSettingsDaysOffPatch)
+    __obj.updateDynamic("TeamSettingsIteration")(TeamSettingsIteration)
+    __obj.updateDynamic("TeamSettingsPatch")(TeamSettingsPatch)
+    __obj.updateDynamic("TimeFrame")(TimeFrame)
+    __obj.updateDynamic("TimelineCriteriaStatus")(TimelineCriteriaStatus)
+    __obj.updateDynamic("TimelineCriteriaStatusCode")(TimelineCriteriaStatusCode)
+    __obj.updateDynamic("TimelineIterationStatus")(TimelineIterationStatus)
+    __obj.updateDynamic("TimelineIterationStatusCode")(TimelineIterationStatusCode)
+    __obj.updateDynamic("TimelineTeamData")(TimelineTeamData)
+    __obj.updateDynamic("TimelineTeamIteration")(TimelineTeamIteration)
+    __obj.updateDynamic("TimelineTeamStatus")(TimelineTeamStatus)
+    __obj.updateDynamic("TimelineTeamStatusCode")(TimelineTeamStatusCode)
+    __obj.updateDynamic("UpdatePlan")(UpdatePlan)
+    __obj.asInstanceOf[Anon_BacklogConfiguration]
+  }
+}
+

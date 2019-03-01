@@ -85,3 +85,48 @@ trait CameraOptionsType extends js.Object {
   var whichCamera: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CameraOptionsType {
+  @scala.inline
+  def apply(
+    allowEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowDirection: scala.Int | scala.Double = null,
+    autohide: js.UndefOr[scala.Boolean] = js.undefined,
+    autorotate: js.UndefOr[scala.Boolean] = js.undefined,
+    cancel: js.Function1[/* param0 */ FailureResponse, _] = null,
+    error: js.Function1[/* param0 */ FailureResponse, _] = null,
+    inPopOver: js.UndefOr[scala.Boolean] = js.undefined,
+    mediaTypes: js.Array[java.lang.String] = null,
+    overlay: titaniumLib.TitaniumNs.UINs.View = null,
+    popoverView: titaniumLib.TitaniumNs.UINs.View = null,
+    saveToPhotoGallery: js.UndefOr[scala.Boolean] = js.undefined,
+    showControls: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function1[/* param0 */ CameraMediaItemType, _] = null,
+    transform: titaniumLib.TitaniumNs.UINs.Matrix2D = null,
+    videoMaximumDuration: scala.Int | scala.Double = null,
+    videoQuality: scala.Int | scala.Double = null,
+    whichCamera: scala.Int | scala.Double = null
+  ): CameraOptionsType = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (arrowDirection != null) __obj.updateDynamic("arrowDirection")(arrowDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
+    if (!js.isUndefined(autorotate)) __obj.updateDynamic("autorotate")(autorotate)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(inPopOver)) __obj.updateDynamic("inPopOver")(inPopOver)
+    if (mediaTypes != null) __obj.updateDynamic("mediaTypes")(mediaTypes)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
+    if (popoverView != null) __obj.updateDynamic("popoverView")(popoverView)
+    if (!js.isUndefined(saveToPhotoGallery)) __obj.updateDynamic("saveToPhotoGallery")(saveToPhotoGallery)
+    if (!js.isUndefined(showControls)) __obj.updateDynamic("showControls")(showControls)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (videoMaximumDuration != null) __obj.updateDynamic("videoMaximumDuration")(videoMaximumDuration.asInstanceOf[js.Any])
+    if (videoQuality != null) __obj.updateDynamic("videoQuality")(videoQuality.asInstanceOf[js.Any])
+    if (whichCamera != null) __obj.updateDynamic("whichCamera")(whichCamera.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CameraOptionsType]
+  }
+}
+

@@ -11,5 +11,5 @@ package object SqlBricksNs {
     * When a non-expression object is passed somewhere a whereExpression is expected,
     * each key/value pair will be ANDed together:
     */
-  type WhereExpression = WhereGroup | WhereBinary | WhereObject | java.lang.String
+  type WhereExpression = _WhereExpression | java.lang.String
 }

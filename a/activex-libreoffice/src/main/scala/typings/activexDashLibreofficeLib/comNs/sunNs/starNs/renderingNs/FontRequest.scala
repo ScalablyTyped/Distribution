@@ -55,3 +55,20 @@ trait FontRequest extends js.Object {
   var ReferenceAdvancement: scala.Double
 }
 
+object FontRequest {
+  @scala.inline
+  def apply(
+    CellSize: scala.Double,
+    FontDescription: FontInfo,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    ReferenceAdvancement: scala.Double
+  ): FontRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CellSize")(CellSize)
+    __obj.updateDynamic("FontDescription")(FontDescription)
+    __obj.updateDynamic("Locale")(Locale)
+    __obj.updateDynamic("ReferenceAdvancement")(ReferenceAdvancement)
+    __obj.asInstanceOf[FontRequest]
+  }
+}
+

@@ -22,3 +22,20 @@ trait ClinicalCondition extends js.Object {
   var omimId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClinicalCondition {
+  @scala.inline
+  def apply(
+    conceptId: java.lang.String = null,
+    externalIds: js.Array[ExternalId] = null,
+    names: js.Array[java.lang.String] = null,
+    omimId: java.lang.String = null
+  ): ClinicalCondition = {
+    val __obj = js.Dynamic.literal()
+    if (conceptId != null) __obj.updateDynamic("conceptId")(conceptId)
+    if (externalIds != null) __obj.updateDynamic("externalIds")(externalIds)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (omimId != null) __obj.updateDynamic("omimId")(omimId)
+    __obj.asInstanceOf[ClinicalCondition]
+  }
+}
+

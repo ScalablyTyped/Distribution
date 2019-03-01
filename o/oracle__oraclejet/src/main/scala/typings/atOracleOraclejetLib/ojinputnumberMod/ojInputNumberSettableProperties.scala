@@ -26,3 +26,60 @@ trait ojInputNumberSettableProperties
   var virtualKeyboard: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.number | atOracleOraclejetLib.atOracleOraclejetLibStrings.text
 }
 
+object ojInputNumberSettableProperties {
+  @scala.inline
+  def apply(
+    asyncValidators: js.Array[atOracleOraclejetLib.ojvalidationDashBaseMod.AsyncValidator[scala.Double]],
+    autocomplete: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | java.lang.String,
+    autofocus: scala.Boolean,
+    converter: atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[scala.Double] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter,
+    disabled: scala.Boolean,
+    displayOptions: atOracleOraclejetLib.Anon_ConverterHint,
+    help: atOracleOraclejetLib.Anon_Instruction,
+    helpHints: atOracleOraclejetLib.Anon_Definition,
+    labelHint: java.lang.String,
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    rawValue: java.lang.String,
+    required: scala.Boolean,
+    translations: atOracleOraclejetLib.Anon_NumberRange,
+    valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown,
+    validators: js.Array[
+      atOracleOraclejetLib.ojvalidationDashBaseMod.Validator[scala.Double] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
+    ],
+    virtualKeyboard: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.number | atOracleOraclejetLib.atOracleOraclejetLibStrings.text,
+    describedBy: java.lang.String = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    placeholder: java.lang.String = null,
+    readonly: js.UndefOr[scala.Boolean] = js.undefined,
+    step: scala.Int | scala.Double = null,
+    value: scala.Int | scala.Double = null
+  ): ojInputNumberSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("asyncValidators")(asyncValidators)
+    __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
+    __obj.updateDynamic("autofocus")(autofocus)
+    __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("displayOptions")(displayOptions)
+    __obj.updateDynamic("help")(help)
+    __obj.updateDynamic("helpHints")(helpHints)
+    __obj.updateDynamic("labelHint")(labelHint)
+    __obj.updateDynamic("messagesCustom")(messagesCustom)
+    __obj.updateDynamic("rawValue")(rawValue)
+    __obj.updateDynamic("required")(required)
+    __obj.updateDynamic("translations")(translations)
+    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    __obj.updateDynamic("validators")(validators)
+    __obj.updateDynamic("virtualKeyboard")(virtualKeyboard.asInstanceOf[js.Any])
+    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ojInputNumberSettableProperties]
+  }
+}
+

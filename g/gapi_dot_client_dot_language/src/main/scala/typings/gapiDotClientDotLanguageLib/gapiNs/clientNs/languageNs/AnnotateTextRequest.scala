@@ -14,3 +14,14 @@ trait AnnotateTextRequest extends js.Object {
   var features: js.UndefOr[Features] = js.undefined
 }
 
+object AnnotateTextRequest {
+  @scala.inline
+  def apply(document: Document = null, encodingType: java.lang.String = null, features: Features = null): AnnotateTextRequest = {
+    val __obj = js.Dynamic.literal()
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType)
+    if (features != null) __obj.updateDynamic("features")(features)
+    __obj.asInstanceOf[AnnotateTextRequest]
+  }
+}
+

@@ -12,3 +12,12 @@ trait MemberAccountAssociationArgs extends js.Object {
   val memberAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object MemberAccountAssociationArgs {
+  @scala.inline
+  def apply(memberAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String]): MemberAccountAssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("memberAccountId")(memberAccountId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MemberAccountAssociationArgs]
+  }
+}
+

@@ -17,3 +17,18 @@ trait NetworksAddPeeringRequest extends js.Object {
   var peerNetwork: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NetworksAddPeeringRequest {
+  @scala.inline
+  def apply(
+    autoCreateRoutes: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    peerNetwork: java.lang.String = null
+  ): NetworksAddPeeringRequest = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (peerNetwork != null) __obj.updateDynamic("peerNetwork")(peerNetwork)
+    __obj.asInstanceOf[NetworksAddPeeringRequest]
+  }
+}
+

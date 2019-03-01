@@ -11,3 +11,18 @@ trait UrlParts extends js.Object {
   var search: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object UrlParts {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    hash: java.lang.String = null,
+    search: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): UrlParts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[UrlParts]
+  }
+}
+

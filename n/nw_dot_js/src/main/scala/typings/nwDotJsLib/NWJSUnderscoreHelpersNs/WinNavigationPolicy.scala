@@ -15,3 +15,12 @@ trait WinNavigationPolicy extends js.Object {
   def ignore(): scala.Unit
 }
 
+object WinNavigationPolicy {
+  @scala.inline
+  def apply(ignore: js.Function0[scala.Unit]): WinNavigationPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ignore")(ignore)
+    __obj.asInstanceOf[WinNavigationPolicy]
+  }
+}
+

@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object mermaidLibStrings {
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait dark
+    extends mermaidLib.mermaidAPIMod.mermaidAPINs.Theme
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends mermaidLib.mermaidAPIMod.mermaidAPINs.Theme
   
   @js.native
-  sealed trait forest extends js.Object
+  sealed trait forest
+    extends mermaidLib.mermaidAPIMod.mermaidAPINs.Theme
   
   @js.native
-  sealed trait netural extends js.Object
+  sealed trait netural
+    extends mermaidLib.mermaidAPIMod.mermaidAPINs.Theme
   
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]

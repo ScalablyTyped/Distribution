@@ -145,3 +145,80 @@ trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
   def sortFunc(a: TRow, b: TRow, order: SortOrder, sortField: java.lang.String, extraData: js.Any): scala.Double
 }
 
+object ColumnDescription {
+  @scala.inline
+  def apply[TRow /* <: js.Object */](
+    align: DataAlignType,
+    attrs: CustomAttrs,
+    className: java.lang.String | (js.Function4[
+      /* cell */ js.Any, 
+      /* row */ TRow, 
+      /* rowIndex */ scala.Double, 
+      /* columnIndex */ scala.Double, 
+      java.lang.String
+    ]),
+    columnTitle: scala.Boolean,
+    customEditor: CustomEditor[TRow, _],
+    editAttrs: CustomAttrs,
+    editClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ TRow, java.lang.String]),
+    editable: scala.Boolean | (Editable[TRow, _]) | (js.Function4[
+      /* cell */ js.Any, 
+      /* row */ TRow, 
+      /* rowIndex */ scala.Double, 
+      /* columnIndex */ scala.Double, 
+      scala.Boolean | java.lang.String | EditValidatorObject
+    ]),
+    expandable: scala.Boolean,
+    export: scala.Boolean,
+    filterFormatted: scala.Boolean,
+    filterValue: js.Function2[js.Any, TRow, js.Any],
+    format: js.Function4[
+      js.Any, 
+      TRow, 
+      js.Any, 
+      scala.Double, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ],
+    formatExtraData: js.Any,
+    hidden: scala.Boolean,
+    hiddenOnInsert: scala.Boolean,
+    invalidEditColumnClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ TRow, java.lang.String]),
+    name: java.lang.String,
+    searchable: scala.Boolean,
+    sort: scala.Boolean,
+    sortFunc: js.Function5[TRow, TRow, SortOrder, java.lang.String, js.Any, scala.Double],
+    sortFuncExtraData: js.Any,
+    style: reactLib.reactMod.ReactNs.CSSProperties,
+    text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_],
+    width: java.lang.String
+  ): ColumnDescription[TRow] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("align")(align)
+    __obj.updateDynamic("attrs")(attrs)
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("columnTitle")(columnTitle)
+    __obj.updateDynamic("customEditor")(customEditor)
+    __obj.updateDynamic("editAttrs")(editAttrs)
+    __obj.updateDynamic("editClassName")(editClassName.asInstanceOf[js.Any])
+    __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    __obj.updateDynamic("expandable")(expandable)
+    __obj.updateDynamic("export")(export)
+    __obj.updateDynamic("filterFormatted")(filterFormatted)
+    __obj.updateDynamic("filterValue")(filterValue)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("formatExtraData")(formatExtraData)
+    __obj.updateDynamic("hidden")(hidden)
+    __obj.updateDynamic("hiddenOnInsert")(hiddenOnInsert)
+    __obj.updateDynamic("invalidEditColumnClassName")(invalidEditColumnClassName.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("searchable")(searchable)
+    __obj.updateDynamic("sort")(sort)
+    __obj.updateDynamic("sortFunc")(sortFunc)
+    __obj.updateDynamic("sortFuncExtraData")(sortFuncExtraData)
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ColumnDescription[TRow]]
+  }
+}
+

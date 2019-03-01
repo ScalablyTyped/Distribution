@@ -56,3 +56,64 @@ trait XNumericField
   def setValue(Value: scala.Double): scala.Unit
 }
 
+object XNumericField {
+  @scala.inline
+  def apply(
+    DecimalDigits: scala.Double,
+    First: scala.Double,
+    Last: scala.Double,
+    Max: scala.Double,
+    Min: scala.Double,
+    SpinSize: scala.Double,
+    Value: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getDecimalDigits: js.Function0[scala.Double],
+    getFirst: js.Function0[scala.Double],
+    getLast: js.Function0[scala.Double],
+    getMax: js.Function0[scala.Double],
+    getMin: js.Function0[scala.Double],
+    getSpinSize: js.Function0[scala.Double],
+    getValue: js.Function0[scala.Double],
+    isStrictFormat: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDecimalDigits: js.Function1[scala.Double, scala.Unit],
+    setFirst: js.Function1[scala.Double, scala.Unit],
+    setLast: js.Function1[scala.Double, scala.Unit],
+    setMax: js.Function1[scala.Double, scala.Unit],
+    setMin: js.Function1[scala.Double, scala.Unit],
+    setSpinSize: js.Function1[scala.Double, scala.Unit],
+    setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
+    setValue: js.Function1[scala.Double, scala.Unit]
+  ): XNumericField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DecimalDigits")(DecimalDigits)
+    __obj.updateDynamic("First")(First)
+    __obj.updateDynamic("Last")(Last)
+    __obj.updateDynamic("Max")(Max)
+    __obj.updateDynamic("Min")(Min)
+    __obj.updateDynamic("SpinSize")(SpinSize)
+    __obj.updateDynamic("Value")(Value)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDecimalDigits")(getDecimalDigits)
+    __obj.updateDynamic("getFirst")(getFirst)
+    __obj.updateDynamic("getLast")(getLast)
+    __obj.updateDynamic("getMax")(getMax)
+    __obj.updateDynamic("getMin")(getMin)
+    __obj.updateDynamic("getSpinSize")(getSpinSize)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("isStrictFormat")(isStrictFormat)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDecimalDigits")(setDecimalDigits)
+    __obj.updateDynamic("setFirst")(setFirst)
+    __obj.updateDynamic("setLast")(setLast)
+    __obj.updateDynamic("setMax")(setMax)
+    __obj.updateDynamic("setMin")(setMin)
+    __obj.updateDynamic("setSpinSize")(setSpinSize)
+    __obj.updateDynamic("setStrictFormat")(setStrictFormat)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.asInstanceOf[XNumericField]
+  }
+}
+

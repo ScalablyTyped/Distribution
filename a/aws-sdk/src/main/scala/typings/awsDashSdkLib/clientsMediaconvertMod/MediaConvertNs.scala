@@ -3347,6 +3347,460 @@ object MediaConvertNs extends js.Object {
     var SampleRate: js.UndefOr[__integerMin8000Max192000] = js.undefined
   }
   
+  trait _AacAudioDescriptionBroadcasterMix extends js.Object
+  
+  trait _AacCodecProfile extends js.Object
+  
+  trait _AacCodingMode extends js.Object
+  
+  trait _AacRateControlMode extends js.Object
+  
+  trait _AacRawFormat extends js.Object
+  
+  trait _AacSpecification extends js.Object
+  
+  trait _AacVbrQuality extends js.Object
+  
+  trait _Ac3BitstreamMode extends js.Object
+  
+  trait _Ac3CodingMode extends js.Object
+  
+  trait _Ac3DynamicRangeCompressionProfile extends js.Object
+  
+  trait _Ac3LfeFilter extends js.Object
+  
+  trait _Ac3MetadataControl extends js.Object
+  
+  trait _AccelerationMode extends js.Object
+  
+  trait _AfdSignaling extends js.Object
+  
+  trait _AntiAlias extends js.Object
+  
+  trait _AudioCodec extends js.Object
+  
+  trait _AudioDefaultSelection extends js.Object
+  
+  trait _AudioLanguageCodeControl extends js.Object
+  
+  trait _AudioNormalizationAlgorithm extends js.Object
+  
+  trait _AudioNormalizationAlgorithmControl extends js.Object
+  
+  trait _AudioNormalizationLoudnessLogging extends js.Object
+  
+  trait _AudioNormalizationPeakCalculation extends js.Object
+  
+  trait _AudioSelectorType extends js.Object
+  
+  trait _AudioTypeControl extends js.Object
+  
+  trait _BillingTagsSource extends js.Object
+  
+  trait _BurninSubtitleAlignment extends js.Object
+  
+  trait _BurninSubtitleBackgroundColor extends js.Object
+  
+  trait _BurninSubtitleFontColor extends js.Object
+  
+  trait _BurninSubtitleOutlineColor extends js.Object
+  
+  trait _BurninSubtitleShadowColor extends js.Object
+  
+  trait _BurninSubtitleTeletextSpacing extends js.Object
+  
+  trait _CaptionDestinationType extends js.Object
+  
+  trait _CaptionSourceType extends js.Object
+  
+  trait _CmafClientCache extends js.Object
+  
+  trait _CmafCodecSpecification extends js.Object
+  
+  trait _CmafInitializationVectorInManifest extends js.Object
+  
+  trait _CmafManifestCompression extends js.Object
+  
+  trait _CmafManifestDurationFormat extends js.Object
+  
+  trait _CmafSegmentControl extends js.Object
+  
+  trait _CmafStreamInfResolution extends js.Object
+  
+  trait _CmafWriteDASHManifest extends js.Object
+  
+  trait _CmafWriteHLSManifest extends js.Object
+  
+  trait _ColorMetadata extends js.Object
+  
+  trait _ColorSpace extends js.Object
+  
+  trait _ColorSpaceConversion extends js.Object
+  
+  trait _ColorSpaceUsage extends js.Object
+  
+  trait _ContainerType extends js.Object
+  
+  trait _DashIsoHbbtvCompliance extends js.Object
+  
+  trait _DashIsoSegmentControl extends js.Object
+  
+  trait _DashIsoWriteSegmentTimelineInRepresentation extends js.Object
+  
+  trait _DecryptionMode extends js.Object
+  
+  trait _DeinterlaceAlgorithm extends js.Object
+  
+  trait _DeinterlacerControl extends js.Object
+  
+  trait _DeinterlacerMode extends js.Object
+  
+  trait _DescribeEndpointsMode extends js.Object
+  
+  trait _DropFrameTimecode extends js.Object
+  
+  trait _DvbSubtitleAlignment extends js.Object
+  
+  trait _DvbSubtitleBackgroundColor extends js.Object
+  
+  trait _DvbSubtitleFontColor extends js.Object
+  
+  trait _DvbSubtitleOutlineColor extends js.Object
+  
+  trait _DvbSubtitleShadowColor extends js.Object
+  
+  trait _DvbSubtitleTeletextSpacing extends js.Object
+  
+  trait _Eac3AttenuationControl extends js.Object
+  
+  trait _Eac3BitstreamMode extends js.Object
+  
+  trait _Eac3CodingMode extends js.Object
+  
+  trait _Eac3DcFilter extends js.Object
+  
+  trait _Eac3DynamicRangeCompressionLine extends js.Object
+  
+  trait _Eac3DynamicRangeCompressionRf extends js.Object
+  
+  trait _Eac3LfeControl extends js.Object
+  
+  trait _Eac3LfeFilter extends js.Object
+  
+  trait _Eac3MetadataControl extends js.Object
+  
+  trait _Eac3PassthroughControl extends js.Object
+  
+  trait _Eac3PhaseControl extends js.Object
+  
+  trait _Eac3StereoDownmix extends js.Object
+  
+  trait _Eac3SurroundExMode extends js.Object
+  
+  trait _Eac3SurroundMode extends js.Object
+  
+  trait _EmbeddedConvert608To708 extends js.Object
+  
+  trait _F4vMoovPlacement extends js.Object
+  
+  trait _FileSourceConvert608To708 extends js.Object
+  
+  trait _FontScript extends js.Object
+  
+  trait _H264AdaptiveQuantization extends js.Object
+  
+  trait _H264CodecLevel extends js.Object
+  
+  trait _H264CodecProfile extends js.Object
+  
+  trait _H264DynamicSubGop extends js.Object
+  
+  trait _H264EntropyEncoding extends js.Object
+  
+  trait _H264FieldEncoding extends js.Object
+  
+  trait _H264FlickerAdaptiveQuantization extends js.Object
+  
+  trait _H264FramerateControl extends js.Object
+  
+  trait _H264FramerateConversionAlgorithm extends js.Object
+  
+  trait _H264GopBReference extends js.Object
+  
+  trait _H264GopSizeUnits extends js.Object
+  
+  trait _H264InterlaceMode extends js.Object
+  
+  trait _H264ParControl extends js.Object
+  
+  trait _H264QualityTuningLevel extends js.Object
+  
+  trait _H264RateControlMode extends js.Object
+  
+  trait _H264RepeatPps extends js.Object
+  
+  trait _H264SceneChangeDetect extends js.Object
+  
+  trait _H264SlowPal extends js.Object
+  
+  trait _H264SpatialAdaptiveQuantization extends js.Object
+  
+  trait _H264Syntax extends js.Object
+  
+  trait _H264Telecine extends js.Object
+  
+  trait _H264TemporalAdaptiveQuantization extends js.Object
+  
+  trait _H264UnregisteredSeiTimecode extends js.Object
+  
+  trait _H265AdaptiveQuantization extends js.Object
+  
+  trait _H265AlternateTransferFunctionSei extends js.Object
+  
+  trait _H265CodecLevel extends js.Object
+  
+  trait _H265CodecProfile extends js.Object
+  
+  trait _H265DynamicSubGop extends js.Object
+  
+  trait _H265FlickerAdaptiveQuantization extends js.Object
+  
+  trait _H265FramerateControl extends js.Object
+  
+  trait _H265FramerateConversionAlgorithm extends js.Object
+  
+  trait _H265GopBReference extends js.Object
+  
+  trait _H265GopSizeUnits extends js.Object
+  
+  trait _H265InterlaceMode extends js.Object
+  
+  trait _H265ParControl extends js.Object
+  
+  trait _H265QualityTuningLevel extends js.Object
+  
+  trait _H265RateControlMode extends js.Object
+  
+  trait _H265SampleAdaptiveOffsetFilterMode extends js.Object
+  
+  trait _H265SceneChangeDetect extends js.Object
+  
+  trait _H265SlowPal extends js.Object
+  
+  trait _H265SpatialAdaptiveQuantization extends js.Object
+  
+  trait _H265Telecine extends js.Object
+  
+  trait _H265TemporalAdaptiveQuantization extends js.Object
+  
+  trait _H265TemporalIds extends js.Object
+  
+  trait _H265Tiles extends js.Object
+  
+  trait _H265UnregisteredSeiTimecode extends js.Object
+  
+  trait _H265WriteMp4PackagingType extends js.Object
+  
+  trait _HlsAdMarkers extends js.Object
+  
+  trait _HlsAudioTrackType extends js.Object
+  
+  trait _HlsCaptionLanguageSetting extends js.Object
+  
+  trait _HlsClientCache extends js.Object
+  
+  trait _HlsCodecSpecification extends js.Object
+  
+  trait _HlsDirectoryStructure extends js.Object
+  
+  trait _HlsEncryptionType extends js.Object
+  
+  trait _HlsIFrameOnlyManifest extends js.Object
+  
+  trait _HlsInitializationVectorInManifest extends js.Object
+  
+  trait _HlsKeyProviderType extends js.Object
+  
+  trait _HlsManifestCompression extends js.Object
+  
+  trait _HlsManifestDurationFormat extends js.Object
+  
+  trait _HlsOfflineEncrypted extends js.Object
+  
+  trait _HlsOutputSelection extends js.Object
+  
+  trait _HlsProgramDateTime extends js.Object
+  
+  trait _HlsSegmentControl extends js.Object
+  
+  trait _HlsStreamInfResolution extends js.Object
+  
+  trait _HlsTimedMetadataId3Frame extends js.Object
+  
+  trait _InputDeblockFilter extends js.Object
+  
+  trait _InputDenoiseFilter extends js.Object
+  
+  trait _InputFilterEnable extends js.Object
+  
+  trait _InputPsiControl extends js.Object
+  
+  trait _InputRotate extends js.Object
+  
+  trait _InputTimecodeSource extends js.Object
+  
+  trait _JobStatus extends js.Object
+  
+  trait _JobTemplateListBy extends js.Object
+  
+  trait _LanguageCode extends js.Object
+  
+  trait _M2tsAudioBufferModel extends js.Object
+  
+  trait _M2tsBufferModel extends js.Object
+  
+  trait _M2tsEbpAudioInterval extends js.Object
+  
+  trait _M2tsEbpPlacement extends js.Object
+  
+  trait _M2tsEsRateInPes extends js.Object
+  
+  trait _M2tsForceTsVideoEbpOrder extends js.Object
+  
+  trait _M2tsNielsenId3 extends js.Object
+  
+  trait _M2tsPcrControl extends js.Object
+  
+  trait _M2tsRateMode extends js.Object
+  
+  trait _M2tsScte35Source extends js.Object
+  
+  trait _M2tsSegmentationMarkers extends js.Object
+  
+  trait _M2tsSegmentationStyle extends js.Object
+  
+  trait _M3u8NielsenId3 extends js.Object
+  
+  trait _M3u8PcrControl extends js.Object
+  
+  trait _M3u8Scte35Source extends js.Object
+  
+  trait _MotionImageInsertionMode extends js.Object
+  
+  trait _MotionImagePlayback extends js.Object
+  
+  trait _MovClapAtom extends js.Object
+  
+  trait _MovCslgAtom extends js.Object
+  
+  trait _MovMpeg2FourCCControl extends js.Object
+  
+  trait _MovPaddingControl extends js.Object
+  
+  trait _MovReference extends js.Object
+  
+  trait _Mp4CslgAtom extends js.Object
+  
+  trait _Mp4FreeSpaceBox extends js.Object
+  
+  trait _Mp4MoovPlacement extends js.Object
+  
+  trait _Mpeg2AdaptiveQuantization extends js.Object
+  
+  trait _Mpeg2CodecLevel extends js.Object
+  
+  trait _Mpeg2CodecProfile extends js.Object
+  
+  trait _Mpeg2DynamicSubGop extends js.Object
+  
+  trait _Mpeg2FramerateControl extends js.Object
+  
+  trait _Mpeg2FramerateConversionAlgorithm extends js.Object
+  
+  trait _Mpeg2GopSizeUnits extends js.Object
+  
+  trait _Mpeg2InterlaceMode extends js.Object
+  
+  trait _Mpeg2IntraDcPrecision extends js.Object
+  
+  trait _Mpeg2ParControl extends js.Object
+  
+  trait _Mpeg2QualityTuningLevel extends js.Object
+  
+  trait _Mpeg2RateControlMode extends js.Object
+  
+  trait _Mpeg2SceneChangeDetect extends js.Object
+  
+  trait _Mpeg2SlowPal extends js.Object
+  
+  trait _Mpeg2SpatialAdaptiveQuantization extends js.Object
+  
+  trait _Mpeg2Syntax extends js.Object
+  
+  trait _Mpeg2Telecine extends js.Object
+  
+  trait _Mpeg2TemporalAdaptiveQuantization extends js.Object
+  
+  trait _MsSmoothAudioDeduplication extends js.Object
+  
+  trait _MsSmoothManifestEncoding extends js.Object
+  
+  trait _NoiseReducerFilter extends js.Object
+  
+  trait _Order extends js.Object
+  
+  trait _OutputGroupType extends js.Object
+  
+  trait _OutputSdt extends js.Object
+  
+  trait _PresetListBy extends js.Object
+  
+  trait _PricingPlan extends js.Object
+  
+  trait _ProresCodecProfile extends js.Object
+  
+  trait _ProresFramerateControl extends js.Object
+  
+  trait _ProresFramerateConversionAlgorithm extends js.Object
+  
+  trait _ProresInterlaceMode extends js.Object
+  
+  trait _ProresParControl extends js.Object
+  
+  trait _ProresSlowPal extends js.Object
+  
+  trait _ProresTelecine extends js.Object
+  
+  trait _QueueListBy extends js.Object
+  
+  trait _QueueStatus extends js.Object
+  
+  trait _RenewalType extends js.Object
+  
+  trait _ReservationPlanStatus extends js.Object
+  
+  trait _RespondToAfd extends js.Object
+  
+  trait _ScalingBehavior extends js.Object
+  
+  trait _SccDestinationFramerate extends js.Object
+  
+  trait _TimecodeBurninPosition extends js.Object
+  
+  trait _TimecodeSource extends js.Object
+  
+  trait _TimedMetadata extends js.Object
+  
+  trait _TtmlStylePassthrough extends js.Object
+  
+  trait _Type extends js.Object
+  
+  trait _VideoCodec extends js.Object
+  
+  trait _VideoTimecodeInsertion extends js.Object
+  
+  trait _WavFormat extends js.Object
+  
   trait __mapOfAudioSelector
     extends /* key */ org.scalablytyped.runtime.StringDictionary[AudioSelector]
   
@@ -3359,238 +3813,240 @@ object MediaConvertNs extends js.Object {
   trait __mapOf__string
     extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
-  type AacAudioDescriptionBroadcasterMix = awsDashSdkLib.awsDashSdkLibStrings.BROADCASTER_MIXED_AD | awsDashSdkLib.awsDashSdkLibStrings.NORMAL | java.lang.String
-  type AacCodecProfile = awsDashSdkLib.awsDashSdkLibStrings.LC | awsDashSdkLib.awsDashSdkLibStrings.HEV1 | awsDashSdkLib.awsDashSdkLibStrings.HEV2 | java.lang.String
-  type AacCodingMode = awsDashSdkLib.awsDashSdkLibStrings.AD_RECEIVER_MIX | awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_0 | awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_1 | awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_2_0 | awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_5_1 | java.lang.String
-  type AacRateControlMode = awsDashSdkLib.awsDashSdkLibStrings.CBR | awsDashSdkLib.awsDashSdkLibStrings.VBR | java.lang.String
-  type AacRawFormat = awsDashSdkLib.awsDashSdkLibStrings.LATM_LOAS | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type AacSpecification = awsDashSdkLib.awsDashSdkLibStrings.MPEG2 | awsDashSdkLib.awsDashSdkLibStrings.MPEG4 | java.lang.String
-  type AacVbrQuality = awsDashSdkLib.awsDashSdkLibStrings.LOW | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM_LOW | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM_HIGH | awsDashSdkLib.awsDashSdkLibStrings.HIGH | java.lang.String
-  type Ac3BitstreamMode = awsDashSdkLib.awsDashSdkLibStrings.COMPLETE_MAIN | awsDashSdkLib.awsDashSdkLibStrings.COMMENTARY | awsDashSdkLib.awsDashSdkLibStrings.DIALOGUE | awsDashSdkLib.awsDashSdkLibStrings.EMERGENCY | awsDashSdkLib.awsDashSdkLibStrings.HEARING_IMPAIRED | awsDashSdkLib.awsDashSdkLibStrings.MUSIC_AND_EFFECTS | awsDashSdkLib.awsDashSdkLibStrings.VISUALLY_IMPAIRED | awsDashSdkLib.awsDashSdkLibStrings.VOICE_OVER | java.lang.String
-  type Ac3CodingMode = awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_0 | awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_1 | awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_2_0 | awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_3_2_LFE | java.lang.String
-  type Ac3DynamicRangeCompressionProfile = awsDashSdkLib.awsDashSdkLibStrings.FILM_STANDARD | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type Ac3LfeFilter = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type Ac3MetadataControl = awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_INPUT | awsDashSdkLib.awsDashSdkLibStrings.USE_CONFIGURED | java.lang.String
-  type AccelerationMode = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type AfdSignaling = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.FIXED | java.lang.String
-  type AntiAlias = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type AudioCodec = awsDashSdkLib.awsDashSdkLibStrings.AAC | awsDashSdkLib.awsDashSdkLibStrings.MP2 | awsDashSdkLib.awsDashSdkLibStrings.WAV | awsDashSdkLib.awsDashSdkLibStrings.AIFF | awsDashSdkLib.awsDashSdkLibStrings.AC3 | awsDashSdkLib.awsDashSdkLibStrings.EAC3 | awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH | java.lang.String
-  type AudioDefaultSelection = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.NOT_DEFAULT | java.lang.String
-  type AudioLanguageCodeControl = awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_INPUT | awsDashSdkLib.awsDashSdkLibStrings.USE_CONFIGURED | java.lang.String
-  type AudioNormalizationAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_1 | awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_2 | java.lang.String
-  type AudioNormalizationAlgorithmControl = awsDashSdkLib.awsDashSdkLibStrings.CORRECT_AUDIO | awsDashSdkLib.awsDashSdkLibStrings.MEASURE_ONLY | java.lang.String
-  type AudioNormalizationLoudnessLogging = awsDashSdkLib.awsDashSdkLibStrings.LOG | awsDashSdkLib.awsDashSdkLibStrings.DONT_LOG | java.lang.String
-  type AudioNormalizationPeakCalculation = awsDashSdkLib.awsDashSdkLibStrings.TRUE_PEAK | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type AudioSelectorType = awsDashSdkLib.awsDashSdkLibStrings.PID | awsDashSdkLib.awsDashSdkLibStrings.TRACK | awsDashSdkLib.awsDashSdkLibStrings.LANGUAGE_CODE | java.lang.String
-  type AudioTypeControl = awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_INPUT | awsDashSdkLib.awsDashSdkLibStrings.USE_CONFIGURED | java.lang.String
-  type BillingTagsSource = awsDashSdkLib.awsDashSdkLibStrings.QUEUE | awsDashSdkLib.awsDashSdkLibStrings.PRESET | awsDashSdkLib.awsDashSdkLibStrings.JOB_TEMPLATE | java.lang.String
-  type BurninSubtitleAlignment = awsDashSdkLib.awsDashSdkLibStrings.CENTERED | awsDashSdkLib.awsDashSdkLibStrings.LEFT | java.lang.String
-  type BurninSubtitleBackgroundColor = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.WHITE | java.lang.String
-  type BurninSubtitleFontColor = awsDashSdkLib.awsDashSdkLibStrings.WHITE | awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.YELLOW | awsDashSdkLib.awsDashSdkLibStrings.RED | awsDashSdkLib.awsDashSdkLibStrings.GREEN | awsDashSdkLib.awsDashSdkLibStrings.BLUE | java.lang.String
-  type BurninSubtitleOutlineColor = awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.WHITE | awsDashSdkLib.awsDashSdkLibStrings.YELLOW | awsDashSdkLib.awsDashSdkLibStrings.RED | awsDashSdkLib.awsDashSdkLibStrings.GREEN | awsDashSdkLib.awsDashSdkLibStrings.BLUE | java.lang.String
-  type BurninSubtitleShadowColor = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.WHITE | java.lang.String
-  type BurninSubtitleTeletextSpacing = awsDashSdkLib.awsDashSdkLibStrings.FIXED_GRID | awsDashSdkLib.awsDashSdkLibStrings.PROPORTIONAL | java.lang.String
-  type CaptionDestinationType = awsDashSdkLib.awsDashSdkLibStrings.BURN_IN | awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED_PLUS_SCTE20 | awsDashSdkLib.awsDashSdkLibStrings.SCTE20_PLUS_EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.SCC | awsDashSdkLib.awsDashSdkLibStrings.SRT | awsDashSdkLib.awsDashSdkLibStrings.SMI | awsDashSdkLib.awsDashSdkLibStrings.TELETEXT | awsDashSdkLib.awsDashSdkLibStrings.TTML | awsDashSdkLib.awsDashSdkLibStrings.WEBVTT | java.lang.String
-  type CaptionSourceType = awsDashSdkLib.awsDashSdkLibStrings.ANCILLARY | awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.SCTE20 | awsDashSdkLib.awsDashSdkLibStrings.SCC | awsDashSdkLib.awsDashSdkLibStrings.TTML | awsDashSdkLib.awsDashSdkLibStrings.STL | awsDashSdkLib.awsDashSdkLibStrings.SRT | awsDashSdkLib.awsDashSdkLibStrings.SMI | awsDashSdkLib.awsDashSdkLibStrings.TELETEXT | awsDashSdkLib.awsDashSdkLibStrings.NULL_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.IMSC | java.lang.String
+  type AacAudioDescriptionBroadcasterMix = _AacAudioDescriptionBroadcasterMix | java.lang.String
+  type AacCodecProfile = _AacCodecProfile | java.lang.String
+  type AacCodingMode = _AacCodingMode | java.lang.String
+  type AacRateControlMode = _AacRateControlMode | java.lang.String
+  type AacRawFormat = _AacRawFormat | java.lang.String
+  type AacSpecification = _AacSpecification | java.lang.String
+  type AacVbrQuality = _AacVbrQuality | java.lang.String
+  type Ac3BitstreamMode = _Ac3BitstreamMode | java.lang.String
+  type Ac3CodingMode = _Ac3CodingMode | java.lang.String
+  type Ac3DynamicRangeCompressionProfile = _Ac3DynamicRangeCompressionProfile | java.lang.String
+  type Ac3LfeFilter = _Ac3LfeFilter | java.lang.String
+  type Ac3MetadataControl = _Ac3MetadataControl | java.lang.String
+  type AccelerationMode = _AccelerationMode | java.lang.String
+  type AfdSignaling = _AfdSignaling | java.lang.String
+  type AntiAlias = _AntiAlias | java.lang.String
+  type AudioCodec = _AudioCodec | java.lang.String
+  type AudioDefaultSelection = _AudioDefaultSelection | java.lang.String
+  type AudioLanguageCodeControl = _AudioLanguageCodeControl | java.lang.String
+  type AudioNormalizationAlgorithm = _AudioNormalizationAlgorithm | java.lang.String
+  type AudioNormalizationAlgorithmControl = _AudioNormalizationAlgorithmControl | java.lang.String
+  type AudioNormalizationLoudnessLogging = _AudioNormalizationLoudnessLogging | java.lang.String
+  type AudioNormalizationPeakCalculation = _AudioNormalizationPeakCalculation | java.lang.String
+  type AudioSelectorType = _AudioSelectorType | java.lang.String
+  type AudioTypeControl = _AudioTypeControl | java.lang.String
+  type BillingTagsSource = _BillingTagsSource | java.lang.String
+  type BurninSubtitleAlignment = _BurninSubtitleAlignment | java.lang.String
+  type BurninSubtitleBackgroundColor = _BurninSubtitleBackgroundColor | java.lang.String
+  type BurninSubtitleFontColor = _BurninSubtitleFontColor | java.lang.String
+  type BurninSubtitleOutlineColor = _BurninSubtitleOutlineColor | java.lang.String
+  type BurninSubtitleShadowColor = _BurninSubtitleShadowColor | java.lang.String
+  type BurninSubtitleTeletextSpacing = _BurninSubtitleTeletextSpacing | java.lang.String
+  type CaptionDestinationType = _CaptionDestinationType | java.lang.String
+  type CaptionSourceType = _CaptionSourceType | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type CmafClientCache = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type CmafCodecSpecification = awsDashSdkLib.awsDashSdkLibStrings.RFC_6381 | awsDashSdkLib.awsDashSdkLibStrings.RFC_4281 | java.lang.String
+  type CmafClientCache = _CmafClientCache | java.lang.String
+  type CmafCodecSpecification = _CmafCodecSpecification | java.lang.String
   type CmafEncryptionType = awsDashSdkLib.awsDashSdkLibStrings.SAMPLE_AES | java.lang.String
-  type CmafInitializationVectorInManifest = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
+  type CmafInitializationVectorInManifest = _CmafInitializationVectorInManifest | java.lang.String
   type CmafKeyProviderType = awsDashSdkLib.awsDashSdkLibStrings.STATIC_KEY | java.lang.String
-  type CmafManifestCompression = awsDashSdkLib.awsDashSdkLibStrings.GZIP | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type CmafManifestDurationFormat = awsDashSdkLib.awsDashSdkLibStrings.FLOATING_POINT | awsDashSdkLib.awsDashSdkLibStrings.INTEGER | java.lang.String
-  type CmafSegmentControl = awsDashSdkLib.awsDashSdkLibStrings.SINGLE_FILE | awsDashSdkLib.awsDashSdkLibStrings.SEGMENTED_FILES | java.lang.String
-  type CmafStreamInfResolution = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type CmafWriteDASHManifest = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type CmafWriteHLSManifest = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type ColorMetadata = awsDashSdkLib.awsDashSdkLibStrings.IGNORE | awsDashSdkLib.awsDashSdkLibStrings.INSERT | java.lang.String
-  type ColorSpace = awsDashSdkLib.awsDashSdkLibStrings.FOLLOW | awsDashSdkLib.awsDashSdkLibStrings.REC_601 | awsDashSdkLib.awsDashSdkLibStrings.REC_709 | awsDashSdkLib.awsDashSdkLibStrings.HDR10 | awsDashSdkLib.awsDashSdkLibStrings.HLG_2020 | java.lang.String
-  type ColorSpaceConversion = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.FORCE_601 | awsDashSdkLib.awsDashSdkLibStrings.FORCE_709 | awsDashSdkLib.awsDashSdkLibStrings.FORCE_HDR10 | awsDashSdkLib.awsDashSdkLibStrings.FORCE_HLG_2020 | java.lang.String
-  type ColorSpaceUsage = awsDashSdkLib.awsDashSdkLibStrings.FORCE | awsDashSdkLib.awsDashSdkLibStrings.FALLBACK | java.lang.String
+  type CmafManifestCompression = _CmafManifestCompression | java.lang.String
+  type CmafManifestDurationFormat = _CmafManifestDurationFormat | java.lang.String
+  type CmafSegmentControl = _CmafSegmentControl | java.lang.String
+  type CmafStreamInfResolution = _CmafStreamInfResolution | java.lang.String
+  type CmafWriteDASHManifest = _CmafWriteDASHManifest | java.lang.String
+  type CmafWriteHLSManifest = _CmafWriteHLSManifest | java.lang.String
+  type ColorMetadata = _ColorMetadata | java.lang.String
+  type ColorSpace = _ColorSpace | java.lang.String
+  type ColorSpaceConversion = _ColorSpaceConversion | java.lang.String
+  type ColorSpaceUsage = _ColorSpaceUsage | java.lang.String
   type Commitment = awsDashSdkLib.awsDashSdkLibStrings.ONE_YEAR | java.lang.String
-  type ContainerType = awsDashSdkLib.awsDashSdkLibStrings.F4V | awsDashSdkLib.awsDashSdkLibStrings.ISMV | awsDashSdkLib.awsDashSdkLibStrings.M2TS | awsDashSdkLib.awsDashSdkLibStrings.M3U8 | awsDashSdkLib.awsDashSdkLibStrings.CMFC | awsDashSdkLib.awsDashSdkLibStrings.MOV | awsDashSdkLib.awsDashSdkLibStrings.MP4 | awsDashSdkLib.awsDashSdkLibStrings.MPD | awsDashSdkLib.awsDashSdkLibStrings.MXF | awsDashSdkLib.awsDashSdkLibStrings.RAW | java.lang.String
-  type DashIsoHbbtvCompliance = awsDashSdkLib.awsDashSdkLibStrings.HBBTV_1_5 | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type DashIsoSegmentControl = awsDashSdkLib.awsDashSdkLibStrings.SINGLE_FILE | awsDashSdkLib.awsDashSdkLibStrings.SEGMENTED_FILES | java.lang.String
-  type DashIsoWriteSegmentTimelineInRepresentation = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type DecryptionMode = awsDashSdkLib.awsDashSdkLibStrings.AES_CTR | awsDashSdkLib.awsDashSdkLibStrings.AES_CBC | awsDashSdkLib.awsDashSdkLibStrings.AES_GCM | java.lang.String
-  type DeinterlaceAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE | awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE_TICKER | awsDashSdkLib.awsDashSdkLibStrings.BLEND | awsDashSdkLib.awsDashSdkLibStrings.BLEND_TICKER | java.lang.String
-  type DeinterlacerControl = awsDashSdkLib.awsDashSdkLibStrings.FORCE_ALL_FRAMES | awsDashSdkLib.awsDashSdkLibStrings.NORMAL | java.lang.String
-  type DeinterlacerMode = awsDashSdkLib.awsDashSdkLibStrings.DEINTERLACE | awsDashSdkLib.awsDashSdkLibStrings.INVERSE_TELECINE | awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE | java.lang.String
-  type DescribeEndpointsMode = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.GET_ONLY | java.lang.String
-  type DropFrameTimecode = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type DvbSubtitleAlignment = awsDashSdkLib.awsDashSdkLibStrings.CENTERED | awsDashSdkLib.awsDashSdkLibStrings.LEFT | java.lang.String
-  type DvbSubtitleBackgroundColor = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.WHITE | java.lang.String
-  type DvbSubtitleFontColor = awsDashSdkLib.awsDashSdkLibStrings.WHITE | awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.YELLOW | awsDashSdkLib.awsDashSdkLibStrings.RED | awsDashSdkLib.awsDashSdkLibStrings.GREEN | awsDashSdkLib.awsDashSdkLibStrings.BLUE | java.lang.String
-  type DvbSubtitleOutlineColor = awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.WHITE | awsDashSdkLib.awsDashSdkLibStrings.YELLOW | awsDashSdkLib.awsDashSdkLibStrings.RED | awsDashSdkLib.awsDashSdkLibStrings.GREEN | awsDashSdkLib.awsDashSdkLibStrings.BLUE | java.lang.String
-  type DvbSubtitleShadowColor = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.WHITE | java.lang.String
-  type DvbSubtitleTeletextSpacing = awsDashSdkLib.awsDashSdkLibStrings.FIXED_GRID | awsDashSdkLib.awsDashSdkLibStrings.PROPORTIONAL | java.lang.String
-  type Eac3AttenuationControl = awsDashSdkLib.awsDashSdkLibStrings.ATTENUATE_3_DB | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type Eac3BitstreamMode = awsDashSdkLib.awsDashSdkLibStrings.COMPLETE_MAIN | awsDashSdkLib.awsDashSdkLibStrings.COMMENTARY | awsDashSdkLib.awsDashSdkLibStrings.EMERGENCY | awsDashSdkLib.awsDashSdkLibStrings.HEARING_IMPAIRED | awsDashSdkLib.awsDashSdkLibStrings.VISUALLY_IMPAIRED | java.lang.String
-  type Eac3CodingMode = awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_0 | awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_2_0 | awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_3_2 | java.lang.String
-  type Eac3DcFilter = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type Eac3DynamicRangeCompressionLine = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.FILM_STANDARD | awsDashSdkLib.awsDashSdkLibStrings.FILM_LIGHT | awsDashSdkLib.awsDashSdkLibStrings.MUSIC_STANDARD | awsDashSdkLib.awsDashSdkLibStrings.MUSIC_LIGHT | awsDashSdkLib.awsDashSdkLibStrings.SPEECH | java.lang.String
-  type Eac3DynamicRangeCompressionRf = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.FILM_STANDARD | awsDashSdkLib.awsDashSdkLibStrings.FILM_LIGHT | awsDashSdkLib.awsDashSdkLibStrings.MUSIC_STANDARD | awsDashSdkLib.awsDashSdkLibStrings.MUSIC_LIGHT | awsDashSdkLib.awsDashSdkLibStrings.SPEECH | java.lang.String
-  type Eac3LfeControl = awsDashSdkLib.awsDashSdkLibStrings.LFE | awsDashSdkLib.awsDashSdkLibStrings.NO_LFE | java.lang.String
-  type Eac3LfeFilter = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type Eac3MetadataControl = awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_INPUT | awsDashSdkLib.awsDashSdkLibStrings.USE_CONFIGURED | java.lang.String
-  type Eac3PassthroughControl = awsDashSdkLib.awsDashSdkLibStrings.WHEN_POSSIBLE | awsDashSdkLib.awsDashSdkLibStrings.NO_PASSTHROUGH | java.lang.String
-  type Eac3PhaseControl = awsDashSdkLib.awsDashSdkLibStrings.SHIFT_90_DEGREES | awsDashSdkLib.awsDashSdkLibStrings.NO_SHIFT | java.lang.String
-  type Eac3StereoDownmix = awsDashSdkLib.awsDashSdkLibStrings.NOT_INDICATED | awsDashSdkLib.awsDashSdkLibStrings.LO_RO | awsDashSdkLib.awsDashSdkLibStrings.LT_RT | awsDashSdkLib.awsDashSdkLibStrings.DPL2 | java.lang.String
-  type Eac3SurroundExMode = awsDashSdkLib.awsDashSdkLibStrings.NOT_INDICATED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type Eac3SurroundMode = awsDashSdkLib.awsDashSdkLibStrings.NOT_INDICATED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type EmbeddedConvert608To708 = awsDashSdkLib.awsDashSdkLibStrings.UPCONVERT | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type F4vMoovPlacement = awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE_DOWNLOAD | awsDashSdkLib.awsDashSdkLibStrings.NORMAL | java.lang.String
-  type FileSourceConvert608To708 = awsDashSdkLib.awsDashSdkLibStrings.UPCONVERT | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type FontScript = awsDashSdkLib.awsDashSdkLibStrings.AUTOMATIC | awsDashSdkLib.awsDashSdkLibStrings.HANS | awsDashSdkLib.awsDashSdkLibStrings.HANT | java.lang.String
-  type H264AdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.LOW | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.HIGH | awsDashSdkLib.awsDashSdkLibStrings.HIGHER | awsDashSdkLib.awsDashSdkLibStrings.MAX | java.lang.String
-  type H264CodecLevel = awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1_3 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_2 | java.lang.String
-  type H264CodecProfile = awsDashSdkLib.awsDashSdkLibStrings.BASELINE | awsDashSdkLib.awsDashSdkLibStrings.HIGH | awsDashSdkLib.awsDashSdkLibStrings.HIGH_10BIT | awsDashSdkLib.awsDashSdkLibStrings.HIGH_422 | awsDashSdkLib.awsDashSdkLibStrings.HIGH_422_10BIT | awsDashSdkLib.awsDashSdkLibStrings.MAIN | java.lang.String
-  type H264DynamicSubGop = awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE | awsDashSdkLib.awsDashSdkLibStrings.STATIC | java.lang.String
-  type H264EntropyEncoding = awsDashSdkLib.awsDashSdkLibStrings.CABAC | awsDashSdkLib.awsDashSdkLibStrings.CAVLC | java.lang.String
-  type H264FieldEncoding = awsDashSdkLib.awsDashSdkLibStrings.PAFF | awsDashSdkLib.awsDashSdkLibStrings.FORCE_FIELD | java.lang.String
-  type H264FlickerAdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H264FramerateControl = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED | java.lang.String
-  type H264FramerateConversionAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_DROP | awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE | java.lang.String
-  type H264GopBReference = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H264GopSizeUnits = awsDashSdkLib.awsDashSdkLibStrings.FRAMES | awsDashSdkLib.awsDashSdkLibStrings.SECONDS | java.lang.String
-  type H264InterlaceMode = awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE | awsDashSdkLib.awsDashSdkLibStrings.TOP_FIELD | awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_FIELD | awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_TOP_FIELD | awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_BOTTOM_FIELD | java.lang.String
-  type H264ParControl = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED | java.lang.String
-  type H264QualityTuningLevel = awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS | awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS_HQ | awsDashSdkLib.awsDashSdkLibStrings.MULTI_PASS_HQ | java.lang.String
-  type H264RateControlMode = awsDashSdkLib.awsDashSdkLibStrings.VBR | awsDashSdkLib.awsDashSdkLibStrings.CBR | awsDashSdkLib.awsDashSdkLibStrings.QVBR | java.lang.String
-  type H264RepeatPps = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H264SceneChangeDetect = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H264SlowPal = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H264SpatialAdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H264Syntax = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.RP2027 | java.lang.String
-  type H264Telecine = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.SOFT | awsDashSdkLib.awsDashSdkLibStrings.HARD | java.lang.String
-  type H264TemporalAdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H264UnregisteredSeiTimecode = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265AdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.LOW | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.HIGH | awsDashSdkLib.awsDashSdkLibStrings.HIGHER | awsDashSdkLib.awsDashSdkLibStrings.MAX | java.lang.String
-  type H265AlternateTransferFunctionSei = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265CodecLevel = awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_6 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_6_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_6_2 | java.lang.String
-  type H265CodecProfile = awsDashSdkLib.awsDashSdkLibStrings.MAIN_MAIN | awsDashSdkLib.awsDashSdkLibStrings.MAIN_HIGH | awsDashSdkLib.awsDashSdkLibStrings.MAIN10_MAIN | awsDashSdkLib.awsDashSdkLibStrings.MAIN10_HIGH | awsDashSdkLib.awsDashSdkLibStrings.MAIN_422_8BIT_MAIN | awsDashSdkLib.awsDashSdkLibStrings.MAIN_422_8BIT_HIGH | awsDashSdkLib.awsDashSdkLibStrings.MAIN_422_10BIT_MAIN | awsDashSdkLib.awsDashSdkLibStrings.MAIN_422_10BIT_HIGH | java.lang.String
-  type H265DynamicSubGop = awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE | awsDashSdkLib.awsDashSdkLibStrings.STATIC | java.lang.String
-  type H265FlickerAdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265FramerateControl = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED | java.lang.String
-  type H265FramerateConversionAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_DROP | awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE | java.lang.String
-  type H265GopBReference = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265GopSizeUnits = awsDashSdkLib.awsDashSdkLibStrings.FRAMES | awsDashSdkLib.awsDashSdkLibStrings.SECONDS | java.lang.String
-  type H265InterlaceMode = awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE | awsDashSdkLib.awsDashSdkLibStrings.TOP_FIELD | awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_FIELD | awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_TOP_FIELD | awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_BOTTOM_FIELD | java.lang.String
-  type H265ParControl = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED | java.lang.String
-  type H265QualityTuningLevel = awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS | awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS_HQ | awsDashSdkLib.awsDashSdkLibStrings.MULTI_PASS_HQ | java.lang.String
-  type H265RateControlMode = awsDashSdkLib.awsDashSdkLibStrings.VBR | awsDashSdkLib.awsDashSdkLibStrings.CBR | awsDashSdkLib.awsDashSdkLibStrings.QVBR | java.lang.String
-  type H265SampleAdaptiveOffsetFilterMode = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE | awsDashSdkLib.awsDashSdkLibStrings.OFF | java.lang.String
-  type H265SceneChangeDetect = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265SlowPal = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265SpatialAdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265Telecine = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.SOFT | awsDashSdkLib.awsDashSdkLibStrings.HARD | java.lang.String
-  type H265TemporalAdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265TemporalIds = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265Tiles = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265UnregisteredSeiTimecode = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type H265WriteMp4PackagingType = awsDashSdkLib.awsDashSdkLibStrings.HVC1 | awsDashSdkLib.awsDashSdkLibStrings.HEV1 | java.lang.String
-  type HlsAdMarkers = awsDashSdkLib.awsDashSdkLibStrings.ELEMENTAL | awsDashSdkLib.awsDashSdkLibStrings.ELEMENTAL_SCTE35 | java.lang.String
-  type HlsAudioTrackType = awsDashSdkLib.awsDashSdkLibStrings.ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.ALTERNATE_AUDIO_AUTO_SELECT | awsDashSdkLib.awsDashSdkLibStrings.ALTERNATE_AUDIO_NOT_AUTO_SELECT | awsDashSdkLib.awsDashSdkLibStrings.AUDIO_ONLY_VARIANT_STREAM | java.lang.String
-  type HlsCaptionLanguageSetting = awsDashSdkLib.awsDashSdkLibStrings.INSERT | awsDashSdkLib.awsDashSdkLibStrings.OMIT | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type HlsClientCache = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type HlsCodecSpecification = awsDashSdkLib.awsDashSdkLibStrings.RFC_6381 | awsDashSdkLib.awsDashSdkLibStrings.RFC_4281 | java.lang.String
-  type HlsDirectoryStructure = awsDashSdkLib.awsDashSdkLibStrings.SINGLE_DIRECTORY | awsDashSdkLib.awsDashSdkLibStrings.SUBDIRECTORY_PER_STREAM | java.lang.String
-  type HlsEncryptionType = awsDashSdkLib.awsDashSdkLibStrings.AES128 | awsDashSdkLib.awsDashSdkLibStrings.SAMPLE_AES | java.lang.String
-  type HlsIFrameOnlyManifest = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type HlsInitializationVectorInManifest = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type HlsKeyProviderType = awsDashSdkLib.awsDashSdkLibStrings.SPEKE | awsDashSdkLib.awsDashSdkLibStrings.STATIC_KEY | java.lang.String
-  type HlsManifestCompression = awsDashSdkLib.awsDashSdkLibStrings.GZIP | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type HlsManifestDurationFormat = awsDashSdkLib.awsDashSdkLibStrings.FLOATING_POINT | awsDashSdkLib.awsDashSdkLibStrings.INTEGER | java.lang.String
-  type HlsOfflineEncrypted = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type HlsOutputSelection = awsDashSdkLib.awsDashSdkLibStrings.MANIFESTS_AND_SEGMENTS | awsDashSdkLib.awsDashSdkLibStrings.SEGMENTS_ONLY | java.lang.String
-  type HlsProgramDateTime = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type HlsSegmentControl = awsDashSdkLib.awsDashSdkLibStrings.SINGLE_FILE | awsDashSdkLib.awsDashSdkLibStrings.SEGMENTED_FILES | java.lang.String
-  type HlsStreamInfResolution = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type HlsTimedMetadataId3Frame = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.PRIV | awsDashSdkLib.awsDashSdkLibStrings.TDRL | java.lang.String
-  type InputDeblockFilter = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type InputDenoiseFilter = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type InputFilterEnable = awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.DISABLE | awsDashSdkLib.awsDashSdkLibStrings.FORCE | java.lang.String
-  type InputPsiControl = awsDashSdkLib.awsDashSdkLibStrings.IGNORE_PSI | awsDashSdkLib.awsDashSdkLibStrings.USE_PSI | java.lang.String
-  type InputRotate = awsDashSdkLib.awsDashSdkLibStrings.DEGREE_0 | awsDashSdkLib.awsDashSdkLibStrings.DEGREES_90 | awsDashSdkLib.awsDashSdkLibStrings.DEGREES_180 | awsDashSdkLib.awsDashSdkLibStrings.DEGREES_270 | awsDashSdkLib.awsDashSdkLibStrings.AUTO | java.lang.String
-  type InputTimecodeSource = awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.ZEROBASED | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIEDSTART | java.lang.String
-  type JobStatus = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.PROGRESSING | awsDashSdkLib.awsDashSdkLibStrings.COMPLETE | awsDashSdkLib.awsDashSdkLibStrings.CANCELED | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
-  type JobTemplateListBy = awsDashSdkLib.awsDashSdkLibStrings.NAME | awsDashSdkLib.awsDashSdkLibStrings.CREATION_DATE | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | java.lang.String
-  type LanguageCode = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 192 */ js.Any
-  type M2tsAudioBufferModel = awsDashSdkLib.awsDashSdkLibStrings.DVB | awsDashSdkLib.awsDashSdkLibStrings.ATSC | java.lang.String
-  type M2tsBufferModel = awsDashSdkLib.awsDashSdkLibStrings.MULTIPLEX | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type M2tsEbpAudioInterval = awsDashSdkLib.awsDashSdkLibStrings.VIDEO_AND_FIXED_INTERVALS | awsDashSdkLib.awsDashSdkLibStrings.VIDEO_INTERVAL | java.lang.String
-  type M2tsEbpPlacement = awsDashSdkLib.awsDashSdkLibStrings.VIDEO_AND_AUDIO_PIDS | awsDashSdkLib.awsDashSdkLibStrings.VIDEO_PID | java.lang.String
-  type M2tsEsRateInPes = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type M2tsForceTsVideoEbpOrder = awsDashSdkLib.awsDashSdkLibStrings.FORCE | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | java.lang.String
-  type M2tsNielsenId3 = awsDashSdkLib.awsDashSdkLibStrings.INSERT | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type M2tsPcrControl = awsDashSdkLib.awsDashSdkLibStrings.PCR_EVERY_PES_PACKET | awsDashSdkLib.awsDashSdkLibStrings.CONFIGURED_PCR_PERIOD | java.lang.String
-  type M2tsRateMode = awsDashSdkLib.awsDashSdkLibStrings.VBR | awsDashSdkLib.awsDashSdkLibStrings.CBR | java.lang.String
-  type M2tsScte35Source = awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type M2tsSegmentationMarkers = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.RAI_SEGSTART | awsDashSdkLib.awsDashSdkLibStrings.RAI_ADAPT | awsDashSdkLib.awsDashSdkLibStrings.PSI_SEGSTART | awsDashSdkLib.awsDashSdkLibStrings.EBP | awsDashSdkLib.awsDashSdkLibStrings.EBP_LEGACY | java.lang.String
-  type M2tsSegmentationStyle = awsDashSdkLib.awsDashSdkLibStrings.MAINTAIN_CADENCE | awsDashSdkLib.awsDashSdkLibStrings.RESET_CADENCE | java.lang.String
-  type M3u8NielsenId3 = awsDashSdkLib.awsDashSdkLibStrings.INSERT | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type M3u8PcrControl = awsDashSdkLib.awsDashSdkLibStrings.PCR_EVERY_PES_PACKET | awsDashSdkLib.awsDashSdkLibStrings.CONFIGURED_PCR_PERIOD | java.lang.String
-  type M3u8Scte35Source = awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type MotionImageInsertionMode = awsDashSdkLib.awsDashSdkLibStrings.MOV | awsDashSdkLib.awsDashSdkLibStrings.PNG | java.lang.String
-  type MotionImagePlayback = awsDashSdkLib.awsDashSdkLibStrings.ONCE | awsDashSdkLib.awsDashSdkLibStrings.REPEAT | java.lang.String
-  type MovClapAtom = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type MovCslgAtom = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type MovMpeg2FourCCControl = awsDashSdkLib.awsDashSdkLibStrings.XDCAM | awsDashSdkLib.awsDashSdkLibStrings.MPEG | java.lang.String
-  type MovPaddingControl = awsDashSdkLib.awsDashSdkLibStrings.OMNEON | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type MovReference = awsDashSdkLib.awsDashSdkLibStrings.SELF_CONTAINED | awsDashSdkLib.awsDashSdkLibStrings.EXTERNAL | java.lang.String
-  type Mp4CslgAtom = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type Mp4FreeSpaceBox = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
-  type Mp4MoovPlacement = awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE_DOWNLOAD | awsDashSdkLib.awsDashSdkLibStrings.NORMAL | java.lang.String
-  type Mpeg2AdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.LOW | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.HIGH | java.lang.String
-  type Mpeg2CodecLevel = awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.LOW | awsDashSdkLib.awsDashSdkLibStrings.MAIN | awsDashSdkLib.awsDashSdkLibStrings.HIGH1440 | awsDashSdkLib.awsDashSdkLibStrings.HIGH | java.lang.String
-  type Mpeg2CodecProfile = awsDashSdkLib.awsDashSdkLibStrings.MAIN | awsDashSdkLib.awsDashSdkLibStrings.PROFILE_422 | java.lang.String
-  type Mpeg2DynamicSubGop = awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE | awsDashSdkLib.awsDashSdkLibStrings.STATIC | java.lang.String
-  type Mpeg2FramerateControl = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED | java.lang.String
-  type Mpeg2FramerateConversionAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_DROP | awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE | java.lang.String
-  type Mpeg2GopSizeUnits = awsDashSdkLib.awsDashSdkLibStrings.FRAMES | awsDashSdkLib.awsDashSdkLibStrings.SECONDS | java.lang.String
-  type Mpeg2InterlaceMode = awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE | awsDashSdkLib.awsDashSdkLibStrings.TOP_FIELD | awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_FIELD | awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_TOP_FIELD | awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_BOTTOM_FIELD | java.lang.String
-  type Mpeg2IntraDcPrecision = awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.INTRA_DC_PRECISION_8 | awsDashSdkLib.awsDashSdkLibStrings.INTRA_DC_PRECISION_9 | awsDashSdkLib.awsDashSdkLibStrings.INTRA_DC_PRECISION_10 | awsDashSdkLib.awsDashSdkLibStrings.INTRA_DC_PRECISION_11 | java.lang.String
-  type Mpeg2ParControl = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED | java.lang.String
-  type Mpeg2QualityTuningLevel = awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS | awsDashSdkLib.awsDashSdkLibStrings.MULTI_PASS | java.lang.String
-  type Mpeg2RateControlMode = awsDashSdkLib.awsDashSdkLibStrings.VBR | awsDashSdkLib.awsDashSdkLibStrings.CBR | java.lang.String
-  type Mpeg2SceneChangeDetect = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type Mpeg2SlowPal = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type Mpeg2SpatialAdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type Mpeg2Syntax = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.D_10 | java.lang.String
-  type Mpeg2Telecine = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.SOFT | awsDashSdkLib.awsDashSdkLibStrings.HARD | java.lang.String
-  type Mpeg2TemporalAdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type MsSmoothAudioDeduplication = awsDashSdkLib.awsDashSdkLibStrings.COMBINE_DUPLICATE_STREAMS | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type MsSmoothManifestEncoding = awsDashSdkLib.awsDashSdkLibStrings.UTF8 | awsDashSdkLib.awsDashSdkLibStrings.UTF16 | java.lang.String
-  type NoiseReducerFilter = awsDashSdkLib.awsDashSdkLibStrings.BILATERAL | awsDashSdkLib.awsDashSdkLibStrings.MEAN | awsDashSdkLib.awsDashSdkLibStrings.GAUSSIAN | awsDashSdkLib.awsDashSdkLibStrings.LANCZOS | awsDashSdkLib.awsDashSdkLibStrings.SHARPEN | awsDashSdkLib.awsDashSdkLibStrings.CONSERVE | awsDashSdkLib.awsDashSdkLibStrings.SPATIAL | java.lang.String
-  type Order = awsDashSdkLib.awsDashSdkLibStrings.ASCENDING | awsDashSdkLib.awsDashSdkLibStrings.DESCENDING | java.lang.String
-  type OutputGroupType = awsDashSdkLib.awsDashSdkLibStrings.HLS_GROUP_SETTINGS | awsDashSdkLib.awsDashSdkLibStrings.DASH_ISO_GROUP_SETTINGS | awsDashSdkLib.awsDashSdkLibStrings.FILE_GROUP_SETTINGS | awsDashSdkLib.awsDashSdkLibStrings.MS_SMOOTH_GROUP_SETTINGS | awsDashSdkLib.awsDashSdkLibStrings.CMAF_GROUP_SETTINGS | java.lang.String
-  type OutputSdt = awsDashSdkLib.awsDashSdkLibStrings.SDT_FOLLOW | awsDashSdkLib.awsDashSdkLibStrings.SDT_FOLLOW_IF_PRESENT | awsDashSdkLib.awsDashSdkLibStrings.SDT_MANUAL | awsDashSdkLib.awsDashSdkLibStrings.SDT_NONE | java.lang.String
-  type PresetListBy = awsDashSdkLib.awsDashSdkLibStrings.NAME | awsDashSdkLib.awsDashSdkLibStrings.CREATION_DATE | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | java.lang.String
-  type PricingPlan = awsDashSdkLib.awsDashSdkLibStrings.ON_DEMAND | awsDashSdkLib.awsDashSdkLibStrings.RESERVED | java.lang.String
-  type ProresCodecProfile = awsDashSdkLib.awsDashSdkLibStrings.APPLE_PRORES_422 | awsDashSdkLib.awsDashSdkLibStrings.APPLE_PRORES_422_HQ | awsDashSdkLib.awsDashSdkLibStrings.APPLE_PRORES_422_LT | awsDashSdkLib.awsDashSdkLibStrings.APPLE_PRORES_422_PROXY | java.lang.String
-  type ProresFramerateControl = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED | java.lang.String
-  type ProresFramerateConversionAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_DROP | awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE | java.lang.String
-  type ProresInterlaceMode = awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE | awsDashSdkLib.awsDashSdkLibStrings.TOP_FIELD | awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_FIELD | awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_TOP_FIELD | awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_BOTTOM_FIELD | java.lang.String
-  type ProresParControl = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED | java.lang.String
-  type ProresSlowPal = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type ProresTelecine = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.HARD | java.lang.String
-  type QueueListBy = awsDashSdkLib.awsDashSdkLibStrings.NAME | awsDashSdkLib.awsDashSdkLibStrings.CREATION_DATE | java.lang.String
-  type QueueStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.PAUSED | java.lang.String
-  type RenewalType = awsDashSdkLib.awsDashSdkLibStrings.AUTO_RENEW | awsDashSdkLib.awsDashSdkLibStrings.EXPIRE | java.lang.String
-  type ReservationPlanStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.EXPIRED | java.lang.String
-  type RespondToAfd = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.RESPOND | awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH | java.lang.String
-  type ScalingBehavior = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.STRETCH_TO_OUTPUT | java.lang.String
-  type SccDestinationFramerate = awsDashSdkLib.awsDashSdkLibStrings.FRAMERATE_23_97 | awsDashSdkLib.awsDashSdkLibStrings.FRAMERATE_24 | awsDashSdkLib.awsDashSdkLibStrings.FRAMERATE_29_97_DROPFRAME | awsDashSdkLib.awsDashSdkLibStrings.FRAMERATE_29_97_NON_DROPFRAME | java.lang.String
-  type TimecodeBurninPosition = awsDashSdkLib.awsDashSdkLibStrings.TOP_CENTER | awsDashSdkLib.awsDashSdkLibStrings.TOP_LEFT | awsDashSdkLib.awsDashSdkLibStrings.TOP_RIGHT | awsDashSdkLib.awsDashSdkLibStrings.MIDDLE_LEFT | awsDashSdkLib.awsDashSdkLibStrings.MIDDLE_CENTER | awsDashSdkLib.awsDashSdkLibStrings.MIDDLE_RIGHT | awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_LEFT | awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_CENTER | awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_RIGHT | java.lang.String
-  type TimecodeSource = awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.ZEROBASED | awsDashSdkLib.awsDashSdkLibStrings.SPECIFIEDSTART | java.lang.String
-  type TimedMetadata = awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
-  type TtmlStylePassthrough = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
-  type Type = awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM | java.lang.String
-  type VideoCodec = awsDashSdkLib.awsDashSdkLibStrings.FRAME_CAPTURE | awsDashSdkLib.awsDashSdkLibStrings.H_264 | awsDashSdkLib.awsDashSdkLibStrings.H_265 | awsDashSdkLib.awsDashSdkLibStrings.MPEG2 | awsDashSdkLib.awsDashSdkLibStrings.PRORES | java.lang.String
-  type VideoTimecodeInsertion = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.PIC_TIMING_SEI | java.lang.String
-  type WavFormat = awsDashSdkLib.awsDashSdkLibStrings.RIFF | awsDashSdkLib.awsDashSdkLibStrings.RF64 | java.lang.String
+  type ContainerType = _ContainerType | java.lang.String
+  type DashIsoHbbtvCompliance = _DashIsoHbbtvCompliance | java.lang.String
+  type DashIsoSegmentControl = _DashIsoSegmentControl | java.lang.String
+  type DashIsoWriteSegmentTimelineInRepresentation = _DashIsoWriteSegmentTimelineInRepresentation | java.lang.String
+  type DecryptionMode = _DecryptionMode | java.lang.String
+  type DeinterlaceAlgorithm = _DeinterlaceAlgorithm | java.lang.String
+  type DeinterlacerControl = _DeinterlacerControl | java.lang.String
+  type DeinterlacerMode = _DeinterlacerMode | java.lang.String
+  type DescribeEndpointsMode = _DescribeEndpointsMode | java.lang.String
+  type DropFrameTimecode = _DropFrameTimecode | java.lang.String
+  type DvbSubtitleAlignment = _DvbSubtitleAlignment | java.lang.String
+  type DvbSubtitleBackgroundColor = _DvbSubtitleBackgroundColor | java.lang.String
+  type DvbSubtitleFontColor = _DvbSubtitleFontColor | java.lang.String
+  type DvbSubtitleOutlineColor = _DvbSubtitleOutlineColor | java.lang.String
+  type DvbSubtitleShadowColor = _DvbSubtitleShadowColor | java.lang.String
+  type DvbSubtitleTeletextSpacing = _DvbSubtitleTeletextSpacing | java.lang.String
+  type Eac3AttenuationControl = _Eac3AttenuationControl | java.lang.String
+  type Eac3BitstreamMode = _Eac3BitstreamMode | java.lang.String
+  type Eac3CodingMode = _Eac3CodingMode | java.lang.String
+  type Eac3DcFilter = _Eac3DcFilter | java.lang.String
+  type Eac3DynamicRangeCompressionLine = _Eac3DynamicRangeCompressionLine | java.lang.String
+  type Eac3DynamicRangeCompressionRf = _Eac3DynamicRangeCompressionRf | java.lang.String
+  type Eac3LfeControl = _Eac3LfeControl | java.lang.String
+  type Eac3LfeFilter = _Eac3LfeFilter | java.lang.String
+  type Eac3MetadataControl = _Eac3MetadataControl | java.lang.String
+  type Eac3PassthroughControl = _Eac3PassthroughControl | java.lang.String
+  type Eac3PhaseControl = _Eac3PhaseControl | java.lang.String
+  type Eac3StereoDownmix = _Eac3StereoDownmix | java.lang.String
+  type Eac3SurroundExMode = _Eac3SurroundExMode | java.lang.String
+  type Eac3SurroundMode = _Eac3SurroundMode | java.lang.String
+  type EmbeddedConvert608To708 = _EmbeddedConvert608To708 | java.lang.String
+  type F4vMoovPlacement = _F4vMoovPlacement | java.lang.String
+  type FileSourceConvert608To708 = _FileSourceConvert608To708 | java.lang.String
+  type FontScript = _FontScript | java.lang.String
+  type H264AdaptiveQuantization = _H264AdaptiveQuantization | java.lang.String
+  type H264CodecLevel = _H264CodecLevel | java.lang.String
+  type H264CodecProfile = _H264CodecProfile | java.lang.String
+  type H264DynamicSubGop = _H264DynamicSubGop | java.lang.String
+  type H264EntropyEncoding = _H264EntropyEncoding | java.lang.String
+  type H264FieldEncoding = _H264FieldEncoding | java.lang.String
+  type H264FlickerAdaptiveQuantization = _H264FlickerAdaptiveQuantization | java.lang.String
+  type H264FramerateControl = _H264FramerateControl | java.lang.String
+  type H264FramerateConversionAlgorithm = _H264FramerateConversionAlgorithm | java.lang.String
+  type H264GopBReference = _H264GopBReference | java.lang.String
+  type H264GopSizeUnits = _H264GopSizeUnits | java.lang.String
+  type H264InterlaceMode = _H264InterlaceMode | java.lang.String
+  type H264ParControl = _H264ParControl | java.lang.String
+  type H264QualityTuningLevel = _H264QualityTuningLevel | java.lang.String
+  type H264RateControlMode = _H264RateControlMode | java.lang.String
+  type H264RepeatPps = _H264RepeatPps | java.lang.String
+  type H264SceneChangeDetect = _H264SceneChangeDetect | java.lang.String
+  type H264SlowPal = _H264SlowPal | java.lang.String
+  type H264SpatialAdaptiveQuantization = _H264SpatialAdaptiveQuantization | java.lang.String
+  type H264Syntax = _H264Syntax | java.lang.String
+  type H264Telecine = _H264Telecine | java.lang.String
+  type H264TemporalAdaptiveQuantization = _H264TemporalAdaptiveQuantization | java.lang.String
+  type H264UnregisteredSeiTimecode = _H264UnregisteredSeiTimecode | java.lang.String
+  type H265AdaptiveQuantization = _H265AdaptiveQuantization | java.lang.String
+  type H265AlternateTransferFunctionSei = _H265AlternateTransferFunctionSei | java.lang.String
+  type H265CodecLevel = _H265CodecLevel | java.lang.String
+  type H265CodecProfile = _H265CodecProfile | java.lang.String
+  type H265DynamicSubGop = _H265DynamicSubGop | java.lang.String
+  type H265FlickerAdaptiveQuantization = _H265FlickerAdaptiveQuantization | java.lang.String
+  type H265FramerateControl = _H265FramerateControl | java.lang.String
+  type H265FramerateConversionAlgorithm = _H265FramerateConversionAlgorithm | java.lang.String
+  type H265GopBReference = _H265GopBReference | java.lang.String
+  type H265GopSizeUnits = _H265GopSizeUnits | java.lang.String
+  type H265InterlaceMode = _H265InterlaceMode | java.lang.String
+  type H265ParControl = _H265ParControl | java.lang.String
+  type H265QualityTuningLevel = _H265QualityTuningLevel | java.lang.String
+  type H265RateControlMode = _H265RateControlMode | java.lang.String
+  type H265SampleAdaptiveOffsetFilterMode = _H265SampleAdaptiveOffsetFilterMode | java.lang.String
+  type H265SceneChangeDetect = _H265SceneChangeDetect | java.lang.String
+  type H265SlowPal = _H265SlowPal | java.lang.String
+  type H265SpatialAdaptiveQuantization = _H265SpatialAdaptiveQuantization | java.lang.String
+  type H265Telecine = _H265Telecine | java.lang.String
+  type H265TemporalAdaptiveQuantization = _H265TemporalAdaptiveQuantization | java.lang.String
+  type H265TemporalIds = _H265TemporalIds | java.lang.String
+  type H265Tiles = _H265Tiles | java.lang.String
+  type H265UnregisteredSeiTimecode = _H265UnregisteredSeiTimecode | java.lang.String
+  type H265WriteMp4PackagingType = _H265WriteMp4PackagingType | java.lang.String
+  type HlsAdMarkers = _HlsAdMarkers | java.lang.String
+  type HlsAudioTrackType = _HlsAudioTrackType | java.lang.String
+  type HlsCaptionLanguageSetting = _HlsCaptionLanguageSetting | java.lang.String
+  type HlsClientCache = _HlsClientCache | java.lang.String
+  type HlsCodecSpecification = _HlsCodecSpecification | java.lang.String
+  type HlsDirectoryStructure = _HlsDirectoryStructure | java.lang.String
+  type HlsEncryptionType = _HlsEncryptionType | java.lang.String
+  type HlsIFrameOnlyManifest = _HlsIFrameOnlyManifest | java.lang.String
+  type HlsInitializationVectorInManifest = _HlsInitializationVectorInManifest | java.lang.String
+  type HlsKeyProviderType = _HlsKeyProviderType | java.lang.String
+  type HlsManifestCompression = _HlsManifestCompression | java.lang.String
+  type HlsManifestDurationFormat = _HlsManifestDurationFormat | java.lang.String
+  type HlsOfflineEncrypted = _HlsOfflineEncrypted | java.lang.String
+  type HlsOutputSelection = _HlsOutputSelection | java.lang.String
+  type HlsProgramDateTime = _HlsProgramDateTime | java.lang.String
+  type HlsSegmentControl = _HlsSegmentControl | java.lang.String
+  type HlsStreamInfResolution = _HlsStreamInfResolution | java.lang.String
+  type HlsTimedMetadataId3Frame = _HlsTimedMetadataId3Frame | java.lang.String
+  type InputDeblockFilter = _InputDeblockFilter | java.lang.String
+  type InputDenoiseFilter = _InputDenoiseFilter | java.lang.String
+  type InputFilterEnable = _InputFilterEnable | java.lang.String
+  type InputPsiControl = _InputPsiControl | java.lang.String
+  type InputRotate = _InputRotate | java.lang.String
+  type InputTimecodeSource = _InputTimecodeSource | java.lang.String
+  type JobStatus = _JobStatus | java.lang.String
+  type JobTemplateListBy = _JobTemplateListBy | java.lang.String
+  type LanguageCode = _LanguageCode | java.lang.String
+  type M2tsAudioBufferModel = _M2tsAudioBufferModel | java.lang.String
+  type M2tsBufferModel = _M2tsBufferModel | java.lang.String
+  type M2tsEbpAudioInterval = _M2tsEbpAudioInterval | java.lang.String
+  type M2tsEbpPlacement = _M2tsEbpPlacement | java.lang.String
+  type M2tsEsRateInPes = _M2tsEsRateInPes | java.lang.String
+  type M2tsForceTsVideoEbpOrder = _M2tsForceTsVideoEbpOrder | java.lang.String
+  type M2tsNielsenId3 = _M2tsNielsenId3 | java.lang.String
+  type M2tsPcrControl = _M2tsPcrControl | java.lang.String
+  type M2tsRateMode = _M2tsRateMode | java.lang.String
+  type M2tsScte35Source = _M2tsScte35Source | java.lang.String
+  type M2tsSegmentationMarkers = _M2tsSegmentationMarkers | java.lang.String
+  type M2tsSegmentationStyle = _M2tsSegmentationStyle | java.lang.String
+  type M3u8NielsenId3 = _M3u8NielsenId3 | java.lang.String
+  type M3u8PcrControl = _M3u8PcrControl | java.lang.String
+  type M3u8Scte35Source = _M3u8Scte35Source | java.lang.String
+  type MotionImageInsertionMode = _MotionImageInsertionMode | java.lang.String
+  type MotionImagePlayback = _MotionImagePlayback | java.lang.String
+  type MovClapAtom = _MovClapAtom | java.lang.String
+  type MovCslgAtom = _MovCslgAtom | java.lang.String
+  type MovMpeg2FourCCControl = _MovMpeg2FourCCControl | java.lang.String
+  type MovPaddingControl = _MovPaddingControl | java.lang.String
+  type MovReference = _MovReference | java.lang.String
+  type Mp4CslgAtom = _Mp4CslgAtom | java.lang.String
+  type Mp4FreeSpaceBox = _Mp4FreeSpaceBox | java.lang.String
+  type Mp4MoovPlacement = _Mp4MoovPlacement | java.lang.String
+  type Mpeg2AdaptiveQuantization = _Mpeg2AdaptiveQuantization | java.lang.String
+  type Mpeg2CodecLevel = _Mpeg2CodecLevel | java.lang.String
+  type Mpeg2CodecProfile = _Mpeg2CodecProfile | java.lang.String
+  type Mpeg2DynamicSubGop = _Mpeg2DynamicSubGop | java.lang.String
+  type Mpeg2FramerateControl = _Mpeg2FramerateControl | java.lang.String
+  type Mpeg2FramerateConversionAlgorithm = _Mpeg2FramerateConversionAlgorithm | java.lang.String
+  type Mpeg2GopSizeUnits = _Mpeg2GopSizeUnits | java.lang.String
+  type Mpeg2InterlaceMode = _Mpeg2InterlaceMode | java.lang.String
+  type Mpeg2IntraDcPrecision = _Mpeg2IntraDcPrecision | java.lang.String
+  type Mpeg2ParControl = _Mpeg2ParControl | java.lang.String
+  type Mpeg2QualityTuningLevel = _Mpeg2QualityTuningLevel | java.lang.String
+  type Mpeg2RateControlMode = _Mpeg2RateControlMode | java.lang.String
+  type Mpeg2SceneChangeDetect = _Mpeg2SceneChangeDetect | java.lang.String
+  type Mpeg2SlowPal = _Mpeg2SlowPal | java.lang.String
+  type Mpeg2SpatialAdaptiveQuantization = _Mpeg2SpatialAdaptiveQuantization | java.lang.String
+  type Mpeg2Syntax = _Mpeg2Syntax | java.lang.String
+  type Mpeg2Telecine = _Mpeg2Telecine | java.lang.String
+  type Mpeg2TemporalAdaptiveQuantization = _Mpeg2TemporalAdaptiveQuantization | java.lang.String
+  type MsSmoothAudioDeduplication = _MsSmoothAudioDeduplication | java.lang.String
+  type MsSmoothManifestEncoding = _MsSmoothManifestEncoding | java.lang.String
+  type NoiseReducerFilter = _NoiseReducerFilter | java.lang.String
+  type Order = _Order | java.lang.String
+  type OutputGroupType = _OutputGroupType | java.lang.String
+  type OutputSdt = _OutputSdt | java.lang.String
+  type PresetListBy = _PresetListBy | java.lang.String
+  type PricingPlan = _PricingPlan | java.lang.String
+  type ProresCodecProfile = _ProresCodecProfile | java.lang.String
+  type ProresFramerateControl = _ProresFramerateControl | java.lang.String
+  type ProresFramerateConversionAlgorithm = _ProresFramerateConversionAlgorithm | java.lang.String
+  type ProresInterlaceMode = _ProresInterlaceMode | java.lang.String
+  type ProresParControl = _ProresParControl | java.lang.String
+  type ProresSlowPal = _ProresSlowPal | java.lang.String
+  type ProresTelecine = _ProresTelecine | java.lang.String
+  type QueueListBy = _QueueListBy | java.lang.String
+  type QueueStatus = _QueueStatus | java.lang.String
+  type RenewalType = _RenewalType | java.lang.String
+  type ReservationPlanStatus = _ReservationPlanStatus | java.lang.String
+  type RespondToAfd = _RespondToAfd | java.lang.String
+  type ScalingBehavior = _ScalingBehavior | java.lang.String
+  type SccDestinationFramerate = _SccDestinationFramerate | java.lang.String
+  type TimecodeBurninPosition = _TimecodeBurninPosition | java.lang.String
+  type TimecodeSource = _TimecodeSource | java.lang.String
+  type TimedMetadata = _TimedMetadata | java.lang.String
+  type TtmlStylePassthrough = _TtmlStylePassthrough | java.lang.String
+  type Type = _Type | java.lang.String
+  type VideoCodec = _VideoCodec | java.lang.String
+  type VideoTimecodeInsertion = _VideoTimecodeInsertion | java.lang.String
+  type WavFormat = _WavFormat | java.lang.String
   type __doubleMin0 = scala.Double
   type __doubleMin0Max2147483647 = scala.Double
   type __doubleMinNegative59Max0 = scala.Double
@@ -3728,6 +4184,6 @@ object MediaConvertNs extends js.Object {
   type __stringPatternSNSignalProcessingNotificationNS = java.lang.String
   type __stringPatternWS = java.lang.String
   type __timestampUnix = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-08-29` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

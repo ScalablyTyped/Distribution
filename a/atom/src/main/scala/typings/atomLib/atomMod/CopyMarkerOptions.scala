@@ -23,3 +23,22 @@ trait CopyMarkerOptions extends js.Object {
   var tailed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CopyMarkerOptions {
+  @scala.inline
+  def apply(
+    exclusive: js.UndefOr[scala.Boolean] = js.undefined,
+    invalidate: atomLib.atomLibStrings.never | atomLib.atomLibStrings.surround | atomLib.atomLibStrings.overlap | atomLib.atomLibStrings.inside | atomLib.atomLibStrings.touch = null,
+    properties: js.Object = null,
+    reversed: js.UndefOr[scala.Boolean] = js.undefined,
+    tailed: js.UndefOr[scala.Boolean] = js.undefined
+  ): CopyMarkerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (!js.isUndefined(tailed)) __obj.updateDynamic("tailed")(tailed)
+    __obj.asInstanceOf[CopyMarkerOptions]
+  }
+}
+

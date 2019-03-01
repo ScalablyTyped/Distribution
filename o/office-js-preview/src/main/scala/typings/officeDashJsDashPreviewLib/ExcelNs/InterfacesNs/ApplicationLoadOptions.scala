@@ -49,3 +49,22 @@ trait ApplicationLoadOptions extends js.Object {
   var iterativeCalculation: js.UndefOr[IterativeCalculationLoadOptions] = js.undefined
 }
 
+object ApplicationLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    calculationEngineVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    calculationMode: js.UndefOr[scala.Boolean] = js.undefined,
+    calculationState: js.UndefOr[scala.Boolean] = js.undefined,
+    iterativeCalculation: IterativeCalculationLoadOptions = null
+  ): ApplicationLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(calculationEngineVersion)) __obj.updateDynamic("calculationEngineVersion")(calculationEngineVersion)
+    if (!js.isUndefined(calculationMode)) __obj.updateDynamic("calculationMode")(calculationMode)
+    if (!js.isUndefined(calculationState)) __obj.updateDynamic("calculationState")(calculationState)
+    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation)
+    __obj.asInstanceOf[ApplicationLoadOptions]
+  }
+}
+

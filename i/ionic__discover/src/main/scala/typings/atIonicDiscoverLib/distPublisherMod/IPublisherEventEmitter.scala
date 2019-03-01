@@ -13,3 +13,18 @@ trait IPublisherEventEmitter extends js.Object {
   ): this.type
 }
 
+object IPublisherEventEmitter {
+  @scala.inline
+  def apply(
+    on_error: js.Function2[
+      atIonicDiscoverLib.atIonicDiscoverLibStrings.error, 
+      js.Function1[/* err */ nodeLib.Error, scala.Unit], 
+      IPublisherEventEmitter
+    ]
+  ): IPublisherEventEmitter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("on")(on_error)
+    __obj.asInstanceOf[IPublisherEventEmitter]
+  }
+}
+

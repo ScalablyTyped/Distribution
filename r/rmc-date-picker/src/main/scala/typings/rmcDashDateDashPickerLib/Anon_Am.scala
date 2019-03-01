@@ -15,3 +15,26 @@ trait Anon_Am extends js.Object {
   var year: java.lang.String
 }
 
+object Anon_Am {
+  @scala.inline
+  def apply(
+    am: java.lang.String,
+    day: java.lang.String,
+    hour: java.lang.String,
+    minute: java.lang.String,
+    month: java.lang.String,
+    pm: java.lang.String,
+    year: java.lang.String
+  ): Anon_Am = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("am")(am)
+    __obj.updateDynamic("day")(day)
+    __obj.updateDynamic("hour")(hour)
+    __obj.updateDynamic("minute")(minute)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("pm")(pm)
+    __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[Anon_Am]
+  }
+}
+

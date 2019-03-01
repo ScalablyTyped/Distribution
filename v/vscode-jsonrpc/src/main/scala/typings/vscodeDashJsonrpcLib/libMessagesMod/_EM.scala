@@ -10,3 +10,12 @@ trait _EM extends js.Object {
   var `_$endMarker$_`: scala.Double
 }
 
+object _EM {
+  @scala.inline
+  def apply(`_$endMarker$_`: scala.Double): _EM = {
+    val __obj = js.Dynamic.literal(`_$endMarker$_` = `_$endMarker$_`)
+  
+    __obj.asInstanceOf[_EM]
+  }
+}
+

@@ -16,3 +16,22 @@ trait ProductstatusesCustomBatchRequestEntry extends js.Object {
   var productId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProductstatusesCustomBatchRequestEntry {
+  @scala.inline
+  def apply(
+    batchId: scala.Int | scala.Double = null,
+    includeAttributes: js.UndefOr[scala.Boolean] = js.undefined,
+    merchantId: java.lang.String = null,
+    method: java.lang.String = null,
+    productId: java.lang.String = null
+  ): ProductstatusesCustomBatchRequestEntry = {
+    val __obj = js.Dynamic.literal()
+    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAttributes)) __obj.updateDynamic("includeAttributes")(includeAttributes)
+    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    __obj.asInstanceOf[ProductstatusesCustomBatchRequestEntry]
+  }
+}
+

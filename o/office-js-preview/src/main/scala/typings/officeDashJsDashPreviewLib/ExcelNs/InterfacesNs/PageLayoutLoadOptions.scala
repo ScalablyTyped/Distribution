@@ -174,3 +174,54 @@ trait PageLayoutLoadOptions extends js.Object {
   var zoom: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PageLayoutLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    blackAndWhite: js.UndefOr[scala.Boolean] = js.undefined,
+    bottomMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    centerHorizontally: js.UndefOr[scala.Boolean] = js.undefined,
+    centerVertically: js.UndefOr[scala.Boolean] = js.undefined,
+    draftMode: js.UndefOr[scala.Boolean] = js.undefined,
+    firstPageNumber: js.UndefOr[scala.Boolean] = js.undefined,
+    footerMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    headerMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    headersFooters: HeaderFooterGroupLoadOptions = null,
+    leftMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    orientation: js.UndefOr[scala.Boolean] = js.undefined,
+    paperSize: js.UndefOr[scala.Boolean] = js.undefined,
+    printComments: js.UndefOr[scala.Boolean] = js.undefined,
+    printErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    printGridlines: js.UndefOr[scala.Boolean] = js.undefined,
+    printHeadings: js.UndefOr[scala.Boolean] = js.undefined,
+    printOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    rightMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    topMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    zoom: js.UndefOr[scala.Boolean] = js.undefined
+  ): PageLayoutLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(blackAndWhite)) __obj.updateDynamic("blackAndWhite")(blackAndWhite)
+    if (!js.isUndefined(bottomMargin)) __obj.updateDynamic("bottomMargin")(bottomMargin)
+    if (!js.isUndefined(centerHorizontally)) __obj.updateDynamic("centerHorizontally")(centerHorizontally)
+    if (!js.isUndefined(centerVertically)) __obj.updateDynamic("centerVertically")(centerVertically)
+    if (!js.isUndefined(draftMode)) __obj.updateDynamic("draftMode")(draftMode)
+    if (!js.isUndefined(firstPageNumber)) __obj.updateDynamic("firstPageNumber")(firstPageNumber)
+    if (!js.isUndefined(footerMargin)) __obj.updateDynamic("footerMargin")(footerMargin)
+    if (!js.isUndefined(headerMargin)) __obj.updateDynamic("headerMargin")(headerMargin)
+    if (headersFooters != null) __obj.updateDynamic("headersFooters")(headersFooters)
+    if (!js.isUndefined(leftMargin)) __obj.updateDynamic("leftMargin")(leftMargin)
+    if (!js.isUndefined(orientation)) __obj.updateDynamic("orientation")(orientation)
+    if (!js.isUndefined(paperSize)) __obj.updateDynamic("paperSize")(paperSize)
+    if (!js.isUndefined(printComments)) __obj.updateDynamic("printComments")(printComments)
+    if (!js.isUndefined(printErrors)) __obj.updateDynamic("printErrors")(printErrors)
+    if (!js.isUndefined(printGridlines)) __obj.updateDynamic("printGridlines")(printGridlines)
+    if (!js.isUndefined(printHeadings)) __obj.updateDynamic("printHeadings")(printHeadings)
+    if (!js.isUndefined(printOrder)) __obj.updateDynamic("printOrder")(printOrder)
+    if (!js.isUndefined(rightMargin)) __obj.updateDynamic("rightMargin")(rightMargin)
+    if (!js.isUndefined(topMargin)) __obj.updateDynamic("topMargin")(topMargin)
+    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[PageLayoutLoadOptions]
+  }
+}
+

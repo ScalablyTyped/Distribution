@@ -12,3 +12,20 @@ trait Color extends js.Object {
   var hover: js.UndefOr[java.lang.String | visLib.Anon_Background] = js.undefined
 }
 
+object Color {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: java.lang.String = null,
+    highlight: java.lang.String | visLib.Anon_Background = null,
+    hover: java.lang.String | visLib.Anon_Background = null
+  ): Color = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
+    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Color]
+  }
+}
+

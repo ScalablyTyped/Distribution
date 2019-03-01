@@ -10,3 +10,13 @@ trait Anon_Connection extends js.Object {
   var sql: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Connection {
+  @scala.inline
+  def apply(_connection: Anon_Config = null, sql: java.lang.String = null): Anon_Connection = {
+    val __obj = js.Dynamic.literal()
+    if (_connection != null) __obj.updateDynamic("_connection")(_connection)
+    if (sql != null) __obj.updateDynamic("sql")(sql)
+    __obj.asInstanceOf[Anon_Connection]
+  }
+}
+

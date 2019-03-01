@@ -12,3 +12,12 @@ trait ResourceType extends js.Object {
   var `type`: java.lang.String
 }
 
+object ResourceType {
+  @scala.inline
+  def apply(`type`: java.lang.String): ResourceType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[ResourceType]
+  }
+}
+

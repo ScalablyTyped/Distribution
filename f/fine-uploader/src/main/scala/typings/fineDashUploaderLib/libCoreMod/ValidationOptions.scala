@@ -52,3 +52,26 @@ trait ValidationOptions extends js.Object {
   var stopOnFirstInvalidFile: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ValidationOptions {
+  @scala.inline
+  def apply(
+    acceptFiles: js.Any = null,
+    allowedExtensions: js.Array[java.lang.String] = null,
+    image: ImageOptions = null,
+    itemLimit: scala.Int | scala.Double = null,
+    minSizeLimit: scala.Int | scala.Double = null,
+    sizeLimit: scala.Int | scala.Double = null,
+    stopOnFirstInvalidFile: js.UndefOr[scala.Boolean] = js.undefined
+  ): ValidationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (acceptFiles != null) __obj.updateDynamic("acceptFiles")(acceptFiles)
+    if (allowedExtensions != null) __obj.updateDynamic("allowedExtensions")(allowedExtensions)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (itemLimit != null) __obj.updateDynamic("itemLimit")(itemLimit.asInstanceOf[js.Any])
+    if (minSizeLimit != null) __obj.updateDynamic("minSizeLimit")(minSizeLimit.asInstanceOf[js.Any])
+    if (sizeLimit != null) __obj.updateDynamic("sizeLimit")(sizeLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(stopOnFirstInvalidFile)) __obj.updateDynamic("stopOnFirstInvalidFile")(stopOnFirstInvalidFile)
+    __obj.asInstanceOf[ValidationOptions]
+  }
+}
+

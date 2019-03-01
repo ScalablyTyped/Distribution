@@ -12,3 +12,20 @@ trait TimezoneJsOptions extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimezoneJsOptions {
+  @scala.inline
+  def apply(
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    error: js.Function1[/* err */ stdLib.Error, scala.Unit] = null,
+    success: js.Function1[/* data */ java.lang.String, scala.Unit] = null,
+    url: java.lang.String = null
+  ): TimezoneJsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TimezoneJsOptions]
+  }
+}
+

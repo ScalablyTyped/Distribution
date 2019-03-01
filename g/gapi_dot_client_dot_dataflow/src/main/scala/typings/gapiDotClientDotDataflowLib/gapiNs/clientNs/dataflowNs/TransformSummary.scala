@@ -20,3 +20,24 @@ trait TransformSummary extends js.Object {
   var outputCollectionName: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TransformSummary {
+  @scala.inline
+  def apply(
+    displayData: js.Array[DisplayData] = null,
+    id: java.lang.String = null,
+    inputCollectionName: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    outputCollectionName: js.Array[java.lang.String] = null
+  ): TransformSummary = {
+    val __obj = js.Dynamic.literal()
+    if (displayData != null) __obj.updateDynamic("displayData")(displayData)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inputCollectionName != null) __obj.updateDynamic("inputCollectionName")(inputCollectionName)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (outputCollectionName != null) __obj.updateDynamic("outputCollectionName")(outputCollectionName)
+    __obj.asInstanceOf[TransformSummary]
+  }
+}
+

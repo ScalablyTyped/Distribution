@@ -15,3 +15,26 @@ trait IFolderListingColumn extends js.Object {
   def Clone(): IFolderListingColumn
 }
 
+object IFolderListingColumn {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[IFolderListingColumn],
+    Flags: mfilesLib.MFilesNs.MFFolderListingColumnFlags,
+    ID: scala.Double,
+    Name: java.lang.String,
+    Position: scala.Double,
+    Visible: scala.Boolean,
+    Width: scala.Double
+  ): IFolderListingColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Flags")(Flags)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("Visible")(Visible)
+    __obj.updateDynamic("Width")(Width)
+    __obj.asInstanceOf[IFolderListingColumn]
+  }
+}
+

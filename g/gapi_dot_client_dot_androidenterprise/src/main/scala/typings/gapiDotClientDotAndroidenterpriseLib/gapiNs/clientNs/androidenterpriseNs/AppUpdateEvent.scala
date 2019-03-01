@@ -10,3 +10,12 @@ trait AppUpdateEvent extends js.Object {
   var productId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppUpdateEvent {
+  @scala.inline
+  def apply(productId: java.lang.String = null): AppUpdateEvent = {
+    val __obj = js.Dynamic.literal()
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    __obj.asInstanceOf[AppUpdateEvent]
+  }
+}
+

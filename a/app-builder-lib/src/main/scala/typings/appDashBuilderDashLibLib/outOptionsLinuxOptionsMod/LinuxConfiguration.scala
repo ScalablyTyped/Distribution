@@ -48,3 +48,36 @@ import scala.scalajs.js.annotation._
   val vendor: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object LinuxConfiguration {
+  @scala.inline
+  def apply(
+    category: java.lang.String = null,
+    depends: js.Array[java.lang.String] = null,
+    description: java.lang.String = null,
+    desktop: js.Any = null,
+    executableName: java.lang.String = null,
+    icon: java.lang.String = null,
+    maintainer: java.lang.String = null,
+    mimeTypes: js.Array[java.lang.String] = null,
+    packageCategory: java.lang.String = null,
+    synopsis: java.lang.String = null,
+    target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfigType */ js.Any = null,
+    vendor: java.lang.String = null
+  ): LinuxConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (depends != null) __obj.updateDynamic("depends")(depends)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (desktop != null) __obj.updateDynamic("desktop")(desktop)
+    if (executableName != null) __obj.updateDynamic("executableName")(executableName)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (maintainer != null) __obj.updateDynamic("maintainer")(maintainer)
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
+    if (packageCategory != null) __obj.updateDynamic("packageCategory")(packageCategory)
+    if (synopsis != null) __obj.updateDynamic("synopsis")(synopsis)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (vendor != null) __obj.updateDynamic("vendor")(vendor)
+    __obj.asInstanceOf[LinuxConfiguration]
+  }
+}
+

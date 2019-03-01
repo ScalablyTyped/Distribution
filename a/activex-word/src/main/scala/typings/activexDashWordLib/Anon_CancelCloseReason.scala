@@ -11,3 +11,18 @@ trait Anon_CancelCloseReason extends js.Object {
   val PvWindow: activexDashWordLib.WordNs.ProtectedViewWindow
 }
 
+object Anon_CancelCloseReason {
+  @scala.inline
+  def apply(
+    Cancel: scala.Boolean,
+    CloseReason: scala.Double,
+    PvWindow: activexDashWordLib.WordNs.ProtectedViewWindow
+  ): Anon_CancelCloseReason = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("CloseReason")(CloseReason)
+    __obj.updateDynamic("PvWindow")(PvWindow)
+    __obj.asInstanceOf[Anon_CancelCloseReason]
+  }
+}
+

@@ -23,3 +23,26 @@ trait FileUploadOptions extends js.Object {
   var params: js.UndefOr[js.Object] = js.undefined
 }
 
+object FileUploadOptions {
+  @scala.inline
+  def apply(
+    chunkedMode: js.UndefOr[scala.Boolean] = js.undefined,
+    fileKey: java.lang.String = null,
+    fileName: java.lang.String = null,
+    headers: js.Object = null,
+    httpMethod: java.lang.String = null,
+    mimeType: java.lang.String = null,
+    params: js.Object = null
+  ): FileUploadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(chunkedMode)) __obj.updateDynamic("chunkedMode")(chunkedMode)
+    if (fileKey != null) __obj.updateDynamic("fileKey")(fileKey)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[FileUploadOptions]
+  }
+}
+

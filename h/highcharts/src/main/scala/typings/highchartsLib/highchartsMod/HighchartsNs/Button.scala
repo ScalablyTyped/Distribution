@@ -92,3 +92,40 @@ trait Button extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Button {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    symbolFill: java.lang.String = null,
+    symbolSize: scala.Int | scala.Double = null,
+    symbolStroke: java.lang.String = null,
+    symbolStrokeWidth: scala.Int | scala.Double = null,
+    symbolX: scala.Int | scala.Double = null,
+    symbolY: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    theme: ButtonStatesTheme = null,
+    verticalAlign: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Button = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (symbolFill != null) __obj.updateDynamic("symbolFill")(symbolFill)
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (symbolStroke != null) __obj.updateDynamic("symbolStroke")(symbolStroke)
+    if (symbolStrokeWidth != null) __obj.updateDynamic("symbolStrokeWidth")(symbolStrokeWidth.asInstanceOf[js.Any])
+    if (symbolX != null) __obj.updateDynamic("symbolX")(symbolX.asInstanceOf[js.Any])
+    if (symbolY != null) __obj.updateDynamic("symbolY")(symbolY.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Button]
+  }
+}
+

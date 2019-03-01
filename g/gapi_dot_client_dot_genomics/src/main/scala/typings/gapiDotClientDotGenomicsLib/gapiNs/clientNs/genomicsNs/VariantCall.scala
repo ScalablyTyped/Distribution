@@ -49,3 +49,24 @@ trait VariantCall extends js.Object {
   var phaseset: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VariantCall {
+  @scala.inline
+  def apply(
+    callSetId: java.lang.String = null,
+    callSetName: java.lang.String = null,
+    genotype: js.Array[scala.Double] = null,
+    genotypeLikelihood: js.Array[scala.Double] = null,
+    info: stdLib.Record[java.lang.String, js.Array[_]] = null,
+    phaseset: java.lang.String = null
+  ): VariantCall = {
+    val __obj = js.Dynamic.literal()
+    if (callSetId != null) __obj.updateDynamic("callSetId")(callSetId)
+    if (callSetName != null) __obj.updateDynamic("callSetName")(callSetName)
+    if (genotype != null) __obj.updateDynamic("genotype")(genotype)
+    if (genotypeLikelihood != null) __obj.updateDynamic("genotypeLikelihood")(genotypeLikelihood)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (phaseset != null) __obj.updateDynamic("phaseset")(phaseset)
+    __obj.asInstanceOf[VariantCall]
+  }
+}
+

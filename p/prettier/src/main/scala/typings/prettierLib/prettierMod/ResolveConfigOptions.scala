@@ -26,3 +26,18 @@ trait ResolveConfigOptions extends js.Object {
   var useCache: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ResolveConfigOptions {
+  @scala.inline
+  def apply(
+    config: java.lang.String = null,
+    editorconfig: js.UndefOr[scala.Boolean] = js.undefined,
+    useCache: js.UndefOr[scala.Boolean] = js.undefined
+  ): ResolveConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(editorconfig)) __obj.updateDynamic("editorconfig")(editorconfig)
+    if (!js.isUndefined(useCache)) __obj.updateDynamic("useCache")(useCache)
+    __obj.asInstanceOf[ResolveConfigOptions]
+  }
+}
+

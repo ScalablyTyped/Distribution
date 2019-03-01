@@ -41,3 +41,20 @@ trait ChartMapOptionsLoadOptions extends js.Object {
   var projectionType: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartMapOptionsLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    labelStrategy: js.UndefOr[scala.Boolean] = js.undefined,
+    level: js.UndefOr[scala.Boolean] = js.undefined,
+    projectionType: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartMapOptionsLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(labelStrategy)) __obj.updateDynamic("labelStrategy")(labelStrategy)
+    if (!js.isUndefined(level)) __obj.updateDynamic("level")(level)
+    if (!js.isUndefined(projectionType)) __obj.updateDynamic("projectionType")(projectionType)
+    __obj.asInstanceOf[ChartMapOptionsLoadOptions]
+  }
+}
+

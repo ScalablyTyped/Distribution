@@ -36,3 +36,26 @@ trait Anon_Cid extends js.Object {
   var target: java.lang.String
 }
 
+object Anon_Cid {
+  @scala.inline
+  def apply(
+    q: js.Array[java.lang.String],
+    target: java.lang.String,
+    cid: js.Array[java.lang.String] = null,
+    fields: java.lang.String = null,
+    format: java.lang.String = null,
+    prettyprint: java.lang.String = null,
+    source: java.lang.String = null
+  ): Anon_Cid = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("q")(q)
+    __obj.updateDynamic("target")(target)
+    if (cid != null) __obj.updateDynamic("cid")(cid)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (prettyprint != null) __obj.updateDynamic("prettyprint")(prettyprint)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[Anon_Cid]
+  }
+}
+

@@ -10,3 +10,12 @@ trait SubscriptionPurchasesDeferResponse extends js.Object {
   var newExpiryTimeMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SubscriptionPurchasesDeferResponse {
+  @scala.inline
+  def apply(newExpiryTimeMillis: java.lang.String = null): SubscriptionPurchasesDeferResponse = {
+    val __obj = js.Dynamic.literal()
+    if (newExpiryTimeMillis != null) __obj.updateDynamic("newExpiryTimeMillis")(newExpiryTimeMillis)
+    __obj.asInstanceOf[SubscriptionPurchasesDeferResponse]
+  }
+}
+

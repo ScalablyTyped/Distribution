@@ -20,3 +20,14 @@ trait Options extends js.Object {
   var size: scala.Double
 }
 
+object Options {
+  @scala.inline
+  def apply(size: scala.Double, forceProvider: java.lang.String = null, name: java.lang.String = null): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("size")(size)
+    if (forceProvider != null) __obj.updateDynamic("forceProvider")(forceProvider)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Options]
+  }
+}
+

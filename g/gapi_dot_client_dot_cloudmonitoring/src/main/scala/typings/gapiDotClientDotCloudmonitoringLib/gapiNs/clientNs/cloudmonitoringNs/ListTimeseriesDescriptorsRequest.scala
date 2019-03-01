@@ -10,3 +10,12 @@ trait ListTimeseriesDescriptorsRequest extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListTimeseriesDescriptorsRequest {
+  @scala.inline
+  def apply(kind: java.lang.String = null): ListTimeseriesDescriptorsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[ListTimeseriesDescriptorsRequest]
+  }
+}
+

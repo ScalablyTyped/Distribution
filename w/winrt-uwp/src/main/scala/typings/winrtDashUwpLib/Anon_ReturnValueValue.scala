@@ -10,3 +10,13 @@ trait Anon_ReturnValueValue extends js.Object {
   /** The current value of the setting. The units depend on the setting. */ var value: scala.Double
 }
 
+object Anon_ReturnValueValue {
+  @scala.inline
+  def apply(returnValue: scala.Boolean, value: scala.Double): Anon_ReturnValueValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_ReturnValueValue]
+  }
+}
+
